@@ -25,15 +25,16 @@ QuestTogether = {
 				"0/1 Speak to Captain Rez'okun to set sail", -- [1]
 			},
 		},
-		[53101] = {
-			["title"] = "Nettin' Ettin",
+		[61874] = {
+			["title"] = "Shadowlands: A Chilling Summons",
 			["objectives"] = {
+				"1/1 Learn about your leaders' fate", -- [1]
+				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
 		[40643] = {
@@ -49,25 +50,24 @@ QuestTogether = {
 		[51464] = {
 			["title"] = "Here In Spirit",
 			["objectives"] = {
-				"2/10  ", -- [1]
-			},
-		},
-		[40329] = {
-			["title"] = "Battle Pet Tamers: Warlords",
-			["objectives"] = {
-				"0/5 Pet Battlemasters Defeated", -- [1]
-			},
-		},
-		[44948] = {
-			["title"] = "Raising Your Snowfeather",
-			["objectives"] = {
-				"Level 25 Snowfeather Hatchling", -- [1]
+				"2/10 Fresh Star Moss", -- [1]
 			},
 		},
 		[50604] = {
 			["title"] = "Tortollan Seekers",
 			["objectives"] = {
 				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+			},
+		},
+		[50598] = {
+			["title"] = "Zandalari Empire",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
+			},
+		},
+		[53101] = {
+			["title"] = "Nettin' Ettin",
+			["objectives"] = {
 			},
 		},
 		[44989] = {
@@ -82,16 +82,16 @@ QuestTogether = {
 				"0/1 Speak with Dread-Admiral Tattersail to Travel to Darkshore", -- [1]
 			},
 		},
-		[42170] = {
-			["title"] = "The Dreamweavers",
+		[50602] = {
+			["title"] = "Talanji's Expedition",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Val'sharah", -- [1]
+				"0/4 Complete 4 world quests in Nazmir.", -- [1]
 			},
 		},
-		[50603] = {
-			["title"] = "Voldunai",
+		[42420] = {
+			["title"] = "Court of Farondis",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Vol'dun", -- [1]
+				"0/4 Complete 4 world quests in Azsuna", -- [1]
 			},
 		},
 		[42234] = {
@@ -100,11 +100,10 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Stormheim", -- [1]
 			},
 		},
-		[61874] = {
-			["title"] = "Shadowlands: A Chilling Summons",
+		[42421] = {
+			["title"] = "The Nightfallen",
 			["objectives"] = {
-				"1/1 Learn about your leaders' fate", -- [1]
-				"0/1 Take the Death Gate to Acherus", -- [2]
+				"0/4 Complete 4 world quests in Suramar", -- [1]
 			},
 		},
 		[31891] = {
@@ -117,10 +116,10 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[42420] = {
-			["title"] = "Court of Farondis",
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Azsuna", -- [1]
+				"0/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
 		[47105] = {
@@ -129,16 +128,17 @@ QuestTogether = {
 				"0/1 Scout ahead", -- [1]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[44948] = {
+			["title"] = "Raising Your Snowfeather",
 			["objectives"] = {
+				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
-		["showDebugInfo"] = false,
 	},
 }

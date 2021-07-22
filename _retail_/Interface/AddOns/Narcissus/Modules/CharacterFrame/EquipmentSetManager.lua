@@ -1352,42 +1352,6 @@ NarciViewUtil.hideSetsCallBack = function()
     HideIconSelector();
 end
 
-local function IlvlButtonCenter_OnClick(self)
-    --Open/Close Equipment Set Manager
-    Narci:HideButtonTooltip();
-    if ESM.isOpen then
-        NarciViewUtil:ShowAttributes();
-        Switch:ShowItemLevel();
-        self.isSetManagerOpen = false;
-    else
-        local Overlay1 = EquipmentSetManagerFrame.ListScrollFrame.OverlayFrame1;
-        local SaveItemButton =  Overlay1.SaveItem;
-        local SaveTalentButton =  Overlay1.SaveTalent;
-        local r, g, b = NarciThemeUtil:GetColor();
-        SaveItemButton.r, SaveItemButton.g, SaveItemButton.b = r, g, b;
-        SaveTalentButton.r, SaveTalentButton.g, SaveTalentButton.b = r, g, b;
-        --[[
-        --Shock wave animation : Disabled
-        local white = 0.4;
-        local r, g, b = R/255 + white, G/255 + white, B/255 + white;
-        EquipmentSetManagerFrame.ArtFrame.Tex:SetColorTexture(r, g, b);
-        --]]
-        InitializeEquipmentSetManager();
-        self.isSetManagerOpen = true;
-        FadeFrame(self.Highlight, 0.15, 0);
-        NarciViewUtil:ShowSets();
-	end
-end
-
---[[
-Switch.onClickFunc = IlvlButtonCenter_OnClick;
-Switch.onHideFunc = function(self)
-    if ESM.isOpen then
-        self:Click();
-    end
-end
---]]
-
 -------------------------------------------------------------------
 local EL = CreateFrame("Frame");
 EL:RegisterEvent("PLAYER_ENTERING_WORLD");

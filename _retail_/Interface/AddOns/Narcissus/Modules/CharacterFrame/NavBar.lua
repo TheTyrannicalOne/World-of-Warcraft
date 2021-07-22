@@ -1,3 +1,5 @@
+local MAX_CONDUITS = NarciConstants.Soulbinds.MaxRow or 8 --12;
+
 local sin = math.sin;
 local pi = math.pi;
 local After = C_Timer.After;
@@ -67,12 +69,12 @@ function V:ShowAttributes()
     FadeFrame(PowersFrame, 0.25, 0);
     if NarcissusDB.DetailedIlvlInfo then
         FadeFrame(DetailedStats, 0.4, 1);
+        FadeFrame(Radar, 0.25, 1);
     else
         FadeFrame(ConciseStats, 0.4, 1);
         FadeFrame(Radar, 0.25, 0);
     end
     Radar:AnimateValue();
-    Radar:TogglePrimaryStats(false);
     Narci.RefreshAllStats();
 
     self.hideSetsCallBack();
@@ -92,7 +94,6 @@ function V:ShowSets()
     FadeFrame(PowersFrame, 0.20, 0);
     FadeFrame(EquipmentSetManager, 0.15, 1);
     FadeFrame(Radar, 0.20, 1);
-    Radar:TogglePrimaryStats(false);
     self.showSetsCallBack();
 end
 
@@ -109,9 +110,12 @@ function V:ShowSoulbinds()
     FadeFrame(DetailedStats, 0.20, 0);
     FadeFrame(ConciseStats, 0.20, 0);
     FadeFrame(EquipmentSetManager, 0.20, 0);
-    FadeFrame(Radar, 0.20, 1);
     FadeFrame(PowersFrame, 0.15, 1);    --Soulbinds\Talents
-    Radar:TogglePrimaryStats(true);
+    if MAX_CONDUITS == 8 then
+        FadeFrame(Radar, 0.20, 1);
+    else
+        FadeFrame(Radar, 0.20, 0);
+    end
     self.hideSetsCallBack();
 end
 
@@ -321,7 +325,7 @@ function NarciNavBarMixin:OnLoad()
     end
     local buttons = frame.conduitButtons;
     local button;
-    local MAX_CONDUITS = 8;
+
     for i = 1, MAX_CONDUITS do
         button = buttons[i];
         if not button then
@@ -350,6 +354,10 @@ function NarciNavBarMixin:OnLoad()
     ------------------------------
     self:SetScript("OnLoad", nil);
     self.OnLoad = nil;
+end
+
+function NarciNavBarMixin:IsCurrentTabSoulbind()
+    return (self.cycledTabIndex == 1)
 end
 
 function NarciNavBarMixin:SetThemeColor(colorTable)
@@ -424,7 +432,7 @@ function NarciNavBarMixin:UpdateSets(numSets, numMissing)
 end
 
 function NarciNavBarMixin:ShowPrimary()
-    if self.cycledTabIndex == 1 then
+    if self:IsCurrentTabSoulbind() then
         self:SetPortraitTexture("Interface\\AddOns\\Narcissus\\Art\\NavBar\\Soulbinds\\".. self.soulbindID);
     else
         self:SetPortraitTexture(self.specIcon, true);
@@ -484,16 +492,14 @@ local function UpdateFlatConduit(row, nodeData, unlockLevel)
     if not frame.conduitButtons then
         frame.conduitButtons = {};
     end
-    local buttons = frame.conduitButtons;
-    local button;
     local i = row + 1;
-
-    button = buttons[i];
-
-    if unlockLevel then
-        button:SetUnlockLevel(unlockLevel);
-    else
-        button:SetConduit(nodeData);
+    local button = frame.conduitButtons[i];
+    if button then
+        if unlockLevel then
+            button:SetUnlockLevel(unlockLevel);
+        else
+            button:SetConduit(nodeData);
+        end
     end
 end
 
@@ -509,7 +515,9 @@ local function UpdateSoulbinds()
     if soulbindID then
         data = C_Soulbinds.GetSoulbindData(soulbindID);
         if soulbindPortraits[soulbindID] then
-            NavigationBar:SetPortraitTexture("Interface\\AddOns\\Narcissus\\Art\\NavBar\\Soulbinds\\"..soulbindID);    --TRILINEAR
+            if NavigationBar:IsCurrentTabSoulbind() then
+                NavigationBar:SetPortraitTexture("Interface\\AddOns\\Narcissus\\Art\\NavBar\\Soulbinds\\"..soulbindID);    --TRILINEAR
+            end
         end
     else
         return
@@ -528,16 +536,27 @@ local function UpdateSoulbinds()
         for i = 1, numNodes do
             nodeData = nodes[i];
             local row = nodeData.row;
-            if nodeData.state == 0 then   --Unavailable
-                if not IS_ROW_PROCESSED[row] then
-                    IS_ROW_PROCESSED[row] = true;
-                    local unlockLevel = nodeData.failureRenownRequirement;
-                    if unlockLevel then
-                        UpdateFlatConduit(row, nodeData, unlockLevel);
+            if nodeData.state == 3 then
+                IS_ROW_PROCESSED[row] = true;
+                UpdateFlatConduit(row, nodeData);
+            else
+                if nodeData.state == 0 then   --Unavailable
+                    if not IS_ROW_PROCESSED[row] then
+                        IS_ROW_PROCESSED[row] = true;
+                        local unlockLevel = nodeData.failureRenownRequirement;
+                        if unlockLevel then
+                            UpdateFlatConduit(row, nodeData, unlockLevel);
+                        else
+                            UpdateFlatConduit(row);
+                        end
+                    end
+                else
+                    if not IS_ROW_PROCESSED[row] then
+                        IS_ROW_PROCESSED[row] = true;
+                        UpdateFlatConduit(row);
                     end
                 end
-            elseif nodeData.state == 3 then                
-                UpdateFlatConduit(row, nodeData);
+
             end
         end
     else
@@ -549,11 +568,6 @@ function NarciNavBarMixin:ProcessUpdate()
     if self.pendingSoulbinds then
         UpdateSoulbinds();
         self.pendingSoulbinds = nil;
-    end
-
-    if self.pendingTalents then
-        self.pendingTalents = nil;
-        self.PrimaryFrame.TalentContainer:UpdateAllTalents();
     end
 end
 
@@ -567,11 +581,7 @@ function NarciNavBarMixin:RequestUpdate(type)
     end
 
     if type == "talents" or type == "all" then
-        if self:IsVisible() then
-            
-        else
-            self.pendingTalents = true;
-        end
+        self.PrimaryFrame.TalentContainer:UpdateAllTalents(true);
     end
 end
 
@@ -620,7 +630,7 @@ function NarciNavBarMixin:SetMaximizedMode(state)
     end
     self.OverlayFrame.Divider:SetWidth(effectiveWidth);
 
-    UpdateButtonGroupWidth(self.PrimaryFrame.ConduitContainer.conduitButtons, 8, effectiveWidth, state);
+    UpdateButtonGroupWidth(self.PrimaryFrame.ConduitContainer.conduitButtons, MAX_CONDUITS, effectiveWidth, state);
     UpdateButtonGroupWidth(self.PrimaryFrame.TalentContainer.talentButtons, 7, effectiveWidth, state);
 end
 

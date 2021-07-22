@@ -2,7 +2,7 @@
 OmniCCDB = {
 	["global"] = {
 		["dbVersion"] = 6,
-		["addonVersion"] = "9.0.10",
+		["addonVersion"] = "9.1.0",
 	},
 	["profileKeys"] = {
 		["Vancard - Zul'jin"] = "Default",
@@ -32,10 +32,10 @@ OmniCCDB = {
 		["Kotalkhan - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Laymonan - Zul'jin"] = "Default",
-		["Datgore - Zul'jin"] = "Default",
-		["Vadder - Argent Dawn"] = "Default",
-		["Tyran - Argent Dawn"] = "Default",
 		["Serbitechna - Dalaran"] = "Default",
+		["Vadder - Argent Dawn"] = "Default",
+		["Datgore - Zul'jin"] = "Default",
+		["Tyran - Argent Dawn"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
 		["Fantastiburo - Zul'jin"] = "Default",

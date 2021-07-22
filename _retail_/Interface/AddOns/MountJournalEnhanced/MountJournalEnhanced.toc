@@ -2,7 +2,7 @@
 ## Title: Mount Journal Enhanced
 ## Notes: Extends the default Mount Journal
 ## Author: eXochron
-## Version: 2.13.1
+## Version: 2.14
 ## SavedVariablesPerCharacter: MountJournalEnhancedSettings, MJEPersonalSettings
 ## SavedVariables: MJEGlobalSettings, MJETrackingData
 ## X-Curse-Project-ID: 86372
@@ -14,15 +14,7 @@ Libs\HereBeDragons\HereBeDragons-2.0.lua
 Libs\TaintLess.xml
 Libs\UIFixes.lua
 
-Locals\enUS.lua
-Locals\deDE.lua
-Locals\esES.lua
-Locals\frFR.lua
-Locals\koKR.lua
-Locals\ptBR.lua
-Locals\ruRU.lua
-Locals\zhCN.lua
-
+Locals.lua
 Database\Database.lua
 Database\families.db.lua
 Database\tradable.db.lua

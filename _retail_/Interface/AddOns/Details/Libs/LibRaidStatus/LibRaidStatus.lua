@@ -1,6 +1,6 @@
 
 local major = "LibRaidStatus-1.0"
-local CONST_LIB_VERSION = 17
+local CONST_LIB_VERSION = 19
 LIB_RAID_STATUS_CAN_LOAD = false
 
 --declae the library within the LibStub
@@ -547,7 +547,9 @@ LIB_RAID_STATUS_CAN_LOAD = false
 
         ["PLAYER_REGEN_ENABLED"] = function(...)
             --left combat
-            raidStatusLib.Schedules.NewUniqueTimer(10 + math.random(0, 4), raidStatusLib.gearManager.SendDurability, "gearManager", "sendDurability_Schedule")
+            --when left encounter, share everything
+            --small hack, pretend to have just entered in the group, hence send all data
+            raidStatusLib.internalCallback.TriggerEvent("onEnterGroup")
         end,
 
         ["UPDATE_INVENTORY_DURABILITY"] = function(...)
@@ -562,6 +564,10 @@ LIB_RAID_STATUS_CAN_LOAD = false
             --player changed an equipment
             raidStatusLib.Schedules.NewUniqueTimer(4 + math.random(0, 5), raidStatusLib.gearManager.SendAllGearInfo, "gearManager", "sendAllGearInfo_Schedule")
         end,
+
+        ["ENCOUNTER_END"] = function()
+
+        end,
     }
 
     eventFrame:RegisterEvent("GROUP_ROSTER_UPDATE")
@@ -575,8 +581,9 @@ LIB_RAID_STATUS_CAN_LOAD = false
     --eventFrame:RegisterEvent("PLAYER_SPECIALIZATION_CHANGED")
     if (not isTimewalkWoW()) then
         eventFrame:RegisterEvent("PLAYER_TALENT_UPDATE")
+        eventFrame:RegisterEvent("ENCOUNTER_END")
     end
-    
+
     eventFrame:RegisterEvent("PLAYER_DEAD")
     eventFrame:RegisterEvent("PLAYER_ALIVE")
     eventFrame:RegisterEvent("PLAYER_UNGHOST")
@@ -1344,7 +1351,6 @@ end)
     --@data: table received from comm
     --@source: player name
     function raidStatusLib.playerInfoManager.OnReceivePlayerFullInfo(data, source)
-        --Details:Dump(data)
         local specId = tonumber(data[1])
         local renown = tonumber(data[2])
         local covenantId = tonumber(data[3])
@@ -1353,7 +1359,7 @@ end)
         local conduitsSize = data[conduitsTableIndex]
 
         --unpack the talents data as a ipairs table
-        local talentsTableUnpacked = raidStatusLib.UnpackTable(data, 3, false, false, talentsSize)
+        local talentsTableUnpacked = raidStatusLib.UnpackTable(data, 4, false, false, talentsSize)
 
         --unpack the conduits data as a ipairs table
         local conduitsTableUnpacked = raidStatusLib.UnpackTable(data, conduitsTableIndex, false, false, conduitsSize)
@@ -1454,7 +1460,6 @@ function raidStatusLib.playerInfoManager.GetPlayerFullInfo()
                         end
 
                         --local link = C_Soulbinds.GetConduitHyperlink( conduitId,  conduitRank )
-                        --print(link)
                     end
                 end
             end

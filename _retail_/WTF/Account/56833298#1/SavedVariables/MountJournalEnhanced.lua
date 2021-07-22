@@ -40,13 +40,13 @@ MJEGlobalSettings = {
 			[0] = true,
 		},
 		["source"] = {
-			["Vendor"] = true,
+			["Promotion"] = true,
 			["Black Market"] = true,
 			["Class"] = true,
-			["Promotion"] = true,
+			["Garrison"] = true,
 			["Instance"] = true,
 			["PVP"] = true,
-			["Garrison"] = true,
+			["Vendor"] = true,
 			["World Event"] = true,
 			["Island Expedition"] = true,
 			["Shop"] = true,
@@ -59,6 +59,13 @@ MJEGlobalSettings = {
 		},
 		["hiddenIngame"] = false,
 		["notCollected"] = true,
+		["onlyUsable"] = false,
+		["onlyFavorites"] = false,
+		["faction"] = {
+			["horde"] = true,
+			["alliance"] = true,
+			["noFaction"] = true,
+		},
 		["mountType"] = {
 			["repair"] = true,
 			["flying"] = true,
@@ -66,13 +73,6 @@ MJEGlobalSettings = {
 			["transform"] = true,
 			["ground"] = true,
 			["passenger"] = true,
-		},
-		["onlyFavorites"] = false,
-		["onlyUsable"] = false,
-		["faction"] = {
-			["horde"] = true,
-			["alliance"] = true,
-			["noFaction"] = true,
 		},
 		["onlyTradable"] = false,
 		["collected"] = true,
@@ -83,18 +83,19 @@ MJEGlobalSettings = {
 				["Spiders"] = true,
 			},
 			["Vehicles"] = {
-				["Mecha-suits"] = true,
-				["Discs"] = true,
 				["Jet Aerial Units"] = true,
-				["Kites"] = true,
-				["Seat"] = true,
-				["Mechanical Animals"] = true,
-				["Rockets"] = true,
 				["Assault Wagons"] = true,
 				["Mechanostriders"] = true,
+				["Rockets"] = true,
+				["Discs"] = true,
+				["Mecha-suits"] = true,
+				["Kites"] = true,
+				["Seat"] = true,
+				["Hands"] = true,
+				["Carpets"] = true,
 				["Spider Tanks"] = true,
 				["Motorcycles"] = true,
-				["Carpets"] = true,
+				["Mechanical Animals"] = true,
 				["Airships"] = true,
 				["Gyrocopters"] = true,
 				["Hovercraft"] = true,
@@ -107,6 +108,7 @@ MJEGlobalSettings = {
 				["Gryphons"] = true,
 				["Wyverns"] = true,
 			},
+			["Gargoyle"] = true,
 			["Dragonhawks"] = true,
 			["Fish"] = {
 				["Fish"] = true,
@@ -129,6 +131,7 @@ MJEGlobalSettings = {
 				["Cranes"] = true,
 				["Vultures"] = true,
 			},
+			["Razorwing"] = true,
 			["Horses"] = {
 				["Demonic Steeds"] = true,
 				["Mountain Horses"] = true,
@@ -139,6 +142,26 @@ MJEGlobalSettings = {
 				["Horned Steeds"] = true,
 				["Steeds"] = true,
 			},
+			["Devourer"] = {
+				["Mauler"] = true,
+				["Gorger"] = true,
+				["Animite"] = true,
+			},
+			["Rylaks"] = true,
+			["Demons"] = {
+				["Felsabers"] = true,
+				["Ur'zul"] = true,
+				["Demonic Hounds"] = true,
+				["Demonic Steeds"] = true,
+				["Infernals"] = true,
+			},
+			["Dinosaurs"] = {
+				["Pterrordaxes"] = true,
+				["Brutosaurs"] = true,
+				["Raptors"] = true,
+				["Falcosaurs"] = true,
+				["Direhorns"] = true,
+			},
 			["Carnivorans"] = {
 				["Bears"] = true,
 				["Foxes"] = true,
@@ -148,33 +171,14 @@ MJEGlobalSettings = {
 				["Vulpin"] = true,
 				["Hyenas"] = true,
 			},
-			["Rylaks"] = true,
-			["Dinosaurs"] = {
-				["Pterrordaxes"] = true,
-				["Brutosaurs"] = true,
-				["Raptors"] = true,
-				["Falcosaurs"] = true,
-				["Direhorns"] = true,
-			},
-			["Rays"] = {
-				["Nether Rays"] = true,
-				["Stingrays"] = true,
-				["Mana Rays"] = true,
-				["Fathom Rays"] = true,
-			},
-			["Demons"] = {
-				["Felsabers"] = true,
-				["Ur'zul"] = true,
-				["Demonic Hounds"] = true,
-				["Demonic Steeds"] = true,
-				["Infernals"] = true,
-			},
 			["Wolves"] = {
-				["Undead Wolves"] = true,
-				["Dire Wolves"] = true,
 				["Wolves"] = true,
+				["Wilderlings"] = true,
 				["War Wolves"] = true,
+				["Dire Wolves"] = true,
+				["Undead Wolves"] = true,
 			},
+			["Rats"] = true,
 			["Bovids"] = {
 				["Yaks"] = true,
 				["Talbuks"] = true,
@@ -197,35 +201,37 @@ MJEGlobalSettings = {
 				["Runestag"] = true,
 			},
 			["Reptiles"] = {
-				["Snapdragons"] = true,
-				["Turtles"] = true,
-				["Crocolisks"] = true,
-				["Kodos"] = true,
-				["Basilisks"] = true,
+				["Others"] = true,
 				["Mushan"] = true,
-				["Sea Serpents"] = true,
 				["N'Zoth Serpents"] = true,
+				["Snapdragons"] = true,
+				["Crocolisks"] = true,
+				["Turtles"] = true,
+				["Basilisks"] = true,
+				["Kodos"] = true,
+				["Sea Serpents"] = true,
+				["Shardhides"] = true,
 			},
 			["Crabs"] = true,
 			["Jellyfish"] = true,
-			["Rats"] = true,
 			["Amphibian"] = {
 				["Crawgs"] = true,
 				["Toads"] = true,
 			},
 			["Elementals"] = {
 				["Sabers"] = true,
-				["Elementals"] = true,
 				["Wind Drakes"] = true,
 				["Phoenixes"] = true,
 				["Core Hounds"] = true,
 				["Stone Drakes"] = true,
+				["Others"] = true,
 			},
 			["Insects"] = {
 				["Water Striders"] = true,
 				["Gorm"] = true,
 				["Silithids"] = true,
 				["Ravagers"] = true,
+				["Flies"] = true,
 				["Krolusks"] = true,
 				["Bees"] = true,
 				["Aqir Flyers"] = true,
@@ -247,6 +253,12 @@ MJEGlobalSettings = {
 				["Proto-Drakes"] = true,
 				["Others"] = true,
 				["Nether Drakes"] = true,
+			},
+			["Rays"] = {
+				["Stingrays"] = true,
+				["Fathom Rays"] = true,
+				["Mana Rays"] = true,
+				["Nether Rays"] = true,
 			},
 			["Cats"] = {
 				["Sabers"] = true,
@@ -781,11 +793,12 @@ MJETrackingData = {
 		11424.44859361185, -- [4]
 		1600494385, -- [5]
 	},
-	[1059] = {
-		84, -- [1]
-		1623541774, -- [2]
-		1488, -- [3]
-		22545.57505960243, -- [4]
+	[1314] = {
+		26, -- [1]
+		1609443560, -- [2]
+		1838, -- [3]
+		10481.27430319139, -- [4]
+		1603162021, -- [5]
 	},
 	[594] = {
 		122, -- [1]
@@ -852,12 +865,12 @@ MJETrackingData = {
 		986, -- [3]
 		11056.34535870286, -- [4]
 	},
-	[1314] = {
-		26, -- [1]
-		1609443560, -- [2]
-		1838, -- [3]
-		10481.27430319139, -- [4]
-		1603162021, -- [5]
+	[458] = {
+		9, -- [1]
+		1614226809, -- [2]
+		791, -- [3]
+		7465.195965210414, -- [4]
+		1605429826, -- [5]
 	},
 	[516] = {
 		0, -- [1]
@@ -1052,10 +1065,10 @@ MJETrackingData = {
 		1600550593, -- [5]
 	},
 	[460] = {
-		4009, -- [1]
-		1624120166, -- [2]
-		88746, -- [3]
-		128251.6765709282, -- [4]
+		4010, -- [1]
+		1626026295, -- [2]
+		88751, -- [3]
+		128255.3015291718, -- [4]
 	},
 	[855] = {
 		22, -- [1]
@@ -1213,11 +1226,11 @@ MJETrackingData = {
 		129, -- [3]
 		1197.770280899813, -- [4]
 	},
-	[1458] = {
-		1, -- [1]
-		1615343563, -- [2]
-		37, -- [3]
-		0, -- [4]
+	[1203] = {
+		32, -- [1]
+		1612136019, -- [2]
+		707, -- [3]
+		6364.644092859151, -- [4]
 	},
 	[1201] = {
 		36, -- [1]
@@ -1245,12 +1258,11 @@ MJETrackingData = {
 		2072, -- [3]
 		26905.19166515078, -- [4]
 	},
-	[986] = {
-		36, -- [1]
-		1611263423, -- [2]
-		928, -- [3]
-		7070.811070364501, -- [4]
-		1526572800, -- [5]
+	[1458] = {
+		1, -- [1]
+		1615343563, -- [2]
+		37, -- [3]
+		0, -- [4]
 	},
 	[446] = {
 		96, -- [1]
@@ -1270,11 +1282,12 @@ MJETrackingData = {
 		4696, -- [3]
 		46029.76144435523, -- [4]
 	},
-	[1203] = {
-		32, -- [1]
-		1612136019, -- [2]
-		707, -- [3]
-		6364.644092859151, -- [4]
+	[986] = {
+		36, -- [1]
+		1611263423, -- [2]
+		928, -- [3]
+		7070.811070364501, -- [4]
+		1526572800, -- [5]
 	},
 	[763] = {
 		29, -- [1]
@@ -1704,12 +1717,11 @@ MJETrackingData = {
 		763, -- [3]
 		7222.313522219555, -- [4]
 	},
-	[458] = {
-		9, -- [1]
-		1614226809, -- [2]
-		791, -- [3]
-		7465.195965210414, -- [4]
-		1605429826, -- [5]
+	[1059] = {
+		84, -- [1]
+		1623541774, -- [2]
+		1488, -- [3]
+		22545.57505960243, -- [4]
 	},
 	[394] = {
 		0, -- [1]

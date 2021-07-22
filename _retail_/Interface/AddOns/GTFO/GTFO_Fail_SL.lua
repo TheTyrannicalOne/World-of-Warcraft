@@ -257,6 +257,43 @@ GTFO.SpellID["357871"] = {
   sound = 3;
 };
 
+GTFO.SpellID["355561"] = {
+  --desc = "Slumber (Slumbering Swarm)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["357951"] = {
+  --desc = "Stygian Rain (Consumption)";
+  sound = 3;
+};
+
+GTFO.SpellID["355458"] = {
+  --desc = "Damnation (Mor'geth)";
+  sound = 3;
+};
+
+GTFO.SpellID["353752"] = {
+  --desc = "Cries of Anguish (Mor'geth)";
+  sound = 3;
+};
+
+GTFO.SpellID["357179"] = {
+  --desc = "Blazing Inferno (Mawforged Construct)";
+  sound = 3;
+};
+
+GTFO.SpellID["358004"] = {
+  --desc = "Unleashed Soulstorm (Screaming Shade)";
+  sound = 3;
+};
+
+GTFO.SpellID["335447"] = {
+  --desc = "Hungering Eruption (Wild Worldcracker)";
+  applicationOnly = true;
+  sound = 3;
+};
+
 --- **********************
 --- * Halls of Atonement *
 --- **********************
@@ -1117,6 +1154,166 @@ GTFO.SpellID["350217"] = {
   applicationOnly = true;
 };
 
+GTFO.SpellID["351229"] = {
+  --desc = "Rendered Soul (Soulrender Dormazain)";
+  sound = 3;
+};
+
+GTFO.SpellID["355302"] = {
+  --desc = "Chain Burst (Mawsworn Interceptor)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["358191"] = {
+  --desc = "Soul Emanation (Soul Brazier)";
+  sound = 3;
+};
+
+GTFO.SpellID["357221"] = {
+  --desc = "Release Souls (Shadowsteel Colossus)";
+  sound = 3;
+};
+
+GTFO.SpellID["350031"] = {
+  --desc = "Agatha's Eternal Blade (Agatha)";
+  sound = 3;
+};
+
+GTFO.SpellID["358978"] = {
+  --desc = "Spite (Remnant of Ner'zhul)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["354479"] = {
+  --desc = "Spite (Remnant of Ner'zhul)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["350076"] = {
+  --desc = "Grasp of Malice (Remnant of Ner'zhul)";
+  sound = 3;
+};
+
+GTFO.SpellID["357435"] = {
+  --desc = "Seeds of Fire (Borr-Gahn)";
+  sound = 3;
+};
+
+GTFO.SpellID["358980"] = {
+  --desc = "Dark Wind (High Torturer)";
+  sound = 3;
+};
+
+GTFO.SpellID["358197"] = {
+  --desc = "Searing Scythe";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["355526"] = {
+  --desc = "Spiked (Painsmith Raznal)";
+  sound = 3;
+};
+
+GTFO.SpellID["348363"] = {
+  --desc = "Spiked Ball (Painsmith Raznal)";
+  sound = 3;
+};
+
+GTFO.SpellID["355535"] = {
+  --desc = "Shadowsteel Embers (Painsmith Raznal)";
+  sound = 3;
+};
+
+GTFO.SpellID["352833"] = {
+  --desc = "Disintegration (Guardian of the First Ones)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["350355"] = {
+  --desc = "Fated Conjunction (Fatescribe Roh-Kalo)";
+  sound = 3;
+};
+
+GTFO.SpellID["353162"] = {
+  --desc = "Fate Fragment (Fatescribe Roh-Kalo)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["349806"] = {
+  --desc = "Demolish (Unstoppable Abomination)";
+  sound = 3;
+};
+
+GTFO.SpellID["346469"] = {
+  --desc = "Glacial Wrath (Kel'Thuzad)";
+  sound = 3;
+};
+
+GTFO.SpellID["352002"] = {
+  --desc = "Shadow Fissure (Kel'Thuzad)";
+  sound = 3;
+};
+
+GTFO.SpellID["354107"] = {
+  --desc = "Relentless Haunt (Frostbound Devoted)";
+  sound = 3;
+};
+
+GTFO.SpellID["356377"] = {
+  --desc = "Desecrating Shot (Sylvanas Windrunner)";
+  sound = 3;
+};
+
+GTFO.SpellID["352318"] = {
+  --desc = "Domination Chains (Sylvanas Windrunner)";
+  sound = 3;
+};
+
+GTFO.SpellID["347704"] = {
+  --desc = "Veil of Darkness (Sylvanas Windrunner)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["348145"] = {
+  --desc = "Rive (Sylvanas Windrunner)";
+  sound = 3;
+};
+
+GTFO.SpellID["351870"] = {
+  --desc = "Haunting Wave (Sylvanas Windrunner)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["353413"] = {
+  --desc = "Riven Debris (Sylvanas Windrunner)";
+  sound = 3;
+};
+
+GTFO.SpellID["348109"] = {
+  --desc = "Banshee Wail (Sylvanas Windrunner)";
+	soundFunction = function() -- Warn only if you get hit more than once within 5 seconds
+		if (GTFO_FindEvent("SylvanasBansheeWail")) then
+			return 3;
+		end
+		GTFO_AddEvent("SylvanasBansheeWail", 5);
+		return 0;
+	end
+};
+
+GTFO.SpellID["357091"] = {
+  --desc = "Cleave Flesh (Bonesteel)";
+  sound = 3;
+  tankSound = 0;
+};
+
 --- *******************************
 --- * Tazavesh, the Veiled Market *
 --- *******************************
@@ -1155,21 +1352,21 @@ GTFO.SpellID["355584"] = {
   test = true;
 };
 
-GTFO.SpellID["346828"] = {
-  --desc = "Sanitizing Field (Hylbrande)";
-  applicationOnly = true;
-  sound = 3;
-};
-
 GTFO.SpellID["347422"] = {
   --desc = "Deadly Seas";
   sound = 3;
 };
 
+GTFO.SpellID["346877"] = {
+  --desc = "Shearing Swings (Hylbrande)";
+  sound = 3;
+  tankSound = 0;
+};
+
 GTFO.SpellID["347149"] = {
   --desc = "Infinite Breath (Timecap'n Hooktail)";
   sound = 3;
-  tankSound = 0;
+  applicationOnly = true;
 };
 
 GTFO.SpellID["354334"] = {
@@ -1186,6 +1383,64 @@ GTFO.SpellID["347370"] = {
 GTFO.SpellID["351101"] = {
   --desc = "Energy Fragmentation (So'leah)";
   applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["355306"] = {
+  --desc = "Rift Blast (Portalmancer Zo'honn)";
+  sound = 3;
+};
+
+GTFO.SpellID["357019"] = {
+  --desc = "Lightshard Retreat (Cartel Wiseguy)";
+  sound = 1;
+  applicationOnly = true;
+};
+
+GTFO.SpellID["350921"] = {
+  --desc = "Crowd Control (Zo'gron)";
+  sound = 3;
+};
+
+GTFO.SpellID["355440"] = {
+  --desc = "Suppression Spark (Zo'gron)";
+  sound = 3;
+  test = true;
+};
+
+GTFO.SpellID["349999"] = {
+  --desc = "Anima Detonation (Achillite)";
+  sound = 3;
+};
+
+GTFO.SpellID["349663"] = {
+  --desc = "Grip of Hunger (Alcruux)";
+  sound = 3;
+};
+
+GTFO.SpellID["349801"] = {
+  --desc = "Grand Consumption (Alcruux)";
+  sound = 3;
+};
+
+GTFO.SpellID["356260"] = {
+  --desc = "Tidal Burst (Hourglass Tidesage)";
+  sound = 3;
+};
+
+GTFO.SpellID["357228"] = {
+  --desc = "Drifting Star (Adorned Starseer)";
+  sound = 3;
+};
+
+GTFO.SpellID["357226"] = {
+  --desc = "Drifting Star (Adorned Starseer)";
+  sound = 3;
+  test = true;
+};
+
+GTFO.SpellID["347094"] = {
+  --desc = "Titanic Crash (Hylbrande)";
   sound = 3;
 };
 

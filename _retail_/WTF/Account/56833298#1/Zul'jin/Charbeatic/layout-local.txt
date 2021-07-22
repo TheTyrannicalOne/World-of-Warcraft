@@ -13,6 +13,13 @@ X: 0
 Y: 27
 W: 300
 H: 300
+Frame: DressUpFrame
+FrameLevel: 1
+Anchor: LEFT
+X: 16
+Y: 28
+W: 951
+H: 1152
 Frame: PlayerPowerBarAlt
 FrameLevel: 2
 Anchor: BOTTOM
@@ -167,13 +174,6 @@ X: 0
 Y: -100
 W: 306
 H: 130
-Frame: DressUpFrame
-FrameLevel: 1
-Anchor: LEFT
-X: 16
-Y: 28
-W: 951
-H: 1152
 Frame: GameMenuFrame
 FrameLevel: 1
 Anchor: CENTER

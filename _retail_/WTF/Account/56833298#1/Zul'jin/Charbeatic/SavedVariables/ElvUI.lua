@@ -1,5 +1,6 @@
 
 ElvCharacterDB = {
+	["ConvertKeybindings"] = true,
 	["CliqueDatatext"] = {
 	},
 	["ChatEditHistory"] = {

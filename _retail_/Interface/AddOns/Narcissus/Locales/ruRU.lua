@@ -1,35 +1,14 @@
---Coutesy of Hubbotu. Thank you!    --Translator: Hubbotu as of 1.1.0g
+--Coutesy of Hubbotu. Thank you!    --Translator: Hubbotu as of 1.1.2
 
 if not (GetLocale() == "ruRU") then
     return;
 end
 
-local L = Narci.L
-
-NARCI_GRADIENT = "|cffA236EFN|cff9448F1a|cff865BF2r|cff786DF4c|cff6A80F6i|cff5D92F7s|cff4FA4F9s|cff41B7FAu|cff33C9FCs|r"
-MYMOG_GRADIENT = "|cffA236EFM|cff9448F1y |cff865BF2T|cff786DF4r|cff6A80F6a|cff5D92F7n|cff4FA4F9s|cff41B7FAm|cff33C9FCo|cff32c9fbg|r"
-
-NARCI_VERSION_INFO = "1.1.0";
-NARCI_DEVELOPER_INFO = "Разработано Peterodox";
-
-NARCI_NEW_ENTRY_PREFIX = "|cff40C7EB";
-NARCI_COLOR_GREY_85 = "|cffd8d8d8";
-NARCI_COLOR_GREY_70 = "|cffb3b3b3";
-NARCI_COLOR_RED_MILD = "|cffff5050";
-NARCI_COLOR_GREEN_MILD = "|cff7cc576";
-NARCI_COLOR_YELLOW = "|cfffced00";
-NARCI_COLOR_CYAN_DARK = "5385a5";
-NARCI_COLOR_PINK_DARK = "da9bc3";
-
-NARCI_MODIFIER_ALT = "ALT";   --Windows
-NARCI_SHORTCUTS_COPY = "Ctrl+C";
-
-NARCI_MOUSE_BUTTON_ICON_1 = "|TInterface\\AddOns\\Narcissus\\Art\\Keyboard\\Mouse-Small:16:16:0:0:64:16:0:16:0:16|t";   --Left Button
-NARCI_MOUSE_BUTTON_ICON_2 = "|TInterface\\AddOns\\Narcissus\\Art\\Keyboard\\Mouse-Small:16:16:0:0:64:16:16:32:0:16|t";   --Right Button
-NARCI_MOUSE_BUTTON_ICON_3 = "|TInterface\\AddOns\\Narcissus\\Art\\Keyboard\\Mouse-Small:16:16:0:0:64:16:32:48:0:16|t";   --Middle Button
+local L = Narci.L;
 
 if IsMacClient() then
     --Mac OS
+	NARCI_MODIFIER_CONTROL = "Команды";
     NARCI_MODIFIER_ALT = "Вариант";
     NARCI_SHORTCUTS_COPY = "Команда+C";
 end
@@ -219,9 +198,11 @@ L["Camera Transition"] = "Переход камеры";
 L["Camera Transition Description On"] = "Камера плавно переместится в заданное положение, когда вы откроете панель персонажа.";
 L["Camera Transition Description Off"] = "Переход камеры становится мгновенным. Начинается со второго использования панели персонажа.\nМгновенный переход отменяет предустановку камеры #4.";
 L["Interface Options Tab Description"] = "Вы также можете получить доступ к этой панели, нажав кнопку с шестеренкой рядом с панелью инструментов в левом нижнем углу экрана при использовании Narcissus.";
+L["Soulbinds"] = COVENANT_PREVIEW_SOULBINDS;
+L["Conduit Tooltip"] = "Поведенческие эффекты более высоких рангов";
+L["Domination Indicator"] = "Индикатор господства";
 
 --Model Control--
-NARCI_HOLD_WEAPON = "С Оружием";
 NARCI_STAND_IDLY = "Без Оружия";
 NARCI_RANGED_WEAPON = "Дальний бой";
 NARCI_MELEE_WEAPON = "Ближний бой";
@@ -343,7 +324,7 @@ L["Gem Tooltip Format2"] = "%s, %s и %s больше...";
 L["Equipped Item Level Format"] = "Экипировано %s";
 L["Equipped Item Level Tooltip"] = "Средний уровень предметов вашего надетого снаряжения.";
 L["Equipment Manager"] = EQUIPMENT_MANAGER;
-L["Toggle Equipment Set Manager"] = "ЛКМ, чтобы переключить диспетчер комплектов снаряжения.";
+L["Toggle Equipment Set Manager"] = NARCI_MOUSE_BUTTON_ICON_1.."Диспетчер комплектов снаряжения.";
 L["Duplicated Set"] = "Дублированный Набор";
 L["Low Item Level"] = "Низкий уровень предмета";
 L["1 Missing Item"] = "1 недостающий предмет";
@@ -353,6 +334,8 @@ L["Don't Update Items"] = "Не обновляйте предметы";
 L["Update Talents"] = "Обновление Талантов";
 L["Don't Update Talents"] = "Не обновляйте таланты";
 L["Old Icon"] = "Старая Иконка";
+L["NavBar Saved Sets"] = "Сохранено";   --A Saved Equipment Set
+L["NavBar Incomplete Sets"] = INCOMPLETE;
 NARCI_ICON_SELECTOR = "Переключатель Иконок";
 NARCI_DELETE_SET_WITH_LONG_CLICK = "Удалить Набор\n|cff808080(нажмите и удерживайте кнопку)|r";
 
@@ -448,28 +431,21 @@ L["Guide NPC Browser Line1"] = "Известные НПС перечислены
 NARCI_SPLASH_WHATS_NEW_FORMAT = "Что нового в Narcissus %s";
 
 L["Splash Category1"] = L["Фото Режим"];
-L["Splash Content1 Name"] = "Наложение Текста";
-L["Splash Content1 Description"] = "-Создавайте облака разговора, говорящие головы и субтитры в режиме группового фото.";
-L["Splash Content2 Name"] = "Вкладка Анимации";
-L["Splash Content2 Description"] = "-Вы можете искать любимые анимации.\n-У некоторых анимаций есть вариации, теперь их тоже можно выбрать.";
-L["Splash Content3 Name"] = "Тень на земле";
-L["Splash Content3 Description"] = "-Представляем новую форму тени, которая более реалистична в некоторых сценах.";
-L["Splash Category2"] = "Парикмахерская";
-L["Splash Content4 Name"] = "Улучшение парикмахерской";
-L["Splash Content4 Description"] = "-Вы можете сохранить свою внешность.\n-У вас есть 20 ячеек сохранения для каждого персонажа (по 10 для каждого пола).\n-Немного статистики?";
-L["Splash Category3"] = "Достижения";
-L["Splash Content5 Name"] = "Окно достижений";
-L["Splash Content5 Description"] = "-Отдельная панель достижений.\n-Легко перемещаться вперед и назад при просмотре связанных достижений.";
-L["Splash Category4"] = "Разное";
-L["Splash Content6 Name"] = "Движение камеры";
-L["Splash Content6 Description"] = "-Переход камеры будет мгновенным во второй раз, когда вы войдете на экран персонажа в Narcissus во время игровой сессии.";
-L["Splash Content7 Name"] = "Высокое качество";
-L["Splash Content7 Description"] = "Вы можете временно максимизировать тени с трассировкой лучей, если эта функция поддерживается.";
-L["Splash Content8 Name"] = "Кнопка на миникарте";
-L["Splash Content8 Description"] = "Вы можете отсоединить кнопку от миникарты, удерживая Shift при перетаскивании.";
-
-L["Flavored Text"] = "Посетите любой Йогг Салон в крупных городах сегодня и получите скидку.";
-
+L["Splash Content1 Name"] = "Оружие";
+L["Splash Content1 Description"] = "-Просматривайте и используйте все оружие в базе данных, в том числе то, которое не может быть получено игроками.";
+L["Splash Content2 Name"] = "Экран выбора персонажа";
+L["Splash Content2 Description"] = "-Добавьте декоративную рамку для создания (подделки) экрана выбора персонажа.";
+L["Splash Content3 Name"] = "Гардеробная";
+L["Splash Content3 Description"] = "-Переделан модуль гардероба.\n-Список предметов теперь включает непарные плечи и иллюзии оружия.";
+L["Splash Content4 Name"] = "Браузер НПС";
+L["Splash Content4 Description"] = "-Обновлена локальная база данных, которая содержит 152 219 существ.";
+L["Splash Category2"] = "Окно персонажа";
+L["Splash Content5 Name"] = "Осколок господства";
+L["Splash Content5 Description"] = "-Индикатор осколков господства появится, если вы наденете соответствующие предметы.\n-Список доступных осколков будет представлен вам, когда вы вставите предметы господства.";
+L["Splash Content6 Name"] = "Медиумы";
+L["Splash Content6 Description"] = "-Интерфейс медиумов обновлен. Вы можете проверить эффекты канала для более высоких рангов.";
+L["Splash Content7 Name"] = "Визуальные эффекты";
+L["Splash Content7 Description"] = "-Граница шестиугольника приобретает новый вид. Некоторые предметы имеют уникальный внешний вид.";
 
 --Project Details--
 NARCI_ALL_PROJECTS = "Все проекты";
@@ -492,3 +468,20 @@ L["A1"] = "По - видимому, это диалог подтверждени
 L["A2"] = "Ха, вот что она сказала.";
 L["A3"] = "Ладно...ладно..."
 L["A4"] = "Просто откройте Настройки, а затем перейдите в режим фото. Вы не пропустите его.";
+
+--Search--
+L["Search Result Singular"] = "%s результат";
+L["Search Result Plural"] = "%s результатов";
+L["Search Result Overflow"] = "более %s результатов";
+L["Search Result None"] = CLUB_FINDER_APPLICANT_LIST_NO_MATCHING_SPECS;
+
+--Weapon Browser--
+L["Draw Weapon"] = "С Оружием";
+L["Unequip Item"] = "Необорудовать";
+L["WeaponBrowser Guide Hotkey"] = "Укажите в какой руке держать оружие:";
+L["WeaponBrowser Guide ModelType"] = "Некоторые предметы ограничены определенным типом модели:";
+L["WeaponBrowser Guide DressUpModel"] = "Это будет тип по умолчанию, если ваша цель - игрок, если вы не удерживаете <%s> при его создании.";
+L["WeaponBrowser Guide CinematicModel"] = "Тип модели всегда будет кинематографическим, если существо является НПС. Оружие нельзя вкладывать в ножны.";
+
+--Domination Item--
+L["Item Bonus"] = "Бонус:"  --do NOT re-translate

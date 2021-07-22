@@ -2742,7 +2742,7 @@ for key,value in pairs({
 	[350978] = "Tesouro do Conservatório da Rainha",	-- Queen's Conservatory Cache
 	[351467] = "Epitáfio Esmaecido",	-- Faded Epitaph
 	[351487] = "Tesouro Secreto",	-- Secret Treasure
-	--TODO: [351540] = "Secret Treasure",	-- Secret Treasure
+	[351540] = "Tesouro Secreto",	-- Secret Treasure
 	[351541] = "Tesouro Secreto",	-- Secret Treasure
 	[351542] = "Tesouro Secreto",	-- Secret Treasure
 	[351543] = "Tesouro Secreto",	-- Secret Treasure
@@ -2881,12 +2881,12 @@ for key,value in pairs({
 	--TODO: [356697] = "Alexandros Mograine's Extravagant Tribute",	-- Alexandros Mograine's Extravagant Tribute
 	[356700] = "Tributo Extravagante do Grão-mestre Vole",	-- Grandmaster Vole's Extravagant Tribute
 	[356705] = "Tributo Extravagante do Arquiteto da Peste Marileth",	-- Plague Deviser Marileth's Extravagant Tribute
-	--TODO: [356709] = "Lady Moonberry's Extravagant Tribute",	-- Lady Moonberry's Extravagant Tribute
-	--TODO: [356712] = "Hunt-Captain Korayn's Extravagant Tribute",	-- Hunt-Captain Korayn's Extravagant Tribute
+	[356709] = "Tributo Extravagante da Lady Lunamora",	-- Lady Moonberry's Extravagant Tribute
+	[356712] = "Tributo Extravagante da Capitã de Caça Korayn",	-- Hunt-Captain Korayn's Extravagant Tribute
 	[356716] = "Tributo Extravagante da Droman Aliothe",	-- Droman Aliothe's Extravagant Tribute
 	[356720] = "Tributo Extravagante de Xufa",	-- Choofa's Extravagant Tribute
-	--TODO: [356725] = "Polemarch Adrestes' Extravagant Tribute",	-- Polemarch Adrestes' Extravagant Tribute
-	--TODO: [356728] = "Mikanikos' Extravagant Tribute",	-- Mikanikos' Extravagant Tribute
+	[356725] = "Tributo Extravagante do Polemarco Adrestes",	-- Polemarch Adrestes' Extravagant Tribute
+	[356728] = "Tributo Extravagante de Mikâniko",	-- Mikanikos' Extravagant Tribute
 	[356733] = "Tributo Extravagante de Kleia e Pelagos",	-- Kleia and Pelagos' Extravagant Tribute
 	[356737] = "Tributo Extravagante de Sika",	-- Sika's Extravagant Tribute
 	[356741] = "Tributo Extravagante da Condessa",	-- The Countess' Extravagant Tribute
@@ -2960,7 +2960,7 @@ for key,value in pairs({
 	[369135] = "Selo da Dominação #2",	-- Domination Seal #2
 	[369138] = "Selo do Baú da Dominação",	-- Domination Chest Seal
 	[369141] = "Cabedal Górjuro",	-- Mawsworn Cache
-	--TODO: [369143] = "Quartered Ancient Ring",	-- Quartered Ancient Ring
+	[369143] = "Anel Antigo Fendido em Quatro",	-- Quartered Ancient Ring
 	[369144] = "Molho de Chaves da Consternadora",	-- The Harrower's Key Ring
 	[369145] = "Baú de Suprimentos de Infergarde",	-- Helgarde Supply Cache
 	[369148] = "Material de Ninho Brilhante",	-- Glittering Nest Material

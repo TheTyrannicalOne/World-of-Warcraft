@@ -28,10 +28,10 @@ OmniCCDB = {
 		["Kotalkhan - Zul'jin"] = "Default",
 		["Fantastiburo - Zul'jin"] = "Default",
 		["Laymonan - Zul'jin"] = "Default",
-		["Serbitechna - Dalaran"] = "Default",
-		["Vadder - Argent Dawn"] = "Default",
-		["Datgore - Zul'jin"] = "Default",
 		["Tyran - Argent Dawn"] = "Default",
+		["Vadder - Argent Dawn"] = "Default",
+		["Serbitechna - Dalaran"] = "Default",
+		["Datgore - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
@@ -43,7 +43,7 @@ OmniCCDB = {
 	},
 	["global"] = {
 		["dbVersion"] = 6,
-		["addonVersion"] = "9.0.10",
+		["addonVersion"] = "9.1.0",
 	},
 	["profiles"] = {
 		["Default"] = {

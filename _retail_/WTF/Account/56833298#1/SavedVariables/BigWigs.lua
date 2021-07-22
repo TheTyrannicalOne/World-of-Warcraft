@@ -13,13 +13,9 @@ BigWigs3DB = {
 	["namespaces"] = {
 		["BigWigs_Plugins_Victory"] = {
 		},
-		["BigWigs_Bosses_Armsmaster Harlan"] = {
-		},
 		["BigWigs_Plugins_Alt Power"] = {
 		},
 		["LibDualSpec-1.0"] = {
-		},
-		["BigWigs_Bosses_High Inquisitor Whitemane"] = {
 		},
 		["BigWigs_Plugins_Sounds"] = {
 		},
@@ -28,8 +24,6 @@ BigWigs3DB = {
 		["BigWigs_Plugins_Countdown"] = {
 		},
 		["BigWigs_Plugins_AltPower"] = {
-		},
-		["BigWigs_Bosses_Thalnos the Soulrender"] = {
 		},
 		["BigWigs_Plugins_Colors"] = {
 		},
@@ -41,33 +35,29 @@ BigWigs3DB = {
 			["profiles"] = {
 				["Default"] = {
 					["BigWigsAnchor_width"] = 219.9998626708984,
+					["BigWigsEmphasizeAnchor_width"] = 320.0000915527344,
 					["BigWigsEmphasizeAnchor_height"] = 22.00007629394531,
 					["BigWigsAnchor_height"] = 15.99994277954102,
-					["BigWigsEmphasizeAnchor_width"] = 320.0000915527344,
 				},
 			},
 		},
-		["BigWigs_Bosses_Flameweaver Koegler"] = {
-		},
 		["BigWigs_Plugins_Super Emphasize"] = {
-		},
-		["BigWigs_Bosses_Houndmaster Braun"] = {
-		},
-		["BigWigs_Plugins_Raid Icons"] = {
-		},
-		["BigWigs_Plugins_Pull"] = {
 		},
 		["BigWigs_Plugins_AutoReply"] = {
 		},
-		["BigWigs_Plugins_Messages"] = {
+		["BigWigs_Plugins_Pull"] = {
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
 				["Default"] = {
-					["width"] = 139.9999847412109,
 					["height"] = 120.0000076293945,
+					["width"] = 139.9999847412109,
 				},
 			},
+		},
+		["BigWigs_Plugins_Messages"] = {
+		},
+		["BigWigs_Plugins_Raid Icons"] = {
 		},
 		["BigWigs_Plugins_Common Auras"] = {
 		},
@@ -184,10 +174,11 @@ BigWigsStatsDB = {
 		},
 	},
 	[2164] = {
-		[2347] = {
+		[2361] = {
 			["LFR"] = {
-				["best"] = 247.9619999999995,
 				["kills"] = 1,
+				["wipes"] = 1,
+				["best"] = 490.721000000005,
 			},
 		},
 		[2351] = {
@@ -209,11 +200,10 @@ BigWigsStatsDB = {
 				["kills"] = 1,
 			},
 		},
-		[2361] = {
+		[2354] = {
 			["LFR"] = {
+				["best"] = 240.8419999999969,
 				["kills"] = 1,
-				["wipes"] = 1,
-				["best"] = 490.721000000005,
 			},
 		},
 		[2359] = {
@@ -229,9 +219,9 @@ BigWigsStatsDB = {
 				["best"] = 373.2479999999996,
 			},
 		},
-		[2354] = {
+		[2347] = {
 			["LFR"] = {
-				["best"] = 240.8419999999969,
+				["best"] = 247.9619999999995,
 				["kills"] = 1,
 			},
 		},

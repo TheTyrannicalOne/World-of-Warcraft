@@ -475,6 +475,7 @@ scanner_button:SetScript("OnEvent", function(self, event, ...)
 
 				-- If the loot comes from a container that we support
 				if (npcType == "GameObject") then
+					RSLogger:PrintDebugMessage(string.format("Abierto [%s].", id or ""))
 					local containerID = id and tonumber(id) or nil
 
 					-- We support all the containers with vignette plus those ones that are part of achievements (without vignette)
@@ -483,6 +484,8 @@ scanner_button:SetScript("OnEvent", function(self, event, ...)
 						-- This will happend in the case where the container doesnt have a vignette
 						if (not RSGeneralDB.GetAlreadyFoundEntity(containerID)) then
 							RSGeneralDB.AddAlreadyFoundContainerWithoutVignette(containerID)
+						else
+							RSGeneralDB.UpdateAlreadyFoundEntityPlayerPosition(containerID)
 						end
 
 						-- Sets the container as opened
@@ -983,11 +986,12 @@ function scanner_button:DetectedNewVignette(self, vignetteInfo, isNavigating)
 	end
 	
 	-- Check if it is an event to summon another NPC. In that case display NPC information instead
-	for eventID, rareNpcID in pairs (RSConstants.NPCS_WITH_PRE_EVENT) do
-		if (eventID == entityID) then
-			RSGeneralDB.RemoveAlreadyFoundEntity(eventID)
-			entityID = rareNpcID
-		end
+	if (RSConstants.NPCS_WITH_PRE_EVENT[entityID]) then
+		local rareNpcID = RSConstants.NPCS_WITH_PRE_EVENT[entityID]
+		RSGeneralDB.RemoveAlreadyFoundEntity(eventID)
+		vignetteInfo.name = RSNpcDB.GetNpcName(rareNpcID)
+		entityID = rareNpcID
+		vignetteInfo.preEvent = true
 	end
 
 	-- Check it it is an entity that use a vignette but it isn't a rare, event or treasure
@@ -1136,7 +1140,7 @@ function scanner_button:DetectedNewVignette(self, vignetteInfo, isNavigating)
 				RareScanner:SetVignetteFound(vignetteInfo.id, false, entityID)
 				FlashClientIcon()
 				self:PlaySoundAlert(vignetteInfo.atlasName)
-				self:DisplayMessages(vignetteInfo.name)
+				self:DisplayMessages(vignetteInfo.preEvent and string.format(AL["PRE_EVENT"], vignetteInfo.name) or vignetteInfo.name)
 				return
 			end
 		end
@@ -1163,7 +1167,7 @@ function scanner_button:DetectedNewVignette(self, vignetteInfo, isNavigating)
 	--------------------------------
 	if (not isNavigating) then
 		FlashClientIcon()
-		self:DisplayMessages(vignetteInfo.name)
+		self:DisplayMessages(vignetteInfo.preEvent and string.format(AL["PRE_EVENT"], vignetteInfo.name) or vignetteInfo.name)
 		self:PlaySoundAlert(vignetteInfo.atlasName)
 	end
 
@@ -1180,6 +1184,7 @@ function scanner_button:DetectedNewVignette(self, vignetteInfo, isNavigating)
 		if (not self:IsShown() or isNavigating or not RSConfigDB.IsDisplayingNavigationArrows() or not RSConfigDB.IsNavigationLockEnabled()) then
 			self.npcID = entityID
 			self.name = vignetteInfo.name
+			self.preEvent = vignetteInfo.preEvent
 			self.atlasName = vignetteInfo.atlasName
 
 			local npcInfo = RSNpcDB.GetInternalNpcInfo(entityID)
@@ -1425,7 +1430,7 @@ function scanner_button:ShowButton()
 	self:SetScale(RSConfigDB.GetButtonScale())
 
 	-- Sets the name
-	self.Title:SetText(self.name)
+	self.Title:SetText(self.preEvent and string.format(AL["PRE_EVENT"], self.name) or self.name)
 
 	-- show loot bar
 	if (RSConfigDB.IsDisplayingLootBar()) then

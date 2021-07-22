@@ -27,10 +27,10 @@ LegionInvasionTimerDB = {
 		["Fantastiburo - Zul'jin"] = "Default",
 		["Kelvalatar - Dalaran"] = "Default",
 		["Laymonan - Zul'jin"] = "Default",
-		["Datgore - Zul'jin"] = "Default",
-		["Vadder - Argent Dawn"] = "Default",
-		["Tyran - Argent Dawn"] = "Default",
 		["Serbitechna - Dalaran"] = "Default",
+		["Vadder - Argent Dawn"] = "Default",
+		["Datgore - Zul'jin"] = "Default",
+		["Tyran - Argent Dawn"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
 		["Okona - Zul'jin"] = "Default",
@@ -51,4 +51,4 @@ LegionInvasionTimerDB = {
 		},
 	},
 }
-LegionInvasionTime = 1623605433
+LegionInvasionTime = 1626136233

@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.052,
+	["LastVersion"] = 2.0521,
 	["LastPlayerFullName"] = "Durlok-Black Dragonflight",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
@@ -68,7 +68,12 @@ PawnOptions = {
 			["AlsoFitsIn"] = 14,
 			["Link"] = "|cff00ccff|Hitem:122361::::::::50:104:::1:5805::::|h[Swift Hand of Justice]|h|r",
 		}, -- [13]
-		nil, -- [14]
+		{
+			["ID"] = 122361,
+			["Level"] = 58,
+			["AlsoFitsIn"] = 13,
+			["Link"] = "|cff00ccff|Hitem:122361::::::::50:104:::1:5805::::::|h[Swift Hand of Justice]|h|r",
+		}, -- [14]
 		{
 			["ID"] = 183553,
 			["Level"] = 100,

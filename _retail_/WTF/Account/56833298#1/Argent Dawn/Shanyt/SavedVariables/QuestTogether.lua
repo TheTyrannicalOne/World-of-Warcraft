@@ -1,10 +1,10 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[57919] = {
-			["title"] = "An Abuse of Power",
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/1 Abused Soul subjugated", -- [1]
+				"0/4 Echo of Time", -- [1]
 			},
 		},
 		[42234] = {
@@ -29,15 +29,10 @@ QuestTogether = {
 				"3/20 Eternal Ornament", -- [1]
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
+		[47727] = {
+			["title"] = "Tomb of Sargeras: Aegwynn's Path",
 			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
-			},
-		},
-		[57567] = {
-			["title"] = "N'Zoth Assault Tracker (Vale)",
-			["objectives"] = {
+				"3/4 Fragment of the Guardian's Seal", -- [1]
 			},
 		},
 		[61981] = {
@@ -94,6 +89,12 @@ QuestTogether = {
 				"9184/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
+		[50602] = {
+			["title"] = "Talanji's Expedition",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Nazmir.", -- [1]
+			},
+		},
 		[50604] = {
 			["title"] = "Tortollan Seekers",
 			["objectives"] = {
@@ -106,10 +107,10 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Azsuna", -- [1]
 			},
 		},
-		[42170] = {
-			["title"] = "The Dreamweavers",
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Val'sharah", -- [1]
+				"2/4 Echo of Time", -- [1]
 			},
 		},
 		[44948] = {
@@ -124,15 +125,9 @@ QuestTogether = {
 				"1/1 Speak with Ve'nari", -- [1]
 			},
 		},
-		[57562] = {
-			["title"] = "Amathet Assault Tracker",
+		[57564] = {
+			["title"] = "Mantid Assault Tracker",
 			["objectives"] = {
-			},
-		},
-		[62730] = {
-			["title"] = "Fruit of the Gods",
-			["objectives"] = {
-				"0/1 Ripe Purian", -- [1]
 			},
 		},
 		[48305] = {
@@ -155,14 +150,16 @@ QuestTogether = {
 				"0/1 Method of tracking found", -- [2]
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
+		[48642] = {
+			["title"] = "Argussian Reach",
 			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
+				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
+			},
+		},
+		[50562] = {
+			["title"] = "Champions of Azeroth",
+			["objectives"] = {
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
 		[54180] = {
@@ -175,10 +172,14 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[45383] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
-				"2/4 Echo of Time", -- [1]
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
 		[57462] = {
@@ -187,10 +188,10 @@ QuestTogether = {
 				"28/200 Shred of Insanity", -- [1]
 			},
 		},
-		[47727] = {
-			["title"] = "Tomb of Sargeras: Aegwynn's Path",
+		[62730] = {
+			["title"] = "Fruit of the Gods",
 			["objectives"] = {
-				"3/4 Fragment of the Guardian's Seal", -- [1]
+				"0/1 Ripe Purian", -- [1]
 			},
 		},
 		[57403] = {
@@ -199,16 +200,15 @@ QuestTogether = {
 				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
 			},
 		},
-		[45382] = {
+		[45381] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
+				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[50603] = {
-			["title"] = "Voldunai",
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Vol'dun", -- [1]
 			},
 		},
 		[30567] = {
@@ -223,10 +223,10 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[45381] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[57919] = {
+			["title"] = "An Abuse of Power",
 			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
+				"0/1 Abused Soul subjugated", -- [1]
 			},
 		},
 	},

@@ -1,11 +1,4 @@
 Version: 1
-Frame: AllTheThings-Window-CurrentInstance
-FrameLevel: 1
-Anchor: LEFT
-X: 0
-Y: -15
-W: 300
-H: 300
 Frame: BagItemTooltipMover
 FrameLevel: 2
 Anchor: TOP
@@ -18,7 +11,7 @@ FrameLevel: 1
 Anchor: RIGHT
 X: 0
 Y: -9
-W: 384
+W: 784
 H: 260
 Frame: DressUpFrame
 FrameLevel: 1
@@ -186,6 +179,13 @@ FrameLevel: 1
 Anchor: BOTTOMLEFT
 X: 0
 Y: 258
+W: 300
+H: 300
+Frame: AllTheThings-Window-CurrentInstance
+FrameLevel: 1
+Anchor: LEFT
+X: 0
+Y: -15
 W: 300
 H: 300
 Frame: GameMenuFrame

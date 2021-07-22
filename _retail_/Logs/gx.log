@@ -1,24 +1,26 @@
-6/19 11:57:28.184  LogOpen
-6/19 11:57:28.184  World of Warcraft Retail x86_64 9.0.5.38556
-6/19 11:57:28.184  Windows 10 (10.0.19042) x86_64
-6/19 11:57:28.184         Intel(R) Core(TM) i7-4930K CPU @ 3.40GHz | Sockets:1 Cores:6 Threads:12
-6/19 11:57:28.184  31.9 GB System Memory
-6/19 11:57:28.184  On AC Power - Battery Not Present
-6/19 11:57:28.748  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" family:Turing type:Discrete vendor:0x10de device:0x1e07 driver(0x1b0015000e1a15) location:1 dx11:true dx12:true
-6/19 11:57:28.748  	Monitor 0 "Generic PnP Monitor" Size(2560x1440) Pos(0, 0)
-6/19 11:57:28.748  	Monitor 1 "Generic PnP Monitor" Size(1920x1080) Pos(-1920, 353)
-6/19 11:57:28.748  Nvidia driver version: r466_61
-6/19 11:57:28.765  Choosing gpu with monitor attached: "NVIDIA GeForce RTX 2080 Ti"
-6/19 11:57:28.765  D3d12 Device Create
-6/19 11:57:29.006  DXGI_FORMAT_B8G8R8A8_UNORM UAV support: true
-6/19 11:57:29.006  Ray Tracing Support: DXR 1.1
-6/19 11:57:29.006  Variable Rate Shading Supported: true
-6/19 11:57:30.997  NotifyOnDeviceCreate
-6/19 11:57:30.997  D3d12 Device Create Successful
-6/19 11:57:30.997  <IsGPUDriverOutOfDate> No
-6/19 11:57:30.997  Detected Graphics Defaults: 7 (CPU = 7, GPU = 7, MEM = 7)
-6/19 11:57:31.095  Render Settings Changed. New Render Size: 2560x1440
-6/19 11:58:34.701  Render Settings Changed
-6/19 12:35:33.684  D3d12 Device Destroy
-6/19 12:35:33.684  NotifyOnDeviceDestroy
-6/19 12:35:34.070  GxShutdown
+7/13 01:07:09.620  LogOpen
+7/13 01:07:09.620  World of Warcraft Retail x86_64 9.1.0.39335
+7/13 01:07:09.620  Windows 10 (10.0.19042) x86_64
+7/13 01:07:09.620         Intel(R) Core(TM) i7-4930K CPU @ 3.40GHz | Sockets:1 Cores:6 Threads:12
+7/13 01:07:09.620  31.9 GB System Memory
+7/13 01:07:09.620  On AC Power - Battery Not Present
+7/13 01:07:10.292  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" family:Turing type:Discrete vendor:0x10de device:0x1e07 driver(0x1e0000000e1bc7) location:1 dx11:true dx12:true
+7/13 01:07:10.292  	Monitor 0 "Generic PnP Monitor" Size(2560x1440) Pos(0, 0)
+7/13 01:07:10.292  	Monitor 1 "Generic PnP Monitor" Size(1920x1080) Pos(-1920, 353)
+7/13 01:07:10.292  Nvidia driver version: r470_96
+7/13 01:07:10.425  Choosing gpu with monitor attached: "NVIDIA GeForce RTX 2080 Ti"
+7/13 01:07:10.425  D3d12 Device Create
+7/13 01:07:10.425  DXGI_FEATURE_PRESENT_ALLOW_TEARING:true
+7/13 01:07:10.913  DXGI_FORMAT_B8G8R8A8_UNORM UAV support: true
+7/13 01:07:10.913  Ray Tracing Support: DXR 1.1
+7/13 01:07:10.913  Variable Rate Shading Supported: true
+7/13 01:07:14.635  NotifyOnDeviceCreate
+7/13 01:07:14.645  D3d12 Device Create Successful
+7/13 01:07:14.645  <IsGPUDriverOutOfDate> No
+7/13 01:07:14.645  Detected Graphics Defaults: 7 (CPU = 7, GPU = 7, MEM = 7)
+7/13 01:07:14.741  Render Settings Changed. New Render Size: 2560x1440
+7/13 01:07:17.738  Detected SwapChain::Present Modified
+7/13 01:09:16.099  Render Settings Changed
+7/13 01:19:36.016  D3d12 Device Destroy
+7/13 01:19:36.016  NotifyOnDeviceDestroy
+7/13 01:19:36.458  GxShutdown

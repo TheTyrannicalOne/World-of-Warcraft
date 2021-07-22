@@ -23,19 +23,20 @@ NarcissusDB = {
 	["SearchRelativesHotkey"] = "TAB",
 	["AutoColorTheme"] = true,
 	["UseExitConfirmation"] = true,
-	["IsSortedByCategory"] = true,
 	["DetailedIlvlInfo"] = true,
+	["IsSortedByCategory"] = true,
 	["FontHeightItemName"] = 10,
+	["DominationIndicator"] = true,
 	["MinimapButton"] = {
 		["Position"] = 2.617993877991494,
 	},
 	["ShowMinimapButton"] = true,
-	["FadeButton"] = false,
+	["BorderTheme"] = "Bright",
 	["CameraTransition"] = true,
 	["AFKScreen"] = false,
-	["BorderTheme"] = "Bright",
 	["Tutorials"] = {
 		["ExitConfirmation"] = true,
+		["WeaponBrowser"] = true,
 		["Movement"] = true,
 		["SpellVisualBrowser"] = true,
 		["IndependentMinimapButton"] = false,
@@ -43,12 +44,13 @@ NarcissusDB = {
 		["EquipmentSetManager"] = true,
 		["NPCBrowser"] = true,
 	},
+	["FadeButton"] = false,
 	["CorruptionTooltip"] = false,
 	["ShowModulePanelOnMouseOver"] = true,
 	["CameraSafeMode"] = true,
 	["CameraOrbit"] = true,
-	["WeatherEffect"] = true,
 	["EnableGrainEffect"] = false,
+	["WeatherEffect"] = true,
 	["UseEntranceVisual"] = true,
 	["EyeColor"] = 1,
 	["LetterboxEffect"] = false,
@@ -56,8 +58,8 @@ NarcissusDB = {
 	["GemManager"] = true,
 	["ModelPanelScale"] = 1,
 	["DressingRoomIncludeItemID"] = false,
-	["EnableDoubleTap"] = false,
 	["TooltipTheme"] = "Dark",
+	["EnableDoubleTap"] = false,
 	["AlwaysShowModel"] = false,
 	["ShowFullBody"] = true,
 	["PhotoModeButton"] = {
@@ -66,7 +68,7 @@ NarcissusDB = {
 	["BaseLineOffset"] = 0,
 	["AFKAutoStand"] = false,
 	["DefaultLayout"] = 2,
-	["Version"] = 10103,
+	["Version"] = 10200,
 	["AutoPlayAnimation"] = true,
 	["AnchorToMinimap"] = true,
 	["FadeMusic"] = true,
@@ -230,9 +232,9 @@ NarciStatisticsDB = {
 				22, -- [2]
 				true, -- [3]
 			},
-			[57709] = {
-				122, -- [1]
-				46, -- [2]
+			[59753] = {
+				69, -- [1]
+				0, -- [2]
 				true, -- [3]
 			},
 			[62932] = {
@@ -245,10 +247,10 @@ NarciStatisticsDB = {
 				31, -- [2]
 				true, -- [3]
 			},
-			[60775] = {
-				87, -- [1]
-				26, -- [2]
-				false, -- [3]
+			[57709] = {
+				122, -- [1]
+				46, -- [2]
+				true, -- [3]
 			},
 			[59914] = {
 				24, -- [1]
@@ -670,9 +672,9 @@ NarciStatisticsDB = {
 				30, -- [2]
 				true, -- [3]
 			},
-			[60859] = {
-				114, -- [1]
-				25, -- [2]
+			[62903] = {
+				56, -- [1]
+				10, -- [2]
 				true, -- [3]
 			},
 			[60763] = {
@@ -705,9 +707,9 @@ NarciStatisticsDB = {
 				28, -- [2]
 				true, -- [3]
 			},
-			[62903] = {
-				56, -- [1]
-				10, -- [2]
+			[59837] = {
+				102, -- [1]
+				21, -- [2]
 				true, -- [3]
 			},
 			[62919] = {
@@ -895,9 +897,9 @@ NarciStatisticsDB = {
 				43, -- [2]
 				true, -- [3]
 			},
-			[60509] = {
-				100, -- [1]
-				18, -- [2]
+			[63064] = {
+				103, -- [1]
+				34, -- [2]
 				true, -- [3]
 			},
 			[60972] = {
@@ -915,9 +917,9 @@ NarciStatisticsDB = {
 				22, -- [2]
 				true, -- [3]
 			},
-			[63064] = {
-				103, -- [1]
-				34, -- [2]
+			[58976] = {
+				107, -- [1]
+				58, -- [2]
 				true, -- [3]
 			},
 			[58593] = {
@@ -1060,9 +1062,9 @@ NarciStatisticsDB = {
 				11, -- [2]
 				true, -- [3]
 			},
-			[59185] = {
-				88, -- [1]
-				18, -- [2]
+			[58163] = {
+				73, -- [1]
+				10, -- [2]
 				true, -- [3]
 			},
 			[63033] = {
@@ -1140,9 +1142,9 @@ NarciStatisticsDB = {
 				6, -- [2]
 				true, -- [3]
 			},
-			[58163] = {
-				73, -- [1]
-				10, -- [2]
+			[57652] = {
+				102, -- [1]
+				14, -- [2]
 				true, -- [3]
 			},
 			[59712] = {
@@ -1280,9 +1282,9 @@ NarciStatisticsDB = {
 				11, -- [2]
 				true, -- [3]
 			},
-			[61981] = {
-				124, -- [1]
-				28, -- [2]
+			[59426] = {
+				91, -- [1]
+				25, -- [2]
 				true, -- [3]
 			},
 			[62715] = {
@@ -1350,9 +1352,9 @@ NarciStatisticsDB = {
 				15, -- [2]
 				true, -- [3]
 			},
-			[60448] = {
-				4, -- [1]
-				1, -- [2]
+			[61981] = {
+				124, -- [1]
+				28, -- [2]
 				true, -- [3]
 			},
 			[60480] = {
@@ -1375,9 +1377,9 @@ NarciStatisticsDB = {
 				2, -- [2]
 				true, -- [3]
 			},
-			[59426] = {
-				91, -- [1]
-				25, -- [2]
+			[60448] = {
+				4, -- [1]
+				1, -- [2]
 				true, -- [3]
 			},
 			[57909] = {
@@ -2295,9 +2297,9 @@ NarciStatisticsDB = {
 				18, -- [2]
 				true, -- [3]
 			},
-			[57652] = {
-				102, -- [1]
-				14, -- [2]
+			[59185] = {
+				88, -- [1]
+				18, -- [2]
 				true, -- [3]
 			},
 			[57787] = {
@@ -2365,9 +2367,9 @@ NarciStatisticsDB = {
 				16, -- [2]
 				true, -- [3]
 			},
-			[58976] = {
-				107, -- [1]
-				58, -- [2]
+			[60509] = {
+				100, -- [1]
+				18, -- [2]
 				true, -- [3]
 			},
 			[58011] = {
@@ -2445,9 +2447,9 @@ NarciStatisticsDB = {
 				15, -- [2]
 				true, -- [3]
 			},
-			[59837] = {
-				102, -- [1]
-				21, -- [2]
+			[60859] = {
+				114, -- [1]
+				25, -- [2]
 				true, -- [3]
 			},
 			[58267] = {
@@ -2595,10 +2597,10 @@ NarciStatisticsDB = {
 				31, -- [2]
 				true, -- [3]
 			},
-			[59753] = {
-				69, -- [1]
-				0, -- [2]
-				true, -- [3]
+			[60775] = {
+				87, -- [1]
+				26, -- [2]
+				false, -- [3]
 			},
 			[57471] = {
 				92, -- [1]
@@ -2632,5 +2634,6 @@ NarciStatisticsDB = {
 			},
 		},
 	},
+	["InstalledDate"] = 1626024726,
 }
 NarciDevToolOutput = nil

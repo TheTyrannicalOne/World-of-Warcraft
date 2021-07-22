@@ -1,5 +1,6 @@
-## v4.10.44 Changes
+## v4.11.8 Changes
 
-* [Retail] Updated TOC for patch 9.1.0
+* [Retail] Fixes some crafting issues with some optional materials
+* Fixed errors related to scrolling tables
 
 [Known Issues](http://support.tradeskillmaster.com/display/KB/TSM4+Currently+Known+Issues)

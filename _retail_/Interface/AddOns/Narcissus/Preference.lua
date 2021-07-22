@@ -2,7 +2,7 @@ local L = Narci.L;
 --NARCI_NEW_ENTRY_PREFIX..
 local TabNames = { 
     L["Interface"], L["Shortcuts"], L["Themes"], L["Effects"], L["Camera"], L["Transmog"],
-    L["Photo Mode"], L["NPC"], NARCI_NEW_ENTRY_PREFIX..L["Soulbinds"], L["Extensions"],
+    L["Photo Mode"], L["NPC"], NARCI_NEW_ENTRY_PREFIX..EXPANSION_NAME8, L["Extensions"],
 };  --Credits and About will be inserted later
 
 local FadeFrame = NarciAPI_FadeFrame;
@@ -427,6 +427,7 @@ end
 
 --Themes
 local function BorderThemeButton_OnClick(self, theme)
+    NarciAPI.SetBorderTheme(theme);
     if theme == "Bright" then
         self:GetParent().Preview:SetTexCoord(0.5, 1, 0, 1);
         if Settings.BorderTheme ~= "Bright" then
@@ -474,16 +475,6 @@ local function VignetteStrengthSlider_OnValueChanged(self, value)
     Settings[self.dbKey] = value;
     self.KeyLabel:SetText(string.format("%.1f", value));
     Narci:UpdateVignetteStrength();
-end
-
-local function GrainEffectSwitch_SetState(self, state)
-    if state then
-        FadeFrame(Narci_Vignette.Grain, 0.5, "IN");
-        FadeFrame(Narci_Vignette.Grain2, 0.5, "IN");
-    else
-		FadeFrame(Narci_Vignette.Grain, 0.5, "OUT");
-		FadeFrame(Narci_Vignette.Grain2, 0.5, "OUT");
-    end
 end
 
 local function WeatherSwitch_SetState(self, state)
@@ -698,8 +689,11 @@ end
 
 --Soulbinds & Conduits
 local function ConduitTooltipSwitch_SetState(self, state)
-    ShowChildButtons(self, state);
     NarciAPI.EnableConduitTooltip(state);
+end
+
+local function DominationIndicator_SetState(self, state)
+    NarciCharacterFrameDominationIndicator:SetEnabled(state);
 end
 
 local Structure = {
@@ -729,9 +723,9 @@ local Structure = {
 
     {Category = "Themes", localizedName = L["Themes"], layout = {
         { name = "BorderThemeHeader", type = "header", localizedName = L["Border Theme Header"], },
-        { name = "BorderTheme", type = "radio", localizedName = L["Border Theme Bright"], valueFunc = BorderThemeButton_OnClick, optionValue = "Bright", groupIndex = 1 },
+        --{ name = "BorderTheme", type = "radio", localizedName = L["Border Theme Bright"], valueFunc = BorderThemeButton_OnClick, optionValue = "Bright", groupIndex = 1 },
         { name = "BorderTheme", type = "radio", localizedName = L["Border Theme Dark"], valueFunc = BorderThemeButton_OnClick, optionValue = "Dark", groupIndex = 1 },
-        { name = "Space", type = "space", height = 20},
+        { name = "Space", type = "space", height = 64},
         { name = "TooltipThemeHeader", type = "header", localizedName = L["Tooltip Color"], },
         { name = "TooltipTheme", type = "radio", localizedName = L["Border Theme Bright"], valueFunc = TooltipThemeButton_OnClick, optionValue = "Bright", groupIndex = 2 },
         { name = "TooltipTheme", type = "radio", localizedName = L["Border Theme Dark"], valueFunc = TooltipThemeButton_OnClick, optionValue = "Dark", groupIndex = 2 },
@@ -741,11 +735,10 @@ local Structure = {
         { name = "FilterHeader", type = "header", localizedName = L["Image Filter"], },
         { name = "VignetteStrength", type = "slider", localizedName = L["Vignette Strength"], minValue = 0, maxValue = 1, valueStep = 0.1, valueFunc = VignetteStrengthSlider_OnValueChanged },
         { name = "FilterDescription", type = "subheader", localizedName = L["Image Filter Description"], },
-        { name = "EnableGrainEffect", type = "checkbox", localizedName = L["Grain Effect"], valueFunc = GrainEffectSwitch_SetState },
         { name = "WeatherEffect", type = "checkbox", localizedName = L["Weather Effect"], valueFunc = WeatherSwitch_SetState },
         { name = "LetterboxEffect", type = "checkbox", localizedName = L["Letterbox"], description = " ", globalName = "Narci_LetterboxToggle", valueFunc = LetterboxEffectSwitch_SetState, onShowFunc = LetterboxEffectSwitch_OnShow },
         { name = "LetterboxRatio", type = "slider", localizedName = L["Letterbox Ratio"], globalName = "Narci_LetterboxRatioSlider", offsetX = 80, offsetY = 40, width = 40, minValue = 2.0, maxValue = 2.350, valueStep = 2, valueFunc = LetterboxRatioSlider_OnValueChanged },
-        { name = "SoundHeader", type = "header", localizedName = SOUND, },
+        { name = "SoundHeader", type = "header", localizedName = SOUND },
         { name = "FadeMusic", type = "checkbox", localizedName = L["Fade Music"], valueFunc = FadeMusicSwitch_SetState },
     }},
 
@@ -776,9 +769,11 @@ local Structure = {
         { name = "ShrinkArea", type = "slider", localizedName = L["Interactive Area"], onLoadFunc = InteractiveAreaSlider_OnLoad },
     }},
 
-    {Category = "Soulbinds", localizedName = L["Soulbinds"], layout = {
+    {Category = "Soulbinds", localizedName = EXPANSION_NAME8, layout = {
         { name = "BlizzardUI", type = "header", localizedName = L["Blizzard UI"], },
         { name = "ConduitTooltip", type = "checkbox", localizedName = L["Conduit Tooltip"], valueFunc = ConduitTooltipSwitch_SetState},
+        { name = "Space", type = "space", height = 96},
+        { name = "DominationIndicator", type = "checkbox", localizedName = L["Domination Indicator"], valueFunc = DominationIndicator_SetState},
     }},
 };
 
@@ -1064,16 +1059,8 @@ end
 function Narci_DressingRoomSwitch_OnClick(self)
     Settings.DressingRoom = not Settings.DressingRoom;
     DressingRoomSwitch_SetState(self);
-    self.Description:SetText(NARCI_DRESSING_ROOM_DESCRIPTION.."\n"..NARCI_REQUIRE_RELOAD);
+    self.Description:SetText(L["Dressing Room Description"].."\n"..NARCI_REQUIRE_RELOAD);
 end
-
-
-
-
-
-
-
-
 
 local function RestoreClickFunc()
     local button = Narci_MinimapButton;
@@ -1628,8 +1615,8 @@ end
 -----------------
 local function SetCreditList()
     local ACIVE_COLOR = "|cffd9ccb4";
-    local ACTIVE_PATRONS = {"Elexys", "Ben Ashley", "Andrew Phoenix", "Solanya", "Erik Shafer", "Nantangitan", "Blastflight", "Pierre-Yves Bertolus", "Adrien Le Texier", "Lars Norberg",  "Ernaldo Kalaja", "Alex Boehm", "acein", "David Brooks", "Jesse Blick", "Webb", "heiteo",};
-    local FORMER_PATRONS = {"Adam Stribley", "Valnoressa", "Ellypse", "Stephen Berry", "Mccr Karl", "Christian Williamson", "Tzutzu", "Psyloken", "Victor Torres", "Nina Recchia", };
+    local ACTIVE_PATRONS = {"Elexys", "Solanya", "Erik Shafer", "Pierre-Yves Bertolus", "Lars Norberg",  "Ernaldo Kalaja", "Alex Boehm", "David Brooks", "Sztuk", "Celierra&Darvian", };
+    local FORMER_PATRONS = {"Adam Stribley", "Valnoressa", "Ellypse", "Stephen Berry", "Mccr Karl", "Christian Williamson", "Tzutzu", "Psyloken", "Victor Torres", "Nina Recchia", "Ben Ashley", "Andrew Phoenix", "Nantangitan", "Blastflight", "Adrien Le Texier", "acein", "Jesse Blick", "Webb", "heiteo"};
     local RawList = {};
     for i = 1, #ACTIVE_PATRONS do
         tinsert(RawList, ACIVE_COLOR.. ACTIVE_PATRONS[i] .."|r");

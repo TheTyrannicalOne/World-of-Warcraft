@@ -4,11 +4,11 @@ CliqueDB3 = {
 	["char"] = {
 		["Avisar - Dalaran"] = {
 			["spec1_profileKey"] = "Avisar - Dalaran",
-			["specswap"] = false,
+			["spec2_profileKey"] = "Avisar - Dalaran",
 			["downclick"] = false,
 			["fastooc"] = false,
-			["spec2_profileKey"] = "Avisar - Dalaran",
 			["spec3_profileKey"] = "Avisar - Dalaran",
+			["specswap"] = false,
 		},
 		["Laymonan - Zul'jin"] = {
 			["spec1_profileKey"] = "Laymonan - Zul'jin",
@@ -27,11 +27,11 @@ CliqueDB3 = {
 		},
 		["Charbeatic - Zul'jin"] = {
 			["spec1_profileKey"] = "Charbeatic - Zul'jin",
-			["spec3_profileKey"] = "Charbeatic - Zul'jin",
+			["spec2_profileKey"] = "Charbeatic - Zul'jin",
 			["downclick"] = false,
 			["fastooc"] = false,
+			["spec3_profileKey"] = "Charbeatic - Zul'jin",
 			["specswap"] = false,
-			["spec2_profileKey"] = "Charbeatic - Zul'jin",
 		},
 		["Illingrath - Dalaran"] = {
 			["spec1_profileKey"] = "Illingrath - Dalaran",
@@ -75,11 +75,11 @@ CliqueDB3 = {
 		},
 		["Zulbathal - Zul'jin"] = {
 			["spec1_profileKey"] = "Zulbathal - Zul'jin",
-			["specswap"] = false,
+			["spec2_profileKey"] = "Zulbathal - Zul'jin",
 			["downclick"] = false,
 			["fastooc"] = false,
-			["spec2_profileKey"] = "Zulbathal - Zul'jin",
 			["spec3_profileKey"] = "Zulbathal - Zul'jin",
+			["specswap"] = false,
 			["spec4_profileKey"] = "Zulbathal - Zul'jin",
 		},
 		["Okona - Zul'jin"] = {
@@ -119,10 +119,10 @@ CliqueDB3 = {
 		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Laymonan - Zul'jin"] = "Laymonan - Zul'jin",
-		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
-		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
-		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
+		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
+		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
@@ -646,13 +646,13 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Datgore - Zul'jin"] = {
+		["Serbitechna - Dalaran"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -684,13 +684,13 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Tyran - Argent Dawn"] = {
+		["Datgore - Zul'jin"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -703,7 +703,7 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Serbitechna - Dalaran"] = {
+		["Tyran - Argent Dawn"] = {
 			["bindings"] = {
 				{
 					["sets"] = {
