@@ -1648,3 +1648,8 @@ Change Log:
 4.63.6
 * Fixed SL spells for Tazavesh, the Veiled Market
 * Added SL spells for Tazavesh, the Veiled Market
+
+4.63.7
+* Added Shadowlands spells (world)
+* Added SL spells for Torghast
+* Added SL spells for Sanctum of Domination
