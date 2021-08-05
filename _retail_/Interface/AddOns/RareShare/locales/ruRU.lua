@@ -29,6 +29,10 @@ if (GetLocale() == "ruRU") then
                 "Enable Notifications For Already Completed Rares",
                 "Enables/Disables reacting to rares that have already been completed today",
             },
+            MapPin = {
+                "Append Map Pin Locations To The End Of An Announcement Message",
+                "Enables/Disables appending of map pins to announcement messages"
+            }
         }
     }
 end

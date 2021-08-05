@@ -104,6 +104,19 @@ function Addon:InitUI()
     })
     Y = Y - 40
 
+    CheckBoxes.MapPin = self:CreateCheckBox({
+        ["Parent"]      = ConfigFrame,
+        ["DisplayText"] = Addon.Loc.Config.MapPin[1],
+        ["X"]           = X,
+        ["Y"]           = Y,
+        ["Tooltip"]     = Addon.Loc.Config.MapPin[2],
+        ["Default"]     = true,
+        ["Value"]       = RareShareDB["Config"]["MapPin"],
+        ["OldValue"]    = RareShareDB["Config"]["MapPin"],
+        ["Setting"]     = "RareShareDB[\"Config\"][\"MapPin\"] = ",
+    })
+    Y = Y - 40
+
     function ConfigFrame.default()
         for i,v in pairs(CheckBoxes) do
             v.value = v.defaultValue

@@ -1379,7 +1379,8 @@
 			<AbsInset left="-36" right="-24" top="-50" bottom="-24"/>
 		</HitRectInsets>
 		<Anchors>
-			<Anchor point="BOTTOM" relativeTo="Narci_VirtualLineRightCenter" relativePoint="BOTTOM" x="0" y="4"/> <!--x="-150" y="-20"-->
+			<Anchor point="CENTER" relativeTo="Narci_VirtualLineRightCenter" relativePoint="CENTER" x="0" y="0"/> <!--x="-150" y="-20"-->
+			<Anchor point="BOTTOM" relativeTo="UIParent" relativePoint="BOTTOM" x="0" y="4"/>
 		</Anchors>
 		<Layers>					
 			<Layer level="BACKGROUND">

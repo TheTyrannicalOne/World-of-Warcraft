@@ -7,10 +7,11 @@
 --https://www.wowhead.com/guides/sanctum-of-domination-raid-loot-chains-of-domination-9-1#accessories
 
 local NUM_SHARDS_MAX = 5;
-local COLOR_GREE = "|cff20ff20";
+local COLOR_GREEN = "|cff20ff20";
 local COLOR_DOMINATION = "|cff66bbff";
 
 local unpack = unpack;
+local After = C_Timer.After;
 local GetItemInfoInstant = GetItemInfoInstant;
 local ItemLocation = ItemLocation;
 local DoesItemExist = C_Item.DoesItemExist;
@@ -128,9 +129,33 @@ local typeColors = {
 };
 
 local shardSchool = {
-    {name = "FROST", spellIcon = 135833, spellID = 355724, color = {66, 129, 220}, },
-    {name = "UNHOLY", spellIcon = 425955, color = {144, 33, 255}, },
-    {name = "BLOOD", spellIcon = 132096, color = {200, 28, 28}, },
+    {name = "FROST", spellIcon = 135833, color = {66, 129, 220},
+        spellIDs = {
+            [1] = 355724,
+            [2] = 359387,
+            [3] = 359423,
+            [4] = 359424,
+            [5] = 359425,
+        }
+    },
+    {name = "UNHOLY", spellIcon = 425955, color = {144, 33, 255},
+        spellIDs = {
+            [1] = 356046,
+            [2] = 359396,
+            [3] = 359435,
+            [4] = 359436,
+            [5] = 359437,
+        }
+    },
+    {name = "BLOOD", spellIcon = 132096, color = {200, 28, 28},
+        spellIDs = {
+            [1] = 355768,
+            [2] = 359395,
+            [3] = 359420,
+            [4] = 359421,
+            [5] = 359422,
+        }
+    },
 };
 
 for k, v in pairs(shardSchool) do
@@ -176,12 +201,13 @@ local function DoesItemHaveDomationSocket(itemID)
     return isDominationItem[itemID]
 end
 
+--[[
 local function GetItemDominationGem(itemLink)
     if not itemLink then return; end
 
-    local gemName, gemLink = GetItemGem(itemLink, 1)
-    if gemName then
-        return gemName, gemLink;
+    local gemName, gemLink = GetItemGem(itemLink, 1);
+    if gemLink then
+        return (gemName or "Retrieving"), gemLink;
     end
 
     local tex, texID;
@@ -200,6 +226,19 @@ local function GetItemDominationGem(itemLink)
         if texID == 4095404 then
             return "Empty", nil;
         end
+    end
+end
+--]]
+
+local function GetItemDominationGem(itemLink)   --the old method is subjective to cache issue?
+    if not itemLink then return; end
+
+    local gemName;
+    local gemID = string.match(itemLink, "item:%d+:%d*:(%d*)");
+    if gemID then
+        return "PH", tonumber(gemID);
+    else
+        return "Empty";
     end
 end
 
@@ -240,8 +279,9 @@ function DataProvider:GetShardTypeLocalizedName(shardType)
     return shardSchool[shardType].localizedName;
 end
 
-function DataProvider:GetBonusSpellInfo(shardType)
-    local spellID = shardSchool[shardType].spellID;
+function DataProvider:GetBonusSpellInfo(shardType, rank)
+    rank = rank or 1;
+    local spellID = shardSchool[shardType].spellIDs[rank];
     if not spellID then return end;
     if C_Spell.IsSpellDataCached(spellID) then
         local name = GetSpellInfo(spellID);
@@ -269,7 +309,7 @@ local candidateSlots = {
     [6] = "Waist",
     [8] = "Feet",
     [9] = "Wrist",
-    [10] = "Hand",
+    [10] = "Hands",
 };
 
 local function SortFunc_Items(a,b)
@@ -437,11 +477,12 @@ end
 
 
 --Test
---[[
+
 NarciAPI.HighlightDominationItems = function()
     SlotHighlighter:HighlightAllSlots();
 end
 
+--[[
 GameTooltip:HookScript("OnTooltipSetItem", function(f)
     local name, link = f:GetItem();
     link = string.match(link, "item[%-?%d:]+")
@@ -475,13 +516,10 @@ EventListener:RegisterEvent("PLAYER_ENTERING_WORLD");
 EventListener:SetScript("OnEvent", function(self, event)
     if event == "PLAYER_ENTERING_WORLD" then
         self:UnregisterEvent(event);
-        for i = 1, 3 do
-            DataProvider:GetBonusSpellInfo(i);  --cache
-        end
     else
         if not self.pauseUpdate then
             self.pauseUpdate = true;
-            C_Timer.After(0, function()
+            After(0, function()
                 PaperDollIndicator:Update();
                 self.pauseUpdate = nil;
             end);
@@ -504,11 +542,12 @@ NarciDominationIndicatorMixin = {};
 
 function NarciDominationIndicatorMixin:OnLoad()
     PaperDollIndicator = self;
-    local parentFrame = CharacterStatsPane.ItemLevelFrame;
+    local parentFrame = PaperDollFrame;
+
     self:ClearAllPoints();
     self:SetParent(parentFrame);
     self:SetFrameStrata("HIGH");
-    self:SetPoint("CENTER", parentFrame, "RIGHT", 10, 0);
+    self:SetPoint("CENTER", parentFrame, "TOPRIGHT", -1, -119);
 
     parentFrame:HookScript("OnShow", function()
         if self.isEnabled then
@@ -516,10 +555,24 @@ function NarciDominationIndicatorMixin:OnLoad()
             self:Update();
         end
     end);
-
     parentFrame:HookScript("OnHide", function()
         EventListener:Off();
     end);
+
+    local titleFrame = PaperDollTitlesPane;
+    titleFrame:HookScript("OnShow", function()
+        EventListener:Off();
+        self:Hide();
+    end);
+    titleFrame:HookScript("OnHide", function()
+        if self.isEnabled and parentFrame:IsVisible() then
+            EventListener:On();
+            self:Update();
+        end
+    end);
+
+    self.OnLoad = nil;
+    self:SetScript("OnLoad", nil);
 end
 
 function NarciDominationIndicatorMixin:OnEnter()
@@ -547,10 +600,19 @@ function NarciDominationIndicatorMixin:OnEnter()
             tooltip:SetText( DataProvider:GetHeaderText() );
             local completeTypeID = self.completeTypeID;
             if completeTypeID then
-                local spellName, spellDescription = DataProvider:GetBonusSpellInfo(completeTypeID);
+                local spellName, spellDescription = DataProvider:GetBonusSpellInfo(completeTypeID, self.setBonusRank);
                 if spellName and spellDescription then
                     tooltip:AddLine(spellName, 1, 1, 1, true);
+                    if self.setBonusRank then
+                        tooltip:AddLine(COLOR_DOMINATION.."Rank "..self.setBonusRank.."|r", 1, 1, 1, true);
+                    end
                     tooltip:AddLine(spellDescription, 0.1255, 1, 0.1255, true);
+                else
+                    After(0.25, function()
+                        if self:IsMouseOver() then
+                            self:OnEnter();
+                        end
+                    end)
                 end
             end
             if self.numEmpty then
@@ -622,10 +684,12 @@ function NarciDominationIndicatorMixin:Update()
     local numShards = #data;
     self:SetNodeLayout(numShards);
     self.completeTypeID = nil;
+    self.setBonusRank = nil;
     local itemLink, shardEffect, shardType, shardRank;
     local lastType;
     local numSetPiece = 0;
     local numEmpty = 0;
+    local minRank = 5;
     for i = 1, numShards do
         itemLink = data[i].gemLink;
         shardEffect = DataProvider:GetShardEffect(itemLink);            --Load Data
@@ -637,10 +701,18 @@ function NarciDominationIndicatorMixin:Update()
             if shardType ~= lastType then
                 numSetPiece = 1;
                 lastType = shardType;
+                minRank = 5;
+                if shardRank < minRank then
+                    minRank = shardRank;
+                end
             else
                 numSetPiece = numSetPiece + 1;
+                if shardRank < minRank then
+                    minRank = shardRank;
+                end
                 if numSetPiece >= 3 then
                     self.completeTypeID = shardType;
+                    self.setBonusRank = minRank;
                 end
             end
         end
@@ -677,10 +749,19 @@ function NarciDominationIndicatorMixin:ShowTooltip(tooltip, point, relativeTo, r
             tooltip:SetText( DataProvider:GetHeaderText() );
             local completeTypeID = self.completeTypeID;
             if completeTypeID then
-                local spellName, spellDescription = DataProvider:GetBonusSpellInfo(completeTypeID);
+                local spellName, spellDescription = DataProvider:GetBonusSpellInfo(completeTypeID, self.setBonusRank);
                 if spellName and spellDescription then
                     tooltip:AddLine(spellName, 1, 1, 1, true);
+                    if self.setBonusRank then
+                        tooltip:AddLine(COLOR_DOMINATION.."Rank "..self.setBonusRank.."|r", 1, 1, 1, true);
+                    end
                     tooltip:AddLine(spellDescription, 0.1255, 1, 0.1255, true);
+                else
+                    After(0.25, function()
+                        if self:IsMouseOver() then
+                            self:ShowTooltip(tooltip, point, relativeTo, relativePoint, offsetX, offsetY);
+                        end
+                    end)
                 end
             end
             if self.numEmpty then
@@ -780,5 +861,5 @@ function NarciDominationIndicatorMixin:CheckSetBonus()
 end
 
 --/dump UnitBuff("player", 6)
-
+--/script local itemLocation = ItemLocation:CreateFromEquipmentSlot(1);local itemLink=C_Item.GetItemLink(itemLocation);print(GetItemGem(itemLink, 1));
 --Narcissus UI

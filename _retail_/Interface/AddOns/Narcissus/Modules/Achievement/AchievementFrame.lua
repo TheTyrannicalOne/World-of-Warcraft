@@ -2540,6 +2540,7 @@ function NarciAchievementTooltipMixin:SetAchievement(id)
     else
         self.shield:Show();
         self.points:SetText(points);
+        self.points:Show();
     end
 
     self:ResizeAndShow();

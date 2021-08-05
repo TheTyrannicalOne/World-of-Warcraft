@@ -92,8 +92,6 @@
                 </Frames>
             </Frame>
 
-
-
             <Frame parentKey="SetsFrame" useParentLevel="true" hidden="true">
                 <Size y="24"/>
                 <Anchors>
@@ -124,6 +122,25 @@
                         <FontString inherits="NarciFontMedium12" justifyH="LEFT" justifyV="MIDDLE" parentKey="DataText" maxLines="1">
                             <Size x="272" y="0"/>
                             <Color r="0.92" g="0.92" b="0.92"/>
+                            <Anchors>
+                                <Anchor point="LEFT" relativeKey="$parent" relativePoint="LEFT" x="10" y="0"/>
+                            </Anchors>
+                        </FontString>
+                    </Layer>
+                </Layers>
+            </Frame>
+
+            <Frame parentKey="ChallengeFrame" useParentLevel="true" hidden="true">
+                <Size y="24"/>
+                <Anchors>
+                    <Anchor point="BOTTOMLEFT"/>
+                    <Anchor point="BOTTOMRIGHT"/>
+                </Anchors>
+                <Layers>
+                    <Layer level="OVERLAY">
+                        <FontString inherits="NarciFontMedium12" justifyH="LEFT" justifyV="MIDDLE" parentKey="DataText" maxLines="1">
+                            <Size x="272" y="0"/>
+                            <Color r="0.8" g="0.8" b="0.8"/>
                             <Anchors>
                                 <Anchor point="LEFT" relativeKey="$parent" relativePoint="LEFT" x="10" y="0"/>
                             </Anchors>

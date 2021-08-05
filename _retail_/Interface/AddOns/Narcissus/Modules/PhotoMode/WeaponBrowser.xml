@@ -97,23 +97,6 @@
                     <Anchors>
                         <Anchor point="TOP" relativeKey="$parent" relativePoint="BOTTOM"/>
                     </Anchors>
-                    <Animations>
-                        <AnimationGroup parentKey="scaleIn">
-                            <Scale smoothing="OUT" order="1" duration="0.75" fromScaleX="0.8" fromScaleY="0.8" toScaleX="1" toScaleY="1">
-                                <Origin point="TOP">
-                                    <Offset x="0" y="0"/>
-                                </Origin>
-                            </Scale>
-                            <Script>
-                                <OnPlay>
-                                    self:GetParent():GetParent().Name:Hide();
-                                </OnPlay>
-                                <OnFinished>
-                                    self:GetParent():GetParent().Name:Show();
-                                </OnFinished>
-                            </Script>
-                        </AnimationGroup>
-                    </Animations>
                 </Texture>
             </Layer>
             <Layer level="OVERLAY">

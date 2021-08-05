@@ -434,6 +434,7 @@ function CreateMailButton(mailID)
                 end
             end
             MailButton:Hide();
+            NarcissusDB.ShowOrderConfirmation = nil;
         end
         
         local function MailButton_OnShow(self)

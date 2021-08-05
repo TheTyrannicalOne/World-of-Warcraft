@@ -4,14 +4,20 @@ local After = C_Timer.After;
 local GetContainerNumFreeSlots = GetContainerNumFreeSlots;
 local GetContainerNumSlots = GetContainerNumSlots;
 local GetContainerItemID = GetContainerItemID;
+local GetItemCount = GetItemCount;
 local NUM_BAGS = NUM_BAG_SLOTS or 4;
 
 local REQUIREMENT_FORMAT = "|cff808080"..REQUIRES_LABEL.." %s|r";
 local EXTRACTOR_ITEM_ID = 187532;   --Soulfire Chisel
 local EXTRACTOR_ITEM_NAME = "Soulfire Chisel";
-local EXTRACTOR_ITEM_LOCALIZED_NAME = C_Item.GetItemNameByID(EXTRACTOR_ITEM_ID); --nilable
+local EXTRACTOR_ITEM_LOCALIZED_NAME = C_Item.GetItemNameByID(EXTRACTOR_ITEM_ID);    --nilable
+local MARCO_USE_ITEM_BY_ID = "/use item:%s";
 
 local targetItem;
+
+local function DoesPlayerHaveItem(itemID)
+    return GetItemCount(itemID) > 0
+end
 
 local function GetBagPosition(itemID)
     for bagID = 0, NUM_BAGS do
@@ -205,8 +211,11 @@ function NarciItemSocketingActionButtonMixin:OnEvent(event)
 end
 
 function NarciItemSocketingActionButtonMixin:OnEnable()
+    self:StopAnimating();
     self.ArrowLeft:SetDesaturated(false);
     self.ArrowRight:SetDesaturated(false);
+    self.ArrowLeft:SetAlpha(1);
+    self.ArrowRight:SetAlpha(1);
     if self:IsMouseOver() then
         self.Label:SetTextColor(0.92, 0.92, 0.92);
     else
@@ -222,11 +231,10 @@ end
 
 function NarciItemSocketingActionButtonMixin:SetActionForNarcissusUI()
     local itemID = EXTRACTOR_ITEM_ID;
-    local bagID, slotIndex = GetBagPosition(itemID);
     local equipmentSlotIndex = Narci_ItemSocketing.slotID;
     self.equipmentSlotIndex = equipmentSlotIndex;
-    if bagID and slotIndex and equipmentSlotIndex then
-        local macroText = string.format("/use %s %s\r/use %s", bagID, slotIndex, equipmentSlotIndex);
+    if DoesPlayerHaveItem(itemID) and equipmentSlotIndex then
+        local macroText = string.format("/use item:%s\r/use %s", itemID, equipmentSlotIndex);
         self:SetAttribute("type", "macro");
         self:SetAttribute("macrotext", macroText);
         self:EnableButton();
@@ -238,9 +246,8 @@ end
 
 function NarciItemSocketingActionButtonMixin:SetExtractAction()
     local itemID = EXTRACTOR_ITEM_ID;
-    local bagID, slotIndex = GetBagPosition(itemID);
-    if bagID and slotIndex then
-        local macroText = string.format("/use %s %s\r/click ItemSocketingSocket1", bagID, slotIndex);
+    if DoesPlayerHaveItem(itemID) then
+        local macroText = string.format("/use item:%s\r/click ItemSocketingSocket1", itemID);
         self:SetAttribute("type", "macro");
         self:SetAttribute("macrotext", macroText);
         self:EnableButton();

@@ -1301,9 +1301,10 @@
 				</Layers>
 			</Frame>
 			<Frame name="Narci_VirtualLineRightCenter" parentKey="VirtualLineRightCenter" hidden="false" setAllPoints="true">
+				<Size y="1"/>
 				<Anchors>
-					<Anchor point="TOPLEFT" relativeTo="Narci_VirtualLineRight" relativePoint="TOPLEFT" x="0" y="0"/>
-					<Anchor point="BOTTOMRIGHT" />
+					<Anchor point="LEFT" relativeTo="Narci_VirtualLineRight" relativePoint="LEFT" x="0" y="0"/>
+					<Anchor point="RIGHT"/>
 				</Anchors>
 				<Layers>
 					<Layer level="BACKGROUND">
@@ -3146,7 +3147,7 @@
 					<Button parentKey="LeftButton" hidden="true">
 						<Size x="76" y="76"/>
 						<Anchors>
-							<Anchor point="RIGHT" relativeKey="$parent.CenterButton" relativePoint="LEFT"  x="76" y="0"/>
+							<Anchor point="RIGHT" relativeKey="$parent" relativePoint="CENTER"  x="0" y="0"/>
 						</Anchors>
 						<Layers>
 							<Layer level="BACKGROUND">
@@ -3181,13 +3182,6 @@
 								</FontString>
 							</Layer>
 						</Layers>
-						<Frames>
-							<Frame parentKey="AnimFrame" inherits="NarciAnimContainerFrame">
-								<Scripts>
-									<OnUpdate function="IlvlButtonLeftAnimFrame_OnUpdate"/>
-								</Scripts>
-							</Frame>
-						</Frames>
 						<Scripts>
 							<OnLoad>
 								self.tooltipFormat = Narci.L["Equipped Item Level Format"];
@@ -3211,7 +3205,7 @@
 					<Button parentKey="RightButton" hidden="true">
 						<Size x="76" y="76"/>
 						<Anchors>
-							<Anchor point="LEFT" relativeKey="$parent.CenterButton" relativePoint="RIGHT"  x="-76" y="0"/>
+							<Anchor point="LEFT" relativeKey="$parent" relativePoint="CENTER"  x="0" y="0"/>
 						</Anchors>
 						<Layers>
 							<Layer level="BACKGROUND">
@@ -3246,13 +3240,6 @@
 								</FontString>
 							</Layer>
 						</Layers>
-						<Frames>
-							<Frame parentKey="AnimFrame" inherits="NarciAnimContainerFrame">
-								<Scripts>
-									<OnUpdate function="IlvlButtonRightAnimFrame_OnUpdate"/>
-								</Scripts>
-							</Frame>
-						</Frames>
 						<Scripts>
 							<OnLoad>
 								self.tooltipHeadline = LANDING_PAGE_RENOWN_LABEL;

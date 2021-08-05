@@ -428,7 +428,7 @@ L["Splash Content8 Description"] = "按住Shift並拖動此按鈕可使其脫離
 
 --Project Details--
 NARCI_ALL_PROJECTS = "全部項目";
-NARCI_PROJECT_DETAILS = "|cFFFFD100模組作者: Peterodox\n更新日期: 2021.03.20|r\n\n感謝妳使用此模組！如果妳遇到任何問題，或者有任何想法或建議，請在CurseForge項目主頁上留言，或者在以下網站上聯系我。";
+NARCI_PROJECT_DETAILS = "|cFFFFD100模組作者: Peterodox\n更新日期: 2021.08.04|r\n\n感謝妳使用此模組！如果妳遇到任何問題，或者有任何想法或建議，請在CurseForge項目主頁上留言，或者在以下網站上聯系我。";
 NARCI_PROJECT_AAA_SUMMARY = "探索艾澤拉斯上的不同景點，並收集各種故事和照片。";
 NARCI_PROJECT_NARCISSUS_SUMMARY = "沈浸式角色面板；妳最好的截圖助手。"
 
@@ -461,3 +461,10 @@ L["PetStable Loading"] = "正在獲取寵物信息";
 L["Item Bonus"] = "獎勵：";
 L["Combat Error"] = NARCI_COLOR_RED_MILD.."此操作無法在戰鬥中進行".."|r";
 L["Extract Shard"] = "取下統御裂片";
+
+--Mythic+ Leaderboard--
+L["Mythic Plus"] = "傳奇地城";
+L["Mythic Plus Abbrev"] = "傳奇地城";
+L["Total Runs"] = "完成次數：";
+L["Complete In Time"] = "限時";
+L["Complete Over Time"] = "超時";

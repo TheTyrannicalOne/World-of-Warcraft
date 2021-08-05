@@ -334,10 +334,10 @@ local function UpdateActorName(index)
 
 	local className = playerInfo[index].class;
 	local r, g, b = GetClassColor(className);
-	if className == "DEATHKNIGHT" or "DEMONHUNTER" or "SHAMAN" then
+	if className == "DEATHKNIGHT" or className == "DEMONHUNTER" or className == "SHAMAN" then
 		r, g, b = r + 0.05, g + 0.05, b + 0.05;
 	end
-	
+
 	SmartFontType(str, playerInfo[index].name or "Unnamed");
 	str:SetTextColor(r, g, b);
 end
@@ -4414,7 +4414,8 @@ function NarciModelSettingsMixin:OnHide()
 	ExitGroupPhoto();
 	RestorePlayerInfo(1);
 	self:ClearAllPoints();
-	self:SetPoint("BOTTOM", Narci_VirtualLineRightCenter, "BOTTOM", 0 , 4);
+	self:SetPoint("CENTER", Narci_VirtualLineRightCenter, "CENTER", 0 , 0);
+	self:SetPoint("BOTTOM", UIParent, "BOTTOM", 0 , 4);
 	self:SetUserPlaced(false);
 	self:UnregisterEvent("MODIFIER_STATE_CHANGED");
     self:SetPanelAlpha(1, false);

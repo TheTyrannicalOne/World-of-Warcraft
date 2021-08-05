@@ -454,7 +454,7 @@ function NarciGemSlotMixin:OnEnter()
     if Narci_ItemSocketing:IsShown() then
 		return;
     end
-    local link = self:GetParent().GemLink;
+    local link = self:GetParent().gemLink;
     local tooltip = Narci_GearEnhancement_Tooltip;
 
     --Show optional gem types in your inventory

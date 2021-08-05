@@ -206,7 +206,7 @@ local L = app.L;
 	L.AH_SCAN_SUCCESSFUL_2 = " 物品.";
 	L.REAGENT_CACHE_OUT_OF_DATE = "缓存已过期, 打开专业界面后会重新缓存!";
 	--TODO: L.QUEST_LOOP = "Likely just broke out of an infinite source quest loop.";
-	--TODO: L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Quest '%s' [%d] will prevent collection of Breadcrumb Quest '%s' [%d]";
+	--TODO: L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Quest '%s' %s will prevent collection of Breadcrumb Quest '%s' %s";
 	--TODO: L.QUEST_OBJECTIVE_INVALID = "Invalid Quest Objective";
 	--TODO: L.REFRESHING_COLLECTION = "Refreshing collection...";
 	--TODO: L.DONE_REFRESHING = "Done refreshing collection.";
@@ -276,7 +276,6 @@ local L = app.L;
 		L.ACHIEVEMENTS_CHECKBOX_TOOLTIP = "启用此选项可追踪成就.";
 		L.TMOG_CHECKBOX = "外观 / 幻化";
 		L.TMOG_CHECKBOX_TOOLTIP = "启用此选项可追踪外观获取.\n\n注意: 禁用此选项也会禁用所有采集逻辑, 你可以使用此切换来防止在执行重要组内容时出现延迟, 请牢记, 重新启用后将需要进行计算.\n\n默认情况下追踪战网范围.";
-		L.AZERITE_ESSENCES_CHECKBOX = "艾泽里特精华";
 		L.AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "启用此选项以追踪艾泽里特精华.\n\n默认情况下每个角色都会被追踪.";
 		L.BATTLE_PETS_CHECKBOX = "战斗宠物 / 同伴";
 		L.BATTLE_PETS_CHECKBOX_TOOLTIP = "启用此选项可追踪战斗宠物和同伴. 这些可以在开放的世界中找到, 也可以通过各种地下城和团本中的boss掉落, 以及从供应商和声望获取.\n\n认情况下追踪战网范围.";
@@ -302,6 +301,9 @@ local L = app.L;
 		L.RECIPES_CHECKBOX_TOOLTIP = "启用此选项可追踪你的专业图纸.\n\n注意: 你必须打开专业列表才能缓存这些.";
 		L.REPUTATIONS_CHECKBOX = "声望";
 		L.REPUTATIONS_CHECKBOX_TOOLTIP = "启用此选项可追踪声望.\n\n一旦你达到了有声望的尊敬或最好的朋友, 它将被标记为收藏.\n\n你可能需要手动刷新才能正确更新.";
+		--TODO: L.RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Runecarving Powers";
+		--TODO: L.RUNEFORGELEGENDARIES_CHECKBOX_TOOLTIP = "Enable this option to track Shadowlands Runecarving Powers.";
+		--TODO: L.SOULBINDCONDUITS_CHECKBOX_TOOLTIP = "Enable this option to track Shadowlands Soulbind Conduits.";
 		L.TITLES_CHECKBOX = "头衔";
 		L.TITLES_CHECKBOX_TOOLTIP = "启用此选项可追踪头衔.\n\n这些可以让你的角色脱颖而出, 看起来你已经玩了一段时间. 通常只有新玩家没有称号.";
 		L.TOYS_CHECKBOX = "玩具";
@@ -351,6 +353,8 @@ local L = app.L;
 		L.ACCOUNT_WIDE_QUESTS_TOOLTIP = "任务完成通常是每个角色的, 但是如果任何一个角色完成了特定的任务, 这个任务就会被认为是完成了.";
 		L.ACCOUNT_WIDE_RECIPES_TOOLTIP = "在暴雪的数据库中, 图纸通常不会被战网范围追踪, 但我们可以这样做.\n\n在一个角色上不可能收集到所有的东西, 所以有了这个, 你就可以赋予你的小号和他们的专业以意义.";
 		L.ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "声望的成就现在会在暴雪的数据库中追踪战网范围, 所以开启这个功能可能是个好主意.";
+		--TODO: L.ACCOUNT_WIDE_RUNEFORGELEGENDARIES_TOOLTIP = "Not sure this will help at all for collection... enjoy moving at least one character of every class through every Covenant and Renown progression...";
+		--TODO: L.ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = "Enable this to consider a Soulbind Conduit as collected for all characters if at least one character has learned it.";
 		L.ACCOUNT_WIDE_TITLES_TOOLTIP = "大多数头衔都是在战网范围内进行追踪, 但是魔兽世界中一些著名的头衔被锁定在赢得他们的角色上.\n\n如果你不关心这个并希望看到那些标记为收藏的头衔是你的小号, 请切换此选项.";
 
 	-- Filters tab
@@ -1215,7 +1219,9 @@ for key, value in pairs({
 	[6751] = "奇怪的果树",	-- Strange Fruited Plant	--TODO: This was taken from classic Wowhead
 	[6752] = "奇怪的树木",	-- Strange Fronded Plant	--TODO: This was taken from classic Wowhead
 	[7510] = "发芽的树叶",	-- Sprouted Frond	--TODO: This was taken from classic Wowhead
+	[19022] = "旧箱子",	-- Worn Chest
 	[19023] = "|cFFFFFFFF第7步:|r 第2351页",	-- |cFFFFFFFFStep 7:|r Page 2351
+	[19024] = "隐蔽的神龛",	-- Hidden Shrine
 	[20805] = "瑞兹尔的计划",	-- Rizzle's Unguarded Plans	--TODO: This was taken from classic Wowhead
 	[20985] = "松软的泥土",	-- Loose Dirt
 	[20992] = "黑色盾牌",	-- Black Shield
@@ -1274,6 +1280,8 @@ for key, value in pairs({
 	[177787] = "拉克摩尔的日志",	-- Rackmore's Log	--TODO: This was taken from classic Wowhead
 	[177904] = "通缉：贝瑟莱斯",	-- Wanted Poster: Besseleth	--TODO: This was taken from classic Wowhead
 	[177964] = "深渊之石",	-- Fathom Stone
+	[178144] = "巨魔的箱子",	-- Troll Chest
+	[178227] = "穆戈特的图腾篮",	-- Murgut's Totem Basket
 	[179485] = "损坏的陷阱",	-- A Broken Trap
 	[179501] = "诺特·希姆加克的储物箱",	-- Knot Thimblejack's Cache	--TODO: This was taken from classic Wowhead
 	[179564] = "戈多克贡品",	-- Gordok Tribute Chest
@@ -1284,6 +1292,9 @@ for key, value in pairs({
 	[180366] = "破碎的工具箱",	-- Battered Tackle Box	--TODO: This was taken from classic Wowhead
 	[180368] = "疯狂石板",	-- Tablet of Madness	--TODO: This was taken from classic Wowhead
 	[180448] = "通缉布告：死亡弯钩",	-- Wanted Poster: Deathclasp
+	[180456] = "次级风石",	-- Lesser Wind Stone
+	[180461] = "风石",	-- Wind Stone
+	[180466] = "强力风石",	-- Greater Wind Stone
 	[180503] = "盖满沙子的烹饪书",	-- Sandy Cookbook
 	[180633] = "水晶之泪",	-- Crystalline Tear
 	--TODO: [180642] = "Inconspicuous Crate",	-- Inconspicuous Crate
@@ -1298,12 +1309,6 @@ for key, value in pairs({
 	[181147] = "通缉布告",	-- Wanted Poster
 	[181150] = "布满灰尘的日记",	-- Dusty Journal
 	[181153] = "通缉布告：邪恶的克尔加什",	-- Wanted Poster: Kel'gash the Wicked
-	[181332] = "暴风城烈焰",	-- Flame of Stormwind
-	--TODO: [181333] = "Flame of Ironforge",	-- Flame of Ironforge
-	--TODO: [181334] = "Flame of Darnassus",	-- Flame of Darnassus
-	--TODO: [181335] = "Flame of the Undercity",	-- Flame of the Undercity
-	--TODO: [181336] = "Flame of Orgrimmar",	-- Flame of Orgrimmar
-	[181337] = "雷霆崖烈焰",	-- Flame of Thunder Bluff
 	[181638] = "通缉布告",	-- Wanted Poster
 	--TODO: [181748] = "Blood Crystal",	-- Blood Crystal
 	--TODO: [181756] = "Battered Ancient Book",	-- Battered Ancient Book
@@ -1396,8 +1401,6 @@ for key, value in pairs({
 	[187972] = "部落篝火",	-- Horde Bonfire
 	[187975] = "部落篝火",	-- Horde Bonfire
 	[188085] = "天灾谷物",	-- Plagued Grain
-	--TODO: [188128] = "Flame of the Exodar",	-- Flame of the Exodar
-	--TODO: [188129] = "Flame of Silvermoon",	-- Flame of Silvermoon
 	[188261] = "破碎的日记",	-- Battered Journal
 	[188364] = "被破坏的螃蟹陷阱",	-- Wrecked Crab Trap
 	[188365] = "古树精华宝石",	-- Heart of the Ancients
@@ -2377,7 +2380,7 @@ for key, value in pairs({
 	[257393] = "宝箱",	-- Treasure Chest
 	[257545] = "宝箱",	-- Treasure Chest
 	[257546] = "宝箱",	-- Treasure Chest
-	--TODO: [257999] = "Technique: Tome of the Tranquil Mind",	-- Technique: Tome of the Tranquil Mind
+	[257999] = "工艺图：宁神书卷",	-- Technique: Tome of the Tranquil Mind
 	[258690] = "小宝箱",	-- Small Treasure Chest
 	[258978] = "浸水的书籍",	-- Waterlogged Tome
 	[258979] = "被邪能毁坏的书籍",	-- Fel-Ravaged Tome
@@ -2851,6 +2854,7 @@ for key, value in pairs({
 	[353683] = "月光之荚",	-- Lunarlight Pod
 	[353684] = "月光之荚",	-- Lunarlight Pod
 	[353685] = "月光之荚",	-- Lunarlight Pod
+	[353686] = "月光之荚",	-- Lunarlight Pod
 	[353687] = "破损之钟",	-- Broken Bell
 	[353688] = "破损之钟",	-- Broken Bell
 	[353691] = "天空之钟",	-- Skyward Bell
@@ -2908,6 +2912,7 @@ for key, value in pairs({
 	[354650] = "梦歌之心",	-- Dreamsong Heart
 	[354651] = "魔法捕梦网",	-- Enchanted Dreamcatcher
 	[354652] = "妖精宝藏",	-- Faerie Trove
+	[354662] = "隐蔽的妖精宝箱",	-- Elusive Faerie Cache
 	[354852] = "出芽增生",	-- Sprouting Growth
 	[354853] = "出芽增生",	-- Sprouting Growth
 	[354856] = "软泥覆盖的箱子",	-- Slime-Coated Crate
@@ -2975,6 +2980,7 @@ for key, value in pairs({
 	--TODO: [358318] = "R. Suavel Dredger Portrait",	-- R. Suavel Dredger Portrait
 	[358319] = "巫师的笔记",	-- Sorceror's Note
 	[358382] = "通缉：螫肢",	-- Wanted: Chelicera
+	[358531] = "巨大的史诗财宝箱",	-- Giant Cache of Epic Treasure
 	[358533] = "被遗忘的补给品",	-- Forgotten Supplies
 	[358855] = "损坏的安全降落包",	-- Damaged Safe Fall Pack
 	[360054] = "黏黏猫",	-- Slime Cat
@@ -3005,6 +3011,14 @@ for key, value in pairs({
 	[368668] = "憎憎的大腿",	-- Lil'Abom's Trunk
 	[368772] = "刻印卷轴",	-- Sigilscored Scroll
 	[368876] = "渊誓之箱",	-- Mawsworn Cache
+	--TODO: [368935] = "Sinfall Screecher Cage",	-- Sinfall Screecher Cage
+	[368946] = "失窃的心能容器",	-- Stolen Anima Vessel
+	[368948] = "失窃的心能容器",	-- Stolen Anima Vessel
+	[368949] = "失窃的心能容器",	-- Stolen Anima Vessel
+	[368950] = "失窃的心能容器",	-- Stolen Anima Vessel
+	[368951] = "失窃的心能容器",	-- Stolen Anima Vessel
+	[368952] = "失窃的心能容器",	-- Stolen Anima Vessel
+	[368953] = "失窃的心能容器",	-- Stolen Anima Vessel
 	[369129] = "耐迦尼赫玛特的纯金指环",	-- Nilganihmaht's Gold Band
 	[369132] = "统御封印之箱",	-- Domination Sealed Chest
 	[369133] = "统御封印 #1",	-- Domination Seal #1
@@ -3025,7 +3039,10 @@ for key, value in pairs({
 	[369216] = "冥誓宝箱",	-- Helsworn Chest
 	[369224] = "伊瑟基尔的宝石之心",	-- Jeweled Heart of Ezekiel
 	[369225] = "孳生残迹",	-- Infested Vestige
+	[369227] = "失窃的心能容器",	-- Stolen Anima Vessel
 	[369232] = "供品盒",	-- Offering Box
+	[369235] = "失窃的心能容器",	-- Stolen Anima Vessel
+	[369236] = "失窃的心能容器",	-- Stolen Anima Vessel
 	[369245] = "刻希亚圣物箱",	-- Korthian Relic Box
 	[369292] = "圣物宝箱",	-- Relic Cache
 	[369296] = "碎皮贮藏",	-- Shardhide Stash
@@ -3073,8 +3090,6 @@ for key, value in pairs({
 	--TODO: [9999921] = "Placement",	-- Placement
 	[9999938] = "尤娜的世界旅行",	-- Uuna's World Tour
 	[9999946] = "召唤巴尔",	-- Summon Baa'l
-	[1278968750] = "悬挂的锁链",	-- Hanging Chain
-	[1278968751] = "月光之荚",	-- Lunarlight Pod
 	[1278968766] = "符文",	-- Rune
 	[1278968767] = "符文",	-- Rune
 	[1278968768] = "符文",	-- Rune
@@ -3113,57 +3128,13 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
--- TODO:
+--[[
 local a = L.UNOBTAINABLE_ITEM_REASONS;
 for key,value in pairs({
-	-- {header, description, name}, header: header id, 1-3 as above, 4 is legacy.
-	{1, "|CFFFF0000This was never available to players.|r", "Never Available (1)"}, -- No Hope -- 1
-	{1, "|CFFFF0000This has been removed from the game.|r", "Removed From Game (2)"}, -- No Hope -- 2
-	{0, "", ""}, -- 3
-	{0, "", ""}, -- 4
-	{0, "", ""}, -- 5
-	{0, "", ""}, -- 6
-	{0, "", ""}, -- 7
-	{0, "", ""}, -- 8
-	{3, "|CFFFF0000此物品的获得方式已被移除，只能从黑市拍卖行获得。|r", "黑市拍卖行 (9)"}, -- There is Hope -- 9
-	{3, "|CFFFF0000此物品通过TCG卡牌获得，卡牌不再发行，但网络上、黑市拍卖行甚至交易行仍可能出现。国服也可能有积分兑换活动。|r", "TCG卡牌 (10)"}, -- There is Hope -- 10
-	{3, "|CFFFF0000此物品拾取后绑定，但是如果你有召唤首领所需的物品仍可获得。|r", "需要召唤道具 (11)"}, -- There is Hope -- 11
-	{0, "|CFF00FFDEThis item or achievement requires Player vs Player activities or a currency related to those activities. |r", "Requires PvP (12)"}, -- There is Hope --, ""}, -- 12
-	{1, "|CFFFF0000你的追随者等级过高，奖励此物品的任务不再刷新。|r", "绝版物资 (13)"}, -- 13
-	{3, "|CFFFF0000此物品无法购买，除非你在对应赛季的PvP评分或排名达标。|r", "PvP Elite/Gladiator (14)"}, -- 14
-	{1, "|CFFFF0000This item has a Source ID (Tempest Keep Legendaries), but can't be learned (training recipes). |r", "Training Recipes / Unlearnable (15)"}, -- 15
-	{0, "", ""}, -- 16
-	{6, "|CFF00FFDE只能在春节期间获得。|r", "春节 (17)"}, -- 17
-	{7, "|CFF00FFDE只能在情人节期间获得。|r", "情人节 (18)"}, -- 18
-	{8, "|CFF00FFDE只能在复活节期间获得。|r", "复活节 (19)"}, -- 19
-	{9, "|CFF00FFDE只能在儿童周期间获得。|r", "儿童周 (20)"}, -- 20
-	{10, "|CFF00FFDE只能在仲夏火焰节期间获得。|r", "仲夏火焰节 (21)"}, -- 21
-	{11, "", "小节日 (22)"}, -- 22 Description written on item
-	{12, "|CFF00FFDE只能在海盗日获得。|r", "海盗日 (23)"}, -- 23
-	{13, "|CFF00FFDE只能在美酒节期间获得。|r", "美酒节 (24)"}, -- 24
-	{14, "|CFF00FFDE只能在收获节期间获得。|r", "收获节 (25)"}, -- 25
-	{15, "|CFF00FFDE只能在万圣节期间获得。|r", "万圣节 (26)"}, -- 26
-	{16, "|CFF00FFDE只能在亡灵节期间获得。国服可能无法获得。|r", "亡灵节 (27)"}, -- 27
-	{17, "|CFF00FFDE只能在感恩节期间获得。|r", "感恩节 (28)"}, -- 28
-	{18, "|CFF00FFDE只能在冬幕节期间获得。|r", "冬幕节 (29)"}, -- 29
-	{19, "|CFF00FFDE只能在荆棘谷钓鱼大赛获得。|r", "荆棘谷钓鱼大赛 (30) "}, -- 30
-	{20, "|CFF00FFDE只能在魔兽世界周年庆期间获得。\n未来的周年庆中可能也可获得。|r\n", "魔兽世界周年庆 (31)"}, -- 31
-	{0, "", ""}, -- 32
-	{0, "", ""}, -- 33
-	{0, "", ""}, -- 34
-	{3, "|CFFFF0000在游戏内商城出售。|r", "游戏内商城 (35)"}, -- 35
-	{21, "|CFFFF0000只能在曾经的魔兽世界周年庆期间获得，不再可得。|r\n", "魔兽世界周年庆 [已移除] (36)"}, -- 36
-	{0, "", ""}, -- 37
-	{1, "|CFFFF0000此项只有在熊猫人之谜资料片完成了传说披风任务线的玩家才能获得。|r", "斡耳朵斯－传说披风 (38)"}, --38
-	{0, "", ""}, -- 39
-	{0, "", ""}, -- 40
-	{1, "|CFFFF0000这些外观只有完成了法师塔神器挑战，获得了基础配色的玩家才能获得。|r", "法师塔外观 (41)"}, -- 41
-	{21, "|CFFFF0000这些外观只有在对应资料片的时空漫游周才能获得。|r", "时空漫游 (42)"}, -- 42
-	{0, "", ""}, -- 43
-	{0, "", ""}, -- 44
-	{1, "|CFFFF0000暴雪在7.3.2和8.0中的拾取改动使得一些物品无法掉落。目前影响的包括格鲁尔（TBC）、怒炉将军（黑石深渊）和、特迪斯·扭木（厄运之槌西）的掉落。|r", "拾取机制损坏 (45)"}, -- 45
+
 })
 do a[key] = value; end
+]]
 
 -- TODO:
 local a = L.CUSTOM_COLLECTS_REASONS;

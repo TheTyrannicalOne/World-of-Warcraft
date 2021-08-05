@@ -991,6 +991,24 @@
 		</Shadow>
 	</Font>
 
+	<Font name="NarciFontNumber24Outline" font="Interface\AddOns\Narcissus\Font\SourceSansPro-Semibold.ttf" height="24" outline="NORMAL">
+		<Shadow>
+			<Offset>
+				<AbsDimension x="2" y="-2"/>
+			</Offset>
+			<Color r="0" g="0" b="0"/>
+		</Shadow>
+	</Font>
+
+	<Font name="NarciFontNumber12Outline" font="Interface\AddOns\Narcissus\Font\SourceSansPro-Semibold.ttf" height="12" outline="NORMAL">
+		<Shadow>
+			<Offset>
+				<AbsDimension x="1" y="-1"/>
+			</Offset>
+			<Color r="0" g="0" b="0" a="1"/>
+		</Shadow>
+	</Font>
+
 	<Font name="NarciPrefFontGrey9" inherits="NarciFontNormal9" virtual="true">
 		<Color r="0.42" g="0.42" b="0.42"/>
 	</Font>

@@ -3,6 +3,7 @@
     <Script file="NarciAPI.lua"/>
     <Script file="FadeFrame.lua"/>
     <Script file="Processor.lua"/>
+    <Script file="Color.lua"/>
 
     <!--Script file="Utilities.lua"/-->
 </Ui>

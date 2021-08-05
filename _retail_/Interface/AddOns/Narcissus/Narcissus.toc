@@ -43,6 +43,8 @@ Modules\CharacterFrame\EquipmentComparisonFlyout.xml
 Modules\CharacterFrame\TitleManager.xml
 Modules\CharacterFrame\EquipmentSetManager.xml
 
+Modules\Competitive\UI.xml
+
 Modules\CharacterFrame\NavBar.xml
 
 Modules\PhotoMode\Widgets.xml

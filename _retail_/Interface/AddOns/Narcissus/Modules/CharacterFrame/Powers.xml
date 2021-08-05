@@ -266,14 +266,14 @@
                         <Anchor point="LEFT" relativePoint="LEFT" x="0"/>
                     </Anchors>
                 </Texture>
-				<FontString inherits="NarciFontMedium12" justifyH="LEFT" justifyV="BOTTOM" parentKey="Name" text="Relentless Onslaught" maxLines="1">
+				<FontString inherits="NarciFontMedium12" justifyH="LEFT" justifyV="BOTTOM" parentKey="Name" text=" " maxLines="1">
 					<Size x="150" y="0"/>
 					<Color r="0.8" g="0.8" b="0.8"/>
 					<Anchors>
 						<Anchor point="BOTTOMLEFT" relativeKey="$parent" relativePoint="LEFT" x="29" y="-1"/>
 					</Anchors>
 				</FontString>
-				<FontString inherits="NarciFontStatusNumber10" justifyH="LEFT" justifyV="TOP" parentKey="ItemLevel" text="128">
+				<FontString inherits="NarciFontStatusNumber10" justifyH="LEFT" justifyV="TOP" parentKey="ItemLevel" text=" ">
 					<Size x="0" y="0"/>
 					<Color r="0.5" g="0.5" b="0.5"/>
 					<Anchors>

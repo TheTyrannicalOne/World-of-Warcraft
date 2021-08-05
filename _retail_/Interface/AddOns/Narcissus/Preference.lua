@@ -177,28 +177,17 @@ local function SetItemNameTextTruncated(self, state)
 end
 
 local function ShowDetailedIlvlInfo(self, state)
-	local frame = Narci_ItemLevelFrame;
-	local frame1, frame2 = frame.LeftButton, frame.RightButton;
 	if state then
-		frame1.AnimFrame:Hide();
-		frame2.AnimFrame:Hide();
-		frame1.AnimFrame:Show();
-		frame2.AnimFrame:Show();
-		frame1:Show();
-		frame2:Show();
         FadeFrame(Narci_DetailedStatFrame, 0.5, "IN");
         FadeFrame(Narci_RadarChartFrame, 0.5, "IN");
 		FadeFrame(Narci_ConciseStatFrame, 0.5, "OUT");
 	else
-		frame1.AnimFrame:Hide();
-		frame2.AnimFrame:Hide();
-		frame1.AnimFrame:Show();
-		frame2.AnimFrame:Show();
         FadeFrame(Narci_DetailedStatFrame, 0.5, "OUT");
         FadeFrame(Narci_RadarChartFrame, 0.5, "OUT");
 		FadeFrame(Narci_ConciseStatFrame, 0.5, "IN");
 	end
-
+    Narci_ItemLevelFrame:ToggleExtraInfo(state);
+    Narci_ItemLevelFrame.showExtraInfo = state;
     Narci_NavBar:SetMaximizedMode(state);
 end
 

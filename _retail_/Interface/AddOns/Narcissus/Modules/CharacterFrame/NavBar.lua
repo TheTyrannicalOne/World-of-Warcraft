@@ -18,6 +18,7 @@ local PowersFrame = Narci_PowersFrame;
 local DetailedStats = Narci_DetailedStatFrame;
 local ConciseStats = Narci_ConciseStatFrame;
 local Radar = Narci_RadarChartFrame;
+local ChallengeUI = Narci_CompetitiveDisplay;
 
 local RepositionFrame = CreateFrame("Frame", nil, nil, "NarciUpdateFrameTemplate");
 RepositionFrame.duration = 0.35;
@@ -65,14 +66,15 @@ function V:ShowAttributes()
 
     Narci.refreshCombatRatings = true;
     self:SetVerticleOffset(-26);
-    FadeFrame(EquipmentSetManager, 0.35, 0);
-    FadeFrame(PowersFrame, 0.25, 0);
+    FadeFrame(EquipmentSetManager, 0.2, 0);
+    FadeFrame(PowersFrame, 0.20, 0);
+    FadeFrame(ChallengeUI, 0.20, 0);
     if NarcissusDB.DetailedIlvlInfo then
-        FadeFrame(DetailedStats, 0.4, 1);
-        FadeFrame(Radar, 0.25, 1);
+        FadeFrame(DetailedStats, 0.2, 1);
+        FadeFrame(Radar, 0.2, 1);
     else
-        FadeFrame(ConciseStats, 0.4, 1);
-        FadeFrame(Radar, 0.25, 0);
+        FadeFrame(ConciseStats, 0.2, 1);
+        FadeFrame(Radar, 0.2, 0);
     end
     Radar:AnimateValue();
     Narci.RefreshAllStats();
@@ -94,6 +96,7 @@ function V:ShowSets()
     FadeFrame(PowersFrame, 0.20, 0);
     FadeFrame(EquipmentSetManager, 0.15, 1);
     FadeFrame(Radar, 0.20, 1);
+    FadeFrame(ChallengeUI, 0.20, 0);
     self.showSetsCallBack();
 end
 
@@ -110,6 +113,7 @@ function V:ShowSoulbinds()
     FadeFrame(DetailedStats, 0.20, 0);
     FadeFrame(ConciseStats, 0.20, 0);
     FadeFrame(EquipmentSetManager, 0.20, 0);
+    FadeFrame(ChallengeUI, 0.20, 0);
     FadeFrame(PowersFrame, 0.15, 1);    --Soulbinds\Talents
     if MAX_CONDUITS == 8 then
         FadeFrame(Radar, 0.20, 1);
@@ -119,11 +123,31 @@ function V:ShowSoulbinds()
     self.hideSetsCallBack();
 end
 
-function V:SetView(index)
+function V:ShowChallenge()
+    if self.targetView == 4 then
+        return
+    else
+        self.targetView = 4;
+    end
+
+    Narci.refreshCombatRatings = true;
+    self:SetVerticleOffset(-24 -72 -2);
+    FadeFrame(DetailedStats, 0.20, 0);
+    FadeFrame(ConciseStats, 0.20, 0);
+    FadeFrame(EquipmentSetManager, 0.20, 0);
+    FadeFrame(PowersFrame, 0.20, 0);
+    FadeFrame(Radar, 0.20, 0);
+    FadeFrame(ChallengeUI, 0.15, 1);
+    self.hideSetsCallBack();
+end
+
+function V:SetTab(index)
     if index == 2  then
         self:ShowSets();
     elseif index == 3 then
         self:ShowSoulbinds();
+    elseif index == 4 then
+        self:ShowChallenge();
     else
         self:ShowAttributes();
     end
@@ -183,7 +207,7 @@ end
 
 function NarciNavBarTabButtonMixin:OnClick()
     if not self.isSelected then
-        NavigationBar:ToggleView(self.viewIndex);
+        self.tabFrame:SelectTab(self.tabIndex);
     end
 end
 
@@ -209,11 +233,11 @@ function NarciNavBarTabButtonMixin:SetSelect(state)
     end
 end
 
-function NarciNavBarTabButtonMixin:SetUp(labelText, viewIndex)
+function NarciNavBarTabButtonMixin:SetUp(labelText, tabIndex)
     self.Label:SetWidth(0);
     self.Label:SetText(labelText);
     local textWidth = self.Label:GetWidth();
-    local MAX_WIDTH = 60;
+    local MAX_WIDTH = self.maxWidth or 60;
     if textWidth < 30 then
         textWidth = 30;
         self.Label:SetWidth(textWidth);
@@ -222,7 +246,7 @@ function NarciNavBarTabButtonMixin:SetUp(labelText, viewIndex)
         self.Label:SetWidth(textWidth);
     end
     self:SetWidth(textWidth + 20);
-    self.viewIndex = viewIndex;
+    self.tabIndex = tabIndex;
 end
 
 local soulbindIDs = {
@@ -297,6 +321,7 @@ function NarciNavBarMixin:OnLoad()
         PRIMARY,      --Primary
         WARDROBE_SETS,     --Sets
         COVENANT_PREVIEW_SOULBINDS,    --Seelenbande Soulbinds
+        Narci.L["Mythic Plus Abbrev"],      --Mythic Plus
     };
 
     local lastButton;
@@ -315,6 +340,7 @@ function NarciNavBarMixin:OnLoad()
             button:SetPoint("LEFT", lastButton, "RIGHT", GAP, 0);
         end
         button:SetUp(tabInfo[i], i);
+        button.tabFrame = self;
         lastButton = button;
     end
 
@@ -393,29 +419,30 @@ function NarciNavBarMixin:SetPortraitTexture(tex, offset)
     end
 end
 
-function NarciNavBarMixin:ToggleView(viewIndex)
-    if viewIndex ~= self.viewIndex then
-        self.viewIndex = viewIndex;
+function NarciNavBarMixin:SelectTab(tabIndex)
+    if tabIndex ~= self.tabIndex then
+        self.tabIndex = tabIndex;
     else
         return
     end
-    NavButtonController:SelectButtonByIndex(viewIndex);
-    V:SetView(viewIndex);
+    NavButtonController:SelectButtonByIndex(tabIndex);
+    V:SetTab(tabIndex);
 
     self:ProcessUpdate();
 
-    self.PrimaryFrame:SetShown(viewIndex == 1);
-    self.SetsFrame:SetShown(viewIndex == 2);
-    self.SoulbindsFrame:SetShown(viewIndex == 3);
+    self.PrimaryFrame:SetShown(tabIndex == 1);
+    self.SetsFrame:SetShown(tabIndex == 2);
+    self.SoulbindsFrame:SetShown(tabIndex == 3);
+    self.ChallengeFrame:SetShown(tabIndex == 4);
 
-    if viewIndex == 1 then
+    if tabIndex == 1 then
         self:ShowPrimary();
-    elseif viewIndex == 2 then
+    elseif tabIndex == 2 then
         self:ShowSets();
-    elseif viewIndex == 3 then
+    elseif tabIndex == 3 then
         self:ShowCovenant();
-    else
-
+    elseif tabIndex == 4 then
+        self:ShowChallenge();
     end
 end
 
@@ -452,6 +479,10 @@ function NarciNavBarMixin:SetSkipCovenant(state)
     NavButtonController:SetButtonVisibilityByIndex(3, not state);
 end
 
+function NarciNavBarMixin:ToggleTabButtonByIndex(index, visible)
+    NavButtonController:SetButtonVisibilityByIndex(index, visible);
+end
+
 function NarciNavBarMixin:ShowCovenant()
     if not self.covenantID then
         self.covenantID = C_Covenants.GetActiveCovenantID() or 0;
@@ -475,6 +506,10 @@ function NarciNavBarMixin:SetSoulbindName(soulbindName, isActive)
     end
 
     self:SetSkipCovenant(false);
+end
+
+function NarciNavBarMixin:ShowChallenge()
+    self:SetPortraitTexture("Interface\\AddOns\\Narcissus\\Art\\NavBar\\Hourglass");
 end
 
 function NarciNavBarMixin:ToggleBar(state)
@@ -573,7 +608,7 @@ end
 
 function NarciNavBarMixin:RequestUpdate(type)
     if type == "soulbinds" or type == "all" then
-        if self:IsVisible() and self.viewIndex == 1 then
+        if self:IsVisible() and self.tabIndex == 1 then
             UpdateSoulbinds();
         else
             self.pendingSoulbinds = true;

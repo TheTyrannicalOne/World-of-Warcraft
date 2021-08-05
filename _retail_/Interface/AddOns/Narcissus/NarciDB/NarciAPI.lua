@@ -764,10 +764,9 @@ local function IsItemSocketable(itemLink, socketID)
     if not socketID then socketID = 1; end
 
     local gemName, gemLink = GetItemGem(itemLink, socketID)
-    if gemName then
-        return gemName, gemLink;
+    if gemLink then
+        return gemName or "...", gemLink;
     end
-    --]]
 
     local tex, texID;
     for i = 1, 3 do
@@ -1588,30 +1587,47 @@ local EditBoxFont = {
 	["JP"] = {"Interface\\AddOns\\Narcissus\\Font\\NotoSansCJKsc-Medium.otf", 8},
 }
 
-local function SmartFontType(self, height, fontTable)
+local NormalFont12 = {
+	["CN"] = {"Interface\\AddOns\\Narcissus\\Font\\NotoSansCJKsc-Medium.otf", 11},
+	["RM"] = {"Interface\\AddOns\\Narcissus\\Font\\SourceSansPro-Semibold.ttf", 12},
+	["RU"] = {"Interface\\AddOns\\Narcissus\\Font\\NotoSans-Medium.ttf", 11},
+	["KR"] = {"Interface\\AddOns\\Narcissus\\Font\\NotoSansCJKsc-Medium.otf", 11},
+	["JP"] = {"Interface\\AddOns\\Narcissus\\Font\\NotoSansCJKsc-Medium.otf", 11},
+}
+
+local function SmartFontType(self, fontTable)
 	local str = self:GetText();
-	local Language = LanguageDetector(str);
+	local language = LanguageDetector(str);
 	--print(str.." Language is: "..Language);
-    local Height = self:GetHeight();
-    if Language and fontTable[Language] then
-		self:SetFont(fontTable[Language] , Height);
+    local height = self:GetHeight();
+    if language and fontTable[language] then
+		self:SetFont(fontTable[language] , height);
 	end
 end
 
 local function SmartEditBoxFont(self, extraHeight)
 	local str = self:GetText();
-	local Language = LanguageDetector(str);
-    if Language and EditBoxFont[Language] then
+	local language = LanguageDetector(str);
+    if language and EditBoxFont[language] then
         local height = extraHeight or 0;
-		self:SetFont(EditBoxFont[Language][1] , EditBoxFont[Language][2] + height);
+		self:SetFont(EditBoxFont[language][1] , EditBoxFont[language][2] + height);
 	end
 end
 
-local function NarciAPI_SmartFontType(self, height)
-    SmartFontType(self, height, PlayerNameFont);
+local function NarciAPI_SmartFontType(fontString)
+    SmartFontType(fontString, PlayerNameFont);
+end
+
+local function SmartSetName(fontString, str)
+    fontString:SetText(str);
+	local language = LanguageDetector(str);
+    if language and NormalFont12[language] then
+		fontString:SetFont(NormalFont12[language][1], NormalFont12[language][2]);
+	end
 end
 
 NarciAPI.SmartFontType = NarciAPI_SmartFontType;
+NarciAPI.SmartSetName = SmartSetName;
 
 function NarciAPI_SmartEditBoxType(self, extraHeight)
     SmartEditBoxFont(self, extraHeight);
@@ -3570,6 +3586,33 @@ end
 
 NarciAPI.UpdateScreenshotsCounter = UpdateScreenshotsCounter;
 
+
+local function WrapNameWithClassColor(name, classID, specID, showIcon, offsetY)
+    local classInfo = C_CreatureInfo.GetClassInfo(classID);
+    if classInfo then
+        local color = C_ClassColor.GetClassColor(classInfo.classFile);
+        if color then
+            if specID and showIcon then
+                local str = color:WrapTextInColorCode(name);
+                local _, _, _, icon, role = GetSpecializationInfoByID(specID);
+                if icon then
+                    offsetY = offsetY or 0;
+                    str = "|T"..icon..":12:12:-1:"..offsetY..":64:64:4:60:4:60|t" ..str;
+                end
+                return str
+            else
+                return color:WrapTextInColorCode(name);
+            end
+        else
+            return name
+        end
+    else
+        return name
+    end
+end
+
+
+NarciAPI.WrapNameWithClassColor = WrapNameWithClassColor;
 --[[
 function TestFX(modelFileID, zoomDistance, view)
     NarciAPI_SetupModelScene(TestScene, modelFileID, zoomDistance, view);

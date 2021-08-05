@@ -7,7 +7,7 @@ local fonts = SM:List("font")
 local _
 
 Spy = LibStub("AceAddon-3.0"):NewAddon("Spy", "AceConsole-3.0", "AceEvent-3.0", "AceComm-3.0", "AceTimer-3.0")
-Spy.Version = "3.8.3"
+Spy.Version = "3.8.4"
 Spy.DatabaseVersion = "1.1"
 Spy.Signature = "[Spy]"
 Spy.ButtonLimit = 15
@@ -385,6 +385,7 @@ Spy.options = {
 					order = 12,
 					values = {
 						["NameLevelClass"] = L["Name"].." / "..L["Level"].." / "..L["Class"],
+						["NameLevelGuild"] = L["Name"].." / "..L["Level"].." / "..L["Guild"],
 						["NameLevelOnly"] = L["Name"].." / "..L["Level"],
 						["NameGuild"] = L["Name"].." / "..L["Guild"],
 						["NameOnly"] = L["Name"],
@@ -1325,7 +1326,7 @@ local Default_Profile = {
 			["Class"] = {
 				["HUNTER"] = { r = 0.67, g = 0.83, b = 0.45, a = 0.6 },
 				["WARLOCK"] = { r = 0.53, g = 0.53, b = 0.93, a = 0.6 },
-				["PRIEST"] = { r = 1.00, g = 1.0, b = 1.0, a = 0.6 },
+				["PRIEST"] = { r = 1.00, g = 1.00, b = 1.00, a = 0.6 },
 				["PALADIN"] = { r = 0.96, g = 0.55, b = 0.73, a = 0.6 },
 				["MAGE"] = { r = 0.25, g = 0.78, b = 0.92, a = 0.6 },
 				["ROGUE"] = { r = 1.00, g = 0.96, b = 0.41, a = 0.6 },
@@ -1333,7 +1334,7 @@ local Default_Profile = {
 				["SHAMAN"] = { r = 0.00, g = 0.44, b = 0.87, a = 0.6 },
 				["WARRIOR"] = { r = 0.78, g = 0.61, b = 0.43, a = 0.6 },
 				["DEATHKNIGHT"] = { r = 0.77, g = 0.12, b = 0.23, a = 0.6 },
-                ["MONK"] = { r = 0.00, g = 1.00, b = 0.60, a = 0.6 },
+				["MONK"] = { r = 0.00, g = 1.00, b = 0.60, a = 0.6 },
 				["DEMONHUNTER"] = { r = 0.64, g = 0.19, b = 0.79, a = 0.6 },
 				["PET"] = { r = 0.09, g = 0.61, b = 0.55, a = 0.6 },
 				["MOB"] = { r = 0.58, g = 0.24, b = 0.63, a = 0.6 },
@@ -1446,7 +1447,7 @@ local Default_Profile = {
 			["The Violet Gate"] = false,
 			["Magni's Encampment"] = false,
 			["Rustbolt"] = false,
-			["Oribos"] = false,			
+			["Oribos"] = false,
 		},
 	},
 }
@@ -1693,6 +1694,8 @@ function Spy:OnEnable(first)
 	Spy:RegisterEvent("PLAYER_REGEN_ENABLED", "LeftCombatEvent")
 	Spy:RegisterEvent("PLAYER_DEAD", "PlayerDeadEvent")
 	Spy:RegisterEvent("CHAT_MSG_CHANNEL_NOTICE", "ChannelNoticeEvent")
+	Spy:RegisterEvent("NAME_PLATE_UNIT_ADDED", "NamePlateEvent")
+	Spy:RegisterEvent("NAME_PLATE_UNIT_REMOVED", "NamePlateEvent")
 	Spy:RegisterComm(Spy.Signature, "CommReceived")
 	Spy.IsEnabled = true
 --	Spy:RefreshCurrentList()
@@ -1716,7 +1719,9 @@ function Spy:OnDisable()
 	Spy:UnregisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 	Spy:UnregisterEvent("PLAYER_REGEN_ENABLED")
 	Spy:UnregisterEvent("PLAYER_DEAD")
-	Spy:UnregisterEvent("CHAT_MSG_CHANNEL_NOTICE")	
+	Spy:UnregisterEvent("CHAT_MSG_CHANNEL_NOTICE")
+	Spy:UnregisterEvent("NAME_PLATE_UNIT_ADDED")
+	Spy:UnregisterEvent("NAME_PLATE_UNIT_REMOVED")
 	Spy:UnregisterComm(Spy.Signature)
 	Spy.IsEnabled = false
 end
@@ -2031,6 +2036,49 @@ function Spy:PlayerMouseoverEvent()
 	end
 end
 
+function Spy:NamePlateEvent(_, unit)
+	local name = GetUnitName(unit, true)
+	if name and UnitIsPlayer(unit) and not SpyPerCharDB.IgnoreData[name] then
+		local playerData = SpyPerCharDB.PlayerData[name]
+		if UnitIsEnemy("player", unit) then
+			name = string.gsub(name, " %- ", "-")
+
+			local learnt = true
+			if playerData and playerData.isGuess == false then learnt = false end
+
+			local x, class = UnitClass(unit)
+			local race = select(1,UnitRace(unit))
+			local level = tonumber(UnitLevel(unit))
+			local guild = GetGuildInfo(unit)
+			local guess = false
+			if level == Spy.Skull then
+				if playerData and playerData.level then
+					if playerData.level > (UnitLevel("player") + 10) and playerData.level < Spy.MaximumPlayerLevel then	
+						guess = true
+						level = nil
+					elseif UnitLevel("player") < Spy.MaximumPlayerLevel - 9 then
+						guess = true
+						level = UnitLevel("player") + 10
+					end	
+				else
+					guess = true
+					level = UnitLevel("player") + 10
+				end
+--			else
+--				guess = true
+--				level = nil
+			end
+
+			Spy:UpdatePlayerData(name, class, level, race, guild, true, guess)
+			if Spy.EnabledInZone then
+				Spy:AddDetected(name, time(), learnt)
+			end
+		elseif playerData then 
+			Spy:RemovePlayerData(name)
+		end
+	end
+end
+
 function Spy:CombatLogEvent(info, timestamp, event, hideCaster, srcGUID, srcName, srcFlags, sourceRaidFlags, dstGUID, dstName, dstFlags, destRaidFlags, ...)
 timestamp, event, hideCaster, srcGUID, srcName, srcFlags, sourceRaidFlags, dstGUID, dstName, dstFlags, destRaidFlags, arg12, arg13, arg14, arg15, arg16 = CombatLogGetCurrentEventInfo()
 --print(CombatLogGetCurrentEventInfo())
@@ -2146,7 +2194,7 @@ timestamp, event, hideCaster, srcGUID, srcName, srcFlags, sourceRaidFlags, dstGU
 						if not playerData.wins then playerData.wins = 0 end
 							playerData.wins = playerData.wins + 1
 --							PlaySoundFile("Interface\\AddOns\\Spy\\Sounds\\neck-snap.mp3", Spy.db.profile.SoundChannel)
-							DEFAULT_CHAT_FRAME:AddMessage("Your pet/guardian killed " .. dstName);							
+--							DEFAULT_CHAT_FRAME:AddMessage("Your pet/guardian killed " .. dstName);							
 					end				
 				end
 			end

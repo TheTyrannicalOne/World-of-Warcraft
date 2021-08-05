@@ -582,6 +582,7 @@
 		<Scripts>
 			<OnHide>
 				self:Hide();
+				self.ItemAnim:Hide();
 				self:StopAnimating();
 				self:UnregisterEvent("SOCKET_INFO_SUCCESS");
 				self:UnregisterEvent("ITEM_PUSH");

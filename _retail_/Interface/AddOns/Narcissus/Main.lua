@@ -810,8 +810,7 @@ local function ExitFunc()
 			CameraMover:ZoomIn(CVarTemp.ZoomLevel);
 		end
 		SetCVar("cameraViewBlendStyle", CVarTemp.CameraViewBlendStyle);
-	end)	
-	--Narci_Attribute:Show();
+	end);
 
 	Narci.isActive = false;
 	Narci.isAFK = false;
@@ -941,7 +940,12 @@ function NarciMinimapButtonMixin:CreatePanel()
 		nil,	--Narci_Outfit:Open();
 
 		function()
-			Narci_AchievementFrame:SetShown(not Narci_AchievementFrame:IsShown());
+			if not Narci_AchievementFrame then
+				print("Fail to load Narcissus Achievement Panel.");
+				return
+			else
+				Narci_AchievementFrame:SetShown(not Narci_AchievementFrame:IsShown());
+			end
 		end
 	};
 
@@ -1705,7 +1709,7 @@ function NarciEquipmentSlotMixin:Refresh()
 	--print(slotName..slotID)
 	--local texture = CharacterHeadSlot.popoutButton.icon:GetTexture()
 	local itemLink;
-	local itemIcon, itemName, itemQuality, effectiveLvl, GemName, GemLink;
+	local itemIcon, itemName, itemQuality, effectiveLvl, gemName, gemLink, gemID;
 	local borderTexKey;
 	local isAzeriteEmpoweredItem = false;		--3 Pieces	**likely to be changed in patch 8.2
 	local isAzeriteItem = false;				--Heart of Azeroth
@@ -1856,10 +1860,12 @@ function NarciEquipmentSlotMixin:Refresh()
 			end
 			--]]
 			itemLink = C_Item.GetItemLink(itemLocation);
+			
 			if itemLink == self.itemLink then
-				--Same item. Don't update;
 				return
 			end
+			
+			
 			local itemVFX;
 			local itemID = GetItemInfoInstant(itemLink);
 			borderTexKey, itemVFX, bR, bG, bB = GetBorderArtByItemID(itemID);
@@ -1877,21 +1883,21 @@ function NarciEquipmentSlotMixin:Refresh()
 			isDominationItem = DoesItemHaveDomationSocket(itemID);
 			if slotID == 13 or slotID == 14 then
 				if itemID == 167555 then	--Pocket-Sized Computation Device
-					GemName, GemLink = IsItemSocketable(itemLink, 2);
+					gemName, gemLink = IsItemSocketable(itemLink, 2);
 				else
-					GemName, GemLink = IsItemSocketable(itemLink);
+					gemName, gemLink = IsItemSocketable(itemLink);
 				end
 			else
 				if isDominationItem then
-					GemName, GemLink = GetItemDominationGem(itemLink);
+					gemName, gemID = GetItemDominationGem(itemLink);
 				else
-					GemName, GemLink = IsItemSocketable(itemLink);
+					gemName, gemLink = IsItemSocketable(itemLink);
 				end
 			end
 			
 			self.hyperlink = nil;
 			self.GemSlot.ItemLevel = effectiveLvl;
-			self.GemLink = GemLink;		--Later used in OnEnter func in NarciSocketing.lua
+			self.gemLink = gemLink;		--Later used in OnEnter func in NarciSocketing.lua
 			
 			if slotID == 2 then
 				isAzeriteItem = C_AzeriteItem.IsAzeriteItem(itemLocation);
@@ -1962,6 +1968,7 @@ function NarciEquipmentSlotMixin:Refresh()
 		self.itemID = nil;
 		self.bonusID = nil;
 		self.itemLink = nil;
+		self.gemLink = nil;
 		itemQuality = 0;
 		itemIcon = self.emptyTexture;
 		itemName = " " ;
@@ -2058,34 +2065,32 @@ function NarciEquipmentSlotMixin:Refresh()
 	--]]
 
 	--Gem Slot--
-	if GemName ~= nil then
-		if GemLink then
-			local gemID, _, _, _, gemIcon, _, itemSubClassID = GetItemInfoInstant(GemLink);
-			local gemBorder;
-			if isDominationItem then
+	if gemName ~= nil then
+		local gemBorder, gemIcon, itemSubClassID;
+		if isDominationItem then
+			if gemID then
+				_, _, _, _, gemIcon = GetItemInfoInstant(gemID);
 				gemBorder = GetDominationBorderTexture(gemID);
 			else
-				gemBorder = GetGemBorderTexture(itemSubClassID, gemID);
+				gemBorder = GetDominationBorderTexture(nil);
 			end
-			
 			self.GemSlot.GemBorder:SetTexture(gemBorder);
-			self.GemSlot.GemIcon:SetTexture(gemIcon);
-			self.GemSlot.GemIcon:Show();
-			self.GemSlot.sockedGemItemID = gemID;
 		else
-			if isDominationItem then
-				self.GemSlot.GemBorder:SetTexture( GetDominationBorderTexture(nil) );
+			--regular gems
+			if gemLink then
+				gemID, _, _, _, gemIcon, _, itemSubClassID = GetItemInfoInstant(gemLink);
+				gemBorder = GetGemBorderTexture(itemSubClassID, gemID);
 			else
-				self.GemSlot.GemBorder:SetTexture( GetGemBorderTexture(nil) );	--empty socket
+				gemBorder = GetGemBorderTexture(nil);
 			end
-			self.GemSlot.GemIcon:SetTexture(nil);
-			self.GemSlot.GemIcon:Hide();
-			self.GemSlot.sockedGemItemID = nil;
 		end
+		self.GemSlot.GemBorder:SetTexture(gemBorder);
+		self.GemSlot.GemIcon:SetTexture(gemIcon);
+		self.GemSlot.GemIcon:Show();
+		self.GemSlot.sockedGemItemID = gemID;
+		self.GemSlot:Show();
 		if self:IsVisible() then
 			self.GemSlot.animIn:Play();
-		else
-			self.GemSlot:Show();
 		end
 		self.GemSlot.isDomiationSocket = isDominationItem;
 	else
@@ -2405,18 +2410,6 @@ function Narci_ShowStatTooltipDelayed(self)
 	NarciAPI_ShowDelayedTooltip("BOTTOM", self, "TOP", 0, -4);
 end
 
-local function PlayIlvlInfoAnimation()
-	local frame = Narci_ItemLevelFrame;
-	local frame1 = frame.LeftButton;
-	local frame2 = frame.RightButton;
-
-	if NarcissusDB.DetailedIlvlInfo and not frame1:IsVisible() and not MOG_MODE then
-		frame1.AnimFrame:Show();
-		frame2.AnimFrame:Show();
-		frame1:Show();
-		frame2:Show();
-	end
-end
 
 local function ShowDetailedIlvlInfo(self)
 	if NarcissusDB.DetailedIlvlInfo then
@@ -2577,9 +2570,15 @@ function NarciItemLevelFrameMixin:SetTheme(isDomination)
 	if isDomination then
 		file = "Interface\\AddOns\\Narcissus\\Art\\Widgets\\Domination\\ItemLevelHexagon";
 		self.CenterButton:ShowMaxLevel(false);
+		self.CenterButton.Highlight:SetTexture("Interface\\AddOns\\Narcissus\\Art\\Widgets\\Domination\\ItemLevelHexagonHighlight");
+		self.CenterButton.Highlight:SetSize(128, 128);
+		self.CenterButton.Highlight:SetBlendMode("BLEND");
 	else
 		file = "Interface\\AddOns\\Narcissus\\Art\\Widgets\\ItemLevel\\HexagonTube";
 		self.CenterButton:ShowMaxLevel(true);
+		self.CenterButton.Highlight:SetTexture("Interface\\AddOns\\Narcissus\\Art\\Solid\\HexagonSolid-Highlight");
+		self.CenterButton.Highlight:SetSize(100, 100);
+		self.CenterButton.Highlight:SetBlendMode("ADD");
 	end
 	local textures = {
 		self.CenterButton.FluidBackground, self.CenterButton.TubeBorder,
@@ -2606,6 +2605,44 @@ function NarciItemLevelFrameMixin:UpdateDomination()
 		end)
 	end
 end
+
+function NarciItemLevelFrameMixin:ToggleExtraInfo(state, replayAnimation)
+	if not self.animFrame then
+		self.animFrame = CreateFrame("Frame");
+		self.animFrame:Hide();
+		self.animFrame:SetScript("OnUpdate", function(f, elapsed)
+			f.t = f.t + elapsed;
+			local offsetX = outSine(f.t, f.fromX, f.toX, 0.4);
+			if f.t >= 0.4 then
+				offsetX = f.toX;
+				f:Hide();
+				if f.hideButton then
+					self.LeftButton:Hide();
+					self.RightButton:Hide();
+				end
+			end
+			self.LeftButton:SetPoint("RIGHT", self, "CENTER", -offsetX, 0);
+			self.RightButton:SetPoint("LEFT", self, "CENTER", offsetX, 0);
+		end);
+	end
+	self.animFrame:Hide();
+	self.animFrame.t = 0;
+	local _, _, _, fromX = self.RightButton:GetPoint();
+	self.animFrame.fromX = fromX;
+	if state then
+		self.animFrame.toX = 28;
+		self.LeftButton:Show();
+		self.RightButton:Show();
+		self.animFrame.hideButton = false;
+	else
+		self.animFrame.toX = -32;
+		self.animFrame.hideButton = true;
+	end
+	if fromX ~= self.animFrame.toX or replayAnimation then
+		self.animFrame:Show();
+	end
+end
+
 
 NarciItemLevelCenterButtonMixin = {};
 
@@ -2663,7 +2700,7 @@ function NarciItemLevelCenterButtonMixin:OnMouseUp()
 end
 
 function NarciItemLevelCenterButtonMixin:OnLeave()
-	FadeFrame(self.Highlight, 0.3, 0);
+	FadeFrame(self.Highlight, 0.2, 0);
 	Narci:HideButtonTooltip();
 end
 
@@ -3618,6 +3655,9 @@ local function PlayAttributeAnimation()
 	if not NarcissusDB.DetailedIlvlInfo then
 		RadarChart:AnimateValue();
 		return
+	end
+	if not RadarChart:IsShown() then
+		return		--Attributes is not the active tab
 	end
 	local anim;
 	for i = 1, 20 do
@@ -4943,9 +4983,6 @@ function CameraMover:ShowFrame()
 	PlayAttributeAnimation();
 	After(0, function()
 		FadeFrame(Narci_Character, 0.6, 1);
-		After(0.3, function()
-			PlayIlvlInfoAnimation();
-		end)
 	end)
 
 	Narci_SnowEffect(true);
@@ -4953,68 +4990,6 @@ end
 
 
 ----------------------------
-
-local DURATION_FLY_IN = 0.4;
-
-function IlvlButtonLeftAnimFrame_OnUpdate(self, elapsed)
-	local fromX = self.fromX;
-	local toX = 24;
-	local distance = self.Width + 10;
-	local offsetX;
-	local t = self.TimeSinceLastUpdate;
-	local frame = self:GetParent();
-
-	if not self.OppoDirection then
-		offsetX = outSine(t, fromX, toX, DURATION_FLY_IN);
-		if t >= DURATION_FLY_IN then
-			offsetX = toX;
-			self:Hide()
-			return;
-		end
-		frame:SetPoint(self.anchorPoint, self.relativeTo, self.relativePoint, offsetX, 0);
-	else
-		offsetX = outSine(t, fromX, distance, DURATION_FLY_IN);
-		if t >= DURATION_FLY_IN then
-			offsetX = distance;
-			self:Hide();
-			frame:Hide();
-			return;
-		end
-		frame:SetPoint(self.anchorPoint, self.relativeTo, self.relativePoint, offsetX, 0);
-	end
-
-	self.TimeSinceLastUpdate = self.TimeSinceLastUpdate + elapsed;
-end
-
-function IlvlButtonRightAnimFrame_OnUpdate(self, elapsed)
-	local fromX = self.fromX;
-	local toX = -24;
-	local distance = -(self.Width + 10);
-	local offsetX;
-	local t = self.TimeSinceLastUpdate;
-	local frame = self:GetParent();
-
-	if not self.OppoDirection then
-		offsetX = outSine(t, fromX, toX, DURATION_FLY_IN);
-		if t >= DURATION_FLY_IN then
-			offsetX = toX;
-			self:Hide()
-			return;
-		end
-		frame:SetPoint(self.anchorPoint, self.relativeTo, self.relativePoint, offsetX, 0);
-	else
-		offsetX = outSine(t, fromX, distance, DURATION_FLY_IN);
-		if t >= DURATION_FLY_IN then
-			offsetX = distance;
-			self:Hide();
-			frame:Hide();
-			return;
-		end
-		frame:SetPoint(self.anchorPoint, self.relativeTo, self.relativePoint, offsetX, 0);
-	end
-
-	self.TimeSinceLastUpdate = self.TimeSinceLastUpdate + elapsed;
-end
 --[[
 Set Graphics Settings to Ultra
 
