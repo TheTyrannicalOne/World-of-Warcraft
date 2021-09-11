@@ -1108,6 +1108,7 @@ BLACKLISTED_RECIPE_IDS = {
 	[173732] = true,	[174979] = true,	[175070] = true,	[175071] = true,
 	[175072] = true,	[175074] = true,	[175076] = true,	[175078] = true,
 	[175085] = true,	[175086] = true,	[177355] = true,	[181870] = true,
+	[284415] = true,
 	-- Shadowlands
 	[338121] = true,	[338123] = true,	[338125] = true,	[346026] = true,
 
@@ -1116,7 +1117,7 @@ BLACKLISTED_RECIPE_IDS = {
 	----ENGINEERING
 	-- ------------------------------------------------------------------------------------
 	[12900] = true,		[30342] = true,		[30343] = true,		[43676] = true,
-	[162208] = true,	[169077] = true,	[177364] = true,	[178242] = true,
+	[169077] = true,	[177364] = true,	[178242] = true,
 	[181422]= true,		[181423] = true,
 	-- Shadowlands
 	[338119] = true, 	[338210] = true,	[338212] = true,	[338213] = true,

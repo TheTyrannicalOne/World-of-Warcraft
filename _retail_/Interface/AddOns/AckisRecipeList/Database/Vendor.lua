@@ -168,10 +168,13 @@ function addon:InitVendor()
 	AddVendor(156822,	L["Mistress Mihaela"],			Z.REVENDRETH,			61.4,	63.8,	"Neutral")
 	AddVendor(158556,	L["Aithlyn"],				Z.ARDENWEALD,			60.2,	35.2,	"Neutral") --Wild Hunt Quartermaster
 	AddVendor(160470,	L["Adjutant Nikos"],			Z.BASTION,			52.2,	47.1,	"Neutral") --Ascended Quartermaster
+	AddVendor(161565,	L["Bragni"],				Z.BORALUS,			56.4,	27.0,	"Neutral")
 	AddVendor(162804,	L["Ve'nari"],				Z.THE_MAW,			46.8,	41.6,	"Neutral")
 	AddVendor(173003,	L["Nalcorn Talsen"],			Z.MALDRAXXUS,			50.6,	53.4,	"Neutral") --Undying Army Quartermaster
 	AddVendor(173705,	L["Archivist Janeera"],			Z.REVENDRETH,			73.0,	52.0,	"Neutral") --Avowed Quartermaster
 	AddVendor(174914,	L["Elwyn"],				Z.ARDENWEALD,			59.4,	33.0,	"Neutral") --Renown Quartermaster in Ardenweald
+	AddVendor(178257,	L["Archivist Roh-Suir"],		Z.KORTHIA,			62.8,	22.6,	"Neutral")
+	AddVendor(179321,	L["Duchess Mynx"],			Z.KORTHIA,			63.4,	23.4,	"Neutral")
 
 	self.InitVendor = nil
 end

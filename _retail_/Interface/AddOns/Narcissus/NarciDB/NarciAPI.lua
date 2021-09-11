@@ -144,12 +144,12 @@ end
 
 NarciAPI.GetSlotIDByInvType = GetSlotIDByInvType;
 
---[[
-function NarciAPI_GetSlotLocalizedName(slotID)
+
+local function GetSlotNameAndTexture(slotID)
     return SlotIDtoName[slotID][2], SlotIDtoName[slotID][4]
 end
---]]
 
+NarciAPI.GetSlotNameAndTexture = GetSlotNameAndTexture;
 Narci.SlotIDtoName = SlotIDtoName;
 -----------------------------------------------------
 
@@ -1512,14 +1512,12 @@ end
 --]]
 
 -----Language Adaptor-----
-local function LanguageDetector(string)
-	local str = string
+local function LanguageDetector(str)
 	local len = strlen(str)
 	local i = 1
 	while i <= len do
 		local c = string.byte(str, i)
 		local shift = 1
-		--print(c)
 		if (c > 0 and c <= 127)then
 			shift = 1
 		elseif c == 195 then
@@ -1619,11 +1617,11 @@ local function NarciAPI_SmartFontType(fontString)
 end
 
 local function SmartSetName(fontString, str)
-    fontString:SetText(str);
 	local language = LanguageDetector(str);
     if language and NormalFont12[language] then
 		fontString:SetFont(NormalFont12[language][1], NormalFont12[language][2]);
 	end
+    fontString:SetText(str);
 end
 
 NarciAPI.SmartFontType = NarciAPI_SmartFontType;
@@ -3283,6 +3281,11 @@ function NarciClipboardMixin:ShowClipboard()
     self.Tooltip:SetAlpha(0);
 end
 
+function NarciClipboardMixin:HasFocus()
+    return self.EditBox.hasFocus;
+end
+
+
 function NarciClipboardMixin:ReAnchorTooltipToObject(object)
     if object then
         self.Tooltip:ClearAllPoints();
@@ -3295,6 +3298,16 @@ NarciNonEditableEditBoxMixin = {};
 
 function NarciNonEditableEditBoxMixin:OnLoad()
 
+end
+
+function NarciNonEditableEditBoxMixin:OnEditFocusGained()
+    self.hasFocus = true;
+    self:SelectText();
+end
+
+function NarciNonEditableEditBoxMixin:OnEditFocusLost()
+    self.hasFocus = nil;
+    self:Quit();
 end
 
 function NarciNonEditableEditBoxMixin:SelectText()
@@ -3320,7 +3333,7 @@ function NarciNonEditableEditBoxMixin:OnTextChanged(isUserInput)
 end
 
 function NarciNonEditableEditBoxMixin:OnKeyDown(key, down)
-    local keys = CreateKeyChordString(key);
+    local keys = CreateKeyChordStringUsingMetaKeyState(key);
     if keys == "CTRL-C" or key == "COMMAND-C" then
         self.hasCopied = true;
         After(0, function()

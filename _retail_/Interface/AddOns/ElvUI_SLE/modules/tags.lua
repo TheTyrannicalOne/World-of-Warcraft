@@ -68,18 +68,14 @@ end
 
 E:AddTag('absorbs:sl-short', 'UNIT_ABSORB_AMOUNT_CHANGED', function(unit)
 	local absorb = UnitGetTotalAbsorbs(unit) or 0
-	if absorb == 0 then
-		return 0
-	else
+	if absorb > 0 then
 		return E:ShortValue(absorb)
 	end
 end)
 
 E:AddTag('absorbs:sl-full', 'UNIT_ABSORB_AMOUNT_CHANGED', function(unit)
 	local absorb = UnitGetTotalAbsorbs(unit) or 0
-	if absorb == 0 then
-		return 0
-	else
+	if absorb > 0 then
 		return absorb
 	end
 end)
@@ -107,13 +103,15 @@ end)
 
 for textFormat in pairs(E.GetFormattedTextStyles) do
 	local tagTextFormat = strlower(gsub(textFormat, '_', '-'))
+
 	E:AddTag(format('mana:%s:healeronly', tagTextFormat), 'UNIT_POWER_FREQUENT UNIT_MAXPOWER UNIT_DISPLAYPOWER GROUP_ROSTER_UPDATE', function(unit)
 		local role = UnitGroupRolesAssigned(unit)
 		if role ~= 'HEALER' then return end
 
-		local min = UnitPower(unit, SPELL_POWER_MANA)
-		if min ~= 0 and tagTextFormat ~= 'deficit' then
-			return E:GetFormattedText(textFormat, min, UnitPowerMax(unit, SPELL_POWER_MANA))
+		local min, max = UnitPower(unit, SPELL_POWER_MANA), UnitPowerMax(unit, SPELL_POWER_MANA)
+
+		if min ~= 0 and min ~= max and tagTextFormat ~= 'deficit' then
+			return E:GetFormattedText(textFormat, min, max)
 		end
 	end)
 end

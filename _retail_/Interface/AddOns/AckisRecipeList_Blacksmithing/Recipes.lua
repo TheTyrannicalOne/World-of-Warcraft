@@ -2016,6 +2016,41 @@ function module:InitializeRecipes()
 	recipe:AddFilters(F.TANK)
 	recipe:AddRepVendor(FAC.CENARION_CIRCLE, REP.FRIENDLY, 15176)
 
+	-- Relic of the Past I -- 330134
+	recipe = AddRecipe(330134, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddTrainer(2998, 4258, 4596, 5511, 11146, 16669, 45548, 85917, 86048, 92183, 106655)
+
+	-- Relic of the Past II -- 330140
+	recipe = AddRecipe(330140, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddTrainer(2998, 4258, 4596, 5511, 11146, 16669, 45548, 85917, 86048, 92183, 106655)
+
+	-- Relic of the Past III -- 330141
+	recipe = AddRecipe(330141, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddTrainer(2998, 4258, 4596, 5511, 11146, 16669, 45548, 85917, 86048, 92183, 106655)
+
+	-- Relic of the Past IV -- 330142
+	recipe = AddRecipe(330142, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddTrainer(2998, 4258, 4596, 5511, 11146, 16669, 45548, 85917, 86048, 92183, 106655)
+
+	-- Relic of the Past V -- 330143
+	recipe = AddRecipe(330143, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddTrainer(2998, 4258, 4596, 5511, 11146, 16669, 45548, 85917, 86048, 92183, 106655)
+
 	-- ----------------------------------------------------------------------------
 	-- The Burning Crusade.
 	-- ----------------------------------------------------------------------------
@@ -3119,6 +3154,41 @@ function module:InitializeRecipes()
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddWorldDrop(Z.SUNWELL_PLATEAU)
 
+	-- Relic of the Past I -- 330144
+	recipe = AddRecipe(330144, V.TBC, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddTrainer(20124, 20125, 33609, 33631, 33675)
+
+	-- Relic of the Past II -- 330145
+	recipe = AddRecipe(330145, V.TBC, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddTrainer(20124, 20125, 33609, 33631, 33675)
+
+	-- Relic of the Past III -- 330146
+	recipe = AddRecipe(330146, V.TBC, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddTrainer(20124, 20125, 33609, 33631, 33675)
+
+	-- Relic of the Past IV -- 330147
+	recipe = AddRecipe(330147, V.TBC, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddTrainer(20124, 20125, 33609, 33631, 33675)
+
+	-- Relic of the Past V -- 330148
+	recipe = AddRecipe(330148, V.TBC, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddTrainer(20124, 20125, 33609, 33631, 33675)
+
 	-- ----------------------------------------------------------------------------
 	-- Wrath of the Lich King.
 	-- ----------------------------------------------------------------------------
@@ -4168,6 +4238,41 @@ function module:InitializeRecipes()
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER, F.TANK)
 	recipe:AddRepVendor(FAC.THE_ASHEN_VERDICT, REP.HONORED, 37687)
 
+	-- Relic of the Past I -- 330149
+	recipe = AddRecipe(330149, V.WOTLK, Q.COMMON)
+	recipe:SetSkillLevels(15, 15, 25, 30, 35)
+	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddTrainer(28694, 29505, 29506)
+
+	-- Relic of the Past II -- 330150
+	recipe = AddRecipe(330150, V.WOTLK, Q.COMMON)
+	recipe:SetSkillLevels(30, 30, 40, 45, 50)
+	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddTrainer(28694, 29505, 29506)
+
+	-- Relic of the Past III -- 330151
+	recipe = AddRecipe(330151, V.WOTLK, Q.COMMON)
+	recipe:SetSkillLevels(45, 45, 55, 60, 65)
+	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddTrainer(28694, 29505, 29506)
+
+	-- Relic of the Past IV -- 330152
+	recipe = AddRecipe(330152, V.WOTLK, Q.COMMON)
+	recipe:SetSkillLevels(60, 60, 70, 75, 80)
+	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddTrainer(28694, 29505, 29506)
+
+	-- Relic of the Past V -- 330153
+	recipe = AddRecipe(330153, V.WOTLK, Q.COMMON)
+	recipe:SetSkillLevels(75, 75, 85, 90, 95)
+	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddTrainer(28694, 29505, 29506)
+
 	-- ----------------------------------------------------------------------------
 	-- Cataclysm.
 	-- ----------------------------------------------------------------------------
@@ -4897,6 +5002,41 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("BLACKSMITHING_WRIST")
 	recipe:AddFilters(F.DPS, F.TANK)
 	recipe:AddWorldDrop(Z.DRAGON_SOUL)
+
+	-- Relic of the Past I -- 330154
+	recipe = AddRecipe(330154, V.CATA, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddTrainer(2998, 4258, 4596, 5511, 11146, 16669, 45548)
+
+	-- Relic of the Past II -- 330155
+	recipe = AddRecipe(330155, V.CATA, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddTrainer(2998, 4258, 4596, 5511, 11146, 16669, 45548)
+
+	-- Relic of the Past III -- 330156
+	recipe = AddRecipe(330156, V.CATA, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddTrainer(2998, 4258, 4596, 5511, 11146, 16669, 45548)
+
+	-- Relic of the Past IV -- 330157
+	recipe = AddRecipe(330157, V.CATA, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddTrainer(2998, 4258, 4596, 5511, 11146, 16669, 45548)
+
+	-- Relic of the Past V -- 330158
+	recipe = AddRecipe(330158, V.CATA, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddTrainer(2998, 4258, 4596, 5511, 11146, 16669, 45548)
 
 	-- ----------------------------------------------------------------------------
 	-- Mists of Pandaria.
@@ -6242,6 +6382,41 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
 	recipe:AddDiscovery("DISCOVERY_BS_INGOT_PANDARIA")
 
+	-- Relic of the Past I -- 330159
+	recipe = AddRecipe(330159, V.MOP, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddMixed(64058, 64085)
+
+	-- Relic of the Past II -- 330160
+	recipe = AddRecipe(330160, V.MOP, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddMixed(64058, 64085)
+
+	-- Relic of the Past III -- 330161
+	recipe = AddRecipe(330161, V.MOP, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddMixed(64058, 64085)
+
+	-- Relic of the Past IV -- 330162
+	recipe = AddRecipe(330162, V.MOP, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddMixed(64058, 64085)
+
+	-- Relic of the Past V -- 330163
+	recipe = AddRecipe(330163, V.MOP, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddMixed(64058, 64085)
+
 	-- ----------------------------------------------------------------------------
 	-- Warlords of Draenor.
 	-- ----------------------------------------------------------------------------
@@ -6452,6 +6627,41 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(108257, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_CREATED_ITEM")
 	recipe:AddVendor(90894, 91030)
+
+	-- Relic of the Past I -- 330164
+	recipe = AddRecipe(330164, V.WOD, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddCustom("DEFAULT_RECIPE")
+
+	-- Relic of the Past II -- 330165
+	recipe = AddRecipe(330165, V.WOD, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddCustom("DEFAULT_RECIPE")
+
+	-- Relic of the Past III -- 330166
+	recipe = AddRecipe(330166, V.WOD, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddCustom("DEFAULT_RECIPE")
+
+	-- Relic of the Past IV -- 330167
+	recipe = AddRecipe(330167, V.WOD, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddCustom("DEFAULT_RECIPE")
+
+	-- Relic of the Past V -- 330168
+	recipe = AddRecipe(330168, V.WOD, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddCustom("DEFAULT_RECIPE")
 
 	-- ----------------------------------------------------------------------------
 	-- Legion.
@@ -6974,6 +7184,41 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("BLACKSMITHING_CHEST")
 	recipe:AddMobDrop(123371)
 
+	-- Relic of the Past I -- 330169
+	recipe = AddRecipe(330169, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddCustom("DEFAULT_RECIPE")
+
+	-- Relic of the Past II -- 330170
+	recipe = AddRecipe(330170, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddCustom("DEFAULT_RECIPE")
+
+	-- Relic of the Past III -- 330171
+	recipe = AddRecipe(330171, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddCustom("DEFAULT_RECIPE")
+
+	-- Relic of the Past IV -- 330172
+	recipe = AddRecipe(330172, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddCustom("DEFAULT_RECIPE")
+
+	-- Relic of the Past V -- 330173
+	recipe = AddRecipe(330173, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddCustom("DEFAULT_RECIPE")
+
 	-- ----------------------------------------------------------------------------
 	-- Battle for Azeroth.
 	-- ----------------------------------------------------------------------------
@@ -7059,9 +7304,10 @@ function module:InitializeRecipes()
 	-- Honorable Combatant's Spellblade -- 253144
 	recipe = AddRecipe(253144, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 120, 132, 145)
-	recipe:SetRecipeItem(162669, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162669, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(162652, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_DAGGER")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Khaz'gorian Smithing Hammer -- 253145
@@ -7075,9 +7321,10 @@ function module:InitializeRecipes()
 	-- Honorable Combatant's Spellblade -- 253149
 	recipe = AddRecipe(253149, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 110, 122, 135)
-	recipe:SetRecipeItem(162669, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162668, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(162652, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_DAGGER")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Stormsteel Dagger -- 253156
@@ -7227,11 +7474,9 @@ function module:InitializeRecipes()
 	-- Honorable Combatant's Spellblade -- 256786
 	recipe = AddRecipe(256786, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(75, 75, 85, 90, 95)
-	recipe:SetRecipeItem(162669, "BIND_ON_EQUIP")
 	recipe:SetCraftedItem(162652, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_DAGGER")
 	recipe:AddTrainer(127112, 133536, 153817, 154321)
-	recipe:AddVendor(142564)
 
 	-- Monelite Reinforced Chassis -- 265937
 	recipe = AddRecipe(265937, V.BFA, Q.COMMON)
@@ -7254,21 +7499,23 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162266, "BIND_ON_EQUIP")
 	recipe:SetCraftedItem(159861, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddTrainer(127112, 133536, 153817, 154321)
 	recipe:AddVendor(142564)
 
 	-- Honorable Combatant's Plate Gauntlets -- 269422
 	recipe = AddRecipe(269422, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 110, 122, 135)
-	recipe:SetRecipeItem(162266, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162265, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159861, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Plate Gauntlets -- 269423
 	recipe = AddRecipe(269423, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 120, 132, 145)
-	recipe:SetRecipeItem(162266, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162266, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159861, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
 	recipe:AddVendor(142552, 142564)
@@ -7283,17 +7530,19 @@ function module:InitializeRecipes()
 	-- Honorable Combatant's Plate Boots -- 269425
 	recipe = AddRecipe(269425, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(95, 95, 120, 135, 150)
-	recipe:SetRecipeItem(162263, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162262, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159860, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_FEET")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Plate Boots -- 269426
 	recipe = AddRecipe(269426, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(95, 95, 130, 140, 150)
-	recipe:SetRecipeItem(162263, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162263, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159860, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_FEET")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Plate Greaves -- 269444
@@ -7306,17 +7555,19 @@ function module:InitializeRecipes()
 	-- Honorable Combatant's Plate Greaves -- 269446
 	recipe = AddRecipe(269446, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 125, 137, 150)
-	recipe:SetRecipeItem(162268, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162267, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159863, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Plate Greaves -- 269447
 	recipe = AddRecipe(269447, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 135, 142, 150)
-	recipe:SetRecipeItem(162268, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162268, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159863, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Plate Waistguard -- 269448
@@ -7329,17 +7580,19 @@ function module:InitializeRecipes()
 	-- Honorable Combatant's Plate Waistguard -- 269449
 	recipe = AddRecipe(269449, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(115, 115, 120, 135, 150)
-	recipe:SetRecipeItem(162270, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162269, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159865, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_WAIST")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Plate Waistguard -- 269450
 	recipe = AddRecipe(269450, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(115, 115, 130, 140, 150)
-	recipe:SetRecipeItem(162270, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162270, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159865, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_WAIST")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Plate Armguards -- 269451
@@ -7352,17 +7605,19 @@ function module:InitializeRecipes()
 	-- Honorable Combatant's Plate Armguards -- 269452
 	recipe = AddRecipe(269452, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(75, 75, 110, 122, 135)
-	recipe:SetRecipeItem(162272, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162271, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159866, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_WRIST")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Plate Armguards -- 269453
 	recipe = AddRecipe(269453, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(75, 75, 120, 132, 145)
-	recipe:SetRecipeItem(162272, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162272, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159866, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_WRIST")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Shield -- 269458
@@ -7375,15 +7630,19 @@ function module:InitializeRecipes()
 	-- Honorable Combatant's Shield -- 269459
 	recipe = AddRecipe(269459, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(95, 95, 120, 135, 150)
+	recipe:SetRecipeItem(162273, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159851, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_SHIELD")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Shield -- 269460
 	recipe = AddRecipe(269460, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(95, 95, 130, 140, 150)
+	recipe:SetRecipeItem(162274, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159851, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_SHIELD")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Cutlass -- 269464
@@ -7396,17 +7655,19 @@ function module:InitializeRecipes()
 	-- Honorable Combatant's Cutlass -- 269465
 	recipe = AddRecipe(269465, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(75, 75, 110, 122, 135)
-	recipe:SetRecipeItem(162278, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162277, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159853, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_ONE_HAND_SWORD")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Cutlass -- 269466
 	recipe = AddRecipe(269466, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(75, 75, 120, 132, 145)
-	recipe:SetRecipeItem(162278, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162278, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159853, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_ONE_HAND_SWORD")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Deckpounder -- 269470
@@ -7419,17 +7680,19 @@ function module:InitializeRecipes()
 	-- Honorable Combatant's Deckpounder -- 269471
 	recipe = AddRecipe(269471, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 125, 137, 150)
-	recipe:SetRecipeItem(162280, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162279, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159855, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_TWO_HAND_MACE")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Deckpounder -- 269472
 	recipe = AddRecipe(269472, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 135, 142, 150)
-	recipe:SetRecipeItem(162280, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162280, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159855, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_TWO_HAND_MACE")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Shanker -- 269476
@@ -7442,17 +7705,19 @@ function module:InitializeRecipes()
 	-- Honorable Combatant's Shanker -- 269477
 	recipe = AddRecipe(269477, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(75, 75, 110, 122, 135)
-	recipe:SetRecipeItem(162282, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162281, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159857, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_DAGGER")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Shanker -- 269478
 	recipe = AddRecipe(269478, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(75, 75, 120, 132, 145)
-	recipe:SetRecipeItem(162282, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162282, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159857, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_DAGGER")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Polearm -- 269479
@@ -7465,17 +7730,19 @@ function module:InitializeRecipes()
 	-- Honorable Combatant's Polearm -- 269480
 	recipe = AddRecipe(269480, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 125, 137, 150)
-	recipe:SetRecipeItem(162284, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162283, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159858, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_POLEARM")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Polearm -- 269481
 	recipe = AddRecipe(269481, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 135, 142, 150)
-	recipe:SetRecipeItem(162284, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162284, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159858, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_POLEARM")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(142552, 142564)
 
 	-- Stormsteel Saber -- 278131
@@ -7538,17 +7805,19 @@ function module:InitializeRecipes()
 	-- Sinister Combatant's Polearm -- 282860
 	recipe = AddRecipe(282860, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 140, 145, 150)
-	recipe:SetRecipeItem(165299, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(165298, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164652, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_POLEARM")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Polearm -- 282861
 	recipe = AddRecipe(282861, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 145, 147, 150)
-	recipe:SetRecipeItem(165299, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(165299, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164652, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_POLEARM")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Shanker -- 282862
@@ -7561,17 +7830,19 @@ function module:InitializeRecipes()
 	-- Sinister Combatant's Shanker -- 282863
 	recipe = AddRecipe(282863, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 140, 145, 150)
-	recipe:SetRecipeItem(165297, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(165296, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164651, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_DAGGER")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Shanker -- 282864
 	recipe = AddRecipe(282864, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 145, 147, 150)
-	recipe:SetRecipeItem(165297, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(165297, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164651, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_DAGGER")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Spellblade -- 282865
@@ -7584,17 +7855,19 @@ function module:InitializeRecipes()
 	-- Sinister Combatant's Spellblade -- 282866
 	recipe = AddRecipe(282866, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 140, 145, 150)
-	recipe:SetRecipeItem(165295, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(165294, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164719, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_DAGGER")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Spellblade -- 282867
 	recipe = AddRecipe(282867, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 145, 147, 150)
-	recipe:SetRecipeItem(165295, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(165295, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164719, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_DAGGER")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Deckpounder -- 282868
@@ -7607,17 +7880,19 @@ function module:InitializeRecipes()
 	-- Sinister Combatant's Deckpounder -- 282869
 	recipe = AddRecipe(282869, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 140, 145, 150)
-	recipe:SetRecipeItem(165293, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(165292, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164650, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_TWO_HAND_MACE")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Deckpounder -- 282870
 	recipe = AddRecipe(282870, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 145, 147, 150)
-	recipe:SetRecipeItem(165293, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(165293, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164650, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_TWO_HAND_MACE")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Cutlass -- 282871
@@ -7630,17 +7905,19 @@ function module:InitializeRecipes()
 	-- Sinister Combatant's Cutlass -- 282872
 	recipe = AddRecipe(282872, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 140, 145, 150)
-	recipe:SetRecipeItem(165291, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(165290, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164649, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_ONE_HAND_SWORD")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Cutlass -- 282873
 	recipe = AddRecipe(282873, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 145, 147, 150)
-	recipe:SetRecipeItem(165291, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(165291, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164649, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_ONE_HAND_SWORD")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Shield -- 282876
@@ -7653,15 +7930,19 @@ function module:InitializeRecipes()
 	-- Sinister Combatant's Shield -- 282878
 	recipe = AddRecipe(282878, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 140, 145, 150)
+	recipe:SetRecipeItem(165284, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164648, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_SHIELD")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Shield -- 282879
 	recipe = AddRecipe(282879, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 145, 147, 150)
+	recipe:SetRecipeItem(165285, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164648, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_SHIELD")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Plate Armguards -- 282889
@@ -7674,17 +7955,19 @@ function module:InitializeRecipes()
 	-- Sinister Combatant's Plate Armguards -- 283237
 	recipe = AddRecipe(283237, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 140, 145, 150)
-	recipe:SetRecipeItem(165289, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(165288, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164657, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_WRIST")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Plate Armguards -- 283238
 	recipe = AddRecipe(283238, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 145, 147, 150)
-	recipe:SetRecipeItem(165289, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(165289, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164657, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_WRIST")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Plate Waistguard -- 283239
@@ -7697,17 +7980,19 @@ function module:InitializeRecipes()
 	-- Sinister Combatant's Plate Waistguard -- 283240
 	recipe = AddRecipe(283240, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 140, 145, 150)
-	recipe:SetRecipeItem(165287, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(165286, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164656, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_WAIST")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Plate Waistguard -- 283241
 	recipe = AddRecipe(283241, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 145, 147, 150)
-	recipe:SetRecipeItem(165287, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(165287, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164656, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_WAIST")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Plate Greaves -- 283242
@@ -7720,17 +8005,19 @@ function module:InitializeRecipes()
 	-- Sinister Combatant's Plate Greaves -- 283243
 	recipe = AddRecipe(283243, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 140, 145, 150)
-	recipe:SetRecipeItem(165283, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(165282, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164655, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Plate Greaves -- 283244
 	recipe = AddRecipe(283244, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 145, 147, 150)
-	recipe:SetRecipeItem(165283, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(165283, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164655, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Plate Gauntlets -- 283245
@@ -7743,17 +8030,19 @@ function module:InitializeRecipes()
 	-- Sinister Combatant's Plate Gauntlets -- 283247
 	recipe = AddRecipe(283247, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 140, 145, 150)
-	recipe:SetRecipeItem(165281, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(165280, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164654, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Plate Gauntlets -- 283248
 	recipe = AddRecipe(283248, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 145, 147, 150)
-	recipe:SetRecipeItem(165281, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(165281, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164654, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Plate Boots -- 283249
@@ -7766,17 +8055,19 @@ function module:InitializeRecipes()
 	-- Sinister Combatant's Plate Boots -- 283250
 	recipe = AddRecipe(283250, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 140, 145, 150)
-	recipe:SetRecipeItem(165279, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(165278, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164653, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_FEET")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Plate Boots -- 283251
 	recipe = AddRecipe(283251, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(105, 105, 145, 147, 150)
-	recipe:SetRecipeItem(165279, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(165279, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164653, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_FEET")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Enhanced Stormsteel Girdle -- 285081
@@ -8282,7 +8573,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170946, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170290, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_POLEARM")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.DPS)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Polearm -- 305845
 	recipe = AddRecipe(305845, V.BFA, Q.COMMON)
@@ -8290,7 +8582,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170947, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170290, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_POLEARM")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.DPS)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Shanker -- 305846
 	recipe = AddRecipe(305846, V.BFA, Q.COMMON)
@@ -8298,7 +8591,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170948, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170291, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_DAGGER")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.DPS)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Shanker -- 305847
 	recipe = AddRecipe(305847, V.BFA, Q.COMMON)
@@ -8306,7 +8600,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170949, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170291, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_DAGGER")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.DPS)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Spellblade -- 305848
 	recipe = AddRecipe(305848, V.BFA, Q.COMMON)
@@ -8314,7 +8609,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170950, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170292, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_DAGGER")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Spellblade -- 305849
 	recipe = AddRecipe(305849, V.BFA, Q.COMMON)
@@ -8322,7 +8618,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170951, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170292, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_DAGGER")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Deckpounder -- 305850
 	recipe = AddRecipe(305850, V.BFA, Q.COMMON)
@@ -8330,7 +8627,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170952, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170293, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_TWO_HAND_MACE")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.DPS)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Deckpounder -- 305851
 	recipe = AddRecipe(305851, V.BFA, Q.COMMON)
@@ -8338,7 +8636,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170953, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170293, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_TWO_HAND_MACE")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.DPS)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Cutlass -- 305852
 	recipe = AddRecipe(305852, V.BFA, Q.COMMON)
@@ -8346,7 +8645,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170954, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170294, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_ONE_HAND_SWORD")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.DPS)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Cutlass -- 305853
 	recipe = AddRecipe(305853, V.BFA, Q.COMMON)
@@ -8354,7 +8654,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170955, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170294, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_ONE_HAND_SWORD")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.DPS)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Plate Armguards -- 306078
 	recipe = AddRecipe(306078, V.BFA, Q.COMMON)
@@ -8362,7 +8663,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170403, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170289, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_WRIST")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Plate Armguards -- 306079
 	recipe = AddRecipe(306079, V.BFA, Q.COMMON)
@@ -8370,7 +8672,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170402, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170289, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_WRIST")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Plate Waistguard -- 306080
 	recipe = AddRecipe(306080, V.BFA, Q.COMMON)
@@ -8378,7 +8681,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170393, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170288, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_WAIST")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Plate Waistguard -- 306081
 	recipe = AddRecipe(306081, V.BFA, Q.COMMON)
@@ -8386,7 +8690,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170392, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170288, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_WAIST")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Plate Greaves -- 306082
 	recipe = AddRecipe(306082, V.BFA, Q.COMMON)
@@ -8394,7 +8699,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170399, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170287, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Plate Greaves -- 306083
 	recipe = AddRecipe(306083, V.BFA, Q.COMMON)
@@ -8402,7 +8708,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170398, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170287, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_LEGS")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Plate Gauntlets -- 306084
 	recipe = AddRecipe(306084, V.BFA, Q.COMMON)
@@ -8410,7 +8717,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170397, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170286, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Plate Gauntlets -- 306085
 	recipe = AddRecipe(306085, V.BFA, Q.COMMON)
@@ -8418,7 +8726,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170396, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170286, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_HANDS")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Plate Boots -- 306086
 	recipe = AddRecipe(306086, V.BFA, Q.COMMON)
@@ -8426,7 +8735,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170395, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170285, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_FEET")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Plate Boots -- 306087
 	recipe = AddRecipe(306087, V.BFA, Q.COMMON)
@@ -8434,7 +8744,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170394, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170285, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_FEET")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Shield -- 306310
 	recipe = AddRecipe(306310, V.BFA, Q.COMMON)
@@ -8442,7 +8753,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170401, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170364, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_SHIELD")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Shield -- 306312
 	recipe = AddRecipe(306312, V.BFA, Q.COMMON)
@@ -8450,7 +8762,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170400, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170364, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_SHIELD")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Void Focus -- 307221
 	recipe = AddRecipe(307221, V.BFA, Q.COMMON)
@@ -8459,6 +8772,41 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(171320, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_CREATED_ITEM")
 	recipe:AddMobDrop(153910, 162245)
+
+	-- Relic of the Past I -- 330174
+	recipe = AddRecipe(330174, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddTrainer(127112, 133536)
+
+	-- Relic of the Past II -- 330175
+	recipe = AddRecipe(330175, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddTrainer(127112, 133536)
+
+	-- Relic of the Past III -- 330176
+	recipe = AddRecipe(330176, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddTrainer(127112, 133536)
+
+	-- Relic of the Past IV -- 330177
+	recipe = AddRecipe(330177, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddTrainer(127112, 133536)
+
+	-- Relic of the Past V -- 330178
+	recipe = AddRecipe(330178, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
+	recipe:AddTrainer(127112, 133536)
 
 	-- ----------------------------------------------------------------------------
 	-- Shadowlands.
@@ -8752,216 +9100,6 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("BLACKSMITHING_WRIST")
 	recipe:AddTrainer(156666)
 
-	-- Relic of the Past I -- 330134
-	recipe = AddRecipe(330134, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(2998, 4258, 4596, 5511, 11146, 16669, 45548, 85917, 86048, 92183, 106655)
-
-	-- Relic of the Past II -- 330140
-	recipe = AddRecipe(330140, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(2998, 4258, 4596, 5511, 11146, 16669, 45548, 85917, 86048, 92183, 106655)
-
-	-- Relic of the Past III -- 330141
-	recipe = AddRecipe(330141, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(2998, 4258, 4596, 5511, 11146, 16669, 45548, 85917, 86048, 92183, 106655)
-
-	-- Relic of the Past IV -- 330142
-	recipe = AddRecipe(330142, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(2998, 4258, 4596, 5511, 11146, 16669, 45548, 85917, 86048, 92183, 106655)
-
-	-- Relic of the Past V -- 330143
-	recipe = AddRecipe(330143, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(2998, 4258, 4596, 5511, 11146, 16669, 45548, 85917, 86048, 92183, 106655)
-
-	-- Relic of the Past I -- 330144
-	recipe = AddRecipe(330144, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(20124, 20125, 33609, 33631, 33675)
-
-	-- Relic of the Past II -- 330145
-	recipe = AddRecipe(330145, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(20124, 20125, 33609, 33631, 33675)
-
-	-- Relic of the Past III -- 330146
-	recipe = AddRecipe(330146, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(20124, 20125, 33609, 33631, 33675)
-
-	-- Relic of the Past IV -- 330147
-	recipe = AddRecipe(330147, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(20124, 20125, 33609, 33631, 33675)
-
-	-- Relic of the Past V -- 330148
-	recipe = AddRecipe(330148, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(20124, 20125, 33609, 33631, 33675)
-
-	-- Relic of the Past I -- 330149
-	recipe = AddRecipe(330149, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(15, 15, 25, 30, 35)
-	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(28694, 29505, 29506)
-
-	-- Relic of the Past II -- 330150
-	recipe = AddRecipe(330150, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(30, 30, 40, 45, 50)
-	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(28694, 29505, 29506)
-
-	-- Relic of the Past III -- 330151
-	recipe = AddRecipe(330151, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(45, 45, 55, 60, 65)
-	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(28694, 29505, 29506)
-
-	-- Relic of the Past IV -- 330152
-	recipe = AddRecipe(330152, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(60, 60, 70, 75, 80)
-	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(28694, 29505, 29506)
-
-	-- Relic of the Past V -- 330153
-	recipe = AddRecipe(330153, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(75, 75, 85, 90, 95)
-	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(28694, 29505, 29506)
-
-	-- Relic of the Past I -- 330154
-	recipe = AddRecipe(330154, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(2998, 4258, 4596, 5511, 11146, 16669, 45548)
-
-	-- Relic of the Past II -- 330155
-	recipe = AddRecipe(330155, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(2998, 4258, 4596, 5511, 11146, 16669, 45548)
-
-	-- Relic of the Past III -- 330156
-	recipe = AddRecipe(330156, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(2998, 4258, 4596, 5511, 11146, 16669, 45548)
-
-	-- Relic of the Past IV -- 330157
-	recipe = AddRecipe(330157, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(2998, 4258, 4596, 5511, 11146, 16669, 45548)
-
-	-- Relic of the Past V -- 330158
-	recipe = AddRecipe(330158, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(2998, 4258, 4596, 5511, 11146, 16669, 45548)
-
-	-- Relic of the Past I -- 330159
-	recipe = AddRecipe(330159, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddMixed(64058, 64085)
-
-	-- Relic of the Past II -- 330160
-	recipe = AddRecipe(330160, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddMixed(64058, 64085)
-
-	-- Relic of the Past III -- 330161
-	recipe = AddRecipe(330161, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddMixed(64058, 64085)
-
-	-- Relic of the Past IV -- 330162
-	recipe = AddRecipe(330162, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddMixed(64058, 64085)
-
-	-- Relic of the Past V -- 330163
-	recipe = AddRecipe(330163, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddMixed(64058, 64085)
-
-	-- Relic of the Past I -- 330174
-	recipe = AddRecipe(330174, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(127112, 133536)
-
-	-- Relic of the Past II -- 330175
-	recipe = AddRecipe(330175, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(127112, 133536)
-
-	-- Relic of the Past III -- 330176
-	recipe = AddRecipe(330176, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(127112, 133536)
-
-	-- Relic of the Past IV -- 330177
-	recipe = AddRecipe(330177, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(127112, 133536)
-
-	-- Relic of the Past V -- 330178
-	recipe = AddRecipe(330178, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("BLACKSMITHING_MATERIALS")
-	recipe:AddTrainer(127112, 133536)
-
 	-- Shadowghast Armguards -- 332006
 	recipe = AddRecipe(332006, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(100, 100, 100, 100, 100)
@@ -9145,12 +9283,35 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("BLACKSMITHING_CREATED_ITEM")
 	recipe:AddRepVendor(FAC.THE_AVOWED, REP.REVERED, 173705)
 
+	-- Crafter's Mark III -- 343186
+	recipe = AddRecipe(343186, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 190, 192, 195)
+	recipe:SetRecipeItem(183868, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(173383, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_CREATED_ITEM")
+	recipe:AddRepVendor(FAC.DEATHS_ADVANCE, REP.HONORED, 179321)
+
+	-- Crafter's Mark of the Chained Isle -- 343188
+	recipe = AddRecipe(343188, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(200, 200, 200, 200, 200)
+	recipe:SetRecipeItem(186470, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(173384, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_CREATED_ITEM")
+	recipe:AddRepVendor(FAC.THE_ARCHIVISTS_CODEX, REP.REVERED, 178257)
+
 	-- Novice Crafter's Mark -- 343662
 	recipe = AddRecipe(343662, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(50, 50, 60, 65, 70)
 	recipe:SetCraftedItem(183942, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_CREATED_ITEM")
 	recipe:AddTrainer(156666)
+
+	-- Vestige of Origins -- 352439
+	recipe = AddRecipe(352439, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 190, 192, 195)
+	recipe:SetCraftedItem(185960, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_CREATED_ITEM")
+	recipe:AddRepVendor(FAC.DEATHS_ADVANCE, REP.HONORED, 179321)
 
 	self.InitializeRecipes = nil
 end

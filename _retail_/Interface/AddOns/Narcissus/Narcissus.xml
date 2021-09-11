@@ -1512,12 +1512,12 @@
 				</Scripts>
 			</Button>
 
-			<Frame name="PhotoModeControllerBar" parentKey="Bar" clipChildren="true">
+			<Frame parentKey="Bar" clipChildren="true">
 				<Size>
 					<AbsDimension x="40" y="130"/>
 				</Size>
 				<Anchors>
-					<Anchor point="LEFT" relativeTo="$parent" relativePoint="CENTER" x="0" y="0"/>
+					<Anchor point="LEFT" relativeKey="$parent" relativePoint="CENTER" x="0" y="0"/>
 				</Anchors>
 				<Layers>
 					<Layer level="BACKGROUND" textureSubLevel="1">
@@ -1525,7 +1525,7 @@
 							<TexCoords left="0.126953125" right="0.177734375" top="0" bottom="0.15234375"/>
 							<Size x="17" y="50"/>
 							<Anchors>
-								<Anchor point="RIGHT" relativeTo="$parent" relativePoint="RIGHT" x="-1" y="0"/>
+								<Anchor point="RIGHT" relativeKey="$parent" relativePoint="RIGHT" x="-1" y="0"/>
 							</Anchors>
 						</Texture>
 
@@ -2256,7 +2256,7 @@
 					<AbsDimension x="380" y="180"/>
 				</Size>
 				<Anchors>
-					<Anchor point="BOTTOMLEFT" relativeTo="UIParent" relativePoint="BOTTOMLEFT" x="0"/>
+					<Anchor point="BOTTOMLEFT" relativeKey="$parent" relativePoint="BOTTOMLEFT" x="0"/>
 				</Anchors>
 				<Layers>		
 					<!--Layer level="ARTWORK" textureSubLevel="2">
@@ -2267,18 +2267,27 @@
 				</Layers>
 				<Scripts>
 					<OnEnter>
-						UIFrameFadeIn(self:GetParent(), 0.2, self:GetParent():GetAlpha(), 1)
+						UIFrameFadeIn(self:GetParent(), 0.2, self:GetParent():GetAlpha(), 1);
 					</OnEnter>
 					<OnLeave>
 						if self:IsMouseOver() then return end;
 						if not Narci_PhotoModeButton.IsOn then
-							PhotoModeControllerBar:SetAlpha(0);
+							self:GetParent().Bar:SetAlpha(0);
 						end
 						Narci_GearTexts:ClearFocus();
 						Narci_GearTexts:HighlightText(0,0);
 						UIFrameFadeOut(self:GetParent(), 0.2, self:GetParent():GetAlpha(), 0);
 					</OnLeave>
 				</Scripts>
+			</Frame>
+
+			<Frame parentKey="MotionBlock" enableMouse="true" hidden="true">
+				<Size>
+					<AbsDimension x="380" y="180"/>
+				</Size>
+				<Anchors>
+					<Anchor point="BOTTOMLEFT" relativeKey="$parent" relativePoint="BOTTOMLEFT" x="0"/>
+				</Anchors>
 			</Frame>	
 		</Frames>
 		<Scripts>
@@ -4009,7 +4018,7 @@
 		</Scripts>
 	</Button>
 
-	<Frame name="Narci_MinimapButtonContainer" parent="UIParent" frameStrata="HIGH">
+	<Frame name="Narci_MinimapButtonContainer" parent="UIParent" frameStrata="LOW">
 		<Size x="8" y="8"/>
 		<Anchors>
 			<Anchor point="CENTER"/>
@@ -4022,7 +4031,7 @@
 		</Scripts>
 	</Frame>
 
-    <Button name="Narci_MinimapButton" parent="Narci_MinimapButtonContainer" enableMouse="true" movable="true" hidden="true" frameStrata="HIGH" frameLevel="62" ignoreParentAlpha="false" clampedToScreen="true" motionScriptsWhileDisabled="false" useParentLevel="false" mixin="NarciMinimapButtonMixin">
+    <Button name="Narci_MinimapButton" parent="Narci_MinimapButtonContainer" enableMouse="true" movable="true" hidden="true" frameStrata="LOW" frameLevel="62" ignoreParentAlpha="false" clampedToScreen="true" motionScriptsWhileDisabled="false" useParentLevel="false" mixin="NarciMinimapButtonMixin">
 		<Size>
 			<AbsDimension x="36" y="36"/>
 		</Size>

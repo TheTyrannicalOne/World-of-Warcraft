@@ -2959,6 +2959,8 @@
 				self:StopMovingOrSizing();
 			</OnDragStop>
 			<OnShow method="OnShow"/>
+			<OnHide method="OnHide"/>
+			<OnEvent method="OnEvent"/>
 		</Scripts>
 	</Frame>
 

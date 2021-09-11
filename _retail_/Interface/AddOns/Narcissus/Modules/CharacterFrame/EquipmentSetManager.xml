@@ -800,7 +800,7 @@
 		</Scripts>
 	</Frame>
 
-	<Button name="Narci_EquipmentSetIconSelector" parent="Narci_Attribute" hidden="true" Alpha="0">
+	<Button name="Narci_EquipmentSetIconSelector" parent="Narci_Attribute" hidden="true" Alpha="0" mixin="NarciEquipmentSetIconSelectorMixin">
 		<!--Overlap item buttons around icon selector, nullify their click events-->
 		<HitRectInsets>
 			<AbsInset left="-60" right="0" top="-24" bottom="-24"/>
@@ -830,11 +830,8 @@
 			</Layer>			
 		</Layers>
 		<Scripts>
-			<OnHide>
-				self:Hide();
-				self:SetAlpha(0);
-				self.Header:SetText(NARCI_ICON_SELECTOR);
-			</OnHide>
+			<OnLoad method="OnLoad"/>
+			<OnHide method="OnHide"/>
 			<OnClick>
 			</OnClick>
 		</Scripts>

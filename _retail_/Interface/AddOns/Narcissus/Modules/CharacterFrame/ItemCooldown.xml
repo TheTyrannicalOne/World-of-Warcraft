@@ -75,7 +75,7 @@
             </Layer>
 		</Layers>
 		<Frames>
-            <Cooldown parentKey="Cooldown" hidden="true" hideCountdownNumbers="false">
+            <Cooldown parentKey="Cooldown" hidden="true" hideCountdownNumbers="false" Alpha="0.5">
                 <Size x="128" y="128"/>
                 <Anchors>
                     <Anchor point="CENTER"/>

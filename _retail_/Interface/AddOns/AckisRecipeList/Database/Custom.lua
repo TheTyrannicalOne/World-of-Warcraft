@@ -65,6 +65,13 @@ function addon:InitCustom()
 	AddCustom("HONEYBACK_HIVE",		Z.STORMSONG_VALLEY)
 	AddCustom("CLOUDWALKERS_COFFER",	Z.BASTION,			61.0, 15.1)
 	AddCustom("PRESENTS")
+	AddCustom("INVASIVE_MAWSHROOM",		Z.KORTHIA)
+	AddCustom("KORTHIA_TREASURES",		Z.KORTHIA)
+	AddCustom("RELIC_CACHE",		Z.KORTHIA)
+	AddCustom("RIFTBOUND_CACHE",		Z.KORTHIA)
+	AddCustom("PROF_ARCH_HIGH",		Z.HIGHMOUNTAIN)
+	AddCustom("PROF_FISH_AZSU",		Z.AZSUNA)
+	AddCustom("PROF_FISH_SURA",		Z.SURAMAR)
 
 	self.InitCustom = nil
 end

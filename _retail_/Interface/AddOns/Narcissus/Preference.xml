@@ -125,9 +125,9 @@
         </Scripts>
     </Button>
 
-    <Button name="Narci_PreferenceButton" parent="Narci_PhotoModeToolbar" inherits="Narci_RoundButtonTemplate">
+    <Button name="Narci_PreferenceButton" parent="Narci_PhotoModeToolbar" inherits="Narci_RoundButtonTemplate" parentKey="PreferenceToggle">
         <Anchors>
-            <Anchor point="LEFT" relativeTo="PhotoModeControllerBar" relativePoint="RIGHT" x="0"/>
+            <Anchor point="LEFT" relativeKey="$parent.Bar" relativePoint="RIGHT" x="0"/>
         </Anchors>
 		<Size>
 			<AbsDimension x="24" y="24"/>

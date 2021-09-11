@@ -3241,6 +3241,7 @@ local function SummaryButton_OnClick(self)
     AchievementContainer:Hide();
     SummaryFrame:Show();
     SummaryButton:Hide();
+    MainFrame.FeatOfStrengthText:Hide();
 end
 
 
@@ -3404,7 +3405,7 @@ function NarciAchievementGetLinkButtonMixin:OnEnter()
 end
 
 function NarciAchievementGetLinkButtonMixin:OnLeave()
-    if not self:IsMouseOver() then
+    if not self:IsMouseOver() and not self.Clipboard:HasFocus() then
         self.Label:SetTextColor(0.8, 0.8, 0.8);
         self.Icon:SetTexCoord(0, 0.5, 0, 1);
         self.Icon:SetAlpha(0.4);
@@ -3648,6 +3649,19 @@ local function FormatFloatingCard(card, id, name, points, completed, month, day,
 end
 
 
+
+local function RefreshInspection(achievementID)
+    --Refresh inspection card
+    if achievementID then
+        if (InspectionFrame:IsShown()) and (achievementID == InspectionFrame.Card.id) then
+            InspectAchievement(achievementID);
+        end
+    else
+        if (InspectionFrame:IsShown()) and InspectionFrame.Card.id then
+            InspectAchievement(InspectionFrame.Card.id);
+        end
+    end
+end
 --------------------------------------------------------------------
 --Public
 NarciAchivementFrameMixin = {};
@@ -3667,6 +3681,26 @@ function NarciAchivementFrameMixin:OnShow()
         self.pendingUpdate = nil;
         UpdateSummaryFrame();
     end
+    self:RegisterDynamicEvent(true);
+    RefreshInspection();
+end
+
+function NarciAchivementFrameMixin:OnHide()
+    self:RegisterDynamicEvent(false);
+end
+
+function NarciAchivementFrameMixin:RegisterDynamicEvent(state)
+    if state then
+        self:RegisterEvent("CRITERIA_UPDATE");
+        self:RegisterEvent("CRITERIA_COMPLETE");
+    else
+        self:UnregisterEvent("CRITERIA_UPDATE");
+        self:UnregisterEvent("CRITERIA_COMPLETE");
+    end
+end
+
+function NarciAchivementFrameMixin:OnEvent(event)
+    RefreshInspection();
 end
 
 function NarciAchivementFrameMixin:ShowRedMark(visible)
@@ -3986,13 +4020,6 @@ local function UpdateTrackAchievements()
 
     if (InspectionFrame:IsShown()) and (changedAchievementID == InspectionFrame.Card.id) then
         InspectionFrame.Card.trackIcon:SetShown(isTracked);
-    end
-end
-
-local function RefreshInspection(achievementID)
-    --Refresh inspection card
-    if (InspectionFrame:IsShown()) and (achievementID == InspectionFrame.Card.id) then
-        InspectAchievement(achievementID);
     end
 end
 

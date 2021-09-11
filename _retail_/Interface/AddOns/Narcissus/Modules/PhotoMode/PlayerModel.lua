@@ -661,7 +661,7 @@ function WeaponUpdator:GetTargetWeapons(unit)
 	if false and UnitIsUnit(unit, "player") then
 		WeaponUpdator:GetPlayerWeapons(model);
 	else
-		if model and model.TryOn and CanInspect(unit) then
+		if model and CanInspect(unit) then
 			self:SetListener(true, unit);
 			NotifyInspect(unit);
 		end
@@ -757,6 +757,7 @@ PMAI:Hide();
 PMAI.t = 0
 PMAI.faceTime = 0;
 PMAI.trigger = true;
+PMAI.init = true;
 PMAI.useAlternateEntrance = true;		--Enable entrance visual
 
 function Narci:SetUseEntranceVisual()
@@ -810,17 +811,12 @@ local function InitializeModel(model)
 	end)
 end
 
-
-local hasSetLight = false;
-
 local _, _, classID = UnitClass("player");
-local EntranceAnimation = Narci.ClassEntranceVisuals[classID];	
+local EntranceAnimation = Narci.ClassEntranceVisuals[classID];
 PMAI:SetScript("OnShow", function(self)		--PlayerModelAnimIn
 	local model = PrimaryPlayerModel;
 	model:RefreshUnit();
 	model.isItemLoaded = false;
-	WeaponUpdator:GetTargetWeapons("player");
-
 	model.isPlayer = true;
 	model.hasRaceChanged = false;
 	local ZoomMode = 2;
@@ -872,13 +868,14 @@ PMAI:SetScript("OnShow", function(self)		--PlayerModelAnimIn
 	model:ResetCameraPosition();
 	FadeIn(Narci_ModelContainer, 0.6);
 
-	if not hasSetLight then		--You cannot set light color/intensity unless the model is visible
+	if self.init then	--Initialize settings
+		self.init = nil;
 		BasicPanel.ColorPresets.Color1:Click();
 		model:SetSheathed(true);
-		hasSetLight = true;
 		model:SetKeepModelOnHide(true);
 	end
 
+	WeaponUpdator:GetTargetWeapons("player");
 	model:SetActive(true);
 end);
 
@@ -4603,4 +4600,21 @@ Patch	SpellVisualKit max ID
 
 
 /run PrimaryPlayerModel:SetLight(true, false, -pi/4, pi/4, 0, 1, 1, 1, 1, 500, 10, 10, 10);
+
+
+
+function SetModelID(fileID)
+	local m = NarciNPCModelFrame2;
+	local a, b, c = m:GetPosition();
+	local x, y, z = m:GetCameraPosition();
+
+	m:SetModel(fileID);
+	After(1, function()
+		m:MakeCurrentCameraCustom();
+		m:SetPosition(a, b, c);
+		m:SetCameraPosition(x, y, z);
+		m:SetCameraTarget(0, 0, 0.8);
+	end);
+end
+
 --]]

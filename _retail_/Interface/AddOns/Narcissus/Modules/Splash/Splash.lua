@@ -1,4 +1,4 @@
-local currentVersion = 10300;
+local currentVersion = 10500;
 local lastMajorVersion = 10200;
 local _, _, _, tocversion = GetBuildInfo();
 tocversion = tonumber(tocversion);
@@ -12,7 +12,7 @@ local function ApplyPatchFix(self)
     return;
 end
 
-local After = C_Timer.After
+local After = C_Timer.After;
 local FadeFrame = NarciAPI_FadeFrame;
 local UIFrameFadeIn = UIFrameFadeIn;
 local UIFrameFadeOut = UIFrameFadeOut;

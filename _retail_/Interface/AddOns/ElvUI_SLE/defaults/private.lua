@@ -19,10 +19,6 @@ V["sle"] = {
 	["minimap"] = {
 		rectangle = false,
 	},
-	["vehicle"] = {
-		["enable"] = false,
-		["numButtons"] = 7,
-	},
 	["professions"] = {
 		["deconButton"] = {
 			["enable"] = true,
@@ -109,7 +105,9 @@ V["sle"] = {
 		["level"] = 5,
 		["transparent"] = "Default",
 	},
-
+	viewport = {
+		enable = false,
+	},
 	["characterGoldsSorting"] = {},
 	}
 

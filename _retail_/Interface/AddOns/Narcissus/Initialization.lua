@@ -174,7 +174,7 @@ initialize:SetScript("OnEvent",function(self,event,...)
             Initialize_NarcissusDB();
             if (not NarciCreatureOptions.LoadOnDemand) or NarciCreatureOptions.SearchRelatives or NarciCreatureOptions.TranslateName then
                 C_Timer.After(0, function()
-                    LoadAddOn("Narcissus_Database");
+                    LoadAddOn("Narcissus_Database_NPC");
                 end)
             end
         end

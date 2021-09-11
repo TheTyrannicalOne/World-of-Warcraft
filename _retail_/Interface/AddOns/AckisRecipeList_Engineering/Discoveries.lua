@@ -30,6 +30,7 @@ function module:InitializeDiscoveries()
 	AddDiscovery("ENG_DISC")
 	AddDiscovery("ENG_DISC_FIREWORKS")
 	AddDiscovery("DISCOVERY_ENG_BFA")
+	AddDiscovery("DISCOVERY_ENG_ULT")
 
 	self.InitializeDiscoveries = nil
 end

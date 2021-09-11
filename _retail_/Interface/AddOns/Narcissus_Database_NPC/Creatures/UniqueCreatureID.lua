@@ -101128,7 +101128,8 @@ local WhiteList = {
 	159929, 166668,		--Uther
 	167410, 167168,		--Devos <Paragon of Doubt>
 	152977,				--Thrall 8.3
-	179128, 178946,		--Eye of the Jailer color variant 
+	179128, 178946,		--Eye of the Jailer color variant
+	177514, --Mal'Ganis
 };
 
 

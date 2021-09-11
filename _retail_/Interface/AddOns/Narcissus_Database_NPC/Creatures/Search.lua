@@ -508,7 +508,7 @@ local ETP, ETP2;                      --Extra Tooltips. Create this frame after 
 local ETPName = "Narci_NPCTooltip";
 local ETP2Name = "Narci_RelatedNPCTooltip";
 local FORMAT_FIND_RELATIVES_HOTKEY = L["Find Relatives Hotkey Format"];
-local isCreatureTooltipEnabled, shouldFindRelatives;     --Load it later
+local CREATURE_TOOLTIP_ENABLED, FIND_RELATIVES;     --Load it later
 local NPCModel;
 local UnitData = {};
 local lastUnitName = "";
@@ -560,10 +560,10 @@ end
 
 local OnTooltipSetUnit;     --function Create Later
 local function SetIsCreatureTooltipEnabled()
-    shouldFindRelatives = NarciCreatureOptions.SearchRelatives;
-    isCreatureTooltipEnabled = shouldFindRelatives or (NarciCreatureOptions.TranslateName and not NarciCreatureOptions.ShowTranslatedNameOnNamePlate);
+    FIND_RELATIVES = NarciCreatureOptions.SearchRelatives;
+    CREATURE_TOOLTIP_ENABLED = FIND_RELATIVES or (NarciCreatureOptions.TranslateName and not NarciCreatureOptions.ShowTranslatedNameOnNamePlate);
 
-    if shouldFindRelatives and (not ETP.hasHooked) then
+    if CREATURE_TOOLTIP_ENABLED and (not ETP.hasHooked) then
         ETP.hasHooked = true;
         GTP:HookScript("OnTooltipSetUnit", OnTooltipSetUnit);
     else
@@ -672,7 +672,7 @@ local function UpdateNPCTooltip(name, unit, showRelatives)
         end
 
         --Find Relatives
-        if shouldFindRelatives then
+        if FIND_RELATIVES then
             local englishName = GetCreatureEnglishNameByID(creatureID);
             if not englishName then return end
 
@@ -763,7 +763,7 @@ local function UpdateNPCTooltip(name, unit, showRelatives)
 end
 
 function OnTooltipSetUnit()
-    if not isCreatureTooltipEnabled then return end;
+    if not CREATURE_TOOLTIP_ENABLED then return end;
     local name, unit = GTP:GetUnit();
 
     if name and unit and (name ~= lastUnitName or not ETP:IsVisible()) then

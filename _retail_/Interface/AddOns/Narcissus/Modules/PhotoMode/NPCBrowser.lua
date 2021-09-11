@@ -3592,14 +3592,6 @@ function NarciNPCBrowserMixin:Close()
     ACTOR_CREATED = false;
 end
 
-local Initialize = CreateFrame("Frame");
-Initialize:RegisterEvent("PLAYER_ENTERING_WORLD");
-Initialize:SetScript("OnEvent", function(self, event)
-    if event == "PLAYER_ENTERING_WORLD" then
-        self:UnregisterEvent(event);
-        --BrowserFrame:Init();
-    end
-end)
 
 
 

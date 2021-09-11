@@ -1,12 +1,30 @@
-tag debe4601128a5819e8e7ea9c585a206a233f73b8 9.0.2
+tag 170ce0a0d08f4bf968f8a20579f90ec37c5060d9 9.1.0.1
 Author:	Ressy <resa1983@hotmail.com>
-Date:	Mon Jun 28 20:14:19 2021 -0400
+Date:	Tue Sep 7 22:04:16 2021 -0400
 
-9.0.2
+9.1 update
 
-commit a2a951ce97b0cee83852a842cfbd001440ad1300
+commit 47688789a45d14c4c06a91c5bf458fbb0873cf53
 Author: Ressy <resa1983@hotmail.com>
-Date:   Mon Jun 28 20:13:38 2021 -0400
+Date:   Tue Sep 7 21:43:49 2021 -0400
 
-    To bump TOC cuz Curseforge is having issues and not building releases
+    Bump TOC
+
+commit c51d59a21a97330740bd4fd9b51b735da030feba
+Author: Ressy <resa1983@hotmail.com>
+Date:   Tue Sep 7 21:43:45 2021 -0400
+
+    Add 9.1 items
+
+commit cc75d257549f8b2d8eee39946e37e17378a865b9
+Author: Ressy <resa1983@hotmail.com>
+Date:   Tue Sep 7 21:43:37 2021 -0400
+
+    Fix vendors
+
+commit c8811ea885242eee31e2bf4a495cae49229818b7
+Author: Ressy <resa1983@hotmail.com>
+Date:   Tue Sep 7 21:43:15 2021 -0400
+
+    Remove use of AddTradeSkill, as it doesn't work.
 

@@ -7,6 +7,7 @@ local min = math.min;
 local floor = math.floor;
 local format = string.format;
 local After = C_Timer.After;
+local FadeFrame = NarciFadeUI.Fade;
 
 --[[ Blizzard APIs:
 PickupItem(item)            --Place the item on the cursor
@@ -79,7 +80,6 @@ local GET_BORDER_FUNC;
 local GetContainerItemID = GetContainerItemID;
 local GetItemCount = GetItemCount;
 local NUM_BAGS = NUM_BAG_SLOTS or 4;
-local FadeFrame = NarciAPI_FadeFrame;
 
 local function StatAbbreviationToFullForm(abbr)
     if abbr == "crit" then
@@ -110,9 +110,15 @@ for gemID, info in pairs(Narci.GemData) do
 end
 
 if Narci.DominationShards then
+    local typeName = {
+        [1] = "Frost",
+        [2] = "Unholy",
+        [3] = "Blood",
+    }
     for gemID, info in pairs(Narci.DominationShards) do
+        local typeID = info[1];
         tinsert(DominationShardIDs, gemID);
-        GemTypesByID[gemID] = "Domination";
+        GemTypesByID[gemID] = typeName[typeID];
     end
 end
 
@@ -232,12 +238,10 @@ local function DisplayButtons(itemCountList, occupiedGemID, rootFrame, buttonTem
     ScrollFrame.range = range;
     scrollBar:SetShown(range ~= 0);
     local totalButtons = min(numGems, NUM_BUTTONS_PER_PAGE + 0.4);
-    rootFrame:SetHeight(totalButtons*BUTTON_HEIGHT);
-    AjustShadowHeight(rootFrame, totalButtons);
 
     if DOMINATION_MODE then
         local actionButton = NarciItemSocketingActionButton;
-        if numGems > 0 and occupiedGemID then
+        if numGems >= 0 and occupiedGemID then
             --has an occupied shard
             local success = actionButton:SetParentFrame(rootFrame); --combat lockdown
             rootFrame.DominationBlock.ErrorMsg:SetShown(not success);
@@ -245,7 +249,9 @@ local function DisplayButtons(itemCountList, occupiedGemID, rootFrame, buttonTem
                 rootFrame.DominationBlock.FadeIn:Play();
                 rootFrame.DominationBlock:Show();
             end
-
+            if numGems == 0 then
+                totalButtons = 1;
+            end
         else
             if rootFrame.DominationBlock:IsShown() then
                 rootFrame.DominationBlock.FadeOut:Play();
@@ -257,6 +263,9 @@ local function DisplayButtons(itemCountList, occupiedGemID, rootFrame, buttonTem
         rootFrame.DominationBlock:Hide();
         rootFrame.DominationBlock.ErrorMsg:Hide();
     end
+
+    rootFrame:SetHeight(totalButtons * BUTTON_HEIGHT);
+    AjustShadowHeight(rootFrame, totalButtons);
 end
 
 local function GetBagPosition(itemID)
@@ -317,7 +326,7 @@ end
 
 
 function Narci_ItemSocketing_Succeed()
-    FadeFrame(Narci_ItemSocketing, 0.5, "OUT");
+    FadeFrame(Narci_ItemSocketing, 0.5, 0);
     ShowFlyoutBlack(false);
     HideUIPanel(ItemSocketingFrame);
     Narci_ItemSocketing_GemFrame.Flare.Rotate:Play();
@@ -335,11 +344,11 @@ end
 NarciGemListButtonMixin = {};
 
 function NarciGemListButtonMixin:OnEnter()
-    UIFrameFadeIn(self.Icon3, 0.12, self.Icon3:GetAlpha(), 0.66);
+    FadeFrame(self.Icon3, 0.12, 0.66);
 end
 
 function NarciGemListButtonMixin:OnLeave()
-    UIFrameFadeIn(self.Icon3, 0.2, self.Icon3:GetAlpha(), 0);
+    FadeFrame(self.Icon3, 0.2, 0);
 end
 
 function NarciGemListButtonMixin:OnClick()
@@ -362,18 +371,20 @@ function NarciGemListButtonMixin:ConfirmSocketing()
 end
 
 function NarciGemListButtonMixin:OnDoubleClick()
-    self:ConfirmSocketing()
+    self:ConfirmSocketing();
     --self.ButtonHighlight.animQuickFill:Play();
     self.ButtonFill.animFill:Stop();
 end
 
 function NarciGemListButtonMixin:OnMouseDown()
     if self:IsEnabled() then
+        self.ButtonFill:Show();
         self.ButtonFill.animFill:Play();
     end
 end
 
 function NarciGemListButtonMixin:OnMouseUp()
+    self.ButtonFill:Hide();
     self.ButtonFill.animFill:Stop();
 end
 
@@ -383,7 +394,7 @@ function NarciGemListButtonMixin:InsertGem()
     local bagID, slotIndex = GetBagPosition(self.gemID);
     if not(bagID and slotIndex) then return; end
     PickupContainerItem(bagID, slotIndex);
-    ClickSocketButton(1)
+    ClickSocketButton(1);
     ClearCursor();
 end
 
@@ -484,6 +495,9 @@ function NarciGemSlotMixin:OnEnter()
     ItemName:ClearAllPoints();
     local _, bonus, name, quality, icon;
 
+    if self.isDomiationSocket and self.sockedGemItemID then
+        link = "item:"..self.sockedGemItemID..":::::::::::::::::";
+    end
     if link then
         if self.isDomiationSocket then
             bonus = GetShardBonus(self.sockedGemItemID);
@@ -522,20 +536,20 @@ function NarciGemSlotMixin:OnEnter()
 	end
 
     tooltip:SetMouseMotionEnabled(false);
-	FadeFrame(tooltip, 0.15, "IN");
+	FadeFrame(tooltip, 0.15, 1);
 end
 
 
 function NarciGemSlotMixin:OnLeave()
-    FadeFrame(Narci_GearEnhancement_Tooltip, 0.25, "OUT");
+    FadeFrame(Narci_GearEnhancement_Tooltip, 0.25, 0);
 end
 
 function NarciGemSlotMixin:LoadGemList()
     local frame = Narci_ItemSocketing;
     local GemFrame = Narci_ItemSocketing_GemFrame;
     self:CountGems();
-    SOCKETED_ITEM_LEVEL= self.ItemLevel;
-    if self.numGems == 0 then return; end;
+    SOCKETED_ITEM_LEVEL = self.ItemLevel;
+    if self.numGems == 0 and not self.isDomiationSocket then return; end;
     DisplayButtons(GemCountList, self.sockedGemItemID);
     frame:ClearAllPoints();
     GemFrame:ClearAllPoints();
@@ -564,7 +578,7 @@ function NarciGemSlotMixin:LoadGemList()
     GemFrame:SetFrameStrata("TOOLTIP");
     GemFrame:Show();
     ShowFlyoutBlack(true);
-    FadeFrame(Narci_GearEnhancement_Tooltip, 0.15, "OUT");
+    FadeFrame(Narci_GearEnhancement_Tooltip, 0.15, 0);
 end
 
 function NarciGemSlotMixin:OnClick()

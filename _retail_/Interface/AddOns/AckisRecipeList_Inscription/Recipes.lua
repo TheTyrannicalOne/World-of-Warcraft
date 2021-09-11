@@ -2296,8 +2296,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(137775, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(128995, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("INSCRIPTION_VANTUS_RUNE")
-	recipe:AddFilters(F.TRADE_SKILL)
-	recipe:AddTradeSkill(PROF.FISHING, Z.AZSUNA)
+	recipe:AddCustom("PROF_FISH_AZSU")
 
 	-- Vantus Rune: Trilliax -- 192900
 	recipe = AddRecipe(192900, V.LEGION, Q.COMMON)
@@ -3762,7 +3761,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(168959, "BIND_ON_EQUIP")
 	recipe:SetRequiredFaction("Horde")
 	recipe:SetItemFilterType("INSCRIPTION_CREATED_ITEM")
-	recipe:AddRepVendor(FAC.UNSHACKLED, REP.REVERED, 153514)
+	recipe:AddRepVendor(FAC.THE_UNSHACKLED, REP.REVERED, 153514)
 
 	-- Contract: Rustbolt Resistance -- 299671
 	recipe = AddRecipe(299671, V.BFA, Q.COMMON)
@@ -3866,7 +3865,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(171059, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170316, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("INSCRIPTION_OFF_HAND")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Etched Vessel -- 305954
 	recipe = AddRecipe(305954, V.BFA, Q.COMMON)
@@ -3874,7 +3873,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(171058, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170316, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("INSCRIPTION_OFF_HAND")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Vantus Rune: Ny'alotha, the Waking City -- 306481
 	recipe = AddRecipe(306481, V.BFA, Q.COMMON)
@@ -4176,6 +4175,22 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("INSCRIPTION_MINOR_GLYPH")
 	recipe:AddFilters(F.DRUID)
 	recipe:AddVendor(128702)
+
+	-- Contract: Death's Advance -- 354000
+	recipe = AddRecipe(354000, V.SHA, Q.UNCOMMON)
+	recipe:SetSkillLevels(60, 60, 100, 100, 100)
+	recipe:SetCraftedItem(186522, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(186724, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("INSCRIPTION_CREATED_ITEM")
+	recipe:AddRepVendor(FAC.DEATHS_ADVANCE, REP.REVERED, 179321)
+
+	-- Vantus Rune: Sanctum of Domination -- 354394
+	recipe = AddRecipe(354394, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 115, 120, 125)
+	recipe:SetCraftedItem(186522, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(186671, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("INSCRIPTION_VANTUS_RUNE")
+	recipe:AddWorldDrop(Z.SANCTUM_OF_DOMINATION)
 
 	self.InitializeRecipes = nil
 end

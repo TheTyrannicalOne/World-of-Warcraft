@@ -1,9 +1,9 @@
 ## Author: Ackis, Torhal, Ressy
 
-## Interface: 90002
-## Version: 9.0.1.1
-## X-Revision: 237aa06c
-## X-Date: 2021-06-28T0:35:31Z
+## Interface: 90100
+## Version: 9.1.0.1
+## X-Revision: 4b46d7a8
+## X-Date: 2021-09-08T1:32:33Z
 
 ## X-Credits: Zhinjio, FGWarmonger, Kagaro, Speeddymon, Xinhuan, Aesir, BWMerlin, everyone who translated stuff and more!
 ## X-Category: Tradeskill

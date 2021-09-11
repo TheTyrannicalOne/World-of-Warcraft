@@ -153343,18 +153343,24 @@ List.From180001To181000 = {
 };
 
 List.From181001To182000 = {
-    181081,
-    181083,
-    181128,
-    181133,
-    181134,
+    181081,  --Kill Credit: Daily
+    181083,  --Kill Credit: Rare
+    181128,  --El-ahrairah
+    181133,  --Ebon Blade Acolyte
+    181134,  --Quartermaster Rahm
+    181627,  --Anima Cell
+    181630,  --Anima Cell
+    181632,  --Anima Cell
+    181635,  --Anima Cell
+    181681,  --Tu'kol
+    181714,  --Worn Anvil
 };
 
 
 
 
 List.From182001To183000 = {
-
+    182021,
 };
 
 List.From183001To184000 = {

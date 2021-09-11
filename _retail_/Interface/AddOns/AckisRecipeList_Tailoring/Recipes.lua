@@ -1889,6 +1889,41 @@ function module:InitializeRecipes()
 	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddRepVendor(FAC.CENARION_CIRCLE, REP.FRIENDLY, 15179)
 
+	-- Relic of the Past I -- 330222
+	recipe = AddRecipe(330222, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddTrainer(1346, 3004, 4576, 5153, 16640, 45559, 85910, 86004)
+
+	-- Relic of the Past II -- 330223
+	recipe = AddRecipe(330223, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddTrainer(1346, 3004, 4576, 5153, 16640, 45559, 85910, 86004)
+
+	-- Relic of the Past III -- 330224
+	recipe = AddRecipe(330224, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddTrainer(1346, 3004, 4576, 5153, 16640, 45559, 85910, 86004)
+
+	-- Relic of the Past IV -- 330225
+	recipe = AddRecipe(330225, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddTrainer(1346, 3004, 4576, 5153, 16640, 45559, 85910, 86004)
+
+	-- Relic of the Past V -- 330226
+	recipe = AddRecipe(330226, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddTrainer(1346, 3004, 4576, 5153, 16640, 45559, 85910, 86004)
+
 	-- ----------------------------------------------------------------------------
 	-- The Burning Crusade.
 	-- ----------------------------------------------------------------------------
@@ -2655,6 +2690,41 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(38278, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_LEGS")
 	recipe:AddVendor(40572)
+
+	-- Relic of the Past I -- 330227
+	recipe = AddRecipe(330227, V.TBC, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddTrainer(33613, 33636, 33684)
+
+	-- Relic of the Past II -- 330228
+	recipe = AddRecipe(330228, V.TBC, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddTrainer(33613, 33636, 33684)
+
+	-- Relic of the Past III -- 330229
+	recipe = AddRecipe(330229, V.TBC, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddTrainer(33613, 33636, 33684)
+
+	-- Relic of the Past IV -- 330230
+	recipe = AddRecipe(330230, V.TBC, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddTrainer(33613, 33636, 33684)
+
+	-- Relic of the Past V -- 330231
+	recipe = AddRecipe(330231, V.TBC, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddTrainer(33613, 33636, 33684)
 
 	-- ----------------------------------------------------------------------------
 	-- Wrath of the Lich King.
@@ -3431,6 +3501,41 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("TAILORING_MISC")
 	recipe:AddVendor(40160)
 
+	-- Relic of the Past I -- 330232
+	recipe = AddRecipe(330232, V.WOTLK, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddTrainer(28699)
+
+	-- Relic of the Past II -- 330233
+	recipe = AddRecipe(330233, V.WOTLK, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddTrainer(28699)
+
+	-- Relic of the Past III -- 330234
+	recipe = AddRecipe(330234, V.WOTLK, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddTrainer(28699)
+
+	-- Relic of the Past IV -- 330235
+	recipe = AddRecipe(330235, V.WOTLK, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddTrainer(28699)
+
+	-- Relic of the Past V -- 330236
+	recipe = AddRecipe(330236, V.WOTLK, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddTrainer(28699)
+
 	-- ----------------------------------------------------------------------------
 	-- Cataclysm.
 	-- ----------------------------------------------------------------------------
@@ -3942,6 +4047,41 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("TAILORING_WRIST")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddWorldDrop(Z.DRAGON_SOUL)
+
+	-- Relic of the Past I -- 330237
+	recipe = AddRecipe(330237, V.CATA, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddTrainer(1346, 3004, 4576, 5153, 16640, 45559)
+
+	-- Relic of the Past II -- 330238
+	recipe = AddRecipe(330238, V.CATA, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddTrainer(1346, 3004, 4576, 5153, 16640, 45559)
+
+	-- Relic of the Past III -- 330239
+	recipe = AddRecipe(330239, V.CATA, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddTrainer(1346, 3004, 4576, 5153, 16640, 45559)
+
+	-- Relic of the Past IV -- 330240
+	recipe = AddRecipe(330240, V.CATA, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddTrainer(1346, 3004, 4576, 5153, 16640, 45559)
+
+	-- Relic of the Past V -- 330241
+	recipe = AddRecipe(330241, V.CATA, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddTrainer(1346, 3004, 4576, 5153, 16640, 45559)
 
 	-- ----------------------------------------------------------------------------
 	-- Mists of Pandaria.
@@ -4966,6 +5106,41 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("TAILORING_MATERIALS")
 	recipe:AddDiscovery("DISCOVERY_TAILOR_CELESTIAL_PANDARIA")
 
+	-- Relic of the Past I -- 330242
+	recipe = AddRecipe(330242, V.MOP, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddTrainer(57405)
+
+	-- Relic of the Past II -- 330243
+	recipe = AddRecipe(330243, V.MOP, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddTrainer(57405)
+
+	-- Relic of the Past III -- 330244
+	recipe = AddRecipe(330244, V.MOP, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddTrainer(57405)
+
+	-- Relic of the Past IV -- 330245
+	recipe = AddRecipe(330245, V.MOP, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddTrainer(57405)
+
+	-- Relic of the Past V -- 330246
+	recipe = AddRecipe(330246, V.MOP, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddTrainer(57405)
+
 	-- ----------------------------------------------------------------------------
 	-- Warlords of Draenor.
 	-- ----------------------------------------------------------------------------
@@ -5146,6 +5321,41 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(111556, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("TAILORING_MATERIALS")
 	recipe:AddVendor(91025, 91034)
+
+	-- Relic of the Past I -- 330247
+	recipe = AddRecipe(330247, V.WOD, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddCustom("DRAENOR_DEFAULT")
+
+	-- Relic of the Past II -- 330248
+	recipe = AddRecipe(330248, V.WOD, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddCustom("DRAENOR_DEFAULT")
+
+	-- Relic of the Past III -- 330249
+	recipe = AddRecipe(330249, V.WOD, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddCustom("DRAENOR_DEFAULT")
+
+	-- Relic of the Past IV -- 330250
+	recipe = AddRecipe(330250, V.WOD, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddCustom("DRAENOR_DEFAULT")
+
+	-- Relic of the Past V -- 330251
+	recipe = AddRecipe(330251, V.WOD, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- ----------------------------------------------------------------------------
 	-- Legion.
@@ -5767,6 +5977,41 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("TAILORING_LEGS")
 	recipe:AddMobDrop(124393)
 
+	-- Relic of the Past I -- 330252
+	recipe = AddRecipe(330252, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddCustom("DEFAULT_RECIPE")
+
+	-- Relic of the Past II -- 330253
+	recipe = AddRecipe(330253, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddCustom("DEFAULT_RECIPE")
+
+	-- Relic of the Past III -- 330254
+	recipe = AddRecipe(330254, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddCustom("DEFAULT_RECIPE")
+
+	-- Relic of the Past IV -- 330255
+	recipe = AddRecipe(330255, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddCustom("DEFAULT_RECIPE")
+
+	-- Relic of the Past V -- 330256
+	recipe = AddRecipe(330256, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddCustom("DEFAULT_RECIPE")
+
 	-- ----------------------------------------------------------------------------
 	-- Battle for Azeroth.
 	-- ----------------------------------------------------------------------------
@@ -6219,6 +6464,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162431, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159917, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_BACK")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Satin Cloak -- 269598
@@ -6227,6 +6473,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162432, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159917, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_BACK")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Satin Boots -- 269599
@@ -6242,6 +6489,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162433, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159912, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_FEET")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Satin Boots -- 269601
@@ -6250,6 +6498,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162434, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159912, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_FEET")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Satin Mittens -- 269602
@@ -6265,6 +6514,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162435, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159913, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_HANDS")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Satin Mittens -- 269604
@@ -6273,6 +6523,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162436, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159913, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_HANDS")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Satin Pants -- 269605
@@ -6288,6 +6539,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162437, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159914, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_LEGS")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Satin Pants -- 269607
@@ -6296,6 +6548,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162438, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159914, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_LEGS")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Satin Belt -- 269608
@@ -6311,6 +6564,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162439, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159915, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_WAIST")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Satin Belt -- 269610
@@ -6319,6 +6573,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162440, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159915, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_WAIST")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Satin Bracers -- 269611
@@ -6334,6 +6589,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162441, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159916, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_WRIST")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Satin Bracers -- 269613
@@ -6342,6 +6598,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162442, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159916, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_WRIST")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Embroidered Deep Sea Satin -- 272440
@@ -6389,6 +6646,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165342, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164675, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_WRIST")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Satin Bracers -- 282166
@@ -6397,6 +6655,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165343, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164675, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_WRIST")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Satin Belt -- 282168
@@ -6412,6 +6671,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165340, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164674, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_WAIST")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Satin Belt -- 282170
@@ -6420,6 +6680,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165341, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164674, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_WAIST")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Satin Pants -- 282175
@@ -6435,6 +6696,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165338, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164673, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_LEGS")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Satin Pants -- 282177
@@ -6443,6 +6705,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165339, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164673, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_LEGS")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Satin Mittens -- 282191
@@ -6458,6 +6721,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165336, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164672, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_HANDS")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Satin Mittens -- 282193
@@ -6466,6 +6730,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165337, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164672, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_HANDS")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Satin Boots -- 282194
@@ -6481,6 +6746,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165334, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164671, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_FEET")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Satin Boots -- 282196
@@ -6489,6 +6755,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165335, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164671, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_FEET")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Satin Cloak -- 282204
@@ -6504,6 +6771,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165332, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164676, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_BACK")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Satin Cloak -- 282276
@@ -6512,6 +6780,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165333, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164676, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_BACK")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Enhanced Deep Sea Breeches -- 285077
@@ -6841,7 +7110,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170444, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170320, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_BACK")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Satin Cloak -- 304567
 	recipe = AddRecipe(304567, V.BFA, Q.COMMON)
@@ -6849,7 +7119,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170447, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170320, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_BACK")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Satin Boots -- 304568
 	recipe = AddRecipe(304568, V.BFA, Q.COMMON)
@@ -6864,7 +7135,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170448, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170327, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_FEET")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Satin Boots -- 304570
 	recipe = AddRecipe(304570, V.BFA, Q.COMMON)
@@ -6872,7 +7144,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170449, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170327, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_FEET")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Satin Mittens -- 304571
 	recipe = AddRecipe(304571, V.BFA, Q.COMMON)
@@ -6887,7 +7160,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170450, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170340, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_HANDS")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Satin Mittens -- 304573
 	recipe = AddRecipe(304573, V.BFA, Q.COMMON)
@@ -6895,7 +7169,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170451, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170340, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_HANDS")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Satin Pants -- 304574
 	recipe = AddRecipe(304574, V.BFA, Q.COMMON)
@@ -6910,7 +7185,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170452, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170325, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_LEGS")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Satin Pants -- 304576
 	recipe = AddRecipe(304576, V.BFA, Q.COMMON)
@@ -6918,7 +7194,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170453, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170325, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_LEGS")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Satin Belt -- 304577
 	recipe = AddRecipe(304577, V.BFA, Q.COMMON)
@@ -6933,7 +7210,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170445, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170324, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_WAIST")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Satin Belt -- 304579
 	recipe = AddRecipe(304579, V.BFA, Q.COMMON)
@@ -6941,7 +7219,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170446, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170324, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_WAIST")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Satin Bracers -- 304580
 	recipe = AddRecipe(304580, V.BFA, Q.COMMON)
@@ -6956,7 +7235,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170454, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170323, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_WRIST")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Satin Bracers -- 304582
 	recipe = AddRecipe(304582, V.BFA, Q.COMMON)
@@ -6964,7 +7244,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170455, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170323, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_WRIST")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Void Focus -- 307175
 	recipe = AddRecipe(307175, V.BFA, Q.COMMON)
@@ -7181,181 +7462,6 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("TAILORING_BANDAGES")
 	recipe:AddCustom("DEFAULT_RECIPE")
 
-	-- Relic of the Past I -- 330222
-	recipe = AddRecipe(330222, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("TAILORING_MATERIALS")
-	recipe:AddTrainer(1346, 3004, 4576, 5153, 16640, 45559, 85910, 86004)
-
-	-- Relic of the Past II -- 330223
-	recipe = AddRecipe(330223, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("TAILORING_MATERIALS")
-	recipe:AddTrainer(1346, 3004, 4576, 5153, 16640, 45559, 85910, 86004)
-
-	-- Relic of the Past III -- 330224
-	recipe = AddRecipe(330224, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("TAILORING_MATERIALS")
-	recipe:AddTrainer(1346, 3004, 4576, 5153, 16640, 45559, 85910, 86004)
-
-	-- Relic of the Past IV -- 330225
-	recipe = AddRecipe(330225, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("TAILORING_MATERIALS")
-	recipe:AddTrainer(1346, 3004, 4576, 5153, 16640, 45559, 85910, 86004)
-
-	-- Relic of the Past V -- 330226
-	recipe = AddRecipe(330226, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("TAILORING_MATERIALS")
-	recipe:AddTrainer(1346, 3004, 4576, 5153, 16640, 45559, 85910, 86004)
-
-	-- Relic of the Past I -- 330227
-	recipe = AddRecipe(330227, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("TAILORING_MATERIALS")
-	recipe:AddTrainer(33613, 33636, 33684)
-
-	-- Relic of the Past II -- 330228
-	recipe = AddRecipe(330228, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("TAILORING_MATERIALS")
-	recipe:AddTrainer(33613, 33636, 33684)
-
-	-- Relic of the Past III -- 330229
-	recipe = AddRecipe(330229, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("TAILORING_MATERIALS")
-	recipe:AddTrainer(33613, 33636, 33684)
-
-	-- Relic of the Past IV -- 330230
-	recipe = AddRecipe(330230, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("TAILORING_MATERIALS")
-	recipe:AddTrainer(33613, 33636, 33684)
-
-	-- Relic of the Past V -- 330231
-	recipe = AddRecipe(330231, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("TAILORING_MATERIALS")
-	recipe:AddTrainer(33613, 33636, 33684)
-
-	-- Relic of the Past I -- 330232
-	recipe = AddRecipe(330232, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("TAILORING_MATERIALS")
-	recipe:AddTrainer(28699)
-
-	-- Relic of the Past II -- 330233
-	recipe = AddRecipe(330233, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("TAILORING_MATERIALS")
-	recipe:AddTrainer(28699)
-
-	-- Relic of the Past III -- 330234
-	recipe = AddRecipe(330234, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("TAILORING_MATERIALS")
-	recipe:AddTrainer(28699)
-
-	-- Relic of the Past IV -- 330235
-	recipe = AddRecipe(330235, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("TAILORING_MATERIALS")
-	recipe:AddTrainer(28699)
-
-	-- Relic of the Past V -- 330236
-	recipe = AddRecipe(330236, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("TAILORING_MATERIALS")
-	recipe:AddTrainer(28699)
-
-	-- Relic of the Past I -- 330237
-	recipe = AddRecipe(330237, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("TAILORING_MATERIALS")
-	recipe:AddTrainer(1346, 3004, 4576, 5153, 16640, 45559)
-
-	-- Relic of the Past II -- 330238
-	recipe = AddRecipe(330238, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("TAILORING_MATERIALS")
-	recipe:AddTrainer(1346, 3004, 4576, 5153, 16640, 45559)
-
-	-- Relic of the Past III -- 330239
-	recipe = AddRecipe(330239, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("TAILORING_MATERIALS")
-	recipe:AddTrainer(1346, 3004, 4576, 5153, 16640, 45559)
-
-	-- Relic of the Past IV -- 330240
-	recipe = AddRecipe(330240, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("TAILORING_MATERIALS")
-	recipe:AddTrainer(1346, 3004, 4576, 5153, 16640, 45559)
-
-	-- Relic of the Past V -- 330241
-	recipe = AddRecipe(330241, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("TAILORING_MATERIALS")
-	recipe:AddTrainer(1346, 3004, 4576, 5153, 16640, 45559)
-
-	-- Relic of the Past I -- 330242
-	recipe = AddRecipe(330242, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("TAILORING_MATERIALS")
-	recipe:AddTrainer(57405)
-
-	-- Relic of the Past II -- 330243
-	recipe = AddRecipe(330243, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("TAILORING_MATERIALS")
-	recipe:AddTrainer(57405)
-
-	-- Relic of the Past III -- 330244
-	recipe = AddRecipe(330244, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("TAILORING_MATERIALS")
-	recipe:AddTrainer(57405)
-
-	-- Relic of the Past IV -- 330245
-	recipe = AddRecipe(330245, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("TAILORING_MATERIALS")
-	recipe:AddTrainer(57405)
-
-	-- Relic of the Past V -- 330246
-	recipe = AddRecipe(330246, V.SHA, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("TAILORING_MATERIALS")
-	recipe:AddTrainer(57405)
-
 	-- Relic of the Past I -- 330257
 	recipe = AddRecipe(330257, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
@@ -7520,8 +7626,8 @@ function module:InitializeRecipes()
 	-- Pink Party Hat -- 334499
 	recipe = AddRecipe(334499, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 15, 20, 25)
-	recipe:SetCraftedItem(180752, "BIND_ON_EQUIP")
 	recipe:SetRecipeItem(180781, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(180752, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_HEAD")
 	recipe:AddWorldDrop(Z.MALDRAXXUS)
 
@@ -7588,6 +7694,22 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("TAILORING_WRIST")
 	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
+	-- Crafter's Mark of the Chained Isle -- 343200
+	recipe = AddRecipe(343200, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(200, 200, 200, 200, 200)
+	recipe:SetRecipeItem(186470, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(173384, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddRepVendor(FAC.THE_ARCHIVISTS_CODEX, REP.REVERED, 178257)
+
+	-- Crafter's Mark III -- 343201
+	recipe = AddRecipe(343201, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 190, 192, 195)
+	recipe:SetRecipeItem(183868, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(173383, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("TAILORING_MATERIALS")
+	recipe:AddRepVendor(FAC.DEATHS_ADVANCE, REP.HONORED, 179321)
+
 	-- Crafter's Mark II -- 343202
 	recipe = AddRecipe(343202, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(100, 100, 75, 80, 85)
@@ -7598,8 +7720,8 @@ function module:InitializeRecipes()
 	-- Crafter's Mark I -- 343204
 	recipe = AddRecipe(343204, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(45, 45, 55, 60, 65)
-	recipe:SetCraftedItem(173381, "BIND_ON_EQUIP")
 	recipe:SetRecipeItem(183870, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(173381, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_MATERIALS")
 	recipe:AddTrainer(156681)
 
@@ -7623,6 +7745,21 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(184480, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_BAG")
 	recipe:AddTrainer(156681)
+
+	-- Vestige of Origins -- 352445
+	recipe = AddRecipe(352445, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 190, 192, 195)
+	recipe:SetCraftedItem(185960, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("TAILORING_MISC")
+	recipe:AddRepVendor(FAC.DEATHS_ADVANCE, REP.HONORED, 179321)
+
+	-- Shrouded Hand Towel -- 355183
+	recipe = AddRecipe(355183, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(15, 15, 15, 20, 25)
+	recipe:SetRecipeItem(186995, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(186975, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("TAILORING_MISC")
+	recipe:AddWorldDrop(Z.THE_SHADOWLANDS)
 
 	self.InitializeRecipes = nil
 end

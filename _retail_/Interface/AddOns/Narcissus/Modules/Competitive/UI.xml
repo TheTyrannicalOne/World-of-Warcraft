@@ -3,6 +3,8 @@
     <Script file="MythicPlus.lua"/>
     <Script file="Main.lua"/>
 
+    <Script file="ActivitionAlert.lua"/>
+
     <Button name="NarciCompetitiveTabButtonTemplate" mixin="NarciCompetitiveTabButtonMixin" virtual="true">
         <Size x="60" y="24"/>
         <HitRectInsets>
@@ -401,7 +403,7 @@
         </Scripts>
     </Button>
 
-    <Frame name="Narci_CompetitiveDisplay" mixin="NarciCompetitiveDisplayMixin" parent="Narci_Character" hidden="true">
+    <Frame name="Narci_CompetitiveDisplay" mixin="NarciCompetitiveDisplayMixin" parent="Narci_Attribute" hidden="true">
 		<Size>
 			<AbsDimension x="320" y="336"/>
 		</Size>
@@ -805,4 +807,199 @@
             <OnLoad method="OnLoad"/>
         </Scripts>
     </Frame>
+
+    <!--Button name="NarciTestButton" hidden="true">
+        <Size x="32" y="32"/>
+        <Anchors>
+            <Anchor point="CENTER"/>
+        </Anchors>
+        <Layers>
+            <Layer level="ARTWORK">
+                <Texture parentKey="Icon">
+                    <TexCoords left="0.075" right="0.925" top="0.075" bottom="0.925"/>
+                </Texture>
+            </Layer>
+            <Layer level="OVERLAY">
+                <Texture file="Interface\AddOns\Narcissus\Art\IconHighlight\Border">
+
+                </Texture>
+            </Layer>
+        </Layers>
+        <Frames>
+            <Frame parentKey="ActivationAlert" mixin="NarciActivationAlertMixin" hidden="true">
+                <Size x="32" y="32"/>
+                <Anchors>
+                    <Anchor point="CENTER"/>
+                </Anchors>
+                <Layers>
+                    <Layer level="OVERLAY" textureSubLevel="-1">
+                        <Texture parentKey="OuterGlow">
+                            <Size x="64" y="64"/>
+                            <Anchors>
+                                <Anchor point="CENTER"/>
+                            </Anchors>
+                        </Texture>
+                    </Layer>
+                    <Layer level="OVERLAY">
+                        <Texture parentKey="InnerGlow">
+                            <Size x="32" y="32"/>
+                            <Anchors>
+                                <Anchor point="CENTER"/>
+                            </Anchors>
+                        </Texture>
+                    </Layer>
+                    <Layer level="OVERLAY" textureSubLevel="1">
+                        <Texture parentKey="Trail1">
+                            <Size x="64" y="64"/>
+                            <Anchors>
+                                <Anchor point="CENTER"/>
+                            </Anchors>
+                        </Texture>
+                        <Texture parentKey="Trail2">
+                            <Size x="64" y="64"/>
+                            <Anchors>
+                                <Anchor point="CENTER"/>
+                            </Anchors>
+                        </Texture>
+                        <Texture parentKey="Trail3">
+                            <Size x="64" y="64"/>
+                            <Anchors>
+                                <Anchor point="CENTER"/>
+                            </Anchors>
+                        </Texture>
+                        <Texture parentKey="Trail4">
+                            <Size x="64" y="64"/>
+                            <Anchors>
+                                <Anchor point="CENTER"/>
+                            </Anchors>
+                        </Texture>
+                        <MaskTexture parentKey="TrailMask1">
+                            <Size x="32" y="32"/>
+                            <Anchors>
+                                <Anchor point="CENTER"/>
+                            </Anchors>
+                            <MaskedTextures>
+                                <MaskedTexture childKey="Trail1"/>
+                            </MaskedTextures>
+                        </MaskTexture>
+                        <MaskTexture parentKey="TrailMask2">
+                            <Size x="32" y="32"/>
+                            <Anchors>
+                                <Anchor point="CENTER"/>
+                            </Anchors>
+                            <MaskedTextures>
+                                <MaskedTexture childKey="Trail2"/>
+                            </MaskedTextures>
+                        </MaskTexture>
+                        <MaskTexture parentKey="TrailMask3">
+                            <Size x="32" y="32"/>
+                            <Anchors>
+                                <Anchor point="CENTER"/>
+                            </Anchors>
+                            <MaskedTextures>
+                                <MaskedTexture childKey="Trail3"/>
+                            </MaskedTextures>
+                        </MaskTexture>
+                        <MaskTexture parentKey="TrailMask4">
+                            <Size x="32" y="32"/>
+                            <Anchors>
+                                <Anchor point="CENTER"/>
+                            </Anchors>
+                            <MaskedTextures>
+                                <MaskedTexture childKey="Trail4"/>
+                            </MaskedTextures>
+                        </MaskTexture>
+                    </Layer>
+                    <Layer level="OVERLAY" textureSubLevel="2">
+                        <Texture parentKey="Blip1">
+                            <Size x="16" y="16"/>
+                            <Anchors>
+                                <Anchor point="CENTER"/>
+                            </Anchors>
+                        </Texture>
+                        <Texture parentKey="Blip2">
+                            <Size x="16" y="16"/>
+                            <Anchors>
+                                <Anchor point="CENTER"/>
+                            </Anchors>
+                        </Texture>
+                        <Texture parentKey="Blip3">
+                            <Size x="16" y="16"/>
+                            <Anchors>
+                                <Anchor point="CENTER"/>
+                            </Anchors>
+                        </Texture>
+                        <Texture parentKey="Blip4">
+                            <Size x="16" y="16"/>
+                            <Anchors>
+                                <Anchor point="CENTER"/>
+                            </Anchors>
+                        </Texture>
+                    </Layer>
+                    <Layer level="OVERLAY" textureSubLevel="3">
+                        <Texture parentKey="WhiteBorder" Alpha="0">
+                            <Size x="32" y="32"/>
+                            <Anchors>
+                                <Anchor point="CENTER"/>
+                            </Anchors>
+                        </Texture>
+                    </Layer>
+                </Layers>
+                <Animations>
+                    <AnimationGroup parentKey="IntroAnim">
+                        <Alpha childKey="InnerGlow" smoothing="OUT" duration="0.2" fromAlpha="0" toAlpha="1" order="1"/>
+                        <Alpha childKey="OuterGlow" duration="0.2" fromAlpha="0" toAlpha="1" order="1"/>
+                        <Scale childKey="OuterGlow" smoothing="OUT" duration="0.2" fromScaleX="0.5" toScaleX="1" fromScaleY="0.5" toScaleY="1" order="1"/>
+                        <Alpha childKey="Blip1" duration="0.2" fromAlpha="0" toAlpha="1" order="1"/>
+                        <Alpha childKey="Blip2" duration="0.2" fromAlpha="0" toAlpha="1" order="1"/>
+                        <Alpha childKey="Blip3" duration="0.2" fromAlpha="0" toAlpha="1" order="1"/>
+                        <Alpha childKey="Blip4" duration="0.2" fromAlpha="0" toAlpha="1" order="1"/>
+                        <Scripts>
+                            <OnFinished>
+                                self:GetParent():PlayHold();
+                            </OnFinished>
+                        </Scripts>
+                    </AnimationGroup>
+                    <AnimationGroup parentKey="HoldAnim" looping="REPEAT">
+                        <Alpha childKey="OuterGlow" duration="0.5" fromAlpha="1" toAlpha="0.66" order="1"/>
+                        <Alpha childKey="OuterGlow" duration="0.5" fromAlpha="0.66" toAlpha="1" order="2"/>
+                    </AnimationGroup>
+                    <AnimationGroup parentKey="OutroAnim">
+                        <Alpha childKey="InnerGlow" duration="0.35" fromAlpha="1" toAlpha="0" order="1"/>
+
+                        <Alpha childKey="OuterGlow" duration="0.35" fromAlpha="1" toAlpha="0" order="1"/>
+
+                        <Alpha childKey="Blip1" duration="0.25" fromAlpha="1" toAlpha="0" order="1"/>
+                        <Alpha childKey="Blip2" duration="0.25" fromAlpha="1" toAlpha="0" order="1"/>
+                        <Alpha childKey="Blip3" duration="0.25" fromAlpha="1" toAlpha="0" order="1"/>
+                        <Alpha childKey="Blip4" duration="0.25" fromAlpha="1" toAlpha="0" order="1"/>
+
+                        <Alpha childKey="Trail1" duration="0.25" fromAlpha="1" toAlpha="0" order="1"/>
+                        <Alpha childKey="Trail2" duration="0.25" fromAlpha="1" toAlpha="0" order="1"/>
+                        <Alpha childKey="Trail3" duration="0.25" fromAlpha="1" toAlpha="0" order="1"/>
+                        <Alpha childKey="Trail4" duration="0.25" fromAlpha="1" toAlpha="0" order="1"/>
+
+                        <Alpha childKey="WhiteBorder" duration="0.35" fromAlpha="1" toAlpha="0" order="1"/>
+                        <Scripts>
+                            <OnFinished>
+                                self:GetParent():Release();
+                            </OnFinished>
+                        </Scripts>
+                    </AnimationGroup>
+                </Animations>
+                <Scripts>
+                    <OnLoad method="OnLoad"/>
+                    <OnUpdate method="OnUpdate"/>
+                </Scripts>
+            </Frame>
+        </Frames>
+        <Scripts>
+            <OnLoad>
+                self.Icon:SetTexture(1373912);
+            </OnLoad>
+            <OnClick>
+                self.ActivationAlert:PlayIntro(3);
+            </OnClick>
+        </Scripts>
+    </Button-->
 </Ui>

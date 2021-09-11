@@ -944,6 +944,7 @@ do
 					recipe.isValidated = true
 					recipe:SetSkillLevels(0, 0, 0, 0, 0)
 					recipe:AddFilters(private.FILTER_IDS.ALLIANCE, private.FILTER_IDS.HORDE, private.FILTER_IDS.TRAINER)
+					recipe:AddCustom("UNKNOWN")
 
 					addon:Printf("Added '%s (%d)' to %s. Do a profession dump.", recipeInfo.name, recipeID, localizedProfessionName)
 				end
@@ -1070,6 +1071,9 @@ do
 				-- ----------------------------------------------------------------------------
 				HELLFIRE = (is_alliance and LFAC.HONOR_HOLD or LFAC.THRALLMAR),
 				NAGRAND = (is_alliance and LFAC.KURENAI or LFAC.MAGHAR),
+				ZANDALAR = (is_alliance and LFAC.STORMS_WAKE or LFAC.ZANDALARI_EMPIRE),
+				LEGION = (is_alliance and LFAC.SEVENTH_LEGION or LFAC.THE_HONORBOUND),
+				PROUDMOORE = (is_alliance and LFAC.PROUDMOORE_ADMIRALTY or LFAC.TALANJIS_EXPEDITION),
 			}
 
 			for rep_label in private.FACTION_IDS_FROM_LABEL do

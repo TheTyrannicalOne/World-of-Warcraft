@@ -3302,5 +3302,26 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(184690, "BIND_ON_EQUIP")
 	recipe:AddVendor(55103)
 
+	-- Twilight Tea -- 354764
+	recipe = AddRecipe(354764, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 75, 75, 75, 75)
+	recipe:SetRecipeItem(187006, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(186704, "BIND_ON_EQUIP")
+	recipe:AddCustom("KORTHIA_TREASURES")
+
+	-- Bonemeal Bread -- 354766
+	recipe = AddRecipe(354766, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(35, 35, 50, 52, 55)
+	recipe:SetRecipeItem(187007, "BIND_ON_EQUIP")
+	recipe:SetCraftedItem(186725, "BIND_ON_EQUIP")
+	recipe:AddCustom("KORTHIA_TREASURES")
+
+	-- Porous Rock Candy -- 354768
+	recipe = AddRecipe(354768, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(25, 25, 30, 32, 35)
+	recipe:SetRecipeItem(187008, "BIND_ON_EQUIP")
+	recipe:SetCraftedItem(186726, "BIND_ON_EQUIP")
+	recipe:AddCustom("KORTHIA_TREASURES")
+
 	self.InitializeRecipes = nil
 end

@@ -485,12 +485,12 @@ end
 --[[
 GameTooltip:HookScript("OnTooltipSetItem", function(f)
     local name, link = f:GetItem();
-    link = string.match(link, "item[%-?%d:]+")
+    link = string.match(link, "item:([%-?%d:]+)")
     GameTooltip:AddLine(link);
     GameTooltip:Show();
 end);
---]]
---[[
+
+
 /script DEFAULT_CHAT_FRAME:AddMessage("\124cffa335ee\124Hitem:187284::::::::60:::::\124h[Ominous Shard of Bek]\124h\124r");
 --]]
 

@@ -42,7 +42,6 @@ module.ITEM_FILTER_TYPES = {
 	JEWELCRAFTING_PET = true,
 	JEWELCRAFTING_ITEM_ENHANCEMENT = true,
 	JEWELCRAFTING_STAFF = true,
-	JEWELCRAFTING_COSMETIC = true,
 }
 
 function module:InitializeItemFilters(parent_panel)
@@ -169,7 +168,6 @@ function module:InitializeItemFilters(parent_panel)
 		jewelcrafting_mount		= { tt = L["FILTER_DESC_FORMAT"]:format(_G.MOUNTS),		text = _G.MOUNTS,		row = 2, col = 1 },
 		jewelcrafting_pet		= { tt = L["FILTER_DESC_FORMAT"]:format(_G.PETS),		text = _G.PETS,			row = 2, col = 2 },
 		jewelcrafting_item_enhancement	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Item Enhancement"]),	text = L["Item Enhancement"],	row = 3, col = 1 },
-		jewelcrafting_cosmetic 		= { tt = L["FILTER_DESC_FORMAT"]:format(_G.ITEM_COSTMETIC),	text = _G.ITEM_COSTMETIC,	row = 3, col = 2 },
 	}
 
 	general_toggle:SetScript("OnClick", function(self, button)

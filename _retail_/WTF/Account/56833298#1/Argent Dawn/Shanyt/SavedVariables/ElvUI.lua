@@ -1,6 +1,30 @@
 
 ElvCharacterDB = {
+	["CliqueDatatext"] = {
+	},
 	["ConvertKeybindings"] = true,
+	["ChatEditHistory"] = {
+		"/npcscan add 66933 Kishak", -- [1]
+		"/npcscan add 66932 Akkalou", -- [2]
+		"/raid thanks for the group", -- [3]
+		"/s it says we need to launch 30", -- [4]
+		"/s zandi said he was porting to get some and will be back", -- [5]
+		"/npcscan add 66934 Damlak", -- [6]
+		"/raise", -- [7]
+		"/paste", -- [8]
+		"/wave", -- [9]
+		"/invite lillys-blackhand", -- [10]
+		"/s two druids just went to get some", -- [11]
+		"/s launch fireworks out the launchers he raises out the water and we kill him", -- [12]
+		"/npcscan add 66938 Odd'nirok", -- [13]
+		"/cw Frankdukes-DemonSoul Thanks!", -- [14]
+		"/invite blackhand-lillys", -- [15]
+		"/s thats what i dont remebre i will look on wowhead in a second find out", -- [16]
+		"/s nice", -- [17]
+		"/npcscan add 66937 Akkalar", -- [18]
+		"/npcscan add 66935 Clamstok", -- [19]
+		"/paste show", -- [20]
+	},
 	["ChatHistoryLog"] = {
 		{
 			"Removed: Reconstructing \"Fear and Flesh\"", -- [1]
@@ -2180,29 +2204,5 @@ ElvCharacterDB = {
 			[51] = 1626027503,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
-	},
-	["ChatEditHistory"] = {
-		"/npcscan add 66933 Kishak", -- [1]
-		"/npcscan add 66932 Akkalou", -- [2]
-		"/raid thanks for the group", -- [3]
-		"/s it says we need to launch 30", -- [4]
-		"/s zandi said he was porting to get some and will be back", -- [5]
-		"/npcscan add 66934 Damlak", -- [6]
-		"/raise", -- [7]
-		"/paste", -- [8]
-		"/wave", -- [9]
-		"/invite lillys-blackhand", -- [10]
-		"/s two druids just went to get some", -- [11]
-		"/s launch fireworks out the launchers he raises out the water and we kill him", -- [12]
-		"/npcscan add 66938 Odd'nirok", -- [13]
-		"/cw Frankdukes-DemonSoul Thanks!", -- [14]
-		"/invite blackhand-lillys", -- [15]
-		"/s thats what i dont remebre i will look on wowhead in a second find out", -- [16]
-		"/s nice", -- [17]
-		"/npcscan add 66937 Akkalar", -- [18]
-		"/npcscan add 66935 Clamstok", -- [19]
-		"/paste show", -- [20]
-	},
-	["CliqueDatatext"] = {
 	},
 }

@@ -1,24 +1,24 @@
-tag 9c83ede2f1f30c1d77a13e3425cc71d98826521e 9.0.1.1
+tag 55791ffaa75ec2c9159e48c8af877ad74ccb13f2 9.1.0.1
 Author:	Ressy <resa1983@hotmail.com>
-Date:	Mon Jun 28 13:37:12 2021 -0400
+Date:	Tue Sep 7 22:01:17 2021 -0400
 
-9.0.1.1 update
+9.1 update
 
-commit ed1d94fcbc2cfd8f81628c676b54ef291f391e2d
+commit 1eb0e3ef97076e1b8f016d8b6f3e5b98623f934f
 Author: Ressy <resa1983@hotmail.com>
-Date:   Mon Jun 28 13:27:34 2021 -0400
+Date:   Tue Sep 7 21:51:23 2021 -0400
 
-    Update Module Version
+    Bump TOC
 
-commit 729d4224f4a98790d276c4ee142639948e7f0290
+commit ed99dab588bf0fdde55f2a66f6ab7dd847cd8fc2
 Author: Ressy <resa1983@hotmail.com>
-Date:   Mon Jun 28 13:26:31 2021 -0400
+Date:   Tue Sep 7 21:51:16 2021 -0400
 
-    Fix skill levels
+    Add 9.1 items
 
-commit 6b99fd9df40c792e5cef1c3ad79dc274d2924d2a
+commit 54e7cbf7ca7f6e73fba8b061ff2bea5caae065bb
 Author: Ressy <resa1983@hotmail.com>
-Date:   Mon Jun 28 13:26:21 2021 -0400
+Date:   Tue Sep 7 21:51:01 2021 -0400
 
-    Removal of World Quest Custom
+    Fix reputations
 

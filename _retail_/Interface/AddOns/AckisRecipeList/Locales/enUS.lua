@@ -5,8 +5,8 @@ enUS localization strings for Ackis Recipe List
 ************************************************************************
 File date: 2012-08-18T4:52:05Z 
 File revision: 4d6b8e446c1381fe41575a671a6c54702932e4db 
-Project revision: 237aa06c29296dad9ac1d16a4e9dc51561544827
-Project version: 9.0.1.1
+Project revision: 4b46d7a850f4ee4873208a2b7720256a7b9993f6
+Project version: 9.1.0.1
 ************************************************************************
 Translation credits: http://www.wowace.com/addons/arl/localization/translators/
 
@@ -128,6 +128,7 @@ L["Arcatraz Sentinel"] = true
 L["ARCH_DROP_ULD"] = "This recipe is a random drop from a \"Canopic Jar\" while collecting artifacts for Archaeology."
 L["ARCHAEOLOGY_HIGHBORNE"] = "Available from Highborne Archaeology digsites."
 L["Archivist Janeera"] = true
+L["Archivist Roh-Suir"] = true
 L["Archmage Alvareaux"] = true
 L["Aresella"] = true
 L["Argent Quartermaster Hasana"] = true
@@ -225,6 +226,7 @@ L["Bowen Brisboise"] = true
 L["Bracer"] = true
 L["Bradley Towns"] = true
 L["Braeg Stoutbeard"] = true
+L["Bragni"] = true
 L["Brandig"] = true
 L["Brawn"] = true
 L["BRD_MAIL"] = "There are four spawn spots in Blackrock Depths: just before entering the Manufactory, in Golem Lord Arglemach's room, in the Manufactory on a bench, or in the Mold Foundry."
@@ -440,6 +442,7 @@ L["DISCOVERY_COOK_LEGION"] = "Discovered randomly via Nomi's Test Kitchen."
 L["DISCOVERY_COOK_NOMI"] = "Discovered randomly via researching at Nomi's Test Kitchen - Research with ingredient of recipe you want."
 L["DISCOVERY_DESC"] = "Recipes obtained through Discovery should be included in the scan."
 L["DISCOVERY_ENG_BFA"] = "Discovered randomly from creating a lower iLvl item in the same slot."
+L["DISCOVERY_ENG_ULT"] = "Discovered when you make Ultimate Gnomish Army Knife for the first time."
 L["DISCOVERY_INSC_AUTOLEARN"] = "Automatically learned at the appropriate skill level."
 L["DISCOVERY_INSC_BLACKFALLOW"] = "Obtained randomly via Research: Blackfallow Ink, or from Research: Warbinder's Ink if you have all Glyphs made from Warbinder's Ink."
 L["DISCOVERY_INSC_CELESTIAL"] = "Obtained randomly via Research: Celestial Ink, or from Research: Warbinder's Ink if you have all Glyphs made from Warbinder's Ink."
@@ -804,6 +807,7 @@ L["INSTANCE_DESC"] = "Recipes obtained from (5 man) instances should be included
 L["Instructor Alikana"] = true
 L["Instructor Okanu"] = true
 L["Instructor Ulooaka"] = true
+L["INVASIVE_MAWSHROOM"] = "Randomly obtained when looting Invasive Mawshrooms in Korthia."
 L["Iranis Shadebloom"] = true
 L["Iron Rune-Shaper"] = true
 L["Ironus Coldsteel"] = true
@@ -885,6 +889,7 @@ L["Kaye Toogie"] = true
 L["Keelen Sheets"] = true
 L["Keena"] = true
 L["Keeper Raynae"] = true
+L["Keeper Ta'hult"] = true
 L["Kelgruk Bloodaxe"] = true
 L["Kelsey Yance"] = true
 L["Kendor Kabonka"] = true
@@ -908,6 +913,7 @@ L["Kol Ironpaw"] = true
 L["Koren"] = true
 L["Kor'geld"] = true
 L["Korim"] = true
+L["KORTHIA_TREASURES"] = "Randomly found in Treasures in Korthia."
 L["Kraank"] = true
 L["Kradu Grimblade"] = true
 L["Krek Cragcrush"] = true
@@ -1214,6 +1220,9 @@ L["Primal Ooze"] = true
 L["Primal Stalker"] = true
 L["PRISMATIC_GEM"] = "Prismatic"
 L["Pristy Quickcharge"] = true
+L["PROF_ARCH_HIGH"] = "Available via doing Archaeology in Highmountain."
+L["PROF_FISH_AZSU"] = "Available via Fishing in Azsuna."
+L["PROF_FISH_SURA"] = "Available via Fishing in Suramar."
 L["Professor Pallin"] = true
 L["Professor Thaddeus Paleo"] = true
 L["Profile"] = true
@@ -1269,6 +1278,7 @@ L["Recipes In Tooltips"] = true
 L["Recorder Lidio"] = true
 L["Refik"] = true
 L["Rekka the Hammer"] = true
+L["RELIC_CACHE"] = "Randomly drops from a Relic Cache, which spawn randomly in Korthia."
 L["REMOVED_FROM_GAME"] = "This recipe has been removed from the game, but may still be obtainable if someone still has the recipe item."
 L["Reporting Bugs"] = true
 L["REPORTING_BUGS_DESC"] = [=[When reporting a bug, please make sure you do the following:
@@ -1290,6 +1300,7 @@ L["RETIRED_DESC"] = "Include recipes which can no longer be acquired."
 L["Ribbly's Crony"] = true
 L["Rift Keeper"] = true
 L["Rift Lord"] = true
+L["RIFTBOUND_CACHE"] = "Randomly drops from Riftbound Caches, which spawn in rifts in Korthia."
 L["Right"] = true
 L["Rikqiz"] = true
 L["Ring"] = true

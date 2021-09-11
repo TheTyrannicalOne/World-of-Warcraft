@@ -13,11 +13,11 @@ DialogKeyDB = {
 		["Vadder - Argent Dawn"] = "Default",
 		["Tyran - Argent Dawn"] = "Default",
 		["Kotalkhan - Zul'jin"] = "Default",
-		["Banesmuncy - Zul'jin"] = "Default",
+		["Dachas - Zul'jin"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
 		["Abyronterner - Zul'jin"] = "Default",
 		["Jasmoney - Zul'jin"] = "Default",
-		["Dachas - Zul'jin"] = "Default",
+		["Banesmuncy - Zul'jin"] = "Default",
 		["Mandles - Zul'jin"] = "Default",
 	},
 	["global"] = {

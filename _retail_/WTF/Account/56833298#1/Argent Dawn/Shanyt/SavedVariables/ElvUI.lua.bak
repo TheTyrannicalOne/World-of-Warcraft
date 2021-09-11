@@ -1,5 +1,6 @@
 
 ElvCharacterDB = {
+	["ConvertKeybindings"] = true,
 	["ChatHistoryLog"] = {
 		{
 			"Removed: Reconstructing \"Fear and Flesh\"", -- [1]
@@ -2180,8 +2181,6 @@ ElvCharacterDB = {
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},
-	["CliqueDatatext"] = {
-	},
 	["ChatEditHistory"] = {
 		"/npcscan add 66933 Kishak", -- [1]
 		"/npcscan add 66932 Akkalou", -- [2]
@@ -2204,5 +2203,6 @@ ElvCharacterDB = {
 		"/npcscan add 66935 Clamstok", -- [19]
 		"/paste show", -- [20]
 	},
-	["ConvertKeybindings"] = true,
+	["CliqueDatatext"] = {
+	},
 }

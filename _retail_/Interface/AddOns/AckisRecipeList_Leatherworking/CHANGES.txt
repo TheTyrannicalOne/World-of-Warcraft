@@ -1,30 +1,30 @@
-tag fe8f7cd98bc09c5e99f9c969a4f44fe38cd95ab2 9.0.1.1
+tag a2b54506dd1bc5247ac0ea99626025e5cdd785f7 9.1.0.1
 Author:	Ressy <resa1983@hotmail.com>
-Date:	Mon Jun 28 13:32:12 2021 -0400
+Date:	Tue Sep 7 22:05:22 2021 -0400
 
-9.0.1.1 update
+9.1 update
 
-commit e8e85f3459fadc5f7862bd09ae5e64d377a7b783
+commit 93be73d6b9e985dec057632513ab66f283d2d90a
 Author: Ressy <resa1983@hotmail.com>
-Date:   Sun Jun 27 20:24:39 2021 -0400
+Date:   Tue Sep 7 21:36:01 2021 -0400
 
-    Update to Module Version 4
+    Bump TOC
 
-commit 767abb3f47442c3665b13d1fc251c26c28725894
+commit c5d939a0c35451bebdb79d66bcb3c49317ddbb5f
 Author: Ressy <resa1983@hotmail.com>
-Date:   Sun Jun 27 20:24:26 2021 -0400
+Date:   Tue Sep 7 21:35:53 2021 -0400
 
-    Fix Shadowlands recipes
+    Rescans of vendors - fix minor issues
 
-commit d8fcceec3c8166f787aedc438325f03d19d5944d
+commit 88db96edd82c6e8a7bf143944fb7d1b143ea4e6b
 Author: Ressy <resa1983@hotmail.com>
-Date:   Sun Jun 27 20:24:08 2021 -0400
+Date:   Tue Sep 7 21:35:29 2021 -0400
 
-    Remove World Quest Custom
+    More 9.1 stuff
 
-commit 00d7a698fac4dfb0a2f3330cd4b76e579f2a3ea1
+commit 7ef3da22288ee83f54ee26294097ea9ff96b3c48
 Author: Ressy <resa1983@hotmail.com>
-Date:   Wed Nov 18 20:59:08 2020 -0500
+Date:   Tue Sep 7 21:35:14 2021 -0400
 
-    Rescan of Leatherworking
+    Fix 9.1 issues
 

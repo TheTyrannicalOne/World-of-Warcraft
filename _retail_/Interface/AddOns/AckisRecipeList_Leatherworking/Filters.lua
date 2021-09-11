@@ -38,6 +38,7 @@ module.ITEM_FILTER_TYPES = {
 	LEATHERWORKING_SHIELD = true,
 	LEATHERWORKING_SHOULDER = true,
 	LEATHERWORKING_THROWN = true,
+	LEATHERWORKING_TOY = true,
 	LEATHERWORKING_WAIST = true,
 	LEATHERWORKING_WRIST = true,
 }
@@ -117,6 +118,7 @@ function module:InitializeItemFilters(parent_panel)
 		leatherworking_created_item	= { tt = L["FILTER_DESC_FORMAT"]:format(_G.NONEQUIPSLOT),	text = _G.NONEQUIPSLOT,		row = 1, col = 2 },
 		leatherworking_item_enhancement	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Item Enhancement"]),	text = L["Item Enhancement"],	row = 2, col = 1 },
 		leatherworking_materials	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Materials"]),	text = L["Materials"],		row = 2, col = 2 },
+		leatherworking_toy 		= { tt = L["FILTER_DESC_FORMAT"]:format(_G.TOY_BOX),		text = _G.TOY_BOX,		row = 3, col = 1 },
 	}
 
 	general_toggle:SetScript("OnClick", function(self, button)

@@ -3,6 +3,9 @@ This work is licensed under the Creative Commons Attribution-NonCommercial-Share
 --]]
 
 --Settings storaged in NarcissusDB
+local _, addon = ...
+local MsgAlertContainer = addon.MsgAlertContainer;
+
 local Narci = Narci;
 
 Narci.refreshCombatRatings = true;
@@ -78,24 +81,51 @@ local TakenOutFrames = {
 	[3] = ItemSocketingFrame,			--
 	[4] = ArtifactFrame,				--
 }
---]]
 
-local function TakeOutFromUIParent(frame, FrameStrata, bool) --take out frames from UIParent, so they will still be visible when UI is hidden
+local function TakeOutFromUIParent(frame, frameStrata, state)
 	local effectiveScale = UIParent:GetEffectiveScale();
-	FrameStrata = FrameStrata or "MEDIUM";
+	frameStrata = frameStrata or "MEDIUM";
 
 	if frame then
-		if bool == true then
+		if state then
 			frame:SetParent(nil);
-			frame:SetFrameStrata(FrameStrata);
+			frame:SetFrameStrata(frameStrata);
 			frame:SetScale(effectiveScale);
-		elseif bool == false or bool == nil then
+		else
 			frame:SetScale(1);
 			frame:SetParent(UIParent);
-			frame:SetFrameStrata(FrameStrata);
+			frame:SetFrameStrata(frameStrata);
 		end
 	end
 end
+--]]
+
+--take out frames from UIParent, so they will still be visible when UI is hidden
+local function TakeOutFrames(state)
+	local frameNames = {
+		"AzeriteEmpoweredItemUI", "AzeriteEssenceUI", "ItemSocketingFrame",
+	};
+	local frame;
+	if state then
+		local scale = UIParent:GetEffectiveScale();
+		for _, frameName in pairs(frameNames) do
+			frame = _G[frameName];
+			if frame then
+				frame:SetParent(nil);
+				frame:SetScale(scale);
+			end
+		end
+	else
+		for _, frameName in pairs(frameNames) do
+			frame = _G[frameName];
+			if frame then
+				frame:SetParent(UIParent);
+				frame:SetScale(1);
+			end
+		end
+	end
+end
+
 
 local DefaultTooltip;
 function Narci_ShowButtonTooltip(self)
@@ -487,23 +517,31 @@ SmoothShoulder:SetScript("OnUpdate", function(self, elapsed)
 end);
 
 SmoothShoulder:SetScript("OnHide", function(self)
-	self.t = 0
+	self.t = 0;
 end);
 
-local function SmoothShoulderCVar(toPoint)
-	SmoothShoulder:Hide();
+local function SmoothShoulderCVar(toPoint, clampToZero)
+	if not toPoint then
+		return
+	end
+	if clampToZero then
+		if toPoint < 0 then
+			toPoint = 0;
+		end
+	end
+	SmoothShoulder.t = 0;
 	SmoothShoulder.toPoint = toPoint;
 	SmoothShoulder:Show();
 end
 
 local UpdateShoulderCVar = {};
-function UpdateShoulderCVar:Start(increment)
+function UpdateShoulderCVar:Start(increment, clampToZero)
 	if ( not self.pauseUpdate ) then
 		self.zoom = GetCameraZoom();
 		self.pauseUpdate = true;
 		After(0.1, function()    -- Execute after 0.1s
 			self.pauseUpdate = nil;
-			SmoothShoulderCVar(self.zoom * Shoulder_Factor1 + Shoulder_Factor2 + MogModeOffset);
+			SmoothShoulderCVar(self.zoom * Shoulder_Factor1 + Shoulder_Factor2 + MogModeOffset, clampToZero);
 		end)
 	end
 	self.zoom = self.zoom + increment;
@@ -789,7 +827,7 @@ local function ExitFunc()
 	end
 
 	ConsoleExec( "pitchlimit 88");
-	
+
 	FadeFrame(Narci_Vignette, 0.5, 0);
 	if Narci_Attribute:IsVisible() then
 		Narci_Attribute.animOut:Play();
@@ -816,6 +854,7 @@ local function ExitFunc()
 	Narci.isAFK = false;
 
 	DefaultTooltip:Hide();
+	MsgAlertContainer:Hide();
 end
 
 --[[
@@ -926,7 +965,7 @@ function NarciMinimapButtonMixin:CreatePanel()
 	local button;
 	local buttons = {};
 
-	local LOCALIZED_NAMES = {L["Photo Mode"], DRESSUP_FRAME, "Wardrobe (WIP)", ACHIEVEMENT_BUTTON};	-- CHARACTER_BUTTON, "Character Info" "Dressing Room" "Achievements"
+	local LOCALIZED_NAMES = {L["Photo Mode"], DRESSUP_FRAME, "Wardrobe", ACHIEVEMENT_BUTTON};	-- CHARACTER_BUTTON, "Character Info" "Dressing Room" "Achievements"
 	local frameNames = {};
 	frameNames[4] = "Narci_Achievement";
 
@@ -937,7 +976,7 @@ function NarciMinimapButtonMixin:CreatePanel()
 			Narci_ShowDressingRoom();
 		end,
 
-		nil,	--Narci_Outfit:Open();
+		nil,	--function() Narci_Outfit:Open() end,
 
 		function()
 			if not Narci_AchievementFrame then
@@ -1297,18 +1336,24 @@ function NarciMinimapButtonMixin:SetBackground(index)
 	if not index then
 		index = C_Covenants.GetActiveCovenantID();
 	end
-	local minimapTexture = "Interface/AddOns/Narcissus/Art/Minimap/LOGO-";
-	if index == 2 then
-		--Venthyr
-		minimapTexture = minimapTexture.."Brown";
-	elseif index == 4 then
-		--Necrolord
-		minimapTexture = minimapTexture.."Green";
+	local prefix = "Interface/AddOns/Narcissus/Art/Minimap/LOGO-";
+	local tex;
+
+	if IsAddOnLoaded("SexyMap") then
+		tex = prefix.."Hollow";
 	else
-		minimapTexture = minimapTexture.."Cyan";
+		if index == 2 then
+			--Venthyr
+			tex = prefix.."Brown";
+		elseif index == 4 then
+			--Necrolord
+			tex = prefix.."Green";
+		else
+			tex = prefix.."Cyan";
+		end
 	end
-	self.Background:SetTexture(minimapTexture);
-	self.Color:SetTexture(minimapTexture);
+	self.Background:SetTexture(tex);
+	self.Color:SetTexture(tex);
 end
 
 function NarciMinimapButtonMixin:SetIconScale(scale)
@@ -2296,10 +2341,7 @@ function NarciEquipmentSlotMixin:PostClick(button)
 		else
 			PaperDollItemSlotButton_OnModifiedClick(self, button);
 			
-			TakeOutFromUIParent(AzeriteEmpoweredItemUI, "MEDIUM", true);
-			TakeOutFromUIParent(AzeriteEssenceUI, "MEDIUM", true);
-			TakeOutFromUIParent(ItemSocketingFrame, "MEDIUM", true);
-			TakeOutFromUIParent(ArtifactFrame, "MEDIUM", true);
+			TakeOutFrames(true);
 			SetItemSocketingFramePosition(self);
 		end
 	else
@@ -3908,10 +3950,7 @@ function Narci_Open()
 		Narci_ModelSettings:Hide();
 
 		Toolbar:FlyOut();
-		TakeOutFromUIParent(AzeriteEmpoweredItemUI, "MEDIUM", false);
-		TakeOutFromUIParent(AzeriteEssenceUI, "MEDIUM", false);
-		TakeOutFromUIParent(ArtifactFrame, "MEDIUM", false);
-		TakeOutFromUIParent(ItemSocketingFrame, "MEDIUM", false);
+		TakeOutFrames(false);
 
 		Narci.showExitConfirm = false;
 	end
@@ -3982,6 +4021,7 @@ function Narci_OpenGroupPhoto()
 		end)
 		
 		Narci.isActive = true;
+		MsgAlertContainer:Display();
 	end
 
 	NarciAPI.UpdateSessionTime();
@@ -4000,9 +4040,9 @@ end
 local function CameraControlBarThumb_Reposition(self, ofsx)
 	self:GetParent().Thumb:SetPoint("CENTER", ofsx, 0);
 	NarciCameraOffsetControlBar.PosX = ofsx;
-	SetCVar("test_cameraOverShoulder", 0 - ofsx/20)	--Ajust the Zoom - Shoulder factor
+	SetCVar("test_cameraOverShoulder", 0 - ofsx/20)	--Ajust the zoom - Shoulder factor
 	local currentShoulder = GetCVar("test_cameraOverShoulder");
-	local Zoom = GetCameraZoom();
+	local zoom = GetCameraZoom();
 end
 
 function CameraControlBar_DraggingFrame_OnUpdate(self)
@@ -4035,9 +4075,9 @@ function CameraControlBarThumb_OnClick(self, button, down)
 		NarciCameraOffsetControlBar.PosX = 0;
 		NarciCameraOffsetControlBar.PosRadian = 0;
 	end)
-	local Zoom = GetCameraZoom()
-	SmoothShoulderCVar(Shoulder_Factor1*Zoom + Shoulder_Factor2)
-	self:GetParent().Thumb.Reading:SetText(string.format(0))
+	local zoom = GetCameraZoom()
+	SmoothShoulderCVar(Shoulder_Factor1*zoom + Shoulder_Factor2);
+	self:GetParent().Thumb.Reading:SetText(string.format(0));
 end
 
 local shaftDiameter = 53;
@@ -4356,7 +4396,7 @@ local function PlayCheckSound(self, state)
 	end
 end
 
-local function ActiveXmogMode()
+local function ActivateMogMode()
 	Narci_GuideLineFrame.VirtualLineRight.AnimFrame:Hide();
 
 	if MOG_MODE then
@@ -4375,19 +4415,21 @@ local function ActiveXmogMode()
 
 		UseXmogLayout(xmogMode);
 		NarciPlayerModelFrame1.xmogMode = xmogMode;
+		MsgAlertContainer:Display();
 	else
 		Narci_GuideLineFrame.VirtualLineRight.AnimFrame.toX = Narci_GuideLineFrame.VirtualLineRight.AnimFrame.defaultX
 		if Toolbar:IsShown() then
 			Narci_GuideLineFrame.VirtualLineRight.AnimFrame:Show()
 			FadeFrame(Narci_Attribute, 0.5, 1)
-			local Zoom = GetCameraZoom()
-			SmoothShoulderCVar(Shoulder_Factor1*Zoom + Shoulder_Factor2)
+			local zoom = GetCameraZoom()
+			SmoothShoulderCVar(Shoulder_Factor1*zoom + Shoulder_Factor2)
 		end
 		FadeFrame(Narci_XmogNameFrame, 0.2, 0)
 		ShowAttributeButton();
 		xmogMode = 0;
 		MogModeOffset = 0;
 		NarciPlayerModelFrame1.xmogMode = 0;
+		MsgAlertContainer:Hide();
 	end
 end
 
@@ -4413,11 +4455,11 @@ function Narci_XmogButton_OnClick(self)
 			if IS_OPENED then
 				CameraMover:Pitch();
 			else
-				SmoothShoulderCVar(0)
+				--SmoothShoulderCVar(0);
 			end
 			Narci_PlayerModelAnimOut:Show()
 			After(0.4, function()
-				FadeFrame(NarciPlayerModelFrame1, 0.5 , 0)
+				FadeFrame(NarciPlayerModelFrame1, 0.5 , 0);
 			end)
 		end
 		Narci_ModelSettings:Hide();
@@ -4435,7 +4477,7 @@ function Narci_XmogButton_OnClick(self)
 		self.Icon:SetTexCoord(0.5, 1, 0, 1);
 		PopUp:Show();
 		PopUp.AnimFrame:Hide();
-		PopUp.AnimFrame.OppoDirection = false		
+		PopUp.AnimFrame.OppoDirection = false;
 		PopUp.AnimFrame:Show();
 		PopUp.AnimFrame.toY = 8;
 		Narci_XmogNameFrame.PlayerName:SetText(Narci_PlayerInfoFrame.PlayerName:GetText())
@@ -4444,12 +4486,12 @@ function Narci_XmogButton_OnClick(self)
 	
 	SlotController:LazyRefresh();
 	After(0.1, function()
-		ActiveXmogMode();
+		ActivateMogMode();
 	end)
 
 	NarciTooltip:FadeOut();
 
-	TemporarilyHidePopUp(Narci_EmoteButtonPopUp)
+	TemporarilyHidePopUp(Narci_EmoteButtonPopUp);
 end
 
 local function UpdateXmogName(SpecOnly)
@@ -5104,6 +5146,7 @@ end
 function NarciPhotoModeToolbarMixin:OnShow()
 	self:RegisterEvent("PLAYER_LOGOUT");
 	ColorUtil:UpdateByMapID();
+	self.AutoHideContainer:Show();
 end
 
 function NarciPhotoModeToolbarMixin:OnEvent(event)
@@ -5123,7 +5166,11 @@ function NarciPhotoModeToolbarMixin:FlyIn(toAlpha)
 	f.fromY = -80;
 	f.toY = 10;
 	f.fromAlpha = 0;
-	f.toAlpha = toAlpha or f.defaultAlpha;
+	if self.AutoHideContainer:IsMouseOver() then
+		f.toAlpha = 1;
+	else
+		f.toAlpha = toAlpha or f.defaultAlpha;
+	end
 	f:Show();
 	f.shouldHide = nil;
 	self:Show();
@@ -5138,6 +5185,9 @@ end
 
 function NarciPhotoModeToolbarMixin:FlyOut()
 	local f = self.animFly;
+	if f.toY == -80 then
+		return
+	end
 	f:Hide();
 	f.total = 0;
 	f.fromY = 10;
@@ -5146,6 +5196,32 @@ function NarciPhotoModeToolbarMixin:FlyOut()
 	f.toAlpha = 0;
 	f.shouldHide = true;
 	f:Show();
+end
+
+function NarciPhotoModeToolbarMixin:UseLowerLevel(state)
+	local strata;
+	if state then
+		strata = "BACKGROUND";
+		self:DisableMotion();
+	else
+		strata = "HIGH";
+		self:EnableMotion();
+	end
+	self:SetFrameStrata(strata);
+	self.PreferenceToggle:SetFrameStrata(strata);
+	self.AutoHideContainer:SetFrameStrata("LOW");
+	self.MotionBlock:SetFrameStrata("BACKGROUND");
+	self.MotionBlock:SetFrameLevel(self:GetFrameLevel() + 3);
+	self.MotionBlock:SetShown(state);
+end
+
+function NarciPhotoModeToolbarMixin:DisableMotion()
+	self.AutoHideContainer:Hide();
+	self:SetAlpha(0);
+end
+
+function NarciPhotoModeToolbarMixin:EnableMotion()
+	self.AutoHideContainer:Show();
 end
 
 function Narci_PhotoModeButton_OnClick(self, key)
@@ -5166,10 +5242,10 @@ function Narci_PhotoModeButton_OnClick(self, key)
 	
 	if self.IsOn then
 		self.Icon:SetTexCoord(0.25, 0.5, 0.75, 1);
-		PhotoModeControllerBar:SetAlpha(1)
+		Toolbar.Bar:SetAlpha(1)
 	else
 		self.Icon:SetTexCoord(0, 0.25, 0.75, 1);
-		PhotoModeControllerBar:SetClipsChildren(true);
+		Toolbar.Bar:SetClipsChildren(true);
 	end
 
 	NarciTooltip:FadeOut();
@@ -5177,34 +5253,29 @@ function Narci_PhotoModeButton_OnClick(self, key)
 	TemporarilyHidePopUp(Narci_EmoteButtonPopUp);
 end
 
-hooksecurefunc("SetUIVisibility", function(bool)
+hooksecurefunc("SetUIVisibility", function(state)
 	if IS_OPENED then		--when Narcissus hide the UI
-		if not bool then
+		if state then
+			MsgAlertContainer:SetDND(true);
+			Toolbar:UseLowerLevel(true);
+		else
 			if NarcissusDB.PhotoModeButton.HideTexts and (not Narci_HideTextsButton.IsOn) then
 				Narci_HideTextsButton:Click();
 			end
 			local bar = Toolbar;
-			bar.ExitButton:Show();
+			Toolbar.ExitButton:Show();
 			if not bar:IsShown() then
 				bar:Show();
 			end
+			MsgAlertContainer:SetDND(false);
+			bar:UseLowerLevel(false);
 		end
 	else						--when user hide the UI manually
-		if not bool then
-			local bar = Toolbar;
-			if not bar:IsShown() then
-				CVarTemp.OverShoulder = GetCVar("test_cameraOverShoulder");
-			end
-			bar:FlyIn(0);
-			bar.ExitButton:Hide();
-			if NarcissusDB.PhotoModeButton.HideTexts and (not Narci_HideTextsButton.IsOn) then
-				Narci_HideTextsButton:Click();
-			end
-			Narci_XmogButton:Disable();
-		else
+		if state then
 			--When player closes the full-screen world map, SetUIVisibility(true) fires twice, and WorldMapFrame:IsShown() returns true and false.
 			--Thus, use this VisibilityTracker instead to check if WorldMapFrame has been closed recently.
 			--WorldMapFrame.VisibilityTracker.state
+			MsgAlertContainer:Hide();
 			if Narci_Character:IsShown() then return; end
 			SmoothShoulderCVar(CVarTemp.OverShoulder);
 			if not GetKeepActionCam() then
@@ -5216,9 +5287,19 @@ hooksecurefunc("SetUIVisibility", function(bool)
 				Toolbar:FlyOut();
 				NarciCameraOffsetControlBar.Thumb:SetPoint("CENTER", 0, 0);
 			end
+		else
+			local bar = Toolbar;
+			if not bar:IsShown() then
+				CVarTemp.OverShoulder = GetCVar("test_cameraOverShoulder");
+			end
+			bar:FlyIn(0);
+			bar.ExitButton:Hide();
+			if NarcissusDB.PhotoModeButton.HideTexts and (not Narci_HideTextsButton.IsOn) then
+				Narci_HideTextsButton:Click();
+			end
+			Narci_XmogButton:Disable();
 		end
 	end
-
 end)
 
 SLASH_NARCI1 = "/narci";
@@ -5364,12 +5445,12 @@ local function Controller_AnimationSequence_OnUpdate(self, elapsed)
 
 		if not PlayAnimationSequence(self.Index, self.SequenceInfo, self.Target) then
 			Narci_PhotoModeButton:SetAlpha(1);
-			PhotoModeControllerBar:SetAlpha(1);
+			Toolbar.Bar:SetAlpha(1);
 			if self.OppoDirection then
 				FadeFrame(PhotoModeControllerTransition.Sequence, 0.2, 0)
 				HideContollerButton(false)
 				Narci_PhotoModeButton:SetAlpha(1);
-				PhotoModeControllerBar:SetAlpha(1);
+				Toolbar.Bar:SetAlpha(1);
 				NarciCameraOffsetControlBar:Hide()
 			else
 				HideContollerButton(true)
@@ -5387,7 +5468,7 @@ local function Controller_AnimationSequence_OnUpdate(self, elapsed)
 		end
 		--NarciCameraOffsetControlBar:SetAlpha(0);
 		Narci_PhotoModeButton:SetAlpha(0);
-		PhotoModeControllerBar:SetAlpha(0);
+		Toolbar.Bar:SetAlpha(0);
 	end
 end
 
@@ -5745,13 +5826,13 @@ EL:SetScript("OnEvent",function(self, event, ...)
 			
 			hooksecurefunc("CameraZoomIn", function(increment)
 				if IS_OPENED and (xmogMode ~= 1) then
-					UpdateShoulderCVar:Start(-increment);
+					UpdateShoulderCVar:Start(-increment, true);
 				end
 			end)
 			
 			hooksecurefunc("CameraZoomOut", function(increment)
 				if IS_OPENED and (xmogMode ~= 1)then
-					UpdateShoulderCVar:Start(increment);
+					UpdateShoulderCVar:Start(increment, true);
 				end
 			end)
 		end)

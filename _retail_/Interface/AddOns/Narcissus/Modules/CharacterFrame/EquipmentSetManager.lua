@@ -751,10 +751,10 @@ end
 
 local function ShowIconSelector(SetButton)
     local Selector = ESM.IconSelector;
+    Selector:Load();
     local specName, specIcon, roleIcon, dungeonIcon, pvpIcon, spellIcons, roleName, spellNames = ESM:GetCurrentSpecializationNameAndIcons();
 
     --Icon Selector
-    local Selector = ESM.IconSelector;
     Selector:ClearAllPoints();
     Selector:SetFrameLevel(40);
     Selector.SetButton = SetButton;

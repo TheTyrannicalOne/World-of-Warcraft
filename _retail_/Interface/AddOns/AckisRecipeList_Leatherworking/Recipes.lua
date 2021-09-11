@@ -5156,8 +5156,8 @@ function module:InitializeRecipes()
 	-- Angerhide Leg Armor -- 124127
 	recipe = AddRecipe(124127, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(575, 575, 600, 602, 605)
-	recipe:SetCraftedItem(83765, "BIND_ON_EQUIP")
 	recipe:SetRecipeItem(86235, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(83765, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_ITEM_ENHANCEMENT")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddRepVendor(FAC.GOLDEN_LOTUS, REP.HONORED, 59908)
@@ -5165,8 +5165,8 @@ function module:InitializeRecipes()
 	-- Ironscale Leg Armor -- 124128
 	recipe = AddRecipe(124128, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(575, 575, 600, 602, 605)
-	recipe:SetCraftedItem(83763, "BIND_ON_EQUIP")
 	recipe:SetRecipeItem(86276, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(83763, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_ITEM_ENHANCEMENT")
 	recipe:AddFilters(F.TANK)
 	recipe:AddRepVendor(FAC.GOLDEN_LOTUS, REP.HONORED, 59908)
@@ -5174,8 +5174,8 @@ function module:InitializeRecipes()
 	-- Shadowleather Leg Armor -- 124129
 	recipe = AddRecipe(124129, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(575, 575, 600, 602, 605)
-	recipe:SetCraftedItem(83764, "BIND_ON_EQUIP")
 	recipe:SetRecipeItem(86295, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(83764, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_ITEM_ENHANCEMENT")
 	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddRepVendor(FAC.GOLDEN_LOTUS, REP.HONORED, 59908)
@@ -8974,6 +8974,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162390, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159884, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_FEET")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Leather Treads -- 269518
@@ -8982,6 +8983,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162391, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159884, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_FEET")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Leather Gauntlets -- 269519
@@ -8997,14 +8999,16 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162392, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159885, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_HANDS")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Leather Gauntlets -- 269521
 	recipe = AddRecipe(269521, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 120, 135, 150)
-	recipe:SetRecipeItem(162392, "BIND_ON_PICKUP")
+	recipe:SetRecipeItem(162393, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159885, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_HANDS")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Leather Leggings -- 269522
@@ -9020,6 +9024,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162394, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159886, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Leather Leggings -- 269524
@@ -9028,6 +9033,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162395, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159886, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Leather Waistguard -- 269525
@@ -9043,6 +9049,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162396, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159887, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_WAIST")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Leather Waistguard -- 269527
@@ -9051,6 +9058,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162397, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159887, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_WAIST")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Leather Armguards -- 269528
@@ -9066,6 +9074,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162398, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159888, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_WRIST")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Leather Armguards -- 269530
@@ -9074,6 +9083,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162399, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159888, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_WRIST")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Mail Treads -- 269531
@@ -9089,6 +9099,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162402, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159889, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_FEET")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Mail Treads -- 269533
@@ -9097,6 +9108,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162403, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159889, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_FEET")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Mail Gauntlets -- 269534
@@ -9112,6 +9124,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162404, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159890, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_HANDS")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Mail Gauntlets -- 269536
@@ -9120,6 +9133,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162405, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159890, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_HANDS")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Mail Leggings -- 269537
@@ -9135,6 +9149,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162406, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159891, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Mail Leggings -- 269539
@@ -9143,6 +9158,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162407, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159891, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Mail Waistguard -- 269540
@@ -9158,6 +9174,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162408, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159892, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_WAIST")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Mail Waistguard -- 269542
@@ -9166,6 +9183,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162409, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159892, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_WAIST")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Mail Armguards -- 269543
@@ -9181,6 +9199,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162410, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159893, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_WRIST")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Mail Armguards -- 269545
@@ -9189,6 +9208,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162411, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159893, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_WRIST")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Bow -- 269552
@@ -9204,6 +9224,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162417, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159896, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_BOW")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Bow -- 269554
@@ -9212,6 +9233,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(162418, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159896, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_BOW")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(142552, 142564)
 
 	-- Hardened Tempest Hide -- 272278
@@ -9247,6 +9269,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165330, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164670, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_BOW")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Bow -- 282281
@@ -9255,6 +9278,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165331, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164670, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_BOW")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Mail Armguards -- 282287
@@ -9270,6 +9294,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165328, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164667, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_WRIST")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Mail Armguards -- 282289
@@ -9278,6 +9303,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165329, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164667, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_WRIST")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Mail Waistguard -- 282290
@@ -9293,6 +9319,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165326, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164666, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_WAIST")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Mail Waistguard -- 282292
@@ -9301,6 +9328,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165327, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164666, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_WAIST")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Mail Leggings -- 282302
@@ -9316,14 +9344,16 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165324, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164665, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Mail Leggings -- 282305
 	recipe = AddRecipe(282305, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(135, 135, 145, 147, 150)
-	recipe:SetRecipeItem(165324, "BIND_ON_PICKUP")
+	recipe:SetRecipeItem(165325, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164665, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Mail Gauntlets -- 282306
@@ -9339,6 +9369,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165322, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164664, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_HANDS")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Mail Gauntlets -- 282308
@@ -9347,6 +9378,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165323, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164664, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_HANDS")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Mail Treads -- 282309
@@ -9362,6 +9394,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165320, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164663, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_FEET")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Mail Treads -- 282311
@@ -9370,6 +9403,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165321, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164663, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_FEET")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Leather Armguards -- 282312
@@ -9385,6 +9419,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165318, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164662, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_WRIST")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Leather Armguards -- 282314
@@ -9393,6 +9428,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165319, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164662, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_WRIST")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Leather Waistguard -- 282318
@@ -9408,6 +9444,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165316, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164661, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_WAIST")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Leather Waistguard -- 282320
@@ -9416,6 +9453,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165317, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164661, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_WAIST")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Leather Leggings -- 282321
@@ -9431,6 +9469,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165314, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164660, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Leather Leggings -- 282323
@@ -9439,6 +9478,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165315, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164660, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Leather Gauntlets -- 282324
@@ -9454,6 +9494,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165312, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164659, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_HANDS")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Leather Gauntlets -- 282326
@@ -9462,6 +9503,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165313, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164659, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_HANDS")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Leather Treads -- 282327
@@ -9477,6 +9519,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165310, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164658, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_FEET")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Leather Treads -- 282329
@@ -9485,6 +9528,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165311, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164658, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_FEET")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Enhanced Mistscale Boots -- 285079
@@ -9989,7 +10033,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170412, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170345, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_FEET")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Leather Treads -- 304414
 	recipe = AddRecipe(304414, V.BFA, Q.COMMON)
@@ -9997,7 +10042,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170413, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170345, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_FEET")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Leather Gauntlets -- 304415
 	recipe = AddRecipe(304415, V.BFA, Q.COMMON)
@@ -10012,7 +10058,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170414, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170342, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_HANDS")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Leather Gauntlets -- 304417
 	recipe = AddRecipe(304417, V.BFA, Q.COMMON)
@@ -10020,7 +10067,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170415, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170345, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_HANDS")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Leather Leggings -- 304418
 	recipe = AddRecipe(304418, V.BFA, Q.COMMON)
@@ -10035,7 +10083,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170416, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170344, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Leather Leggings -- 304420
 	recipe = AddRecipe(304420, V.BFA, Q.COMMON)
@@ -10043,7 +10092,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170417, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170344, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Leather Waistguard -- 304421
 	recipe = AddRecipe(304421, V.BFA, Q.COMMON)
@@ -10058,7 +10108,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170418, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170346, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_WAIST")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Leather Waistguard -- 304423
 	recipe = AddRecipe(304423, V.BFA, Q.COMMON)
@@ -10066,7 +10117,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170419, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170346, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_WAIST")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Leather Armguards -- 304424
 	recipe = AddRecipe(304424, V.BFA, Q.COMMON)
@@ -10081,7 +10133,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170420, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170343, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_WRIST")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Leather Armguards -- 304426
 	recipe = AddRecipe(304426, V.BFA, Q.COMMON)
@@ -10089,7 +10142,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170421, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170343, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_WRIST")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Mail Treads -- 304427
 	recipe = AddRecipe(304427, V.BFA, Q.COMMON)
@@ -10104,7 +10158,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170422, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170355, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_FEET")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Mail Treads -- 304429
 	recipe = AddRecipe(304429, V.BFA, Q.COMMON)
@@ -10112,7 +10167,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170423, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170355, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_FEET")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Mail Gauntlets -- 304430
 	recipe = AddRecipe(304430, V.BFA, Q.COMMON)
@@ -10127,7 +10183,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170424, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170353, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_HANDS")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Mail Gauntlets -- 304432
 	recipe = AddRecipe(304432, V.BFA, Q.COMMON)
@@ -10135,7 +10192,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170425, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170353, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_HANDS")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Mail Leggings -- 304433
 	recipe = AddRecipe(304433, V.BFA, Q.COMMON)
@@ -10150,7 +10208,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170426, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170354, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Mail Leggings -- 304435
 	recipe = AddRecipe(304435, V.BFA, Q.COMMON)
@@ -10158,7 +10217,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170427, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170354, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_LEGS")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Mail Waistguard -- 304436
 	recipe = AddRecipe(304436, V.BFA, Q.COMMON)
@@ -10173,7 +10233,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170428, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170356, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_WAIST")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Mail Waistguard -- 304438
 	recipe = AddRecipe(304438, V.BFA, Q.COMMON)
@@ -10181,7 +10242,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170429, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170356, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_WAIST")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Mail Armguards -- 304439
 	recipe = AddRecipe(304439, V.BFA, Q.COMMON)
@@ -10196,7 +10258,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170430, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170352, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_WRIST")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Mail Armguards -- 304441
 	recipe = AddRecipe(304441, V.BFA, Q.COMMON)
@@ -10204,7 +10267,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170431, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170352, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_WRIST")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Bow -- 304442
 	recipe = AddRecipe(304442, V.BFA, Q.COMMON)
@@ -10219,7 +10283,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170586, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170362, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_BOW")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.DPS)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Bow -- 304444
 	recipe = AddRecipe(304444, V.BFA, Q.COMMON)
@@ -10227,7 +10292,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(170587, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170362, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_BOW")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.DPS)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Maddening Dredged Leather Boots -- 305795
 	recipe = AddRecipe(305795, V.BFA, Q.EPIC)
@@ -10746,179 +10812,249 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(156669)
 
 	-- Relic of the Past I -- 330180
-	recipe = AddRecipe(330180, V.SHA, Q.COMMON)
+	recipe = AddRecipe(330180, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(3007, 3365, 4588, 5127, 5564, 16688, 85920, 86032, 93522, 93523, 98931)
 
 	-- Relic of the Past II -- 330181
-	recipe = AddRecipe(330181, V.SHA, Q.COMMON)
+	recipe = AddRecipe(330181, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(3007, 3365, 4588, 5127, 5564, 16688, 85920, 86032, 93522, 93523, 98931)
 
 	-- Relic of the Past III -- 330183
-	recipe = AddRecipe(330183, V.SHA, Q.COMMON)
+	recipe = AddRecipe(330183, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(3007, 3365, 4588, 5127, 5564, 16688, 85920, 86032, 93522, 93523, 98931)
 
 	-- Relic of the Past IV -- 330184
-	recipe = AddRecipe(330184, V.SHA, Q.COMMON)
+	recipe = AddRecipe(330184, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(3007, 3365, 4588, 5127, 5564, 16688, 85920, 86032, 93522, 93523, 98931)
 
 	-- Relic of the Past V -- 330185
-	recipe = AddRecipe(330185, V.SHA, Q.COMMON)
+	recipe = AddRecipe(330185, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(3007, 3365, 4588, 5127, 5564, 16688, 85920, 86032, 93522, 93523, 98931)
 
 	-- Relic of the Past I -- 330186
-	recipe = AddRecipe(330186, V.SHA, Q.COMMON)
+	recipe = AddRecipe(330186, V.TBC, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(19187, 33612, 33635, 33681)
 
 	-- Relic of the Past II -- 330187
-	recipe = AddRecipe(330187, V.SHA, Q.COMMON)
+	recipe = AddRecipe(330187, V.TBC, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(19187, 33612, 33635, 33681)
 
 	-- Relic of the Past III -- 330188
-	recipe = AddRecipe(330188, V.SHA, Q.COMMON)
+	recipe = AddRecipe(330188, V.TBC, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(19187, 33612, 33635, 33681)
 
 	-- Relic of the Past IV -- 330189
-	recipe = AddRecipe(330189, V.SHA, Q.COMMON)
+	recipe = AddRecipe(330189, V.TBC, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(19187, 33612, 33635, 33681)
 
 	-- Relic of the Past V -- 330190
-	recipe = AddRecipe(330190, V.SHA, Q.COMMON)
+	recipe = AddRecipe(330190, V.TBC, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(19187, 33612, 33635, 33681)
 
 	-- Relic of the Past I -- 330191
-	recipe = AddRecipe(330191, V.SHA, Q.COMMON)
+	recipe = AddRecipe(330191, V.WOTLK, Q.COMMON)
 	recipe:SetSkillLevels(15, 15, 25, 30, 35)
 	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(28700, 29507, 29508, 29509)
 
 	-- Relic of the Past II -- 330192
-	recipe = AddRecipe(330192, V.SHA, Q.COMMON)
+	recipe = AddRecipe(330192, V.WOTLK, Q.COMMON)
 	recipe:SetSkillLevels(30, 30, 40, 45, 50)
 	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(28700, 29507, 29508, 29509)
 
 	-- Relic of the Past III -- 330193
-	recipe = AddRecipe(330193, V.SHA, Q.COMMON)
+	recipe = AddRecipe(330193, V.WOTLK, Q.COMMON)
 	recipe:SetSkillLevels(45, 45, 55, 60, 65)
 	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(28700, 29507, 29508, 29509)
 
 	-- Relic of the Past IV -- 330194
-	recipe = AddRecipe(330194, V.SHA, Q.COMMON)
+	recipe = AddRecipe(330194, V.WOTLK, Q.COMMON)
 	recipe:SetSkillLevels(60, 60, 70, 75, 80)
 	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(28700, 29507, 29508, 29509)
 
 	-- Relic of the Past V -- 330195
-	recipe = AddRecipe(330195, V.SHA, Q.COMMON)
+	recipe = AddRecipe(330195, V.WOTLK, Q.COMMON)
 	recipe:SetSkillLevels(75, 75, 85, 90, 95)
 	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(28700, 29507, 29508, 29509)
 
 	-- Relic of the Past I -- 330196
-	recipe = AddRecipe(330196, V.SHA, Q.COMMON)
+	recipe = AddRecipe(330196, V.CATA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(3007, 3365, 4588, 5127, 5564, 16688)
 
 	-- Relic of the Past II -- 330197
-	recipe = AddRecipe(330197, V.SHA, Q.COMMON)
+	recipe = AddRecipe(330197, V.CATA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(3007, 3365, 4588, 5127, 5564, 16688)
 
 	-- Relic of the Past III -- 330198
-	recipe = AddRecipe(330198, V.SHA, Q.COMMON)
+	recipe = AddRecipe(330198, V.CATA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(3007, 3365, 4588, 5127, 5564, 16688)
 
 	-- Relic of the Past IV -- 330199
-	recipe = AddRecipe(330199, V.SHA, Q.COMMON)
+	recipe = AddRecipe(330199, V.CATA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(3007, 3365, 4588, 5127, 5564, 16688)
 
 	-- Relic of the Past V -- 330200
-	recipe = AddRecipe(330200, V.SHA, Q.COMMON)
+	recipe = AddRecipe(330200, V.CATA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(3007, 3365, 4588, 5127, 5564, 16688)
 
 	-- Relic of the Past I -- 330201
-	recipe = AddRecipe(330201, V.SHA, Q.COMMON)
+	recipe = AddRecipe(330201, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(65121)
 
 	-- Relic of the Past II -- 330202
-	recipe = AddRecipe(330202, V.SHA, Q.COMMON)
+	recipe = AddRecipe(330202, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(65121)
 
 	-- Relic of the Past III -- 330203
-	recipe = AddRecipe(330203, V.SHA, Q.COMMON)
+	recipe = AddRecipe(330203, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(65121)
 
 	-- Relic of the Past IV -- 330204
-	recipe = AddRecipe(330204, V.SHA, Q.COMMON)
+	recipe = AddRecipe(330204, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(65121)
 
 	-- Relic of the Past V -- 330205
-	recipe = AddRecipe(330205, V.SHA, Q.COMMON)
+	recipe = AddRecipe(330205, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 11, 16, 21)
 	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(65121)
+
+	-- Relic of the Past I -- 330206
+	recipe = AddRecipe(330206, V.WOD, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
+	recipe:AddCustom("DRAENOR_DEFAULT")
+
+	-- Relic of the Past II -- 330207
+	recipe = AddRecipe(330207, V.WOD, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
+	recipe:AddCustom("DRAENOR_DEFAULT")
+
+	-- Relic of the Past III -- 330208
+	recipe = AddRecipe(330208, V.WOD, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
+	recipe:AddCustom("DRAENOR_DEFAULT")
+
+	-- Relic of the Past IV -- 330209
+	recipe = AddRecipe(330209, V.WOD, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
+	recipe:AddCustom("DRAENOR_DEFAULT")
+
+	-- Relic of the Past V -- 330210
+	recipe = AddRecipe(330210, V.WOD, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
+	recipe:AddCustom("DRAENOR_DEFAULT")
+
+	-- Relic of the Past I -- 330211
+	recipe = AddRecipe(330211, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180055, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
+	recipe:AddCustom("DEFAULT_RECIPE")
+
+	-- Relic of the Past II -- 330212
+	recipe = AddRecipe(330212, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180057, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
+	recipe:AddCustom("DEFAULT_RECIPE")
+
+	-- Relic of the Past III -- 330213
+	recipe = AddRecipe(330213, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180058, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
+	recipe:AddCustom("DEFAULT_RECIPE")
+
+	-- Relic of the Past IV -- 330214
+	recipe = AddRecipe(330214, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180059, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
+	recipe:AddCustom("DEFAULT_RECIPE")
+
+	-- Relic of the Past V -- 330215
+	recipe = AddRecipe(330215, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(180060, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
+	recipe:AddCustom("DEFAULT_RECIPE")
 
 	-- Relic of the Past I -- 330216
 	recipe = AddRecipe(330216, V.SHA, Q.COMMON)
@@ -11291,6 +11427,22 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("LEATHERWORKING_WRIST")
 	recipe:AddDiscovery("DISCOVERY_SHADOWLANDS")
 
+	-- Crafter's Mark of the Chained Isle -- 343189
+	recipe = AddRecipe(343189, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(200, 200, 200, 200, 200)
+	recipe:SetRecipeItem(186470, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(173384, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
+	recipe:AddRepVendor(FAC.THE_ARCHIVISTS_CODEX, REP.REVERED, 178257)
+
+	-- Crafter's Mark III -- 343192
+	recipe = AddRecipe(343192, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 190, 192, 195)
+	recipe:SetRecipeItem(183868, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(173383, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
+	recipe:AddRepVendor(FAC.DEATHS_ADVANCE, REP.HONORED, 179321)
+
 	-- Crafter's Mark II -- 343193
 	recipe = AddRecipe(343193, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(100, 100, 100, 100, 100)
@@ -11312,6 +11464,37 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(183942, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
 	recipe:AddTrainer(156669)
+
+	-- Vestige of Origins -- 352444
+	recipe = AddRecipe(352444, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(185960, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("LEATHERWORKING_MATERIALS")
+	recipe:AddRepVendor(FAC.DEATHS_ADVANCE, REP.HONORED, 179321)
+
+	-- Pallid Oracle Bones -- 354797
+	recipe = AddRecipe(354797, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(50, 50, 55, 60, 65)
+	recipe:SetRecipeItem(186998, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(186686, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_TOY")
+	recipe:AddWorldDrop(Z.DE_OTHER_SIDE)
+
+	-- Pallid Bone Flute -- 354800
+	recipe = AddRecipe(354800, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(75, 75, 80, 82, 85)
+	recipe:SetRecipeItem(186999, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(186702, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_TOY")
+	recipe:AddWorldDrop(Z.KORTHIA)
+
+	-- Elusive Pet Treat -- 355354
+	recipe = AddRecipe(355354, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetRecipeItem(187000, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(186985, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("LEATHERWORKING_TOY")
+	recipe:AddQuest(64016, 64065)
 
 	self.InitializeRecipes = nil
 end

@@ -1,12 +1,46 @@
 local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 
+local UF_Auras = {
+	buffs = {
+		enable = false,
+		threshold = 4,
+	},
+	debuffs = {
+		enable = false,
+		threshold = 4,
+	},
+}
+
 P["sle"] = {
-	--Actionbars
-	["actionbars"] = {
-		["vehicle"] = {
-			["buttonsize"] = 40,
-			["buttonspacing"] = 2,
-			-- ["template"] = "Transparent",
+	--Actionbar
+	actionbar = {
+		vehicle = {
+			enabled = true,
+			mouseover = false,
+			clickThrough = false,
+			keepSizeRatio = true,
+			buttonsPerRow = 7,
+			point = 'TOPLEFT',
+			backdrop = true,
+			heightMult = 1,
+			widthMult = 1,
+			backdropSpacing = 2,
+			buttonSize = 40,
+			buttonHeight = 40,
+			buttonSpacing = 2,
+			alpha = 1,
+			showGrid = true,
+			hotkeyColor = { r = 1, g = 1, b = 1 },
+			hotkeyFont = 'Homespun',
+			hotkeyFontOutline = 'MONOCHROMEOUTLINE',
+			hotkeyFontSize = 12,
+			hotkeytext = true,
+			hotkeyTextPosition = 'TOPRIGHT',
+			hotkeyTextXOffset = 0,
+			hotkeyTextYOffset = -3,
+			useHotkeyColor = false,
+			frameStrata = 'LOW',
+			frameLevel = 1,
 		},
 	},
 	--Armory
@@ -964,6 +998,7 @@ P["sle"] = {
 			},
 		},
 		chat = {
+			show = true,
 			inversePoint = false,
 			anchorPoint = 'TOPLEFT',
 			xOffset = 0,
@@ -1065,11 +1100,11 @@ P["sle"] = {
 				buttons = false,
 				size = 3,
 			},
-			-- vehicle = { -- TODO: Add Enhanced Vehicle UI Later
-			-- 	backdrop = false,
-			-- 	buttons = false,
-			-- 	size = 3,
-			-- },
+			vehicle = {
+				backdrop = false,
+				buttons = false,
+				size = 3,
+			},
 		},
 		chat = {
 			LeftChatPanel = {
@@ -1302,87 +1337,31 @@ P["sle"] = {
 					["yoffset"] = 0,
 					["level"] = true,
 				},
-				["auras"] = {
-					["buffs"] = {
-						["threshold"] = 4,
-					},
-					["debuffs"] = {
-						["threshold"] = 4,
-					},
-				},
+				auras = CopyTable(UF_Auras),
 			},
 			["pet"] = {
-				["auras"] = {
-					["buffs"] = {
-						["threshold"] = 4,
-					},
-					["debuffs"] = {
-						["threshold"] = 4,
-					},
-				},
+				auras = CopyTable(UF_Auras),
 			},
 			["pettarget"] = {
-				["auras"] = {
-					["buffs"] = {
-						["threshold"] = 4,
-					},
-					["debuffs"] = {
-						["threshold"] = 4,
-					},
-				},
+				auras = CopyTable(UF_Auras),
 			},
 			["target"] = {
 				["pvpIconText"] = {
 					["level"] = true,
 				},
-				["auras"] = {
-					["buffs"] = {
-						["threshold"] = 4,
-					},
-					["debuffs"] = {
-						["threshold"] = 4,
-					},
-				},
+				auras = CopyTable(UF_Auras),
 			},
 			["targettarget"] = {
-				["auras"] = {
-					["buffs"] = {
-						["threshold"] = 4,
-					},
-					["debuffs"] = {
-						["threshold"] = 4,
-					},
-				},
+				auras = CopyTable(UF_Auras),
 			},
 			["targettargettarget"] = {
-				["auras"] = {
-					["buffs"] = {
-						["threshold"] = 4,
-					},
-					["debuffs"] = {
-						["threshold"] = 4,
-					},
-				},
+				auras = CopyTable(UF_Auras),
 			},
 			["focus"] = {
-				["auras"] = {
-					["buffs"] = {
-						["threshold"] = 4,
-					},
-					["debuffs"] = {
-						["threshold"] = 4,
-					},
-				},
+				auras = CopyTable(UF_Auras),
 			},
 			["focustarget"] = {
-				["auras"] = {
-					["buffs"] = {
-						["threshold"] = 4,
-					},
-					["debuffs"] = {
-						["threshold"] = 4,
-					},
-				},
+				auras = CopyTable(UF_Auras),
 			},
 			["party"] = {
 				["offline"] = {
@@ -1405,14 +1384,7 @@ P["sle"] = {
 					["xoffset"] = 0,
 					["yoffset"] = 0,
 				},
-				["auras"] = {
-					["buffs"] = {
-						["threshold"] = 4,
-					},
-					["debuffs"] = {
-						["threshold"] = 4,
-					},
-				},
+				auras = CopyTable(UF_Auras),
 			},
 			["raid"] = {
 				["offline"] = {
@@ -1435,14 +1407,7 @@ P["sle"] = {
 					["xoffset"] = 0,
 					["yoffset"] = 0,
 				},
-				["auras"] = {
-					["buffs"] = {
-						["threshold"] = 4,
-					},
-					["debuffs"] = {
-						["threshold"] = 4,
-					},
-				},
+				auras = CopyTable(UF_Auras),
 			},
 			["raid40"] = {
 				["offline"] = {
@@ -1461,41 +1426,23 @@ P["sle"] = {
 					["texture"] = "SKULL",
 					["CustomTexture"] = "",
 				},
-				["auras"] = {
-					["buffs"] = {
-						["threshold"] = 4,
-					},
-					["debuffs"] = {
-						["threshold"] = 4,
-					},
-				},
+				auras = CopyTable(UF_Auras),
 				["role"] = {
 					["xoffset"] = 0,
 					["yoffset"] = 0,
 				},
 			},
 			["boss"] = {
-				["auras"] = {
-					["buffs"] = {
-						["threshold"] = 4,
-					},
-					["debuffs"] = {
-						["threshold"] = 4,
-					},
-				},
+				auras = CopyTable(UF_Auras),
 			},
 			["arena"] = {
-				["auras"] = {
-					["buffs"] = {
-						["threshold"] = 4,
-					},
-					["debuffs"] = {
-						["threshold"] = 4,
-					},
-				},
+				auras = CopyTable(UF_Auras),
 			},
 		},
-		["roleicons"] = "ElvUI",
+		roleIcons = {
+			enable = false,
+			icons = 'ElvUI',
+		},
 		["statusTextures"] = {
 			["powerTexture"] = "ElvUI Norm",
 			["castTexture"] = "ElvUI Norm",

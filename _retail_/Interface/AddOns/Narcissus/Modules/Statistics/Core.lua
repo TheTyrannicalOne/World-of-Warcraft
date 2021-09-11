@@ -442,7 +442,7 @@ local function PrintAddOnUsage()
             local dateString = FormatShortDate(day, month, year);
             timeSpent = SecondsToTime(timeSpent);
             print(string.format("|cFFFFD100Total time spent in Narcissus:|r %s", timeSpent));
-            print(string.format("|cFFFFD100Installed Date:|r %s", dateString));
+            print(string.format("|cFFFFD100Installed On:|r %s", dateString));
         end
     end
 end

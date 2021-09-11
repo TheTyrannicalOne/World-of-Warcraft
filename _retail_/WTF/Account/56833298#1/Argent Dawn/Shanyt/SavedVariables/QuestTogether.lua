@@ -35,6 +35,17 @@ QuestTogether = {
 				"3/4 Fragment of the Guardian's Seal", -- [1]
 			},
 		},
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
+			["objectives"] = {
+			},
+		},
+		[56120] = {
+			["title"] = "The Unshackled",
+			["objectives"] = {
+				"0/4 Complete world quests in Nazjatar", -- [1]
+			},
+		},
 		[61981] = {
 			["title"] = "Replenish the Reservoir",
 			["objectives"] = {
@@ -62,6 +73,12 @@ QuestTogether = {
 			["title"] = "Tirna Scithe: A Warning Silence",
 			["objectives"] = {
 				"1/1 Tred'ova slain", -- [1]
+			},
+		},
+		[48639] = {
+			["title"] = "Army of the Light",
+			["objectives"] = {
+				"0/4 Complete 4 Army of the Light World Quests", -- [1]
 			},
 		},
 		[47129] = {
@@ -95,16 +112,10 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Nazmir.", -- [1]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[45381] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
-			},
-		},
-		[42420] = {
-			["title"] = "Court of Farondis",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Azsuna", -- [1]
+				"1/4 Echo of Time", -- [1]
 			},
 		},
 		[45383] = {
@@ -125,9 +136,15 @@ QuestTogether = {
 				"1/1 Speak with Ve'nari", -- [1]
 			},
 		},
-		[57564] = {
-			["title"] = "Mantid Assault Tracker",
+		[57562] = {
+			["title"] = "Amathet Assault Tracker",
 			["objectives"] = {
+			},
+		},
+		[62730] = {
+			["title"] = "Fruit of the Gods",
+			["objectives"] = {
+				"0/1 Ripe Purian", -- [1]
 			},
 		},
 		[48305] = {
@@ -150,18 +167,6 @@ QuestTogether = {
 				"0/1 Method of tracking found", -- [2]
 			},
 		},
-		[48642] = {
-			["title"] = "Argussian Reach",
-			["objectives"] = {
-				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
-			},
-		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
-			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
-			},
-		},
 		[54180] = {
 			["title"] = "Quest",
 			["objectives"] = {
@@ -170,6 +175,42 @@ QuestTogether = {
 		[46748] = {
 			["title"] = "Supplies From the Nightfallen",
 			["objectives"] = {
+			},
+		},
+		[57462] = {
+			["title"] = "Dream Catcher",
+			["objectives"] = {
+				"28/200 Shred of Insanity", -- [1]
+			},
+		},
+		[42422] = {
+			["title"] = "The Wardens",
+			["objectives"] = {
+				"0/4 Complete 4 Wardens World Quests", -- [1]
+			},
+		},
+		[57403] = {
+			["title"] = "Reconstructing \"Fear and Flesh\"",
+			["objectives"] = {
+				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
+			},
+		},
+		[50598] = {
+			["title"] = "Zandalari Empire",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
+			},
+		},
+		[49032] = {
+			["title"] = "Antorus, the Burning Throne: Dark Passage",
+			["objectives"] = {
+				"1/4 Rune of Passage", -- [1]
+			},
+		},
+		[30567] = {
+			["title"] = "Blanche's Boomer Brew",
+			["objectives"] = {
+				"0/1 Scenario Complete", -- [1]
 			},
 		},
 		[31891] = {
@@ -182,47 +223,6 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[57462] = {
-			["title"] = "Dream Catcher",
-			["objectives"] = {
-				"28/200 Shred of Insanity", -- [1]
-			},
-		},
-		[62730] = {
-			["title"] = "Fruit of the Gods",
-			["objectives"] = {
-				"0/1 Ripe Purian", -- [1]
-			},
-		},
-		[57403] = {
-			["title"] = "Reconstructing \"Fear and Flesh\"",
-			["objectives"] = {
-				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
-			},
-		},
-		[45381] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
-			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
-			},
-		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
-			["objectives"] = {
-			},
-		},
-		[30567] = {
-			["title"] = "Blanche's Boomer Brew",
-			["objectives"] = {
-				"0/1 Scenario Complete", -- [1]
-			},
-		},
-		[49032] = {
-			["title"] = "Antorus, the Burning Throne: Dark Passage",
-			["objectives"] = {
-				"1/4 Rune of Passage", -- [1]
-			},
-		},
 		[57919] = {
 			["title"] = "An Abuse of Power",
 			["objectives"] = {
@@ -232,8 +232,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

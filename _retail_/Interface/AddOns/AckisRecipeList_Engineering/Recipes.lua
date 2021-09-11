@@ -1262,6 +1262,13 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("ENGINEERING_CREATED_ITEM")
 	recipe:AddLimitedVendor(3413, 1, 5175, 1, 45546, 1, 52655, 1)
 
+	-- Fused Wiring -- 39895
+	recipe = AddRecipe(39895, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(275, 275, 275, 280, 285)
+	recipe:SetCraftedItem(7191, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENGINEERING_MATERIALS")
+	recipe:AddTrainer(1702, 4941, 5174, 5518, 8736, 11017, 11025, 11031, 11037, 16667, 16726, 17222, 25099, 45545, 52636, 52651)
+
 	-- ----------------------------------------------------------------------------
 	-- The Burning Crusade.
 	-- ----------------------------------------------------------------------------
@@ -1606,13 +1613,6 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("ENGINEERING_CREATED_ITEM")
 	recipe:AddTrainer(21494)
 
-	-- Fused Wiring -- 39895
-	recipe = AddRecipe(39895, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(275, 275, 275, 280, 285)
-	recipe:SetCraftedItem(7191, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("ENGINEERING_MATERIALS")
-	recipe:AddTrainer(1702, 4941, 5174, 5518, 8736, 11017, 11025, 11031, 11037, 16667, 16726, 17222, 25099, 45545, 52636, 52651)
-
 	-- Icy Blasting Primers -- 39971
 	recipe = AddRecipe(39971, V.TBC, Q.COMMON)
 	recipe:SetSkillLevels(35, 35, 45, 50, 55)
@@ -1852,34 +1852,6 @@ function module:InitializeRecipes()
 	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddMobDrop(19219)
 
-	-- Volatile Blasting Trigger -- 53281
-	recipe = AddRecipe(53281, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(39690, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("ENGINEERING_MATERIALS")
-	recipe:AddTrainer(1702, 3494, 5174, 11031, 17637, 25099, 25277, 26907, 26955, 26991, 28697, 33586)
-
-	-- Handful of Cobalt Bolts -- 56349
-	recipe = AddRecipe(56349, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(39681, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("ENGINEERING_MATERIALS")
-	recipe:AddTrainer(1702, 3494, 5174, 11031, 17637, 25099, 25277, 26907, 26955, 26991, 28697, 33586)
-
-	-- Hammer Pick -- 56459
-	recipe = AddRecipe(56459, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(40892, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("ENGINEERING_CREATED_ITEM")
-	recipe:AddTrainer(1702, 3494, 5174, 11031, 17637, 25099, 25277, 26907, 26955, 26991, 28697, 33586)
-
-	-- Cobalt Frag Bomb -- 56460
-	recipe = AddRecipe(56460, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 11, 16, 21)
-	recipe:SetCraftedItem(40771, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("ENGINEERING_CREATED_ITEM")
-	recipe:AddTrainer(1702, 3494, 5174, 11031, 17637, 25099, 25277, 26907, 26955, 26991, 28697, 33586)
-
 	-- ----------------------------------------------------------------------------
 	-- Wrath of the Lich King.
 	-- ----------------------------------------------------------------------------
@@ -1890,6 +1862,13 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(23775, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENGINEERING_BAG")
 	recipe:AddLimitedVendor(28722, 5, 33594, 5, 93539, 5)
+
+	-- Volatile Blasting Trigger -- 53281
+	recipe = AddRecipe(53281, V.WOTLK, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(39690, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENGINEERING_MATERIALS")
+	recipe:AddTrainer(1702, 3494, 5174, 11031, 17637, 25099, 25277, 26907, 26955, 26991, 28697, 33586)
 
 	-- Mark "S" Boomstick -- 54353
 	recipe = AddRecipe(54353, V.WOTLK, Q.COMMON)
@@ -1929,6 +1908,27 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(40769, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENGINEERING_CREATED_ITEM")
 	recipe:AddQuest(12889)
+
+	-- Handful of Cobalt Bolts -- 56349
+	recipe = AddRecipe(56349, V.WOTLK, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(39681, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENGINEERING_MATERIALS")
+	recipe:AddTrainer(1702, 3494, 5174, 11031, 17637, 25099, 25277, 26907, 26955, 26991, 28697, 33586)
+
+	-- Hammer Pick -- 56459
+	recipe = AddRecipe(56459, V.WOTLK, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(40892, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENGINEERING_CREATED_ITEM")
+	recipe:AddTrainer(1702, 3494, 5174, 11031, 17637, 25099, 25277, 26907, 26955, 26991, 28697, 33586)
+
+	-- Cobalt Frag Bomb -- 56460
+	recipe = AddRecipe(56460, V.WOTLK, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(40771, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENGINEERING_CREATED_ITEM")
+	recipe:AddTrainer(1702, 3494, 5174, 11031, 17637, 25099, 25277, 26907, 26955, 26991, 28697, 33586)
 
 	-- Bladed Pickaxe -- 56461
 	recipe = AddRecipe(56461, V.WOTLK, Q.COMMON)
@@ -2282,7 +2282,7 @@ function module:InitializeRecipes()
 
 	-- Spinal Healing Injector -- 82200
 	recipe = AddRecipe(82200, V.CATA, Q.COMMON)
-	recipe:SetSkillLevels(425, 425, 425, 437, 450)
+	recipe:SetSkillLevels(1, 1, 1, 13, 25)
 	recipe:SetItemFilterType("ENGINEERING_ITEM_ENHANCEMENT")
 	recipe:AddDiscovery("ENG_DISC")
 
@@ -2392,19 +2392,19 @@ function module:InitializeRecipes()
 
 	-- Invisibility Field -- 84424
 	recipe = AddRecipe(84424, V.CATA, Q.COMMON)
-	recipe:SetSkillLevels(425, 425, 425, 437, 450)
+	recipe:SetSkillLevels(1, 1, 1, 13, 25)
 	recipe:SetItemFilterType("ENGINEERING_ITEM_ENHANCEMENT")
 	recipe:AddDiscovery("ENG_DISC")
 
 	-- Cardboard Assassin -- 84425
 	recipe = AddRecipe(84425, V.CATA, Q.COMMON)
-	recipe:SetSkillLevels(425, 425, 425, 437, 450)
+	recipe:SetSkillLevels(1, 1, 1, 13, 25)
 	recipe:SetItemFilterType("ENGINEERING_ITEM_ENHANCEMENT")
 	recipe:AddDiscovery("ENG_DISC")
 
 	-- Grounded Plasma Shield -- 84427
 	recipe = AddRecipe(84427, V.CATA, Q.COMMON)
-	recipe:SetSkillLevels(425, 425, 425, 437, 450)
+	recipe:SetSkillLevels(1, 1, 1, 13, 25)
 	recipe:SetItemFilterType("ENGINEERING_ITEM_ENHANCEMENT")
 	recipe:AddDiscovery("ENG_DISC")
 
@@ -2929,10 +2929,17 @@ function module:InitializeRecipes()
 
 	-- Stealthman 54 -- 162207
 	recipe = AddRecipe(162207, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 625, 627, 630)
+	recipe:SetSkillLevels(1, 1, 25, 27, 30)
 	recipe:SetCraftedItem(109184, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENGINEERING_CREATED_ITEM")
 	recipe:AddCustom("DRAENOR_DEFAULT")
+
+	-- Ultimate Gnomish Army Knife -- 162208
+	recipe = AddRecipe(162208, V.WOD, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(109253, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENGINEERING_CREATED_ITEM")
+	recipe:AddDiscovery("DISCOVERY_ENG_ULT")
 
 	-- Mechanical Axebeak -- 162209
 	recipe = AddRecipe(162209, V.WOD, Q.COMMON)
@@ -2992,14 +2999,14 @@ function module:InitializeRecipes()
 
 	-- Gearspring Parts -- 169080
 	recipe = AddRecipe(169080, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 600, 800, 1000)
+	recipe:SetSkillLevels(1, 1, 1, 50, 100)
 	recipe:SetCraftedItem(111366, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENGINEERING_MATERIALS")
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Ultimate Gnomish Army Knife -- 169140
 	recipe = AddRecipe(169140, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 700, 700, 700)
+	recipe:SetSkillLevels(1, 1, 100, 100, 100)
 	recipe:SetCraftedItem(111366, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENGINEERING_CREATED_ITEM")
 	recipe:AddCustom("DRAENOR_DEFAULT")
@@ -3125,7 +3132,7 @@ function module:InitializeRecipes()
 
 	-- Double-Barreled Cranial Cannon -- 198970
 	recipe = AddRecipe(198970, V.LEGION, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 740, 750, 760)
+	recipe:SetSkillLevels(60, 60, 60, 70, 70)
 	recipe:SetRecipeItem(133673, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(132506, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENGINEERING_HEAD")
@@ -3318,7 +3325,7 @@ function module:InitializeRecipes()
 
 	-- Double-Barreled Cranial Cannon -- 198997
 	recipe = AddRecipe(198997, V.LEGION, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 746, 770, 780)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
 	recipe:SetRecipeItem(137703, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(132506, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENGINEERING_HEAD")
@@ -3430,7 +3437,7 @@ function module:InitializeRecipes()
 
 	-- Double-Barreled Cranial Cannon -- 199011
 	recipe = AddRecipe(199011, V.LEGION, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 780, 790, 800)
+	recipe:SetSkillLevels(1, 1, 90, 95, 100)
 	recipe:SetRecipeItem(137717, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(132506, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENGINEERING_HEAD")
@@ -3930,11 +3937,12 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(163020, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159937, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENGINEERING_ONE_HAND_MACE")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Discombobulator -- 269726
 	recipe = AddRecipe(269726, V.BFA, Q.COMMON)
-	recipe:SetSkillLevels(100, 100, 135, 142, 150)
+	recipe:SetSkillLevels(1, 1, 135, 142, 150)
 	recipe:SetRecipeItem(163021, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159937, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENGINEERING_ONE_HAND_MACE")
@@ -3953,6 +3961,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(163022, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159936, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENGINEERING_GUN")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Stormsteel Destroyer -- 269729
@@ -3961,6 +3970,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(163023, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159936, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENGINEERING_GUN")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(142552, 142564)
 
 	-- AZ3-R1-T3 Synthetic Specs -- 272056
@@ -4122,6 +4132,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165302, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164680, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENGINEERING_ONE_HAND_MACE")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Discombobulator -- 282808
@@ -4130,6 +4141,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165303, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164680, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENGINEERING_ONE_HAND_MACE")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Stormsteel Destroyer -- 282809
@@ -4145,6 +4157,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165304, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164679, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENGINEERING_GUN")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Stormsteel Destroyer -- 282811
@@ -4153,6 +4166,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(165305, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164679, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENGINEERING_GUN")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(142552, 142564)
 
 	-- The Ub3r-Spanner -- 282975
@@ -4172,12 +4186,14 @@ function module:InitializeRecipes()
 	-- Ub3r-Module: Ub3r S3ntry Mk. X8.0 -- 283401
 	recipe = AddRecipe(283401, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(150, 150, 150, 150, 150)
+	recipe:SetCraftedItem(164915, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENGINEERING_CREATED_ITEM")
 	recipe:AddQuest(53937, 53949)
 
 	-- Ub3r-Module: Ub3r-Improved Target Dummy -- 283403
 	recipe = AddRecipe(283403, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(150, 150, 150, 150, 150)
+	recipe:SetCraftedItem(164914, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENGINEERING_CREATED_ITEM")
 	recipe:AddQuest(53937, 53949)
 
@@ -4556,7 +4572,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(174272, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170314, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENGINEERING_GUN")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.DPS)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Stormsteel Destroyer -- 305859
 	recipe = AddRecipe(305859, V.BFA, Q.COMMON)
@@ -4564,7 +4581,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(174271, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170314, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENGINEERING_GUN")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.DPS)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Stormsteel Destroyer -- 305860
 	recipe = AddRecipe(305860, V.BFA, Q.COMMON)
@@ -4579,7 +4597,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(174274, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170313, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENGINEERING_ONE_HAND_MACE")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.DPS)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Discombobulator -- 305862
 	recipe = AddRecipe(305862, V.BFA, Q.COMMON)
@@ -4587,7 +4606,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(174273, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170313, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENGINEERING_ONE_HAND_MACE")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.DPS)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Discombobulator -- 305863
 	recipe = AddRecipe(305863, V.BFA, Q.COMMON)
@@ -4860,7 +4880,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(343099, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(45, 45, 55, 60, 65)
 	recipe:SetCraftedItem(173381, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("ENGINEERING_CREATED_ITEM")
+	recipe:SetItemFilterType("ENGINEERING_MATERIALS")
 	recipe:AddTrainer(156691)
 
 	-- Crafter's Mark II -- 343100
@@ -4870,6 +4890,22 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(173382, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENGINEERING_MATERIALS")
 	recipe:AddRepVendor(FAC.THE_AVOWED, REP.REVERED, 173705)
+
+	-- Crafter's Mark III -- 343102
+	recipe = AddRecipe(343102, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 190, 192, 195)
+	recipe:SetRecipeItem(183868, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(173383, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENGINEERING_MATERIALS")
+	recipe:AddRepVendor(FAC.DEATHS_ADVANCE, REP.HONORED, 179321)
+
+	-- Crafter's Mark of the Chained Isle -- 343103
+	recipe = AddRecipe(343103, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(200, 200, 200, 200, 200)
+	recipe:SetRecipeItem(186470, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(173384, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENGINEERING_MATERIALS")
+	recipe:AddRepVendor(FAC.THE_ARCHIVISTS_CODEX, REP.REVERED, 178257)
 
 	-- Novice Crafter's Mark -- 343661
 	recipe = AddRecipe(343661, V.SHA, Q.COMMON)

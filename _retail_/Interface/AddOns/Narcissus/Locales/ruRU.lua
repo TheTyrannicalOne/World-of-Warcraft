@@ -1,4 +1,4 @@
---Coutesy of Hubbotu. Thank you!    --Translator: Hubbotu as of 1.1.2
+--Coutesy of Hubbotu. Thank you!    --Translator: Hubbotu as of 1.1.4
 
 if not (GetLocale() == "ruRU") then
     return;
@@ -449,7 +449,7 @@ L["Splash Content7 Description"] = "-Граница шестиугольника
 
 --Project Details--
 NARCI_ALL_PROJECTS = "Все проекты";
-NARCI_PROJECT_DETAILS = "|cFFFFD100Разработчик: Peterodox\nДата выхода: 26 Октябрь, 2020|r\n\nСпасибо, что используете этот аддон! Если у вас есть какие-либо вопросы, предложения, идеи, пожалуйста, оставьте комментарий на странице curseforge или свяжитесь со мной по адресу...";
+NARCI_PROJECT_DETAILS = "|cFFFFD100Разработчик: Peterodox\nДата выхода: 23 август, 2021|r\n\nСпасибо, что используете этот аддон! Если у вас есть какие-либо вопросы, предложения, идеи, пожалуйста, оставьте комментарий на странице curseforge или свяжитесь со мной по адресу...";
 NARCI_PROJECT_AAA_TITLE = "|cff008affA|cff0d8ef2z|cff1a92e5e|cff2696d9r|cff339acco|cff409ebft|cff4da1b2h |cff59a5a6A|cff66a999d|cff73ad8cv|cff7fb180e|cff8cb573n|cff99b966t|cffa6bd59u|cffb2c14dr|cffbfc440e |cffccc833A|cffd9cc26l|cffe5d01ab|cfff2d40du|cffffd800m";
 NARCI_PROJECT_AAA_SUMMARY = "Исследуйте достопримечательности и собирайте знания и фотографии со всего Азерота.|cff636363";
 NARCI_PROJECT_NARCISSUS_SUMMARY = "Захватывающая панель персонажа и ваш лучший скриншот.";
@@ -483,5 +483,18 @@ L["WeaponBrowser Guide ModelType"] = "Некоторые предметы огр
 L["WeaponBrowser Guide DressUpModel"] = "Это будет тип по умолчанию, если ваша цель - игрок, если вы не удерживаете <%s> при его создании.";
 L["WeaponBrowser Guide CinematicModel"] = "Тип модели всегда будет кинематографическим, если существо является НПС. Оружие нельзя вкладывать в ножны.";
 
+--Pet Stables--
+L["PetStable Tooltip"] = "Выберите питомца из своей конюшни";
+L["PetStable Loading"] = "Получение информации о питомце";
+
 --Domination Item--
 L["Item Bonus"] = "Бонус:"  --do NOT re-translate
+L["Combat Error"] = NARCI_COLOR_RED_MILD.."Выйти из боя, чтобы продолжить".."|r";
+L["Extract Shard"] = "Извлечь осколок";
+
+--Mythic+ Leaderboard--
+L["Mythic Plus"] = "Мифический+";
+L["Mythic Plus Abbrev"] = "М+";
+L["Total Runs"] = "Всего заходов: ";
+L["Complete In Time"] = "Во время";
+L["Complete Over Time"] = "Не во время";

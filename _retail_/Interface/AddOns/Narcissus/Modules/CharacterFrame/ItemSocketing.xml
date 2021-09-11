@@ -109,9 +109,6 @@
 
     <Button name="NarciGemRectButtonTemplate" clipChildren="true" virtual="true">
         <Size x="240" y="48"/>
-        <!--Anchors>
-            <Anchor point="CENTER"/>
-        </Anchors-->
 		<Layers>
             <Layer level="BACKGROUND" textureSubLevel="1">
 				<Texture setAllPoints="true">
@@ -160,7 +157,7 @@
 				</MaskTexture>
             </Layer>
 			<Layer level="BORDER">
-				<Texture setAllPoints="true" parentKey="ButtonFill" Alpha="0">
+				<Texture setAllPoints="true" parentKey="ButtonFill" Alpha="0" hidden="true">
 					<Color r="1" g="1" b="1"/>
 					<Size x="480"/>
                     <Anchors>
@@ -224,7 +221,6 @@
 				<FontString inherits="NarciIndicatorTiny" justifyH="CENTER" justifyV="MIDDLE" hidden="false" parentKey="Count" text="10">
 					<Color r="1" g="1" b="1"/>
                     <Shadow>
-
                     </Shadow>
 					<Anchors>
 						<Anchor point="CENTER" relativeKey="$parent.CountBackground" relativePoint="CENTER" x="2" y="-1"/>

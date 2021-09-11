@@ -1,30 +1,30 @@
-tag 6e1c241f7385abdf7f6982039227fbf4a5fbdaf2 9.0.1.1
+tag 336f4f7ce2c488402d48e35526581e369303f930 9.1.0.1
 Author:	Ressy <resa1983@hotmail.com>
-Date:	Mon Jun 28 13:34:26 2021 -0400
+Date:	Tue Sep 7 22:03:27 2021 -0400
 
-9.0.1.1 update
+9.1 update
 
-commit 79da5eb9979aa33a62fbe42b3b79d10f72554e2a
+commit ecc5b7efb8b8135d9b64923d6cf98baa59467b8d
 Author: Ressy <resa1983@hotmail.com>
-Date:   Sun Jun 27 20:28:56 2021 -0400
+Date:   Tue Sep 7 21:42:30 2021 -0400
 
-    Update Module Version
+    Bump TOC
 
-commit 6425978ca34b283b5e20d4c6972736a87eaa1e0e
+commit 63cc233e4e0fec0a341749735995678e468d245b
 Author: Ressy <resa1983@hotmail.com>
-Date:   Sun Jun 27 20:28:45 2021 -0400
+Date:   Tue Sep 7 21:42:22 2021 -0400
 
-    Add Obtain info for 2 recipes that were missing it
+    Add discovery
 
-commit c6446a72fe02f82ae3f232d92abcc7137b6973f0
+commit 9e4e94a9a1893c4c7ad25cc69824108446b05543
 Author: Ressy <resa1983@hotmail.com>
-Date:   Sun Jun 27 20:28:18 2021 -0400
+Date:   Tue Sep 7 21:42:14 2021 -0400
 
-    Removal of training quest recipes
+    Fix and add 9.1 items
 
-commit 8716da9b5e5ffc48e788385e0bef817912568d9f
+commit 00c9546ac1aa9b242265d2689126ab9b890cb7d2
 Author: Ressy <resa1983@hotmail.com>
-Date:   Wed Nov 18 20:58:12 2020 -0500
+Date:   Tue Sep 7 21:42:00 2021 -0400
 
-    Rescan of Engineering
+    Fix Blizz reorg of engineering & rescan
 

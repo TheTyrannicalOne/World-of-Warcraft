@@ -217,7 +217,7 @@ local function MinimapButtonParentSwitch_SetState(self, state)
         MinimapButton:ClearAllPoints();
         MinimapButton:SetParent(Narci_MinimapButtonContainer);
         MinimapButton:SetFrameLevel(62);
-        MinimapButton:SetFrameStrata("HIGH");
+        MinimapButton:SetFrameStrata("MEDIUM");
     else
         MinimapButton:SetParent(Minimap);
         MinimapButton:SetFrameStrata("MEDIUM");

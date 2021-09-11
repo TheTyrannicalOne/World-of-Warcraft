@@ -30,7 +30,16 @@ local mapUIInfo = {
 };
 
 local function FormatDuration(seconds)
-    return SecondsToClock(seconds, false);      --no displayZeroHours
+    seconds = (seconds and tonumber(seconds)) or 0;
+    local minutes = math.floor(seconds / 60);
+    local restSeconds = seconds - minutes * 60;
+    if restSeconds < 10 then
+        restSeconds = "0"..restSeconds;
+    end
+    if minutes < 10 then
+        minutes = "0"..minutes;
+    end
+    return string.format("%s:%s", minutes, restSeconds);
 end
 
 local function CacheAffixNames()
@@ -458,7 +467,7 @@ function NarciMythicPlusDisplayMixin:Init()
 
     --Create Primary Tab Buttons
     local tabNames = {
-        MYTHIC_PLUS_SEASON_BEST, "Runs",
+        MYTHIC_PLUS_SEASON_BEST, L["Runs"],
     };
     self.TabButtons = {};
     for i = 1, #tabNames do
@@ -665,7 +674,7 @@ function NarciMythicPlusDisplayMixin:ToggleHistory(state)
             elseif numRuns < 20 then
                 normalizedRun = maxRun / 0.5;
             else
-                normalizedRun = maxRun / (0.5 + (normalizedRun - 20)/80);
+                normalizedRun = maxRun / (0.5 + (numRuns - 20)/160);
             end
             for i = 1, #self.maps do
                 mapID = self.maps[i];

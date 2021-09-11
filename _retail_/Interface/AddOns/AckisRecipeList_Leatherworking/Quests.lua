@@ -68,6 +68,8 @@ function module:InitializeQuests()
 	AddQuest(48078, Z.ARGUS,			0.0,	0.0,	"Neutral") --Needs updating
 	AddQuest(55223,	Z.DAZARALOR,			42.2,	38.0,	"Horde")
 	AddQuest(55235,	Z.BORALUS,			69.4,	29.8,	"Alliance")
+	AddQuest(64016, Z.KORTHIA,			60.4,	27.8,	"Neutral")
+	AddQuest(64065, Z.KORTHIA,			60.4,	27.8,	"Neutral")
 
 	self.InitializeQuests = nil
 end

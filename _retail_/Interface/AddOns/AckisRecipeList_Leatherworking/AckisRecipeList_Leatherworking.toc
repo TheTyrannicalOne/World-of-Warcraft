@@ -1,10 +1,10 @@
-## Interface: 90001
+## Interface: 90100
 ## Title: Ackis Recipe List: Leatherworking
 ## Notes: Leatherworking data for Ackis Recipe List.
 ## Author: Ackis, Pompy, Ressy, Torhal
-## Version: 9.0.1.1
-## X-Revision: e8e85f3
-## X-Date: 2020-10-13T17:53:56Z
+## Version: 9.1.0.1
+## X-Revision: 93be73d
+## X-Date: 2021-09-08T1:36:01Z
 ## Dependencies: AckisRecipeList
 ## LoadOnDemand: 1
 

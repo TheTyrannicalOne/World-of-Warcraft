@@ -1901,10 +1901,10 @@
 				<Scripts>
 					<OnLoad method="OnLoad"/>
 					<OnTextChanged method="OnTextChanged"/>
-					<OnEditFocusGained method="SelectText"/>
+					<OnEditFocusGained method="OnEditFocusGained"/>
 					<OnCursorChanged method="SelectText"/>
 					<OnMouseDown method="SelectText"/>
-					<OnEditFocusLost method="Quit"/>
+					<OnEditFocusLost method="OnEditFocusLost"/>
 					<OnEscapePressed method="Quit"/>
 					<OnEnterPressed method="Quit"/>
 					<OnTabPressed method="Quit"/>

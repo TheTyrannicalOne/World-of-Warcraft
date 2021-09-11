@@ -1,42 +1,18 @@
-tag 3109c3feaf62ae4dcad9ddc0682b16d293e4e0bb 9.0.1.1
+tag 62cf8827d1022f008bdb9b94277f2f511a6e18d0 9.1.0.1
 Author:	Ressy <resa1983@hotmail.com>
-Date:	Mon Jun 28 13:36:17 2021 -0400
+Date:	Tue Sep 7 22:02:26 2021 -0400
 
-9.0.1.1 update
+9.1 update
 
-commit 4a04067ea320975d500ea72814f00cbe828abf2d
+commit aa34e0ea32e282151a85e35d07dcf2e19322de91
 Author: Ressy <resa1983@hotmail.com>
-Date:   Sun Jun 27 20:31:06 2021 -0400
+Date:   Tue Sep 7 21:38:34 2021 -0400
 
-    Update module version
+    Bump TOC
 
-commit a3b9c491bbf9704d0c0f9b3e1430db4042c0ded8
+commit f0d0e92ee4472e3d31a679d47c53bd1f45cbe03a
 Author: Ressy <resa1983@hotmail.com>
-Date:   Sun Jun 27 20:30:58 2021 -0400
+Date:   Tue Sep 7 21:38:28 2021 -0400
 
-    Add obtain method to single recipe
-
-commit 34dabf7236a74d9730dcf3e685db7758437d37eb
-Author: Ressy <resa1983@hotmail.com>
-Date:   Sun Jun 27 20:30:27 2021 -0400
-
-    Add vendor
-
-commit 986ac15d9259f4bf59e3fb6a0509f6b585232c65
-Author: Ressy <resa1983@hotmail.com>
-Date:   Sun Jun 27 20:30:05 2021 -0400
-
-    Rescan of trainers
-
-commit d07633795e1a0e053ed47f67140db9c0c055316a
-Author: Ressy <resa1983@hotmail.com>
-Date:   Sat May 22 20:39:05 2021 -0400
-
-    Update to stop errors
-
-commit d6e03a833c6f235fd2a84b1773aa8e2520cf62a7
-Author: Ressy <resa1983@hotmail.com>
-Date:   Wed Nov 18 20:57:29 2020 -0500
-
-    Rescan of Cooking
+    9.1 added items
 

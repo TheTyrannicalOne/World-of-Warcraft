@@ -1,10 +1,10 @@
-## Interface: 90001
+## Interface: 90100
 ## Title: Ackis Recipe List: Enchanting
 ## Notes: Enchanting data for Ackis Recipe List.
 ## Author: Ackis, Pompy, Ressy, Torhal
-## Version: 9.0.1.1
-## X-Revision: f6aceed
-## X-Date: 2020-10-13T17:51:12Z
+## Version: 9.1.0.1
+## X-Revision: 59f81a0
+## X-Date: 2021-09-08T1:40:30Z
 ## Dependencies: AckisRecipeList
 ## LoadOnDemand: 1
 

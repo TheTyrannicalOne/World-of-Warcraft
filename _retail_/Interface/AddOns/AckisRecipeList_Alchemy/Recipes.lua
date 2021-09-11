@@ -4357,6 +4357,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(287448, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 65, 82, 100)
 	recipe:SetCraftedItem(166270, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(166272, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ALCHEMY_POTION")
 	recipe:AddVendor(142552, 142564)
 
@@ -4364,6 +4365,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(287449, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 85, 105, 125)
 	recipe:SetCraftedItem(166270, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(166271, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ALCHEMY_POTION")
 	recipe:AddVendor(142552, 142564)
 
@@ -4419,7 +4421,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(168529, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ALCHEMY_POTION")
 	recipe:AddRepVendor(FAC.ANKOAN, REP.REVERED, 154140)
-	recipe:AddRepVendor(FAC.UNSHACKLED, REP.REVERED, 153512)
+	recipe:AddRepVendor(FAC.THE_UNSHACKLED, REP.REVERED, 153512)
 
 	-- Superior Battle Potion of Agility -- 298729
 	recipe = AddRecipe(298729, V.BFA, Q.COMMON)
@@ -4507,7 +4509,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(169494, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ALCHEMY_POTION")
 	recipe:AddRepVendor(FAC.ANKOAN, REP.REVERED, 154140)
-	recipe:AddRepVendor(FAC.UNSHACKLED, REP.REVERED, 153512)
+	recipe:AddRepVendor(FAC.THE_UNSHACKLED, REP.REVERED, 153512)
 
 	-- Superior Battle Potion of Stamina -- 298747
 	recipe = AddRecipe(298747, V.BFA, Q.COMMON)
@@ -4663,7 +4665,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(169504, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ALCHEMY_CAULDRON")
 	recipe:AddRepVendor(FAC.ANKOAN, REP.EXALTED, 154140)
-	recipe:AddRepVendor(FAC.UNSHACKLED, REP.EXALTED, 153512)
+	recipe:AddRepVendor(FAC.THE_UNSHACKLED, REP.EXALTED, 153512)
 
 	-- Abyssal Alchemist Stone -- 298995
 	recipe = AddRecipe(298995, V.BFA, Q.EPIC)
@@ -4980,6 +4982,14 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("ALCHEMY_MISC")
 	recipe:AddRepVendor(FAC.THE_AVOWED, REP.HONORED, 173705)
 
+	-- Stones to Ore -- 307144
+	recipe = AddRecipe(307144, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(170, 170, 180, 185, 190)
+	recipe:SetRecipeItem(186991, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(186694, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ALCHEMY_TRANSMUTE")
+	recipe:AddRepVendor(FAC.THE_ARCHIVISTS_CODEX, REP.REVERED, 178257)
+
 	-- Spiritual Alchemy Stone -- 307200
 	recipe = AddRecipe(307200, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(170, 170, 180, 185, 190)
@@ -5043,6 +5053,22 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("ALCHEMY_MISC")
 	recipe:AddTrainer(156687)
 
+	-- Crafter's Mark of the Chained Isle -- 343676
+	recipe = AddRecipe(343676, V.SHA, Q.RARE)
+	recipe:SetSkillLevels(200, 200, 200, 200, 200)
+	recipe:SetCraftedItem(173384, "BIND_ON_PICKUP")
+	recipe:SetRecipeItem(186470, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ALCHEMY_MISC")
+	recipe:AddRepVendor(FAC.THE_ARCHIVISTS_CODEX, REP.REVERED, 178257)
+
+	-- Crafter's Mark III -- 343677
+	recipe = AddRecipe(343677, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 190, 192, 195)
+	recipe:SetCraftedItem(173383, "BIND_ON_PICKUP")
+	recipe:SetRecipeItem(183868, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ALCHEMY_MISC")
+	recipe:AddRepVendor(FAC.DEATHS_ADVANCE, REP.HONORED, 179321)
+
 	-- Crafter's Mark II -- 343678
 	recipe = AddRecipe(343678, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(0, 0, 0, 0, 0)
@@ -5064,6 +5090,46 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(184090, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ALCHEMY_POTION")
 	recipe:AddTrainer(156687)
+
+	-- Marrow Burst -- 354880
+	recipe = AddRecipe(354880, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(95, 95, 100, 112, 125)
+	recipe:SetRecipeItem(186989, "BIND_ON_EQUIP")
+	recipe:SetCraftedItem(186700, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ALCHEMY_MISC")
+	recipe:AddCustom("INVASIVE_MAWSHROOM")
+
+	-- Glory Burst -- 354881
+	recipe = AddRecipe(354881, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(95, 95, 100, 112, 125)
+	recipe:SetRecipeItem(186988, "BIND_ON_EQUIP")
+	recipe:SetCraftedItem(186701, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ALCHEMY_MISC")
+	recipe:AddCustom("INVASIVE_MAWSHROOM")
+
+	-- Widow Burst -- 354882
+	recipe = AddRecipe(354882, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(95, 95, 100, 112, 125)
+	recipe:SetRecipeItem(186986, "BIND_ON_EQUIP")
+	recipe:SetCraftedItem(186699, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ALCHEMY_MISC")
+	recipe:AddCustom("INVASIVE_MAWSHROOM")
+
+	-- Torch Burst -- 354884
+	recipe = AddRecipe(354884, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(95, 95, 100, 112, 125)
+	recipe:SetRecipeItem(186987, "BIND_ON_EQUIP")
+	recipe:SetCraftedItem(186698, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ALCHEMY_MISC")
+	recipe:AddCustom("INVASIVE_MAWSHROOM")
+
+	-- Blossom Burst -- 354885
+	recipe = AddRecipe(354885, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(95, 95, 100, 112, 125)
+	recipe:SetRecipeItem(186697, "BIND_ON_EQUIP")
+	recipe:SetCraftedItem(186990, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ALCHEMY_MISC")
+	recipe:AddCustom("INVASIVE_MAWSHROOM")
 
 	self.InitializeRecipes = nil
 end

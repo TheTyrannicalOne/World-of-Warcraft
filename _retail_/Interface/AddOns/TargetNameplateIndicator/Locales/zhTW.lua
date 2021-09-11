@@ -59,14 +59,10 @@ L["Group.target.friendly.Desc"] = "選取目標為友方時的選項"
 L["Group.target.hostile.Desc"] = "選取目標為敵方時的選項"
 L["Group.target.Name"] = "選取目標"
 L["Group.target.self.Desc"] = "選取目標為自己時的選項"
---[[Translation missing --]]
-L["Group.targettarget.friendly.Desc"] = "These options are used when your target's target is friendly to you"
---[[Translation missing --]]
-L["Group.targettarget.hostile.Desc"] = "These options are used when your target's target is hostile to you"
---[[Translation missing --]]
-L["Group.targettarget.Name"] = "Target of Target"
---[[Translation missing --]]
-L["Group.targettarget.self.Desc"] = "These options are used when your target is targeting you"
+L["Group.targettarget.friendly.Desc"] = "目標的目標是友方時的選項"
+L["Group.targettarget.hostile.Desc"] = "目標的目標是敵方時的選項"
+L["Group.targettarget.Name"] = "選取目標的目標"
+L["Group.targettarget.self.Desc"] = "目標的目標是你自己時的選項"
 L["Option.Unit.enable.Desc"] = "啟用/停用此單位的指示箭頭"
 L["Option.Unit.enable.Name"] = "啟用"
 L["Option.UnitReactionType.anchorPoint.Desc"] = "材質圖案要對齊到血條的哪個位置"
@@ -89,4 +85,4 @@ L["Option.UnitReactionType.yOffset.Desc"] = "材質圖案相對於對齊點的�
 L["Option.UnitReactionType.yOffset.Name"] = "垂直位置"
 L["Usage.AnyNumber"] = "必須是數字"
 L["Usage.FractionalNumber"] = "必須是 0 到 1 之間的數字"
-L["Usage.PositiveNumber"] = "必須是正的數字"
+L["Usage.PositiveNumber"] = "必須是正數"

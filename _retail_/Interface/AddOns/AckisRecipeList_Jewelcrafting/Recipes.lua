@@ -44,24 +44,24 @@ function module:InitializeRecipes()
 	local recipe
 
 	-- ----------------------------------------------------------------------------
-	-- The Burning Crusade.
+	-- Classic.
 	-- ----------------------------------------------------------------------------
 	-- Delicate Copper Wire -- 25255
-	recipe = AddRecipe(25255, V.TBC, Q.COMMON)
+	recipe = AddRecipe(25255, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 20, 35, 50)
 	recipe:SetCraftedItem(20816, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_MATERIALS")
 	recipe:AddCustom("DEFAULT_RECIPE")
 
 	-- Bronze Setting -- 25278
-	recipe = AddRecipe(25278, V.TBC, Q.COMMON)
+	recipe = AddRecipe(25278, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(50, 50, 70, 80, 90)
 	recipe:SetCraftedItem(20817, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_MATERIALS")
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 47384, 47396, 47400, 47418, 47419, 47421, 47431, 48619, 49885, 52586, 52587, 52645, 52657, 57620, 65043, 85916, 86010, 93527, 100538)
 
 	-- Elegant Silver Ring -- 25280
-	recipe = AddRecipe(25280, V.TBC, Q.COMMON)
+	recipe = AddRecipe(25280, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(50, 50, 80, 95, 110)
 	recipe:SetCraftedItem(20818, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_RING")
@@ -69,7 +69,7 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 47384, 47396, 47400, 47418, 47419, 47421, 47431, 48619, 49885, 52586, 52587, 52645, 52657, 57620, 65043, 85916, 86010, 93527, 100538)
 
 	-- Inlaid Malachite Ring -- 25283
-	recipe = AddRecipe(25283, V.TBC, Q.COMMON)
+	recipe = AddRecipe(25283, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(30, 30, 60, 75, 90)
 	recipe:SetCraftedItem(20821, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_RING")
@@ -77,7 +77,7 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 47384, 47396, 47400, 47418, 47419, 47421, 47431, 48619, 49885, 52586, 52587, 52645, 52657, 57620, 65043, 85916, 86010, 93527, 100538)
 
 	-- Simple Pearl Ring -- 25284
-	recipe = AddRecipe(25284, V.TBC, Q.COMMON)
+	recipe = AddRecipe(25284, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(60, 60, 90, 105, 120)
 	recipe:SetCraftedItem(20820, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_RING")
@@ -85,7 +85,7 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 47384, 47396, 47400, 47418, 47419, 47421, 47431, 48619, 49885, 52586, 52587, 52645, 52657, 57620, 65043, 85916, 86010, 93527, 100538)
 
 	-- Gloom Band -- 25287
-	recipe = AddRecipe(25287, V.TBC, Q.COMMON)
+	recipe = AddRecipe(25287, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(70, 70, 100, 115, 130)
 	recipe:SetCraftedItem(20823, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_RING")
@@ -93,14 +93,14 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 47384, 47396, 47400, 47418, 47419, 47421, 47431, 48619, 49885, 52586, 52587, 52645, 52657, 57620, 65043, 85916, 86010, 93527, 100538)
 
 	-- Heavy Silver Ring -- 25305
-	recipe = AddRecipe(25305, V.TBC, Q.COMMON)
+	recipe = AddRecipe(25305, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(90, 90, 120, 135, 150)
 	recipe:SetCraftedItem(20826, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_RING")
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 49885, 52586, 52587, 52645, 52657, 93527, 100538)
 
 	-- Ring of Silver Might -- 25317
-	recipe = AddRecipe(25317, V.TBC, Q.COMMON)
+	recipe = AddRecipe(25317, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(80, 80, 110, 125, 140)
 	recipe:SetCraftedItem(20827, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_RING")
@@ -108,7 +108,7 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 49885, 52586, 52587, 52645, 52657, 93527, 100538)
 
 	-- Ring of Twilight Shadows -- 25318
-	recipe = AddRecipe(25318, V.TBC, Q.COMMON)
+	recipe = AddRecipe(25318, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(100, 100, 130, 145, 160)
 	recipe:SetCraftedItem(20828, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_RING")
@@ -116,7 +116,7 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 49885, 52586, 52587, 52645, 52657, 93527, 100538)
 
 	-- Heavy Golden Necklace of Battle -- 25320
-	recipe = AddRecipe(25320, V.TBC, Q.COMMON)
+	recipe = AddRecipe(25320, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(150, 150, 180, 195, 210)
 	recipe:SetRecipeItem(20856, "BIND_ON_EQUIP")
 	recipe:SetCraftedItem(20856, "BIND_ON_EQUIP")
@@ -125,7 +125,7 @@ function module:InitializeRecipes()
 	recipe:AddLimitedVendor(1286, 1, 3367, 1, 16624, 1, 17512, 1)
 
 	-- Moonsoul Crown -- 25321
-	recipe = AddRecipe(25321, V.TBC, Q.COMMON)
+	recipe = AddRecipe(25321, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(120, 120, 150, 165, 180)
 	recipe:SetCraftedItem(20832, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_HEAD")
@@ -133,7 +133,7 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 49885, 52586, 52587, 52645, 52657, 93527, 100538)
 
 	-- Wicked Moonstone Ring -- 25323
-	recipe = AddRecipe(25323, V.TBC, Q.COMMON)
+	recipe = AddRecipe(25323, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(125, 125, 155, 170, 185)
 	recipe:SetRecipeItem(20855, "BIND_ON_EQUIP")
 	recipe:SetCraftedItem(20833, "BIND_ON_EQUIP")
@@ -142,7 +142,7 @@ function module:InitializeRecipes()
 	recipe:AddLimitedVendor(3499, 1, 3954, 1)
 
 	-- Amulet of the Moon -- 25339
-	recipe = AddRecipe(25339, V.TBC, Q.COMMON)
+	recipe = AddRecipe(25339, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(110, 110, 140, 155, 170)
 	recipe:SetRecipeItem(20854, "BIND_ON_EQUIP")
 	recipe:SetCraftedItem(20830, "BIND_ON_EQUIP")
@@ -151,7 +151,7 @@ function module:InitializeRecipes()
 	recipe:AddLimitedVendor(16624, 1, 17512, 1)
 
 	-- Solid Bronze Ring -- 25490
-	recipe = AddRecipe(25490, V.TBC, Q.COMMON)
+	recipe = AddRecipe(25490, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(50, 50, 80, 95, 110)
 	recipe:SetCraftedItem(20907, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_RING")
@@ -159,7 +159,7 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 47384, 47396, 47400, 47418, 47419, 47421, 47431, 48619, 49885, 52586, 52587, 52645, 52657, 57620, 65043, 85916, 86010, 93527, 100538)
 
 	-- Braided Copper Ring -- 25493
-	recipe = AddRecipe(25493, V.TBC, Q.COMMON)
+	recipe = AddRecipe(25493, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 30, 45, 60)
 	recipe:SetCraftedItem(20906, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_RING")
@@ -167,7 +167,7 @@ function module:InitializeRecipes()
 	recipe:AddCustom("DEFAULT_RECIPE")
 
 	-- Barbaric Iron Collar -- 25498
-	recipe = AddRecipe(25498, V.TBC, Q.COMMON)
+	recipe = AddRecipe(25498, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(110, 110, 140, 155, 170)
 	recipe:SetCraftedItem(20909, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_NECK")
@@ -175,17 +175,16 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 49885, 52586, 52587, 52645, 52657, 93527, 100538)
 
 	-- Pendant of the Agate Shield -- 25610
-	recipe = AddRecipe(25610, V.TBC, Q.COMMON)
+	recipe = AddRecipe(25610, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(120, 120, 150, 165, 180)
 	recipe:SetRecipeItem(20970, "BIND_ON_EQUIP")
 	recipe:SetCraftedItem(20950, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_NECK")
 	recipe:AddFilters(F.DPS, F.TANK)
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 49885, 52586, 52587, 52645, 52657, 93527, 100538)
-	recipe:AddVendor(1448)
 
 	-- Heavy Iron Knuckles -- 25612
-	recipe = AddRecipe(25612, V.TBC, Q.COMMON)
+	recipe = AddRecipe(25612, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(125, 125, 155, 170, 185)
 	recipe:SetRecipeItem(20971, "BIND_ON_EQUIP")
 	recipe:SetCraftedItem(20954, "BIND_ON_EQUIP")
@@ -194,7 +193,7 @@ function module:InitializeRecipes()
 	recipe:AddLimitedVendor(2393, 1)
 
 	-- Golden Dragon Ring -- 25613
-	recipe = AddRecipe(25613, V.TBC, Q.COMMON)
+	recipe = AddRecipe(25613, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(135, 135, 165, 180, 195)
 	recipe:SetCraftedItem(20955, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_RING")
@@ -202,14 +201,14 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 49885, 52586, 52587, 52645, 52657, 93527, 100538)
 
 	-- Mithril Filigree -- 25615
-	recipe = AddRecipe(25615, V.TBC, Q.COMMON)
+	recipe = AddRecipe(25615, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(150, 150, 170, 180, 190)
 	recipe:SetCraftedItem(20963, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_MATERIALS")
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 49885, 52586, 52587, 52645, 52657, 93527, 100538)
 
 	-- Blazing Citrine Ring -- 25617
-	recipe = AddRecipe(25617, V.TBC, Q.COMMON)
+	recipe = AddRecipe(25617, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(150, 150, 180, 195, 210)
 	recipe:SetRecipeItem(20973, "BIND_ON_EQUIP")
 	recipe:SetCraftedItem(20958, "BIND_ON_EQUIP")
@@ -219,7 +218,7 @@ function module:InitializeRecipes()
 	recipe:AddLimitedVendor(9636, 1)
 
 	-- Jade Pendant of Blasting -- 25618
-	recipe = AddRecipe(25618, V.TBC, Q.UNCOMMON)
+	recipe = AddRecipe(25618, V.ORIG, Q.UNCOMMON)
 	recipe:SetSkillLevels(160, 160, 190, 205, 220)
 	recipe:SetRecipeItem(20974, "BIND_ON_EQUIP")
 	recipe:SetCraftedItem(20966, "BIND_ON_EQUIP")
@@ -228,7 +227,7 @@ function module:InitializeRecipes()
 	recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- The Jade Eye -- 25619
-	recipe = AddRecipe(25619, V.TBC, Q.COMMON)
+	recipe = AddRecipe(25619, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(170, 170, 200, 215, 230)
 	recipe:SetRecipeItem(20975, "BIND_ON_EQUIP")
 	recipe:SetCraftedItem(20959, "BIND_ON_EQUIP")
@@ -237,7 +236,7 @@ function module:InitializeRecipes()
 	recipe:AddLimitedVendor(4775, 1, 5163, 1, 16624, 1, 17512, 1)
 
 	-- Engraved Truesilver Ring -- 25620
-	recipe = AddRecipe(25620, V.TBC, Q.COMMON)
+	recipe = AddRecipe(25620, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(170, 170, 200, 215, 230)
 	recipe:SetCraftedItem(20960, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_RING")
@@ -245,7 +244,7 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
 
 	-- Citrine Ring of Rapid Healing -- 25621
-	recipe = AddRecipe(25621, V.TBC, Q.COMMON)
+	recipe = AddRecipe(25621, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(180, 180, 210, 225, 240)
 	recipe:SetCraftedItem(20961, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_RING")
@@ -253,7 +252,7 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
 
 	-- Citrine Pendant of Golden Healing -- 25622
-	recipe = AddRecipe(25622, V.TBC, Q.UNCOMMON)
+	recipe = AddRecipe(25622, V.ORIG, Q.UNCOMMON)
 	recipe:SetSkillLevels(190, 190, 220, 235, 250)
 	recipe:SetRecipeItem(20976, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(20967, "BIND_ON_EQUIP")
@@ -262,7 +261,7 @@ function module:InitializeRecipes()
 	recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Figurine - Jade Owl -- 26872
-	recipe = AddRecipe(26872, V.TBC, Q.COMMON)
+	recipe = AddRecipe(26872, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(200, 200, 225, 240, 255)
 	recipe:SetCraftedItem(21748, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("JEWELCRAFTING_TRINKET")
@@ -270,7 +269,7 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
 
 	-- Figurine - Golden Hare -- 26873
-	recipe = AddRecipe(26873, V.TBC, Q.UNCOMMON)
+	recipe = AddRecipe(26873, V.ORIG, Q.UNCOMMON)
 	recipe:SetSkillLevels(200, 200, 225, 240, 255)
 	recipe:SetRecipeItem(21940, "BIND_ON_EQUIP")
 	recipe:SetCraftedItem(21756, "BIND_ON_PICKUP")
@@ -278,7 +277,7 @@ function module:InitializeRecipes()
 	recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Aquamarine Signet -- 26874
-	recipe = AddRecipe(26874, V.TBC, Q.COMMON)
+	recipe = AddRecipe(26874, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(210, 210, 235, 250, 265)
 	recipe:SetCraftedItem(20964, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_RING")
@@ -286,7 +285,7 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
 
 	-- Figurine - Black Pearl Panther -- 26875
-	recipe = AddRecipe(26875, V.TBC, Q.COMMON)
+	recipe = AddRecipe(26875, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(215, 215, 240, 255, 270)
 	recipe:SetRecipeItem(21941, "BIND_ON_EQUIP")
 	recipe:SetCraftedItem(21758, "BIND_ON_PICKUP")
@@ -295,7 +294,7 @@ function module:InitializeRecipes()
 	recipe:AddLimitedVendor(989, 1, 4897, 1)
 
 	-- Aquamarine Pendant of the Warrior -- 26876
-	recipe = AddRecipe(26876, V.TBC, Q.COMMON)
+	recipe = AddRecipe(26876, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(220, 220, 245, 260, 275)
 	recipe:SetCraftedItem(21755, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_NECK")
@@ -303,7 +302,7 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
 
 	-- Ruby Crown of Restoration -- 26878
-	recipe = AddRecipe(26878, V.TBC, Q.COMMON)
+	recipe = AddRecipe(26878, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(225, 225, 250, 265, 280)
 	recipe:SetRecipeItem(21942, "BIND_ON_EQUIP")
 	recipe:SetCraftedItem(20969, "BIND_ON_EQUIP")
@@ -312,14 +311,14 @@ function module:InitializeRecipes()
 	recipe:AddLimitedVendor(2810, 1, 2821, 1)
 
 	-- Thorium Setting -- 26880
-	recipe = AddRecipe(26880, V.TBC, Q.COMMON)
+	recipe = AddRecipe(26880, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(225, 225, 235, 245, 255)
 	recipe:SetCraftedItem(21752, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_MATERIALS")
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
 
 	-- Figurine - Truesilver Crab -- 26881
-	recipe = AddRecipe(26881, V.TBC, Q.COMMON)
+	recipe = AddRecipe(26881, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(225, 225, 250, 265, 280)
 	recipe:SetRecipeItem(21943, "BIND_ON_EQUIP")
 	recipe:SetCraftedItem(21760, "BIND_ON_PICKUP")
@@ -328,7 +327,7 @@ function module:InitializeRecipes()
 	recipe:AddLimitedVendor(1148, 1, 4897, 1)
 
 	-- Figurine - Truesilver Boar -- 26882
-	recipe = AddRecipe(26882, V.TBC, Q.UNCOMMON)
+	recipe = AddRecipe(26882, V.ORIG, Q.UNCOMMON)
 	recipe:SetSkillLevels(235, 235, 260, 275, 290)
 	recipe:SetRecipeItem(21944, "BIND_ON_EQUIP")
 	recipe:SetCraftedItem(21763, "BIND_ON_PICKUP")
@@ -337,7 +336,7 @@ function module:InitializeRecipes()
 	recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Ruby Pendant of Fire -- 26883
-	recipe = AddRecipe(26883, V.TBC, Q.COMMON)
+	recipe = AddRecipe(26883, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(235, 235, 260, 275, 290)
 	recipe:SetCraftedItem(21764, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_NECK")
@@ -345,7 +344,7 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
 
 	-- Truesilver Healing Ring -- 26885
-	recipe = AddRecipe(26885, V.TBC, Q.COMMON)
+	recipe = AddRecipe(26885, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(240, 240, 265, 280, 295)
 	recipe:SetCraftedItem(21765, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_RING")
@@ -353,7 +352,7 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
 
 	-- The Aquamarine Ward -- 26887
-	recipe = AddRecipe(26887, V.TBC, Q.UNCOMMON)
+	recipe = AddRecipe(26887, V.ORIG, Q.UNCOMMON)
 	recipe:SetSkillLevels(245, 245, 270, 285, 300)
 	recipe:SetRecipeItem(21945, "BIND_ON_EQUIP")
 	recipe:SetCraftedItem(21754, "BIND_ON_EQUIP")
@@ -362,7 +361,7 @@ function module:InitializeRecipes()
 	recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Gem Studded Band -- 26896
-	recipe = AddRecipe(26896, V.TBC, Q.UNCOMMON)
+	recipe = AddRecipe(26896, V.ORIG, Q.UNCOMMON)
 	recipe:SetSkillLevels(250, 250, 275, 290, 305)
 	recipe:SetRecipeItem(21947, "BIND_ON_EQUIP")
 	recipe:SetCraftedItem(21753, "BIND_ON_EQUIP")
@@ -371,7 +370,7 @@ function module:InitializeRecipes()
 	recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Opal Necklace of Impact -- 26897
-	recipe = AddRecipe(26897, V.TBC, Q.COMMON)
+	recipe = AddRecipe(26897, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(250, 250, 275, 290, 305)
 	recipe:SetRecipeItem(21948, "BIND_ON_EQUIP")
 	recipe:SetCraftedItem(21766, "BIND_ON_EQUIP")
@@ -380,7 +379,7 @@ function module:InitializeRecipes()
 	recipe:AddLimitedVendor(5163, 1, 8363, 1, 16624, 1, 17512, 1)
 
 	-- Figurine - Ruby Serpent -- 26900
-	recipe = AddRecipe(26900, V.TBC, Q.UNCOMMON)
+	recipe = AddRecipe(26900, V.ORIG, Q.UNCOMMON)
 	recipe:SetSkillLevels(260, 260, 280, 290, 300)
 	recipe:SetRecipeItem(21949, "BIND_ON_EQUIP")
 	recipe:SetCraftedItem(21769, "BIND_ON_PICKUP")
@@ -389,7 +388,7 @@ function module:InitializeRecipes()
 	recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Simple Opal Ring -- 26902
-	recipe = AddRecipe(26902, V.TBC, Q.COMMON)
+	recipe = AddRecipe(26902, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(260, 260, 280, 290, 300)
 	recipe:SetCraftedItem(21767, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_RING")
@@ -397,14 +396,14 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
 
 	-- Sapphire Signet -- 26903
-	recipe = AddRecipe(26903, V.TBC, Q.COMMON)
+	recipe = AddRecipe(26903, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(275, 275, 285, 295, 305)
 	recipe:SetCraftedItem(21768, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_RING")
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
 
 	-- Emerald Crown of Destruction -- 26906
-	recipe = AddRecipe(26906, V.TBC, Q.COMMON)
+	recipe = AddRecipe(26906, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(275, 275, 285, 295, 305)
 	recipe:SetRecipeItem(21952, "BIND_ON_EQUIP")
 	recipe:SetCraftedItem(21774, "BIND_ON_EQUIP")
@@ -413,7 +412,7 @@ function module:InitializeRecipes()
 	recipe:AddLimitedVendor(15179, 1)
 
 	-- Onslaught Ring -- 26907
-	recipe = AddRecipe(26907, V.TBC, Q.COMMON)
+	recipe = AddRecipe(26907, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(280, 280, 290, 300, 310)
 	recipe:SetCraftedItem(21775, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_RING")
@@ -421,7 +420,7 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
 
 	-- Sapphire Pendant of Winter Night -- 26908
-	recipe = AddRecipe(26908, V.TBC, Q.COMMON)
+	recipe = AddRecipe(26908, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(280, 280, 290, 300, 310)
 	recipe:SetCraftedItem(21790, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_NECK")
@@ -429,7 +428,7 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
 
 	-- Figurine - Emerald Owl -- 26909
-	recipe = AddRecipe(26909, V.TBC, Q.UNCOMMON)
+	recipe = AddRecipe(26909, V.ORIG, Q.UNCOMMON)
 	recipe:SetSkillLevels(285, 285, 295, 305, 315)
 	recipe:SetRecipeItem(21953, "BIND_ON_EQUIP")
 	recipe:SetCraftedItem(21777, "BIND_ON_PICKUP")
@@ -438,7 +437,7 @@ function module:InitializeRecipes()
 	recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Ring of Bitter Shadows -- 26910
-	recipe = AddRecipe(26910, V.TBC, Q.COMMON)
+	recipe = AddRecipe(26910, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(285, 285, 295, 305, 315)
 	recipe:SetRecipeItem(21954, "BIND_ON_EQUIP")
 	recipe:SetCraftedItem(21778, "BIND_ON_EQUIP")
@@ -447,7 +446,7 @@ function module:InitializeRecipes()
 	recipe:AddLimitedVendor(12941, 1)
 
 	-- Living Emerald Pendant -- 26911
-	recipe = AddRecipe(26911, V.TBC, Q.COMMON)
+	recipe = AddRecipe(26911, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(290, 290, 300, 310, 320)
 	recipe:SetCraftedItem(21791, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("JEWELCRAFTING_NECK")
@@ -455,7 +454,7 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
 
 	-- Figurine - Black Diamond Crab -- 26912
-	recipe = AddRecipe(26912, V.TBC, Q.UNCOMMON)
+	recipe = AddRecipe(26912, V.ORIG, Q.UNCOMMON)
 	recipe:SetSkillLevels(300, 300, 310, 320, 330)
 	recipe:SetRecipeItem(21955, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(21784, "BIND_ON_PICKUP")
@@ -464,7 +463,7 @@ function module:InitializeRecipes()
 	recipe:AddMobDrop(9736)
 
 	-- Figurine - Dark Iron Scorpid -- 26914
-	recipe = AddRecipe(26914, V.TBC, Q.UNCOMMON)
+	recipe = AddRecipe(26914, V.ORIG, Q.UNCOMMON)
 	recipe:SetSkillLevels(300, 300, 310, 320, 330)
 	recipe:SetRecipeItem(21956, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(21789, "BIND_ON_PICKUP")
@@ -473,7 +472,7 @@ function module:InitializeRecipes()
 	recipe:AddMobDrop(8983)
 
 	-- Necklace of the Diamond Tower -- 26915
-	recipe = AddRecipe(26915, V.TBC, Q.COMMON)
+	recipe = AddRecipe(26915, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(305, 305, 315, 325, 335)
 	recipe:SetRecipeItem(21957, "BIND_ON_EQUIP")
 	recipe:SetCraftedItem(21792, "BIND_ON_EQUIP")
@@ -481,16 +480,8 @@ function module:InitializeRecipes()
 	recipe:AddFilters(F.TANK)
 	recipe:AddLimitedVendor(11189, 1)
 
-	-- Band of Natural Fire -- 26916
-	recipe = AddRecipe(26916, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(10, 10, 20, 25, 30)
-	recipe:SetCraftedItem(21779, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("JEWELCRAFTING_RING")
-	recipe:AddFilters(F.CASTER, F.HEALER)
-	recipe:AddTrainer(15501, 18751, 18774, 19063, 19539, 19775, 33614, 33637, 33680, 46675, 93527, 100538)
-
 	-- Woven Copper Ring -- 26925
-	recipe = AddRecipe(26925, V.TBC, Q.COMMON)
+	recipe = AddRecipe(26925, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 30, 45, 60)
 	recipe:SetCraftedItem(21931, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_RING")
@@ -498,26 +489,175 @@ function module:InitializeRecipes()
 	recipe:AddCustom("DEFAULT_RECIPE")
 
 	-- Heavy Copper Ring -- 26926
-	recipe = AddRecipe(26926, V.TBC, Q.COMMON)
+	recipe = AddRecipe(26926, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(5, 5, 35, 50, 65)
 	recipe:SetCraftedItem(21932, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_RING")
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 47384, 47396, 47400, 47418, 47419, 47421, 47431, 48619, 49885, 52586, 52587, 52645, 52657, 57620, 65043, 85916, 86010, 93527, 100538)
 
 	-- Thick Bronze Necklace -- 26927
-	recipe = AddRecipe(26927, V.TBC, Q.COMMON)
+	recipe = AddRecipe(26927, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(50, 50, 80, 95, 110)
 	recipe:SetCraftedItem(21933, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_NECK")
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 47384, 47396, 47400, 47418, 47419, 47421, 47431, 48619, 49885, 52586, 52587, 52645, 52657, 57620, 65043, 85916, 86010, 93527, 100538)
 
 	-- Ornate Tigerseye Necklace -- 26928
-	recipe = AddRecipe(26928, V.TBC, Q.COMMON)
+	recipe = AddRecipe(26928, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(30, 30, 60, 75, 90)
 	recipe:SetCraftedItem(21934, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_NECK")
 	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 47384, 47396, 47400, 47418, 47419, 47421, 47431, 48619, 49885, 52586, 52587, 52645, 52657, 57620, 65043, 85916, 86010, 93527, 100538)
+
+	-- Malachite Pendant -- 32178
+	recipe = AddRecipe(32178, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(20, 20, 50, 65, 80)
+	recipe:SetCraftedItem(25438, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_NECK")
+	recipe:AddFilters(F.DPS)
+	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 47384, 47396, 47400, 47418, 47419, 47421, 47431, 48619, 49885, 52586, 52587, 52645, 52657, 57620, 65043, 85916, 86010, 93527, 100538)
+
+	-- Tigerseye Band -- 32179
+	recipe = AddRecipe(32179, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(20, 20, 50, 65, 80)
+	recipe:SetCraftedItem(25439, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_RING")
+	recipe:AddFilters(F.DPS)
+	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 47384, 47396, 47400, 47418, 47419, 47421, 47431, 48619, 49885, 52586, 52587, 52645, 52657, 57620, 65043, 85916, 86010, 93527, 100538)
+
+	-- Rough Stone Statue -- 32259
+	recipe = AddRecipe(32259, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 30, 40, 50)
+	recipe:SetCraftedItem(25498, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("JEWELCRAFTING_CREATED_ITEM")
+	recipe:AddCustom("DEFAULT_RECIPE")
+
+	-- Coarse Stone Statue -- 32801
+	recipe = AddRecipe(32801, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(50, 50, 70, 80, 90)
+	recipe:SetCraftedItem(25880, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("JEWELCRAFTING_CREATED_ITEM")
+	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 47384, 47396, 47400, 47418, 47419, 47421, 47431, 48619, 49885, 52586, 52587, 52645, 52657, 57620, 65043, 85916, 86010, 93527, 100538)
+
+	-- Heavy Stone Statue -- 32807
+	recipe = AddRecipe(32807, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(110, 110, 120, 130, 140)
+	recipe:SetCraftedItem(25881, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("JEWELCRAFTING_CREATED_ITEM")
+	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 49885, 52586, 52587, 52645, 52657, 93527, 100538)
+
+	-- Solid Stone Statue -- 32808
+	recipe = AddRecipe(32808, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(175, 175, 175, 185, 195)
+	recipe:SetCraftedItem(25882, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("JEWELCRAFTING_CREATED_ITEM")
+	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
+
+	-- Dense Stone Statue -- 32809
+	recipe = AddRecipe(32809, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(225, 225, 225, 235, 245)
+	recipe:SetCraftedItem(25883, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("JEWELCRAFTING_CREATED_ITEM")
+	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
+
+	-- Golden Ring of Power -- 34955
+	recipe = AddRecipe(34955, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(180, 180, 190, 200, 210)
+	recipe:SetCraftedItem(29157, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_RING")
+	recipe:AddFilters(F.CASTER, F.HEALER)
+	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
+
+	-- Truesilver Commander's Ring -- 34959
+	recipe = AddRecipe(34959, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(200, 200, 210, 220, 230)
+	recipe:SetCraftedItem(29158, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_RING")
+	recipe:AddFilters(F.DPS)
+	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
+
+	-- Glowing Thorium Band -- 34960
+	recipe = AddRecipe(34960, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(280, 280, 290, 300, 310)
+	recipe:SetCraftedItem(29159, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_RING")
+	recipe:AddFilters(F.CASTER, F.HEALER)
+	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
+
+	-- Emerald Lion Ring -- 34961
+	recipe = AddRecipe(34961, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(290, 290, 300, 310, 320)
+	recipe:SetCraftedItem(29160, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_RING")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
+
+	-- Brilliant Necklace -- 36523
+	recipe = AddRecipe(36523, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(75, 75, 105, 120, 135)
+	recipe:SetCraftedItem(30419, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_NECK")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 47384, 47396, 47400, 47418, 47419, 47421, 47431, 48619, 49885, 52586, 52587, 52645, 52657, 57620, 65043, 85916, 86010, 93527, 100538)
+
+	-- Heavy Jade Ring -- 36524
+	recipe = AddRecipe(36524, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(105, 105, 135, 150, 165)
+	recipe:SetCraftedItem(30420, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_RING")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 49885, 52586, 52587, 52645, 52657, 93527, 100538)
+
+	-- Red Ring of Destruction -- 36525
+	recipe = AddRecipe(36525, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(230, 230, 255, 270, 285)
+	recipe:SetCraftedItem(30421, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_RING")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
+
+	-- Diamond Focus Ring -- 36526
+	recipe = AddRecipe(36526, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(265, 265, 285, 295, 305)
+	recipe:SetCraftedItem(30422, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_RING")
+	recipe:AddFilters(F.CASTER, F.HEALER)
+	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
+
+	-- Bronze Band of Force -- 37818
+	recipe = AddRecipe(37818, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(65, 65, 95, 110, 125)
+	recipe:SetCraftedItem(30804, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_RING")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 47384, 47396, 47400, 47418, 47419, 47421, 47431, 48619, 49885, 52586, 52587, 52645, 52657, 57620, 65043, 85916, 86010, 93527, 100538)
+
+	-- Bronze Torc -- 38175
+	recipe = AddRecipe(38175, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(80, 80, 110, 125, 140)
+	recipe:SetCraftedItem(31154, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_NECK")
+	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 49885, 52586, 52587, 52645, 52657, 93527, 100538)
+
+	-- Amulet of Truesight -- 63743
+	recipe = AddRecipe(63743, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(200, 200, 210, 220, 230)
+	recipe:SetCraftedItem(45627, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_NECK")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
+
+	-- ----------------------------------------------------------------------------
+	-- The Burning Crusade.
+	-- ----------------------------------------------------------------------------
+	-- Band of Natural Fire -- 26916
+	recipe = AddRecipe(26916, V.TBC, Q.COMMON)
+	recipe:SetSkillLevels(10, 10, 20, 25, 30)
+	recipe:SetCraftedItem(21779, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_RING")
+	recipe:AddFilters(F.CASTER, F.HEALER)
+	recipe:AddTrainer(15501, 18751, 18774, 19063, 19539, 19775, 33614, 33637, 33680, 46675, 93527, 100538)
 
 	-- Brilliant Blood Garnet -- 28903
 	recipe = AddRecipe(28903, V.TBC, Q.UNCOMMON)
@@ -1137,57 +1277,6 @@ function module:InitializeRecipes()
 	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddWorldDrop(Z.OUTLAND)
 
-	-- Malachite Pendant -- 32178
-	recipe = AddRecipe(32178, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(20, 20, 50, 65, 80)
-	recipe:SetCraftedItem(25438, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("JEWELCRAFTING_NECK")
-	recipe:AddFilters(F.DPS)
-	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 47384, 47396, 47400, 47418, 47419, 47421, 47431, 48619, 49885, 52586, 52587, 52645, 52657, 57620, 65043, 85916, 86010, 93527, 100538)
-
-	-- Tigerseye Band -- 32179
-	recipe = AddRecipe(32179, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(20, 20, 50, 65, 80)
-	recipe:SetCraftedItem(25439, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("JEWELCRAFTING_RING")
-	recipe:AddFilters(F.DPS)
-	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 47384, 47396, 47400, 47418, 47419, 47421, 47431, 48619, 49885, 52586, 52587, 52645, 52657, 57620, 65043, 85916, 86010, 93527, 100538)
-
-	-- Rough Stone Statue -- 32259
-	recipe = AddRecipe(32259, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 30, 40, 50)
-	recipe:SetCraftedItem(25498, "BIND_ON_PICKUP")
-	recipe:SetItemFilterType("JEWELCRAFTING_CREATED_ITEM")
-	recipe:AddCustom("DEFAULT_RECIPE")
-
-	-- Coarse Stone Statue -- 32801
-	recipe = AddRecipe(32801, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(50, 50, 70, 80, 90)
-	recipe:SetCraftedItem(25880, "BIND_ON_PICKUP")
-	recipe:SetItemFilterType("JEWELCRAFTING_CREATED_ITEM")
-	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 47384, 47396, 47400, 47418, 47419, 47421, 47431, 48619, 49885, 52586, 52587, 52645, 52657, 57620, 65043, 85916, 86010, 93527, 100538)
-
-	-- Heavy Stone Statue -- 32807
-	recipe = AddRecipe(32807, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(110, 110, 120, 130, 140)
-	recipe:SetCraftedItem(25881, "BIND_ON_PICKUP")
-	recipe:SetItemFilterType("JEWELCRAFTING_CREATED_ITEM")
-	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 49885, 52586, 52587, 52645, 52657, 93527, 100538)
-
-	-- Solid Stone Statue -- 32808
-	recipe = AddRecipe(32808, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(175, 175, 175, 185, 195)
-	recipe:SetCraftedItem(25882, "BIND_ON_PICKUP")
-	recipe:SetItemFilterType("JEWELCRAFTING_CREATED_ITEM")
-	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
-
-	-- Dense Stone Statue -- 32809
-	recipe = AddRecipe(32809, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(225, 225, 225, 235, 245)
-	recipe:SetCraftedItem(25883, "BIND_ON_PICKUP")
-	recipe:SetItemFilterType("JEWELCRAFTING_CREATED_ITEM")
-	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
-
 	-- Powerful Earthstorm Diamond -- 32866
 	recipe = AddRecipe(32866, V.TBC, Q.COMMON)
 	recipe:SetSkillLevels(365, 365, 375, 377, 380)
@@ -1276,78 +1365,6 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(15501, 18751, 18774, 19063, 19539, 19775, 33614, 33637, 33680, 46675, 93527, 100538)
 	recipe:AddVendor(20242, 23007)
 
-	-- Golden Ring of Power -- 34955
-	recipe = AddRecipe(34955, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(180, 180, 190, 200, 210)
-	recipe:SetCraftedItem(29157, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("JEWELCRAFTING_RING")
-	recipe:AddFilters(F.CASTER, F.HEALER)
-	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
-
-	-- Truesilver Commander's Ring -- 34959
-	recipe = AddRecipe(34959, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(200, 200, 210, 220, 230)
-	recipe:SetCraftedItem(29158, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("JEWELCRAFTING_RING")
-	recipe:AddFilters(F.DPS)
-	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
-
-	-- Glowing Thorium Band -- 34960
-	recipe = AddRecipe(34960, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(280, 280, 290, 300, 310)
-	recipe:SetCraftedItem(29159, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("JEWELCRAFTING_RING")
-	recipe:AddFilters(F.CASTER, F.HEALER)
-	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
-
-	-- Emerald Lion Ring -- 34961
-	recipe = AddRecipe(34961, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(290, 290, 300, 310, 320)
-	recipe:SetCraftedItem(29160, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("JEWELCRAFTING_RING")
-	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
-
-	-- Brilliant Necklace -- 36523
-	recipe = AddRecipe(36523, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(75, 75, 105, 120, 135)
-	recipe:SetCraftedItem(30419, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("JEWELCRAFTING_NECK")
-	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 47384, 47396, 47400, 47418, 47419, 47421, 47431, 48619, 49885, 52586, 52587, 52645, 52657, 57620, 65043, 85916, 86010, 93527, 100538)
-
-	-- Heavy Jade Ring -- 36524
-	recipe = AddRecipe(36524, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(105, 105, 135, 150, 165)
-	recipe:SetCraftedItem(30420, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("JEWELCRAFTING_RING")
-	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 49885, 52586, 52587, 52645, 52657, 93527, 100538)
-
-	-- Red Ring of Destruction -- 36525
-	recipe = AddRecipe(36525, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(230, 230, 255, 270, 285)
-	recipe:SetCraftedItem(30421, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("JEWELCRAFTING_RING")
-	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
-
-	-- Diamond Focus Ring -- 36526
-	recipe = AddRecipe(36526, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(265, 265, 285, 295, 305)
-	recipe:SetCraftedItem(30422, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("JEWELCRAFTING_RING")
-	recipe:AddFilters(F.CASTER, F.HEALER)
-	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
-
-	-- Bronze Band of Force -- 37818
-	recipe = AddRecipe(37818, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(65, 65, 95, 110, 125)
-	recipe:SetCraftedItem(30804, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("JEWELCRAFTING_RING")
-	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 47384, 47396, 47400, 47418, 47419, 47421, 47431, 48619, 49885, 52586, 52587, 52645, 52657, 57620, 65043, 85916, 86010, 93527, 100538)
-
 	-- Ring of Arcane Shielding -- 37855
 	recipe = AddRecipe(37855, V.TBC, Q.RARE)
 	recipe:SetSkillLevels(360, 360, 370, 375, 380)
@@ -1362,13 +1379,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(31079, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_MATERIALS")
 	recipe:AddTrainer(15501, 18751, 18774, 19063, 19539, 19775, 33614, 33637, 33680, 46675, 93527, 100538)
-
-	-- Bronze Torc -- 38175
-	recipe = AddRecipe(38175, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(80, 80, 110, 125, 140)
-	recipe:SetCraftedItem(31154, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("JEWELCRAFTING_NECK")
-	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 49885, 52586, 52587, 52645, 52657, 93527, 100538)
 
 	-- The Frozen Eye -- 38503
 	recipe = AddRecipe(38503, V.TBC, Q.EPIC)
@@ -1982,6 +1992,13 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(35945, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_MATERIALS")
 	recipe:AddTrainer(15501, 18751, 18774, 19063, 19539, 19775, 33614, 33637, 33680, 46675, 93527, 100538)
+
+	-- Prismatic Black Diamond -- 62941
+	recipe = AddRecipe(62941, V.TBC, Q.COMMON)
+	recipe:SetSkillLevels(300, 300, 310, 315, 320)
+	recipe:SetCraftedItem(45054, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_MATERIALS")
+	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
 
 	-- ----------------------------------------------------------------------------
 	-- Wrath of the Lich King.
@@ -3368,21 +3385,6 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(44943, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("JEWELCRAFTING_MATERIALS")
 	recipe:AddTrainer(15501, 18751, 19775, 26915, 26960, 26982, 26997, 28701, 33590, 46675, 93527, 100538)
-
-	-- Prismatic Black Diamond -- 62941
-	recipe = AddRecipe(62941, V.WOTLK, Q.COMMON)
-	recipe:SetSkillLevels(300, 300, 310, 315, 320)
-	recipe:SetCraftedItem(45054, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("JEWELCRAFTING_MATERIALS")
-	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
-
-	-- Amulet of Truesight -- 63743
-	recipe = AddRecipe(63743, V.WOTLK, Q.COMMON)
-	recipe:SetSkillLevels(200, 200, 210, 220, 230)
-	recipe:SetCraftedItem(45627, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("JEWELCRAFTING_NECK")
-	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
-	recipe:AddTrainer(5388, 15501, 18751, 19775, 19778, 44582, 46675, 52586, 52587, 52645, 52657, 93527, 100538)
 
 	-- Emerald Choker -- 64725
 	recipe = AddRecipe(64725, V.WOTLK, Q.COMMON)
@@ -7300,9 +7302,9 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(127772, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(127761, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_GEM_PRISMATIC")
-	recipe:AddCustom("MYTHIC")
-	recipe:AddMobDrop(76266)
 	recipe:AddDiscovery("DISCOVERY_JC_WOD")
+	recipe:AddMobDrop(76266)
+	recipe:AddCustom("MYTHIC")
 
 	-- Immaculate Mastery Taladite -- 187636
 	recipe = AddRecipe(187636, V.WOD, Q.COMMON)
@@ -7875,8 +7877,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(137845, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(130230, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_RING")
-	recipe:AddFilters(F.TRADE_SKILL)
-	recipe:AddTradeSkill(PROF.FISHING, Z.SURAMAR)
+	recipe:AddCustom("PROF_FISH_SURA")
 
 	-- Dawnlight Band -- 195931
 	recipe = AddRecipe(195931, V.LEGION, Q.COMMON)
@@ -8072,8 +8073,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(137867, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(136713, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_RING")
-	recipe:AddFilters(F.TRADE_SKILL)
-	recipe:AddTradeSkill(PROF.ARCHAEOLOGY, Z.HIGHMOUNTAIN)
+	recipe:AddCustom("PROF_ARCH_HIGH")
 
 	-- Mass Prospect Leystone -- 225902
 	recipe = AddRecipe(225902, V.LEGION, Q.COMMON)
@@ -8514,6 +8514,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(163024, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159939, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_STAFF")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Intuitive Staff -- 269736
@@ -8522,6 +8523,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(163025, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159939, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_STAFF")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Solstone Ring -- 272226
@@ -8659,7 +8661,7 @@ function module:InitializeRecipes()
 
 	-- Notorious Combatant's Intuitive Staff -- 294795
 	recipe = AddRecipe(294795, V.BFA, Q.EPIC)
-	recipe:SetSkillLevels(170, 170, 170, 172, 175)
+	recipe:SetSkillLevels(175, 175, 175, 175, 175)
 	recipe:SetRecipeItem(169552, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(167943, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_STAFF")
@@ -8764,7 +8766,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(171159, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170318, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("JEWELCRAFTING_STAFF")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Intuitive Staff -- 305171
 	recipe = AddRecipe(305171, V.BFA, Q.COMMON)
@@ -8772,7 +8775,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(171158, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170318, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("JEWELCRAFTING_STAFF")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Peerless Leviathan's Eye Loop -- 305980
 	recipe = AddRecipe(305980, V.BFA, Q.EPIC)
@@ -9080,7 +9084,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(334548, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 10, 15, 20)
 	recipe:SetCraftedItem(180760, "BIND_ON_EQUIP")
-	recipe:SetItemFilterType("JEWELCRAFTING_COSMETIC")
+	recipe:SetItemFilterType("JEWELCRAFTING_HEAD")
 	recipe:AddCustom("CLOUDWALKERS_COFFER")
 
 	-- Shadowghast Necklace -- 338977
@@ -9104,6 +9108,22 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("JEWELCRAFTING_MATERIALS")
 	recipe:AddTrainer(156670)
 
+	-- Crafter's Mark of the Chained Isle -- 343694
+	recipe = AddRecipe(343694, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(200, 200, 200, 200, 200)
+	recipe:SetRecipeItem(186470, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(173384, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("JEWELCRAFTING_MATERIALS")
+	recipe:AddRepVendor(FAC.THE_ARCHIVISTS_CODEX, REP.REVERED, 178257)
+
+	-- Crafter's Mark III -- 343695
+	recipe = AddRecipe(343695, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 190, 192, 195)
+	recipe:SetRecipeItem(183868, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(173383, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("JEWELCRAFTING_MATERIALS")
+	recipe:AddRepVendor(FAC.DEATHS_ADVANCE, REP.HONORED, 179321)
+
 	-- Crafter's Mark II -- 343696
 	recipe = AddRecipe(343696, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(100, 100, 110, 115, 120)
@@ -9117,6 +9137,29 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(173381, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_MATERIALS")
 	recipe:AddTrainer(156670)
+
+	-- Vestige of Origins -- 352443
+	recipe = AddRecipe(352443, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(185960, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("JEWELCRAFTING_MATERIALS")
+	recipe:AddRepVendor(FAC.DEATHS_ADVANCE, REP.HONORED, 179321)
+
+	-- Porous Stone Statue -- 355187
+	recipe = AddRecipe(355187, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(50, 50, 60, 65, 70)
+	recipe:SetRecipeItem(186994, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(186981, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_CREATED_ITEM")
+	recipe:AddCustom("RELIC_CACHE")
+
+	-- Shaded Stone Statue -- 355189
+	recipe = AddRecipe(355189, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetRecipeItem(186994, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(186982, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("JEWELCRAFTING_CREATED_ITEM")
+	recipe:AddCustom("RIFTBOUND_CACHE")
 
 	self.InitializeRecipes = nil
 end

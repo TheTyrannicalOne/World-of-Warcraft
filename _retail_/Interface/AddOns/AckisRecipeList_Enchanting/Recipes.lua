@@ -48,12 +48,14 @@ function module:InitializeRecipes()
 	-- Minor Health -- 7418
 	recipe = AddRecipe(7418, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(15, 15, 25, 30, 35)
+	recipe:SetCraftedItem(38679, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
 	recipe:AddCustom("DEFAULT_RECIPE")
 
 	-- Minor Health -- 7420
 	recipe = AddRecipe(7420, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(15, 15, 70, 90, 110)
+	recipe:SetCraftedItem(38766, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_CHEST")
 	recipe:AddTrainer(1317, 3011, 3345, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 47384, 47396, 47400, 47418, 47419, 47421, 47431, 48619, 49885, 53410, 57620, 65043, 85914, 86027, 93531, 98017)
 
@@ -4094,24 +4096,28 @@ function module:InitializeRecipes()
 	recipe:AddRepVendor(FAC.STORMS_WAKE, REP.REVERED, 135800)
 
 	-- Honorable Combatant's Sorcerous Scepter -- 269715
-	recipe = AddRecipe(269715, V.BFA, Q.EPIC)
+	recipe = AddRecipe(269715, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(85, 85, 95, 100, 105)
 	recipe:SetCraftedItem(159922, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_WAND")
 	recipe:AddTrainer(122702, 136041, 153811, 154393)
 
 	-- Honorable Combatant's Sorcerous Scepter -- 269716
-	recipe = AddRecipe(269716, V.BFA, Q.EPIC)
+	recipe = AddRecipe(269716, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(85, 85, 110, 127, 145)
+	recipe:SetRecipeItem(162308, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159922, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_WAND")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Honorable Combatant's Sorcerous Scepter -- 269719
-	recipe = AddRecipe(269719, V.BFA, Q.EPIC)
+	recipe = AddRecipe(269719, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(85, 85, 115, 132, 150)
+	recipe:SetRecipeItem(162309, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(159922, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_WAND")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Safe Hearthing -- 271366
@@ -4143,26 +4149,27 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(122702, 136041, 153811, 154393)
 
 	-- Sinister Combatant's Sorcerous Scepter -- 282855
-	recipe = AddRecipe(282855, V.BFA, Q.EPIC)
+	recipe = AddRecipe(282855, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(140, 140, 140, 145, 150)
+	recipe:SetRecipeItem(165300, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164677, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_WAND")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
 
 	-- Sinister Combatant's Sorcerous Scepter -- 282857
-	recipe = AddRecipe(282857, V.BFA, Q.EPIC)
+	recipe = AddRecipe(282857, V.BFA, Q.COMMON)
 	recipe:SetSkillLevels(145, 145, 145, 147, 150)
+	recipe:SetRecipeItem(165301, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164677, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_WAND")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(142552, 142564)
-
-	-- Enchant Runic Power Core -- 284415
-	recipe = AddRecipe(284415, V.BFA, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
 
 	-- Enchanted Tiki Mask -- 285644
 	recipe = AddRecipe(285644, V.BFA, Q.RARE)
 	recipe:SetSkillLevels(140, 140, 140, 145, 150)
+	recipe:SetRecipeItem(165696, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(152878, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_PET")
 	recipe:AddMobDrop(145616)
@@ -4189,8 +4196,9 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(122702, 136041, 153811, 154393)
 
 	-- Iwen's Enchanting Rod -- 287494
-	recipe = AddRecipe(287494, V.BFA, Q.COMMON)
+	recipe = AddRecipe(287494, V.BFA, Q.RARE)
 	recipe:SetSkillLevels(150, 150, 150, 150, 150)
+	recipe:SetRecipeItem(168024, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(164766, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_MISC")
 	recipe:AddQuest(54005, 54161)
@@ -4274,7 +4282,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(168449, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_RING")
 	recipe:AddRepVendor(FAC.ANKOAN, REP.REVERED, 154140)
-	recipe:AddRepVendor(FAC.UNSHACKLED, REP.REVERED, 153512)
+	recipe:AddRepVendor(FAC.THE_UNSHACKLED, REP.REVERED, 153512)
 
 	-- Accord of Mastery -- 298001
 	recipe = AddRecipe(298001, V.BFA, Q.COMMON)
@@ -4290,7 +4298,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(168448, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_RING")
 	recipe:AddRepVendor(FAC.ANKOAN, REP.REVERED, 154140)
-	recipe:AddRepVendor(FAC.UNSHACKLED, REP.REVERED, 153512)
+	recipe:AddRepVendor(FAC.THE_UNSHACKLED, REP.REVERED, 153512)
 
 	-- Accord of Critical Strike -- 298009
 	recipe = AddRecipe(298009, V.BFA, Q.COMMON)
@@ -4313,7 +4321,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(168446, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_RING")
 	recipe:AddRepVendor(FAC.ANKOAN, REP.REVERED, 154140)
-	recipe:AddRepVendor(FAC.UNSHACKLED, REP.REVERED, 153512)
+	recipe:AddRepVendor(FAC.THE_UNSHACKLED, REP.REVERED, 153512)
 
 	-- Accord of Haste -- 298016
 	recipe = AddRecipe(298016, V.BFA, Q.RARE)
@@ -4322,7 +4330,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(168447, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_RING")
 	recipe:AddRepVendor(FAC.ANKOAN, REP.REVERED, 154140)
-	recipe:AddRepVendor(FAC.UNSHACKLED, REP.REVERED, 153512)
+	recipe:AddRepVendor(FAC.THE_UNSHACKLED, REP.REVERED, 153512)
 
 	-- Machinist's Brilliance -- 298433
 	recipe = AddRecipe(298433, V.BFA, Q.COMMON)
@@ -4432,7 +4440,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(171153, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170312, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_WAND")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- Uncanny Combatant's Sorcerous Scepter -- 305938
 	recipe = AddRecipe(305938, V.BFA, Q.COMMON)
@@ -4440,7 +4449,8 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(171152, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(170312, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_WAND")
-	recipe:AddVendor(142552, 142564)
+	recipe:AddFilters(F.CASTER, F.HEALER)
+	recipe:AddVendor(142552, 142564, 161565)
 
 	-- ----------------------------------------------------------------------------
 	-- Shadowlands.
@@ -4635,7 +4645,7 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
 	recipe:AddTrainer(156683)
 
-	-- Enchanted Heavy Desolate Hide -- 309637
+	-- Enchanted Heavy Callous Hide -- 309637
 	recipe = AddRecipe(309637, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(115, 115, 125, 130, 135)
 	recipe:SetCraftedItem(172438, "BIND_ON_EQUIP")
@@ -4723,6 +4733,7 @@ function module:InitializeRecipes()
 	-- Crafter's Mark II -- 343683
 	recipe = AddRecipe(343683, V.SHA, Q.COMMON)
 	recipe:SetSkillLevels(70, 70, 70, 72, 75)
+	recipe:SetRecipeItem(183870, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(173382, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
 	recipe:AddRepVendor(FAC.THE_AVOWED, REP.REVERED, 173705)
@@ -4733,6 +4744,14 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(173381, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
 	recipe:AddTrainer(156683)
+
+	-- Anima-ted Leash -- 355184
+	recipe = AddRecipe(355184, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(40, 40, 50, 62, 75)
+	recipe:SetRecipeItem(186992, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(186973, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_TOY")
+	recipe:AddVendor(156769)
 
 	self.InitializeRecipes = nil
 end
