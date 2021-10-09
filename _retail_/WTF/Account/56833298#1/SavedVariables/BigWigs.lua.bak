@@ -35,13 +35,15 @@ BigWigs3DB = {
 			["profiles"] = {
 				["Default"] = {
 					["BigWigsAnchor_width"] = 219.9998626708984,
-					["BigWigsEmphasizeAnchor_width"] = 320.0000915527344,
 					["BigWigsEmphasizeAnchor_height"] = 22.00007629394531,
 					["BigWigsAnchor_height"] = 15.99994277954102,
+					["BigWigsEmphasizeAnchor_width"] = 320.0000915527344,
 				},
 			},
 		},
 		["BigWigs_Plugins_Super Emphasize"] = {
+		},
+		["BigWigs_Bosses_Nalak"] = {
 		},
 		["BigWigs_Plugins_AutoReply"] = {
 		},
@@ -50,8 +52,8 @@ BigWigs3DB = {
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
 				["Default"] = {
-					["height"] = 120.0000076293945,
 					["width"] = 139.9999847412109,
+					["height"] = 120.0000076293945,
 				},
 			},
 		},

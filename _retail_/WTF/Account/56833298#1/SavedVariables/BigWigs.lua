@@ -13,6 +13,8 @@ BigWigs3DB = {
 	["namespaces"] = {
 		["BigWigs_Plugins_Victory"] = {
 		},
+		["BigWigs_Bosses_Sha of Anger"] = {
+		},
 		["BigWigs_Plugins_Alt Power"] = {
 		},
 		["LibDualSpec-1.0"] = {
@@ -25,6 +27,8 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_AltPower"] = {
 		},
+		["BigWigs_Bosses_Oondasta"] = {
+		},
 		["BigWigs_Plugins_Colors"] = {
 		},
 		["BigWigs_Plugins_Wipe"] = {
@@ -35,11 +39,13 @@ BigWigs3DB = {
 			["profiles"] = {
 				["Default"] = {
 					["BigWigsAnchor_width"] = 219.9998626708984,
-					["BigWigsEmphasizeAnchor_width"] = 320.0000915527344,
 					["BigWigsEmphasizeAnchor_height"] = 22.00007629394531,
 					["BigWigsAnchor_height"] = 15.99994277954102,
+					["BigWigsEmphasizeAnchor_width"] = 320.0000915527344,
 				},
 			},
+		},
+		["BigWigs_Plugins_Messages"] = {
 		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 		},
@@ -49,15 +55,15 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Raid Icons"] = {
 		},
+		["BigWigs_Bosses_Salyis's Warband"] = {
+		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
 				["Default"] = {
-					["height"] = 120.0000076293945,
 					["width"] = 139.9999847412109,
+					["height"] = 120.0000076293945,
 				},
 			},
-		},
-		["BigWigs_Plugins_Messages"] = {
 		},
 		["BigWigs_Plugins_Pull"] = {
 		},

@@ -61,13 +61,14 @@ MJEPersonalSettings = {
 		["hiddenIngame"] = false,
 		["notCollected"] = true,
 		["hidden"] = false,
-		["onlyFavorites"] = false,
-		["onlyTradable"] = false,
 		["faction"] = {
 			["horde"] = true,
 			["alliance"] = true,
 			["noFaction"] = true,
 		},
+		["onlyFavorites"] = false,
+		["onlyTradable"] = false,
+		["onlyUsable"] = false,
 		["family"] = {
 			["Arachnids"] = {
 				["Scorpions"] = true,
@@ -264,7 +265,7 @@ MJEPersonalSettings = {
 			["Bats"] = true,
 		},
 		["collected"] = true,
-		["onlyUsable"] = false,
+		["onlyRecent"] = false,
 		["mountType"] = {
 			["repair"] = true,
 			["flying"] = true,

@@ -639,7 +639,7 @@ PawnCommon = {
 			["UnenchantedColor"] = "00be6f",
 		},
 	},
-	["LastVersion"] = 2.0523,
+	["LastVersion"] = 2.0528,
 	["ButtonPosition"] = 2,
 	["ShowLootUpgradeAdvisor"] = true,
 	["ShowQuestUpgradeAdvisor"] = true,

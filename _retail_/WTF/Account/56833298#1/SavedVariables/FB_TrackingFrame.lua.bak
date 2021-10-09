@@ -30,14 +30,12 @@ PBTF_Info = {
 	["HOURLY"] = {
 		[13759] = {
 			["plot"] = 1,
-			["name"] = "Raw Nightfin Snapper",
-			["maxval"] = 0,
-			["count"] = 23,
+			["maxval"] = 1,
 			["data"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
-				0, -- [4]
+				1, -- [4]
 				0, -- [5]
 				0, -- [6]
 				0, -- [7]
@@ -58,13 +56,17 @@ PBTF_Info = {
 				0, -- [22]
 				0, -- [23]
 			},
-			["texture"] = "Interface\\Icons\\INV_Misc_Fish_23",
+			["nevermore"] = false,
+			["count"] = 23,
+			["name"] = "Raw Nightfin Snapper",
+			["item"] = "13759:0:0:0:0:0:0:0",
+			["texture"] = 133909,
 		},
 		[13760] = {
 			["plot"] = 1,
-			["name"] = "Raw Sunscale Salmon",
-			["maxval"] = 0,
 			["count"] = 23,
+			["maxval"] = 0,
+			["name"] = "Raw Sunscale Salmon",
 			["data"] = {
 				0, -- [1]
 				0, -- [2]
@@ -96,9 +98,7 @@ PBTF_Info = {
 	["WEEKLY"] = {
 		[13756] = {
 			["plot"] = 1,
-			["name"] = "Raw Summer Bass",
-			["maxval"] = 0,
-			["count"] = 52,
+			["maxval"] = 1,
 			["data"] = {
 				0, -- [1]
 				0, -- [2]
@@ -136,7 +136,7 @@ PBTF_Info = {
 				0, -- [34]
 				0, -- [35]
 				0, -- [36]
-				0, -- [37]
+				1, -- [37]
 				0, -- [38]
 				0, -- [39]
 				0, -- [40]
@@ -153,13 +153,17 @@ PBTF_Info = {
 				0, -- [51]
 				0, -- [52]
 			},
-			["texture"] = "Interface\\Icons\\INV_Misc_Fish_03",
+			["nevermore"] = false,
+			["count"] = 52,
+			["name"] = "Raw Summer Bass",
+			["item"] = "13756:0:0:0:0:0:0:0",
+			["texture"] = 133889,
 		},
 		[13755] = {
 			["plot"] = 1,
-			["name"] = "Winter Squid",
-			["maxval"] = 0,
 			["count"] = 52,
+			["maxval"] = 0,
+			["name"] = "Winter Squid",
 			["data"] = {
 				0, -- [1]
 				0, -- [2]

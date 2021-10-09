@@ -2,21 +2,7 @@
 BigWigs:AddSounds("Attumen the Huntsman Raid", {
 })
 
-BigWigs:AddSounds("The Curator Raid", {
-	[30254] = "alarm",
-})
-
 BigWigs:AddSounds("Hyakiss the Lurker", {
-})
-
-BigWigs:AddSounds("Maiden of Virtue Raid", {
-	[29511] = "alarm",
-})
-
-BigWigs:AddSounds("Prince Malchezaar", {
-	[30843] = "alarm",
-	[30852] = "info",
-	["infernal"] = "alert",
 })
 
 BigWigs:AddSounds("Moroes Raid", {
@@ -24,15 +10,26 @@ BigWigs:AddSounds("Moroes Raid", {
 	[37023] = {"alarm","info"},
 })
 
-BigWigs:AddSounds("Netherspite", {
-})
-
-BigWigs:AddSounds("Nightbane Raid", {
-	[30129] = "alarm",
-	["phase"] = {"info","long"},
+BigWigs:AddSounds("Maiden of Virtue Raid", {
+	[29511] = "alarm",
 })
 
 BigWigs:AddSounds("Romulo & Julianne", {
+})
+
+BigWigs:AddSounds("The Big Bad Wolf", {
+	[30753] = "long",
+})
+
+BigWigs:AddSounds("The Crone", {
+})
+
+BigWigs:AddSounds("The Curator Raid", {
+	[30254] = "alarm",
+})
+
+BigWigs:AddSounds("Terestian Illhoof", {
+	["weak"] = {"alarm","info"},
 })
 
 BigWigs:AddSounds("Shade of Aran", {
@@ -41,13 +38,16 @@ BigWigs:AddSounds("Shade of Aran", {
 	["drink"] = "alert",
 })
 
-BigWigs:AddSounds("Terestian Illhoof", {
-	["weak"] = {"alarm","info"},
+BigWigs:AddSounds("Netherspite", {
 })
 
-BigWigs:AddSounds("The Big Bad Wolf", {
-	[30753] = "long",
+BigWigs:AddSounds("Prince Malchezaar", {
+	[30843] = "alarm",
+	[30852] = "info",
+	["infernal"] = "alert",
 })
 
-BigWigs:AddSounds("The Crone", {
+BigWigs:AddSounds("Nightbane Raid", {
+	[30129] = "alarm",
+	["phase"] = {"info","long"},
 })

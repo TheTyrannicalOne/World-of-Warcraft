@@ -60,6 +60,16 @@ MJEPersonalSettings = {
 		},
 		["hiddenIngame"] = false,
 		["notCollected"] = true,
+		["mountType"] = {
+			["repair"] = true,
+			["flying"] = true,
+			["underwater"] = true,
+			["transform"] = true,
+			["ground"] = true,
+			["passenger"] = true,
+		},
+		["onlyUsable"] = false,
+		["onlyFavorites"] = false,
 		["family"] = {
 			["Arachnids"] = {
 				["Scorpions"] = true,
@@ -255,16 +265,6 @@ MJEPersonalSettings = {
 			},
 			["Bats"] = true,
 		},
-		["mountType"] = {
-			["repair"] = true,
-			["flying"] = true,
-			["underwater"] = true,
-			["transform"] = true,
-			["ground"] = true,
-			["passenger"] = true,
-		},
-		["onlyFavorites"] = false,
-		["onlyUsable"] = false,
 		["faction"] = {
 			["horde"] = true,
 			["alliance"] = true,

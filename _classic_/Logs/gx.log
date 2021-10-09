@@ -1,35 +1,28 @@
-4/20 14:39:46.910  LogOpen
-4/20 14:39:46.910  ConsoleDetectDetectHardware():
-4/20 14:39:46.910  	cpuIdx: 1
-4/20 14:39:46.923  ConsoleDeviceInitialize(): hwDetect = 1, hwChanged = 0
-4/20 14:39:46.923  D3d11 Device Create
-4/20 14:39:46.934  	Format 2560 x 1440 Fullscreen, ArgbX888, vsync 0
-4/20 14:39:46.934  Found Adapter 0: Vendor Id 0x10de, Device Id 0x1e07 - Sysmem = 0
-4/20 14:39:46.934  Monitor 0 attached to adapter 0
-4/20 14:39:46.934  Skipping Software Renderer 1: Vendor Id 0x1414, Device Id 0x008c - Sysmem = 0
-4/20 14:39:46.934  Choosing adapter 0
-4/20 14:39:46.934  Detected NvAPI and checking if it's valid...
-4/20 14:39:47.076  AFR detection
-4/20 14:39:47.076  AFR found with 1 devices(s)
-4/20 14:39:47.076  Caps:
-4/20 14:39:47.076  	Vendor ID: 10de
-4/20 14:39:47.076  	Device ID: 1e07
-4/20 14:39:47.076  	AFR Groups: 1/1
-4/20 14:39:47.076  Feature Level: DX=3, GL=0, MTL=0
-4/20 14:39:47.102  D3d11 Device Create Successful
-4/20 14:39:47.119  CPU Processor Detection: 12 H/W threads
-4/20 14:39:47.119  Memory Detection: 34296328192 bytes of physical memory available
-4/20 14:39:47.119  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
-4/20 14:39:47.128  Resample::CreateResources
-4/20 14:39:47.209  RenderSettings::NotifyChanged
-4/20 14:39:47.229  Liquid::CreateProceduralTextures
-4/20 14:39:47.762  PortraitDeviceCreate
-4/20 14:39:47.901  VolumeFog::DestroyResources
-4/20 14:39:48.001  VolumeFog::UpdateResources
-4/20 14:39:48.001  VolumeFog::DestroyResources
-4/20 14:39:57.186  PortraitDeviceDestroy
-4/20 14:39:57.234  VolumeFog::DestroyResources
-4/20 14:39:57.234  Liquid::DestroyProceduralTextures
-4/20 14:39:57.779  Resample::DestroyResources
-4/20 14:39:57.779  D3d11 Device Destroy
-4/20 14:39:57.798  D3d11 Device Destroyed
+9/11 21:06:08.730  LogOpen
+9/11 21:06:08.730  World of Warcraft Retail x86_64 2.5.2.40045
+9/11 21:06:08.730  Windows 10 (10.0.19043) x86_64
+9/11 21:06:08.730         Intel(R) Core(TM) i7-4930K CPU @ 3.40GHz | Sockets:1 Cores:6 Threads:12
+9/11 21:06:08.730  31.9 GB System Memory
+9/11 21:06:08.730  On AC Power - Battery Not Present
+9/11 21:06:09.222  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" family:Turing type:Discrete vendor:0x10de device:0x1e07 driver(0x1e0000000e1c1c) location:1 dx11:true dx12:true
+9/11 21:06:09.222  	Monitor 0 "Generic PnP Monitor" Size(2560x1440) Pos(0, 0)
+9/11 21:06:09.222  	Monitor 1 "BenQ XL2430T (DisplayPort)" Size(1920x1080) Pos(-1920, 353)
+9/11 21:06:09.222  Nvidia driver version: r471_90
+9/11 21:06:09.255  Choosing gpu with monitor attached: "NVIDIA GeForce RTX 2080 Ti"
+9/11 21:06:09.255  D3d12 Device Create
+9/11 21:06:09.255  DXGI_FEATURE_PRESENT_ALLOW_TEARING:true
+9/11 21:06:09.508  DXGI_FORMAT_B8G8R8A8_UNORM UAV support: true
+9/11 21:06:09.508  Ray Tracing Support: DXR 1.1
+9/11 21:06:09.508  Variable Rate Shading Supported: true
+9/11 21:06:12.872  NotifyOnDeviceCreate
+9/11 21:06:12.884  D3d12 Device Create Successful
+9/11 21:06:12.884  <IsGPUDriverOutOfDate> No
+9/11 21:06:12.884  Detected Graphics Defaults: 7 (CPU = 7, GPU = 7, MEM = 7) WindowSize: 2560x1440
+9/11 21:06:12.994  Render Settings Changed. New Render Size: 2560x1440
+9/11 21:06:12.994  RTShadows: 3
+9/11 21:06:17.561  Render Settings Changed
+9/11 21:06:17.561  RTShadows: 0
+9/11 21:06:17.928  Detected SwapChain::Present Modified
+9/11 21:06:46.251  D3d12 Device Destroy
+9/11 21:06:46.251  NotifyOnDeviceDestroy
+9/11 21:06:46.328  GxShutdown

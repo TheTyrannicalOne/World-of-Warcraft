@@ -308,3 +308,10 @@ LibSharedMedia-3.0: enabled
 AceGUI-3.0-SharedMediaWidgets: enabled
 LibSink-2.0: enabled
 MSA-DropDownMenu-1.0: enabled
+BigWigs_SanctumOfDomination: enabled
+BigWigs_Shadowlands: enabled
+BtWQuestsShadowlands: enabled
+LittleWigs_BattleForAzeroth: enabled
+VenturePlan: enabled
+Narcissus_Database_Item: enabled
+Narcissus_Database_NPC: enabled

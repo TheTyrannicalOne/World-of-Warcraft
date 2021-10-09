@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0523,
+	["LastVersion"] = 2.0528,
 	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {

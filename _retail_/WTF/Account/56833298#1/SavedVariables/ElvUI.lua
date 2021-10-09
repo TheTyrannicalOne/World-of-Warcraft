@@ -197,6 +197,8 @@ ElvDB = {
 			["Tyrannithal"] = "DEMONHUNTER",
 		},
 	},
+	["DisabledAddOns"] = {
+	},
 	["profiles"] = {
 		["Vancard - Zul'jin"] = {
 			["databars"] = {
@@ -12389,11 +12391,11 @@ ElvDB = {
 				["LootFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-500,-200",
 				["ZoneAbility"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,483,500",
 				["SocialMenuMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-589,-1",
-				["ElvUF_BodyGuardMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,143,500",
+				["ElvUIBagMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,315",
 				["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,0,0",
 				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
-				["ElvUF_PlayerMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,483,224",
-				["ElvUF_PetMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,483,0",
+				["ElvUF_BodyGuardMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,143,500",
+				["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,430,295",
 				["ElvUF_FocusMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,483,165",
 				["PetAB"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,0,219",
 				["DurabilityFrameMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,425,223",
@@ -12431,8 +12433,8 @@ ElvDB = {
 				["TooltipMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-483,370",
 				["ElvUF_TankMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,483,159",
 				["BossHeaderMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-260,370",
-				["ElvUIBagMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,315",
-				["TotemBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,430,295",
+				["ElvUF_PetMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,483,0",
+				["ElvUF_PlayerMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,483,224",
 				["ElvUF_PartyMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,707,226",
 				["AlertFrameMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,500,-200",
 				["DebuffsMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,259,238",
@@ -18640,9 +18642,15 @@ ElvDB = {
 						},
 					},
 				},
-				["chat"] = {
-					["guildmaster"] = true,
-					["dpsSpam"] = true,
+				["minimap"] = {
+					["locPanel"] = {
+						["width"] = 310,
+						["enable"] = true,
+					},
+					["instance"] = {
+						["enable"] = true,
+						["fontSize"] = 14,
+					},
 				},
 				["loot"] = {
 					["history"] = {
@@ -18680,6 +18688,26 @@ ElvDB = {
 					["anchor"] = "TOPLEFT",
 					["enable"] = true,
 				},
+				["unitframes"] = {
+					["unit"] = {
+						["player"] = {
+							["pvpIconText"] = {
+								["enable"] = true,
+								["yoffset"] = -6,
+							},
+						},
+						["raid"] = {
+							["offline"] = {
+								["enable"] = true,
+								["size"] = 22,
+							},
+							["dead"] = {
+								["enable"] = true,
+								["size"] = 22,
+							},
+						},
+					},
+				},
 				["dt"] = {
 					["friends"] = {
 						["hide_titleline"] = true,
@@ -18701,14 +18729,9 @@ ElvDB = {
 						["totals"] = true,
 					},
 				},
-				["minimap"] = {
-					["locPanel"] = {
-						["width"] = 310,
-						["enable"] = true,
-					},
-					["instance"] = {
-						["enable"] = true,
-						["fontSize"] = 14,
+				["actionbar"] = {
+					["vehicle"] = {
+						["buttons"] = 7,
 					},
 				},
 				["nameplates"] = {
@@ -18719,25 +18742,9 @@ ElvDB = {
 						["enable"] = true,
 					},
 				},
-				["unitframes"] = {
-					["unit"] = {
-						["player"] = {
-							["pvpIconText"] = {
-								["enable"] = true,
-								["yoffset"] = -6,
-							},
-						},
-						["raid"] = {
-							["offline"] = {
-								["enable"] = true,
-								["size"] = 22,
-							},
-							["dead"] = {
-								["enable"] = true,
-								["size"] = 22,
-							},
-						},
-					},
+				["chat"] = {
+					["guildmaster"] = true,
+					["dpsSpam"] = true,
 				},
 				["quests"] = {
 					["autoReward"] = true,
@@ -18765,7 +18772,7 @@ ElvDB = {
 				["copyChatLines"] = true,
 				["fadeChatToggles"] = false,
 			},
-			["dbConverted"] = 12.41,
+			["dbConverted"] = 12.44,
 			["layoutSet"] = "tank",
 			["movers"] = {
 				["ElvUF_FocusCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,407",
@@ -18857,12 +18864,12 @@ ElvDB = {
 			},
 			["convertPages"] = true,
 			["tooltip"] = {
-				["itemCount"] = "NONE",
 				["healthBar"] = {
 					["font"] = "PT Sans Narrow",
 					["height"] = 12,
 					["fontSize"] = 12,
 				},
+				["itemCount"] = "NONE",
 			},
 			["general"] = {
 				["totems"] = {
@@ -37247,21 +37254,47 @@ ElvDB = {
 			["v11NamePlateReset"] = true,
 		},
 	},
-	["serverID"] = {
-		[61] = {
-			["Zul'jin"] = true,
-		},
-		[96] = {
-			["Black Dragonflight"] = true,
-		},
-		[75] = {
-			["Argent Dawn"] = true,
-		},
-		[3683] = {
-			["Dalaran"] = true,
-		},
-	},
 	["SLErrorDisabledAddOns"] = {
+	},
+	["profileKeys"] = {
+		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
+		["Armaguth - Zul'jin"] = "Armaguth - Zul'jin",
+		["Charbeatic - Zul'jin"] = "Charbeatic - Zul'jin",
+		["Shaekhan - Zul'jin"] = "Shaekhan - Zul'jin",
+		["Shanyt - Zul'jin"] = "Default",
+		["Avisar - Dalaran"] = "Avisar - Dalaran",
+		["Banuumine - Zul'jin"] = "Banuumine - Zul'jin",
+		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
+		["Shaekhan - Argent Dawn"] = "Default",
+		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
+		["Durlok - Black Dragonflight"] = "ZerkinUI Pro : v3.20",
+		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
+		["Tyranasticus - Zul'jin"] = "Tyranasticus - Zul'jin",
+		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
+		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
+		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Dachas - Zul'jin"] = "Dachas - Zul'jin",
+		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
+		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Okona - Zul'jin"] = "Mistweaver (healer) UI v1.0.0",
+		["Laymonan - Zul'jin"] = "Laymonan - Zul'jin",
+		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
+		["Tyran - Argent Dawn"] = "Default",
+		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
+		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
+		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
+		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
+		["Abyronterner - Zul'jin"] = "Abyronterner - Zul'jin",
+		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Jasmoney - Zul'jin"] = "Jasmoney - Zul'jin",
+		["Jingojaggot - Zul'jin"] = "Default",
+		["Mandles - Zul'jin"] = "Mandles - Zul'jin",
 	},
 	["faction"] = {
 		["Zul'jin"] = {
@@ -37343,46 +37376,6 @@ ElvDB = {
 	},
 	["LuaErrorDisabledAddOns"] = {
 	},
-	["profileKeys"] = {
-		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
-		["Armaguth - Zul'jin"] = "Armaguth - Zul'jin",
-		["Charbeatic - Zul'jin"] = "Charbeatic - Zul'jin",
-		["Shaekhan - Zul'jin"] = "Shaekhan - Zul'jin",
-		["Shanyt - Zul'jin"] = "Default",
-		["Avisar - Dalaran"] = "Avisar - Dalaran",
-		["Banuumine - Zul'jin"] = "Banuumine - Zul'jin",
-		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
-		["Shaekhan - Argent Dawn"] = "Default",
-		["Ruffinton - Dalaran"] = "Ruffinton - Dalaran",
-		["Durlok - Black Dragonflight"] = "ZerkinUI Pro : v3.20",
-		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
-		["Tyranasticus - Zul'jin"] = "Tyranasticus - Zul'jin",
-		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
-		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
-		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Dachas - Zul'jin"] = "Dachas - Zul'jin",
-		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
-		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
-		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
-		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
-		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
-		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
-		["Okona - Zul'jin"] = "Mistweaver (healer) UI v1.0.0",
-		["Laymonan - Zul'jin"] = "Laymonan - Zul'jin",
-		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
-		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
-		["Tyran - Argent Dawn"] = "Default",
-		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
-		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
-		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
-		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
-		["Abyronterner - Zul'jin"] = "Abyronterner - Zul'jin",
-		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
-		["Jasmoney - Zul'jin"] = "Jasmoney - Zul'jin",
-		["Jingojaggot - Zul'jin"] = "Default",
-		["Mandles - Zul'jin"] = "Mandles - Zul'jin",
-	},
 	["gold"] = {
 		["Zul'jin"] = {
 			["Laymonan"] = 0,
@@ -37423,7 +37416,7 @@ ElvDB = {
 			["Kelvalatar"] = 10000,
 		},
 		["Argent Dawn"] = {
-			["Shanyt"] = 35446958226,
+			["Shanyt"] = 35534119779,
 			["Vadder"] = 0,
 			["Tyran"] = 0,
 			["Brotus"] = 79,
@@ -37435,8 +37428,8 @@ ElvDB = {
 		["TimePlayed"] = {
 			["Argent Dawn"] = {
 				["Shanyt"] = {
-					["TotalTime"] = 25903331,
-					["LevelTime"] = 1636556,
+					["TotalTime"] = 26047398,
+					["LevelTime"] = 1780623,
 					["Level"] = 60,
 					["Class"] = "WARRIOR",
 					["LastLevelTime"] = 6263,
@@ -37676,6 +37669,20 @@ ElvDB = {
 					["Level"] = 20,
 				},
 			},
+		},
+	},
+	["serverID"] = {
+		[61] = {
+			["Zul'jin"] = true,
+		},
+		[96] = {
+			["Black Dragonflight"] = true,
+		},
+		[75] = {
+			["Argent Dawn"] = true,
+		},
+		[3683] = {
+			["Dalaran"] = true,
 		},
 	},
 	["SLEMinimize"] = {
@@ -39456,7 +39463,21 @@ ElvPrivateDB = {
 								0, -- [4]
 								-10, -- [5]
 							},
+							["HelpFrame"] = {
+								"CENTER", -- [1]
+								"UIParent", -- [2]
+								"CENTER", -- [3]
+								0, -- [4]
+								0, -- [5]
+							},
 							["GameMenuFrame"] = {
+								"CENTER", -- [1]
+								"UIParent", -- [2]
+								"CENTER", -- [3]
+								0, -- [4]
+								0, -- [5]
+							},
+							["GarrisonBuildingFrame"] = {
 								"CENTER", -- [1]
 								"UIParent", -- [2]
 								"CENTER", -- [3]
@@ -39470,6 +39491,13 @@ ElvPrivateDB = {
 								611, -- [4]
 								-116, -- [5]
 							},
+							["EncounterJournal"] = {
+								"TOPLEFT", -- [1]
+								"UIParent", -- [2]
+								"TOPLEFT", -- [3]
+								17.00004959106445, -- [4]
+								-163.9999847412109, -- [5]
+							},
 							["CovenantSanctumFrame"] = {
 								"CENTER", -- [1]
 								"UIParent", -- [2]
@@ -39477,7 +39505,7 @@ ElvPrivateDB = {
 								0, -- [4]
 								0, -- [5]
 							},
-							["MacroFrame"] = {
+							["VoidStorageFrame"] = {
 								"TOPLEFT", -- [1]
 								"UIParent", -- [2]
 								"TOPLEFT", -- [3]
@@ -39505,12 +39533,12 @@ ElvPrivateDB = {
 								7.999924659729004, -- [4]
 								-185.0000457763672, -- [5]
 							},
-							["GarrisonBuildingFrame"] = {
-								"CENTER", -- [1]
+							["MacroFrame"] = {
+								"TOPLEFT", -- [1]
 								"UIParent", -- [2]
-								"CENTER", -- [3]
-								0, -- [4]
-								0, -- [5]
+								"TOPLEFT", -- [3]
+								15.99999809265137, -- [4]
+								-116, -- [5]
 							},
 							["StaticPopup4"] = {
 								"TOP", -- [1]
@@ -39533,11 +39561,11 @@ ElvPrivateDB = {
 								15.99999809265137, -- [4]
 								-116, -- [5]
 							},
-							["ItemTextFrame"] = {
+							["ItemUpgradeFrame"] = {
 								"TOPLEFT", -- [1]
 								"UIParent", -- [2]
 								"TOPLEFT", -- [3]
-								15.99999809265137, -- [4]
+								15.99999904632568, -- [4]
 								-116, -- [5]
 							},
 							["StaticPopup1"] = {
@@ -39596,12 +39624,12 @@ ElvPrivateDB = {
 								0, -- [4]
 								-3.999999761581421, -- [5]
 							},
-							["EncounterJournal"] = {
+							["QuestFrame"] = {
 								"TOPLEFT", -- [1]
 								"UIParent", -- [2]
 								"TOPLEFT", -- [3]
-								17.00004959106445, -- [4]
-								-163.9999847412109, -- [5]
+								15.99999809265137, -- [4]
+								-116, -- [5]
 							},
 							["TradeFrame"] = {
 								"TOPLEFT", -- [1]
@@ -39624,13 +39652,6 @@ ElvPrivateDB = {
 								0, -- [4]
 								0, -- [5]
 							},
-							["ItemUpgradeFrame"] = {
-								"TOPLEFT", -- [1]
-								"UIParent", -- [2]
-								"TOPLEFT", -- [3]
-								15.99999904632568, -- [4]
-								-116, -- [5]
-							},
 							["ArchaeologyFrame"] = {
 								"TOPLEFT", -- [1]
 								"UIParent", -- [2]
@@ -39645,6 +39666,13 @@ ElvPrivateDB = {
 								0, -- [4]
 								0, -- [5]
 							},
+							["PVPReadyDialog"] = {
+								"TOP", -- [1]
+								"UIParent", -- [2]
+								"TOP", -- [3]
+								0, -- [4]
+								-100, -- [5]
+							},
 							["InspectFrame"] = {
 								"TOPLEFT", -- [1]
 								"UIParent", -- [2]
@@ -39652,12 +39680,12 @@ ElvPrivateDB = {
 								15.99999809265137, -- [4]
 								-116, -- [5]
 							},
-							["PVPReadyDialog"] = {
-								"TOP", -- [1]
+							["QuestLogPopupDetailFrame"] = {
+								"TOPLEFT", -- [1]
 								"UIParent", -- [2]
-								"TOP", -- [3]
-								0, -- [4]
-								-100, -- [5]
+								"TOPLEFT", -- [3]
+								15.99999809265137, -- [4]
+								-116, -- [5]
 							},
 							["CommunitiesFrame"] = {
 								"TOPLEFT", -- [1]
@@ -39673,12 +39701,12 @@ ElvPrivateDB = {
 								0, -- [4]
 								0, -- [5]
 							},
-							["StaticPopup3"] = {
+							["LFGDungeonReadyStatus"] = {
 								"TOP", -- [1]
-								"UIParent", -- [2]
+								"LFGDungeonReadyPopup", -- [2]
 								"TOP", -- [3]
 								0, -- [4]
-								-100, -- [5]
+								0, -- [5]
 							},
 							["WardrobeFrame"] = {
 								"TOPLEFT", -- [1]
@@ -39687,17 +39715,17 @@ ElvPrivateDB = {
 								15.99999809265137, -- [4]
 								-116, -- [5]
 							},
-							["QuestLogPopupDetailFrame"] = {
-								"TOPLEFT", -- [1]
+							["AuctionHouseFrame"] = {
+								"CENTER", -- [1]
 								"UIParent", -- [2]
-								"TOPLEFT", -- [3]
-								15.99999809265137, -- [4]
-								-116, -- [5]
+								"CENTER", -- [3]
+								-20.00023651123047, -- [4]
+								220, -- [5]
 							},
-							["LFGDungeonReadyStatus"] = {
-								"TOP", -- [1]
-								"LFGDungeonReadyPopup", -- [2]
-								"TOP", -- [3]
+							["KeyBindingFrame"] = {
+								"CENTER", -- [1]
+								"UIParent", -- [2]
+								"CENTER", -- [3]
 								0, -- [4]
 								0, -- [5]
 							},
@@ -39708,13 +39736,6 @@ ElvPrivateDB = {
 								0, -- [4]
 								60, -- [5]
 							},
-							["FriendsFrame"] = {
-								"TOPLEFT", -- [1]
-								"UIParent", -- [2]
-								"TOPLEFT", -- [3]
-								15.99999809265137, -- [4]
-								-116, -- [5]
-							},
 							["TaxiFrame"] = {
 								"TOPLEFT", -- [1]
 								"UIParent", -- [2]
@@ -39722,32 +39743,25 @@ ElvPrivateDB = {
 								15.99999809265137, -- [4]
 								-116, -- [5]
 							},
-							["KeyBindingFrame"] = {
-								"CENTER", -- [1]
-								"UIParent", -- [2]
-								"CENTER", -- [3]
-								0, -- [4]
-								0, -- [5]
-							},
-							["VideoOptionsFrame"] = {
-								"CENTER", -- [1]
-								"UIParent", -- [2]
-								"CENTER", -- [3]
-								0, -- [4]
-								0, -- [5]
-							},
-							["ScrappingMachineFrame"] = {
+							["FriendsFrame"] = {
 								"TOPLEFT", -- [1]
 								"UIParent", -- [2]
 								"TOPLEFT", -- [3]
 								15.99999809265137, -- [4]
 								-116, -- [5]
 							},
-							["MerchantFrame"] = {
+							["GossipFrame"] = {
 								"TOPLEFT", -- [1]
 								"UIParent", -- [2]
 								"TOPLEFT", -- [3]
-								15.99999904632568, -- [4]
+								15.99999809265137, -- [4]
+								-116, -- [5]
+							},
+							["ScrappingMachineFrame"] = {
+								"TOPLEFT", -- [1]
+								"UIParent", -- [2]
+								"TOPLEFT", -- [3]
+								15.99999809265137, -- [4]
 								-116, -- [5]
 							},
 							["BFAMissionFrame"] = {
@@ -39757,12 +39771,26 @@ ElvPrivateDB = {
 								0, -- [4]
 								0, -- [5]
 							},
-							["DressUpFrame"] = {
-								"LEFT", -- [1]
+							["MerchantFrame"] = {
+								"TOPLEFT", -- [1]
 								"UIParent", -- [2]
-								"LEFT", -- [3]
-								276.4996948242188, -- [4]
-								51.49963760375977, -- [5]
+								"TOPLEFT", -- [3]
+								15.99999904632568, -- [4]
+								-116, -- [5]
+							},
+							["VideoOptionsFrame"] = {
+								"CENTER", -- [1]
+								"UIParent", -- [2]
+								"CENTER", -- [3]
+								0, -- [4]
+								0, -- [5]
+							},
+							["DressUpFrame"] = {
+								"CENTER", -- [1]
+								"UIParent", -- [2]
+								"CENTER", -- [3]
+								-82.00069427490234, -- [4]
+								39.49972534179688, -- [5]
 							},
 							["WorldMapFrame"] = {
 								"TOPLEFT", -- [1]
@@ -39771,19 +39799,19 @@ ElvPrivateDB = {
 								15.99999809265137, -- [4]
 								-94, -- [5]
 							},
-							["AuctionHouseFrame"] = {
-								"CENTER", -- [1]
-								"UIParent", -- [2]
-								"CENTER", -- [3]
-								-20.00023651123047, -- [4]
-								220, -- [5]
-							},
 							["StackSplitFrame"] = {
 								"BOTTOMRIGHT", -- [1]
 								"UIParent", -- [2]
 								"TOPRIGHT", -- [3]
 								0, -- [4]
 								0, -- [5]
+							},
+							["ClassTrainerFrame"] = {
+								"TOPLEFT", -- [1]
+								"UIParent", -- [2]
+								"TOPLEFT", -- [3]
+								15.99999809265137, -- [4]
+								-116, -- [5]
 							},
 							["LFDRoleCheckPopup"] = {
 								"TOP", -- [1]
@@ -39792,12 +39820,12 @@ ElvPrivateDB = {
 								0, -- [4]
 								-100, -- [5]
 							},
-							["ClassTrainerFrame"] = {
-								"TOPLEFT", -- [1]
+							["StaticPopup3"] = {
+								"TOP", -- [1]
 								"UIParent", -- [2]
-								"TOPLEFT", -- [3]
-								15.99999809265137, -- [4]
-								-116, -- [5]
+								"TOP", -- [3]
+								0, -- [4]
+								-100, -- [5]
 							},
 							["LFGDungeonReadyDialog"] = {
 								"TOPLEFT", -- [1]
@@ -39834,19 +39862,19 @@ ElvPrivateDB = {
 								-63.99977111816406, -- [4]
 								52.99982833862305, -- [5]
 							},
-							["VoidStorageFrame"] = {
+							["ItemTextFrame"] = {
 								"TOPLEFT", -- [1]
 								"UIParent", -- [2]
 								"TOPLEFT", -- [3]
 								15.99999809265137, -- [4]
 								-116, -- [5]
 							},
-							["HelpFrame"] = {
-								"CENTER", -- [1]
+							["ChannelFrame"] = {
+								"TOPLEFT", -- [1]
 								"UIParent", -- [2]
-								"CENTER", -- [3]
-								0, -- [4]
-								0, -- [5]
+								"TOPLEFT", -- [3]
+								15.99999809265137, -- [4]
+								-116, -- [5]
 							},
 						},
 						["remember"] = true,
@@ -39862,9 +39890,6 @@ ElvPrivateDB = {
 						["enable"] = true,
 					},
 				},
-				["uibuttons"] = {
-					["style"] = "dropdown",
-				},
 				["skins"] = {
 					["merchant"] = {
 						["enable"] = true,
@@ -39878,6 +39903,9 @@ ElvPrivateDB = {
 							["r"] = 0.23529411764706,
 						},
 					},
+				},
+				["uibuttons"] = {
+					["style"] = "dropdown",
 				},
 				["professions"] = {
 					["enchant"] = {

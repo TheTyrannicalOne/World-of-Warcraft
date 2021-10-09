@@ -23,7 +23,7 @@ RareShareDB = {
 		["Duplicates"] = true,
 	},
 	["LastAnnounce"] = {
-		["Time"] = 1623341225,
-		["ID"] = 157153,
+		["Time"] = 1633298188,
+		["ID"] = 151933,
 	},
 }
