@@ -2253,7 +2253,7 @@ end
 -- seasonal
 local seasonal = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 seasonal:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
-seasonal:SetText(L["SEASONAL"]);
+seasonal:SetText(L["SEASONAL_LABEL"]);
 
 local seasonalFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate");
 seasonalFrame:SetPoint("TOP", seasonal, "BOTTOM", 0, -4);
@@ -3338,7 +3338,7 @@ end,
 function(self)
 	settings:SetTooltipSetting("Auto:BountyList", self:GetChecked());
 end);
-OpenBountyListAutomatically:SetATTTooltip(L["AUTO_BOUNTY__CHECKBOX_TOOLTIP"]);
+OpenBountyListAutomatically:SetATTTooltip(L["AUTO_BOUNTY_CHECKBOX_TOOLTIP"]);
 OpenBountyListAutomatically:SetPoint("TOPLEFT", AutomaticallySkipCutscenesCheckBox, "BOTTOMLEFT", 0, 4);
 
 local OpenMainListAutomatically = settings:CreateCheckBox(L["AUTO_MAIN_LIST_CHECKBOX"],

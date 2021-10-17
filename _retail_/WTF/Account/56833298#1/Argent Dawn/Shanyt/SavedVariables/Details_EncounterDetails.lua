@@ -2,13 +2,13 @@
 EncounterDetailsDB = {
 	["emotes"] = {
 		{
-			["boss"] = "High Inquisitor Whitemane",
+			["boss"] = "Aku'mai",
 		}, -- [1]
 		{
-			["boss"] = "Brother Korloff",
+			["boss"] = "Twilight Lord Bathiel",
 		}, -- [2]
 		{
-			["boss"] = "High Inquisitor Whitemane",
+			["boss"] = "Guardian of the Deep",
 		}, -- [3]
 	},
 	["encounter_spells"] = {
@@ -53,6 +53,13 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Midnight",
+		},
+		[151275] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Aku'mai the Devourer",
 		},
 		[328125] = {
 			["school"] = 8,

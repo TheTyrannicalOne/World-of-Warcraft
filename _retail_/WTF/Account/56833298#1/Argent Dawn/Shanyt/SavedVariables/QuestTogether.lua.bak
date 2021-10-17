@@ -1,16 +1,16 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[57919] = {
-			["title"] = "An Abuse of Power",
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/1 Abused Soul subjugated", -- [1]
+				"0/4 Echo of Time", -- [1]
 			},
 		},
-		[42234] = {
-			["title"] = "The Valarjar",
+		[43179] = {
+			["title"] = "The Kirin Tor of Dalaran",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Stormheim", -- [1]
+				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
 			},
 		},
 		[56352] = {
@@ -88,7 +88,7 @@ QuestTogether = {
 		[53435] = {
 			["title"] = "Azerite for the Horde",
 			["objectives"] = {
-				"9184/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
+				"18349/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
 		[50602] = {
@@ -103,10 +103,10 @@ QuestTogether = {
 				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[42422] = {
-			["title"] = "The Wardens",
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
+				"2/4 Echo of Time", -- [1]
 			},
 		},
 		[44948] = {
@@ -147,6 +147,64 @@ QuestTogether = {
 				"0/1 Method of tracking found", -- [2]
 			},
 		},
+		[42420] = {
+			["title"] = "Court of Farondis",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Azsuna", -- [1]
+			},
+		},
+		[54180] = {
+			["title"] = "Quest",
+			["objectives"] = {
+			},
+		},
+		[49032] = {
+			["title"] = "Antorus, the Burning Throne: Dark Passage",
+			["objectives"] = {
+				"1/4 Rune of Passage", -- [1]
+			},
+		},
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
+			["objectives"] = {
+				"2/5 Pet Battlemasters Defeated", -- [1]
+			},
+		},
+		[57462] = {
+			["title"] = "Dream Catcher",
+			["objectives"] = {
+				"28/200 Shred of Insanity", -- [1]
+			},
+		},
+		[31446] = {
+			["title"] = "Mimic Octopus",
+			["objectives"] = {
+				"1/1 Mimic Octopus", -- [1]
+			},
+		},
+		[57403] = {
+			["title"] = "Reconstructing \"Fear and Flesh\"",
+			["objectives"] = {
+				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
+			},
+		},
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
+			["objectives"] = {
+			},
+		},
+		[57919] = {
+			["title"] = "An Abuse of Power",
+			["objectives"] = {
+				"0/1 Abused Soul subjugated", -- [1]
+			},
+		},
+		[30567] = {
+			["title"] = "Blanche's Boomer Brew",
+			["objectives"] = {
+				"0/1 Scenario Complete", -- [1]
+			},
+		},
 		[31891] = {
 			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
@@ -157,67 +215,9 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
-			["objectives"] = {
-			},
-		},
-		[40329] = {
-			["title"] = "Battle Pet Tamers: Warlords",
-			["objectives"] = {
-				"2/5 Pet Battlemasters Defeated", -- [1]
-			},
-		},
-		[57403] = {
-			["title"] = "Reconstructing \"Fear and Flesh\"",
-			["objectives"] = {
-				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
-			},
-		},
-		[57462] = {
-			["title"] = "Dream Catcher",
-			["objectives"] = {
-				"28/200 Shred of Insanity", -- [1]
-			},
-		},
 		[57564] = {
 			["title"] = "Mantid Assault Tracker",
 			["objectives"] = {
-			},
-		},
-		[31446] = {
-			["title"] = "Mimic Octopus",
-			["objectives"] = {
-				"1/1 Mimic Octopus", -- [1]
-			},
-		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
-			["objectives"] = {
-			},
-		},
-		[45383] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
-			["objectives"] = {
-				"2/4 Echo of Time", -- [1]
-			},
-		},
-		[30567] = {
-			["title"] = "Blanche's Boomer Brew",
-			["objectives"] = {
-				"0/1 Scenario Complete", -- [1]
-			},
-		},
-		[49032] = {
-			["title"] = "Antorus, the Burning Throne: Dark Passage",
-			["objectives"] = {
-				"1/4 Rune of Passage", -- [1]
-			},
-		},
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
-			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
 			},
 		},
 	},

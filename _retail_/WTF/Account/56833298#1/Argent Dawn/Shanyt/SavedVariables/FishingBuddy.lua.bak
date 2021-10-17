@@ -1,7 +1,7 @@
 
 FishingBuddy_Player = {
 	["MinimapData"] = {
-		["minimapPos"] = 225,
+		["minimapPos"] = 194.3003394618243,
 		["hide"] = false,
 	},
 	["Version"] = 19500,
@@ -33,7 +33,7 @@ FishingBuddy_Player = {
 		["DrownedMana"] = true,
 		["LastResort"] = true,
 		["UseAction"] = true,
-		["TotalTimeFishing"] = 124219.454,
+		["TotalTimeFishing"] = 124328.615,
 		["EasyCastKeys"] = 2,
 		["EnhancePools"] = true,
 		["TurnOnSound"] = true,

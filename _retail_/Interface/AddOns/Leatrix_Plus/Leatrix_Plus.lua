@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 9.1.12 (29th September 2021)
+-- 	Leatrix Plus 9.1.13 (13th October 2021)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "9.1.12"
+	LeaPlusLC["AddonVer"] = "9.1.13"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -335,29 +335,6 @@
 
 	end
 
-	-- Convert color code (from RGB or RGB Percent to Hex or Hex Percent and vice versa)
-	function LeaPlusLC:ConvertColor(r, g, b)
-		if r and g and b then
-			LeaPlusLC:Print("Source: |cffffffff" .. r .. " " .. g .. " " .. b .. " ")
-			-- Source is RGB or RGB Percent
-			local r = r <= 255 and r >= 0 and r or 0
-			local g = g <= 255 and g >= 0 and g or 0
-			local b = b <= 255 and b >= 0 and b or 0
-			-- RGB Percent to Hex
-			LeaPlusLC:Print("RGB Percent to Hex: |cffffffff" .. strupper(string.format("%02x%02x%02x", r * 255, g * 255, b * 255)))
-			-- RGB to Hex
-			LeaPlusLC:Print("RGB to Hex: |cffffffff" .. strupper(string.format("%02x%02x%02x", r, g, b)))
-		else
-			LeaPlusLC:Print("Source: |cffffffff" .. r)
-			-- Source is Hex
-			local rhex, ghex, bhex = string.sub(r, 1, 2), string.sub(r, 3, 4), string.sub(r, 5, 6)
-			-- Hex to RGB Percent
-			LeaPlusLC:Print("Hex to RGB Percent: |cffffffff" .. string.format("%.2f", tonumber(rhex, 16) / 255) ..  "  " .. string.format("%.2f", tonumber(ghex, 16) / 255) .. "  " .. string.format("%.2f", tonumber(bhex, 16) / 255))
-			-- Hex to RGB
-			LeaPlusLC:Print("Hex to RGB: |cffffffff" .. tonumber(rhex, 16) .. "  " .. tonumber(ghex, 16) .. "  " .. tonumber(bhex, 16))
-		end
-	end
-
 ----------------------------------------------------------------------
 --	L02: Locks
 ----------------------------------------------------------------------
@@ -384,6 +361,7 @@
 --	Set lock state for configuration buttons
 	function LeaPlusLC:SetDim()
 		LeaPlusLC:LockOption("AutomateQuests", "AutomateQuestsBtn", false)			-- Automate quests
+		LeaPlusLC:LockOption("AutoReleasePvP", "AutoReleasePvPBtn", false)			-- Release in PvP
 		LeaPlusLC:LockOption("AutoRepairGear", "AutoRepairBtn", false)				-- Repair automatically
 		LeaPlusLC:LockOption("InviteFromWhisper", "InvWhisperBtn", false)			-- Invite from whispers
 		LeaPlusLC:LockOption("NoChatButtons", "NoChatButtonsBtn", true)				-- Hide chat buttons
@@ -558,16 +536,6 @@
 			LpEvt:RegisterEvent("PARTY_INVITE_REQUEST");
 		else
 			LpEvt:UnregisterEvent("PARTY_INVITE_REQUEST");
-		end
-
-		----------------------------------------------------------------------
-		--	Release in PvP
-		----------------------------------------------------------------------
-
-		if LeaPlusLC["AutoReleasePvP"] == "On" then
-			LpEvt:RegisterEvent("PLAYER_DEAD");
-		else
-			LpEvt:UnregisterEvent("PLAYER_DEAD");
 		end
 
 		----------------------------------------------------------------------
@@ -1895,8 +1863,8 @@
 			-- Nude and tabard buttons
 			----------------------------------------------------------------------
 
-			-- Add buttons to main dressup frames
-			LeaPlusLC:CreateButton("DressUpNudeBtn", DressUpFrame, "Nude", "BOTTOMLEFT", 106, 79, 80, 22, false, "")
+			-- Add buttons to main dressup frames (parented to reset button so they show with reset button)
+			LeaPlusLC:CreateButton("DressUpNudeBtn", DressUpFrameResetButton, "Nude", "BOTTOMLEFT", 106, 79, 80, 22, false, "")
 			LeaPlusCB["DressUpNudeBtn"]:ClearAllPoints()
 			LeaPlusCB["DressUpNudeBtn"]:SetPoint("RIGHT", DressUpFrameResetButton, "LEFT", 0, 0)
 			LeaPlusCB["DressUpNudeBtn"]:SetScript("OnClick", function()
@@ -1904,7 +1872,7 @@
 				playerActor:Undress()
 			end)
 
-			LeaPlusLC:CreateButton("DressUpTabBtn", DressUpFrame, "Tabard", "BOTTOMLEFT", 26, 79, 80, 22, false, "")
+			LeaPlusLC:CreateButton("DressUpTabBtn", DressUpFrameResetButton, "Tabard", "BOTTOMLEFT", 26, 79, 80, 22, false, "")
 			LeaPlusCB["DressUpTabBtn"]:ClearAllPoints()
 			LeaPlusCB["DressUpTabBtn"]:SetPoint("RIGHT", LeaPlusCB["DressUpNudeBtn"], "LEFT", 0, 0)
 			LeaPlusCB["DressUpTabBtn"]:SetScript("OnClick", function()
@@ -1912,16 +1880,16 @@
 				playerActor:UndressSlot(19)
 			end)
 
-			-- Only show dressup buttons if its a player (reset button will show too)
-			hooksecurefunc(DressUpFrameResetButton, "Show", function()
-				LeaPlusCB["DressUpNudeBtn"]:Show()
-				LeaPlusCB["DressUpTabBtn"]:Show()
-			end)
-
-			hooksecurefunc(DressUpFrameResetButton, "Hide", function()
-				LeaPlusCB["DressUpNudeBtn"]:Hide()
-				LeaPlusCB["DressUpTabBtn"]:Hide()
-			end)
+			-- Patch 9.1.5
+			if DressUpFrame.LinkButton then
+				-- Resize buttons to match string widths
+				DressUpFrame.LinkButton:SetText("Link")
+				DressUpFrame.LinkButton:SetWidth(DressUpFrame.LinkButton:GetFontString():GetStringWidth() + 20)
+				LeaPlusCB["DressUpNudeBtn"]:SetWidth(LeaPlusCB["DressUpNudeBtn"]:GetFontString():GetStringWidth() + 20)
+				LeaPlusCB["DressUpTabBtn"]:SetWidth(LeaPlusCB["DressUpTabBtn"]:GetFontString():GetStringWidth() + 20)
+				DressUpFrameCancelButton:SetWidth(DressUpFrameCancelButton:GetFontString():GetStringWidth() + 20)
+				DressUpFrameResetButton:SetWidth(DressUpFrameResetButton:GetFontString():GetStringWidth() + 20)
+			end
 
 			----------------------------------------------------------------------
 			-- Controls
@@ -2277,48 +2245,7 @@
 		----------------------------------------------------------------------
 
 		if LeaPlusLC["HideLevelUpDisplay"] == "On" then
-
-			if LevelUpDisplay then
-
-				-- Patch 9.0.5
-
-				-- Create holder
-				local LevelUpDisplayHolder = CreateFrame("Frame", nil, UIParent)
-
-				-- Move LevelUpDisplay
-				LevelUpDisplay:ClearAllPoints()
-				if not IsAddOnLoaded("ElvUI") then
-					LevelUpDisplay:SetPoint("TOP", LevelUpDisplayHolder)
-				end
-
-				-- Maintain position of LevelUpDisplay
-				hooksecurefunc(LevelUpDisplay, "SetPoint", function(frame, void, anchor)
-					if anchor ~= LevelUpDisplayHolder then
-						frame:ClearAllPoints()
-						if not IsAddOnLoaded("ElvUI") then
-							frame:SetPoint("TOP", LevelUpDisplayHolder)
-						end
-					end
-				end)
-
-				-- Force zone text to show while LevelUpDisplay is showing
-				ZoneTextFrame:HookScript("OnEvent", function(self, event)
-					if LevelUpDisplay:IsShown() then
-						if event == "ZONE_CHANGED_NEW_AREA" and not ZoneTextFrame:IsShown() then
-							FadingFrame_Show(ZoneTextFrame)
-						elseif event == "ZONE_CHANGED_INDOORS" and not SubZoneTextFrame:IsShown() then
-							FadingFrame_Show(SubZoneTextFrame)
-						end
-					end
-				end)
-
-			else
-
-				-- Patch 9.1
-				hooksecurefunc(EventToastManagerFrame, "Show", EventToastManagerFrame.Hide)
-
-			end
-
+			hooksecurefunc(EventToastManagerFrame, "Show", EventToastManagerFrame.Hide)
 		end
 
 		----------------------------------------------------------------------
@@ -4017,6 +3944,129 @@
 ----------------------------------------------------------------------
 
 	function LeaPlusLC:Player()
+
+		----------------------------------------------------------------------
+		-- Automatically release in battlegrounds
+		----------------------------------------------------------------------
+
+		do
+
+			-- Create configuration panel
+			local ReleasePanel = LeaPlusLC:CreatePanel("Release in PvP", "ReleasePanel")
+
+			LeaPlusLC:MakeTx(ReleasePanel, "Settings", 16, -72)
+			LeaPlusLC:MakeCB(ReleasePanel, "AutoReleaseNoAlterac", "Exclude Alterac Valley", 16, -92, false, "If checked, you will not release automatically in Alterac Valley.")
+			LeaPlusLC:MakeCB(ReleasePanel, "AutoReleaseNoWintergsp", "Exclude Wintergrasp", 16, -112, false, "If checked, you will not release automatically in Wintergrasp.")
+			LeaPlusLC:MakeCB(ReleasePanel, "AutoReleaseNoTolBarad", "Exclude Tol Barad (PvP)", 16, -132, false, "If checked, you will not release automatically in Tol Barad (PvP).")
+			LeaPlusLC:MakeCB(ReleasePanel, "AutoReleaseNoAshran", "Exclude Ashran", 16, -152, false, "If checked, you will not release automatically in Ashran.")
+
+			LeaPlusLC:MakeTx(ReleasePanel, "Delay", 356, -72)
+			LeaPlusLC:MakeSL(ReleasePanel, "AutoReleaseDelay", "Drag to set the number of milliseconds before you are automatically released.|n|nYou can hold down shift as the timer is ending to cancel the automatic release.", 200, 3000, 100, 356, -92, "%.0f")
+
+			-- Help button hidden
+			ReleasePanel.h:Hide()
+
+			-- Back button handler
+			ReleasePanel.b:SetScript("OnClick", function() 
+				ReleasePanel:Hide(); LeaPlusLC["PageF"]:Show(); LeaPlusLC["Page1"]:Show();
+				return
+			end)
+
+			-- Reset button handler
+			ReleasePanel.r:SetScript("OnClick", function()
+
+				-- Reset checkboxes
+				LeaPlusLC["AutoReleaseNoAlterac"] = "Off"
+				LeaPlusLC["AutoReleaseNoWintergsp"] = "Off"
+				LeaPlusLC["AutoReleaseNoTolBarad"] = "Off"
+				LeaPlusLC["AutoReleaseNoAshran"] = "Off"
+				LeaPlusLC["AutoReleaseDelay"] = 200
+
+				-- Refresh panel
+				ReleasePanel:Hide(); ReleasePanel:Show()
+
+			end)
+
+			-- Show panal when options panel button is clicked
+			LeaPlusCB["AutoReleasePvPBtn"]:SetScript("OnClick", function()
+				if IsShiftKeyDown() and IsControlKeyDown() then
+					-- Preset profile
+					LeaPlusLC["AutoReleaseNoAlterac"] = "Off"
+					LeaPlusLC["AutoReleaseNoWintergsp"] = "Off"
+					LeaPlusLC["AutoReleaseNoTolBarad"] = "Off"
+					LeaPlusLC["AutoReleaseNoAshran"] = "Off"
+					LeaPlusLC["AutoReleaseDelay"] = 200
+				else
+					ReleasePanel:Show()
+					LeaPlusLC:HideFrames()
+				end
+			end)
+
+			-- Create event frame
+			local ReleaseEvent = CreateFrame("FRAME")
+
+			-- Function to set event
+			local function SetReleasePvP()
+				if LeaPlusLC["AutoReleasePvP"] == "On" then
+					ReleaseEvent:RegisterEvent("PLAYER_DEAD")
+				else
+					ReleaseEvent:UnregisterEvent("PLAYER_DEAD")
+				end
+			end
+
+			-- Set release event on startup and when option is clicked
+			LeaPlusCB["AutoReleasePvP"]:HookScript("OnClick", SetReleasePvP)
+			if LeaPlusLC["AutoReleasePvP"] == "On" then SetReleasePvP() end
+
+			-- Release in PvP
+			ReleaseEvent:SetScript("OnEvent", function()
+
+				-- If player has ability to self-resurrect (soulstone, reincarnation, etc), do nothing and quit
+				if C_DeathInfo.GetSelfResurrectOptions() and #C_DeathInfo.GetSelfResurrectOptions() > 0 then return end
+
+				-- Resurrect if player is in a battleground
+				local InstStat, InstType = IsInInstance()
+				if InstStat and InstType == "pvp" then
+					-- Exclude specific maps
+					local mapID = C_Map.GetBestMapForUnit("player") or nil
+					if mapID then
+						if mapID == 91 and LeaPlusLC["AutoReleaseNoAlterac"] == "On" then return end -- Alterac Valley
+						if mapID == 1537 and LeaPlusLC["AutoReleaseNoAlterac"] == "On" then return end -- Alterac Valley
+					end
+					-- Release automatically
+					local delay = LeaPlusLC["AutoReleaseDelay"] / 1000
+					C_Timer.After(delay, function()
+						if IsShiftKeyDown() then
+							LeaPlusLC:DisplayMessage(L["Automatic Release Cancelled"], true)
+						else
+							RepopMe()
+						end
+						return
+					end)
+				end
+
+				-- Resurrect if playuer is in a PvP location
+				local areaID = C_Map.GetBestMapForUnit("player") or 0
+				if areaID == 123 and LeaPlusLC["AutoReleaseNoWintergsp"] == "Off" -- Wintergrasp
+				or areaID == 244 and LeaPlusLC["AutoReleaseNoTolBarad"] == "Off" -- Tol Barad (PvP)
+				or areaID == 588 and LeaPlusLC["AutoReleaseNoAshran"] == "Off" -- Ashran 
+				or areaID == 622 and LeaPlusLC["AutoReleaseNoAshran"] == "Off" -- Stormshield
+				or areaID == 624 and LeaPlusLC["AutoReleaseNoAshran"] == "Off" -- Warspear
+				then
+					local delay = LeaPlusLC["AutoReleaseDelay"] / 1000
+					C_Timer.After(delay, function()
+						if IsShiftKeyDown() then
+							LeaPlusLC:DisplayMessage(L["Automatic Release Cancelled"], true)
+						else
+							RepopMe()
+						end
+						return
+					end)
+				end
+				
+			end)
+
+		end
 
 		----------------------------------------------------------------------
 		--	Disable sticky editbox
@@ -9143,38 +9193,6 @@
 		end
 
 		----------------------------------------------------------------------
-		-- Automatically release in battlegrounds
-		----------------------------------------------------------------------
-
-		if event == "PLAYER_DEAD" then
-
-			-- If player has ability to self-resurrect (soulstone, reincarnation, etc), do nothing and quit
-			if C_DeathInfo.GetSelfResurrectOptions() and #C_DeathInfo.GetSelfResurrectOptions() > 0 then return end
-
-			-- Resurrect if player is in a battleground
-			local InstStat, InstType = IsInInstance()
-			if InstStat and InstType == "pvp" then
-				RepopMe()
-				return
-			end
-
-			-- Resurrect if playuer is in a PvP location
-			local areaID = C_Map.GetBestMapForUnit("player") or 0
-			if areaID == 123 -- Wintergrasp
-			or areaID == 244 -- Tol Barad (PvP)
-			or areaID == 588 -- Ashran 
-			or areaID == 622 -- Stormshield
-			or areaID == 624 -- Warspear 
-			then 
-				RepopMe()
-				return
-			end
-			
-			return
-
-		end
-
-		----------------------------------------------------------------------
 		-- Hide the combat log
 		----------------------------------------------------------------------
 
@@ -9215,6 +9233,11 @@
 				LeaPlusLC:LoadVarChk("AutoAcceptSummon", "Off")				-- Accept summon
 				LeaPlusLC:LoadVarChk("AutoAcceptRes", "Off")				-- Accept resurrection
 				LeaPlusLC:LoadVarChk("AutoReleasePvP", "Off")				-- Release in PvP
+				LeaPlusLC:LoadVarChk("AutoReleaseNoAlterac", "Off")			-- Release in PvP Exclude Alterac Valley
+				LeaPlusLC:LoadVarChk("AutoReleaseNoWintergsp", "Off")		-- Release in PvP Exclude Wintergrasp
+				LeaPlusLC:LoadVarChk("AutoReleaseNoTolBarad", "Off")		-- Release in PvP Exclude Tol Barad (PvP)
+				LeaPlusLC:LoadVarChk("AutoReleaseNoAshran", "Off")			-- Release in PvP Exclude Ashran
+				LeaPlusLC:LoadVarNum("AutoReleaseDelay", 200, 200, 3000)	-- Release in PvP Delay
 
 				LeaPlusLC:LoadVarChk("AutoSellJunk", "Off")					-- Sell junk automatically
 				LeaPlusLC:LoadVarChk("AutoRepairGear", "Off")				-- Repair automatically
@@ -9426,6 +9449,11 @@
 			LeaPlusDB["AutoAcceptSummon"] 		= LeaPlusLC["AutoAcceptSummon"]
 			LeaPlusDB["AutoAcceptRes"] 			= LeaPlusLC["AutoAcceptRes"]
 			LeaPlusDB["AutoReleasePvP"] 		= LeaPlusLC["AutoReleasePvP"]
+			LeaPlusDB["AutoReleaseNoAlterac"] 	= LeaPlusLC["AutoReleaseNoAlterac"]
+			LeaPlusDB["AutoReleaseNoWintergsp"] = LeaPlusLC["AutoReleaseNoWintergsp"]
+			LeaPlusDB["AutoReleaseNoTolBarad"] 	= LeaPlusLC["AutoReleaseNoTolBarad"]
+			LeaPlusDB["AutoReleaseNoAshran"] 	= LeaPlusLC["AutoReleaseNoAshran"]
+			LeaPlusDB["AutoReleaseDelay"] 		= LeaPlusLC["AutoReleaseDelay"]
 
 			LeaPlusDB["AutoSellJunk"] 			= LeaPlusLC["AutoSellJunk"]
 			LeaPlusDB["AutoRepairGear"] 		= LeaPlusLC["AutoRepairGear"]
@@ -11441,6 +11469,51 @@
 					end
 				end)
 				return
+			elseif str == "col" then
+				LeaPlusLC:Print("|n")
+				-- Convert color values
+				local r, g, b = tonumber(arg1), tonumber(arg2), tonumber(arg3)
+				if r and g and b then
+					-- RGB source
+					LeaPlusLC:Print("Source: |cffffffff" .. r .. " " .. g .. " " .. b .. " ")
+					-- RGB to Hex
+					if r > 1 and g > 1 and b > 1 then
+						-- RGB to Hex
+						LeaPlusLC:Print("Hex: |cffffffff" .. strupper(string.format("%02x%02x%02x", r, g, b)) .. " (from RGB)")
+					else
+						-- Wow to Hex
+						LeaPlusLC:Print("Hex: |cffffffff" .. strupper(string.format("%02x%02x%02x", r * 255, g * 255, b * 255)) .. " (from Wow)")
+						-- Wow to RGB
+						local rwow = string.format("%.0f", r * 255)
+						local gwow = string.format("%.0f", g * 255)
+						local bwow = string.format("%.0f", b * 255)
+						if rwow ~= "0.0" and gwow ~= "0.0" and bwow ~= "0.0" then
+							LeaPlusLC:Print("RGB: |cffffffff" .. rwow .. " " .. gwow .. " " .. bwow .. " (from Wow)")
+						end
+					end
+					-- RGB to Wow
+					local rwow = string.format("%.1f", r / 255)
+					local gwow = string.format("%.1f", g / 255)
+					local bwow = string.format("%.1f", b / 255)
+					if rwow ~= "0.0" and gwow ~= "0.0" and bwow ~= "0.0" then
+						LeaPlusLC:Print("Wow: |cffffffff" .. rwow .. " " .. gwow .. " " .. bwow)
+					end
+					LeaPlusLC:Print("|n")
+				elseif arg1 and strlen(arg1) == 6 and strmatch(arg1,"%x") and arg2 == nil and arg3 == nil then
+					-- Hex source
+					local rhex, ghex, bhex = string.sub(arg1, 1, 2), string.sub(arg1, 3, 4), string.sub(arg1, 5, 6)
+					if strmatch(rhex,"%x") and strmatch(ghex,"%x") and strmatch(bhex,"%x") then
+						LeaPlusLC:Print("Source: |cffffffff" .. strupper(arg1))
+						LeaPlusLC:Print("Wow: |cffffffff" .. string.format("%.1f", tonumber(rhex, 16) / 255) ..  "  " .. string.format("%.1f", tonumber(ghex, 16) / 255) .. "  " .. string.format("%.1f", tonumber(bhex, 16) / 255))
+						LeaPlusLC:Print("RGB: |cffffffff" .. tonumber(rhex, 16) .. "  " .. tonumber(ghex, 16) .. "  " .. tonumber(bhex, 16))
+					else
+						LeaPlusLC:Print("Invalid arguments.")
+					end
+					LeaPlusLC:Print("|n")
+				else
+					LeaPlusLC:Print("Invalid arguments.")
+				end
+				return
 			elseif str == "admin" then
 				-- Preset profile (used for testing)
 				LpEvt:UnregisterAllEvents()						-- Prevent changes
@@ -11859,6 +11932,7 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutoRepairGear"			, 	"Repair automatically"			,	340, -112, 	false,	"If checked, your gear will be repaired automatically when you visit a suitable merchant.|n|nYou can hold the shift key down when you talk to a merchant to override this setting.")
 
  	LeaPlusLC:CfgBtn("AutomateQuestsBtn", LeaPlusCB["AutomateQuests"])
+	LeaPlusLC:CfgBtn("AutoReleasePvPBtn", LeaPlusCB["AutoReleasePvP"])
  	LeaPlusLC:CfgBtn("AutoRepairBtn", LeaPlusCB["AutoRepairGear"])
 
 ----------------------------------------------------------------------

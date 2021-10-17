@@ -8,6 +8,10 @@ MJEPersonalSettings = {
 		["showAchievementPoints"] = true,
 		["compactMountList"] = true,
 		["enableCursorKeys"] = true,
+		["windowSize"] = {
+			0, -- [1]
+			0, -- [2]
+		},
 		["showPersonalCount"] = true,
 		["moveEquipmentSlot"] = true,
 		["previewButton"] = true,
@@ -86,6 +90,7 @@ MJEPersonalSettings = {
 				["Kites"] = true,
 				["Seat"] = true,
 				["Hands"] = true,
+				["Book"] = true,
 				["Mechanical Animals"] = true,
 				["Spider Tanks"] = true,
 				["Motorcycles"] = true,

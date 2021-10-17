@@ -1,16 +1,10 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[57919] = {
+			["title"] = "An Abuse of Power",
 			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
-			},
-		},
-		[42234] = {
-			["title"] = "The Valarjar",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Stormheim", -- [1]
+				"0/1 Abused Soul subjugated", -- [1]
 			},
 		},
 		[56352] = {
@@ -25,10 +19,10 @@ QuestTogether = {
 				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
-		[56120] = {
-			["title"] = "The Unshackled",
+		[57563] = {
+			["title"] = "Mogu Assault Tracker",
 			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
+				"0/1   slain", -- [1]
 			},
 		},
 		[61981] = {
@@ -73,28 +67,34 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[50598] = {
-			["title"] = "Zandalari Empire",
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
+				"2/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
 		[53435] = {
 			["title"] = "Azerite for the Horde",
 			["objectives"] = {
-				"9184/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
+				"18349/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[45381] = {
+		[50602] = {
+			["title"] = "Talanji's Expedition",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Nazmir.", -- [1]
+			},
+		},
+		[42420] = {
+			["title"] = "Court of Farondis",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Azsuna", -- [1]
+			},
+		},
+		[45383] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
-			},
-		},
-		[42422] = {
-			["title"] = "The Wardens",
-			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
+				"2/4 Echo of Time", -- [1]
 			},
 		},
 		[44948] = {
@@ -115,11 +115,9 @@ QuestTogether = {
 				"0/1 Ripe Purian", -- [1]
 			},
 		},
-		[48305] = {
-			["title"] = "The Burning Coven",
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
 			["objectives"] = {
-				"Defeat the Coven of Shivarra in the Antorus, The Burning Throne", -- [1]
-				"1/1 Sargerei Manifesto", -- [2]
 			},
 		},
 		[24756] = {
@@ -135,6 +133,77 @@ QuestTogether = {
 				"0/1 Method of tracking found", -- [2]
 			},
 		},
+		[48641] = {
+			["title"] = "Armies of Legionfall",
+			["objectives"] = {
+				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
+			},
+		},
+		[48642] = {
+			["title"] = "Argussian Reach",
+			["objectives"] = {
+				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
+			},
+		},
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+			["objectives"] = {
+				"0/4 Echo of Time", -- [1]
+			},
+		},
+		[54180] = {
+			["title"] = "Quest",
+			["objectives"] = {
+			},
+		},
+		[47727] = {
+			["title"] = "Tomb of Sargeras: Aegwynn's Path",
+			["objectives"] = {
+				"3/4 Fragment of the Guardian's Seal", -- [1]
+			},
+		},
+		[49032] = {
+			["title"] = "Antorus, the Burning Throne: Dark Passage",
+			["objectives"] = {
+				"1/4 Rune of Passage", -- [1]
+			},
+		},
+		[57462] = {
+			["title"] = "Dream Catcher",
+			["objectives"] = {
+				"28/200 Shred of Insanity", -- [1]
+			},
+		},
+		[31446] = {
+			["title"] = "Mimic Octopus",
+			["objectives"] = {
+				"1/1 Mimic Octopus", -- [1]
+			},
+		},
+		[57403] = {
+			["title"] = "Reconstructing \"Fear and Flesh\"",
+			["objectives"] = {
+				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
+			},
+		},
+		[45381] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+			["objectives"] = {
+				"1/4 Echo of Time", -- [1]
+			},
+		},
+		[50603] = {
+			["title"] = "Voldunai",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Vol'dun", -- [1]
+			},
+		},
+		[30567] = {
+			["title"] = "Blanche's Boomer Brew",
+			["objectives"] = {
+				"0/1 Scenario Complete", -- [1]
+			},
+		},
 		[31891] = {
 			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
@@ -145,79 +214,11 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[40329] = {
-			["title"] = "Battle Pet Tamers: Warlords",
+		[48305] = {
+			["title"] = "The Burning Coven",
 			["objectives"] = {
-				"2/5 Pet Battlemasters Defeated", -- [1]
-			},
-		},
-		[47727] = {
-			["title"] = "Tomb of Sargeras: Aegwynn's Path",
-			["objectives"] = {
-				"3/4 Fragment of the Guardian's Seal", -- [1]
-			},
-		},
-		[54180] = {
-			["title"] = "Quest",
-			["objectives"] = {
-			},
-		},
-		[57919] = {
-			["title"] = "An Abuse of Power",
-			["objectives"] = {
-				"0/1 Abused Soul subjugated", -- [1]
-			},
-		},
-		[57403] = {
-			["title"] = "Reconstructing \"Fear and Flesh\"",
-			["objectives"] = {
-				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
-			},
-		},
-		[57462] = {
-			["title"] = "Dream Catcher",
-			["objectives"] = {
-				"28/200 Shred of Insanity", -- [1]
-			},
-		},
-		[57564] = {
-			["title"] = "Mantid Assault Tracker",
-			["objectives"] = {
-			},
-		},
-		[31446] = {
-			["title"] = "Mimic Octopus",
-			["objectives"] = {
-				"1/1 Mimic Octopus", -- [1]
-			},
-		},
-		[45383] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
-			["objectives"] = {
-				"2/4 Echo of Time", -- [1]
-			},
-		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
-			["objectives"] = {
-			},
-		},
-		[30567] = {
-			["title"] = "Blanche's Boomer Brew",
-			["objectives"] = {
-				"0/1 Scenario Complete", -- [1]
-			},
-		},
-		[49032] = {
-			["title"] = "Antorus, the Burning Throne: Dark Passage",
-			["objectives"] = {
-				"1/4 Rune of Passage", -- [1]
-			},
-		},
-		[42421] = {
-			["title"] = "The Nightfallen",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Suramar", -- [1]
+				"Defeat the Coven of Shivarra in the Antorus, The Burning Throne", -- [1]
+				"1/1 Sargerei Manifesto", -- [2]
 			},
 		},
 	},

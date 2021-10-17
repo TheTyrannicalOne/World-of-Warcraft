@@ -20,7 +20,7 @@ L["Passenger"] = "Passenger"
 L["Reset filters"] = "Reset filters"
 L["ROTATE_DOWN"] = "Rotate Down"
 L["ROTATE_UP"] = "Rotate Up"
-L["Show in Collections"] = "Show in Collections"
+L["DRESSUP_LABEL"] = "Journal"
 L["SORT_BY_LEARNED_DATE"] = "Date of receipt"
 L["SORT_BY_USAGE_COUNT"] = "Count of usage"
 L["SORT_BY_LAST_USAGE"] = "Last usage"
@@ -54,6 +54,7 @@ L["Bees"] = "Bees"
 L["Birds"] = "Birds"
 L["Blood Ticks"] = "Blood Ticks"
 L["Boars"] = "Boars"
+L["Book"] = "Book"
 L["Bovids"] = "Bovids"
 L["Brutosaurs"] = "Brutosaurs"
 L["Camels"] = "Camels"
@@ -198,6 +199,7 @@ L["Yetis"] = "Yetis"
 
 -- Settings
 L["DISPLAY_ALL_SETTINGS"] = "Display all settings"
+L["RESET_WINDOW_SIZE"] = "Reset journal size"
 L["SETTING_ACHIEVEMENT_POINTS"] = "Show achievement points"
 L["SETTING_AUTO_FAVOR"] = "Automatically set new mounts as favorite"
 L["SETTING_COMPACT_LIST"] = "Compact mount list"
@@ -219,21 +221,19 @@ L["SETTING_YCAMERA"] = "Unlock Y rotation with mouse in display"
 if locale == "deDE" then
     ADDON.isMetric = true
     L["Black Market"] = "Schwarzmarkt"
+L["DRESSUP_LABEL"] = "Sammlung"
 L["Family"] = "Familie"
 L["FAVOR_AUTO"] = "Neue Mounts automatisch setzen"
 L["FAVOR_DISPLAYED"] = "Alle Angezeigten Wählen"
 L["FAVOR_PER_CHARACTER"] = "Pro Charakter"
 L["FILTER_ONLY_LATEST"] = "Nur Neuzugänge"
 L["FILTER_SECRET"] = "vom Spiel versteckt"
-L["Flying"] = "Luft"
-L["Ground"] = "Boden"
 L["Hidden"] = "Ausgeblendete"
 L["Only tradable"] = "Nur handelbare"
 L["Passenger"] = "Passagier"
 L["Reset filters"] = "Filter zurücksetzen"
 L["ROTATE_DOWN"] = "Abwärtsdrehung"
 L["ROTATE_UP"] = "Aufwärtsdrehung"
-L["Show in Collections"] = "In Sammlung anzeigen"
 L["SORT_BY_LAST_USAGE"] = "Letzter Benutzung"
 L["SORT_BY_LEARNED_DATE"] = "Datum des Erhalts"
 L["SORT_BY_TRAVEL_DISTANCE"] = "Gereiste Entfernung"
@@ -247,10 +247,11 @@ L["TASK_END"] = "[MJE] Uff! Endlich geschafft."
 L["TASK_FAVOR_START"] = "[MJE] Bitte warten. Deine Reittiere werden mit Sternen neu beklebt."
 L["TOGGLE_COLOR"] = "Zeige nächste Farbvariante"
 L["Transform"] = "Verwandlung"
-L["Underwater"] = "Unterwasser"
 
     -- Settings
 L["DISPLAY_ALL_SETTINGS"] = "Zeige alle Einstellungen"
+L[ [=[RESET_WINDOW_SIZE
+]=] ] = "Fentergröße zurücksetzen"
 L["SETTING_ACHIEVEMENT_POINTS"] = "Zeige Erfolgspunkte"
 L["SETTING_AUTO_FAVOR"] = "Setze neue Reittiere automatisch als Favoriten"
 L["SETTING_COMPACT_LIST"] = "Kompakte Mount-Liste"
@@ -285,6 +286,7 @@ L["Bees"] = "Bienen"
 L["Birds"] = "Vögel"
 L["Blood Ticks"] = "Blutschwärmer"
 L["Boars"] = "Eber"
+L["Book"] = "Buch"
 L["Bovids"] = "Hornträger"
 L["Brutosaurs"] = "Brutosaurier"
 L["Camels"] = "Kamele"
@@ -431,21 +433,19 @@ L["Yetis"] = "Yetis"
 elseif locale == "esES" then
     ADDON.isMetric = true
     L["Black Market"] = "Mercado Negro"
+L["DRESSUP_LABEL"] = "Diario"
 L["Family"] = "Familia"
 L["FAVOR_AUTO"] = "Nuevas monturas auto-favoritas"
-L["FAVOR_DISPLAYED"] = "Todas mostradas"
+L["FAVOR_DISPLAYED"] = "Mostrar todas"
 L["FAVOR_PER_CHARACTER"] = "Por personaje"
 L["FILTER_ONLY_LATEST"] = "Sólo las últimas añadidas"
 L["FILTER_SECRET"] = "Oculto por el juego"
-L["Flying"] = "Voladores"
-L["Ground"] = "Terrestres"
 L["Hidden"] = "Oculto"
 L["Only tradable"] = "Sólo comerciable"
 L["Passenger"] = "Pasajeros"
-L["Reset filters"] = "Restablecer filtros"
+L["Reset filters"] = "Restablecer los filtros"
 L["ROTATE_DOWN"] = "Girar hacia abajo"
 L["ROTATE_UP"] = "Girar hacia arriba"
-L["Show in Collections"] = "Mostrar en las Colecciones"
 L["SORT_BY_LAST_USAGE"] = "Usada recientemente"
 L["SORT_BY_LEARNED_DATE"] = "Fecha de aprendizaje"
 L["SORT_BY_TRAVEL_DISTANCE"] = "Distancia recorrida"
@@ -459,11 +459,12 @@ L["TASK_END"] = "[MJE] ¡Fiuuu! He acabado."
 L["TASK_FAVOR_START"] = "[MJE] Reaplicando estrellas a tus monturas. Por favor, espera unos segundos hasta que haya acabado."
 L["TOGGLE_COLOR"] = "Muestra las variaciones de colores"
 L["Transform"] = "Transformaciones"
-L["Underwater"] = "Submarinos"
 
     -- Settings
 L["DISPLAY_ALL_SETTINGS"] = "Mostrar todos los ajustes"
-L["SETTING_ACHIEVEMENT_POINTS"] = "Mostrar puntos de logros"
+L[ [=[RESET_WINDOW_SIZE
+]=] ] = "Restablecer el tamaño del diario"
+L["SETTING_ACHIEVEMENT_POINTS"] = "Mostrar los puntos de logros"
 L["SETTING_AUTO_FAVOR"] = "Selecciona automáticamente las nuevas monturas como favoritas"
 L["SETTING_COMPACT_LIST"] = "Compactar la lista de monturas"
 L["SETTING_CURSOR_KEYS"] = "Habilitar las teclas Arriba y Abajo para explorar las monturas"
@@ -471,9 +472,9 @@ L["SETTING_FAVORITE_PER_CHAR"] = "Monturas favoritas por personaje"
 L["SETTING_HEAD_BEHAVIOUR"] = "Comportamiento"
 L["SETTING_MOUNT_COUNT"] = "Mostrar el número personal de monturas"
 L["SETTING_MOVE_EQUIPMENT"] = "Mover la ranura de equipo a la vista previa de la montura"
-L["SETTING_PERSONAL_FILTER"] = "Aplicar filtros sólo para este personaje"
-L["SETTING_PERSONAL_HIDDEN_MOUNTS"] = "Aplicar monturas ocultas sólo para este personaje"
-L["SETTING_PERSONAL_UI"] = "Aplicar opciones de interfaz sólo para este personaje"
+L["SETTING_PERSONAL_FILTER"] = "Aplicar los filtros sólo para este personaje"
+L["SETTING_PERSONAL_HIDDEN_MOUNTS"] = "Poner las monturas ocultas sólo para este personaje"
+L["SETTING_PERSONAL_UI"] = "Aplicar las opciones de interfaz sólo para este personaje"
 L["SETTING_PREVIEW_LINK"] = "Mostrar el botón Colección en la vista previa de la montura"
 L["SETTING_SEARCH_MORE"] = "Buscar también en la descripción del texto"
 L["SETTING_SHOP_BUTTON"] = "Mostrar el botón de la tienda en las monturas que no se tienen"
@@ -497,6 +498,7 @@ L["Bees"] = "Abejas"
 L["Birds"] = "Pájaros"
 L["Blood Ticks"] = "Garrapatas de Sangre"
 L["Boars"] = "Jabalies"
+L["Book"] = "Libro"
 L["Bovids"] = "Bóvidos"
 L["Brutosaurs"] = "Brutosaurios"
 L["Camels"] = "Camellos"
@@ -643,6 +645,8 @@ L["Yetis"] = "Yetis"
 elseif locale == "frFR" then
     ADDON.isMetric = true
     L["Black Market"] = "Marché Noir"
+--[[Translation missing --]]
+--[[ L["DRESSUP_LABEL"] = "Journal"--]] 
 L["Family"] = "Famille"
 --[[Translation missing --]]
 --[[ L["FAVOR_AUTO"] = "Auto-favor new mounts"--]] 
@@ -654,8 +658,6 @@ L["Family"] = "Famille"
 --[[ L["FILTER_ONLY_LATEST"] = "Only latest additions"--]] 
 --[[Translation missing --]]
 --[[ L["FILTER_SECRET"] = "Hidden by the game"--]] 
-L["Flying"] = "Volante"
-L["Ground"] = "Terrestre"
 L["Hidden"] = "Cachées"
 --[[Translation missing --]]
 --[[ L["Only tradable"] = "Only tradable"--]] 
@@ -665,8 +667,6 @@ L["Reset filters"] = "Réinitialiser les filtres"
 --[[ L["ROTATE_DOWN"] = "Rotate Down"--]] 
 --[[Translation missing --]]
 --[[ L["ROTATE_UP"] = "Rotate Up"--]] 
---[[Translation missing --]]
---[[ L["Show in Collections"] = "Show in Collections"--]] 
 --[[Translation missing --]]
 --[[ L["SORT_BY_LAST_USAGE"] = "Last usage"--]] 
 --[[Translation missing --]]
@@ -692,11 +692,13 @@ L["Reset filters"] = "Réinitialiser les filtres"
 --[[Translation missing --]]
 --[[ L["TOGGLE_COLOR"] = "Show next color variation"--]] 
 L["Transform"] = "Transformation"
-L["Underwater"] = "Aquatiques"
 
     -- Settings
 --[[Translation missing --]]
 --[[ L["DISPLAY_ALL_SETTINGS"] = "Display all settings"--]] 
+--[[Translation missing --]]
+--[[ L[ [=[RESET_WINDOW_SIZE
+]=] ] = "Reset journal size"--]] 
 --[[Translation missing --]]
 --[[ L["SETTING_ACHIEVEMENT_POINTS"] = "Show achievement points"--]] 
 --[[Translation missing --]]
@@ -758,6 +760,8 @@ L["Birds"] = "Oiseaux"
 --[[Translation missing --]]
 --[[ L["Blood Ticks"] = "Blood Ticks"--]] 
 L["Boars"] = "Sangliers"
+--[[Translation missing --]]
+--[[ L["Book"] = "Book"--]] 
 --[[Translation missing --]]
 --[[ L["Bovids"] = "Bovids"--]] 
 L["Brutosaurs"] = "Brontosaurus"
@@ -993,6 +997,8 @@ L["Yetis"] = "Yétis"
 elseif locale == "koKR" then
     ADDON.isMetric = true
     L["Black Market"] = "암시장"
+--[[Translation missing --]]
+--[[ L["DRESSUP_LABEL"] = "Journal"--]] 
 L["Family"] = "종류"
 --[[Translation missing --]]
 --[[ L["FAVOR_AUTO"] = "Auto-favor new mounts"--]] 
@@ -1002,8 +1008,6 @@ L["FAVOR_PER_CHARACTER"] = "캐릭터별 표시"
 --[[ L["FILTER_ONLY_LATEST"] = "Only latest additions"--]] 
 --[[Translation missing --]]
 --[[ L["FILTER_SECRET"] = "Hidden by the game"--]] 
-L["Flying"] = "비행"
-L["Ground"] = "지상"
 L["Hidden"] = "숨김"
 L["Only tradable"] = "교환가능"
 L["Passenger"] = "승객"
@@ -1012,7 +1016,6 @@ L["Reset filters"] = "필터 초기화"
 --[[ L["ROTATE_DOWN"] = "Rotate Down"--]] 
 --[[Translation missing --]]
 --[[ L["ROTATE_UP"] = "Rotate Up"--]] 
-L["Show in Collections"] = "모음집에서 보기"
 --[[Translation missing --]]
 --[[ L["SORT_BY_LAST_USAGE"] = "Last usage"--]] 
 --[[Translation missing --]]
@@ -1036,11 +1039,13 @@ L["TASK_FAVOR_START"] = "[MJE] 탈것 목록 즐겨찾기 재설정을 시작합
 --[[Translation missing --]]
 --[[ L["TOGGLE_COLOR"] = "Show next color variation"--]] 
 L["Transform"] = "변환"
-L["Underwater"] = "수중"
 
     -- Settings
 --[[Translation missing --]]
 --[[ L["DISPLAY_ALL_SETTINGS"] = "Display all settings"--]] 
+--[[Translation missing --]]
+--[[ L[ [=[RESET_WINDOW_SIZE
+]=] ] = "Reset journal size"--]] 
 --[[Translation missing --]]
 --[[ L["SETTING_ACHIEVEMENT_POINTS"] = "Show achievement points"--]] 
 --[[Translation missing --]]
@@ -1087,6 +1092,8 @@ L["Bees"] = "벌"
 L["Birds"] = "새"
 L["Blood Ticks"] = "흡혈충"
 L["Boars"] = "멧돼지"
+--[[Translation missing --]]
+--[[ L["Book"] = "Book"--]] 
 L["Bovids"] = "노루"
 L["Brutosaurs"] = "브루토사우루스"
 L["Camels"] = "낙타"
@@ -1249,9 +1256,11 @@ L["Yaks"] = "야크"
 L["Yetis"] = "예티"
 
 
-elseif locale == "prBR" then
+elseif locale == "ptBR" then
     ADDON.isMetric = true
     L["Black Market"] = "Mercado Negro"
+--[[Translation missing --]]
+--[[ L["DRESSUP_LABEL"] = "Journal"--]] 
 L["Family"] = "Família"
 --[[Translation missing --]]
 --[[ L["FAVOR_AUTO"] = "Auto-favor new mounts"--]] 
@@ -1260,15 +1269,12 @@ L["FAVOR_PER_CHARACTER"] = "Por personagem"
 --[[Translation missing --]]
 --[[ L["FILTER_ONLY_LATEST"] = "Only latest additions"--]] 
 L["FILTER_SECRET"] = "Oculto pelo jogo"
-L["Flying"] = "Voador"
-L["Ground"] = "Terrestre"
 L["Hidden"] = "Oculto"
 L["Only tradable"] = "Apenas negociável"
 L["Passenger"] = "Passageiro"
 L["Reset filters"] = "Resetar filtros "
 L["ROTATE_DOWN"] = "Girar para Baixo"
 L["ROTATE_UP"] = "Girar para Cima"
-L["Show in Collections"] = "Mostrar nas Coleções"
 L["SORT_BY_LAST_USAGE"] = "Último uso"
 --[[Translation missing --]]
 --[[ L["SORT_BY_LEARNED_DATE"] = "Date of receipt"--]] 
@@ -1284,11 +1290,13 @@ L["TASK_FAVOR_START"] = "[MJE] Reaplicando estrelas em todas as suas montagens. 
 --[[Translation missing --]]
 --[[ L["TOGGLE_COLOR"] = "Show next color variation"--]] 
 L["Transform"] = "Transformar"
-L["Underwater"] = "Embaixo d'água "
 
     -- Settings
 --[[Translation missing --]]
 --[[ L["DISPLAY_ALL_SETTINGS"] = "Display all settings"--]] 
+--[[Translation missing --]]
+--[[ L[ [=[RESET_WINDOW_SIZE
+]=] ] = "Reset journal size"--]] 
 L["SETTING_ACHIEVEMENT_POINTS"] = "Mostrar Pontos de Conquista"
 --[[Translation missing --]]
 --[[ L["SETTING_AUTO_FAVOR"] = "Automatically set new mounts as favorite"--]] 
@@ -1324,6 +1332,8 @@ L["Bees"] = "Abelhas"
 L["Birds"] = "Aves"
 L["Blood Ticks"] = "Tiques Sangrentos"
 L["Boars"] = "Javalis"
+--[[Translation missing --]]
+--[[ L["Book"] = "Book"--]] 
 L["Bovids"] = "Bovídeos"
 L["Brutosaurs"] = "Brutossauros"
 L["Camels"] = "Camelos"
@@ -1477,6 +1487,8 @@ L["Yetis"] = "Yetis"
 elseif locale == "ruRU" then
     ADDON.isMetric = true
     L["Black Market"] = "Черный рынок"
+--[[Translation missing --]]
+--[[ L["DRESSUP_LABEL"] = "Journal"--]] 
 L["Family"] = "Семейство"
 --[[Translation missing --]]
 --[[ L["FAVOR_AUTO"] = "Auto-favor new mounts"--]] 
@@ -1488,8 +1500,6 @@ L["Family"] = "Семейство"
 --[[ L["FILTER_ONLY_LATEST"] = "Only latest additions"--]] 
 --[[Translation missing --]]
 --[[ L["FILTER_SECRET"] = "Hidden by the game"--]] 
-L["Flying"] = "Летающий"
-L["Ground"] = "Наземный"
 L["Hidden"] = "Скрытые"
 --[[Translation missing --]]
 --[[ L["Only tradable"] = "Only tradable"--]] 
@@ -1499,8 +1509,6 @@ L["Reset filters"] = "Сбросить фильтры"
 --[[ L["ROTATE_DOWN"] = "Rotate Down"--]] 
 --[[Translation missing --]]
 --[[ L["ROTATE_UP"] = "Rotate Up"--]] 
---[[Translation missing --]]
---[[ L["Show in Collections"] = "Show in Collections"--]] 
 --[[Translation missing --]]
 --[[ L["SORT_BY_LAST_USAGE"] = "Last usage"--]] 
 --[[Translation missing --]]
@@ -1526,11 +1534,13 @@ L["Reset filters"] = "Сбросить фильтры"
 --[[Translation missing --]]
 --[[ L["TOGGLE_COLOR"] = "Show next color variation"--]] 
 L["Transform"] = "Универсальный"
-L["Underwater"] = "Подводные"
 
     -- Settings
 --[[Translation missing --]]
 --[[ L["DISPLAY_ALL_SETTINGS"] = "Display all settings"--]] 
+--[[Translation missing --]]
+--[[ L[ [=[RESET_WINDOW_SIZE
+]=] ] = "Reset journal size"--]] 
 --[[Translation missing --]]
 --[[ L["SETTING_ACHIEVEMENT_POINTS"] = "Show achievement points"--]] 
 --[[Translation missing --]]
@@ -1593,6 +1603,8 @@ L["Birds"] = "Птицы"
 --[[Translation missing --]]
 --[[ L["Blood Ticks"] = "Blood Ticks"--]] 
 L["Boars"] = "Кабаны"
+--[[Translation missing --]]
+--[[ L["Book"] = "Book"--]] 
 --[[Translation missing --]]
 --[[ L["Bovids"] = "Bovids"--]] 
 --[[Translation missing --]]
@@ -1832,6 +1844,8 @@ L["Yetis"] = "Йети"
 elseif locale == "zhCN" then
     ADDON.isMetric = true
     L["Black Market"] = "黑市"
+--[[Translation missing --]]
+--[[ L["DRESSUP_LABEL"] = "Journal"--]] 
 L["Family"] = "系列"
 --[[Translation missing --]]
 --[[ L["FAVOR_AUTO"] = "Auto-favor new mounts"--]] 
@@ -1841,15 +1855,12 @@ L["FAVOR_PER_CHARACTER"] = "每角色"
 --[[ L["FILTER_ONLY_LATEST"] = "Only latest additions"--]] 
 --[[Translation missing --]]
 --[[ L["FILTER_SECRET"] = "Hidden by the game"--]] 
-L["Flying"] = "飞行"
-L["Ground"] = "陆行"
 L["Hidden"] = "隐藏"
 L["Only tradable"] = "仅可交易"
 L["Passenger"] = "载客"
 L["Reset filters"] = "重置过滤器"
 L["ROTATE_DOWN"] = "向下旋转"
 L["ROTATE_UP"] = "向上旋转"
-L["Show in Collections"] = "在收集中显示"
 --[[Translation missing --]]
 --[[ L["SORT_BY_LAST_USAGE"] = "Last usage"--]] 
 --[[Translation missing --]]
@@ -1870,11 +1881,13 @@ L["TASK_FAVOR_START"] = "[MJE] 正在给你的坐骑重新标星收藏。请等�
 --[[Translation missing --]]
 --[[ L["TOGGLE_COLOR"] = "Show next color variation"--]] 
 L["Transform"] = "变形"
-L["Underwater"] = "水中"
 
     -- Settings
 --[[Translation missing --]]
 --[[ L["DISPLAY_ALL_SETTINGS"] = "Display all settings"--]] 
+--[[Translation missing --]]
+--[[ L[ [=[RESET_WINDOW_SIZE
+]=] ] = "Reset journal size"--]] 
 L["SETTING_ACHIEVEMENT_POINTS"] = "显示成就点"
 --[[Translation missing --]]
 --[[ L["SETTING_AUTO_FAVOR"] = "Automatically set new mounts as favorite"--]] 
@@ -1911,6 +1924,8 @@ L["Bees"] = "蜜蜂"
 L["Birds"] = "鸟"
 L["Blood Ticks"] = "吮血蛛"
 L["Boars"] = "野猪"
+--[[Translation missing --]]
+--[[ L["Book"] = "Book"--]] 
 L["Bovids"] = "牛"
 L["Brutosaurs"] = "雷龙"
 L["Camels"] = "骆驼"

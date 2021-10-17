@@ -16,10 +16,12 @@ local C_AuctionHouse_ReplicateItems = _G.C_AuctionHouse.ReplicateItems;
 local C_AuctionHouse_GetNumReplicateItems = _G.C_AuctionHouse.GetNumReplicateItems;
 local C_AuctionHouse_GetReplicateItemInfo = _G.C_AuctionHouse.GetReplicateItemInfo;
 local C_AuctionHouse_GetReplicateItemLink = _G.C_AuctionHouse.GetReplicateItemLink;
+local C_Item_IsDressableItemByID = C_Item.IsDressableItemByID;
 local C_MountJournal_GetMountInfoByID = C_MountJournal.GetMountInfoByID;
 local C_TransmogCollection_GetAppearanceSourceInfo = C_TransmogCollection.GetAppearanceSourceInfo;
 local C_TransmogCollection_GetAllAppearanceSources = C_TransmogCollection.GetAllAppearanceSources;
 local C_TransmogCollection_GetIllusionSourceInfo = C_TransmogCollection.GetIllusionSourceInfo;
+local C_TransmogCollection_GetItemInfo = C_TransmogCollection.GetItemInfo;
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
 local C_TransmogCollection_GetIllusions = C_TransmogCollection.GetIllusions;
 local C_TransmogCollection_GetSourceInfo = C_TransmogCollection.GetSourceInfo;
@@ -40,7 +42,6 @@ local GetItemInfo = _G["GetItemInfo"];
 local GetItemInfoInstant = _G["GetItemInfoInstant"];
 local GetItemSpecInfo = _G["GetItemSpecInfo"];
 local GetTitleName = _G["GetTitleName"];
-local IsDressableItem = _G["IsDressableItem"];
 local PlayerHasToy = _G["PlayerHasToy"];
 local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
@@ -184,8 +185,7 @@ local function StartCoroutine(name, method, delaySec)
 			-- print("coroutine starting",name);
 			Push(app, name, pushCo);
 		end
-	-- else
-		-- print("skipped coroutine",name);/
+	-- else print("skipped coroutine",name);
 	end
 end
 -- Triggers a timer callback method to run on the next game frame with the provided params; the method can only be set to run once per frame
@@ -320,6 +320,22 @@ local insertionSort = function(t, compare)
 			end
 		end
 	end
+end
+-- Performs table.concat(tbl, sep, i, j) on the given table, but uses the specified field of table values if provided,
+-- with a default fallback value if the field does not exist on the table entry
+app.TableConcat = function (tbl, field, def, sep, i, j)
+	if tbl then
+		if field then
+			local tblvals, tinsert = {}, tinsert;
+			for _,val in ipairs(tbl) do
+				tinsert(tblvals, val[field] or def);
+			end
+			return table.concat(tblvals, sep, i, j);
+		else
+			return table.concat(tbl, sep, i, j);
+		end
+	end
+	return "";
 end
 
 -- Data Lib
@@ -1159,8 +1175,8 @@ local function GetProgressTextForRow(data)
 		if data.g and not data.expanded and #data.g > 0 then
 			return "+++";
 		end
+		return "---";
 	end
-	return "---";
 end
 local function GetProgressTextForTooltip(data)
 	if data.total and (data.total > 1 or (data.total > 0 and not data.collectible)) then
@@ -1519,10 +1535,20 @@ local function RawCloneData(data)
 	end
 	return clone;
 end
+(function()
+local GetSlotForInventoryType = C_Transmog.GetSlotForInventoryType;
+app.SlotByInventoryType = setmetatable({}, {
+	__index = function(t, key)
+		local slot = GetSlotForInventoryType(key);
+		rawset(t, key, slot);
+		return slot;
+	end
+})
+end)();
 local function GetSourceID(itemLink)
-	if C_Item.IsDressableItemByID(itemLink) then
+	if C_Item_IsDressableItemByID(itemLink) then
 		-- Updated function courtesy of CanIMogIt, Thanks AmiYuy and Team! :D
-		local sourceID = select(2, C_TransmogCollection.GetItemInfo(itemLink));
+		local sourceID = select(2, C_TransmogCollection_GetItemInfo(itemLink));
 		if sourceID then return sourceID, true; end
 
 		-- if app.DEBUG_PRINT then print("Failed to directly retrieve SourceID",itemLink) end
@@ -1540,7 +1566,7 @@ local function GetSourceID(itemLink)
 					local sourceID = tmogInfo and tmogInfo.appearanceID;
 					if sourceID and sourceID ~= 0 then
 						-- Added 5/4/2018 - Account for DressUpModel lag... sigh
-						local sourceItemLink = select(6, C_TransmogCollection.GetAppearanceSourceInfo(sourceID));
+						local sourceItemLink = select(6, C_TransmogCollection_GetAppearanceSourceInfo(sourceID));
 						-- print("SourceID from DressUpModel",sourceID,sourceItemLink)
 						if sourceItemLink and tonumber(sourceItemLink:match("item:(%d+)")) == itemID then
 							return sourceID, true;
@@ -2138,12 +2164,12 @@ local keysByPriority = {	-- Sorted by frequency of use.
 	"headerID"
 };
 local function GetKey(t)
-	for i,key in ipairs(keysByPriority) do
+	for _,key in ipairs(keysByPriority) do
 		if rawget(t, key) then
 			return key;
 		end
 	end
-	for i,key in ipairs(keysByPriority) do
+	for _,key in ipairs(keysByPriority) do
 		if t[key] then	-- This goes a bit deeper.
 			return key;
 		end
@@ -2202,17 +2228,14 @@ local function CreateHash(t)
 		return hash;
 	end
 end
-local function GetHash(t)
-	return t.hash or CreateHash(t);
-end
-app.GetHash = GetHash;
+app.CreateHash = CreateHash;
 MergeObject = function(g, t, index, newCreate)
 	if g and t then
-		local hash = GetHash(t);
+		local hash = t.hash;
 		-- print("_",hash);
 		if hash then
 			for i,o in ipairs(g) do
-				if GetHash(o) == hash then
+				if o.hash == hash then
 					MergeProperties(o, t, true);
 					NestObjects(o, t.g, newCreate);
 					return o;
@@ -2241,7 +2264,7 @@ MergeObjects = function(g, g2, newCreate)
 	if g2 and #g2 > 25 then
 		local hashTable,t = {};
 		for i,o in ipairs(g) do
-			local hash = GetHash(o);
+			local hash = o.hash;
 			if hash then
 				hashTable[hash] = o;
 			end
@@ -2249,7 +2272,7 @@ MergeObjects = function(g, g2, newCreate)
 		local hash;
 		if newCreate then
 			for i,o in ipairs(g2) do
-				hash = GetHash(o);
+				hash = o.hash;
 				-- print("_",hash);
 				if hash then
 					t = hashTable[hash];
@@ -2267,7 +2290,7 @@ MergeObjects = function(g, g2, newCreate)
 			end
 		else
 			for i,o in ipairs(g2) do
-				hash = GetHash(o);
+				hash = o.hash;
 				-- print("_",hash);
 				if hash then
 					t = hashTable[hash];
@@ -2752,6 +2775,17 @@ subroutines = {
 			{"is", "itemID"},	-- Only Items
 		}
 	end,
+	-- Wod Dungeon
+	["common_wod_dungeon_drop"] = function(difficultyID, headerID)
+		return {
+			{"select", "headerID", -23},				-- Common Dungeon Drops
+			{"pop"},									-- Discard the Header and acquire all of their children.
+			{"where", "difficultyID", difficultyID},	-- Normal/Heroic/Mythic/Timewalking
+			{"pop"},									-- Discard the Diffculty Header and acquire all of their children.
+			{"where", "headerID", headerID},			-- Head/Shoulder/Chest/Legs/Feet/Wrist/Hands/Waist
+			{"pop"},									-- Discard the Header and acquire all of their children.
+		}
+	end,
 };
 local function Resolve_Extract(results, group, field)
 	if group.g then
@@ -3183,7 +3217,7 @@ local function FillPurchases(group, depth)
 	return group;
 end
 local function GetCachedSearchResults(search, method, paramA, paramB, ...)
-	if not search then return nil; end
+	if not search or search:find("%[]") then return; end
 	local now = time();
 	local cache = searchCache[search];
 	if cache and (now - cache[1]) < cache[2] then return cache[3]; end
@@ -3563,6 +3597,23 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 									end
 								end
 							end
+						end
+					end
+
+					-- Special case to double-check VisualID collection in Unique/Main modes because blizzard doesn't return consistent data
+					-- non-collected SourceID, non-collected* for Account, and in Unique Mode
+					if not sourceInfo.isCollected and not rawget(ATTAccountWideData.Sources, sourceID) and not app.Settings:Get("Completionist") then
+						local collected = app.ItemSourceFilter(sourceInfo);
+						if collected then
+							-- if this is true here, that means C_TransmogCollection_GetAllAppearanceSources() for this SourceID's VisualID
+							-- does not return this SourceID, so it doesn't get flagged by the refresh logic and we need to track it manually for
+							-- this Account as being 'collected'
+							tinsert(info, { left = Colorize(L["ADHOC_UNIQUE_COLLECTED_INFO"], "ffe35832") });
+							-- if the tooltip immediately refreshes for whatever reason the
+							-- store this SourceID as being collected* so it can be properly collected* during force refreshes in the future without requiring a tooltip search
+							if not ATTAccountWideData.BrokenUniqueSources then ATTAccountWideData.BrokenUniqueSources = {}; end
+							local uniqueSources = ATTAccountWideData.BrokenUniqueSources;
+							rawset(uniqueSources, sourceID, 1);
 						end
 					end
 
@@ -4015,27 +4066,21 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 		end
 		if #knownBy > 0 then
-			insertionSort(knownBy, function(a, b)
-				return a.text < b.text;
-			end);
-			local desc = L["KNOWN_BY"];
-			for i,character in ipairs(knownBy) do
-				if i > 1 then desc = desc .. ", "; end
-				desc = desc .. (character.text or "???");
-			end
+			insertionSort(knownBy, function(a, b) return a.name < b.name; end);
+			local desc = L["KNOWN_BY"] .. app.TableConcat(knownBy, "text", "??", ", ");
 			tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = "ff66ccff" });
 		end
 	end
 
-	-- If the user wants to show the progress of this search result, do so.
-	if app.Settings:GetTooltipSetting("Progress") and (not group.spellID or #info > 0) then
+	-- If the user wants to show the progress of this search result, do so
+	if app.Settings:GetTooltipSetting("Progress") then
 		group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(group);
 	end
 
 	-- If there was any informational text generated, then attach that info.
 	if #info > 0 then
 		group.tooltipInfo = info;
-		for i,item in ipairs(info) do
+		for _,item in ipairs(info) do
 			if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
 		end
 	end
@@ -4869,6 +4914,8 @@ local function SearchForRelativeItems(group, listing)
 		end
 	end
 end
+-- Returns the first found cached group for a given SourceID
+-- NOTE: Do not use this function when the results are being passed into an Update afterward
 local function SearchForSourceIDQuickly(sourceID)
 	if sourceID and sourceID > 0 and app:GetDataCache() then
 		local group = rawget(rawget(fieldCache, "s"),sourceID);
@@ -5409,67 +5456,51 @@ local function RefreshSaves()
 end
 local function RefreshAppearanceSources()
 	app.DoRefreshAppearanceSources = nil;
-	wipe(ATTAccountWideData.Sources);
-	local collectedSources = ATTAccountWideData.Sources;
+	local collectedSources, brokenUniqueSources = ATTAccountWideData.Sources, ATTAccountWideData.BrokenUniqueSources;
+	wipe(collectedSources);
 	-- TODO: test C_TransmogCollection.PlayerKnowsSource(sourceID) ?
-	app.MaxSourceID = app.MaxSourceID or 0;
-	-- process through all known ATT SourceIDs if not yet processed
-	if app.MaxSourceID == 0 then
-		if app.Settings:Get("Completionist") then
-			-- Completionist Mode can simply use the *fast* blizzard API.
-			for id,_ in pairs(fieldCache["s"]) do
-				if rawget(collectedSources, id) ~= 1 then
-					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(id) then
-						rawset(collectedSources, id, 1);
-					end
-				end
-				-- track the max sourceID so we can evaluate sources not in ATT as well
-				if id > app.MaxSourceID then app.MaxSourceID = id; end
-			end
-		else
-			-- Unique Mode requires a lot more calculation.
-			for id,_ in pairs(fieldCache["s"]) do
-				if not rawget(collectedSources, id) then
-					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(id) then
-						rawset(collectedSources, id, 1);
-					else
-						_cache = C_TransmogCollection_GetSourceInfo(id);
-						if _cache and app.ItemSourceFilter(_cache, C_TransmogCollection_GetAllAppearanceSources(_cache.visualID)) then
-							rawset(collectedSources, id, 2);
-						end
-					end
-				end
-				-- track the max sourceID so we can evaluate sources not in ATT as well
-				if id > app.MaxSourceID then app.MaxSourceID = id; end
-			end
+	-- Simply determine the max known SourceID from ATT cached sources
+	if not app.MaxSourceID then
+		-- print("Initial Session Refresh")
+		local maxSourceID = 0;
+		for id,_ in pairs(fieldCache["s"]) do
+			-- track the max sourceID so we can evaluate sources not in ATT as well
+			if id > maxSourceID then maxSourceID = id; end
 		end
-		-- print("Max SourceID",app.MaxSourceID);
+		app.MaxSourceID = maxSourceID;
+		-- print("MaxSourceID",maxSourceID)
 	end
-	if app.MaxSourceID > 0 then
-		-- Otherwise evaluate all SourceIDs under the maximum
-		if app.Settings:Get("Completionist") then
-			for s=1,app.MaxSourceID do
-				if rawget(collectedSources, s) ~= 1 then
-					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
-						rawset(collectedSources, s, 1);
-					end
-				end
-			end
-		else
-			for s=1,app.MaxSourceID do
-				if not rawget(collectedSources, s) then
-					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
-						rawset(collectedSources, s, 1);
-					else
-						_cache = C_TransmogCollection_GetSourceInfo(s);
-						if _cache and app.ItemSourceFilter(_cache, C_TransmogCollection_GetAllAppearanceSources(_cache.visualID)) then
-							rawset(collectedSources, s, 2);
-						end
+	-- Then evaluate all SourceIDs under the maximum which are known explicitly
+	-- print("Completionist Refresh")
+	for s=1,app.MaxSourceID do
+		-- don't need to check for existing value... everything is cleared beforehand
+		if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
+			rawset(collectedSources, s, 1);
+		end
+	end
+	-- print("Completionist Refresh done")
+	-- Additionally, for Unique Mode we can grant collection of Appearances which match the Visual of explicitly known SourceIDs if other criteria (Race/Faction/Class) match as well using ATT info
+	if not app.Settings:Get("Completionist") then
+		-- print("Unique Refresh")
+		local currentCharacterOnly = app.Settings:Get("MainOnly");
+		for s=1,app.MaxSourceID do
+			-- for each known source
+			if rawget(collectedSources, s) == 1 then
+				-- collect shared visual sources
+				app.MarkUniqueCollectedSourcesBySource(s, currentCharacterOnly);
+			elseif brokenUniqueSources then
+				-- special reverse-check-logic for unknown SourceID's whose VisualID does not return the SourceID from C_TransmogCollection_GetAllAppearanceSources(VisualID)
+				-- and haven't already been marked as unique-collected
+				if rawget(brokenUniqueSources, s) and not rawget(collectedSources, s) then
+					local sInfo = C_TransmogCollection_GetSourceInfo(s);
+					if app.ItemSourceFilter(sInfo) then
+						-- print("Fixed Unique SourceID Collected",s)
+						rawset(collectedSources, s, 2);
 					end
 				end
 			end
 		end
-		-- print("Finished SourceID",app.MaxSourceID);
+		-- print("Unique Refresh done")
 	end
 end
 app.RefreshAppearanceSources = RefreshAppearanceSources;
@@ -5720,14 +5751,19 @@ local function AttachTooltipRawSearchResults(self, group)
 		end
 
 		self.AttachComplete = not group.working;
+		self.HasATTSearchResults = true;
 	end
 end
 local function AttachTooltipSearchResults(self, search, method, paramA, paramB, ...)
-	-- tooltips can skip to level 1
-	app.SetSkipPurchases(1);
-	AttachTooltipRawSearchResults(self, GetCachedSearchResults(search, method, paramA, paramB, ...));
-	app.SetSkipPurchases(0);
-	self.HasATTSearchResults = true;
+	-- Don't attach tooltip results multiple times
+	if not self.HasATTSearchResults then
+		-- print("build tooltip search",self.HasATTSearchResults,search)
+		-- tooltips can skip to level 1
+		app.SetSkipPurchases(1);
+		AttachTooltipRawSearchResults(self, GetCachedSearchResults(search, method, paramA, paramB, ...));
+		app.SetSkipPurchases(0);
+	-- else print("skip tooltip search",self.HasATTSearchResults,search)
+	end
 end
 
 local npcQuestsCache = {}
@@ -5756,6 +5792,7 @@ end
 
 local function AttachTooltip(self)
 	-- print("AttachTooltip-Processing",self.AllTheThingsProcessing);
+	-- print("AttachTooltip",self:GetItem(),"_",self:GetUnit(),"_",self:GetSpell())
 	local numLines = self:NumLines();
 	if numLines < 1 then
 		return false
@@ -5783,7 +5820,7 @@ local function AttachTooltip(self)
 	if CanAttachTooltips() then
 		-- check what this tooltip is currently displaying, and keep that reference
 		local link, target, spellID = select(2, self:GetItem());
-		if link then
+		if link and not link:find("%[]") then
 			if self.AllTheThingsProcessing and self.AllTheThingsProcessing == link then
 				return true;
 			else
@@ -6241,6 +6278,7 @@ app.BaseObjectFields = function(fields, type)
 		if not _cache then
 			-- special re-direct keys possible for 'any' Type of object
 			if key == "parent" then return t.sourceParent; end
+			if key == "hash" then return app.CreateHash(t); end
 			if key == "__type" then return type; end
 			-- use default key value if existing
 			return ObjectDefaults[key];
@@ -6372,6 +6410,27 @@ end)();
 
 -- Achievement Lib
 (function()
+local cache = app.CreateCache("achievementID");
+local function CacheInfo(t)
+	local t, id = cache.GetCached(t);
+	--local IDNumber, Name, Points, Completed, Month, Day, Year, Description, Flags, Image, RewardText, isGuildAch = GetAchievementInfo(t.achievementID);
+	local _, name, _, _, _, _, _, _, _, icon = GetAchievementInfo(id);
+	t.link = GetAchievementLink(id);
+	t.name = name or ("Achievement #"..id);
+	t.icon = icon or QUESTION_MARK_ICON;
+end
+local function default_name(t)
+	CacheInfo(t);
+	return cache.GetCachedField(t, "name");
+end
+local function default_link(t)
+	CacheInfo(t);
+	return cache.GetCachedField(t, "link");
+end
+local function default_icon(t)
+	CacheInfo(t);
+	return cache.GetCachedField(t, "icon");
+end
 app.AchievementFilter = 4;
 app.AchievementCharCompletedIndex = 13;
 local fields = {
@@ -6386,14 +6445,16 @@ local fields = {
 		end
 	end,
 	["text"] = function(t)
-		--local IDNumber, Name, Points, Completed, Month, Day, Year, Description, Flags, Image, RewardText, isGuildAch = GetAchievementInfo(t.achievementID);
-		return GetAchievementLink(t.achievementID) or select(2, GetAchievementInfo(t.achievementID)) or ("Achievement #" .. t.achievementID);
+		return t.link or t.name;
 	end,
 	["link"] = function(t)
-		return GetAchievementLink(t.achievementID);
+		return cache.GetCachedField(t, "link", default_link);
+	end,
+	["name"] = function(t)
+		return cache.GetCachedField(t, "name", default_name);
 	end,
 	["icon"] = function(t)
-		return select(10, GetAchievementInfo(t.achievementID));
+		return cache.GetCachedField(t, "icon", default_icon);
 	end,
 	["collectible"] = function(t)
 		return app.CollectibleAchievements;
@@ -7663,6 +7724,9 @@ local fields = {
 		end
 		return 8;
 	end,
+	["sortProgress"] = function(t)
+		return ((t.reputation or -42000) + 42000) / 84000;
+	end,
 };
 app.BaseFaction = app.BaseObjectFields(fields);
 app.CreateFaction = function(id, t)
@@ -8776,7 +8840,7 @@ local fields = RawCloneData(itemFields);
 fields.key = function(t) return "s"; end;
 fields.collectible = itemFields.collectibleAsTransmog;
 fields.collected = itemFields.collectedAsTransmog;
-app.BaseItemSource = app.BaseObjectFields(fields);
+app.BaseItemSource = app.BaseObjectFields(fields, "BaseItemSource");
 
 app.CreateItemSource = function(sourceID, itemID, t)
 	t = setmetatable(constructor(sourceID, t, "s"), app.BaseItemSource);
@@ -10818,7 +10882,7 @@ end
 -- Vignettes copy Quest fields
 local fields = RawCloneData(questFields);
 local function BuildTextFromNPCIDs(t, npcIDs)
-	if not npcIDs or #npcIDs == 0 then app.report("Invalid Vignette! "..(app.GetHash(t) or "[NOHASH]")) end
+	if not npcIDs or #npcIDs == 0 then app.report("Invalid Vignette! "..(t.hash or "[NOHASH]")) end
 	local retry, name;
 	local textTbl = {};
 	for i,npcID in ipairs(npcIDs) do
@@ -11625,302 +11689,76 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 		-- NOTE: This makes it so that the loop isn't necessary.
 		return true;
 	else
-		-- If at least one of the sources of this visual ID was collected, that means that we've acquired the base appearance.
+		-- If at least one of the sources of this visual ID was collected, that means that we've collected the provided source
 		local item = SearchForSourceIDQuickly(sourceInfo.sourceID);
 		if item then
-			if item.races then
-				-- If the first item is EXPLICITLY race locked...
-				for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-					if sourceID ~= sourceInfo.sourceID and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
-						local otherItem = SearchForSourceIDQuickly(sourceID);
-						if otherItem then
-							if item.f == otherItem.f or item.f == 2 or otherItem.f == 2 then
-								local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
-								if otherSource.categoryID == sourceInfo.categoryID and (otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType)) then
-									if otherItem.races then
-										-- If the second item is EXPLICITLY race locked...
-										if containsAny(otherItem.races, item.races) then
-											-- return true;
-											-- Okay, great! Is the first item class locked?
-											if item.c then
-												-- If the first item is class locked...
-												if otherItem.c then
-													-- If this item is class locked...
-													if containsAny(otherItem.c, item.c) then
-														-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
-														return true;
-													end
-												else
-													-- This item is not class locked.
-													-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
-													return true;
-												end
-											else
-												-- If the first item is class locked...
-												if otherItem.c then
-													-- If this item is class locked...
-													-- Sorry bro, you can't do that. That would be cheating.... Or Unique Mode (Main Only).
-												else
-													-- This item is not class locked.
-													-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
-													return true;
-												end
-											end
-										end
-									elseif otherItem.r then
-										-- If the second item is FACTION race locked
-										if otherItem.r == item.r or containsAny(app.FACTION_RACES[otherItem.r], item.races) then
-											-- return true;
-											-- Okay, great! Is the first item class locked?
-											if item.c then
-												-- If the first item is class locked...
-												if otherItem.c then
-													-- If this item is class locked...
-													if containsAny(otherItem.c, item.c) then
-														-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
-														return true;
-													end
-												else
-													-- This item is not class locked.
-													-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
-													return true;
-												end
-											else
-												-- If the first item is class locked...
-												if otherItem.c then
-													-- If this item is class locked...
-													-- Sorry bro, you can't do that. That would be cheating.... Or Unique Mode (Main Only).
-												else
-													-- This item is not class locked.
-													-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
-													return true;
-												end
-											end
-										end
-									else
-										-- If the second item is not race locked...
-										-- Okay, great! Is the first item class locked?
-										if item.c then
-											-- If the first item is class locked...
-											if otherItem.c then
-												-- If this item is class locked...
-												if containsAny(otherItem.c, item.c) then
-													-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
-													return true;
-												end
-											else
-												-- This item is not class locked.
-												-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
-												return true;
-											end
-										else
-											-- If the first item is class locked...
-											if otherItem.c then
-												-- If this item is class locked...
-												-- Sorry bro, you can't do that. That would be cheating.... Or Unique Mode (Main Only).
-											else
-												-- This item is not class locked.
-												-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
-												return true;
-											end
-										end
-									end
-								end
-							end
-						else
-							-- OH NOES! It doesn't exist!
-							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
-							if otherSource.categoryID == sourceInfo.categoryID then
-								if otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType) then
-									-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
-									return true;
+			local knownItem, knownSource, valid;
+			for _,sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+				-- only compare against other Sources of the VisualID which the Account knows
+				if sourceID ~= sourceInfo.sourceID and rawget(ATTAccountWideData.Sources, sourceID) == 1 then
+					knownItem = SearchForSourceIDQuickly(sourceID);
+					if knownItem then
+						-- filter matches or one item is Cosmetic
+						if item.f == knownItem.f or item.f == 2 or knownItem.f == 2 then
+							valid = true;
+							-- verify all possible restrictions that the known source may have against restrictions on the source in question
+							-- if known source has no equivalent restrictions, then restrictions on the source are irrelevant
+							-- Races
+							if knownItem.races then
+								if item.races then
+									-- the known source has a race restriction that is not shared by the source in question
+									if not containsAny(item.races, knownItem.races) then valid = nil; end
 								else
-									-- print(otherSource.sourceID, sourceInfo.sourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", otherSource.invType, sourceInfo.categoryID);
+									valid = nil;
 								end
 							end
-						end
-					end
-				end
-			elseif item.r then
-				-- If the first item is FACTION race locked...
-				for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-					if sourceID ~= sourceInfo.sourceID and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
-						local otherItem = SearchForSourceIDQuickly(sourceID);
-						if otherItem then
-							if item.f == otherItem.f or item.f == 2 or otherItem.f == 2 then
-								local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
-								if otherSource.categoryID == sourceInfo.categoryID and (otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType)) then
-									if otherItem.r then
-										-- If the second item is FACTION race locked
-										if otherItem.r == item.r then
-											-- return true;
-											-- Okay, great! Is the first item class locked?
-											if item.c then
-												-- If the first item is class locked...
-												if otherItem.c then
-													-- If this item is class locked...
-													if containsAny(otherItem.c, item.c) then
-														-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
-														return true;
-													end
-												else
-													-- This item is not class locked.
-													-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
-													return true;
-												end
-											else
-												-- If the first item is class locked...
-												if otherItem.c then
-													-- If this item is class locked...
-													-- Sorry bro, you can't do that. That would be cheating.... Or Unique Mode (Main Only).
-												else
-													-- This item is not class locked.
-													-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
-													return true;
-												end
-											end
-										end
-									elseif otherItem.races then
-										-- If the second item is EXPLICITLY race locked...
-										if containsAny(otherItem.races, app.FACTION_RACES[item.r]) then
-											-- return true;
-											-- Okay, great! Is the first item class locked?
-											if item.c then
-												-- If the first item is class locked...
-												if otherItem.c then
-													-- If this item is class locked...
-													if containsAny(otherItem.c, item.c) then
-														-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
-														return true;
-													end
-												else
-													-- This item is not class locked.
-													-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
-													return true;
-												end
-											else
-												-- If the first item is class locked...
-												if otherItem.c then
-													-- If this item is class locked...
-													-- Sorry bro, you can't do that. That would be cheating.... Or Unique Mode (Main Only).
-												else
-													-- This item is not class locked.
-													-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
-													return true;
-												end
-											end
-										end
-									else
-										-- If the second item is not race locked...
-										-- Okay, great! Is the first item class locked?
-										if item.c then
-											-- If the first item is class locked...
-											if otherItem.c then
-												-- If this item is class locked...
-												if containsAny(otherItem.c, item.c) then
-													-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
-													return true;
-												end
-											else
-												-- This item is not class locked.
-												-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
-												return true;
-											end
-										else
-											-- If the first item is class locked...
-											if otherItem.c then
-												-- If this item is class locked...
-												-- Sorry bro, you can't do that. That would be cheating.... Or Unique Mode (Main Only).
-											else
-												-- This item is not class locked.
-												-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
-												return true;
-											end
-										end
-									end
-								end
-							end
-						else
-							-- OH NOES! It doesn't exist!
-							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
-							if otherSource.categoryID == sourceInfo.categoryID then
-								if otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType) then
-									-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
-									return true;
+							-- Classes
+							if valid and knownItem.c then
+								if item.c then
+									-- the known source has a class restriction that is not shared by the source in question
+									if not containsAny(item.c, knownItem.c) then valid = nil; end
 								else
-									-- print(otherSource.sourceID, sourceInfo.sourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", otherSource.invType, sourceInfo.categoryID);
+									valid = nil;
+								end
+							end
+							-- Faction
+							if valid and knownItem.r then
+								if item.r then
+									-- the known source has a faction restriction that is not shared by the source or source races in question
+									if knownItem.r ~= item.r or (item.races and not containsAny(app.FACTION_RACES[knownItem.r], item.races)) then valid = nil; end
+								else
+									valid = nil;
+								end
+							end
+
+							-- found a known item which meets all the criteria to grant credit for the source in question
+							if valid then
+								knownSource = C_TransmogCollection_GetSourceInfo(sourceID);
+								-- both sources are the same category (Equip-Type)
+								if knownSource.categoryID == sourceInfo.categoryID
+									-- and same Inventory Type
+									and (knownSource.invType == sourceInfo.invType
+										or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]]
+										or app.SlotByInventoryType[knownSource.invType] == app.SlotByInventoryType[sourceInfo.invType])
+								then
+									return true;
+								-- else print("sources share visual and filters but different equips",item.s,sourceID)
 								end
 							end
 						end
-					end
-				end
-			else
-				-- If the first item is not race locked...
-				-- Okay, great! Is the first item class locked?
-				if item.c then
-					for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-						if sourceID ~= sourceInfo.sourceID and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
-							local otherItem = SearchForSourceIDQuickly(sourceID);
-							if otherItem then
-								if item.f == otherItem.f or item.f == 2 or otherItem.f == 2 then
-									local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
-									if otherSource.categoryID == sourceInfo.categoryID and (otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType)) then
-										if not otherItem.r and not otherItem.races then
-											-- If this item is not race or faction locked...
-											if otherItem.c then
-												-- If this item is class locked...
-												if containsAny(otherItem.c, item.c) then
-													-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
-													return true;
-												end
-											else
-												-- This item is not class locked.
-												-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
-												return true;
-											end
-										end
-									end
-								end
-							else
-								-- OH NOES! It doesn't exist!
-								local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
-								if otherSource.categoryID == sourceInfo.categoryID then
-									if otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType) then
-										-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
-										return true;
-									else
-										-- print(otherSource.sourceID, sourceInfo.sourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", otherSource.invType, sourceInfo.categoryID);
-									end
-								end
-							end
-						end
-					end
-				else
-					for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-						if sourceID ~= sourceInfo.sourceID and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
-							local otherItem = SearchForSourceIDQuickly(sourceID);
-							if otherItem then
-								if item.f == otherItem.f or item.f == 2 or otherItem.f == 2 then
-									local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
-									if otherSource.categoryID == sourceInfo.categoryID and (otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType)) then
-										if not otherItem.r and not otherItem.races and not otherItem.c then
-											-- If this item is not class, race or faction locked, you unlock the source ID. Congrats, mate!
-											return true;
-										end
-									end
-								end
-							else
-								-- OH NOES! It doesn't exist!
-								local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
-								if otherSource.categoryID == sourceInfo.categoryID then
-									if otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType) then
-										-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
-										return true;
-									else
-										-- print(otherSource.sourceID, sourceInfo.sourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", otherSource.invType, sourceInfo.categoryID);
-									end
-								end
-							end
+					else
+						-- OH NOES! It doesn't exist!
+						knownSource = C_TransmogCollection_GetSourceInfo(sourceID);
+						-- both sources are the same category (Equip-Type)
+						if knownSource.categoryID == sourceInfo.categoryID
+							-- and same Inventory Type
+							and (knownSource.invType == sourceInfo.invType
+								or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]]
+								or app.SlotByInventoryType[knownSource.invType] == app.SlotByInventoryType[sourceInfo.invType])
+						then
+							-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
+							return true;
+						-- else print(knownSource.sourceID, sourceInfo.sourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", knownSource.invType, sourceInfo.categoryID);
 						end
 					end
 				end
@@ -11948,6 +11786,94 @@ function app.FilterItemSourceUniqueOnlyMain(sourceInfo, allSources)
 			end
 		end
 		return false;
+	end
+end
+-- Given a known SourceID, will mark all Shared Visual SourceID's which meet the filter criteria of the known SourceID as 'collected'
+function app.MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacterOnly)
+	-- Find this source in ATT
+	local knownItem = SearchForSourceIDQuickly(knownSourceID);
+	if knownItem then
+		local knownSource = C_TransmogCollection_GetSourceInfo(knownSourceID);
+		local acctSources = ATTAccountWideData.Sources;
+		local checkItem, checkSource, valid;
+		local knownRaces, knownClasses, knownFaction = knownItem.races, knownItem.c, knownItem.r;
+		-- For each shared Visual SourceID
+		for _,sourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(knownSource.visualID)) do
+			-- If it is not currently marked collected on the account
+			if not rawget(acctSources, sourceID) then
+				-- Find the check Source in ATT
+				checkItem = SearchForSourceIDQuickly(sourceID);
+				if checkItem then
+					-- filter matches or one item is Cosmetic
+					if checkItem.f == knownItem.f or checkItem.f == 2 or knownItem.f == 2 then
+						-- for current character only, all we care is that the checkItem is not exclusive to another race/class to consider it 'collected'
+						if currentCharacterOnly and not checkItem.nmc and not checkItem.nmr then
+							rawset(acctSources, sourceID, 2);
+						else
+							valid = true;
+							-- verify all possible restrictions that the known source may have against restrictions on the source in question
+							-- if known source has no equivalent restrictions, then restrictions on the source are irrelevant
+							-- Races
+							if knownRaces then
+								if checkItem.races then
+									-- the known source has a race restriction that is not shared by the source in question
+									if not containsAny(checkItem.races, knownRaces) then valid = nil; end
+								else
+									valid = nil;
+								end
+							end
+							-- Classes
+							if valid and knownClasses then
+								if checkItem.c then
+									-- the known source has a class restriction that is not shared by the source in question
+									if not containsAny(checkItem.c, knownClasses) then valid = nil; end
+								else
+									valid = nil;
+								end
+							end
+							-- Faction
+							if valid and knownFaction then
+								if checkItem.r then
+									-- the known source has a faction restriction that is not shared by the source or source races in question
+									if knownFaction ~= checkItem.r or (checkItem.races and not containsAny(app.FACTION_RACES[knownFaction], checkItem.races)) then valid = nil; end
+								else
+									valid = nil;
+								end
+							end
+
+							-- found a known item which meets all the criteria to grant credit for the source in question
+							if valid then
+								checkSource = C_TransmogCollection_GetSourceInfo(sourceID);
+								-- both sources are the same category (Equip-Type)
+								if knownSource.categoryID == checkSource.categoryID
+									-- and same Inventory Type
+									and (knownSource.invType == checkSource.invType
+										or checkSource.categoryID == 4 --[[CHEST: Robe vs Armor]]
+										or app.SlotByInventoryType[knownSource.invType] == app.SlotByInventoryType[checkSource.invType])
+								then
+									rawset(acctSources, sourceID, 2);
+								-- else print("sources share visual and filters but different equips",item.s,sourceID)
+								end
+							end
+						end
+					end
+				else
+					-- OH NOES! It doesn't exist!
+					checkSource = C_TransmogCollection_GetSourceInfo(sourceID);
+					-- both sources are the same category (Equip-Type)
+					if checkSource.categoryID == knownSource.categoryID
+						-- and same Inventory Type
+						and (checkSource.invType == knownSource.invType
+							or knownSource.categoryID == 4 --[[CHEST: Robe vs Armor]]
+							or app.SlotByInventoryType[checkSource.invType] == app.SlotByInventoryType[knownSource.invType])
+					then
+						-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
+						rawset(acctSources, sourceID, 2);
+					-- else print(knownSource.sourceID, sourceInfo.sourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", knownSource.invType, sourceInfo.categoryID);
+					end
+				end
+			end
+		end
 	end
 end
 function app.FilterItemTrackable(group)
@@ -12293,7 +12219,7 @@ function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 	-- Get the source info for this source ID.
 	local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 	if sourceInfo then
-		-- Go through all of the shared appearances and see if we're "unlocked" any of them.
+		-- Go through all of the shared appearances and see if we've "unlocked" any of them.
 		local unlockedSourceIDs, allSources = { sourceID }, C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID);
 		for _,otherSourceID in ipairs(allSources) do
 			-- If this isn't the source we already did work on and we haven't already completed it
@@ -12891,15 +12817,14 @@ function app:CreateMiniListForGroup(group)
 				local g = {};
 
 				-- Go through all of the shared appearances and see if we've "unlocked" any of them.
-				for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+				for _,otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 					-- If this isn't the source we already did work on and we haven't already completed it
 					if otherSourceID ~= group.s then
-						local attSearch = SearchForSourceIDQuickly(otherSourceID);
-						if attSearch then
-							attSearch = CloneData(attSearch);
-							attSearch.collectible = true;
-							attSearch.hideText = true;
-							tinsert(g, attSearch);
+						local shared = app.SearchForObject("s", otherSourceID);
+						if shared then
+							shared = CreateObject(shared);
+							shared.hideText = true;
+							tinsert(g, shared);
 						else
 							local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
 							if otherSourceInfo and (otherSourceInfo.quality or 0) > 1 then
@@ -12931,8 +12856,8 @@ function app:CreateMiniListForGroup(group)
 					};
 				end
 				-- add the group showing the Appearance information for this popout
-				if not group.g then group.g = { appearanceGroup }
-				else tinsert(group.g, appearanceGroup) end
+				if group.g then tinsert(group.g, appearanceGroup)
+				else group.g = { appearanceGroup } end
 			end
 
 			-- Determine if this source is part of a set or two.
@@ -12972,13 +12897,12 @@ function app:CreateMiniListForGroup(group)
 				for setID,value in pairs(data) do
 					g = {};
 					setID = tonumber(setID);
-					for i,sourceID in ipairs(allSets[setID]) do
-						local attSearch = SearchForSourceIDQuickly(sourceID);
-						if attSearch then
-							attSearch = CloneData(attSearch);
-							attSearch.collectible = true;
-							attSearch.hideText = true;
-							tinsert(g, attSearch);
+					for _,sourceID in ipairs(allSets[setID]) do
+						local search = app.SearchForObject("s", sourceID);
+						if search then
+							search = CreateObject(search);
+							search.hideText = true;
+							tinsert(g, search);
 						else
 							local otherSourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSourceInfo and (otherSourceInfo.quality or 0) > 1 then
@@ -13376,7 +13300,7 @@ local function SetRowData(self, row, data)
 			relative = "RIGHT";
 			x = rowPad / 2;
 		end
-		local summary = GetProgressTextForRow(data);
+		local summary = GetProgressTextForRow(data) or "---";
 		local iconAdjust = summary and string.find(summary, "|T") and -1 or 0;
 		local specs = data.specs;
 		if specs and #specs > 0 then
@@ -14052,15 +13976,16 @@ RowOnEnter = function (self)
 		end
 		if reference.crs and app.Settings:GetTooltipSetting("creatures") then
 			-- extreme amounts of creatures tagged, then only list a summary of how many...
+			local custom = L["HEADER_NAMES"];
 			if #reference.crs > 25 then
 				GameTooltip:AddDoubleLine(CREATURE, "[" .. tostring(#reference.crs) .. " Creatures]");
 			elseif app.Settings:GetTooltipSetting("creatureID") then
 				for i,cr in ipairs(reference.crs) do
-					GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(cr > 0 and NPCNameFromID[cr] or "") .. " (" .. cr .. ")");
+					GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(cr > 0 and NPCNameFromID[cr] or custom[cr]) .. " (" .. cr .. ")");
 				end
 			else
 				for i,cr in ipairs(reference.crs) do
-					GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(cr > 0 and NPCNameFromID[cr] or cr));
+					GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(cr > 0 and NPCNameFromID[cr] or custom[cr]));
 				end
 			end
 		end
@@ -14207,7 +14132,81 @@ RowOnEnter = function (self)
 			if numSpecializations and numSpecializations > 0 then
 				local encounterID = GetRelativeValue(reference.parent, "encounterID");
 				if encounterID then
-					local difficultyID = GetRelativeValue(reference.parent, "difficultyID");
+					-- TODO: revise in 9.1.5 when 'bonus drops' might be able to be identified via API calls (don't attribute to drop chance)
+					-- Why is Encounter Journal so weird? none of the API calls work unless the EJ is actually open... something is missing...
+
+					-- difficulty 0 seems to default to the lowest valid difficulty in the EJ
+					-- local tierID = GetRelativeValue(reference.parent, "tierID") or 0;
+					-- local instanceID = GetRelativeValue(reference.parent, "instanceID") or 0;
+					local difficultyID = GetRelativeValue(reference.parent, "difficultyID") or 0;
+					-- -- local funcs
+					-- local EJ_SetLootFilter, EJ_GetNumLoot = EJ_SetLootFilter, EJ_GetNumLoot;
+					-- local legacyLoot = C_Loot.IsLegacyLootModeEnabled();
+					-- print("tier/instance/encounter/difficulty",tierID,instanceID,encounterID,difficultyID)
+					-- EJ_SelectTier(tierID);
+					-- EJ_SelectInstance(instanceID);
+					-- EJ_SelectEncounter(encounterID);
+					-- EJ_SetDifficulty(difficultyID);
+					-- -- get total items
+					-- EJ_SetLootFilter(0, 0);
+					-- local totalItems = EJ_GetNumLoot() or 0;
+					-- print("diff/filter/items",EJ_GetDifficulty(),"/",EJ_GetLootFilter(),"/",totalItems)
+					-- -- Legacy Loot is simply 1 / total items chance since spec has no relevance to drops, i.e. this one item / total items in drop table
+					-- if totalItems > 0 then
+					-- 	GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], GetNumberWithZeros(100 / totalItems, 2) .. "%");
+					-- else
+					-- 	GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], "N/A");
+					-- end
+
+					-- -- see what specs this reference item will drop for
+					-- local specs = reference.specs;
+					-- if specs then
+					-- 	local class, specItems, min, count = app.ClassIndex, {}, 100;
+					-- 	-- get items per spec and min items
+					-- 	for _,specID in pairs(specs) do
+					-- 		EJ_SetLootFilter(class, specID);
+					-- 		-- items for this spec
+					-- 		count = EJ_GetNumLoot() or 100;
+					-- 		print("class/spec/diff/filter/items",class,"/",specID,"/",EJ_GetDifficulty(),"/",EJ_GetLootFilter(),"/",count)
+					-- 		if count < min and count > 0 then
+					-- 			min = count;
+					-- 		end
+					-- 		specItems[specID] = count;
+					-- 	end
+					-- 	local chance = 100 / min;
+					-- 	local bestSpecs = {};
+					-- 	-- define the best specs based on min
+					-- 	for specID,count in pairs(specItems) do
+					-- 		if count == min then
+					-- 			tinsert(bestSpecs, specID);
+					-- 		end
+					-- 	end
+					-- 	-- print out the specs with min items
+					-- 	local specString = GetSpecsString(bestSpecs, true, true) or "???";
+					-- 	GameTooltip:AddDoubleLine(legacyLoot and L["BEST_BONUS_ROLL_CHANCE"] or L["BEST_PERSONAL_LOOT_CHANCE"],  GetNumberWithZeros(chance, 2).."% ("..GetNumberWithZeros(chance / 5, 2).."%) "..specString);
+					-- elseif legacyLoot then
+					-- 	-- Not available at all, best loot spec is the one with the most number of items in it.
+					-- 	print("legacy loot?")
+					-- 	-- local most, bestSpecID = 0;
+					-- 	-- for i=1,numSpecializations,1 do
+					-- 	-- 	local id = GetSpecializationInfo(i);
+					-- 	-- 	local specHit = specHits[id] or 0;
+					-- 	-- 	if specHit > most then
+					-- 	-- 		most = specHit;
+					-- 	-- 		bestSpecID = i;
+					-- 	-- 	end
+					-- 	-- end
+					-- 	-- if bestSpecID then
+					-- 	-- 	local id, name, description, icon = GetSpecializationInfo(bestSpecID);
+					-- 	-- 	if totalItems > 0 then
+					-- 	-- 		GameTooltip:AddDoubleLine(L["BONUS_ROLL"], GetNumberWithZeros((1 / (totalItems - specHits[id])) * 100, 2) .. "% |T" .. icon .. ":0|t " .. name);
+					-- 	-- 	else
+					-- 	-- 		GameTooltip:AddDoubleLine(L["BONUS_ROLL"], "N/A");
+					-- 	-- 	end
+					-- 	-- end
+					-- end
+
+
 					local encounterCache = fieldCache["encounterID"][encounterID];
 					if encounterCache then
 						local itemList = {};
@@ -14217,7 +14216,7 @@ RowOnEnter = function (self)
 							end
 						end
 						local specHits = {};
-						for i,item in ipairs(itemList) do
+						for _,item in ipairs(itemList) do
 							local specs = item.specs;
 							if specs then
 								for j,spec in ipairs(specs) do
@@ -14226,42 +14225,45 @@ RowOnEnter = function (self)
 							end
 						end
 
-						local totalItems = #itemList or 1; -- if somehow encounter drops 0 items but an item still references the encounter
+						local totalItems = #itemList; -- if somehow encounter drops 0 items but an item still references the encounter
+						local chance, color;
 						local legacyLoot = C_Loot.IsLegacyLootModeEnabled();
 
 						-- Legacy Loot is simply 1 / total items chance since spec has no relevance to drops, i.e. this one item / total items in drop table
 						if totalItems > 0 then
-							GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], GetNumberWithZeros(100 / totalItems, 2) .. "%");
+							chance = 100 / totalItems;
+							color = GetProgressColor(chance / 100);
+							GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], "|c"..color..GetNumberWithZeros(chance, 1) .. "%|r");
 						else
 							GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], "N/A");
 						end
 
 						local specs = reference.specs;
 						if specs and #specs > 0 then
-							local mySpecs = {};
-							for i=1,numSpecializations,1 do
-								mySpecs[select(1, GetSpecializationInfo(i))] = true;
-							end
-
 							-- Available for one or more loot specialization.
-							local least, bestSpecID = 99999999;
-							local matchingSpecs = {};
-							for i,spec in ipairs(specs) do
+							local least, bestSpecs = 999, {};
+							for _,spec in ipairs(specs) do
 								local specHit = specHits[spec] or 0;
-								if mySpecs[spec] then
-									matchingSpecs[spec] = true;
-
-									-- For Personal Loot!
-									if specHit > 0 and specHit < least then
-										least = specHit;
-										bestSpecID = spec;
-									end
+								-- For Personal Loot!
+								if specHit > 0 and specHit <= least then
+									least = specHit;
+									bestSpecs[spec] = specHit;
 								end
 							end
-							if bestSpecID then
-								local chance = (1 / specHits[bestSpecID]) * 100;
-								local id, name, description, icon = GetSpecializationInfoByID(bestSpecID);
-								GameTooltip:AddDoubleLine(legacyLoot and L["BEST_BONUS_ROLL_CHANCE"] or L["BEST_PERSONAL_LOOT_CHANCE"],  GetNumberWithZeros(chance, 2) .. "% (" .. GetNumberWithZeros(chance / 5, 2) .. "%) |T" .. icon .. ":0|t " .. name);
+							-- something has a best spec
+							if least < 999 then
+								-- define the best specs based on min
+								local rollSpec = {};
+								for specID,count in pairs(bestSpecs) do
+									if count == least then
+										tinsert(rollSpec, specID);
+									end
+								end
+								chance = 100 / least;
+								color = GetProgressColor(chance / 100);
+								-- print out the specs with min items
+								local specString = GetSpecsString(rollSpec, true, true) or "???";
+								GameTooltip:AddDoubleLine(legacyLoot and L["BEST_BONUS_ROLL_CHANCE"] or L["BEST_PERSONAL_LOOT_CHANCE"],  specString.."  |c"..color..GetNumberWithZeros(chance, 1).."%|r");
 							end
 						elseif legacyLoot then
 							-- Not available at all, best loot spec is the one with the most number of items in it.
@@ -14277,7 +14279,9 @@ RowOnEnter = function (self)
 							if bestSpecID then
 								local id, name, description, icon = GetSpecializationInfo(bestSpecID);
 								if totalItems > 0 then
-									GameTooltip:AddDoubleLine(L["BONUS_ROLL"], GetNumberWithZeros((1 / (totalItems - specHits[id])) * 100, 2) .. "% |T" .. icon .. ":0|t " .. name);
+									chance = 100 / (totalItems - specHits[id]);
+									color = GetProgressColor(chance / 100);
+									GameTooltip:AddDoubleLine(L["BONUS_ROLL"], "|T" .. icon .. ":0|t " .. name .. " |c"..color..GetNumberWithZeros(chance, 1) .. "%|r");
 								else
 									GameTooltip:AddDoubleLine(L["BONUS_ROLL"], "N/A");
 								end
@@ -14459,25 +14463,22 @@ RowOnEnter = function (self)
 			end
 		end
 
-		-- DEBUGGING
-		-- GameTooltip:AddDoubleLine("LUA .sourceParent Table ID",tostring(reference.sourceParent));
-		-- GameTooltip:AddDoubleLine("LUA .parent Table ID",tostring(reference.parent));
-		-- GameTooltip:AddDoubleLine("LUA Table ID",tostring(reference));
-		-- GameTooltip:AddDoubleLine(".sourceParent Text",tostring(reference.sourceParent and reference.sourceParent.text));
-		-- GameTooltip:AddDoubleLine(".parent Text",tostring(reference.parent and reference.parent.text));
+		-- ROW DEBUGGING
+		-- local fields = {
+		-- 	"__type",
+
+		-- 	"collectible",
+		-- 	"collected",
+		-- 	"collectibleAsCost",
+		-- 	"collectedAsCost",
+		-- 	"nmc",
+		-- 	"nmr",
+		-- };
+
+		-- for _,key in ipairs(fields) do
+		-- 	GameTooltip:AddDoubleLine(key,tostring(reference[key]));
+		-- end
 		-- GameTooltip:AddDoubleLine("Row Indent",tostring(CalculateRowIndent(reference)));
-		-- GameTooltip:AddDoubleLine("Completed AltQuest ID",tostring(reference.altcompleted));
-		-- GameTooltip:AddDoubleLine("Breadcrumb Locking QuestID",tostring(reference.breadcrumbLockedBy));
-		-- GameTooltip:AddDoubleLine("Completed All SourceQuests",tostring(reference.sourceQuestsCompleted));
-		-- GameTooltip:AddDoubleLine(".collectible",tostring(reference.collectible));
-		-- GameTooltip:AddDoubleLine(".collected",tostring(reference.collected));
-		-- GameTooltip:AddDoubleLine(".collectibleAsCost",tostring(reference.collectibleAsCost));
-		-- GameTooltip:AddDoubleLine(".collectedAsCost",tostring(reference.collectedAsCost));
-		-- GameTooltip:AddDoubleLine(".costTotal",tostring(reference.costTotal));
-		-- GameTooltip:AddDoubleLine(".costProgress",tostring(reference.costProgress));
-		-- GameTooltip:AddDoubleLine(".retries",tostring(reference.retries));
-		-- GameTooltip:AddDoubleLine(".__type",tostring(reference.__type));
-		-- GameTooltip:AddDoubleLine("#.costCollectibles",tostring(reference.costCollectibles and #reference.costCollectibles));
 
 		-- print("OnRowEnter-Show");
 		GameTooltip.MiscFieldsComplete = true;
@@ -15561,11 +15562,12 @@ function app:BuildSearchResponse(groups, field, value)
 				response = app:BuildSearchResponse(group.g, field, value);
 				if response then
 					local groupCopy = {};
-					-- set the same metatable
-					setmetatable(groupCopy, getmetatable(group));
 					-- copy direct group values only
 					MergeProperties(groupCopy, group);
+					-- no need to clone response, since it is already cloned above
 					groupCopy.g = response;
+					-- if the group itself does not meet the field/value expectation, force it to be uncollectible
+					if groupCopy.field ~= value then groupCopy.collectible = false; end
 					if t then tinsert(t, groupCopy);
 					else t = { groupCopy }; end
 				end
@@ -18969,9 +18971,9 @@ hooksecurefunc(GameTooltip, "SetToyByItemID", function(self, itemID, ...)
 		end
 	end
 end)
-hooksecurefunc(GameTooltip, "SetRecipeReagentItem", function(self, itemID, reagentID, ...)
+hooksecurefunc(GameTooltip, "SetRecipeReagentItem", function(self, recipeID, reagentID, ...)
 	if CanAttachTooltips() then
-		local link = C_TradeSkillUI.GetRecipeReagentItemLink(itemID, reagentID);
+		local link = C_TradeSkillUI.GetRecipeReagentItemLink(recipeID, reagentID);
 		if link then
 			AttachTooltipSearchResults(self, link, SearchForLink, link);
 			self:Show();
@@ -19574,7 +19576,7 @@ end
 	-- local function GetNavPath(group)
 	-- 	local current, nav, hash = group;
 	-- 	repeat
-	-- 		hash = app.GetHash(current);
+	-- 		hash = current.hash;
 	-- 		if hash then
 	-- 			if nav then
 	-- 				nav = hash .. ">" .. nav;
@@ -19960,7 +19962,6 @@ app.events.VARIABLES_LOADED = function()
 		"Position",
 		"RandomSearchFilter",
 		"Reagents",
-		"RefreshedCollectionsAlready",
 		"SeasonalFilters",
 		"UnobtainableItemFilters",
 	}) do
@@ -20240,16 +20241,10 @@ app.events.VARIABLES_LOADED = function()
 		app:RegisterEvent("LOOT_OPENED");
 
 		local needRefresh;
-
 		-- NOTE: The auto refresh only happens once per version
-		if not app.autoRefreshedCollections then
-			app.autoRefreshedCollections = true;
-			local lastTime = GetDataMember("RefreshedCollectionsAlready");
-			if not lastTime or (lastTime ~= app.Version) then
-				SetDataMember("RefreshedCollectionsAlready", app.Version);
-				wipe(accountWideData.Sources);	-- This option causes a caching issue, so we have to purge the Source ID data cache.
-				needRefresh = true;
-			end
+		if not accountWideData.LastAutoRefresh or (accountWideData.LastAutoRefresh ~= app.Version) then
+			accountWideData.LastAutoRefresh = app.Version;
+			needRefresh = true;
 		end
 
 		-- check if we are in a Party Sync session when loading in

@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.052,
+	["LastVersion"] = 2.0521,
 	["LastPlayerFullName"] = "Charbeatic-Zul'jin",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
@@ -70,9 +70,9 @@ PawnOptions = {
 		}, -- [13]
 		{
 			["ID"] = 122361,
-			["Level"] = 11,
+			["Level"] = 12,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::9:1446:::1:5805::::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::10:1446:::1:5805::::::|h[Swift Hand of Justice]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 166752,

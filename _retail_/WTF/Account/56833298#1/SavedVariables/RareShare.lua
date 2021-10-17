@@ -4,26 +4,26 @@ RareShareDB = {
 	},
 	["Config"] = {
 		["MapPin"] = true,
-		["CChannel"] = {
-			["CID"] = 1,
-			["CName"] = "General - Shrine of Two Moons",
-		},
+		["ChatAnnounce"] = true,
 		["TomTom"] = {
 			["Rares"] = true,
 			["Master"] = true,
 			["Duplicates"] = true,
 		},
+		["CChannel"] = {
+			["CID"] = 1,
+			["CName"] = "General - Mechagon",
+		},
+		["OnDeath"] = false,
 		["Sound"] = {
 			["Rares"] = true,
 			["Master"] = true,
 			["Duplicates"] = true,
 		},
-		["OnDeath"] = false,
-		["ChatAnnounce"] = true,
 		["Duplicates"] = true,
 	},
 	["LastAnnounce"] = {
-		["Time"] = 1633298188,
-		["ID"] = 151933,
+		["Time"] = 1633900457,
+		["ID"] = 152570,
 	},
 }
