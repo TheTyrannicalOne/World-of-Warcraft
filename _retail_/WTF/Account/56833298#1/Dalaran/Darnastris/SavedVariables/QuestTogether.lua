@@ -1,46 +1,72 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[28732] = {
-			["title"] = "This Can Only Mean One Thing...",
-			["objectives"] = {
-				"Arrive at Blackrock Caverns.", -- [1]
-			},
-		},
-		[28826] = {
-			["title"] = "The Eye of the Storm",
-			["objectives"] = {
-				"0/1 Peered into the Waters of Farseeing", -- [1]
-			},
-		},
-		[39796] = {
-			["title"] = "To Haustvald",
+		[50733] = {
+			["title"] = "A New Dawn",
 			["objectives"] = {
 			},
 		},
-		[25186] = {
-			["title"] = "Futile Resistance",
+		[53028] = {
+			["title"] = "A Dying World",
 			["objectives"] = {
-				"0/1 Kona Thunderwalk slain", -- [1]
 			},
 		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
+		[13041] = {
+			["title"] = "Finish the Shipment",
 			["objectives"] = {
-				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
+				"0/1 Chalcedony", -- [1]
 			},
 		},
-		[42687] = {
-			["title"] = "Troops in the Field",
+		[52070] = {
+			["title"] = "Bauer Backup",
 			["objectives"] = {
-				"Complete \"Troops in the Field\"", -- [1]
 			},
 		},
-		[34692] = {
-			["title"] = "Delegating on Draenor",
+		[53436] = {
+			["title"] = "Azerite for the Alliance",
 			["objectives"] = {
-				"Use the Command Table", -- [1]
+				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
+			},
+		},
+		[42433] = {
+			["title"] = "Ancient Magic",
+			["objectives"] = {
+				"Complete the mission \"Ancient Magic\"", -- [1]
+			},
+		},
+		[57686] = {
+			["title"] = "The Eternal Traveler",
+			["objectives"] = {
+				"0/40 Echo of Mortality", -- [1]
+			},
+		},
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
+			["objectives"] = {
+				"0/5 Pet Battlemasters Defeated", -- [1]
+			},
+		},
+		[52544] = {
+			["title"] = "The War Cache",
+			["objectives"] = {
+				"90/100 War Resources", -- [1]
+			},
+		},
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
+			["objectives"] = {
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
+			},
+		},
+		[60545] = {
+			["title"] = "Shadowlands: A Chilling Summons",
+			["objectives"] = {
+				"1/1 Learn about your leaders' fate", -- [1]
+				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
 		[28398] = {
@@ -50,15 +76,16 @@ QuestTogether = {
 				"0/1 Loregrain's Grimoire", -- [2]
 			},
 		},
+		[44948] = {
+			["title"] = "Raising Your Snowfeather",
+			["objectives"] = {
+				"Level 25 Snowfeather Hatchling", -- [1]
+			},
+		},
 		[44989] = {
 			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
 				"Level 25 Sharptalon Hatchling", -- [1]
-			},
-		},
-		[26897] = {
-			["title"] = "Blackfathom Deeps",
-			["objectives"] = {
 			},
 		},
 		[25191] = {
@@ -72,52 +99,8 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[29439] = {
-			["title"] = "The Call of the World-Shaman",
-			["objectives"] = {
-			},
-		},
-		[56491] = {
-			["title"] = "Tiny Terrors of Stratholme",
-			["objectives"] = {
-				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
-				"Blackmane Defeated.", -- [2]
-			},
-		},
-		[43441] = {
-			["title"] = "A Second Weapon",
-			["objectives"] = {
-				"0/1 Choose a second artifact to pursue", -- [1]
-			},
-		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
-			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
-			},
-		},
-		[13041] = {
-			["title"] = "Finish the Shipment",
-			["objectives"] = {
-				"0/1 Chalcedony", -- [1]
-			},
-		},
-		[25768] = {
-			["title"] = "Bombs Away: Mirkfallon Post!",
-			["objectives"] = {
-			},
-		},
-		[12466] = {
-			["title"] = "Chasing Icestorm: The 7th Legion Front",
-			["objectives"] = {
-			},
-		},
-		[26838] = {
-			["title"] = "Rebels Without a Clue",
+		[26897] = {
+			["title"] = "Blackfathom Deeps",
 			["objectives"] = {
 			},
 		},
@@ -128,8 +111,47 @@ QuestTogether = {
 				"0/1 Complete a Bronze Trial", -- [2]
 			},
 		},
-		[27203] = {
-			["title"] = "The Maelstrom",
+		[43441] = {
+			["title"] = "A Second Weapon",
+			["objectives"] = {
+				"0/1 Choose a second artifact to pursue", -- [1]
+			},
+		},
+		[54180] = {
+			["title"] = "Quest",
+			["objectives"] = {
+			},
+		},
+		[34692] = {
+			["title"] = "Delegating on Draenor",
+			["objectives"] = {
+				"Use the Command Table", -- [1]
+			},
+		},
+		[50825] = {
+			["title"] = "Shrine of the Storm: Whispers Below",
+			["objectives"] = {
+				"Defeat Lord Stormsong", -- [1]
+			},
+		},
+		[26838] = {
+			["title"] = "Rebels Without a Clue",
+			["objectives"] = {
+			},
+		},
+		[12466] = {
+			["title"] = "Chasing Icestorm: The 7th Legion Front",
+			["objectives"] = {
+			},
+		},
+		[51569] = {
+			["title"] = "The Zandalar Campaign",
+			["objectives"] = {
+				"0/1 Choose a foothold", -- [1]
+			},
+		},
+		[29439] = {
+			["title"] = "The Call of the World-Shaman",
 			["objectives"] = {
 			},
 		},
@@ -137,7 +159,7 @@ QuestTogether = {
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
 	},
 }

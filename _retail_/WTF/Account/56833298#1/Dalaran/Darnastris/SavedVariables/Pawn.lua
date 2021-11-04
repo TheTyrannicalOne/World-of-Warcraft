@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0406,
+	["LastVersion"] = 2.0528,
 	["LastPlayerFullName"] = "Darnastris-Dalaran",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
@@ -57,10 +57,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:183659::::::::50:64:::2:1482:4786:1:28:1401:::|h[Annhylde's Band]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 128169,
-			["Level"] = 58,
+			["ID"] = 183659,
+			["Level"] = 110,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff00ccff|Hitem:128169::::::::49:64:::1:5805::::|h[Signet of the Third Fleet]|h|r",
+			["Link"] = "|cffa335ee|Hitem:183659::::::::50:64:::2:1482:4786:1:28:1401:::::|h[Annhylde's Band]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 122362,
@@ -85,6 +85,12 @@ PawnOptions = {
 			["AlsoFitsIn"] = 17,
 			["Link"] = "|cffa335ee|Hitem:165629::::::::50:64::81:3:5844:1527:4786:1:28:1401:::|h[Sentinel's Spellblade]|h|r",
 		}, -- [16]
+		{
+			["ID"] = 165629,
+			["Level"] = 115,
+			["AlsoFitsIn"] = 16,
+			["Link"] = "|cffa335ee|Hitem:165629::::::::50:64::81:3:5844:1527:4786:1:28:1401:::::|h[Sentinel's Spellblade]|h|r",
+		}, -- [17]
 	},
 	["LastKeybindingsSet"] = 1,
 }

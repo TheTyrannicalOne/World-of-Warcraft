@@ -4,22 +4,22 @@ RareShareDB = {
 	},
 	["Config"] = {
 		["MapPin"] = true,
-		["ChatAnnounce"] = true,
+		["CChannel"] = {
+			["CID"] = 1,
+			["CName"] = "General - Mechagon",
+		},
 		["TomTom"] = {
 			["Rares"] = true,
 			["Master"] = true,
 			["Duplicates"] = true,
 		},
-		["CChannel"] = {
-			["CID"] = 1,
-			["CName"] = "General - Mechagon",
-		},
-		["OnDeath"] = false,
 		["Sound"] = {
 			["Rares"] = true,
 			["Master"] = true,
 			["Duplicates"] = true,
 		},
+		["OnDeath"] = false,
+		["ChatAnnounce"] = true,
 		["Duplicates"] = true,
 	},
 	["LastAnnounce"] = {

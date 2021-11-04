@@ -1,6 +1,8 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0406,
+	["LastVersion"] = 2.0528,
+	["LastPlayerFullName"] = "Illingrath-Dalaran",
+	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
 		{
 			["ID"] = 183649,
@@ -55,10 +57,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:183673::::::::50:581:::2:1482:4786:1:28:1401:::|h[Nerubian Aegis Ring]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 143903,
-			["Level"] = 82,
+			["ID"] = 183673,
+			["Level"] = 110,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cffa335ee|Hitem:143903::::::::50:581:::1:6423:2:9:50:28:2063:::|h[The Horseman's Ring]|h|r",
+			["Link"] = "|cffa335ee|Hitem:183673::::::::50:581:::2:1482:4786:1:28:1401:::::|h[Nerubian Aegis Ring]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 183650,
@@ -67,10 +69,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:183650::::::::50:581:::2:1482:4786:1:28:1401:::|h[Miniscule Abomination in a Jar]|h|r",
 		}, -- [13]
 		{
-			["ID"] = 122361,
-			["Level"] = 58,
+			["ID"] = 183650,
+			["Level"] = 110,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::50:581:::1:5805::::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cffa335ee|Hitem:183650::::::::50:581:::2:1482:4786:1:28:1401:::::|h[Minuscule Abomination in a Jar]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 183549,
@@ -84,15 +86,12 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:165635::::::::50:581::81:3:5844:1527:4786:1:28:1401:::|h[Sentinel's Moonglaive]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 117356,
-			["Level"] = 82,
+			["ID"] = 165635,
+			["Level"] = 115,
 			["AlsoFitsIn"] = 16,
-			["Link"] = "|cffa335ee|Hitem:117356::::::::50:581::11:1:6423:2:9:50:28:2063:::|h[The Horseman's Sinister Slicer]|h|r",
+			["Link"] = "|cffa335ee|Hitem:165635::::::::50:581::81:3:5844:1527:4786:1:28:1401:::::|h[Sentinel's Moonglaive]|h|r",
 		}, -- [17]
 	},
-	["AutoSelectScales"] = true,
-	["LastPlayerFullName"] = "Illingrath-Dalaran",
-	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128832] = {
 			["Relics"] = {
@@ -106,6 +105,7 @@ PawnOptions = {
 			["Name"] = "The Aldrachi Warblades",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "DEMONHUNTER",

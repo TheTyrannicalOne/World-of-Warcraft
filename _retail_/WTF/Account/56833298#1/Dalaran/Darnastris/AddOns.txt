@@ -272,3 +272,4 @@ Narcissus_Barbershop: enabled
 TomCats-Mechagon: disabled
 TomCats-Nazjatar: disabled
 TomCats-Nzoth: disabled
+LittleWigs_MistsOfPandaria: enabled

@@ -25,7 +25,7 @@ ARLDB2 = {
 				},
 				["Banuumine"] = {
 				},
-				["Mandles"] = {
+				["Shimzo"] = {
 				},
 				["Tyranasticus"] = {
 				},
@@ -41,7 +41,7 @@ ARLDB2 = {
 				},
 				["Armaguth"] = {
 				},
-				["Shimzo"] = {
+				["Mandles"] = {
 				},
 				["Fantastiburo"] = {
 				},
@@ -111,22 +111,22 @@ ARLDB2 = {
 		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
-		["Okona - Zul'jin"] = "Okona - Zul'jin",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Laymonan - Zul'jin"] = "Laymonan - Zul'jin",
-		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
-		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
 		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
+		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Abyronterner - Zul'jin"] = "Abyronterner - Zul'jin",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Jasmoney - Zul'jin"] = "Jasmoney - Zul'jin",
-		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
+		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Mandles - Zul'jin"] = "Mandles - Zul'jin",
 	},
 	["profiles"] = {
@@ -174,7 +174,7 @@ ARLDB2 = {
 		},
 		["Guufnah - Zul'jin"] = {
 		},
-		["Okona - Zul'jin"] = {
+		["Tinkster - Dalaran"] = {
 		},
 		["Varlouris - Dalaran"] = {
 		},
@@ -184,13 +184,13 @@ ARLDB2 = {
 		},
 		["Laymonan - Zul'jin"] = {
 		},
-		["Serbitechna - Dalaran"] = {
+		["Datgore - Zul'jin"] = {
 		},
 		["Vadder - Argent Dawn"] = {
 		},
-		["Datgore - Zul'jin"] = {
-		},
 		["Tyran - Argent Dawn"] = {
+		},
+		["Serbitechna - Dalaran"] = {
 		},
 		["Darnastris - Dalaran"] = {
 		},
@@ -204,7 +204,7 @@ ARLDB2 = {
 		},
 		["Jasmoney - Zul'jin"] = {
 		},
-		["Tinkster - Dalaran"] = {
+		["Okona - Zul'jin"] = {
 		},
 		["Mandles - Zul'jin"] = {
 		},

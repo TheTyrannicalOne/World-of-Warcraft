@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0404,
+	["LastVersion"] = 2.0528,
 	["LastPlayerFullName"] = "Rotclaugh-Dalaran",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
@@ -70,9 +70,9 @@ PawnOptions = {
 		}, -- [13]
 		{
 			["ID"] = 122361,
-			["Level"] = 52,
+			["Level"] = 54,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::46:251:::1:5805::::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::47:251:::1:5805::::::|h[Swift Hand of Justice]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 122260,

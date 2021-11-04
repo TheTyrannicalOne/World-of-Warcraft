@@ -30,10 +30,14 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
 		[40643] = {
@@ -49,13 +53,7 @@ QuestTogether = {
 		[51464] = {
 			["title"] = "Here In Spirit",
 			["objectives"] = {
-				"2/10  ", -- [1]
-			},
-		},
-		[40329] = {
-			["title"] = "Battle Pet Tamers: Warlords",
-			["objectives"] = {
-				"0/5 Pet Battlemasters Defeated", -- [1]
+				"2/10 Fresh Star Moss", -- [1]
 			},
 		},
 		[44948] = {
@@ -64,10 +62,16 @@ QuestTogether = {
 				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[50598] = {
+			["title"] = "Zandalari Empire",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
+			},
+		},
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
+			["objectives"] = {
+				"0/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
 		[44989] = {
@@ -88,16 +92,27 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Val'sharah", -- [1]
 			},
 		},
-		[50603] = {
-			["title"] = "Voldunai",
+		[50604] = {
+			["title"] = "Tortollan Seekers",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Vol'dun", -- [1]
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
-		[42234] = {
-			["title"] = "The Valarjar",
+		[42420] = {
+			["title"] = "Court of Farondis",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Stormheim", -- [1]
+				"0/4 Complete 4 world quests in Azsuna", -- [1]
+			},
+		},
+		[54180] = {
+			["title"] = "Quest",
+			["objectives"] = {
+			},
+		},
+		[50606] = {
+			["title"] = "Horde War Effort",
+			["objectives"] = {
+				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
 			},
 		},
 		[61874] = {
@@ -107,31 +122,16 @@ QuestTogether = {
 				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
-			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
-			},
-		},
-		[42420] = {
-			["title"] = "Court of Farondis",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Azsuna", -- [1]
-			},
-		},
 		[47105] = {
 			["title"] = "Into The Darkness",
 			["objectives"] = {
 				"0/1 Scout ahead", -- [1]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[42422] = {
+			["title"] = "The Wardens",
 			["objectives"] = {
+				"0/4 Complete 4 Wardens World Quests", -- [1]
 			},
 		},
 	},

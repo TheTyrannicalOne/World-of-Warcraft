@@ -251,3 +251,4 @@ ElvUI_CliqueDatatext: enabled
 Narcissus: enabled
 Narcissus_Database: enabled
 ElvUI_QuestXP: disabled
+LittleWigs_MistsOfPandaria: enabled

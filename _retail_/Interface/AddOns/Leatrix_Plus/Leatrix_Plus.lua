@@ -1,5 +1,5 @@
-----------------------------------------------------------------------
--- 	Leatrix Plus 9.1.13 (13th October 2021)
+﻿----------------------------------------------------------------------
+-- 	Leatrix Plus 9.1.21 (3rd November 2021)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "9.1.13"
+	LeaPlusLC["AddonVer"] = "9.1.21"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -362,6 +362,7 @@
 	function LeaPlusLC:SetDim()
 		LeaPlusLC:LockOption("AutomateQuests", "AutomateQuestsBtn", false)			-- Automate quests
 		LeaPlusLC:LockOption("AutoReleasePvP", "AutoReleasePvPBtn", false)			-- Release in PvP
+		LeaPlusLC:LockOption("AutoSellJunk", "AutoSellJunkBtn", false)				-- Sell junk automatically
 		LeaPlusLC:LockOption("AutoRepairGear", "AutoRepairBtn", false)				-- Repair automatically
 		LeaPlusLC:LockOption("InviteFromWhisper", "InvWhisperBtn", false)			-- Invite from whispers
 		LeaPlusLC:LockOption("NoChatButtons", "NoChatButtonsBtn", true)				-- Hide chat buttons
@@ -369,6 +370,7 @@
 		LeaPlusLC:LockOption("QuestFontChange", "QuestTextBtn", true)				-- Resize quest text
 		LeaPlusLC:LockOption("MinimapMod", "ModMinimapBtn", true)					-- Enhance minimap
 		LeaPlusLC:LockOption("TipModEnable", "MoveTooltipButton", true)				-- Enhance tooltip
+		LeaPlusLC:LockOption("EnhanceDressup", "EnhanceDressupBtn", true)			-- Enhance dressup
 		LeaPlusLC:LockOption("ShowCooldowns", "CooldownsButton", true)				-- Show cooldowns
 		LeaPlusLC:LockOption("ShowBorders", "ModBordersBtn", true)					-- Show borders
 		LeaPlusLC:LockOption("ShowPlayerChain", "ModPlayerChain", true)				-- Show player chain
@@ -397,6 +399,7 @@
 		or	(LeaPlusLC["NoSocialButton"]		~= LeaPlusDB["NoSocialButton"])			-- Hide social button
 		or	(LeaPlusLC["UnclampChat"]			~= LeaPlusDB["UnclampChat"])			-- Unclamp chat frame
 		or	(LeaPlusLC["MoveChatEditBoxToTop"]	~= LeaPlusDB["MoveChatEditBoxToTop"])	-- Move editbox to top
+		or	(LeaPlusLC["MoreFontSizes"]			~= LeaPlusDB["MoreFontSizes"])			-- More font sizes
 		or	(LeaPlusLC["NoStickyChat"]			~= LeaPlusDB["NoStickyChat"])			-- Disable sticky chat
 		or	(LeaPlusLC["NoStickyEditbox"]		~= LeaPlusDB["NoStickyEditbox"])		-- Disable sticky editbox
 		or	(LeaPlusLC["UseArrowKeysInChat"]	~= LeaPlusDB["UseArrowKeysInChat"])		-- Use arrow keys in chat
@@ -834,6 +837,15 @@
 
 				},
 
+				-- Chimes
+				["MuteChimes"] = {
+					"sound/doodad/belltollalliance.ogg#566564",
+					"sound/doodad/belltollhorde.ogg#565853",
+					"sound/doodad/belltollnightelf.ogg#566558",
+					"sound/doodad/belltolltribal.ogg#566027",
+					"sound/doodad/kharazahnbelltoll.ogg#566254",
+				},
+
 				-- Gyrocopters
 				["MuteGyrocopters"] = {
 
@@ -1090,26 +1102,32 @@
 					-- Highmountain Tauren (female) (sound/character/pc_-_highmountain_tauren_female/vo_735_pc_-_highmountain_tauren_female)
 					--[[meleewindup]] 		"01.ogg#1835401", "02.ogg#1835402", "03.ogg#1835403", "04.ogg#1835404", "05.ogg#1835405", "06.ogg#1835406", "07.ogg#1835407",
 					--[[charge]]			"01.ogg#1835386", "02.ogg#1835387", "03.ogg#1835388", "04.ogg#1835389", "05.ogg#1835390",
+					--[[battleshout]]		"01.ogg#1835373", "02.ogg#1835374", "03.ogg#1835375", "04.ogg#1835376", "05.ogg#1835377", "06.ogg#1835378", 
 
 					-- Highmountain Tauren (male) (sound/character/pc_-_highmountain_tauren_male/vo_735_pc_-_highmountain_tauren_male)
 					--[[meleewindup]] 		"01.ogg#1835477", "02.ogg#1835478", "03.ogg#1835479", "04.ogg#1835480", "05.ogg#1835481", "06.ogg#1835482",
 					--[[charge]]			"01.ogg#1835453", "02.ogg#1835454", "03.ogg#1835455", "04.ogg#1835456", "05.ogg#1835457",
+					--[[battleshout]]		"01.ogg#1835438", "02.ogg#1835439", "03.ogg#1835440", "04.ogg#1835441", "05.ogg#1835442", 
 
 					-- Mag'har Orc (female) (sound/character/pc_maghar_orc_female/vo_801_pc_maghar_orc_female)
 					--[[meleewindup]] 		"01.ogg#2026062", "02.ogg#2026063", "03.ogg#2026064", "04.ogg#2026065",
 					--[[charge]]			"01.ogg#2026046", "02.ogg#2026047",
+					--[[battleshout]]		"01.ogg#2026032", "02.ogg#2026033", "03.ogg#2026034", "04.ogg#2026035", "05.ogg#2026036", 
 
 					-- Mag'har Orc (male) (sound/character/pc_maghar_orc_male/vo_801_pc_maghar_orc_male)
 					--[[meleewindup]] 		"01.ogg#2025910", "02.ogg#2025911", "03.ogg#2025912", "04.ogg#2025913",
 					--[[charge]]			"01.ogg#2025893", "02.ogg#2025894",
+					--[[battleshout]]		"01.ogg#2025879", "02.ogg#2025880", "03.ogg#2025881", "04.ogg#2025882", "05.ogg#2025883", 
 
 					-- Nightborne (female) (sound/character/pc_-_nightborne_elf_female/vo_735_pc_-_nightborne_elf_female)
 					--[[meleewindup]] 		"01.ogg#1835757", "02.ogg#1835758", "03.ogg#1835759", "04.ogg#1835760", "05.ogg#1835761", "06.ogg#1835762", "07.ogg#1835763",
 					--[[charge]]			"01.ogg#1835725", "02.ogg#1835726", "03.ogg#1835728", "04.ogg#1835729", "05.ogg#1835730",
+					--[[battleshout]]		"01.ogg#1835708", "02.ogg#1835709", "03.ogg#1835711", "04.ogg#1835712", "05.ogg#1835713", "06.ogg#1835714", 
 
 					-- Nightborne (male) (sound/character/pc_-_nightborne_elf_male/vo_735_pc_-_nightborne_elf_male)
 					--[[meleewindup]] 		"01.ogg#1835861", "02.ogg#1835862", "03.ogg#1835864", "04.ogg#1835865", "05.ogg#1835866", "06.ogg#1835867", "07.ogg#1835868",
 					--[[charge]]			"01.ogg#1835828", "02.ogg#1835829", "03.ogg#1835830", "04.ogg#1835831", "05.ogg#1835832", "06.ogg#1835833",
+					--[[battleshout]]		"01.ogg#1835806", "02.ogg#1835807", "03.ogg#1835808", "04.ogg#1835810", "05.ogg#1835811", "06.ogg#1835812", "07.ogg#1835813", 
 
 					-- Orc (female) (sound/character/orc/female/vo_orcfemale_main)
 					--[[meleewindup]] 		"01.ogg#1385039", "02.ogg#1385005", "03.ogg#1385006", "04.ogg#1385007", "05.ogg#1385008", "06.ogg#1385009", "07.ogg#1385010", "08.ogg#1385011", "09.ogg#1385012", "010.ogg#1385013",
@@ -1153,27 +1171,33 @@
 
 					-- Vulpera (female) (sound/character/pc_vulpera_female/vo_83_pc_vulpera_female)
 					--[[charge]] 			"01.ogg#3188447", "02.ogg#3188448", "03.ogg#3188449", "04.ogg#3188450", "05.ogg#3188451",
+					--[[battleshout]]		"01.ogg#3188440", "02.ogg#3188441", "03.ogg#3188442", "04.ogg#3188443", 
 
 					-- Vulpera (male) (sound/character/pc_vulpera_male/vo_83_pc_vulpera_male)
 					--[[charge]] 			"01.ogg#3188678", "02.ogg#3188679", "03.ogg#3188680", "04.ogg#3188681", "05.ogg#3188682",
+					--[[battleshout]]		"01.ogg#3188670", "02.ogg#3188671", "03.ogg#3188672", "04.ogg#3188673", "05.ogg#3188674", 
 
 					-- Zandalari Troll (female) (sound/character/pc_zandalari_troll_female/vo_801_pc_-_zandalari_troll_female)
 					--[[meleewindup]] 		"01.ogg#2735221", "02.ogg#2735222", "03.ogg#2735223",
 					--[[charge]] 			"01.ogg#2735199", "02.ogg#2735200", "03.ogg#2735201", "04.ogg#2735202",
+					--[[battleshout]]		"01.ogg#2735187", "02.ogg#2735188", "03.ogg#2735189", "04.ogg#2735190", "05.ogg#2735191", 
 
 					-- Zandalari Troll (male) (sound/character/pc_zandalari_troll_male/vo_801_pc_-_zandalari_troll_male)
 					--[[meleewindup]] 		"01.ogg#2699315", "02.ogg#2699316", "03.ogg#2699317", "04.ogg#2699318",
 					--[[charge]] 			"01.ogg#2699292", "02.ogg#2699293", "03.ogg#2699294", "04.ogg#2699295",
+					--[[battleshout]]		"01.ogg#2699280", "02.ogg#2699281", "03.ogg#2699282", "04.ogg#2699283", "05.ogg#2699284", 
 
 					-- Alliance --------------------------------------------------------------------------------
 
 					-- Dark Iron Dwarf (female) (sound/character/pc_dark_iron_dwarf_female/vo_801_pc_-_darkiron_dwarf_female)
 					--[[meleewindup]] 		"01.ogg#1906558", "02.ogg#1906559", "03.ogg#1906560", "04.ogg#1906561", "05.ogg#1906562", "06.ogg#1906563",
 					--[[charge]] 			"01.ogg#1906539", "02.ogg#1906540", "03.ogg#1906541",
+					--[[battleshout]]		"01.ogg#1906526", "02.ogg#1906527", "03.ogg#1906528", "04.ogg#1906529", "05.ogg#1906530", 
 
 					-- Dark Iron Dwarf (male) (sound/character/pc_dark_iron_dwarf_male/vo_801_pc_-_darkiron_dwarf_male)
 					--[[meleewindup]] 		"01.ogg#1906635", "02.ogg#1906636", "03.ogg#1906637", "04.ogg#1906638", "05.ogg#1906639",
 					--[[charge]] 			"01.ogg#1906609", "02.ogg#1906610", "03.ogg#1906611", "04.ogg#1906612",
+					--[[battleshout]]		"01.ogg#1906599", "02.ogg#1906600", "03.ogg#1906601", "04.ogg#1906602", 
 
 					-- Draenei (female) (sound/character/draeneifemalepc/vo_draeneifemale_main)
 					--[[meleewindup]] 		"01.ogg#1385393", "02.ogg#1385394", "03.ogg#1385395", "04.ogg#1385396", "05.ogg#1385397", "06.ogg#1385398", "07.ogg#1385399", "08.ogg#1385400", "09.ogg#1385401",
@@ -1207,10 +1231,12 @@
 					-- Human (female) (sound/character/playerexertions/humanfemalefinal/vo_humanfemale_main)
 					--[[meleewindup]] 		"01.ogg#1343369", "02.ogg#1343370", "03.ogg#1343371", "04.ogg#1343372", "05.ogg#1343373", "06.ogg#1343374", "07.ogg#1343375", "08.ogg#1343376", "09.ogg#1343377",
 					--[[charge]] 			"01.ogg#1343362", "02.ogg#1343363", "03.ogg#1343364", "04.ogg#1343365", "05.ogg#1343366", "06.ogg#1343367", "07.ogg#1343368",
+					--[[battleshout]]		"01.ogg#1343353", "02.ogg#1343354", "03.ogg#1343355", "04.ogg#1343356", "05.ogg#1343357", "06.ogg#1343358", "07.ogg#1343359", "08.ogg#1343360", "09.ogg#1343361", 
 
 					-- Human (male) (sound/character/playerexertions/humanmalefinal/vo_humanmale)
 					--[[meleewindup]] 		"01.ogg#1343336", "02.ogg#1343337", "03.ogg#1343338", "04.ogg#1343339", "05.ogg#1343340", "06.ogg#1343341",
 					--[[charge]] 			"01.ogg#1343330", "02.ogg#1343331", "03.ogg#1343332", "04.ogg#1343333", "05.ogg#1343334", "06.ogg#1343335",
+					--[[battleshout]]		"01.ogg#1343322", "02.ogg#1343323", "03.ogg#1343324", "04.ogg#1343325", "05.ogg#1343326", "06.ogg#1343327", "07.ogg#1343328", "08.ogg#1343329", 
 
 					-- Kul Tiran (female) (sound/character/pc_kul_tiran_human_female/vo_815_pc_kul_tiran_human_female)
 					--[[charge]] 			"01.ogg#2735372", "02.ogg#2735373", "03.ogg#2735374", "04.ogg#2735375", "05.ogg#2735376",
@@ -1221,16 +1247,20 @@
 					-- Lightforged Draenei (female) (sound/character/pc_-_lightforged_draenei_female/vo_735_pc_-_lightforged_draenei_female)
 					--[[meleewindup]] 		"01.ogg#1835563", "02.ogg#1835564", "03.ogg#1835565", "04.ogg#1835567", "05.ogg#1835568", "06.ogg#1835569",
 					--[[charge]]			"01.ogg#1835533", "02.ogg#1835535", "03.ogg#1835536", "04.ogg#1835537", "05.ogg#1835538",
+					--[[battleshout]]		"01.ogg#1835517", "02.ogg#1835518", "03.ogg#1835519", "04.ogg#1835520", "05.ogg#1835521", 
 
 					-- Lightforged Draenei (male) (sound/character/pc_-_lightforged_draenei_male/vo_735_pc_-_lightforged_draenei_male)
 					--[[meleewindup]] 		"01.ogg#1835661", "02.ogg#1835662", "03.ogg#1835663", "04.ogg#1835664", "05.ogg#1835665",
 					--[[charge]]			"01.ogg#1835628", "02.ogg#1835629", "03.ogg#1835630", "04.ogg#1835631", "05.ogg#1835632", "06.ogg#1835634",
+					--[[battleshout]]		"01.ogg#1835609", "02.ogg#1835610", "03.ogg#1835611", "04.ogg#1835612", "05.ogg#1835613", "06.ogg#1835614", 
 
 					-- Mechagnome (female) (sound/character/pc_mechagnome_female/vo_83_pc_mechagnome_female)
 					--[[charge]]			"01.ogg#3189379", "02.ogg#3189380", "03.ogg#3189381", "04.ogg#3189382", "05.ogg#3189383",
+					--[[battleshout]]		"01.ogg#3189373", "02.ogg#3189374", "03.ogg#3189375", 
 
 					-- Mechagnome (male) (sound/character/pc_mechagnome_male/vo_83_pc_mechagnome_male)
 					--[[charge]]			"01.ogg#3187604", "02.ogg#3187605", "03.ogg#3187606", "04.ogg#3187607", "05.ogg#3187608",
+					--[[battleshout]]		"01.ogg#3187599", "02.ogg#3187600", "03.ogg#3187601", "04.ogg#3187602", "05.ogg#3187603", 
 
 					-- Night Elf (female) (sound/character/nightelf/nightelffemale/vo_nightelffemale_main)
 					--[[meleewindup]] 		"01.ogg#1383664", "02.ogg#1383665", "03.ogg#1383666", "04.ogg#1383667", "05.ogg#1383668", "06.ogg#1383669", "07.ogg#1383670", "08.ogg#1383671", "09.ogg#1383672",
@@ -1252,14 +1282,17 @@
 					--[[meleewindup]] 		"01.ogg#1389722", "02.ogg#1389723", "03.ogg#1389724", "04.ogg#1389725", "05.ogg#1389726", "06.ogg#1389727", "07.ogg#1389728", "08.ogg#1389729",
 					--[[battleshoutlarge]] 	"01.ogg#1512783", "02.ogg#1512784", "03.ogg#1512785", "04.ogg#1512786",
 					--[[charge]] 			"01.ogg#1389714", "02.ogg#1389715", "03.ogg#1389716", "04.ogg#1389717", "05.ogg#1389718", "06.ogg#1389719", "07.ogg#1389720", "08.ogg#1389721",
+					--[[battleshoutlong]]	"01.ogg#1389700", "02.ogg#1389701", "03.ogg#1389702", "04.ogg#1389703", "05.ogg#1389704", 
 
 					-- Void Elf (female) (sound/character/pc_-_void_elf_female/vo_735_pc_-_void_elf_female)
 					--[[meleewindup]] 		"01.ogg#1835965", "02.ogg#1835966", "03.ogg#1835968", "04.ogg#1835969", "05.ogg#1835970",
 					--[[charge]] 			"01.ogg#1835932", "02.ogg#1835933", "03.ogg#1835935", "04.ogg#1835936", "05.ogg#1835937", "06.ogg#1835938", "07.ogg#1835939",
+					--[[battleshout]]		"01.ogg#1835914", "02.ogg#1835915", "03.ogg#1835916", "04.ogg#1835918", "05.ogg#1835919", "06.ogg#1835920", 
 
 					-- Void Elf (male) (sound/character/pc_-_void_elf_male/vo_735_pc_-_void_elf_male)
 					--[[meleewindup]] 		"01.ogg#1836072", "02.ogg#1836073", "03.ogg#1836074", "04.ogg#1836075", "05.ogg#1836076", "06.ogg#1836078",
 					--[[charge]] 			"01.ogg#1836037", "02.ogg#1836038", "03.ogg#1836039", "04.ogg#1836040", "05.ogg#1836041", "06.ogg#1836042",
+					--[[battleshout]]		"01.ogg#1836016", "02.ogg#1836017", "03.ogg#1836019", "04.ogg#1836020", "05.ogg#1836021", 
 
 					-- Worgen (female) (gilnean) (sound/character/pcgilneanfemale/vo_gilneanfemale_main)
 					--[[meleewindup]] 		"01.ogg#1612783", "02.ogg#1612784", "03.ogg#1612785", "04.ogg#1612777", "05.ogg#1612778", "06.ogg#1612779", "07.ogg#1612780", "08.ogg#1612781", "09.ogg#1612782",
@@ -1321,8 +1354,9 @@
 			LeaPlusLC:MakeCB(SoundPanel, "MuteTrains", "Trains", 16, -152, false, "If checked, train sounds will be muted.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteBalls", "Balls", 16, -172, false, "If checked, the Foot Ball sounds will be muted.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteEvents", "Events", 16, -192, false, "If checked, holiday event sounds will be muted.|n|nThis applies to Headless Horseman.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteVaults", "Vaults", 16, -212, false, "If checked, the mechanical guild vault idle sound will be muted.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteReady", "Ready", 16, -232, false, "If checked, the ready check sound will be muted.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteChimes", "Chimes", 16, -212, false, "If checked, clock hourly chimes will be muted.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteVaults", "Vaults", 16, -232, false, "If checked, the mechanical guild vault idle sound will be muted.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteReady", "Ready", 16, -252, false, "If checked, the ready check sound will be muted.")
 
 			LeaPlusLC:MakeTx(SoundPanel, "Mounts", 140, -72)
 			LeaPlusLC:MakeCB(SoundPanel, "MuteBikes", "Bikes", 140, -92, false, "If checked, most of the bike mount sounds will be muted.")
@@ -1333,12 +1367,12 @@
 			LeaPlusLC:MakeCB(SoundPanel, "MuteMechsuits", "Mechsuits", 140, -192, false, "If checked, mechsuits will be quieter.|n|nThis applies to Felsteel Annihilator, Lightforged Warframe, Sky Golem and other mechsuits.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteAerials", "Aerials", 140, -212, false, "If checked, jet aerial units will be quieter.|n|nThis applies to Aerial Unit R-21X and Rustbolt Resistor.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteHovercraft", "Hovercraft", 140, -232, false, "If checked, hovercraft will be quieter.|n|nThis applies to Xiwyllag ATV.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteSoulseekers", "Soulseekers", 140, -252, false, "If checked, soulseekers will be quieter.|n|nThis applies to Corridor Creeper, Mawsworn Soulhunter and Bound Shadehound.")
 
 			LeaPlusLC:MakeTx(SoundPanel, "Mounts", 264, -72)
-			LeaPlusLC:MakeCB(SoundPanel, "MuteSoulseekers", "Soulseekers", 264, -92, false, "If checked, soulseekers will be quieter.|n|nThis applies to Corridor Creeper, Mawsworn Soulhunter and Bound Shadehound.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteAirships", "Airships", 264, -112, false, "If checked, airships will be muted.|n|nThis applies to airship mounts and transports.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteZeppelins", "Zeppelins", 264, -132, false, "If checked, zeppelins will be muted.|n|nThis applies to zeppelin mounts and transports.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteBanLu", "Ban-Lu", 264, -152, false, "If checked, Ban-Lu will no longer talk to you.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteAirships", "Airships", 264, -92, false, "If checked, airships will be muted.|n|nThis applies to airship mounts and transports.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteZeppelins", "Zeppelins", 264, -112, false, "If checked, zeppelins will be muted.|n|nThis applies to zeppelin mounts and transports.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteBanLu", "Ban-Lu", 264, -132, false, "If checked, Ban-Lu will no longer talk to you.")
 
 			LeaPlusLC:MakeTx(SoundPanel, "Pets", 388, -72)
 			LeaPlusLC:MakeCB(SoundPanel, "MuteSunflower", "Sunflower", 388, -92, false, "If checked, the Singing Sunflower pet will be muted.")
@@ -1859,37 +1893,155 @@
 
 		if LeaPlusLC["EnhanceDressup"] == "On" then
 
-			----------------------------------------------------------------------
-			-- Nude and tabard buttons
-			----------------------------------------------------------------------
+			-- Create configuration panel
+			local DressupPanel = LeaPlusLC:CreatePanel("Enhance dressup", "DressupPanel")
 
-			-- Add buttons to main dressup frames (parented to reset button so they show with reset button)
-			LeaPlusLC:CreateButton("DressUpNudeBtn", DressUpFrameResetButton, "Nude", "BOTTOMLEFT", 106, 79, 80, 22, false, "")
-			LeaPlusCB["DressUpNudeBtn"]:ClearAllPoints()
-			LeaPlusCB["DressUpNudeBtn"]:SetPoint("RIGHT", DressUpFrameResetButton, "LEFT", 0, 0)
-			LeaPlusCB["DressUpNudeBtn"]:SetScript("OnClick", function()
-				local playerActor = DressUpFrame.ModelScene:GetPlayerActor()
-				playerActor:Undress()
+			LeaPlusLC:MakeTx(DressupPanel, "Zoom speed", 16, -72)
+			LeaPlusLC:MakeSL(DressupPanel, "DressupFasterZoom", "Drag to set the dressup model zoom speed.|n|nThis only applies to the dressing room and transmogrify frame.", 1, 10, 1, 16, -92, "%.0f")
+
+			-- Refresh zoom speed slider when changed
+			LeaPlusCB["DressupFasterZoom"]:HookScript("OnValueChanged", function()
+				LeaPlusCB["DressupFasterZoom"].f:SetFormattedText("%.0f%%", LeaPlusLC["DressupFasterZoom"] * 100)
 			end)
 
-			LeaPlusLC:CreateButton("DressUpTabBtn", DressUpFrameResetButton, "Tabard", "BOTTOMLEFT", 26, 79, 80, 22, false, "")
+			-- Set zoom speed when dressup model is zoomed (wardrobe is set in wardrobe section further down)
+			DressUpFrame.ModelScene:SetScript("OnMouseWheel", function(self, delta)
+				for i = 1, LeaPlusLC["DressupFasterZoom"] do
+					if DressUpFrame.ModelScene.activeCamera then
+						DressUpFrame.ModelScene.activeCamera:OnMouseWheel(delta)
+					end
+				end
+			end)
+
+			-- Help button hidden
+			DressupPanel.h:Hide()
+
+			-- Back button handler
+			DressupPanel.b:SetScript("OnClick", function() 
+				DressupPanel:Hide(); LeaPlusLC["PageF"]:Show(); LeaPlusLC["Page5"]:Show()
+				return
+			end)
+
+			-- Reset button handler
+			DressupPanel.r:SetScript("OnClick", function()
+
+				-- Reset controls
+				LeaPlusLC["DressupFasterZoom"] = 3
+
+				-- Set dressup and refresh configuration panel
+				DressupPanel:Hide(); DressupPanel:Show()
+
+			end)
+
+			-- Show configuration panal when options panel button is clicked
+			LeaPlusCB["EnhanceDressupBtn"]:SetScript("OnClick", function()
+				if IsShiftKeyDown() and IsControlKeyDown() then
+					-- Preset profile
+					LeaPlusLC["DressupFasterZoom"] = 3
+				else
+					DressupPanel:Show()
+					LeaPlusLC:HideFrames()
+				end
+			end)
+
+
+			----------------------------------------------------------------------
+			-- Buttons
+			----------------------------------------------------------------------
+
+			-- Function to modify a button
+			local function SetButton(where, text, tip)
+				where:SetText(L[text])
+				where:SetWidth(where:GetFontString():GetStringWidth() + 20)
+				where:HookScript("OnEnter", function() 
+					GameTooltip:SetOwner(where, "ANCHOR_NONE")
+					GameTooltip:SetPoint("BOTTOM", where, "TOP", 0, 10)
+					GameTooltip:SetText(tip, nil, nil, nil, nil, true)
+				end)
+				where:HookScript("OnLeave", GameTooltip_Hide)
+			end
+
+			SetButton(DressUpFrameCancelButton, "C", "Close")
+			SetButton(DressUpFrameResetButton, "R", "Reset")
+
+			-- Remove tabard button
+			LeaPlusLC:CreateButton("DressUpTabBtn", DressUpFrameResetButton, "B", "BOTTOMLEFT", 26, 79, 80, 22, false, "")
 			LeaPlusCB["DressUpTabBtn"]:ClearAllPoints()
-			LeaPlusCB["DressUpTabBtn"]:SetPoint("RIGHT", LeaPlusCB["DressUpNudeBtn"], "LEFT", 0, 0)
+			LeaPlusCB["DressUpTabBtn"]:SetPoint("RIGHT", DressUpFrameResetButton, "LEFT", 0, 0)
+			SetButton(LeaPlusCB["DressUpTabBtn"], "B", "Remove tabard")
 			LeaPlusCB["DressUpTabBtn"]:SetScript("OnClick", function()
 				local playerActor = DressUpFrame.ModelScene:GetPlayerActor()
 				playerActor:UndressSlot(19)
 			end)
 
-			-- Patch 9.1.5
-			if DressUpFrame.LinkButton then
-				-- Resize buttons to match string widths
-				DressUpFrame.LinkButton:SetText("Link")
-				DressUpFrame.LinkButton:SetWidth(DressUpFrame.LinkButton:GetFontString():GetStringWidth() + 20)
-				LeaPlusCB["DressUpNudeBtn"]:SetWidth(LeaPlusCB["DressUpNudeBtn"]:GetFontString():GetStringWidth() + 20)
-				LeaPlusCB["DressUpTabBtn"]:SetWidth(LeaPlusCB["DressUpTabBtn"]:GetFontString():GetStringWidth() + 20)
-				DressUpFrameCancelButton:SetWidth(DressUpFrameCancelButton:GetFontString():GetStringWidth() + 20)
-				DressUpFrameResetButton:SetWidth(DressUpFrameResetButton:GetFontString():GetStringWidth() + 20)
-			end
+			-- Remove all items button (parented to reset button so they show with reset button)
+			LeaPlusLC:CreateButton("DressUpNudeBtn", DressUpFrameResetButton, "N", "BOTTOMLEFT", 106, 79, 80, 22, false, "")
+			LeaPlusCB["DressUpNudeBtn"]:ClearAllPoints()
+			LeaPlusCB["DressUpNudeBtn"]:SetPoint("RIGHT", LeaPlusCB["DressUpTabBtn"], "LEFT", 0, 0)
+			SetButton(LeaPlusCB["DressUpNudeBtn"], "N", "Remove all items")
+			LeaPlusCB["DressUpNudeBtn"]:SetScript("OnClick", function()
+				local playerActor = DressUpFrame.ModelScene:GetPlayerActor()
+				playerActor:Undress()
+			end)
+
+			-- Show my outfit on target button
+			LeaPlusLC:CreateButton("DressUpOutfitOnTargetBtn", DressUpFrameResetButton, "O", "BOTTOMLEFT", 26, 79, 80, 22, false, "")
+			LeaPlusCB["DressUpOutfitOnTargetBtn"]:ClearAllPoints()
+			LeaPlusCB["DressUpOutfitOnTargetBtn"]:SetPoint("RIGHT", LeaPlusCB["DressUpNudeBtn"], "LEFT", 0, 0)
+			SetButton(LeaPlusCB["DressUpOutfitOnTargetBtn"], "O", "Show my outfit on target")
+			LeaPlusCB["DressUpOutfitOnTargetBtn"]:SetScript("OnClick", function()
+				if UnitIsPlayer("target") then
+					local playerActor = DressUpFrame.ModelScene:GetPlayerActor()
+					playerActor:SetModelByUnit("player", true, true)
+					local modelTransmogList = playerActor:GetItemTransmogInfoList()
+					playerActor:SetModelByUnit("target", true, true)
+					C_Timer.After(0.01, function()
+						playerActor:Undress()
+						DressUpItemTransmogInfoList(modelTransmogList)
+					end)
+				end
+			end)
+
+			-- Show target outfit on me button
+			LeaPlusLC:CreateButton("DressUpTargetSelfBtn", DressUpFrameResetButton, "B", "BOTTOMLEFT", 26, 79, 80, 22, false, "")
+			LeaPlusCB["DressUpTargetSelfBtn"]:ClearAllPoints()
+			LeaPlusCB["DressUpTargetSelfBtn"]:SetPoint("RIGHT", LeaPlusCB["DressUpOutfitOnTargetBtn"], "LEFT", 0, 0)
+			SetButton(LeaPlusCB["DressUpTargetSelfBtn"], "S", "Show target outfit on me")
+			LeaPlusCB["DressUpTargetSelfBtn"]:SetScript("OnClick", function()
+				if UnitIsPlayer("target") then
+					local playerActor = DressUpFrame.ModelScene:GetPlayerActor()
+					playerActor:SetModelByUnit("target", true, true)
+					C_Timer.After(0.01, function()
+						local modelTransmogList = playerActor:GetItemTransmogInfoList()
+						playerActor:SetModelByUnit("player", true, true)
+						SetupPlayerForModelScene(DressUpFrame.ModelScene, modelTransmogList, true, true)
+						playerActor:Undress()
+						DressUpItemTransmogInfoList(modelTransmogList)
+					end)
+				end
+			end)
+
+			-- Show target model button
+			LeaPlusLC:CreateButton("DressUpTargetBtn", DressUpFrameResetButton, "T", "BOTTOMLEFT", 26, 79, 80, 22, false, "")
+			LeaPlusCB["DressUpTargetBtn"]:ClearAllPoints()
+			LeaPlusCB["DressUpTargetBtn"]:SetPoint("RIGHT", LeaPlusCB["DressUpTargetSelfBtn"], "LEFT", 0, 0)
+			SetButton(LeaPlusCB["DressUpTargetBtn"], "T", "Show target model")
+			LeaPlusCB["DressUpTargetBtn"]:SetScript("OnClick", function()
+				if UnitIsPlayer("target") then
+					local playerActor = DressUpFrame.ModelScene:GetPlayerActor()
+					playerActor:SetModelByUnit("target", true, true)
+				end
+			end)
+
+			-- Change player actor to player when reset button is clicked (needed because target button changes it)
+			DressUpFrameResetButton:HookScript("OnClick", function()
+				local playerActor = DressUpFrame.ModelScene:GetPlayerActor()
+				playerActor:SetModelByUnit("player", true, true)
+			end)
+
+			-- Resize link button to match string width
+			DressUpFrame.LinkButton:SetWidth(DressUpFrame.LinkButton:GetFontString():GetStringWidth() + 20)
+			SetButton(DressUpFrame.LinkButton, "L", "Link")
 
 			----------------------------------------------------------------------
 			-- Controls
@@ -1911,6 +2063,14 @@
 			local function DoBlizzardCollectionsFunc()
 				-- Hide positioning controls
 				WardrobeTransmogFrame.ModelScene.ControlFrame:HookScript("OnShow", WardrobeTransmogFrame.ModelScene.ControlFrame.Hide)
+				-- Set zoom speed
+				WardrobeTransmogFrame.ModelScene:SetScript("OnMouseWheel", function(self, delta)
+					for i = 1, LeaPlusLC["DressupFasterZoom"] do
+						if WardrobeTransmogFrame.ModelScene.activeCamera then
+							WardrobeTransmogFrame.ModelScene.activeCamera:OnMouseWheel(delta)
+						end
+					end
+				end)
 			end
 
 			if IsAddOnLoaded("Blizzard_Collections") then
@@ -2774,8 +2934,43 @@
 
 			-- Declarations
 			local IterationCount, totalPrice = 500, 0
-			local SellJunkFrame = CreateFrame("FRAME")
 			local SellJunkTicker, mBagID, mBagSlot
+
+			-- Create configuration panel
+			local SellJunkFrame = LeaPlusLC:CreatePanel("Sell junk automatically", "SellJunkFrame")
+			LeaPlusLC:MakeTx(SellJunkFrame, "Settings", 16, -72)
+			LeaPlusLC:MakeCB(SellJunkFrame, "AutoSellShowSummary", "Show vendor summary in chat", 16, -92, false, "If checked, a vendor summary will be shown in chat when junk is automatically sold.")
+
+			-- Help button hidden
+			SellJunkFrame.h:Hide()
+
+			-- Back button handler
+			SellJunkFrame.b:SetScript("OnClick", function() 
+				SellJunkFrame:Hide(); LeaPlusLC["PageF"]:Show(); LeaPlusLC["Page1"]:Show();
+				return
+			end)
+
+			-- Reset button handler
+			SellJunkFrame.r:SetScript("OnClick", function()
+
+				-- Reset checkboxes
+				LeaPlusLC["AutoSellShowSummary"] = "On"
+
+				-- Refresh panel
+				SellJunkFrame:Hide(); SellJunkFrame:Show()
+
+			end)
+
+			-- Show panal when options panel button is clicked
+			LeaPlusCB["AutoSellJunkBtn"]:SetScript("OnClick", function()
+				if IsShiftKeyDown() and IsControlKeyDown() then
+					-- Preset profile
+					LeaPlusLC["AutoSellShowSummary"] = "On"
+				else
+					SellJunkFrame:Show()
+					LeaPlusLC:HideFrames()
+				end
+			end)
 
 			-- Function to stop selling
 			local function StopSelling()
@@ -2826,7 +3021,7 @@
 				-- Stop selling if no items were sold for this iteration or iteration limit was reached
 				if SoldCount == 0 or SellJunkTicker and SellJunkTicker._remainingIterations == 1 then 
 					StopSelling() 
-					if totalPrice > 0 then 
+					if totalPrice > 0 and LeaPlusLC["AutoSellShowSummary"] == "On" then 
 						LeaPlusLC:Print(L["Sold junk for"] .. " " .. GetCoinText(totalPrice) .. ".")
 					end
 				end
@@ -2910,7 +3105,9 @@
 							RepairAllItems()
 						end
 						-- Show cost summary
-						LeaPlusLC:Print(L["Repaired for"] .. " " .. GetCoinText(RepairCost) .. ".")
+						if LeaPlusLC["AutoRepairShowSummary"] == "On" then
+							LeaPlusLC:Print(L["Repaired for"] .. " " .. GetCoinText(RepairCost) .. ".")
+						end
 					end
 				end
 			end
@@ -2939,6 +3136,7 @@
 
 			LeaPlusLC:MakeTx(RepairPanel, "Settings", 16, -72)
 			LeaPlusLC:MakeCB(RepairPanel, "AutoRepairGuildFunds", "Repair using guild funds if available", 16, -92, false, "If checked, repair costs will be taken from guild funds for characters that are guilded and have permission to repair.")
+			LeaPlusLC:MakeCB(RepairPanel, "AutoRepairShowSummary", "Show repair summary in chat", 16, -112, false, "If checked, a repair summary will be shown in chat when your gear is automatically repaired.")
 
 			-- Help button hidden
 			RepairPanel.h:Hide()
@@ -2954,6 +3152,7 @@
 
 				-- Reset checkboxes
 				LeaPlusLC["AutoRepairGuildFunds"] = "On"
+				LeaPlusLC["AutoRepairShowSummary"] = "On"
 
 				-- Refresh panel
 				RepairPanel:Hide(); RepairPanel:Show()
@@ -2965,6 +3164,7 @@
 				if IsShiftKeyDown() and IsControlKeyDown() then
 					-- Preset profile
 					LeaPlusLC["AutoRepairGuildFunds"] = "On"
+					LeaPlusLC["AutoRepairShowSummary"] = "On"
 				else
 					RepairPanel:Show()
 					LeaPlusLC:HideFrames()
@@ -3946,6 +4146,14 @@
 	function LeaPlusLC:Player()
 
 		----------------------------------------------------------------------
+		-- More font sizes
+		----------------------------------------------------------------------
+
+		if LeaPlusLC["MoreFontSizes"] == "On" then
+			RunScript('CHAT_FONT_HEIGHTS = {[1] = 10, [2] = 12, [3] = 14, [4] = 16, [5] = 18, [6] = 20, [7] = 22, [8] = 24, [9] = 26, [10] = 28}')
+		end
+
+		----------------------------------------------------------------------
 		-- Automatically release in battlegrounds
 		----------------------------------------------------------------------
 
@@ -4240,9 +4448,13 @@
 				if LeaPlusLC["NoScreenEffects"] == "On" then
 					SetCVar("ffxDeath", "0")
 					SetCVar("ffxNether", "0")
+					SetCVar("ffxVenari", "0")
+					SetCVar("ffxLingeringVenari", "0")
 				else
 					SetCVar("ffxDeath", "1")
 					SetCVar("ffxNether", "1")
+					SetCVar("ffxVenari", "1")
+					SetCVar("ffxLingeringVenari", "1")
 				end
 			end
 
@@ -5708,6 +5920,9 @@
 				end
 			end)
 
+			-- Hide text to speech button
+			TextToSpeechButton:SetParent(tframe)
+
 			-- Move voice chat and chat menu buttons inside the chat frame
 			ChatFrameChannelButton:ClearAllPoints()
 			ChatFrameChannelButton:SetPoint("TOPRIGHT", ChatFrame1Background, "TOPRIGHT", 1, -3)
@@ -5856,6 +6071,9 @@
 			titleFrame.x:SetPoint("RIGHT", -4, 0)
 			titleFrame.x:SetText(L["Drag to size"] .. " | " .. L["Right-click to close"])
 			titleFrame.x:SetFont(titleFrame.x:GetFont(), 16, nil)
+			titleFrame.x:SetWidth(600 - titleFrame.m:GetStringWidth() - 30)
+			titleFrame.x:SetWordWrap(false)
+			titleFrame.x:SetJustifyH("RIGHT")
 
 			local titleBox = titleFrame.EditBox
 			titleBox:Hide()
@@ -6893,6 +7111,41 @@
 				waitFrame:SetScript("OnEvent", function(self, event, arg1)
 					if arg1 == "Blizzard_GarrisonUI" then
 						GarrisonFunc()
+						waitFrame:UnregisterAllEvents()
+					end
+				end)
+			end
+
+			---------------------------------------------------------------------------------------------------------
+			-- Total RP 3
+			---------------------------------------------------------------------------------------------------------
+
+			-- Total RP 3
+			local function TotalRP3Func()
+				if TRP3_MainTooltip and TRP3_CharacterTooltip then
+
+					-- Function to set tooltip scale
+					local function SetTotalRP3TipScale()
+						TRP3_MainTooltip:SetScale(LeaPlusLC["LeaPlusTipSize"])
+						TRP3_CharacterTooltip:SetScale(LeaPlusLC["LeaPlusTipSize"])
+					end
+
+					-- Set tooltip scale when slider changes and on startup
+					LeaPlusCB["LeaPlusTipSize"]:HookScript("OnValueChanged", SetTotalRP3TipScale)
+					SetTotalRP3TipScale()
+
+				end
+			end
+
+			-- Run function when Total RP 3 addon has loaded
+			if IsAddOnLoaded("totalRP3") then
+				TotalRP3Func()
+			else
+				local waitFrame = CreateFrame("FRAME")
+				waitFrame:RegisterEvent("ADDON_LOADED")
+				waitFrame:SetScript("OnEvent", function(self, event, arg1)
+					if arg1 == "totalRP3" then
+						TotalRP3Func()
 						waitFrame:UnregisterAllEvents()
 					end
 				end)
@@ -9240,8 +9493,10 @@
 				LeaPlusLC:LoadVarNum("AutoReleaseDelay", 200, 200, 3000)	-- Release in PvP Delay
 
 				LeaPlusLC:LoadVarChk("AutoSellJunk", "Off")					-- Sell junk automatically
+				LeaPlusLC:LoadVarChk("AutoSellShowSummary", "On")			-- Sell junk summary in chat
 				LeaPlusLC:LoadVarChk("AutoRepairGear", "Off")				-- Repair automatically
 				LeaPlusLC:LoadVarChk("AutoRepairGuildFunds", "On")			-- Repair using guild funds
+				LeaPlusLC:LoadVarChk("AutoRepairShowSummary", "On")			-- Repair show summary in chat
 
 				-- Social
 				LeaPlusLC:LoadVarChk("NoDuelRequests", "Off")				-- Block duels
@@ -9265,6 +9520,7 @@
 				LeaPlusLC:LoadVarChk("NoSocialButton", "Off")				-- Hide social button
 				LeaPlusLC:LoadVarChk("UnclampChat", "Off")					-- Unclamp chat frame
 				LeaPlusLC:LoadVarChk("MoveChatEditBoxToTop", "Off")			-- Move editbox to top
+				LeaPlusLC:LoadVarChk("MoreFontSizes", "Off")				-- More font sizes
 
 				LeaPlusLC:LoadVarChk("NoStickyChat", "Off")					-- Disable sticky chat
 				LeaPlusLC:LoadVarChk("NoStickyEditbox", "Off")				-- Disable sticky editbox
@@ -9306,6 +9562,7 @@
 				LeaPlusLC:LoadVarNum("TipCursorY", 0, -128, 128)			-- Tooltip cursor Y offset
 
 				LeaPlusLC:LoadVarChk("EnhanceDressup", "Off")				-- Enhance dressup
+				LeaPlusLC:LoadVarNum("DressupFasterZoom", 3, 1, 10)			-- Dressup zoom speed
 				LeaPlusLC:LoadVarChk("ShowVolume", "Off")					-- Show volume slider
 				LeaPlusLC:LoadVarChk("ShowVolumeInFrame", "Off")			-- Volume slider dual layout
 
@@ -9456,8 +9713,10 @@
 			LeaPlusDB["AutoReleaseDelay"] 		= LeaPlusLC["AutoReleaseDelay"]
 
 			LeaPlusDB["AutoSellJunk"] 			= LeaPlusLC["AutoSellJunk"]
+			LeaPlusDB["AutoSellShowSummary"] 	= LeaPlusLC["AutoSellShowSummary"]
 			LeaPlusDB["AutoRepairGear"] 		= LeaPlusLC["AutoRepairGear"]
 			LeaPlusDB["AutoRepairGuildFunds"] 	= LeaPlusLC["AutoRepairGuildFunds"]
+			LeaPlusDB["AutoRepairShowSummary"] 	= LeaPlusLC["AutoRepairShowSummary"]
 
 			-- Social
 			LeaPlusDB["NoDuelRequests"] 		= LeaPlusLC["NoDuelRequests"]
@@ -9481,6 +9740,7 @@
 			LeaPlusDB["NoSocialButton"]			= LeaPlusLC["NoSocialButton"]
 			LeaPlusDB["UnclampChat"]			= LeaPlusLC["UnclampChat"]
 			LeaPlusDB["MoveChatEditBoxToTop"]	= LeaPlusLC["MoveChatEditBoxToTop"]
+			LeaPlusDB["MoreFontSizes"]			= LeaPlusLC["MoreFontSizes"]
 
 			LeaPlusDB["NoStickyChat"] 			= LeaPlusLC["NoStickyChat"]
 			LeaPlusDB["NoStickyEditbox"] 		= LeaPlusLC["NoStickyEditbox"]
@@ -9522,6 +9782,7 @@
 			LeaPlusDB["TipCursorY"]				= LeaPlusLC["TipCursorY"]
 
 			LeaPlusDB["EnhanceDressup"]			= LeaPlusLC["EnhanceDressup"]
+			LeaPlusDB["DressupFasterZoom"]		= LeaPlusLC["DressupFasterZoom"]
 			LeaPlusDB["ShowVolume"] 			= LeaPlusLC["ShowVolume"]
 			LeaPlusDB["ShowVolumeInFrame"] 		= LeaPlusLC["ShowVolumeInFrame"]
 
@@ -9663,6 +9924,8 @@
 			-- Disable screen effects (LeaPlusLC["NoScreenEffects"])
 			SetCVar("ffxDeath", "1")
 			SetCVar("ffxNether", "1")
+			SetCVar("ffxVenari", "1")
+			SetCVar("ffxLingeringVenari", "1")
 
 			-- Set weather density (LeaPlusLC["SetWeatherDensity"])
 			SetCVar("WeatherDensity", "3")
@@ -9698,6 +9961,13 @@
 		if LeaPlusDB["NoRestedEmotes"] == "On" then
 			if wipe or (not wipe and LeaPlusLC["NoRestedEmotes"] == "Off") then
 				SetCVar("Sound_EnableEmoteSounds", "1")
+			end
+		end
+
+		-- More font sizes
+		if LeaPlusDB["MoreFontSizes"] == "On" then
+			if wipe or (not wipe and LeaPlusLC["MoreFontSizes"] == "Off") then
+				RunScript('for i = 1, 50 do if _G["ChatFrame" .. i] then local void, fontSize = FCF_GetChatWindowInfo(i); if fontSize and fontSize ~= 12 and fontSize ~= 14 and fontSize ~= 16 and fontSize ~= 18 then FCF_SetChatWindowFontSize(self, _G["ChatFrame" .. i], CHAT_FRAME_DEFAULT_FONT_SIZE) end end end')
 			end
 		end
 
@@ -11553,6 +11823,8 @@
 				LeaPlusDB["NoSocialButton"] = "On"				-- Hide social button
 				LeaPlusDB["UnclampChat"] = "On"					-- Unclamp chat frame
 				LeaPlusDB["MoveChatEditBoxToTop"] = "On"		-- Move editbox to top
+				LeaPlusDB["MoreFontSizes"] = "On"				-- More font sizes
+
 				LeaPlusDB["NoStickyChat"] = "On"				-- Disable sticky chat
 				LeaPlusDB["NoStickyEditbox"] = "On"				-- Disable sticky editbox
 				LeaPlusDB["UseArrowKeysInChat"] = "On"			-- Use arrow keys in chat
@@ -11580,6 +11852,7 @@
 				LeaPlusDB["TipCursorX"] = 0						-- X offset
 				LeaPlusDB["TipCursorY"] = 0						-- Y offset
 				LeaPlusDB["EnhanceDressup"] = "On"				-- Enhance dressup
+				LeaPlusDB["DressupFasterZoom"] = 3				-- Dressup zoom speed
 				LeaPlusDB["ShowVolume"] = "On"					-- Show volume slider
 				LeaPlusDB["ShowCooldowns"] = "On"				-- Show cooldowns
 				LeaPlusDB["DurabilityStatus"] = "On"			-- Show durability status
@@ -11771,6 +12044,9 @@
 				end
 				LeaPlusDB["MuteReady"] = "Off"	-- Mute ready check
 
+				-- Set chat font sizes
+				RunScript('for i = 1, 50 do if _G["ChatFrame" .. i] then FCF_SetChatWindowFontSize(self, _G["ChatFrame" .. i], 18) end end')
+
 				-- Reload
 				ReloadUI()
 			else
@@ -11933,6 +12209,7 @@
 
  	LeaPlusLC:CfgBtn("AutomateQuestsBtn", LeaPlusCB["AutomateQuests"])
 	LeaPlusLC:CfgBtn("AutoReleasePvPBtn", LeaPlusCB["AutoReleasePvP"])
+ 	LeaPlusLC:CfgBtn("AutoSellJunkBtn", LeaPlusCB["AutoSellJunk"])
  	LeaPlusLC:CfgBtn("AutoRepairBtn", LeaPlusCB["AutoRepairGear"])
 
 ----------------------------------------------------------------------
@@ -11968,6 +12245,7 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoSocialButton"			,	"Hide social button"			,	146, -152,	true,	"If checked, the social button and quick-join notification will be hidden.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "UnclampChat"				,	"Unclamp chat frame"			,	146, -172,	true,	"If checked, you will be able to drag the chat frame to the edge of the screen.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MoveChatEditBoxToTop" 		, 	"Move editbox to top"			,	146, -192, 	true,	"If checked, the editbox will be moved to the top of the chat frame.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MoreFontSizes"		 		, 	"More font sizes"				,	146, -212, 	true,	"If checked, additional font sizes will be available in the chat frame font size menu.")
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Mechanics"					, 	340, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoStickyChat"				, 	"Disable sticky chat"			,	340, -92,	true,	"If checked, sticky chat will be disabled.|n|nNote that this does not apply to temporary chat windows.")
@@ -12021,6 +12299,7 @@
 
 	LeaPlusLC:CfgBtn("ModMinimapBtn", LeaPlusCB["MinimapMod"])
 	LeaPlusLC:CfgBtn("MoveTooltipButton", LeaPlusCB["TipModEnable"])
+	LeaPlusLC:CfgBtn("EnhanceDressupBtn", LeaPlusCB["EnhanceDressup"])
 	LeaPlusLC:CfgBtn("CooldownsButton", LeaPlusCB["ShowCooldowns"])
 	LeaPlusLC:CfgBtn("ModBordersBtn", LeaPlusCB["ShowBorders"])
 	LeaPlusLC:CfgBtn("ModPlayerChain", LeaPlusCB["ShowPlayerChain"])
@@ -12067,7 +12346,7 @@
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Graphics and Sound"		, 	146, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoScreenGlow"				, 	"Disable screen glow"			, 	146, -92, 	false,	"If checked, the screen glow will be disabled.|n|nEnabling this option will also disable the drunken haze effect.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoScreenEffects"			, 	"Disable screen effects"		, 	146, -112, 	false,	"If checked, the netherworld effect will be disabled.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoScreenEffects"			, 	"Disable screen effects"		, 	146, -112, 	false,	"If checked, the grey screen of death, the netherworld effect and the Cloak of Ven'ari effect will be disabled.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "SetWeatherDensity"			, 	"Set weather density"			, 	146, -132, 	false,	"If checked, you will be able to set the density of weather effects.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MaxCameraZoom"				, 	"Max camera zoom"				, 	146, -152, 	false,	"If checked, you will be able to zoom out to a greater distance.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoRestedEmotes"			, 	"Silence rested emotes"			,	146, -172, 	true,	"If checked, emote sounds will be silenced while your character is:|n|n- resting|n- in a pet battle|n- at the Halfhill Market|n- at the Grim Guzzler|n|nEmote sounds will be enabled when none of the above apply.")

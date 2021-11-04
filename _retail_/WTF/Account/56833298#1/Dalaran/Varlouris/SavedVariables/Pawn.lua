@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0406,
+	["LastVersion"] = 2.0528,
 	["LastPlayerFullName"] = "Varlouris-Dalaran",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
@@ -57,10 +57,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:183676::::::::50:263:::2:1482:4786:1:28:1401:::|h[Hailstone Loop]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 128173,
-			["Level"] = 93,
+			["ID"] = 183676,
+			["Level"] = 110,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff00ccff|Hitem:128173::::::::75:263:::1:5805:::|h[Admiral Taylor's Loyalty Ring]|h|r",
+			["Link"] = "|cffa335ee|Hitem:183676::::::::50:263:::2:1482:4786:1:28:1401:::::|h[Hailstone Loop]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 122361,
@@ -86,10 +86,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:165625::::::::50:263::81:3:5844:1527:4786:1:28:1401:::|h[Sentinel's Warhammer]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 122385,
-			["Level"] = 93,
+			["ID"] = 165625,
+			["Level"] = 115,
 			["AlsoFitsIn"] = 16,
-			["Link"] = "|cff00ccff|Hitem:122385::::::::75:263:::1:5805:::|h[Venerable Mass of McGowan]|h|r",
+			["Link"] = "|cffa335ee|Hitem:165625::::::::50:263::81:3:5844:1527:4786:1:28:1401:::::|h[Sentinel's Warhammer]|h|r",
 		}, -- [17]
 	},
 	["LastKeybindingsSet"] = 1,

@@ -32,9 +32,10 @@ QuestTogether = {
 				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[48639] = {
+			["title"] = "Army of the Light",
 			["objectives"] = {
+				"0/4 Complete 4 Army of the Light World Quests", -- [1]
 			},
 		},
 		[40643] = {
@@ -53,10 +54,9 @@ QuestTogether = {
 				"2/10 Fresh Star Moss", -- [1]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[54180] = {
+			["title"] = "Quest",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
 		[50598] = {
@@ -65,9 +65,10 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
 			},
 		},
-		[53101] = {
-			["title"] = "Nettin' Ettin",
+		[50604] = {
+			["title"] = "Tortollan Seekers",
 			["objectives"] = {
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
 		[44989] = {
@@ -100,10 +101,9 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Stormheim", -- [1]
 			},
 		},
-		[42421] = {
-			["title"] = "The Nightfallen",
+		[53101] = {
+			["title"] = "Nettin' Ettin",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Suramar", -- [1]
 			},
 		},
 		[31891] = {

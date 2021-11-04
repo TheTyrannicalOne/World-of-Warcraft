@@ -7,28 +7,34 @@ QuestTogether = {
 				"0/1 Abused Soul subjugated", -- [1]
 			},
 		},
+		[42234] = {
+			["title"] = "The Valarjar",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Stormheim", -- [1]
+			},
+		},
 		[56352] = {
 			["title"] = "The Eternal Palace: We Can Make It Stronger...",
 			["objectives"] = {
 				"3/20 Eternal Ornament", -- [1]
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
+		[47727] = {
+			["title"] = "Tomb of Sargeras: Aegwynn's Path",
 			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+				"3/4 Fragment of the Guardian's Seal", -- [1]
 			},
 		},
-		[57563] = {
-			["title"] = "Mogu Assault Tracker",
+		[56120] = {
+			["title"] = "The Unshackled",
 			["objectives"] = {
-				"0/1   slain", -- [1]
+				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
 		[61981] = {
 			["title"] = "Replenish the Reservoir",
 			["objectives"] = {
-				"150/1000 Anima sources", -- [1]
+				"210/1000 Anima sources", -- [1]
 			},
 		},
 		[49133] = {
@@ -54,6 +60,12 @@ QuestTogether = {
 				"1/1 Tred'ova slain", -- [1]
 			},
 		},
+		[48639] = {
+			["title"] = "Army of the Light",
+			["objectives"] = {
+				"0/4 Complete 4 Army of the Light World Quests", -- [1]
+			},
+		},
 		[47129] = {
 			["title"] = "Tomb of Sargeras: The Deceiver",
 			["objectives"] = {
@@ -67,10 +79,10 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[40329] = {
-			["title"] = "Battle Pet Tamers: Warlords",
+		[50598] = {
+			["title"] = "Zandalari Empire",
 			["objectives"] = {
-				"2/5 Pet Battlemasters Defeated", -- [1]
+				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
 			},
 		},
 		[53435] = {
@@ -85,10 +97,10 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Nazmir.", -- [1]
 			},
 		},
-		[42420] = {
-			["title"] = "Court of Farondis",
+		[45381] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Azsuna", -- [1]
+				"1/4 Echo of Time", -- [1]
 			},
 		},
 		[45383] = {
@@ -133,22 +145,10 @@ QuestTogether = {
 				"0/1 Method of tracking found", -- [2]
 			},
 		},
-		[48641] = {
-			["title"] = "Armies of Legionfall",
+		[42422] = {
+			["title"] = "The Wardens",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
-			},
-		},
-		[48642] = {
-			["title"] = "Argussian Reach",
-			["objectives"] = {
-				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
-			},
-		},
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
-			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
+				"0/4 Complete 4 Wardens World Quests", -- [1]
 			},
 		},
 		[54180] = {
@@ -156,16 +156,16 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[47727] = {
-			["title"] = "Tomb of Sargeras: Aegwynn's Path",
-			["objectives"] = {
-				"3/4 Fragment of the Guardian's Seal", -- [1]
-			},
-		},
 		[49032] = {
 			["title"] = "Antorus, the Burning Throne: Dark Passage",
 			["objectives"] = {
 				"1/4 Rune of Passage", -- [1]
+			},
+		},
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
+			["objectives"] = {
+				"2/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
 		[57462] = {
@@ -186,16 +186,17 @@ QuestTogether = {
 				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
 			},
 		},
-		[45381] = {
+		[45382] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
+				"0/4 Echo of Time", -- [1]
 			},
 		},
-		[50603] = {
-			["title"] = "Voldunai",
+		[48305] = {
+			["title"] = "The Burning Coven",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Vol'dun", -- [1]
+				"Defeat the Coven of Shivarra in the Antorus, The Burning Throne", -- [1]
+				"1/1 Sargerei Manifesto", -- [2]
 			},
 		},
 		[30567] = {
@@ -214,18 +215,16 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[48305] = {
-			["title"] = "The Burning Coven",
+		[57564] = {
+			["title"] = "Mantid Assault Tracker",
 			["objectives"] = {
-				"Defeat the Coven of Shivarra in the Antorus, The Burning Throne", -- [1]
-				"1/1 Sargerei Manifesto", -- [2]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
-		["showDebugInfo"] = false,
 	},
 }

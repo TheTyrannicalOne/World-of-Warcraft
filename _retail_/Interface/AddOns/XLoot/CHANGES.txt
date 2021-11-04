@@ -1,12 +1,10 @@
-tag 8706ff2b511db8f44233b296bd5d13321e115525 9.0-8
+lightweight tag 8034a2145b8fbe1bf75a4a4962e354cba83a663a 9.1-1
 Author:	Xuerian <xuerian@gmail.com>
-Date:	Thu May 20 21:41:27 2021 -0400
+Date:	Sat Aug 21 23:20:11 2021 -0400
 
-Potential fixes for GetCurrencyInfo() failing to return a value/asking it for unloaded currencies
-
-commit d7379356c83666c13876f3c5a2f7862f2e0822f3
+commit 8034a2145b8fbe1bf75a4a4962e354cba83a663a
 Author: Xuerian <xuerian@gmail.com>
-Date:   Thu May 20 21:40:34 2021 -0400
+Date:   Sat Aug 21 23:20:11 2021 -0400
 
-    Potential fixes for GetCurrencyInfo() failing to return a value/asking it for unloaded currencies
+    Monitor: Avoid error on bad currency parse
 

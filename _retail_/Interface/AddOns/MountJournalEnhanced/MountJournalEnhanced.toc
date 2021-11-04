@@ -1,8 +1,8 @@
-## Interface: 90100
+## Interface: 90105
 ## Title: Mount Journal Enhanced
 ## Notes: Extends the default Mount Journal
 ## Author: eXochron
-## Version: 2.15
+## Version: 2.15.1
 ## SavedVariablesPerCharacter: MountJournalEnhancedSettings, MJEPersonalSettings
 ## SavedVariables: MJEGlobalSettings, MJETrackingData
 ## X-Curse-Project-ID: 86372

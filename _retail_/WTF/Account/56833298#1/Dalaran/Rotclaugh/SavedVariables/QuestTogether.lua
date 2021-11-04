@@ -4,7 +4,8 @@ QuestTogether = {
 		[28732] = {
 			["title"] = "This Can Only Mean One Thing...",
 			["objectives"] = {
-				"Arrive at Blackrock Caverns.", -- [1]
+				"0/1 Pip's Mole Machine used (Optional)", -- [1]
+				"Arrive at Blackrock Caverns.", -- [2]
 			},
 		},
 		[35702] = {
@@ -12,12 +13,6 @@ QuestTogether = {
 			["objectives"] = {
 				"1/1 Captain Brak slain", -- [1]
 				"1/1 Heart of the Magnaron recovered", -- [2]
-			},
-		},
-		[43267] = {
-			["title"] = "Troops in the Field",
-			["objectives"] = {
-				"Complete the mission, \"Troops in the Field\"", -- [1]
 			},
 		},
 		[29199] = {
@@ -31,18 +26,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[54185] = {
-			["title"] = "Gnomeregan's New Guardians",
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
 			["objectives"] = {
-				"1/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-				"Pulverizer Bot Mk 6001 defeated.", -- [2]
-			},
-		},
-		[52946] = {
-			["title"] = "A Dying World",
-			["objectives"] = {
-				"1/1 Take portal to Uldum to get closer to Silithus (Optional)", -- [1]
-				"0/1 Silithus reached", -- [2]
+				"0/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
 		[27203] = {
@@ -58,46 +45,6 @@ QuestTogether = {
 				"0/1 Wrath of Azshara slain", -- [3]
 			},
 		},
-		[38381] = {
-			["title"] = "Archdruid of Lore",
-			["objectives"] = {
-			},
-		},
-		[36495] = {
-			["title"] = "News from Talador",
-			["objectives"] = {
-			},
-		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
-			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
-			},
-		},
-		[24432] = {
-			["title"] = "Sea Legs",
-			["objectives"] = {
-				"0/3 Saltwater Starfish", -- [1]
-				"0/1 Conch Shell", -- [2]
-			},
-		},
-		[29439] = {
-			["title"] = "The Call of the World-Shaman",
-			["objectives"] = {
-			},
-		},
-		[56491] = {
-			["title"] = "Tiny Terrors of Stratholme",
-			["objectives"] = {
-				"0/1 Ask Sean Wilkers to open the Stratholme service entrance.", -- [1]
-				"Blackmane Defeated.", -- [2]
-			},
-		},
-		[38142] = {
-			["title"] = "Archdruid of the Claw",
-			["objectives"] = {
-			},
-		},
 		[31891] = {
 			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
@@ -108,10 +55,59 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[35166] = {
-			["title"] = "Ship Salvage",
+		[38381] = {
+			["title"] = "Archdruid of Lore",
 			["objectives"] = {
-				"0/15 Drudgeboat Salvage", -- [1]
+			},
+		},
+		[44948] = {
+			["title"] = "Raising Your Snowfeather",
+			["objectives"] = {
+				"Level 25 Snowfeather Hatchling", -- [1]
+			},
+		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[29439] = {
+			["title"] = "The Call of the World-Shaman",
+			["objectives"] = {
+			},
+		},
+		[24432] = {
+			["title"] = "Sea Legs",
+			["objectives"] = {
+				"0/3 Saltwater Starfish", -- [1]
+				"0/1 Conch Shell", -- [2]
+			},
+		},
+		[36495] = {
+			["title"] = "News from Talador",
+			["objectives"] = {
+			},
+		},
+		[42533] = {
+			["title"] = "The Ruined Kingdom",
+			["objectives"] = {
+			},
+		},
+		[46727] = {
+			["title"] = "Tides of War",
+			["objectives"] = {
+				"0/1 Attend the War Council in Stormwind Keep", -- [1]
+			},
+		},
+		[33359] = {
+			["title"] = "Meet Us at Starfall Outpost",
+			["objectives"] = {
+			},
+		},
+		[38142] = {
+			["title"] = "Archdruid of the Claw",
+			["objectives"] = {
 			},
 		},
 		[42750] = {
@@ -134,9 +130,10 @@ QuestTogether = {
 				"0/10 Steamscar saberon slain", -- [1]
 			},
 		},
-		[33359] = {
-			["title"] = "Meet Us at Starfall Outpost",
+		[35166] = {
+			["title"] = "Ship Salvage",
 			["objectives"] = {
+				"0/15 Drudgeboat Salvage", -- [1]
 			},
 		},
 		[35174] = {
@@ -149,8 +146,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
-		["showDebugInfo"] = false,
 	},
 }

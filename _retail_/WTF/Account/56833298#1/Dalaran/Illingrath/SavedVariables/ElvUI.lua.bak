@@ -1,278 +1,15 @@
 
 ElvCharacterDB = {
+	["ConvertKeybindings"] = true,
 	["CliqueDatatext"] = {
 	},
 	["ChatEditHistory"] = {
-		"/allthethings", -- [1]
-		"/wa", -- [2]
+		"/wa", -- [1]
+		"/opie", -- [2]
 		"/dance", -- [3]
-		"/opie", -- [4]
+		"/allthethings", -- [4]
 	},
 	["ChatHistoryLog"] = {
-		{
-			"^", -- [1]
-			"Creepdk-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Creepdk-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			11, -- [11]
-			"Player-3683-0BB2ADA3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Creepdk|r",
-			[51] = 1605643982,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
-		{
-			"I've been killing them all", -- [1]
-			"Nashean-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Nashean-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			12, -- [11]
-			"Player-3683-0CD0D23B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Nashean|r",
-			[51] = 1605643988,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
-		{
-			"yeah you suck", -- [1]
-			"Sumín-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Sumín-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			14, -- [11]
-			"Player-3683-0CCD33BA", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Sumín|r",
-			[51] = 1605643996,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
-		{
-			"im to lazy to start an infected raid group lmfao", -- [1]
-			"Lightsbeard-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Lightsbeard-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			15, -- [11]
-			"Player-3683-0CBE9079", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Lightsbeard|r",
-			[51] = 1605643997,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
-		{
-			"i wish you could cure the infection with cure removing abilities so there could just be triage points full of healers", -- [1]
-			"Vanforrion-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Vanforrion-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			16, -- [11]
-			"Player-3683-0AE7AE6A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Vanforrion|r",
-			[51] = 1605644002,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
-		{
-			"Because SW is nice looking. Allison the Innkeeper and I have been talking", -- [1]
-			"Auend-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Auend-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			18, -- [11]
-			"Player-3683-09CB7A13", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cAuend|r",
-			[51] = 1605644011,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
-		{
-			"i like that we can't kill the Darnassian Refugees, us damn Elves needed a break", -- [1]
-			"Mactheir-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Mactheir-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			19, -- [11]
-			"Player-3683-0AC14883", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Mactheir|r",
-			[51] = 1605644011,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
-		{
-			"|cffffff00Trade District is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Stormwind City", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Stormwind City", -- [9]
-			0, -- [10]
-			20, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1605644013,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
-		{
-			"awe you cant log out to save it for later", -- [1]
-			"Allrage-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Allrage-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			22, -- [11]
-			"Player-3683-0866CE68", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cAllrage|r",
-			[51] = 1605644022,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
-		{
-			"there is a triage point of healers. but it's basically worthless because it's 100x harder to get changed than it is to avoid it.", -- [1]
-			"Veganmagee-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Veganmagee-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			23, -- [11]
-			"Player-3683-0B7E08FD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaVeganmagee|r",
-			[51] = 1605644027,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
-		{
-			"WTB more zombies in Boralus... so I can kill em", -- [1]
-			"Nashean-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Nashean-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			24, -- [11]
-			"Player-3683-0CD0D23B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Nashean|r",
-			[51] = 1605644037,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
-		{
-			"ill make sure to infect her if I become a zombie", -- [1]
-			"Tilldru-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Tilldru-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			29, -- [11]
-			"Player-3683-0CA84212", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Tilldru|r",
-			[51] = 1605644042,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
 		{
 			"they should have canceled flying in major cities", -- [1]
 			"Lightsbeard-Dalaran", -- [2]
@@ -294,7 +31,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Lightsbeard|r",
 			[51] = 1605644048,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
+		}, -- [1]
 		{
 			"You leave her alone!", -- [1]
 			"Auend-Dalaran", -- [2]
@@ -316,7 +53,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cAuend|r",
 			[51] = 1605644051,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
+		}, -- [2]
 		{
 			"HAHAH", -- [1]
 			"Delyb-Dalaran", -- [2]
@@ -338,7 +75,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Delyb|r",
 			[51] = 1605644052,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
+		}, -- [3]
 		{
 			"so this could spread proper", -- [1]
 			"Lightsbeard-Dalaran", -- [2]
@@ -360,7 +97,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Lightsbeard|r",
 			[51] = 1605644054,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
+		}, -- [4]
 		{
 			"MAGE TOWER IS INFESTED", -- [1]
 			"Delyb-Dalaran", -- [2]
@@ -382,7 +119,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Delyb|r",
 			[51] = 1605644055,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
+		}, -- [5]
 		{
 			"im trying to find a box right now....", -- [1]
 			"Mactheir-Dalaran", -- [2]
@@ -404,7 +141,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Mactheir|r",
 			[51] = 1605644059,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
+		}, -- [6]
 		{
 			"|cffffff00Mage Quarter is under attack!|r", -- [1]
 			"", -- [2]
@@ -426,7 +163,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1605644065,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
+		}, -- [7]
 		{
 			"Is anyone able to Q for a bg right now? My button wont work?", -- [1]
 			"Hðts-Dalaran", -- [2]
@@ -448,7 +185,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Hðts|r",
 			[51] = 1605644071,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
+		}, -- [8]
 		{
 			"hey guys iam looking for some booooster firend to booost me so fast from level 40 to 50! iam druid and i rly need it so fast i can even pay for this 10 levels!!! please let me know!", -- [1]
 			"Fliip-Dalaran", -- [2]
@@ -470,7 +207,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Fliip|r",
 			[51] = 1605644084,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
+		}, -- [9]
 		{
 			"i'll disembowel her in front of you and you will only be able to see my blood stained smile on my decaying flesh that used to be my mouth but is now only sharp jagged teeth", -- [1]
 			"Tilldru-Dalaran", -- [2]
@@ -492,7 +229,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Tilldru|r",
 			[51] = 1605644086,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
+		}, -- [10]
 		{
 			"or make the zombies harder to kill ", -- [1]
 			"Sumín-Dalaran", -- [2]
@@ -514,7 +251,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Sumín|r",
 			[51] = 1605644088,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
+		}, -- [11]
 		{
 			"honestly i'm starting to see why Classic players hate the modern WoW community, y'all are lazy af and don't want to actually PLAY the game", -- [1]
 			"Creepdk-Dalaran", -- [2]
@@ -536,7 +273,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Creepdk|r",
 			[51] = 1605644092,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
+		}, -- [12]
 		{
 			"Headed to Iron Forge. You better stay away from Allison. She is the best Innkeeper in the whole of Azeroth.", -- [1]
 			"Auend-Dalaran", -- [2]
@@ -558,7 +295,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cAuend|r",
 			[51] = 1605644110,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
+		}, -- [13]
 		{
 			"thats not just modern WoW honestly.....thats alot of people", -- [1]
 			"Mactheir-Dalaran", -- [2]
@@ -580,7 +317,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Mactheir|r",
 			[51] = 1605644111,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
+		}, -- [14]
 		{
 			"Everyone coming out of mage tower has like 6% life lol", -- [1]
 			"Leighunting-Dalaran", -- [2]
@@ -602,7 +339,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Leighunting|r",
 			[51] = 1605644124,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
+		}, -- [15]
 		{
 			"infected again", -- [1]
 			"Lightsbeard-Dalaran", -- [2]
@@ -624,7 +361,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Lightsbeard|r",
 			[51] = 1605644132,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
+		}, -- [16]
 		{
 			"|cffffff00The Canals is under attack!|r", -- [1]
 			"", -- [2]
@@ -646,7 +383,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1605644133,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
+		}, -- [17]
 		{
 			"a bunch of kids that wants everythign there way but life is nto liek that", -- [1]
 			"Minowa-Dalaran", -- [2]
@@ -668,7 +405,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edMinowa|r",
 			[51] = 1605644137,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
+		}, -- [18]
 		{
 			"Or they're a ghoul ", -- [1]
 			"Leighunting-Dalaran", -- [2]
@@ -690,7 +427,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Leighunting|r",
 			[51] = 1605644140,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
+		}, -- [19]
 		{
 			"im getting all these roof campers in sw now", -- [1]
 			"Lightsbeard-Dalaran", -- [2]
@@ -712,7 +449,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Lightsbeard|r",
 			[51] = 1605644140,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
+		}, -- [20]
 		{
 			"WTS |cff0070dd|Hbattlepet:242:1:3:149:12:12:0000000000000000:30409|h[Spectral Tiger Cub]|h|r cheaper than AH", -- [1]
 			"Astronomies-Dalaran", -- [2]
@@ -734,7 +471,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Astronomies|r",
 			[51] = 1605644148,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
+		}, -- [21]
 		{
 			"Creepdk that's humans in general. people are so used to instant gradification and not working for things or waiting for things. we as a species have grown complacent and it's our inablility to take electronics in moderation.", -- [1]
 			"Tilldru-Dalaran", -- [2]
@@ -756,7 +493,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Tilldru|r",
 			[51] = 1605644169,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
+		}, -- [22]
 		{
 			"wasnt there supposed to be zombie invasions", -- [1]
 			"Bellaty-Dalaran", -- [2]
@@ -778,7 +515,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Bellaty|r",
 			[51] = 1605660835,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
+		}, -- [23]
 		{
 			"Go to Stormwind then", -- [1]
 			"Mavesayile-Dalaran", -- [2]
@@ -800,7 +537,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Mavesayile|r",
 			[51] = 1605660882,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
+		}, -- [24]
 		{
 			"|cffffff00Lion's Pride Inn is under attack!|r", -- [1]
 			"", -- [2]
@@ -822,7 +559,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1605660887,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
+		}, -- [25]
 		{
 			"beat me like a red headed stepchild", -- [1]
 			"Mastianiel-Dalaran", -- [2]
@@ -844,7 +581,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Mastianiel|r",
 			[51] = 1605660888,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
+		}, -- [26]
 		{
 			"thanks again tiron", -- [1]
 			"Mastianiel-Dalaran", -- [2]
@@ -866,7 +603,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Mastianiel|r",
 			[51] = 1605660909,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
+		}, -- [27]
 		{
 			"|cffffff00Greenwarden's Grove is under attack!|r", -- [1]
 			"", -- [2]
@@ -888,7 +625,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1605661101,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
+		}, -- [28]
 		{
 			"|cffffff00Wetlands is under attack!|r", -- [1]
 			"", -- [2]
@@ -910,7 +647,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1605661111,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
+		}, -- [29]
 		{
 			"Lust Detector: Kycilia Casted a haste spell on party |cff71d5ff|Hspell:272678:0|h[Primal Rage]|h|r!", -- [1]
 			"Kycilia-Korgath", -- [2]
@@ -932,7 +669,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Kycilia-Korgath|r",
 			[51] = 1605661308,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [42]
+		}, -- [30]
 		{
 			"most trollish event ever lol", -- [1]
 			"Nepharis-Quel'dorei", -- [2]
@@ -954,7 +691,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Nepharis-Quel'dorei|r",
 			[51] = 1605661428,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [31]
 		{
 			"I got 0 loot, fuck this game", -- [1]
 			"Strelitzia-Firetree", -- [2]
@@ -976,7 +713,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cStrelitzia-Firetree|r",
 			[51] = 1605661440,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [32]
 		{
 			"0 loot due to being zombies it would seem", -- [1]
 			"Maxxis-BurningBlade", -- [2]
@@ -998,7 +735,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Maxxis-BurningBlade|r",
 			[51] = 1605661455,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [33]
 		{
 			"whoever did that is a troll.", -- [1]
 			"Strelitzia-Firetree", -- [2]
@@ -1020,7 +757,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cStrelitzia-Firetree|r",
 			[51] = 1605661475,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [34]
 		{
 			"shocked they havent fixed it", -- [1]
 			"Strelitzia-Firetree", -- [2]
@@ -1042,7 +779,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cStrelitzia-Firetree|r",
 			[51] = 1605661479,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [35]
 		{
 			"|cffffff00Crown Guard Tower is under attack!|r", -- [1]
 			"", -- [2]
@@ -1064,7 +801,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1605661487,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [36]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-115653-3683-89997869|h[Guild: Pride of Lordaeron]|h|r is recruiting new and returning players. PST for more info!", -- [1]
 			"Jalanessa-Dalaran", -- [2]
@@ -1086,7 +823,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Jalanessa|r",
 			[51] = 1605661505,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [37]
 		{
 			"zombie B!tches at stormshield mfers", -- [1]
 			"Kaiplum-Dalaran", -- [2]
@@ -1108,7 +845,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Kaiplum|r",
 			[51] = 1605661553,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [38]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-92457-3683-88035868|h[Guild: Last Phoenix Rising]|h|r is recruiting! We are looking for Melee DPS for Heroic/Mythic raiding. We are a group of friends & looking to add to that. We are extremely active doing M+, transmog runs, mount runs & current content! Come join us!", -- [1]
 			"Nanö-Dalaran", -- [2]
@@ -1130,7 +867,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeNanö|r",
 			[51] = 1605661589,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [39]
 		{
 			" |cffffd100|HclubFinder:ClubFinder-1-2126-3683-74487865|h[Guild: Enduring Tides]|h|r  is an easy-going teaching guild looking for new or returning players on Dalaran. We'd be happy to help you with questing; FAQs on all classes as well as mythic keystones all the way to raiding. PM if interested.", -- [1]
 			"Villäin-Dalaran", -- [2]
@@ -1152,7 +889,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Villäin|r",
 			[51] = 1605661594,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [40]
 		{
 			"DARK!!", -- [1]
 			"Flamestart-Dalaran", -- [2]
@@ -1174,7 +911,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Flamestart|r",
 			[51] = 1605661607,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [41]
 		{
 			"wts|cffa335ee|Hitem:52200::::::::50:577:::::::|h[Reins of the Crimson Deathcharger]|h|rCheaper than AH! pst", -- [1]
 			"Naethoris-Dalaran", -- [2]
@@ -1196,7 +933,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Naethoris|r",
 			[51] = 1605661632,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [42]
 		{
 			"the falric kills you so.......the turnip", -- [1]
 			"Rhyteous-Dalaran", -- [2]
@@ -1218,7 +955,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Rhyteous|r",
 			[51] = 1605662005,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [43]
 		{
 			"What rare is up?", -- [1]
 			"Alliteration-Dalaran", -- [2]
@@ -1240,7 +977,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Alliteration|r",
 			[51] = 1605662014,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [44]
 		{
 			"Just hopped on", -- [1]
 			"Alliteration-Dalaran", -- [2]
@@ -1262,7 +999,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Alliteration|r",
 			[51] = 1605662018,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [45]
 		{
 			"falric", -- [1]
 			"Xuthus-Dalaran", -- [2]
@@ -1284,7 +1021,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Xuthus|r",
 			[51] = 1605662022,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
+		}, -- [46]
 		{
 			"about to be attackable", -- [1]
 			"Xuthus-Dalaran", -- [2]
@@ -1306,7 +1043,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Xuthus|r",
 			[51] = 1605662026,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [47]
 		{
 			"|cffffff00|Hworldmap:118:8010:6120|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r The Prophet Tharon'ja  in 0h 07m", -- [1]
 			"Threesheepio-Dalaran", -- [2]
@@ -1328,7 +1065,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaThreesheepio|r",
 			[51] = 1605662088,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [48]
 		{
 			"The Prophet Tharon'ja |cffffff00|Hworldmap:118:7930:6060|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Suspend-Dalaran", -- [2]
@@ -1350,7 +1087,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Suspend|r",
 			[51] = 1605662118,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [49]
 		{
 			"How often can you receive loot from the \"rare spawn\" bosses?", -- [1]
 			"Shandalar-Dalaran", -- [2]
@@ -1372,7 +1109,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Shandalar|r",
 			[51] = 1605714930,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [50]
 		{
 			"however times you can get to them in a day I think", -- [1]
 			"Alunel-Dalaran", -- [2]
@@ -1394,7 +1131,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaAlunel|r",
 			[51] = 1605715181,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [51]
 		{
 			"Really? There's no limit?", -- [1]
 			"Shandalar-Dalaran", -- [2]
@@ -1416,7 +1153,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Shandalar|r",
 			[51] = 1605715226,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [52]
 		{
 			"Not that I know of", -- [1]
 			"Alunel-Dalaran", -- [2]
@@ -1438,7 +1175,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaAlunel|r",
 			[51] = 1605715235,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [53]
 		{
 			"Awesome thank you very much", -- [1]
 			"Shandalar-Dalaran", -- [2]
@@ -1460,7 +1197,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Shandalar|r",
 			[51] = 1605715244,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [54]
 		{
 			"Your welcome :)", -- [1]
 			"Alunel-Dalaran", -- [2]
@@ -1482,7 +1219,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaAlunel|r",
 			[51] = 1605715251,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [55]
 		{
 			"|cffffff00|Hworldmap:118:5110:7850|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r Lady Deathwhisper  in 0h 04m", -- [1]
 			"Alunel-Dalaran", -- [2]
@@ -1504,7 +1241,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaAlunel|r",
 			[51] = 1605716247,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [56]
 		{
 			"anyone got the current pin plz and thxs", -- [1]
 			"Nadav-Dalaran", -- [2]
@@ -1526,7 +1263,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaNadav|r",
 			[51] = 1605716309,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [57]
 		{
 			"|cffffff00|Hworldmap:118:5110:7849|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Sovietuwu-Dalaran", -- [2]
@@ -1548,7 +1285,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edSovietuwu|r",
 			[51] = 1605716340,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [58]
 		{
 			"did they amp up spawn times?", -- [1]
 			"Highperionn-Dalaran", -- [2]
@@ -1570,7 +1307,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cHighperionn|r",
 			[51] = 1605716527,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [59]
 		{
 			"yeah", -- [1]
 			"Eirenviel-Dalaran", -- [2]
@@ -1592,7 +1329,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Eirenviel|r",
 			[51] = 1605716532,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [60]
 		{
 			"nice", -- [1]
 			"Highperionn-Dalaran", -- [2]
@@ -1614,7 +1351,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cHighperionn|r",
 			[51] = 1605716538,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [61]
 		{
 			"was kinda odd to have a cycle of kill, wait 20, repeat\\", -- [1]
 			"Highperionn-Dalaran", -- [2]
@@ -1636,7 +1373,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cHighperionn|r",
 			[51] = 1605716556,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [62]
 		{
 			"rather kill and not wait so long or not bother", -- [1]
 			"Highperionn-Dalaran", -- [2]
@@ -1658,7 +1395,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cHighperionn|r",
 			[51] = 1605716570,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [63]
 		{
 			"who's up?", -- [1]
 			"Jigokuchou-Dalaran", -- [2]
@@ -1680,7 +1417,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Jigokuchou|r",
 			[51] = 1605716857,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [64]
 		{
 			"|cffffff00|Hworldmap:118:5762:5593|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Galmora-Dalaran", -- [2]
@@ -1702,7 +1439,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaGalmora|r",
 			[51] = 1605716877,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [65]
 		{
 			"thx", -- [1]
 			"Jigokuchou-Dalaran", -- [2]
@@ -1724,7 +1461,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Jigokuchou|r",
 			[51] = 1605716897,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [66]
 		{
 			"np", -- [1]
 			"Galmora-Dalaran", -- [2]
@@ -1746,7 +1483,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaGalmora|r",
 			[51] = 1605716902,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [67]
 		{
 			"how do you know before the enemy is announced in chat? are they on a cycle?", -- [1]
 			"Ravokax-Dalaran", -- [2]
@@ -1768,7 +1505,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Ravokax|r",
 			[51] = 1605717085,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [68]
 		{
 			"on a cycle", -- [1]
 			"Alunel-Dalaran", -- [2]
@@ -1790,7 +1527,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaAlunel|r",
 			[51] = 1605717092,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [69]
 		{
 			"addon", -- [1]
 			"Alunel-Dalaran", -- [2]
@@ -1812,7 +1549,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaAlunel|r",
 			[51] = 1605717095,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [70]
 		{
 			"tomcats tour icecrown ", -- [1]
 			"Alunel-Dalaran", -- [2]
@@ -1834,7 +1571,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaAlunel|r",
 			[51] = 1605717139,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [71]
 		{
 			"oh cool, thank you", -- [1]
 			"Ravokax-Dalaran", -- [2]
@@ -1856,7 +1593,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Ravokax|r",
 			[51] = 1605717145,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [72]
 		{
 			"you're welcome ", -- [1]
 			"Alunel-Dalaran", -- [2]
@@ -1878,7 +1615,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaAlunel|r",
 			[51] = 1605717157,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [73]
 		{
 			"is this event ending on shadowlands release day, november 23rd?", -- [1]
 			"Ravokax-Dalaran", -- [2]
@@ -1900,7 +1637,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Ravokax|r",
 			[51] = 1605718365,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [74]
 		{
 			"yup", -- [1]
 			"Alunel-Dalaran", -- [2]
@@ -1922,7 +1659,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaAlunel|r",
 			[51] = 1605718374,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [75]
 		{
 			"dang", -- [1]
 			"Ravokax-Dalaran", -- [2]
@@ -1944,7 +1681,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Ravokax|r",
 			[51] = 1605718377,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [76]
 		{
 			"hence 'pre patch' event :P", -- [1]
 			"Alunel-Dalaran", -- [2]
@@ -1966,7 +1703,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaAlunel|r",
 			[51] = 1605718388,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [77]
 		{
 			"does anyone know if nathanos drops any shields or just weapons?", -- [1]
 			"Iraelaa-Dalaran", -- [2]
@@ -1988,7 +1725,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcIraelaa|r",
 			[51] = 1605718393,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [78]
 		{
 			":'(", -- [1]
 			"Ravokax-Dalaran", -- [2]
@@ -2010,7 +1747,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Ravokax|r",
 			[51] = 1605718396,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [79]
 		{
 			"May the bag gods smile upon us", -- [1]
 			"Alunel-Dalaran", -- [2]
@@ -2032,7 +1769,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaAlunel|r",
 			[51] = 1605719569,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [80]
 		{
 			"5 mins until spawn |cffffff00|Hworldmap:118:6470:2144|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Alaurielis-Dalaran", -- [2]
@@ -2054,7 +1791,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaAlaurielis|r",
 			[51] = 1605730608,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [81]
 		{
 			"WTS |cffa335ee|Hitem:156798::::::::50:581:::::::|h[The Hivemind]|h|r! Secret Mount! 20 Minute Run! BE THE BRAIN SQUID TODAY! Bring a friend and get a discount!", -- [1]
 			"Saktwo-Dalaran", -- [2]
@@ -2076,7 +1813,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaSaktwo|r",
 			[51] = 1605730780,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [82]
 		{
 			"Rage - thnx", -- [1]
 			"Ryahlynn-Dalaran", -- [2]
@@ -2098,7 +1835,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Ryahlynn|r",
 			[51] = 1605730781,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [83]
 		{
 			"|cff0070dd|Hbattlepet:1802:1:3:158:11:11:0000000000000000:66155|h[Fetid Waveling]|h|r Selling cool pet!! CHEAP", -- [1]
 			"Solizmir-Dalaran", -- [2]
@@ -2120,7 +1857,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Solizmir|r",
 			[51] = 1605730792,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [84]
 		{
 			"|cff0070dd|Hbattlepet:1802:1:3:158:11:11:0000000000000000:66155|h[Fetid Waveling]|h|r FOR SALE PST OFFER", -- [1]
 			"Solizmir-Dalaran", -- [2]
@@ -2142,7 +1879,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Solizmir|r",
 			[51] = 1605730971,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [85]
 		{
 			"WTS|cffa335ee|Hitem:168830::::::::50:250:::::::|h[Aerial Unit R-21/X]|h|r! Hardmode Mechagon Mount! Fly the Zapper Today!", -- [1]
 			"Saktwo-Dalaran", -- [2]
@@ -2164,7 +1901,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaSaktwo|r",
 			[51] = 1605731006,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [86]
 		{
 			"WTS|cff71d5ff|Hspell:215159:0|h[Long-Forgotten Hippogryph]|h|rNice looking MOUNT! Get yours today! pst", -- [1]
 			"Naethoris-Dalaran", -- [2]
@@ -2185,6 +1922,270 @@ ElvCharacterDB = {
 			true, -- [17]
 			[52] = "|cffa22fc8Naethoris|r",
 			[51] = 1605731039,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [87]
+		{
+			"Like 100 you think?", -- [1]
+			"Chrump-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Chrump-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1837, -- [11]
+			"Player-3683-0C5F502D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8687edChrump|r",
+			[51] = 1606108738,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [88]
+		{
+			"Wts |cff0070dd|Hbattlepet:264:1:3:155:12:10:0000000000000000:34262|h[Crawling Claw]|h|r110k OBO pst me 40k+ cheaper than AH! save some money on a dope pet!", -- [1]
+			"Kinkylock-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Kinkylock-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1838, -- [11]
+			"Player-3683-0CB9084C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8687edKinkylock|r",
+			[51] = 1606108749,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [89]
+		{
+			"wts|cffa335ee|Hitem:163574::::::::50:577:::::::|h[Chewed-On Reins of the Terrified Pack Mule]|h|rCheaper than AH! pst", -- [1]
+			"Naethoris-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Naethoris-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1839, -- [11]
+			"Player-3683-0BC79A18", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Naethoris|r",
+			[51] = 1606108780,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [90]
+		{
+			"maybe, i know i didn't replace much off the bat when i did beta", -- [1]
+			"Hydrolase-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Hydrolase-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1840, -- [11]
+			"Player-3683-0A1C3C41", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Hydrolase|r",
+			[51] = 1606108788,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [91]
+		{
+			"Hello! |cffffd100|HclubFinder:ClubFinder-1-193316-3683-94294873|h[Guild: Backpacks]|h|r 12/12H is looking to stitch together some raiders for shadowlands progression! To apply send a message on discord to BackpacksGuild#9755 for a short interview!", -- [1]
+			"Cmiaw-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Cmiaw-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1841, -- [11]
+			"Player-3683-0C63816B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcCmiaw|r",
+			[51] = 1606108795,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [92]
+		{
+			"Everyone will want to buy Missives in SL|cffffffff|Hitem:173160::::::::50:577::13:1:3524::::|h[Missive of Haste]|h|r, Inscription will sell well", -- [1]
+			"Apheleiå-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Apheleiå-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1842, -- [11]
+			"Player-3683-0B498203", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Apheleiå|r",
+			[51] = 1606108798,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [93]
+		{
+			"WTS M+15 125k ||M+14 115k ||M+12 99k ||M+10 69K||<||BUY 2 GET ARMOR STACK FREE||> Mythic Keys 10-20: M+20 TIMED+KEY 553k ||\"KSM DEAL\"||\"SPECIAL DEAL  FOR 3 RUN AND DISCOUNT\"||TAZAVESH||TORGHAST 1-12||ONLY GOLD||<Huokan Community>", -- [1]
+			"Minervakl-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Minervakl-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1655, -- [11]
+			"Player-3683-0D2C5E51", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Minervakl|r",
+			[51] = 1634610730,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [94]
+		{
+			"WTS RARE mounts |cffa335ee|Hitem:138387::::::::10:1449:::::::::|h[Ratstallion]|h|r |cffa335ee|Hitem:138258::::::::10:1449:::::::::|h[Reins of the Long-Forgotten Hippogryph]|h|r |cffa335ee|Hitem:166433::::::::10:1449:::::::::|h[Frightened Kodo]|h|rGOLD ONLY!", -- [1]
+			"Salasc-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Salasc-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1657, -- [11]
+			"Player-3683-0D17F308", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaSalasc|r",
+			[51] = 1634610732,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [95]
+		{
+			"Mythic+(12-15) for 233+items with 246ilvl+ weekly chest, also do Heroic SOD 10/10 with items guaranteed & Mythic SOD 1-5bosses, Carry Now!!", -- [1]
+			"Naisolah-Dalaran", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Naisolah-Dalaran", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			691, -- [11]
+			"Player-3683-0D2AFFD6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Naisolah|r",
+			[51] = 1634702949,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			"I need help to create my guild for my alts! im willing to pay gold for signature! i will give half upfront with the signature and the other half at the same time i will kick you out the guild. whisper to me for more info!", -- [1]
+			"Thanasia-Dalaran", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Thanasia-Dalaran", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			600, -- [11]
+			"Player-3683-0D224771", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe97Thanasia|r",
+			[51] = 1634940088,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"sounds liek you need to stay away from craigs list lol ", -- [1]
+			"Shogan-Azuremyst", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Shogan-Azuremyst", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			604, -- [11]
+			"Player-160-0B6397A7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Shogan-Azuremyst|r",
+			[51] = 1634940102,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			" if your bf or gf is 18 inches taller than you - you won't be kissing while you have sex", -- [1]
+			"Debbiedoobie-AeriePeak", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Debbiedoobie-AeriePeak", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			605, -- [11]
+			"Player-1426-08248C61", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8687edDebbiedoobie-AeriePeak|r",
+			[51] = 1634940106,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},

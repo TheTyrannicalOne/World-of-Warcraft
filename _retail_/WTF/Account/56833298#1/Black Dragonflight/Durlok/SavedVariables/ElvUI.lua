@@ -1,87 +1,6 @@
 
 ElvCharacterDB = {
-	["ConvertKeybindings"] = true,
-	["CliqueDatatext"] = {
-	},
-	["ChatEditHistory"] = {
-		"/1 ok", -- [1]
-		"/sleep", -- [2]
-		"/1 how long before patchwork is attackable?", -- [3]
-		"/skada toggle", -- [4]
-		"/1 ok ty omw", -- [5]
-		"/allthethings", -- [6]
-		"/cw Agaymar-BlackDragonflight top wall above portal room", -- [7]
-		"/dance", -- [8]
-		"/train", -- [9]
-		"/invite Lilanda-blackhand", -- [10]
-	},
 	["ChatHistoryLog"] = {
-		{
-			"saints among men", -- [1]
-			"Altid-Gul'dan", -- [2]
-			"", -- [3]
-			"1. General - Icecrown", -- [4]
-			"Altid-Gul'dan", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Icecrown", -- [9]
-			0, -- [10]
-			950, -- [11]
-			"Player-96-0CC12760", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Altid-Gul'dan|r",
-			[51] = 1605595783,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
-		{
-			"no one is born cool", -- [1]
-			"Sabitha-BlackDragonflight", -- [2]
-			"", -- [3]
-			"1. General - Icecrown", -- [4]
-			"Sabitha-BlackDragonflight", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Icecrown", -- [9]
-			0, -- [10]
-			951, -- [11]
-			"Player-96-0CBC7795", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Sabitha|r",
-			[51] = 1605595797,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
-		{
-			"lol", -- [1]
-			"Altid-Gul'dan", -- [2]
-			"", -- [3]
-			"1. General - Icecrown", -- [4]
-			"Altid-Gul'dan", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Icecrown", -- [9]
-			0, -- [10]
-			952, -- [11]
-			"Player-96-0CC12760", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Altid-Gul'dan|r",
-			[51] = 1605595809,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
 		{
 			"i think this is the first time ive been here and im not surrounded by alliance", -- [1]
 			"Noct-Skullcrusher", -- [2]
@@ -103,7 +22,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Noct-Skullcrusher|r",
 			[51] = 1605595813,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
+		}, -- [1]
 		{
 			"if youre grouped for the rares can you trade the items?", -- [1]
 			"Noct-Skullcrusher", -- [2]
@@ -125,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Noct-Skullcrusher|r",
 			[51] = 1605595860,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
+		}, -- [2]
 		{
 			"i would think so but I am not sure", -- [1]
 			"Taylisera-Velen", -- [2]
@@ -147,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Taylisera-Velen|r",
 			[51] = 1605595878,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
+		}, -- [3]
 		{
 			"nope sadly", -- [1]
 			"Sour-BlackDragonflight", -- [2]
@@ -169,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Sour|r",
 			[51] = 1605595884,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
+		}, -- [4]
 		{
 			"nah", -- [1]
 			"Altid-Gul'dan", -- [2]
@@ -191,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Altid-Gul'dan|r",
 			[51] = 1605595889,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
+		}, -- [5]
 		{
 			"figured", -- [1]
 			"Noct-Skullcrusher", -- [2]
@@ -213,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Noct-Skullcrusher|r",
 			[51] = 1605595889,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
+		}, -- [6]
 		{
 			"so little i need would be nice to pass the love around as it drops", -- [1]
 			"Noct-Skullcrusher", -- [2]
@@ -235,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Noct-Skullcrusher|r",
 			[51] = 1605595912,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
+		}, -- [7]
 		{
 			"is there an addon that helps keep track of the rares?", -- [1]
 			"Grompally-Skullcrusher", -- [2]
@@ -257,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Grompally-Skullcrusher|r",
 			[51] = 1605595939,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
+		}, -- [8]
 		{
 			"i just hit 50 2 hours ago, i need anything i can get lol", -- [1]
 			"Taylisera-Velen", -- [2]
@@ -279,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Taylisera-Velen|r",
 			[51] = 1605595953,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
+		}, -- [9]
 		{
 			"rarescanner", -- [1]
 			"Noct-Skullcrusher", -- [2]
@@ -301,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Noct-Skullcrusher|r",
 			[51] = 1605595955,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
+		}, -- [10]
 		{
 			"ty", -- [1]
 			"Grompally-Skullcrusher", -- [2]
@@ -323,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Grompally-Skullcrusher|r",
 			[51] = 1605595964,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
+		}, -- [11]
 		{
 			"yeah i hear ya Tay id hook people up if i could", -- [1]
 			"Noct-Skullcrusher", -- [2]
@@ -345,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Noct-Skullcrusher|r",
 			[51] = 1605595977,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
+		}, -- [12]
 		{
 			"i need to replace a couple 100 blues and thats it ", -- [1]
 			"Noct-Skullcrusher", -- [2]
@@ -367,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Noct-Skullcrusher|r",
 			[51] = 1605596011,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
+		}, -- [13]
 		{
 			"lmao is that a futurama reference?", -- [1]
 			"Sour-BlackDragonflight", -- [2]
@@ -389,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Sour|r",
 			[51] = 1605596046,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
+		}, -- [14]
 		{
 			"yes", -- [1]
 			"Taylisera-Velen", -- [2]
@@ -411,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Taylisera-Velen|r",
 			[51] = 1605596063,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
+		}, -- [15]
 		{
 			"wonderful xD", -- [1]
 			"Sour-BlackDragonflight", -- [2]
@@ -433,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Sour|r",
 			[51] = 1605596077,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
+		}, -- [16]
 		{
 			"|cffa335ee|Hitem:183650::::::::50:73:::2:1482:4786:1:28:1401:::|h[Miniscule Abomination in a Jar]|h|r Still dose not work?", -- [1]
 			"Landusk-Eonar", -- [2]
@@ -455,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLandusk-Eonar|r",
 			[51] = 1605596120,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
+		}, -- [17]
 		{
 			"now if only they would have the black knight make a few monty python referances it would be great lol", -- [1]
 			"Taylisera-Velen", -- [2]
@@ -477,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Taylisera-Velen|r",
 			[51] = 1605596129,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
+		}, -- [18]
 		{
 			"nah ", -- [1]
 			"Tex-BlackDragonflight", -- [2]
@@ -499,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Tex|r",
 			[51] = 1605596130,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
+		}, -- [19]
 		{
 			"dnt think", -- [1]
 			"Tex-BlackDragonflight", -- [2]
@@ -521,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Tex|r",
 			[51] = 1605596131,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
+		}, -- [20]
 		{
 			"good it mine now owo", -- [1]
 			"Landusk-Eonar", -- [2]
@@ -543,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLandusk-Eonar|r",
 			[51] = 1605596138,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
+		}, -- [21]
 		{
 			"well now i have 2 |cffa335ee|Hitem:183650::::::::50:577:::2:1482:4786:1:28:1401:::|h[Miniscule Abomination in a Jar]|h|r", -- [1]
 			"Noct-Skullcrusher", -- [2]
@@ -565,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Noct-Skullcrusher|r",
 			[51] = 1605596163,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
+		}, -- [22]
 		{
 			"lol tis only a flesh wound", -- [1]
 			"Altid-Gul'dan", -- [2]
@@ -587,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Altid-Gul'dan|r",
 			[51] = 1605596181,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
+		}, -- [23]
 		{
 			"|cffffff00|Hworldmap:118:5860:7250|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r Forgemaster Garfrost  in 0h 07m", -- [1]
 			"Steelheart-BlackDragonflight", -- [2]
@@ -609,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Steelheart|r",
 			[51] = 1605672284,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
+		}, -- [24]
 		{
 			"anything new for the pre-expansion event in Org or anywhere else?", -- [1]
 			"Rekluce-Zuluhed", -- [2]
@@ -631,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cRekluce-Zuluhed|r",
 			[51] = 1605672501,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
+		}, -- [25]
 		{
 			"not that I am aware of", -- [1]
 			"Steelheart-BlackDragonflight", -- [2]
@@ -653,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Steelheart|r",
 			[51] = 1605672533,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
+		}, -- [26]
 		{
 			"Did the patch notes say anything about the drop rate?", -- [1]
 			"Leatherdaddy-Ursin", -- [2]
@@ -675,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Leatherdaddy-Ursin|r",
 			[51] = 1605672544,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
+		}, -- [27]
 		{
 			"Drop rates did not increase.  Only spawn rate from yesterday", -- [1]
 			"Darkhuntard-BlackDragonflight", -- [2]
@@ -697,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Darkhuntard|r",
 			[51] = 1605672560,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
+		}, -- [28]
 		{
 			"well, the zombie thing in Org... but I'm just staying out of that cluster", -- [1]
 			"Steelheart-BlackDragonflight", -- [2]
@@ -719,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Steelheart|r",
 			[51] = 1605672583,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
+		}, -- [29]
 		{
 			"I got oneshot leveling another toon yesterday from a zombie", -- [1]
 			"Darkhuntard-BlackDragonflight", -- [2]
@@ -741,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Darkhuntard|r",
 			[51] = 1605672602,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
+		}, -- [30]
 		{
 			"They didn't decrease either?  Seemed like when I first started this I was getting a purple every other boss.  I only do the bosses that can drop loot I need, but it seems like it's every 5-10 bosses now.", -- [1]
 			"Leatherdaddy-Ursin", -- [2]
@@ -763,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Leatherdaddy-Ursin|r",
 			[51] = 1605672614,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
+		}, -- [31]
 		{
 			"just depends on your rng at time ive gotten several drops in a row then none for a while", -- [1]
 			"Nicodimas-Eonar", -- [2]
@@ -785,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Nicodimas-Eonar|r",
 			[51] = 1605672660,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
+		}, -- [32]
 		{
 			"just logged in, what's the next spawn?", -- [1]
 			"Iwoulddome-BlackDragonflight", -- [2]
@@ -807,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Iwoulddome|r",
 			[51] = 1605672669,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
+		}, -- [33]
 		{
 			"You must have had good rolls for a while.  I've done 5 toons already and majority have received like loot 25% at best", -- [1]
 			"Darkhuntard-BlackDragonflight", -- [2]
@@ -829,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Darkhuntard|r",
 			[51] = 1605672678,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
+		}, -- [34]
 		{
 			"|cffffff00|Hworldmap:118:5860:7250|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r Forgemaster Garfrost  in 0h 00m", -- [1]
 			"Steelheart-BlackDragonflight", -- [2]
@@ -851,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Steelheart|r",
 			[51] = 1605672679,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
+		}, -- [35]
 		{
 			"thank you", -- [1]
 			"Iwoulddome-BlackDragonflight", -- [2]
@@ -873,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Iwoulddome|r",
 			[51] = 1605672699,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
+		}, -- [36]
 		{
 			"Okay, I see.  Thanks for the insight.", -- [1]
 			"Leatherdaddy-Ursin", -- [2]
@@ -895,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Leatherdaddy-Ursin|r",
 			[51] = 1605672792,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
+		}, -- [37]
 		{
 			"Good news to me, my luck can change.", -- [1]
 			"Leatherdaddy-Ursin", -- [2]
@@ -917,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Leatherdaddy-Ursin|r",
 			[51] = 1605672806,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
+		}, -- [38]
 		{
 			"Anyone bugging really bad today?  Cant get the Map Pin location to work at all. ", -- [1]
 			"Miraven-Velen", -- [2]
@@ -939,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Miraven-Velen|r",
 			[51] = 1605672863,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
+		}, -- [39]
 		{
 			"|cffffff00|Hworldmap:118:5820:8340|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r Marwyn  in 0h 05m", -- [1]
 			"Steelheart-BlackDragonflight", -- [2]
@@ -961,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Steelheart|r",
 			[51] = 1605672979,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [40]
 		{
 			"Are the capital city invasions on a timer?", -- [1]
 			"Robarath-Zuluhed", -- [2]
@@ -983,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Robarath-Zuluhed|r",
 			[51] = 1605673106,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [41]
 		{
 			"i think they're constant until the launch", -- [1]
 			"Kagemegami-Velen", -- [2]
@@ -1005,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Kagemegami-Velen|r",
 			[51] = 1605673169,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [42]
 		{
 			"|cffffff00|Hworldmap:118:4420:4910|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r Elder Nadox  in 1h 10m", -- [1]
 			"Steelheart-BlackDragonflight", -- [2]
@@ -1027,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Steelheart|r",
 			[51] = 1605673285,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [43]
 		{
 			"Woops", -- [1]
 			"Steelheart-BlackDragonflight", -- [2]
@@ -1049,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Steelheart|r",
 			[51] = 1605673290,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [44]
 		{
 			"|cffffff00|Hworldmap:118:5020:8790|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r Falric  in 0h 07m", -- [1]
 			"Steelheart-BlackDragonflight", -- [2]
@@ -1071,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Steelheart|r",
 			[51] = 1605673487,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [45]
 		{
 			"SL pvp is suppose to be awesome", -- [1]
 			"Eatfruitonly-Scilla", -- [2]
@@ -1093,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Eatfruitonly-Scilla|r",
 			[51] = 1606107232,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [46]
 		{
 			"why?", -- [1]
 			"Holdador-Zuluhed", -- [2]
@@ -1115,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Holdador-Zuluhed|r",
 			[51] = 1606107243,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [47]
 		{
 			"it will be. cant fucking wait ", -- [1]
 			"Tiberium-Gul'dan", -- [2]
@@ -1137,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Tiberium-Gul'dan|r",
 			[51] = 1606107250,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [48]
 		{
 			"TRUMP 2020", -- [1]
 			"Suntotem-BlackDragonflight", -- [2]
@@ -1159,7 +1078,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Suntotem|r",
 			[51] = 1606107267,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [49]
 		{
 			"sure will - I get to kill all those aweful horde players", -- [1]
 			"Lanthos-Zuluhed", -- [2]
@@ -1181,7 +1100,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Lanthos-Zuluhed|r",
 			[51] = 1606107270,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [50]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-194993-96-97986971|h[Guild: Spaceballs the Guild]|h|r is recruiting anyone and everyone.  We are a new guild looking to grow into a top tier PvE and PvP guild.  If you are looking for a fresh start or are just learning the game, join today!!", -- [1]
 			"Nfidelcastro-Scilla", -- [2]
@@ -1203,7 +1122,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeNfidelcastro-Scilla|r",
 			[51] = 1606107275,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [51]
 		{
 			"pause lanthos", -- [1]
 			"Tiberium-Gul'dan", -- [2]
@@ -1225,7 +1144,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Tiberium-Gul'dan|r",
 			[51] = 1606107287,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [52]
 		{
 			"<Palm Springs> We are a queer and inclusive raiding guild, looking for more raiders to push into Castle Nathria come Shadowlands! We've got a great group of active players, a guild discord, and experienced raiders. Come game with us! <3", -- [1]
 			"Lovejuice-Zuluhed", -- [2]
@@ -1247,7 +1166,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcLovejuice-Zuluhed|r",
 			[51] = 1606107289,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [53]
 		{
 			"<Repressed Rage> is a casual, friendly guild.  We have been around since before the Dark Portal opened and are  currently seeking more members.  Players of all levels and skill are welcome.  PST for an invite or more info.", -- [1]
 			"Wraitha-Eonar", -- [2]
@@ -1269,7 +1188,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edWraitha-Eonar|r",
 			[51] = 1606107314,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [54]
 		{
 			"LF> a guild", -- [1]
 			"Chiraq-BlackDragonflight", -- [2]
@@ -1291,7 +1210,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Chiraq|r",
 			[51] = 1606107346,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
+		}, -- [55]
 		{
 			"<Palm Springs> We are a queer and inclusive raiding guild, looking for more raiders to push into Castle Nathria come Shadowlands! We've got a great group of active players, a guild discord, and experienced raiders. Come game with us! <3", -- [1]
 			"Lovejuice-Zuluhed", -- [2]
@@ -1313,7 +1232,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcLovejuice-Zuluhed|r",
 			[51] = 1606107384,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [56]
 		{
 			"folks of troll in General chat. blow up the chats please, dont let them guild inviting crap ads, thanks you for the horde", -- [1]
 			"Tiberium-Gul'dan", -- [2]
@@ -1335,7 +1254,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Tiberium-Gul'dan|r",
 			[51] = 1606107391,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [57]
 		{
 			"I have 15 lvl 50s on Argent Dawn - I have 1 lvl 50 horde toon on this realm (Resto Druid) - LF guild to join that needs an experience Raid Healer/PVP Healer", -- [1]
 			"Lanthos-Zuluhed", -- [2]
@@ -1357,7 +1276,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Lanthos-Zuluhed|r",
 			[51] = 1606107406,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [58]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-194993-96-97986971|h[Guild: Spaceballs the Guild]|h|r is recruiting anyone and everyone.  We are a new guild looking to grow into a top tier PvE and PvP guild.  If you are looking for a fresh start or are just learning the game, join today!!", -- [1]
 			"Nfidelcastro-Scilla", -- [2]
@@ -1379,7 +1298,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeNfidelcastro-Scilla|r",
 			[51] = 1606107422,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [59]
 		{
 			"I tried to join but they were busy combing the desert", -- [1]
 			"Anyankah-Scilla", -- [2]
@@ -1401,7 +1320,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Anyankah-Scilla|r",
 			[51] = 1606107449,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [60]
 		{
 			"they won't find shite there", -- [1]
 			"Quake-Andorhal", -- [2]
@@ -1423,7 +1342,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaQuake-Andorhal|r",
 			[51] = 1606107461,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [61]
 		{
 			"they didn't find Sh!t", -- [1]
 			"Anyankah-Scilla", -- [2]
@@ -1445,7 +1364,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Anyankah-Scilla|r",
 			[51] = 1606107468,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [62]
 		{
 			"@&!^, you beat me to it haha", -- [1]
 			"Anyankah-Scilla", -- [2]
@@ -1467,7 +1386,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Anyankah-Scilla|r",
 			[51] = 1606107488,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [63]
 		{
 			"that was probably the day we left Barf in charge of recruiting", -- [1]
 			"Nfidelcastro-Scilla", -- [2]
@@ -1489,7 +1408,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeNfidelcastro-Scilla|r",
 			[51] = 1606107553,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [64]
 		{
 			"LFW |cffffd000|Htrade:Player-96-0D0A2A81:7411:333|h[Enchantement]|h|r", -- [1]
 			"Bobedybop-BlackDragonflight", -- [2]
@@ -1511,7 +1430,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Bobedybop|r",
 			[51] = 1607984373,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [65]
 		{
 			"|cffffd000|Htrade:Player-96-0CC104DB:2018:164|h[Blacksmithing]|h|r lfw", -- [1]
 			"Grizzlÿbrew-Skullcrusher", -- [2]
@@ -1533,7 +1452,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Grizzlÿbrew-Skullcrusher|r",
 			[51] = 1607984394,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [66]
 		{
 			"wts|cff0070dd|Hitem:173087::::::::60:64::13:::::|h[Darkmoon Deck: Voracity]|h|r |cff0070dd|Hitem:173069::::::::60:64::13:::::|h[Darkmoon Deck: Putrescence]|h|r |cff0070dd|Hitem:173096::::::::60:64::13:::::|h[Darkmoon Deck: Indomitable]|h|r", -- [1]
 			"Bavmordah-BlackDragonflight", -- [2]
@@ -1555,7 +1474,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaBavmordah|r",
 			[51] = 1607984396,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [67]
 		{
 			"WTS |cffffffff|Hitem:173245::::::::60:62::63:1:3524::::|h[Grim-Veiled Hood]|h|r, Belt, Bracers, Cape, Mittens, and Pants 235 Rank 4! Priced to sell!", -- [1]
 			"Cast-Skullcrusher", -- [2]
@@ -1577,7 +1496,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaCast-Skullcrusher|r",
 			[51] = 1610401815,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [68]
 		{
 			"shammy is named Au ", -- [1]
 			"Accountant-BlackDragonflight", -- [2]
@@ -1599,7 +1518,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Accountant|r",
 			[51] = 1610658900,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [69]
 		{
 			"how often can i do dailies?", -- [1]
 			"Brostep-Skullcrusher", -- [2]
@@ -1621,7 +1540,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cBrostep-Skullcrusher|r",
 			[51] = 1610658902,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [70]
 		{
 			"yes", -- [1]
 			"Lükë-Zuluhed", -- [2]
@@ -1643,7 +1562,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLükë-Zuluhed|r",
 			[51] = 1610658925,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [71]
 		{
 			"daily", -- [1]
 			"Mëgan-Skullcrusher", -- [2]
@@ -1665,7 +1584,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cMëgan-Skullcrusher|r",
 			[51] = 1610658925,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [72]
 		{
 			"weekly", -- [1]
 			"Caillou-Skullcrusher", -- [2]
@@ -1687,7 +1606,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaCaillou-Skullcrusher|r",
 			[51] = 1610658925,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [73]
 		{
 			"Guess Brostep", -- [1]
 			"Tanari-BlackDragonflight", -- [2]
@@ -1709,7 +1628,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaTanari|r",
 			[51] = 1610658931,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [74]
 		{
 			"once per solar cycle", -- [1]
 			"Zulmok-BlackDragonflight", -- [2]
@@ -1731,7 +1650,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Zulmok|r",
 			[51] = 1610658941,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [75]
 		{
 			"lol", -- [1]
 			"Tanari-BlackDragonflight", -- [2]
@@ -1753,7 +1672,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaTanari|r",
 			[51] = 1610658947,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [76]
 		{
 			"holy hell... did people take a drink of Trump today", -- [1]
 			"Osamurph-BlackDragonflight", -- [2]
@@ -1775,7 +1694,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Osamurph|r",
 			[51] = 1610658964,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [77]
 		{
 			"Did you know women are 30% more likely to orgasm if their feet are warm?", -- [1]
 			"Hebodile-Skullcrusher", -- [2]
@@ -1797,7 +1716,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Hebodile-Skullcrusher|r",
 			[51] = 1610658974,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [78]
 		{
 			"but only when the planets allign and the pink zebra runs backwards", -- [1]
 			"Tanari-BlackDragonflight", -- [2]
@@ -1819,7 +1738,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaTanari|r",
 			[51] = 1610658989,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [79]
 		{
 			"LF Crafter |cffffffff|Hitem:172316::::::::60:102::64:2:6717:1507::::|h[Umbrahide Gauntlets]|h|r Rank 2  i have mats and will tips", -- [1]
 			"Pasundruid-BlackDragonflight", -- [2]
@@ -1841,7 +1760,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Pasundruid|r",
 			[51] = 1610659003,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [80]
 		{
 			"or if you know how to make a woman orgasm", -- [1]
 			"Skakar-Ursin", -- [2]
@@ -1863,7 +1782,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cSkakar-Ursin|r",
 			[51] = 1610659005,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [81]
 		{
 			"LF LW'er to craft rank 4 Boneshatter Waistguard, will tip friendship, please help me", -- [1]
 			"Killmame-Eonar", -- [2]
@@ -1885,7 +1804,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcKillmame-Eonar|r",
 			[51] = 1610659007,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [82]
 		{
 			"buddy my women are hot head to toe", -- [1]
 			"Osamurph-BlackDragonflight", -- [2]
@@ -1907,7 +1826,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Osamurph|r",
 			[51] = 1610659008,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [83]
 		{
 			"o.O NOTED! have her wear fuzzy socks during sex.. got it! thanks! ", -- [1]
 			"Warblades-Skullcrusher", -- [2]
@@ -1929,7 +1848,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Warblades-Skullcrusher|r",
 			[51] = 1610659042,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [84]
 		{
 			"flicken da bean?", -- [1]
 			"Worldmaker-BlackDragonflight", -- [2]
@@ -1951,7 +1870,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeWorldmaker|r",
 			[51] = 1610659056,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [85]
 		{
 			"WTS fuzzy socks", -- [1]
 			"Accountant-BlackDragonflight", -- [2]
@@ -1973,7 +1892,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Accountant|r",
 			[51] = 1610659057,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [86]
 		{
 			"ok Dave Ill take ya", -- [1]
 			"Osamurph-BlackDragonflight", -- [2]
@@ -1995,7 +1914,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Osamurph|r",
 			[51] = 1610659060,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [87]
 		{
 			"Did you know a person who hunts with a Beagle is known as a “Beagler.”?", -- [1]
 			"Hebodile-Skullcrusher", -- [2]
@@ -2017,7 +1936,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Hebodile-Skullcrusher|r",
 			[51] = 1610659073,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [88]
 		{
 			"SOMEONE GET TODD HOWARD ON THE PHONE AND ASK WHY WE'RE NOT GETTING ANY NEW CUSTOMIZATIONS IN SHADOWLANDS", -- [1]
 			"Luup-Skullcrusher", -- [2]
@@ -2039,7 +1958,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Luup-Skullcrusher|r",
 			[51] = 1613950796,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [89]
 		{
 			"WTB lovely charm braclets pst", -- [1]
 			"Gabagool-Andorhal", -- [2]
@@ -2061,7 +1980,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcGabagool-Andorhal|r",
 			[51] = 1613950824,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [90]
 		{
 			"they released 10 allied  races! time to do a ultimate race pack with 3  more added races to each faction .... just throwin that out there blizzzzzzzzzzz", -- [1]
 			"Vraukus-Ursin", -- [2]
@@ -2083,7 +2002,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cVraukus-Ursin|r",
 			[51] = 1613950971,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [91]
 		{
 			"[Guild: Pack Mentality]  is recruiting active  PVP and Raiders for RBGS and CN weekly Mythic Keystone pushes as well as Torghast.  pretty laid back n casual  weekend raiding n everyday pvp...    18+", -- [1]
 			"Blåckøut-Andorhal", -- [2]
@@ -2105,7 +2024,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeBlåckøut-Andorhal|r",
 			[51] = 1613951053,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [92]
 		{
 			"look at yo intro screen it goes to 5/3/1 ?", -- [1]
 			"Vraukus-Ursin", -- [2]
@@ -2127,7 +2046,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cVraukus-Ursin|r",
 			[51] = 1613951056,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [93]
 		{
 			"its 5 now on each faction ", -- [1]
 			"Vraukus-Ursin", -- [2]
@@ -2149,7 +2068,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cVraukus-Ursin|r",
 			[51] = 1613951076,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [94]
 		{
 			"WTB lovely charm braclets pst", -- [1]
 			"Gabagool-Andorhal", -- [2]
@@ -2171,7 +2090,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcGabagool-Andorhal|r",
 			[51] = 1613951077,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [95]
 		{
 			"Mythic+(12-15) & Shadowlands Keystone Master, also do Heroic Castle 10/10 for items guaranteed!! Carry Now!!", -- [1]
 			"Smilexiao-Gilneas", -- [2]
@@ -2193,6 +2112,87 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Smilexiao-Gilneas|r",
 			[51] = 1622901423,
 			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			"Thanks Ya'll  \\,,/  ^_^  \\,,/", -- [1]
+			"Nooksak-Gul'dan", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Nooksak-Gul'dan", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			166, -- [11]
+			"Player-96-0CA30D53", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3ec6eaNooksak-Gul'dan|r",
+			[51] = 1635002216,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [97]
+		{
+			"the quest |cffffff00|Hquest:29375:425|h[Clean Up in Undercity]|h|r is bugged-- anyone else having issues with it?", -- [1]
+			"Draxxin-Aggramar", -- [2]
+			"", -- [3]
+			"1. General - Tirisfal Glades", -- [4]
+			"Draxxin-Aggramar", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Tirisfal Glades", -- [9]
+			0, -- [10]
+			353, -- [11]
+			"Player-106-06B4461A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Draxxin-Aggramar|r",
+			[51] = 1635111143,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"also |cffffff00|Hquest:29374:425|h[Stink Bombs Away!]|h|r", -- [1]
+			"Draxxin-Aggramar", -- [2]
+			"", -- [3]
+			"1. General - Tirisfal Glades", -- [4]
+			"Draxxin-Aggramar", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Tirisfal Glades", -- [9]
+			0, -- [10]
+			358, -- [11]
+			"Player-106-06B4461A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Draxxin-Aggramar|r",
+			[51] = 1635111154,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
+	},
+	["ConvertKeybindings"] = true,
+	["ChatEditHistory"] = {
+		"/1 ok ty omw", -- [1]
+		"/train", -- [2]
+		"/1 ok", -- [3]
+		"/skada toggle", -- [4]
+		"/allthethings", -- [5]
+		"/cw Agaymar-BlackDragonflight top wall above portal room", -- [6]
+		"/sleep", -- [7]
+		"/1 how long before patchwork is attackable?", -- [8]
+		"/invite Lilanda-blackhand", -- [9]
+		"/dance", -- [10]
+	},
+	["CliqueDatatext"] = {
 	},
 }
