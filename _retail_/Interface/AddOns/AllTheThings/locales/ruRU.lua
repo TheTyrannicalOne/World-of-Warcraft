@@ -694,6 +694,7 @@ for key,value in pairs({
 		[-551] = "Коллекционное издание Diablo",					-- Diablo Collector's Edition
 		[-556] = "Турнир Арены",									-- Arena Tournament
 		[-579] = "Пропуск Темного портала",							-- Dark Portal Pass
+		[-580] = "Great Push: Второй сезон",						-- The Great Push: Season 2
 	-- PvP Header
 		-- Special Season Tags
 			[-655] = "Комплекты", 									-- Ensemble Gear (PvP)
@@ -888,8 +889,6 @@ for key,value in pairs({
 		[-10082] = "Захваченная область",
 		[-10083] = "Нападения Ковенантов",							-- Covenant Assaults
 		-- Shadowlands Achievement Header
-			-- Achieve 14339 Sub-Criteira
-				[-1433901] = "Осколок кристалла анимы",				-- Anima Crystal Shard
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
 				[-1433951] = "Разбитое зеркало A-1",				-- Broken Mirror
 				[-1433952] = "Разбитое зеркало A-2",				-- Broken Mirror

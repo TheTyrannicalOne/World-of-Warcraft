@@ -709,6 +709,7 @@ for key,value in pairs({
 		--TODO: [-551] = "Diablo Collector's Edition",				-- Diablo Collector's Edition
 		--TODO: [-556] = "Arena Tournament",						-- Arena Tournament
 		[-579] = "Passe Porte des ténèbres",						-- Dark Portal Pass
+		[-580] = "The Great Push: Saison 2",						-- The Great Push: Season 2
 	-- PvP Header
 		-- Special Season Tags
 			--TODO: [-655] = "Ensemble Gear", 						-- Ensemble Gear (PvP)
@@ -900,8 +901,6 @@ for key,value in pairs({
 		--TODO: [-10082] = "Lost Area",
 		--TODO: [-10083] = "Covenant Assaults",						-- Covenant Assaults
 		-- Shadowlands Achievement Header
-			-- Achieve 14339 Sub-Criteira
-				[-1433901] = "Éclat de cristal d’anima",			-- Anima Crystal Shard
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
 				[-1433951] = "Miroir brisé A-1",					-- Broken Mirror
 				[-1433952] = "Miroir brisé A-2",					-- Broken Mirror

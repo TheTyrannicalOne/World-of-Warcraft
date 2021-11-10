@@ -2,9 +2,7 @@ local E, L, V, P, G = unpack(ElvUI)
 local S = E:GetModule('Skins')
 
 local _G = _G
-local select = select
-local ipairs = ipairs
-local pairs = pairs
+local select, ipairs, pairs = select, ipairs, pairs
 
 local hooksecurefunc = hooksecurefunc
 local InCombatLockdown = InCombatLockdown
@@ -297,7 +295,7 @@ function S:BlizzardOptions()
 				if Child:IsObjectType('CheckButton') then
 					S:HandleCheckBox(Child)
 				elseif Child:IsObjectType('Button') then
-					S:HandleButton(Child)
+					S:HandleButton(Child, true)
 				elseif Child:IsObjectType('Slider') then
 					S:HandleSliderFrame(Child)
 				elseif Child:IsObjectType('Tab') then
@@ -356,7 +354,7 @@ function S:BlizzardOptions()
 	S:HandleButton(_G.AudioOptionsVoicePanel.TestInputDevice.ToggleTest)
 
 	local VUMeter = _G.AudioOptionsVoicePanelTestInputDevice.VUMeter
-	VUMeter:SetBackdrop(nil)
+	VUMeter:StripTextures()
 	VUMeter.Status:CreateBackdrop()
 	VUMeter.Status:SetStatusBarTexture(E.media.normTex)
 	E:RegisterStatusBar(VUMeter.Status)

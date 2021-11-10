@@ -114,7 +114,13 @@ app.PrintTable = function(t,depth)
 		for k,v in pairs(t) do
 			if type(v) == "table" then
 				print(p,k,":");
-				app.PrintTable(v,depth + 1);
+				if k == "parent" or k == "sourceParent" then
+					print("SKIPPED")
+				elseif k == "g" then
+					print("#",v and #v)
+				else
+					app.PrintTable(v,depth + 1);
+				end
 			else
 				print(p,k,":",tostring(v))
 			end
@@ -313,7 +319,7 @@ end
 local defaultComparison = function(a,b)
 	return a > b;
 end
-local insertionSort = function(t, compare)
+local function insertionSort(t, compare, nested)
 	if t then
 		if not compare then compare = defaultComparison; end
 		local j;
@@ -324,8 +330,22 @@ local insertionSort = function(t, compare)
 				j = j - 1;
 			end
 		end
+		if nested then
+			for i=#t,1,-1 do
+				insertionSort(t[i].g, compare, nested);
+			end
+		end
 	end
 end
+local sortByNameSafely = function(a, b)
+	if a and a.name then
+		if b and b.name then
+			return a.name <= b.name;
+		end
+		return true;
+	end
+	return false;
+end;
 local sortByTextSafely = function(a, b)
 	if a and a.text then
 		if b and b.text then
@@ -2042,12 +2062,14 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 		end
 		rawset(t, key, value);
 		rawset(DirtyQuests, key, true);
+		rawset(DirtyQuests, "DIRTY", true);
 		ATTAccountWideData.Quests[key] = 1;
 		app.CurrentCharacter.Quests[key] = 1;
 		PrintQuestInfo(key);
 	elseif value == false then
 		total = total - 1;
 		rawset(t, "_TOTAL", total);
+		rawset(DirtyQuests, "DIRTY", true);
 		-- no need to actually set the key in the table since it's been marked as incomplete
 		-- and this meta function only triggers on NEW key assignments
 		PrintQuestInfo(key, false);
@@ -2975,7 +2997,14 @@ ResolveSymbolicLink = function(o)
 				-- Instruction to search the full database for something.
 				local cache = app.SearchForField(sym[2], sym[3]);
 				if cache then
-					ArrayAppend(searchResults, cache);
+					for _,s in ipairs(cache) do
+						if s == o or (s.hash and s.hash == o.hash) then
+							print("symlink selected itself and will be ignored in results!",o.hash);
+						else
+							tinsert(searchResults, s);
+						end
+					end
+					-- ArrayAppend(searchResults, cache);
 				else
 					print("Failed to select ", sym[2], sym[3]);
 				end
@@ -3507,10 +3536,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					itemID = tonumber(itemID2);
 					modID = tonumber(linkModID) or 0;
 					if modID == 0 then modID = nil; end
-					bonusID = tonumber(bonusID1) or 3524;
+					bonusID = (tonumber(numBonusIds) or 0) > 0 and tonumber(bonusID1) or 3524;
 					if bonusID == 3524 then bonusID = nil; end
 					paramA = "itemID";
-					paramB = GetGroupItemIDWithModID(nil, itemID, modID, (tonumber(numBonusIds) or 0) > 0 and bonusID1) or itemID;
+					paramB = GetGroupItemIDWithModID(nil, itemID, modID, bonusID) or itemID;
 				end
 				if #group > 0 then
 					for i,j in ipairs(group) do
@@ -5240,7 +5269,8 @@ local function SearchForMissingItemNames(group)
 end
 -- Dynamically increments the progress for the parent heirarchy of each collectible search result
 local function UpdateSearchResults(searchResults, verifyCollectible)
-	if searchResults and #searchResults > 0 then
+	-- print("UpdateSearchResults",searchResults and #searchResults,verifyCollectible)
+	if searchResults then
 		-- Ad-hoc update system only needs to pass along updates to the results if the Main list is open
 		-- otherwise it only needs to refresh windows
 		if not app.Settings:GetTooltipSetting("Updates:AdHoc") or app:GetWindow("Prime"):IsVisible() then
@@ -5261,7 +5291,7 @@ local function UpdateSearchResults(searchResults, verifyCollectible)
 					result.marked = nil;
 					-- Every result has a total/progress now
 					-- print("Update self+parent",result.text,"=>",result.parent.text)
-					app.UpdateParentProgress(result);
+					app.UpdateParentProgress(result, 1);
 					-- This is an item that has a relative set of groups
 					if result.g then
 						app.SetGroupVisibility(result.parent, result);
@@ -5278,15 +5308,12 @@ local function UpdateSearchResults(searchResults, verifyCollectible)
 end
 -- Pulls the field search results for the rawID's and passes the results into UpdateSearchResults
 local function UpdateRawIDs(field, ids)
+	-- print("UpdateRawIDs",field,ids and #ids)
 	if ids and #ids > 0 then
-		local groups, search = {};
+		local groups, append, search = {}, app.ArrayAppend;
 		for _,id in ipairs(ids) do
 			search = SearchForField(field, id);
-			if search then
-				for _,thing in ipairs(search) do
-					tinsert(groups, thing);
-				end
-			end
+			append(groups, search);
 		end
 		UpdateSearchResults(groups);
 	end
@@ -7754,6 +7781,7 @@ end });
 app.FactionIDByName = setmetatable({}, { __index = function(t, name)
 	for i=1,3000,1 do
 		if app.FactionNameByID[i] == name then
+			rawset(t, name, i);
 			return i;
 		end
 	end
@@ -8981,12 +9009,23 @@ local itemFields = {
 			if t.modItemID and t.modItemID ~= t.itemID then
 				id = t.modItemID;
 				results = app.SearchForField("itemIDAsCost", id);
+				-- if app.DEBUG_PRINT then print("itemIDAsCost.modItemID",id,results and #results) end
 			end
-			-- If no results, search by plain itemID
+			-- If no results, search by itemID + modID only if different
+			if not results then
+				id = GetGroupItemIDWithModID(nil, t.itemID, t.modID);
+				if id ~= t.modItemID then
+					results = app.SearchForField("itemIDAsCost", id);
+					-- if app.DEBUG_PRINT then print("itemIDAsCost.modID",id,results and #results) end
+				end
+			end
+			-- If no results, search by plain itemID only
 			if not results and t.itemID then
 				id = t.itemID;
 				results = app.SearchForField("itemIDAsCost", id);
+				-- if app.DEBUG_PRINT then print("itemIDAsCost.itemID",id,results and #results) end
 			end
+			-- if app.DEBUG_PRINT then print("collectibleAsCost",t.modItemID,results and #results) end
 			if results and #results > 0 then
 				-- setup the costCollectibles initially
 				local costCollectibles, collectible = {};
@@ -11256,13 +11295,16 @@ local function RefreshQuestCompletionState(questID)
 		QueryCompletedQuests();
 	end
 
+	local completedQuestHelper = app.QuestCompletionHelper;
 	for questID,completed in pairs(DirtyQuests) do
-		app.QuestCompletionHelper(tonumber(questID));
+		completedQuestHelper(tonumber(questID));
+	end
+	-- soft update if any quests were even completed to ensure visible changes occur
+	if DirtyQuests.DIRTY then
+		app:UpdateWindows();
 	end
 	wipe(DirtyQuests);
 	wipe(npcQuestsCache);
-	-- soft update to ensure visible changes occur
-	app:UpdateWindows();
 end
 app.RefreshQuestInfo = function(questID)
 	-- print("RefreshQuestInfo",questID)
@@ -12433,15 +12475,16 @@ UpdateGroups = function(parent, g, window)
 		end
 	end
 end
-local function UpdateParentProgress(group)
-	group.progress = group.progress + 1;
+local function UpdateParentProgress(group, change)
+	change = change or 1;
+	group.progress = group.progress + change;
 	-- print("new progress",group.progress,group.total,group.text)
 
 	-- Continue on to this object's parent
 	if group.parent and group.visible then
 		-- print("visible",group.text)
 		-- If this is a collected collectible, update the parent.
-		UpdateParentProgress(group.parent);
+		UpdateParentProgress(group.parent, change);
 		-- Set visibility for this group as well
 		SetGroupVisibility(group.parent, group);
 		-- print("visible?",group.visible,group.text)
@@ -12553,11 +12596,11 @@ app.ActiveItemCollectionHelper = app.CompletionistItemCollectionHelper;
 function app.CompletionistItemRemovalHelper(sourceID, oldState)
 	-- Search ATT for the related sources.
 	local searchResults = SearchForField("s", sourceID);
-	if searchResults and #searchResults > 0 then
+	if searchResults then
 		-- Show the collection message.
 		if app.Settings:GetTooltipSetting("Report:Collected") then
 			local firstMatch = searchResults[1];
-			print(format(L["ITEM_ID_ADDED"], firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID));
+			print(format(L["ITEM_ID_REMOVED"], firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID));
 		end
 
 		-- Attempt to cleanly refresh the data.
@@ -12680,7 +12723,7 @@ function app.UniqueModeItemRemovalHelperBase(sourceID, oldState, filter)
 			-- Show the collection message.
 			if app.Settings:GetTooltipSetting("Report:Collected") then
 				local firstMatch = searchResults[1];
-				print(format(L[#unlockedSourceIDs > 0 and "ITEM_ID_ADDED_SHARED" or "ITEM_ID_ADDED"],
+				print(format(L[#unlockedSourceIDs > 0 and "ITEM_ID_REMOVED_SHARED" or "ITEM_ID_REMOVED"],
 					firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID, #unlockedSourceIDs));
 			end
 		else
@@ -12725,12 +12768,30 @@ function app.GetNumberOfItemsUntilNextPercentage(progress, total)
 		end
 	end
 end
+-- A set of quests which indicate a needed refresh to the Custom Collect status of the character
+app.CustomCollectQuests = {
+	[56775] = 1,	-- New Player Experience Starting Quest
+	[59926] = 1,	-- New Player Experience Starting Quest
+	[58911] = 1,	-- New Player Experience Ending Quest
+	[60359] = 1,	-- New Player Experience Ending Quest
+	[62713] = 1,	-- Shadowlands - SL_SKIP (Threads of Fate)
+	[65076] = 1,	-- Shadowlands - Covenant - Kyrian
+	[65077] = 1,	-- Shadowlands - Covenant - Venthyr
+	[65078] = 1,	-- Shadowlands - Covenant - Night Fae
+	[65079] = 1,	-- Shadowlands - Covenant - Necrolord
+};
 function app.QuestCompletionHelper(questID)
-	-- Only increase progress for Quests as Collectible users.
-	if app.CollectibleQuests then
-		-- Search ATT for the related quests.
-		local searchResults = SearchForField("questID", questID);
-		UpdateSearchResults(searchResults, true);
+	if questID then
+		-- Only increase progress for Quests as Collectible users.
+		if app.CollectibleQuests then
+			-- Search ATT for the related quests.
+			local searchResults = SearchForField("questID", questID);
+			UpdateSearchResults(searchResults, true);
+		end
+		-- Certain quests being completed should trigger a refresh of the Custom Collect status of the character (i.e. Covenant Switches, Threads of Fate, etc.)
+		if app.CustomCollectQuests[questID] then
+			Callback(app.RefreshCustomCollectibility);
+		end
 	end
 end
 -- receives a key and a function which returns the value to be set for
@@ -15645,6 +15706,14 @@ function app:GetDataCache()
 		table.insert(g, toyCategory);
 		]]--
 
+		-- Achievements (Dynamic!)
+		--[[
+		local achievementsCategory = app.CreateNPC(-4, {});
+		achievementsCategory.expanded = false;
+		achievementsCategory.achievements = {};
+		table.insert(g, achievementsCategory);
+		]]--
+
 		-- Track Deaths!
 		tinsert(g, app:CreateDeathClass());
 
@@ -15864,6 +15933,101 @@ function app:GetDataCache()
 			tinsert(inst.parent.g, inst);
 			return inst;
 		end
+
+		-- Update Achievement data.
+		--[[
+		local function cacheAchievementData(self, categories, g)
+			if g then
+				for i,o in ipairs(g) do
+					if o.achievementCategoryID then
+						categories[o.achievementCategoryID] = o;
+						if not o.g then
+							o.g = {};
+						else
+							cacheAchievementData(self, categories, o.g);
+						end
+					elseif o.achievementID then
+						self.achievements[o.achievementID] = o;
+					end
+				end
+			end
+		end
+		local function getAchievementCategory(categories, achievementCategoryID)
+			local c = categories[achievementCategoryID];
+			if not c then
+				c = app.CreateAchievementCategory(achievementCategoryID);
+				categories[achievementCategoryID] = c;
+				c.g = {};
+
+				local p = getAchievementCategory(categories, c.parentCategoryID);
+				if not p.g then p.g = {}; end
+				table.insert(p.g, c);
+				c.parent = p;
+			end
+			return c;
+		end
+		local function achievementSort(a, b)
+			if a.achievementCategoryID then
+				if b.achievementCategoryID then
+					return a.achievementCategoryID < b.achievementCategoryID;
+				end
+				return true;
+			elseif b.achievementCategoryID then
+				return false;
+			end
+			return sortByNameSafely(a, b);
+		end;
+		achievementsCategory.OnUpdate = function(self)
+			local categories = {};
+			categories[-1] = self;
+			cacheAchievementData(self, categories, self.g);
+			for i,_ in pairs(fieldCache["achievementID"]) do
+				if not self.achievements[i] then
+					local achievement = app.CreateAchievement(tonumber(i));
+					for j,o in ipairs(_) do
+						for key,value in pairs(o) do rawset(achievement, key, value); end
+						if o.parent and not o.sourceQuests then
+							local questID = GetRelativeValue(o, "questID");
+							if questID then
+								if not achievement.sourceQuests then
+									achievement.sourceQuests = {};
+								end
+								if not contains(achievement.sourceQuests, questID) then
+									tinsert(achievement.sourceQuests, questID);
+								end
+							else
+								local sourceQuests = GetRelativeValue(o, "sourceQuests");
+								if sourceQuests then
+									if not achievement.sourceQuests then
+										achievement.sourceQuests = {};
+										for k,questID in ipairs(sourceQuests) do
+											tinsert(achievement.sourceQuests, questID);
+										end
+									else
+										for k,questID in ipairs(sourceQuests) do
+											if not contains(achievement.sourceQuests, questID) then
+												tinsert(achievement.sourceQuests, questID);
+											end
+										end
+									end
+								end
+							end
+						end
+					end
+					self.achievements[i] = achievement;
+					achievement.progress = nil;
+					achievement.total = nil;
+					achievement.g = nil;
+					achievement.parent = getAchievementCategory(categories, achievement.parentCategoryID);
+					if not achievement.u or achievement.u ~= 1 then
+						tinsert(achievement.parent.g, achievement);
+					end
+				end
+			end
+			insertionSort(self.g, achievementSort, true);
+		end
+		achievementsCategory:OnUpdate();
+		]]--
 
 		-- Update Faction data.
 		--[[
@@ -16476,6 +16640,8 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		end
 		-- set of keys for headers which can be nested in the minilist automatically, but not as a direct top header
 		local subGroupKeys = {
+			["filterID"] = app.CreateFilter,
+			["professionID"] = app.CreateProfession,
 			["raceID"] = app.CreateRace,
 			["holidayID"] = app.CreateHoliday,
 		};
@@ -16493,6 +16659,8 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			[-228] = "flightPathID",
 		-- HOLIDAY = -3;
 			[-3] = "holidayID",
+		-- PROFESSIONS = -38;
+			[-38] = "professionID",
 		-- QUESTS = -17;
 			[-17] = "questID",
 		-- RARES = -16;
@@ -20192,6 +20360,7 @@ end)();
 app:RegisterEvent("ADDON_LOADED");
 app:RegisterEvent("BOSS_KILL");
 app:RegisterEvent("CHAT_MSG_ADDON");
+app:RegisterEvent("CRITERIA_UPDATE");
 app:RegisterEvent("PLAYER_ENTERING_WORLD");
 app:RegisterEvent("VARIABLES_LOADED");
 app:RegisterEvent("NEW_PET_ADDED");
@@ -20971,6 +21140,12 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 		end
 	end
 end
+-- Seems to be some sort of hidden tracking for HQTs and other sorts of things...
+app.events.CRITERIA_UPDATE = function(...)
+	-- print("CRITERIA_UPDATE",...)
+	-- sometimes triggers many times at once but refresh quest info is a 1 sec callback threshold
+	app.RefreshQuestInfo();
+end
 app.events.QUEST_TURNED_IN = function(questID)
 	-- print("QUEST_TURNED_IN")
 	app.RefreshQuestInfo(questID);
@@ -21092,7 +21267,6 @@ app.events.TOYS_UPDATED = function(itemID, new)
 	end
 end
 app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
-	-- TODO: change to callback and collect all ID's for processing each callback
 	-- print("TRANSMOG_COLLECTION_SOURCE_ADDED",sourceID)
 	if sourceID then
 		-- Cache the previous state. This will help keep lag under control.
@@ -21103,15 +21277,15 @@ app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 		if oldState ~= 1 then
 			ATTAccountWideData.Sources[sourceID] = 1;
 			app.ActiveItemCollectionHelper(sourceID, oldState);
-			app:PlayFanfare();
-			app:TakeScreenShot();
+			Callback(app.PlayFanfare);
+			Callback(app.TakeScreenShot);
 			wipe(searchCache);
 			SendSocialMessage("S\t" .. sourceID .. "\t" .. oldState .. "\t1");
 		end
 	end
 end
 app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
-	-- TODO: change to callback and collect all ID's for processing each callback
+	-- print("TRANSMOG_COLLECTION_SOURCE_REMOVED",sourceID)
 	local oldState = sourceID and ATTAccountWideData.Sources[sourceID];
 	if oldState then
 		local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
@@ -21150,7 +21324,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 
 		-- Refresh the Data and Cry!
 		app:RefreshData(false, true);
-		app:PlayRemoveSound();
+		Callback(app.PlayRemoveSound);
 		wipe(searchCache);
 		SendSocialMessage("S\t" .. sourceID .. "\t" .. oldState .. "\t0");
 	end

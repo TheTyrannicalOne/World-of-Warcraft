@@ -709,6 +709,7 @@ for key,value in pairs({
 		--TODO: [-550] = "Starcraft Collector's Edition",			-- Starcraft Collector's Edition
 		--TODO: [-551] = "Diablo Collector's Edition",				-- Diablo Collector's Edition
 		[-579] = "다크 포털 패스",										-- Dark Portal Pass
+		[-580] = "The Great Push 2 시즌이",							-- The Great Push: Season 2
 	-- PvP Header
 		-- Special Season Tags
 			--TODO: [-655] = "Ensemble Gear", 						-- Ensemble Gear (PvP)
@@ -900,8 +901,6 @@ for key,value in pairs({
 		--TODO: [-10082] = "Lost Area",
 		--TODO: [-10083] = "Covenant Assaults",						-- Covenant Assaults
 		-- Shadowlands Achievement Header
-			-- Achieve 14339 Sub-Criteira
-				[-1433901] = "령 수정 파편",								-- Anima Crystal Shard
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
 				[-1433951] = "깨진 거울 A-1",							-- Broken Mirror
 				[-1433952] = "깨진 거울 A-2",							-- Broken Mirror
@@ -1672,7 +1671,7 @@ for key,value in pairs({
 	[233697] = "서슬니 보관함",	-- Saberon Stash
 	--TODO: [233715] = "Goldtoe's Plunder",	-- Goldtoe's Plunder
 	[233768] = "어슴푸레 빛나는 비약",	-- Pale Elixir
-	--TODO: [233773] = "Bag of Herbs",	-- Bag of Herbs
+	[233773] = "약초 가방",	-- Bag of Herbs
 	[233792] = "돌 무더기",	-- Pile of Rubble
 	[233917] = "비현실성의 다리뼈",	-- Femur of Improbability
 	[233956] = "피투성이 칼",	-- Bloody Blade

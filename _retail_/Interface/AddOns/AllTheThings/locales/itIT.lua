@@ -900,8 +900,6 @@ for key,value in pairs({
 		--TODO: [-10082] = "Lost Area",
 		--TODO: [-10083] = "Covenant Assaults",						-- Covenant Assaults
 		-- Shadowlands Achievement Header
-			-- Achieve 14339 Sub-Criteira
-				[-1433901] = "Frammento di Cristallo d'Animum",		-- Anima Crystal Shard
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
 				[-1433951] = "Specchio Rotto A-1",					-- Broken Mirror
 				[-1433952] = "Specchio Rotto A-2",					-- Broken Mirror
@@ -2846,7 +2844,7 @@ for key,value in pairs({
 	[368668] = "Tronco di Abominietto",	-- Lil'Abom's Trunk
 	[368772] = "Pergamena con Sigillo",	-- Sigilscored Scroll
 	[368876] = "Scrigno dei Giurafauce",	-- Mawsworn Cache
-	--TODO: [368935] = "Sinfall Screecher Cage",	-- Sinfall Screecher Cage
+	[368935] = "Gabbia dello Stridente di Oblio del Peccato",	-- Sinfall Screecher Cage
 	[368946] = "Ricettacolo d'Animum Rubato",	-- Stolen Anima Vessel
 	[368948] = "Ricettacolo d'Animum Rubato",	-- Stolen Anima Vessel
 	[368949] = "Ricettacolo d'Animum Rubato",	-- Stolen Anima Vessel

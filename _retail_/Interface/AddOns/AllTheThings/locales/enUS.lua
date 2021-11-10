@@ -1157,6 +1157,7 @@ app.L = {
 		[-577] = "Interface\\Icons\\INV_MISC_FILM_01",										-- Warcraft Movie
 		[-578] = app.asset("Expansion_CLASSIC"),											-- World of Warcraft 15th Anniversary
 		[-579] = "Interface\\Icons\\achievement_dungeon_outland_dungeonmaster",				-- Dark Portal Pass
+		[-580] = "Interface\\Icons\\inv_misc_mdi_banner01",									-- The Great Push: Season 2
 	-- Raid Buff Stack Size in Uldir
 		[-583] = "Interface\\Icons\\inv_trinket_80_titan02c",								-- Power Increased to Level 1
 		[-584] = "Interface\\Icons\\inv_trinket_80_titan02c",								-- Power Increased to Level 2
@@ -1551,8 +1552,6 @@ app.L = {
 		[-10103] = "Interface\\Icons\\Paladin_Protection",							-- The Maw and Torghast
 		[-10105] = 236373,															-- Covenant Assaults
 
-	-- Achieve 14339 Sub-Criteira
-		[-1433901] = 3528288,															-- Anima Crystal Shard
 	--	hopefully temp custom NPCs, these objects do not have data on wowhead atm
 		[-1433951] = "3854020",															-- Broken Mirror
 		[-1433952] = "3854020",															-- Broken Mirror
@@ -1872,6 +1871,7 @@ app.L = {
 		[-577] = "Warcraft Movie",												-- Warcraft Movie
 		[-578] = select(2, GetAchievementInfo(13917)),							-- WoW's 15th Anniversary
 		[-579] = "Dark Portal Pass",											-- Dark Portal Pass
+		[-580] = "The Great Push: Season 2",									-- The Great Push: Season 2
 	-- Raid Buff Stack Size in Uldir
 		[-583] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 1),				-- Power Increased to Level 1
 		[-584] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 2),				-- Power Increased to Level 2
@@ -2308,8 +2308,6 @@ app.L = {
 		[-10101] = select(1,GetCategoryInfo(15428)),							-- Shadowlands Dungeon
 		[-10102] = select(1,GetCategoryInfo(15438)),							-- Shadowlands Raids
 		[-10103] = select(1,GetCategoryInfo(15440)),							-- The Maw and Torghast
-		-- Achieve 14339 Sub-Criteira
-		[-1433901] = "Anima Crystal Shard",										-- Anima Crystal Shard
 	--	hopefully temp objects, these currently do not have accessible object data on wowhead
 		[-1433951] = "Broken Mirror A-1",										-- Broken Mirror
 		[-1433952] = "Broken Mirror A-2",										-- Broken Mirror

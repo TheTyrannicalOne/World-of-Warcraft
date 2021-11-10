@@ -1689,3 +1689,6 @@ Change Log:
 4.65.1
 * Updated ToCs using the new naming system
 * Added BC spells for Sunwell Plateau
+
+4.65.2
+* Fixed BC spells for Serpentshrine Cavern
