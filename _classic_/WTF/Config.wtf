@@ -24,7 +24,7 @@ SET sunShafts "2.000000"
 SET lodObjectCullSize "14.000000"
 SET graphicsGroundClutter "10"
 SET shadowMode "4.000000"
-SET gxWindowedResolution "2560x1440"
+SET gxWindowedResolution "2176x1224"
 SET groundEffectDensity "256.000000"
 SET waterDetail "3.000000"
 SET projectedTextures "1.000000"
@@ -79,6 +79,18 @@ SET shadowSoft "1.000000"
 SET shadowRt "3"
 SET terrainMipLevel "0.000000"
 SET textureFilteringMode "5.000000"
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

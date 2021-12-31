@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0528,
+	["LastVersion"] = 2.053,
 	["LastPlayerFullName"] = "Darnastris-Dalaran",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
@@ -11,8 +11,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 122664,
-			["Level"] = 58,
-			["Link"] = "|cff00ccff|Hitem:122664::::::::49:64:::1:5805::::|h[Eternal Horizon Choker]|h|r",
+			["Level"] = 98,
+			["Link"] = "|cff00ccff|Hitem:122664::::::::51:64:::1:5805::::::|h[Eternal Horizon Choker]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 183687,
@@ -64,9 +64,9 @@ PawnOptions = {
 		}, -- [12]
 		{
 			["ID"] = 122362,
-			["Level"] = 58,
+			["Level"] = 98,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff00ccff|Hitem:122362::::::::49:64:::1:5805::::|h[Discerning Eye of the Beast]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122362::::::::51:64:::1:5805::::::|h[Discerning Eye of the Beast]|h|r",
 		}, -- [13]
 		{
 			["ID"] = 122362,

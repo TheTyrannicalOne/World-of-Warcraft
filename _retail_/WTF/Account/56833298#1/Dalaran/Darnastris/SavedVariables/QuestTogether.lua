@@ -62,6 +62,12 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
+		[44948] = {
+			["title"] = "Raising Your Snowfeather",
+			["objectives"] = {
+				"Level 25 Snowfeather Hatchling", -- [1]
+			},
+		},
 		[60545] = {
 			["title"] = "Shadowlands: A Chilling Summons",
 			["objectives"] = {
@@ -76,16 +82,16 @@ QuestTogether = {
 				"0/1 Loregrain's Grimoire", -- [2]
 			},
 		},
-		[44948] = {
-			["title"] = "Raising Your Snowfeather",
-			["objectives"] = {
-				"Level 25 Snowfeather Hatchling", -- [1]
-			},
-		},
 		[44989] = {
 			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
 				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[34692] = {
+			["title"] = "Delegating on Draenor",
+			["objectives"] = {
+				"Use the Command Table", -- [1]
 			},
 		},
 		[25191] = {
@@ -104,11 +110,12 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[37433] = {
-			["title"] = "Proving Grounds",
+		[47253] = {
+			["title"] = "The Originals",
 			["objectives"] = {
-				"0/1 Speak with Lieutenant Thorn to enter Proving Grounds", -- [1]
-				"0/1 Complete a Bronze Trial", -- [2]
+				"0/1 Lord Kazzak slain", -- [1]
+				"0/1 Azuregos slain", -- [2]
+				"0/1 Dragon of Nightmare slain", -- [3]
 			},
 		},
 		[43441] = {
@@ -117,15 +124,17 @@ QuestTogether = {
 				"0/1 Choose a second artifact to pursue", -- [1]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[37433] = {
+			["title"] = "Proving Grounds",
 			["objectives"] = {
+				"0/1 Speak with Lieutenant Thorn to enter Proving Grounds", -- [1]
+				"0/1 Complete a Bronze Trial", -- [2]
 			},
 		},
-		[34692] = {
-			["title"] = "Delegating on Draenor",
+		[57300] = {
+			["title"] = "Soldier of Time",
 			["objectives"] = {
-				"Use the Command Table", -- [1]
+				"0/500 Earn Honor in Korrak's Revenge", -- [1]
 			},
 		},
 		[50825] = {
@@ -158,8 +167,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

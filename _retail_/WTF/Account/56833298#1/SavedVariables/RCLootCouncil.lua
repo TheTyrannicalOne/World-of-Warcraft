@@ -1,2082 +1,2027 @@
 
 RCLootCouncilDB = {
-	["profileKeys"] = {
-		["Vancard - Zul'jin"] = "Default",
-		["Armaguth - Zul'jin"] = "Default",
-		["Charbeatic - Zul'jin"] = "Default",
-		["Shaekhan - Zul'jin"] = "Default",
-		["Shanyt - Zul'jin"] = "Default",
-		["Avisar - Dalaran"] = "Default",
-		["Banuumine - Zul'jin"] = "Default",
-		["Thorinbane - Dalaran"] = "Default",
-		["Shaekhan - Argent Dawn"] = "Default",
-		["Ruffinton - Dalaran"] = "Default",
-		["Malivant - Dalaran"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
-		["Dachas - Zul'jin"] = "Default",
-		["Tyranasticus - Zul'jin"] = "Default",
-		["Illingrath - Dalaran"] = "Default",
-		["Tyrannithal - Argent Dawn"] = "Default",
-		["Zulbathal - Zul'jin"] = "Default",
-		["Kelvalatar - Dalaran"] = "Default",
-		["Banesmuncy - Zul'jin"] = "Default",
-		["Brotus - Argent Dawn"] = "Default",
-		["Shimzo - Zul'jin"] = "Default",
-		["Guufnah - Zul'jin"] = "Default",
-		["Tinkster - Dalaran"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
-		["Kotalkhan - Zul'jin"] = "Default",
-		["Fantastiburo - Zul'jin"] = "Default",
-		["Laymonan - Zul'jin"] = "Default",
-		["Datgore - Zul'jin"] = "Default",
-		["Vadder - Argent Dawn"] = "Default",
-		["Tyran - Argent Dawn"] = "Default",
-		["Serbitechna - Dalaran"] = "Default",
-		["Darnastris - Dalaran"] = "Default",
-		["Rotclaugh - Dalaran"] = "Default",
-		["Shanyt - Argent Dawn"] = "Default",
-		["Abyronterner - Zul'jin"] = "Default",
-		["Jingojaggot - Zul'jin"] = "Default",
-		["Jasmoney - Zul'jin"] = "Default",
-		["Okona - Zul'jin"] = "Default",
-		["Mandles - Zul'jin"] = "Default",
-	},
 	["global"] = {
 		["log"] = {
-			"<00:44:44><DEBUG>	 Event: LOOT_READY true", -- [1]
-			"<00:44:44><DEBUG>	 Event: LOOT_READY true", -- [2]
-			"<00:44:44><DEBUG>	 Event: LOOT_CLOSED", -- [3]
-			"<00:44:44><DEBUG>	 Event: LOOT_CLOSED", -- [4]
-			"<00:44:49><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [5]
-			"<00:44:50><DEBUG>	 GetML()", -- [6]
-			"<00:44:54><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-2-000046004888", -- [7]
-			"<00:44:54><DEBUG>	 GetML()", -- [8]
-			"<00:45:41><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [9]
-			"<00:45:41><INFO>	 UpdatePlayersData()", -- [10]
-			"<00:45:43><DEBUG>	 GetML()", -- [11]
-			"<01:23:40><INFO>	 Logged In", -- [12]
-			"<01:23:40>[ML]<INFO>	 Init", -- [13]
-			"<01:23:40><INFO>	 RCLootCouncil TradeUI enabled", -- [14]
-			"<01:24:03><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [15]
-			"<01:24:03><DEBUG>	 ActivateSkin bfa", -- [16]
-			"<01:24:15><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [17]
-			"<01:24:15><INFO>	 UpdatePlayersData()", -- [18]
-			"<01:24:15><INFO>	 Player relog...", -- [19]
-			"<01:24:19><DEBUG>	 GetPlayersGuildRank()", -- [20]
-			"<01:24:19><DEBUG>	 Found Guild Rank: Thuerge", -- [21]
-			"<01:24:34><DEBUG>	 GetML()", -- [22]
-			"<01:28:23><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [23]
-			"<01:28:25><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [24]
-			"<01:28:25><INFO>	 UpdatePlayersData()", -- [25]
-			"<01:28:35><DEBUG>	 GetML()", -- [26]
-			"<01:28:37><DEBUG>	 GetML()", -- [27]
-			"<01:30:32><DEBUG>	 Event: LOOT_READY true", -- [28]
-			"<01:30:32><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4228-1004-24880-23682-000070FA89 71003", -- [29]
-			"<01:30:32><DEBUG>	 Adding to self.lootSlotInfo 3 |cff0070dd|Hitem:143901::::::::60:71::22:1:7464:1:28:181:::::|h[Band of the Petrified Pumpkin]|h|r 3 1 Creature-0-4228-1004-24880-23682-000070FA89 1", -- [30]
-			"<01:30:32><DEBUG>	 OnLootSlotCleared() 3 |cff0070dd|Hitem:143901::::::::60:71::22:1:7464:1:28:181:::::|h[Band of the Petrified Pumpkin]|h|r 3", -- [31]
-			"<01:30:32><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143901 |cff0070dd|Hitem:143901::::::::60:71::22:1:7464:2:28:181:9:60:::::|h[Band of the Petrified Pumpkin]|h|r 1 Shanyt WARRIOR", -- [32]
-			"<01:30:32><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [33]
-			"<01:30:32><DEBUG>	 Event: LOOT_CLOSED", -- [34]
-			"<01:30:32><DEBUG>	 Event: LOOT_CLOSED", -- [35]
-			"<01:30:32><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [36]
-			"<01:30:32><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [37]
-			"<01:30:34><DEBUG>	 Storage:New |cff0070dd|Hitem:143901::::::::60:71::22:1:7464:1:28:181:::::|h[Band of the Petrified Pumpkin]|h|r temp", -- [38]
-			"<01:30:34><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143901::::::::60:71::22:1:7464:1:28:181:::::||h[Band of the Petrified Pumpkin]||h||r 5", -- [39]
-			"<01:30:34><DEBUG>	 Found: nil nil nil", -- [40]
-			"<01:30:35><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143901::::::::60:71::22:1:7464:1:28:181:::::||h[Band of the Petrified Pumpkin]||h||r 5", -- [41]
-			"<01:30:35><DEBUG>	 Found: nil nil nil", -- [42]
-			"<01:30:35><DEBUG>	 Event: LOOT_READY true", -- [43]
-			"<01:30:36><DEBUG>	 Event: LOOT_READY true", -- [44]
-			"<01:30:36><DEBUG>	 Event: LOOT_CLOSED", -- [45]
-			"<01:30:36><DEBUG>	 Event: LOOT_CLOSED", -- [46]
-			"<01:30:36><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143901::::::::60:71::22:1:7464:1:28:181:::::||h[Band of the Petrified Pumpkin]||h||r 5", -- [47]
-			"<01:30:36><DEBUG>	 Found: nil nil nil", -- [48]
-			"<01:30:37><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143901::::::::60:71::22:1:7464:1:28:181:::::||h[Band of the Petrified Pumpkin]||h||r 5", -- [49]
-			"<01:30:37><DEBUG>	 Found: nil nil nil", -- [50]
-			"<01:30:37><ERROR>	 UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:143901::::::::60:71::22:1:7464:1:28:181:::::|h[Band of the Petrified Pumpkin]|h|r not found in bags", -- [51]
-			"<01:31:09><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-00004602DB5A", -- [52]
-			"<01:31:09><DEBUG>	 GetML()", -- [53]
-			"<01:31:15><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [54]
-			"<01:31:15><INFO>	 UpdatePlayersData()", -- [55]
-			"<01:31:25><DEBUG>	 GetML()", -- [56]
-			"<05:22:15><INFO>	 Logged In", -- [57]
-			"<05:22:15>[ML]<INFO>	 Init", -- [58]
-			"<05:22:15><INFO>	 RCLootCouncil TradeUI enabled", -- [59]
-			"<05:22:38><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [60]
-			"<05:22:38><DEBUG>	 ActivateSkin bfa", -- [61]
-			"<05:22:49><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [62]
-			"<05:22:49><INFO>	 UpdatePlayersData()", -- [63]
-			"<05:22:49><INFO>	 Player relog...", -- [64]
-			"<05:22:52><DEBUG>	 GetPlayersGuildRank()", -- [65]
-			"<05:22:52><DEBUG>	 Found Guild Rank: Thuerge", -- [66]
-			"<05:23:05><DEBUG>	 GetML()", -- [67]
-			"<05:26:21><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [68]
-			"<05:26:23><DEBUG>	 GetML()", -- [69]
-			"<05:26:24><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [70]
-			"<05:26:24><INFO>	 UpdatePlayersData()", -- [71]
-			"<05:26:40><DEBUG>	 GetML()", -- [72]
-			"<05:28:36><DEBUG>	 Event: LOOT_READY true", -- [73]
-			"<05:28:36><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-8976-23682-00007283D2 135104", -- [74]
-			"<05:28:36><DEBUG>	 Event: LOOT_READY true", -- [75]
-			"<05:28:36><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-8976-23682-00007283D2 135104", -- [76]
-			"<05:28:36><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [77]
-			"<05:28:36><DEBUG>	 Event: LOOT_CLOSED", -- [78]
-			"<05:28:36><DEBUG>	 Event: LOOT_CLOSED", -- [79]
-			"<05:28:37><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [80]
-			"<05:28:37><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [81]
-			"<05:28:37><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143901 |cff0070dd|Hitem:143901::::::::60:71::22:1:7464:2:28:181:9:60:::::|h[Band of the Petrified Pumpkin]|h|r 1 Kanra-KulTiras DRUID", -- [82]
-			"<05:28:38><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143903 |cff0070dd|Hitem:143903::::::::60:71::22:1:7464:2:28:181:9:50:::::|h[The Horseman's Ring]|h|r 1 Dzaeks-BleedingHollow WARRIOR", -- [83]
-			"<05:28:39><DEBUG>	 Event: LOOT_READY true", -- [84]
-			"<05:28:39><DEBUG>	 Event: LOOT_READY true", -- [85]
-			"<05:28:39><DEBUG>	 Event: LOOT_CLOSED", -- [86]
-			"<05:28:39><DEBUG>	 Event: LOOT_CLOSED", -- [87]
-			"<05:28:47><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-00004605A645", -- [88]
-			"<05:28:47><DEBUG>	 GetML()", -- [89]
-			"<05:28:53><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [90]
-			"<05:28:53><INFO>	 UpdatePlayersData()", -- [91]
-			"<05:29:03><DEBUG>	 GetML()", -- [92]
-			"<17:15:25><INFO>	 Logged In", -- [93]
-			"<17:15:25>[ML]<INFO>	 Init", -- [94]
-			"<17:15:25><INFO>	 RCLootCouncil TradeUI enabled", -- [95]
-			"<17:15:47><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [96]
-			"<17:15:47><DEBUG>	 ActivateSkin bfa", -- [97]
-			"<17:15:59><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [98]
-			"<17:15:59><INFO>	 UpdatePlayersData()", -- [99]
-			"<17:15:59><INFO>	 Player relog...", -- [100]
-			"<17:16:03><DEBUG>	 GetPlayersGuildRank()", -- [101]
-			"<17:16:03><DEBUG>	 GetPlayersGuildRank()", -- [102]
-			"<17:16:03><DEBUG>	 Found Guild Rank: Thuerge", -- [103]
-			"<17:16:19><DEBUG>	 GetML()", -- [104]
-			"<17:17:22><DEBUG>	 Event: LOOT_READY true", -- [105]
-			"<17:17:22><DEBUG>	 Event: LOOT_READY true", -- [106]
-			"<17:19:20><DEBUG>	 Event: LOOT_READY true", -- [107]
-			"<17:20:02><DEBUG>	 Event: LOOT_READY true", -- [108]
-			"<17:20:25><DEBUG>	 Event: LOOT_READY true", -- [109]
-			"<17:21:25><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [110]
-			"<17:21:26><DEBUG>	 GetML()", -- [111]
-			"<17:21:28><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [112]
-			"<17:21:28><INFO>	 UpdatePlayersData()", -- [113]
-			"<17:21:41><DEBUG>	 GetML()", -- [114]
-			"<17:23:19><DEBUG>	 Event: LOOT_READY true", -- [115]
-			"<17:23:19><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-14584-23682-0000732B6B 134077", -- [116]
-			"<17:23:19><DEBUG>	 Adding to self.lootSlotInfo 3 |cffffffff|Hitem:37606::::::::60:71:::::::::|h[Penny Pouch]|h|r 1 1 Creature-0-3776-1004-14584-23682-0000732B6B 1", -- [117]
-			"<17:23:19><DEBUG>	 OnLootSlotCleared() 3 |cffffffff|Hitem:37606::::::::60:71:::::::::|h[Penny Pouch]|h|r 1", -- [118]
-			"<17:23:19><DEBUG>	 Event: LOOT_READY true", -- [119]
-			"<17:23:19><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-14584-23682-0000732B6B 134077", -- [120]
-			"<17:23:19><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [121]
-			"<17:23:19><DEBUG>	 Event: LOOT_CLOSED", -- [122]
-			"<17:23:19><DEBUG>	 Event: LOOT_CLOSED", -- [123]
-			"<17:23:20><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [124]
-			"<17:23:20><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [125]
-			"<17:23:21><DEBUG>	 Event: LOOT_READY true", -- [126]
-			"<17:23:21><DEBUG>	 Event: LOOT_CLOSED", -- [127]
-			"<17:23:21><DEBUG>	 Event: LOOT_CLOSED", -- [128]
-			"<17:23:23><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143902 |cff0070dd|Hitem:143902::::::::60:71::22:1:7464:2:28:181:9:60:::::|h[Wicked Witch's Signet]|h|r 1 Arcavidious-KulTiras DEMONHUNTER", -- [129]
-			"<17:23:30><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-00004606CEA8", -- [130]
-			"<17:23:30><DEBUG>	 GetML()", -- [131]
-			"<17:23:37><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [132]
-			"<17:23:37><INFO>	 UpdatePlayersData()", -- [133]
-			"<17:23:47><DEBUG>	 GetML()", -- [134]
-			"<17:24:52><INFO>	 Logged In", -- [135]
-			"<17:24:52>[ML]<INFO>	 Init", -- [136]
-			"<17:24:52><INFO>	 RCLootCouncil TradeUI enabled", -- [137]
-			"<17:25:09><INFO>	 Zulbathal-Zul'jin 3.2.0 nil", -- [138]
-			"<17:25:09><DEBUG>	 ActivateSkin bfa", -- [139]
-			"<17:25:21><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [140]
-			"<17:25:21><INFO>	 UpdatePlayersData()", -- [141]
-			"<17:25:21><INFO>	 Player relog...", -- [142]
-			"<17:25:33><DEBUG>	 GetML()", -- [143]
-			"<17:27:16><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [144]
-			"<17:27:16><INFO>	 UpdatePlayersData()", -- [145]
-			"<17:27:19><DEBUG>	 GetML()", -- [146]
-			"<17:30:36><DEBUG>	 Event: LOOT_READY true", -- [147]
-			"<17:30:37><DEBUG>	 Event: LOOT_READY true", -- [148]
-			"<17:32:27><DEBUG>	 Event: LOOT_READY true", -- [149]
-			"<17:32:41><DEBUG>	 Event: LOOT_READY true", -- [150]
-			"<17:33:06><DEBUG>	 Event: LOOT_READY true", -- [151]
-			"<17:33:27><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [152]
-			"<17:33:29><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [153]
-			"<17:33:29><INFO>	 UpdatePlayersData()", -- [154]
-			"<17:33:30><DEBUG>	 GetML()", -- [155]
-			"<17:33:30><DEBUG>	 GetML()", -- [156]
-			"<17:35:17><DEBUG>	 Event: LOOT_READY true", -- [157]
-			"<17:35:17><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4228-1004-6739-23682-0000732E18 77454", -- [158]
-			"<17:35:17><DEBUG>	 Adding to self.lootSlotInfo 2 |cff0070dd|Hitem:143902::::::::50:102::22:1:7464:1:28:181:::::|h[Wicked Witch's Signet]|h|r 3 1 Creature-0-4228-1004-6739-23682-0000732E18 1", -- [159]
-			"<17:35:17><DEBUG>	 OnLootSlotCleared() 2 |cff0070dd|Hitem:143902::::::::50:102::22:1:7464:1:28:181:::::|h[Wicked Witch's Signet]|h|r 3", -- [160]
-			"<17:35:17><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143902 |cff0070dd|Hitem:143902::::::::50:102::22:1:7464:2:28:181:9:50:::::|h[Wicked Witch's Signet]|h|r 1 Zulbathal DRUID", -- [161]
-			"<17:35:17><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [162]
-			"<17:35:17><DEBUG>	 Event: LOOT_CLOSED", -- [163]
-			"<17:35:17><DEBUG>	 Event: LOOT_CLOSED", -- [164]
-			"<17:35:18><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Zulbathal-Zul'jin", -- [165]
-			"<17:35:18><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Zulbathal-Zul'jin", -- [166]
-			"<17:35:19><DEBUG>	 Storage:New |cff0070dd|Hitem:143902::::::::50:102::22:1:7464:1:28:181:::::|h[Wicked Witch's Signet]|h|r temp", -- [167]
-			"<17:35:19><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143902::::::::50:102::22:1:7464:1:28:181:::::||h[Wicked Witch's Signet]||h||r 5", -- [168]
-			"<17:35:19><DEBUG>	 Found: nil nil nil", -- [169]
-			"<17:35:20><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143902::::::::50:102::22:1:7464:1:28:181:::::||h[Wicked Witch's Signet]||h||r 5", -- [170]
-			"<17:35:20><DEBUG>	 Found: nil nil nil", -- [171]
-			"<17:35:20><DEBUG>	 Event: LOOT_READY true", -- [172]
-			"<17:35:20><DEBUG>	 Adding to self.lootSlotInfo 2 |cff0070dd|Hitem:117355::::::::50:102::22:1:7464:1:28:181:::::|h[The Horseman's Horrific Hood]|h|r 3 1 Item-61-0-4000000B07602576 1", -- [173]
-			"<17:35:21><DEBUG>	 OnLootSlotCleared() 2 |cff0070dd|Hitem:117355::::::::50:102::22:1:7464:1:28:181:::::|h[The Horseman's Horrific Hood]|h|r 3", -- [174]
-			"<17:35:21><DEBUG>	 Event: LOOT_READY true", -- [175]
-			"<17:35:21><DEBUG>	 Event: LOOT_CLOSED", -- [176]
-			"<17:35:21><DEBUG>	 Event: LOOT_CLOSED", -- [177]
-			"<17:35:21><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143902::::::::50:102::22:1:7464:1:28:181:::::||h[Wicked Witch's Signet]||h||r 5", -- [178]
-			"<17:35:21><DEBUG>	 Found: nil nil nil", -- [179]
-			"<17:35:22><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143902 |cff0070dd|Hitem:143902::::::::50:102::22:1:7464:2:28:181:9:32:::::|h[Wicked Witch's Signet]|h|r 1 Horneefist-BleedingHollow MONK", -- [180]
-			"<17:35:22><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143902::::::::50:102::22:1:7464:1:28:181:::::||h[Wicked Witch's Signet]||h||r 5", -- [181]
-			"<17:35:22><DEBUG>	 Found: nil nil nil", -- [182]
-			"<17:35:22><ERROR>	 UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:143902::::::::50:102::22:1:7464:1:28:181:::::|h[Wicked Witch's Signet]|h|r not found in bags", -- [183]
-			"<17:35:23><DEBUG>	 Storage:New |cff0070dd|Hitem:117355::::::::50:102::22:1:7464:1:28:181:::::|h[The Horseman's Horrific Hood]|h|r temp", -- [184]
-			"<17:35:23><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:117355::::::::50:102::22:1:7464:1:28:181:::::||h[The Horseman's Horrific Hood]||h||r 5", -- [185]
-			"<17:35:23><DEBUG>	 Found: nil nil nil", -- [186]
-			"<17:35:24><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:117355::::::::50:102::22:1:7464:1:28:181:::::||h[The Horseman's Horrific Hood]||h||r 5", -- [187]
-			"<17:35:24><DEBUG>	 Found: nil nil nil", -- [188]
-			"<17:35:25><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:117355::::::::50:102::22:1:7464:1:28:181:::::||h[The Horseman's Horrific Hood]||h||r 5", -- [189]
-			"<17:35:25><DEBUG>	 Found: nil nil nil", -- [190]
-			"<17:35:26><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:117355::::::::50:102::22:1:7464:1:28:181:::::||h[The Horseman's Horrific Hood]||h||r 5", -- [191]
-			"<17:35:26><DEBUG>	 Found: nil nil nil", -- [192]
-			"<17:35:26><ERROR>	 UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:117355::::::::50:102::22:1:7464:1:28:181:::::|h[The Horseman's Horrific Hood]|h|r not found in bags", -- [193]
-			"<17:35:33><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-2-00004606D8D2", -- [194]
-			"<17:35:33><DEBUG>	 GetML()", -- [195]
-			"<17:35:39><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [196]
-			"<17:35:39><INFO>	 UpdatePlayersData()", -- [197]
-			"<17:35:41><DEBUG>	 GetML()", -- [198]
-			"<17:35:48><DEBUG>	 Event: LOOT_READY true", -- [199]
-			"<17:35:48><DEBUG>	 Event: LOOT_READY true", -- [200]
-			"<17:35:56><DEBUG>	 Event: LOOT_READY true", -- [201]
-			"<17:36:02><DEBUG>	 Event: LOOT_READY true", -- [202]
-			"<17:36:10><DEBUG>	 Event: LOOT_READY true", -- [203]
-			"<17:36:10><DEBUG>	 Event: LOOT_READY true", -- [204]
-			"<17:37:27><INFO>	 Logged In", -- [205]
-			"<17:37:27>[ML]<INFO>	 Init", -- [206]
-			"<17:37:27><INFO>	 RCLootCouncil TradeUI enabled", -- [207]
-			"<17:37:42><INFO>	 Durlok-BlackDragonflight 3.2.0 nil", -- [208]
-			"<17:37:42><DEBUG>	 ActivateSkin bfa", -- [209]
-			"<17:37:53><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [210]
-			"<17:37:53><INFO>	 UpdatePlayersData()", -- [211]
-			"<17:37:53><INFO>	 Player relog...", -- [212]
-			"<17:38:03><DEBUG>	 GetML()", -- [213]
-			"<17:39:03><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [214]
-			"<17:39:03><INFO>	 UpdatePlayersData()", -- [215]
-			"<17:39:05><DEBUG>	 GetML()", -- [216]
-			"<17:40:04><DEBUG>	 Event: LOOT_READY true", -- [217]
-			"<17:40:04><DEBUG>	 Event: LOOT_READY true", -- [218]
-			"<17:40:28><DEBUG>	 Event: LOOT_READY true", -- [219]
-			"<17:41:22><DEBUG>	 Event: LOOT_READY true", -- [220]
-			"<17:41:22><DEBUG>	 Event: LOOT_READY true", -- [221]
-			"<17:41:28><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [222]
-			"<17:41:30><DEBUG>	 GetML()", -- [223]
-			"<17:41:31><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [224]
-			"<17:41:31><INFO>	 UpdatePlayersData()", -- [225]
-			"<17:41:32><DEBUG>	 GetML()", -- [226]
-			"<17:43:14><DEBUG>	 Event: LOOT_READY true", -- [227]
-			"<17:43:14><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-14819-23682-000073301E 74338", -- [228]
-			"<17:43:14><DEBUG>	 Adding to self.lootSlotInfo 3 |cff0070dd|Hitem:143903::::::::50:104::22:1:7464:1:28:181:::::|h[The Horseman's Ring]|h|r 3 1 Creature-0-3776-1004-14819-23682-000073301E 1", -- [229]
-			"<17:43:14><DEBUG>	 OnLootSlotCleared() 3 |cff0070dd|Hitem:143903::::::::50:104::22:1:7464:1:28:181:::::|h[The Horseman's Ring]|h|r 3", -- [230]
-			"<17:43:14><DEBUG>	 Event: LOOT_READY true", -- [231]
-			"<17:43:14><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-14819-23682-000073301E 74338", -- [232]
-			"<17:43:14><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143903 |cff0070dd|Hitem:143903::::::::50:104::22:1:7464:2:28:181:9:50:::::|h[The Horseman's Ring]|h|r 1 Durlok DRUID", -- [233]
-			"<17:43:14><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [234]
-			"<17:43:14><DEBUG>	 Event: LOOT_CLOSED", -- [235]
-			"<17:43:14><DEBUG>	 Event: LOOT_CLOSED", -- [236]
-			"<17:43:14><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Durlok-BlackDragonflight", -- [237]
-			"<17:43:14><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Durlok-BlackDragonflight", -- [238]
-			"<17:43:16><DEBUG>	 Storage:New |cff0070dd|Hitem:143903::::::::50:104::22:1:7464:1:28:181:::::|h[The Horseman's Ring]|h|r temp", -- [239]
-			"<17:43:16><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143903::::::::50:104::22:1:7464:1:28:181:::::||h[The Horseman's Ring]||h||r 5", -- [240]
-			"<17:43:16><DEBUG>	 Found: nil nil nil", -- [241]
-			"<17:43:17><DEBUG>	 Event: LOOT_READY true", -- [242]
-			"<17:43:17><DEBUG>	 Event: LOOT_READY true", -- [243]
-			"<17:43:17><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143903::::::::50:104::22:1:7464:1:28:181:::::||h[The Horseman's Ring]||h||r 5", -- [244]
-			"<17:43:17><DEBUG>	 Found: nil nil nil", -- [245]
-			"<17:43:17><DEBUG>	 Event: LOOT_CLOSED", -- [246]
-			"<17:43:17><DEBUG>	 Event: LOOT_CLOSED", -- [247]
-			"<17:43:17><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143904 |cff0070dd|Hitem:143904::::::::50:104::22:1:7464:2:28:181:9:60:::::|h[Seal of Ghoulish Glee]|h|r 1 Krayus-Proudmoore MAGE", -- [248]
-			"<17:43:18><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [249]
-			"<17:43:18><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143903::::::::50:104::22:1:7464:1:28:181:::::||h[The Horseman's Ring]||h||r 5", -- [250]
-			"<17:43:18><DEBUG>	 Found: nil nil nil", -- [251]
-			"<17:43:19><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143903::::::::50:104::22:1:7464:1:28:181:::::||h[The Horseman's Ring]||h||r 5", -- [252]
-			"<17:43:19><DEBUG>	 Found: nil nil nil", -- [253]
-			"<17:43:19><ERROR>	 UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:143903::::::::50:104::22:1:7464:1:28:181:::::|h[The Horseman's Ring]|h|r not found in bags", -- [254]
-			"<17:43:20><DEBUG>	 GetML()", -- [255]
-			"<17:43:25><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-2-00004606DDA1", -- [256]
-			"<17:43:25><DEBUG>	 GetML()", -- [257]
-			"<17:43:32><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [258]
-			"<17:43:32><INFO>	 UpdatePlayersData()", -- [259]
-			"<17:43:33><DEBUG>	 GetML()", -- [260]
-			"<17:45:38><INFO>	 Logged In", -- [261]
-			"<17:45:38>[ML]<INFO>	 Init", -- [262]
-			"<17:45:38><INFO>	 RCLootCouncil TradeUI enabled", -- [263]
-			"<17:45:56><INFO>	 Avisar-Dalaran 3.2.0 nil", -- [264]
-			"<17:45:56><DEBUG>	 ActivateSkin bfa", -- [265]
-			"<17:46:08><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [266]
-			"<17:46:08><INFO>	 UpdatePlayersData()", -- [267]
-			"<17:46:08><INFO>	 Player relog...", -- [268]
-			"<17:46:18><DEBUG>	 GetML()", -- [269]
-			"<17:52:45><DEBUG>	 Event: LOOT_READY true", -- [270]
-			"<17:56:08><DEBUG>	 Event: LOOT_READY true", -- [271]
-			"<17:56:42><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [272]
-			"<17:56:44><DEBUG>	 GetML()", -- [273]
-			"<17:56:45><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [274]
-			"<17:56:45><INFO>	 UpdatePlayersData()", -- [275]
-			"<17:56:48><DEBUG>	 GetML()", -- [276]
-			"<17:58:48><DEBUG>	 Event: LOOT_READY true", -- [277]
-			"<17:58:48><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-14999-23682-00007333B5 121403", -- [278]
-			"<17:58:48><DEBUG>	 Event: LOOT_READY true", -- [279]
-			"<17:58:48><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-14999-23682-00007333B5 121403", -- [280]
-			"<17:58:49><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [281]
-			"<17:58:49><DEBUG>	 Event: LOOT_CLOSED", -- [282]
-			"<17:58:49><DEBUG>	 Event: LOOT_CLOSED", -- [283]
-			"<17:58:49><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Avisar-Dalaran", -- [284]
-			"<17:58:49><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Avisar-Dalaran", -- [285]
-			"<17:58:50><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143904 |cff0070dd|Hitem:143904::::::::51:70::22:1:7464:2:28:181:9:60:::::|h[Seal of Ghoulish Glee]|h|r 1 Darmineeh HUNTER", -- [286]
-			"<17:58:50><DEBUG>	 Event: LOOT_READY true", -- [287]
-			"<17:58:50><DEBUG>	 Adding to self.lootSlotInfo 2 |cff0070dd|Hitem:33154::::::::51:70::22::1:28:373:::::|h[Sinister Squashling]|h|r 3 1 Item-3683-0-4000000A5D7DB8C4 1", -- [288]
-			"<17:58:50><DEBUG>	 Event: LOOT_READY true", -- [289]
-			"<17:58:50><DEBUG>	 Adding to self.lootSlotInfo 2 |cff0070dd|Hitem:33154::::::::51:70::22::1:28:373:::::|h[Sinister Squashling]|h|r 3 1 Item-3683-0-4000000A5D7DB8C4 1", -- [290]
-			"<17:58:51><DEBUG>	 OnLootSlotCleared() 2 |cff0070dd|Hitem:33154::::::::51:70::22::1:28:373:::::|h[Sinister Squashling]|h|r 3", -- [291]
-			"<17:58:51><DEBUG>	 Event: LOOT_CLOSED", -- [292]
-			"<17:58:51><DEBUG>	 Event: LOOT_CLOSED", -- [293]
-			"<17:58:52><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Avisar-Dalaran", -- [294]
-			"<17:58:52><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Avisar-Dalaran", -- [295]
-			"<17:58:53><DEBUG>	 Storage:New |cff0070dd|Hitem:33154::::::::51:70::22::1:28:373:::::|h[Sinister Squashling]|h|r temp", -- [296]
-			"<17:58:53><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:33154::::::::51:70::22::1:28:373:::::||h[Sinister Squashling]||h||r 5", -- [297]
-			"<17:58:53><DEBUG>	 Found item at 1 3", -- [298]
-			"<17:58:54><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:33154::::::::51:70::22::1:28:373:::::||h[Sinister Squashling]||h||r 5", -- [299]
-			"<17:58:54><DEBUG>	 Found item at 0 19", -- [300]
-			"<17:58:54><Comm>	 ^1^Stradable^T^N1^S|cff0070dd|Hitem:33154::::::::51:70::22::1:28:373:::::|h[Sinister~`Squashling]|h|r^N2^S0^t^^ INSTANCE_CHAT Avisar-Dalaran", -- [301]
-			"<17:58:59><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-2-00004606E658", -- [302]
-			"<17:58:59><DEBUG>	 GetML()", -- [303]
-			"<17:59:06><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [304]
-			"<17:59:06><INFO>	 UpdatePlayersData()", -- [305]
-			"<17:59:09><DEBUG>	 GetML()", -- [306]
-			"<18:00:31><INFO>	 Logged In", -- [307]
-			"<18:00:31>[ML]<INFO>	 Init", -- [308]
-			"<18:00:31><INFO>	 RCLootCouncil TradeUI enabled", -- [309]
-			"<18:00:47><INFO>	 Illingrath-Dalaran 3.2.0 nil", -- [310]
-			"<18:00:47><DEBUG>	 ActivateSkin bfa", -- [311]
-			"<18:00:58><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [312]
-			"<18:00:58><INFO>	 UpdatePlayersData()", -- [313]
-			"<18:00:58><INFO>	 Player relog...", -- [314]
-			"<18:01:06><DEBUG>	 GetML()", -- [315]
-			"<18:01:06><DEBUG>	 Storage:New |cff0070dd|Hitem:33154::::::::51:70::22::1:28:373:::::|h[Sinister Squashling]|h|r temp restored table: 00000254E04319F0", -- [316]
-			"<18:01:06><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:33154::::::::51:70::22::1:28:373:::::||h[Sinister Squashling]||h||r 5", -- [317]
-			"<18:01:06><DEBUG>	 Found: nil nil nil", -- [318]
-			"<18:01:06><WARNING>	 ItemStorage, db item no longer in bags |cff0070dd|Hitem:33154::::::::51:70::22::1:28:373:::::|h[Sinister Squashling]|h|r", -- [319]
-			"<18:01:06><DEBUG>	 Storage:RemoveItem |cff0070dd|Hitem:33154::::::::51:70::22::1:28:373:::::|h[Sinister Squashling]|h|r", -- [320]
-			"<18:03:32><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [321]
-			"<18:03:34><DEBUG>	 GetML()", -- [322]
-			"<18:03:35><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [323]
-			"<18:03:35><INFO>	 UpdatePlayersData()", -- [324]
-			"<18:03:37><DEBUG>	 GetML()", -- [325]
-			"<18:06:03><DEBUG>	 Event: LOOT_READY true", -- [326]
-			"<18:06:03><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-15079-23682-0000733549 120354", -- [327]
-			"<18:06:03><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [328]
-			"<18:06:03><DEBUG>	 Event: LOOT_CLOSED", -- [329]
-			"<18:06:03><DEBUG>	 Event: LOOT_CLOSED", -- [330]
-			"<18:06:03><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Illingrath-Dalaran", -- [331]
-			"<18:06:03><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Illingrath-Dalaran", -- [332]
-			"<18:06:04><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143904 |cff0070dd|Hitem:143904::::::::50:581::22:1:7464:2:28:181:9:60:::::|h[Seal of Ghoulish Glee]|h|r 1 Willowstorm-MoonGuard SHAMAN", -- [333]
-			"<18:06:05><DEBUG>	 Event: LOOT_READY true", -- [334]
-			"<18:06:05><DEBUG>	 Adding to self.lootSlotInfo 2 |cff0070dd|Hitem:37011::::::::50:581::22::1:28:872:::::|h[Magic Broom]|h|r 3 1 Item-3683-0-4000000A5D7E0521 1", -- [335]
-			"<18:06:05><DEBUG>	 OnLootSlotCleared() 2 |cff0070dd|Hitem:37011::::::::50:581::22::1:28:872:::::|h[Magic Broom]|h|r 3", -- [336]
-			"<18:06:05><DEBUG>	 Event: LOOT_READY true", -- [337]
-			"<18:06:06><DEBUG>	 Event: LOOT_CLOSED", -- [338]
-			"<18:06:06><DEBUG>	 Event: LOOT_CLOSED", -- [339]
-			"<18:06:07><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [340]
-			"<18:06:07><DEBUG>	 Storage:New |cff0070dd|Hitem:37011::::::::50:581::22::1:28:872:::::|h[Magic Broom]|h|r temp", -- [341]
-			"<18:06:07><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::50:581::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [342]
-			"<18:06:07><DEBUG>	 Found item at 0 14", -- [343]
-			"<18:06:07><DEBUG>	 Found: 0 14 0", -- [344]
-			"<18:06:08><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::50:581::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [345]
-			"<18:06:08><DEBUG>	 Found item at 0 14", -- [346]
-			"<18:06:08><DEBUG>	 Found: 0 14 0", -- [347]
-			"<18:06:08><Comm>	 ^1^Sn_t^T^N1^S|cff0070dd|Hitem:37011::::::::50:581::22::1:28:872:::::|h[Magic~`Broom]|h|r^N2^S0^t^^ INSTANCE_CHAT Illingrath-Dalaran", -- [348]
-			"<18:06:09><DEBUG>	 GetML()", -- [349]
-			"<18:06:17><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-00004606EE27", -- [350]
-			"<18:06:17><DEBUG>	 GetML()", -- [351]
-			"<18:06:24><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [352]
-			"<18:06:24><INFO>	 UpdatePlayersData()", -- [353]
-			"<18:06:26><DEBUG>	 GetML()", -- [354]
-			"<18:07:24><INFO>	 Logged In", -- [355]
-			"<18:07:24>[ML]<INFO>	 Init", -- [356]
-			"<18:07:24><INFO>	 RCLootCouncil TradeUI enabled", -- [357]
-			"<18:07:40><INFO>	 Varlouris-Dalaran 3.2.0 nil", -- [358]
-			"<18:07:40><DEBUG>	 ActivateSkin bfa", -- [359]
-			"<18:07:51><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [360]
-			"<18:07:51><INFO>	 UpdatePlayersData()", -- [361]
-			"<18:07:51><INFO>	 Player relog...", -- [362]
-			"<18:07:59><DEBUG>	 GetML()", -- [363]
-			"<18:08:58><DEBUG>	 Event: LOOT_READY true", -- [364]
-			"<18:08:58><DEBUG>	 Event: LOOT_READY true", -- [365]
-			"<18:14:48><DEBUG>	 Event: LOOT_READY true", -- [366]
-			"<18:14:49><DEBUG>	 Event: LOOT_READY true", -- [367]
-			"<18:14:50><DEBUG>	 Event: LOOT_READY true", -- [368]
-			"<18:17:44><DEBUG>	 Event: LOOT_READY true", -- [369]
-			"<18:18:22><DEBUG>	 Event: LOOT_READY true", -- [370]
-			"<18:18:52><DEBUG>	 Event: LOOT_READY true", -- [371]
-			"<18:19:53><DEBUG>	 Event: LOOT_READY true", -- [372]
-			"<18:21:00><DEBUG>	 Event: LOOT_READY true", -- [373]
-			"<18:21:00><DEBUG>	 Event: LOOT_READY true", -- [374]
-			"<18:22:57><DEBUG>	 Event: LOOT_READY true", -- [375]
-			"<18:23:25><DEBUG>	 Event: LOOT_READY true", -- [376]
-			"<18:30:36><DEBUG>	 Event: LOOT_READY true", -- [377]
-			"<18:35:24><DEBUG>	 Event: LOOT_READY true", -- [378]
-			"<18:36:00><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [379]
-			"<18:36:02><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [380]
-			"<18:36:02><INFO>	 UpdatePlayersData()", -- [381]
-			"<18:36:03><DEBUG>	 GetML()", -- [382]
-			"<18:36:04><DEBUG>	 GetML()", -- [383]
-			"<18:38:08><DEBUG>	 Event: LOOT_READY true", -- [384]
-			"<18:38:08><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4228-1004-8663-23682-0000733CE5 141091", -- [385]
-			"<18:38:08><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [386]
-			"<18:38:08><DEBUG>	 Event: LOOT_CLOSED", -- [387]
-			"<18:38:08><DEBUG>	 Event: LOOT_CLOSED", -- [388]
-			"<18:38:08><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143904 |cff0070dd|Hitem:143904::::::::50:263::22:1:7464:2:28:181:9:10:::::|h[Seal of Ghoulish Glee]|h|r 1 Rylèé MAGE", -- [389]
-			"<18:38:08><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Varlouris-Dalaran", -- [390]
-			"<18:38:08><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Varlouris-Dalaran", -- [391]
-			"<18:38:11><DEBUG>	 Event: LOOT_READY true", -- [392]
-			"<18:38:11><DEBUG>	 Event: LOOT_READY true", -- [393]
-			"<18:38:11><DEBUG>	 Event: LOOT_CLOSED", -- [394]
-			"<18:38:11><DEBUG>	 Event: LOOT_CLOSED", -- [395]
-			"<18:38:19><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-2-0000460704F7", -- [396]
-			"<18:38:19><DEBUG>	 GetML()", -- [397]
-			"<18:38:24><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [398]
-			"<18:38:24><INFO>	 UpdatePlayersData()", -- [399]
-			"<18:38:26><DEBUG>	 GetML()", -- [400]
-			"<18:39:14><INFO>	 Logged In", -- [401]
-			"<18:39:14>[ML]<INFO>	 Init", -- [402]
-			"<18:39:14><INFO>	 RCLootCouncil TradeUI enabled", -- [403]
-			"<18:39:29><INFO>	 Darnastris-Dalaran 3.2.0 nil", -- [404]
-			"<18:39:29><DEBUG>	 ActivateSkin bfa", -- [405]
-			"<18:39:41><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [406]
-			"<18:39:41><INFO>	 UpdatePlayersData()", -- [407]
-			"<18:39:41><INFO>	 Player relog...", -- [408]
-			"<18:39:50><DEBUG>	 GetML()", -- [409]
-			"<18:48:08><DEBUG>	 Event: LOOT_READY true", -- [410]
-			"<18:50:14><INFO>	 Logged In", -- [411]
-			"<18:50:14>[ML]<INFO>	 Init", -- [412]
-			"<18:50:14><INFO>	 RCLootCouncil TradeUI enabled", -- [413]
-			"<18:50:29><INFO>	 Darnastris-Dalaran 3.2.0 nil", -- [414]
-			"<18:50:29><DEBUG>	 ActivateSkin bfa", -- [415]
-			"<18:50:41><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [416]
-			"<18:50:41><INFO>	 UpdatePlayersData()", -- [417]
-			"<18:50:41><INFO>	 Player relog...", -- [418]
-			"<18:50:50><DEBUG>	 GetML()", -- [419]
-			"<18:52:55><DEBUG>	 Event: LOOT_READY true", -- [420]
-			"<18:52:56><DEBUG>	 Event: LOOT_READY true", -- [421]
-			"<18:53:25><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [422]
-			"<18:53:27><DEBUG>	 GetML()", -- [423]
-			"<18:53:27><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [424]
-			"<18:53:27><INFO>	 UpdatePlayersData()", -- [425]
-			"<18:53:29><DEBUG>	 GetML()", -- [426]
-			"<18:55:27><DEBUG>	 Event: LOOT_READY true", -- [427]
-			"<18:55:27><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4228-1004-9257-23682-00007340F7 140040", -- [428]
-			"<18:55:27><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [429]
-			"<18:55:27><DEBUG>	 Event: LOOT_CLOSED", -- [430]
-			"<18:55:27><DEBUG>	 Event: LOOT_CLOSED", -- [431]
-			"<18:55:27><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143902 |cff0070dd|Hitem:143902::::::::50:64::22:1:7464:2:28:181:9:51:::::|h[Wicked Witch's Signet]|h|r 1 Absyntha-Velen DRUID", -- [432]
-			"<18:55:27><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Darnastris-Dalaran", -- [433]
-			"<18:55:27><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Darnastris-Dalaran", -- [434]
-			"<18:55:27><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143904 |cff0070dd|Hitem:143904::::::::50:64::22:1:7464:2:28:181:9:60:::::|h[Seal of Ghoulish Glee]|h|r 1 Maelha-Whisperwind MAGE", -- [435]
-			"<18:55:29><DEBUG>	 Event: LOOT_READY true", -- [436]
-			"<18:55:29><DEBUG>	 Event: LOOT_CLOSED", -- [437]
-			"<18:55:29><DEBUG>	 Event: LOOT_CLOSED", -- [438]
-			"<18:55:34><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [439]
-			"<18:55:36><DEBUG>	 GetML()", -- [440]
-			"<18:55:37><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-000046070F34", -- [441]
-			"<18:55:37><DEBUG>	 GetML()", -- [442]
-			"<18:55:43><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [443]
-			"<18:55:43><INFO>	 UpdatePlayersData()", -- [444]
-			"<18:55:44><DEBUG>	 GetML()", -- [445]
-			"<18:56:30><INFO>	 Logged In", -- [446]
-			"<18:56:30>[ML]<INFO>	 Init", -- [447]
-			"<18:56:30><INFO>	 RCLootCouncil TradeUI enabled", -- [448]
-			"<18:57:06><INFO>	 Rotclaugh-Dalaran 3.2.0 nil", -- [449]
-			"<18:57:06><DEBUG>	 ActivateSkin bfa", -- [450]
-			"<18:57:17><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [451]
-			"<18:57:17><INFO>	 UpdatePlayersData()", -- [452]
-			"<18:57:17><INFO>	 Player relog...", -- [453]
-			"<18:57:25><DEBUG>	 GetML()", -- [454]
-			"<19:04:43><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [455]
-			"<19:04:45><DEBUG>	 GetML()", -- [456]
-			"<19:04:45><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [457]
-			"<19:04:45><INFO>	 UpdatePlayersData()", -- [458]
-			"<19:04:47><DEBUG>	 GetML()", -- [459]
-			"<19:07:47><DEBUG>	 Event: LOOT_READY true", -- [460]
-			"<19:07:47><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4228-1004-9617-23682-000073439F 125161", -- [461]
-			"<19:07:47><DEBUG>	 Event: LOOT_READY true", -- [462]
-			"<19:07:47><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4228-1004-9617-23682-000073439F 125161", -- [463]
-			"<19:07:48><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [464]
-			"<19:07:48><DEBUG>	 Event: LOOT_CLOSED", -- [465]
-			"<19:07:48><DEBUG>	 Event: LOOT_CLOSED", -- [466]
-			"<19:07:48><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143903 |cff0070dd|Hitem:143903::::::::47:251::22:1:7464:2:28:181:9:54:::::|h[The Horseman's Ring]|h|r 1 Sillvanyah MAGE", -- [467]
-			"<19:07:48><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Rotclaugh-Dalaran", -- [468]
-			"<19:07:48><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Rotclaugh-Dalaran", -- [469]
-			"<19:07:49><DEBUG>	 Event: LOOT_READY true", -- [470]
-			"<19:07:49><DEBUG>	 Adding to self.lootSlotInfo 2 |cff0070dd|Hitem:33292::::::::47:251::22::1:28:181:::::|h[Hallowed Helm]|h|r 3 1 Item-3683-0-4000000A5D807022 1", -- [471]
-			"<19:07:49><DEBUG>	 Adding to self.lootSlotInfo 4 |cff0070dd|Hitem:117356::::::::47:251::22:1:7464:1:28:181:::::|h[The Horseman's Sinister Slicer]|h|r 3 1 Item-3683-0-4000000A5D807022 1", -- [472]
-			"<19:07:49><DEBUG>	 OnLootSlotCleared() 4 |cff0070dd|Hitem:117356::::::::47:251::22:1:7464:1:28:181:::::|h[The Horseman's Sinister Slicer]|h|r 3", -- [473]
-			"<19:07:49><DEBUG>	 Event: LOOT_READY true", -- [474]
-			"<19:07:49><DEBUG>	 Adding to self.lootSlotInfo 2 |cff0070dd|Hitem:33292::::::::47:251::22::1:28:181:::::|h[Hallowed Helm]|h|r 3 1 Item-3683-0-4000000A5D807022 1", -- [475]
-			"<19:07:49><DEBUG>	 OnLootSlotCleared() 2 |cff0070dd|Hitem:33292::::::::47:251::22::1:28:181:::::|h[Hallowed Helm]|h|r 3", -- [476]
-			"<19:07:49><DEBUG>	 Event: LOOT_CLOSED", -- [477]
-			"<19:07:49><DEBUG>	 Event: LOOT_CLOSED", -- [478]
-			"<19:07:49><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Rotclaugh-Dalaran", -- [479]
-			"<19:07:49><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Rotclaugh-Dalaran", -- [480]
-			"<19:07:51><DEBUG>	 Storage:New |cff0070dd|Hitem:117356::::::::47:251::22:1:7464:1:28:181:::::|h[The Horseman's Sinister Slicer]|h|r temp", -- [481]
-			"<19:07:51><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:117356::::::::47:251::22:1:7464:1:28:181:::::||h[The Horseman's Sinister Slicer]||h||r 5", -- [482]
-			"<19:07:51><DEBUG>	 Found: nil nil nil", -- [483]
-			"<19:07:51><DEBUG>	 Storage:New |cff0070dd|Hitem:33292::::::::47:251::22::1:28:181:::::|h[Hallowed Helm]|h|r temp", -- [484]
-			"<19:07:51><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:33292::::::::47:251::22::1:28:181:::::||h[Hallowed Helm]||h||r 5", -- [485]
-			"<19:07:51><DEBUG>	 Found item at 1 1", -- [486]
-			"<19:07:51><DEBUG>	 Found: 1 1 0", -- [487]
-			"<19:07:52><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:117356::::::::47:251::22:1:7464:1:28:181:::::||h[The Horseman's Sinister Slicer]||h||r 5", -- [488]
-			"<19:07:52><DEBUG>	 Found: nil nil nil", -- [489]
-			"<19:07:52><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:33292::::::::47:251::22::1:28:181:::::||h[Hallowed Helm]||h||r 5", -- [490]
-			"<19:07:52><DEBUG>	 Found item at 1 1", -- [491]
-			"<19:07:52><DEBUG>	 Found: 1 1 0", -- [492]
-			"<19:07:52><Comm>	 ^1^Sn_t^T^N1^S|cff0070dd|Hitem:33292::::::::47:251::22::1:28:181:::::|h[Hallowed~`Helm]|h|r^N2^S0^t^^ INSTANCE_CHAT Rotclaugh-Dalaran", -- [493]
-			"<19:07:53><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:117356::::::::47:251::22:1:7464:1:28:181:::::||h[The Horseman's Sinister Slicer]||h||r 5", -- [494]
-			"<19:07:53><DEBUG>	 Found: nil nil nil", -- [495]
-			"<19:07:54><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:117356::::::::47:251::22:1:7464:1:28:181:::::||h[The Horseman's Sinister Slicer]||h||r 5", -- [496]
-			"<19:07:54><DEBUG>	 Found: nil nil nil", -- [497]
-			"<19:07:54><ERROR>	 UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:117356::::::::47:251::22:1:7464:1:28:181:::::|h[The Horseman's Sinister Slicer]|h|r not found in bags", -- [498]
-			"<19:08:01><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-00004607164B", -- [499]
-			"<19:08:01><DEBUG>	 GetML()", -- [500]
-			"<19:08:48><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [501]
-			"<19:08:48><INFO>	 UpdatePlayersData()", -- [502]
-			"<19:08:51><DEBUG>	 GetML()", -- [503]
-			"<19:09:51><INFO>	 Logged In", -- [504]
-			"<19:09:51>[ML]<INFO>	 Init", -- [505]
-			"<19:09:51><INFO>	 RCLootCouncil TradeUI enabled", -- [506]
-			"<19:10:09><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [507]
-			"<19:10:09><DEBUG>	 ActivateSkin bfa", -- [508]
-			"<19:10:21><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [509]
-			"<19:10:21><INFO>	 UpdatePlayersData()", -- [510]
-			"<19:10:21><INFO>	 Player relog...", -- [511]
-			"<19:10:24><DEBUG>	 GetPlayersGuildRank()", -- [512]
-			"<19:10:24><DEBUG>	 Found Guild Rank: Thuerge", -- [513]
-			"<19:10:40><DEBUG>	 GetML()", -- [514]
-			"<10:47:00><INFO>	 Logged In", -- [515]
-			"<10:47:00>[ML]<INFO>	 Init", -- [516]
-			"<10:47:00><INFO>	 RCLootCouncil TradeUI enabled", -- [517]
-			"<10:47:23><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [518]
-			"<10:47:23><DEBUG>	 ActivateSkin bfa", -- [519]
-			"<10:47:35><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [520]
-			"<10:47:35><INFO>	 UpdatePlayersData()", -- [521]
-			"<10:47:35><INFO>	 Player relog...", -- [522]
-			"<10:47:38><DEBUG>	 GetPlayersGuildRank()", -- [523]
-			"<10:47:38><DEBUG>	 Found Guild Rank: Thuerge", -- [524]
-			"<10:47:52><DEBUG>	 GetML()", -- [525]
-			"<11:03:15><INFO>	 Logged In", -- [526]
-			"<11:03:15>[ML]<INFO>	 Init", -- [527]
-			"<11:03:15><INFO>	 RCLootCouncil TradeUI enabled", -- [528]
-			"<11:03:35><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [529]
-			"<11:03:35><DEBUG>	 ActivateSkin bfa", -- [530]
-			"<11:03:47><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [531]
-			"<11:03:47><INFO>	 UpdatePlayersData()", -- [532]
-			"<11:03:47><INFO>	 Player relog...", -- [533]
-			"<11:03:50><DEBUG>	 GetPlayersGuildRank()", -- [534]
-			"<11:03:50><DEBUG>	 GetPlayersGuildRank()", -- [535]
-			"<11:03:50><DEBUG>	 Found Guild Rank: Thuerge", -- [536]
-			"<11:04:05><DEBUG>	 GetML()", -- [537]
-			"<11:05:07><DEBUG>	 Event: LOOT_READY true", -- [538]
-			"<11:05:24><DEBUG>	 Event: LOOT_READY true", -- [539]
-			"<11:05:24><DEBUG>	 Event: LOOT_READY true", -- [540]
-			"<11:05:44><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [541]
-			"<11:05:46><DEBUG>	 GetML()", -- [542]
-			"<11:05:47><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [543]
-			"<11:05:47><INFO>	 UpdatePlayersData()", -- [544]
-			"<11:06:02><DEBUG>	 GetML()", -- [545]
-			"<11:07:10><DEBUG>	 Event: LOOT_READY true", -- [546]
-			"<11:07:10><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-24335-23682-00007424DC 127555", -- [547]
-			"<11:07:10><DEBUG>	 Event: LOOT_READY true", -- [548]
-			"<11:07:10><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-24335-23682-00007424DC 127555", -- [549]
-			"<11:07:10><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [550]
-			"<11:07:10><DEBUG>	 Event: LOOT_CLOSED", -- [551]
-			"<11:07:10><DEBUG>	 Event: LOOT_CLOSED", -- [552]
-			"<11:07:11><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [553]
-			"<11:07:11><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [554]
-			"<11:07:13><DEBUG>	 Event: LOOT_READY true", -- [555]
-			"<11:07:13><DEBUG>	 Event: LOOT_READY true", -- [556]
-			"<11:07:14><DEBUG>	 Event: LOOT_CLOSED", -- [557]
-			"<11:07:14><DEBUG>	 Event: LOOT_CLOSED", -- [558]
-			"<11:07:14><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Clevelyn-Jaedenar", -- [559]
-			"<11:07:14><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Clevelyn-Jaedenar", -- [560]
-			"<11:07:14><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 33154 |cff0070dd|Hitem:33154::::::::60:71::::1:28:373:::::|h[Sinister Squashling]|h|r 1 Venatorr-Blade'sEdge HUNTER", -- [561]
-			"<11:07:15><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143902 |cff0070dd|Hitem:143902::::::::60:71::22:1:7464:2:28:181:9:60:::::|h[Wicked Witch's Signet]|h|r 1 Príya-BurningLegion HUNTER", -- [562]
-			"<11:07:20><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [563]
-			"<11:07:22><DEBUG>	 GetML()", -- [564]
-			"<11:07:23><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [565]
-			"<11:07:25><DEBUG>	 GetML()", -- [566]
-			"<11:07:26><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [567]
-			"<11:07:28><DEBUG>	 GetML()", -- [568]
-			"<11:07:44><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-000046090101", -- [569]
-			"<11:07:44><DEBUG>	 GetML()", -- [570]
-			"<11:07:51><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [571]
-			"<11:07:51><INFO>	 UpdatePlayersData()", -- [572]
-			"<11:08:01><DEBUG>	 GetML()", -- [573]
-			"<11:09:24><DEBUG>	 Event: LOOT_READY true", -- [574]
-			"<11:09:47><DEBUG>	 Event: LOOT_READY true", -- [575]
-			"<11:09:48><DEBUG>	 Event: LOOT_READY true", -- [576]
-			"<11:09:51><DEBUG>	 Event: LOOT_READY true", -- [577]
-			"<11:09:51><DEBUG>	 Event: LOOT_READY true", -- [578]
-			"<11:09:55><DEBUG>	 Event: LOOT_READY true", -- [579]
-			"<11:09:58><DEBUG>	 Event: LOOT_READY true", -- [580]
-			"<11:10:02><DEBUG>	 Event: LOOT_READY true", -- [581]
-			"<11:10:08><DEBUG>	 Event: LOOT_READY true", -- [582]
-			"<11:10:12><DEBUG>	 Event: LOOT_READY true", -- [583]
-			"<11:10:17><DEBUG>	 Event: LOOT_READY true", -- [584]
-			"<11:10:21><DEBUG>	 Event: LOOT_READY true", -- [585]
-			"<11:11:20><INFO>	 Logged In", -- [586]
-			"<11:11:20>[ML]<INFO>	 Init", -- [587]
-			"<11:11:20><INFO>	 RCLootCouncil TradeUI enabled", -- [588]
-			"<11:11:35><INFO>	 Durlok-BlackDragonflight 3.2.0 nil", -- [589]
-			"<11:11:35><DEBUG>	 ActivateSkin bfa", -- [590]
-			"<11:11:46><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [591]
-			"<11:11:46><INFO>	 UpdatePlayersData()", -- [592]
-			"<11:11:46><INFO>	 Player relog...", -- [593]
-			"<11:11:56><DEBUG>	 GetML()", -- [594]
-			"<11:12:18><DEBUG>	 Event: LOOT_READY true", -- [595]
-			"<11:12:21><DEBUG>	 Event: LOOT_READY true", -- [596]
-			"<11:12:23><DEBUG>	 Event: LOOT_READY true", -- [597]
-			"<11:12:27><DEBUG>	 Event: LOOT_READY true", -- [598]
-			"<11:12:31><DEBUG>	 Event: LOOT_READY true", -- [599]
-			"<11:12:35><DEBUG>	 Event: LOOT_READY true", -- [600]
-			"<11:12:35><DEBUG>	 Event: LOOT_READY true", -- [601]
-			"<11:12:40><DEBUG>	 Event: LOOT_READY true", -- [602]
-			"<11:12:44><DEBUG>	 Event: LOOT_READY true", -- [603]
-			"<11:12:47><DEBUG>	 Event: LOOT_READY true", -- [604]
-			"<11:13:21><DEBUG>	 Event: LOOT_READY true", -- [605]
-			"<11:13:37><DEBUG>	 Event: LOOT_READY true", -- [606]
-			"<11:14:19><DEBUG>	 Event: LOOT_READY true", -- [607]
-			"<11:14:48><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [608]
-			"<11:14:50><DEBUG>	 GetML()", -- [609]
-			"<11:14:50><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [610]
-			"<11:14:50><INFO>	 UpdatePlayersData()", -- [611]
-			"<11:14:52><DEBUG>	 GetML()", -- [612]
-			"<11:16:47><DEBUG>	 Event: LOOT_READY true", -- [613]
-			"<11:16:47><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-24455-23682-0000742701 124054", -- [614]
-			"<11:16:47><DEBUG>	 Event: LOOT_READY true", -- [615]
-			"<11:16:47><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-24455-23682-0000742701 124054", -- [616]
-			"<11:16:47><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [617]
-			"<11:16:47><DEBUG>	 Event: LOOT_CLOSED", -- [618]
-			"<11:16:47><DEBUG>	 Event: LOOT_CLOSED", -- [619]
-			"<11:16:47><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Durlok-BlackDragonflight", -- [620]
-			"<11:16:47><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Durlok-BlackDragonflight", -- [621]
-			"<11:16:47><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143903 |cff0070dd|Hitem:143903::::::::50:104::22:1:7464:2:28:181:9:60:::::|h[The Horseman's Ring]|h|r 1 Nooksak-Gul'dan MAGE", -- [622]
-			"<11:16:50><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143904 |cff0070dd|Hitem:143904::::::::50:104::22:1:7464:2:28:181:9:10:::::|h[Seal of Ghoulish Glee]|h|r 1 Sithhuxian-Gul'dan SHAMAN", -- [623]
-			"<11:16:57><DEBUG>	 Event: LOOT_READY true", -- [624]
-			"<11:16:58><DEBUG>	 Event: LOOT_READY true", -- [625]
-			"<11:16:58><DEBUG>	 Event: LOOT_CLOSED", -- [626]
-			"<11:16:58><DEBUG>	 Event: LOOT_CLOSED", -- [627]
-			"<11:17:04><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-000046090546", -- [628]
-			"<11:17:04><DEBUG>	 GetML()", -- [629]
-			"<11:17:10><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [630]
-			"<11:17:10><INFO>	 UpdatePlayersData()", -- [631]
-			"<11:17:12><DEBUG>	 GetML()", -- [632]
-			"<11:20:10><INFO>	 Logged In", -- [633]
-			"<11:20:10>[ML]<INFO>	 Init", -- [634]
-			"<11:20:10><INFO>	 RCLootCouncil TradeUI enabled", -- [635]
-			"<11:20:25><INFO>	 Zulbathal-Zul'jin 3.2.0 nil", -- [636]
-			"<11:20:25><DEBUG>	 ActivateSkin bfa", -- [637]
-			"<11:20:37><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [638]
-			"<11:20:37><INFO>	 UpdatePlayersData()", -- [639]
-			"<11:20:37><INFO>	 Player relog...", -- [640]
-			"<11:20:48><DEBUG>	 GetML()", -- [641]
-			"<11:22:21><DEBUG>	 Event: LOOT_READY true", -- [642]
-			"<11:22:35><DEBUG>	 Event: LOOT_READY true", -- [643]
-			"<11:23:29><DEBUG>	 Event: LOOT_READY true", -- [644]
-			"<11:23:40><DEBUG>	 Event: LOOT_READY true", -- [645]
-			"<11:23:40><DEBUG>	 Event: LOOT_READY true", -- [646]
-			"<11:24:49><DEBUG>	 Event: LOOT_READY true", -- [647]
-			"<11:25:00><DEBUG>	 Event: LOOT_READY true", -- [648]
-			"<11:25:00><DEBUG>	 Event: LOOT_READY true", -- [649]
-			"<11:26:06><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [650]
-			"<11:26:08><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [651]
-			"<11:26:08><INFO>	 UpdatePlayersData()", -- [652]
-			"<11:26:10><DEBUG>	 GetML()", -- [653]
-			"<11:26:11><DEBUG>	 GetML()", -- [654]
-			"<11:27:23><DEBUG>	 Event: LOOT_READY true", -- [655]
-			"<11:27:23><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4228-1004-29954-23682-000074299E 86559", -- [656]
-			"<11:27:23><DEBUG>	 Adding to self.lootSlotInfo 3 |cff0070dd|Hitem:143904::::::::50:102::22:1:7464:1:28:181:::::|h[Seal of Ghoulish Glee]|h|r 3 1 Creature-0-4228-1004-29954-23682-000074299E 1", -- [657]
-			"<11:27:23><DEBUG>	 OnLootSlotCleared() 3 |cff0070dd|Hitem:143904::::::::50:102::22:1:7464:1:28:181:::::|h[Seal of Ghoulish Glee]|h|r 3", -- [658]
-			"<11:27:23><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143904 |cff0070dd|Hitem:143904::::::::50:102::22:1:7464:2:28:181:9:50:::::|h[Seal of Ghoulish Glee]|h|r 1 Zulbathal DRUID", -- [659]
-			"<11:27:23><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [660]
-			"<11:27:23><DEBUG>	 Event: LOOT_CLOSED", -- [661]
-			"<11:27:23><DEBUG>	 Event: LOOT_CLOSED", -- [662]
-			"<11:27:24><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Zulbathal-Zul'jin", -- [663]
-			"<11:27:24><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Zulbathal-Zul'jin", -- [664]
-			"<11:27:25><DEBUG>	 Storage:New |cff0070dd|Hitem:143904::::::::50:102::22:1:7464:1:28:181:::::|h[Seal of Ghoulish Glee]|h|r temp", -- [665]
-			"<11:27:25><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143904::::::::50:102::22:1:7464:1:28:181:::::||h[Seal of Ghoulish Glee]||h||r 5", -- [666]
-			"<11:27:25><DEBUG>	 Found: nil nil nil", -- [667]
-			"<11:27:26><DEBUG>	 Event: LOOT_READY true", -- [668]
-			"<11:27:26><DEBUG>	 Adding to self.lootSlotInfo 2 |cff0070dd|Hitem:33154::::::::50:102::22::1:28:373:::::|h[Sinister Squashling]|h|r 3 1 Item-61-0-4000000B0784E507 1", -- [669]
-			"<11:27:26><DEBUG>	 Adding to self.lootSlotInfo 4 |cff0070dd|Hitem:37011::::::::50:102::22::1:28:872:::::|h[Magic Broom]|h|r 3 1 Item-61-0-4000000B0784E507 1", -- [670]
-			"<11:27:26><DEBUG>	 OnLootSlotCleared() 4 |cff0070dd|Hitem:37011::::::::50:102::22::1:28:872:::::|h[Magic Broom]|h|r 3", -- [671]
-			"<11:27:26><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143904::::::::50:102::22:1:7464:1:28:181:::::||h[Seal of Ghoulish Glee]||h||r 5", -- [672]
-			"<11:27:26><DEBUG>	 Found: nil nil nil", -- [673]
-			"<11:27:26><DEBUG>	 Event: LOOT_READY true", -- [674]
-			"<11:27:26><DEBUG>	 Adding to self.lootSlotInfo 2 |cff0070dd|Hitem:33154::::::::50:102::22::1:28:373:::::|h[Sinister Squashling]|h|r 3 1 Item-61-0-4000000B0784E507 1", -- [675]
-			"<11:27:26><DEBUG>	 OnLootSlotCleared() 2 |cff0070dd|Hitem:33154::::::::50:102::22::1:28:373:::::|h[Sinister Squashling]|h|r 3", -- [676]
-			"<11:27:27><DEBUG>	 Event: LOOT_CLOSED", -- [677]
-			"<11:27:27><DEBUG>	 Event: LOOT_CLOSED", -- [678]
-			"<11:27:27><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Zulbathal-Zul'jin", -- [679]
-			"<11:27:27><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Zulbathal-Zul'jin", -- [680]
-			"<11:27:27><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143904::::::::50:102::22:1:7464:1:28:181:::::||h[Seal of Ghoulish Glee]||h||r 5", -- [681]
-			"<11:27:27><DEBUG>	 Found: nil nil nil", -- [682]
-			"<11:27:28><DEBUG>	 Storage:New |cff0070dd|Hitem:37011::::::::50:102::22::1:28:872:::::|h[Magic Broom]|h|r temp", -- [683]
-			"<11:27:28><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::50:102::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [684]
-			"<11:27:28><DEBUG>	 Found item at 1 18", -- [685]
-			"<11:27:28><DEBUG>	 Found: 1 18 0", -- [686]
-			"<11:27:28><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143904::::::::50:102::22:1:7464:1:28:181:::::||h[Seal of Ghoulish Glee]||h||r 5", -- [687]
-			"<11:27:28><DEBUG>	 Found: nil nil nil", -- [688]
-			"<11:27:28><ERROR>	 UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:143904::::::::50:102::22:1:7464:1:28:181:::::|h[Seal of Ghoulish Glee]|h|r not found in bags", -- [689]
-			"<11:27:28><DEBUG>	 Storage:New |cff0070dd|Hitem:33154::::::::50:102::22::1:28:373:::::|h[Sinister Squashling]|h|r temp", -- [690]
-			"<11:27:28><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:33154::::::::50:102::22::1:28:373:::::||h[Sinister Squashling]||h||r 5", -- [691]
-			"<11:27:28><DEBUG>	 Found item at 1 20", -- [692]
-			"<11:27:29><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::50:102::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [693]
-			"<11:27:29><DEBUG>	 Found item at 1 18", -- [694]
-			"<11:27:29><DEBUG>	 Found: 1 18 0", -- [695]
-			"<11:27:29><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:33154::::::::50:102::22::1:28:373:::::||h[Sinister Squashling]||h||r 5", -- [696]
-			"<11:27:29><DEBUG>	 Found item at 1 20", -- [697]
-			"<11:27:29><Comm>	 ^1^Sn_t^T^N1^S|cff0070dd|Hitem:37011::::::::50:102::22::1:28:872:::::|h[Magic~`Broom]|h|r^N2^S0^t^^ INSTANCE_CHAT Zulbathal-Zul'jin", -- [698]
-			"<11:27:30><Comm>	 ^1^Stradable^T^N1^S|cff0070dd|Hitem:33154::::::::50:102::22::1:28:373:::::|h[Sinister~`Squashling]|h|r^N2^S0^t^^ INSTANCE_CHAT Zulbathal-Zul'jin", -- [699]
-			"<11:27:31><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [700]
-			"<11:27:33><DEBUG>	 GetML()", -- [701]
-			"<11:27:40><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-000046090EC5", -- [702]
-			"<11:27:40><DEBUG>	 GetML()", -- [703]
-			"<11:27:45><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [704]
-			"<11:27:45><INFO>	 UpdatePlayersData()", -- [705]
-			"<11:27:47><DEBUG>	 GetML()", -- [706]
-			"<11:28:55><DEBUG>	 Event: LOOT_READY true", -- [707]
-			"<11:28:58><DEBUG>	 Event: LOOT_READY true", -- [708]
-			"<11:29:08><DEBUG>	 Event: LOOT_READY true", -- [709]
-			"<11:29:13><DEBUG>	 Event: LOOT_READY true", -- [710]
-			"<11:29:18><DEBUG>	 Event: LOOT_READY true", -- [711]
-			"<11:29:23><DEBUG>	 Event: LOOT_READY true", -- [712]
-			"<11:30:26><INFO>	 Logged In", -- [713]
-			"<11:30:26>[ML]<INFO>	 Init", -- [714]
-			"<11:30:26><INFO>	 RCLootCouncil TradeUI enabled", -- [715]
-			"<11:30:44><INFO>	 Avisar-Dalaran 3.2.0 nil", -- [716]
-			"<11:30:44><DEBUG>	 ActivateSkin bfa", -- [717]
-			"<11:30:56><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [718]
-			"<11:30:56><INFO>	 UpdatePlayersData()", -- [719]
-			"<11:30:56><INFO>	 Player relog...", -- [720]
-			"<11:31:07><DEBUG>	 GetML()", -- [721]
-			"<11:31:07><DEBUG>	 Storage:New |cff0070dd|Hitem:33154::::::::50:102::22::1:28:373:::::|h[Sinister Squashling]|h|r temp restored table: 000001B9844B9FF0", -- [722]
-			"<11:31:07><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:33154::::::::50:102::22::1:28:373:::::||h[Sinister Squashling]||h||r 5", -- [723]
-			"<11:31:07><DEBUG>	 Found item at 0 19", -- [724]
-			"<11:32:46><DEBUG>	 Event: LOOT_READY true", -- [725]
-			"<11:33:05><DEBUG>	 Event: LOOT_READY true", -- [726]
-			"<11:33:13><DEBUG>	 Event: LOOT_READY true", -- [727]
-			"<11:33:37><DEBUG>	 Event: LOOT_READY true", -- [728]
-			"<11:33:40><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [729]
-			"<11:33:41><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [730]
-			"<11:33:41><INFO>	 UpdatePlayersData()", -- [731]
-			"<11:33:44><DEBUG>	 GetML()", -- [732]
-			"<11:33:44><DEBUG>	 GetML()", -- [733]
-			"<11:35:00><DEBUG>	 Event: LOOT_READY true", -- [734]
-			"<11:35:00><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4228-1004-30199-23682-0000742B63 133991", -- [735]
-			"<11:35:00><DEBUG>	 Adding to self.lootSlotInfo 3 |cffffffff|Hitem:37606::::::::51:70:::::::::|h[Penny Pouch]|h|r 1 1 Creature-0-4228-1004-30199-23682-0000742B63 1", -- [736]
-			"<11:35:00><DEBUG>	 OnLootSlotCleared() 3 |cffffffff|Hitem:37606::::::::51:70:::::::::|h[Penny Pouch]|h|r 1", -- [737]
-			"<11:35:00><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [738]
-			"<11:35:00><DEBUG>	 Event: LOOT_CLOSED", -- [739]
-			"<11:35:00><DEBUG>	 Event: LOOT_CLOSED", -- [740]
-			"<11:35:00><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Avisar-Dalaran", -- [741]
-			"<11:35:00><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Avisar-Dalaran", -- [742]
-			"<11:35:02><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143904 |cff0070dd|Hitem:143904::::::::51:70::22:1:7464:2:28:181:9:60:::::|h[Seal of Ghoulish Glee]|h|r 1 Lengyuan MONK", -- [743]
-			"<11:35:02><DEBUG>	 Event: LOOT_READY true", -- [744]
-			"<11:35:02><DEBUG>	 Adding to self.lootSlotInfo 2 |cff0070dd|Hitem:33292::::::::51:70::22::1:28:181:::::|h[Hallowed Helm]|h|r 3 1 Item-3683-0-4000000A5D9DC976 1", -- [745]
-			"<11:35:02><DEBUG>	 OnLootSlotCleared() 2 |cff0070dd|Hitem:33292::::::::51:70::22::1:28:181:::::|h[Hallowed Helm]|h|r 3", -- [746]
-			"<11:35:03><DEBUG>	 Event: LOOT_READY true", -- [747]
-			"<11:35:03><DEBUG>	 Event: LOOT_CLOSED", -- [748]
-			"<11:35:03><DEBUG>	 Event: LOOT_CLOSED", -- [749]
-			"<11:35:04><DEBUG>	 Storage:New |cff0070dd|Hitem:33292::::::::51:70::22::1:28:181:::::|h[Hallowed Helm]|h|r temp", -- [750]
-			"<11:35:04><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:33292::::::::51:70::22::1:28:181:::::||h[Hallowed Helm]||h||r 5", -- [751]
-			"<11:35:04><DEBUG>	 Found item at 1 8", -- [752]
-			"<11:35:04><DEBUG>	 Found: 1 8 0", -- [753]
-			"<11:35:06><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:33292::::::::51:70::22::1:28:181:::::||h[Hallowed Helm]||h||r 5", -- [754]
-			"<11:35:06><DEBUG>	 Found item at 1 6", -- [755]
-			"<11:35:06><DEBUG>	 Found: 1 6 0", -- [756]
-			"<11:35:06><Comm>	 ^1^Sn_t^T^N1^S|cff0070dd|Hitem:33292::::::::51:70::22::1:28:181:::::|h[Hallowed~`Helm]|h|r^N2^S0^t^^ INSTANCE_CHAT Avisar-Dalaran", -- [757]
-			"<11:35:10><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [758]
-			"<11:35:11><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-0000460912B1", -- [759]
-			"<11:35:11><DEBUG>	 GetML()", -- [760]
-			"<11:35:12><DEBUG>	 GetML()", -- [761]
-			"<11:35:17><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [762]
-			"<11:35:17><INFO>	 UpdatePlayersData()", -- [763]
-			"<11:35:20><DEBUG>	 GetML()", -- [764]
-			"<11:36:35><DEBUG>	 Event: LOOT_READY true", -- [765]
-			"<11:38:29><INFO>	 Logged In", -- [766]
-			"<11:38:29>[ML]<INFO>	 Init", -- [767]
-			"<11:38:29><INFO>	 RCLootCouncil TradeUI enabled", -- [768]
-			"<11:38:45><INFO>	 Illingrath-Dalaran 3.2.0 nil", -- [769]
-			"<11:38:45><DEBUG>	 ActivateSkin bfa", -- [770]
-			"<11:38:56><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [771]
-			"<11:38:56><INFO>	 UpdatePlayersData()", -- [772]
-			"<11:38:56><INFO>	 Player relog...", -- [773]
-			"<11:39:04><DEBUG>	 GetML()", -- [774]
-			"<11:39:04><DEBUG>	 Storage:New |cff0070dd|Hitem:33154::::::::50:102::22::1:28:373:::::|h[Sinister Squashling]|h|r temp restored table: 000001BA3E6D48B0", -- [775]
-			"<11:39:04><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:33154::::::::50:102::22::1:28:373:::::||h[Sinister Squashling]||h||r 5", -- [776]
-			"<11:39:04><DEBUG>	 Found: nil nil nil", -- [777]
-			"<11:39:04><WARNING>	 ItemStorage, db item no longer in bags |cff0070dd|Hitem:33154::::::::50:102::22::1:28:373:::::|h[Sinister Squashling]|h|r", -- [778]
-			"<11:39:04><DEBUG>	 Storage:RemoveItem |cff0070dd|Hitem:33154::::::::50:102::22::1:28:373:::::|h[Sinister Squashling]|h|r", -- [779]
-			"<11:40:41><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [780]
-			"<11:40:43><DEBUG>	 GetML()", -- [781]
-			"<11:40:44><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [782]
-			"<11:40:44><INFO>	 UpdatePlayersData()", -- [783]
-			"<11:40:46><DEBUG>	 GetML()", -- [784]
-			"<11:42:55><DEBUG>	 Event: LOOT_READY true", -- [785]
-			"<11:42:55><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-24820-23682-0000742D0E 82157", -- [786]
-			"<11:42:55><DEBUG>	 Adding to self.lootSlotInfo 3 |cff0070dd|Hitem:143901::::::::50:581::22:1:7464:1:28:181:::::|h[Band of the Petrified Pumpkin]|h|r 3 1 Creature-0-3776-1004-24820-23682-0000742D0E 1", -- [787]
-			"<11:42:55><DEBUG>	 OnLootSlotCleared() 3 |cff0070dd|Hitem:143901::::::::50:581::22:1:7464:1:28:181:::::|h[Band of the Petrified Pumpkin]|h|r 3", -- [788]
-			"<11:42:55><DEBUG>	 Event: LOOT_READY true", -- [789]
-			"<11:42:55><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-24820-23682-0000742D0E 82157", -- [790]
-			"<11:42:55><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143901 |cff0070dd|Hitem:143901::::::::50:581::22:1:7464:2:28:181:9:50:::::|h[Band of the Petrified Pumpkin]|h|r 1 Illingrath DEMONHUNTER", -- [791]
-			"<11:42:55><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [792]
-			"<11:42:55><DEBUG>	 Event: LOOT_CLOSED", -- [793]
-			"<11:42:55><DEBUG>	 Event: LOOT_CLOSED", -- [794]
-			"<11:42:55><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Illingrath-Dalaran", -- [795]
-			"<11:42:55><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Illingrath-Dalaran", -- [796]
-			"<11:42:57><DEBUG>	 Storage:New |cff0070dd|Hitem:143901::::::::50:581::22:1:7464:1:28:181:::::|h[Band of the Petrified Pumpkin]|h|r temp", -- [797]
-			"<11:42:57><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143901::::::::50:581::22:1:7464:1:28:181:::::||h[Band of the Petrified Pumpkin]||h||r 5", -- [798]
-			"<11:42:57><DEBUG>	 Found: nil nil nil", -- [799]
-			"<11:42:58><DEBUG>	 Event: LOOT_READY true", -- [800]
-			"<11:42:58><DEBUG>	 Adding to self.lootSlotInfo 3 |cff0070dd|Hitem:33154::::::::50:581::22::1:28:373:::::|h[Sinister Squashling]|h|r 3 1 Item-3683-0-4000000A5D9E21DF 1", -- [801]
-			"<11:42:58><DEBUG>	 OnLootSlotCleared() 3 |cff0070dd|Hitem:33154::::::::50:581::22::1:28:373:::::|h[Sinister Squashling]|h|r 3", -- [802]
-			"<11:42:58><DEBUG>	 Event: LOOT_READY true", -- [803]
-			"<11:42:58><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143901::::::::50:581::22:1:7464:1:28:181:::::||h[Band of the Petrified Pumpkin]||h||r 5", -- [804]
-			"<11:42:58><DEBUG>	 Found: nil nil nil", -- [805]
-			"<11:42:58><DEBUG>	 Event: LOOT_CLOSED", -- [806]
-			"<11:42:58><DEBUG>	 Event: LOOT_CLOSED", -- [807]
-			"<11:42:59><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143901 |cff0070dd|Hitem:143901::::::::50:581::22:1:7464:2:28:181:9:60:::::|h[Band of the Petrified Pumpkin]|h|r 1 Temaria-Azshara WARLOCK", -- [808]
-			"<11:42:59><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143901::::::::50:581::22:1:7464:1:28:181:::::||h[Band of the Petrified Pumpkin]||h||r 5", -- [809]
-			"<11:42:59><DEBUG>	 Found: nil nil nil", -- [810]
-			"<11:43:00><DEBUG>	 Storage:New |cff0070dd|Hitem:33154::::::::50:581::22::1:28:373:::::|h[Sinister Squashling]|h|r temp", -- [811]
-			"<11:43:00><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:33154::::::::50:581::22::1:28:373:::::||h[Sinister Squashling]||h||r 5", -- [812]
-			"<11:43:00><DEBUG>	 Found item at 0 15", -- [813]
-			"<11:43:00><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143901::::::::50:581::22:1:7464:1:28:181:::::||h[Band of the Petrified Pumpkin]||h||r 5", -- [814]
-			"<11:43:00><DEBUG>	 Found: nil nil nil", -- [815]
-			"<11:43:00><ERROR>	 UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:143901::::::::50:581::22:1:7464:1:28:181:::::|h[Band of the Petrified Pumpkin]|h|r not found in bags", -- [816]
-			"<11:43:01><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:33154::::::::50:581::22::1:28:373:::::||h[Sinister Squashling]||h||r 5", -- [817]
-			"<11:43:01><DEBUG>	 Found item at 0 15", -- [818]
-			"<11:43:01><Comm>	 ^1^Stradable^T^N1^S|cff0070dd|Hitem:33154::::::::50:581::22::1:28:373:::::|h[Sinister~`Squashling]|h|r^N2^S0^t^^ INSTANCE_CHAT Illingrath-Dalaran", -- [819]
-			"<11:43:08><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-2-000046091686", -- [820]
-			"<11:43:08><DEBUG>	 GetML()", -- [821]
-			"<11:43:15><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [822]
-			"<11:43:15><INFO>	 UpdatePlayersData()", -- [823]
-			"<11:43:16><DEBUG>	 GetML()", -- [824]
-			"<11:45:22><INFO>	 Logged In", -- [825]
-			"<11:45:22>[ML]<INFO>	 Init", -- [826]
-			"<11:45:22><INFO>	 RCLootCouncil TradeUI enabled", -- [827]
-			"<11:45:37><INFO>	 Varlouris-Dalaran 3.2.0 nil", -- [828]
-			"<11:45:37><DEBUG>	 ActivateSkin bfa", -- [829]
-			"<11:45:48><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [830]
-			"<11:45:48><INFO>	 UpdatePlayersData()", -- [831]
-			"<11:45:48><INFO>	 Player relog...", -- [832]
-			"<11:45:56><DEBUG>	 GetML()", -- [833]
-			"<11:45:56><DEBUG>	 Storage:New |cff0070dd|Hitem:33154::::::::50:581::22::1:28:373:::::|h[Sinister Squashling]|h|r temp restored table: 000001B9828DF3D0", -- [834]
-			"<11:45:56><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:33154::::::::50:581::22::1:28:373:::::||h[Sinister Squashling]||h||r 5", -- [835]
-			"<11:45:56><DEBUG>	 Found item at 3 3", -- [836]
-			"<12:17:42><INFO>	 Logged In", -- [837]
-			"<12:17:42>[ML]<INFO>	 Init", -- [838]
-			"<12:17:42><INFO>	 RCLootCouncil TradeUI enabled", -- [839]
-			"<12:17:57><INFO>	 Varlouris-Dalaran 3.2.0 nil", -- [840]
-			"<12:17:57><DEBUG>	 ActivateSkin bfa", -- [841]
-			"<12:18:08><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [842]
-			"<12:18:08><INFO>	 UpdatePlayersData()", -- [843]
-			"<12:18:08><INFO>	 Player relog...", -- [844]
-			"<12:18:17><DEBUG>	 GetML()", -- [845]
-			"<12:18:17><DEBUG>	 Storage:New |cff0070dd|Hitem:33154::::::::50:581::22::1:28:373:::::|h[Sinister Squashling]|h|r temp restored table: 0000025D9E7BA5B0", -- [846]
-			"<12:18:17><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:33154::::::::50:581::22::1:28:373:::::||h[Sinister Squashling]||h||r 5", -- [847]
-			"<12:18:17><DEBUG>	 Found item at 3 3", -- [848]
-			"<12:19:18><DEBUG>	 Event: LOOT_READY true", -- [849]
-			"<12:21:47><DEBUG>	 Event: LOOT_READY true", -- [850]
-			"<12:21:47><DEBUG>	 Event: LOOT_READY true", -- [851]
-			"<12:25:55><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [852]
-			"<12:25:57><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [853]
-			"<12:25:57><INFO>	 UpdatePlayersData()", -- [854]
-			"<12:25:58><DEBUG>	 GetML()", -- [855]
-			"<12:25:58><DEBUG>	 GetML()", -- [856]
-			"<12:28:17><DEBUG>	 Event: LOOT_READY true", -- [857]
-			"<12:28:17><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4228-1004-32000-23682-00007437A7 138234", -- [858]
-			"<12:28:18><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [859]
-			"<12:28:18><DEBUG>	 Event: LOOT_CLOSED", -- [860]
-			"<12:28:18><DEBUG>	 Event: LOOT_CLOSED", -- [861]
-			"<12:28:18><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Varlouris-Dalaran", -- [862]
-			"<12:28:18><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Varlouris-Dalaran", -- [863]
-			"<12:28:20><DEBUG>	 Event: LOOT_READY true", -- [864]
-			"<12:28:20><DEBUG>	 Event: LOOT_CLOSED", -- [865]
-			"<12:28:20><DEBUG>	 Event: LOOT_CLOSED", -- [866]
-			"<12:28:24><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143904 |cff0070dd|Hitem:143904::::::::50:263::22:1:7464:2:28:181:9:60:::::|h[Seal of Ghoulish Glee]|h|r 1 Judex PALADIN", -- [867]
-			"<12:28:25><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-000046093176", -- [868]
-			"<12:28:25><DEBUG>	 GetML()", -- [869]
-			"<12:28:31><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [870]
-			"<12:28:31><INFO>	 UpdatePlayersData()", -- [871]
-			"<12:28:33><DEBUG>	 GetML()", -- [872]
-			"<12:31:17><DEBUG>	 Event: LOOT_READY true", -- [873]
-			"<12:31:17><DEBUG>	 Event: LOOT_READY true", -- [874]
-			"<12:33:03><INFO>	 Logged In", -- [875]
-			"<12:33:03>[ML]<INFO>	 Init", -- [876]
-			"<12:33:03><INFO>	 RCLootCouncil TradeUI enabled", -- [877]
-			"<12:33:17><INFO>	 Darnastris-Dalaran 3.2.0 nil", -- [878]
-			"<12:33:17><DEBUG>	 ActivateSkin bfa", -- [879]
-			"<12:33:28><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [880]
-			"<12:33:28><INFO>	 UpdatePlayersData()", -- [881]
-			"<12:33:28><INFO>	 Player relog...", -- [882]
-			"<12:33:36><DEBUG>	 GetML()", -- [883]
-			"<12:33:36><DEBUG>	 Storage:New |cff0070dd|Hitem:33154::::::::50:581::22::1:28:373:::::|h[Sinister Squashling]|h|r temp restored table: 0000025D839CE030", -- [884]
-			"<12:33:36><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:33154::::::::50:581::22::1:28:373:::::||h[Sinister Squashling]||h||r 5", -- [885]
-			"<12:33:36><DEBUG>	 Found: nil nil nil", -- [886]
-			"<12:33:36><WARNING>	 ItemStorage, db item no longer in bags |cff0070dd|Hitem:33154::::::::50:581::22::1:28:373:::::|h[Sinister Squashling]|h|r", -- [887]
-			"<12:33:36><DEBUG>	 Storage:RemoveItem |cff0070dd|Hitem:33154::::::::50:581::22::1:28:373:::::|h[Sinister Squashling]|h|r", -- [888]
-			"<12:34:07><DEBUG>	 Event: LOOT_READY true", -- [889]
-			"<12:35:09><DEBUG>	 Event: LOOT_READY true", -- [890]
-			"<12:35:09><DEBUG>	 Event: LOOT_READY true", -- [891]
-			"<12:42:25><DEBUG>	 Event: LOOT_READY true", -- [892]
-			"<12:44:18><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [893]
-			"<12:44:20><DEBUG>	 GetML()", -- [894]
-			"<12:44:20><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [895]
-			"<12:44:20><INFO>	 UpdatePlayersData()", -- [896]
-			"<12:44:22><DEBUG>	 GetML()", -- [897]
-			"<12:48:00><DEBUG>	 Event: LOOT_READY true", -- [898]
-			"<12:48:00><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-25723-23682-0000743BF5 128457", -- [899]
-			"<12:48:00><DEBUG>	 Event: LOOT_READY true", -- [900]
-			"<12:48:00><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-25723-23682-0000743BF5 128457", -- [901]
-			"<12:48:01><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [902]
-			"<12:48:01><DEBUG>	 Event: LOOT_CLOSED", -- [903]
-			"<12:48:01><DEBUG>	 Event: LOOT_CLOSED", -- [904]
-			"<12:48:01><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Darnastris-Dalaran", -- [905]
-			"<12:48:01><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Darnastris-Dalaran", -- [906]
-			"<12:48:02><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143903 |cff0070dd|Hitem:143903::::::::50:64::22:1:7464:2:28:181:9:60:::::|h[The Horseman's Ring]|h|r 1 Miyä-MoonGuard PRIEST", -- [907]
-			"<12:48:04><DEBUG>	 Event: LOOT_READY true", -- [908]
-			"<12:48:04><DEBUG>	 Adding to self.lootSlotInfo 2 |cff0070dd|Hitem:33292::::::::50:64::22::1:28:181:::::|h[Hallowed Helm]|h|r 3 1 Item-3683-0-4000000A5DA0F2A7 1", -- [909]
-			"<12:48:04><DEBUG>	 Event: LOOT_READY true", -- [910]
-			"<12:48:04><DEBUG>	 Adding to self.lootSlotInfo 2 |cff0070dd|Hitem:33292::::::::50:64::22::1:28:181:::::|h[Hallowed Helm]|h|r 3 1 Item-3683-0-4000000A5DA0F2A7 1", -- [911]
-			"<12:48:04><DEBUG>	 OnLootSlotCleared() 2 |cff0070dd|Hitem:33292::::::::50:64::22::1:28:181:::::|h[Hallowed Helm]|h|r 3", -- [912]
-			"<12:48:04><DEBUG>	 Event: LOOT_CLOSED", -- [913]
-			"<12:48:04><DEBUG>	 Event: LOOT_CLOSED", -- [914]
-			"<12:48:05><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Darnastris-Dalaran", -- [915]
-			"<12:48:05><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Darnastris-Dalaran", -- [916]
-			"<12:48:06><DEBUG>	 Storage:New |cff0070dd|Hitem:33292::::::::50:64::22::1:28:181:::::|h[Hallowed Helm]|h|r temp", -- [917]
-			"<12:48:06><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:33292::::::::50:64::22::1:28:181:::::||h[Hallowed Helm]||h||r 5", -- [918]
-			"<12:48:06><DEBUG>	 Found item at 0 20", -- [919]
-			"<12:48:06><DEBUG>	 Found: 0 20 0", -- [920]
-			"<12:48:07><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:33292::::::::50:64::22::1:28:181:::::||h[Hallowed Helm]||h||r 5", -- [921]
-			"<12:48:07><DEBUG>	 Found item at 0 20", -- [922]
-			"<12:48:07><DEBUG>	 Found: 0 20 0", -- [923]
-			"<12:48:07><Comm>	 ^1^Sn_t^T^N1^S|cff0070dd|Hitem:33292::::::::50:64::22::1:28:181:::::|h[Hallowed~`Helm]|h|r^N2^S0^t^^ INSTANCE_CHAT Darnastris-Dalaran", -- [924]
-			"<12:48:17><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-000046093F20", -- [925]
-			"<12:48:17><DEBUG>	 GetML()", -- [926]
-			"<12:48:24><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [927]
-			"<12:48:24><INFO>	 UpdatePlayersData()", -- [928]
-			"<12:48:26><DEBUG>	 GetML()", -- [929]
-			"<15:31:58><INFO>	 Logged In", -- [930]
-			"<15:31:58>[ML]<INFO>	 Init", -- [931]
-			"<15:31:58><INFO>	 RCLootCouncil TradeUI enabled", -- [932]
-			"<15:32:34><INFO>	 Rotclaugh-Dalaran 3.2.0 nil", -- [933]
-			"<15:32:34><DEBUG>	 ActivateSkin bfa", -- [934]
-			"<15:32:45><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [935]
-			"<15:32:45><INFO>	 UpdatePlayersData()", -- [936]
-			"<15:32:45><INFO>	 Player relog...", -- [937]
-			"<15:32:55><DEBUG>	 GetML()", -- [938]
-			"<15:42:21><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [939]
-			"<15:42:23><DEBUG>	 GetML()", -- [940]
-			"<15:42:23><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [941]
-			"<15:42:23><INFO>	 UpdatePlayersData()", -- [942]
-			"<15:42:25><DEBUG>	 GetML()", -- [943]
-			"<15:48:50><DEBUG>	 Event: LOOT_READY true", -- [944]
-			"<15:48:50><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-28161-23682-0000746686 128937", -- [945]
-			"<15:48:50><DEBUG>	 Adding to self.lootSlotInfo 3 |cffffffff|Hitem:37606::::::::47:251:::::::::|h[Penny Pouch]|h|r 1 1 Creature-0-3776-1004-28161-23682-0000746686 1", -- [946]
-			"<15:48:50><DEBUG>	 OnLootSlotCleared() 3 |cffffffff|Hitem:37606::::::::47:251:::::::::|h[Penny Pouch]|h|r 1", -- [947]
-			"<15:48:50><DEBUG>	 Event: LOOT_READY true", -- [948]
-			"<15:48:50><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-28161-23682-0000746686 128937", -- [949]
-			"<15:48:51><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [950]
-			"<15:48:51><DEBUG>	 Event: LOOT_CLOSED", -- [951]
-			"<15:48:51><DEBUG>	 Event: LOOT_CLOSED", -- [952]
-			"<15:48:51><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Rotclaugh-Dalaran", -- [953]
-			"<15:48:51><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Rotclaugh-Dalaran", -- [954]
-			"<15:48:53><DEBUG>	 Event: LOOT_READY true", -- [955]
-			"<15:48:53><DEBUG>	 Event: LOOT_READY true", -- [956]
-			"<15:48:53><DEBUG>	 Event: LOOT_CLOSED", -- [957]
-			"<15:48:53><DEBUG>	 Event: LOOT_CLOSED", -- [958]
-			"<15:48:54><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143902 |cff0070dd|Hitem:143902::::::::47:251::22:1:7464:2:28:181:9:55:::::|h[Wicked Witch's Signet]|h|r 1 Sophe-Rexxar SHAMAN", -- [959]
-			"<15:48:57><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [960]
-			"<15:48:58><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [961]
-			"<15:48:59><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-2-00004609BA2C", -- [962]
-			"<15:48:59><DEBUG>	 GetML()", -- [963]
-			"<15:48:59><DEBUG>	 GetML()", -- [964]
-			"<15:49:00><DEBUG>	 GetML()", -- [965]
-			"<15:49:46><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [966]
-			"<15:49:46><INFO>	 UpdatePlayersData()", -- [967]
-			"<15:49:48><DEBUG>	 GetML()", -- [968]
-			"<15:50:26><INFO>	 Logged In", -- [969]
-			"<15:50:26>[ML]<INFO>	 Init", -- [970]
-			"<15:50:26><INFO>	 RCLootCouncil TradeUI enabled", -- [971]
-			"<15:50:44><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [972]
-			"<15:50:44><DEBUG>	 ActivateSkin bfa", -- [973]
-			"<15:50:55><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [974]
-			"<15:50:55><INFO>	 UpdatePlayersData()", -- [975]
-			"<15:50:55><INFO>	 Player relog...", -- [976]
-			"<15:50:59><DEBUG>	 GetPlayersGuildRank()", -- [977]
-			"<15:50:59><DEBUG>	 GetPlayersGuildRank()", -- [978]
-			"<15:50:59><DEBUG>	 Found Guild Rank: Thuerge", -- [979]
-			"<15:51:13><DEBUG>	 GetML()", -- [980]
-			"<15:51:34><DEBUG>	 Event: LOOT_READY true", -- [981]
-			"<15:51:43><DEBUG>	 Event: LOOT_READY true", -- [982]
-			"<15:51:43><DEBUG>	 Event: LOOT_READY true", -- [983]
-			"<15:51:50><DEBUG>	 Event: LOOT_READY true", -- [984]
-			"<15:51:54><DEBUG>	 Event: LOOT_READY true", -- [985]
-			"<15:51:59><DEBUG>	 Event: LOOT_READY true", -- [986]
-			"<15:52:04><DEBUG>	 Event: LOOT_READY true", -- [987]
-			"<15:52:10><DEBUG>	 Event: LOOT_READY true", -- [988]
-			"<16:20:57><INFO>	 Logged In", -- [989]
-			"<16:20:57>[ML]<INFO>	 Init", -- [990]
-			"<16:20:57><INFO>	 RCLootCouncil TradeUI enabled", -- [991]
-			"<16:21:18><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [992]
-			"<16:21:18><DEBUG>	 ActivateSkin bfa", -- [993]
-			"<16:21:30><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [994]
-			"<16:21:30><INFO>	 UpdatePlayersData()", -- [995]
-			"<16:21:30><INFO>	 Player relog...", -- [996]
-			"<16:21:34><DEBUG>	 GetPlayersGuildRank()", -- [997]
-			"<16:21:34><DEBUG>	 GetPlayersGuildRank()", -- [998]
-			"<16:21:34><DEBUG>	 Found Guild Rank: Thuerge", -- [999]
-			"<16:21:50><DEBUG>	 GetML()", -- [1000]
-			"<16:49:43><DEBUG>	 Event: LOOT_READY true", -- [1001]
-			"<16:49:47><DEBUG>	 Event: LOOT_READY true", -- [1002]
-			"<16:49:56><DEBUG>	 Event: LOOT_READY true", -- [1003]
-			"<16:50:01><DEBUG>	 Event: LOOT_READY true", -- [1004]
-			"<16:50:04><DEBUG>	 Event: LOOT_READY true", -- [1005]
-			"<16:50:07><DEBUG>	 Event: LOOT_READY true", -- [1006]
-			"<16:50:16><DEBUG>	 Event: LOOT_READY true", -- [1007]
-			"<16:51:15><DEBUG>	 Event: LOOT_READY true", -- [1008]
-			"<16:52:18><DEBUG>	 Event: LOOT_READY true", -- [1009]
-			"<16:52:19><DEBUG>	 Event: LOOT_READY true", -- [1010]
-			"<16:53:05><DEBUG>	 Event: LOOT_READY true", -- [1011]
-			"<16:53:10><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1012]
-			"<16:53:12><DEBUG>	 GetML()", -- [1013]
-			"<16:53:13><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1014]
-			"<16:53:13><INFO>	 UpdatePlayersData()", -- [1015]
-			"<16:53:28><DEBUG>	 GetML()", -- [1016]
-			"<16:55:34><DEBUG>	 Event: LOOT_READY true", -- [1017]
-			"<16:55:34><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-11567-23682-000075C7CE 141796", -- [1018]
-			"<16:55:34><DEBUG>	 Event: LOOT_READY true", -- [1019]
-			"<16:55:34><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-11567-23682-000075C7CE 141796", -- [1020]
-			"<16:55:34><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [1021]
-			"<16:55:34><DEBUG>	 Event: LOOT_CLOSED", -- [1022]
-			"<16:55:34><DEBUG>	 Event: LOOT_CLOSED", -- [1023]
-			"<16:55:34><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [1024]
-			"<16:55:34><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [1025]
-			"<16:55:36><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143904 |cff0070dd|Hitem:143904::::::::60:71::22:1:7464:2:28:181:9:60:::::|h[Seal of Ghoulish Glee]|h|r 1 Grucifer-Nesingwary DEATHKNIGHT", -- [1026]
-			"<16:55:37><DEBUG>	 Event: LOOT_READY true", -- [1027]
-			"<16:55:37><DEBUG>	 Event: LOOT_READY true", -- [1028]
-			"<16:55:38><DEBUG>	 Event: LOOT_CLOSED", -- [1029]
-			"<16:55:38><DEBUG>	 Event: LOOT_CLOSED", -- [1030]
-			"<16:55:54><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1031]
-			"<16:55:56><DEBUG>	 GetML()", -- [1032]
-			"<16:55:57><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1033]
-			"<16:55:59><DEBUG>	 GetML()", -- [1034]
-			"<16:56:19><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-0000460D3A30", -- [1035]
-			"<16:56:19><DEBUG>	 GetML()", -- [1036]
-			"<16:56:25><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1037]
-			"<16:56:25><INFO>	 UpdatePlayersData()", -- [1038]
-			"<16:56:36><DEBUG>	 GetML()", -- [1039]
-			"<16:59:41><INFO>	 Logged In", -- [1040]
-			"<16:59:41>[ML]<INFO>	 Init", -- [1041]
-			"<16:59:41><INFO>	 RCLootCouncil TradeUI enabled", -- [1042]
-			"<16:59:58><INFO>	 Durlok-BlackDragonflight 3.2.0 nil", -- [1043]
-			"<16:59:58><DEBUG>	 ActivateSkin bfa", -- [1044]
-			"<17:00:09><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1045]
-			"<17:00:09><INFO>	 UpdatePlayersData()", -- [1046]
-			"<17:00:09><INFO>	 Player relog...", -- [1047]
-			"<17:00:20><DEBUG>	 GetML()", -- [1048]
-			"<17:00:40><DEBUG>	 Event: LOOT_READY true", -- [1049]
-			"<17:00:43><DEBUG>	 Event: LOOT_READY true", -- [1050]
-			"<17:00:51><DEBUG>	 Event: LOOT_READY true", -- [1051]
-			"<17:00:51><DEBUG>	 Event: LOOT_READY true", -- [1052]
-			"<17:00:57><DEBUG>	 Event: LOOT_READY true", -- [1053]
-			"<17:01:02><DEBUG>	 Event: LOOT_READY true", -- [1054]
-			"<17:01:11><DEBUG>	 Event: LOOT_READY true", -- [1055]
-			"<17:01:52><DEBUG>	 Event: LOOT_READY true", -- [1056]
-			"<17:04:15><DEBUG>	 Event: LOOT_READY true", -- [1057]
-			"<17:04:26><DEBUG>	 Event: LOOT_READY true", -- [1058]
-			"<17:04:27><DEBUG>	 Event: LOOT_READY true", -- [1059]
-			"<17:05:22><DEBUG>	 Event: LOOT_READY true", -- [1060]
-			"<17:06:02><DEBUG>	 Event: LOOT_READY true", -- [1061]
-			"<17:06:47><DEBUG>	 Event: LOOT_READY true", -- [1062]
-			"<17:08:30><DEBUG>	 Event: LOOT_READY true", -- [1063]
-			"<17:08:37><DEBUG>	 Event: LOOT_READY true", -- [1064]
-			"<17:08:38><DEBUG>	 Event: LOOT_READY true", -- [1065]
-			"<17:08:53><DEBUG>	 Event: LOOT_READY true", -- [1066]
-			"<17:09:34><DEBUG>	 Event: LOOT_READY true", -- [1067]
-			"<17:10:45><DEBUG>	 Event: LOOT_READY true", -- [1068]
-			"<17:10:49><DEBUG>	 Event: LOOT_READY true", -- [1069]
-			"<17:10:54><DEBUG>	 Event: LOOT_READY true", -- [1070]
-			"<17:10:59><DEBUG>	 Event: LOOT_READY true", -- [1071]
-			"<17:11:00><DEBUG>	 Event: LOOT_READY true", -- [1072]
-			"<17:11:01><DEBUG>	 Event: LOOT_READY true", -- [1073]
-			"<17:11:07><DEBUG>	 Event: LOOT_READY true", -- [1074]
-			"<17:11:14><DEBUG>	 Event: LOOT_READY true", -- [1075]
-			"<17:11:21><DEBUG>	 Event: LOOT_READY true", -- [1076]
-			"<17:11:25><DEBUG>	 Event: LOOT_READY true", -- [1077]
-			"<17:11:30><DEBUG>	 Event: LOOT_READY true", -- [1078]
-			"<17:11:35><DEBUG>	 Event: LOOT_READY true", -- [1079]
-			"<17:11:43><DEBUG>	 Event: LOOT_READY true", -- [1080]
-			"<17:11:52><DEBUG>	 Event: LOOT_READY true", -- [1081]
-			"<17:11:53><DEBUG>	 Event: LOOT_READY true", -- [1082]
-			"<17:11:57><DEBUG>	 Event: LOOT_READY true", -- [1083]
-			"<17:12:03><DEBUG>	 Event: LOOT_READY true", -- [1084]
-			"<17:12:11><DEBUG>	 Event: LOOT_READY true", -- [1085]
-			"<17:12:16><DEBUG>	 Event: LOOT_READY true", -- [1086]
-			"<17:12:26><DEBUG>	 Event: LOOT_READY true", -- [1087]
-			"<17:12:37><DEBUG>	 Event: LOOT_READY true", -- [1088]
-			"<17:12:56><DEBUG>	 Event: LOOT_READY true", -- [1089]
-			"<17:13:02><DEBUG>	 Event: LOOT_READY true", -- [1090]
-			"<17:13:10><DEBUG>	 Event: LOOT_READY true", -- [1091]
-			"<17:13:33><DEBUG>	 Event: LOOT_READY true", -- [1092]
-			"<17:13:39><DEBUG>	 Event: LOOT_READY true", -- [1093]
-			"<17:13:45><DEBUG>	 Event: LOOT_READY true", -- [1094]
-			"<17:13:58><DEBUG>	 Event: LOOT_READY true", -- [1095]
-			"<17:14:31><DEBUG>	 Event: LOOT_READY true", -- [1096]
-			"<17:16:00><DEBUG>	 Event: LOOT_READY true", -- [1097]
-			"<17:16:13><DEBUG>	 Event: LOOT_READY true", -- [1098]
-			"<17:17:17><DEBUG>	 Event: LOOT_READY true", -- [1099]
-			"<17:17:29><DEBUG>	 Event: LOOT_READY true", -- [1100]
-			"<17:17:54><DEBUG>	 Event: LOOT_READY true", -- [1101]
-			"<17:21:04><DEBUG>	 Event: LOOT_READY true", -- [1102]
-			"<17:25:14><DEBUG>	 Event: LOOT_READY true", -- [1103]
-			"<17:25:24><DEBUG>	 Event: LOOT_READY true", -- [1104]
-			"<17:25:28><DEBUG>	 Event: LOOT_READY true", -- [1105]
-			"<17:25:32><DEBUG>	 Event: LOOT_READY true", -- [1106]
-			"<17:25:36><DEBUG>	 Event: LOOT_READY true", -- [1107]
-			"<17:25:41><DEBUG>	 Event: LOOT_READY true", -- [1108]
-			"<17:25:44><DEBUG>	 Event: LOOT_READY true", -- [1109]
-			"<17:25:52><DEBUG>	 Event: LOOT_READY true", -- [1110]
-			"<17:26:04><DEBUG>	 Event: LOOT_READY true", -- [1111]
-			"<17:26:11><DEBUG>	 Event: LOOT_READY true", -- [1112]
-			"<17:26:16><DEBUG>	 Event: LOOT_READY true", -- [1113]
-			"<17:26:20><DEBUG>	 Event: LOOT_READY true", -- [1114]
-			"<17:26:23><DEBUG>	 Event: LOOT_READY true", -- [1115]
-			"<17:26:27><DEBUG>	 Event: LOOT_READY true", -- [1116]
-			"<17:26:33><DEBUG>	 Event: LOOT_READY true", -- [1117]
-			"<17:26:41><DEBUG>	 Event: LOOT_READY true", -- [1118]
-			"<17:26:45><DEBUG>	 Event: LOOT_READY true", -- [1119]
-			"<17:26:49><DEBUG>	 Event: LOOT_READY true", -- [1120]
-			"<17:26:56><DEBUG>	 Event: LOOT_READY true", -- [1121]
-			"<17:27:03><DEBUG>	 Event: LOOT_READY true", -- [1122]
-			"<17:27:03><DEBUG>	 Event: LOOT_READY true", -- [1123]
-			"<17:27:10><DEBUG>	 Event: LOOT_READY true", -- [1124]
-			"<17:27:10><DEBUG>	 Event: LOOT_READY true", -- [1125]
-			"<17:27:27><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1126]
-			"<17:27:30><DEBUG>	 GetML()", -- [1127]
-			"<17:27:30><DEBUG>	 Event: RAID_INSTANCE_WELCOME Waycrest Manor (Heroic) 63149 0 0", -- [1128]
-			"<17:27:31><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1129]
-			"<17:27:31><INFO>	 UpdatePlayersData()", -- [1130]
-			"<17:27:34><DEBUG>	 GetML()", -- [1131]
-			"<17:27:47><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-0000460D553E", -- [1132]
-			"<17:27:47><DEBUG>	 GetML()", -- [1133]
-			"<17:27:53><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1134]
-			"<17:27:53><INFO>	 UpdatePlayersData()", -- [1135]
-			"<17:27:55><DEBUG>	 GetML()", -- [1136]
-			"<17:28:05><DEBUG>	 Event: LOOT_READY true", -- [1137]
-			"<17:28:13><DEBUG>	 Event: LOOT_READY true", -- [1138]
-			"<17:28:18><DEBUG>	 Event: LOOT_READY true", -- [1139]
-			"<17:28:18><DEBUG>	 Event: LOOT_READY true", -- [1140]
-			"<17:28:22><DEBUG>	 Event: LOOT_READY true", -- [1141]
-			"<17:28:28><DEBUG>	 Event: LOOT_READY true", -- [1142]
-			"<17:28:38><DEBUG>	 Event: LOOT_READY true", -- [1143]
-			"<17:29:04><DEBUG>	 Event: LOOT_READY true", -- [1144]
-			"<17:29:08><DEBUG>	 Event: LOOT_READY true", -- [1145]
-			"<17:29:17><DEBUG>	 Event: LOOT_READY true", -- [1146]
-			"<17:29:20><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1147]
-			"<17:29:22><DEBUG>	 GetML()", -- [1148]
-			"<17:29:23><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1149]
-			"<17:29:23><INFO>	 UpdatePlayersData()", -- [1150]
-			"<17:29:24><DEBUG>	 GetML()", -- [1151]
-			"<17:30:57><DEBUG>	 Event: LOOT_READY true", -- [1152]
-			"<17:30:57><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-12063-23682-000075D044 138840", -- [1153]
-			"<17:30:57><DEBUG>	 Event: LOOT_READY true", -- [1154]
-			"<17:30:57><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-12063-23682-000075D044 138840", -- [1155]
-			"<17:30:57><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [1156]
-			"<17:30:57><DEBUG>	 Event: LOOT_CLOSED", -- [1157]
-			"<17:30:57><DEBUG>	 Event: LOOT_CLOSED", -- [1158]
-			"<17:30:57><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Durlok-BlackDragonflight", -- [1159]
-			"<17:30:57><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Durlok-BlackDragonflight", -- [1160]
-			"<17:30:59><DEBUG>	 Event: LOOT_READY true", -- [1161]
-			"<17:30:59><DEBUG>	 Adding to self.lootSlotInfo 2 |cff0070dd|Hitem:37011::::::::50:104::22::1:28:872:::::|h[Magic Broom]|h|r 3 1 Item-96-0-4000000AE2C0F9F0 1", -- [1162]
-			"<17:30:59><DEBUG>	 Adding to self.lootSlotInfo 4 |cff0070dd|Hitem:117356::::::::50:104::22:1:7464:1:28:181:::::|h[The Horseman's Sinister Slicer]|h|r 3 1 Item-96-0-4000000AE2C0F9F0 1", -- [1163]
-			"<17:30:59><DEBUG>	 OnLootSlotCleared() 4 |cff0070dd|Hitem:117356::::::::50:104::22:1:7464:1:28:181:::::|h[The Horseman's Sinister Slicer]|h|r 3", -- [1164]
-			"<17:30:59><DEBUG>	 Event: LOOT_READY true", -- [1165]
-			"<17:30:59><DEBUG>	 Adding to self.lootSlotInfo 2 |cff0070dd|Hitem:37011::::::::50:104::22::1:28:872:::::|h[Magic Broom]|h|r 3 1 Item-96-0-4000000AE2C0F9F0 1", -- [1166]
-			"<17:30:59><DEBUG>	 OnLootSlotCleared() 2 |cff0070dd|Hitem:37011::::::::50:104::22::1:28:872:::::|h[Magic Broom]|h|r 3", -- [1167]
-			"<17:31:00><DEBUG>	 Event: LOOT_CLOSED", -- [1168]
-			"<17:31:00><DEBUG>	 Event: LOOT_CLOSED", -- [1169]
-			"<17:31:00><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143901 |cff0070dd|Hitem:143901::::::::50:104::22:1:7464:2:28:181:9:60:::::|h[Band of the Petrified Pumpkin]|h|r 1 Siuri-Thrall DEMONHUNTER", -- [1170]
-			"<17:31:00><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Durlok-BlackDragonflight", -- [1171]
-			"<17:31:00><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Durlok-BlackDragonflight", -- [1172]
-			"<17:31:01><DEBUG>	 Storage:New |cff0070dd|Hitem:117356::::::::50:104::22:1:7464:1:28:181:::::|h[The Horseman's Sinister Slicer]|h|r temp", -- [1173]
-			"<17:31:01><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:117356::::::::50:104::22:1:7464:1:28:181:::::||h[The Horseman's Sinister Slicer]||h||r 5", -- [1174]
-			"<17:31:01><DEBUG>	 Found: nil nil nil", -- [1175]
-			"<17:31:01><DEBUG>	 Storage:New |cff0070dd|Hitem:37011::::::::50:104::22::1:28:872:::::|h[Magic Broom]|h|r temp", -- [1176]
-			"<17:31:01><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::50:104::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [1177]
-			"<17:31:01><DEBUG>	 Found item at 1 15", -- [1178]
-			"<17:31:01><DEBUG>	 Found: 1 15 0", -- [1179]
-			"<17:31:02><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:117356::::::::50:104::22:1:7464:1:28:181:::::||h[The Horseman's Sinister Slicer]||h||r 5", -- [1180]
-			"<17:31:02><DEBUG>	 Found: nil nil nil", -- [1181]
-			"<17:31:02><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::50:104::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [1182]
-			"<17:31:02><DEBUG>	 Found item at 1 15", -- [1183]
-			"<17:31:02><DEBUG>	 Found: 1 15 0", -- [1184]
-			"<17:31:03><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:117356::::::::50:104::22:1:7464:1:28:181:::::||h[The Horseman's Sinister Slicer]||h||r 5", -- [1185]
-			"<17:31:03><DEBUG>	 Found: nil nil nil", -- [1186]
-			"<17:31:03><Comm>	 ^1^Sn_t^T^N1^S|cff0070dd|Hitem:37011::::::::50:104::22::1:28:872:::::|h[Magic~`Broom]|h|r^N2^S0^t^^ INSTANCE_CHAT Durlok-BlackDragonflight", -- [1187]
-			"<17:31:04><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:117356::::::::50:104::22:1:7464:1:28:181:::::||h[The Horseman's Sinister Slicer]||h||r 5", -- [1188]
-			"<17:31:04><DEBUG>	 Found: nil nil nil", -- [1189]
-			"<17:31:04><ERROR>	 UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:117356::::::::50:104::22:1:7464:1:28:181:::::|h[The Horseman's Sinister Slicer]|h|r not found in bags", -- [1190]
-			"<17:31:09><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1191]
-			"<17:31:11><DEBUG>	 GetML()", -- [1192]
-			"<17:31:22><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-0000460D565F", -- [1193]
-			"<17:31:22><DEBUG>	 GetML()", -- [1194]
-			"<17:31:28><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1195]
-			"<17:31:28><INFO>	 UpdatePlayersData()", -- [1196]
-			"<17:31:30><DEBUG>	 GetML()", -- [1197]
-			"<17:31:36><DEBUG>	 Event: LOOT_READY true", -- [1198]
-			"<17:31:52><DEBUG>	 Event: LOOT_READY true", -- [1199]
-			"<17:32:13><DEBUG>	 Event: LOOT_READY true", -- [1200]
-			"<17:32:22><DEBUG>	 Event: LOOT_READY true", -- [1201]
-			"<17:32:29><DEBUG>	 Event: LOOT_READY true", -- [1202]
-			"<17:32:32><DEBUG>	 Event: LOOT_READY true", -- [1203]
-			"<17:34:28><INFO>	 Logged In", -- [1204]
-			"<17:34:28>[ML]<INFO>	 Init", -- [1205]
-			"<17:34:28><INFO>	 RCLootCouncil TradeUI enabled", -- [1206]
-			"<17:34:43><INFO>	 Zulbathal-Zul'jin 3.2.0 nil", -- [1207]
-			"<17:34:43><DEBUG>	 ActivateSkin bfa", -- [1208]
-			"<17:34:55><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1209]
-			"<17:34:55><INFO>	 UpdatePlayersData()", -- [1210]
-			"<17:34:55><INFO>	 Player relog...", -- [1211]
-			"<17:35:07><DEBUG>	 GetML()", -- [1212]
-			"<17:36:13><DEBUG>	 Event: LOOT_READY true", -- [1213]
-			"<17:36:51><DEBUG>	 Event: LOOT_READY true", -- [1214]
-			"<17:36:54><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1215]
-			"<17:36:56><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1216]
-			"<17:36:56><INFO>	 UpdatePlayersData()", -- [1217]
-			"<17:36:59><DEBUG>	 GetML()", -- [1218]
-			"<17:36:59><Comm>	 ^1^SStopHandleLoot^T^t^^ INSTANCE_CHAT Skivle-Mal'Ganis", -- [1219]
-			"<17:37:00><DEBUG>	 GetML()", -- [1220]
-			"<17:38:01><DEBUG>	 Event: LOOT_READY true", -- [1221]
-			"<17:38:01><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4228-1004-12885-23682-000075D209 76268", -- [1222]
-			"<17:38:01><DEBUG>	 Adding to self.lootSlotInfo 3 |cff0070dd|Hitem:143904::::::::50:102::22:1:7464:1:28:181:::::|h[Seal of Ghoulish Glee]|h|r 3 1 Creature-0-4228-1004-12885-23682-000075D209 1", -- [1223]
-			"<17:38:01><DEBUG>	 OnLootSlotCleared() 3 |cff0070dd|Hitem:143904::::::::50:102::22:1:7464:1:28:181:::::|h[Seal of Ghoulish Glee]|h|r 3", -- [1224]
-			"<17:38:01><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Hvarf-Zul'jin", -- [1225]
-			"<17:38:01><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Hvarf-Zul'jin", -- [1226]
-			"<17:38:01><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143904 |cff0070dd|Hitem:143904::::::::50:102::22:1:7464:2:28:181:9:50:::::|h[Seal of Ghoulish Glee]|h|r 1 Zulbathal DRUID", -- [1227]
-			"<17:38:01><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [1228]
-			"<17:38:01><DEBUG>	 Event: LOOT_CLOSED", -- [1229]
-			"<17:38:01><DEBUG>	 Event: LOOT_CLOSED", -- [1230]
-			"<17:38:02><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Zulbathal-Zul'jin", -- [1231]
-			"<17:38:02><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Zulbathal-Zul'jin", -- [1232]
-			"<17:38:03><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Skivle-Mal'Ganis", -- [1233]
-			"<17:38:03><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Skivle-Mal'Ganis", -- [1234]
-			"<17:38:03><DEBUG>	 Storage:New |cff0070dd|Hitem:143904::::::::50:102::22:1:7464:1:28:181:::::|h[Seal of Ghoulish Glee]|h|r temp", -- [1235]
-			"<17:38:03><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143904::::::::50:102::22:1:7464:1:28:181:::::||h[Seal of Ghoulish Glee]||h||r 5", -- [1236]
-			"<17:38:03><DEBUG>	 Found: nil nil nil", -- [1237]
-			"<17:38:04><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143904::::::::50:102::22:1:7464:1:28:181:::::||h[Seal of Ghoulish Glee]||h||r 5", -- [1238]
-			"<17:38:04><DEBUG>	 Found: nil nil nil", -- [1239]
-			"<17:38:05><DEBUG>	 Event: LOOT_READY true", -- [1240]
-			"<17:38:05><DEBUG>	 Adding to self.lootSlotInfo 1 |cff0070dd|Hitem:37011::::::::50:102::22::1:28:872:::::|h[Magic Broom]|h|r 3 1 Item-61-0-4000000B07D1D9E0 1", -- [1241]
-			"<17:38:05><DEBUG>	 OnLootSlotCleared() 1 |cff0070dd|Hitem:37011::::::::50:102::22::1:28:872:::::|h[Magic Broom]|h|r 3", -- [1242]
-			"<17:38:05><DEBUG>	 Event: LOOT_CLOSED", -- [1243]
-			"<17:38:05><DEBUG>	 Event: LOOT_CLOSED", -- [1244]
-			"<17:38:05><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143904::::::::50:102::22:1:7464:1:28:181:::::||h[Seal of Ghoulish Glee]||h||r 5", -- [1245]
-			"<17:38:05><DEBUG>	 Found: nil nil nil", -- [1246]
-			"<17:38:06><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Zulbathal-Zul'jin", -- [1247]
-			"<17:38:06><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Zulbathal-Zul'jin", -- [1248]
-			"<17:38:06><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143904::::::::50:102::22:1:7464:1:28:181:::::||h[Seal of Ghoulish Glee]||h||r 5", -- [1249]
-			"<17:38:06><DEBUG>	 Found: nil nil nil", -- [1250]
-			"<17:38:06><ERROR>	 UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:143904::::::::50:102::22:1:7464:1:28:181:::::|h[Seal of Ghoulish Glee]|h|r not found in bags", -- [1251]
-			"<17:38:07><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1252]
-			"<17:38:07><DEBUG>	 Storage:New |cff0070dd|Hitem:37011::::::::50:102::22::1:28:872:::::|h[Magic Broom]|h|r temp", -- [1253]
-			"<17:38:07><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::50:102::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [1254]
-			"<17:38:07><DEBUG>	 Found item at 1 18", -- [1255]
-			"<17:38:07><DEBUG>	 Found item at 1 22", -- [1256]
-			"<17:38:07><DEBUG>	 Found: 1 22 0", -- [1257]
-			"<17:38:08><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::50:102::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [1258]
-			"<17:38:08><DEBUG>	 Found item at 1 18", -- [1259]
-			"<17:38:08><DEBUG>	 Found item at 1 22", -- [1260]
-			"<17:38:08><DEBUG>	 Found: 1 22 0", -- [1261]
-			"<17:38:09><Comm>	 ^1^Sn_t^T^N1^S|cff0070dd|Hitem:37011::::::::50:102::22::1:28:872:::::|h[Magic~`Broom]|h|r^N2^S0^t^^ INSTANCE_CHAT Zulbathal-Zul'jin", -- [1262]
-			"<17:38:09><DEBUG>	 GetML()", -- [1263]
-			"<17:38:21><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-0000460D5B54", -- [1264]
-			"<17:38:21><DEBUG>	 GetML()", -- [1265]
-			"<17:38:27><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1266]
-			"<17:38:27><INFO>	 UpdatePlayersData()", -- [1267]
-			"<17:38:30><DEBUG>	 GetML()", -- [1268]
-			"<17:39:35><DEBUG>	 Event: LOOT_READY true", -- [1269]
-			"<17:39:35><DEBUG>	 Event: LOOT_READY true", -- [1270]
-			"<17:40:00><DEBUG>	 Event: LOOT_READY true", -- [1271]
-			"<17:40:26><DEBUG>	 Event: LOOT_READY true", -- [1272]
-			"<17:40:44><DEBUG>	 Event: LOOT_READY true", -- [1273]
-			"<17:40:53><DEBUG>	 Event: LOOT_READY true", -- [1274]
-			"<17:40:56><DEBUG>	 Event: LOOT_READY true", -- [1275]
-			"<17:40:58><DEBUG>	 Event: LOOT_READY true", -- [1276]
-			"<17:41:03><DEBUG>	 Event: LOOT_READY true", -- [1277]
-			"<17:41:09><DEBUG>	 Event: LOOT_READY true", -- [1278]
-			"<17:41:14><DEBUG>	 Event: LOOT_READY true", -- [1279]
-			"<17:41:21><DEBUG>	 Event: LOOT_READY true", -- [1280]
-			"<17:41:32><DEBUG>	 Event: LOOT_READY true", -- [1281]
-			"<17:41:36><DEBUG>	 Event: LOOT_READY true", -- [1282]
-			"<17:41:40><DEBUG>	 Event: LOOT_READY true", -- [1283]
-			"<17:41:40><DEBUG>	 Event: LOOT_READY true", -- [1284]
-			"<17:41:47><DEBUG>	 Event: LOOT_READY true", -- [1285]
-			"<17:41:51><DEBUG>	 Event: LOOT_READY true", -- [1286]
-			"<17:42:02><DEBUG>	 Event: LOOT_READY true", -- [1287]
-			"<17:42:09><DEBUG>	 Event: LOOT_READY true", -- [1288]
-			"<17:42:22><DEBUG>	 Event: LOOT_READY true", -- [1289]
-			"<17:42:24><DEBUG>	 Event: LOOT_READY true", -- [1290]
-			"<17:42:27><DEBUG>	 Event: LOOT_READY true", -- [1291]
-			"<17:42:34><DEBUG>	 Event: LOOT_READY true", -- [1292]
-			"<17:42:42><DEBUG>	 Event: LOOT_READY true", -- [1293]
-			"<17:46:08><INFO>	 Logged In", -- [1294]
-			"<17:46:08>[ML]<INFO>	 Init", -- [1295]
-			"<17:46:08><INFO>	 RCLootCouncil TradeUI enabled", -- [1296]
-			"<17:46:25><INFO>	 Avisar-Dalaran 3.2.0 nil", -- [1297]
-			"<17:46:25><DEBUG>	 ActivateSkin bfa", -- [1298]
-			"<17:46:37><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1299]
-			"<17:46:37><INFO>	 UpdatePlayersData()", -- [1300]
-			"<17:46:37><INFO>	 Player relog...", -- [1301]
-			"<17:46:48><DEBUG>	 GetML()", -- [1302]
-			"<20:43:36><INFO>	 Logged In", -- [1303]
-			"<20:43:36>[ML]<INFO>	 Init", -- [1304]
-			"<20:43:36><INFO>	 RCLootCouncil TradeUI enabled", -- [1305]
-			"<20:43:51><INFO>	 Avisar-Dalaran 3.2.0 nil", -- [1306]
-			"<20:43:51><DEBUG>	 ActivateSkin bfa", -- [1307]
-			"<20:44:04><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1308]
-			"<20:44:04><INFO>	 UpdatePlayersData()", -- [1309]
-			"<20:44:04><INFO>	 Player relog...", -- [1310]
-			"<20:44:15><DEBUG>	 GetML()", -- [1311]
-			"<20:52:33><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1312]
-			"<20:52:35><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1313]
-			"<20:52:35><INFO>	 UpdatePlayersData()", -- [1314]
-			"<20:52:38><DEBUG>	 GetML()", -- [1315]
-			"<20:52:38><DEBUG>	 GetML()", -- [1316]
-			"<20:55:04><DEBUG>	 Event: LOOT_READY true", -- [1317]
-			"<20:55:04><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4228-1004-19700-23682-000075FFF7 132183", -- [1318]
-			"<20:55:05><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [1319]
-			"<20:55:05><DEBUG>	 Event: LOOT_CLOSED", -- [1320]
-			"<20:55:05><DEBUG>	 Event: LOOT_CLOSED", -- [1321]
-			"<20:55:05><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Avisar-Dalaran", -- [1322]
-			"<20:55:05><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Avisar-Dalaran", -- [1323]
-			"<20:55:05><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143902 |cff0070dd|Hitem:143902::::::::51:70::22:1:7464:2:28:181:9:50:::::|h[Wicked Witch's Signet]|h|r 1 Belgrom PALADIN", -- [1324]
-			"<20:55:07><DEBUG>	 Event: LOOT_READY true", -- [1325]
-			"<20:55:07><DEBUG>	 Event: LOOT_READY true", -- [1326]
-			"<20:55:08><DEBUG>	 Event: LOOT_CLOSED", -- [1327]
-			"<20:55:08><DEBUG>	 Event: LOOT_CLOSED", -- [1328]
-			"<20:55:33><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1329]
-			"<20:55:35><DEBUG>	 GetML()", -- [1330]
-			"<20:55:36><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-0000460DFEC6", -- [1331]
-			"<20:55:36><DEBUG>	 GetML()", -- [1332]
-			"<20:55:42><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1333]
-			"<20:55:42><INFO>	 UpdatePlayersData()", -- [1334]
-			"<20:55:45><DEBUG>	 GetML()", -- [1335]
-			"<20:58:16><INFO>	 Logged In", -- [1336]
-			"<20:58:16>[ML]<INFO>	 Init", -- [1337]
-			"<20:58:16><INFO>	 RCLootCouncil TradeUI enabled", -- [1338]
-			"<20:58:31><INFO>	 Illingrath-Dalaran 3.2.0 nil", -- [1339]
-			"<20:58:31><DEBUG>	 ActivateSkin bfa", -- [1340]
-			"<20:58:42><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1341]
-			"<20:58:42><INFO>	 UpdatePlayersData()", -- [1342]
-			"<20:58:42><INFO>	 Player relog...", -- [1343]
-			"<20:58:50><DEBUG>	 GetML()", -- [1344]
-			"<21:00:52><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1345]
-			"<21:00:54><DEBUG>	 GetML()", -- [1346]
-			"<21:00:55><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1347]
-			"<21:00:55><INFO>	 UpdatePlayersData()", -- [1348]
-			"<21:00:57><DEBUG>	 GetML()", -- [1349]
-			"<21:02:34><DEBUG>	 Event: LOOT_READY true", -- [1350]
-			"<21:02:34><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-15192-23682-00007601DA 86215", -- [1351]
-			"<21:02:34><DEBUG>	 Adding to self.lootSlotInfo 3 |cff0070dd|Hitem:143902::::::::50:581::22:1:7464:1:28:181:::::|h[Wicked Witch's Signet]|h|r 3 1 Creature-0-3776-1004-15192-23682-00007601DA 1", -- [1352]
-			"<21:02:34><DEBUG>	 OnLootSlotCleared() 3 |cff0070dd|Hitem:143902::::::::50:581::22:1:7464:1:28:181:::::|h[Wicked Witch's Signet]|h|r 3", -- [1353]
-			"<21:02:34><DEBUG>	 Event: LOOT_READY true", -- [1354]
-			"<21:02:34><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-15192-23682-00007601DA 86215", -- [1355]
-			"<21:02:34><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143902 |cff0070dd|Hitem:143902::::::::50:581::22:1:7464:2:28:181:9:50:::::|h[Wicked Witch's Signet]|h|r 1 Illingrath DEMONHUNTER", -- [1356]
-			"<21:02:34><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [1357]
-			"<21:02:34><DEBUG>	 Event: LOOT_CLOSED", -- [1358]
-			"<21:02:34><DEBUG>	 Event: LOOT_CLOSED", -- [1359]
-			"<21:02:35><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Illingrath-Dalaran", -- [1360]
-			"<21:02:35><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Illingrath-Dalaran", -- [1361]
-			"<21:02:35><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143901 |cff0070dd|Hitem:143901::::::::50:581::22:1:7464:2:28:181:9:60:::::|h[Band of the Petrified Pumpkin]|h|r 1 Vaerimos-WyrmrestAccord MAGE", -- [1362]
-			"<21:02:36><DEBUG>	 Storage:New |cff0070dd|Hitem:143902::::::::50:581::22:1:7464:1:28:181:::::|h[Wicked Witch's Signet]|h|r temp", -- [1363]
-			"<21:02:36><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143902::::::::50:581::22:1:7464:1:28:181:::::||h[Wicked Witch's Signet]||h||r 5", -- [1364]
-			"<21:02:36><DEBUG>	 Found: nil nil nil", -- [1365]
-			"<21:02:36><DEBUG>	 Event: LOOT_READY true", -- [1366]
-			"<21:02:37><DEBUG>	 Event: LOOT_READY true", -- [1367]
-			"<21:02:37><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143902::::::::50:581::22:1:7464:1:28:181:::::||h[Wicked Witch's Signet]||h||r 5", -- [1368]
-			"<21:02:37><DEBUG>	 Found: nil nil nil", -- [1369]
-			"<21:02:37><DEBUG>	 Event: LOOT_CLOSED", -- [1370]
-			"<21:02:37><DEBUG>	 Event: LOOT_CLOSED", -- [1371]
-			"<21:02:38><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143902::::::::50:581::22:1:7464:1:28:181:::::||h[Wicked Witch's Signet]||h||r 5", -- [1372]
-			"<21:02:38><DEBUG>	 Found: nil nil nil", -- [1373]
-			"<21:02:39><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143902::::::::50:581::22:1:7464:1:28:181:::::||h[Wicked Witch's Signet]||h||r 5", -- [1374]
-			"<21:02:39><DEBUG>	 Found: nil nil nil", -- [1375]
-			"<21:02:39><ERROR>	 UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:143902::::::::50:581::22:1:7464:1:28:181:::::|h[Wicked Witch's Signet]|h|r not found in bags", -- [1376]
-			"<21:02:47><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1377]
-			"<21:02:49><DEBUG>	 GetML()", -- [1378]
-			"<21:03:01><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-0000460E04E5", -- [1379]
-			"<21:03:01><DEBUG>	 GetML()", -- [1380]
-			"<21:03:07><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1381]
-			"<21:03:07><INFO>	 UpdatePlayersData()", -- [1382]
-			"<21:03:10><DEBUG>	 GetML()", -- [1383]
-			"<21:08:08><DEBUG>	 Event: LOOT_READY true", -- [1384]
-			"<21:08:09><DEBUG>	 Event: LOOT_READY true", -- [1385]
-			"<21:11:25><INFO>	 Logged In", -- [1386]
-			"<21:11:25>[ML]<INFO>	 Init", -- [1387]
-			"<21:11:25><INFO>	 RCLootCouncil TradeUI enabled", -- [1388]
-			"<21:11:40><INFO>	 Varlouris-Dalaran 3.2.0 nil", -- [1389]
-			"<21:11:40><DEBUG>	 ActivateSkin bfa", -- [1390]
-			"<21:11:52><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1391]
-			"<21:11:52><INFO>	 UpdatePlayersData()", -- [1392]
-			"<21:11:52><INFO>	 Player relog...", -- [1393]
-			"<21:12:00><DEBUG>	 GetML()", -- [1394]
-			"<21:19:52><DEBUG>	 Event: LOOT_READY true", -- [1395]
-			"<21:19:53><DEBUG>	 Event: LOOT_READY true", -- [1396]
-			"<21:20:09><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1397]
-			"<21:20:11><DEBUG>	 GetML()", -- [1398]
-			"<21:20:11><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1399]
-			"<21:20:11><INFO>	 UpdatePlayersData()", -- [1400]
-			"<21:20:13><DEBUG>	 GetML()", -- [1401]
-			"<21:22:16><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143902 |cff0070dd|Hitem:143902::::::::50:263::22:1:7464:2:28:181:9:60:::::|h[Wicked Witch's Signet]|h|r 1 Mellzy-Proudmoore PALADIN", -- [1402]
-			"<21:22:17><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143904 |cff0070dd|Hitem:143904::::::::50:263::22:1:7464:2:28:181:9:60:::::|h[Seal of Ghoulish Glee]|h|r 1 Saerys-Lightbringer DEMONHUNTER", -- [1403]
-			"<21:22:17><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Mellzy-Proudmoore", -- [1404]
-			"<21:22:17><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Mellzy-Proudmoore", -- [1405]
-			"<21:22:17><DEBUG>	 Event: LOOT_READY true", -- [1406]
-			"<21:22:17><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-15489-23682-0000760661 134670", -- [1407]
-			"<21:22:17><DEBUG>	 Event: LOOT_READY true", -- [1408]
-			"<21:22:17><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-15489-23682-0000760661 134670", -- [1409]
-			"<21:22:17><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [1410]
-			"<21:22:17><DEBUG>	 Event: LOOT_CLOSED", -- [1411]
-			"<21:22:17><DEBUG>	 Event: LOOT_CLOSED", -- [1412]
-			"<21:22:18><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Varlouris-Dalaran", -- [1413]
-			"<21:22:18><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Varlouris-Dalaran", -- [1414]
-			"<21:22:21><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Mellzy-Proudmoore", -- [1415]
-			"<21:22:21><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Mellzy-Proudmoore", -- [1416]
-			"<21:22:21><DEBUG>	 Event: LOOT_READY true", -- [1417]
-			"<21:22:21><DEBUG>	 Event: LOOT_CLOSED", -- [1418]
-			"<21:22:21><DEBUG>	 Event: LOOT_CLOSED", -- [1419]
-			"<21:22:23><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1420]
-			"<21:22:25><DEBUG>	 GetML()", -- [1421]
-			"<21:22:32><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-2-0000460E16CF", -- [1422]
-			"<21:22:32><DEBUG>	 GetML()", -- [1423]
-			"<21:22:39><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1424]
-			"<21:22:39><INFO>	 UpdatePlayersData()", -- [1425]
-			"<21:22:41><DEBUG>	 GetML()", -- [1426]
-			"<21:24:01><INFO>	 Logged In", -- [1427]
-			"<21:24:01>[ML]<INFO>	 Init", -- [1428]
-			"<21:24:01><INFO>	 RCLootCouncil TradeUI enabled", -- [1429]
-			"<21:24:16><INFO>	 Darnastris-Dalaran 3.2.0 nil", -- [1430]
-			"<21:24:16><DEBUG>	 ActivateSkin bfa", -- [1431]
-			"<21:24:29><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1432]
-			"<21:24:29><INFO>	 UpdatePlayersData()", -- [1433]
-			"<21:24:29><INFO>	 Player relog...", -- [1434]
-			"<21:24:37><DEBUG>	 GetML()", -- [1435]
-			"<21:31:12><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1436]
-			"<21:31:14><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1437]
-			"<21:31:14><INFO>	 UpdatePlayersData()", -- [1438]
-			"<21:31:15><DEBUG>	 GetML()", -- [1439]
-			"<21:31:16><DEBUG>	 GetML()", -- [1440]
-			"<21:33:33><DEBUG>	 Event: LOOT_READY true", -- [1441]
-			"<21:33:33><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4228-1004-21144-23682-00007608F4 75252", -- [1442]
-			"<21:33:33><DEBUG>	 Adding to self.lootSlotInfo 3 |cff0070dd|Hitem:143901::::::::50:64::22:1:7464:1:28:181:::::|h[Band of the Petrified Pumpkin]|h|r 3 1 Creature-0-4228-1004-21144-23682-00007608F4 1", -- [1443]
-			"<21:33:33><DEBUG>	 OnLootSlotCleared() 3 |cff0070dd|Hitem:143901::::::::50:64::22:1:7464:1:28:181:::::|h[Band of the Petrified Pumpkin]|h|r 3", -- [1444]
-			"<21:33:33><DEBUG>	 Event: LOOT_READY true", -- [1445]
-			"<21:33:33><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4228-1004-21144-23682-00007608F4 75252", -- [1446]
-			"<21:33:33><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143901 |cff0070dd|Hitem:143901::::::::50:64::22:1:7464:2:28:181:9:50:::::|h[Band of the Petrified Pumpkin]|h|r 1 Darnastris MAGE", -- [1447]
-			"<21:33:33><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [1448]
-			"<21:33:33><DEBUG>	 Event: LOOT_CLOSED", -- [1449]
-			"<21:33:33><DEBUG>	 Event: LOOT_CLOSED", -- [1450]
-			"<21:33:33><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Darnastris-Dalaran", -- [1451]
-			"<21:33:33><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Darnastris-Dalaran", -- [1452]
-			"<21:33:35><DEBUG>	 Storage:New |cff0070dd|Hitem:143901::::::::50:64::22:1:7464:1:28:181:::::|h[Band of the Petrified Pumpkin]|h|r temp", -- [1453]
-			"<21:33:35><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143901::::::::50:64::22:1:7464:1:28:181:::::||h[Band of the Petrified Pumpkin]||h||r 5", -- [1454]
-			"<21:33:35><DEBUG>	 Found: nil nil nil", -- [1455]
-			"<21:33:36><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143901::::::::50:64::22:1:7464:1:28:181:::::||h[Band of the Petrified Pumpkin]||h||r 5", -- [1456]
-			"<21:33:36><DEBUG>	 Found: nil nil nil", -- [1457]
-			"<21:33:36><DEBUG>	 Event: LOOT_READY true", -- [1458]
-			"<21:33:36><DEBUG>	 Adding to self.lootSlotInfo 2 |cff0070dd|Hitem:37011::::::::50:64::22::1:28:872:::::|h[Magic Broom]|h|r 3 1 Item-3683-0-4000000A5DECFC5F 1", -- [1459]
-			"<21:33:36><DEBUG>	 OnLootSlotCleared() 2 |cff0070dd|Hitem:37011::::::::50:64::22::1:28:872:::::|h[Magic Broom]|h|r 3", -- [1460]
-			"<21:33:36><DEBUG>	 Event: LOOT_CLOSED", -- [1461]
-			"<21:33:36><DEBUG>	 Event: LOOT_CLOSED", -- [1462]
-			"<21:33:36><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143902 |cff0070dd|Hitem:143902::::::::50:64::22:1:7464:2:28:181:9:60:::::|h[Wicked Witch's Signet]|h|r 1 Teesh-ScarletCrusade DEMONHUNTER", -- [1463]
-			"<21:33:37><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Darnastris-Dalaran", -- [1464]
-			"<21:33:37><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Darnastris-Dalaran", -- [1465]
-			"<21:33:37><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143901::::::::50:64::22:1:7464:1:28:181:::::||h[Band of the Petrified Pumpkin]||h||r 5", -- [1466]
-			"<21:33:37><DEBUG>	 Found: nil nil nil", -- [1467]
-			"<21:33:38><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143901::::::::50:64::22:1:7464:1:28:181:::::||h[Band of the Petrified Pumpkin]||h||r 5", -- [1468]
-			"<21:33:38><DEBUG>	 Found: nil nil nil", -- [1469]
-			"<21:33:38><ERROR>	 UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:143901::::::::50:64::22:1:7464:1:28:181:::::|h[Band of the Petrified Pumpkin]|h|r not found in bags", -- [1470]
-			"<21:33:38><DEBUG>	 Storage:New |cff0070dd|Hitem:37011::::::::50:64::22::1:28:872:::::|h[Magic Broom]|h|r temp", -- [1471]
-			"<21:33:38><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::50:64::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [1472]
-			"<21:33:38><DEBUG>	 Found item at 0 19", -- [1473]
-			"<21:33:38><DEBUG>	 Found: 0 19 0", -- [1474]
-			"<21:33:39><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::50:64::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [1475]
-			"<21:33:39><DEBUG>	 Found item at 3 5", -- [1476]
-			"<21:33:39><DEBUG>	 Found: 3 5 0", -- [1477]
-			"<21:33:39><Comm>	 ^1^Sn_t^T^N1^S|cff0070dd|Hitem:37011::::::::50:64::22::1:28:872:::::|h[Magic~`Broom]|h|r^N2^S0^t^^ INSTANCE_CHAT Darnastris-Dalaran", -- [1478]
-			"<21:33:46><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-0000460E1EC2", -- [1479]
-			"<21:33:46><DEBUG>	 GetML()", -- [1480]
-			"<21:33:52><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1481]
-			"<21:33:52><INFO>	 UpdatePlayersData()", -- [1482]
-			"<21:33:54><DEBUG>	 GetML()", -- [1483]
-			"<21:40:29><INFO>	 Logged In", -- [1484]
-			"<21:40:29>[ML]<INFO>	 Init", -- [1485]
-			"<21:40:29><INFO>	 RCLootCouncil TradeUI enabled", -- [1486]
-			"<21:41:07><INFO>	 Rotclaugh-Dalaran 3.2.0 nil", -- [1487]
-			"<21:41:07><DEBUG>	 ActivateSkin bfa", -- [1488]
-			"<21:41:19><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1489]
-			"<21:41:19><INFO>	 UpdatePlayersData()", -- [1490]
-			"<21:41:19><INFO>	 Player relog...", -- [1491]
-			"<21:41:28><DEBUG>	 GetML()", -- [1492]
-			"<21:43:13><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1493]
-			"<21:43:15><DEBUG>	 GetML()", -- [1494]
-			"<21:43:16><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1495]
-			"<21:43:16><INFO>	 UpdatePlayersData()", -- [1496]
-			"<21:43:17><DEBUG>	 GetML()", -- [1497]
-			"<21:44:59><DEBUG>	 Event: LOOT_READY true", -- [1498]
-			"<21:44:59><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4228-1004-21574-23682-0000760BCA 136403", -- [1499]
-			"<21:44:59><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [1500]
-			"<21:44:59><DEBUG>	 Event: LOOT_CLOSED", -- [1501]
-			"<21:44:59><DEBUG>	 Event: LOOT_CLOSED", -- [1502]
-			"<21:44:59><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Rotclaugh-Dalaran", -- [1503]
-			"<21:44:59><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Rotclaugh-Dalaran", -- [1504]
-			"<21:45:01><DEBUG>	 Event: LOOT_READY true", -- [1505]
-			"<21:45:01><DEBUG>	 Adding to self.lootSlotInfo 1 |cff0070dd|Hitem:37011::::::::47:251::22::1:28:872:::::|h[Magic Broom]|h|r 3 1 Item-3683-0-4000000A5DED9687 1", -- [1506]
-			"<21:45:01><DEBUG>	 Event: LOOT_READY true", -- [1507]
-			"<21:45:01><DEBUG>	 Adding to self.lootSlotInfo 1 |cff0070dd|Hitem:37011::::::::47:251::22::1:28:872:::::|h[Magic Broom]|h|r 3 1 Item-3683-0-4000000A5DED9687 1", -- [1508]
-			"<21:45:01><DEBUG>	 OnLootSlotCleared() 1 |cff0070dd|Hitem:37011::::::::47:251::22::1:28:872:::::|h[Magic Broom]|h|r 3", -- [1509]
-			"<21:45:01><DEBUG>	 Event: LOOT_CLOSED", -- [1510]
-			"<21:45:01><DEBUG>	 Event: LOOT_CLOSED", -- [1511]
-			"<21:45:02><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Rotclaugh-Dalaran", -- [1512]
-			"<21:45:02><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Rotclaugh-Dalaran", -- [1513]
-			"<21:45:03><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1514]
-			"<21:45:03><DEBUG>	 Storage:New |cff0070dd|Hitem:37011::::::::47:251::22::1:28:872:::::|h[Magic Broom]|h|r temp", -- [1515]
-			"<21:45:03><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::47:251::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [1516]
-			"<21:45:03><DEBUG>	 Found item at 0 13", -- [1517]
-			"<21:45:03><DEBUG>	 Found item at 3 12", -- [1518]
-			"<21:45:03><DEBUG>	 Found: 3 12 0", -- [1519]
-			"<21:45:04><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::47:251::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [1520]
-			"<21:45:04><DEBUG>	 Found item at 3 11", -- [1521]
-			"<21:45:04><DEBUG>	 Found item at 3 12", -- [1522]
-			"<21:45:04><DEBUG>	 Found: 3 12 0", -- [1523]
-			"<21:45:05><DEBUG>	 GetML()", -- [1524]
-			"<21:45:05><Comm>	 ^1^Sn_t^T^N1^S|cff0070dd|Hitem:37011::::::::47:251::22::1:28:872:::::|h[Magic~`Broom]|h|r^N2^S0^t^^ INSTANCE_CHAT Rotclaugh-Dalaran", -- [1525]
-			"<21:45:05><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1526]
-			"<21:45:07><DEBUG>	 GetML()", -- [1527]
-			"<21:45:08><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-0000460E2B5B", -- [1528]
-			"<21:45:08><DEBUG>	 GetML()", -- [1529]
-			"<21:45:55><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1530]
-			"<21:45:55><INFO>	 UpdatePlayersData()", -- [1531]
-			"<21:45:58><DEBUG>	 GetML()", -- [1532]
-			"<03:05:00><INFO>	 Logged In", -- [1533]
-			"<03:05:00>[ML]<INFO>	 Init", -- [1534]
-			"<03:05:00><INFO>	 RCLootCouncil TradeUI enabled", -- [1535]
-			"<03:05:22><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [1536]
-			"<03:05:22><DEBUG>	 ActivateSkin bfa", -- [1537]
-			"<03:05:34><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1538]
-			"<03:05:34><INFO>	 UpdatePlayersData()", -- [1539]
-			"<03:05:34><INFO>	 Player relog...", -- [1540]
-			"<03:05:38><DEBUG>	 GetPlayersGuildRank()", -- [1541]
-			"<03:05:38><DEBUG>	 Found Guild Rank: Thuerge", -- [1542]
-			"<03:05:53><DEBUG>	 GetML()", -- [1543]
-			"<03:08:16><DEBUG>	 Event: LOOT_READY true", -- [1544]
-			"<03:08:17><DEBUG>	 Event: LOOT_READY true", -- [1545]
-			"<03:09:30><DEBUG>	 Event: LOOT_READY true", -- [1546]
-			"<03:09:58><DEBUG>	 Event: LOOT_READY true", -- [1547]
-			"<03:10:11><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1548]
-			"<03:10:13><DEBUG>	 GetML()", -- [1549]
-			"<03:10:14><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1550]
-			"<03:10:14><INFO>	 UpdatePlayersData()", -- [1551]
-			"<03:10:28><DEBUG>	 GetML()", -- [1552]
-			"<03:12:13><DEBUG>	 Event: LOOT_READY true", -- [1553]
-			"<03:12:13><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-32407-23682-000077A9F5 133937", -- [1554]
-			"<03:12:14><DEBUG>	 Event: LOOT_READY true", -- [1555]
-			"<03:12:14><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-32407-23682-000077A9F5 133937", -- [1556]
-			"<03:12:14><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [1557]
-			"<03:12:14><DEBUG>	 Event: LOOT_CLOSED", -- [1558]
-			"<03:12:14><DEBUG>	 Event: LOOT_CLOSED", -- [1559]
-			"<03:12:14><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [1560]
-			"<03:12:14><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [1561]
-			"<03:12:15><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143904 |cff0070dd|Hitem:143904::::::::60:71::22:1:7464:2:28:181:9:60:::::|h[Seal of Ghoulish Glee]|h|r 1 Temporantus-SilverHand DRUID", -- [1562]
-			"<03:12:16><DEBUG>	 Event: LOOT_READY true", -- [1563]
-			"<03:12:16><DEBUG>	 Event: LOOT_READY true", -- [1564]
-			"<03:12:17><DEBUG>	 Event: LOOT_CLOSED", -- [1565]
-			"<03:12:17><DEBUG>	 Event: LOOT_CLOSED", -- [1566]
-			"<03:12:32><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-2-000046119B59", -- [1567]
-			"<03:12:32><DEBUG>	 GetML()", -- [1568]
-			"<03:12:38><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1569]
-			"<03:12:38><INFO>	 UpdatePlayersData()", -- [1570]
-			"<03:12:47><DEBUG>	 GetML()", -- [1571]
-			"<03:13:06><DEBUG>	 Event: LOOT_READY true", -- [1572]
-			"<03:13:10><DEBUG>	 Event: LOOT_READY true", -- [1573]
-			"<03:13:27><DEBUG>	 Event: LOOT_READY true", -- [1574]
-			"<03:13:33><DEBUG>	 Event: LOOT_READY true", -- [1575]
-			"<03:13:37><DEBUG>	 Event: LOOT_READY true", -- [1576]
-			"<03:13:42><DEBUG>	 Event: LOOT_READY true", -- [1577]
-			"<03:13:47><DEBUG>	 Event: LOOT_READY true", -- [1578]
-			"<22:07:03><INFO>	 Logged In", -- [1579]
-			"<22:07:03>[ML]<INFO>	 Init", -- [1580]
-			"<22:07:03><INFO>	 RCLootCouncil TradeUI enabled", -- [1581]
-			"<22:07:26><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [1582]
-			"<22:07:26><DEBUG>	 ActivateSkin bfa", -- [1583]
-			"<22:07:37><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1584]
-			"<22:07:37><INFO>	 UpdatePlayersData()", -- [1585]
-			"<22:07:37><INFO>	 Player relog...", -- [1586]
-			"<22:07:40><DEBUG>	 GetPlayersGuildRank()", -- [1587]
-			"<22:07:40><DEBUG>	 GetPlayersGuildRank()", -- [1588]
-			"<22:07:40><DEBUG>	 Found Guild Rank: Thuerge", -- [1589]
-			"<22:07:54><DEBUG>	 GetML()", -- [1590]
-			"<22:08:23><DEBUG>	 Event: LOOT_READY true", -- [1591]
-			"<22:08:27><DEBUG>	 Event: LOOT_READY true", -- [1592]
-			"<22:08:29><DEBUG>	 Event: LOOT_READY true", -- [1593]
-			"<22:08:33><DEBUG>	 Event: LOOT_READY true", -- [1594]
-			"<22:08:36><DEBUG>	 Event: LOOT_READY true", -- [1595]
-			"<22:08:44><DEBUG>	 Event: LOOT_READY true", -- [1596]
-			"<22:08:48><DEBUG>	 Event: LOOT_READY true", -- [1597]
-			"<22:08:57><DEBUG>	 Event: LOOT_READY true", -- [1598]
-			"<22:09:34><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1599]
-			"<22:09:36><DEBUG>	 GetML()", -- [1600]
-			"<22:09:42><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1601]
-			"<22:09:42><INFO>	 UpdatePlayersData()", -- [1602]
-			"<22:09:52><DEBUG>	 GetML()", -- [1603]
-			"<22:11:37><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Tuarhamthree-Illidan", -- [1604]
-			"<22:11:37><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Tuarhamthree-Illidan", -- [1605]
-			"<22:11:38><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1606]
-			"<22:11:40><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143902 |cff0070dd|Hitem:143902::::::::60:71::22:1:7464:2:28:181:9:60:::::|h[Wicked Witch's Signet]|h|r 1 Sunwallker-Jubei'Thos DRUID", -- [1607]
-			"<22:11:40><DEBUG>	 GetML()", -- [1608]
-			"<22:11:48><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1609]
-			"<22:11:50><DEBUG>	 GetML()", -- [1610]
-			"<22:11:54><DEBUG>	 Event: LOOT_READY true", -- [1611]
-			"<22:11:54><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-5047-1004-6291-23682-000078B4F1 136667", -- [1612]
-			"<22:11:54><DEBUG>	 Event: LOOT_READY true", -- [1613]
-			"<22:11:54><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-5047-1004-6291-23682-000078B4F1 136667", -- [1614]
-			"<22:11:57><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [1615]
-			"<22:11:57><DEBUG>	 Event: LOOT_CLOSED", -- [1616]
-			"<22:11:57><DEBUG>	 Event: LOOT_CLOSED", -- [1617]
-			"<22:11:57><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [1618]
-			"<22:11:57><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [1619]
-			"<22:11:58><DEBUG>	 Event: LOOT_READY true", -- [1620]
-			"<22:11:58><DEBUG>	 Event: LOOT_READY true", -- [1621]
-			"<22:12:01><DEBUG>	 Event: LOOT_CLOSED", -- [1622]
-			"<22:12:01><DEBUG>	 Event: LOOT_CLOSED", -- [1623]
-			"<22:12:08><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-0000461323BF", -- [1624]
-			"<22:12:08><DEBUG>	 GetML()", -- [1625]
-			"<22:12:17><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1626]
-			"<22:12:17><INFO>	 UpdatePlayersData()", -- [1627]
-			"<22:12:26><DEBUG>	 GetML()", -- [1628]
-			"<18:52:22><INFO>	 Logged In", -- [1629]
-			"<18:52:22>[ML]<INFO>	 Init", -- [1630]
-			"<18:52:22><INFO>	 RCLootCouncil TradeUI enabled", -- [1631]
-			"<18:52:43><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [1632]
-			"<18:52:43><DEBUG>	 ActivateSkin bfa", -- [1633]
-			"<18:52:54><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1634]
-			"<18:52:54><INFO>	 UpdatePlayersData()", -- [1635]
-			"<18:52:54><INFO>	 Player relog...", -- [1636]
-			"<18:52:58><DEBUG>	 GetPlayersGuildRank()", -- [1637]
-			"<18:52:58><DEBUG>	 Found Guild Rank: Thuerge", -- [1638]
-			"<18:53:15><DEBUG>	 GetML()", -- [1639]
-			"<18:53:46><DEBUG>	 Event: LOOT_READY true", -- [1640]
-			"<18:54:04><DEBUG>	 Event: LOOT_READY true", -- [1641]
-			"<18:54:09><DEBUG>	 Event: LOOT_READY true", -- [1642]
-			"<18:54:14><DEBUG>	 Event: LOOT_READY true", -- [1643]
-			"<18:54:19><DEBUG>	 Event: LOOT_READY true", -- [1644]
-			"<18:54:26><DEBUG>	 Event: LOOT_READY true", -- [1645]
-			"<18:54:33><DEBUG>	 Event: LOOT_READY true", -- [1646]
-			"<18:54:43><DEBUG>	 Event: LOOT_READY true", -- [1647]
-			"<18:54:49><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1648]
-			"<18:54:51><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1649]
-			"<18:54:51><INFO>	 UpdatePlayersData()", -- [1650]
-			"<18:55:01><DEBUG>	 GetML()", -- [1651]
-			"<18:55:03><DEBUG>	 GetML()", -- [1652]
-			"<18:56:11><DEBUG>	 Event: LOOT_READY true", -- [1653]
-			"<18:56:11><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4219-1004-19996-23682-000079D8CA 136906", -- [1654]
-			"<18:56:11><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [1655]
-			"<18:56:11><DEBUG>	 Event: LOOT_CLOSED", -- [1656]
-			"<18:56:11><DEBUG>	 Event: LOOT_CLOSED", -- [1657]
-			"<18:56:11><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [1658]
-			"<18:56:11><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [1659]
-			"<18:56:12><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Swartz-Zul'jin", -- [1660]
-			"<18:56:12><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Swartz-Zul'jin", -- [1661]
-			"<18:56:13><DEBUG>	 Event: LOOT_READY true", -- [1662]
-			"<18:56:13><DEBUG>	 Event: LOOT_CLOSED", -- [1663]
-			"<18:56:13><DEBUG>	 Event: LOOT_CLOSED", -- [1664]
-			"<18:56:16><Comm>	 ^1^Stradable^T^N1^S|cff0070dd|Hitem:33154::::::::60:71::22::1:28:373:::::|h[Sinister~`Squashling]|h|r^N2^S0^t^^ INSTANCE_CHAT Swartz-Zul'jin", -- [1665]
-			"<18:56:20><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-00004614E446", -- [1666]
-			"<18:56:20><DEBUG>	 GetML()", -- [1667]
-			"<18:56:25><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1668]
-			"<18:56:25><INFO>	 UpdatePlayersData()", -- [1669]
-			"<18:56:36><DEBUG>	 GetML()", -- [1670]
-			"<00:59:33><INFO>	 Logged In", -- [1671]
-			"<00:59:33>[ML]<INFO>	 Init", -- [1672]
-			"<00:59:33><INFO>	 RCLootCouncil TradeUI enabled", -- [1673]
-			"<00:59:57><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [1674]
-			"<00:59:57><DEBUG>	 ActivateSkin bfa", -- [1675]
-			"<01:00:07><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1676]
-			"<01:00:07><INFO>	 UpdatePlayersData()", -- [1677]
-			"<01:00:07><INFO>	 Player relog...", -- [1678]
-			"<01:00:11><DEBUG>	 GetPlayersGuildRank()", -- [1679]
-			"<01:00:11><DEBUG>	 Found Guild Rank: Thuerge", -- [1680]
-			"<01:00:26><DEBUG>	 GetML()", -- [1681]
-			"<01:00:58><DEBUG>	 Event: LOOT_READY true", -- [1682]
-			"<01:01:02><DEBUG>	 Event: LOOT_READY true", -- [1683]
-			"<01:01:14><DEBUG>	 Event: LOOT_READY true", -- [1684]
-			"<01:01:28><DEBUG>	 Event: LOOT_READY true", -- [1685]
-			"<01:01:33><DEBUG>	 Event: LOOT_READY true", -- [1686]
-			"<01:01:36><DEBUG>	 Event: LOOT_READY true", -- [1687]
-			"<01:09:34><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1688]
-			"<01:09:36><DEBUG>	 GetML()", -- [1689]
-			"<01:09:37><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1690]
-			"<01:09:37><INFO>	 UpdatePlayersData()", -- [1691]
-			"<01:09:52><DEBUG>	 GetML()", -- [1692]
-			"<01:12:00><DEBUG>	 Event: LOOT_READY true", -- [1693]
-			"<01:12:00><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4225-1004-1517-23682-00007B8231 129264", -- [1694]
-			"<01:12:00><DEBUG>	 Event: LOOT_READY true", -- [1695]
-			"<01:12:00><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4225-1004-1517-23682-00007B8231 129264", -- [1696]
-			"<01:12:00><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [1697]
-			"<01:12:00><DEBUG>	 Event: LOOT_CLOSED", -- [1698]
-			"<01:12:00><DEBUG>	 Event: LOOT_CLOSED", -- [1699]
-			"<01:12:00><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [1700]
-			"<01:12:00><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [1701]
-			"<01:12:02><DEBUG>	 Event: LOOT_READY true", -- [1702]
-			"<01:12:02><DEBUG>	 Adding to self.lootSlotInfo 1 |cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic Broom]|h|r 3 1 Item-75-0-4000000B08B7657C 1", -- [1703]
-			"<01:12:03><DEBUG>	 Event: LOOT_READY true", -- [1704]
-			"<01:12:03><DEBUG>	 Adding to self.lootSlotInfo 1 |cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic Broom]|h|r 3 1 Item-75-0-4000000B08B7657C 1", -- [1705]
-			"<01:12:06><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143904 |cff0070dd|Hitem:143904::::::::60:71::22:1:7464:2:28:181:9:52:::::|h[Seal of Ghoulish Glee]|h|r 1 Izhtaera-Durotan SHAMAN", -- [1706]
-			"<01:12:06><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1707]
-			"<01:12:07><DEBUG>	 Event: LOOT_CLOSED", -- [1708]
-			"<01:12:07><DEBUG>	 OnLootSlotCleared() 1 |cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic Broom]|h|r 3", -- [1709]
-			"<01:12:07><DEBUG>	 Event: LOOT_CLOSED", -- [1710]
-			"<01:12:07><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [1711]
-			"<01:12:08><DEBUG>	 GetML()", -- [1712]
-			"<01:12:09><DEBUG>	 Storage:New |cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic Broom]|h|r temp", -- [1713]
-			"<01:12:09><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::60:71::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [1714]
-			"<01:12:09><DEBUG>	 Found: nil nil nil", -- [1715]
-			"<01:12:10><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::60:71::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [1716]
-			"<01:12:10><DEBUG>	 Found: nil nil nil", -- [1717]
-			"<01:12:11><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::60:71::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [1718]
-			"<01:12:11><DEBUG>	 Found: nil nil nil", -- [1719]
-			"<01:12:12><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::60:71::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [1720]
-			"<01:12:12><DEBUG>	 Found: nil nil nil", -- [1721]
-			"<01:12:12><ERROR>	 UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic Broom]|h|r not found in bags", -- [1722]
-			"<01:12:52><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1723]
-			"<01:12:54><DEBUG>	 GetML()", -- [1724]
-			"<01:13:01><DEBUG>	 Event: LOOT_READY true", -- [1725]
-			"<01:13:01><DEBUG>	 Adding to self.lootSlotInfo 1 |cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic Broom]|h|r 3 1 Item-75-0-4000000B08B7657C 1", -- [1726]
-			"<01:13:02><DEBUG>	 OnLootSlotCleared() 1 |cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic Broom]|h|r 3", -- [1727]
-			"<01:13:02><DEBUG>	 Event: LOOT_CLOSED", -- [1728]
-			"<01:13:02><DEBUG>	 Event: LOOT_CLOSED", -- [1729]
-			"<01:13:02><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [1730]
-			"<01:13:02><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [1731]
-			"<01:13:04><DEBUG>	 Storage:New |cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic Broom]|h|r temp", -- [1732]
-			"<01:13:04><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::60:71::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [1733]
-			"<01:13:04><DEBUG>	 Found item at 3 18", -- [1734]
-			"<01:13:04><DEBUG>	 Found: 3 18 0", -- [1735]
-			"<01:13:05><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::60:71::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [1736]
-			"<01:13:05><DEBUG>	 Found item at 3 18", -- [1737]
-			"<01:13:05><DEBUG>	 Found: 3 18 0", -- [1738]
-			"<01:13:05><Comm>	 ^1^Sn_t^T^N1^S|cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic~`Broom]|h|r^N2^S0^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [1739]
-			"<01:13:14><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-00004617F14B", -- [1740]
-			"<01:13:14><DEBUG>	 GetML()", -- [1741]
-			"<01:13:20><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1742]
-			"<01:13:20><INFO>	 UpdatePlayersData()", -- [1743]
-			"<01:13:29><DEBUG>	 GetML()", -- [1744]
-			"<01:13:48><DEBUG>	 Event: LOOT_READY true", -- [1745]
-			"<01:13:56><DEBUG>	 Event: LOOT_READY true", -- [1746]
-			"<01:14:05><DEBUG>	 Event: LOOT_READY true", -- [1747]
-			"<01:14:05><DEBUG>	 Event: LOOT_READY true", -- [1748]
-			"<01:14:10><DEBUG>	 Event: LOOT_READY true", -- [1749]
-			"<01:14:11><DEBUG>	 Event: LOOT_READY true", -- [1750]
-			"<01:14:20><DEBUG>	 Event: LOOT_READY true", -- [1751]
-			"<04:50:10><INFO>	 Logged In", -- [1752]
-			"<04:50:10>[ML]<INFO>	 Init", -- [1753]
-			"<04:50:10><INFO>	 RCLootCouncil TradeUI enabled", -- [1754]
-			"<04:50:31><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [1755]
-			"<04:50:31><DEBUG>	 ActivateSkin bfa", -- [1756]
-			"<04:50:44><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1757]
-			"<04:50:44><INFO>	 UpdatePlayersData()", -- [1758]
-			"<04:50:44><INFO>	 Player relog...", -- [1759]
-			"<04:50:47><DEBUG>	 GetPlayersGuildRank()", -- [1760]
-			"<04:50:47><DEBUG>	 GetPlayersGuildRank()", -- [1761]
-			"<04:50:47><DEBUG>	 Found Guild Rank: Thuerge", -- [1762]
-			"<04:51:04><DEBUG>	 GetML()", -- [1763]
-			"<04:51:35><DEBUG>	 Event: LOOT_READY true", -- [1764]
-			"<04:51:39><DEBUG>	 Event: LOOT_READY true", -- [1765]
-			"<04:51:41><DEBUG>	 Event: LOOT_READY true", -- [1766]
-			"<04:51:50><DEBUG>	 Event: LOOT_READY true", -- [1767]
-			"<04:51:56><DEBUG>	 Event: LOOT_READY true", -- [1768]
-			"<04:52:11><DEBUG>	 Event: LOOT_READY true", -- [1769]
-			"<04:52:45><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1770]
-			"<04:52:47><DEBUG>	 GetML()", -- [1771]
-			"<04:52:53><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1772]
-			"<04:52:53><INFO>	 UpdatePlayersData()", -- [1773]
-			"<04:53:04><DEBUG>	 GetML()", -- [1774]
-			"<04:55:20><DEBUG>	 Event: LOOT_READY true", -- [1775]
-			"<04:55:20><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-5047-1004-27492-23682-00007D0808 132893", -- [1776]
-			"<04:55:20><DEBUG>	 Event: LOOT_READY true", -- [1777]
-			"<04:55:20><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-5047-1004-27492-23682-00007D0808 132893", -- [1778]
-			"<04:55:21><DEBUG>	 Event: LOOT_CLOSED", -- [1779]
-			"<04:55:21><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [1780]
-			"<04:55:21><DEBUG>	 Event: LOOT_CLOSED", -- [1781]
-			"<04:55:22><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143904 |cff0070dd|Hitem:143904::::::::60:71::22:1:7464:2:28:181:9:51:::::|h[Seal of Ghoulish Glee]|h|r 1 Nõva-Frostmourne MAGE", -- [1782]
-			"<04:55:22><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [1783]
-			"<04:55:23><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Plays-Thrall", -- [1784]
-			"<04:55:24><DEBUG>	 Event: LOOT_READY true", -- [1785]
-			"<04:55:24><DEBUG>	 Event: LOOT_READY true", -- [1786]
-			"<04:55:26><DEBUG>	 Event: LOOT_CLOSED", -- [1787]
-			"<04:55:26><DEBUG>	 Event: LOOT_CLOSED", -- [1788]
-			"<04:55:28><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Plays-Thrall", -- [1789]
-			"<04:55:28><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Plays-Thrall", -- [1790]
-			"<04:55:28><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143904 |cff0070dd|Hitem:143904::::::::60:71::22:1:7464:2:28:181:9:58:::::|h[Seal of Ghoulish Glee]|h|r 1 Quanthum-Uldaman PALADIN", -- [1791]
-			"<04:55:32><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1792]
-			"<04:55:34><DEBUG>	 GetML()", -- [1793]
-			"<04:55:35><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-0000461A5859", -- [1794]
-			"<04:55:35><DEBUG>	 GetML()", -- [1795]
-			"<04:55:44><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1796]
-			"<04:55:44><INFO>	 UpdatePlayersData()", -- [1797]
-			"<04:55:54><DEBUG>	 GetML()", -- [1798]
-			"<23:20:33><INFO>	 Logged In", -- [1799]
-			"<23:20:33>[ML]<INFO>	 Init", -- [1800]
-			"<23:20:33><INFO>	 RCLootCouncil TradeUI enabled", -- [1801]
-			"<23:20:56><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [1802]
-			"<23:20:56><DEBUG>	 ActivateSkin bfa", -- [1803]
-			"<23:21:07><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1804]
-			"<23:21:07><INFO>	 UpdatePlayersData()", -- [1805]
-			"<23:21:07><INFO>	 Player relog...", -- [1806]
-			"<23:21:11><DEBUG>	 GetPlayersGuildRank()", -- [1807]
-			"<23:21:11><DEBUG>	 Found Guild Rank: Thuerge", -- [1808]
-			"<23:21:28><DEBUG>	 GetML()", -- [1809]
-			"<23:22:21><DEBUG>	 Event: LOOT_READY true", -- [1810]
-			"<23:22:25><DEBUG>	 Event: LOOT_READY true", -- [1811]
-			"<23:22:30><DEBUG>	 Event: LOOT_READY true", -- [1812]
-			"<23:22:30><DEBUG>	 Event: LOOT_READY true", -- [1813]
-			"<23:22:38><DEBUG>	 Event: LOOT_READY true", -- [1814]
-			"<23:22:43><DEBUG>	 Event: LOOT_READY true", -- [1815]
-			"<23:22:48><DEBUG>	 Event: LOOT_READY true", -- [1816]
-			"<23:22:55><DEBUG>	 Event: LOOT_READY true", -- [1817]
-			"<23:25:28><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1818]
-			"<23:25:30><DEBUG>	 GetML()", -- [1819]
-			"<23:25:31><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1820]
-			"<23:25:31><INFO>	 UpdatePlayersData()", -- [1821]
-			"<23:25:47><DEBUG>	 GetML()", -- [1822]
-			"<23:28:04><DEBUG>	 Event: LOOT_READY true", -- [1823]
-			"<23:28:04><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4225-1004-25315-23682-00007E0CD9 135192", -- [1824]
-			"<23:28:04><DEBUG>	 Event: LOOT_READY true", -- [1825]
-			"<23:28:04><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4225-1004-25315-23682-00007E0CD9 135192", -- [1826]
-			"<23:28:05><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [1827]
-			"<23:28:05><DEBUG>	 Event: LOOT_CLOSED", -- [1828]
-			"<23:28:05><DEBUG>	 Event: LOOT_CLOSED", -- [1829]
-			"<23:28:05><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [1830]
-			"<23:28:05><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [1831]
-			"<23:28:07><DEBUG>	 Event: LOOT_READY true", -- [1832]
-			"<23:28:07><DEBUG>	 Adding to self.lootSlotInfo 1 |cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic Broom]|h|r 3 1 Item-75-0-4000000B0921BC04 1", -- [1833]
-			"<23:28:07><DEBUG>	 Event: LOOT_READY true", -- [1834]
-			"<23:28:07><DEBUG>	 Adding to self.lootSlotInfo 1 |cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic Broom]|h|r 3 1 Item-75-0-4000000B0921BC04 1", -- [1835]
-			"<23:28:08><DEBUG>	 OnLootSlotCleared() 1 |cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic Broom]|h|r 3", -- [1836]
-			"<23:28:08><DEBUG>	 Event: LOOT_CLOSED", -- [1837]
-			"<23:28:08><DEBUG>	 Event: LOOT_CLOSED", -- [1838]
-			"<23:28:08><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [1839]
-			"<23:28:08><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [1840]
-			"<23:28:08><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143902 |cff0070dd|Hitem:143902::::::::60:71::22:1:7464:2:28:181:9:52:::::|h[Wicked Witch's Signet]|h|r 1 Hades-BurningBlade MAGE", -- [1841]
-			"<23:28:10><DEBUG>	 Storage:New |cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic Broom]|h|r temp", -- [1842]
-			"<23:28:10><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::60:71::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [1843]
-			"<23:28:10><DEBUG>	 Found item at 3 21", -- [1844]
-			"<23:28:10><DEBUG>	 Found item at 3 30", -- [1845]
-			"<23:28:10><DEBUG>	 Found: 3 30 0", -- [1846]
-			"<23:28:11><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::60:71::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [1847]
-			"<23:28:11><DEBUG>	 Found item at 3 21", -- [1848]
-			"<23:28:11><DEBUG>	 Found item at 3 30", -- [1849]
-			"<23:28:11><DEBUG>	 Found: 3 30 0", -- [1850]
-			"<23:28:11><Comm>	 ^1^Sn_t^T^N1^S|cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic~`Broom]|h|r^N2^S0^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [1851]
-			"<23:28:17><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Pandäid-Frostwolf", -- [1852]
-			"<23:28:17><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Pandäid-Frostwolf", -- [1853]
-			"<23:28:20><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Pandäid-Frostwolf", -- [1854]
-			"<23:28:20><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Pandäid-Frostwolf", -- [1855]
-			"<23:28:20><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-0000461C45BC", -- [1856]
-			"<23:28:20><DEBUG>	 GetML()", -- [1857]
-			"<23:28:27><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1858]
-			"<23:28:27><INFO>	 UpdatePlayersData()", -- [1859]
-			"<23:28:38><DEBUG>	 GetML()", -- [1860]
-			"<13:22:50><INFO>	 Logged In", -- [1861]
-			"<13:22:50>[ML]<INFO>	 Init", -- [1862]
-			"<13:22:50><INFO>	 RCLootCouncil TradeUI enabled", -- [1863]
-			"<13:23:14><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [1864]
-			"<13:23:14><DEBUG>	 ActivateSkin bfa", -- [1865]
-			"<13:23:25><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1866]
-			"<13:23:25><INFO>	 UpdatePlayersData()", -- [1867]
-			"<13:23:25><INFO>	 Player relog...", -- [1868]
-			"<13:23:29><DEBUG>	 GetPlayersGuildRank()", -- [1869]
-			"<13:23:29><DEBUG>	 Found Guild Rank: Thuerge", -- [1870]
-			"<13:23:46><DEBUG>	 GetML()", -- [1871]
-			"<13:24:34><DEBUG>	 Event: LOOT_READY true", -- [1872]
-			"<13:24:37><DEBUG>	 Event: LOOT_READY true", -- [1873]
-			"<13:24:54><DEBUG>	 Event: LOOT_READY true", -- [1874]
-			"<13:24:57><DEBUG>	 Event: LOOT_READY true", -- [1875]
-			"<13:25:03><DEBUG>	 Event: LOOT_READY true", -- [1876]
-			"<13:25:08><DEBUG>	 Event: LOOT_READY true", -- [1877]
-			"<13:26:08><DEBUG>	 Event: LOOT_READY true", -- [1878]
-			"<13:26:08><DEBUG>	 Event: LOOT_READY true", -- [1879]
-			"<13:26:08><DEBUG>	 Event: LOOT_READY true", -- [1880]
-			"<13:27:28><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1881]
-			"<13:27:30><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1882]
-			"<13:27:30><INFO>	 UpdatePlayersData()", -- [1883]
-			"<13:27:40><DEBUG>	 GetML()", -- [1884]
-			"<13:27:42><DEBUG>	 GetML()", -- [1885]
-			"<13:29:28><DEBUG>	 Event: LOOT_READY true", -- [1886]
-			"<13:29:28><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4219-1004-10999-23682-00007ED213 128707", -- [1887]
-			"<13:29:28><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [1888]
-			"<13:29:28><DEBUG>	 Event: LOOT_CLOSED", -- [1889]
-			"<13:29:28><DEBUG>	 Event: LOOT_CLOSED", -- [1890]
-			"<13:29:28><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [1891]
-			"<13:29:28><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [1892]
-			"<13:29:30><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143902 |cff0070dd|Hitem:143902::::::::60:71::22:1:7464:2:28:181:9:22:::::|h[Wicked Witch's Signet]|h|r 1 Xcrpt-Thunderhorn MAGE", -- [1893]
-			"<13:29:30><DEBUG>	 Event: LOOT_READY true", -- [1894]
-			"<13:29:31><DEBUG>	 Event: LOOT_CLOSED", -- [1895]
-			"<13:29:31><DEBUG>	 Event: LOOT_CLOSED", -- [1896]
-			"<13:29:46><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1897]
-			"<13:29:48><DEBUG>	 GetML()", -- [1898]
-			"<13:29:56><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-2-0000461D6A3B", -- [1899]
-			"<13:29:56><DEBUG>	 GetML()", -- [1900]
-			"<13:30:02><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1901]
-			"<13:30:02><INFO>	 UpdatePlayersData()", -- [1902]
-			"<13:30:13><DEBUG>	 GetML()", -- [1903]
-			"<13:31:17><DEBUG>	 Event: LOOT_READY true", -- [1904]
-			"<13:31:48><DEBUG>	 Event: LOOT_READY true", -- [1905]
-			"<13:31:59><DEBUG>	 Event: LOOT_READY true", -- [1906]
-			"<13:32:06><DEBUG>	 Event: LOOT_READY true", -- [1907]
-			"<13:32:09><DEBUG>	 Event: LOOT_READY true", -- [1908]
-			"<22:20:16><INFO>	 Logged In", -- [1909]
-			"<22:20:16>[ML]<INFO>	 Init", -- [1910]
-			"<22:20:16><INFO>	 RCLootCouncil TradeUI enabled", -- [1911]
-			"<22:20:37><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [1912]
-			"<22:20:37><DEBUG>	 ActivateSkin bfa", -- [1913]
-			"<22:20:48><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1914]
-			"<22:20:48><INFO>	 UpdatePlayersData()", -- [1915]
-			"<22:20:48><INFO>	 Player relog...", -- [1916]
-			"<22:20:51><DEBUG>	 GetPlayersGuildRank()", -- [1917]
-			"<22:20:51><DEBUG>	 GetPlayersGuildRank()", -- [1918]
-			"<22:20:51><DEBUG>	 Found Guild Rank: Thuerge", -- [1919]
-			"<22:21:05><DEBUG>	 GetML()", -- [1920]
-			"<22:22:24><DEBUG>	 Event: LOOT_READY true", -- [1921]
-			"<22:22:29><DEBUG>	 Event: LOOT_READY true", -- [1922]
-			"<22:22:33><DEBUG>	 Event: LOOT_READY true", -- [1923]
-			"<22:22:44><DEBUG>	 Event: LOOT_READY true", -- [1924]
-			"<22:22:48><DEBUG>	 Event: LOOT_READY true", -- [1925]
-			"<22:23:03><DEBUG>	 Event: LOOT_READY true", -- [1926]
-			"<22:23:05><DEBUG>	 Event: LOOT_READY true", -- [1927]
-			"<22:23:07><DEBUG>	 Event: LOOT_READY true", -- [1928]
-			"<22:24:25><DEBUG>	 Event: LOOT_READY true", -- [1929]
-			"<22:24:25><DEBUG>	 Event: LOOT_READY true", -- [1930]
-			"<22:24:25><DEBUG>	 Event: LOOT_READY true", -- [1931]
-			"<22:25:02><DEBUG>	 Event: LOOT_READY true", -- [1932]
-			"<22:25:15><DEBUG>	 Event: LOOT_READY true", -- [1933]
-			"<22:26:52><DEBUG>	 Event: LOOT_READY true", -- [1934]
-			"<22:28:39><INFO>	 Logged In", -- [1935]
-			"<22:28:39>[ML]<INFO>	 Init", -- [1936]
-			"<22:28:39><INFO>	 RCLootCouncil TradeUI enabled", -- [1937]
-			"<22:28:52><INFO>	 Durlok-BlackDragonflight 3.2.0 nil", -- [1938]
-			"<22:28:52><DEBUG>	 ActivateSkin bfa", -- [1939]
-			"<22:29:01><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1940]
-			"<22:29:01><INFO>	 UpdatePlayersData()", -- [1941]
-			"<22:29:01><INFO>	 Player relog...", -- [1942]
-			"<22:29:10><DEBUG>	 GetML()", -- [1943]
-			"<22:30:21><DEBUG>	 Event: LOOT_READY true", -- [1944]
-			"<22:30:22><DEBUG>	 Event: LOOT_READY true", -- [1945]
-			"<22:30:27><DEBUG>	 Event: LOOT_READY true", -- [1946]
-			"<22:30:35><DEBUG>	 Event: LOOT_READY true", -- [1947]
-			"<22:30:35><DEBUG>	 Event: LOOT_READY true", -- [1948]
-			"<22:30:42><DEBUG>	 Event: LOOT_READY true", -- [1949]
-			"<22:31:37><DEBUG>	 Event: LOOT_READY true", -- [1950]
-			"<22:32:06><DEBUG>	 Event: LOOT_READY true", -- [1951]
-			"<22:32:06><DEBUG>	 Event: LOOT_READY true", -- [1952]
-			"<22:34:50><DEBUG>	 Event: LOOT_READY true", -- [1953]
-			"<22:37:30><DEBUG>	 Event: LOOT_READY true", -- [1954]
-			"<22:38:46><INFO>	 Logged In", -- [1955]
-			"<22:38:46>[ML]<INFO>	 Init", -- [1956]
-			"<22:38:46><INFO>	 RCLootCouncil TradeUI enabled", -- [1957]
-			"<22:39:02><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [1958]
-			"<22:39:02><DEBUG>	 ActivateSkin bfa", -- [1959]
-			"<22:39:13><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1960]
-			"<22:39:13><INFO>	 UpdatePlayersData()", -- [1961]
-			"<22:39:13><INFO>	 Player relog...", -- [1962]
-			"<22:39:16><DEBUG>	 GetPlayersGuildRank()", -- [1963]
-			"<22:39:16><DEBUG>	 GetPlayersGuildRank()", -- [1964]
-			"<22:39:16><DEBUG>	 Found Guild Rank: Thuerge", -- [1965]
-			"<22:39:29><DEBUG>	 GetML()", -- [1966]
-			"<22:40:03><DEBUG>	 Event: LOOT_READY true", -- [1967]
-			"<22:40:07><DEBUG>	 Event: LOOT_READY true", -- [1968]
-			"<22:40:12><DEBUG>	 Event: LOOT_READY true", -- [1969]
-			"<22:40:21><DEBUG>	 Event: LOOT_READY true", -- [1970]
-			"<22:40:21><DEBUG>	 Event: LOOT_READY true", -- [1971]
-			"<22:40:25><DEBUG>	 Event: LOOT_READY true", -- [1972]
-			"<22:40:25><DEBUG>	 Event: LOOT_READY true", -- [1973]
-			"<22:40:28><DEBUG>	 Event: LOOT_READY true", -- [1974]
-			"<22:40:28><DEBUG>	 Event: LOOT_READY true", -- [1975]
-			"<22:40:33><DEBUG>	 Event: LOOT_READY true", -- [1976]
-			"<22:40:36><DEBUG>	 Event: LOOT_READY true", -- [1977]
-			"<22:40:41><DEBUG>	 Event: LOOT_READY true", -- [1978]
-			"<22:40:56><DEBUG>	 Event: LOOT_READY true", -- [1979]
-			"<22:50:04><DEBUG>	 Event: LOOT_READY true", -- [1980]
-			"<23:00:27><DEBUG>	 Event: LOOT_READY true", -- [1981]
-			"<23:00:27><DEBUG>	 Event: LOOT_READY true", -- [1982]
-			"<23:00:27><DEBUG>	 Event: LOOT_READY true", -- [1983]
-			"<23:00:27><DEBUG>	 Event: LOOT_READY true", -- [1984]
-			"<23:02:02><DEBUG>	 Event: LOOT_READY true", -- [1985]
-			"<23:02:07><DEBUG>	 Event: LOOT_READY true", -- [1986]
-			"<23:02:12><DEBUG>	 Event: LOOT_READY true", -- [1987]
-			"<23:02:45><DEBUG>	 Event: LOOT_READY true", -- [1988]
-			"<23:05:03><DEBUG>	 Event: LOOT_READY true", -- [1989]
-			"<02:53:34><INFO>	 Logged In", -- [1990]
-			"<02:53:34>[ML]<INFO>	 Init", -- [1991]
-			"<02:53:34><INFO>	 RCLootCouncil TradeUI enabled", -- [1992]
-			"<02:53:56><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [1993]
-			"<02:53:56><DEBUG>	 ActivateSkin bfa", -- [1994]
-			"<02:54:06><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1995]
-			"<02:54:06><INFO>	 UpdatePlayersData()", -- [1996]
-			"<02:54:06><INFO>	 Player relog...", -- [1997]
-			"<02:54:09><DEBUG>	 GetPlayersGuildRank()", -- [1998]
-			"<02:54:09><DEBUG>	 Found Guild Rank: Thuerge", -- [1999]
-			"<02:54:24><DEBUG>	 GetML()", -- [2000]
+			"<17:12:26><DEBUG>	 Event: LOOT_READY true", -- [1]
+			"<17:12:37><DEBUG>	 Event: LOOT_READY true", -- [2]
+			"<17:12:56><DEBUG>	 Event: LOOT_READY true", -- [3]
+			"<17:13:02><DEBUG>	 Event: LOOT_READY true", -- [4]
+			"<17:13:10><DEBUG>	 Event: LOOT_READY true", -- [5]
+			"<17:13:33><DEBUG>	 Event: LOOT_READY true", -- [6]
+			"<17:13:39><DEBUG>	 Event: LOOT_READY true", -- [7]
+			"<17:13:45><DEBUG>	 Event: LOOT_READY true", -- [8]
+			"<17:13:58><DEBUG>	 Event: LOOT_READY true", -- [9]
+			"<17:14:31><DEBUG>	 Event: LOOT_READY true", -- [10]
+			"<17:16:00><DEBUG>	 Event: LOOT_READY true", -- [11]
+			"<17:16:13><DEBUG>	 Event: LOOT_READY true", -- [12]
+			"<17:17:17><DEBUG>	 Event: LOOT_READY true", -- [13]
+			"<17:17:29><DEBUG>	 Event: LOOT_READY true", -- [14]
+			"<17:17:54><DEBUG>	 Event: LOOT_READY true", -- [15]
+			"<17:21:04><DEBUG>	 Event: LOOT_READY true", -- [16]
+			"<17:25:14><DEBUG>	 Event: LOOT_READY true", -- [17]
+			"<17:25:24><DEBUG>	 Event: LOOT_READY true", -- [18]
+			"<17:25:28><DEBUG>	 Event: LOOT_READY true", -- [19]
+			"<17:25:32><DEBUG>	 Event: LOOT_READY true", -- [20]
+			"<17:25:36><DEBUG>	 Event: LOOT_READY true", -- [21]
+			"<17:25:41><DEBUG>	 Event: LOOT_READY true", -- [22]
+			"<17:25:44><DEBUG>	 Event: LOOT_READY true", -- [23]
+			"<17:25:52><DEBUG>	 Event: LOOT_READY true", -- [24]
+			"<17:26:04><DEBUG>	 Event: LOOT_READY true", -- [25]
+			"<17:26:11><DEBUG>	 Event: LOOT_READY true", -- [26]
+			"<17:26:16><DEBUG>	 Event: LOOT_READY true", -- [27]
+			"<17:26:20><DEBUG>	 Event: LOOT_READY true", -- [28]
+			"<17:26:23><DEBUG>	 Event: LOOT_READY true", -- [29]
+			"<17:26:27><DEBUG>	 Event: LOOT_READY true", -- [30]
+			"<17:26:33><DEBUG>	 Event: LOOT_READY true", -- [31]
+			"<17:26:41><DEBUG>	 Event: LOOT_READY true", -- [32]
+			"<17:26:45><DEBUG>	 Event: LOOT_READY true", -- [33]
+			"<17:26:49><DEBUG>	 Event: LOOT_READY true", -- [34]
+			"<17:26:56><DEBUG>	 Event: LOOT_READY true", -- [35]
+			"<17:27:03><DEBUG>	 Event: LOOT_READY true", -- [36]
+			"<17:27:03><DEBUG>	 Event: LOOT_READY true", -- [37]
+			"<17:27:10><DEBUG>	 Event: LOOT_READY true", -- [38]
+			"<17:27:10><DEBUG>	 Event: LOOT_READY true", -- [39]
+			"<17:27:27><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [40]
+			"<17:27:30><DEBUG>	 GetML()", -- [41]
+			"<17:27:30><DEBUG>	 Event: RAID_INSTANCE_WELCOME Waycrest Manor (Heroic) 63149 0 0", -- [42]
+			"<17:27:31><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [43]
+			"<17:27:31><INFO>	 UpdatePlayersData()", -- [44]
+			"<17:27:34><DEBUG>	 GetML()", -- [45]
+			"<17:27:47><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-0000460D553E", -- [46]
+			"<17:27:47><DEBUG>	 GetML()", -- [47]
+			"<17:27:53><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [48]
+			"<17:27:53><INFO>	 UpdatePlayersData()", -- [49]
+			"<17:27:55><DEBUG>	 GetML()", -- [50]
+			"<17:28:05><DEBUG>	 Event: LOOT_READY true", -- [51]
+			"<17:28:13><DEBUG>	 Event: LOOT_READY true", -- [52]
+			"<17:28:18><DEBUG>	 Event: LOOT_READY true", -- [53]
+			"<17:28:18><DEBUG>	 Event: LOOT_READY true", -- [54]
+			"<17:28:22><DEBUG>	 Event: LOOT_READY true", -- [55]
+			"<17:28:28><DEBUG>	 Event: LOOT_READY true", -- [56]
+			"<17:28:38><DEBUG>	 Event: LOOT_READY true", -- [57]
+			"<17:29:04><DEBUG>	 Event: LOOT_READY true", -- [58]
+			"<17:29:08><DEBUG>	 Event: LOOT_READY true", -- [59]
+			"<17:29:17><DEBUG>	 Event: LOOT_READY true", -- [60]
+			"<17:29:20><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [61]
+			"<17:29:22><DEBUG>	 GetML()", -- [62]
+			"<17:29:23><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [63]
+			"<17:29:23><INFO>	 UpdatePlayersData()", -- [64]
+			"<17:29:24><DEBUG>	 GetML()", -- [65]
+			"<17:30:57><DEBUG>	 Event: LOOT_READY true", -- [66]
+			"<17:30:57><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-12063-23682-000075D044 138840", -- [67]
+			"<17:30:57><DEBUG>	 Event: LOOT_READY true", -- [68]
+			"<17:30:57><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-12063-23682-000075D044 138840", -- [69]
+			"<17:30:57><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [70]
+			"<17:30:57><DEBUG>	 Event: LOOT_CLOSED", -- [71]
+			"<17:30:57><DEBUG>	 Event: LOOT_CLOSED", -- [72]
+			"<17:30:57><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Durlok-BlackDragonflight", -- [73]
+			"<17:30:57><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Durlok-BlackDragonflight", -- [74]
+			"<17:30:59><DEBUG>	 Event: LOOT_READY true", -- [75]
+			"<17:30:59><DEBUG>	 Adding to self.lootSlotInfo 2 |cff0070dd|Hitem:37011::::::::50:104::22::1:28:872:::::|h[Magic Broom]|h|r 3 1 Item-96-0-4000000AE2C0F9F0 1", -- [76]
+			"<17:30:59><DEBUG>	 Adding to self.lootSlotInfo 4 |cff0070dd|Hitem:117356::::::::50:104::22:1:7464:1:28:181:::::|h[The Horseman's Sinister Slicer]|h|r 3 1 Item-96-0-4000000AE2C0F9F0 1", -- [77]
+			"<17:30:59><DEBUG>	 OnLootSlotCleared() 4 |cff0070dd|Hitem:117356::::::::50:104::22:1:7464:1:28:181:::::|h[The Horseman's Sinister Slicer]|h|r 3", -- [78]
+			"<17:30:59><DEBUG>	 Event: LOOT_READY true", -- [79]
+			"<17:30:59><DEBUG>	 Adding to self.lootSlotInfo 2 |cff0070dd|Hitem:37011::::::::50:104::22::1:28:872:::::|h[Magic Broom]|h|r 3 1 Item-96-0-4000000AE2C0F9F0 1", -- [80]
+			"<17:30:59><DEBUG>	 OnLootSlotCleared() 2 |cff0070dd|Hitem:37011::::::::50:104::22::1:28:872:::::|h[Magic Broom]|h|r 3", -- [81]
+			"<17:31:00><DEBUG>	 Event: LOOT_CLOSED", -- [82]
+			"<17:31:00><DEBUG>	 Event: LOOT_CLOSED", -- [83]
+			"<17:31:00><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143901 |cff0070dd|Hitem:143901::::::::50:104::22:1:7464:2:28:181:9:60:::::|h[Band of the Petrified Pumpkin]|h|r 1 Siuri-Thrall DEMONHUNTER", -- [84]
+			"<17:31:00><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Durlok-BlackDragonflight", -- [85]
+			"<17:31:00><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Durlok-BlackDragonflight", -- [86]
+			"<17:31:01><DEBUG>	 Storage:New |cff0070dd|Hitem:117356::::::::50:104::22:1:7464:1:28:181:::::|h[The Horseman's Sinister Slicer]|h|r temp", -- [87]
+			"<17:31:01><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:117356::::::::50:104::22:1:7464:1:28:181:::::||h[The Horseman's Sinister Slicer]||h||r 5", -- [88]
+			"<17:31:01><DEBUG>	 Found: nil nil nil", -- [89]
+			"<17:31:01><DEBUG>	 Storage:New |cff0070dd|Hitem:37011::::::::50:104::22::1:28:872:::::|h[Magic Broom]|h|r temp", -- [90]
+			"<17:31:01><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::50:104::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [91]
+			"<17:31:01><DEBUG>	 Found item at 1 15", -- [92]
+			"<17:31:01><DEBUG>	 Found: 1 15 0", -- [93]
+			"<17:31:02><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:117356::::::::50:104::22:1:7464:1:28:181:::::||h[The Horseman's Sinister Slicer]||h||r 5", -- [94]
+			"<17:31:02><DEBUG>	 Found: nil nil nil", -- [95]
+			"<17:31:02><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::50:104::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [96]
+			"<17:31:02><DEBUG>	 Found item at 1 15", -- [97]
+			"<17:31:02><DEBUG>	 Found: 1 15 0", -- [98]
+			"<17:31:03><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:117356::::::::50:104::22:1:7464:1:28:181:::::||h[The Horseman's Sinister Slicer]||h||r 5", -- [99]
+			"<17:31:03><DEBUG>	 Found: nil nil nil", -- [100]
+			"<17:31:03><Comm>	 ^1^Sn_t^T^N1^S|cff0070dd|Hitem:37011::::::::50:104::22::1:28:872:::::|h[Magic~`Broom]|h|r^N2^S0^t^^ INSTANCE_CHAT Durlok-BlackDragonflight", -- [101]
+			"<17:31:04><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:117356::::::::50:104::22:1:7464:1:28:181:::::||h[The Horseman's Sinister Slicer]||h||r 5", -- [102]
+			"<17:31:04><DEBUG>	 Found: nil nil nil", -- [103]
+			"<17:31:04><ERROR>	 UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:117356::::::::50:104::22:1:7464:1:28:181:::::|h[The Horseman's Sinister Slicer]|h|r not found in bags", -- [104]
+			"<17:31:09><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [105]
+			"<17:31:11><DEBUG>	 GetML()", -- [106]
+			"<17:31:22><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-0000460D565F", -- [107]
+			"<17:31:22><DEBUG>	 GetML()", -- [108]
+			"<17:31:28><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [109]
+			"<17:31:28><INFO>	 UpdatePlayersData()", -- [110]
+			"<17:31:30><DEBUG>	 GetML()", -- [111]
+			"<17:31:36><DEBUG>	 Event: LOOT_READY true", -- [112]
+			"<17:31:52><DEBUG>	 Event: LOOT_READY true", -- [113]
+			"<17:32:13><DEBUG>	 Event: LOOT_READY true", -- [114]
+			"<17:32:22><DEBUG>	 Event: LOOT_READY true", -- [115]
+			"<17:32:29><DEBUG>	 Event: LOOT_READY true", -- [116]
+			"<17:32:32><DEBUG>	 Event: LOOT_READY true", -- [117]
+			"<17:34:28><INFO>	 Logged In", -- [118]
+			"<17:34:28>[ML]<INFO>	 Init", -- [119]
+			"<17:34:28><INFO>	 RCLootCouncil TradeUI enabled", -- [120]
+			"<17:34:43><INFO>	 Zulbathal-Zul'jin 3.2.0 nil", -- [121]
+			"<17:34:43><DEBUG>	 ActivateSkin bfa", -- [122]
+			"<17:34:55><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [123]
+			"<17:34:55><INFO>	 UpdatePlayersData()", -- [124]
+			"<17:34:55><INFO>	 Player relog...", -- [125]
+			"<17:35:07><DEBUG>	 GetML()", -- [126]
+			"<17:36:13><DEBUG>	 Event: LOOT_READY true", -- [127]
+			"<17:36:51><DEBUG>	 Event: LOOT_READY true", -- [128]
+			"<17:36:54><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [129]
+			"<17:36:56><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [130]
+			"<17:36:56><INFO>	 UpdatePlayersData()", -- [131]
+			"<17:36:59><DEBUG>	 GetML()", -- [132]
+			"<17:36:59><Comm>	 ^1^SStopHandleLoot^T^t^^ INSTANCE_CHAT Skivle-Mal'Ganis", -- [133]
+			"<17:37:00><DEBUG>	 GetML()", -- [134]
+			"<17:38:01><DEBUG>	 Event: LOOT_READY true", -- [135]
+			"<17:38:01><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4228-1004-12885-23682-000075D209 76268", -- [136]
+			"<17:38:01><DEBUG>	 Adding to self.lootSlotInfo 3 |cff0070dd|Hitem:143904::::::::50:102::22:1:7464:1:28:181:::::|h[Seal of Ghoulish Glee]|h|r 3 1 Creature-0-4228-1004-12885-23682-000075D209 1", -- [137]
+			"<17:38:01><DEBUG>	 OnLootSlotCleared() 3 |cff0070dd|Hitem:143904::::::::50:102::22:1:7464:1:28:181:::::|h[Seal of Ghoulish Glee]|h|r 3", -- [138]
+			"<17:38:01><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Hvarf-Zul'jin", -- [139]
+			"<17:38:01><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Hvarf-Zul'jin", -- [140]
+			"<17:38:01><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143904 |cff0070dd|Hitem:143904::::::::50:102::22:1:7464:2:28:181:9:50:::::|h[Seal of Ghoulish Glee]|h|r 1 Zulbathal DRUID", -- [141]
+			"<17:38:01><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [142]
+			"<17:38:01><DEBUG>	 Event: LOOT_CLOSED", -- [143]
+			"<17:38:01><DEBUG>	 Event: LOOT_CLOSED", -- [144]
+			"<17:38:02><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Zulbathal-Zul'jin", -- [145]
+			"<17:38:02><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Zulbathal-Zul'jin", -- [146]
+			"<17:38:03><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Skivle-Mal'Ganis", -- [147]
+			"<17:38:03><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Skivle-Mal'Ganis", -- [148]
+			"<17:38:03><DEBUG>	 Storage:New |cff0070dd|Hitem:143904::::::::50:102::22:1:7464:1:28:181:::::|h[Seal of Ghoulish Glee]|h|r temp", -- [149]
+			"<17:38:03><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143904::::::::50:102::22:1:7464:1:28:181:::::||h[Seal of Ghoulish Glee]||h||r 5", -- [150]
+			"<17:38:03><DEBUG>	 Found: nil nil nil", -- [151]
+			"<17:38:04><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143904::::::::50:102::22:1:7464:1:28:181:::::||h[Seal of Ghoulish Glee]||h||r 5", -- [152]
+			"<17:38:04><DEBUG>	 Found: nil nil nil", -- [153]
+			"<17:38:05><DEBUG>	 Event: LOOT_READY true", -- [154]
+			"<17:38:05><DEBUG>	 Adding to self.lootSlotInfo 1 |cff0070dd|Hitem:37011::::::::50:102::22::1:28:872:::::|h[Magic Broom]|h|r 3 1 Item-61-0-4000000B07D1D9E0 1", -- [155]
+			"<17:38:05><DEBUG>	 OnLootSlotCleared() 1 |cff0070dd|Hitem:37011::::::::50:102::22::1:28:872:::::|h[Magic Broom]|h|r 3", -- [156]
+			"<17:38:05><DEBUG>	 Event: LOOT_CLOSED", -- [157]
+			"<17:38:05><DEBUG>	 Event: LOOT_CLOSED", -- [158]
+			"<17:38:05><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143904::::::::50:102::22:1:7464:1:28:181:::::||h[Seal of Ghoulish Glee]||h||r 5", -- [159]
+			"<17:38:05><DEBUG>	 Found: nil nil nil", -- [160]
+			"<17:38:06><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Zulbathal-Zul'jin", -- [161]
+			"<17:38:06><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Zulbathal-Zul'jin", -- [162]
+			"<17:38:06><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143904::::::::50:102::22:1:7464:1:28:181:::::||h[Seal of Ghoulish Glee]||h||r 5", -- [163]
+			"<17:38:06><DEBUG>	 Found: nil nil nil", -- [164]
+			"<17:38:06><ERROR>	 UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:143904::::::::50:102::22:1:7464:1:28:181:::::|h[Seal of Ghoulish Glee]|h|r not found in bags", -- [165]
+			"<17:38:07><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [166]
+			"<17:38:07><DEBUG>	 Storage:New |cff0070dd|Hitem:37011::::::::50:102::22::1:28:872:::::|h[Magic Broom]|h|r temp", -- [167]
+			"<17:38:07><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::50:102::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [168]
+			"<17:38:07><DEBUG>	 Found item at 1 18", -- [169]
+			"<17:38:07><DEBUG>	 Found item at 1 22", -- [170]
+			"<17:38:07><DEBUG>	 Found: 1 22 0", -- [171]
+			"<17:38:08><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::50:102::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [172]
+			"<17:38:08><DEBUG>	 Found item at 1 18", -- [173]
+			"<17:38:08><DEBUG>	 Found item at 1 22", -- [174]
+			"<17:38:08><DEBUG>	 Found: 1 22 0", -- [175]
+			"<17:38:09><Comm>	 ^1^Sn_t^T^N1^S|cff0070dd|Hitem:37011::::::::50:102::22::1:28:872:::::|h[Magic~`Broom]|h|r^N2^S0^t^^ INSTANCE_CHAT Zulbathal-Zul'jin", -- [176]
+			"<17:38:09><DEBUG>	 GetML()", -- [177]
+			"<17:38:21><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-0000460D5B54", -- [178]
+			"<17:38:21><DEBUG>	 GetML()", -- [179]
+			"<17:38:27><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [180]
+			"<17:38:27><INFO>	 UpdatePlayersData()", -- [181]
+			"<17:38:30><DEBUG>	 GetML()", -- [182]
+			"<17:39:35><DEBUG>	 Event: LOOT_READY true", -- [183]
+			"<17:39:35><DEBUG>	 Event: LOOT_READY true", -- [184]
+			"<17:40:00><DEBUG>	 Event: LOOT_READY true", -- [185]
+			"<17:40:26><DEBUG>	 Event: LOOT_READY true", -- [186]
+			"<17:40:44><DEBUG>	 Event: LOOT_READY true", -- [187]
+			"<17:40:53><DEBUG>	 Event: LOOT_READY true", -- [188]
+			"<17:40:56><DEBUG>	 Event: LOOT_READY true", -- [189]
+			"<17:40:58><DEBUG>	 Event: LOOT_READY true", -- [190]
+			"<17:41:03><DEBUG>	 Event: LOOT_READY true", -- [191]
+			"<17:41:09><DEBUG>	 Event: LOOT_READY true", -- [192]
+			"<17:41:14><DEBUG>	 Event: LOOT_READY true", -- [193]
+			"<17:41:21><DEBUG>	 Event: LOOT_READY true", -- [194]
+			"<17:41:32><DEBUG>	 Event: LOOT_READY true", -- [195]
+			"<17:41:36><DEBUG>	 Event: LOOT_READY true", -- [196]
+			"<17:41:40><DEBUG>	 Event: LOOT_READY true", -- [197]
+			"<17:41:40><DEBUG>	 Event: LOOT_READY true", -- [198]
+			"<17:41:47><DEBUG>	 Event: LOOT_READY true", -- [199]
+			"<17:41:51><DEBUG>	 Event: LOOT_READY true", -- [200]
+			"<17:42:02><DEBUG>	 Event: LOOT_READY true", -- [201]
+			"<17:42:09><DEBUG>	 Event: LOOT_READY true", -- [202]
+			"<17:42:22><DEBUG>	 Event: LOOT_READY true", -- [203]
+			"<17:42:24><DEBUG>	 Event: LOOT_READY true", -- [204]
+			"<17:42:27><DEBUG>	 Event: LOOT_READY true", -- [205]
+			"<17:42:34><DEBUG>	 Event: LOOT_READY true", -- [206]
+			"<17:42:42><DEBUG>	 Event: LOOT_READY true", -- [207]
+			"<17:46:08><INFO>	 Logged In", -- [208]
+			"<17:46:08>[ML]<INFO>	 Init", -- [209]
+			"<17:46:08><INFO>	 RCLootCouncil TradeUI enabled", -- [210]
+			"<17:46:25><INFO>	 Avisar-Dalaran 3.2.0 nil", -- [211]
+			"<17:46:25><DEBUG>	 ActivateSkin bfa", -- [212]
+			"<17:46:37><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [213]
+			"<17:46:37><INFO>	 UpdatePlayersData()", -- [214]
+			"<17:46:37><INFO>	 Player relog...", -- [215]
+			"<17:46:48><DEBUG>	 GetML()", -- [216]
+			"<20:43:36><INFO>	 Logged In", -- [217]
+			"<20:43:36>[ML]<INFO>	 Init", -- [218]
+			"<20:43:36><INFO>	 RCLootCouncil TradeUI enabled", -- [219]
+			"<20:43:51><INFO>	 Avisar-Dalaran 3.2.0 nil", -- [220]
+			"<20:43:51><DEBUG>	 ActivateSkin bfa", -- [221]
+			"<20:44:04><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [222]
+			"<20:44:04><INFO>	 UpdatePlayersData()", -- [223]
+			"<20:44:04><INFO>	 Player relog...", -- [224]
+			"<20:44:15><DEBUG>	 GetML()", -- [225]
+			"<20:52:33><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [226]
+			"<20:52:35><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [227]
+			"<20:52:35><INFO>	 UpdatePlayersData()", -- [228]
+			"<20:52:38><DEBUG>	 GetML()", -- [229]
+			"<20:52:38><DEBUG>	 GetML()", -- [230]
+			"<20:55:04><DEBUG>	 Event: LOOT_READY true", -- [231]
+			"<20:55:04><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4228-1004-19700-23682-000075FFF7 132183", -- [232]
+			"<20:55:05><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [233]
+			"<20:55:05><DEBUG>	 Event: LOOT_CLOSED", -- [234]
+			"<20:55:05><DEBUG>	 Event: LOOT_CLOSED", -- [235]
+			"<20:55:05><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Avisar-Dalaran", -- [236]
+			"<20:55:05><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Avisar-Dalaran", -- [237]
+			"<20:55:05><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143902 |cff0070dd|Hitem:143902::::::::51:70::22:1:7464:2:28:181:9:50:::::|h[Wicked Witch's Signet]|h|r 1 Belgrom PALADIN", -- [238]
+			"<20:55:07><DEBUG>	 Event: LOOT_READY true", -- [239]
+			"<20:55:07><DEBUG>	 Event: LOOT_READY true", -- [240]
+			"<20:55:08><DEBUG>	 Event: LOOT_CLOSED", -- [241]
+			"<20:55:08><DEBUG>	 Event: LOOT_CLOSED", -- [242]
+			"<20:55:33><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [243]
+			"<20:55:35><DEBUG>	 GetML()", -- [244]
+			"<20:55:36><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-0000460DFEC6", -- [245]
+			"<20:55:36><DEBUG>	 GetML()", -- [246]
+			"<20:55:42><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [247]
+			"<20:55:42><INFO>	 UpdatePlayersData()", -- [248]
+			"<20:55:45><DEBUG>	 GetML()", -- [249]
+			"<20:58:16><INFO>	 Logged In", -- [250]
+			"<20:58:16>[ML]<INFO>	 Init", -- [251]
+			"<20:58:16><INFO>	 RCLootCouncil TradeUI enabled", -- [252]
+			"<20:58:31><INFO>	 Illingrath-Dalaran 3.2.0 nil", -- [253]
+			"<20:58:31><DEBUG>	 ActivateSkin bfa", -- [254]
+			"<20:58:42><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [255]
+			"<20:58:42><INFO>	 UpdatePlayersData()", -- [256]
+			"<20:58:42><INFO>	 Player relog...", -- [257]
+			"<20:58:50><DEBUG>	 GetML()", -- [258]
+			"<21:00:52><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [259]
+			"<21:00:54><DEBUG>	 GetML()", -- [260]
+			"<21:00:55><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [261]
+			"<21:00:55><INFO>	 UpdatePlayersData()", -- [262]
+			"<21:00:57><DEBUG>	 GetML()", -- [263]
+			"<21:02:34><DEBUG>	 Event: LOOT_READY true", -- [264]
+			"<21:02:34><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-15192-23682-00007601DA 86215", -- [265]
+			"<21:02:34><DEBUG>	 Adding to self.lootSlotInfo 3 |cff0070dd|Hitem:143902::::::::50:581::22:1:7464:1:28:181:::::|h[Wicked Witch's Signet]|h|r 3 1 Creature-0-3776-1004-15192-23682-00007601DA 1", -- [266]
+			"<21:02:34><DEBUG>	 OnLootSlotCleared() 3 |cff0070dd|Hitem:143902::::::::50:581::22:1:7464:1:28:181:::::|h[Wicked Witch's Signet]|h|r 3", -- [267]
+			"<21:02:34><DEBUG>	 Event: LOOT_READY true", -- [268]
+			"<21:02:34><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-15192-23682-00007601DA 86215", -- [269]
+			"<21:02:34><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143902 |cff0070dd|Hitem:143902::::::::50:581::22:1:7464:2:28:181:9:50:::::|h[Wicked Witch's Signet]|h|r 1 Illingrath DEMONHUNTER", -- [270]
+			"<21:02:34><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [271]
+			"<21:02:34><DEBUG>	 Event: LOOT_CLOSED", -- [272]
+			"<21:02:34><DEBUG>	 Event: LOOT_CLOSED", -- [273]
+			"<21:02:35><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Illingrath-Dalaran", -- [274]
+			"<21:02:35><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Illingrath-Dalaran", -- [275]
+			"<21:02:35><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143901 |cff0070dd|Hitem:143901::::::::50:581::22:1:7464:2:28:181:9:60:::::|h[Band of the Petrified Pumpkin]|h|r 1 Vaerimos-WyrmrestAccord MAGE", -- [276]
+			"<21:02:36><DEBUG>	 Storage:New |cff0070dd|Hitem:143902::::::::50:581::22:1:7464:1:28:181:::::|h[Wicked Witch's Signet]|h|r temp", -- [277]
+			"<21:02:36><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143902::::::::50:581::22:1:7464:1:28:181:::::||h[Wicked Witch's Signet]||h||r 5", -- [278]
+			"<21:02:36><DEBUG>	 Found: nil nil nil", -- [279]
+			"<21:02:36><DEBUG>	 Event: LOOT_READY true", -- [280]
+			"<21:02:37><DEBUG>	 Event: LOOT_READY true", -- [281]
+			"<21:02:37><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143902::::::::50:581::22:1:7464:1:28:181:::::||h[Wicked Witch's Signet]||h||r 5", -- [282]
+			"<21:02:37><DEBUG>	 Found: nil nil nil", -- [283]
+			"<21:02:37><DEBUG>	 Event: LOOT_CLOSED", -- [284]
+			"<21:02:37><DEBUG>	 Event: LOOT_CLOSED", -- [285]
+			"<21:02:38><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143902::::::::50:581::22:1:7464:1:28:181:::::||h[Wicked Witch's Signet]||h||r 5", -- [286]
+			"<21:02:38><DEBUG>	 Found: nil nil nil", -- [287]
+			"<21:02:39><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143902::::::::50:581::22:1:7464:1:28:181:::::||h[Wicked Witch's Signet]||h||r 5", -- [288]
+			"<21:02:39><DEBUG>	 Found: nil nil nil", -- [289]
+			"<21:02:39><ERROR>	 UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:143902::::::::50:581::22:1:7464:1:28:181:::::|h[Wicked Witch's Signet]|h|r not found in bags", -- [290]
+			"<21:02:47><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [291]
+			"<21:02:49><DEBUG>	 GetML()", -- [292]
+			"<21:03:01><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-0000460E04E5", -- [293]
+			"<21:03:01><DEBUG>	 GetML()", -- [294]
+			"<21:03:07><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [295]
+			"<21:03:07><INFO>	 UpdatePlayersData()", -- [296]
+			"<21:03:10><DEBUG>	 GetML()", -- [297]
+			"<21:08:08><DEBUG>	 Event: LOOT_READY true", -- [298]
+			"<21:08:09><DEBUG>	 Event: LOOT_READY true", -- [299]
+			"<21:11:25><INFO>	 Logged In", -- [300]
+			"<21:11:25>[ML]<INFO>	 Init", -- [301]
+			"<21:11:25><INFO>	 RCLootCouncil TradeUI enabled", -- [302]
+			"<21:11:40><INFO>	 Varlouris-Dalaran 3.2.0 nil", -- [303]
+			"<21:11:40><DEBUG>	 ActivateSkin bfa", -- [304]
+			"<21:11:52><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [305]
+			"<21:11:52><INFO>	 UpdatePlayersData()", -- [306]
+			"<21:11:52><INFO>	 Player relog...", -- [307]
+			"<21:12:00><DEBUG>	 GetML()", -- [308]
+			"<21:19:52><DEBUG>	 Event: LOOT_READY true", -- [309]
+			"<21:19:53><DEBUG>	 Event: LOOT_READY true", -- [310]
+			"<21:20:09><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [311]
+			"<21:20:11><DEBUG>	 GetML()", -- [312]
+			"<21:20:11><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [313]
+			"<21:20:11><INFO>	 UpdatePlayersData()", -- [314]
+			"<21:20:13><DEBUG>	 GetML()", -- [315]
+			"<21:22:16><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143902 |cff0070dd|Hitem:143902::::::::50:263::22:1:7464:2:28:181:9:60:::::|h[Wicked Witch's Signet]|h|r 1 Mellzy-Proudmoore PALADIN", -- [316]
+			"<21:22:17><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143904 |cff0070dd|Hitem:143904::::::::50:263::22:1:7464:2:28:181:9:60:::::|h[Seal of Ghoulish Glee]|h|r 1 Saerys-Lightbringer DEMONHUNTER", -- [317]
+			"<21:22:17><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Mellzy-Proudmoore", -- [318]
+			"<21:22:17><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Mellzy-Proudmoore", -- [319]
+			"<21:22:17><DEBUG>	 Event: LOOT_READY true", -- [320]
+			"<21:22:17><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-15489-23682-0000760661 134670", -- [321]
+			"<21:22:17><DEBUG>	 Event: LOOT_READY true", -- [322]
+			"<21:22:17><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-15489-23682-0000760661 134670", -- [323]
+			"<21:22:17><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [324]
+			"<21:22:17><DEBUG>	 Event: LOOT_CLOSED", -- [325]
+			"<21:22:17><DEBUG>	 Event: LOOT_CLOSED", -- [326]
+			"<21:22:18><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Varlouris-Dalaran", -- [327]
+			"<21:22:18><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Varlouris-Dalaran", -- [328]
+			"<21:22:21><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Mellzy-Proudmoore", -- [329]
+			"<21:22:21><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Mellzy-Proudmoore", -- [330]
+			"<21:22:21><DEBUG>	 Event: LOOT_READY true", -- [331]
+			"<21:22:21><DEBUG>	 Event: LOOT_CLOSED", -- [332]
+			"<21:22:21><DEBUG>	 Event: LOOT_CLOSED", -- [333]
+			"<21:22:23><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [334]
+			"<21:22:25><DEBUG>	 GetML()", -- [335]
+			"<21:22:32><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-2-0000460E16CF", -- [336]
+			"<21:22:32><DEBUG>	 GetML()", -- [337]
+			"<21:22:39><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [338]
+			"<21:22:39><INFO>	 UpdatePlayersData()", -- [339]
+			"<21:22:41><DEBUG>	 GetML()", -- [340]
+			"<21:24:01><INFO>	 Logged In", -- [341]
+			"<21:24:01>[ML]<INFO>	 Init", -- [342]
+			"<21:24:01><INFO>	 RCLootCouncil TradeUI enabled", -- [343]
+			"<21:24:16><INFO>	 Darnastris-Dalaran 3.2.0 nil", -- [344]
+			"<21:24:16><DEBUG>	 ActivateSkin bfa", -- [345]
+			"<21:24:29><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [346]
+			"<21:24:29><INFO>	 UpdatePlayersData()", -- [347]
+			"<21:24:29><INFO>	 Player relog...", -- [348]
+			"<21:24:37><DEBUG>	 GetML()", -- [349]
+			"<21:31:12><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [350]
+			"<21:31:14><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [351]
+			"<21:31:14><INFO>	 UpdatePlayersData()", -- [352]
+			"<21:31:15><DEBUG>	 GetML()", -- [353]
+			"<21:31:16><DEBUG>	 GetML()", -- [354]
+			"<21:33:33><DEBUG>	 Event: LOOT_READY true", -- [355]
+			"<21:33:33><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4228-1004-21144-23682-00007608F4 75252", -- [356]
+			"<21:33:33><DEBUG>	 Adding to self.lootSlotInfo 3 |cff0070dd|Hitem:143901::::::::50:64::22:1:7464:1:28:181:::::|h[Band of the Petrified Pumpkin]|h|r 3 1 Creature-0-4228-1004-21144-23682-00007608F4 1", -- [357]
+			"<21:33:33><DEBUG>	 OnLootSlotCleared() 3 |cff0070dd|Hitem:143901::::::::50:64::22:1:7464:1:28:181:::::|h[Band of the Petrified Pumpkin]|h|r 3", -- [358]
+			"<21:33:33><DEBUG>	 Event: LOOT_READY true", -- [359]
+			"<21:33:33><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4228-1004-21144-23682-00007608F4 75252", -- [360]
+			"<21:33:33><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143901 |cff0070dd|Hitem:143901::::::::50:64::22:1:7464:2:28:181:9:50:::::|h[Band of the Petrified Pumpkin]|h|r 1 Darnastris MAGE", -- [361]
+			"<21:33:33><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [362]
+			"<21:33:33><DEBUG>	 Event: LOOT_CLOSED", -- [363]
+			"<21:33:33><DEBUG>	 Event: LOOT_CLOSED", -- [364]
+			"<21:33:33><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Darnastris-Dalaran", -- [365]
+			"<21:33:33><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Darnastris-Dalaran", -- [366]
+			"<21:33:35><DEBUG>	 Storage:New |cff0070dd|Hitem:143901::::::::50:64::22:1:7464:1:28:181:::::|h[Band of the Petrified Pumpkin]|h|r temp", -- [367]
+			"<21:33:35><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143901::::::::50:64::22:1:7464:1:28:181:::::||h[Band of the Petrified Pumpkin]||h||r 5", -- [368]
+			"<21:33:35><DEBUG>	 Found: nil nil nil", -- [369]
+			"<21:33:36><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143901::::::::50:64::22:1:7464:1:28:181:::::||h[Band of the Petrified Pumpkin]||h||r 5", -- [370]
+			"<21:33:36><DEBUG>	 Found: nil nil nil", -- [371]
+			"<21:33:36><DEBUG>	 Event: LOOT_READY true", -- [372]
+			"<21:33:36><DEBUG>	 Adding to self.lootSlotInfo 2 |cff0070dd|Hitem:37011::::::::50:64::22::1:28:872:::::|h[Magic Broom]|h|r 3 1 Item-3683-0-4000000A5DECFC5F 1", -- [373]
+			"<21:33:36><DEBUG>	 OnLootSlotCleared() 2 |cff0070dd|Hitem:37011::::::::50:64::22::1:28:872:::::|h[Magic Broom]|h|r 3", -- [374]
+			"<21:33:36><DEBUG>	 Event: LOOT_CLOSED", -- [375]
+			"<21:33:36><DEBUG>	 Event: LOOT_CLOSED", -- [376]
+			"<21:33:36><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143902 |cff0070dd|Hitem:143902::::::::50:64::22:1:7464:2:28:181:9:60:::::|h[Wicked Witch's Signet]|h|r 1 Teesh-ScarletCrusade DEMONHUNTER", -- [377]
+			"<21:33:37><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Darnastris-Dalaran", -- [378]
+			"<21:33:37><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Darnastris-Dalaran", -- [379]
+			"<21:33:37><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143901::::::::50:64::22:1:7464:1:28:181:::::||h[Band of the Petrified Pumpkin]||h||r 5", -- [380]
+			"<21:33:37><DEBUG>	 Found: nil nil nil", -- [381]
+			"<21:33:38><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:143901::::::::50:64::22:1:7464:1:28:181:::::||h[Band of the Petrified Pumpkin]||h||r 5", -- [382]
+			"<21:33:38><DEBUG>	 Found: nil nil nil", -- [383]
+			"<21:33:38><ERROR>	 UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:143901::::::::50:64::22:1:7464:1:28:181:::::|h[Band of the Petrified Pumpkin]|h|r not found in bags", -- [384]
+			"<21:33:38><DEBUG>	 Storage:New |cff0070dd|Hitem:37011::::::::50:64::22::1:28:872:::::|h[Magic Broom]|h|r temp", -- [385]
+			"<21:33:38><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::50:64::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [386]
+			"<21:33:38><DEBUG>	 Found item at 0 19", -- [387]
+			"<21:33:38><DEBUG>	 Found: 0 19 0", -- [388]
+			"<21:33:39><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::50:64::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [389]
+			"<21:33:39><DEBUG>	 Found item at 3 5", -- [390]
+			"<21:33:39><DEBUG>	 Found: 3 5 0", -- [391]
+			"<21:33:39><Comm>	 ^1^Sn_t^T^N1^S|cff0070dd|Hitem:37011::::::::50:64::22::1:28:872:::::|h[Magic~`Broom]|h|r^N2^S0^t^^ INSTANCE_CHAT Darnastris-Dalaran", -- [392]
+			"<21:33:46><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-0000460E1EC2", -- [393]
+			"<21:33:46><DEBUG>	 GetML()", -- [394]
+			"<21:33:52><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [395]
+			"<21:33:52><INFO>	 UpdatePlayersData()", -- [396]
+			"<21:33:54><DEBUG>	 GetML()", -- [397]
+			"<21:40:29><INFO>	 Logged In", -- [398]
+			"<21:40:29>[ML]<INFO>	 Init", -- [399]
+			"<21:40:29><INFO>	 RCLootCouncil TradeUI enabled", -- [400]
+			"<21:41:07><INFO>	 Rotclaugh-Dalaran 3.2.0 nil", -- [401]
+			"<21:41:07><DEBUG>	 ActivateSkin bfa", -- [402]
+			"<21:41:19><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [403]
+			"<21:41:19><INFO>	 UpdatePlayersData()", -- [404]
+			"<21:41:19><INFO>	 Player relog...", -- [405]
+			"<21:41:28><DEBUG>	 GetML()", -- [406]
+			"<21:43:13><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [407]
+			"<21:43:15><DEBUG>	 GetML()", -- [408]
+			"<21:43:16><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [409]
+			"<21:43:16><INFO>	 UpdatePlayersData()", -- [410]
+			"<21:43:17><DEBUG>	 GetML()", -- [411]
+			"<21:44:59><DEBUG>	 Event: LOOT_READY true", -- [412]
+			"<21:44:59><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4228-1004-21574-23682-0000760BCA 136403", -- [413]
+			"<21:44:59><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [414]
+			"<21:44:59><DEBUG>	 Event: LOOT_CLOSED", -- [415]
+			"<21:44:59><DEBUG>	 Event: LOOT_CLOSED", -- [416]
+			"<21:44:59><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Rotclaugh-Dalaran", -- [417]
+			"<21:44:59><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Rotclaugh-Dalaran", -- [418]
+			"<21:45:01><DEBUG>	 Event: LOOT_READY true", -- [419]
+			"<21:45:01><DEBUG>	 Adding to self.lootSlotInfo 1 |cff0070dd|Hitem:37011::::::::47:251::22::1:28:872:::::|h[Magic Broom]|h|r 3 1 Item-3683-0-4000000A5DED9687 1", -- [420]
+			"<21:45:01><DEBUG>	 Event: LOOT_READY true", -- [421]
+			"<21:45:01><DEBUG>	 Adding to self.lootSlotInfo 1 |cff0070dd|Hitem:37011::::::::47:251::22::1:28:872:::::|h[Magic Broom]|h|r 3 1 Item-3683-0-4000000A5DED9687 1", -- [422]
+			"<21:45:01><DEBUG>	 OnLootSlotCleared() 1 |cff0070dd|Hitem:37011::::::::47:251::22::1:28:872:::::|h[Magic Broom]|h|r 3", -- [423]
+			"<21:45:01><DEBUG>	 Event: LOOT_CLOSED", -- [424]
+			"<21:45:01><DEBUG>	 Event: LOOT_CLOSED", -- [425]
+			"<21:45:02><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Rotclaugh-Dalaran", -- [426]
+			"<21:45:02><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Rotclaugh-Dalaran", -- [427]
+			"<21:45:03><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [428]
+			"<21:45:03><DEBUG>	 Storage:New |cff0070dd|Hitem:37011::::::::47:251::22::1:28:872:::::|h[Magic Broom]|h|r temp", -- [429]
+			"<21:45:03><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::47:251::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [430]
+			"<21:45:03><DEBUG>	 Found item at 0 13", -- [431]
+			"<21:45:03><DEBUG>	 Found item at 3 12", -- [432]
+			"<21:45:03><DEBUG>	 Found: 3 12 0", -- [433]
+			"<21:45:04><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::47:251::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [434]
+			"<21:45:04><DEBUG>	 Found item at 3 11", -- [435]
+			"<21:45:04><DEBUG>	 Found item at 3 12", -- [436]
+			"<21:45:04><DEBUG>	 Found: 3 12 0", -- [437]
+			"<21:45:05><DEBUG>	 GetML()", -- [438]
+			"<21:45:05><Comm>	 ^1^Sn_t^T^N1^S|cff0070dd|Hitem:37011::::::::47:251::22::1:28:872:::::|h[Magic~`Broom]|h|r^N2^S0^t^^ INSTANCE_CHAT Rotclaugh-Dalaran", -- [439]
+			"<21:45:05><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [440]
+			"<21:45:07><DEBUG>	 GetML()", -- [441]
+			"<21:45:08><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-0000460E2B5B", -- [442]
+			"<21:45:08><DEBUG>	 GetML()", -- [443]
+			"<21:45:55><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [444]
+			"<21:45:55><INFO>	 UpdatePlayersData()", -- [445]
+			"<21:45:58><DEBUG>	 GetML()", -- [446]
+			"<03:05:00><INFO>	 Logged In", -- [447]
+			"<03:05:00>[ML]<INFO>	 Init", -- [448]
+			"<03:05:00><INFO>	 RCLootCouncil TradeUI enabled", -- [449]
+			"<03:05:22><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [450]
+			"<03:05:22><DEBUG>	 ActivateSkin bfa", -- [451]
+			"<03:05:34><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [452]
+			"<03:05:34><INFO>	 UpdatePlayersData()", -- [453]
+			"<03:05:34><INFO>	 Player relog...", -- [454]
+			"<03:05:38><DEBUG>	 GetPlayersGuildRank()", -- [455]
+			"<03:05:38><DEBUG>	 Found Guild Rank: Thuerge", -- [456]
+			"<03:05:53><DEBUG>	 GetML()", -- [457]
+			"<03:08:16><DEBUG>	 Event: LOOT_READY true", -- [458]
+			"<03:08:17><DEBUG>	 Event: LOOT_READY true", -- [459]
+			"<03:09:30><DEBUG>	 Event: LOOT_READY true", -- [460]
+			"<03:09:58><DEBUG>	 Event: LOOT_READY true", -- [461]
+			"<03:10:11><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [462]
+			"<03:10:13><DEBUG>	 GetML()", -- [463]
+			"<03:10:14><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [464]
+			"<03:10:14><INFO>	 UpdatePlayersData()", -- [465]
+			"<03:10:28><DEBUG>	 GetML()", -- [466]
+			"<03:12:13><DEBUG>	 Event: LOOT_READY true", -- [467]
+			"<03:12:13><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-32407-23682-000077A9F5 133937", -- [468]
+			"<03:12:14><DEBUG>	 Event: LOOT_READY true", -- [469]
+			"<03:12:14><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-3776-1004-32407-23682-000077A9F5 133937", -- [470]
+			"<03:12:14><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [471]
+			"<03:12:14><DEBUG>	 Event: LOOT_CLOSED", -- [472]
+			"<03:12:14><DEBUG>	 Event: LOOT_CLOSED", -- [473]
+			"<03:12:14><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [474]
+			"<03:12:14><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [475]
+			"<03:12:15><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143904 |cff0070dd|Hitem:143904::::::::60:71::22:1:7464:2:28:181:9:60:::::|h[Seal of Ghoulish Glee]|h|r 1 Temporantus-SilverHand DRUID", -- [476]
+			"<03:12:16><DEBUG>	 Event: LOOT_READY true", -- [477]
+			"<03:12:16><DEBUG>	 Event: LOOT_READY true", -- [478]
+			"<03:12:17><DEBUG>	 Event: LOOT_CLOSED", -- [479]
+			"<03:12:17><DEBUG>	 Event: LOOT_CLOSED", -- [480]
+			"<03:12:32><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-2-000046119B59", -- [481]
+			"<03:12:32><DEBUG>	 GetML()", -- [482]
+			"<03:12:38><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [483]
+			"<03:12:38><INFO>	 UpdatePlayersData()", -- [484]
+			"<03:12:47><DEBUG>	 GetML()", -- [485]
+			"<03:13:06><DEBUG>	 Event: LOOT_READY true", -- [486]
+			"<03:13:10><DEBUG>	 Event: LOOT_READY true", -- [487]
+			"<03:13:27><DEBUG>	 Event: LOOT_READY true", -- [488]
+			"<03:13:33><DEBUG>	 Event: LOOT_READY true", -- [489]
+			"<03:13:37><DEBUG>	 Event: LOOT_READY true", -- [490]
+			"<03:13:42><DEBUG>	 Event: LOOT_READY true", -- [491]
+			"<03:13:47><DEBUG>	 Event: LOOT_READY true", -- [492]
+			"<22:07:03><INFO>	 Logged In", -- [493]
+			"<22:07:03>[ML]<INFO>	 Init", -- [494]
+			"<22:07:03><INFO>	 RCLootCouncil TradeUI enabled", -- [495]
+			"<22:07:26><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [496]
+			"<22:07:26><DEBUG>	 ActivateSkin bfa", -- [497]
+			"<22:07:37><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [498]
+			"<22:07:37><INFO>	 UpdatePlayersData()", -- [499]
+			"<22:07:37><INFO>	 Player relog...", -- [500]
+			"<22:07:40><DEBUG>	 GetPlayersGuildRank()", -- [501]
+			"<22:07:40><DEBUG>	 GetPlayersGuildRank()", -- [502]
+			"<22:07:40><DEBUG>	 Found Guild Rank: Thuerge", -- [503]
+			"<22:07:54><DEBUG>	 GetML()", -- [504]
+			"<22:08:23><DEBUG>	 Event: LOOT_READY true", -- [505]
+			"<22:08:27><DEBUG>	 Event: LOOT_READY true", -- [506]
+			"<22:08:29><DEBUG>	 Event: LOOT_READY true", -- [507]
+			"<22:08:33><DEBUG>	 Event: LOOT_READY true", -- [508]
+			"<22:08:36><DEBUG>	 Event: LOOT_READY true", -- [509]
+			"<22:08:44><DEBUG>	 Event: LOOT_READY true", -- [510]
+			"<22:08:48><DEBUG>	 Event: LOOT_READY true", -- [511]
+			"<22:08:57><DEBUG>	 Event: LOOT_READY true", -- [512]
+			"<22:09:34><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [513]
+			"<22:09:36><DEBUG>	 GetML()", -- [514]
+			"<22:09:42><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [515]
+			"<22:09:42><INFO>	 UpdatePlayersData()", -- [516]
+			"<22:09:52><DEBUG>	 GetML()", -- [517]
+			"<22:11:37><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Tuarhamthree-Illidan", -- [518]
+			"<22:11:37><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Tuarhamthree-Illidan", -- [519]
+			"<22:11:38><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [520]
+			"<22:11:40><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143902 |cff0070dd|Hitem:143902::::::::60:71::22:1:7464:2:28:181:9:60:::::|h[Wicked Witch's Signet]|h|r 1 Sunwallker-Jubei'Thos DRUID", -- [521]
+			"<22:11:40><DEBUG>	 GetML()", -- [522]
+			"<22:11:48><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [523]
+			"<22:11:50><DEBUG>	 GetML()", -- [524]
+			"<22:11:54><DEBUG>	 Event: LOOT_READY true", -- [525]
+			"<22:11:54><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-5047-1004-6291-23682-000078B4F1 136667", -- [526]
+			"<22:11:54><DEBUG>	 Event: LOOT_READY true", -- [527]
+			"<22:11:54><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-5047-1004-6291-23682-000078B4F1 136667", -- [528]
+			"<22:11:57><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [529]
+			"<22:11:57><DEBUG>	 Event: LOOT_CLOSED", -- [530]
+			"<22:11:57><DEBUG>	 Event: LOOT_CLOSED", -- [531]
+			"<22:11:57><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [532]
+			"<22:11:57><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [533]
+			"<22:11:58><DEBUG>	 Event: LOOT_READY true", -- [534]
+			"<22:11:58><DEBUG>	 Event: LOOT_READY true", -- [535]
+			"<22:12:01><DEBUG>	 Event: LOOT_CLOSED", -- [536]
+			"<22:12:01><DEBUG>	 Event: LOOT_CLOSED", -- [537]
+			"<22:12:08><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-0000461323BF", -- [538]
+			"<22:12:08><DEBUG>	 GetML()", -- [539]
+			"<22:12:17><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [540]
+			"<22:12:17><INFO>	 UpdatePlayersData()", -- [541]
+			"<22:12:26><DEBUG>	 GetML()", -- [542]
+			"<18:52:22><INFO>	 Logged In", -- [543]
+			"<18:52:22>[ML]<INFO>	 Init", -- [544]
+			"<18:52:22><INFO>	 RCLootCouncil TradeUI enabled", -- [545]
+			"<18:52:43><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [546]
+			"<18:52:43><DEBUG>	 ActivateSkin bfa", -- [547]
+			"<18:52:54><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [548]
+			"<18:52:54><INFO>	 UpdatePlayersData()", -- [549]
+			"<18:52:54><INFO>	 Player relog...", -- [550]
+			"<18:52:58><DEBUG>	 GetPlayersGuildRank()", -- [551]
+			"<18:52:58><DEBUG>	 Found Guild Rank: Thuerge", -- [552]
+			"<18:53:15><DEBUG>	 GetML()", -- [553]
+			"<18:53:46><DEBUG>	 Event: LOOT_READY true", -- [554]
+			"<18:54:04><DEBUG>	 Event: LOOT_READY true", -- [555]
+			"<18:54:09><DEBUG>	 Event: LOOT_READY true", -- [556]
+			"<18:54:14><DEBUG>	 Event: LOOT_READY true", -- [557]
+			"<18:54:19><DEBUG>	 Event: LOOT_READY true", -- [558]
+			"<18:54:26><DEBUG>	 Event: LOOT_READY true", -- [559]
+			"<18:54:33><DEBUG>	 Event: LOOT_READY true", -- [560]
+			"<18:54:43><DEBUG>	 Event: LOOT_READY true", -- [561]
+			"<18:54:49><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [562]
+			"<18:54:51><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [563]
+			"<18:54:51><INFO>	 UpdatePlayersData()", -- [564]
+			"<18:55:01><DEBUG>	 GetML()", -- [565]
+			"<18:55:03><DEBUG>	 GetML()", -- [566]
+			"<18:56:11><DEBUG>	 Event: LOOT_READY true", -- [567]
+			"<18:56:11><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4219-1004-19996-23682-000079D8CA 136906", -- [568]
+			"<18:56:11><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [569]
+			"<18:56:11><DEBUG>	 Event: LOOT_CLOSED", -- [570]
+			"<18:56:11><DEBUG>	 Event: LOOT_CLOSED", -- [571]
+			"<18:56:11><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [572]
+			"<18:56:11><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [573]
+			"<18:56:12><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Swartz-Zul'jin", -- [574]
+			"<18:56:12><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Swartz-Zul'jin", -- [575]
+			"<18:56:13><DEBUG>	 Event: LOOT_READY true", -- [576]
+			"<18:56:13><DEBUG>	 Event: LOOT_CLOSED", -- [577]
+			"<18:56:13><DEBUG>	 Event: LOOT_CLOSED", -- [578]
+			"<18:56:16><Comm>	 ^1^Stradable^T^N1^S|cff0070dd|Hitem:33154::::::::60:71::22::1:28:373:::::|h[Sinister~`Squashling]|h|r^N2^S0^t^^ INSTANCE_CHAT Swartz-Zul'jin", -- [579]
+			"<18:56:20><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-00004614E446", -- [580]
+			"<18:56:20><DEBUG>	 GetML()", -- [581]
+			"<18:56:25><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [582]
+			"<18:56:25><INFO>	 UpdatePlayersData()", -- [583]
+			"<18:56:36><DEBUG>	 GetML()", -- [584]
+			"<00:59:33><INFO>	 Logged In", -- [585]
+			"<00:59:33>[ML]<INFO>	 Init", -- [586]
+			"<00:59:33><INFO>	 RCLootCouncil TradeUI enabled", -- [587]
+			"<00:59:57><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [588]
+			"<00:59:57><DEBUG>	 ActivateSkin bfa", -- [589]
+			"<01:00:07><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [590]
+			"<01:00:07><INFO>	 UpdatePlayersData()", -- [591]
+			"<01:00:07><INFO>	 Player relog...", -- [592]
+			"<01:00:11><DEBUG>	 GetPlayersGuildRank()", -- [593]
+			"<01:00:11><DEBUG>	 Found Guild Rank: Thuerge", -- [594]
+			"<01:00:26><DEBUG>	 GetML()", -- [595]
+			"<01:00:58><DEBUG>	 Event: LOOT_READY true", -- [596]
+			"<01:01:02><DEBUG>	 Event: LOOT_READY true", -- [597]
+			"<01:01:14><DEBUG>	 Event: LOOT_READY true", -- [598]
+			"<01:01:28><DEBUG>	 Event: LOOT_READY true", -- [599]
+			"<01:01:33><DEBUG>	 Event: LOOT_READY true", -- [600]
+			"<01:01:36><DEBUG>	 Event: LOOT_READY true", -- [601]
+			"<01:09:34><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [602]
+			"<01:09:36><DEBUG>	 GetML()", -- [603]
+			"<01:09:37><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [604]
+			"<01:09:37><INFO>	 UpdatePlayersData()", -- [605]
+			"<01:09:52><DEBUG>	 GetML()", -- [606]
+			"<01:12:00><DEBUG>	 Event: LOOT_READY true", -- [607]
+			"<01:12:00><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4225-1004-1517-23682-00007B8231 129264", -- [608]
+			"<01:12:00><DEBUG>	 Event: LOOT_READY true", -- [609]
+			"<01:12:00><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4225-1004-1517-23682-00007B8231 129264", -- [610]
+			"<01:12:00><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [611]
+			"<01:12:00><DEBUG>	 Event: LOOT_CLOSED", -- [612]
+			"<01:12:00><DEBUG>	 Event: LOOT_CLOSED", -- [613]
+			"<01:12:00><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [614]
+			"<01:12:00><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [615]
+			"<01:12:02><DEBUG>	 Event: LOOT_READY true", -- [616]
+			"<01:12:02><DEBUG>	 Adding to self.lootSlotInfo 1 |cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic Broom]|h|r 3 1 Item-75-0-4000000B08B7657C 1", -- [617]
+			"<01:12:03><DEBUG>	 Event: LOOT_READY true", -- [618]
+			"<01:12:03><DEBUG>	 Adding to self.lootSlotInfo 1 |cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic Broom]|h|r 3 1 Item-75-0-4000000B08B7657C 1", -- [619]
+			"<01:12:06><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143904 |cff0070dd|Hitem:143904::::::::60:71::22:1:7464:2:28:181:9:52:::::|h[Seal of Ghoulish Glee]|h|r 1 Izhtaera-Durotan SHAMAN", -- [620]
+			"<01:12:06><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [621]
+			"<01:12:07><DEBUG>	 Event: LOOT_CLOSED", -- [622]
+			"<01:12:07><DEBUG>	 OnLootSlotCleared() 1 |cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic Broom]|h|r 3", -- [623]
+			"<01:12:07><DEBUG>	 Event: LOOT_CLOSED", -- [624]
+			"<01:12:07><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [625]
+			"<01:12:08><DEBUG>	 GetML()", -- [626]
+			"<01:12:09><DEBUG>	 Storage:New |cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic Broom]|h|r temp", -- [627]
+			"<01:12:09><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::60:71::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [628]
+			"<01:12:09><DEBUG>	 Found: nil nil nil", -- [629]
+			"<01:12:10><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::60:71::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [630]
+			"<01:12:10><DEBUG>	 Found: nil nil nil", -- [631]
+			"<01:12:11><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::60:71::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [632]
+			"<01:12:11><DEBUG>	 Found: nil nil nil", -- [633]
+			"<01:12:12><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::60:71::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [634]
+			"<01:12:12><DEBUG>	 Found: nil nil nil", -- [635]
+			"<01:12:12><ERROR>	 UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic Broom]|h|r not found in bags", -- [636]
+			"<01:12:52><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [637]
+			"<01:12:54><DEBUG>	 GetML()", -- [638]
+			"<01:13:01><DEBUG>	 Event: LOOT_READY true", -- [639]
+			"<01:13:01><DEBUG>	 Adding to self.lootSlotInfo 1 |cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic Broom]|h|r 3 1 Item-75-0-4000000B08B7657C 1", -- [640]
+			"<01:13:02><DEBUG>	 OnLootSlotCleared() 1 |cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic Broom]|h|r 3", -- [641]
+			"<01:13:02><DEBUG>	 Event: LOOT_CLOSED", -- [642]
+			"<01:13:02><DEBUG>	 Event: LOOT_CLOSED", -- [643]
+			"<01:13:02><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [644]
+			"<01:13:02><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [645]
+			"<01:13:04><DEBUG>	 Storage:New |cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic Broom]|h|r temp", -- [646]
+			"<01:13:04><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::60:71::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [647]
+			"<01:13:04><DEBUG>	 Found item at 3 18", -- [648]
+			"<01:13:04><DEBUG>	 Found: 3 18 0", -- [649]
+			"<01:13:05><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::60:71::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [650]
+			"<01:13:05><DEBUG>	 Found item at 3 18", -- [651]
+			"<01:13:05><DEBUG>	 Found: 3 18 0", -- [652]
+			"<01:13:05><Comm>	 ^1^Sn_t^T^N1^S|cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic~`Broom]|h|r^N2^S0^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [653]
+			"<01:13:14><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-00004617F14B", -- [654]
+			"<01:13:14><DEBUG>	 GetML()", -- [655]
+			"<01:13:20><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [656]
+			"<01:13:20><INFO>	 UpdatePlayersData()", -- [657]
+			"<01:13:29><DEBUG>	 GetML()", -- [658]
+			"<01:13:48><DEBUG>	 Event: LOOT_READY true", -- [659]
+			"<01:13:56><DEBUG>	 Event: LOOT_READY true", -- [660]
+			"<01:14:05><DEBUG>	 Event: LOOT_READY true", -- [661]
+			"<01:14:05><DEBUG>	 Event: LOOT_READY true", -- [662]
+			"<01:14:10><DEBUG>	 Event: LOOT_READY true", -- [663]
+			"<01:14:11><DEBUG>	 Event: LOOT_READY true", -- [664]
+			"<01:14:20><DEBUG>	 Event: LOOT_READY true", -- [665]
+			"<04:50:10><INFO>	 Logged In", -- [666]
+			"<04:50:10>[ML]<INFO>	 Init", -- [667]
+			"<04:50:10><INFO>	 RCLootCouncil TradeUI enabled", -- [668]
+			"<04:50:31><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [669]
+			"<04:50:31><DEBUG>	 ActivateSkin bfa", -- [670]
+			"<04:50:44><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [671]
+			"<04:50:44><INFO>	 UpdatePlayersData()", -- [672]
+			"<04:50:44><INFO>	 Player relog...", -- [673]
+			"<04:50:47><DEBUG>	 GetPlayersGuildRank()", -- [674]
+			"<04:50:47><DEBUG>	 GetPlayersGuildRank()", -- [675]
+			"<04:50:47><DEBUG>	 Found Guild Rank: Thuerge", -- [676]
+			"<04:51:04><DEBUG>	 GetML()", -- [677]
+			"<04:51:35><DEBUG>	 Event: LOOT_READY true", -- [678]
+			"<04:51:39><DEBUG>	 Event: LOOT_READY true", -- [679]
+			"<04:51:41><DEBUG>	 Event: LOOT_READY true", -- [680]
+			"<04:51:50><DEBUG>	 Event: LOOT_READY true", -- [681]
+			"<04:51:56><DEBUG>	 Event: LOOT_READY true", -- [682]
+			"<04:52:11><DEBUG>	 Event: LOOT_READY true", -- [683]
+			"<04:52:45><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [684]
+			"<04:52:47><DEBUG>	 GetML()", -- [685]
+			"<04:52:53><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [686]
+			"<04:52:53><INFO>	 UpdatePlayersData()", -- [687]
+			"<04:53:04><DEBUG>	 GetML()", -- [688]
+			"<04:55:20><DEBUG>	 Event: LOOT_READY true", -- [689]
+			"<04:55:20><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-5047-1004-27492-23682-00007D0808 132893", -- [690]
+			"<04:55:20><DEBUG>	 Event: LOOT_READY true", -- [691]
+			"<04:55:20><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-5047-1004-27492-23682-00007D0808 132893", -- [692]
+			"<04:55:21><DEBUG>	 Event: LOOT_CLOSED", -- [693]
+			"<04:55:21><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [694]
+			"<04:55:21><DEBUG>	 Event: LOOT_CLOSED", -- [695]
+			"<04:55:22><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143904 |cff0070dd|Hitem:143904::::::::60:71::22:1:7464:2:28:181:9:51:::::|h[Seal of Ghoulish Glee]|h|r 1 Nõva-Frostmourne MAGE", -- [696]
+			"<04:55:22><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [697]
+			"<04:55:23><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Plays-Thrall", -- [698]
+			"<04:55:24><DEBUG>	 Event: LOOT_READY true", -- [699]
+			"<04:55:24><DEBUG>	 Event: LOOT_READY true", -- [700]
+			"<04:55:26><DEBUG>	 Event: LOOT_CLOSED", -- [701]
+			"<04:55:26><DEBUG>	 Event: LOOT_CLOSED", -- [702]
+			"<04:55:28><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Plays-Thrall", -- [703]
+			"<04:55:28><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Plays-Thrall", -- [704]
+			"<04:55:28><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143904 |cff0070dd|Hitem:143904::::::::60:71::22:1:7464:2:28:181:9:58:::::|h[Seal of Ghoulish Glee]|h|r 1 Quanthum-Uldaman PALADIN", -- [705]
+			"<04:55:32><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [706]
+			"<04:55:34><DEBUG>	 GetML()", -- [707]
+			"<04:55:35><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-0000461A5859", -- [708]
+			"<04:55:35><DEBUG>	 GetML()", -- [709]
+			"<04:55:44><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [710]
+			"<04:55:44><INFO>	 UpdatePlayersData()", -- [711]
+			"<04:55:54><DEBUG>	 GetML()", -- [712]
+			"<23:20:33><INFO>	 Logged In", -- [713]
+			"<23:20:33>[ML]<INFO>	 Init", -- [714]
+			"<23:20:33><INFO>	 RCLootCouncil TradeUI enabled", -- [715]
+			"<23:20:56><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [716]
+			"<23:20:56><DEBUG>	 ActivateSkin bfa", -- [717]
+			"<23:21:07><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [718]
+			"<23:21:07><INFO>	 UpdatePlayersData()", -- [719]
+			"<23:21:07><INFO>	 Player relog...", -- [720]
+			"<23:21:11><DEBUG>	 GetPlayersGuildRank()", -- [721]
+			"<23:21:11><DEBUG>	 Found Guild Rank: Thuerge", -- [722]
+			"<23:21:28><DEBUG>	 GetML()", -- [723]
+			"<23:22:21><DEBUG>	 Event: LOOT_READY true", -- [724]
+			"<23:22:25><DEBUG>	 Event: LOOT_READY true", -- [725]
+			"<23:22:30><DEBUG>	 Event: LOOT_READY true", -- [726]
+			"<23:22:30><DEBUG>	 Event: LOOT_READY true", -- [727]
+			"<23:22:38><DEBUG>	 Event: LOOT_READY true", -- [728]
+			"<23:22:43><DEBUG>	 Event: LOOT_READY true", -- [729]
+			"<23:22:48><DEBUG>	 Event: LOOT_READY true", -- [730]
+			"<23:22:55><DEBUG>	 Event: LOOT_READY true", -- [731]
+			"<23:25:28><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [732]
+			"<23:25:30><DEBUG>	 GetML()", -- [733]
+			"<23:25:31><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [734]
+			"<23:25:31><INFO>	 UpdatePlayersData()", -- [735]
+			"<23:25:47><DEBUG>	 GetML()", -- [736]
+			"<23:28:04><DEBUG>	 Event: LOOT_READY true", -- [737]
+			"<23:28:04><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4225-1004-25315-23682-00007E0CD9 135192", -- [738]
+			"<23:28:04><DEBUG>	 Event: LOOT_READY true", -- [739]
+			"<23:28:04><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4225-1004-25315-23682-00007E0CD9 135192", -- [740]
+			"<23:28:05><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [741]
+			"<23:28:05><DEBUG>	 Event: LOOT_CLOSED", -- [742]
+			"<23:28:05><DEBUG>	 Event: LOOT_CLOSED", -- [743]
+			"<23:28:05><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [744]
+			"<23:28:05><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [745]
+			"<23:28:07><DEBUG>	 Event: LOOT_READY true", -- [746]
+			"<23:28:07><DEBUG>	 Adding to self.lootSlotInfo 1 |cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic Broom]|h|r 3 1 Item-75-0-4000000B0921BC04 1", -- [747]
+			"<23:28:07><DEBUG>	 Event: LOOT_READY true", -- [748]
+			"<23:28:07><DEBUG>	 Adding to self.lootSlotInfo 1 |cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic Broom]|h|r 3 1 Item-75-0-4000000B0921BC04 1", -- [749]
+			"<23:28:08><DEBUG>	 OnLootSlotCleared() 1 |cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic Broom]|h|r 3", -- [750]
+			"<23:28:08><DEBUG>	 Event: LOOT_CLOSED", -- [751]
+			"<23:28:08><DEBUG>	 Event: LOOT_CLOSED", -- [752]
+			"<23:28:08><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [753]
+			"<23:28:08><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [754]
+			"<23:28:08><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143902 |cff0070dd|Hitem:143902::::::::60:71::22:1:7464:2:28:181:9:52:::::|h[Wicked Witch's Signet]|h|r 1 Hades-BurningBlade MAGE", -- [755]
+			"<23:28:10><DEBUG>	 Storage:New |cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic Broom]|h|r temp", -- [756]
+			"<23:28:10><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::60:71::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [757]
+			"<23:28:10><DEBUG>	 Found item at 3 21", -- [758]
+			"<23:28:10><DEBUG>	 Found item at 3 30", -- [759]
+			"<23:28:10><DEBUG>	 Found: 3 30 0", -- [760]
+			"<23:28:11><DEBUG>	 Storage: searching for item: ||cff0070dd||Hitem:37011::::::::60:71::22::1:28:872:::::||h[Magic Broom]||h||r 5", -- [761]
+			"<23:28:11><DEBUG>	 Found item at 3 21", -- [762]
+			"<23:28:11><DEBUG>	 Found item at 3 30", -- [763]
+			"<23:28:11><DEBUG>	 Found: 3 30 0", -- [764]
+			"<23:28:11><Comm>	 ^1^Sn_t^T^N1^S|cff0070dd|Hitem:37011::::::::60:71::22::1:28:872:::::|h[Magic~`Broom]|h|r^N2^S0^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [765]
+			"<23:28:17><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Pandäid-Frostwolf", -- [766]
+			"<23:28:17><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Pandäid-Frostwolf", -- [767]
+			"<23:28:20><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Pandäid-Frostwolf", -- [768]
+			"<23:28:20><Comm>	 ^1^Sl^T^N1^S0^t^^ INSTANCE_CHAT Pandäid-Frostwolf", -- [769]
+			"<23:28:20><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-1-0000461C45BC", -- [770]
+			"<23:28:20><DEBUG>	 GetML()", -- [771]
+			"<23:28:27><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [772]
+			"<23:28:27><INFO>	 UpdatePlayersData()", -- [773]
+			"<23:28:38><DEBUG>	 GetML()", -- [774]
+			"<13:22:50><INFO>	 Logged In", -- [775]
+			"<13:22:50>[ML]<INFO>	 Init", -- [776]
+			"<13:22:50><INFO>	 RCLootCouncil TradeUI enabled", -- [777]
+			"<13:23:14><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [778]
+			"<13:23:14><DEBUG>	 ActivateSkin bfa", -- [779]
+			"<13:23:25><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [780]
+			"<13:23:25><INFO>	 UpdatePlayersData()", -- [781]
+			"<13:23:25><INFO>	 Player relog...", -- [782]
+			"<13:23:29><DEBUG>	 GetPlayersGuildRank()", -- [783]
+			"<13:23:29><DEBUG>	 Found Guild Rank: Thuerge", -- [784]
+			"<13:23:46><DEBUG>	 GetML()", -- [785]
+			"<13:24:34><DEBUG>	 Event: LOOT_READY true", -- [786]
+			"<13:24:37><DEBUG>	 Event: LOOT_READY true", -- [787]
+			"<13:24:54><DEBUG>	 Event: LOOT_READY true", -- [788]
+			"<13:24:57><DEBUG>	 Event: LOOT_READY true", -- [789]
+			"<13:25:03><DEBUG>	 Event: LOOT_READY true", -- [790]
+			"<13:25:08><DEBUG>	 Event: LOOT_READY true", -- [791]
+			"<13:26:08><DEBUG>	 Event: LOOT_READY true", -- [792]
+			"<13:26:08><DEBUG>	 Event: LOOT_READY true", -- [793]
+			"<13:26:08><DEBUG>	 Event: LOOT_READY true", -- [794]
+			"<13:27:28><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [795]
+			"<13:27:30><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [796]
+			"<13:27:30><INFO>	 UpdatePlayersData()", -- [797]
+			"<13:27:40><DEBUG>	 GetML()", -- [798]
+			"<13:27:42><DEBUG>	 GetML()", -- [799]
+			"<13:29:28><DEBUG>	 Event: LOOT_READY true", -- [800]
+			"<13:29:28><DEBUG>	 Adding to self.lootSlotInfo 1 nil 1 0 Creature-0-4219-1004-10999-23682-00007ED213 128707", -- [801]
+			"<13:29:28><DEBUG>	 OnLootSlotCleared() 1 nil 1", -- [802]
+			"<13:29:28><DEBUG>	 Event: LOOT_CLOSED", -- [803]
+			"<13:29:28><DEBUG>	 Event: LOOT_CLOSED", -- [804]
+			"<13:29:28><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [805]
+			"<13:29:28><Comm>	 ^1^Sl^T^N1^S23682^t^^ INSTANCE_CHAT Shanyt-ArgentDawn", -- [806]
+			"<13:29:30><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 143902 |cff0070dd|Hitem:143902::::::::60:71::22:1:7464:2:28:181:9:22:::::|h[Wicked Witch's Signet]|h|r 1 Xcrpt-Thunderhorn MAGE", -- [807]
+			"<13:29:30><DEBUG>	 Event: LOOT_READY true", -- [808]
+			"<13:29:31><DEBUG>	 Event: LOOT_CLOSED", -- [809]
+			"<13:29:31><DEBUG>	 Event: LOOT_CLOSED", -- [810]
+			"<13:29:46><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [811]
+			"<13:29:48><DEBUG>	 GetML()", -- [812]
+			"<13:29:56><DEBUG>	 Event: GROUP_LEFT 2 Party-3017-2-0000461D6A3B", -- [813]
+			"<13:29:56><DEBUG>	 GetML()", -- [814]
+			"<13:30:02><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [815]
+			"<13:30:02><INFO>	 UpdatePlayersData()", -- [816]
+			"<13:30:13><DEBUG>	 GetML()", -- [817]
+			"<13:31:17><DEBUG>	 Event: LOOT_READY true", -- [818]
+			"<13:31:48><DEBUG>	 Event: LOOT_READY true", -- [819]
+			"<13:31:59><DEBUG>	 Event: LOOT_READY true", -- [820]
+			"<13:32:06><DEBUG>	 Event: LOOT_READY true", -- [821]
+			"<13:32:09><DEBUG>	 Event: LOOT_READY true", -- [822]
+			"<22:20:16><INFO>	 Logged In", -- [823]
+			"<22:20:16>[ML]<INFO>	 Init", -- [824]
+			"<22:20:16><INFO>	 RCLootCouncil TradeUI enabled", -- [825]
+			"<22:20:37><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [826]
+			"<22:20:37><DEBUG>	 ActivateSkin bfa", -- [827]
+			"<22:20:48><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [828]
+			"<22:20:48><INFO>	 UpdatePlayersData()", -- [829]
+			"<22:20:48><INFO>	 Player relog...", -- [830]
+			"<22:20:51><DEBUG>	 GetPlayersGuildRank()", -- [831]
+			"<22:20:51><DEBUG>	 GetPlayersGuildRank()", -- [832]
+			"<22:20:51><DEBUG>	 Found Guild Rank: Thuerge", -- [833]
+			"<22:21:05><DEBUG>	 GetML()", -- [834]
+			"<22:22:24><DEBUG>	 Event: LOOT_READY true", -- [835]
+			"<22:22:29><DEBUG>	 Event: LOOT_READY true", -- [836]
+			"<22:22:33><DEBUG>	 Event: LOOT_READY true", -- [837]
+			"<22:22:44><DEBUG>	 Event: LOOT_READY true", -- [838]
+			"<22:22:48><DEBUG>	 Event: LOOT_READY true", -- [839]
+			"<22:23:03><DEBUG>	 Event: LOOT_READY true", -- [840]
+			"<22:23:05><DEBUG>	 Event: LOOT_READY true", -- [841]
+			"<22:23:07><DEBUG>	 Event: LOOT_READY true", -- [842]
+			"<22:24:25><DEBUG>	 Event: LOOT_READY true", -- [843]
+			"<22:24:25><DEBUG>	 Event: LOOT_READY true", -- [844]
+			"<22:24:25><DEBUG>	 Event: LOOT_READY true", -- [845]
+			"<22:25:02><DEBUG>	 Event: LOOT_READY true", -- [846]
+			"<22:25:15><DEBUG>	 Event: LOOT_READY true", -- [847]
+			"<22:26:52><DEBUG>	 Event: LOOT_READY true", -- [848]
+			"<22:28:39><INFO>	 Logged In", -- [849]
+			"<22:28:39>[ML]<INFO>	 Init", -- [850]
+			"<22:28:39><INFO>	 RCLootCouncil TradeUI enabled", -- [851]
+			"<22:28:52><INFO>	 Durlok-BlackDragonflight 3.2.0 nil", -- [852]
+			"<22:28:52><DEBUG>	 ActivateSkin bfa", -- [853]
+			"<22:29:01><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [854]
+			"<22:29:01><INFO>	 UpdatePlayersData()", -- [855]
+			"<22:29:01><INFO>	 Player relog...", -- [856]
+			"<22:29:10><DEBUG>	 GetML()", -- [857]
+			"<22:30:21><DEBUG>	 Event: LOOT_READY true", -- [858]
+			"<22:30:22><DEBUG>	 Event: LOOT_READY true", -- [859]
+			"<22:30:27><DEBUG>	 Event: LOOT_READY true", -- [860]
+			"<22:30:35><DEBUG>	 Event: LOOT_READY true", -- [861]
+			"<22:30:35><DEBUG>	 Event: LOOT_READY true", -- [862]
+			"<22:30:42><DEBUG>	 Event: LOOT_READY true", -- [863]
+			"<22:31:37><DEBUG>	 Event: LOOT_READY true", -- [864]
+			"<22:32:06><DEBUG>	 Event: LOOT_READY true", -- [865]
+			"<22:32:06><DEBUG>	 Event: LOOT_READY true", -- [866]
+			"<22:34:50><DEBUG>	 Event: LOOT_READY true", -- [867]
+			"<22:37:30><DEBUG>	 Event: LOOT_READY true", -- [868]
+			"<22:38:46><INFO>	 Logged In", -- [869]
+			"<22:38:46>[ML]<INFO>	 Init", -- [870]
+			"<22:38:46><INFO>	 RCLootCouncil TradeUI enabled", -- [871]
+			"<22:39:02><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [872]
+			"<22:39:02><DEBUG>	 ActivateSkin bfa", -- [873]
+			"<22:39:13><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [874]
+			"<22:39:13><INFO>	 UpdatePlayersData()", -- [875]
+			"<22:39:13><INFO>	 Player relog...", -- [876]
+			"<22:39:16><DEBUG>	 GetPlayersGuildRank()", -- [877]
+			"<22:39:16><DEBUG>	 GetPlayersGuildRank()", -- [878]
+			"<22:39:16><DEBUG>	 Found Guild Rank: Thuerge", -- [879]
+			"<22:39:29><DEBUG>	 GetML()", -- [880]
+			"<22:40:03><DEBUG>	 Event: LOOT_READY true", -- [881]
+			"<22:40:07><DEBUG>	 Event: LOOT_READY true", -- [882]
+			"<22:40:12><DEBUG>	 Event: LOOT_READY true", -- [883]
+			"<22:40:21><DEBUG>	 Event: LOOT_READY true", -- [884]
+			"<22:40:21><DEBUG>	 Event: LOOT_READY true", -- [885]
+			"<22:40:25><DEBUG>	 Event: LOOT_READY true", -- [886]
+			"<22:40:25><DEBUG>	 Event: LOOT_READY true", -- [887]
+			"<22:40:28><DEBUG>	 Event: LOOT_READY true", -- [888]
+			"<22:40:28><DEBUG>	 Event: LOOT_READY true", -- [889]
+			"<22:40:33><DEBUG>	 Event: LOOT_READY true", -- [890]
+			"<22:40:36><DEBUG>	 Event: LOOT_READY true", -- [891]
+			"<22:40:41><DEBUG>	 Event: LOOT_READY true", -- [892]
+			"<22:40:56><DEBUG>	 Event: LOOT_READY true", -- [893]
+			"<22:50:04><DEBUG>	 Event: LOOT_READY true", -- [894]
+			"<23:00:27><DEBUG>	 Event: LOOT_READY true", -- [895]
+			"<23:00:27><DEBUG>	 Event: LOOT_READY true", -- [896]
+			"<23:00:27><DEBUG>	 Event: LOOT_READY true", -- [897]
+			"<23:00:27><DEBUG>	 Event: LOOT_READY true", -- [898]
+			"<23:02:02><DEBUG>	 Event: LOOT_READY true", -- [899]
+			"<23:02:07><DEBUG>	 Event: LOOT_READY true", -- [900]
+			"<23:02:12><DEBUG>	 Event: LOOT_READY true", -- [901]
+			"<23:02:45><DEBUG>	 Event: LOOT_READY true", -- [902]
+			"<23:05:03><DEBUG>	 Event: LOOT_READY true", -- [903]
+			"<02:53:34><INFO>	 Logged In", -- [904]
+			"<02:53:34>[ML]<INFO>	 Init", -- [905]
+			"<02:53:34><INFO>	 RCLootCouncil TradeUI enabled", -- [906]
+			"<02:53:56><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [907]
+			"<02:53:56><DEBUG>	 ActivateSkin bfa", -- [908]
+			"<02:54:06><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [909]
+			"<02:54:06><INFO>	 UpdatePlayersData()", -- [910]
+			"<02:54:06><INFO>	 Player relog...", -- [911]
+			"<02:54:09><DEBUG>	 GetPlayersGuildRank()", -- [912]
+			"<02:54:09><DEBUG>	 Found Guild Rank: Thuerge", -- [913]
+			"<02:54:24><DEBUG>	 GetML()", -- [914]
+			"<05:52:12><INFO>	 Logged In", -- [915]
+			"<05:52:12>[ML]<INFO>	 Init", -- [916]
+			"<05:52:12><INFO>	 RCLootCouncil TradeUI enabled", -- [917]
+			"<05:52:32><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [918]
+			"<05:52:32><DEBUG>	 ActivateSkin bfa", -- [919]
+			"<05:52:43><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [920]
+			"<05:52:43><INFO>	 UpdatePlayersData()", -- [921]
+			"<05:52:43><INFO>	 Player relog...", -- [922]
+			"<05:52:46><DEBUG>	 GetPlayersGuildRank()", -- [923]
+			"<05:52:46><DEBUG>	 GetPlayersGuildRank()", -- [924]
+			"<05:52:46><DEBUG>	 Found Guild Rank: Thuerge", -- [925]
+			"<05:53:00><DEBUG>	 GetML()", -- [926]
+			"<06:24:03><INFO>	 Logged In", -- [927]
+			"<06:24:03>[ML]<INFO>	 Init", -- [928]
+			"<06:24:03><INFO>	 RCLootCouncil TradeUI enabled", -- [929]
+			"<06:24:19><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [930]
+			"<06:24:19><DEBUG>	 ActivateSkin bfa", -- [931]
+			"<06:24:29><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [932]
+			"<06:24:29><INFO>	 UpdatePlayersData()", -- [933]
+			"<06:24:29><INFO>	 Player relog...", -- [934]
+			"<06:24:33><DEBUG>	 GetPlayersGuildRank()", -- [935]
+			"<06:24:33><DEBUG>	 Found Guild Rank: Thuerge", -- [936]
+			"<06:24:42><DEBUG>	 GetML()", -- [937]
+			"<06:24:59><DEBUG>	 Event: LOOT_READY true", -- [938]
+			"<06:24:59><DEBUG>	 Event: LOOT_READY true", -- [939]
+			"<06:24:59><DEBUG>	 Event: LOOT_READY true", -- [940]
+			"<06:25:05><DEBUG>	 Event: LOOT_READY true", -- [941]
+			"<06:25:05><DEBUG>	 Event: LOOT_READY true", -- [942]
+			"<06:25:05><DEBUG>	 Event: LOOT_READY true", -- [943]
+			"<06:25:09><DEBUG>	 Event: LOOT_READY true", -- [944]
+			"<06:25:31><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [945]
+			"<06:25:31><INFO>	 UpdatePlayersData()", -- [946]
+			"<06:25:43><DEBUG>	 GetML()", -- [947]
+			"<07:14:45><DEBUG>	 Event: LOOT_READY true", -- [948]
+			"<07:14:45><DEBUG>	 Event: LOOT_READY true", -- [949]
+			"<07:14:45><DEBUG>	 Event: LOOT_READY true", -- [950]
+			"<07:14:46><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 116794 |cffa335ee|Hitem:116794::::::::60:71::::1:28:872:::::|h[Garn Nighthowl]|h|r 1 Shanyt WARRIOR", -- [951]
+			"<07:14:47><DEBUG>	 Event: LOOT_READY true", -- [952]
+			"<07:18:55><INFO>	 Logged In", -- [953]
+			"<07:18:55>[ML]<INFO>	 Init", -- [954]
+			"<07:18:55><INFO>	 RCLootCouncil TradeUI enabled", -- [955]
+			"<07:19:08><INFO>	 Durlok-BlackDragonflight 3.2.0 nil", -- [956]
+			"<07:19:08><DEBUG>	 ActivateSkin bfa", -- [957]
+			"<07:19:17><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [958]
+			"<07:19:17><INFO>	 UpdatePlayersData()", -- [959]
+			"<07:19:17><INFO>	 Player relog...", -- [960]
+			"<07:19:26><DEBUG>	 GetML()", -- [961]
+			"<07:20:34><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [962]
+			"<07:20:34><INFO>	 UpdatePlayersData()", -- [963]
+			"<07:20:37><DEBUG>	 GetML()", -- [964]
+			"<07:23:18><INFO>	 Logged In", -- [965]
+			"<07:23:18>[ML]<INFO>	 Init", -- [966]
+			"<07:23:18><INFO>	 RCLootCouncil TradeUI enabled", -- [967]
+			"<07:23:30><INFO>	 Zulbathal-Zul'jin 3.2.0 nil", -- [968]
+			"<07:23:30><DEBUG>	 ActivateSkin bfa", -- [969]
+			"<07:23:41><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [970]
+			"<07:23:41><INFO>	 UpdatePlayersData()", -- [971]
+			"<07:23:41><INFO>	 Player relog...", -- [972]
+			"<07:23:50><DEBUG>	 GetML()", -- [973]
+			"<07:24:25><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [974]
+			"<07:24:25><INFO>	 UpdatePlayersData()", -- [975]
+			"<07:24:30><DEBUG>	 GetML()", -- [976]
+			"<07:24:58><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [977]
+			"<07:24:58><INFO>	 UpdatePlayersData()", -- [978]
+			"<07:25:02><DEBUG>	 GetML()", -- [979]
+			"<07:27:32><INFO>	 Logged In", -- [980]
+			"<07:27:32>[ML]<INFO>	 Init", -- [981]
+			"<07:27:32><INFO>	 RCLootCouncil TradeUI enabled", -- [982]
+			"<07:27:47><INFO>	 Avisar-Dalaran 3.2.0 nil", -- [983]
+			"<07:27:47><DEBUG>	 ActivateSkin bfa", -- [984]
+			"<07:27:57><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [985]
+			"<07:27:57><INFO>	 UpdatePlayersData()", -- [986]
+			"<07:27:57><INFO>	 Player relog...", -- [987]
+			"<07:28:06><DEBUG>	 GetML()", -- [988]
+			"<07:28:41><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [989]
+			"<07:28:41><INFO>	 UpdatePlayersData()", -- [990]
+			"<07:28:44><DEBUG>	 GetML()", -- [991]
+			"<17:47:26><INFO>	 Logged In", -- [992]
+			"<17:47:26>[ML]<INFO>	 Init", -- [993]
+			"<17:47:26><INFO>	 RCLootCouncil TradeUI enabled", -- [994]
+			"<17:47:50><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [995]
+			"<17:47:50><DEBUG>	 ActivateSkin bfa", -- [996]
+			"<17:48:00><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [997]
+			"<17:48:00><INFO>	 UpdatePlayersData()", -- [998]
+			"<17:48:00><INFO>	 Player relog...", -- [999]
+			"<17:48:12><DEBUG>	 GetPlayersGuildRank()", -- [1000]
+			"<17:48:12><DEBUG>	 Found Guild Rank: Thuerge", -- [1001]
+			"<17:48:31><DEBUG>	 GetML()", -- [1002]
+			"<17:51:31><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1003]
+			"<17:51:31><INFO>	 UpdatePlayersData()", -- [1004]
+			"<17:51:41><DEBUG>	 GetML()", -- [1005]
+			"<18:01:46><DEBUG>	 Event: LOOT_READY true", -- [1006]
+			"<18:02:03><DEBUG>	 Event: LOOT_READY true", -- [1007]
+			"<18:02:19><DEBUG>	 Event: LOOT_READY true", -- [1008]
+			"<18:02:27><DEBUG>	 Event: LOOT_READY true", -- [1009]
+			"<18:02:35><DEBUG>	 Event: LOOT_READY true", -- [1010]
+			"<18:02:55><DEBUG>	 Event: LOOT_READY true", -- [1011]
+			"<18:03:14><DEBUG>	 Event: LOOT_READY true", -- [1012]
+			"<18:03:20><DEBUG>	 Event: LOOT_READY true", -- [1013]
+			"<18:04:44><DEBUG>	 Event: LOOT_READY true", -- [1014]
+			"<18:05:03><DEBUG>	 Event: LOOT_READY true", -- [1015]
+			"<18:05:15><DEBUG>	 Event: LOOT_READY true", -- [1016]
+			"<18:05:23><DEBUG>	 Event: LOOT_READY true", -- [1017]
+			"<18:06:15><DEBUG>	 Event: LOOT_READY true", -- [1018]
+			"<18:06:35><DEBUG>	 Event: LOOT_READY true", -- [1019]
+			"<18:06:48><DEBUG>	 Event: LOOT_READY true", -- [1020]
+			"<18:07:02><DEBUG>	 Event: LOOT_READY true", -- [1021]
+			"<18:08:32><INFO>	 Logged In", -- [1022]
+			"<18:08:32>[ML]<INFO>	 Init", -- [1023]
+			"<18:08:32><INFO>	 RCLootCouncil TradeUI enabled", -- [1024]
+			"<18:08:45><INFO>	 Shanyt-ArgentDawn 3.2.0 nil", -- [1025]
+			"<18:08:45><DEBUG>	 ActivateSkin bfa", -- [1026]
+			"<18:08:55><DEBUG>	 Event: PLAYER_ENTERING_WORLD false true", -- [1027]
+			"<18:08:55><INFO>	 UpdatePlayersData()", -- [1028]
+			"<18:08:55><INFO>	 Player relog...", -- [1029]
+			"<18:09:03><DEBUG>	 GetPlayersGuildRank()", -- [1030]
+			"<18:09:03><DEBUG>	 Found Guild Rank: Thuerge", -- [1031]
+			"<18:09:05><DEBUG>	 GetML()", -- [1032]
+			"<18:09:06><Comm>	 ^1^Sv^T^N1^S3.2.0^t^^ GUILD Shanyt-ArgentDawn", -- [1033]
+			"<18:09:26><DEBUG>	 Event: LOOT_READY true", -- [1034]
+			"<18:09:26><DEBUG>	 Event: LOOT_READY true", -- [1035]
+			"<18:09:40><DEBUG>	 Event: LOOT_READY true", -- [1036]
+			"<18:09:55><DEBUG>	 Event: LOOT_READY true", -- [1037]
+			"<18:10:14><DEBUG>	 Event: LOOT_READY true", -- [1038]
+			"<18:10:56><DEBUG>	 Event: LOOT_READY true", -- [1039]
+			"<18:10:56><DEBUG>	 Event: LOOT_READY true", -- [1040]
+			"<18:11:52><DEBUG>	 Event: LOOT_READY true", -- [1041]
+			"<18:11:59><DEBUG>	 Event: LOOT_READY true", -- [1042]
+			"<18:12:05><DEBUG>	 Event: LOOT_READY true", -- [1043]
+			"<18:14:01><DEBUG>	 Event: LOOT_READY true", -- [1044]
+			"<18:14:02><DEBUG>	 Event: LOOT_READY true", -- [1045]
+			"<18:14:42><DEBUG>	 Event: LOOT_READY true", -- [1046]
+			"<18:15:16><DEBUG>	 Event: LOOT_READY true", -- [1047]
+			"<18:15:38><DEBUG>	 Event: LOOT_READY true", -- [1048]
+			"<18:16:15><DEBUG>	 Event: LOOT_READY true", -- [1049]
+			"<18:16:50><DEBUG>	 Event: LOOT_READY true", -- [1050]
+			"<18:23:44><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1051]
+			"<18:23:44><INFO>	 UpdatePlayersData()", -- [1052]
+			"<18:23:55><DEBUG>	 GetML()", -- [1053]
+			"<03:05:08><INFO>	 Logged In", -- [1054]
+			"<03:05:08>[ML]<INFO>	 Init", -- [1055]
+			"<03:05:08><INFO>	 RCLootCouncil TradeUI enabled", -- [1056]
+			"<03:05:33><INFO>	 Shanyt-ArgentDawn 3.2.1 nil", -- [1057]
+			"<03:05:33><DEBUG>	 ActivateSkin bfa", -- [1058]
+			"<03:05:46><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1059]
+			"<03:05:46><INFO>	 UpdatePlayersData()", -- [1060]
+			"<03:05:46><INFO>	 Player relog...", -- [1061]
+			"<03:05:50><DEBUG>	 GetPlayersGuildRank()", -- [1062]
+			"<03:05:51><DEBUG>	 GetPlayersGuildRank()", -- [1063]
+			"<03:05:51><DEBUG>	 Found Guild Rank: Thuerge", -- [1064]
+			"<03:06:04><DEBUG>	 GetML()", -- [1065]
+			"<03:07:02><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1066]
+			"<03:07:02><INFO>	 UpdatePlayersData()", -- [1067]
+			"<03:07:13><DEBUG>	 GetML()", -- [1068]
+			"<03:07:43><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1069]
+			"<03:07:43><INFO>	 UpdatePlayersData()", -- [1070]
+			"<03:07:53><DEBUG>	 GetML()", -- [1071]
+			"<03:09:36><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1072]
+			"<03:09:36><INFO>	 UpdatePlayersData()", -- [1073]
+			"<03:09:46><DEBUG>	 GetML()", -- [1074]
+			"<03:13:38><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1075]
+			"<03:13:38><INFO>	 UpdatePlayersData()", -- [1076]
+			"<03:13:46><DEBUG>	 GetML()", -- [1077]
+			"<03:14:16><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1078]
+			"<03:14:16><INFO>	 UpdatePlayersData()", -- [1079]
+			"<03:14:24><DEBUG>	 GetML()", -- [1080]
+			"<03:14:36><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1081]
+			"<03:14:36><INFO>	 UpdatePlayersData()", -- [1082]
+			"<03:14:44><DEBUG>	 GetML()", -- [1083]
+			"<03:15:09><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1084]
+			"<03:15:09><INFO>	 UpdatePlayersData()", -- [1085]
+			"<03:15:17><DEBUG>	 GetML()", -- [1086]
+			"<03:16:30><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1087]
+			"<03:16:30><INFO>	 UpdatePlayersData()", -- [1088]
+			"<03:16:38><DEBUG>	 GetML()", -- [1089]
+			"<03:17:16><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1090]
+			"<03:17:16><INFO>	 UpdatePlayersData()", -- [1091]
+			"<03:17:25><DEBUG>	 GetML()", -- [1092]
+			"<03:17:53><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1093]
+			"<03:17:55><DEBUG>	 GetML()", -- [1094]
+			"<03:17:55><Data.Player>	 CreatePlayer Player-3675-079E7C51", -- [1095]
+			"<03:17:55><DEBUG>	 Resetting council as we have a new ML!", -- [1096]
+			"<03:17:55><INFO>	 MasterLooter =  Xhilvanas-MoonGuard", -- [1097]
+			"<03:18:06><DEBUG>	 Event: GROUP_LEFT 1 Party-3675-1-0000464EB54F", -- [1098]
+			"<03:18:06><DEBUG>	 GetML()", -- [1099]
+			"<03:18:10><DEBUG>	 Timer MLdb_check passed", -- [1100]
+			"<03:19:41><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1101]
+			"<03:19:43><DEBUG>	 GetML()", -- [1102]
+			"<03:19:43><Data.Player>	 CreatePlayer Player-3678-099FCF5E", -- [1103]
+			"<03:19:43><DEBUG>	 Resetting council as we have a new ML!", -- [1104]
+			"<03:19:43><INFO>	 MasterLooter =  Darquis-Thrall", -- [1105]
+			"<03:19:58><DEBUG>	 Timer MLdb_check passed", -- [1106]
+			"<03:19:58><Comm>	 ^1^Sxrealm^T^N1^SDarquis-Thrall^N2^SMLdb_request^t^^ RAID Shanyt-ArgentDawn", -- [1107]
+			"<03:19:58><Comm>	 ^1^Sxrealm^T^N1^SDarquis-Thrall^N2^Scouncil_request^t^^ RAID Shanyt-ArgentDawn", -- [1108]
+			"<03:28:38><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1109]
+			"<03:28:40><DEBUG>	 GetML()", -- [1110]
+			"<03:28:40><DEBUG>	 Resetting council as we have a new ML!", -- [1111]
+			"<03:28:40><INFO>	 MasterLooter =  Shanyt-ArgentDawn", -- [1112]
+			"<03:28:40>[ML]<DEBUG>	 UpdateGroupCouncil Shanyt-ArgentDawn", -- [1113]
+			"<03:28:40>[ML]<DEBUG>	 NewML Shanyt-ArgentDawn", -- [1114]
+			"<03:28:40>[ML]<DEBUG>	 UpdateMLdb", -- [1115]
+			"<03:28:40><INFO>	 OnMLDBReceived", -- [1116]
+			"<03:28:40><Comm>	 ^1^SplayerInfoRequest^T^t^^ RAID Shanyt-ArgentDawn", -- [1117]
+			"<03:28:40><Comm>	 ^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|5^N3^S|2^B^t^t^^ RAID Shanyt-ArgentDawn", -- [1118]
+			"<03:28:40><Comm>	 ^1^Sxrealm^T^N1^SShanyt-ArgentDawn^N2^SpI^N3^SDAMAGER^N4^SThuerge^N6^N0^N7^N165.9375^N8^N71^t^^ RAID Shanyt-ArgentDawn", -- [1119]
+			"<03:28:40><Comm>	 ^1^Sxrealm^T^N1^SShanyt-ArgentDawn^N2^SpI^N3^SDAMAGER^N4^SUnguilded^N6^N0^N7^N203.9375^N8^N72^t^^ RAID Namphir-ScarletCrusade", -- [1120]
+			"<03:28:40><Data.Player>	 CreatePlayer Player-118-062E1619", -- [1121]
+			"<03:28:42>[ML]<DEBUG>	 UpdateGroupCouncil Shanyt-ArgentDawn", -- [1122]
+			"<03:28:42><Comm>	 ^1^Scouncil^T^N1^T^S75-058380E2^B^t^t^^ RAID Shanyt-ArgentDawn", -- [1123]
+			"<03:28:42><DEBUG>	 isCouncil true", -- [1124]
+			"<03:28:42><DEBUG>	 GetLootDBStatistics()", -- [1125]
+			"<03:28:42><DEBUG>	 GetGuildRankNum()", -- [1126]
+			"<03:28:42><INFO>	 RCVotingFrame enabled", -- [1127]
+			"<03:28:48><DEBUG>	 VotingFrame:Update() without lootTable!!", -- [1128]
+			"<03:28:49><INFO>	 Player confirmed usage", -- [1129]
+			"<03:28:49><INFO>	 Start handling loot", -- [1130]
+			"<03:28:49><Comm>	 ^1^SStartHandleLoot^T^t^^ RAID Shanyt-ArgentDawn", -- [1131]
+			"<03:28:55><DEBUG>	 Timer MLdb_check passed", -- [1132]
+			"<03:29:12><DEBUG>	 Event: GROUP_LEFT 1 Party-3678-1-00002EFA0FE2", -- [1133]
+			"<03:29:12><DEBUG>	 GetML()", -- [1134]
+			"<03:29:12><INFO>	 Stop handling loot", -- [1135]
+			"<03:29:12>[ML]<INFO>	 Disabled", -- [1136]
+			"<03:29:13><Comm>	 ^1^SStopHandleLoot^T^t^^ WHISPER Shanyt-ArgentDawn", -- [1137]
+			"<20:50:49><INFO>	 Logged In", -- [1138]
+			"<20:50:49>[ML]<INFO>	 Init", -- [1139]
+			"<20:50:49><INFO>	 RCLootCouncil TradeUI enabled", -- [1140]
+			"<20:51:08><INFO>	 Shanyt-ArgentDawn 3.2.1 nil", -- [1141]
+			"<20:51:08><DEBUG>	 ActivateSkin bfa", -- [1142]
+			"<20:51:19><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1143]
+			"<20:51:19><INFO>	 UpdatePlayersData()", -- [1144]
+			"<20:51:19><INFO>	 Player relog...", -- [1145]
+			"<20:51:23><DEBUG>	 GetPlayersGuildRank()", -- [1146]
+			"<20:51:23><DEBUG>	 Found Guild Rank: Thuerge", -- [1147]
+			"<20:51:38><DEBUG>	 GetML()", -- [1148]
+			"<20:56:18><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1149]
+			"<20:56:20><DEBUG>	 GetML()", -- [1150]
+			"<20:56:20><DEBUG>	 Resetting council as we have a new ML!", -- [1151]
+			"<20:56:20><INFO>	 MasterLooter =  Shanyt-ArgentDawn", -- [1152]
+			"<20:56:20>[ML]<DEBUG>	 UpdateGroupCouncil Shanyt-ArgentDawn", -- [1153]
+			"<20:56:20>[ML]<DEBUG>	 NewML Shanyt-ArgentDawn", -- [1154]
+			"<20:56:20>[ML]<DEBUG>	 UpdateMLdb", -- [1155]
+			"<20:56:20><INFO>	 OnMLDBReceived", -- [1156]
+			"<20:56:20><Comm>	 ^1^SplayerInfoRequest^T^t^^ PARTY Shanyt-ArgentDawn", -- [1157]
+			"<20:56:20><Comm>	 ^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|5^N3^S|2^B^t^t^^ PARTY Shanyt-ArgentDawn", -- [1158]
+			"<20:56:20><Comm>	 ^1^Sxrealm^T^N1^SShanyt-ArgentDawn^N2^SpI^N3^SDAMAGER^N4^SThuerge^N6^N0^N7^N165.9375^N8^N71^t^^ PARTY Shanyt-ArgentDawn", -- [1159]
+			"<20:56:22>[ML]<DEBUG>	 UpdateGroupCouncil Shanyt-ArgentDawn", -- [1160]
+			"<20:56:22><Comm>	 ^1^Scouncil^T^N1^T^S75-058380E2^B^t^t^^ PARTY Shanyt-ArgentDawn", -- [1161]
+			"<20:56:22><DEBUG>	 isCouncil true", -- [1162]
+			"<20:56:22><DEBUG>	 GetLootDBStatistics()", -- [1163]
+			"<20:56:22><DEBUG>	 GetGuildRankNum()", -- [1164]
+			"<20:56:22><INFO>	 RCVotingFrame enabled", -- [1165]
+			"<20:56:35><DEBUG>	 Timer MLdb_check passed", -- [1166]
+			"<20:56:46><DEBUG>	 VotingFrame:Update() without lootTable!!", -- [1167]
+			"<20:57:08><DEBUG>	 VotingFrame:Update() without lootTable!!", -- [1168]
+			"<20:58:29><DEBUG>	 VotingFrame:Update() without lootTable!!", -- [1169]
+			"<20:59:43><DEBUG>	 VotingFrame:Update() without lootTable!!", -- [1170]
+			"<21:00:23><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1171]
+			"<21:00:25><DEBUG>	 GetML()", -- [1172]
+			"<21:00:25><Data.Player>	 CreatePlayer Player-125-0A1FED54", -- [1173]
+			"<21:00:25><INFO>	 Stop handling loot", -- [1174]
+			"<21:00:25>[ML]<INFO>	 Disabled", -- [1175]
+			"<21:00:25><DEBUG>	 Resetting council as we have a new ML!", -- [1176]
+			"<21:00:25><INFO>	 MasterLooter =  Gasara-BlackwaterRaiders", -- [1177]
+			"<21:00:26><Comm>	 ^1^SStopHandleLoot^T^t^^ PARTY Shanyt-ArgentDawn", -- [1178]
+			"<21:00:30><DEBUG>	 Event: GROUP_LEFT 1 Party-75-1-00003E31E2AE", -- [1179]
+			"<21:00:30><DEBUG>	 GetML()", -- [1180]
+			"<22:32:36><INFO>	 Logged In", -- [1181]
+			"<22:32:36>[ML]<INFO>	 Init", -- [1182]
+			"<22:32:36><INFO>	 RCLootCouncil TradeUI enabled", -- [1183]
+			"<22:32:51><INFO>	 Shanyt-ArgentDawn 3.2.1 nil", -- [1184]
+			"<22:32:51><DEBUG>	 ActivateSkin bfa", -- [1185]
+			"<22:33:01><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1186]
+			"<22:33:01><INFO>	 UpdatePlayersData()", -- [1187]
+			"<22:33:01><INFO>	 Player relog...", -- [1188]
+			"<22:33:03><DEBUG>	 GetPlayersGuildRank()", -- [1189]
+			"<22:33:03><DEBUG>	 Found Guild Rank: Thuerge", -- [1190]
+			"<22:33:17><DEBUG>	 GetML()", -- [1191]
+			"<22:35:59><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1192]
+			"<22:35:59><INFO>	 UpdatePlayersData()", -- [1193]
+			"<22:36:10><DEBUG>	 GetML()", -- [1194]
+			"<22:36:27><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1195]
+			"<22:36:27><INFO>	 UpdatePlayersData()", -- [1196]
+			"<22:36:35><DEBUG>	 GetML()", -- [1197]
+			"<22:36:56><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1198]
+			"<22:36:58><DEBUG>	 GetML()", -- [1199]
+			"<22:36:58><Data.Player>	 CreatePlayer Player-12-062BA247", -- [1200]
+			"<22:36:58><DEBUG>	 Resetting council as we have a new ML!", -- [1201]
+			"<22:36:58><INFO>	 MasterLooter =  Serenefyre-SilverHand", -- [1202]
+			"<22:37:13><DEBUG>	 Timer MLdb_check passed", -- [1203]
+			"<22:37:13><Comm>	 ^1^Sxrealm^T^N1^SSerenefyre-SilverHand^N2^SMLdb_request^t^^ RAID Shanyt-ArgentDawn", -- [1204]
+			"<22:37:13><Comm>	 ^1^Sxrealm^T^N1^SSerenefyre-SilverHand^N2^Scouncil_request^t^^ RAID Shanyt-ArgentDawn", -- [1205]
+			"<22:37:24><Comm>	 ^1^Sxrealm^T^N1^SSerenefyre-SilverHand^N2^SMLdb_request^t^^ RAID Awkanu-Azralon", -- [1206]
+			"<22:37:24><Comm>	 ^1^Sxrealm^T^N1^SSerenefyre-SilverHand^N2^Scouncil_request^t^^ RAID Awkanu-Azralon", -- [1207]
+			"<22:37:33><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1208]
+			"<22:37:34><DEBUG>	 Event: GROUP_LEFT 1 Party-12-1-0000328782D4", -- [1209]
+			"<22:37:34><DEBUG>	 GetML()", -- [1210]
+			"<22:37:35><DEBUG>	 GetML()", -- [1211]
+			"<19:45:02><INFO>	 Logged In", -- [1212]
+			"<19:45:02>[ML]<INFO>	 Init", -- [1213]
+			"<19:45:02><INFO>	 RCLootCouncil TradeUI enabled", -- [1214]
+			"<19:45:21><INFO>	 Shanyt-ArgentDawn 3.2.1 nil", -- [1215]
+			"<19:45:21><DEBUG>	 ActivateSkin bfa", -- [1216]
+			"<19:45:34><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1217]
+			"<19:45:34><INFO>	 UpdatePlayersData()", -- [1218]
+			"<19:45:34><INFO>	 Player relog...", -- [1219]
+			"<19:45:37><DEBUG>	 GetPlayersGuildRank()", -- [1220]
+			"<19:45:37><DEBUG>	 GetPlayersGuildRank()", -- [1221]
+			"<19:45:37><DEBUG>	 Found Guild Rank: Thuerge", -- [1222]
+			"<19:45:50><DEBUG>	 GetML()", -- [1223]
+			"<19:47:00><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1224]
+			"<19:47:02><DEBUG>	 GetML()", -- [1225]
+			"<19:47:02><Data.Player>	 CreatePlayer Player-12-0AFFFB46", -- [1226]
+			"<19:47:02><DEBUG>	 Resetting council as we have a new ML!", -- [1227]
+			"<19:47:02><INFO>	 MasterLooter =  Argarah-ThoriumBrotherhood", -- [1228]
+			"<19:47:15><Comm>	 ^1^Sxrealm^T^N1^SArgarah-ThoriumBrotherhood^N2^SMLdb_request^t^^ RAID Merchantra-Area52", -- [1229]
+			"<19:47:17><DEBUG>	 Timer MLdb_check passed", -- [1230]
+			"<19:47:18><Comm>	 ^1^Sxrealm^T^N1^SArgarah-ThoriumBrotherhood^N2^SMLdb_request^t^^ RAID Shanyt-ArgentDawn", -- [1231]
+			"<19:47:18><Comm>	 ^1^Sxrealm^T^N1^SArgarah-ThoriumBrotherhood^N2^Scouncil_request^t^^ RAID Shanyt-ArgentDawn", -- [1232]
+			"<19:47:46><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1233]
+			"<19:47:48><DEBUG>	 GetML()", -- [1234]
+			"<19:47:48><Data.Player>	 CreatePlayer Player-3661-084E3FCA", -- [1235]
+			"<19:47:48><DEBUG>	 Resetting council as we have a new ML!", -- [1236]
+			"<19:47:48><INFO>	 MasterLooter =  Badazzme-Hyjal", -- [1237]
+			"<19:47:53><DEBUG>	 Event: GROUP_LEFT 1 Party-12-1-00003288BB62", -- [1238]
+			"<19:47:53><DEBUG>	 GetML()", -- [1239]
+			"<19:48:03><DEBUG>	 Timer MLdb_check passed", -- [1240]
+			"<19:51:19><INFO>	 Logged In", -- [1241]
+			"<19:51:19>[ML]<INFO>	 Init", -- [1242]
+			"<19:51:19><INFO>	 RCLootCouncil TradeUI enabled", -- [1243]
+			"<19:51:35><INFO>	 Zulbathal-Zul'jin 3.2.1 nil", -- [1244]
+			"<19:51:35><DEBUG>	 ActivateSkin bfa", -- [1245]
+			"<19:51:46><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1246]
+			"<19:51:46><INFO>	 UpdatePlayersData()", -- [1247]
+			"<19:51:46><INFO>	 Player relog...", -- [1248]
+			"<19:51:58><DEBUG>	 GetML()", -- [1249]
+			"<19:52:46><DEBUG>	 Event: LOOT_READY true", -- [1250]
+			"<19:52:47><DEBUG>	 Event: LOOT_READY true", -- [1251]
+			"<19:54:39><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1252]
+			"<19:54:39><INFO>	 UpdatePlayersData()", -- [1253]
+			"<19:54:42><DEBUG>	 GetML()", -- [1254]
+			"<19:58:10><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1255]
+			"<19:58:12><Comm>	 ^1^Sxrealm^T^N1^SDrayk-Feathermoon^N2^SMLdb_request^t^^ RAID Jackjaded-Thrall", -- [1256]
+			"<19:58:12><DEBUG>	 GetML()", -- [1257]
+			"<19:58:12><Data.Player>	 CreatePlayer Player-118-00DC8ECC", -- [1258]
+			"<19:58:12><DEBUG>	 Resetting council as we have a new ML!", -- [1259]
+			"<19:58:12><INFO>	 MasterLooter =  Drayk-Feathermoon", -- [1260]
+			"<19:58:13><Comm>	 ^1^Sxrealm^T^N1^SDrayk-Feathermoon^N2^Scouncil_request^t^^ RAID Jackjaded-Thrall", -- [1261]
+			"<19:58:27><DEBUG>	 Timer MLdb_check passed", -- [1262]
+			"<19:58:28><Comm>	 ^1^Sxrealm^T^N1^SDrayk-Feathermoon^N2^SMLdb_request^t^^ RAID Zulbathal-Zul'jin", -- [1263]
+			"<19:58:28><Comm>	 ^1^Sxrealm^T^N1^SDrayk-Feathermoon^N2^Scouncil_request^t^^ RAID Zulbathal-Zul'jin", -- [1264]
+			"<20:00:57><DEBUG>	 Event: GROUP_LEFT 1 Party-118-1-0000201AB1C1", -- [1265]
+			"<20:00:57><DEBUG>	 GetML()", -- [1266]
+			"<20:02:50><INFO>	 Logged In", -- [1267]
+			"<20:02:50>[ML]<INFO>	 Init", -- [1268]
+			"<20:02:50><INFO>	 RCLootCouncil TradeUI enabled", -- [1269]
+			"<20:03:03><INFO>	 Durlok-BlackDragonflight 3.2.1 nil", -- [1270]
+			"<20:03:03><DEBUG>	 ActivateSkin bfa", -- [1271]
+			"<20:03:15><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1272]
+			"<20:03:15><INFO>	 UpdatePlayersData()", -- [1273]
+			"<20:03:15><INFO>	 Player relog...", -- [1274]
+			"<20:03:24><DEBUG>	 GetML()", -- [1275]
+			"<20:04:09><DEBUG>	 Event: LOOT_READY true", -- [1276]
+			"<20:04:10><DEBUG>	 Event: LOOT_READY true", -- [1277]
+			"<21:44:31><INFO>	 Logged In", -- [1278]
+			"<21:44:31>[ML]<INFO>	 Init", -- [1279]
+			"<21:44:31><INFO>	 RCLootCouncil TradeUI enabled", -- [1280]
+			"<21:44:44><INFO>	 Durlok-BlackDragonflight 3.2.1 nil", -- [1281]
+			"<21:44:44><DEBUG>	 ActivateSkin bfa", -- [1282]
+			"<21:44:54><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1283]
+			"<21:44:54><INFO>	 UpdatePlayersData()", -- [1284]
+			"<21:44:54><INFO>	 Player relog...", -- [1285]
+			"<21:45:04><DEBUG>	 GetML()", -- [1286]
+			"<21:46:19><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1287]
+			"<21:46:19><INFO>	 UpdatePlayersData()", -- [1288]
+			"<21:46:21><DEBUG>	 GetML()", -- [1289]
+			"<21:53:33><INFO>	 Logged In", -- [1290]
+			"<21:53:33>[ML]<INFO>	 Init", -- [1291]
+			"<21:53:33><INFO>	 RCLootCouncil TradeUI enabled", -- [1292]
+			"<21:53:50><INFO>	 Avisar-Dalaran 3.2.1 nil", -- [1293]
+			"<21:53:50><DEBUG>	 ActivateSkin bfa", -- [1294]
+			"<21:54:02><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1295]
+			"<21:54:02><INFO>	 UpdatePlayersData()", -- [1296]
+			"<21:54:02><INFO>	 Player relog...", -- [1297]
+			"<21:54:12><DEBUG>	 GetML()", -- [1298]
+			"<21:54:46><DEBUG>	 Event: LOOT_READY true", -- [1299]
+			"<21:54:46><DEBUG>	 Event: LOOT_READY true", -- [1300]
+			"<22:12:37><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1301]
+			"<22:12:37><INFO>	 UpdatePlayersData()", -- [1302]
+			"<22:12:40><DEBUG>	 GetML()", -- [1303]
+			"<22:17:23><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1304]
+			"<22:17:24><DEBUG>	 GetML()", -- [1305]
+			"<22:17:24><Data.Player>	 CreatePlayer Player-118-03DC6E7F", -- [1306]
+			"<22:17:24><DEBUG>	 Resetting council as we have a new ML!", -- [1307]
+			"<22:17:24><INFO>	 MasterLooter =  Prosthemys-Feathermoon", -- [1308]
+			"<22:17:39><DEBUG>	 Timer MLdb_check passed", -- [1309]
+			"<22:17:40><Comm>	 ^1^Sxrealm^T^N1^SProsthemys-Feathermoon^N2^SMLdb_request^t^^ RAID Avisar-Dalaran", -- [1310]
+			"<22:17:40><Comm>	 ^1^Sxrealm^T^N1^SProsthemys-Feathermoon^N2^Scouncil_request^t^^ RAID Avisar-Dalaran", -- [1311]
+			"<22:17:43><Comm>	 ^1^Sxrealm^T^N1^SProsthemys-Feathermoon^N2^SMLdb_request^t^^ RAID Zerafel-Mannoroth", -- [1312]
+			"<22:17:43><Comm>	 ^1^Sxrealm^T^N1^SProsthemys-Feathermoon^N2^Scouncil_request^t^^ RAID Zerafel-Mannoroth", -- [1313]
+			"<22:20:05><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1314]
+			"<22:20:07><DEBUG>	 GetML()", -- [1315]
+			"<22:20:07><Data.Player>	 CreatePlayer Player-118-0A78A279", -- [1316]
+			"<22:20:07><DEBUG>	 Resetting council as we have a new ML!", -- [1317]
+			"<22:20:07><INFO>	 MasterLooter =  Phaliias-Feathermoon", -- [1318]
+			"<22:20:10><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1319]
+			"<22:20:12><DEBUG>	 GetML()", -- [1320]
+			"<22:20:12><Data.Player>	 CreatePlayer Player-163-0AA06887", -- [1321]
+			"<22:20:12><DEBUG>	 Resetting council as we have a new ML!", -- [1322]
+			"<22:20:12><INFO>	 MasterLooter =  Bountyhunter-TwistingNether", -- [1323]
+			"<22:20:13><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1324]
+			"<22:20:15><DEBUG>	 GetML()", -- [1325]
+			"<22:20:15><Data.Player>	 CreatePlayer Player-60-0636B766", -- [1326]
+			"<22:20:15><DEBUG>	 Resetting council as we have a new ML!", -- [1327]
+			"<22:20:15><INFO>	 MasterLooter =  Ladiana-Stormrage", -- [1328]
+			"<22:20:22><DEBUG>	 Timer MLdb_check passed", -- [1329]
+			"<22:20:22><Comm>	 ^1^Sxrealm^T^N1^SLadiana-Stormrage^N2^SMLdb_request^t^^ RAID Avisar-Dalaran", -- [1330]
+			"<22:20:22><Comm>	 ^1^Sxrealm^T^N1^SLadiana-Stormrage^N2^Scouncil_request^t^^ RAID Avisar-Dalaran", -- [1331]
+			"<22:20:27><DEBUG>	 Timer MLdb_check passed", -- [1332]
+			"<22:20:27><Comm>	 ^1^Sxrealm^T^N1^SLadiana-Stormrage^N2^SMLdb_request^t^^ RAID Avisar-Dalaran", -- [1333]
+			"<22:20:27><Comm>	 ^1^Sxrealm^T^N1^SLadiana-Stormrage^N2^Scouncil_request^t^^ RAID Avisar-Dalaran", -- [1334]
+			"<22:20:30><DEBUG>	 Timer MLdb_check passed", -- [1335]
+			"<22:20:30><Comm>	 ^1^Sxrealm^T^N1^SLadiana-Stormrage^N2^SMLdb_request^t^^ RAID Avisar-Dalaran", -- [1336]
+			"<22:20:30><Comm>	 ^1^Sxrealm^T^N1^SLadiana-Stormrage^N2^Scouncil_request^t^^ RAID Avisar-Dalaran", -- [1337]
+			"<22:21:09><DEBUG>	 Event: GROUP_LEFT 1 Party-118-1-0000201ACCF3", -- [1338]
+			"<22:21:09><DEBUG>	 GetML()", -- [1339]
+			"<22:22:46><INFO>	 Logged In", -- [1340]
+			"<22:22:46>[ML]<INFO>	 Init", -- [1341]
+			"<22:22:46><INFO>	 RCLootCouncil TradeUI enabled", -- [1342]
+			"<22:23:00><INFO>	 Illingrath-Dalaran 3.2.1 nil", -- [1343]
+			"<22:23:00><DEBUG>	 ActivateSkin bfa", -- [1344]
+			"<22:23:11><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1345]
+			"<22:23:11><INFO>	 UpdatePlayersData()", -- [1346]
+			"<22:23:11><INFO>	 Player relog...", -- [1347]
+			"<22:23:19><DEBUG>	 GetML()", -- [1348]
+			"<22:23:52><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1349]
+			"<22:23:52><INFO>	 UpdatePlayersData()", -- [1350]
+			"<22:23:54><DEBUG>	 GetML()", -- [1351]
+			"<22:25:06><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1352]
+			"<22:25:06><INFO>	 UpdatePlayersData()", -- [1353]
+			"<22:25:08><DEBUG>	 GetML()", -- [1354]
+			"<22:27:56><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1355]
+			"<22:27:58><DEBUG>	 GetML()", -- [1356]
+			"<22:27:58><Data.Player>	 CreatePlayer Player-118-004FDEAC", -- [1357]
+			"<22:27:58><DEBUG>	 Resetting council as we have a new ML!", -- [1358]
+			"<22:27:58><INFO>	 MasterLooter =  Adolean-Feathermoon", -- [1359]
+			"<22:28:13><DEBUG>	 Timer MLdb_check passed", -- [1360]
+			"<22:28:13><Comm>	 ^1^Sxrealm^T^N1^SAdolean-Feathermoon^N2^SMLdb_request^t^^ RAID Illingrath-Dalaran", -- [1361]
+			"<22:28:13><Comm>	 ^1^Sxrealm^T^N1^SAdolean-Feathermoon^N2^Scouncil_request^t^^ RAID Illingrath-Dalaran", -- [1362]
+			"<22:28:20><Comm>	 ^1^Sxrealm^T^N1^SAdolean-Feathermoon^N2^SMLdb_request^t^^ RAID Omeguiz-Lightbringer", -- [1363]
+			"<22:28:20><Comm>	 ^1^Sxrealm^T^N1^SAdolean-Feathermoon^N2^Scouncil_request^t^^ RAID Omeguiz-Lightbringer", -- [1364]
+			"<22:29:00><Comm>	 ^1^Sxrealm^T^N1^SAdolean-Feathermoon^N2^SMLdb_request^t^^ RAID Volstatsz-AeriePeak", -- [1365]
+			"<22:29:00><Comm>	 ^1^Sxrealm^T^N1^SAdolean-Feathermoon^N2^Scouncil_request^t^^ RAID Volstatsz-AeriePeak", -- [1366]
+			"<22:31:13><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1367]
+			"<22:31:15><DEBUG>	 Event: GROUP_LEFT 1 Party-118-1-0000201AD03E", -- [1368]
+			"<22:31:15><DEBUG>	 GetML()", -- [1369]
+			"<22:31:15><DEBUG>	 GetML()", -- [1370]
+			"<22:32:55><INFO>	 Logged In", -- [1371]
+			"<22:32:55>[ML]<INFO>	 Init", -- [1372]
+			"<22:32:55><INFO>	 RCLootCouncil TradeUI enabled", -- [1373]
+			"<22:33:09><INFO>	 Varlouris-Dalaran 3.2.1 nil", -- [1374]
+			"<22:33:09><DEBUG>	 ActivateSkin bfa", -- [1375]
+			"<22:33:20><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1376]
+			"<22:33:20><INFO>	 UpdatePlayersData()", -- [1377]
+			"<22:33:20><INFO>	 Player relog...", -- [1378]
+			"<22:33:28><DEBUG>	 GetML()", -- [1379]
+			"<22:33:56><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1380]
+			"<22:33:56><INFO>	 UpdatePlayersData()", -- [1381]
+			"<22:33:58><DEBUG>	 GetML()", -- [1382]
+			"<22:34:09><DEBUG>	 Event: LOOT_READY true", -- [1383]
+			"<22:34:09><DEBUG>	 Event: LOOT_READY true", -- [1384]
+			"<22:34:55><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1385]
+			"<22:34:55><INFO>	 UpdatePlayersData()", -- [1386]
+			"<22:34:57><DEBUG>	 GetML()", -- [1387]
+			"<22:38:26><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1388]
+			"<22:38:28><DEBUG>	 GetML()", -- [1389]
+			"<22:38:28><Data.Player>	 CreatePlayer Player-100-016B5029", -- [1390]
+			"<22:38:28><DEBUG>	 Resetting council as we have a new ML!", -- [1391]
+			"<22:38:28><INFO>	 MasterLooter =  Rhodaria-EarthenRing", -- [1392]
+			"<22:38:43><DEBUG>	 Timer MLdb_check passed", -- [1393]
+			"<22:38:43><Comm>	 ^1^Sxrealm^T^N1^SRhodaria-EarthenRing^N2^SMLdb_request^t^^ RAID Varlouris-Dalaran", -- [1394]
+			"<22:38:43><Comm>	 ^1^Sxrealm^T^N1^SRhodaria-EarthenRing^N2^Scouncil_request^t^^ RAID Varlouris-Dalaran", -- [1395]
+			"<22:40:37><DEBUG>	 Event: GROUP_LEFT 1 Party-100-1-0000388F4082", -- [1396]
+			"<22:40:37><DEBUG>	 GetML()", -- [1397]
+			"<22:43:32><INFO>	 Logged In", -- [1398]
+			"<22:43:32>[ML]<INFO>	 Init", -- [1399]
+			"<22:43:32><INFO>	 RCLootCouncil TradeUI enabled", -- [1400]
+			"<22:43:46><INFO>	 Darnastris-Dalaran 3.2.1 nil", -- [1401]
+			"<22:43:46><DEBUG>	 ActivateSkin bfa", -- [1402]
+			"<22:43:57><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1403]
+			"<22:43:57><INFO>	 UpdatePlayersData()", -- [1404]
+			"<22:43:57><INFO>	 Player relog...", -- [1405]
+			"<22:44:06><DEBUG>	 GetML()", -- [1406]
+			"<22:44:57><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1407]
+			"<22:44:57><INFO>	 UpdatePlayersData()", -- [1408]
+			"<22:45:00><DEBUG>	 GetML()", -- [1409]
+			"<22:45:13><DEBUG>	 Event: LOOT_READY true", -- [1410]
+			"<22:45:14><DEBUG>	 Event: LOOT_READY true", -- [1411]
+			"<22:46:06><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1412]
+			"<22:46:06><INFO>	 UpdatePlayersData()", -- [1413]
+			"<22:46:08><DEBUG>	 GetML()", -- [1414]
+			"<02:33:30><INFO>	 Logged In", -- [1415]
+			"<02:33:30>[ML]<INFO>	 Init", -- [1416]
+			"<02:33:30><INFO>	 RCLootCouncil TradeUI enabled", -- [1417]
+			"<02:33:51><INFO>	 Shanyt-ArgentDawn 3.2.1 nil", -- [1418]
+			"<02:33:51><DEBUG>	 ActivateSkin bfa", -- [1419]
+			"<02:34:04><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1420]
+			"<02:34:04><INFO>	 UpdatePlayersData()", -- [1421]
+			"<02:34:04><INFO>	 Player relog...", -- [1422]
+			"<02:34:07><DEBUG>	 GetPlayersGuildRank()", -- [1423]
+			"<02:34:07><DEBUG>	 Found Guild Rank: Thuerge", -- [1424]
+			"<02:34:20><DEBUG>	 GetML()", -- [1425]
+			"<02:45:20><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1426]
+			"<02:45:22><DEBUG>	 GetML()", -- [1427]
+			"<02:45:22><Data.Player>	 CreatePlayer Player-127-0928AAB7", -- [1428]
+			"<02:45:22><DEBUG>	 Resetting council as we have a new ML!", -- [1429]
+			"<02:45:22><INFO>	 MasterLooter =  Angelsfire-Frostwolf", -- [1430]
+			"<02:45:37><DEBUG>	 Timer MLdb_check passed", -- [1431]
+			"<02:45:37><Comm>	 ^1^Sxrealm^T^N1^SAngelsfire-Frostwolf^N2^SMLdb_request^t^^ RAID Shanyt-ArgentDawn", -- [1432]
+			"<02:45:37><Comm>	 ^1^Sxrealm^T^N1^SAngelsfire-Frostwolf^N2^Scouncil_request^t^^ RAID Shanyt-ArgentDawn", -- [1433]
+			"<02:46:12><Comm>	 ^1^Sxrealm^T^N1^SAngelsfire-Frostwolf^N2^SMLdb_request^t^^ RAID Waffe-BleedingHollow", -- [1434]
+			"<02:46:12><Comm>	 ^1^Sxrealm^T^N1^SAngelsfire-Frostwolf^N2^Scouncil_request^t^^ RAID Waffe-BleedingHollow", -- [1435]
+			"<02:46:35><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1436]
+			"<02:46:37><DEBUG>	 GetML()", -- [1437]
+			"<02:46:37><Data.Player>	 CreatePlayer Player-3676-0AD53F73", -- [1438]
+			"<02:46:37><DEBUG>	 Resetting council as we have a new ML!", -- [1439]
+			"<02:46:37><INFO>	 MasterLooter =  Tozal-Area52", -- [1440]
+			"<02:46:51><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1441]
+			"<02:46:52><DEBUG>	 Timer MLdb_check passed", -- [1442]
+			"<02:46:52><Comm>	 ^1^Sxrealm^T^N1^STozal-Area52^N2^SMLdb_request^t^^ RAID Waffe-BleedingHollow", -- [1443]
+			"<02:46:52><Comm>	 ^1^Sxrealm^T^N1^STozal-Area52^N2^Scouncil_request^t^^ RAID Waffe-BleedingHollow", -- [1444]
+			"<02:46:52><Comm>	 ^1^Sxrealm^T^N1^STozal-Area52^N2^SMLdb_request^t^^ RAID Shanyt-ArgentDawn", -- [1445]
+			"<02:46:52><Comm>	 ^1^Sxrealm^T^N1^STozal-Area52^N2^Scouncil_request^t^^ RAID Shanyt-ArgentDawn", -- [1446]
+			"<02:46:53><DEBUG>	 GetML()", -- [1447]
+			"<02:46:53><Data.Player>	 CreatePlayer Player-3661-0800BDD3", -- [1448]
+			"<02:46:53><DEBUG>	 Resetting council as we have a new ML!", -- [1449]
+			"<02:46:53><INFO>	 MasterLooter =  Magikluetus-Hyjal", -- [1450]
+			"<02:47:25><INFO>	 Logged In", -- [1451]
+			"<02:47:25>[ML]<INFO>	 Init", -- [1452]
+			"<02:47:25><INFO>	 RCLootCouncil TradeUI enabled", -- [1453]
+			"<02:47:39><INFO>	 Durlok-BlackDragonflight 3.2.1 nil", -- [1454]
+			"<02:47:39><DEBUG>	 ActivateSkin bfa", -- [1455]
+			"<02:47:50><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1456]
+			"<02:47:50><INFO>	 UpdatePlayersData()", -- [1457]
+			"<02:47:50><INFO>	 Player relog...", -- [1458]
+			"<02:47:59><DEBUG>	 GetML()", -- [1459]
+			"<03:08:14><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1460]
+			"<03:08:16><DEBUG>	 GetML()", -- [1461]
+			"<03:08:16><Data.Player>	 CreatePlayer Player-1185-0D68AAE3", -- [1462]
+			"<03:08:16><DEBUG>	 Resetting council as we have a new ML!", -- [1463]
+			"<03:08:16><INFO>	 MasterLooter =  Aradiâ-Boulderfist", -- [1464]
+			"<03:08:31><DEBUG>	 Timer MLdb_check passed", -- [1465]
+			"<03:08:32><Comm>	 ^1^Sxrealm^T^N1^SAradiâ-Boulderfist^N2^SMLdb_request^t^^ RAID Durlok-BlackDragonflight", -- [1466]
+			"<03:08:32><Comm>	 ^1^Sxrealm^T^N1^SAradiâ-Boulderfist^N2^Scouncil_request^t^^ RAID Durlok-BlackDragonflight", -- [1467]
+			"<03:10:03><Comm>	 ^1^Sxrealm^T^N1^SAradiâ-Boulderfist^N2^SMLdb_request^t^^ RAID Scrubbies-Zul'jin", -- [1468]
+			"<03:10:03><Comm>	 ^1^Sxrealm^T^N1^SAradiâ-Boulderfist^N2^Scouncil_request^t^^ RAID Scrubbies-Zul'jin", -- [1469]
+			"<03:10:48><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1470]
+			"<03:10:50><DEBUG>	 GetML()", -- [1471]
+			"<03:10:50><Data.Player>	 CreatePlayer Player-1185-0D6A6EB9", -- [1472]
+			"<03:10:50><DEBUG>	 Resetting council as we have a new ML!", -- [1473]
+			"<03:10:50><INFO>	 MasterLooter =  Battleguru-Boulderfist", -- [1474]
+			"<03:10:50><Comm>	 ^1^SplayerInfoRequest^T^t^^ RAID Battleguru-Boulderfist", -- [1475]
+			"<03:10:50><Comm>	 ^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|5^N3^S|2^B^t^t^^ RAID Battleguru-Boulderfist", -- [1476]
+			"<03:10:50><INFO>	 OnMLDBReceived", -- [1477]
+			"<03:10:50><Comm>	 ^1^Sxrealm^T^N1^SBattleguru-Boulderfist^N2^SpI^N3^SHEALER^N4^SFrozenfood^N5^B^N6^N85^N7^N40.125^N8^N256^t^^ RAID Battleguru-Boulderfist", -- [1478]
+			"<03:10:50><Comm>	 ^1^Sxrealm^T^N1^SBattleguru-Boulderfist^N2^SpI^N3^SDAMAGER^N4^SMyrmidon^N6^N0^N7^N87.1875^N8^N262^t^^ RAID Scrubbies-Zul'jin", -- [1479]
+			"<03:10:50><Comm>	 ^1^Sxrealm^T^N1^SBattleguru-Boulderfist^N2^SpI^N3^SHEALER^N4^SUnguilded^t^^ RAID Daddynav-BleedingHollow", -- [1480]
+			"<03:10:50><Comm>	 ^1^Sxrealm^T^N1^SBattleguru-Boulderfist^N2^SpI^N3^STANK^N4^SUnguilded^N6^N0^N7^N92.75^N8^N104^t^^ RAID Durlok-BlackDragonflight", -- [1481]
+			"<03:10:50><Comm>	 ^1^Sxrealm^T^N1^SBattleguru-Boulderfist^N2^SpI^N3^STANK^N4^SGuild~`Alts^N6^N0^N7^N178.375^N8^N66^t^^ RAID Gosamyr-Uldum", -- [1482]
+			"<03:10:52><Comm>	 ^1^Scouncil^T^N1^T^S1185-0D6A6EB9^B^t^t^^ RAID Battleguru-Boulderfist", -- [1483]
+			"<03:10:52><DEBUG>	 isCouncil false", -- [1484]
+			"<03:11:05><DEBUG>	 Timer MLdb_check passed", -- [1485]
+			"<03:11:27><Comm>	 ^1^SStartHandleLoot^T^t^^ RAID Battleguru-Boulderfist", -- [1486]
+			"<03:16:56><INFO>	 Logged In", -- [1487]
+			"<03:16:56>[ML]<INFO>	 Init", -- [1488]
+			"<03:16:56><INFO>	 RCLootCouncil TradeUI enabled", -- [1489]
+			"<03:17:09><INFO>	 Zulbathal-Zul'jin 3.2.1 nil", -- [1490]
+			"<03:17:09><DEBUG>	 ActivateSkin bfa", -- [1491]
+			"<03:17:22><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1492]
+			"<03:17:22><INFO>	 UpdatePlayersData()", -- [1493]
+			"<03:17:22><INFO>	 Player relog...", -- [1494]
+			"<03:17:32><DEBUG>	 GetML()", -- [1495]
+			"<03:20:15><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1496]
+			"<03:20:17><DEBUG>	 GetML()", -- [1497]
+			"<03:20:17><Data.Player>	 CreatePlayer Player-1427-04360738", -- [1498]
+			"<03:20:17><DEBUG>	 Resetting council as we have a new ML!", -- [1499]
+			"<03:20:17><INFO>	 MasterLooter =  Afkautoshot-Ragnaros", -- [1500]
+			"<03:20:32><DEBUG>	 Timer MLdb_check passed", -- [1501]
+			"<03:20:32><Comm>	 ^1^Sxrealm^T^N1^SAfkautoshot-Ragnaros^N2^SMLdb_request^t^^ RAID Zulbathal-Zul'jin", -- [1502]
+			"<03:20:32><Comm>	 ^1^Sxrealm^T^N1^SAfkautoshot-Ragnaros^N2^Scouncil_request^t^^ RAID Zulbathal-Zul'jin", -- [1503]
+			"<03:20:34><Comm>	 ^1^Sxrealm^T^N1^SAfkautoshot-Ragnaros^N2^SMLdb_request^t^^ RAID Ardrinaa-Tichondrius", -- [1504]
+			"<03:20:34><Comm>	 ^1^Sxrealm^T^N1^SAfkautoshot-Ragnaros^N2^Scouncil_request^t^^ RAID Ardrinaa-Tichondrius", -- [1505]
+			"<03:22:42><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1506]
+			"<03:22:44><DEBUG>	 GetML()", -- [1507]
+			"<03:22:44><Data.Player>	 CreatePlayer Player-99-0103FBC6", -- [1508]
+			"<03:22:44><DEBUG>	 Resetting council as we have a new ML!", -- [1509]
+			"<03:22:44><INFO>	 MasterLooter =  Cranos-Llane", -- [1510]
+			"<03:22:48><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1511]
+			"<03:22:50><DEBUG>	 GetML()", -- [1512]
+			"<03:22:50><Data.Player>	 CreatePlayer Player-3678-08CF38CD", -- [1513]
+			"<03:22:50><DEBUG>	 Resetting council as we have a new ML!", -- [1514]
+			"<03:22:50><INFO>	 MasterLooter =  Mistyraynes-Thrall", -- [1515]
+			"<03:22:51><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1516]
+			"<03:22:53><DEBUG>	 GetML()", -- [1517]
+			"<03:22:53><Data.Player>	 CreatePlayer Player-84-09862AC6", -- [1518]
+			"<03:22:53><DEBUG>	 Resetting council as we have a new ML!", -- [1519]
+			"<03:22:53><INFO>	 MasterLooter =  Wolfsbané-Uldum", -- [1520]
+			"<03:22:54><Comm>	 ^1^SplayerInfoRequest^T^t^^ RAID Wolfsbané-Uldum", -- [1521]
+			"<03:22:54><Comm>	 ^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|5^N3^S|2^B^t^t^^ RAID Wolfsbané-Uldum", -- [1522]
+			"<03:22:54><INFO>	 OnMLDBReceived", -- [1523]
+			"<03:22:54><Comm>	 ^1^Sxrealm^T^N1^SWolfsbané-Uldum^N2^SpI^N3^SDAMAGER^N4^SUnguilded^N6^N0^N7^N94.6875^N8^N102^t^^ RAID Zulbathal-Zul'jin", -- [1524]
+			"<03:22:56><Comm>	 ^1^Scouncil^T^N1^T^S84-09862AC6^B^t^t^^ RAID Wolfsbané-Uldum", -- [1525]
+			"<03:22:56><DEBUG>	 isCouncil false", -- [1526]
+			"<03:22:57><Comm>	 ^1^Sxrealm^T^N1^SWolfsbané-Uldum^N2^SpI^N3^SDAMAGER^N4^SRaider^N5^B^N6^N35^N7^N251.125^N8^N253^t^^ RAID Ardrinaa-Tichondrius", -- [1527]
+			"<03:22:58><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1528]
+			"<03:22:59><DEBUG>	 Timer MLdb_check passed", -- [1529]
+			"<03:23:00><DEBUG>	 GetML()", -- [1530]
+			"<03:23:00><Data.Player>	 CreatePlayer Player-9-0A93D181", -- [1531]
+			"<03:23:00><DEBUG>	 Resetting council as we have a new ML!", -- [1532]
+			"<03:23:00><INFO>	 MasterLooter =  Ukonhunter-Kil'jaeden", -- [1533]
+			"<03:23:00><Comm>	 ^1^Sxrealm^T^N1^SWolfsbané-Uldum^N2^SMLdb_request^t^^ RAID Ardrinaa-Tichondrius", -- [1534]
+			"<03:23:00><Comm>	 ^1^Sxrealm^T^N1^SWolfsbané-Uldum^N2^Scouncil_request^t^^ RAID Ardrinaa-Tichondrius", -- [1535]
+			"<03:23:05><DEBUG>	 Timer MLdb_check passed", -- [1536]
+			"<03:23:08><DEBUG>	 Timer MLdb_check passed", -- [1537]
+			"<03:23:12><Comm>	 ^1^Sxrealm^T^N1^SUkonhunter-Kil'jaeden^N2^SMLdb_request^t^^ RAID Ardrinaa-Tichondrius", -- [1538]
+			"<03:23:12><Comm>	 ^1^Sxrealm^T^N1^SUkonhunter-Kil'jaeden^N2^Scouncil_request^t^^ RAID Ardrinaa-Tichondrius", -- [1539]
+			"<03:23:15><DEBUG>	 Timer MLdb_check passed", -- [1540]
+			"<03:24:30><INFO>	 Logged In", -- [1541]
+			"<03:24:30>[ML]<INFO>	 Init", -- [1542]
+			"<03:24:30><INFO>	 RCLootCouncil TradeUI enabled", -- [1543]
+			"<03:24:44><INFO>	 Avisar-Dalaran 3.2.1 nil", -- [1544]
+			"<03:24:44><DEBUG>	 ActivateSkin bfa", -- [1545]
+			"<03:24:55><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1546]
+			"<03:24:55><INFO>	 UpdatePlayersData()", -- [1547]
+			"<03:24:55><INFO>	 Player relog...", -- [1548]
+			"<03:25:05><DEBUG>	 GetML()", -- [1549]
+			"<14:00:27><INFO>	 Logged In", -- [1550]
+			"<14:00:27>[ML]<INFO>	 Init", -- [1551]
+			"<14:00:27><INFO>	 RCLootCouncil TradeUI enabled", -- [1552]
+			"<14:00:49><INFO>	 Shanyt-ArgentDawn 3.2.1 nil", -- [1553]
+			"<14:00:49><DEBUG>	 ActivateSkin bfa", -- [1554]
+			"<14:01:02><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1555]
+			"<14:01:02><INFO>	 UpdatePlayersData()", -- [1556]
+			"<14:01:02><INFO>	 Player relog...", -- [1557]
+			"<14:01:05><DEBUG>	 GetPlayersGuildRank()", -- [1558]
+			"<14:01:05><DEBUG>	 GetPlayersGuildRank()", -- [1559]
+			"<14:01:05><DEBUG>	 Found Guild Rank: Thuerge", -- [1560]
+			"<14:01:19><DEBUG>	 GetML()", -- [1561]
+			"<14:05:24><INFO>	 Logged In", -- [1562]
+			"<14:05:24>[ML]<INFO>	 Init", -- [1563]
+			"<14:05:24><INFO>	 RCLootCouncil TradeUI enabled", -- [1564]
+			"<14:05:39><INFO>	 Durlok-BlackDragonflight 3.2.1 nil", -- [1565]
+			"<14:05:39><DEBUG>	 ActivateSkin bfa", -- [1566]
+			"<14:05:50><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1567]
+			"<14:05:50><INFO>	 UpdatePlayersData()", -- [1568]
+			"<14:05:50><INFO>	 Player relog...", -- [1569]
+			"<14:06:00><DEBUG>	 GetML()", -- [1570]
+			"<14:09:47><INFO>	 Logged In", -- [1571]
+			"<14:09:47>[ML]<INFO>	 Init", -- [1572]
+			"<14:09:47><INFO>	 RCLootCouncil TradeUI enabled", -- [1573]
+			"<14:10:02><INFO>	 Zulbathal-Zul'jin 3.2.1 nil", -- [1574]
+			"<14:10:02><DEBUG>	 ActivateSkin bfa", -- [1575]
+			"<14:10:14><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1576]
+			"<14:10:14><INFO>	 UpdatePlayersData()", -- [1577]
+			"<14:10:14><INFO>	 Player relog...", -- [1578]
+			"<14:10:25><DEBUG>	 GetML()", -- [1579]
+			"<14:16:47><INFO>	 Logged In", -- [1580]
+			"<14:16:47>[ML]<INFO>	 Init", -- [1581]
+			"<14:16:47><INFO>	 RCLootCouncil TradeUI enabled", -- [1582]
+			"<14:17:03><INFO>	 Avisar-Dalaran 3.2.1 nil", -- [1583]
+			"<14:17:03><DEBUG>	 ActivateSkin bfa", -- [1584]
+			"<14:17:15><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1585]
+			"<14:17:15><INFO>	 UpdatePlayersData()", -- [1586]
+			"<14:17:15><INFO>	 Player relog...", -- [1587]
+			"<14:17:26><DEBUG>	 GetML()", -- [1588]
+			"<20:57:34><INFO>	 Logged In", -- [1589]
+			"<20:57:34>[ML]<INFO>	 Init", -- [1590]
+			"<20:57:34><INFO>	 RCLootCouncil TradeUI enabled", -- [1591]
+			"<20:57:54><INFO>	 Avisar-Dalaran 3.2.1 nil", -- [1592]
+			"<20:57:54><DEBUG>	 ActivateSkin bfa", -- [1593]
+			"<20:58:08><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1594]
+			"<20:58:08><INFO>	 UpdatePlayersData()", -- [1595]
+			"<20:58:08><INFO>	 Player relog...", -- [1596]
+			"<20:58:19><DEBUG>	 GetML()", -- [1597]
+			"<21:00:22><DEBUG>	 Event: LOOT_READY true", -- [1598]
+			"<21:00:23><DEBUG>	 Event: LOOT_READY true", -- [1599]
+			"<21:02:35><INFO>	 Logged In", -- [1600]
+			"<21:02:35>[ML]<INFO>	 Init", -- [1601]
+			"<21:02:35><INFO>	 RCLootCouncil TradeUI enabled", -- [1602]
+			"<21:02:50><INFO>	 Illingrath-Dalaran 3.2.1 nil", -- [1603]
+			"<21:02:50><DEBUG>	 ActivateSkin bfa", -- [1604]
+			"<21:03:03><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1605]
+			"<21:03:03><INFO>	 UpdatePlayersData()", -- [1606]
+			"<21:03:03><INFO>	 Player relog...", -- [1607]
+			"<21:03:13><DEBUG>	 GetML()", -- [1608]
+			"<21:05:19><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1609]
+			"<21:05:21><DEBUG>	 GetML()", -- [1610]
+			"<21:05:21><Data.Player>	 CreatePlayer Player-163-0B1A7ED5", -- [1611]
+			"<21:05:21><DEBUG>	 Resetting council as we have a new ML!", -- [1612]
+			"<21:05:21><INFO>	 MasterLooter =  Foexonexfoe-Lightninghoof", -- [1613]
+			"<21:05:29><Comm>	 ^1^Sxrealm^T^N1^SFoexonexfoe-Lightninghoof^N2^SMLdb_request^t^^ RAID Khravin-MoonGuard", -- [1614]
+			"<21:05:29><Comm>	 ^1^Sxrealm^T^N1^SFoexonexfoe-Lightninghoof^N2^Scouncil_request^t^^ RAID Khravin-MoonGuard", -- [1615]
+			"<21:05:36><DEBUG>	 Timer MLdb_check passed", -- [1616]
+			"<21:05:36><Comm>	 ^1^Sxrealm^T^N1^SFoexonexfoe-Lightninghoof^N2^SMLdb_request^t^^ RAID Illingrath-Dalaran", -- [1617]
+			"<21:05:36><Comm>	 ^1^Sxrealm^T^N1^SFoexonexfoe-Lightninghoof^N2^Scouncil_request^t^^ RAID Illingrath-Dalaran", -- [1618]
+			"<21:07:13><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1619]
+			"<21:07:15><DEBUG>	 GetML()", -- [1620]
+			"<21:07:15><Data.Player>	 CreatePlayer Player-1129-0AEB7F97", -- [1621]
+			"<21:07:15><DEBUG>	 Resetting council as we have a new ML!", -- [1622]
+			"<21:07:15><INFO>	 MasterLooter =  Baridan-Kargath", -- [1623]
+			"<21:07:35><INFO>	 Logged In", -- [1624]
+			"<21:07:35>[ML]<INFO>	 Init", -- [1625]
+			"<21:07:35><INFO>	 RCLootCouncil TradeUI enabled", -- [1626]
+			"<21:07:50><INFO>	 Varlouris-Dalaran 3.2.1 nil", -- [1627]
+			"<21:07:50><DEBUG>	 ActivateSkin bfa", -- [1628]
+			"<21:08:03><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1629]
+			"<21:08:03><INFO>	 UpdatePlayersData()", -- [1630]
+			"<21:08:03><INFO>	 Player relog...", -- [1631]
+			"<21:08:13><DEBUG>	 GetML()", -- [1632]
+			"<21:12:57><INFO>	 Logged In", -- [1633]
+			"<21:12:57>[ML]<INFO>	 Init", -- [1634]
+			"<21:12:57><INFO>	 RCLootCouncil TradeUI enabled", -- [1635]
+			"<21:13:12><INFO>	 Darnastris-Dalaran 3.2.1 nil", -- [1636]
+			"<21:13:12><DEBUG>	 ActivateSkin bfa", -- [1637]
+			"<21:13:25><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1638]
+			"<21:13:25><INFO>	 UpdatePlayersData()", -- [1639]
+			"<21:13:25><INFO>	 Player relog...", -- [1640]
+			"<21:13:35><DEBUG>	 GetML()", -- [1641]
+			"<21:17:52><INFO>	 Logged In", -- [1642]
+			"<21:17:52>[ML]<INFO>	 Init", -- [1643]
+			"<21:17:52><INFO>	 RCLootCouncil TradeUI enabled", -- [1644]
+			"<21:18:11><INFO>	 Shanyt-ArgentDawn 3.2.1 nil", -- [1645]
+			"<21:18:11><DEBUG>	 ActivateSkin bfa", -- [1646]
+			"<21:18:24><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1647]
+			"<21:18:24><INFO>	 UpdatePlayersData()", -- [1648]
+			"<21:18:24><INFO>	 Player relog...", -- [1649]
+			"<21:18:27><DEBUG>	 GetPlayersGuildRank()", -- [1650]
+			"<21:18:27><DEBUG>	 GetPlayersGuildRank()", -- [1651]
+			"<21:18:27><DEBUG>	 Found Guild Rank: Thuerge", -- [1652]
+			"<21:18:44><DEBUG>	 GetML()", -- [1653]
+			"<09:57:41><INFO>	 Logged In", -- [1654]
+			"<09:57:41>[ML]<INFO>	 Init", -- [1655]
+			"<09:57:41><INFO>	 RCLootCouncil TradeUI enabled", -- [1656]
+			"<09:58:02><INFO>	 Shanyt-ArgentDawn 3.2.1 nil", -- [1657]
+			"<09:58:02><DEBUG>	 ActivateSkin bfa", -- [1658]
+			"<09:58:14><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1659]
+			"<09:58:14><INFO>	 UpdatePlayersData()", -- [1660]
+			"<09:58:14><INFO>	 Player relog...", -- [1661]
+			"<09:58:17><DEBUG>	 GetPlayersGuildRank()", -- [1662]
+			"<09:58:17><DEBUG>	 Found Guild Rank: Thuerge", -- [1663]
+			"<09:58:32><DEBUG>	 GetML()", -- [1664]
+			"<10:01:19><DEBUG>	 Event: PARTY_LEADER_CHANGED", -- [1665]
+			"<10:01:21><DEBUG>	 GetML()", -- [1666]
+			"<10:01:21><Data.Player>	 CreatePlayer Player-1168-09FCF163", -- [1667]
+			"<10:01:21><DEBUG>	 Resetting council as we have a new ML!", -- [1668]
+			"<10:01:21><INFO>	 MasterLooter =  Crazycam-Frostmane", -- [1669]
+			"<10:01:36><DEBUG>	 Timer MLdb_check passed", -- [1670]
+			"<10:01:36><Comm>	 ^1^Sxrealm^T^N1^SCrazycam-Frostmane^N2^SMLdb_request^t^^ RAID Shanyt-ArgentDawn", -- [1671]
+			"<10:01:36><Comm>	 ^1^Sxrealm^T^N1^SCrazycam-Frostmane^N2^Scouncil_request^t^^ RAID Shanyt-ArgentDawn", -- [1672]
+			"<10:02:21><DEBUG>	 Event: GROUP_LEFT 1 Party-1168-1-00002021C5DC", -- [1673]
+			"<10:02:21><DEBUG>	 GetML()", -- [1674]
+			"<10:04:08><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1675]
+			"<10:04:08><INFO>	 UpdatePlayersData()", -- [1676]
+			"<10:04:19><DEBUG>	 GetML()", -- [1677]
+			"<10:22:42><DEBUG>	 Event: LOOT_READY true", -- [1678]
+			"<10:22:42><DEBUG>	 Event: LOOT_READY true", -- [1679]
+			"<10:24:09><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1680]
+			"<10:24:09><INFO>	 UpdatePlayersData()", -- [1681]
+			"<10:24:20><DEBUG>	 GetML()", -- [1682]
+			"<10:26:02><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1683]
+			"<10:26:02><INFO>	 UpdatePlayersData()", -- [1684]
+			"<10:26:11><DEBUG>	 GetML()", -- [1685]
+			"<10:38:25><DEBUG>	 Event: LOOT_READY true", -- [1686]
+			"<10:38:26><DEBUG>	 Event: LOOT_READY true", -- [1687]
+			"<10:38:32><DEBUG>	 Event: LOOT_READY true", -- [1688]
+			"<10:39:58><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1689]
+			"<10:39:58><INFO>	 UpdatePlayersData()", -- [1690]
+			"<10:40:07><DEBUG>	 GetML()", -- [1691]
+			"<10:51:22><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1692]
+			"<10:51:22><INFO>	 UpdatePlayersData()", -- [1693]
+			"<10:51:33><DEBUG>	 GetML()", -- [1694]
+			"<10:53:03><DEBUG>	 Event: LOOT_READY true", -- [1695]
+			"<10:53:03><DEBUG>	 Event: LOOT_READY true", -- [1696]
+			"<11:06:49><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1697]
+			"<11:06:49><INFO>	 UpdatePlayersData()", -- [1698]
+			"<11:06:59><DEBUG>	 GetML()", -- [1699]
+			"<11:07:57><DEBUG>	 Event: LOOT_READY true", -- [1700]
+			"<11:07:57><DEBUG>	 Event: LOOT_READY true", -- [1701]
+			"<11:09:56><DEBUG>	 Event: LOOT_READY true", -- [1702]
+			"<11:09:56><DEBUG>	 Event: LOOT_READY true", -- [1703]
+			"<11:10:53><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1704]
+			"<11:10:53><INFO>	 UpdatePlayersData()", -- [1705]
+			"<11:11:03><DEBUG>	 GetML()", -- [1706]
+			"<11:15:10><DEBUG>	 Event: LOOT_READY true", -- [1707]
+			"<11:15:10><DEBUG>	 Event: LOOT_READY true", -- [1708]
+			"<11:21:21><DEBUG>	 Event: LOOT_READY true", -- [1709]
+			"<11:25:28><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1710]
+			"<11:25:28><INFO>	 UpdatePlayersData()", -- [1711]
+			"<11:25:38><DEBUG>	 GetML()", -- [1712]
+			"<11:26:51><DEBUG>	 Event: LOOT_READY true", -- [1713]
+			"<11:27:07><DEBUG>	 Event: LOOT_READY true", -- [1714]
+			"<11:27:11><DEBUG>	 Event: LOOT_READY true", -- [1715]
+			"<11:27:18><DEBUG>	 Event: LOOT_READY true", -- [1716]
+			"<11:27:24><DEBUG>	 Event: LOOT_READY true", -- [1717]
+			"<11:27:34><DEBUG>	 Event: LOOT_READY true", -- [1718]
+			"<11:27:41><DEBUG>	 Event: LOOT_READY true", -- [1719]
+			"<11:27:53><DEBUG>	 Event: LOOT_READY true", -- [1720]
+			"<11:27:55><DEBUG>	 Event: LOOT_READY true", -- [1721]
+			"<11:27:58><DEBUG>	 Event: LOOT_READY true", -- [1722]
+			"<11:28:08><DEBUG>	 Event: LOOT_READY true", -- [1723]
+			"<11:28:17><DEBUG>	 Event: LOOT_READY true", -- [1724]
+			"<11:28:24><DEBUG>	 Event: LOOT_READY true", -- [1725]
+			"<11:28:24><DEBUG>	 Event: LOOT_READY true", -- [1726]
+			"<11:28:28><DEBUG>	 Event: LOOT_READY true", -- [1727]
+			"<11:28:35><DEBUG>	 Event: LOOT_READY true", -- [1728]
+			"<11:28:40><DEBUG>	 Event: LOOT_READY true", -- [1729]
+			"<11:28:40><DEBUG>	 Event: LOOT_READY true", -- [1730]
+			"<11:28:52><DEBUG>	 Event: LOOT_READY true", -- [1731]
+			"<11:28:59><DEBUG>	 Event: LOOT_READY true", -- [1732]
+			"<11:29:03><DEBUG>	 Event: LOOT_READY true", -- [1733]
+			"<11:29:12><DEBUG>	 Event: LOOT_READY true", -- [1734]
+			"<11:31:00><DEBUG>	 Event: LOOT_READY true", -- [1735]
+			"<11:31:00><DEBUG>	 Event: LOOT_READY true", -- [1736]
+			"<11:31:05><DEBUG>	 Event: LOOT_READY true", -- [1737]
+			"<11:31:11><DEBUG>	 Event: LOOT_READY true", -- [1738]
+			"<11:31:21><DEBUG>	 Event: LOOT_READY true", -- [1739]
+			"<11:31:23><DEBUG>	 Event: LOOT_READY true", -- [1740]
+			"<11:32:03><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1741]
+			"<11:32:03><INFO>	 UpdatePlayersData()", -- [1742]
+			"<11:32:13><DEBUG>	 GetML()", -- [1743]
+			"<11:32:49><DEBUG>	 Event: LOOT_READY true", -- [1744]
+			"<11:32:50><DEBUG>	 Event: LOOT_READY true", -- [1745]
+			"<11:37:04><INFO>	 Logged In", -- [1746]
+			"<11:37:04>[ML]<INFO>	 Init", -- [1747]
+			"<11:37:04><INFO>	 RCLootCouncil TradeUI enabled", -- [1748]
+			"<11:37:18><INFO>	 Durlok-BlackDragonflight 3.2.1 nil", -- [1749]
+			"<11:37:18><DEBUG>	 ActivateSkin bfa", -- [1750]
+			"<11:37:30><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1751]
+			"<11:37:30><INFO>	 UpdatePlayersData()", -- [1752]
+			"<11:37:30><INFO>	 Player relog...", -- [1753]
+			"<11:37:39><DEBUG>	 GetML()", -- [1754]
+			"<11:44:43><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1755]
+			"<11:44:43><INFO>	 UpdatePlayersData()", -- [1756]
+			"<11:44:46><DEBUG>	 GetML()", -- [1757]
+			"<11:46:27><INFO>	 Logged In", -- [1758]
+			"<11:46:27>[ML]<INFO>	 Init", -- [1759]
+			"<11:46:27><INFO>	 RCLootCouncil TradeUI enabled", -- [1760]
+			"<11:46:41><INFO>	 Zulbathal-Zul'jin 3.2.1 nil", -- [1761]
+			"<11:46:41><DEBUG>	 ActivateSkin bfa", -- [1762]
+			"<11:46:53><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1763]
+			"<11:46:53><INFO>	 UpdatePlayersData()", -- [1764]
+			"<11:46:53><INFO>	 Player relog...", -- [1765]
+			"<11:47:04><DEBUG>	 GetML()", -- [1766]
+			"<11:51:52><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1767]
+			"<11:51:52><INFO>	 UpdatePlayersData()", -- [1768]
+			"<11:51:55><DEBUG>	 GetML()", -- [1769]
+			"<11:53:31><INFO>	 Logged In", -- [1770]
+			"<11:53:31>[ML]<INFO>	 Init", -- [1771]
+			"<11:53:31><INFO>	 RCLootCouncil TradeUI enabled", -- [1772]
+			"<11:53:45><INFO>	 Avisar-Dalaran 3.2.1 nil", -- [1773]
+			"<11:53:45><DEBUG>	 ActivateSkin bfa", -- [1774]
+			"<11:53:58><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1775]
+			"<11:53:58><INFO>	 UpdatePlayersData()", -- [1776]
+			"<11:53:58><INFO>	 Player relog...", -- [1777]
+			"<11:54:08><DEBUG>	 GetML()", -- [1778]
+			"<11:59:25><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1779]
+			"<11:59:25><INFO>	 UpdatePlayersData()", -- [1780]
+			"<11:59:28><DEBUG>	 GetML()", -- [1781]
+			"<12:01:09><INFO>	 Logged In", -- [1782]
+			"<12:01:09>[ML]<INFO>	 Init", -- [1783]
+			"<12:01:09><INFO>	 RCLootCouncil TradeUI enabled", -- [1784]
+			"<12:01:24><INFO>	 Illingrath-Dalaran 3.2.1 nil", -- [1785]
+			"<12:01:24><DEBUG>	 ActivateSkin bfa", -- [1786]
+			"<12:01:35><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1787]
+			"<12:01:35><INFO>	 UpdatePlayersData()", -- [1788]
+			"<12:01:35><INFO>	 Player relog...", -- [1789]
+			"<12:01:43><DEBUG>	 GetML()", -- [1790]
+			"<12:07:19><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1791]
+			"<12:07:19><INFO>	 UpdatePlayersData()", -- [1792]
+			"<12:07:21><DEBUG>	 GetML()", -- [1793]
+			"<12:08:01><DEBUG>	 Event: LOOT_READY true", -- [1794]
+			"<12:08:02><DEBUG>	 Event: LOOT_READY true", -- [1795]
+			"<12:10:07><INFO>	 Logged In", -- [1796]
+			"<12:10:07>[ML]<INFO>	 Init", -- [1797]
+			"<12:10:07><INFO>	 RCLootCouncil TradeUI enabled", -- [1798]
+			"<12:10:21><INFO>	 Varlouris-Dalaran 3.2.1 nil", -- [1799]
+			"<12:10:21><DEBUG>	 ActivateSkin bfa", -- [1800]
+			"<12:10:33><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1801]
+			"<12:10:33><INFO>	 UpdatePlayersData()", -- [1802]
+			"<12:10:33><INFO>	 Player relog...", -- [1803]
+			"<12:10:41><DEBUG>	 GetML()", -- [1804]
+			"<12:15:59><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1805]
+			"<12:15:59><INFO>	 UpdatePlayersData()", -- [1806]
+			"<12:16:01><DEBUG>	 GetML()", -- [1807]
+			"<12:19:05><INFO>	 Logged In", -- [1808]
+			"<12:19:05>[ML]<INFO>	 Init", -- [1809]
+			"<12:19:05><INFO>	 RCLootCouncil TradeUI enabled", -- [1810]
+			"<12:19:20><INFO>	 Darnastris-Dalaran 3.2.1 nil", -- [1811]
+			"<12:19:20><DEBUG>	 ActivateSkin bfa", -- [1812]
+			"<12:19:32><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1813]
+			"<12:19:32><INFO>	 UpdatePlayersData()", -- [1814]
+			"<12:19:32><INFO>	 Player relog...", -- [1815]
+			"<12:19:40><DEBUG>	 GetML()", -- [1816]
+			"<12:26:21><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1817]
+			"<12:26:21><INFO>	 UpdatePlayersData()", -- [1818]
+			"<12:26:24><DEBUG>	 GetML()", -- [1819]
+			"<12:27:33><INFO>	 Logged In", -- [1820]
+			"<12:27:33>[ML]<INFO>	 Init", -- [1821]
+			"<12:27:33><INFO>	 RCLootCouncil TradeUI enabled", -- [1822]
+			"<12:27:50><INFO>	 Avisar-Dalaran 3.2.1 nil", -- [1823]
+			"<12:27:50><DEBUG>	 ActivateSkin bfa", -- [1824]
+			"<12:28:01><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1825]
+			"<12:28:01><INFO>	 UpdatePlayersData()", -- [1826]
+			"<12:28:01><INFO>	 Player relog...", -- [1827]
+			"<12:28:11><DEBUG>	 GetML()", -- [1828]
+			"<12:11:44><INFO>	 Logged In", -- [1829]
+			"<12:11:44>[ML]<INFO>	 Init", -- [1830]
+			"<12:11:44><INFO>	 RCLootCouncil TradeUI enabled", -- [1831]
+			"<12:12:04><INFO>	 Avisar-Dalaran 3.2.1 nil", -- [1832]
+			"<12:12:04><DEBUG>	 ActivateSkin bfa", -- [1833]
+			"<12:12:16><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1834]
+			"<12:12:16><INFO>	 UpdatePlayersData()", -- [1835]
+			"<12:12:16><INFO>	 Player relog...", -- [1836]
+			"<12:12:26><DEBUG>	 GetML()", -- [1837]
+			"<12:16:35><INFO>	 Logged In", -- [1838]
+			"<12:16:35>[ML]<INFO>	 Init", -- [1839]
+			"<12:16:35><INFO>	 RCLootCouncil TradeUI enabled", -- [1840]
+			"<12:16:51><INFO>	 Zulbathal-Zul'jin 3.2.1 nil", -- [1841]
+			"<12:16:51><DEBUG>	 ActivateSkin bfa", -- [1842]
+			"<12:17:02><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1843]
+			"<12:17:02><INFO>	 UpdatePlayersData()", -- [1844]
+			"<12:17:02><INFO>	 Player relog...", -- [1845]
+			"<12:17:12><DEBUG>	 GetML()", -- [1846]
+			"<12:19:13><INFO>	 Logged In", -- [1847]
+			"<12:19:13>[ML]<INFO>	 Init", -- [1848]
+			"<12:19:13><INFO>	 RCLootCouncil TradeUI enabled", -- [1849]
+			"<12:19:27><INFO>	 Durlok-BlackDragonflight 3.2.1 nil", -- [1850]
+			"<12:19:27><DEBUG>	 ActivateSkin bfa", -- [1851]
+			"<12:19:37><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1852]
+			"<12:19:37><INFO>	 UpdatePlayersData()", -- [1853]
+			"<12:19:37><INFO>	 Player relog...", -- [1854]
+			"<12:19:46><DEBUG>	 GetML()", -- [1855]
+			"<12:24:35><INFO>	 Logged In", -- [1856]
+			"<12:24:35>[ML]<INFO>	 Init", -- [1857]
+			"<12:24:35><INFO>	 RCLootCouncil TradeUI enabled", -- [1858]
+			"<12:24:52><INFO>	 Shanyt-ArgentDawn 3.2.1 nil", -- [1859]
+			"<12:24:52><DEBUG>	 ActivateSkin bfa", -- [1860]
+			"<12:25:03><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1861]
+			"<12:25:03><INFO>	 UpdatePlayersData()", -- [1862]
+			"<12:25:03><INFO>	 Player relog...", -- [1863]
+			"<12:25:06><DEBUG>	 GetPlayersGuildRank()", -- [1864]
+			"<12:25:06><DEBUG>	 GetPlayersGuildRank()", -- [1865]
+			"<12:25:06><DEBUG>	 Found Guild Rank: Thuerge", -- [1866]
+			"<12:25:19><DEBUG>	 GetML()", -- [1867]
+			"<14:59:21><INFO>	 Logged In", -- [1868]
+			"<14:59:21>[ML]<INFO>	 Init", -- [1869]
+			"<14:59:21><INFO>	 RCLootCouncil TradeUI enabled", -- [1870]
+			"<14:59:44><INFO>	 Shanyt-ArgentDawn 3.2.1 nil", -- [1871]
+			"<14:59:44><DEBUG>	 ActivateSkin bfa", -- [1872]
+			"<14:59:55><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1873]
+			"<14:59:55><INFO>	 UpdatePlayersData()", -- [1874]
+			"<14:59:55><INFO>	 Player relog...", -- [1875]
+			"<14:59:59><DEBUG>	 GetPlayersGuildRank()", -- [1876]
+			"<14:59:59><DEBUG>	 Found Guild Rank: Thuerge", -- [1877]
+			"<15:00:14><DEBUG>	 GetML()", -- [1878]
+			"<15:08:14><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1879]
+			"<15:08:14><INFO>	 UpdatePlayersData()", -- [1880]
+			"<15:08:26><DEBUG>	 GetML()", -- [1881]
+			"<15:12:32><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1882]
+			"<15:12:32><INFO>	 UpdatePlayersData()", -- [1883]
+			"<15:12:43><DEBUG>	 GetML()", -- [1884]
+			"<15:12:56><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1885]
+			"<15:12:56><INFO>	 UpdatePlayersData()", -- [1886]
+			"<15:13:05><DEBUG>	 GetML()", -- [1887]
+			"<15:13:38><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1888]
+			"<15:13:38><INFO>	 UpdatePlayersData()", -- [1889]
+			"<15:13:47><DEBUG>	 GetML()", -- [1890]
+			"<15:14:22><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1891]
+			"<15:14:22><INFO>	 UpdatePlayersData()", -- [1892]
+			"<15:14:31><DEBUG>	 GetML()", -- [1893]
+			"<15:15:55><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1894]
+			"<15:15:55><INFO>	 UpdatePlayersData()", -- [1895]
+			"<15:16:04><DEBUG>	 GetML()", -- [1896]
+			"<15:17:43><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1897]
+			"<15:17:43><INFO>	 UpdatePlayersData()", -- [1898]
+			"<15:17:52><DEBUG>	 GetML()", -- [1899]
+			"<15:19:15><DEBUG>	 Event: LOOT_READY true", -- [1900]
+			"<15:19:15><DEBUG>	 Event: LOOT_READY true", -- [1901]
+			"<15:19:15><DEBUG>	 Event: LOOT_READY true", -- [1902]
+			"<15:19:20><DEBUG>	 Event: LOOT_READY true", -- [1903]
+			"<15:19:23><DEBUG>	 Event: LOOT_READY true", -- [1904]
+			"<15:19:24><DEBUG>	 Event: ENCOUNTER_LOOT_RECEIVED 0 169850 |cff0070dd|Hitem:169850::::::::60:71::::1:28:713:::::|h[Azeroth Mini Pack: Mechagon]|h|r 1 Shanyt WARRIOR", -- [1905]
+			"<15:19:26><DEBUG>	 Event: LOOT_READY true", -- [1906]
+			"<15:20:19><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1907]
+			"<15:20:19><INFO>	 UpdatePlayersData()", -- [1908]
+			"<15:20:29><DEBUG>	 GetML()", -- [1909]
+			"<15:23:49><DEBUG>	 Event: LOOT_READY true", -- [1910]
+			"<15:23:49><DEBUG>	 Event: LOOT_READY true", -- [1911]
+			"<15:35:47><DEBUG>	 Event: LOOT_READY true", -- [1912]
+			"<13:31:48><INFO>	 Logged In", -- [1913]
+			"<13:31:48>[ML]<INFO>	 Init", -- [1914]
+			"<13:31:48><INFO>	 RCLootCouncil TradeUI enabled", -- [1915]
+			"<13:32:09><INFO>	 Shanyt-ArgentDawn 3.2.1 nil", -- [1916]
+			"<13:32:09><DEBUG>	 ActivateSkin bfa", -- [1917]
+			"<13:32:20><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1918]
+			"<13:32:20><INFO>	 UpdatePlayersData()", -- [1919]
+			"<13:32:20><INFO>	 Player relog...", -- [1920]
+			"<13:32:25><DEBUG>	 GetPlayersGuildRank()", -- [1921]
+			"<13:32:25><DEBUG>	 GetPlayersGuildRank()", -- [1922]
+			"<13:32:25><DEBUG>	 Found Guild Rank: Thuerge", -- [1923]
+			"<13:32:38><DEBUG>	 GetML()", -- [1924]
+			"<13:35:18><DEBUG>	 Event: LOOT_READY true", -- [1925]
+			"<13:36:21><DEBUG>	 Event: PLAYER_ENTERING_WORLD false false", -- [1926]
+			"<13:36:21><INFO>	 UpdatePlayersData()", -- [1927]
+			"<13:36:32><DEBUG>	 GetML()", -- [1928]
+			"<13:55:14><INFO>	 Logged In", -- [1929]
+			"<13:55:14>[ML]<INFO>	 Init", -- [1930]
+			"<13:55:14><INFO>	 RCLootCouncil TradeUI enabled", -- [1931]
+			"<13:55:27><INFO>	 Durlok-BlackDragonflight 3.2.1 nil", -- [1932]
+			"<13:55:27><DEBUG>	 ActivateSkin bfa", -- [1933]
+			"<13:55:37><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1934]
+			"<13:55:37><INFO>	 UpdatePlayersData()", -- [1935]
+			"<13:55:37><INFO>	 Player relog...", -- [1936]
+			"<13:55:47><DEBUG>	 GetML()", -- [1937]
+			"<13:57:40><INFO>	 Logged In", -- [1938]
+			"<13:57:40>[ML]<INFO>	 Init", -- [1939]
+			"<13:57:40><INFO>	 RCLootCouncil TradeUI enabled", -- [1940]
+			"<13:57:53><INFO>	 Zulbathal-Zul'jin 3.2.1 nil", -- [1941]
+			"<13:57:53><DEBUG>	 ActivateSkin bfa", -- [1942]
+			"<13:58:03><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1943]
+			"<13:58:03><INFO>	 UpdatePlayersData()", -- [1944]
+			"<13:58:03><INFO>	 Player relog...", -- [1945]
+			"<13:58:14><DEBUG>	 GetML()", -- [1946]
+			"<13:59:56><INFO>	 Logged In", -- [1947]
+			"<13:59:56>[ML]<INFO>	 Init", -- [1948]
+			"<13:59:56><INFO>	 RCLootCouncil TradeUI enabled", -- [1949]
+			"<14:00:13><INFO>	 Avisar-Dalaran 3.2.1 nil", -- [1950]
+			"<14:00:13><DEBUG>	 ActivateSkin bfa", -- [1951]
+			"<14:00:24><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1952]
+			"<14:00:24><INFO>	 UpdatePlayersData()", -- [1953]
+			"<14:00:24><INFO>	 Player relog...", -- [1954]
+			"<14:00:35><DEBUG>	 GetML()", -- [1955]
+			"<14:02:23><INFO>	 Logged In", -- [1956]
+			"<14:02:23>[ML]<INFO>	 Init", -- [1957]
+			"<14:02:23><INFO>	 RCLootCouncil TradeUI enabled", -- [1958]
+			"<14:02:41><INFO>	 Shanyt-ArgentDawn 3.2.1 nil", -- [1959]
+			"<14:02:41><DEBUG>	 ActivateSkin bfa", -- [1960]
+			"<14:02:52><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1961]
+			"<14:02:52><INFO>	 UpdatePlayersData()", -- [1962]
+			"<14:02:52><INFO>	 Player relog...", -- [1963]
+			"<14:02:55><DEBUG>	 GetPlayersGuildRank()", -- [1964]
+			"<14:02:55><DEBUG>	 GetPlayersGuildRank()", -- [1965]
+			"<14:02:55><DEBUG>	 Found Guild Rank: Thuerge", -- [1966]
+			"<14:03:09><DEBUG>	 GetML()", -- [1967]
+			"<01:59:28><INFO>	 Logged In", -- [1968]
+			"<01:59:28>[ML]<INFO>	 Init", -- [1969]
+			"<01:59:28><INFO>	 RCLootCouncil TradeUI enabled", -- [1970]
+			"<01:59:51><INFO>	 Shanyt-ArgentDawn 3.2.1 nil", -- [1971]
+			"<01:59:51><DEBUG>	 ActivateSkin bfa", -- [1972]
+			"<02:00:03><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1973]
+			"<02:00:03><INFO>	 UpdatePlayersData()", -- [1974]
+			"<02:00:03><INFO>	 Player relog...", -- [1975]
+			"<02:00:07><DEBUG>	 GetPlayersGuildRank()", -- [1976]
+			"<02:00:07><DEBUG>	 GetPlayersGuildRank()", -- [1977]
+			"<02:00:07><DEBUG>	 Found Guild Rank: Thuerge", -- [1978]
+			"<02:00:21><DEBUG>	 GetML()", -- [1979]
+			"<02:01:06><DEBUG>	 Event: LOOT_READY true", -- [1980]
+			"<02:01:07><DEBUG>	 Event: LOOT_READY true", -- [1981]
+			"<02:01:08><DEBUG>	 Event: LOOT_READY true", -- [1982]
+			"<02:01:08><DEBUG>	 Event: LOOT_READY true", -- [1983]
+			"<02:01:20><DEBUG>	 Event: LOOT_READY true", -- [1984]
+			"<02:01:20><DEBUG>	 Event: LOOT_READY true", -- [1985]
+			"<02:01:22><DEBUG>	 Event: LOOT_READY true", -- [1986]
+			"<02:01:22><DEBUG>	 Event: LOOT_READY true", -- [1987]
+			"<02:01:32><DEBUG>	 Event: LOOT_READY true", -- [1988]
+			"<15:19:04><INFO>	 Logged In", -- [1989]
+			"<15:19:04>[ML]<INFO>	 Init", -- [1990]
+			"<15:19:04><INFO>	 RCLootCouncil TradeUI enabled", -- [1991]
+			"<15:19:26><INFO>	 Shanyt-ArgentDawn 3.2.1 nil", -- [1992]
+			"<15:19:26><DEBUG>	 ActivateSkin bfa", -- [1993]
+			"<15:19:37><DEBUG>	 Event: PLAYER_ENTERING_WORLD true false", -- [1994]
+			"<15:19:37><INFO>	 UpdatePlayersData()", -- [1995]
+			"<15:19:37><INFO>	 Player relog...", -- [1996]
+			"<15:19:40><DEBUG>	 GetPlayersGuildRank()", -- [1997]
+			"<15:19:40><DEBUG>	 GetPlayersGuildRank()", -- [1998]
+			"<15:19:40><DEBUG>	 Found Guild Rank: Thuerge", -- [1999]
+			"<15:19:54><DEBUG>	 GetML()", -- [2000]
 		},
-		["oldVersion"] = "3.1.5",
-		["regionID"] = 1,
 		["locale"] = "enUS",
-		["version"] = "3.2.0",
+		["version"] = "3.2.1",
+		["oldVersion"] = "3.2.0",
+		["regionID"] = 1,
 		["cache"] = {
 			["player"] = {
-				["Player-1426-0AE01960"] = {
-					["name"] = "Lyssanoria-AeriePeak",
-					["guid"] = "Player-1426-0AE01960",
-					["class"] = "DRUID",
-					["cache_time"] = 1605285527,
-					["realm"] = "AeriePeak",
+				["Player-54-0AD15E94"] = {
+					["name"] = "Lillys-Blackhand",
+					["guid"] = "Player-54-0AD15E94",
+					["class"] = "HUNTER",
+					["cache_time"] = 1607899562,
+					["realm"] = "Blackhand",
 				},
 				["Player-3683-0B9BB303"] = {
 					["name"] = "Darnastris-Dalaran",
 					["guid"] = "Player-3683-0B9BB303",
 					["class"] = "MAGE",
-					["cache_time"] = 1635125057,
+					["cache_time"] = 1638119960,
 					["realm"] = "Dalaran",
-				},
-				["Player-3208-0A4348AF"] = {
-					["name"] = "Koltha-TolBarad",
-					["guid"] = "Player-3208-0A4348AF",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1605660618,
-					["realm"] = "TolBarad",
-				},
-				["Player-3678-0A92F70A"] = {
-					["name"] = "Demonina-Thrall",
-					["guid"] = "Player-3678-0A92F70A",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1605226311,
-					["realm"] = "Thrall",
 				},
 				["Player-3676-06EE14C6"] = {
 					["name"] = "Elvìra-Area52",
@@ -2085,12 +2030,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605416424,
 					["realm"] = "Area52",
 				},
-				["Player-96-0CC10407"] = {
-					["name"] = "Baldrick-BlackDragonflight",
-					["guid"] = "Player-96-0CC10407",
+				["Player-127-058626AF"] = {
+					["name"] = "Superdad-Spirestone",
+					["guid"] = "Player-127-058626AF",
+					["class"] = "DRUID",
+					["cache_time"] = 1605677195,
+					["realm"] = "Spirestone",
+				},
+				["Player-12-0AFFFB46"] = {
+					["name"] = "Argarah-ThoriumBrotherhood",
+					["guid"] = "Player-12-0AFFFB46",
 					["class"] = "MONK",
-					["cache_time"] = 1604806209,
-					["realm"] = "BlackDragonflight",
+					["cache_time"] = 1637282820,
+					["realm"] = "ThoriumBrotherhood",
 				},
 				["Player-1171-089CB575"] = {
 					["name"] = "Dannymon-WyrmrestAccord",
@@ -2106,6 +2058,370 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605479417,
 					["realm"] = "Shu'halo",
 				},
+				["Player-69-0C9CB6CD"] = {
+					["name"] = "Endlessvoids-Arthas",
+					["guid"] = "Player-69-0C9CB6CD",
+					["class"] = "PRIEST",
+					["cache_time"] = 1604960281,
+					["realm"] = "Arthas",
+				},
+				["Player-1171-09FC0C5B"] = {
+					["name"] = "Valnixia-WyrmrestAccord",
+					["guid"] = "Player-1171-09FC0C5B",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1605290691,
+					["realm"] = "WyrmrestAccord",
+				},
+				["Player-3209-0512FA27"] = {
+					["name"] = "Naya-Azralon",
+					["guid"] = "Player-3209-0512FA27",
+					["class"] = "HUNTER",
+					["cache_time"] = 1604876421,
+					["realm"] = "Azralon",
+				},
+				["Player-53-095EF8FE"] = {
+					["name"] = "Athonrod-Hellscream",
+					["guid"] = "Player-53-095EF8FE",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1605417014,
+					["realm"] = "Hellscream",
+				},
+				["Player-3678-092D2741"] = {
+					["name"] = "Maesuna-Thrall",
+					["guid"] = "Player-3678-092D2741",
+					["class"] = "ROGUE",
+					["cache_time"] = 1605671389,
+					["realm"] = "Thrall",
+				},
+				["Player-1136-088EF2A0"] = {
+					["name"] = "Khàrn-Garrosh",
+					["guid"] = "Player-1136-088EF2A0",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1605661293,
+					["realm"] = "Garrosh",
+				},
+				["Player-3684-0CD3CFA0"] = {
+					["name"] = "Imawalrus-Mal'Ganis",
+					["guid"] = "Player-3684-0CD3CFA0",
+					["class"] = "PRIEST",
+					["cache_time"] = 1605943563,
+					["realm"] = "Mal'Ganis",
+				},
+				["Player-3683-0BE4455C"] = {
+					["name"] = "Avisar-Dalaran",
+					["guid"] = "Player-3683-0BE4455C",
+					["class"] = "PALADIN",
+					["cache_time"] = 1640113213,
+					["realm"] = "Dalaran",
+				},
+				["Player-1425-0ADD9236"] = {
+					["name"] = "Däriuz-Drakkari",
+					["guid"] = "Player-1425-0ADD9236",
+					["class"] = "DRUID",
+					["cache_time"] = 1605661603,
+					["realm"] = "Drakkari",
+				},
+				["Player-57-0BCCF397"] = {
+					["name"] = "Daijouboo-Illidan",
+					["guid"] = "Player-57-0BCCF397",
+					["class"] = "PRIEST",
+					["cache_time"] = 1605478964,
+					["realm"] = "Illidan",
+				},
+				["Player-9-0DC9D8D6"] = {
+					["name"] = "Lmbz-Kil'jaeden",
+					["guid"] = "Player-9-0DC9D8D6",
+					["class"] = "DRUID",
+					["cache_time"] = 1605132006,
+					["realm"] = "Kil'jaeden",
+				},
+				["Player-84-09862AC6"] = {
+					["name"] = "Wolfsbané-Uldum",
+					["guid"] = "Player-84-09862AC6",
+					["class"] = "HUNTER",
+					["cache_time"] = 1637396575,
+					["realm"] = "Uldum",
+				},
+				["Player-1185-0D6A6EB9"] = {
+					["name"] = "Battleguru-Boulderfist",
+					["guid"] = "Player-1185-0D6A6EB9",
+					["class"] = "PRIEST",
+					["cache_time"] = 1637395851,
+					["realm"] = "Boulderfist",
+				},
+				["Player-3209-0514A45A"] = {
+					["name"] = "Caveirinha-Azralon",
+					["guid"] = "Player-3209-0514A45A",
+					["class"] = "ROGUE",
+					["cache_time"] = 1605417007,
+					["realm"] = "Azralon",
+				},
+				["Player-104-0C7696FF"] = {
+					["name"] = "Lasesca-BurningBlade",
+					["guid"] = "Player-104-0C7696FF",
+					["class"] = "ROGUE",
+					["cache_time"] = 1605923271,
+					["realm"] = "BurningBlade",
+				},
+				["Player-73-0B3018DB"] = {
+					["name"] = "Boomstick-BleedingHollow",
+					["guid"] = "Player-73-0B3018DB",
+					["class"] = "DRUID",
+					["cache_time"] = 1604700907,
+					["realm"] = "BleedingHollow",
+				},
+				["Player-115-063F631B"] = {
+					["name"] = "Bleubird-Draenor",
+					["guid"] = "Player-115-063F631B",
+					["class"] = "HUNTER",
+					["cache_time"] = 1606246385,
+					["realm"] = "Draenor",
+				},
+				["Player-3685-0AC4360F"] = {
+					["name"] = "Demonized-Turalyon",
+					["guid"] = "Player-3685-0AC4360F",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1606101514,
+					["realm"] = "Turalyon",
+				},
+				["Player-1151-076B8BDD"] = {
+					["name"] = "Renard-Misha",
+					["guid"] = "Player-1151-076B8BDD",
+					["class"] = "HUNTER",
+					["cache_time"] = 1606246540,
+					["realm"] = "Misha",
+				},
+				["Player-61-0BF0FFA2"] = {
+					["name"] = "Laylasha-Zul'jin",
+					["guid"] = "Player-61-0BF0FFA2",
+					["class"] = "DRUID",
+					["cache_time"] = 1606092035,
+					["realm"] = "Zul'jin",
+				},
+				["Player-99-0103FBC6"] = {
+					["name"] = "Cranos-Llane",
+					["guid"] = "Player-99-0103FBC6",
+					["class"] = "HUNTER",
+					["cache_time"] = 1637396563,
+					["realm"] = "Llane",
+				},
+				["Player-60-0636B766"] = {
+					["name"] = "Ladiana-Stormrage",
+					["guid"] = "Player-60-0636B766",
+					["class"] = "PALADIN",
+					["cache_time"] = 1637292015,
+					["realm"] = "Stormrage",
+				},
+				["Player-3678-0CCFA14A"] = {
+					["name"] = "Swiftfurie-Thrall",
+					["guid"] = "Player-3678-0CCFA14A",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1605085705,
+					["realm"] = "Thrall",
+				},
+				["Player-1072-06EC8117"] = {
+					["name"] = "Mummrah-Uldaman",
+					["guid"] = "Player-1072-06EC8117",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1604699318,
+					["realm"] = "Uldaman",
+				},
+				["Player-9-0A93D181"] = {
+					["name"] = "Ukonhunter-Kil'jaeden",
+					["guid"] = "Player-9-0A93D181",
+					["class"] = "HUNTER",
+					["cache_time"] = 1637396579,
+					["realm"] = "Kil'jaeden",
+				},
+				["Player-76-0A3EF3DD"] = {
+					["name"] = "Bvz-Sargeras",
+					["guid"] = "Player-76-0A3EF3DD",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1605291607,
+					["realm"] = "Sargeras",
+				},
+				["Player-61-0CA1123B"] = {
+					["name"] = "Deathcandi-Zul'jin",
+					["guid"] = "Player-61-0CA1123B",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1605085260,
+					["realm"] = "Zul'jin",
+				},
+				["Player-99-01A77CBD"] = {
+					["name"] = "Gromric-Llane",
+					["guid"] = "Player-99-01A77CBD",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1605290261,
+					["realm"] = "Llane",
+				},
+				["Player-75-071FB336"] = {
+					["name"] = "Brotus-ArgentDawn",
+					["guid"] = "Player-75-071FB336",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1617024761,
+					["realm"] = "",
+				},
+				["Player-61-0E7E965D"] = {
+					["name"] = "Mandles-Zul'jin",
+					["guid"] = "Player-61-0E7E965D",
+					["class"] = "PRIEST",
+					["cache_time"] = 1623082272,
+					["realm"] = "",
+				},
+				["Player-75-09DDA318"] = {
+					["name"] = "Vadder-ArgentDawn",
+					["guid"] = "Player-75-09DDA318",
+					["class"] = "ROGUE",
+					["cache_time"] = 1617024134,
+					["realm"] = "",
+				},
+				["Player-3676-0A276400"] = {
+					["name"] = "Blightbile-Area52",
+					["guid"] = "Player-3676-0A276400",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1605225933,
+					["realm"] = "Area52",
+				},
+				["Player-61-0DE12200"] = {
+					["name"] = "Okona-Zul'jin",
+					["guid"] = "Player-61-0DE12200",
+					["class"] = "PRIEST",
+					["cache_time"] = 1604804513,
+					["realm"] = "Zul'jin",
+				},
+				["Player-61-0E7E5EC1"] = {
+					["name"] = "Armaguth-Zul'jin",
+					["guid"] = "Player-61-0E7E5EC1",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1623069345,
+					["realm"] = "",
+				},
+				["Player-160-09D228B3"] = {
+					["name"] = "Bloodlust-Azuremyst",
+					["guid"] = "Player-160-09D228B3",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1605479432,
+					["realm"] = "Azuremyst",
+				},
+				["Player-61-0CACDE3A"] = {
+					["name"] = "Kotalkhan-Zul'jin",
+					["guid"] = "Player-61-0CACDE3A",
+					["class"] = "MONK",
+					["cache_time"] = 1623178148,
+					["realm"] = "",
+				},
+				["Player-118-004FDEAC"] = {
+					["name"] = "Adolean-Feathermoon",
+					["guid"] = "Player-118-004FDEAC",
+					["class"] = "HUNTER",
+					["cache_time"] = 1637292478,
+					["realm"] = "Feathermoon",
+				},
+				["Player-73-0C4DE645"] = {
+					["name"] = "Joriso-BleedingHollow",
+					["guid"] = "Player-73-0C4DE645",
+					["class"] = "MONK",
+					["cache_time"] = 1605416300,
+					["realm"] = "BleedingHollow",
+				},
+				["Player-125-0A1FED54"] = {
+					["name"] = "Gasara-BlackwaterRaiders",
+					["guid"] = "Player-125-0A1FED54",
+					["class"] = "ROGUE",
+					["cache_time"] = 1637200822,
+					["realm"] = "BlackwaterRaiders",
+				},
+				["Player-3678-08CF38CD"] = {
+					["name"] = "Mistyraynes-Thrall",
+					["guid"] = "Player-3678-08CF38CD",
+					["class"] = "MAGE",
+					["cache_time"] = 1637396569,
+					["realm"] = "Thrall",
+				},
+				["Player-61-0E7E95C9"] = {
+					["name"] = "Banesmuncy-Zul'jin",
+					["guid"] = "Player-61-0E7E95C9",
+					["class"] = "ROGUE",
+					["cache_time"] = 1623079042,
+					["realm"] = "",
+				},
+				["Player-3661-0800BDD3"] = {
+					["name"] = "Magikluetus-Hyjal",
+					["guid"] = "Player-3661-0800BDD3",
+					["class"] = "MAGE",
+					["cache_time"] = 1637394412,
+					["realm"] = "Hyjal",
+				},
+				["Player-5-0C33F05D"] = {
+					["name"] = "Knuggs-Proudmoore",
+					["guid"] = "Player-5-0C33F05D",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1605290594,
+					["realm"] = "Proudmoore",
+				},
+				["Player-1185-0D68AAE3"] = {
+					["name"] = "Aradiâ-Boulderfist",
+					["guid"] = "Player-1185-0D68AAE3",
+					["class"] = "MAGE",
+					["cache_time"] = 1637395695,
+					["realm"] = "Boulderfist",
+				},
+				["Player-58-06369E49"] = {
+					["name"] = "Smackhole-Stormreaver",
+					["guid"] = "Player-58-06369E49",
+					["class"] = "MONK",
+					["cache_time"] = 1605085324,
+					["realm"] = "Stormreaver",
+				},
+				["Player-3209-098E57A8"] = {
+					["name"] = "Selareyn-Azralon",
+					["guid"] = "Player-3209-098E57A8",
+					["class"] = "MONK",
+					["cache_time"] = 1605085431,
+					["realm"] = "Azralon",
+				},
+				["Player-61-0E7E94CD"] = {
+					["name"] = "Dachas-Zul'jin",
+					["guid"] = "Player-61-0E7E94CD",
+					["class"] = "HUNTER",
+					["cache_time"] = 1623071709,
+					["realm"] = "",
+				},
+				["Player-127-0928AAB7"] = {
+					["name"] = "Angelsfire-Frostwolf",
+					["guid"] = "Player-127-0928AAB7",
+					["class"] = "MAGE",
+					["cache_time"] = 1637394321,
+					["realm"] = "Frostwolf",
+				},
+				["Player-3208-0A4348AF"] = {
+					["name"] = "Koltha-TolBarad",
+					["guid"] = "Player-3208-0A4348AF",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1605660618,
+					["realm"] = "TolBarad",
+				},
+				["Player-3678-0A92F70A"] = {
+					["name"] = "Demonina-Thrall",
+					["guid"] = "Player-3678-0A92F70A",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1605226311,
+					["realm"] = "Thrall",
+				},
+				["Player-61-0CA8EB69"] = {
+					["name"] = "Zulbathal-Zul'jin",
+					["guid"] = "Player-61-0CA8EB69",
+					["class"] = "DRUID",
+					["cache_time"] = 1640113073,
+					["realm"] = "Zul'jin",
+				},
+				["Player-96-0CC10407"] = {
+					["name"] = "Baldrick-BlackDragonflight",
+					["guid"] = "Player-96-0CC10407",
+					["class"] = "MONK",
+					["cache_time"] = 1604806209,
+					["realm"] = "BlackDragonflight",
+				},
 				["Player-57-0CCA8BA0"] = {
 					["name"] = "Felpenny-Illidan",
 					["guid"] = "Player-57-0CCA8BA0",
@@ -2113,12 +2429,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1604700902,
 					["realm"] = "Illidan",
 				},
-				["Player-69-0C9CB6CD"] = {
-					["name"] = "Endlessvoids-Arthas",
-					["guid"] = "Player-69-0C9CB6CD",
-					["class"] = "PRIEST",
-					["cache_time"] = 1604960281,
-					["realm"] = "Arthas",
+				["Player-96-0AEAF37A"] = {
+					["name"] = "Grassy-Velen",
+					["guid"] = "Player-96-0AEAF37A",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1605423637,
+					["realm"] = "Velen",
 				},
 				["Player-1072-06C74238"] = {
 					["name"] = "Brucenolan-Ravencrest",
@@ -2148,20 +2464,6 @@ RCLootCouncilDB = {
 					["cache_time"] = 1604700988,
 					["realm"] = "Gnomeregan",
 				},
-				["Player-3209-0512FA27"] = {
-					["name"] = "Naya-Azralon",
-					["guid"] = "Player-3209-0512FA27",
-					["class"] = "HUNTER",
-					["cache_time"] = 1604876421,
-					["realm"] = "Azralon",
-				},
-				["Player-163-07EE0763"] = {
-					["name"] = "Drinkycrow-Lightninghoof",
-					["guid"] = "Player-163-07EE0763",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1605015590,
-					["realm"] = "Lightninghoof",
-				},
 				["Player-69-0D1E083E"] = {
 					["name"] = "Quesadiazy-Arthas",
 					["guid"] = "Player-69-0D1E083E",
@@ -2169,12 +2471,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1604961068,
 					["realm"] = "Arthas",
 				},
-				["Player-1136-088EF2A0"] = {
-					["name"] = "Khàrn-Garrosh",
-					["guid"] = "Player-1136-088EF2A0",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1605661293,
-					["realm"] = "Garrosh",
+				["Player-3676-0AD53F73"] = {
+					["name"] = "Tozal-Area52",
+					["guid"] = "Player-3676-0AD53F73",
+					["class"] = "PALADIN",
+					["cache_time"] = 1637394396,
+					["realm"] = "Area52",
 				},
 				["Player-3684-0A5F8841"] = {
 					["name"] = "Darkmiget-Mal'Ganis",
@@ -2183,33 +2485,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1604700929,
 					["realm"] = "Mal'Ganis",
 				},
-				["Player-3683-0BE4455C"] = {
-					["name"] = "Avisar-Dalaran",
-					["guid"] = "Player-3683-0BE4455C",
-					["class"] = "PALADIN",
-					["cache_time"] = 1635122632,
-					["realm"] = "Dalaran",
+				["Player-1184-0AE05813"] = {
+					["name"] = "Yomikohime-Vek'nilash",
+					["guid"] = "Player-1184-0AE05813",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1604700787,
+					["realm"] = "Vek'nilash",
 				},
-				["Player-1425-0ADD9236"] = {
-					["name"] = "Däriuz-Drakkari",
-					["guid"] = "Player-1425-0ADD9236",
-					["class"] = "DRUID",
-					["cache_time"] = 1605661603,
-					["realm"] = "Drakkari",
-				},
-				["Player-3208-0A438E6C"] = {
-					["name"] = "Starlightt-TolBarad",
-					["guid"] = "Player-3208-0A438E6C",
-					["class"] = "DRUID",
-					["cache_time"] = 1604877041,
-					["realm"] = "TolBarad",
-				},
-				["Player-9-0DC9D8D6"] = {
-					["name"] = "Lmbz-Kil'jaeden",
-					["guid"] = "Player-9-0DC9D8D6",
-					["class"] = "DRUID",
-					["cache_time"] = 1605132006,
-					["realm"] = "Kil'jaeden",
+				["Player-4-09D6EABB"] = {
+					["name"] = "Salsrath-Kilrogg",
+					["guid"] = "Player-4-09D6EABB",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1612658087,
+					["realm"] = "Kilrogg",
 				},
 				["Player-52-0CB380DE"] = {
 					["name"] = "Börte-Medivh",
@@ -2218,89 +2506,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605676860,
 					["realm"] = "Medivh",
 				},
-				["Player-61-0E7E94CD"] = {
-					["name"] = "Dachas-Zul'jin",
-					["guid"] = "Player-61-0E7E94CD",
-					["class"] = "HUNTER",
-					["cache_time"] = 1623071709,
-					["realm"] = "",
-				},
-				["Player-3209-0514A45A"] = {
-					["name"] = "Caveirinha-Azralon",
-					["guid"] = "Player-3209-0514A45A",
-					["class"] = "ROGUE",
-					["cache_time"] = 1605417007,
-					["realm"] = "Azralon",
-				},
-				["Player-75-0A33732A"] = {
-					["name"] = "Tyran-ArgentDawn",
-					["guid"] = "Player-75-0A33732A",
-					["class"] = "MAGE",
-					["cache_time"] = 1623596411,
-					["realm"] = "",
-				},
 				["Player-3683-0C12FF2D"] = {
 					["name"] = "Noäh-Dalaran",
 					["guid"] = "Player-3683-0C12FF2D",
 					["class"] = "HUNTER",
 					["cache_time"] = 1604875537,
 					["realm"] = "Dalaran",
-				},
-				["Player-54-0AD15E94"] = {
-					["name"] = "Lillys-Blackhand",
-					["guid"] = "Player-54-0AD15E94",
-					["class"] = "HUNTER",
-					["cache_time"] = 1607899562,
-					["realm"] = "Blackhand",
-				},
-				["Player-1184-0AE05813"] = {
-					["name"] = "Yomikohime-Vek'nilash",
-					["guid"] = "Player-1184-0AE05813",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1604700787,
-					["realm"] = "Vek'nilash",
-				},
-				["Player-73-0B3018DB"] = {
-					["name"] = "Boomstick-BleedingHollow",
-					["guid"] = "Player-73-0B3018DB",
-					["class"] = "DRUID",
-					["cache_time"] = 1604700907,
-					["realm"] = "BleedingHollow",
-				},
-				["Player-115-063F631B"] = {
-					["name"] = "Bleubird-Draenor",
-					["guid"] = "Player-115-063F631B",
-					["class"] = "HUNTER",
-					["cache_time"] = 1606246385,
-					["realm"] = "Draenor",
-				},
-				["Player-3685-0AC4360F"] = {
-					["name"] = "Demonized-Turalyon",
-					["guid"] = "Player-3685-0AC4360F",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1606101514,
-					["realm"] = "Turalyon",
-				},
-				["Player-75-0A3EC0ED"] = {
-					["name"] = "Shaekhan-ArgentDawn",
-					["guid"] = "Player-75-0A3EC0ED",
-					["class"] = "MONK",
-					["cache_time"] = 1606106807,
-					["realm"] = "ArgentDawn",
-				},
-				["Player-1151-076B8BDD"] = {
-					["name"] = "Renard-Misha",
-					["guid"] = "Player-1151-076B8BDD",
-					["class"] = "HUNTER",
-					["cache_time"] = 1606246540,
-					["realm"] = "Misha",
-				},
-				["Player-61-0BF0FFA2"] = {
-					["name"] = "Laylasha-Zul'jin",
-					["guid"] = "Player-61-0BF0FFA2",
-					["class"] = "DRUID",
-					["cache_time"] = 1606092035,
-					["realm"] = "Zul'jin",
 				},
 				["Player-61-0E7E1DFE"] = {
 					["name"] = "Laymonan-Zul'jin",
@@ -2321,138 +2532,26 @@ RCLootCouncilDB = {
 					["guid"] = "Player-75-058380E2",
 					["class"] = "WARRIOR",
 					["role"] = "DAMAGER",
-					["cache_time"] = 1635836036,
-					["realm"] = "Argent Dawn",
+					["cache_time"] = 1640895565,
+					["rank"] = "Thuerge",
 					["name"] = "Shanyt-ArgentDawn",
 					["specID"] = 71,
 					["enchantingLvl"] = 0,
-					["rank"] = "Thuerge",
+					["realm"] = "Argent Dawn",
 				},
-				["Player-4-09D6EABB"] = {
-					["name"] = "Salsrath-Kilrogg",
-					["guid"] = "Player-4-09D6EABB",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1612658087,
-					["realm"] = "Kilrogg",
-				},
-				["Player-61-0E7E9705"] = {
-					["name"] = "Abyronterner-Zul'jin",
-					["guid"] = "Player-61-0E7E9705",
-					["class"] = "MONK",
-					["cache_time"] = 1623090360,
-					["realm"] = "",
-				},
-				["Player-11-0BB8771F"] = {
-					["name"] = "Koepphunt-Tichondrius",
-					["guid"] = "Player-11-0BB8771F",
-					["class"] = "HUNTER",
-					["cache_time"] = 1604699132,
-					["realm"] = "Tichondrius",
+				["Player-118-03DC6E7F"] = {
+					["name"] = "Prosthemys-Feathermoon",
+					["guid"] = "Player-118-03DC6E7F",
+					["class"] = "PALADIN",
+					["cache_time"] = 1637291844,
+					["realm"] = "Feathermoon",
 				},
 				["Player-3683-0C0E386E"] = {
 					["name"] = "Illingrath-Dalaran",
 					["guid"] = "Player-3683-0C0E386E",
 					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1635123512,
+					["cache_time"] = 1638118884,
 					["realm"] = "Dalaran",
-				},
-				["Player-3678-0CCFA14A"] = {
-					["name"] = "Swiftfurie-Thrall",
-					["guid"] = "Player-3678-0CCFA14A",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1605085705,
-					["realm"] = "Thrall",
-				},
-				["Player-60-0DF162C1"] = {
-					["name"] = "Fhaita-Stormrage",
-					["guid"] = "Player-60-0DF162C1",
-					["class"] = "PRIEST",
-					["cache_time"] = 1605291376,
-					["realm"] = "Stormrage",
-				},
-				["Player-1171-0A347FCC"] = {
-					["name"] = "Cassy-WyrmrestAccord",
-					["guid"] = "Player-1171-0A347FCC",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1605059571,
-					["realm"] = "WyrmrestAccord",
-				},
-				["Player-61-0E7EA216"] = {
-					["name"] = "Charbeatic-Zul'jin",
-					["guid"] = "Player-61-0E7EA216",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1633817191,
-					["realm"] = "Zul'jin",
-				},
-				["Player-1072-06EC8117"] = {
-					["name"] = "Mummrah-Uldaman",
-					["guid"] = "Player-1072-06EC8117",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1604699318,
-					["realm"] = "Uldaman",
-				},
-				["Player-73-0DF508EF"] = {
-					["name"] = "Ineloras-BleedingHollow",
-					["guid"] = "Player-73-0DF508EF",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1604874543,
-					["realm"] = "BleedingHollow",
-				},
-				["Player-76-0A3EF3DD"] = {
-					["name"] = "Bvz-Sargeras",
-					["guid"] = "Player-76-0A3EF3DD",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1605291607,
-					["realm"] = "Sargeras",
-				},
-				["Player-61-0E7EA0A9"] = {
-					["name"] = "Banuumine-Zul'jin",
-					["guid"] = "Player-61-0E7EA0A9",
-					["class"] = "PALADIN",
-					["cache_time"] = 1623093728,
-					["realm"] = "",
-				},
-				["Player-61-0CA1123B"] = {
-					["name"] = "Deathcandi-Zul'jin",
-					["guid"] = "Player-61-0CA1123B",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1605085260,
-					["realm"] = "Zul'jin",
-				},
-				["Player-1185-0D69EB5E"] = {
-					["name"] = "Samsquamch-Boulderfist",
-					["guid"] = "Player-1185-0D69EB5E",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1605478914,
-					["realm"] = "Boulderfist",
-				},
-				["Player-99-01A77CBD"] = {
-					["name"] = "Gromric-Llane",
-					["guid"] = "Player-99-01A77CBD",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1605290261,
-					["realm"] = "Llane",
-				},
-				["Player-3661-075DC3EB"] = {
-					["name"] = "Zoli-Hyjal",
-					["guid"] = "Player-3661-075DC3EB",
-					["class"] = "MAGE",
-					["cache_time"] = 1605059252,
-					["realm"] = "Hyjal",
-				},
-				["Player-162-06AEDAF0"] = {
-					["name"] = "Vage-EmeraldDream",
-					["guid"] = "Player-162-06AEDAF0",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1605290630,
-					["realm"] = "EmeraldDream",
-				},
-				["Player-75-071FB336"] = {
-					["name"] = "Brotus-ArgentDawn",
-					["guid"] = "Player-75-071FB336",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1617024761,
-					["realm"] = "",
 				},
 				["Player-1070-06579383"] = {
 					["name"] = "Smällz-Alexstrasza",
@@ -2461,19 +2560,68 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605290247,
 					["realm"] = "Alexstrasza",
 				},
-				["Player-61-0E7E965D"] = {
-					["name"] = "Mandles-Zul'jin",
-					["guid"] = "Player-61-0E7E965D",
-					["class"] = "PRIEST",
-					["cache_time"] = 1623082272,
+				["Player-61-0E7E9705"] = {
+					["name"] = "Abyronterner-Zul'jin",
+					["guid"] = "Player-61-0E7E9705",
+					["class"] = "MONK",
+					["cache_time"] = 1623090360,
 					["realm"] = "",
 				},
-				["Player-3683-0BD93453"] = {
-					["name"] = "Scarletglove-Dalaran",
-					["guid"] = "Player-3683-0BD93453",
-					["class"] = "MAGE",
-					["cache_time"] = 1606323520,
-					["realm"] = "Dalaran",
+				["Player-61-0E7EA216"] = {
+					["name"] = "Charbeatic-Zul'jin",
+					["guid"] = "Player-61-0E7EA216",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1633817191,
+					["realm"] = "Zul'jin",
+				},
+				["Player-3693-0CEED0C4"] = {
+					["name"] = "Talonius-Kel'Thuzad",
+					["guid"] = "Player-3693-0CEED0C4",
+					["class"] = "PALADIN",
+					["cache_time"] = 1605292516,
+					["realm"] = "Kel'Thuzad",
+				},
+				["Player-61-0E7EA0A9"] = {
+					["name"] = "Banuumine-Zul'jin",
+					["guid"] = "Player-61-0E7EA0A9",
+					["class"] = "PALADIN",
+					["cache_time"] = 1623093728,
+					["realm"] = "",
+				},
+				["Player-1185-0D69EB5E"] = {
+					["name"] = "Samsquamch-Boulderfist",
+					["guid"] = "Player-1185-0D69EB5E",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1605478914,
+					["realm"] = "Boulderfist",
+				},
+				["Player-3723-0BE33132"] = {
+					["name"] = "Darkpup-Barthilas",
+					["guid"] = "Player-3723-0BE33132",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1605478421,
+					["realm"] = "Barthilas",
+				},
+				["Player-12-062BA247"] = {
+					["name"] = "Serenefyre-SilverHand",
+					["guid"] = "Player-12-062BA247",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1637206618,
+					["realm"] = "SilverHand",
+				},
+				["Player-1426-0AE01960"] = {
+					["name"] = "Lyssanoria-AeriePeak",
+					["guid"] = "Player-1426-0AE01960",
+					["class"] = "DRUID",
+					["cache_time"] = 1605285527,
+					["realm"] = "AeriePeak",
+				},
+				["Player-162-06AEDAF0"] = {
+					["name"] = "Vage-EmeraldDream",
+					["guid"] = "Player-162-06AEDAF0",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1605290630,
+					["realm"] = "EmeraldDream",
 				},
 				["Player-61-0E7EA163"] = {
 					["name"] = "Guufnah-Zul'jin",
@@ -2482,33 +2630,33 @@ RCLootCouncilDB = {
 					["cache_time"] = 1623096804,
 					["realm"] = "",
 				},
-				["Player-73-0CC81FDC"] = {
-					["name"] = "Saxen-BleedingHollow",
-					["guid"] = "Player-73-0CC81FDC",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1605478962,
-					["realm"] = "BleedingHollow",
-				},
-				["Player-3684-0CD3CFA0"] = {
-					["name"] = "Imawalrus-Mal'Ganis",
-					["guid"] = "Player-3684-0CD3CFA0",
-					["class"] = "PRIEST",
-					["cache_time"] = 1605943563,
-					["realm"] = "Mal'Ganis",
-				},
-				["Player-75-09DDA318"] = {
-					["name"] = "Vadder-ArgentDawn",
-					["guid"] = "Player-75-09DDA318",
-					["class"] = "ROGUE",
-					["cache_time"] = 1617024134,
+				["Player-75-0A33732A"] = {
+					["name"] = "Tyran-ArgentDawn",
+					["guid"] = "Player-75-0A33732A",
+					["class"] = "MAGE",
+					["cache_time"] = 1623596411,
 					["realm"] = "",
 				},
-				["Player-3676-0A276400"] = {
-					["name"] = "Blightbile-Area52",
-					["guid"] = "Player-3676-0A276400",
+				["Player-100-016B5029"] = {
+					["name"] = "Rhodaria-EarthenRing",
+					["guid"] = "Player-100-016B5029",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1637293108,
+					["realm"] = "EarthenRing",
+				},
+				["Player-9-0DCC3930"] = {
+					["name"] = "Dominija-Kil'jaeden",
+					["guid"] = "Player-9-0DCC3930",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1605923326,
+					["realm"] = "Kil'jaeden",
+				},
+				["Player-3661-084E3FCA"] = {
+					["name"] = "Badazzme-Hyjal",
+					["guid"] = "Player-3661-084E3FCA",
 					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1605225933,
-					["realm"] = "Area52",
+					["cache_time"] = 1637282866,
+					["realm"] = "Hyjal",
 				},
 				["Player-3675-079E2446"] = {
 					["name"] = "Soliplain-MoonGuard",
@@ -2524,32 +2672,32 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605212276,
 					["realm"] = "Illidan",
 				},
-				["Player-61-0E7E5EC1"] = {
-					["name"] = "Armaguth-Zul'jin",
-					["guid"] = "Player-61-0E7E5EC1",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1623069345,
-					["realm"] = "",
+				["Player-118-0A78A279"] = {
+					["name"] = "Phaliias-Feathermoon",
+					["guid"] = "Player-118-0A78A279",
+					["class"] = "MAGE",
+					["cache_time"] = 1637292007,
+					["realm"] = "Feathermoon",
 				},
-				["Player-57-0BCCF397"] = {
-					["name"] = "Daijouboo-Illidan",
-					["guid"] = "Player-57-0BCCF397",
-					["class"] = "PRIEST",
-					["cache_time"] = 1605478964,
-					["realm"] = "Illidan",
+				["Player-73-0DF508EF"] = {
+					["name"] = "Ineloras-BleedingHollow",
+					["guid"] = "Player-73-0DF508EF",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1604874543,
+					["realm"] = "BleedingHollow",
 				},
-				["Player-160-09D228B3"] = {
-					["name"] = "Bloodlust-Azuremyst",
-					["guid"] = "Player-160-09D228B3",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1605479432,
-					["realm"] = "Azuremyst",
+				["Player-1427-04360738"] = {
+					["name"] = "Afkautoshot-Ragnaros",
+					["guid"] = "Player-1427-04360738",
+					["class"] = "HUNTER",
+					["cache_time"] = 1637396416,
+					["realm"] = "Ragnaros",
 				},
 				["Player-96-0CBEA15E"] = {
 					["name"] = "Durlok-BlackDragonflight",
 					["guid"] = "Player-96-0CBEA15E",
 					["class"] = "DRUID",
-					["cache_time"] = 1635733732,
+					["cache_time"] = 1640112927,
 					["realm"] = "Black Dragonflight",
 				},
 				["Player-61-0E7E9545"] = {
@@ -2559,12 +2707,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1623074872,
 					["realm"] = "",
 				},
-				["Player-3726-0BDFB652"] = {
-					["name"] = "Shelah-Khaz'goroth",
-					["guid"] = "Player-3726-0BDFB652",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1605424192,
-					["realm"] = "Khaz'goroth",
+				["Player-160-0B17AED5"] = {
+					["name"] = "Lodkavalier-Azuremyst",
+					["guid"] = "Player-160-0B17AED5",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1605660343,
+					["realm"] = "Azuremyst",
 				},
 				["Player-3683-0B9BC2E8"] = {
 					["name"] = "Rotclaugh-Dalaran",
@@ -2580,12 +2728,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605419595,
 					["realm"] = "Executus",
 				},
-				["Player-3723-0BE33132"] = {
-					["name"] = "Darkpup-Barthilas",
-					["guid"] = "Player-3723-0BE33132",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1605478421,
-					["realm"] = "Barthilas",
+				["Player-163-0AA06887"] = {
+					["name"] = "Bountyhunter-TwistingNether",
+					["guid"] = "Player-163-0AA06887",
+					["class"] = "HUNTER",
+					["cache_time"] = 1637292012,
+					["realm"] = "TwistingNether",
 				},
 				["Player-5-07D0957D"] = {
 					["name"] = "Flambini-Proudmoore",
@@ -2594,26 +2742,33 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605290739,
 					["realm"] = "Proudmoore",
 				},
-				["Player-53-095EF8FE"] = {
-					["name"] = "Athonrod-Hellscream",
-					["guid"] = "Player-53-095EF8FE",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1605417014,
-					["realm"] = "Hellscream",
-				},
-				["Player-73-0C4DE645"] = {
-					["name"] = "Joriso-BleedingHollow",
-					["guid"] = "Player-73-0C4DE645",
+				["Player-75-0A3EC0ED"] = {
+					["name"] = "Shaekhan-ArgentDawn",
+					["guid"] = "Player-75-0A3EC0ED",
 					["class"] = "MONK",
-					["cache_time"] = 1605416300,
+					["cache_time"] = 1606106807,
+					["realm"] = "ArgentDawn",
+				},
+				["Player-3208-0A438E6C"] = {
+					["name"] = "Starlightt-TolBarad",
+					["guid"] = "Player-3208-0A438E6C",
+					["class"] = "DRUID",
+					["cache_time"] = 1604877041,
+					["realm"] = "TolBarad",
+				},
+				["Player-73-0CC81FDC"] = {
+					["name"] = "Saxen-BleedingHollow",
+					["guid"] = "Player-73-0CC81FDC",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1605478962,
 					["realm"] = "BleedingHollow",
 				},
-				["Player-3693-0CEED0C4"] = {
-					["name"] = "Talonius-Kel'Thuzad",
-					["guid"] = "Player-3693-0CEED0C4",
-					["class"] = "PALADIN",
-					["cache_time"] = 1605292516,
-					["realm"] = "Kel'Thuzad",
+				["Player-1175-0D8CD76A"] = {
+					["name"] = "Engel-Gnomeregan",
+					["guid"] = "Player-1175-0D8CD76A",
+					["class"] = "PRIEST",
+					["cache_time"] = 1604700946,
+					["realm"] = "Gnomeregan",
 				},
 				["Player-76-0A40D7E1"] = {
 					["name"] = "Kittywfleas-Sargeras",
@@ -2622,13 +2777,6 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605291587,
 					["realm"] = "Sargeras",
 				},
-				["Player-84-001F04E3"] = {
-					["name"] = "Hownow-Dragonmaw",
-					["guid"] = "Player-84-001F04E3",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1604700977,
-					["realm"] = "Dragonmaw",
-				},
 				["Player-1175-0E10C601"] = {
 					["name"] = "Sinpie-Moonrunner",
 					["guid"] = "Player-1175-0E10C601",
@@ -2636,19 +2784,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605292309,
 					["realm"] = "Moonrunner",
 				},
-				["Player-1171-09FC0C5B"] = {
-					["name"] = "Valnixia-WyrmrestAccord",
-					["guid"] = "Player-1171-09FC0C5B",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1605290691,
-					["realm"] = "WyrmrestAccord",
+				["Player-60-0DF162C1"] = {
+					["name"] = "Fhaita-Stormrage",
+					["guid"] = "Player-60-0DF162C1",
+					["class"] = "PRIEST",
+					["cache_time"] = 1605291376,
+					["realm"] = "Stormrage",
 				},
-				["Player-1136-08908D6E"] = {
-					["name"] = "Kashta-Garrosh",
-					["guid"] = "Player-1136-08908D6E",
-					["class"] = "ROGUE",
-					["cache_time"] = 1605213336,
-					["realm"] = "Garrosh",
+				["Player-118-00DC8ECC"] = {
+					["name"] = "Drayk-Feathermoon",
+					["guid"] = "Player-118-00DC8ECC",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1637283490,
+					["realm"] = "Feathermoon",
 				},
 				["Player-162-08013801"] = {
 					["name"] = "Mushmoo-EmeraldDream",
@@ -2671,12 +2819,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605660567,
 					["realm"] = "TheScryers",
 				},
-				["Player-61-0E7E95C9"] = {
-					["name"] = "Banesmuncy-Zul'jin",
-					["guid"] = "Player-61-0E7E95C9",
-					["class"] = "ROGUE",
-					["cache_time"] = 1623079042,
-					["realm"] = "",
+				["Player-1129-0AEB7F97"] = {
+					["name"] = "Baridan-Kargath",
+					["guid"] = "Player-1129-0AEB7F97",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1637460435,
+					["realm"] = "Kargath",
 				},
 				["Player-1168-069744DF"] = {
 					["name"] = "Bluecoder-Cenarius",
@@ -2685,40 +2833,42 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605285204,
 					["realm"] = "Cenarius",
 				},
-				["Player-160-0B17AED5"] = {
-					["name"] = "Lodkavalier-Azuremyst",
-					["guid"] = "Player-160-0B17AED5",
+				["Player-118-062E1619"] = {
+					["role"] = "DAMAGER",
+					["name"] = "Namphir-ScarletCrusade",
+					["guid"] = "Player-118-062E1619",
+					["rank"] = "Unguilded",
 					["class"] = "WARRIOR",
-					["cache_time"] = 1605660343,
-					["realm"] = "Azuremyst",
+					["cache_time"] = 1637137719,
+					["realm"] = "ScarletCrusade",
 				},
-				["Player-127-058626AF"] = {
-					["name"] = "Superdad-Spirestone",
-					["guid"] = "Player-127-058626AF",
-					["class"] = "DRUID",
-					["cache_time"] = 1605677195,
-					["realm"] = "Spirestone",
+				["Player-84-001F04E3"] = {
+					["name"] = "Hownow-Dragonmaw",
+					["guid"] = "Player-84-001F04E3",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1604700977,
+					["realm"] = "Dragonmaw",
 				},
-				["Player-61-0CACDE3A"] = {
-					["name"] = "Kotalkhan-Zul'jin",
-					["guid"] = "Player-61-0CACDE3A",
-					["class"] = "MONK",
-					["cache_time"] = 1623178148,
-					["realm"] = "",
+				["Player-11-0BB8771F"] = {
+					["name"] = "Koepphunt-Tichondrius",
+					["guid"] = "Player-11-0BB8771F",
+					["class"] = "HUNTER",
+					["cache_time"] = 1604699132,
+					["realm"] = "Tichondrius",
 				},
-				["Player-61-0DE12200"] = {
-					["name"] = "Okona-Zul'jin",
-					["guid"] = "Player-61-0DE12200",
-					["class"] = "PRIEST",
-					["cache_time"] = 1604804513,
-					["realm"] = "Zul'jin",
+				["Player-3675-079E7C51"] = {
+					["name"] = "Xhilvanas-MoonGuard",
+					["guid"] = "Player-3675-079E7C51",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1637137074,
+					["realm"] = "MoonGuard",
 				},
-				["Player-5-0C33F05D"] = {
-					["name"] = "Knuggs-Proudmoore",
-					["guid"] = "Player-5-0C33F05D",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1605290594,
-					["realm"] = "Proudmoore",
+				["Player-3678-099FCF5E"] = {
+					["name"] = "Darquis-Thrall",
+					["guid"] = "Player-3678-099FCF5E",
+					["class"] = "HUNTER",
+					["cache_time"] = 1637137182,
+					["realm"] = "Thrall",
 				},
 				["Player-163-07ECB002"] = {
 					["name"] = "Aggrivation-Lightninghoof",
@@ -2727,12 +2877,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1608215404,
 					["realm"] = "Lightninghoof",
 				},
-				["Player-3678-092D2741"] = {
-					["name"] = "Maesuna-Thrall",
-					["guid"] = "Player-3678-092D2741",
-					["class"] = "ROGUE",
-					["cache_time"] = 1605671389,
-					["realm"] = "Thrall",
+				["Player-1171-0A347FCC"] = {
+					["name"] = "Cassy-WyrmrestAccord",
+					["guid"] = "Player-1171-0A347FCC",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1605059571,
+					["realm"] = "WyrmrestAccord",
 				},
 				["Player-114-08D301B8"] = {
 					["name"] = "Beaujob-Dragonblight",
@@ -2741,12 +2891,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1604700190,
 					["realm"] = "Dragonblight",
 				},
-				["Player-58-06369E49"] = {
-					["name"] = "Smackhole-Stormreaver",
-					["guid"] = "Player-58-06369E49",
-					["class"] = "MONK",
-					["cache_time"] = 1605085324,
-					["realm"] = "Stormreaver",
+				["Player-163-07EE0763"] = {
+					["name"] = "Drinkycrow-Lightninghoof",
+					["guid"] = "Player-163-07EE0763",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1605015590,
+					["realm"] = "Lightninghoof",
 				},
 				["Player-47-001F075B"] = {
 					["name"] = "Murgle-Eitrigg",
@@ -2755,54 +2905,33 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605058082,
 					["realm"] = "Eitrigg",
 				},
-				["Player-61-0CA8EB69"] = {
-					["name"] = "Zulbathal-Zul'jin",
-					["guid"] = "Player-61-0CA8EB69",
-					["class"] = "DRUID",
-					["cache_time"] = 1635111284,
-					["realm"] = "Zul'jin",
+				["Player-3661-075DC3EB"] = {
+					["name"] = "Zoli-Hyjal",
+					["guid"] = "Player-3661-075DC3EB",
+					["class"] = "MAGE",
+					["cache_time"] = 1605059252,
+					["realm"] = "Hyjal",
 				},
-				["Player-104-0C7696FF"] = {
-					["name"] = "Lasesca-BurningBlade",
-					["guid"] = "Player-104-0C7696FF",
-					["class"] = "ROGUE",
-					["cache_time"] = 1605923271,
-					["realm"] = "BurningBlade",
-				},
-				["Player-3209-098E57A8"] = {
-					["name"] = "Selareyn-Azralon",
-					["guid"] = "Player-3209-098E57A8",
-					["class"] = "MONK",
-					["cache_time"] = 1605085431,
-					["realm"] = "Azralon",
-				},
-				["Player-1175-0D8CD76A"] = {
-					["name"] = "Engel-Gnomeregan",
-					["guid"] = "Player-1175-0D8CD76A",
-					["class"] = "PRIEST",
-					["cache_time"] = 1604700946,
-					["realm"] = "Gnomeregan",
-				},
-				["Player-96-0AEAF37A"] = {
-					["name"] = "Grassy-Velen",
-					["guid"] = "Player-96-0AEAF37A",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1605423637,
-					["realm"] = "Velen",
-				},
-				["Player-9-0DCC3930"] = {
-					["name"] = "Dominija-Kil'jaeden",
-					["guid"] = "Player-9-0DCC3930",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1605923326,
-					["realm"] = "Kil'jaeden",
-				},
-				["Player-3683-0CB6231E"] = {
-					["name"] = "Varlouris-Dalaran",
-					["guid"] = "Player-3683-0CB6231E",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1635124301,
+				["Player-3683-0BD93453"] = {
+					["name"] = "Scarletglove-Dalaran",
+					["guid"] = "Player-3683-0BD93453",
+					["class"] = "MAGE",
+					["cache_time"] = 1606323520,
 					["realm"] = "Dalaran",
+				},
+				["Player-3726-0BDFB652"] = {
+					["name"] = "Shelah-Khaz'goroth",
+					["guid"] = "Player-3726-0BDFB652",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1605424192,
+					["realm"] = "Khaz'goroth",
+				},
+				["Player-1136-08908D6E"] = {
+					["name"] = "Kashta-Garrosh",
+					["guid"] = "Player-1136-08908D6E",
+					["class"] = "ROGUE",
+					["cache_time"] = 1605213336,
+					["realm"] = "Garrosh",
 				},
 				["Player-1428-0A2D5217"] = {
 					["name"] = "Lightcors-Quel'Thalas",
@@ -2811,8 +2940,70 @@ RCLootCouncilDB = {
 					["cache_time"] = 1604874907,
 					["realm"] = "Quel'Thalas",
 				},
+				["Player-163-0B1A7ED5"] = {
+					["name"] = "Foexonexfoe-Lightninghoof",
+					["guid"] = "Player-163-0B1A7ED5",
+					["class"] = "ROGUE",
+					["cache_time"] = 1637460321,
+					["realm"] = "Lightninghoof",
+				},
+				["Player-3683-0CB6231E"] = {
+					["name"] = "Varlouris-Dalaran",
+					["guid"] = "Player-3683-0CB6231E",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1638119421,
+					["realm"] = "Dalaran",
+				},
+				["Player-1168-09FCF163"] = {
+					["name"] = "Crazycam-Frostmane",
+					["guid"] = "Player-1168-09FCF163",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1638111681,
+					["realm"] = "Frostmane",
+				},
 			},
 		},
+	},
+	["profileKeys"] = {
+		["Vancard - Zul'jin"] = "Default",
+		["Armaguth - Zul'jin"] = "Default",
+		["Charbeatic - Zul'jin"] = "Default",
+		["Shaekhan - Zul'jin"] = "Default",
+		["Shanyt - Zul'jin"] = "Default",
+		["Avisar - Dalaran"] = "Default",
+		["Banuumine - Zul'jin"] = "Default",
+		["Thorinbane - Dalaran"] = "Default",
+		["Shaekhan - Argent Dawn"] = "Default",
+		["Ruffinton - Dalaran"] = "Default",
+		["Malivant - Dalaran"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
+		["Dachas - Zul'jin"] = "Default",
+		["Tyranasticus - Zul'jin"] = "Default",
+		["Illingrath - Dalaran"] = "Default",
+		["Tyrannithal - Argent Dawn"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
+		["Kelvalatar - Dalaran"] = "Default",
+		["Banesmuncy - Zul'jin"] = "Default",
+		["Tinkster - Dalaran"] = "Default",
+		["Shimzo - Zul'jin"] = "Default",
+		["Okona - Zul'jin"] = "Default",
+		["Guufnah - Zul'jin"] = "Default",
+		["Jingojaggot - Zul'jin"] = "Default",
+		["Kotalkhan - Zul'jin"] = "Default",
+		["Shanyt - Argent Dawn"] = "Default",
+		["Laymonan - Zul'jin"] = "Default",
+		["Datgore - Zul'jin"] = "Default",
+		["Vadder - Argent Dawn"] = "Default",
+		["Tyran - Argent Dawn"] = "Default",
+		["Serbitechna - Dalaran"] = "Default",
+		["Darnastris - Dalaran"] = "Default",
+		["Rotclaugh - Dalaran"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Default",
+		["Abyronterner - Zul'jin"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
+		["Jasmoney - Zul'jin"] = "Default",
+		["Brotus - Argent Dawn"] = "Default",
+		["Mandles - Zul'jin"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -2887,13 +3078,13 @@ RCLootCouncilLootDB = {
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
 		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
-		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
-		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
-		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
 		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
-		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Okona - Zul'jin"] = "Okona - Zul'jin",
+		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
+		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
-		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Laymonan - Zul'jin"] = "Laymonan - Zul'jin",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
@@ -2901,41 +3092,15 @@ RCLootCouncilLootDB = {
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Abyronterner - Zul'jin"] = "Abyronterner - Zul'jin",
-		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
+		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Jasmoney - Zul'jin"] = "Jasmoney - Zul'jin",
-		["Okona - Zul'jin"] = "Okona - Zul'jin",
+		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Mandles - Zul'jin"] = "Mandles - Zul'jin",
 	},
 	["factionrealm"] = {
 		["Horde - Argent Dawn"] = {
-			["Gënërícnamë-Thrall"] = {
-				{
-					["mapID"] = 1642,
-					["date"] = "30/08/20",
-					["class"] = "WARLOCK",
-					["iSubClass"] = 1,
-					["groupSize"] = 0,
-					["isAwardReason"] = false,
-					["time"] = "20:56:31",
-					["iClass"] = 4,
-					["id"] = "1598853391-0",
-					["owner"] = "Gënërícnamë-Thrall",
-					["response"] = "Bonus Loot",
-					["difficultyID"] = 0,
-					["lootWon"] = "|cffa335ee|Hitem:164385::::::::120:267::3:5:4798:40:1477:5870:4784:::|h[Desert Nomad's Wrap]|h|r",
-					["boss"] = "Blackhand",
-					["responseID"] = "BONUSROLL",
-					["instance"] = "Zandalar-",
-					["color"] = {
-						1, -- [1]
-						0.8, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-				}, -- [1]
-			},
 			["Marcí-Area52"] = {
 				{
 					["mapID"] = 1718,
@@ -2951,15 +3116,41 @@ RCLootCouncilLootDB = {
 					["response"] = "Bonus Loot",
 					["difficultyID"] = 0,
 					["lootWon"] = "|cffa335ee|Hitem:169927::::::::120:263::3:3:4798:1487:4786:::|h[Deepcaller's Clasp]|h|r",
-					["boss"] = "Unknown",
-					["responseID"] = "BONUSROLL",
-					["instance"] = "Nazjatar-",
 					["color"] = {
 						1, -- [1]
 						0.8, -- [2]
 						0, -- [3]
 						1, -- [4]
 					},
+					["responseID"] = "BONUSROLL",
+					["instance"] = "Nazjatar-",
+					["boss"] = "Unknown",
+				}, -- [1]
+			},
+			["Gënërícnamë-Thrall"] = {
+				{
+					["mapID"] = 1642,
+					["date"] = "30/08/20",
+					["class"] = "WARLOCK",
+					["iSubClass"] = 1,
+					["groupSize"] = 0,
+					["isAwardReason"] = false,
+					["time"] = "20:56:31",
+					["iClass"] = 4,
+					["id"] = "1598853391-0",
+					["owner"] = "Gënërícnamë-Thrall",
+					["response"] = "Bonus Loot",
+					["difficultyID"] = 0,
+					["lootWon"] = "|cffa335ee|Hitem:164385::::::::120:267::3:5:4798:40:1477:5870:4784:::|h[Desert Nomad's Wrap]|h|r",
+					["color"] = {
+						1, -- [1]
+						0.8, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["responseID"] = "BONUSROLL",
+					["instance"] = "Zandalar-",
+					["boss"] = "Blackhand",
 				}, -- [1]
 			},
 		},

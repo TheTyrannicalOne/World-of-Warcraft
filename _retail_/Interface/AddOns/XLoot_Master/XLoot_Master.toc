@@ -1,7 +1,9 @@
-## Interface: 90001
+## Interface: 90105
+## Interface-Classic: 11400
+## Interface-BCC: 20502
 ## Title: XLoot Master
 ## Notes: Configurable Master Looter interface
-## Version: 9.1-1
+## Version: 9.1-3
 ## Author: Xuerian, Dridzt
 ## X-Category: Inventory
 

@@ -13,7 +13,7 @@ DialogKeyDB = {
 		["Laymonan - Zul'jin"] = "Default",
 		["Illingrath - Dalaran"] = "Default",
 		["Vadder - Argent Dawn"] = "Default",
-		["Banesmuncy - Zul'jin"] = "Default",
+		["Dachas - Zul'jin"] = "Default",
 		["Tyran - Argent Dawn"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
@@ -21,7 +21,7 @@ DialogKeyDB = {
 		["Durlok - Black Dragonflight"] = "Default",
 		["Abyronterner - Zul'jin"] = "Default",
 		["Jasmoney - Zul'jin"] = "Default",
-		["Dachas - Zul'jin"] = "Default",
+		["Banesmuncy - Zul'jin"] = "Default",
 		["Mandles - Zul'jin"] = "Default",
 	},
 	["global"] = {

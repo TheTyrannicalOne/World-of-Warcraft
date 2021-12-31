@@ -1,8 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0528,
-	["LastPlayerFullName"] = "Illingrath-Dalaran",
-	["AutoSelectScales"] = true,
+	["LastVersion"] = 2.053,
 	["ItemLevels"] = {
 		{
 			["ID"] = 183649,
@@ -92,6 +90,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:165635::::::::50:581::81:3:5844:1527:4786:1:28:1401:::::|h[Sentinel's Moonglaive]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["LastPlayerFullName"] = "Illingrath-Dalaran",
+	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128832] = {
 			["Relics"] = {
@@ -105,7 +106,6 @@ PawnOptions = {
 			["Name"] = "The Aldrachi Warblades",
 		},
 	},
-	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "DEMONHUNTER",

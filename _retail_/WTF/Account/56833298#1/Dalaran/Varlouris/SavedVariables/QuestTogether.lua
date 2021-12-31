@@ -16,22 +16,28 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[53436] = {
-			["title"] = "Azerite for the Alliance",
-			["objectives"] = {
-				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
-			},
-		},
 		[44948] = {
 			["title"] = "Raising Your Snowfeather",
 			["objectives"] = {
 				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
+		[53436] = {
+			["title"] = "Azerite for the Alliance",
+			["objectives"] = {
+				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
+			},
+		},
 		[44989] = {
 			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
 				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
+			["objectives"] = {
+				"0/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
 		[46805] = {
@@ -46,10 +52,11 @@ QuestTogether = {
 				"0/1 Seek out Ly'leth", -- [1]
 			},
 		},
-		[40329] = {
-			["title"] = "Battle Pet Tamers: Warlords",
+		[42984] = {
+			["title"] = "Eye of Azshara: The Scepter of Storms",
 			["objectives"] = {
-				"0/5 Pet Battlemasters Defeated", -- [1]
+				"0/1 Scepter of Storms", -- [1]
+				"0/1 Wrath of Azshara slain", -- [2]
 			},
 		},
 		[48513] = {
@@ -87,23 +94,24 @@ QuestTogether = {
 				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
-		[46286] = {
-			["title"] = "Legionfall Supplies",
+		[48642] = {
+			["title"] = "Argussian Reach",
 			["objectives"] = {
-				"31/100 Collect Legionfall War Supplies", -- [1]
+				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
 			},
 		},
-		[42984] = {
-			["title"] = "Eye of Azshara: The Scepter of Storms",
+		[47253] = {
+			["title"] = "The Originals",
 			["objectives"] = {
-				"0/1 Scepter of Storms", -- [1]
-				"0/1 Wrath of Azshara slain", -- [2]
+				"0/1 Lord Kazzak slain", -- [1]
+				"0/1 Azuregos slain", -- [2]
+				"0/1 Dragon of Nightmare slain", -- [3]
 			},
 		},
-		[44338] = {
-			["title"] = "Goddess Watch Over You",
+		[57300] = {
+			["title"] = "Soldier of Time",
 			["objectives"] = {
-				"Recover the Tears of Elune from Val'sharah", -- [1]
+				"0/500 Earn Honor in Korrak's Revenge", -- [1]
 			},
 		},
 		[40368] = {
@@ -112,9 +120,10 @@ QuestTogether = {
 				"0/7 Shimmering Snapper Scale", -- [1]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[44338] = {
+			["title"] = "Goddess Watch Over You",
 			["objectives"] = {
+				"Recover the Tears of Elune from Val'sharah", -- [1]
 			},
 		},
 		[10279] = {
@@ -148,10 +157,10 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Azsuna", -- [1]
 			},
 		},
-		[42422] = {
-			["title"] = "The Wardens",
+		[46286] = {
+			["title"] = "Legionfall Supplies",
 			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
+				"31/100 Collect Legionfall War Supplies", -- [1]
 			},
 		},
 		[44561] = {
@@ -160,10 +169,11 @@ QuestTogether = {
 				"Friendly / Honored The Nightfallen", -- [1]
 			},
 		},
-		[46839] = {
-			["title"] = "From Darkness",
+		[40332] = {
+			["title"] = "Beach Bonfire",
 			["objectives"] = {
-				"0/1 Walk with High Exarch Turalyon", -- [1]
+				"6/6 Driftwood", -- [1]
+				"1/1 Jarl Throndyr's Pyre built", -- [2]
 			},
 		},
 		[40967] = {
@@ -174,18 +184,17 @@ QuestTogether = {
 				"0/1 Aftermath of the Well", -- [3]
 			},
 		},
-		[40332] = {
-			["title"] = "Beach Bonfire",
+		[46839] = {
+			["title"] = "From Darkness",
 			["objectives"] = {
-				"6/6 Driftwood", -- [1]
-				"1/1 Jarl Throndyr's Pyre built", -- [2]
+				"0/1 Walk with High Exarch Turalyon", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["messages"] = false,
-		["events"] = false,
 		["showDebugInfo"] = false,
+		["events"] = false,
+		["messages"] = false,
 	},
 }

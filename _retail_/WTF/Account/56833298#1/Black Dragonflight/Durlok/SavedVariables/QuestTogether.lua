@@ -32,10 +32,10 @@ QuestTogether = {
 				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
-		[48639] = {
-			["title"] = "Army of the Light",
+		[50562] = {
+			["title"] = "Champions of Azeroth",
 			["objectives"] = {
-				"0/4 Complete 4 Army of the Light World Quests", -- [1]
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
 		[40643] = {
@@ -54,21 +54,16 @@ QuestTogether = {
 				"2/10 Fresh Star Moss", -- [1]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[50606] = {
+			["title"] = "Horde War Effort",
 			["objectives"] = {
+				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
 			},
 		},
-		[50598] = {
-			["title"] = "Zandalari Empire",
+		[48641] = {
+			["title"] = "Armies of Legionfall",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
-			},
-		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
-			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
 			},
 		},
 		[44989] = {
@@ -89,16 +84,16 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Nazmir.", -- [1]
 			},
 		},
+		[42233] = {
+			["title"] = "Highmountain Tribes",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Highmountain.", -- [1]
+			},
+		},
 		[42420] = {
 			["title"] = "Court of Farondis",
 			["objectives"] = {
 				"0/4 Complete 4 world quests in Azsuna", -- [1]
-			},
-		},
-		[42234] = {
-			["title"] = "The Valarjar",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Stormheim", -- [1]
 			},
 		},
 		[53101] = {

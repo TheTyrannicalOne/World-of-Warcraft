@@ -25,19 +25,23 @@ QuestTogether = {
 				"0/1 Speak to Captain Rez'okun to set sail", -- [1]
 			},
 		},
-		[53101] = {
-			["title"] = "Nettin' Ettin",
+		[61874] = {
+			["title"] = "Shadowlands: A Chilling Summons",
 			["objectives"] = {
+				"1/1 Learn about your leaders' fate", -- [1]
+				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
+		[48639] = {
+			["title"] = "Army of the Light",
 			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
+				"0/4 Complete 4 Army of the Light World Quests", -- [1]
+			},
+		},
+		[50562] = {
+			["title"] = "Champions of Azeroth",
+			["objectives"] = {
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
 		[40643] = {
@@ -56,22 +60,16 @@ QuestTogether = {
 				"2/10 Fresh Star Moss", -- [1]
 			},
 		},
-		[44948] = {
-			["title"] = "Raising Your Snowfeather",
-			["objectives"] = {
-				"Level 25 Snowfeather Hatchling", -- [1]
-			},
-		},
 		[50598] = {
 			["title"] = "Zandalari Empire",
 			["objectives"] = {
 				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
 			},
 		},
-		[40329] = {
-			["title"] = "Battle Pet Tamers: Warlords",
+		[48642] = {
+			["title"] = "Argussian Reach",
 			["objectives"] = {
-				"0/5 Pet Battlemasters Defeated", -- [1]
+				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
 			},
 		},
 		[44989] = {
@@ -86,40 +84,37 @@ QuestTogether = {
 				"0/1 Speak with Dread-Admiral Tattersail to Travel to Darkshore", -- [1]
 			},
 		},
-		[42170] = {
-			["title"] = "The Dreamweavers",
+		[50602] = {
+			["title"] = "Talanji's Expedition",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Val'sharah", -- [1]
+				"0/4 Complete 4 world quests in Nazmir.", -- [1]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[48641] = {
+			["title"] = "Armies of Legionfall",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
 			},
 		},
-		[42420] = {
-			["title"] = "Court of Farondis",
+		[44948] = {
+			["title"] = "Raising Your Snowfeather",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Azsuna", -- [1]
+				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
-		[54180] = {
-			["title"] = "Quest",
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[50606] = {
-			["title"] = "Horde War Effort",
+		[53101] = {
+			["title"] = "Nettin' Ettin",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
-			},
-		},
-		[61874] = {
-			["title"] = "Shadowlands: A Chilling Summons",
-			["objectives"] = {
-				"1/1 Learn about your leaders' fate", -- [1]
-				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
 		[47105] = {
@@ -128,10 +123,10 @@ QuestTogether = {
 				"0/1 Scout ahead", -- [1]
 			},
 		},
-		[42422] = {
-			["title"] = "The Wardens",
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
 			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
+				"0/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
 	},

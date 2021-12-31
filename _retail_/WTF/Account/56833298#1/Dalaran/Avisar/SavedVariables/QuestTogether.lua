@@ -19,18 +19,85 @@ QuestTogether = {
 				"1/5 Scalesworn Elites Killed", -- [1]
 			},
 		},
-		[56378] = {
-			["title"] = "The Missing Crew",
-			["objectives"] = {
-				"0/1 Captain Stonestare found", -- [1]
-				"0/1 Captain Greensails found", -- [2]
-				"0/1 Thermospark found", -- [3]
-			},
-		},
 		[53436] = {
 			["title"] = "Azerite for the Alliance",
 			["objectives"] = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
+			},
+		},
+		[32806] = {
+			["title"] = "The King and the Council",
+			["objectives"] = {
+				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
+			},
+		},
+		[50605] = {
+			["title"] = "Alliance War Effort",
+			["objectives"] = {
+				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
+			},
+		},
+		[62801] = {
+			["title"] = "The Call of Fate",
+			["objectives"] = {
+			},
+		},
+		[57563] = {
+			["title"] = "Mogu Assault Tracker",
+			["objectives"] = {
+				"0/1 [DNT] Dummy Credit slain", -- [1]
+			},
+		},
+		[57006] = {
+			["title"] = "A Worthy Ally",
+			["objectives"] = {
+				"0/1 Use the Deepflame Campfire", -- [1]
+				"0/1 Choose an ally", -- [2]
+				"0/3 Ally quests complete", -- [3]
+			},
+		},
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
+			["objectives"] = {
+				"0/5 Pet Battlemasters Defeated", -- [1]
+			},
+		},
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
+			["objectives"] = {
+			},
+		},
+		[39060] = {
+			["title"] = "Combustible Contagion",
+			["objectives"] = {
+				"0/1 Northern Plague Cache Burned", -- [1]
+				"0/1 Eastern Plague Cache Burned", -- [2]
+				"1/1 Western Plague Cache Burned", -- [3]
+			},
+		},
+		[50562] = {
+			["title"] = "Champions of Azeroth",
+			["objectives"] = {
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+			},
+		},
+		[54438] = {
+			["title"] = "Crucible of Storms: Relics of Shadow",
+			["objectives"] = {
+				"Defeat Uu'nat in the Crucible of Storms Raid", -- [1]
+			},
+		},
+		[58632] = {
+			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
+			["objectives"] = {
+				"N'Zoth, the Corruptor defeated", -- [1]
+			},
+		},
+		[36615] = {
+			["title"] = "My Very Own Castle",
+			["objectives"] = {
+				"172/2000 Garrison Resources gathered (Optional)", -- [1]
+				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
 		[44948] = {
@@ -45,84 +112,10 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[62801] = {
-			["title"] = "The Call of Fate",
-			["objectives"] = {
-			},
-		},
-		[40329] = {
-			["title"] = "Battle Pet Tamers: Warlords",
-			["objectives"] = {
-				"0/5 Pet Battlemasters Defeated", -- [1]
-			},
-		},
-		[57006] = {
-			["title"] = "A Worthy Ally",
-			["objectives"] = {
-				"0/1 Use the Deepflame Campfire", -- [1]
-				"0/1 Choose an ally", -- [2]
-				"0/3 Ally quests complete", -- [3]
-			},
-		},
-		[57565] = {
-			["title"] = "Aqir Assault Tracker",
-			["objectives"] = {
-				"0/1 [DNT] Dummy Credit slain", -- [1]
-			},
-		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
-			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
-			},
-		},
-		[39060] = {
-			["title"] = "Combustible Contagion",
-			["objectives"] = {
-				"0/1 Northern Plague Cache Burned", -- [1]
-				"0/1 Eastern Plague Cache Burned", -- [2]
-				"1/1 Western Plague Cache Burned", -- [3]
-			},
-		},
 		[57378] = {
 			["title"] = "Remnants of a Shattered World",
 			["objectives"] = {
 				"0/1 \"Curse of Stone\" book obtained", -- [1]
-			},
-		},
-		[54438] = {
-			["title"] = "Crucible of Storms: Relics of Shadow",
-			["objectives"] = {
-				"Defeat Uu'nat in the Crucible of Storms Raid", -- [1]
-			},
-		},
-		[32806] = {
-			["title"] = "The King and the Council",
-			["objectives"] = {
-				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
-			},
-		},
-		[36615] = {
-			["title"] = "My Very Own Castle",
-			["objectives"] = {
-				"172/2000 Garrison Resources gathered (Optional)", -- [1]
-				"0/1 Upgrade your garrison to Tier 3", -- [2]
-			},
-		},
-		[54180] = {
-			["title"] = "Quest",
-			["objectives"] = {
-			},
-		},
-		[57567] = {
-			["title"] = "N'Zoth Assault Tracker (Vale)",
-			["objectives"] = {
-			},
-		},
-		[50599] = {
-			["title"] = "Proudmoore Admiralty",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Tiragarde Sound", -- [1]
 			},
 		},
 		[56211] = {
@@ -132,10 +125,10 @@ QuestTogether = {
 				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
-		[58632] = {
-			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
+		[50601] = {
+			["title"] = "Storm's Wake",
 			["objectives"] = {
-				"N'Zoth, the Corruptor defeated", -- [1]
+				"0/4 Complete 4 world quests in Stormsong Valley", -- [1]
 			},
 		},
 		[31486] = {
@@ -175,15 +168,17 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
+		[56378] = {
+			["title"] = "The Missing Crew",
+			["objectives"] = {
+				"0/1 Captain Stonestare found", -- [1]
+				"0/1 Captain Greensails found", -- [2]
+				"0/1 Thermospark found", -- [3]
+			},
+		},
 		[44720] = {
 			["title"] = "A Call to Action",
 			["objectives"] = {
-			},
-		},
-		[50605] = {
-			["title"] = "Alliance War Effort",
-			["objectives"] = {
-				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
 			},
 		},
 		[54485] = {
@@ -195,8 +190,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
-		["showDebugInfo"] = false,
 	},
 }

@@ -19,23 +19,16 @@ QuestTogether = {
 				"1/5 Scalesworn Elites Killed", -- [1]
 			},
 		},
-		[57567] = {
-			["title"] = "N'Zoth Assault Tracker (Vale)",
-			["objectives"] = {
-			},
-		},
 		[53436] = {
 			["title"] = "Azerite for the Alliance",
 			["objectives"] = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[56378] = {
-			["title"] = "The Missing Crew",
+		[58632] = {
+			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
 			["objectives"] = {
-				"0/1 Captain Stonestare found", -- [1]
-				"0/1 Captain Greensails found", -- [2]
-				"0/1 Thermospark found", -- [3]
+				"N'Zoth, the Corruptor defeated", -- [1]
 			},
 		},
 		[44948] = {
@@ -49,10 +42,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[57563] = {
+			["title"] = "Mogu Assault Tracker",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
+				"0/1   slain", -- [1]
 			},
 		},
 		[57006] = {
@@ -63,16 +56,15 @@ QuestTogether = {
 				"0/3 Ally quests complete", -- [3]
 			},
 		},
-		[57565] = {
-			["title"] = "Aqir Assault Tracker",
-			["objectives"] = {
-				"0/1 [DNT] Dummy Credit slain", -- [1]
-			},
-		},
 		[40329] = {
 			["title"] = "Battle Pet Tamers: Warlords",
 			["objectives"] = {
 				"0/5 Pet Battlemasters Defeated", -- [1]
+			},
+		},
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
+			["objectives"] = {
 			},
 		},
 		[39060] = {
@@ -83,10 +75,10 @@ QuestTogether = {
 				"1/1 Western Plague Cache Burned", -- [3]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[50562] = {
+			["title"] = "Champions of Azeroth",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
 		[54438] = {
@@ -95,10 +87,10 @@ QuestTogether = {
 				"Defeat Uu'nat in the Crucible of Storms Raid", -- [1]
 			},
 		},
-		[57378] = {
-			["title"] = "Remnants of a Shattered World",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
-				"0/1 \"Curse of Stone\" book obtained", -- [1]
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[36615] = {
@@ -108,15 +100,16 @@ QuestTogether = {
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
+		[57378] = {
+			["title"] = "Remnants of a Shattered World",
+			["objectives"] = {
+				"0/1 \"Curse of Stone\" book obtained", -- [1]
+			},
+		},
 		[32806] = {
 			["title"] = "The King and the Council",
 			["objectives"] = {
 				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
-			},
-		},
-		[54180] = {
-			["title"] = "Quest",
-			["objectives"] = {
 			},
 		},
 		[50599] = {
@@ -132,10 +125,10 @@ QuestTogether = {
 				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
-		[58632] = {
-			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
+		[50601] = {
+			["title"] = "Storm's Wake",
 			["objectives"] = {
-				"N'Zoth, the Corruptor defeated", -- [1]
+				"0/4 Complete 4 world quests in Stormsong Valley", -- [1]
 			},
 		},
 		[31486] = {
@@ -175,15 +168,17 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
+		[56378] = {
+			["title"] = "The Missing Crew",
+			["objectives"] = {
+				"0/1 Captain Stonestare found", -- [1]
+				"0/1 Captain Greensails found", -- [2]
+				"0/1 Thermospark found", -- [3]
+			},
+		},
 		[44720] = {
 			["title"] = "A Call to Action",
 			["objectives"] = {
-			},
-		},
-		[50605] = {
-			["title"] = "Alliance War Effort",
-			["objectives"] = {
-				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
 			},
 		},
 		[54485] = {
@@ -195,8 +190,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
+		["showDebugInfo"] = false,
 	},
 }

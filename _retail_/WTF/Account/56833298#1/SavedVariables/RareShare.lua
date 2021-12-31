@@ -5,8 +5,8 @@ RareShareDB = {
 	["Config"] = {
 		["MapPin"] = true,
 		["CChannel"] = {
+			["CName"] = "General - Shrine of Two Moons",
 			["CID"] = 1,
-			["CName"] = "General - Mechagon",
 		},
 		["TomTom"] = {
 			["Rares"] = true,
