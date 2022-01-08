@@ -53,12 +53,6 @@ QuestTogether = {
 				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
-		[50602] = {
-			["title"] = "Talanji's Expedition",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Nazmir.", -- [1]
-			},
-		},
 		[42129] = {
 			["title"] = "The Pendant of Starlight",
 			["objectives"] = {
@@ -72,17 +66,23 @@ QuestTogether = {
 				"0/1 Wrath of Azshara slain", -- [2]
 			},
 		},
-		[44948] = {
-			["title"] = "Raising Your Snowfeather",
-			["objectives"] = {
-				"Level 25 Snowfeather Hatchling", -- [1]
-			},
-		},
 		[36614] = {
 			["title"] = "My Very Own Fortress",
 			["objectives"] = {
 				"1589/2000 Garrison resources gathered (Optional)", -- [1]
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
+			},
+		},
+		[50606] = {
+			["title"] = "Horde War Effort",
+			["objectives"] = {
+				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
+			},
+		},
+		[50602] = {
+			["title"] = "Talanji's Expedition",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Nazmir.", -- [1]
 			},
 		},
 		[50562] = {
@@ -96,10 +96,21 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[50598] = {
-			["title"] = "Zandalari Empire",
+		[44555] = {
+			["title"] = "Khadgar's Discovery",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
+			},
+		},
+		[44948] = {
+			["title"] = "Raising Your Snowfeather",
+			["objectives"] = {
+				"Level 25 Snowfeather Hatchling", -- [1]
+			},
+		},
+		[31486] = {
+			["title"] = "Everything I Know About Cooking",
+			["objectives"] = {
+				"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
 			},
 		},
 		[44989] = {
@@ -108,21 +119,10 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[44555] = {
-			["title"] = "Khadgar's Discovery",
-			["objectives"] = {
-			},
-		},
 		[40329] = {
 			["title"] = "Battle Pet Tamers: Warlords",
 			["objectives"] = {
 				"0/5 Pet Battlemasters Defeated", -- [1]
-			},
-		},
-		[31486] = {
-			["title"] = "Everything I Know About Cooking",
-			["objectives"] = {
-				"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
 			},
 		},
 		[52444] = {
@@ -163,8 +163,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
+		["showDebugInfo"] = false,
 	},
 }

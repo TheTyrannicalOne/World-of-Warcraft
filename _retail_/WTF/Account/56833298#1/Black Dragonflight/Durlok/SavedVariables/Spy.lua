@@ -1,9 +1,5 @@
 
 SpyPerCharDB = {
-	["KOSData"] = {
-	},
-	["IgnoreData"] = {
-	},
 	["PlayerData"] = {
 		["Stineston-Uldaman"] = {
 			["mapID"] = 71,
@@ -555,5 +551,9 @@ SpyPerCharDB = {
 			["subZone"] = "Caverns of Time",
 		},
 	},
+	["IgnoreData"] = {
+	},
 	["version"] = "1.1",
+	["KOSData"] = {
+	},
 }

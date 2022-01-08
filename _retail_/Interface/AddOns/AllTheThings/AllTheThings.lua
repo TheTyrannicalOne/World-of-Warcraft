@@ -1256,6 +1256,9 @@ local function GetProgressTextForTooltip(data)
 			(data.total - data.progress) == (costTotal - data.costProgress) then
 			return L["COST_TEXT"];
 		end
+		if data.collectible or data.trackable then
+			return GetProgressColorText(data.progress or 0, data.total).. " "..(data.collectible and GetCollectionIcon(data.collected) or (data.trackable and GetCompletionIcon(data.saved)));
+		end
 		return GetProgressColorText(data.progress or 0, data.total);
 	elseif data.collectible then
 		return GetCollectionText(data.collected);
@@ -1270,7 +1273,6 @@ CS:Hide();
 
 -- Source ID Harvesting Lib
 local DressUpModel = CreateFrame('DressUpModel');
-local NPCModelHarvester = CreateFrame('DressUpModel', nil, OffScreenFrame);
 local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
 	["INVTYPE_HEAD"] = {1},
 	["INVTYPE_NECK"] = {2},
@@ -1708,7 +1710,7 @@ local function VerifySourceID(item)
 	return true;
 end
 app.IsComplete = function(o)
-	if o.total then return o.total == o.progress; end
+	if o.total and o.total > 0 then return o.total == o.progress; end
 	if o.collectible then return o.collected; end
 	if o.trackable then return o.saved; end
 end
@@ -2027,8 +2029,7 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange)
 end
 local PrintQuestInfo = function(questID, new, info)
 	if app.IsReady and app.Settings:GetTooltipSetting("Report:CompletedQuests") then
-		local searchResults = app.SearchForField("questID", questID);
-		local id = questID;
+		local questRef = app.SearchForObject("questID", questID);
 		local questChange;
 		if new == true then
 			questChange = "accepted";
@@ -2037,44 +2038,45 @@ local PrintQuestInfo = function(questID, new, info)
 		else
 			questChange = "completed";
 		end
-		if not searchResults or #searchResults <= 0 or GetRelativeField(searchResults[1], "text", L["UNSORTED_1"]) then
-			questID = questID .. " (Not in ATT " .. app.Version .. ")";
+		-- This quest doesn't meet the filter for this character, then ask to report in chat
+		if questChange == "accepted" then
+			DelayedCallback(app.CheckInaccurateQuestInfo, 0.5, questRef, questChange);
+		end
+		local chatMsg;
+		if not questRef or GetRelativeField(questRef, "text", L["UNSORTED_1"]) then
 			-- Linkify the output
-			local popupID = "quest-" .. id;
-			questID = app:Linkify(questID, "ff5c6c", "dialog:" .. popupID);
-			app:SetupReportDialog(popupID, "Missing Quest: " .. id,
-				app.BuildDiscordQuestInfoTable(id, "missing-quest", questChange)
+			local popupID = "quest-" .. questID .. questChange;
+			chatMsg = app:Linkify(questID .. " (Not in ATT " .. app.Version .. ")", "ff5c6c", "dialog:" .. popupID);
+			app:SetupReportDialog(popupID, "Missing Quest: " .. questID,
+				app.BuildDiscordQuestInfoTable(questID, "missing-quest", questChange)
 			);
 		else
-			if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
-				return true;
-			end
-			local questRef = searchResults[1];
+			-- give a chat output if the user has just interacted with a quest flagged as NYI
+			if GetRelativeField(questRef, "text", L["NEVER_IMPLEMENTED"]) then
+				-- Linkify the output
+				local popupID = "quest-" .. questID .. questChange;
+				chatMsg = app:Linkify(questID .. " [NYI] ATT " .. app.Version, "ff5c6c", "dialog:" .. popupID);
+				app:SetupReportDialog(popupID, "NYI Quest: " .. questID,
+					app.BuildDiscordQuestInfoTable(questID, "nyi-quest", questChange)
+				);
 			-- tack on an 'HQT' tag if ATT thinks this QuestID is a Hidden Quest Trigger
 			-- (sometimes 'real' quests are triggered complete when other 'real' quests are turned in and contribs may consider them HQT if not yet sourced
 			-- so when a quest flagged as HQT is accepted/completed directly, it will be more noticable of being incorrectly sourced
-			if GetRelativeField(questRef, "text", L["HIDDEN_QUEST_TRIGGERS"]) then
-				questID = questID .. " [HQT]";
+			elseif GetRelativeField(questRef, "text", L["HIDDEN_QUEST_TRIGGERS"]) then
+				if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
+					return true;
+				end
 				-- Linkify the output
-				questID = app:Linkify(questID, "7aff92", "search:questID:" .. id);
-			elseif GetRelativeField(questRef, "text", L["NEVER_IMPLEMENTED"]) then
-				questID = questID .. " (Not in ATT " .. app.Version .. " [NYI])";
-				-- Linkify the output
-				local popupID = "quest-" .. id;
-				questID = app:Linkify(questID, "ff5c6c", "dialog:" .. popupID);
-				app:SetupReportDialog(popupID, "NYI Quest: " .. id,
-					app.BuildDiscordQuestInfoTable(id, "nyi-quest", questChange)
-				);
+				chatMsg = app:Linkify(questID .. " [HQT]", "7aff92", "search:questID:" .. questID);
 			else
+				if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
+					return true;
+				end
 				-- Linkify the output
-				questID = app:Linkify(questID, "149bfd", "search:questID:" .. id);
-			end
-			-- This quest doesn't meet the filter for this character, then ask to report in chat
-			if questChange == "accepted" then
-				DelayedCallback(app.CheckInaccurateQuestInfo, 1, questRef, questChange);
+				chatMsg = app:Linkify(questID, "149bfd", "search:questID:" .. questID);
 			end
 		end
-		print("Quest",questChange,questID,(info or ""));
+		print("Quest",questChange,chatMsg,(info or ""));
 	end
 end
 local DirtyQuests = {};
@@ -3112,7 +3114,7 @@ ResolveSymbolicLink = function(o)
 				if #sym > 3 then
 					local dict = {};
 					for k=2,#sym,2 do
-						dict[sym[k] ] = sym[k + 1];
+						dict[sym[k]] = sym[k + 1];
 					end
 					for k=#searchResults,1,-1 do
 						local s = searchResults[k];
@@ -3902,7 +3904,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		local showCompleted = app.Settings:GetTooltipSetting("SourceLocations:Completed");
 		local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
 		local abbrevs = L["ABBREVIATIONS"];
-		for i,j in ipairs(group.g or group) do
+		for _,j in ipairs(group.g or group) do
 			if j.parent and not j.parent.hideText and j.parent.parent
 				and (showCompleted or not app.IsComplete(j))
 				and not app.HasCost(j, paramA, paramB)
@@ -4877,13 +4879,6 @@ local cacheMapID = function(group, mapID, coords)
 	elseif not coords then
 		print("multi-nested map",mapID,group.key,group.key and group[group.key]);
 	end
-	-- if (currentMaps[mapID] or 0) == 0 then
-	-- 	currentMaps[mapID] = 1;
-	-- 	CacheField(group, "mapID", mapID);
-	-- elseif not nestOnce then
-	-- 	print("multi-nested map",mapID,currentMaps[mapID],group.key,group.key and group[group.key])
-	-- 	currentMaps[mapID] = currentMaps[mapID] + 1;
-	-- end
 end
 local cacheObjectID = function(group, objectID)
 	-- WARNING: DEV ONLY START
@@ -6606,22 +6601,29 @@ local ObjectDefaults = {
 	["progress"] = 0,
 	["total"] = 0,
 };
+local ObjectFunctions = {
+	-- cloned groups will not directly have a parent, but they will instead have a sourceParent, so fill in with that instead
+	["parent"] = function(t)
+		return t.sourceParent;
+	end,
+	-- way easier to just be able to dynamically reference a hash whenever instead of needing to ensure it is created first
+	["hash"] = function(t)
+		return app.CreateHash(t);
+	end,
+};
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
 app.BaseObjectFields = function(fields, type)
+	local base = {
+		["__type"] = function(t)
+			return type;
+		end,
+	};
 	return {
 	__index = function(t, key)
-		_cache = rawget(fields, key);
-		-- cloned groups will not directly have a parent, but they will instead have a sourceParent, so fill in with that instead
-		if not _cache then
-			-- TODO: evaluate performance cost of 'missing' keys hitting this logic (i.e. 'collectible' on headers, etc.)
-			-- special re-direct keys possible for 'any' Type of object
-			if key == "parent" then return t.sourceParent; end
-			if key == "hash" then return app.CreateHash(t); end
-			if key == "__type" then return type; end
-			-- use default key value if existing
-			return ObjectDefaults[key];
-		end
-		return _cache and _cache(t);
+		_cache = rawget(fields, key) or rawget(ObjectFunctions, key) or rawget(base, key);
+		if _cache then return _cache(t); end
+		-- use default key value if existing
+		return ObjectDefaults[key];
 	end
 };
 end
@@ -6759,7 +6761,6 @@ local function CacheInfo(t, field)
 	if field then return t[field]; end
 end
 app.AchievementFilter = 4;
-app.AchievementCharCompletedIndex = 13;
 local fields = {
 	["key"] = function(t)
 		return "achievementID";
@@ -6788,7 +6789,7 @@ local fields = {
 	end,
 	["collected"] = function(t)
 		if app.CurrentCharacter.Achievements[t.achievementID] then return 1; end
-		if select(app.AchievementCharCompletedIndex, GetAchievementInfo(t.achievementID)) then
+		if select(13, GetAchievementInfo(t.achievementID)) then
 			app.CurrentCharacter.Achievements[t.achievementID] = 1;
 			ATTAccountWideData.Achievements[t.achievementID] = 1;
 			return 1;
@@ -7551,13 +7552,15 @@ local fields = {
 						collectible = collectible or app.CheckCollectible(t, ref, ref._cache);
 					end
 				end
+				-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved, non-repeatable parent
+				if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved and not t.parent.repeatable then return false; end
 				return collectible;
 			else
 				cache.SetCachedField(t, "costCollectibles", app.EmptyTable);
 			end
 		else
-			-- Quick escape if current-character only and comes from something saved
-			if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return false; end
+			-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved, non-repeatable parent
+			if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved and not t.parent.repeatable then return false; end
 			-- Use the common collectibility check logic
 			local collectible;
 			for _,ref in pairs(t.costCollectibles) do
@@ -9100,14 +9103,16 @@ local itemFields = {
 					end
 				end
 				-- app.DEBUG_PRINT = nil;
+				-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved, non-repeatable parent
+				if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved and not t.parent.repeatable then return false; end
 				return collectible;
 			else
 				cache.SetCachedField(t, "costCollectibles", app.EmptyTable);
 			end
 			-- app.DEBUG_PRINT = nil;
 		else
-			-- Quick escape if current-character only and comes from something saved
-			if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return false; end
+			-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved, non-repeatable parent
+			if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved and not t.parent.repeatable then return false; end
 			-- Use the common collectibility check logic
 			local collectible;
 			for _,ref in pairs(t.costCollectibles) do
@@ -11541,14 +11546,18 @@ local fields = {
 		return select(1, GetSpellLink(t.spellID));
 	end,
 	["collectible"] = function(t)
-		if app.CollectibleRecipes then
-			if app.AccountWideRecipes then
-				return true;
-			end
-			if t.requireSkill and (app.GetTradeSkillCache())[t.requireSkill] then
-				return true;
-			end
-		end
+		return app.CollectibleRecipes;
+		-- if app.CollectibleRecipes then
+		-- 	if app.AccountWideRecipes then
+		-- 		return true;
+		-- 	end
+		-- 	if t.requireSkill and (app.GetTradeSkillCache())[t.requireSkill] then
+		-- 		return true;
+		-- 	end
+		-- 	if t.c and contains(t.c, app.ClassIndex) then
+		-- 		return true;
+		-- 	end
+		-- end
 	end,
 	["collected"] = function(t)
 		if app.CurrentCharacter.Spells[t.spellID] then return 1; end
@@ -13303,6 +13312,11 @@ function app:CreateMiniListForGroup(group)
 		popout = app:GetWindow(suffix);
 		-- custom Update method for the popout so we don't have to force refresh
 		popout.Update = function(self, force, got)
+			-- mark the popout to expire after 5 min from now if it is visible
+			if self:IsVisible() then
+				self.ExpireTime = time() + 300;
+				-- print(popout.Suffix,"set to expire",time() + 10)
+			end
 			self:BaseUpdate(force or got, got)
 		end
 		-- popping out something without a source, try to determine it on-the-fly using same logic as harvester
@@ -15202,6 +15216,13 @@ local function UpdateWindow(self, force, got)
 
 			self:Refresh();
 			return true;
+		else
+			local expireTime = self.ExpireTime;
+			-- print("check ExpireTime",self.Suffix,expireTime)
+			if expireTime and expireTime > 0 and expireTime < time() then
+				-- print("window is expired, removing from window cache")
+				app.Windows[self.Suffix] = nil;
+			end
 		end
 	end
 end
@@ -21480,7 +21501,7 @@ app.events.PLAYER_ENTERING_WORLD = function(...)
 	-- refresh any custom collects for this character
 	app.RefreshCustomCollectibility();
 	-- send a location trigger now that the character is 'in the world'
-	DelayedCallback(app.LocationTrigger, 3);
+	-- DelayedCallback(app.LocationTrigger, 3); -- maybe not necessary?
 end
 app.events.ADDON_LOADED = function(addonName)
 	if addonName == "Blizzard_AuctionHouseUI" then

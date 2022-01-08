@@ -868,6 +868,7 @@ do a[key] = value; end
 
 local a = L.HEADER_DESCRIPTIONS;
 for key,value in pairs({
+	--TODO: [-18] = "Contains Things which are rewarded or are available from other content within the containing section.\nThey are consolidated here in an effort to reduce duplication from many possible Sources.",
 	--TODO: [-22] = "Naughty secrets...",
 	--TODO: [-34] = "World Quests are time-limited Quests available in specific locations with variable rewards.\n\nMake sure to check the ATT World Quests window (/attwq) often to see what time-limited Things you should go collect!",
 	--TODO: [-169] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
@@ -1576,6 +1577,7 @@ for key,value in pairs({
 	[232596] = "Grandascia Ancestrale",	-- Ancestral Greataxe
 	[232597] = "Pacco dei Goblin",	-- Goblin Pack
 	[232598] = "Rifornimenti degli Spargifumo",	-- Steamwheedle Supplies
+	[232599] = "Spoglie dei Cantaguerra",	-- Warsong Spoils
 	[232621] = "Strana Spora",	-- Strange Spore
 	[232624] = "Cassa di Mikkal",	-- Mikkal's Chest
 	[232985] = "Rifornimenti degli Spargifumo",	-- Steamwheedle Supplies
@@ -1761,6 +1763,7 @@ for key,value in pairs({
 	[236407] = "Antica Cassa degli Ogre",	-- Ancient Ogre Cache
 	[236483] = "Dono degli Antichi",	-- Gift of the Ancients
 	[236610] = "Dono dello Spirito",	-- Spirit's Gift
+	[236633] = "Cassa del Contrabbandiere",	-- Smuggler's Cache
 	[236693] = "Munizioni dell'Orda di Ferro",	-- Iron Horde Munitions
 	[236715] = "Teschio Strano",	-- Odd Skull
 	[236755] = "Scrigno Impolverato",	-- Dusty Lockbox
@@ -2044,6 +2047,7 @@ for key,value in pairs({
 	[250092] = "Cassa del Tesoro",	-- Treasure Chest
 	[250097] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
 	[250098] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
+	[250102] = "Cassa del Tesoro",	-- Treasure Chest
 	[250103] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
 	[250104] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
 	[250106] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest

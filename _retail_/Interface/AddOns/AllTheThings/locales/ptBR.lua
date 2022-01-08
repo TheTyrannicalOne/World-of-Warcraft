@@ -870,6 +870,7 @@ do a[key] = value; end
 
 local a = L.HEADER_DESCRIPTIONS;
 for key,value in pairs({
+	--TODO: [-18] = "Contains Things which are rewarded or are available from other content within the containing section.\nThey are consolidated here in an effort to reduce duplication from many possible Sources.",
 	--TODO: [-22] = "Naughty secrets...",
 	--TODO: [-34] = "World Quests are time-limited Quests available in specific locations with variable rewards.\n\nMake sure to check the ATT World Quests window (/attwq) often to see what time-limited Things you should go collect!",
 	--TODO: [-169] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
@@ -1578,6 +1579,7 @@ for key,value in pairs({
 	[232596] = "Machadão do Ancestral",	-- Ancestral Greataxe
 	[232597] = "Bolsa Goblínica",	-- Goblin Pack
 	[232598] = "Suprimentos de Bondebico",	-- Steamwheedle Supplies
+	[232599] = "Espólios do Brado Guerreiro",	-- Warsong Spoils
 	[232621] = "Esporo Estranho",	-- Strange Spore
 	[232624] = "Baú de Mikkal",	-- Mikkal's Chest
 	[232985] = "Suprimentos de Bondebico",	-- Steamwheedle Supplies
@@ -1763,6 +1765,7 @@ for key,value in pairs({
 	[236407] = "Tesouro Ôgrico Ancestral",	-- Ancient Ogre Cache
 	[236483] = "Dádiva dos Ancestrais",	-- Gift of the Ancients
 	[236610] = "Dádiva do Espírito",	-- Spirit's Gift
+	[236633] = "Esconderijo do Contrabandista",	-- Smuggler's Cache
 	[236693] = "Munições da Horda de Ferro",	-- Iron Horde Munitions
 	[236715] = "Caveira Estranha",	-- Odd Skull
 	[236755] = "Cofre Empoeirado",	-- Dusty Lockbox
@@ -2046,6 +2049,7 @@ for key,value in pairs({
 	[250092] = "Baú do Tesouro",	-- Treasure Chest
 	[250097] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[250098] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
+	[250102] = "Baú do Tesouro",	-- Treasure Chest
 	[250103] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[250104] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[250106] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest

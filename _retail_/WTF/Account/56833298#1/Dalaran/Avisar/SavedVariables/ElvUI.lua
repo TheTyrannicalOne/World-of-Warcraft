@@ -1,30 +1,5 @@
 
 ElvCharacterDB = {
-	["ConvertKeybindings"] = true,
-	["CliqueDatatext"] = {
-	},
-	["ChatEditHistory"] = {
-		"/skada toggle", -- [1]
-		"/kiss", -- [2]
-		"/fishingbuddy", -- [3]
-		"/s idk", -- [4]
-		"/s got to beat it all the way through i think", -- [5]
-		"/invite ailden-bladefist", -- [6]
-		"/hekili", -- [7]
-		"/reload", -- [8]
-		"/dance", -- [9]
-		"/aap", -- [10]
-		"/cw Genieb-ShatteredHalls TY!", -- [11]
-		"/flirt", -- [12]
-		"/ltp", -- [13]
-		"/allthethings", -- [14]
-		"/s then chest?", -- [15]
-		"/wave", -- [16]
-		"/sit", -- [17]
-		"/skada hide", -- [18]
-		"/cw Willderhide-Stormrage all good thanks", -- [19]
-		"/cw Bourbonn-Dalaran TY", -- [20]
-	},
 	["ChatHistoryLog"] = {
 		{
 			"WTS M+15 125k ||M+14 115k ||M+12 99k ||M+10 69K||<||BUY 2 GET ARMOR STACK FREE||> Mythic Keys 10-20: M+20 TIMED+KEY 553k ||\"KSM DEAL\"||\"SPECIAL DEAL  FOR 3 RUN AND DISCOUNT\"||TAZAVESH||TORGHAST 1-12||ONLY GOLD||<Huokan Community>", -- [1]
@@ -2204,5 +2179,30 @@ ElvCharacterDB = {
 			[51] = 1640113309,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
+	},
+	["ConvertKeybindings"] = true,
+	["ChatEditHistory"] = {
+		"/skada toggle", -- [1]
+		"/kiss", -- [2]
+		"/fishingbuddy", -- [3]
+		"/s idk", -- [4]
+		"/s got to beat it all the way through i think", -- [5]
+		"/invite ailden-bladefist", -- [6]
+		"/hekili", -- [7]
+		"/reload", -- [8]
+		"/dance", -- [9]
+		"/aap", -- [10]
+		"/cw Genieb-ShatteredHalls TY!", -- [11]
+		"/flirt", -- [12]
+		"/ltp", -- [13]
+		"/allthethings", -- [14]
+		"/s then chest?", -- [15]
+		"/wave", -- [16]
+		"/sit", -- [17]
+		"/skada hide", -- [18]
+		"/cw Willderhide-Stormrage all good thanks", -- [19]
+		"/cw Bourbonn-Dalaran TY", -- [20]
+	},
+	["CliqueDatatext"] = {
 	},
 }

@@ -262,11 +262,11 @@ local L = app.L;
 			L._BETA_LABEL = " |cff4AA7FF[测试]|R";
 
 		L.GENERAL_LABEL = "通用";
-		-- L.MERCH_BUTTON_LABEL = "Merch";
+		L.MERCH_BUTTON_LABEL = "商店";
 		L.TWITCH_BUTTON_TOOLTIP = "点击按钮复制 URL 到我的 Twitch 频道。\n\n可以在我直播的时候问问题，我会尽力回答！";
 		L.DISCORD_BUTTON_TOOLTIP = "点击按钮复制 URL 到All The Things Discord 服务器。\n\n可以与其他收藏家分享进步/挫折！";
 		L.PATREON_BUTTON_TOOLTIP = "点击按钮复制 URL 以进入 All The Things Patreon 页面。\n\n在这里您可以看到如何在经济上支持插件！";
-		L.MERCH_BUTTON_TOOLTIP = "点击按钮复制 URL 以进入 All The Things Merch 商店。\n\n在这里您可以在经济上支持插件并获得一些很酷的商品作为回报！ ";
+		L.MERCH_BUTTON_TOOLTIP = "点击按钮复制 URL 以进入 All The Things 商店。\n\n在这里您可以在经济上支持插件并获得一些很酷的商品作为回报！ ";
 		L.MODE_EXPLAIN_LABEL = "|cffFFFFFF您收集的内容汇总在这里。启用所有 |cffADD8E6彩色选项|cffFFFFFF 解锁 |cffADD8E6疯狂模式|cffFFFFFF。";
 		L.DEBUG_MODE = "|Cffff0000调试模式|r（显示所有）";
 		L.DEBUG_MODE_TOOLTIP = "就字面意思…游戏中的所有事情。时间。点滴。是的，所有的一切。即使是不可收藏的事物，如袋子、消耗品、试剂等也会出现在列表中。（甚至你自己！不，是真的。看。）\n\n这仅用于调试目的。不用于完成追踪。\n\n此模式绕过所有过滤，包括不可获得的。";
@@ -869,6 +869,7 @@ do a[key] = value; end
 
 local a = L.HEADER_DESCRIPTIONS;
 for key,value in pairs({
+	[-18] = "包含有奖励或可从包含部分中的其他内容获得的事物。\n在此处合并以减少来自许多可能重复来源。",
 	[-22] = "淘气的秘密…",
 	[-34] = "世界任务是有时间限制的任务，可在特定地点进行，奖励不一。\n\n一定要经常查看 ATT 世界任务窗口(/attwq)，看看有什么限时的东西你应该去收集！",
 	[-169] = "这些物品可以通过做使者任务或获得巅峰宝箱来获得。",
@@ -1577,6 +1578,7 @@ for key, value in pairs({
 	[232596] = "先祖巨斧",	-- Ancestral Greataxe
 	[232597] = "地精包裹",	-- Goblin Pack
 	[232598] = "热砂补给品",	-- Steamwheedle Supplies
+	[232599] = "战歌战利品",	-- Warsong Spoils
 	--TODO: [232621] = "Strange Spore",	-- Strange Spore
 	[232624] = "米卡尔的箱子",	-- Mikkal's Chest
 	[232985] = "热砂补给品",	-- Steamwheedle Supplies
@@ -1762,6 +1764,7 @@ for key, value in pairs({
 	[236407] = "上古食人魔文物",	-- Ancient Ogre Cache
 	--TODO: [236483] = "Gift of the Ancients",	-- Gift of the Ancients
 	--TODO: [236610] = "Spirit's Gift",	-- Spirit's Gift
+	[236633] = "走私者的箱子",	-- Smuggler's Cache
 	[236693] = "钢铁部落军需品",	-- Iron Horde Munitions
 	[236715] = "奇怪的颅骨",	-- Odd Skull
 	[236755] = "尘封的宝箱",	-- Dusty Lockbox
@@ -2045,6 +2048,7 @@ for key, value in pairs({
 	[250092] = "宝箱",	-- Treasure Chest
 	[250097] = "小宝箱",	-- Small Treasure Chest
 	[250098] = "小宝箱",	-- Small Treasure Chest
+	[250102] = "宝箱",	-- Treasure Chest
 	[250103] = "小宝箱",	-- Small Treasure Chest
 	[250104] = "小宝箱",	-- Small Treasure Chest
 	[250106] = "小宝箱",	-- Small Treasure Chest

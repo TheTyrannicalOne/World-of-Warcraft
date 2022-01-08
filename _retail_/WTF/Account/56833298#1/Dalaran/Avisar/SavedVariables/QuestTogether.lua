@@ -25,16 +25,15 @@ QuestTogether = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[32806] = {
-			["title"] = "The King and the Council",
-			["objectives"] = {
-				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
-			},
-		},
 		[50605] = {
 			["title"] = "Alliance War Effort",
 			["objectives"] = {
 				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
+			},
+		},
+		[57564] = {
+			["title"] = "Mantid Assault Tracker",
+			["objectives"] = {
 			},
 		},
 		[62801] = {
@@ -42,10 +41,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[57563] = {
-			["title"] = "Mogu Assault Tracker",
+		[32806] = {
+			["title"] = "The King and the Council",
 			["objectives"] = {
-				"0/1 [DNT] Dummy Credit slain", -- [1]
+				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
 		[57006] = {
@@ -125,10 +124,10 @@ QuestTogether = {
 				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
-		[50601] = {
-			["title"] = "Storm's Wake",
+		[56119] = {
+			["title"] = "The Waveblade Ankoan",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Stormsong Valley", -- [1]
+				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
 		[31486] = {
@@ -190,8 +189,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

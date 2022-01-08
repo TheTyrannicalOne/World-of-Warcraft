@@ -6,13 +6,6 @@ X: 0
 Y: -21
 W: 300
 H: 300
-Frame: AllTheThings-Window-Bounty
-FrameLevel: 1
-Anchor: BOTTOMLEFT
-X: 0
-Y: 253
-W: 300
-H: 300
 Frame: BagItemTooltipMover
 FrameLevel: 2
 Anchor: TOP
@@ -151,6 +144,13 @@ FrameLevel: 1
 Anchor: CENTER
 X: 0
 Y: 0
+W: 300
+H: 300
+Frame: AllTheThings-Window-Bounty
+FrameLevel: 1
+Anchor: BOTTOMLEFT
+X: 0
+Y: 253
 W: 300
 H: 300
 Frame: GameMenuFrame
