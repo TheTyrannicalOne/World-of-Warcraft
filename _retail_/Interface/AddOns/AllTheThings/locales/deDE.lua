@@ -217,6 +217,7 @@ local L = app.L;
 	--TODO: L.NESTED_QUEST_REQUIREMENTS = "Nested Quest Requirements";
 	--TODO: L.MAIN_LIST_REQUIRES_REFRESH = "[Open Main list to update progress]";
 	--TODO: L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207This group and its content do not contribute to the progress of this window!|r";
+	--TODO: L.CURRENCY_NEEDED_TO_BUY = "Items needed to buy not collected Things";
 
 	-- Item Filter Window
 		--TODO: L.ITEM_FILTER_TEXT = "Item Filters";
@@ -245,7 +246,7 @@ local L = app.L;
 	--TODO: L.AFTER_REFRESH = "After Refresh";
 
 	-- General tab
-		-- Mod Title
+		-- Mode Title
 			--TODO: L.MODE = "Mode";
 			--TODO: L.TITLE_COMPLETIONIST = "Completionist ";
 			--TODO: L.TITLE_UNIQUE_APPEARANCE = "Unique ";
@@ -257,6 +258,7 @@ local L = app.L;
 			--TODO: L.TITLE_INSANE = "|cffADD8E6Insane|R ";
 			--TODO: L.TITLE_SOME_THINGS = "Some of the Things ";
 			--TODO: L.TITLE_LEVEL = "Level ";
+			--TODO: L.TITLE_SOLO = "Solo ";
 			--TODO: L._BETA_LABEL = " |cff4AA7FF[Beta]|R";
 
 		--TODO: L.GENERAL_LABEL = "General";
@@ -411,6 +413,8 @@ local L = app.L;
 		--TODO: L.KNOWN_BY_CHECKBOX_TOOLTIP = "Enable this option if you want to see the full list of characters on all servers that know this recipe in the tooltip.";
 		--TODO: L.SHOW_MODELS_CHECKBOX = "Model Preview";
 		--TODO: L.SHOW_MODELS_CHECKBOX_TOOLTIP = "Enable this option to show models within a preview instead of the icon on the tooltip.\n\nThis option may assist you in identifying what a Rare Spawn or Vendor looks like. It might be a good idea to keep this turned on for that reason.";
+		--TODO: L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX = "Currency calculation";
+		--TODO: L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP = "Enable this option to show the approximate amount of items/currency required to buy Uncollected Things.\n\nOnly those collectible Things that can be directly purchased for an item/currency are counted. Containers that do not give items with a 100% chance are not counted.";
 		--TODO: L.SHARED_APPEARANCES_CHECKBOX = "Shared Appearances";
 		--TODO: L.SHARED_APPEARANCES_CHECKBOX_TOOLTIP = "Enable this option to see items that share a similar appearance in the tooltip.\n\nNOTE: Items that do not match the armor type are displayed in the list. This is to help you diagnose the Collection progress.\n\nIf you are ever confused by this, as of ATT v1.5.0, you can Right Click the item to open the item and its Shared Appearances into their own standalone Mini List.";
 		--TODO: L.INCLUDE_ORIGINAL_CHECKBOX = "Original Source";
@@ -679,6 +683,7 @@ for key,value in pairs({
 	-- Class Hall /Artifact
 		--TODO: [-159] = "Event Roll",								-- Daily Dreamway Event Roll
 	-- Other
+		--TODO: [-210] = ALLIED.." "..NEW.." "..CHARACTER,			-- Allied New Character
 		--TODO: [-211] = NEW.." "..CHARACTER,						-- New Character
 		--TODO: [-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),-- Treasure Chest
 	-- Fishing
@@ -1324,7 +1329,6 @@ for key,value in pairs({
 	[213653] = "Pandarischer Fischspeer",	-- Pandaren Fishing Spear
 	[213741] = "Uralter Stab der Jinyu",	-- Ancient Jinyu Staff
 	[213742] = "Hammer der zehn Donner",	-- Hammer of Ten Thunders
-	--TODO: [213743] = "Jade Infused Blade",	-- Jade Infused Blade
 	[213748] = "Pandarischer Ritualstein",	-- Pandaren Ritual Stone
 	[213749] = "Stab des verborgenen Meisters",	-- Staff of the Hidden Master
 	[213750] = "Steintafel der Saurok",	-- Saurok Stone Tablet
@@ -2765,7 +2769,10 @@ for key,value in pairs({
 	[355035] = "Runenlade der Auserwählten",	-- Treasure: House of the Chosen
 	[355037] = "Runengebundene Lade",	-- Runebound Coffer
 	[355038] = "Runengebundene Lade",	-- Runebound Coffer
+	[355040] = "Rune der Rituale",	-- Rune of Rituals
 	[355041] = "Truhe des Mondes",	-- Cache of the Moon
+	[355048] = "Rune der Rituale",	-- Rune of Rituals
+	[355049] = "Rune der Rituale",	-- Rune of Rituals
 	[355286] = "Gedenkopfergaben",	-- Memorial Offerings
 	[355296] = "Kopfgeld: Wildtierkontrolle",	-- Bounty: Beast Control
 	[355355] = "Harmonische Truhe",	-- Harmonic Chest
@@ -2910,6 +2917,7 @@ for key,value in pairs({
 	[369438] = "Rissgebundene Truhe",	-- Riftbound Cache
 	[369439] = "Rissgebundene Truhe",	-- Riftbound Cache
 	[369440] = "Rissgebundene Truhe",	-- Riftbound Cache
+	[370469] = "Spektrales Futter",	-- Spectral Feed
 	[9962198] = "Behelfsmäßige Schlammlache des Ausgestoßenen",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only

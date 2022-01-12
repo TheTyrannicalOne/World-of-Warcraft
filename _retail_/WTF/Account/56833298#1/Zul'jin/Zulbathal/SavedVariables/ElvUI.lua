@@ -1,6 +1,29 @@
 
 ElvCharacterDB = {
+	["ConvertKeybindings"] = true,
 	["CliqueDatatext"] = {
+	},
+	["ChatEditHistory"] = {
+		"/cancelform", -- [1]
+		"/allthethings", -- [2]
+		"/omen", -- [3]
+		"/p weird", -- [4]
+		"/wAVE", -- [5]
+		"/canimogit", -- [6]
+		"/opie", -- [7]
+		"/invite melene-blackhand", -- [8]
+		"/wave", -- [9]
+		"/reload", -- [10]
+		"/reloadui", -- [11]
+		"/omnicc", -- [12]
+		"/click extraaddonbutton1", -- [13]
+		"/invite melene-bladefist", -- [14]
+		"/click ExtraActionButton1", -- [15]
+		"/skada toggle", -- [16]
+		"/fishingbuddy", -- [17]
+		"/dance", -- [18]
+		"/p cant it says an invite pending", -- [19]
+		"/skada hide", -- [20]
 	},
 	["ChatHistoryLog"] = {
 		{
@@ -2182,27 +2205,4 @@ ElvCharacterDB = {
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},
-	["ChatEditHistory"] = {
-		"/cancelform", -- [1]
-		"/canimogit", -- [2]
-		"/reloadui", -- [3]
-		"/click extraaddonbutton1", -- [4]
-		"/allthethings", -- [5]
-		"/fishingbuddy", -- [6]
-		"/reload", -- [7]
-		"/dance", -- [8]
-		"/omen", -- [9]
-		"/skada toggle", -- [10]
-		"/omnicc", -- [11]
-		"/wave", -- [12]
-		"/p cant it says an invite pending", -- [13]
-		"/invite melene-bladefist", -- [14]
-		"/skada hide", -- [15]
-		"/opie", -- [16]
-		"/wAVE", -- [17]
-		"/invite melene-blackhand", -- [18]
-		"/p weird", -- [19]
-		"/click ExtraActionButton1", -- [20]
-	},
-	["ConvertKeybindings"] = true,
 }

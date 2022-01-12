@@ -99,13 +99,13 @@ BtWQuests_Characters = {
 			[59941] = true,
 			[50143] = true,
 			[53745] = true,
-			[56633] = true,
+			[59948] = true,
 			[42895] = true,
 			[59610] = true,
 			[56630] = true,
 			[31831] = true,
 			[31572] = true,
-			[59948] = true,
+			[58418] = true,
 			[38995] = true,
 			[56088] = true,
 			[56625] = true,
@@ -134,17 +134,17 @@ BtWQuests_Characters = {
 			[53220] = true,
 			[39713] = true,
 			[53746] = true,
-			[31826] = true,
+			[31571] = true,
 			[53206] = true,
 			[31308] = true,
-			[31316] = true,
+			[31826] = true,
 			[31583] = true,
 			[31551] = true,
 			[31555] = true,
 			[31814] = true,
 			[59938] = true,
 			[59946] = true,
-			[31571] = true,
+			[31316] = true,
 			[31575] = true,
 			[31579] = true,
 			[59978] = true,
@@ -207,7 +207,7 @@ BtWQuests_Characters = {
 			[31556] = true,
 			[59932] = true,
 			[59940] = true,
-			[58418] = true,
+			[56633] = true,
 			[59956] = true,
 			[31576] = true,
 			[31580] = true,
@@ -226,14 +226,6 @@ BtWQuests_Characters = {
 		["skills"] = {
 		},
 		["faction"] = "Horde",
-		["warModeBonus"] = 10,
-		["warMode"] = false,
-		["name"] = "Abyronterner",
-		["sex"] = 2,
-		["professions"] = {
-		},
-		["ignoredChains"] = {
-		},
 		["questsActive"] = {
 			[44948] = {
 				{
@@ -283,6 +275,13 @@ BtWQuests_Characters = {
 					false, -- [3]
 				}, -- [1]
 			},
+		},
+		["warMode"] = false,
+		["name"] = "Abyronterner",
+		["sex"] = 2,
+		["professions"] = {
+		},
+		["ignoredChains"] = {
 		},
 		["reputations"] = {
 			[530] = {
@@ -342,6 +341,7 @@ BtWQuests_Characters = {
 				["barValue"] = 500,
 			},
 		},
+		["warModeBonus"] = 10,
 	}, -- [1]
 	{
 		["covenantID"] = 0,
@@ -438,16 +438,16 @@ BtWQuests_Characters = {
 			[59941] = true,
 			[59943] = true,
 			[31885] = true,
-			[58418] = true,
+			[59948] = true,
 			[50143] = true,
-			[56633] = true,
+			[31568] = true,
 			[59945] = true,
 			[59980] = true,
 			[53745] = true,
 			[59972] = true,
 			[31576] = true,
 			[31827] = true,
-			[31568] = true,
+			[56633] = true,
 			[38995] = true,
 			[56088] = true,
 			[59940] = true,
@@ -479,14 +479,14 @@ BtWQuests_Characters = {
 			[59938] = true,
 			[50146] = true,
 			[31822] = true,
-			[31826] = true,
+			[31571] = true,
 			[31830] = true,
 			[31551] = true,
 			[31555] = true,
 			[59930] = true,
 			[31308] = true,
 			[59946] = true,
-			[59699] = true,
+			[31316] = true,
 			[31575] = true,
 			[31579] = true,
 			[59978] = true,
@@ -533,10 +533,10 @@ BtWQuests_Characters = {
 			[50106] = true,
 			[56489] = true,
 			[31591] = true,
-			[31316] = true,
+			[59699] = true,
 			[31814] = true,
 			[53206] = true,
-			[31571] = true,
+			[31826] = true,
 			[62912] = true,
 			[53740] = true,
 			[53748] = true,
@@ -549,7 +549,7 @@ BtWQuests_Characters = {
 			[31556] = true,
 			[31815] = true,
 			[62745] = true,
-			[59948] = true,
+			[58418] = true,
 			[31572] = true,
 			[31831] = true,
 			[31580] = true,
@@ -565,6 +565,56 @@ BtWQuests_Characters = {
 		},
 		["xpModifier"] = 0,
 		["renownLevel"] = 1,
+		["questsActive"] = {
+			[44948] = {
+				{
+					"Level 25 Snowfeather Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[44989] = {
+				{
+					"Level 25 Sharptalon Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[31891] = {
+				{
+					"Defeat Traitor Gluk", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Defeat Grazzle the Great", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [2]
+				{
+					"Defeat Kela Grimtotem", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [3]
+				{
+					"Defeat Zoltan", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [4]
+				{
+					"Defeat Elena Flutterfly", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [5]
+			},
+			[40329] = {
+				{
+					"0/5 Pet Battlemasters Defeated", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+		},
 		["warModeBonus"] = 10,
 		["reputations"] = {
 			[530] = {
@@ -622,56 +672,6 @@ BtWQuests_Characters = {
 				["standing"] = 5,
 				["barValue"] = 3100,
 				["barMax"] = 9000,
-			},
-		},
-		["questsActive"] = {
-			[44948] = {
-				{
-					"Level 25 Snowfeather Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[44989] = {
-				{
-					"Level 25 Sharptalon Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[31891] = {
-				{
-					"Defeat Traitor Gluk", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Defeat Grazzle the Great", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [2]
-				{
-					"Defeat Kela Grimtotem", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [3]
-				{
-					"Defeat Zoltan", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [4]
-				{
-					"Defeat Elena Flutterfly", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [5]
-			},
-			[40329] = {
-				{
-					"0/5 Pet Battlemasters Defeated", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
 			},
 		},
 		["ignoredChains"] = {
@@ -3033,9 +3033,9 @@ BtWQuests_Characters = {
 				["maxLevel"] = 100,
 				["level"] = 12,
 			},
-			[2565] = {
-				["maxLevel"] = 175,
-				["level"] = 147,
+			[2550] = {
+				["maxLevel"] = 100,
+				["level"] = 23,
 			},
 			[2556] = {
 				["maxLevel"] = 300,
@@ -3049,13 +3049,13 @@ BtWQuests_Characters = {
 				["maxLevel"] = 300,
 				["level"] = 74,
 			},
+			[2565] = {
+				["maxLevel"] = 175,
+				["level"] = 147,
+			},
 			[182] = {
 				["maxLevel"] = 75,
 				["level"] = 175,
-			},
-			[2550] = {
-				["maxLevel"] = 100,
-				["level"] = 23,
 			},
 			[186] = {
 				["maxLevel"] = 75,
@@ -3063,19 +3063,6 @@ BtWQuests_Characters = {
 			},
 		},
 		["faction"] = "Alliance",
-		["warModeBonus"] = 20,
-		["warMode"] = false,
-		["name"] = "Avisar",
-		["sex"] = 2,
-		["professions"] = {
-			[182] = true,
-			[186] = true,
-			[356] = true,
-			[794] = true,
-			[185] = true,
-		},
-		["ignoredChains"] = {
-		},
 		["questsActive"] = {
 			[28405] = {
 				{
@@ -3086,12 +3073,48 @@ BtWQuests_Characters = {
 			},
 			[44720] = {
 			},
+			[44948] = {
+				{
+					"Level 25 Snowfeather Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
 			[13413] = {
 				{
 					"1/5 Scalesworn Elites Killed", -- [1]
 					"monster", -- [2]
 					false, -- [3]
 				}, -- [1]
+			},
+			[32806] = {
+				{
+					"0/1 \"Blood in the Snow\" scenario complete", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[60151] = {
+				{
+					"1/1 Speak to the Acolyte", -- [1]
+					"monster", -- [2]
+					true, -- [3]
+				}, -- [1]
+				{
+					"1/1 Head to the landing", -- [1]
+					"monster", -- [2]
+					true, -- [3]
+				}, -- [2]
+				{
+					"1/1 Establish portals back to Azeroth", -- [1]
+					"monster", -- [2]
+					true, -- [3]
+				}, -- [3]
+				{
+					"0/1 Return to the Overseers", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [4]
 			},
 			[53436] = {
 				{
@@ -3107,37 +3130,25 @@ BtWQuests_Characters = {
 					false, -- [3]
 				}, -- [1]
 			},
-			[57564] = {
+			[57378] = {
+				{
+					"0/1 \"Curse of Stone\" book obtained", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
 			},
 			[62801] = {
+			},
+			[57563] = {
+				{
+					"0/1 [DNT] Dummy Credit slain", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
 			},
 			[40329] = {
 				{
 					"0/5 Pet Battlemasters Defeated", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[57006] = {
-				{
-					"0/1 Use the Deepflame Campfire", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"0/1 Choose an ally", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [2]
-				{
-					"0/3 Ally quests complete", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [3]
-			},
-			[44948] = {
-				{
-					"Level 25 Snowfeather Hatchling", -- [1]
 					"object", -- [2]
 					false, -- [3]
 				}, -- [1]
@@ -3175,10 +3186,10 @@ BtWQuests_Characters = {
 					false, -- [3]
 				}, -- [1]
 			},
-			[32806] = {
+			[44989] = {
 				{
-					"0/1 \"Blood in the Snow\" scenario complete", -- [1]
-					"monster", -- [2]
+					"Level 25 Sharptalon Hatchling", -- [1]
+					"object", -- [2]
 					false, -- [3]
 				}, -- [1]
 			},
@@ -3194,42 +3205,6 @@ BtWQuests_Characters = {
 					false, -- [3]
 				}, -- [2]
 			},
-			[50605] = {
-				{
-					"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[44989] = {
-				{
-					"Level 25 Sharptalon Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[60151] = {
-				{
-					"1/1 Speak to the Acolyte", -- [1]
-					"monster", -- [2]
-					true, -- [3]
-				}, -- [1]
-				{
-					"1/1 Head to the landing", -- [1]
-					"monster", -- [2]
-					true, -- [3]
-				}, -- [2]
-				{
-					"1/1 Establish portals back to Azeroth", -- [1]
-					"monster", -- [2]
-					true, -- [3]
-				}, -- [3]
-				{
-					"0/1 Return to the Overseers", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [4]
-			},
 			[56211] = {
 				{
 					"1/1 Scrying Stone used", -- [1]
@@ -3242,9 +3217,16 @@ BtWQuests_Characters = {
 					false, -- [3]
 				}, -- [2]
 			},
-			[56119] = {
+			[50599] = {
 				{
-					"0/4 Complete world quests in Nazjatar", -- [1]
+					"0/4 Complete 4 world quests in Tiragarde Sound", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[50600] = {
+				{
+					"0/4 Complete 4 world quests in Drustvar", -- [1]
 					"object", -- [2]
 					false, -- [3]
 				}, -- [1]
@@ -3304,17 +3286,27 @@ BtWQuests_Characters = {
 					false, -- [3]
 				}, -- [5]
 			},
+			[57006] = {
+				{
+					"0/1 Use the Deepflame Campfire", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"0/1 Choose an ally", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [2]
+				{
+					"0/3 Ally quests complete", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [3]
+			},
 			[54485] = {
 				{
 					"0/1 Defeat King Rastakhan in the Battle of Dazar'alor", -- [1]
 					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[57378] = {
-				{
-					"0/1 \"Curse of Stone\" book obtained", -- [1]
-					"item", -- [2]
 					false, -- [3]
 				}, -- [1]
 			},
@@ -3335,6 +3327,18 @@ BtWQuests_Characters = {
 					false, -- [3]
 				}, -- [3]
 			},
+		},
+		["warMode"] = false,
+		["name"] = "Avisar",
+		["sex"] = 2,
+		["professions"] = {
+			[182] = true,
+			[186] = true,
+			[356] = true,
+			[794] = true,
+			[185] = true,
+		},
+		["ignoredChains"] = {
 		},
 		["reputations"] = {
 			[2161] = {
@@ -3596,19 +3600,19 @@ BtWQuests_Characters = {
 				["barMax"] = 3000,
 				["barValue"] = 0,
 			},
+			[469] = {
+				["barMin"] = 9000,
+				["name"] = "Alliance",
+				["standing"] = 6,
+				["barMax"] = 21000,
+				["barValue"] = 10202,
+			},
 			[72] = {
 				["barMin"] = 42000,
 				["name"] = "Stormwind",
 				["standing"] = 8,
 				["barMax"] = 42000,
 				["barValue"] = 42000,
-			},
-			[930] = {
-				["barMin"] = 3000,
-				["name"] = "Exodar",
-				["standing"] = 5,
-				["barMax"] = 9000,
-				["barValue"] = 8999,
 			},
 			[2400] = {
 				["barMin"] = 0,
@@ -3638,12 +3642,12 @@ BtWQuests_Characters = {
 				["barMax"] = 3000,
 				["barValue"] = 1326,
 			},
-			[469] = {
-				["barMin"] = 9000,
-				["name"] = "Alliance",
-				["standing"] = 6,
-				["barMax"] = 21000,
-				["barValue"] = 10202,
+			[930] = {
+				["barMin"] = 3000,
+				["name"] = "Exodar",
+				["standing"] = 5,
+				["barMax"] = 9000,
+				["barValue"] = 8999,
 			},
 			[942] = {
 				["barMin"] = 3000,
@@ -3681,6 +3685,7 @@ BtWQuests_Characters = {
 				["barValue"] = 0,
 			},
 		},
+		["warModeBonus"] = 20,
 	}, -- [3]
 	{
 		["covenantID"] = 0,
@@ -3779,9 +3784,9 @@ BtWQuests_Characters = {
 			[59950] = true,
 			[31832] = true,
 			[31885] = true,
-			[31584] = true,
-			[50143] = true,
 			[42895] = true,
+			[50143] = true,
+			[59980] = true,
 			[31582] = true,
 			[31831] = true,
 			[53745] = true,
@@ -3894,7 +3899,7 @@ BtWQuests_Characters = {
 			[31827] = true,
 			[31576] = true,
 			[31580] = true,
-			[59980] = true,
+			[31584] = true,
 			[31588] = true,
 			[31592] = true,
 			[59944] = true,
@@ -3908,15 +3913,6 @@ BtWQuests_Characters = {
 		["renownLevel"] = 1,
 		["warMode"] = false,
 		["sex"] = 2,
-		["warModeBonus"] = 10,
-		["skills"] = {
-		},
-		["name"] = "Banesmuncy",
-		["faction"] = "Horde",
-		["professions"] = {
-		},
-		["ignoredChains"] = {
-		},
 		["questsActive"] = {
 			[44948] = {
 				{
@@ -3966,6 +3962,14 @@ BtWQuests_Characters = {
 					false, -- [3]
 				}, -- [1]
 			},
+		},
+		["skills"] = {
+		},
+		["name"] = "Banesmuncy",
+		["faction"] = "Horde",
+		["professions"] = {
+		},
+		["ignoredChains"] = {
 		},
 		["reputations"] = {
 			[530] = {
@@ -4025,6 +4029,7 @@ BtWQuests_Characters = {
 				["barValue"] = 3100,
 			},
 		},
+		["warModeBonus"] = 10,
 	}, -- [4]
 	{
 		["covenantID"] = 0,
@@ -4127,11 +4132,11 @@ BtWQuests_Characters = {
 			[59610] = true,
 			[50143] = true,
 			[59980] = true,
-			[56633] = true,
+			[59948] = true,
 			[31576] = true,
 			[53745] = true,
 			[31827] = true,
-			[59948] = true,
+			[58418] = true,
 			[59940] = true,
 			[59932] = true,
 			[38995] = true,
@@ -4156,12 +4161,12 @@ BtWQuests_Characters = {
 			[42892] = true,
 			[32009] = true,
 			[31832] = true,
-			[59611] = true,
+			[53746] = true,
 			[50144] = true,
 			[50146] = true,
 			[53220] = true,
 			[39713] = true,
-			[58336] = true,
+			[59611] = true,
 			[60490] = true,
 			[59938] = true,
 			[31822] = true,
@@ -4222,7 +4227,7 @@ BtWQuests_Characters = {
 			[31826] = true,
 			[59928] = true,
 			[53206] = true,
-			[53746] = true,
+			[58336] = true,
 			[62912] = true,
 			[53740] = true,
 			[53748] = true,
@@ -4235,7 +4240,7 @@ BtWQuests_Characters = {
 			[31556] = true,
 			[31815] = true,
 			[56625] = true,
-			[58418] = true,
+			[56633] = true,
 			[31572] = true,
 			[31831] = true,
 			[31580] = true,
@@ -4251,57 +4256,6 @@ BtWQuests_Characters = {
 		},
 		["xpModifier"] = 0,
 		["renownLevel"] = 1,
-		["questsActive"] = {
-			[44948] = {
-				{
-					"Level 25 Snowfeather Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[44989] = {
-				{
-					"Level 25 Sharptalon Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[31891] = {
-				{
-					"Defeat Traitor Gluk", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Defeat Grazzle the Great", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [2]
-				{
-					"Defeat Kela Grimtotem", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [3]
-				{
-					"Defeat Zoltan", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [4]
-				{
-					"Defeat Elena Flutterfly", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [5]
-			},
-			[40329] = {
-				{
-					"0/5 Pet Battlemasters Defeated", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-		},
-		["warModeBonus"] = 10,
 		["reputations"] = {
 			[530] = {
 				["barMin"] = 3000,
@@ -4360,6 +4314,57 @@ BtWQuests_Characters = {
 				["barMax"] = 9000,
 			},
 		},
+		["questsActive"] = {
+			[44948] = {
+				{
+					"Level 25 Snowfeather Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[44989] = {
+				{
+					"Level 25 Sharptalon Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[31891] = {
+				{
+					"Defeat Traitor Gluk", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Defeat Grazzle the Great", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [2]
+				{
+					"Defeat Kela Grimtotem", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [3]
+				{
+					"Defeat Zoltan", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [4]
+				{
+					"Defeat Elena Flutterfly", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [5]
+			},
+			[40329] = {
+				{
+					"0/5 Pet Battlemasters Defeated", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+		},
+		["warModeBonus"] = 10,
 		["ignoredChains"] = {
 		},
 		["name"] = "Banuumine",
@@ -4534,7 +4539,7 @@ BtWQuests_Characters = {
 			[39750] = true,
 			[62745] = true,
 			[56629] = true,
-			[25648] = true,
+			[27692] = true,
 			[26199] = true,
 			[27848] = true,
 			[42896] = true,
@@ -4547,7 +4552,7 @@ BtWQuests_Characters = {
 			[53739] = true,
 			[54410] = true,
 			[25129] = true,
-			[24626] = true,
+			[25648] = true,
 			[13866] = true,
 			[24642] = true,
 			[25261] = true,
@@ -4568,9 +4573,9 @@ BtWQuests_Characters = {
 			[56630] = true,
 			[27844] = true,
 			[24786] = true,
-			[31832] = true,
-			[26870] = true,
 			[872] = true,
+			[26870] = true,
+			[25189] = true,
 			[14469] = true,
 			[50099] = true,
 			[26878] = true,
@@ -4616,7 +4621,7 @@ BtWQuests_Characters = {
 			[24643] = true,
 			[25194] = true,
 			[31813] = true,
-			[31821] = true,
+			[26200] = true,
 			[14190] = true,
 			[14146] = true,
 			[56632] = true,
@@ -4647,7 +4652,7 @@ BtWQuests_Characters = {
 			[14472] = true,
 			[31582] = true,
 			[31550] = true,
-			[31135] = true,
+			[32668] = true,
 			[29021] = true,
 			[31574] = true,
 			[29027] = true,
@@ -4656,9 +4661,9 @@ BtWQuests_Characters = {
 			[24452] = true,
 			[39658] = true,
 			[57559] = true,
-			[32668] = true,
-			[834] = true,
 			[57096] = true,
+			[834] = true,
+			[31135] = true,
 			[31308] = true,
 			[56633] = true,
 			[835] = true,
@@ -4669,29 +4674,29 @@ BtWQuests_Characters = {
 			[50102] = true,
 			[56729] = true,
 			[42948] = true,
-			[46733] = true,
+			[31830] = true,
 			[31822] = true,
 			[26905] = true,
 			[53743] = true,
-			[25187] = true,
+			[840] = true,
 			[25131] = true,
-			[31870] = true,
+			[25227] = true,
 			[39723] = true,
 			[24644] = true,
 			[26873] = true,
 			[31814] = true,
 			[25179] = true,
-			[31830] = true,
+			[46733] = true,
 			[25195] = true,
 			[24764] = true,
 			[56490] = true,
 			[24813] = true,
-			[39659] = true,
+			[31870] = true,
 			[42741] = true,
 			[844] = true,
 			[26273] = true,
 			[25259] = true,
-			[50103] = true,
+			[26872] = true,
 			[31918] = true,
 			[24772] = true,
 			[24780] = true,
@@ -4700,17 +4705,17 @@ BtWQuests_Characters = {
 			[53121] = true,
 			[24812] = true,
 			[14470] = true,
-			[13963] = true,
+			[50103] = true,
 			[845] = true,
 			[13971] = true,
 			[30984] = true,
 			[53744] = true,
 			[56652] = true,
-			[31551] = true,
 			[14003] = true,
+			[27974] = true,
 			[13995] = true,
 			[13999] = true,
-			[27974] = true,
+			[31551] = true,
 			[28493] = true,
 			[848] = true,
 			[31575] = true,
@@ -4719,13 +4724,13 @@ BtWQuests_Characters = {
 			[25260] = true,
 			[24453] = true,
 			[26274] = true,
-			[32661] = true,
+			[56571] = true,
 			[26769] = true,
-			[850] = true,
+			[32661] = true,
 			[32669] = true,
 			[31812] = true,
+			[56635] = true,
 			[851] = true,
-			[14063] = true,
 			[14067] = true,
 			[27104] = true,
 			[852] = true,
@@ -4733,41 +4738,41 @@ BtWQuests_Characters = {
 			[27112] = true,
 			[42934] = true,
 			[27128] = true,
-			[25172] = true,
+			[14135] = true,
 			[25188] = true,
 			[26202] = true,
 			[53745] = true,
 			[27679] = true,
 			[25132] = true,
-			[14135] = true,
+			[31815] = true,
 			[31159] = true,
 			[855] = true,
 			[31160] = true,
-			[31815] = true,
+			[25172] = true,
 			[31823] = true,
 			[31831] = true,
 			[25196] = true,
 			[50104] = true,
 			[14155] = true,
-			[56635] = true,
+			[14063] = true,
 			[31163] = true,
 			[25236] = true,
 			[39724] = true,
 			[858] = true,
 			[39725] = true,
-			[56571] = true,
+			[850] = true,
 			[24765] = true,
 			[24773] = true,
 			[24781] = true,
 			[27847] = true,
-			[26872] = true,
+			[13963] = true,
 			[53123] = true,
 			[56205] = true,
 			[14215] = true,
 			[50105] = true,
 			[30969] = true,
-			[25227] = true,
-			[840] = true,
+			[39659] = true,
+			[25187] = true,
 			[53746] = true,
 			[25171] = true,
 			[31138] = true,
@@ -4792,10 +4797,10 @@ BtWQuests_Characters = {
 			[31161] = true,
 			[25037] = true,
 			[31548] = true,
-			[26200] = true,
+			[25178] = true,
 			[53124] = true,
 			[6922] = true,
-			[25178] = true,
+			[31821] = true,
 			[50106] = true,
 			[869] = true,
 			[31578] = true,
@@ -4809,7 +4814,7 @@ BtWQuests_Characters = {
 			[25165] = true,
 			[25173] = true,
 			[31824] = true,
-			[25189] = true,
+			[31832] = true,
 			[30982] = true,
 			[25205] = true,
 			[24770] = true,
@@ -4823,7 +4828,7 @@ BtWQuests_Characters = {
 			[24766] = true,
 			[875] = true,
 			[24782] = true,
-			[27692] = true,
+			[24626] = true,
 			[50098] = true,
 			[876] = true,
 			[24814] = true,
@@ -4885,19 +4890,6 @@ BtWQuests_Characters = {
 			},
 		},
 		["faction"] = "Horde",
-		["warModeBonus"] = 10,
-		["warMode"] = true,
-		["name"] = "Brotus",
-		["sex"] = 2,
-		["professions"] = {
-			[182] = true,
-			[356] = true,
-			[794] = true,
-			[773] = true,
-			[185] = true,
-		},
-		["ignoredChains"] = {
-		},
 		["questsActive"] = {
 			[27305] = {
 				{
@@ -5107,6 +5099,18 @@ BtWQuests_Characters = {
 				}, -- [1]
 			},
 		},
+		["warMode"] = true,
+		["name"] = "Brotus",
+		["sex"] = 2,
+		["professions"] = {
+			[182] = true,
+			[356] = true,
+			[185] = true,
+			[794] = true,
+			[773] = true,
+		},
+		["ignoredChains"] = {
+		},
 		["reputations"] = {
 			[911] = {
 				["barMin"] = 9000,
@@ -5277,6 +5281,7 @@ BtWQuests_Characters = {
 				["barValue"] = 0,
 			},
 		},
+		["warModeBonus"] = 10,
 	}, -- [6]
 	{
 		["covenantID"] = 0,
@@ -5502,6 +5507,7 @@ BtWQuests_Characters = {
 		},
 		["xpModifier"] = 0,
 		["renownLevel"] = 1,
+		["warModeBonus"] = 10,
 		["reputations"] = {
 			[530] = {
 				["barMin"] = 0,
@@ -5610,7 +5616,6 @@ BtWQuests_Characters = {
 				}, -- [5]
 			},
 		},
-		["warModeBonus"] = 10,
 		["ignoredChains"] = {
 		},
 		["name"] = "Charbeatic",
@@ -5760,14 +5765,14 @@ BtWQuests_Characters = {
 			[50146] = true,
 			[59930] = true,
 			[31308] = true,
-			[31571] = true,
+			[31316] = true,
 			[31583] = true,
 			[31551] = true,
 			[31555] = true,
 			[31814] = true,
 			[59938] = true,
 			[31822] = true,
-			[31826] = true,
+			[31571] = true,
 			[31575] = true,
 			[31579] = true,
 			[59978] = true,
@@ -5813,7 +5818,7 @@ BtWQuests_Characters = {
 			[50098] = true,
 			[50106] = true,
 			[56489] = true,
-			[31316] = true,
+			[31826] = true,
 			[59946] = true,
 			[59928] = true,
 			[53206] = true,
@@ -5846,6 +5851,7 @@ BtWQuests_Characters = {
 		},
 		["xpModifier"] = 0,
 		["renownLevel"] = 1,
+		["warModeBonus"] = 10,
 		["reputations"] = {
 			[530] = {
 				["barMin"] = 0,
@@ -5954,7 +5960,6 @@ BtWQuests_Characters = {
 				}, -- [5]
 			},
 		},
-		["warModeBonus"] = 10,
 		["ignoredChains"] = {
 		},
 		["name"] = "Dachas",
@@ -7350,203 +7355,6 @@ BtWQuests_Characters = {
 		},
 		["xpModifier"] = 0,
 		["renownLevel"] = 1,
-		["questsActive"] = {
-			[50733] = {
-			},
-			[53028] = {
-			},
-			[13041] = {
-				{
-					"0/1 Chalcedony", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[52070] = {
-			},
-			[53436] = {
-				{
-					"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[42433] = {
-				{
-					"Complete the mission \"Ancient Magic\"", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[57686] = {
-				{
-					"0/40 Echo of Mortality", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[44948] = {
-				{
-					"Level 25 Snowfeather Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[52544] = {
-				{
-					"90/100 War Resources", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[40329] = {
-				{
-					"0/5 Pet Battlemasters Defeated", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[50825] = {
-				{
-					"Defeat Lord Stormsong", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[60545] = {
-				{
-					"1/1 Learn about your leaders' fate", -- [1]
-					"object", -- [2]
-					true, -- [3]
-				}, -- [1]
-				{
-					"0/1 Take the Death Gate to Acherus", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [2]
-			},
-			[34692] = {
-				{
-					"Use the Command Table", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[51569] = {
-				{
-					"0/1 Choose a foothold", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[12466] = {
-			},
-			[25191] = {
-				{
-					"Survey Complete", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[26013] = {
-			},
-			[29439] = {
-			},
-			[47253] = {
-				{
-					"0/1 Lord Kazzak slain", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"0/1 Azuregos slain", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [2]
-				{
-					"0/1 Dragon of Nightmare slain", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [3]
-			},
-			[43441] = {
-				{
-					"0/1 Choose a second artifact to pursue", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[28398] = {
-				{
-					"0/6 Twilight Emissary slain", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"0/1 Loregrain's Grimoire", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [2]
-			},
-			[57300] = {
-				{
-					"0/500 Earn Honor in Korrak's Revenge", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[26838] = {
-			},
-			[31891] = {
-				{
-					"Defeat Traitor Gluk", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Defeat Grazzle the Great", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [2]
-				{
-					"Defeat Kela Grimtotem", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [3]
-				{
-					"Defeat Zoltan", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [4]
-				{
-					"Defeat Elena Flutterfly", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [5]
-			},
-			[44989] = {
-				{
-					"Level 25 Sharptalon Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[37433] = {
-				{
-					"0/1 Speak with Lieutenant Thorn to enter Proving Grounds", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"0/1 Complete a Bronze Trial", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [2]
-			},
-			[26897] = {
-			},
-		},
-		["warModeBonus"] = 15,
 		["reputations"] = {
 			[1073] = {
 				["barMin"] = 9000,
@@ -7794,6 +7602,203 @@ BtWQuests_Characters = {
 				["barMax"] = 3000,
 			},
 		},
+		["questsActive"] = {
+			[50733] = {
+			},
+			[53028] = {
+			},
+			[13041] = {
+				{
+					"0/1 Chalcedony", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[52070] = {
+			},
+			[53436] = {
+				{
+					"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[42433] = {
+				{
+					"Complete the mission \"Ancient Magic\"", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[57686] = {
+				{
+					"0/40 Echo of Mortality", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[44948] = {
+				{
+					"Level 25 Snowfeather Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[52544] = {
+				{
+					"90/100 War Resources", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[40329] = {
+				{
+					"0/5 Pet Battlemasters Defeated", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[50825] = {
+				{
+					"Defeat Lord Stormsong", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[60545] = {
+				{
+					"1/1 Learn about your leaders' fate", -- [1]
+					"object", -- [2]
+					true, -- [3]
+				}, -- [1]
+				{
+					"0/1 Take the Death Gate to Acherus", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [2]
+			},
+			[34692] = {
+				{
+					"Use the Command Table", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[51569] = {
+				{
+					"0/1 Choose a foothold", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[12466] = {
+			},
+			[25191] = {
+				{
+					"Survey Complete", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[26013] = {
+			},
+			[44989] = {
+				{
+					"Level 25 Sharptalon Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[47253] = {
+				{
+					"0/1 Lord Kazzak slain", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"0/1 Azuregos slain", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [2]
+				{
+					"0/1 Dragon of Nightmare slain", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [3]
+			},
+			[43441] = {
+				{
+					"0/1 Choose a second artifact to pursue", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[28398] = {
+				{
+					"0/6 Twilight Emissary slain", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"0/1 Loregrain's Grimoire", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [2]
+			},
+			[57300] = {
+				{
+					"0/500 Earn Honor in Korrak's Revenge", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[26838] = {
+			},
+			[31891] = {
+				{
+					"Defeat Traitor Gluk", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Defeat Grazzle the Great", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [2]
+				{
+					"Defeat Kela Grimtotem", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [3]
+				{
+					"Defeat Zoltan", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [4]
+				{
+					"Defeat Elena Flutterfly", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [5]
+			},
+			[26897] = {
+			},
+			[37433] = {
+				{
+					"0/1 Speak with Lieutenant Thorn to enter Proving Grounds", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"0/1 Complete a Bronze Trial", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [2]
+			},
+			[29439] = {
+			},
+		},
+		["warModeBonus"] = 15,
 		["ignoredChains"] = {
 		},
 		["name"] = "Darnastris",
@@ -7999,14 +8004,6 @@ BtWQuests_Characters = {
 		["skills"] = {
 		},
 		["faction"] = "Horde",
-		["warModeBonus"] = 10,
-		["warMode"] = true,
-		["name"] = "Datgore",
-		["sex"] = 2,
-		["professions"] = {
-		},
-		["ignoredChains"] = {
-		},
 		["questsActive"] = {
 			[54185] = {
 				{
@@ -8054,6 +8051,13 @@ BtWQuests_Characters = {
 					false, -- [3]
 				}, -- [5]
 			},
+		},
+		["warMode"] = true,
+		["name"] = "Datgore",
+		["sex"] = 2,
+		["professions"] = {
+		},
+		["ignoredChains"] = {
 		},
 		["reputations"] = {
 			[530] = {
@@ -8113,6 +8117,7 @@ BtWQuests_Characters = {
 				["barValue"] = 3100,
 			},
 		},
+		["warModeBonus"] = 10,
 	}, -- [10]
 	{
 		["covenantID"] = 0,
@@ -8352,8 +8357,8 @@ BtWQuests_Characters = {
 			[48454] = true,
 			[51680] = true,
 			[31573] = true,
-			[43926] = true,
 			[48014] = true,
+			[53124] = true,
 			[49940] = true,
 			[56631] = true,
 			[49972] = true,
@@ -8398,19 +8403,19 @@ BtWQuests_Characters = {
 			[42947] = true,
 			[50101] = true,
 			[31552] = true,
-			[40616] = true,
+			[49814] = true,
 			[30983] = true,
 			[53742] = true,
 			[40983] = true,
-			[31582] = true,
+			[47259] = true,
 			[47706] = true,
 			[40009] = true,
-			[47259] = true,
+			[31582] = true,
 			[31550] = true,
 			[49766] = true,
 			[47738] = true,
 			[49287] = true,
-			[49814] = true,
+			[40616] = true,
 			[31590] = true,
 			[56489] = true,
 			[42229] = true,
@@ -8420,8 +8425,8 @@ BtWQuests_Characters = {
 			[50948] = true,
 			[57096] = true,
 			[40760] = true,
+			[56633] = true,
 			[13807] = true,
-			[47435] = true,
 			[51539] = true,
 			[51555] = true,
 			[49495] = true,
@@ -8429,10 +8434,10 @@ BtWQuests_Characters = {
 			[48026] = true,
 			[56729] = true,
 			[50102] = true,
-			[49144] = true,
 			[52210] = true,
-			[50150] = true,
 			[53743] = true,
+			[50150] = true,
+			[49144] = true,
 			[50677] = true,
 			[47518] = true,
 			[31822] = true,
@@ -8473,19 +8478,19 @@ BtWQuests_Characters = {
 			[51796] = true,
 			[49768] = true,
 			[60004] = true,
-			[46734] = true,
+			[31575] = true,
 			[31583] = true,
 			[40123] = true,
 			[47261] = true,
-			[47437] = true,
+			[46926] = true,
 			[52946] = true,
 			[52451] = true,
 			[46846] = true,
 			[56571] = true,
 			[39724] = true,
 			[48938] = true,
+			[47437] = true,
 			[56635] = true,
-			[46926] = true,
 			[47741] = true,
 			[49801] = true,
 			[49274] = true,
@@ -8510,9 +8515,9 @@ BtWQuests_Characters = {
 			[60116] = true,
 			[50950] = true,
 			[47310] = true,
-			[31575] = true,
-			[60117] = true,
 			[49289] = true,
+			[60117] = true,
+			[46734] = true,
 			[49145] = true,
 			[39725] = true,
 			[62225] = true,
@@ -8527,7 +8532,7 @@ BtWQuests_Characters = {
 			[50105] = true,
 			[30969] = true,
 			[62254] = true,
-			[56633] = true,
+			[47435] = true,
 			[53746] = true,
 			[49147] = true,
 			[60932] = true,
@@ -8553,7 +8558,7 @@ BtWQuests_Characters = {
 			[46928] = true,
 			[49004] = true,
 			[49919] = true,
-			[53124] = true,
+			[43926] = true,
 			[50074] = true,
 			[49285] = true,
 			[50106] = true,
@@ -8653,19 +8658,6 @@ BtWQuests_Characters = {
 			},
 		},
 		["faction"] = "Horde",
-		["warModeBonus"] = 10,
-		["warMode"] = false,
-		["name"] = "Durlok",
-		["sex"] = 2,
-		["professions"] = {
-			[182] = true,
-			[356] = true,
-			[794] = true,
-			[171] = true,
-			[185] = true,
-		},
-		["ignoredChains"] = {
-		},
 		["questsActive"] = {
 			[51448] = {
 				{
@@ -8695,11 +8687,9 @@ BtWQuests_Characters = {
 					false, -- [3]
 				}, -- [1]
 			},
-			[53101] = {
-			},
-			[48639] = {
+			[40329] = {
 				{
-					"0/4 Complete 4 Army of the Light World Quests", -- [1]
+					"0/5 Pet Battlemasters Defeated", -- [1]
 					"object", -- [2]
 					false, -- [3]
 				}, -- [1]
@@ -8713,12 +8703,7 @@ BtWQuests_Characters = {
 			},
 			[40643] = {
 			},
-			[48642] = {
-				{
-					"0/4 Complete 4 Argussian Reach World Quests", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
+			[51432] = {
 			},
 			[51464] = {
 				{
@@ -8727,12 +8712,14 @@ BtWQuests_Characters = {
 					false, -- [3]
 				}, -- [1]
 			},
-			[44948] = {
+			[50598] = {
 				{
-					"Level 25 Snowfeather Hatchling", -- [1]
+					"0/4 Complete 4 world quests in Zuldazar.", -- [1]
 					"object", -- [2]
 					false, -- [3]
 				}, -- [1]
+			},
+			[53101] = {
 			},
 			[44989] = {
 				{
@@ -8748,31 +8735,33 @@ BtWQuests_Characters = {
 					false, -- [3]
 				}, -- [1]
 			},
-			[56120] = {
+			[44948] = {
 				{
-					"0/4 Complete world quests in Nazjatar", -- [1]
+					"Level 25 Snowfeather Hatchling", -- [1]
 					"object", -- [2]
 					false, -- [3]
 				}, -- [1]
 			},
-			[40329] = {
+			[50603] = {
 				{
-					"0/5 Pet Battlemasters Defeated", -- [1]
+					"0/4 Complete 4 world quests in Vol'dun", -- [1]
 					"object", -- [2]
 					false, -- [3]
 				}, -- [1]
 			},
-			[61874] = {
+			[42420] = {
 				{
-					"1/1 Learn about your leaders' fate", -- [1]
+					"0/4 Complete 4 world quests in Azsuna", -- [1]
 					"object", -- [2]
-					true, -- [3]
-				}, -- [1]
-				{
-					"0/1 Take the Death Gate to Acherus", -- [1]
-					"monster", -- [2]
 					false, -- [3]
-				}, -- [2]
+				}, -- [1]
+			},
+			[42421] = {
+				{
+					"0/4 Complete 4 world quests in Suramar", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
 			},
 			[31891] = {
 				{
@@ -8801,19 +8790,17 @@ BtWQuests_Characters = {
 					false, -- [3]
 				}, -- [5]
 			},
-			[50606] = {
+			[61874] = {
 				{
-					"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
+					"1/1 Learn about your leaders' fate", -- [1]
 					"object", -- [2]
-					false, -- [3]
+					true, -- [3]
 				}, -- [1]
-			},
-			[42422] = {
 				{
-					"0/4 Complete 4 Wardens World Quests", -- [1]
-					"object", -- [2]
+					"0/1 Take the Death Gate to Acherus", -- [1]
+					"monster", -- [2]
 					false, -- [3]
-				}, -- [1]
+				}, -- [2]
 			},
 			[47105] = {
 				{
@@ -8822,8 +8809,25 @@ BtWQuests_Characters = {
 					false, -- [3]
 				}, -- [1]
 			},
-			[51432] = {
+			[48641] = {
+				{
+					"0/4 Complete 4 world quests on the Broken Shore", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
 			},
+		},
+		["warMode"] = false,
+		["name"] = "Durlok",
+		["sex"] = 2,
+		["professions"] = {
+			[182] = true,
+			[356] = true,
+			[185] = true,
+			[794] = true,
+			[171] = true,
+		},
+		["ignoredChains"] = {
 		},
 		["reputations"] = {
 			[889] = {
@@ -9107,6 +9111,7 @@ BtWQuests_Characters = {
 				["barValue"] = 0,
 			},
 		},
+		["warModeBonus"] = 10,
 	}, -- [11]
 	{
 		["class"] = 7,
@@ -9266,55 +9271,6 @@ BtWQuests_Characters = {
 			[31571] = true,
 		},
 		["xpModifier"] = 0,
-		["questsActive"] = {
-			[54185] = {
-				{
-					"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Pulverizer Bot Mk 6001 defeated.", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [2]
-			},
-			[44989] = {
-				{
-					"Level 25 Sharptalon Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[31891] = {
-				{
-					"Defeat Traitor Gluk", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Defeat Grazzle the Great", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [2]
-				{
-					"Defeat Kela Grimtotem", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [3]
-				{
-					"Defeat Zoltan", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [4]
-				{
-					"Defeat Elena Flutterfly", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [5]
-			},
-		},
-		["warModeBonus"] = 10,
 		["reputations"] = {
 			[81] = {
 				["barMin"] = 3000,
@@ -9394,6 +9350,55 @@ BtWQuests_Characters = {
 				["barMax"] = 9000,
 			},
 		},
+		["questsActive"] = {
+			[54185] = {
+				{
+					"0/1 Ask Micro Zoox to teleport you inside of Gnomeregan", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Pulverizer Bot Mk 6001 defeated.", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [2]
+			},
+			[44989] = {
+				{
+					"Level 25 Sharptalon Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[31891] = {
+				{
+					"Defeat Traitor Gluk", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Defeat Grazzle the Great", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [2]
+				{
+					"Defeat Kela Grimtotem", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [3]
+				{
+					"Defeat Zoltan", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [4]
+				{
+					"Defeat Elena Flutterfly", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [5]
+			},
+		},
+		["warModeBonus"] = 10,
 		["ignoredChains"] = {
 		},
 		["name"] = "Fantastiburo",
@@ -9503,9 +9508,9 @@ BtWQuests_Characters = {
 			[31885] = true,
 			[31832] = true,
 			[50143] = true,
-			[59980] = true,
-			[59610] = true,
 			[42895] = true,
+			[59610] = true,
+			[31584] = true,
 			[53745] = true,
 			[59945] = true,
 			[31831] = true,
@@ -9539,17 +9544,17 @@ BtWQuests_Characters = {
 			[53220] = true,
 			[39713] = true,
 			[53746] = true,
-			[31571] = true,
+			[31316] = true,
 			[50146] = true,
 			[31308] = true,
-			[31826] = true,
+			[31571] = true,
 			[31583] = true,
 			[31551] = true,
 			[31555] = true,
 			[31814] = true,
 			[59938] = true,
 			[59946] = true,
-			[31316] = true,
+			[31826] = true,
 			[31575] = true,
 			[31579] = true,
 			[59978] = true,
@@ -9616,7 +9621,7 @@ BtWQuests_Characters = {
 			[31827] = true,
 			[31576] = true,
 			[31580] = true,
-			[31584] = true,
+			[59980] = true,
 			[31588] = true,
 			[31592] = true,
 			[59942] = true,
@@ -9630,15 +9635,6 @@ BtWQuests_Characters = {
 		["renownLevel"] = 1,
 		["warMode"] = false,
 		["sex"] = 2,
-		["warModeBonus"] = 10,
-		["skills"] = {
-		},
-		["name"] = "Guufnah",
-		["faction"] = "Horde",
-		["professions"] = {
-		},
-		["ignoredChains"] = {
-		},
 		["questsActive"] = {
 			[44948] = {
 				{
@@ -9688,6 +9684,14 @@ BtWQuests_Characters = {
 					false, -- [3]
 				}, -- [1]
 			},
+		},
+		["skills"] = {
+		},
+		["name"] = "Guufnah",
+		["faction"] = "Horde",
+		["professions"] = {
+		},
+		["ignoredChains"] = {
 		},
 		["reputations"] = {
 			[530] = {
@@ -9747,6 +9751,7 @@ BtWQuests_Characters = {
 				["barValue"] = 400,
 			},
 		},
+		["warModeBonus"] = 10,
 	}, -- [13]
 	{
 		["covenantID"] = 0,
@@ -10573,6 +10578,190 @@ BtWQuests_Characters = {
 		},
 		["xpModifier"] = 0,
 		["renownLevel"] = 1,
+		["reputations"] = {
+			[2160] = {
+				["barMin"] = 9000,
+				["name"] = "Proudmoore Admiralty",
+				["standing"] = 6,
+				["barValue"] = 9410,
+				["barMax"] = 21000,
+			},
+			[2164] = {
+				["barMin"] = 0,
+				["name"] = "Champions of Azeroth",
+				["standing"] = 4,
+				["barValue"] = 2000,
+				["barMax"] = 3000,
+			},
+			[1859] = {
+				["barMin"] = 3000,
+				["name"] = "The Nightfallen",
+				["standing"] = 5,
+				["barValue"] = 6100,
+				["barMax"] = 9000,
+			},
+			[1828] = {
+				["barMin"] = 3000,
+				["name"] = "Highmountain Tribe",
+				["standing"] = 5,
+				["barValue"] = 4835,
+				["barMax"] = 9000,
+			},
+			[72] = {
+				["barMin"] = 3000,
+				["name"] = "Stormwind",
+				["standing"] = 5,
+				["barValue"] = 3100,
+				["barMax"] = 9000,
+			},
+			[1118] = {
+				["barMin"] = 0,
+				["name"] = "Classic",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+			[1894] = {
+				["barMin"] = 0,
+				["name"] = "The Wardens",
+				["standing"] = 4,
+				["barMax"] = 3000,
+				["barValue"] = 0,
+			},
+			[1090] = {
+				["barMin"] = 0,
+				["name"] = "Kirin Tor",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+			[1834] = {
+				["barMin"] = 0,
+				["name"] = "Legion",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+			[1091] = {
+				["barMin"] = 0,
+				["name"] = "The Wyrmrest Accord",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+			[930] = {
+				["barMin"] = 3000,
+				["name"] = "Exodar",
+				["standing"] = 5,
+				["barValue"] = 3100,
+				["barMax"] = 9000,
+			},
+			[2159] = {
+				["barMin"] = 3000,
+				["name"] = "7th Legion",
+				["standing"] = 5,
+				["barValue"] = 3150,
+				["barMax"] = 9000,
+			},
+			[1094] = {
+				["barMin"] = 0,
+				["name"] = "The Silver Covenant",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+			[54] = {
+				["barMin"] = 3000,
+				["name"] = "Gnomeregan",
+				["standing"] = 5,
+				["barValue"] = 3100,
+				["barMax"] = 9000,
+			},
+			[47] = {
+				["barMin"] = 3000,
+				["name"] = "Ironforge",
+				["standing"] = 5,
+				["barValue"] = 3100,
+				["barMax"] = 9000,
+			},
+			[1097] = {
+				["barMin"] = 0,
+				["name"] = "Wrath of the Lich King",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+			[2163] = {
+				["barMin"] = 0,
+				["name"] = "Tortollan Seekers",
+				["standing"] = 4,
+				["barMax"] = 3000,
+				["barValue"] = 620,
+			},
+			[469] = {
+				["barMin"] = 3000,
+				["name"] = "Alliance",
+				["standing"] = 5,
+				["barValue"] = 3300,
+				["barMax"] = 9000,
+			},
+			[69] = {
+				["barMin"] = 3000,
+				["name"] = "Darnassus",
+				["standing"] = 5,
+				["barValue"] = 4000,
+				["barMax"] = 9000,
+			},
+			[1037] = {
+				["barMin"] = 0,
+				["name"] = "Alliance Vanguard",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+			[2161] = {
+				["barMin"] = 0,
+				["name"] = "Order of Embers",
+				["standing"] = 4,
+				["barValue"] = 500,
+				["barMax"] = 3000,
+			},
+			[1134] = {
+				["barMin"] = 0,
+				["name"] = "Gilneas",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+			[1098] = {
+				["barMin"] = 0,
+				["name"] = "Knights of the Ebon Blade",
+				["standing"] = 4,
+				["barMax"] = 3000,
+				["barValue"] = 0,
+			},
+			[1353] = {
+				["barMin"] = 3000,
+				["name"] = "Tushui Pandaren",
+				["standing"] = 5,
+				["barValue"] = 3100,
+				["barMax"] = 9000,
+			},
+			[1106] = {
+				["barMin"] = 3000,
+				["name"] = "Argent Crusade",
+				["standing"] = 5,
+				["barMax"] = 9000,
+				["barValue"] = 6231,
+			},
+			[2104] = {
+				["barMin"] = 0,
+				["name"] = "Battle for Azeroth",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+		},
 		["questsActive"] = {
 			[49036] = {
 				{
@@ -10879,190 +11068,6 @@ BtWQuests_Characters = {
 			},
 		},
 		["warModeBonus"] = 15,
-		["reputations"] = {
-			[2160] = {
-				["barMin"] = 9000,
-				["name"] = "Proudmoore Admiralty",
-				["standing"] = 6,
-				["barValue"] = 9410,
-				["barMax"] = 21000,
-			},
-			[2164] = {
-				["barMin"] = 0,
-				["name"] = "Champions of Azeroth",
-				["standing"] = 4,
-				["barValue"] = 2000,
-				["barMax"] = 3000,
-			},
-			[1859] = {
-				["barMin"] = 3000,
-				["name"] = "The Nightfallen",
-				["standing"] = 5,
-				["barValue"] = 6100,
-				["barMax"] = 9000,
-			},
-			[1828] = {
-				["barMin"] = 3000,
-				["name"] = "Highmountain Tribe",
-				["standing"] = 5,
-				["barValue"] = 4835,
-				["barMax"] = 9000,
-			},
-			[72] = {
-				["barMin"] = 3000,
-				["name"] = "Stormwind",
-				["standing"] = 5,
-				["barValue"] = 3100,
-				["barMax"] = 9000,
-			},
-			[1118] = {
-				["barMin"] = 0,
-				["name"] = "Classic",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-			[1894] = {
-				["barMin"] = 0,
-				["name"] = "The Wardens",
-				["standing"] = 4,
-				["barMax"] = 3000,
-				["barValue"] = 0,
-			},
-			[1090] = {
-				["barMin"] = 0,
-				["name"] = "Kirin Tor",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-			[1834] = {
-				["barMin"] = 0,
-				["name"] = "Legion",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-			[1091] = {
-				["barMin"] = 0,
-				["name"] = "The Wyrmrest Accord",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-			[930] = {
-				["barMin"] = 3000,
-				["name"] = "Exodar",
-				["standing"] = 5,
-				["barValue"] = 3100,
-				["barMax"] = 9000,
-			},
-			[2159] = {
-				["barMin"] = 3000,
-				["name"] = "7th Legion",
-				["standing"] = 5,
-				["barValue"] = 3150,
-				["barMax"] = 9000,
-			},
-			[1094] = {
-				["barMin"] = 0,
-				["name"] = "The Silver Covenant",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-			[54] = {
-				["barMin"] = 3000,
-				["name"] = "Gnomeregan",
-				["standing"] = 5,
-				["barValue"] = 3100,
-				["barMax"] = 9000,
-			},
-			[47] = {
-				["barMin"] = 3000,
-				["name"] = "Ironforge",
-				["standing"] = 5,
-				["barValue"] = 3100,
-				["barMax"] = 9000,
-			},
-			[1097] = {
-				["barMin"] = 0,
-				["name"] = "Wrath of the Lich King",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-			[2163] = {
-				["barMin"] = 0,
-				["name"] = "Tortollan Seekers",
-				["standing"] = 4,
-				["barMax"] = 3000,
-				["barValue"] = 620,
-			},
-			[469] = {
-				["barMin"] = 3000,
-				["name"] = "Alliance",
-				["standing"] = 5,
-				["barValue"] = 3300,
-				["barMax"] = 9000,
-			},
-			[69] = {
-				["barMin"] = 3000,
-				["name"] = "Darnassus",
-				["standing"] = 5,
-				["barValue"] = 4000,
-				["barMax"] = 9000,
-			},
-			[1037] = {
-				["barMin"] = 0,
-				["name"] = "Alliance Vanguard",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-			[2161] = {
-				["barMin"] = 0,
-				["name"] = "Order of Embers",
-				["standing"] = 4,
-				["barValue"] = 500,
-				["barMax"] = 3000,
-			},
-			[1134] = {
-				["barMin"] = 0,
-				["name"] = "Gilneas",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-			[1098] = {
-				["barMin"] = 0,
-				["name"] = "Knights of the Ebon Blade",
-				["standing"] = 4,
-				["barMax"] = 3000,
-				["barValue"] = 0,
-			},
-			[1353] = {
-				["barMin"] = 3000,
-				["name"] = "Tushui Pandaren",
-				["standing"] = 5,
-				["barValue"] = 3100,
-				["barMax"] = 9000,
-			},
-			[1106] = {
-				["barMin"] = 3000,
-				["name"] = "Argent Crusade",
-				["standing"] = 5,
-				["barMax"] = 9000,
-				["barValue"] = 6231,
-			},
-			[2104] = {
-				["barMin"] = 0,
-				["name"] = "Battle for Azeroth",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-		},
 		["ignoredChains"] = {
 		},
 		["name"] = "Illingrath",
@@ -11172,8 +11177,8 @@ BtWQuests_Characters = {
 			[31885] = true,
 			[59941] = true,
 			[50143] = true,
-			[59980] = true,
 			[42895] = true,
+			[31584] = true,
 			[53745] = true,
 			[59610] = true,
 			[31831] = true,
@@ -11211,14 +11216,14 @@ BtWQuests_Characters = {
 			[53206] = true,
 			[59928] = true,
 			[59938] = true,
-			[31316] = true,
+			[31826] = true,
 			[59978] = true,
 			[31551] = true,
 			[31555] = true,
 			[59930] = true,
 			[31308] = true,
 			[31822] = true,
-			[31571] = true,
+			[59954] = true,
 			[31575] = true,
 			[31579] = true,
 			[31583] = true,
@@ -11264,11 +11269,11 @@ BtWQuests_Characters = {
 			[50098] = true,
 			[50106] = true,
 			[56489] = true,
-			[59954] = true,
+			[31571] = true,
 			[59946] = true,
 			[31814] = true,
 			[50146] = true,
-			[31826] = true,
+			[31316] = true,
 			[62912] = true,
 			[53740] = true,
 			[39723] = true,
@@ -11285,7 +11290,7 @@ BtWQuests_Characters = {
 			[31827] = true,
 			[31576] = true,
 			[31580] = true,
-			[31584] = true,
+			[59980] = true,
 			[31588] = true,
 			[31592] = true,
 			[59942] = true,
@@ -11299,64 +11304,6 @@ BtWQuests_Characters = {
 		["renownLevel"] = 1,
 		["warMode"] = false,
 		["sex"] = 2,
-		["questsActive"] = {
-			[44948] = {
-				{
-					"Level 25 Snowfeather Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[44989] = {
-				{
-					"Level 25 Sharptalon Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[31891] = {
-				{
-					"Defeat Traitor Gluk", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Defeat Grazzle the Great", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [2]
-				{
-					"Defeat Kela Grimtotem", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [3]
-				{
-					"Defeat Zoltan", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [4]
-				{
-					"Defeat Elena Flutterfly", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [5]
-			},
-			[40329] = {
-				{
-					"0/5 Pet Battlemasters Defeated", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-		},
-		["skills"] = {
-		},
-		["name"] = "Jasmoney",
-		["faction"] = "Horde",
-		["professions"] = {
-		},
-		["ignoredChains"] = {
-		},
 		["reputations"] = {
 			[530] = {
 				["barMin"] = 0,
@@ -11415,7 +11362,65 @@ BtWQuests_Characters = {
 				["barValue"] = 3100,
 			},
 		},
+		["skills"] = {
+		},
+		["name"] = "Jasmoney",
+		["faction"] = "Horde",
+		["professions"] = {
+		},
+		["ignoredChains"] = {
+		},
 		["warModeBonus"] = 10,
+		["questsActive"] = {
+			[44948] = {
+				{
+					"Level 25 Snowfeather Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[44989] = {
+				{
+					"Level 25 Sharptalon Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[31891] = {
+				{
+					"Defeat Traitor Gluk", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Defeat Grazzle the Great", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [2]
+				{
+					"Defeat Kela Grimtotem", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [3]
+				{
+					"Defeat Zoltan", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [4]
+				{
+					"Defeat Elena Flutterfly", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [5]
+			},
+			[40329] = {
+				{
+					"0/5 Pet Battlemasters Defeated", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+		},
 	}, -- [15]
 	{
 		["class"] = 6,
@@ -11548,10 +11553,10 @@ BtWQuests_Characters = {
 			[42892] = true,
 			[31584] = true,
 			[56624] = true,
-			[31568] = true,
+			[31823] = true,
 			[31576] = true,
 			[31572] = true,
-			[31823] = true,
+			[56633] = true,
 			[56625] = true,
 			[42902] = true,
 			[42910] = true,
@@ -11580,7 +11585,7 @@ BtWQuests_Characters = {
 			[31556] = true,
 			[31815] = true,
 			[31309] = true,
-			[56633] = true,
+			[31568] = true,
 			[31827] = true,
 			[31831] = true,
 			[31580] = true,
@@ -11596,6 +11601,42 @@ BtWQuests_Characters = {
 		},
 		["xpModifier"] = 0,
 		["renownLevel"] = 0,
+		["questsActive"] = {
+			[44989] = {
+				{
+					"Level 25 Sharptalon Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[31891] = {
+				{
+					"Defeat Traitor Gluk", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Defeat Grazzle the Great", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [2]
+				{
+					"Defeat Kela Grimtotem", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [3]
+				{
+					"Defeat Zoltan", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [4]
+				{
+					"Defeat Elena Flutterfly", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [5]
+			},
+		},
 		["warModeBonus"] = 10,
 		["reputations"] = {
 			[530] = {
@@ -11653,42 +11694,6 @@ BtWQuests_Characters = {
 				["standing"] = 5,
 				["barValue"] = 3100,
 				["barMax"] = 9000,
-			},
-		},
-		["questsActive"] = {
-			[44989] = {
-				{
-					"Level 25 Sharptalon Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[31891] = {
-				{
-					"Defeat Traitor Gluk", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Defeat Grazzle the Great", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [2]
-				{
-					"Defeat Kela Grimtotem", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [3]
-				{
-					"Defeat Zoltan", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [4]
-				{
-					"Defeat Elena Flutterfly", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [5]
 			},
 		},
 		["ignoredChains"] = {
@@ -11884,49 +11889,6 @@ BtWQuests_Characters = {
 		["skills"] = {
 		},
 		["faction"] = "Alliance",
-		["questsActive"] = {
-			[44989] = {
-				{
-					"Level 25 Sharptalon Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[31891] = {
-				{
-					"Defeat Traitor Gluk", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Defeat Grazzle the Great", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [2]
-				{
-					"Defeat Kela Grimtotem", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [3]
-				{
-					"Defeat Zoltan", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [4]
-				{
-					"Defeat Elena Flutterfly", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [5]
-			},
-		},
-		["warMode"] = false,
-		["name"] = "Kelvalatar",
-		["sex"] = 2,
-		["professions"] = {
-		},
-		["ignoredChains"] = {
-		},
 		["reputations"] = {
 			[1134] = {
 				["barMin"] = 0,
@@ -11992,7 +11954,50 @@ BtWQuests_Characters = {
 				["barValue"] = 3100,
 			},
 		},
+		["warMode"] = false,
+		["name"] = "Kelvalatar",
+		["sex"] = 2,
+		["professions"] = {
+		},
+		["ignoredChains"] = {
+		},
 		["warModeBonus"] = 25,
+		["questsActive"] = {
+			[44989] = {
+				{
+					"Level 25 Sharptalon Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[31891] = {
+				{
+					"Defeat Traitor Gluk", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Defeat Grazzle the Great", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [2]
+				{
+					"Defeat Kela Grimtotem", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [3]
+				{
+					"Defeat Zoltan", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [4]
+				{
+					"Defeat Elena Flutterfly", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [5]
+			},
+		},
 	}, -- [17]
 	{
 		["covenantID"] = 0,
@@ -12287,6 +12292,96 @@ BtWQuests_Characters = {
 			},
 		},
 		["faction"] = "Horde",
+		["reputations"] = {
+			[1216] = {
+				["barMin"] = 9000,
+				["name"] = "Shang Xi's Academy",
+				["standing"] = 6,
+				["barMax"] = 21000,
+				["barValue"] = 17500,
+			},
+			[81] = {
+				["barMin"] = 3000,
+				["name"] = "Thunder Bluff",
+				["standing"] = 5,
+				["barValue"] = 4193,
+				["barMax"] = 9000,
+			},
+			[1352] = {
+				["barMin"] = 3000,
+				["name"] = "Huojin Pandaren",
+				["standing"] = 5,
+				["barValue"] = 7640,
+				["barMax"] = 9000,
+			},
+			[67] = {
+				["barMin"] = 3000,
+				["name"] = "Horde",
+				["standing"] = 5,
+				["barValue"] = 4593,
+				["barMax"] = 9000,
+			},
+			[911] = {
+				["barMin"] = 0,
+				["name"] = "Silvermoon City",
+				["standing"] = 4,
+				["barValue"] = 1493,
+				["barMax"] = 3000,
+			},
+			[68] = {
+				["barMin"] = 0,
+				["name"] = "Undercity",
+				["standing"] = 4,
+				["barValue"] = 1593,
+				["barMax"] = 3000,
+			},
+			[530] = {
+				["barMin"] = 3000,
+				["name"] = "Darkspear Trolls",
+				["standing"] = 5,
+				["barValue"] = 4193,
+				["barMax"] = 9000,
+			},
+			[1245] = {
+				["barMin"] = 0,
+				["name"] = "Mists of Pandaria",
+				["standing"] = 4,
+				["barMax"] = 3000,
+				["barValue"] = 0,
+			},
+			[1118] = {
+				["barMin"] = 0,
+				["name"] = "Classic",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+			[1133] = {
+				["barMin"] = 3000,
+				["name"] = "Bilgewater Cartel",
+				["standing"] = 5,
+				["barValue"] = 4193,
+				["barMax"] = 9000,
+			},
+			[76] = {
+				["barMin"] = 3000,
+				["name"] = "Orgrimmar",
+				["standing"] = 5,
+				["barValue"] = 5975,
+				["barMax"] = 9000,
+			},
+		},
+		["warMode"] = false,
+		["name"] = "Kotalkhan",
+		["sex"] = 2,
+		["professions"] = {
+			[165] = true,
+			[333] = true,
+			[185] = true,
+		},
+		["ignoredChains"] = {
+		},
+		["warModeBonus"] = 10,
 		["questsActive"] = {
 			[31856] = {
 			},
@@ -12367,96 +12462,6 @@ BtWQuests_Characters = {
 				}, -- [1]
 			},
 		},
-		["warMode"] = false,
-		["name"] = "Kotalkhan",
-		["sex"] = 2,
-		["professions"] = {
-			[165] = true,
-			[333] = true,
-			[185] = true,
-		},
-		["ignoredChains"] = {
-		},
-		["reputations"] = {
-			[1216] = {
-				["barMin"] = 9000,
-				["name"] = "Shang Xi's Academy",
-				["standing"] = 6,
-				["barMax"] = 21000,
-				["barValue"] = 17500,
-			},
-			[81] = {
-				["barMin"] = 3000,
-				["name"] = "Thunder Bluff",
-				["standing"] = 5,
-				["barValue"] = 4193,
-				["barMax"] = 9000,
-			},
-			[1352] = {
-				["barMin"] = 3000,
-				["name"] = "Huojin Pandaren",
-				["standing"] = 5,
-				["barValue"] = 7640,
-				["barMax"] = 9000,
-			},
-			[67] = {
-				["barMin"] = 3000,
-				["name"] = "Horde",
-				["standing"] = 5,
-				["barValue"] = 4593,
-				["barMax"] = 9000,
-			},
-			[911] = {
-				["barMin"] = 0,
-				["name"] = "Silvermoon City",
-				["standing"] = 4,
-				["barValue"] = 1493,
-				["barMax"] = 3000,
-			},
-			[68] = {
-				["barMin"] = 0,
-				["name"] = "Undercity",
-				["standing"] = 4,
-				["barValue"] = 1593,
-				["barMax"] = 3000,
-			},
-			[530] = {
-				["barMin"] = 3000,
-				["name"] = "Darkspear Trolls",
-				["standing"] = 5,
-				["barValue"] = 4193,
-				["barMax"] = 9000,
-			},
-			[1245] = {
-				["barMin"] = 0,
-				["name"] = "Mists of Pandaria",
-				["standing"] = 4,
-				["barMax"] = 3000,
-				["barValue"] = 0,
-			},
-			[1118] = {
-				["barMin"] = 0,
-				["name"] = "Classic",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-			[1133] = {
-				["barMin"] = 3000,
-				["name"] = "Bilgewater Cartel",
-				["standing"] = 5,
-				["barValue"] = 4193,
-				["barMax"] = 9000,
-			},
-			[76] = {
-				["barMin"] = 3000,
-				["name"] = "Orgrimmar",
-				["standing"] = 5,
-				["barValue"] = 5975,
-				["barMax"] = 9000,
-			},
-		},
-		["warModeBonus"] = 10,
 	}, -- [18]
 	{
 		["covenantID"] = 0,
@@ -12590,7 +12595,7 @@ BtWQuests_Characters = {
 			[39713] = true,
 			[53746] = true,
 			[59938] = true,
-			[59946] = true,
+			[56631] = true,
 			[50146] = true,
 			[31826] = true,
 			[31583] = true,
@@ -12598,7 +12603,7 @@ BtWQuests_Characters = {
 			[31555] = true,
 			[59930] = true,
 			[31308] = true,
-			[31822] = true,
+			[59946] = true,
 			[31571] = true,
 			[31575] = true,
 			[31579] = true,
@@ -12649,7 +12654,7 @@ BtWQuests_Characters = {
 			[59970] = true,
 			[59699] = true,
 			[53206] = true,
-			[56631] = true,
+			[31822] = true,
 			[62912] = true,
 			[53740] = true,
 			[53748] = true,
@@ -12678,57 +12683,6 @@ BtWQuests_Characters = {
 		},
 		["xpModifier"] = 0,
 		["renownLevel"] = 1,
-		["questsActive"] = {
-			[44948] = {
-				{
-					"Level 25 Snowfeather Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[44989] = {
-				{
-					"Level 25 Sharptalon Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[40329] = {
-				{
-					"0/5 Pet Battlemasters Defeated", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[31891] = {
-				{
-					"Defeat Traitor Gluk", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Defeat Grazzle the Great", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [2]
-				{
-					"Defeat Kela Grimtotem", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [3]
-				{
-					"Defeat Zoltan", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [4]
-				{
-					"Defeat Elena Flutterfly", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [5]
-			},
-		},
-		["warModeBonus"] = 10,
 		["reputations"] = {
 			[530] = {
 				["barMin"] = 0,
@@ -12787,6 +12741,57 @@ BtWQuests_Characters = {
 				["barMax"] = 9000,
 			},
 		},
+		["questsActive"] = {
+			[44948] = {
+				{
+					"Level 25 Snowfeather Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[44989] = {
+				{
+					"Level 25 Sharptalon Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[40329] = {
+				{
+					"0/5 Pet Battlemasters Defeated", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[31891] = {
+				{
+					"Defeat Traitor Gluk", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Defeat Grazzle the Great", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [2]
+				{
+					"Defeat Kela Grimtotem", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [3]
+				{
+					"Defeat Zoltan", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [4]
+				{
+					"Defeat Elena Flutterfly", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [5]
+			},
+		},
+		["warModeBonus"] = 10,
 		["ignoredChains"] = {
 		},
 		["name"] = "Laymonan",
@@ -12925,13 +12930,13 @@ BtWQuests_Characters = {
 			[59941] = true,
 			[50143] = true,
 			[31582] = true,
-			[56633] = true,
+			[59948] = true,
 			[59980] = true,
 			[53745] = true,
 			[56630] = true,
 			[31576] = true,
 			[31827] = true,
-			[59948] = true,
+			[58418] = true,
 			[38995] = true,
 			[56088] = true,
 			[59940] = true,
@@ -12963,14 +12968,14 @@ BtWQuests_Characters = {
 			[59928] = true,
 			[31814] = true,
 			[50146] = true,
-			[31826] = true,
+			[31316] = true,
 			[59978] = true,
 			[31551] = true,
 			[31555] = true,
 			[59930] = true,
 			[59938] = true,
 			[59946] = true,
-			[31571] = true,
+			[31826] = true,
 			[31575] = true,
 			[31579] = true,
 			[31583] = true,
@@ -13017,7 +13022,7 @@ BtWQuests_Characters = {
 			[50106] = true,
 			[56489] = true,
 			[31832] = true,
-			[31316] = true,
+			[31571] = true,
 			[31822] = true,
 			[53206] = true,
 			[31308] = true,
@@ -13033,7 +13038,7 @@ BtWQuests_Characters = {
 			[31556] = true,
 			[31815] = true,
 			[56625] = true,
-			[58418] = true,
+			[56633] = true,
 			[31572] = true,
 			[31831] = true,
 			[31580] = true,
@@ -13049,57 +13054,6 @@ BtWQuests_Characters = {
 		},
 		["xpModifier"] = 0,
 		["renownLevel"] = 1,
-		["questsActive"] = {
-			[44948] = {
-				{
-					"Level 25 Snowfeather Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[44989] = {
-				{
-					"Level 25 Sharptalon Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[31891] = {
-				{
-					"Defeat Traitor Gluk", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Defeat Grazzle the Great", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [2]
-				{
-					"Defeat Kela Grimtotem", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [3]
-				{
-					"Defeat Zoltan", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [4]
-				{
-					"Defeat Elena Flutterfly", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [5]
-			},
-			[40329] = {
-				{
-					"0/5 Pet Battlemasters Defeated", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-		},
-		["warModeBonus"] = 10,
 		["reputations"] = {
 			[530] = {
 				["barMin"] = 0,
@@ -13158,6 +13112,57 @@ BtWQuests_Characters = {
 				["barMax"] = 9000,
 			},
 		},
+		["questsActive"] = {
+			[44948] = {
+				{
+					"Level 25 Snowfeather Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[44989] = {
+				{
+					"Level 25 Sharptalon Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[31891] = {
+				{
+					"Defeat Traitor Gluk", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Defeat Grazzle the Great", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [2]
+				{
+					"Defeat Kela Grimtotem", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [3]
+				{
+					"Defeat Zoltan", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [4]
+				{
+					"Defeat Elena Flutterfly", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [5]
+			},
+			[40329] = {
+				{
+					"0/5 Pet Battlemasters Defeated", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+		},
+		["warModeBonus"] = 10,
 		["ignoredChains"] = {
 		},
 		["name"] = "Mandles",
@@ -13527,6 +13532,7 @@ BtWQuests_Characters = {
 		},
 		["xpModifier"] = 0,
 		["renownLevel"] = 1,
+		["warModeBonus"] = 10,
 		["reputations"] = {
 			[911] = {
 				["barMin"] = 9000,
@@ -13707,7 +13713,6 @@ BtWQuests_Characters = {
 			[57249] = {
 			},
 		},
-		["warModeBonus"] = 10,
 		["ignoredChains"] = {
 		},
 		["name"] = "Okona",
@@ -14354,11 +14359,11 @@ BtWQuests_Characters = {
 			[34583] = true,
 			[53956] = true,
 			[25352] = true,
-			[40723] = true,
-			[42895] = true,
 			[34585] = true,
+			[42895] = true,
+			[40723] = true,
 			[12706] = true,
-			[36631] = true,
+			[37654] = true,
 			[54276] = true,
 			[11619] = true,
 			[38995] = true,
@@ -14374,16 +14379,16 @@ BtWQuests_Characters = {
 			[25300] = true,
 			[11707] = true,
 			[25332] = true,
-			[25460] = true,
-			[12754] = true,
+			[11715] = true,
+			[34584] = true,
 			[12698] = true,
 			[34392] = true,
 			[12714] = true,
 			[12722] = true,
 			[31582] = true,
-			[12738] = true,
+			[49865] = true,
 			[12746] = true,
-			[25492] = true,
+			[37653] = true,
 			[39731] = true,
 			[34616] = true,
 			[12778] = true,
@@ -14406,16 +14411,16 @@ BtWQuests_Characters = {
 			[11794] = true,
 			[27874] = true,
 			[42449] = true,
-			[37653] = true,
+			[25492] = true,
 			[11723] = true,
-			[49865] = true,
+			[12738] = true,
 			[34393] = true,
 			[34425] = true,
 			[46733] = true,
 			[11963] = true,
-			[34584] = true,
-			[11715] = true,
-			[37654] = true,
+			[12754] = true,
+			[25460] = true,
+			[36631] = true,
 			[37526] = true,
 			[36438] = true,
 			[42865] = true,
@@ -14573,15 +14578,6 @@ BtWQuests_Characters = {
 		["renownLevel"] = 1,
 		["warMode"] = false,
 		["sex"] = 2,
-		["warModeBonus"] = 15,
-		["skills"] = {
-		},
-		["name"] = "Rotclaugh",
-		["faction"] = "Alliance",
-		["professions"] = {
-		},
-		["ignoredChains"] = {
-		},
 		["questsActive"] = {
 			[28732] = {
 				{
@@ -14765,6 +14761,14 @@ BtWQuests_Characters = {
 				}, -- [2]
 			},
 		},
+		["skills"] = {
+		},
+		["name"] = "Rotclaugh",
+		["faction"] = "Alliance",
+		["professions"] = {
+		},
+		["ignoredChains"] = {
+		},
 		["reputations"] = {
 			[1883] = {
 				["barMin"] = 0,
@@ -14864,12 +14868,12 @@ BtWQuests_Characters = {
 				["barMax"] = 9000,
 				["barValue"] = 4602,
 			},
-			[1037] = {
+			[1068] = {
 				["barMin"] = 3000,
-				["name"] = "Alliance Vanguard",
+				["name"] = "Explorers' League",
 				["standing"] = 5,
 				["barMax"] = 9000,
-				["barValue"] = 8294,
+				["barValue"] = 4146,
 			},
 			[1900] = {
 				["barMin"] = 9000,
@@ -14906,12 +14910,12 @@ BtWQuests_Characters = {
 				["barMax"] = 9000,
 				["barValue"] = 7763,
 			},
-			[469] = {
+			[1037] = {
 				["barMin"] = 3000,
-				["name"] = "Alliance",
+				["name"] = "Alliance Vanguard",
 				["standing"] = 5,
 				["barMax"] = 9000,
-				["barValue"] = 4802,
+				["barValue"] = 8294,
 			},
 			[1162] = {
 				["barMin"] = 0,
@@ -14927,12 +14931,12 @@ BtWQuests_Characters = {
 				["barMax"] = 9000,
 				["barValue"] = 4602,
 			},
-			[1068] = {
+			[469] = {
 				["barMin"] = 3000,
-				["name"] = "Explorers' League",
+				["name"] = "Alliance",
 				["standing"] = 5,
 				["barMax"] = 9000,
-				["barValue"] = 4146,
+				["barValue"] = 4802,
 			},
 			[54] = {
 				["barMin"] = 3000,
@@ -14970,6 +14974,7 @@ BtWQuests_Characters = {
 				["barValue"] = 3120,
 			},
 		},
+		["warModeBonus"] = 15,
 	}, -- [23]
 	{
 		["class"] = 4,
@@ -15243,10 +15248,10 @@ BtWQuests_Characters = {
 			[28529] = true,
 			[13987] = true,
 			[31588] = true,
-			[24678] = true,
+			[14399] = true,
 			[13892] = true,
 			[31551] = true,
-			[14399] = true,
+			[13888] = true,
 			[31824] = true,
 			[13504] = true,
 			[26473] = true,
@@ -15344,7 +15349,7 @@ BtWQuests_Characters = {
 			[13876] = true,
 			[13880] = true,
 			[14395] = true,
-			[13888] = true,
+			[24678] = true,
 			[14403] = true,
 			[13896] = true,
 			[13900] = true,
@@ -15401,43 +15406,6 @@ BtWQuests_Characters = {
 		},
 		["xpModifier"] = 0,
 		["renownLevel"] = 0,
-		["questsActive"] = {
-			[44989] = {
-				{
-					"Level 25 Sharptalon Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[31891] = {
-				{
-					"Defeat Traitor Gluk", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Defeat Grazzle the Great", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [2]
-				{
-					"Defeat Kela Grimtotem", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [3]
-				{
-					"Defeat Zoltan", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [4]
-				{
-					"Defeat Elena Flutterfly", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [5]
-			},
-		},
-		["warModeBonus"] = 25,
 		["reputations"] = {
 			[1134] = {
 				["barMin"] = 9000,
@@ -15510,6 +15478,43 @@ BtWQuests_Characters = {
 				["barMax"] = 21000,
 			},
 		},
+		["questsActive"] = {
+			[44989] = {
+				{
+					"Level 25 Sharptalon Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[31891] = {
+				{
+					"Defeat Traitor Gluk", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Defeat Grazzle the Great", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [2]
+				{
+					"Defeat Kela Grimtotem", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [3]
+				{
+					"Defeat Zoltan", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [4]
+				{
+					"Defeat Elena Flutterfly", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [5]
+			},
+		},
+		["warModeBonus"] = 25,
 		["ignoredChains"] = {
 		},
 		["name"] = "Ruffinton",
@@ -15709,6 +15714,7 @@ BtWQuests_Characters = {
 			[31571] = true,
 		},
 		["xpModifier"] = 0,
+		["warModeBonus"] = 25,
 		["reputations"] = {
 			[1134] = {
 				["barMin"] = 0,
@@ -15848,7 +15854,6 @@ BtWQuests_Characters = {
 				}, -- [2]
 			},
 		},
-		["warModeBonus"] = 25,
 		["ignoredChains"] = {
 		},
 		["name"] = "Serbitechna",
@@ -15929,13 +15934,13 @@ BtWQuests_Characters = {
 			[50141] = true,
 			[31832] = true,
 			[31573] = true,
-			[29410] = true,
+			[31450] = true,
 			[53743] = true,
 			[53751] = true,
-			[56652] = true,
+			[29410] = true,
 			[29418] = true,
 			[39750] = true,
-			[29779] = true,
+			[56625] = true,
 			[29799] = true,
 			[31580] = true,
 			[29791] = true,
@@ -15943,11 +15948,11 @@ BtWQuests_Characters = {
 			[56628] = true,
 			[29783] = true,
 			[29406] = true,
-			[31450] = true,
+			[56652] = true,
 			[29414] = true,
 			[42898] = true,
 			[29422] = true,
-			[56625] = true,
+			[30034] = true,
 			[31725] = true,
 			[29775] = true,
 			[29771] = true,
@@ -15965,7 +15970,7 @@ BtWQuests_Characters = {
 			[53744] = true,
 			[31785] = true,
 			[29781] = true,
-			[31582] = true,
+			[29797] = true,
 			[31590] = true,
 			[50146] = true,
 			[31550] = true,
@@ -15976,7 +15981,7 @@ BtWQuests_Characters = {
 			[31570] = true,
 			[29789] = true,
 			[29793] = true,
-			[30817] = true,
+			[31582] = true,
 			[31586] = true,
 			[42907] = true,
 			[42906] = true,
@@ -16003,44 +16008,44 @@ BtWQuests_Characters = {
 			[31581] = true,
 			[31824] = true,
 			[29663] = true,
-			[29678] = true,
+			[42908] = true,
 			[56630] = true,
-			[29423] = true,
+			[46733] = true,
 			[29662] = true,
 			[29666] = true,
 			[8237] = true,
 			[29419] = true,
-			[42908] = true,
+			[29678] = true,
 			[60511] = true,
 			[53124] = true,
 			[30455] = true,
 			[50104] = true,
 			[42948] = true,
-			[29778] = true,
+			[30033] = true,
 			[54184] = true,
 			[29786] = true,
 			[32009] = true,
 			[31555] = true,
 			[42741] = true,
 			[50144] = true,
-			[31308] = true,
+			[29523] = true,
 			[53220] = true,
 			[39713] = true,
 			[53746] = true,
 			[31316] = true,
-			[29790] = true,
+			[31830] = true,
 			[31579] = true,
-			[31583] = true,
+			[29798] = true,
 			[31591] = true,
 			[31551] = true,
 			[29770] = true,
 			[29774] = true,
-			[30033] = true,
-			[30037] = true,
+			[29778] = true,
+			[29782] = true,
 			[31826] = true,
-			[31575] = true,
+			[29790] = true,
 			[29794] = true,
-			[30818] = true,
+			[31583] = true,
 			[31587] = true,
 			[42909] = true,
 			[31817] = true,
@@ -16059,16 +16064,16 @@ BtWQuests_Characters = {
 			[31823] = true,
 			[53739] = true,
 			[53747] = true,
-			[29798] = true,
+			[30818] = true,
 			[31918] = true,
-			[31830] = true,
+			[31575] = true,
 			[51994] = true,
-			[29782] = true,
-			[29523] = true,
-			[31814] = true,
 			[56631] = true,
+			[31308] = true,
+			[31814] = true,
+			[30037] = true,
 			[56624] = true,
-			[46733] = true,
+			[29423] = true,
 			[42900] = true,
 			[29408] = true,
 			[42892] = true,
@@ -16087,7 +16092,7 @@ BtWQuests_Characters = {
 			[30590] = true,
 			[29772] = true,
 			[53206] = true,
-			[29797] = true,
+			[30817] = true,
 			[29785] = true,
 			[53740] = true,
 			[53748] = true,
@@ -16099,7 +16104,7 @@ BtWQuests_Characters = {
 			[31552] = true,
 			[31556] = true,
 			[31815] = true,
-			[30034] = true,
+			[29779] = true,
 			[56633] = true,
 			[31827] = true,
 			[31831] = true,
@@ -16135,7 +16140,8 @@ BtWQuests_Characters = {
 			},
 		},
 		["faction"] = "Horde",
-		["warModeBonus"] = 10,
+		["questsActive"] = {
+		},
 		["warMode"] = false,
 		["name"] = "Shaekhan",
 		["sex"] = 2,
@@ -16144,8 +16150,6 @@ BtWQuests_Characters = {
 			[333] = true,
 		},
 		["ignoredChains"] = {
-		},
-		["questsActive"] = {
 		},
 		["reputations"] = {
 			[1216] = {
@@ -16226,6 +16230,7 @@ BtWQuests_Characters = {
 				["barValue"] = 3350,
 			},
 		},
+		["warModeBonus"] = 10,
 	}, -- [26]
 	{
 		["class"] = 10,
@@ -16388,6 +16393,22 @@ BtWQuests_Characters = {
 			[31571] = true,
 		},
 		["xpModifier"] = 0,
+		["reputations"] = {
+			[1245] = {
+				["barMin"] = 0,
+				["name"] = "Mists of Pandaria",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
+			},
+			[1216] = {
+				["barMin"] = 3000,
+				["name"] = "Shang Xi's Academy",
+				["standing"] = 5,
+				["barValue"] = 3000,
+				["barMax"] = 9000,
+			},
+		},
 		["questsActive"] = {
 			[54185] = {
 				{
@@ -16439,22 +16460,6 @@ BtWQuests_Characters = {
 			},
 		},
 		["warModeBonus"] = 10,
-		["reputations"] = {
-			[1245] = {
-				["barMin"] = 0,
-				["name"] = "Mists of Pandaria",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
-			},
-			[1216] = {
-				["barMin"] = 3000,
-				["name"] = "Shang Xi's Academy",
-				["standing"] = 5,
-				["barValue"] = 3000,
-				["barMax"] = 9000,
-			},
-		},
 		["ignoredChains"] = {
 		},
 		["name"] = "Shaekhan",
@@ -30097,364 +30102,6 @@ BtWQuests_Characters = {
 		["renownLevel"] = 10,
 		["warMode"] = false,
 		["sex"] = 2,
-		["questsActive"] = {
-			[57919] = {
-				{
-					"0/1 Abused Soul subjugated", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[56352] = {
-				{
-					"3/20 Eternal Ornament", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[50562] = {
-				{
-					"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[57563] = {
-				{
-					"0/1   slain", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[61981] = {
-				{
-					"210/1000 Anima sources", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[49133] = {
-				{
-					"0/4 Sigil of the Dark Titan", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[62932] = {
-				{
-					"0/1 Information found", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[46745] = {
-			},
-			[62371] = {
-				{
-					"1/1 Tred'ova slain", -- [1]
-					"monster", -- [2]
-					true, -- [3]
-				}, -- [1]
-			},
-			[48641] = {
-				{
-					"0/4 Complete 4 world quests on the Broken Shore", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[44989] = {
-				{
-					"Level 25 Sharptalon Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[50598] = {
-				{
-					"0/4 Complete 4 world quests in Zuldazar.", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[53435] = {
-				{
-					"18349/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[50602] = {
-				{
-					"0/4 Complete 4 world quests in Nazmir.", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[42420] = {
-				{
-					"0/4 Complete 4 world quests in Azsuna", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[42233] = {
-				{
-					"0/4 Complete 4 world quests in Highmountain.", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[44948] = {
-				{
-					"Level 25 Snowfeather Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[60267] = {
-				{
-					"1/1 Speak with Ve'nari", -- [1]
-					"monster", -- [2]
-					true, -- [3]
-				}, -- [1]
-			},
-			[62730] = {
-				{
-					"0/1 Ripe Purian", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[48305] = {
-				{
-					"Defeat the Coven of Shivarra in the Antorus, The Burning Throne", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"1/1 Sargerei Manifesto", -- [1]
-					"item", -- [2]
-					true, -- [3]
-				}, -- [2]
-			},
-			[24756] = {
-				{
-					"Infuse Shadow's Edge with Blood then defeat Lana'thel.", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[60281] = {
-				{
-					"0/1 Inquisitor Devaki slain", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"0/1 Method of tracking found", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [2]
-			},
-			[40329] = {
-				{
-					"2/5 Pet Battlemasters Defeated", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[47129] = {
-				{
-					"Defeat Kil'jaeden", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"1/1 Seal of the Deceiver", -- [1]
-					"item", -- [2]
-					true, -- [3]
-				}, -- [2]
-			},
-			[45381] = {
-				{
-					"1/4 Echo of Time", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[49032] = {
-				{
-					"1/4 Rune of Passage", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[45383] = {
-				{
-					"2/4 Echo of Time", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[57462] = {
-				{
-					"28/200 Shred of Insanity", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[57566] = {
-			},
-			[57403] = {
-				{
-					"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[45382] = {
-				{
-					"0/4 Echo of Time", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[30567] = {
-				{
-					"0/1 Scenario Complete", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[31891] = {
-				{
-					"Defeat Traitor Gluk", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Defeat Grazzle the Great", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [2]
-				{
-					"Defeat Kela Grimtotem", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [3]
-				{
-					"Defeat Zoltan", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [4]
-				{
-					"Defeat Elena Flutterfly", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [5]
-			},
-			[47727] = {
-				{
-					"3/4 Fragment of the Guardian's Seal", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-		},
-		["skills"] = {
-			[2437] = {
-				["maxLevel"] = 175,
-				["level"] = 175,
-			},
-			[2751] = {
-				["maxLevel"] = 100,
-				["level"] = 41,
-			},
-			[2474] = {
-				["maxLevel"] = 75,
-				["level"] = 75,
-			},
-			[2476] = {
-				["maxLevel"] = 75,
-				["level"] = 75,
-			},
-			[2571] = {
-				["maxLevel"] = 75,
-				["level"] = 75,
-			},
-			[2761] = {
-				["maxLevel"] = 150,
-				["level"] = 150,
-			},
-			[164] = {
-				["maxLevel"] = 800,
-				["level"] = 300,
-			},
-			[2472] = {
-				["maxLevel"] = 100,
-				["level"] = 100,
-			},
-			[2569] = {
-				["maxLevel"] = 75,
-				["level"] = 75,
-			},
-			[2477] = {
-				["maxLevel"] = 300,
-				["level"] = 300,
-			},
-			[2566] = {
-				["maxLevel"] = 100,
-				["level"] = 100,
-			},
-			[2475] = {
-				["maxLevel"] = 75,
-				["level"] = 75,
-			},
-			[2570] = {
-				["maxLevel"] = 75,
-				["level"] = 75,
-			},
-			[2572] = {
-				["maxLevel"] = 300,
-				["level"] = 300,
-			},
-			[2568] = {
-				["maxLevel"] = 75,
-				["level"] = 75,
-			},
-			[2567] = {
-				["maxLevel"] = 100,
-				["level"] = 100,
-			},
-			[2454] = {
-				["maxLevel"] = 100,
-				["level"] = 100,
-			},
-			[2473] = {
-				["maxLevel"] = 75,
-				["level"] = 75,
-			},
-			[186] = {
-				["maxLevel"] = 800,
-				["level"] = 300,
-			},
-			[2565] = {
-				["maxLevel"] = 175,
-				["level"] = 175,
-			},
-		},
-		["name"] = "Shanyt",
-		["faction"] = "Horde",
-		["professions"] = {
-			[186] = true,
-			[356] = true,
-			[185] = true,
-			[794] = true,
-			[164] = true,
-		},
-		["ignoredChains"] = {
-		},
 		["reputations"] = {
 			[2010] = {
 				["barMin"] = 0,
@@ -30772,7 +30419,365 @@ BtWQuests_Characters = {
 				["barValue"] = 36649,
 			},
 		},
+		["skills"] = {
+			[2437] = {
+				["maxLevel"] = 175,
+				["level"] = 175,
+			},
+			[2751] = {
+				["maxLevel"] = 100,
+				["level"] = 41,
+			},
+			[2474] = {
+				["maxLevel"] = 75,
+				["level"] = 75,
+			},
+			[2476] = {
+				["maxLevel"] = 75,
+				["level"] = 75,
+			},
+			[2571] = {
+				["maxLevel"] = 75,
+				["level"] = 75,
+			},
+			[2761] = {
+				["maxLevel"] = 150,
+				["level"] = 150,
+			},
+			[164] = {
+				["maxLevel"] = 800,
+				["level"] = 300,
+			},
+			[2472] = {
+				["maxLevel"] = 100,
+				["level"] = 100,
+			},
+			[2569] = {
+				["maxLevel"] = 75,
+				["level"] = 75,
+			},
+			[2477] = {
+				["maxLevel"] = 300,
+				["level"] = 300,
+			},
+			[2566] = {
+				["maxLevel"] = 100,
+				["level"] = 100,
+			},
+			[2475] = {
+				["maxLevel"] = 75,
+				["level"] = 75,
+			},
+			[2570] = {
+				["maxLevel"] = 75,
+				["level"] = 75,
+			},
+			[2572] = {
+				["maxLevel"] = 300,
+				["level"] = 300,
+			},
+			[2568] = {
+				["maxLevel"] = 75,
+				["level"] = 75,
+			},
+			[2567] = {
+				["maxLevel"] = 100,
+				["level"] = 100,
+			},
+			[2454] = {
+				["maxLevel"] = 100,
+				["level"] = 100,
+			},
+			[2473] = {
+				["maxLevel"] = 75,
+				["level"] = 75,
+			},
+			[186] = {
+				["maxLevel"] = 800,
+				["level"] = 300,
+			},
+			[2565] = {
+				["maxLevel"] = 175,
+				["level"] = 175,
+			},
+		},
+		["name"] = "Shanyt",
+		["faction"] = "Horde",
+		["professions"] = {
+			[186] = true,
+			[356] = true,
+			[164] = true,
+			[185] = true,
+			[794] = true,
+		},
+		["ignoredChains"] = {
+		},
 		["warModeBonus"] = 10,
+		["questsActive"] = {
+			[57919] = {
+				{
+					"0/1 Abused Soul subjugated", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[56352] = {
+				{
+					"3/20 Eternal Ornament", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[50562] = {
+				{
+					"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[57563] = {
+				{
+					"0/1 [DNT] Dummy Credit slain", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[61981] = {
+				{
+					"210/1000 Anima sources", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[49133] = {
+				{
+					"0/4 Sigil of the Dark Titan", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[62932] = {
+				{
+					"0/1 Information found", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[46745] = {
+			},
+			[62371] = {
+				{
+					"1/1 Tred'ova slain", -- [1]
+					"monster", -- [2]
+					true, -- [3]
+				}, -- [1]
+			},
+			[48641] = {
+				{
+					"0/4 Complete 4 world quests on the Broken Shore", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[44989] = {
+				{
+					"Level 25 Sharptalon Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[50598] = {
+				{
+					"0/4 Complete 4 world quests in Zuldazar.", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[53435] = {
+				{
+					"18349/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[42420] = {
+				{
+					"0/4 Complete 4 world quests in Azsuna", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[45383] = {
+				{
+					"2/4 Echo of Time", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[44948] = {
+				{
+					"Level 25 Snowfeather Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[60267] = {
+				{
+					"1/1 Speak with Ve'nari", -- [1]
+					"monster", -- [2]
+					true, -- [3]
+				}, -- [1]
+			},
+			[62730] = {
+				{
+					"0/1 Ripe Purian", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[48305] = {
+				{
+					"Defeat the Coven of Shivarra in the Antorus, The Burning Throne", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"1/1 Sargerei Manifesto", -- [1]
+					"item", -- [2]
+					true, -- [3]
+				}, -- [2]
+			},
+			[24756] = {
+				{
+					"Infuse Shadow's Edge with Blood then defeat Lana'thel.", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[60281] = {
+				{
+					"0/1 Inquisitor Devaki slain", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"0/1 Method of tracking found", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [2]
+			},
+			[40329] = {
+				{
+					"2/5 Pet Battlemasters Defeated", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[49032] = {
+				{
+					"1/4 Rune of Passage", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[47727] = {
+				{
+					"3/4 Fragment of the Guardian's Seal", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[42421] = {
+				{
+					"0/4 Complete 4 world quests in Suramar", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[45382] = {
+				{
+					"0/4 Echo of Time", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[57462] = {
+				{
+					"28/200 Shred of Insanity", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[57566] = {
+			},
+			[57403] = {
+				{
+					"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[45381] = {
+				{
+					"1/4 Echo of Time", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[50603] = {
+				{
+					"0/4 Complete 4 world quests in Vol'dun", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[30567] = {
+				{
+					"0/1 Scenario Complete", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[31891] = {
+				{
+					"Defeat Traitor Gluk", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Defeat Grazzle the Great", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [2]
+				{
+					"Defeat Kela Grimtotem", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [3]
+				{
+					"Defeat Zoltan", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [4]
+				{
+					"Defeat Elena Flutterfly", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [5]
+			},
+			[47129] = {
+				{
+					"Defeat Kil'jaeden", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"1/1 Seal of the Deceiver", -- [1]
+					"item", -- [2]
+					true, -- [3]
+				}, -- [2]
+			},
+		},
 	}, -- [28]
 	{
 		["class"] = 1,
@@ -30957,65 +30962,6 @@ BtWQuests_Characters = {
 		},
 		["xpModifier"] = 0,
 		["renownLevel"] = 0,
-		["warModeBonus"] = 10,
-		["reputations"] = {
-			[530] = {
-				["barMin"] = 0,
-				["name"] = "Darkspear Trolls",
-				["standing"] = 4,
-				["barValue"] = 500,
-				["barMax"] = 3000,
-			},
-			[81] = {
-				["barMin"] = 0,
-				["name"] = "Thunder Bluff",
-				["standing"] = 4,
-				["barValue"] = 500,
-				["barMax"] = 3000,
-			},
-			[68] = {
-				["barMin"] = 3000,
-				["name"] = "Undercity",
-				["standing"] = 5,
-				["barValue"] = 4000,
-				["barMax"] = 9000,
-			},
-			[1133] = {
-				["barMin"] = 3000,
-				["name"] = "Bilgewater Cartel",
-				["standing"] = 5,
-				["barValue"] = 3100,
-				["barMax"] = 9000,
-			},
-			[911] = {
-				["barMin"] = 3000,
-				["name"] = "Silvermoon City",
-				["standing"] = 5,
-				["barValue"] = 3100,
-				["barMax"] = 9000,
-			},
-			[67] = {
-				["barMin"] = 3000,
-				["name"] = "Horde",
-				["standing"] = 5,
-				["barValue"] = 3500,
-				["barMax"] = 9000,
-			},
-			[76] = {
-				["barMin"] = 0,
-				["name"] = "Orgrimmar",
-				["standing"] = 4,
-				["barValue"] = 500,
-				["barMax"] = 3000,
-			},
-			[1352] = {
-				["barMin"] = 3000,
-				["name"] = "Huojin Pandaren",
-				["standing"] = 5,
-				["barValue"] = 3100,
-				["barMax"] = 9000,
-			},
-		},
 		["questsActive"] = {
 			[54185] = {
 				{
@@ -31074,6 +31020,65 @@ BtWQuests_Characters = {
 					"object", -- [2]
 					false, -- [3]
 				}, -- [1]
+			},
+		},
+		["warModeBonus"] = 10,
+		["reputations"] = {
+			[530] = {
+				["barMin"] = 0,
+				["name"] = "Darkspear Trolls",
+				["standing"] = 4,
+				["barValue"] = 500,
+				["barMax"] = 3000,
+			},
+			[81] = {
+				["barMin"] = 0,
+				["name"] = "Thunder Bluff",
+				["standing"] = 4,
+				["barValue"] = 500,
+				["barMax"] = 3000,
+			},
+			[68] = {
+				["barMin"] = 3000,
+				["name"] = "Undercity",
+				["standing"] = 5,
+				["barValue"] = 4000,
+				["barMax"] = 9000,
+			},
+			[1133] = {
+				["barMin"] = 3000,
+				["name"] = "Bilgewater Cartel",
+				["standing"] = 5,
+				["barValue"] = 3100,
+				["barMax"] = 9000,
+			},
+			[911] = {
+				["barMin"] = 3000,
+				["name"] = "Silvermoon City",
+				["standing"] = 5,
+				["barValue"] = 3100,
+				["barMax"] = 9000,
+			},
+			[67] = {
+				["barMin"] = 3000,
+				["name"] = "Horde",
+				["standing"] = 5,
+				["barValue"] = 3500,
+				["barMax"] = 9000,
+			},
+			[76] = {
+				["barMin"] = 0,
+				["name"] = "Orgrimmar",
+				["standing"] = 4,
+				["barValue"] = 500,
+				["barMax"] = 3000,
+			},
+			[1352] = {
+				["barMin"] = 3000,
+				["name"] = "Huojin Pandaren",
+				["standing"] = 5,
+				["barValue"] = 3100,
+				["barMax"] = 9000,
 			},
 		},
 		["ignoredChains"] = {
@@ -31249,15 +31254,6 @@ BtWQuests_Characters = {
 		["xpModifier"] = 0,
 		["warMode"] = true,
 		["sex"] = 2,
-		["warModeBonus"] = 10,
-		["skills"] = {
-		},
-		["name"] = "Shimzo",
-		["faction"] = "Horde",
-		["professions"] = {
-		},
-		["ignoredChains"] = {
-		},
 		["questsActive"] = {
 			[54185] = {
 				{
@@ -31305,6 +31301,14 @@ BtWQuests_Characters = {
 					false, -- [3]
 				}, -- [5]
 			},
+		},
+		["skills"] = {
+		},
+		["name"] = "Shimzo",
+		["faction"] = "Horde",
+		["professions"] = {
+		},
+		["ignoredChains"] = {
 		},
 		["reputations"] = {
 			[81] = {
@@ -31385,6 +31389,7 @@ BtWQuests_Characters = {
 				["barValue"] = 9000,
 			},
 		},
+		["warModeBonus"] = 10,
 	}, -- [30]
 	{
 		["class"] = 1,
@@ -31580,8 +31585,8 @@ BtWQuests_Characters = {
 			[27166] = true,
 			[27174] = true,
 			[50098] = true,
+			[26176] = true,
 			[412] = true,
-			[27198] = true,
 			[27206] = true,
 			[31813] = true,
 			[31821] = true,
@@ -31600,11 +31605,11 @@ BtWQuests_Characters = {
 			[27385] = true,
 			[27845] = true,
 			[27853] = true,
-			[42947] = true,
+			[27382] = true,
 			[27869] = true,
 			[26855] = true,
 			[25841] = true,
-			[50101] = true,
+			[42947] = true,
 			[27390] = true,
 			[27909] = true,
 			[27030] = true,
@@ -31710,13 +31715,13 @@ BtWQuests_Characters = {
 			[25118] = true,
 			[27224] = true,
 			[25667] = true,
-			[27033] = true,
+			[27544] = true,
 			[31815] = true,
 			[31823] = true,
 			[31831] = true,
 			[13636] = true,
 			[32662] = true,
-			[27544] = true,
+			[6391] = true,
 			[13648] = true,
 			[27536] = true,
 			[13656] = true,
@@ -31731,18 +31736,18 @@ BtWQuests_Characters = {
 			[50105] = true,
 			[53123] = true,
 			[27368] = true,
-			[27464] = true,
+			[26953] = true,
 			[27384] = true,
 			[27392] = true,
 			[39406] = true,
 			[432] = true,
 			[53746] = true,
-			[26953] = true,
+			[31552] = true,
 			[27432] = true,
 			[26929] = true,
 			[27448] = true,
 			[27456] = true,
-			[31552] = true,
+			[27464] = true,
 			[26961] = true,
 			[31568] = true,
 			[31576] = true,
@@ -31752,7 +31757,7 @@ BtWQuests_Characters = {
 			[433] = true,
 			[27017] = true,
 			[27025] = true,
-			[6391] = true,
+			[27033] = true,
 			[24486] = true,
 			[32670] = true,
 			[27057] = true,
@@ -31795,7 +31800,7 @@ BtWQuests_Characters = {
 			[26842] = true,
 			[13639] = true,
 			[27369] = true,
-			[27382] = true,
+			[50101] = true,
 			[50107] = true,
 			[27904] = true,
 			[39408] = true,
@@ -31803,7 +31808,7 @@ BtWQuests_Characters = {
 			[53748] = true,
 			[42895] = true,
 			[42896] = true,
-			[26176] = true,
+			[27198] = true,
 			[27449] = true,
 			[27876] = true,
 			[25932] = true,
@@ -31852,18 +31857,6 @@ BtWQuests_Characters = {
 			},
 		},
 		["faction"] = "Alliance",
-		["warModeBonus"] = 25,
-		["warMode"] = false,
-		["name"] = "Thorinbane",
-		["sex"] = 2,
-		["professions"] = {
-			[186] = true,
-			[164] = true,
-			[356] = true,
-			[185] = true,
-		},
-		["ignoredChains"] = {
-		},
 		["questsActive"] = {
 			[54185] = {
 				{
@@ -31923,6 +31916,17 @@ BtWQuests_Characters = {
 					false, -- [3]
 				}, -- [1]
 			},
+		},
+		["warMode"] = false,
+		["name"] = "Thorinbane",
+		["sex"] = 2,
+		["professions"] = {
+			[186] = true,
+			[164] = true,
+			[356] = true,
+			[185] = true,
+		},
+		["ignoredChains"] = {
 		},
 		["reputations"] = {
 			[942] = {
@@ -32066,6 +32070,7 @@ BtWQuests_Characters = {
 				["barValue"] = 8302,
 			},
 		},
+		["warModeBonus"] = 25,
 	}, -- [31]
 	{
 		["class"] = 9,
@@ -32349,35 +32354,6 @@ BtWQuests_Characters = {
 		["xpModifier"] = 0.05,
 		["warMode"] = false,
 		["sex"] = 2,
-		["warModeBonus"] = 25,
-		["skills"] = {
-			[2494] = {
-				["maxLevel"] = 300,
-				["level"] = 18,
-			},
-			[333] = {
-				["maxLevel"] = 75,
-				["level"] = 18,
-			},
-			[2540] = {
-				["maxLevel"] = 300,
-				["level"] = 26,
-			},
-			[197] = {
-				["maxLevel"] = 75,
-				["level"] = 26,
-			},
-		},
-		["name"] = "Tinkster",
-		["faction"] = "Alliance",
-		["professions"] = {
-			[356] = true,
-			[333] = true,
-			[197] = true,
-			[185] = true,
-		},
-		["ignoredChains"] = {
-		},
 		["questsActive"] = {
 			[56491] = {
 				{
@@ -32480,6 +32456,34 @@ BtWQuests_Characters = {
 				}, -- [3]
 			},
 		},
+		["skills"] = {
+			[2494] = {
+				["maxLevel"] = 300,
+				["level"] = 18,
+			},
+			[333] = {
+				["maxLevel"] = 75,
+				["level"] = 18,
+			},
+			[2540] = {
+				["maxLevel"] = 300,
+				["level"] = 26,
+			},
+			[197] = {
+				["maxLevel"] = 75,
+				["level"] = 26,
+			},
+		},
+		["name"] = "Tinkster",
+		["faction"] = "Alliance",
+		["professions"] = {
+			[356] = true,
+			[333] = true,
+			[197] = true,
+			[185] = true,
+		},
+		["ignoredChains"] = {
+		},
 		["reputations"] = {
 			[1134] = {
 				["barMin"] = 3000,
@@ -32545,6 +32549,7 @@ BtWQuests_Characters = {
 				["barValue"] = 7181,
 			},
 		},
+		["warModeBonus"] = 25,
 	}, -- [32]
 	{
 		["covenantID"] = 0,
@@ -32673,13 +32678,13 @@ BtWQuests_Characters = {
 			[42895] = true,
 			[53739] = true,
 			[53747] = true,
-			[62745] = true,
+			[56625] = true,
 			[31918] = true,
 			[31831] = true,
 			[51994] = true,
 			[31827] = true,
 			[31823] = true,
-			[56625] = true,
+			[31309] = true,
 			[53749] = true,
 			[56624] = true,
 			[56632] = true,
@@ -32713,7 +32718,7 @@ BtWQuests_Characters = {
 			[31552] = true,
 			[31556] = true,
 			[31815] = true,
-			[31309] = true,
+			[62745] = true,
 			[56633] = true,
 			[31572] = true,
 			[31576] = true,
@@ -32732,73 +32737,6 @@ BtWQuests_Characters = {
 		["renownLevel"] = 1,
 		["warMode"] = false,
 		["sex"] = 2,
-		["questsActive"] = {
-			[44948] = {
-				{
-					"Level 25 Snowfeather Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[44989] = {
-				{
-					"Level 25 Sharptalon Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[40329] = {
-				{
-					"0/5 Pet Battlemasters Defeated", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[31891] = {
-				{
-					"Defeat Traitor Gluk", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Defeat Grazzle the Great", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [2]
-				{
-					"Defeat Kela Grimtotem", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [3]
-				{
-					"Defeat Zoltan", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [4]
-				{
-					"Defeat Elena Flutterfly", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [5]
-			},
-		},
-		["skills"] = {
-			[2524] = {
-				["maxLevel"] = 300,
-				["level"] = 1,
-			},
-			[755] = {
-				["maxLevel"] = 75,
-				["level"] = 1,
-			},
-		},
-		["name"] = "Tyran",
-		["faction"] = "Horde",
-		["professions"] = {
-			[755] = true,
-		},
-		["ignoredChains"] = {
-		},
 		["reputations"] = {
 			[530] = {
 				["barMin"] = 0,
@@ -32857,7 +32795,74 @@ BtWQuests_Characters = {
 				["barValue"] = 4000,
 			},
 		},
+		["skills"] = {
+			[2524] = {
+				["maxLevel"] = 300,
+				["level"] = 1,
+			},
+			[755] = {
+				["maxLevel"] = 75,
+				["level"] = 1,
+			},
+		},
+		["name"] = "Tyran",
+		["faction"] = "Horde",
+		["professions"] = {
+			[755] = true,
+		},
+		["ignoredChains"] = {
+		},
 		["warModeBonus"] = 10,
+		["questsActive"] = {
+			[44948] = {
+				{
+					"Level 25 Snowfeather Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[44989] = {
+				{
+					"Level 25 Sharptalon Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[40329] = {
+				{
+					"0/5 Pet Battlemasters Defeated", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[31891] = {
+				{
+					"Defeat Traitor Gluk", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Defeat Grazzle the Great", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [2]
+				{
+					"Defeat Kela Grimtotem", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [3]
+				{
+					"Defeat Zoltan", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [4]
+				{
+					"Defeat Elena Flutterfly", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [5]
+			},
+		},
 	}, -- [33]
 	{
 		["class"] = 12,
@@ -33052,14 +33057,6 @@ BtWQuests_Characters = {
 		["skills"] = {
 		},
 		["faction"] = "Horde",
-		["warModeBonus"] = 10,
-		["warMode"] = false,
-		["name"] = "Tyranasticus",
-		["sex"] = 2,
-		["professions"] = {
-		},
-		["ignoredChains"] = {
-		},
 		["questsActive"] = {
 			[54185] = {
 				{
@@ -33120,6 +33117,13 @@ BtWQuests_Characters = {
 				}, -- [1]
 			},
 		},
+		["warMode"] = false,
+		["name"] = "Tyranasticus",
+		["sex"] = 2,
+		["professions"] = {
+		},
+		["ignoredChains"] = {
+		},
 		["reputations"] = {
 			[530] = {
 				["barMin"] = 0,
@@ -33178,6 +33182,7 @@ BtWQuests_Characters = {
 				["barValue"] = 500,
 			},
 		},
+		["warModeBonus"] = 10,
 	}, -- [34]
 	{
 		["class"] = 12,
@@ -33227,7 +33232,7 @@ BtWQuests_Characters = {
 			[31724] = true,
 			[40378] = true,
 			[40386] = true,
-			[31824] = true,
+			[56635] = true,
 			[40912] = true,
 			[50100] = true,
 			[50108] = true,
@@ -33249,7 +33254,7 @@ BtWQuests_Characters = {
 			[31812] = true,
 			[39279] = true,
 			[56627] = true,
-			[31569] = true,
+			[31824] = true,
 			[31573] = true,
 			[40076] = true,
 			[31581] = true,
@@ -33297,12 +33302,12 @@ BtWQuests_Characters = {
 			[39750] = true,
 			[39663] = true,
 			[40233] = true,
-			[38444] = true,
+			[39974] = true,
 			[50142] = true,
-			[53744] = true,
+			[37934] = true,
 			[31785] = true,
 			[38436] = true,
-			[37934] = true,
+			[53744] = true,
 			[41002] = true,
 			[40768] = true,
 			[38723] = true,
@@ -33332,32 +33337,32 @@ BtWQuests_Characters = {
 			[39688] = true,
 			[50143] = true,
 			[41226] = true,
-			[39975] = true,
+			[38445] = true,
 			[40222] = true,
-			[37935] = true,
+			[53745] = true,
 			[40301] = true,
 			[56630] = true,
 			[40254] = true,
 			[40772] = true,
 			[38995] = true,
-			[50104] = true,
+			[40924] = true,
 			[42892] = true,
 			[42900] = true,
 			[42908] = true,
 			[40820] = true,
-			[39976] = true,
-			[54184] = true,
+			[40231] = true,
+			[50104] = true,
 			[51994] = true,
 			[8237] = true,
 			[40605] = true,
 			[46733] = true,
 			[40223] = true,
 			[40374] = true,
-			[40231] = true,
+			[53746] = true,
 			[31555] = true,
 			[42948] = true,
 			[40916] = true,
-			[40924] = true,
+			[54184] = true,
 			[40422] = true,
 			[32009] = true,
 			[53747] = true,
@@ -33366,8 +33371,8 @@ BtWQuests_Characters = {
 			[38765] = true,
 			[53220] = true,
 			[39713] = true,
-			[53746] = true,
-			[31826] = true,
+			[39976] = true,
+			[31571] = true,
 			[31575] = true,
 			[40255] = true,
 			[50145] = true,
@@ -33377,7 +33382,7 @@ BtWQuests_Characters = {
 			[31814] = true,
 			[31308] = true,
 			[31822] = true,
-			[31316] = true,
+			[31826] = true,
 			[31830] = true,
 			[31579] = true,
 			[31583] = true,
@@ -33396,7 +33401,7 @@ BtWQuests_Characters = {
 			[39682] = true,
 			[39690] = true,
 			[38813] = true,
-			[31571] = true,
+			[31316] = true,
 			[53739] = true,
 			[40232] = true,
 			[38725] = true,
@@ -33411,8 +33416,8 @@ BtWQuests_Characters = {
 			[40087] = true,
 			[40234] = true,
 			[40913] = true,
-			[53745] = true,
-			[38445] = true,
+			[37935] = true,
+			[39975] = true,
 			[40607] = true,
 			[42910] = true,
 			[31577] = true,
@@ -33423,7 +33428,7 @@ BtWQuests_Characters = {
 			[50098] = true,
 			[50106] = true,
 			[56489] = true,
-			[39974] = true,
+			[38444] = true,
 			[37890] = true,
 			[39683] = true,
 			[50146] = true,
@@ -33448,7 +33453,7 @@ BtWQuests_Characters = {
 			[31588] = true,
 			[31592] = true,
 			[39686] = true,
-			[56635] = true,
+			[31569] = true,
 			[54410] = true,
 			[53750] = true,
 			[56626] = true,
@@ -33456,6 +33461,7 @@ BtWQuests_Characters = {
 		},
 		["xpModifier"] = 0,
 		["renownLevel"] = 0,
+		["warModeBonus"] = 10,
 		["reputations"] = {
 			[530] = {
 				["barMin"] = 0,
@@ -33586,7 +33592,6 @@ BtWQuests_Characters = {
 				}, -- [5]
 			},
 		},
-		["warModeBonus"] = 10,
 		["ignoredChains"] = {
 		},
 		["name"] = "Tyrannithal",
@@ -34195,136 +34200,6 @@ BtWQuests_Characters = {
 		},
 		["xpModifier"] = 0,
 		["renownLevel"] = 1,
-		["questsActive"] = {
-			[13890] = {
-				{
-					"0/1 Lighthouse Fire Lit", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[13842] = {
-				{
-					"0/1 Durak Persuaded", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[28549] = {
-				{
-					"0/1 Flight from Doras in Orgrimmar (Optional)", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"0/1 Speak with Nura Pathfinder on The High Road", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [2]
-			},
-			[44948] = {
-				{
-					"Level 25 Snowfeather Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[13883] = {
-				{
-					"0/10  ", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[31891] = {
-				{
-					"Defeat Traitor Gluk", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Defeat Grazzle the Great", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [2]
-				{
-					"Defeat Kela Grimtotem", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [3]
-				{
-					"Defeat Zoltan", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [4]
-				{
-					"Defeat Elena Flutterfly", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [5]
-			},
-			[6442] = {
-				{
-					"0/20  ", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[28548] = {
-			},
-			[26878] = {
-			},
-			[28532] = {
-			},
-			[44989] = {
-				{
-					"Level 25 Sharptalon Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[26890] = {
-				{
-					"0/20  ", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[26894] = {
-			},
-			[13871] = {
-				{
-					"0/1  ", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[27396] = {
-				{
-					"0/1  ", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"0/5  ", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [2]
-				{
-					"0/5  ", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [3]
-			},
-			[40329] = {
-				{
-					"0/5 Pet Battlemasters Defeated", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-		},
-		["warModeBonus"] = 10,
 		["reputations"] = {
 			[911] = {
 				["barMin"] = 3000,
@@ -34460,6 +34335,136 @@ BtWQuests_Characters = {
 				["barMax"] = 3000,
 			},
 		},
+		["questsActive"] = {
+			[13890] = {
+				{
+					"0/1 Lighthouse Fire Lit", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[13842] = {
+				{
+					"0/1 Durak Persuaded", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[28549] = {
+				{
+					"0/1 Flight from Doras in Orgrimmar (Optional)", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"0/1 Speak with Nura Pathfinder on The High Road", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [2]
+			},
+			[44948] = {
+				{
+					"Level 25 Snowfeather Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[13883] = {
+				{
+					"0/10  ", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[31891] = {
+				{
+					"Defeat Traitor Gluk", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Defeat Grazzle the Great", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [2]
+				{
+					"Defeat Kela Grimtotem", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [3]
+				{
+					"Defeat Zoltan", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [4]
+				{
+					"Defeat Elena Flutterfly", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [5]
+			},
+			[6442] = {
+				{
+					"0/20  ", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[28548] = {
+			},
+			[26878] = {
+			},
+			[28532] = {
+			},
+			[44989] = {
+				{
+					"Level 25 Sharptalon Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[26890] = {
+				{
+					"0/20  ", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[26894] = {
+			},
+			[13871] = {
+				{
+					"0/1  ", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[27396] = {
+				{
+					"0/1  ", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"0/5  ", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [2]
+				{
+					"0/5  ", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [3]
+			},
+			[40329] = {
+				{
+					"0/5 Pet Battlemasters Defeated", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+		},
+		["warModeBonus"] = 10,
 		["ignoredChains"] = {
 		},
 		["name"] = "Vadder",
@@ -34761,7 +34766,7 @@ BtWQuests_Characters = {
 			[31814] = true,
 			[31822] = true,
 			[31830] = true,
-			[31575] = true,
+			[848] = true,
 			[53121] = true,
 			[26872] = true,
 			[44753] = true,
@@ -34773,7 +34778,7 @@ BtWQuests_Characters = {
 			[27974] = true,
 			[31918] = true,
 			[42837] = true,
-			[848] = true,
+			[27998] = true,
 			[27343] = true,
 			[27351] = true,
 			[844] = true,
@@ -34782,7 +34787,7 @@ BtWQuests_Characters = {
 			[50103] = true,
 			[845] = true,
 			[13971] = true,
-			[30984] = true,
+			[42486] = true,
 			[53744] = true,
 			[44051] = true,
 			[41704] = true,
@@ -34791,20 +34796,20 @@ BtWQuests_Characters = {
 			[13999] = true,
 			[31551] = true,
 			[42792] = true,
-			[850] = true,
-			[27998] = true,
+			[40730] = true,
+			[31575] = true,
 			[31583] = true,
-			[44722] = true,
+			[31591] = true,
 			[44738] = true,
 			[44754] = true,
 			[45281] = true,
-			[39724] = true,
-			[851] = true,
-			[56571] = true,
-			[43812] = true,
+			[40746] = true,
+			[56635] = true,
+			[850] = true,
+			[44834] = true,
 			[43317] = true,
 			[44724] = true,
-			[42838] = true,
+			[851] = true,
 			[44756] = true,
 			[852] = true,
 			[31592] = true,
@@ -34831,9 +34836,9 @@ BtWQuests_Characters = {
 			[45266] = true,
 			[45282] = true,
 			[43587] = true,
-			[40747] = true,
+			[39725] = true,
 			[39709] = true,
-			[43813] = true,
+			[40747] = true,
 			[43318] = true,
 			[43566] = true,
 			[42839] = true,
@@ -34850,7 +34855,7 @@ BtWQuests_Characters = {
 			[43564] = true,
 			[44053] = true,
 			[27847] = true,
-			[39725] = true,
+			[43813] = true,
 			[43590] = true,
 			[43502] = true,
 			[31552] = true,
@@ -34861,23 +34866,23 @@ BtWQuests_Characters = {
 			[40125] = true,
 			[44740] = true,
 			[45267] = true,
-			[56635] = true,
-			[44834] = true,
-			[40730] = true,
-			[40746] = true,
+			[42838] = true,
+			[43812] = true,
+			[56571] = true,
+			[39724] = true,
 			[40748] = true,
 			[38720] = true,
-			[31591] = true,
+			[40123] = true,
 			[42840] = true,
 			[41834] = true,
 			[40317] = true,
 			[44562] = true,
-			[42486] = true,
+			[13975] = true,
 			[44964] = true,
-			[40123] = true,
+			[44722] = true,
 			[50106] = true,
 			[44833] = true,
-			[13975] = true,
+			[30984] = true,
 			[53220] = true,
 			[31870] = true,
 			[870] = true,
@@ -34946,36 +34951,6 @@ BtWQuests_Characters = {
 		["xpModifier"] = 0.5,
 		["warMode"] = true,
 		["sex"] = 2,
-		["warModeBonus"] = 10,
-		["skills"] = {
-			[2572] = {
-				["maxLevel"] = 300,
-				["level"] = 62,
-			},
-			[2524] = {
-				["maxLevel"] = 300,
-				["level"] = 45,
-			},
-			[755] = {
-				["maxLevel"] = 75,
-				["level"] = 45,
-			},
-			[186] = {
-				["maxLevel"] = 75,
-				["level"] = 62,
-			},
-		},
-		["name"] = "Vancard",
-		["faction"] = "Horde",
-		["professions"] = {
-			[186] = true,
-			[356] = true,
-			[755] = true,
-			[794] = true,
-			[185] = true,
-		},
-		["ignoredChains"] = {
-		},
 		["questsActive"] = {
 			[28532] = {
 			},
@@ -35036,6 +35011,35 @@ BtWQuests_Characters = {
 					false, -- [3]
 				}, -- [2]
 			},
+		},
+		["skills"] = {
+			[2572] = {
+				["maxLevel"] = 300,
+				["level"] = 62,
+			},
+			[2524] = {
+				["maxLevel"] = 300,
+				["level"] = 45,
+			},
+			[755] = {
+				["maxLevel"] = 75,
+				["level"] = 45,
+			},
+			[186] = {
+				["maxLevel"] = 75,
+				["level"] = 62,
+			},
+		},
+		["name"] = "Vancard",
+		["faction"] = "Horde",
+		["professions"] = {
+			[186] = true,
+			[356] = true,
+			[755] = true,
+			[794] = true,
+			[185] = true,
+		},
+		["ignoredChains"] = {
 		},
 		["reputations"] = {
 			[470] = {
@@ -35130,6 +35134,7 @@ BtWQuests_Characters = {
 				["barValue"] = 500,
 			},
 		},
+		["warModeBonus"] = 10,
 	}, -- [37]
 	{
 		["covenantID"] = 0,
@@ -35363,7 +35368,7 @@ BtWQuests_Characters = {
 			[37530] = true,
 			[11575] = true,
 			[46268] = true,
-			[11663] = true,
+			[53749] = true,
 			[11599] = true,
 			[11607] = true,
 			[56626] = true,
@@ -35372,7 +35377,7 @@ BtWQuests_Characters = {
 			[27354] = true,
 			[44691] = true,
 			[11679] = true,
-			[27402] = true,
+			[11663] = true,
 			[11671] = true,
 			[27434] = true,
 			[62157] = true,
@@ -35490,8 +35495,8 @@ BtWQuests_Characters = {
 			[11560] = true,
 			[42116] = true,
 			[11576] = true,
-			[11680] = true,
-			[26493] = true,
+			[27436] = true,
+			[46816] = true,
 			[11600] = true,
 			[51483] = true,
 			[56630] = true,
@@ -35502,21 +35507,21 @@ BtWQuests_Characters = {
 			[26365] = true,
 			[27404] = true,
 			[11672] = true,
-			[37449] = true,
-			[60115] = true,
-			[26637] = true,
+			[11680] = true,
+			[26493] = true,
+			[31752] = true,
 			[31576] = true,
 			[11712] = true,
-			[46816] = true,
+			[60115] = true,
 			[11728] = true,
 			[62225] = true,
-			[31752] = true,
+			[11792] = true,
 			[26669] = true,
 			[26573] = true,
 			[12791] = true,
 			[42948] = true,
 			[50141] = true,
-			[11792] = true,
+			[26637] = true,
 			[26653] = true,
 			[41030] = true,
 			[26685] = true,
@@ -36009,7 +36014,7 @@ BtWQuests_Characters = {
 			[11620] = true,
 			[31592] = true,
 			[26325] = true,
-			[27436] = true,
+			[37449] = true,
 			[40326] = true,
 			[27396] = true,
 			[40965] = true,
@@ -36049,7 +36054,7 @@ BtWQuests_Characters = {
 			[37466] = true,
 			[44659] = true,
 			[11956] = true,
-			[53749] = true,
+			[27402] = true,
 			[26359] = true,
 			[42741] = true,
 			[47888] = true,
@@ -36083,6 +36088,294 @@ BtWQuests_Characters = {
 		["skills"] = {
 		},
 		["faction"] = "Alliance",
+		["warModeBonus"] = 15,
+		["warMode"] = false,
+		["name"] = "Varlouris",
+		["sex"] = 2,
+		["professions"] = {
+		},
+		["ignoredChains"] = {
+		},
+		["questsActive"] = {
+			[44720] = {
+			},
+			[42984] = {
+				{
+					"0/1 Scepter of Storms", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"0/1 Wrath of Azshara slain", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [2]
+			},
+			[44948] = {
+				{
+					"Level 25 Snowfeather Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[53436] = {
+				{
+					"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[46253] = {
+				{
+					"0/1 Hammer of Khaz'goroth", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"0/1 Tidestone of Golganneth", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [2]
+				{
+					"0/1 Tears of Elune", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [3]
+			},
+			[44561] = {
+				{
+					"Friendly / Honored The Nightfallen", -- [1]
+					"reputation", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[46805] = {
+				{
+					"Defeat Kil'jaeden", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[41877] = {
+				{
+					"0/1 Seek out Ly'leth", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[44338] = {
+				{
+					"Recover the Tears of Elune from Val'sharah", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[46839] = {
+				{
+					"0/1 Walk with High Exarch Turalyon", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[26939] = {
+				{
+					"0/1 Viscous Fallout slain", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[40300] = {
+				{
+					"0/1 Sacred Oil", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"0/1 Preserving Incense", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [2]
+				{
+					"0/1 Chest of Shrouds", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [3]
+			},
+			[38286] = {
+				{
+					"0/1 Eye of Azshara entered", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"0/1 Warlord Parjesh slain", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [2]
+				{
+					"0/1 Wrath of Azshara slain", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [3]
+			},
+			[60545] = {
+				{
+					"1/1 Learn about your leaders' fate", -- [1]
+					"object", -- [2]
+					true, -- [3]
+				}, -- [1]
+				{
+					"0/1 Take the Death Gate to Acherus", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [2]
+			},
+			[48642] = {
+				{
+					"0/4 Complete 4 Argussian Reach World Quests", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[42420] = {
+				{
+					"0/4 Complete 4 world quests in Azsuna", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[10279] = {
+			},
+			[40368] = {
+				{
+					"0/7 Shimmering Snapper Scale", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[45486] = {
+				{
+					"0/1 Speak to Sigryn in Valdisdall", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[44989] = {
+				{
+					"Level 25 Sharptalon Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[47253] = {
+				{
+					"0/1 Lord Kazzak slain", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"0/1 Azuregos slain", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [2]
+				{
+					"0/1 Dragon of Nightmare slain", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [3]
+			},
+			[42170] = {
+				{
+					"0/4 Complete 4 world quests in Val'sharah", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[46286] = {
+				{
+					"31/100 Collect Legionfall War Supplies", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[57300] = {
+				{
+					"0/500 Earn Honor in Korrak's Revenge", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[40332] = {
+				{
+					"6/6 Driftwood", -- [1]
+					"item", -- [2]
+					true, -- [3]
+				}, -- [1]
+				{
+					"1/1 Jarl Throndyr's Pyre built", -- [1]
+					"monster", -- [2]
+					true, -- [3]
+				}, -- [2]
+			},
+			[31891] = {
+				{
+					"Defeat Traitor Gluk", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Defeat Grazzle the Great", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [2]
+				{
+					"Defeat Kela Grimtotem", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [3]
+				{
+					"Defeat Zoltan", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [4]
+				{
+					"Defeat Elena Flutterfly", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [5]
+			},
+			[48513] = {
+				{
+					"0/3 Invasion Points cleared", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[40967] = {
+				{
+					"1/1 Anthology of the Guard", -- [1]
+					"item", -- [2]
+					true, -- [3]
+				}, -- [1]
+				{
+					"1/1 Magical Manifest of the Moon", -- [1]
+					"item", -- [2]
+					true, -- [3]
+				}, -- [2]
+				{
+					"0/1 Aftermath of the Well", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [3]
+			},
+			[40329] = {
+				{
+					"0/5 Pet Battlemasters Defeated", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+		},
 		["reputations"] = {
 			[1073] = {
 				["barMin"] = 9000,
@@ -36363,294 +36656,6 @@ BtWQuests_Characters = {
 				["standing"] = 5,
 				["barMax"] = 9000,
 				["barValue"] = 8999,
-			},
-		},
-		["warMode"] = false,
-		["name"] = "Varlouris",
-		["sex"] = 2,
-		["professions"] = {
-		},
-		["ignoredChains"] = {
-		},
-		["warModeBonus"] = 15,
-		["questsActive"] = {
-			[44720] = {
-			},
-			[42984] = {
-				{
-					"0/1 Scepter of Storms", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"0/1 Wrath of Azshara slain", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [2]
-			},
-			[44948] = {
-				{
-					"Level 25 Snowfeather Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[53436] = {
-				{
-					"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[38286] = {
-				{
-					"0/1 Eye of Azshara entered", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"0/1 Warlord Parjesh slain", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [2]
-				{
-					"0/1 Wrath of Azshara slain", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [3]
-			},
-			[44561] = {
-				{
-					"Friendly / Honored The Nightfallen", -- [1]
-					"reputation", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[46805] = {
-				{
-					"Defeat Kil'jaeden", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[41877] = {
-				{
-					"0/1 Seek out Ly'leth", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[10279] = {
-			},
-			[46839] = {
-				{
-					"0/1 Walk with High Exarch Turalyon", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[26939] = {
-				{
-					"0/1 Viscous Fallout slain", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[40300] = {
-				{
-					"0/1 Sacred Oil", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"0/1 Preserving Incense", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [2]
-				{
-					"0/1 Chest of Shrouds", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [3]
-			},
-			[40332] = {
-				{
-					"6/6 Driftwood", -- [1]
-					"item", -- [2]
-					true, -- [3]
-				}, -- [1]
-				{
-					"1/1 Jarl Throndyr's Pyre built", -- [1]
-					"monster", -- [2]
-					true, -- [3]
-				}, -- [2]
-			},
-			[60545] = {
-				{
-					"1/1 Learn about your leaders' fate", -- [1]
-					"object", -- [2]
-					true, -- [3]
-				}, -- [1]
-				{
-					"0/1 Take the Death Gate to Acherus", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [2]
-			},
-			[48642] = {
-				{
-					"0/4 Complete 4 Argussian Reach World Quests", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[42420] = {
-				{
-					"0/4 Complete 4 world quests in Azsuna", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[44989] = {
-				{
-					"Level 25 Sharptalon Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[40368] = {
-				{
-					"0/7 Shimmering Snapper Scale", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[45486] = {
-				{
-					"0/1 Speak to Sigryn in Valdisdall", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[44338] = {
-				{
-					"Recover the Tears of Elune from Val'sharah", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[47253] = {
-				{
-					"0/1 Lord Kazzak slain", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"0/1 Azuregos slain", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [2]
-				{
-					"0/1 Dragon of Nightmare slain", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [3]
-			},
-			[42170] = {
-				{
-					"0/4 Complete 4 world quests in Val'sharah", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[46286] = {
-				{
-					"31/100 Collect Legionfall War Supplies", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[57300] = {
-				{
-					"0/500 Earn Honor in Korrak's Revenge", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[46253] = {
-				{
-					"0/1 Hammer of Khaz'goroth", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"0/1 Tidestone of Golganneth", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [2]
-				{
-					"0/1 Tears of Elune", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [3]
-			},
-			[31891] = {
-				{
-					"Defeat Traitor Gluk", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Defeat Grazzle the Great", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [2]
-				{
-					"Defeat Kela Grimtotem", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [3]
-				{
-					"Defeat Zoltan", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [4]
-				{
-					"Defeat Elena Flutterfly", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [5]
-			},
-			[48513] = {
-				{
-					"0/3 Invasion Points cleared", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[40967] = {
-				{
-					"1/1 Anthology of the Guard", -- [1]
-					"item", -- [2]
-					true, -- [3]
-				}, -- [1]
-				{
-					"1/1 Magical Manifest of the Moon", -- [1]
-					"item", -- [2]
-					true, -- [3]
-				}, -- [2]
-				{
-					"0/1 Aftermath of the Well", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [3]
-			},
-			[40329] = {
-				{
-					"0/5 Pet Battlemasters Defeated", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
 			},
 		},
 	}, -- [38]
@@ -37873,12 +37878,12 @@ BtWQuests_Characters = {
 			[50104] = true,
 			[14057] = true,
 			[42044] = true,
-			[25316] = true,
+			[27363] = true,
 			[25188] = true,
 			[38142] = true,
 			[56629] = true,
 			[27331] = true,
-			[42428] = true,
+			[25316] = true,
 			[27395] = true,
 			[34432] = true,
 			[40573] = true,
@@ -38180,13 +38185,13 @@ BtWQuests_Characters = {
 			[48452] = true,
 			[31768] = true,
 			[11936] = true,
-			[13640] = true,
+			[11641] = true,
 			[49538] = true,
 			[11705] = true,
 			[25129] = true,
+			[13640] = true,
 			[11609] = true,
 			[60861] = true,
-			[42438] = true,
 			[33546] = true,
 			[29095] = true,
 			[34506] = true,
@@ -38198,7 +38203,7 @@ BtWQuests_Characters = {
 			[60669] = true,
 			[27304] = true,
 			[11625] = true,
-			[11641] = true,
+			[42438] = true,
 			[27400] = true,
 			[34378] = true,
 			[34442] = true,
@@ -38348,7 +38353,7 @@ BtWQuests_Characters = {
 			[11946] = true,
 			[49863] = true,
 			[11978] = true,
-			[27363] = true,
+			[42428] = true,
 			[26059] = true,
 			[14073] = true,
 			[33807] = true,
@@ -38623,229 +38628,6 @@ BtWQuests_Characters = {
 		},
 		["xpModifier"] = 0,
 		["renownLevel"] = 1,
-		["questsActive"] = {
-			[40567] = {
-				{
-					"0/1 Shade of Xavius Slain", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[53435] = {
-				{
-					"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[52444] = {
-				{
-					"0/1 Review final foothold", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[44075] = {
-				{
-					"0/1 Essence of Ferocity", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"0/1 Odyn's trial completed", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [2]
-			},
-			[44076] = {
-				{
-					"0/1 Essence of Regrowth", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"0/1 Shade of Xavius slain", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [2]
-			},
-			[44077] = {
-				{
-					"0/1 Essence of Balance", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[43365] = {
-				{
-					"0/100 Dream Seeds planted", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[40019] = {
-				{
-					"9/15 Healthy Dreamleaf", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"5/5 Blight-Infested Dreamleaf", -- [1]
-					"item", -- [2]
-					true, -- [3]
-				}, -- [2]
-			},
-			[42129] = {
-				{
-					"0/1 Pendant of Starlight", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[42719] = {
-				{
-					"0/25 Rarefied Water", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"0/1 Wrath of Azshara slain", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [2]
-			},
-			[51432] = {
-			},
-			[44074] = {
-				{
-					"0/1 Essence of Tenacity", -- [1]
-					"item", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"0/1 Dargrul slain", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [2]
-			},
-			[50562] = {
-				{
-					"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[61874] = {
-				{
-					"1/1 Learn about your leaders' fate", -- [1]
-					"object", -- [2]
-					true, -- [3]
-				}, -- [1]
-				{
-					"0/1 Take the Death Gate to Acherus", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [2]
-			},
-			[50606] = {
-				{
-					"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[44989] = {
-				{
-					"Level 25 Sharptalon Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[31015] = {
-				{
-					"0/1 An empty bookshelf", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[31486] = {
-				{
-					"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
-					"log", -- [2]
-					true, -- [3]
-				}, -- [1]
-			},
-			[40329] = {
-				{
-					"0/5 Pet Battlemasters Defeated", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[56120] = {
-				{
-					"0/4 Complete world quests in Nazjatar", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[44555] = {
-			},
-			[31891] = {
-				{
-					"Defeat Traitor Gluk", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"Defeat Grazzle the Great", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [2]
-				{
-					"Defeat Kela Grimtotem", -- [1]
-					"event", -- [2]
-					true, -- [3]
-				}, -- [3]
-				{
-					"Defeat Zoltan", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [4]
-				{
-					"Defeat Elena Flutterfly", -- [1]
-					"event", -- [2]
-					false, -- [3]
-				}, -- [5]
-			},
-			[36614] = {
-				{
-					"1589/2000 Garrison resources gathered (Optional)", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-				{
-					"0/1 Upgrade your garrison to Tier 3", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [2]
-			},
-			[49901] = {
-				{
-					"0/1 Yazma slain", -- [1]
-					"monster", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-			[44948] = {
-				{
-					"Level 25 Snowfeather Hatchling", -- [1]
-					"object", -- [2]
-					false, -- [3]
-				}, -- [1]
-			},
-		},
-		["warModeBonus"] = 10,
 		["reputations"] = {
 			[889] = {
 				["barMin"] = 0,
@@ -39078,12 +38860,12 @@ BtWQuests_Characters = {
 				["barValue"] = 30650,
 				["barMax"] = 42000,
 			},
-			[1064] = {
-				["barMin"] = 9000,
-				["name"] = "The Taunka",
-				["standing"] = 6,
-				["barMax"] = 21000,
-				["barValue"] = 11059,
+			[729] = {
+				["barMin"] = 0,
+				["name"] = "Frostwolf Clan",
+				["standing"] = 4,
+				["barValue"] = 0,
+				["barMax"] = 3000,
 			},
 			[530] = {
 				["barMin"] = 9000,
@@ -39120,12 +38902,12 @@ BtWQuests_Characters = {
 				["barValue"] = 0,
 				["barMax"] = 3000,
 			},
-			[1883] = {
+			[1064] = {
 				["barMin"] = 9000,
-				["name"] = "Dreamweavers",
+				["name"] = "The Taunka",
 				["standing"] = 6,
 				["barMax"] = 21000,
-				["barValue"] = 17870,
+				["barValue"] = 11059,
 			},
 			[2104] = {
 				["barMin"] = 0,
@@ -39190,12 +38972,12 @@ BtWQuests_Characters = {
 				["barValue"] = 8999,
 				["barMax"] = 9000,
 			},
-			[729] = {
-				["barMin"] = 0,
-				["name"] = "Frostwolf Clan",
-				["standing"] = 4,
-				["barValue"] = 0,
-				["barMax"] = 3000,
+			[1883] = {
+				["barMin"] = 9000,
+				["name"] = "Dreamweavers",
+				["standing"] = 6,
+				["barMax"] = 21000,
+				["barValue"] = 17870,
 			},
 			[59] = {
 				["barMin"] = 0,
@@ -39240,6 +39022,229 @@ BtWQuests_Characters = {
 				["barMax"] = 3000,
 			},
 		},
+		["questsActive"] = {
+			[40567] = {
+				{
+					"0/1 Shade of Xavius Slain", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[53435] = {
+				{
+					"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[52444] = {
+				{
+					"0/1 Review final foothold", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[44075] = {
+				{
+					"0/1 Essence of Ferocity", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"0/1 Odyn's trial completed", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [2]
+			},
+			[44076] = {
+				{
+					"0/1 Essence of Regrowth", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"0/1 Shade of Xavius slain", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [2]
+			},
+			[44077] = {
+				{
+					"0/1 Essence of Balance", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[43365] = {
+				{
+					"0/100 Dream Seeds planted", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[40019] = {
+				{
+					"9/15 Healthy Dreamleaf", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"5/5 Blight-Infested Dreamleaf", -- [1]
+					"item", -- [2]
+					true, -- [3]
+				}, -- [2]
+			},
+			[42129] = {
+				{
+					"0/1 Pendant of Starlight", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[42719] = {
+				{
+					"0/25 Rarefied Water", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"0/1 Wrath of Azshara slain", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [2]
+			},
+			[51432] = {
+			},
+			[44074] = {
+				{
+					"0/1 Essence of Tenacity", -- [1]
+					"item", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"0/1 Dargrul slain", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [2]
+			},
+			[50562] = {
+				{
+					"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[50598] = {
+				{
+					"0/4 Complete 4 world quests in Zuldazar.", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[61874] = {
+				{
+					"1/1 Learn about your leaders' fate", -- [1]
+					"object", -- [2]
+					true, -- [3]
+				}, -- [1]
+				{
+					"0/1 Take the Death Gate to Acherus", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [2]
+			},
+			[44989] = {
+				{
+					"Level 25 Sharptalon Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[31015] = {
+				{
+					"0/1 An empty bookshelf", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[31486] = {
+				{
+					"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
+					"log", -- [2]
+					true, -- [3]
+				}, -- [1]
+			},
+			[50603] = {
+				{
+					"0/4 Complete 4 world quests in Vol'dun", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[40329] = {
+				{
+					"0/5 Pet Battlemasters Defeated", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[44555] = {
+			},
+			[31891] = {
+				{
+					"Defeat Traitor Gluk", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"Defeat Grazzle the Great", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [2]
+				{
+					"Defeat Kela Grimtotem", -- [1]
+					"event", -- [2]
+					true, -- [3]
+				}, -- [3]
+				{
+					"Defeat Zoltan", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [4]
+				{
+					"Defeat Elena Flutterfly", -- [1]
+					"event", -- [2]
+					false, -- [3]
+				}, -- [5]
+			},
+			[49901] = {
+				{
+					"0/1 Yazma slain", -- [1]
+					"monster", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[44948] = {
+				{
+					"Level 25 Snowfeather Hatchling", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+			},
+			[36614] = {
+				{
+					"1589/2000 Garrison resources gathered (Optional)", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [1]
+				{
+					"0/1 Upgrade your garrison to Tier 3", -- [1]
+					"object", -- [2]
+					false, -- [3]
+				}, -- [2]
+			},
+		},
+		["warModeBonus"] = 10,
 		["ignoredChains"] = {
 		},
 		["name"] = "Zulbathal",
@@ -39247,9 +39252,9 @@ BtWQuests_Characters = {
 		["professions"] = {
 			[182] = true,
 			[356] = true,
+			[794] = true,
 			[171] = true,
 			[185] = true,
-			[794] = true,
 		},
 		["skills"] = {
 			[2551] = {

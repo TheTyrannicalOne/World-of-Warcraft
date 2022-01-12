@@ -116,10 +116,10 @@ ARLDB2 = {
 		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Laymonan - Zul'jin"] = "Laymonan - Zul'jin",
-		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
-		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
+		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
@@ -184,13 +184,13 @@ ARLDB2 = {
 		},
 		["Laymonan - Zul'jin"] = {
 		},
-		["Tyran - Argent Dawn"] = {
+		["Serbitechna - Dalaran"] = {
 		},
 		["Vadder - Argent Dawn"] = {
 		},
-		["Serbitechna - Dalaran"] = {
-		},
 		["Datgore - Zul'jin"] = {
+		},
+		["Tyran - Argent Dawn"] = {
 		},
 		["Darnastris - Dalaran"] = {
 		},

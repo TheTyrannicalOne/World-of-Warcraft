@@ -25,15 +25,16 @@ QuestTogether = {
 				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[50605] = {
-			["title"] = "Alliance War Effort",
+		[57378] = {
+			["title"] = "Remnants of a Shattered World",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
+				"0/1 \"Curse of Stone\" book obtained", -- [1]
 			},
 		},
-		[57564] = {
-			["title"] = "Mantid Assault Tracker",
+		[50600] = {
+			["title"] = "Order of Embers",
 			["objectives"] = {
+				"0/4 Complete 4 world quests in Drustvar", -- [1]
 			},
 		},
 		[62801] = {
@@ -41,10 +42,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[32806] = {
-			["title"] = "The King and the Council",
+		[57563] = {
+			["title"] = "Mogu Assault Tracker",
 			["objectives"] = {
-				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
+				"0/1 [DNT] Dummy Credit slain", -- [1]
 			},
 		},
 		[57006] = {
@@ -111,10 +112,10 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[57378] = {
-			["title"] = "Remnants of a Shattered World",
+		[50599] = {
+			["title"] = "Proudmoore Admiralty",
 			["objectives"] = {
-				"0/1 \"Curse of Stone\" book obtained", -- [1]
+				"0/4 Complete 4 world quests in Tiragarde Sound", -- [1]
 			},
 		},
 		[56211] = {
@@ -124,10 +125,10 @@ QuestTogether = {
 				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
-		[56119] = {
-			["title"] = "The Waveblade Ankoan",
+		[32806] = {
+			["title"] = "The King and the Council",
 			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
+				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
 		[31486] = {
@@ -189,8 +190,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
-		["showDebugInfo"] = false,
 	},
 }

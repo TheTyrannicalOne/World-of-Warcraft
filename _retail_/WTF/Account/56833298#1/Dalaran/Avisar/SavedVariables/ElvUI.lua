@@ -1,292 +1,8 @@
 
 ElvCharacterDB = {
+	["CliqueDatatext"] = {
+	},
 	["ChatHistoryLog"] = {
-		{
-			"WTS M+15 125k ||M+14 115k ||M+12 99k ||M+10 69K||<||BUY 2 GET ARMOR STACK FREE||> Mythic Keys 10-20: M+20 TIMED+KEY 553k ||\"KSM DEAL\"||\"SPECIAL DEAL  FOR 3 RUN AND DISCOUNT\"||TAZAVESH||TORGHAST 1-12||ONLY GOLD||<Huokan Community>", -- [1]
-			"Minervakl-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Minervakl-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			743, -- [11]
-			"Player-3683-0D2C5E51", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Minervakl|r",
-			[51] = 1634609474,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
-		{
-			" like a normal person", -- [1]
-			"Debbiedoobie-AeriePeak", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Debbiedoobie-AeriePeak", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			745, -- [11]
-			"Player-1426-08248C61", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edDebbiedoobie-AeriePeak|r",
-			[51] = 1634609477,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
-		{
-			"RESET DEALS: M15+ONLY 125k>> BUY 2 GET FREE ARMOR STACK>> M14 115K|| M12 99K|| M10 69K|| SPECIFIC KEY 20+ TIMED 553k|| Bundles: 3xM15 107k ea|| 3xM14 92k ea || 3xM12 75k ea||3xM10 52k ea || SOD HC&M ||WTS TAZAVESH/TORGHAST/ LVL ||GOLD ONLY >>HUOKAN<<", -- [1]
-			"Papusan-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Papusan-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			748, -- [11]
-			"Player-3683-0D24DD7B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Papusan|r",
-			[51] = 1634609482,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
-		{
-			" i'm almost 3x that", -- [1]
-			"Debbiedoobie-AeriePeak", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Debbiedoobie-AeriePeak", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			752, -- [11]
-			"Player-1426-08248C61", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edDebbiedoobie-AeriePeak|r",
-			[51] = 1634609489,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
-		{
-			" Blizzard has literally made a few thousand dollars off of me and still hasn't given me that mount yet", -- [1]
-			"Debbiedoobie-AeriePeak", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Debbiedoobie-AeriePeak", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			782, -- [11]
-			"Player-1426-08248C61", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edDebbiedoobie-AeriePeak|r",
-			[51] = 1634609553,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
-		{
-			"sounds like a personal problem", -- [1]
-			"Diireptojr-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Diireptojr-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			804, -- [11]
-			"Player-3683-0B43F716", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Diireptojr|r",
-			[51] = 1634609589,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
-		{
-			" sounds like them laughing all the way to the bank", -- [1]
-			"Debbiedoobie-AeriePeak", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Debbiedoobie-AeriePeak", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			822, -- [11]
-			"Player-1426-08248C61", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edDebbiedoobie-AeriePeak|r",
-			[51] = 1634609609,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
-		{
-			"An yet another year to come where we may not get it again! Cheers to that!", -- [1]
-			"Shadowhnter-Hellscream", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Shadowhnter-Hellscream", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			852, -- [11]
-			"Player-53-005564C8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Shadowhnter-Hellscream|r",
-			[51] = 1634609641,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
-		{
-			" still have the entire festival to go - so good luck", -- [1]
-			"Debbiedoobie-AeriePeak", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Debbiedoobie-AeriePeak", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			869, -- [11]
-			"Player-1426-08248C61", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edDebbiedoobie-AeriePeak|r",
-			[51] = 1634609660,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
-		{
-			"As to you too.", -- [1]
-			"Shadowhnter-Hellscream", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Shadowhnter-Hellscream", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			888, -- [11]
-			"Player-53-005564C8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Shadowhnter-Hellscream|r",
-			[51] = 1634609679,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
-		{
-			"|cffffff00|Hachievement:980:Player-158-0AA5B442:1:10:21:8:0:0:0:0|h[The Horseman's Reins]|h|r You can do it!", -- [1]
-			"Relise-Greymane", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Relise-Greymane", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			903, -- [11]
-			"Player-158-0AA5B442", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cRelise-Greymane|r",
-			[51] = 1634609695,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
-		{
-			"Cut his Fckin head off", -- [1]
-			"Shadowhnter-Hellscream", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Shadowhnter-Hellscream", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			915, -- [11]
-			"Player-53-005564C8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Shadowhnter-Hellscream|r",
-			[51] = 1634609708,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
-		{
-			"haha", -- [1]
-			"Nightwalker-Doomhammer", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Nightwalker-Doomhammer", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			919, -- [11]
-			"Player-1190-075B6BA6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edNightwalker-Doomhammer|r",
-			[51] = 1634609712,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
 		{
 			"I should run all of my tanks through it", -- [1]
 			"Nightwalker-Doomhammer", -- [2]
@@ -308,7 +24,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edNightwalker-Doomhammer|r",
 			[51] = 1634609726,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
+		}, -- [1]
 		{
 			" what is teh drop rate on the HH mount?  anyone know?", -- [1]
 			"Debbiedoobie-AeriePeak", -- [2]
@@ -330,7 +46,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDebbiedoobie-AeriePeak|r",
 			[51] = 1634609726,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
+		}, -- [2]
 		{
 			"it is something really dumb low", -- [1]
 			"Nightwalker-Doomhammer", -- [2]
@@ -352,7 +68,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edNightwalker-Doomhammer|r",
 			[51] = 1634609743,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
+		}, -- [3]
 		{
 			".4", -- [1]
 			"Somesunnyday-Dalaran", -- [2]
@@ -374,7 +90,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Somesunnyday|r",
 			[51] = 1634609745,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
+		}, -- [4]
 		{
 			" I estimate i did it 200x with no drop", -- [1]
 			"Debbiedoobie-AeriePeak", -- [2]
@@ -396,7 +112,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDebbiedoobie-AeriePeak|r",
 			[51] = 1634609746,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
+		}, -- [5]
 		{
 			"0.4%", -- [1]
 			"Antalaand-Dalaran", -- [2]
@@ -418,7 +134,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Antalaand|r",
 			[51] = 1634609763,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
+		}, -- [6]
 		{
 			"at least it is easier to queue...I don't have to run all of Ulduar every time for example", -- [1]
 			"Nightwalker-Doomhammer", -- [2]
@@ -440,7 +156,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edNightwalker-Doomhammer|r",
 			[51] = 1634609774,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
+		}, -- [7]
 		{
 			" that's like an hour out of 200 of the days in my life where I just fucking failed", -- [1]
 			"Debbiedoobie-AeriePeak", -- [2]
@@ -462,7 +178,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDebbiedoobie-AeriePeak|r",
 			[51] = 1634609796,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
+		}, -- [8]
 		{
 			"I see a2008 one too", -- [1]
 			"Nightwalker-Doomhammer", -- [2]
@@ -484,7 +200,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edNightwalker-Doomhammer|r",
 			[51] = 1634609825,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
+		}, -- [9]
 		{
 			" there are people I could call up in real life and say \"hey - you know how 15 years ago I was raging about how i couldn't get the Headless Horseman mount to drop?....  well it's 15 years later and it still hasn;t dropped\"", -- [1]
 			"Debbiedoobie-AeriePeak", -- [2]
@@ -506,7 +222,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDebbiedoobie-AeriePeak|r",
 			[51] = 1634609905,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
+		}, -- [10]
 		{
 			"!!WTS +15 Only 125K/(BUY 2 GET FREE ARMOR STACK AND DISCOUNT). Mythic Keys 0-20!/+14=115K /+12=99k /+10=69k /(SPECIAL DEAL FOR 3 RUNS)<WTS  SOD  H & M > WTS Torghast 12/Tazavesh Hardmode /(Leveling 51-60)(PVP in 2s)/ ONLY GOLD >>HUOKAN COMMUNITY<<", -- [1]
 			"Silowert-Dalaran", -- [2]
@@ -528,7 +244,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Silowert|r",
 			[51] = 1634609929,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
+		}, -- [11]
 		{
 			"'reroll'", -- [1]
 			"Debbiedoobie-AeriePeak", -- [2]
@@ -550,7 +266,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDebbiedoobie-AeriePeak|r",
 			[51] = 1634609942,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
+		}, -- [12]
 		{
 			"damn thats nearly twice as long as it took me", -- [1]
 			"Cynsia-Staghelm", -- [2]
@@ -572,7 +288,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Cynsia-Staghelm|r",
 			[51] = 1634609997,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
+		}, -- [13]
 		{
 			".4% for a mount is 25 mounts per 1,000 tries", -- [1]
 			"Debbiedoobie-AeriePeak", -- [2]
@@ -594,7 +310,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDebbiedoobie-AeriePeak|r",
 			[51] = 1634610006,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
+		}, -- [14]
 		{
 			"all i know is I never ever get it and i watch other people continuously do", -- [1]
 			"Debbiedoobie-AeriePeak", -- [2]
@@ -616,7 +332,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDebbiedoobie-AeriePeak|r",
 			[51] = 1634610042,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
+		}, -- [15]
 		{
 			"5 mounts theres 5 people in a group", -- [1]
 			"Cynsia-Staghelm", -- [2]
@@ -638,7 +354,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Cynsia-Staghelm|r",
 			[51] = 1634610047,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
+		}, -- [16]
 		{
 			" i've tried for 17 years and never got it to drop even one time.  i got a shit ton of masks though", -- [1]
 			"Debbiedoobie-AeriePeak", -- [2]
@@ -660,7 +376,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDebbiedoobie-AeriePeak|r",
 			[51] = 1634610077,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
+		}, -- [17]
 		{
 			"wands", -- [1]
 			"Debbiedoobie-AeriePeak", -- [2]
@@ -682,7 +398,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDebbiedoobie-AeriePeak|r",
 			[51] = 1634610088,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
+		}, -- [18]
 		{
 			"WTS M+15 125k ||M+14 115k ||M+12 99k ||M+10 69K||<||BUY 2 GET ARMOR STACK FREE||> Mythic Keys 10-20: M+20 TIMED+KEY 553k ||\"KSM DEAL\"||\"SPECIAL DEAL  FOR 3 RUN AND DISCOUNT\"||TAZAVESH||TORGHAST 1-12||ONLY GOLD||<Huokan Community>", -- [1]
 			"Minervakl-Dalaran", -- [2]
@@ -704,7 +420,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Minervakl|r",
 			[51] = 1634610107,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
+		}, -- [19]
 		{
 			" have you ever eaten so much candy that you threw up?  like on Halloween?", -- [1]
 			"Debbiedoobie-AeriePeak", -- [2]
@@ -726,7 +442,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDebbiedoobie-AeriePeak|r",
 			[51] = 1634610141,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
+		}, -- [20]
 		{
 			"how does one have fun in this game?", -- [1]
 			"Iamthebatdad-Dalaran", -- [2]
@@ -748,7 +464,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Iamthebatdad|r",
 			[51] = 1634610143,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
+		}, -- [21]
 		{
 			"friends", -- [1]
 			"Mèdìc-Dalaran", -- [2]
@@ -770,7 +486,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Mèdìc|r",
 			[51] = 1634610152,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
+		}, -- [22]
 		{
 			"ah that makes sense. i dont have any. no wonder why", -- [1]
 			"Iamthebatdad-Dalaran", -- [2]
@@ -792,7 +508,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Iamthebatdad|r",
 			[51] = 1634610173,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
+		}, -- [23]
 		{
 			"lmfao", -- [1]
 			"Paboo-Dalaran", -- [2]
@@ -814,7 +530,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcPaboo|r",
 			[51] = 1634610183,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
+		}, -- [24]
 		{
 			"same", -- [1]
 			"Paboo-Dalaran", -- [2]
@@ -836,7 +552,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcPaboo|r",
 			[51] = 1634610191,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
+		}, -- [25]
 		{
 			" well, I mean you threw up in the toilet, but on the date of Halloween?", -- [1]
 			"Debbiedoobie-AeriePeak", -- [2]
@@ -858,7 +574,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDebbiedoobie-AeriePeak|r",
 			[51] = 1634610200,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
+		}, -- [26]
 		{
 			" I did - i ate a entire bag of whoppers and about ten slices of watermelon", -- [1]
 			"Debbiedoobie-AeriePeak", -- [2]
@@ -880,7 +596,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDebbiedoobie-AeriePeak|r",
 			[51] = 1634610236,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
+		}, -- [27]
 		{
 			"it came up hard", -- [1]
 			"Debbiedoobie-AeriePeak", -- [2]
@@ -902,7 +618,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDebbiedoobie-AeriePeak|r",
 			[51] = 1634610244,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
+		}, -- [28]
 		{
 			"thats what she said", -- [1]
 			"Chaperone-Dalaran", -- [2]
@@ -924,7 +640,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Chaperone|r",
 			[51] = 1634610253,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
+		}, -- [29]
 		{
 			"!!WTS +15 Only 125K/(BUY 2 GET FREE ARMOR STACK AND DISCOUNT). Mythic Keys 0-20!/+14=115K /+12=99k /+10=69k /(SPECIAL DEAL FOR 3 RUNS)<WTS  SOD  H & M > WTS Torghast 12/Tazavesh Hardmode /(Leveling 51-60)(PVP in 2s)/ ONLY GOLD >>HUOKAN COMMUNITY<<", -- [1]
 			"Silowert-Dalaran", -- [2]
@@ -946,7 +662,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Silowert|r",
 			[51] = 1634610323,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [30]
 		{
 			"May I please have |cff0070dd|Hitem:143901::::::::50:70::22:1:7464:2:28:181:9:60:::::|h[Band of the Petrified Pumpkin]|h|r if you don't need it?", -- [1]
 			"Draxden-Dalaran", -- [2]
@@ -968,7 +684,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Draxden|r",
 			[51] = 1634610531,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [44]
+		}, -- [31]
 		{
 			"WTS M+15 140k ||M+14 135k ||M+12 99k ||M+10 69K||<||BUY 2 GET ARMOR STACK FREE||> Mythic Keys 10-20: M+20 TIMED+KEY 568k ||\"KSM DEAL\"||\"SPECIAL DEAL  FOR 3 RUN AND DISCOUNT\"||TAZAVESH||TORGHAST 1-12||ONLY GOLD||<Huokan Community>", -- [1]
 			"Minervakl-Dalaran", -- [2]
@@ -990,7 +706,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Minervakl|r",
 			[51] = 1634702261,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [32]
 		{
 			".:WTS:. |cff66bbff|Hjournal:0:1193:15|h[Sanctum of Domination]|h|rHeroic || 400K || Full Clear || Going Now ||> The Masters Community <", -- [1]
 			"Bufoo-Dalaran", -- [2]
@@ -1012,7 +728,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Bufoo|r",
 			[51] = 1634702350,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [33]
 		{
 			"WTS M+15 140k||Buy2 AND GET FREE ARMOR STACK||3x15s 119k ( Stack 124k)|| KSM 152K|| M+20 Timed 568k||WTS TORGHAST ||WTS SOD HEROIC & MYTHIC || LVLING 51-60 || PVP ||  Gold Only Huokan Community", -- [1]
 			"Husale-Dalaran", -- [2]
@@ -1034,7 +750,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cHusale|r",
 			[51] = 1634698806,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [34]
 		{
 			"WTS of the SOD 10/10 HEROIC. THE CHEAPEST PRICES. Fast and Smooth run. 6:00 PM EDT time. For details /w  Only gold. ", -- [1]
 			"Sillena-Dalaran", -- [2]
@@ -1056,7 +772,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Sillena|r",
 			[51] = 1634939202,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [35]
 		{
 			"WTS M+15 140k ||M+14 135k ||M+12 99k ||M+10 69K||<||BUY 2 GET ARMOR STACK FREE||> Mythic Keys 10-20: M+20 TIMED+KEY 568k ||\"KSM DEAL\"||\"SPECIAL DEAL  FOR 3 RUN AND DISCOUNT\"||TAZAVESH||TORGHAST 1-12||ONLY GOLD||<Huokan Community>", -- [1]
 			"Minervakl-Dalaran", -- [2]
@@ -1078,7 +794,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Minervakl|r",
 			[51] = 1634939226,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [36]
 		{
 			" I think that like .003% of the first wow players rolled a dwarf or a gnome because people assumed they would not be able to run around as fast", -- [1]
 			"Debbiedoobie-AeriePeak", -- [2]
@@ -1100,7 +816,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDebbiedoobie-AeriePeak|r",
 			[51] = 1634939233,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [37]
 		{
 			"aw, that's sad. I would have done it anyway if I could have had a gnome hunter. alas. I had to wait...how long?", -- [1]
 			"Odynsson-Aggramar", -- [2]
@@ -1122,7 +838,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cOdynsson-Aggramar|r",
 			[51] = 1634939270,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [38]
 		{
 			"I need help to create my guild for my alts! im willing to pay gold for signature! i will give half upfront with the signature and the other half at the same time i will kick you out the guild. whisper to me for more info.", -- [1]
 			"Thanasia-Dalaran", -- [2]
@@ -1144,7 +860,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Thanasia|r",
 			[51] = 1634939285,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [39]
 		{
 			"  too long", -- [1]
 			"Debbiedoobie-AeriePeak", -- [2]
@@ -1166,7 +882,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDebbiedoobie-AeriePeak|r",
 			[51] = 1634939285,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [40]
 		{
 			"!!WTS +15 Only 140k/(BUY 2 GET FREE ARMOR STACK AND DISCOUNT). Mythic Keys 0-20!/+14=135K /+12=99k /+10=69k /(SPECIAL DEAL FOR 3 RUNS)<WTS  SOD  H & M > WTS Torghast 12/Tazavesh Hardmode /(Leveling 51-60)(PVP in 2s)/ ONLY GOLD >>HUOKAN COMMUNITY<<", -- [1]
 			"Scorpión-Dalaran", -- [2]
@@ -1188,7 +904,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edScorpión|r",
 			[51] = 1634939286,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [41]
 		{
 			"prolly cata", -- [1]
 			"Metaphix-Dalaran", -- [2]
@@ -1210,7 +926,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Metaphix|r",
 			[51] = 1634939288,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [42]
 		{
 			"it was a good while. legion if I remember right.", -- [1]
 			"Odynsson-Aggramar", -- [2]
@@ -1232,7 +948,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cOdynsson-Aggramar|r",
 			[51] = 1634939289,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [43]
 		{
 			"dang it wrong server or I'd sign for you Than...", -- [1]
 			"Odynsson-Aggramar", -- [2]
@@ -1254,7 +970,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cOdynsson-Aggramar|r",
 			[51] = 1634939311,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [44]
 		{
 			"  they need to fix the guild sig issue across servers they merged", -- [1]
 			"Debbiedoobie-AeriePeak", -- [2]
@@ -1276,7 +992,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDebbiedoobie-AeriePeak|r",
 			[51] = 1634939328,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
+		}, -- [45]
 		{
 			"!!WTS +15 Only 140k>(BUY 2 GET ARMOR STACK FREE)</Mythic Keys +10-20!<TIMED+KEY SPECIFIC/+14 135K /+12 99k /+10 69K /(KEY+TIMED +20 568K) Bundles: 3xM15 119k ea/3xM14 108k ea/3xM12 75k ea/ SoD HC-M / WTS TAZAVESH/TORGHAST/LVL<GOLD ONLY>>>HUOKAN<<<", -- [1]
 			"Dulcessaless-Dalaran", -- [2]
@@ -1298,7 +1014,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcDulcessaless|r",
 			[51] = 1634939348,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [46]
 		{
 			"WTS of the SOD 10/10 HEROIC. THE CHEAPEST PRICES. Fast and Smooth run. 6:00 PM EDT time. For details /w  Only gold. ", -- [1]
 			"Sillena-Dalaran", -- [2]
@@ -1320,7 +1036,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Sillena|r",
 			[51] = 1634939349,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [47]
 		{
 			"well maybe they can. I'd forgotten that.  can I try?", -- [1]
 			"Odynsson-Aggramar", -- [2]
@@ -1342,7 +1058,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cOdynsson-Aggramar|r",
 			[51] = 1634939353,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [48]
 		{
 			"sure\\", -- [1]
 			"Debbiedoobie-AeriePeak", -- [2]
@@ -1364,7 +1080,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDebbiedoobie-AeriePeak|r",
 			[51] = 1634939366,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [49]
 		{
 			"where is hallows end emissary?", -- [1]
 			"Illwyn-Medivh", -- [2]
@@ -1386,7 +1102,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edIllwyn-Medivh|r",
 			[51] = 1634939661,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [50]
 		{
 			"outside of SW", -- [1]
 			"Hï-Stormrage", -- [2]
@@ -1408,7 +1124,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edHï-Stormrage|r",
 			[51] = 1634939672,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [51]
 		{
 			"near sw gates", -- [1]
 			"Visone-Dalaran", -- [2]
@@ -1430,7 +1146,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cVisone|r",
 			[51] = 1634939676,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [52]
 		{
 			"ok thanks", -- [1]
 			"Illwyn-Medivh", -- [2]
@@ -1452,7 +1168,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edIllwyn-Medivh|r",
 			[51] = 1634939682,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [53]
 		{
 			"ye", -- [1]
 			"Hï-Stormrage", -- [2]
@@ -1474,7 +1190,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edHï-Stormrage|r",
 			[51] = 1634939686,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [54]
 		{
 			"does anyone need |cffffff00|Hachievement:283:Player-60-0B908C39:1:10:22:20:4294967295:4294967295:4294967295:4294967295|h[The Masquerade]|h|r? I can help 5 ppl", -- [1]
 			"Valyntina-Stormrage", -- [2]
@@ -1496,7 +1212,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Valyntina-Stormrage|r",
 			[51] = 1634939749,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [55]
 		{
 			"|cffffff00The Stonefield Farm is under attack!|r", -- [1]
 			"", -- [2]
@@ -1518,7 +1234,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1634939994,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [56]
 		{
 			"LF guild sigs from Elune, Gilneas, Laughing Skull, Auchindoun, Cho'gall to start a bank guild, 50g now and another 50g once guild is started.. PST", -- [1]
 			"Sixpense-Elune", -- [2]
@@ -1540,7 +1256,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cSixpense-Elune|r",
 			[51] = 1635003190,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [57]
 		{
 			"|cffffd000|Htrade:Player-52-0D2CB282:3908:197|h[Tailoring]|h|r", -- [1]
 			"Snowflowers-Medivh", -- [2]
@@ -1562,7 +1278,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaSnowflowers-Medivh|r",
 			[51] = 1635003347,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [58]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-10114-3683-71525869|h[Guild: Pénsive]|h|r A drama free, dual faction AOTC guild on the Dalaran server,is looking for new and experienced players. Offering:Discord M+/Raiding at early PM EST Free bags to starters", -- [1]
 			"Workshorse-Dalaran", -- [2]
@@ -1584,7 +1300,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Workshorse|r",
 			[51] = 1635003353,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [59]
 		{
 			"LF guild sigs from Elune, Gilneas, Laughing Skull, Auchindoun, Cho'gall to start a bank guild, 50g now and another 50g once guild is started.. PST", -- [1]
 			"Sixpense-Elune", -- [2]
@@ -1606,7 +1322,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cSixpense-Elune|r",
 			[51] = 1635003359,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [60]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-125012-3683-90682868|h[Guild: The Hedgehugs]|h|r is recruiting -  a bunch of buds with a dad's penchant for puns. We run keys Mon/Fri and raid (7/10H) on Sat/Sun 6:30-9p/4-7p EST. Leave pugs, join the hugs!", -- [1]
 			"Hedgie-Dalaran", -- [2]
@@ -1628,7 +1344,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaHedgie|r",
 			[51] = 1637290471,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [61]
 		{
 			"I just want to know more, im so curious at this point", -- [1]
 			"Dojacat-Wildhammer", -- [2]
@@ -1650,7 +1366,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcDojacat-Wildhammer|r",
 			[51] = 1637290474,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [62]
 		{
 			"for months ive been seeing him periodically here", -- [1]
 			"Dojacat-Wildhammer", -- [2]
@@ -1672,7 +1388,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcDojacat-Wildhammer|r",
 			[51] = 1637290500,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [63]
 		{
 			"My guess, an alt watching the AH?  A bot in disguise? Some guy logging in and posting in the forums", -- [1]
 			"Kierohz-AeriePeak", -- [2]
@@ -1694,7 +1410,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcKierohz-AeriePeak|r",
 			[51] = 1637290524,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [64]
 		{
 			"he's just a dude chillin", -- [1]
 			"Virydian-Dalaran", -- [2]
@@ -1716,7 +1432,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cVirydian|r",
 			[51] = 1637290546,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [65]
 		{
 			"same level, always here ", -- [1]
 			"Dojacat-Wildhammer", -- [2]
@@ -1738,7 +1454,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcDojacat-Wildhammer|r",
 			[51] = 1637290551,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [66]
 		{
 			"chillin like a villian ", -- [1]
 			"Virydian-Dalaran", -- [2]
@@ -1760,7 +1476,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cVirydian|r",
 			[51] = 1637290554,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [67]
 		{
 			"just chills on his mount in the same spot, same level, doesnt move, honestly just curious. Doesnt even talk", -- [1]
 			"Dojacat-Wildhammer", -- [2]
@@ -1782,7 +1498,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcDojacat-Wildhammer|r",
 			[51] = 1637290598,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [68]
 		{
 			"ANYWAYS. Have a great day everyone", -- [1]
 			"Dojacat-Wildhammer", -- [2]
@@ -1804,7 +1520,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcDojacat-Wildhammer|r",
 			[51] = 1637290613,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [69]
 		{
 			"!!WTS +15 Only>>115k>(BUY 2 GET FREE ARMOR STACK) 15x3 - 98k (WITH STACK 101K) +20 TIMED+KEY SPECIFIC 542K //+14 110K /+12 99k /+10 69K /(SPECIAL DEALS FOR 3 RUNS OR MORE)!!WTS TAZAVESH<WTS SoD HC/M><TORGHAST<RENOWN FARM>/ONLY GOLD>>HUOKAN COMMUNITY<<", -- [1]
 			"Dulcesaless-Dalaran", -- [2]
@@ -1826,7 +1542,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcDulcesaless|r",
 			[51] = 1637290828,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [70]
 		{
 			"WTS Original vanilla weapons, |cff0070dd|Hitem:12797::::::::46:63:::::::::|h[Frostguard]|h|r, |cffa335ee|Hitem:19169::::::::46:63:::::::::|h[Nightfall]|h|r, |cff0070dd|Hitem:12784::::::::46:63:::::::::|h[Arcanite Reaper]|h|rand more", -- [1]
 			"Quintaviusii-Dalaran", -- [2]
@@ -1848,7 +1564,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaQuintaviusii|r",
 			[51] = 1637290903,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [71]
 		{
 			"WTS Mythic+0-20 || M+20 timed 542k || M+15 115k || x3 M+15 98k || M+14 110k || x3 M+12 75k || M+10 69K || Buy 2 and get free loot stack || Full Torghast Clears 1-12 || Tazavesh || SoD H/M (AOTC) || Arena Rating || Huokan Community || GOLD ONLY PST.", -- [1]
 			"Buffsaless-Dalaran", -- [2]
@@ -1870,7 +1586,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Buffsaless|r",
 			[51] = 1637291167,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [72]
 		{
 			"!!WTS +15 Only>>115k>(BUY 2 GET FREE ARMOR STACK) 15x3 - 98k (WITH STACK 101K) +20 TIMED+KEY SPECIFIC 542K //+14 110K /+12 99k /+10 69K /(SPECIAL DEALS FOR 3 RUNS OR MORE)!!WTS TAZAVESH<WTS SoD HC/M><TORGHAST<RENOWN FARM>/ONLY GOLD>>HUOKAN COMMUNITY<<", -- [1]
 			"Dulcesaless-Dalaran", -- [2]
@@ -1892,7 +1608,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcDulcesaless|r",
 			[51] = 1637291273,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [73]
 		{
 			"1/1 Doomwalker slain", -- [1]
 			"Avisar-Dalaran", -- [2]
@@ -1914,7 +1630,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Avisar|r",
 			[51] = 1637291991,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [87]
+		}, -- [74]
 		{
 			"ty", -- [1]
 			"Ashestoashes-BoreanTundra", -- [2]
@@ -1936,7 +1652,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Ashestoashes-BoreanTundra|r",
 			[51] = 1637292002,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [88]
+		}, -- [75]
 		{
 			"ty for the rez", -- [1]
 			"Jeleane-ShadowCouncil", -- [2]
@@ -1958,7 +1674,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Jeleane-ShadowCouncil|r",
 			[51] = 1637292027,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [89]
+		}, -- [76]
 		{
 			"pimpin", -- [1]
 			"Lylestyle-Azuremyst", -- [2]
@@ -1980,7 +1696,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaLylestyle-Azuremyst|r",
 			[51] = 1637292072,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [77]
 		{
 			"theres a portal to the dark portal in dwarven district", -- [1]
 			"Youreugly-Dalaran", -- [2]
@@ -2002,7 +1718,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cYoureugly|r",
 			[51] = 1638115204,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [78]
 		{
 			"|cffffff00The Canals is under attack!|r", -- [1]
 			"", -- [2]
@@ -2024,7 +1740,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1640109653,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [79]
 		{
 			"and polar bear is coke's mascot", -- [1]
 			"Nevaèh-Eredar", -- [2]
@@ -2046,7 +1762,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Nevaèh-Eredar|r",
 			[51] = 1640109656,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [80]
 		{
 			"who the hell is Scooge", -- [1]
 			"Grenpoli-Doomhammer", -- [2]
@@ -2068,7 +1784,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Grenpoli-Doomhammer|r",
 			[51] = 1640109664,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [81]
 		{
 			"the scourge", -- [1]
 			"Nevaèh-Eredar", -- [2]
@@ -2090,7 +1806,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Nevaèh-Eredar|r",
 			[51] = 1640113274,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [82]
 		{
 			"actually Santa Clause story originated in Europe and he was actually a villain originally", -- [1]
 			"Quiick-Area52", -- [2]
@@ -2112,7 +1828,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Quiick-Area52|r",
 			[51] = 1640113281,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [83]
 		{
 			"that's krumpus", -- [1]
 			"Nevaèh-Eredar", -- [2]
@@ -2134,7 +1850,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Nevaèh-Eredar|r",
 			[51] = 1640113301,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [84]
 		{
 			"the real sad truth about you ppl is when it comes to truth and logic ya'll get scared and that why you all will fall to the hands of our so called government", -- [1]
 			"Lucífër-Zangarmarsh", -- [2]
@@ -2156,7 +1872,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaLucífër-Zangarmarsh|r",
 			[51] = 1640113305,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [85]
 		{
 			"Saint, short for Saitan", -- [1]
 			"Saphammer-Wildhammer", -- [2]
@@ -2178,31 +1894,315 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Saphammer-Wildhammer|r",
 			[51] = 1640113309,
 			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [86]
+		{
+			"that never stopped blizz from suspending accounts", -- [1]
+			"Nymphala-Baelgun", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Nymphala-Baelgun", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			544, -- [11]
+			"Player-1190-030226A9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Nymphala-Baelgun|r",
+			[51] = 1641687270,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [87]
+		{
+			"TY Blizz for the Report function", -- [1]
+			"Knowmoney-Aggramar", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Knowmoney-Aggramar", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			549, -- [11]
+			"Player-106-0A4F12DC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaKnowmoney-Aggramar|r",
+			[51] = 1641687272,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [88]
+		{
+			"ppl still report these days lmao ", -- [1]
+			"Kuthben-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Kuthben-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			554, -- [11]
+			"Player-3683-0D30EC14", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeKuthben|r",
+			[51] = 1641687273,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [89]
+		{
+			"Apparently, Words are violence now", -- [1]
+			"Kumorí-Dalaran", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Kumorí-Dalaran", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			559, -- [11]
+			"Player-3683-0D33B70F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeKumorí|r",
+			[51] = 1641687286,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [90]
+		{
+			"Blizzard has its own PR issues to worry aout", -- [1]
+			"Bulgingcawk-Dalaran", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Bulgingcawk-Dalaran", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			560, -- [11]
+			"Player-3683-0D341F9A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Bulgingcawk|r",
+			[51] = 1641687288,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [91]
+		{
+			"fackin teens with guilds n' shiz i hope you never MEAT your goal", -- [1]
+			"Dethbecomesu-Dalaran", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Dethbecomesu-Dalaran", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			570, -- [11]
+			"Player-3683-0A08534D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Dethbecomesu|r",
+			[51] = 1641687300,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [92]
+		{
+			"Blizz has been suspending for that stuff for years now", -- [1]
+			"Nymphala-Baelgun", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Nymphala-Baelgun", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			583, -- [11]
+			"Player-1190-030226A9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Nymphala-Baelgun|r",
+			[51] = 1641687306,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [93]
+		{
+			"i mean whats the worst blizz can do touch me?", -- [1]
+			"Kuthben-Dalaran", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Kuthben-Dalaran", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			594, -- [11]
+			"Player-3683-0D30EC14", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeKuthben|r",
+			[51] = 1641687318,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [94]
+		{
+			" how do i buy honor equipment that is my characters level", -- [1]
+			"Itsmrclean-Dalaran", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Itsmrclean-Dalaran", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			595, -- [11]
+			"Player-3683-08A1A6BE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Itsmrclean|r",
+			[51] = 1641687318,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [95]
+		{
+			"meet*", -- [1]
+			"Knowmoney-Aggramar", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Knowmoney-Aggramar", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			596, -- [11]
+			"Player-106-0A4F12DC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaKnowmoney-Aggramar|r",
+			[51] = 1641687319,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			"i report every day. its a hobby", -- [1]
+			"Faeriyn-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Faeriyn-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			597, -- [11]
+			"Player-3683-0D28DCD9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeFaeriyn|r",
+			[51] = 1641687324,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"you're not gonna get me with that ish twice", -- [1]
+			"Dethbecomesu-Dalaran", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Dethbecomesu-Dalaran", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			598, -- [11]
+			"Player-3683-0A08534D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Dethbecomesu|r",
+			[51] = 1641687324,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"Maybe blizzard should pay women the same and not harass them, then come talk to me.", -- [1]
+			"Bulgingcawk-Dalaran", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Bulgingcawk-Dalaran", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			599, -- [11]
+			"Player-3683-0D341F9A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Bulgingcawk|r",
+			[51] = 1641687332,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},
-	["ConvertKeybindings"] = true,
 	["ChatEditHistory"] = {
-		"/skada toggle", -- [1]
-		"/kiss", -- [2]
-		"/fishingbuddy", -- [3]
-		"/s idk", -- [4]
-		"/s got to beat it all the way through i think", -- [5]
-		"/invite ailden-bladefist", -- [6]
-		"/hekili", -- [7]
-		"/reload", -- [8]
-		"/dance", -- [9]
-		"/aap", -- [10]
-		"/cw Genieb-ShatteredHalls TY!", -- [11]
-		"/flirt", -- [12]
-		"/ltp", -- [13]
-		"/allthethings", -- [14]
-		"/s then chest?", -- [15]
-		"/wave", -- [16]
-		"/sit", -- [17]
-		"/skada hide", -- [18]
-		"/cw Willderhide-Stormrage all good thanks", -- [19]
-		"/cw Bourbonn-Dalaran TY", -- [20]
+		"/kiss", -- [1]
+		"/fishingbuddy", -- [2]
+		"/s idk", -- [3]
+		"/s got to beat it all the way through i think", -- [4]
+		"/invite ailden-bladefist", -- [5]
+		"/hekili", -- [6]
+		"/reload", -- [7]
+		"/dance", -- [8]
+		"/aap", -- [9]
+		"/cw Genieb-ShatteredHalls TY!", -- [10]
+		"/flirt", -- [11]
+		"/ltp", -- [12]
+		"/allthethings", -- [13]
+		"/s then chest?", -- [14]
+		"/wave", -- [15]
+		"/sit", -- [16]
+		"/skada hide", -- [17]
+		"/cw Willderhide-Stormrage all good thanks", -- [18]
+		"/cw Bourbonn-Dalaran TY", -- [19]
+		"/tsm", -- [20]
 	},
-	["CliqueDatatext"] = {
-	},
+	["ConvertKeybindings"] = true,
 }

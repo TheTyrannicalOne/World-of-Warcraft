@@ -73,22 +73,22 @@ QuestTogether = {
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
-		[56120] = {
-			["title"] = "The Unshackled",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
-			},
-		},
-		[50606] = {
-			["title"] = "Horde War Effort",
-			["objectives"] = {
-				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[50562] = {
 			["title"] = "Champions of Azeroth",
 			["objectives"] = {
 				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+			},
+		},
+		[50598] = {
+			["title"] = "Zandalari Empire",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
 			},
 		},
 		[51432] = {
@@ -113,10 +113,10 @@ QuestTogether = {
 				"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[50603] = {
+			["title"] = "Voldunai",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
+				"0/4 Complete 4 world quests in Vol'dun", -- [1]
 			},
 		},
 		[40329] = {
@@ -163,8 +163,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

@@ -217,6 +217,7 @@ local L = app.L;
 	L.NESTED_QUEST_REQUIREMENTS = "Вложенные Требования Заданий";
 	L.MAIN_LIST_REQUIRES_REFRESH = "[Откройте Основной список, чтобы обновить прогресс]";
 	L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207Эта группа и её содержимое не влияют на прогресс данного окна!|r";
+	L.CURRENCY_NEEDED_TO_BUY = "Необходимо для покупки Не Собранных Штучек";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "Фильтровать предметы";
@@ -245,7 +246,7 @@ local L = app.L;
 	L.AFTER_REFRESH = "После Обновления";
 
 	-- General tab
-		-- Mod Title
+		-- Mode Title
 			L.MODE = "Режим";
 			L.TITLE_COMPLETIONIST = "Коллекционера ";
 			L.TITLE_UNIQUE_APPEARANCE = "Уникальный ";
@@ -257,6 +258,7 @@ local L = app.L;
 			L.TITLE_INSANE = "|cffADD8E6Безумный|R ";
 			L.TITLE_SOME_THINGS = "Некоторых Штучек ";
 			L.TITLE_LEVEL = "Уровня ";
+			L.TITLE_SOLO = "Соло ";
 			L._BETA_LABEL = " |cff4AA7FF[Бета]|R";
 
 		L.GENERAL_LABEL = "Общие";
@@ -410,6 +412,8 @@ local L = app.L;
 		L.KNOWN_BY_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть в подсказке полный список персонажей на всех серверах, которые изучили данный рецепт.";
 		L.SHOW_MODELS_CHECKBOX = "Предпоказ";
 		L.SHOW_MODELS_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть в подсказке модель вместо иконки.\n\nДанная настройка может помочь идентифицировать Редкого монстра или Торговца по внешнему виду. Возможно, Вы захотите оставить опцию включенной по этой причине.";
+		L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX = "Рассчет покупок";
+		L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть в подсказке приблизительное количество предметов/валюты, необходимое для покупки Не Собранных Штучек.\n\nПодсчет ведется только для тех Штучек, которые можно напрямую купить за предмет/валюту. Контейнеры, дающие предмет(-ы) не с 100%-ым шансом, не учитываются.";
 		L.SHARED_APPEARANCES_CHECKBOX = "Общие Облики";
 		L.SHARED_APPEARANCES_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть в подсказке предметы, которые имеют общий облик.\n\nПримечание: Предметы, которые не совпадают по типу брони отображаются в списке для того, чтобы определить прогресс Коллекции.\n\nЕсли Вы путаетесь в них, начиная с ATT v1.5.0, Вы можете Правым Кликом по предмету \"открыть\" предмет и его собственный Мини Список со всеми Общими Обликами.";
 		L.INCLUDE_ORIGINAL_CHECKBOX = "Оригинал";
@@ -662,6 +666,7 @@ for key,value in pairs({
 	-- Class Hall /Artifact
 		[-159] = "Ролл События",									-- Daily Dreamway Event Roll
 	-- Other
+		[-210] = "Новый персонаж Союзной расы",						-- Allied New Character
 		[-211] = "Новый персонаж",									-- New Character
 		[-212] = "Сундук с сокровищами",							-- Treasure Chest
 	-- Fishing
@@ -1309,7 +1314,6 @@ for key,value in pairs({
 	[213653] = "Пандаренская острога",	-- Pandaren Fishing Spear
 	[213741] = "Древний посох цзинь-юй",	-- Ancient Jinyu Staff
 	[213742] = "Молот Десяти Громов",	-- Hammer of Ten Thunders
-	[213743] = "Заряженный нефритом клинок",	-- Jade Infused Blade	--TODO: This was manually translated
 	[213748] = "Пандаренский ритуальный камень",	-- Pandaren Ritual Stone
 	[213749] = "Посох тайного мастера",	-- Staff of the Hidden Master
 	[213750] = "Каменная скрижаль сауроков",	-- Saurok Stone Tablet
@@ -2750,7 +2754,10 @@ for key,value in pairs({
 	[355035] = "Рунический сундук дома Избранных",	-- Treasure: House of the Chosen
 	[355037] = "Зачарованный рунами ящик",	-- Runebound Coffer
 	[355038] = "Зачарованный рунами ящик",	-- Runebound Coffer
+	[355040] = "Руна дома Ритуалов",	-- Rune of Rituals
 	[355041] = "Тайник луны",	-- Cache of the Moon
+	[355048] = "Руна дома Ритуалов",	-- Rune of Rituals
+	[355049] = "Руна дома Ритуалов",	-- Rune of Rituals
 	[355286] = "Подношения у мемориала",	-- Memorial Offerings
 	[355296] = "Награда: борьба с чудовищами",	-- Bounty: Beast Control
 	[355355] = "Сундук гармонии",	-- Harmonic Chest
@@ -2895,6 +2902,7 @@ for key,value in pairs({
 	[369438] = "Тайник Разлома",	-- Riftbound Cache
 	[369439] = "Тайник Разлома",	-- Riftbound Cache
 	[369440] = "Тайник Разлома",	-- Riftbound Cache
+	[370469] = "Призрачный корм",	-- Spectral Feed
 	[9962198] = "Самодельная лужа жижи изгоя",	-- Outcast's Makeshift Muckpool
 	[9999890] = "Оскверненная добыча",	-- Corrupted Loot
 	[9999891] = "Только Основная Задача",	-- Main Objective Only

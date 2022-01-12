@@ -32,12 +32,6 @@ QuestTogether = {
 				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
-		[48639] = {
-			["title"] = "Army of the Light",
-			["objectives"] = {
-				"0/4 Complete 4 Army of the Light World Quests", -- [1]
-			},
-		},
 		[50562] = {
 			["title"] = "Champions of Azeroth",
 			["objectives"] = {
@@ -60,10 +54,15 @@ QuestTogether = {
 				"2/10 Fresh Star Moss", -- [1]
 			},
 		},
-		[50606] = {
-			["title"] = "Horde War Effort",
+		[50598] = {
+			["title"] = "Zandalari Empire",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
+				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
+			},
+		},
+		[53101] = {
+			["title"] = "Nettin' Ettin",
+			["objectives"] = {
 			},
 		},
 		[44989] = {
@@ -78,33 +77,28 @@ QuestTogether = {
 				"0/1 Speak with Dread-Admiral Tattersail to Travel to Darkshore", -- [1]
 			},
 		},
-		[56120] = {
-			["title"] = "The Unshackled",
+		[48641] = {
+			["title"] = "Armies of Legionfall",
 			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
+				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
 			},
 		},
-		[48642] = {
-			["title"] = "Argussian Reach",
+		[50603] = {
+			["title"] = "Voldunai",
 			["objectives"] = {
-				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
+				"0/4 Complete 4 world quests in Vol'dun", -- [1]
 			},
 		},
-		[44948] = {
-			["title"] = "Raising Your Snowfeather",
+		[42420] = {
+			["title"] = "Court of Farondis",
 			["objectives"] = {
-				"Level 25 Snowfeather Hatchling", -- [1]
+				"0/4 Complete 4 world quests in Azsuna", -- [1]
 			},
 		},
-		[53101] = {
-			["title"] = "Nettin' Ettin",
+		[42421] = {
+			["title"] = "The Nightfallen",
 			["objectives"] = {
-			},
-		},
-		[42422] = {
-			["title"] = "The Wardens",
-			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
+				"0/4 Complete 4 world quests in Suramar", -- [1]
 			},
 		},
 		[31891] = {
@@ -117,23 +111,29 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[47105] = {
-			["title"] = "Into The Darkness",
-			["objectives"] = {
-				"0/1 Scout ahead", -- [1]
-			},
-		},
 		[40329] = {
 			["title"] = "Battle Pet Tamers: Warlords",
 			["objectives"] = {
 				"0/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
+		[47105] = {
+			["title"] = "Into The Darkness",
+			["objectives"] = {
+				"0/1 Scout ahead", -- [1]
+			},
+		},
+		[44948] = {
+			["title"] = "Raising Your Snowfeather",
+			["objectives"] = {
+				"Level 25 Snowfeather Hatchling", -- [1]
+			},
+		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

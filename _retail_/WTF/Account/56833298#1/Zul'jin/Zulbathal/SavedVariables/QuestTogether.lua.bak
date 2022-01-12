@@ -73,16 +73,16 @@ QuestTogether = {
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
+		[56120] = {
+			["title"] = "The Unshackled",
+			["objectives"] = {
+				"0/4 Complete world quests in Nazjatar", -- [1]
+			},
+		},
 		[50606] = {
 			["title"] = "Horde War Effort",
 			["objectives"] = {
 				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
-			},
-		},
-		[50602] = {
-			["title"] = "Talanji's Expedition",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Nazmir.", -- [1]
 			},
 		},
 		[50562] = {
@@ -163,8 +163,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
-		["showDebugInfo"] = false,
 	},
 }

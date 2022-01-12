@@ -44,13 +44,13 @@ MJEGlobalSettings = {
 			[0] = true,
 		},
 		["source"] = {
-			["Vendor"] = true,
+			["Garrison"] = true,
 			["Black Market"] = true,
 			["Class"] = true,
-			["Promotion"] = true,
+			["Vendor"] = true,
 			["Reputation"] = true,
 			["PVP"] = true,
-			["Garrison"] = true,
+			["Promotion"] = true,
 			["World Event"] = true,
 			["Achievement"] = true,
 			["Shop"] = true,
@@ -64,7 +64,6 @@ MJEGlobalSettings = {
 		["hiddenIngame"] = false,
 		["notCollected"] = true,
 		["hidden"] = false,
-		["onlyUsable"] = false,
 		["mountType"] = {
 			["repair"] = true,
 			["flying"] = true,
@@ -73,13 +72,14 @@ MJEGlobalSettings = {
 			["ground"] = true,
 			["passenger"] = true,
 		},
-		["onlyFavorites"] = false,
-		["onlyTradable"] = false,
 		["faction"] = {
 			["horde"] = true,
 			["alliance"] = true,
 			["noFaction"] = true,
 		},
+		["onlyFavorites"] = false,
+		["onlyTradable"] = false,
+		["onlyUsable"] = false,
 		["family"] = {
 			["Arachnids"] = {
 				["Scorpions"] = true,
@@ -168,10 +168,10 @@ MJEGlobalSettings = {
 				["Direhorns"] = true,
 			},
 			["Rays"] = {
-				["Nether Rays"] = true,
-				["Stingrays"] = true,
-				["Mana Rays"] = true,
 				["Fathom Rays"] = true,
+				["Nether Rays"] = true,
+				["Mana Rays"] = true,
+				["Stingrays"] = true,
 			},
 			["Wolves"] = {
 				["Wolves"] = true,

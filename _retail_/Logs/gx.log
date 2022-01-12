@@ -1,28 +1,30 @@
-1/7 22:28:52.573  LogOpen
-1/7 22:28:52.573  World of Warcraft Retail x86_64 9.1.5.41793
-1/7 22:28:52.573  Windows 10 (10.0.19044) x86_64
-1/7 22:28:52.573         Intel(R) Core(TM) i7-4930K CPU @ 3.40GHz | Sockets:1 Cores:6 Threads:12
-1/7 22:28:52.573  31.9 GB System Memory
-1/7 22:28:52.573  On AC Power - Battery Not Present
-1/7 22:28:53.248  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" family:Turing type:Discrete vendor:0x10de device:0x1e07 driver(0x1e0000000e2601) location:1 dx11:true dx12:true
-1/7 22:28:53.248  	Monitor 0 "Generic PnP Monitor" Size(2560x1440) Pos(0, 0)
-1/7 22:28:53.248  	Monitor 1 "Generic PnP Monitor" Size(1920x1080) Pos(-1920, 353)
-1/7 22:28:53.248  Nvidia driver version: r497_25
-1/7 22:28:53.283  Choosing gpu by name: "NVIDIA GeForce RTX 2080 Ti"
-1/7 22:28:53.283  D3d12 Device Create
-1/7 22:28:53.283  DXGI_FEATURE_PRESENT_ALLOW_TEARING:true
-1/7 22:28:53.541  DXGI_FORMAT_B8G8R8A8_UNORM UAV support: true
-1/7 22:28:53.541  Ray Tracing Support: DXR 1.1
-1/7 22:28:53.541  Variable Rate Shading Supported: true
-1/7 22:28:56.823  NotifyOnDeviceCreate
-1/7 22:28:56.834  D3d12 Device Create Successful
-1/7 22:28:56.834  <IsGPUDriverOutOfDate> No
-1/7 22:28:56.834  Detected Graphics Defaults: 7 (CPU = 7, GPU = 7, MEM = 7) WindowSize: 2560x1440
-1/7 22:28:56.944  Render Settings Changed. New Render Size: 2560x1440
-1/7 22:28:59.452  Periodic Gpu Status Report: Current Frequency:0.33GHz Temperature:29C 
-1/7 22:28:59.614  Detected SwapChain::Present Modified
-1/7 22:29:50.445  Render Settings Changed
-1/7 22:33:59.605  Periodic Gpu Status Report: Current Frequency:0.42GHz Temperature:34C 
-1/7 22:33:59.849  D3d12 Device Destroy
-1/7 22:33:59.849  NotifyOnDeviceDestroy
-1/7 22:34:00.230  GxShutdown
+1/8 18:57:11.783  LogOpen
+1/8 18:57:11.783  World of Warcraft Retail x86_64 9.1.5.41793
+1/8 18:57:11.783  Windows 10 (10.0.19044) x86_64
+1/8 18:57:11.783         Intel(R) Core(TM) i7-4930K CPU @ 3.40GHz | Sockets:1 Cores:6 Threads:12
+1/8 18:57:11.783  31.9 GB System Memory
+1/8 18:57:11.783  On AC Power - Battery Not Present
+1/8 18:57:12.281  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" family:Turing type:Discrete vendor:0x10de device:0x1e07 driver(0x1e0000000e2601) location:1 dx11:true dx12:true
+1/8 18:57:12.281  	Monitor 0 "Generic PnP Monitor" Size(2560x1440) Pos(0, 0)
+1/8 18:57:12.281  	Monitor 1 "Generic PnP Monitor" Size(1920x1080) Pos(-1920, 353)
+1/8 18:57:12.281  Nvidia driver version: r497_25
+1/8 18:57:12.322  Choosing gpu by name: "NVIDIA GeForce RTX 2080 Ti"
+1/8 18:57:12.322  D3d12 Device Create
+1/8 18:57:12.322  DXGI_FEATURE_PRESENT_ALLOW_TEARING:true
+1/8 18:57:12.587  DXGI_FORMAT_B8G8R8A8_UNORM UAV support: true
+1/8 18:57:12.587  Ray Tracing Support: DXR 1.1
+1/8 18:57:12.587  Variable Rate Shading Supported: true
+1/8 18:57:15.891  NotifyOnDeviceCreate
+1/8 18:57:15.904  D3d12 Device Create Successful
+1/8 18:57:15.904  <IsGPUDriverOutOfDate> No
+1/8 18:57:15.904  Detected Graphics Defaults: 7 (CPU = 7, GPU = 7, MEM = 7) WindowSize: 2560x1440
+1/8 18:57:16.024  Render Settings Changed. New Render Size: 2560x1440
+1/8 18:57:17.707  Periodic Gpu Status Report: Current Frequency:1.35GHz Temperature:32C 
+1/8 18:57:17.837  Detected SwapChain::Present Modified
+1/8 18:57:46.754  Render Settings Changed
+1/8 19:02:17.709  Periodic Gpu Status Report: Current Frequency:0.82GHz Temperature:35C 
+1/8 19:07:17.714  Periodic Gpu Status Report: Current Frequency:0.57GHz Temperature:35C 
+1/8 19:12:20.241  Periodic Gpu Status Report: Current Frequency:0.30GHz Temperature:31C 
+1/8 19:15:50.310  D3d12 Device Destroy
+1/8 19:15:50.310  NotifyOnDeviceDestroy
+1/8 19:15:50.832  GxShutdown
