@@ -194,7 +194,7 @@ HandyNotes_TimelessIsleChests: enabled
 Hekili: enabled
 Immersion: enabled
 !KalielsTracker: enabled
-Leatrix_Plus: enabled
+Leatrix_Plus: disabled
 LegionInvasionTimer: enabled
 LegionInvasionTimer_Options: enabled
 LittleWigs: enabled

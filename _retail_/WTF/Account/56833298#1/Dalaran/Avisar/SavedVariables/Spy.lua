@@ -1,5 +1,10 @@
 
 SpyPerCharDB = {
+	["version"] = "1.1",
+	["IgnoreData"] = {
+	},
+	["KOSData"] = {
+	},
 	["PlayerData"] = {
 		["Zerushaate-Greymane"] = {
 			["mapID"] = 75,
@@ -893,10 +898,5 @@ SpyPerCharDB = {
 			["isGuess"] = false,
 			["name"] = "Arasune-Stormreaver",
 		},
-	},
-	["IgnoreData"] = {
-	},
-	["version"] = "1.1",
-	["KOSData"] = {
 	},
 }

@@ -30,3 +30,5 @@ TomCats-Noblegarden: disabled
 LittleWigs_MistsOfPandaria: enabled
 LittleWigs_BattleForAzeroth: enabled
 BFAInvasionTimer_Options: enabled
+Leatrix_Plus: disabled
+ElvUI_CustomTags: disabled

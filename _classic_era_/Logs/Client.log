@@ -1,0 +1,28 @@
+1/23 18:58:08.720  Client Initialize.
+1/23 18:58:15.106  Initial Hotfixes: Received
+1/23 18:58:15.106  Initial Hotfixes: Fake Connect
+1/23 18:58:15.106  Initial Hotfixes: Requested
+1/23 18:58:15.106  Initial Hotfixes: Applied
+1/23 18:58:20.216  Loading Screen Enable (1) : 1 - 1
+1/23 18:58:20.344  Client Object Manager Initialized: 1
+1/23 18:58:21.199  Client : Load Map Begin : 1
+1/23 18:58:21.907  Client : Load Map End
+1/23 18:58:21.907  Start waiting for active player
+1/23 18:58:21.907  Character Login SEND
+1/23 18:58:23.165  Stop waiting for active player
+1/23 18:58:23.169  Loading Screen : Loading : Files Read 1939 : Bytes Read 117059687 : Elapsed MS 2955 : MBytes Per Sec 37.779
+1/23 18:58:23.169  Loading Screen : XML Loaded 100%
+1/23 18:58:23.169  Loading Screen : World Loaded 100%
+1/23 18:58:23.169  Loading Screen : Spell Loaded 0%
+1/23 18:58:23.237  Active Player Created
+1/23 18:58:23.237  Loading Screen Disable (0)
+1/23 18:58:23.237  Loading Screen : Streaming 0
+1/23 18:58:23.237  Loading Screen : XML Loaded 100%
+1/23 18:58:23.237  Loading Screen : World Loaded 100%
+1/23 18:58:23.237  Loading Screen : Spell Loaded 100%
+1/23 18:58:23.237  Spellbook : Make Models Local Begin : 13
+1/23 18:58:23.237  Spellbook : Make Models Local End
+1/23 19:11:38.093  Client Object Manager Destroyed
+1/23 19:11:38.134  Loading Screen Disable (-1)
+1/23 19:11:38.434  Loading Screen Disable (-1)
+1/23 19:11:38.434  Client Destroy

@@ -165,7 +165,7 @@ Hekili: enabled
 Immersion: enabled
 !KalielsTracker: enabled
 Kib_QuestMobs: enabled
-Leatrix_Plus: enabled
+Leatrix_Plus: disabled
 LegionWardrobe: enabled
 LegionWardrobeData: enabled
 LegionInvasionTimer: enabled
@@ -261,3 +261,4 @@ TomCats-LoveIsInTheAir: disabled
 TomCats-LunarFestival: disabled
 TomCats-Noblegarden: disabled
 LittleWigs_MistsOfPandaria: enabled
+ElvUI_CustomTags: disabled

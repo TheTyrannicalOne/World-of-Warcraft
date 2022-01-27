@@ -363,7 +363,6 @@ local L = app.L;
 		--TODO: L.ACCOUNT_WIDE_QUESTS_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nQuest completion is typically per Character, but this will consider a Quest as completed if ANY Character has completed that specific Quest.";
 		--TODO: L.ACCOUNT_WIDE_RECIPES_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nRecipes are not normally tracked account wide in Blizzard's database, but we can do that.\n\nIt is impossible to collect them all on one character, so with this, you can give your alts and their professions meaning.";
 		--TODO: L.ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nReputations are now tracked account wide in Blizzard's database for achievements, so turning this on may be a good idea.";
-		--TODO: L.ACCOUNT_WIDE_RUNEFORGELEGENDARIES_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nNot sure this will help at all for collection... enjoy moving at least one character of every class through every Covenant and Renown progression...";
 		--TODO: L.ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nEnable this to consider a Soulbind Conduit as collected for all characters if at least one character has learned it.";
 		--TODO: L.ACCOUNT_WIDE_TITLES_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nMost titles are tracked account wide, but some prestigious titles in WoW are locked to the character that earned them.\n\nToggle this if you don't care about that and want to see those titles marked Collected for your alts.";
 
@@ -2690,6 +2689,7 @@ for key,value in pairs({
 	[353331] = "Alijo de hada",	-- Faerie Stash
 	[353332] = "Alijo de hada",	-- Faerie Stash
 	[353333] = "Alijo de hada",	-- Faerie Stash
+	[353336] = "Tesoro secreto",	-- Secret Treasure
 	[353380] = "Cubo de comida de Halis",	-- Halis's Lunch Pail
 	[353472] = "Espada radiante",	-- Radiant Sword
 	[353500] = "Caja fuerte de plata",	-- Silver Strongbox
@@ -2776,6 +2776,9 @@ for key,value in pairs({
 	[355041] = "Alijo de la Luna",	-- Cache of the Moon
 	[355048] = "Runa de rituales",	-- Rune of Rituals
 	[355049] = "Runa de rituales",	-- Rune of Rituals
+	[355194] = "Runa de ensamblajes",	-- Rune of Constructs
+	[355195] = "Runa de ensamblajes",	-- Rune of Constructs
+	[355196] = "Runa de ensamblajes",	-- Rune of Constructs
 	[355286] = "Ofrendas conmemorativas",	-- Memorial Offerings
 	[355296] = "Recompensa: control de bestias",	-- Bounty: Beast Control
 	[355355] = "Cofre armónico",	-- Harmonic Chest

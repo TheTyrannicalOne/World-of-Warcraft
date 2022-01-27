@@ -45,13 +45,13 @@ MJEPersonalSettings = {
 			[0] = true,
 		},
 		["source"] = {
-			["Vendor"] = true,
+			["Promotion"] = true,
 			["Black Market"] = true,
 			["Class"] = true,
-			["World Event"] = true,
+			["Vendor"] = true,
 			["Reputation"] = true,
 			["PVP"] = true,
-			["Promotion"] = true,
+			["World Event"] = true,
 			["Garrison"] = true,
 			["Achievement"] = true,
 			["Shop"] = true,
@@ -63,7 +63,6 @@ MJEPersonalSettings = {
 			["Instance"] = true,
 		},
 		["hiddenIngame"] = false,
-		["onlyUsable"] = false,
 		["notCollected"] = true,
 		["hidden"] = false,
 		["mountType"] = {
@@ -73,6 +72,11 @@ MJEPersonalSettings = {
 			["transform"] = true,
 			["ground"] = true,
 			["passenger"] = true,
+		},
+		["faction"] = {
+			["horde"] = true,
+			["alliance"] = true,
+			["noFaction"] = true,
 		},
 		["onlyFavorites"] = false,
 		["family"] = {
@@ -255,10 +259,10 @@ MJEPersonalSettings = {
 				["Nether Drakes"] = true,
 			},
 			["Rays"] = {
-				["Stingrays"] = true,
-				["Fathom Rays"] = true,
-				["Mana Rays"] = true,
 				["Nether Rays"] = true,
+				["Stingrays"] = true,
+				["Mana Rays"] = true,
+				["Fathom Rays"] = true,
 			},
 			["Cats"] = {
 				["Sabers"] = true,
@@ -271,11 +275,7 @@ MJEPersonalSettings = {
 			},
 			["Bats"] = true,
 		},
-		["faction"] = {
-			["horde"] = true,
-			["alliance"] = true,
-			["noFaction"] = true,
-		},
+		["onlyUsable"] = false,
 		["onlyTradable"] = false,
 		["collected"] = true,
 		["onlyRecent"] = false,

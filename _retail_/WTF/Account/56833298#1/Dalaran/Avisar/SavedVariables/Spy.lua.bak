@@ -1,9 +1,8 @@
 
 SpyPerCharDB = {
-	["version"] = "1.1",
-	["IgnoreData"] = {
-	},
 	["KOSData"] = {
+	},
+	["IgnoreData"] = {
 	},
 	["PlayerData"] = {
 		["Zerushaate-Greymane"] = {
@@ -489,21 +488,6 @@ SpyPerCharDB = {
 			["mapX"] = 0.62,
 			["subZone"] = "Caverns of Time",
 		},
-		["Verushasev-Greymane"] = {
-			["mapID"] = 75,
-			["guild"] = "Indigenous Alts",
-			["zone"] = "Tanaris",
-			["mapY"] = 0.38,
-			["class"] = "WARLOCK",
-			["isEnemy"] = true,
-			["race"] = "Undead",
-			["isGuess"] = false,
-			["subZone"] = "Caverns of Time",
-			["mapX"] = 0.51,
-			["level"] = 37,
-			["time"] = 1638118464,
-			["name"] = "Verushasev-Greymane",
-		},
 		["Werdowmaker"] = {
 			["mapID"] = 71,
 			["guild"] = "Booty Bay Pirates",
@@ -518,6 +502,21 @@ SpyPerCharDB = {
 			["level"] = 52,
 			["mapX"] = 0.64,
 			["subZone"] = "Caverns of Time",
+		},
+		["Verushasev-Greymane"] = {
+			["mapID"] = 75,
+			["guild"] = "Indigenous Alts",
+			["zone"] = "Tanaris",
+			["mapY"] = 0.38,
+			["class"] = "WARLOCK",
+			["isEnemy"] = true,
+			["race"] = "Undead",
+			["isGuess"] = false,
+			["subZone"] = "Caverns of Time",
+			["mapX"] = 0.51,
+			["level"] = 37,
+			["time"] = 1638118464,
+			["name"] = "Verushasev-Greymane",
 		},
 		["Cstuh-Thrall"] = {
 			["mapID"] = 49,
@@ -899,4 +898,5 @@ SpyPerCharDB = {
 			["subZone"] = "Caverns of Time",
 		},
 	},
+	["version"] = "1.1",
 }

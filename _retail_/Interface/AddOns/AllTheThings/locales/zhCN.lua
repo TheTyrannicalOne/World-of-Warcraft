@@ -365,7 +365,6 @@ local L = app.L;
 		L.ACCOUNT_WIDE_QUESTS_TOOLTIP = "|cff00AB00追踪帐号通用|R\n\n任务完成通常是每个角色的，但是如果任何一个角色完成了特定的任务，这个任务就会被认为是完成了。";
 		L.ACCOUNT_WIDE_RECIPES_TOOLTIP = "|cff00AB00追踪帐号通用|R\n\n在暴雪的数据库中，图纸通常不会被账号通用追踪，但我们可以这样做。\n\n在一个角色上不可能收藏到所有的东西，所以有了这个，你就可以赋予你的小号和他们的专业以意义。";
 		L.ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "|cff00AB00追踪帐号通用|R\n\n声望的成就现在会在暴雪的数据库中追踪账号通用，所以开启这个功能可能是个好主意。";
-		L.ACCOUNT_WIDE_RUNEFORGELEGENDARIES_TOOLTIP = "|cff00AB00追踪帐号通用|R\n\n不确定这对收藏有没有帮助…享受在每个盟约和声望进程中移动每个职业的至少一个角色的乐趣…";
 		L.ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = "|cff00AB00追踪帐号通用|R\n\n启用此功能后如果至少有一个角色学会了灵魂羁绊的导灵器，则将所有角色的灵魂羁绊的导灵器视为收藏。";
 		L.ACCOUNT_WIDE_TITLES_TOOLTIP = "|cff00AB00追踪帐号通用|R\n\n大多数头衔都是在账号通用内进行追踪，但是魔兽世界中一些著名的头衔被锁定在赢得他们的角色上。\n\n如果你不关心这个并希望看到那些标记为收藏的头衔是你的小号，请切换此选项。";
 
@@ -2686,6 +2685,7 @@ for key, value in pairs({
 	[353331] = "妖精藏匿物",	-- Faerie Stash
 	[353332] = "妖精藏匿物",	-- Faerie Stash
 	[353333] = "妖精藏匿物",	-- Faerie Stash
+	[353336] = "秘密财宝",	-- Secret Treasure
 	[353380] = "哈利斯的午餐桶",	-- Halis's Lunch Pail
 	[353472] = "光辉之剑",	-- Radiant Sword
 	[353500] = "白银保险箱",	-- Silver Strongbox
@@ -2772,6 +2772,9 @@ for key, value in pairs({
 	[355041] = "月亮宝箱",	-- Cache of the Moon
 	[355048] = "祭仪符文",	-- Rune of Rituals
 	[355049] = "祭仪符文",	-- Rune of Rituals
+	[355194] = "造物符文",	-- Rune of Constructs
+	[355195] = "造物符文",	-- Rune of Constructs
+	[355196] = "造物符文",	-- Rune of Constructs
 	[355286] = "祭品",	-- Memorial Offerings
 	[355296] = "悬赏：兽群控制",	-- Bounty: Beast Control
 	[355355] = "和谐宝箱",	-- Harmonic Chest

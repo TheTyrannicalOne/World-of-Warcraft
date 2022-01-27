@@ -7,7 +7,7 @@ AAP-WoD: enabled
 AAP-Legion: enabled
 AAP-BfA: enabled
 Azeroth Auto Pilot: enabled
-Leatrix_Plus: enabled
+Leatrix_Plus: disabled
 BigWigs_Core: enabled
 BigWigs_Options: enabled
 BigWigs_Plugins: enabled
@@ -264,3 +264,4 @@ TomCats-LoveIsInTheAir: disabled
 TomCats-LunarFestival: disabled
 TomCats-Noblegarden: disabled
 LittleWigs_MistsOfPandaria: enabled
+ElvUI_CustomTags: disabled

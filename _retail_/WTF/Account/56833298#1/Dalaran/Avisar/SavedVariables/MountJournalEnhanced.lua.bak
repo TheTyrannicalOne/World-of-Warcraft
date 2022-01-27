@@ -45,13 +45,13 @@ MJEPersonalSettings = {
 			[0] = true,
 		},
 		["source"] = {
-			["Promotion"] = true,
+			["Vendor"] = true,
 			["Black Market"] = true,
 			["PVP"] = true,
-			["Vendor"] = true,
+			["World Event"] = true,
 			["Reputation"] = true,
 			["Class"] = true,
-			["World Event"] = true,
+			["Promotion"] = true,
 			["Garrison"] = true,
 			["Achievement"] = true,
 			["Shop"] = true,
@@ -66,6 +66,11 @@ MJEPersonalSettings = {
 		["color"] = {
 		},
 		["notCollected"] = true,
+		["faction"] = {
+			["horde"] = true,
+			["alliance"] = true,
+			["noFaction"] = true,
+		},
 		["mountType"] = {
 			["repair"] = true,
 			["flying"] = true,
@@ -74,7 +79,6 @@ MJEPersonalSettings = {
 			["ground"] = true,
 			["passenger"] = true,
 		},
-		["onlyUsable"] = false,
 		["onlyFavorites"] = false,
 		["family"] = {
 			["Arachnids"] = {
@@ -166,10 +170,10 @@ MJEPersonalSettings = {
 				["Direhorns"] = true,
 			},
 			["Rays"] = {
-				["Fathom Rays"] = true,
 				["Nether Rays"] = true,
-				["Mana Rays"] = true,
 				["Stingrays"] = true,
+				["Mana Rays"] = true,
+				["Fathom Rays"] = true,
 			},
 			["Demons"] = {
 				["Felsabers"] = true,
@@ -272,11 +276,7 @@ MJEPersonalSettings = {
 			},
 			["Bats"] = true,
 		},
-		["faction"] = {
-			["horde"] = true,
-			["alliance"] = true,
-			["noFaction"] = true,
-		},
+		["onlyUsable"] = false,
 		["onlyTradable"] = false,
 		["collected"] = true,
 		["onlyRecent"] = false,

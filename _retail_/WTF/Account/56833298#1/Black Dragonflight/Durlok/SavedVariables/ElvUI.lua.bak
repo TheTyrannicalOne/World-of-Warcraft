@@ -1,7 +1,5 @@
 
 ElvCharacterDB = {
-	["CliqueDatatext"] = {
-	},
 	["ChatHistoryLog"] = {
 		{
 			"if youre grouped for the rares can you trade the items?", -- [1]
@@ -2182,18 +2180,20 @@ ElvCharacterDB = {
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},
-	["ChatEditHistory"] = {
-		"/1 ok ty omw", -- [1]
-		"/train", -- [2]
-		"/1 ok", -- [3]
-		"/skada toggle", -- [4]
-		"/allthethings", -- [5]
-		"/cw Agaymar-BlackDragonflight top wall above portal room", -- [6]
-		"/sleep", -- [7]
-		"/1 how long before patchwork is attackable?", -- [8]
-		"/invite Lilanda-blackhand", -- [9]
-		"/dance", -- [10]
-		"/tsm", -- [11]
-	},
 	["ConvertKeybindings"] = true,
+	["ChatEditHistory"] = {
+		"/train", -- [1]
+		"/skada toggle", -- [2]
+		"/cw Agaymar-BlackDragonflight top wall above portal room", -- [3]
+		"/1 how long before patchwork is attackable?", -- [4]
+		"/tsm", -- [5]
+		"/1 ok ty omw", -- [6]
+		"/dance", -- [7]
+		"/invite Lilanda-blackhand", -- [8]
+		"/1 ok", -- [9]
+		"/sleep", -- [10]
+		"/allthethings", -- [11]
+	},
+	["CliqueDatatext"] = {
+	},
 }
