@@ -314,4 +314,4 @@ BtWQuestsShadowlands: enabled
 LittleWigs_BattleForAzeroth: enabled
 VenturePlan: enabled
 Narcissus_Database_Item: enabled
-Narcissus_Database_NPC: enabled
+ElvUI_CustomTags: disabled

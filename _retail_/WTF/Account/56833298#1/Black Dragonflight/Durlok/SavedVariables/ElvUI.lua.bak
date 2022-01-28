@@ -2182,17 +2182,17 @@ ElvCharacterDB = {
 	},
 	["ConvertKeybindings"] = true,
 	["ChatEditHistory"] = {
-		"/train", -- [1]
-		"/skada toggle", -- [2]
-		"/cw Agaymar-BlackDragonflight top wall above portal room", -- [3]
-		"/1 how long before patchwork is attackable?", -- [4]
-		"/tsm", -- [5]
-		"/1 ok ty omw", -- [6]
-		"/dance", -- [7]
-		"/invite Lilanda-blackhand", -- [8]
-		"/1 ok", -- [9]
-		"/sleep", -- [10]
-		"/allthethings", -- [11]
+		"/cw Agaymar-BlackDragonflight top wall above portal room", -- [1]
+		"/1 ok ty omw", -- [2]
+		"/invite Lilanda-blackhand", -- [3]
+		"/train", -- [4]
+		"/allthethings", -- [5]
+		"/1 ok", -- [6]
+		"/sleep", -- [7]
+		"/skada toggle", -- [8]
+		"/1 how long before patchwork is attackable?", -- [9]
+		"/dance", -- [10]
+		"/tsm", -- [11]
 	},
 	["CliqueDatatext"] = {
 	},

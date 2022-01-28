@@ -1,5 +1,6 @@
 
 ElvCharacterDB = {
+	["ConvertKeybindings"] = true,
 	["ChatHistoryLog"] = {
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14802:Player-75-0B46B98A:1:9:15:21:4294967295:4294967295:4294967295:4294967295|h[Bloodsport]|h|r!", -- [1]
@@ -2180,8 +2181,6 @@ ElvCharacterDB = {
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},
-	["CliqueDatatext"] = {
-	},
 	["ChatEditHistory"] = {
 		"/wave", -- [1]
 		"/fishingbuddy", -- [2]
@@ -2204,5 +2203,6 @@ ElvCharacterDB = {
 		"/p well looks like its slow right now good luck will try again later", -- [19]
 		"/tsm", -- [20]
 	},
-	["ConvertKeybindings"] = true,
+	["CliqueDatatext"] = {
+	},
 }

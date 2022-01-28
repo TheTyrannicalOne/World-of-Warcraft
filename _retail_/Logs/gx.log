@@ -1,28 +1,30 @@
-1/25 21:20:31.806  LogOpen
-1/25 21:20:31.806  World of Warcraft Retail x86_64 9.1.5.42010
-1/25 21:20:31.806  Windows 10 (10.0.19044) x86_64
-1/25 21:20:31.806         Intel(R) Core(TM) i7-4930K CPU @ 3.40GHz | Sockets:1 Cores:6 Threads:12
-1/25 21:20:31.806  31.9 GB System Memory
-1/25 21:20:31.806  On AC Power - Battery Not Present
-1/25 21:20:32.381  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" family:Turing type:Discrete vendor:0x10de device:0x1e07 driver(0x1e0000000e1c2c) location:1 dx11:true dx12:true
-1/25 21:20:32.381  	Monitor 0 "Generic PnP Monitor" Size(2560x1440) Pos(0, 0)
-1/25 21:20:32.381  	Monitor 1 "Generic PnP Monitor" Size(1920x1080) Pos(-1920, 353)
-1/25 21:20:32.381  Nvidia driver version: r470_00
-1/25 21:20:32.425  Choosing gpu by name: "NVIDIA GeForce RTX 2080 Ti"
-1/25 21:20:32.425  D3d12 Device Create
-1/25 21:20:32.425  DXGI_FEATURE_PRESENT_ALLOW_TEARING:true
-1/25 21:20:32.728  DXGI_FORMAT_B8G8R8A8_UNORM UAV support: true
-1/25 21:20:32.728  Ray Tracing Support: DXR 1.1
-1/25 21:20:32.728  Variable Rate Shading Supported: true
-1/25 21:20:35.988  NotifyOnDeviceCreate
-1/25 21:20:35.988  D3d12 Device Create Successful
-1/25 21:20:35.988  <IsGPUDriverOutOfDate> No
-1/25 21:20:35.988  Detected Graphics Defaults: 7 (CPU = 7, GPU = 7, MEM = 7) WindowSize: 2560x1440
-1/25 21:20:36.152  Render Settings Changed. New Render Size: 2560x1440
-1/25 21:20:37.867  Periodic Gpu Status Report: Current Frequency:0.42GHz Temperature:32C 
-1/25 21:20:38.025  Detected SwapChain::Present Modified
-1/25 21:21:31.752  Render Settings Changed
-1/25 21:25:37.872  Periodic Gpu Status Report: Current Frequency:0.62GHz Temperature:31C 
-1/25 21:30:37.876  Periodic Gpu Status Report: Current Frequency:0.62GHz Temperature:31C 
-1/25 21:35:37.893  Periodic Gpu Status Report: Current Frequency:0.60GHz Temperature:32C 
-1/25 21:40:37.902  Periodic Gpu Status Report: Current Frequency:1.06GHz Temperature:30C 
+1/27 22:01:36.635  LogOpen
+1/27 22:01:36.635  World of Warcraft Retail x86_64 9.1.5.42010
+1/27 22:01:36.635  Windows 10 (10.0.19044) x86_64
+1/27 22:01:36.635         Intel(R) Core(TM) i7-4930K CPU @ 3.40GHz | Sockets:1 Cores:6 Threads:12
+1/27 22:01:36.635  31.9 GB System Memory
+1/27 22:01:36.635  On AC Power - Battery Not Present
+1/27 22:01:37.134  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" family:Turing type:Discrete vendor:0x10de device:0x1e07 driver(0x1e0000000e1c2c) location:1 dx11:true dx12:true
+1/27 22:01:37.134  	Monitor 0 "Generic PnP Monitor" Size(2560x1440) Pos(0, 0)
+1/27 22:01:37.134  	Monitor 1 "Generic PnP Monitor" Size(1920x1080) Pos(-1920, 353)
+1/27 22:01:37.134  Nvidia driver version: r470_00
+1/27 22:01:37.169  Choosing gpu by name: "NVIDIA GeForce RTX 2080 Ti"
+1/27 22:01:37.169  D3d12 Device Create
+1/27 22:01:37.169  DXGI_FEATURE_PRESENT_ALLOW_TEARING:true
+1/27 22:01:37.429  DXGI_FORMAT_B8G8R8A8_UNORM UAV support: true
+1/27 22:01:37.429  Ray Tracing Support: DXR 1.1
+1/27 22:01:37.429  Variable Rate Shading Supported: true
+1/27 22:01:40.218  NotifyOnDeviceCreate
+1/27 22:01:40.225  D3d12 Device Create Successful
+1/27 22:01:40.225  <IsGPUDriverOutOfDate> No
+1/27 22:01:40.225  Detected Graphics Defaults: 7 (CPU = 7, GPU = 7, MEM = 7) WindowSize: 2560x1440
+1/27 22:01:40.324  Render Settings Changed. New Render Size: 2560x1440
+1/27 22:01:41.808  Periodic Gpu Status Report: Current Frequency:1.35GHz Temperature:32C 
+1/27 22:01:41.904  Detected SwapChain::Present Modified
+1/27 22:02:33.445  Render Settings Changed
+1/27 22:06:41.808  Periodic Gpu Status Report: Current Frequency:1.35GHz Temperature:33C 
+1/27 22:11:41.812  Periodic Gpu Status Report: Current Frequency:1.35GHz Temperature:33C 
+1/27 22:17:07.281  Periodic Gpu Status Report: Current Frequency:1.35GHz Temperature:31C 
+1/27 22:21:51.457  D3d12 Device Destroy
+1/27 22:21:51.457  NotifyOnDeviceDestroy
+1/27 22:21:51.882  GxShutdown
