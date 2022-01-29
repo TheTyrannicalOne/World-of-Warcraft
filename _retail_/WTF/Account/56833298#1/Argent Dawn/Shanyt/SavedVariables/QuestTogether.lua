@@ -146,16 +146,25 @@ QuestTogether = {
 				"0/1 Method of tracking found", -- [2]
 			},
 		},
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
+			["objectives"] = {
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
+			},
+		},
 		[47727] = {
 			["title"] = "Tomb of Sargeras: Aegwynn's Path",
 			["objectives"] = {
 				"3/4 Fragment of the Guardian's Seal", -- [1]
 			},
 		},
-		[49032] = {
-			["title"] = "Antorus, the Burning Throne: Dark Passage",
+		[54455] = {
+			["title"] = "Supplies from the Honorbound",
 			["objectives"] = {
-				"1/4 Rune of Passage", -- [1]
 			},
 		},
 		[57462] = {
@@ -194,14 +203,10 @@ QuestTogether = {
 				"0/1 Scenario Complete", -- [1]
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
+		[49032] = {
+			["title"] = "Antorus, the Burning Throne: Dark Passage",
 			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
+				"1/4 Rune of Passage", -- [1]
 			},
 		},
 		[42421] = {
@@ -213,8 +218,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

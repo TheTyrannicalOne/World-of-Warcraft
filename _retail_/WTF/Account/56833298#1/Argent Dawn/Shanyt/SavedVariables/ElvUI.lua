@@ -1,6 +1,30 @@
 
 ElvCharacterDB = {
+	["CliqueDatatext"] = {
+	},
 	["ConvertKeybindings"] = true,
+	["ChatEditHistory"] = {
+		"/wave", -- [1]
+		"/fishingbuddy", -- [2]
+		"/npcscan add 66932 Akkalou", -- [3]
+		"/s nice", -- [4]
+		"/raise", -- [5]
+		"/paste", -- [6]
+		"/npcscan add 66935 Clamstok", -- [7]
+		"/cw Frankdukes-DemonSoul Thanks!", -- [8]
+		"/npcscan add 66938 Odd'nirok", -- [9]
+		"/cw Mhercurio-Quel'Thalas ok thanks anyway", -- [10]
+		"/invite lillys-blackhand", -- [11]
+		"/s launch fireworks out the launchers he raises out the water and we kill him", -- [12]
+		"/s thats what i dont remebre i will look on wowhead in a second find out", -- [13]
+		"/s two druids just went to get some", -- [14]
+		"/npcscan add 66934 Damlak", -- [15]
+		"/cw Girnar-Lightbringer ok np thanks any\\", -- [16]
+		"/p yeah may not be able to", -- [17]
+		"/p if not will try again later", -- [18]
+		"/p well looks like its slow right now good luck will try again later", -- [19]
+		"/tsm", -- [20]
+	},
 	["ChatHistoryLog"] = {
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14802:Player-75-0B46B98A:1:9:15:21:4294967295:4294967295:4294967295:4294967295|h[Bloodsport]|h|r!", -- [1]
@@ -2180,29 +2204,5 @@ ElvCharacterDB = {
 			[51] = 1641390712,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
-	},
-	["ChatEditHistory"] = {
-		"/wave", -- [1]
-		"/fishingbuddy", -- [2]
-		"/npcscan add 66932 Akkalou", -- [3]
-		"/s nice", -- [4]
-		"/raise", -- [5]
-		"/paste", -- [6]
-		"/npcscan add 66935 Clamstok", -- [7]
-		"/cw Frankdukes-DemonSoul Thanks!", -- [8]
-		"/npcscan add 66938 Odd'nirok", -- [9]
-		"/cw Mhercurio-Quel'Thalas ok thanks anyway", -- [10]
-		"/invite lillys-blackhand", -- [11]
-		"/s launch fireworks out the launchers he raises out the water and we kill him", -- [12]
-		"/s thats what i dont remebre i will look on wowhead in a second find out", -- [13]
-		"/s two druids just went to get some", -- [14]
-		"/npcscan add 66934 Damlak", -- [15]
-		"/cw Girnar-Lightbringer ok np thanks any\\", -- [16]
-		"/p yeah may not be able to", -- [17]
-		"/p if not will try again later", -- [18]
-		"/p well looks like its slow right now good luck will try again later", -- [19]
-		"/tsm", -- [20]
-	},
-	["CliqueDatatext"] = {
 	},
 }

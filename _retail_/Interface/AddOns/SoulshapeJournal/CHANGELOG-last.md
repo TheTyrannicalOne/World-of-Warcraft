@@ -1,1 +1,1 @@
-* Fixed a bug in the Korean translation file
+* Updated Russian translation (thanks to ZamestoTV)
