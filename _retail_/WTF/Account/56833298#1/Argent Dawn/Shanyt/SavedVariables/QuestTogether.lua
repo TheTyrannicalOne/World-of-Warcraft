@@ -7,10 +7,10 @@ QuestTogether = {
 				"0/4 Echo of Time", -- [1]
 			},
 		},
-		[42234] = {
-			["title"] = "The Valarjar",
+		[43179] = {
+			["title"] = "The Kirin Tor of Dalaran",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Stormheim", -- [1]
+				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
 			},
 		},
 		[56352] = {
@@ -19,27 +19,30 @@ QuestTogether = {
 				"3/20 Eternal Ornament", -- [1]
 			},
 		},
+		[62719] = {
+			["title"] = "The Final Pieces",
+			["objectives"] = {
+				"0/1 Rune Vessel Acquired", -- [1]
+				"0/2 Different Missives Obtained", -- [2]
+				"1/1 Runecarver Memory Restored", -- [3]
+			},
+		},
 		[50562] = {
 			["title"] = "Champions of Azeroth",
 			["objectives"] = {
 				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
-		[57565] = {
-			["title"] = "Aqir Assault Tracker",
+		[59701] = {
+			["title"] = "Common Ground",
 			["objectives"] = {
-				"0/1 [DNT] Dummy Credit slain", -- [1]
-			},
-		},
-		[57567] = {
-			["title"] = "N'Zoth Assault Tracker (Vale)",
-			["objectives"] = {
+				"0/4 Renathal Banner placed", -- [1]
 			},
 		},
 		[61981] = {
 			["title"] = "Replenish the Reservoir",
 			["objectives"] = {
-				"210/1000 Anima sources", -- [1]
+				"0/1000 Anima sources", -- [1]
 			},
 		},
 		[49133] = {
@@ -48,10 +51,10 @@ QuestTogether = {
 				"0/4 Sigil of the Dark Titan", -- [1]
 			},
 		},
-		[62932] = {
-			["title"] = "Explore Torghast",
+		[62869] = {
+			["title"] = "Return Lost Souls",
 			["objectives"] = {
-				"0/1 Information found", -- [1]
+				"0/20 Rescue Souls from the Maw", -- [1]
 			},
 		},
 		[46745] = {
@@ -59,10 +62,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[62371] = {
-			["title"] = "Tirna Scithe: A Warning Silence",
+		[48639] = {
+			["title"] = "Army of the Light",
 			["objectives"] = {
-				"1/1 Tred'ova slain", -- [1]
+				"0/4 Complete 4 Army of the Light World Quests", -- [1]
 			},
 		},
 		[47129] = {
@@ -78,10 +81,10 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[40329] = {
-			["title"] = "Battle Pet Tamers: Warlords",
+		[50598] = {
+			["title"] = "Zandalari Empire",
 			["objectives"] = {
-				"2/5 Pet Battlemasters Defeated", -- [1]
+				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
 			},
 		},
 		[53435] = {
@@ -102,10 +105,10 @@ QuestTogether = {
 				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[42422] = {
-			["title"] = "The Wardens",
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
+				"2/4 Echo of Time", -- [1]
 			},
 		},
 		[44948] = {
@@ -114,36 +117,32 @@ QuestTogether = {
 				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
-		[60267] = {
-			["title"] = "Prison of the Forgotten",
+		[63982] = {
+			["title"] = "Above My Station",
 			["objectives"] = {
-				"1/1 Speak with Ve'nari", -- [1]
+				"Portal to Transfer Station Ta taken", -- [1]
 			},
 		},
-		[62730] = {
-			["title"] = "Fruit of the Gods",
+		[60460] = {
+			["title"] = "Anima Salvage",
 			["objectives"] = {
-				"0/1 Ripe Purian", -- [1]
+				"0/150 Gather Anima Embers from Torghast", -- [1]
 			},
 		},
-		[48305] = {
-			["title"] = "The Burning Coven",
+		[57564] = {
+			["title"] = "Mantid Assault Tracker",
 			["objectives"] = {
-				"Defeat the Coven of Shivarra in the Antorus, The Burning Throne", -- [1]
-				"1/1 Sargerei Manifesto", -- [2]
+			},
+		},
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
+			["objectives"] = {
 			},
 		},
 		[24756] = {
 			["title"] = "Blood Infusion",
 			["objectives"] = {
 				"Infuse Shadow's Edge with Blood then defeat Lana'thel.", -- [1]
-			},
-		},
-		[60281] = {
-			["title"] = "Rule 4: Make A List",
-			["objectives"] = {
-				"0/1 Inquisitor Devaki slain", -- [1]
-				"0/1 Method of tracking found", -- [2]
 			},
 		},
 		[31891] = {
@@ -156,27 +155,40 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
+		[54455] = {
+			["title"] = "Supplies from the Honorbound",
+			["objectives"] = {
+			},
+		},
 		[47727] = {
 			["title"] = "Tomb of Sargeras: Aegwynn's Path",
 			["objectives"] = {
 				"3/4 Fragment of the Guardian's Seal", -- [1]
 			},
 		},
-		[54455] = {
-			["title"] = "Supplies from the Honorbound",
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
 			["objectives"] = {
+				"2/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
-		[57462] = {
-			["title"] = "Dream Catcher",
+		[61492] = {
+			["title"] = "The Princeguard",
 			["objectives"] = {
-				"28/200 Shred of Insanity", -- [1]
+				"0/1 Chelra the Bladewall revived", -- [1]
 			},
 		},
-		[57919] = {
-			["title"] = "An Abuse of Power",
+		[48642] = {
+			["title"] = "Argussian Reach",
 			["objectives"] = {
-				"0/1 Abused Soul subjugated", -- [1]
+				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
+			},
+		},
+		[48305] = {
+			["title"] = "The Burning Coven",
+			["objectives"] = {
+				"Defeat the Coven of Shivarra in the Antorus, The Burning Throne", -- [1]
+				"1/1 Sargerei Manifesto", -- [2]
 			},
 		},
 		[57403] = {
@@ -185,16 +197,16 @@ QuestTogether = {
 				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
 			},
 		},
-		[45383] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[63576] = {
+			["title"] = "The First Move",
 			["objectives"] = {
-				"2/4 Echo of Time", -- [1]
+				"0/1 Speak with Polemarch Adrestes in Oribos", -- [1]
 			},
 		},
-		[50603] = {
-			["title"] = "Voldunai",
+		[57462] = {
+			["title"] = "Dream Catcher",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Vol'dun", -- [1]
+				"28/200 Shred of Insanity", -- [1]
 			},
 		},
 		[30567] = {
@@ -209,17 +221,17 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[42421] = {
-			["title"] = "The Nightfallen",
+		[57919] = {
+			["title"] = "An Abuse of Power",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Suramar", -- [1]
+				"0/1 Abused Soul subjugated", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
-		["showDebugInfo"] = false,
 	},
 }

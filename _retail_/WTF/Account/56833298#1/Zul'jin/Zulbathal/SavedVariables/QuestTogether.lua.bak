@@ -46,11 +46,10 @@ QuestTogether = {
 				"0/100 Dream Seeds planted", -- [1]
 			},
 		},
-		[61874] = {
-			["title"] = "Shadowlands: A Chilling Summons",
+		[31015] = {
+			["title"] = "Your Private Collection",
 			["objectives"] = {
-				"1/1 Learn about your leaders' fate", -- [1]
-				"0/1 Take the Death Gate to Acherus", -- [2]
+				"0/1 An empty bookshelf", -- [1]
 			},
 		},
 		[42129] = {
@@ -59,11 +58,10 @@ QuestTogether = {
 				"0/1 Pendant of Starlight", -- [1]
 			},
 		},
-		[42719] = {
-			["title"] = "Eye of Azshara: Cleansing the Dreamway",
+		[50562] = {
+			["title"] = "Champions of Azeroth",
 			["objectives"] = {
-				"0/25 Rarefied Water", -- [1]
-				"0/1 Wrath of Azshara slain", -- [2]
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
 		[36614] = {
@@ -73,21 +71,11 @@ QuestTogether = {
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
-		[40329] = {
-			["title"] = "Battle Pet Tamers: Warlords",
+		[40019] = {
+			["title"] = "An Empathetic Herb",
 			["objectives"] = {
-				"0/5 Pet Battlemasters Defeated", -- [1]
-			},
-		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
-			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
-			},
-		},
-		[51432] = {
-			["title"] = "An Unusual Mentor",
-			["objectives"] = {
+				"9/15 Healthy Dreamleaf", -- [1]
+				"5/5 Blight-Infested Dreamleaf", -- [2]
 			},
 		},
 		[44948] = {
@@ -96,15 +84,27 @@ QuestTogether = {
 				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
+			["objectives"] = {
+				"0/5 Pet Battlemasters Defeated", -- [1]
+			},
+		},
 		[44555] = {
 			["title"] = "Khadgar's Discovery",
 			["objectives"] = {
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[52444] = {
+			["title"] = "The Final Foothold",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
+				"0/1 Review final foothold", -- [1]
 			},
 		},
 		[31486] = {
@@ -125,10 +125,9 @@ QuestTogether = {
 				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
-		[52444] = {
-			["title"] = "The Final Foothold",
+		[51432] = {
+			["title"] = "An Unusual Mentor",
 			["objectives"] = {
-				"0/1 Review final foothold", -- [1]
 			},
 		},
 		[31891] = {
@@ -141,11 +140,18 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[40019] = {
-			["title"] = "An Empathetic Herb",
+		[61874] = {
+			["title"] = "Shadowlands: A Chilling Summons",
 			["objectives"] = {
-				"9/15 Healthy Dreamleaf", -- [1]
-				"5/5 Blight-Infested Dreamleaf", -- [2]
+				"1/1 Learn about your leaders' fate", -- [1]
+				"0/1 Take the Death Gate to Acherus", -- [2]
+			},
+		},
+		[42719] = {
+			["title"] = "Eye of Azshara: Cleansing the Dreamway",
+			["objectives"] = {
+				"0/25 Rarefied Water", -- [1]
+				"0/1 Wrath of Azshara slain", -- [2]
 			},
 		},
 		[49901] = {
@@ -154,17 +160,11 @@ QuestTogether = {
 				"0/1 Yazma slain", -- [1]
 			},
 		},
-		[31015] = {
-			["title"] = "Your Private Collection",
-			["objectives"] = {
-				"0/1 An empty bookshelf", -- [1]
-			},
-		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
+		["showDebugInfo"] = false,
 	},
 }

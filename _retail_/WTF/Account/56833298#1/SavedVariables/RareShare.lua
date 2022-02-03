@@ -17,7 +17,7 @@ RareShareDB = {
 		["ChatAnnounce"] = true,
 		["OnDeath"] = false,
 		["CChannel"] = {
-			["CName"] = "General - Nazjatar",
+			["CName"] = "General - Shrine of Two Moons",
 			["CID"] = 1,
 		},
 		["Duplicates"] = true,

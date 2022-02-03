@@ -374,10 +374,10 @@ OneRing_Config = {
 					8, -- [2]
 					["sliceToken"] = "ABuekwR08=we",
 				}, -- [9]
-				["name"] = "Raid Markers",
+				["limit"] = "Shanyt-ArgentDawn",
 				["save"] = true,
 				["hotkey"] = "ALT-V",
-				["limit"] = "Shanyt-ArgentDawn",
+				["name"] = "Raid Markers",
 			},
 			["Utility4"] = {
 				{

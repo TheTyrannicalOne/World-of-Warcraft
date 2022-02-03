@@ -3,9 +3,9 @@ Frame: AllTheThings-Window-CurrentInstance
 FrameLevel: 1
 Anchor: LEFT
 X: 0
-Y: -13
+Y: -16
 W: 300
-H: 300
+H: 299
 Frame: BagItemTooltipMover
 FrameLevel: 2
 Anchor: TOP
@@ -137,6 +137,18 @@ FrameLevel: 1
 Anchor: BOTTOMLEFT
 X: 0
 Y: 258
+W: 300
+H: 300
+Frame: AllTheThings-Window-ATT > Dungeons & Raids > Cataclysm > |cffff8000Firelands|r > |cffff8000Legendary|r > Delegation > |cFrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 300
+H: 300
+Frame: AllTheThings-Window-ATT > Dungeons & Raids > Cataclysm > |cffff8000Firelands|r > |cffff8000Legendary|r > Through a GlassFrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
 W: 300
 H: 300
 Frame: GameMenuFrame
