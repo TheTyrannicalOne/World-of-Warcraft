@@ -481,8 +481,10 @@ do
     local specsParsed = false
     menu.args = {}
 
-    function menu:initialize( level )
-        if not level then return end
+    function menu:initialize( level, list )
+        if not level and not list then
+            return
+        end
 
         if level == 1 then
             if not specsParsed then
@@ -526,20 +528,114 @@ do
                                     end,
                                     hidden = function () return Hekili.State.spec.id ~= i end,
                                 } )
+
+                            elseif setting.info.type == "select" then
+                                if not titled then
+                                    insert( menuData, { 
+                                        isSeparator = 1,
+                                        hidden = function () return Hekili.State.spec.id ~= i end,
+                                    } )
+                                    insert( menuData, {
+                                        isTitle = 1,
+                                        text = spec.name,
+                                        notCheckable = 1,
+                                        hidden = function () return Hekili.State.spec.id ~= i end,
+                                    } )
+                                    titled = true
+                                end
+
+                                local submenu = {
+                                    text = setting.info.name,
+                                    hasArrow = true,
+                                    menuList = {},
+                                    notCheckable = true,
+                                    hidden = function () return Hekili.State.spec.id ~= i end,
+                                }
+
+                                local values = setting.info.values
+                                if type( values ) == "function" then values = values() end
+
+                                if values then
+                                    for k, v in orderedPairs( values ) do
+                                        insert( submenu.menuList, {
+                                            text = v,
+                                            func = function ()
+                                                menu.args[1] = setting.name
+                                                setting.info.set( menu.args, k )
+                                                
+                                                for k, v in pairs( Hekili.DisplayPool ) do
+                                                    v:OnEvent( "HEKILI_MENU" )
+                                                end
+                                            end,
+                                            checked = function ()
+                                                menu.args[1] = setting.name
+                                                return setting.info.get( menu.args ) == k
+                                            end,
+                                            hidden = function () return Hekili.State.spec.id ~= i end,
+                                        } )
+                                    end
+                                end
+
+                                insert( menuData, submenu )
+
+                            elseif setting.info.type == "range" and setting.info.step == 1 and ( ( setting.info.max or 999 ) - ( setting.info.min or -999 ) ) < 30 then
+                                if not titled then
+                                    insert( menuData, { 
+                                        isSeparator = 1,
+                                        hidden = function () return Hekili.State.spec.id ~= i end,
+                                    } )
+                                    insert( menuData, {
+                                        isTitle = 1,
+                                        text = spec.name,
+                                        notCheckable = 1,
+                                        hidden = function () return Hekili.State.spec.id ~= i end,
+                                    } )
+                                    titled = true
+                                end
+
+                                local submenu = {
+                                    text = setting.info.name,
+                                    hasArrow = true,
+                                    menuList = {},
+                                    notCheckable = true,
+                                    hidden = function () return Hekili.State.spec.id ~= i end,
+                                }
+
+                                --[[ for j = setting.info.min, setting.info.max do
+                                    insert( submenu.menuList, {
+                                        text = tostring( j ),
+                                        func = function ()
+                                            menu.args[1] = setting.name
+                                            setting.info.set( menu.args, j )
+                                        end,
+                                        checked = function ()
+                                            menu.args[1] = setting.name
+                                            return setting.info.get( menu.args ) == j
+                                        end,
+                                        hidden = function () return Hekili.State.spec.id ~= i end,
+                                    } )                                        
+                                end ]]
+
+                                insert( menuData, submenu )
                             end
                         end
                     end
                 end
                 specsParsed = true
             end
+        end
+
+        local use = list or menuData
+        local classic = Hekili.IsClassic()
             
-            for i, data in ipairs( menuData ) do
-                if not data.hidden or ( type( data.hidden ) == 'function' and not data.hidden() ) then
-                    if data.isSeparator then
-                        menu.AddSeparator( level )
-                    else
-                        menu.AddButton( data, level )
-                    end
+        for i, data in ipairs( use ) do
+            data.classicChecks = classic
+
+            if not data.hidden or ( type( data.hidden ) == 'function' and not data.hidden() ) then
+                if data.isSeparator then
+                    menu.AddSeparator( level )
+                else
+                    menu.AddButton( data, level )
                 end
             end
         end
@@ -683,6 +779,31 @@ do
 
     local LRC = LibStub("LibRangeCheck-2.0")
     local LSF = SpellFlashCore
+
+    if LSF then
+        hooksecurefunc( LSF, "FlashFrame", function( frame )
+            local flash = frame and frame.SpellFlashCoreAddonFlashFrame
+
+            if flash and not flash.HekiliHooked then
+                flash.FlashTexture:SetTexture( Hekili.DB.profile.flashTexture or "Interface\\Cooldown\\star4" )
+
+                flash:HookScript( "OnUpdate", function( self )
+                    flash.FlashTexture:SetTexture( Hekili.DB.profile.flashTexture or "Interface\\Cooldown\\star4" )
+                    if Hekili.DB.profile.fixedSize then
+                        flash.FlashTexture:SetHeight( flash:GetHeight() * flash.FlashSize )
+                        flash.FlashTexture:SetWidth( flash:GetWidth() * flash.FlashSize )
+                    end
+
+                    if Hekili.DB.profile.fixedBrightness then
+                        flash.FlashTexture:SetAlpha( flash.FlashBrightness )
+                    end
+                end )
+
+                flash.HekiliHooked = true
+            end
+        end )
+    end
+
     local LSR = LibStub("SpellRange-1.0")
     local Glower = LibStub("LibCustomGlow-1.0")
 
@@ -818,23 +939,26 @@ do
 
         if Hekili.freshFrame and not Hekili.Pause then
             local spec = Hekili.DB.profile.specs[ state.spec.id ]
-            local throttle = spec.throttleRefresh and ( 1 / spec.maxRefresh ) or 0.25
+            local throttle = spec.throttleRefresh and ( 1 / spec.maxRefresh ) or 1
 
-            if self.refreshTimer < 0 or ( self.superUpdate and ( self.id == "Primary" or self.id == "AOE" ) ) or self.criticalUpdate and ( now - self.lastUpdate >= throttle ) then
-                Hekili:ProcessHooks( self.id )
-                self.lastUpdate = now
-                self.criticalUpdate = false
-                self.superUpdate = false
+            if self.refreshTimer < 0 or self.superUpdate or self.criticalUpdate and ( now - self.lastUpdate >= throttle ) then
+                local success = Hekili:ProcessHooks( self.id )
 
-                local refreshRate = max( throttle, state.combat == 0 and oocRefresh or icRefresh[ self.id ] )
+                if success then
+                    self.lastUpdate = now
+                    self.criticalUpdate = false
+                    self.superUpdate = false
 
-                if UnitChannelInfo( "player" ) then
-                    refreshRate = refreshRate * 2
+                    local refreshRate = max( throttle, state.combat == 0 and oocRefresh or icRefresh[ self.id ] )
+
+                    if UnitChannelInfo( "player" ) then
+                        refreshRate = refreshRate * 2
+                    end
+        
+                    self.refreshTimer = refreshRate
+
+                    table.wipe( self.eventsTriggered )
                 end
-    
-                self.refreshTimer = refreshRate
-
-                table.wipe( self.eventsTriggered )
                 
                 Hekili.freshFrame = false
             end
@@ -997,7 +1121,7 @@ do
                     if self.lastFlash ~= a or now - self.lastFlashTime > 0.5 then
                         if ability.item then
                             local iname = LSF.ItemName( ability.item )
-                            LSF.FlashItem( iname, self.flashColor )
+                            LSF.FlashItem( iname, self.flashColor, conf.flash.size, conf.flash.brightness, conf.flash.blink, nil, conf.flash.texture )
                         else
                             if ability.flash then
                                 LSF.FlashAction( ability.flash, self.flashColor )
@@ -1009,7 +1133,7 @@ do
                                 end
 
                                 local sname = LSF.SpellName( id )
-                                LSF.FlashAction( sname, self.flashColor )
+                                LSF.FlashAction( sname, self.flashColor, conf.flash.size, conf.flash.brightness, conf.flash.blink, nil, conf.flash.texture )
                             end
                         end
                         self.lastFlash = a
@@ -1204,9 +1328,7 @@ do
                 if ability.item then
                     start, duration = GetItemCooldown( ability.item )
                 else
-                    if ability.cooldown > 0 or ability.spendType ~= "runes" then
-                        start, duration = GetSpellCooldown( ability.id )
-                    end
+                    start, duration = GetSpellCooldown( ability.id )
                 end
 
                 if ability.gcd ~= "off" and start + duration < gExpires then
@@ -1214,14 +1336,9 @@ do
                     duration = gDuration
                 end
 
-                if i == 1 and conf.delays.extend and rec.time > 0 and rec.exact_time > max( now, start + duration ) then
-                    if rec.interrupt and rec.startCast then
-                        start = rec.startCast
-                        duration = rec.exact_time - start
-                    else
-                        start = start > 0 and start or state.gcd.lastStart
-                        duration = rec.exact_time - start
-                    end
+                if i == 1 and conf.delays.extend and rec.delay and rec.delay > 0 and rec.exact_time > max( now, start + duration ) then
+                    start = start > 0 and start or state.gcd.lastStart
+                    duration = rec.exact_time - start
                 end
 
                 if cd.lastStart ~= start or cd.lastDuration ~= duration then
@@ -1429,8 +1546,13 @@ do
     end
 
     local function Display_UpdatePerformance( self, now, used, newRecs )
+        if not InCombatLockdown() then
+            self.combatUpdates.last = 0
+            return
+        end
+
         if used == nil then return end        
-        used = used / 1000 -- ms to sec.
+        -- used = used / 1000 -- ms to sec.
 
         if self.combatTime.samples == 0 then
             self.combatTime.fastest = used
@@ -1440,13 +1562,15 @@ do
             self.combatTime.samples = 1
         else
             if used < self.combatTime.fastest then self.combatTime.fastest = used end
-            if used > self.combatTime.slowest then self.combatTime.slowest = used end
+            if used > self.combatTime.slowest then
+                self.combatTime.slowest = used
+            end
 
             self.combatTime.average = ( ( self.combatTime.average * self.combatTime.samples ) + used ) / ( self.combatTime.samples + 1 )
             self.combatTime.samples = self.combatTime.samples + 1
         end
 
-        if self.combatUpdates.samples == 0 then
+        if self.combatUpdates.samples == 0 or self.combatUpdates.last == 0 then
             if self.combatUpdates.last == 0 then
                 self.combatUpdates.last = now
             else
@@ -1487,7 +1611,7 @@ do
 
             self.combatUpdates.average = ( ( self.combatUpdates.average * self.combatUpdates.samples ) + interval ) / ( self.combatUpdates.samples + 1 )
             self.combatUpdates.samples = self.combatUpdates.samples + 1
-        end
+        end        
 
         self.successEvents = self.successEvents or {}
         self.failEvents = self.failEvents or {}
@@ -1498,7 +1622,6 @@ do
             if events[ k ] then events[ k ] = events[ k ] + 1
             else events[ k ] = 1 end
         end
-
     end
 
 
@@ -1788,6 +1911,11 @@ do
 
     function Hekili:ForceUpdate( event, super )
         Hekili.freshFrame = false
+
+        if super then
+            state.player.updated = true
+            state.target.updated = true
+        end
 
         for i, d in pairs( ns.UI.Displays ) do        
             d.criticalUpdate = true
@@ -2368,16 +2496,16 @@ function Hekili:ShowDiagnosticTooltip( q )
     local fmt = ns.lib.Format
 
     -- Grab the default backdrop and copy it with a solid background.
-    local backdrop = GameTooltip:GetBackdrop()
+    -- local backdrop = GameTooltip:GetBackdrop()
 
-    if backdrop then
-        backdrop.bgFile = [[Interface\Buttons\WHITE8X8]]
-        --[[ tt:SetBackdrop(backdrop)
-        tt:SetBackdropColor(0, 0, 0, 1) ]]
-    end
+    -- if backdrop then
+    --    backdrop.bgFile = [[Interface\Buttons\WHITE8X8]]
+        -- tt:SetBackdrop(backdrop)
+        -- tt:SetBackdropColor(0, 0, 0, 1)
+    -- end
 
     tt:SetOwner(UIParent, "ANCHOR_CURSOR")
-    tt:SetText(class.abilities[q.actionName].name)
+    tt:SetText( class.abilities[q.actionName].name )
     tt:AddDoubleLine(q.listName .. " #" .. q.action, "+" .. ns.formatValue(round(q.time or 0, 2)), 1, 1, 1, 1, 1, 1)
 
     if q.resources and q.resources[q.resource_type] then

@@ -1,8 +1,11 @@
 
 TomCats_Character = {
-	["preferQuestLog"] = true,
-	["cvars"] = {
+	["loveisintheair"] = {
+		["preferences"] = {
+		},
 	},
-	["preferences"] = {
+	["lunarfestival"] = {
+		["preferences"] = {
+		},
 	},
 }

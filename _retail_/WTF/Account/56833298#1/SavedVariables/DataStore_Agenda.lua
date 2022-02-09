@@ -1,0 +1,38 @@
+
+DataStore_AgendaDB = {
+	["profileKeys"] = {
+		["Avisar - Dalaran"] = "Avisar - Dalaran",
+		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
+	},
+	["global"] = {
+		["Options"] = {
+			["WeeklyResetHour"] = 6,
+			["WeeklyResetDay"] = 2,
+			["NextWeeklyReset"] = "2022-02-15",
+		},
+		["Characters"] = {
+			["Default.Dalaran.Varlouris"] = {
+				["lastUpdate"] = 1644369676,
+			},
+			["Default.Dalaran.Avisar"] = {
+				["lastUpdate"] = 1644369248,
+			},
+			["Default.Dalaran.Illingrath"] = {
+				["lastUpdate"] = 1644369550,
+			},
+			["Default.Zul'jin.Zulbathal"] = {
+				["lastUpdate"] = 1644368743,
+			},
+			["Default.Black Dragonflight.Durlok"] = {
+				["lastUpdate"] = 1644367482,
+			},
+			["Default.Argent Dawn.Shanyt"] = {
+				["lastUpdate"] = 1644367026,
+			},
+		},
+	},
+}

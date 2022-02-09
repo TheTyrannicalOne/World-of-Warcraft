@@ -1,9 +1,8 @@
 
 SpyPerCharDB = {
-	["version"] = "1.1",
-	["IgnoreData"] = {
-	},
 	["KOSData"] = {
+	},
+	["IgnoreData"] = {
 	},
 	["PlayerData"] = {
 		["Lunarbeef"] = {
@@ -394,9 +393,9 @@ SpyPerCharDB = {
 			["mapY"] = 0.68,
 			["class"] = "PALADIN",
 			["isEnemy"] = true,
-			["isGuess"] = true,
-			["mapX"] = 0.23,
 			["name"] = "Maxxis-BurningBlade",
+			["mapX"] = 0.23,
+			["isGuess"] = true,
 			["race"] = "Human",
 			["subZone"] = "The Marris Stead",
 			["level"] = 46,
@@ -579,4 +578,5 @@ SpyPerCharDB = {
 			["time"] = 1638119084,
 		},
 	},
+	["version"] = "1.1",
 }

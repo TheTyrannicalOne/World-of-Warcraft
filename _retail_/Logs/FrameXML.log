@@ -1,20 +1,15 @@
-2/2 01:45:20.990  Loading add-on AckisRecipeList
-2/2 01:45:20.990  ** Loading table of contents Interface\AddOns\AckisRecipeList\AckisRecipeList.toc
-2/2 01:45:20.990  ++ Loading file Interface\AddOns\AckisRecipeList\embeds.xml
-2/2 01:45:20.990  ++ Loading file Interface\AddOns\AckisRecipeList\libs\AceGUI-3.0\AceGUI-3.0.xml
-2/2 01:45:20.990  ...\AckisRecipeList\libs\AceGUI-3.0\widgets\AceGUIWidget-DropDown-Items.lua:12: unfinished string near '"fixlevels(parent,...)'
-2/2 01:45:20.990  Loading add-on AngryWorldQuests
-2/2 01:45:20.990  ** Loading table of contents Interface\AddOns\AngryWorldQuests\AngryWorldQuests.toc
-2/2 01:45:20.990  (null)
-2/2 01:45:20.990  Loading add-on Hekili
-2/2 01:45:20.990  ** Loading table of contents Interface\AddOns\Hekili\Hekili.toc
-2/2 01:45:20.990  ++ Loading file Interface\AddOns\Hekili\embeds.xml
-2/2 01:45:20.990  Interface\AddOns\Hekili\Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml(1): error: not well-formed (invalid token)
-2/2 01:45:20.990  Interface\AddOns\Hekili\Libs\AceTimer-3.0\AceTimer-3.0.xml(1): error: not well-formed (invalid token)
-2/2 01:45:20.990  Interface\AddOns\Hekili\Libs\AceSerializer-3.0\AceSerializer-3.0.xml(1): error: not well-formed (invalid token)
-2/2 01:45:20.990  Interface\AddOns\Hekili\Libs\LibSharedMedia-3.0\lib.xml(1): error: not well-formed (invalid token)
-2/2 01:45:20.990  Interface\AddOns\Hekili\Libs\AceGUI-3.0_SFX-Widgets\AceGUI-3.0_SFX-Widgets.xml(1): error: not well-formed (invalid token)
-2/2 01:45:20.990  Interface\AddOns\Hekili\Libs\LibItemBuffs-1.0\LibItemBuffs-1.0.xml(1): error: not well-formed (invalid token)
-2/2 01:45:20.990  Interface\AddOns\Hekili\Libs\LibCustomGlow-1.0\LibCustomGlow-1.0.xml(1): error: not well-formed (invalid token)
-2/2 01:45:20.990  Interface\AddOns\Hekili\Libs\LibChatAnims\LibChatAnims.xml(1): error: not well-formed (invalid token)
-2/2 01:45:20.990  (null)
+2/8 20:21:10.813  Loading add-on AngryWorldQuests
+2/8 20:21:10.813  ** Loading table of contents Interface\AddOns\AngryWorldQuests\AngryWorldQuests.toc
+2/8 20:21:10.813  (null)
+2/8 20:21:10.813  Loading add-on Hekili
+2/8 20:21:10.813  ** Loading table of contents Interface\AddOns\Hekili\Hekili.toc
+2/8 20:21:10.813  ++ Loading file Interface\AddOns\Hekili\embeds.xml
+2/8 20:21:10.813  Interface\AddOns\Hekili\Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml(1): error: not well-formed (invalid token)
+2/8 20:21:10.813  Interface\AddOns\Hekili\Libs\AceTimer-3.0\AceTimer-3.0.xml(1): error: not well-formed (invalid token)
+2/8 20:21:10.813  Interface\AddOns\Hekili\Libs\AceSerializer-3.0\AceSerializer-3.0.xml(1): error: not well-formed (invalid token)
+2/8 20:21:10.813  Interface\AddOns\Hekili\Libs\LibSharedMedia-3.0\lib.xml(1): error: not well-formed (invalid token)
+2/8 20:21:10.813  Interface\AddOns\Hekili\Libs\AceGUI-3.0_SFX-Widgets\AceGUI-3.0_SFX-Widgets.xml(1): error: not well-formed (invalid token)
+2/8 20:21:10.813  Interface\AddOns\Hekili\Libs\LibItemBuffs-1.0\LibItemBuffs-1.0.xml(1): error: not well-formed (invalid token)
+2/8 20:21:10.813  Interface\AddOns\Hekili\Libs\LibCustomGlow-1.0\LibCustomGlow-1.0.xml(1): error: not well-formed (invalid token)
+2/8 20:21:10.813  Interface\AddOns\Hekili\Libs\LibChatAnims\LibChatAnims.xml(1): error: not well-formed (invalid token)
+2/8 20:21:10.813  (null)

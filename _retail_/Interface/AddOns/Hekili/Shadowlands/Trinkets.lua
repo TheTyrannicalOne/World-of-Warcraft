@@ -203,7 +203,7 @@ do
 
         bottled_flayedwing_toxin = {
             cast = 0,
-            cooldown = 1,
+            cooldown = 20,
             gcd = "off",
 
             item = 178742,
@@ -221,6 +221,7 @@ do
                     id = 345545,
                     duration = 3600,
                     max_stack = 1,
+                    ignore_buff = true -- Don't count as a DPS self-buff.
                 }
             }
         },
@@ -418,6 +419,8 @@ do
             item = 179350,
             toggle = "cooldowns",
 
+            self_buff = "inscrutable_quantum_device",
+
             auras = {
                 inscrutable_quantum_device_crit = {
                     id = 330366,
@@ -443,7 +446,7 @@ do
                     alias = { "inscrutable_quantum_device_crit", "inscrutable_quantum_device_vers", "inscrutable_quantum_device_haste", "inscrutable_quantum_device_mastery" },
                     aliasMode = "first",
                     aliasType = "buff",
-                    duration = 30                    
+                    duration = 30
                 }
             }
         },
@@ -745,6 +748,19 @@ do
 
             item = 179356,
             toggle = "cooldowns",
+
+            self_buff = "shadowgrasp_totem",
+
+            handler = function ()
+                applyBuff( "shadowgrasp_totem" )
+            end,
+
+            auras = {
+                shadowgrasp_totem = {
+                    duration = 15,
+                    max_stack = 1,
+                }
+            }
         },
 
         siphoning_phylactery_shard = {
@@ -921,7 +937,11 @@ do
             cooldown = 120,
             gcd = "off",
 
-            item = 175732,
+            item = function ()
+                if equipped[ 175732 ] then return 175732 end
+                return 181357
+            end,
+            items = { 175732, 181357 },            
             toggle = "cooldowns",
 
             handler = function ()
@@ -998,6 +1018,441 @@ do
                     max_stack = 1
                 }
             },
+        },
+
+
+        -- Sanctum of Domination, Usable Items
+        jotungeirr_destinys_call = {
+            cast = 0,
+            cooldown = 180,
+            gcd = "off",
+
+            item = 186404,
+            toggle = "cooldowns",
+
+            handler = function ()
+                applyBuff( "burden_of_divinity" )
+            end,
+
+            auras = {
+                burden_of_divinity = {
+                    id = 357773,
+                    duration = 30,
+                    max_stack = 1,
+                },
+            },
+        },
+
+        scrawled_word_of_recall = {
+            cast = 0,
+            cooldown = 60,
+            gcd = "off",
+
+            item = 186425,
+            
+            handler = function ()
+                if spec.mistweaver then gainChargeTime( "renewing_mist", 7 )
+                elseif class.druid and spec.restoration then gainChargeTime( "swiftmend", 7.9 )
+                elseif spec.discipline then gainChargeTime( "penance", 7.2 )
+                elseif class.priest and spec.holy then gainChargeTime( "circle_of_healing", 11.2 )
+                elseif class.paladin and spec.holy then gainChargeTime( "holy_shock", 3.7 )
+                elseif class.shaman and spec.restoration then gainChargeTime( "riptide", 4 ) end
+            end,
+        },
+
+        forbidden_necromantic_tome = {
+            cast = 2,
+            cooldown = 600,
+            gcd = "spell",
+
+            item = 186421,
+            toggle = "cooldowns",
+
+            usable = function () return false, "NYI" end,
+            handler = function ()
+                applyBuff( "forbidden_necromancy" )
+            end,
+
+            auras = {
+                forbidden_knowledge = {
+                    id = 356029,
+                    duration = 15,
+                    max_stack = 1,
+                },
+                forbidden_necromancy = {
+                    id = 356213,
+                    duration = 32,
+                    max_stack = 1,
+                }
+            }
+        },
+
+        soleahs_secret_technique = {
+            cast = 0,
+            cooldown = 0,
+            gcd = "off",
+
+            item = 185818,
+
+            nobuff = "soleahs_secret_technique",
+
+            disabled = function ()
+                return not group, "only usable in a party/raid"
+            end,
+
+            handler = function ()
+                applyBuff( "soleahs_secret_technique" )
+            end,
+
+            auras = {
+                soleahs_secret_technique = {
+                    id = 351952,
+                    duration = 1800,
+                    max_stack = 1,
+                },
+            },
+        },
+
+        shadowed_orb_of_torment = {
+            cast = 2,
+            channeled = true,
+            cooldown = 120,
+            gcd = "spell",
+            
+            toggle = "cooldowns",
+            item = 186428,
+
+            handler = function ()
+                applyBuff( "tormented_insight" )
+            end,
+
+            auras = {
+                tormented_insight = {
+                    id = 356326,
+                    duration = 40,
+                    max_stack = 1,
+                },
+            },
+        },
+
+        relic_of_the_frozen_wastes = {
+            cast = 0,
+            cooldown = 60,
+            gcd = "off",
+
+            item = 186437,
+
+            handler = function ()
+                -- ???
+            end,
+
+            auras = {
+                frozen_heart = {
+                    id = 355759,
+                    duration = 30,
+                    max_stack = 1,
+                },
+            }
+        },
+
+        tome_of_monstrous_constructions = {
+            cast = 2,
+            cooldown = 60,
+            gcd = "spell",
+
+            item = 186422,
+
+            nobuff = "studious_comprehension",
+            usable = function () return buff.studious_comprehension.down, "not usable if studious_comprehension already buffed" end,
+            essential = true,
+
+            handler = function ()
+                applyBuff( "studious_comprehension" )
+            end,
+
+            copy = 353692,
+
+            auras = {
+                studious_comprehension = {
+                    id = 357163,
+                    duration = 3600,
+                    max_stack = 1,
+                    shared = "player"
+                },
+            }
+        },
+
+        shard_of_annhyldes_aegis = {
+            cast = 0,
+            cooldown = 90,
+            gcd = "off",
+
+            item = 186424,
+            toggle = "defensives",
+
+            handler = function ()
+                applyBuff( "annhyldes_aegis" )
+            end,
+
+            auras = {
+                annhyldes_aegis = {
+                    id = 358712,
+                    duration = 8,
+                    max_stack = 1,
+                },
+            },
+        },
+
+        salvaged_fusion_amplifier = {
+            cast = 0,
+            cooldown = 90,
+            gcd = "off",
+
+            item = 186432,
+            toggle = "cooldowns",
+
+            handler = function ()
+                applyBuff( "salvaged_fusion_amplifier" )
+            end,
+
+            auras = {
+                salvaged_fusion_amplifier = {
+                    id = 355333,
+                    duration = 20,
+                    max_stack = 1,
+                },
+            },
+        },
+
+        ebonsoul_vice = {
+            cast = 0,
+            cooldown = 90,
+            gcd = "off",
+
+            item = 186431,
+            toggle = "cooldowns",
+
+            handler = function ()
+                applyDebuff( "target", "ebonsoul_vise" )
+            end,
+
+            copy = "ebonsoul_vise",
+
+            auras = {
+                ebonsoul_vice = {
+                    id = 355327,
+                    duration = 12,
+                    max_stack = 1,
+                    copy = "ebonsoul_vise"
+                },
+                -- Shredded Soul implemented above.
+            }
+        },
+
+        iron_maidens_toolkit = {
+            cast = 0,
+            cooldown = 150,
+            gcd = "off",
+            
+            item = 185902,
+            toggle = "cooldowns",
+
+            handler = function ()
+                applyBuff( "iron_spikes" )
+            end,
+
+            auras = {
+                iron_spikes = {
+                    id = 351872,
+                    duration = 120,
+                    max_stack = 1,
+                },
+            },
+        },
+
+        unchained_gladiators_shackles = {
+            cast = 1,
+            cooldown = 0,
+            gcd = "spell",
+
+            item = 186980,
+            toggle = "interrupts",
+
+            handler = function ()
+                applyDebuff( "target", "shackles_of_malediction" )
+            end,
+
+            auras = {
+                shackles_of_malediction = {
+                    id = 356567,
+                    duration = 4,
+                    max_stack = 1,
+                },
+            },
+        },
+    } )
+
+
+    -- Patch 9.1 Item Buffs
+    all:RegisterAuras( {
+        banshees_blight = {
+            id = 357595,
+            duration = 3600,
+            max_stack = 4,
+        },
+
+        sadistic_glee = {
+            id = 353466,
+            duration = 6,
+            max_stack = 1,
+        },
+
+        preternatural_charge = {
+            id = 351531,
+            duration = 3600,
+            max_stack = 5
+        },
+
+        passable_credentials = {
+            id = 352091,
+            duration = 15,
+            max_stack = 1,
+        },
+
+        fraudulent_credentials = {
+            id = 351987,
+            duration = 15,
+            max_stack = 1,
+        },
+
+        worthy = {
+            id = 355794,
+            duration = 3600,
+            max_stack = 1,
+        },
+
+        unworthy = {
+            id = 355951,
+            duration = 3600,
+            max_stack = 1,
+        },
+
+        -- Active Rune Word:  Blood
+        rune_word_blood = {
+            id = 359420,
+            duration = 3600,
+            max_stack = 1,
+        },
+
+        -- Active Rune Word:  Frost
+        rune_word_frost = {
+            id = 355724,
+            duration = 3600,
+            max_stack = 1,
+        },
+
+        -- Active Rune Word:  Unholy
+        rune_word_unholy = {
+            id = 359435,
+            duration = 3600,
+            max_stack = 1,
+        },
+
+        -- Unholy Domination Shard Set
+        soul_fragment = {
+            id = 356042,
+            duration = 30,
+            max_stack = 15,
+        },
+
+        chaos_bane = {
+            id = 356043,
+            duration = 15,
+            max_stack = 1,
+        },
+        -- End Unholy Domination Shard Set
+
+        undying_rage = {
+            id = 356490,
+            duration = 3600,
+            max_stack = 5,
+        },
+
+        decanted_warsong = {
+            id = 356687,
+            duration = 15,
+            max_stack = 1,
+        },
+
+        strength_in_fealty = {
+            id = 357185,
+            duration = 20,
+            max_stack = 1,
+        },
+
+        first_class_delivery = {
+            id = 352274,
+            duration = 9,
+            max_stack = 1,
+        },
+
+        winds_of_winter = {
+            id = 355735,
+            duration = 20,
+            max_stack = 1,
+        },
+
+        blood_link = {
+            id = 355804,
+            duration = 60,
+            max_stack = 1,
+        },
+
+        reactive_defense_matrix = {
+            id = 356813,
+            duration = 10,
+            max_stack = 1,
+        },
+
+        excruciating_twinge = {
+            id = 356181,
+            duration = 15,
+            max_stack = 1,
+        },
+
+        shredded_soul = {
+            id = 357785,
+            duration = 20,
+            max_stack = 1,
+        },
+
+        --[[ ??? Codex of the First Technique (Proc)
+        first_technique = {
+
+        }, ]]
+
+        volatile_satchel = {
+            id = 351682,
+            duration = 15,
+            max_stack = 3,
+        },
+
+        torturous_might = {
+            id = 357673,
+            duration = 15,
+            max_stack = 1,
+        },
+
+        spark_of_insight = {
+            id = 355044,
+            duration = 20,
+            max_stack = 1,
+        },
+
+        piercing_quill = {
+            id = 355087,
+            duration = 4,
+            max_stack = 1,
         },
     } )
 end

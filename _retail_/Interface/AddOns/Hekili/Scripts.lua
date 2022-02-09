@@ -453,6 +453,11 @@ do
         { "^!?variable%.([a-z0-9_]+)<=?(.-)$",
                                                     "safenum(variable.%1)-%2" },
 
+        { "^raid_events%.([a-z0-9_]+)%.remains$",   "raid_events.%1.remains" },
+        { "^raid_events%.([a-z0-9_]+)%.remains$<=?(.-)$",
+                                                    "raid_events.%1.remains-%2" },
+        { "^!?raid_events%.([a-z0-9_]+)%.up$",      "raid_events.%1.up" },
+
         { "^!?(pet%.[a-z0-9_]+)%.up$",              "%1.remains" },
         { "^!?(pet%.[a-z0-9_]+)%.active$",          "%1.remains" },
     }
@@ -1485,7 +1490,7 @@ function scripts:LoadScripts()
                             end
                         end
 
-                        if ability.item and data.enabled then
+                        if ( ability.item or data.action == "trinket1" or data.action == "trinket2" ) and data.enabled then
                             self.PackInfo[ pack ].items[ data.action ] = true
                         end
 
@@ -1522,12 +1527,15 @@ function Hekili:IsEssenceScripted( token )
 end
 
 
-function Hekili:IsItemScripted( token )
+function Hekili:IsItemScripted( token, specific )
     local pack = Hekili:GetActivePack()
     if not pack then return false end
     if not self.Scripts.PackInfo[ pack ] then return false end
 
-    return self.Scripts.PackInfo[ pack ].items[ token ] or false
+    if self.Scripts.PackInfo[ pack ].items[ token ] then return true end
+    if not specific and ( ( state.trinket.t1.is[ token ] and self.Scripts.PackInfo[ pack ].items.trinket1 ) or ( state.trinket.t2.is[ token ] and self.Scripts.PackInfo[ pack ].items.trinket2 ) ) then return true end
+    
+    return false
 end
 
 
@@ -1733,7 +1741,7 @@ do
     local troubleshootingSnapshotTimes = false
 
     function scripts:GetConditionsAndValues( scriptID, listName, actID, recheck )
-        if troubleshootingSnapshotTimes then return "[no data]" end
+        if troubleshootingSnapshotTimes or not Hekili.ActiveDebug then return "[no data]" end
 
         if listName and actID then
             scriptID = scriptID .. ":" .. listName .. ":" .. actID

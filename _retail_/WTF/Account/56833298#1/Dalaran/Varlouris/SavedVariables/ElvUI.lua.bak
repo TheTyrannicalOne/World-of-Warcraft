@@ -1,5 +1,15 @@
 
 ElvCharacterDB = {
+	["ConvertKeybindings"] = true,
+	["CliqueDatatext"] = {
+	},
+	["ChatEditHistory"] = {
+		"/omen toggle", -- [1]
+		"/cw Stocklock-Azuremyst ok np", -- [2]
+		"/allthethings", -- [3]
+		"/skada toggle", -- [4]
+		"/dance", -- [5]
+	},
 	["ChatHistoryLog"] = {
 		{
 			"Is that not over ? ", -- [1]
@@ -2179,15 +2189,5 @@ ElvCharacterDB = {
 			[51] = 1637293266,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
-	},
-	["ConvertKeybindings"] = true,
-	["ChatEditHistory"] = {
-		"/omen toggle", -- [1]
-		"/cw Stocklock-Azuremyst ok np", -- [2]
-		"/allthethings", -- [3]
-		"/skada toggle", -- [4]
-		"/dance", -- [5]
-	},
-	["CliqueDatatext"] = {
 	},
 }

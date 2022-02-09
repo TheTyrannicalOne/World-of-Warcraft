@@ -26,6 +26,8 @@ local mt_resource = ns.metatables.mt_resource
 local GetSpellDescription, GetSpellTexture = _G.GetSpellDescription, _G.GetSpellTexture
 local GetSpecialization, GetSpecializationInfo = _G.GetSpecialization, _G.GetSpecializationInfo
 
+local Casting = _G.SPELL_CASTING or "Casting"
+
 
 local specTemplate = {
     enabled = false,
@@ -389,13 +391,16 @@ local HekiliSpecMixin = {
             end
         end
 
-        Hekili:ContinueOnItemLoad( data.item, function ()
-            local name, link = GetItemInfo( data.item )
+        Hekili:ContinueOnItemLoad( data.item, function( success )
+            if success then
+                local name, link = GetItemInfo( data.item )
 
-            data.name = name
-            data.link = link
+                data.name = name
+                data.link = link
 
-            class.potionList[ potion ] = link
+                class.potionList[ potion ] = link
+                return true
+            end
         end )
     end,
 
@@ -430,7 +435,7 @@ local HekiliSpecMixin = {
                 if k == "lastCast" then return state.history.casts[ t.key ] or t.realCast end
                 if k == "lastUnit" then return state.history.units[ t.key ] or t.realUnit end
                 return
-            end
+            end,
         } )
 
         a.key = ability
@@ -449,117 +454,6 @@ local HekiliSpecMixin = {
         if item and type( item ) == 'function' then
             setfenv( item, state )
             item = item()
-        end
-
-        if item then
-            local name, link, _, _, _, _, _, _, _, texture = GetItemInfo( item )
-
-            a.name = name or ability
-            a.link = link or ability
-
-            class.itemMap[ item ] = ability
-
-            Hekili:ContinueOnItemLoad( item, function( success )
-                if not success then
-                    -- Assume the item is not presently in-game.
-                    for key, entry in pairs( class.abilities ) do
-                        if a == entry then
-                            class.abilities[ key ] = nil
-                            class.abilityList[ key ] = nil
-                            class.abilityByName[ key ] = nil
-                            class.itemList[ key ] = nil
-
-                            self.abilities[ key ] = nil
-                        end
-                    end
-
-                    return
-                end
-
-                local name, link, _, _, _, _, _, _, slot, texture = GetItemInfo( item )
-
-                if name then
-                    a.name = name
-                    a.link = link
-                    a.texture = texture
-
-                    if a.suffix then
-                        a.actualName = name
-                        a.name = a.name .. " " .. a.suffix
-                    end
-
-                    self.abilities[ ability ] = self.abilities[ ability ] or a
-                    self.abilities[ a.name ] = self.abilities[ a.name ] or a
-                    self.abilities[ a.link ] = self.abilities[ a.link ] or a
-                    self.abilities[ data.id ] = self.abilities[ a.link ] or a
-
-                    a.itemLoaded = GetTime()
-
-                    if a.item and a.item ~= 158075 then
-                        a.itemSpellName, a.itemSpellID = GetItemSpell( a.item )
-
-                        if a.itemSpellName == a.name then
-                            a.itemSpellKey = a.key .. "_" .. a.itemSpellID
-                            self.abilities[ a.itemSpellKey ] = a
-                            class.abilities[ a.itemSpellKey ] = a
-
-                        elseif a.itemSpellName then
-                            local itemAura = self.auras[ a.itemSpellName ]
-
-                            if itemAura then
-                                a.itemSpellKey = itemAura.key .. "_" .. a.itemSpellID
-                                self.abilities[ a.itemSpellKey ] = a
-                                class.abilities[ a.itemSpellKey ] = a
-                                
-                            else
-                                if self.pendingItemSpells[ a.itemSpellName ] then
-                                    if type( self.pendingItemSpells[ a.itemSpellName ] ) == 'table' then
-                                        table.insert( self.pendingItemSpells[ a.itemSpellName ], ability )
-                                    else
-                                        local first = self.pendingItemSpells[ a.itemSpellName ]
-                                        self.pendingItemSpells[ a.itemSpellName ] = {
-                                            first,
-                                            ability
-                                        }
-                                    end
-                                else
-                                    self.pendingItemSpells[ a.itemSpellName ] = ability
-                                    a.itemPended = GetTime()
-                                end
-                            end
-                        end
-                    end
-
-                    if not a.unlisted then
-                        class.abilityList[ ability ] = "|T" .. ( a.texture or texture ) .. ":0|t " .. link
-                        class.itemList[ item ] = "|T" .. a.texture .. ":0|t " .. link
-
-                        class.abilityByName[ a.name ] = a
-                    end
-
-                    if data.copy then
-                        if type( data.copy ) == 'string' or type( data.copy ) == 'number' then
-                            self.abilities[ data.copy ] = a
-                        elseif type( data.copy ) == 'table' then
-                            for _, key in ipairs( data.copy ) do
-                                self.abilities[ key ] = a
-                            end
-                        end
-                    end
-
-                    class.abilities[ ability ] = a
-                    class.abilities[ a.name ] = a
-                    class.abilities[ a.link ] = a
-                    class.abilities[ a.id ] = a
-
-                    if not a.key then Hekili:Error( "Wanted to EmbedItemOption but no key for " .. ( a.id or "UNKNOWN" ) .. "." )
-                    else Hekili:EmbedItemOption( nil, a.key ) end
-
-                    return true
-                end
-
-                return false
-            end )
         end
 
         if data.meta then
@@ -603,6 +497,147 @@ local HekiliSpecMixin = {
         end
 
         a.realCast = 0
+
+        if item then
+            local name, link, _, _, _, _, _, _, _, texture = GetItemInfo( item )
+
+            a.name = name or ability
+            a.link = link or ability
+
+            class.itemMap[ item ] = ability
+
+            -- Register the item if it doesn't already exist.
+            class.specs[0]:RegisterGear( ability, item )
+
+            Hekili:ContinueOnItemLoad( item, function( success )
+                if not success then
+                    -- Assume the item is not presently in-game.
+                    for key, entry in pairs( class.abilities ) do
+                        if a == entry then
+                            class.abilities[ key ] = nil
+                            class.abilityList[ key ] = nil
+                            class.abilityByName[ key ] = nil
+                            class.itemList[ key ] = nil
+
+                            self.abilities[ key ] = nil
+                        end
+                    end
+
+                    return
+                end
+
+                local name, link, _, _, _, _, _, _, slot, texture = GetItemInfo( item )
+
+                if name then
+                    a.name = ( a.name ~= a.key and a.name ) or name
+                    a.link = a.link or link
+                    a.texture = a.texture or texture
+
+                    if a.suffix then
+                        a.actualName = name
+                        a.name = a.name .. " " .. a.suffix
+                    end
+
+                    self.abilities[ ability ] = self.abilities[ ability ] or a
+                    self.abilities[ a.name ] = self.abilities[ a.name ] or a
+                    self.abilities[ a.link ] = self.abilities[ a.link ] or a
+                    self.abilities[ data.id ] = self.abilities[ a.link ] or a
+
+                    a.itemLoaded = GetTime()
+
+                    if a.item and a.item ~= 158075 then
+                        a.itemSpellName, a.itemSpellID = GetItemSpell( a.item )
+
+                        if a.itemSpellID then
+                            a.itemSpellKey = a.key .. "_" .. a.itemSpellID
+                            self.abilities[ a.itemSpellKey ] = a
+                            class.abilities[ a.itemSpellKey ] = a
+                        end
+
+                        if a.itemSpellName then
+                            local itemAura = self.auras[ a.itemSpellName ]
+
+                            if itemAura then
+                                a.itemSpellKey = itemAura.key .. "_" .. a.itemSpellID
+                                self.abilities[ a.itemSpellKey ] = a
+                                class.abilities[ a.itemSpellKey ] = a
+                                
+                            else
+                                if self.pendingItemSpells[ a.itemSpellName ] then
+                                    if type( self.pendingItemSpells[ a.itemSpellName ] ) == 'table' then
+                                        table.insert( self.pendingItemSpells[ a.itemSpellName ], ability )
+                                    else
+                                        local first = self.pendingItemSpells[ a.itemSpellName ]
+                                        self.pendingItemSpells[ a.itemSpellName ] = {
+                                            first,
+                                            ability
+                                        }
+                                    end
+                                else
+                                    self.pendingItemSpells[ a.itemSpellName ] = ability
+                                    a.itemPended = GetTime()
+                                end
+                            end
+                        end
+                    end
+
+                    if not a.unlisted then
+                        class.abilityList[ ability ] = "|T" .. ( a.texture or texture ) .. ":0|t " .. link
+                        class.itemList[ item ] = "|T" .. a.texture .. ":0|t " .. link
+
+                        class.abilityByName[ a.name ] = a
+                    end
+
+                    if data.copy then
+                        if type( data.copy ) == 'string' or type( data.copy ) == 'number' then
+                            self.abilities[ data.copy ] = a
+                        elseif type( data.copy ) == 'table' then
+                            for _, key in ipairs( data.copy ) do
+                                self.abilities[ key ] = a
+                            end
+                        end
+                    end
+
+                    if data.items then
+                        local addedToItemList = false
+
+                        for _, id in ipairs( data.items ) do                            
+                            Hekili:ContinueOnItemLoad( id, function( success )
+                                if not success then return end
+
+                                local name, link, _, _, _, _, _, _, slot, texture = GetItemInfo( id )
+
+                                if name then
+                                    class.abilities[ name ] = a
+                                    self.abilities[ name ]  = a
+                                    
+                                    if not class.itemList[ id ] then
+                                        class.itemList[ id ] = "|T" .. ( a.texture or texture ) .. ":0|t " .. link
+                                        addedToItemList = true
+                                    end
+                                end
+                            end )
+                        end
+
+                        if addedToItemList then
+                            ns.ReadKeybindings()
+                        end
+                    end
+
+                    if ability then class.abilities[ ability ] = a end
+                    if a.name  then class.abilities[ a.name ]  = a end
+                    if a.link  then class.abilities[ a.link ]  = a end
+                    if a.id    then class.abilities[ a.id ]    = a end
+
+                    if not a.key then Hekili:Error( "Wanted to EmbedItemOption but no key for " .. ( a.id or "UNKNOWN" ) .. "." )
+                    else Hekili:EmbedItemOption( nil, a.key ) end
+
+                    return true
+                end
+
+                return false
+            end )
+        end
 
         if a.id and a.id > 0 then
             Hekili:ContinueOnSpellLoad( a.id, function( success )
@@ -999,6 +1034,13 @@ all:RegisterAuras( {
         max_stack = 1,
     },
 
+    drums_of_deathly_ferocity = {
+        id = 309658,
+        shared = "player", -- use anyone's buff on the player, not just player's.
+        duration = 40,
+        max_stack = 1,
+    },
+
     bloodlust = {
         id = 2825,
         duration = 40,
@@ -1009,6 +1051,7 @@ all:RegisterAuras( {
                 [80353] = 'time_warp',
                 [160452] = 'netherwinds',
                 [264667] = 'primal_rage',
+                [309658] = 'drums_of_deathly_ferocity',
             }
 
             for id, key in pairs( bloodlusts ) do
@@ -1105,6 +1148,12 @@ all:RegisterAuras( {
             t.applied = 0
             t.caster = 'nobody'
         end,
+    },
+
+    power_infusion = {
+        id = 10060,
+        duration = 20,
+        max_stack = 1
     },
 
     old_war = {
@@ -1213,7 +1262,6 @@ all:RegisterAuras( {
 
     casting = {
         name = "Casting",
-        strictTiming = true,
         generate = function( t, auraType )
             local unit = auraType == "debuff" and "target" or "player"
 
@@ -1230,8 +1278,8 @@ all:RegisterAuras( {
                     t.applied = startCast
                     t.duration = endCast - startCast
                     t.v1 = spellID
-                    t.v2 = notInterruptible
-                    t.v3 = false
+                    t.v2 = notInterruptible and 1 or 0
+                    t.v3 = 0
                     t.caster = unit
 
                     return
@@ -1249,8 +1297,8 @@ all:RegisterAuras( {
                     t.applied = startCast
                     t.duration = endCast - startCast
                     t.v1 = spellID
-                    t.v2 = notInterruptible
-                    t.v3 = true -- channeled.
+                    t.v2 = notInterruptible and 1 or 0
+                    t.v3 = 1 -- channeled.
                     t.caster = unit
 
                     return
@@ -1262,8 +1310,8 @@ all:RegisterAuras( {
             t.expires = 0
             t.applied = 0
             t.v1 = 0
-            t.v2 = false
-            t.v3 = false
+            t.v2 = 0
+            t.v3 = 0
             t.caster = unit
         end,
     },
@@ -1304,7 +1352,6 @@ all:RegisterAuras( {
             aura.v1 = 0
             aura.caster = 'target'
         end,
-        strictTiming = true,
     }, ]]
 
     movement = {
@@ -2040,6 +2087,25 @@ all:RegisterAbilities( {
         gcd = "spell",
 
         toggle = "cooldowns",
+    },
+
+    haymaker = {
+        id = 287712,
+        cast = 1,
+        cooldown = 150,
+        gcd = "spell",
+
+        handler = function ()
+            if not target.is_boss then applyDebuff( "target", "haymaker" ) end
+        end,
+
+        auras = {
+            haymaker = {
+                id = 287712,
+                duration = 3,
+                max_stack = 1,
+            },
+        }
     }
 } )
 
@@ -2370,6 +2436,17 @@ do
         usable = function () return false, "your equipped major essence is supported elsewhere in the priority or is not an active ability" end
     } )
 end
+
+
+-- x.x - Heirloom Trinket(s)
+all:RegisterAbility( "touch_of_the_void", {
+    cast = 0,
+    cooldown = 120,
+    gcd = "off",
+
+    item = 128318,
+    toggle = "cooldowns",
+} )
 
 
 -- 8.3 - WORLD
@@ -4138,6 +4215,8 @@ do
         { "corrupted_gladiators_medallion", 184055 },
         { "sinful_aspirants_medallion", 184052 },
         { "sinful_gladiators_medallion", 181333 },
+        { "unchained_aspirants_medallion", 185309 },
+        { "unchained_gladiators_medallion", 185304 },
     }
 
     local pvp_medallions_copy = {}
@@ -4161,7 +4240,7 @@ do
             end            
             return m
         end,
-        items = { 162897, 161674, 165220, 165055, 167525, 167525, 167377, 172666, 184058, 184055, 184052, 181333 },
+        items = { 162897, 161674, 165220, 165055, 167525, 167525, 167377, 172666, 184058, 184055, 184052, 181333, 185309, 185304 },
         toggle = "defensives",
 
         usable = function () return debuff.loss_of_control.up, "requires loss of control effect" end,
@@ -4193,6 +4272,8 @@ do
         { "corrupted_gladiators_badge", 172669 },
         { "sinful_aspirants_badge_of_ferocity", 175884 },
         { "sinful_gladiators_badge_of_ferocity", 175921 },
+        { "unchained_aspirants_badge_of_ferocity", 185161 },
+        { "unchained_gladiators_badge_of_ferocity", 185197 },
     }
 
     local pvp_badges_copy = {}
@@ -4204,22 +4285,28 @@ do
     end
 
     all:RegisterAbility( "gladiators_badge", {
+        name = "|cff00ccff[Gladiator's Badge]|r",
         cast = 0,
         cooldown = 120,
         gcd = "off",
 
+        items = { 162966, 161902, 165223, 165058, 167528, 167528, 167380, 172849, 172669, 175884, 175921, 185161, 185197 },
+        texture = 135884,
+            
+        toggle = "cooldowns",
         item = function ()
             local b
-            for _, badge in ipairs( pvp_badges ) do
-                b = badge[ 2 ]
-                if equipped[ b ] then return b end
+
+            for i = #pvp_badges, 1, -1 do
+                b = pvp_badges[ i ][ 2 ]
+                if equipped[ b ] then
+                    break
+                end
             end
             return b
         end,
-        items = { 162966, 161902, 165223, 165058, 167528, 167528, 167380, 172849, 172669, 175884, 175921 },
-            
-        toggle = "cooldowns",
 
+        usable = function () return set_bonus.gladiators_badge > 0, "requires Gladiator's Badge" end,
         handler = function ()
             applyBuff( "gladiators_badge" )
         end,
@@ -4239,7 +4326,8 @@ end
 all:RegisterAura( "gladiators_insignia", {
     id = 277181,
     duration = 20,
-    max_stack = 1
+    max_stack = 1,
+    copy = 345230
 } )    
 
 
@@ -4254,7 +4342,7 @@ all:RegisterAura( "gladiators_safeguard", {
 -- Emblems
 do
     local pvp_emblems = {
-        dread_combatants_emblem = 161812,
+        -- dread_combatants_emblem = 161812,
         dread_aspirants_emblem = 162898,
         dread_gladiators_emblem = 161675,
         sinister_aspirants_emblem = 165221,
@@ -4265,6 +4353,9 @@ do
         corrupted_aspirants_emblem = 172847,
         sinful_aspirants_emblem = 178334,
         sinful_gladiators_emblem = 178447,
+        unchained_aspirants_emblem = 185242,
+        unchained_gladiators_emblem = 185282,
+
     }
 
     local pvp_emblems_copy = {}
@@ -4289,7 +4380,7 @@ do
             end
             return e
         end,
-        items = { 161812, 162898, 161675, 165221, 165056, 167378, 167526, 172667, 172847, 178334, 178447 },
+        items = { 162898, 161675, 165221, 165056, 167378, 167526, 172667, 172847, 178334, 178447, 185242, 185282 },
         toggle = "cooldowns",
 
         handler = function ()
@@ -5309,6 +5400,7 @@ end
 
 
 local optionsInitialized = false
+local seen = {}
 function Hekili:SpecializationChanged()
     local currentSpec = GetSpecialization()
     local currentID = GetSpecializationInfo( currentSpec )
@@ -5580,6 +5672,39 @@ function Hekili:SpecializationChanged()
     if not self:ScriptsLoaded() then self:LoadScripts() end
 
     Hekili:UpdateDamageDetectionForCLEU()
+
+    -- Use tooltip to detect Mage Tower.
+    local tooltip = ns.Tooltip
+    tooltip:SetOwner( UIParent, "ANCHOR_NONE" )
+
+    wipe( seen )
+
+    for k, v in pairs( class.abilities ) do
+        if not seen[ v ] then
+            if v.id > 0 then
+                local disable
+                tooltip:SetSpellByID( v.id )
+
+                for i = tooltip:NumLines(), 5, -1 do
+                    local label = tooltip:GetName() .. "TextLeft" .. i
+                    local line = _G[ label ]
+                    if line then
+                        local text = line:GetText()
+                        if text == _G.TOOLTIP_NOT_IN_MAGE_TOWER then
+                            disable = true
+                            break
+                        end
+                    end
+                end
+
+                v.disabled = disable
+            end
+
+            seen[ v ] = true
+        end
+    end
+
+    tooltip:Hide()    
 end
 
 
@@ -5592,15 +5717,16 @@ ns.specializationChanged = function()
     Hekili:SpecializationChanged()
 end
 
+do
+    RegisterEvent( "PLAYER_ENTERING_WORLD", function( event )
+        local currentSpec = GetSpecialization()
+        local currentID = GetSpecializationInfo( currentSpec )
 
-RegisterEvent( "PLAYER_ENTERING_WORLD", function( event )
-    local currentSpec = GetSpecialization()
-    local currentID = GetSpecializationInfo( currentSpec )
-
-    if currentID ~= state.spec.id then
-        Hekili:SpecializationChanged()
-    end
-end )
+        if currentID ~= state.spec.id then
+            Hekili:SpecializationChanged()
+        end
+    end )
+end
 
 
 function Hekili:IsValidSpec()

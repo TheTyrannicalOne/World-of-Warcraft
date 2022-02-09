@@ -1,5 +1,14 @@
 
 ElvCharacterDB = {
+	["ConvertKeybindings"] = true,
+	["CliqueDatatext"] = {
+	},
+	["ChatEditHistory"] = {
+		"/opie", -- [1]
+		"/allthethings", -- [2]
+		"/dance", -- [3]
+		"/wa", -- [4]
+	},
 	["ChatHistoryLog"] = {
 		{
 			"i'll disembowel her in front of you and you will only be able to see my blood stained smile on my decaying flesh that used to be my mouth but is now only sharp jagged teeth", -- [1]
@@ -2179,14 +2188,5 @@ ElvCharacterDB = {
 			[51] = 1638119309,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
-	},
-	["ConvertKeybindings"] = true,
-	["ChatEditHistory"] = {
-		"/allthethings", -- [1]
-		"/wa", -- [2]
-		"/dance", -- [3]
-		"/opie", -- [4]
-	},
-	["CliqueDatatext"] = {
 	},
 }

@@ -7,12 +7,6 @@ QuestTogether = {
 				"0/4 Echo of Time", -- [1]
 			},
 		},
-		[43179] = {
-			["title"] = "The Kirin Tor of Dalaran",
-			["objectives"] = {
-				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
-			},
-		},
 		[56352] = {
 			["title"] = "The Eternal Palace: We Can Make It Stronger...",
 			["objectives"] = {
@@ -27,10 +21,10 @@ QuestTogether = {
 				"1/1 Runecarver Memory Restored", -- [3]
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
+		[47727] = {
+			["title"] = "Tomb of Sargeras: Aegwynn's Path",
 			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+				"3/4 Fragment of the Guardian's Seal", -- [1]
 			},
 		},
 		[59701] = {
@@ -39,10 +33,15 @@ QuestTogether = {
 				"0/4 Renathal Banner placed", -- [1]
 			},
 		},
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
+			["objectives"] = {
+			},
+		},
 		[61981] = {
 			["title"] = "Replenish the Reservoir",
 			["objectives"] = {
-				"0/1000 Anima sources", -- [1]
+				"425/1000 Anima sources", -- [1]
 			},
 		},
 		[49133] = {
@@ -62,12 +61,6 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[48639] = {
-			["title"] = "Army of the Light",
-			["objectives"] = {
-				"0/4 Complete 4 Army of the Light World Quests", -- [1]
-			},
-		},
 		[47129] = {
 			["title"] = "Tomb of Sargeras: The Deceiver",
 			["objectives"] = {
@@ -81,10 +74,10 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[50598] = {
-			["title"] = "Zandalari Empire",
+		[63576] = {
+			["title"] = "The First Move",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
+				"0/1 Speak with Polemarch Adrestes in Oribos", -- [1]
 			},
 		},
 		[53435] = {
@@ -99,16 +92,22 @@ QuestTogether = {
 				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
+		[50606] = {
+			["title"] = "Horde War Effort",
+			["objectives"] = {
+				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
+			},
+		},
 		[45381] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
 				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[45383] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[42233] = {
+			["title"] = "Highmountain Tribes",
 			["objectives"] = {
-				"2/4 Echo of Time", -- [1]
+				"0/4 Complete 4 world quests in Highmountain.", -- [1]
 			},
 		},
 		[44948] = {
@@ -123,20 +122,22 @@ QuestTogether = {
 				"Portal to Transfer Station Ta taken", -- [1]
 			},
 		},
-		[60460] = {
-			["title"] = "Anima Salvage",
-			["objectives"] = {
-				"0/150 Gather Anima Embers from Torghast", -- [1]
-			},
-		},
-		[57564] = {
-			["title"] = "Mantid Assault Tracker",
+		[57562] = {
+			["title"] = "Amathet Assault Tracker",
 			["objectives"] = {
 			},
 		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
+		[60399] = {
+			["title"] = "Aiding Revendreth",
 			["objectives"] = {
+				"0/3 Complete 3 World Quests in Revendreth", -- [1]
+			},
+		},
+		[48305] = {
+			["title"] = "The Burning Coven",
+			["objectives"] = {
+				"Defeat the Coven of Shivarra in the Antorus, The Burning Throne", -- [1]
+				"1/1 Sargerei Manifesto", -- [2]
 			},
 		},
 		[24756] = {
@@ -155,21 +156,40 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[54455] = {
-			["title"] = "Supplies from the Honorbound",
-			["objectives"] = {
-			},
-		},
-		[47727] = {
-			["title"] = "Tomb of Sargeras: Aegwynn's Path",
-			["objectives"] = {
-				"3/4 Fragment of the Guardian's Seal", -- [1]
-			},
-		},
 		[40329] = {
 			["title"] = "Battle Pet Tamers: Warlords",
 			["objectives"] = {
 				"2/5 Pet Battlemasters Defeated", -- [1]
+			},
+		},
+		[57462] = {
+			["title"] = "Dream Catcher",
+			["objectives"] = {
+				"28/200 Shred of Insanity", -- [1]
+			},
+		},
+		[60417] = {
+			["title"] = "Rare Resources",
+			["objectives"] = {
+				"0/3 Coin of Brokerage", -- [1]
+			},
+		},
+		[57919] = {
+			["title"] = "An Abuse of Power",
+			["objectives"] = {
+				"0/1 Abused Soul subjugated", -- [1]
+			},
+		},
+		[59661] = {
+			["title"] = "Ember Court Rehearsal",
+			["objectives"] = {
+				"0/1 Speak with Temel to start the rehearsal", -- [1]
+			},
+		},
+		[60422] = {
+			["title"] = "A Call to Ardenweald",
+			["objectives"] = {
+				"0% Ardenweald Defended (0%)", -- [1]
 			},
 		},
 		[61492] = {
@@ -184,11 +204,10 @@ QuestTogether = {
 				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
 			},
 		},
-		[48305] = {
-			["title"] = "The Burning Coven",
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"Defeat the Coven of Shivarra in the Antorus, The Burning Throne", -- [1]
-				"1/1 Sargerei Manifesto", -- [2]
+				"2/4 Echo of Time", -- [1]
 			},
 		},
 		[57403] = {
@@ -197,16 +216,15 @@ QuestTogether = {
 				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
 			},
 		},
-		[63576] = {
-			["title"] = "The First Move",
+		[54455] = {
+			["title"] = "Supplies from the Honorbound",
 			["objectives"] = {
-				"0/1 Speak with Polemarch Adrestes in Oribos", -- [1]
 			},
 		},
-		[57462] = {
-			["title"] = "Dream Catcher",
+		[50603] = {
+			["title"] = "Voldunai",
 			["objectives"] = {
-				"28/200 Shred of Insanity", -- [1]
+				"0/4 Complete 4 world quests in Vol'dun", -- [1]
 			},
 		},
 		[30567] = {
@@ -221,17 +239,17 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[57919] = {
-			["title"] = "An Abuse of Power",
+		[42422] = {
+			["title"] = "The Wardens",
 			["objectives"] = {
-				"0/1 Abused Soul subjugated", -- [1]
+				"0/4 Complete 4 Wardens World Quests", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

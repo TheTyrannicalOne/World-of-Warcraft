@@ -8,6 +8,7 @@ local class = Hekili.Class
 local state = Hekili.State
 
 local FindUnitBuffByID = ns.FindUnitBuffByID
+local FindUnitDebuffByID = ns.FindUnitDebuffByID
 
 local targetCount = 0
 local targets = {}
@@ -80,8 +81,11 @@ do
 
         WARLOCK = {
             [6360]  = true, -- Whiplash (Succubus)
+            [54049] = true, -- Shadow Bite (Felhunter)
+            [7814]  = true, -- Lash of Pain (Succubus)
+            [30213] = true, -- Legion Strike (Felguard)
 
-            count   = 1
+            count   = 4
         }
     }
 
@@ -101,13 +105,13 @@ do
         return petAction > 0 and petAction or nil
     end
 
-    function Hekili:PetBasedTargetDetectionIsReady()
+    function Hekili:PetBasedTargetDetectionIsReady( skipRange )
         if petSlot == 0 then return false, "Pet action not found in player action bars." end
         if not UnitExists( "pet" ) then return false, "No active pet." end
         if UnitIsDead( "pet" ) then return false, "Pet is dead." end
     
         -- If we have a target and the target is out of our pet's range, don't use pet detection.
-        if UnitExists( "target" ) and not IsActionInRange( petSlot, "target" ) then return false, "Player has target and player's target not in range of pet." end
+        if not skipRange and UnitExists( "target" ) and not IsActionInRange( petSlot, "target" ) then return false, "Player has target and player's target not in range of pet." end
         return true
     end
 
@@ -143,6 +147,10 @@ do
 end
 
 
+-- Excluding enemy by NPC ID (as string).  This keeps the enemy from being counted if they are not your target.
+-- = true           Always Exclude
+-- = number < 0     Exclude if debuff ID abs( number ) is active on unit.
+-- = number > 0     Exclude if buff ID number is active on unit.
 local enemyExclusions = {
     ["23775"]  = true,      -- Head of the Horseman
     ["120651"] = true,      -- Explosives
@@ -150,8 +158,10 @@ local enemyExclusions = {
     ["160966"] = true,      -- Thing from Beyond?
     ["161895"] = true,      -- Thing from Beyond?
     ["157452"] = true,      -- Nightmare Antigen in Carapace
-    ["158041"] = 310126,    -- N'Zoth with Psychic Shell,
+    ["158041"] = 310126,    -- N'Zoth with Psychic Shell
     ["164698"] = true,      -- Tor'ghast Junk
+    ["177117"] = 355790,    -- Ner'zhul: Orb of Torment (Protected by Eternal Torment)
+    ["176581"] = true,      -- Painsmith:  Spiked Ball
 }
 
 local f = CreateFrame("Frame")
@@ -278,9 +288,14 @@ do
                         local npcid = guid:match( "(%d+)-%x-$" )
                         local excluded = enemyExclusions[ npcid ]
 
+                        -- If our table has a number, unit is ruled out only if the buff is present.
                         if excluded and type( excluded ) == "number" then
-                            -- If our table has a number, unit is ruled out only if the buff is present.
-                            excluded = FindUnitBuffByID( unit, excluded )
+                            if excluded < 0 then
+                                -- We used a negative number to indicate that it's a debuff.
+                                excluded = FindUnitDebuffByID( unit, -1 * excluded )
+                            else
+                                excluded = FindUnitBuffByID( unit, excluded )
+                            end
                         end
 
                         if not excluded and checkPets then
@@ -319,7 +334,12 @@ do
 
                             if excluded and type( excluded ) == "number" then
                                 -- If our table has a number, unit is ruled out only if the buff is present.
-                                excluded = FindUnitBuffByID( unit, excluded )
+                                if excluded < 0 then
+                                    -- We used a negative number to indicate that it's a debuff.
+                                    excluded = FindUnitDebuffByID( unit, -1 * excluded )
+                                else
+                                    excluded = FindUnitBuffByID( unit, excluded )
+                                end
                             end
 
                             if not excluded and checkPets then
@@ -355,10 +375,29 @@ do
             local db = spec and (spec.myTargetsOnly and myTargets or targets) or targets
 
             for guid, seen in pairs(db) do
-                local npcid = guid:match("(%d+)-%x-$")
-
                 if counted[ guid ] == nil then
-                    if not enemyExclusions[npcid] and ( spec.damageRange == 0 or ( not guidRanges[ guid ] or guidRanges[ guid ] <= spec.damageRange ) ) then
+                    local npcid = guid:match("(%d+)-%x-$")
+                    local excluded = enemyExclusions[ npcid ]
+
+                    -- If our table has a number, unit is ruled out only if the buff is present.
+                    if excluded and type( excluded ) == "number" then
+                        local unit = Hekili:GetUnitByGUID( guid )
+
+                        if unit then
+                            if UnitIsUnit( unit, "target" ) then
+                                excluded = false
+                            elseif excluded < 0 then
+                                -- We used a negative number to indicate that it's a debuff.
+                                excluded = FindUnitDebuffByID( unit, -1 * excluded )
+                            else
+                                excluded = FindUnitBuffByID( unit, excluded )
+                            end
+                        else
+                            excluded = false
+                        end
+                    end
+                    
+                    if not excluded and ( spec.damageRange == 0 or ( not guidRanges[ guid ] or guidRanges[ guid ] <= spec.damageRange ) ) then
                         Hekili.TargetDebug = format("%s    %-12s - %2d - %s\n", Hekili.TargetDebug, "dmg", guidRanges[ guid ] or 0, guid)
                         count = count + 1                    
                         counted[ guid ] = true
@@ -494,8 +533,8 @@ local debuffs = {}
 local debuffCount = {}
 local debuffMods = {}
 
-function ns.saveDebuffModifier(id, val)
-    debuffMods[id] = val
+function ns.saveDebuffModifier( id, val )
+    debuffMods[ id ] = val
 end
 
 ns.wipeDebuffs = function()
@@ -545,8 +584,8 @@ ns.GetDebuffApplicationTime = function( spell, target )
 end
 
 
-function ns.getModifier(id, target)
-    local debuff = debuffs[id]
+function ns.getModifier( id, target )
+    local debuff = debuffs[ id ]
     if not debuff then
         return 1
     end
@@ -920,7 +959,10 @@ do
         local time, validUnit = 0, false
 
         for k, v in pairs( db ) do
-            if v.n > 3 then
+            local npcid = k:match( "(%d+)-%x-$" )
+            local excluded = enemyExclusions[ npcid ] and k ~= UnitGUID( "target" )
+
+            if not excluded and v.n > 3 then
                 time = max( time, ceil( v.lastHealth / v.rate ) )
                 validUnit = true
             end
@@ -939,7 +981,10 @@ do
         end        
 
         for k, v in pairs(db) do
-            if v.n > 3 and v.lastHealth > percent then
+            local npcid = k:match( "(%d+)-%x-$" )
+            local excluded = enemyExclusions[ npcid ] and k ~= UnitGUID( "target" )
+
+            if not excluded and v.n > 3 and v.lastHealth > percent then
                 time = max( time, ( v.lastHealth - percent ) / v.rate )
                 validUnit = true
             end
@@ -954,7 +999,10 @@ do
         local time, validUnit = 3600, false
 
         for k, v in pairs(db) do
-            if v.n > 3 then
+            local npcid = k:match( "(%d+)-%x-$" )
+            local excluded = enemyExclusions[ npcid ] and k ~= UnitGUID( "target" )
+
+            if not excluded and v.n > 3 then
                 time = min(time, ceil(v.lastHealth / v.rate))
                 validUnit = true
             end
@@ -968,14 +1016,13 @@ do
     end
 
     function Hekili:GetNumTTDsWithin( x )
-        if x <= 3 then
-            return 1
-        end
-
         local count = 0
 
         for k, v in pairs(db) do
-            if v.n > 3 and ceil( v.lastHealth / v.rate ) <= x then
+            local npcid = k:match( "(%d+)-%x-$" )
+            local excluded = enemyExclusions[ npcid ] and k ~= UnitGUID( "target" )
+
+            if not excluded and v.n > 3 and ceil( v.lastHealth / v.rate ) <= x then
                 count = count + 1
             end
         end
@@ -988,7 +1035,10 @@ do
         local count = 0
 
         for k, v in pairs(db) do
-            if v.n > 3 and ceil( v.lastHealth / v.rate ) > x then
+            local npcid = k:match( "(%d+)-%x-$" )
+            local excluded = enemyExclusions[ npcid ] and k ~= UnitGUID( "target" )
+
+            if not excluded and v.n > 3 and ceil( v.lastHealth / v.rate ) > x then
                 count = count + 1
             end
         end
@@ -1016,7 +1066,10 @@ do
         local time = 0
 
         for k, v in pairs(db) do
-            if not bosses[k] and v.n > 0 then
+            local npcid = k:match( "(%d+)-%x-$" )
+            local excluded = enemyExclusions[ npcid ] and k ~= UnitGUID( "target" )
+
+            if not excluded and not bosses[k] and v.n > 0 then
                 time = max(time, ceil(v.lastHealth / v.rate))
             end
         end
@@ -1032,10 +1085,13 @@ do
 
         for k, v in pairs( db ) do
             local unit = ( v.unit or "unknown" ) .. ":"
+            local npcid = k:match( "(%d+)-%x-$" )
+            local excluded = enemyExclusions[ npcid ] and k ~= UnitGUID( "target" )
+
             if v.n > 3 then
-                output = output .. format( "\n    %-13s %4ds [%d] %s", unit, ceil(v.lastHealth / v.rate), v.n, UnitName( v.unit ) or "Unknown" )
+                output = output .. format( "\n    %-13s %4ds [%d] #%6s%s %s", unit, ceil(v.lastHealth / v.rate), v.n, npcid, excluded and "*" or "", UnitName( v.unit ) or "Unknown" )
             else
-                output = output .. format( "\n    %-13s TBD  [%d] %s", unit, v.n, UnitName(v.unit) or "Unknown" )
+                output = output .. format( "\n    %-13s TBD  [%d] #%6s%s %s", unit, v.n, npcid, excluded and "*" or "", UnitName(v.unit) or "Unknown" )
             end
             found = true
         end
@@ -1069,7 +1125,7 @@ do
             local guid = UnitGUID(unit)
 
             if guid and not seen[guid] then
-                if db[guid] and (not UnitExists(unit) or UnitIsDead(unit) or not UnitCanAttack("player", unit) or UnitHealth(unit) <= 1) then
+                if db[ guid ] and ( not UnitExists(unit) or UnitIsDead(unit) or not UnitCanAttack("player", unit) or ( UnitHealth(unit) <= 1 and UnitHealthMax(unit) > 1 ) ) then
                     EliminateEnemy(guid)
                 else
                     local health, healthMax = UnitHealth(unit), UnitHealthMax(unit)

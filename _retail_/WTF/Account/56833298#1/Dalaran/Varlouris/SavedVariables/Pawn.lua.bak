@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.053,
+	["LastVersion"] = 2.0532,
 	["LastPlayerFullName"] = "Varlouris-Dalaran",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
@@ -11,8 +11,8 @@ PawnOptions = {
 		}, -- [1]
 		{
 			["ID"] = 122668,
-			["Level"] = 93,
-			["Link"] = "|cff00ccff|Hitem:122668::::::::75:263:::1:5805:::|h[Eternal Will of the Martyr]|h|r",
+			["Level"] = 98,
+			["Link"] = "|cff00ccff|Hitem:122668::::::::51:263:::1:5805::::::|h[Eternal Will of the Martyr]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 183560,
@@ -64,15 +64,15 @@ PawnOptions = {
 		}, -- [12]
 		{
 			["ID"] = 122361,
-			["Level"] = 93,
+			["Level"] = 98,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::75:263:::1:5805:::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::51:263:::1:5805::::::|h[Swift Hand of Justice]|h|r",
 		}, -- [13]
 		{
 			["ID"] = 122361,
-			["Level"] = 91,
+			["Level"] = 93,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::74:263:::1:5805:::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::75:263:::1:5805:::|h[Swift Hand of Justice]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 183550,

@@ -150,6 +150,10 @@ do
             
             start = function ()
                 applyBuff( "fleshcraft" )
+                
+                if conduit.volatile_solvent.enabled then
+                    applyBuff( "volatile_solvent" )
+                end
             end,
 
             auras = {
@@ -157,25 +161,66 @@ do
                     id = 324867,
                     duration = 120,
                     max_stack = 1
-                }
+                },
+                volatile_solvent_beast = {
+                    id = 323498,
+                    duration = 120,
+                    max_stack = 1,
+                },
+                volatile_solvent_elemental = {
+                    id = 323504,
+                    duration = 120,
+                    max_stack = 1,
+                },
+                volatile_solvent_aberration = {
+                    id = 323497,
+                    duration = 120,
+                    max_stack = 1,
+                },
+                volatile_solvent_mechanical = {
+                    id = 323507,
+                    duration = 120,
+                    max_stack = 1,
+                },
+                volatile_solvent_undead = {
+                    id = 323509,
+                    duration = 120,
+                    max_stack = 1,
+                },
+                volatile_solvent_humanoid = {
+                    id = 323491,
+                    duration = 120,
+                    max_stack = 1,
+                },
+                volatile_solvent_demon = {
+                    id = 323500,
+                    duration = 120,
+                    max_stack = 1,
+                },
+                volatile_solvent_dragonkin = {
+                    id = 323502,
+                    duration = 120,
+                    max_stack = 1,
+                },
+                volatile_solvent_giant = {
+                    id = 323506,
+                    duration = 120,
+                    max_stack = 1,
+                },
+                volatile_solvent = {
+                    alias = { "volatile_solvent_beast", "volatile_solvent_elemental", "volatile_solvent_aberration", "volatile_solvent_mechanical", "volatile_solvent_undead", "volatile_solvent_humanoid", "volatile_solvent_demon", "volatile_solvent_dragonkin", "volatile_solvent_giant" },
+                    aliasMode = "longest", -- use duration info from the buff with the longest remaining time.
+                    aliasType = "buff",
+                    duration = 120,
+                },
             }
         },
     } )
 
     all:RegisterAuras( {
         echo_of_eonar = {
-            id = 338481,
-            duration = 3600,
-            max_stack = 1,
-        },
-        echo_of_eonar_debuff = {
-            id = 338494,
-            duration = 15,
-            max_stack = 1,
-        },
-        echo_of_eonar_buff = {
             id = 338489,
-            duration = 15,
+            duration = 10,
             max_stack = 1,
         },
 
@@ -204,13 +249,13 @@ do
 
         vitality_sacrifice_buff = {
             id = 338746,
-            duration = 60,
+            duration = 20,
             max_stack = 1,
         },
-        vitality_sacrifice_debuff = {
+        --[[ vitality_sacrifice_debuff = {
             id = 339131,
             duration = 60,
             max_stack = 1
-        }
+        } ]]
     } )
 end

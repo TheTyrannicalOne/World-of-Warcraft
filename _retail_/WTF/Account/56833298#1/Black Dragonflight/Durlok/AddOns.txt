@@ -31,3 +31,4 @@ LittleWigs_MistsOfPandaria: enabled
 LittleWigs_BattleForAzeroth: enabled
 ElvUI_CustomTags: disabled
 Leatrix_Plus: disabled
+LittleWigs_Classic: enabled

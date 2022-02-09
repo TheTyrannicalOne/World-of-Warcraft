@@ -23,7 +23,7 @@ ActionBarProfilesDBv3 = {
 		["Brotus - Argent Dawn"] = "SHAMAN",
 		["Shimzo - Zul'jin"] = "ROGUE",
 		["Guufnah - Zul'jin"] = "SHAMAN",
-		["Tinkster - Dalaran"] = "WARLOCK",
+		["Okona - Zul'jin"] = "PRIEST",
 		["Varlouris - Dalaran"] = "SHAMAN",
 		["Kotalkhan - Zul'jin"] = "MONK",
 		["Fantastiburo - Zul'jin"] = "SHAMAN",
@@ -38,7 +38,7 @@ ActionBarProfilesDBv3 = {
 		["Abyronterner - Zul'jin"] = "MONK",
 		["Jingojaggot - Zul'jin"] = "DEATHKNIGHT",
 		["Jasmoney - Zul'jin"] = "MAGE",
-		["Okona - Zul'jin"] = "PRIEST",
+		["Tinkster - Dalaran"] = "WARLOCK",
 		["Mandles - Zul'jin"] = "PRIEST",
 	},
 	["profiles"] = {

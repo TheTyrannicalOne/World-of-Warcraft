@@ -7,6 +7,7 @@ local Hekili = _G[ addon ]
 local class = Hekili.Class
 local state = Hekili.State
 
+local FindUnitBuffByID = ns.FindUnitBuffByID
 
 local PTR = ns.PTR
 
@@ -113,11 +114,11 @@ if UnitClassBase( 'player' ) == 'WARRIOR' then
         disarm = 3534, -- 236077
         duel = 34, -- 236273
         master_and_commander = 28, -- 235941
-        overwatch = 5376, -- 329035
         shadow_of_the_colossus = 29, -- 198807
         sharpen_blade = 33, -- 198817
         storm_of_destruction = 31, -- 236308
         war_banner = 32, -- 236320
+        warbringer = 5376, -- 356353
     } )
 
     -- Auras
@@ -313,9 +314,14 @@ if UnitClassBase( 'player' ) == 'WARRIOR' then
 
 
     local rageSpent = 0
+    local gloryRage = 0
 
     spec:RegisterStateExpr( "rage_spent", function ()
         return rageSpent
+    end )
+
+    spec:RegisterStateExpr( "glory_rage", function ()
+        return gloryRage
     end )
 
     spec:RegisterHook( "spend", function( amt, resource )
@@ -330,6 +336,14 @@ if UnitClassBase( 'player' ) == 'WARRIOR' then
                     cooldown.bladestorm.expires = cooldown.bladestorm.expires - reduction
                     cooldown.warbreaker.expires = cooldown.warbreaker.expires - reduction
                 end
+            end
+
+            if legendary.glory.enabled and buff.conquerors_banner.up then
+                glory_rage = glory_rage + amt
+                local reduction = floor( glory_rage / 20 ) * 0.5
+                glory_rage = glory_rage % 20
+
+                buff.conquerors_banner.expires = buff.conquerors_banner.expires + reduction
             end
         end
     end )
@@ -355,7 +369,11 @@ if UnitClassBase( 'player' ) == 'WARRIOR' then
             local current = UnitPower( "player", RAGE )
 
             if current < lastRage then
-                rageSpent = ( rageSpent + lastRage - current ) % 20 -- Anger Mgmt.                
+                rageSpent = ( rageSpent + lastRage - current ) % 20 -- Anger Mgmt.
+                
+                if state.legendary.glory.enabled and FindUnitBuffByID( "player", 324143 ) then
+                    gloryRage = ( gloryRage + lastRage - current ) % 20 -- Glory.
+                end
             end
 
             lastRage = current
@@ -1276,14 +1294,20 @@ if UnitClassBase( 'player' ) == 'WARRIOR' then
 
             handler = function ()
                 applyDebuff( "target", "spear_of_bastion" )
+                if legendary.elysian_might.enabled then applyBuff( "elysian_might" ) end
             end,
 
             auras = {
                 spear_of_bastion = {
                     id = 307871,
-                    duration = 4,
+                    duration = function () return legendary.elysian_might.enabled and 8 or 4 end,
                     max_stack = 1
-                }
+                },
+                elysian_might = {
+                    id = 311193,
+                    duration = 8,
+                    max_stack = 1,
+                },
             }
         },
         
@@ -1305,6 +1329,7 @@ if UnitClassBase( 'player' ) == 'WARRIOR' then
                     applyBuff( "veterans_repute" )
                     addStack( "glory", nil, 5 )
                 end
+                if soulbind.kevins_oozeling.enabled then applyBuff( "kevins_oozeling" ) end
             end,
 
             auras = {
@@ -1385,6 +1410,12 @@ if UnitClassBase( 'player' ) == 'WARRIOR' then
                     gain( 4 + floor( 0.2 * extra ), "rage" )
                 end
 
+                if legendary.sinful_surge.enabled then
+                    if state.spec.protection and buff.last_stand.up then buff.last_stand.expires = buff.last_stand.expires + 3
+                    elseif state.spec.arms and debuff.colossus_smash.up then debuff.colossus_smash.expires = debuff.colossus_smash.expires + 1.5
+                    elseif state.spec.fury and buff.recklessness.up then buff.recklessness.expires = buff.recklessness.expires + 1.5 end
+                end
+
                 if legendary.exploiter.enabled then applyDebuff( "target", "exploiter", nil, min( 2, debuff.exploiter.stack + 1 ) ) end
 
                 removeBuff( "sudden_death" )
@@ -1402,9 +1433,16 @@ if UnitClassBase( 'player' ) == 'WARRIOR' then
 
             copy = { 317485, 330325, 317349, 330334 }
         }
-
-
     } )
+
+
+    --[[ spec:RegisterSetting( "heroic_charge", false, {
+        name = "Use Heroic Charge Combo",
+        desc = "If checked, the default priority will check |cFFFFD100settings.heroic_charge|r to determine whether to use Heroic Leap + Charge together.\n\n" ..
+            "This is generally a DPS increase but the erratic movement can be disruptive to smooth gameplay.",
+        type = "toggle",
+        width = "full",
+    } ) ]]
 
 
     spec:RegisterOptions( {
@@ -1425,7 +1463,7 @@ if UnitClassBase( 'player' ) == 'WARRIOR' then
     } )
 
 
-    spec:RegisterPack( "Arms", 20210314, [[dKeATaqivk0JeuztesFsQsgLkvDkcHvPsO6vsvnlcLBriQDjPFjrnmKshtcwMkONrOY0uPKRPs02KQuFJqvnovcohHiwNkfzEck3tQSpvQCqvk1cLipKqv6IQuGpQsi6KQuuRevmtbvLBQsiStj0qjuflvLq5Pcnvb5QcQQARQesFvLcASeI0Ef9xu1GLYHjTycEmIjtPldTzk8zbgTk60QA1cQQ8AKIzt0TPODR43Ggos1XfuLLd8CLMovxhjBxL03rLgVufNxfy(Qq7hLZczOmAvhZIhs7HfOvCfUv9qAVuC36Wm6hqhZiDLqJgGzCutmJ3gyUzKUEGeQ2mugxifGGz80D67nvUCW7Nucvc0S8(Mus1F4qaQHxEFts5mkq9s)MNuiJw1XS4H0EybAfxHBvpK2lfN4Uqgvk)ecYy8nPKQ)Wr8cudpJNV1ItkKrlUKmEBG5YA3qfaEiGX5IqbKtwRWTeJ1oK2dlW4W4iEp1ja3BIXrKzTBBTOL1epuMMOSY4iYS2TTw0YAx0N4qWbS2fJAplFZM0XX(taRDrFIdbhuzCezw72wlAzTsQ7sK1INqkN1CiRrhGeOPG6S2TfpHVkJJiZA3GEqcL)Wbb9AznXdaj)(WH1(L1SOeD0wzCezw72wlAzTW)fzTB2rZTY4iYSwiUOsdRHJdoG1mGawRKuT46qGznJYF9ndLX9NajY7kia9muwSqgkJ4Ocs0MLYib8ocEnJ3ZAgFWPZdqt9NL1UJ1kCbAzTJhzT7znxbbOxprv6Nv6eN1cJ1oKww74rwZvjoE1u3vjaSIJkirlRjkR5kia96jQs)SsN4SwySM4UK1ebRjImQe)HtgjWj8OqaeS8c6mii9S4HzOmIJkirBwkJeW7i41mcqt9NL1cRJ1Sua1F4WAxCwJ2Q4YOs8hozeGJn9SO4YqzehvqI2SugjG3rWRzKaHslK7ujqjCxQLFn19Scqt9NL1cJ1UaRjkRfqSvaAQ)SSwhRrBgvI)WjJ6v1vq6zXBLHYioQGeTzPmsaVJGxZ4shLsExbbOVvUNpqY9hlRDhRvG1eL1SqVArKopxi1y3kan1FwwlmwlGyZOs8hozKir9kMEw8YmugvI)WjJa9QgGGmIJkirBwk9SyVZqzuj(dNmYvbcauPbbzehvqI2Su6zrXpdLrL4pCYibkH7sT8RPUNzehvqI2Su6zXlKHYOs8hozuhYJJZRgoc2tiHMmIJkirBwk9SOijdLrL4pCY4shvap0Gxqx)HtgXrfKOnlLEwSaTzOmIJkirBwkJeW7i41msovqaUSwhRDygvI)WjJWRiGoKlcsplwOqgkJ4Ocs0MLYib8ocEnJaQbnGGaSIJLc8taVGeYTIJkirlRD8iRjqzyuHxraDixeuxxj0WA31XAhYAhpYA3ZAwOxTisNNlKASBfGM6plRfwhRfqSSMOSgbcLwi3PsGs4Uul)AQ7zfGM6plRDhRfqSSMiYOs8hoz0ecCvYVo4Pbtplw4WmugXrfKOnlLrc4De8AgfOmmQwuTYd4jQ0SAHChwtuw7EwZIcuggvcuc3LA5xtDpRu0znrznGgGSwySM4OL1oEK1aAaYAHXAxslRjImQe)HtgfKQfxhcmtplwqCzOmQe)HtgTOALhWtuPzgXrfKOnlLEwSWTYqzehvqI2SugjG3rWRzeObiRfgR1BAznrznbkdJQfvR8aEIknRwi3jJkXF4KXLgkPCPlF3rq6zXcxMHYOs8hozeEfb0HCrqgXrfKOnlLEwSqVZqzehvqI2SugjG3rWRzuGYWOUuwlo8wu9ZkavINrL4pCYibow0Csplwq8ZqzehvqI2SugjG3rWRzuGYWOUuwlo8wu9ZkavINrL4pCYi2dsOCm9SyHlKHYOs8hoz0ecCvYVo4PbZioQGeTzP0ZIfejzOmIJkirBwkJeW7i41m6QehVAGGRqap0GxqDxIvCubjAZOs8hozK75dKC)XMEw8qAZqzehvqI2SugjG3rWRz8gznxL44vdeCfc4Hg8cQ7sSIJkirlRjkRDpRb0aK1UJ1UKww74rwdqnObeeG19dg05Hg8oeyIJJwEA(jyR4Ocs0YAIiJkXF4KXvQMPNEgTOHsj9muwSqgkJkXF4KrYPccWmIJkirBwk9S4HzOmQe)HtgPtzAIYmIJkirBwk9SO4Yqzuj(dNmsh6pCYioQGeTzP0ZI3kdLrCubjAZszKaEhbVMrlkqzyujqjCxQLFn19SsrpJkXF4KrbjeA5nOahKEw8YmugXrfKOnlLrc4De8AgTOaLHrLaLWDPw(1u3Zkan1Fww7owR3zuj(dNmkGGfb08tq6zXENHYioQGeTzPmsaVJGxZibcLwi3PAcbUk5xh80GvaAQ)SS2DSwH6LSMOSgqdqwlmw7sAZOs8hozubeDqEhca44PNff)mugXrfKOnlLrc4De8AgTOaLHrLaLWDPw(1u3ZQfYDynrzncekTqUt1ecCvYVo4PbRa0u)zZOs8hozu(bN(Yh(rzdmXXtplEHmugXrfKOnlLrc4De8AgTOaLHrLaLWDPw(1u3Zkf9mQe)HtgnEakiHqB6zrrsgkJ4Ocs0MLYib8ocEnJwuGYWOsGs4Uul)AQ7zLIEgvI)WjJ6qW1bQKNOsz6zXc0MHYioQGeTzPmsaVJGxZOffOmmQeOeUl1YVM6EwTqUdRjkRrGqPfYDQMqGRs(1bpnyfGM6pBgvI)WjJcAap0G3bpHMn9SyHczOmIJkirBwkJJAIz8NLaOCvqI8HhLooLjVfV(emJkXF4KXFwcGYvbjYhEu64uM8w86tW0ZIfomdLrCubjAZszCutmJwaQwJhG8xXDrzgvI)WjJwaQwJhG8xXDrz6zXcIldLrL4pCYi1I8VJMBgXrfKOnlLEwSWTYqzehvqI2SugjG3rWRzCPJsjVRGa03k3Zhi5(JL1UJ1kWAIYA3ZAeiuAHCNQGuT46qGzfGM6plRDhRv4sw74rwZvjoEfOx1aeuXrfKOL1ergvI)WjJlxeP)ta)6GNgCtplw4YmugXrfKOnlLrc4De8AgVN1CvIJxn1DvcaR4Ocs0YAIYAUccqVEIQ0pR0joRfgRjUlznrWAhpYAUccqVEIQ0pR0joRfgRDiTS2XJS29SMRGa0RNOk9ZkDIZA3XAxGwwtuwJaVIJoE9ko(5bawtezCDWt8SyHmQe)HtgjQuYRe)HdV8xpJYFD(rnXmI9GekhtplwO3zOmIJkirBwkJeW7i41mU0rPK3vqa6BL75dKC)XYA3XAfY46GN4zXczuj(dNmsuPKxj(dhE5VEgL)68JAIz8ujPNfli(zOmIJkirBwkJkXF4KrIkL8kXF4Wl)1ZO8xNFutmJ7pbsK3vqa6PNflCHmugvI)WjJxFIdbhWdO2ZmIJkirBwk9SybrsgkJkXF4KX3Koo2Fc4V(ehcoiJ4Ocs0MLsp9mshGeOPG6zOSyHmugvI)WjJcQ7sKFpHuEgXrfKOnlLE6ze7bjuoMHYIfYqzuj(dNmAr1kpGNOsZmIJkirBwk9S4HzOmIJkirBwkJeW7i41mU0rPK3vqa6BL75dKC)XYADSwbwtuwlGyRa0u)zzTowJwwtuw7EwdObiRDhRj(xYAhpYAanazT7yTlPL1eL1eOmmQaKqJe3DWDRu0znrKrL4pCYirhck5fOmmYOaLHb)OMygfKQfxhcmtplkUmugXrfKOnlLrc4De8AgjqO0c5ovcuc3LA5xtDpRa0u)zzTWyTlWAIYAbeBfGM6plR1XA0MrL4pCYOEvDfKEw8wzOmIJkirBwkJeW7i41mc0aK1cJ16nTSMOS29S2nYAUkXXRwuTYd4jQ0SIJkirlRD8iRjqzyuTOALhWtuPz1c5oSMiYOs8hozCPHskx6Y3DeKEw8YmugvI)WjJa9QgGGmIJkirBwk9SyVZqzuj(dNmsGt4rHaiy5f0zqqgXrfKOnlLEwu8ZqzehvqI2SugjG3rWRzCPJsjVRGa03k3Zhi5(JL1UJ1kWAIYAwOxTisNNlKASBfGM6plRfgRfqSzuj(dNmsKOEftplEHmugvI)WjJCvGaavAqqgXrfKOnlLEwuKKHYOs8hozKaLWDPw(1u3ZmIJkirBwk9SybAZqzehvqI2SugjG3rWRz0Icuggvcuc3LA5xtDpRu0zTJhznbkdJ6szT4WBr1pRaujoRD8iRb0aK1UJ169Lzuj(dNmsGJfnN0ZIfkKHYioQGeTzPmsaVJGxZi5ubb4YADS2Hzuj(dNmcVIa6qUii9SyHdZqzuj(dNmQd5XX5vdhb7jKqtgXrfKOnlLEwSG4Yqzuj(dNmU0rfWdn4f01F4KrCubjAZsPNflCRmugXrfKOnlLrc4De8AgbudAabbyfhlf4NaEbjKBfhvqIww74rwZc9Qfr68CHuJDRa0u)zzTW6yTaIL1oEK1UN1UN1SOaLHrf7HUe(ocQRReAyTow7qw74rwtGYWOkOUlrjeyRu0znrWAIYA3iRrGxXrhVEfh)8aaRjImQe)HtgnHaxL8RdEAW0ZIfUmdLrCubjAZszKaEhbVMrbkdJQfvR8aEIknRwi3H1eL1aAaYAHXAxsBgvI)WjJcs1IRdbMPNfl07mugXrfKOnlLrc4De8AgbAaYAHXA3I2mQe)HtgxAOKYLU8DhbPNfli(zOmQe)HtgHxraDixeKrCubjAZsPNflCHmugvI)WjJe4yrZjJ4Ocs0MLsplwqKKHYOs8hoze7bjuoMrCubjAZsPNEgpvsgklwidLrCubjAZszKaEhbVMrGgGSwySwVPL1eL1eOmmQwuTYd4jQ0SAHCNmQe)HtgxAOKYLU8DhbPNfpmdLrL4pCYiboHhfcGGLxqNbbzehvqI2Su6zrXLHYioQGeTzPmsaVJGxZibcLwi3PsGs4Uul)AQ7zfGM6plRfgRviJkXF4Kr9Q6ki9S4TYqzuj(dNmYvbcauPbbzehvqI2Su6zXlZqzuj(dNmsGs4Uul)AQ7zgXrfKOnlLEwS3zOmIJkirBwkJeW7i41mAHE1IiDEUqQXUvaAQ)SSwyDSwaXMrL4pCYirI6vm9SO4NHYOs8hozuhYJJZRgoc2tiHMmIJkirBwk9S4fYqzuj(dNmU0rfWdn4f01F4KrCubjAZsPNffjzOmQe)HtgfKQfxhcmZioQGeTzP0ZIfOndLrL4pCYiqVQbiiJ4Ocs0MLsplwOqgkJ4Ocs0MLYib8ocEnJa0u)zzTW6ynlfq9hoS2fN1OTkowtuwtGYWOUCrK(pb8RdEAWTsrpJkXF4Krao20ZIfomdLrL4pCYirI6vmJ4Ocs0MLsplwqCzOmIJkirBwkJeW7i41mkqzyuxUis)Na(1bpn4wPOZAhpYAwOxTisNNlKASBfGM6plRfgRfqSSMOS2nYAUkXXRejQxXkoQGeTzuj(dNmAcbUk5xh80GPNflCRmugXrfKOnlLrc4De8AgDvIJxTauTJsfC6vCubjAZOs8hozeEfb0HCrq6zXcxMHYOs8hozKahlAozehvqI2Su6zXc9odLrCubjAZszKaEhbVMrbkdJ6Yfr6)eWVo4Pb3kf9mQe)HtgXEqcLJPNfli(zOmQe)HtgHxraDixeKrCubjAZsPNflCHmugvI)WjJCpFGK7p2mIJkirBwk90tpJxrW(WjlEiThwGwXvG2mYvbZpbBgVH3(Iv8MlErEtSgRf6ezT3Koe4SMbeWA9A)jqI8UccqVxSgadpQhGwwBHMiRPuo0uD0YAKtDcWTY4e((bzTcfUjwt8cNRiWrlR1la1GgqqawfP9I1CiR1la1GgqqawfPvCubjA7fRDFHEerLXj89dYAhs7nXAIx4CfboAzTEbOg0accWQiTxSMdzTEbOg0accWQiTIJkirBVyT7l0JiQmomo3WBFXkEZfViVjwJ1cDIS2BshcCwZacyTEH9Gekh7fRbWWJ6bOL1wOjYAkLdnvhTSg5uNaCRmoHVFqwRWTUjwt8cNRiWrlR1la1GgqqawfP9I1CiR1la1GgqqawfPvCubjA7fRDFHEerLXHX5MnPdboAzTlznL4pCyn5V(wzCYiDa04Lygdx4yTBdmxw7gQaWdbmoHlCS2fHciNSwHBjgRDiThwGXHXjCHJ1eVN6eG7nX4eUWXAImRDBRfTSM4HY0eLvgNWfowtKzTBBTOL1UOpXHGdyTlg1Ew(MnPJJ9Naw7I(ehcoOY4eUWXAImRDBRfTSwj1DjYAXtiLZAoK1Odqc0uqDw72INWxLXjCHJ1ezw7g0dsO8hoiOxlRjEai53hoS2VSMfLOJ2kJt4chRjYS2TTw0YAH)lYA3SJMBLXjCHJ1ezwlexuPH1WXbhWAgqaRvsQwCDiWSY4W4eUWXA3GEqcLJwwtanGaK1iqtb1znbm4NTYA3Mqq6(YAdCe5tfyAqjznL4pCwwdoYdQmokXF4Sv6aKanfuVFxzb1DjYVNqkNXHXjCHJ1Ub9GekhTSgEfbhWA(BISMFISMsCiG1(L10R6lvbjwzCuI)Wz7iNkiazCuI)Wz73vMoLPjkzCuI)Wz73vMo0F4W4Oe)HZ2VRSGecT8guGde7n6SOaLHrLaLWDPw(1u3ZkfDghL4pC2(DLfqWIaA(jqS3OZIcuggvcuc3LA5xtDpRa0u)zVR3mokXF4S97kRaIoiVdbaCCXEJocekTqUt1ecCvYVo4PbRa0u)zVRq9srbAag2L0Y4Oe)HZ2VRS8do9Lp8JYgyIJl2B0zrbkdJkbkH7sT8RPUNvlK7ikbcLwi3PAcbUk5xh80GvaAQ)SmokXF4S97kB8auqcHwXEJolkqzyujqjCxQLFn19SsrNXrj(dNTFxzDi46avYtuPuS3OZIcuggvcuc3LA5xtDpRu0zCuI)Wz73vwqd4Hg8o4j0SI9gDwuGYWOsGs4Uul)AQ7z1c5oIsGqPfYDQMqGRs(1bpnyfGM6plJJs8hoB)UYulY)oAk2OMy3plbq5QGe5dpkDCktElE9jiJJs8hoB)UYulY)oAk2OMyNfGQ14bi)vCxuY4Oe)HZ2VRm1I8VJMlJJs8hoB)UYlxeP)ta)6GNgCf7n6w6OuY7kia9TY98bsU)yVRGO3tGqPfYDQcs1IRdbMvaAQ)S3v4YJhDvIJxb6vnabvCubjAfbJJs8hoB)UYevk5vI)WHx(Rl2OMyh2dsOCuS1bpX7ki2B0DVRsC8QPURsayfhvqIwrDfeGE9evPFwPt8We3LI44rxbbOxprv6Nv6epSdP94X7DfeGE9evPFwPt87UaTIsGxXrhVEfh)8aGiyCuI)Wz73vMOsjVs8ho8YFDXg1e7ovIyRdEI3vqS3OBPJsjVRGa03k3Zhi5(J9UcmokXF4S97ktuPKxj(dhE5VUyJAID7pbsK3vqa6mokXF4S97kF9joeCapGApzCuI)Wz73v(nPJJ9Na(RpXHGdyCyCuI)WzRypiHYXolQw5b8evAY4Oe)HZwXEqcLJ97kt0HGsEbkddXg1e7eKQfxhcmf7n6w6OuY7kia9TY98bsU)y7kiAaXwbOP(Z2rRO3d0a8oX)YJhbAaE3L0kQaLHrfGeAK4UdUBLIUiyCuI)WzRypiHYX(DL1RQRaXEJocekTqUtLaLWDPw(1u3Zkan1F2WUGObeBfGM6pBhTmokXF4SvShKq5y)UYlnus5sx(UJaXEJoGgGH1BAf9(B0vjoE1IQvEaprLMvCubjApEuGYWOAr1kpGNOsZQfYDebJJs8hoBf7bjuo2VRmqVQbiGXrj(dNTI9Gekh73vMaNWJcbqWYlOZGaghL4pC2k2dsOCSFxzIe1ROyVr3shLsExbbOVvUNpqY9h7Dfe1c9Qfr68CHuJDRa0u)zdlGyzCuI)WzRypiHYX(DL5QabaQ0GaghL4pC2k2dsOCSFxzcuc3LA5xtDpzCuI)WzRypiHYX(DLjWXIMJyVrNffOmmQeOeUl1YVM6EwPOF8OaLHrDPSwC4TO6NvaQe)4rGgG317lzCuI)WzRypiHYX(DLHxraDixei2B0rovqaUDhY4Oe)HZwXEqcLJ97kRd5XX5vdhb7jKqdJJs8hoBf7bjuo2VR8shvap0Gxqx)HdJJs8hoBf7bjuo2VRSje4QKFDWtdk2B0bOg0accWkowkWpb8csi3JhTqVArKopxi1y3kan1F2W6ci2JhV)ElkqzyuXEOlHVJG66kHMUdpEuGYWOkOUlrjeyRu0fHO3ibEfhD86vC8ZdaIGXrj(dNTI9Gekh73vwqQwCDiWuS3OtGYWOAr1kpGNOsZQfYDefObyyxslJJs8hoBf7bjuo2VR8sdLuU0LV7iqS3OdObyy3IwghL4pC2k2dsOCSFxz4veqhYfbmokXF4SvShKq5y)UYe4yrZHXrj(dNTI9Gekh73vg7bjuoY4W4Oe)HZwpvs3sdLuU0LV7iqS3OdObyy9MwrfOmmQwuTYd4jQ0SAHChghL4pC26Ps63vMaNWJcbqWYlOZGaghL4pC26Ps63vwVQUce7n6iqO0c5ovcuc3LA5xtDpRa0u)zdRaJJs8hoB9uj97kZvbcauPbbmokXF4S1tL0VRmbkH7sT8RPUNmokXF4S1tL0VRmrI6vuS3OZc9Qfr68CHuJDRa0u)zdRlGyzCuI)WzRNkPFxzDipooVA4iypHeAyCuI)WzRNkPFx5LoQaEObVGU(dhghL4pC26Ps63vwqQwCDiWKXrj(dNTEQK(DLb6vnabmokXF4S1tL0VRmahRyVrhan1F2W6Sua1F4CXPTkorfOmmQlxeP)ta)6GNgCRu0zCuI)WzRNkPFxzIe1RiJJs8hoB9uj97kBcbUk5xh80GI9gDcugg1LlI0)jGFDWtdUvk6hpAHE1IiDEUqQXUvaAQ)SHfqSIEJUkXXRejQxXkoQGeTmokXF4S1tL0VRm8kcOd5IaXEJoxL44vlav7OubNEfhvqIwghL4pC26Ps63vMahlAomokXF4S1tL0VRm2dsOCuS3OtGYWOUCrK(pb8RdEAWTsrNXrj(dNTEQK(DLHxraDixeW4Oe)HZwpvs)UYCpFGK7pwghghL4pC26(tGe5DfeGEhboHhfcGGLxqNbbI9gD3B8bNopan1F27kCbApE8ExbbOxprv6Nv6epSdP94rxL44vtDxLaWkoQGeTI6kia96jQs)SsN4HjUlfHiyCuI)WzR7pbsK3vqa6DaCSI9gDa0u)zdRZsbu)HZfN2Q4yCuI)WzR7pbsK3vqa697kRxvxbI9gDeiuAHCNkbkH7sT8RPUNvaAQ)SHDbrdi2kan1F2oAzCuI)WzR7pbsK3vqa697ktKOEff7n6w6OuY7kia9TY98bsU)yVRGOwOxTisNNlKASBfGM6pBybelJJs8hoBD)jqI8UccqVFxzGEvdqaJJs8hoBD)jqI8UccqVFxzUkqaGkniGXrj(dNTU)eirExbbO3VRmbkH7sT8RPUNmokXF4S19NajY7kia9(DL1H8448QHJG9esOHXrj(dNTU)eirExbbO3VR8shvap0Gxqx)HdJJs8hoBD)jqI8UccqVFxz4veqhYfbI9gDKtfeGB3HmokXF4S19NajY7kia9(DLnHaxL8RdEAqXEJoa1GgqqawXXsb(jGxqc5E8OaLHrfEfb0HCrqDDLqZDDhE849wOxTisNNlKASBfGM6pByDbeROeiuAHCNkbkH7sT8RPUNvaAQ)S3fqSIGXrj(dNTU)eirExbbO3VRSGuT46qGPyVrNaLHr1IQvEaprLMvlK7i69wuGYWOsGs4Uul)AQ7zLIUOanadtC0E8iqdWWUKwrW4Oe)HZw3FcKiVRGa073v2IQvEaprLMmokXF4S19NajY7kia9(DLxAOKYLU8DhbI9gDanadR30kQaLHr1IQvEaprLMvlK7W4Oe)HZw3FcKiVRGa073vgEfb0HCraJJs8hoBD)jqI8UccqVFxzcCSO5i2B0jqzyuxkRfhElQ(zfGkXzCuI)WzR7pbsK3vqa697kJ9Gekhf7n6eOmmQlL1IdVfv)ScqL4mokXF4S19NajY7kia9(DLnHaxL8RdEAqghL4pC26(tGe5DfeGE)UYCpFGK7pwXEJoxL44vdeCfc4Hg8cQ7sSIJkirlJJs8hoBD)jqI8UccqVFx5vQMI9gD3ORsC8QbcUcb8qdEb1DjwXrfKOv07bAaE3L0E8iGAqdiiaR7hmOZdn4DiWehhT808tWkImU0rswu8lKE6zc]] )
+    spec:RegisterPack( "Arms", 20210719, [[dOKTXaqivu4revztiuFcf0Oef1PKk0QqbKxPImlQGBruWUe5xsLggrPJrfTmIkptQOMMubxtQQ2grr9nIQY4efPZjkI1jveZJk09uH9jvL)ruOQdQIsluQYdvrrxKOq5JsfPmsIcvojkqTscmtIczNIQgQurYsrbupvktvu6QsfPAROa4ROa0yjQQ2RK)sKbtvhM0IrPhJQjtPld2mI(mHgncoTQwnrrEncz2uCBQ0Uv8BOgobDCuGSCLEoKPlCDvA7OqFhfnErHZRIQ5lQSFKUCwzRMvdOYlNSY5uw5ZzMKC25(7SS9xT4CHq1eQCIurOAJ6cv7SRlQAc1Zny1wzRgcFxouncrie1jD7k(bHlBIJD7IE3RrJhp8vjJUO3L3TAS33em4PyRMvdOYlNSY5uw5ZzMKC25(7SSYvn9geWB1AV71OXJNZCvYOAeERfMITAwaXR2zxxe1ZaQ7(4LkqW1Co17mtCG6Ltw5CsfqfCMe0reqDcvGmq9N1Abl13PUUUGjrfidu)zTwWs9mappW75upd8frOld2vim2FePEgGNh498evGmq9N1Abl13tJWauFJa(guFGPEHlWXUSAq9NTtjJsubYa1lJLbWVXJhyziI67ulWF0JhQ)ruVfmqa2evGmq9N1Abl13PJaQNbhGlkrfiduFwMGse1dtSNt9K4L67zulGc86MQM5rbQYwn0pIgqk0veIkBL3zLTAWOSgWw9QgF)a2xR2cU6piQ3XdQxKBRMYJhpvBHXwrLxUkB1GrznGT6vn((bSVwnYxKqiTGR(dI67J6D2bzRMYJhpvJJhg0fw8IKy1zGTIkFNRSvt5XJNQPmQHUvdgL1a2Qxfv(ouzRMYJhpvBvgvryRgmkRbSvVkQ89xzRMYJhpvJPUSlOebB1GrznGT6vrLxMRSvt5XJNQXXgmcDrsixfrOAWOSgWw9QOYlFv2QP84Xt10H)WeskzalIaMtu1GrznGT6vrLptRSvt5XJNQHec6kHjLyvu84PAWOSgWw9QOYNjv2QbJYAaB1RA89dyFTACc6kciQ)G6LRAkpE8unmJWkeZe2kQ8oLTYwnyuwdyREvJVFa7RvBVdqIxribJ9U)ikXAWmtWOSgWs95Yr97Das8kcjwncdyWRnbJYAal1Nlh1ZEjjtygHviMjSjuOCIO((oOE5QMYJhpvZfVHAKqX(ebvu5D6SYwnyuwdyREvJVFa7RvJ9ssMqxRfgjlObH0ckpQMYJhpvJJhl4ovu5DkxLTAWOSgWw9QgF)a2xRg7LKmHUwlmswqdcPfuEunLhpEQgKbWVburL3zNRSvdgL1a2Qx147hW(A1wveswG85Fq99r9DOFQNyQN9ssMSGAnNlXvJBYIzovt5XJNQHi6AmiHMpcyROY7Sdv2QbJYAaB1RA89dyFTASxsYKfuR5CjUACtwmZH6jM6xveOEhP(olB1uE84PASg1cOaVUvu5D2FLTAkpE8unlOwZ5sC14wnyuwdyREvu5DkZv2QP84Xt1WmcRqmtyRgmkRbSvVkQ8oLVkB1uE84PAU4nuJek2NiOAWOSgWw9QOY7mtRSvdgL1a2Qx147hW(A1wWv)br9os927QXJhQNbI6Ln15QP84Xt1wySvu5DMjv2QbJYAaB1RA89dyFTAiHGXif6kcbkXKWVgM)yP((OENvt5XJNQXnGYiurLxozRSvdgL1a2Qx147hW(A1c1atKiHLr8kHjLy1imqcgL1awQpxoQhjemgPqxriqjMe(1W8hl13h13bQpxoQhjemgPqxriqjMe(1W8hl13h1lh1tm1ZEjjtiMai8hrjuSprakzXmNQP84Xt1ys4xdZFSvu5LZzLTAWOSgWw9QgF)a2xR2zq9HAGjsKWYiELWKsSAegibJYAal1tm1NzQFvrG67J67xwQpxoQ3cSxsYehBWi0fjHCveH0vi1Nlh1Fgu)EhGeVIqcg7D)ruI1GzMGrznGL67y1uE84PAiJ6wrfvZcK61ev2kVZkB1uE84PACc6kcvdgL1a2QxfvE5QSvt5XJNQj866cMQbJYAaB1RIkFNRSvdgL1a2Qx147hW(A1e520cU6piQ)G6LL6jM6Ta7LKmXXgmcDrsixfriTGR(dI67J6ZuQpxoQNfJqupXup5lsiKwWv)br9os9Y1F1uE84PAcXXJNkQ8DOYwnyuwdyREvJVFa7RvZcSxsYehBWi0fjHCveH0vy1uE84PASgm2krE3ZROY3FLTAWOSgWw9QgF)a2xRMfyVKKjo2GrOlsc5QicPfC1FquFFuVmxnLhpEQglSiyj6hXkQ8YCLTAWOSgWw9QgF)a2xRghJnwmZj5I3qnsOyFIG0cU6piQVpQ3zQFQNyQFvrG6DK67x2QP84Xt10LRdif4DHjQOYlFv2QbJYAaB1RA89dyFTAwG9ssM4ydgHUijKRIiKSyMd1tm1ZXyJfZCsU4nuJek2NiiTGR(dQAkpE8unZlsiqsY01k6cturLptRSvdgL1a2Qx147hW(A1Sa7LKmXXgmcDrsixfriDfwnLhpEQg5VaRbJTvu5ZKkB1GrznGT6vn((bSVwnlWEjjtCSbJqxKeYvresxHvt5XJNQPdhqXQgjUAmvu5DkBLTAWOSgWw9QgF)a2xRMfyVKKjo2GrOlsc5QicjlM5q9et9Cm2yXmNKlEd1iHI9jcsl4Q)GQMYJhpvJvfLWKsX(CIqvu5D6SYwnLhpEQ2fbsFaUOQbJYAaB1RIkVt5QSvdgL1a2Qx147hW(A1qcbJrk0vecuIjHFnm)Xs99r9oPEIP(mt9Cm2yXmNeRrTakWRBAbx9he13h17SFQpxoQpudmrAvgvrytWOSgWs9DSAkpE8unetae(JOek2NiavrL3zNRSvdgL1a2Qx147hW(A1Ym1hQbMi5QiKYxibJYAal1tm1h6kcrIaOMGqsipOEhP(o3p13rQpxoQp0veIebqnbHKqEq9os9Yjl1Nlh1NzQp0veIebqnbHKqEq99r9zQSupXuphZim6ejgHjiC(s9DSAOyFEu5DwnLhpEQgxngjLhpEKmpkQM5rH0OUq1Gma(nGkQ8o7qLTAWOSgWw9QMYJhpvJRgJKYJhpsMhfvZ8OqAuxOAOFenGuORievu5D2FLTAkpE8ungFEG3ZL2lIq1GrznGT6vrL3PmxzRMYJhpv7DfcJ9hrjgFEG3ZRgmkRbSvVkQOAcxGJDz1OYw5DwzRMYJhpvJvJWasic4BunyuwdyREvur1Gma(nGkBL3zLTAkpE8unlOwZ5sC14wnyuwdyREvu5LRYwnLhpEQghpmOlS4fjXQZaB1GrznGT6vrLVZv2QbJYAaB1RA89dyFTAiHGXif6kcbkXKWVgM)yP(dQ3j1tm1lYTPfC1Fqu)b1ll1tm1NzQFvrG67J6LV(P(C5O(vfbQVpQVFzPEIPE2ljzAborgaHgaHsxHuFhRMYJhpvJRdhmsSxsYQXEjjLg1fQgRrTakWRBfv(ouzRgmkRbSvVQX3pG91QjYTPfC1Fqu)b1ll1Nlh1h6kcrkExqkWs2hOEhPE5KTAkpE8unLrn0TIkF)v2QbJYAaB1RA89dyFTASxsYKIiaJKmDffHD0BKUcPEIPE2ljzsreGrsMUIIWo6nsl4Q)GOEhPErUL6jM654XE)iPicWijtxrryh9gPvhIO((OENvt5XJNQXXJfCNkQ8YCLTAWOSgWw9QgF)a2xRg7LKmPicWijtxrryh9gPRqQNyQN9ssMuebyKKPROiSJEJ0cU6piQ3rQxKBPEIPEoES3pskIamsY0vue2rVrA1HiQVpQ3z1uE84PAqga)gqfvE5RYwnLhpEQ2QmQIWwnyuwdyREvu5Z0kB1GrznGT6vn((bSVwTfC1FquVJhuVi3s9et9zM6pdQpudmrIPUSlOebBcgL1awQNyQNJXglM5K4ydgHUijKRIiKwWv)br9os9DG6ZLJ6d1atKyQl7ckrWMGrznGL6jM65ySXIzojM6YUGseSPfC1FquVJuFhO(os9et9HUIqKI3fKcSK9bQVpQ3PCvt5XJNQTWyROYNjv2QP84Xt1yQl7ckrWwnyuwdyREvu5DkBLTAkpE8uno2GrOlsc5QicvdgL1a2QxfvENoRSvt5XJNQPd)HjKuYawebmNOQbJYAaB1RIkVt5QSvt5XJNQHec6kHjLyvu84PAWOSgWw9QOY7SZv2QbJYAaB1RA89dyFTA7Das8kcj0loqiHjLc86ctawjI(reLGrznGL6jM6Zm1VQiKSa5Z)G6DK6LRFQpxoQ3cSxsYehBWi0fjHCveH0vi1tm1VQiq99r9DqwQpxoQN9ssMqxRfgjlObH0ckpO(C5OE2ljzYcQ1CUexnUPRqQVJvt5XJNQXXJfCNkQ8o7qLTAWOSgWw9QgF)a2xRgNGUIaI6pOE5QMYJhpvdZiScXmHTIkVZ(RSvdgL1a2Qx147hW(A1qcbJrk0vecuIjHFnm)Xs99r9oPEIPEloswaekXeFhlkTGR(dI6DK6f52QP84Xt14gqzeQOY7uMRSvdgL1a2Qx147hW(A1S4izbqOet8DSO0cU6piQ3XdQxKBP(C5O(9oajEfHem27(JOeRbZmbJYAal1Nlh1ZEjjtygHviMjSjuOCIO(dQxoQNyQ3cSxsYeKHqd(dytOq5er9huVCuFUCup7LKmXQryadETPRWQP84Xt1CXBOgjuSprqfvENYxLTAWOSgWw9QgF)a2xR2QIqYcKp)dQ3rQxU(P(C5OE2ljzYcQ1CUexnUPRWQP84Xt144XcUtfvENzALTAWOSgWw9QgF)a2xR2QIa17i13H(RMYJhpvdr01yqcnFeWwrL3zMuzRgmkRbSvVQX3pG91QXEjjtwqTMZL4QXnzXmhQNyQpZu)QIa17i1lNSuFUCu)zq97Das8kcj0pKxJe6UIqcgL1awQNyQFvrG6DK67xwQVJvt5XJNQXAulGc86wrLxozRSvt5XJNQHzewHyMWwnyuwdyREvu5LZzLTAkpE8unoESG7unyuwdyREvu5LtUkB1uE84PAqga)gq1GrznGT6vrfvJGYRSvENv2QbJYAaB1RA89dyFTARkcuVJuVmll1tm1ZEjjtwqTMZL4QXnzXmNQP84Xt1qeDngKqZhbSvu5LRYwnLhpEQghpmOlS4fjXQZaB1GrznGT6vrLVZv2QbJYAaB1RA89dyFTACm2yXmNehBWi0fjHCveH0cU6piQ3rQ3z1uE84PAkJAOBfv(ouzRMYJhpvJPUSlOebB1GrznGT6vrLV)kB1uE84PACSbJqxKeYvreQgmkRbSvVkQ8YCLTAWOSgWw9QgF)a2xRMfhjlacLyIVJfLwWv)br9oEq9ICB1uE84PACdOmcvu5LVkB1uE84PA6WFycjLmGfraZjQAWOSgWw9QOYNPv2QP84Xt1qcbDLWKsSkkE8unyuwdyREvu5ZKkB1uE84PASg1cOaVUvdgL1a2QxfvENYwzRMYJhpvBvgvryRgmkRbSvVkQ8oDwzRgmkRbSvVQX3pG91QTGR(dI6D8G6T3vJhpupde1lBQZupXup7LKmHycGWFeLqX(ebO0vy1uE84PAlm2kQ8oLRYwnLhpEQg3akJq1GrznGT6vrL3zNRSvdgL1a2Qx147hW(A1yVKKjetae(JOek2NiaLUcP(C5OEloswaekXeFhlkTGR(dI6DK6f5wQNyQ)mO(qnWejUbugHemkRbSvt5XJNQ5I3qnsOyFIGkQ8o7qLTAWOSgWw9QgF)a2xRwOgyIKDb1o6vKqKGrznGTAkpE8unmJWkeZe2kQ8o7VYwnLhpEQghpwWDQgmkRbSvVkQ8oL5kB1GrznGT6vn((bSVwn2ljzcXeaH)ikHI9jcqPRWQP84Xt1Gma(nGkQ8oLVkB1uE84PAygHviMjSvdgL1a2QxfvENzALTAkpE8unMe(1W8hB1GrznGT6vrfvungHf94PYlNSY5uw5twNvJPUZpIOQXaEwg48m48DADc1t9zjau)7keVb1tIxQNHOFenGuORiemK6xGbD)fSupc7cuVEdSRgGL65e0reqjQaz0pa17u2oH6pt8WiSbyPEgU3biXRiKKFgs9bM6z4EhGeVIqs(tWOSgWYqQpZoZOJjQaz0pa17u2oH6pt8WiSbyPEgU3biXRiKKFgs9bM6z4EhGeVIqs(tWOSgWYqQpZoZOJjQaz0pa1lNZoH6pt8WiSbyPEgU3biXRiKKFgs9bM6z4EhGeVIqs(tWOSgWYqQpZoZOJjQaQagWZYaNNbNVtRtOEQplbG6FxH4nOEs8s9meYa43ayi1Vad6(lyPEe2fOE9gyxnal1ZjOJiGsubYOFaQ3zN7eQ)mXdJWgGL6z4EhGeVIqs(zi1hyQNH7Das8kcj5pbJYAaldP(m7mJoMOcKr)auVtzUtO(ZepmcBawQNH7Das8kcj5NHuFGPEgU3biXRiKK)emkRbSmK6ZSZm6yIkqg9dq9oZKoH6pt8WiSbyPEgU3biXRiKKFgs9bM6z4EhGeVIqs(tWOSgWYqQpZoZOJjQaQagSRq8gGL67N6vE84H6npkqjQGQjCXKVbQM8Kh1F21fr9mG6UpEPcKN8OEbxZ5uVZmXbQxozLZjvavG8Kh1FMe0reqDcvG8Kh1ldu)zTwWs9DQRRlysubYtEuVmq9N1Abl1Za88aVNt9mWxeHUmyxHWy)rK6zaEEG3ZtubYtEuVmq9N1Abl13tJWauFJa(guFGPEHlWXUSAq9NTtjJsubYtEuVmq9Yyza8B84bwgIO(o1c8h94H6Fe1BbdeGnrfip5r9Ya1FwRfSuFNocOEgCaUOevG8Kh1lduFwMGse1dtSNt9K4L67zulGc86MOcOcKN8OEzSma(nal1ZcK4fOEo2LvdQNfe)bLO(ZY5GWar9dEKbc66sEnuVYJhpiQhpMZtubkpE8GscxGJDz140rxwncdiHiGVbvavG8Kh1lJLbWVbyPEGrypN6J3fO(Gaq9kpWl1)iQxzuFJYAGevGYJhpOdobDfbQaLhpEqNo6k866cgQaLhpEqNo6kehpEC4jpe520cU6pOdzj2cSxsYehBWi0fjHCveH0cU6pO(Y0C5yXieXKViHqAbx9hKJY1pvGYJhpOthDznySvI8UN7WtEyb2ljzIJnye6IKqUkIq6kKkq5XJh0PJUSWIGLOFeD4jpSa7LKmXXgmcDrsixfriTGR(dQpzMkq5XJh0PJU6Y1bKc8UWeo8KhCm2yXmNKlEd1iHI9jcsl4Q)G6ZzQFIxveCSFzPcuE84bD6OR5fjeijz6AfDHjC4jpSa7LKmXXgmcDrsixfrizXmhI5ySXIzojx8gQrcf7teKwWv)brfO84Xd60rxYFbwdgBD4jpSa7LKmXXgmcDrsixfriDfsfO84Xd60rxD4akw1iXvJXHN8WcSxsYehBWi0fjHCveH0vivGYJhpOthDzvrjmPuSpNiKdp5HfyVKKjo2GrOlsc5QicjlM5qmhJnwmZj5I3qnsOyFIG0cU6piQaLhpEqNo6ErG0hGlIkq5XJh0PJUiMai8hrjuSpraYHN8ajemgPqxriqjMe(1W8hBFojoZCm2yXmNeRrTakWRBAbx9huFo7pxUqnWePvzufHnbJYAaBhPcuE84bD6OlxngjLhpEKmpkCyux4aYa43aCaf7ZJdNo8KhzoudmrYvriLVqcgL1awIdDfHirautqijKho25(7yUCHUIqKiaQjiKeYdhLt2C5YCORiejcGAccjH8OVmvwI5ygHrNiXimbHZ3osfip5r9Y4aE8CQ)Swl1FMgqzeOElgqdddQpwDqgnaQ)hzquDbhOEwGRxeq9eWmPElM6phFPE7tsclmXRbq9Q1IOEgrjQhDrH(dyPE3RjEzi0vecz8ubYtEuVYJhpOthD5QXiP84XJK5rHdJ6cheuUdOyFEC40HN8ajemgPqxriqjMe(1W8hBFoPcuE84bD6OlxngjLhpEKmpkCyux4a9JObKcDfHGkq5XJh0PJUm(8aVNlTxebQaLhpEqNo6(UcHX(JOeJppW75ububkpE8Gsqga)gWHfuR5CjUACPcuE84bLGma(nGthD54HbDHfVijwDgyPcuE84bLGma(nGthD56WbJe7LK0HrDHdwJAbuGxxhEYdKqWyKcDfHaLys4xdZFShojwKBtl4Q)GoKL4mVQi0N81FUCRkc91VSeZEjjtlWjYai0aiu6kSJubkpE8Gsqga)gWPJUkJAORdp5Hi3MwWv)bDiBUCHUIqKI3fKcSK9bhLtwQaLhpEqjidGFd40rxoESG74WtEWEjjtkIamsY0vue2rVr6kKy2ljzsreGrsMUIIWo6nsl4Q)GCuKBjMJh79JKIiaJKmDffHD0BKwDiQpNubkpE8Gsqga)gWPJUqga)gGdp5b7LKmPicWijtxrryh9gPRqIzVKKjfragjz6kkc7O3iTGR(dYrrULyoES3pskIamsY0vue2rVrA1HO(CsfO84Xdkbza8BaNo6UkJQiSubkpE8Gsqga)gWPJUlmwhEYJfC1FqoEiYTeN5ZiudmrIPUSlOebBcgL1awI5ySXIzojo2GrOlsc5QicPfC1Fqo2HC5c1atKyQl7ckrWMGrznGLyogBSyMtIPUSlOebBAbx9hKJDOJeh6kcrkExqkWs2h6ZPCubkpE8Gsqga)gWPJUm1LDbLiyPcuE84bLGma(nGthD5ydgHUijKRIiqfO84Xdkbza8BaNo6Qd)HjKuYawebmNiQaLhpEqjidGFd40rxKqqxjmPeRIIhpubkpE8Gsqga)gWPJUC8yb3XHN8yVdqIxriHEXbcjmPuGxxycWkr0pIiIZ8QIqYcKp)dhLR)C5Sa7LKmXXgmcDrsixfriDfs8QIqFDq2C5yVKKj01AHrYcAqiTGYJC5yVKKjlOwZ5sC14MUc7ivGYJhpOeKbWVbC6OlMryfIzcRdp5bNGUIa6qoQaLhpEqjidGFd40rxUbugbhEYdKqWyKcDfHaLys4xdZFS95KyloswaekXeFhlkTGR(dYrrULkq5XJhucYa43aoD01fVHAKqX(ebo8KhwCKSaiuIj(owuAbx9hKJhICBUC7Das8kcjyS39hrjwdMzUCSxsYeMryfIzcBcfkNOd5i2cSxsYeKHqd(dytOq5eDixUCSxsYeRgHbm41MUcPcuE84bLGma(nGthD54XcUJdp5XQIqYcKp)dhLR)C5yVKKjlOwZ5sC14MUcPcuE84bLGma(nGthDreDngKqZhbSo8KhRkco2H(PcuE84bLGma(nGthDznQfqbEDD4jpyVKKjlOwZ5sC14MSyMdXzEvrWr5KnxUZyVdqIxriH(H8AKq3veiEvrWX(LTJubkpE8Gsqga)gWPJUygHviMjSubkpE8Gsqga)gWPJUC8yb3Hkq5XJhucYa43aoD0fYa43aOcOcuE84bLiO8derxJbj08raRdp5XQIGJYSSeZEjjtwqTMZL4QXnzXmhQaLhpEqjck)0rxoEyqxyXlsIvNbwQaLhpEqjck)0rxLrn01HN8GJXglM5K4ydgHUijKRIiKwWv)b5OtQaLhpEqjck)0rxM6YUGseSubkpE8Gseu(PJUCSbJqxKeYvreOcuE84bLiO8thD5gqzeC4jpS4izbqOet8DSO0cU6pihpe5wQaLhpEqjck)0rxD4pmHKsgWIiG5erfO84Xdkrq5No6Iec6kHjLyvu84Hkq5XJhuIGYpD0L1Owaf41Lkq5XJhuIGYpD0DvgvryPcuE84bLiO8thDxySo8Khl4Q)GC8WExnE8WajBQZeZEjjtiMai8hrjuSprakDfsfO84Xdkrq5No6YnGYiqfO84Xdkrq5No66I3qnsOyFIahEYd2ljzcXeaH)ikHI9jcqPRWC5S4izbqOet8DSO0cU6pihf5wIpJqnWejUbugHemkRbSubkpE8Gseu(PJUygHviMjSo8KhHAGjs2fu7OxrcrcgL1awQaLhpEqjck)0rxoESG7qfO84Xdkrq5No6cza8Bao8KhSxsYeIjac)rucf7teGsxHubkpE8Gseu(PJUygHviMjSubkpE8Gseu(PJUmj8RH5pwQaQaLhpEqj0pIgqk0veIJfgRdp5XcU6pihpe5wQaLhpEqj0pIgqk0veIthD54HbDHfVijwDgyD4jpiFrcH0cU6pO(C2bzPcuE84bLq)iAaPqxrioD0vzudDPcuE84bLq)iAaPqxrioD0DvgvryPcuE84bLq)iAaPqxrioD0LPUSlOeblvGYJhpOe6hrdif6kcXPJUCSbJqxKeYvreOcuE84bLq)iAaPqxrioD0vh(dtiPKbSicyorubkpE8GsOFenGuORieNo6Iec6kHjLyvu84Hkq5XJhuc9JObKcDfH40rxmJWkeZewhEYdobDfb0HCubkpE8GsOFenGuORieNo66I3qnsOyFIahEYJ9oajEfHem27(JOeRbZmxU9oajEfHeRgHbm41Mlh7LKmHzewHyMWMqHYjQVd5OcuE84bLq)iAaPqxrioD0LJhl4oo8KhSxsYe6ATWizbniKwq5bvGYJhpOe6hrdif6kcXPJUqga)gGdp5b7LKmHUwlmswqdcPfuEqfO84XdkH(r0asHUIqC6OlIORXGeA(iG1HN8yvrizbYN)rFDOFIzVKKjlOwZ5sC14MSyMdvGYJhpOe6hrdif6kcXPJUSg1cOaVUo8KhSxsYKfuR5CjUACtwmZH4vfbh7SSubkpE8GsOFenGuORieNo6Ab1AoxIRgxQaLhpEqj0pIgqk0veIthDXmcRqmtyPcuE84bLq)iAaPqxrioD01fVHAKqX(ebubkpE8GsOFenGuORieNo6UWyD4jpwWv)b5O9UA84Hbs2uNPcuE84bLq)iAaPqxrioD0LBaLrWHN8ajemgPqxriqjMe(1W8hBFoPcuE84bLq)iAaPqxrioD0LjHFnm)X6WtEeQbMirclJ4vctkXQryGemkRbS5YHecgJuORieOetc)Ay(JTVoKlhsiymsHUIqGsmj8RH5p2(KJy2ljzcXeaH)ikHI9jcqjlM5qfO84XdkH(r0asHUIqC6OlYOUo8KhNrOgyIejSmIxjmPeRgHbsWOSgWsCMxve6RFzZLZcSxsYehBWi0fjHCveH0vyUCNXEhGeVIqcg7D)ruI1Gz2XQHec8kV85SIkQca]] )
 
 
 end

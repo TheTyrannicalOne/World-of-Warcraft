@@ -1,51 +1,6 @@
 
 ElvCharacterDB = {
-	["ConvertKeybindings"] = true,
 	["ChatHistoryLog"] = {
-		{
-			"rez please", -- [1]
-			"Reclus-Staghelm", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Reclus-Staghelm", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			50, -- [11]
-			"Player-160-00655725", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Reclus-Staghelm|r",
-			[51] = 1637394394,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [1]
-		{
-			"noooooooooooooooooooooooooooooooooo", -- [1]
-			"Snipëz-Illidan", -- [2]
-			"", -- [3]
-			"1. General - Tanaris", -- [4]
-			"Snipëz-Illidan", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Tanaris", -- [9]
-			0, -- [10]
-			56, -- [11]
-			"Player-57-0D2BBF07", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Snipëz-Illidan|r",
-			[51] = 1637394398,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
 		{
 			"wow", -- [1]
 			"Reclus-Staghelm", -- [2]
@@ -67,7 +22,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Reclus-Staghelm|r",
 			[51] = 1637394416,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [3]
+		}, -- [1]
 		{
 			"Picked Up: Court of Farondis", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -89,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1638111697,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [4]
+		}, -- [2]
 		{
 			"Picked Up: Champions of Azeroth", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -111,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1638111697,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [5]
+		}, -- [3]
 		{
 			"Removed: The Unshackled", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -133,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1638111697,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [6]
+		}, -- [4]
 		{
 			"Removed: Armies of Legionfall", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -155,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1638111697,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [7]
+		}, -- [5]
 		{
 			"1/1 Doomwalker slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -177,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1638111734,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [8]
+		}, -- [6]
 		{
 			"WTS|cffa335ee|Hitem:163575::::::::50:64:::::::::|h[Reins of a Tamed Bloodfeaster]|h|r|cffa335ee|Hitem:163573::::::::50:64::::1:28:188:::::|h[Goldenmane's Reins]|h|r|cffa335ee|Hitem:90655::::::::50:64:::::::::|h[Reins of the Thundering Ruby Cloud Serpent]|h|r|cffa335ee|Hitem:163576::::::::50:64:::::::::|h[Captured Dune Scavenger]|h|r PST OFFER", -- [1]
 			"Smoothkinda-ArgentDawn", -- [2]
@@ -199,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaSmoothkinda|r",
 			[51] = 1638114007,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
+		}, -- [7]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14272:Player-75-05EF8790:1:12:12:21:4294967295:4294967295:4294967295:4294967295|h[Best Bud With Benefits]|h|r!", -- [1]
 			"Grimmonkey-ArgentDawn", -- [2]
@@ -221,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Grimmonkey|r",
 			[51] = 1639340465,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [10]
+		}, -- [8]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:975:Player-75-0A99E86B:1:12:21:21:4294967295:4294967295:4294967295:4294967295|h[200 Daily Quests Completed]|h|r!", -- [1]
 			"Zypaleth-TheScryers", -- [2]
@@ -243,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Zypaleth-TheScryers|r",
 			[51] = 1640112686,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [11]
+		}, -- [9]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:15313:Player-75-058380E2:1:12:25:21:4294967295:4294967295:4294967295:4294967295|h[Rockin' Rollin' Racer]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -265,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1640498447,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [12]
+		}, -- [10]
 		{
 			"Cheap Cheap cheap! Mythic 0-25's! Timed/Untimed/Armor Stack/Specific keys. CHEAP ASF Raid Deals + AOTC's Mythic SoD !! >>GOLD ONLY< PST!!", -- [1]
 			"Claireslb-ArgentDawn", -- [2]
@@ -287,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cClaireslb|r",
 			[51] = 1641390369,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
+		}, -- [11]
 		{
 			"**Flash Deals** Guaranteed Cheapest || Mythic 0-25's || Full Clear H/M SoD / AOTC || RBG/Arena Boosts || Leveling Boosts ||  Torghast 1-12 || Cheapest Mythic SoD 10/10! >BUY 2 KEYS FREE ARMOR STACK< Advertiser Verify available >GOLD ONLY<", -- [1]
 			"Claireslb-ArgentDawn", -- [2]
@@ -309,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cClaireslb|r",
 			[51] = 1641390712,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
+		}, -- [12]
 		{
 			"anyone interested in a handful of |cff1eff00|Hitem:169475::::::::40:269:::::::::|h[Barnacled Lockbox]|h|r?", -- [1]
 			"Chowyunfat-TheScryers", -- [2]
@@ -331,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Chowyunfat-TheScryers|r",
 			[51] = 1643516727,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
+		}, -- [13]
 		{
 			"Removed: Blood Infusion", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -353,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643577643,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [16]
+		}, -- [14]
 		{
 			"Removed: The Nighthold: Talisman of the Shal'dorei", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -375,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643577643,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [17]
+		}, -- [15]
 		{
 			"Removed: The Nighthold: Talisman of the Shal'dorei", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -397,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643577643,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [18]
+		}, -- [16]
 		{
 			"Removed: The Nighthold: Talisman of the Shal'dorei", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -419,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643577643,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [19]
+		}, -- [17]
 		{
 			"Removed: Tomb of Sargeras: Aegwynn's Path", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -441,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643577643,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [20]
+		}, -- [18]
 		{
 			"Removed: Reconstructing \"Fear and Flesh\"", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -463,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643577643,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [21]
+		}, -- [19]
 		{
 			"Removed: Dream Catcher", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -485,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643577643,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [22]
+		}, -- [20]
 		{
 			"Removed: The Eternal Palace: We Can Make It Stronger...", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -507,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643577643,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [23]
+		}, -- [21]
 		{
 			"Removed: Antorus, the Burning Throne: The Heart of Argus", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -529,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643577643,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [24]
+		}, -- [22]
 		{
 			"Removed: Antorus, the Burning Throne: Dark Passage", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -551,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643577643,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [25]
+		}, -- [23]
 		{
 			"Picked Up: A Call to Bastion", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -573,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643577687,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [26]
+		}, -- [24]
 		{
 			"Picked Up: Return Lost Souls", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -595,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643577695,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [27]
+		}, -- [25]
 		{
 			"Picked Up: Sanctum Upgrade: Command Table", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -617,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643577722,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [28]
+		}, -- [26]
 		{
 			"Picked Up: Sanctum Upgrade: Anima Conductor", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -639,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643577724,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [29]
+		}, -- [27]
 		{
 			"1/1 Command Table activated", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -661,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643577752,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [30]
+		}, -- [28]
 		{
 			"Completed: Sanctum Upgrade: Command Table", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -683,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643577764,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [31]
+		}, -- [29]
 		{
 			"Picked Up: Advancing Our Efforts", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -705,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643577768,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [32]
+		}, -- [30]
 		{
 			"Completed: Advancing Our Efforts", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -727,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643577823,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [33]
+		}, -- [31]
 		{
 			"1/1 Anima Conductor activated", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -749,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643577875,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [34]
+		}, -- [32]
 		{
 			"Completed: Sanctum Upgrade: Anima Conductor", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -771,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643577886,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [35]
+		}, -- [33]
 		{
 			"Picked Up: The Anima Must Flow", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -793,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643577892,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [36]
+		}, -- [34]
 		{
 			"Picked Up: Challenges in Bastion", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -815,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643577907,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [37]
+		}, -- [35]
 		{
 			"Picked Up: Aiding Ardenweald", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -837,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643577912,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [38]
+		}, -- [36]
 		{
 			"Picked Up: A Rousing Aroma", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -859,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578065,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [39]
+		}, -- [37]
 		{
 			"1/4 Pungent Swarmer Toxin", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -881,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578135,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [40]
+		}, -- [38]
 		{
 			"2/4 Pungent Swarmer Toxin", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -903,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578170,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [41]
+		}, -- [39]
 		{
 			"3/4 Pungent Swarmer Toxin", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -925,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578219,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [42]
+		}, -- [40]
 		{
 			"4/4 Pungent Swarmer Toxin", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -947,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578247,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [43]
+		}, -- [41]
 		{
 			"Completed: A Rousing Aroma", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -969,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578284,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [44]
+		}, -- [42]
 		{
 			"Picked Up: Safe in the Shadows", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -991,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578286,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [45]
+		}, -- [43]
 		{
 			"Picked Up: Rubble Rummaging", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1013,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578288,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [46]
+		}, -- [44]
 		{
 			"1/3 Search for clues", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1035,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578395,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [47]
+		}, -- [45]
 		{
 			"2/3 Search for clues", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1057,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578460,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [48]
+		}, -- [46]
 		{
 			"3/3 Search for clues", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1079,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578462,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [49]
+		}, -- [47]
 		{
 			"1/1 Shackle Key", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1101,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578478,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [50]
+		}, -- [48]
 		{
 			"Completed: Safe in the Shadows", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1123,7 +1078,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578506,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [51]
+		}, -- [49]
 		{
 			"Completed: Rubble Rummaging", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1145,7 +1100,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578508,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [52]
+		}, -- [50]
 		{
 			"Picked Up: Setting Sabina Free", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1167,7 +1122,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578508,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [53]
+		}, -- [51]
 		{
 			"1/1 Release Sabina", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1189,7 +1144,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578525,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [54]
+		}, -- [52]
 		{
 			"1/1 Sabina slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1211,7 +1166,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578540,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [55]
+		}, -- [53]
 		{
 			"Completed: Setting Sabina Free", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1233,7 +1188,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578544,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [56]
+		}, -- [54]
 		{
 			"Picked Up: Soul Snares", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1255,7 +1210,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578659,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [57]
+		}, -- [55]
 		{
 			"2/8 Souls liberated", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1277,7 +1232,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578670,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [58]
+		}, -- [56]
 		{
 			"3/8 Souls liberated", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1299,7 +1254,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578693,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [59]
+		}, -- [57]
 		{
 			"4/8 Souls liberated", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1321,7 +1276,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578695,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [60]
+		}, -- [58]
 		{
 			"5/8 Souls liberated", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1343,7 +1298,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578730,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [61]
+		}, -- [59]
 		{
 			"6/8 Souls liberated", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1365,7 +1320,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578746,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [62]
+		}, -- [60]
 		{
 			"1/12 Dredhollow threats slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1387,7 +1342,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578748,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [63]
+		}, -- [61]
 		{
 			"2/12 Dredhollow threats slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1409,7 +1364,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578757,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [64]
+		}, -- [62]
 		{
 			"7/8 Souls liberated", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1431,7 +1386,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578764,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [65]
+		}, -- [63]
 		{
 			"3/12 Dredhollow threats slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1453,7 +1408,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578794,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [66]
+		}, -- [64]
 		{
 			"8/8 Souls liberated", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1475,7 +1430,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578797,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [67]
+		}, -- [65]
 		{
 			"4/12 Dredhollow threats slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1497,7 +1452,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578819,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [68]
+		}, -- [66]
 		{
 			"5/12 Dredhollow threats slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1519,7 +1474,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578833,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [69]
+		}, -- [67]
 		{
 			"6/12 Dredhollow threats slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1541,7 +1496,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578861,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [70]
+		}, -- [68]
 		{
 			"7/12 Dredhollow threats slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1563,7 +1518,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578910,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [71]
+		}, -- [69]
 		{
 			"8/12 Dredhollow threats slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1585,7 +1540,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578914,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [72]
+		}, -- [70]
 		{
 			"9/12 Dredhollow threats slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1607,7 +1562,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578937,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [73]
+		}, -- [71]
 		{
 			"10/12 Dredhollow threats slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1629,7 +1584,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578940,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [74]
+		}, -- [72]
 		{
 			"11/12 Dredhollow threats slain", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1651,7 +1606,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578973,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [75]
+		}, -- [73]
 		{
 			"Completed: Soul Snares", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1673,7 +1628,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643578974,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [76]
+		}, -- [74]
 		{
 			"Picked Up: The Night Market", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1695,7 +1650,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643579082,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [77]
+		}, -- [75]
 		{
 			"280/1000 Anima sources", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1717,7 +1672,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643579082,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [78]
+		}, -- [76]
 		{
 			"Completed: The Night Market", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1739,7 +1694,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643579124,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [79]
+		}, -- [77]
 		{
 			"Picked Up: A Very Special Guest", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1761,7 +1716,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643579125,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [80]
+		}, -- [78]
 		{
 			"Completed: A Very Special Guest", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1783,7 +1738,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643579144,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [81]
+		}, -- [79]
 		{
 			"Picked Up: Favor: She Had a Stone Heart", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1805,7 +1760,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643579681,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [82]
+		}, -- [80]
 		{
 			"Picked Up: The Strength of Sinfall", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1827,7 +1782,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643579824,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [83]
+		}, -- [81]
 		{
 			"Picked Up: Retaining the Court", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1849,7 +1804,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643579840,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [84]
+		}, -- [82]
 		{
 			"Removed: The Strength of Sinfall", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1871,7 +1826,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643579841,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [85]
+		}, -- [83]
 		{
 			"Removed: Retaining the Court", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1893,7 +1848,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643579862,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [86]
+		}, -- [84]
 		{
 			"Picked Up: Assault: The Black Empire", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1915,7 +1870,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643580173,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [87]
+		}, -- [85]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14800:Player-75-058380E2:1:1:30:22:4294967295:4294967295:4294967295:4294967295|h[Sojourner of Ardenweald]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1937,7 +1892,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643585136,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [88]
+		}, -- [86]
 		{
 			"Summoner Gerard up]", -- [1]
 			"Sagerose-EmeraldDream", -- [2]
@@ -1959,7 +1914,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaSagerose-EmeraldDream|r",
 			[51] = 1643586750,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [87]
 		{
 			"Visectus up", -- [1]
 			"Sagerose-EmeraldDream", -- [2]
@@ -1981,7 +1936,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaSagerose-EmeraldDream|r",
 			[51] = 1643586757,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [88]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:15053:Player-75-0BB5DC96:1:1:30:22:4294967295:4294967295:4294967295:4294967295|h[Explore Korthia]|h|r!", -- [1]
 			"Lhegacy-TheScryers", -- [2]
@@ -2003,7 +1958,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lhegacy-TheScryers|r",
 			[51] = 1643590087,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [91]
+		}, -- [89]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14754:Player-75-058380E2:1:1:30:22:4294967295:4294967295:4294967295:4294967295|h[The Forgotten One]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2025,7 +1980,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643590187,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [92]
+		}, -- [90]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14463:Player-75-058380E2:1:1:30:22:4294967295:4294967295:4294967295:4294967295|h[Skoldus Hall]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2047,7 +2002,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643591615,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [93]
+		}, -- [91]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14759:Player-75-058380E2:1:1:30:22:4294967295:4294967295:4294967295:4294967295|h[It's Coming Back to Me...]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2069,7 +2024,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643591724,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [94]
+		}, -- [92]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:15076:Player-75-058380E2:1:1:30:22:4294967295:4294967295:4294967295:4294967295|h[The Box of Many Things]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2091,7 +2046,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643591761,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [95]
+		}, -- [93]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14499:Player-75-058380E2:1:1:30:22:4294967295:4294967295:4294967295:4294967295|h[Phanciful]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2113,7 +2068,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643592721,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [96]
+		}, -- [94]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14493:Player-75-058380E2:1:1:30:22:4294967295:4294967295:4294967295:4294967295|h[The Upper Reaches]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2135,7 +2090,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643593754,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [97]
+		}, -- [95]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14776:Player-75-058380E2:1:1:30:22:4294967295:4294967295:4294967295:4294967295|h[For the Hoarder!]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2157,7 +2112,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1643593754,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [98]
+		}, -- [96]
 		{
 			"My Exhilaration will be off cooldown in 16 s", -- [1]
 			"Lillys-Blackhand", -- [2]
@@ -2179,7 +2134,53 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lillys-Blackhand|r",
 			[51] = 1643677162,
 			[50] = "CHAT_MSG_PARTY",
+		}, -- [97]
+		{
+			"Ha-Li 97.22% ~(31.76, 41.87) |cffffff00|Hworldmap:1530:3176:4187|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"1. General - Vale of Eternal Blossoms", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Vale of Eternal Blossoms", -- [9]
+			0, -- [10]
+			204, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1644158484,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"[The Crown Chemical Co.] cleared in 49 seconds [07:57]-[07:57]", -- [1]
+			"Deyndrysta-Thrall", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Deyndrysta-Thrall", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			13, -- [11]
+			"Player-3678-0D16EAF0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Deyndrysta-Thrall|r",
+			[51] = 1644325071,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [99]
+	},
+	["CliqueDatatext"] = {
 	},
 	["ChatEditHistory"] = {
 		"/wave", -- [1]
@@ -2203,6 +2204,5 @@ ElvCharacterDB = {
 		"/tsm", -- [19]
 		"/invite lillys-blackhand", -- [20]
 	},
-	["CliqueDatatext"] = {
-	},
+	["ConvertKeybindings"] = true,
 }

@@ -264,3 +264,4 @@ TomCats-LoveIsInTheAir: disabled
 TomCats-LunarFestival: disabled
 TomCats-Noblegarden: disabled
 ElvUI_CustomTags: disabled
+LittleWigs_Classic: enabled

@@ -52,16 +52,33 @@ QuestTogether = {
 				"0/1 An empty bookshelf", -- [1]
 			},
 		},
+		[24536] = {
+			["title"] = "Something Stinks",
+			["objectives"] = {
+				"0/6 Perfumed Guards Analyzed", -- [1]
+			},
+		},
 		[42129] = {
 			["title"] = "The Pendant of Starlight",
 			["objectives"] = {
 				"0/1 Pendant of Starlight", -- [1]
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
+		[42719] = {
+			["title"] = "Eye of Azshara: Cleansing the Dreamway",
 			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+				"0/25 Rarefied Water", -- [1]
+				"0/1 Wrath of Azshara slain", -- [2]
+			},
+		},
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
+			["objectives"] = {
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
 		[36614] = {
@@ -71,46 +88,16 @@ QuestTogether = {
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
-		[56120] = {
-			["title"] = "The Unshackled",
-			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
-			},
-		},
-		[50602] = {
-			["title"] = "Talanji's Expedition",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Nazmir.", -- [1]
-			},
-		},
-		[40019] = {
-			["title"] = "An Empathetic Herb",
-			["objectives"] = {
-				"9/15 Healthy Dreamleaf", -- [1]
-				"5/5 Blight-Infested Dreamleaf", -- [2]
-			},
-		},
 		[44948] = {
 			["title"] = "Raising Your Snowfeather",
 			["objectives"] = {
 				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
-		[44555] = {
-			["title"] = "Khadgar's Discovery",
-			["objectives"] = {
-			},
-		},
 		[44989] = {
 			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
 				"Level 25 Sharptalon Hatchling", -- [1]
-			},
-		},
-		[31486] = {
-			["title"] = "Everything I Know About Cooking",
-			["objectives"] = {
-				"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
 			},
 		},
 		[40329] = {
@@ -125,19 +112,45 @@ QuestTogether = {
 				"0/1 Review final foothold", -- [1]
 			},
 		},
+		[44555] = {
+			["title"] = "Khadgar's Discovery",
+			["objectives"] = {
+			},
+		},
+		[31486] = {
+			["title"] = "Everything I Know About Cooking",
+			["objectives"] = {
+				"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
+			},
+		},
+		[50603] = {
+			["title"] = "Voldunai",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Vol'dun", -- [1]
+			},
+		},
+		[50604] = {
+			["title"] = "Tortollan Seekers",
+			["objectives"] = {
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+			},
+		},
 		[51432] = {
 			["title"] = "An Unusual Mentor",
 			["objectives"] = {
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
+		[50606] = {
+			["title"] = "Horde War Effort",
 			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
+				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
+			},
+		},
+		[40019] = {
+			["title"] = "An Empathetic Herb",
+			["objectives"] = {
+				"9/15 Healthy Dreamleaf", -- [1]
+				"5/5 Blight-Infested Dreamleaf", -- [2]
 			},
 		},
 		[61874] = {
@@ -145,13 +158,6 @@ QuestTogether = {
 			["objectives"] = {
 				"1/1 Learn about your leaders' fate", -- [1]
 				"0/1 Take the Death Gate to Acherus", -- [2]
-			},
-		},
-		[42719] = {
-			["title"] = "Eye of Azshara: Cleansing the Dreamway",
-			["objectives"] = {
-				"0/25 Rarefied Water", -- [1]
-				"0/1 Wrath of Azshara slain", -- [2]
 			},
 		},
 		[49901] = {
@@ -163,8 +169,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

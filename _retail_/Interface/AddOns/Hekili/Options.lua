@@ -9,7 +9,7 @@ local scripts = Hekili.Scripts
 local state = Hekili.State
 
 local format, lower, match, upper = string.format, string.lower, string.match, string.upper
-local insert, remove, wipe = table.insert, table.remove, table.wipe
+local insert, remove, sort, wipe = table.insert, table.remove, table.sort, table.wipe
 
 local callHook = ns.callHook
 local getSpecializationID = ns.getSpecializationID
@@ -257,6 +257,10 @@ local oneTimeFixes = {
         for id, spec in pairs( p.specs ) do
             spec.gcdSync = nil
         end
+    end,
+
+    forceEnableEnhancedRecheckBoomkin_20210712 = function( p )
+        p.specs[ 102 ].enhancedRecheck = true
     end,
 }
 
@@ -551,6 +555,7 @@ function Hekili:GetDefaults()
             enabled = true,
             minimapIcon = false,
             autoSnapshot = true,
+            screenshot = true,
 
             toggles = {
                 pause = {
@@ -924,7 +929,7 @@ do
 
     local ACD = LibStub( "AceConfigDialog-3.0" )
     local LSM = LibStub( "LibSharedMedia-3.0" )
-    local SF = SpellFlash or SpellFlashCore
+    local SF = SpellFlashCore
 
     local fontStyles = {
         ["MONOCHROME"] = "Monochrome",
@@ -1999,14 +2004,108 @@ do
                                 hidden = function () return SF == nil end,
                             },
 
+                            size = {
+                                type = "range",
+                                name = "Size",
+                                desc = "Specify the size of the SpellFlash glow.  The default size is |cFFFFD100240|r.",
+                                order = 3,
+                                min = 0,
+                                max = 240 * 8,
+                                step = 1,
+                                width = "full",
+                                hidden = function () return SF == nil end,
+                            },
+
+                            brightness = {
+                                type = "range",
+                                name = "Brightness",
+                                desc = "Specify the brightness of the SpellFlash glow.  The default brightness is |cFFFFD100100|r.",
+                                order = 4,
+                                min = 0,
+                                max = 100,
+                                step = 1,
+                                width = "full",
+                                hidden = function () return SF == nil end,
+                            },
+
+                            blink = {
+                                type = "toggle",
+                                name = "Blink",
+                                desc = "If enabled, the whole action button will fade in and out.  The default is |cFFFF0000disabled|r.",
+                                order = 5,
+                                width = "full",
+                                hidden = function () return SF == nil end,
+                            },
+
                             suppress = {
                                 type = "toggle",
                                 name = "Hide Display",
                                 desc = "If checked, the addon will not show this display and will make recommendations via SpellFlash only.",
-                                order = 3,
+                                order = 10,
                                 width = "full",
                                 hidden = function () return SF == nil end,
-                            }
+                            },
+
+
+                            globalHeader = {
+                                type = "header",
+                                name = "Global SpellFlash Settings",
+                                order = 20,
+                                width = "full",
+                                hidden = function () return SF == nil end,
+                            },
+
+                            texture = {
+                                type = "select",
+                                name = "Texture",
+                                desc = "Your selection will override the SpellFlash texture on any frame flashed by the addon.  This setting is universal to all displays.",
+                                order = 21,
+                                width = "full",
+                                get = function()
+                                    return Hekili.DB.profile.flashTexture
+                                end,
+                                set = function( info, value )
+                                    Hekili.DB.profile.flashTexture = value
+                                end,
+                                values = {
+                                    ["Interface\\Cooldown\\star4"] = "Star (Default)",                                    
+                                    ["Interface\\Cooldown\\ping4"] = "Circle",
+                                    ["Interface\\Cooldown\\starburst"] = "Starburst",
+                                    ["Interface\\AddOns\\Hekili\\Textures\\MonoCircle2"] = "Monochrome Circle Thin",
+                                    ["Interface\\AddOns\\Hekili\\Textures\\MonoCircle5"] = "Monochrome Circle Thick",
+                                },
+                                hidden = function () return SF == nil end,
+                            },
+
+                            fixedSize = {
+                                type = "toggle",
+                                name = "Fixed Size",
+                                desc = "If checked, the SpellFlash pulse (grow and shrink) animation will be suppressed for all displays.",
+                                order = 21,
+                                width = "full",
+                                get = function()
+                                    return Hekili.DB.profile.fixedSize
+                                end,
+                                set = function( info, value )
+                                    Hekili.DB.profile.fixedSize = value
+                                end,
+                                hidden = function () return SF == nil end,
+                            },
+
+                            fixedBrightness = {
+                                type = "toggle",
+                                name = "Fixed Brightness",
+                                desc = "If checked, the SpellFlash glow will not dim and brighten for all displays.",
+                                order = 22,
+                                width = "full",
+                                get = function()
+                                    return Hekili.DB.profile.fixedBrightness
+                                end,
+                                set = function( info, value )
+                                    Hekili.DB.profile.fixedBrightness = value
+                                end,
+                                hidden = function () return SF == nil end,
+                            },
                         },
                     },
 
@@ -3430,15 +3529,21 @@ do
         end
 
         local use_items_found = false
+        local trinket1_found = false
+        local trinket2_found = false
 
         for _, list in pairs( output ) do
             for i, entry in ipairs( list ) do
                 if entry.action == "use_items" then use_items_found = true end
+                if entry.action == "trinket1" then trinket1_found = true end
+                if entry.action == "trinket2" then trinket2_found = true end
             end
         end
 
-        if not use_items_found then
-            AddWarning( "The 'use_items' action was not found in this import." )
+        if not use_items_found and not ( trinket1_found and trinket2_found ) then
+            AddWarning( "This profile is missing support for generic trinkets.  It is recommended that every priority includes either:\n" ..
+                " - [Use Items], which includes any trinkets not explicitly included in the priority; or\n" ..
+                " - [Trinket 1] and [Trinket 2], which will recommend the trinket for the numbered slot." )
         end
 
         if not output.default then output.default = {} end
@@ -4628,6 +4733,14 @@ do
                                             local name, _, tex = GetSpellInfo( spell )
                                             
                                             msg = msg .. "\n\n|T" .. tex .. ":0|t |cFFFFD100" .. name .. "|r is on your action bar and will be used for all your " .. UnitClass("player") .. " pets."
+                                        else
+                                            msg = msg .. "\n\n|cFFFF0000Requires pet ability on one of your action bars.|r"
+                                        end
+
+                                        if GetCVar( "nameplateShowEnemies" ) == "1" then
+                                            msg = msg .. "\n\nEnemy nameplates are |cFF00FF00enabled|r and will be used to detect targets near your pet."
+                                        else
+                                            msg = msg .. "\n\n|cFFFF0000Requires enemy nameplates.|r"
                                         end
 
                                         return msg
@@ -4639,37 +4752,49 @@ do
                                     order = 3.1
                                 },
 
-                                addPetAbility = {
+                                petbasedGuidance = {
                                     type = "description",
                                     name = function ()
-                                        local out = "For pet-based detection to work, you must take an ability from your |cFF00FF00pet's spellbook|r and place it on one of |cFF00FF00your|r action bars.\n\n"
-                                        local spells = Hekili:GetPetBasedTargetSpells()
+                                        local out
 
-                                        if not spells then return " " end
+                                        if not self:HasPetBasedTargetSpell() then
+                                            out = "For pet-based detection to work, you must take an ability from your |cFF00FF00pet's spellbook|r and place it on one of |cFF00FF00your|r action bars.\n\n"
+                                            local spells = Hekili:GetPetBasedTargetSpells()
 
-                                        out = out .. "For %s, |T%d:0|t |cFFFFD100%s|r is recommended due to its range.  It will work for all your pets."
+                                            if not spells then return " " end
 
-                                        if spells.count > 1 then
-                                            out = out .. "\nAlternative(s): "
+                                            out = out .. "For %s, |T%d:0|t |cFFFFD100%s|r is recommended due to its range.  It will work for all your pets."
+
+                                            if spells.count > 1 then
+                                                out = out .. "\nAlternative(s): "
+                                            end
+
+                                            local n = 0
+
+                                            for spell in pairs( spells ) do                                            
+                                                if type( spell ) == "number" then
+                                                    n = n + 1
+
+                                                    local name, _, tex = GetSpellInfo( spell )
+
+                                                    if n == 1 then
+                                                        out = string.format( out, UnitClass( "player" ), tex, name )
+                                                    elseif n == 2 and spells.count == 2 then
+                                                        out = out .. "|T" .. tex .. ":0|t |cFFFFD100" .. name .. "|r."
+                                                    elseif n ~= spells.count then
+                                                        out = out .. "|T" .. tex .. ":0|t |cFFFFD100" .. name .. "|r, "
+                                                    else
+                                                        out = out .. "and |T" .. tex .. ":0|t |cFFFFD100" .. name .. "|r."
+                                                    end
+                                                end
+                                            end
                                         end
 
-                                        local n = 0
-
-                                        for spell in pairs( spells ) do                                            
-                                            if type( spell ) == "number" then
-                                                n = n + 1
-
-                                                local name, _, tex = GetSpellInfo( spell )
-
-                                                if n == 1 then
-                                                    out = string.format( out, UnitClass( "player" ), tex, name )
-                                                elseif n == 2 and spells.count == 2 then
-                                                    out = out .. "|T" .. tex .. ":0|t |cFFFFD100" .. name .. "|r."
-                                                elseif n ~= spells.count then
-                                                    out = out .. "|T" .. tex .. ":0|t |cFFFFD100" .. name .. "|r, "
-                                                else
-                                                    out = out .. "and |T" .. tex .. ":0|t |cFFFFD100" .. name .. "|r."
-                                                end
+                                        if GetCVar( "nameplateShowEnemies" ) ~= "1" then
+                                            if not out then
+                                                out = "|cFFFF0000WARNING!|r  Pet-based target detection requires |cFFFFD100enemy nameplates|r to be enabled."
+                                            else
+                                                out = out .. "\n\n|cFFFF0000WARNING!|r  Pet-based target detection requires |cFFFFD100enemy nameplates|r to be enabled."
                                             end
                                         end
                                         
@@ -4680,13 +4805,12 @@ do
                                     hidden = function ( info, val )
                                         if Hekili:GetPetBasedTargetSpells() == nil then return true end
                                         if self.DB.profile.specs[ id ].petbased == false then return true end
-                                        if self:HasPetBasedTargetSpell() then return true end
+                                        if self:HasPetBasedTargetSpell() and GetCVar( "nameplateShowEnemies" ) == "1" then return true end
 
                                         return false
                                     end,
                                     order = 3.11,
-                                },
-
+                                },                            
 
                                 -- Damage Detection Quasi-Group
                                 damage = {
@@ -4884,14 +5008,14 @@ do
                                     hidden = function () return self.DB.profile.specs[ id ].throttleRefresh == false end,
                                 },
 
-                                gcdSync = {
+                                --[[ gcdSync = {
                                     type = "toggle",
                                     name = "Start after Global Cooldown",
                                     desc = "If checked, the addon's first recommendation will be delayed to the start of the GCD in your Primary and AOE displays.  This can reduce flickering if trinkets or off-GCD abilities are appearing briefly during the global cooldown, " ..
                                         "but will cause abilities intended to be used while the GCD is active (i.e., Recklessness) to bounce backward in the queue.",
                                     width = "full",
                                     order = 4,
-                                },
+                                }, ]]
 
                                 enhancedRecheck = {
                                     type = "toggle",
@@ -5186,7 +5310,8 @@ do
                 packDesc = {
                     type = "description",
                     name = "Priorities (or action packs) are bundles of action lists used to make recommendations for each specialization.  " ..
-                        "They can be customized and shared.",
+                        "They can be customized and shared.  |cFFFF0000Imported SimulationCraft priorities often require some translation before " ..
+                        "they will work with this addon.  No support is offered for customized or imported priorities.|r",
                     order = 1,
                     fontSize = "medium",
                 },
@@ -8162,23 +8287,25 @@ function Hekili:GenerateProfile()
     end
 
     local settings
-    for k, v in orderedPairs( state.settings.spec ) do        
-        if type( v ) ~= "table" then
-            if settings then settings = format( "%s\n    %s = %s", settings, k, tostring( v ) )
-            else settings = format( "%s = %s", k, tostring( v ) ) end
+    if state.settings.spec then
+        for k, v in orderedPairs( state.settings.spec ) do        
+            if type( v ) ~= "table" then
+                if settings then settings = format( "%s\n    %s = %s", settings, k, tostring( v ) )
+                else settings = format( "%s = %s", k, tostring( v ) ) end
+            end
         end
-    end
-    for k, v in orderedPairs( state.settings.spec.settings ) do
-        if type( v ) ~= "table" then
-            if settings then settings = format( "%s\n    %s = %s", settings, k, tostring( v ) )
-            else settings = format( "%s = %s", k, tostring( v ) ) end
+        for k, v in orderedPairs( state.settings.spec.settings ) do
+            if type( v ) ~= "table" then
+                if settings then settings = format( "%s\n    %s = %s", settings, k, tostring( v ) )
+                else settings = format( "%s = %s", k, tostring( v ) ) end
+            end
         end
     end
 
     local toggles
     for k, v in orderedPairs( self.DB.profile.toggles ) do
         if type( v ) == "table" and rawget( v, "value" ) ~= nil then
-            if toggles then toggles = format( "%s\n    %s = %s", toggles, k, tostring( v.value ) )
+            if toggles then toggles = format( "%s\n    %s = %s %s", toggles, k, tostring( v.value ), ( v.separate and "[separate]" or "" ) )
             else toggles = format( "%s = %s", k, tostring( v.value ) ) end
         end
     end
@@ -8214,6 +8341,9 @@ function Hekili:GenerateProfile()
         settings or "none",
         toggles or "none" )
 end
+
+
+
 
 
 function Hekili:GetOptions()
@@ -8299,6 +8429,81 @@ function Hekili:GetOptions()
                     }
                 }
             },
+
+            
+            --[[ gettingStarted = {
+                type = "group",
+                name = "Getting Started",
+                order = 11,
+                childGroups = "tree",
+                args = {
+                    q1 = {
+                        type = "header",
+                        name = "Moving the Displays",
+                        order = 1,
+                        width = "full"
+                    },
+                    a1 = {
+                        type = "description",
+                        name = "When these options are open, all displays are visible and can be moved by clicking and dragging.  You can move this options screen out of the way by clicking the |cFFFFD100Hekili|r title and dragging it out of the way.\n\n" ..
+                            "You can also set precise X/Y positioning in the |cFFFFD100Displays|r section, on each display's |cFFFFD100Main|r tab.\n\n" ..
+                            "You can also move the displays by typing |cFFFFD100/hek move|r in chat.  Type |cFFFFD100/hek move|r again to lock the displays.\n",
+                        order = 1.1,
+                        width = "full",
+                    },
+
+                    q2 = {
+                        type = "header",
+                        name = "Using Toggles",
+                        order = 2,
+                        width = "full",                        
+                    },
+                    a2 = {
+                        type = "description",
+                        name = "The addon has several |cFFFFD100Toggles|r available that help you control the type of recommendations you receive while in combat.  See the |cFFFFD100Toggles|r section for specifics.\n\n" ..
+                            "|cFFFFD100Mode|r:  By default, |cFFFFD100Automatic Mode|r automatically detects how many targets you are engaged with, and gives recommendations based on the number of targets detected.  In some circumstances, you may want the addon to pretend there is only 1 target, or that there are multiple targets, " ..
+                            "or show recommendations for both scenarios.  You can use the |cFFFFD100Mode|r toggle to swap between Automatic, Single-Target, AOE, and Reactive modes.\n\n" ..                            
+                            "|cFFFFD100Abilities|r:  Some of your abilities can be controlled by specific toggles.  For example, your major DPS cooldowns are assigned to the |cFFFFD100Cooldowns|r toggle.  This feature allows you to enable/disable these abilities in combat by using the assigned keybinding.  You can add abilities to (or remove abilities from) " ..
+                            "these toggles in the |cFFFFD100Abilities|r or |cFFFFD100Gear and Trinkets|r sections.  When removed from a toggle, an ability can be recommended at any time, regardless of whether that toggle is on or off.\n\n" ..
+                            "|cFFFFD100Displays|r:  Your Interrupts, Defensives, and Cooldowns toggles have a special relationship with the displays of the same names.  If |cFFFFD100Show Separately|r is checked for that toggle, those abilities will show in that toggle's display instead of the |cFFFFD100Primary|r or |cFFFFD100AOE|r display.\n",
+                        order = 2.1,
+                        width = "full",
+                    },
+
+                    q3 = {
+                        type = "header",
+                        name = "Importing a Profile",
+                        order = 3,
+                        width = "full",                    
+                    },
+                    a3 = {
+                        type = "description",
+                        name = "|cFFFF0000You do not need to import a SimulationCraft profile to use this addon.|r\n\n" ..
+                            "Before trying to import a profile, please consider the following:\n\n" ..
+                            " - SimulationCraft action lists tend not to change significantly for individual characters.  The profiles are written to include conditions that work for all gear, talent, and other factors combined.\n\n" ..
+                            " - Most SimulationCraft action lists require some additional customization to work with the addon.  For example, |cFFFFD100target_if|r conditions don't translate directly to the addon and have to be rewritten.\n\n" ..
+                            " - Some SimulationCraft action profiles are revised for the addon to be more efficient and use less processing time.\n\n" ..
+                            "The default priorities included within the addon are kept up to date, are compatible with your character, and do not require additional changes.  |cFFFF0000No support is offered for custom or imported priorities from elsewhere.|r\n",
+                        order = 3.1,
+                        width = "full",
+                    },
+
+                    q4 = {
+                        type = "header",
+                        name = "Something's Wrong",
+                        order = 4,
+                        width = "full",
+                    },
+                    a4 = {
+                        type = "description",
+                        name = "You can submit questions, concerns, and ideas via the link found in the |cFFFFD100Issue Reporting|r section.\n\n" ..
+                            "If you disagree with the addon's recommendations, the |cFFFFD100Snapshot|r feature allows you to capture a log of the addon's decision-making taken at the exact moment specific recommendations are shown.  " ..
+                            "When you submit your question, be sure to take a snapshot (not a screenshot!), place the text on Pastebin, and include the link when you submit your issue ticket.",
+                        order = 4.1,
+                        width = "full",
+                    }
+                }
+            }, ]]
 
             abilities = {
                 type = "group",
@@ -8386,17 +8591,26 @@ function Hekili:GetOptions()
                 args = {
                     autoSnapshot = {
                         type = "toggle",
-                        name = "Automatically Snapshot When Unable to Make a Recommendation",
+                        name = "Auto Snapshot",
                         desc = "If checked, the addon will automatically create a snapshot whenever it failed to generate a recommendation.\n\n" ..
                             "This automatic snapshot can only occur once per episode of combat.",
                         order = 1,
-                        width = "full"
+                        width = "full",
+                    },
+
+                    screenshot = {
+                        type = "toggle",
+                        name = "Take Screenshot",
+                        desc = "If checked, the addon will take a screenshot when you manually create a snapshot.\n\n" ..
+                            "Submitting both with your issue tickets will provide useful information for investigation purposes.",
+                        order = 2,
+                        width = "full",
                     },
 
                     prefHeader = {
                         type = "header",
                         name = "Snapshots / Troubleshooting",
-                        order = 2,
+                        order = 2.5,
                         width = "full"
                     },
 
@@ -8546,8 +8760,6 @@ end
 
 function Hekili:RefreshOptions()
     if not self.Options then return end
-
-    -- db.args.abilities = ns.AbilitySettings()
 
     self:EmbedDisplayOptions()
     self:EmbedPackOptions()
@@ -8999,7 +9211,23 @@ do
     }
 
     local info = {}
+    local priorities = {}
 
+    local function countPriorities()
+        wipe( priorities )
+
+        local spec = state.spec.id
+
+        for priority, data in pairs( Hekili.DB.profile.packs ) do
+            if data.spec == spec then
+                insert( priorities, priority )
+            end
+        end
+
+        sort( priorities )
+
+        return #priorities
+    end
 
     function Hekili:CmdLine( input )
         if not input or input:trim() == "" or input:trim() == "makedefaults" or input:trim() == "import" or input:trim() == "skeleton" then
@@ -9015,6 +9243,7 @@ do
                 self:Print( "See the Skeleton tab for more information. ")
                 Hekili.Skeleton = ""
             end
+
             ns.StartConfiguration()
             return
 
@@ -9045,7 +9274,7 @@ do
                 insert( args, lower( arg ) )
             end
 
-            if args[1] == "set" then
+            if ( "set" ):match( "^" .. args[1] ) then
                 local spec = Hekili.DB.profile.specs[ state.spec.id ]
                 local prefs = spec.settings
                 local settings = class.specs[ state.spec.id ].settings
@@ -9053,13 +9282,15 @@ do
                 local index
 
                 if args[2] then
-                    if args[2] == "target_swap" then
+                    if ( "target_swap" ):match( "^" .. args[2] ) then
                         index = -1
-                    elseif args[2] == "mode" then
+                    elseif ( "mode" ):match( "^" .. args[2] ) then
                         index = -2
+                    elseif ( "priority" ):match( "^" .. args[2] ) then
+                        index = -3
                     else
                         for i, setting in ipairs( settings ) do
-                            if setting.name == args[2] then
+                            if setting.name:match( "^" .. args[2] ) then
                                 index = i
                                 break
                             end
@@ -9071,7 +9302,7 @@ do
                     -- No arguments, list options.
                     local output = "Use |cFFFFD100/hekili set|r to adjust your specialization options via chat or macros.\n\nOptions for " .. state.spec.name .. " are:"
 
-                    local hasToggle, hasNumber = true, false
+                    local hasToggle, hasNumber = false, false
                     local exToggle, exNumber
 
                     for i, setting in ipairs( settings ) do
@@ -9089,10 +9320,6 @@ do
 
                     output = format( "%s\n\nTo control your display mode (currently |cFF00FF00%s|r):\n - Toggle Mode:  |cFFFFD100/hek set mode|r\n - Set Mode - |cFFFFD100/hek set mode aoe|r (or |cFFFFD100automatic|r, |cFFFFD100single|r, |cFFFFD100dual|r, |cFFFFD100reactive|r)", output, self.DB.profile.toggles.mode.value or "unknown" )
 
-
-                    if not hasToggle and not hasNumber then
-                        output = output .. "cFFFFD100<none>|r"
-                    end
 
                     if hasToggle then
                         output = format( "%s\n\nTo set a |cFFFFD100toggle|r, use the following commands:\n" ..
@@ -9158,7 +9385,7 @@ do
                             return
                         end
                     else
-                        to = not prefs[ setting.name ]
+                        to = not setting.info.get( info )
                     end
                     
                     Hekili:Print( format( "%s set to %s.", setting.info.name, ( to and "|cFF00FF00ON|r" or "|cFFFF0000OFF|r" ) ) )
@@ -9196,7 +9423,7 @@ do
                 end
 
             
-            elseif args[1] == "profile" then
+            elseif ( "profile" ):match( "^" .. args[1] ) then
                 if not args[2] then
                     local output = "Use |cFFFFD100/hekili profile name|r to swap profiles via command-line or macro.\nValid profile |cFFFFD100name|rs are:"
 
@@ -9222,9 +9449,9 @@ do
                         output = format( "%s\n - |cFFFFD100%s|r %s", output, name, Hekili.DB.profile == prof and "|cFF00FF00(current)|r" or "" )
                     end
 
-                    output = format( "%s\nTo create a new profile, see |cFFFFD100/hekili|r > |cFFFFD100Profiles|r.", output )
+                    output = format( "%s\n\nTo create a new profile, see |cFFFFD100/hekili|r > |cFFFFD100Profiles|r.", output )
 
-                    Hekili:Print( output )
+                    Hekili:Notify( output )
                     return
                 end
 
@@ -9232,8 +9459,72 @@ do
                 self.DB:SetProfile( profileName )
                 return
 
-            elseif args[1] == "enable" or args[1] == "disable" then
-                local enable = args[1] == "enable"
+            elseif ( "priority" ):match( "^" .. args[1] ) then
+                local n = countPriorities()
+
+                if not args[2] then
+                    local output = "Use |cFFFFD100/hekili priority name|r to change your current specialization's priority via command-line or macro."
+
+                    if n < 2 then
+                        output = output .. "\n\n|cFFFF0000You must have multiple priorities for your specialization to use this feature.|r"
+                    else
+                        output = output .. "\nValid priority |cFFFFD100name|rs are:"
+                        for i, priority in ipairs( priorities ) do
+                            output = format( "%s\n - %s%s|r %s", output, Hekili.DB.profile.packs[ priority ].builtIn and BlizzBlue or "|cFFFFD100", priority, Hekili.DB.profile.specs[ state.spec.id ].package == priority and "|cFF00FF00(current)|r" or "" )
+                        end
+                    end
+
+                    output = format( "%s\n\nTo create a new priority, see |cFFFFD100/hekili|r > |cFFFFD100Priorities|r.", output )
+
+                    if Hekili.DB.profile.notifications.enabled then Hekili:Notify( output ) end
+                    Hekili:Print( output )
+                    return
+                end
+                
+                -- Setting priority via commandline.
+                -- Requires multiple priorities loaded for one's specialization.
+                -- This also prepares the priorities table with relevant priority names.
+
+                if n < 2 then
+                    Hekili:Print( "You must have multiple priorities for your specialization to use this feature." )
+                    return
+                end
+
+                if not args[2] then
+                    local output = "You must provide the priority name (case sensitive).\nValid options are"
+                    for i, priority in ipairs( priorities ) do
+                        output = output .. format( " %s%s|r%s", Hekili.DB.profile.packs[ priority ].builtIn and BlizzBlue or "|cFFFFD100", priority, i == #priorities and "." or "," )
+                    end
+                    Hekili:Print( output )
+                    return                        
+                end
+
+                local raw = input:match( "^%S+%s+(.+)$" )
+                local name = raw:gsub( "%%", "%%%%" ):gsub( "^%^", "%%^" ):gsub( "%$$", "%%$" ):gsub( "%(", "%%(" ):gsub( "%)", "%%)" ):gsub( "%.", "%%." ):gsub( "%[", "%%[" ):gsub( "%]", "%%]" ):gsub( "%*", "%%*" ):gsub( "%+", "%%+" ):gsub( "%-", "%%-" ):gsub( "%?", "%%?" )
+
+                for i, priority in ipairs( priorities ) do
+                    if priority:match( "^" .. name ) then
+                        Hekili.DB.profile.specs[ state.spec.id ].package = priority
+                        local output = format( "Priority set to %s%s|r.", Hekili.DB.profile.packs[ priority ].builtIn and BlizzBlue or "|cFFFFD100", priority )
+                        if Hekili.DB.profile.notifications.enabled then Hekili:Notify( output ) end
+                        Hekili:Print( output )
+                        Hekili:ForceUpdate( "CLI_TOGGLE" )
+                        return
+                    end
+                end
+
+                local output = format( "No match found for priority '%s'.\nValid options are", raw )
+
+                for i, priority in ipairs( priorities ) do
+                    output = output .. format( " %s%s|r%s", Hekili.DB.profile.packs[ priority ].builtIn and BlizzBlue or "|cFFFFD100", priority, i == #priorities and "." or "," )
+                end
+
+                if Hekili.DB.profile.notifications.enabled then Hekili:Notify( output ) end
+                Hekili:Print( output )
+                return
+
+            elseif ( "enable" ):match( "^" .. args[1] ) or ( "disable" ):match( "^" .. args[1] ) then
+                local enable = ( "enable" ):match( "^" .. args[1] ) or false
 
                 for i, buttons in ipairs( ns.UI.Buttons ) do
                     for j, _ in ipairs( buttons ) do
@@ -9255,9 +9546,26 @@ do
                     self:Disable()
                 end
 
-            else
-                LibStub( "AceConfigCmd-3.0" ):HandleCommand( "hekili", "Hekili", input )
+            elseif ( "move" ):match( "^" .. args[1] ) or ( "unlock" ):match( "^" .. args[1] ) then
+                if InCombatLockdown() then
+                    Hekili:Print( "Movers cannot be activated while in combat." )
+                    return
+                end
+
+                if not Hekili.Config then
+                    ns.StartConfiguration( true )
+                elseif ( "move" ):match( "^" .. args[1] ) and Hekili.Config then
+                    ns.StopConfiguration()
+                end
+            elseif ( "lock" ):match( "^" .. args[1] ) then
+                if Hekili.Config then
+                    ns.StopConfiguration()
+                else
+                    Hekili:Print( "Displays are not unlocked.  Use |cFFFFD100/hek move|r or |cFFFFD100/hek unlock|r to allow click-and-drag." )
+                end
             end
+        else
+            LibStub( "AceConfigCmd-3.0" ):HandleCommand( "hekili", "Hekili", input )
         end
     end
 end
@@ -9694,7 +10002,7 @@ local function Sanitize( segment, i, line, warnings )
         table.insert( warnings, "Line " .. line .. ": Converted 'covenant.X.enabled' to 'covenant.X' (" .. times .. "x)." )
     end
 
-    i, times = i:gsub( "talent%.([%w_]+)([%+%-%*%%/&|= ()<>])", "talent.%1.enabled%2" )
+    i, times = i:gsub( "talent%.([%w_]+)([%+%-%*%%/%&%|= ()<>])", "talent.%1.enabled%2" )
     if times > 0 then
         table.insert( warnings, "Line " .. line .. ": Converted 'talent.X' to 'talent.X.enabled' (" .. times .. "x)." )
     end
@@ -9704,7 +10012,7 @@ local function Sanitize( segment, i, line, warnings )
         table.insert( warnings, "Line " .. line .. ": Converted 'talent.X' to 'talent.X.enabled' at EOL (" .. times .. "x)." )
     end
 
-    i, times = i:gsub( "legendary%.([%w_]+)([%+%-%*%%/&|= ()<>])", "legendary.%1.enabled%2" )
+    i, times = i:gsub( "legendary%.([%w_]+)([%+%-%*%%/%&%|= ()<>])", "legendary.%1.enabled%2" )
     if times > 0 then
         table.insert( warnings, "Line " .. line .. ": Converted 'legendary.X' to 'legendary.X.enabled' (" .. times .. "x)." )
     end
@@ -9714,7 +10022,7 @@ local function Sanitize( segment, i, line, warnings )
         table.insert( warnings, "Line " .. line .. ": Converted 'legendary.X' to 'legendary.X.enabled' at EOL (" .. times .. "x)." )
     end
 
-    i, times = i:gsub( "([^%.])runeforge%.([%w_]+)([%+%-%*%%/=&| ()<>])", "%1runeforge.%2.enabled%3" )
+    i, times = i:gsub( "([^%.])runeforge%.([%w_]+)([%+%-%*%%/=%&%| ()<>])", "%1runeforge.%2.enabled%3" )
     if times > 0 then
         table.insert( warnings, "Line " .. line .. ": Converted 'runeforge.X' to 'runeforge.X.enabled' (" .. times .. "x)." )
     end
@@ -9724,7 +10032,7 @@ local function Sanitize( segment, i, line, warnings )
         table.insert( warnings, "Line " .. line .. ": Converted 'runeforge.X' to 'runeforge.X.enabled' at EOL (" .. times .. "x)." )
     end
 
-    i, times = i:gsub( "^runeforge%.([%w_]+)([%+%-%*%%/&|= ()<>)])", "runeforge.%1.enabled%2" )
+    i, times = i:gsub( "^runeforge%.([%w_]+)([%+%-%*%%/%&%|= ()<>)])", "runeforge.%1.enabled%2" )
     if times > 0 then
         table.insert( warnings, "Line " .. line .. ": Converted 'runeforge.X' to 'runeforge.X.enabled' (" .. times .. "x)." )
     end
@@ -9734,12 +10042,32 @@ local function Sanitize( segment, i, line, warnings )
         table.insert( warnings, "Line " .. line .. ": Converted 'runeforge.X' to 'runeforge.X.enabled' at EOL (" .. times .. "x)." )
     end
 
-    i, times = i:gsub( "conduit%.([%w_]+)([%+%-%*%%/&|= ()<>)])", "conduit.%1.enabled%2" )
+    i, times = i:gsub( "rune_word%.([%w_]+)([%+%-%*%%/%&%|= ()<>])", "buff.rune_word_%1.up%2" )
+    if times > 0 then
+        table.insert( warnings, "Line " .. line .. ": Converted 'rune_word.X' to 'buff.rune_word_X.up' (" .. times .. "x)." )
+    end
+
+    i, times = i:gsub( "rune_word%.([%w_]+)$", "buff.rune_word_%1.up" )
+    if times > 0 then
+        table.insert( warnings, "Line " .. line .. ": Converted 'rune_word.X' to 'buff.rune_word_X.up' at EOL (" .. times .. "x)." )
+    end
+
+    i, times = i:gsub( "rune_word%.([%w_]+)%.enabled([%+%-%*%%/%&%|= ()<>])", "buff.rune_word_%1.up%2" )
+    if times > 0 then
+        table.insert( warnings, "Line " .. line .. ": Converted 'rune_word.X.enabled' to 'buff.rune_word_X.up' (" .. times .. "x)." )
+    end
+
+    i, times = i:gsub( "rune_word%.([%w_]+)%.enabled$", "buff.rune_word_%1.up" )
+    if times > 0 then
+        table.insert( warnings, "Line " .. line .. ": Converted 'rune_word.X.enabled' to 'buff.rune_word_X.up' at EOL (" .. times .. "x)." )
+    end
+
+    i, times = i:gsub( "([^a-z0-9_])conduit%.([%w_]+)([%+%-%*%%/&|= ()<>)])", "%1conduit.%2.enabled%3" )
     if times > 0 then
         table.insert( warnings, "Line " .. line .. ": Converted 'conduit.X' to 'conduit.X.enabled' (" .. times .. "x)." )
     end
 
-    i, times = i:gsub( "conduit%.([%w_]+)$", "conduit.%1.enabled" )
+    i, times = i:gsub( "([^a-z0-9_])conduit%.([%w_]+)$", "%1conduit.%2.enabled" )
     if times > 0 then
         table.insert( warnings, "Line " .. line .. ": Converted 'conduit.X' to 'conduit.X.enabled' at EOL (" .. times .. "x)." )
     end
@@ -10117,11 +10445,22 @@ do
                     result.action = class.abilities[ result.effect_name ].key
                 elseif result.name and class.abilities[ result.name ] then
                     result.action = result.name
+                elseif ( result.slot or result.slots ) and class.abilities[ result.slot or result.slots ] then
+                    result.action = result.slot or result.slots
                 end
+            end
+
+            if result.action == 'use_items' and ( result.slot or result.slots ) then
+                result.action = result.slot or result.slots
             end
 
             if result.action == 'variable' and not result.op then
                 result.op = 'set'
+            end
+
+            if result.cancel_if and not result.interupt_if then
+                result.interrupt_if = result.cancel_if
+                result.cancel_if = nil
             end
 
             table.insert( output, result )
@@ -10190,7 +10529,9 @@ end
 
 -- Key Bindings
 function Hekili:MakeSnapshot( dispName, isAuto )
-    if isAuto and not Hekili.DB.profile.autoSnapshot then return end
+    if isAuto and not Hekili.DB.profile.autoSnapshot then
+        return
+    end
 
     self.ActiveDebug = true
     local success = false

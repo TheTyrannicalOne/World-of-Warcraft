@@ -31,7 +31,10 @@ WoWDBProfilerData = {
 				["NONE:0:false"] = {
 					["locations"] = {
 						["Shrine of Two Moons:1530"] = {
+							["3:624:130"] = true,
 							["3:626:130"] = true,
+							["3:626:132"] = true,
+							["3:628:130"] = true,
 						},
 					},
 				},
@@ -102,9 +105,28 @@ WoWDBProfilerData = {
 				["NONE:0:false"] = {
 					["locations"] = {
 						["Revendreth:1699"] = {
-							["4:594:298"] = true,
+							["4:598:304"] = true,
+							["4:588:288"] = true,
+							["4:596:314"] = true,
 							["4:588:298"] = true,
+							["4:592:298"] = true,
+							["4:592:292"] = true,
+							["4:596:308"] = true,
 							["4:608:304"] = true,
+							["4:598:300"] = true,
+							["4:594:306"] = true,
+							["4:596:290"] = true,
+							["4:594:298"] = true,
+							["4:600:298"] = true,
+						},
+					},
+				},
+			},
+			["206727"] = {
+				["NONE:0:false"] = {
+					["locations"] = {
+						["Orgrimmar:85"] = {
+							["3:494:812"] = true,
 						},
 					},
 				},
@@ -198,9 +220,9 @@ WoWDBProfilerData = {
 							["3:442:616"] = true,
 							["3:414:662"] = true,
 							["3:446:730"] = true,
-							["3:448:660"] = true,
-							["3:424:602"] = true,
 							["3:504:646"] = true,
+							["3:424:602"] = true,
+							["3:448:660"] = true,
 						},
 						["Ardenweald:1565"] = {
 							["3:376:274"] = true,
@@ -229,12 +251,23 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["OPENING:165658"] = {
+				["PARTY:1:false"] = {
+					["opening"] = {
+						"11370:4", -- [1]
+					},
+					["opening_count"] = 1,
+				},
+			},
 			["206726"] = {
 				["NONE:0:false"] = {
 					["locations"] = {
 						["Orgrimmar:85"] = {
 							["3:528:756"] = true,
+							["3:526:756"] = true,
+							["3:526:760"] = true,
 							["3:528:754"] = true,
+							["3:526:762"] = true,
 							["3:526:758"] = true,
 						},
 					},
@@ -312,6 +345,15 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["204333"] = {
+				["NONE:0:false"] = {
+					["locations"] = {
+						["Undercity:90"] = {
+							["3:696:364"] = true,
+						},
+					},
+				},
+			},
 			["350804"] = {
 				["NONE:0:false"] = {
 					["locations"] = {
@@ -369,6 +411,52 @@ WoWDBProfilerData = {
 			},
 			["OPENING:237722"] = {
 			},
+			["OPENING:364872"] = {
+				["NONE:0:false"] = {
+					["opening_count"] = 1,
+					["opening"] = {
+						"184492:1", -- [1]
+					},
+					["locations"] = {
+						["The Maw:1543"] = {
+							["3:334:146"] = true,
+						},
+					},
+				},
+			},
+			["195219"] = {
+				["NONE:0:false"] = {
+					["locations"] = {
+						["Moonglade:80"] = {
+							["3:516:402"] = true,
+							["3:518:404"] = true,
+						},
+					},
+				},
+			},
+			["OPENING:2040"] = {
+				["NONE:0:false"] = {
+					["opening_count"] = 4,
+					["opening"] = {
+						"3858:4", -- [1]
+						"3858:4", -- [2]
+						"7912:4", -- [3]
+						"3858:3", -- [4]
+						"3858:4", -- [5]
+						"9262:1", -- [6]
+					},
+					["locations"] = {
+						["Burning Steppes:36"] = {
+							["3:646:442"] = true,
+							["3:516:270"] = true,
+						},
+						["Arathi Highlands:14"] = {
+							["3:830:316"] = true,
+							["3:796:338"] = true,
+						},
+					},
+				},
+			},
 			["OPENING:352180"] = {
 				["NONE:0:false"] = {
 					["opening_count"] = 5,
@@ -394,12 +482,31 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["OPENING:176224"] = {
+				["PARTY:1:false"] = {
+					["opening"] = {
+						"13180:1", -- [1]
+						"13180:1", -- [2]
+						"13180:2", -- [3]
+					},
+					["opening_count"] = 3,
+				},
+			},
+			["OPENING:176360"] = {
+				["PARTY:1:false"] = {
+					["opening"] = {
+						"13362:1", -- [1]
+					},
+					["opening_count"] = 1,
+				},
+			},
 			["197135"] = {
 				["NONE:0:false"] = {
 					["locations"] = {
 						["Stormwind City:84"] = {
 							["3:624:744"] = true,
 							["3:624:746"] = true,
+							["3:624:748"] = true,
 						},
 					},
 				},
@@ -435,6 +542,19 @@ WoWDBProfilerData = {
 					["locations"] = {
 						["Ardenweald:1565"] = {
 							["3:364:252"] = true,
+						},
+					},
+				},
+			},
+			["OPENING:349981"] = {
+				["NONE:0:false"] = {
+					["opening_count"] = 1,
+					["opening"] = {
+						"171830:6", -- [1]
+					},
+					["locations"] = {
+						["Maldraxxus:1536"] = {
+							["3:466:602"] = true,
 						},
 					},
 				},
@@ -482,28 +602,11 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["OPENING:364872"] = {
+			["355464"] = {
 				["NONE:0:false"] = {
-					["opening_count"] = 1,
-					["opening"] = {
-						"184492:1", -- [1]
-					},
 					["locations"] = {
-						["The Maw:1543"] = {
-							["3:334:146"] = true,
-						},
-					},
-				},
-			},
-			["OPENING:349981"] = {
-				["NONE:0:false"] = {
-					["opening_count"] = 1,
-					["opening"] = {
-						"171830:6", -- [1]
-					},
-					["locations"] = {
-						["Maldraxxus:1536"] = {
-							["3:466:602"] = true,
+						["Revendreth:1699"] = {
+							["4:592:370"] = true,
 						},
 					},
 				},
@@ -523,53 +626,322 @@ WoWDBProfilerData = {
 			},
 		},
 		["items"] = {
-			[6547] = {
+			[15249] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
-					["1706:6654"] = true,
+					["1679:6655"] = true,
 				},
-				["durability"] = 25,
+				["durability"] = 55,
 				["unique_id"] = 0,
 			},
-			[143902] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
+			[181197] = {
+				["instance_difficulty_id"] = 25,
+				["upgrade_value"] = 0,
 				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[6551] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
 				["seen_bonuses"] = {
-					["1678:6654"] = true,
+					["1472:5858:6616:6652"] = true,
 				},
-				["durability"] = 35,
-				["unique_id"] = 0,
+				["durability"] = 140,
+				["suffix_id"] = 0,
 			},
-			[8491] = {
-				["black_market"] = "Breanni",
-			},
-			[4049] = {
+			[3055] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
 					["6654"] = true,
 				},
-				["durability"] = 30,
+				["durability"] = 85,
 				["unique_id"] = 0,
 			},
-			[6559] = {
+			[3057] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["durability"] = 40,
+				["unique_id"] = 0,
+			},
+			[10174] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1695:6654"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[10190] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1709:6654"] = true,
+				},
+				["durability"] = 40,
+				["unique_id"] = 0,
+			},
+			[10230] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1678:6654"] = true,
+				},
+				["durability"] = 115,
+				["unique_id"] = 0,
+			},
+			[10278] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 40,
+				["suffix_id"] = 0,
+			},
+			[180944] = {
+				["instance_difficulty_id"] = 74,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1472:5871:7244"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[127748] = {
+				["instance_difficulty_id"] = 31,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[180817] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[17711] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["6710"] = true,
+				},
+				["durability"] = 90,
+				["unique_id"] = 0,
+			},
+			[117391] = {
+				["instance_difficulty_id"] = 22,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[106394] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["108:6654"] = true,
+				},
+				["durability"] = 85,
+				["suffix_id"] = 0,
+			},
+			[183249] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[31298] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["6658"] = true,
+				},
+				["durability"] = 100,
+				["suffix_id"] = 0,
+			},
+			[15673] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1694:6654"] = true,
+				},
+				["durability"] = 40,
+				["unique_id"] = 0,
+			},
+			[55531] = {
+				["instance_difficulty_id"] = 3,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1707:6654"] = true,
+				},
+				["durability"] = 70,
+				["suffix_id"] = 0,
+			},
+			[42360] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[173404] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[45493] = {
+				["instance_difficulty_id"] = 3,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[11685] = {
 				["instance_difficulty_id"] = 1,
 				["upgrade_value"] = 2,
 				["unique_id"] = 0,
 				["seen_bonuses"] = {
-					["1708:6655"] = true,
+					["6710"] = true,
 				},
-				["durability"] = 40,
+				["durability"] = 80,
+				["suffix_id"] = 0,
+			},
+			[183635] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["durability"] = 55,
+				["suffix_id"] = 0,
+			},
+			[3187] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 45,
+				["suffix_id"] = 0,
+			},
+			[144122] = {
+				["instance_difficulty_id"] = 22,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[3199] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1707:6655"] = true,
+				},
+				["durability"] = 50,
+				["unique_id"] = 0,
+			},
+			[3201] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1681:6655"] = true,
+				},
+				["durability"] = 60,
+				["unique_id"] = 0,
+			},
+			[9791] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1709:6654"] = true,
+				},
+				["durability"] = 90,
+				["unique_id"] = 0,
+			},
+			[9799] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1708:6654"] = true,
+				},
+				["durability"] = 30,
+				["unique_id"] = 0,
+			},
+			[7477] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1709:6654"] = true,
+				},
+				["durability"] = 105,
+				["unique_id"] = 0,
+			},
+			[42361] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[116627] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["61:550:6655"] = true,
+				},
+				["durability"] = 75,
+				["suffix_id"] = 0,
+			},
+			[9903] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1691:6654"] = true,
+				},
+				["durability"] = 75,
+				["unique_id"] = 0,
+			},
+			[7517] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1705:6654"] = true,
+				},
+				["durability"] = 105,
+				["unique_id"] = 0,
+			},
+			[143998] = {
+				["instance_difficulty_id"] = 22,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 85,
 				["suffix_id"] = 0,
 			},
 			[176990] = {
@@ -582,318 +954,78 @@ WoWDBProfilerData = {
 				["durability"] = 40,
 				["suffix_id"] = 0,
 			},
-			[44647] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[143903] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[6567] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1691:6654"] = true,
-				},
-				["durability"] = 85,
-				["unique_id"] = 0,
-			},
-			[10060] = {
-				["instance_difficulty_id"] = 54,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["1677:4277"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[159489] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1709:6655"] = true,
-				},
-				["durability"] = 85,
-				["suffix_id"] = 0,
-			},
-			[55538] = {
-				["instance_difficulty_id"] = 3,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1684:6654"] = true,
-				},
-				["durability"] = 85,
-				["suffix_id"] = 0,
-			},
-			[14176] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1680:6654"] = true,
-				},
-				["durability"] = 45,
-				["unique_id"] = 0,
-			},
-			[176800] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["durability"] = 85,
-				["unique_id"] = 0,
-			},
-			[141605] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[183571] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["durability"] = 140,
-				["suffix_id"] = 0,
-			},
-			[183635] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["durability"] = 55,
-				["suffix_id"] = 0,
-			},
-			[6595] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1681:6654"] = true,
-				},
-				["durability"] = 30,
-				["unique_id"] = 0,
-			},
-			[3047] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["durability"] = 30,
-				["unique_id"] = 0,
-			},
-			[44935] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[12164] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[4072] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["durability"] = 30,
-				["unique_id"] = 0,
-			},
-			[10128] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1708:6654"] = true,
-				},
-				["durability"] = 110,
-				["suffix_id"] = 0,
-			},
-			[10132] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1680:6654"] = true,
-				},
-				["durability"] = 65,
-				["unique_id"] = 0,
-			},
-			[183636] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["durability"] = 100,
-				["suffix_id"] = 0,
-			},
-			[6611] = {
+			[7541] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
 					["1692:6654"] = true,
 				},
-				["durability"] = 30,
+				["durability"] = 35,
 				["unique_id"] = 0,
 			},
-			[3055] = {
+			[13044] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
-					["6654"] = true,
+					["6659"] = true,
 				},
-				["durability"] = 85,
+				["durability"] = 95,
 				["unique_id"] = 0,
 			},
-			[45574] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[3057] = {
+			[6542] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["durability"] = 40,
-				["unique_id"] = 0,
-			},
-			[176291] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["durability"] = 40,
-				["unique_id"] = 0,
-			},
-			[183573] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["durability"] = 50,
-				["suffix_id"] = 0,
-			},
-			[44648] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[116794] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[36009] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1705:6654"] = true,
-				},
-				["durability"] = 70,
-				["unique_id"] = 0,
-			},
-			[120978] = {
-				["instance_difficulty_id"] = 9,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[10200] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
 				["seen_bonuses"] = {
 					["1692:6654"] = true,
 				},
-				["durability"] = 65,
+				["suffix_id"] = 0,
 				["unique_id"] = 0,
 			},
-			[21957] = {
-				["instance_difficulty_id"] = 14,
+			[55501] = {
+				["instance_difficulty_id"] = 36,
 				["upgrade_value"] = 1,
+				["unique_id"] = 0,
 				["seen_bonuses"] = {
-					["0"] = true,
+					["1687:4307"] = true,
 				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[123949] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
+				["durability"] = 115,
 				["suffix_id"] = 0,
 			},
-			[10244] = {
-				["instance_difficulty_id"] = 0,
+			[6574] = {
+				["instance_difficulty_id"] = 1,
 				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1693:6654"] = true,
-				},
-				["durability"] = 80,
 				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1680:6654"] = true,
+				},
+				["durability"] = 30,
+				["suffix_id"] = 0,
 			},
-			[174761] = {
+			[178143] = {
 				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[115518] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[10280] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1693:6654"] = true,
-				},
-				["durability"] = 85,
-				["suffix_id"] = 0,
-			},
-			[11306] = {
-				["instance_difficulty_id"] = 14,
 				["upgrade_value"] = 1,
-				["unique_id"] = 0,
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["durability"] = 65,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[6586] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1706:6654"] = true,
+				},
+				["durability"] = 30,
+				["unique_id"] = 0,
+			},
+			[49715] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
 			[181469] = {
@@ -905,545 +1037,118 @@ WoWDBProfilerData = {
 				["suffix_id"] = 0,
 				["unique_id"] = 0,
 			},
-			[9785] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1709:6654"] = true,
-				},
-				["durability"] = 25,
-				["unique_id"] = 0,
-			},
-			[2072] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1678:6655"] = true,
-				},
-				["durability"] = 60,
-				["unique_id"] = 0,
-			},
-			[68762] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[9801] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1691:6654"] = true,
-				},
-				["durability"] = 30,
-				["unique_id"] = 0,
-			},
-			[128645] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[183578] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["durability"] = 85,
-				["suffix_id"] = 0,
-			},
-			[116477] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["29:6655"] = true,
-				},
-				["durability"] = 85,
-				["suffix_id"] = 0,
-			},
-			[55508] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1692:6654"] = true,
-				},
-				["durability"] = 55,
-				["suffix_id"] = 0,
-			},
-			[25239] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1693:6655"] = true,
-				},
-				["durability"] = 85,
-				["suffix_id"] = 0,
-			},
-			[9829] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1709:6654"] = true,
-				},
-				["durability"] = 30,
-				["unique_id"] = 0,
-			},
-			[15965] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[176297] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["durability"] = 40,
-				["unique_id"] = 0,
-			},
-			[172848] = {
-				["instance_difficulty_id"] = 47,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[4677] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[171443] = {
-				["instance_difficulty_id"] = 13,
-				["upgrade_value"] = 4,
-				["unique_id"] = 0,
-				["durability"] = 65,
-				["suffix_id"] = 0,
-			},
-			[18149] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[25319] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1677:6655"] = true,
-				},
-				["durability"] = 75,
-				["unique_id"] = 0,
-			},
-			[14468] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[169208] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[183580] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["durability"] = 50,
-				["suffix_id"] = 0,
-			},
-			[114333] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 1,
-				["durability"] = 100,
-				["seen_bonuses"] = {
-					["94"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[169400] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1697:4796"] = true,
-				},
-				["durability"] = 70,
-				["unique_id"] = 0,
-			},
-			[115009] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[10404] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1705:6654"] = true,
-				},
-				["durability"] = 30,
-				["unique_id"] = 0,
-			},
-			[114099] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[174766] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[165632] = {
+			[165613] = {
 				["instance_difficulty_id"] = 81,
 				["upgrade_value"] = 1,
 				["unique_id"] = 0,
 				["durability"] = 120,
 				["suffix_id"] = 0,
 			},
-			[183581] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["durability"] = 65,
-				["suffix_id"] = 0,
-			},
-			[181661] = {
-				["instance_difficulty_id"] = 25,
-				["upgrade_value"] = 0,
-				["durability"] = 50,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[171379] = {
-				["instance_difficulty_id"] = 13,
-				["upgrade_value"] = 4,
-				["unique_id"] = 0,
-				["durability"] = 70,
-				["suffix_id"] = 0,
-			},
-			[4713] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[139380] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[183390] = {
-				["instance_difficulty_id"] = 9,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[180249] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[6543] = {
+			[14299] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
-					["1706:6654"] = true,
+					["1708:6654"] = true,
 				},
-				["durability"] = 25,
+				["durability"] = 55,
 				["unique_id"] = 0,
 			},
-			[6256] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["durability"] = 16,
-				["suffix_id"] = 0,
+			[84661] = {
+				["durability"] = 35,
 			},
-			[45493] = {
-				["instance_difficulty_id"] = 3,
+			[50131] = {
+				["instance_difficulty_id"] = 11,
 				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
-			[49888] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
+			[165614] = {
+				["instance_difficulty_id"] = 81,
+				["upgrade_value"] = 1,
 				["unique_id"] = 0,
 				["durability"] = 120,
 				["suffix_id"] = 0,
 			},
-			[8126] = {
+			[183517] = {
 				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
+				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
-					["6654"] = true,
+					["0"] = true,
 				},
-				["durability"] = 105,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
-			[180454] = {
-				["instance_difficulty_id"] = 14,
+			[50451] = {
+				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 1,
 				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[6266] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
 				["seen_bonuses"] = {
-					["1680:6654"] = true,
+					["0"] = true,
 				},
-				["durability"] = 65,
-				["unique_id"] = 0,
-			},
-			[6268] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
+				["durability"] = 55,
 				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1707:6654"] = true,
-					["1705:6654"] = true,
-				},
-				["durability"] = 65,
-				["unique_id"] = 0,
 			},
-			[9969] = {
+			[186459] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1692:6654"] = true,
-				},
-				["durability"] = 60,
 				["suffix_id"] = 0,
 			},
-			[82075] = {
+			[42363] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[183646] = {
 				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["suffix_id"] = 0,
+				["durability"] = 165,
+				["unique_id"] = 0,
+			},
+			[10375] = {
+				["instance_difficulty_id"] = 1,
 				["upgrade_value"] = 2,
 				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1701:6654"] = true,
-				},
 				["durability"] = 40,
 				["suffix_id"] = 0,
 			},
-			[22477] = {
-				["black_market"] = "Jasper Fel",
+			[34499] = {
+				["black_market"] = "Landro Longshot",
 			},
-			[82019] = {
-				["instance_difficulty_id"] = 0,
+			[24954] = {
+				["instance_difficulty_id"] = 1,
 				["upgrade_value"] = 2,
 				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1693:6655"] = true,
-				},
-				["durability"] = 85,
-				["suffix_id"] = 0,
-			},
-			[143901] = {
-				["instance_difficulty_id"] = 22,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[82011] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1698:6655"] = true,
-				},
-				["durability"] = 75,
-				["suffix_id"] = 0,
-			},
-			[3656] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["6655"] = true,
-				},
-				["durability"] = 60,
-				["unique_id"] = 0,
-			},
-			[176292] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["durability"] = 70,
-				["unique_id"] = 0,
-			},
-			[82179] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1701:6654"] = true,
-				},
-				["durability"] = 40,
-				["suffix_id"] = 0,
-			},
-			[178602] = {
-				["instance_difficulty_id"] = 0,
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-				["upgrade_value"] = 1,
-			},
-			[173939] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[171448] = {
-				["instance_difficulty_id"] = 13,
-				["upgrade_value"] = 4,
-				["unique_id"] = 0,
-				["durability"] = 50,
-				["suffix_id"] = 0,
-			},
-			[181732] = {
-				["instance_difficulty_id"] = 74,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[180136] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["durability"] = 65,
-				["suffix_id"] = 0,
-			},
-			[4765] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["durability"] = 30,
-				["unique_id"] = 0,
-			},
-			[177836] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[15654] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
 				["seen_bonuses"] = {
 					["1678:6654"] = true,
 				},
-				["durability"] = 40,
-				["unique_id"] = 0,
-			},
-			[153290] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["durability"] = 90,
+				["durability"] = 70,
 				["suffix_id"] = 0,
 			},
-			[181605] = {
-				["instance_difficulty_id"] = 25,
-				["upgrade_value"] = 0,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1472:5858:6616:6652"] = true,
-				},
-				["durability"] = 140,
-				["unique_id"] = 0,
-			},
-			[171449] = {
-				["instance_difficulty_id"] = 13,
-				["upgrade_value"] = 4,
-				["unique_id"] = 0,
-				["durability"] = 50,
-				["suffix_id"] = 0,
-			},
-			[115484] = {
-				["black_market"] = "Majordomo Executus",
-			},
-			[13022] = {
+			[24986] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["6659"] = true,
-				},
-				["durability"] = 95,
 				["unique_id"] = 0,
-			},
-			[15167] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
 				["seen_bonuses"] = {
-					["1681:6654"] = true,
+					["1678:6654"] = true,
 				},
-				["durability"] = 65,
-				["unique_id"] = 0,
+				["durability"] = 70,
+				["suffix_id"] = 0,
 			},
-			[68759] = {
+			[48118] = {
 				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
+				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
-					["6654"] = true,
+					["0"] = true,
 				},
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
@@ -1457,45 +1162,58 @@ WoWDBProfilerData = {
 				["suffix_id"] = 0,
 				["unique_id"] = 0,
 			},
-			[186141] = {
+			[183649] = {
 				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1703:7453"] = true,
-				},
-				["durability"] = 85,
+				["upgrade_value"] = 1,
 				["suffix_id"] = 0,
-			},
-			[7544] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1693:6654"] = true,
-				},
-				["suffix_id"] = 0,
+				["durability"] = 100,
 				["unique_id"] = 0,
 			},
-			[9805] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
+			[187997] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
-					["1692:6654"] = true,
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[144392] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[4792] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
 				},
 				["suffix_id"] = 0,
 				["unique_id"] = 0,
 			},
-			[15557] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
+			[4796] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
-					["1681:6654"] = true,
+					["0"] = true,
 				},
-				["durability"] = 95,
+				["durability"] = 30,
 				["unique_id"] = 0,
 			},
-			[187419] = {
+			[4800] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["durability"] = 60,
+				["unique_id"] = 0,
+			},
+			[181732] = {
 				["instance_difficulty_id"] = 74,
 				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
@@ -1504,121 +1222,13 @@ WoWDBProfilerData = {
 				["suffix_id"] = 0,
 				["unique_id"] = 0,
 			},
-			[4797] = {
+			[187998] = {
 				["instance_difficulty_id"] = 14,
 				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
-			},
-			[186463] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["durability"] = 165,
-				["suffix_id"] = 0,
-			},
-			[87216] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[6400] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["6655"] = true,
-				},
-				["durability"] = 65,
-				["unique_id"] = 0,
-			},
-			[21711] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[33154] = {
-				["instance_difficulty_id"] = 22,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[42368] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[176295] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["durability"] = 115,
-				["unique_id"] = 0,
-			},
-			[82182] = {
-				["instance_difficulty_id"] = 36,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1715:4765"] = true,
-				},
-				["durability"] = 70,
-				["suffix_id"] = 0,
-			},
-			[183971] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["durability"] = 55,
-				["unique_id"] = 0,
-			},
-			[172923] = {
-				["instance_difficulty_id"] = 13,
-				["upgrade_value"] = 3,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["durability"] = 85,
-				["suffix_id"] = 0,
-			},
-			[10133] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1695:6654"] = true,
-				},
-				["durability"] = 80,
-				["suffix_id"] = 0,
-			},
-			[171388] = {
-				["instance_difficulty_id"] = 13,
-				["upgrade_value"] = 4,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["7180"] = true,
-				},
-				["durability"] = 75,
-				["suffix_id"] = 0,
-			},
-			[179988] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["durability"] = 55,
 				["suffix_id"] = 0,
 			},
 			[43515] = {
@@ -1630,15 +1240,148 @@ WoWDBProfilerData = {
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[15259] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
+			[4816] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
-					["1678:6655"] = true,
+					["0"] = true,
 				},
-				["durability"] = 55,
+				["durability"] = 65,
 				["unique_id"] = 0,
+			},
+			[180454] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[181605] = {
+				["instance_difficulty_id"] = 25,
+				["upgrade_value"] = 0,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1472:5858:6616:6652"] = true,
+				},
+				["durability"] = 140,
+				["unique_id"] = 0,
+			},
+			[69959] = {
+				["instance_difficulty_id"] = 5,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[49909] = {
+				["contains_count"] = 1,
+				["contains"] = {
+					"22238:1", -- [1]
+					"22236:3", -- [2]
+					"22237:2", -- [3]
+				},
+			},
+			[22477] = {
+				["black_market"] = "Jasper Fel",
+			},
+			[37793] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["6658"] = true,
+				},
+				["durability"] = 85,
+				["suffix_id"] = 0,
+			},
+			[110560] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[24635] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1677:6654"] = true,
+				},
+				["durability"] = 70,
+				["suffix_id"] = 0,
+			},
+			[160252] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[152324] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[42365] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[183654] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["durability"] = 80,
+				["suffix_id"] = 0,
+			},
+			[115484] = {
+				["black_market"] = "Majordomo Executus",
+			},
+			[128911] = {
+				["instance_difficulty_id"] = 9,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 2,
+			},
+			[163706] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[27944] = {
+				["instance_difficulty_id"] = 31,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 1,
+			},
+			[171379] = {
+				["instance_difficulty_id"] = 13,
+				["upgrade_value"] = 4,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["6890"] = true,
+				},
+				["durability"] = 70,
+				["suffix_id"] = 0,
+			},
+			[187875] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[180842] = {
 				["instance_difficulty_id"] = 74,
@@ -1649,133 +1392,63 @@ WoWDBProfilerData = {
 				["suffix_id"] = 0,
 				["unique_id"] = 0,
 			},
-			[36412] = {
+			[11982] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1680:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[24987] = {
 				["instance_difficulty_id"] = 1,
 				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1677:6654"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[82948] = {
-				["durability"] = 50,
-			},
-			[186144] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
 				["unique_id"] = 0,
 				["seen_bonuses"] = {
-					["1680:7453"] = true,
+					["1709:6654"] = true,
 				},
 				["durability"] = 85,
 				["suffix_id"] = 0,
 			},
-			[81990] = {
+			[13037] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["unique_id"] = 0,
 				["seen_bonuses"] = {
-					["1695:6654"] = true,
+					["6659"] = true,
 				},
-				["durability"] = 40,
-				["suffix_id"] = 0,
-			},
-			[179311] = {
-				["instance_difficulty_id"] = 0,
-				["unique_id"] = 0,
-				["upgrade_value"] = 2,
-				["contains"] = {
-					"money:553734", -- [1]
-					"177784:1", -- [2]
-				},
-				["contains_count"] = 1,
-				["NONE:0:false"] = {
-					["locations"] = {
-						["Oribos:1670"] = {
-							["4:404:322"] = true,
-						},
-					},
-				},
-				["suffix_id"] = 0,
-			},
-			[121008] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1676:6654"] = true,
-				},
-				["durability"] = 40,
-				["suffix_id"] = 0,
-			},
-			[85663] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["durability"] = 16,
-				["suffix_id"] = 0,
-			},
-			[175736] = {
-				["instance_difficulty_id"] = 0,
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-				["upgrade_value"] = 2,
-			},
-			[6380] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[36556] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1680"] = true,
-				},
-				["durability"] = 85,
-				["suffix_id"] = 0,
-			},
-			[33292] = {
-				["instance_difficulty_id"] = 22,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[183654] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
 				["durability"] = 80,
 				["suffix_id"] = 0,
 			},
-			[6388] = {
-				["instance_difficulty_id"] = 0,
+			[17906] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[37890] = {
+				["instance_difficulty_id"] = 2,
 				["upgrade_value"] = 2,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
-					["6654"] = true,
+					["4196"] = true,
 				},
-				["durability"] = 55,
+				["durability"] = 120,
 				["unique_id"] = 0,
 			},
-			[3199] = {
-				["instance_difficulty_id"] = 1,
+			[13077] = {
+				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
+				["unique_id"] = 0,
 				["seen_bonuses"] = {
-					["1707:6655"] = true,
+					["6658"] = true,
 				},
 				["durability"] = 50,
-				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
-			[181741] = {
-				["instance_difficulty_id"] = 74,
+			[11039] = {
+				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
 					["0"] = true,
@@ -1783,43 +1456,19 @@ WoWDBProfilerData = {
 				["suffix_id"] = 0,
 				["unique_id"] = 0,
 			},
-			[3201] = {
+			[13093] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
 				["seen_bonuses"] = {
-					["1681:6655"] = true,
+					["6658"] = true,
 				},
-				["durability"] = 60,
+				["suffix_id"] = 0,
 				["unique_id"] = 0,
 			},
-			[3202] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
+			[152839] = {
+				["instance_difficulty_id"] = 13,
+				["upgrade_value"] = 0,
 				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["durability"] = 30,
-				["suffix_id"] = 0,
-			},
-			[127748] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[1604] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["3631"] = true,
-				},
-				["durability"] = 75,
 				["suffix_id"] = 0,
 			},
 			[181611] = {
@@ -1832,123 +1481,218 @@ WoWDBProfilerData = {
 				["durability"] = 85,
 				["unique_id"] = 0,
 			},
-			[10205] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1708:6654"] = true,
-				},
-				["durability"] = 35,
+			[95601] = {
+				["instance_difficulty_id"] = 0,
 				["suffix_id"] = 0,
-			},
-			[42369] = {
-				["instance_difficulty_id"] = 14,
+				["contains_count"] = 1,
 				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
+				["NONE:0:false"] = {
+					["locations"] = {
+						["Isle of Giants:507"] = {
+							["3:502:578"] = true,
+						},
+					},
+				},
+				["contains"] = {
+					"money:157268", -- [1]
+					"94288:9", -- [2]
+				},
 				["unique_id"] = 0,
 			},
-			[3208] = {
+			[159489] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["unique_id"] = 0,
 				["seen_bonuses"] = {
-					["1677:6655"] = true,
+					["1709:6655"] = true,
 				},
-				["durability"] = 75,
+				["durability"] = 85,
 				["suffix_id"] = 0,
 			},
-			[14783] = {
+			[173939] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[169208] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[10112] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 85,
+				["suffix_id"] = 0,
+			},
+			[132892] = {
+				["instance_difficulty_id"] = 11,
+				["suffix_id"] = 0,
+				["upgrade_value"] = 1,
+				["contains_count"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["contains"] = {
+					"114011:1", -- [1]
+					"114014:1", -- [2]
+					"109076:3", -- [3]
+				},
+				["unique_id"] = 0,
+			},
+			[15251] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 70,
+				["suffix_id"] = 0,
+			},
+			[15259] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1678:6655"] = true,
+				},
+				["durability"] = 55,
+				["unique_id"] = 0,
+			},
+			[68748] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
 				["seen_bonuses"] = {
 					["6654"] = true,
 				},
-				["durability"] = 35,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
-			[9742] = {
-				["instance_difficulty_id"] = 0,
+			[183531] = {
+				["instance_difficulty_id"] = 14,
 				["upgrade_value"] = 1,
 				["suffix_id"] = 0,
+				["durability"] = 100,
+				["unique_id"] = 0,
+			},
+			[181741] = {
+				["instance_difficulty_id"] = 74,
+				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["durability"] = 20,
+				["suffix_id"] = 0,
 				["unique_id"] = 0,
 			},
-			[15519] = {
-				["instance_difficulty_id"] = 1,
+			[95602] = {
+				["instance_difficulty_id"] = 0,
+				["unique_id"] = 0,
+				["NONE:0:false"] = {
+					["locations"] = {
+						["Isle of Thunder:504"] = {
+							["3:600:378"] = true,
+						},
+					},
+				},
+				["upgrade_value"] = 1,
+				["contains"] = {
+					"money:1069007", -- [1]
+				},
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["contains_count"] = 1,
+				["suffix_id"] = 0,
+			},
+			[10200] = {
+				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
 				["seen_bonuses"] = {
 					["1692:6654"] = true,
 				},
+				["durability"] = 65,
+				["unique_id"] = 0,
+			},
+			[12254] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
 				["suffix_id"] = 0,
 				["unique_id"] = 0,
 			},
-			[159575] = {
+			[10280] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
+				["unique_id"] = 0,
 				["seen_bonuses"] = {
-					["1688:6655"] = true,
+					["1693:6654"] = true,
 				},
 				["durability"] = 85,
-				["unique_id"] = 0,
-			},
-			[169223] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[169412] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1691:6654"] = true,
-				},
-				["durability"] = 40,
-				["suffix_id"] = 0,
-			},
-			[48118] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[42378] = {
+			[183533] = {
 				["instance_difficulty_id"] = 14,
 				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
-			},
-			[158362] = {
-				["instance_difficulty_id"] = 23,
-				["upgrade_value"] = 0,
+				["durability"] = 50,
 				["unique_id"] = 0,
-				["suffix_id"] = 0,
 			},
-			[14373] = {
-				["instance_difficulty_id"] = 1,
+			[9289] = {
+				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1705:6654"] = true,
+				},
+				["durability"] = 50,
+				["unique_id"] = 0,
+			},
+			[8274] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
 				["seen_bonuses"] = {
 					["6654"] = true,
 				},
-				["durability"] = 30,
+				["durability"] = 105,
+				["suffix_id"] = 0,
+			},
+			[21711] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[144021] = {
+				["instance_difficulty_id"] = 22,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 85,
+				["suffix_id"] = 0,
+			},
+			[165632] = {
+				["instance_difficulty_id"] = 81,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["durability"] = 120,
+				["suffix_id"] = 0,
+			},
+			[15515] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1693:6654"] = true,
+				},
+				["durability"] = 30,
+				["suffix_id"] = 0,
 			},
 			[82177] = {
 				["instance_difficulty_id"] = 0,
@@ -1960,196 +1704,71 @@ WoWDBProfilerData = {
 				["durability"] = 115,
 				["suffix_id"] = 0,
 			},
-			[9910] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1695:6654"] = true,
-					["1692:6654"] = true,
-				},
-				["durability"] = 35,
-				["unique_id"] = 0,
-			},
-			[122361] = {
-				["instance_difficulty_id"] = 0,
+			[136350] = {
+				["instance_difficulty_id"] = 11,
 				["upgrade_value"] = 0,
 				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[9790] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1709:6655"] = true,
-				},
-				["durability"] = 45,
-				["suffix_id"] = 0,
-			},
-			[9794] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1692:6654"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[9798] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1705:6654"] = true,
-				},
-				["durability"] = 90,
-				["unique_id"] = 0,
-			},
-			[9802] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1695:6654"] = true,
-					["1705:6654"] = true,
-				},
-				["durability"] = 45,
-				["unique_id"] = 0,
-			},
-			[21113] = {
-				["contains"] = {
-					"money:110", -- [1]
-					"2319:2", -- [2]
-					"4234:2", -- [3]
-					"money:179", -- [4]
-					"2319:2", -- [5]
-					"4305:2", -- [6]
-				},
-				["NONE:0:false"] = {
-					["locations"] = {
-						["Ashenvale:63"] = {
-							["3:800:712"] = true,
-						},
-					},
-				},
-				["contains_count"] = 2,
-			},
-			[120302] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
+				["durability"] = 16,
 				["suffix_id"] = 0,
 			},
-			[7470] = {
-				["instance_difficulty_id"] = 0,
+			[25036] = {
+				["instance_difficulty_id"] = 1,
 				["upgrade_value"] = 2,
-				["unique_id"] = 0,
 				["seen_bonuses"] = {
-					["1707:6654"] = true,
+					["1693:6654"] = true,
 				},
-				["durability"] = 60,
+				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[53852] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[152839] = {
+			[171388] = {
 				["instance_difficulty_id"] = 13,
-				["upgrade_value"] = 0,
+				["upgrade_value"] = 4,
 				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["7180"] = true,
+				},
+				["durability"] = 75,
 				["suffix_id"] = 0,
 			},
-			[81995] = {
+			[25084] = {
 				["instance_difficulty_id"] = 1,
 				["upgrade_value"] = 2,
 				["unique_id"] = 0,
 				["seen_bonuses"] = {
-					["1705:6654"] = true,
-				},
-				["durability"] = 55,
-				["suffix_id"] = 0,
-			},
-			[7478] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1694:6654"] = true,
-				},
-				["durability"] = 75,
-				["unique_id"] = 0,
-			},
-			[116613] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["93:6655"] = true,
+					["1694:6655"] = true,
 				},
 				["durability"] = 85,
 				["suffix_id"] = 0,
 			},
-			[9838] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1692:6654"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[7484] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1692:6654"] = true,
-				},
-				["durability"] = 35,
-				["unique_id"] = 0,
-			},
-			[166735] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[122362] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[180752] = {
+			[172923] = {
 				["instance_difficulty_id"] = 13,
-				["upgrade_value"] = 1,
+				["upgrade_value"] = 3,
+				["unique_id"] = 0,
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
+				["durability"] = 85,
 				["suffix_id"] = 0,
 			},
-			[42370] = {
+			[183537] = {
 				["instance_difficulty_id"] = 14,
 				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
+				["unique_id"] = 0,
+				["durability"] = 140,
 				["suffix_id"] = 0,
+			},
+			[165635] = {
+				["instance_difficulty_id"] = 81,
+				["upgrade_value"] = 1,
+				["suffix_id"] = 0,
+				["durability"] = 120,
 				["unique_id"] = 0,
 			},
-			[52377] = {
-				["instance_difficulty_id"] = 0,
+			[42368] = {
+				["instance_difficulty_id"] = 14,
 				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
 					["0"] = true,
@@ -2167,138 +1786,84 @@ WoWDBProfilerData = {
 				["durability"] = 70,
 				["suffix_id"] = 0,
 			},
-			[12425] = {
+			[82179] = {
 				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
+				["upgrade_value"] = 2,
 				["unique_id"] = 0,
 				["seen_bonuses"] = {
-					["0"] = true,
+					["1701:6654"] = true,
 				},
 				["durability"] = 40,
 				["suffix_id"] = 0,
 			},
-			[50451] = {
+			[186481] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["durability"] = 55,
+				["unique_id"] = 0,
+			},
+			[6395] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["durability"] = 55,
+				["unique_id"] = 0,
+			},
+			[183668] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 1,
 				["unique_id"] = 0,
+				["durability"] = 55,
+				["suffix_id"] = 0,
+			},
+			[8746] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["durability"] = 55,
+				["unique_id"] = 0,
+			},
+			[6431] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
 				["seen_bonuses"] = {
-					["0"] = true,
+					["6654"] = true,
+				},
+				["durability"] = 50,
+				["unique_id"] = 0,
+			},
+			[55508] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1692:6654"] = true,
 				},
 				["durability"] = 55,
 				["suffix_id"] = 0,
 			},
-			[183537] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["durability"] = 140,
-				["suffix_id"] = 0,
-			},
-			[13044] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["6659"] = true,
-				},
-				["durability"] = 95,
-				["unique_id"] = 0,
-			},
-			[181680] = {
-				["instance_difficulty_id"] = 26,
-				["upgrade_value"] = 1,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1472:5865:6616:6652:7575"] = true,
-				},
-				["durability"] = 50,
-				["unique_id"] = 0,
-			},
-			[181400] = {
-				["instance_difficulty_id"] = 26,
-				["upgrade_value"] = 1,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1472:5865:6616:6652"] = true,
-				},
-				["durability"] = 140,
-				["unique_id"] = 0,
-			},
-			[15515] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1693:6654"] = true,
-				},
-				["durability"] = 30,
-				["suffix_id"] = 0,
-			},
-			[106394] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["108:6654"] = true,
-				},
-				["durability"] = 85,
-				["suffix_id"] = 0,
-			},
-			[144122] = {
-				["instance_difficulty_id"] = 22,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[163604] = {
+			[140192] = {
 				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
+				["upgrade_value"] = 1,
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[186152] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[176320] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["durability"] = 40,
-				["unique_id"] = 0,
-			},
-			[7522] = {
+			[7478] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
-					["1691:6654"] = true,
+					["1694:6654"] = true,
 				},
-				["durability"] = 50,
+				["durability"] = 75,
 				["unique_id"] = 0,
 			},
-			[7524] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1707:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[12992] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["6659"] = true,
-				},
-				["durability"] = 60,
-				["unique_id"] = 0,
-			},
-			[6053] = {
+			[42369] = {
 				["instance_difficulty_id"] = 14,
 				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
@@ -2306,6 +1871,52 @@ WoWDBProfilerData = {
 				},
 				["suffix_id"] = 0,
 				["unique_id"] = 0,
+			},
+			[143901] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[82948] = {
+				["durability"] = 50,
+			},
+			[186484] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 80,
+				["suffix_id"] = 0,
+			},
+			[106733] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["52:6654"] = true,
+				},
+				["durability"] = 70,
+				["unique_id"] = 0,
+			},
+			[9921] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1709:6654"] = true,
+				},
+				["durability"] = 60,
+				["unique_id"] = 0,
+			},
+			[177789] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1690:6652:6907"] = true,
+				},
+				["durability"] = 115,
+				["suffix_id"] = 0,
 			},
 			[7530] = {
 				["instance_difficulty_id"] = 0,
@@ -2317,24 +1928,733 @@ WoWDBProfilerData = {
 				["durability"] = 35,
 				["unique_id"] = 0,
 			},
-			[11982] = {
+			[187252] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[13022] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["6659"] = true,
+				},
+				["durability"] = 95,
+				["unique_id"] = 0,
+			},
+			[183544] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["durability"] = 50,
+				["suffix_id"] = 0,
+			},
+			[7554] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["seen_bonuses"] = {
-					["1680:6654"] = true,
+					["1705:6655"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[187253] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[81990] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1695:6654"] = true,
+				},
+				["durability"] = 40,
+				["suffix_id"] = 0,
+			},
+			[6551] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1678:6654"] = true,
+				},
+				["durability"] = 35,
+				["unique_id"] = 0,
+			},
+			[31303] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["6659"] = true,
+				},
+				["durability"] = 100,
+				["suffix_id"] = 0,
+			},
+			[82182] = {
+				["instance_difficulty_id"] = 36,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1715:4765"] = true,
+				},
+				["durability"] = 70,
+				["suffix_id"] = 0,
+			},
+			[177791] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1715:6652:6907"] = true,
+				},
+				["durability"] = 40,
+				["suffix_id"] = 0,
+			},
+			[181372] = {
+				["instance_difficulty_id"] = 74,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
 				},
 				["suffix_id"] = 0,
 				["unique_id"] = 0,
 			},
-			[179510] = {
-				["instance_difficulty_id"] = 28,
+			[42370] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[3809] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["durability"] = 45,
+				["unique_id"] = 0,
+			},
+			[6595] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1681:6654"] = true,
+				},
+				["durability"] = 30,
+				["unique_id"] = 0,
+			},
+			[6607] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1707:6654"] = true,
+				},
+				["durability"] = 65,
+				["unique_id"] = 0,
+			},
+			[6611] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1692:6654"] = true,
+				},
+				["durability"] = 30,
+				["unique_id"] = 0,
+			},
+			[36488] = {
+				["instance_difficulty_id"] = 22,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1679:6655"] = true,
+				},
+				["durability"] = 75,
+				["suffix_id"] = 0,
+			},
+			[10169] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 85,
+				["suffix_id"] = 0,
+			},
+			[187895] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[15300] = {
+				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 1,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
-					["1465:5865:6616:6652"] = true,
+					["0"] = true,
+				},
+				["durability"] = 25,
+				["unique_id"] = 0,
+			},
+			[23503] = {
+				["durability"] = 85,
+			},
+			[183676] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 1,
+			},
+			[187896] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[128858] = {
+				["instance_difficulty_id"] = 9,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[14373] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["durability"] = 30,
+				["unique_id"] = 0,
+			},
+			[183549] = {
+				["instance_difficulty_id"] = 14,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 1,
+			},
+			[52377] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[8259] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[120163] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["durability"] = 30,
+				["suffix_id"] = 0,
+			},
+			[42371] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[4677] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[180865] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["41:6908"] = true,
+				},
+				["durability"] = 75,
+				["suffix_id"] = 0,
+			},
+			[33292] = {
+				["instance_difficulty_id"] = 22,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[187899] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[4713] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[180099] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["durability"] = 140,
+				["suffix_id"] = 0,
+			},
+			[187900] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[128860] = {
+				["instance_difficulty_id"] = 9,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[163604] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[68759] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[183553] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[158362] = {
+				["instance_difficulty_id"] = 23,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[178950] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["40:1701:6908"] = true,
+				},
+				["durability"] = 85,
+				["unique_id"] = 0,
+			},
+			[180101] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["durability"] = 65,
+				["suffix_id"] = 0,
+			},
+			[4797] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[18149] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[178056] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 90,
+				["suffix_id"] = 0,
+			},
+			[81995] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1705:6654"] = true,
+				},
+				["durability"] = 55,
+				["suffix_id"] = 0,
+			},
+			[82251] = {
+				["instance_difficulty_id"] = 2,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1708:6654"] = true,
+				},
+				["durability"] = 40,
+				["unique_id"] = 0,
+			},
+			[120166] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["6710"] = true,
 				},
 				["durability"] = 100,
 				["unique_id"] = 0,
+			},
+			[3961] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 35,
+				["suffix_id"] = 0,
+			},
+			[180487] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 85,
+				["suffix_id"] = 0,
+			},
+			[180104] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["durability"] = 50,
+				["suffix_id"] = 0,
+			},
+			[81996] = {
+				["instance_difficulty_id"] = 28,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1713:4763"] = true,
+				},
+				["durability"] = 115,
+				["suffix_id"] = 0,
+			},
+			[9794] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1692:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[9802] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1695:6654"] = true,
+					["1705:6654"] = true,
+				},
+				["durability"] = 45,
+				["unique_id"] = 0,
+			},
+			[124323] = {
+				["instance_difficulty_id"] = 5,
+				["upgrade_value"] = 0,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1472:1798"] = true,
+				},
+				["durability"] = 80,
+				["unique_id"] = 0,
+			},
+			[36139] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1678:6654"] = true,
+				},
+				["durability"] = 40,
+				["suffix_id"] = 0,
+			},
+			[88710] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[42373] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[5956] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["durability"] = 16,
+				["suffix_id"] = 0,
+			},
+			[9866] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 95,
+				["suffix_id"] = 0,
+			},
+			[116715] = {
+				["instance_difficulty_id"] = 28,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["403:3875"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[68762] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[4019] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 65,
+				["suffix_id"] = 0,
+			},
+			[176782] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1714:6652:6907"] = true,
+				},
+				["durability"] = 70,
+				["suffix_id"] = 0,
+			},
+			[12008] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1677:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[183560] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["suffix_id"] = 0,
+				["durability"] = 85,
+				["unique_id"] = 0,
+			},
+			[64400] = {
+				["req_reputation"] = "Guild:FRIENDLY",
+			},
+			[178701] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["durability"] = 100,
+				["suffix_id"] = 0,
+			},
+			[169878] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[82062] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1712:6655"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[10034] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[4049] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["durability"] = 30,
+				["unique_id"] = 0,
+			},
+			[184840] = {
+				["instance_difficulty_id"] = 74,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1472:5881:6646:6652"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[10066] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1691:6654"] = true,
+				},
+				["durability"] = 35,
+				["unique_id"] = 0,
+			},
+			[117356] = {
+				["instance_difficulty_id"] = 22,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 90,
+				["suffix_id"] = 0,
+			},
+			[183562] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["suffix_id"] = 0,
+				["durability"] = 50,
+				["unique_id"] = 0,
+			},
+			[8126] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["durability"] = 105,
+				["suffix_id"] = 0,
+			},
+			[116589] = {
+				["instance_difficulty_id"] = 28,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["162:3875"] = true,
+				},
+				["durability"] = 85,
+				["suffix_id"] = 0,
+			},
+			[179982] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[15269] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1679:6655"] = true,
+					["1692:6655"] = true,
+				},
+				["durability"] = 55,
+				["unique_id"] = 0,
+			},
+			[36556] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1680"] = true,
+				},
+				["durability"] = 85,
+				["suffix_id"] = 0,
+			},
+			[177809] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1676:6652:6908"] = true,
+				},
+				["durability"] = 75,
+				["unique_id"] = 0,
+			},
+			[22418] = {
+				["black_market"] = "Malton Droffers",
+			},
+			[12248] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["durability"] = 40,
+				["suffix_id"] = 0,
+			},
+			[183564] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["suffix_id"] = 0,
+				["durability"] = 65,
+				["unique_id"] = 0,
+			},
+			[64401] = {
+				["req_reputation"] = "Guild:FRIENDLY",
 			},
 			[180751] = {
 				["instance_difficulty_id"] = 13,
@@ -2345,60 +2665,685 @@ WoWDBProfilerData = {
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[11994] = {
+			[9243] = {
 				["instance_difficulty_id"] = 1,
 				["upgrade_value"] = 2,
 				["seen_bonuses"] = {
-					["1678:6654"] = true,
+					["6710"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[11305] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["durability"] = 65,
+				["unique_id"] = 0,
+			},
+			[82128] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1693:6654"] = true,
+				},
+				["durability"] = 55,
+				["suffix_id"] = 0,
+			},
+			[180752] = {
+				["instance_difficulty_id"] = 13,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[183566] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["durability"] = 50,
+				["suffix_id"] = 0,
+			},
+			[115440] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[181776] = {
+				["instance_difficulty_id"] = 74,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1472:5871:7244"] = true,
 				},
 				["suffix_id"] = 0,
 				["unique_id"] = 0,
 			},
-			[24986] = {
+			[10378] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["unique_id"] = 0,
 				["seen_bonuses"] = {
-					["1678:6654"] = true,
+					["1680:6654"] = true,
 				},
-				["durability"] = 70,
+				["durability"] = 115,
 				["suffix_id"] = 0,
 			},
-			[68754] = {
+			[14486] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[53852] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[49888] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["durability"] = 120,
+				["suffix_id"] = 0,
+			},
+			[6256] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["durability"] = 16,
+				["suffix_id"] = 0,
+			},
+			[183568] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["durability"] = 100,
+				["suffix_id"] = 0,
+			},
+			[64402] = {
+				["req_reputation"] = "Guild:FRIENDLY",
+			},
+			[179988] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 55,
+				["suffix_id"] = 0,
+			},
+			[55387] = {
+				["instance_difficulty_id"] = 2,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1677:6655"] = true,
+				},
+				["durability"] = 75,
+				["suffix_id"] = 0,
+			},
+			[82130] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1687:6654"] = true,
+				},
+				["durability"] = 40,
+				["suffix_id"] = 0,
+			},
+			[114099] = {
+				["instance_difficulty_id"] = 31,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[120301] = {
+				["instance_difficulty_id"] = 31,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[42376] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[36270] = {
+				["instance_difficulty_id"] = 2,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1679:6654"] = true,
+				},
+				["durability"] = 40,
+				["unique_id"] = 0,
+			},
+			[82067] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1685:6654"] = true,
+					["1694:6654"] = true,
+				},
+				["durability"] = 115,
+				["suffix_id"] = 0,
+			},
+			[157996] = {
+				["instance_difficulty_id"] = 28,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["durability"] = 100,
+				["suffix_id"] = 0,
+			},
+			[6380] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6655"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[120302] = {
+				["instance_difficulty_id"] = 31,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[6388] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
 					["6654"] = true,
 				},
-				["durability"] = 30,
+				["durability"] = 55,
 				["unique_id"] = 0,
 			},
-			[15583] = {
+			[3198] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1709:6655"] = true,
+				},
+				["durability"] = 50,
+				["unique_id"] = 0,
+			},
+			[14830] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["durability"] = 60,
+				["suffix_id"] = 0,
+			},
+			[178585] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[13823] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 80,
+				["suffix_id"] = 0,
+			},
+			[1604] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["3631"] = true,
+				},
+				["durability"] = 75,
+				["suffix_id"] = 0,
+			},
+			[9747] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
 					["1691:6654"] = true,
 				},
-				["durability"] = 60,
+				["durability"] = 50,
 				["unique_id"] = 0,
 			},
-			[178872] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 1,
+			[82004] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1705:6655"] = true,
+				},
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[14569] = {
+			[82068] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1694:6654"] = true,
+				},
+				["durability"] = 40,
+				["suffix_id"] = 0,
+			},
+			[183573] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["durability"] = 50,
+				["suffix_id"] = 0,
+			},
+			[9787] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
-					["6654"] = true,
+					["1691:6654"] = true,
+				},
+				["durability"] = 25,
+				["unique_id"] = 0,
+			},
+			[180760] = {
+				["instance_difficulty_id"] = 13,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[9811] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1708:6654"] = true,
 				},
 				["durability"] = 30,
 				["unique_id"] = 0,
+			},
+			[180249] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[181400] = {
+				["instance_difficulty_id"] = 26,
+				["upgrade_value"] = 1,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1472:5865:6616:6652"] = true,
+				},
+				["durability"] = 140,
+				["unique_id"] = 0,
+			},
+			[42377] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[18711] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["durability"] = 40,
+				["unique_id"] = 0,
+			},
+			[44647] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[7519] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1695:6654"] = true,
+				},
+				["durability"] = 80,
+				["unique_id"] = 0,
+			},
+			[12992] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["6659"] = true,
+				},
+				["durability"] = 60,
+				["unique_id"] = 0,
+			},
+			[7531] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1681:6654"] = true,
+				},
+				["durability"] = 50,
+				["unique_id"] = 0,
+			},
+			[6512] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1705:6654"] = true,
+				},
+				["durability"] = 65,
+				["unique_id"] = 0,
+			},
+			[7543] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1708:6654"] = true,
+				},
+				["durability"] = 65,
+				["unique_id"] = 0,
+			},
+			[44935] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[116596] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["89:6655"] = true,
+				},
+				["durability"] = 85,
+				["suffix_id"] = 0,
+			},
+			[123949] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[121008] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1676:6654"] = true,
+				},
+				["durability"] = 40,
+				["suffix_id"] = 0,
+			},
+			[36016] = {
+				["instance_difficulty_id"] = 2,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1678:6654"] = true,
+				},
+				["durability"] = 85,
+				["suffix_id"] = 0,
+			},
+			[13128] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["6658"] = true,
+				},
+				["durability"] = 80,
+				["suffix_id"] = 0,
+			},
+			[186135] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 40,
+				["suffix_id"] = 0,
+			},
+			[14167] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1677:6654"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[36240] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1691:6654"] = true,
+				},
+				["durability"] = 85,
+				["unique_id"] = 0,
+			},
+			[10107] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1681:6654"] = true,
+					["1680:6654"] = true,
+				},
+				["durability"] = 40,
+				["unique_id"] = 0,
+			},
+			[36304] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1709:6654"] = true,
+				},
+				["durability"] = 85,
+				["suffix_id"] = 0,
+			},
+			[10131] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1692:6654"] = true,
+				},
+				["durability"] = 55,
+				["suffix_id"] = 0,
+			},
+			[106495] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["21:6654"] = true,
+				},
+				["durability"] = 55,
+				["suffix_id"] = 0,
+			},
+			[21301] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[44648] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[183579] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["durability"] = 85,
+				["suffix_id"] = 0,
+			},
+			[181661] = {
+				["instance_difficulty_id"] = 25,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["durability"] = 50,
+				["suffix_id"] = 0,
+			},
+			[161329] = {
+				["instance_difficulty_id"] = 11,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[176291] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["durability"] = 40,
+				["unique_id"] = 0,
+			},
+			[183580] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["durability"] = 50,
+				["suffix_id"] = 0,
+			},
+			[165678] = {
+				["instance_difficulty_id"] = 28,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[82072] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1706:6654"] = true,
+				},
+				["durability"] = 70,
+				["suffix_id"] = 0,
+			},
+			[106688] = {
+				["instance_difficulty_id"] = 2,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["179"] = true,
+				},
+				["durability"] = 40,
+				["suffix_id"] = 0,
+			},
+			[8317] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["durability"] = 65,
+				["suffix_id"] = 0,
+			},
+			[12425] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["durability"] = 40,
+				["suffix_id"] = 0,
+			},
+			[187419] = {
+				["instance_difficulty_id"] = 74,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[82073] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1692:6654"] = true,
+				},
+				["durability"] = 55,
+				["suffix_id"] = 0,
+			},
+			[106689] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["168:6654"] = true,
+				},
+				["durability"] = 40,
+				["suffix_id"] = 0,
+			},
+			[186141] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1703:7453"] = true,
+				},
+				["durability"] = 85,
+				["suffix_id"] = 0,
 			},
 			[25026] = {
 				["instance_difficulty_id"] = 0,
@@ -2420,359 +3365,10 @@ WoWDBProfilerData = {
 				["durability"] = 55,
 				["suffix_id"] = 0,
 			},
-			[7554] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1705:6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[42371] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[36304] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1709:6654"] = true,
-				},
-				["durability"] = 85,
-				["suffix_id"] = 0,
-			},
-			[158075] = {
+			[174761] = {
 				["instance_difficulty_id"] = 11,
 				["upgrade_value"] = 0,
 				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[110560] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[6542] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1692:6654"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[36488] = {
-				["instance_difficulty_id"] = 22,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1679:6655"] = true,
-				},
-				["durability"] = 75,
-				["suffix_id"] = 0,
-			},
-			[82251] = {
-				["instance_difficulty_id"] = 2,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1708:6654"] = true,
-				},
-				["durability"] = 40,
-				["unique_id"] = 0,
-			},
-			[11305] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["durability"] = 65,
-				["unique_id"] = 0,
-			},
-			[7447] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1681:6654"] = true,
-				},
-				["durability"] = 35,
-				["suffix_id"] = 0,
-			},
-			[143998] = {
-				["instance_difficulty_id"] = 22,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["durability"] = 85,
-				["suffix_id"] = 0,
-			},
-			[6574] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1680:6654"] = true,
-				},
-				["durability"] = 30,
-				["suffix_id"] = 0,
-			},
-			[165614] = {
-				["instance_difficulty_id"] = 81,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["durability"] = 120,
-				["suffix_id"] = 0,
-			},
-			[24635] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1677:6654"] = true,
-				},
-				["durability"] = 70,
-				["suffix_id"] = 0,
-			},
-			[166738] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[81996] = {
-				["instance_difficulty_id"] = 28,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1713:4763"] = true,
-				},
-				["durability"] = 115,
-				["suffix_id"] = 0,
-			},
-			[175553] = {
-				["instance_difficulty_id"] = 23,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1682:6907"] = true,
-				},
-				["durability"] = 40,
-				["suffix_id"] = 0,
-			},
-			[10174] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1695:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[116596] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["89:6655"] = true,
-				},
-				["durability"] = 85,
-				["suffix_id"] = 0,
-			},
-			[36016] = {
-				["instance_difficulty_id"] = 2,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1678:6654"] = true,
-				},
-				["durability"] = 85,
-				["suffix_id"] = 0,
-			},
-			[34499] = {
-				["black_market"] = "Landro Longshot",
-			},
-			[10066] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1691:6654"] = true,
-				},
-				["durability"] = 35,
-				["unique_id"] = 0,
-			},
-			[10070] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1695:6654"] = true,
-				},
-				["durability"] = 110,
-				["unique_id"] = 0,
-			},
-			[6578] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1709:6654"] = true,
-				},
-				["durability"] = 60,
-				["unique_id"] = 0,
-			},
-			[174021] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["suffix_id"] = 0,
-				["durability"] = 20,
-				["unique_id"] = 0,
-			},
-			[128306] = {
-				["instance_difficulty_id"] = 9,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[180793] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["durability"] = 85,
-				["unique_id"] = 0,
-			},
-			[6586] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1706:6654"] = true,
-				},
-				["durability"] = 30,
-				["unique_id"] = 0,
-			},
-			[6588] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["durability"] = 50,
-				["unique_id"] = 0,
-			},
-			[82215] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1692:6655"] = true,
-				},
-				["durability"] = 85,
-				["suffix_id"] = 0,
-			},
-			[6601] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1680:6654"] = true,
-				},
-				["durability"] = 45,
-				["unique_id"] = 0,
-			},
-			[55531] = {
-				["instance_difficulty_id"] = 3,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1707:6654"] = true,
-				},
-				["durability"] = 70,
-				["suffix_id"] = 0,
-			},
-			[8143] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["durability"] = 75,
-				["unique_id"] = 0,
-			},
-			[36240] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1691:6654"] = true,
-				},
-				["durability"] = 85,
-				["unique_id"] = 0,
-			},
-			[12162] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[177791] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1715:6652:6907"] = true,
-				},
-				["durability"] = 40,
-				["suffix_id"] = 0,
-			},
-			[6604] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1706:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[14729] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["6655"] = true,
-				},
-				["durability"] = 50,
-				["suffix_id"] = 0,
-			},
-			[42365] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[183668] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["durability"] = 55,
 				["suffix_id"] = 0,
 			},
 			[159800] = {
@@ -2785,431 +3381,488 @@ WoWDBProfilerData = {
 				["durability"] = 85,
 				["suffix_id"] = 0,
 			},
-			[116715] = {
-				["instance_difficulty_id"] = 28,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["403:3875"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[45582] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[36400] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1677:6654"] = true,
-				},
-				["durability"] = 85,
-				["suffix_id"] = 0,
-			},
-			[6399] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["durability"] = 55,
-				["unique_id"] = 0,
-			},
-			[15300] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["durability"] = 25,
-				["unique_id"] = 0,
-			},
-			[116627] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["61:550:6655"] = true,
-				},
-				["durability"] = 75,
-				["suffix_id"] = 0,
-			},
-			[90718] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["6694"] = true,
-				},
-				["durability"] = 120,
-				["suffix_id"] = 0,
-			},
-			[55387] = {
-				["instance_difficulty_id"] = 2,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1677:6655"] = true,
-				},
-				["durability"] = 75,
-				["suffix_id"] = 0,
-			},
-			[82062] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1712:6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[12254] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[177793] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1707:6652:6907"] = true,
-				},
-				["durability"] = 70,
-				["suffix_id"] = 0,
-			},
-			[10190] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1709:6654"] = true,
-				},
-				["durability"] = 40,
-				["unique_id"] = 0,
-			},
-			[187008] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[176963] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1680:6652:6907"] = true,
-				},
-				["durability"] = 115,
-				["suffix_id"] = 0,
-			},
-			[90717] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["6694"] = true,
-				},
-				["durability"] = 120,
-				["suffix_id"] = 0,
-			},
-			[106495] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["21:6654"] = true,
-				},
-				["durability"] = 55,
-				["suffix_id"] = 0,
-			},
-			[24987] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1709:6654"] = true,
-				},
-				["durability"] = 85,
-				["suffix_id"] = 0,
-			},
-			[15912] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1695:6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[186484] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["durability"] = 80,
-				["suffix_id"] = 0,
-			},
-			[2819] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1677:6655"] = true,
-				},
-				["durability"] = 40,
-				["unique_id"] = 0,
-			},
-			[10186] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1695:6654"] = true,
-				},
-				["durability"] = 40,
-				["unique_id"] = 0,
-			},
-			[10230] = {
+			[15654] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
 					["1678:6654"] = true,
 				},
-				["durability"] = 115,
+				["durability"] = 40,
 				["unique_id"] = 0,
 			},
-			[9921] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1709:6654"] = true,
-				},
-				["durability"] = 60,
-				["unique_id"] = 0,
-			},
-			[184757] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[42373] = {
+			[4766] = {
 				["instance_difficulty_id"] = 14,
 				["upgrade_value"] = 1,
+				["suffix_id"] = 0,
 				["seen_bonuses"] = {
 					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[116493] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["56"] = true,
-				},
-				["durability"] = 85,
-				["suffix_id"] = 0,
-			},
-			[181372] = {
-				["instance_difficulty_id"] = 74,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[179392] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[183544] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["durability"] = 50,
-				["suffix_id"] = 0,
-			},
-			[69959] = {
-				["instance_difficulty_id"] = 5,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[120166] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["6710"] = true,
-				},
-				["durability"] = 100,
-				["unique_id"] = 0,
-			},
-			[9747] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1691:6654"] = true,
-				},
-				["durability"] = 50,
-				["unique_id"] = 0,
-			},
-			[9763] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1709:6654"] = true,
-					["1708:6654"] = true,
-				},
-				["durability"] = 50,
-				["unique_id"] = 0,
-			},
-			[183579] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["durability"] = 85,
-				["suffix_id"] = 0,
-			},
-			[180865] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["41:6908"] = true,
-				},
-				["durability"] = 75,
-				["suffix_id"] = 0,
-			},
-			[132892] = {
-				["instance_difficulty_id"] = 11,
-				["suffix_id"] = 0,
-				["upgrade_value"] = 1,
-				["contains_count"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["contains"] = {
-					"114011:1", -- [1]
-					"114014:1", -- [2]
-					"109076:3", -- [3]
-				},
-				["unique_id"] = 0,
-			},
-			[15269] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1679:6655"] = true,
-					["1692:6655"] = true,
-				},
-				["durability"] = 55,
-				["unique_id"] = 0,
-			},
-			[176966] = {
-				["instance_difficulty_id"] = 2,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["43:1693:6907"] = true,
-				},
-				["durability"] = 55,
-				["suffix_id"] = 0,
-			},
-			[9787] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1691:6654"] = true,
-				},
-				["durability"] = 25,
-				["unique_id"] = 0,
-			},
-			[9791] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1709:6654"] = true,
-				},
-				["durability"] = 90,
-				["unique_id"] = 0,
-			},
-			[170207] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[9799] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1708:6654"] = true,
 				},
 				["durability"] = 30,
 				["unique_id"] = 0,
 			},
-			[82128] = {
-				["instance_difficulty_id"] = 1,
+			[4790] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[4794] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["durability"] = 30,
+				["unique_id"] = 0,
+			},
+			[3428] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[36370] = {
+				["instance_difficulty_id"] = 22,
 				["upgrade_value"] = 2,
 				["unique_id"] = 0,
 				["seen_bonuses"] = {
-					["1693:6654"] = true,
-				},
-				["durability"] = 55,
-				["suffix_id"] = 0,
-			},
-			[106688] = {
-				["instance_difficulty_id"] = 2,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["179"] = true,
+					["1692:6654"] = true,
 				},
 				["durability"] = 40,
 				["suffix_id"] = 0,
 			},
-			[9811] = {
+			[113660] = {
+				["instance_difficulty_id"] = 6,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["562:567"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[82011] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1698:6655"] = true,
+				},
+				["durability"] = 75,
+				["suffix_id"] = 0,
+			},
+			[106627] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["durability"] = 55,
+				["unique_id"] = 0,
+			},
+			[14783] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["durability"] = 35,
+				["unique_id"] = 0,
+			},
+			[183971] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1702:6652:6908"] = true,
+				},
+				["durability"] = 55,
+				["unique_id"] = 0,
+			},
+			[11730] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["6710"] = true,
+				},
+				["durability"] = 50,
+				["suffix_id"] = 0,
+			},
+			[865] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1695:6655"] = true,
+				},
+				["durability"] = 55,
+				["unique_id"] = 0,
+			},
+			[9748] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1680:6654"] = true,
+				},
+				["durability"] = 70,
+				["unique_id"] = 0,
+			},
+			[180136] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["durability"] = 65,
+				["suffix_id"] = 0,
+			},
+			[116794] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[9772] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1681:6654"] = true,
+				},
+				["durability"] = 65,
+				["unique_id"] = 0,
+			},
+			[106692] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["153:6654"] = true,
+				},
+				["durability"] = 70,
+				["suffix_id"] = 0,
+			},
+			[178602] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 1,
+			},
+			[174766] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[172848] = {
+				["instance_difficulty_id"] = 47,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[177836] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[9884] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
 					["1708:6654"] = true,
 				},
+				["durability"] = 100,
+				["unique_id"] = 0,
+			},
+			[9916] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1691:6654"] = true,
+				},
+				["durability"] = 35,
+				["unique_id"] = 0,
+			},
+			[9932] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1680:6654"] = true,
+				},
+				["durability"] = 60,
+				["unique_id"] = 0,
+			},
+			[9940] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 65,
+				["suffix_id"] = 0,
+			},
+			[11994] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1678:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[12034] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[5002] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[6053] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[10060] = {
+				["instance_difficulty_id"] = 54,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1677:4277"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[12122] = {
+				["instance_difficulty_id"] = 11,
+				["unique_id"] = 0,
+				["NONE:0:false"] = {
+					["locations"] = {
+						["Blasted Lands:17"] = {
+							["3:488:318"] = true,
+						},
+					},
+				},
+				["upgrade_value"] = 1,
+				["contains"] = {
+					"10066:1", -- [1]
+					"9940:1", -- [2]
+				},
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["contains_count"] = 2,
+				["suffix_id"] = 0,
+			},
+			[14176] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1680:6654"] = true,
+				},
+				["durability"] = 45,
+				["unique_id"] = 0,
+			},
+			[15223] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1680:6655"] = true,
+					["1705:6655"] = true,
+				},
+				["durability"] = 50,
+				["unique_id"] = 0,
+			},
+			[12162] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[186152] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[8143] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["durability"] = 75,
+				["unique_id"] = 0,
+			},
+			[141652] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[128306] = {
+				["instance_difficulty_id"] = 9,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[36692] = {
+				["instance_difficulty_id"] = 2,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1694:6655"] = true,
+				},
+				["durability"] = 75,
+				["suffix_id"] = 0,
+			},
+			[143909] = {
+				["instance_difficulty_id"] = 22,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["7464"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[90839] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[171448] = {
+				["instance_difficulty_id"] = 13,
+				["upgrade_value"] = 4,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["6893"] = true,
+				},
+				["durability"] = 50,
+				["suffix_id"] = 0,
+			},
+			[10244] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1693:6654"] = true,
+				},
+				["durability"] = 80,
+				["unique_id"] = 0,
+			},
+			[153290] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["durability"] = 90,
+				["suffix_id"] = 0,
+			},
+			[186154] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1693:7453"] = true,
+				},
+				["durability"] = 85,
+				["suffix_id"] = 0,
+			},
+			[3047] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
 				["durability"] = 30,
 				["unique_id"] = 0,
 			},
-			[179982] = {
+			[140375] = {
+				["instance_difficulty_id"] = 31,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[11307] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["durability"] = 75,
+				["suffix_id"] = 0,
+			},
+			[12164] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[171449] = {
+				["instance_difficulty_id"] = 13,
+				["upgrade_value"] = 4,
+				["unique_id"] = 0,
+				["durability"] = 50,
+				["suffix_id"] = 0,
+			},
+			[25319] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1677:6655"] = true,
+				},
+				["durability"] = 75,
+				["unique_id"] = 0,
+			},
+			[143906] = {
+				["instance_difficulty_id"] = 22,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["7464"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[21813] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 1,
 				["unique_id"] = 0,
@@ -3224,61 +3877,105 @@ WoWDBProfilerData = {
 				["suffix_id"] = 0,
 				["unique_id"] = 0,
 			},
-			[181694] = {
-				["instance_difficulty_id"] = 74,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["durability"] = 100,
+			[140376] = {
+				["instance_difficulty_id"] = 31,
 				["suffix_id"] = 0,
-			},
-			[128821] = {
-				["instance_difficulty_id"] = 9,
+				["unique_id"] = 0,
 				["upgrade_value"] = 0,
+			},
+			[127796] = {
+				["instance_difficulty_id"] = 31,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[116589] = {
-				["instance_difficulty_id"] = 28,
+			[90840] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["contains_count"] = 1,
 				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["NONE:0:false"] = {
+					["locations"] = {
+						["Valley of the Four Winds:376"] = {
+							["3:702:632"] = true,
+						},
+					},
+				},
+				["contains"] = {
+					"money:1092556", -- [1]
+				},
+				["unique_id"] = 0,
+			},
+			[181680] = {
+				["instance_difficulty_id"] = 26,
+				["upgrade_value"] = 1,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1472:5865:6616:6652:7575"] = true,
+				},
+				["durability"] = 50,
+				["unique_id"] = 0,
+			},
+			[128819] = {
+				["instance_difficulty_id"] = 9,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 1,
+			},
+			[183558] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["suffix_id"] = 0,
+				["durability"] = 65,
+				["unique_id"] = 0,
+			},
+			[25239] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
 				["unique_id"] = 0,
 				["seen_bonuses"] = {
-					["162:3875"] = true,
+					["1693:6655"] = true,
 				},
 				["durability"] = 85,
 				["suffix_id"] = 0,
 			},
-			[124323] = {
-				["instance_difficulty_id"] = 5,
-				["upgrade_value"] = 0,
-				["suffix_id"] = 0,
+			[55538] = {
+				["instance_difficulty_id"] = 3,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
 				["seen_bonuses"] = {
-					["1472:1798"] = true,
+					["1684:6654"] = true,
 				},
-				["durability"] = 80,
+				["durability"] = 85,
+				["suffix_id"] = 0,
+			},
+			[15519] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1692:6654"] = true,
+				},
+				["suffix_id"] = 0,
 				["unique_id"] = 0,
 			},
-			[6512] = {
+			[15167] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
-					["1705:6654"] = true,
+					["1681:6654"] = true,
 				},
 				["durability"] = 65,
 				["unique_id"] = 0,
 			},
-			[8274] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["durability"] = 105,
-				["suffix_id"] = 0,
-			},
-			[187253] = {
-				["instance_difficulty_id"] = 0,
+			[165671] = {
+				["instance_difficulty_id"] = 14,
 				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
 					["0"] = true,
@@ -3286,178 +3983,354 @@ WoWDBProfilerData = {
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[169878] = {
-				["instance_difficulty_id"] = 0,
+			[165673] = {
+				["instance_difficulty_id"] = 14,
 				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[144392] = {
-				["instance_difficulty_id"] = 14,
+			[115009] = {
+				["instance_difficulty_id"] = 1,
 				["upgrade_value"] = 0,
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[10131] = {
+			[60680] = {
 				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1692:6654"] = true,
-				},
-				["durability"] = 55,
 				["suffix_id"] = 0,
-			},
-			[117356] = {
-				["instance_difficulty_id"] = 22,
-				["upgrade_value"] = 2,
 				["unique_id"] = 0,
-				["durability"] = 90,
-				["suffix_id"] = 0,
-			},
-			[10378] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1680:6654"] = true,
-				},
-				["durability"] = 115,
-				["suffix_id"] = 0,
-			},
-			[106689] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["168:6654"] = true,
-				},
-				["durability"] = 40,
-				["suffix_id"] = 0,
-			},
-			[116913] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["durability"] = 90,
-				["suffix_id"] = 0,
-			},
-			[25036] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1693:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[180099] = {
-				["instance_difficulty_id"] = 1,
 				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["durability"] = 140,
-				["suffix_id"] = 0,
 			},
-			[37793] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["6658"] = true,
-				},
-				["durability"] = 85,
-				["suffix_id"] = 0,
-			},
-			[36370] = {
-				["instance_difficulty_id"] = 22,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1692:6654"] = true,
-				},
-				["durability"] = 40,
-				["suffix_id"] = 0,
-			},
-			[42376] = {
-				["instance_difficulty_id"] = 14,
+			[165625] = {
+				["instance_difficulty_id"] = 81,
 				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["durability"] = 110,
+				["unique_id"] = 0,
 			},
-			[182725] = {
+			[122362] = {
 				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
+				["upgrade_value"] = 0,
 				["unique_id"] = 0,
-				["durability"] = 40,
 				["suffix_id"] = 0,
 			},
-			[9903] = {
+			[15583] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
 					["1691:6654"] = true,
 				},
-				["durability"] = 75,
+				["durability"] = 60,
 				["unique_id"] = 0,
 			},
-			[178950] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["durability"] = 85,
-				["unique_id"] = 0,
-			},
-			[184635] = {
-				["instance_difficulty_id"] = 31,
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-				["upgrade_value"] = 0,
-			},
-			[178056] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["durability"] = 90,
-				["suffix_id"] = 0,
-			},
-			[68748] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[186135] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["durability"] = 40,
-				["suffix_id"] = 0,
-			},
-			[16059] = {
+			[183528] = {
 				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["suffix_id"] = 0,
+				["durability"] = 50,
+				["unique_id"] = 0,
+			},
+			[7447] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1681:6654"] = true,
+				},
+				["durability"] = 35,
+				["suffix_id"] = 0,
+			},
+			[1639] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 75,
+				["suffix_id"] = 0,
+			},
+			[183526] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["suffix_id"] = 0,
+				["durability"] = 140,
+				["unique_id"] = 0,
+			},
+			[21746] = {
+				["instance_difficulty_id"] = 11,
+				["suffix_id"] = 0,
+				["contains_count"] = 52,
 				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
+				["NONE:0:false"] = {
+					["locations"] = {
+						["The Cape of Stranglethorn:210"] = {
+							["3:412:732"] = true,
+						},
+						["Searing Gorge:32"] = {
+							["3:290:782"] = true,
+							["3:274:782"] = true,
+						},
+						["Dun Morogh:27"] = {
+							["3:540:496"] = true,
+						},
+						["Feralas:69"] = {
+							["3:640:322"] = true,
+							["3:764:388"] = true,
+						},
+						["Un'Goro Crater:78"] = {
+							["3:532:728"] = true,
+						},
+						["Winterspring:83"] = {
+							["3:598:514"] = true,
+							["3:598:508"] = true,
+							["3:532:568"] = true,
+						},
+						["Shimmering Expanse:205"] = {
+							["3:572:842"] = true,
+						},
+						["Silverpine Forest:21"] = {
+							["3:450:412"] = true,
+						},
+						["Loch Modan:48"] = {
+							["3:336:456"] = true,
+						},
+						["Western Plaguelands:22"] = {
+							["3:708:794"] = true,
+							["3:636:370"] = true,
+						},
+						["Shrine of Two Moons:1530"] = {
+							["3:624:130"] = true,
+						},
+						["Silithus:81"] = {
+							["3:328:150"] = true,
+							["3:504:332"] = true,
+						},
+						["Tanaris:71"] = {
+							["3:514:292"] = true,
+							["3:372:790"] = true,
+						},
+						["Twilight Highlands:241"] = {
+							["3:518:366"] = true,
+							["3:508:704"] = true,
+						},
+						["Tirisfal Glades:18"] = {
+							["3:618:540"] = true,
+						},
+						["Burning Steppes:36"] = {
+							["3:702:454"] = true,
+						},
+						["Northern Stranglethorn:50"] = {
+							["3:710:342"] = true,
+						},
+						["Eastern Plaguelands:23"] = {
+							["3:352:688"] = true,
+							["3:700:576"] = true,
+						},
+						["Ashenvale:63"] = {
+							["3:358:512"] = true,
+						},
+						["Blasted Lands:17"] = {
+							["3:542:494"] = true,
+						},
+						["The Hinterlands:26"] = {
+							["3:522:562"] = true,
+						},
+						["Darkshore:62"] = {
+							["3:484:292"] = true,
+						},
+						["Felwood:77"] = {
+							["3:384:528"] = true,
+						},
+						["Elwynn Forest:37"] = {
+							["3:390:604"] = true,
+							["3:396:602"] = true,
+						},
+						["Thousand Needles:64"] = {
+							["3:762:768"] = true,
+							["3:490:530"] = true,
+						},
+						["Mount Hyjal:198"] = {
+							["3:226:562"] = true,
+							["3:234:568"] = true,
+						},
+						["Uldum:249"] = {
+							["3:316:630"] = true,
+							["3:652:186"] = true,
+						},
+					},
+				},
+				["contains"] = {
+					"21745:1", -- [1]
+					"21744:1", -- [2]
+					"21744:1", -- [3]
+					"21744:1", -- [4]
+					"21745:1", -- [5]
+					"21744:1", -- [6]
+					"21744:1", -- [7]
+					"21745:1", -- [8]
+					"21744:1", -- [9]
+					"21745:1", -- [10]
+					"21745:1", -- [11]
+					"21744:1", -- [12]
+					"21744:1", -- [13]
+					"21745:1", -- [14]
+					"21745:1", -- [15]
+					"21744:1", -- [16]
+					"21744:1", -- [17]
+					"21744:1", -- [18]
+					"21744:1", -- [19]
+					"21744:1", -- [20]
+					"21745:1", -- [21]
+					"21744:1", -- [22]
+					"21744:1", -- [23]
+					"21745:1", -- [24]
+					"21745:1", -- [25]
+					"21744:1", -- [26]
+					"21745:1", -- [27]
+					"21744:1", -- [28]
+					"21744:1", -- [29]
+					"21745:1", -- [30]
+					"21744:1", -- [31]
+					"21744:1", -- [32]
+					"21744:1", -- [33]
+					"21744:1", -- [34]
+					"21744:1", -- [35]
+					"21745:1", -- [36]
+					"21745:1", -- [37]
+					"21744:1", -- [38]
+					"21744:1", -- [39]
+					"21745:1", -- [40]
+					"21744:1", -- [41]
+					"21745:1", -- [42]
+					"21744:1", -- [43]
+					"21745:1", -- [44]
+					"21744:1", -- [45]
+					"21745:1", -- [46]
+					"21745:1", -- [47]
+					"21744:1", -- [48]
+					"21744:1", -- [49]
+					"21745:1", -- [50]
+					"21744:1", -- [51]
+					"21744:1", -- [52]
+				},
 				["unique_id"] = 0,
 			},
-			[82130] = {
+			[3656] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["6655"] = true,
+				},
+				["durability"] = 60,
+				["unique_id"] = 0,
+			},
+			[158075] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[7522] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1691:6654"] = true,
+				},
+				["durability"] = 50,
+				["unique_id"] = 0,
+			},
+			[15655] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1678:6654"] = true,
+				},
+				["durability"] = 85,
+				["unique_id"] = 0,
+			},
+			[6547] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1706:6654"] = true,
+				},
+				["durability"] = 25,
+				["unique_id"] = 0,
+			},
+			[183673] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 1,
+			},
+			[183540] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["durability"] = 100,
+				["suffix_id"] = 0,
+			},
+			[6559] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1708:6655"] = true,
+				},
+				["durability"] = 40,
+				["suffix_id"] = 0,
+			},
+			[11603] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["unique_id"] = 0,
 				["seen_bonuses"] = {
-					["1687:6654"] = true,
+					["6710"] = true,
 				},
-				["durability"] = 40,
+				["durability"] = 60,
 				["suffix_id"] = 0,
+			},
+			[143903] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[6588] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["durability"] = 50,
+				["unique_id"] = 0,
+			},
+			[176313] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["durability"] = 40,
+				["unique_id"] = 0,
+			},
+			[179510] = {
+				["instance_difficulty_id"] = 28,
+				["upgrade_value"] = 1,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1465:5865:6616:6652"] = true,
+				},
+				["durability"] = 100,
+				["unique_id"] = 0,
 			},
 			[6337] = {
 				["instance_difficulty_id"] = 0,
@@ -3470,51 +4343,173 @@ WoWDBProfilerData = {
 				["durability"] = 50,
 				["unique_id"] = 0,
 			},
-			[88710] = {
-				["instance_difficulty_id"] = 14,
+			[128821] = {
+				["instance_difficulty_id"] = 9,
 				["upgrade_value"] = 0,
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[122371] = {
-				["instance_difficulty_id"] = 14,
+			[9910] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1695:6654"] = true,
+					["1692:6654"] = true,
+				},
+				["durability"] = 35,
+				["unique_id"] = 0,
+			},
+			[169223] = {
+				["instance_difficulty_id"] = 11,
 				["upgrade_value"] = 0,
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[55501] = {
-				["instance_difficulty_id"] = 36,
+			[127779] = {
+				["instance_difficulty_id"] = 31,
 				["upgrade_value"] = 1,
-				["unique_id"] = 0,
 				["seen_bonuses"] = {
-					["1687:4307"] = true,
+					["0"] = true,
 				},
-				["durability"] = 115,
+				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[2879] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6659"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[180487] = {
+			[82019] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1693:6655"] = true,
+				},
 				["durability"] = 85,
 				["suffix_id"] = 0,
 			},
-			[9959] = {
+			[176977] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1701:6652:6907"] = true,
+				},
+				["durability"] = 85,
+				["suffix_id"] = 0,
+			},
+			[16059] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[183571] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["durability"] = 140,
+				["suffix_id"] = 0,
+			},
+			[128310] = {
+				["instance_difficulty_id"] = 31,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[178872] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[167731] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[122361] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[170207] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[6393] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["durability"] = 30,
+				["suffix_id"] = 0,
+			},
+			[36400] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1677:6654"] = true,
+				},
+				["durability"] = 85,
+				["suffix_id"] = 0,
+			},
+			[6604] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["seen_bonuses"] = {
+					["1706:6654"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[13825] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 80,
+				["suffix_id"] = 0,
+			},
+			[65498] = {
+				["req_reputation"] = "Guild:FRIENDLY",
+			},
+			[7436] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 2,
+			},
+			[186146] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1683:7453"] = true,
+				},
+				["durability"] = 75,
+				["suffix_id"] = 0,
+			},
+			[6567] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
 					["1691:6654"] = true,
 				},
-				["suffix_id"] = 0,
+				["durability"] = 85,
 				["unique_id"] = 0,
 			},
 			[121222] = {
@@ -3527,476 +4522,134 @@ WoWDBProfilerData = {
 				["durability"] = 40,
 				["suffix_id"] = 0,
 			},
-			[82067] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1685:6654"] = true,
-					["1694:6654"] = true,
-				},
-				["durability"] = 115,
-				["suffix_id"] = 0,
-			},
-			[13037] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["6659"] = true,
-				},
-				["durability"] = 80,
-				["suffix_id"] = 0,
-			},
-			[106627] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["durability"] = 55,
-				["unique_id"] = 0,
-			},
-			[23503] = {
-				["durability"] = 85,
-			},
-			[90722] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["6694"] = true,
-				},
-				["durability"] = 120,
-				["suffix_id"] = 0,
-			},
-			[42375] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[17906] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[4792] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[4766] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["durability"] = 30,
-				["unique_id"] = 0,
-			},
-			[25084] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1694:6655"] = true,
-				},
-				["durability"] = 85,
-				["suffix_id"] = 0,
-			},
-			[180104] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["durability"] = 50,
-				["suffix_id"] = 0,
-			},
-			[13077] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["6658"] = true,
-				},
-				["durability"] = 50,
-				["suffix_id"] = 0,
-			},
-			[174768] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[176782] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1714:6652:6907"] = true,
-				},
-				["durability"] = 70,
-				["suffix_id"] = 0,
-			},
-			[15655] = {
+			[176800] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
-					["1678:6654"] = true,
+					["1695:6652:6908"] = true,
 				},
 				["durability"] = 85,
 				["unique_id"] = 0,
 			},
-			[13093] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6658"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[44691] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1708:6691"] = true,
-				},
-				["durability"] = 50,
-				["suffix_id"] = 0,
-			},
-			[183553] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[2901] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["durability"] = 16,
-				["suffix_id"] = 0,
-			},
-			[82004] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1705:6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[15145] = {
+			[1994] = {
 				["instance_difficulty_id"] = 1,
 				["upgrade_value"] = 2,
 				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1694:6655"] = true,
-				},
 				["durability"] = 65,
 				["suffix_id"] = 0,
 			},
-			[82068] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1694:6654"] = true,
-				},
-				["durability"] = 40,
-				["suffix_id"] = 0,
-			},
-			[136350] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["durability"] = 16,
-				["suffix_id"] = 0,
-			},
-			[117391] = {
-				["instance_difficulty_id"] = 22,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[106692] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["153:6654"] = true,
-				},
-				["durability"] = 70,
-				["suffix_id"] = 0,
-			},
-			[141652] = {
-				["instance_difficulty_id"] = 11,
+			[45574] = {
+				["instance_difficulty_id"] = 14,
 				["upgrade_value"] = 0,
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[10034] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[4790] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[14167] = {
+			[9805] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["seen_bonuses"] = {
-					["1677:6654"] = true,
+					["1692:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
-			},
-			[4794] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["durability"] = 30,
 				["unique_id"] = 0,
 			},
-			[4796] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["durability"] = 30,
-				["unique_id"] = 0,
-			},
-			[6607] = {
-				["instance_difficulty_id"] = 0,
+			[8751] = {
+				["instance_difficulty_id"] = 1,
 				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1707:6654"] = true,
-				},
-				["durability"] = 65,
 				["unique_id"] = 0,
-			},
-			[4800] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
 				["durability"] = 60,
-				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
-			[180101] = {
+			[14278] = {
 				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 1,
+				["upgrade_value"] = 2,
 				["unique_id"] = 0,
 				["durability"] = 65,
 				["suffix_id"] = 0,
 			},
-			[3428] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[10107] = {
+			[9829] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
-					["1681:6654"] = true,
-					["1680:6654"] = true,
+					["1709:6654"] = true,
 				},
-				["durability"] = 40,
+				["durability"] = 30,
 				["unique_id"] = 0,
 			},
-			[42360] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[178701] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["durability"] = 100,
-				["suffix_id"] = 0,
-			},
-			[12163] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[8317] = {
-				["instance_difficulty_id"] = 1,
+			[14602] = {
+				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["durability"] = 65,
 				["suffix_id"] = 0,
 			},
-			[4816] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["durability"] = 65,
-				["unique_id"] = 0,
-			},
-			[15241] = {
+			[7484] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
-					["1681:6655"] = true,
+					["1692:6654"] = true,
 				},
 				["durability"] = 35,
 				["unique_id"] = 0,
 			},
-			[176977] = {
+			[184757] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[180793] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
-				["unique_id"] = 0,
+				["suffix_id"] = 0,
 				["seen_bonuses"] = {
-					["1701:6652:6907"] = true,
+					["1700:6652:6908"] = true,
 				},
 				["durability"] = 85,
+				["unique_id"] = 0,
+			},
+			[116913] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 90,
 				["suffix_id"] = 0,
 			},
-			[15249] = {
+			[45582] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[177793] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
+				["unique_id"] = 0,
 				["seen_bonuses"] = {
-					["1679:6655"] = true,
+					["1707:6652:6907"] = true,
 				},
-				["durability"] = 55,
-				["unique_id"] = 0,
-			},
-			[183540] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["durability"] = 100,
+				["durability"] = 70,
 				["suffix_id"] = 0,
 			},
-			[187252] = {
-				["instance_difficulty_id"] = 0,
+			[118531] = {
+				["instance_difficulty_id"] = 31,
+				["unique_id"] = 0,
 				["upgrade_value"] = 1,
+				["contains_count"] = 1,
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
+				["contains"] = {
+					"113660:1", -- [1]
+				},
 				["suffix_id"] = 0,
 			},
-			[128858] = {
+			[120978] = {
 				["instance_difficulty_id"] = 9,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[15224] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1694:6655"] = true,
-				},
-				["durability"] = 50,
-				["unique_id"] = 0,
-			},
-			[184515] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["6706"] = true,
-				},
-				["durability"] = 65,
-				["unique_id"] = 0,
-			},
-			[186459] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[157996] = {
-				["instance_difficulty_id"] = 28,
 				["upgrade_value"] = 0,
 				["unique_id"] = 0,
-				["durability"] = 100,
-				["suffix_id"] = 0,
-			},
-			[120163] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["durability"] = 30,
-				["suffix_id"] = 0,
-			},
-			[31303] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["6659"] = true,
-				},
-				["durability"] = 100,
-				["suffix_id"] = 0,
-			},
-			[11308] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["durability"] = 75,
 				["suffix_id"] = 0,
 			},
 			[36503] = {
@@ -4009,41 +4662,69 @@ WoWDBProfilerData = {
 				["durability"] = 85,
 				["suffix_id"] = 0,
 			},
-			[177809] = {
-				["instance_difficulty_id"] = 0,
+			[10128] = {
+				["instance_difficulty_id"] = 1,
 				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1708:6654"] = true,
+				},
+				["durability"] = 110,
 				["suffix_id"] = 0,
+			},
+			[7524] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1707:6654"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[3966] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
 				["durability"] = 75,
-				["unique_id"] = 0,
-			},
-			[151351] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[175559] = {
+			[8491] = {
+				["black_market"] = "Breanni",
+			},
+			[175736] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 2,
+			},
+			[90717] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["unique_id"] = 0,
 				["seen_bonuses"] = {
-					["1705:6907"] = true,
+					["6694"] = true,
 				},
-				["durability"] = 85,
+				["durability"] = 120,
 				["suffix_id"] = 0,
 			},
-			[865] = {
+			[7544] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
 				["seen_bonuses"] = {
-					["1695:6655"] = true,
+					["1693:6654"] = true,
 				},
-				["durability"] = 55,
+				["suffix_id"] = 0,
 				["unique_id"] = 0,
 			},
-			[22418] = {
-				["black_market"] = "Malton Droffers",
+			[85663] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["durability"] = 16,
+				["suffix_id"] = 0,
+			},
+			[65435] = {
+				["req_reputation"] = "Guild:FRIENDLY",
 			},
 			[12251] = {
 				["instance_difficulty_id"] = 14,
@@ -4055,302 +4736,100 @@ WoWDBProfilerData = {
 				["durability"] = 65,
 				["unique_id"] = 0,
 			},
-			[14299] = {
+			[6537] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
-					["1708:6654"] = true,
+					["1692:6654"] = true,
 				},
-				["durability"] = 55,
+				["durability"] = 35,
 				["unique_id"] = 0,
 			},
-			[6393] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["durability"] = 30,
-				["suffix_id"] = 0,
-			},
-			[6395] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["durability"] = 55,
-				["unique_id"] = 0,
-			},
-			[152324] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[36692] = {
-				["instance_difficulty_id"] = 2,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1694:6655"] = true,
-				},
-				["durability"] = 75,
-				["suffix_id"] = 0,
-			},
-			[14830] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["durability"] = 60,
-				["suffix_id"] = 0,
-			},
-			[169425] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1677:6654"] = true,
-				},
-				["durability"] = 115,
-				["unique_id"] = 0,
-			},
-			[42361] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[42377] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[144021] = {
-				["instance_difficulty_id"] = 22,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["durability"] = 85,
-				["suffix_id"] = 0,
-			},
-			[11307] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["durability"] = 75,
-				["suffix_id"] = 0,
-			},
-			[18711] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["durability"] = 40,
-				["unique_id"] = 0,
-			},
-			[9748] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1680:6654"] = true,
-				},
-				["durability"] = 70,
-				["unique_id"] = 0,
-			},
-			[7477] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1709:6654"] = true,
-				},
-				["durability"] = 105,
-				["unique_id"] = 0,
-			},
-			[186146] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1683:7453"] = true,
-				},
-				["durability"] = 75,
-				["suffix_id"] = 0,
-			},
-			[37890] = {
-				["instance_difficulty_id"] = 2,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["4196"] = true,
-				},
-				["durability"] = 120,
-				["unique_id"] = 0,
-			},
-			[127295] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[128860] = {
-				["instance_difficulty_id"] = 9,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[9772] = {
+			[6541] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
 					["1681:6654"] = true,
 				},
-				["durability"] = 65,
+				["durability"] = 25,
 				["unique_id"] = 0,
 			},
-			[13128] = {
+			[169412] = {
 				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["6658"] = true,
-				},
-				["durability"] = 80,
-				["suffix_id"] = 0,
-			},
-			[6431] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["durability"] = 50,
-				["unique_id"] = 0,
-			},
-			[120301] = {
-				["instance_difficulty_id"] = 31,
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-				["upgrade_value"] = 1,
-			},
-			[177789] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1690:6652:6907"] = true,
-				},
-				["durability"] = 115,
-				["suffix_id"] = 0,
-			},
-			[8259] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[82072] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1706:6654"] = true,
-				},
-				["durability"] = 70,
-				["suffix_id"] = 0,
-			},
-			[9289] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1705:6654"] = true,
-				},
-				["durability"] = 50,
-				["unique_id"] = 0,
-			},
-			[15223] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1680:6655"] = true,
-					["1705:6655"] = true,
-				},
-				["durability"] = 50,
-				["unique_id"] = 0,
-			},
-			[165613] = {
-				["instance_difficulty_id"] = 81,
 				["upgrade_value"] = 1,
 				["unique_id"] = 0,
-				["durability"] = 120,
-				["suffix_id"] = 0,
-			},
-			[15944] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
 				["seen_bonuses"] = {
-					["6655"] = true,
+					["1691:6654"] = true,
 				},
-				["unique_id"] = 0,
+				["durability"] = 40,
 				["suffix_id"] = 0,
 			},
-			[186154] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1693:7453"] = true,
-				},
-				["durability"] = 85,
-				["suffix_id"] = 0,
-			},
-			[129276] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[24954] = {
+			[3208] = {
 				["instance_difficulty_id"] = 1,
 				["upgrade_value"] = 2,
 				["unique_id"] = 0,
 				["seen_bonuses"] = {
-					["1678:6654"] = true,
+					["1677:6655"] = true,
 				},
-				["durability"] = 70,
+				["durability"] = 75,
 				["suffix_id"] = 0,
 			},
-			[184840] = {
+			[176320] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["durability"] = 40,
+				["unique_id"] = 0,
+			},
+			[181694] = {
 				["instance_difficulty_id"] = 74,
 				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["durability"] = 100,
+				["suffix_id"] = 0,
+			},
+			[175553] = {
+				["instance_difficulty_id"] = 23,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
 				["seen_bonuses"] = {
-					["1472:5881:6646:6652"] = true,
+					["1682:6907"] = true,
+				},
+				["durability"] = 40,
+				["suffix_id"] = 0,
+			},
+			[21113] = {
+				["contains"] = {
+					"money:110", -- [1]
+					"2319:2", -- [2]
+					"4234:2", -- [3]
+					"money:179", -- [4]
+					"2319:2", -- [5]
+					"4305:2", -- [6]
+				},
+				["NONE:0:false"] = {
+					["locations"] = {
+						["Ashenvale:63"] = {
+							["3:800:712"] = true,
+						},
+					},
+				},
+				["contains_count"] = 2,
+			},
+			[176292] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["durability"] = 70,
+				["unique_id"] = 0,
+			},
+			[36412] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1677:6654"] = true,
 				},
 				["suffix_id"] = 0,
 				["unique_id"] = 0,
@@ -4365,143 +4844,45 @@ WoWDBProfilerData = {
 				["durability"] = 85,
 				["suffix_id"] = 0,
 			},
-			[4735] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[180944] = {
-				["instance_difficulty_id"] = 74,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1472:5871:7244"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[165678] = {
-				["instance_difficulty_id"] = 28,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[140192] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[5956] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["durability"] = 16,
-				["suffix_id"] = 0,
-			},
-			[177784] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["durability"] = 85,
-				["suffix_id"] = 0,
-			},
-			[82073] = {
+			[90718] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["unique_id"] = 0,
 				["seen_bonuses"] = {
-					["1692:6654"] = true,
+					["6694"] = true,
 				},
-				["durability"] = 55,
+				["durability"] = 120,
 				["suffix_id"] = 0,
 			},
-			[180817] = {
-				["instance_difficulty_id"] = 14,
+			[186463] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 165,
+				["suffix_id"] = 0,
+			},
+			[766] = {
+				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[36270] = {
-				["instance_difficulty_id"] = 2,
-				["upgrade_value"] = 2,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
-					["1679:6654"] = true,
+					["0"] = true,
 				},
-				["durability"] = 40,
+				["durability"] = 25,
 				["unique_id"] = 0,
 			},
-			[176313] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["durability"] = 40,
-				["unique_id"] = 0,
-			},
-			[9830] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1705:6655"] = true,
-				},
-				["durability"] = 65,
-				["suffix_id"] = 0,
-			},
-			[9290] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["unique_id"] = 0,
-				["seen_bonuses"] = {
-					["1680:6654"] = true,
-				},
-				["durability"] = 60,
-				["suffix_id"] = 0,
-			},
-			[9884] = {
+			[15224] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
-					["1708:6654"] = true,
+					["1694:6655"] = true,
 				},
-				["durability"] = 100,
+				["durability"] = 50,
 				["unique_id"] = 0,
 			},
-			[181712] = {
-				["instance_difficulty_id"] = 26,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1472:5858:7244"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[181776] = {
-				["instance_difficulty_id"] = 74,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1472:5871:7244"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[106733] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["52:6654"] = true,
-				},
-				["durability"] = 70,
-				["unique_id"] = 0,
-			},
-			[21301] = {
-				["instance_difficulty_id"] = 11,
+			[12163] = {
+				["instance_difficulty_id"] = 14,
 				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
 					["0"] = true,
@@ -4509,93 +4890,24 @@ WoWDBProfilerData = {
 				["suffix_id"] = 0,
 				["unique_id"] = 0,
 			},
-			[3198] = {
+			[116613] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1709:6655"] = true,
-				},
-				["durability"] = 50,
 				["unique_id"] = 0,
-			},
-			[7517] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
 				["seen_bonuses"] = {
-					["1705:6654"] = true,
+					["93:6655"] = true,
 				},
-				["durability"] = 105,
-				["unique_id"] = 0,
-			},
-			[7519] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
+				["durability"] = 85,
 				["suffix_id"] = 0,
+			},
+			[10133] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
 				["seen_bonuses"] = {
 					["1695:6654"] = true,
 				},
 				["durability"] = 80,
-				["unique_id"] = 0,
-			},
-			[9916] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1691:6654"] = true,
-				},
-				["durability"] = 35,
-				["unique_id"] = 0,
-			},
-			[180760] = {
-				["instance_difficulty_id"] = 13,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[15673] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1694:6654"] = true,
-				},
-				["durability"] = 40,
-				["unique_id"] = 0,
-			},
-			[84661] = {
-				["durability"] = 35,
-			},
-			[9932] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1680:6654"] = true,
-				},
-				["durability"] = 60,
-				["unique_id"] = 0,
-			},
-			[7531] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1681:6654"] = true,
-				},
-				["durability"] = 50,
-				["unique_id"] = 0,
-			},
-			[183566] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["unique_id"] = 0,
-				["durability"] = 50,
 				["suffix_id"] = 0,
 			},
 			[4563] = {
@@ -4608,86 +4920,159 @@ WoWDBProfilerData = {
 				["durability"] = 25,
 				["unique_id"] = 0,
 			},
-			[766] = {
+			[10404] = {
 				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1705:6654"] = true,
+				},
+				["durability"] = 30,
+				["unique_id"] = 0,
+			},
+			[114333] = {
+				["instance_difficulty_id"] = 31,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["94"] = true,
+				},
+				["durability"] = 100,
+				["suffix_id"] = 0,
+			},
+			[2072] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1678:6655"] = true,
+				},
+				["durability"] = 60,
+				["unique_id"] = 0,
+			},
+			[82215] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1692:6655"] = true,
+				},
+				["durability"] = 85,
+				["suffix_id"] = 0,
+			},
+			[116477] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["29:6655"] = true,
+				},
+				["durability"] = 85,
+				["suffix_id"] = 0,
+			},
+			[4765] = {
+				["instance_difficulty_id"] = 14,
 				["upgrade_value"] = 1,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["durability"] = 25,
+				["durability"] = 30,
 				["unique_id"] = 0,
 			},
-			[160252] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[7541] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1692:6654"] = true,
-				},
-				["durability"] = 35,
-				["unique_id"] = 0,
-			},
-			[7543] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["suffix_id"] = 0,
-				["seen_bonuses"] = {
-					["1708:6654"] = true,
-				},
-				["durability"] = 65,
-				["unique_id"] = 0,
-			},
-			[12008] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1677:6654"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[36139] = {
+			[10205] = {
 				["instance_difficulty_id"] = 1,
 				["upgrade_value"] = 2,
 				["unique_id"] = 0,
 				["seen_bonuses"] = {
-					["1678:6654"] = true,
+					["1708:6654"] = true,
+				},
+				["durability"] = 35,
+				["suffix_id"] = 0,
+			},
+			[174021] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["suffix_id"] = 0,
+				["durability"] = 20,
+				["unique_id"] = 0,
+			},
+			[10079] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[179392] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[184635] = {
+				["instance_difficulty_id"] = 31,
+				["suffix_id"] = 0,
+				["upgrade_value"] = 0,
+				["contains"] = {
+					"171828:12", -- [1]
+					"171840:6", -- [2]
+					"171828:12", -- [3]
+					"171840:6", -- [4]
+					"171828:12", -- [5]
+					"171840:6", -- [6]
+					"171828:12", -- [7]
+					"171840:6", -- [8]
+				},
+				["contains_count"] = 4,
+				["NONE:0:false"] = {
+					["locations"] = {
+						["Revendreth:1699"] = {
+							["4:586:410"] = true,
+							["4:550:264"] = true,
+							["4:556:280"] = true,
+						},
+					},
+				},
+				["unique_id"] = 0,
+			},
+			[2819] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1677:6655"] = true,
 				},
 				["durability"] = 40,
-				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
-			[11039] = {
+			[3202] = {
 				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
+				["upgrade_value"] = 2,
 				["unique_id"] = 0,
-			},
-			[178143] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
-					["0"] = true,
+					["6654"] = true,
 				},
+				["durability"] = 30,
 				["suffix_id"] = 0,
-				["unique_id"] = 0,
 			},
-			[178585] = {
+			[3997] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 85,
+				["suffix_id"] = 0,
+			},
+			[176963] = {
 				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
+				["upgrade_value"] = 2,
 				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1680:6652:6907"] = true,
+				},
+				["durability"] = 115,
 				["suffix_id"] = 0,
 			},
-			[42363] = {
+			[21957] = {
 				["instance_difficulty_id"] = 14,
 				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
@@ -4696,8 +5081,234 @@ WoWDBProfilerData = {
 				["suffix_id"] = 0,
 				["unique_id"] = 0,
 			},
-			[5002] = {
+			[186144] = {
 				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1680:7453"] = true,
+				},
+				["durability"] = 85,
+				["suffix_id"] = 0,
+			},
+			[11308] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["durability"] = 75,
+				["suffix_id"] = 0,
+			},
+			[183578] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["durability"] = 85,
+				["suffix_id"] = 0,
+			},
+			[183581] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["durability"] = 65,
+				["suffix_id"] = 0,
+			},
+			[9763] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1709:6654"] = true,
+					["1708:6654"] = true,
+				},
+				["durability"] = 50,
+				["unique_id"] = 0,
+			},
+			[183390] = {
+				["instance_difficulty_id"] = 9,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[15557] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1681:6654"] = true,
+				},
+				["durability"] = 95,
+				["unique_id"] = 0,
+			},
+			[87216] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[176295] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["durability"] = 115,
+				["unique_id"] = 0,
+			},
+			[6266] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1680:6654"] = true,
+				},
+				["durability"] = 65,
+				["unique_id"] = 0,
+			},
+			[15965] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6655"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[2879] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6659"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[181708] = {
+				["instance_difficulty_id"] = 25,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[169400] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1697:4796"] = true,
+				},
+				["durability"] = 70,
+				["unique_id"] = 0,
+			},
+			[166735] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[159575] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1688:6655"] = true,
+				},
+				["durability"] = 85,
+				["unique_id"] = 0,
+			},
+			[6268] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1707:6654"] = true,
+					["1705:6654"] = true,
+				},
+				["durability"] = 65,
+				["unique_id"] = 0,
+			},
+			[14468] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[187898] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[175559] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1705:6907"] = true,
+				},
+				["durability"] = 85,
+				["suffix_id"] = 0,
+			},
+			[176297] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["durability"] = 40,
+				["unique_id"] = 0,
+			},
+			[171443] = {
+				["instance_difficulty_id"] = 13,
+				["upgrade_value"] = 4,
+				["unique_id"] = 0,
+				["durability"] = 65,
+				["suffix_id"] = 0,
+			},
+			[176966] = {
+				["instance_difficulty_id"] = 2,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["43:1693:6907"] = true,
+				},
+				["durability"] = 55,
+				["suffix_id"] = 0,
+			},
+			[9969] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1692:6654"] = true,
+				},
+				["durability"] = 60,
+				["suffix_id"] = 0,
+			},
+			[128645] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[14569] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["durability"] = 30,
+				["unique_id"] = 0,
+			},
+			[4735] = {
+				["instance_difficulty_id"] = 1,
 				["upgrade_value"] = 2,
 				["seen_bonuses"] = {
 					["6654"] = true,
@@ -4705,59 +5316,713 @@ WoWDBProfilerData = {
 				["suffix_id"] = 0,
 				["unique_id"] = 0,
 			},
-			[6537] = {
+			[6400] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
-					["1692:6654"] = true,
+					["6655"] = true,
 				},
-				["durability"] = 35,
+				["durability"] = 65,
 				["unique_id"] = 0,
 			},
-			[31298] = {
-				["instance_difficulty_id"] = 0,
+			[42378] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[9290] = {
+				["instance_difficulty_id"] = 1,
 				["upgrade_value"] = 2,
 				["unique_id"] = 0,
 				["seen_bonuses"] = {
-					["6658"] = true,
+					["1680:6654"] = true,
 				},
-				["durability"] = 100,
+				["durability"] = 60,
 				["suffix_id"] = 0,
 			},
-			[6541] = {
+			[33154] = {
+				["instance_difficulty_id"] = 22,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[11306] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["durability"] = 65,
+				["suffix_id"] = 0,
+			},
+			[115518] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[9785] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["suffix_id"] = 0,
 				["seen_bonuses"] = {
-					["1681:6654"] = true,
+					["1709:6654"] = true,
 				},
 				["durability"] = 25,
 				["unique_id"] = 0,
 			},
-			[183568] = {
+			[9801] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1691:6654"] = true,
+				},
+				["durability"] = 30,
+				["unique_id"] = 0,
+			},
+			[129276] = {
 				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[2901] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["durability"] = 16,
+				["suffix_id"] = 0,
+			},
+			[184515] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["6706"] = true,
+				},
+				["durability"] = 65,
+				["unique_id"] = 0,
+			},
+			[166738] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[122371] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[90722] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["6694"] = true,
+				},
+				["durability"] = 120,
+				["suffix_id"] = 0,
+			},
+			[82075] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1701:6654"] = true,
+				},
+				["durability"] = 40,
+				["suffix_id"] = 0,
+			},
+			[6543] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1706:6654"] = true,
+				},
+				["durability"] = 25,
+				["unique_id"] = 0,
+			},
+			[179311] = {
+				["instance_difficulty_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 2,
+				["contains"] = {
+					"money:553734", -- [1]
+					"177784:1", -- [2]
+				},
+				["contains_count"] = 1,
+				["NONE:0:false"] = {
+					["locations"] = {
+						["Oribos:1670"] = {
+							["4:404:322"] = true,
+						},
+					},
+				},
+				["suffix_id"] = 0,
+			},
+			[127806] = {
+				["instance_difficulty_id"] = 31,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[14729] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["6655"] = true,
+				},
+				["durability"] = 50,
+				["suffix_id"] = 0,
+			},
+			[6601] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1680:6654"] = true,
+				},
+				["durability"] = 45,
+				["unique_id"] = 0,
+			},
+			[9925] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 35,
+				["suffix_id"] = 0,
+			},
+			[177784] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["43:1678:6907"] = true,
+				},
+				["durability"] = 85,
+				["suffix_id"] = 0,
+			},
+			[183636] = {
+				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 1,
 				["unique_id"] = 0,
 				["durability"] = 100,
 				["suffix_id"] = 0,
 			},
-			[183249] = {
+			[36009] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1705:6654"] = true,
+				},
+				["durability"] = 70,
+				["unique_id"] = 0,
+			},
+			[169425] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1677:6654"] = true,
+				},
+				["durability"] = 115,
+				["unique_id"] = 0,
+			},
+			[127295] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[10132] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1680:6654"] = true,
+				},
+				["durability"] = 65,
+				["unique_id"] = 0,
+			},
+			[141605] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[68754] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["durability"] = 30,
+				["unique_id"] = 0,
+			},
+			[3964] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[14825] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 70,
+				["suffix_id"] = 0,
+			},
+			[6578] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1709:6654"] = true,
+				},
+				["durability"] = 60,
+				["unique_id"] = 0,
+			},
+			[182725] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 40,
+				["suffix_id"] = 0,
+			},
+			[7470] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1707:6654"] = true,
+				},
+				["durability"] = 60,
+				["suffix_id"] = 0,
+			},
+			[9742] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["durability"] = 20,
+				["unique_id"] = 0,
+			},
+			[187897] = {
 				["instance_difficulty_id"] = 14,
 				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
+				["unique_id"] = 0,
 				["suffix_id"] = 0,
+			},
+			[4072] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["durability"] = 30,
 				["unique_id"] = 0,
 			},
-			[183517] = {
+			[187008] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
+				["unique_id"] = 0,
 				["suffix_id"] = 0,
+			},
+			[15912] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1695:6655"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[6399] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["durability"] = 55,
+				["unique_id"] = 0,
+			},
+			[9790] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1709:6655"] = true,
+				},
+				["durability"] = 45,
+				["suffix_id"] = 0,
+			},
+			[9798] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1705:6654"] = true,
+				},
+				["durability"] = 90,
+				["unique_id"] = 0,
+			},
+			[15944] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6655"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[54537] = {
+				["instance_difficulty_id"] = 11,
+				["unique_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["contains"] = {
+					"money:177868", -- [1]
+					"49927:7", -- [2]
+					"money:197862", -- [3]
+					"49927:8", -- [4]
+					"money:217015", -- [5]
+					"49927:6", -- [6]
+					"money:197243", -- [7]
+					"49927:6", -- [8]
+					"money:177640", -- [9]
+					"49927:10", -- [10]
+					"49715:1", -- [11]
+				},
+				["contains_count"] = 5,
+				["suffix_id"] = 0,
+			},
+			[183556] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["suffix_id"] = 0,
+				["durability"] = 85,
+				["unique_id"] = 0,
+			},
+			[9830] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1705:6655"] = true,
+				},
+				["durability"] = 65,
+				["suffix_id"] = 0,
+			},
+			[9838] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1692:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[4000] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 35,
+				["suffix_id"] = 0,
+			},
+			[154771] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 55,
+				["suffix_id"] = 0,
+			},
+			[143902] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[10113] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 65,
+				["suffix_id"] = 0,
+			},
+			[15274] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 80,
+				["suffix_id"] = 0,
+			},
+			[17710] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["6710"] = true,
+				},
+				["durability"] = 55,
+				["unique_id"] = 0,
+			},
+			[151351] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[8749] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 60,
+				["suffix_id"] = 0,
+			},
+			[44691] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1708:6691"] = true,
+				},
+				["durability"] = 50,
+				["suffix_id"] = 0,
+			},
+			[9959] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1691:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[174768] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[42375] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[12695] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 1,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[4026] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 70,
+				["suffix_id"] = 0,
+			},
+			[183650] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 1,
+			},
+			[127829] = {
+				["instance_difficulty_id"] = 9,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[181712] = {
+				["instance_difficulty_id"] = 26,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1472:5858:7244"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[183565] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["suffix_id"] = 0,
+				["durability"] = 50,
+				["unique_id"] = 0,
+			},
+			[128832] = {
+				["instance_difficulty_id"] = 9,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[183854] = {
+				["req_reputation"] = "The Ember Court:REVERED",
+			},
+			[183534] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["suffix_id"] = 0,
+				["durability"] = 50,
+				["unique_id"] = 0,
+			},
+			[8080] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["durability"] = 110,
+				["suffix_id"] = 0,
+			},
+			[139380] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[15145] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["1694:6655"] = true,
+				},
+				["durability"] = 65,
+				["suffix_id"] = 0,
+			},
+			[128935] = {
+				["instance_difficulty_id"] = 9,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 2,
+			},
+			[10186] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1695:6654"] = true,
+				},
+				["durability"] = 40,
+				["unique_id"] = 0,
+			},
+			[183561] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["suffix_id"] = 0,
+				["durability"] = 85,
+				["unique_id"] = 0,
+			},
+			[122668] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[10070] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1695:6654"] = true,
+				},
+				["durability"] = 110,
+				["unique_id"] = 0,
+			},
+			[183530] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["suffix_id"] = 0,
+				["durability"] = 100,
+				["unique_id"] = 0,
+			},
+			[16224] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[128173] = {
+				["instance_difficulty_id"] = 0,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 0,
+			},
+			[183550] = {
+				["instance_difficulty_id"] = 14,
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+				["upgrade_value"] = 1,
+			},
+			[116493] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["seen_bonuses"] = {
+					["56"] = true,
+				},
+				["durability"] = 85,
+				["suffix_id"] = 0,
+			},
+			[15233] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["durability"] = 60,
+				["unique_id"] = 0,
+			},
+			[15241] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["seen_bonuses"] = {
+					["1681:6655"] = true,
+				},
+				["durability"] = 35,
+				["unique_id"] = 0,
+			},
+			[186506] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["suffix_id"] = 0,
+				["durability"] = 110,
 				["unique_id"] = 0,
 			},
 		},
@@ -4858,6 +6123,28 @@ WoWDBProfilerData = {
 						["drops"] = {
 							"money:13447", -- [1]
 							"currency:1:1767", -- [2]
+						},
+					},
+				},
+			},
+			["15573"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Tanaris:71"] = {
+										["3:372:790"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
 						},
 					},
 				},
@@ -4989,7 +6276,7 @@ WoWDBProfilerData = {
 							["drops"] = 2,
 						},
 						["spells"] = {
-							[42648] = 31,
+							[42648] = 33,
 							[330616] = 2,
 						},
 						["stats"] = {
@@ -5009,6 +6296,28 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["14627"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Thorium Brotherhood",
+				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Searing Gorge:32"] = {
+										["3:384:278"] = true,
+									},
+								},
+								["max_health"] = 2165,
+							},
+						},
+					},
+				},
+				["reaction"] = "60:Horde:FRIENDLY",
+			},
 			["156365"] = {
 				["genders"] = {
 					["MALE"] = true,
@@ -5026,6 +6335,66 @@ WoWDBProfilerData = {
 								},
 								["max_health"] = 11791,
 							},
+						},
+					},
+				},
+			},
+			["42975"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["spells"] = {
+							[40505] = 6,
+							[16458] = 3,
+						},
+						["stats"] = {
+							["level_30"] = {
+								["max_health"] = 8020,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 14,
+						},
+						["drops"] = {
+							"money:1990", -- [1]
+							"6530:3", -- [2]
+							"money:6579", -- [3]
+							"4338:14", -- [4]
+							"7972:2", -- [5]
+							"money:3598", -- [6]
+							"money:6504", -- [7]
+							"6530:1", -- [8]
+							"money:6073", -- [9]
+							"6530:1", -- [10]
+							"15274:1", -- [11]
+							"money:9790", -- [12]
+							"money:10449", -- [13]
+							"money:9435", -- [14]
+							"money:7018", -- [15]
+							"4338:20", -- [16]
+							"money:3013", -- [17]
+							"money:7602", -- [18]
+							"money:3468", -- [19]
+							"4338:20", -- [20]
+							"money:3923", -- [21]
+							"4338:20", -- [22]
+							"money:4069", -- [23]
+							"4338:4", -- [24]
+						},
+					},
+				},
+			},
+			["77767"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[164470] = 2,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -5104,6 +6473,17 @@ WoWDBProfilerData = {
 					["MALE"] = true,
 				},
 			},
+			["4658"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[101639] = 6,
+						},
+					},
+				},
+			},
 			["237227"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
@@ -5140,6 +6520,39 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["44872"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[71507] = 4,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["15559"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["The Hinterlands:26"] = {
+										["3:500:482"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
 			["175408"] = {
 				["reaction"] = "60:Horde:FRIENDLY",
 				["class"] = "WARRIOR",
@@ -5172,8 +6585,8 @@ WoWDBProfilerData = {
 										["3:392:544"] = true,
 										["3:392:538"] = true,
 										["3:394:554"] = true,
-										["3:392:564"] = true,
 										["3:378:550"] = true,
+										["3:392:564"] = true,
 										["3:380:562"] = true,
 										["3:400:558"] = true,
 										["3:398:564"] = true,
@@ -5201,6 +6614,17 @@ WoWDBProfilerData = {
 								["max_health"] = 9432,
 								["power"] = "MANA:4896",
 							},
+						},
+					},
+				},
+			},
+			["96955"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[48168] = 2,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -5271,6 +6695,28 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["3415"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[44531] = 5,
+						},
+					},
+				},
+			},
+			["82011"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[165767] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["157727"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
@@ -5304,6 +6750,30 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["47770"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[79892] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["76556"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[159922] = 18,
+							[159944] = 19,
+							[1604] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["79862"] = {
 				["is_pvp"] = true,
 				["reaction"] = "60:Horde:FRIENDLY",
@@ -5322,6 +6792,17 @@ WoWDBProfilerData = {
 				},
 				["banker"] = true,
 			},
+			["38896"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[80031] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["174731"] = {
 				["genders"] = {
 					["MALE"] = true,
@@ -5338,10 +6819,10 @@ WoWDBProfilerData = {
 									["Ardenweald:1565"] = {
 										["3:444:652"] = true,
 										["3:450:638"] = true,
-										["3:448:632"] = true,
 										["3:438:640"] = true,
-										["3:452:644"] = true,
+										["3:448:632"] = true,
 										["3:442:646"] = true,
+										["3:452:644"] = true,
 									},
 								},
 								["power"] = "MANA:2434",
@@ -5373,6 +6854,34 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["1554"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[29363] = 19,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["45821"] = {
+				["is_pvp"] = true,
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["max_health"] = 1604,
+							},
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+			},
 			["169707"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
@@ -5395,6 +6904,17 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["697"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[8788] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["166710"] = {
 				["reaction"] = "60:Horde:NEUTRAL",
 				["class"] = "WARRIOR",
@@ -5406,6 +6926,55 @@ WoWDBProfilerData = {
 						["stats"] = {
 							["level_61"] = {
 								["max_health"] = 176865,
+							},
+						},
+					},
+				},
+			},
+			["84967"] = {
+				["is_pvp"] = true,
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_40"] = {
+								["power"] = "ENERGY:100",
+								["max_health"] = 2463,
+							},
+						},
+					},
+				},
+				["sells"] = {
+					[113262] = "-1:1:[0:0:0:(15:120945)]",
+					[113263] = "-1:1:[0:0:0:(15:120945)]",
+					[113264] = "-1:1:[0:0:0:(15:120945)]",
+					[110611] = "-1:1:[0:0:0:(5:120945)]",
+					[118472] = "-1:1:[0:0:0:(25:120945)]",
+					[127759] = "-1:1:[0:0:0:(25:120945)]",
+					[108996] = "-1:1:[0:0:0:(5:120945)]",
+					[111556] = "-1:1:[0:0:0:(5:120945)]",
+					[112377] = "-1:1:[0:0:0:(5:120945)]",
+					[115524] = "-1:1:[0:0:0:(5:120945)]",
+					[111366] = "-1:1:[0:0:0:(5:120945)]",
+					[113261] = "-1:1:[0:0:0:(15:120945)]",
+					[108257] = "-1:1:[0:0:0:(5:120945)]",
+				},
+				["class"] = "ROGUE",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+			},
+			["34886"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["max_health"] = 1604,
 							},
 						},
 					},
@@ -5429,6 +6998,51 @@ WoWDBProfilerData = {
 								},
 								["power"] = "MANA:1923",
 							},
+						},
+					},
+				},
+			},
+			["24818"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 4,
+						},
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Burning Steppes:35"] = {
+										["5:520:746"] = true,
+										["5:402:326"] = true,
+										["5:512:732"] = true,
+										["5:370:284"] = true,
+										["5:370:308"] = true,
+										["5:408:314"] = true,
+										["5:370:294"] = true,
+										["5:376:408"] = true,
+										["5:404:320"] = true,
+										["5:504:724"] = true,
+									},
+								},
+								["max_health"] = 2005,
+							},
+						},
+						["spells"] = {
+							[13589] = 26,
+						},
+						["drops"] = {
+							"money:3638", -- [1]
+							"18945:9", -- [2]
+							"4338:3", -- [3]
+							"money:1723", -- [4]
+							"money:3644", -- [5]
+							"11078:1", -- [6]
+							"money:824", -- [7]
 						},
 					},
 				},
@@ -5461,6 +7075,17 @@ WoWDBProfilerData = {
 					["NONE:0:false"] = {
 						["spells"] = {
 							[79865] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["50717"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[79849] = 1,
 						},
 						["stats"] = {
 						},
@@ -5577,6 +7202,59 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["61838"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[86603] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["172191"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "PALADIN",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 23582,
+								["locations"] = {
+									["Ardenweald:1565"] = {
+										["3:678:260"] = true,
+										["3:686:274"] = true,
+										["3:698:246"] = true,
+										["3:690:286"] = true,
+									},
+								},
+								["power"] = "MANA:2434",
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 5,
+						},
+						["spells"] = {
+							[325605] = 13,
+							[325549] = 7,
+						},
+						["drops"] = {
+							"money:8275", -- [1]
+							"money:13507", -- [2]
+							"173202:2", -- [3]
+							"money:16729", -- [4]
+							"176292:1", -- [5]
+							"money:17625", -- [6]
+							"173202:2", -- [7]
+							"money:16851", -- [8]
+						},
+					},
+				},
+			},
 			["150958"] = {
 				["genders"] = {
 					["UNKNOWN"] = true,
@@ -5612,17 +7290,17 @@ WoWDBProfilerData = {
 										["6:540:674"] = true,
 										["6:380:478"] = true,
 										["6:542:494"] = true,
-										["6:396:490"] = true,
 										["6:386:476"] = true,
-										["6:562:538"] = true,
+										["6:396:490"] = true,
+										["6:554:688"] = true,
 										["6:558:532"] = true,
 										["6:396:476"] = true,
 										["6:402:496"] = true,
-										["6:370:474"] = true,
 										["6:538:682"] = true,
+										["6:370:474"] = true,
 										["6:374:460"] = true,
 										["6:374:480"] = true,
-										["6:554:688"] = true,
+										["6:562:538"] = true,
 										["6:544:688"] = true,
 										["6:552:518"] = true,
 									},
@@ -5698,6 +7376,41 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["8921"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_29"] = {
+								["max_health"] = 1905,
+							},
+							["level_30"] = {
+								["max_health"] = 2005,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 6,
+						},
+						["drops"] = {
+							"18945:15", -- [1]
+							"22528:4", -- [2]
+							"12208:1", -- [3]
+							"18945:15", -- [4]
+							"60576:1", -- [5]
+							"12203:1", -- [6]
+							"60576:1", -- [7]
+							"3301:1", -- [8]
+							"12203:1", -- [9]
+							"22528:3", -- [10]
+							"60577:1", -- [11]
+						},
+					},
+				},
+			},
 			["157561"] = {
 				["quotes"] = {
 					["CHAT_MSG_MONSTER_SAY"] = {
@@ -5758,44 +7471,70 @@ WoWDBProfilerData = {
 				["class"] = "WARRIOR",
 				["reaction"] = "60:Horde:FRIENDLY",
 			},
-			["172191"] = {
-				["reaction"] = "60:Horde:HOSTILE",
-				["class"] = "PALADIN",
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
+			["164966"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
-								["max_health"] = 23582,
 								["locations"] = {
-									["Ardenweald:1565"] = {
-										["3:698:246"] = true,
-										["3:690:286"] = true,
-										["3:678:260"] = true,
-										["3:686:274"] = true,
+									["Spire of the Unseen Guests:1525"] = {
+										["3:280:430"] = true,
 									},
 								},
-								["power"] = "MANA:2434",
+								["max_health"] = 5896,
+							},
+						},
+					},
+				},
+				["sells"] = {
+					[181522] = "-1:1:[2500000:0:0]",
+					[185741] = "-1:1:[0:0:0:(85:1820)]",
+					[181316] = "-1:1:[0:0:0:(5000:1813)]",
+					[181518] = "-1:1:[0:0:0:(100:1813)]",
+					[182973] = "-1:1:[0:0:0:(10:1820)]",
+					[181517] = "-1:1:[0:0:0:(100:1813)]",
+					[181519] = "-1:1:[2500000:0:0]",
+					[182296] = "-1:1:[0:0:0:(85:1820)]",
+					[181523] = "-1:1:[2500000:0:0]",
+					[183706] = "-1:1:[0:0:0:(1750:1813)]",
+					[183842] = "-1:1:[0:0:0:(55:1820)]",
+					[183854] = "-1:1:[0]",
+					[181441] = "-1:1:[0:0:0:(25:1813)]",
+					[183843] = "-1:1:[0:0:0:(70:1820)]",
+					[181520] = "-1:1:[2500000:0:0]",
+					[181443] = "-1:1:[0:0:0:(85:1820)]",
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+			},
+			["8926"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["max_health"] = 4812,
 							},
 						},
 						["loot_counts"] = {
-							["drops"] = 5,
-						},
-						["spells"] = {
-							[325605] = 13,
-							[325549] = 7,
+							["drops"] = 4,
 						},
 						["drops"] = {
-							"money:8275", -- [1]
-							"money:13507", -- [2]
-							"173202:2", -- [3]
-							"money:16729", -- [4]
-							"176292:1", -- [5]
-							"money:17625", -- [6]
-							"173202:2", -- [7]
-							"money:16851", -- [8]
+							"19441:1", -- [1]
+							"12037:1", -- [2]
+							"22528:4", -- [3]
+							"19441:1", -- [4]
+							"22528:5", -- [5]
+							"12037:2", -- [6]
+							"12037:2", -- [7]
+							"22528:5", -- [8]
 						},
 					},
 				},
@@ -5858,6 +7597,44 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["15864"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Moonglade:80"] = {
+										["3:536:354"] = true,
+									},
+								},
+								["max_health"] = 1604,
+							},
+						},
+					},
+				},
+				["sells"] = {
+					[116172] = "-1:5:[0:0:0:(1:21100)]",
+					[21544] = "-1:1:[0:0:0:(5:21100)]",
+					[21713] = "-1:1:[1000:0:0]",
+					[21537] = "-1:8:[0:0:0:(1:21100)]",
+					[21541] = "-1:1:[0:0:0:(5:21100)]",
+					[151354] = "-1:1:[0:0:0:(25:21100)]",
+					[151352] = "-1:1:[0:0:0:(25:21100)]",
+					[21538] = "-1:1:[0:0:0:(5:21100)]",
+					[151355] = "-1:1:[0:0:0:(25:21100)]",
+					[151353] = "-1:1:[0:0:0:(25:21100)]",
+					[21640] = "-1:1:[0:0:0:(5:21100)]",
+					[21539] = "-1:1:[0:0:0:(5:21100)]",
+					[21543] = "-1:1:[0:0:0:(5:21100)]",
+					[21157] = "-1:1:[0:0:0:(5:21100)]",
+					[74611] = "-1:1:[0:0:0:(50:21100)]",
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+			},
 			["175213"] = {
 				["genders"] = {
 					["UNKNOWN"] = true,
@@ -5880,6 +7657,33 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["349898"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["drops"] = {
+							"171828:4", -- [1]
+							"171840:2", -- [2]
+						},
+					},
+				},
+			},
+			["42384"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[58514] = 1,
+							[58519] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["156269"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
@@ -5890,6 +7694,120 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+			},
+			["48312"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[13787] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["83739"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[161640] = 9,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["82259"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[165773] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["36296"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["But what does it matter.  It is time for this to end."] = true,
+						["It is time, Frye!  Attack!"] = true,
+						["Have a dose of this!"] = true,
+						["Did they bother to tell you who I am and why I am doing this?"] = true,
+						["Baxter! Get in here and help! NOW!"] = true,
+						["...or are they just using you like they do everybody else?"] = true,
+						["...please don't think less of me."] = true,
+					},
+				},
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["PARTY:19:false"] = {
+						["loot_counts"] = {
+							["drops"] = 6,
+						},
+						["stats"] = {
+							["level_52"] = {
+								["max_health"] = 75510,
+							},
+							["level_53"] = {
+								["max_health"] = 85409,
+							},
+							["level_62"] = {
+								["max_health"] = 165074,
+							},
+						},
+						["spells"] = {
+							[68607] = 79,
+							[68641] = 26,
+							[68821] = 1,
+							[68589] = 4,
+						},
+						["drops"] = {
+							"money:46283", -- [1]
+							"21813:1", -- [2]
+							"49909:1", -- [3]
+							"49860:2", -- [4]
+							"49857:1", -- [5]
+							"49859:1", -- [6]
+							"49861:1", -- [7]
+							"49856:2", -- [8]
+							"49858:1", -- [9]
+							"money:56705", -- [10]
+							"143906:1", -- [11]
+							"49641:1", -- [12]
+							"49860:2", -- [13]
+							"49641:1", -- [14]
+							"49857:1", -- [15]
+							"49859:2", -- [16]
+							"49861:1", -- [17]
+							"49856:1", -- [18]
+							"49858:2", -- [19]
+							"money:53554", -- [20]
+							"49860:2", -- [21]
+							"50320:1", -- [22]
+							"49857:1", -- [23]
+							"49859:1", -- [24]
+							"49861:2", -- [25]
+							"49856:1", -- [26]
+							"49858:1", -- [27]
+							"money:43964", -- [28]
+							"50320:1", -- [29]
+							"143909:1", -- [30]
+						},
+					},
+					["PARTY:0:false"] = {
+						["spells"] = {
+							[68589] = 5,
+						},
+						["stats"] = {
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "50:Alliance:HOSTILE",
 			},
 			["176089"] = {
 				["genders"] = {
@@ -5912,34 +7830,188 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["83739"] = {
+			["156666"] = {
+				["teaches"] = {
+					["WARRIOR"] = {
+						["Blacksmithing"] = {
+							[309827] = "0:1:10000",
+						},
+						["General"] = {
+							[2018] = "0:0:10",
+						},
+						["Shadowlands Blacksmithing"] = {
+							[322591] = "0:90:65000",
+							[307676] = "0:25:10000",
+							[307708] = "0:100:250000",
+							[307677] = "0:15:5000",
+							[307709] = "0:100:250000",
+							[307678] = "0:5:1500",
+							[307710] = "0:100:250000",
+							[322594] = "0:60:25000",
+							[307679] = "0:35:13000",
+							[307711] = "0:100:250000",
+							[322595] = "0:50:20000",
+							[307712] = "0:100:250000",
+							[307665] = "0:10:3000",
+							[307681] = "0:15:5000",
+							[307666] = "0:25:10000",
+							[307682] = "0:30:11500",
+							[307667] = "0:30:11500",
+							[343184] = "0:45:17500",
+							[307668] = "0:35:13000",
+							[307669] = "0:5:1500",
+							[307718] = "0:50:20000",
+							[307671] = "0:15:5000",
+							[322587] = "0:80:40000",
+							[307672] = "0:25:10000",
+							[307720] = "0:55:22500",
+							[343662] = "0:50:20000",
+							[307705] = "0:100:250000",
+							[322589] = "0:65:27500",
+							[307674] = "0:20:7500",
+							[307721] = "0:15:5000",
+							[307706] = "0:100:250000",
+							[307663] = "0:20:7500",
+							[307675] = "0:10:3000",
+							[307611] = "0:50:20000",
+							[307707] = "0:100:250000",
+							[322588] = "0:55:22500",
+						},
+					},
+				},
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Oribos:1670"] = {
+										["4:412:316"] = true,
+										["4:404:330"] = true,
+										["4:410:322"] = true,
+										["4:404:320"] = true,
+									},
+								},
+								["max_health"] = 11791,
+							},
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+			},
+			["78556"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["spells"] = {
-							[161640] = 8,
+							[1604] = 1,
 						},
 						["stats"] = {
 						},
 					},
 				},
 			},
-			["172247"] = {
+			["8889"] = {
 				["genders"] = {
 					["MALE"] = true,
 				},
-				["class"] = "PALADIN",
-				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["loot_counts"] = {
+							["drops"] = 5,
+						},
+						["stats"] = {
+							["level_31"] = {
+								["max_health"] = 8390,
+							},
+						},
+						["spells"] = {
+							[13589] = 10,
+							[87081] = 1,
+						},
+						["drops"] = {
+							"money:4386", -- [1]
+							"money:5769", -- [2]
+							"14047:3", -- [3]
+							"money:5962", -- [4]
+							"18945:1", -- [5]
+							"money:5473", -- [6]
+							"22528:4", -- [7]
+							"18945:15", -- [8]
+							"money:7928", -- [9]
+						},
+					},
+				},
+			},
+			["65761"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 29478,
+							["level_35"] = {
 								["locations"] = {
-									["Ardenweald:1565"] = {
-										["3:692:288"] = true,
+									["Kun-Lai Summit:379"] = {
+										["3:538:646"] = true,
 									},
 								},
-								["power"] = "MANA:2434",
+								["max_health"] = 298,
+							},
+						},
+					},
+				},
+			},
+			["5595"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[95826] = 24,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["15593"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["power"] = "MANA:5751",
+								["max_health"] = 11320,
+							},
+						},
+					},
+				},
+			},
+			["62576"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_35"] = {
+								["locations"] = {
+									["Townlong Steppes:388"] = {
+										["3:470:744"] = true,
+									},
+								},
+								["max_health"] = 597,
 							},
 						},
 					},
@@ -6031,38 +8103,24 @@ WoWDBProfilerData = {
 					["UNKNOWN"] = true,
 				},
 			},
-			["166159"] = {
-				["reaction"] = "60:Horde:HOSTILE",
-				["class"] = "PALADIN",
+			["15575"] = {
 				["genders"] = {
-					["UNKNOWN"] = true,
+					["MALE"] = true,
 				},
+				["class"] = "MAGE",
+				["reaction"] = "60:Horde:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
-								["max_health"] = 11791,
+								["max_health"] = 11320,
 								["locations"] = {
-									["Ardenweald:1565"] = {
-										["3:612:246"] = true,
+									["Mulgore:7"] = {
+										["3:486:534"] = true,
 									},
 								},
-								["power"] = "ENERGY:2434",
+								["power"] = "MANA:5751",
 							},
-						},
-						["loot_counts"] = {
-							["drops"] = 1,
-						},
-						["spells"] = {
-							[310026] = 7,
-							[310037] = 4,
-							[310041] = 3,
-							[215056] = 1,
-							[270831] = 2,
-							[330632] = 3,
-						},
-						["drops"] = {
-							"178175:1", -- [1]
 						},
 					},
 				},
@@ -6078,17 +8136,6 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["165152"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-						},
-						["spells"] = {
-							[321753] = 4,
-						},
-					},
-				},
-			},
 			["170789"] = {
 				["encounter_data"] = {
 					["SCENARIO:167:false"] = {
@@ -6096,6 +8143,83 @@ WoWDBProfilerData = {
 						},
 						["spells"] = {
 							[331295] = 1,
+						},
+					},
+				},
+			},
+			["9499"] = {
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["spells"] = {
+							[13787] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["11723"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[22766] = 4,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["165152"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[321753] = 5,
+						},
+					},
+				},
+			},
+			["82014"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[165720] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["168597"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[79976] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["15572"] = {
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["class"] = "MAGE",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Durotar:1"] = {
+										["3:532:436"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
 						},
 					},
 				},
@@ -6148,6 +8272,17 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["83455"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[165839] = 6,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["171901"] = {
 				["quotes"] = {
 					["CHAT_MSG_MONSTER_SAY"] = {
@@ -6175,6 +8310,65 @@ WoWDBProfilerData = {
 					["FEMALE"] = true,
 				},
 			},
+			["165907"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[322745] = 4,
+							[322765] = 2,
+						},
+					},
+				},
+			},
+			["49784"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[48168] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["157153"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["stats"] = {
+							["level_52"] = {
+								["locations"] = {
+									["Vale of Eternal Blossoms:1530"] = {
+										["3:316:442"] = true,
+										["3:318:418"] = true,
+									},
+								},
+								["max_health"] = 641940,
+							},
+						},
+						["spells"] = {
+							[311132] = 28,
+							[311109] = 34,
+							[311112] = 21,
+						},
+						["drops"] = {
+							"173404:1", -- [1]
+							"currency:561:1553", -- [2]
+							"158750:1", -- [3]
+							"currency:26:1755", -- [4]
+						},
+					},
+				},
+			},
 			["167949"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
@@ -6185,6 +8379,38 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+			},
+			["82012"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[9739] = 3,
+							[165754] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["490"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[95826] = 6,
+						},
+						["stats"] = {
+							["level_30"] = {
+								["max_health"] = 3208,
+							},
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
 			},
 			["168374"] = {
 				["reaction"] = "60:Horde:HOSTILE",
@@ -6223,6 +8449,44 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["1735"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["drops"] = {
+							"2838:2", -- [1]
+							"2772:2", -- [2]
+							"1705:1", -- [3]
+						},
+					},
+				},
+			},
+			["5978"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[44977] = 4,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["180016"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[356134] = 2,
+						},
+					},
+				},
+			},
 			["165405"] = {
 				["quotes"] = {
 					["CHAT_MSG_MONSTER_SAY"] = {
@@ -6252,6 +8516,22 @@ WoWDBProfilerData = {
 					["UNKNOWN"] = true,
 				},
 			},
+			["9045"] = {
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+						},
+						["loot_counts"] = {
+							["drops"] = 2,
+						},
+						["drops"] = {
+							"money:1561", -- [1]
+							"10112:1", -- [2]
+							"money:8304", -- [3]
+						},
+					},
+				},
+			},
 			["44852"] = {
 				["is_pvp"] = true,
 				["reaction"] = "60:Horde:FRIENDLY",
@@ -6277,6 +8557,124 @@ WoWDBProfilerData = {
 				},
 				["banker"] = true,
 			},
+			["37172"] = {
+				["is_pvp"] = true,
+				["reaction"] = "51:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_50"] = {
+								["locations"] = {
+									["Orgrimmar:85"] = {
+										["3:510:754"] = true,
+									},
+								},
+								["max_health"] = 5394,
+							},
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+			},
+			["10383"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["max_health"] = 160,
+							},
+						},
+					},
+				},
+			},
+			["161376"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["I will end you!"] = true,
+						["I... am broken..."] = true,
+					},
+				},
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Maldraxxus:1536"] = {
+										["3:500:644"] = true,
+										["3:504:662"] = true,
+										["3:504:654"] = true,
+										["3:512:668"] = true,
+										["3:524:662"] = true,
+									},
+								},
+								["max_health"] = 12970,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 9,
+						},
+						["spells"] = {
+							[319843] = 23,
+							[1604] = 2,
+						},
+						["drops"] = {
+							"176853:1", -- [1]
+							"176853:1", -- [2]
+							"176853:1", -- [3]
+							"176874:1", -- [4]
+							"173202:1", -- [5]
+							"176853:2", -- [6]
+							"176853:2", -- [7]
+							"176853:2", -- [8]
+							"176874:2", -- [9]
+							"174233:1", -- [10]
+							"173202:1", -- [11]
+							"176853:1", -- [12]
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:NEUTRAL",
+			},
+			["94015"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_YELL"] = {
+						["Feel the legion's power!"] = true,
+						["You face the might of the Burning Legion!"] = true,
+						["Oblivion... comes..."] = true,
+					},
+				},
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_-1"] = {
+								["locations"] = {
+									["Tanaan Jungle:534"] = {
+										["3:472:220"] = true,
+									},
+								},
+								["max_health"] = 923625,
+							},
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+			},
 			["168855"] = {
 				["genders"] = {
 					["UNKNOWN"] = true,
@@ -6298,10 +8696,71 @@ WoWDBProfilerData = {
 						["spells"] = {
 							[330632] = 62,
 							[330636] = 58,
-							[42648] = 45,
+							[42648] = 48,
 						},
 					},
 				},
+			},
+			["15576"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["The Cape of Stranglethorn:210"] = {
+										["3:400:724"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
+			["12019"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Cenarion Circle",
+				["sells"] = {
+					[16170] = "-1:5:[500:0:0]",
+					[21030] = "-1:5:[2000:0:0]",
+					[1205] = "-1:5:[500:0:0]",
+					[1179] = "-1:5:[125:0:0]",
+					[1708] = "-1:5:[1000:0:0]",
+					[21031] = "-1:5:[4000:0:0]",
+					[16167] = "-1:5:[125:0:0]",
+					[16169] = "-1:5:[1240:0:0]",
+					[8766] = "-1:5:[4000:0:0]",
+					[21033] = "-1:5:[4000:0:0]",
+					[159] = "-1:5:[25:0:0]",
+					[16166] = "-1:5:[25:0:0]",
+					[16168] = "-1:5:[2000:0:0]",
+					[1645] = "-1:5:[2000:0:0]",
+				},
+				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Moonglade:80"] = {
+										["3:488:394"] = true,
+									},
+								},
+								["max_health"] = 2085,
+							},
+						},
+					},
+				},
+				["reaction"] = "60:Horde:FRIENDLY",
 			},
 			["174405"] = {
 				["genders"] = {
@@ -6351,6 +8810,111 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["12026"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Cenarion Circle",
+				["sells"] = {
+					[16170] = "-1:5:[500:0:0]",
+					[21030] = "-1:5:[2000:0:0]",
+					[1205] = "-1:5:[500:0:0]",
+					[1179] = "-1:5:[125:0:0]",
+					[1708] = "-1:5:[1000:0:0]",
+					[21031] = "-1:5:[4000:0:0]",
+					[16167] = "-1:5:[125:0:0]",
+					[16169] = "-1:5:[1240:0:0]",
+					[8766] = "-1:5:[4000:0:0]",
+					[21033] = "-1:5:[4000:0:0]",
+					[159] = "-1:5:[25:0:0]",
+					[16166] = "-1:5:[25:0:0]",
+					[16168] = "-1:5:[2000:0:0]",
+					[1645] = "-1:5:[2000:0:0]",
+				},
+				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Moonglade:80"] = {
+										["3:446:342"] = true,
+									},
+								},
+								["max_health"] = 2085,
+							},
+						},
+					},
+				},
+				["reaction"] = "60:Horde:FRIENDLY",
+			},
+			["158040"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Maldraxxus:1536"] = {
+										["3:472:588"] = true,
+										["3:466:596"] = true,
+										["3:460:592"] = true,
+										["3:472:594"] = true,
+										["3:456:598"] = true,
+										["3:450:592"] = true,
+									},
+								},
+								["max_health"] = 23583,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 19,
+						},
+						["spells"] = {
+							[330574] = 29,
+							[330569] = 29,
+							[1604] = 6,
+						},
+						["drops"] = {
+							"176868:1", -- [1]
+							"176876:1", -- [2]
+							"176868:3", -- [3]
+							"176868:3", -- [4]
+							"176868:3", -- [5]
+							"176868:1", -- [6]
+							"176876:1", -- [7]
+							"176868:1", -- [8]
+							"176868:1", -- [9]
+							"176876:2", -- [10]
+							"176876:2", -- [11]
+							"176868:1", -- [12]
+							"176876:2", -- [13]
+							"176876:2", -- [14]
+							"176885:1", -- [15]
+							"176868:4", -- [16]
+							"176868:4", -- [17]
+							"176868:4", -- [18]
+							"176868:4", -- [19]
+						},
+					},
+				},
+			},
+			["76672"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[159974] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["170067"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
@@ -6358,17 +8922,6 @@ WoWDBProfilerData = {
 						},
 						["spells"] = {
 							[331044] = 2,
-						},
-					},
-				},
-			},
-			["176027"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-						},
-						["spells"] = {
-							[346914] = 11,
 						},
 					},
 				},
@@ -6395,6 +8948,158 @@ WoWDBProfilerData = {
 							[325744] = 2,
 							[325967] = 2,
 							[325426] = 6,
+						},
+					},
+				},
+			},
+			["176027"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[346914] = 11,
+						},
+					},
+				},
+			},
+			["4076"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:NEUTRAL",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_1"] = {
+								["max_health"] = 5,
+							},
+						},
+					},
+				},
+			},
+			["64065"] = {
+				["is_pvp"] = true,
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_35"] = {
+								["locations"] = {
+									["Shrine of Two Moons:1530"] = {
+										["3:638:130"] = true,
+										["3:632:130"] = true,
+									},
+								},
+								["max_health"] = 1989,
+							},
+						},
+					},
+				},
+				["sells"] = {
+					[81406] = "-1:5:[24000:0:0]",
+					[81407] = "-1:1:[22400:0:0]",
+					[81415] = "-1:1:[25600:0:0]",
+					[74636] = "-1:5:[26000:0:0]",
+					[81414] = "-1:5:[26000:0:0]",
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+			},
+			["10117"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["max_health"] = 1604,
+							},
+						},
+					},
+				},
+			},
+			["50034"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[79833] = 2,
+						},
+					},
+				},
+			},
+			["178997"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["You there! That is the property of Cartel So!"] = true,
+					},
+				},
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 93024,
+								["locations"] = {
+									["Oribos:1670"] = {
+										["4:364:236"] = true,
+										["4:386:244"] = true,
+										["4:378:250"] = true,
+										["4:362:244"] = true,
+										["4:386:252"] = true,
+										["4:368:224"] = true,
+										["4:366:230"] = true,
+										["4:370:238"] = true,
+										["4:380:244"] = true,
+										["4:378:256"] = true,
+										["4:378:238"] = true,
+										["4:378:232"] = true,
+										["4:360:230"] = true,
+										["4:364:250"] = true,
+										["4:370:248"] = true,
+										["4:372:230"] = true,
+										["4:374:224"] = true,
+										["4:360:224"] = true,
+									},
+								},
+								["power"] = "ENERGY:100",
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["spells"] = {
+							[358624] = 13,
+							[358638] = 24,
+						},
+						["drops"] = {
+							"money:4901", -- [1]
+							"186182:1", -- [2]
+						},
+					},
+				},
+				["class"] = "ROGUE",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+			},
+			["54373"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[80472] = 6,
+							[80473] = 10,
+							[80471] = 8,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -6437,6 +9142,18 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["45729"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[79976] = 2,
+							[79977] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["172604"] = {
 				["reaction"] = "60:Horde:NEUTRAL",
 				["class"] = "WARRIOR",
@@ -6449,6 +9166,96 @@ WoWDBProfilerData = {
 							["level_60"] = {
 								["max_health"] = 117910,
 							},
+						},
+					},
+				},
+			},
+			["15592"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:356:688"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
+			["157016"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["SCENARIO:167:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 10076,
+								["locations"] = {
+									["Torghast, Tower of the Damned:1783"] = {
+										["6:452:306"] = true,
+										["6:444:300"] = true,
+										["6:452:300"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 2,
+						},
+						["spells"] = {
+							[319447] = 14,
+							[185493] = 3,
+						},
+						["drops"] = {
+							"money:9383", -- [1]
+							"currency:15:1728", -- [2]
+							"money:12343", -- [3]
+							"currency:4:1728", -- [4]
+						},
+					},
+				},
+			},
+			["142692"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["stats"] = {
+							["level_51"] = {
+								["locations"] = {
+									["Arathi Highlands:14"] = {
+										["3:678:608"] = true,
+									},
+								},
+								["max_health"] = 22895,
+							},
+						},
+						["spells"] = {
+							[15496] = 1,
+						},
+						["drops"] = {
+							"163706:1", -- [1]
+							"currency:20:1553", -- [2]
 						},
 					},
 				},
@@ -6506,6 +9313,34 @@ WoWDBProfilerData = {
 				["class"] = "WARRIOR",
 				["reaction"] = "60:Horde:HOSTILE",
 			},
+			["96311"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "PALADIN",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["power"] = "MANA:2434",
+								["max_health"] = 1179,
+							},
+						},
+					},
+				},
+			},
+			["37178"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[77558] = 10,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["165766"] = {
 				["reaction"] = "60:Horde:NEUTRAL",
 				["class"] = "WARRIOR",
@@ -6522,13 +9357,29 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["169966"] = {
+			["157199"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 235814,
+							},
 						},
+					},
+				},
+			},
+			["46785"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
 						["spells"] = {
-							[322143] = 181,
+							[12743] = 1,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -6575,7 +9426,7 @@ WoWDBProfilerData = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[328285] = 6,
+							[328285] = 7,
 						},
 					},
 				},
@@ -6591,6 +9442,35 @@ WoWDBProfilerData = {
 						["drops"] = {
 							"money:20634", -- [1]
 							"178950:1", -- [2]
+						},
+					},
+				},
+			},
+			["165302"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Revendreth:1700"] = {
+										["4:614:744"] = true,
+										["4:614:750"] = true,
+										["4:606:732"] = true,
+										["4:612:762"] = true,
+										["4:600:760"] = true,
+										["4:606:738"] = true,
+										["4:604:750"] = true,
+										["4:620:764"] = true,
+										["4:620:754"] = true,
+									},
+								},
+								["max_health"] = 11791,
+							},
 						},
 					},
 				},
@@ -6615,6 +9495,222 @@ WoWDBProfilerData = {
 				["class"] = "PALADIN",
 				["genders"] = {
 					["UNKNOWN"] = true,
+				},
+			},
+			["51383"] = {
+				["is_pvp"] = true,
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[95826] = 6,
+						},
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["City of Ironforge:87"] = {
+										["3:214:798"] = true,
+									},
+								},
+								["max_health"] = 17687,
+							},
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+			},
+			["45979"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[137634] = 2,
+						},
+					},
+				},
+			},
+			["81997"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[79862] = 1,
+							[77806] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["9044"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+					["FEMALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[6660] = 5,
+						},
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Burning Steppes:34"] = {
+										["5:544:546"] = true,
+										["5:520:362"] = true,
+										["5:538:538"] = true,
+										["5:538:576"] = true,
+										["5:554:556"] = true,
+										["5:560:556"] = true,
+										["5:548:552"] = true,
+										["5:538:560"] = true,
+									},
+									["Burning Steppes:33"] = {
+										["5:670:478"] = true,
+										["5:726:444"] = true,
+										["5:730:518"] = true,
+										["5:672:500"] = true,
+										["5:728:528"] = true,
+										["5:718:532"] = true,
+										["5:666:468"] = true,
+										["5:728:512"] = true,
+										["5:724:468"] = true,
+										["5:674:526"] = true,
+										["5:674:518"] = true,
+										["5:674:538"] = true,
+										["5:670:490"] = true,
+										["5:734:524"] = true,
+										["5:724:456"] = true,
+										["5:672:532"] = true,
+									},
+								},
+								["max_health"] = 2085,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 9,
+						},
+						["drops"] = {
+							"money:1306", -- [1]
+							"14047:3", -- [2]
+							"money:2462", -- [3]
+							"money:2720", -- [4]
+							"money:705", -- [5]
+							"money:2993", -- [6]
+							"money:2594", -- [7]
+							"money:776", -- [8]
+							"money:526", -- [9]
+							"money:3111", -- [10]
+							"8080:1", -- [11]
+						},
+					},
+				},
+			},
+			["49808"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[19514] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["15564"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Undercity:90"] = {
+										["3:668:384"] = true,
+										["3:666:370"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
+			["142045"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[6016] = 1,
+						},
+						["stats"] = {
+							["level_50"] = {
+								["locations"] = {
+									["Arathi Highlands:14"] = {
+										["3:792:348"] = true,
+										["3:806:322"] = true,
+										["3:816:308"] = true,
+										["3:812:318"] = true,
+										["3:792:354"] = true,
+										["3:810:306"] = true,
+										["3:830:316"] = true,
+										["3:788:364"] = true,
+										["3:782:368"] = true,
+									},
+								},
+								["max_health"] = 4579,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 8,
+						},
+						["drops"] = {
+							"money:9785", -- [1]
+							"money:13192", -- [2]
+							"money:6890", -- [3]
+							"money:14352", -- [4]
+							"152576:2", -- [5]
+							"money:11946", -- [6]
+							"money:13770", -- [7]
+							"money:5542", -- [8]
+							"money:12669", -- [9]
+						},
+					},
+				},
+			},
+			["15602"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Western Plaguelands:22"] = {
+										["3:634:364"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
 				},
 			},
 			["167986"] = {
@@ -6659,10 +9755,10 @@ WoWDBProfilerData = {
 									["Torghast, Tower of the Damned:1807"] = {
 										["6:676:332"] = true,
 										["6:522:622"] = true,
-										["6:528:612"] = true,
+										["6:674:338"] = true,
 										["6:506:736"] = true,
 										["6:666:330"] = true,
-										["6:674:338"] = true,
+										["6:528:612"] = true,
 										["6:512:740"] = true,
 									},
 									["Torghast, Tower of the Damned:1783"] = {
@@ -6688,8 +9784,8 @@ WoWDBProfilerData = {
 						["spells"] = {
 							[329326] = 16,
 							[347404] = 2,
-							[329322] = 18,
 							[329325] = 1,
+							[329322] = 18,
 						},
 						["drops"] = {
 							"money:20463", -- [1]
@@ -6715,7 +9811,7 @@ WoWDBProfilerData = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[313351] = 36,
+							[313351] = 40,
 						},
 					},
 				},
@@ -6747,6 +9843,67 @@ WoWDBProfilerData = {
 							"113578:1", -- [2]
 							"113578:3", -- [3]
 							"106824:1", -- [4]
+						},
+					},
+				},
+			},
+			["5650"] = {
+				["genders"] = {
+					["MALE"] = true,
+					["FEMALE"] = true,
+				},
+				["class"] = "PALADIN",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["loot_counts"] = {
+							["drops"] = 19,
+						},
+						["stats"] = {
+							["level_30"] = {
+								["power"] = "MANA:3280",
+								["max_health"] = 8020,
+							},
+							["level_29"] = {
+								["power"] = "MANA:3122",
+								["max_health"] = 7620,
+							},
+						},
+						["spells"] = {
+							[8264] = 22,
+							[11899] = 52,
+						},
+						["drops"] = {
+							"money:3617", -- [1]
+							"money:5497", -- [2]
+							"money:6751", -- [3]
+							"money:4155", -- [4]
+							"money:9391", -- [5]
+							"money:9012", -- [6]
+							"4338:11", -- [7]
+							"1520:7", -- [8]
+							"money:3110", -- [9]
+							"money:5631", -- [10]
+							"1520:7", -- [11]
+							"money:4223", -- [12]
+							"money:3159", -- [13]
+							"14825:1", -- [14]
+							"1520:7", -- [15]
+							"3961:1", -- [16]
+							"money:5239", -- [17]
+							"money:3656", -- [18]
+							"money:4142", -- [19]
+							"4338:11", -- [20]
+							"money:2066", -- [21]
+							"4338:11", -- [22]
+							"1520:7", -- [23]
+							"money:9162", -- [24]
+							"money:8913", -- [25]
+							"money:6784", -- [26]
+							"9242:1", -- [27]
+							"money:6730", -- [28]
+							"money:8041", -- [29]
+							"4338:11", -- [30]
 						},
 					},
 				},
@@ -6790,13 +9947,53 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["12023"] = {
+				["is_pvp"] = true,
+				["reaction"] = "60:Horde:FRIENDLY",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Cenarion Circle",
+				["sells"] = {
+					[3587] = "-1:1:[8126:0:0]",
+					[2440] = "-1:1:[8005:0:0]",
+					[3588] = "-1:1:[8156:0:0]",
+					[2471] = "-1:1:[7740:0:0]",
+					[2470] = "-1:1:[15332:0:0]",
+					[2472] = "-1:1:[15450:0:0]",
+					[2435] = "-1:1:[15627:0:0]",
+					[2473] = "-1:1:[11608:0:0]",
+					[3893] = "-1:1:[12405:0:0]",
+					[2474] = "-1:1:[7827:0:0]",
+					[2437] = "-1:1:[15745:0:0]",
+					[2475] = "-1:1:[7856:0:0]",
+					[2438] = "-1:1:[11830:0:0]",
+					[3892] = "-1:1:[12361:0:0]",
+				},
+				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Moonglade:80"] = {
+										["3:564:298"] = true,
+									},
+								},
+								["max_health"] = 2085,
+							},
+						},
+					},
+				},
+				["can_repair"] = true,
+			},
 			["78787"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[157589] = 7,
+							[157589] = 10,
 						},
 					},
 				},
@@ -6837,6 +10034,100 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["142683"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["stats"] = {
+							["level_51"] = {
+								["max_health"] = 18315,
+								["locations"] = {
+									["Arathi Highlands:14"] = {
+										["3:430:566"] = true,
+									},
+								},
+								["power"] = "MANA:9012",
+							},
+						},
+						["spells"] = {
+							[276993] = 5,
+						},
+						["drops"] = {
+							"currency:44:1553", -- [1]
+						},
+					},
+				},
+			},
+			["10381"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["loot_counts"] = {
+							["drops"] = 16,
+						},
+						["stats"] = {
+							["level_31"] = {
+								["max_health"] = 8390,
+							},
+						},
+						["spells"] = {
+							[13446] = 20,
+							[16324] = 12,
+						},
+						["drops"] = {
+							"money:8291", -- [1]
+							"12808:1", -- [2]
+							"8749:1", -- [3]
+							"money:7665", -- [4]
+							"money:6595", -- [5]
+							"6530:3", -- [6]
+							"money:6585", -- [7]
+							"money:2098", -- [8]
+							"4000:1", -- [9]
+							"money:7131", -- [10]
+							"3966:1", -- [11]
+							"4338:14", -- [12]
+							"8766:1", -- [13]
+							"money:1806", -- [14]
+							"money:7465", -- [15]
+							"4338:14", -- [16]
+							"money:6484", -- [17]
+							"money:9806", -- [18]
+							"money:4545", -- [19]
+							"money:6484", -- [20]
+							"money:1628", -- [21]
+							"money:2729", -- [22]
+							"4306:4", -- [23]
+							"7972:1", -- [24]
+							"money:3514", -- [25]
+							"money:10474", -- [26]
+						},
+					},
+				},
+			},
+			["82015"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[9739] = 4,
+							[165754] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["157340"] = {
 				["encounter_data"] = {
 					["SCENARIO:167:false"] = {
@@ -6844,6 +10135,17 @@ WoWDBProfilerData = {
 						},
 						["spells"] = {
 							[303678] = 1,
+						},
+					},
+				},
+			},
+			["165706"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[319547] = 2,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -6882,6 +10184,44 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["175456"] = {
+				["reaction"] = "60:Horde:NEUTRAL",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 1179100,
+							},
+						},
+					},
+				},
+			},
+			["175518"] = {
+				["is_pvp"] = true,
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Orgrimmar:85"] = {
+										["3:542:904"] = true,
+									},
+								},
+								["max_health"] = 15918,
+							},
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+			},
 			["160913"] = {
 				["reaction"] = "60:Horde:NEUTRAL",
 				["class"] = "MAGE",
@@ -6904,8 +10244,8 @@ WoWDBProfilerData = {
 					["CHAT_MSG_MONSTER_SAY"] = {
 						["No! No... nooo... the darkness..."] = true,
 						["Noooo... it is you who should die!"] = true,
-						["You fool... we've already... won..."] = true,
 						["The hour is near... soon you will die..."] = true,
+						["You fool... we've already... won..."] = true,
 						["You cannot stop the destruction..."] = true,
 						["The void is coming... it will destroy you all!"] = true,
 					},
@@ -6957,6 +10297,20 @@ WoWDBProfilerData = {
 					["UNKNOWN"] = true,
 				},
 			},
+			[60491] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["drops"] = {
+							"90839:1", -- [1]
+						},
+					},
+				},
+			},
 			["158813"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
@@ -6983,13 +10337,13 @@ WoWDBProfilerData = {
 								["max_health"] = 9433,
 								["locations"] = {
 									["Maldraxxus:1536"] = {
-										["3:652:276"] = true,
 										["3:650:266"] = true,
+										["3:652:276"] = true,
 										["3:660:252"] = true,
-										["3:650:252"] = true,
+										["3:658:286"] = true,
 										["3:652:284"] = true,
 										["3:656:266"] = true,
-										["3:658:286"] = true,
+										["3:650:252"] = true,
 									},
 								},
 								["power"] = "MANA:5751",
@@ -7038,6 +10392,17 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["59481"] = {
+				["encounter_data"] = {
+					["PARTY:0:false"] = {
+						["spells"] = {
+							[114400] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["162727"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
@@ -7050,12 +10415,36 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["70567"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[78111] = 2,
+						},
+					},
+				},
+			},
+			["82006"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[167563] = 1,
+							[165722] = 1,
+							[1604] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["175469"] = {
-				["reaction"] = "60:Horde:FRIENDLY",
-				["class"] = "WARRIOR",
 				["genders"] = {
 					["MALE"] = true,
 				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -7063,9 +10452,13 @@ WoWDBProfilerData = {
 								["locations"] = {
 									["Revendreth:1699"] = {
 										["4:466:406"] = true,
-										["4:464:412"] = true,
 										["4:676:336"] = true,
 										["4:670:328"] = true,
+										["4:464:412"] = true,
+										["4:302:638"] = true,
+										["4:460:418"] = true,
+										["4:484:404"] = true,
+										["4:476:406"] = true,
 										["4:662:318"] = true,
 									},
 								},
@@ -7081,7 +10474,7 @@ WoWDBProfilerData = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[312193] = 3,
+							[312193] = 4,
 						},
 					},
 				},
@@ -7098,27 +10491,11 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["170101"] = {
-				["reaction"] = "60:Horde:FRIENDLY",
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 235804,
-							},
-						},
-					},
-				},
-			},
-			["157464"] = {
+			["51348"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["spells"] = {
-							[328980] = 2,
+							[71507] = 125,
 						},
 						["stats"] = {
 						},
@@ -7141,6 +10518,267 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["170101"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 235804,
+							},
+						},
+					},
+				},
+			},
+			["12029"] = {
+				["is_pvp"] = true,
+				["reaction"] = "60:Horde:FRIENDLY",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["faction"] = "Cenarion Circle",
+				["sells"] = {
+					[2504] = "-1:1:[73:0:0]",
+					[2505] = "-1:1:[150:0:0]",
+					[2506] = "-1:1:[665:0:0]",
+					[2507] = "-1:1:[4201:0:0]",
+					[3026] = "-1:1:[7027:0:0]",
+					[3027] = "-1:1:[9777:0:0]",
+				},
+				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Moonglade:80"] = {
+										["3:530:428"] = true,
+									},
+								},
+								["max_health"] = 2085,
+							},
+						},
+					},
+				},
+				["can_repair"] = true,
+			},
+			["13323"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["max_health"] = 8020,
+							},
+							["level_31"] = {
+								["max_health"] = 8390,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 7,
+						},
+						["drops"] = {
+							"5128:1", -- [1]
+							"5133:2", -- [2]
+							"15233:1", -- [3]
+							"5133:2", -- [4]
+							"5128:1", -- [5]
+							"5133:2", -- [6]
+							"5133:2", -- [7]
+							"5133:1", -- [8]
+							"8146:1", -- [9]
+						},
+					},
+				},
+			},
+			["158566"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[346307] = 4,
+						},
+					},
+				},
+			},
+			["162874"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[166242] = 8,
+							[337903] = 2,
+						},
+					},
+				},
+			},
+			["158256"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Bastion:1533"] = {
+										["3:460:634"] = true,
+										["3:460:670"] = true,
+										["3:480:684"] = true,
+										["3:466:680"] = true,
+									},
+								},
+								["max_health"] = 70743,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 3,
+						},
+						["spells"] = {
+							[329635] = 21,
+							[329679] = 30,
+							[317898] = 2,
+						},
+						["drops"] = {
+							"172054:1", -- [1]
+							"158867:1", -- [2]
+							"158867:1", -- [3]
+							"172054:1", -- [4]
+							"158867:1", -- [5]
+							"172054:1", -- [6]
+						},
+					},
+				},
+			},
+			["44867"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["faction"] = "Orgrimmar",
+				["reaction"] = "51:Horde:FRIENDLY",
+				["auctioneer"] = true,
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Orgrimmar:85"] = {
+										["3:538:732"] = true,
+										["3:538:738"] = true,
+									},
+								},
+								["max_health"] = 35373,
+							},
+							["level_50"] = {
+								["locations"] = {
+									["Orgrimmar:85"] = {
+										["3:538:732"] = true,
+									},
+								},
+								["max_health"] = 16181,
+							},
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+			},
+			["157558"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Bastion:1533"] = {
+										["3:588:776"] = true,
+										["3:592:766"] = true,
+										["3:582:770"] = true,
+									},
+								},
+								["max_health"] = 15327,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 3,
+						},
+						["spells"] = {
+							[326146] = 14,
+							[326227] = 5,
+						},
+						["drops"] = {
+							"173874:2", -- [1]
+							"178136:2", -- [2]
+							"173874:1", -- [3]
+						},
+					},
+				},
+			},
+			["15585"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Burning Steppes:36"] = {
+										["3:526:240"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
+			["170730"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[323446] = 6,
+						},
+					},
+				},
+			},
+			["10799"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_32"] = {
+								["max_health"] = 2367,
+							},
+						},
+					},
+				},
+			},
 			["162873"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
@@ -7150,6 +10788,31 @@ WoWDBProfilerData = {
 							[336859] = 4,
 							[336893] = 11,
 							[336809] = 12,
+						},
+					},
+				},
+			},
+			["161889"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[115385] = 2,
+						},
+					},
+				},
+			},
+			[62346] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["loot_counts"] = {
+							["drops"] = 2,
+						},
+						["drops"] = {
+							"90840:1", -- [1]
 						},
 					},
 				},
@@ -7185,6 +10848,51 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["44161"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[8852] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["42383"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[58514] = 1,
+							[58519] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["60491"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_YELL"] = {
+						["Yes, YES! Bring your rage to bear! Try to strike me down!"] = true,
+					},
+				},
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_-1"] = {
+								["max_health"] = 596700,
+								["power"] = "MANA:10",
+							},
+						},
+					},
+				},
+				["class"] = "PALADIN",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+			},
 			["84029"] = {
 				["genders"] = {
 					["MALE"] = true,
@@ -7209,6 +10917,22 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["171821"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 589550,
+							},
+						},
+					},
+				},
+			},
 			["79708"] = {
 				["reaction"] = "60:Horde:HOSTILE",
 				["class"] = "WARRIOR",
@@ -7218,12 +10942,42 @@ WoWDBProfilerData = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["spells"] = {
-							[166740] = 31,
+							[166740] = 44,
 						},
 						["stats"] = {
 							["level_40"] = {
 								["max_health"] = 2463,
 							},
+						},
+					},
+				},
+			},
+			["168515"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Revendreth:1525"] = {
+										["3:372:540"] = true,
+										["3:390:538"] = true,
+										["3:384:540"] = true,
+										["3:384:518"] = true,
+										["3:380:526"] = true,
+										["3:380:546"] = true,
+									},
+								},
+								["max_health"] = 11791,
+							},
+						},
+						["spells"] = {
+							[336964] = 13,
+							[1604] = 1,
 						},
 					},
 				},
@@ -7274,6 +11028,20 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["46813"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[9080] = 2,
+							[32736] = 12,
+							[57846] = 7,
+							[13730] = 12,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["171166"] = {
 				["genders"] = {
 					["UNKNOWN"] = true,
@@ -7301,6 +11069,28 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["157287"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[307326] = 2,
+						},
+					},
+				},
+			},
+			["85634"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[170758] = 9,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["158642"] = {
 				["reaction"] = "60:Horde:HOSTILE",
 				["class"] = "WARRIOR",
@@ -7317,6 +11107,154 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["3501"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[95826] = 2,
+							[1604] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["142694"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_51"] = {
+								["locations"] = {
+									["Boulderfist Outpost:14"] = {
+										["3:274:464"] = true,
+									},
+								},
+								["max_health"] = 22895,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["drops"] = {
+							"money:36938", -- [1]
+							"152576:1", -- [2]
+						},
+					},
+				},
+			},
+			["55211"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "PALADIN",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 14149,
+								["locations"] = {
+									["Uldum:249"] = {
+										["3:656:188"] = true,
+									},
+								},
+								["power"] = "MANA:2434",
+							},
+						},
+					},
+				},
+			},
+			["10385"] = {
+				["reaction"] = "60:Horde:NEUTRAL",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["max_health"] = 8020,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["drops"] = {
+							"money:9377", -- [1]
+						},
+					},
+				},
+			},
+			["157118"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "PALADIN",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["SCENARIO:167:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 92370,
+								["locations"] = {
+									["Torghast, Tower of the Damned:1783"] = {
+										["6:372:644"] = true,
+										["6:368:668"] = true,
+										["6:550:598"] = true,
+										["6:366:660"] = true,
+										["6:370:654"] = true,
+										["6:548:604"] = true,
+									},
+									["Torghast, Tower of the Damned:1792"] = {
+										["6:516:682"] = true,
+										["6:516:676"] = true,
+										["6:510:688"] = true,
+										["6:504:684"] = true,
+										["6:508:678"] = true,
+										["6:516:692"] = true,
+										["6:500:690"] = true,
+									},
+								},
+								["power"] = "MANA:2434",
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 3,
+						},
+						["spells"] = {
+							[329905] = 24,
+							[299150] = 3,
+							[329904] = 29,
+						},
+						["drops"] = {
+							"money:38291", -- [1]
+							"179370:1", -- [2]
+							"currency:10:1728", -- [3]
+							"money:33358", -- [4]
+							"currency:10:1728", -- [5]
+							"money:28586", -- [6]
+							"currency:35:1728", -- [7]
+						},
+					},
+				},
+			},
+			["42337"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[84498] = 15,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["163961"] = {
 				["genders"] = {
 					["UNKNOWN"] = true,
@@ -7329,7 +11267,7 @@ WoWDBProfilerData = {
 							["drops"] = 3,
 						},
 						["spells"] = {
-							[333600] = 209,
+							[333600] = 216,
 							[1604] = 1,
 						},
 						["stats"] = {
@@ -7350,18 +11288,161 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["171821"] = {
-				["reaction"] = "60:Horde:FRIENDLY",
-				["class"] = "WARRIOR",
+			["1197"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[79927] = 15,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["83598"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[166740] = 2,
+						},
+					},
+				},
+			},
+			["12022"] = {
+				["is_pvp"] = true,
 				["genders"] = {
 					["MALE"] = true,
+				},
+				["faction"] = "Cenarion Circle",
+				["sells"] = {
+					[4400] = "-1:1:[2000:0:0]",
+					[177062] = "-1:1:[90000:0:0]",
+					[4291] = "-1:1:[500:0:0]",
+					[39354] = "-1:5:[20:0:0]",
+					[2320] = "-1:1:[10:0:0]",
+					[4340] = "-1:1:[350:0:0]",
+					[6530] = "-1:1:[100:0:0]",
+					[160298] = "-1:1:[3000:0:0]",
+					[2880] = "-1:1:[100:0:0]",
+					[2321] = "-1:1:[100:0:0]",
+					[183955] = "-1:1:[90000:0:0]",
+					[3857] = "-1:1:[500:0:0]",
+					[6217] = "-1:1:[125:0:0]",
+					[7005] = "-1:1:[123]",
+					[8343] = "-1:1:[2000:0:0]",
+					[85663] = "-1:1:[157]",
+					[2678] = "-1:5:[10:0:0]",
+					[2324] = "-1:1:[25:0:0]",
+					[3466] = "-1:1:[2000:0:0]",
+					[4342] = "-1:1:[2500:0:0]",
+					[16224] = "0:1:[20000]",
+					[4341] = "-1:1:[500:0:0]",
+					[2901] = "-1:1:[122:0:0]",
+					[5956] = "-1:1:[1:0:0]",
+					[2325] = "-1:1:[1000:0:0]",
+					[2604] = "-1:1:[50:0:0]",
+					[6256] = "-1:1:[1:0:0]",
+					[39505] = "-1:1:[750]",
+					[20815] = "-1:1:[800:0:0]",
+					[3371] = "-1:20:[400:0:0]",
+					[180733] = "-1:1:[90000:0:0]",
+					[141041] = "-1:1:[350000]",
+					[4399] = "-1:1:[200:0:0]",
+					[4289] = "-1:1:[50:0:0]",
+					[14341] = "-1:1:[5000:0:0]",
+					[6532] = "-1:1:[250:0:0]",
+				},
+				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Moonglade:80"] = {
+										["3:484:404"] = true,
+									},
+								},
+								["max_health"] = 2085,
+							},
+						},
+					},
+				},
+				["reaction"] = "60:Horde:FRIENDLY",
+			},
+			["164798"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["Fate... isn't... fair..."] = true,
+						["No glory... for me..."] = true,
+						["Falling... apart..."] = true,
+					},
+				},
+				["reaction"] = "60:Horde:NEUTRAL",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Maldraxxus:1536"] = {
+										["3:488:208"] = true,
+										["3:486:202"] = true,
+										["3:496:216"] = true,
+									},
+								},
+								["max_health"] = 5896,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 7,
+						},
+						["spells"] = {
+							[320671] = 10,
+							[1604] = 15,
+						},
+						["drops"] = {
+							"176866:1", -- [1]
+							"176874:2", -- [2]
+							"176866:1", -- [3]
+							"176866:3", -- [4]
+							"176866:3", -- [5]
+							"176866:1", -- [6]
+							"176874:1", -- [7]
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+			},
+			["158054"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
 				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
-								["max_health"] = 589550,
+								["locations"] = {
+									["Bastion:1533"] = {
+										["3:510:588"] = true,
+									},
+								},
+								["max_health"] = 11791,
 							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["spells"] = {
+							[319560] = 3,
+						},
+						["drops"] = {
+							"173362:1", -- [1]
 						},
 					},
 				},
@@ -7397,7 +11478,7 @@ WoWDBProfilerData = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["spells"] = {
-							[171433] = 4,
+							[171433] = 5,
 						},
 						["stats"] = {
 						},
@@ -7411,7 +11492,7 @@ WoWDBProfilerData = {
 				},
 				["faction"] = "Orgrimmar",
 				["reaction"] = "51:Horde:FRIENDLY",
-				["auctioneer"] = true,
+				["class"] = "WARRIOR",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -7426,7 +11507,7 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["class"] = "WARRIOR",
+				["auctioneer"] = true,
 			},
 			["167069"] = {
 				["encounter_data"] = {
@@ -7441,13 +11522,129 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["41182"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[1604] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["9026"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "PALADIN",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["max_health"] = 19248,
+								["locations"] = {
+									["Burning Steppes:35"] = {
+										["5:366:266"] = true,
+										["5:366:272"] = true,
+										["5:368:258"] = true,
+									},
+								},
+								["power"] = "MANA:1704",
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["drops"] = {
+							"3857:1", -- [1]
+							"14486:1", -- [2]
+						},
+					},
+				},
+			},
+			["7795"] = {
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["class"] = "MAGE",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_32"] = {
+								["power"] = "MANA:9298",
+								["max_health"] = 35075,
+							},
+						},
+					},
+				},
+			},
+			["34523"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[65628] = 2,
+						},
+					},
+				},
+			},
+			["84911"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["Life essence..."] = true,
+					},
+				},
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_40"] = {
+								["max_health"] = 49260,
+								["locations"] = {
+									["Shadowmoon Valley:539"] = {
+										["3:460:716"] = true,
+									},
+								},
+								["power"] = "MANA:1283",
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["drops"] = {
+							"120945:1", -- [1]
+							"currency:7:823", -- [2]
+						},
+					},
+				},
+				["class"] = "PALADIN",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+			},
 			["80752"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[162908] = 4,
+							[162908] = 23,
+						},
+					},
+				},
+			},
+			["69759"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[138000] = 12,
+							[137996] = 2,
 						},
 					},
 				},
@@ -7487,10 +11684,10 @@ WoWDBProfilerData = {
 									},
 									["Torghast, Tower of the Damned:1792"] = {
 										["6:578:342"] = true,
-										["6:570:338"] = true,
-										["6:586:340"] = true,
 										["6:572:346"] = true,
 										["6:582:334"] = true,
+										["6:570:338"] = true,
+										["6:586:340"] = true,
 									},
 								},
 								["power"] = "MANA:5751",
@@ -7526,10 +11723,23 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["487"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[95826] = 6,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["164739"] = {
 				["genders"] = {
 					["FEMALE"] = true,
 				},
+				["class"] = "MAGE",
+				["reaction"] = "60:Horde:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -7542,13 +11752,13 @@ WoWDBProfilerData = {
 										["4:488:542"] = true,
 										["4:472:554"] = true,
 										["4:502:578"] = true,
-										["4:506:562"] = true,
-										["4:482:558"] = true,
 										["4:490:550"] = true,
+										["4:482:558"] = true,
 										["4:482:538"] = true,
 										["4:496:564"] = true,
-										["4:486:566"] = true,
 										["4:476:544"] = true,
+										["4:486:566"] = true,
+										["4:506:562"] = true,
 										["4:500:600"] = true,
 										["4:496:586"] = true,
 										["4:488:558"] = true,
@@ -7559,8 +11769,6 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["class"] = "MAGE",
-				["reaction"] = "60:Horde:FRIENDLY",
 			},
 			["171745"] = {
 				["genders"] = {
@@ -7615,6 +11823,91 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["14624"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Thorium Brotherhood",
+				["sells"] = {
+					[3857] = "-1:1:[500:0:0]",
+					[3770] = "-1:5:[500:0:0]",
+					[1205] = "-1:5:[500:0:0]",
+					[4599] = "-1:5:[2000:0:0]",
+					[159] = "-1:5:[25:0:0]",
+					[180733] = "-1:1:[90000:0:0]",
+					[1179] = "-1:5:[125:0:0]",
+					[1645] = "-1:5:[2000:0:0]",
+					[4499] = "-1:1:[100000:0:0]",
+					[4542] = "-1:5:[500:0:0]",
+					[117] = "-1:5:[25:0:0]",
+					[18567] = "-1:1:[30000:0:0]",
+					[2901] = "-1:1:[122:0:0]",
+					[3771] = "-1:5:[1000:0:0]",
+					[3466] = "-1:1:[2000:0:0]",
+					[4601] = "-1:5:[2000:0:0]",
+					[160298] = "-1:1:[3000:0:0]",
+					[2880] = "-1:1:[100:0:0]",
+					[5956] = "-1:1:[1:0:0]",
+					[8766] = "-1:5:[4000:0:0]",
+					[4497] = "-1:1:[20000:0:0]",
+					[4470] = "-1:1:[38:0:0]",
+					[2287] = "-1:5:[125:0:0]",
+					[1708] = "-1:5:[1000:0:0]",
+					[8952] = "-1:5:[4000:0:0]",
+				},
+				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Searing Gorge:32"] = {
+										["3:384:290"] = true,
+										["3:386:284"] = true,
+									},
+								},
+								["max_health"] = 2165,
+							},
+						},
+					},
+				},
+				["can_repair"] = true,
+			},
+			["156562"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "ROGUE",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 141492,
+								["locations"] = {
+									["Bastion:1533"] = {
+										["3:294:226"] = true,
+									},
+								},
+								["power"] = "ENERGY:100",
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["spells"] = {
+							[321355] = 1,
+							[321141] = 33,
+							[1604] = 3,
+							[321367] = 3,
+						},
+						["drops"] = {
+							"176809:1", -- [1]
+						},
+					},
+				},
+			},
 			["32641"] = {
 				["genders"] = {
 					["MALE"] = true,
@@ -7665,7 +11958,7 @@ WoWDBProfilerData = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["spells"] = {
-							[158056] = 53,
+							[158056] = 67,
 						},
 						["stats"] = {
 						},
@@ -7673,7 +11966,9 @@ WoWDBProfilerData = {
 				},
 			},
 			["87109"] = {
-				["reaction"] = "60:Horde:FRIENDLY",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -7683,11 +11978,9 @@ WoWDBProfilerData = {
 						},
 					},
 				},
-				["auctioneer"] = true,
 				["class"] = "WARRIOR",
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
+				["reaction"] = "60:Horde:FRIENDLY",
+				["auctioneer"] = true,
 			},
 			["169123"] = {
 				["encounter_data"] = {
@@ -7711,38 +12004,123 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["175246"] = {
+			["35334"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[81420] = 20,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["161882"] = {
+				["reaction"] = "60:Horde:NEUTRAL",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Ardenweald:1565"] = {
+										["3:400:560"] = true,
+									},
+								},
+								["max_health"] = 11791,
+							},
+						},
+						["spells"] = {
+							[323446] = 8,
+						},
+					},
+				},
+			},
+			["42390"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[58511] = 3,
+							[58519] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["157389"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[306901] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["47777"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "PALADIN",
 				["reaction"] = "60:Horde:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_61"] = {
-								["locations"] = {
-									["The Maw:1543"] = {
-										["3:332:194"] = true,
-										["3:336:210"] = true,
-									},
-								},
-								["max_health"] = 12783,
+							["level_30"] = {
+								["power"] = "MANA:852",
+								["max_health"] = 3208,
 							},
 						},
-						["loot_counts"] = {
-							["drops"] = 3,
-						},
-						["drops"] = {
-							"178135:1", -- [1]
-							"currency:2:1767", -- [2]
-							"178133:1", -- [3]
-							"178133:4", -- [4]
-							"currency:3:1767", -- [5]
-							"178133:4", -- [6]
-							"currency:3:1767", -- [7]
+					},
+				},
+			},
+			["86779"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_40"] = {
+								["max_health"] = 2463,
+							},
 						},
 					},
+				},
+				["sells"] = {
+					[110609] = "-1:1:[0:0:0:(32:824)]",
+					[109125] = "-1:1:[0:0:0:(40:824)]",
+					[109127] = "-1:1:[0:0:0:(40:824)]",
+					[109129] = "-1:1:[0:0:0:(40:824)]",
+					[109131] = "-1:1:[0:0:0:(16:824)]",
+					[109133] = "-1:1:[0:0:0:(16:824)]",
+					[109135] = "-1:1:[0:0:0:(16:824)]",
+					[109137] = "-1:1:[0:0:0:(20:824)]",
+					[111557] = "-1:1:[0:0:0:(40:824)]",
+					[109141] = "-1:1:[0:0:0:(20:824)]",
+					[109143] = "-1:1:[0:0:0:(20:824)]",
+					[109118] = "-1:1:[0:0:0:(24:824)]",
+					[109124] = "-1:1:[0:0:0:(40:824)]",
+					[109126] = "-1:1:[0:0:0:(40:824)]",
+					[109128] = "-1:1:[0:0:0:(40:824)]",
+					[109132] = "-1:1:[0:0:0:(16:824)]",
+					[109134] = "-1:1:[0:0:0:(16:824)]",
+					[109136] = "-1:1:[0:0:0:(16:824)]",
+					[109138] = "-1:1:[0:0:0:(20:824)]",
+					[109140] = "-1:1:[0:0:0:(20:824)]",
+					[109142] = "-1:1:[0:0:0:(20:824)]",
+					[109144] = "-1:1:[0:0:0:(20:824)]",
+					[120147] = "-1:1:[0:0:0:(1:118472)]",
+					[109139] = "-1:1:[0:0:0:(20:824)]",
+					[109119] = "-1:1:[0:0:0:(24:824)]",
+					[109693] = "-1:1:[0:0:0:(32:824)]",
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
 				},
 			},
 			["160916"] = {
@@ -7782,6 +12160,28 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["82005"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[165743] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["50022"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[79892] = 2,
+						},
+					},
+				},
+			},
 			["170160"] = {
 				["reaction"] = "60:Horde:HOSTILE",
 				["class"] = "WARRIOR",
@@ -7809,70 +12209,122 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["76685"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[162244] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["54638"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["spells"] = {
-							[164675] = 1,
+							[164675] = 2,
 						},
 						["stats"] = {
 						},
 					},
 				},
 			},
-			["166137"] = {
+			["162935"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[71507] = 4,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["15586"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
 				["genders"] = {
 					["MALE"] = true,
 				},
-				["class"] = "MAGE",
-				["reaction"] = "60:Horde:NEUTRAL",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
-								["max_health"] = 253024,
+								["max_health"] = 11320,
+								["locations"] = {
+									["Tanaris:71"] = {
+										["3:514:288"] = true,
+									},
+								},
 								["power"] = "MANA:5751",
 							},
-						},
-						["spells"] = {
-							[350527] = 2,
-							[353588] = 8,
-							[205462] = 6,
-							[205605] = 2,
 						},
 					},
 				},
 			},
-			["156562"] = {
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["class"] = "ROGUE",
-				["reaction"] = "60:Horde:HOSTILE",
+			["59526"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 141492,
-								["locations"] = {
-									["Bastion:1533"] = {
-										["3:294:226"] = true,
-									},
-								},
-								["power"] = "ENERGY:100",
-							},
-						},
-						["loot_counts"] = {
-							["drops"] = 1,
 						},
 						["spells"] = {
-							[321355] = 1,
-							[1604] = 3,
-							[321141] = 33,
-							[321367] = 3,
+							[125239] = 1,
 						},
-						["drops"] = {
-							"176809:1", -- [1]
+					},
+				},
+			},
+			["51346"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[71507] = 305,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["14634"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Thorium Brotherhood",
+				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Searing Gorge:32"] = {
+										["3:376:268"] = true,
+									},
+								},
+								["max_health"] = 2165,
+							},
+						},
+					},
+				},
+				["reaction"] = "60:Horde:FRIENDLY",
+			},
+			["37675"] = {
+				["reaction"] = "50:Horde:FRIENDLY",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_50"] = {
+								["locations"] = {
+									["Orgrimmar:85"] = {
+										["3:530:770"] = true,
+									},
+								},
+								["max_health"] = 5394,
+							},
 						},
 					},
 				},
@@ -7902,6 +12354,17 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["165609"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[323058] = 37,
+						},
+					},
+				},
+			},
 			["174922"] = {
 				["genders"] = {
 					["UNKNOWN"] = true,
@@ -7923,6 +12386,50 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["58605"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[111107] = 1,
+						},
+					},
+				},
+			},
+			["15567"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Searing Gorge:32"] = {
+										["3:214:790"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
+			["10411"] = {
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["spells"] = {
+							[16380] = 6,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["169512"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
@@ -7933,6 +12440,28 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+			},
+			["159423"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Bastion:1533"] = {
+										["3:514:468"] = true,
+									},
+								},
+								["max_health"] = 294775,
+							},
+						},
+					},
+				},
+				["flight_master"] = true,
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "WARRIOR",
 			},
 			["167246"] = {
 				["genders"] = {
@@ -7958,14 +12487,100 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["3501"] = {
+			["14625"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Thorium Brotherhood",
+				["class"] = "WARRIOR",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Searing Gorge:32"] = {
+										["3:380:270"] = true,
+									},
+								},
+								["max_health"] = 2165,
+							},
+						},
+					},
+				},
+				["reaction"] = "60:Horde:FRIENDLY",
+			},
+			["167050"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["No... why..."] = true,
+					},
+				},
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 7075,
+								["locations"] = {
+									["Ardenweald:1565"] = {
+										["3:386:290"] = true,
+										["3:364:274"] = true,
+										["3:370:288"] = true,
+										["3:366:282"] = true,
+										["3:384:276"] = true,
+										["3:370:296"] = true,
+										["3:354:294"] = true,
+										["3:348:284"] = true,
+										["3:372:280"] = true,
+										["3:378:286"] = true,
+									},
+								},
+								["power"] = "ENERGY:100",
+							},
+						},
 						["spells"] = {
-							[95826] = 2,
+							[329516] = 22,
 							[1604] = 2,
 						},
+						["loot_counts"] = {
+							["drops"] = 13,
+						},
+						["drops"] = {
+							"money:1410", -- [1]
+							"money:2161", -- [2]
+							"178138:2", -- [3]
+							"173202:3", -- [4]
+							"money:3134", -- [5]
+							"178138:1", -- [6]
+							"173202:1", -- [7]
+							"money:1354", -- [8]
+							"money:2831", -- [9]
+							"money:3159", -- [10]
+							"money:2073", -- [11]
+							"money:1779", -- [12]
+							"money:3861", -- [13]
+							"money:3739", -- [14]
+							"173204:1", -- [15]
+							"money:2214", -- [16]
+							"money:4608", -- [17]
+							"money:1262", -- [18]
+						},
+					},
+				},
+				["class"] = "ROGUE",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+			},
+			["172630"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
 						["stats"] = {
+						},
+						["spells"] = {
+							[320465] = 2,
+							[320463] = 3,
+							[320007] = 1,
 						},
 					},
 				},
@@ -8005,6 +12620,59 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["162035"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "PALADIN",
+				["genders"] = {
+					["MALE"] = true,
+					["FEMALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11791,
+								["locations"] = {
+									["Revendreth:1525"] = {
+										["3:386:518"] = true,
+										["3:386:538"] = true,
+										["3:386:530"] = true,
+									},
+								},
+								["power"] = "MANA:2369",
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 4,
+						},
+						["spells"] = {
+							[331923] = 2,
+						},
+						["drops"] = {
+							"money:13844", -- [1]
+							"173202:3", -- [2]
+							"currency:1:1820", -- [3]
+							"money:21560", -- [4]
+							"173202:3", -- [5]
+							"money:9090", -- [6]
+							"money:19893", -- [7]
+							"173202:1", -- [8]
+						},
+					},
+				},
+			},
+			["14822"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[23766] = 3,
+							[23767] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["171898"] = {
 				["genders"] = {
 					["FEMALE"] = true,
@@ -8028,11 +12696,87 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["15584"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Thousand Needles:64"] = {
+										["3:464:510"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
+			["158361"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["Interlopers! Die by my fist!"] = true,
+						["Defeated... by a mortal?"] = true,
+						["Then you are of no use to me."] = true,
+					},
+				},
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Revendreth:1525"] = {
+										["3:562:690"] = true,
+									},
+								},
+								["max_health"] = 70746,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["spells"] = {
+							[317894] = 6,
+						},
+						["drops"] = {
+							"money:14461", -- [1]
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+			},
+			["15578"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["power"] = "MANA:5751",
+								["max_health"] = 11320,
+							},
+						},
+					},
+				},
+			},
 			["90071"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["spells"] = {
-							[161640] = 11,
+							[161640] = 18,
 						},
 						["stats"] = {
 						},
@@ -8070,13 +12814,91 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["165609"] = {
+			["166537"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[323058] = 16,
+							[347254] = 1,
+						},
+					},
+				},
+			},
+			["154274"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[97153] = 3,
+							[97154] = 5,
+						},
+					},
+				},
+			},
+			["9097"] = {
+				["genders"] = {
+					["MALE"] = true,
+					["FEMALE"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_28"] = {
+								["max_health"] = 6225,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 7,
+						},
+						["drops"] = {
+							"money:1198", -- [1]
+							"money:5852", -- [2]
+							"14047:2", -- [3]
+							"money:1523", -- [4]
+							"14047:4", -- [5]
+							"3997:1", -- [6]
+							"money:2318", -- [7]
+							"14047:4", -- [8]
+							"money:3813", -- [9]
+							"14047:2", -- [10]
+							"money:3931", -- [11]
+							"14047:10", -- [12]
+							"money:2768", -- [13]
+						},
+					},
+				},
+			},
+			["173509"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:NEUTRAL",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Maldraxxus:1536"] = {
+										["3:656:252"] = true,
+									},
+								},
+								["max_health"] = 8843,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 2,
+						},
+						["spells"] = {
+							[331412] = 2,
+						},
+						["drops"] = {
+							"176869:2", -- [1]
+							"176869:2", -- [2]
 						},
 					},
 				},
@@ -8159,9 +12981,9 @@ WoWDBProfilerData = {
 									},
 									["Torghast, Tower of the Damned:1763"] = {
 										["6:334:744"] = true,
-										["6:520:538"] = true,
-										["6:350:544"] = true,
 										["6:510:544"] = true,
+										["6:350:544"] = true,
+										["6:520:538"] = true,
 										["6:730:496"] = true,
 										["6:318:728"] = true,
 										["6:542:810"] = true,
@@ -8191,16 +13013,52 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["84921"] = {
+			["172193"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["The Drust will rule all realms!"] = true,
+					},
+				},
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11791,
+								["locations"] = {
+									["Ardenweald:1565"] = {
+										["3:674:260"] = true,
+										["3:682:252"] = true,
+										["3:680:258"] = true,
+									},
+								},
+								["power"] = "MANA:2434",
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 5,
 						},
 						["spells"] = {
-							[169235] = 1,
+							[340642] = 60,
+							[1604] = 2,
+						},
+						["drops"] = {
+							"money:11573", -- [1]
+							"173204:1", -- [2]
+							"money:19972", -- [3]
+							"money:4949", -- [4]
+							"173202:2", -- [5]
+							"money:20148", -- [6]
+							"money:9409", -- [7]
+							"173204:1", -- [8]
+							"176291:1", -- [9]
 						},
 					},
 				},
+				["class"] = "PALADIN",
+				["reaction"] = "60:Horde:HOSTILE",
 			},
 			["44787"] = {
 				["is_pvp"] = true,
@@ -8225,67 +13083,117 @@ WoWDBProfilerData = {
 				["reaction"] = "60:Horde:FRIENDLY",
 				["auctioneer"] = true,
 			},
-			["167050"] = {
+			["40168"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[81954] = 20,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["69099"] = {
 				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["No... why..."] = true,
+					["CHAT_MSG_MONSTER_YELL"] = {
+						["I am but...the darkness...before the storm..."] = true,
+						["Can you feel a chill wind blow? The storm is coming..."] = true,
 					},
 				},
 				["reaction"] = "60:Horde:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 7075,
+							["level_-1"] = {
 								["locations"] = {
-									["Ardenweald:1565"] = {
-										["3:386:290"] = true,
-										["3:364:274"] = true,
-										["3:370:288"] = true,
-										["3:366:282"] = true,
-										["3:384:276"] = true,
-										["3:370:296"] = true,
-										["3:354:294"] = true,
-										["3:348:284"] = true,
-										["3:372:280"] = true,
-										["3:378:286"] = true,
+									["Isle of Thunder:504"] = {
+										["3:600:378"] = true,
 									},
 								},
-								["power"] = "ENERGY:100",
+								["max_health"] = 1392300,
 							},
-						},
-						["spells"] = {
-							[329516] = 22,
-							[1604] = 2,
-						},
-						["loot_counts"] = {
-							["drops"] = 13,
-						},
-						["drops"] = {
-							"money:1410", -- [1]
-							"money:2161", -- [2]
-							"178138:2", -- [3]
-							"173202:3", -- [4]
-							"money:3134", -- [5]
-							"178138:1", -- [6]
-							"173202:1", -- [7]
-							"money:1354", -- [8]
-							"money:2831", -- [9]
-							"money:3159", -- [10]
-							"money:2073", -- [11]
-							"money:1779", -- [12]
-							"money:3861", -- [13]
-							"money:3739", -- [14]
-							"173204:1", -- [15]
-							"money:2214", -- [16]
-							"money:4608", -- [17]
-							"money:1262", -- [18]
 						},
 					},
 				},
-				["class"] = "ROGUE",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
+				},
+			},
+			["54334"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[101260] = 23,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["167160"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 94324,
+								["locations"] = {
+									["Revendreth:1699"] = {
+										["4:470:572"] = true,
+										["4:456:572"] = true,
+										["4:474:578"] = true,
+										["4:462:572"] = true,
+										["4:472:592"] = true,
+									},
+								},
+								["power"] = "MANA:5598",
+							},
+						},
+					},
+				},
+			},
+			["82191"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[79862] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["90066"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[158082] = 11,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["6017"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["max_health"] = 5,
+							},
+						},
+					},
 				},
 			},
 			["160100"] = {
@@ -8322,20 +13230,38 @@ WoWDBProfilerData = {
 								["locations"] = {
 									["Revendreth:1699"] = {
 										["4:518:262"] = true,
-										["4:540:274"] = true,
+										["4:552:276"] = true,
+										["4:544:284"] = true,
 										["4:552:268"] = true,
-										["4:544:260"] = true,
 										["4:542:268"] = true,
-										["4:536:296"] = true,
-										["4:560:282"] = true,
-										["4:538:282"] = true,
-										["4:526:258"] = true,
 										["4:538:256"] = true,
+										["4:560:282"] = true,
+										["4:530:292"] = true,
+										["4:540:274"] = true,
+										["4:524:250"] = true,
+										["4:536:296"] = true,
+										["4:538:282"] = true,
+										["4:544:260"] = true,
+										["4:550:260"] = true,
+										["4:536:288"] = true,
+										["4:526:258"] = true,
+										["4:558:274"] = true,
 										["4:536:250"] = true,
 									},
 								},
 								["max_health"] = 11791,
 							},
+						},
+					},
+				},
+			},
+			["43613"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[79849] = 2,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -8353,6 +13279,17 @@ WoWDBProfilerData = {
 								["max_health"] = 70746,
 								["power"] = "MANA:2434",
 							},
+						},
+					},
+				},
+			},
+			["82285"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[165606] = 1,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -8453,10 +13390,10 @@ WoWDBProfilerData = {
 							["drops"] = 3,
 						},
 						["spells"] = {
-							[299150] = 3,
 							[294362] = 10,
-							[292926] = 20,
+							[299150] = 3,
 							[1604] = 1,
+							[292926] = 20,
 						},
 						["drops"] = {
 							"money:16311", -- [1]
@@ -8468,6 +13405,21 @@ WoWDBProfilerData = {
 							"money:32339", -- [7]
 							"currency:24:1728", -- [8]
 							"179372:1", -- [9]
+						},
+					},
+				},
+			},
+			["357469"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["loot_counts"] = {
+							["drops"] = 2,
+						},
+						["drops"] = {
+							"182477:1", -- [1]
+							"182477:1", -- [2]
 						},
 					},
 				},
@@ -8485,6 +13437,72 @@ WoWDBProfilerData = {
 								["max_health"] = 141492,
 								["power"] = "ENERGY:100",
 							},
+						},
+					},
+				},
+			},
+			["7034"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[35915] = 6,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["142709"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "PALADIN",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["stats"] = {
+							["level_51"] = {
+								["max_health"] = 22895,
+								["locations"] = {
+									["Arathi Highlands:14"] = {
+										["3:652:710"] = true,
+									},
+								},
+								["power"] = "MANA:3728",
+							},
+						},
+						["spells"] = {
+							[261488] = 2,
+							[262538] = 2,
+						},
+						["drops"] = {
+							"currency:23:1553", -- [1]
+						},
+					},
+				},
+			},
+			["181212"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[358603] = 3,
+						},
+					},
+				},
+			},
+			["8015"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[95826] = 2,
+							[1604] = 2,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -8526,6 +13544,59 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["83760"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[175098] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["166160"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Revendreth:1699"] = {
+										["4:598:438"] = true,
+										["4:598:456"] = true,
+										["4:598:412"] = true,
+										["4:582:410"] = true,
+										["4:588:454"] = true,
+										["4:592:408"] = true,
+										["4:588:420"] = true,
+										["4:596:448"] = true,
+										["4:592:466"] = true,
+										["4:598:432"] = true,
+										["4:600:420"] = true,
+										["4:594:424"] = true,
+									},
+								},
+								["max_health"] = 294775,
+							},
+						},
+					},
+				},
+				["sells"] = {
+					[18567] = "-1:1:[30000:0:0]",
+					[3857] = "-1:1:[500:0:0]",
+					[3466] = "-1:1:[2000:0:0]",
+					[2901] = "-1:1:[122:0:0]",
+					[2880] = "-1:1:[100:0:0]",
+					[180733] = "-1:1:[90000:0:0]",
+					[5956] = "-1:1:[1:0:0]",
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["can_repair"] = true,
+			},
 			["162612"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
@@ -8537,13 +13608,24 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["45730"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[79968] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["79178"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[157589] = 11,
+							[157589] = 14,
 						},
 					},
 				},
@@ -8618,6 +13700,83 @@ WoWDBProfilerData = {
 						},
 						["spells"] = {
 							[326146] = 5,
+						},
+					},
+				},
+			},
+			["59758"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[129091] = 35,
+						},
+					},
+				},
+			},
+			["142307"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[259919] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["55227"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Mount Hyjal:198"] = {
+										["3:626:228"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
+			["69306"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[136638] = 2,
+						},
+					},
+				},
+			},
+			["1195"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[744] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["92901"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[34827] = 7,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -8749,6 +13908,134 @@ WoWDBProfilerData = {
 					["FEMALE"] = true,
 				},
 			},
+			["33456"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["Managed to find me, eh? No matter, you won't live to tell anyone of it!"] = true,
+					},
+				},
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Loch Modan:48"] = {
+										["3:370:614"] = true,
+									},
+								},
+								["max_health"] = 3208,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["drops"] = {
+							"money:1546", -- [1]
+							"45079:1", -- [2]
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+			},
+			["41136"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[11960] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["89718"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[171186] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["81994"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[165746] = 1,
+							[165747] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["14628"] = {
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["faction"] = "Thorium Brotherhood",
+				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Searing Gorge:32"] = {
+										["3:388:280"] = true,
+									},
+								},
+								["max_health"] = 2165,
+							},
+						},
+					},
+				},
+				["reaction"] = "60:Horde:FRIENDLY",
+			},
+			["66515"] = {
+				["is_pvp"] = true,
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["max_health"] = 1604,
+							},
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+			},
+			["15588"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "MAGE",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Southern Barrens:199"] = {
+										["3:416:476"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
 			["156434"] = {
 				["reaction"] = "60:Horde:HOSTILE",
 				["class"] = "WARRIOR",
@@ -8780,6 +14067,57 @@ WoWDBProfilerData = {
 							"173874:1", -- [1]
 							"173874:1", -- [2]
 							"178136:1", -- [3]
+						},
+					},
+				},
+			},
+			["69768"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_35"] = {
+								["locations"] = {
+									["Townlong Steppes:388"] = {
+										["3:472:744"] = true,
+									},
+								},
+								["max_health"] = 25857,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["drops"] = {
+							"94225:1", -- [1]
+						},
+					},
+				},
+			},
+			["167880"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Oribos:1672"] = {
+										["4:524:540"] = true,
+										["4:508:526"] = true,
+										["4:516:534"] = true,
+										["4:524:526"] = true,
+									},
+								},
+								["max_health"] = 11791,
+							},
 						},
 					},
 				},
@@ -8821,8 +14159,8 @@ WoWDBProfilerData = {
 										["6:530:742"] = true,
 										["6:504:718"] = true,
 										["6:380:474"] = true,
-										["6:386:476"] = true,
 										["6:530:444"] = true,
+										["6:386:476"] = true,
 										["6:532:438"] = true,
 										["6:502:726"] = true,
 										["6:538:796"] = true,
@@ -8841,7 +14179,7 @@ WoWDBProfilerData = {
 										["6:618:714"] = true,
 										["6:504:520"] = true,
 										["6:502:498"] = true,
-										["6:364:660"] = true,
+										["6:496:522"] = true,
 										["6:500:492"] = true,
 										["6:382:680"] = true,
 										["6:510:400"] = true,
@@ -8853,7 +14191,7 @@ WoWDBProfilerData = {
 										["6:612:722"] = true,
 										["6:386:688"] = true,
 										["6:508:388"] = true,
-										["6:496:522"] = true,
+										["6:364:660"] = true,
 									},
 								},
 								["max_health"] = 10955,
@@ -8921,72 +14259,229 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["44866"] = {
-				["is_pvp"] = true,
+			["77614"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
 				["genders"] = {
-					["MALE"] = true,
+					["UNKNOWN"] = true,
 				},
-				["faction"] = "Orgrimmar",
-				["reaction"] = "60:Horde:FRIENDLY",
-				["auctioneer"] = true,
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Orgrimmar:85"] = {
-										["3:538:732"] = true,
-										["3:538:738"] = true,
-									},
-								},
-								["max_health"] = 35373,
-							},
-							["level_50"] = {
-								["locations"] = {
-									["Orgrimmar:85"] = {
-										["3:540:734"] = true,
-									},
-								},
-								["max_health"] = 16181,
+							["level_40"] = {
+								["max_health"] = 17241,
 							},
 						},
 					},
 				},
-				["class"] = "WARRIOR",
 			},
-			["158361"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["Interlopers! Die by my fist!"] = true,
-						["Defeated... by a mortal?"] = true,
-						["Then you are of no use to me."] = true,
+			["60825"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[130131] = 12,
+						},
 					},
 				},
+			},
+			["152708"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
 				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["SCENARIO:167:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Torghast, Tower of the Damned:1627"] = {
+										["6:456:510"] = true,
+										["6:458:516"] = true,
+										["6:436:528"] = true,
+									},
+									["Torghast, Tower of the Damned:1792"] = {
+										["6:446:412"] = true,
+										["6:562:586"] = true,
+										["6:568:568"] = true,
+										["6:568:582"] = true,
+										["6:568:574"] = true,
+										["6:434:406"] = true,
+										["6:568:552"] = true,
+										["6:450:406"] = true,
+										["6:562:578"] = true,
+										["6:568:560"] = true,
+										["6:440:414"] = true,
+										["6:440:408"] = true,
+										["6:566:592"] = true,
+										["6:568:598"] = true,
+										["6:562:570"] = true,
+										["6:554:568"] = true,
+									},
+									["Torghast, Tower of the Damned:1807"] = {
+										["6:570:448"] = true,
+										["6:576:450"] = true,
+										["6:562:450"] = true,
+									},
+									["Torghast, Tower of the Damned:1783"] = {
+										["6:518:320"] = true,
+										["6:586:618"] = true,
+										["6:580:620"] = true,
+										["6:592:620"] = true,
+									},
+									["Torghast, Tower of the Damned:1804"] = {
+										["6:608:496"] = true,
+										["6:622:512"] = true,
+										["6:636:500"] = true,
+										["6:502:740"] = true,
+										["6:510:396"] = true,
+										["6:600:496"] = true,
+										["6:506:506"] = true,
+										["6:488:730"] = true,
+										["6:614:504"] = true,
+										["6:504:396"] = true,
+										["6:496:726"] = true,
+										["6:480:728"] = true,
+										["6:628:506"] = true,
+										["6:500:518"] = true,
+										["6:502:512"] = true,
+										["6:500:524"] = true,
+									},
+									["Torghast, Tower of the Damned:1763"] = {
+										["6:558:536"] = true,
+										["6:564:538"] = true,
+										["6:702:494"] = true,
+										["6:692:492"] = true,
+										["6:568:516"] = true,
+										["6:556:526"] = true,
+										["6:562:526"] = true,
+										["6:564:544"] = true,
+										["6:698:500"] = true,
+										["6:702:488"] = true,
+									},
+								},
+								["max_health"] = 8216,
+							},
+						},
+						["spells"] = {
+							[1604] = 2,
+							[296523] = 16,
+						},
+						["loot_counts"] = {
+							["drops"] = 17,
+						},
+						["drops"] = {
+							"money:19272", -- [1]
+							"currency:5:1728", -- [2]
+							"money:10686", -- [3]
+							"currency:5:1728", -- [4]
+							"money:16570", -- [5]
+							"currency:18:1728", -- [6]
+							"money:12068", -- [7]
+							"currency:22:1728", -- [8]
+							"money:17976", -- [9]
+							"currency:5:1728", -- [10]
+							"money:6009", -- [11]
+							"currency:8:1728", -- [12]
+							"money:15915", -- [13]
+							"currency:10:1728", -- [14]
+							"money:20940", -- [15]
+							"currency:5:1728", -- [16]
+							"money:12241", -- [17]
+							"currency:4:1728", -- [18]
+							"money:9287", -- [19]
+							"currency:19:1728", -- [20]
+							"money:10132", -- [21]
+							"currency:15:1728", -- [22]
+							"money:18342", -- [23]
+							"currency:15:1728", -- [24]
+							"money:6959", -- [25]
+							"currency:2:1728", -- [26]
+							"money:6416", -- [27]
+							"currency:4:1728", -- [28]
+							"money:14402", -- [29]
+							"currency:7:1728", -- [30]
+							"money:16418", -- [31]
+							"currency:4:1728", -- [32]
+							"money:20666", -- [33]
+							"currency:4:1728", -- [34]
+						},
+					},
+				},
+			},
+			["174183"] = {
+				["reaction"] = "60:Horde:NEUTRAL",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
+								["max_health"] = 117910,
 								["locations"] = {
-									["Revendreth:1525"] = {
-										["3:562:690"] = true,
+									["Revendreth:1700"] = {
+										["4:534:482"] = true,
+										["4:538:504"] = true,
+										["4:562:462"] = true,
+										["4:574:472"] = true,
+										["4:506:538"] = true,
+										["4:558:494"] = true,
+										["4:572:464"] = true,
+										["4:526:496"] = true,
+										["4:568:486"] = true,
+										["4:494:560"] = true,
+										["4:548:498"] = true,
+										["4:500:574"] = true,
+										["4:500:544"] = true,
+										["4:560:484"] = true,
+										["4:574:484"] = true,
 									},
 								},
-								["max_health"] = 70746,
+								["power"] = "MANA:5751",
 							},
 						},
 						["loot_counts"] = {
 							["drops"] = 1,
 						},
 						["spells"] = {
-							[317894] = 6,
+							[205462] = 4,
+							[182532] = 1,
+							[350527] = 2,
 						},
 						["drops"] = {
-							"money:14461", -- [1]
+							"money:40442", -- [1]
 						},
 					},
 				},
-				["class"] = "WARRIOR",
+				["sells"] = {
+					[182414] = "-1:1:[0:0:0:(1:183890)]",
+					[182418] = "-1:1:[0:0:0:(1:183890)]",
+					[182422] = "-1:1:[0:0:0:(1:183890)]",
+					[182395] = "-1:1:[0:0:0:(1:183899)]",
+					[182399] = "-1:1:[0:0:0:(1:183895)]",
+					[182415] = "-1:1:[0:0:0:(1:183890)]",
+					[182388] = "-1:1:[0:0:0:(1:183899)]",
+					[182392] = "-1:1:[0:0:0:(1:183899)]",
+					[182396] = "-1:1:[0:0:0:(1:183899)]",
+					[182400] = "-1:1:[0:0:0:(1:183895)]",
+					[182391] = "-1:1:[0:0:0:(1:183899)]",
+					[182423] = "-1:1:[0]",
+					[182394] = "-1:1:[0:0:0:(1:183899)]",
+					[182416] = "-1:1:[0:0:0:(1:183890)]",
+					[182420] = "-1:1:[0:0:0:(1:183890)]",
+					[182393] = "-1:1:[0:0:0:(1:183899)]",
+					[182397] = "-1:1:[0]",
+					[182421] = "-1:1:[0:0:0:(1:183890)]",
+					[182424] = "-1:1:[0:0:0:(1:183890)]",
+					[182389] = "-1:1:[0:0:0:(1:183899)]",
+					[182419] = "-1:1:[0:0:0:(1:183890)]",
+					[182417] = "-1:1:[0:0:0:(1:183890)]",
+					[182390] = "-1:1:[0:0:0:(1:183899)]",
+					[182425] = "-1:1:[0:0:0:(1:183888)]",
+					[182398] = "-1:1:[0:0:0:(1:183899)]",
+					[182426] = "-1:1:[0:0:0:(1:183888)]",
+				},
+				["class"] = "MAGE",
 				["genders"] = {
 					["FEMALE"] = true,
 				},
@@ -9005,7 +14500,7 @@ WoWDBProfilerData = {
 						["spells"] = {
 							[335187] = 46,
 							[335193] = 26,
-							[333600] = 73,
+							[333600] = 74,
 						},
 						["stats"] = {
 							["level_60"] = {
@@ -9113,56 +14608,196 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["153321"] = {
+			["159674"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[320390] = 1,
+						},
+					},
+				},
+			},
+			["142725"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "PALADIN",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["stats"] = {
+							["level_51"] = {
+								["max_health"] = 22895,
+								["locations"] = {
+									["Arathi Highlands:14"] = {
+										["3:194:614"] = true,
+									},
+								},
+								["power"] = "MANA:1864",
+							},
+						},
+						["spells"] = {
+							[240460] = 1,
+							[280524] = 2,
+						},
+						["drops"] = {
+							"currency:30:1553", -- [1]
+						},
+					},
+				},
+			},
+			["45850"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["max_health"] = 3208,
+							},
+						},
+					},
+				},
+			},
+			["11784"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_31"] = {
+								["max_health"] = 8390,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 3,
+						},
+						["spells"] = {
+							[21057] = 3,
+						},
+						["drops"] = {
+							"62518:1", -- [1]
+							"4784:3", -- [2]
+							"62518:1", -- [3]
+							"7067:1", -- [4]
+							"4784:7", -- [5]
+							"8150:1", -- [6]
+							"62518:2", -- [7]
+							"4784:8", -- [8]
+						},
+					},
+				},
+			},
+			["51915"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["MALE"] = true,
+				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["spells"] = {
-							[297889] = 1,
+							[95826] = 16,
+							[12169] = 4,
+						},
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Sentinel Tower:52"] = {
+										["3:564:474"] = true,
+									},
+								},
+								["max_health"] = 2406,
+							},
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+			},
+			["61981"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[127359] = 1,
+						},
+					},
+				},
+			},
+			["74228"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[71507] = 21,
 						},
 						["stats"] = {
 						},
 					},
 				},
 			},
-			["167089"] = {
+			["173507"] = {
 				["quotes"] = {
 					["CHAT_MSG_MONSTER_SAY"] = {
-						["Ha ha! Scared to death!"] = true,
-						["He is the eternal god of death..."] = true,
+						["Your existence ends here."] = true,
+						["I will be reanimated."] = true,
 					},
 				},
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
+				["reaction"] = "60:Horde:NEUTRAL",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
-								["max_health"] = 58956,
+								["max_health"] = 56598,
 								["locations"] = {
-									["Ardenweald:1565"] = {
-										["3:364:258"] = true,
+									["Maldraxxus:1536"] = {
+										["3:658:284"] = true,
 									},
 								},
-								["power"] = "MANA:2434",
+								["power"] = "MANA:5751",
 							},
 						},
 						["loot_counts"] = {
 							["drops"] = 1,
 						},
 						["spells"] = {
-							[310039] = 12,
-							[325706] = 1,
-							[325605] = 3,
-							[325696] = 3,
+							[330958] = 6,
+							[330782] = 2,
+							[330574] = 6,
+							[330926] = 3,
+							[330569] = 6,
 						},
 						["drops"] = {
-							"178175:1", -- [1]
+							"money:16009", -- [1]
 						},
 					},
 				},
-				["class"] = "PALADIN",
-				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
+			},
+			["36530"] = {
+				["encounter_data"] = {
+					["PARTY:19:false"] = {
+						["spells"] = {
+							[68934] = 40,
+						},
+						["stats"] = {
+						},
+					},
+				},
 			},
 			["172185"] = {
 				["quotes"] = {
@@ -9193,6 +14828,17 @@ WoWDBProfilerData = {
 				["class"] = "WARRIOR",
 				["reaction"] = "60:Horde:FRIENDLY",
 			},
+			["75745"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[166740] = 2,
+						},
+					},
+				},
+			},
 			["158161"] = {
 				["genders"] = {
 					["UNKNOWN"] = true,
@@ -9216,6 +14862,32 @@ WoWDBProfilerData = {
 						["spells"] = {
 							[308575] = 20,
 							[1604] = 1,
+						},
+					},
+				},
+			},
+			["142723"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "PALADIN",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["stats"] = {
+							["level_50"] = {
+								["power"] = "MANA:1807",
+								["max_health"] = 4579,
+							},
+						},
+						["spells"] = {
+							[84533] = 2,
+						},
+						["drops"] = {
+							"158865:1", -- [1]
 						},
 					},
 				},
@@ -9261,7 +14933,7 @@ WoWDBProfilerData = {
 					[2901] = "-1:1:[110:0:0]",
 					[180714] = "-1:1:[0:0:0:(10:1820)]",
 					[180687] = "-1:1:[0:0:0:(10:1820)]",
-					[182746] = "-1:1:[0:0:0:(5:1820)]",
+					[5956] = "-1:1:[1:0:0]",
 					[183419] = "-1:1:[0:0:0:(10:1820)]",
 					[38682] = "-1:1:[900:0:0]",
 					[6256] = "-1:1:[1:0:0]",
@@ -9270,7 +14942,7 @@ WoWDBProfilerData = {
 					[7005] = "-1:1:[111]",
 					[177742] = "-1:1:[0:0:0:(5:1820)]",
 					[181298] = "-1:1:[0:0:0:(20:1820)]",
-					[5956] = "-1:1:[1:0:0]",
+					[182746] = "-1:1:[0:0:0:(5:1820)]",
 					[184716] = "-1:1:[0:0:0:(3:1820)]",
 					[180692] = "-1:1:[0:0:0:(10:1820)]",
 					[180713] = "4:1:[0:0:0:(20:1820)]",
@@ -9292,6 +14964,18 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["82009"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[9734] = 2,
+							[165739] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["79514"] = {
 				["reaction"] = "60:Horde:HOSTILE",
 				["class"] = "ROGUE",
@@ -9309,6 +14993,87 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["15587"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Feralas:69"] = {
+										["3:626:310"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
+			["152550"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_52"] = {
+								["max_health"] = 10343512,
+							},
+						},
+					},
+				},
+			},
+			["9257"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "MAGE",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["loot_counts"] = {
+							["drops"] = 4,
+						},
+						["stats"] = {
+							["level_29"] = {
+								["power"] = "MANA:10154",
+								["max_health"] = 6095,
+							},
+						},
+						["spells"] = {
+							[12471] = 3,
+						},
+						["drops"] = {
+							"money:2260", -- [1]
+							"money:5699", -- [2]
+							"12695:1", -- [3]
+							"money:6659", -- [4]
+							"money:4309", -- [5]
+							"14047:3", -- [6]
+						},
+					},
+				},
+			},
+			["34056"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[11876] = 1,
+							[1604] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["169812"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
@@ -9316,6 +15081,55 @@ WoWDBProfilerData = {
 						},
 						["spells"] = {
 							[324447] = 1,
+						},
+					},
+				},
+			},
+			["167255"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Ardenweald:1565"] = {
+										["3:494:518"] = true,
+									},
+								},
+								["max_health"] = 11791,
+							},
+						},
+					},
+				},
+				["flight_master"] = true,
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["class"] = "WARRIOR",
+			},
+			["142596"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_50"] = {
+								["locations"] = {
+									["Arathi Highlands:14"] = {
+										["3:674:608"] = true,
+									},
+								},
+								["max_health"] = 4579,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["drops"] = {
+							"money:3224", -- [1]
 						},
 					},
 				},
@@ -9336,10 +15150,10 @@ WoWDBProfilerData = {
 								["max_health"] = 7075,
 								["locations"] = {
 									["Ardenweald:1565"] = {
-										["3:630:232"] = true,
 										["3:628:246"] = true,
-										["3:624:226"] = true,
+										["3:630:232"] = true,
 										["3:620:248"] = true,
+										["3:624:226"] = true,
 									},
 								},
 								["power"] = "ENERGY:100",
@@ -9371,6 +15185,17 @@ WoWDBProfilerData = {
 				["class"] = "ROGUE",
 				["reaction"] = "60:Horde:HOSTILE",
 			},
+			["88403"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[176458] = 5,
+						},
+					},
+				},
+			},
 			["165341"] = {
 				["genders"] = {
 					["FEMALE"] = true,
@@ -9393,6 +15218,47 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["165053"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["You killed... Mymaen..."] = true,
+					},
+				},
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_61"] = {
+								["max_health"] = 94328,
+								["locations"] = {
+									["Ardenweald:1565"] = {
+										["3:614:248"] = true,
+									},
+								},
+								["power"] = "MANA:2486",
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["spells"] = {
+							[340666] = 8,
+							[259099] = 3,
+							[340674] = 25,
+							[259102] = 3,
+						},
+						["drops"] = {
+							"money:6932", -- [1]
+							"173202:2", -- [2]
+							"184388:4", -- [3]
+						},
+					},
+				},
+				["class"] = "PALADIN",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+			},
 			["157883"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
@@ -9400,6 +15266,18 @@ WoWDBProfilerData = {
 						},
 						["spells"] = {
 							[325183] = 1,
+						},
+					},
+				},
+			},
+			["158752"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[322931] = 2,
+							[322930] = 1,
 						},
 					},
 				},
@@ -9435,13 +15313,46 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["159674"] = {
+			["165533"] = {
+				["reaction"] = "60:Horde:NEUTRAL",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
 				["encounter_data"] = {
-					["NONE:0:false"] = {
+					["SCENARIO:167:false"] = {
 						["stats"] = {
-						},
-						["spells"] = {
-							[320390] = 1,
+							["level_60"] = {
+								["locations"] = {
+									["Torghast, Tower of the Damned:1807"] = {
+										["6:510:662"] = true,
+										["6:516:658"] = true,
+										["6:544:458"] = true,
+										["6:484:726"] = true,
+										["6:640:238"] = true,
+										["6:490:736"] = true,
+									},
+									["Torghast, Tower of the Damned:1783"] = {
+										["6:356:642"] = true,
+										["6:356:652"] = true,
+										["6:354:632"] = true,
+										["6:354:624"] = true,
+										["6:354:616"] = true,
+										["6:508:284"] = true,
+										["6:486:278"] = true,
+										["6:266:386"] = true,
+									},
+									["Torghast, Tower of the Damned:1792"] = {
+										["6:494:598"] = true,
+										["6:454:636"] = true,
+										["6:454:630"] = true,
+										["6:454:652"] = true,
+										["6:454:646"] = true,
+										["6:486:598"] = true,
+									},
+								},
+								["max_health"] = 193,
+							},
 						},
 					},
 				},
@@ -9453,6 +15364,169 @@ WoWDBProfilerData = {
 						},
 						["spells"] = {
 							[346307] = 4,
+						},
+					},
+				},
+			},
+			["156560"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["Was I misled?"] = true,
+						["You were arrogant to come here."] = true,
+						["Will they sing my song?"] = true,
+						["I wanted to fly..."] = true,
+						["Remember me."] = true,
+					},
+				},
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 28298,
+								["locations"] = {
+									["Bastion:1533"] = {
+										["3:276:206"] = true,
+										["3:288:240"] = true,
+										["3:274:266"] = true,
+										["3:266:258"] = true,
+										["3:252:256"] = true,
+									},
+								},
+								["power"] = "MANA:2434",
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 7,
+						},
+						["spells"] = {
+							[322780] = 12,
+							[322892] = 14,
+							[315454] = 59,
+						},
+						["drops"] = {
+							"money:16730", -- [1]
+							"money:7822", -- [2]
+							"173202:2", -- [3]
+							"money:5720", -- [4]
+							"money:8181", -- [5]
+							"173202:2", -- [6]
+							"money:8129", -- [7]
+							"money:7123", -- [8]
+							"money:16127", -- [9]
+						},
+					},
+				},
+				["class"] = "PALADIN",
+				["genders"] = {
+					["MALE"] = true,
+					["FEMALE"] = true,
+				},
+			},
+			["173364"] = {
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Oribos:1672"] = {
+										["4:536:502"] = true,
+										["4:556:294"] = true,
+									},
+									["Oribos:1670"] = {
+										["4:698:414"] = true,
+										["4:706:412"] = true,
+									},
+								},
+								["max_health"] = 11791,
+							},
+						},
+					},
+				},
+			},
+			["154030"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["SCENARIO:167:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Torghast, Tower of the Damned:1763"] = {
+										["6:608:490"] = true,
+										["6:560:430"] = true,
+										["6:544:440"] = true,
+										["6:592:464"] = true,
+										["6:572:432"] = true,
+										["6:342:448"] = true,
+										["6:342:454"] = true,
+										["6:566:430"] = true,
+										["6:614:490"] = true,
+										["6:586:458"] = true,
+										["6:534:780"] = true,
+										["6:554:434"] = true,
+										["6:602:482"] = true,
+										["6:542:448"] = true,
+										["6:376:450"] = true,
+										["6:592:474"] = true,
+										["6:368:448"] = true,
+										["6:336:454"] = true,
+									},
+								},
+								["max_health"] = 24649,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 3,
+						},
+						["spells"] = {
+							[295929] = 6,
+						},
+						["drops"] = {
+							"currency:2:1728", -- [1]
+							"currency:2:1728", -- [2]
+							"currency:8:1728", -- [3]
+						},
+					},
+				},
+			},
+			["165747"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:NEUTRAL",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Maldraxxus:1536"] = {
+										["3:276:240"] = true,
+									},
+								},
+								["max_health"] = 47164,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["spells"] = {
+							[319843] = 2,
+							[319889] = 3,
+							[319266] = 3,
+							[319890] = 4,
+						},
+						["drops"] = {
+							"176853:1", -- [1]
 						},
 					},
 				},
@@ -9505,6 +15579,70 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["13718"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "PALADIN",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["max_health"] = 8020,
+								["locations"] = {
+									["Desolace:67"] = {
+										["5:242:430"] = true,
+									},
+								},
+								["power"] = "MANA:852",
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["drops"] = {
+							"money:10582", -- [1]
+						},
+					},
+				},
+			},
+			["171159"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:NEUTRAL",
+				["encounter_data"] = {
+					["SCENARIO:167:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Torghast, Tower of the Damned:1807"] = {
+										["6:526:774"] = true,
+									},
+									["Torghast, Tower of the Damned:1627"] = {
+										["6:578:528"] = true,
+									},
+								},
+								["max_health"] = 2423,
+							},
+						},
+					},
+				},
+			},
+			["81998"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[165735] = 2,
+							[79937] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["172020"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
@@ -9516,6 +15654,17 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["43795"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[66004] = 1,
+						},
+					},
+				},
+			},
 			["78673"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
@@ -9523,6 +15672,72 @@ WoWDBProfilerData = {
 							[158806] = 27,
 						},
 						["stats"] = {
+						},
+					},
+				},
+			},
+			["8300"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Blasted Lands:17"] = {
+										["3:492:350"] = true,
+									},
+								},
+								["max_health"] = 2406,
+							},
+						},
+						["spells"] = {
+							[82797] = 1,
+						},
+						["drops"] = {
+							"10593:1", -- [1]
+							"12037:1", -- [2]
+							"60576:1", -- [3]
+							"10278:1", -- [4]
+						},
+					},
+				},
+			},
+			["15596"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Northern Stranglethorn:50"] = {
+										["3:710:342"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
+			["81072"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[166740] = 28,
 						},
 					},
 				},
@@ -9562,22 +15777,64 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["167880"] = {
-				["genders"] = {
-					["UNKNOWN"] = true,
+			["41175"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[38557] = 4,
+						},
+						["stats"] = {
+						},
+					},
 				},
-				["class"] = "WARRIOR",
+			},
+			["96957"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[79892] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			[94015] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["loot_counts"] = {
+							["drops"] = 3,
+						},
+						["drops"] = {
+							"127759:21", -- [1]
+							"currency:1000:823", -- [2]
+						},
+					},
+				},
+			},
+			["172535"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["I'm surprised you'd trust a dredger with a job like that."] = true,
+						["Must've been Theotar told you, yeah?"] = true,
+						["That fang knows talent when he sees it. I got you covered."] = true,
+					},
+				},
 				["reaction"] = "60:Horde:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
 								["locations"] = {
-									["Oribos:1672"] = {
-										["4:524:540"] = true,
-										["4:508:526"] = true,
-										["4:516:534"] = true,
-										["4:524:526"] = true,
+									["Revendreth:1700"] = {
+										["4:610:276"] = true,
+										["4:608:288"] = true,
+										["4:612:304"] = true,
+										["4:614:284"] = true,
+										["4:612:318"] = true,
+										["4:608:282"] = true,
 									},
 								},
 								["max_health"] = 11791,
@@ -9585,70 +15842,156 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
 			},
-			["162593"] = {
+			["41181"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[8258] = 4,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["157807"] = {
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:NEUTRAL",
+				["class"] = "MAGE",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["SCENARIO:167:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 8956,
+								["locations"] = {
+									["Torghast, Tower of the Damned:1807"] = {
+										["6:612:340"] = true,
+										["6:606:340"] = true,
+										["6:604:356"] = true,
+										["6:604:324"] = true,
+										["6:608:346"] = true,
+										["6:604:332"] = true,
+									},
+									["Torghast, Tower of the Damned:1783"] = {
+										["6:614:404"] = true,
+										["6:608:414"] = true,
+										["6:624:400"] = true,
+										["6:608:422"] = true,
+										["6:396:518"] = true,
+									},
+									["Torghast, Tower of the Damned:1792"] = {
+										["6:592:484"] = true,
+										["6:598:478"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 5,
+						},
+						["spells"] = {
+							[347404] = 2,
+							[335685] = 2,
+							[335680] = 26,
+						},
+						["drops"] = {
+							"money:19955", -- [1]
+							"currency:9:1728", -- [2]
+							"money:11965", -- [3]
+							"currency:5:1728", -- [4]
+							"money:17028", -- [5]
+							"currency:4:1728", -- [6]
+							"money:6239", -- [7]
+							"currency:4:1728", -- [8]
+							"money:14856", -- [9]
+							"currency:12:1728", -- [10]
+						},
+					},
+				},
+			},
+			["15583"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
+								["max_health"] = 11320,
 								["locations"] = {
-									["Maldraxxus:1536"] = {
-										["3:444:310"] = true,
+									["Un'Goro Crater:78"] = {
+										["3:504:762"] = true,
 									},
 								},
-								["max_health"] = 11791,
+								["power"] = "MANA:5751",
 							},
-						},
-						["spells"] = {
-							[332500] = 4,
 						},
 					},
 				},
 			},
-			["165053"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["You killed... Mymaen..."] = true,
+			["9269"] = {
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["spells"] = {
+							[13585] = 12,
+						},
+						["stats"] = {
+						},
 					},
 				},
-				["reaction"] = "60:Horde:HOSTILE",
+			},
+			["41138"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[6660] = 1,
+							[1604] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["48118"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[12550] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["78104"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[157589] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["172516"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_61"] = {
-								["max_health"] = 94328,
-								["locations"] = {
-									["Ardenweald:1565"] = {
-										["3:614:248"] = true,
-									},
-								},
-								["power"] = "MANA:2486",
-							},
-						},
-						["loot_counts"] = {
-							["drops"] = 1,
 						},
 						["spells"] = {
-							[340666] = 8,
-							[259099] = 3,
-							[340674] = 25,
-							[259102] = 3,
-						},
-						["drops"] = {
-							"money:6932", -- [1]
-							"173202:2", -- [2]
-							"184388:4", -- [3]
+							[333600] = 5,
 						},
 					},
-				},
-				["class"] = "PALADIN",
-				["genders"] = {
-					["UNKNOWN"] = true,
 				},
 			},
 			["157660"] = {
@@ -9670,6 +16013,41 @@ WoWDBProfilerData = {
 						},
 						["spells"] = {
 							[325024] = 14,
+						},
+					},
+				},
+			},
+			["175734"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["The Maw:1543"] = {
+										["3:376:384"] = true,
+									},
+								},
+								["max_health"] = 3962,
+							},
+						},
+						["spells"] = {
+							[1604] = 4,
+						},
+					},
+				},
+			},
+			["59773"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[129091] = 21,
 						},
 					},
 				},
@@ -9726,6 +16104,17 @@ WoWDBProfilerData = {
 				},
 				["class"] = "WARRIOR",
 				["reaction"] = "60:Horde:FRIENDLY",
+			},
+			["162732"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[340559] = 2,
+						},
+					},
+				},
 			},
 			["175018"] = {
 				["genders"] = {
@@ -9788,6 +16177,92 @@ WoWDBProfilerData = {
 					["UNKNOWN"] = true,
 				},
 			},
+			["156734"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Oribos:1672"] = {
+										["4:558:250"] = true,
+										["4:560:268"] = true,
+									},
+								},
+								["max_health"] = 11791,
+							},
+						},
+					},
+				},
+			},
+			["12021"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Cenarion Circle",
+				["sells"] = {
+					[1205] = "-1:5:[500:0:0]",
+					[1179] = "-1:5:[125:0:0]",
+					[1708] = "-1:5:[1000:0:0]",
+					[1645] = "-1:5:[2000:0:0]",
+					[4601] = "-1:5:[2000:0:0]",
+					[4498] = "-1:1:[2500:0:0]",
+					[4541] = "-1:5:[125:0:0]",
+					[4497] = "-1:1:[20000:0:0]",
+					[159] = "-1:5:[25:0:0]",
+					[4499] = "-1:1:[100000:0:0]",
+					[4470] = "-1:1:[38:0:0]",
+					[4542] = "-1:5:[500:0:0]",
+				},
+				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Moonglade:80"] = {
+										["3:452:346"] = true,
+									},
+								},
+								["max_health"] = 2085,
+							},
+						},
+					},
+				},
+				["reaction"] = "60:Horde:FRIENDLY",
+			},
+			["141489"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["When you wish to return to Darkshore as it appears in the present, you have but to ask."] = true,
+					},
+				},
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["faction"] = "Keepers of Time",
+				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_50"] = {
+								["locations"] = {
+									["Darkshore:62"] = {
+										["3:488:244"] = true,
+									},
+								},
+								["max_health"] = 4579,
+							},
+						},
+					},
+				},
+				["reaction"] = "60:Horde:FRIENDLY",
+			},
 			["174710"] = {
 				["genders"] = {
 					["MALE"] = true,
@@ -9817,34 +16292,34 @@ WoWDBProfilerData = {
 					},
 				},
 				["sells"] = {
-					[182204] = "-1:1:[0:0:0:(2500:1813)]",
 					[181007] = "-1:1:[0:0:0:(2000:1813):(15:1885)]",
+					[182204] = "-1:1:[0:0:0:(2500:1813)]",
 					[181094] = "-1:1:[0:0:0:(4000:1813):(30:1885)]",
 					[181102] = "-1:1:[0:0:0:(1500:1813):(10:1885)]",
-					[182433] = "-1:1:[0:0:0:(3500:1813):(50:1885)]",
-					[181008] = "-1:1:[0:0:0:(3000:1813):(25:1885)]",
-					[182434] = "-1:1:[0:0:0:(3500:1813):(50:1885)]",
+					[181047] = "-1:1:[0:0:0:(2000:1813):(15:1885)]",
 					[181071] = "-1:1:[0:0:0:(3000:1813):(25:1885)]",
+					[181048] = "-1:1:[0:0:0:(1500:1813):(10:1885)]",
+					[181008] = "-1:1:[0:0:0:(3000:1813):(25:1885)]",
 					[181046] = "-1:1:[0:0:0:(3000:1813):(25:1885)]",
-					[181011] = "-1:1:[0:0:0:(2000:1813):(15:1885)]",
+					[182332] = "-1:1:[0:0:0:(100:1813):(50:1885)]",
 					[181095] = "-1:1:[0:0:0:(2000:1813):(15:1885)]",
 					[181040] = "-1:1:[0:0:0:(4000:1813):(30:1885)]",
-					[181048] = "-1:1:[0:0:0:(1500:1813):(10:1885)]",
-					[183716] = "-1:1:[0:0:0:(750:1813)]",
-					[181073] = "-1:1:[0:0:0:(3000:1813):(25:1885)]",
-					[182332] = "-1:1:[0:0:0:(100:1813):(50:1885)]",
-					[181042] = "-1:1:[0:0:0:(2000:1813):(15:1885)]",
+					[182434] = "-1:1:[0:0:0:(3500:1813):(50:1885)]",
+					[181010] = "-1:1:[0:0:0:(3000:1813):(25:1885)]",
+					[182428] = "-1:1:[0:0:0:(3500:1813):(50:1885)]",
+					[181072] = "-1:1:[0:0:0:(4000:1813):(30:1885)]",
+					[181074] = "-1:1:[0:0:0:(2000:1813):(15:1885)]",
 					[183715] = "-1:1:[0:0:0:(5000:1813)]",
 					[181096] = "-1:1:[0:0:0:(2000:1813):(15:1885)]",
-					[182427] = "-1:1:[0:0:0:(3500:1813):(50:1885)]",
+					[181041] = "-1:1:[0:0:0:(2000:1813):(15:1885)]",
 					[182435] = "-1:1:[0:0:0:(3500:1813):(50:1885)]",
+					[181043] = "-1:1:[0:0:0:(4000:1813):(30:1885)]",
 					[182437] = "-1:1:[0:0:0:(3500:1813):(50:1885)]",
-					[182429] = "-1:1:[0:0:0:(3500:1813):(50:1885)]",
-					[181010] = "-1:1:[0:0:0:(3000:1813):(25:1885)]",
+					[181073] = "-1:1:[0:0:0:(3000:1813):(25:1885)]",
 					[181045] = "-1:1:[0:0:0:(4000:1813):(30:1885)]",
 					[181067] = "-1:1:[0:0:0:(4000:1813):(30:1885)]",
 					[181097] = "-1:1:[0:0:0:(4000:1813):(30:1885)]",
-					[182428] = "-1:1:[0:0:0:(3500:1813):(50:1885)]",
+					[181042] = "-1:1:[0:0:0:(2000:1813):(15:1885)]",
 					[182436] = "-1:1:[0]",
 					[181012] = "-1:1:[0:0:0:(1500:1813):(10:1885)]",
 					[183712] = "-1:1:[0:0:0:(3500:1813)]",
@@ -9852,38 +16327,72 @@ WoWDBProfilerData = {
 					[183249] = "-1:1:[0:0:0:(250:1813)]",
 					[186508] = "-1:1:[0:0:0:(10000:1813)]",
 					[181098] = "-1:1:[0:0:0:(3000:1813):(25:1885)]",
-					[181043] = "-1:1:[0:0:0:(4000:1813):(30:1885)]",
+					[182429] = "-1:1:[0:0:0:(3500:1813):(50:1885)]",
 					[181555] = "-1:1:[0:0:0:(1500:1813):(30:1885)]",
 					[183705] = "-1:1:[0:0:0:(3500:1813):(40:1885)]",
 					[181004] = "-1:1:[0:0:0:(4000:1813):(30:1885)]",
 					[181075] = "-1:1:[0:0:0:(1500:1813):(10:1885)]",
-					[181005] = "-1:1:[0:0:0:(4000:1813):(30:1885)]",
-					[186509] = "-1:1:[0:0:0:(10000:1813)]",
+					[181068] = "-1:1:[0:0:0:(2000:1813):(15:1885)]",
+					[180461] = "-1:1:[0:0:0:(5000:1813):(100:1885)]",
 					[181099] = "-1:1:[0:0:0:(4000:1813):(30:1885)]",
 					[181044] = "-1:1:[0:0:0:(3000:1813):(25:1885)]",
 					[182438] = "-1:1:[0:0:0:(3500:1813):(50:1885)]",
 					[186478] = "-1:1:[0:0:0:(7500:1813)]",
-					[181068] = "-1:1:[0:0:0:(2000:1813):(15:1885)]",
+					[181005] = "-1:1:[0:0:0:(4000:1813):(30:1885)]",
 					[182430] = "-1:1:[0:0:0:(3500:1813):(50:1885)]",
-					[180461] = "-1:1:[0:0:0:(5000:1813):(100:1885)]",
+					[186509] = "-1:1:[0:0:0:(10000:1813)]",
 					[186510] = "-1:1:[0:0:0:(10000:1813)]",
 					[181100] = "-1:1:[0:0:0:(3000:1813):(25:1885)]",
 					[182431] = "-1:1:[0:0:0:(3500:1813):(50:1885)]",
 					[182439] = "-1:1:[0:0:0:(3500:1813):(50:1885)]",
-					[181074] = "-1:1:[0:0:0:(2000:1813):(15:1885)]",
-					[181069] = "-1:1:[0:0:0:(2000:1813):(15:1885)]",
-					[183975] = "-1:1:[0:0:0:(3500:1813):(50:1885)]",
+					[181011] = "-1:1:[0:0:0:(2000:1813):(15:1885)]",
 					[181006] = "-1:1:[0:0:0:(2000:1813):(15:1885)]",
-					[181041] = "-1:1:[0:0:0:(2000:1813):(15:1885)]",
+					[183975] = "-1:1:[0:0:0:(3500:1813):(50:1885)]",
+					[182427] = "-1:1:[0:0:0:(3500:1813):(50:1885)]",
+					[181069] = "-1:1:[0:0:0:(2000:1813):(15:1885)]",
 					[181101] = "-1:1:[0:0:0:(2000:1813):(15:1885)]",
 					[182432] = "-1:1:[0:0:0:(3500:1813):(50:1885)]",
 					[181009] = "-1:1:[0:0:0:(4000:1813):(30:1885)]",
-					[181072] = "-1:1:[0:0:0:(4000:1813):(30:1885)]",
+					[183716] = "-1:1:[0:0:0:(750:1813)]",
 					[181070] = "-1:1:[0:0:0:(4000:1813):(30:1885)]",
-					[181047] = "-1:1:[0:0:0:(2000:1813):(15:1885)]",
+					[182433] = "-1:1:[0:0:0:(3500:1813):(50:1885)]",
 				},
 				["class"] = "MAGE",
 				["reaction"] = "60:Horde:FRIENDLY",
+			},
+			["35880"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[15507] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["474"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[12544] = 4,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["10422"] = {
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["spells"] = {
+							[12544] = 9,
+							[17150] = 13,
+						},
+						["stats"] = {
+						},
+					},
+				},
 			},
 			["175317"] = {
 				["genders"] = {
@@ -9901,33 +16410,142 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["166728"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Maldraxxus:1536"] = {
+										["3:440:320"] = true,
+									},
+								},
+								["max_health"] = 82533,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["spells"] = {
+							[272272] = 2,
+							[335193] = 2,
+							[335187] = 4,
+							[333600] = 10,
+						},
+						["drops"] = {
+							"173874:1", -- [1]
+						},
+					},
+				},
+			},
 			["80653"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[161640] = 13,
+							[161640] = 15,
 						},
 					},
 				},
 			},
-			["81072"] = {
+			["167256"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Ardenweald:1565"] = {
+										["3:362:278"] = true,
+									},
+								},
+								["max_health"] = 1180,
+							},
+						},
+					},
+				},
+			},
+			["67674"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[166740] = 17,
+							[35917] = 4,
 						},
 					},
 				},
+			},
+			["15682"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Undercity",
+				["auctioneer"] = true,
+				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Undercity:90"] = {
+										["3:678:360"] = true,
+									},
+								},
+								["max_health"] = 14739,
+							},
+						},
+					},
+				},
+				["reaction"] = "60:Horde:FRIENDLY",
 			},
 			["34504"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["spells"] = {
 							[40505] = 4,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["11797"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Cenarion Circle",
+				["class"] = "PALADIN",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["power"] = "MANA:852",
+								["max_health"] = 2165,
+							},
+						},
+					},
+				},
+				["reaction"] = "60:Horde:FRIENDLY",
+			},
+			["91721"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[158240] = 25,
+							[183793] = 2,
 						},
 						["stats"] = {
 						},
@@ -10006,24 +16624,68 @@ WoWDBProfilerData = {
 				},
 				["can_repair"] = true,
 			},
-			["172248"] = {
+			["45849"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["FEMALE"] = true,
 				},
-				["class"] = "PALADIN",
-				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["max_health"] = 3689,
+							},
+						},
+					},
+				},
+			},
+			["176172"] = {
+				["reaction"] = "60:Horde:NEUTRAL",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 29478,
-								["locations"] = {
-									["Ardenweald:1565"] = {
-										["3:698:244"] = true,
-									},
-								},
-								["power"] = "MANA:2434",
+							["level_50"] = {
+								["max_health"] = 6182,
 							},
+						},
+					},
+				},
+			},
+			["9098"] = {
+				["genders"] = {
+					["MALE"] = true,
+					["FEMALE"] = true,
+				},
+				["class"] = "MAGE",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["loot_counts"] = {
+							["drops"] = 5,
+						},
+						["stats"] = {
+							["level_29"] = {
+								["power"] = "MANA:10154",
+								["max_health"] = 6095,
+							},
+						},
+						["spells"] = {
+							[15123] = 58,
+							[13748] = 4,
+						},
+						["drops"] = {
+							"money:5266", -- [1]
+							"10375:1", -- [2]
+							"money:7421", -- [3]
+							"money:4526", -- [4]
+							"money:5373", -- [5]
+							"14047:10", -- [6]
+							"money:4034", -- [7]
 						},
 					},
 				},
@@ -10053,10 +16715,10 @@ WoWDBProfilerData = {
 						},
 						["spells"] = {
 							[330405] = 2,
-							[330399] = 2,
 							[330406] = 1,
-							[330408] = 3,
+							[330399] = 2,
 							[330401] = 1,
+							[330408] = 3,
 						},
 						["drops"] = {
 							"money:10654", -- [1]
@@ -10068,6 +16730,250 @@ WoWDBProfilerData = {
 				["class"] = "PALADIN",
 				["genders"] = {
 					["FEMALE"] = true,
+				},
+			},
+			["96954"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[79962] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["7247"] = {
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["drops"] = {
+							"money:5482", -- [1]
+							"1520:7", -- [2]
+						},
+					},
+				},
+			},
+			["164123"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11791,
+							},
+						},
+					},
+				},
+			},
+			["15603"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Felwood:77"] = {
+										["3:384:528"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
+			["34985"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[12544] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["88206"] = {
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["faction"] = "Keepers of Time",
+				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Blasted Lands:17"] = {
+										["3:482:74"] = true,
+									},
+								},
+								["max_health"] = 1604,
+							},
+						},
+					},
+				},
+				["reaction"] = "60:Horde:FRIENDLY",
+			},
+			["5649"] = {
+				["genders"] = {
+					["MALE"] = true,
+					["FEMALE"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["loot_counts"] = {
+							["drops"] = 30,
+						},
+						["stats"] = {
+							["level_30"] = {
+								["max_health"] = 8020,
+							},
+							["level_31"] = {
+								["max_health"] = 8390,
+							},
+						},
+						["spells"] = {
+							[11898] = 153,
+						},
+						["drops"] = {
+							"money:8565", -- [1]
+							"money:5886", -- [2]
+							"money:4411", -- [3]
+							"money:6874", -- [4]
+							"4338:35", -- [5]
+							"13446:1", -- [6]
+							"money:8639", -- [7]
+							"money:4675", -- [8]
+							"4338:35", -- [9]
+							"money:3272", -- [10]
+							"4338:35", -- [11]
+							"money:2780", -- [12]
+							"money:10271", -- [13]
+							"money:1882", -- [14]
+							"money:2519", -- [15]
+							"4338:35", -- [16]
+							"money:9659", -- [17]
+							"4338:35", -- [18]
+							"money:7575", -- [19]
+							"money:9422", -- [20]
+							"money:9226", -- [21]
+							"money:3940", -- [22]
+							"money:3148", -- [23]
+							"money:10139", -- [24]
+							"4338:35", -- [25]
+							"money:2185", -- [26]
+							"4338:35", -- [27]
+							"money:10038", -- [28]
+							"money:6744", -- [29]
+							"money:9013", -- [30]
+							"money:8830", -- [31]
+							"money:10501", -- [32]
+							"money:5822", -- [33]
+							"money:8502", -- [34]
+							"4338:35", -- [35]
+							"money:3258", -- [36]
+							"money:6249", -- [37]
+							"money:9635", -- [38]
+							"4338:35", -- [39]
+							"money:4192", -- [40]
+						},
+					},
+				},
+			},
+			["152724"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[303593] = 50,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["157754"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["Hoo..."] = true,
+						["Too soo-hoo-n..."] = true,
+					},
+				},
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Bastion:1533"] = {
+										["3:282:208"] = true,
+										["3:262:242"] = true,
+										["3:290:228"] = true,
+										["3:270:268"] = true,
+										["3:294:236"] = true,
+									},
+								},
+								["max_health"] = 18866,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 10,
+						},
+						["spells"] = {
+							[331402] = 36,
+							[331414] = 13,
+							[321024] = 11,
+							[31553] = 4,
+						},
+						["drops"] = {
+							"money:6576", -- [1]
+							"money:16798", -- [2]
+							"money:13362", -- [3]
+							"money:4858", -- [4]
+							"money:17257", -- [5]
+							"173202:1", -- [6]
+							"money:21167", -- [7]
+							"money:10767", -- [8]
+							"money:9186", -- [9]
+							"173202:1", -- [10]
+							"money:6927", -- [11]
+							"money:7545", -- [12]
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+					["FEMALE"] = true,
+				},
+			},
+			["42407"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[5302] = 3,
+							[12170] = 22,
+							[12169] = 33,
+						},
+						["stats"] = {
+						},
+					},
 				},
 			},
 			["158160"] = {
@@ -10101,7 +17007,63 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["175734"] = {
+			["169955"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[328318] = 106,
+							[322470] = 106,
+						},
+					},
+				},
+			},
+			["15601"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Darkshore:62"] = {
+										["3:496:190"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
+			["175891"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "PALADIN",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 7990,
+								["locations"] = {
+									["The Maw:1543"] = {
+										["3:330:158"] = true,
+									},
+								},
+								["power"] = "MANA:2434",
+							},
+						},
+					},
+				},
+			},
+			["14490"] = {
 				["reaction"] = "60:Horde:HOSTILE",
 				["class"] = "WARRIOR",
 				["genders"] = {
@@ -10110,17 +17072,65 @@ WoWDBProfilerData = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_60"] = {
+							["level_30"] = {
 								["locations"] = {
-									["The Maw:1543"] = {
-										["3:376:384"] = true,
+									["The Cape of Stranglethorn:210"] = {
+										["3:418:708"] = true,
 									},
 								},
-								["max_health"] = 3962,
+								["max_health"] = 1604,
 							},
 						},
-						["spells"] = {
-							[1604] = 4,
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["drops"] = {
+							"5567:1", -- [1]
+							"9925:1", -- [2]
+						},
+					},
+				},
+			},
+			["15581"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Feralas:69"] = {
+										["3:766:378"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
+			["55228"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Shimmering Expanse:205"] = {
+										["3:572:860"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
 						},
 					},
 				},
@@ -10174,24 +17184,213 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["156734"] = {
+			["172601"] = {
+				["reaction"] = "60:Horde:NEUTRAL",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+					["FEMALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 18866,
+								["locations"] = {
+									["Maldraxxus:1536"] = {
+										["3:658:262"] = true,
+										["3:656:286"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 2,
+						},
+						["spells"] = {
+							[332650] = 12,
+							[321216] = 6,
+						},
+						["drops"] = {
+							"money:7512", -- [1]
+							"money:21308", -- [2]
+						},
+					},
+				},
+			},
+			["175897"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "ROGUE",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11791,
+								["locations"] = {
+									["The Maw:1543"] = {
+										["3:340:222"] = true,
+									},
+								},
+								["power"] = "ENERGY:100",
+							},
+						},
+						["spells"] = {
+							[346489] = 3,
+						},
+					},
+				},
+			},
+			["12024"] = {
+				["is_pvp"] = true,
+				["reaction"] = "60:Horde:FRIENDLY",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Cenarion Circle",
+				["sells"] = {
+					[2532] = "-1:1:[18020:0:0]",
+					[2533] = "-1:1:[22606:0:0]",
+					[2534] = "-1:1:[18151:0:0]",
+					[2528] = "-1:1:[17756:0:0]",
+					[2529] = "-1:1:[22276:0:0]",
+					[2530] = "-1:1:[17887:0:0]",
+					[2531] = "-1:1:[22442:0:0]",
+					[2535] = "-1:1:[22772:0:0]",
+				},
 				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Moonglade:80"] = {
+										["3:512:422"] = true,
+									},
+								},
+								["max_health"] = 2085,
+							},
+						},
+					},
+				},
+				["can_repair"] = true,
+			},
+			["175766"] = {
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["faction"] = "Court of Harvesters",
+				["class"] = "MAGE",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 18866,
+								["locations"] = {
+									["Revendreth:1699"] = {
+										["4:502:356"] = true,
+										["4:484:396"] = true,
+										["4:496:380"] = true,
+										["4:512:334"] = true,
+										["4:492:390"] = true,
+										["4:508:346"] = true,
+										["4:476:402"] = true,
+										["4:498:368"] = true,
+										["4:518:320"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
+			["164095"] = {
 				["reaction"] = "60:Horde:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
 								["locations"] = {
-									["Oribos:1672"] = {
-										["4:558:250"] = true,
-										["4:560:268"] = true,
+									["Oribos:1670"] = {
+										["4:354:576"] = true,
 									},
 								},
 								["max_health"] = 11791,
 							},
+						},
+					},
+				},
+				["sells"] = {
+					[185299] = "-1:1:[0:0:0:(875:1792)]",
+					[185307] = "-1:1:[0:0:0:(875:1792)]",
+					[185205] = "-1:1:[0:0:0:(525:1792)]",
+					[185284] = "-1:1:[0:0:0:(875:1792)]",
+					[185292] = "-1:1:[0:0:0:(425:1792)]",
+					[185308] = "-1:1:[0:0:0:(1325:1792)]",
+					[185127] = "-1:1:[0:0:0:(875:1792)]",
+					[185285] = "-1:1:[0:0:0:(875:1792)]",
+					[185293] = "-1:1:[0]",
+					[185238] = "-1:1:[0:0:0:(700:1792)]",
+					[185309] = "-1:1:[0:0:0:(525:1792)]",
+					[185128] = "-1:1:[0:0:0:(525:1792)]",
+					[183246] = "-1:1:[0:0:0:(1500:1792)]",
+					[185207] = "-1:1:[0:0:0:(875:1792)]",
+					[185215] = "-1:1:[0:0:0:(700:1792)]",
+					[185286] = "-1:1:[0:0:0:(875:1792)]",
+					[185294] = "-1:1:[0:0:0:(1325:1792)]",
+					[185239] = "-1:1:[0:0:0:(525:1792)]",
+					[185310] = "-1:1:[0:0:0:(525:1792)]",
+					[185287] = "-1:1:[0:0:0:(1750:1792)]",
+					[185295] = "-1:1:[0:0:0:(425:1792)]",
+					[185240] = "-1:1:[0:0:0:(525:1792)]",
+					[185311] = "-1:1:[0:0:0:(525:1792)]",
+					[185130] = "-1:1:[0:0:0:(875:1792)]",
+					[185138] = "-1:1:[0:0:0:(700:1792)]",
+					[185158] = "-1:1:[0:0:0:(525:1792)]",
+					[185288] = "-1:1:[0:0:0:(1750:1792)]",
+					[185296] = "-1:1:[0:0:0:(875:1792)]",
+					[185241] = "-1:1:[0:0:0:(525:1792)]",
+					[185161] = "-1:1:[0:0:0:(700:1792)]",
+					[185221] = "-1:1:[0:0:0:(875:1792)]",
+					[185144] = "-1:1:[0:0:0:(875:1792)]",
+					[185210] = "-1:1:[0:0:0:(700:1792)]",
+					[185204] = "-1:1:[0:0:0:(875:1792)]",
+					[185226] = "-1:1:[0:0:0:(700:1792)]",
+					[185297] = "-1:1:[0:0:0:(1750:1792)]",
+					[185242] = "-1:1:[0:0:0:(700:1792)]",
+					[185162] = "-1:1:[0:0:0:(525:1792)]",
+					[185229] = "-1:1:[0:0:0:(700:1792)]",
+					[185289] = "-1:1:[0:0:0:(875:1792)]",
+					[185298] = "-1:1:[0:0:0:(1750:1792)]",
+					[185156] = "-1:1:[0:0:0:(525:1792)]",
+					[185290] = "-1:1:[0:0:0:(1750:1792)]",
+					[185235] = "-1:1:[0:0:0:(525:1792)]",
+					[185243] = "-1:1:[0:0:0:(525:1792)]",
+					[185152] = "-1:1:[0:0:0:(700:1792)]",
+					[185133] = "-1:1:[0:0:0:(700:1792)]",
+					[185834] = "-1:1:[0:0:0:(2000:1792)]",
+					[185149] = "-1:1:[0:0:0:(700:1792)]",
+					[185233] = "-1:1:[0:0:0:(525:1792)]",
+					[185291] = "-1:1:[0:0:0:(1750:1792)]",
+					[183378] = "-1:1:[0:0:0:(1500:1792)]",
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+			},
+			["82260"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[130414] = 1,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -10210,8 +17409,8 @@ WoWDBProfilerData = {
 								["locations"] = {
 									["Ardenweald:1565"] = {
 										["3:618:230"] = true,
-										["3:624:226"] = true,
 										["3:628:246"] = true,
+										["3:624:226"] = true,
 										["3:614:244"] = true,
 									},
 								},
@@ -10247,46 +17446,54 @@ WoWDBProfilerData = {
 							},
 						},
 						["spells"] = {
-							[205462] = 13,
-							[353573] = 5,
-							[350527] = 5,
-							[207642] = 3,
+							[205462] = 19,
+							[353573] = 10,
+							[350527] = 8,
+							[207642] = 4,
 						},
 					},
 				},
 			},
-			["165747"] = {
-				["genders"] = {
-					["UNKNOWN"] = true,
+			["158796"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["The Tithelord demands more anima. Give it up now, or pay the price."] = true,
+						["Well... fought..."] = true,
+					},
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:NEUTRAL",
+				["genders"] = {
+					["MALE"] = true,
+				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
 								["locations"] = {
-									["Maldraxxus:1536"] = {
-										["3:276:240"] = true,
+									["Revendreth:1525"] = {
+										["3:568:696"] = true,
+										["3:562:692"] = true,
 									},
 								},
-								["max_health"] = 47164,
+								["max_health"] = 17687,
 							},
 						},
 						["loot_counts"] = {
-							["drops"] = 1,
+							["drops"] = 3,
 						},
 						["spells"] = {
-							[319843] = 2,
-							[319889] = 3,
-							[319266] = 3,
-							[319890] = 4,
+							[317877] = 49,
 						},
 						["drops"] = {
-							"176853:1", -- [1]
+							"money:7030", -- [1]
+							"180453:1", -- [2]
+							"money:11629", -- [3]
+							"money:18680", -- [4]
+							"173202:1", -- [5]
 						},
 					},
 				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
 			},
 			["44788"] = {
 				["is_pvp"] = true,
@@ -10309,6 +17516,92 @@ WoWDBProfilerData = {
 				["genders"] = {
 					["MALE"] = true,
 				},
+			},
+			["83769"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[167757] = 2,
+							[177354] = 1,
+						},
+						["stats"] = {
+							["level_40"] = {
+								["locations"] = {
+									["Spires of Arak:542"] = {
+										["3:424:398"] = true,
+									},
+								},
+								["max_health"] = 19704,
+							},
+						},
+					},
+				},
+			},
+			["174410"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[333600] = 56,
+						},
+					},
+				},
+			},
+			["44865"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Orgrimmar",
+				["class"] = "WARRIOR",
+				["auctioneer"] = true,
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Orgrimmar:85"] = {
+										["3:538:730"] = true,
+									},
+								},
+								["max_health"] = 35373,
+							},
+						},
+					},
+				},
+				["reaction"] = "60:Horde:FRIENDLY",
+			},
+			["14622"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Thorium Brotherhood",
+				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Searing Gorge:32"] = {
+										["3:376:268"] = true,
+										["3:384:288"] = true,
+										["3:384:274"] = true,
+										["3:378:262"] = true,
+									},
+								},
+								["max_health"] = 9624,
+							},
+						},
+					},
+				},
+				["reaction"] = "60:Horde:FRIENDLY",
 			},
 			["152905"] = {
 				["reaction"] = "60:Horde:HOSTILE",
@@ -10392,6 +17685,35 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["5356"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Feralas:69"] = {
+										["3:764:388"] = true,
+									},
+								},
+								["max_health"] = 2406,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["drops"] = {
+							"9866:1", -- [1]
+							"60576:1", -- [2]
+							"14602:1", -- [3]
+						},
+					},
+				},
+			},
 			["168390"] = {
 				["quotes"] = {
 					["CHAT_MSG_MONSTER_SAY"] = {
@@ -10413,8 +17735,8 @@ WoWDBProfilerData = {
 					["MALE"] = true,
 				},
 			},
-			["164123"] = {
-				["reaction"] = "60:Horde:FRIENDLY",
+			["168319"] = {
+				["reaction"] = "60:Horde:HOSTILE",
 				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
@@ -10423,19 +17745,93 @@ WoWDBProfilerData = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
+								["locations"] = {
+									["Revendreth:1525"] = {
+										["3:416:784"] = true,
+										["3:418:748"] = true,
+										["3:406:808"] = true,
+									},
+								},
 								["max_health"] = 11791,
 							},
+						},
+						["loot_counts"] = {
+							["drops"] = 4,
+						},
+						["spells"] = {
+							[42648] = 8,
+							[330616] = 20,
+						},
+						["drops"] = {
+							"176862:1", -- [1]
+							"172052:1", -- [2]
+							"176852:1", -- [3]
+							"176862:2", -- [4]
+							"176862:2", -- [5]
+							"172052:1", -- [6]
 						},
 					},
 				},
 			},
-			["169605"] = {
+			["157212"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["Your paragons deceive you."] = true,
+						["For Devos!"] = true,
+						["You are misguided."] = true,
+					},
+				},
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 106119,
+								["locations"] = {
+									["Bastion:1533"] = {
+										["3:268:258"] = true,
+										["3:258:246"] = true,
+										["3:286:230"] = true,
+									},
+								},
+								["power"] = "MANA:2434",
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 3,
+						},
+						["spells"] = {
+							[326392] = 16,
+							[325498] = 15,
+							[325171] = 36,
+							[325119] = 14,
+							[315454] = 81,
+							[325591] = 24,
+							[325143] = 10,
+						},
+						["drops"] = {
+							"money:28447", -- [1]
+							"173202:1", -- [2]
+							"money:38985", -- [3]
+							"173202:1", -- [4]
+							"money:49375", -- [5]
+						},
+					},
+				},
+				["class"] = "PALADIN",
+				["genders"] = {
+					["MALE"] = true,
+					["FEMALE"] = true,
+				},
+			},
+			["71188"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[330436] = 1,
+							[141916] = 24,
+							[141913] = 8,
 						},
 					},
 				},
@@ -10470,79 +17866,182 @@ WoWDBProfilerData = {
 				["class"] = "WARRIOR",
 				["reaction"] = "60:Horde:HOSTILE",
 			},
-			["157754"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["Hoo..."] = true,
-						["Too soo-hoo-n..."] = true,
+			["37175"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[81500] = 6,
+						},
+						["stats"] = {
+						},
 					},
 				},
-				["reaction"] = "60:Horde:HOSTILE",
+			},
+			["15871"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
+								["max_health"] = 11320,
 								["locations"] = {
-									["Bastion:1533"] = {
-										["3:282:208"] = true,
-										["3:262:242"] = true,
-										["3:290:228"] = true,
-										["3:270:268"] = true,
-										["3:294:236"] = true,
+									["City of Ironforge:87"] = {
+										["3:294:174"] = true,
 									},
 								},
-								["max_health"] = 18866,
+								["power"] = "MANA:5751",
 							},
-						},
-						["loot_counts"] = {
-							["drops"] = 10,
-						},
-						["spells"] = {
-							[331402] = 36,
-							[331414] = 13,
-							[321024] = 11,
-							[31553] = 4,
-						},
-						["drops"] = {
-							"money:6576", -- [1]
-							"money:16798", -- [2]
-							"money:13362", -- [3]
-							"money:4858", -- [4]
-							"money:17257", -- [5]
-							"173202:1", -- [6]
-							"money:21167", -- [7]
-							"money:10767", -- [8]
-							"money:9186", -- [9]
-							"173202:1", -- [10]
-							"money:6927", -- [11]
-							"money:7545", -- [12]
 						},
 					},
 				},
-				["class"] = "WARRIOR",
+			},
+			["166133"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
 				["genders"] = {
-					["MALE"] = true,
 					["FEMALE"] = true,
 				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 94330,
+								["locations"] = {
+									["Revendreth:1699"] = {
+										["4:472:602"] = true,
+										["4:458:624"] = true,
+										["4:472:614"] = true,
+										["4:464:620"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
 			},
-			["175891"] = {
+			["15568"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Tirisfal Glades:18"] = {
+										["3:618:542"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
+			["81377"] = {
+				["reaction"] = "60:Horde:NEUTRAL",
+				["class"] = "MAGE",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "PALADIN",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_40"] = {
+								["max_health"] = 1971,
+								["locations"] = {
+									["Nagrand:550"] = {
+										["3:584:626"] = true,
+										["3:570:618"] = true,
+										["3:588:600"] = true,
+									},
+								},
+								["power"] = "MANA:3191",
+							},
+						},
+						["spells"] = {
+							[164166] = 29,
+							[1604] = 1,
+						},
+					},
+				},
+			},
+			["43001"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[79962] = 1,
+						},
+					},
+				},
+			},
+			["168526"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
 				["reaction"] = "60:Horde:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
-								["max_health"] = 7990,
 								["locations"] = {
-									["The Maw:1543"] = {
-										["3:330:158"] = true,
+									["Revendreth:1525"] = {
+										["3:396:822"] = true,
 									},
 								},
-								["power"] = "MANA:2434",
+								["max_health"] = 235820,
 							},
+						},
+					},
+				},
+			},
+			["82016"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[165712] = 1,
+							[165713] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["8891"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_31"] = {
+								["max_health"] = 8390,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 3,
+						},
+						["drops"] = {
+							"money:1746", -- [1]
+							"18945:8", -- [2]
+							"money:1872", -- [3]
+							"14047:4", -- [4]
+							"money:2158", -- [5]
+							"11078:1", -- [6]
+							"14047:2", -- [7]
 						},
 					},
 				},
@@ -10580,6 +18079,59 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["15909"] = {
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Moonglade:80"] = {
+										["3:538:354"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+				["sells"] = {
+					[21740] = "-1:1:[0]",
+					[21741] = "-1:1:[0]",
+					[90000] = "-1:1:[0:0:0:(25:21100)]",
+					[21742] = "-1:1:[0]",
+					[143827] = "-1:1:[0:0:0:(25:21100)]",
+					[21743] = "-1:1:[0]",
+					[165671] = "-1:1:[0:0:0:(25:21100)]",
+					[44916] = "-1:1:[0]",
+					[44917] = "-1:1:[0]",
+					[44918] = "-1:1:[0]",
+					[44919] = "-1:1:[0]",
+					[165675] = "-1:1:[0:0:0:(10:21100)]",
+					[89999] = "-1:1:[0]",
+					[143829] = "-1:1:[0:0:0:(25:21100)]",
+					[165672] = "-1:1:[0:0:0:(10:21100)]",
+					[165676] = "-1:1:[0:0:0:(25:21100)]",
+					[165669] = "-1:1:[0:0:0:(30:21100)]",
+					[122338] = "-1:1:[0:0:0:(40:21100)]",
+					[151614] = "-1:1:[0:0:0:(75:21100)]",
+					[116142] = "-1:1:[0]",
+					[116144] = "-1:1:[0]",
+					[116146] = "-1:1:[0]",
+					[165673] = "-1:1:[0:0:0:(25:21100)]",
+					[187997] = "-1:1:[0:0:0:(75:21100)]",
+					[122340] = "-1:1:[0:0:0:(75:21100)]",
+					[167731] = "-1:1:[0:0:0:(75:21100)]",
+					[143828] = "-1:1:[0:0:0:(10:21100)]",
+					[165674] = "-1:1:[0:0:0:(25:21100)]",
+				},
+				["class"] = "MAGE",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["can_repair"] = true,
+			},
 			["86406"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
@@ -10591,6 +18143,23 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["15556"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "MAGE",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
 			["167068"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
@@ -10598,6 +18167,39 @@ WoWDBProfilerData = {
 						},
 						["spells"] = {
 							[325426] = 5,
+						},
+					},
+				},
+			},
+			["15565"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Elwynn Forest:37"] = {
+										["3:398:636"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
+			["12922"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[20801] = 1,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -10638,6 +18240,34 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["93003"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[173876] = 2,
+							[165687] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["9163"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["max_health"] = 2085,
+							},
+						},
+					},
+				},
+			},
 			["160811"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
@@ -10650,77 +18280,55 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["175990"] = {
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
+			["164741"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
 				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:NEUTRAL",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
 								["locations"] = {
-									["Maldraxxus:1536"] = {
-										["3:520:210"] = true,
-										["3:486:192"] = true,
-										["3:512:204"] = true,
-										["3:510:194"] = true,
-										["3:498:204"] = true,
-										["3:504:188"] = true,
+									["Revendreth:1699"] = {
+										["4:578:588"] = true,
+										["4:568:592"] = true,
+										["4:574:564"] = true,
+										["4:566:584"] = true,
+										["4:576:594"] = true,
+										["4:578:582"] = true,
+										["4:574:600"] = true,
+										["4:564:572"] = true,
+										["4:576:570"] = true,
+										["4:560:588"] = true,
+										["4:560:608"] = true,
+										["4:562:614"] = true,
+										["4:570:572"] = true,
+										["4:568:606"] = true,
+										["4:562:596"] = true,
 									},
 								},
-								["max_health"] = 58955,
+								["max_health"] = 117910,
 							},
-						},
-						["loot_counts"] = {
-							["drops"] = 5,
-						},
-						["drops"] = {
-							"184576:3", -- [1]
-							"184576:3", -- [2]
-							"184576:3", -- [3]
-							"184576:3", -- [4]
-							"184576:3", -- [5]
 						},
 					},
 				},
 			},
-			["166728"] = {
-				["reaction"] = "60:Horde:HOSTILE",
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
+			["60434"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Maldraxxus:1536"] = {
-										["3:440:320"] = true,
-									},
-								},
-								["max_health"] = 82533,
-							},
-						},
-						["loot_counts"] = {
-							["drops"] = 1,
 						},
 						["spells"] = {
-							[272272] = 2,
-							[335193] = 2,
-							[335187] = 4,
-							[333600] = 10,
-						},
-						["drops"] = {
-							"173874:1", -- [1]
+							[80015] = 2,
 						},
 					},
 				},
 			},
-			["95471"] = {
-				["is_pvp"] = true,
+			["87234"] = {
+				["reaction"] = "60:Horde:NEUTRAL",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["MALE"] = true,
 				},
@@ -10728,28 +18336,192 @@ WoWDBProfilerData = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_40"] = {
-								["power"] = "MANA:1283",
-								["max_health"] = 2463,
+								["max_health"] = 14778,
 							},
 						},
 					},
 				},
-				["sells"] = {
-					[116655] = "-1:1:[200000000:0:0]",
-					[128307] = "-1:1:[5000000:0:0]",
-					[128308] = "-1:1:[5000000:0:0]",
-					[127864] = "-1:1:[1000000:0:0]",
-					[127868] = "-1:1:[10000000:0:0]",
-					[116667] = "-1:1:[100000000:0:0]",
+			},
+			["50716"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[79849] = 1,
+						},
+						["stats"] = {
+						},
+					},
 				},
-				["class"] = "PALADIN",
+			},
+			["153208"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[309664] = 6,
+							[309669] = 10,
+							[309666] = 5,
+						},
+					},
+				},
+			},
+			["167395"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11792,
+							},
+						},
+					},
+				},
+			},
+			["7940"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Cenarion Circle",
+				["sells"] = {
+					[38426] = "-1:1:[30000:0:0]",
+					[6261] = "-1:1:[1000:0:0]",
+					[10290] = "-1:1:[2500:0:0]",
+					[2321] = "-1:1:[100:0:0]",
+					[2325] = "-1:1:[1000:0:0]",
+					[4340] = "-1:1:[350:0:0]",
+					[4341] = "-1:1:[500:0:0]",
+					[4291] = "-1:1:[500:0:0]",
+					[2320] = "-1:1:[10:0:0]",
+					[2604] = "-1:1:[50:0:0]",
+					[2324] = "-1:1:[25:0:0]",
+					[14341] = "-1:1:[5000:0:0]",
+					[4342] = "-1:1:[2500:0:0]",
+					[8343] = "-1:1:[2000:0:0]",
+					[177062] = "-1:1:[90000:0:0]",
+					[2605] = "-1:1:[100:0:0]",
+					[6260] = "-1:1:[50:0:0]",
+				},
+				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Moonglade:80"] = {
+										["3:516:332"] = true,
+									},
+								},
+								["max_health"] = 3208,
+							},
+						},
+					},
+				},
 				["reaction"] = "60:Horde:FRIENDLY",
+			},
+			["12025"] = {
+				["is_pvp"] = true,
+				["teaches"] = {
+					["WARRIOR"] = {
+						["General"] = {
+							[2366] = "0:0:8",
+						},
+						["Herbalism"] = {
+							[265825] = "0:1:8",
+						},
+					},
+				},
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Cenarion Circle",
+				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Moonglade:80"] = {
+										["3:456:468"] = true,
+									},
+								},
+								["max_health"] = 2085,
+							},
+						},
+					},
+				},
+				["reaction"] = "60:Horde:FRIENDLY",
+			},
+			["11789"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_31"] = {
+								["max_health"] = 1678,
+							},
+							["level_30"] = {
+								["max_health"] = 1604,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 6,
+						},
+						["drops"] = {
+							"3676:2", -- [1]
+							"3676:2", -- [2]
+							"3676:2", -- [3]
+							"3669:3", -- [4]
+							"3676:2", -- [5]
+							"3669:3", -- [6]
+							"3669:3", -- [7]
+						},
+					},
+				},
+			},
+			["156196"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Revendreth:1525"] = {
+										["3:480:696"] = true,
+									},
+								},
+								["max_health"] = 117907,
+							},
+						},
+					},
+				},
+				["flight_master"] = true,
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
 			},
 			["165291"] = {
 				["quotes"] = {
+					["CHAT_MSG_MONSTER_YELL"] = {
+						["Temel!"] = true,
+					},
 					["CHAT_MSG_MONSTER_SAY"] = {
+						["I will do no such thing. The troubled souls require my full attention."] = true,
 						["The Fearstalker's hopebreakers left these souls to rot. Please remedy this plight."] = true,
+						["However, if the Prince requires these duties to be performed..."] = true,
 						["Thank you, Maw Walker. The souls will be taken care of."] = true,
+						["Your services as the Sin Herald are not required here. You will assist the Maw Walker with coordinating a new court."] = true,
+						["Do have fun."] = true,
 					},
 				},
 				["reaction"] = "60:Horde:FRIENDLY",
@@ -10759,11 +18531,17 @@ WoWDBProfilerData = {
 							["level_60"] = {
 								["locations"] = {
 									["Revendreth:1700"] = {
+										["4:566:780"] = true,
 										["4:570:766"] = true,
 										["4:578:764"] = true,
-										["4:560:774"] = true,
+										["4:560:746"] = true,
+										["4:582:798"] = true,
 										["4:578:758"] = true,
 										["4:560:768"] = true,
+										["4:576:784"] = true,
+										["4:560:774"] = true,
+										["4:566:758"] = true,
+										["4:558:754"] = true,
 									},
 								},
 								["max_health"] = 58955,
@@ -10776,13 +18554,59 @@ WoWDBProfilerData = {
 					["FEMALE"] = true,
 				},
 			},
-			["172516"] = {
+			["64067"] = {
+				["is_pvp"] = true,
+				["reaction"] = "60:Horde:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
+							["level_35"] = {
+								["locations"] = {
+									["Shrine of Two Moons:1530"] = {
+										["3:632:128"] = true,
+										["3:630:122"] = true,
+									},
+								},
+								["max_health"] = 1989,
+							},
+						},
+					},
+				},
+				["sells"] = {
+					[74832] = "-1:1:[12000:0:0]",
+					[21219] = "-1:1:[5000:0:0]",
+					[2678] = "-1:5:[10:0:0]",
+					[74851] = "-1:1:[14000:0:0]",
+					[74852] = "-1:1:[16000:0:0]",
+					[74845] = "-1:1:[35000:0:0]",
+					[21099] = "-1:1:[500:0:0]",
+					[74660] = "-1:1:[15000:0:0]",
+					[159] = "-1:5:[25:0:0]",
+					[74659] = "-1:1:[30000:0:0]",
+					[85583] = "-1:1:[12000:0:0]",
+					[85584] = "-1:1:[17000:0:0]",
+					[85585] = "-1:1:[27000:0:0]",
+					[30817] = "-1:5:[25:0:0]",
+					[74854] = "-1:1:[7000:0:0]",
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+			},
+			["142681"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["stats"] = {
 						},
 						["spells"] = {
-							[333600] = 5,
+							[262346] = 5,
+						},
+						["drops"] = {
+							"money:13389", -- [1]
 						},
 					},
 				},
@@ -10834,6 +18658,17 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["36147"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[19514] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["175757"] = {
 				["genders"] = {
 					["UNKNOWN"] = true,
@@ -10852,6 +18687,54 @@ WoWDBProfilerData = {
 								},
 								["max_health"] = 117910,
 							},
+						},
+					},
+				},
+			},
+			["7246"] = {
+				["genders"] = {
+					["MALE"] = true,
+					["FEMALE"] = true,
+				},
+				["class"] = "PALADIN",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["loot_counts"] = {
+							["drops"] = 11,
+						},
+						["stats"] = {
+							["level_29"] = {
+								["power"] = "MANA:3122",
+								["max_health"] = 7620,
+							},
+							["level_30"] = {
+								["power"] = "MANA:3280",
+								["max_health"] = 8020,
+							},
+						},
+						["spells"] = {
+							[15547] = 98,
+							[11641] = 7,
+						},
+						["drops"] = {
+							"money:3913", -- [1]
+							"money:2680", -- [2]
+							"4338:11", -- [3]
+							"1520:7", -- [4]
+							"money:2056", -- [5]
+							"money:3152", -- [6]
+							"4338:11", -- [7]
+							"1994:1", -- [8]
+							"money:2448", -- [9]
+							"money:10848", -- [10]
+							"money:9571", -- [11]
+							"1520:7", -- [12]
+							"money:8573", -- [13]
+							"money:10102", -- [14]
+							"money:5373", -- [15]
+							"money:5910", -- [16]
+							"4338:3", -- [17]
 						},
 					},
 				},
@@ -10896,6 +18779,22 @@ WoWDBProfilerData = {
 				},
 				["class"] = "PALADIN",
 				["reaction"] = "60:Horde:FRIENDLY",
+			},
+			["40728"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_-1"] = {
+								["max_health"] = 248625,
+							},
+						},
+					},
+				},
 			},
 			["156333"] = {
 				["quotes"] = {
@@ -10954,6 +18853,22 @@ WoWDBProfilerData = {
 					["FEMALE"] = true,
 				},
 			},
+			["87652"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_40"] = {
+								["max_health"] = 1478,
+							},
+						},
+					},
+				},
+			},
 			["169395"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
@@ -10965,13 +18880,82 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["174410"] = {
+			["175470"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "MAGE",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 9433,
+								["locations"] = {
+									["Revendreth:1699"] = {
+										["4:594:342"] = true,
+										["4:594:354"] = true,
+									},
+									["Revendreth:1700"] = {
+										["4:424:390"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
+			["158916"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[333600] = 56,
+							[86603] = 32,
+						},
+					},
+				},
+			},
+			["7726"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[74504] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["175695"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 3962,
+							},
+						},
+					},
+				},
+			},
+			["82119"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_40"] = {
+								["max_health"] = 7389,
+							},
 						},
 					},
 				},
@@ -10983,6 +18967,39 @@ WoWDBProfilerData = {
 						},
 						["spells"] = {
 							[335059] = 72,
+						},
+					},
+				},
+			},
+			["45823"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["max_health"] = 1604,
+							},
+						},
+					},
+				},
+			},
+			["171748"] = {
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["class"] = "MAGE",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 9433,
+								["power"] = "MANA:5751",
+							},
 						},
 					},
 				},
@@ -11021,58 +19038,192 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["156196"] = {
-				["reaction"] = "60:Horde:FRIENDLY",
+			["165047"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_60"] = {
+							["level_61"] = {
 								["locations"] = {
-									["Revendreth:1525"] = {
-										["3:480:696"] = true,
+									["The Maw:1543"] = {
+										["3:348:390"] = true,
+										["3:346:396"] = true,
 									},
 								},
-								["max_health"] = 117907,
-							},
-						},
-					},
-				},
-				["flight_master"] = true,
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["class"] = "WARRIOR",
-			},
-			["171173"] = {
-				["reaction"] = "60:Horde:HOSTILE",
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["encounter_data"] = {
-					["SCENARIO:167:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Torghast, Tower of the Damned:1627"] = {
-										["6:590:658"] = true,
-										["6:584:660"] = true,
-									},
-								},
-								["max_health"] = 13115,
+								["max_health"] = 79895,
 							},
 						},
 						["loot_counts"] = {
 							["drops"] = 1,
 						},
 						["spells"] = {
-							[212061] = 2,
-							[329913] = 1,
-							[329916] = 2,
+							[329319] = 2,
+							[294165] = 9,
+							[338157] = 10,
 						},
 						["drops"] = {
-							"money:12906", -- [1]
-							"currency:7:1728", -- [2]
+							"money:9217", -- [1]
+							"currency:48:1767", -- [2]
+						},
+					},
+				},
+			},
+			["47248"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[79849] = 6,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["155795"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Revendreth:1525"] = {
+										["3:416:784"] = true,
+									},
+								},
+								["max_health"] = 11791,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["spells"] = {
+							[330595] = 2,
+						},
+						["drops"] = {
+							"179314:1", -- [1]
+							"176859:1", -- [2]
+							"177809:1", -- [3]
+						},
+					},
+				},
+			},
+			["4184"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Cenarion Circle",
+				["sells"] = {
+					[13896] = "-1:1:[75000:0:0]",
+					[13898] = "-1:1:[359000:0:0]",
+					[13897] = "-1:1:[15000:0:0]",
+				},
+				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Moonglade:80"] = {
+										["3:520:330"] = true,
+									},
+								},
+								["max_health"] = 2085,
+							},
+						},
+					},
+				},
+				["can_repair"] = true,
+			},
+			["40229"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[80638] = 9,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["10390"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "PALADIN",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["loot_counts"] = {
+							["drops"] = 23,
+						},
+						["stats"] = {
+							["level_29"] = {
+								["power"] = "MANA:2118",
+								["max_health"] = 1524,
+							},
+						},
+						["spells"] = {
+							[9613] = 105,
+							[12557] = 2,
+							[13787] = 42,
+							[37361] = 19,
+							[9672] = 144,
+							[8364] = 6,
+						},
+						["drops"] = {
+							"money:2334", -- [1]
+							"4338:14", -- [2]
+							"money:2134", -- [3]
+							"money:1614", -- [4]
+							"money:2632", -- [5]
+							"4338:2", -- [6]
+							"money:905", -- [7]
+							"4026:1", -- [8]
+							"money:2140", -- [9]
+							"money:2868", -- [10]
+							"money:2552", -- [11]
+							"4338:6", -- [12]
+							"22526:1", -- [13]
+							"money:2667", -- [14]
+							"4338:6", -- [15]
+							"money:773", -- [16]
+							"4338:6", -- [17]
+							"money:637", -- [18]
+							"money:1674", -- [19]
+							"7972:2", -- [20]
+							"money:1979", -- [21]
+							"7972:2", -- [22]
+							"4306:2", -- [23]
+							"money:1759", -- [24]
+							"money:2136", -- [25]
+							"1639:1", -- [26]
+							"4338:1", -- [27]
+							"money:957", -- [28]
+							"22526:2", -- [29]
+							"8948:1", -- [30]
+							"money:1574", -- [31]
+							"money:2722", -- [32]
+							"22526:2", -- [33]
+							"8751:1", -- [34]
+							"4338:20", -- [35]
+							"money:2472", -- [36]
+							"money:501", -- [37]
+							"money:2089", -- [38]
+							"8948:2", -- [39]
+							"4338:20", -- [40]
+							"22526:2", -- [41]
+							"8948:2", -- [42]
+							"money:1133", -- [43]
+							"money:2371", -- [44]
 						},
 					},
 				},
@@ -11113,385 +19264,46 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["175470"] = {
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["class"] = "MAGE",
-				["reaction"] = "60:Horde:FRIENDLY",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 9433,
-								["locations"] = {
-									["Revendreth:1699"] = {
-										["4:594:342"] = true,
-										["4:594:354"] = true,
-									},
-									["Revendreth:1700"] = {
-										["4:424:390"] = true,
-									},
-								},
-								["power"] = "MANA:5751",
-							},
-						},
-					},
-				},
-			},
-			["87652"] = {
-				["reaction"] = "60:Horde:HOSTILE",
-				["class"] = "WARRIOR",
+			["10414"] = {
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_40"] = {
-								["max_health"] = 1478,
-							},
-						},
-					},
-				},
-			},
-			["158916"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-						},
-						["spells"] = {
-							[86603] = 32,
-						},
-					},
-				},
-			},
-			["175695"] = {
-				["reaction"] = "60:Horde:HOSTILE",
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 3962,
-							},
-						},
-					},
-				},
-			},
-			["157002"] = {
-				["genders"] = {
-					["MALE"] = true,
-					["FEMALE"] = true,
-				},
 				["class"] = "WARRIOR",
 				["reaction"] = "60:Horde:HOSTILE",
 				["encounter_data"] = {
-					["SCENARIO:167:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Torghast, Tower of the Damned:1807"] = {
-										["6:598:260"] = true,
-										["6:624:304"] = true,
-										["6:648:244"] = true,
-										["6:538:548"] = true,
-										["6:594:252"] = true,
-										["6:620:312"] = true,
-										["6:600:254"] = true,
-										["6:544:534"] = true,
-										["6:538:532"] = true,
-										["6:604:264"] = true,
-										["6:594:246"] = true,
-										["6:526:704"] = true,
-										["6:656:248"] = true,
-										["6:540:542"] = true,
-										["6:526:698"] = true,
-									},
-									["Torghast, Tower of the Damned:1792"] = {
-										["6:514:688"] = true,
-										["6:510:694"] = true,
-									},
-								},
-								["max_health"] = 18894,
-							},
-						},
-						["spells"] = {
-							[271841] = 7,
-							[1604] = 1,
-						},
+					["PARTY:1:false"] = {
 						["loot_counts"] = {
-							["drops"] = 7,
+							["drops"] = 2,
+						},
+						["stats"] = {
+							["level_31"] = {
+								["max_health"] = 20136,
+							},
+						},
+						["spells"] = {
+							[77978] = 6,
+							[18813] = 3,
 						},
 						["drops"] = {
-							"money:7982", -- [1]
-							"currency:3:1728", -- [2]
-							"money:9047", -- [3]
-							"currency:3:1728", -- [4]
-							"money:11484", -- [5]
-							"currency:7:1728", -- [6]
-							"money:14931", -- [7]
-							"currency:19:1728", -- [8]
-							"money:20045", -- [9]
-							"currency:10:1728", -- [10]
-							"money:9502", -- [11]
-							"currency:5:1728", -- [12]
-							"money:12323", -- [13]
-							"currency:35:1728", -- [14]
+							"money:3550", -- [1]
+							"3208:1", -- [2]
+							"4306:4", -- [3]
+							"7524:1", -- [4]
+							"money:4140", -- [5]
 						},
 					},
 				},
 			},
-			["159190"] = {
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:HOSTILE",
+			["82025"] = {
 				["encounter_data"] = {
-					["SCENARIO:167:false"] = {
-						["stats"] = {
-							["level_62"] = {
-								["locations"] = {
-									["Torghast, Tower of the Damned:1787"] = {
-										["6:490:648"] = true,
-										["6:492:654"] = true,
-										["6:488:666"] = true,
-										["6:488:682"] = true,
-										["6:484:674"] = true,
-										["6:490:660"] = true,
-									},
-								},
-								["max_health"] = 573111,
-							},
-						},
-						["loot_counts"] = {
-							["drops"] = 1,
-						},
+					["NONE:0:false"] = {
 						["spells"] = {
-							[310405] = 1,
-							[299150] = 1,
-							[310392] = 31,
-							[184381] = 12,
+							[165754] = 2,
 						},
-						["drops"] = {
-							"currency:565:1828", -- [1]
-							"183390:1", -- [2]
-							"money:50193", -- [3]
-							"currency:1:1822", -- [4]
-						},
-					},
-				},
-			},
-			["171748"] = {
-				["genders"] = {
-					["FEMALE"] = true,
-				},
-				["class"] = "MAGE",
-				["reaction"] = "60:Horde:FRIENDLY",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 9433,
-								["power"] = "MANA:5751",
-							},
-						},
-					},
-				},
-			},
-			["170400"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
 						["stats"] = {
 						},
-						["spells"] = {
-							[332168] = 2,
-						},
 					},
 				},
-			},
-			["63008"] = {
-				["genders"] = {
-					["FEMALE"] = true,
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:FRIENDLY",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_35"] = {
-								["locations"] = {
-									["Shrine of Two Moons:1530"] = {
-										["3:624:132"] = true,
-									},
-								},
-								["max_health"] = 1989,
-							},
-						},
-					},
-				},
-			},
-			["175566"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-						},
-						["spells"] = {
-							[320592] = 11,
-						},
-					},
-				},
-			},
-			["171747"] = {
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["class"] = "MAGE",
-				["reaction"] = "60:Horde:FRIENDLY",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 9433,
-								["locations"] = {
-									["Maldraxxus:1536"] = {
-										["3:654:548"] = true,
-									},
-								},
-								["power"] = "MANA:5751",
-							},
-						},
-					},
-				},
-			},
-			["175053"] = {
-				["genders"] = {
-					["FEMALE"] = true,
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:FRIENDLY",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 11791,
-							},
-						},
-					},
-				},
-			},
-			["8670"] = {
-				["is_pvp"] = true,
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["faction"] = "Stormwind",
-				["reaction"] = "51:Alliance:FRIENDLY",
-				["class"] = "WARRIOR",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_51"] = {
-								["locations"] = {
-									["Stormwind City:84"] = {
-										["3:610:710"] = true,
-									},
-								},
-								["max_health"] = 18302,
-							},
-						},
-					},
-				},
-				["auctioneer"] = true,
-			},
-			["162804"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["My cartel has been sending agents into the Maw for some time. A dangerous assignment, but the lure of valuable information has a certain appeal to my kind."] = true,
-					},
-				},
-				["genders"] = {
-					["FEMALE"] = true,
-				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 528250,
-								["locations"] = {
-									["The Maw:1543"] = {
-										["3:468:416"] = true,
-									},
-								},
-								["power"] = "MANA:5751",
-							},
-						},
-					},
-				},
-				["sells"] = {
-					[180949] = "-1:1:[0:0:0:(1650:1767)]",
-					[180953] = "-1:1:[0:0:0:(205:1767)]",
-					[184615] = "-1:1:[0:0:0:(800:1767)]",
-					[184619] = "-1:1:[0:0:0:(1330:1767)]",
-					[183248] = "-1:1:[0:0:0:(4986:1767)]",
-					[184620] = "-1:1:[0:0:0:(527:1767)]",
-					[181245] = "-1:1:[0:0:0:(165:1767)]",
-					[184605] = "-1:1:[0:0:0:(666:1767)]",
-					[184613] = "-1:1:[0:0:0:(1130:1767)]",
-					[184617] = "-1:1:[0:0:0:(1135:1767)]",
-					[184621] = "-1:1:[0:0:0:(1025:1767)]",
-					[184651] = "-1:1:[0:0:0:(230:1767)]",
-					[184588] = "-1:1:[0:0:0:(775:1767)]",
-					[184664] = "-1:1:[0:0:0:(210:1767)]",
-					[184653] = "-1:1:[0:0:0:(1050:1767)]",
-					[180952] = "-1:1:[0:0:0:(1525:1767)]",
-					[183870] = "-1:1:[0:0:0:(300:1767)]",
-					[184618] = "-1:1:[0:0:0:(1575:1767)]",
-					[184901] = "-1:1:[0:0:0:(875:1767)]",
-					[181324] = "-1:1:[0:0:0:(50:1767)]",
-					[180817] = "-1:1:[0:0:0:(60:1767)]",
-					[184652] = "-1:1:[0:0:0:(3760:1767)]",
-				},
-				["class"] = "MAGE",
-				["reaction"] = "60:Horde:NEUTRAL",
-				["can_repair"] = true,
-			},
-			["169902"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["Please... take my blessing."] = true,
-						["Take me away... from here."] = true,
-					},
-				},
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["encounter_data"] = {
-					["SCENARIO:167:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Torghast, Tower of the Damned:1804"] = {
-										["6:600:496"] = true,
-										["6:604:502"] = true,
-									},
-									["Torghast, Tower of the Damned:1627"] = {
-										["6:454:502"] = true,
-										["6:480:564"] = true,
-										["6:484:556"] = true,
-									},
-								},
-								["max_health"] = 9691,
-							},
-						},
-					},
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:FRIENDLY",
 			},
 			["161398"] = {
 				["quotes"] = {
@@ -11546,6 +19358,912 @@ WoWDBProfilerData = {
 				["class"] = "WARRIOR",
 				["reaction"] = "60:Horde:NEUTRAL",
 			},
+			["1734"] = {
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["drops"] = {
+							"2776:3", -- [1]
+						},
+					},
+				},
+			},
+			["83483"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[158349] = 1,
+						},
+					},
+				},
+			},
+			["15549"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["power"] = "MANA:5751",
+								["max_health"] = 11320,
+							},
+						},
+					},
+				},
+			},
+			["42336"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[84498] = 11,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["176169"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Oribos:1670"] = {
+										["4:344:242"] = true,
+										["4:350:246"] = true,
+									},
+								},
+								["max_health"] = 11791,
+							},
+						},
+					},
+				},
+			},
+			["166120"] = {
+				["genders"] = {
+					["MALE"] = true,
+					["FEMALE"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Bastion:1533"] = {
+										["3:448:644"] = true,
+										["3:478:668"] = true,
+										["3:480:674"] = true,
+									},
+								},
+								["max_health"] = 11791,
+							},
+						},
+						["spells"] = {
+							[341274] = 5,
+						},
+					},
+				},
+			},
+			["66186"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[130160] = 1,
+						},
+					},
+				},
+			},
+			["158162"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Bastion:1533"] = {
+										["3:456:664"] = true,
+										["3:450:644"] = true,
+									},
+								},
+								["max_health"] = 3538,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 6,
+						},
+						["spells"] = {
+							[329575] = 10,
+							[1604] = 1,
+						},
+						["drops"] = {
+							"173871:3", -- [1]
+							"173871:3", -- [2]
+							"173871:3", -- [3]
+							"173871:2", -- [4]
+							"173871:2", -- [5]
+							"173874:1", -- [6]
+						},
+					},
+				},
+			},
+			["142662"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "MAGE",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["stats"] = {
+							["level_51"] = {
+								["max_health"] = 18315,
+								["locations"] = {
+									["Arathi Highlands:14"] = {
+										["3:796:294"] = true,
+									},
+								},
+								["power"] = "MANA:4506",
+							},
+						},
+						["spells"] = {
+							[259919] = 3,
+							[262346] = 4,
+							[258714] = 2,
+							[262361] = 2,
+							[259918] = 5,
+						},
+						["drops"] = {
+							"currency:32:1553", -- [1]
+						},
+					},
+				},
+			},
+			["175572"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "PALADIN",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 176865,
+								["locations"] = {
+									["Revendreth:1699"] = {
+										["4:448:630"] = true,
+										["4:440:634"] = true,
+										["4:456:624"] = true,
+									},
+									["Revendreth:1700"] = {
+										["4:646:452"] = true,
+										["4:666:490"] = true,
+										["4:654:462"] = true,
+										["4:660:476"] = true,
+									},
+								},
+								["power"] = "MANA:2434",
+							},
+						},
+					},
+				},
+			},
+			["135816"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[267997] = 1,
+						},
+					},
+				},
+			},
+			["170257"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["SCENARIO:167:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 62026,
+								["locations"] = {
+									["Torghast, Tower of the Damned:1787"] = {
+										["6:486:396"] = true,
+										["6:482:380"] = true,
+										["6:486:386"] = true,
+									},
+									["Torghast, Tower of the Damned:1769"] = {
+										["6:720:436"] = true,
+										["6:712:432"] = true,
+										["6:696:422"] = true,
+										["6:688:422"] = true,
+										["6:704:426"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+				["sells"] = {
+					[174283] = "-1:5:[37500:0:0]",
+					[168207] = "1:1:[0:0:0:(150:1728)]",
+					[176408] = "4:1:[0:0:0:(35:1728)]",
+					[176409] = "-1:1:[0:0:0:(35:1728)]",
+				},
+				["class"] = "MAGE",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["can_repair"] = true,
+			},
+			["158556"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["We're going to run out of silk soon. Please hurry, <name>."] = true,
+						["I will make sure this little silkstrider is well taken care of, for the future of Ardenweald. Perhaps you can come visit from time to time?"] = true,
+					},
+				},
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Ardenweald:1565"] = {
+										["3:484:504"] = true,
+									},
+								},
+								["max_health"] = 11791,
+							},
+						},
+					},
+				},
+				["sells"] = {
+					[183096] = "-1:1:[12825000]",
+					[183100] = "-1:1:[12825000]",
+					[184747] = "-1:1:[2276134]",
+					[184751] = "-1:1:[4158694]",
+					[180729] = "-1:1:[285000000]",
+					[183093] = "-1:1:[16767500]",
+					[184748] = "-1:1:[2284390]",
+					[187883] = "-1:1:[16767500]",
+					[180641] = "-1:1:[0:0:0:(250:163036)]",
+					[183106] = "-1:1:[16767500]",
+					[178336] = "-1:1:[2375000]",
+					[184752] = "-1:1:[4173565]",
+					[183242] = "-1:1:[10450000:0:0]",
+					[184749] = "-1:1:[2292647]",
+					[184750] = "-1:1:[4143824]",
+					[184746] = "-1:1:[2267877]",
+					[183134] = "-1:1:[11875000]",
+					[181309] = "-1:1:[0]",
+					[184754] = "-1:1:[2310088]",
+					[184753] = "-1:1:[4188436]",
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+			},
+			["2040"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["drops"] = {
+							"3858:4", -- [1]
+							"7912:1", -- [2]
+						},
+					},
+				},
+			},
+			["157002"] = {
+				["genders"] = {
+					["MALE"] = true,
+					["FEMALE"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["SCENARIO:167:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Torghast, Tower of the Damned:1807"] = {
+										["6:598:260"] = true,
+										["6:624:304"] = true,
+										["6:648:244"] = true,
+										["6:538:548"] = true,
+										["6:656:248"] = true,
+										["6:620:312"] = true,
+										["6:600:254"] = true,
+										["6:544:534"] = true,
+										["6:604:264"] = true,
+										["6:538:532"] = true,
+										["6:594:246"] = true,
+										["6:526:704"] = true,
+										["6:594:252"] = true,
+										["6:540:542"] = true,
+										["6:526:698"] = true,
+									},
+									["Torghast, Tower of the Damned:1792"] = {
+										["6:514:688"] = true,
+										["6:510:694"] = true,
+									},
+								},
+								["max_health"] = 18894,
+							},
+						},
+						["spells"] = {
+							[271841] = 7,
+							[1604] = 1,
+						},
+						["loot_counts"] = {
+							["drops"] = 7,
+						},
+						["drops"] = {
+							"money:7982", -- [1]
+							"currency:3:1728", -- [2]
+							"money:9047", -- [3]
+							"currency:3:1728", -- [4]
+							"money:11484", -- [5]
+							"currency:7:1728", -- [6]
+							"money:14931", -- [7]
+							"currency:19:1728", -- [8]
+							"money:20045", -- [9]
+							"currency:10:1728", -- [10]
+							"money:9502", -- [11]
+							"currency:5:1728", -- [12]
+							"money:12323", -- [13]
+							"currency:35:1728", -- [14]
+						},
+					},
+				},
+			},
+			["55224"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Mount Hyjal:198"] = {
+										["3:268:620"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
+			["159190"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["SCENARIO:167:false"] = {
+						["stats"] = {
+							["level_62"] = {
+								["locations"] = {
+									["Torghast, Tower of the Damned:1787"] = {
+										["6:490:648"] = true,
+										["6:492:654"] = true,
+										["6:488:666"] = true,
+										["6:488:682"] = true,
+										["6:484:674"] = true,
+										["6:490:660"] = true,
+									},
+								},
+								["max_health"] = 573111,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["spells"] = {
+							[310405] = 1,
+							[299150] = 1,
+							[310392] = 31,
+							[184381] = 12,
+						},
+						["drops"] = {
+							"currency:565:1828", -- [1]
+							"183390:1", -- [2]
+							"money:50193", -- [3]
+							"currency:1:1822", -- [4]
+						},
+					},
+				},
+			},
+			["12201"] = {
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_32"] = {
+								["max_health"] = 61355,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["drops"] = {
+							"7912:2", -- [1]
+							"17711:1", -- [2]
+							"17710:1", -- [3]
+							"money:65935", -- [4]
+						},
+					},
+				},
+			},
+			["69925"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_35"] = {
+								["max_health"] = 9945,
+							},
+						},
+					},
+				},
+			},
+			["170400"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[332168] = 2,
+						},
+					},
+				},
+			},
+			["81409"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_40"] = {
+								["locations"] = {
+									["Nagrand:550"] = {
+										["3:570:622"] = true,
+										["3:588:604"] = true,
+									},
+									["The Underpale:553"] = {
+										["5:680:538"] = true,
+										["5:624:406"] = true,
+										["5:680:554"] = true,
+										["5:626:398"] = true,
+										["5:638:384"] = true,
+										["5:674:556"] = true,
+										["5:632:392"] = true,
+										["5:686:548"] = true,
+										["5:686:540"] = true,
+									},
+								},
+								["max_health"] = 2463,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 5,
+						},
+						["drops"] = {
+							"107469:1", -- [1]
+							"107469:1", -- [2]
+							"107471:1", -- [3]
+							"107469:1", -- [4]
+							"107469:1", -- [5]
+						},
+					},
+				},
+			},
+			["63008"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_35"] = {
+								["locations"] = {
+									["Shrine of Two Moons:1530"] = {
+										["3:624:132"] = true,
+									},
+								},
+								["max_health"] = 1989,
+							},
+						},
+					},
+				},
+			},
+			["175566"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[320592] = 11,
+						},
+					},
+				},
+			},
+			["172171"] = {
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["class"] = "PALADIN",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11791,
+								["locations"] = {
+									["Ardenweald:1565"] = {
+										["3:698:244"] = true,
+									},
+								},
+								["power"] = "MANA:2434",
+							},
+						},
+					},
+				},
+			},
+			["8892"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_31"] = {
+								["max_health"] = 8390,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 2,
+						},
+						["drops"] = {
+							"money:4941", -- [1]
+							"18945:7", -- [2]
+							"money:5908", -- [3]
+							"14047:4", -- [4]
+						},
+					},
+				},
+			},
+			["171747"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "MAGE",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 9433,
+								["locations"] = {
+									["Maldraxxus:1536"] = {
+										["3:654:548"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
+			["175053"] = {
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11791,
+							},
+						},
+					},
+				},
+			},
+			["8670"] = {
+				["is_pvp"] = true,
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Stormwind",
+				["reaction"] = "51:Alliance:FRIENDLY",
+				["auctioneer"] = true,
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_51"] = {
+								["locations"] = {
+									["Stormwind City:84"] = {
+										["3:610:710"] = true,
+									},
+								},
+								["max_health"] = 18302,
+							},
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+			},
+			["162804"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["My cartel has been sending agents into the Maw for some time. A dangerous assignment, but the lure of valuable information has a certain appeal to my kind."] = true,
+					},
+				},
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 528250,
+								["locations"] = {
+									["The Maw:1543"] = {
+										["3:468:416"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+				["sells"] = {
+					[180949] = "-1:1:[0:0:0:(1650:1767)]",
+					[180953] = "-1:1:[0:0:0:(205:1767)]",
+					[184615] = "-1:1:[0:0:0:(800:1767)]",
+					[184619] = "-1:1:[0:0:0:(1330:1767)]",
+					[183248] = "-1:1:[0:0:0:(4986:1767)]",
+					[184620] = "-1:1:[0:0:0:(527:1767)]",
+					[181245] = "-1:1:[0:0:0:(165:1767)]",
+					[184605] = "-1:1:[0:0:0:(666:1767)]",
+					[184613] = "-1:1:[0:0:0:(1130:1767)]",
+					[184617] = "-1:1:[0:0:0:(1135:1767)]",
+					[184621] = "-1:1:[0:0:0:(1025:1767)]",
+					[184651] = "-1:1:[0:0:0:(230:1767)]",
+					[184588] = "-1:1:[0:0:0:(775:1767)]",
+					[184664] = "-1:1:[0:0:0:(210:1767)]",
+					[184901] = "-1:1:[0:0:0:(875:1767)]",
+					[181324] = "-1:1:[0:0:0:(50:1767)]",
+					[183870] = "-1:1:[0:0:0:(300:1767)]",
+					[184618] = "-1:1:[0:0:0:(1575:1767)]",
+					[184653] = "-1:1:[0:0:0:(1050:1767)]",
+					[180952] = "-1:1:[0:0:0:(1525:1767)]",
+					[180817] = "-1:1:[0:0:0:(60:1767)]",
+					[184652] = "-1:1:[0:0:0:(3760:1767)]",
+				},
+				["class"] = "MAGE",
+				["reaction"] = "60:Horde:NEUTRAL",
+				["can_repair"] = true,
+			},
+			["160567"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Maldraxxus:1536"] = {
+										["3:378:290"] = true,
+									},
+								},
+								["max_health"] = 11792,
+							},
+						},
+					},
+				},
+				["sells"] = {
+					[18567] = "-1:1:[28500:0:0]",
+					[3857] = "-1:1:[475:0:0]",
+					[3466] = "-1:1:[1900:0:0]",
+					[2901] = "-1:1:[116:0:0]",
+					[2880] = "-1:1:[95:0:0]",
+					[180733] = "-1:1:[85500:0:0]",
+					[5956] = "-1:1:[1:0:0]",
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["can_repair"] = true,
+			},
+			["66188"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[127357] = 1,
+						},
+					},
+				},
+			},
+			["169902"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["Please... take my blessing."] = true,
+						["Take me away... from here."] = true,
+					},
+				},
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["SCENARIO:167:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Torghast, Tower of the Damned:1804"] = {
+										["6:600:496"] = true,
+										["6:604:502"] = true,
+									},
+									["Torghast, Tower of the Damned:1627"] = {
+										["6:454:502"] = true,
+										["6:480:564"] = true,
+										["6:484:556"] = true,
+									},
+								},
+								["max_health"] = 9691,
+							},
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:FRIENDLY",
+			},
+			["155828"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["SCENARIO:167:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Torghast, Tower of the Damned:1807"] = {
+										["6:638:274"] = true,
+										["6:644:274"] = true,
+										["6:642:292"] = true,
+										["6:658:244"] = true,
+										["6:644:268"] = true,
+										["6:658:252"] = true,
+										["6:652:258"] = true,
+										["6:650:270"] = true,
+										["6:666:210"] = true,
+										["6:662:258"] = true,
+										["6:632:274"] = true,
+										["6:666:216"] = true,
+									},
+									["Torghast, Tower of the Damned:1783"] = {
+										["6:394:796"] = true,
+										["6:392:810"] = true,
+										["6:394:802"] = true,
+										["6:384:800"] = true,
+										["6:386:806"] = true,
+										["6:384:812"] = true,
+									},
+									["Torghast, Tower of the Damned:1792"] = {
+										["6:552:622"] = true,
+										["6:544:624"] = true,
+										["6:558:628"] = true,
+										["6:560:622"] = true,
+										["6:552:630"] = true,
+									},
+								},
+								["max_health"] = 92370,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 3,
+						},
+						["spells"] = {
+							[329608] = 7,
+							[329609] = 20,
+							[299150] = 3,
+						},
+						["drops"] = {
+							"money:37090", -- [1]
+							"currency:10:1728", -- [2]
+							"money:54017", -- [3]
+							"currency:25:1728", -- [4]
+							"179369:1", -- [5]
+							"money:41092", -- [6]
+							"currency:10:1728", -- [7]
+						},
+					},
+				},
+			},
+			["128607"] = {
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["faction"] = "Keepers of Time",
+				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_45"] = {
+								["locations"] = {
+									["Silithus: The Wound:81"] = {
+										["3:790:220"] = true,
+									},
+									["Silithus:81"] = {
+										["3:788:220"] = true,
+									},
+								},
+								["max_health"] = 1456,
+							},
+						},
+					},
+				},
+				["reaction"] = "60:Horde:FRIENDLY",
+			},
 			["168454"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
@@ -11553,6 +20271,39 @@ WoWDBProfilerData = {
 						},
 						["spells"] = {
 							[327754] = 2,
+						},
+					},
+				},
+			},
+			["165989"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[330595] = 1,
+						},
+					},
+				},
+			},
+			["15606"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Winterspring:83"] = {
+										["3:532:568"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
 						},
 					},
 				},
@@ -11603,13 +20354,25 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["8147"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[95826] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["62822"] = {
 				["quotes"] = {
 					["CHAT_MSG_MONSTER_SAY"] = {
 						["I feel like a blood sausage."] = true,
+						["Is it dangerous to go alone?"] = true,
 						["Maybe you could roll a barrel."] = true,
 						["I just came here to find some turnips, I swear!"] = true,
-						["Is it dangerous to go alone?"] = true,
+						["Two theories when arguing with yak. Neither one works."] = true,
 						["Ten years. I have faithfully brushed yak for ten years."] = true,
 						["Put more stuff in the thing more stuff goes in."] = true,
 						["I was going to have a party and invite Mystic Birdhat, but you dismissed him."] = true,
@@ -11619,6 +20382,13 @@ WoWDBProfilerData = {
 					["MALE"] = true,
 				},
 				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11791,
+							},
+						},
+					},
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
@@ -11630,18 +20400,35 @@ WoWDBProfilerData = {
 									},
 									["Orgrimmar:85"] = {
 										["3:412:488"] = true,
+										["3:534:906"] = true,
 										["3:396:486"] = true,
 										["3:528:752"] = true,
 										["3:404:486"] = true,
 										["3:528:758"] = true,
 									},
+									["Burning Steppes:35"] = {
+										["5:554:856"] = true,
+										["5:554:864"] = true,
+									},
 									["Ashenvale:63"] = {
 										["3:800:712"] = true,
+									},
+									["Northern Stranglethorn:50"] = {
+										["3:710:342"] = true,
+									},
+									["Eastern Plaguelands:23"] = {
+										["3:280:116"] = true,
+									},
+									["Loch Modan:48"] = {
+										["3:378:626"] = true,
 									},
 									["Bastion:1533"] = {
 										["3:472:396"] = true,
 										["3:258:248"] = true,
 										["3:658:468"] = true,
+									},
+									["Spires of Arak:542"] = {
+										["3:432:380"] = true,
 									},
 									["Maldraxxus:1536"] = {
 										["3:582:722"] = true,
@@ -11683,15 +20470,37 @@ WoWDBProfilerData = {
 					[64670] = "-1:5:[4000:0:0]",
 					[81414] = "-1:5:[26000:0:0]",
 					[60335] = "-1:1:[120000:0:0]",
-					[39354] = "-1:5:[20:0:0]",
-					[81401] = "-1:5:[24000:0:0]",
 					[52188] = "-1:1:[15000:0:0]",
-					[58274] = "-1:5:[11000:0:0]",
 					[4470] = "-1:1:[38:0:0]",
+					[39354] = "-1:5:[20:0:0]",
+					[58274] = "-1:5:[11000:0:0]",
+					[81401] = "-1:5:[24000:0:0]",
 				},
 				["class"] = "WARRIOR",
 				["reaction"] = "60:Horde:FRIENDLY",
 				["can_repair"] = true,
+			},
+			["15569"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Dun Morogh:27"] = {
+										["3:540:498"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
 			},
 			["158956"] = {
 				["reaction"] = "60:Horde:HOSTILE",
@@ -11742,88 +20551,36 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["158162"] = {
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:HOSTILE",
+			["45569"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Bastion:1533"] = {
-										["3:456:664"] = true,
-										["3:450:644"] = true,
-									},
-								},
-								["max_health"] = 3538,
-							},
-						},
-						["loot_counts"] = {
-							["drops"] = 6,
-						},
 						["spells"] = {
-							[329575] = 10,
-							[1604] = 1,
+							[13878] = 18,
+							[10452] = 2,
 						},
-						["drops"] = {
-							"173871:3", -- [1]
-							"173871:3", -- [2]
-							"173871:3", -- [3]
-							"173871:2", -- [4]
-							"173871:2", -- [5]
-							"173874:1", -- [6]
+						["stats"] = {
 						},
 					},
 				},
 			},
-			["150959"] = {
-				["reaction"] = "60:Horde:HOSTILE",
-				["class"] = "WARRIOR",
+			["15563"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
 				["genders"] = {
-					["UNKNOWN"] = true,
+					["MALE"] = true,
 				},
 				["encounter_data"] = {
-					["SCENARIO:167:false"] = {
+					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
+								["max_health"] = 11320,
 								["locations"] = {
-									["Torghast, Tower of the Damned:1763"] = {
-										["6:486:716"] = true,
-									},
-									["Torghast, Tower of the Damned:1627"] = {
-										["6:576:510"] = true,
-										["6:480:518"] = true,
-										["6:468:504"] = true,
-										["6:470:498"] = true,
-										["6:484:524"] = true,
-										["6:464:494"] = true,
+									["Blasted Lands:17"] = {
+										["3:542:494"] = true,
 									},
 								},
-								["max_health"] = 16022,
+								["power"] = "MANA:5751",
 							},
-						},
-						["loot_counts"] = {
-							["drops"] = 4,
-						},
-						["spells"] = {
-							[294171] = 6,
-							[320478] = 6,
-							[329706] = 29,
-							[320480] = 5,
-							[315802] = 2,
-						},
-						["drops"] = {
-							"money:21564", -- [1]
-							"currency:20:1728", -- [2]
-							"money:21590", -- [3]
-							"currency:19:1728", -- [4]
-							"money:17200", -- [5]
-							"currency:3:1728", -- [6]
-							"money:10935", -- [7]
-							"currency:4:1728", -- [8]
 						},
 					},
 				},
@@ -11839,6 +20596,103 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+			},
+			["162419"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["When you wish to return to Uldum as it appears in the present, please return to me here."] = true,
+					},
+				},
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["faction"] = "Keepers of Time",
+				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_53"] = {
+								["locations"] = {
+									["Uldum:249"] = {
+										["3:560:352"] = true,
+									},
+									["Uldum:1527"] = {
+										["3:560:352"] = true,
+									},
+								},
+								["max_health"] = 1035387,
+							},
+						},
+					},
+				},
+				["reaction"] = "60:Horde:FRIENDLY",
+			},
+			["86778"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_40"] = {
+								["max_health"] = 2463,
+							},
+						},
+					},
+				},
+				["sells"] = {
+					[110609] = "-1:1:[0:0:0:(32:824)]",
+					[109125] = "-1:1:[0:0:0:(16:824)]",
+					[109127] = "-1:1:[0:0:0:(16:824)]",
+					[109129] = "-1:1:[0:0:0:(16:824)]",
+					[109131] = "-1:1:[0:0:0:(40:824)]",
+					[109133] = "-1:1:[0:0:0:(40:824)]",
+					[109135] = "-1:1:[0:0:0:(40:824)]",
+					[109137] = "-1:1:[0:0:0:(40:824)]",
+					[111557] = "-1:1:[0:0:0:(32:824)]",
+					[109141] = "-1:1:[0:0:0:(40:824)]",
+					[109143] = "-1:1:[0:0:0:(40:824)]",
+					[109118] = "-1:1:[0:0:0:(32:824)]",
+					[109124] = "-1:1:[0:0:0:(16:824)]",
+					[109126] = "-1:1:[0:0:0:(16:824)]",
+					[109128] = "-1:1:[0:0:0:(16:824)]",
+					[109132] = "-1:1:[0:0:0:(40:824)]",
+					[109134] = "-1:1:[0:0:0:(40:824)]",
+					[109136] = "-1:1:[0:0:0:(40:824)]",
+					[109138] = "-1:1:[0:0:0:(40:824)]",
+					[109140] = "-1:1:[0:0:0:(40:824)]",
+					[109142] = "-1:1:[0:0:0:(40:824)]",
+					[109144] = "-1:1:[0:0:0:(40:824)]",
+					[120147] = "-1:1:[0:0:0:(1:118472)]",
+					[109139] = "-1:1:[0:0:0:(40:824)]",
+					[109119] = "-1:1:[0:0:0:(32:824)]",
+					[109693] = "-1:1:[0:0:0:(16:824)]",
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+			},
+			["157517"] = {
+				["is_pvp"] = true,
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Maldraxxus:1536"] = {
+										["3:538:306"] = true,
+									},
+								},
+								["max_health"] = 294775,
+							},
+						},
+					},
+				},
+				["flight_master"] = true,
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["class"] = "WARRIOR",
 			},
 			["44782"] = {
 				["is_pvp"] = true,
@@ -11864,13 +20718,64 @@ WoWDBProfilerData = {
 					["MALE"] = true,
 				},
 			},
-			["165989"] = {
+			["12206"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_31"] = {
+								["max_health"] = 20136,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 9,
+						},
+						["spells"] = {
+							[21071] = 5,
+						},
+						["drops"] = {
+							"money:8864", -- [1]
+							"money:2626", -- [2]
+							"8746:1", -- [3]
+							"62519:1", -- [4]
+							"money:9486", -- [5]
+							"3809:1", -- [6]
+							"money:2321", -- [7]
+							"money:5196", -- [8]
+							"7912:3", -- [9]
+							"62518:2", -- [10]
+							"money:8753", -- [11]
+							"money:3990", -- [12]
+							"money:10660", -- [13]
+							"8150:1", -- [14]
+							"money:5867", -- [15]
+							"7912:2", -- [16]
+						},
+					},
+				},
+			},
+			["79744"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[330595] = 1,
+							[166740] = 3,
+						},
+					},
+				},
+			},
+			["83680"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[166740] = 3,
 						},
 					},
 				},
@@ -11909,6 +20814,18 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["10418"] = {
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["spells"] = {
+							[11972] = 2,
+							[6713] = 7,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["162666"] = {
 				["reaction"] = "60:Horde:FRIENDLY",
 				["encounter_data"] = {
@@ -11933,30 +20850,7 @@ WoWDBProfilerData = {
 				},
 				["class"] = "WARRIOR",
 			},
-			["157517"] = {
-				["is_pvp"] = true,
-				["reaction"] = "60:Horde:FRIENDLY",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Maldraxxus:1536"] = {
-										["3:538:306"] = true,
-									},
-								},
-								["max_health"] = 294775,
-							},
-						},
-					},
-				},
-				["flight_master"] = true,
-				["genders"] = {
-					["FEMALE"] = true,
-				},
-				["class"] = "WARRIOR",
-			},
-			["160629"] = {
+			["162258"] = {
 				["reaction"] = "60:Horde:HOSTILE",
 				["class"] = "WARRIOR",
 				["genders"] = {
@@ -11966,8 +20860,54 @@ WoWDBProfilerData = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
-								["max_health"] = 141485,
+								["max_health"] = 14149,
 							},
+						},
+					},
+				},
+			},
+			["158178"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11791,
+							},
+						},
+					},
+				},
+			},
+			["8095"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["loot_counts"] = {
+							["drops"] = 2,
+						},
+						["stats"] = {
+							["level_31"] = {
+								["max_health"] = 8390,
+							},
+							["level_30"] = {
+								["max_health"] = 8020,
+							},
+						},
+						["spells"] = {
+							[11020] = 1,
+						},
+						["drops"] = {
+							"60399:1", -- [1]
+							"60399:1", -- [2]
+							"60398:1", -- [3]
 						},
 					},
 				},
@@ -12033,17 +20973,6 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["166542"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[313351] = 1,
-						},
-						["stats"] = {
-						},
-					},
-				},
-			},
 			["167047"] = {
 				["quotes"] = {
 					["CHAT_MSG_MONSTER_SAY"] = {
@@ -12073,62 +21002,355 @@ WoWDBProfilerData = {
 					["MALE"] = true,
 				},
 			},
-			["153165"] = {
+			["166542"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[313351] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["81308"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["No! No... nooo... the darkness..."] = true,
+						["Noooo... it is you who should die!"] = true,
+						["Our master will devour your soul..."] = true,
+						["The hour is near... soon you will die..."] = true,
+						["You cannot stop the destruction..."] = true,
+						["You fool... we've already... won..."] = true,
+					},
+				},
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:HOSTILE",
 				["encounter_data"] = {
-					["SCENARIO:167:false"] = {
+					["NONE:0:false"] = {
 						["stats"] = {
-							["level_62"] = {
+							["level_40"] = {
+								["max_health"] = 2463,
 								["locations"] = {
-									["Torghast, Tower of the Damned:1769"] = {
-										["6:558:482"] = true,
-										["6:492:500"] = true,
-										["6:518:492"] = true,
-										["6:532:514"] = true,
-										["6:506:504"] = true,
-										["6:494:506"] = true,
-										["6:486:482"] = true,
-										["6:546:492"] = true,
-										["6:486:494"] = true,
-										["6:540:494"] = true,
-										["6:534:496"] = true,
-										["6:492:492"] = true,
-										["6:508:488"] = true,
-										["6:558:496"] = true,
-										["6:488:476"] = true,
-										["6:552:482"] = true,
-										["6:492:470"] = true,
-										["6:498:490"] = true,
-										["6:500:496"] = true,
-										["6:496:480"] = true,
-										["6:552:492"] = true,
-										["6:546:486"] = true,
-										["6:532:488"] = true,
-										["6:560:490"] = true,
-										["6:534:502"] = true,
-										["6:524:492"] = true,
+									["Nagrand:550"] = {
+										["3:576:620"] = true,
+										["3:584:616"] = true,
+										["3:568:628"] = true,
+										["3:590:582"] = true,
+										["3:574:632"] = true,
+										["3:580:628"] = true,
+										["3:588:590"] = true,
+									},
+									["The Underpale:553"] = {
+										["5:656:556"] = true,
+										["5:654:548"] = true,
+										["5:676:434"] = true,
+										["5:652:540"] = true,
+										["5:670:432"] = true,
+										["5:650:530"] = true,
+										["5:666:440"] = true,
 									},
 								},
-								["max_health"] = 345091,
+								["power"] = "ENERGY:100",
 							},
 						},
 						["loot_counts"] = {
-							["drops"] = 1,
+							["drops"] = 9,
 						},
 						["spells"] = {
-							[297292] = 12,
-							[327467] = 10,
-							[327471] = 6,
-							[327461] = 12,
+							[128933] = 13,
+							[128252] = 1,
 						},
 						["drops"] = {
-							"currency:180:1828", -- [1]
-							"money:62052", -- [2]
-							"currency:1:1822", -- [3]
+							"106867:1", -- [1]
+							"106867:1", -- [2]
+							"108979:1", -- [3]
+							"106867:1", -- [4]
+							"106867:1", -- [5]
+							"106627:1", -- [6]
+							"106867:1", -- [7]
+							"106867:1", -- [8]
+							"106867:1", -- [9]
+							"108979:1", -- [10]
+						},
+					},
+				},
+				["class"] = "ROGUE",
+				["reaction"] = "60:Horde:HOSTILE",
+			},
+			["14626"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Thorium Brotherhood",
+				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Searing Gorge:32"] = {
+										["3:374:290"] = true,
+										["3:372:284"] = true,
+									},
+								},
+								["max_health"] = 2165,
+							},
+						},
+					},
+				},
+				["reaction"] = "60:Horde:FRIENDLY",
+			},
+			["35333"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[7978] = 41,
+							[1604] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["69784"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[138147] = 2,
+						},
+					},
+				},
+			},
+			["165473"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[323640] = 28,
+							[323641] = 23,
+						},
+					},
+				},
+			},
+			["38042"] = {
+				["reaction"] = "50:Horde:FRIENDLY",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_50"] = {
+								["locations"] = {
+									["Orgrimmar:85"] = {
+										["3:530:770"] = true,
+									},
+								},
+								["max_health"] = 5394,
+							},
+						},
+					},
+				},
+			},
+			["46572"] = {
+				["is_pvp"] = true,
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Orgrimmar:85"] = {
+										["3:484:758"] = true,
+									},
+								},
+								["max_health"] = 11791,
+							},
+						},
+					},
+				},
+				["sells"] = {
+					[63398] = "-1:1:[3000000:0:0]",
+					[122248] = "-1:1:[5000000:0:0]",
+					[71033] = "-1:1:[15000000:0:0]",
+					[69210] = "-1:1:[2500000:0:0]",
+					[122260] = "-1:1:[5000000:0:0]",
+					[122264] = "-1:1:[5000000:0:0]",
+					[89193] = "-1:1:[2000000:0:0]",
+					[63353] = "-1:1:[1500000:0:0]",
+					[85508] = "-1:1:[1000000:0:0]",
+					[122245] = "-1:1:[5000000:0:0]",
+					[122249] = "-1:1:[5000000:0:0]",
+					[122253] = "-1:1:[5000000:0:0]",
+					[122261] = "-1:1:[5000000:0:0]",
+					[63125] = "-1:1:[30000000:0:0]",
+					[89194] = "-1:1:[1500000:0:0]",
+					[116666] = "-1:1:[40000000:0:0]",
+					[64401] = "-1:1:[2000000:0:0]",
+					[85509] = "-1:1:[1000000:0:0]",
+					[120352] = "-1:1:[1000000:0:0]",
+					[122246] = "-1:1:[5000000:0:0]",
+					[122250] = "-1:1:[5000000:0:0]",
+					[122254] = "-1:1:[5000000:0:0]",
+					[85666] = "-1:1:[30000000:0:0]",
+					[122262] = "-1:1:[5000000:0:0]",
+					[65362] = "-1:1:[3000000:0:0]",
+					[65364] = "-1:1:[5000000:0:0]",
+					[89195] = "-1:1:[2000000:0:0]",
+					[89191] = "-1:1:[2000000:0:0]",
+					[67107] = "-1:1:[15000000:0:0]",
+					[65435] = "-1:1:[1500000]",
+					[89190] = "-1:1:[1500000:0:0]",
+					[127011] = "-1:1:[5000000:0:0]",
+					[122252] = "-1:1:[5000000:0:0]",
+					[85510] = "-1:1:[1000000:0:0]",
+					[62799] = "-1:1:[1500000:0:0]",
+					[122247] = "-1:1:[5000000:0:0]",
+					[122251] = "-1:1:[5000000:0:0]",
+					[69209] = "-1:1:[1250000:0:0]",
+					[122255] = "-1:1:[5000000:0:0]",
+					[122263] = "-1:1:[5000000:0:0]",
+					[89192] = "-1:1:[1500000:0:0]",
+					[65498] = "-1:1:[1500000]",
+					[122256] = "-1:1:[5000000:0:0]",
+					[65274] = "-1:1:[5000000:0:0]",
+					[62800] = "-1:1:[1500000:0:0]",
+					[127012] = "-1:1:[5000000:0:0]",
+					[63138] = "-1:1:[3000000:0:0]",
+					[64400] = "-1:1:[1500000:0:0]",
+					[64402] = "-1:1:[3000000:0:0]",
+					[63207] = "-1:1:[3000000:0:0]",
+					[122266] = "-1:1:[5000000:0:0]",
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+			},
+			["86080"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[171927] = 1,
+							[171934] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["44162"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[8852] = 4,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["78798"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[150428] = 10,
+						},
+					},
+				},
+			},
+			["36272"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["Great. We're not gutless, we're incompetent."] = true,
+					},
+				},
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["PARTY:19:false"] = {
+						["spells"] = {
+							[68841] = 43,
+							[68704] = 3,
+							[68799] = 60,
+						},
+						["stats"] = {
+							["level_52"] = {
+								["max_health"] = 75510,
+							},
+							["level_53"] = {
+								["max_health"] = 85409,
+							},
+							["level_62"] = {
+								["max_health"] = 165074,
+							},
+						},
+					},
+					["PARTY:0:false"] = {
+						["spells"] = {
+							[68704] = 6,
+						},
+						["stats"] = {
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "50:Alliance:HOSTILE",
+			},
+			["74169"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[131944] = 1,
+							[150648] = 2,
+							[1604] = 1,
+						},
+					},
+				},
+			},
+			["10096"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_YELL"] = {
+						["Unleash the fury and let it be done!"] = true,
+						["Haha! I bet you thought you were done!"] = true,
+						["Good riddance!"] = true,
+						["But your real punishment lies ahead."] = true,
+						["The Sons of Thaurissan shall watch you perish in the Ring of the Law!"] = true,
+					},
+				},
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_31"] = {
+								["max_health"] = 10068,
+							},
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+			},
+			["59359"] = {
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["spells"] = {
+							[114176] = 9,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -12148,61 +21370,101 @@ WoWDBProfilerData = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["spells"] = {
-							[79849] = 1,
+							[79849] = 2,
 						},
 						["stats"] = {
 						},
 					},
 				},
 			},
-			["155908"] = {
+			["38915"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[19643] = 16,
+							[1604] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["6112"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[327942] = 3,
+						},
+					},
+				},
+			},
+			["158506"] = {
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "MAGE",
-				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:NEUTRAL",
 				["encounter_data"] = {
-					["SCENARIO:167:false"] = {
+					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
-								["max_health"] = 90690,
 								["locations"] = {
-									["Torghast, Tower of the Damned:1807"] = {
-										["6:548:530"] = true,
-										["6:548:524"] = true,
-										["6:562:494"] = true,
-										["6:560:480"] = true,
-										["6:566:488"] = true,
-										["6:558:504"] = true,
-										["6:568:482"] = true,
-									},
-									["Torghast, Tower of the Damned:1792"] = {
-										["6:518:380"] = true,
-										["6:506:388"] = true,
-										["6:516:402"] = true,
-										["6:512:388"] = true,
-										["6:520:394"] = true,
-										["6:512:394"] = true,
-										["6:520:386"] = true,
+									["Ardenweald:1565"] = {
+										["3:384:276"] = true,
+										["3:348:286"] = true,
+										["3:362:292"] = true,
+										["3:372:280"] = true,
+										["3:372:290"] = true,
 									},
 								},
-								["power"] = "MANA:5751",
+								["max_health"] = 590,
 							},
 						},
-						["loot_counts"] = {
-							["drops"] = 2,
+					},
+				},
+			},
+			["82013"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[165754] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["66686"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
 						},
 						["spells"] = {
-							[304075] = 8,
-							[299150] = 2,
-							[294362] = 3,
-							[304093] = 11,
+							[131036] = 30,
 						},
-						["drops"] = {
-							"money:54190", -- [1]
-							"currency:19:1728", -- [2]
-							"money:18299", -- [3]
-							"currency:23:1728", -- [4]
+					},
+				},
+			},
+			["163624"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[333600] = 2,
+						},
+					},
+				},
+			},
+			["35642"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[68054] = 1,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -12267,7 +21529,41 @@ WoWDBProfilerData = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[160080] = 10,
+							[160080] = 16,
+						},
+					},
+				},
+			},
+			["171190"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Revendreth:1700"] = {
+										["4:620:766"] = true,
+										["4:600:754"] = true,
+										["4:610:764"] = true,
+									},
+								},
+								["max_health"] = 11791,
+							},
+						},
+					},
+				},
+			},
+			["169966"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[322143] = 181,
 						},
 					},
 				},
@@ -12306,70 +21602,166 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["78798"] = {
+			["5985"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-						},
 						["spells"] = {
-							[150428] = 7,
+							[82797] = 6,
+						},
+						["stats"] = {
 						},
 					},
 				},
 			},
-			["160613"] = {
-				["reaction"] = "60:Horde:HOSTILE",
-				["class"] = "WARRIOR",
+			["15560"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
 				["genders"] = {
-					["UNKNOWN"] = true,
+					["MALE"] = true,
 				},
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["power"] = "MANA:5751",
+								["max_health"] = 11320,
+							},
+						},
+					},
+				},
+			},
+			["13142"] = {
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[21337] = 10,
+						},
+					},
+				},
+			},
+			["11688"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_60"] = {
+							["level_30"] = {
 								["locations"] = {
-									["Revendreth:1525"] = {
-										["3:340:494"] = true,
-										["3:360:518"] = true,
-										["3:310:522"] = true,
-										["3:334:506"] = true,
-										["3:318:532"] = true,
-										["3:292:502"] = true,
-										["3:278:498"] = true,
-										["3:322:538"] = true,
-										["3:358:492"] = true,
-										["3:284:514"] = true,
+									["Desolace:68"] = {
+										["5:544:850"] = true,
+										["5:554:824"] = true,
+										["5:552:816"] = true,
+										["5:550:832"] = true,
+										["5:546:842"] = true,
+										["5:558:812"] = true,
 									},
 								},
-								["max_health"] = 5896,
+								["max_health"] = 2406,
 							},
 						},
 						["loot_counts"] = {
-							["drops"] = 13,
-						},
-						["spells"] = {
-							[320592] = 125,
+							["drops"] = 1,
 						},
 						["drops"] = {
-							"178103:1", -- [1]
-							"179314:1", -- [2]
-							"178103:1", -- [3]
-							"178898:1", -- [4]
-							"178103:1", -- [5]
-							"178103:1", -- [6]
-							"178898:1", -- [7]
-							"176871:1", -- [8]
-							"178103:1", -- [9]
-							"179314:1", -- [10]
-							"176871:1", -- [11]
-							"178103:1", -- [12]
-							"178103:2", -- [13]
-							"178898:1", -- [14]
-							"178103:2", -- [15]
-							"178103:1", -- [16]
-							"178898:1", -- [17]
-							"176871:1", -- [18]
-							"176871:1", -- [19]
+							"money:3397", -- [1]
+							"7436:1", -- [2]
+						},
+					},
+				},
+			},
+			["24819"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Burning Steppes:35"] = {
+										["5:412:600"] = true,
+										["5:396:526"] = true,
+										["5:396:518"] = true,
+										["5:398:536"] = true,
+										["5:410:594"] = true,
+										["5:408:314"] = true,
+										["5:402:552"] = true,
+										["5:416:610"] = true,
+										["5:404:308"] = true,
+									},
+								},
+								["max_health"] = 1604,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 4,
+						},
+						["drops"] = {
+							"money:2547", -- [1]
+							"4338:3", -- [2]
+							"money:3530", -- [3]
+							"18945:8", -- [4]
+							"money:2842", -- [5]
+							"money:2562", -- [6]
+							"18945:10", -- [7]
+						},
+					},
+				},
+			},
+			["11783"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_29"] = {
+								["max_health"] = 1524,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 18,
+						},
+						["drops"] = {
+							"4784:3", -- [1]
+							"7912:1", -- [2]
+							"4784:3", -- [3]
+							"4784:7", -- [4]
+							"8150:3", -- [5]
+							"56036:2", -- [6]
+							"4784:7", -- [7]
+							"4784:7", -- [8]
+							"7912:7", -- [9]
+							"8150:3", -- [10]
+							"4784:7", -- [11]
+							"7912:7", -- [12]
+							"4784:7", -- [13]
+							"56033:1", -- [14]
+							"7912:7", -- [15]
+							"8150:3", -- [16]
+							"56036:2", -- [17]
+							"4784:7", -- [18]
+							"7912:7", -- [19]
+							"4784:8", -- [20]
+							"4784:8", -- [21]
+							"4784:8", -- [22]
+							"4784:8", -- [23]
+							"56036:2", -- [24]
+							"4784:8", -- [25]
+							"56036:2", -- [26]
+							"4784:8", -- [27]
+							"7912:3", -- [28]
+							"4784:8", -- [29]
+							"7912:3", -- [30]
 						},
 					},
 				},
@@ -12389,6 +21781,179 @@ WoWDBProfilerData = {
 				["class"] = "WARRIOR",
 				["genders"] = {
 					["MALE"] = true,
+				},
+			},
+			["171746"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Maldraxxus:1536"] = {
+										["3:630:496"] = true,
+										["3:640:550"] = true,
+										["3:634:490"] = true,
+										["3:628:572"] = true,
+										["3:634:560"] = true,
+									},
+								},
+								["max_health"] = 3538,
+							},
+						},
+					},
+				},
+			},
+			["104091"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[79849] = 5,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["37674"] = {
+				["reaction"] = "50:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_50"] = {
+								["locations"] = {
+									["Orgrimmar:85"] = {
+										["3:530:770"] = true,
+									},
+								},
+								["max_health"] = 5394,
+							},
+						},
+					},
+				},
+				["sells"] = {
+					[49927] = "-1:1:[0:0:0:(1:49916)]",
+					[165670] = "-1:1:[0:0:0:(150:49927)]",
+					[134860] = "-1:1:[0:0:0:(1:49927)]",
+					[72146] = "-1:1:[0:0:0:(270:49927)]",
+					[122339] = "-1:1:[0:0:0:(200:49927)]",
+					[122341] = "-1:1:[0:0:0:(450:49927)]",
+					[187998] = "-1:1:[0:0:0:(450:49927)]",
+					[144339] = "-1:1:[0:0:0:(100:49927)]",
+					[34258] = "-1:5:[0:0:0:(5:49927)]",
+					[22261] = "-1:1:[0:0:0:(10:49927)]",
+					[34480] = "-1:1:[0:0:0:(10:49927)]",
+					[49909] = "-1:1:[0:0:0:(10:49927)]",
+					[116155] = "-1:1:[0:0:0:(40:49927)]",
+					[142341] = "-1:1:[0:0:0:(270:49927)]",
+					[50160] = "-1:1:[0:0:0:(20:49927)]",
+					[50161] = "-1:1:[0:0:0:(20:49927)]",
+					[49860] = "-1:5:[0:0:0:(1:49927)]",
+					[50163] = "-1:5:[0:0:0:(5:49927)]",
+					[49856] = "-1:5:[0:0:0:(1:49927)]",
+					[22200] = "-1:5:[0:0:0:(5:49927)]",
+					[21813] = "-1:1:[0:0:0:(2:49927)]",
+					[49857] = "-1:5:[0:0:0:(1:49927)]",
+					[49858] = "-1:5:[0:0:0:(1:49927)]",
+					[49859] = "-1:5:[0:0:0:(1:49927)]",
+					[22218] = "-1:5:[0:0:0:(2:49927)]",
+					[49861] = "-1:5:[0:0:0:(1:49927)]",
+					[116648] = "-1:1:[0:0:0:(40:49927)]",
+					[22235] = "-1:1:[0:0:0:(40:49927)]",
+					[151615] = "-1:1:[0:0:0:(450:49927)]",
+					[167732] = "-1:1:[0:0:0:(450:49927)]",
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+			},
+			["1551"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["The Cape of Stranglethorn:210"] = {
+										["3:648:296"] = true,
+										["3:658:290"] = true,
+									},
+								},
+								["max_health"] = 1604,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 2,
+						},
+						["drops"] = {
+							"60398:1", -- [1]
+							"60398:1", -- [2]
+						},
+					},
+				},
+			},
+			["67333"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[79968] = 36,
+						},
+					},
+				},
+			},
+			["37091"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[82807] = 4,
+						},
+					},
+				},
+			},
+			["39317"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[58506] = 12,
+						},
+					},
+				},
+			},
+			["15597"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "MAGE",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Northern Barrens:10"] = {
+										["3:486:592"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
 				},
 			},
 			["166908"] = {
@@ -12423,13 +21988,52 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["40712"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_28"] = {
+								["power"] = "MANA:1977",
+								["max_health"] = 996,
+							},
+						},
+					},
+				},
+			},
+			["85624"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[170758] = 4,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["92714"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[183779] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["156295"] = {
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
 				["faction"] = "Court of Harvesters",
-				["class"] = "WARRIOR",
 				["flight_master"] = true,
+				["class"] = "WARRIOR",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
@@ -12445,6 +22049,161 @@ WoWDBProfilerData = {
 					},
 				},
 				["reaction"] = "60:Horde:FRIENDLY",
+			},
+			["8909"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "PALADIN",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_31"] = {
+								["power"] = "MANA:3963",
+								["max_health"] = 8390,
+							},
+						},
+					},
+				},
+			},
+			["159086"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[310193] = 1,
+						},
+					},
+				},
+			},
+			["42388"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[79109] = 4,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["78274"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[158050] = 16,
+						},
+					},
+				},
+			},
+			["173139"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["The Maw:1543"] = {
+										["3:420:400"] = true,
+									},
+								},
+								["max_health"] = 15979,
+							},
+						},
+					},
+				},
+			},
+			["8890"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["max_health"] = 8020,
+							},
+							["level_31"] = {
+								["max_health"] = 8390,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 6,
+						},
+						["drops"] = {
+							"money:10987", -- [1]
+							"money:9878", -- [2]
+							"11078:1", -- [3]
+							"14047:3", -- [4]
+							"12034:1", -- [5]
+							"money:3067", -- [6]
+							"14047:4", -- [7]
+							"money:8202", -- [8]
+							"22528:4", -- [9]
+							"money:10988", -- [10]
+							"money:2687", -- [11]
+							"18945:7", -- [12]
+						},
+					},
+				},
+			},
+			["157493"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "PALADIN",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[328969] = 1,
+						},
+						["stats"] = {
+							["level_60"] = {
+								["power"] = "MANA:2434",
+								["max_health"] = 11791,
+							},
+						},
+					},
+				},
+			},
+			["181714"] = {
+				["sells"] = {
+				},
+				["can_repair"] = true,
+			},
+			["38913"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[63227] = 2,
+							[79881] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["61834"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[79849] = 11,
+						},
+						["stats"] = {
+						},
+					},
+				},
 			},
 			["160537"] = {
 				["genders"] = {
@@ -12473,6 +22232,28 @@ WoWDBProfilerData = {
 							"178127:2", -- [1]
 							"178127:2", -- [2]
 							"178127:1", -- [3]
+						},
+					},
+				},
+			},
+			["15562"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Elwynn Forest:37"] = {
+										["3:346:504"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
 						},
 					},
 				},
@@ -12515,6 +22296,28 @@ WoWDBProfilerData = {
 				},
 				["class"] = "MAGE",
 				["reaction"] = "60:Horde:FRIENDLY",
+			},
+			["15594"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Scholomance:22"] = {
+										["3:692:734"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
 			},
 			["167071"] = {
 				["reaction"] = "60:Horde:FRIENDLY",
@@ -12577,6 +22380,73 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["151353"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["SCENARIO:167:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Torghast, Tower of the Damned:1627"] = {
+										["6:568:650"] = true,
+										["6:454:524"] = true,
+										["6:454:514"] = true,
+										["6:488:528"] = true,
+										["6:574:608"] = true,
+										["6:576:614"] = true,
+										["6:570:620"] = true,
+										["6:562:622"] = true,
+										["6:570:658"] = true,
+									},
+									["Torghast, Tower of the Damned:1792"] = {
+										["6:604:416"] = true,
+										["6:584:416"] = true,
+										["6:600:410"] = true,
+										["6:460:406"] = true,
+										["6:550:688"] = true,
+									},
+									["Torghast, Tower of the Damned:1807"] = {
+										["6:662:248"] = true,
+										["6:662:254"] = true,
+										["6:668:220"] = true,
+										["6:668:230"] = true,
+										["6:620:316"] = true,
+										["6:512:748"] = true,
+									},
+									["Torghast, Tower of the Damned:1804"] = {
+										["6:412:716"] = true,
+										["6:436:716"] = true,
+										["6:396:710"] = true,
+										["6:404:714"] = true,
+										["6:420:716"] = true,
+										["6:428:716"] = true,
+									},
+									["Torghast, Tower of the Damned:1763"] = {
+										["6:622:488"] = true,
+										["6:620:482"] = true,
+										["6:616:490"] = true,
+										["6:364:486"] = true,
+										["6:560:688"] = true,
+										["6:570:686"] = true,
+										["6:370:264"] = true,
+										["6:526:780"] = true,
+										["6:330:714"] = true,
+										["6:356:430"] = true,
+										["6:534:764"] = true,
+										["6:322:460"] = true,
+										["6:332:456"] = true,
+									},
+								},
+								["max_health"] = 2282,
+							},
+						},
+					},
+				},
+			},
 			["79520"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
@@ -12588,13 +22458,83 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["78274"] = {
+			["9416"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_26"] = {
+								["max_health"] = 1513,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 7,
+						},
+						["drops"] = {
+							"8146:1", -- [1]
+							"12203:1", -- [2]
+							"12208:1", -- [3]
+							"10113:1", -- [4]
+							"12203:2", -- [5]
+							"12203:2", -- [6]
+							"3301:1", -- [7]
+							"12203:2", -- [8]
+							"3301:1", -- [9]
+							"12203:2", -- [10]
+							"12208:1", -- [11]
+						},
+					},
+				},
+			},
+			["174116"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["faction"] = "Court of Harvesters",
+				["class"] = "WARRIOR",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Revendreth:1525"] = {
+										["3:322:412"] = true,
+									},
+								},
+								["max_health"] = 11791,
+							},
 						},
+					},
+				},
+				["reaction"] = "60:Horde:FRIENDLY",
+			},
+			["36989"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
 						["spells"] = {
-							[158050] = 16,
+							[38556] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["162588"] = {
+				["reaction"] = "60:Horde:NEUTRAL",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 82533,
+							},
 						},
 					},
 				},
@@ -12636,96 +22576,27 @@ WoWDBProfilerData = {
 					["FEMALE"] = true,
 				},
 			},
-			["168011"] = {
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
+			["178572"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Oribos:1670"] = {
-										["4:348:570"] = true,
-										["4:350:558"] = true,
-										["4:350:564"] = true,
-										["4:352:578"] = true,
-									},
-								},
-								["max_health"] = 117910,
-							},
+						},
+						["spells"] = {
+							[358265] = 10,
 						},
 					},
 				},
-				["sells"] = {
-					[185244] = "-1:1:[0:0:0:(875:1602)]",
-					[185315] = "-1:1:[0:0:0:(900:1602)]",
-					[188662] = "-1:1:[0:0:0:(1800:1602)]",
-					[185166] = "-1:1:[0:0:0:(875:1602)]",
-					[185300] = "-1:1:[0:0:0:(1800:1602)]",
-					[185245] = "-1:1:[0:0:0:(525:1602)]",
-					[185316] = "-1:1:[0:0:0:(1350:1602)]",
-					[188663] = "-1:1:[0:0:0:(1800:1602)]",
-					[185269] = "-1:1:[0:0:0:(700:1602)]",
-					[185126] = "-1:1:[0:0:0:(450:1602)]",
-					[185197] = "-1:1:[0:0:0:(700:1602)]",
-					[187506] = "-1:1:[0:0:0:(200:1602)]",
-					[185301] = "-1:1:[0:0:0:(1800:1602)]",
-					[185198] = "-1:1:[0:0:0:(525:1602)]",
-					[185317] = "-1:1:[0:0:0:(1800:1602)]",
-					[185199] = "-1:1:[0:0:0:(900:1602)]",
-					[182624] = "-1:1:[0:0:0:(200:1602)]",
-					[185278] = "-1:1:[0:0:0:(700:1602)]",
-					[185200] = "-1:1:[0:0:0:(1350:1602)]",
-					[185192] = "-1:1:[0:0:0:(525:1602)]",
-					[185125] = "-1:1:[0:0:0:(900:1602)]",
-					[185247] = "-1:1:[0:0:0:(875:1602)]",
-					[185255] = "-1:1:[0:0:0:(700:1602)]",
-					[188665] = "-1:1:[0:0:0:(900:1602)]",
-					[185180] = "-1:1:[0:0:0:(875:1602)]",
-					[185279] = "-1:1:[0:0:0:(525:1602)]",
-					[188664] = "-1:1:[0:0:0:(1350:1602)]",
-					[185169] = "-1:1:[0:0:0:(700:1602)]",
-					[181712] = "-1:1:[0:0:0:(200:1602)]",
-					[185185] = "-1:1:[0:0:0:(700:1602)]",
-					[185261] = "-1:1:[0:0:0:(875:1602)]",
-					[188666] = "-1:1:[0:0:0:(1800:1602)]",
-					[185282] = "-1:1:[0:0:0:(700:1602)]",
-					[185280] = "-1:1:[0:0:0:(525:1602)]",
-					[188667] = "-1:1:[0:0:0:(900:1602)]",
-					[185266] = "-1:1:[0:0:0:(700:1602)]",
-					[185304] = "-1:1:[0:0:0:(525:1602)]",
-					[185312] = "-1:1:[0]",
-					[185194] = "-1:1:[0:0:0:(525:1602)]",
-					[185202] = "-1:1:[0:0:0:(900:1602)]",
-					[185273] = "-1:1:[0:0:0:(525:1602)]",
-					[185281] = "-1:1:[0:0:0:(525:1602)]",
-					[185163] = "-1:1:[0:0:0:(875:1602)]",
-					[185250] = "-1:1:[0:0:0:(700:1602)]",
-					[185305] = "-1:1:[0:0:0:(525:1602)]",
-					[185313] = "-1:1:[0:0:0:(525:1602)]",
-					[188660] = "-1:1:[0:0:0:(450:1602)]",
-					[185203] = "-1:1:[0:0:0:(450:1602)]",
-					[188668] = "-1:1:[0:0:0:(1800:1602)]",
-					[180935] = "-1:1:[0:0:0:(200:1602)]",
-					[185164] = "-1:1:[0:0:0:(525:1602)]",
-					[185201] = "-1:1:[0:0:0:(1800:1602)]",
-					[185306] = "-1:1:[0:0:0:(525:1602)]",
-					[185314] = "-1:1:[0:0:0:(900:1602)]",
-					[188661] = "-1:1:[0:0:0:(1350:1602)]",
-					[185188] = "-1:1:[0:0:0:(700:1602)]",
-					[185275] = "-1:1:[0:0:0:(525:1602)]",
-					[185283] = "-1:1:[0:0:0:(525:1602)]",
-					[185174] = "-1:1:[0:0:0:(700:1602)]",
-					[180842] = "-1:1:[0:0:0:(200:1602)]",
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:FRIENDLY",
 			},
-			["181714"] = {
-				["sells"] = {
+			["82001"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[130414] = 2,
+						},
+						["stats"] = {
+						},
+					},
 				},
-				["can_repair"] = true,
 			},
 			["155790"] = {
 				["reaction"] = "60:Horde:HOSTILE",
@@ -12775,6 +22646,43 @@ WoWDBProfilerData = {
 							"currency:7:1728", -- [8]
 							"money:19398", -- [9]
 							"currency:8:1728", -- [10]
+						},
+					},
+				},
+			},
+			["172605"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Revendreth:1699"] = {
+										["4:568:292"] = true,
+										["4:552:268"] = true,
+										["4:558:280"] = true,
+										["4:566:282"] = true,
+										["4:538:258"] = true,
+										["4:536:274"] = true,
+										["4:556:274"] = true,
+										["4:548:288"] = true,
+										["4:562:288"] = true,
+										["4:542:274"] = true,
+										["4:546:262"] = true,
+										["4:546:268"] = true,
+										["4:562:272"] = true,
+										["4:536:282"] = true,
+										["4:544:282"] = true,
+										["4:550:276"] = true,
+										["4:572:280"] = true,
+									},
+								},
+								["max_health"] = 117910,
+							},
 						},
 					},
 				},
@@ -12831,6 +22739,20 @@ WoWDBProfilerData = {
 				["class"] = "WARRIOR",
 				["reaction"] = "60:Horde:NEUTRAL",
 			},
+			[69161] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["drops"] = {
+							"95601:1", -- [1]
+						},
+					},
+				},
+			},
 			["175833"] = {
 				["reaction"] = "60:Horde:HOSTILE",
 				["class"] = "WARRIOR",
@@ -12874,6 +22796,27 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["179377"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:NEUTRAL",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_1"] = {
+								["locations"] = {
+									["The Maw:1543"] = {
+										["3:394:386"] = true,
+									},
+								},
+								["max_health"] = 5,
+							},
+						},
+					},
+				},
+			},
 			["170932"] = {
 				["reaction"] = "60:Horde:HOSTILE",
 				["class"] = "WARRIOR",
@@ -12890,11 +22833,11 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["86730"] = {
+			["178192"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["spells"] = {
-							[158349] = 13,
+							[339723] = 7,
 						},
 						["stats"] = {
 						},
@@ -12973,13 +22916,57 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["46716"] = {
+			["145337"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["spells"] = {
-							[79865] = 1,
+							[244808] = 54,
 						},
 						["stats"] = {
+						},
+					},
+				},
+			},
+			["51912"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[95826] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["15605"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Ashenvale:63"] = {
+										["3:356:488"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
+			["158628"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[329435] = 6,
 						},
 					},
 				},
@@ -12995,74 +22982,216 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["77789"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[166302] = 1,
+						},
+					},
+				},
+			},
 			["88779"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["spells"] = {
-							[97097] = 13,
+							[97097] = 31,
 						},
 						["stats"] = {
 						},
 					},
 				},
 			},
-			["179377"] = {
+			["152291"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "PALADIN",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:NEUTRAL",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_1"] = {
-								["locations"] = {
-									["The Maw:1543"] = {
-										["3:394:386"] = true,
-									},
-								},
-								["max_health"] = 5,
+							["level_50"] = {
+								["max_health"] = 81905,
+								["power"] = "MANA:1807",
 							},
 						},
 					},
 				},
 			},
-			["159636"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["I will wear your skin as a girdle!"] = true,
-						["Not... my face..."] = true,
+			["3296"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[71507] = 83,
+						},
+						["stats"] = {
+						},
 					},
 				},
-				["reaction"] = "60:Horde:NEUTRAL",
+			},
+			["83746"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[167614] = 2,
+							[167615] = 1,
+						},
+						["stats"] = {
+							["level_-1"] = {
+								["locations"] = {
+									["Spires of Arak:542"] = {
+										["3:424:398"] = true,
+									},
+								},
+								["max_health"] = 985200,
+							},
+						},
+					},
+				},
+			},
+			["15582"] = {
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["class"] = "MAGE",
+				["reaction"] = "60:Horde:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
+								["max_health"] = 11320,
 								["locations"] = {
-									["Maldraxxus:1536"] = {
-										["3:486:194"] = true,
+									["Northern Barrens:10"] = {
+										["3:684:700"] = true,
 									},
 								},
-								["max_health"] = 47164,
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
+			["9043"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+					["FEMALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Burning Steppes:34"] = {
+										["5:538:346"] = true,
+										["5:518:320"] = true,
+										["5:510:330"] = true,
+										["5:510:324"] = true,
+										["5:526:332"] = true,
+									},
+									["Burning Steppes:33"] = {
+										["5:736:526"] = true,
+										["5:670:478"] = true,
+									},
+								},
+								["max_health"] = 2085,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 3,
+						},
+						["drops"] = {
+							"money:1217", -- [1]
+							"money:2861", -- [2]
+							"money:1676", -- [3]
+						},
+					},
+				},
+			},
+			["176133"] = {
+				["reaction"] = "60:Horde:NEUTRAL",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_61"] = {
+								["max_health"] = 4794,
+							},
+						},
+					},
+				},
+			},
+			["133168"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[261896] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["5283"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_31"] = {
+								["max_health"] = 8390,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 2,
+						},
+						["drops"] = {
+							"money:4328", -- [1]
+							"money:5697", -- [2]
+						},
+					},
+				},
+			},
+			["9046"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Burning Steppes:33"] = {
+										["5:730:524"] = true,
+									},
+								},
+								["max_health"] = 3208,
 							},
 						},
 						["loot_counts"] = {
 							["drops"] = 1,
 						},
-						["spells"] = {
-							[319935] = 1,
-							[320007] = 2,
-							[320019] = 4,
-						},
 						["drops"] = {
-							"176866:3", -- [1]
+							"money:721", -- [1]
 						},
 					},
-				},
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["UNKNOWN"] = true,
 				},
 			},
 			["170284"] = {
@@ -13086,18 +23215,24 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["176133"] = {
-				["reaction"] = "60:Horde:NEUTRAL",
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
+			["47897"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["spells"] = {
+							[11542] = 1,
+						},
 						["stats"] = {
-							["level_61"] = {
-								["max_health"] = 4794,
-							},
+						},
+					},
+				},
+			},
+			["41569"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[79482] = 26,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -13124,6 +23259,120 @@ WoWDBProfilerData = {
 						},
 					},
 				},
+			},
+			["45843"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["max_health"] = 6416,
+							},
+						},
+					},
+				},
+				["sells"] = {
+					[183952] = "-1:1:[90000:0:0]",
+					[10647] = "-1:1:[2000:0:0]",
+					[3466] = "-1:1:[2000:0:0]",
+					[6219] = "-1:1:[938]",
+					[5956] = "-1:1:[1:0:0]",
+					[90146] = "-1:1:[20000:0:0]",
+					[4364] = "4:1:[48:0:0]",
+					[39684] = "-1:1:[9000:0:0]",
+					[2901] = "-1:1:[122:0:0]",
+					[160298] = "-1:1:[3000:0:0]",
+					[2880] = "-1:1:[100:0:0]",
+					[4400] = "-1:1:[2000:0:0]",
+					[10602] = "1:1:[3000]",
+					[4399] = "-1:1:[200:0:0]",
+					[39354] = "-1:5:[20:0:0]",
+					[40533] = "-1:1:[50000:0:0]",
+					[4357] = "2:1:[16:0:0]",
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["can_repair"] = true,
+			},
+			[69099] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["loot_counts"] = {
+							["drops"] = 5,
+						},
+						["drops"] = {
+							"95602:1", -- [1]
+						},
+					},
+				},
+			},
+			["44871"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[71507] = 4,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["67586"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[79934] = 4,
+						},
+					},
+				},
+			},
+			["36565"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["Have a dose of this!"] = true,
+						["It has been the greatest honor of my life to serve with you, Hummel."] = true,
+						["A little of this... A little of that..."] = true,
+					},
+				},
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["PARTY:19:false"] = {
+						["spells"] = {
+							[68946] = 3,
+							[68947] = 31,
+							[68948] = 30,
+							[68821] = 8,
+						},
+						["stats"] = {
+							["level_52"] = {
+								["max_health"] = 75510,
+							},
+							["level_53"] = {
+								["max_health"] = 85409,
+							},
+							["level_62"] = {
+								["max_health"] = 165074,
+							},
+						},
+					},
+					["PARTY:0:false"] = {
+						["spells"] = {
+							[68946] = 6,
+						},
+						["stats"] = {
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "50:Alliance:HOSTILE",
 			},
 			["165868"] = {
 				["genders"] = {
@@ -13196,6 +23445,37 @@ WoWDBProfilerData = {
 				["class"] = "WARRIOR",
 				["reaction"] = "60:Horde:FRIENDLY",
 			},
+			["172627"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:NEUTRAL",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Maldraxxus:1536"] = {
+										["3:654:284"] = true,
+									},
+								},
+								["max_health"] = 8843,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["spells"] = {
+							[322743] = 1,
+						},
+						["drops"] = {
+							"176869:1", -- [1]
+							"173202:1", -- [2]
+						},
+					},
+				},
+			},
 			["168192"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
@@ -13204,6 +23484,22 @@ WoWDBProfilerData = {
 						["spells"] = {
 							[323640] = 4,
 							[323641] = 3,
+						},
+					},
+				},
+			},
+			["145011"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_-1"] = {
+								["max_health"] = 549100,
+							},
 						},
 					},
 				},
@@ -13232,6 +23528,66 @@ WoWDBProfilerData = {
 						},
 						["spells"] = {
 							[153716] = 2,
+						},
+					},
+				},
+			},
+			["159636"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["I will wear your skin as a girdle!"] = true,
+						["Not... my face..."] = true,
+					},
+				},
+				["reaction"] = "60:Horde:NEUTRAL",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Maldraxxus:1536"] = {
+										["3:486:194"] = true,
+									},
+								},
+								["max_health"] = 47164,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["spells"] = {
+							[319935] = 1,
+							[320007] = 2,
+							[320019] = 4,
+						},
+						["drops"] = {
+							"176866:3", -- [1]
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+			},
+			["164579"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Oribos:1670"] = {
+										["4:392:698"] = true,
+										["4:394:690"] = true,
+									},
+								},
+								["max_health"] = 235820,
+							},
 						},
 					},
 				},
@@ -13314,6 +23670,184 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["161388"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["Don't... chop me... up..."] = true,
+						["Face the power of necromancy!"] = true,
+					},
+				},
+				["genders"] = {
+					["MALE"] = true,
+					["FEMALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Maldraxxus:1536"] = {
+										["3:538:674"] = true,
+										["3:532:666"] = true,
+										["3:514:670"] = true,
+										["3:524:670"] = true,
+										["3:534:656"] = true,
+									},
+								},
+								["max_health"] = 14149,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 11,
+						},
+						["spells"] = {
+							[315076] = 43,
+							[312674] = 60,
+							[1604] = 1,
+							[315079] = 23,
+						},
+						["drops"] = {
+							"money:21645", -- [1]
+							"money:5358", -- [2]
+							"173202:3", -- [3]
+							"174231:1", -- [4]
+							"money:10896", -- [5]
+							"173202:3", -- [6]
+							"money:17432", -- [7]
+							"money:12561", -- [8]
+							"money:5307", -- [9]
+							"173204:1", -- [10]
+							"money:19073", -- [11]
+							"173202:2", -- [12]
+							"money:14802", -- [13]
+							"money:7960", -- [14]
+							"money:21504", -- [15]
+							"money:11059", -- [16]
+						},
+					},
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:NEUTRAL",
+			},
+			["86730"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[158349] = 18,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["46716"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[79865] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["168011"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Oribos:1670"] = {
+										["4:348:570"] = true,
+										["4:350:558"] = true,
+										["4:350:564"] = true,
+										["4:352:578"] = true,
+									},
+								},
+								["max_health"] = 117910,
+							},
+						},
+					},
+				},
+				["sells"] = {
+					[185244] = "-1:1:[0:0:0:(875:1602)]",
+					[185315] = "-1:1:[0:0:0:(900:1602)]",
+					[188662] = "-1:1:[0:0:0:(1800:1602)]",
+					[185166] = "-1:1:[0:0:0:(875:1602)]",
+					[185300] = "-1:1:[0:0:0:(1800:1602)]",
+					[185245] = "-1:1:[0:0:0:(525:1602)]",
+					[185316] = "-1:1:[0:0:0:(1350:1602)]",
+					[188663] = "-1:1:[0:0:0:(1800:1602)]",
+					[185269] = "-1:1:[0:0:0:(700:1602)]",
+					[185126] = "-1:1:[0:0:0:(450:1602)]",
+					[185197] = "-1:1:[0:0:0:(700:1602)]",
+					[187506] = "-1:1:[0:0:0:(200:1602)]",
+					[185301] = "-1:1:[0:0:0:(1800:1602)]",
+					[185198] = "-1:1:[0:0:0:(525:1602)]",
+					[185317] = "-1:1:[0:0:0:(1800:1602)]",
+					[185199] = "-1:1:[0:0:0:(900:1602)]",
+					[182624] = "-1:1:[0:0:0:(200:1602)]",
+					[185278] = "-1:1:[0:0:0:(700:1602)]",
+					[185255] = "-1:1:[0:0:0:(700:1602)]",
+					[185200] = "-1:1:[0:0:0:(1350:1602)]",
+					[185125] = "-1:1:[0:0:0:(900:1602)]",
+					[185247] = "-1:1:[0:0:0:(875:1602)]",
+					[185192] = "-1:1:[0:0:0:(525:1602)]",
+					[188665] = "-1:1:[0:0:0:(900:1602)]",
+					[185180] = "-1:1:[0:0:0:(875:1602)]",
+					[185279] = "-1:1:[0:0:0:(525:1602)]",
+					[188664] = "-1:1:[0:0:0:(1350:1602)]",
+					[185169] = "-1:1:[0:0:0:(700:1602)]",
+					[181712] = "-1:1:[0:0:0:(200:1602)]",
+					[185185] = "-1:1:[0:0:0:(700:1602)]",
+					[188666] = "-1:1:[0:0:0:(1800:1602)]",
+					[185201] = "-1:1:[0:0:0:(1800:1602)]",
+					[185282] = "-1:1:[0:0:0:(700:1602)]",
+					[185280] = "-1:1:[0:0:0:(525:1602)]",
+					[185202] = "-1:1:[0:0:0:(900:1602)]",
+					[185266] = "-1:1:[0:0:0:(700:1602)]",
+					[185304] = "-1:1:[0:0:0:(525:1602)]",
+					[185312] = "-1:1:[0]",
+					[185194] = "-1:1:[0:0:0:(525:1602)]",
+					[188667] = "-1:1:[0:0:0:(900:1602)]",
+					[185273] = "-1:1:[0:0:0:(525:1602)]",
+					[185281] = "-1:1:[0:0:0:(525:1602)]",
+					[185163] = "-1:1:[0:0:0:(875:1602)]",
+					[185250] = "-1:1:[0:0:0:(700:1602)]",
+					[185305] = "-1:1:[0:0:0:(525:1602)]",
+					[185313] = "-1:1:[0:0:0:(525:1602)]",
+					[188660] = "-1:1:[0:0:0:(450:1602)]",
+					[188668] = "-1:1:[0:0:0:(1800:1602)]",
+					[185203] = "-1:1:[0:0:0:(450:1602)]",
+					[180935] = "-1:1:[0:0:0:(200:1602)]",
+					[185164] = "-1:1:[0:0:0:(525:1602)]",
+					[185261] = "-1:1:[0:0:0:(875:1602)]",
+					[185306] = "-1:1:[0:0:0:(525:1602)]",
+					[185188] = "-1:1:[0:0:0:(700:1602)]",
+					[188661] = "-1:1:[0:0:0:(1350:1602)]",
+					[185314] = "-1:1:[0:0:0:(900:1602)]",
+					[185275] = "-1:1:[0:0:0:(525:1602)]",
+					[185283] = "-1:1:[0:0:0:(525:1602)]",
+					[185174] = "-1:1:[0:0:0:(700:1602)]",
+					[180842] = "-1:1:[0:0:0:(200:1602)]",
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:FRIENDLY",
+			},
+			["82263"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[165713] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
 			["156564"] = {
 				["genders"] = {
 					["UNKNOWN"] = true,
@@ -13348,23 +23882,57 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["173139"] = {
-				["genders"] = {
-					["UNKNOWN"] = true,
+			["80706"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[163072] = 1,
+							[163068] = 1,
+							[163070] = 1,
+						},
+						["stats"] = {
+						},
+					},
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:FRIENDLY",
+			},
+			["172192"] = {
+				["genders"] = {
+					["MALE"] = true,
+					["FEMALE"] = true,
+				},
+				["class"] = "PALADIN",
+				["reaction"] = "60:Horde:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
+								["max_health"] = 12970,
 								["locations"] = {
-									["The Maw:1543"] = {
-										["3:420:400"] = true,
+									["Ardenweald:1565"] = {
+										["3:674:264"] = true,
+										["3:686:278"] = true,
+										["3:684:248"] = true,
+										["3:682:266"] = true,
 									},
 								},
-								["max_health"] = 15979,
+								["power"] = "MANA:2434",
 							},
+						},
+						["loot_counts"] = {
+							["drops"] = 4,
+						},
+						["spells"] = {
+							[1604] = 1,
+							[324483] = 8,
+							[324447] = 16,
+						},
+						["drops"] = {
+							"money:14641", -- [1]
+							"money:7237", -- [2]
+							"money:10789", -- [3]
+							"175247:1", -- [4]
+							"money:7726", -- [5]
+							"173204:1", -- [6]
 						},
 					},
 				},
@@ -13400,6 +23968,72 @@ WoWDBProfilerData = {
 						},
 						["spells"] = {
 							[320243] = 3,
+						},
+					},
+				},
+			},
+			["84013"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[168475] = 25,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["172825"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[311190] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["2482"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["faction"] = "Booty Bay",
+				["sells"] = {
+					[2525] = "-1:1:[14200:0:0]",
+					[2526] = "-1:1:[11401:0:0]",
+					[2520] = "-1:1:[13381:0:0]",
+					[2521] = "-1:1:[16787:0:0]",
+					[2522] = "-1:1:[12087:0:0]",
+					[2523] = "-1:1:[15162:0:0]",
+					[2524] = "-1:1:[11316:0:0]",
+					[2527] = "-1:1:[15950:0:0]",
+				},
+				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["The Cape of Stranglethorn:210"] = {
+										["3:430:708"] = true,
+									},
+								},
+								["max_health"] = 1604,
+							},
+						},
+					},
+				},
+				["can_repair"] = true,
+			},
+			["7032"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[9941] = 15,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -13475,6 +24109,17 @@ WoWDBProfilerData = {
 				},
 				["class"] = "WARRIOR",
 				["reaction"] = "60:Horde:FRIENDLY",
+			},
+			["3111"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[5280] = 13,
+						},
+					},
+				},
 			},
 			["168403"] = {
 				["encounter_data"] = {
@@ -13565,25 +24210,35 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["171190"] = {
+			["55210"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "PALADIN",
 				["genders"] = {
 					["MALE"] = true,
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
+								["max_health"] = 14149,
 								["locations"] = {
-									["Revendreth:1700"] = {
-										["4:620:766"] = true,
-										["4:600:754"] = true,
-										["4:610:764"] = true,
+									["Uldum:249"] = {
+										["3:316:630"] = true,
 									},
 								},
-								["max_health"] = 11791,
+								["power"] = "MANA:2434",
 							},
+						},
+					},
+				},
+			},
+			["3112"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[5280] = 7,
 						},
 					},
 				},
@@ -13625,8 +24280,8 @@ WoWDBProfilerData = {
 										["6:394:516"] = true,
 										["6:460:290"] = true,
 										["6:386:502"] = true,
-										["6:386:510"] = true,
 										["6:398:522"] = true,
+										["6:386:510"] = true,
 										["6:392:504"] = true,
 										["6:448:302"] = true,
 									},
@@ -13662,8 +24317,8 @@ WoWDBProfilerData = {
 										["6:538:698"] = true,
 										["6:598:478"] = true,
 										["6:584:340"] = true,
-										["6:538:692"] = true,
 										["6:510:682"] = true,
+										["6:538:692"] = true,
 										["6:630:464"] = true,
 										["6:606:404"] = true,
 										["6:512:690"] = true,
@@ -13784,13 +24439,224 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["6112"] = {
+			["3566"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[327942] = 2,
+							[81683] = 13,
+						},
+					},
+				},
+			},
+			["60195"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[123429] = 3,
+						},
+					},
+				},
+			},
+			["15566"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Eastern Plaguelands:23"] = {
+										["3:758:544"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
+			["160613"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Revendreth:1525"] = {
+										["3:340:494"] = true,
+										["3:360:518"] = true,
+										["3:310:522"] = true,
+										["3:334:506"] = true,
+										["3:318:532"] = true,
+										["3:292:502"] = true,
+										["3:278:498"] = true,
+										["3:322:538"] = true,
+										["3:358:492"] = true,
+										["3:284:514"] = true,
+									},
+								},
+								["max_health"] = 5896,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 13,
+						},
+						["spells"] = {
+							[320592] = 136,
+						},
+						["drops"] = {
+							"178103:1", -- [1]
+							"179314:1", -- [2]
+							"178103:1", -- [3]
+							"178898:1", -- [4]
+							"178103:1", -- [5]
+							"178103:1", -- [6]
+							"178898:1", -- [7]
+							"176871:1", -- [8]
+							"178103:1", -- [9]
+							"179314:1", -- [10]
+							"176871:1", -- [11]
+							"178103:1", -- [12]
+							"178103:2", -- [13]
+							"178898:1", -- [14]
+							"178103:2", -- [15]
+							"178103:1", -- [16]
+							"178898:1", -- [17]
+							"176871:1", -- [18]
+							"176871:1", -- [19]
+						},
+					},
+				},
+			},
+			["11686"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Desolace:67"] = {
+										["5:170:450"] = true,
+										["5:170:436"] = true,
+										["5:168:428"] = true,
+										["5:210:508"] = true,
+										["5:160:504"] = true,
+										["5:268:386"] = true,
+										["5:170:444"] = true,
+										["5:216:510"] = true,
+									},
+									["Desolace:68"] = {
+										["5:536:802"] = true,
+										["5:578:784"] = true,
+									},
+								},
+								["max_health"] = 1604,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 6,
+						},
+						["spells"] = {
+							[6660] = 1,
+						},
+						["drops"] = {
+							"money:790", -- [1]
+							"money:2333", -- [2]
+							"money:2653", -- [3]
+							"money:1814", -- [4]
+							"money:3397", -- [5]
+							"money:2161", -- [6]
+						},
+					},
+				},
+			},
+			["165337"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[319935] = 1,
+							[320463] = 4,
+						},
+					},
+				},
+			},
+			["155908"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "MAGE",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["SCENARIO:167:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 90690,
+								["locations"] = {
+									["Torghast, Tower of the Damned:1807"] = {
+										["6:548:530"] = true,
+										["6:548:524"] = true,
+										["6:562:494"] = true,
+										["6:560:480"] = true,
+										["6:566:488"] = true,
+										["6:558:504"] = true,
+										["6:568:482"] = true,
+									},
+									["Torghast, Tower of the Damned:1792"] = {
+										["6:518:380"] = true,
+										["6:506:388"] = true,
+										["6:516:402"] = true,
+										["6:512:388"] = true,
+										["6:520:394"] = true,
+										["6:512:394"] = true,
+										["6:520:386"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 2,
+						},
+						["spells"] = {
+							[304075] = 8,
+							[299150] = 2,
+							[294362] = 3,
+							[304093] = 11,
+						},
+						["drops"] = {
+							"money:54190", -- [1]
+							"currency:19:1728", -- [2]
+							"money:18299", -- [3]
+							"currency:23:1728", -- [4]
+						},
+					},
+				},
+			},
+			["7031"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[9941] = 7,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -13803,6 +24669,77 @@ WoWDBProfilerData = {
 						["spells"] = {
 							[336763] = 8,
 							[1604] = 1,
+						},
+					},
+				},
+			},
+			["157277"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[318181] = 2,
+						},
+					},
+				},
+			},
+			["153165"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["SCENARIO:167:false"] = {
+						["stats"] = {
+							["level_62"] = {
+								["locations"] = {
+									["Torghast, Tower of the Damned:1769"] = {
+										["6:558:482"] = true,
+										["6:492:500"] = true,
+										["6:518:492"] = true,
+										["6:532:514"] = true,
+										["6:506:504"] = true,
+										["6:494:506"] = true,
+										["6:486:482"] = true,
+										["6:546:492"] = true,
+										["6:486:494"] = true,
+										["6:540:494"] = true,
+										["6:534:496"] = true,
+										["6:492:492"] = true,
+										["6:508:488"] = true,
+										["6:558:496"] = true,
+										["6:488:476"] = true,
+										["6:552:482"] = true,
+										["6:492:470"] = true,
+										["6:500:496"] = true,
+										["6:498:490"] = true,
+										["6:496:480"] = true,
+										["6:552:492"] = true,
+										["6:546:486"] = true,
+										["6:532:488"] = true,
+										["6:560:490"] = true,
+										["6:534:502"] = true,
+										["6:524:492"] = true,
+									},
+								},
+								["max_health"] = 345091,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["spells"] = {
+							[297292] = 12,
+							[327467] = 10,
+							[327471] = 6,
+							[327461] = 12,
+						},
+						["drops"] = {
+							"currency:180:1828", -- [1]
+							"money:62052", -- [2]
+							"currency:1:1822", -- [3]
 						},
 					},
 				},
@@ -13850,6 +24787,79 @@ WoWDBProfilerData = {
 					},
 				},
 			},
+			["52219"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[77508] = 207,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["78554"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[165747] = 3,
+							[165746] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["15599"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Silithus:81"] = {
+										["3:530:354"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
+			["59700"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[117516] = 2,
+							[117507] = 1,
+						},
+					},
+				},
+			},
+			["160629"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 141485,
+							},
+						},
+					},
+				},
+			},
 			["165403"] = {
 				["quotes"] = {
 					["CHAT_MSG_MONSTER_SAY"] = {
@@ -13879,87 +24889,166 @@ WoWDBProfilerData = {
 					["UNKNOWN"] = true,
 				},
 			},
-			["160567"] = {
-				["genders"] = {
-					["MALE"] = true,
-				},
+			["11792"] = {
 				["encounter_data"] = {
-					["NONE:0:false"] = {
+					["PARTY:1:false"] = {
 						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Maldraxxus:1536"] = {
-										["3:378:290"] = true,
-									},
-								},
-								["max_health"] = 11792,
-							},
 						},
-					},
-				},
-				["sells"] = {
-					[3466] = "-1:1:[1900:0:0]",
-					[5956] = "-1:1:[1:0:0]",
-					[18567] = "-1:1:[28500:0:0]",
-					[2901] = "-1:1:[116:0:0]",
-					[2880] = "-1:1:[95:0:0]",
-					[180733] = "-1:1:[85500:0:0]",
-					[3857] = "-1:1:[475:0:0]",
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:FRIENDLY",
-				["can_repair"] = true,
-			},
-			["81409"] = {
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:HOSTILE",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_40"] = {
-								["locations"] = {
-									["Nagrand:550"] = {
-										["3:570:622"] = true,
-										["3:588:604"] = true,
-									},
-									["The Underpale:553"] = {
-										["5:680:538"] = true,
-										["5:624:406"] = true,
-										["5:680:554"] = true,
-										["5:626:398"] = true,
-										["5:638:384"] = true,
-										["5:674:556"] = true,
-										["5:632:392"] = true,
-										["5:686:548"] = true,
-										["5:686:540"] = true,
-									},
-								},
-								["max_health"] = 2463,
-							},
-						},
-						["loot_counts"] = {
-							["drops"] = 5,
-						},
-						["drops"] = {
-							"107469:1", -- [1]
-							"107469:1", -- [2]
-							"107471:1", -- [3]
-							"107469:1", -- [4]
-							"107469:1", -- [5]
+						["spells"] = {
+							[22766] = 1,
 						},
 					},
 				},
 			},
-			["100820"] = {
+			["170733"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[224125] = 2,
+							[258222] = 3,
+						},
+					},
+				},
+			},
+			["152661"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["SCENARIO:167:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Torghast, Tower of the Damned:1627"] = {
+										["6:568:770"] = true,
+										["6:568:748"] = true,
+										["6:568:764"] = true,
+										["6:562:774"] = true,
+									},
+									["Torghast, Tower of the Damned:1763"] = {
+										["6:378:464"] = true,
+										["6:372:466"] = true,
+										["6:370:474"] = true,
+									},
+									["Torghast, Tower of the Damned:1804"] = {
+										["6:622:726"] = true,
+										["6:612:706"] = true,
+										["6:522:428"] = true,
+										["6:500:746"] = true,
+										["6:528:450"] = true,
+										["6:528:456"] = true,
+										["6:598:714"] = true,
+										["6:514:424"] = true,
+										["6:504:574"] = true,
+										["6:496:596"] = true,
+										["6:504:592"] = true,
+										["6:622:744"] = true,
+										["6:606:714"] = true,
+										["6:526:438"] = true,
+										["6:618:716"] = true,
+										["6:504:564"] = true,
+										["6:526:468"] = true,
+										["6:622:738"] = true,
+										["6:598:720"] = true,
+										["6:506:506"] = true,
+									},
+								},
+								["max_health"] = 5478,
+							},
+						},
+						["spells"] = {
+							[13584] = 6,
+							[1604] = 3,
+						},
+						["loot_counts"] = {
+							["drops"] = 17,
+						},
+						["drops"] = {
+							"money:1662", -- [1]
+							"currency:5:1728", -- [2]
+							"money:4221", -- [3]
+							"currency:18:1728", -- [4]
+							"money:3650", -- [5]
+							"currency:18:1728", -- [6]
+							"money:1263", -- [7]
+							"currency:22:1728", -- [8]
+							"money:2627", -- [9]
+							"currency:22:1728", -- [10]
+							"money:4625", -- [11]
+							"currency:22:1728", -- [12]
+							"money:1541", -- [13]
+							"currency:22:1728", -- [14]
+							"money:2694", -- [15]
+							"currency:2:1728", -- [16]
+							"money:4085", -- [17]
+							"currency:2:1728", -- [18]
+							"money:2958", -- [19]
+							"currency:16:1728", -- [20]
+							"money:1806", -- [21]
+							"currency:10:1728", -- [22]
+							"money:3749", -- [23]
+							"currency:16:1728", -- [24]
+							"money:2945", -- [25]
+							"currency:16:1728", -- [26]
+							"money:1780", -- [27]
+							"currency:10:1728", -- [28]
+							"money:1443", -- [29]
+							"currency:10:1728", -- [30]
+							"money:3618", -- [31]
+							"currency:10:1728", -- [32]
+							"money:1666", -- [33]
+							"currency:10:1728", -- [34]
+						},
+					},
+				},
+			},
+			["171381"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 353713,
+							},
+						},
+					},
+				},
+			},
+			["9041"] = {
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["spells"] = {
+							[12544] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["157576"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "PALADIN",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["power"] = "MANA:2369",
+								["max_health"] = 11791,
+							},
+						},
+						["spells"] = {
+							[329394] = 1,
+							[331923] = 16,
 						},
 					},
 				},
@@ -13978,12 +25067,12 @@ WoWDBProfilerData = {
 								["locations"] = {
 									["Ardenweald:1565"] = {
 										["3:356:276"] = true,
-										["3:350:284"] = true,
-										["3:378:288"] = true,
-										["3:372:280"] = true,
 										["3:376:272"] = true,
-										["3:370:288"] = true,
 										["3:352:298"] = true,
+										["3:372:280"] = true,
+										["3:350:284"] = true,
+										["3:370:288"] = true,
+										["3:378:288"] = true,
 									},
 								},
 								["power"] = "MANA:2434",
@@ -14016,92 +25105,43 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["158556"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["We're going to run out of silk soon. Please hurry, <name>."] = true,
-						["I will make sure this little silkstrider is well taken care of, for the future of Ardenweald. Perhaps you can come visit from time to time?"] = true,
-					},
+			["161390"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
 				},
-				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:NEUTRAL",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
 								["locations"] = {
-									["Ardenweald:1565"] = {
-										["3:484:504"] = true,
+									["Maldraxxus:1536"] = {
+										["3:528:664"] = true,
 									},
 								},
-								["max_health"] = 11791,
+								["max_health"] = 17687,
 							},
 						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["drops"] = {
+							"176869:1", -- [1]
+						},
 					},
-				},
-				["sells"] = {
-					[183096] = "-1:1:[12825000]",
-					[183100] = "-1:1:[12825000]",
-					[184747] = "-1:1:[2276134]",
-					[184751] = "-1:1:[4158694]",
-					[180729] = "-1:1:[285000000]",
-					[183093] = "-1:1:[16767500]",
-					[184748] = "-1:1:[2284390]",
-					[187883] = "-1:1:[16767500]",
-					[180641] = "-1:1:[0:0:0:(250:163036)]",
-					[183106] = "-1:1:[16767500]",
-					[178336] = "-1:1:[2375000]",
-					[184752] = "-1:1:[4173565]",
-					[183242] = "-1:1:[10450000:0:0]",
-					[184749] = "-1:1:[2292647]",
-					[184750] = "-1:1:[4143824]",
-					[184746] = "-1:1:[2267877]",
-					[183134] = "-1:1:[11875000]",
-					[181309] = "-1:1:[0]",
-					[184754] = "-1:1:[2310088]",
-					[184753] = "-1:1:[4188436]",
-				},
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["FEMALE"] = true,
 				},
 			},
-			["170257"] = {
-				["reaction"] = "60:Horde:FRIENDLY",
+			["83653"] = {
 				["encounter_data"] = {
-					["SCENARIO:167:false"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[86603] = 23,
+						},
 						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 62026,
-								["locations"] = {
-									["Torghast, Tower of the Damned:1787"] = {
-										["6:486:396"] = true,
-										["6:482:380"] = true,
-										["6:486:386"] = true,
-									},
-									["Torghast, Tower of the Damned:1769"] = {
-										["6:720:436"] = true,
-										["6:712:432"] = true,
-										["6:696:422"] = true,
-										["6:688:422"] = true,
-										["6:704:426"] = true,
-									},
-								},
-								["power"] = "MANA:5751",
-							},
 						},
 					},
 				},
-				["sells"] = {
-					[174283] = "-1:5:[37500:0:0]",
-					[168207] = "1:1:[0:0:0:(150:1728)]",
-					[176408] = "4:1:[0:0:0:(35:1728)]",
-					[176409] = "-1:1:[0:0:0:(35:1728)]",
-				},
-				["class"] = "MAGE",
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["can_repair"] = true,
 			},
 			["158555"] = {
 				["encounter_data"] = {
@@ -14115,37 +25155,50 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["157558"] = {
+			["10382"] = {
 				["reaction"] = "60:Horde:HOSTILE",
 				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
 				["encounter_data"] = {
-					["NONE:0:false"] = {
+					["PARTY:1:false"] = {
+						["loot_counts"] = {
+							["drops"] = 13,
+						},
 						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Bastion:1533"] = {
-										["3:588:776"] = true,
-										["3:592:766"] = true,
-										["3:582:770"] = true,
-									},
-								},
-								["max_health"] = 15327,
+							["level_29"] = {
+								["max_health"] = 7620,
 							},
 						},
-						["loot_counts"] = {
-							["drops"] = 3,
-						},
 						["spells"] = {
-							[326146] = 14,
-							[326227] = 5,
+							[16143] = 1,
 						},
 						["drops"] = {
-							"173874:2", -- [1]
-							"178136:2", -- [2]
-							"173874:1", -- [3]
+							"money:6305", -- [1]
+							"8948:2", -- [2]
+							"money:9840", -- [3]
+							"15251:1", -- [4]
+							"3964:1", -- [5]
+							"4306:9", -- [6]
+							"money:1709", -- [7]
+							"money:4731", -- [8]
+							"4338:14", -- [9]
+							"7972:2", -- [10]
+							"money:8327", -- [11]
+							"money:4398", -- [12]
+							"3187:1", -- [13]
+							"money:8510", -- [14]
+							"6530:3", -- [15]
+							"money:7884", -- [16]
+							"money:5176", -- [17]
+							"6530:1", -- [18]
+							"4306:3", -- [19]
+							"money:6655", -- [20]
+							"4338:1", -- [21]
+							"money:9170", -- [22]
+							"money:7388", -- [23]
+							"money:6180", -- [24]
 						},
 					},
 				},
@@ -14185,27 +25238,23 @@ WoWDBProfilerData = {
 					["UNKNOWN"] = true,
 				},
 			},
-			["173364"] = {
-				["genders"] = {
-					["FEMALE"] = true,
-				},
-				["class"] = "WARRIOR",
+			["15558"] = {
 				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
+								["max_health"] = 11320,
 								["locations"] = {
-									["Oribos:1672"] = {
-										["4:536:502"] = true,
-										["4:556:294"] = true,
-									},
-									["Oribos:1670"] = {
-										["4:698:414"] = true,
-										["4:706:412"] = true,
+									["Loch Modan:48"] = {
+										["3:334:466"] = true,
 									},
 								},
-								["max_health"] = 11791,
+								["power"] = "MANA:5751",
 							},
 						},
 					},
@@ -14222,123 +25271,116 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["169955"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-						},
-						["spells"] = {
-							[328318] = 106,
-							[322470] = 106,
-						},
-					},
-				},
-			},
-			["172627"] = {
+			["2843"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
 				["genders"] = {
-					["MALE"] = true,
+					["FEMALE"] = true,
+				},
+				["faction"] = "Booty Bay",
+				["sells"] = {
+					[12162] = "0:1:[3000:0:0]",
+					[2526] = "-1:1:[11401:0:0]",
+					[2520] = "-1:1:[13381:0:0]",
+					[2528] = "-1:1:[17756:0:0]",
+					[2529] = "-1:1:[22276:0:0]",
+					[2521] = "-1:1:[16787:0:0]",
+					[12248] = "0:1:[18885:0:0]",
+					[2534] = "-1:1:[18151:0:0]",
 				},
 				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:NEUTRAL",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_60"] = {
+							["level_30"] = {
 								["locations"] = {
-									["Maldraxxus:1536"] = {
-										["3:654:284"] = true,
+									["The Cape of Stranglethorn:210"] = {
+										["3:416:740"] = true,
 									},
 								},
-								["max_health"] = 8843,
+								["max_health"] = 1604,
 							},
-						},
-						["loot_counts"] = {
-							["drops"] = 1,
-						},
-						["spells"] = {
-							[322743] = 1,
-						},
-						["drops"] = {
-							"176869:1", -- [1]
-							"173202:1", -- [2]
 						},
 					},
 				},
+				["can_repair"] = true,
 			},
-			["172601"] = {
-				["reaction"] = "60:Horde:NEUTRAL",
-				["class"] = "MAGE",
+			["157054"] = {
 				["genders"] = {
 					["MALE"] = true,
 					["FEMALE"] = true,
 				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
-								["max_health"] = 18866,
 								["locations"] = {
-									["Maldraxxus:1536"] = {
-										["3:658:262"] = true,
-										["3:656:286"] = true,
+									["Bastion:1533"] = {
+										["3:254:254"] = true,
+										["3:274:266"] = true,
+										["3:290:240"] = true,
+										["3:278:208"] = true,
 									},
 								},
-								["power"] = "MANA:5751",
+								["max_health"] = 28298,
 							},
 						},
 						["loot_counts"] = {
-							["drops"] = 2,
+							["drops"] = 5,
 						},
 						["spells"] = {
-							[332650] = 12,
-							[321216] = 6,
+							[322892] = 6,
+							[322143] = 1,
+							[315454] = 9,
+							[322470] = 6,
+							[322370] = 12,
 						},
 						["drops"] = {
-							"money:7512", -- [1]
-							"money:21308", -- [2]
+							"money:15929", -- [1]
+							"money:5252", -- [2]
+							"money:12038", -- [3]
+							"money:10424", -- [4]
+							"money:10692", -- [5]
 						},
 					},
 				},
 			},
-			["173507"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["Your existence ends here."] = true,
-						["I will be reanimated."] = true,
-					},
+			["7363"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
 				},
-				["reaction"] = "60:Horde:NEUTRAL",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 56598,
+							["level_30"] = {
 								["locations"] = {
-									["Maldraxxus:1536"] = {
-										["3:658:284"] = true,
+									["Blasted Lands:17"] = {
+										["3:488:318"] = true,
 									},
 								},
-								["power"] = "MANA:5751",
+								["max_health"] = 2165,
 							},
-						},
-						["loot_counts"] = {
-							["drops"] = 1,
-						},
-						["spells"] = {
-							[330958] = 6,
-							[330782] = 2,
-							[330574] = 6,
-							[330926] = 3,
-							[330569] = 6,
-						},
-						["drops"] = {
-							"money:16009", -- [1]
 						},
 					},
 				},
-				["class"] = "MAGE",
+			},
+			["87089"] = {
+				["reaction"] = "60:Horde:NEUTRAL",
+				["class"] = "WARRIOR",
 				["genders"] = {
-					["MALE"] = true,
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_40"] = {
+								["max_health"] = 9852,
+							},
+						},
+					},
 				},
 			},
 			["160632"] = {
@@ -14403,47 +25445,16 @@ WoWDBProfilerData = {
 				["class"] = "WARRIOR",
 				["reaction"] = "60:Horde:FRIENDLY",
 			},
-			["166160"] = {
-				["genders"] = {
-					["MALE"] = true,
-				},
+			["100820"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Revendreth:1699"] = {
-										["4:598:438"] = true,
-										["4:598:456"] = true,
-										["4:598:412"] = true,
-										["4:582:410"] = true,
-										["4:588:454"] = true,
-										["4:592:408"] = true,
-										["4:588:420"] = true,
-										["4:596:448"] = true,
-										["4:592:466"] = true,
-										["4:598:432"] = true,
-										["4:600:420"] = true,
-										["4:594:424"] = true,
-									},
-								},
-								["max_health"] = 294775,
-							},
+						},
+						["spells"] = {
+							[224125] = 2,
 						},
 					},
 				},
-				["sells"] = {
-					[3466] = "-1:1:[2000:0:0]",
-					[5956] = "-1:1:[1:0:0]",
-					[18567] = "-1:1:[30000:0:0]",
-					[2901] = "-1:1:[122:0:0]",
-					[2880] = "-1:1:[100:0:0]",
-					[180733] = "-1:1:[90000:0:0]",
-					[3857] = "-1:1:[500:0:0]",
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:FRIENDLY",
-				["can_repair"] = true,
 			},
 			["161531"] = {
 				["quotes"] = {
@@ -14483,308 +25494,6 @@ WoWDBProfilerData = {
 				["class"] = "WARRIOR",
 				["genders"] = {
 					["FEMALE"] = true,
-				},
-			},
-			["152708"] = {
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:HOSTILE",
-				["encounter_data"] = {
-					["SCENARIO:167:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Torghast, Tower of the Damned:1627"] = {
-										["6:456:510"] = true,
-										["6:458:516"] = true,
-										["6:436:528"] = true,
-									},
-									["Torghast, Tower of the Damned:1792"] = {
-										["6:446:412"] = true,
-										["6:562:586"] = true,
-										["6:568:568"] = true,
-										["6:568:582"] = true,
-										["6:568:574"] = true,
-										["6:440:408"] = true,
-										["6:568:552"] = true,
-										["6:450:406"] = true,
-										["6:562:578"] = true,
-										["6:568:560"] = true,
-										["6:440:414"] = true,
-										["6:434:406"] = true,
-										["6:566:592"] = true,
-										["6:568:598"] = true,
-										["6:562:570"] = true,
-										["6:554:568"] = true,
-									},
-									["Torghast, Tower of the Damned:1807"] = {
-										["6:570:448"] = true,
-										["6:576:450"] = true,
-										["6:562:450"] = true,
-									},
-									["Torghast, Tower of the Damned:1783"] = {
-										["6:518:320"] = true,
-										["6:586:618"] = true,
-										["6:580:620"] = true,
-										["6:592:620"] = true,
-									},
-									["Torghast, Tower of the Damned:1804"] = {
-										["6:608:496"] = true,
-										["6:622:512"] = true,
-										["6:510:396"] = true,
-										["6:502:740"] = true,
-										["6:636:500"] = true,
-										["6:600:496"] = true,
-										["6:506:506"] = true,
-										["6:488:730"] = true,
-										["6:614:504"] = true,
-										["6:504:396"] = true,
-										["6:496:726"] = true,
-										["6:480:728"] = true,
-										["6:628:506"] = true,
-										["6:500:518"] = true,
-										["6:502:512"] = true,
-										["6:500:524"] = true,
-									},
-									["Torghast, Tower of the Damned:1763"] = {
-										["6:558:536"] = true,
-										["6:564:538"] = true,
-										["6:702:494"] = true,
-										["6:692:492"] = true,
-										["6:568:516"] = true,
-										["6:556:526"] = true,
-										["6:562:526"] = true,
-										["6:564:544"] = true,
-										["6:698:500"] = true,
-										["6:702:488"] = true,
-									},
-								},
-								["max_health"] = 8216,
-							},
-						},
-						["spells"] = {
-							[1604] = 2,
-							[296523] = 16,
-						},
-						["loot_counts"] = {
-							["drops"] = 17,
-						},
-						["drops"] = {
-							"money:19272", -- [1]
-							"currency:5:1728", -- [2]
-							"money:10686", -- [3]
-							"currency:5:1728", -- [4]
-							"money:16570", -- [5]
-							"currency:18:1728", -- [6]
-							"money:12068", -- [7]
-							"currency:22:1728", -- [8]
-							"money:17976", -- [9]
-							"currency:5:1728", -- [10]
-							"money:6009", -- [11]
-							"currency:8:1728", -- [12]
-							"money:15915", -- [13]
-							"currency:10:1728", -- [14]
-							"money:20940", -- [15]
-							"currency:5:1728", -- [16]
-							"money:12241", -- [17]
-							"currency:4:1728", -- [18]
-							"money:9287", -- [19]
-							"currency:19:1728", -- [20]
-							"money:10132", -- [21]
-							"currency:15:1728", -- [22]
-							"money:18342", -- [23]
-							"currency:15:1728", -- [24]
-							"money:6959", -- [25]
-							"currency:2:1728", -- [26]
-							"money:6416", -- [27]
-							"currency:4:1728", -- [28]
-							"money:14402", -- [29]
-							"currency:7:1728", -- [30]
-							"money:16418", -- [31]
-							"currency:4:1728", -- [32]
-							"money:20666", -- [33]
-							"currency:4:1728", -- [34]
-						},
-					},
-				},
-			},
-			["171381"] = {
-				["reaction"] = "60:Horde:HOSTILE",
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 353713,
-							},
-						},
-					},
-				},
-			},
-			["161376"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["I will end you!"] = true,
-						["I... am broken..."] = true,
-					},
-				},
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Maldraxxus:1536"] = {
-										["3:500:644"] = true,
-										["3:504:662"] = true,
-										["3:504:654"] = true,
-										["3:512:668"] = true,
-										["3:524:662"] = true,
-									},
-								},
-								["max_health"] = 12970,
-							},
-						},
-						["loot_counts"] = {
-							["drops"] = 9,
-						},
-						["spells"] = {
-							[319843] = 23,
-							[1604] = 2,
-						},
-						["drops"] = {
-							"176853:1", -- [1]
-							"176853:1", -- [2]
-							"176853:1", -- [3]
-							"176874:1", -- [4]
-							"173202:1", -- [5]
-							"176853:2", -- [6]
-							"176853:2", -- [7]
-							"176853:2", -- [8]
-							"176874:2", -- [9]
-							"174233:1", -- [10]
-							"173202:1", -- [11]
-							"176853:1", -- [12]
-						},
-					},
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:NEUTRAL",
-			},
-			["169190"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-						},
-						["spells"] = {
-							[322930] = 4,
-							[322931] = 5,
-							[1604] = 1,
-						},
-					},
-				},
-			},
-			["77614"] = {
-				["reaction"] = "60:Horde:HOSTILE",
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_40"] = {
-								["max_health"] = 17241,
-							},
-						},
-					},
-				},
-			},
-			["167395"] = {
-				["reaction"] = "60:Horde:HOSTILE",
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["FEMALE"] = true,
-				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 11792,
-							},
-						},
-					},
-				},
-			},
-			["158506"] = {
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:NEUTRAL",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Ardenweald:1565"] = {
-										["3:384:276"] = true,
-										["3:372:280"] = true,
-										["3:372:290"] = true,
-										["3:348:286"] = true,
-										["3:362:292"] = true,
-									},
-								},
-								["max_health"] = 590,
-							},
-						},
-					},
-				},
-			},
-			["165907"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-						},
-						["spells"] = {
-							[322745] = 4,
-							[322765] = 2,
-						},
-					},
-				},
-			},
-			["161390"] = {
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:NEUTRAL",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Maldraxxus:1536"] = {
-										["3:528:664"] = true,
-									},
-								},
-								["max_health"] = 17687,
-							},
-						},
-						["loot_counts"] = {
-							["drops"] = 1,
-						},
-						["drops"] = {
-							"176869:1", -- [1]
-						},
-					},
 				},
 			},
 			["153878"] = {
@@ -14854,11 +25563,279 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["85624"] = {
+			["150959"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["SCENARIO:167:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Torghast, Tower of the Damned:1763"] = {
+										["6:486:716"] = true,
+									},
+									["Torghast, Tower of the Damned:1627"] = {
+										["6:576:510"] = true,
+										["6:480:518"] = true,
+										["6:468:504"] = true,
+										["6:470:498"] = true,
+										["6:484:524"] = true,
+										["6:464:494"] = true,
+									},
+								},
+								["max_health"] = 16022,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 4,
+						},
+						["spells"] = {
+							[294171] = 6,
+							[320478] = 6,
+							[329706] = 29,
+							[320480] = 5,
+							[315802] = 2,
+						},
+						["drops"] = {
+							"money:21564", -- [1]
+							"currency:20:1728", -- [2]
+							"money:21590", -- [3]
+							"currency:19:1728", -- [4]
+							"money:17200", -- [5]
+							"currency:3:1728", -- [6]
+							"money:10935", -- [7]
+							"currency:4:1728", -- [8]
+						},
+					},
+				},
+			},
+			["10391"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["loot_counts"] = {
+							["drops"] = 23,
+						},
+						["stats"] = {
+							["level_29"] = {
+								["max_health"] = 1524,
+							},
+						},
+						["spells"] = {
+							[11976] = 18,
+							[13730] = 5,
+							[15496] = 6,
+							[9080] = 11,
+						},
+						["drops"] = {
+							"money:1096", -- [1]
+							"22526:9", -- [2]
+							"money:823", -- [3]
+							"22526:9", -- [4]
+							"money:1139", -- [5]
+							"4338:14", -- [6]
+							"money:1340", -- [7]
+							"8948:2", -- [8]
+							"money:2166", -- [9]
+							"4306:9", -- [10]
+							"money:1189", -- [11]
+							"4306:9", -- [12]
+							"money:2862", -- [13]
+							"money:1327", -- [14]
+							"money:984", -- [15]
+							"money:1932", -- [16]
+							"money:1677", -- [17]
+							"22526:9", -- [18]
+							"money:1840", -- [19]
+							"4338:14", -- [20]
+							"22526:9", -- [21]
+							"money:903", -- [22]
+							"22526:9", -- [23]
+							"money:1645", -- [24]
+							"22526:9", -- [25]
+							"money:1266", -- [26]
+							"4338:14", -- [27]
+							"22526:9", -- [28]
+							"money:1378", -- [29]
+							"22526:1", -- [30]
+							"money:1328", -- [31]
+							"money:3003", -- [32]
+							"money:1425", -- [33]
+							"22526:2", -- [34]
+							"money:1254", -- [35]
+							"money:1746", -- [36]
+							"money:2406", -- [37]
+							"4019:1", -- [38]
+							"money:2184", -- [39]
+							"4338:20", -- [40]
+						},
+					},
+				},
+			},
+			["15574"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Winterspring:83"] = {
+										["3:600:500"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
+			["79315"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["spells"] = {
-							[170758] = 4,
+							[166969] = 7,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["171173"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["SCENARIO:167:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Torghast, Tower of the Damned:1627"] = {
+										["6:590:658"] = true,
+										["6:584:660"] = true,
+									},
+								},
+								["max_health"] = 13115,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["spells"] = {
+							[212061] = 2,
+							[329913] = 1,
+							[329916] = 2,
+						},
+						["drops"] = {
+							"money:12906", -- [1]
+							"currency:7:1728", -- [2]
+						},
+					},
+				},
+			},
+			["9029"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "PALADIN",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_32"] = {
+								["power"] = "MANA:10552",
+								["max_health"] = 35060,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["drops"] = {
+							"11685:1", -- [1]
+							"18945:6", -- [2]
+							"money:80574", -- [3]
+							"11730:1", -- [4]
+							"14047:4", -- [5]
+						},
+					},
+				},
+			},
+			[83746] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["drops"] = {
+							"money:293527", -- [1]
+						},
+					},
+				},
+			},
+			["169190"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[322930] = 4,
+							[322931] = 5,
+							[1604] = 1,
+						},
+					},
+				},
+			},
+			["5280"] = {
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["class"] = "PALADIN",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["loot_counts"] = {
+							["drops"] = 2,
+						},
+						["stats"] = {
+							["level_30"] = {
+								["power"] = "MANA:6123",
+								["max_health"] = 8020,
+							},
+							["level_31"] = {
+								["power"] = "MANA:6310",
+								["max_health"] = 8390,
+							},
+						},
+						["spells"] = {
+							[15653] = 10,
+						},
+						["drops"] = {
+							"money:7908", -- [1]
+							"money:10284", -- [2]
+						},
+					},
+				},
+			},
+			["67989"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[79849] = 2,
 						},
 						["stats"] = {
 						},
@@ -14877,171 +25854,235 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["75745"] = {
+			["34366"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-						},
 						["spells"] = {
-							[166740] = 2,
+							[17963] = 22,
+						},
+						["stats"] = {
 						},
 					},
 				},
 			},
-			["81377"] = {
-				["reaction"] = "60:Horde:NEUTRAL",
-				["class"] = "MAGE",
+			["83049"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[166740] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["32969"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[137427] = 17,
+							[6660] = 19,
+							[31290] = 5,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["95471"] = {
+				["is_pvp"] = true,
 				["genders"] = {
-					["UNKNOWN"] = true,
+					["MALE"] = true,
 				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_40"] = {
-								["max_health"] = 1971,
-								["locations"] = {
-									["Nagrand:550"] = {
-										["3:584:626"] = true,
-										["3:570:618"] = true,
-										["3:588:600"] = true,
-									},
-								},
-								["power"] = "MANA:3191",
+								["power"] = "MANA:1283",
+								["max_health"] = 2463,
 							},
 						},
-						["spells"] = {
-							[164166] = 26,
-							[1604] = 1,
-						},
 					},
 				},
+				["sells"] = {
+					[116655] = "-1:1:[200000000:0:0]",
+					[128307] = "-1:1:[5000000:0:0]",
+					[128308] = "-1:1:[5000000:0:0]",
+					[127864] = "-1:1:[1000000:0:0]",
+					[127868] = "-1:1:[10000000:0:0]",
+					[116667] = "-1:1:[100000000:0:0]",
+				},
+				["class"] = "PALADIN",
+				["reaction"] = "60:Horde:FRIENDLY",
 			},
-			["180016"] = {
+			["42386"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-						},
 						["spells"] = {
-							[356134] = 2,
+							[58511] = 1,
+							[58514] = 1,
+						},
+						["stats"] = {
 						},
 					},
 				},
 			},
-			["162588"] = {
-				["reaction"] = "60:Horde:NEUTRAL",
-				["class"] = "WARRIOR",
+			["15557"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
 				["genders"] = {
-					["UNKNOWN"] = true,
+					["MALE"] = true,
 				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
-								["max_health"] = 82533,
+								["max_health"] = 11320,
+								["locations"] = {
+									["Burning Steppes:36"] = {
+										["3:700:454"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
 							},
 						},
 					},
 				},
 			},
-			["158566"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-						},
-						["spells"] = {
-							[346307] = 4,
-						},
-					},
-				},
-			},
-			["151353"] = {
+			["175990"] = {
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
 				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:NEUTRAL",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Maldraxxus:1536"] = {
+										["3:520:210"] = true,
+										["3:486:192"] = true,
+										["3:512:204"] = true,
+										["3:510:194"] = true,
+										["3:498:204"] = true,
+										["3:504:188"] = true,
+									},
+								},
+								["max_health"] = 58955,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 5,
+						},
+						["drops"] = {
+							"184576:3", -- [1]
+							"184576:3", -- [2]
+							"184576:3", -- [3]
+							"184576:3", -- [4]
+							"184576:3", -- [5]
+						},
+					},
+				},
+			},
+			["5842"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Northern Barrens:10"] = {
+										["3:654:286"] = true,
+									},
+								},
+								["max_health"] = 2406,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["drops"] = {
+							"3685:1", -- [1]
+						},
+					},
+				},
+			},
+			["51046"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_30"] = {
+								["locations"] = {
+									["Felwood:77"] = {
+										["3:384:528"] = true,
+									},
+								},
+								["max_health"] = 2406,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["drops"] = {
+							"10079:1", -- [1]
+							"12208:1", -- [2]
+							"60576:1", -- [3]
+						},
+					},
+				},
+			},
+			["11142"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["No tampering with the mail!"] = true,
+					},
+				},
 				["reaction"] = "60:Horde:HOSTILE",
 				["encounter_data"] = {
-					["SCENARIO:167:false"] = {
+					["PARTY:1:false"] = {
 						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Torghast, Tower of the Damned:1627"] = {
-										["6:568:650"] = true,
-										["6:454:524"] = true,
-										["6:454:514"] = true,
-										["6:488:528"] = true,
-										["6:574:608"] = true,
-										["6:576:614"] = true,
-										["6:570:620"] = true,
-										["6:562:622"] = true,
-										["6:570:658"] = true,
-									},
-									["Torghast, Tower of the Damned:1792"] = {
-										["6:604:416"] = true,
-										["6:584:416"] = true,
-										["6:600:410"] = true,
-										["6:460:406"] = true,
-										["6:550:688"] = true,
-									},
-									["Torghast, Tower of the Damned:1807"] = {
-										["6:662:248"] = true,
-										["6:662:254"] = true,
-										["6:668:220"] = true,
-										["6:668:230"] = true,
-										["6:620:316"] = true,
-										["6:512:748"] = true,
-									},
-									["Torghast, Tower of the Damned:1804"] = {
-										["6:412:716"] = true,
-										["6:436:716"] = true,
-										["6:396:710"] = true,
-										["6:404:714"] = true,
-										["6:420:716"] = true,
-										["6:428:716"] = true,
-									},
-									["Torghast, Tower of the Damned:1763"] = {
-										["6:622:488"] = true,
-										["6:620:482"] = true,
-										["6:616:490"] = true,
-										["6:364:486"] = true,
-										["6:560:688"] = true,
-										["6:570:686"] = true,
-										["6:370:264"] = true,
-										["6:526:780"] = true,
-										["6:330:714"] = true,
-										["6:356:430"] = true,
-										["6:534:764"] = true,
-										["6:322:460"] = true,
-										["6:332:456"] = true,
-									},
-								},
-								["max_health"] = 2282,
+							["level_31"] = {
+								["max_health"] = 8390,
 							},
 						},
 					},
 				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
 			},
-			["164738"] = {
+			["172533"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["Fresh meats! Imported produce! Only the cleanest dredger waiters!"] = true,
+						["I will be our harshest critic and strongest advocate!"] = true,
+						["Of course only the finest ingredients will be used..."] = true,
+					},
+				},
 				["reaction"] = "60:Horde:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
-								["max_health"] = 94330,
+								["max_health"] = 9433,
 								["locations"] = {
 									["Revendreth:1699"] = {
-										["4:462:266"] = true,
-										["4:456:258"] = true,
-										["4:456:272"] = true,
-										["4:472:282"] = true,
-										["4:472:288"] = true,
-										["4:460:286"] = true,
-										["4:454:278"] = true,
-										["4:452:248"] = true,
-										["4:450:262"] = true,
-										["4:446:256"] = true,
-										["4:468:256"] = true,
-										["4:450:268"] = true,
+										["4:392:302"] = true,
+										["4:392:288"] = true,
+										["4:384:298"] = true,
+										["4:392:282"] = true,
+										["4:384:308"] = true,
 									},
 								},
 								["power"] = "MANA:5751",
@@ -15052,73 +26093,6 @@ WoWDBProfilerData = {
 				["class"] = "MAGE",
 				["genders"] = {
 					["MALE"] = true,
-				},
-			},
-			["157493"] = {
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["class"] = "PALADIN",
-				["reaction"] = "60:Horde:HOSTILE",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[328969] = 1,
-						},
-						["stats"] = {
-							["level_60"] = {
-								["power"] = "MANA:2434",
-								["max_health"] = 11791,
-							},
-						},
-					},
-				},
-			},
-			["162732"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-						},
-						["spells"] = {
-							[340559] = 2,
-						},
-					},
-				},
-			},
-			["171746"] = {
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:FRIENDLY",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Maldraxxus:1536"] = {
-										["3:630:496"] = true,
-										["3:640:550"] = true,
-										["3:634:490"] = true,
-										["3:628:572"] = true,
-										["3:634:560"] = true,
-									},
-								},
-								["max_health"] = 3538,
-							},
-						},
-					},
-				},
-			},
-			["157277"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-						},
-						["spells"] = {
-							[318181] = 2,
-						},
-					},
 				},
 			},
 			["165267"] = {
@@ -15133,52 +26107,24 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["165473"] = {
+			["52195"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-						},
 						["spells"] = {
-							[323640] = 28,
-							[323641] = 23,
+							[96514] = 2,
+						},
+						["stats"] = {
 						},
 					},
 				},
 			},
-			["168319"] = {
-				["reaction"] = "60:Horde:HOSTILE",
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
+			["5253"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Revendreth:1525"] = {
-										["3:416:784"] = true,
-										["3:418:748"] = true,
-										["3:406:808"] = true,
-									},
-								},
-								["max_health"] = 11791,
-							},
-						},
-						["loot_counts"] = {
-							["drops"] = 4,
-						},
 						["spells"] = {
-							[42648] = 8,
-							[330616] = 20,
+							[77558] = 2,
 						},
-						["drops"] = {
-							"176862:1", -- [1]
-							"172052:1", -- [2]
-							"176852:1", -- [3]
-							"176862:2", -- [4]
-							"176862:2", -- [5]
-							"172052:1", -- [6]
+						["stats"] = {
 						},
 					},
 				},
@@ -15205,52 +26151,24 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["172193"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["The Drust will rule all realms!"] = true,
-					},
-				},
+			["11822"] = {
+				["is_pvp"] = true,
 				["genders"] = {
-					["UNKNOWN"] = true,
+					["MALE"] = true,
 				},
+				["faction"] = "Cenarion Circle",
+				["class"] = "PALADIN",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 11791,
-								["locations"] = {
-									["Ardenweald:1565"] = {
-										["3:674:260"] = true,
-										["3:682:252"] = true,
-										["3:680:258"] = true,
-									},
-								},
-								["power"] = "MANA:2434",
+							["level_30"] = {
+								["power"] = "MANA:852",
+								["max_health"] = 2085,
 							},
-						},
-						["loot_counts"] = {
-							["drops"] = 5,
-						},
-						["spells"] = {
-							[340642] = 60,
-							[1604] = 2,
-						},
-						["drops"] = {
-							"money:11573", -- [1]
-							"173204:1", -- [2]
-							"money:19972", -- [3]
-							"money:4949", -- [4]
-							"173202:2", -- [5]
-							"money:20148", -- [6]
-							"money:9409", -- [7]
-							"173204:1", -- [8]
-							"176291:1", -- [9]
 						},
 					},
 				},
-				["class"] = "PALADIN",
-				["reaction"] = "60:Horde:HOSTILE",
+				["reaction"] = "60:Horde:FRIENDLY",
 			},
 			["170208"] = {
 				["genders"] = {
@@ -15288,47 +26206,31 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["157054"] = {
+			["88703"] = {
+				["is_pvp"] = true,
 				["genders"] = {
 					["MALE"] = true,
-					["FEMALE"] = true,
 				},
+				["faction"] = "Orgrimmar",
 				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["spells"] = {
+							[71507] = 4,
+						},
 						["stats"] = {
 							["level_60"] = {
 								["locations"] = {
-									["Bastion:1533"] = {
-										["3:254:254"] = true,
-										["3:274:266"] = true,
-										["3:290:240"] = true,
-										["3:278:208"] = true,
+									["Orgrimmar:85"] = {
+										["3:528:756"] = true,
 									},
 								},
-								["max_health"] = 28298,
+								["max_health"] = 17687,
 							},
-						},
-						["loot_counts"] = {
-							["drops"] = 5,
-						},
-						["spells"] = {
-							[322892] = 6,
-							[322143] = 1,
-							[322370] = 12,
-							[322470] = 6,
-							[315454] = 9,
-						},
-						["drops"] = {
-							"money:15929", -- [1]
-							"money:5252", -- [2]
-							"money:12038", -- [3]
-							"money:10424", -- [4]
-							"money:10692", -- [5]
 						},
 					},
 				},
+				["reaction"] = "60:Horde:FRIENDLY",
 			},
 			["155824"] = {
 				["genders"] = {
@@ -15400,97 +26302,84 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["88703"] = {
-				["is_pvp"] = true,
-				["genders"] = {
-					["MALE"] = true,
+			["169605"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[330436] = 1,
+						},
+					},
 				},
-				["faction"] = "Orgrimmar",
-				["class"] = "WARRIOR",
+			},
+			["170481"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "ROGUE",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11791,
+								["locations"] = {
+									["Ardenweald:1565"] = {
+										["3:378:552"] = true,
+										["3:390:554"] = true,
+										["3:402:568"] = true,
+										["3:378:566"] = true,
+										["3:386:560"] = true,
+										["3:404:562"] = true,
+										["3:396:550"] = true,
+										["3:380:558"] = true,
+										["3:398:560"] = true,
+									},
+								},
+								["power"] = "ENERGY:100",
+							},
+						},
+						["spells"] = {
+							[340975] = 83,
+						},
+					},
+				},
+			},
+			["3322"] = {
+				["is_pvp"] = true,
+				["reaction"] = "60:Horde:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
 								["locations"] = {
 									["Orgrimmar:85"] = {
-										["3:528:756"] = true,
+										["3:408:496"] = true,
 									},
 								},
-								["max_health"] = 17687,
+								["max_health"] = 12381,
 							},
 						},
 					},
 				},
-				["reaction"] = "60:Horde:FRIENDLY",
-			},
-			["135816"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-						},
-						["spells"] = {
-							[267997] = 1,
-						},
-					},
+				["sells"] = {
+					[3024] = "-1:1:[7740:0:0]",
+					[3025] = "-1:1:[13387:0:0]",
+					[11303] = "1:1:[6110:0:0]",
+					[3026] = "-1:1:[5622:0:0]",
+					[11307] = "0:1:[32042:0:0]",
+					[3027] = "-1:1:[7822:0:0]",
+					[2511] = "-1:1:[2134:0:0]",
+					[11306] = "0:1:[16609:0:0]",
+					[3023] = "-1:1:[5562:0:0]",
+					[2509] = "-1:1:[553:0:0]",
 				},
-			},
-			["157807"] = {
+				["class"] = "WARRIOR",
 				["genders"] = {
-					["UNKNOWN"] = true,
+					["FEMALE"] = true,
 				},
-				["class"] = "MAGE",
-				["reaction"] = "60:Horde:HOSTILE",
-				["encounter_data"] = {
-					["SCENARIO:167:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 8956,
-								["locations"] = {
-									["Torghast, Tower of the Damned:1807"] = {
-										["6:612:340"] = true,
-										["6:606:340"] = true,
-										["6:604:356"] = true,
-										["6:604:324"] = true,
-										["6:608:346"] = true,
-										["6:604:332"] = true,
-									},
-									["Torghast, Tower of the Damned:1783"] = {
-										["6:614:404"] = true,
-										["6:608:414"] = true,
-										["6:396:518"] = true,
-										["6:608:422"] = true,
-										["6:624:400"] = true,
-									},
-									["Torghast, Tower of the Damned:1792"] = {
-										["6:592:484"] = true,
-										["6:598:478"] = true,
-									},
-								},
-								["power"] = "MANA:5751",
-							},
-						},
-						["loot_counts"] = {
-							["drops"] = 5,
-						},
-						["spells"] = {
-							[347404] = 2,
-							[335685] = 2,
-							[335680] = 26,
-						},
-						["drops"] = {
-							"money:19955", -- [1]
-							"currency:9:1728", -- [2]
-							"money:11965", -- [3]
-							"currency:5:1728", -- [4]
-							"money:17028", -- [5]
-							"currency:4:1728", -- [6]
-							"money:6239", -- [7]
-							"currency:4:1728", -- [8]
-							"money:14856", -- [9]
-							"currency:12:1728", -- [10]
-						},
-					},
-				},
+				["can_repair"] = true,
 			},
 			["173505"] = {
 				["genders"] = {
@@ -15570,95 +26459,80 @@ WoWDBProfilerData = {
 					["MALE"] = true,
 				},
 			},
-			["166318"] = {
+			["167070"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[338011] = 37,
+							[325426] = 3,
 						},
 					},
 				},
 			},
-			["157576"] = {
-				["reaction"] = "60:Horde:HOSTILE",
-				["class"] = "PALADIN",
-				["genders"] = {
-					["FEMALE"] = true,
-				},
+			["2962"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_60"] = {
-								["power"] = "MANA:2369",
-								["max_health"] = 11791,
-							},
 						},
 						["spells"] = {
-							[329394] = 1,
-							[331923] = 16,
+							[19514] = 22,
 						},
 					},
 				},
 			},
-			["172171"] = {
+			["172871"] = {
 				["genders"] = {
-					["FEMALE"] = true,
+					["UNKNOWN"] = true,
 				},
-				["class"] = "PALADIN",
+				["class"] = "WARRIOR",
 				["reaction"] = "60:Horde:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
-								["max_health"] = 11791,
 								["locations"] = {
-									["Ardenweald:1565"] = {
-										["3:698:244"] = true,
+									["Maldraxxus:1536"] = {
+										["3:590:340"] = true,
 									},
 								},
-								["power"] = "MANA:2434",
+								["max_health"] = 35373,
 							},
 						},
 					},
 				},
 			},
-			["172207"] = {
-				["reaction"] = "60:Horde:HOSTILE",
-				["class"] = "PALADIN",
-				["genders"] = {
-					["UNKNOWN"] = true,
+			["172536"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["It would be an honor to assist you and Prince Renathal."] = true,
+						["And, of course, I will make certain that all of you are included on the guest list as well."] = true,
+						["My extensive network of contacts and humble diplomatic skills are at your service."] = true,
+					},
 				},
+				["reaction"] = "60:Horde:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_62"] = {
-								["max_health"] = 95874,
+							["level_60"] = {
+								["max_health"] = 9433,
 								["locations"] = {
-									["The Maw:1543"] = {
-										["3:386:288"] = true,
+									["Revendreth:1700"] = {
+										["4:740:520"] = true,
+										["4:746:520"] = true,
+										["4:728:518"] = true,
+										["4:736:512"] = true,
+										["4:726:510"] = true,
 									},
 								},
-								["power"] = "MANA:2568",
+								["power"] = "MANA:5751",
 							},
 						},
-						["loot_counts"] = {
-							["drops"] = 1,
-						},
-						["spells"] = {
-							[345616] = 1,
-							[335685] = 4,
-							[335680] = 19,
-							[335710] = 4,
-							[304093] = 12,
-						},
-						["drops"] = {
-							"178561:1", -- [1]
-							"currency:46:1767", -- [2]
-							"178133:2", -- [3]
-						},
 					},
+				},
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
 				},
 			},
 			["3338"] = {
@@ -15700,71 +26574,35 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["3322"] = {
-				["is_pvp"] = true,
+			["50029"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[79849] = 2,
+						},
+					},
+				},
+			},
+			["172248"] = {
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["class"] = "PALADIN",
 				["reaction"] = "60:Horde:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
+								["max_health"] = 29478,
 								["locations"] = {
-									["Orgrimmar:85"] = {
-										["3:408:496"] = true,
+									["Ardenweald:1565"] = {
+										["3:698:244"] = true,
 									},
 								},
-								["max_health"] = 12381,
+								["power"] = "MANA:2434",
 							},
-						},
-					},
-				},
-				["sells"] = {
-					[3024] = "-1:1:[7740:0:0]",
-					[3025] = "-1:1:[13387:0:0]",
-					[11303] = "1:1:[6110:0:0]",
-					[3026] = "-1:1:[5622:0:0]",
-					[11307] = "0:1:[32042:0:0]",
-					[3027] = "-1:1:[7822:0:0]",
-					[2511] = "-1:1:[2134:0:0]",
-					[11306] = "0:1:[16609:0:0]",
-					[3023] = "-1:1:[5562:0:0]",
-					[2509] = "-1:1:[553:0:0]",
-				},
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["FEMALE"] = true,
-				},
-				["can_repair"] = true,
-			},
-			["165047"] = {
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:HOSTILE",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_61"] = {
-								["locations"] = {
-									["The Maw:1543"] = {
-										["3:348:390"] = true,
-										["3:346:396"] = true,
-									},
-								},
-								["max_health"] = 79895,
-							},
-						},
-						["loot_counts"] = {
-							["drops"] = 1,
-						},
-						["spells"] = {
-							[329319] = 2,
-							[294165] = 9,
-							[338157] = 10,
-						},
-						["drops"] = {
-							"money:9217", -- [1]
-							"currency:48:1767", -- [2]
 						},
 					},
 				},
@@ -15780,11 +26618,18 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["61836"] = {
+			["59368"] = {
 				["encounter_data"] = {
-					["NONE:0:false"] = {
+					["PARTY:1:false"] = {
 						["spells"] = {
-							[79849] = 2,
+							[114141] = 30,
+						},
+						["stats"] = {
+						},
+					},
+					["PARTY:0:false"] = {
+						["spells"] = {
+							[114141] = 6,
 						},
 						["stats"] = {
 						},
@@ -15922,136 +26767,58 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["165533"] = {
-				["reaction"] = "60:Horde:NEUTRAL",
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["encounter_data"] = {
-					["SCENARIO:167:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Torghast, Tower of the Damned:1807"] = {
-										["6:510:662"] = true,
-										["6:516:658"] = true,
-										["6:544:458"] = true,
-										["6:484:726"] = true,
-										["6:640:238"] = true,
-										["6:490:736"] = true,
-									},
-									["Torghast, Tower of the Damned:1783"] = {
-										["6:356:642"] = true,
-										["6:356:652"] = true,
-										["6:354:632"] = true,
-										["6:354:624"] = true,
-										["6:354:616"] = true,
-										["6:508:284"] = true,
-										["6:486:278"] = true,
-										["6:266:386"] = true,
-									},
-									["Torghast, Tower of the Damned:1792"] = {
-										["6:494:598"] = true,
-										["6:454:636"] = true,
-										["6:454:630"] = true,
-										["6:486:598"] = true,
-										["6:454:646"] = true,
-										["6:454:652"] = true,
-									},
-								},
-								["max_health"] = 193,
-							},
-						},
-					},
-				},
-			},
-			["174183"] = {
-				["reaction"] = "60:Horde:FRIENDLY",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Revendreth:1700"] = {
-										["4:538:504"] = true,
-										["4:562:462"] = true,
-										["4:574:472"] = true,
-										["4:572:464"] = true,
-										["4:548:498"] = true,
-										["4:558:494"] = true,
-										["4:568:486"] = true,
-										["4:560:484"] = true,
-										["4:574:484"] = true,
-									},
-								},
-								["max_health"] = 117910,
-							},
-						},
-					},
-				},
-				["sells"] = {
-					[182414] = "-1:1:[0:0:0:(1:183890)]",
-					[182418] = "-1:1:[0:0:0:(1:183890)]",
-					[182422] = "-1:1:[0:0:0:(1:183890)]",
-					[182395] = "-1:1:[0:0:0:(1:183899)]",
-					[182399] = "-1:1:[0:0:0:(1:183895)]",
-					[182415] = "-1:1:[0:0:0:(1:183890)]",
-					[182388] = "-1:1:[0:0:0:(1:183899)]",
-					[182392] = "-1:1:[0:0:0:(1:183899)]",
-					[182396] = "-1:1:[0:0:0:(1:183899)]",
-					[182400] = "-1:1:[0:0:0:(1:183895)]",
-					[182391] = "-1:1:[0:0:0:(1:183899)]",
-					[182423] = "-1:1:[0]",
-					[182394] = "-1:1:[0:0:0:(1:183899)]",
-					[182416] = "-1:1:[0:0:0:(1:183890)]",
-					[182420] = "-1:1:[0:0:0:(1:183890)]",
-					[182393] = "-1:1:[0:0:0:(1:183899)]",
-					[182397] = "-1:1:[0]",
-					[182421] = "-1:1:[0:0:0:(1:183890)]",
-					[182424] = "-1:1:[0:0:0:(1:183890)]",
-					[182389] = "-1:1:[0:0:0:(1:183899)]",
-					[182419] = "-1:1:[0:0:0:(1:183890)]",
-					[182417] = "-1:1:[0:0:0:(1:183890)]",
-					[182390] = "-1:1:[0:0:0:(1:183899)]",
-					[182425] = "-1:1:[0:0:0:(1:183888)]",
-					[182398] = "-1:1:[0:0:0:(1:183899)]",
-					[182426] = "-1:1:[0:0:0:(1:183888)]",
-				},
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["FEMALE"] = true,
-				},
-			},
-			["167255"] = {
-				["reaction"] = "60:Horde:FRIENDLY",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Ardenweald:1565"] = {
-										["3:494:518"] = true,
-									},
-								},
-								["max_health"] = 11791,
-							},
-						},
-					},
-				},
-				["flight_master"] = true,
-				["genders"] = {
-					["FEMALE"] = true,
-				},
-				["class"] = "WARRIOR",
-			},
-			["152724"] = {
+			["45503"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["spells"] = {
-							[303593] = 22,
+							[85401] = 2,
 						},
 						["stats"] = {
+						},
+					},
+				},
+			},
+			["8913"] = {
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["spells"] = {
+							[15288] = 62,
+							[12544] = 13,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["11744"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[19514] = 38,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["55218"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Twilight Highlands:241"] = {
+										["3:518:330"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
 						},
 					},
 				},
@@ -16062,66 +26829,76 @@ WoWDBProfilerData = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[166740] = 8,
+							[166740] = 13,
 						},
 					},
 				},
 			},
-			["83680"] = {
+			["162593"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:NEUTRAL",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Maldraxxus:1536"] = {
+										["3:444:310"] = true,
+									},
+								},
+								["max_health"] = 11791,
+							},
+						},
+						["spells"] = {
+							[332500] = 4,
+						},
+					},
+				},
+			},
+			["166318"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[166740] = 3,
+							[338011] = 46,
+							[1604] = 1,
 						},
 					},
 				},
 			},
-			["47247"] = {
+			["677"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["spells"] = {
-							[79865] = 1,
+							[12544] = 4,
 						},
 						["stats"] = {
 						},
 					},
 				},
 			},
-			["170733"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-						},
-						["spells"] = {
-							[258222] = 3,
-						},
-					},
-				},
-			},
-			["163624"] = {
+			["59443"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[333600] = 2,
+							[1604] = 1,
 						},
 					},
 				},
 			},
-			["357469"] = {
+			["2573"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["spells"] = {
+							[12544] = 4,
+						},
 						["stats"] = {
-						},
-						["loot_counts"] = {
-							["drops"] = 2,
-						},
-						["drops"] = {
-							"182477:1", -- [1]
-							"182477:1", -- [2]
 						},
 					},
 				},
@@ -16139,157 +26916,68 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["74169"] = {
+			["8548"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-						},
 						["spells"] = {
-							[131944] = 1,
-							[150648] = 2,
-							[1604] = 1,
+							[16587] = 11,
+						},
+						["stats"] = {
 						},
 					},
 				},
 			},
-			["152661"] = {
+			["15561"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Silverpine Forest:21"] = {
+										["3:450:412"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
+			["11685"] = {
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["class"] = "MAGE",
 				["reaction"] = "60:Horde:HOSTILE",
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["encounter_data"] = {
-					["SCENARIO:167:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Torghast, Tower of the Damned:1627"] = {
-										["6:568:770"] = true,
-										["6:568:748"] = true,
-										["6:568:764"] = true,
-										["6:562:774"] = true,
-									},
-									["Torghast, Tower of the Damned:1763"] = {
-										["6:378:464"] = true,
-										["6:372:466"] = true,
-										["6:370:474"] = true,
-									},
-									["Torghast, Tower of the Damned:1804"] = {
-										["6:622:726"] = true,
-										["6:612:706"] = true,
-										["6:522:428"] = true,
-										["6:500:746"] = true,
-										["6:528:450"] = true,
-										["6:506:506"] = true,
-										["6:598:714"] = true,
-										["6:514:424"] = true,
-										["6:504:574"] = true,
-										["6:496:596"] = true,
-										["6:504:592"] = true,
-										["6:622:744"] = true,
-										["6:606:714"] = true,
-										["6:526:438"] = true,
-										["6:618:716"] = true,
-										["6:504:564"] = true,
-										["6:526:468"] = true,
-										["6:622:738"] = true,
-										["6:598:720"] = true,
-										["6:528:456"] = true,
-									},
-								},
-								["max_health"] = 5478,
-							},
-						},
-						["spells"] = {
-							[13584] = 6,
-							[1604] = 3,
-						},
-						["loot_counts"] = {
-							["drops"] = 17,
-						},
-						["drops"] = {
-							"money:1662", -- [1]
-							"currency:5:1728", -- [2]
-							"money:4221", -- [3]
-							"currency:18:1728", -- [4]
-							"money:3650", -- [5]
-							"currency:18:1728", -- [6]
-							"money:1263", -- [7]
-							"currency:22:1728", -- [8]
-							"money:2627", -- [9]
-							"currency:22:1728", -- [10]
-							"money:4625", -- [11]
-							"currency:22:1728", -- [12]
-							"money:1541", -- [13]
-							"currency:22:1728", -- [14]
-							"money:2694", -- [15]
-							"currency:2:1728", -- [16]
-							"money:4085", -- [17]
-							"currency:2:1728", -- [18]
-							"money:2958", -- [19]
-							"currency:16:1728", -- [20]
-							"money:1806", -- [21]
-							"currency:10:1728", -- [22]
-							"money:3749", -- [23]
-							"currency:16:1728", -- [24]
-							"money:2945", -- [25]
-							"currency:16:1728", -- [26]
-							"money:1780", -- [27]
-							"currency:10:1728", -- [28]
-							"money:1443", -- [29]
-							"currency:10:1728", -- [30]
-							"money:3618", -- [31]
-							"currency:10:1728", -- [32]
-							"money:1666", -- [33]
-							"currency:10:1728", -- [34]
-						},
-					},
-				},
-			},
-			["164798"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["Fate... isn't... fair..."] = true,
-						["No glory... for me..."] = true,
-						["Falling... apart..."] = true,
-					},
-				},
-				["reaction"] = "60:Horde:NEUTRAL",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_60"] = {
+							["level_30"] = {
+								["max_health"] = 1283,
 								["locations"] = {
-									["Maldraxxus:1536"] = {
-										["3:488:208"] = true,
-										["3:486:202"] = true,
-										["3:496:216"] = true,
+									["Desolace:67"] = {
+										["5:200:448"] = true,
+										["5:192:454"] = true,
 									},
 								},
-								["max_health"] = 5896,
+								["power"] = "MANA:2175",
 							},
 						},
 						["loot_counts"] = {
-							["drops"] = 7,
-						},
-						["spells"] = {
-							[320671] = 10,
-							[1604] = 15,
+							["drops"] = 2,
 						},
 						["drops"] = {
-							"176866:1", -- [1]
-							"176874:2", -- [2]
-							"176866:1", -- [3]
-							"176866:3", -- [4]
-							"176866:3", -- [5]
-							"176866:1", -- [6]
-							"176874:1", -- [7]
+							"money:1687", -- [1]
+							"money:2985", -- [2]
+							"4306:1", -- [3]
 						},
 					},
-				},
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["UNKNOWN"] = true,
 				},
 			},
 			["175054"] = {
@@ -16308,254 +26996,197 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["158256"] = {
+			["42971"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["spells"] = {
+							[13444] = 1,
+						},
+						["stats"] = {
+							["level_30"] = {
+								["max_health"] = 8020,
+							},
+						},
+					},
+				},
+			},
+			["9258"] = {
+				["genders"] = {
+					["MALE"] = true,
+					["FEMALE"] = true,
 				},
 				["class"] = "WARRIOR",
 				["reaction"] = "60:Horde:HOSTILE",
 				["encounter_data"] = {
-					["NONE:0:false"] = {
+					["PARTY:1:false"] = {
 						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Bastion:1533"] = {
-										["3:460:634"] = true,
-										["3:460:670"] = true,
-										["3:480:684"] = true,
-										["3:466:680"] = true,
-									},
-								},
-								["max_health"] = 70743,
+							["level_29"] = {
+								["max_health"] = 7620,
 							},
 						},
 						["loot_counts"] = {
-							["drops"] = 3,
-						},
-						["spells"] = {
-							[329635] = 21,
-							[329679] = 30,
-							[317898] = 2,
+							["drops"] = 4,
 						},
 						["drops"] = {
-							"172054:1", -- [1]
-							"158867:1", -- [2]
-							"158867:1", -- [3]
-							"172054:1", -- [4]
-							"158867:1", -- [5]
-							"172054:1", -- [6]
+							"money:3124", -- [1]
+							"money:3130", -- [2]
+							"money:8130", -- [3]
+							"money:7534", -- [4]
+							"14047:10", -- [5]
 						},
 					},
 				},
 			},
-			["83049"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[166740] = 1,
-						},
-						["stats"] = {
-						},
-					},
-				},
-			},
-			["158796"] = {
+			["167089"] = {
 				["quotes"] = {
 					["CHAT_MSG_MONSTER_SAY"] = {
-						["The Tithelord demands more anima. Give it up now, or pay the price."] = true,
-						["Well... fought..."] = true,
+						["Ha ha! Scared to death!"] = true,
+						["He is the eternal god of death..."] = true,
 					},
 				},
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Revendreth:1525"] = {
-										["3:568:696"] = true,
-										["3:562:692"] = true,
-									},
-								},
-								["max_health"] = 17687,
-							},
-						},
-						["loot_counts"] = {
-							["drops"] = 3,
-						},
-						["spells"] = {
-							[317877] = 48,
-						},
-						["drops"] = {
-							"money:7030", -- [1]
-							"180453:1", -- [2]
-							"money:11629", -- [3]
-							"money:18680", -- [4]
-							"173202:1", -- [5]
-						},
-					},
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:HOSTILE",
-			},
-			["168724"] = {
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:HOSTILE",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["loot_counts"] = {
-							["drops"] = 1,
-						},
-						["spells"] = {
-							[330604] = 124,
-							[330593] = 113,
-							[330595] = 64,
-						},
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Revendreth:1525"] = {
-										["3:508:622"] = true,
-										["3:502:620"] = true,
-									},
-								},
-								["max_health"] = 29478,
-							},
-						},
-						["drops"] = {
-							"182725:1", -- [1]
-							"176859:1", -- [2]
-						},
-					},
-				},
-			},
-			["83598"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-						},
-						["spells"] = {
-							[166740] = 2,
-						},
-					},
-				},
-			},
-			["157118"] = {
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["class"] = "PALADIN",
-				["reaction"] = "60:Horde:HOSTILE",
-				["encounter_data"] = {
-					["SCENARIO:167:false"] = {
-						["stats"] = {
 							["level_60"] = {
-								["max_health"] = 92370,
+								["max_health"] = 58956,
 								["locations"] = {
-									["Torghast, Tower of the Damned:1783"] = {
-										["6:372:644"] = true,
-										["6:368:668"] = true,
-										["6:550:598"] = true,
-										["6:366:660"] = true,
-										["6:370:654"] = true,
-										["6:548:604"] = true,
-									},
-									["Torghast, Tower of the Damned:1792"] = {
-										["6:516:682"] = true,
-										["6:516:676"] = true,
-										["6:510:688"] = true,
-										["6:504:684"] = true,
-										["6:508:678"] = true,
-										["6:516:692"] = true,
-										["6:500:690"] = true,
+									["Ardenweald:1565"] = {
+										["3:364:258"] = true,
 									},
 								},
 								["power"] = "MANA:2434",
 							},
 						},
 						["loot_counts"] = {
-							["drops"] = 3,
-						},
-						["spells"] = {
-							[329905] = 24,
-							[299150] = 3,
-							[329904] = 29,
-						},
-						["drops"] = {
-							"money:38291", -- [1]
-							"179370:1", -- [2]
-							"currency:10:1728", -- [3]
-							"money:33358", -- [4]
-							"currency:10:1728", -- [5]
-							"money:28586", -- [6]
-							"currency:35:1728", -- [7]
-						},
-					},
-				},
-			},
-			["168174"] = {
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["class"] = "MAGE",
-				["reaction"] = "60:Horde:HOSTILE",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 9433,
-								["locations"] = {
-									["Revendreth:1525"] = {
-										["3:278:492"] = true,
-									},
-								},
-								["power"] = "MANA:5598",
-							},
-						},
-						["loot_counts"] = {
 							["drops"] = 1,
 						},
 						["spells"] = {
-							[330399] = 1,
+							[310039] = 12,
+							[325706] = 1,
+							[325605] = 3,
+							[325696] = 3,
 						},
 						["drops"] = {
-							"183971:1", -- [1]
-							"178127:1", -- [2]
+							"178175:1", -- [1]
 						},
 					},
 				},
+				["class"] = "PALADIN",
+				["reaction"] = "60:Horde:HOSTILE",
 			},
-			["168515"] = {
+			["69161"] = {
 				["genders"] = {
-					["MALE"] = true,
+					["UNKNOWN"] = true,
 				},
 				["class"] = "WARRIOR",
 				["reaction"] = "60:Horde:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_60"] = {
+							["level_-1"] = {
 								["locations"] = {
-									["Revendreth:1525"] = {
-										["3:372:540"] = true,
-										["3:390:538"] = true,
-										["3:384:540"] = true,
-										["3:384:518"] = true,
-										["3:380:526"] = true,
-										["3:380:546"] = true,
+									["Isle of Giants:507"] = {
+										["3:500:564"] = true,
+										["3:500:572"] = true,
 									},
 								},
-								["max_health"] = 11791,
+								["max_health"] = 994500,
 							},
 						},
+					},
+				},
+			},
+			["153321"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
 						["spells"] = {
-							[336964] = 13,
-							[1604] = 1,
+							[297889] = 2,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["15600"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Azshara:76"] = {
+										["3:646:794"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
+			["154018"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["SCENARIO:167:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Torghast, Tower of the Damned:1792"] = {
+										["6:610:410"] = true,
+										["6:614:422"] = true,
+										["6:622:430"] = true,
+										["6:604:414"] = true,
+										["6:632:448"] = true,
+										["6:624:440"] = true,
+										["6:608:420"] = true,
+									},
+								},
+								["max_health"] = 43066,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["spells"] = {
+							[277035] = 1,
+							[277043] = 3,
+						},
+						["drops"] = {
+							"money:19614", -- [1]
+							"currency:7:1728", -- [2]
+						},
+					},
+				},
+			},
+			["161033"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_51"] = {
+								["max_health"] = 165662,
+							},
 						},
 					},
 				},
@@ -16572,25 +27203,68 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["166537"] = {
+			["152418"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["Your aid is most appreciated. Go in service, Maw Walker."] = true,
+						["Thank you, Maw Walker. A relic of great importance to me lies somewhere within the tower. I must find it."] = true,
+						["Ah, you have found it!"] = true,
+					},
+				},
+				["reaction"] = "60:Horde:FRIENDLY",
 				["encounter_data"] = {
-					["NONE:0:false"] = {
+					["SCENARIO:167:false"] = {
 						["stats"] = {
-						},
-						["spells"] = {
-							[347254] = 1,
+							["level_60"] = {
+								["locations"] = {
+									["Torghast, Tower of the Damned:1783"] = {
+										["6:432:558"] = true,
+										["6:430:570"] = true,
+										["6:440:610"] = true,
+										["6:450:614"] = true,
+									},
+								},
+								["max_health"] = 9691,
+							},
 						},
 					},
 				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
 			},
-			["165337"] = {
+			["164738"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-						},
-						["spells"] = {
-							[319935] = 1,
-							[320463] = 4,
+							["level_60"] = {
+								["max_health"] = 94330,
+								["locations"] = {
+									["Revendreth:1699"] = {
+										["4:462:266"] = true,
+										["4:456:258"] = true,
+										["4:456:272"] = true,
+										["4:472:282"] = true,
+										["4:472:288"] = true,
+										["4:452:248"] = true,
+										["4:460:286"] = true,
+										["4:454:278"] = true,
+										["4:466:292"] = true,
+										["4:450:268"] = true,
+										["4:450:262"] = true,
+										["4:446:256"] = true,
+										["4:468:256"] = true,
+										["4:472:296"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
 						},
 					},
 				},
@@ -16625,10 +27299,13 @@ WoWDBProfilerData = {
 					["UNKNOWN"] = true,
 				},
 			},
-			["164100"] = {
+			["161979"] = {
 				["quotes"] = {
 					["CHAT_MSG_MONSTER_SAY"] = {
-						["We have little to gain from lesser cartels. Whatever Cartel Al and Cartel So are bickering over, it is not our concern."] = true,
+						["My existence before this moment has been but a rehearsal. I will teach you everything you need to know!"] = true,
+						["First, we will require more tea. All of the tea!"] = true,
+						["My dear Renathal, the rumors are true. We will be hosting court here in Sinfall!"] = true,
+						["I am tingling with excitement. This news cannot wait!"] = true,
 					},
 				},
 				["reaction"] = "60:Horde:FRIENDLY",
@@ -16636,23 +27313,39 @@ WoWDBProfilerData = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
+								["max_health"] = 94330,
 								["locations"] = {
-									["Oribos:1670"] = {
-										["4:480:730"] = true,
-										["4:474:728"] = true,
+									["Revendreth:1699"] = {
+										["4:510:208"] = true,
+										["4:502:190"] = true,
+										["4:502:202"] = true,
 									},
 								},
-								["max_health"] = 11791,
+								["power"] = "MANA:5751",
 							},
+						},
+						["spells"] = {
+							[323951] = 2,
 						},
 					},
 				},
-				["class"] = "WARRIOR",
+				["class"] = "MAGE",
 				["genders"] = {
-					["UNKNOWN"] = true,
+					["MALE"] = true,
 				},
 			},
-			["87089"] = {
+			["47247"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[79865] = 4,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["161399"] = {
 				["reaction"] = "60:Horde:NEUTRAL",
 				["class"] = "WARRIOR",
 				["genders"] = {
@@ -16661,50 +27354,30 @@ WoWDBProfilerData = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_40"] = {
-								["max_health"] = 9852,
-							},
-						},
-					},
-				},
-			},
-			["162035"] = {
-				["reaction"] = "60:Horde:HOSTILE",
-				["class"] = "PALADIN",
-				["genders"] = {
-					["MALE"] = true,
-					["FEMALE"] = true,
-				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
 							["level_60"] = {
-								["max_health"] = 11791,
 								["locations"] = {
-									["Revendreth:1525"] = {
-										["3:386:518"] = true,
-										["3:386:538"] = true,
-										["3:386:530"] = true,
+									["Maldraxxus:1536"] = {
+										["3:508:646"] = true,
+										["3:500:646"] = true,
 									},
 								},
-								["power"] = "MANA:2369",
+								["max_health"] = 5896,
 							},
 						},
 						["loot_counts"] = {
-							["drops"] = 4,
+							["drops"] = 7,
 						},
 						["spells"] = {
-							[331923] = 2,
+							[320671] = 3,
 						},
 						["drops"] = {
-							"money:13844", -- [1]
-							"173202:3", -- [2]
-							"currency:1:1820", -- [3]
-							"money:21560", -- [4]
-							"173202:3", -- [5]
-							"money:9090", -- [6]
-							"money:19893", -- [7]
-							"173202:1", -- [8]
+							"176866:2", -- [1]
+							"176866:3", -- [2]
+							"176866:3", -- [3]
+							"176866:3", -- [4]
+							"176866:2", -- [5]
+							"176866:2", -- [6]
+							"176866:2", -- [7]
 						},
 					},
 				},
@@ -16720,29 +27393,24 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["5842"] = {
-				["reaction"] = "60:Horde:HOSTILE",
-				["class"] = "WARRIOR",
+			["15577"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
 				["genders"] = {
-					["UNKNOWN"] = true,
+					["FEMALE"] = true,
 				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_30"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
 								["locations"] = {
-									["Northern Barrens:10"] = {
-										["3:654:286"] = true,
+									["Sentinel Tower:52"] = {
+										["3:566:470"] = true,
 									},
 								},
-								["max_health"] = 2406,
+								["power"] = "MANA:5751",
 							},
-						},
-						["loot_counts"] = {
-							["drops"] = 1,
-						},
-						["drops"] = {
-							"3685:1", -- [1]
 						},
 					},
 				},
@@ -16759,160 +27427,186 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["83653"] = {
+			["61836"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["spells"] = {
-							[86603] = 17,
+							[79849] = 11,
 						},
 						["stats"] = {
 						},
 					},
 				},
 			},
-			["178572"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-						},
-						["spells"] = {
-							[358265] = 10,
-						},
-					},
-				},
-			},
-			["158628"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-						},
-						["spells"] = {
-							[329435] = 6,
-						},
-					},
-				},
-			},
-			["88403"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-						},
-						["spells"] = {
-							[176458] = 5,
-						},
-					},
-				},
-			},
-			["167256"] = {
+			["44866"] = {
+				["is_pvp"] = true,
 				["genders"] = {
-					["UNKNOWN"] = true,
+					["MALE"] = true,
 				},
-				["class"] = "WARRIOR",
+				["faction"] = "Orgrimmar",
 				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "WARRIOR",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
 								["locations"] = {
-									["Ardenweald:1565"] = {
-										["3:362:278"] = true,
+									["Orgrimmar:85"] = {
+										["3:538:732"] = true,
+										["3:538:738"] = true,
 									},
 								},
-								["max_health"] = 1180,
+								["max_health"] = 35373,
+							},
+							["level_50"] = {
+								["locations"] = {
+									["Orgrimmar:85"] = {
+										["3:540:734"] = true,
+									},
+								},
+								["max_health"] = 16181,
 							},
 						},
 					},
 				},
+				["auctioneer"] = true,
 			},
-			["171159"] = {
+			["8983"] = {
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["spells"] = {
+							[15507] = 3,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["169430"] = {
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:NEUTRAL",
+				["class"] = "PALADIN",
+				["reaction"] = "51:Alliance:FRIENDLY",
 				["encounter_data"] = {
-					["SCENARIO:167:false"] = {
+					["PARTY:19:false"] = {
 						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Torghast, Tower of the Damned:1807"] = {
-										["6:526:774"] = true,
-									},
-									["Torghast, Tower of the Damned:1627"] = {
-										["6:578:528"] = true,
-									},
-								},
-								["max_health"] = 2423,
+							["level_51"] = {
+								["power"] = "MANA:2434",
+								["max_health"] = 9800,
 							},
 						},
 					},
 				},
 			},
-			["81308"] = {
+			["156559"] = {
 				["quotes"] = {
 					["CHAT_MSG_MONSTER_SAY"] = {
-						["No! No... nooo... the darkness..."] = true,
-						["Noooo... it is you who should die!"] = true,
-						["Our master will devour your soul..."] = true,
-						["The hour is near... soon you will die..."] = true,
-						["You cannot stop the destruction..."] = true,
-						["You fool... we've already... won..."] = true,
+						["Duty binds me."] = true,
 					},
 				},
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
+				["reaction"] = "60:Horde:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_40"] = {
-								["max_health"] = 2463,
+							["level_60"] = {
 								["locations"] = {
-									["Nagrand:550"] = {
-										["3:576:620"] = true,
-										["3:584:616"] = true,
-										["3:568:628"] = true,
-										["3:590:582"] = true,
-										["3:574:632"] = true,
-										["3:580:628"] = true,
-										["3:588:590"] = true,
-									},
-									["The Underpale:553"] = {
-										["5:656:556"] = true,
-										["5:654:548"] = true,
-										["5:676:434"] = true,
-										["5:652:540"] = true,
-										["5:670:432"] = true,
-										["5:650:530"] = true,
-										["5:666:440"] = true,
+									["Bastion:1533"] = {
+										["3:276:196"] = true,
+										["3:258:248"] = true,
 									},
 								},
-								["power"] = "ENERGY:100",
+								["max_health"] = 106119,
 							},
 						},
 						["loot_counts"] = {
-							["drops"] = 9,
+							["drops"] = 2,
 						},
 						["spells"] = {
-							[128933] = 13,
-							[128252] = 1,
+							[325272] = 22,
+							[326298] = 9,
+							[326293] = 23,
+							[322143] = 9,
+							[332569] = 4,
+							[322281] = 4,
+							[1604] = 1,
 						},
 						["drops"] = {
-							"106867:1", -- [1]
-							"106867:1", -- [2]
-							"108979:1", -- [3]
-							"106867:1", -- [4]
-							"106867:1", -- [5]
-							"106627:1", -- [6]
-							"106867:1", -- [7]
-							"106867:1", -- [8]
-							"106867:1", -- [9]
-							"108979:1", -- [10]
+							"money:58133", -- [1]
+							"176800:1", -- [2]
+							"money:57072", -- [3]
+							"173202:1", -- [4]
 						},
 					},
 				},
-				["class"] = "ROGUE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+					["FEMALE"] = true,
+				},
+			},
+			["1976"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[71507] = 23,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["5648"] = {
+				["genders"] = {
+					["MALE"] = true,
+					["FEMALE"] = true,
+				},
+				["class"] = "MAGE",
 				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["loot_counts"] = {
+							["drops"] = 15,
+						},
+						["stats"] = {
+							["level_30"] = {
+								["power"] = "MANA:8280",
+								["max_health"] = 6415,
+							},
+							["level_31"] = {
+								["power"] = "MANA:8577",
+								["max_health"] = 6715,
+							},
+						},
+						["spells"] = {
+							[20798] = 30,
+							[18396] = 2,
+							[14032] = 5,
+							[12471] = 219,
+						},
+						["drops"] = {
+							"money:5022", -- [1]
+							"money:2946", -- [2]
+							"money:9707", -- [3]
+							"money:3369", -- [4]
+							"money:2946", -- [5]
+							"money:8607", -- [6]
+							"money:1762", -- [7]
+							"money:3087", -- [8]
+							"money:7056", -- [9]
+							"money:4508", -- [10]
+							"money:8357", -- [11]
+							"4338:35", -- [12]
+							"money:9126", -- [13]
+							"4338:35", -- [14]
+							"money:7048", -- [15]
+							"4338:35", -- [16]
+							"money:9411", -- [17]
+							"money:7905", -- [18]
+							"4338:35", -- [19]
+						},
+					},
+				},
 			},
 			["157083"] = {
 				["reaction"] = "60:Horde:HOSTILE",
@@ -16969,86 +27663,81 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["159423"] = {
-				["reaction"] = "60:Horde:FRIENDLY",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Bastion:1533"] = {
-										["3:514:468"] = true,
-									},
-								},
-								["max_health"] = 294775,
-							},
-						},
-					},
-				},
-				["flight_master"] = true,
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["class"] = "WARRIOR",
-			},
-			["172192"] = {
-				["genders"] = {
-					["MALE"] = true,
-					["FEMALE"] = true,
-				},
-				["class"] = "PALADIN",
+			["172207"] = {
 				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "PALADIN",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 12970,
+							["level_62"] = {
+								["max_health"] = 95874,
 								["locations"] = {
-									["Ardenweald:1565"] = {
-										["3:674:264"] = true,
-										["3:686:278"] = true,
-										["3:684:248"] = true,
-										["3:682:266"] = true,
+									["The Maw:1543"] = {
+										["3:386:288"] = true,
 									},
 								},
-								["power"] = "MANA:2434",
+								["power"] = "MANA:2568",
 							},
 						},
 						["loot_counts"] = {
-							["drops"] = 4,
+							["drops"] = 1,
 						},
 						["spells"] = {
-							[1604] = 1,
-							[324483] = 8,
-							[324447] = 16,
+							[345616] = 1,
+							[335685] = 4,
+							[335680] = 19,
+							[335710] = 4,
+							[304093] = 12,
 						},
 						["drops"] = {
-							"money:14641", -- [1]
-							"money:7237", -- [2]
-							"money:10789", -- [3]
-							"175247:1", -- [4]
-							"money:7726", -- [5]
-							"173204:1", -- [6]
+							"178561:1", -- [1]
+							"currency:46:1767", -- [2]
+							"178133:2", -- [3]
 						},
 					},
 				},
 			},
-			["181212"] = {
+			["15570"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Silithus:81"] = {
+										["3:308:134"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
+			["84921"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[358603] = 3,
+							[169235] = 1,
 						},
 					},
 				},
 			},
-			["61834"] = {
+			["160464"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["spells"] = {
-							[79849] = 2,
+							[30831] = 2,
 						},
 						["stats"] = {
 						},
@@ -17100,298 +27789,202 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["156560"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["Was I misled?"] = true,
-						["You were arrogant to come here."] = true,
-						["I wanted to fly..."] = true,
-						["Will they sing my song?"] = true,
-						["Remember me."] = true,
-					},
+			["142047"] = {
+				["genders"] = {
+					["MALE"] = true,
 				},
+				["class"] = "MAGE",
 				["reaction"] = "60:Horde:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 4,
+						},
 						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 28298,
+							["level_50"] = {
+								["max_health"] = 5495,
 								["locations"] = {
-									["Bastion:1533"] = {
-										["3:276:206"] = true,
-										["3:288:240"] = true,
-										["3:274:266"] = true,
-										["3:266:258"] = true,
-										["3:252:256"] = true,
+									["Arathi Highlands:14"] = {
+										["3:808:306"] = true,
+										["3:792:346"] = true,
 									},
 								},
-								["power"] = "MANA:2434",
+								["power"] = "MANA:4393",
 							},
 						},
-						["loot_counts"] = {
-							["drops"] = 7,
-						},
 						["spells"] = {
-							[322780] = 12,
-							[322892] = 14,
-							[315454] = 59,
+							[20822] = 6,
+							[12544] = 23,
+							[6136] = 1,
 						},
 						["drops"] = {
-							"money:16730", -- [1]
-							"money:7822", -- [2]
-							"173202:2", -- [3]
-							"money:5720", -- [4]
-							"money:8181", -- [5]
-							"173202:2", -- [6]
-							"money:8129", -- [7]
-							"money:7123", -- [8]
-							"money:16127", -- [9]
-						},
-					},
-				},
-				["class"] = "PALADIN",
-				["genders"] = {
-					["MALE"] = true,
-					["FEMALE"] = true,
-				},
-			},
-			["172605"] = {
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Revendreth:1699"] = {
-										["4:556:274"] = true,
-										["4:552:268"] = true,
-										["4:536:274"] = true,
-										["4:544:282"] = true,
-										["4:546:262"] = true,
-										["4:566:282"] = true,
-										["4:562:272"] = true,
-										["4:546:268"] = true,
-										["4:548:288"] = true,
-										["4:538:258"] = true,
-										["4:550:276"] = true,
-									},
-								},
-								["max_health"] = 117910,
-							},
-						},
-					},
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:FRIENDLY",
-			},
-			["156666"] = {
-				["teaches"] = {
-					["WARRIOR"] = {
-						["Blacksmithing"] = {
-							[309827] = "0:1:10000",
-						},
-						["General"] = {
-							[2018] = "0:0:10",
-						},
-						["Shadowlands Blacksmithing"] = {
-							[322591] = "0:90:65000",
-							[307676] = "0:25:10000",
-							[307708] = "0:100:250000",
-							[307677] = "0:15:5000",
-							[307709] = "0:100:250000",
-							[307678] = "0:5:1500",
-							[307710] = "0:100:250000",
-							[322594] = "0:60:25000",
-							[307679] = "0:35:13000",
-							[307711] = "0:100:250000",
-							[322595] = "0:50:20000",
-							[307712] = "0:100:250000",
-							[307665] = "0:10:3000",
-							[307681] = "0:15:5000",
-							[307666] = "0:25:10000",
-							[307682] = "0:30:11500",
-							[307667] = "0:30:11500",
-							[343184] = "0:45:17500",
-							[307668] = "0:35:13000",
-							[307669] = "0:5:1500",
-							[307718] = "0:50:20000",
-							[307671] = "0:15:5000",
-							[322587] = "0:80:40000",
-							[307672] = "0:25:10000",
-							[307720] = "0:55:22500",
-							[343662] = "0:50:20000",
-							[307705] = "0:100:250000",
-							[322589] = "0:65:27500",
-							[307674] = "0:20:7500",
-							[307721] = "0:15:5000",
-							[307706] = "0:100:250000",
-							[307663] = "0:20:7500",
-							[307675] = "0:10:3000",
-							[307611] = "0:50:20000",
-							[307707] = "0:100:250000",
-							[322588] = "0:55:22500",
-						},
-					},
-				},
-				["reaction"] = "60:Horde:FRIENDLY",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Oribos:1670"] = {
-										["4:412:316"] = true,
-										["4:404:330"] = true,
-										["4:410:322"] = true,
-										["4:404:320"] = true,
-									},
-								},
-								["max_health"] = 11791,
-							},
-						},
-					},
-				},
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-			},
-			["161882"] = {
-				["reaction"] = "60:Horde:NEUTRAL",
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Ardenweald:1565"] = {
-										["3:400:560"] = true,
-									},
-								},
-								["max_health"] = 11791,
-							},
-						},
-						["spells"] = {
-							[323446] = 8,
+							"money:5973", -- [1]
+							"money:6986", -- [2]
+							"money:12898", -- [3]
+							"money:11291", -- [4]
+							"154771:1", -- [5]
 						},
 					},
 				},
 			},
-			["172825"] = {
+			["49793"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["spells"] = {
-							[311190] = 1,
+							[79976] = 2,
+							[79977] = 3,
 						},
 						["stats"] = {
 						},
 					},
 				},
 			},
-			["154018"] = {
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["class"] = "WARRIOR",
+			["11082"] = {
 				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
 				["encounter_data"] = {
-					["SCENARIO:167:false"] = {
+					["PARTY:1:false"] = {
 						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Torghast, Tower of the Damned:1792"] = {
-										["6:610:410"] = true,
-										["6:614:422"] = true,
-										["6:622:430"] = true,
-										["6:604:414"] = true,
-										["6:624:440"] = true,
-										["6:632:448"] = true,
-										["6:608:420"] = true,
-									},
-								},
-								["max_health"] = 43066,
+							["level_30"] = {
+								["max_health"] = 14436,
 							},
 						},
 						["loot_counts"] = {
 							["drops"] = 1,
 						},
-						["spells"] = {
-							[277035] = 1,
-							[277043] = 3,
-						},
 						["drops"] = {
-							"money:19614", -- [1]
-							"currency:7:1728", -- [2]
+							"4306:9", -- [1]
+							"22526:9", -- [2]
+							"money:5475", -- [3]
 						},
 					},
 				},
 			},
-			["81378"] = {
-				["reaction"] = "60:Horde:NEUTRAL",
+			["12207"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_31"] = {
+								["max_health"] = 20136,
+							},
+							["level_30"] = {
+								["max_health"] = 19248,
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 3,
+						},
+						["drops"] = {
+							"5569:1", -- [1]
+							"7973:1", -- [2]
+							"8746:1", -- [3]
+							"5569:1", -- [4]
+							"5569:2", -- [5]
+						},
+					},
+				},
+			},
+			["158713"] = {
+				["genders"] = {
+					["FEMALE"] = true,
+				},
 				["class"] = "MAGE",
+				["reaction"] = "60:Horde:FRIENDLY",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 9433,
+								["locations"] = {
+									["Revendreth:1700"] = {
+										["4:608:682"] = true,
+										["4:608:668"] = true,
+										["4:614:714"] = true,
+										["4:610:698"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
+						},
+					},
+				},
+			},
+			["49968"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[79849] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["1850"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_40"] = {
-								["max_health"] = 1971,
+							["level_30"] = {
 								["locations"] = {
-									["Nagrand:550"] = {
-										["3:568:626"] = true,
+									["Scholomance:22"] = {
+										["3:696:732"] = true,
 									},
 								},
-								["power"] = "MANA:3191",
+								["max_health"] = 2406,
 							},
 						},
-						["spells"] = {
-							[164166] = 19,
-							[1604] = 1,
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["drops"] = {
+							"money:3343", -- [1]
 						},
 					},
 				},
 			},
-			["44867"] = {
-				["is_pvp"] = true,
+			["166137"] = {
 				["genders"] = {
-					["FEMALE"] = true,
+					["MALE"] = true,
 				},
-				["faction"] = "Orgrimmar",
-				["reaction"] = "50:Horde:FRIENDLY",
-				["class"] = "WARRIOR",
+				["class"] = "MAGE",
+				["reaction"] = "60:Horde:NEUTRAL",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
-								["locations"] = {
-									["Orgrimmar:85"] = {
-										["3:538:732"] = true,
-										["3:538:738"] = true,
-									},
-								},
-								["max_health"] = 35373,
+								["max_health"] = 253024,
+								["power"] = "MANA:5751",
 							},
-							["level_50"] = {
-								["max_health"] = 16181,
-							},
+						},
+						["spells"] = {
+							[350527] = 4,
+							[353588] = 9,
+							[205462] = 11,
+							[205605] = 5,
 						},
 					},
 				},
-				["auctioneer"] = true,
 			},
-			["161889"] = {
+			["44878"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-						},
 						["spells"] = {
-							[115385] = 2,
+							[71507] = 9,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -17407,63 +28000,69 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["165302"] = {
+			["42338"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[84498] = 12,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["15580"] = {
 				["genders"] = {
 					["MALE"] = true,
 				},
-				["class"] = "WARRIOR",
+				["class"] = "MAGE",
 				["reaction"] = "60:Horde:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
+								["max_health"] = 11320,
 								["locations"] = {
-									["Revendreth:1700"] = {
-										["4:612:762"] = true,
-										["4:614:744"] = true,
-										["4:620:764"] = true,
-										["4:600:760"] = true,
-										["4:606:738"] = true,
-										["4:604:750"] = true,
-										["4:614:750"] = true,
-										["4:606:732"] = true,
+									["Thunder Bluff:88"] = {
+										["3:730:238"] = true,
 									},
 								},
-								["max_health"] = 11791,
+								["power"] = "MANA:5751",
 							},
 						},
 					},
 				},
 			},
-			["164579"] = {
+			["175246"] = {
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
 				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:FRIENDLY",
+				["reaction"] = "60:Horde:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_60"] = {
+							["level_61"] = {
 								["locations"] = {
-									["Oribos:1670"] = {
-										["4:392:698"] = true,
-										["4:394:690"] = true,
+									["The Maw:1543"] = {
+										["3:332:194"] = true,
+										["3:336:210"] = true,
 									},
 								},
-								["max_health"] = 235820,
+								["max_health"] = 12783,
 							},
 						},
-					},
-				},
-			},
-			["85082"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
+						["loot_counts"] = {
+							["drops"] = 3,
 						},
-						["spells"] = {
-							[150428] = 18,
+						["drops"] = {
+							"178135:1", -- [1]
+							"currency:2:1767", -- [2]
+							"178133:1", -- [3]
+							"178133:4", -- [4]
+							"currency:3:1767", -- [5]
+							"178133:4", -- [6]
+							"currency:3:1767", -- [7]
 						},
 					},
 				},
@@ -17622,35 +28221,56 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["175518"] = {
-				["is_pvp"] = true,
-				["reaction"] = "60:Horde:FRIENDLY",
+			["160185"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["How long have I been chained? I'm ready for the rituals."] = true,
+						["Free from this wretched town. Anywhere is better than this."] = true,
+						["Agh! Enough of this torment!"] = true,
+						["Thank you. I shall return to where I belong."] = true,
+					},
+				},
+				["reaction"] = "60:Horde:NEUTRAL",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
 								["locations"] = {
-									["Orgrimmar:85"] = {
-										["3:542:904"] = true,
+									["Revendreth:1525"] = {
+										["3:418:730"] = true,
+										["3:408:748"] = true,
+										["3:412:728"] = true,
+										["3:416:740"] = true,
 									},
 								},
-								["max_health"] = 15918,
+								["max_health"] = 11791,
 							},
+						},
+						["loot_counts"] = {
+							["drops"] = 2,
+						},
+						["spells"] = {
+							[331026] = 8,
+							[321525] = 13,
+						},
+						["drops"] = {
+							"178133:1", -- [1]
+							"178133:1", -- [2]
 						},
 					},
 				},
 				["class"] = "WARRIOR",
 				["genders"] = {
-					["FEMALE"] = true,
+					["UNKNOWN"] = true,
 				},
 			},
-			["170730"] = {
+			["168459"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-						},
 						["spells"] = {
-							[323446] = 6,
+							[71507] = 4,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -17682,13 +28302,14 @@ WoWDBProfilerData = {
 					["UNKNOWN"] = true,
 				},
 			},
-			["77684"] = {
+			["51143"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[158240] = 3,
-						},
 						["stats"] = {
+						},
+						["spells"] = {
+							[79976] = 1,
+							[79977] = 2,
 						},
 					},
 				},
@@ -17699,7 +28320,7 @@ WoWDBProfilerData = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[324147] = 4,
+							[324147] = 5,
 						},
 					},
 				},
@@ -17743,15 +28364,31 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["145337"] = {
+			["164100"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["We have little to gain from lesser cartels. Whatever Cartel Al and Cartel So are bickering over, it is not our concern."] = true,
+					},
+				},
+				["reaction"] = "60:Horde:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[244808] = 27,
-						},
 						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Oribos:1670"] = {
+										["4:480:730"] = true,
+										["4:474:728"] = true,
+									},
+								},
+								["max_health"] = 11791,
+							},
 						},
 					},
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
 				},
 			},
 			["178908"] = {
@@ -17787,124 +28424,106 @@ WoWDBProfilerData = {
 					["MALE"] = true,
 				},
 			},
-			["158178"] = {
-				["reaction"] = "60:Horde:FRIENDLY",
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 11791,
-							},
-						},
-					},
-				},
-			},
-			["152418"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["Your aid is most appreciated. Go in service, Maw Walker."] = true,
-						["Thank you, Maw Walker. A relic of great importance to me lies somewhere within the tower. I must find it."] = true,
-						["Ah, you have found it!"] = true,
-					},
-				},
-				["reaction"] = "60:Horde:FRIENDLY",
-				["encounter_data"] = {
-					["SCENARIO:167:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Torghast, Tower of the Damned:1783"] = {
-										["6:432:558"] = true,
-										["6:430:570"] = true,
-										["6:440:610"] = true,
-										["6:450:614"] = true,
-									},
-								},
-								["max_health"] = 9691,
-							},
-						},
-					},
-				},
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["FEMALE"] = true,
-				},
-			},
-			["79744"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-						},
-						["spells"] = {
-							[166740] = 3,
-						},
-					},
-				},
-			},
-			["155828"] = {
+			["168724"] = {
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
 				["class"] = "WARRIOR",
 				["reaction"] = "60:Horde:HOSTILE",
 				["encounter_data"] = {
-					["SCENARIO:167:false"] = {
+					["NONE:0:false"] = {
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["spells"] = {
+							[330604] = 125,
+							[330593] = 115,
+							[330595] = 65,
+						},
 						["stats"] = {
 							["level_60"] = {
 								["locations"] = {
-									["Torghast, Tower of the Damned:1807"] = {
-										["6:638:274"] = true,
-										["6:644:274"] = true,
-										["6:642:292"] = true,
-										["6:658:244"] = true,
-										["6:644:268"] = true,
-										["6:658:252"] = true,
-										["6:652:258"] = true,
-										["6:650:270"] = true,
-										["6:666:210"] = true,
-										["6:662:258"] = true,
-										["6:632:274"] = true,
-										["6:666:216"] = true,
-									},
-									["Torghast, Tower of the Damned:1783"] = {
-										["6:394:796"] = true,
-										["6:392:810"] = true,
-										["6:394:802"] = true,
-										["6:384:800"] = true,
-										["6:386:806"] = true,
-										["6:384:812"] = true,
-									},
-									["Torghast, Tower of the Damned:1792"] = {
-										["6:552:622"] = true,
-										["6:544:624"] = true,
-										["6:558:628"] = true,
-										["6:560:622"] = true,
-										["6:552:630"] = true,
+									["Revendreth:1525"] = {
+										["3:508:622"] = true,
+										["3:502:620"] = true,
 									},
 								},
-								["max_health"] = 92370,
+								["max_health"] = 29478,
+							},
+						},
+						["drops"] = {
+							"182725:1", -- [1]
+							"176859:1", -- [2]
+						},
+					},
+				},
+			},
+			["81378"] = {
+				["reaction"] = "60:Horde:NEUTRAL",
+				["class"] = "MAGE",
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_40"] = {
+								["max_health"] = 1971,
+								["locations"] = {
+									["Nagrand:550"] = {
+										["3:568:626"] = true,
+									},
+								},
+								["power"] = "MANA:3191",
+							},
+						},
+						["spells"] = {
+							[164166] = 25,
+							[1604] = 1,
+						},
+					},
+				},
+			},
+			["77724"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[86603] = 6,
+							[164460] = 7,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["168174"] = {
+				["genders"] = {
+					["UNKNOWN"] = true,
+				},
+				["class"] = "MAGE",
+				["reaction"] = "60:Horde:HOSTILE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 9433,
+								["locations"] = {
+									["Revendreth:1525"] = {
+										["3:278:492"] = true,
+									},
+								},
+								["power"] = "MANA:5598",
 							},
 						},
 						["loot_counts"] = {
-							["drops"] = 3,
+							["drops"] = 1,
 						},
 						["spells"] = {
-							[329608] = 7,
-							[329609] = 20,
-							[299150] = 3,
+							[330399] = 1,
 						},
 						["drops"] = {
-							"money:37090", -- [1]
-							"currency:10:1728", -- [2]
-							"money:54017", -- [3]
-							"currency:25:1728", -- [4]
-							"179369:1", -- [5]
-							"money:41092", -- [6]
-							"currency:10:1728", -- [7]
+							"183971:1", -- [1]
+							"178127:1", -- [2]
 						},
 					},
 				},
@@ -17920,24 +28539,35 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["85627"] = {
+			["55219"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["spells"] = {
-							[170758] = 3,
-						},
 						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11320,
+								["locations"] = {
+									["Twilight Highlands:241"] = {
+										["3:508:704"] = true,
+									},
+								},
+								["power"] = "MANA:5751",
+							},
 						},
 					},
 				},
 			},
-			["83483"] = {
+			["85082"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[158349] = 1,
+							[150428] = 29,
 						},
 					},
 				},
@@ -17948,14 +28578,19 @@ WoWDBProfilerData = {
 						["stats"] = {
 						},
 						["spells"] = {
-							[331923] = 4,
+							[331923] = 5,
 						},
 					},
 				},
 			},
-			["162258"] = {
-				["reaction"] = "60:Horde:HOSTILE",
-				["class"] = "WARRIOR",
+			["172531"] = {
+				["quotes"] = {
+					["CHAT_MSG_MONSTER_SAY"] = {
+						["The Party Herald is now on duty!"] = true,
+						["You can count on me, Maw Walker! I'm the best at whatever I do!"] = true,
+						["The one and only Sin Herald, at your service, Accuser!"] = true,
+					},
+				},
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
@@ -17963,11 +28598,42 @@ WoWDBProfilerData = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
-								["max_health"] = 14149,
+								["locations"] = {
+									["Revendreth:1700"] = {
+										["4:588:802"] = true,
+										["4:570:780"] = true,
+										["4:588:808"] = true,
+										["4:560:746"] = true,
+										["4:574:788"] = true,
+										["4:580:792"] = true,
+										["4:560:762"] = true,
+									},
+								},
+								["max_health"] = 5896,
 							},
 						},
 					},
 				},
+				["sells"] = {
+					[181522] = "-1:1:[2500000:0:0]",
+					[182973] = "-1:1:[0:0:0:(10:1820)]",
+					[181316] = "-1:1:[0:0:0:(5000:1813)]",
+					[181518] = "-1:1:[0:0:0:(100:1813)]",
+					[181443] = "-1:1:[0:0:0:(85:1820)]",
+					[181517] = "-1:1:[0:0:0:(100:1813)]",
+					[181519] = "-1:1:[2500000:0:0]",
+					[181441] = "-1:1:[0:0:0:(25:1813)]",
+					[181523] = "-1:1:[2500000:0:0]",
+					[183842] = "-1:1:[0:0:0:(55:1820)]",
+					[183706] = "-1:1:[0:0:0:(1750:1813)]",
+					[183854] = "-1:1:[0]",
+					[182296] = "-1:1:[0:0:0:(85:1820)]",
+					[183843] = "-1:1:[0:0:0:(70:1820)]",
+					[181520] = "-1:1:[2500000:0:0]",
+					[185741] = "-1:1:[0:0:0:(85:1820)]",
+				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:FRIENDLY",
 			},
 			["89"] = {
 				["encounter_data"] = {
@@ -17980,79 +28646,15 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["164095"] = {
-				["reaction"] = "60:Horde:FRIENDLY",
+			["157464"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["spells"] = {
+							[328980] = 2,
+						},
 						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Oribos:1670"] = {
-										["4:354:576"] = true,
-									},
-								},
-								["max_health"] = 11791,
-							},
 						},
 					},
-				},
-				["sells"] = {
-					[185299] = "-1:1:[0:0:0:(875:1792)]",
-					[185307] = "-1:1:[0:0:0:(875:1792)]",
-					[185205] = "-1:1:[0:0:0:(525:1792)]",
-					[185284] = "-1:1:[0:0:0:(875:1792)]",
-					[185292] = "-1:1:[0:0:0:(425:1792)]",
-					[185308] = "-1:1:[0:0:0:(1325:1792)]",
-					[185127] = "-1:1:[0:0:0:(875:1792)]",
-					[185285] = "-1:1:[0:0:0:(875:1792)]",
-					[185293] = "-1:1:[0]",
-					[185238] = "-1:1:[0:0:0:(700:1792)]",
-					[185309] = "-1:1:[0:0:0:(525:1792)]",
-					[185128] = "-1:1:[0:0:0:(525:1792)]",
-					[183246] = "-1:1:[0:0:0:(1500:1792)]",
-					[185207] = "-1:1:[0:0:0:(875:1792)]",
-					[185215] = "-1:1:[0:0:0:(700:1792)]",
-					[185286] = "-1:1:[0:0:0:(875:1792)]",
-					[185294] = "-1:1:[0:0:0:(1325:1792)]",
-					[185239] = "-1:1:[0:0:0:(525:1792)]",
-					[185310] = "-1:1:[0:0:0:(525:1792)]",
-					[185287] = "-1:1:[0:0:0:(1750:1792)]",
-					[185295] = "-1:1:[0:0:0:(425:1792)]",
-					[185240] = "-1:1:[0:0:0:(525:1792)]",
-					[185311] = "-1:1:[0:0:0:(525:1792)]",
-					[185130] = "-1:1:[0:0:0:(875:1792)]",
-					[185138] = "-1:1:[0:0:0:(700:1792)]",
-					[185158] = "-1:1:[0:0:0:(525:1792)]",
-					[185288] = "-1:1:[0:0:0:(1750:1792)]",
-					[185296] = "-1:1:[0:0:0:(875:1792)]",
-					[185241] = "-1:1:[0:0:0:(525:1792)]",
-					[185161] = "-1:1:[0:0:0:(700:1792)]",
-					[185221] = "-1:1:[0:0:0:(875:1792)]",
-					[185144] = "-1:1:[0:0:0:(875:1792)]",
-					[185210] = "-1:1:[0:0:0:(700:1792)]",
-					[185204] = "-1:1:[0:0:0:(875:1792)]",
-					[185226] = "-1:1:[0:0:0:(700:1792)]",
-					[185297] = "-1:1:[0:0:0:(1750:1792)]",
-					[185242] = "-1:1:[0:0:0:(700:1792)]",
-					[185162] = "-1:1:[0:0:0:(525:1792)]",
-					[185229] = "-1:1:[0:0:0:(700:1792)]",
-					[185289] = "-1:1:[0:0:0:(875:1792)]",
-					[185298] = "-1:1:[0:0:0:(1750:1792)]",
-					[185156] = "-1:1:[0:0:0:(525:1792)]",
-					[185290] = "-1:1:[0:0:0:(1750:1792)]",
-					[185235] = "-1:1:[0:0:0:(525:1792)]",
-					[185243] = "-1:1:[0:0:0:(525:1792)]",
-					[185152] = "-1:1:[0:0:0:(700:1792)]",
-					[185133] = "-1:1:[0:0:0:(700:1792)]",
-					[185834] = "-1:1:[0:0:0:(2000:1792)]",
-					[185149] = "-1:1:[0:0:0:(700:1792)]",
-					[185233] = "-1:1:[0:0:0:(525:1792)]",
-					[185291] = "-1:1:[0:0:0:(1750:1792)]",
-					[183378] = "-1:1:[0:0:0:(1500:1792)]",
-				},
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["UNKNOWN"] = true,
 				},
 			},
 			["83591"] = {
@@ -18074,59 +28676,26 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["156559"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["Duty binds me."] = true,
-					},
-				},
-				["reaction"] = "60:Horde:HOSTILE",
+			["45412"] = {
 				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Bastion:1533"] = {
-										["3:276:196"] = true,
-										["3:258:248"] = true,
-									},
-								},
-								["max_health"] = 106119,
-							},
-						},
-						["loot_counts"] = {
-							["drops"] = 2,
-						},
+					["PARTY:1:false"] = {
 						["spells"] = {
-							[325272] = 22,
-							[326298] = 9,
-							[326293] = 23,
-							[322143] = 9,
-							[332569] = 4,
-							[322281] = 4,
-							[1604] = 1,
+							[17467] = 2,
 						},
-						["drops"] = {
-							"money:58133", -- [1]
-							"176800:1", -- [2]
-							"money:57072", -- [3]
-							"173202:1", -- [4]
+						["stats"] = {
 						},
 					},
-				},
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["MALE"] = true,
-					["FEMALE"] = true,
 				},
 			},
-			["167070"] = {
+			["51986"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-						},
 						["spells"] = {
-							[325426] = 3,
+							[15618] = 4,
+							[18328] = 4,
+							[19643] = 5,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -18145,25 +28714,31 @@ WoWDBProfilerData = {
 								["max_health"] = 117910,
 								["locations"] = {
 									["Revendreth:1699"] = {
+										["4:522:348"] = true,
 										["4:518:358"] = true,
 										["4:508:350"] = true,
-										["4:522:394"] = true,
-										["4:530:344"] = true,
 										["4:526:404"] = true,
+										["4:510:384"] = true,
+										["4:522:394"] = true,
+										["4:532:384"] = true,
+										["4:522:364"] = true,
+										["4:510:372"] = true,
+										["4:530:344"] = true,
 										["4:522:370"] = true,
-										["4:516:350"] = true,
+										["4:520:378"] = true,
+										["4:532:400"] = true,
 										["4:516:372"] = true,
 										["4:516:366"] = true,
-										["4:520:378"] = true,
+										["4:540:388"] = true,
 										["4:528:356"] = true,
 										["4:512:360"] = true,
 										["4:528:392"] = true,
-										["4:522:364"] = true,
+										["4:516:350"] = true,
 										["4:526:380"] = true,
 										["4:514:396"] = true,
 										["4:500:384"] = true,
-										["4:532:400"] = true,
 										["4:508:378"] = true,
+										["4:500:392"] = true,
 										["4:504:398"] = true,
 									},
 								},
@@ -18198,17 +28773,79 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["172630"] = {
+			["142856"] = {
+				["reaction"] = "60:Horde:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-						},
-						["spells"] = {
-							[320465] = 2,
-							[320463] = 3,
-							[320007] = 1,
+							["level_50"] = {
+								["locations"] = {
+									["Orgrimmar:85"] = {
+										["3:568:890"] = true,
+										["3:568:882"] = true,
+									},
+								},
+								["max_health"] = 4579,
+							},
 						},
 					},
+				},
+				["sells"] = {
+					[63398] = "-1:1:[3000000:0:0]",
+					[122248] = "-1:1:[5000000:0:0]",
+					[71033] = "-1:1:[15000000:0:0]",
+					[69210] = "-1:1:[2500000:0:0]",
+					[122260] = "-1:1:[5000000:0:0]",
+					[122264] = "-1:1:[5000000:0:0]",
+					[89193] = "-1:1:[2000000:0:0]",
+					[63353] = "-1:1:[1500000:0:0]",
+					[85508] = "-1:1:[1000000:0:0]",
+					[122245] = "-1:1:[5000000:0:0]",
+					[122249] = "-1:1:[5000000:0:0]",
+					[122253] = "-1:1:[5000000:0:0]",
+					[122261] = "-1:1:[5000000:0:0]",
+					[63125] = "-1:1:[30000000:0:0]",
+					[89194] = "-1:1:[1500000:0:0]",
+					[116666] = "-1:1:[40000000:0:0]",
+					[64401] = "-1:1:[2000000:0:0]",
+					[85509] = "-1:1:[1000000:0:0]",
+					[120352] = "-1:1:[1000000:0:0]",
+					[122246] = "-1:1:[5000000:0:0]",
+					[122250] = "-1:1:[5000000:0:0]",
+					[122254] = "-1:1:[5000000:0:0]",
+					[85666] = "-1:1:[30000000:0:0]",
+					[122262] = "-1:1:[5000000:0:0]",
+					[65362] = "-1:1:[3000000:0:0]",
+					[65364] = "-1:1:[5000000:0:0]",
+					[89195] = "-1:1:[2000000:0:0]",
+					[89191] = "-1:1:[2000000:0:0]",
+					[67107] = "-1:1:[15000000:0:0]",
+					[65435] = "-1:1:[1500000]",
+					[89190] = "-1:1:[1500000:0:0]",
+					[127011] = "-1:1:[5000000:0:0]",
+					[122252] = "-1:1:[5000000:0:0]",
+					[85510] = "-1:1:[1000000:0:0]",
+					[62799] = "-1:1:[1500000:0:0]",
+					[122247] = "-1:1:[5000000:0:0]",
+					[122251] = "-1:1:[5000000:0:0]",
+					[69209] = "-1:1:[1250000:0:0]",
+					[122255] = "-1:1:[5000000:0:0]",
+					[122263] = "-1:1:[5000000:0:0]",
+					[89192] = "-1:1:[1500000:0:0]",
+					[65498] = "-1:1:[1500000]",
+					[122256] = "-1:1:[5000000:0:0]",
+					[65274] = "-1:1:[5000000:0:0]",
+					[62800] = "-1:1:[1500000:0:0]",
+					[127012] = "-1:1:[5000000:0:0]",
+					[63138] = "-1:1:[3000000:0:0]",
+					[64400] = "-1:1:[1500000:0:0]",
+					[64402] = "-1:1:[3000000:0:0]",
+					[63207] = "-1:1:[3000000:0:0]",
+					[122266] = "-1:1:[5000000:0:0]",
+				},
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["FEMALE"] = true,
 				},
 			},
 			["183173"] = {
@@ -18256,122 +28893,90 @@ WoWDBProfilerData = {
 						},
 						["spells"] = {
 							[320716] = 2,
-							[320679] = 1,
 							[321000] = 3,
+							[320679] = 1,
 							[320707] = 2,
 						},
 					},
 				},
 			},
-			["154030"] = {
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:HOSTILE",
+			["5861"] = {
 				["encounter_data"] = {
-					["SCENARIO:167:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Torghast, Tower of the Damned:1763"] = {
-										["6:608:490"] = true,
-										["6:560:430"] = true,
-										["6:544:440"] = true,
-										["6:592:464"] = true,
-										["6:572:432"] = true,
-										["6:342:448"] = true,
-										["6:342:454"] = true,
-										["6:566:430"] = true,
-										["6:614:490"] = true,
-										["6:586:458"] = true,
-										["6:534:780"] = true,
-										["6:554:434"] = true,
-										["6:602:482"] = true,
-										["6:542:448"] = true,
-										["6:376:450"] = true,
-										["6:592:474"] = true,
-										["6:368:448"] = true,
-										["6:336:454"] = true,
-									},
-								},
-								["max_health"] = 24649,
-							},
-						},
-						["loot_counts"] = {
-							["drops"] = 3,
-						},
+					["NONE:0:false"] = {
 						["spells"] = {
-							[295929] = 6,
+							[18968] = 10,
 						},
-						["drops"] = {
-							"currency:2:1728", -- [1]
-							"currency:2:1728", -- [2]
-							"currency:8:1728", -- [3]
+						["stats"] = {
 						},
 					},
 				},
 			},
-			["176169"] = {
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["class"] = "WARRIOR",
+			["15604"] = {
 				["reaction"] = "60:Horde:FRIENDLY",
+				["class"] = "MAGE",
+				["genders"] = {
+					["FEMALE"] = true,
+				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
+								["max_health"] = 11320,
 								["locations"] = {
-									["Oribos:1670"] = {
-										["4:344:242"] = true,
-										["4:350:246"] = true,
-									},
-								},
-								["max_health"] = 11791,
-							},
-						},
-					},
-				},
-			},
-			["157016"] = {
-				["reaction"] = "60:Horde:HOSTILE",
-				["class"] = "MAGE",
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["encounter_data"] = {
-					["SCENARIO:167:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 10076,
-								["locations"] = {
-									["Torghast, Tower of the Damned:1783"] = {
-										["6:452:306"] = true,
-										["6:444:300"] = true,
-										["6:452:300"] = true,
+									["Thousand Needles:64"] = {
+										["3:770:756"] = true,
 									},
 								},
 								["power"] = "MANA:5751",
 							},
 						},
+					},
+				},
+			},
+			["142684"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["NONE:0:false"] = {
 						["loot_counts"] = {
-							["drops"] = 2,
+							["drops"] = 1,
+						},
+						["stats"] = {
+							["level_51"] = {
+								["locations"] = {
+									["Boulderfist Outpost:14"] = {
+										["3:254:482"] = true,
+									},
+								},
+								["max_health"] = 22895,
+							},
 						},
 						["spells"] = {
-							[319447] = 14,
-							[185493] = 3,
+							[8269] = 2,
+							[277014] = 2,
 						},
 						["drops"] = {
-							"money:9383", -- [1]
-							"currency:15:1728", -- [2]
-							"money:12343", -- [3]
-							"currency:4:1728", -- [4]
+							"currency:37:1553", -- [1]
 						},
 					},
 				},
 			},
-			["155795"] = {
+			["50035"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+						},
+						["spells"] = {
+							[79976] = 2,
+							[79977] = 2,
+						},
+					},
+				},
+			},
+			["8924"] = {
 				["reaction"] = "60:Horde:HOSTILE",
 				["class"] = "WARRIOR",
 				["genders"] = {
@@ -18380,72 +28985,69 @@ WoWDBProfilerData = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_60"] = {
+							["level_30"] = {
 								["locations"] = {
-									["Revendreth:1525"] = {
-										["3:416:784"] = true,
+									["Burning Steppes:35"] = {
+										["5:482:610"] = true,
+										["5:480:602"] = true,
 									},
 								},
-								["max_health"] = 11791,
+								["max_health"] = 3208,
 							},
 						},
 						["loot_counts"] = {
 							["drops"] = 1,
 						},
-						["spells"] = {
-							[330595] = 2,
-						},
 						["drops"] = {
-							"179314:1", -- [1]
-							"176859:1", -- [2]
-							"177809:1", -- [3]
+							"money:609", -- [1]
+							"18945:8", -- [2]
+							"11603:1", -- [3]
 						},
 					},
 				},
 			},
-			["47248"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[79849] = 1,
-						},
-						["stats"] = {
-						},
-					},
-				},
-			},
-			["175897"] = {
+			["15607"] = {
 				["reaction"] = "60:Horde:FRIENDLY",
-				["class"] = "ROGUE",
+				["class"] = "MAGE",
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["encounter_data"] = {
+					["PARTY:1:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["power"] = "MANA:5751",
+								["max_health"] = 11320,
+							},
+						},
+					},
+				},
+			},
+			["8319"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
 				["encounter_data"] = {
-					["NONE:0:false"] = {
+					["PARTY:1:false"] = {
 						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 11791,
-								["locations"] = {
-									["The Maw:1543"] = {
-										["3:340:222"] = true,
-									},
-								},
-								["power"] = "ENERGY:100",
+							["level_30"] = {
+								["max_health"] = 1604,
 							},
 						},
-						["spells"] = {
-							[346489] = 3,
+						["loot_counts"] = {
+							["drops"] = 8,
 						},
-					},
-				},
-			},
-			["84013"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["spells"] = {
-							[168475] = 21,
-						},
-						["stats"] = {
+						["drops"] = {
+							"money:866", -- [1]
+							"money:3526", -- [2]
+							"money:1822", -- [3]
+							"money:1679", -- [4]
+							"money:1776", -- [5]
+							"money:3442", -- [6]
+							"money:1019", -- [7]
+							"money:689", -- [8]
 						},
 					},
 				},
@@ -18465,123 +29067,59 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["164741"] = {
+			["77684"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[158240] = 3,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+			["48671"] = {
 				["genders"] = {
-					["FEMALE"] = true,
+					["UNKNOWN"] = true,
 				},
 				["class"] = "WARRIOR",
 				["reaction"] = "60:Horde:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Revendreth:1699"] = {
-										["4:578:588"] = true,
-										["4:568:592"] = true,
-										["4:574:564"] = true,
-										["4:566:584"] = true,
-										["4:576:594"] = true,
-										["4:578:582"] = true,
-										["4:574:600"] = true,
-										["4:564:572"] = true,
-										["4:576:570"] = true,
-										["4:560:588"] = true,
-										["4:560:608"] = true,
-										["4:562:614"] = true,
-										["4:570:572"] = true,
-										["4:568:606"] = true,
-										["4:562:596"] = true,
-									},
-								},
-								["max_health"] = 117910,
+							["level_30"] = {
+								["max_health"] = 1604,
 							},
 						},
 					},
 				},
 			},
-			["166120"] = {
-				["genders"] = {
-					["MALE"] = true,
-					["FEMALE"] = true,
-				},
-				["class"] = "WARRIOR",
+			["141615"] = {
 				["reaction"] = "60:Horde:HOSTILE",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Bastion:1533"] = {
-										["3:448:644"] = true,
-										["3:478:668"] = true,
-										["3:480:674"] = true,
-									},
-								},
-								["max_health"] = 11791,
-							},
-						},
-						["spells"] = {
-							[341274] = 5,
-						},
-					},
-				},
-			},
-			["160185"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["How long have I been chained? I'm ready for the rituals."] = true,
-						["Free from this wretched town. Anywhere is better than this."] = true,
-						["Agh! Enough of this torment!"] = true,
-						["Thank you. I shall return to where I belong."] = true,
-					},
-				},
-				["reaction"] = "60:Horde:NEUTRAL",
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Revendreth:1525"] = {
-										["3:418:730"] = true,
-										["3:408:748"] = true,
-										["3:412:728"] = true,
-										["3:416:740"] = true,
-									},
-								},
-								["max_health"] = 11791,
-							},
-						},
-						["loot_counts"] = {
-							["drops"] = 2,
-						},
-						["spells"] = {
-							[331026] = 8,
-							[321525] = 13,
-						},
-						["drops"] = {
-							"178133:1", -- [1]
-							"178133:1", -- [2]
-						},
-					},
-				},
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-			},
-			["176172"] = {
-				["reaction"] = "60:Horde:NEUTRAL",
 				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["spells"] = {
+							[259919] = 2,
+						},
 						["stats"] = {
-							["level_50"] = {
-								["max_health"] = 6182,
+							["level_52"] = {
+								["max_health"] = 183160,
 							},
+						},
+					},
+				},
+			},
+			["85627"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[170758] = 3,
+						},
+						["stats"] = {
 						},
 					},
 				},
@@ -18597,101 +29135,24 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["161388"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["Don't... chop me... up..."] = true,
-						["Face the power of necromancy!"] = true,
-					},
-				},
-				["genders"] = {
-					["MALE"] = true,
-					["FEMALE"] = true,
-				},
+			["59527"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Maldraxxus:1536"] = {
-										["3:538:674"] = true,
-										["3:532:666"] = true,
-										["3:514:670"] = true,
-										["3:524:670"] = true,
-										["3:534:656"] = true,
-									},
-								},
-								["max_health"] = 14149,
-							},
-						},
-						["loot_counts"] = {
-							["drops"] = 11,
 						},
 						["spells"] = {
-							[315076] = 43,
-							[312674] = 60,
-							[1604] = 1,
-							[315079] = 23,
-						},
-						["drops"] = {
-							"money:21645", -- [1]
-							"money:5358", -- [2]
-							"173202:3", -- [3]
-							"174231:1", -- [4]
-							"money:10896", -- [5]
-							"173202:3", -- [6]
-							"money:17432", -- [7]
-							"money:12561", -- [8]
-							"money:5307", -- [9]
-							"173204:1", -- [10]
-							"money:19073", -- [11]
-							"173202:2", -- [12]
-							"money:14802", -- [13]
-							"money:7960", -- [14]
-							"money:21504", -- [15]
-							"money:11059", -- [16]
+							[125239] = 2,
 						},
 					},
 				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:NEUTRAL",
 			},
-			["44865"] = {
-				["is_pvp"] = true,
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["faction"] = "Orgrimmar",
-				["auctioneer"] = true,
-				["class"] = "WARRIOR",
+			["54372"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Orgrimmar:85"] = {
-										["3:538:730"] = true,
-									},
-								},
-								["max_health"] = 35373,
-							},
+						["spells"] = {
+							[77558] = 24,
 						},
-					},
-				},
-				["reaction"] = "60:Horde:FRIENDLY",
-			},
-			["87234"] = {
-				["reaction"] = "60:Horde:NEUTRAL",
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["MALE"] = true,
-				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
 						["stats"] = {
-							["level_40"] = {
-								["max_health"] = 14778,
-							},
 						},
 					},
 				},
@@ -18707,59 +29168,31 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["178997"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["You there! That is the property of Cartel So!"] = true,
-					},
+			["175451"] = {
+				["reaction"] = "60:Horde:NEUTRAL",
+				["class"] = "WARRIOR",
+				["genders"] = {
+					["UNKNOWN"] = true,
 				},
-				["reaction"] = "60:Horde:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 93024,
-								["locations"] = {
-									["Oribos:1670"] = {
-										["4:364:236"] = true,
-										["4:386:244"] = true,
-										["4:378:250"] = true,
-										["4:362:244"] = true,
-										["4:386:252"] = true,
-										["4:368:224"] = true,
-										["4:366:230"] = true,
-										["4:370:238"] = true,
-										["4:380:244"] = true,
-										["4:378:256"] = true,
-										["4:378:238"] = true,
-										["4:378:232"] = true,
-										["4:360:230"] = true,
-										["4:364:250"] = true,
-										["4:370:248"] = true,
-										["4:372:230"] = true,
-										["4:374:224"] = true,
-										["4:360:224"] = true,
-									},
-								},
-								["power"] = "ENERGY:100",
+							["level_62"] = {
+								["max_health"] = 1179100,
 							},
-						},
-						["loot_counts"] = {
-							["drops"] = 1,
-						},
-						["spells"] = {
-							[358624] = 13,
-							[358638] = 24,
-						},
-						["drops"] = {
-							"money:4901", -- [1]
-							"186182:1", -- [2]
 						},
 					},
 				},
-				["class"] = "ROGUE",
-				["genders"] = {
-					["UNKNOWN"] = true,
+			},
+			["5856"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[744] = 1,
+						},
+						["stats"] = {
+						},
+					},
 				},
 			},
 			["164096"] = {
@@ -18869,92 +29302,60 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["157212"] = {
-				["quotes"] = {
-					["CHAT_MSG_MONSTER_SAY"] = {
-						["Your paragons deceive you."] = true,
-						["For Devos!"] = true,
-						["You are misguided."] = true,
-					},
+			["142676"] = {
+				["genders"] = {
+					["MALE"] = true,
 				},
+				["class"] = "WARRIOR",
 				["reaction"] = "60:Horde:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 106119,
+							["level_50"] = {
 								["locations"] = {
-									["Bastion:1533"] = {
-										["3:268:258"] = true,
-										["3:258:246"] = true,
-										["3:286:230"] = true,
+									["Arathi Highlands:14"] = {
+										["3:674:608"] = true,
 									},
 								},
-								["power"] = "MANA:2434",
+								["max_health"] = 4579,
 							},
 						},
 						["loot_counts"] = {
-							["drops"] = 3,
-						},
-						["spells"] = {
-							[326392] = 16,
-							[325498] = 15,
-							[325171] = 36,
-							[325119] = 14,
-							[315454] = 81,
-							[325591] = 24,
-							[325143] = 10,
+							["drops"] = 4,
 						},
 						["drops"] = {
-							"money:28447", -- [1]
-							"173202:1", -- [2]
-							"money:38985", -- [3]
-							"173202:1", -- [4]
-							"money:49375", -- [5]
+							"money:14298", -- [1]
+							"money:14239", -- [2]
+							"152576:3", -- [3]
+							"money:12179", -- [4]
+							"money:10715", -- [5]
 						},
 					},
 				},
-				["class"] = "PALADIN",
-				["genders"] = {
-					["MALE"] = true,
-					["FEMALE"] = true,
-				},
 			},
-			["170481"] = {
-				["reaction"] = "60:Horde:HOSTILE",
-				["class"] = "ROGUE",
+			["68"] = {
+				["is_pvp"] = true,
 				["genders"] = {
-					["UNKNOWN"] = true,
+					["FEMALE"] = true,
 				},
 				["encounter_data"] = {
 					["NONE:0:false"] = {
+						["spells"] = {
+							[95826] = 2,
+							[71507] = 72,
+						},
 						["stats"] = {
 							["level_60"] = {
-								["max_health"] = 11791,
-								["locations"] = {
-									["Ardenweald:1565"] = {
-										["3:378:552"] = true,
-										["3:390:554"] = true,
-										["3:402:568"] = true,
-										["3:378:566"] = true,
-										["3:386:560"] = true,
-										["3:404:562"] = true,
-										["3:396:550"] = true,
-										["3:380:558"] = true,
-										["3:398:560"] = true,
-									},
-								},
-								["power"] = "ENERGY:100",
+								["max_health"] = 17687,
 							},
-						},
-						["spells"] = {
-							[340975] = 83,
 						},
 					},
 				},
+				["class"] = "WARRIOR",
+				["reaction"] = "60:Horde:HOSTILE",
 			},
-			["161399"] = {
-				["reaction"] = "60:Horde:NEUTRAL",
+			["7846"] = {
+				["reaction"] = "60:Horde:HOSTILE",
 				["class"] = "WARRIOR",
 				["genders"] = {
 					["UNKNOWN"] = true,
@@ -18962,30 +29363,22 @@ WoWDBProfilerData = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_60"] = {
+							["level_30"] = {
 								["locations"] = {
-									["Maldraxxus:1536"] = {
-										["3:508:646"] = true,
-										["3:500:646"] = true,
+									["Blasted Lands:17"] = {
+										["3:538:446"] = true,
 									},
 								},
-								["max_health"] = 5896,
+								["max_health"] = 2406,
 							},
 						},
 						["loot_counts"] = {
-							["drops"] = 7,
-						},
-						["spells"] = {
-							[320671] = 3,
+							["drops"] = 1,
 						},
 						["drops"] = {
-							"176866:2", -- [1]
-							"176866:3", -- [2]
-							"176866:3", -- [3]
-							"176866:3", -- [4]
-							"176866:2", -- [5]
-							"176866:2", -- [6]
-							"176866:2", -- [7]
+							"10593:1", -- [1]
+							"10169:1", -- [2]
+							"60388:1", -- [3]
 						},
 					},
 				},
@@ -19040,7 +29433,7 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["158040"] = {
+			["62346"] = {
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
@@ -19049,48 +29442,9 @@ WoWDBProfilerData = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Maldraxxus:1536"] = {
-										["3:472:588"] = true,
-										["3:466:596"] = true,
-										["3:460:592"] = true,
-										["3:472:594"] = true,
-										["3:456:598"] = true,
-										["3:450:592"] = true,
-									},
-								},
-								["max_health"] = 23583,
+							["level_-1"] = {
+								["max_health"] = 730958,
 							},
-						},
-						["loot_counts"] = {
-							["drops"] = 19,
-						},
-						["spells"] = {
-							[330574] = 29,
-							[330569] = 29,
-							[1604] = 6,
-						},
-						["drops"] = {
-							"176868:1", -- [1]
-							"176876:1", -- [2]
-							"176868:3", -- [3]
-							"176868:3", -- [4]
-							"176868:3", -- [5]
-							"176868:1", -- [6]
-							"176876:1", -- [7]
-							"176868:1", -- [8]
-							"176868:1", -- [9]
-							"176876:2", -- [10]
-							"176876:2", -- [11]
-							"176868:1", -- [12]
-							"176876:2", -- [13]
-							"176876:2", -- [14]
-							"176885:1", -- [15]
-							"176868:4", -- [16]
-							"176868:4", -- [17]
-							"176868:4", -- [18]
-							"176868:4", -- [19]
 						},
 					},
 				},
@@ -19119,14 +29473,28 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["158752"] = {
+			["175407"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "ROGUE",
+				["reaction"] = "60:Horde:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-						},
-						["spells"] = {
-							[322931] = 2,
-							[322930] = 1,
+							["level_60"] = {
+								["max_health"] = 117910,
+								["locations"] = {
+									["Revendreth:1700"] = {
+										["4:546:534"] = true,
+										["4:536:580"] = true,
+										["4:536:562"] = true,
+										["4:556:526"] = true,
+										["4:540:548"] = true,
+									},
+								},
+								["power"] = "ENERGY:1000",
+							},
 						},
 					},
 				},
@@ -19162,56 +29530,91 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["172871"] = {
+			["166159"] = {
+				["reaction"] = "60:Horde:HOSTILE",
+				["class"] = "PALADIN",
 				["genders"] = {
 					["UNKNOWN"] = true,
 				},
-				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["max_health"] = 11791,
+								["locations"] = {
+									["Ardenweald:1565"] = {
+										["3:612:246"] = true,
+									},
+								},
+								["power"] = "ENERGY:2434",
+							},
+						},
+						["loot_counts"] = {
+							["drops"] = 1,
+						},
+						["spells"] = {
+							[310026] = 7,
+							[310037] = 4,
+							[310041] = 3,
+							[215056] = 1,
+							[330632] = 3,
+							[270831] = 2,
+						},
+						["drops"] = {
+							"178175:1", -- [1]
+						},
+					},
+				},
+			},
+			["172247"] = {
+				["genders"] = {
+					["MALE"] = true,
+				},
+				["class"] = "PALADIN",
 				["reaction"] = "60:Horde:FRIENDLY",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 							["level_60"] = {
+								["max_health"] = 29478,
 								["locations"] = {
-									["Maldraxxus:1536"] = {
-										["3:590:340"] = true,
+									["Ardenweald:1565"] = {
+										["3:692:288"] = true,
 									},
 								},
-								["max_health"] = 35373,
+								["power"] = "MANA:2434",
 							},
 						},
 					},
 				},
 			},
-			["168526"] = {
+			["11687"] = {
 				["genders"] = {
-					["UNKNOWN"] = true,
+					["MALE"] = true,
 				},
 				["class"] = "WARRIOR",
 				["reaction"] = "60:Horde:HOSTILE",
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
-							["level_60"] = {
+							["level_30"] = {
 								["locations"] = {
-									["Revendreth:1525"] = {
-										["3:396:822"] = true,
+									["Desolace:67"] = {
+										["5:200:470"] = true,
+										["5:226:466"] = true,
+										["5:208:370"] = true,
 									},
 								},
-								["max_health"] = 235820,
+								["max_health"] = 1604,
 							},
 						},
-					},
-				},
-			},
-			["162874"] = {
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
+						["loot_counts"] = {
+							["drops"] = 3,
 						},
-						["spells"] = {
-							[166242] = 8,
-							[337903] = 2,
+						["drops"] = {
+							"money:1309", -- [1]
+							"money:679", -- [2]
+							"money:3429", -- [3]
 						},
 					},
 				},
@@ -19238,17 +29641,14 @@ WoWDBProfilerData = {
 					},
 				},
 			},
-			["349898"] = {
+			["63755"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["stats"] = {
 						},
-						["loot_counts"] = {
-							["drops"] = 1,
-						},
-						["drops"] = {
-							"171828:4", -- [1]
-							"171840:2", -- [2]
+						["spells"] = {
+							[127907] = 4,
+							[127913] = 2,
 						},
 					},
 				},
@@ -19298,82 +29698,121 @@ WoWDBProfilerData = {
 					["FEMALE"] = true,
 				},
 			},
-			["158054"] = {
-				["reaction"] = "60:Horde:HOSTILE",
-				["class"] = "WARRIOR",
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
+			["36385"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Bastion:1533"] = {
-										["3:510:588"] = true,
-									},
-								},
-								["max_health"] = 11791,
-							},
-						},
-						["loot_counts"] = {
-							["drops"] = 1,
-						},
 						["spells"] = {
-							[319560] = 3,
+							[68658] = 3,
 						},
-						["drops"] = {
-							"173362:1", -- [1]
+						["stats"] = {
 						},
 					},
 				},
 			},
-			["173509"] = {
-				["genders"] = {
-					["UNKNOWN"] = true,
-				},
-				["class"] = "WARRIOR",
-				["reaction"] = "60:Horde:NEUTRAL",
+			["80748"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["locations"] = {
-									["Maldraxxus:1536"] = {
-										["3:656:252"] = true,
-									},
-								},
-								["max_health"] = 8843,
-							},
-						},
-						["loot_counts"] = {
-							["drops"] = 2,
-						},
 						["spells"] = {
-							[331412] = 2,
+							[172449] = 3,
 						},
-						["drops"] = {
-							"176869:2", -- [1]
-							"176869:2", -- [2]
+						["stats"] = {
 						},
 					},
 				},
 			},
-			["158713"] = {
+			["6566"] = {
 				["reaction"] = "60:Horde:FRIENDLY",
-				["class"] = "MAGE",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_60"] = {
+								["locations"] = {
+									["Orgrimmar:85"] = {
+										["3:568:900"] = true,
+									},
+								},
+								["max_health"] = 12027,
+							},
+						},
+					},
+				},
+				["sells"] = {
+					[122340] = "-1:1:[10000000:0:0]",
+					[122356] = "-1:1:[5000000:0:0]",
+					[122364] = "-1:1:[6500000:0:0]",
+					[122372] = "-1:1:[5000000:0:0]",
+					[122380] = "-1:1:[5000000:0:0]",
+					[122388] = "-1:1:[5000000:0:0]",
+					[122666] = "-1:1:[7000000:0:0]",
+					[151614] = "-1:1:[20000000:0:0]",
+					[122341] = "-1:1:[15000000:0:0]",
+					[122349] = "-1:1:[7500000:0:0]",
+					[122357] = "-1:1:[5000000:0:0]",
+					[122365] = "-1:1:[7500000:0:0]",
+					[122373] = "-1:1:[5000000:0:0]",
+					[122381] = "-1:1:[5000000:0:0]",
+					[122389] = "-1:1:[6500000:0:0]",
+					[140773] = "-1:1:[6500000:0:0]",
+					[122667] = "-1:1:[7000000:0:0]",
+					[187875] = "-1:1:[100000000:0:0]",
+					[122350] = "-1:1:[6500000:0:0]",
+					[122358] = "-1:1:[5000000:0:0]",
+					[122366] = "-1:1:[7500000:0:0]",
+					[122374] = "-1:1:[5000000:0:0]",
+					[122382] = "-1:1:[5000000:0:0]",
+					[122390] = "-1:1:[5000000:0:0]",
+					[167731] = "-1:1:[50000000:0:0]",
+					[150745] = "-1:1:[100000000:0:0]",
+					[127010] = "-1:1:[5000000:0:0]",
+					[167732] = "-1:1:[75000000:0:0]",
+					[122359] = "-1:1:[5000000:0:0]",
+					[122367] = "-1:1:[6500000:0:0]",
+					[122375] = "-1:1:[5000000:0:0]",
+					[122383] = "-1:1:[5000000:0:0]",
+					[122391] = "-1:1:[5000000:0:0]",
+					[187895] = "-1:1:[100000000:0:0]",
+					[122352] = "-1:1:[7500000:0:0]",
+					[122360] = "-1:1:[5000000:0:0]",
+					[122368] = "-1:1:[7500000:0:0]",
+					[122376] = "-1:1:[5000000:0:0]",
+					[122384] = "-1:1:[5000000:0:0]",
+					[122392] = "-1:1:[5000000:0:0]",
+					[187896] = "-1:1:[100000000:0:0]",
+					[122662] = "-1:1:[7000000:0:0]",
+					[187897] = "-1:1:[100000000:0:0]",
+					[122353] = "-1:1:[7500000:0:0]",
+					[122361] = "-1:1:[7000000:0:0]",
+					[122369] = "-1:1:[6500000:0:0]",
+					[122377] = "-1:1:[5000000:0:0]",
+					[122385] = "-1:1:[6500000:0:0]",
+					[187898] = "-1:1:[100000000:0:0]",
+					[122663] = "-1:1:[7000000:0:0]",
+					[122338] = "-1:1:[5000000:0:0]",
+					[122354] = "-1:1:[6500000:0:0]",
+					[122362] = "-1:1:[7000000:0:0]",
+					[122370] = "-1:1:[7000000:0:0]",
+					[122378] = "-1:1:[5000000:0:0]",
+					[122386] = "-1:1:[7500000:0:0]",
+					[187900] = "-1:1:[100000000:0:0]",
+					[122664] = "-1:1:[7000000:0:0]",
+					[187869] = "-1:1:[100000000:0:0]",
+					[122339] = "-1:1:[7500000:0:0]",
+					[122355] = "-1:1:[5000000:0:0]",
+					[122363] = "-1:1:[7500000:0:0]",
+					[122379] = "-1:1:[5000000:0:0]",
+					[187997] = "-1:1:[50000000:0:0]",
+					[122530] = "-1:1:[7000000:0:0]",
+					[122668] = "-1:1:[7000000:0:0]",
+					[150744] = "-1:1:[100000000:0:0]",
+					[187899] = "-1:1:[100000000:0:0]",
+					[122351] = "-1:1:[6500000:0:0]",
+					[187998] = "-1:1:[75000000:0:0]",
+					[122387] = "-1:1:[5000000:0:0]",
+					[151615] = "-1:1:[30000000:0:0]",
+				},
+				["class"] = "WARRIOR",
 				["genders"] = {
 					["FEMALE"] = true,
-				},
-				["encounter_data"] = {
-					["NONE:0:false"] = {
-						["stats"] = {
-							["level_60"] = {
-								["max_health"] = 9433,
-								["power"] = "MANA:5751",
-							},
-						},
-					},
 				},
 			},
 		},
@@ -19395,6 +29834,65 @@ WoWDBProfilerData = {
 			},
 		},
 		["quests"] = {
+			[24745] = {
+				["classes"] = {
+					["DEMONHUNTER"] = true,
+				},
+				["races"] = {
+					["NightElf"] = true,
+				},
+				["begin"] = {
+					["PLAYER:0"] = true,
+				},
+			},
+			[62700] = {
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["begin"] = {
+					["NPC:164937"] = true,
+				},
+			},
+			[59660] = {
+				["begin"] = {
+					["NPC:161979"] = true,
+				},
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["end"] = {
+					["NPC:164966"] = true,
+				},
+				["reward_text"] = "This court isn't going to throw itself. Let's get to work!",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
+			[25771] = {
+				["begin"] = {
+					["ITEM:0"] = true,
+				},
+				["progress_text"] = "Well? Draenethyst?",
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["end"] = {
+					["NPC:7363"] = true,
+				},
+				["reward_text"] = "Just a shard?  Pfuh!  This gets me nothing!  Take your reward and get out of my sight.\n\nSounds familiar?  It should, because I say it a thousand times per day.\n\nOh how I loathe this world.\r\n",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
+			[40753] = {
+				["reward_text"] = "While I am programmed for gift distribution, my observations indicate that you are programmed for gift reception.\n\nShall we engage in a mutually-favorable transaction?",
+				["end"] = {
+					["NPC:101527"] = true,
+				},
+			},
 			[60061] = {
 				["begin"] = {
 					["NPC:159270"] = true,
@@ -19406,22 +29904,6 @@ WoWDBProfilerData = {
 					["NPC:159270"] = true,
 				},
 				["reward_text"] = "Thank you! We are so grateful for your help with slaying those cretins, and rescuing our people.",
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-			},
-			[60063] = {
-				["begin"] = {
-					["NPC:167047"] = true,
-				},
-				["progress_text"] = "Were you able to help the poor silkstriders calm down, and get their silk?",
-				["races"] = {
-					["Scourge"] = true,
-				},
-				["end"] = {
-					["NPC:167047"] = true,
-				},
-				["reward_text"] = "Wonderful job! I'm sure the silkstriders appreciated the song you played. You look like someone who appreciates the fine arts.",
 				["classes"] = {
 					["WARRIOR"] = true,
 				},
@@ -19441,19 +29923,211 @@ WoWDBProfilerData = {
 					["WARRIOR"] = true,
 				},
 			},
-			[63977] = {
+			[59319] = {
 				["begin"] = {
-					["NPC:178908"] = true,
+					["NPC:164741"] = true,
 				},
 				["races"] = {
 					["Scourge"] = true,
 				},
 				["end"] = {
-					["NPC:178908"] = true,
+					["NPC:164741"] = true,
 				},
-				["reward_text"] = "How rude! They should be aware of who they are talking to.\r\n\r\nI apologize for my kin, Maw Walker.",
+				["reward_text"] = "The mission will be a complete success, I have no doubt.",
 				["classes"] = {
 					["WARRIOR"] = true,
+				},
+			},
+			[63133] = {
+				["begin"] = {
+					["PLAYER:0"] = true,
+				},
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["end"] = {
+					["NPC:162804"] = true,
+				},
+				["reward_text"] = "Ah, I have not seen these runes used in quite some time. An ancient broker method of encryption.\r\n\r\nThis will be useful should I ever intercept cartel communications.",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
+			[60470] = {
+				["begin"] = {
+					["NPC:168455"] = true,
+				},
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["end"] = {
+					["PLAYER:0"] = true,
+				},
+				["reward_text"] = "Sabina's end has found her. Ash is all that remains.",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
+			[24636] = {
+				["classes"] = {
+					["DRUID"] = true,
+				},
+				["races"] = {
+					["Troll"] = true,
+				},
+				["begin"] = {
+					["NPC:37675"] = true,
+				},
+			},
+			[60399] = {
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["begin"] = {
+					["NPC:165302"] = true,
+				},
+			},
+			[59661] = {
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["begin"] = {
+					["NPC:164966"] = true,
+				},
+			},
+			[29736] = {
+				["reward_text"] = "Your spirit burns with life, young <class>.  I accept the homage you pay, and offer in return this token...",
+				["end"] = {
+					["NPC:55218"] = true,
+				},
+			},
+			[29738] = {
+				["reward_text"] = "The heavens, in their countless stars, hold answers to earthly mysteries, <name>.  Might, then, the wise, and the lucky, gaze up and find truth?",
+				["end"] = {
+					["NPC:55228"] = true,
+				},
+			},
+			[29740] = {
+				["reward_text"] = "The heavens, in their countless stars, hold answers to earthly mysteries, <name>.  Might, then, the wise, and the lucky, gaze up and find truth?",
+				["end"] = {
+					["NPC:55227"] = true,
+				},
+			},
+			[29742] = {
+				["reward_text"] = "All tol'vir were once as I am. Now, my people are flesh and blood, and more in need of the wisdom of the ages than ever before.",
+				["end"] = {
+					["NPC:55211"] = true,
+				},
+			},
+			[8713] = {
+				["reward_text"] = "The heavens, in their countless stars, hold answers to earthly mysteries, <name>.  Might, then, the wise, and the lucky, gaze up and find truth?",
+				["end"] = {
+					["NPC:15593"] = true,
+				},
+			},
+			[62284] = {
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["begin"] = {
+					["NPC:174922"] = true,
+				},
+			},
+			[60271] = {
+				["begin"] = {
+					["NPC:162804"] = true,
+				},
+				["progress_text"] = "Were you able to acquire the anima?",
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["end"] = {
+					["NPC:162804"] = true,
+				},
+				["reward_text"] = "Your success continues to impress, Maw Walker.\r\n\r\nThough I admit, such feats are becoming less unexpected as I come to know you more.",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
+			[8716] = {
+				["reward_text"] = "The heavens, in their countless stars, hold answers to earthly mysteries, <name>.  Might, then, the wise, and the lucky, gaze up and find truth?",
+				["end"] = {
+					["NPC:15596"] = true,
+				},
+			},
+			[8717] = {
+				["reward_text"] = "The heavens, in their countless stars, hold answers to earthly mysteries, <name>.  Might, then, the wise, and the lucky, gaze up and find truth?",
+				["end"] = {
+					["NPC:15597"] = true,
+				},
+			},
+			[60268] = {
+				["begin"] = {
+					["NPC:164937"] = true,
+				},
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["end"] = {
+					["NPC:164937"] = true,
+				},
+				["reward_text"] = "You could be the key to my freedom. Will you help me, mortal?",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
+			[63066] = {
+				["begin"] = {
+					["NPC:172605"] = true,
+				},
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["end"] = {
+					["NPC:164739"] = true,
+				},
+				["reward_text"] = "It is time to begin restoring anima to the Shadowlands.",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
+			[8720] = {
+				["reward_text"] = "The heavens, in their countless stars, hold answers to earthly mysteries, <name>.  Might, then, the wise, and the lucky, gaze up and find truth?",
+				["end"] = {
+					["NPC:15600"] = true,
+				},
+			},
+			[8721] = {
+				["reward_text"] = "The heavens, in their countless stars, hold answers to earthly mysteries, <name>.  Might, then, the wise, and the lucky, gaze up and find truth?",
+				["end"] = {
+					["NPC:15601"] = true,
+				},
+			},
+			[8722] = {
+				["reward_text"] = "The heavens, in their countless stars, hold answers to earthly mysteries, <name>.  Might, then, the wise, and the lucky, gaze up and find truth?",
+				["end"] = {
+					["NPC:15602"] = true,
+				},
+			},
+			[8723] = {
+				["reward_text"] = "The heavens, in their countless stars, hold answers to earthly mysteries, <name>.  Might, then, the wise, and the lucky, gaze up and find truth?",
+				["end"] = {
+					["NPC:15603"] = true,
+				},
+			},
+			[8724] = {
+				["reward_text"] = "The heavens, in their countless stars, hold answers to earthly mysteries, <name>.  Might, then, the wise, and the lucky, gaze up and find truth?",
+				["end"] = {
+					["NPC:15604"] = true,
 				},
 			},
 			[63979] = {
@@ -19472,22 +30146,38 @@ WoWDBProfilerData = {
 					["WARRIOR"] = true,
 				},
 			},
-			[59319] = {
+			[60427] = {
 				["begin"] = {
-					["NPC:164741"] = true,
+					["NPC:158653"] = true,
+				},
+				["progress_text"] = "Have you completed your task?",
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["end"] = {
+					["NPC:158653"] = true,
+				},
+				["reward_text"] = "The Archon has sent word of your deeds, and agreed to support us in the battles to come. We will fix this broken cycle, with steps such as this leading the way.",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
+			[60431] = {
+				["begin"] = {
+					["NPC:158653"] = true,
 				},
 				["races"] = {
 					["Scourge"] = true,
 				},
 				["end"] = {
-					["NPC:164741"] = true,
+					["NPC:158653"] = true,
 				},
-				["reward_text"] = "The mission will be a complete success, I have no doubt.",
+				["reward_text"] = "The <class>s of Maldraxxus speak your name, a great victory to have achieved this day. The balance of power will be restored one day, and our alliances will pay dividends.",
 				["classes"] = {
 					["WARRIOR"] = true,
 				},
 			},
-			[62284] = {
+			[60394] = {
 				["classes"] = {
 					["WARRIOR"] = true,
 				},
@@ -19495,7 +30185,364 @@ WoWDBProfilerData = {
 					["Scourge"] = true,
 				},
 				["begin"] = {
-					["NPC:174922"] = true,
+					["NPC:165302"] = true,
+				},
+			},
+			[60422] = {
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["begin"] = {
+					["NPC:158653"] = true,
+				},
+			},
+			[60062] = {
+				["begin"] = {
+					["OBJECT:350804"] = true,
+				},
+				["progress_text"] = "I lost my harp! It was taken and broken by those terrible creatures.",
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["end"] = {
+					["NPC:167047"] = true,
+				},
+				["reward_text"] = "You found my harp! And the missing pieces. Just one moment, and I can fix it.",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
+			[60066] = {
+				["begin"] = {
+					["NPC:159270"] = true,
+				},
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["end"] = {
+					["NPC:158556"] = true,
+				},
+				["reward_text"] = "Thank you for this silk! But... I see you brought something extra as well.\r\n\r\nThis little silkstrider will be safe now. I swear it.",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
+			[62371] = {
+				["reward_text"] = "Word of your aid has been sung through the roots. Thank you, friend of the forest.",
+				["end"] = {
+					["NPC:168032"] = true,
+				},
+			},
+			[57661] = {
+				["begin"] = {
+					["NPC:158556"] = true,
+				},
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["end"] = {
+					["NPC:159270"] = true,
+				},
+				["reward_text"] = "Of course silk shipments have stopped!\r\n\r\nThe entire glade has been attacked by changelings and spriggans! Our poor silkstriders are so stressed out, we can't get any silk from them!\r\n\r\nCan you help us?",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
+			[61729] = {
+				["reward_text"] = "Rahel has arrived from Darkhaven to assist us with, and I quote, \"killing anybody.\" She is quite eager to enter the fray.\r\n\r\nShe seemed rather upbeat at the prospect of working with you again, <name>.",
+				["end"] = {
+					["NPC:164741"] = true,
+				},
+			},
+			[60467] = {
+				["begin"] = {
+					["NPC:168455"] = true,
+				},
+				["progress_text"] = "Sabina remains unresponsive.",
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["end"] = {
+					["NPC:168455"] = true,
+				},
+				["reward_text"] = "<Sabina begins to stir. >\r\n\r\nAre... are they back? Help... help me.",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
+			[60721] = {
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["begin"] = {
+					["NPC:164739"] = true,
+				},
+			},
+			[8714] = {
+				["reward_text"] = "The heavens, in their countless stars, hold answers to earthly mysteries, <name>.  Might, then, the wise, and the lucky, gaze up and find truth?",
+				["end"] = {
+					["NPC:15594"] = true,
+				},
+			},
+			[58062] = {
+				["begin"] = {
+					["NPC:160091"] = true,
+				},
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["end"] = {
+					["NPC:160081"] = true,
+				},
+				["reward_text"] = "I have hoped for your eventual arrival, Maw Walker. \r\n\r\nDracho is no longer a partner of ours. Normally we would extend this punishment to you for attempting to subvert our rules. But you being who you are... changes things.\r\n\r\nLet's strike a deal. \r\n\r\nYou bring things of interest to me directly. No middlemen. No tricks. \r\n\r\nWe provide payment and our wares when necessary. Do we have a deal?",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
+			[8866] = {
+				["reward_text"] = "It is good to know the people of this land still pay homage to the olden races.  I bid you well, <name>, and offer you this token...",
+				["end"] = {
+					["NPC:15871"] = true,
+				},
+			},
+			[8727] = {
+				["reward_text"] = "The heavens, in their countless stars, hold answers to earthly mysteries, <name>.  Might, then, the wise, and the lucky, gaze up and find truth?",
+				["end"] = {
+					["NPC:15607"] = true,
+				},
+			},
+			[8680] = {
+				["reward_text"] = "Your spirit burns with life, young <class>.  I accept the homage you pay, and offer in return this token...",
+				["end"] = {
+					["NPC:15582"] = true,
+				},
+			},
+			[8719] = {
+				["reward_text"] = "The heavens, in their countless stars, hold answers to earthly mysteries, <name>.  Might, then, the wise, and the lucky, gaze up and find truth?",
+				["end"] = {
+					["NPC:15599"] = true,
+				},
+			},
+			[8725] = {
+				["reward_text"] = "The heavens, in their countless stars, hold answers to earthly mysteries, <name>.  Might, then, the wise, and the lucky, gaze up and find truth?",
+				["end"] = {
+					["NPC:15605"] = true,
+				},
+			},
+			[60267] = {
+				["reward_text"] = "<As you place the key into the device, it shudders for a moment and begins to unlock.>",
+				["end"] = {
+					["OBJECT:351877"] = true,
+				},
+			},
+			[8676] = {
+				["reward_text"] = "Your spirit burns with life, young <class>.  I accept the homage you pay, and offer in return this token...",
+				["end"] = {
+					["NPC:15578"] = true,
+				},
+			},
+			[8619] = {
+				["reward_text"] = "It is good to know the people of this land still pay homage to the olden races.  I bid you well, <name>, and offer you this token...",
+				["end"] = {
+					["NPC:15549"] = true,
+				},
+			},
+			[62797] = {
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["begin"] = {
+					["NPC:164937"] = true,
+				},
+			},
+			[8675] = {
+				["reward_text"] = "Your spirit burns with life, young <class>.  I accept the homage you pay, and offer in return this token...",
+				["end"] = {
+					["NPC:15577"] = true,
+				},
+			},
+			[8674] = {
+				["reward_text"] = "Your spirit burns with life, young <class>.  I accept the homage you pay, and offer in return this token...",
+				["end"] = {
+					["NPC:15576"] = true,
+				},
+			},
+			[60269] = {
+				["begin"] = {
+					["NPC:164937"] = true,
+				},
+				["progress_text"] = "Have you found what was taken from me?",
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["end"] = {
+					["NPC:164937"] = true,
+				},
+				["reward_text"] = "It's been an age since I knew anything other than the contours of this hellish prison.\r\n\r\nThank you, mortal. Now to aid you.",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
+			[64210] = {
+				["begin"] = {
+					["NPC:179598"] = true,
+				},
+				["progress_text"] = "Ah, you return.",
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["end"] = {
+					["NPC:164937"] = true,
+				},
+				["reward_text"] = "Ah... a curious device. Anchoring it in this place will prove useful.",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
+			[60469] = {
+				["begin"] = {
+					["NPC:168455"] = true,
+				},
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["end"] = {
+					["NPC:168455"] = true,
+				},
+				["reward_text"] = "They've perished? Are you sure? Who could have done something so cruel...",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
+			[60281] = {
+				["reward_text"] = "Fine work. This should keep the both of us safe from the Mawsworn. \r\n\r\nI will hold onto the sphere that you found for the purpose of study.\r\n\r\nDon't you have other matters to attend to?",
+				["progress_text"] = "Have you learned anything of Inquisitor Devaki's tracking methods?",
+				["end"] = {
+					["NPC:162804"] = true,
+				},
+			},
+			[60063] = {
+				["begin"] = {
+					["NPC:167047"] = true,
+				},
+				["progress_text"] = "Were you able to help the poor silkstriders calm down, and get their silk?",
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["end"] = {
+					["NPC:167047"] = true,
+				},
+				["reward_text"] = "Wonderful job! I'm sure the silkstriders appreciated the song you played. You look like someone who appreciates the fine arts.",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
+			[8635] = {
+				["reward_text"] = "The battles of ages past are seeds from which legends grow.  Yours is a time of heroes, young one.  May your legend take root, thrive.\n\nI bid you well, <name>, and offer you this token...",
+				["end"] = {
+					["NPC:15556"] = true,
+				},
+			},
+			[63976] = {
+				["begin"] = {
+					["NPC:156688"] = true,
+				},
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["end"] = {
+					["NPC:178908"] = true,
+				},
+				["reward_text"] = "It is a pleasure to meet you.",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
+			[63980] = {
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["begin"] = {
+					["NPC:178908"] = true,
+				},
+			},
+			[8670] = {
+				["reward_text"] = "Your spirit burns with life, young <class>.  I accept the homage you pay, and offer in return this token...",
+				["end"] = {
+					["NPC:15572"] = true,
+				},
+			},
+			[29739] = {
+				["reward_text"] = "The heavens, in their countless stars, hold answers to earthly mysteries, <name>.  Might, then, the wise, and the lucky, gaze up and find truth?",
+				["end"] = {
+					["NPC:55224"] = true,
+				},
+			},
+			[29741] = {
+				["reward_text"] = "All tol'vir were once as I am. Now, my people are flesh and blood, and more in need of the wisdom of the ages than ever before.",
+				["end"] = {
+					["NPC:55210"] = true,
+				},
+			},
+			[24536] = {
+				["classes"] = {
+					["DRUID"] = true,
+				},
+				["races"] = {
+					["Troll"] = true,
+					["ZandalariTroll"] = true,
+				},
+				["begin"] = {
+					["NPC:37172"] = true,
+				},
+			},
+			[62730] = {
+				["reward_text"] = "Yes, this very sweet and ripe. Must use quickly, before it spoils!",
+				["progress_text"] = "You find sweet Purian?",
+				["end"] = {
+					["NPC:170284"] = true,
+				},
+			},
+			[8636] = {
+				["reward_text"] = "The stuff of life is doomed to die and return to the earth, but the stuff of spirit lives eternal.  I bid you well, <name>, and offer you this token...",
+				["end"] = {
+					["NPC:15557"] = true,
+				},
+			},
+			[8650] = {
+				["reward_text"] = "It is good to know the people of this land still pay homage to the olden races.  I bid you well, <name>, and offer you this token...",
+				["end"] = {
+					["NPC:15566"] = true,
+				},
+			},
+			[62869] = {
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+				["progress_text"] = "How fares your endeavors?",
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["begin"] = {
+					["NPC:164738"] = true,
+				},
+			},
+			[61222] = {
+				["reward_text"] = "Thank you for freeing me, Maw Walker.\r\n\r\nAllow me to repay your kindness by assisting you.",
+				["end"] = {
+					["NPC:171898"] = true,
 				},
 			},
 			[60270] = {
@@ -19509,6 +30556,146 @@ WoWDBProfilerData = {
 					["NPC:162804"] = true,
 				},
 				["reward_text"] = "Breaking a prisoner's chains? I'm not sure I know how that could be done, unless...\n\nIt's dangerous, but I believe there may be a way.",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
+			[60468] = {
+				["begin"] = {
+					["NPC:168455"] = true,
+				},
+				["progress_text"] = "Have you found the key?",
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["end"] = {
+					["NPC:168455"] = true,
+				},
+				["reward_text"] = "This looks like it could fit.",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
+			[8642] = {
+				["reward_text"] = "It is good to know the people of this land still pay homage to the olden races.  I bid you well, <name>, and offer you this token...",
+				["end"] = {
+					["NPC:15558"] = true,
+				},
+			},
+			[8643] = {
+				["reward_text"] = "It is good to know the people of this land still pay homage to the olden races.  I bid you well, <name>, and offer you this token...",
+				["end"] = {
+					["NPC:15559"] = true,
+				},
+			},
+			[8644] = {
+				["reward_text"] = "It is good to know the people of this land still pay homage to the olden races.  I bid you well, <name>, and offer you this token...",
+				["end"] = {
+					["NPC:15560"] = true,
+				},
+			},
+			[8645] = {
+				["reward_text"] = "It is good to know the people of this land still pay homage to the olden races.  I bid you well, <name>, and offer you this token...",
+				["end"] = {
+					["NPC:15561"] = true,
+				},
+			},
+			[8646] = {
+				["reward_text"] = "It is good to know the people of this land still pay homage to the olden races.  I bid you well, <name>, and offer you this token...",
+				["end"] = {
+					["NPC:15562"] = true,
+				},
+			},
+			[8647] = {
+				["reward_text"] = "It is good to know the people of this land still pay homage to the olden races.  I bid you well, <name>, and offer you this token...",
+				["end"] = {
+					["NPC:15563"] = true,
+				},
+			},
+			[8648] = {
+				["reward_text"] = "It is good to know the people of this land still pay homage to the olden races.  I bid you well, <name>, and offer you this token...",
+				["end"] = {
+					["NPC:15564"] = true,
+				},
+			},
+			[8649] = {
+				["reward_text"] = "It is good to know the people of this land still pay homage to the olden races.  I bid you well, <name>, and offer you this token...",
+				["end"] = {
+					["NPC:15565"] = true,
+				},
+			},
+			[60250] = {
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["begin"] = {
+					["NPC:167881"] = true,
+				},
+			},
+			[8651] = {
+				["reward_text"] = "It is good to know the people of this land still pay homage to the olden races.  I bid you well, <name>, and offer you this token...",
+				["end"] = {
+					["NPC:15567"] = true,
+				},
+			},
+			[8652] = {
+				["reward_text"] = "It is good to know the people of this land still pay homage to the olden races.  I bid you well, <name>, and offer you this token...",
+				["end"] = {
+					["NPC:15568"] = true,
+				},
+			},
+			[8653] = {
+				["reward_text"] = "It is good to know the people of this land still pay homage to the olden races.  I bid you well, <name>, and offer you this token...",
+				["end"] = {
+					["NPC:15569"] = true,
+				},
+			},
+			[8654] = {
+				["reward_text"] = "It is good to know the people of this land still pay homage to the olden races.  I bid you well, <name>, and offer you this token...",
+				["end"] = {
+					["NPC:15570"] = true,
+				},
+			},
+			[63064] = {
+				["begin"] = {
+					["NPC:172605"] = true,
+				},
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["end"] = {
+					["NPC:164741"] = true,
+				},
+				["reward_text"] = "We have much to accomplish, and as resourceful as you are, you are not able to be in all places at once.",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
+			[60401] = {
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["begin"] = {
+					["NPC:164741"] = true,
+				},
+			},
+			[60444] = {
+				["begin"] = {
+					["NPC:165291"] = true,
+				},
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["end"] = {
+					["NPC:165291"] = true,
+				},
+				["reward_text"] = "The sins of the doubtful have been purged.",
 				["classes"] = {
 					["WARRIOR"] = true,
 				},
@@ -19529,10 +30716,41 @@ WoWDBProfilerData = {
 					["WARRIOR"] = true,
 				},
 			},
-			[61786] = {
-				["reward_text"] = "Your \"good bud\" Stonehead insists on fighting for the cause, <name>.\r\n\r\nI'm sure we can find a use for his skills. Nothing too complicated, of course.",
+			[60460] = {
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["begin"] = {
+					["NPC:164738"] = true,
+				},
+			},
+			[60417] = {
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["begin"] = {
+					["NPC:158713"] = true,
+				},
+			},
+			[63977] = {
+				["begin"] = {
+					["NPC:178908"] = true,
+				},
+				["races"] = {
+					["Scourge"] = true,
+				},
 				["end"] = {
-					["NPC:164741"] = true,
+					["NPC:178908"] = true,
+				},
+				["reward_text"] = "How rude! They should be aware of who they are talking to.\r\n\r\nI apologize for my kin, Maw Walker.",
+				["classes"] = {
+					["WARRIOR"] = true,
 				},
 			},
 			[62733] = {
@@ -19550,245 +30768,13 @@ WoWDBProfilerData = {
 					["WARRIOR"] = true,
 				},
 			},
-			[60467] = {
-				["begin"] = {
-					["NPC:168455"] = true,
-				},
-				["progress_text"] = "Sabina remains unresponsive.",
-				["races"] = {
-					["Scourge"] = true,
-				},
-				["end"] = {
-					["NPC:168455"] = true,
-				},
-				["reward_text"] = "<Sabina begins to stir. >\r\n\r\nAre... are they back? Help... help me.",
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-			},
-			[61981] = {
-				["begin"] = {
-					["NPC:172605"] = true,
-				},
-				["progress_text"] = "How goes the anima hunt? You pinch us a pint or boost us keg?",
-				["races"] = {
-					["Scourge"] = true,
-				},
-				["end"] = {
-					["NPC:172605"] = true,
-				},
-				["reward_text"] = "Now that's a right grey professional job that is. This anima will get us makin' some fancy stuff in no time.",
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-			},
-			[62869] = {
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-				["progress_text"] = "How fares your endeavors?",
-				["races"] = {
-					["Scourge"] = true,
-				},
-				["begin"] = {
-					["NPC:164738"] = true,
-				},
-			},
-			[63064] = {
-				["begin"] = {
-					["NPC:172605"] = true,
-				},
-				["races"] = {
-					["Scourge"] = true,
-				},
-				["end"] = {
-					["NPC:164741"] = true,
-				},
-				["reward_text"] = "We have much to accomplish, and as resourceful as you are, you are not able to be in all places at once.",
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-			},
-			[63066] = {
-				["begin"] = {
-					["NPC:172605"] = true,
-				},
-				["races"] = {
-					["Scourge"] = true,
-				},
-				["end"] = {
-					["NPC:164739"] = true,
-				},
-				["reward_text"] = "It is time to begin restoring anima to the Shadowlands.",
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-			},
-			[63133] = {
-				["begin"] = {
-					["PLAYER:0"] = true,
-				},
-				["races"] = {
-					["Scourge"] = true,
-				},
-				["end"] = {
-					["NPC:162804"] = true,
-				},
-				["reward_text"] = "Ah, I have not seen these runes used in quite some time. An ancient broker method of encryption.\r\n\r\nThis will be useful should I ever intercept cartel communications.",
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-			},
-			[60460] = {
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-				["races"] = {
-					["Scourge"] = true,
-				},
-				["begin"] = {
-					["NPC:164738"] = true,
-				},
-			},
-			[61729] = {
-				["reward_text"] = "Rahel has arrived from Darkhaven to assist us with, and I quote, \"killing anybody.\" She is quite eager to enter the fray.\r\n\r\nShe seemed rather upbeat at the prospect of working with you again, <name>.",
+			[61786] = {
+				["reward_text"] = "Your \"good bud\" Stonehead insists on fighting for the cause, <name>.\r\n\r\nI'm sure we can find a use for his skills. Nothing too complicated, of course.",
 				["end"] = {
 					["NPC:164741"] = true,
 				},
 			},
-			[64210] = {
-				["begin"] = {
-					["NPC:179598"] = true,
-				},
-				["progress_text"] = "Ah, you return.",
-				["races"] = {
-					["Scourge"] = true,
-				},
-				["end"] = {
-					["NPC:164937"] = true,
-				},
-				["reward_text"] = "Ah... a curious device. Anchoring it in this place will prove useful.",
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-			},
-			[62259] = {
-				["begin"] = {
-					["PLAYER:0"] = true,
-				},
-				["races"] = {
-					["Scourge"] = true,
-				},
-				["end"] = {
-					["NPC:165341"] = true,
-				},
-				["reward_text"] = "Oh my! How did that get there? No matter. This anima will nurture many souls. Thank you, traveler!",
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-			},
-			[62371] = {
-				["reward_text"] = "Word of your aid has been sung through the roots. Thank you, friend of the forest.",
-				["end"] = {
-					["NPC:168032"] = true,
-				},
-			},
-			[64216] = {
-				["begin"] = {
-					["NPC:164937"] = true,
-				},
-				["progress_text"] = "<The Box of Many Things thrums with power.>",
-				["races"] = {
-					["Scourge"] = true,
-				},
-				["end"] = {
-					["NPC:177282"] = true,
-				},
-				["reward_text"] = "<The box hungers, reaching into your memories of Torghast for past deeds to feed upon.>",
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-			},
-			[60444] = {
-				["begin"] = {
-					["NPC:165291"] = true,
-				},
-				["races"] = {
-					["Scourge"] = true,
-				},
-				["end"] = {
-					["NPC:165291"] = true,
-				},
-				["reward_text"] = "The sins of the doubtful have been purged.",
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-			},
-			[60062] = {
-				["begin"] = {
-					["OBJECT:350804"] = true,
-				},
-				["progress_text"] = "I lost my harp! It was taken and broken by those terrible creatures.",
-				["races"] = {
-					["Scourge"] = true,
-				},
-				["end"] = {
-					["NPC:167047"] = true,
-				},
-				["reward_text"] = "You found my harp! And the missing pieces. Just one moment, and I can fix it.",
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-			},
-			[60064] = {
-				["begin"] = {
-					["NPC:167047"] = true,
-				},
-				["races"] = {
-					["Scourge"] = true,
-				},
-				["end"] = {
-					["NPC:159388"] = true,
-				},
-				["reward_text"] = "<Ol' Gertie lies dead of fear. \r\n\r\nBut this little silkstrider larvae wiggles happily at you.>",
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-			},
-			[60066] = {
-				["begin"] = {
-					["NPC:159270"] = true,
-				},
-				["races"] = {
-					["Scourge"] = true,
-				},
-				["end"] = {
-					["NPC:158556"] = true,
-				},
-				["reward_text"] = "Thank you for this silk! But... I see you brought something extra as well.\r\n\r\nThis little silkstrider will be safe now. I swear it.",
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-			},
-			[64541] = {
-				["progress_text"] = "Here to trade, Maw Walker?",
-			},
-			[60889] = {
-				["begin"] = {
-					["ITEM:0"] = true,
-				},
-				["races"] = {
-					["Scourge"] = true,
-				},
-				["end"] = {
-					["NPC:160081"] = true,
-				},
-				["reward_text"] = "Is that a piece of paper?\r\n\r\n<You present Ta'xera with the poem.>\r\n\r\nA Stoneborn poem! Very few stoneborn express feelings or desires beyond that of the service and loyalty chiseled into them. \r\n\r\nI shall enjoy, I mean, this will make excellent documentation of potential depth to the Stoneborn, you must let me buy it!",
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-			},
-			[62797] = {
+			[62719] = {
 				["classes"] = {
 					["WARRIOR"] = true,
 				},
@@ -19814,6 +30800,93 @@ WoWDBProfilerData = {
 					["WARRIOR"] = true,
 				},
 			},
+			[60889] = {
+				["begin"] = {
+					["ITEM:0"] = true,
+				},
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["end"] = {
+					["NPC:160081"] = true,
+				},
+				["reward_text"] = "Is that a piece of paper?\r\n\r\n<You present Ta'xera with the poem.>\r\n\r\nA Stoneborn poem! Very few stoneborn express feelings or desires beyond that of the service and loyalty chiseled into them. \r\n\r\nI shall enjoy, I mean, this will make excellent documentation of potential depth to the Stoneborn, you must let me buy it!",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
+			[60064] = {
+				["begin"] = {
+					["NPC:167047"] = true,
+				},
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["end"] = {
+					["NPC:159388"] = true,
+				},
+				["reward_text"] = "<Ol' Gertie lies dead of fear. \r\n\r\nBut this little silkstrider larvae wiggles happily at you.>",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
+			[29737] = {
+				["reward_text"] = "Your spirit burns with life, young <class>.  I accept the homage you pay, and offer in return this token...",
+				["end"] = {
+					["NPC:55219"] = true,
+				},
+			},
+			[14483] = {
+				["begin"] = {
+					["PLAYER:0"] = true,
+				},
+				["progress_text"] = "Did you take care of those no-good scheming villains?",
+				["races"] = {
+					["Troll"] = true,
+					["ZandalariTroll"] = true,
+				},
+				["end"] = {
+					["NPC:37172"] = true,
+				},
+				["reward_text"] = "What've you got there?\n\nOh hey, this is big. Real big. Most of the crazy details in one little package. Thanks - you really helped us reel this all in. Good working with ya.",
+				["classes"] = {
+					["DRUID"] = true,
+				},
+			},
+			[61981] = {
+				["begin"] = {
+					["NPC:172605"] = true,
+				},
+				["progress_text"] = "How goes the anima hunt? You pinch us a pint or boost us keg?",
+				["races"] = {
+					["Scourge"] = true,
+				},
+				["end"] = {
+					["NPC:172605"] = true,
+				},
+				["reward_text"] = "Now that's a right grey professional job that is. This anima will get us makin' some fancy stuff in no time.",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
+			[8671] = {
+				["reward_text"] = "Your spirit burns with life, young <class>.  I accept the homage you pay, and offer in return this token...",
+				["end"] = {
+					["NPC:15573"] = true,
+				},
+			},
+			[8672] = {
+				["reward_text"] = "Your spirit burns with life, young <class>.  I accept the homage you pay, and offer in return this token...",
+				["end"] = {
+					["NPC:15574"] = true,
+				},
+			},
+			[8673] = {
+				["reward_text"] = "Your spirit burns with life, young <class>.  I accept the homage you pay, and offer in return this token...",
+				["end"] = {
+					["NPC:15575"] = true,
+				},
+			},
 			[58060] = {
 				["begin"] = {
 					["NPC:160100"] = true,
@@ -19829,163 +30902,40 @@ WoWDBProfilerData = {
 					["WARRIOR"] = true,
 				},
 			},
-			[58062] = {
+			[64541] = {
+				["progress_text"] = "Here to trade, Maw Walker?",
+			},
+			[62259] = {
 				["begin"] = {
-					["NPC:160091"] = true,
-				},
-				["races"] = {
-					["Scourge"] = true,
-				},
-				["end"] = {
-					["NPC:160081"] = true,
-				},
-				["reward_text"] = "I have hoped for your eventual arrival, Maw Walker. \r\n\r\nDracho is no longer a partner of ours. Normally we would extend this punishment to you for attempting to subvert our rules. But you being who you are... changes things.\r\n\r\nLet's strike a deal. \r\n\r\nYou bring things of interest to me directly. No middlemen. No tricks. \r\n\r\nWe provide payment and our wares when necessary. Do we have a deal?",
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-			},
-			[60269] = {
-				["begin"] = {
-					["NPC:164937"] = true,
-				},
-				["progress_text"] = "Have you found what was taken from me?",
-				["races"] = {
-					["Scourge"] = true,
-				},
-				["end"] = {
-					["NPC:164937"] = true,
-				},
-				["reward_text"] = "It's been an age since I knew anything other than the contours of this hellish prison.\r\n\r\nThank you, mortal. Now to aid you.",
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-			},
-			[60271] = {
-				["begin"] = {
-					["NPC:162804"] = true,
-				},
-				["progress_text"] = "Were you able to acquire the anima?",
-				["races"] = {
-					["Scourge"] = true,
-				},
-				["end"] = {
-					["NPC:162804"] = true,
-				},
-				["reward_text"] = "Your success continues to impress, Maw Walker.\r\n\r\nThough I admit, such feats are becoming less unexpected as I come to know you more.",
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-			},
-			[62730] = {
-				["reward_text"] = "Yes, this very sweet and ripe. Must use quickly, before it spoils!",
-				["progress_text"] = "You find sweet Purian?",
-				["end"] = {
-					["NPC:170284"] = true,
-				},
-			},
-			[60721] = {
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-				["races"] = {
-					["Scourge"] = true,
-				},
-				["begin"] = {
-					["NPC:164739"] = true,
-				},
-			},
-			[61222] = {
-				["reward_text"] = "Thank you for freeing me, Maw Walker.\r\n\r\nAllow me to repay your kindness by assisting you.",
-				["end"] = {
-					["NPC:171898"] = true,
-				},
-			},
-			[60468] = {
-				["begin"] = {
-					["NPC:168455"] = true,
-				},
-				["progress_text"] = "Have you found the key?",
-				["races"] = {
-					["Scourge"] = true,
-				},
-				["end"] = {
-					["NPC:168455"] = true,
-				},
-				["reward_text"] = "This looks like it could fit.",
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-			},
-			[60470] = {
-				["begin"] = {
-					["NPC:168455"] = true,
-				},
-				["races"] = {
-					["Scourge"] = true,
-				},
-				["end"] = {
 					["PLAYER:0"] = true,
 				},
-				["reward_text"] = "Sabina's end has found her. Ash is all that remains.",
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-			},
-			[40753] = {
-				["reward_text"] = "While I am programmed for gift distribution, my observations indicate that you are programmed for gift reception.\n\nShall we engage in a mutually-favorable transaction?",
-				["end"] = {
-					["NPC:101527"] = true,
-				},
-			},
-			[60268] = {
-				["begin"] = {
-					["NPC:164937"] = true,
-				},
 				["races"] = {
 					["Scourge"] = true,
 				},
 				["end"] = {
-					["NPC:164937"] = true,
+					["NPC:165341"] = true,
 				},
-				["reward_text"] = "You could be the key to my freedom. Will you help me, mortal?",
+				["reward_text"] = "Oh my! How did that get there? No matter. This anima will nurture many souls. Thank you, traveler!",
 				["classes"] = {
 					["WARRIOR"] = true,
 				},
 			},
-			[61788] = {
-				["reward_text"] = "Your actions on behalf of Revendreth are garnering quite a lot of attention, <name>.\r\n\r\nSimone has offered to lend her expertise with the mirrors of the Ember Ward to the cause.",
+			[8726] = {
+				["reward_text"] = "The heavens, in their countless stars, hold answers to earthly mysteries, <name>.  Might, then, the wise, and the lucky, gaze up and find truth?",
 				["end"] = {
-					["NPC:164741"] = true,
+					["NPC:15606"] = true,
 				},
 			},
-			[60469] = {
-				["begin"] = {
-					["NPC:168455"] = true,
-				},
-				["races"] = {
-					["Scourge"] = true,
-				},
+			[8678] = {
+				["reward_text"] = "Your spirit burns with life, young <class>.  I accept the homage you pay, and offer in return this token...",
 				["end"] = {
-					["NPC:168455"] = true,
-				},
-				["reward_text"] = "They've perished? Are you sure? Who could have done something so cruel...",
-				["classes"] = {
-					["WARRIOR"] = true,
+					["NPC:15580"] = true,
 				},
 			},
-			[63976] = {
-				["begin"] = {
-					["NPC:156688"] = true,
-				},
-				["races"] = {
-					["Scourge"] = true,
-				},
+			[8679] = {
+				["reward_text"] = "Your spirit burns with life, young <class>.  I accept the homage you pay, and offer in return this token...",
 				["end"] = {
-					["NPC:178908"] = true,
-				},
-				["reward_text"] = "It is a pleasure to meet you.",
-				["classes"] = {
-					["WARRIOR"] = true,
+					["NPC:15581"] = true,
 				},
 			},
 			[60243] = {
@@ -19999,107 +30949,83 @@ WoWDBProfilerData = {
 					["NPC:167880"] = true,
 				},
 			},
-			[60250] = {
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-				["races"] = {
-					["Scourge"] = true,
-				},
-				["begin"] = {
-					["NPC:167881"] = true,
-				},
-			},
-			[63980] = {
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-				["races"] = {
-					["Scourge"] = true,
-				},
-				["begin"] = {
-					["NPC:178908"] = true,
-				},
-			},
-			[60267] = {
-				["reward_text"] = "<As you place the key into the device, it shudders for a moment and begins to unlock.>",
+			[8681] = {
+				["reward_text"] = "Your spirit burns with life, young <class>.  I accept the homage you pay, and offer in return this token...",
 				["end"] = {
-					["OBJECT:351877"] = true,
+					["NPC:15583"] = true,
 				},
 			},
-			[60427] = {
-				["begin"] = {
-					["NPC:158653"] = true,
-				},
-				["progress_text"] = "Have you completed your task?",
-				["races"] = {
-					["Scourge"] = true,
-				},
+			[8682] = {
+				["reward_text"] = "Your spirit burns with life, young <class>.  I accept the homage you pay, and offer in return this token...",
 				["end"] = {
-					["NPC:158653"] = true,
-				},
-				["reward_text"] = "The Archon has sent word of your deeds, and agreed to support us in the battles to come. We will fix this broken cycle, with steps such as this leading the way.",
-				["classes"] = {
-					["WARRIOR"] = true,
+					["NPC:15584"] = true,
 				},
 			},
-			[60281] = {
-				["reward_text"] = "Fine work. This should keep the both of us safe from the Mawsworn. \r\n\r\nI will hold onto the sphere that you found for the purpose of study.\r\n\r\nDon't you have other matters to attend to?",
-				["progress_text"] = "Have you learned anything of Inquisitor Devaki's tracking methods?",
+			[8683] = {
+				["reward_text"] = "Your spirit burns with life, young <class>.  I accept the homage you pay, and offer in return this token...",
 				["end"] = {
-					["NPC:162804"] = true,
+					["NPC:15585"] = true,
 				},
 			},
-			[60431] = {
+			[8684] = {
+				["reward_text"] = "Your spirit burns with life, young <class>.  I accept the homage you pay, and offer in return this token...",
+				["end"] = {
+					["NPC:15586"] = true,
+				},
+			},
+			[8685] = {
+				["reward_text"] = "Your spirit burns with life, young <class>.  I accept the homage you pay, and offer in return this token...",
+				["end"] = {
+					["NPC:15587"] = true,
+				},
+			},
+			[8686] = {
+				["reward_text"] = "Your spirit burns with life, young <class>.  I accept the homage you pay, and offer in return this token...",
+				["end"] = {
+					["NPC:15588"] = true,
+				},
+			},
+			[63065] = {
 				["begin"] = {
-					["NPC:158653"] = true,
+					["NPC:172605"] = true,
 				},
 				["races"] = {
 					["Scourge"] = true,
 				},
 				["end"] = {
-					["NPC:158653"] = true,
+					["NPC:161979"] = true,
 				},
-				["reward_text"] = "The <class>s of Maldraxxus speak your name, a great victory to have achieved this day. The balance of power will be restored one day, and our alliances will pay dividends.",
+				["reward_text"] = "Come, come, my friend!\r\n\r\nIt is time... for a PARTY!",
 				["classes"] = {
 					["WARRIOR"] = true,
 				},
 			},
-			[57661] = {
-				["begin"] = {
-					["NPC:158556"] = true,
-				},
-				["races"] = {
-					["Scourge"] = true,
-				},
+			[8688] = {
+				["reward_text"] = "The heavens, in their countless stars, hold answers to earthly mysteries, <name>.  Might, then, the wise, and the lucky, gaze up and find truth?",
 				["end"] = {
-					["NPC:159270"] = true,
-				},
-				["reward_text"] = "Of course silk shipments have stopped!\r\n\r\nThe entire glade has been attacked by changelings and spriggans! Our poor silkstriders are so stressed out, we can't get any silk from them!\r\n\r\nCan you help us?",
-				["classes"] = {
-					["WARRIOR"] = true,
+					["NPC:15592"] = true,
 				},
 			},
-			[62700] = {
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
-				["races"] = {
-					["Scourge"] = true,
-				},
+			[64216] = {
 				["begin"] = {
 					["NPC:164937"] = true,
 				},
-			},
-			[62719] = {
-				["classes"] = {
-					["WARRIOR"] = true,
-				},
+				["progress_text"] = "<The Box of Many Things thrums with power.>",
 				["races"] = {
 					["Scourge"] = true,
 				},
-				["begin"] = {
-					["NPC:164937"] = true,
+				["end"] = {
+					["NPC:177282"] = true,
+				},
+				["reward_text"] = "<The box hungers, reaching into your memories of Torghast for past deeds to feed upon.>",
+				["classes"] = {
+					["WARRIOR"] = true,
+				},
+			},
+			[61788] = {
+				["reward_text"] = "Your actions on behalf of Revendreth are garnering quite a lot of attention, <name>.\r\n\r\nSimone has offered to lend her expertise with the mirrors of the Ember Ward to the cause.",
+				["end"] = {
+					["NPC:164741"] = true,
 				},
 			},
 		},

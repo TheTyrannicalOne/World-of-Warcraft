@@ -23,7 +23,7 @@ MacroToolkitDB = {
 		["Brotus - Argent Dawn"] = "profile",
 		["Shimzo - Zul'jin"] = "profile",
 		["Guufnah - Zul'jin"] = "profile",
-		["Tinkster - Dalaran"] = "profile",
+		["Okona - Zul'jin"] = "profile",
 		["Varlouris - Dalaran"] = "profile",
 		["Kotalkhan - Zul'jin"] = "profile",
 		["Fantastiburo - Zul'jin"] = "profile",
@@ -38,7 +38,7 @@ MacroToolkitDB = {
 		["Abyronterner - Zul'jin"] = "profile",
 		["Jingojaggot - Zul'jin"] = "profile",
 		["Jasmoney - Zul'jin"] = "profile",
-		["Okona - Zul'jin"] = "profile",
+		["Tinkster - Dalaran"] = "profile",
 		["Mandles - Zul'jin"] = "profile",
 	},
 	["global"] = {

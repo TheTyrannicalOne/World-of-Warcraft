@@ -999,19 +999,19 @@ AzeritePowerWeightsDB = {
 				["onlyOwnClassDefaults"] = true,
 				["enableEssences"] = true,
 			},
-			["Mandles"] = {
+			["Shimzo"] = {
 				["specScales"] = {
-					[257] = {
+					[260] = {
 						["scaleName"] = "Default",
-						["scaleID"] = "D/5/2/Default",
+						["scaleID"] = "D/4/2/Default",
 					},
-					[258] = {
+					[261] = {
 						["scaleName"] = "Default",
-						["scaleID"] = "D/5/3/Default",
+						["scaleID"] = "D/4/3/Default",
 					},
-					[256] = {
+					[259] = {
 						["scaleName"] = "Default",
-						["scaleID"] = "D/5/1/Default",
+						["scaleID"] = "D/4/1/Default",
 					},
 				},
 				["addPrimaryStatToScore"] = false,
@@ -1030,12 +1030,12 @@ AzeritePowerWeightsDB = {
 				["defensivePowers"] = true,
 				["enableTraits"] = true,
 				["scaleByAzeriteEmpowered"] = false,
-				["enableEssences"] = true,
+				["onlyOwnClassCustoms"] = false,
 				["outlineScores"] = true,
 				["professionPowers"] = false,
 				["showOnlyUpgrades"] = false,
-				["onlyOwnClassCustoms"] = false,
 				["onlyOwnClassDefaults"] = true,
+				["enableEssences"] = true,
 			},
 			["Jasmoney"] = {
 				["specScales"] = {
@@ -1113,19 +1113,19 @@ AzeritePowerWeightsDB = {
 				["enableEssences"] = true,
 				["onlyOwnClassCustoms"] = false,
 			},
-			["Shimzo"] = {
+			["Mandles"] = {
 				["specScales"] = {
-					[260] = {
+					[257] = {
 						["scaleName"] = "Default",
-						["scaleID"] = "D/4/2/Default",
+						["scaleID"] = "D/5/2/Default",
 					},
-					[261] = {
+					[258] = {
 						["scaleName"] = "Default",
-						["scaleID"] = "D/4/3/Default",
+						["scaleID"] = "D/5/3/Default",
 					},
-					[259] = {
+					[256] = {
 						["scaleName"] = "Default",
-						["scaleID"] = "D/4/1/Default",
+						["scaleID"] = "D/5/1/Default",
 					},
 				},
 				["addPrimaryStatToScore"] = false,
@@ -1144,12 +1144,12 @@ AzeritePowerWeightsDB = {
 				["defensivePowers"] = true,
 				["enableTraits"] = true,
 				["scaleByAzeriteEmpowered"] = false,
-				["onlyOwnClassCustoms"] = false,
+				["enableEssences"] = true,
 				["outlineScores"] = true,
 				["professionPowers"] = false,
 				["showOnlyUpgrades"] = false,
+				["onlyOwnClassCustoms"] = false,
 				["onlyOwnClassDefaults"] = true,
-				["enableEssences"] = true,
 			},
 			["Vancard"] = {
 				["specScales"] = {
