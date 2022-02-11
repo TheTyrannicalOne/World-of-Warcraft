@@ -1,6 +1,5 @@
 
 ElvCharacterDB = {
-	["ConvertKeybindings"] = true,
 	["ChatHistoryLog"] = {
 		{
 			"wow", -- [1]
@@ -2181,6 +2180,8 @@ ElvCharacterDB = {
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [99]
 	},
+	["CliqueDatatext"] = {
+	},
 	["ChatEditHistory"] = {
 		"/wave", -- [1]
 		"/fishingbuddy", -- [2]
@@ -2203,6 +2204,5 @@ ElvCharacterDB = {
 		"/tsm", -- [19]
 		"/invite lillys-blackhand", -- [20]
 	},
-	["CliqueDatatext"] = {
-	},
+	["ConvertKeybindings"] = true,
 }

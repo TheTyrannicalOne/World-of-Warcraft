@@ -1,14 +1,15 @@
 
 WITDB = {
+	["Version"] = "v4.0.9",
 	["Settings"] = {
 		["MinimapIcon"] = {
 		},
-		["LegacyPricingSelect"] = "DBMarket",
-		["BelowTresholdValue"] = 1,
+		["CustomItemPrices"] = {
+		},
+		["FarmPlannerIds"] = {
+		},
 		["RecorderMinPrice"] = 0,
-		["BagValueMinQuality"] = 1,
-		["LegacyCustomPriceSource"] = "DBMinBuyout",
-		["RecorderMinQuality"] = 1,
+		["BelowTresholdValue"] = 1,
 		["Modules"] = {
 			["Dashboard"] = {
 				["ShowCurrentContent"] = true,
@@ -16,22 +17,21 @@ WITDB = {
 				},
 			},
 		},
-		["PricingSelect"] = "DBMarket",
+		["HideMinimapIcon"] = false,
+		["LegacyCustomPriceSource"] = "DBMinBuyout",
+		["RecorderMinQuality"] = 1,
 		["BagValueMinPrice"] = 0,
 		["CustomPriceSource"] = "DBMinBuyout",
-		["HideMinimapIcon"] = false,
+		["PricingSelect"] = "DBMarket",
 		["Recorder"] = {
 		},
-		["FarmPlannerIds"] = {
-		},
-		["CustomItemPrices"] = {
-		},
+		["BagValueMinQuality"] = 1,
+		["LegacyPricingSelect"] = "DBMarket",
 	},
-	["Version"] = "v4.0.9",
 	["UserData"] = {
-		["Farms"] = {
-		},
 		["ColumnFilters"] = {
+		},
+		["Farms"] = {
 		},
 	},
 }

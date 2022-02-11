@@ -52,22 +52,6 @@ QuestTogether = {
 				"90/100 War Resources", -- [1]
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
-			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
-			},
-		},
-		[44948] = {
-			["title"] = "Raising Your Snowfeather",
-			["objectives"] = {
-				"Level 25 Snowfeather Hatchling", -- [1]
-			},
-		},
 		[60545] = {
 			["title"] = "Shadowlands: A Chilling Summons",
 			["objectives"] = {
@@ -82,16 +66,20 @@ QuestTogether = {
 				"0/1 Loregrain's Grimoire", -- [2]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[34692] = {
-			["title"] = "Delegating on Draenor",
+		[44948] = {
+			["title"] = "Raising Your Snowfeather",
 			["objectives"] = {
-				"Use the Command Table", -- [1]
+				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
 		[25191] = {
@@ -110,12 +98,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[47253] = {
-			["title"] = "The Originals",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
-				"0/1 Lord Kazzak slain", -- [1]
-				"0/1 Azuregos slain", -- [2]
-				"0/1 Dragon of Nightmare slain", -- [3]
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[43441] = {
@@ -131,10 +117,10 @@ QuestTogether = {
 				"0/1 Complete a Bronze Trial", -- [2]
 			},
 		},
-		[57300] = {
-			["title"] = "Soldier of Time",
+		[34692] = {
+			["title"] = "Delegating on Draenor",
 			["objectives"] = {
-				"0/500 Earn Honor in Korrak's Revenge", -- [1]
+				"Use the Command Table", -- [1]
 			},
 		},
 		[50825] = {
@@ -167,8 +153,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
-		["showDebugInfo"] = false,
 	},
 }

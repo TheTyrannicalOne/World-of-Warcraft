@@ -10,9 +10,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:183579::::::::50:104::14::1:28:1401:::|h[Argent Conscript's Mask]|h|r",
 		}, -- [1]
 		{
-			["ID"] = 158075,
-			["Level"] = 64,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::50:104::11:4:4932:4933:4935:1478::::|h[Heart of Azeroth]|h|r",
+			["ID"] = 143906,
+			["Level"] = 88,
+			["Link"] = "|cff0070dd|Hitem:143906::::::::51:104::22:1:7464:2:28:181:9:51:::::|h[Heartbreak Charm]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 183578,
@@ -64,9 +64,9 @@ PawnOptions = {
 		}, -- [12]
 		{
 			["ID"] = 122361,
-			["Level"] = 58,
+			["Level"] = 98,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::50:104:::1:5805::::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::51:104:::1:5805::::::|h[Swift Hand of Justice]|h|r",
 		}, -- [13]
 		{
 			["ID"] = 122361,

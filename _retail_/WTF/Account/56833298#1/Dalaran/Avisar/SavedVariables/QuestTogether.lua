@@ -13,10 +13,22 @@ QuestTogether = {
 				"0/25 Horde Players slain", -- [1]
 			},
 		},
+		[24655] = {
+			["title"] = "Something Stinks",
+			["objectives"] = {
+				"0/6 Perfumed Guards Analyzed", -- [1]
+			},
+		},
 		[13413] = {
 			["title"] = "Aces High!",
 			["objectives"] = {
 				"1/5 Scalesworn Elites Killed", -- [1]
+			},
+		},
+		[53436] = {
+			["title"] = "Azerite for the Alliance",
+			["objectives"] = {
+				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
 		[56378] = {
@@ -27,22 +39,10 @@ QuestTogether = {
 				"0/1 Thermospark found", -- [3]
 			},
 		},
-		[53436] = {
-			["title"] = "Azerite for the Alliance",
-			["objectives"] = {
-				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
-			},
-		},
 		[44948] = {
 			["title"] = "Raising Your Snowfeather",
 			["objectives"] = {
 				"Level 25 Snowfeather Hatchling", -- [1]
-			},
-		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
-			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[62801] = {
@@ -50,10 +50,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[57006] = {
@@ -96,10 +96,9 @@ QuestTogether = {
 				"Defeat Uu'nat in the Crucible of Storms Raid", -- [1]
 			},
 		},
-		[24745] = {
-			["title"] = "Something is in the Air (and it Ain't Love)",
+		[57562] = {
+			["title"] = "Amathet Assault Tracker",
 			["objectives"] = {
-				"Bring the Faded Lovely Greeting Card to Inspector Snip Snagglebolt in Stormwind.", -- [1]
 			},
 		},
 		[36615] = {
@@ -107,11 +106,6 @@ QuestTogether = {
 			["objectives"] = {
 				"172/2000 Garrison Resources gathered (Optional)", -- [1]
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
-			},
-		},
-		[44720] = {
-			["title"] = "A Call to Action",
-			["objectives"] = {
 			},
 		},
 		[58632] = {
@@ -125,15 +119,23 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[50600] = {
-			["title"] = "Order of Embers",
+		[50599] = {
+			["title"] = "Proudmoore Admiralty",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Drustvar", -- [1]
+				"0/4 Complete 4 world quests in Tiragarde Sound", -- [1]
 			},
 		},
-		[57562] = {
-			["title"] = "Amathet Assault Tracker",
+		[56211] = {
+			["title"] = "Scrying Stones",
 			["objectives"] = {
+				"1/1 Scrying Stone used", -- [1]
+				"0/3 Hidden Treasure discovered", -- [2]
+			},
+		},
+		[50601] = {
+			["title"] = "Storm's Wake",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Stormsong Valley", -- [1]
 			},
 		},
 		[31486] = {
@@ -173,17 +175,15 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
+		[44720] = {
+			["title"] = "A Call to Action",
+			["objectives"] = {
+			},
+		},
 		[50605] = {
 			["title"] = "Alliance War Effort",
 			["objectives"] = {
 				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
-			},
-		},
-		[56211] = {
-			["title"] = "Scrying Stones",
-			["objectives"] = {
-				"1/1 Scrying Stone used", -- [1]
-				"0/3 Hidden Treasure discovered", -- [2]
 			},
 		},
 		[54485] = {
@@ -195,8 +195,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

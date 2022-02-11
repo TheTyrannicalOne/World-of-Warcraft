@@ -22,6 +22,12 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
+		[44948] = {
+			["title"] = "Raising Your Snowfeather",
+			["objectives"] = {
+				"Level 25 Snowfeather Hatchling", -- [1]
+			},
+		},
 		[46805] = {
 			["title"] = "The Deceiver's Downfall",
 			["objectives"] = {
@@ -34,10 +40,10 @@ QuestTogether = {
 				"0/1 Seek out Ly'leth", -- [1]
 			},
 		},
-		[44948] = {
-			["title"] = "Raising Your Snowfeather",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
-				"Level 25 Snowfeather Hatchling", -- [1]
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[48513] = {
@@ -52,12 +58,10 @@ QuestTogether = {
 				"0/1 Viscous Fallout slain", -- [1]
 			},
 		},
-		[40300] = {
-			["title"] = "Tools of the Trade",
+		[48639] = {
+			["title"] = "Army of the Light",
 			["objectives"] = {
-				"0/1 Sacred Oil", -- [1]
-				"0/1 Preserving Incense", -- [2]
-				"0/1 Chest of Shrouds", -- [3]
+				"0/4 Complete 4 Army of the Light World Quests", -- [1]
 			},
 		},
 		[38286] = {
@@ -75,16 +79,10 @@ QuestTogether = {
 				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
-		[46286] = {
-			["title"] = "Legionfall Supplies",
+		[48642] = {
+			["title"] = "Argussian Reach",
 			["objectives"] = {
-				"31/100 Collect Legionfall War Supplies", -- [1]
-			},
-		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
-			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
+				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
 			},
 		},
 		[40329] = {
@@ -93,17 +91,23 @@ QuestTogether = {
 				"0/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
+		[42984] = {
+			["title"] = "Eye of Azshara: The Scepter of Storms",
+			["objectives"] = {
+				"0/1 Scepter of Storms", -- [1]
+				"0/1 Wrath of Azshara slain", -- [2]
+			},
+		},
 		[40368] = {
 			["title"] = "Turtle Powered",
 			["objectives"] = {
 				"0/7 Shimmering Snapper Scale", -- [1]
 			},
 		},
-		[42984] = {
-			["title"] = "Eye of Azshara: The Scepter of Storms",
+		[44338] = {
+			["title"] = "Goddess Watch Over You",
 			["objectives"] = {
-				"0/1 Scepter of Storms", -- [1]
-				"0/1 Wrath of Azshara slain", -- [2]
+				"Recover the Tears of Elune from Val'sharah", -- [1]
 			},
 		},
 		[10279] = {
@@ -117,18 +121,31 @@ QuestTogether = {
 				"0/1 Speak to Sigryn in Valdisdall", -- [1]
 			},
 		},
-		[44338] = {
-			["title"] = "Goddess Watch Over You",
-			["objectives"] = {
-				"Recover the Tears of Elune from Val'sharah", -- [1]
-			},
-		},
 		[46253] = {
 			["title"] = "Pillars of Creation",
 			["objectives"] = {
 				"0/1 Hammer of Khaz'goroth", -- [1]
 				"0/1 Tidestone of Golganneth", -- [2]
 				"0/1 Tears of Elune", -- [3]
+			},
+		},
+		[46286] = {
+			["title"] = "Legionfall Supplies",
+			["objectives"] = {
+				"31/100 Collect Legionfall War Supplies", -- [1]
+			},
+		},
+		[40332] = {
+			["title"] = "Beach Bonfire",
+			["objectives"] = {
+				"6/6 Driftwood", -- [1]
+				"1/1 Jarl Throndyr's Pyre built", -- [2]
+			},
+		},
+		[42422] = {
+			["title"] = "The Wardens",
+			["objectives"] = {
+				"0/4 Complete 4 Wardens World Quests", -- [1]
 			},
 		},
 		[44561] = {
@@ -146,16 +163,17 @@ QuestTogether = {
 		[40967] = {
 			["title"] = "Precious Little Left",
 			["objectives"] = {
-				"1/1  ", -- [1]
-				"1/1  ", -- [2]
+				"1/1 Anthology of the Guard", -- [1]
+				"1/1 Magical Manifest of the Moon", -- [2]
 				"0/1 Aftermath of the Well", -- [3]
 			},
 		},
-		[40332] = {
-			["title"] = "Beach Bonfire",
+		[40300] = {
+			["title"] = "Tools of the Trade",
 			["objectives"] = {
-				"6/6  ", -- [1]
-				"1/1 Jarl Throndyr's Pyre built", -- [2]
+				"0/1 Sacred Oil", -- [1]
+				"0/1 Preserving Incense", -- [2]
+				"0/1 Chest of Shrouds", -- [3]
 			},
 		},
 	},

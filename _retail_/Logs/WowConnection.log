@@ -1,6 +1,6 @@
-2/8 19:30:05.779  WowConnectionNet: Initialize
-2/8 19:30:05.779  AttemptMakeSocketPair: bound to 1 / WoW Loopback.27860.31363916
-2/8 19:30:05.779  MakeSocketPair attempt: 1, 0, 0, 0
-2/8 19:30:06.494  AttemptMakeSocketPair: bound to 1 / WoW Loopback.27860.31388237
-2/8 19:30:06.494  MakeSocketPair attempt: 1, 0, 0, 0
-2/8 20:24:40.638  WowConnectionNet: Shutdown
+2/10 21:33:57.597  WowConnectionNet: Initialize
+2/10 21:33:57.597  AttemptMakeSocketPair: bound to 1 / WoW Loopback.17420.118332009
+2/10 21:33:57.597  MakeSocketPair attempt: 1, 0, 0, 0
+2/10 21:33:58.238  AttemptMakeSocketPair: bound to 1 / WoW Loopback.17420.118345926
+2/10 21:33:58.238  MakeSocketPair attempt: 1, 0, 0, 0
+2/10 23:46:03.849  WowConnectionNet: Shutdown

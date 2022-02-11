@@ -33,15 +33,15 @@ QuestTogether = {
 				"0/4 Renathal Banner placed", -- [1]
 			},
 		},
-		[57567] = {
-			["title"] = "N'Zoth Assault Tracker (Vale)",
+		[58071] = {
+			["title"] = "Favor: Vial of Dredger Muck",
 			["objectives"] = {
 			},
 		},
 		[61981] = {
 			["title"] = "Replenish the Reservoir",
 			["objectives"] = {
-				"425/1000 Anima sources", -- [1]
+				"795/1000 Anima sources", -- [1]
 			},
 		},
 		[49133] = {
@@ -61,6 +61,12 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
+		[48639] = {
+			["title"] = "Army of the Light",
+			["objectives"] = {
+				"0/4 Complete 4 Army of the Light World Quests", -- [1]
+			},
+		},
 		[47129] = {
 			["title"] = "Tomb of Sargeras: The Deceiver",
 			["objectives"] = {
@@ -74,10 +80,10 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[63576] = {
-			["title"] = "The First Move",
+		[50598] = {
+			["title"] = "Zandalari Empire",
 			["objectives"] = {
-				"0/1 Speak with Polemarch Adrestes in Oribos", -- [1]
+				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
 			},
 		},
 		[53435] = {
@@ -86,10 +92,16 @@ QuestTogether = {
 				"18349/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[50602] = {
+			["title"] = "Talanji's Expedition",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+				"0/4 Complete 4 world quests in Nazmir.", -- [1]
+			},
+		},
+		[60432] = {
+			["title"] = "Troubles at Home",
+			["objectives"] = {
+				"0% Revendreth Defended (0%)", -- [1]
 			},
 		},
 		[50606] = {
@@ -104,10 +116,10 @@ QuestTogether = {
 				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[42233] = {
-			["title"] = "Highmountain Tribes",
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Highmountain.", -- [1]
+				"2/4 Echo of Time", -- [1]
 			},
 		},
 		[44948] = {
@@ -122,6 +134,12 @@ QuestTogether = {
 				"Portal to Transfer Station Ta taken", -- [1]
 			},
 		},
+		[60456] = {
+			["title"] = "Storm the Maw",
+			["objectives"] = {
+				"0/3 Rare or special encounter bosses slain", -- [1]
+			},
+		},
 		[57562] = {
 			["title"] = "Amathet Assault Tracker",
 			["objectives"] = {
@@ -130,7 +148,7 @@ QuestTogether = {
 		[60399] = {
 			["title"] = "Aiding Revendreth",
 			["objectives"] = {
-				"0/3 Complete 3 World Quests in Revendreth", -- [1]
+				"3/3 Complete 3 World Quests in Revendreth", -- [1]
 			},
 		},
 		[48305] = {
@@ -162,22 +180,9 @@ QuestTogether = {
 				"2/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
-		[57462] = {
-			["title"] = "Dream Catcher",
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
 			["objectives"] = {
-				"28/200 Shred of Insanity", -- [1]
-			},
-		},
-		[60417] = {
-			["title"] = "Rare Resources",
-			["objectives"] = {
-				"0/3 Coin of Brokerage", -- [1]
-			},
-		},
-		[57919] = {
-			["title"] = "An Abuse of Power",
-			["objectives"] = {
-				"0/1 Abused Soul subjugated", -- [1]
 			},
 		},
 		[59661] = {
@@ -186,10 +191,10 @@ QuestTogether = {
 				"0/1 Speak with Temel to start the rehearsal", -- [1]
 			},
 		},
-		[60422] = {
-			["title"] = "A Call to Ardenweald",
+		[57462] = {
+			["title"] = "Dream Catcher",
 			["objectives"] = {
-				"0% Ardenweald Defended (0%)", -- [1]
+				"28/200 Shred of Insanity", -- [1]
 			},
 		},
 		[61492] = {
@@ -204,10 +209,10 @@ QuestTogether = {
 				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
 			},
 		},
-		[45383] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[57919] = {
+			["title"] = "An Abuse of Power",
 			["objectives"] = {
-				"2/4 Echo of Time", -- [1]
+				"0/1 Abused Soul subjugated", -- [1]
 			},
 		},
 		[57403] = {
@@ -221,10 +226,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[50603] = {
-			["title"] = "Voldunai",
+		[63576] = {
+			["title"] = "The First Move",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Vol'dun", -- [1]
+				"0/1 Speak with Polemarch Adrestes in Oribos", -- [1]
 			},
 		},
 		[30567] = {
@@ -239,17 +244,17 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[42422] = {
-			["title"] = "The Wardens",
+		[42421] = {
+			["title"] = "The Nightfallen",
 			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
+				"0/4 Complete 4 world quests in Suramar", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["events"] = false,
 		["messages"] = false,
-		["showDebugInfo"] = false,
 	},
 }

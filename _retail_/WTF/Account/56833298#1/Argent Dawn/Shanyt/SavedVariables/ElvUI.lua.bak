@@ -1,5 +1,30 @@
 
 ElvCharacterDB = {
+	["CliqueDatatext"] = {
+	},
+	["ConvertKeybindings"] = true,
+	["ChatEditHistory"] = {
+		"/wave", -- [1]
+		"/fishingbuddy", -- [2]
+		"/npcscan add 66932 Akkalou", -- [3]
+		"/s nice", -- [4]
+		"/raise", -- [5]
+		"/paste", -- [6]
+		"/npcscan add 66935 Clamstok", -- [7]
+		"/cw Frankdukes-DemonSoul Thanks!", -- [8]
+		"/npcscan add 66938 Odd'nirok", -- [9]
+		"/cw Mhercurio-Quel'Thalas ok thanks anyway", -- [10]
+		"/s launch fireworks out the launchers he raises out the water and we kill him", -- [11]
+		"/s thats what i dont remebre i will look on wowhead in a second find out", -- [12]
+		"/s two druids just went to get some", -- [13]
+		"/npcscan add 66934 Damlak", -- [14]
+		"/cw Girnar-Lightbringer ok np thanks any\\", -- [15]
+		"/p yeah may not be able to", -- [16]
+		"/p if not will try again later", -- [17]
+		"/p well looks like its slow right now good luck will try again later", -- [18]
+		"/tsm", -- [19]
+		"/invite lillys-blackhand", -- [20]
+	},
 	["ChatHistoryLog"] = {
 		{
 			"wow", -- [1]
@@ -2180,29 +2205,4 @@ ElvCharacterDB = {
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [99]
 	},
-	["CliqueDatatext"] = {
-	},
-	["ChatEditHistory"] = {
-		"/wave", -- [1]
-		"/fishingbuddy", -- [2]
-		"/npcscan add 66932 Akkalou", -- [3]
-		"/s nice", -- [4]
-		"/raise", -- [5]
-		"/paste", -- [6]
-		"/npcscan add 66935 Clamstok", -- [7]
-		"/cw Frankdukes-DemonSoul Thanks!", -- [8]
-		"/npcscan add 66938 Odd'nirok", -- [9]
-		"/cw Mhercurio-Quel'Thalas ok thanks anyway", -- [10]
-		"/s launch fireworks out the launchers he raises out the water and we kill him", -- [11]
-		"/s thats what i dont remebre i will look on wowhead in a second find out", -- [12]
-		"/s two druids just went to get some", -- [13]
-		"/npcscan add 66934 Damlak", -- [14]
-		"/cw Girnar-Lightbringer ok np thanks any\\", -- [15]
-		"/p yeah may not be able to", -- [16]
-		"/p if not will try again later", -- [17]
-		"/p well looks like its slow right now good luck will try again later", -- [18]
-		"/tsm", -- [19]
-		"/invite lillys-blackhand", -- [20]
-	},
-	["ConvertKeybindings"] = true,
 }

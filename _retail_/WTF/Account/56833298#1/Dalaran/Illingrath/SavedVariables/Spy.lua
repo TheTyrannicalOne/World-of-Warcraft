@@ -1,9 +1,5 @@
 
 SpyPerCharDB = {
-	["KOSData"] = {
-	},
-	["IgnoreData"] = {
-	},
 	["PlayerData"] = {
 		["Lunarbeef"] = {
 			["mapID"] = 75,
@@ -196,20 +192,6 @@ SpyPerCharDB = {
 			["time"] = 1638119109,
 			["name"] = "Syndél-Zul'jin",
 		},
-		["Unknown"] = {
-			["mapID"] = 75,
-			["zone"] = "Tanaris",
-			["mapY"] = 0.47,
-			["class"] = "DEMONHUNTER",
-			["isEnemy"] = true,
-			["race"] = "Blood Elf",
-			["name"] = "Unknown",
-			["subZone"] = "Caverns of Time",
-			["mapX"] = 0.54,
-			["level"] = 46,
-			["isGuess"] = false,
-			["time"] = 1638118970,
-		},
 		["Clw-Zul'jin"] = {
 			["mapID"] = 75,
 			["zone"] = "Tanaris",
@@ -393,9 +375,9 @@ SpyPerCharDB = {
 			["mapY"] = 0.68,
 			["class"] = "PALADIN",
 			["isEnemy"] = true,
-			["name"] = "Maxxis-BurningBlade",
-			["mapX"] = 0.23,
 			["isGuess"] = true,
+			["mapX"] = 0.23,
+			["name"] = "Maxxis-BurningBlade",
 			["race"] = "Human",
 			["subZone"] = "The Marris Stead",
 			["level"] = 46,
@@ -578,5 +560,9 @@ SpyPerCharDB = {
 			["time"] = 1638119084,
 		},
 	},
+	["IgnoreData"] = {
+	},
 	["version"] = "1.1",
+	["KOSData"] = {
+	},
 }

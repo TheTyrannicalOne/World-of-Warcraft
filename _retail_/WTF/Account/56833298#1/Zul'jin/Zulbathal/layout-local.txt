@@ -139,13 +139,6 @@ X: 0
 Y: 258
 W: 300
 H: 300
-Frame: PVEFrame
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 16
-Y: -116
-W: 563
-H: 428
 Frame: LFGDungeonReadyDialog
 FrameLevel: 2
 Anchor: TOP
@@ -160,6 +153,13 @@ X: 0
 Y: -100
 W: 306
 H: 130
+Frame: PVEFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 563
+H: 428
 Frame: GameMenuFrame
 FrameLevel: 1
 Anchor: CENTER

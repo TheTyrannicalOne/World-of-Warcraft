@@ -10,7 +10,7 @@ Frame: AllTheThings-Window-CurrentInstance
 FrameLevel: 1
 Anchor: LEFT
 X: 0
-Y: -20
+Y: -15
 W: 299
 H: 299
 Frame: ScriptErrorsFrame

@@ -7,6 +7,7 @@ DataStore_CurrenciesDB = {
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
+		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 	},
 	["global"] = {
 		["Reference"] = {
@@ -84,54 +85,54 @@ DataStore_CurrenciesDB = {
 				["Spirit Shard"] = 51,
 				["Mote of Darkness"] = 49,
 				["Reservoir Anima"] = 4,
-				["Coalescing Visions"] = 17,
+				["Mark of the World Tree"] = 48,
 				["Lingering Soul Fragment"] = 28,
-				["Timeless Coin"] = 45,
-				["Mogu Rune of Fate"] = 44,
+				["Warforged Seal"] = 46,
+				["Corrupted Mementos"] = 18,
 				["Ironpaw Token"] = 12,
 				["Elder Charm of Good Fortune"] = 42,
 				["Seal of Tempered Fate"] = 41,
+				["Stygia"] = 6,
 				["Seal of Broken Fate"] = 31,
-				["Conquest"] = 13,
-				["Infused Ruby"] = 3,
-				["Lesser Charm of Good Fortune"] = 43,
 				["Curious Coin"] = 26,
-				["Garrison Resources"] = 38,
+				["Lesser Charm of Good Fortune"] = 43,
+				["Infused Ruby"] = 3,
+				["Seal of Inevitable Fate"] = 40,
 				["Artifact Fragment"] = 37,
-				["Echoes of Ny'alotha"] = 19,
+				["Timeworn Artifact"] = 33,
 				["Oil"] = 39,
-				["Timewarped Badge"] = 9,
 				["7th Legion Service Medal"] = 53,
-				["Redeemed Soul"] = 52,
-				["Seafarer's Dubloon"] = 22,
-				["Tower Knowledge"] = 7,
 				["Soul Ash"] = 5,
+				["Timewarped Badge"] = 9,
+				["Tower Knowledge"] = 7,
+				["Seafarer's Dubloon"] = 22,
+				["Redeemed Soul"] = 52,
 				["Honor"] = 14,
 				["Epicurean's Award"] = 11,
-				["Timeworn Artifact"] = 33,
-				["Seal of Inevitable Fate"] = 40,
+				["Echoes of Ny'alotha"] = 19,
+				["Garrison Resources"] = 38,
 				["Wakening Essence"] = 35,
-				["Stygia"] = 6,
+				["Conquest"] = 13,
 				["Apexis Crystal"] = 36,
 				["Darkmoon Prize Ticket"] = 10,
-				["Corrupted Mementos"] = 18,
-				["Warforged Seal"] = 46,
-				["Mark of the World Tree"] = 48,
+				["Mogu Rune of Fate"] = 44,
+				["Timeless Coin"] = 45,
+				["Coalescing Visions"] = 17,
 				["Champion's Seal"] = 50,
 				["Legionfall War Supplies"] = 27,
 			},
 			["HeadersRev"] = {
 				["Battle for Azeroth"] = 5,
+				["Burning Crusade"] = 11,
 				["Dungeon and Raid"] = 2,
-				["Miscellaneous"] = 3,
 				["Warlords of Draenor"] = 7,
 				["Legion"] = 6,
-				["Shadowlands"] = 1,
-				["Cataclysm"] = 9,
-				["Mists of Pandaria"] = 8,
 				["Wrath of the Lich King"] = 10,
+				["Cataclysm"] = 9,
+				["Shadowlands"] = 1,
+				["Mists of Pandaria"] = 8,
 				["Player vs. Player"] = 4,
-				["Burning Crusade"] = 11,
+				["Miscellaneous"] = 3,
 			},
 			["Headers"] = {
 				"Shadowlands", -- [1]
@@ -160,7 +161,29 @@ DataStore_CurrenciesDB = {
 					6689030, -- [8]
 					659846, -- [9]
 				},
-				["lastUpdate"] = 1644369611,
+				["Archeology"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					0, -- [4]
+					0, -- [5]
+					0, -- [6]
+					0, -- [7]
+					0, -- [8]
+					0, -- [9]
+					0, -- [10]
+					0, -- [11]
+					0, -- [12]
+					0, -- [13]
+					0, -- [14]
+					0, -- [15]
+					0, -- [16]
+					0, -- [17]
+					0, -- [18]
+					0, -- [19]
+					0, -- [20]
+				},
+				["lastUpdate"] = 1644553410,
 				["CurrencyInfo"] = {
 					[1220] = "3836-0-0-0",
 					[1754] = "0-0-0-0",
@@ -168,9 +191,9 @@ DataStore_CurrenciesDB = {
 					[1792] = "0-0-0-15000",
 					[1166] = "715-0-0-0",
 					[1155] = "608-0-0-800",
-					[1226] = "286-0-0-0",
-					[1508] = "51-0-0-2000",
 					[1342] = "31-0-0-1000",
+					[1508] = "51-0-0-2000",
+					[1226] = "286-0-0-0",
 				},
 			},
 			["Default.Dalaran.Avisar"] = {
@@ -214,24 +237,63 @@ DataStore_CurrenciesDB = {
 					0, -- [19]
 					0, -- [20]
 				},
-				["lastUpdate"] = 1644369246,
+				["lastUpdate"] = 1644550881,
 				["CurrencyInfo"] = {
 					[1602] = "0-0-0-0",
-					[824] = "172-0-0-10000",
+					[1719] = "52-0-0-0",
 					[1220] = "1434-0-0-0",
-					[1299] = "4-0-0-5000",
-					[1710] = "34-0-0-0",
-					[738] = "3-0-0-0",
-					[1166] = "845-0-0-0",
+					[824] = "172-0-0-10000",
 					[1560] = "103-0-0-0",
+					[738] = "3-0-0-0",
+					[1721] = "0-0-0-0",
+					[1755] = "35393-0-0-0",
 					[1754] = "15-0-0-0",
 					[1803] = "2000-0-0-0",
 					[1717] = "40-0-0-0",
-					[1721] = "0-0-0-0",
-					[1755] = "35393-0-0-0",
+					[1166] = "845-0-0-0",
+					[1710] = "34-0-0-0",
 					[1129] = "2-0-0-20",
 					[1718] = "0-0-0-0",
-					[1719] = "52-0-0-0",
+					[1299] = "4-0-0-5000",
+				},
+			},
+			["Default.Dalaran.Darnastris"] = {
+				["Currencies"] = {
+					1048705, -- [1]
+					93717634, -- [2]
+					11799557, -- [3]
+					246288134, -- [4]
+					69866247, -- [5]
+				},
+				["Archeology"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					0, -- [4]
+					0, -- [5]
+					0, -- [6]
+					0, -- [7]
+					0, -- [8]
+					0, -- [9]
+					0, -- [10]
+					0, -- [11]
+					0, -- [12]
+					0, -- [13]
+					0, -- [14]
+					0, -- [15]
+					0, -- [16]
+					0, -- [17]
+					0, -- [18]
+					0, -- [19]
+					0, -- [20]
+				},
+				["lastUpdate"] = 1644553976,
+				["CurrencyInfo"] = {
+					[824] = "533-0-0-10000",
+					[1220] = "1879-0-0-0",
+					[1560] = "90-0-0-0",
+					[1754] = "8-0-0-0",
+					[1166] = "715-0-0-0",
 				},
 			},
 			["Default.Dalaran.Illingrath"] = {
@@ -264,7 +326,7 @@ DataStore_CurrenciesDB = {
 					0, -- [19]
 					0, -- [20]
 				},
-				["lastUpdate"] = 1644369549,
+				["lastUpdate"] = 1644551275,
 				["CurrencyInfo"] = {
 					[1220] = "2385-0-0-0",
 					[1560] = "14-0-0-0",
@@ -309,7 +371,7 @@ DataStore_CurrenciesDB = {
 					0, -- [19]
 					0, -- [20]
 				},
-				["lastUpdate"] = 1644368742,
+				["lastUpdate"] = 1644550217,
 				["CurrencyInfo"] = {
 					[1602] = "0-0-0-0",
 					[81] = "2-0-0-0",
@@ -320,8 +382,8 @@ DataStore_CurrenciesDB = {
 					[1792] = "0-0-0-15000",
 					[1166] = "720-0-0-0",
 					[1560] = "85-0-0-0",
-					[823] = "35-0-0-0",
 					[1220] = "2548-0-0-0",
+					[823] = "35-0-0-0",
 				},
 			},
 			["Default.Black Dragonflight.Durlok"] = {
@@ -353,12 +415,12 @@ DataStore_CurrenciesDB = {
 					0, -- [19]
 					0, -- [20]
 				},
-				["lastUpdate"] = 1644367481,
+				["lastUpdate"] = 1644549225,
 				["CurrencyInfo"] = {
 					[1560] = "3-0-0-0",
+					[1155] = "250-0-0-300",
 					[1754] = "19-0-0-0",
 					[1166] = "1145-0-0-0",
-					[1155] = "250-0-0-300",
 				},
 			},
 			["Default.Argent Dawn.Shanyt"] = {
@@ -366,7 +428,7 @@ DataStore_CurrenciesDB = {
 					655489, -- [1]
 					2097409, -- [2]
 					13107585, -- [3]
-					1966593, -- [4]
+					24773121, -- [4]
 					171704961, -- [5]
 					36700929, -- [6]
 					6161281, -- [7]
@@ -437,7 +499,7 @@ DataStore_CurrenciesDB = {
 					32, -- [19]
 					1, -- [20]
 				},
-				["lastUpdate"] = 1644367018,
+				["lastUpdate"] = 1644547180,
 				["CurrencyInfo"] = {
 					[1191] = "155-0-0-0",
 					[515] = "175-0-0-0",
@@ -456,41 +518,41 @@ DataStore_CurrenciesDB = {
 					[1602] = "0-0-0-0",
 					[81] = "10-0-0-0",
 					[1803] = "25272-0-0-0",
-					[614] = "25-0-0-0",
-					[1754] = "5-0-0-0",
+					[1704] = "175-0-0-200",
+					[241] = "138-0-0-0",
 					[823] = "468821-0-0-0",
 					[1508] = "1554-0-0-2000",
 					[416] = "371-0-0-0",
 					[1299] = "3428-0-0-5000",
 					[1268] = "938-0-0-1000",
-					[1755] = "386167-0-0-0",
+					[752] = "0-0-0-20",
+					[697] = "0-0-0-20",
 					[1721] = "2795-0-0-0",
-					[391] = "127-0-0-0",
 					[776] = "7-0-0-20",
 					[1792] = "1952-0-0-15000",
 					[1166] = "7690-0-0-0",
-					[1129] = "0-0-0-20",
+					[994] = "1-0-0-20",
 					[1149] = "1787-0-0-5000",
-					[402] = "29-0-0-0",
+					[824] = "3552-0-0-10000",
 					[1560] = "71300-0-0-0",
-					[1155] = "912-0-0-2000",
+					[1533] = "14719-0-0-0",
 					[1820] = "100-0-0-100",
-					[1718] = "0-0-0-0",
-					[1828] = "1310-0-0-0",
+					[615] = "4-0-0-0",
+					[402] = "29-0-0-0",
 					[1275] = "194-0-0-0",
 					[1710] = "99-0-0-0",
 					[1273] = "0-0-0-6",
-					[615] = "4-0-0-0",
-					[1533] = "14719-0-0-0",
-					[824] = "3552-0-0-10000",
+					[1718] = "0-0-0-0",
+					[1155] = "912-0-0-2000",
+					[1828] = "1310-0-0-0",
 					[1226] = "79886-0-0-0",
-					[994] = "1-0-0-20",
-					[697] = "0-0-0-20",
-					[752] = "0-0-0-20",
+					[1129] = "0-0-0-20",
+					[391] = "127-0-0-0",
+					[1755] = "386167-0-0-0",
 					[944] = "4-0-0-1000",
-					[1813] = "15-0-0-200000",
-					[241] = "138-0-0-0",
-					[1704] = "175-0-0-200",
+					[1813] = "189-0-0-200000",
+					[1754] = "5-0-0-0",
+					[614] = "25-0-0-0",
 				},
 			},
 		},

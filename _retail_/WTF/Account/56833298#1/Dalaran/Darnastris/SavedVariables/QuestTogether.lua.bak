@@ -1,31 +1,37 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[57300] = {
-			["title"] = "Soldier of Time",
+		[50733] = {
+			["title"] = "A New Dawn",
 			["objectives"] = {
-				"0/500 Earn Honor in Korrak's Revenge", -- [1]
 			},
 		},
-		[37433] = {
-			["title"] = "Proving Grounds",
+		[53028] = {
+			["title"] = "A Dying World",
 			["objectives"] = {
-				"0/1 Speak with Lieutenant Thorn to enter Proving Grounds", -- [1]
-				"0/1 Complete a Bronze Trial", -- [2]
 			},
 		},
-		[40329] = {
-			["title"] = "Battle Pet Tamers: Warlords",
+		[13041] = {
+			["title"] = "Finish the Shipment",
 			["objectives"] = {
-				"0/5 Pet Battlemasters Defeated", -- [1]
+				"0/1 Chalcedony", -- [1]
 			},
 		},
-		[47253] = {
-			["title"] = "The Originals",
+		[52070] = {
+			["title"] = "Bauer Backup",
 			["objectives"] = {
-				"0/1 Lord Kazzak slain", -- [1]
-				"0/1 Azuregos slain", -- [2]
-				"0/1 Dragon of Nightmare slain", -- [3]
+			},
+		},
+		[53436] = {
+			["title"] = "Azerite for the Alliance",
+			["objectives"] = {
+				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
+			},
+		},
+		[42433] = {
+			["title"] = "Ancient Magic",
+			["objectives"] = {
+				"Complete the mission \"Ancient Magic\"", -- [1]
 			},
 		},
 		[57686] = {
@@ -34,10 +40,16 @@ QuestTogether = {
 				"0/40 Echo of Mortality", -- [1]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
 			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
+				"0/5 Pet Battlemasters Defeated", -- [1]
+			},
+		},
+		[52544] = {
+			["title"] = "The War Cache",
+			["objectives"] = {
+				"90/100 War Resources", -- [1]
 			},
 		},
 		[60545] = {
@@ -45,6 +57,13 @@ QuestTogether = {
 			["objectives"] = {
 				"1/1 Learn about your leaders' fate", -- [1]
 				"0/1 Take the Death Gate to Acherus", -- [2]
+			},
+		},
+		[28398] = {
+			["title"] = "The Pyromancer's Grimoire",
+			["objectives"] = {
+				"0/6 Twilight Emissary slain", -- [1]
+				"0/1 Loregrain's Grimoire", -- [2]
 			},
 		},
 		[31891] = {
@@ -57,23 +76,85 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[53436] = {
-			["title"] = "Azerite for the Alliance",
-			["objectives"] = {
-				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
-			},
-		},
 		[44948] = {
 			["title"] = "Raising Your Snowfeather",
 			["objectives"] = {
 				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
+		[25191] = {
+			["title"] = "Survey the Destruction",
+			["objectives"] = {
+				"Survey Complete", -- [1]
+			},
+		},
+		[26013] = {
+			["title"] = "Assault on the Sanctum",
+			["objectives"] = {
+			},
+		},
+		[26897] = {
+			["title"] = "Blackfathom Deeps",
+			["objectives"] = {
+			},
+		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[43441] = {
+			["title"] = "A Second Weapon",
+			["objectives"] = {
+				"0/1 Choose a second artifact to pursue", -- [1]
+			},
+		},
+		[37433] = {
+			["title"] = "Proving Grounds",
+			["objectives"] = {
+				"0/1 Speak with Lieutenant Thorn to enter Proving Grounds", -- [1]
+				"0/1 Complete a Bronze Trial", -- [2]
+			},
+		},
+		[34692] = {
+			["title"] = "Delegating on Draenor",
+			["objectives"] = {
+				"Use the Command Table", -- [1]
+			},
+		},
+		[50825] = {
+			["title"] = "Shrine of the Storm: Whispers Below",
+			["objectives"] = {
+				"Defeat Lord Stormsong", -- [1]
+			},
+		},
+		[26838] = {
+			["title"] = "Rebels Without a Clue",
+			["objectives"] = {
+			},
+		},
+		[12466] = {
+			["title"] = "Chasing Icestorm: The 7th Legion Front",
+			["objectives"] = {
+			},
+		},
+		[51569] = {
+			["title"] = "The Zandalar Campaign",
+			["objectives"] = {
+				"0/1 Choose a foothold", -- [1]
+			},
+		},
+		[29439] = {
+			["title"] = "The Call of the World-Shaman",
+			["objectives"] = {
+			},
+		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

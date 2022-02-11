@@ -7,26 +7,16 @@ QuestTogether = {
 				"0/1 Travel to Zoram Strand", -- [1]
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
+		[50605] = {
+			["title"] = "Alliance War Effort",
 			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
+				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
 			},
 		},
 		[44948] = {
 			["title"] = "Raising Your Snowfeather",
 			["objectives"] = {
 				"Level 25 Snowfeather Hatchling", -- [1]
-			},
-		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
-			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[52194] = {
@@ -68,6 +58,12 @@ QuestTogether = {
 				"0/1 Speak to Harbormaster Cyrus Crestfall to set sail", -- [1]
 			},
 		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
 		[42731] = {
 			["title"] = "Working With the Wardens",
 			["objectives"] = {
@@ -76,12 +72,6 @@ QuestTogether = {
 				"\"Working With the Wardens: Mellok, Son of Torok\" completed", -- [3]
 				"\"Working With the Wardens: Fathnyr\" completed", -- [4]
 				"\"Working With the Wardens: Mal'Dreth the Corruptor\" completed", -- [5]
-			},
-		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
-			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
 		[40329] = {
@@ -96,10 +86,10 @@ QuestTogether = {
 				"0/40 Echo of Mortality", -- [1]
 			},
 		},
-		[24745] = {
-			["title"] = "Something is in the Air (and it Ain't Love)",
+		[48639] = {
+			["title"] = "Army of the Light",
 			["objectives"] = {
-				"Bring the Faded Lovely Greeting Card to Inspector Snip Snagglebolt in Stormwind.", -- [1]
+				"0/4 Complete 4 Army of the Light World Quests", -- [1]
 			},
 		},
 		[53476] = {
@@ -133,27 +123,33 @@ QuestTogether = {
 				"0/1 Silgryn met", -- [1]
 			},
 		},
-		[53074] = {
-			["title"] = "Reinforcements",
-			["objectives"] = {
-				"0/1 Troops ordered", -- [1]
-			},
-		},
-		[38912] = {
-			["title"] = "The Bloodtotem Tribe",
-			["objectives"] = {
-			},
-		},
-		[50600] = {
-			["title"] = "Order of Embers",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Drustvar", -- [1]
-			},
-		},
 		[51283] = {
 			["title"] = "Voyage to the West",
 			["objectives"] = {
 				"0/1 Speak with Jes-Tereth to sail to Vol'dun", -- [1]
+			},
+		},
+		[53110] = {
+			["title"] = "The High Thornspeaker",
+			["objectives"] = {
+				"0/1 Meet Arthur Tradewind", -- [1]
+			},
+		},
+		[38913] = {
+			["title"] = "The Skyhorn Tribe",
+			["objectives"] = {
+			},
+		},
+		[50601] = {
+			["title"] = "Storm's Wake",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Stormsong Valley", -- [1]
+			},
+		},
+		[53074] = {
+			["title"] = "Reinforcements",
+			["objectives"] = {
+				"0/1 Troops ordered", -- [1]
 			},
 		},
 		[48540] = {
@@ -164,28 +160,26 @@ QuestTogether = {
 				"0/1 Seal Blubber", -- [3]
 			},
 		},
-		[42233] = {
-			["title"] = "Highmountain Tribes",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Highmountain.", -- [1]
-			},
-		},
 		[39134] = {
 			["title"] = "Wrathshard",
 			["objectives"] = {
 				"0/1 Wrathshard slain", -- [1]
 			},
 		},
-		[50605] = {
-			["title"] = "Alliance War Effort",
+		[42421] = {
+			["title"] = "The Nightfallen",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
+				"0/4 Complete 4 world quests in Suramar", -- [1]
 			},
 		},
-		[42422] = {
-			["title"] = "The Wardens",
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
 		[53583] = {
@@ -194,22 +188,22 @@ QuestTogether = {
 				"0/1 Choose an upgrade to pursue", -- [1]
 			},
 		},
-		[38913] = {
-			["title"] = "The Skyhorn Tribe",
+		[38912] = {
+			["title"] = "The Bloodtotem Tribe",
 			["objectives"] = {
 			},
 		},
-		[53110] = {
-			["title"] = "The High Thornspeaker",
+		[50599] = {
+			["title"] = "Proudmoore Admiralty",
 			["objectives"] = {
-				"0/1 Meet Arthur Tradewind", -- [1]
+				"0/4 Complete 4 world quests in Tiragarde Sound", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
 	},
 }

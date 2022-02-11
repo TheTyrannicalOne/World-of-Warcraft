@@ -7,26 +7,30 @@ DataStore_PetsDB = {
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
+		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 	},
 	["global"] = {
 		["Characters"] = {
 			["Default.Dalaran.Varlouris"] = {
-				["lastUpdate"] = 1644369676,
+				["lastUpdate"] = 1644553410,
 			},
 			["Default.Dalaran.Avisar"] = {
-				["lastUpdate"] = 1644369246,
+				["lastUpdate"] = 1644550881,
+			},
+			["Default.Dalaran.Darnastris"] = {
+				["lastUpdate"] = 1644553976,
 			},
 			["Default.Dalaran.Illingrath"] = {
-				["lastUpdate"] = 1644369549,
+				["lastUpdate"] = 1644551275,
 			},
 			["Default.Zul'jin.Zulbathal"] = {
-				["lastUpdate"] = 1644368742,
+				["lastUpdate"] = 1644550217,
 			},
 			["Default.Black Dragonflight.Durlok"] = {
-				["lastUpdate"] = 1644367481,
+				["lastUpdate"] = 1644549225,
 			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["lastUpdate"] = 1644367018,
+				["lastUpdate"] = 1644554616,
 			},
 		},
 	},

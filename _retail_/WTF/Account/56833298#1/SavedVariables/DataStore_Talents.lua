@@ -7,12 +7,13 @@ DataStore_TalentsDB = {
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
+		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 	},
 	["global"] = {
 		["Characters"] = {
 			["Default.Dalaran.Varlouris"] = {
 				["activeSpecRole"] = "DAMAGER",
-				["lastUpdate"] = 1644369611,
+				["lastUpdate"] = 1644553410,
 				["Specializations"] = {
 					[2] = 16277,
 				},
@@ -22,7 +23,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Dalaran.Avisar"] = {
 				["activeSpecRole"] = "DAMAGER",
-				["lastUpdate"] = 1644369246,
+				["lastUpdate"] = 1644550881,
 				["Specializations"] = {
 					[3] = 9562,
 				},
@@ -30,9 +31,19 @@ DataStore_TalentsDB = {
 				["activeSpecName"] = "Retribution",
 				["Class"] = "PALADIN",
 			},
+			["Default.Dalaran.Darnastris"] = {
+				["activeSpecRole"] = "DAMAGER",
+				["lastUpdate"] = 1644553976,
+				["Specializations"] = {
+					[3] = 7098,
+				},
+				["activeSpecIndex"] = 3,
+				["activeSpecName"] = "Frost",
+				["Class"] = "MAGE",
+			},
 			["Default.Dalaran.Illingrath"] = {
 				["activeSpecRole"] = "TANK",
-				["lastUpdate"] = 1644369549,
+				["lastUpdate"] = 1644551275,
 				["Specializations"] = {
 					[2] = 6649,
 				},
@@ -42,7 +53,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Zul'jin.Zulbathal"] = {
 				["activeSpecRole"] = "DAMAGER",
-				["lastUpdate"] = 1644368742,
+				["lastUpdate"] = 1644550217,
 				["Specializations"] = {
 					9709, -- [1]
 				},
@@ -52,7 +63,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Black Dragonflight.Durlok"] = {
 				["activeSpecRole"] = "TANK",
-				["lastUpdate"] = 1644367481,
+				["lastUpdate"] = 1644549225,
 				["Specializations"] = {
 					[3] = 5631,
 				},
@@ -62,7 +73,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Argent Dawn.Shanyt"] = {
 				["activeSpecRole"] = "DAMAGER",
-				["lastUpdate"] = 1644367018,
+				["lastUpdate"] = 1644554477,
 				["Specializations"] = {
 					5851, -- [1]
 				},
@@ -81,6 +92,7 @@ DataStore_TalentsRefDB = {
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
+		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 	},
 	["global"] = {
 		["WARRIOR"] = {
@@ -159,6 +171,44 @@ DataStore_TalentsRefDB = {
 			},
 			["Version"] = 42010,
 		},
+		["MAGE"] = {
+			["Locale"] = "enUS",
+			["Specializations"] = {
+				{
+					["id"] = 62,
+				}, -- [1]
+				{
+					["id"] = 63,
+				}, -- [2]
+				{
+					["id"] = 64,
+					["talents"] = {
+						22457, -- [1]
+						22460, -- [2]
+						22463, -- [3]
+						22442, -- [4]
+						22443, -- [5]
+						23073, -- [6]
+						22444, -- [7]
+						22445, -- [8]
+						22447, -- [9]
+						22452, -- [10]
+						22466, -- [11]
+						22469, -- [12]
+						22446, -- [13]
+						22448, -- [14]
+						22471, -- [15]
+						22454, -- [16]
+						23176, -- [17]
+						22473, -- [18]
+						21632, -- [19]
+						22309, -- [20]
+						21634, -- [21]
+					},
+				}, -- [3]
+			},
+			["Version"] = 42010,
+		},
 		["DRUID"] = {
 			["Locale"] = "enUS",
 			["Specializations"] = {
@@ -223,41 +273,6 @@ DataStore_TalentsRefDB = {
 			},
 			["Version"] = 42010,
 		},
-		["DEMONHUNTER"] = {
-			["Locale"] = "enUS",
-			["Specializations"] = {
-				{
-					["id"] = 577,
-				}, -- [1]
-				{
-					["id"] = 581,
-					["talents"] = {
-						22502, -- [1]
-						22503, -- [2]
-						22504, -- [3]
-						22505, -- [4]
-						22766, -- [5]
-						22507, -- [6]
-						22324, -- [7]
-						22541, -- [8]
-						22540, -- [9]
-						22508, -- [10]
-						22509, -- [11]
-						22770, -- [12]
-						22546, -- [13]
-						22510, -- [14]
-						22511, -- [15]
-						22512, -- [16]
-						22513, -- [17]
-						22768, -- [18]
-						22543, -- [19]
-						23464, -- [20]
-						21902, -- [21]
-					},
-				}, -- [2]
-			},
-			["Version"] = 42010,
-		},
 		["SHAMAN"] = {
 			["Locale"] = "enUS",
 			["Specializations"] = {
@@ -293,6 +308,41 @@ DataStore_TalentsRefDB = {
 				{
 					["id"] = 264,
 				}, -- [3]
+			},
+			["Version"] = 42010,
+		},
+		["DEMONHUNTER"] = {
+			["Locale"] = "enUS",
+			["Specializations"] = {
+				{
+					["id"] = 577,
+				}, -- [1]
+				{
+					["id"] = 581,
+					["talents"] = {
+						22502, -- [1]
+						22503, -- [2]
+						22504, -- [3]
+						22505, -- [4]
+						22766, -- [5]
+						22507, -- [6]
+						22324, -- [7]
+						22541, -- [8]
+						22540, -- [9]
+						22508, -- [10]
+						22509, -- [11]
+						22770, -- [12]
+						22546, -- [13]
+						22510, -- [14]
+						22511, -- [15]
+						22512, -- [16]
+						22513, -- [17]
+						22768, -- [18]
+						22543, -- [19]
+						23464, -- [20]
+						21902, -- [21]
+					},
+				}, -- [2]
 			},
 			["Version"] = 42010,
 		},

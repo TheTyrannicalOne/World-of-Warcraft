@@ -7,6 +7,7 @@ DataStore_AgendaDB = {
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
+		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 	},
 	["global"] = {
 		["Options"] = {
@@ -16,22 +17,25 @@ DataStore_AgendaDB = {
 		},
 		["Characters"] = {
 			["Default.Dalaran.Varlouris"] = {
-				["lastUpdate"] = 1644369624,
+				["lastUpdate"] = 1644553414,
 			},
 			["Default.Dalaran.Avisar"] = {
-				["lastUpdate"] = 1644369248,
+				["lastUpdate"] = 1644550882,
+			},
+			["Default.Dalaran.Darnastris"] = {
+				["lastUpdate"] = 1644553976,
 			},
 			["Default.Dalaran.Illingrath"] = {
-				["lastUpdate"] = 1644369550,
+				["lastUpdate"] = 1644551275,
 			},
 			["Default.Zul'jin.Zulbathal"] = {
-				["lastUpdate"] = 1644368743,
+				["lastUpdate"] = 1644550218,
 			},
 			["Default.Black Dragonflight.Durlok"] = {
-				["lastUpdate"] = 1644367482,
+				["lastUpdate"] = 1644549227,
 			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["lastUpdate"] = 1644367026,
+				["lastUpdate"] = 1644547182,
 			},
 		},
 	},

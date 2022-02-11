@@ -1,5 +1,10 @@
 
 SpyPerCharDB = {
+	["version"] = "1.1",
+	["IgnoreData"] = {
+	},
+	["KOSData"] = {
+	},
 	["PlayerData"] = {
 		["Lunarbeef"] = {
 			["mapID"] = 75,
@@ -192,20 +197,6 @@ SpyPerCharDB = {
 			["mapX"] = 0.63,
 			["subZone"] = "Caverns of Time",
 		},
-		["Unknown"] = {
-			["mapID"] = 75,
-			["zone"] = "Tanaris",
-			["mapY"] = 0.47,
-			["class"] = "DEMONHUNTER",
-			["isEnemy"] = true,
-			["race"] = "Blood Elf",
-			["name"] = "Unknown",
-			["time"] = 1638118970,
-			["isGuess"] = false,
-			["level"] = 46,
-			["mapX"] = 0.54,
-			["subZone"] = "Caverns of Time",
-		},
 		["Clw-Zul'jin"] = {
 			["mapID"] = 75,
 			["zone"] = "Tanaris",
@@ -391,12 +382,12 @@ SpyPerCharDB = {
 			["isEnemy"] = true,
 			["loses"] = 1,
 			["mapX"] = 0.23,
-			["isGuess"] = true,
+			["name"] = "Maxxis-BurningBlade",
 			["time"] = 1605661467,
 			["subZone"] = "The Marris Stead",
 			["level"] = 46,
 			["race"] = "Human",
-			["name"] = "Maxxis-BurningBlade",
+			["isGuess"] = true,
 		},
 		["Hugemo-AeriePeak"] = {
 			["mapID"] = 71,
@@ -573,10 +564,5 @@ SpyPerCharDB = {
 			["mapX"] = 0.63,
 			["subZone"] = "Caverns of Time",
 		},
-	},
-	["IgnoreData"] = {
-	},
-	["version"] = "1.1",
-	["KOSData"] = {
 	},
 }

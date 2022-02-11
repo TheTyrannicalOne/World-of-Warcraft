@@ -45,13 +45,13 @@ MJEPersonalSettings = {
 			[0] = true,
 		},
 		["source"] = {
-			["Promotion"] = true,
+			["World Event"] = true,
 			["Black Market"] = true,
 			["PVP"] = true,
-			["Vendor"] = true,
+			["Promotion"] = true,
 			["Instance"] = true,
 			["Class"] = true,
-			["World Event"] = true,
+			["Vendor"] = true,
 			["Garrison"] = true,
 			["Island Expedition"] = true,
 			["Shop"] = true,
@@ -66,12 +66,15 @@ MJEPersonalSettings = {
 		["color"] = {
 		},
 		["notCollected"] = true,
-		["faction"] = {
-			["horde"] = true,
-			["alliance"] = true,
-			["noFaction"] = true,
-		},
 		["onlyUsable"] = false,
+		["mountType"] = {
+			["repair"] = true,
+			["flying"] = true,
+			["underwater"] = true,
+			["transform"] = true,
+			["ground"] = true,
+			["passenger"] = true,
+		},
 		["onlyFavorites"] = false,
 		["family"] = {
 			["Arachnids"] = {
@@ -161,10 +164,10 @@ MJEPersonalSettings = {
 				["Direhorns"] = true,
 			},
 			["Rays"] = {
-				["Nether Rays"] = true,
-				["Stingrays"] = true,
-				["Mana Rays"] = true,
 				["Fathom Rays"] = true,
+				["Nether Rays"] = true,
+				["Mana Rays"] = true,
+				["Stingrays"] = true,
 			},
 			["Wolves"] = {
 				["Wolves"] = true,
@@ -269,13 +272,10 @@ MJEPersonalSettings = {
 			},
 			["Bats"] = true,
 		},
-		["mountType"] = {
-			["repair"] = true,
-			["flying"] = true,
-			["underwater"] = true,
-			["transform"] = true,
-			["ground"] = true,
-			["passenger"] = true,
+		["faction"] = {
+			["horde"] = true,
+			["alliance"] = true,
+			["noFaction"] = true,
 		},
 		["onlyTradable"] = false,
 		["collected"] = true,

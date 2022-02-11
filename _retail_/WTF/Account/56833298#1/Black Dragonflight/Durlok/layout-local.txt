@@ -10,7 +10,7 @@ Frame: AllTheThings-Window-CurrentInstance
 FrameLevel: 1
 Anchor: LEFT
 X: 0
-Y: 2
+Y: -15
 W: 299
 H: 299
 Frame: AAP_QuestFrame
@@ -68,6 +68,13 @@ Anchor: TOPLEFT
 X: 16
 Y: -116
 W: 444
+H: 444
+Frame: MerchantFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 386
 H: 444
 Frame: TradeFrame
 FrameLevel: 1
@@ -157,7 +164,7 @@ Frame: AllTheThings-Window-Bounty
 FrameLevel: 1
 Anchor: BOTTOMLEFT
 X: 0
-Y: 276
+Y: 258
 W: 300
 H: 300
 Frame: PVEFrame
@@ -174,13 +181,6 @@ X: 0
 Y: -100
 W: 306
 H: 193
-Frame: MerchantFrame
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 16
-Y: -116
-W: 386
-H: 444
 Frame: LFGDungeonReadyStatus
 FrameLevel: 2
 Anchor: TOP

@@ -58,12 +58,10 @@ QuestTogether = {
 				"0/1 Viscous Fallout slain", -- [1]
 			},
 		},
-		[40300] = {
-			["title"] = "Tools of the Trade",
+		[48639] = {
+			["title"] = "Army of the Light",
 			["objectives"] = {
-				"0/1 Sacred Oil", -- [1]
-				"0/1 Preserving Incense", -- [2]
-				"0/1 Chest of Shrouds", -- [3]
+				"0/4 Complete 4 Army of the Light World Quests", -- [1]
 			},
 		},
 		[38286] = {
@@ -131,22 +129,23 @@ QuestTogether = {
 				"0/1 Tears of Elune", -- [3]
 			},
 		},
-		[42233] = {
-			["title"] = "Highmountain Tribes",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Highmountain.", -- [1]
-			},
-		},
 		[46286] = {
 			["title"] = "Legionfall Supplies",
 			["objectives"] = {
 				"31/100 Collect Legionfall War Supplies", -- [1]
 			},
 		},
-		[42422] = {
-			["title"] = "The Wardens",
+		[40332] = {
+			["title"] = "Beach Bonfire",
 			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
+				"6/6 Driftwood", -- [1]
+				"1/1 Jarl Throndyr's Pyre built", -- [2]
+			},
+		},
+		[42421] = {
+			["title"] = "The Nightfallen",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Suramar", -- [1]
 			},
 		},
 		[44561] = {
@@ -169,11 +168,12 @@ QuestTogether = {
 				"0/1 Aftermath of the Well", -- [3]
 			},
 		},
-		[40332] = {
-			["title"] = "Beach Bonfire",
+		[40300] = {
+			["title"] = "Tools of the Trade",
 			["objectives"] = {
-				"6/6 Driftwood", -- [1]
-				"1/1 Jarl Throndyr's Pyre built", -- [2]
+				"0/1 Sacred Oil", -- [1]
+				"0/1 Preserving Incense", -- [2]
+				"0/1 Chest of Shrouds", -- [3]
 			},
 		},
 	},
