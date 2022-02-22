@@ -58,6 +58,7 @@ L["Camels"] = "Camels"
 L["Carnivorans"] = "Carnivorans"
 L["Carpets"] = "Carpets"
 L["Cats"] = "Cats"
+L["Cervid"] = "Cervid"
 L["Chargers"] = "Chargers"
 L["Chickens"] = "Chickens"
 L["Clefthooves"] = "Clefthooves"
@@ -98,8 +99,8 @@ L["Grand Drakes"] = "Grand Drakes"
 L["Gronnlings"] = "Gronnlings"
 L["Gryphons"] = "Gryphons"
 L["Gyrocopters"] = "Gyrocopters"
-L["Hawkstriders"] = "Hawkstriders"
 L["Hands"] = "Hands"
+L["Hawkstriders"] = "Hawkstriders"
 L["Hippogryphs"] = "Hippogryphs"
 L["Horned Steeds"] = "Horned Steeds"
 L["Horses"] = "Horses"
@@ -116,6 +117,7 @@ L["Kodos"] = "Kodos"
 L["Krolusks"] = "Krolusks"
 L["Larion"] = "Larion"
 L["Lions"] = "Lions"
+L["Lupine"] = "Lupine"
 L["Mammoths"] = "Mammoths"
 L["Mana Rays"] = "Mana Rays"
 L["Manasabers"] = "Manasabers"
@@ -143,6 +145,7 @@ L["Proto-Drakes"] = "Proto-Drakes"
 L["Pterrordaxes"] = "Pterrordaxes"
 L["Quilen"] = "Quilen"
 L["Rams"] = "Rams"
+L["Raptora"] = "Raptora"
 L["Raptors"] = "Raptors"
 L["Rats"] = "Rats"
 L["Ravagers"] = "Ravagers"
@@ -162,6 +165,7 @@ L["Sea Serpents"] = "Sea Serpents"
 L["Seahorses"] = "Seahorses"
 L["Seat"] = "Seat"
 L["Silithids"] = "Silithids"
+L["Snail"] = "Snail"
 L["Snapdragons"] = "Snapdragons"
 L["Spider Tanks"] = "Spider Tanks"
 L["Spiders"] = "Spiders"
@@ -182,9 +186,11 @@ L["Undead Wolves"] = "Undead Wolves"
 L["Ungulates"] = "Ungulates"
 L["Ur'zul"] = "Ur'zul"
 L["Vehicles"] = "Vehicles"
+L["Vombata"] = "Vombata"
 L["Vulpin"] = "Vulpin"
 L["Vultures"] = "Vultures"
 L["War Wolves"] = "War Wolves"
+L["Wasp"] = "Wasp"
 L["Water Striders"] = "Water Striders"
 L["Wilderlings"] = "Wilderlings"
 L["Wind Drakes"] = "Wind Drakes"
@@ -290,6 +296,7 @@ L["Camels"] = "Kamele"
 L["Carnivorans"] = "Raubtiere"
 L["Carpets"] = "Teppiche"
 L["Cats"] = "Katzen"
+L["Cervid"] = "Cervid"
 L["Chargers"] = "Streitrosse"
 L["Chickens"] = "Hühner"
 L["Clefthooves"] = "Spalthufe"
@@ -348,6 +355,7 @@ L["Kodos"] = "Kodos"
 L["Krolusks"] = "Krolusk"
 L["Larion"] = "Larion"
 L["Lions"] = "Löwen"
+L["Lupine"] = "Lupin"
 L["Mammoths"] = "Mammuts"
 L["Mana Rays"] = "Manarochen"
 L["Manasabers"] = "Manasäbler"
@@ -375,6 +383,7 @@ L["Proto-Drakes"] = "Protodrachen"
 L["Pterrordaxes"] = "Pterrordaxe"
 L["Quilen"] = "Qilen"
 L["Rams"] = "Widder"
+L["Raptora"] = "Raptora"
 L["Raptors"] = "Raptoren"
 L["Rats"] = "Ratten"
 L["Ravagers"] = "Felshetzer"
@@ -394,6 +403,7 @@ L["Sea Serpents"] = "Seeschlangen"
 L["Seahorses"] = "Seepferde"
 L["Seat"] = "Wiege"
 L["Silithids"] = "Qirajipanzerdrohnen"
+L["Snail"] = "Schnecke"
 L["Snapdragons"] = "Schnappdrachen"
 L["Spider Tanks"] = "Mechaspinnen"
 L["Spiders"] = "Spinnen"
@@ -414,9 +424,11 @@ L["Undead Wolves"] = "Untote Wölfe"
 L["Ungulates"] = "Huftiere"
 L["Ur'zul"] = "Ur'zul"
 L["Vehicles"] = "Fahrzeuge"
+L["Vombata"] = "Vombata"
 L["Vulpin"] = "Vulpin"
 L["Vultures"] = "Geier"
 L["War Wolves"] = "Kriegswölfe"
+L["Wasp"] = "Wespe"
 L["Water Striders"] = "Wasserschreiter"
 L["Wilderlings"] = "Wildling"
 L["Wind Drakes"] = "Winddrachen"
@@ -502,6 +514,7 @@ L["Camels"] = "Camellos"
 L["Carnivorans"] = "Carnívoros"
 L["Carpets"] = "Alfombras"
 L["Cats"] = "Gatos"
+L["Cervid"] = "Cérvidos"
 L["Chargers"] = "Destreros"
 L["Chickens"] = "Pollos"
 L["Clefthooves"] = "Uñagrietas"
@@ -560,6 +573,7 @@ L["Kodos"] = "Kodos"
 L["Krolusks"] = "Croluscos"
 L["Larion"] = "Lariones"
 L["Lions"] = "Leones"
+L["Lupine"] = "Lupinos"
 L["Mammoths"] = "Mamuts"
 L["Mana Rays"] = "Rayas de Maná"
 L["Manasabers"] = "Sables de Maná"
@@ -587,6 +601,7 @@ L["Proto-Drakes"] = "Protodracos"
 L["Pterrordaxes"] = "Pterrordáctilos"
 L["Quilen"] = "Quilens"
 L["Rams"] = "Carneros"
+L["Raptora"] = "Accipítridos"
 L["Raptors"] = "Raptores"
 L["Rats"] = "Ratas"
 L["Ravagers"] = "Atracadores"
@@ -606,6 +621,7 @@ L["Sea Serpents"] = "Serpientes de Mar"
 L["Seahorses"] = "Caballitos de Mar"
 L["Seat"] = "Asientos"
 L["Silithids"] = "Silítidos"
+L["Snail"] = "Caracoles"
 L["Snapdragons"] = "Bocadragones"
 L["Spider Tanks"] = "Arañas Mecánicas"
 L["Spiders"] = "Arañas"
@@ -626,9 +642,11 @@ L["Undead Wolves"] = "Lobos no Muertos"
 L["Ungulates"] = "Ungulados"
 L["Ur'zul"] = "Ur'zul"
 L["Vehicles"] = "Vehículos"
+L["Vombata"] = "Vombatas"
 L["Vulpin"] = "Vulpinos"
 L["Vultures"] = "Buitres"
 L["War Wolves"] = "Lobos de Guerra"
+L["Wasp"] = "Avispas"
 L["Water Striders"] = "Záncudos Acuáticos"
 L["Wilderlings"] = "Salvajizos"
 L["Wind Drakes"] = "Dracos del Viento"
@@ -769,6 +787,8 @@ L["Camels"] = "Dromadaires"
 --[[ L["Carpets"] = "Carpets"--]] 
 L["Cats"] = "Félins"
 --[[Translation missing --]]
+--[[ L["Cervid"] = "Cervid"--]] 
+--[[Translation missing --]]
 --[[ L["Chargers"] = "Chargers"--]] 
 --[[Translation missing --]]
 --[[ L["Chickens"] = "Chickens"--]] 
@@ -862,6 +882,8 @@ L["Kodos"] = "Kodos"
 --[[ L["Larion"] = "Larion"--]] 
 --[[Translation missing --]]
 --[[ L["Lions"] = "Lions"--]] 
+--[[Translation missing --]]
+--[[ L["Lupine"] = "Lupine"--]] 
 L["Mammoths"] = "Mammouths"
 --[[Translation missing --]]
 --[[ L["Mana Rays"] = "Mana Rays"--]] 
@@ -908,6 +930,8 @@ L["Pterrordaxes"] = "Pterreurdactyles"
 --[[Translation missing --]]
 --[[ L["Quilen"] = "Quilen"--]] 
 L["Rams"] = "Béliers"
+--[[Translation missing --]]
+--[[ L["Raptora"] = "Raptora"--]] 
 L["Raptors"] = "Raptors"
 L["Rats"] = "Rats"
 L["Ravagers"] = "Saccageurs"
@@ -937,6 +961,8 @@ L["Seahorses"] = "Hippocampes"
 --[[Translation missing --]]
 --[[ L["Seat"] = "Seat"--]] 
 L["Silithids"] = "Silithides"
+--[[Translation missing --]]
+--[[ L["Snail"] = "Snail"--]] 
 --[[Translation missing --]]
 --[[ L["Snapdragons"] = "Snapdragons"--]] 
 --[[Translation missing --]]
@@ -973,11 +999,15 @@ L["Turtles"] = "Tortues"
 --[[Translation missing --]]
 --[[ L["Vehicles"] = "Vehicles"--]] 
 --[[Translation missing --]]
+--[[ L["Vombata"] = "Vombata"--]] 
+--[[Translation missing --]]
 --[[ L["Vulpin"] = "Vulpin"--]] 
 --[[Translation missing --]]
 --[[ L["Vultures"] = "Vultures"--]] 
 --[[Translation missing --]]
 --[[ L["War Wolves"] = "War Wolves"--]] 
+--[[Translation missing --]]
+--[[ L["Wasp"] = "Wasp"--]] 
 L["Water Striders"] = "Trotteurs aquatiques"
 --[[Translation missing --]]
 --[[ L["Wilderlings"] = "Wilderlings"--]] 
@@ -1097,6 +1127,8 @@ L["Camels"] = "낙타"
 L["Carnivorans"] = "육식동물"
 L["Carpets"] = "카페트"
 L["Cats"] = "고양이과"
+--[[Translation missing --]]
+--[[ L["Cervid"] = "Cervid"--]] 
 L["Chargers"] = "군마"
 L["Chickens"] = "닭"
 L["Clefthooves"] = "갈래발굽"
@@ -1163,6 +1195,8 @@ L["Krolusks"] = "크롤러스크"
 --[[Translation missing --]]
 --[[ L["Larion"] = "Larion"--]] 
 L["Lions"] = "사자"
+--[[Translation missing --]]
+--[[ L["Lupine"] = "Lupine"--]] 
 L["Mammoths"] = "매머드"
 L["Mana Rays"] = "마나 가오리"
 L["Manasabers"] = "마나호랑이"
@@ -1193,6 +1227,8 @@ L["Proto-Drakes"] = "원시 비룡"
 L["Pterrordaxes"] = "테러닥스"
 L["Quilen"] = "기렌"
 L["Rams"] = "산양"
+--[[Translation missing --]]
+--[[ L["Raptora"] = "Raptora"--]] 
 L["Raptors"] = "랩터"
 L["Rats"] = "쥐"
 L["Ravagers"] = "칼날발톱"
@@ -1216,6 +1252,8 @@ L["Seahorses"] = "해마"
 --[[Translation missing --]]
 --[[ L["Seat"] = "Seat"--]] 
 L["Silithids"] = "실리시드"
+--[[Translation missing --]]
+--[[ L["Snail"] = "Snail"--]] 
 L["Snapdragons"] = "치악룡"
 L["Spider Tanks"] = "거미 전차"
 L["Spiders"] = "거미"
@@ -1238,10 +1276,14 @@ L["Ungulates"] = "유제류"
 L["Ur'zul"] = "우르줄"
 L["Vehicles"] = "차량"
 --[[Translation missing --]]
+--[[ L["Vombata"] = "Vombata"--]] 
+--[[Translation missing --]]
 --[[ L["Vulpin"] = "Vulpin"--]] 
 --[[Translation missing --]]
 --[[ L["Vultures"] = "Vultures"--]] 
 L["War Wolves"] = "전투 늑대"
+--[[Translation missing --]]
+--[[ L["Wasp"] = "Wasp"--]] 
 L["Water Striders"] = "소금쟁이"
 --[[Translation missing --]]
 --[[ L["Wilderlings"] = "Wilderlings"--]] 
@@ -1337,6 +1379,8 @@ L["Camels"] = "Camelos"
 L["Carnivorans"] = "Carnívoros"
 L["Carpets"] = "Tapetes"
 L["Cats"] = "Gatos"
+--[[Translation missing --]]
+--[[ L["Cervid"] = "Cervid"--]] 
 L["Chargers"] = "Corcéis"
 L["Chickens"] = "Galinhas"
 L["Clefthooves"] = "Fenocerontes"
@@ -1399,6 +1443,8 @@ L["Kodos"] = "Kodos"
 L["Krolusks"] = "Croluscos"
 L["Larion"] = "Larião"
 L["Lions"] = "Leões"
+--[[Translation missing --]]
+--[[ L["Lupine"] = "Lupine"--]] 
 L["Mammoths"] = "Mamutes"
 L["Mana Rays"] = "Arraias de Mana"
 L["Manasabers"] = "Manassabres"
@@ -1427,6 +1473,8 @@ L["Proto-Drakes"] = "Protodracos"
 L["Pterrordaxes"] = "Pterrordaxes"
 L["Quilen"] = "Quílen"
 L["Rams"] = "Carneiros"
+--[[Translation missing --]]
+--[[ L["Raptora"] = "Raptora"--]] 
 L["Raptors"] = "Raptores"
 L["Rats"] = "Ratos"
 L["Ravagers"] = "Assoladores"
@@ -1447,6 +1495,8 @@ L["Sea Serpents"] = "Serpente Marinha"
 L["Seahorses"] = "Cavalos-marinhos"
 L["Seat"] = "Assento"
 L["Silithids"] = "Silitídeos"
+--[[Translation missing --]]
+--[[ L["Snail"] = "Snail"--]] 
 L["Snapdragons"] = "Dracoliscos"
 L["Spider Tanks"] = "Tanques Aranha"
 L["Spiders"] = "Aranhas"
@@ -1467,9 +1517,13 @@ L["Undead Wolves"] = "Lobos Mortos-vivos"
 L["Ungulates"] = "Ungulados"
 L["Ur'zul"] = "Ur'zul"
 L["Vehicles"] = "Veículos"
+--[[Translation missing --]]
+--[[ L["Vombata"] = "Vombata"--]] 
 L["Vulpin"] = "Vulpino"
 L["Vultures"] = "Abutres"
 L["War Wolves"] = "Lobos de Guerra"
+--[[Translation missing --]]
+--[[ L["Wasp"] = "Wasp"--]] 
 L["Water Striders"] = "Caminhante das Águas "
 --[[Translation missing --]]
 --[[ L["Wilderlings"] = "Wilderlings"--]] 
@@ -1613,6 +1667,8 @@ L["Camels"] = "Верблюды"
 --[[ L["Carpets"] = "Carpets"--]] 
 L["Cats"] = "Кошки"
 --[[Translation missing --]]
+--[[ L["Cervid"] = "Cervid"--]] 
+--[[Translation missing --]]
 --[[ L["Chargers"] = "Chargers"--]] 
 --[[Translation missing --]]
 --[[ L["Chickens"] = "Chickens"--]] 
@@ -1708,6 +1764,8 @@ L["Kodos"] = "Кодо"
 --[[ L["Larion"] = "Larion"--]] 
 --[[Translation missing --]]
 --[[ L["Lions"] = "Lions"--]] 
+--[[Translation missing --]]
+--[[ L["Lupine"] = "Lupine"--]] 
 L["Mammoths"] = "Мамонты"
 --[[Translation missing --]]
 --[[ L["Mana Rays"] = "Mana Rays"--]] 
@@ -1754,6 +1812,8 @@ L["Pterrordaxes"] = "Птеродактили"
 --[[Translation missing --]]
 --[[ L["Quilen"] = "Quilen"--]] 
 L["Rams"] = "Бараны"
+--[[Translation missing --]]
+--[[ L["Raptora"] = "Raptora"--]] 
 L["Raptors"] = "Ящеры"
 L["Rats"] = "Крысы"
 L["Ravagers"] = "Разорители"
@@ -1784,6 +1844,8 @@ L["Seahorses"] = "Морские коньки"
 --[[Translation missing --]]
 --[[ L["Seat"] = "Seat"--]] 
 L["Silithids"] = "Силитиды"
+--[[Translation missing --]]
+--[[ L["Snail"] = "Snail"--]] 
 --[[Translation missing --]]
 --[[ L["Snapdragons"] = "Snapdragons"--]] 
 --[[Translation missing --]]
@@ -1820,11 +1882,15 @@ L["Turtles"] = "Черепахи"
 --[[Translation missing --]]
 --[[ L["Vehicles"] = "Vehicles"--]] 
 --[[Translation missing --]]
+--[[ L["Vombata"] = "Vombata"--]] 
+--[[Translation missing --]]
 --[[ L["Vulpin"] = "Vulpin"--]] 
 --[[Translation missing --]]
 --[[ L["Vultures"] = "Vultures"--]] 
 --[[Translation missing --]]
 --[[ L["War Wolves"] = "War Wolves"--]] 
+--[[Translation missing --]]
+--[[ L["Wasp"] = "Wasp"--]] 
 L["Water Striders"] = "Водные долгоноги"
 --[[Translation missing --]]
 --[[ L["Wilderlings"] = "Wilderlings"--]] 
@@ -1929,6 +1995,8 @@ L["Camels"] = "骆驼"
 L["Carnivorans"] = "食肉"
 L["Carpets"] = "飞毯"
 L["Cats"] = "猫"
+--[[Translation missing --]]
+--[[ L["Cervid"] = "Cervid"--]] 
 L["Chargers"] = "战马"
 L["Chickens"] = "鸡"
 L["Clefthooves"] = "裂蹄牛"
@@ -1991,6 +2059,8 @@ L["Kodos"] = "科多兽"
 L["Krolusks"] = "三叶虫"
 L["Larion"] = "羽鬃兽"
 L["Lions"] = "狮"
+--[[Translation missing --]]
+--[[ L["Lupine"] = "Lupine"--]] 
 L["Mammoths"] = "猛犸象"
 L["Mana Rays"] = "法力鳐"
 L["Manasabers"] = "魔刃豹"
@@ -2020,6 +2090,8 @@ L["Proto-Drakes"] = "始祖幼龙"
 L["Pterrordaxes"] = "啸天龙"
 L["Quilen"] = "魁麟"
 L["Rams"] = "公羊"
+--[[Translation missing --]]
+--[[ L["Raptora"] = "Raptora"--]] 
 L["Raptors"] = "迅猛龙"
 L["Rats"] = "鼠"
 L["Ravagers"] = "掠夺者"
@@ -2040,6 +2112,8 @@ L["Sea Serpents"] = "海蛇"
 L["Seahorses"] = "海马"
 L["Seat"] = "摇篮"
 L["Silithids"] = "异种蝎"
+--[[Translation missing --]]
+--[[ L["Snail"] = "Snail"--]] 
 L["Snapdragons"] = "毒鳍龙"
 L["Spider Tanks"] = "蜘蛛坦克"
 L["Spiders"] = "蜘蛛"
@@ -2060,9 +2134,13 @@ L["Undead Wolves"] = "不死战狼"
 L["Ungulates"] = "有蹄"
 L["Ur'zul"] = "乌祖尔"
 L["Vehicles"] = "载具"
+--[[Translation missing --]]
+--[[ L["Vombata"] = "Vombata"--]] 
 L["Vulpin"] = "烁裘"
 L["Vultures"] = "秃鹫"
 L["War Wolves"] = "战狼"
+--[[Translation missing --]]
+--[[ L["Wasp"] = "Wasp"--]] 
 L["Water Striders"] = "水黾"
 --[[Translation missing --]]
 --[[ L["Wilderlings"] = "Wilderlings"--]] 

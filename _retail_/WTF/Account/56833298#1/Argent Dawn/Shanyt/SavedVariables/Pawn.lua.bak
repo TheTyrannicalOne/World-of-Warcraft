@@ -85,10 +85,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163874::::::::120:71::28:5:5125:6516:6513:1637:4786:::|h[Honorbound Decapitator]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 186146,
-			["Level"] = 163,
-			["AlsoFitsIn"] = 16,
-			["Link"] = "|cff1eff00|Hitem:186146::::::::60:71:::2:7453:1683:2:9:60:28:2043:::::|h[Mawsworn Sentry's Cudgel of the Peerless]|h|r",
+			["ID"] = 179604,
+			["Level"] = 168,
+			["Link"] = "|cff0070dd|Hitem:179604::::::::60:71::25:4:6652:1472:5865:6616:1:28:2060:::::|h[Duskwarder Shield]|h|r",
 		}, -- [17]
 	},
 	["LastKeybindingsSet"] = 1,

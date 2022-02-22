@@ -23,6 +23,7 @@ local insert, wipe = table.insert, table.wipe
 
 local mt_resource = ns.metatables.mt_resource
 
+local GetItemCooldown = _G.GetItemCooldown
 local GetSpellDescription, GetSpellTexture = _G.GetSpellDescription, _G.GetSpellTexture
 local GetSpecialization, GetSpecializationInfo = _G.GetSpecialization, _G.GetSpecializationInfo
 
@@ -63,6 +64,34 @@ local specTemplate = {
     -- Toggles
     custom1Name = "Custom 1",
     custom2Name = "Custom 2",
+
+    abilities = {
+        ['**'] = {
+            disabled = false,
+            toggle = "default",
+            clash = 0,
+            targetMin = 0,
+            targetMax = 0,
+            boss = false
+        }
+    },
+    items = {
+        ['**'] = {
+            disabled = false,
+            toggle = "default",
+            clash = 0,
+            targetMin = 0,
+            targetMax = 0,
+            boss = false,
+            criteria = nil
+        }
+    },                    
+    settings = {},
+    cooldowns = {},
+    utility = {},
+    defensives = {},
+    custom1 = {},
+    custom2 = {},
 }
 ns.specTemplate = specTemplate -- for options.
 
@@ -237,11 +266,17 @@ local HekiliSpecMixin = {
                         for k, v in pairs( class.auraList ) do
                             if v == a then class.auraList[ k ] = nil end
                         end
-                        for k, v in pairs( self.auras ) do 
+
+                        --[[ for k, v in pairs( self.auras ) do 
                             if v == a then self.auras[ k ] = nil end
-                        end
+                        end ]]
+
                         Hekili.InvalidSpellIDs = Hekili.InvalidSpellIDs or {}
-                        insert( Hekili.InvalidSpellIDs, a.id )
+                        Hekili.InvalidSpellIDs[ a.id ] = a.name or a.key
+
+                        a.id = a.key
+                        a.name = a.name or a.key
+
                         return
                     end
 
@@ -391,16 +426,16 @@ local HekiliSpecMixin = {
             end
         end
 
-        Hekili:ContinueOnItemLoad( data.item, function( success )
-            if success then
-                local name, link = GetItemInfo( data.item )
+        local potionItem = Item:CreateFromItemID( data.item )
+        potionItem:ContinueOnItemLoad( function()
+            local name = potionItem:GetItemName() or data.name
+            local link = potionItem:GetItemLink() or data.link
 
-                data.name = name
-                data.link = link
+            data.name = name
+            data.link = link
 
-                class.potionList[ potion ] = link
-                return true
-            end
+            class.potionList[ potion ] = link
+            return true
         end )
     end,
 
@@ -499,18 +534,21 @@ local HekiliSpecMixin = {
         a.realCast = 0
 
         if item then
-            local name, link, _, _, _, _, _, _, _, texture = GetItemInfo( item )
+            --[[ local name, link, _, _, _, _, _, _, _, texture = GetItemInfo( item )
 
             a.name = name or ability
-            a.link = link or ability
+            a.link = link or ability ]]
 
             class.itemMap[ item ] = ability
 
             -- Register the item if it doesn't already exist.
             class.specs[0]:RegisterGear( ability, item )
 
-            Hekili:ContinueOnItemLoad( item, function( success )
-                if not success then
+            local actionItem = Item:CreateFromItemID( item )
+            actionItem:ContinueOnItemLoad( function( success )
+                --[[ if not success then
+                    Hekili:Error( "Unable to load " .. item .. " (" .. ability .. ")." )
+
                     -- Assume the item is not presently in-game.
                     for key, entry in pairs( class.abilities ) do
                         if a == entry then
@@ -524,13 +562,15 @@ local HekiliSpecMixin = {
                     end
 
                     return
-                end
+                end ]]
 
-                local name, link, _, _, _, _, _, _, slot, texture = GetItemInfo( item )
+                local name = actionItem:GetItemName()
+                local link = actionItem:GetItemLink()
+                local texture = actionItem:GetItemIcon()
 
                 if name then
-                    a.name = ( a.name ~= a.key and a.name ) or name
-                    a.link = a.link or link
+                    if not a.name or a.name == a.key then a.name = name end
+                    if not a.link or a.link == a.key then a.link = link end
                     a.texture = a.texture or texture
 
                     if a.suffix then
@@ -601,11 +641,13 @@ local HekiliSpecMixin = {
                     if data.items then
                         local addedToItemList = false
 
-                        for _, id in ipairs( data.items ) do                            
-                            Hekili:ContinueOnItemLoad( id, function( success )
-                                if not success then return end
+                        for _, id in ipairs( data.items ) do
+                            local copyItem = Item:CreateFromItemID( id )
 
-                                local name, link, _, _, _, _, _, _, slot, texture = GetItemInfo( id )
+                            copyItem:ContinueOnItemLoad( function()
+                                local name = copyItem:GetItemName()
+                                local link = copyItem:GetItemLink()
+                                local texture = copyItem:GetItemIcon()
 
                                 if name then
                                     class.abilities[ name ] = a
@@ -629,8 +671,7 @@ local HekiliSpecMixin = {
                     if a.link  then class.abilities[ a.link ]  = a end
                     if a.id    then class.abilities[ a.id ]    = a end
 
-                    if not a.key then Hekili:Error( "Wanted to EmbedItemOption but no key for " .. ( a.id or "UNKNOWN" ) .. "." )
-                    else Hekili:EmbedItemOption( nil, a.key ) end
+                    Hekili.OptionsReady = false
 
                     return true
                 end
@@ -670,7 +711,7 @@ local HekiliSpecMixin = {
                     class.abilityByName[ a.name ] = class.abilities[ a.name ] or a
                 end
 
-                Hekili:EmbedAbilityOption( nil, a.key )
+                Hekili.OptionsReady = false
             end )
         end
 
@@ -830,7 +871,7 @@ function Hekili:RestoreDefaults()
 
     if #changed > 0 then
         self:LoadScripts()
-        self:RefreshOptions()
+        -- self:RefreshOptions()
 
         if #changed == 1 then
             self:Print( "The |cFFFFD100" .. changed[1] .. "|r priority was updated." )
@@ -999,6 +1040,20 @@ all:RegisterAuras( {
         duration = 3600,
     },
 
+    -- Can be used in GCD calculation.
+    shadowform = {
+        id = 232698,
+        duration = 3600,
+        max_stack = 1,
+    },
+
+    adrenaline_rush = {
+        id = 13750,
+        duration = 20,
+        max_stack = 1,
+    },
+    
+    -- Bloodlusts
     ancient_hysteria = {
         id = 90355,
         shared = "player", -- use anyone's buff on the player, not just player's.
@@ -3149,7 +3204,9 @@ all:RegisterAbility( "living_oil_canister", {
     gcd = "off",
 
     item = 158216,
-})
+
+    copy = "living_oil_cannister"
+} )
 
 
 -- Remote Guidance Device, 169769
@@ -4228,6 +4285,8 @@ do
     end
 
     all:RegisterAbility( "gladiators_medallion", {
+        name = function () return "\"" .. ( ( GetSpellInfo( 277179 ) ) or "Gladiator's Medallion" ) .. "\"" end,
+        link = function () return "|cff00ccff[" .. ( ( GetSpellInfo( 277179 ) ) or "Gladiator's Medallion" ) .. "]|r" end,
         cast = 0,
         cooldown = 120,
         gcd = "off",
@@ -4240,7 +4299,7 @@ do
             end            
             return m
         end,
-        items = { 162897, 161674, 165220, 165055, 167525, 167525, 167377, 172666, 184058, 184055, 184052, 181333, 185309, 185304 },
+        items = { 161674, 162897, 165055, 165220, 167377, 167525, 181333, 184052, 184055, 172666, 184058, 185309, 185304 },
         toggle = "defensives",
 
         usable = function () return debuff.loss_of_control.up, "requires loss of control effect" end,
@@ -4285,12 +4344,13 @@ do
     end
 
     all:RegisterAbility( "gladiators_badge", {
-        name = "|cff00ccff[Gladiator's Badge]|r",
+        name = function () return "\"" .. ( ( GetSpellInfo( 277185 ) ) or "Gladiator's Badge" ) .. "\"" end,
+        link = function () return "|cff00ccff[" .. ( ( GetSpellInfo( 277185 ) ) or "Gladiator's Badge" ) .. "]|r" end,
         cast = 0,
         cooldown = 120,
         gcd = "off",
 
-        items = { 162966, 161902, 165223, 165058, 167528, 167528, 167380, 172849, 172669, 175884, 175921, 185161, 185197 },
+        items = { 162966, 161902, 165223, 165058, 167528, 167380, 172849, 172669, 175884, 175921, 185161, 185197 },
         texture = 135884,
             
         toggle = "cooldowns",
@@ -4368,6 +4428,8 @@ do
 
     
     all:RegisterAbility( "gladiators_emblem", {
+        name = function () return "\"" .. ( ( GetSpellInfo( 277187 ) ) or "Gladiator's Emblem" ) .. "\"" end,
+        link = function () return "|cff00ccff[" .. ( ( GetSpellInfo( 277187 ) ) or "Gladiator's Emblem" ) .. "]|r" end,
         cast = 0,
         cooldown = 90,
         gcd = "off",
@@ -4580,16 +4642,6 @@ all:RegisterAura( "bolstered_spirits", {
     id = 273942,
     duration = 10,
     max_stack = 10,
-} )
-
-
-all:RegisterAbility( "living_oil_cannister", {
-    cast = 0,
-    cooldown = 60,
-    gcd = "off",
-
-    item = 158216,
-    toggle = "cooldowns",
 } )
 
 
@@ -4819,7 +4871,7 @@ all:RegisterAura( "fel_crazed_rage", {
 all:RegisterAbility( "faulty_countermeasure", {
     cast = 0,
     cooldown = 120,
-    gcd = 'off',
+    gcd = "off",
 
     item = 137539,
 
@@ -5129,6 +5181,187 @@ all:RegisterAura( 'norgannons_command', {
     id = 256836,
     duration = 15,
     max_stack = 6
+} )
+
+
+-- Legion TW
+all:RegisterAbilities( {
+    windscar_whetstone = {
+        cast = 0,
+        cooldown = 120,
+        gcd = "off",
+    
+        item = 137486,
+    
+        toggle = "cooldowns",
+    
+        handler = function ()
+            applyBuff( "slicing_maelstrom" )
+        end,
+
+        auras = {
+            slicing_maelstrom = {
+                id = 214980,
+                duration = 6,
+                max_stack = 1
+            }
+        }
+    },
+
+    giant_ornamental_pearl = {
+        cast = 0,
+        cooldown = 60,
+        gcd = "off",
+    
+        item = 137369,
+    
+        toggle = "cooldowns",
+    
+        handler = function ()
+            applyBuff( "gaseous_bubble" )
+        end,
+
+        auras = {
+            gaseous_bubble = {
+                id = 214971,
+                duration = 8,
+                max_stack = 1
+            }
+        }
+    },
+    
+    bottled_hurricane = {
+        cast = 0,
+        gcd = "off",
+    
+        item = 137369,
+    
+        toggle = "cooldowns",
+    
+        buff = "gathering_clouds",
+
+        handler = function ()
+            removeBuff( "gathering_clouds" )
+        end,
+
+        auras = {
+            gathering_clouds = {
+                id = 215294,
+                duration = 60,
+                max_stack = 10
+            }
+        }
+    },
+    
+    shard_of_rokmora = {
+        cast = 0,
+        cooldown = 120,
+        gcd = "off",
+    
+        item = 137338,
+    
+        toggle = "defensives",
+
+        handler = function ()
+            applyBuff( "crystalline_body" )
+        end,
+
+        auras = {
+            crystalline_body = {
+                id = 214366,
+                duration = 30,
+                max_stack = 1
+            }
+        }
+    },  
+        
+    talisman_of_the_cragshaper = {
+        cast = 0,
+        cooldown = 60,
+        gcd = "off",
+    
+        item = 137344,
+    
+        toggle = "defensives",
+    
+        handler = function ()
+            applyBuff( "stance_of_the_mountain" )
+        end,
+
+        auras = {
+            stance_of_the_mountain = {
+                id = 214423,
+                duration = 15,
+                max_stack = 1
+            }
+        }
+    },
+            
+    tirathons_betrayal = {
+        cast = 0,
+        cooldown = 75,
+        gcd = "off",
+    
+        item = 137537,
+    
+        toggle = "cooldowns",
+    
+        handler = function ()
+            applyBuff( "darkstrikes" )
+        end,
+
+        auras = {
+            darkstrikes = {
+                id = 215658,
+                duration = 15,
+                max_stack = 1
+            }
+        }
+    },
+            
+    orb_of_torment = {
+        cast = 0,
+        cooldown = 120,
+        gcd = "off",
+    
+        item = 137538,
+    
+        toggle = "defensives",
+    
+        handler = function ()
+            applyDebuff( "target", "soul_sap" )
+        end,
+
+        auras = {
+            soul_sap = {
+                id = 215936,
+                duration = 20,
+                max_stack = 1
+            }
+        }
+    },
+            
+    moonlit_prism = {
+        cast = 0,
+        cooldown = 90,
+        gcd = "off",
+    
+        item = 137541,
+    
+        toggle = "cooldowns",
+    
+        handler = function ()
+            applyBuff( "elunes_light" )
+        end,
+
+        auras = {
+            elunes_light = {
+                id = 215648,
+                duration = 20,
+                max_stack = 20
+            }
+        }
+    },
 } )
 
 
@@ -5663,12 +5896,6 @@ function Hekili:SpecializationChanged()
 
     self:UpdateDisplayVisibility()
 
-    if not optionsInitialized then
-        Hekili:EmbedAbilityOptions()
-        Hekili:EmbedSpecOptions()
-        optionsInitialized = true
-    end
-
     if not self:ScriptsLoaded() then self:LoadScripts() end
 
     Hekili:UpdateDamageDetectionForCLEU()
@@ -5708,11 +5935,6 @@ function Hekili:SpecializationChanged()
 end
 
 
-function Hekili:GetSpec()
-    return state.spec.id and class.specs[ state.spec.id ]
-end
-
-
 ns.specializationChanged = function()
     Hekili:SpecializationChanged()
 end
@@ -5726,11 +5948,6 @@ do
             Hekili:SpecializationChanged()
         end
     end )
-end
-
-
-function Hekili:IsValidSpec()
-    return state.spec.id and class.specs[ state.spec.id ] ~= nil
 end
 
 

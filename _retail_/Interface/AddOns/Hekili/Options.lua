@@ -540,7 +540,6 @@ local packTemplate = {
     }
 }
 
-
 local specTemplate = ns.specTemplate
 
 
@@ -618,35 +617,7 @@ function Hekili:GetDefaults()
             },
 
             specs = {                              
-                ['**'] = {
-                    abilities = {
-                        ['**'] = {
-                            disabled = false,
-                            toggle = "default",
-                            clash = 0,
-                            targetMin = 0,
-                            targetMax = 0,
-                            boss = false
-                        }
-                    },
-                    items = {
-                        ['**'] = {
-                            disabled = false,
-                            toggle = "default",
-                            clash = 0,
-                            targetMin = 0,
-                            targetMax = 0,
-                            boss = false,
-                            criteria = nil
-                        }
-                    },                    
-                    settings = {},
-                    cooldowns = {},
-                    utility = {},
-                    defensives = {},
-                    custom1 = {},
-                    custom2 = {},
-                },
+                ['**'] = specTemplate
             },
 
             packs = {
@@ -4183,19 +4154,39 @@ do
                 set = "SetItemOption",
                 get = "GetItemOption",
                 args = {
+                    multiItem = {
+                        type = "description",
+                        name = function ()
+                            local output = "These settings will apply to |cFF00FF00ALL|r of the following similar PvP trinkets:\n\n"
+
+                            if ability.items then
+                                for i, itemID in ipairs( ability.items ) do
+                                    output = output .. "     " .. class.itemList[ itemID ] .. "\n"
+                                end
+                                output = output .. "\n"
+                            end
+                            
+                            return output
+                        end,
+                        fontSize = "medium",
+                        width = "full",
+                        order = 1,
+                        hidden = function () return ability.key ~= "gladiators_badge" and ability.key ~= "gladiators_emblem" and ability.key ~= "gladiators_medallion" end,
+                    },
+
                     disabled = {
                         type = "toggle",
                         name = function () return "Disable " .. ( ability.item and ability.link or k ) end,
                         desc = function () return "If checked, this ability will |cffff0000NEVER|r be recommended by the addon.  This can cause " ..
                             "issues for some specializations, if other abilities depend on you using " .. ( ability.item and ability.link or k ) .. "." end,
                         width = 1.5,
-                        order = 1,
+                        order = 1.05,
                     },
 
                     boss = {
                         type = "toggle",
                         name = "Boss Encounter Only",
-                        desc = "If checked, the addon will not recommend " .. k .. " via [Use Items] unless you are in a boss fight (or encounter).  If left unchecked, " .. k .. " can be recommended in any type of fight.",
+                        desc = "If checked, the addon will not recommend " .. ( ability.item and ability.link or k ) .. " via [Use Items] unless you are in a boss fight (or encounter).  If left unchecked, " .. ( ability.item and ability.link or k ) .. " can be recommended in any type of fight.",
                         width = 1.5,
                         order = 1.1,
                     },
@@ -4253,7 +4244,7 @@ do
                     targetMin = {
                         type = "range",
                         name = "Minimum Targets",
-                        desc = "If set above zero, the addon will only allow " .. k .. " to be recommended via [Use Items] if there are at least this many detected enemies.\nSet to zero to ignore.",
+                        desc = "If set above zero, the addon will only allow " .. ( ability.item and ability.link or k ) .. " to be recommended via [Use Items] if there are at least this many detected enemies.\nSet to zero to ignore.",
                         width = 1.5,
                         min = 0,
                         max = 15,
@@ -4264,7 +4255,7 @@ do
                     targetMax = {
                         type = "range",
                         name = "Maximum Targets",
-                        desc = "If set above zero, the addon will only allow " .. k .. " to be recommended via [Use Items] if there are this many detected enemies (or fewer).\nSet to zero to ignore.",
+                        desc = "If set above zero, the addon will only allow " .. ( ability.item and ability.link or k ) .. " to be recommended via [Use Items] if there are this many detected enemies (or fewer).\nSet to zero to ignore.",
                         width = 1.5,
                         min = 0,
                         max = 15,
@@ -7410,7 +7401,7 @@ do
                             type = "toggle",
                             name = "AOE (Multi-Target)",
                             desc = function ()
-                                return format( "If checked, the Display Mode toggle can select AOE mode.\n\nThe Primary display shows recommendations as though you have multiple (%d) targets (even if fewer are detected).\n\n" ..
+                                return format( "If checked, the Display Mode toggle can select AOE mode.\n\nThe Primary display shows recommendations as though you have at least |cFFFFD100%d|r targets (even if fewer are detected).\n\n" ..
                                                 "The number of targets is set in your specialization's options.", self.DB.profile.specs[ state.spec.id ].aoe or 3 )
                             end,
                             width = 1.5,
@@ -7421,7 +7412,7 @@ do
                             type = "toggle",
                             name = "Fixed Dual Display",
                             desc = function ()
-                                return format( "If checked, the Display Mode toggle can select Dual Display mode.\n\nThe Primary display shows single-target recommendations and the AOE display shows recommendations for multiple (%d) targets (even if fewer are detected).\n\n" ..
+                                return format( "If checked, the Display Mode toggle can select Dual Display mode.\n\nThe Primary display shows single-target recommendations and the AOE display shows recommendations for |cFFFFD100%d|r or more targets (even if fewer are detected).\n\n" ..
                                                 "The number of AOE targets is set in your specialization's options.", self.DB.profile.specs[ state.spec.id ].aoe or 3 )
                             end,
                             width = 1.5,
@@ -7431,7 +7422,9 @@ do
                         reactive = {
                             type = "toggle",
                             name = "Reactive Dual Display",
-                            desc = "If checked, the Display Mode toggle can select Reactive mode.\n\nThe Primary display shows single-target recommendations, while the AOE display remains hidden until/unless additional targets are detected.",
+                            desc = function ()
+                                return format( "If checked, the Display Mode toggle can select Reactive mode.\n\nThe Primary display shows single-target recommendations, while the AOE display remains hidden until/unless |cFFFFD100%d|r or more targets are detected.", self.DB.profile.specs[ state.spec.id ].aoe or 3 )
+                            end,
                             width = 1.5,
                             order = 1.5,
                         },
@@ -8310,6 +8303,30 @@ function Hekili:GenerateProfile()
         end
     end
 
+    local keybinds = ""
+    local bindLength = 1
+
+    for name in pairs( Hekili.KeybindInfo ) do
+        if name:len() > bindLength then
+            bindLength = name:len()
+        end
+    end
+
+    for name, data in orderedPairs( Hekili.KeybindInfo ) do
+        local action = format( "%-" .. bindLength .. "s =", name )
+        local count = 0
+        for i = 1, 12 do
+            local bar = data.upper[ i ]            
+            if bar then
+                if count > 0 then action = action .. "," end
+                action = format( "%s %-4s[%02d]", action, bar, i )
+                count = count + 1
+            end
+        end
+        keybinds = keybinds .. "\n    " .. action
+    end
+
+
     return format( "build: %s\n" ..
         "level: %d (%d)\n" ..
         "class: %s\n" ..
@@ -8324,7 +8341,8 @@ function Hekili:GenerateProfile()
         "legendaries: %s\n\n" ..
         "itemIDs: %s\n\n" ..
         "settings: %s\n\n" ..
-        "toggles: %s\n",
+        "toggles: %s\n\n" ..
+        "keybinds: %s\n\n",
         Hekili.Version or "no info",
         UnitLevel( 'player' ) or 0, UnitEffectiveLevel( 'player' ) or 0,
         class.file or "NONE",
@@ -8339,7 +8357,8 @@ function Hekili:GenerateProfile()
         legendaries or "none",
         items or "none",
         settings or "none",
-        toggles or "none" )
+        toggles or "none",
+        keybinds or "none" )
 end
 
 
@@ -8703,7 +8722,7 @@ function Hekili:GetOptions()
 
     self:EmbedToggleOptions( Options )
 
-    self:EmbedDisplayOptions( Options )
+    --[[ self:EmbedDisplayOptions( Options )
 
     self:EmbedPackOptions( Options )
 
@@ -8711,11 +8730,13 @@ function Hekili:GetOptions()
 
     self:EmbedItemOptions( Options )
 
-    self:EmbedSpecOptions( Options )
+    self:EmbedSpecOptions( Options ) ]]
 
     self:EmbedSkeletonOptions( Options )
 
     self:EmbedErrorOptions( Options )
+
+    Hekili.OptionsReady = false
 
     return Options
 end
@@ -8741,7 +8762,7 @@ function Hekili:TotalRefresh( noOptions )
     ns.checkImports()
 
     -- self:LoadScripts()
-    if not noOptions then self:RefreshOptions() end
+    if not noOptions then Hekili.OptionsReady = false end
     self:UpdateDisplayVisibility()
     self:BuildUI()
 
@@ -8766,6 +8787,8 @@ function Hekili:RefreshOptions()
     self:EmbedSpecOptions()
     self:EmbedAbilityOptions()
     self:EmbedItemOptions()
+
+    Hekili.OptionsReady = true
 
     -- Until I feel like making this better at managing memory.
     collectgarbage()
@@ -10509,6 +10532,13 @@ function Hekili:TogglePause( ... )
         self.ActiveDebug = false
     else
         self.Pause = false
+
+        -- Discard the active update thread so we'll definitely start fresh at next update.
+        local primary = ns.UI.Displays[ "Primary" ]
+
+        if primary and primary.activeThread then
+            primary.activeThread = nil
+        end
     end
 
     local MouseInteract = self.Pause or self.Config

@@ -12,25 +12,39 @@ DataStore_PetsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.Dalaran.Varlouris"] = {
-				["lastUpdate"] = 1644553410,
+				["lastUpdate"] = 1645402377,
 			},
 			["Default.Dalaran.Avisar"] = {
-				["lastUpdate"] = 1644550881,
+				["lastUpdate"] = 1645406113,
 			},
 			["Default.Dalaran.Darnastris"] = {
-				["lastUpdate"] = 1644553976,
+				["lastUpdate"] = 1645403362,
+				["CRITTER"] = {
+					71840, -- [1]
+				},
 			},
 			["Default.Dalaran.Illingrath"] = {
-				["lastUpdate"] = 1644551275,
+				["lastUpdate"] = 1645405970,
 			},
 			["Default.Zul'jin.Zulbathal"] = {
-				["lastUpdate"] = 1644550217,
+				["lastUpdate"] = 1645398971,
 			},
 			["Default.Black Dragonflight.Durlok"] = {
-				["lastUpdate"] = 1644549225,
+				["lastUpdate"] = 1645398516,
 			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["lastUpdate"] = 1644547180,
+				["lastUpdate"] = 1645397868,
+			},
+		},
+		["Reference"] = {
+			["Spells"] = {
+				[334143] = 171231,
+				[179834] = 90205,
+				[179835] = 90206,
+				[147124] = 73011,
+				[135261] = 68666,
+				[71840] = 38374,
+				[135259] = 68664,
 			},
 		},
 	},

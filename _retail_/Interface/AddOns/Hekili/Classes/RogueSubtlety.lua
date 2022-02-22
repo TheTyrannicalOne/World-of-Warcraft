@@ -297,7 +297,7 @@ if UnitClassBase( "player" ) == "ROGUE" then
 
 
         lethal_poison = {
-            alias = { "instant_poison", "wound_poison", "slaughter_poison" },
+            alias = { "instant_poison", "wound_poison" },
             aliasMode = "first",
             aliasType = "buff",
             duration = 3600
@@ -579,6 +579,22 @@ if UnitClassBase( "player" ) == "ROGUE" then
         if debuff.sepsis.up then
             state:QueueAuraExpiration( "sepsis", ExpireSepsis, debuff.sepsis.expires )
         end
+
+        class.abilities.apply_poison = class.abilities.apply_poison_actual
+        if buff.lethal_poison.down or level < 33 then
+            class.abilities.apply_poison = state.spec.assassination and level > 12 and class.abilities.deadly_poison or class.abilities.instant_poison
+        else
+            if level > 32 and buff.nonlethal_poison.down then class.abilities.apply_poison = class.abilities.crippling_poison end
+        end
+    end )
+
+    spec:RegisterHook( "runHandler", function ()
+        class.abilities.apply_poison = class.abilities.apply_poison_actual
+        if buff.lethal_poison.down or level < 33 then
+            class.abilities.apply_poison = state.spec.assassination and level > 12 and class.abilities.deadly_poison or class.abilities.instant_poison
+        else
+            if level > 32 and buff.nonlethal_poison.down then class.abilities.apply_poison = class.abilities.crippling_poison end
+        end
     end )
 
     spec:RegisterCycle( function ()
@@ -631,6 +647,8 @@ if UnitClassBase( "player" ) == "ROGUE" then
         } )
 
     -- Tier Sets
+    spec:RegisterGear( "tier28", 188901, 188902, 188903, 188905, 188907 
+)
     spec:RegisterGear( "tier21", 152163, 152165, 152161, 152160, 152162, 152164 )
     spec:RegisterGear( "tier20", 147172, 147174, 147170, 147169, 147171, 147173 )
     spec:RegisterGear( "tier19", 138332, 138338, 138371, 138326, 138329, 138335 )
@@ -955,6 +973,10 @@ if UnitClassBase( "player" ) == "ROGUE" then
             
             readyTime = function () return buff.lethal_poison.remains - 120 end,
 
+            bind = function ()
+                if ( buff.lethal_poison.down or level < 33 ) and not ( state.spec.assassination and level > 12 ) then return "apply_poison" end
+            end,
+            
             handler = function ()
                 applyBuff( "instant_poison" )
             end,

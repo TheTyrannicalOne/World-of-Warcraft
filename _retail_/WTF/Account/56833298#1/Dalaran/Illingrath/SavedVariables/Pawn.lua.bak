@@ -10,9 +10,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:183649::::::::50:581:::2:1482:4786:1:28:1401:::|h[Bag of Discarded Entrails]|h|r",
 		}, -- [1]
 		{
-			["ID"] = 158075,
-			["Level"] = 60,
-			["Link"] = "|cffe6cc80|Hitem:158075::::::::50:581::11:4:4932:4933:4935:1474::::|h[Heart of Azeroth]|h|r",
+			["ID"] = 143909,
+			["Level"] = 88,
+			["Link"] = "|cff0070dd|Hitem:143909::::::::51:581::22:1:7464:2:28:181:9:51:::::|h[Sweet Perfume Brooch]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 183556,

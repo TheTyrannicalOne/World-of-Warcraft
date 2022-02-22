@@ -13,29 +13,35 @@ DataStore_AgendaDB = {
 		["Options"] = {
 			["WeeklyResetHour"] = 6,
 			["WeeklyResetDay"] = 2,
-			["NextWeeklyReset"] = "2022-02-15",
+			["NextWeeklyReset"] = "2022-02-22",
 		},
 		["Characters"] = {
 			["Default.Dalaran.Varlouris"] = {
-				["lastUpdate"] = 1644553414,
+				["lastUpdate"] = 1645402378,
 			},
 			["Default.Dalaran.Avisar"] = {
-				["lastUpdate"] = 1644550882,
+				["DungeonIDs"] = {
+					["Molten Core 40 Player|407702302"] = "135893|1645406113|0|1",
+				},
+				["lastUpdate"] = 1645406122,
 			},
 			["Default.Dalaran.Darnastris"] = {
-				["lastUpdate"] = 1644553976,
+				["lastUpdate"] = 1645403362,
 			},
 			["Default.Dalaran.Illingrath"] = {
-				["lastUpdate"] = 1644551275,
+				["DungeonIDs"] = {
+					["Black Temple Normal|407705237"] = "136029|1645405971|0|1",
+				},
+				["lastUpdate"] = 1645405971,
 			},
 			["Default.Zul'jin.Zulbathal"] = {
-				["lastUpdate"] = 1644550218,
+				["lastUpdate"] = 1645398971,
 			},
 			["Default.Black Dragonflight.Durlok"] = {
-				["lastUpdate"] = 1644549227,
+				["lastUpdate"] = 1645398517,
 			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["lastUpdate"] = 1644554491,
+				["lastUpdate"] = 1645413305,
 			},
 		},
 	},

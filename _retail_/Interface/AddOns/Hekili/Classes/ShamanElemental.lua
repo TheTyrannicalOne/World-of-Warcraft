@@ -195,7 +195,7 @@ if UnitClassBase( "player" ) == "SHAMAN" then
         flame_shock = {
             id = 188389,
             duration = function () return level > 58 and ( fire_elemental.up or storm_elemental.up ) and 36 or 18 end,
-            tick_time = function () return 3 * haste end,
+            tick_time = function () return 2 * haste end,
             type = "Magic",
             max_stack = 1,
         },
@@ -468,6 +468,9 @@ if UnitClassBase( "player" ) == "SHAMAN" then
         rawset( state.pet, "fire_elemental",  talent.primal_elementalist.enabled and state.pet.primal_fire_elemental  or state.pet.greater_fire_elemental  )
         rawset( state.pet, "storm_elemental", talent.primal_elementalist.enabled and state.pet.primal_storm_elemental or state.pet.greater_storm_elemental )
     end )
+
+
+	spec:RegisterGear( "tier28", 188925, 188924, 188923, 188922, 188920 )
 
 
     -- Abilities

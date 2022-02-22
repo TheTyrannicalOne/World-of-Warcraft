@@ -23,12 +23,6 @@ QuestTogether = {
 				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
-			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
-			},
-		},
 		[52194] = {
 			["title"] = "What You May Regret",
 			["objectives"] = {
@@ -68,16 +62,16 @@ QuestTogether = {
 				"0/1 Speak to Harbormaster Cyrus Crestfall to set sail", -- [1]
 			},
 		},
-		[24745] = {
-			["title"] = "Something is in the Air (and it Ain't Love)",
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
 			["objectives"] = {
-				"Bring the Faded Lovely Greeting Card to Inspector Snip Snagglebolt in Stormwind.", -- [1]
+				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[53476] = {
+			["title"] = "The Great Sea Scrolls",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+				"7/12 Pilgrimage Scroll", -- [1]
 			},
 		},
 		[40329] = {
@@ -92,31 +86,6 @@ QuestTogether = {
 				"0/40 Echo of Mortality", -- [1]
 			},
 		},
-		[48639] = {
-			["title"] = "Army of the Light",
-			["objectives"] = {
-				"0/4 Complete 4 Army of the Light World Quests", -- [1]
-			},
-		},
-		[53476] = {
-			["title"] = "The Great Sea Scrolls",
-			["objectives"] = {
-				"7/12 Pilgrimage Scroll", -- [1]
-			},
-		},
-		[60545] = {
-			["title"] = "Shadowlands: A Chilling Summons",
-			["objectives"] = {
-				"1/1 Learn about your leaders' fate", -- [1]
-				"0/1 Take the Death Gate to Acherus", -- [2]
-			},
-		},
-		[48642] = {
-			["title"] = "Argussian Reach",
-			["objectives"] = {
-				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
-			},
-		},
 		[42731] = {
 			["title"] = "Working With the Wardens",
 			["objectives"] = {
@@ -127,10 +96,17 @@ QuestTogether = {
 				"\"Working With the Wardens: Mal'Dreth the Corruptor\" completed", -- [5]
 			},
 		},
-		[41762] = {
-			["title"] = "Sympathizers Among the Shal'dorei",
+		[50562] = {
+			["title"] = "Champions of Azeroth",
 			["objectives"] = {
-				"0/1 Silgryn met", -- [1]
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+			},
+		},
+		[60545] = {
+			["title"] = "Shadowlands: A Chilling Summons",
+			["objectives"] = {
+				"1/1 Learn about your leaders' fate", -- [1]
+				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
 		[42802] = {
@@ -139,20 +115,16 @@ QuestTogether = {
 				"\"Securing Mardum\" mission completed", -- [1]
 			},
 		},
-		[38912] = {
-			["title"] = "The Bloodtotem Tribe",
-			["objectives"] = {
-			},
-		},
-		[38913] = {
-			["title"] = "The Skyhorn Tribe",
-			["objectives"] = {
-			},
-		},
 		[51283] = {
 			["title"] = "Voyage to the West",
 			["objectives"] = {
 				"0/1 Speak with Jes-Tereth to sail to Vol'dun", -- [1]
+			},
+		},
+		[41762] = {
+			["title"] = "Sympathizers Among the Shal'dorei",
+			["objectives"] = {
+				"0/1 Silgryn met", -- [1]
 			},
 		},
 		[53074] = {
@@ -161,18 +133,39 @@ QuestTogether = {
 				"0/1 Troops ordered", -- [1]
 			},
 		},
-		[48540] = {
-			["title"] = "Aiding the Wharf",
+		[53110] = {
+			["title"] = "The High Thornspeaker",
 			["objectives"] = {
-				"1/1 Satchel of Seaweed", -- [1]
-				"0/1 Bundle of Vellum", -- [2]
-				"0/1 Seal Blubber", -- [3]
+				"0/1 Meet Arthur Tradewind", -- [1]
+			},
+		},
+		[38913] = {
+			["title"] = "The Skyhorn Tribe",
+			["objectives"] = {
+			},
+		},
+		[56119] = {
+			["title"] = "The Waveblade Ankoan",
+			["objectives"] = {
+				"0/4 Complete world quests in Nazjatar", -- [1]
+			},
+		},
+		[42420] = {
+			["title"] = "Court of Farondis",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Azsuna", -- [1]
 			},
 		},
 		[39134] = {
 			["title"] = "Wrathshard",
 			["objectives"] = {
 				"0/1 Wrathshard slain", -- [1]
+			},
+		},
+		[42234] = {
+			["title"] = "The Valarjar",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Stormheim", -- [1]
 			},
 		},
 		[50605] = {
@@ -193,23 +186,24 @@ QuestTogether = {
 				"0/1 Choose an upgrade to pursue", -- [1]
 			},
 		},
-		[50599] = {
-			["title"] = "Proudmoore Admiralty",
+		[48540] = {
+			["title"] = "Aiding the Wharf",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Tiragarde Sound", -- [1]
+				"1/1 Satchel of Seaweed", -- [1]
+				"0/1 Bundle of Vellum", -- [2]
+				"0/1 Seal Blubber", -- [3]
 			},
 		},
-		[53110] = {
-			["title"] = "The High Thornspeaker",
+		[38912] = {
+			["title"] = "The Bloodtotem Tribe",
 			["objectives"] = {
-				"0/1 Meet Arthur Tradewind", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 		["showDebugInfo"] = false,
 	},
 }

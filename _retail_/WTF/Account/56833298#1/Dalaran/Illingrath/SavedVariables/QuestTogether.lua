@@ -7,10 +7,14 @@ QuestTogether = {
 				"0/1 Travel to Zoram Strand", -- [1]
 			},
 		},
-		[50605] = {
-			["title"] = "Alliance War Effort",
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
 		[44948] = {
@@ -45,11 +49,12 @@ QuestTogether = {
 				"0/1 Take the Ferry to Eastpoint Station", -- [1]
 			},
 		},
-		[49036] = {
-			["title"] = "Best In Show",
+		[48540] = {
+			["title"] = "Aiding the Wharf",
 			["objectives"] = {
-				"1/1 Mount Cooper", -- [1]
-				"0/1 Score 300 Points", -- [2]
+				"1/1 Satchel of Seaweed", -- [1]
+				"0/1 Bundle of Vellum", -- [2]
+				"0/1 Seal Blubber", -- [3]
 			},
 		},
 		[56043] = {
@@ -64,14 +69,10 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[42731] = {
-			["title"] = "Working With the Wardens",
+		[50604] = {
+			["title"] = "Tortollan Seekers",
 			["objectives"] = {
-				"\"Working With the Wardens: Isle of the Watchers\" completed", -- [1]
-				"\"Working With the Wardens: Skul'vrax\" completed", -- [2]
-				"\"Working With the Wardens: Mellok, Son of Torok\" completed", -- [3]
-				"\"Working With the Wardens: Fathnyr\" completed", -- [4]
-				"\"Working With the Wardens: Mal'Dreth the Corruptor\" completed", -- [5]
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
 		[40329] = {
@@ -80,22 +81,22 @@ QuestTogether = {
 				"0/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
+		[53476] = {
+			["title"] = "The Great Sea Scrolls",
+			["objectives"] = {
+				"7/12 Pilgrimage Scroll", -- [1]
+			},
+		},
 		[57686] = {
 			["title"] = "The Eternal Traveler",
 			["objectives"] = {
 				"0/40 Echo of Mortality", -- [1]
 			},
 		},
-		[48639] = {
-			["title"] = "Army of the Light",
+		[50562] = {
+			["title"] = "Champions of Azeroth",
 			["objectives"] = {
-				"0/4 Complete 4 Army of the Light World Quests", -- [1]
-			},
-		},
-		[53476] = {
-			["title"] = "The Great Sea Scrolls",
-			["objectives"] = {
-				"7/12 Pilgrimage Scroll", -- [1]
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
 		[60545] = {
@@ -111,10 +112,14 @@ QuestTogether = {
 				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
 			},
 		},
-		[42802] = {
-			["title"] = "Securing Mardum",
+		[42731] = {
+			["title"] = "Working With the Wardens",
 			["objectives"] = {
-				"\"Securing Mardum\" mission completed", -- [1]
+				"\"Working With the Wardens: Isle of the Watchers\" completed", -- [1]
+				"\"Working With the Wardens: Skul'vrax\" completed", -- [2]
+				"\"Working With the Wardens: Mellok, Son of Torok\" completed", -- [3]
+				"\"Working With the Wardens: Fathnyr\" completed", -- [4]
+				"\"Working With the Wardens: Mal'Dreth the Corruptor\" completed", -- [5]
 			},
 		},
 		[41762] = {
@@ -123,16 +128,15 @@ QuestTogether = {
 				"0/1 Silgryn met", -- [1]
 			},
 		},
-		[51283] = {
-			["title"] = "Voyage to the West",
+		[42802] = {
+			["title"] = "Securing Mardum",
 			["objectives"] = {
-				"0/1 Speak with Jes-Tereth to sail to Vol'dun", -- [1]
+				"\"Securing Mardum\" mission completed", -- [1]
 			},
 		},
-		[53110] = {
-			["title"] = "The High Thornspeaker",
+		[38912] = {
+			["title"] = "The Bloodtotem Tribe",
 			["objectives"] = {
-				"0/1 Meet Arthur Tradewind", -- [1]
 			},
 		},
 		[38913] = {
@@ -140,10 +144,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[50601] = {
-			["title"] = "Storm's Wake",
+		[51283] = {
+			["title"] = "Voyage to the West",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Stormsong Valley", -- [1]
+				"0/1 Speak with Jes-Tereth to sail to Vol'dun", -- [1]
 			},
 		},
 		[53074] = {
@@ -152,34 +156,28 @@ QuestTogether = {
 				"0/1 Troops ordered", -- [1]
 			},
 		},
-		[48540] = {
-			["title"] = "Aiding the Wharf",
-			["objectives"] = {
-				"1/1 Satchel of Seaweed", -- [1]
-				"0/1 Bundle of Vellum", -- [2]
-				"0/1 Seal Blubber", -- [3]
-			},
-		},
 		[39134] = {
 			["title"] = "Wrathshard",
 			["objectives"] = {
 				"0/1 Wrathshard slain", -- [1]
 			},
 		},
-		[42421] = {
-			["title"] = "The Nightfallen",
+		[42420] = {
+			["title"] = "Court of Farondis",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Suramar", -- [1]
+				"0/4 Complete 4 world quests in Azsuna", -- [1]
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
+		[50605] = {
+			["title"] = "Alliance War Effort",
 			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
+				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
+			},
+		},
+		[42422] = {
+			["title"] = "The Wardens",
+			["objectives"] = {
+				"0/4 Complete 4 Wardens World Quests", -- [1]
 			},
 		},
 		[53583] = {
@@ -188,22 +186,24 @@ QuestTogether = {
 				"0/1 Choose an upgrade to pursue", -- [1]
 			},
 		},
-		[38912] = {
-			["title"] = "The Bloodtotem Tribe",
+		[49036] = {
+			["title"] = "Best In Show",
 			["objectives"] = {
+				"1/1 Mount Cooper", -- [1]
+				"0/1 Score 300 Points", -- [2]
 			},
 		},
-		[50599] = {
-			["title"] = "Proudmoore Admiralty",
+		[53110] = {
+			["title"] = "The High Thornspeaker",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Tiragarde Sound", -- [1]
+				"0/1 Meet Arthur Tradewind", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 	},
 }

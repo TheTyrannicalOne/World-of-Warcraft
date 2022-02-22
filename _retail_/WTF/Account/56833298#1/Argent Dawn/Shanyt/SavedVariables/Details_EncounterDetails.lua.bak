@@ -2,13 +2,13 @@
 EncounterDetailsDB = {
 	["emotes"] = {
 		{
-			["boss"] = "Ring of Law",
+			["boss"] = "Aku'mai",
 		}, -- [1]
 		{
-			["boss"] = "Princess Theradras",
+			["boss"] = "Twilight Lord Bathiel",
 		}, -- [2]
 		{
-			["boss"] = "Aku'mai",
+			["boss"] = "Guardian of the Deep",
 		}, -- [3]
 	},
 	["encounter_spells"] = {
@@ -4446,13 +4446,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Midnight",
 		},
-		[89757] = {
-			["school"] = 5,
+		[322711] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Defias Cannon",
+			["source"] = "Halkias",
 		},
 		[328338] = {
 			["school"] = 32,
@@ -4876,6 +4878,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Surgeon Stitchflesh",
 		},
+		[89757] = {
+			["school"] = 5,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Defias Cannon",
+		},
 		[66228] = {
 			["school"] = 32,
 			["type"] = "BUFF",
@@ -4883,16 +4893,6 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Lord Jaraxxus",
-		},
-		[322711] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Halkias",
 		},
 		[67574] = {
 			["school"] = 64,

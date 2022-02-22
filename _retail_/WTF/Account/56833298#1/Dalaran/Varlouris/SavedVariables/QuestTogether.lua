@@ -58,10 +58,12 @@ QuestTogether = {
 				"0/1 Viscous Fallout slain", -- [1]
 			},
 		},
-		[48639] = {
-			["title"] = "Army of the Light",
+		[40300] = {
+			["title"] = "Tools of the Trade",
 			["objectives"] = {
-				"0/4 Complete 4 Army of the Light World Quests", -- [1]
+				"0/1 Sacred Oil", -- [1]
+				"0/1 Preserving Incense", -- [2]
+				"0/1 Chest of Shrouds", -- [3]
 			},
 		},
 		[38286] = {
@@ -135,17 +137,17 @@ QuestTogether = {
 				"31/100 Collect Legionfall War Supplies", -- [1]
 			},
 		},
+		[42420] = {
+			["title"] = "Court of Farondis",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Azsuna", -- [1]
+			},
+		},
 		[40332] = {
 			["title"] = "Beach Bonfire",
 			["objectives"] = {
 				"6/6 Driftwood", -- [1]
 				"1/1 Jarl Throndyr's Pyre built", -- [2]
-			},
-		},
-		[42421] = {
-			["title"] = "The Nightfallen",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Suramar", -- [1]
 			},
 		},
 		[44561] = {
@@ -168,19 +170,17 @@ QuestTogether = {
 				"0/1 Aftermath of the Well", -- [3]
 			},
 		},
-		[40300] = {
-			["title"] = "Tools of the Trade",
+		[42422] = {
+			["title"] = "The Wardens",
 			["objectives"] = {
-				"0/1 Sacred Oil", -- [1]
-				"0/1 Preserving Incense", -- [2]
-				"0/1 Chest of Shrouds", -- [3]
+				"0/4 Complete 4 Wardens World Quests", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

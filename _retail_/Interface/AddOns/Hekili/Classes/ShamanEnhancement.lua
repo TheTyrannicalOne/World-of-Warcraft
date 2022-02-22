@@ -212,6 +212,7 @@ if UnitClassBase( "player" ) == "SHAMAN" then
         flame_shock = {
             id = 188389,
             duration = 18,
+            tick_time = function () return 2 * haste end,
             type = "Magic",
             max_stack = 1,
         },
@@ -820,8 +821,8 @@ if UnitClassBase( "player" ) == "SHAMAN" then
             handler = function ()
                 applyDebuff( "target", "earthen_spike" )
 
-                if azerite.natural_harmony.enabled and buff.frostbrand.up then applyBuff( "natural_harmony_frost" ) end
-                if azerite.natural_harmony.enabled and buff.flametongue.up then applyBuff( "natural_harmony_fire" ) end
+                if azerite.natural_harmony.enabled and buff.frostbrand_weapon.up then applyBuff( "natural_harmony_frost" ) end
+                if azerite.natural_harmony.enabled and buff.flametongue_weapon.up then applyBuff( "natural_harmony_fire" ) end
                 if azerite.natural_harmony.enabled then applyBuff( "natural_harmony_nature" ) end
             end,
         },
@@ -1348,7 +1349,7 @@ if UnitClassBase( "player" ) == "SHAMAN" then
             id = 8512,
             cast = 0,
             cooldown = 0,
-            gcd = "spell",
+            gcd = "totem",
 
             essential = true,
 

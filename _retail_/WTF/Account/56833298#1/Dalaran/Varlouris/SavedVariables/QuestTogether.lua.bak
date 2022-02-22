@@ -58,10 +58,12 @@ QuestTogether = {
 				"0/1 Viscous Fallout slain", -- [1]
 			},
 		},
-		[48639] = {
-			["title"] = "Army of the Light",
+		[40300] = {
+			["title"] = "Tools of the Trade",
 			["objectives"] = {
-				"0/4 Complete 4 Army of the Light World Quests", -- [1]
+				"0/1 Sacred Oil", -- [1]
+				"0/1 Preserving Incense", -- [2]
+				"0/1 Chest of Shrouds", -- [3]
 			},
 		},
 		[38286] = {
@@ -79,10 +81,10 @@ QuestTogether = {
 				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
-		[48642] = {
-			["title"] = "Argussian Reach",
+		[46286] = {
+			["title"] = "Legionfall Supplies",
 			["objectives"] = {
-				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
+				"31/100 Collect Legionfall War Supplies", -- [1]
 			},
 		},
 		[40329] = {
@@ -129,17 +131,16 @@ QuestTogether = {
 				"0/1 Tears of Elune", -- [3]
 			},
 		},
-		[46286] = {
-			["title"] = "Legionfall Supplies",
+		[42420] = {
+			["title"] = "Court of Farondis",
 			["objectives"] = {
-				"31/100 Collect Legionfall War Supplies", -- [1]
+				"0/4 Complete 4 world quests in Azsuna", -- [1]
 			},
 		},
-		[40332] = {
-			["title"] = "Beach Bonfire",
+		[42234] = {
+			["title"] = "The Valarjar",
 			["objectives"] = {
-				"6/6 Driftwood", -- [1]
-				"1/1 Jarl Throndyr's Pyre built", -- [2]
+				"0/4 Complete 4 world quests in Stormheim", -- [1]
 			},
 		},
 		[42422] = {
@@ -168,19 +169,18 @@ QuestTogether = {
 				"0/1 Aftermath of the Well", -- [3]
 			},
 		},
-		[40300] = {
-			["title"] = "Tools of the Trade",
+		[40332] = {
+			["title"] = "Beach Bonfire",
 			["objectives"] = {
-				"0/1 Sacred Oil", -- [1]
-				"0/1 Preserving Incense", -- [2]
-				"0/1 Chest of Shrouds", -- [3]
+				"6/6 Driftwood", -- [1]
+				"1/1 Jarl Throndyr's Pyre built", -- [2]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
-		["showDebugInfo"] = false,
 	},
 }

@@ -58,11 +58,10 @@ QuestTogether = {
 				"0/1 Pendant of Starlight", -- [1]
 			},
 		},
-		[42719] = {
-			["title"] = "Eye of Azshara: Cleansing the Dreamway",
+		[50562] = {
+			["title"] = "Champions of Azeroth",
 			["objectives"] = {
-				"0/25 Rarefied Water", -- [1]
-				"0/1 Wrath of Azshara slain", -- [2]
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
 			},
 		},
 		[31891] = {
@@ -94,16 +93,15 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[50598] = {
-			["title"] = "Zandalari Empire",
-			["objectives"] = {
-				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
-			},
-		},
 		[40329] = {
 			["title"] = "Battle Pet Tamers: Warlords",
 			["objectives"] = {
 				"0/5 Pet Battlemasters Defeated", -- [1]
+			},
+		},
+		[51432] = {
+			["title"] = "An Unusual Mentor",
+			["objectives"] = {
 			},
 		},
 		[44555] = {
@@ -117,10 +115,10 @@ QuestTogether = {
 				"0/6 Perfumed Guards Analyzed", -- [1]
 			},
 		},
-		[50602] = {
-			["title"] = "Talanji's Expedition",
+		[31486] = {
+			["title"] = "Everything I Know About Cooking",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Nazmir.", -- [1]
+				"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
 			},
 		},
 		[52444] = {
@@ -129,9 +127,10 @@ QuestTogether = {
 				"0/1 Review final foothold", -- [1]
 			},
 		},
-		[51432] = {
-			["title"] = "An Unusual Mentor",
+		[50604] = {
+			["title"] = "Tortollan Seekers",
 			["objectives"] = {
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
 		[40019] = {
@@ -147,12 +146,6 @@ QuestTogether = {
 				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
 			},
 		},
-		[49901] = {
-			["title"] = "Atal'Dazar: Yazma the Fallen Priestess",
-			["objectives"] = {
-				"0/1 Yazma slain", -- [1]
-			},
-		},
 		[61874] = {
 			["title"] = "Shadowlands: A Chilling Summons",
 			["objectives"] = {
@@ -160,17 +153,24 @@ QuestTogether = {
 				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
-		[31486] = {
-			["title"] = "Everything I Know About Cooking",
+		[49901] = {
+			["title"] = "Atal'Dazar: Yazma the Fallen Priestess",
 			["objectives"] = {
-				"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
+				"0/1 Yazma slain", -- [1]
+			},
+		},
+		[42719] = {
+			["title"] = "Eye of Azshara: Cleansing the Dreamway",
+			["objectives"] = {
+				"0/25 Rarefied Water", -- [1]
+				"0/1 Wrath of Azshara slain", -- [2]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

@@ -615,11 +615,12 @@ if UnitClassBase( "player" ) == "DRUID" then
         end
     end )
 
-    spec:RegisterHook( "start_combat", function( action )
+    --[[ This is intended to cause an AP reset on entering an encounter, but it's not working. 
+        spec:RegisterHook( "start_combat", function( action )
         if boss and astral_power.current > 50 then
             spend( astral_power.current - 50, "astral_power" )
         end
-    end )
+    end ) ]]
 
     spec:RegisterHook( "pregain", function( amt, resource, overcap, clean )
         if buff.memory_of_lucid_dreams.up then
@@ -938,6 +939,8 @@ if UnitClassBase( "player" ) == "DRUID" then
         end
     end )
 
+
+    spec:RegisterGear( "tier28", 188853, 188851, 188849, 188848, 188847 )
 
     -- Legion Sets (for now).
     spec:RegisterGear( "tier21", 152127, 152129, 152125, 152124, 152126, 152128 )

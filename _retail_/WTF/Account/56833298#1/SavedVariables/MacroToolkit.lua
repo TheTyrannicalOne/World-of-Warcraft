@@ -1,5 +1,11 @@
 
 MacroToolkitDB = {
+	["global"] = {
+		["backups"] = {
+		},
+		["ebackups"] = {
+		},
+	},
 	["profileKeys"] = {
 		["Vancard - Zul'jin"] = "profile",
 		["Armaguth - Zul'jin"] = "profile",
@@ -20,32 +26,26 @@ MacroToolkitDB = {
 		["Zulbathal - Zul'jin"] = "profile",
 		["Kelvalatar - Dalaran"] = "profile",
 		["Banesmuncy - Zul'jin"] = "profile",
-		["Brotus - Argent Dawn"] = "profile",
+		["Okona - Zul'jin"] = "profile",
 		["Shimzo - Zul'jin"] = "profile",
-		["Guufnah - Zul'jin"] = "profile",
 		["Tinkster - Dalaran"] = "profile",
-		["Varlouris - Dalaran"] = "profile",
+		["Guufnah - Zul'jin"] = "profile",
+		["Jingojaggot - Zul'jin"] = "profile",
 		["Kotalkhan - Zul'jin"] = "profile",
-		["Fantastiburo - Zul'jin"] = "profile",
+		["Shanyt - Argent Dawn"] = "profile",
 		["Laymonan - Zul'jin"] = "profile",
-		["Serbitechna - Dalaran"] = "profile",
-		["Vadder - Argent Dawn"] = "profile",
-		["Datgore - Zul'jin"] = "profile",
 		["Tyran - Argent Dawn"] = "profile",
+		["Vadder - Argent Dawn"] = "profile",
+		["Serbitechna - Dalaran"] = "profile",
+		["Datgore - Zul'jin"] = "profile",
 		["Darnastris - Dalaran"] = "profile",
 		["Rotclaugh - Dalaran"] = "profile",
-		["Shanyt - Argent Dawn"] = "profile",
+		["Fantastiburo - Zul'jin"] = "profile",
 		["Abyronterner - Zul'jin"] = "profile",
-		["Jingojaggot - Zul'jin"] = "profile",
+		["Varlouris - Dalaran"] = "profile",
 		["Jasmoney - Zul'jin"] = "profile",
-		["Okona - Zul'jin"] = "profile",
+		["Brotus - Argent Dawn"] = "profile",
 		["Mandles - Zul'jin"] = "profile",
-	},
-	["global"] = {
-		["ebackups"] = {
-		},
-		["backups"] = {
-		},
 	},
 	["profiles"] = {
 		["profile"] = {
