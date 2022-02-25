@@ -262,6 +262,16 @@ local oneTimeFixes = {
     forceEnableEnhancedRecheckBoomkin_20210712 = function( p )
         p.specs[ 102 ].enhancedRecheck = true
     end,
+
+    updateMaxRefreshToNewSpecOptions_20220222 = function( p )
+        for id, spec in pairs( p.specs ) do
+            if spec.settings.maxRefresh then
+                spec.settings.combatRefresh = 1 / spec.settings.maxRefresh
+                spec.settings.regularRefresh = min( 1, 5 * spec.settings.combatRefresh )
+                spec.settings.maxRefresh = nil
+            end
+        end
+    end,
 }
 
 
@@ -4932,30 +4942,49 @@ do
 
                         performance = {
                             type = "group",
-                            name = "Performance",
+                            name = NewFeature .. " Performance",
                             order = 10,
                             args = {
                                 throttleRefresh = {
                                     type = "toggle",
-                                    name = "Throttle Updates",
-                                    desc = "By default, the addon will update its recommendations after any relevant combat events.  However, some combat events can occur in rapid succession, " ..
-                                        "leading to higher CPU usage and reduced game performance.\n\nIf you choose to |cffffd100Throttle Updates|r, you can specify the |cffffd100Maximum Update Frequency|r" ..
-                                        "for this specialization.",
+                                    name = NewFeature .. " Throttle Updates",
+                                    desc = "By default, the addon will update its recommendations immediately following |cffff0000critical|r combat events, within |cffffd1000.1|rs of routine combat events, or every |cffffd1000.5|rs.\n" ..
+                                        "If |cffffd100Throttle Updates|r is checked, you can specify the |cffffd100RCombat Refresh Interval|r and |cff00ff00Regular Refresh Interval|r for this specialization.",
                                     order = 1,
-                                    width = 1
+                                    width = "full",
                                 },
 
-                                maxRefresh = {
+                                perfSpace01 = {
+                                    type = "description",
+                                    name = " ",
+                                    order = 1.05,
+                                    width = "full"
+                                },
+
+                                regularRefresh = {
                                     type = "range",
-                                    name = "Maximum Update Frequency",
-                                    desc = "Specify the maximum number of times per second that the addon should update its recommendations.\n\n" ..
-                                        "If set to |cffffd1004|r, the addon will not update its recommendations more frequently than every |cffffd1000.25|r seconds.\n\n" ..
-                                        "If set to |cffffd10020|r, the addon will not update its recommendations more frequently than every |cffffd1000.05|r seconds.\n\n" ..
-                                        "The addon will normally update 5 - 7 times per second in combat.",
+                                    name = NewFeature .. " Regular Refresh Interval",
+                                    desc = "In the absence of combat events, this addon will allow itself to update according to the specified interval.  Specifying a higher value may reduce CPU usage but will result in slower updates, though " ..
+                                        "combat events will always force the addon to update more quickly.\n\nIf set to |cffffd1001.0|rs, the addon will not provide new updates until 1 second after its last update (unless forced by a combat event).\n\n" ..
+                                        "Default value:  |cffffd1000.1|rs.",
                                     order = 1.1,
-                                    width = 2,
-                                    min = 4,
-                                    max = 20,
+                                    width = 1.5,
+                                    min = 0.05,
+                                    max = 0.5,
+                                    step = 1,
+                                    hidden = function () return self.DB.profile.specs[ id ].throttleRefresh == false end,
+                                },
+
+                                combatRefresh = {
+                                    type = "range",
+                                    name = NewFeature .. " Combat Refresh Interval",
+                                    desc = "When routine combat events occur, the addon will update more frequently than its Regular Refresh Interval.  Specifying a higher value may reduce CPU usage but will result in slower updates, though " ..
+                                        "critical combat events will always force the addon to update more quickly.\n\nIf set to |cffffd1000.2|rs, the addon will not provide new updates until 0.2 seconds after its last update (unless forced by a critical combat event).\n\n" ..
+                                        "Default value:  |cffffd1000.5|rs.",
+                                    order = 1.2,
+                                    width = 1.5,
+                                    min = 0.05,
+                                    max = 0.5,
                                     step = 1,
                                     hidden = function () return self.DB.profile.specs[ id ].throttleRefresh == false end,
                                 },
@@ -4969,24 +4998,25 @@ do
 
                                 throttleTime = {
                                     type = "toggle",
-                                    name = "Throttle Time",
-                                    desc = "By default, the addon will take as much time as needed to generate the number of recommendations requested by a display.  However, complex combat scenarios " ..
-                                        "or priority lists can sometimes take an excessive amount of time, impacting your FPS.\n\nIf you choose to |cffffd100Throttle Time|r, you can specify the |cffffd100Maximum Update Time|r" ..
-                                        "that the addon will use when generating secondary recommendations.",
+                                    name = NewFeature .. " Throttle Time",
+                                    desc = "By default, when the addon needs to generate new recommendations, it will use up to |cffffd10010ms|r per frame or up to half a frame, whichever is lower.  If you get 60 FPS, that is 1 second / 60 frames, which equals equals 16.67ms.  " ..
+                                        "Half of 16.67 is ~|cffffd1008ms|r, so the addon could use up to ~8ms per frame until it has successfully updated its recommendations for all visible displays.  If more time is needed, the work will be split across multiple frames.\n\n" ..
+                                        "If you choose to |cffffd100Throttle Time|r, you can specify the |cffffd100Maximum Update Time|r the addon should use per frame.",
                                     order = 2,
                                     width = 1,
                                 },
 
                                 maxTime = {
                                     type = "range",
-                                    name = "Maximum Update Time (ms)",
-                                    desc = "Specify the maximum amount of time (in milliseconds) that the addon can use when updating its recommendations.\n\n" ..
-                                        "If set to |cffffd10010|r, then recommendations should not impact a 100 FPS system.\n(1 second / 100 frames = 10ms)\n\n" ..
-                                        "If set to |cffffd10016|r, then recommendations should not impact a 60 FPS system.\n(1 second / 60 frames = 16.7ms)\n\n" ..
-                                        "The addon will always generate its first recommendation, if possible, regardless of this setting.",
+                                    name = NewFeature .. " Maximum Update Time (ms)",
+                                    desc = "Specify the maximum amount of time (in milliseconds) that the addon can use |cffffd100per frame|r when updating its recommendations.\n\n" ..
+                                        "If set to |cffffd10010|r, then recommendations should not impact a 100 FPS system (1 second / 100 frames = 10ms).\n" ..
+                                        "If set to |cffffd10016|r, then recommendations should not impact a 60 FPS system (1 second / 60 frames = 16.7ms).\n\n" ..
+                                        "If you set this value too low, the addon can take more frames to update its recommendations and may feel delayed.  " ..
+                                        "If set too high, the addon will do more work each frame, finishing faster but potentially impacting your FPS.  The default value is |cffffd10010ms|r.",
                                     order = 2.1,
-                                    min = 5,
-                                    max = 1000,
+                                    min = 2,
+                                    max = 100,
                                     width = 2,
                                     hidden = function () return self.DB.profile.specs[ id ].throttleTime == false end,
                                 },
@@ -7609,7 +7639,6 @@ end
 do
     -- Generate a spec skeleton.
     local listener = CreateFrame( "Frame" )
-
     Hekili:ProfileFrame( "SkeletonListener", listener )
 
     local indent = ""
@@ -10511,33 +10540,26 @@ function Hekili:TogglePause( ... )
 
     if not self.Pause then
         self.ActiveDebug = true
-
-        for i, display in pairs( ns.UI.Displays ) do
-            if self:IsDisplayActive( i ) and display.alpha > 0 then
-                self:ProcessHooks( i )
-            end
-        end
-
+        Hekili.Update()
+        self.ActiveDebug = false
         self.Pause = true
         
-        if self:SaveDebugSnapshot() then
+        --[[ if self:SaveDebugSnapshot() then
             if not warnOnce then
                 self:Print( "Snapshot saved; snapshots are viewable via /hekili (until you reload your UI)." )
                 warnOnce = true
             else
                 self:Print( "Snapshot saved." )
             end
-        end
+        end ]]
         
-        self.ActiveDebug = false
     else
         self.Pause = false
+        self.ActiveDebug = false
 
         -- Discard the active update thread so we'll definitely start fresh at next update.
-        local primary = ns.UI.Displays[ "Primary" ]
-
-        if primary and primary.activeThread then
-            primary.activeThread = nil
+        if HekiliDisplayPrimary and HekiliDisplayPrimary.activeThread then
+            HekiliDisplayPrimary.activeThread = nil
         end
     end
 
@@ -10564,22 +10586,10 @@ function Hekili:MakeSnapshot( dispName, isAuto )
     end
 
     self.ActiveDebug = true
-    local success = false
-
-    for i, display in pairs( ns.UI.Displays ) do
-        if self:IsDisplayActive( i ) and display.alpha > 0 and ( dispName == nil or display.id == dispName ) then
-            self:ProcessHooks( i )
-            self:SaveDebugSnapshot( i )
-            success = true
-        end
-    end
-
+    Hekili.Update()
     self.ActiveDebug = false
 
-    if success then
-        self:Print( "Snapshot saved." )
-        self:Print( "Snapshots are viewable via /hekili (until you reload your UI)." )
-    end
+    HekiliDisplayPrimary.activeThread = nil
 end
 
 

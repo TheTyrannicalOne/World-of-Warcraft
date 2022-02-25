@@ -25,13 +25,15 @@ FishingBuddy_Player = {
 		["OverWalking"] = true,
 		["STVTimer"] = true,
 		["UseBladeboneHook"] = true,
-		["EnhancePools"] = true,
+		["SpecialBobbers"] = -2,
 		["TurnOnSound"] = true,
 		["AlwaysLure"] = true,
 		["EnhanceFishingSounds"] = true,
 		["EasyLures"] = true,
-		["SpecialBobbers"] = -2,
+		["EnhancePools"] = true,
 		["EasyCastKeys"] = 2,
+	},
+	["Outfit"] = {
 	},
 	["WatcherLocation"] = {
 		["grp_point"] = "CENTER",
@@ -46,7 +48,5 @@ FishingBuddy_Player = {
 		["grp_y"] = -6.103515625e-05,
 		["raid_y"] = -6.103515625e-05,
 		["raid_scale"] = 1,
-	},
-	["Outfit"] = {
 	},
 }

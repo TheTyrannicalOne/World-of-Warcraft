@@ -12,7 +12,9 @@ L["Profiles"] = "프로필"
 L["About"] = "정보"
 L["SpyDescription1"] = [[
 Spy는 근처에 있는 적 플레이어를 알려주는 애드온 입니다.
+
 ]]
+
 L["SpyDescription2"] = [[
 |cffffd000근접한 적 목록|cffffffff
 근접한 적 목록은 근처에 있는 탐지 된 적을 표시합니다. 근접한 적 목록을 클릭하면 적을 타겟팅하지만, 전투 상황은 아닙니다. 근접한 적에 등록된 플레이어가 일정 시간이 지나도 탐지되지 않는다면 자동으로 지워집니다.
@@ -24,10 +26,11 @@ L["SpyDescription2"] = [[
 제외 목록에 포함 된 적 플레이어는 Spy에 기록되지 않습니다. 드롭다운 메뉴 또는 목록을 Ctrl + 좌클릭 으로 플레이어를 제외목록에 추가 / 제거 할 수 있습니다.
 
 |cffffd000살생부 명단|cffffffff
-살생부 명단에 있는 적이 탐지되었을 때 알람이 울립니다. 드롭다운 메뉴 또는 목록을 Shift + 좌클릭 으로 플레이어를 살생부에 추가 / 제거 할 수 있습니다.
+살생부 명단에 있는 적이 탐지되었을 때 알람이 울립니다. 드롭다운 메뉴 또는 목록을 Shift + 좌클릭 으로 플레이어를 살생부에 추가 / 제거 할 수 있습니다. 드롭다운 메뉴로 살생부 명단에 추가한 이유를 설정 할 수 있습니다. 만약 알맞은 이유가 없다면, "이유를 입력하세요..." 를 선택해 직접 작성 할 수 있습니다.
 
-드롭다운 메뉴로 살생부 명단에 추가한 이유를 설정 할 수 있습니다. 만약 알맞은 이유가 없다면, "이유를 입력하세요..." 를 선택해 직접 작성 할 수 있습니다.
+]]
 
+L["SpyDescription3"] = [[
 |cffffd000Statistics Window|cffffffff
 The Statistics Window contains a list of all enemy encounters which can be sorted by name, level, guild, wins, losses and the last time an enemy was detected. It also provides the ability to search for a specific enemy by name or guild and has filters to show only enemies that are marked as Kill on Sight, with a Win/Loss or entered Reasons.
 
@@ -226,6 +229,7 @@ L["LimitSameContinentDescription"] = "같은 대륙에 있는 탐지된 적만 �
 -- Data Management
 L["DataOptions"] = "데이터 관리"
 L["DataOptionsDescription"] = [[
+
 Spy 가 데이터를 유지 관리하고 수집하는 방법에 대한 옵션.
 ]]
 L["PurgeData"] = "일정 기간 후 적 데이터 삭제:"
@@ -288,6 +292,7 @@ L["Time"] = "시간"
 L["List"] = "표식"
 L["Filter"] = "검색"
 L["Show Only"] = "필터"
+L["Realm"] = "Realm"
 L["KOS"] = "살생부"
 L["Won/Lost"] = "승/패"
 L["Reason"] = "이유"	 

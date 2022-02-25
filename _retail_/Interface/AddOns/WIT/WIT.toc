@@ -1,4 +1,4 @@
-## Interface: 90105
+## Interface: 90200
 ## Title: |c00ffff00WorthIt|r
 ## Author: DALAGG
 ## Version: v4.0.9

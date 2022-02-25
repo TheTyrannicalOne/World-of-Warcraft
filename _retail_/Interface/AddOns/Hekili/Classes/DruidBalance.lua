@@ -39,9 +39,10 @@ if UnitClassBase( "player" ) == "DRUID" then
     spec:RegisterResource( Enum.PowerType.LunarPower, {
         fury_of_elune = {
             aura = "fury_of_elune_ap",
+            debuff = true,
 
             last = function ()
-                local app = state.buff.fury_of_elune_ap.applied
+                local app = state.debuff.fury_of_elune_ap.applied
                 local t = state.query_time
 
                 return app + floor( ( t - app ) / 0.5 ) * 0.5
@@ -466,7 +467,7 @@ if UnitClassBase( "player" ) == "DRUID" then
         },
 
         thorns = {
-            id = 236696,
+            id = 305497,
             duration = 12,
             type = "Magic",
             max_stack = 1,
@@ -769,6 +770,7 @@ if UnitClassBase( "player" ) == "DRUID" then
             removeBuff( "starsurge_empowerment_solar" )
 
             applyBuff( "eclipse_lunar", ( duration or class.auras.eclipse_lunar.duration ) + buff.eclipse_lunar.remains )
+            if set_bonus.tier28_2pc > 0 then applyDebuff( "target", "fury_of_elune_ap" ) end
             applyBuff( "eclipse_solar", ( duration or class.auras.eclipse_solar.duration ) + buff.eclipse_solar.remains )
 
             state:QueueAuraExpiration( "ca_inc", ExpireCelestialAlignment, buff.ca_inc.expires )
@@ -796,7 +798,8 @@ if UnitClassBase( "player" ) == "DRUID" then
                 end
 
                 if eclipse.wrath_counter == 0 and ( eclipse.state == "LUNAR_NEXT" or eclipse.state == "ANY_NEXT" ) then
-                    applyBuff( "eclipse_lunar", class.auras.eclipse_lunar.duration + buff.eclipse_lunar.remains )                
+                    applyBuff( "eclipse_lunar", class.auras.eclipse_lunar.duration + buff.eclipse_lunar.remains )
+                    if set_bonus.tier28_2pc > 0 then applyDebuff( "target", "fury_of_elune_ap" ) end
                     state:RemoveAuraExpiration( "eclipse_lunar" )
                     state:QueueAuraExpiration( "eclipse_lunar", ExpireEclipseLunar, buff.eclipse_lunar.expires )
                     if talent.solstice.enabled then applyBuff( "solstice" ) end
@@ -868,8 +871,8 @@ if UnitClassBase( "player" ) == "DRUID" then
             elseif k == "primal_wrath" then return debuff.rip
             elseif k == "lunar_inspiration" then return debuff.moonfire_cat
             elseif k == "no_cds" then return not toggle.cooldowns
-            elseif debuff[ k ] ~= nil then return debuff[ k ]
-            end
+            elseif rawget( debuff, k ) ~= nil then return debuff[ k ] end
+            return false
         end
     } ) )
 
@@ -940,7 +943,11 @@ if UnitClassBase( "player" ) == "DRUID" then
     end )
 
 
+    -- Tier 28
     spec:RegisterGear( "tier28", 188853, 188851, 188849, 188848, 188847 )
+    spec:RegisterSetBonuses( "tier28_2pc", 364423, "tier28_4pc", 363497 )
+    -- 2-Set - Celestial Pillar - Entering Lunar Eclipse creates a Fury of Elune at 25% effectiveness that follows your current target for 8 sec.
+    -- 4-Set - Umbral Infusion - While in an Eclipse, the cost of Starsurge and Starfall is reduced by 20%.
 
     -- Legion Sets (for now).
     spec:RegisterGear( "tier21", 152127, 152129, 152125, 152124, 152126, 152128 )
@@ -1862,7 +1869,7 @@ if UnitClassBase( "player" ) == "DRUID" then
             cooldown = function () return talent.stellar_drift.enabled and 12 or 0 end,
             gcd = "spell",
 
-            spend = function () return ( buff.oneths_perception.up and 0 or 50 ) * ( 1 - ( buff.timeworn_dreambinder.stack * 0.1 ) ) end,
+            spend = function () return ( buff.oneths_perception.up and 0 or 50 ) * ( 1 - ( buff.timeworn_dreambinder.stack * 0.1 ) ) * ( set_bonus.tier28_4pc > 0 and 0.8 or 1 ) end,
             spendType = "astral_power",
 
             startsCombat = true,
@@ -1948,7 +1955,7 @@ if UnitClassBase( "player" ) == "DRUID" then
             cooldown = 0,
             gcd = "spell",
 
-            spend = function () return ( buff.oneths_clear_vision.up and 0 or 30 ) * ( 1 - ( buff.timeworn_dreambinder.stack * 0.1 ) ) end,
+            spend = function () return ( buff.oneths_clear_vision.up and 0 or 30 ) * ( 1 - ( buff.timeworn_dreambinder.stack * 0.1 ) ) * ( set_bonus.tier28_4pc > 0 and 0.8 or 1 ) end,
             spendType = "astral_power",
 
             startsCombat = true,
@@ -2188,7 +2195,7 @@ if UnitClassBase( "player" ) == "DRUID" then
 
 
         thorns = {
-            id = 236696,
+            id = 305497,
             cast = 0,
             cooldown = 45,
             gcd = "spell",

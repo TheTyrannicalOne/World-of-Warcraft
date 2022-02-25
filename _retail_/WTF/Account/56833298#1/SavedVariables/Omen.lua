@@ -20,9 +20,9 @@ Omen3DB = {
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
 		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
-		["Okona - Zul'jin"] = "Okona - Zul'jin",
-		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
@@ -74,8 +74,8 @@ Omen3DB = {
 			["PositionY"] = 219.0002288818359,
 			["PositionW"] = 262.9996948242188,
 			["Shown"] = false,
-			["PositionX"] = 1750.499267578125,
 			["VGrip1"] = 111.7748191338414,
+			["PositionX"] = 1750.499267578125,
 			["PositionH"] = 199.9998168945313,
 		},
 		["Banuumine - Zul'jin"] = {
@@ -156,6 +156,16 @@ Omen3DB = {
 			["PositionW"] = 200.0000915527344,
 			["PositionX"] = 1741.499633789063,
 		},
+		["Tinkster - Dalaran"] = {
+			["Shown"] = false,
+			["PositionY"] = 675.0000610351562,
+			["PositionX"] = 954.1666870117188,
+		},
+		["Shimzo - Zul'jin"] = {
+			["Shown"] = false,
+			["PositionY"] = 675.0000610351562,
+			["PositionX"] = 954.1666870117188,
+		},
 		["Okona - Zul'jin"] = {
 			["VGrip2"] = 208.1503001968086,
 			["PositionY"] = 459.0002746582031,
@@ -164,16 +174,6 @@ Omen3DB = {
 			["VGrip1"] = 153.8502218845977,
 			["PositionX"] = 2082.999755859375,
 			["PositionH"] = 209.9998779296875,
-		},
-		["Shimzo - Zul'jin"] = {
-			["Shown"] = false,
-			["PositionY"] = 675.0000610351562,
-			["PositionX"] = 954.1666870117188,
-		},
-		["Tinkster - Dalaran"] = {
-			["Shown"] = false,
-			["PositionY"] = 675.0000610351562,
-			["PositionX"] = 954.1666870117188,
 		},
 		["Guufnah - Zul'jin"] = {
 			["Shown"] = false,

@@ -79,12 +79,12 @@ DataStore_TalentsDB = {
 					nil, -- [4]
 					"2|180842|171|3|", -- [5]
 					nil, -- [6]
-					"2|180844|158|2|", -- [7]
+					"2|180844|171|3|", -- [7]
 					"0|180847|171|3|", -- [8]
 					"0|180896|158|2|", -- [9]
 					"2|180932|158|2|Protection", -- [10]
 					"1|180933|171|3|", -- [11]
-					"1|180935|158|2|Arms", -- [12]
+					"1|180935|171|3|Arms", -- [12]
 					"0|180943|158|2|", -- [13]
 					"1|180944|171|3|Arms", -- [14]
 					[191] = "0|182656|171|3|",
@@ -98,7 +98,7 @@ DataStore_TalentsDB = {
 					[52] = "1|181735|171|3|Fury",
 				},
 				["activeSpecRole"] = "DAMAGER",
-				["lastUpdate"] = 1645413305,
+				["lastUpdate"] = 1645777424,
 				["Specializations"] = {
 					5851, -- [1]
 				},
@@ -106,8 +106,8 @@ DataStore_TalentsDB = {
 				["activeSpecName"] = "Arms",
 				["Class"] = "WARRIOR",
 				["Soulbinds"] = {
-					[1554] = "0|0|0|1|",
-					[1551] = "0|0|0|-1|Continue the campaign to unlock Theotar the Mad Duke",
+					[1869] = "0|0|0|0|Requires Renown 51",
+					[1425] = "0|0|0|-1|Complete the campaign to unlock General Draven",
 					[1396] = "3|10|2|2|",
 					[1400] = "3|169|3|1|",
 					[1404] = "1|0|0|-1|",
@@ -115,8 +115,8 @@ DataStore_TalentsDB = {
 					[1872] = "0|0|0|1|",
 					[1857] = "0|0|0|-1|Requires Renown 48",
 					[1546] = "0|0|0|-1|Continue the campaign to unlock Theotar the Mad Duke",
-					[1424] = "0|0|0|-1|Complete the campaign to unlock General Draven",
-					[1869] = "0|0|0|0|Requires Renown 51",
+					[1550] = "0|0|0|-1|",
+					[1554] = "0|0|0|1|",
 					[1873] = "0|0|0|-1|Requires Renown 45",
 					[1877] = "0|0|0|-1|Requires Renown 54",
 					[1005] = "0|0|0|0|Complete the campaign to unlock General Draven",
@@ -127,34 +127,34 @@ DataStore_TalentsDB = {
 					[1397] = "3|8|3|0|",
 					[1401] = "1|0|0|2|",
 					[1405] = "3|27|3|2|",
-					[1425] = "0|0|0|-1|Complete the campaign to unlock General Draven",
+					[1551] = "0|0|0|-1|Continue the campaign to unlock Theotar the Mad Duke",
 					[998] = "0|0|0|-1|",
-					[1858] = "0|0|0|0|Requires Renown 53",
+					[1000] = "0|0|0|0|",
 					[1421] = "0|0|0|-1|",
-					[1866] = "2|0|0|1|",
+					[1866] = "3|11|3|1|",
 					[1006] = "0|0|0|2|Complete the campaign to unlock General Draven",
 					[1874] = "0|0|0|-1|Requires Renown 45",
 					[1555] = "0|0|0|2|",
 					[1870] = "0|0|0|2|Requires Renown 51",
 					[1419] = "0|0|0|-1|Complete the campaign to unlock General Draven",
 					[1426] = "0|0|0|-1|Complete the campaign to unlock General Draven",
-					[1422] = "0|0|0|2|",
+					[1548] = "0|0|0|0|Continue the campaign to unlock Theotar the Mad Duke",
 					[1394] = "3|0|0|-1|",
 					[1398] = "3|0|0|-1|",
 					[1402] = "1|0|0|-1|",
 					[1406] = "3|0|0|-1|",
-					[1552] = "0|0|0|-1|",
+					[1867] = "0|0|0|-1|Requires Renown 46",
 					[1855] = "0|0|0|1|",
 					[1859] = "0|0|0|2|Requires Renown 53",
-					[1548] = "0|0|0|0|Continue the campaign to unlock Theotar the Mad Duke",
-					[1867] = "0|0|0|-1|Requires Renown 46",
-					[1871] = "0|0|0|-1|Requires Renown 55",
-					[1875] = "0|0|0|0|Requires Renown 49",
+					[1422] = "0|0|0|2|",
+					[1552] = "0|0|0|-1|",
+					[1556] = "0|0|0|2|Continue the campaign to unlock Theotar the Mad Duke",
+					[1560] = "0|0|0|-1|",
 					[1420] = "0|0|0|-1|Complete the campaign to unlock General Draven",
 					[1553] = "0|0|0|0|",
 					[1559] = "0|0|0|-1|",
-					[1560] = "0|0|0|-1|",
-					[1556] = "0|0|0|2|Continue the campaign to unlock Theotar the Mad Duke",
+					[1875] = "0|0|0|0|Requires Renown 49",
+					[1871] = "0|0|0|-1|Requires Renown 55",
 					[1395] = "1|165|2|1|",
 					[1399] = "1|0|0|0|",
 					[1403] = "3|0|0|-1|",
@@ -166,8 +166,8 @@ DataStore_TalentsDB = {
 					[1868] = "0|0|0|-1|Requires Renown 46",
 					[1557] = "0|0|0|-1|",
 					[1876] = "0|0|0|2|Requires Renown 49",
-					[1000] = "0|0|0|0|",
-					[1550] = "0|0|0|-1|",
+					[1858] = "0|0|0|0|Requires Renown 53",
+					[1424] = "0|0|0|-1|Complete the campaign to unlock General Draven",
 				},
 				["activeSoulbindID"] = 8,
 			},
@@ -221,7 +221,7 @@ DataStore_TalentsRefDB = {
 					["id"] = 73,
 				}, -- [3]
 			},
-			["Version"] = 42010,
+			["Version"] = 42423,
 		},
 		["PALADIN"] = {
 			["Locale"] = "enUS",

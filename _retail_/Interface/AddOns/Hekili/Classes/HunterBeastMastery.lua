@@ -728,7 +728,16 @@ if UnitClassBase( "player" ) == "HUNTER" then
     end )
 
 
+    -- Tier 28
     spec:RegisterGear( "tier28", 188861, 188860, 188859, 188858, 188856 )
+    spec:RegisterSetBonuses( "tier28_2pc", 364492, "tier28_4pc", 363665 )
+    -- 2-Set - Killing Frenzy - Your Kill Command critical strike chance is increased by 15% for each stack of Frenzy your pet has.
+    -- 4-Set - Killing Frenzy - Kill Command critical hits increase the damage and cooldown reduction of your next Cobra Shot by 40%.
+    spec:RegisterAura( "killing_frenzy", {
+        id = 363760,
+        duration = 8,
+        max_stack = 1
+    } )
 
 
     -- Abilities
@@ -985,7 +994,10 @@ if UnitClassBase( "player" ) == "HUNTER" then
 
             handler = function ()
                 if talent.killer_cobra.enabled and buff.bestial_wrath.up then setCooldown( "kill_command", 0 )
-                else setCooldown( "kill_command", cooldown.kill_command.remains - 1 ) end
+                else
+                    setCooldown( "kill_command", cooldown.kill_command.remains - ( buff.killing_frenzy.up and 1.4 or 1 ) )
+                    removeBuff( "killing_frenzy" )
+                end
             end,
         },
 
@@ -1309,8 +1321,11 @@ if UnitClassBase( "player" ) == "HUNTER" then
 
             usable = function ()
                 if not pet.alive then return false, "requires a living pet" end
-                if settings.check_pet_range and Hekili:PetBasedTargetDetectionIsReady( true ) and not Hekili:TargetIsNearPet( "target" ) then return false, "not in-range of pet" end
                 return true
+            end,
+
+            disabled = function()
+                if settings.check_pet_range and Hekili:PetBasedTargetDetectionIsReady( true ) and not Hekili:TargetIsNearPet( "target" ) then return true, "not in-range of pet" end
             end,
 
             handler = function ()
@@ -1318,6 +1333,10 @@ if UnitClassBase( "player" ) == "HUNTER" then
 
                 if conduit.ferocious_appetite.enabled and stat.crit >= 100 then
                     reduceCooldown( "aspect_of_the_wild", conduit.ferocious_appetite.mod / 10 )
+                end
+
+                if set_bonus.tier28_4pc > 0 and stat.crit + ( buff.frenzy.stack * 0.15 ) >= 100 then
+                    applyBuff( "killing_frenzy" )
                 end
             end,
 

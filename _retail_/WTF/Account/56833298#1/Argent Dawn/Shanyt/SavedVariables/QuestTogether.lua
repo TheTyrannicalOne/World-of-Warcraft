@@ -1,10 +1,16 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[57919] = {
-			["title"] = "An Abuse of Power",
+		[42421] = {
+			["title"] = "The Nightfallen",
 			["objectives"] = {
-				"0/1 Abused Soul subjugated", -- [1]
+				"0/4 Complete 4 world quests in Suramar", -- [1]
+			},
+		},
+		[42234] = {
+			["title"] = "The Valarjar",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Stormheim", -- [1]
 			},
 		},
 		[56352] = {
@@ -21,10 +27,10 @@ QuestTogether = {
 				"1/1 Runecarver Memory Restored", -- [3]
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
+		[47727] = {
+			["title"] = "Tomb of Sargeras: Aegwynn's Path",
 			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+				"3/4 Fragment of the Guardian's Seal", -- [1]
 			},
 		},
 		[59701] = {
@@ -33,16 +39,21 @@ QuestTogether = {
 				"1/4 Renathal Banner placed", -- [1]
 			},
 		},
+		[57565] = {
+			["title"] = "Aqir Assault Tracker",
+			["objectives"] = {
+				"0/1 [DNT] Dummy Credit slain", -- [1]
+			},
+		},
+		[57567] = {
+			["title"] = "N'Zoth Assault Tracker (Vale)",
+			["objectives"] = {
+			},
+		},
 		[60280] = {
 			["title"] = "WANTED: Lord Darion",
 			["objectives"] = {
 				"0/1 Lord Darion slain", -- [1]
-			},
-		},
-		[57462] = {
-			["title"] = "Dream Catcher",
-			["objectives"] = {
-				"28/200 Shred of Insanity", -- [1]
 			},
 		},
 		[49133] = {
@@ -57,15 +68,15 @@ QuestTogether = {
 				"0/20 Rescue Souls from the Maw", -- [1]
 			},
 		},
-		[40329] = {
-			["title"] = "Battle Pet Tamers: Warlords",
-			["objectives"] = {
-				"2/5 Pet Battlemasters Defeated", -- [1]
-			},
-		},
 		[46745] = {
 			["title"] = "Supplies From the Court",
 			["objectives"] = {
+			},
+		},
+		[48639] = {
+			["title"] = "Army of the Light",
+			["objectives"] = {
+				"0/4 Complete 4 Army of the Light World Quests", -- [1]
 			},
 		},
 		[47129] = {
@@ -93,34 +104,28 @@ QuestTogether = {
 				"18349/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
+		[50602] = {
+			["title"] = "Talanji's Expedition",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Nazmir.", -- [1]
+			},
+		},
 		[64527] = {
 			["title"] = "Observing the Chase",
 			["objectives"] = {
 				"0/1 Alliance Players slain", -- [1]
 			},
 		},
-		[50606] = {
-			["title"] = "Horde War Effort",
+		[45381] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
+				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[42420] = {
-			["title"] = "Court of Farondis",
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Azsuna", -- [1]
-			},
-		},
-		[42422] = {
-			["title"] = "The Wardens",
-			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
-			},
-		},
-		[47727] = {
-			["title"] = "Tomb of Sargeras: Aegwynn's Path",
-			["objectives"] = {
-				"3/4 Fragment of the Guardian's Seal", -- [1]
+				"2/4 Echo of Time", -- [1]
 			},
 		},
 		[44948] = {
@@ -129,27 +134,26 @@ QuestTogether = {
 				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
-			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
-			},
-		},
 		[63982] = {
 			["title"] = "Above My Station",
 			["objectives"] = {
 				"Portal to Transfer Station Ta taken", -- [1]
 			},
 		},
-		[60456] = {
-			["title"] = "Storm the Maw",
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
-				"0/3 Rare or special encounter bosses slain", -- [1]
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[57564] = {
-			["title"] = "Mantid Assault Tracker",
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
 			["objectives"] = {
+				"2/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
 		[48305] = {
@@ -165,14 +169,10 @@ QuestTogether = {
 				"Infuse Shadow's Edge with Blood then defeat Lana'thel.", -- [1]
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
+		[50604] = {
+			["title"] = "Tortollan Seekers",
 			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
 		[54455] = {
@@ -180,15 +180,28 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
+		[60432] = {
+			["title"] = "Troubles at Home",
 			["objectives"] = {
+				"0% Revendreth Defended (0%)", -- [1]
 			},
 		},
-		[45381] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[60406] = {
+			["title"] = "Training in Bastion",
 			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
+				"0/3 Complete 3 World Quests in Bastion with your trainee", -- [1]
+			},
+		},
+		[60441] = {
+			["title"] = "Challenges in Ardenweald",
+			["objectives"] = {
+				"0/1 Defeat the powerful foes of Ardenweald", -- [1]
+			},
+		},
+		[57919] = {
+			["title"] = "An Abuse of Power",
+			["objectives"] = {
+				"0/1 Abused Soul subjugated", -- [1]
 			},
 		},
 		[59661] = {
@@ -208,16 +221,16 @@ QuestTogether = {
 				"0/1 Chelra the Bladewall revived", -- [1]
 			},
 		},
-		[48642] = {
-			["title"] = "Argussian Reach",
+		[57462] = {
+			["title"] = "Dream Catcher",
 			["objectives"] = {
-				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
+				"28/200 Shred of Insanity", -- [1]
 			},
 		},
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[61981] = {
+			["title"] = "Replenish the Reservoir",
 			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
+				"195/1000 Anima sources", -- [1]
 			},
 		},
 		[57403] = {
@@ -226,10 +239,16 @@ QuestTogether = {
 				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
 			},
 		},
-		[45383] = {
+		[50598] = {
+			["title"] = "Zandalari Empire",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
+			},
+		},
+		[45382] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"2/4 Echo of Time", -- [1]
+				"0/4 Echo of Time", -- [1]
 			},
 		},
 		[30567] = {
@@ -257,7 +276,7 @@ QuestTogether = {
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 	},
 }

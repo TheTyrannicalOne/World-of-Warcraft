@@ -167,7 +167,7 @@ if UnitClassBase( 'player' ) == 'WARRIOR' then
         },
         colossus_smash = {
             id = 208086,
-            duration = 10,
+            duration = function () return set_bonus.tier28_2pc > 0 and 13 or 10 end,
             max_stack = 1,
         },
         deadly_calm = {
@@ -413,7 +413,52 @@ if UnitClassBase( 'player' ) == 'WARRIOR' then
     end )
 
 
+    spec:RegisterStateExpr( "swap_for_execute", function ()
+        if not settings.cycle then return false end
+        
+        local actual = rawget( args, "cycle_targets")
+        args.cycle_targets = 1
+        
+        local result = action.execute.cycle == "cycle"
+        args.cycle_targets = actual
+        
+        return result
+    end )
+
+
+    spec:RegisterStateExpr( "swap_for_condemn", function ()
+        if not settings.cycle or not covenant.venthyr then return false end
+
+        local actual = rawget( args, "cycle_targets")
+        args.cycle_targets = 1
+        
+        local result = action.condemn.cycle == "cycle"
+        args.cycle_targets = actual
+
+        return result
+    end )
+
+
+    -- Tier 28
     spec:RegisterGear( 'tier28', 188942, 188941, 188940, 188938, 188937 )
+    spec:RegisterSetBonuses( "tier28_2pc", 364553, "tier28_4pc", 363913 )
+    -- 2-Set - Pile On - Colossus Smash / Warbreaker lasts 3 sec longer and increases your damage dealt to affected enemies by an additional 5%.
+    -- 4-Set - Pile On - Tactician has a 50% increased chance to proc against enemies with Colossus Smash and causes your next Overpower to grant 2% Strength, up to 20% for 15 sec.
+    spec:RegisterAuras( {
+        pile_on_ready = {
+            id = 363917,
+            duration = 15,
+            max_stack = 1,
+        },
+        pile_on_str = {
+            id = 366769,
+            duration = 15,
+            max_stack = 4,
+            copy = "pile_on"
+        }
+    })
+
+
     spec:RegisterGear( 'tier20', 147187, 147188, 147189, 147190, 147191, 147192 )
         spec:RegisterAura( "raging_thirst", {
             id = 242300, 
@@ -703,7 +748,17 @@ if UnitClassBase( 'player' ) == 'WARRIOR' then
             startsCombat = true,
             texture = 135358,
 
-            usable = function () return buff.sudden_death.up or buff.stone_heart.up or target.health.pct < ( talent.massacre.enabled and 35 or 20 ) end,
+            usable = function ()
+                if buff.sudden_death.up or buff.stone_heart.up then return true end
+                if action.execute.cycle then return true end
+                return target.health_pct < ( talent.massacre.enabled and 35 or 20 ) or target.health_pct > 80, "requires > 80% or < " .. ( talent.massacre.enabled and 35 or 20 ) .. "% health"
+            end,
+
+            cycle = function ()
+                if not settings.cycle or args.cycle_targets ~= 1 or buff.sudden_death.up or target.health_pct < ( talent.massacre.enabled and 35 or 20 ) then return end
+                if Hekili:GetNumTargetsBelowHealthPct( talent.massacre.enabled and 35 or 20, false, 5 ) > 0 then return "cycle" end
+            end,         
+               
             handler = function ()
                 if not buff.sudden_death.up and not buff.stone_heart.up then
                     local overflow = min( rage.current, 20 )
@@ -934,6 +989,11 @@ if UnitClassBase( 'player' ) == 'WARRIOR' then
                 if buff.striking_the_anvil.up then
                     removeBuff( "striking_the_anvil" )
                     gainChargeTime( "mortal_strike", 1.5 )
+                end
+
+                if buff.pile_on_ready.up then
+                    addStack( "pile_on_str", nil, 1 )
+                    removeBuff( "pile_on_ready" )
                 end
             end,
         },
@@ -1398,7 +1458,13 @@ if UnitClassBase( 'player' ) == 'WARRIOR' then
 
             usable = function ()
                 if buff.sudden_death.up then return true end
+                if action.condemn.cycle then return true end
                 return target.health_pct < ( talent.massacre.enabled and 35 or 20 ) or target.health_pct > 80, "requires > 80% or < " .. ( talent.massacre.enabled and 35 or 20 ) .. "% health"
+            end,
+
+            cycle = function ()
+                if not settings.cycle or args.cycle_targets ~= 1 or buff.sudden_death.up or target.health_pct < ( talent.massacre.enabled and 35 or 20 ) or target.health_pct > 80 then return end
+                if ( Hekili:GetNumTargetsBelowHealthPct( talent.massacre.enabled and 35 or 20, false, 5 ) > 0 or Hekili:GetNumTargetsAboveHealthPct( 80, false, 5 ) > 0 ) then return "cycle" end
             end,
 
             handler = function ()

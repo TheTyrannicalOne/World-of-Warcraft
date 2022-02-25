@@ -6,7 +6,7 @@ OneRing_Config = {
 		["Dalaran-Tynkster"] = "Shanyt",
 		["Black Dragonflight-Durlok-3"] = "default",
 	},
-	["_GameVersion"] = "9.1.5",
+	["_GameVersion"] = "9.2.0",
 	["_OPieVersion"] = "Xe 6 (3.106)",
 	["ProfileStorage"] = {
 		["Shanyt"] = {
@@ -27,7 +27,7 @@ OneRing_Config = {
 				["Tools2"] = "ALT-E",
 				["Mounts9"] = "ALT-Q",
 				["Mounts5"] = "ALT-Q",
-				["Utility8"] = "ALT-E",
+				["Utility9"] = "ALT-E",
 				["Tools1"] = "ALT-E",
 				["Mounts11"] = "ALT-Q",
 				["OPieAutoQuest"] = false,
@@ -35,7 +35,7 @@ OneRing_Config = {
 				["Mounts4"] = "ALT-Q",
 				["Mounts61"] = "ALT-Q",
 				["Utility2"] = "ALT-E",
-				["Utility9"] = "ALT-E",
+				["Utility8"] = "ALT-E",
 				["Mounts15"] = "ALT-Q",
 				["Utility3"] = "ALT-E",
 				["Mounts6"] = "ALT-Q",
@@ -149,10 +149,10 @@ OneRing_Config = {
 					"BattlePet-0-0000064BC55A", -- [2]
 					["sliceToken"] = "ABuede=1Srtr",
 				}, -- [6]
-				["limit"] = "Shanyt-ArgentDawn",
+				["name"] = "Utility",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["name"] = "Utility",
+				["limit"] = "Shanyt-ArgentDawn",
 			},
 			["Utility8"] = {
 				{

@@ -463,6 +463,9 @@ if UnitClassBase( 'player' ) == 'MAGE' then
 
     local brain_freeze_removed = 0
 
+    local lastCometCast = 0
+    local lastAutoComet = 0
+
     spec:RegisterHook( "COMBAT_LOG_EVENT_UNFILTERED", function( event, _, subtype, _, sourceGUID, sourceName, _, _, destGUID, destName, destFlags, _, spellID, spellName )
         if sourceGUID == GUID then
             if subtype == "SPELL_CAST_SUCCESS" then
@@ -475,6 +478,17 @@ if UnitClassBase( 'player' ) == 'MAGE' then
                 end
             elseif subtype == "SPELL_AURA_REMOVED" and spellID == 190446 then
                 brain_freeze_removed = GetTime()
+            end
+
+            if ( spellID == 153595 or spellID == 153596 ) then
+                local t = GetTime()
+    
+                if subtype == "SPELL_CAST_SUCCESS" then
+                    lastCometCast = t
+                elseif subtype == "SPELL_DAMAGE" and t - lastCometCast > 3 and t - lastAutoComet > 3 then
+                    -- TODO:  Revisit strategy for detecting auto comets.
+                    lastAutoComet = t
+                end
             end
         end
     end )
@@ -516,12 +530,13 @@ if UnitClassBase( 'player' ) == 'MAGE' then
             { 1, 0 }
         },
 
-        f = CreateFrame("Frame"),
+        f = CreateFrame( "Frame" ),
         fRegistered = false,
 
         reset = setfenv( function ()
             if talent.incanters_flow.enabled then
                 if not incanters_flow.fRegistered then
+                    Hekili:ProfileFrame( "Incanters_Flow_Frost", incanters_flow.f )
                     -- One-time setup.
                     incanters_flow.f:RegisterUnitEvent( "UNIT_AURA", "player" )
                     incanters_flow.f:SetScript( "OnEvent", function ()
@@ -585,6 +600,28 @@ if UnitClassBase( 'player' ) == 'MAGE' then
 
     spec:RegisterStateExpr( "bf_flurry", function () return false end )
 
+
+    -- Tier 28
+    spec:RegisterSetBonuses( "tier28_2pc", 363535, "tier28_4pc", 364544 )
+    -- 2-Set - Frost Storm - Your spells have a 25% chance to call down a Comet Storm on your target enemy. This effect cannot occur more than once every 20 sec.
+    -- 4-Set - Frost Storm - Enemies hit by Comet Storm take 2% increased damage from your Frost Spells, up to 10% for 8 sec.
+    spec:RegisterAura( "frost_storm", {
+        id = 363544,
+        duration = 8,
+        max_stack = 5,
+    } )
+
+    -- Track ICD?
+    spec:RegisterAbility( "frost_storm", {
+        cast = 0,
+        cooldown = 20,
+        gcd = "off",
+
+        unlisted = true,
+        known = function () return set_bonus.tier28_2pc > 0 end,
+    } )
+
+
     spec:RegisterHook( "reset_precast", function ()
         if pet.rune_of_power.up then applyBuff( "rune_of_power", pet.rune_of_power.remains )
         else removeBuff( "rune_of_power" ) end
@@ -602,6 +639,10 @@ if UnitClassBase( 'player' ) == 'MAGE' then
 
         if Hekili.ActiveDebug then
             Hekili:Debug( "Ice Lance in-flight?  %s\nWinter's Chill Actual Stacks?  %d\nremaining_winters_chill:  %d", state:IsInFlight( "ice_lance" ) and "Yes" or "No", state.debuff.winters_chill.stack, state.remaining_winters_chill )
+        end
+
+        if set_bonus.tier28_3pc > 0 and now - lastAutoComet < 20 then
+            setCooldown( "frost_storm", lastAutoComet + 20 - now )
         end
     end )
 
@@ -714,6 +755,10 @@ if UnitClassBase( 'player' ) == 'MAGE' then
             talent = "comet_storm",
 
             handler = function ()
+                if set_bonus.tier28_4pc > 0 then
+                    applyDebuff( "target", "frost_storm" )
+                    active_dot.frost_storm = max( 1, active_enemies )
+                end
             end,
         },
 

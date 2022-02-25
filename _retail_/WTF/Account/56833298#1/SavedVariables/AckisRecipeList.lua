@@ -20,9 +20,9 @@ ARLDB2 = {
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
 		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
-		["Okona - Zul'jin"] = "Okona - Zul'jin",
-		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
@@ -100,13 +100,13 @@ ARLDB2 = {
 				},
 				["Charbeatic"] = {
 				},
-				["Mandles"] = {
+				["Shimzo"] = {
 				},
 				["Jasmoney"] = {
 				},
 				["Armaguth"] = {
 				},
-				["Shimzo"] = {
+				["Mandles"] = {
 				},
 				["Vancard"] = {
 				},
@@ -168,11 +168,11 @@ ARLDB2 = {
 		},
 		["Banesmuncy - Zul'jin"] = {
 		},
-		["Okona - Zul'jin"] = {
+		["Tinkster - Dalaran"] = {
 		},
 		["Shimzo - Zul'jin"] = {
 		},
-		["Tinkster - Dalaran"] = {
+		["Okona - Zul'jin"] = {
 		},
 		["Guufnah - Zul'jin"] = {
 		},

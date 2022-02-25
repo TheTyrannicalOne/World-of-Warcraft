@@ -186,7 +186,7 @@ if UnitClassBase( "player" ) == "DEATHKNIGHT" then
             aura = "swarming_mist",
 
             last = function ()
-                local app = state.debuff.swarming_mist.applied
+                local app = state.buff.swarming_mist.applied
                 local t = state.query_time
 
                 return app + floor( ( t - app ) / class.auras.swarming_mist.tick_time ) * class.auras.swarming_mist.tick_time
@@ -564,7 +564,19 @@ if UnitClassBase( "player" ) == "DEATHKNIGHT" then
         }
     } )
 
+    -- Tier 28
     spec:RegisterGear( "tier28", 188868, 188867, 188866, 188864, 188863 )
+    spec:RegisterSetBonuses( "tier28_2pc", 364399, "tier28_4pc", 363590 )
+    -- 2-Set - Endless Rune Waltz  Heart Strike increases your Strength by 1% andWhile your Dancing Rune Weapon is active Heart Strike extends the duration of Dancing Rune Weapon by 0.5 seconds and increases your Strength by 1%, persisting for 10 seconds after Dancing Rune Weapon ends.
+    -- 4-Set - Endless Rune Waltz - Parrying an attack causes your weaponWhen you take damage, you have a chance equal to 100% of your Parry chance to lash out, Heart Striking your attacker. Dancing Rune Weapon now summons 2 Rune Weapons.
+
+        spec:RegisterAuras( {
+            endless_rune_waltz = {
+                id = 366008,
+                duration = 30,
+                max_stack = 1
+            }
+        } )
 
     spec:RegisterGear( "tier19", 138355, 138361, 138364, 138349, 138352, 138358 )
     spec:RegisterGear( "tier20", 147124, 147126, 147122, 147121, 147123, 147125 )
@@ -646,6 +658,11 @@ if UnitClassBase( "player" ) == "DEATHKNIGHT" then
             if data.cooldown == 0 and data.spendType == "runes" then
                 setCooldown( action, 0 )
             end
+        end
+
+        if set_bonus.tier28_2pc > 0 and buff.dancing_rune_weapon.up then
+            if buff.endless_rune_waltz.up then buff.endless_rune_waltz.expires = buff.dancing_rune_weapon.expires + 10
+            else applyBuff( "endless_rune_waltz", buff.dancing_rune_weapon.remains + 10 ) end
         end
     end )
     
@@ -1141,7 +1158,13 @@ if UnitClassBase( "player" ) == "DEATHKNIGHT" then
                 if azerite.deep_cuts.enabled then applyDebuff( "target", "deep_cuts" ) end
 
                 if legendary.gorefiends_domination.enabled and cooldown.vampiric_blood.remains > 0 then
-                    cooldown.vampiric_blood.expires = cooldown.vampiric_blood.expires - 2
+                    gainChargeTime( "vampiric_blood", 2 )
+                end
+
+                if buff.dancing_rune_weapon.up and set_bonus.tier28_2pc > 0 then
+                    buff.dancing_rune_weapon.expires = buff.dancing_rune_weapon.expires + 0.5
+                    addStack( "endless_rune_waltz", nil, 1 )
+                    buff.endless_rune_waltz.expires = buff.dancing_rune_weapon.expires + 10
                 end
             end,
         },

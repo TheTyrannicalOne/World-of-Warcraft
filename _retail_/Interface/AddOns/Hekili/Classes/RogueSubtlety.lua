@@ -573,6 +573,11 @@ if UnitClassBase( "player" ) == "ROGUE" then
     
     local ExpireSepsis = setfenv( function ()
         applyBuff( "sepsis_buff" )
+
+        if legendary.toxic_onslaught.enabled then
+            applyBuff( "adrenaline_rush", 10 )
+            applyDebuff( "target", "vendetta", 10 )
+        end    
     end, state )
 
     spec:RegisterHook( "reset_precast", function( amt, resource )
@@ -647,8 +652,13 @@ if UnitClassBase( "player" ) == "ROGUE" then
         } )
 
     -- Tier Sets
-    spec:RegisterGear( "tier28", 188901, 188902, 188903, 188905, 188907 
-)
+    spec:RegisterGear( "tier28", 188901, 188902, 188903, 188905, 188907 )
+    spec:RegisterSetBonuses( "tier28_2pc", 364557, "tier28_4pc", 363949 )
+    -- 2-Set - Immortal Technique - Shadowstrike has a 15% chance to grant Shadow Blades for 5 sec.
+    -- 4-Set - Immortal Technique - Your finishing moves have a 3% chance per combo point to cast Shadowstrike at up to 5 enemies within 15 yards.
+    -- 2/15/22:  No mechanics to model.
+
+
     spec:RegisterGear( "tier21", 152163, 152165, 152161, 152160, 152162, 152164 )
     spec:RegisterGear( "tier20", 147172, 147174, 147170, 147169, 147171, 147173 )
     spec:RegisterGear( "tier19", 138332, 138338, 138371, 138326, 138329, 138335 )

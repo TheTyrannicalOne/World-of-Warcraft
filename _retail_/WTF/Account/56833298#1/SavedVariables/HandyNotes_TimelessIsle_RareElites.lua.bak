@@ -23,7 +23,7 @@ TimelessIsle_RareElitesDB = {
 		["Brotus - Argent Dawn"] = "Default",
 		["Shimzo - Zul'jin"] = "Default",
 		["Guufnah - Zul'jin"] = "Default",
-		["Tinkster - Dalaran"] = "Default",
+		["Okona - Zul'jin"] = "Default",
 		["Varlouris - Dalaran"] = "Default",
 		["Kotalkhan - Zul'jin"] = "Default",
 		["Fantastiburo - Zul'jin"] = "Default",
@@ -38,7 +38,7 @@ TimelessIsle_RareElitesDB = {
 		["Abyronterner - Zul'jin"] = "Default",
 		["Jingojaggot - Zul'jin"] = "Default",
 		["Jasmoney - Zul'jin"] = "Default",
-		["Okona - Zul'jin"] = "Default",
+		["Tinkster - Dalaran"] = "Default",
 		["Mandles - Zul'jin"] = "Default",
 	},
 	["profiles"] = {

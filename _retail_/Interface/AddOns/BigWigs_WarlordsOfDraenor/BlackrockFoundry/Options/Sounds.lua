@@ -110,6 +110,7 @@ BigWigs:AddSounds("Blackhand", {
 	[156030] = "long",
 	[156096] = "alarm",
 	[156401] = "info",
+	[156425] = "alert",
 	[156653] = "alert",
 	[156667] = "info",
 	[157000] = "alert",

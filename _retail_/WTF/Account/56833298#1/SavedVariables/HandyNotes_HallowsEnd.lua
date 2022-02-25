@@ -19,7 +19,7 @@ HandyNotes_HallowsEndDB = {
 		["Kelvalatar - Dalaran"] = "Default",
 		["Brotus - Argent Dawn"] = "Default",
 		["Banesmuncy - Zul'jin"] = "Default",
-		["Jingojaggot - Zul'jin"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
 		["Okona - Zul'jin"] = "Default",
 		["Guufnah - Zul'jin"] = "Default",
 		["Tinkster - Dalaran"] = "Default",
@@ -36,7 +36,7 @@ HandyNotes_HallowsEndDB = {
 		["Abyronterner - Zul'jin"] = "Default",
 		["Fantastiburo - Zul'jin"] = "Default",
 		["Jasmoney - Zul'jin"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
+		["Jingojaggot - Zul'jin"] = "Default",
 		["Mandles - Zul'jin"] = "Default",
 	},
 	["profiles"] = {

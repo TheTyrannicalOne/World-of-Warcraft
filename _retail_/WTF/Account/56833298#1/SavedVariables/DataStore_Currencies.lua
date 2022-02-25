@@ -89,11 +89,11 @@ DataStore_CurrenciesDB = {
 				["Lingering Soul Fragment"] = 28,
 				["Timeless Coin"] = 45,
 				["Mogu Rune of Fate"] = 44,
-				["Corrupted Mementos"] = 18,
+				["Ironpaw Token"] = 12,
 				["Elder Charm of Good Fortune"] = 42,
 				["Seal of Tempered Fate"] = 41,
-				["Conquest"] = 13,
 				["Seal of Broken Fate"] = 31,
+				["Conquest"] = 13,
 				["Infused Ruby"] = 3,
 				["Lesser Charm of Good Fortune"] = 43,
 				["Curious Coin"] = 26,
@@ -101,12 +101,12 @@ DataStore_CurrenciesDB = {
 				["Artifact Fragment"] = 37,
 				["Echoes of Ny'alotha"] = 19,
 				["Oil"] = 39,
-				["Soul Ash"] = 5,
-				["Redeemed Soul"] = 52,
+				["Timewarped Badge"] = 9,
 				["7th Legion Service Medal"] = 53,
+				["Redeemed Soul"] = 52,
 				["Seafarer's Dubloon"] = 22,
 				["Tower Knowledge"] = 7,
-				["Timewarped Badge"] = 9,
+				["Soul Ash"] = 5,
 				["Honor"] = 14,
 				["Epicurean's Award"] = 11,
 				["Timeworn Artifact"] = 33,
@@ -115,7 +115,7 @@ DataStore_CurrenciesDB = {
 				["Stygia"] = 6,
 				["Apexis Crystal"] = 36,
 				["Darkmoon Prize Ticket"] = 10,
-				["Ironpaw Token"] = 12,
+				["Corrupted Mementos"] = 18,
 				["Warforged Seal"] = 46,
 				["Mark of the World Tree"] = 48,
 				["Champion's Seal"] = 50,
@@ -418,21 +418,21 @@ DataStore_CurrenciesDB = {
 				["lastUpdate"] = 1645398516,
 				["CurrencyInfo"] = {
 					[1560] = "3-0-0-0",
-					[1166] = "1145-0-0-0",
 					[1754] = "19-0-0-0",
+					[1166] = "1145-0-0-0",
 					[1155] = "250-0-0-300",
 				},
 			},
 			["Default.Argent Dawn.Shanyt"] = {
 				["Currencies"] = {
 					655489, -- [1]
-					7864577, -- [2]
+					8126721, -- [2]
 					385, -- [3]
-					254018049, -- [4]
+					259392001, -- [4]
 					255591041, -- [5]
 					36700929, -- [6]
 					2491265, -- [7]
-					70124545, -- [8]
+					74712065, -- [8]
 					1007944834, -- [9]
 					22938883, -- [10]
 					1312131, -- [11]
@@ -499,9 +499,9 @@ DataStore_CurrenciesDB = {
 					32, -- [19]
 					1, -- [20]
 				},
-				["lastUpdate"] = 1645413305,
+				["lastUpdate"] = 1645777424,
 				["CurrencyInfo"] = {
-					[1191] = "535-0-0-0",
+					[1191] = "570-0-0-0",
 					[515] = "175-0-0-0",
 					[1904] = "19-0-0-3510",
 					[1719] = "6224-0-0-0",
@@ -509,7 +509,7 @@ DataStore_CurrenciesDB = {
 					[1101] = "98385-0-0-100000",
 					[1810] = "41-0-0-100",
 					[1314] = "0-0-20-40",
-					[1885] = "60-0-0-0",
+					[1885] = "62-0-0-0",
 					[1767] = "280-0-0-0",
 					[738] = "8640-0-0-0",
 					[1716] = "230-0-0-0",
@@ -526,19 +526,19 @@ DataStore_CurrenciesDB = {
 					[1299] = "3428-0-0-5000",
 					[1268] = "938-0-0-1000",
 					[1755] = "386167-0-0-0",
-					[391] = "127-0-0-0",
 					[1721] = "2795-0-0-0",
+					[391] = "127-0-0-0",
 					[776] = "7-0-0-20",
 					[1792] = "1952-0-0-15000",
 					[1166] = "7690-0-0-0",
 					[1129] = "0-0-0-20",
 					[1149] = "1787-0-0-5000",
-					[1828] = "1950-0-0-0",
+					[402] = "29-0-0-0",
 					[1560] = "71075-0-0-0",
 					[1155] = "912-0-0-2000",
 					[1820] = "0-0-0-100",
 					[1718] = "0-0-0-0",
-					[402] = "29-0-0-0",
+					[1828] = "1950-0-0-0",
 					[1275] = "194-0-0-0",
 					[1710] = "99-0-0-0",
 					[1273] = "0-0-0-6",
@@ -550,7 +550,7 @@ DataStore_CurrenciesDB = {
 					[697] = "0-0-0-20",
 					[752] = "0-0-0-20",
 					[944] = "4-0-0-1000",
-					[1813] = "1938-0-0-200000",
+					[1813] = "1979-0-0-200000",
 					[241] = "138-0-0-0",
 					[1704] = "175-0-0-200",
 				},

@@ -628,7 +628,24 @@ if UnitClassBase( "player" ) == "PRIEST" then
     end ) ]]
 
 
+    -- Tier 28
     spec:RegisterGear( "tier28", 188881, 188880, 188879, 188878, 188875 )
+    spec:RegisterSetBonuses( "tier28_2pc", 364424, "tier28_4pc", 363469 )
+    -- 2-Set - Darkened Mind - Casting Devouring Plague has a 40% chance to grant Dark Thought. Casting Searing Nightmare has a 25% chance to grant Dark Thought.
+    -- 4-Set - Living Shadow - Consuming a Dark Thought causes your shadow to animate after a moment, dealing [(34%20.9% of Spell power) * 6] Shadow damage over 6 sec to all enemies within 10 yards of your target.
+    spec:RegisterAura( "living_shadow", {
+        id = 363574,
+        duration = 8,
+        max_stack = 1,
+        copy = "your_shadow",
+        meta = {
+            summonTime = function( t ) return t.applied end,
+        }
+    } )
+
+    rawset( state.pet, "your_shadow", state.buff.living_shadow )
+
+
     spec:RegisterGear( "tier21", 152154, 152155, 152156, 152157, 152158, 152159 )
     spec:RegisterGear( "tier20", 147163, 147164, 147165, 147166, 147167, 147168 )
         spec:RegisterAura( "empty_mind", {
@@ -892,6 +909,9 @@ if UnitClassBase( "player" ) == "PRIEST" then
             texture = 136224,
 
             handler = function ()
+                if buff.dark_thought.up and set_bonus.tier28_4pc > 0 then
+                    applyBuff( "living_shadow" )
+                end
                 removeBuff( "dark_thought" )
                 removeBuff( "harvested_thoughts" )
                 removeBuff( "empty_mind" )
