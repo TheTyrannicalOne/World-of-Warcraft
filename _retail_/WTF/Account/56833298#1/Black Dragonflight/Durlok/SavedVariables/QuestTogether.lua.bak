@@ -41,9 +41,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[51432] = {
-			["title"] = "An Unusual Mentor",
+		[48642] = {
+			["title"] = "Argussian Reach",
 			["objectives"] = {
+				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
 			},
 		},
 		[51464] = {
@@ -80,22 +81,22 @@ QuestTogether = {
 				"0/1 Speak with Dread-Admiral Tattersail to Travel to Darkshore", -- [1]
 			},
 		},
-		[56120] = {
-			["title"] = "The Unshackled",
-			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
-			},
-		},
 		[40329] = {
 			["title"] = "Battle Pet Tamers: Warlords",
 			["objectives"] = {
 				"0/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
-		[42234] = {
-			["title"] = "The Valarjar",
+		[50604] = {
+			["title"] = "Tortollan Seekers",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Stormheim", -- [1]
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+			},
+		},
+		[42420] = {
+			["title"] = "Court of Farondis",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Azsuna", -- [1]
 			},
 		},
 		[61874] = {
@@ -111,10 +112,10 @@ QuestTogether = {
 				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
 			},
 		},
-		[42420] = {
-			["title"] = "Court of Farondis",
+		[42422] = {
+			["title"] = "The Wardens",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Azsuna", -- [1]
+				"0/4 Complete 4 Wardens World Quests", -- [1]
 			},
 		},
 		[47105] = {
@@ -123,17 +124,16 @@ QuestTogether = {
 				"0/1 Scout ahead", -- [1]
 			},
 		},
-		[42422] = {
-			["title"] = "The Wardens",
+		[51432] = {
+			["title"] = "An Unusual Mentor",
 			["objectives"] = {
-				"0/4 Complete 4 Wardens World Quests", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

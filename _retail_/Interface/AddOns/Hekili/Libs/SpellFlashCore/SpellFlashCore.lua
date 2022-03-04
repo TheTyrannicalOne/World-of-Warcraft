@@ -153,23 +153,37 @@ local function RegisterButtons()
 					SpellFlashCore.debug(i, Type, ID, "=", GetActionText(i))
 				end
 			elseif Type == "item" then
-				local Name = SpellFlashCore.ItemName(ID)
-				if type(Name) == "string" and Name ~= "" then
-					if not Buttons.Item[Name] then
-						Buttons.Item[Name] = a:CreateTable()
+				local item = Item:CreateFromItemID(ID)
+				item:ContinueOnItemLoad(function()
+					local Name = SpellFlashCore.ItemName(ID)
+					if type(Name) == "string" and Name ~= "" then
+						if not Buttons.Item[Name] then
+							Buttons.Item[Name] = a:CreateTable()
+						end
+						Buttons.Item[Name][i] = 1
+						SpellFlashCore.debug(i, Type, ID, "=", Name)
 					end
-					Buttons.Item[Name][i] = 1
-					SpellFlashCore.debug(i, Type, ID, "=", Name)
+				end)
+			elseif Type == "spell" then
+				local spell = Spell:CreateFromSpellID(ID)
+				if not spell:IsSpellEmpty() then
+					spell:ContinueOnSpellLoad(function()
+						local Name = SpellFlashCore.SpellName(ID) or ID
+						if Name then
+							if not Buttons.Spell[Name] then
+								Buttons.Spell[Name] = a:CreateTable()
+							end
+							Buttons.Spell[Name][i] = 1
+							SpellFlashCore.debug(i, Type, ID, "=", Name)
+						end
+					end)
 				end
-			elseif Type == "spell" or Type == "flyout" then
-				local Name = SpellFlashCore.SpellName(ID) or ID
-				if Name then
-					if not Buttons.Spell[Name] then
-						Buttons.Spell[Name] = a:CreateTable()
-					end
-					Buttons.Spell[Name][i] = 1
-					SpellFlashCore.debug(i, Type, ID, "=", Name)
+			elseif Type == "flyout" then
+				if not Buttons.Spell[ID] then
+					Buttons.Spell[ID] = a:CreateTable()
 				end
+				Buttons.Spell[ID][i] = 1
+				SpellFlashCore.debug(i, Type, ID, "=", ID)
 			end
 		end
 	end

@@ -21,6 +21,8 @@ local tcopy = ns.tableCopy
 
 -- Clean up table_x later.
 local insert, remove, sort, unpack, wipe = table.insert, table.remove, table.sort, table.unpack, table.wipe
+local format = string.format
+
 local RC = LibStub( "LibRangeCheck-2.0" )
 local LSR = LibStub( "SpellRange-1.0" )
 
@@ -509,7 +511,13 @@ setmetatable( state.trinket.has_stacking_stat, mt_trinkets_has_stacking_stat )
 
 state.max = safeMax
 state.min = safeMin
-state.print = print
+state.abs = safeAbs
+
+if Hekili.Version:match( "^Dev" ) then
+    state.print = print
+else
+    state.print = function() end
+end
 
 state.Enum = Enum
 state.FindUnitBuffByID = ns.FindUnitBuffByID
@@ -729,7 +737,6 @@ end
 do
     local cycle = {}
     local debug = function( ... ) if Hekili.ActiveDebug then Hekili:Debug( ... ) end end
-    local format = string.format
 
     function state.SetupCycle( ability, quiet )
         wipe( cycle )
@@ -1245,6 +1252,7 @@ end
 local FORECAST_DURATION = 10.01
 
 local function forecastResources( resource )
+
     if not resource then return end
 
     wipe( events )
@@ -1253,9 +1261,12 @@ local function forecastResources( resource )
     local now = state.now + state.offset -- roundDown( state.now + state.offset, 2 )
 
     local timeout = FORECAST_DURATION * state.haste -- roundDown( FORECAST_DURATION * state.haste, 2 )
+
     if state.class.file == "DEATHKNIGHT" and state.runes then
         timeout = max( timeout, 0.01 + 2 * state.runes.cooldown )
     end
+
+    timeout = timeout + state.gcd.remains
 
     local r = state[ resource ]
 
@@ -1321,7 +1332,11 @@ local function forecastResources( resource )
 
             local bonus = r.regen * ( now - prev )
 
-            if ( e.stop and e.stop( r.forecast[ r.fcount ].v ) ) or ( e.aura and state[ e.debuff and "debuff" or "buff" ][ e.aura ].expires < now ) or ( e.channel and state.buff.casting.expires < now ) then
+            local stop = e.stop and e.stop( r.forecast[ r.fcount ].v )
+            local aura = e.aura and state[ e.debuff and "debuff" or "buff" ][ e.aura ].expires < now
+            local channel = ( e.channel and state.buff.casting.expires < now )
+
+            if stop or aura or channel then
                 table.remove( events, 1 )
 
                 local v = max( 0, min( r.max, r.forecast[ r.fcount ].v + bonus ) )
@@ -1337,7 +1352,7 @@ local function forecastResources( resource )
                 r.forecast[ idx ] = r.forecast[ idx ] or {}
                 r.forecast[ idx ].t = now
                 r.forecast[ idx ].v = v
-                r.forecast[ idx ].e = e.name or "none"
+                r.forecast[ idx ].e = ( e.name or "none" ) .. ( stop and "-stop" or aura and "-aura" or channel and "-channel" or "-unknown" )
                 r.fcount = idx
             else
                 prev = now
@@ -1396,6 +1411,15 @@ state.forecastResources = forecastResources
 Hekili:ProfileCPU( "forecastResources", forecastResources )
 
 
+function state:ForecastSwingbasedResources()
+    for k, v in pairs( class.resources ) do
+        if v and v.state and v.state.swingGen then
+            forecastResources( k )
+        end
+    end
+end
+
+
 local resourceChange = function( amount, resource, overcap )
     if amount == 0 then return false end
 
@@ -1417,10 +1441,10 @@ end
 -- pregain - the hook is expected to return modified values for the resource (i.e., special cost reduction or refunds).
 -- gain    - the hook can do whatever it wants, but if it changes the same resource again it will cause another forecast.
 
-local gain = function( amount, resource, overcap )
+local gain = function( amount, resource, overcap, noforecast )
     amount, resource, overcap = ns.callHook( "pregain", amount, resource, overcap )
     resourceChange( amount, resource, overcap )
-    if resource ~= "health" then forecastResources( resource ) end
+    if not noforecast and resource ~= "health" then forecastResources( resource ) end
     ns.callHook( "gain", amount, resource, overcap )
 end
 
@@ -1430,10 +1454,10 @@ local rawGain = function( amount, resource, overcap )
 end
 
 
-local spend = function( amount, resource, clean )
+local spend = function( amount, resource, noforecast )
     amount, resource = ns.callHook( "prespend", amount, resource )
     resourceChange( -amount, resource, overcap )
-    if resource ~= "health" then forecastResources( resource ) end
+    if not noforecast and resource ~= "health" then forecastResources( resource ) end
     ns.callHook( "spend", amount, resource, overcap, true )
 end
 
@@ -2107,8 +2131,7 @@ local mt_state = {
 
             elseif k == "time_to_refresh" then
                 -- if t.isCyclingTargets( action, aura_name ) then return 0 end
-                if app then return max( 0, 0.01 + app.remains - ( 0.3 * app.duration ) ) end
-                return 0
+                return app and app.up and max( 0, 0.01 + app.remains - ( 0.3 * ( aura.duration or 30 ) ) ) or 0
 
             elseif k == "ticking" or k == "up" then
                 if app then return app.up end
@@ -2308,7 +2331,7 @@ local mt_stat = {
         end
 
         -- Hekili:Error( "Unknown state.stat key: '" .. k .. "'." )
-        return
+
     end
 }
 ns.metatables.mt_stat = mt_stat
@@ -2508,7 +2531,7 @@ local mt_target = {
 
         elseif k == "unit" then
             if state.args.cycle_target == 1 then return UnitGUID( "target" ) .. "c" or "cycle"
-            elseif state.args.target then return UnitGUID( "target" ) .. '+' .. state.args.target or "unknown" end
+            elseif state.args.target then return ( UnitGUID( "target" ) .. '+' .. state.args.target ) or "unknown" end
             return UnitGUID( "target" ) or "unknown"
 
         elseif k == "class" then
@@ -2956,6 +2979,9 @@ local mt_gcd = {
 
         elseif k == "remains" then
             return state.cooldown.global_cooldown.remains
+        
+        elseif k == "expires" then
+            return state.cooldown.global_cooldown.expires
 
         elseif k == "max" or k == "duration" then
             if UnitPowerType( "player" ) == Enum.PowerType.Energy then
@@ -4190,6 +4216,7 @@ local default_debuff_values = {
     unit = "target"
 }
 
+
 local cycle_debuff = {
     name = "cycle",
     count = 0,
@@ -4294,8 +4321,7 @@ local mt_default_debuff = {
             return t.remains < 0.3 * ( aura and aura.duration or t.duration or 30 )
 
         elseif k == "time_to_refresh" then
-            -- if state.isCyclingTargets( nil, t.key ) then return 0 end
-            return t.up and ( max( 0, 0.01 + state.query_time - ( 0.3 * ( aura and aura.duration or t.duration or 30 ) ) ) ) or 0
+            return t.up and max( 0, 0.01 + t.remains - ( 0.3 * ( aura.duration or 30 ) ) ) or 0
 
         elseif k == "stack" then
             -- if state.isCyclingTargets( nil, t.key ) then return 0 end
@@ -5576,16 +5602,10 @@ function state:RunHandler( key, noStart )
     self.prev_gcd.override = nil
     self.prev_off_gcd.override = nil
 
-    if self.time == 0 and ability.startsCombat and not ability.isProjectile and not noStart then
-        self.false_start = self.query_time - 0.01
-
-        ns.callHook( "runHandler_startCombat", key )
-
+    if self.combat == 0 and ability.startsCombat and not ability.isProjectile and not noStart then
         -- Assume MH swing at combat start and OH swing half a swing later?
-        if self.target.distance < 8 then
-            if self.swings.mainhand_speed > 0 and self.nextMH == 0 then self.swings.mh_pseudo = 0.01 + self.query_time - self.swings.mainhand_speed end
-            if self.swings.offhand_speed > 0 and self.nextOH == 0 then self.swings.oh_pseudo = 0.01 + self.query_time - ( self.swings.offhand_speed / 2 ) end
-        end
+        self:StartCombat()
+        ns.callHook( "runHandler_startCombat", key )
     end
 
     -- state.cast_start = 0
@@ -5771,7 +5791,7 @@ function state.reset( dispName )
     end
 
     for k, v in pairs( state.pet ) do
-        if type(v) == "table" and k ~= "fake_pet" and v.summonTime and v.summonTime > 0 and v.duration then
+        if type(v) == "table" and k ~= "fake_pet" and rawget( v, "summonTime" ) and v.summonTime > 0 and v.duration then
             local remains = ( v.summonTime + v.duration ) - state.now
             if remains > 0 then
                 summonPet( k, remains )
@@ -6036,11 +6056,23 @@ end
 
 
 function state:StartCombat()
-    self.false_start = self.query_time - 0.01
-    -- The only hook that should be called here doesn't presently work as expected, so we'll save a CPU cycle.
-    -- ns.callHook( "start_combat" )
-    if self.swings.mainhand_speed > 0 and self.nextMH == 0 then self.swings.mh_pseudo = self.false_start end
-    if self.swings.offhand_speed > 0 and self.nextOH == 0 then self.swings.oh_pseudo = self.false_start + ( self.swings.offhand_speed / 2 ) end
+    if self.combat == 0 then
+        self.false_start = self.query_time - 0.01
+    end
+
+    local swing = false
+
+    if self.swings.mainhand == 0 and self.swings.mainhand_speed > 0 then
+        self.swings.mh_pseudo = self.query_time
+        swing = true
+    end
+
+    if self.swings.offhand == 0 and self.swings.offhand_speed > 0 then
+        self.swings.oh_pseudo = self.query_time + ( self.swings.offhand_speed / 2 )
+        swing = true
+    end
+
+    if swing then self:ForecastSwingbasedResources() end
 end
 
 
@@ -6066,7 +6098,6 @@ function state.advance( time )
 
         if lands > state.query_time and lands <= state.query_time + time then
             state.offset = lands - state.query_time
-            if Hekili.ActiveDebug then Hekili:Debug( "Using queued ability '" .. state.player.queued_ability .. "' at " .. state.query_time .. "." ) end
             state:RunHandler( state.player.queued_ability, true )
 
             state.offset = realOffset

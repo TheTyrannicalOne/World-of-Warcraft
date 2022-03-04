@@ -99,15 +99,26 @@ QuestTogether = {
 				"0/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
+		[51432] = {
+			["title"] = "An Unusual Mentor",
+			["objectives"] = {
+			},
+		},
+		[44555] = {
+			["title"] = "Khadgar's Discovery",
+			["objectives"] = {
+			},
+		},
 		[24536] = {
 			["title"] = "Something Stinks",
 			["objectives"] = {
 				"0/6 Perfumed Guards Analyzed", -- [1]
 			},
 		},
-		[44555] = {
-			["title"] = "Khadgar's Discovery",
+		[31486] = {
+			["title"] = "Everything I Know About Cooking",
 			["objectives"] = {
+				"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
 			},
 		},
 		[52444] = {
@@ -116,15 +127,10 @@ QuestTogether = {
 				"0/1 Review final foothold", -- [1]
 			},
 		},
-		[56120] = {
-			["title"] = "The Unshackled",
+		[50604] = {
+			["title"] = "Tortollan Seekers",
 			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
-			},
-		},
-		[51432] = {
-			["title"] = "An Unusual Mentor",
-			["objectives"] = {
+				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
 			},
 		},
 		[40019] = {
@@ -132,12 +138,6 @@ QuestTogether = {
 			["objectives"] = {
 				"9/15 Healthy Dreamleaf", -- [1]
 				"5/5 Blight-Infested Dreamleaf", -- [2]
-			},
-		},
-		[49901] = {
-			["title"] = "Atal'Dazar: Yazma the Fallen Priestess",
-			["objectives"] = {
-				"0/1 Yazma slain", -- [1]
 			},
 		},
 		[50606] = {
@@ -153,10 +153,10 @@ QuestTogether = {
 				"0/1 Take the Death Gate to Acherus", -- [2]
 			},
 		},
-		[31486] = {
-			["title"] = "Everything I Know About Cooking",
+		[49901] = {
+			["title"] = "Atal'Dazar: Yazma the Fallen Priestess",
 			["objectives"] = {
-				"Deliver the Letter to Sungshin Ironpaw. She teaches in Halfhill Market.", -- [1]
+				"0/1 Yazma slain", -- [1]
 			},
 		},
 		[42719] = {
@@ -169,8 +169,8 @@ QuestTogether = {
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["showDebugInfo"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
+		["showDebugInfo"] = false,
 	},
 }

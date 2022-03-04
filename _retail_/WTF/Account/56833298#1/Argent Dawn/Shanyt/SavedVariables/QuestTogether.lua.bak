@@ -1,16 +1,16 @@
 
 QuestTogether = {
 	["questTracker"] = {
-		[42421] = {
-			["title"] = "The Nightfallen",
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Suramar", -- [1]
+				"0/4 Echo of Time", -- [1]
 			},
 		},
-		[42234] = {
-			["title"] = "The Valarjar",
+		[43179] = {
+			["title"] = "The Kirin Tor of Dalaran",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Stormheim", -- [1]
+				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
 			},
 		},
 		[56352] = {
@@ -27,10 +27,15 @@ QuestTogether = {
 				"1/1 Runecarver Memory Restored", -- [3]
 			},
 		},
-		[47727] = {
-			["title"] = "Tomb of Sargeras: Aegwynn's Path",
+		[50562] = {
+			["title"] = "Champions of Azeroth",
 			["objectives"] = {
-				"3/4 Fragment of the Guardian's Seal", -- [1]
+				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+			},
+		},
+		[63731] = {
+			["title"] = "Researching Korthian Relics",
+			["objectives"] = {
 			},
 		},
 		[59701] = {
@@ -39,21 +44,19 @@ QuestTogether = {
 				"1/4 Renathal Banner placed", -- [1]
 			},
 		},
-		[57565] = {
-			["title"] = "Aqir Assault Tracker",
+		[56120] = {
+			["title"] = "The Unshackled",
 			["objectives"] = {
-				"0/1 [DNT] Dummy Credit slain", -- [1]
+				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
-		[57567] = {
-			["title"] = "N'Zoth Assault Tracker (Vale)",
+		[58327] = {
+			["title"] = "Snacks for Stonehead",
 			["objectives"] = {
-			},
-		},
-		[60280] = {
-			["title"] = "WANTED: Lord Darion",
-			["objectives"] = {
-				"0/1 Lord Darion slain", -- [1]
+				"50/50 Gooey Bug Bites", -- [1]
+				"20/20 Ash Crisps", -- [2]
+				"0/6 Mirror Candy", -- [3]
+				"1/1 A Light Snack", -- [4]
 			},
 		},
 		[49133] = {
@@ -73,10 +76,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[48639] = {
-			["title"] = "Army of the Light",
+		[57205] = {
+			["title"] = "A Few Bumps Along the Way",
 			["objectives"] = {
-				"0/4 Complete 4 Army of the Light World Quests", -- [1]
+				"0/2 Artillery defended", -- [1]
 			},
 		},
 		[47129] = {
@@ -92,10 +95,10 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[63576] = {
-			["title"] = "The First Move",
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
 			["objectives"] = {
-				"0/1 Speak with Polemarch Adrestes in Oribos", -- [1]
+				"2/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
 		[53435] = {
@@ -110,16 +113,10 @@ QuestTogether = {
 				"0/4 Complete 4 world quests in Nazmir.", -- [1]
 			},
 		},
-		[64527] = {
-			["title"] = "Observing the Chase",
+		[42420] = {
+			["title"] = "Court of Farondis",
 			["objectives"] = {
-				"0/1 Alliance Players slain", -- [1]
-			},
-		},
-		[45381] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
-			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
+				"0/4 Complete 4 world quests in Azsuna", -- [1]
 			},
 		},
 		[45383] = {
@@ -128,10 +125,10 @@ QuestTogether = {
 				"2/4 Echo of Time", -- [1]
 			},
 		},
-		[44948] = {
-			["title"] = "Raising Your Snowfeather",
+		[65625] = {
+			["title"] = "The Jailer's Gauntlet",
 			["objectives"] = {
-				"Level 25 Snowfeather Hatchling", -- [1]
+				"0/1 Enter the new portal in the Torghast Lobby.", -- [1]
 			},
 		},
 		[63982] = {
@@ -140,16 +137,19 @@ QuestTogether = {
 				"Portal to Transfer Station Ta taken", -- [1]
 			},
 		},
-		[60432] = {
-			["title"] = "Troubles at Home",
+		[64555] = {
+			["title"] = "Surveying Secrets",
 			["objectives"] = {
-				"0% Revendreth Defended (0%)", -- [1]
+				"1/1 Keeper's Respite Defense Report", -- [1]
+				"1/1 Fauna of Korthia Report", -- [2]
+				"1/1 Anima Survey Notes", -- [3]
+				"1/1 Maldraxxi scout spoken with", -- [4]
+				"0/1 Mawsworn Movement Report", -- [5]
 			},
 		},
-		[60406] = {
-			["title"] = "Training in Bastion",
+		[57564] = {
+			["title"] = "Mantid Assault Tracker",
 			["objectives"] = {
-				"0/3 Complete 3 World Quests in Bastion with your trainee", -- [1]
 			},
 		},
 		[48305] = {
@@ -175,33 +175,22 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[40329] = {
-			["title"] = "Battle Pet Tamers: Warlords",
+		[44948] = {
+			["title"] = "Raising Your Snowfeather",
 			["objectives"] = {
-				"2/5 Pet Battlemasters Defeated", -- [1]
+				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
-		[50604] = {
-			["title"] = "Tortollan Seekers",
+		[45381] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/3 Complete 3 Tortollan Seeker World Quests", -- [1]
+				"1/4 Echo of Time", -- [1]
 			},
 		},
-		[54455] = {
-			["title"] = "Supplies from the Honorbound",
+		[60394] = {
+			["title"] = "Aiding Bastion",
 			["objectives"] = {
-			},
-		},
-		[60441] = {
-			["title"] = "Challenges in Ardenweald",
-			["objectives"] = {
-				"0/1 Defeat the powerful foes of Ardenweald", -- [1]
-			},
-		},
-		[57919] = {
-			["title"] = "An Abuse of Power",
-			["objectives"] = {
-				"0/1 Abused Soul subjugated", -- [1]
+				"0/3 Complete 3 World Quests in Bastion", -- [1]
 			},
 		},
 		[59661] = {
@@ -210,9 +199,10 @@ QuestTogether = {
 				"0/1 Speak with Temel to start the rehearsal", -- [1]
 			},
 		},
-		[64325] = {
-			["title"] = "Sinfall Veteran",
+		[47727] = {
+			["title"] = "Tomb of Sargeras: Aegwynn's Path",
 			["objectives"] = {
+				"3/4 Fragment of the Guardian's Seal", -- [1]
 			},
 		},
 		[61492] = {
@@ -230,7 +220,7 @@ QuestTogether = {
 		[61981] = {
 			["title"] = "Replenish the Reservoir",
 			["objectives"] = {
-				"140/1000 Anima sources", -- [1]
+				"220/1000 Anima sources", -- [1]
 			},
 		},
 		[57403] = {
@@ -239,16 +229,15 @@ QuestTogether = {
 				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
 			},
 		},
-		[50598] = {
-			["title"] = "Zandalari Empire",
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
 			},
 		},
-		[45382] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[48641] = {
+			["title"] = "Armies of Legionfall",
 			["objectives"] = {
-				"0/4 Echo of Time", -- [1]
+				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
 			},
 		},
 		[30567] = {
@@ -263,20 +252,17 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[58327] = {
-			["title"] = "Snacks for Stonehead",
+		[60280] = {
+			["title"] = "WANTED: Lord Darion",
 			["objectives"] = {
-				"50/50 Gooey Bug Bites", -- [1]
-				"20/20 Ash Crisps", -- [2]
-				"0/6 Mirror Candy", -- [3]
-				"1/1 A Light Snack", -- [4]
+				"0/1 Lord Darion slain", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["messages"] = false,
 		["events"] = false,
+		["messages"] = false,
 		["showDebugInfo"] = false,
 	},
 }

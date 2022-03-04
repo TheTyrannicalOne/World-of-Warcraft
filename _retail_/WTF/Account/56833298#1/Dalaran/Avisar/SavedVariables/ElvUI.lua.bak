@@ -1,402 +1,8 @@
 
 ElvCharacterDB = {
+	["CliqueDatatext"] = {
+	},
 	["ChatHistoryLog"] = {
-		{
-			"im shocked tbh that randos havent been inviting me to guilds", -- [1]
-			"Masakist-Ysera", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Masakist-Ysera", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			57, -- [11]
-			"Player-63-0EA729D1", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Masakist-Ysera|r",
-			[51] = 1644561852,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
-		{
-			"ok", -- [1]
-			"Dèadèyès-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Dèadèyès-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			65, -- [11]
-			"Player-3683-08E42468", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Dèadèyès|r",
-			[51] = 1644561866,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
-		{
-			"and people arent offering gold to sign charters and stuff", -- [1]
-			"Masakist-Ysera", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Masakist-Ysera", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			69, -- [11]
-			"Player-63-0EA729D1", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Masakist-Ysera|r",
-			[51] = 1644561873,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
-		{
-			"Sure", -- [1]
-			"Dèadèyès-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Dèadèyès-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			80, -- [11]
-			"Player-3683-08E42468", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Dèadèyès|r",
-			[51] = 1644561906,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
-		{
-			"Anyone lead a dungeon and it went horribly arwy?", -- [1]
-			"Bonju-Staghelm", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Bonju-Staghelm", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			81, -- [11]
-			"Player-160-0B71BB56", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cBonju-Staghelm|r",
-			[51] = 1644561916,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
-		{
-			"people just dont do guilds anymore i guess", -- [1]
-			"Masakist-Ysera", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Masakist-Ysera", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			82, -- [11]
-			"Player-63-0EA729D1", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Masakist-Ysera|r",
-			[51] = 1644561917,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
-		{
-			"If i could find some people I'd invite them to my guild", -- [1]
-			"Bonju-Staghelm", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Bonju-Staghelm", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			89, -- [11]
-			"Player-160-0B71BB56", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cBonju-Staghelm|r",
-			[51] = 1644561938,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
-		{
-			"Can I please vent about my bad dungeon experience?", -- [1]
-			"Bonju-Staghelm", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Bonju-Staghelm", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			90, -- [11]
-			"Player-160-0B71BB56", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cBonju-Staghelm|r",
-			[51] = 1644561977,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
-		{
-			"1 mill to join my guild indeed", -- [1]
-			"Dèadèyès-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Dèadèyès-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			92, -- [11]
-			"Player-3683-08E42468", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Dèadèyès|r",
-			[51] = 1644561984,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
-		{
-			"plz do", -- [1]
-			"Bluebre-AeriePeak", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Bluebre-AeriePeak", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			93, -- [11]
-			"Player-1426-0DA8CD44", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Bluebre-AeriePeak|r",
-			[51] = 1644561986,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
-		{
-			"do it in global chats like everyone", -- [1]
-			"Masakist-Ysera", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Masakist-Ysera", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			94, -- [11]
-			"Player-63-0EA729D1", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Masakist-Ysera|r",
-			[51] = 1644562000,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
-		{
-			"ok sorry", -- [1]
-			"Dèadèyès-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Dèadèyès-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			95, -- [11]
-			"Player-3683-08E42468", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Dèadèyès|r",
-			[51] = 1644562013,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
-		{
-			"So I went to that temple dungeon I have a lil tenancy to get lost in WoW like even in places I know like SW", -- [1]
-			"Bonju-Staghelm", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Bonju-Staghelm", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			97, -- [11]
-			"Player-160-0B71BB56", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cBonju-Staghelm|r",
-			[51] = 1644562033,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
-		{
-			"ok", -- [1]
-			"Dèadèyès-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Dèadèyès-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			99, -- [11]
-			"Player-3683-08E42468", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Dèadèyès|r",
-			[51] = 1644562077,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
-		{
-			"I just started being leader one group actually liked me and praised me. This group though were extremely unorganized and I told them no one gets left behind I got left behind and the hunter mind you a hunter started talking crap about me dying constantly ", -- [1]
-			"Bonju-Staghelm", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Bonju-Staghelm", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			100, -- [11]
-			"Player-160-0B71BB56", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cBonju-Staghelm|r",
-			[51] = 1644562085,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
-		{
-			"when the healer didn't do anything and it only happened cause they kept leaving me behind", -- [1]
-			"Bonju-Staghelm", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Bonju-Staghelm", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			101, -- [11]
-			"Player-160-0B71BB56", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cBonju-Staghelm|r",
-			[51] = 1644562097,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
-		{
-			"Hate that", -- [1]
-			"Dèadèyès-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Dèadèyès-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			103, -- [11]
-			"Player-3683-08E42468", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Dèadèyès|r",
-			[51] = 1644562122,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
-		{
-			"I know it was disappointed and then I think they all left cause all of a sudden I was transported back here", -- [1]
-			"Bonju-Staghelm", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Bonju-Staghelm", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			104, -- [11]
-			"Player-160-0B71BB56", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cBonju-Staghelm|r",
-			[51] = 1644562147,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
 		{
 			"Indeed", -- [1]
 			"Dèadèyès-Dalaran", -- [2]
@@ -418,7 +24,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Dèadèyès|r",
 			[51] = 1644562168,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
+		}, -- [1]
 		{
 			"Like if I found a good group for a guild I'd do it", -- [1]
 			"Bonju-Staghelm", -- [2]
@@ -440,7 +46,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cBonju-Staghelm|r",
 			[51] = 1644562228,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
+		}, -- [2]
 		{
 			"tes7acle tickler", -- [1]
 			"Wheelsnlegmn-Dalaran", -- [2]
@@ -462,7 +68,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Wheelsnlegmn|r",
 			[51] = 1644562243,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
+		}, -- [3]
 		{
 			"Yes", -- [1]
 			"Dèadèyès-Dalaran", -- [2]
@@ -484,7 +90,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Dèadèyès|r",
 			[51] = 1644562249,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
+		}, -- [4]
 		{
 			"santers after yeh huuhh?", -- [1]
 			"Wheelsnlegmn-Dalaran", -- [2]
@@ -506,7 +112,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Wheelsnlegmn|r",
 			[51] = 1644562272,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
+		}, -- [5]
 		{
 			"ok", -- [1]
 			"Dèadèyès-Dalaran", -- [2]
@@ -528,7 +134,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Dèadèyès|r",
 			[51] = 1644562294,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
+		}, -- [6]
 		{
 			"is anyone from the guild \"Draumaless\" online?", -- [1]
 			"Masakist-Ysera", -- [2]
@@ -550,7 +156,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Masakist-Ysera|r",
 			[51] = 1644562310,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
+		}, -- [7]
 		{
 			"like right now I'm lost for the millionth time trying to find the transmogger even though I know exactly where it is", -- [1]
 			"Bonju-Staghelm", -- [2]
@@ -572,7 +178,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cBonju-Staghelm|r",
 			[51] = 1644562311,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
+		}, -- [8]
 		{
 			"\"Mass ego\" is one...", -- [1]
 			"Nackleiscute-Dalaran", -- [2]
@@ -594,7 +200,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Nackleiscute|r",
 			[51] = 1644685393,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
+		}, -- [9]
 		{
 			"XD", -- [1]
 			"Nackleiscute-Dalaran", -- [2]
@@ -616,7 +222,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Nackleiscute|r",
 			[51] = 1644685394,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
+		}, -- [10]
 		{
 			"they can't answer that question", -- [1]
 			"Lifésblood-Dalaran", -- [2]
@@ -638,7 +244,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeLifésblood|r",
 			[51] = 1644685397,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
+		}, -- [11]
 		{
 			"well, people is against Trump, so everything Trump does is wrong and they are against it... people are against Biden, the same applies", -- [1]
 			"Blubbyy-Dalaran", -- [2]
@@ -660,7 +266,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaBlubbyy|r",
 			[51] = 1644685402,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
+		}, -- [12]
 		{
 			"NO, they can't. Neither can their doctors", -- [1]
 			"Zartrik-Dalaran", -- [2]
@@ -682,7 +288,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Zartrik|r",
 			[51] = 1644685413,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
+		}, -- [13]
 		{
 			"I've been vaxxing myself every day. Sometimes twice a day. Now I can see the future and lift a pickup truck above my head", -- [1]
 			"Fjornheim-Dalaran", -- [2]
@@ -704,7 +310,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cFjornheim|r",
 			[51] = 1644685425,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
+		}, -- [14]
 		{
 			"Biden promotes vacine, automatically people are against vacines... Trump says MAGA, people are automatically against MAGA", -- [1]
 			"Blubbyy-Dalaran", -- [2]
@@ -726,7 +332,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaBlubbyy|r",
 			[51] = 1644685434,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
+		}, -- [15]
 		{
 			"But they sure are quick to call other people stupid....", -- [1]
 			"Zartrik-Dalaran", -- [2]
@@ -748,7 +354,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Zartrik|r",
 			[51] = 1644685436,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
+		}, -- [16]
 		{
 			"to be fair, people were against Trump because he was blatantly using the American people in a conflict of interest to the active detriment of citizens, whereas Biden is the status quo...", -- [1]
 			"Zolbank-Dalaran", -- [2]
@@ -770,7 +376,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Zolbank|r",
 			[51] = 1644685441,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
+		}, -- [17]
 		{
 			"neither are really 'great', but one is remarkably worse than the other", -- [1]
 			"Zolbank-Dalaran", -- [2]
@@ -792,7 +398,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Zolbank|r",
 			[51] = 1644685450,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
+		}, -- [18]
 		{
 			"you're no Mage unless you're seen on a |cff71d5ff|Hspell:255695:0|h[Seabraid Stallion]|h|r", -- [1]
 			"Morday-AeriePeak", -- [2]
@@ -814,7 +420,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaMorday-AeriePeak|r",
 			[51] = 1644687229,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
+		}, -- [19]
 		{
 			"i did skyguard grind in like a day, 8 hours, took forever. that grind is brutally boring. back and forth, shadow thingies, kill mobs, repeat. ", -- [1]
 			"Phrozensoul-AeriePeak", -- [2]
@@ -836,7 +442,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaPhrozensoul-AeriePeak|r",
 			[51] = 1644687242,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
+		}, -- [20]
 		{
 			"|cff71d5ff|Hspell:296788:0|h[Mechacycle Model W]|h|r was a fun mount to earn too, at least before they nerfed the requirements in the latest patch :(", -- [1]
 			"Dylan-AeriePeak", -- [2]
@@ -858,7 +464,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaDylan-AeriePeak|r",
 			[51] = 1644687243,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
+		}, -- [21]
 		{
 			"|cff71d5ff|Hspell:123993:0|h[Golden Cloud Serpent]|h|r actually didnt take that long", -- [1]
 			"Lochorgoe-Dalaran", -- [2]
@@ -880,7 +486,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Lochorgoe|r",
 			[51] = 1644687259,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
+		}, -- [22]
 		{
 			"now anyone can get it with less effort put in", -- [1]
 			"Dylan-AeriePeak", -- [2]
@@ -902,7 +508,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaDylan-AeriePeak|r",
 			[51] = 1644687260,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
+		}, -- [23]
 		{
 			"<Sanctification> is  family-run guild looking for players. Mythic Mondays, Torghast Tuesdays, Wed/Sun Raiding and social events! DM Gingeraholy  |cffffd100|HclubFinder:ClubFinder-1-234833-3683-98820873|h[Guild: Sanctification]|h|r", -- [1]
 			"Gingeraholy-Dalaran", -- [2]
@@ -924,7 +530,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeGingeraholy|r",
 			[51] = 1644687266,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
+		}, -- [24]
 		{
 			"Sanctification is a family-run friendly guild looking for players for our guild.  Discord, family-run guild with weekly raiding! DM Gingeraholy for more info! |cffffd100|HclubFinder:ClubFinder-1-234833-3683-98820873|h[Guild: Sanctification]|h|r", -- [1]
 			"Gingeraholy-Dalaran", -- [2]
@@ -946,7 +552,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeGingeraholy|r",
 			[51] = 1644687267,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [25]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-301255-3683-104909875|h[Guild: TWO GIRLS ONE SQUID]|h|r is looking for more active and social friends!  We are a casual 18+ guild that just likes to screw around, have fun and enjoy the game together! PST for info.", -- [1]
 			"Flamelox-Dalaran", -- [2]
@@ -968,7 +574,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edFlamelox|r",
 			[51] = 1644687279,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [26]
 		{
 			"speaking of less effort ... is marriage sex less effort ?", -- [1]
 			"Lakrey-AeriePeak", -- [2]
@@ -990,7 +596,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Lakrey-AeriePeak|r",
 			[51] = 1644687383,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [27]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-125012-3683-90682868|h[Guild: The Hedgehugs]|h|r is recruiting -  a bunch of buds with a dad's penchant for puns. We run keys nightly and raid (8/10H) on Sat/Sun 7-9p EST. Leave pugs, join the hugs!", -- [1]
 			"Hedgehug-Dalaran", -- [2]
@@ -1012,7 +618,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cHedgehug|r",
 			[51] = 1644691126,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [28]
 		{
 			"<Sanctification> is recruiting new members for raiding and dungeons. Friendly and helpful people. Looking for tanks, dps and healers to do Mythics. |cffffd100|HclubFinder:ClubFinder-1-234833-3683-98820873|h[Guild: Sanctification]|h|r", -- [1]
 			"Haruspexx-Dalaran", -- [2]
@@ -1034,7 +640,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Haruspexx|r",
 			[51] = 1644691130,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [29]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-365454-3683-107522897|h[Guild: Mystical Dracae]|h|r10 days left till 9.2!! Don't be alone in this patch! Hang with the dracae of dalaran! Raiding will be 2pm est Fri & Sat! Don't wait and join us! UK Based 18+", -- [1]
 			"Nímuë-Dalaran", -- [2]
@@ -1056,7 +662,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Nímuë|r",
 			[51] = 1644691249,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [30]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-301255-3683-104909875|h[Guild: TWO GIRLS ONE SQUID]|h|r is looking for more active and social friends!  We are a casual 18+ guild that just likes to screw around, have fun and enjoy the game together! PST for info.", -- [1]
 			"Flamelox-Dalaran", -- [2]
@@ -1078,7 +684,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edFlamelox|r",
 			[51] = 1644789537,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [31]
 		{
 			"doesnt he give you the dalaran one from legion?", -- [1]
 			"Deeplight-Dalaran", -- [2]
@@ -1100,7 +706,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeDeeplight|r",
 			[51] = 1644792733,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [32]
 		{
 			"I wish khadgar gave me a hearthstone", -- [1]
 			"Albahaca-Dalaran", -- [2]
@@ -1122,7 +728,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Albahaca|r",
 			[51] = 1644792738,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [33]
 		{
 			"There should be a guy when you wrap up the broken shore intro/skip it who gives you the hearthstone", -- [1]
 			"Starbûck-Dalaran", -- [2]
@@ -1144,7 +750,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Starbûck|r",
 			[51] = 1644792773,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [34]
 		{
 			"Oh the dalaran hearthstone yeah after you port into dalaran ", -- [1]
 			"Albahaca-Dalaran", -- [2]
@@ -1166,7 +772,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Albahaca|r",
 			[51] = 1644792795,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [35]
 		{
 			"The npc where you turn the quest in gives it to you as a reward", -- [1]
 			"Albahaca-Dalaran", -- [2]
@@ -1188,7 +794,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Albahaca|r",
 			[51] = 1644792805,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [36]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-301255-3683-104909875|h[Guild: TWO GIRLS ONE SQUID]|h|r is looking for more active and social friends!  We are a casual 18+ guild that just likes to screw around, have fun and enjoy the game together! PST for info.", -- [1]
 			"Flamelox-Dalaran", -- [2]
@@ -1210,7 +816,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edFlamelox|r",
 			[51] = 1644891998,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [37]
 		{
 			"yeah they fucked that up a while back", -- [1]
 			"Xeldan-Dalaran", -- [2]
@@ -1232,7 +838,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Xeldan|r",
 			[51] = 1644892207,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [38]
 		{
 			"very annoying", -- [1]
 			"Xeldan-Dalaran", -- [2]
@@ -1254,7 +860,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Xeldan|r",
 			[51] = 1644892220,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [39]
 		{
 			"Worked for me.", -- [1]
 			"Bairddagda-Dalaran", -- [2]
@@ -1276,7 +882,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Bairddagda|r",
 			[51] = 1644892227,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
+		}, -- [40]
 		{
 			":/", -- [1]
 			"Rhicka-Dalaran", -- [2]
@@ -1298,7 +904,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaRhicka|r",
 			[51] = 1644892227,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [41]
 		{
 			"bunch of people got ashes of alar recently huh", -- [1]
 			"Dawntyrant-Zangarmarsh", -- [2]
@@ -1320,7 +926,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Dawntyrant-Zangarmarsh|r",
 			[51] = 1644982876,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [42]
 		{
 			"my butt is large", -- [1]
 			"Necrocutie-Dalaran", -- [2]
@@ -1342,7 +948,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Necrocutie|r",
 			[51] = 1644982877,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [43]
 		{
 			"pic or cap", -- [1]
 			"Criskqtuwu-Dalaran", -- [2]
@@ -1364,7 +970,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Criskqtuwu|r",
 			[51] = 1644982886,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [44]
 		{
 			"im still trying lol", -- [1]
 			"Mcluvin-AeriePeak", -- [2]
@@ -1386,7 +992,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Mcluvin-AeriePeak|r",
 			[51] = 1644982942,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [45]
 		{
 			"fjb...", -- [1]
 			"Porkbbq-Dalaran", -- [2]
@@ -1408,7 +1014,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cPorkbbq|r",
 			[51] = 1644983302,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [46]
 		{
 			"poor baby", -- [1]
 			"Lunaveil-Dalaran", -- [2]
@@ -1430,7 +1036,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Lunaveil|r",
 			[51] = 1644983345,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [47]
 		{
 			"heres to honor...<3", -- [1]
 			"Gregrthewise-Dalaran", -- [2]
@@ -1452,7 +1058,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeGregrthewise|r",
 			[51] = 1644983428,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [48]
 		{
 			"algún dps para rbgs? 1.8k", -- [1]
 			"Kethar-Quel'Thalas", -- [2]
@@ -1474,7 +1080,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Kethar-Quel'Thalas|r",
 			[51] = 1644983454,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [49]
 		{
 			"r", -- [1]
 			"Kethar-Quel'Thalas", -- [2]
@@ -1496,7 +1102,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Kethar-Quel'Thalas|r",
 			[51] = 1644983456,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [50]
 		{
 			"true", -- [1]
 			"Zultrak-Dalaran", -- [2]
@@ -1518,7 +1124,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Zultrak|r",
 			[51] = 1644983459,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [51]
 		{
 			"LF a raiding/Dungon social guild to join", -- [1]
 			"Adarrad-Dalaran", -- [2]
@@ -1540,7 +1146,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcAdarrad|r",
 			[51] = 1644983463,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [52]
 		{
 			"dungon", -- [1]
 			"Garnelle-Dalaran", -- [2]
@@ -1562,7 +1168,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaGarnelle|r",
 			[51] = 1644983471,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [53]
 		{
 			"dunjin", -- [1]
 			"Zultrak-Dalaran", -- [2]
@@ -1584,7 +1190,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Zultrak|r",
 			[51] = 1644983483,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [54]
 		{
 			"donejin", -- [1]
 			"Shamniscient-Dalaran", -- [2]
@@ -1606,7 +1212,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcShamniscient|r",
 			[51] = 1644983532,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [55]
 		{
 			"boxers briefs or boxer-briefs?", -- [1]
 			"Steelveins-Dalaran", -- [2]
@@ -1628,7 +1234,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cSteelveins|r",
 			[51] = 1644983575,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [56]
 		{
 			"Looking for a place to call home or make friends? |cffffd100|HclubFinder:ClubFinder-1-301255-3683-104909875|h[Guild: TWO GIRLS ONE SQUID]|h|r is the place for you. We are looking for more friends to enjoy PvP and PvE content. PST for inv or for info", -- [1]
 			"Mcßeaver-Dalaran", -- [2]
@@ -1650,7 +1256,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cMcßeaver|r",
 			[51] = 1644983587,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [57]
 		{
 			"boxbriefs?!", -- [1]
 			"Shamniscient-Dalaran", -- [2]
@@ -1672,7 +1278,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcShamniscient|r",
 			[51] = 1644983588,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [58]
 		{
 			"233 gear , ive played it", -- [1]
 			"Mezzmorize-Dalaran", -- [2]
@@ -1694,7 +1300,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edMezzmorize|r",
 			[51] = 1645151915,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [59]
 		{
 			"tru tru will just farm rep for now", -- [1]
 			"Androidcurry-Dalaran", -- [2]
@@ -1716,7 +1322,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Androidcurry|r",
 			[51] = 1645151922,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [60]
 		{
 			"PTR", -- [1]
 			"Mezzmorize-Dalaran", -- [2]
@@ -1738,7 +1344,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edMezzmorize|r",
 			[51] = 1645151941,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [61]
 		{
 			"sheesh ", -- [1]
 			"Androidcurry-Dalaran", -- [2]
@@ -1760,7 +1366,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Androidcurry|r",
 			[51] = 1645151953,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [62]
 		{
 			"thats just questing", -- [1]
 			"Mezzmorize-Dalaran", -- [2]
@@ -1782,7 +1388,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edMezzmorize|r",
 			[51] = 1645151965,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [63]
 		{
 			"oh wow ", -- [1]
 			"Androidcurry-Dalaran", -- [2]
@@ -1804,7 +1410,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Androidcurry|r",
 			[51] = 1645151975,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [64]
 		{
 			"Lust Detector: Cydaros-Dalaran cast haste spell: |cff71d5ff|Hspell:272678:0|h[Primal Rage]|h|r on the party!! ", -- [1]
 			"Wildlily-Gilneas", -- [2]
@@ -1826,7 +1432,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Wildlily-Gilneas|r",
 			[51] = 1645152035,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [83]
+		}, -- [65]
 		{
 			"<Sanctification> is recruiting new members for raiding and dungeons. Friendly and helpful people. Looking for tanks, dps and healers to do Mythics. |cffffd100|HclubFinder:ClubFinder-1-234833-3683-98820873|h[Guild: Sanctification]|h|r", -- [1]
 			"Haruspexx-Dalaran", -- [2]
@@ -1848,7 +1454,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Haruspexx|r",
 			[51] = 1645225927,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [66]
 		{
 			"<Sanctification> is an AOTC guild recruiting members for raid team and mythics. Friendly and helpful people. Raid Wed 7:30-10/Sun 7:30-10. |cffffd100|HclubFinder:ClubFinder-1-234833-3683-98820873|h[Guild: Sanctification]|h|r", -- [1]
 			"Haruspexx-Dalaran", -- [2]
@@ -1870,7 +1476,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Haruspexx|r",
 			[51] = 1645225928,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [67]
 		{
 			"wanting to buy boost for Mythic 30. please pst", -- [1]
 			"Saphyreheal-Dalaran", -- [2]
@@ -1892,7 +1498,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSaphyreheal|r",
 			[51] = 1645226196,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [68]
 		{
 			".", -- [1]
 			"Idylle-Dalaran", -- [2]
@@ -1914,7 +1520,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Idylle|r",
 			[51] = 1645226213,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [69]
 		{
 			"Real life gets in the way and |cffffd100|HclubFinder:ClubFinder-1-252637-3683-100623873|h[Guild: Legends of Shadow]|h|r understands that so join and not worry about being online 24/7.", -- [1]
 			"Idylle-Dalaran", -- [2]
@@ -1936,7 +1542,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Idylle|r",
 			[51] = 1645226215,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [70]
 		{
 			"WTB |cffffffff|Hitem:49916::::::::60:102:::::::::|h[Lovely Charm Bracelet]|h|r BULK, PSt me", -- [1]
 			"Promestein-Dalaran", -- [2]
@@ -1958,7 +1564,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Promestein|r",
 			[51] = 1645364181,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [71]
 		{
 			"Lust Detector: Cupcakés cast |cff71d5ff|Hspell:80353:0|h[Time Warp]|h|r and increased +30% haste on party", -- [1]
 			"Cellest-Stormreaver", -- [2]
@@ -1980,7 +1586,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cellest-Stormreaver|r",
 			[51] = 1645364215,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [90]
+		}, -- [72]
 		{
 			"more people do than u know", -- [1]
 			"Smashemgood-Staghelm", -- [2]
@@ -2002,7 +1608,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cSmashemgood-Staghelm|r",
 			[51] = 1645364337,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [73]
 		{
 			"fr?", -- [1]
 			"Harrybalzak-Dawnbringer", -- [2]
@@ -2024,7 +1630,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cHarrybalzak-Dawnbringer|r",
 			[51] = 1645364371,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [74]
 		{
 			"ya", -- [1]
 			"Illidanron-Dalaran", -- [2]
@@ -2046,7 +1652,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Illidanron|r",
 			[51] = 1645364378,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [75]
 		{
 			"but is it tho?", -- [1]
 			"Illidanron-Dalaran", -- [2]
@@ -2068,7 +1674,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Illidanron|r",
 			[51] = 1645364389,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [76]
 		{
 			"cuz like im tryna find them so i can join in on it", -- [1]
 			"Harrybalzak-Dawnbringer", -- [2]
@@ -2090,7 +1696,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cHarrybalzak-Dawnbringer|r",
 			[51] = 1645364407,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [77]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-301255-3683-104909875|h[Guild: TWO GIRLS ONE SQUID]|h|r DALARAN is looking for more active and social friends!  We are a casual 18+ guild that just likes to screw around, have fun and enjoy the game together!", -- [1]
 			"Flamelox-Dalaran", -- [2]
@@ -2112,7 +1718,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edFlamelox|r",
 			[51] = 1645399325,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [78]
 		{
 			"To all those of you that are sending the wonderful messages: I promise things will get better! You'll soon have such an amazing life that you won't have to spend your time insulting random people on the internet <3", -- [1]
 			"Flamelox-Dalaran", -- [2]
@@ -2134,7 +1740,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edFlamelox|r",
 			[51] = 1645399442,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [79]
 		{
 			" that sounds suspect", -- [1]
 			"Lirrie-Dalaran", -- [2]
@@ -2156,7 +1762,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Lirrie|r",
 			[51] = 1645399459,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [80]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-13585-3683-85720866|h[Guild: Ashes of Renewal]|h|r is now recruiting raiders for 9.2! All classes are welcome.  Raids are on Tues/Mon 8-11 EST. Seeking a mage to round out the roster. PST for more info :)", -- [1]
 			"Mooncréscent-Dalaran", -- [2]
@@ -2178,9 +1784,404 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Mooncréscent|r",
 			[51] = 1645401257,
 			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [81]
+		{
+			"too much deep thinking up in here", -- [1]
+			"Ivearted-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Ivearted-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			5382, -- [11]
+			"Player-3683-0C280ACF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaIvearted|r",
+			[51] = 1645406140,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [82]
+		{
+			"but calling them by a different pronoun than what they identify as is forcing your beliefs on others", -- [1]
+			"Ironikh-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Ironikh-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			5410, -- [11]
+			"Player-3683-0D388BA8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8687edIronikh|r",
+			[51] = 1645406148,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [83]
+		{
+			"you're either a male or a female.  God didn't make different parts.", -- [1]
+			"Manyfacés-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Manyfacés-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			5444, -- [11]
+			"Player-3683-0D330F2F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Manyfacés|r",
+			[51] = 1645406158,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [84]
+		{
+			"exactly", -- [1]
+			"Ziegenbock-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Ziegenbock-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			5454, -- [11]
+			"Player-3683-0D30759E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Ziegenbock|r",
+			[51] = 1645406174,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [85]
+		{
+			"sex is not the same as gender", -- [1]
+			"Admyratus-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Admyratus-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			5455, -- [11]
+			"Player-3683-0BF61804", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Admyratus|r",
+			[51] = 1645406176,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [86]
+		{
+			"if you measure thatr by a penis, then yhou don]t know what God made", -- [1]
+			"Ironikh-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Ironikh-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			5457, -- [11]
+			"Player-3683-0D388BA8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8687edIronikh|r",
+			[51] = 1645406176,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [87]
+		{
+			"Ima dude, he's a dude, she's a dude we're all dudes.", -- [1]
+			"Pthirtyeight-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Pthirtyeight-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			5459, -- [11]
+			"Player-3683-0D36B868", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cPthirtyeight|r",
+			[51] = 1645406179,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [88]
+		{
+			"what if you're a gra[efruit huh? didnt think of that did ya", -- [1]
+			"Ivearted-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Ivearted-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			5462, -- [11]
+			"Player-3683-0C280ACF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaIvearted|r",
+			[51] = 1645406183,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [89]
+		{
+			"and god wrote hey adam go log onto wow and talk to people about your dick", -- [1]
+			"Bcdude-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Bcdude-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			5465, -- [11]
+			"Player-3683-0A83F378", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcBcdude|r",
+			[51] = 1645406188,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [90]
+		{
+			"An myself, I am too effing old to remember all the different things everyone wants to be called.", -- [1]
+			"Manyfacés-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Manyfacés-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			5469, -- [11]
+			"Player-3683-0D330F2F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Manyfacés|r",
+			[51] = 1645406194,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [91]
+		{
+			"who are you to  speak for God?", -- [1]
+			"Cafesociety-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Cafesociety-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			5470, -- [11]
+			"Player-3683-0D305D6E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaCafesociety|r",
+			[51] = 1645406195,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [92]
+		{
+			"his image", -- [1]
+			"Bcdude-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Bcdude-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			5483, -- [11]
+			"Player-3683-0A83F378", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcBcdude|r",
+			[51] = 1645406204,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [93]
+		{
+			"Welcome to Good Burger home of the Good Burger can I take your order?", -- [1]
+			"Cönstäntine-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Cönstäntine-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			5485, -- [11]
+			"Player-3683-0C6F8BBE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaCönstäntine|r",
+			[51] = 1645406206,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [94]
+		{
+			"if you go by ze just hide in an attic so i can yell ZE ARE IN THE ATTIC", -- [1]
+			"Ziegenbock-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Ziegenbock-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			5496, -- [11]
+			"Player-3683-0D30759E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Ziegenbock|r",
+			[51] = 1645406210,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [95]
+		{
+			"Who loves Orange soda?!", -- [1]
+			"Pthirtyeight-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Pthirtyeight-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			5515, -- [11]
+			"Player-3683-0D36B868", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cPthirtyeight|r",
+			[51] = 1645406218,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			"Cream soda is top tier", -- [1]
+			"Scathy-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Scathy-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			5562, -- [11]
+			"Player-3683-0D35B7F4", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Scathy|r",
+			[51] = 1645406257,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"^", -- [1]
+			"Cafesociety-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Cafesociety-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			5572, -- [11]
+			"Player-3683-0D305D6E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaCafesociety|r",
+			[51] = 1645406280,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"I wanna try this new coke that taste liek the gallexy or whatever", -- [1]
+			"Pthirtyeight-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Pthirtyeight-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			5580, -- [11]
+			"Player-3683-0D36B868", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cPthirtyeight|r",
+			[51] = 1645406299,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},
-	["ConvertKeybindings"] = true,
 	["ChatEditHistory"] = {
 		"/kiss", -- [1]
 		"/fishingbuddy", -- [2]
@@ -2203,6 +2204,5 @@ ElvCharacterDB = {
 		"/cw Bourbonn-Dalaran TY", -- [19]
 		"/tsm", -- [20]
 	},
-	["CliqueDatatext"] = {
-	},
+	["ConvertKeybindings"] = true,
 }

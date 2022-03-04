@@ -60,7 +60,7 @@ local specTemplate = {
     combatRefresh = 0.1,
 
     throttleTime = false,
-    maxTime = 33,
+    maxTime = 10,
 
     -- Toggles
     custom1Name = "Custom 1",
@@ -163,6 +163,8 @@ local HekiliSpecMixin = {
             inactive_regen = 0,
             last_tick = 0,
 
+            swingGen = false,
+
             add = function( amt, overcap )
                 -- Bypasses forecast, useful in hooks.
                 if overcap then r.state.amount = r.state.amount + amt
@@ -192,6 +194,10 @@ local HekiliSpecMixin = {
 
                 if v.channel then
                     self.resourceAuras[ v.resource ].casting = true
+                end
+
+                if v.swing then
+                    r.state.swingGen = true
                 end
             end
         end
@@ -224,7 +230,6 @@ local HekiliSpecMixin = {
         }, {
             __index = function( t, k )
                 if t.funcs[ k ] then return t.funcs[ k ]() end
-                return
             end
         } )
 
@@ -2458,17 +2463,29 @@ all:RegisterAbilities( {
 
         indicator = "cancel",
         texture = function ()
-            local a = class.auras[ args.buff_name ]            
-            if a.texture then return a.texture end
+            if not args.buff_name then return 134400 end
 
+            local a = class.auras[ args.buff_name ]
+            -- if not a then return 134400 end
+            if a.texture then return a.texture end
+            
             a = a and a.id
             a = a and GetSpellTexture( a )
+            
             return a or 134400
         end,
 
         usable = function () return args.buff_name ~= nil, "no buff name detected" end,
         timeToReady = function () return gcd.remains end,
         handler = function ()
+            local cancel = args.buff_name and buff[ args.buff_name ]
+            cancel = cancel and rawget( cancel, "onCancel" )
+
+            if cancel then
+                cancel()
+                return
+            end
+
             removeBuff( args.buff_name )
         end,
     },
@@ -5656,7 +5673,7 @@ ns.setRole = setRole
 
 
 function Hekili:GetActiveSpecOption( opt )
-    if not self.currentSpecOpts then return end
+    if not self.currentSpecOpts then return ns.specTemplate[ opt ] end
     return self.currentSpecOpts[ opt ]
 end
 
@@ -5897,7 +5914,7 @@ function Hekili:SpecializationChanged()
             local s = Hekili.DB.profile.specs[ spec.id ]
 
             for k, v in pairs( spec.options ) do
-                if s[ k ] == nil then s[ k ] = v end
+                if rawget( s, k ) == nil then s[ k ] = v end
             end
 
             for k, v in pairs( spec.settings ) do

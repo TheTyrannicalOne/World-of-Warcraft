@@ -289,6 +289,7 @@ end
 
 function Hekili:PopStack()
     local x = tremove( Stack, #Stack )
+    if not x then return end
 
     if self.ActiveDebug then
         if x.run then
@@ -618,26 +619,15 @@ local Timer = {
 
 
 do
-    local prevMsg, prevTime = nil
-
-    local firstAfterResume = false
+    local prevMsg, prevTime
     local resumeTime = 0
-
-    --[[ local saved = {}
-    Hekili.SavedTimers = saved ]]
 
     local function DoYield( self, msg, time )
         if not coroutine.running() then return end
 
         time = time or debugprofilestop()
 
-        --[[ if time - prevTime > self.maxFrameTime then
-            local file, line = debugstack(2):match( "Hekili\\(.-)\"\]:(%d+):" )
-            table.insert( saved, { time - prevTime, resumeTime, firstAfterResume, "From [ " .. prevTime .. " / " .. prevMsg .. " ] to [ " .. time .. " / " .. msg .. " ]\n", file, line } )
-        end ]]
-
         prevTime = time
-        firstAfterResume = false
 
         if time - self.frameStartTime > self.maxFrameTime then
             coroutine.yield()
@@ -645,7 +635,6 @@ do
             prevMsg = "Resumed thread..."
             prevTime = debugprofilestop()
 
-            firstAfterResume = true
             resumeTime = prevTime
         else
             prevMsg = msg
@@ -663,7 +652,6 @@ do
     Hekili.Yield = FirstYield
 
     function Hekili:ResetThreadClock()
-        firstAfterResume = true
         resumeTime = debugprofilestop()
 
         prevMsg = "Started thread..."
@@ -1285,7 +1273,7 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
                                                         slot.list = listName
                                                         slot.listName = listName
                                                         slot.action = actID
-                                                        slot.actionName = state.this_action
+                                                        slot.actionName = ability.key
                                                         slot.actionID = ability.id
 
                                                         slot.caption = ability.caption or entry.caption
@@ -1455,567 +1443,6 @@ function Hekili:GetDisplayByName( name )
 end
 
 
-
-function Hekili:ProcessHooks( dispName, packName )
-
-    if self.Pause then return end
-    if not self.PLAYER_ENTERING_WORLD then return end -- In 8.2.5, we can start resetting before our character information is loaded apparently.
-
-    dispName = dispName or "Primary"
-    local display = rawget( self.DB.profile.displays, dispName )
-
-    local specID = state.spec.id
-    if not specID or not class.specs[ specID ] then return end
-
-    local debug = self.ActiveDebug
-
-    if debug then
-        self:SetupDebug( dispName )
-        self:Debug( "*** START OF NEW DISPLAY: %s ***", dispName ) 
-    end
-
-    --[[ Get a completely fresh picture of the game state.
-    if state.modified or state.player.updated or state.target.updated then state.resetType = "heavy" end ]]
-
-    if not state.reset( dispName ) then
-        if debug then self:Debug( "Stopping update; was not able to reset the virtual gamestate." ) end
-        return true
-    end
-
-    --[[ if state.resetType ~= "none" then
-        return false
-    end
-
-    state.resetType = "light" ]]
-
-    local UI = ns.UI.Displays[ dispName ]
-    local Queue = UI.Recommendations
-
-    if Queue then
-        for k, v in pairs( Queue ) do
-            for l, w in pairs( v ) do
-                if type( Queue[ k ][ l ] ) ~= "table" then
-                    Queue[ k ][ l ] = nil
-                end
-            end
-        end
-    end
-
-    local spec = rawget( self.DB.profile.specs, specID )
-    if not spec or not class.specs[ specID ] then return true end
-
-    if dispName == "AOE" and self:GetToggleState( "mode" ) == "reactive" and ns.getNumberTargets() < ( spec and spec.aoe or 3 ) then
-        if UI.RecommendationsStr then
-            UI.RecommendationsStr = nil
-            UI.NewRecommendations = true
-        end
-        return true
-    end
-
-    local checkstr = nil
-
-    local packName = packName or spec.package
-    if not packName then return true end
-
-    local pack = rawget( self.DB.profile.packs, packName )
-
-    if not ( spec and class.specs[ specID ] and pack ) and UI.RecommendationsStr then
-        UI.RecommendationsStr = nil
-        UI.NewRecommendations = true 
-        return true
-    end
-
-    state.system.specID   = specID
-    state.system.specInfo = spec
-    state.system.packName = packName
-    state.system.packInfo = pack
-    state.system.display  = dispName
-    state.system.dispInfo = display
-
-    local numRecs = display.numIcons or 4
-
-    if display.flash.enabled and display.flash.suppress then
-        numRecs = 1
-    end
-
-    local actualStartTime = debugprofilestop()
-    local maxTime = 200
-
-    if state.settings.throttleTime then
-        maxTime = state.settings.maxTime or 50
-    end
-
-    local hasSnapshotted = Hekili.HasSnapped or false
-
-    for i = 1, numRecs do
-        if i > 1 and actualStartTime then
-            local usedTime = debugprofilestop() - actualStartTime
-
-            if usedTime * i / ( i - 1 ) > maxTime * 1.1 then
-                if debug then self:Debug( -100, "Addon used %.2fms CPU time (of %.2fms softcap) before recommendation #%d; next recommendation projected to overcap.  Stopping early.", usedTime, maxTime, i ) end
-                break
-            end
-            
-            if debug then self:Debug( "Used %.2fms of CPU on %d prediction(s).", usedTime, i-1 ) end
-        end
-
-        local chosen_action
-        local chosen_depth = 0
-
-        Queue[ i ] = Queue[ i ] or {}        
-        local slot = Queue[ i ]
-        slot.index = i
-        state.index = i
-
-        local attempts = 0
-        local iterated = false
-
-        if debug then self:Debug( 0, "\nRECOMMENDATION #%d ( Offset: %.2f, GCD: %.2f, %s: %.2f ).\n", i, state.offset, state.cooldown.global_cooldown.remains, ( state.buff.casting.v3 == 1 and "Channeling" or "Casting" ), state.buff.casting.remains ) end
-
-        local action, wait, depth
-
-        state.delay = 0
-        state.delayMin = 0
-        state.delayMax = 60
-
-        local hadProj = false
-
-        local events = state:GetQueue()
-        local event = events[ 1 ]
-        local n = 1
-
-        if debug and #events > 0 then
-            self:Debug( 1, "There are %d queued events to review.", #events )
-        end
-
-        while( event ) do
-            local eStart
-
-            if debugprofilestop() - actualStartTime > 100 then
-                if not Hekili.HasSnapped then
-                    Hekili.HasSnapped = true
-                    hasSnapshotted = true
-
-                    Hekili:MakeSnapshot( dispName, true )
-                end
-                
-                if debug then self:Debug( "Escaping events loop due to high CPU usage." ) end
-                break
-            end
-            
-            if debug then
-                eStart = debugprofilestop()
-                
-                local resources
-
-                for k in orderedPairs( class.resources ) do
-                    resources = ( resources and ( resources .. ", " ) or "" ) .. string.format( "%s[ %.2f / %.2f ]", k, state[ k ].current, state[ k ].max )
-                end
-                self:Debug( 1, "Resources: %s\n", resources )
-
-                if state.channeling then
-                    self:Debug( 1, "Currently channeling ( %s ) until ( %.2f ).\n", state.channel, state.channel_remains )
-                end
-            end
-
-            ns.callHook( "step" )
-
-            local t = event.time - state.now - state.offset
-
-            if t < 0 then
-                state.offset = state.offset - t
-                if debug then self:Debug( 1, "Finishing queued event #%d ( %s of %s ) due at %.2f because the event should've already occurred.\n", n, event.type, event.action, t ) end
-                state:HandleEvent( event )
-                state.offset = state.offset + t
-                event = events[ 1 ]
-            elseif t < 0.05 then
-                if debug then self:Debug( 1, "Finishing queued event #%d ( %s of %s ) due at %.2f because the event occurs w/in 0.05 seconds.\n", n, event.type, event.action, t ) end
-                state.advance( t )
-                if event == events[ 1 ] then
-                    -- Event did not get handled due to rounding.
-                    state:HandleEvent( event )
-                    -- state:RemoveEvent( event )
-                end
-                event = events[ 1 ]
-            else
-                --[[
-                    Okay, new paradigm.  We're checking whether we should break channeled spells before we worry about casting while casting.
-                    Are we channeling?
-                        a.  If yes, check whether conditions are met to break the channel.
-                            i.  If yes, allow the channel to be broken by anything but the channeled spell itself.  
-                                If we get a condition-pass for the channeled spell, stop seeking recommendations and move on.
-                            ii. If no, move on to checking whether we can cast while casting (old code).
-                        b.  If no, move on to checking whether we can cast while casting (old code).
-                    ]]
-                
-                local channeling, shouldBreak = state:IsChanneling(), false
-                
-                if channeling then
-                    if debug then Hekili:Debug( "We are channeling, checking if we should break the channel..." ) end
-                    shouldBreak = Hekili:CheckChannel( nil, 0 )
-                    state.canBreakChannel = shouldBreak
-                else
-                    state.canBreakChannel = false
-                end
-
-                local casting, shouldCheck = state:IsCasting(), false
-
-                if ( casting or ( channeling and not shouldBreak ) ) and state.spec.canCastWhileCasting then
-                    shouldCheck = false
-
-                    for spell in pairs( state.spec.castableWhileCasting ) do
-                        if debug then Hekili:Debug( "CWC: %s | %s | %s | %s | %.2f | %s | %.2f | %.2f", spell, tostring( state:IsKnown( spell ) ), tostring( state:IsUsable( spell ) ), tostring( class.abilities[ spell ].castableWhileCasting ), state:TimeToReady( spell ), tostring( state:TimeToReady( spell ) <= t ), state.offset, state.delay ) end
-                        if class.abilities[ spell ].castableWhileCasting and state:IsKnown( spell ) and state:IsUsable( spell ) and state:TimeToReady( spell ) <= t then
-                            shouldCheck = true
-                            break
-                        end
-                    end
-                end
-
-
-                local overrideIndex, overrideAction, overrideType, overrideTime
-
-                if channeling and ( shouldBreak or shouldCheck ) and event.type == "CHANNEL_TICK" then
-
-                    local eventAbility = class.abilities[ event.action ]
-                    if eventAbility and not eventAbility.tick then
-                        -- The ability doesn't actually do anything at any tick times, so let's use the time of the next non-channel tick event instead.
-                        for i = 1, #events do
-                            local e = events[ i ]
-
-                            if e.type ~= "CHANNEL_TICK" then
-                                overrideIndex = i
-                                overrideAction = e.action
-                                overrideType = e.type
-                                overrideTime = e.time - state.now - state.offset
-                                if debug then Hekili:Debug( "As %s's channel has no tick function, we will check between now and %s's %s event in %.2f seconds.", event.action, overrideAction, overrideType, overrideTime ) end
-                                break
-                            end
-                        end
-
-                        --[[ If the ability doesn't actually do anything at any tick times, let's purge the remaining tick events and then grab the next event.
-                        local spell = event.action
-
-                        if not class.abilities[ spell ] or not class.abilities[ spell ].tick then
-                            if debug then Hekili:Debug( "Purging remaining channel ticks as there is no tick handler for this spell [ %s; events = %d ].", spell, #events ) end
-
-                            for i = #events, 1, -1 do
-                                local e = events[ i ]
-
-                                if e.action == spell and e.type == "CHANNEL_TICK" then
-                                    state:RemoveEvent( e )
-                                end
-                            end
-
-                            event = events[ 1 ]
-                            t = event.time - state.now - state.offset
-                        end ]]
-                    end
-                end
-
-                if ( casting or channeling ) and not shouldBreak and not shouldCheck then
-                    if debug then self:Debug( 1, "Finishing queued event #%d ( %s of %s ) due at %.2f as player is casting and castable spells are not ready.\nCasting: %s, Channeling: %s, Break: %s, Check: %s", n, event.type, event.action, t, casting and "Yes" or "No", channeling and "Yes" or "No", shouldBreak and "Yes" or "No", shouldCheck and "Yes" or "No" ) end
-                    if t > 0 then
-                        state.advance( t )
-
-                        local resources
-
-                        for k in orderedPairs( class.resources ) do
-                            resources = ( resources and ( resources .. ", " ) or "" ) .. string.format( "%s[ %.2f / %.2f ]", k, state[ k ].current, state[ k ].max )
-                        end
-                        self:Debug( 1, "Resources: %s\n", resources )
-                    end
-                    event = events[ 1 ]
-                else
-                    state:SetConstraint( 0, ( overrideTime or t ) - 0.01 )
-
-                    hadProj = true
-
-                    if debug then self:Debug( 1, "Queued event #%d (%s %s) due at %.2f; checking pre-event recommendations.\n", overrideIndex or n, overrideAction or event.action, overrideType or event.type, overrideTime or t ) end
-
-                    if casting or channeling then
-                        state:ApplyCastingAuraFromQueue()
-                        if debug then self:Debug( 2, "Player is casting for %.2f seconds.  %s.", state.buff.casting.remains, shouldBreak and "We can break the channel" or "Only spells castable while casting will be used" ) end
-                    else
-                        state.removeBuff( "casting" )
-                    end
-
-                    local waitLoop = 0
-
-                    repeat
-                        action, wait, depth = self:GetNextPrediction( dispName, packName, slot )
-
-                        if action == "wait" then
-                            if debug then Hekili:Debug( "EXECUTING WAIT ( %.2f ) EVENT AT ( +%.2f ) AND RECHECKING RECOMMENDATIONS...", slot.waitSec, wait ) end
-                            state.advance( wait + slot.waitSec )
-
-                            slot.action = nil
-                            slot.actionName = nil
-                            slot.actionID = nil
-
-                            state.delay = 0
-                            state.delayMin = 0
-                            state.delayMax = 60
-
-                            action, wait = nil, 10
-
-                            action, wait, depth = self:GetNextPrediction( dispName, packName, slot )
-                        end
-                    
-                        waitLoop = waitLoop + 1
-                        
-                        if waitLoop > 2 then
-                            if debug then Hekili:Debug( "BREAKING WAIT LOOP!" ) end
-                            slot.action = nil
-                            slot.actionName = nil
-                            slot.actionID = nil
-
-                            state.delay = 0
-                            state.delayMin = 0
-                            state.delayMax = 60
-        
-                            action, wait = nil, 10        
-                            break
-                        end
-                    until action ~= "wait"
-
-                    if action == "wait" then
-                        action, wait = nil, 10
-                    end
-
-                    if not action then
-                        if debug then self:Debug( "Time spent on event #%d PREADVANCE: %.2fms...", n, debugprofilestop() - eStart ) end
-                        if debug then self:Debug( 1, "No recommendation found before event #%d (%s %s) at %.2f; triggering event and continuing ( %.2f ).\n", n, event.action or "NO ACTION", event.type or "NO TYPE", t, state.offset + state.delay ) end
-                        
-                        state.advance( overrideTime or t )
-                        if debug then self:Debug( "Time spent on event #%d POSTADVANCE: %.2fms...", n, debugprofilestop() - eStart ) end
-
-                        event = events[ 1 ]
-                    else
-                        break
-                    end
-                end
-            end
-
-            n = n + 1
-
-            if n > 10 then
-                if debug then Hekili:Debug( "WARNING:  Attempted to process 10+ events; breaking to avoid CPU wastage." ) end
-                break
-            end
-
-            if debug then self:Debug( "Time spent on event #%d: %.2fms...", n - 1, debugprofilestop() - eStart ) end
-        end
-
-        if not action then
-            if class.file == "DEATHKNIGHT" then
-                state:SetConstraint( 0, max( 0.01 + state.rune.cooldown * 2, 10 ) )
-            else
-                state:SetConstraint( 0, 10 )
-            end
-
-            if hadProj and debug then self:Debug( "[ ** ] No recommendation before queued event(s), checking recommendations after %.2f.", state.offset ) end
-
-            if debug then
-                local resources
-
-                for k in orderedPairs( class.resources ) do
-                    resources = ( resources and ( resources .. ", " ) or "" ) .. string.format( "%s[ %.2f / %.2f ]", k, state[ k ].current, state[ k ].max )
-                end
-                self:Debug( 1, "Resources: %s", resources or "none" )
-                ns.callHook( "step" )
-                
-                if state.channeling then
-                    self:Debug( " - Channeling ( %s ) until ( %.2f ).", state.channel, state.channel_remains )
-                end
-            end    
-
-            local waitLoop = 0
-            
-            repeat
-                action, wait, depth = self:GetNextPrediction( dispName, packName, slot )
-
-                if action == "wait" then
-                    if debug then Hekili:Debug( "EXECUTING WAIT ( %.2f ) EVENT AT ( +%.2f ) AND RECHECKING RECOMMENDATIONS...", slot.waitSec, wait ) end
-                    state.advance( wait + slot.waitSec )
-                    
-                    slot.action = nil
-                    slot.actionName = nil
-                    slot.actionID = nil
-
-                    state.delay = 0
-                    state.delayMin = 0
-                    state.delayMax = 60
-
-                    action, wait = nil, 10
-
-                    action, wait, depth = self:GetNextPrediction( dispName, packName, slot )
-                end
-            
-                waitLoop = waitLoop + 1
-                
-                if waitLoop > 2 then
-                    if debug then Hekili:Debug( "BREAKING WAIT LOOP!" ) end
-
-                    slot.action = nil
-                    slot.actionName = nil
-                    slot.actionID = nil
-
-                    state.delay = 0
-                    state.delayMin = 0
-                    state.delayMax = 60
-
-                    action, wait = nil, 10
-
-                    break
-                end
-            until action ~= "wait"
-
-            if action == "wait" then
-                action, wait = nil, 10
-            end
-        end
-
-        local gcd_remains = state.cooldown.global_cooldown.remains
-        state.delay = wait
-
-        -- if debug then self:Debug( "Prediction engine would recommend %s at +%.2fs (%.2fs).\n", action or "NO ACTION", wait or 60, state.offset + state.delay ) end
-        if debug then self:Debug( "Recommendation #%d is %s at %.2fs (%.2fs).", i, action or "NO ACTION", wait or 60, state.offset + state.delay ) end
-
-        if not debug and not Hekili.Config and not Hekili.HasSnapped and ( dispName == "Primary" or dispName == "AOE" ) and action == nil and InCombatLockdown() and state.level >= 50 then
-            Hekili.HasSnapped = true
-            hasSnapshotted = true
-
-            Hekili:MakeSnapshot( dispName, true )
-            return true
-        end
-
-        if action then
-            -- if debug then scripts:ImplantDebugData( slot ) end
-
-            slot.time = state.offset + wait
-            slot.exact_time = state.now + state.offset + wait
-            slot.delay = i > 1 and wait or ( state.offset + wait )
-            slot.since = i > 1 and slot.time - Queue[ i - 1 ].time or 0
-            slot.resources = slot.resources or {}
-            slot.depth = chosen_depth
-
-            checkstr = checkstr and ( checkstr .. ':' .. action ) or action
-
-            slot.keybind, slot.keybindFrom = self:GetBindingForAction( action, display, i )
-
-            slot.resource_type = state.GetResourceType( action )
-
-            for k,v in pairs( class.resources ) do
-                slot.resources[ k ] = state[ k ].current 
-            end                            
-
-            if i < display.numIcons then
-                -- Advance through the wait time.
-                state.this_action = action
-
-                if state.delay > 0 then state.advance( state.delay ) end
-
-                local ability = class.abilities[ action ]
-                local cast = ability.cast
-
-                if slot.indicator == "cycle" then
-                    state.SetupCycle( ability )
-                end
-
-                if ability.gcd ~= "off" and state.cooldown.global_cooldown.remains == 0 then
-                    state.setCooldown( "global_cooldown", state.gcd.execute )
-                end
-
-                if ability.charges and ability.charges > 1 and ability.recharge > 0 then
-                    state.spendCharges( action, 1 )
-                
-                elseif action ~= "global_cooldown" and ability.cooldown > 0 then
-                    state.setCooldown( action, ability.cooldown )
-                
-                end
-
-                local cast_target = state.cast_target ~= "nobody" and state.cast_target or state.target.unit
-
-                if state.buff.casting.up and not ability.castableWhileCasting then
-                    state.stopChanneling( false, action )
-                    state.removeBuff( "casting" )
-                end
-
-                if ability.cast > 0 then
-                    if not ability.channeled then
-                        if debug then Hekili:Debug( "Queueing %s cast finish at %.2f [+%.2f] on %s.", action, state.query_time + cast, state.offset + cast, cast_target ) end                    
-                        
-                        state.applyBuff( "casting", ability.cast, nil, ability.id, nil, false )
-                        state:QueueEvent( action, state.query_time, state.query_time + cast, "CAST_FINISH", cast_target )
-
-                    else
-                        ns.spendResources( action )
-                        state:RunHandler( action )
-
-                        if debug then Hekili:Debug( "Queueing %s channel finish at %.2f [%.2f+%.2f].", action, state.query_time + cast, state.offset, cast, cast_target ) end
-                        state:QueueEvent( action, state.query_time, state.query_time + cast, "CHANNEL_FINISH", cast_target )
-    
-                        -- Queue ticks because we may not have an ability.tick function, but may have resources tied to an aura.
-                        if ability.tick_time then
-                            local ticks = floor( cast / ability.tick_time )
-    
-                            for i = 1, ticks do
-                                if debug then Hekili:Debug( "Queueing %s channel tick (%d of %d) at %.2f [+%.2f].", action, i, ticks, state.query_time + ( i * ability.tick_time ), state.offset + ( i * ability.tick_time ) ) end
-                                state:QueueEvent( action, state.query_time, state.query_time + ( i * ability.tick_time ), "CHANNEL_TICK", cast_target )
-                            end
-                        end
-
-                    end
-                else
-
-                    -- Instants.
-                    ns.spendResources( action )
-                    state:RunHandler( action )
-
-                end
-
-                -- Projectile spells have two handlers, effectively.  A handler (run on cast/channel finish), and then an impact handler.
-                if ability.isProjectile then
-                    state:QueueEvent( action, state.query_time + cast, nil, "PROJECTILE_IMPACT", cast_target )
-                end
-
-                if ability.item and not ( ability.essence or ability.no_icd ) then
-                    state.putTrinketsOnCD( state.cooldown[ action ].remains / 6 )
-                end
-            end
-
-        else
-            for n = i, numRecs do
-                action = action or ''
-                checkstr = checkstr and ( checkstr .. ':' .. action ) or action
-                slot[n] = nil
-            end
-            break
-        end
-
-    end
-
-    if debug then
-        self:Debug( "Time spent generating recommendations:  %.2fms",  debugprofilestop() - actualStartTime )
-    elseif not hasSnapshotted then
-        -- We don't track debug/snapshot recommendations because the additional debug info ~40% more CPU intensive.
-        -- We don't track out of combat because who cares?
-        UI:UpdatePerformance( GetTime(), debugprofilestop() - actualStartTime, checkstr ~= UI.RecommendationsStr )
-    end
-
-    UI.NewRecommendations = checkstr ~= UI.RecommendationsStr
-    UI.RecommendationsStr = checkstr
-
-    if WeakAuras and WeakAuras.ScanEvents then WeakAuras.ScanEvents( "HEKILI_RECOMMENDATION_UPDATE", dispName, Queue[ 1 ].actionID, UI.eventsTriggered ) end
-
-    Hekili.freshFrame = false
-    return true
-end
-
-Hekili:ProfileCPU( "ProcessHooks", Hekili.ProcessHooks )
-
-
 local displayRules = {
     { "Interrupts", function( p ) return p.toggles.interrupts.value and p.toggles.interrupts.separate end },
     { "Defensives", function( p ) return p.toggles.defensives.value and p.toggles.defensives.separate end },
@@ -2038,13 +1465,20 @@ local displayRules = {
 }
 
 
+local hasSnapped
+
 function Hekili.Update()
+    if not Hekili:ScriptsLoaded() then
+        Hekili:LoadScripts()
+        return
+    end
+
     local profile = Hekili.DB.profile
 
     local specID = state.spec.id
     if not specID then return end
     
-    local spec = profile.specs[ specID ]
+    local spec = rawget( profile.specs, specID )
     if not spec then return end
 
     local packName = spec.package
@@ -2055,7 +1489,6 @@ function Hekili.Update()
 
     local debug = Hekili.ActiveDebug
 
-    if not Hekili:ScriptsLoaded() then Hekili:LoadScripts() end
     Hekili:ResetThreadClock()
 
     local snaps = nil
@@ -2087,15 +1520,17 @@ function Hekili.Update()
         local maxTime = spec.throttleTime and spec.maxTime or 10
 
         if UI.Active and UI.alpha > 0 and rule( profile ) then
+            for i = #Stack, 1, -1 do tinsert( StackPool, tremove( Stack, i ) ) end
+            for i = #Block, 1, -1 do tinsert( StackPool, tremove( Block, i ) ) end
+
             Hekili:Yield( "Pre-Reset for " .. dispName .. " (from " .. state.display .. ")" )
+            
             state.reset( dispName )            
+
             Hekili:Yield( "Post-Reset for " .. dispName )
 
             -- Clear the stack in case we interrupted ourselves.
             wipe( InUse )
-
-            for i = #Stack, 1, -1 do tinsert( StackPool, tremove( Stack, i ) ) end
-            for i = #Block, 1, -1 do tinsert( StackPool, tremove( Block, i ) ) end
 
             state.system.specID   = specID
             state.system.specInfo = spec
@@ -2146,18 +1581,6 @@ function Hekili.Update()
                 while( event ) do
                     Hekili:Yield( "Pre-Processing event #" .. n )
                     local eStart
-        
-                    --[[ if debugprofilestop() - actualStartTime > 100 then
-                        if not Hekili.HasSnapped then
-                            Hekili.HasSnapped = true
-                            hasSnapshotted = true
-        
-                            Hekili:MakeSnapshot( dispName, true )
-                        end
-                        
-                        if debug then Hekili:Debug( "Escaping events loop due to high CPU usage." ) end
-                        break
-                    end ]]
                     
                     if debug then
                         eStart = debugprofilestop()
@@ -2427,26 +1850,19 @@ function Hekili.Update()
         
                 if debug then
                     Hekili:Debug( "Recommendation #%d is %s at %.2fs (%.2fs).", i, action or "NO ACTION", wait or 60, state.offset + state.delay )
-                    --[[ if not Hekili.Config and not Hekili.HasSnapped and ( dispName == "Primary" or dispName == "AOE" ) and action == nil and InCombatLockdown() and state.level >= 50 then
-                        Hekili.ActiveDebug = true
-                        hasSnapshotted = true
-            
-                        Hekili:MakeSnapshot( dispName, true )
-                        return true
-                    end ]]
                 end
         
                 Hekili:Yield( "Pre-Action" )
 
                 if action then
-                    -- if debug then scripts:ImplantDebugData( slot ) end                    
-        
                     slot.time = state.offset + wait
                     slot.exact_time = state.now + state.offset + wait
                     slot.delay = i > 1 and wait or ( state.offset + wait )
                     slot.since = i > 1 and slot.time - Queue[ i - 1 ].time or 0
                     slot.resources = slot.resources or {}
                     slot.depth = chosen_depth
+
+                    state.scriptID = slot.script
         
                     checkstr = checkstr and ( checkstr .. ':' .. action ) or action
         
@@ -2552,8 +1968,41 @@ function Hekili.Update()
                         checkstr = checkstr and ( checkstr .. ':' .. action ) or action
                         slot[n] = nil
                     end
+
+                    state.delay = 0
+
+                    if debug then
+                        local resInfo
+
+                        for k in orderedPairs( class.resources ) do
+                            local res = rawget( state, k )
+
+                            if res then
+                                local forecast = res.forecast and res.fcount and res.forecast[ res.fcount ]
+                                local final = "N/A"
+                                
+                                if forecast then
+                                    final = string.format( "%.2f @ [%d - %s] %.2f", forecast.v, res.fcount, forecast.e or "none", forecast.t - state.now - state.offset )
+                                end
+
+                                resInfo = ( resInfo and ( resInfo .. ", " ) or "" ) .. string.format( "%s[ %.2f / %.2f || %s ]", k, res.current, res.max, final )
+                            end
+
+                            if resInfo then resInfo = "Resources: " .. resInfo end
+                        end
+
+                        if resInfo then
+                            Hekili:Debug( resInfo )
+                        end
+                    else
+                        if not hasSnapped and profile.autoSnapshot and InCombatLockdown() and state.level >= 50 and ( dispName == "Primary" or dispName == "AOE" ) then
+                            Hekili:Print( "Unable to make recommendation for " .. dispName .. " #" .. i .. "; triggering auto-snapshot..." )
+                            hasSnapped = dispName
+                            return "AutoSnapshot"
+                        end
+                    end
+                    break
                 end
-        
             end
 
             UI.NewRecommendations = checkstr ~= UI.RecommendationsStr
@@ -2567,6 +2016,7 @@ function Hekili.Update()
 
             if debug then
                 Hekili:Debug( "Time spent generating recommendations:  %.2fms",  debugprofilestop() - actualStartTime )
+
                 if Hekili:SaveDebugSnapshot( dispName ) then
                     if snaps then
                         snaps = snaps .. ", " .. dispName

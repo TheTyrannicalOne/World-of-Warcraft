@@ -23,7 +23,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Dalaran.Avisar"] = {
 				["activeSpecRole"] = "DAMAGER",
-				["lastUpdate"] = 1645406110,
+				["lastUpdate"] = 1646075224,
 				["Specializations"] = {
 					[3] = 9562,
 				},
@@ -53,7 +53,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Zul'jin.Zulbathal"] = {
 				["activeSpecRole"] = "DAMAGER",
-				["lastUpdate"] = 1645398971,
+				["lastUpdate"] = 1646075051,
 				["Specializations"] = {
 					9709, -- [1]
 				},
@@ -63,7 +63,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Black Dragonflight.Durlok"] = {
 				["activeSpecRole"] = "TANK",
-				["lastUpdate"] = 1645398516,
+				["lastUpdate"] = 1646074908,
 				["Specializations"] = {
 					[3] = 5631,
 				},
@@ -81,24 +81,24 @@ DataStore_TalentsDB = {
 					nil, -- [6]
 					"2|180844|171|3|", -- [7]
 					"0|180847|171|3|", -- [8]
-					"0|180896|158|2|", -- [9]
+					"0|180896|171|3|", -- [9]
 					"2|180932|158|2|Protection", -- [10]
 					"1|180933|171|3|", -- [11]
 					"1|180935|171|3|Arms", -- [12]
-					"0|180943|158|2|", -- [13]
+					"0|180943|171|3|", -- [13]
 					"1|180944|171|3|Arms", -- [14]
 					[191] = "0|182656|171|3|",
 					[169] = "1|182468|171|3|Arms",
 					[27] = "2|181469|171|3|",
-					[186] = "1|182624|158|2|Protection",
+					[186] = "1|182624|171|3|Protection",
 					[64] = "1|181776|171|3|Fury",
-					[49] = "2|181709|158|2|Protection",
-					[165] = "1|182463|158|2|",
-					[50] = "1|181712|171|3|Fury",
 					[52] = "1|181735|171|3|Fury",
+					[50] = "1|181712|171|3|Fury",
+					[165] = "1|182463|158|2|",
+					[49] = "2|181709|158|2|Protection",
 				},
 				["activeSpecRole"] = "DAMAGER",
-				["lastUpdate"] = 1645777424,
+				["lastUpdate"] = 1646287577,
 				["Specializations"] = {
 					5851, -- [1]
 				},
@@ -106,68 +106,68 @@ DataStore_TalentsDB = {
 				["activeSpecName"] = "Arms",
 				["Class"] = "WARRIOR",
 				["Soulbinds"] = {
-					[1869] = "0|0|0|0|Requires Renown 51",
-					[1425] = "0|0|0|-1|Complete the campaign to unlock General Draven",
+					[1424] = "0|0|0|-1|Complete the campaign to unlock General Draven",
+					[1858] = "0|0|0|0|",
 					[1396] = "3|10|2|2|",
 					[1400] = "3|169|3|1|",
 					[1404] = "1|0|0|-1|",
-					[1547] = "0|0|0|1|",
-					[1872] = "0|0|0|1|",
-					[1857] = "0|0|0|-1|Requires Renown 48",
+					[1421] = "0|0|0|-1|",
+					[1557] = "0|0|0|-1|",
+					[1857] = "0|0|0|-1|",
 					[1546] = "0|0|0|-1|Continue the campaign to unlock Theotar the Mad Duke",
 					[1550] = "0|0|0|-1|",
-					[1554] = "0|0|0|1|",
-					[1873] = "0|0|0|-1|Requires Renown 45",
-					[1877] = "0|0|0|-1|Requires Renown 54",
-					[1005] = "0|0|0|0|Complete the campaign to unlock General Draven",
-					[1423] = "0|0|0|1|Complete the campaign to unlock General Draven",
-					[1860] = "0|0|0|-1|Requires Renown 57",
-					[999] = "0|0|0|-1|",
+					[1869] = "1|0|0|0|",
+					[1873] = "0|0|0|-1|",
+					[1877] = "0|0|0|-1|",
+					[1868] = "3|0|0|-1|",
+					[1549] = "0|0|0|2|",
+					[1545] = "0|0|0|-1|Continue the campaign to unlock Theotar the Mad Duke",
+					[1856] = "0|0|0|-1|",
 					[1393] = "1|0|0|-1|",
 					[1397] = "3|8|3|0|",
 					[1401] = "1|0|0|2|",
 					[1405] = "3|27|3|2|",
-					[1551] = "0|0|0|-1|Continue the campaign to unlock Theotar the Mad Duke",
+					[1866] = "3|11|3|1|",
 					[998] = "0|0|0|-1|",
 					[1000] = "0|0|0|0|",
-					[1421] = "0|0|0|-1|",
-					[1866] = "3|11|3|1|",
+					[1547] = "0|0|0|1|",
+					[1425] = "0|0|0|-1|Complete the campaign to unlock General Draven",
 					[1006] = "0|0|0|2|Complete the campaign to unlock General Draven",
-					[1874] = "0|0|0|-1|Requires Renown 45",
-					[1555] = "0|0|0|2|",
-					[1870] = "0|0|0|2|Requires Renown 51",
+					[1874] = "0|0|0|-1|",
+					[1001] = "0|0|0|1|",
+					[1870] = "3|7|3|2|",
 					[1419] = "0|0|0|-1|Complete the campaign to unlock General Draven",
-					[1426] = "0|0|0|-1|Complete the campaign to unlock General Draven",
-					[1548] = "0|0|0|0|Continue the campaign to unlock Theotar the Mad Duke",
+					[1867] = "1|0|0|-1|",
+					[1871] = "3|0|0|-1|",
 					[1394] = "3|0|0|-1|",
 					[1398] = "3|0|0|-1|",
 					[1402] = "1|0|0|-1|",
 					[1406] = "3|0|0|-1|",
-					[1867] = "0|0|0|-1|Requires Renown 46",
+					[1875] = "0|0|0|0|",
 					[1855] = "0|0|0|1|",
-					[1859] = "0|0|0|2|Requires Renown 53",
-					[1422] = "0|0|0|2|",
-					[1552] = "0|0|0|-1|",
+					[1859] = "0|0|0|2|",
+					[1548] = "0|0|0|0|Continue the campaign to unlock Theotar the Mad Duke",
+					[1426] = "0|0|0|-1|Complete the campaign to unlock General Draven",
 					[1556] = "0|0|0|2|Continue the campaign to unlock Theotar the Mad Duke",
 					[1560] = "0|0|0|-1|",
-					[1420] = "0|0|0|-1|Complete the campaign to unlock General Draven",
-					[1553] = "0|0|0|0|",
 					[1559] = "0|0|0|-1|",
-					[1875] = "0|0|0|0|Requires Renown 49",
-					[1871] = "0|0|0|-1|Requires Renown 55",
+					[1553] = "0|0|0|0|",
+					[1420] = "0|0|0|-1|Complete the campaign to unlock General Draven",
+					[1552] = "0|0|0|-1|",
+					[1422] = "0|0|0|2|",
 					[1395] = "1|165|2|1|",
 					[1399] = "1|0|0|0|",
 					[1403] = "3|0|0|-1|",
-					[1001] = "0|0|0|1|",
+					[1555] = "0|0|0|2|",
 					[997] = "0|0|0|2|Complete the campaign to unlock General Draven",
-					[1856] = "0|0|0|-1|Requires Renown 48",
-					[1545] = "0|0|0|-1|Continue the campaign to unlock Theotar the Mad Duke",
-					[1549] = "0|0|0|2|",
-					[1868] = "0|0|0|-1|Requires Renown 46",
-					[1557] = "0|0|0|-1|",
-					[1876] = "0|0|0|2|Requires Renown 49",
-					[1858] = "0|0|0|0|Requires Renown 53",
-					[1424] = "0|0|0|-1|Complete the campaign to unlock General Draven",
+					[999] = "0|0|0|-1|",
+					[1860] = "0|0|0|-1|",
+					[1423] = "0|0|0|1|Complete the campaign to unlock General Draven",
+					[1005] = "0|0|0|0|Complete the campaign to unlock General Draven",
+					[1872] = "0|0|0|1|",
+					[1876] = "0|0|0|2|",
+					[1551] = "0|0|0|-1|Continue the campaign to unlock Theotar the Mad Duke",
+					[1554] = "0|0|0|1|",
 				},
 				["activeSoulbindID"] = 8,
 			},
@@ -221,7 +221,7 @@ DataStore_TalentsRefDB = {
 					["id"] = 73,
 				}, -- [3]
 			},
-			["Version"] = 42423,
+			["Version"] = 42560,
 		},
 		["PALADIN"] = {
 			["Locale"] = "enUS",
@@ -259,7 +259,7 @@ DataStore_TalentsRefDB = {
 					},
 				}, -- [3]
 			},
-			["Version"] = 42010,
+			["Version"] = 42488,
 		},
 		["MAGE"] = {
 			["Locale"] = "enUS",
@@ -361,6 +361,41 @@ DataStore_TalentsRefDB = {
 					["id"] = 105,
 				}, -- [4]
 			},
+			["Version"] = 42488,
+		},
+		["DEMONHUNTER"] = {
+			["Locale"] = "enUS",
+			["Specializations"] = {
+				{
+					["id"] = 577,
+				}, -- [1]
+				{
+					["id"] = 581,
+					["talents"] = {
+						22502, -- [1]
+						22503, -- [2]
+						22504, -- [3]
+						22505, -- [4]
+						22766, -- [5]
+						22507, -- [6]
+						22324, -- [7]
+						22541, -- [8]
+						22540, -- [9]
+						22508, -- [10]
+						22509, -- [11]
+						22770, -- [12]
+						22546, -- [13]
+						22510, -- [14]
+						22511, -- [15]
+						22512, -- [16]
+						22513, -- [17]
+						22768, -- [18]
+						22543, -- [19]
+						23464, -- [20]
+						21902, -- [21]
+					},
+				}, -- [2]
+			},
 			["Version"] = 42010,
 		},
 		["SHAMAN"] = {
@@ -398,41 +433,6 @@ DataStore_TalentsRefDB = {
 				{
 					["id"] = 264,
 				}, -- [3]
-			},
-			["Version"] = 42010,
-		},
-		["DEMONHUNTER"] = {
-			["Locale"] = "enUS",
-			["Specializations"] = {
-				{
-					["id"] = 577,
-				}, -- [1]
-				{
-					["id"] = 581,
-					["talents"] = {
-						22502, -- [1]
-						22503, -- [2]
-						22504, -- [3]
-						22505, -- [4]
-						22766, -- [5]
-						22507, -- [6]
-						22324, -- [7]
-						22541, -- [8]
-						22540, -- [9]
-						22508, -- [10]
-						22509, -- [11]
-						22770, -- [12]
-						22546, -- [13]
-						22510, -- [14]
-						22511, -- [15]
-						22512, -- [16]
-						22513, -- [17]
-						22768, -- [18]
-						22543, -- [19]
-						23464, -- [20]
-						21902, -- [21]
-					},
-				}, -- [2]
 			},
 			["Version"] = 42010,
 		},

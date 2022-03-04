@@ -1,5 +1,28 @@
 
 EncounterDetailsDB = {
+	["emotes"] = {
+		{
+			["boss"] = "Majordomo Executus",
+		}, -- [1]
+		{
+			["boss"] = "Majordomo Executus",
+		}, -- [2]
+		{
+			{
+				0.2110000000102446, -- [1]
+				"Reckless mortals! None may challenge the Sons of the Living flame!", -- [2]
+				"Majordomo Executus", -- [3]
+				7, -- [4]
+			}, -- [1]
+			{
+				3.838000000003376, -- [1]
+				"You think you've won already? Perhaps you'll need another lesson in pain!", -- [2]
+				"Majordomo Executus", -- [3]
+				7, -- [4]
+			}, -- [2]
+			["boss"] = "Majordomo Executus",
+		}, -- [3]
+	},
 	["encounter_spells"] = {
 		[19785] = {
 			["school"] = 1,
@@ -53,12 +76,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Baron Geddon",
 		},
-		[20605] = {
+		[19516] = {
 			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Flamewaker Protector",
+			["source"] = "Garr",
 		},
 		[19776] = {
 			["school"] = 32,
@@ -67,15 +92,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Flamewaker Priest",
 		},
-		[20620] = {
-			["school"] = 32,
-			["type"] = "BUFF",
+		[20605] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_HEAL"] = true,
 			},
-			["source"] = "Majordomo Executus",
+			["source"] = "Flamewaker Protector",
 		},
 		[20564] = {
 			["school"] = 4,
@@ -105,37 +127,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lucifron",
 		},
-		[19516] = {
-			["school"] = 1,
+		[20620] = {
+			["school"] = 32,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_HEAL"] = true,
 			},
-			["source"] = "Garr",
+			["source"] = "Majordomo Executus",
 		},
-	},
-	["emotes"] = {
-		{
-			["boss"] = "Majordomo Executus",
-		}, -- [1]
-		{
-			["boss"] = "Majordomo Executus",
-		}, -- [2]
-		{
-			{
-				0.2110000000102446, -- [1]
-				"Reckless mortals! None may challenge the Sons of the Living flame!", -- [2]
-				"Majordomo Executus", -- [3]
-				7, -- [4]
-			}, -- [1]
-			{
-				3.838000000003376, -- [1]
-				"You think you've won already? Perhaps you'll need another lesson in pain!", -- [2]
-				"Majordomo Executus", -- [3]
-				7, -- [4]
-			}, -- [2]
-			["boss"] = "Majordomo Executus",
-		}, -- [3]
 	},
 }

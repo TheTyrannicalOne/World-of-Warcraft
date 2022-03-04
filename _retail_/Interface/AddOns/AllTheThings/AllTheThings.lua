@@ -10400,8 +10400,10 @@ local function CacheInfo(t, field)
 		_t.mountID = mountID;
 	end
 	local name, _, icon = GetSpellInfo(id);
-	_t.text = "|cffb19cd9"..name.."|r";
-	_t.icon = icon;
+	if name then
+		_t.text = "|cffb19cd9"..name.."|r";
+		_t.icon = icon;
+	end
 	if itemID then
 		local itemName = select(2, GetItemInfo(itemID));
 		-- item info might not be available on first request, so don't cache the data
@@ -12201,10 +12203,12 @@ local function CacheInfo(t, field)
 	-- patch can be included in the id
 	local tierID = math_floor(id);
 	rawset(t, "tierKey", tierID);
-	-- silly decimals... shift over by 4 and cut off the rest then shift back 2
-	local patch = math_floor(10000 * (id - tierID)) / 100;
-	if patch > 0 then
-		_t.name = tostring(tierID).."."..tostring(patch);
+	local patch_decimal = 100 * (id - tierID);
+	local patch = math_floor(patch_decimal + 0.0001);
+	local rev = math_floor(10 * (patch_decimal - patch) + 0.0001);
+	-- print("tier cache",id,tierID,patch_decimal,patch,rev)
+	if id > tierID then
+		_t.name = tostring(tierID).."."..tostring(patch).."."..tostring(rev);
 	else
 		_t.name = EJ_GetTierInfo(tierID);
 	end

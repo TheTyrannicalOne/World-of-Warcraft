@@ -149,9 +149,7 @@ function ns.StartConfiguration( external )
     } )
 
     ns.UI.Notification.Mover:SetBackdropColor( 0, 0, 0, .8 )
-    ns.UI.Notification.Mover:SetBackdropBorderColor( ccolor.r, ccolor.g, ccolor.b, 1 )    
-    ns.UI.Notification:EnableMouse( true )
-    ns.UI.Notification:SetMovable( true )
+    ns.UI.Notification.Mover:SetBackdropBorderColor( ccolor.r, ccolor.g, ccolor.b, 1 )
     ns.UI.Notification.Mover:Show()
 
     local f = ns.UI.Notification.Mover
@@ -166,12 +164,21 @@ function ns.StartConfiguration( external )
     f.Header:SetJustifyH( "CENTER" )
     f.Header:Show()
 
+    if HekiliNotificationMover:GetFrameLevel() > HekiliNotification:GetFrameLevel() then
+        local orig = HekiliNotificationMover:GetFrameLevel()
+        HekiliNotification:SetFrameLevel(orig)
+        HekiliNotificationMover:SetFrameLevel(orig-1)
+    end
+
+    ns.UI.Notification:EnableMouse( true )
+    ns.UI.Notification:SetMovable( true )
+
     HekiliNotification:SetScript( "OnMouseDown", Mover_OnMouseDown )
     HekiliNotification:SetScript( "OnMouseUp", Mover_OnMouseUp )
     HekiliNotification:SetScript( "OnEnter", function( self )
         local H = Hekili
 
-        if not H.Pause and H.Config then
+        if H.Config then
             GameTooltip:SetOwner( self, "ANCHOR_TOPRIGHT" )
         
             GameTooltip:SetText( "Hekili: Notifications" )
@@ -204,6 +211,10 @@ function ns.StartConfiguration( external )
             if not v:IsAnchoringRestricted() then
                 v:EnableMouse( true )
                 v:SetMovable( true )
+
+                for id, btn in ipairs( ns.UI.Buttons[ i ] ) do
+                    btn:EnableMouse( false )
+                end
             
                 local left, right, top, bottom = v:GetPerimeterButtons()
                 if left and right and top and bottom then
@@ -247,13 +258,13 @@ function ns.StartConfiguration( external )
             v.Backdrop:SetScript( "OnEnter", function( self )
                 local H = Hekili
         
-                if not H.Pause and H.Config then
+                if H.Config then
                     GameTooltip:SetOwner( self, "ANCHOR_TOPRIGHT" )
         
                     GameTooltip:SetText( "Hekili: " .. i )
                     GameTooltip:AddLine( "Left-click and hold to move.", 1, 1, 1 )
                     GameTooltip:AddLine( "Right-click to open " .. i .. " display settings.", 1, 1, 1 )
-                    if not H:IsDisplayActive( i, true, "OnEnter" ) then GameTooltip:AddLine( "This display is not currently active.", 0.5, 0.5, 0.5 ) end
+                    if not H:IsDisplayActive( i, true ) then GameTooltip:AddLine( "This display is not currently active.", 0.5, 0.5, 0.5 ) end
                     GameTooltip:Show()
                 end
             end )
@@ -316,8 +327,19 @@ function ns.StopConfiguration()
     local scaleFactor = Hekili:GetScale()
     local mouseInteract = Hekili.Pause
 
-    for i, v in ipairs( ns.UI.Buttons ) do
-        for j, btn in ipairs( v ) do
+    for id, display in pairs( Hekili.DisplayPool ) do
+        display:EnableMouse( false )
+        if not display:IsAnchoringRestricted() then display:SetMovable( true ) end
+
+        -- v:SetBackdrop( nil )
+        if display.Header then
+            display.Header:Hide()
+        end
+        if display.Backdrop then
+            display.Backdrop:Hide()
+        end
+
+        for i, btn in ipairs( display.Buttons ) do
             btn:EnableMouse( mouseInteract )
             btn:SetMovable( false )
         end
@@ -328,18 +350,8 @@ function ns.StopConfiguration()
     HekiliNotification.Mover:Hide()
     -- HekiliNotification.Mover.Header:Hide()
 
-    for i, v in pairs( ns.UI.Displays ) do
-        v:EnableMouse( false )
-        if not v:IsAnchoringRestricted() then v:SetMovable( true ) end
-        -- v:SetBackdrop( nil )
-        if v.Header then
-            v.Header:Hide()
-        end
-        if v.Backdrop then
-            v.Backdrop:Hide()
-        end
-    end
-
+    Hekili:UpdateDisplayVisibility()
+    
     Hekili.MakeDefaults = false
 end
 
@@ -897,7 +909,6 @@ do
             end
     
             local now = GetTime()
-   
     
             self.recTimer = self.recTimer - elapsed
     
@@ -905,12 +916,12 @@ do
                 local alpha = self.alpha
     
                 for i, b in ipairs( self.Buttons ) do
-                    local rec = self.Recommendations[ i ]
+                    b.Recommendation = self.Recommendations[ i ]
     
-                    local action = rec.actionName
-                    local caption = rec.caption
-                    local indicator = rec.indicator
-                    local keybind = rec.keybind
+                    local action = b.Recommendation.actionName
+                    local caption = b.Recommendation.caption
+                    local indicator = b.Recommendation.indicator
+                    local keybind = b.Recommendation.keybind
     
                     local ability = class.abilities[ action ]
     
@@ -923,7 +934,12 @@ do
                         end
     
                         if action ~= b.lastAction or self.NewRecommendations then
-                            b.Texture:SetTexture( rec.texture or ability.texture or GetSpellTexture( ability.id ) )
+                            if ability.item then
+                                b.Image = b.Recommendation.texture or ability.texture or select( 10, GetItemInfo( ability.item ) )
+                            else
+                                b.Image = b.Recommendation.texture or ability.texture or GetSpellTexture( ability.id )
+                            end
+                            b.Texture:SetTexture( b.Image )
                             b.Texture:SetTexCoord( unpack( b.texCoords ) )
                             b.lastAction = action
                         end
@@ -990,12 +1006,11 @@ do
                     end
 
                     b.Action = action
-                    b.Image = rec.texture
                     b.Text = caption
                     b.Indicator = indicator
                     b.Keybind = keybind                    
                     b.Ability = ability
-                    b.ExactTime = rec.exact_time
+                    b.ExactTime = b.Recommendation.exact_time
                 end
     
                 -- Force glow, range, SpellFlash updates.
@@ -1007,7 +1022,6 @@ do
                 self.alphaCheck = 0.5
     
                 self:RefreshCooldowns()
-                self.NewRecommendations = false
             end
     
             local postRecs = debugprofilestop()
@@ -1054,13 +1068,13 @@ do
                         local ok, err = coroutine.resume( thread )
                         if not ok then
                             Hekili:Error( "Update: " .. err )
-                            error( err )
+                            pcall( error, err )
                         end
                         local now = debugprofilestop()
                         
                         self.activeThreadTime = self.activeThreadTime + ( now - start )
     
-                        if coroutine.status( thread ) == "dead" then
+                        if coroutine.status( thread ) == "dead" or err then
                             self.activeThread = nil
                             self.refreshTimer = 0
 
@@ -1107,6 +1121,10 @@ do
                                 self.firstThreadCompleted = true
                             end
                         end
+
+                        if ok and err == "AutoSnapshot" then
+                            Hekili:MakeSnapshot( true )
+                        end
                     end
                 end
             end
@@ -1116,7 +1134,7 @@ do
             if self.HasRecommendations then
                 self.glowTimer = self.glowTimer - elapsed
         
-                if self.glowTimer < 0 and not HekiliDisplayPrimary.activeThread then
+                if self.glowTimer < 0 or self.NewRecommendations then
                     if conf.glow.enabled then
                         for i, b in ipairs( self.Buttons ) do
                             if not b.Action then break end
@@ -1167,7 +1185,7 @@ do
         
                 self.rangeTimer = self.rangeTimer - elapsed
         
-                if self.rangeTimer < 0 then
+                if self.rangeTimer < 0 or self.NewRecommendations then
                     for i, b in ipairs( self.Buttons ) do
                         local a = b.Ability
         
@@ -1320,7 +1338,7 @@ do
         
                 self.targetTimer = self.targetTimer - elapsed
         
-                if self.targetTimer < 0 then
+                if self.targetTimer < 0 or self.NewRecommendations then
                     local b = self.Buttons[ 1 ] 
         
                     if conf.targets.enabled then
@@ -1360,15 +1378,14 @@ do
         
                 local postTargets = debugprofilestop()
         
-                local rec = self.Recommendations[ 1 ]
+                local b = self.Buttons[ 1 ]
         
                 self.delayTimer = self.delayTimer - elapsed
         
-                if rec.exact_time and self.delayTimer < 0 then
-                    local b = self.Buttons[ 1 ]
-                    local a = class.abilities[ rec.actionName ]
+                if b.ExactTime and ( self.delayTimer < 0 or self.NewRecommendations ) then
+                    local a = b.Ability
         
-                    local delay = rec.exact_time - now
+                    local delay = b.ExactTime - now
                     local moment = 0
         
                     if delay > 0 then
@@ -1424,7 +1441,7 @@ do
                             elseif delay < 1.5 then
                                 b.DelayIcon:SetVertexColor( 1.0, 1.0, 0.0, 1.0 )
                             else
-                                b.DelayIcon:SetVertexColor( 1.0, 0.0, 0.0, 1.0)
+                                b.DelayIcon:SetVertexColor( 1.0, 0.0, 0.0, 1.0 )
                             end
                         else
                             b.DelayIcon:Hide()
@@ -1445,6 +1462,7 @@ do
                     self.delayTimer = pulseDelay
                 end
     
+                self.NewRecommendations = false
                 local finish = debugprofilestop()
         
                 if self.updateTime then
@@ -1624,8 +1642,11 @@ do
                 self:UpdateAlpha()
     
             elseif event == "SPELLS_CHANGED" then
-                for i, b in ipairs( self.Buttons ) do                
-                    b.Image = nil
+                for i, b in ipairs( self.Buttons ) do
+                    if not b.Ability.item then
+                        b.Image = b.Ability.texture or GetSpellTexture( b.Action )
+                        b.Texture:SetTexture( b.Image )
+                    end
                 end
                 self.NewRecommendations = true
     
@@ -1965,8 +1986,8 @@ do
 
         local specEnabled = GetSpecialization()
         specEnabled = specEnabled and GetSpecializationInfo( specEnabled )
-        specEnabled = specEnabled and profile.specs[ specEnabled ]
-        specEnabled = specEnabled and specEnabled.enabled or false
+        specEnabled = specEnabled and rawget( profile.specs, specEnabled )
+        specEnabled = specEnabled and rawget( specEnabled, "enabled" ) or false
 
         if profile.enabled and specEnabled then
             for i, display in pairs( profile.displays ) do
@@ -2427,8 +2448,8 @@ do
                 self:SetMovable( true )
 
             else ]]
-            if ( H.Pause and ns.queue[ dispID ] and ns.queue[ dispID ][ id ] ) then
-                H:ShowDiagnosticTooltip( ns.queue[ dispID ][ id ] )
+            if ( H.Pause and ( d.HasRecommendations and HekiliDisplayPrimary.activeThread == nil ) and b.Recommendation ) then
+                H:ShowDiagnosticTooltip( b.Recommendation )
             end
         end )
 
@@ -2655,21 +2676,14 @@ local key_cache = setmetatable( {}, {
 
 
 function Hekili:ShowDiagnosticTooltip( q )
+    if not q.actionName or not class.abilities[ q.actionName ].name then return end
+
     local tt = GameTooltip
     local fmt = ns.lib.Format
 
-    -- Grab the default backdrop and copy it with a solid background.
-    -- local backdrop = GameTooltip:GetBackdrop()
-
-    -- if backdrop then
-    --    backdrop.bgFile = [[Interface\Buttons\WHITE8X8]]
-        -- tt:SetBackdrop(backdrop)
-        -- tt:SetBackdropColor(0, 0, 0, 1)
-    -- end
-
-    tt:SetOwner(UIParent, "ANCHOR_CURSOR")
-    tt:SetText( class.abilities[q.actionName].name )
-    tt:AddDoubleLine(q.listName .. " #" .. q.action, "+" .. ns.formatValue(round(q.time or 0, 2)), 1, 1, 1, 1, 1, 1)
+    tt:SetOwner( UIParent, "ANCHOR_CURSOR" )
+    tt:SetText( class.abilities[ q.actionName ].name )
+    tt:AddDoubleLine( q.listName .. " #" .. q.action, "+" .. ns.formatValue(round(q.time or 0, 2)), 1, 1, 1, 1, 1, 1 )
 
     if q.resources and q.resources[q.resource_type] then
         tt:AddDoubleLine(q.resource_type, ns.formatValue(q.resources[q.resource_type]), 1, 1, 1, 1, 1, 1)

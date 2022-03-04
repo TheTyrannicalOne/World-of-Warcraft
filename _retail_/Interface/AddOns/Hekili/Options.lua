@@ -54,7 +54,7 @@ do
 
             local i = 1
             while EJ_GetInstanceByIndex( i, true ) do
-                local instanceID, name = EJ_GetInstanceByIndex( i, true )                
+                local instanceID, name = EJ_GetInstanceByIndex( i, true )
                 i = i + 1
 
                 local j = 1
@@ -124,7 +124,7 @@ local oneTimeFixes = {
     wipeSpecPotions_20180910_1 = function( p )
         local latestVersion = 20180919.1
 
-        for id, spec in pairs( class.specs ) do            
+        for id, spec in pairs( class.specs ) do
             if id > 0 and ( not p.specs[ id ].potionsReset or type( p.specs[ id ].potionsReset ) ~= 'number' or p.specs[ id ].potionsReset < latestVersion ) then
                 p.specs[ id ].potion = spec.potion
                 p.specs[ id ].potionsReset = latestVersion
@@ -169,7 +169,7 @@ local oneTimeFixes = {
             m.dual = nil
             m.reactive = nil
             m.type = nil
-            
+
             if types == "AutoSingle" then
                 m.automatic = true
                 m.single = true
@@ -182,7 +182,7 @@ local oneTimeFixes = {
             elseif types == "ReactiveDual" then
                 m.reactive = true
             end
-        
+
             if not m[ m.value ] then
                 if     m.automatic then m.value = "automatic"
                 elseif m.single    then m.value = "single"
@@ -272,10 +272,25 @@ local oneTimeFixes = {
             end
         end
     end,
+
+    forceEnableAllClassesOnceDueToBug_20220225 = function( p )
+        for id, spec in pairs( p.specs ) do
+            spec.enabled = true
+        end
+    end,
+
+    forceReloadAllDefaultPriorities_20220228 = function( p )        
+        for name, pack in pairs( p.packs ) do
+            if pack.builtIn then
+                Hekili.DB.profile.packs[ name ] = nil
+                Hekili:RestoreDefault( name )
+            end
+        end
+    end,
 }
 
 
-function Hekili:RunOneTimeFixes()   
+function Hekili:RunOneTimeFixes()
     local profile = Hekili.DB.profile
     if not profile then return end
 
@@ -284,10 +299,13 @@ function Hekili:RunOneTimeFixes()
     for k, v in pairs( oneTimeFixes ) do
         if not profile.runOnce[ k ] then
             profile.runOnce[k] = true
-            v( profile )
+            local ok, err = pcall( v, profile )
+            if err then
+                Hekili:Error( "One-Time update failed: " .. k .. ": " .. err )
+                profile.runOnce[ k ] = nil
+            end
         end
     end
-
 end
 
 
@@ -336,7 +354,7 @@ local displayTemplate = {
     visibility = {
         advanced = false,
 
-        mode = { 
+        mode = {
             aoe = true,
             automatic = true,
             dual = true,
@@ -476,14 +494,13 @@ local displayTemplate = {
 
 
 local actionTemplate = {
+    action = "heart_essence",
     enabled = true,
-    action = "wait",
     criteria = "",
     caption = "",
     description = "",
 
     -- Shared Modifiers
-    chain = 0,  -- NYI
     early_chain_if = "",  -- NYI
 
     cycle_targets = 0,
@@ -496,8 +513,8 @@ local actionTemplate = {
 
     travel_speed = nil,
 
-    line_cd = 0,
-    moving = 0,
+    enable_moving = false,
+    moving = nil,
     sync = "",
 
     use_while_casting = 0,
@@ -506,12 +523,12 @@ local actionTemplate = {
     wait_on_ready = 0, -- NYI
 
     -- Call/Run Action List
-    list_name = "default",
+    list_name = nil,
     strict = nil,
 
     -- Pool Resource
     wait = "0.5",
-    for_next = 1,
+    for_next = 0,
     extra_amount = "0",
 
     -- Potion
@@ -526,7 +543,7 @@ local actionTemplate = {
     var_name = "unnamed",
 
     -- Wait
-    sec = 1,
+    sec = "1",
 }
 
 
@@ -537,15 +554,23 @@ local packTemplate = {
     author = UnitName("player"),
     desc = "This is a package of action lists for Hekili.",
     source = "",
-    date = date("%Y-%m-%d %H:%M"),
+    date = tonumber( date("%Y%M%D.%H%M") ),
     warnings = "",
 
     hidden = false,
 
     lists = {
         precombat = {
+            {
+                enabled = false,
+                action = "heart_essence",
+            },
         },
         default = {
+            {
+                enabled = false,
+                action = "heart_essence",
+            },
         },
     }
 }
@@ -572,7 +597,7 @@ function Hekili:GetDefaults()
                 },
 
                 snapshot = {
-                    key = "ALT-SHIFT-[",                    
+                    key = "ALT-SHIFT-[",
                 },
 
                 mode = {
@@ -626,13 +651,13 @@ function Hekili:GetDefaults()
                 }
             },
 
-            specs = {                              
+            specs = {
                 ['**'] = specTemplate
             },
 
             packs = {
                 ['**'] = packTemplate
-            },                       
+            },
 
             notifications = {
                 enabled = true,
@@ -687,7 +712,7 @@ function Hekili:GetDefaults()
                     numIcons = 3,
                     order = 2,
 
-                    flash = { 
+                    flash = {
                         color = { 0, 1, 0, 1 },
                     },
 
@@ -880,9 +905,9 @@ do
             set = true
         end
 
-        if not set then 
+        if not set then
             val = type( val ) == 'string' and val:trim() or val
-            conf[ option ] = val 
+            conf[ option ] = val
         end
 
         self:BuildUI()
@@ -952,8 +977,8 @@ do
         color = {
             type = "color",
             name = "Color",
-            order = 4, 
-            width = 1.5           
+            order = 4,
+            width = 1.5
         }
     }
 
@@ -1218,7 +1243,7 @@ do
                             },
 
                             primaryIcon = {
-                                type = "group",                                
+                                type = "group",
                                 name = "Primary Icon",
                                 inline = true,
                                 order = 15,
@@ -1244,7 +1269,7 @@ do
                                         step = 1,
 
                                         width = 1.49,
-                                        order = 2,                                            
+                                        order = 2,
                                     },
                                 },
                             },
@@ -1496,7 +1521,7 @@ do
                                 order = 2,
                                 args = {
                                     always = {
-                                        type = "range",                                        
+                                        type = "range",
                                         name = "Always",
                                         desc = "If non-zero, this display is always shown in PvE areas, both in and out of combat.",
                                         min = 0,
@@ -1569,7 +1594,7 @@ do
                                 order = 2,
                                 args = {
                                     always = {
-                                        type = "range",                                        
+                                        type = "range",
                                         name = "Always",
                                         desc = "If non-zero, this display is always shown in PvP areas, both in and out of combat.",
                                         min = 0,
@@ -1635,7 +1660,7 @@ do
                                 type = "toggle",
                                 name = "Enabled",
                                 order = 1,
-                                width = 'full',                                
+                                width = 'full',
                             },
 
                             queued = {
@@ -1681,7 +1706,7 @@ do
                                         min = -max( data.primaryHeight, data.queue.height ),
                                         max = max( data.primaryHeight, data.queue.height ),
                                         step = 1,
-                                    }                                    
+                                    }
                                 }
                             },
 
@@ -1722,7 +1747,7 @@ do
                                         dialogControl = 'LSM30_Font',
                                         values = LSM:HashTable("font"),
                                     },
-                            
+
                                     queuedFontSize = {
                                         type = "range",
                                         name = "Size",
@@ -1732,7 +1757,7 @@ do
                                         step = 1,
                                         width = 1.5
                                     },
-                            
+
                                     queuedFontStyle = {
                                         type = "select",
                                         name = "Style",
@@ -1740,12 +1765,12 @@ do
                                         values = fontStyles,
                                         width = 1.5
                                     },
-                            
+
                                     queuedColor = {
                                         type = "color",
                                         name = "Color",
-                                        order = 4, 
-                                        width = 1.5           
+                                        order = 4,
+                                        width = 1.5
                                     }
                                 },
                             },
@@ -1770,7 +1795,7 @@ do
                                         order = 6,
                                         width = "full",
                                     },
-        
+
                                     cPortZoom = {
                                         type = "range",
                                         name = "ConsolePort Button Zoom",
@@ -2049,7 +2074,7 @@ do
                                     Hekili.DB.profile.flashTexture = value
                                 end,
                                 values = {
-                                    ["Interface\\Cooldown\\star4"] = "Star (Default)",                                    
+                                    ["Interface\\Cooldown\\star4"] = "Star (Default)",
                                     ["Interface\\Cooldown\\ping4"] = "Circle",
                                     ["Interface\\Cooldown\\starburst"] = "Starburst",
                                     ["Interface\\AddOns\\Hekili\\Textures\\MonoCircle2"] = "Monochrome Circle Thin",
@@ -2109,7 +2134,7 @@ do
                                 name = "Enabled for Queued Icons",
                                 desc = "If enabled, descriptive captions will be shown for queued abilities, if appropriate.",
                                 order = 2,
-                                width = "full",                                
+                                width = "full",
                                 disabled = function () return data.captions.enabled == false end,
                             },
 
@@ -2120,7 +2145,7 @@ do
                                 order = 3,
                                 args = {
                                     align = {
-                                        type = "select",                                        
+                                        type = "select",
                                         name = "Alignment",
                                         order = 1,
                                         width = "full",
@@ -2240,12 +2265,12 @@ do
                             type = {
                                 type = "select",
                                 name = "Indicator",
-                                desc = "Specify the type of indicator to use when you should wait before casting the ability.",                                
+                                desc = "Specify the type of indicator to use when you should wait before casting the ability.",
                                 values = {
                                     __NA = "No Indicator",
                                     ICON = "Show Icon (Color)",
                                     TEXT = "Show Text (Countdown)",
-                                },                        
+                                },
                                 width = "full",
                                 order = 1,
                             },
@@ -2298,7 +2323,7 @@ do
                                         min = -max( data.primaryHeight, data.queue.height ),
                                         max = max( data.primaryHeight, data.queue.height ),
                                         step = 1,
-                                    }                                    
+                                    }
                                 }
                             },
 
@@ -2370,7 +2395,7 @@ do
                                         width = "full",
                                     }
                                 }
-                            },                            
+                            },
                         }
                     },
                 },
@@ -2407,7 +2432,7 @@ do
                 displays = {
                     type = "header",
                     name = "Displays",
-                    order = 10,                    
+                    order = 10,
                 },
 
 
@@ -2518,7 +2543,7 @@ do
                             order = 5,
                             args = fontElements,
                         },
-                    }                    
+                    }
                 },
 
                 fontHeader = {
@@ -2533,7 +2558,7 @@ do
                             "To modify one bit of text individually, select the Display (at left) and select the appropriate text.",
                     order = 960.01,
                 },
-            
+
                 font = {
                     type = "select",
                     name = "Font",
@@ -2556,7 +2581,7 @@ do
                         Hekili:BuildUI()
                     end,
                 },
-        
+
                 fontSize = {
                     type = "range",
                     name = "Size",
@@ -2580,7 +2605,7 @@ do
                     end,
                     width = 1.5,
                 },
-        
+
                 fontStyle = {
                     type = "select",
                     name = "Style",
@@ -2678,7 +2703,7 @@ do
                                         separator = {
                                             type = "header",
                                             name = "Import String",
-                                            order = 1.5,                                             
+                                            order = 1.5,
                                         },
 
                                         selectExisting = {
@@ -2863,7 +2888,7 @@ do
                                     hidden = function () return shareDB.importStage ~= 2 end,
                                 }
                             },
-                            plugins = {                                
+                            plugins = {
                             }
                         },
 
@@ -2920,7 +2945,7 @@ do
 
                                                 return not hasDisplay
                                             end,
-                                        },                                        
+                                        },
                                     },
                                     plugins = {
                                         displays = {}
@@ -2944,7 +2969,7 @@ do
                                             i = i + 1
                                         end
 
-                                        return shareDB.exportStage ~= 0 
+                                        return shareDB.exportStage ~= 0
                                     end,
                                 },
 
@@ -2996,7 +3021,7 @@ do
                                                         shareDB.styleName = val
                                                     end,
                                                     order = 2,
-                                                    width = "double",                                            
+                                                    width = "double",
                                                 },
 
                                                 storeStyle = {
@@ -3022,7 +3047,7 @@ do
                                                     disabled = function ()
                                                         return shareDB.export == "" or shareDB.styleName == ""
                                                     end,
-                                                }                
+                                                }
                                             }
                                         },
 
@@ -3150,7 +3175,7 @@ ns.AbilitySettings = function ()
         }
     }
 
-    local abilities = {} 
+    local abilities = {}
     for k, v in pairs( class.abilities ) do
         if not v.unlisted and v.name and not abilities[ v.name ] and ( v.id > 0 or v.id < -99 ) then
             abilities[ v.name ] = v.key
@@ -3365,7 +3390,7 @@ ns.TrinketSettings = function ()
                             entries = entries + 1
                             local toggle = option.args[ setting.key ].args[ i .. ':' .. a ] or {}
 
-                            local name = type( setting.name ) == 'function' and setting.name() or setting.name 
+                            local name = type( setting.name ) == 'function' and setting.name() or setting.name
 
                             toggle.type = "toggle"
                             toggle.name = "Disable " .. name .. " in |cFFFFD100" .. ( list.Name or "(no list name)" ) .. " (#" .. a .. ")|r"
@@ -3404,7 +3429,7 @@ do
         source = UnitName( "player" ) .. " @ " .. GetRealmName(),
         apl = "Paste your SimulationCraft action priority list or profile here.",
 
-        lists = {},        
+        lists = {},
         warnings = ""
     }
 
@@ -3528,7 +3553,7 @@ do
         end
 
         if not output.default then output.default = {} end
-        if not output.precombat then output.precombat = {} end  
+        if not output.precombat then output.precombat = {} end
 
         if count == 0 then
             AddWarning( "No action lists were imported from this profile." )
@@ -3600,8 +3625,6 @@ function Hekili:NewGetOption( info )
     if not option then return end
 
     if config[ option ] then return config[ option ] end
-
-    return
 end
 
 
@@ -3617,8 +3640,6 @@ function Hekili:NewSetOption( info, value )
 
     if option == 'qsShowTypeGroup' then config[option] = value
     else config[option] = nValue end
-
-    return
 end
 
 
@@ -3717,7 +3738,7 @@ do
             if not class.potionList[ p ] then
                 return class.potions[ p ] and class.potions[ p ].key or p
             end
-        end 
+        end
 
         return self.DB.profile.specs[ spec ][ option ]
     end
@@ -3814,7 +3835,7 @@ do
                 desc = "If checked, the addon will not recommend " .. k .. " unless you are in a boss fight (or encounter).  If left unchecked, " .. k .. " can be recommended in any type of fight.",
                 width = 1.5,
                 order = 1.1,
-            },                    
+            },
 
             keybind = {
                 type = "input",
@@ -3940,7 +3961,7 @@ do
                         desc = "If checked, the addon will not recommend " .. k .. " unless you are in a boss fight (or encounter).  If left unchecked, " .. k .. " can be recommended in any type of fight.",
                         width = 1.5,
                         order = 1.1,
-                    },                    
+                    },
 
                     keybind = {
                         type = "input",
@@ -4175,7 +4196,7 @@ do
                                 end
                                 output = output .. "\n"
                             end
-                            
+
                             return output
                         end,
                         fontSize = "medium",
@@ -4347,7 +4368,7 @@ do
         if type( useName ) == "function" then
             useName = useName()
         end
-        
+
         e = tlEntry( section .. "Label" )
         e.type = "description"
         e.name = useName or section
@@ -4366,7 +4387,6 @@ do
             if db[ section .. "Description" ] then db[ section .. "Description" ].hidden = true end
         end
 
-        local settings = Hekili.DB.profile.specs[ specID ]
         local count, offset = 0, 0
 
         for ability, isMember in orderedPairs( tAbilities ) do
@@ -4378,7 +4398,7 @@ do
                     e.order = nToggles + 0.1 + offset
                     e.width = "full"
                     e.hidden = hider
-                  
+
                     offset = offset + 0.001
                 end
 
@@ -4462,7 +4482,7 @@ do
         e.order = nToggles + 0.993
         e.width = "full"
         e.hidden = hider
-        
+
         e = tlEntry( section .. "AddBtn" )
         e.type = "execute"
         e.name = ""
@@ -4475,7 +4495,7 @@ do
             config.adding[ section ]  = true
         end
         e.hidden = hider
-        
+
 
         e = tlEntry( section .. "AddText" )
         e.type = "description"
@@ -4487,7 +4507,7 @@ do
             return hider() or config.adding[ section ]
         end
 
-        
+
         e = tlEntry( section .. "Add" )
         e.type = "select"
         e.name = ""
@@ -4529,7 +4549,7 @@ do
             Hekili:EmbedSpecOptions()
         end
         e.hidden = hider
-        
+
 
         e = tlEntry( section .. "ReloadText" )
         e.type = "description"
@@ -4538,7 +4558,7 @@ do
         e.order = nToggles + 0.999
         e.width = 1.35
         e.hidden = hider
-        
+
 
         options.args.toggles.plugins[ section ] = db
     end
@@ -4591,15 +4611,15 @@ do
                                     order = 0,
                                     width = "full",
                                 },
-        
-        
+
+
                                 --[[ packInfo = {
                                     type = 'group',
                                     name = "",
                                     inline = true,
                                     order = 1,
                                     args = {
-                                        
+
                                     }
                                 }, ]]
 
@@ -4648,7 +4668,7 @@ do
                                     type = 'description',
                                     name = '',
                                     order = 1.2,
-                                    width = 'full'                                            
+                                    width = 'full'
                                 },
 
                                 potion = {
@@ -4659,11 +4679,11 @@ do
                                     width = 3,
                                     values = function ()
                                         local v = {}
-        
+
                                         for k, p in pairs( class.potionList ) do
                                             if k ~= "default" then v[ k ] = p end
                                         end
-        
+
                                         return v
                                     end,
                                 },
@@ -4671,7 +4691,7 @@ do
                                 blankLine2 = {
                                     type = 'description',
                                     name = '',
-                                    order = 2.1, 
+                                    order = 2.1,
                                     width = 'full'
                                 }
 
@@ -4732,7 +4752,7 @@ do
                                         if Hekili:HasPetBasedTargetSpell() then
                                             local spell = Hekili:GetPetBasedTargetSpell()
                                             local name, _, tex = GetSpellInfo( spell )
-                                            
+
                                             msg = msg .. "\n\n|T" .. tex .. ":0|t |cFFFFD100" .. name .. "|r is on your action bar and will be used for all your " .. UnitClass("player") .. " pets."
                                         else
                                             msg = msg .. "\n\n|cFFFF0000Requires pet ability on one of your action bars.|r"
@@ -4772,7 +4792,7 @@ do
 
                                             local n = 0
 
-                                            for spell in pairs( spells ) do                                            
+                                            for spell in pairs( spells ) do
                                                 if type( spell ) == "number" then
                                                     n = n + 1
 
@@ -4798,7 +4818,7 @@ do
                                                 out = out .. "\n\n|cFFFF0000WARNING!|r  Pet-based target detection requires |cFFFFD100enemy nameplates|r to be enabled."
                                             end
                                         end
-                                        
+
                                         return out
                                     end,
                                     fontSize = "medium",
@@ -4811,7 +4831,7 @@ do
                                         return false
                                     end,
                                     order = 3.11,
-                                },                            
+                                },
 
                                 -- Damage Detection Quasi-Group
                                 damage = {
@@ -4820,7 +4840,7 @@ do
                                     desc = "If checked, the addon will count any enemies that you've hit (or hit you) within the past several seconds as active enemies.  " ..
                                         "This is typically desirable for |cFFFF0000ranged|r specializations.",
                                     width = "full",
-                                    order = 4,                                    
+                                    order = 4,
                                 },
 
                                 damageDots = {
@@ -4966,12 +4986,12 @@ do
                                     name = NewFeature .. " Regular Refresh Interval",
                                     desc = "In the absence of combat events, this addon will allow itself to update according to the specified interval.  Specifying a higher value may reduce CPU usage but will result in slower updates, though " ..
                                         "combat events will always force the addon to update more quickly.\n\nIf set to |cffffd1001.0|rs, the addon will not provide new updates until 1 second after its last update (unless forced by a combat event).\n\n" ..
-                                        "Default value:  |cffffd1000.1|rs.",
+                                        "Default value:  |cffffd1000.5|rs.",
                                     order = 1.1,
                                     width = 1.5,
                                     min = 0.05,
-                                    max = 0.5,
-                                    step = 1,
+                                    max = 1,
+                                    step = 0.05,
                                     hidden = function () return self.DB.profile.specs[ id ].throttleRefresh == false end,
                                 },
 
@@ -4980,12 +5000,12 @@ do
                                     name = NewFeature .. " Combat Refresh Interval",
                                     desc = "When routine combat events occur, the addon will update more frequently than its Regular Refresh Interval.  Specifying a higher value may reduce CPU usage but will result in slower updates, though " ..
                                         "critical combat events will always force the addon to update more quickly.\n\nIf set to |cffffd1000.2|rs, the addon will not provide new updates until 0.2 seconds after its last update (unless forced by a critical combat event).\n\n" ..
-                                        "Default value:  |cffffd1000.5|rs.",
+                                        "Default value:  |cffffd1000.1|rs.",
                                     order = 1.2,
                                     width = 1.5,
                                     min = 0.05,
                                     max = 0.5,
-                                    step = 1,
+                                    step = 0.05,
                                     hidden = function () return self.DB.profile.specs[ id ].throttleRefresh == false end,
                                 },
 
@@ -5020,7 +5040,7 @@ do
                                     width = 2,
                                     hidden = function () return self.DB.profile.specs[ id ].throttleTime == false end,
                                 },
-                                
+
                                 throttleSpace = {
                                     type = "description",
                                     name = " ",
@@ -5051,7 +5071,7 @@ do
                         }
                     },
                 }
-                
+
                 local specCfg = class.specs[ id ] and class.specs[ id ].settings
                 local specProf = self.DB.profile.specs[ id ]
 
@@ -5187,6 +5207,11 @@ do
         elseif option == 'newListName' then return packControl.newListName end
 
         if not data then return end
+
+        if not data[ actionID ] then
+            actionID = 1
+            packControl.actionID = "0001"
+        end
         data = data[ actionID ]
 
         if option == "inputName" or option == "selectName" then
@@ -5274,7 +5299,7 @@ do
             packControl[ option ] = GetCurrentSpec()
         end
 
-        if packControl[ option ] ~= nil then return packControl[ option ] end        
+        if packControl[ option ] ~= nil then return packControl[ option ] end
 
         if subcat == 'lists' then return self:GetActionOption( info ) end
 
@@ -5304,7 +5329,7 @@ do
         if not data then return end
 
         if type( val ) == 'string' then val = val:trim() end
-        
+
         if option == "desc" then
             -- Auto-strip comments prefix
             val = val:gsub( "^#+ ", "" )
@@ -5432,7 +5457,7 @@ do
                                         separator = {
                                             type = "header",
                                             name = "Import String",
-                                            order = 1.5,                                             
+                                            order = 1.5,
                                         },
 
                                         importString = {
@@ -5619,7 +5644,7 @@ do
                                     hidden = function () return shareDB.importStage ~= 2 end,
                                 }
                             },
-                            plugins = {                                
+                            plugins = {
                             }
                         },
 
@@ -5664,7 +5689,7 @@ do
                                         else
                                             shareDB.export = ""
                                         end
-                                        return shareDB.export 
+                                        return shareDB.export
                                     end,
                                     set = function () end,
                                     width = "full",
@@ -5673,7 +5698,7 @@ do
                             },
                         }
                     }
-                },                
+                },
             },
             plugins = {
                 packages = {},
@@ -5728,7 +5753,7 @@ do
                                     width = 3,
                                     order = 0.1,
                                     hidden = not data.builtIn
-                                },                                
+                                },
 
                                 lb01 = {
                                     type = "description",
@@ -5769,7 +5794,7 @@ do
                                         end
                                     end,
                                 },
-                                
+
                                 lb04 = {
                                     type = "description",
                                     name = "",
@@ -5793,21 +5818,21 @@ do
                                     get = function() return pack end,
                                     set = function( info, val )
                                         local profile = Hekili.DB.profile
-                                        
+
                                         local p = rawget( Hekili.DB.profile.packs, pack )
                                         Hekili.DB.profile.packs[ pack ] = nil
-                                        
+
                                         val = val:trim()
                                         Hekili.DB.profile.packs[ val ] = p
 
                                         for _, spec in pairs( Hekili.DB.profile.specs ) do
                                             if spec.package == pack then spec.package = val end
                                         end
-                                        
+
                                         Hekili:EmbedPackOptions()
                                         Hekili:LoadScripts()
                                         ACD:SelectGroup( "Hekili", "packs", val )
-                                    end,                                    
+                                    end,
                                     disabled = data.builtIn
                                 },
 
@@ -5815,7 +5840,7 @@ do
                                     type = "execute",
                                     name = "",
                                     desc = "Copy Priority",
-                                    order = 0.26, 
+                                    order = 0.26,
                                     width = 0.15,
                                     image = [[Interface\AddOns\Hekili\Textures\WhiteCopy]],
                                     imageHeight = 20,
@@ -5823,7 +5848,7 @@ do
                                     confirm = function () return "Create a copy of this priority pack?" end,
                                     func = function ()
                                         local p = rawget( Hekili.DB.profile.packs, pack )
-                                        
+
                                         local newPack = tableCopy( p )
                                         newPack.builtIn = false
                                         newPack.basedOn = pack
@@ -5902,7 +5927,7 @@ do
 
                                         -- Hekili:EmbedPackOptions()
                                         ACD:SelectGroup( "Hekili", "packs" )
-                                    end,                                    
+                                    end,
                                     hidden = data.builtIn
                                 },
 
@@ -6027,7 +6052,7 @@ do
                                     end,
                                     order = 5,
                                     fontSize = "medium",
-                                    width = "full",                                
+                                    width = "full",
                                     hidden = function ()
                                         local p = rawget( Hekili.DB.profile.packs, pack )
                                         return not p.warnings or p.warnings == ""
@@ -6090,13 +6115,13 @@ do
 
                                             if Hekili.Scripts and Hekili.Scripts.DB then
                                                 local scriptHead = "^" .. pack .. ":" .. k .. ":"
-                                                for k, v in pairs( Hekili.Scripts.DB ) do                                                            
+                                                for k, v in pairs( Hekili.Scripts.DB ) do
                                                     if k:match( scriptHead ) and v.Error then err = true; break end
                                                 end
                                             end
 
                                             if err then
-                                                v[ k ] = "|cFFFF0000" .. k .. "|r"                                                        
+                                                v[ k ] = "|cFFFF0000" .. k .. "|r"
                                             elseif k == 'precombat' or k == 'default' then
                                                 v[ k ] = "|cFF00B4FF" .. k .. "|r"
                                             else
@@ -6142,7 +6167,7 @@ do
                                         p.lists[ packControl.listName ] = nil
                                         Hekili:LoadScripts()
                                         packControl.listName = "default"
-                                    end,                                                
+                                    end,
                                 },
 
                                 lineBreak = {
@@ -6283,7 +6308,7 @@ do
                                     end,
                                     hidden = function () return packControl.makingNew end,
                                 },
-                                
+
                                 moveDownBtn = {
                                     type = "execute",
                                     name = "",
@@ -6311,7 +6336,7 @@ do
                                         return not p.lists[ packControl.listName ] or tonumber( packControl.actionID ) == #p.lists[ packControl.listName ]
                                     end,
                                     hidden = function () return packControl.makingNew end,
-                                },                                                                                
+                                },
 
                                 newActionBtn = {
                                     type = "execute",
@@ -6359,7 +6384,7 @@ do
                                     end,
                                     disabled = function ()
                                         local p = rawget( Hekili.DB.profile.packs, pack )
-                                        return not p.lists[ packControl.listName ] or #p.lists[ packControl.listName ] < 2 
+                                        return not p.lists[ packControl.listName ] or #p.lists[ packControl.listName ] < 2
                                     end,
                                     hidden = function () return packControl.makingNew end,
                                 },
@@ -6377,7 +6402,7 @@ do
                                         end
                                         return false
                                     end,
-                                    args = {                                    
+                                    args = {
                                         entry = {
                                             type = "group",
                                             inline = true,
@@ -6455,7 +6480,7 @@ do
                                                     hidden = function ()
                                                         local e = GetListEntry( pack )
                                                         return not ( e.action == "call_action_list" or e.action == "run_action_list" )
-                                                    end,                                                    
+                                                    end,
                                                 },
 
                                                 buff_name = {
@@ -6636,7 +6661,7 @@ do
                                                     multiline = 6,
                                                     dialogControl = "HekiliCustomEditor",
                                                     arg = function( info )
-                                                        local pack, list, action = info[ 2 ], packControl.listName, tonumber( packControl.actionID )        
+                                                        local pack, list, action = info[ 2 ], packControl.listName, tonumber( packControl.actionID )
                                                         local results = {}
 
                                                         state.reset()
@@ -6655,7 +6680,7 @@ do
                                                         end
 
                                                         local entry = apack and apack.lists[ list ]
-                                                        entry = entry and entry[ action ]        
+                                                        entry = entry and entry[ action ]
 
                                                         state.this_action = entry.action
 
@@ -6664,7 +6689,7 @@ do
                                                         scripts:StoreValues( results, scriptID )
 
                                                         return results, list, action
-                                                    end,                                      
+                                                    end,
                                                 },
 
                                                 value = {
@@ -6676,7 +6701,7 @@ do
                                                     multiline = 3,
                                                     dialogControl = "HekiliCustomEditor",
                                                     arg = function( info )
-                                                        local pack, list, action = info[ 2 ], packControl.listName, tonumber( packControl.actionID )        
+                                                        local pack, list, action = info[ 2 ], packControl.listName, tonumber( packControl.actionID )
                                                         local results = {}
 
                                                         state.reset()
@@ -6695,7 +6720,7 @@ do
                                                         end
 
                                                         local entry = apack and apack.lists[ list ]
-                                                        entry = entry and entry[ action ]        
+                                                        entry = entry and entry[ action ]
 
                                                         state.this_action = entry.action
 
@@ -6720,7 +6745,7 @@ do
                                                     multiline = 3,
                                                     dialogControl = "HekiliCustomEditor",
                                                     arg = function( info )
-                                                        local pack, list, action = info[ 2 ], packControl.listName, tonumber( packControl.actionID )        
+                                                        local pack, list, action = info[ 2 ], packControl.listName, tonumber( packControl.actionID )
                                                         local results = {}
 
                                                         state.reset()
@@ -6739,7 +6764,7 @@ do
                                                         end
 
                                                         local entry = apack and apack.lists[ list ]
-                                                        entry = entry and entry[ action ]        
+                                                        entry = entry and entry[ action ]
 
                                                         state.this_action = entry.action
 
@@ -6874,7 +6899,7 @@ do
                                                         local ability = e.action and class.abilities[ e.action ]
 
                                                         return not packControl.showModifiers or ( not ability or ( ability.id < 0 and ability.id > -100 ) )
-                                                    end,                                                    
+                                                    end,
                                                 },
 
                                                 modCooldown = {
@@ -6895,7 +6920,7 @@ do
                                                             name = "Entry Cooldown",
                                                             desc = "If set, this entry cannot be recommended unless this time has passed since the last time the ability was used.",
                                                             order = 1,
-                                                            width = "full", 
+                                                            width = "full",
                                                             --[[ disabled = function( info )
                                                                 local e = GetListEntry( pack )
                                                                 return not e.enable_line_cd
@@ -6921,8 +6946,8 @@ do
                                                             name = "Strict / Time Insensitive",
                                                             desc = "If checked, the addon will assume this entry is not time-sensitive and will not test actions in the linked priority list if criteria are not presently met.",
                                                             order = 1,
-                                                            width = "full",                                                            
-                                                        }                                                    
+                                                            width = "full",
+                                                        }
                                                     },
                                                     hidden = function ()
                                                         local e = GetListEntry( pack )
@@ -6959,7 +6984,7 @@ do
                                                     end,
                                                     hidden = function ()
                                                         local p = rawget( Hekili.DB.profile.packs, pack )
-                                                        return #p.lists[ packControl.listName ] < 2 
+                                                        return #p.lists[ packControl.listName ] < 2
                                                     end
                                                 }
                                             },
@@ -7004,7 +7029,7 @@ do
                                             disabled = function() return packControl.newListName == nil end,
                                             func = function ()
                                                 local p = rawget( Hekili.DB.profile.packs, pack )
-                                                p.lists[ packControl.newListName ] = { {} }                                                
+                                                p.lists[ packControl.newListName ] = { {} }
                                                 packControl.listName = packControl.newListName
                                                 packControl.makingNew = false
 
@@ -7064,7 +7089,7 @@ do
                                     get = function( info )
                                         return self:SerializeActionPack( pack )
                                     end,
-                                    set = function () return end,
+                                    set = function () end,
                                     order = 1,
                                     width = "full"
                                 }
@@ -7131,7 +7156,7 @@ do
         oneAOE = 3,
         twoDisplays = 4,
         reactive = 5,
-    }    
+    }
 
     local function SetToggle( info, val )
         local self = Hekili
@@ -7222,7 +7247,7 @@ do
                             type = "toggle",
                             name = "Show Cooldowns",
                             desc = "If checked, abilities marked as cooldowns can be recommended.",
-                            order = 2,                            
+                            order = 2,
                         },
 
                         separate = {
@@ -7273,7 +7298,7 @@ do
                             type = "toggle",
                             name = "Show Covenants",
                             desc = "If checked, abilities from Covenants can be recommended.",
-                            order = 2,                            
+                            order = 2,
                         },
 
                         override = {
@@ -7283,7 +7308,7 @@ do
                             order = 3,
                         },
                     }
-                },                
+                },
 
                 defensives = {
                     type = "group",
@@ -7304,7 +7329,7 @@ do
                             name = "Show Defensives",
                             desc = "If checked, abilities marked as defensives can be recommended.\n" ..
                                 "\nThis applies only to tanking specializations.",
-                            order = 2,                            
+                            order = 2,
                         },
 
                         separate = {
@@ -7327,7 +7352,7 @@ do
                             type = "keybinding",
                             name = "Interrupts",
                             desc = "Set a key to use for toggling interrupts on/off.",
-                            order = 1,                            
+                            order = 1,
                         },
 
                         value = {
@@ -7463,7 +7488,7 @@ do
                             type = "select",
                             name = "Modes",
                             desc = "Select the Display Modes that can be cycled using your Display Mode key.\n\n" ..
-                                "|cFFFFD100Auto vs. Single|r - Using only the Primary display, toggle between automatic target counting and single-target recommendations.\n\n" .. 
+                                "|cFFFFD100Auto vs. Single|r - Using only the Primary display, toggle between automatic target counting and single-target recommendations.\n\n" ..
                                 "|cFFFFD100Single vs. AOE|r - Using only the Primary display, toggle between single-target recommendations and AOE (multi-target) recommendations.\n\n" ..
                                 "|cFFFFD100Auto vs. Dual|r - Toggle between one display using automatic target counting and two displays, with one showing single-target recommendations and the other showing AOE recommendations.  This will use additional CPU.\n\n" ..
                                 "|cFFFFD100Reactive AOE|r - Use the Primary display for single-target recommendations, and when additional enemies are detected, show the AOE display.  (Disables Mode Toggle)",
@@ -7481,7 +7506,7 @@ do
                 troubleshooting = {
                     type = "header",
                     name = "Troubleshooting",
-                    order = 20,                    
+                    order = 20,
                 },
 
                 pause = {
@@ -7583,7 +7608,7 @@ do
                             order = 3
                         }
                     }
-                },                
+                },
 
                 --[[ specLinks = {
                     type = "group",
@@ -7602,7 +7627,7 @@ do
                             name = "There may be additional toggles or settings for your specialization(s).  Use the buttons below to jump to that section.",
                             order = 2,
                             fontSize = "medium",
-                        },                        
+                        },
                     },
                     hidden = function( info )
                         local hide = true
@@ -7692,14 +7717,14 @@ do
     local removals = {}
 
     local lastAbility = nil
-    local lastTime = 0    
+    local lastTime = 0
 
     local function CLEU( event, _, subtype, _, sourceGUID, sourceName, _, _, destGUID, destName, destFlags, _, spellID, spellName )
         if sourceName and UnitIsUnit( sourceName, "player" ) and type( spellName ) == 'string' then
             local now = GetTime()
             local token = key( spellName )
 
-            if subtype == "SPELL_AURA_APPLIED" or subtype == "SPELL_AURA_APPLIED_DOSE" or subtype == "SPELL_AURA_REFRESH" or 
+            if subtype == "SPELL_AURA_APPLIED" or subtype == "SPELL_AURA_APPLIED_DOSE" or subtype == "SPELL_AURA_REFRESH" or
                subtype == "SPELL_PERIODIC_AURA_APPLIED" or subtype == "SPELL_PERIODIC_AURA_APPLIED_DOSE" or subtype == "SPELL_PERIODIC_AURA_REFRESH" then
                 -- the last ability probably refreshed this aura.
                 if lastAbility and now - lastTime < 0.25 then
@@ -7713,7 +7738,7 @@ do
                 else
                     insert( applications, { s = token, i = spellID, t = now } )
                 end
-            elseif subtype == "SPELL_AURA_REMOVED" or subtype == "SPELL_AURA_REMOVED_DOSE" or subtype == "SPELL_AURA_REMOVED" or 
+            elseif subtype == "SPELL_AURA_REMOVED" or subtype == "SPELL_AURA_REMOVED_DOSE" or subtype == "SPELL_AURA_REMOVED" or
                    subtype == "SPELL_PERIODIC_AURA_REMOVED" or subtype == "SPELL_PERIODIC_AURA_REMOVED_DOSE" or subtype == "SPELL_PERIODIC_AURA_BROKEN" then
                 if lastAbility and now - lastTime < 0.25 then
                     -- Go ahead and attribute it to the last cast.
@@ -7735,7 +7760,7 @@ do
 
         if ( event == "PLAYER_SPECIALIZATION_CHANGED" and UnitIsUnit( unit, "player" ) ) or event == "PLAYER_ENTERING_WORLD" then
             local sID, s = GetSpecializationInfo( GetSpecialization() )
-            if specID ~= sID then 
+            if specID ~= sID then
                 wipe( resources )
                 wipe( auras )
                 wipe( abilities )
@@ -7779,7 +7804,7 @@ do
                     for j = offset, offset + n do
                         local name, _, texture, castTime, minRange, maxRange, spellID = GetSpellInfo( j, "spell" )
 
-                        if name and spellID ~= mastery_spell then 
+                        if name and spellID ~= mastery_spell then
                             local token = key( name )
 
                             castTime = castTime / 1000
@@ -7839,7 +7864,7 @@ do
                                 a.startsCombat = not helpful
 
                                 a.cooldown = cooldown
-                                if a.charges and a.charges > 1 then 
+                                if a.charges and a.charges > 1 then
                                     a.charges = charges
                                     a.recharge = recharge
                                 end
@@ -7861,7 +7886,7 @@ do
                     for j = offset, offset + n do
                         local name, _, texture, castTime, minRange, maxRange, spellID = GetSpellInfo( j, "spell" )
 
-                        if name and spellID ~= mastery_spell then 
+                        if name and spellID ~= mastery_spell then
                             local token = key( name )
 
                             if castTime % 10 > 0 then
@@ -7989,8 +8014,8 @@ do
 
                 local a = abilities[ token ]
 
-                if not a then 
-                    return 
+                if not a then
+                    return
                 end
 
                 for k, v in pairs( applications ) do
@@ -8061,7 +8086,7 @@ do
 
                         append( "" )
                         append( "-- Talents" )
-                        append( "spec:RegisterTalents( {" )                        
+                        append( "spec:RegisterTalents( {" )
                         increaseIndent()
 
                         for i, tal in ipairs( talents ) do
@@ -8266,7 +8291,7 @@ function Hekili:GenerateProfile()
     end
 
     local soulbinds
-    
+
     local activeBind = C_Soulbinds.GetActiveSoulbindID()
     if activeBind then
         soulbinds = "[" .. formatKey( C_Soulbinds.GetSoulbindData( activeBind ).name ) .. "]"
@@ -8277,7 +8302,7 @@ function Hekili:GenerateProfile()
             if soulbinds then soulbinds = format( "%s\n   %s = %d", soulbinds, k, v.rank )
             else soulbinds = format( "%s = %d", k, v.rank ) end
         end
-    end    
+    end
 
     local sets
     for k, v in orderedPairs( class.gear ) do
@@ -8310,7 +8335,7 @@ function Hekili:GenerateProfile()
 
     local settings
     if state.settings.spec then
-        for k, v in orderedPairs( state.settings.spec ) do        
+        for k, v in orderedPairs( state.settings.spec ) do
             if type( v ) ~= "table" then
                 if settings then settings = format( "%s\n    %s = %s", settings, k, tostring( v ) )
                 else settings = format( "%s = %s", k, tostring( v ) ) end
@@ -8327,7 +8352,7 @@ function Hekili:GenerateProfile()
     local toggles
     for k, v in orderedPairs( self.DB.profile.toggles ) do
         if type( v ) == "table" and rawget( v, "value" ) ~= nil then
-            if toggles then toggles = format( "%s\n    %s = %s %s", toggles, k, tostring( v.value ), ( v.separate and "[separate]" or "" ) )
+            if toggles then toggles = format( "%s\n    %s = %s %s", toggles, k, tostring( v.value ), ( v.separate and "[separate]" or ( k ~= "cooldowns" and v.override and self.DB.profile.toggles.cooldowns.value and "[overridden]" ) or "" ) )
             else toggles = format( "%s = %s", k, tostring( v.value ) ) end
         end
     end
@@ -8345,7 +8370,7 @@ function Hekili:GenerateProfile()
         local action = format( "%-" .. bindLength .. "s =", name )
         local count = 0
         for i = 1, 12 do
-            local bar = data.upper[ i ]            
+            local bar = data.upper[ i ]
             if bar then
                 if count > 0 then action = action .. "," end
                 action = format( "%s %-4s[%02d]", action, bar, i )
@@ -8396,7 +8421,7 @@ end
 
 function Hekili:GetOptions()
     local Options = {
-        name = "Hekili",
+        name = "Hekili " .. Hekili.Version,
         type = "group",
         handler = Hekili,
         get = 'GetOption',
@@ -8462,7 +8487,6 @@ function Hekili:GetOptions()
                         get = function () return "https://github.com/Hekili/hekili/" end,
                         set = function () end,
                         width = "full",
-                        width = "full",
                         dialogControl = "SFX-Info-URL",
                     },
 
@@ -8478,7 +8502,7 @@ function Hekili:GetOptions()
                 }
             },
 
-            
+
             --[[ gettingStarted = {
                 type = "group",
                 name = "Getting Started",
@@ -8504,13 +8528,13 @@ function Hekili:GetOptions()
                         type = "header",
                         name = "Using Toggles",
                         order = 2,
-                        width = "full",                        
+                        width = "full",
                     },
                     a2 = {
                         type = "description",
                         name = "The addon has several |cFFFFD100Toggles|r available that help you control the type of recommendations you receive while in combat.  See the |cFFFFD100Toggles|r section for specifics.\n\n" ..
                             "|cFFFFD100Mode|r:  By default, |cFFFFD100Automatic Mode|r automatically detects how many targets you are engaged with, and gives recommendations based on the number of targets detected.  In some circumstances, you may want the addon to pretend there is only 1 target, or that there are multiple targets, " ..
-                            "or show recommendations for both scenarios.  You can use the |cFFFFD100Mode|r toggle to swap between Automatic, Single-Target, AOE, and Reactive modes.\n\n" ..                            
+                            "or show recommendations for both scenarios.  You can use the |cFFFFD100Mode|r toggle to swap between Automatic, Single-Target, AOE, and Reactive modes.\n\n" ..
                             "|cFFFFD100Abilities|r:  Some of your abilities can be controlled by specific toggles.  For example, your major DPS cooldowns are assigned to the |cFFFFD100Cooldowns|r toggle.  This feature allows you to enable/disable these abilities in combat by using the assigned keybinding.  You can add abilities to (or remove abilities from) " ..
                             "these toggles in the |cFFFFD100Abilities|r or |cFFFFD100Gear and Trinkets|r sections.  When removed from a toggle, an ability can be recommended at any time, regardless of whether that toggle is on or off.\n\n" ..
                             "|cFFFFD100Displays|r:  Your Interrupts, Defensives, and Cooldowns toggles have a special relationship with the displays of the same names.  If |cFFFFD100Show Separately|r is checked for that toggle, those abilities will show in that toggle's display instead of the |cFFFFD100Primary|r or |cFFFFD100AOE|r display.\n",
@@ -8522,7 +8546,7 @@ function Hekili:GetOptions()
                         type = "header",
                         name = "Importing a Profile",
                         order = 3,
-                        width = "full",                    
+                        width = "full",
                     },
                     a3 = {
                         type = "description",
@@ -8568,7 +8592,7 @@ function Hekili:GetOptions()
                         set = SetCurrentSpec,
                         get = GetCurrentSpec,
                         values = GetCurrentSpecList,
-                    },                
+                    },
                 },
                 plugins = {
                     actions = {}
@@ -8590,7 +8614,7 @@ function Hekili:GetOptions()
                         set = SetCurrentSpec,
                         get = GetCurrentSpec,
                         values = GetCurrentSpecList,
-                    },    
+                    },
                 },
                 plugins = {
                     equipment = {}
@@ -8626,7 +8650,7 @@ function Hekili:GetOptions()
                         order = 30,
                         width = "full",
                         get = function() return "http://github.com/Hekili/hekili/issues" end,
-                        set = function() return end,
+                        set = function() end,
                         dialogControl = "SFX-Info-URL"
                     },
                 }
@@ -8666,7 +8690,7 @@ function Hekili:GetOptions()
                         type = "description",
                         name = function()
                             return "Snapshots are logs of the addon's decision-making process for a set of recommendations.  If you have questions about -- or disagree with -- the addon's recommendations, " ..
-                            "reviewing a snapshot can help identify what factors led to the specific recommendations that you saw.\n\n" ..                            
+                            "reviewing a snapshot can help identify what factors led to the specific recommendations that you saw.\n\n" ..
                             "Snapshots only capture a specific point in time, so snapshots have to be taken at the time you saw the specific recommendations that you are concerned about.  You can generate " ..
                             "snapshots by using the |cffffd100Snapshot|r binding ( |cffffd100" .. ( Hekili.DB.profile.toggles.snapshot.key or "NOT BOUND" ) .. "|r ) from the Toggles section.\n\n" ..
                             "You can also freeze the addon's recommendations using the |cffffd100Pause|r binding ( |cffffd100" .. ( Hekili.DB.profile.toggles.pause.key or "NOT BOUND" ) .. "|r ).  Doing so will freeze the addon's recommendations, allowing you to mouseover the display " ..
@@ -8725,7 +8749,7 @@ function Hekili:GetOptions()
                         end,
                         width = 0.7
                     },
-                    
+
                     Snapshot = {
                         type = 'input',
                         name = "Snapshot",
@@ -8798,7 +8822,7 @@ function Hekili:TotalRefresh( noOptions )
     self:OverrideBinds()
 
     -- LibStub("LibDBIcon-1.0"):Refresh( "Hekili", self.DB.profile.iconStore )
-    
+
     if WeakAuras and WeakAuras.ScanEvents then
         for name in pairs( Hekili.DB.profile.toggles ) do
             WeakAuras.ScanEvents( "HEKILI_TOGGLE" )
@@ -9068,7 +9092,7 @@ function Hekili:SetOption( info, input, ... )
         -- Bindings do not need add'l handling.
         return
 
-  
+
 
     elseif category == 'actionLists' then
 
@@ -9255,7 +9279,7 @@ do
         import = true,
         skeleton = true,
         recover = true,
-        
+
         profile = true,
         set = true,
         enable = true,
@@ -9299,7 +9323,7 @@ do
             ns.StartConfiguration()
             return
 
-        elseif input:trim() == "center" then                
+        elseif input:trim() == "center" then
             for i, v in ipairs( Hekili.DB.profile.displays ) do
                 ns.UI.Buttons[i][1]:ClearAllPoints()
                 ns.UI.Buttons[i][1]:SetPoint("CENTER", 0, (i-1) * 50 )
@@ -9315,7 +9339,7 @@ do
             self:BuildUI()
             self:Print("Default displays and action lists restored.")
             return
-        
+
         end
 
         if input then
@@ -9407,7 +9431,7 @@ do
                     else
                         to = not spec.cycle
                     end
-                    
+
                     Hekili:Print( format( "Recommend Target Swaps set to %s.", ( to and "|cFF00FF00ON|r" or "|cFFFF0000OFF|r" ) ) )
 
                     spec.cycle = to
@@ -9439,7 +9463,7 @@ do
                     else
                         to = not setting.info.get( info )
                     end
-                    
+
                     Hekili:Print( format( "%s set to %s.", setting.info.name, ( to and "|cFF00FF00ON|r" or "|cFFFF0000OFF|r" ) ) )
 
                     info[ 1 ] = setting.name
@@ -9474,7 +9498,7 @@ do
 
                 end
 
-            
+
             elseif ( "profile" ):match( "^" .. args[1] ) then
                 if not args[2] then
                     local output = "Use |cFFFFD100/hekili profile name|r to swap profiles via command-line or macro.\nValid profile |cFFFFD100name|rs are:"
@@ -9532,7 +9556,7 @@ do
                     Hekili:Print( output )
                     return
                 end
-                
+
                 -- Setting priority via commandline.
                 -- Requires multiple priorities loaded for one's specialization.
                 -- This also prepares the priorities table with relevant priority names.
@@ -9548,7 +9572,7 @@ do
                         output = output .. format( " %s%s|r%s", Hekili.DB.profile.packs[ priority ].builtIn and BlizzBlue or "|cFFFFD100", priority, i == #priorities and "." or "," )
                     end
                     Hekili:Print( output )
-                    return                        
+                    return
                 end
 
                 local raw = input:match( "^%S+%s+(.+)$" )
@@ -9589,7 +9613,7 @@ do
                 end
 
                 self.DB.profile.enabled = enable
-    
+
                 if enable then
                     Hekili:Print( "Addon |cFFFFD100ENABLED|r." )
                     self:Enable()
@@ -9857,7 +9881,7 @@ function Hekili:DeserializeStyle( str )
 end
 
 
-function ns.serializeActionList( num ) 
+function ns.serializeActionList( num )
     if not Hekili.DB.profile.actionLists[ num ] then return nil end
     local serial = tableCopy( Hekili.DB.profile.actionLists[ num ] )
     return TableToString( serial, true )
@@ -9882,7 +9906,7 @@ local ignore_actions = {
 }
 
 
-local function make_substitutions( i, swaps, prefixes, postfixes ) 
+local function make_substitutions( i, swaps, prefixes, postfixes )
     if not i then return nil end
 
     for k,v in pairs( swaps ) do
@@ -9952,7 +9976,7 @@ local function accommodate_targets( targets, ability, i, line, warnings )
     swaps["dot%."..insert_ability.."%.down"] = "active_dot."..insert_ability..'<' ..insert_targets
     swaps["up"] = "active_dot."..insert_ability..">=" ..insert_targets
     swaps["ticking"] = "active_dot."..insert_ability..">=" ..insert_targets
-    swaps["down"] = "active_dot."..insert_ability.."<" ..insert_targets 
+    swaps["down"] = "active_dot."..insert_ability.."<" ..insert_targets
 
     return make_substitutions( i, swaps )
 end
@@ -10030,7 +10054,7 @@ local function Sanitize( segment, i, line, warnings )
             i = i:gsub( tostring( itemID ), itemKey )
         end
 
-    end   
+    end
 
     local times = 0
 
@@ -10043,7 +10067,7 @@ local function Sanitize( segment, i, line, warnings )
     if times > 0 then
         table.insert( warnings, "Line " .. line .. ": Converted SimC syntax % to Lua division operator (/) (" .. times .. "x)." )
     end
-    
+
     i, times = i:gsub( "%%%%", "%%" )
     if times > 0 then
         table.insert( warnings, "Line " .. line .. ": Converted SimC syntax %% to Lua modulus operator (%) (" .. times .. "x)." )
@@ -10162,18 +10186,18 @@ local function Sanitize( segment, i, line, warnings )
     end
 
     i, times = i:gsub( "trinket%.1%.", "trinket.t1." )
-    if times > 0 then        
-        table.insert( warnings, "Line " .. line .. ": Converted 'trinket.1.X' to 'trinket.t1.X' (" .. times .. "x)." )        
+    if times > 0 then
+        table.insert( warnings, "Line " .. line .. ": Converted 'trinket.1.X' to 'trinket.t1.X' (" .. times .. "x)." )
     end
 
     i, times = i:gsub( "trinket%.2%.", "trinket.t2." )
-    if times > 0 then        
-        table.insert( warnings, "Line " .. line .. ": Converted 'trinket.2.X' to 'trinket.t2.X' (" .. times .. "x)." )        
+    if times > 0 then
+        table.insert( warnings, "Line " .. line .. ": Converted 'trinket.2.X' to 'trinket.t2.X' (" .. times .. "x)." )
     end
 
     i, times = i:gsub( "trinket%.([%w_][%w_][%w_]+)%.cooldown", "cooldown.%1" )
-    if times > 0 then        
-        table.insert( warnings, "Line " .. line .. ": Converted 'trinket.abc.cooldown' to 'cooldown.abc' (" .. times .. "x)." )        
+    if times > 0 then
+        table.insert( warnings, "Line " .. line .. ": Converted 'trinket.abc.cooldown' to 'cooldown.abc' (" .. times .. "x)." )
     end
 
     i, times = i:gsub( "min:[a-z0-9_%.]+(,?$?)", "%1" )
@@ -10203,7 +10227,12 @@ local function Sanitize( segment, i, line, warnings )
 
     i, times = i:gsub( "exsanguinated%.([a-z0-9_]+)", "debuff.%1.exsanguinated" )
     if times > 0 then
-        table.insert( warnings, "Line " .. line .. ": Converted 'exsanguinated.X' to 'debuff.X.exsanguinated' (" .. times .. "x).") 
+        table.insert( warnings, "Line " .. line .. ": Converted 'exsanguinated.X' to 'debuff.X.exsanguinated' (" .. times .. "x).")
+    end
+
+    i, times = i:gsub( "time_to_sht%.(%d+)%.plus", "time_to_sht_plus.%1" )
+    if times > 0 then
+        table.insert( warnings, "Line " .. line .. ": Converted 'time_to_sht.X.plus' to 'time_to_sht_plus.X' (" .. times .. "x).")
     end
 
     if segment == 'c' then
@@ -10228,7 +10257,7 @@ local function Sanitize( segment, i, line, warnings )
             end
             i = i:gsub( '\v', token )
         end
-    end 
+    end
 
 
     for token in i:gmatch( "player" ) do
@@ -10434,12 +10463,12 @@ do
             local components = strsplit( i, "," )
             local result = {}
 
-            for a, str in ipairs( components ) do                
+            for a, str in ipairs( components ) do
                 -- First element is the action, if supported.
                 if a == 1 then
                     local ability = str:trim()
 
-                    if ability and ( ability == 'use_item' or class.abilities[ ability ] ) then
+                    if ability and ( ability == "use_item" or class.abilities[ ability ] ) then
                         if ability == "pocketsized_computation_device" then ability = "cyclotronic_blast" end
                         if ability == "any_dnd" or ability == "wound_spender" then
                             result.action = ability
@@ -10455,6 +10484,7 @@ do
                     local key, value = str:match( "^(.-)=(.-)$" )
 
                     if key and value then
+                        -- TODO:  Automerge multiple criteria.
                         if key == 'if' or key == 'condition' then key = 'criteria' end
 
                         if key == 'criteria' or key == 'target_if' or key == 'value' or key == 'value_else' or key == 'sec' or key == 'wait' then
@@ -10492,13 +10522,31 @@ do
                 result.target_if = nil
             end
 
-            if result.action == 'use_item' then
+            if result.action == "use_item" then
                 if result.effect_name and class.abilities[ result.effect_name ] then
                     result.action = class.abilities[ result.effect_name ].key
                 elseif result.name and class.abilities[ result.name ] then
                     result.action = result.name
                 elseif ( result.slot or result.slots ) and class.abilities[ result.slot or result.slots ] then
                     result.action = result.slot or result.slots
+                end
+
+                if result.action == "use_item" then
+                    table.insert( warnings, "Line " .. line .. ": Unsupported use_item action [ " .. ( result.effect_name or result.name or "unknown" ) .. "]; entry disabled." )
+                    result.action = nil
+                    result.enabled = false
+                end
+            end
+
+            if result.action == "wait_for_cooldown" then
+                if result.name then
+                    result.action = "wait"
+                    result.sec = "cooldown." .. result.name .. ".remains"
+                    result.name = nil
+                else
+                    table.insert( warnings, "Line " .. line .. ": Unable to convert wait_for_cooldown,name=X to wait,sec=cooldown.X.remains; entry disabled." )
+                    result.action = wait
+                    result.enabled = false
                 end
             end
 
@@ -10510,7 +10558,7 @@ do
                 result.op = 'set'
             end
 
-            if result.cancel_if and not result.interupt_if then
+            if result.cancel_if and not result.interrupt_if then
                 result.interrupt_if = result.cancel_if
                 result.cancel_if = nil
             end
@@ -10525,7 +10573,7 @@ do
             end
         end
 
-        return #output > 0 and output or nil, #warnings > 0 and warnings or nil    
+        return #output > 0 and output or nil, #warnings > 0 and warnings or nil
     end
 end
 
@@ -10539,11 +10587,9 @@ function Hekili:TogglePause( ... )
     Hekili.btns = ns.UI.Buttons
 
     if not self.Pause then
-        self.ActiveDebug = true
-        Hekili.Update()
-        self.ActiveDebug = false
+        self:MakeSnapshot()
         self.Pause = true
-        
+
         --[[ if self:SaveDebugSnapshot() then
             if not warnOnce then
                 self:Print( "Snapshot saved; snapshots are viewable via /hekili (until you reload your UI)." )
@@ -10552,15 +10598,13 @@ function Hekili:TogglePause( ... )
                 self:Print( "Snapshot saved." )
             end
         end ]]
-        
+
     else
         self.Pause = false
         self.ActiveDebug = false
 
         -- Discard the active update thread so we'll definitely start fresh at next update.
-        if HekiliDisplayPrimary and HekiliDisplayPrimary.activeThread then
-            HekiliDisplayPrimary.activeThread = nil
-        end
+        Hekili:ForceUpdate( "TOGGLE_PAUSE", true )
     end
 
     local MouseInteract = self.Pause or self.Config
@@ -10580,7 +10624,7 @@ end
 
 
 -- Key Bindings
-function Hekili:MakeSnapshot( dispName, isAuto )
+function Hekili:MakeSnapshot( isAuto )
     if isAuto and not Hekili.DB.profile.autoSnapshot then
         return
     end
@@ -10625,7 +10669,7 @@ do
     }, {
         __index = function( t, k )
             if k == "essences" then k = "covenants" end
-            
+
             local name = k:gsub( "^(.)", strupper )
             t[k] = name
             return name
@@ -10635,7 +10679,7 @@ do
 
     function Hekili:SetMode( mode )
         mode = lower( mode:trim() )
-        
+
         if not modeIndex[ mode ] then
             Hekili:Print( "SetMode failed:  '%s' is not a valid mode.\nTry |cFFFFD100automatic|r, |cFFFFD100single|r, |cFFFFD100aoe|r, |cFFFFD100dual|r, or |cFFFFD100reactive|r." )
             return
@@ -10647,7 +10691,7 @@ do
             self:Notify( "Mode: " .. modeIndex[ mode ][2] )
         else
             self:Print( modeIndex[ mode ][2] .. " mode activated." )
-        end        
+        end
     end
 
 

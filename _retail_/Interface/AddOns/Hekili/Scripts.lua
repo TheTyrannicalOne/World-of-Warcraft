@@ -181,9 +181,55 @@ local function HandleDeprecatedOperators( str, opStr, prefix  )
         str = left:sub( 1, leftLen - len1 ) .. " " .. prefix .. "(safenum(" .. val1 .. "),safenum(" .. val2 .. ")) " .. right:sub( 1 + len2 )
     end
 
+    if str:find(opStr) then return scripts.HandleDeprecatedOperators( str, opStr, prefix ) end
     return str
 end
 scripts.HandleDeprecatedOperators = HandleDeprecatedOperators
+
+
+local function HandleUnaryOperators( str, opStr, prefix  )
+    --str = str:gsub("%s", "")
+    for op, right in str:gmatch("(" .. opStr .. ")(.+)") do
+        local rightLen = right:len()
+        local val2, len2, b2
+
+        if right:sub(1, 1) == "(" then
+            val2 = right:match("^(%b())")
+            len2 = val2:len()
+            val2 = val2:sub( 2, -2 )
+        else
+            local parens = 0
+            local eos = -1
+
+            for i = 1, right:len() do
+                local char = right:sub(i, i)
+
+                if char == "(" then
+                    i = i + right:sub( i ):match("^(%b())" ):len()
+                elseif mathBreak[char] or char == ")" then
+                    eos = i - 1
+                    break
+                end
+            end
+
+            if eos == -1 then
+                val2 = right
+                len2 = rightLen
+            else
+                val2 = right:sub(1, eos)
+                len2 = eos
+            end
+        end
+
+        val2 = val2:trim()
+
+        str = prefix .. "(safenum(" .. val2 .. ")) " .. right:sub( 1 + len2 )
+    end
+
+    if str:find( opStr ) then return scripts.HandleUnaryOperators( str, opStr, prefix ) end
+    return str
+end
+scripts.HandleUnaryOperators = HandleUnaryOperators
 
 
 local invalid = "([^a-zA-Z0-9_.[])"
@@ -249,9 +295,13 @@ local function SimToLua( str, modifier )
     str = str:gsub( "!=", "~=" )
     if str:find("!") then str = forgetMeNots( str ) end
 
+    -- Replace '^' (simc XOR) with '~=' (functionally identical for booleans).
+    if str:find("%^") then str = str:gsub("%^", "~=") end
+
     -- Replace '>?' and '<?' with max/min.
     if str:find(">%?") then str = HandleDeprecatedOperators( str, ">%?", "max" ) end
     if str:find("<%?") then str = HandleDeprecatedOperators( str, "<%?", "min" ) end
+    if str:find("@")   then str = HandleUnaryOperators     ( str, "@",   "abs" ) end
 
     str = SimcWithResources( str )
 
@@ -305,6 +355,7 @@ local function SimToLua( str, modifier )
     str = str:gsub("prev_gcd%.(%d+)", "prev_gcd[%1]")
     str = str:gsub("prev_off_gcd%.(%d+)", "prev_off_gcd[%1]")
     str = str:gsub("time_to_sht%.(%d+)", "time_to_sht[%1]")
+    str = str:gsub("time_to_sht_plus%.(%d+)", "time_to_sht_plus[%1]")
     -- str = str:gsub("([a-z0-9_]+)%.(%d+)", "%1[%2]")
 
     --str = SpaceOut( str )
@@ -382,6 +433,8 @@ do
         { "^!ticking",                              "remains" },
         { "^!?remains$",                            "remains" },
         { "^refreshable",                           "time_to_refresh" },
+        { "^gcd.remains$",                          "gcd.remains" },
+        { "^gcd.remains<?=(.+)$",                   "gcd.remains-%1" },
 
         { "^swing.([a-z_]+).remains$",              "swing.%1.remains" },
 
@@ -446,6 +499,10 @@ do
         { "^!?contagion<=?(.-)",                    "contagion-%1" }, -- Affliction Warlock
 
         { "^time_to_imps%.(.+)$",                   "time_to_imps[%1]" }, -- Demo Warlock
+
+        { "^active_bt_triggers$",                   "time_to_bt_triggers(0)" }, -- Feral Druid w/ Bloodtalons.
+        { "^active_bt_triggers<?=0$",               "time_to_bt_triggers(0)" }, -- Feral Druid w/ Bloodtalons.
+        { "^active_bt_triggers<(%d+)$",             "time_to_bt_triggers(%1-1)" }, -- Feral Druid w/ Bloodtalons.
         
         { "^!?action%.([a-z0-9_]+)%.in_flight$",    "action.%1.in_flight_remains" }, -- Fire Mage, but others too, potentially.
 
@@ -955,6 +1012,7 @@ local function SimCToSnapshot( str, modifier )
     str = str:gsub("prev_gcd%.(%d+)", "prev_gcd[%1]")
     str = str:gsub("prev_off_gcd%.(%d+)", "prev_off_gcd[%1]")
     str = str:gsub("time_to_sht%.(%d+)", "time_to_sht[%1]")
+    str = str:gsub("time_to_sht_plus%.(%d+)", "time_to_sht_plus[%1]")
 
     return str
 

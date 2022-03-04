@@ -280,7 +280,7 @@ do
         Hekili.TargetDebug = ""
 
         local spec = state.spec.id
-        spec = spec and rawget( Hekili.DB.profile.specs, spec ) or nil
+        spec = spec and rawget( Hekili.DB.profile.specs, spec ) or ns.specTemplate
 
         if spec then
             local checkPets = showNPs and spec.petbased and Hekili:PetBasedTargetDetectionIsReady()
@@ -883,7 +883,7 @@ do
     end
 
     function Hekili:GetTTD( unit, isGUID )
-        local default = UnitIsTrivial(unit) and TRIVIAL or FOREVER
+        local default = UnitIsTrivial(unit) and UnitLevel(unit) > -1 and TRIVIAL or FOREVER
 
         local guid = UnitExists(unit) and UnitCanAttack("player", unit) and UnitGUID(unit)
         if not guid then

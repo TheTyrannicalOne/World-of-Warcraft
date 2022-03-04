@@ -249,6 +249,13 @@ function ns.safeMax( ... )
 end
 
 
+function ns.safeAbs( val )
+    val = tonumber( val )
+    if val < 0 then return -val end
+    return val
+end
+
+
 -- Rivers' iterator for group members.
 function ns.GroupMembers( reversed, forceParty )
     local unit = ( not forceParty and IsInRaid() ) and 'raid' or 'party'
@@ -284,16 +291,17 @@ function ns.FindRaidBuffByID(id)
 
     local unitName
     local buffCounter = 0
+    local buffIterator = 1
+
+    local name, icon, count, debuffType, duration, expirationTime, caster, stealable, nameplateShowPersonal, spellID, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3
 
     if IsInRaid() or IsInGroup() then
         if IsInRaid() then
             unitName = "raid"
             for numGroupMembers=1, GetNumGroupMembers() do
-
-                local buffIterator = 1
-                local name, icon, count, debuffType, duration, expirationTime, caster, stealable, nameplateShowPersonal, spellID, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitBuff( unitName..numGroupMembers, buffIterator )
+                buffIterator = 1
+                name, icon, count, debuffType, duration, expirationTime, caster, stealable, nameplateShowPersonal, spellID, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitBuff( unitName..numGroupMembers, buffIterator )
                 while( spellID ) do
-
                     if spellID == id then buffCounter = buffCounter + 1 break end
                     buffIterator = buffIterator + 1
                     name, icon, count, debuffType, duration, expirationTime, caster, stealable, nameplateShowPersonal, spellID, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitBuff( unitName..numGroupMembers, buffIterator )
@@ -302,11 +310,8 @@ function ns.FindRaidBuffByID(id)
         elseif IsInGroup() then
             unitName = "party"
             for numGroupMembers=1, GetNumGroupMembers() do
-
-                local buffIterator = 1
-                local name, icon, count, debuffType, duration, expirationTime, caster, stealable, nameplateShowPersonal, spellID, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitBuff( unitName..numGroupMembers, buffIterator )
+                name, icon, count, debuffType, duration, expirationTime, caster, stealable, nameplateShowPersonal, spellID, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitBuff( unitName..numGroupMembers, buffIterator )
                 while( spellID ) do
-
                     if spellID == id then buffCounter = buffCounter + 1 break end
                     buffIterator = buffIterator + 1
                     name, icon, count, debuffType, duration, expirationTime, caster, stealable, nameplateShowPersonal, spellID, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitBuff( unitName..numGroupMembers, buffIterator )
@@ -314,9 +319,7 @@ function ns.FindRaidBuffByID(id)
             end
             buffIterator = 1
             name, icon, count, debuffType, duration, expirationTime, caster, stealable, nameplateShowPersonal, spellID, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitBuff( "player", buffIterator )
-
             while( spellID ) do
-
                 if spellID == id then buffCounter = buffCounter + 1 break end
                 buffIterator = buffIterator + 1
                 name, icon, count, debuffType, duration, expirationTime, caster, stealable, nameplateShowPersonal, spellID, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitBuff( "player", buffIterator )
@@ -336,14 +339,16 @@ function ns.FindLowHpPlayerWithoutBuffByID(id)
     local unitName
     local playerWithoutBuff = 0
     local buffFound = false
+    local buffIterator = 1
+    local name, icon, count, debuffType, duration, expirationTime, caster, stealable, nameplateShowPersonal, spellID, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3
 
     if IsInRaid() or IsInGroup() then
         if IsInRaid() then
             unitName = "raid"
             for numGroupMembers=1, GetNumGroupMembers() do
                 buffFound = false
-                local buffIterator = 1
-                local name, icon, count, debuffType, duration, expirationTime, caster, stealable, nameplateShowPersonal, spellID, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitBuff( unitName..numGroupMembers, buffIterator )
+                buffIterator = 1
+                name, icon, count, debuffType, duration, expirationTime, caster, stealable, nameplateShowPersonal, spellID, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitBuff( unitName..numGroupMembers, buffIterator )
                 while( name ) do
                     if spellID == id then buffFound = true break end
                     buffIterator = buffIterator + 1
@@ -365,8 +370,8 @@ function ns.FindLowHpPlayerWithoutBuffByID(id)
             unitName = "party"
             for numGroupMembers=1, GetNumGroupMembers() do
                 buffFound = false
-                local buffIterator = 1
-                local name, icon, count, debuffType, duration, expirationTime, caster, stealable, nameplateShowPersonal, spellID, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitBuff( unitName..numGroupMembers, buffIterator )
+                buffIterator = 1
+                name, icon, count, debuffType, duration, expirationTime, caster, stealable, nameplateShowPersonal, spellID, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitBuff( unitName..numGroupMembers, buffIterator )
                 while( name ) do
                     if spellID == id then buffFound = true break end
                     buffIterator = buffIterator + 1
@@ -386,7 +391,7 @@ function ns.FindLowHpPlayerWithoutBuffByID(id)
             end
 
             buffFound = false
-            local buffIterator = 1
+            buffIterator = 1
             name, icon, count, debuffType, duration, expirationTime, caster, stealable, nameplateShowPersonal, spellID, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitBuff( "player", buffIterator )
             while( name ) do
                 if spellID == id then buffFound = true break end
@@ -420,12 +425,15 @@ function ns.FindRaidBuffLowestRemainsByID(id)
     local buffRemainsReturn
     local unitName = "player"
 
+    local buffIterator = 1
+    local name, icon, count, debuffType, duration, expirationTime, caster, stealable, nameplateShowPersonal, spellID, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3
+
     if IsInRaid() or IsInGroup() then
         if IsInRaid() then
             unitName = "raid"
             for numGroupMembers=1, GetNumGroupMembers() do
-                local buffIterator = 1
-                local name, icon, count, debuffType, duration, expirationTime, caster, stealable, nameplateShowPersonal, spellID, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitBuff( unitName..numGroupMembers, buffIterator )
+                buffIterator = 1
+                name, icon, count, debuffType, duration, expirationTime, caster, stealable, nameplateShowPersonal, spellID, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitBuff( unitName..numGroupMembers, buffIterator )
                 while( name ) do
                     if spellID == id then
 
@@ -450,8 +458,8 @@ function ns.FindRaidBuffLowestRemainsByID(id)
         elseif IsInGroup() then
             unitName = "party"
             for numGroupMembers=1, GetNumGroupMembers() do
-                local buffIterator = 1
-                local name, icon, count, debuffType, duration, expirationTime, caster, stealable, nameplateShowPersonal, spellID, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitBuff( unitName..numGroupMembers, buffIterator )
+                buffIterator = 1
+                name, icon, count, debuffType, duration, expirationTime, caster, stealable, nameplateShowPersonal, spellID, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitBuff( unitName..numGroupMembers, buffIterator )
                 while( name ) do
                     if spellID == id then
 
@@ -474,7 +482,7 @@ function ns.FindRaidBuffLowestRemainsByID(id)
                 end
             end
 
-            local buffIterator = 1
+            buffIterator = 1
             name, icon, count, debuffType, duration, expirationTime, caster, stealable, nameplateShowPersonal, spellID, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitBuff( "player", buffIterator )
             while( name ) do
                 if spellID == id then
@@ -497,8 +505,6 @@ function ns.FindRaidBuffLowestRemainsByID(id)
                 name, icon, count, debuffType, duration, expirationTime, caster, stealable, nameplateShowPersonal, spellID, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitBuff( "player", buffIterator )
             end
         end
-
-
     end
 
     return buffRemainsReturn == nil and 0 or buffRemainsReturn
