@@ -51,12 +51,12 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Dalaran.Avisar"] = {
-				["lastUpdate"] = 1646075224,
+				["lastUpdate"] = 1646612423,
 				["Factions"] = {
-					8999, -- [1]
-					8999, -- [2]
-					8999, -- [3]
-					9356, -- [4]
+					10099, -- [1]
+					10099, -- [2]
+					10099, -- [3]
+					10456, -- [4]
 					42000, -- [5]
 					[106] = 2800,
 					[38] = 3432,
@@ -86,7 +86,7 @@ DataStore_ReputationsDB = {
 					[59] = 1465,
 					[139] = 0,
 					[60] = 0,
-					[27] = 9262,
+					[27] = 13563,
 					[77] = 8552,
 					[75] = 10202,
 					[58] = 9922,
@@ -130,7 +130,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Dalaran.Illingrath"] = {
-				["lastUpdate"] = 1645405970,
+				["lastUpdate"] = 1646493499,
 				["Factions"] = {
 					4000, -- [1]
 					3100, -- [2]
@@ -142,7 +142,7 @@ DataStore_ReputationsDB = {
 					[151] = 3150,
 					[66] = 0,
 					[136] = 4835,
-					[37] = 17174,
+					[37] = 25822,
 					[152] = 2000,
 					[153] = 500,
 					[57] = 0,
@@ -158,7 +158,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Zul'jin.Zulbathal"] = {
-				["lastUpdate"] = 1646075051,
+				["lastUpdate"] = 1646607301,
 				["Factions"] = {
 					[122] = 40000,
 					[38] = 4230,
@@ -209,7 +209,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Black Dragonflight.Durlok"] = {
-				["lastUpdate"] = 1646074908,
+				["lastUpdate"] = 1646485873,
 				["Factions"] = {
 					[83] = 0,
 					[85] = 0,
@@ -246,7 +246,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["lastUpdate"] = 1646288082,
+				["lastUpdate"] = 1646727545,
 				["guildName"] = "Bloodmoon Chosen",
 				["guildRep"] = 42000,
 				["Factions"] = {
@@ -397,19 +397,19 @@ DataStore_ReputationsDB = {
 					[166] = 22587,
 					[170] = 1210,
 					[174] = 0,
-					[159] = 52060,
+					[159] = 52310,
 					[163] = 51651,
-					[167] = 23347,
+					[167] = 27672,
 					[171] = 600,
-					[152] = 50016,
+					[152] = 50266,
 					[156] = 46845,
-					[160] = 52843,
+					[160] = 53143,
 					[164] = 46350,
-					[168] = 15892,
+					[168] = 21442,
 					[172] = 0,
-					[157] = 45306,
+					[157] = 45481,
 					[165] = 48411,
-					[169] = 43125,
+					[169] = 45225,
 					[150] = 15000,
 					[158] = 45662,
 				},

@@ -11,9 +11,6 @@
 ## SavedVariables: XLootADB
 ## OptionalDeps: Ace3, LibStub, ButtonFacade, Masque, Pawn
 
-#@no-lib-strip@
-Libs\Embeds.xml
-#@end-no-lib-strip@
 
 localization.lua
 XLoot.lua

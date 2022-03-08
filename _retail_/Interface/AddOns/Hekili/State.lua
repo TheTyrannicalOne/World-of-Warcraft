@@ -3400,10 +3400,10 @@ local mt_default_buff = {
             return rawget( t, k )
 
         elseif k == "up" or k == "ticking" then
-            return t.remains > 0
+            return t.applied <= state.query_time and t.expires > state.query_time
 
         elseif k == "react" then
-            if t.expires > state.query_time then
+            if t.applied <= state.query_time and t.expires > state.query_time then
                 return t.count
             end
             return 0
@@ -3412,7 +3412,7 @@ local mt_default_buff = {
             return t.remains == 0
 
         elseif k == "remains" then
-            return max( 0, t.expires - state.query_time )
+            return t.applied <= state.query_time and max( 0, t.expires - state.query_time ) or 0
 
         elseif k == "refreshable" then
             return t.remains < 0.3 * ( aura.duration or 30 )
@@ -3445,13 +3445,13 @@ local mt_default_buff = {
             return t.v1 * t.stack
 
         elseif k == "stack" or k == "stacks" then
-            if t.up then return ( t.count ) else return 0 end
+            if t.applied <= state.query_time and state.query_time < t.expires then return ( t.count ) else return 0 end
 
         elseif k == "stack_pct" then
-            if t.up then return ( 100 * t.stack / t.max_stack ) else return 0 end
+            if t.applied <= state.query_time and state.query_time < t.expires then return ( 100 * t.stack / t.max_stack ) else return 0 end
 
         elseif k == "ticks" then
-            if t.up then return t.duration / t.tick_time - t.ticks_remain end
+            if t.applied <= state.query_time and state.query_time < t.expires then return t.duration / t.tick_time - t.ticks_remain end
             -- if t.up then return 1 + ( ( class.auras[ t.key ].duration or ( 30 * state.haste ) ) / ( class.auras[ t.key ].tick_time or ( 3 * t.haste ) ) ) - t.ticks_remain end
             return 0
 
@@ -3459,7 +3459,7 @@ local mt_default_buff = {
             return aura and aura.tick_time or ( 3 * state.haste ) -- Default tick time will be 3 because why not?
 
         elseif k == "ticks_remain" then
-            if t.up then return t.remains / t.tick_time end
+            if t.applied <= state.query_time and state.query_time < t.expires then return t.remains / t.tick_time end
             return 0
 
         elseif k == "last_trigger" then
@@ -4022,6 +4022,12 @@ do
 
                         local passed = scripts:CheckScript( scriptID )
 
+                        local conditions = "(none)"
+
+                        if debug then
+                            conditions = format( "%s: %s\n", passed and "PASS" or "FAIL", scripts:GetConditionsAndValues( scriptID ) )
+                        end
+
                         --[[    add = "Add Value",
                                 ceil
                                 x default = "Set Default Value",
@@ -4099,6 +4105,7 @@ do
                         end
 
                         -- Cache the value in case it is an intermediate value (i.e., multiple calculation steps).
+                        if debug then Hekili:Debug( var .. " #" .. i .. " [" .. scriptID .. "]; conditions = " .. conditions .. " - value = " .. tostring( value or "nil" .. "." ) ) end
                         state.variable[ var ] = value
                         cache[ var ][ pathKey ] = value
                     end
@@ -4108,9 +4115,9 @@ do
             -- Clear cache and clear the flag that we are checking this variable already.
             state.variable[ var ] = nil
 
-            --[[ if debug then
-                Hekili:Debug( "Spent %.2fms calculating value of %s -- %s [%s].", debugprofilestop() - varStart, var, tostring( value ), parent )
-            end ]]
+            if debug then
+                Hekili:Debug( "%s Result = %s.", var, tostring( value ) )
+            end
 
             state.scriptID = parent
 
@@ -4726,7 +4733,7 @@ local mt_swing_timer = {
         local speed = state.swings[ t.type .. "_speed" ]
         if speed == 0 then return 999 end
         
-        local swing = state.combat == 0 and state.now or state.swings.mainhand
+        local swing = state.time == 0 and state.now or state.swings.mainhand
         if swing == 0 then return speed end
 
         -- Technically, we didn't even check if this were "remains" but there are no other symbols.
@@ -5602,7 +5609,7 @@ function state:RunHandler( key, noStart )
     self.prev_gcd.override = nil
     self.prev_off_gcd.override = nil
 
-    if self.combat == 0 and ability.startsCombat and not ability.isProjectile and not noStart then
+    if self.time == 0 and ability.startsCombat and not noStart then -- and not ability.isProjectile
         -- Assume MH swing at combat start and OH swing half a swing later?
         self:StartCombat()
         ns.callHook( "runHandler_startCombat", key )
@@ -5834,8 +5841,9 @@ function state.reset( dispName )
     wipe( state.history.units )
 
     local last_act = state.player.lastcast and class.abilities[ state.player.lastcast ]
-    if last_act and last_act.startsCombat and state.combat == 0 and state.now - last_act.lastCast < 1 then
+    if last_act and last_act.startsCombat and state.time == 0 and state.now - last_act.lastCast < 1 then
         state.false_start = last_act.lastCast - 0.01
+        if Hekili.ActiveDebug then Hekili:Debug( format( "Starting combat based on %s cast; time is now: %.2f.", state.player.lastcast, state.time ) ) end
     end
 
     -- interrupts
@@ -5937,6 +5945,33 @@ function state.reset( dispName )
     -- Special case spells that suck.
     if class.abilities[ "ascendance" ] and state.buff.ascendance.up then
         setCooldown( "ascendance", state.buff.ascendance.remains + 165 )
+    end
+
+    -- Trinkets that need special handling.
+    if state.set_bonus.cache_of_acquired_treasures > 0 then
+        -- This required changing how buffs are tracked (that applied time is greater than the query time, which was always just expected to be true before).
+        if state.buff.acquired_sword.up then
+            state.applyBuff( "acquired_axe" )
+            state.buff.acquired_axe.expires = state.buff.acquired_sword.expires + 12
+            state.buff.acquired_axe.applied = state.buff.acquired_sword.expires
+            state.applyBuff( "acquired_wand" )
+            state.buff.acquired_wand.expires = state.buff.acquired_axe.expires + 12
+            state.buff.acquired_wand.applied = state.buff.acquired_axe.expires
+        elseif state.buff.acquired_axe.up then
+            state.applyBuff( "acquired_wand" )
+            state.buff.acquired_wand.expires = state.buff.acquired_axe.expires + 12
+            state.buff.acquired_wand.applied = state.buff.acquired_axe.expires
+            state.applyBuff( "acquired_sword" )
+            state.buff.acquired_sword.expires = state.buff.acquired_wand.expires + 12
+            state.buff.acquired_sword.applied = state.buff.acquired_wand.expires
+        elseif state.buff.acquired_wand.up then
+            state.applyBuff( "acquired_sword" )
+            state.buff.acquired_sword.expires = state.buff.acquired_wand.expires + 12
+            state.buff.acquired_sword.applied = state.buff.acquired_wand.expires
+            state.applyBuff( "acquired_axe" )
+            state.buff.acquired_axe.expires = state.buff.acquired_sword.expires + 12
+            state.buff.acquired_axe.applied = state.buff.acquired_sword.expires
+        end
     end
 
     Hekili:Yield( "Reset Pre-Casting" )
@@ -6056,8 +6091,9 @@ end
 
 
 function state:StartCombat()
-    if self.combat == 0 then
+    if self.time == 0 then
         self.false_start = self.query_time - 0.01
+        if Hekili.ActiveDebug then Hekili:Debug( format( "Starting combat at %.2f -- time is %.2f.", self.false_start, self.time ) ) end
     end
 
     local swing = false

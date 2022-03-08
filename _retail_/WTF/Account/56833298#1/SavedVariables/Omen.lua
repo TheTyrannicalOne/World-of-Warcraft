@@ -74,9 +74,9 @@ Omen3DB = {
 			["PositionY"] = 219.0002288818359,
 			["PositionW"] = 262.9996948242188,
 			["Shown"] = false,
-			["PositionH"] = 199.9998168945313,
-			["PositionX"] = 1750.499267578125,
 			["VGrip1"] = 111.7748191338414,
+			["PositionX"] = 1750.499267578125,
+			["PositionH"] = 199.9998168945313,
 		},
 		["Banuumine - Zul'jin"] = {
 			["Shown"] = false,
@@ -106,9 +106,9 @@ Omen3DB = {
 			["PositionY"] = 493.0004272460938,
 			["PositionW"] = 402.0000305175781,
 			["Shown"] = false,
-			["PositionH"] = 250.0000915527344,
-			["PositionX"] = 2157.999755859375,
 			["VGrip1"] = 170.8499347610773,
+			["PositionX"] = 2157.999755859375,
+			["PositionH"] = 250.0000915527344,
 		},
 		["Dachas - Zul'jin"] = {
 			["Shown"] = false,

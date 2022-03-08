@@ -56,6 +56,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Essence of Desire",
 		},
+		[41478] = {
+			["school"] = 64,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "High Nethermancer Zerevor",
+		},
 		[41292] = {
 			["school"] = 32,
 			["type"] = "DEBUFF",
@@ -112,21 +121,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Illidan Stormrage",
 		},
-		[42017] = {
-			["school"] = 32,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Essence of Suffering",
-		},
-		[40810] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Mother Shahraz",
-		},
 		[41180] = {
 			["school"] = 1,
 			["token"] = {
@@ -143,6 +137,22 @@ EncounterDetailsDB = {
 			},
 			["source"] = "High Warlord Naj'entus",
 		},
+		[40810] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Mother Shahraz",
+		},
+		[41459] = {
+			["school"] = 2,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Gathios the Shatterer",
+		},
 		[40683] = {
 			["school"] = 1,
 			["type"] = "BUFF",
@@ -153,14 +163,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Illidan Stormrage",
 		},
-		[41459] = {
-			["school"] = 2,
+		[42017] = {
+			["school"] = 32,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Gathios the Shatterer",
+			["source"] = "Essence of Suffering",
 		},
 		[39849] = {
 			["school"] = 1,
@@ -209,55 +218,55 @@ EncounterDetailsDB = {
 	["emotes"] = {
 		{
 			{
-				1.122999999992317, -- [1]
+				1.127000000000408, -- [1]
 				"Come, my minions. Deal with this traitor as he deserves!", -- [2]
 				"Illidan Stormrage", -- [3]
 				7, -- [4]
 			}, -- [1]
 			{
-				7.223999999987427, -- [1]
+				7.18500000000131, -- [1]
 				"I will deal with these mongrels! Strike now, friends! Strike at the Betrayer!", -- [2]
 				"Akama", -- [3]
 				7, -- [4]
 			}, -- [2]
 			{
-				41.68999999998778, -- [1]
+				41.19700000000012, -- [1]
 				"Is this it, mortals? Is this all the fury you can muster?", -- [2]
 				"Illidan Stormrage", -- [3]
 				7, -- [4]
 			}, -- [3]
 			{
-				51.41399999998976, -- [1]
+				50.81300000000192, -- [1]
 				"Their fury pales before mine, Illidan. We have some unsettled business between us.", -- [2]
 				"Maiev Shadowsong", -- [3]
 				7, -- [4]
 			}, -- [4]
 			{
-				59.94099999999162, -- [1]
+				59.42399999999907, -- [1]
 				"Maiev... How is it even possible?", -- [2]
 				"Illidan Stormrage", -- [3]
 				7, -- [4]
 			}, -- [5]
 			{
-				66.02999999999884, -- [1]
+				65.50200000000041, -- [1]
 				"My long hunt is finally over. Today, Justice will be done!", -- [2]
 				"Maiev Shadowsong", -- [3]
 				7, -- [4]
 			}, -- [6]
 			{
-				75.84799999999814, -- [1]
+				75.31999999999971, -- [1]
 				"Feel the hatred of ten thousand years!", -- [2]
 				"Illidan Stormrage", -- [3]
 				7, -- [4]
 			}, -- [7]
 			{
-				78.22299999999814, -- [1]
+				78.88500000000204, -- [1]
 				"It is finished. You are beaten.", -- [2]
 				"Maiev Shadowsong", -- [3]
 				7, -- [4]
 			}, -- [8]
 			{
-				84.29499999999825, -- [1]
+				84.9320000000007, -- [1]
 				"You have won... Maiev. But the huntress... is nothing without the hunt. You... are nothing... without me.", -- [2]
 				"Illidan Stormrage", -- [3]
 				7, -- [4]
@@ -266,20 +275,26 @@ EncounterDetailsDB = {
 		}, -- [1]
 		{
 			{
-				0.1980000000039581, -- [1]
-				"I have better things to do...", -- [2]
-				"Gathios the Shatterer", -- [3]
+				0.2010000000009313, -- [1]
+				"Flee or die!", -- [2]
+				"Lady Malande", -- [3]
 				7, -- [4]
 			}, -- [1]
 			["boss"] = "The Illidari Council",
 		}, -- [2]
 		{
 			{
-				0.2139999999926658, -- [1]
+				0.238999999997759, -- [1]
 				"So... business or pleasure?", -- [2]
 				"Mother Shahraz", -- [3]
 				7, -- [4]
 			}, -- [1]
+			{
+				5.213999999999942, -- [1]
+				"Don't be shy.", -- [2]
+				"Mother Shahraz", -- [3]
+				7, -- [4]
+			}, -- [2]
 			["boss"] = "Mother Shahraz",
 		}, -- [3]
 	},

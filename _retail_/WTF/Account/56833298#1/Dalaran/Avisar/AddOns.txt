@@ -266,3 +266,4 @@ TomCats-Noblegarden: disabled
 LittleWigs_MistsOfPandaria: enabled
 ElvUI_CustomTags: disabled
 LittleWigs_Classic: enabled
+LittleWigs_WarlordsOfDraenor: enabled

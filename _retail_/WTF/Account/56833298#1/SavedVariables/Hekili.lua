@@ -2597,15 +2597,18 @@ HekiliDB = {
 		},
 		["Illingrath - Dalaran"] = {
 			["runOnce"] = {
+				["forceReloadAllDefaultPriorities_20220228"] = true,
+				["forceEnableAllClassesOnceDueToBug_20220225"] = true,
+				["updateMaxRefreshToNewSpecOptions_20220222"] = true,
 				["resetPotionsToDefaults_20190717"] = true,
-				["autoconvertDelaySweepToExtend_20190729"] = true,
 				["autoconvertDisplayToggle_20190621_1"] = true,
 				["resetRogueMfDOption_20200226"] = true,
+				["forceEnableEnhancedRecheckBoomkin_20210712"] = true,
 				["resetAllPotions_20201209"] = true,
 				["enableAllOfTheThings_20180820"] = true,
-				["forceEnableEnhancedRecheckBoomkin_20210712"] = true,
-				["autoconvertGlowsForCustomGlow_20190326"] = true,
 				["resetGlobalCooldownSync_20210403"] = true,
+				["autoconvertDelaySweepToExtend_20190729"] = true,
+				["autoconvertGlowsForCustomGlow_20190326"] = true,
 				["resetAberrantPackageDates_20190728_1"] = true,
 			},
 			["specs"] = {
@@ -2614,9 +2617,9 @@ HekiliDB = {
 					["settings"] = {
 						["infernal_charges"] = 1,
 					},
-					["package"] = "Vengeance",
-					["potion"] = "phantom_fire",
 					["potionsReset"] = 20180919.1,
+					["potion"] = "phantom_fire",
+					["package"] = "Vengeance",
 				},
 				[577] = {
 					["enabled"] = true,
@@ -2631,6 +2634,7 @@ HekiliDB = {
 				},
 				[102] = {
 					["enhancedRecheck"] = true,
+					["enabled"] = true,
 				},
 			},
 			["packs"] = {
@@ -2643,7 +2647,6 @@ HekiliDB = {
 					["profile"] = "## Demon Hunter Havoc\n## November 1, 2021\n\n## Changes:\n## - Metamorphosis and Potion usage \"before fight ends\" logic adjusted to apply only to boss fights.\n## - Loosen up syncing of Metamorphosis (min of fight remains vs. trinket CD rather than max).\n\nactions.precombat=bottled_flayedwing_toxin\nactions.precombat+=/variable,name=trinket_sync_slot,value=1,if=trinket.1.has_use_buff&(!trinket.2.has_use_buff||trinket.1.cooldown.duration>=trinket.2.cooldown.duration)\nactions.precombat+=/variable,name=trinket_sync_slot,value=2,if=trinket.2.has_use_buff&(!trinket.1.has_use_buff||trinket.2.cooldown.duration>trinket.1.cooldown.duration)\n# Use Eye Beam at low Fury with Blind Fury along with either Darkglare or Demon Blades unless using Agony Gaze\nactions.precombat+=/variable,name=use_eye_beam_fury_condition,value=talent.blind_fury.enabled&(runeforge.darkglare_medallion||talent.demon_blades.enabled&!runeforge.agony_gaze)\nactions.precombat+=/arcane_torrent\n\n## Executed every time the actor is available.\nactions=disrupt\nactions+=/consume_magic\n## We don't do this target swapping to apply Burning Wound\n## actions+=/retarget_auto_attack,line_cd=1,target_if=min:debuff.burning_wound.remains,if=runeforge.burning_wound&talent.demon_blades.enabled\n# Without Chaos Theory or Darkglare, Blade Dance with First Blood or at 3+ (2+ with Trail of Ruin) targets\nactions+=/variable,name=blade_dance,if=!runeforge.chaos_theory&!runeforge.darkglare_medallion,value=talent.first_blood.enabled||spell_targets.blade_dance1>=(3-talent.trail_of_ruin.enabled)\n# With Chaos Theory, Blade Dance when the buff is down, with First Blood at 2+ (1+ with Trail of Ruin) or with Essence Break at 4+ (3+ with Trail of Ruin) targets\nactions+=/variable,name=blade_dance,if=runeforge.chaos_theory,value=buff.chaos_theory.down||talent.first_blood.enabled&spell_targets.blade_dance1>=(2-talent.trail_of_ruin.enabled)||!talent.cycle_of_hatred.enabled&spell_targets.blade_dance1>=(4-talent.trail_of_ruin.enabled)\n# With Darkglare, Blade Dance at normal target count when buffed by a secondary effect, or always at 4T+ for non-Demonic\nactions+=/variable,name=blade_dance,if=runeforge.darkglare_medallion,value=talent.first_blood.enabled||(buff.metamorphosis.up||talent.trail_of_ruin.enabled||debuff.essence_break.up)&spell_targets.blade_dance1>=(3-talent.trail_of_ruin.enabled)||!talent.demonic.enabled&spell_targets.blade_dance1>=4\n# Use Essence Break before Blade Dance if it is available and off cooldown\nactions+=/variable,name=blade_dance,op=reset,if=talent.essence_break.enabled&cooldown.essence_break.ready\n# With Agony Gaze and Cycle of Hatred, avoid using Blade Dance when there is the possibility to extend an AoE Sinful Brand\nactions+=/variable,name=blade_dance,if=runeforge.agony_gaze&talent.cycle_of_hatred,value=variable.blade_dance&active_dot.sinful_brand<2\nactions+=/variable,name=pooling_for_meta,value=!talent.demonic.enabled&cooldown.metamorphosis.remains<6&fury.deficit>30\nactions+=/variable,name=pooling_for_blade_dance,value=variable.blade_dance&(fury<75-talent.first_blood.enabled*20)\nactions+=/variable,name=pooling_for_eye_beam,value=talent.demonic.enabled&!talent.blind_fury.enabled&cooldown.eye_beam.remains<(gcd.max*2)&fury.deficit>20\n# With Agony Gaze, attempt to sync Eye Beam and cooldown usage for maximum duration, unless at 3T+\nactions+=/variable,name=waiting_for_agony_gaze,if=runeforge.agony_gaze,value=!dot.sinful_brand.ticking&cooldown.sinful_brand.remains<gcd.max*4&(!cooldown.metamorphosis.up||active_enemies=1)&spell_targets.eye_beam<=3\nactions+=/variable,name=waiting_for_momentum,value=talent.momentum.enabled&!buff.momentum.up\nactions+=/call_action_list,name=cooldown\n## actions+=/pick_up_fragment,type=demon,if=demon_soul_fragments>0\n## actions+=/pick_up_fragment,mode=nearest,if=(talent.demonic_appetite.enabled&fury.deficit>=35||runeforge.blind_faith&buff.blind_faith.up)&(!cooldown.eye_beam.ready||fury<30)\nactions+=/throw_glaive,if=buff.fel_bombardment.stack=5&(buff.immolation_aura.up||!buff.metamorphosis.up)\nactions+=/run_action_list,name=demonic,strict=1,if=talent.demonic.enabled\nactions+=/run_action_list,name=normal\n\n# If Venthyr and Sinful Brand duration is over 8 seconds with 1T, purposfully whiff Metamorphosis impact to not refresh with a lower duration DoT\nactions.cooldown=metamorphosis,landing_distance=10,if=!talent.demonic.enabled&covenant.venthyr.enabled&runeforge.agony_gaze&dot.sinful_brand.remains>8&spell_targets.metamorphosis_impact<2&(cooldown.eye_beam.remains>20||boss&fight_remains<25)\nactions.cooldown+=/metamorphosis,landing_distance=10,if=talent.demonic.enabled&covenant.venthyr.enabled&runeforge.agony_gaze&dot.sinful_brand.remains>8&spell_targets.metamorphosis_impact<2&(cooldown.eye_beam.remains>20&!variable.blade_dance||cooldown.blade_dance.remains>gcd.max||boss&fight_remains<25)\n# Cast Metamorphosis if we will get a full Eye Beam refresh and won't overwrite Sinful Brand duration or if the encounter is almost over\nactions.cooldown+=/metamorphosis,if=!talent.demonic.enabled&(cooldown.eye_beam.remains>20&(!covenant.venthyr.enabled||dot.sinful_brand.remains<=8||spell_targets.metamorphosis_impact>1)||boss&fight_remains<25)\nactions.cooldown+=/metamorphosis,if=talent.demonic.enabled&(cooldown.eye_beam.remains>20&(!variable.blade_dance||cooldown.blade_dance.remains>gcd.max)&(!covenant.venthyr.enabled||dot.sinful_brand.remains<=8||spell_targets.metamorphosis_impact>1)||boss&fight_remains<25)\nactions.cooldown+=/potion,if=buff.metamorphosis.remains>25||boss&fight_remains<60\n# Default use item logic\nactions.cooldown+=/trinket1,if=variable.trinket_sync_slot=1&(buff.metamorphosis.up||(!talent.demonic.enabled&boss&cooldown.metamorphosis.remains>(fight_remains<?trinket.1.cooldown.duration%2))||boss&fight_remains<=20)||(variable.trinket_sync_slot=2&!trinket.2.cooldown.ready)||!variable.trinket_sync_slot\nactions.cooldown+=/trinket2,if=variable.trinket_sync_slot=2&(buff.metamorphosis.up||(!talent.demonic.enabled&boss&cooldown.metamorphosis.remains>(fight_remains<?trinket.2.cooldown.duration%2))||boss&fight_remains<=20)||(variable.trinket_sync_slot=1&!trinket.1.cooldown.ready)||!variable.trinket_sync_slot\nactions.cooldown+=/sinful_brand,if=!dot.sinful_brand.ticking&(!runeforge.agony_gaze||(cooldown.eye_beam.remains<=gcd&fury>=30))&(!cooldown.metamorphosis.up||active_enemies=1)\nactions.cooldown+=/the_hunt,if=!talent.demonic.enabled&!variable.waiting_for_momentum&!variable.pooling_for_meta||buff.furious_gaze.up\nactions.cooldown+=/elysian_decree,if=(active_enemies>desired_targets||raid_event.adds.in>30)\n\nactions.demonic=eye_beam,if=runeforge.agony_gaze&(active_enemies>desired_targets||raid_event.adds.in>25-talent.cycle_of_hatred*10)&dot.sinful_brand.ticking&dot.sinful_brand.remains<=gcd\nactions.demonic+=/fel_rush,if=talent.unbound_chaos.enabled&buff.unbound_chaos.up&(charges=2||(raid_event.movement.in>10&raid_event.adds.in>10))\nactions.demonic+=/death_sweep,if=variable.blade_dance\nactions.demonic+=/glaive_tempest,if=active_enemies>desired_targets||raid_event.adds.in>10\nactions.demonic+=/throw_glaive,if=conduit.serrated_glaive.enabled&cooldown.eye_beam.remains<6&!buff.metamorphosis.up&!debuff.exposed_wound.up\nactions.demonic+=/eye_beam,if=active_enemies>desired_targets||raid_event.adds.in>25-talent.cycle_of_hatred*10&(!variable.use_eye_beam_fury_condition||spell_targets>1||fury<70)&!variable.waiting_for_agony_gaze\nactions.demonic+=/blade_dance,if=variable.blade_dance&!cooldown.metamorphosis.ready&(cooldown.eye_beam.remains>5||(raid_event.adds.in>cooldown&raid_event.adds.in<25))\nactions.demonic+=/immolation_aura,if=!buff.immolation_aura.up\nactions.demonic+=/annihilation,if=!variable.pooling_for_blade_dance\nactions.demonic+=/felblade,if=fury.deficit>=40\nactions.demonic+=/essence_break\nactions.demonic+=/chaos_strike,if=!variable.pooling_for_blade_dance&!variable.pooling_for_eye_beam\nactions.demonic+=/fel_rush,if=talent.demon_blades.enabled&!cooldown.eye_beam.ready&(charges=2||(raid_event.movement.in>10&raid_event.adds.in>10))\nactions.demonic+=/demons_bite,cycle_targets=1,if=runeforge.burning_wound&debuff.burning_wound.remains<4\nactions.demonic+=/fel_rush,if=!talent.demon_blades.enabled&spell_targets>1&(charges=2||(raid_event.movement.in>10&raid_event.adds.in>10))\nactions.demonic+=/demons_bite\nactions.demonic+=/throw_glaive,if=buff.out_of_range.up\nactions.demonic+=/fel_rush,if=movement.distance>15||buff.out_of_range.up\nactions.demonic+=/vengeful_retreat,if=movement.distance>15\nactions.demonic+=/throw_glaive,if=talent.demon_blades.enabled\n\nactions.normal=eye_beam,if=runeforge.agony_gaze&(active_enemies>desired_targets||raid_event.adds.in>15)&dot.sinful_brand.ticking&dot.sinful_brand.remains<=gcd\nactions.normal+=/vengeful_retreat,if=talent.momentum.enabled&buff.prepared.down&time>1\nactions.normal+=/fel_rush,if=(buff.unbound_chaos.up||variable.waiting_for_momentum&(!talent.unbound_chaos.enabled||!cooldown.immolation_aura.ready))&(charges=2||(raid_event.movement.in>10&raid_event.adds.in>10))\nactions.normal+=/fel_barrage,if=active_enemies>desired_targets||raid_event.adds.in>30\nactions.normal+=/death_sweep,if=variable.blade_dance\nactions.normal+=/immolation_aura,if=!buff.immolation_aura.up\nactions.normal+=/glaive_tempest,if=!variable.waiting_for_momentum&(active_enemies>desired_targets||raid_event.adds.in>10)\nactions.normal+=/throw_glaive,if=conduit.serrated_glaive.enabled&cooldown.eye_beam.remains<6&!buff.metamorphosis.up&!debuff.exposed_wound.up\nactions.normal+=/eye_beam,if=!variable.waiting_for_momentum&(active_enemies>desired_targets||raid_event.adds.in>15&(!variable.use_eye_beam_fury_condition||spell_targets>1||fury<70)&!variable.waiting_for_agony_gaze)\nactions.normal+=/blade_dance,if=variable.blade_dance\nactions.normal+=/felblade,if=fury.deficit>=40\nactions.normal+=/essence_break\nactions.normal+=/annihilation,if=(talent.demon_blades.enabled||!variable.waiting_for_momentum||fury.deficit<30||buff.metamorphosis.remains<5)&!variable.pooling_for_blade_dance\nactions.normal+=/chaos_strike,if=(talent.demon_blades.enabled||!variable.waiting_for_momentum||fury.deficit<30)&!variable.pooling_for_meta&!variable.pooling_for_blade_dance\nactions.normal+=/eye_beam,if=talent.blind_fury.enabled&raid_event.adds.in>cooldown&!variable.waiting_for_agony_gaze\nactions.normal+=/demons_bite,cycle_targets=1,if=runeforge.burning_wound&debuff.burning_wound.remains<4\nactions.normal+=/demons_bite\nactions.normal+=/fel_rush,if=!talent.momentum.enabled&raid_event.movement.in>charges*10&talent.demon_blades.enabled\nactions.normal+=/felblade,if=movement.distance>15||buff.out_of_range.up\nactions.normal+=/fel_rush,if=movement.distance>15||(buff.out_of_range.up&!talent.momentum.enabled)\nactions.normal+=/vengeful_retreat,if=movement.distance>15\nactions.normal+=/throw_glaive,if=talent.demon_blades.enabled",
 					["version"] = 20211101,
 					["warnings"] = "WARNING:  The import for 'normal' required some automated changes.\nLine 1: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 16: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\n\nWARNING:  The import for 'default' required some automated changes.\nLine 3: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 3: Converted 'runeforge.X' to 'runeforge.X.enabled' at EOL (1x).\nLine 4: Converted 'runeforge.X' to 'runeforge.X.enabled' at EOL (1x).\nLine 5: Converted 'runeforge.X' to 'runeforge.X.enabled' at EOL (1x).\nLine 7: Converted 'talent.X' to 'talent.X.enabled' at EOL (1x).\nLine 7: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 11: Converted 'runeforge.X' to 'runeforge.X.enabled' at EOL (1x).\n\nWARNING:  The import for 'precombat' required some automated changes.\nLine 2: Converted 'trinket.1.X' to 'trinket.t1.X' (2x).\nLine 2: Converted 'trinket.2.X' to 'trinket.t2.X' (2x).\nLine 3: Converted 'trinket.1.X' to 'trinket.t1.X' (2x).\nLine 3: Converted 'trinket.2.X' to 'trinket.t2.X' (2x).\nLine 4: Converted 'runeforge.X' to 'runeforge.X.enabled' (2x).\n\nWARNING:  The import for 'cooldown' required some automated changes.\nLine 1: Converted 'covenant.X.enabled' to 'covenant.X' (1x).\nLine 1: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 2: Converted 'covenant.X.enabled' to 'covenant.X' (1x).\nLine 2: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 3: Converted 'covenant.X.enabled' to 'covenant.X' (1x).\nLine 4: Converted 'covenant.X.enabled' to 'covenant.X' (1x).\nLine 6: Converted SimC syntax % to Lua division operator (/) (1x).\nLine 6: Converted 'trinket.1.X' to 'trinket.t1.X' (1x).\nLine 6: Converted 'trinket.2.X' to 'trinket.t2.X' (1x).\nLine 7: Converted SimC syntax % to Lua division operator (/) (1x).\nLine 7: Converted 'trinket.1.X' to 'trinket.t1.X' (1x).\nLine 7: Converted 'trinket.2.X' to 'trinket.t2.X' (1x).\nLine 8: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\n\nWARNING:  The import for 'demonic' required some automated changes.\nLine 1: Converted 'talent.X' to 'talent.X.enabled' (1x).\nLine 1: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 6: Converted 'talent.X' to 'talent.X.enabled' (1x).\nLine 14: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\n\nImported 5 action lists.\n",
-					["author"] = "SimC",
 					["lists"] = {
 						["normal"] = {
 							{
@@ -2722,8 +2725,8 @@ HekiliDB = {
 							}, -- [15]
 							{
 								["enabled"] = true,
-								["action"] = "demons_bite",
 								["criteria"] = "runeforge.burning_wound.enabled & debuff.burning_wound.remains < 4",
+								["action"] = "demons_bite",
 								["cycle_targets"] = 1,
 							}, -- [16]
 							{
@@ -2770,44 +2773,44 @@ HekiliDB = {
 								["op"] = "set",
 								["action"] = "variable",
 								["var_name"] = "blade_dance",
-								["criteria"] = "! runeforge.chaos_theory.enabled & ! runeforge.darkglare_medallion.enabled",
-								["description"] = "Without Chaos Theory or Darkglare, Blade Dance with First Blood or at 3+ (2+ with Trail of Ruin) targets",
 								["value"] = "talent.first_blood.enabled || spell_targets.blade_dance1 >= ( 3 - talent.trail_of_ruin.enabled )",
+								["description"] = "Without Chaos Theory or Darkglare, Blade Dance with First Blood or at 3+ (2+ with Trail of Ruin) targets",
+								["criteria"] = "! runeforge.chaos_theory.enabled & ! runeforge.darkglare_medallion.enabled",
 							}, -- [3]
 							{
 								["enabled"] = true,
 								["op"] = "set",
 								["action"] = "variable",
 								["var_name"] = "blade_dance",
-								["criteria"] = "runeforge.chaos_theory.enabled",
-								["description"] = "With Chaos Theory, Blade Dance when the buff is down, with First Blood at 2+ (1+ with Trail of Ruin) or with Essence Break at 4+ (3+ with Trail of Ruin) targets",
 								["value"] = "buff.chaos_theory.down || talent.first_blood.enabled & spell_targets.blade_dance1 >= ( 2 - talent.trail_of_ruin.enabled ) || ! talent.cycle_of_hatred.enabled & spell_targets.blade_dance1 >= ( 4 - talent.trail_of_ruin.enabled )",
+								["description"] = "With Chaos Theory, Blade Dance when the buff is down, with First Blood at 2+ (1+ with Trail of Ruin) or with Essence Break at 4+ (3+ with Trail of Ruin) targets",
+								["criteria"] = "runeforge.chaos_theory.enabled",
 							}, -- [4]
 							{
 								["enabled"] = true,
 								["op"] = "set",
 								["action"] = "variable",
 								["var_name"] = "blade_dance",
-								["criteria"] = "runeforge.darkglare_medallion.enabled",
-								["description"] = "With Darkglare, Blade Dance at normal target count when buffed by a secondary effect, or always at 4T+ for non-Demonic",
 								["value"] = "talent.first_blood.enabled || ( buff.metamorphosis.up || talent.trail_of_ruin.enabled || debuff.essence_break.up ) & spell_targets.blade_dance1 >= ( 3 - talent.trail_of_ruin.enabled ) || ! talent.demonic.enabled & spell_targets.blade_dance1 >= 4",
+								["description"] = "With Darkglare, Blade Dance at normal target count when buffed by a secondary effect, or always at 4T+ for non-Demonic",
+								["criteria"] = "runeforge.darkglare_medallion.enabled",
 							}, -- [5]
 							{
 								["enabled"] = true,
 								["op"] = "reset",
 								["action"] = "variable",
 								["var_name"] = "blade_dance",
-								["criteria"] = "talent.essence_break.enabled & cooldown.essence_break.ready",
 								["description"] = "Use Essence Break before Blade Dance if it is available and off cooldown",
+								["criteria"] = "talent.essence_break.enabled & cooldown.essence_break.ready",
 							}, -- [6]
 							{
 								["enabled"] = true,
 								["op"] = "set",
 								["action"] = "variable",
 								["var_name"] = "blade_dance",
-								["criteria"] = "runeforge.agony_gaze.enabled & talent.cycle_of_hatred.enabled",
-								["description"] = "With Agony Gaze and Cycle of Hatred, avoid using Blade Dance when there is the possibility to extend an AoE Sinful Brand",
 								["value"] = "variable.blade_dance & active_dot.sinful_brand < 2",
+								["description"] = "With Agony Gaze and Cycle of Hatred, avoid using Blade Dance when there is the possibility to extend an AoE Sinful Brand",
+								["criteria"] = "runeforge.agony_gaze.enabled & talent.cycle_of_hatred.enabled",
 							}, -- [7]
 							{
 								["enabled"] = true,
@@ -2835,9 +2838,9 @@ HekiliDB = {
 								["op"] = "set",
 								["action"] = "variable",
 								["var_name"] = "waiting_for_agony_gaze",
-								["criteria"] = "runeforge.agony_gaze.enabled",
-								["description"] = "With Agony Gaze, attempt to sync Eye Beam and cooldown usage for maximum duration, unless at 3T+",
 								["value"] = "! dot.sinful_brand.ticking & cooldown.sinful_brand.remains < gcd.max * 4 & ( ! cooldown.metamorphosis.up || active_enemies = 1 ) & spell_targets.eye_beam <= 3",
+								["description"] = "With Agony Gaze, attempt to sync Eye Beam and cooldown usage for maximum duration, unless at 3T+",
+								["criteria"] = "runeforge.agony_gaze.enabled",
 							}, -- [11]
 							{
 								["enabled"] = true,
@@ -2936,8 +2939,8 @@ HekiliDB = {
 							}, -- [13]
 							{
 								["enabled"] = true,
-								["action"] = "demons_bite",
 								["criteria"] = "runeforge.burning_wound.enabled & debuff.burning_wound.remains < 4",
+								["action"] = "demons_bite",
 								["cycle_targets"] = 1,
 							}, -- [14]
 							{
@@ -2975,14 +2978,14 @@ HekiliDB = {
 								["enabled"] = true,
 								["criteria"] = "! talent.demonic.enabled & covenant.venthyr & runeforge.agony_gaze.enabled & dot.sinful_brand.remains > 8 & spell_targets.metamorphosis_impact < 2 & ( cooldown.eye_beam.remains > 20 || boss & fight_remains < 25 )",
 								["landing_distance"] = "10",
-								["action"] = "metamorphosis",
 								["description"] = "If Venthyr and Sinful Brand duration is over 8 seconds with 1T, purposfully whiff Metamorphosis impact to not refresh with a lower duration DoT",
+								["action"] = "metamorphosis",
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["action"] = "metamorphosis",
-								["criteria"] = "talent.demonic.enabled & covenant.venthyr & runeforge.agony_gaze.enabled & dot.sinful_brand.remains > 8 & spell_targets.metamorphosis_impact < 2 & ( cooldown.eye_beam.remains > 20 & ! variable.blade_dance || cooldown.blade_dance.remains > gcd.max || boss & fight_remains < 25 )",
 								["landing_distance"] = "10",
+								["criteria"] = "talent.demonic.enabled & covenant.venthyr & runeforge.agony_gaze.enabled & dot.sinful_brand.remains > 8 & spell_targets.metamorphosis_impact < 2 & ( cooldown.eye_beam.remains > 20 & ! variable.blade_dance || cooldown.blade_dance.remains > gcd.max || boss & fight_remains < 25 )",
+								["action"] = "metamorphosis",
 							}, -- [2]
 							{
 								["enabled"] = true,
@@ -3037,24 +3040,24 @@ HekiliDB = {
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "1",
-								["criteria"] = "trinket.t1.has_use_buff & ( ! trinket.t2.has_use_buff || trinket.t1.cooldown.duration >= trinket.t2.cooldown.duration )",
 								["var_name"] = "trinket_sync_slot",
+								["criteria"] = "trinket.t1.has_use_buff & ( ! trinket.t2.has_use_buff || trinket.t1.cooldown.duration >= trinket.t2.cooldown.duration )",
 							}, -- [2]
 							{
 								["enabled"] = true,
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "2",
-								["criteria"] = "trinket.t2.has_use_buff & ( ! trinket.t1.has_use_buff || trinket.t2.cooldown.duration > trinket.t1.cooldown.duration )",
 								["var_name"] = "trinket_sync_slot",
+								["criteria"] = "trinket.t2.has_use_buff & ( ! trinket.t1.has_use_buff || trinket.t2.cooldown.duration > trinket.t1.cooldown.duration )",
 							}, -- [3]
 							{
 								["enabled"] = true,
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "talent.blind_fury.enabled & ( runeforge.darkglare_medallion.enabled || talent.demon_blades.enabled & ! runeforge.agony_gaze.enabled )",
-								["description"] = "Use Eye Beam at low Fury with Blind Fury along with either Darkglare or Demon Blades unless using Agony Gaze",
 								["var_name"] = "use_eye_beam_fury_condition",
+								["description"] = "Use Eye Beam at low Fury with Blind Fury along with either Darkglare or Demon Blades unless using Agony Gaze",
 							}, -- [4]
 							{
 								["action"] = "arcane_torrent",
@@ -3062,6 +3065,7 @@ HekiliDB = {
 							}, -- [5]
 						},
 					},
+					["author"] = "SimC",
 				},
 				["Vengeance"] = {
 					["source"] = "https://github.com/simulationcraft/simc/",
@@ -3072,6 +3076,7 @@ HekiliDB = {
 					["profile"] = "## Demon Hunter Vengeance\n## November 13, 2021\n\n## Allow Fracture at low Fury (prevents Fury issues with Spirit Bomb).\n\nactions.precombat=bottled_flayedwing_toxin\n\n# Executed every time the actor is available.\nactions+=/variable,name=brand_build,value=talent.agonizing_flames.enabled&talent.burning_alive.enabled&talent.charred_flesh.enabled\nactions+=/disrupt\nactions+=/consume_magic\nactions+=/reverse_magic\nactions+=/throw_glaive,if=buff.fel_bombardment.stack=5&(buff.immolation_aura.up||!buff.metamorphosis.up)\nactions+=/call_action_list,name=brand,strict=1,if=variable.brand_build\nactions+=/call_action_list,name=defensives\nactions+=/call_action_list,name=cooldowns\nactions+=/call_action_list,name=normal\n\n# Fiery Brand Rotation\nactions.brand=fiery_brand\nactions.brand+=/immolation_aura,if=dot.fiery_brand.ticking\n\nactions.cooldowns=potion\nactions.cooldowns+=/concentrated_flame,if=(!dot.concentrated_flame_burn.ticking&!action.concentrated_flame.in_flight||full_recharge_time<gcd.max)\nactions.cooldowns+=/worldvein_resonance,if=buff.lifeblood.stack<3\nactions.cooldowns+=/memory_of_lucid_dreams\n# Hold Reaping Flames for execute range or kill buffs, if possible. Always try to get the lowest cooldown based on available enemies.\nactions.cooldowns+=/reaping_flames,if=target.time_to_die<1.5||((target.health.pct>80||target.health.pct<=20)&(active_enemies=1||fight_remains>29))||(target.time_to_pct_20>30&(active_enemies=1||fight_remains>44))\n# Default fallback for usable essences.\nactions.cooldowns+=/heart_essence\nactions.cooldowns+=/use_item,effect_name=cyclotronic_blast,if=buff.memory_of_lucid_dreams.down\nactions.cooldowns+=/use_item,name=ashvanes_razor_coral,if=debuff.razor_coral_debuff.down||debuff.conductive_ink_debuff.up&target.health.pct<31||target.time_to_die<20\n# Default fallback for usable items.\nactions.cooldowns+=/use_items\nactions.cooldowns+=/sinful_brand,if=!dot.sinful_brand.ticking\nactions.cooldowns+=/the_hunt\nactions.cooldowns+=/elysian_decree\n\n# Defensives\nactions.defensives=demon_spikes,if=tanking&((full_recharge_time<1&incoming_damage_3s)||(active_enemies>3&incoming_damage_3s&buff.demon_spikes.down)||(incoming_damage_5s>0.25*health.max))\nactions.defensives+=/soul_barrier,if=(active_enemies>3&incoming_damage_3s&buff.demon_spikes.down)||(incoming_damage_5s>0.4*health.max)\nactions.defensives+=/bulk_extraction,if=health.percent<50\nactions.defensives+=/metamorphosis,if=!(talent.demonic.enabled)&(!covenant.venthyr||!dot.sinful_brand.ticking)||(boss&fight_remains<15)\nactions.defensives+=/fiery_brand\n\n# Normal Rotation\nactions.normal+=/infernal_strike,if=full_recharge_time<1&(!talent.flame_crash.enabled||(dot.sigil_of_flame.remains<3&!action.infernal_strike.sigil_placed))\nactions.normal+=/bulk_extraction\nactions.normal+=/spirit_bomb,if=((buff.metamorphosis.up&talent.fracture.enabled&soul_fragments>=3)||soul_fragments>=4)\nactions.normal+=/fel_devastation,if=tanking&(active_enemies>1||talent.demonic.enabled)\nactions.normal+=/soul_cleave,if=((talent.spirit_bomb.enabled&soul_fragments=0)||!talent.spirit_bomb.enabled)&((talent.fracture.enabled&fury>=55)||(!talent.fracture.enabled&fury>=70)||cooldown.fel_devastation.remains>target.time_to_die||(buff.metamorphosis.up&((talent.fracture.enabled&fury>=35)||(!talent.fracture.enabled&fury>=50))))\nactions.normal+=/immolation_aura,if=((variable.brand_build&cooldown.fiery_brand.remains>10)||!variable.brand_build)&fury<=90\nactions.normal+=/felblade,if=fury<=60\nactions.normal+=/fracture,if=fury<30||((talent.spirit_bomb.enabled&soul_fragments<=3)||(!talent.spirit_bomb.enabled&((buff.metamorphosis.up&fury<=55)||(buff.metamorphosis.down&fury<=70))))\nactions.normal+=/sigil_of_flame,if=!(covenant.kyrian&runeforge.razelikhs_defilement)\nactions.normal+=/shear\nactions.normal+=/throw_glaive",
 					["version"] = 20211123,
 					["warnings"] = "WARNING:  The import for 'normal' required some automated changes.\nLine 9: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\n\nImported 6 action lists.\n",
+					["author"] = "SimC",
 					["lists"] = {
 						["brand"] = {
 							{
@@ -3091,8 +3096,8 @@ HekiliDB = {
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "talent.agonizing_flames.enabled & talent.burning_alive.enabled & talent.charred_flesh.enabled",
-								["description"] = "Executed every time the actor is available.",
 								["var_name"] = "brand_build",
+								["description"] = "Executed every time the actor is available.",
 							}, -- [1]
 							{
 								["action"] = "disrupt",
@@ -3172,8 +3177,8 @@ HekiliDB = {
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["action"] = "cyclotronic_blast",
 								["criteria"] = "buff.memory_of_lucid_dreams.down",
+								["action"] = "cyclotronic_blast",
 								["effect_name"] = "cyclotronic_blast",
 							}, -- [7]
 							{
@@ -3284,7 +3289,6 @@ HekiliDB = {
 							}, -- [11]
 						},
 					},
-					["author"] = "SimC",
 				},
 			},
 		},
@@ -5076,58 +5080,6 @@ HekiliDB = {
 			},
 		},
 		["Shanyt - Argent Dawn"] = {
-			["runOnce"] = {
-				["autoconvertGlowsForCustomGlow_20190326"] = true,
-				["forceEnableAllClassesOnceDueToBug_20220225-71"] = true,
-				["resetAllPotions_20201209"] = true,
-				["enableAllOfTheThings_20180820"] = true,
-				["forceEnableEnhancedRecheckBoomkin_20210712"] = true,
-				["forceEnableAllClassesOnceDueToBug_20220225-102"] = true,
-				["forceReloadAllDefaultPriorities_20220228"] = true,
-				["forceEnableAllClassesOnceDueToBug_20220225"] = true,
-				["forceEnableAllClassesOnceDueToBug_20220225-72"] = true,
-				["resetPotionsToDefaults_20190717"] = true,
-				["autoconvertDisplayToggle_20190621_1"] = true,
-				["resetRogueMfDOption_20200226"] = true,
-				["resetGlobalCooldownSync_20210403"] = true,
-				["updateMaxRefreshToNewSpecOptions_20220222"] = true,
-				["autoconvertDelaySweepToExtend_20190729"] = true,
-				["forceEnableAllClassesOnceDueToBug_20220225-73"] = true,
-				["resetAberrantPackageDates_20190728_1"] = true,
-			},
-			["specs"] = {
-				[71] = {
-					["enabled"] = true,
-					["potionsReset"] = 20180919.1,
-					["package"] = "Arms",
-					["potion"] = "potion_of_phantom_fire",
-				},
-				[73] = {
-					["enabled"] = true,
-					["settings"] = {
-						["shockwave_interrupt"] = true,
-						["free_revenge"] = true,
-						["heroic_charge"] = false,
-					},
-					["potionsReset"] = 20180919.1,
-					["package"] = "Protection Warrior",
-					["potion"] = "potion_of_phantom_fire",
-				},
-				[72] = {
-					["enabled"] = true,
-					["settings"] = {
-						["check_ww_range"] = false,
-						["heroic_charge"] = false,
-					},
-					["potionsReset"] = 20180919.1,
-					["package"] = "Fury",
-					["potion"] = "potion_of_phantom_fire",
-				},
-				[102] = {
-					["enhancedRecheck"] = true,
-					["enabled"] = true,
-				},
-			},
 			["displays"] = {
 				["Interrupts"] = {
 					["rel"] = "CENTER",
@@ -5152,6 +5104,53 @@ HekiliDB = {
 					["rel"] = "CENTER",
 					["y"] = -253.999755859375,
 					["x"] = -55.99999618530273,
+				},
+			},
+			["runOnce"] = {
+				["autoconvertGlowsForCustomGlow_20190326"] = true,
+				["forceReloadClassDefaultOptions_20220306_71"] = true,
+				["forceEnableAllClassesOnceDueToBug_20220225-71"] = true,
+				["resetAllPotions_20201209"] = true,
+				["enableAllOfTheThings_20180820"] = true,
+				["forceEnableEnhancedRecheckBoomkin_20210712"] = true,
+				["forceEnableAllClassesOnceDueToBug_20220225-102"] = true,
+				["forceReloadAllDefaultPriorities_20220228"] = true,
+				["forceEnableAllClassesOnceDueToBug_20220225"] = true,
+				["forceEnableAllClassesOnceDueToBug_20220225-72"] = true,
+				["forceReloadClassDefaultOptions_20220306_73"] = true,
+				["resetGlobalCooldownSync_20210403"] = true,
+				["resetPotionsToDefaults_20190717"] = true,
+				["autoconvertDisplayToggle_20190621_1"] = true,
+				["resetRogueMfDOption_20200226"] = true,
+				["forceReloadClassDefaultOptions_20220306_72"] = true,
+				["updateMaxRefreshToNewSpecOptions_20220222"] = true,
+				["autoconvertDelaySweepToExtend_20190729"] = true,
+				["forceEnableAllClassesOnceDueToBug_20220225-73"] = true,
+				["resetAberrantPackageDates_20190728_1"] = true,
+			},
+			["specs"] = {
+				[73] = {
+					["settings"] = {
+						["shockwave_interrupt"] = true,
+						["free_revenge"] = true,
+						["heroic_charge"] = false,
+					},
+					["potionsReset"] = 20180919.1,
+				},
+				[71] = {
+					["potion"] = "potion_of_phantom_fire",
+					["potionsReset"] = 20180919.1,
+				},
+				[72] = {
+					["settings"] = {
+						["check_ww_range"] = false,
+						["heroic_charge"] = false,
+					},
+					["potionsReset"] = 20180919.1,
+				},
+				[102] = {
+					["enhancedRecheck"] = true,
+					["enabled"] = true,
 				},
 			},
 			["packs"] = {
@@ -11456,19 +11455,21 @@ HekiliDB = {
 		},
 		["Avisar - Dalaran"] = {
 			["runOnce"] = {
-				["resetPotionsToDefaults_20190717"] = true,
-				["autoconvertDisplayToggle_20190621_1"] = true,
-				["updateMaxRefreshToNewSpecOptions_20220222"] = true,
-				["forceEnableAllClassesOnceDueToBug_20220225-102"] = true,
+				["forceEnableAllClassesOnceDueToBug_20220225"] = true,
+				["forceReloadAllDefaultPriorities_20220228"] = true,
 				["autoconvertGlowsForCustomGlow_20190326"] = true,
+				["forceEnableAllClassesOnceDueToBug_20220225-70"] = true,
+				["updateMaxRefreshToNewSpecOptions_20220222"] = true,
+				["autoconvertDelaySweepToExtend_20190729"] = true,
+				["forceEnableEnhancedRecheckBoomkin_20210712"] = true,
 				["forceEnableAllClassesOnceDueToBug_20220225-66"] = true,
-				["resetGlobalCooldownSync_20210403"] = true,
+				["resetPotionsToDefaults_20190717"] = true,
 				["resetRogueMfDOption_20200226"] = true,
 				["resetAllPotions_20201209"] = true,
 				["enableAllOfTheThings_20180820"] = true,
-				["forceEnableEnhancedRecheckBoomkin_20210712"] = true,
-				["autoconvertDelaySweepToExtend_20190729"] = true,
-				["forceEnableAllClassesOnceDueToBug_20220225-70"] = true,
+				["resetGlobalCooldownSync_20210403"] = true,
+				["autoconvertDisplayToggle_20190621_1"] = true,
+				["forceEnableAllClassesOnceDueToBug_20220225-102"] = true,
 				["resetAberrantPackageDates_20190728_1"] = true,
 			},
 			["specs"] = {
@@ -11478,15 +11479,15 @@ HekiliDB = {
 						["check_wake_range"] = false,
 					},
 					["aoe"] = 3,
-					["potionsReset"] = 20180919.1,
-					["package"] = "Retribution",
 					["potion"] = "spectral_strength",
+					["package"] = "Retribution",
+					["potionsReset"] = 20180919.1,
 				},
 				[66] = {
 					["enabled"] = true,
-					["potionsReset"] = 20180919.1,
-					["potion"] = "phantom_fire",
 					["package"] = "Protection Paladin",
+					["potion"] = "phantom_fire",
+					["potionsReset"] = 20180919.1,
 				},
 				[102] = {
 					["enhancedRecheck"] = true,
@@ -11494,20 +11495,20 @@ HekiliDB = {
 				},
 			},
 			["displays"] = {
-				["AOE"] = {
-					["rel"] = "CENTER",
-					["x"] = -54.99961853027344,
-					["y"] = -149.0003662109375,
-				},
-				["Primary"] = {
-					["rel"] = "CENTER",
-					["x"] = -55,
-					["y"] = -235.0000915527344,
-				},
 				["Defensives"] = {
 					["rel"] = "CENTER",
 					["x"] = -163.9998931884766,
 					["y"] = -235.0000457763672,
+				},
+				["Primary"] = {
+					["y"] = -235.0000915527344,
+					["x"] = -55,
+					["rel"] = "CENTER",
+				},
+				["AOE"] = {
+					["rel"] = "CENTER",
+					["x"] = -54.99961853027344,
+					["y"] = -149.0003662109375,
 				},
 				["Interrupts"] = {
 					["rel"] = "CENTER",
@@ -11516,6 +11517,531 @@ HekiliDB = {
 				},
 			},
 			["packs"] = {
+				["Retribution"] = {
+					["builtIn"] = true,
+					["date"] = 20220226,
+					["spec"] = 70,
+					["desc"] = "Retribution Paladin\nFebruary 25, 2022\n\nChanges:\n- Integrate new priority split from SimC.",
+					["profile"] = "## Retribution Paladin\n## February 25, 2022\n\n## Changes:\n## - Integrate new priority split from SimC.\n\nactions.precombat=potion\nactions.precombat+=/blessing_of_summer\nactions.precombat+=/blessing_of_autumn\nactions.precombat+=/blessing_of_winter\nactions.precombat+=/blessing_of_spring\nactions.precombat+=/fleshcraft,if=soulbind.pustule_eruption||soulbind.volatile_solvent\nactions.precombat+=/arcane_torrent,if=talent.final_reckoning.enabled&talent.seraphim.enabled\nactions.precombat+=/shield_of_vengeance\n\n## Executed every time the actor is available.\nactions=rebuke\nactions+=/call_action_list,name=cooldowns\nactions+=/call_action_list,name=es_fr_pooling,if=(!raid_event.adds.exists||raid_event.adds.up||raid_event.adds.in<9||raid_event.adds.in>30)&(talent.execution_sentence&cooldown.execution_sentence.remains<9&spell_targets.divine_storm<5||talent.final_reckoning&cooldown.final_reckoning.remains<9)&target.time_to_die>8\nactions+=/call_action_list,name=es_fr_active,strict=1,if=debuff.execution_sentence.up||debuff.final_reckoning.up\nactions+=/call_action_list,name=generators\n\nactions.cooldowns=potion,if=buff.avenging_wrath.up||buff.crusade.up&buff.crusade.stack=10||boss&fight_remains<25\nactions.cooldowns+=/lights_judgment,if=spell_targets.lights_judgment>=2||!raid_event.adds.exists||raid_event.adds.in>75||raid_event.adds.up\nactions.cooldowns+=/fireblood,if=(buff.avenging_wrath.up||buff.crusade.up&buff.crusade.stack=10)&!talent.execution_sentence\nactions.cooldowns+=/fleshcraft,if=soulbind.pustule_eruption||soulbind.volatile_solvent,interrupt_immediate=1,interrupt_global=1,interrupt_if=soulbind.volatile_solvent\nactions.cooldowns+=/shield_of_vengeance,if=(!talent.execution_sentence||cooldown.execution_sentence.remains<52)&fight_remains>15\nactions.cooldowns+=/blessing_of_summer\nactions.cooldowns+=/blessing_of_autumn\nactions.cooldowns+=/blessing_of_winter\nactions.cooldowns+=/blessing_of_spring\nactions.cooldowns+=/use_item,name=inscrutable_quantum_device,if=buff.avenging_wrath.up||buff.crusade.up&buff.crusade.stack=10||boss&fight_remains<30\nactions.cooldowns+=/use_item,name=overwhelming_power_crystal,if=buff.avenging_wrath.up||buff.crusade.up&buff.crusade.stack=10||boss&fight_remains<15\nactions.cooldowns+=/use_item,name=darkmoon_deck_voracity,if=buff.avenging_wrath.up||buff.crusade.up&buff.crusade.stack=10||boss&fight_remains<20\nactions.cooldowns+=/use_item,name=macabre_sheet_music,if=buff.avenging_wrath.up||buff.crusade.up&buff.crusade.stack=10||boss&fight_remains<20\nactions.cooldowns+=/use_item,name=faulty_countermeasure,if=!talent.crusade||buff.crusade.up||boss&fight_remains<30\nactions.cooldowns+=/use_item,name=dreadfire_vessel\nactions.cooldowns+=/use_item,name=skulkers_wing\nactions.cooldowns+=/use_item,name=grim_codex\nactions.cooldowns+=/use_item,name=memory_of_past_sins\nactions.cooldowns+=/use_item,name=spare_meat_hook\nactions.cooldowns+=/use_item,name=salvaged_fusion_amplifier\nactions.cooldowns+=/use_item,name=giant_ornamental_pearl\nactions.cooldowns+=/use_item,name=windscar_whetstone\nactions.cooldowns+=/use_item,name=scars_of_fraternal_strife\nactions.cooldowns+=/use_item,name=chains_of_domination\nactions.cooldowns+=/use_item,name=earthbreakers_impact\nactions.cooldowns+=/use_item,name=heart_of_the_swarm,if=!buff.avenging_wrath.up&buff.crusade.up\nactions.cooldowns+=/use_item,name=gladiators_badge,if=buff.avenging_wrath.up||buff.crusade.up&buff.crusade.stack>=10||cooldown.avenging_wrath.remains>45||cooldown.crusade.remains>45\nactions.cooldowns+=/use_items,if=buff.avenging_wrath.up||buff.crusade.up&buff.crusade.stack>=10\nactions.cooldowns+=/avenging_wrath,if=(holy_power>=4&time<5||holy_power>=3&(time>5||runeforge.the_magistrates_judgment)||holy_power>=2&runeforge.vanguards_momentum&talent.final_reckoning||talent.holy_avenger&cooldown.holy_avenger.remains=0)&(!talent.seraphim||!talent.final_reckoning||cooldown.seraphim.remains>0)\nactions.cooldowns+=/crusade,if=holy_power>=4&time<5||holy_power>=3&time>5\nactions.cooldowns+=/ashen_hallow\nactions.cooldowns+=/holy_avenger,if=time_to_hpg=0&holy_power<=2&(buff.avenging_wrath.up||talent.crusade&(cooldown.crusade.remains=0||buff.crusade.up)||boss&fight_remains<20)\nactions.cooldowns+=/final_reckoning,if=(holy_power>=4&time<8||holy_power>=3&(time>=8||spell_targets.divine_storm>=2&covenant.kyrian))&cooldown.avenging_wrath.remains>gcd&time_to_hpg=0&(!talent.seraphim||buff.seraphim.up)&(!raid_event.adds.exists||raid_event.adds.up||raid_event.adds.in>40)&(!buff.avenging_wrath.up||holy_power=5||cooldown.hammer_of_wrath.remains||spell_targets.divine_storm>=2&covenant.kyrian)\n\nactions.es_fr_active=fireblood\nactions.es_fr_active+=/call_action_list,name=finishers,if=holy_power=5||debuff.judgment.up||debuff.final_reckoning.up&(debuff.final_reckoning.remains<gcd.max||spell_targets.divine_storm>=2&!talent.execution_sentence)||debuff.execution_sentence.up&debuff.execution_sentence.remains<gcd.max\nactions.es_fr_active+=/divine_toll\nactions.es_fr_active+=/vanquishers_hammer\nactions.es_fr_active+=/wake_of_ashes,if=holy_power<=2&(debuff.final_reckoning.up&debuff.final_reckoning.remains<gcd*2&!runeforge.divine_resonance||debuff.execution_sentence.up&debuff.execution_sentence.remains<gcd||spell_targets.divine_storm>=5&runeforge.divine_resonance&talent.execution_sentence)\nactions.es_fr_active+=/blade_of_justice,if=conduit.expurgation&(!runeforge.divine_resonance&holy_power<=3||holy_power<=2)\nactions.es_fr_active+=/judgment,if=!debuff.judgment.up&(holy_power>=1&runeforge.the_magistrates_judgment||holy_power>=2)\nactions.es_fr_active+=/call_action_list,name=finishers\nactions.es_fr_active+=/wake_of_ashes,if=holy_power<=2\nactions.es_fr_active+=/blade_of_justice,if=holy_power<=3\nactions.es_fr_active+=/judgment,if=!debuff.judgment.up\nactions.es_fr_active+=/hammer_of_wrath\nactions.es_fr_active+=/crusader_strike\nactions.es_fr_active+=/arcane_torrent\nactions.es_fr_active+=/consecration\n\nactions.es_fr_pooling=seraphim,if=holy_power=5&(!talent.final_reckoning||cooldown.final_reckoning.remains<=gcd*3||cooldown.final_reckoning.remains>cooldown)&(!talent.execution_sentence||cooldown.execution_sentence.remains<=gcd*3||cooldown.execution_sentence.remains>cooldown||talent.final_reckoning)&(!covenant.kyrian||cooldown.divine_toll.remains<9||cooldown.divine_toll.remains>cooldown)\nactions.es_fr_pooling+=/call_action_list,name=finishers,if=holy_power=5||debuff.final_reckoning.up||buff.crusade.up&buff.crusade.stack<10\nactions.es_fr_pooling+=/vanquishers_hammer,if=buff.seraphim.up\nactions.es_fr_pooling+=/hammer_of_wrath,if=runeforge.vanguards_momentum\nactions.es_fr_pooling+=/wake_of_ashes,if=holy_power<=2&set_bonus.tier28_4pc\nactions.es_fr_pooling+=/blade_of_justice,if=holy_power<=3\nactions.es_fr_pooling+=/judgment,if=!debuff.judgment.up\nactions.es_fr_pooling+=/hammer_of_wrath\nactions.es_fr_pooling+=/crusader_strike,if=cooldown.crusader_strike.charges_fractional>=1.75&(holy_power<=2||holy_power<=3&cooldown.blade_of_justice.remains>gcd*2||holy_power=4&cooldown.blade_of_justice.remains>gcd*2&cooldown.judgment.remains>gcd*2)\nactions.es_fr_pooling+=/seraphim,if=!talent.final_reckoning&cooldown.execution_sentence.remains<=gcd*3&(!covenant.kyrian||cooldown.divine_toll.remains<9)\nactions.es_fr_pooling+=/call_action_list,name=finishers\nactions.es_fr_pooling+=/crusader_strike\nactions.es_fr_pooling+=/arcane_torrent,if=holy_power<=4\nactions.es_fr_pooling+=/seraphim,if=(!talent.final_reckoning||cooldown.final_reckoning.remains<=gcd*3)&(!talent.execution_sentence||cooldown.execution_sentence.remains<=gcd*3||talent.final_reckoning)&(!covenant.kyrian||cooldown.divine_toll.remains<9)\nactions.es_fr_pooling+=/consecration\n\nactions.finishers=variable,name=ds_castable,value=spell_targets.divine_storm=2&!(runeforge.final_verdict||talent.righteous_verdict)||spell_targets.divine_storm>2||buff.empyrean_power.up&!debuff.judgment.up&!buff.divine_purpose.up\nactions.finishers+=/seraphim,if=(cooldown.avenging_wrath.remains>15||cooldown.crusade.remains>15)&!talent.final_reckoning&(!talent.execution_sentence||spell_targets.divine_storm>=5)&(!raid_event.adds.exists||raid_event.adds.in>40||raid_event.adds.in<gcd||raid_event.adds.up)&(!covenant.kyrian||cooldown.divine_toll.remains<9)||fight_remains<15&fight_remains>5||buff.crusade.up&buff.crusade.stack<10\nactions.finishers+=/execution_sentence,if=(buff.crusade.down&cooldown.crusade.remains>10||buff.crusade.stack>=3||cooldown.avenging_wrath.remains>10)&(!talent.final_reckoning||cooldown.final_reckoning.remains>10)&target.time_to_die>8&spell_targets.divine_storm<5\nactions.finishers+=/divine_storm,if=variable.ds_castable&!buff.vanquishers_hammer.up&((!talent.crusade||cooldown.crusade.remains>gcd*3)&(!talent.execution_sentence||cooldown.execution_sentence.remains>gcd*6||cooldown.execution_sentence.remains>gcd*4&holy_power>=5||target.time_to_die<8||spell_targets.divine_storm>=5||!talent.seraphim&cooldown.execution_sentence.remains>gcd*2)&(!talent.final_reckoning||cooldown.final_reckoning.remains>gcd*6||cooldown.final_reckoning.remains>gcd*4&holy_power>=5||!talent.seraphim&cooldown.final_reckoning.remains>gcd*2)||talent.holy_avenger&cooldown.holy_avenger.remains<gcd*3||buff.holy_avenger.up||buff.crusade.up&buff.crusade.stack<10)\nactions.finishers+=/templars_verdict,if=(!talent.crusade||cooldown.crusade.remains>gcd*3)&(!talent.execution_sentence||cooldown.execution_sentence.remains>gcd*8||cooldown.execution_sentence.remains>gcd*6&holy_power>=4||target.time_to_die<8||!talent.seraphim&cooldown.execution_sentence.remains>gcd*2)&(!talent.final_reckoning||cooldown.final_reckoning.remains>gcd*8||cooldown.final_reckoning.remains>gcd*6&holy_power>=4||!talent.seraphim&cooldown.final_reckoning.remains>gcd*2)||talent.holy_avenger&cooldown.holy_avenger.remains<gcd*3||buff.holy_avenger.up||buff.crusade.up&buff.crusade.stack<10\n \nactions.generators=call_action_list,name=finishers,if=holy_power=5||(debuff.judgment.up||holy_power=4)&buff.divine_resonance.up||buff.holy_avenger.up\nactions.generators+=/vanquishers_hammer,if=!runeforge.dutybound_gavel||!talent.final_reckoning&!talent.execution_sentence||fight_remains<8\nactions.generators+=/hammer_of_wrath,if=runeforge.the_mad_paragon||covenant.venthyr&cooldown.ashen_hallow.remains>210\nactions.generators+=/wake_of_ashes,if=holy_power<=2&set_bonus.tier28_4pc&(cooldown.avenging_wrath.remains||cooldown.crusade.remains)\nactions.generators+=/divine_toll,if=holy_power<=1&!debuff.judgment.up&(!talent.seraphim||buff.seraphim.up)&(!raid_event.adds.exists||raid_event.adds.in>30||raid_event.adds.up)&!talent.final_reckoning&(!talent.execution_sentence||fight_remains<8||spell_targets.divine_storm>=5)&(cooldown.avenging_wrath.remains||cooldown.crusade.remains)\nactions.generators+=/judgment,if=!debuff.judgment.up&(holy_power>=1&runeforge.the_magistrates_judgment||holy_power>=2)\nactions.generators+=/wake_of_ashes,if=(holy_power=0||holy_power<=2&cooldown.blade_of_justice.remains>gcd*2)&(!raid_event.adds.exists||raid_event.adds.in>20||raid_event.adds.up)&(!talent.seraphim||cooldown.seraphim.remains>5||covenant.kyrian)&(!talent.execution_sentence||cooldown.execution_sentence.remains>15||target.time_to_die<8||spell_targets.divine_storm>=5)&(!talent.final_reckoning||cooldown.final_reckoning.remains>15||fight_remains<8)&(cooldown.avenging_wrath.remains||cooldown.crusade.remains)\nactions.generators+=/call_action_list,name=finishers,if=holy_power>=3&buff.crusade.up&buff.crusade.stack<10\nactions.generators+=/blade_of_justice,if=conduit.expurgation&holy_power<=3\nactions.generators+=/judgment,if=!debuff.judgment.up\nactions.generators+=/hammer_of_wrath\nactions.generators+=/blade_of_justice,if=holy_power<=3\nactions.generators+=/call_action_list,name=finishers,if=(target.health.pct<=20||buff.avenging_wrath.up||buff.crusade.up||buff.empyrean_power.up)\nactions.generators+=/consecration,if=!consecration.up&spell_targets.divine_storm>=2\nactions.generators+=/crusader_strike,if=cooldown.crusader_strike.charges_fractional>=1.75&(holy_power<=2||holy_power<=3&cooldown.blade_of_justice.remains>gcd*2||holy_power=4&cooldown.blade_of_justice.remains>gcd*2&cooldown.judgment.remains>gcd*2)\nactions.generators+=/call_action_list,name=finishers\nactions.generators+=/consecration,if=!consecration.up\nactions.generators+=/crusader_strike\nactions.generators+=/arcane_torrent\nactions.generators+=/consecration",
+					["version"] = 20220226,
+					["warnings"] = "WARNING:  The import for 'generators' required some automated changes.\nLine 2: Converted 'talent.X' to 'talent.X.enabled' (2x).\nLine 2: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 3: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 5: Converted 'talent.X' to 'talent.X.enabled' (3x).\nLine 6: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 7: Converted 'talent.X' to 'talent.X.enabled' (3x).\n\nWARNING:  The import for 'default' required some automated changes.\nLine 3: Converted 'talent.X' to 'talent.X.enabled' (2x).\n\nWARNING:  The import for 'precombat' required some automated changes.\nLine 6: Converted 'soulbind.X' to 'soulbind.X.enabled' (1x).\nLine 6: Converted 'soulbind.X' to 'soulbind.X.enabled' at EOL (1x).\n\nWARNING:  The import for 'cooldowns' required some automated changes.\nLine 3: Converted 'talent.X' to 'talent.X.enabled' at EOL (1x).\nLine 4: Converted 'soulbind.X' to 'soulbind.X.enabled' (1x).\nLine 4: Converted 'soulbind.X' to 'soulbind.X.enabled' at EOL (1x).\nLine 5: Converted 'talent.X' to 'talent.X.enabled' (1x).\nLine 14: Converted 'talent.X' to 'talent.X.enabled' (1x).\nLine 29: Converted 'talent.X' to 'talent.X.enabled' (4x).\nLine 29: Converted 'runeforge.X' to 'runeforge.X.enabled' (2x).\nLine 32: Converted 'talent.X' to 'talent.X.enabled' (1x).\nLine 33: Converted 'talent.X' to 'talent.X.enabled' (1x).\n\nWARNING:  The import for 'finishers' required some automated changes.\nLine 1: Converted 'talent.X' to 'talent.X.enabled' (1x).\nLine 1: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 2: Converted 'talent.X' to 'talent.X.enabled' (2x).\nLine 3: Converted 'talent.X' to 'talent.X.enabled' (1x).\nLine 4: Converted 'talent.X' to 'talent.X.enabled' (6x).\nLine 5: Converted 'talent.X' to 'talent.X.enabled' (6x).\n\nWARNING:  The import for 'es_fr_active' required some automated changes.\nLine 2: Converted 'talent.X' to 'talent.X.enabled' (1x).\nLine 5: Converted 'talent.X' to 'talent.X.enabled' (1x).\nLine 5: Converted 'runeforge.X' to 'runeforge.X.enabled' (2x).\nLine 6: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 7: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\n\nWARNING:  The import for 'es_fr_pooling' required some automated changes.\nLine 1: Converted 'talent.X' to 'talent.X.enabled' (3x).\nLine 4: Converted 'runeforge.X' to 'runeforge.X.enabled' at EOL (1x).\nLine 10: Converted 'talent.X' to 'talent.X.enabled' (1x).\nLine 14: Converted 'talent.X' to 'talent.X.enabled' (3x).\n\nImported 7 action lists.\n",
+					["lists"] = {
+						["cooldowns"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || boss & fight_remains < 25",
+								["action"] = "potion",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "spell_targets.lights_judgment >= 2 || ! raid_event.adds.exists || raid_event.adds.in > 75 || raid_event.adds.up",
+								["action"] = "lights_judgment",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "( buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 ) & ! talent.execution_sentence.enabled",
+								["action"] = "fireblood",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "soulbind.pustule_eruption.enabled || soulbind.volatile_solvent.enabled",
+								["interrupt_if"] = "soulbind.volatile_solvent",
+								["interrupt_immediate"] = "1",
+								["action"] = "fleshcraft",
+								["interrupt_global"] = "1",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "( ! talent.execution_sentence.enabled || cooldown.execution_sentence.remains < 52 ) & fight_remains > 15",
+								["action"] = "shield_of_vengeance",
+							}, -- [5]
+							{
+								["action"] = "blessing_of_summer",
+								["enabled"] = true,
+							}, -- [6]
+							{
+								["action"] = "blessing_of_autumn",
+								["enabled"] = true,
+							}, -- [7]
+							{
+								["action"] = "blessing_of_winter",
+								["enabled"] = true,
+							}, -- [8]
+							{
+								["action"] = "blessing_of_spring",
+								["enabled"] = true,
+							}, -- [9]
+							{
+								["enabled"] = true,
+								["action"] = "inscrutable_quantum_device",
+								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || boss & fight_remains < 30",
+								["name"] = "inscrutable_quantum_device",
+							}, -- [10]
+							{
+								["enabled"] = true,
+								["action"] = "overwhelming_power_crystal",
+								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || boss & fight_remains < 15",
+								["name"] = "overwhelming_power_crystal",
+							}, -- [11]
+							{
+								["enabled"] = true,
+								["action"] = "darkmoon_deck_voracity",
+								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || boss & fight_remains < 20",
+								["name"] = "darkmoon_deck_voracity",
+							}, -- [12]
+							{
+								["enabled"] = true,
+								["action"] = "macabre_sheet_music",
+								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || boss & fight_remains < 20",
+								["name"] = "macabre_sheet_music",
+							}, -- [13]
+							{
+								["enabled"] = true,
+								["action"] = "faulty_countermeasure",
+								["criteria"] = "! talent.crusade.enabled || buff.crusade.up || boss & fight_remains < 30",
+								["name"] = "faulty_countermeasure",
+							}, -- [14]
+							{
+								["enabled"] = true,
+								["name"] = "dreadfire_vessel",
+								["action"] = "dreadfire_vessel",
+							}, -- [15]
+							{
+								["enabled"] = true,
+								["name"] = "skulkers_wing",
+								["action"] = "skulkers_wing",
+							}, -- [16]
+							{
+								["enabled"] = true,
+								["name"] = "grim_codex",
+								["action"] = "grim_codex",
+							}, -- [17]
+							{
+								["enabled"] = true,
+								["name"] = "memory_of_past_sins",
+								["action"] = "memory_of_past_sins",
+							}, -- [18]
+							{
+								["enabled"] = true,
+								["name"] = "spare_meat_hook",
+								["action"] = "spare_meat_hook",
+							}, -- [19]
+							{
+								["enabled"] = true,
+								["name"] = "salvaged_fusion_amplifier",
+								["action"] = "salvaged_fusion_amplifier",
+							}, -- [20]
+							{
+								["enabled"] = true,
+								["name"] = "giant_ornamental_pearl",
+								["action"] = "giant_ornamental_pearl",
+							}, -- [21]
+							{
+								["enabled"] = true,
+								["name"] = "windscar_whetstone",
+								["action"] = "windscar_whetstone",
+							}, -- [22]
+							{
+								["enabled"] = true,
+								["name"] = "scars_of_fraternal_strife",
+								["action"] = "scars_of_fraternal_strife",
+							}, -- [23]
+							{
+								["enabled"] = true,
+								["name"] = "chains_of_domination",
+								["action"] = "chains_of_domination",
+							}, -- [24]
+							{
+								["enabled"] = true,
+								["name"] = "earthbreakers_impact",
+								["action"] = "earthbreakers_impact",
+							}, -- [25]
+							{
+								["enabled"] = true,
+								["action"] = "heart_of_the_swarm",
+								["criteria"] = "! buff.avenging_wrath.up & buff.crusade.up",
+								["name"] = "heart_of_the_swarm",
+							}, -- [26]
+							{
+								["enabled"] = true,
+								["action"] = "gladiators_badge",
+								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack >= 10 || cooldown.avenging_wrath.remains > 45 || cooldown.crusade.remains > 45",
+								["name"] = "gladiators_badge",
+							}, -- [27]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack >= 10",
+								["action"] = "use_items",
+							}, -- [28]
+							{
+								["enabled"] = true,
+								["criteria"] = "( holy_power >= 4 & time < 5 || holy_power >= 3 & ( time > 5 || runeforge.the_magistrates_judgment.enabled ) || holy_power >= 2 & runeforge.vanguards_momentum.enabled & talent.final_reckoning.enabled || talent.holy_avenger.enabled & cooldown.holy_avenger.remains = 0 ) & ( ! talent.seraphim.enabled || ! talent.final_reckoning.enabled || cooldown.seraphim.remains > 0 )",
+								["action"] = "avenging_wrath",
+							}, -- [29]
+							{
+								["enabled"] = true,
+								["criteria"] = "holy_power >= 4 & time < 5 || holy_power >= 3 & time > 5",
+								["action"] = "crusade",
+							}, -- [30]
+							{
+								["action"] = "ashen_hallow",
+								["enabled"] = true,
+							}, -- [31]
+							{
+								["enabled"] = true,
+								["criteria"] = "time_to_hpg = 0 & holy_power <= 2 & ( buff.avenging_wrath.up || talent.crusade.enabled & ( cooldown.crusade.remains = 0 || buff.crusade.up ) || boss & fight_remains < 20 )",
+								["action"] = "holy_avenger",
+							}, -- [32]
+							{
+								["enabled"] = true,
+								["criteria"] = "( holy_power >= 4 & time < 8 || holy_power >= 3 & ( time >= 8 || spell_targets.divine_storm >= 2 & covenant.kyrian ) ) & cooldown.avenging_wrath.remains > gcd & time_to_hpg = 0 & ( ! talent.seraphim.enabled || buff.seraphim.up ) & ( ! raid_event.adds.exists || raid_event.adds.up || raid_event.adds.in > 40 ) & ( ! buff.avenging_wrath.up || holy_power = 5 || cooldown.hammer_of_wrath.remains || spell_targets.divine_storm >= 2 & covenant.kyrian )",
+								["action"] = "final_reckoning",
+							}, -- [33]
+						},
+						["default"] = {
+							{
+								["action"] = "rebuke",
+								["enabled"] = true,
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["list_name"] = "cooldowns",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "( ! raid_event.adds.exists || raid_event.adds.up || raid_event.adds.in < 9 || raid_event.adds.in > 30 ) & ( talent.execution_sentence.enabled & cooldown.execution_sentence.remains < 9 & spell_targets.divine_storm < 5 || talent.final_reckoning.enabled & cooldown.final_reckoning.remains < 9 ) & target.time_to_die > 8",
+								["action"] = "call_action_list",
+								["list_name"] = "es_fr_pooling",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["strict"] = 1,
+								["criteria"] = "debuff.execution_sentence.up || debuff.final_reckoning.up",
+								["list_name"] = "es_fr_active",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["list_name"] = "generators",
+							}, -- [5]
+						},
+						["precombat"] = {
+							{
+								["action"] = "potion",
+								["enabled"] = true,
+							}, -- [1]
+							{
+								["action"] = "blessing_of_summer",
+								["enabled"] = true,
+							}, -- [2]
+							{
+								["action"] = "blessing_of_autumn",
+								["enabled"] = true,
+							}, -- [3]
+							{
+								["action"] = "blessing_of_winter",
+								["enabled"] = true,
+							}, -- [4]
+							{
+								["action"] = "blessing_of_spring",
+								["enabled"] = true,
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "soulbind.pustule_eruption.enabled || soulbind.volatile_solvent.enabled",
+								["action"] = "fleshcraft",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.final_reckoning.enabled & talent.seraphim.enabled",
+								["action"] = "arcane_torrent",
+							}, -- [7]
+							{
+								["action"] = "shield_of_vengeance",
+								["enabled"] = true,
+							}, -- [8]
+						},
+						["generators"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "holy_power = 5 || ( debuff.judgment.up || holy_power = 4 ) & buff.divine_resonance.up || buff.holy_avenger.up",
+								["action"] = "call_action_list",
+								["list_name"] = "finishers",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "! runeforge.dutybound_gavel.enabled || ! talent.final_reckoning.enabled & ! talent.execution_sentence.enabled || fight_remains < 8",
+								["action"] = "vanquishers_hammer",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "runeforge.the_mad_paragon.enabled || covenant.venthyr & cooldown.ashen_hallow.remains > 210",
+								["action"] = "hammer_of_wrath",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "holy_power <= 2 & set_bonus.tier28_4pc & ( cooldown.avenging_wrath.remains || cooldown.crusade.remains )",
+								["action"] = "wake_of_ashes",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "holy_power <= 1 & ! debuff.judgment.up & ( ! talent.seraphim.enabled || buff.seraphim.up ) & ( ! raid_event.adds.exists || raid_event.adds.in > 30 || raid_event.adds.up ) & ! talent.final_reckoning.enabled & ( ! talent.execution_sentence.enabled || fight_remains < 8 || spell_targets.divine_storm >= 5 ) & ( cooldown.avenging_wrath.remains || cooldown.crusade.remains )",
+								["action"] = "divine_toll",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "! debuff.judgment.up & ( holy_power >= 1 & runeforge.the_magistrates_judgment.enabled || holy_power >= 2 )",
+								["action"] = "judgment",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "( holy_power = 0 || holy_power <= 2 & cooldown.blade_of_justice.remains > gcd * 2 ) & ( ! raid_event.adds.exists || raid_event.adds.in > 20 || raid_event.adds.up ) & ( ! talent.seraphim.enabled || cooldown.seraphim.remains > 5 || covenant.kyrian ) & ( ! talent.execution_sentence.enabled || cooldown.execution_sentence.remains > 15 || target.time_to_die < 8 || spell_targets.divine_storm >= 5 ) & ( ! talent.final_reckoning.enabled || cooldown.final_reckoning.remains > 15 || fight_remains < 8 ) & ( cooldown.avenging_wrath.remains || cooldown.crusade.remains )",
+								["action"] = "wake_of_ashes",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["criteria"] = "holy_power >= 3 & buff.crusade.up & buff.crusade.stack < 10",
+								["action"] = "call_action_list",
+								["list_name"] = "finishers",
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["criteria"] = "conduit.expurgation & holy_power <= 3",
+								["action"] = "blade_of_justice",
+							}, -- [9]
+							{
+								["enabled"] = true,
+								["criteria"] = "! debuff.judgment.up",
+								["action"] = "judgment",
+							}, -- [10]
+							{
+								["action"] = "hammer_of_wrath",
+								["enabled"] = true,
+							}, -- [11]
+							{
+								["enabled"] = true,
+								["criteria"] = "holy_power <= 3",
+								["action"] = "blade_of_justice",
+							}, -- [12]
+							{
+								["enabled"] = true,
+								["criteria"] = "( target.health.pct <= 20 || buff.avenging_wrath.up || buff.crusade.up || buff.empyrean_power.up )",
+								["action"] = "call_action_list",
+								["list_name"] = "finishers",
+							}, -- [13]
+							{
+								["enabled"] = true,
+								["criteria"] = "! consecration.up & spell_targets.divine_storm >= 2",
+								["action"] = "consecration",
+							}, -- [14]
+							{
+								["enabled"] = true,
+								["criteria"] = "cooldown.crusader_strike.charges_fractional >= 1.75 & ( holy_power <= 2 || holy_power <= 3 & cooldown.blade_of_justice.remains > gcd * 2 || holy_power = 4 & cooldown.blade_of_justice.remains > gcd * 2 & cooldown.judgment.remains > gcd * 2 )",
+								["action"] = "crusader_strike",
+							}, -- [15]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["list_name"] = "finishers",
+							}, -- [16]
+							{
+								["enabled"] = true,
+								["criteria"] = "! consecration.up",
+								["action"] = "consecration",
+							}, -- [17]
+							{
+								["action"] = "crusader_strike",
+								["enabled"] = true,
+							}, -- [18]
+							{
+								["action"] = "arcane_torrent",
+								["enabled"] = true,
+							}, -- [19]
+							{
+								["action"] = "consecration",
+								["enabled"] = true,
+							}, -- [20]
+						},
+						["finishers"] = {
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "spell_targets.divine_storm = 2 & ! ( runeforge.final_verdict.enabled || talent.righteous_verdict.enabled ) || spell_targets.divine_storm > 2 || buff.empyrean_power.up & ! debuff.judgment.up & ! buff.divine_purpose.up",
+								["var_name"] = "ds_castable",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "( cooldown.avenging_wrath.remains > 15 || cooldown.crusade.remains > 15 ) & ! talent.final_reckoning.enabled & ( ! talent.execution_sentence.enabled || spell_targets.divine_storm >= 5 ) & ( ! raid_event.adds.exists || raid_event.adds.in > 40 || raid_event.adds.in < gcd || raid_event.adds.up ) & ( ! covenant.kyrian || cooldown.divine_toll.remains < 9 ) || fight_remains < 15 & fight_remains > 5 || buff.crusade.up & buff.crusade.stack < 10",
+								["action"] = "seraphim",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "( buff.crusade.down & cooldown.crusade.remains > 10 || buff.crusade.stack >= 3 || cooldown.avenging_wrath.remains > 10 ) & ( ! talent.final_reckoning.enabled || cooldown.final_reckoning.remains > 10 ) & target.time_to_die > 8 & spell_targets.divine_storm < 5",
+								["action"] = "execution_sentence",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.ds_castable & ! buff.vanquishers_hammer.up & ( ( ! talent.crusade.enabled || cooldown.crusade.remains > gcd * 3 ) & ( ! talent.execution_sentence.enabled || cooldown.execution_sentence.remains > gcd * 6 || cooldown.execution_sentence.remains > gcd * 4 & holy_power >= 5 || target.time_to_die < 8 || spell_targets.divine_storm >= 5 || ! talent.seraphim.enabled & cooldown.execution_sentence.remains > gcd * 2 ) & ( ! talent.final_reckoning.enabled || cooldown.final_reckoning.remains > gcd * 6 || cooldown.final_reckoning.remains > gcd * 4 & holy_power >= 5 || ! talent.seraphim.enabled & cooldown.final_reckoning.remains > gcd * 2 ) || talent.holy_avenger.enabled & cooldown.holy_avenger.remains < gcd * 3 || buff.holy_avenger.up || buff.crusade.up & buff.crusade.stack < 10 )",
+								["action"] = "divine_storm",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "( ! talent.crusade.enabled || cooldown.crusade.remains > gcd * 3 ) & ( ! talent.execution_sentence.enabled || cooldown.execution_sentence.remains > gcd * 8 || cooldown.execution_sentence.remains > gcd * 6 & holy_power >= 4 || target.time_to_die < 8 || ! talent.seraphim.enabled & cooldown.execution_sentence.remains > gcd * 2 ) & ( ! talent.final_reckoning.enabled || cooldown.final_reckoning.remains > gcd * 8 || cooldown.final_reckoning.remains > gcd * 6 & holy_power >= 4 || ! talent.seraphim.enabled & cooldown.final_reckoning.remains > gcd * 2 ) || talent.holy_avenger.enabled & cooldown.holy_avenger.remains < gcd * 3 || buff.holy_avenger.up || buff.crusade.up & buff.crusade.stack < 10",
+								["action"] = "templars_verdict",
+							}, -- [5]
+						},
+						["es_fr_active"] = {
+							{
+								["action"] = "fireblood",
+								["enabled"] = true,
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "holy_power = 5 || debuff.judgment.up || debuff.final_reckoning.up & ( debuff.final_reckoning.remains < gcd.max || spell_targets.divine_storm >= 2 & ! talent.execution_sentence.enabled ) || debuff.execution_sentence.up & debuff.execution_sentence.remains < gcd.max",
+								["action"] = "call_action_list",
+								["list_name"] = "finishers",
+							}, -- [2]
+							{
+								["action"] = "divine_toll",
+								["enabled"] = true,
+							}, -- [3]
+							{
+								["action"] = "vanquishers_hammer",
+								["enabled"] = true,
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "holy_power <= 2 & ( debuff.final_reckoning.up & debuff.final_reckoning.remains < gcd * 2 & ! runeforge.divine_resonance.enabled || debuff.execution_sentence.up & debuff.execution_sentence.remains < gcd || spell_targets.divine_storm >= 5 & runeforge.divine_resonance.enabled & talent.execution_sentence.enabled )",
+								["action"] = "wake_of_ashes",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "conduit.expurgation & ( ! runeforge.divine_resonance.enabled & holy_power <= 3 || holy_power <= 2 )",
+								["action"] = "blade_of_justice",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "! debuff.judgment.up & ( holy_power >= 1 & runeforge.the_magistrates_judgment.enabled || holy_power >= 2 )",
+								["action"] = "judgment",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["list_name"] = "finishers",
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["criteria"] = "holy_power <= 2",
+								["action"] = "wake_of_ashes",
+							}, -- [9]
+							{
+								["enabled"] = true,
+								["criteria"] = "holy_power <= 3",
+								["action"] = "blade_of_justice",
+							}, -- [10]
+							{
+								["enabled"] = true,
+								["criteria"] = "! debuff.judgment.up",
+								["action"] = "judgment",
+							}, -- [11]
+							{
+								["action"] = "hammer_of_wrath",
+								["enabled"] = true,
+							}, -- [12]
+							{
+								["action"] = "crusader_strike",
+								["enabled"] = true,
+							}, -- [13]
+							{
+								["action"] = "arcane_torrent",
+								["enabled"] = true,
+							}, -- [14]
+							{
+								["action"] = "consecration",
+								["enabled"] = true,
+							}, -- [15]
+						},
+						["es_fr_pooling"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "holy_power = 5 & ( ! talent.final_reckoning.enabled || cooldown.final_reckoning.remains <= gcd * 3 || cooldown.final_reckoning.remains > action_cooldown ) & ( ! talent.execution_sentence.enabled || cooldown.execution_sentence.remains <= gcd * 3 || cooldown.execution_sentence.remains > action_cooldown || talent.final_reckoning.enabled ) & ( ! covenant.kyrian || cooldown.divine_toll.remains < 9 || cooldown.divine_toll.remains > action_cooldown )",
+								["action"] = "seraphim",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "holy_power = 5 || debuff.final_reckoning.up || buff.crusade.up & buff.crusade.stack < 10",
+								["action"] = "call_action_list",
+								["list_name"] = "finishers",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.seraphim.up",
+								["action"] = "vanquishers_hammer",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "runeforge.vanguards_momentum.enabled",
+								["action"] = "hammer_of_wrath",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "holy_power <= 2 & set_bonus.tier28_4pc",
+								["action"] = "wake_of_ashes",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "holy_power <= 3",
+								["action"] = "blade_of_justice",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "! debuff.judgment.up",
+								["action"] = "judgment",
+							}, -- [7]
+							{
+								["action"] = "hammer_of_wrath",
+								["enabled"] = true,
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["criteria"] = "cooldown.crusader_strike.charges_fractional >= 1.75 & ( holy_power <= 2 || holy_power <= 3 & cooldown.blade_of_justice.remains > gcd * 2 || holy_power = 4 & cooldown.blade_of_justice.remains > gcd * 2 & cooldown.judgment.remains > gcd * 2 )",
+								["action"] = "crusader_strike",
+							}, -- [9]
+							{
+								["enabled"] = true,
+								["criteria"] = "! talent.final_reckoning.enabled & cooldown.execution_sentence.remains <= gcd * 3 & ( ! covenant.kyrian || cooldown.divine_toll.remains < 9 )",
+								["action"] = "seraphim",
+							}, -- [10]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["list_name"] = "finishers",
+							}, -- [11]
+							{
+								["action"] = "crusader_strike",
+								["enabled"] = true,
+							}, -- [12]
+							{
+								["enabled"] = true,
+								["criteria"] = "holy_power <= 4",
+								["action"] = "arcane_torrent",
+							}, -- [13]
+							{
+								["enabled"] = true,
+								["criteria"] = "( ! talent.final_reckoning.enabled || cooldown.final_reckoning.remains <= gcd * 3 ) & ( ! talent.execution_sentence.enabled || cooldown.execution_sentence.remains <= gcd * 3 || talent.final_reckoning.enabled ) & ( ! covenant.kyrian || cooldown.divine_toll.remains < 9 )",
+								["action"] = "seraphim",
+							}, -- [14]
+							{
+								["action"] = "consecration",
+								["enabled"] = true,
+							}, -- [15]
+						},
+					},
+					["author"] = "SimC",
+				},
 				["Protection Paladin"] = {
 					["source"] = "https://github.com/simulationcraft/simc/",
 					["builtIn"] = true,
@@ -11525,84 +12051,105 @@ HekiliDB = {
 					["lists"] = {
 						["default"] = {
 							{
-								["action"] = "rebuke",
+								["enabled"] = true,
 								["description"] = "Executed every time the actor is available.",
+								["action"] = "rebuke",
 							}, -- [1]
 							{
+								["enabled"] = true,
 								["action"] = "call_action_list",
 								["list_name"] = "cooldowns",
 							}, -- [2]
 							{
+								["enabled"] = true,
 								["action"] = "call_action_list",
 								["list_name"] = "mitigation",
 							}, -- [3]
 							{
+								["enabled"] = true,
 								["action"] = "call_action_list",
 								["list_name"] = "standard",
 							}, -- [4]
 							{
-								["action"] = "shield_of_the_righteous",
+								["enabled"] = true,
 								["criteria"] = "holy_power.deficit = 0 & ( ( buff.avenging_wrath.up & ! talent.seraphim.enabled ) || buff.seraphim.up )",
+								["action"] = "shield_of_the_righteous",
 							}, -- [5]
 							{
-								["action"] = "shield_of_the_righteous",
+								["enabled"] = true,
 								["criteria"] = "( buff.avenging_wrath.up & buff.avenging_wrath.remains < 4 & ! talent.seraphim.enabled ) || ( buff.seraphim.remains < 4 & buff.seraphim.up )",
+								["action"] = "shield_of_the_righteous",
 							}, -- [6]
 							{
-								["action"] = "hammer_of_wrath",
+								["enabled"] = true,
 								["criteria"] = "holy_power.deficit > 0",
+								["action"] = "hammer_of_wrath",
 							}, -- [7]
 							{
-								["action"] = "lights_judgment",
+								["enabled"] = true,
 								["criteria"] = "buff.seraphim.up & buff.seraphim.remains < 3",
+								["action"] = "lights_judgment",
 							}, -- [8]
 							{
-								["action"] = "consecration",
+								["enabled"] = true,
 								["criteria"] = "! consecration.up",
+								["action"] = "consecration",
 							}, -- [9]
 							{
-								["action"] = "judgment",
+								["enabled"] = true,
 								["criteria"] = "( cooldown.judgment.remains < gcd & cooldown.judgment.charges_fractional > 1 & cooldown_react ) || ! talent.crusaders_judgment.enabled",
+								["action"] = "judgment",
 							}, -- [10]
 							{
-								["action"] = "avengers_shield",
+								["enabled"] = true,
 								["criteria"] = "cooldown_react",
+								["action"] = "avengers_shield",
 							}, -- [11]
 							{
-								["action"] = "judgment",
+								["enabled"] = true,
 								["criteria"] = "cooldown_react || ! talent.crusaders_judgment.enabled",
+								["action"] = "judgment",
 							}, -- [12]
 							{
-								["action"] = "lights_judgment",
+								["enabled"] = true,
 								["criteria"] = "! talent.seraphim.enabled || buff.seraphim.up",
+								["action"] = "lights_judgment",
 							}, -- [13]
 							{
+								["enabled"] = true,
 								["action"] = "blessed_hammer",
 								["strikes"] = "3",
 							}, -- [14]
 							{
 								["action"] = "hammer_of_the_righteous",
+								["enabled"] = true,
 							}, -- [15]
 							{
 								["action"] = "consecration",
+								["enabled"] = true,
 							}, -- [16]
 						},
 						["precombat"] = {
 							{
-								["action"] = "devotion_aura",
+								["enabled"] = true,
 								["description"] = "Executed before combat begins. Accepts non-harmful actions only.",
+								["action"] = "devotion_aura",
 							}, -- [1]
 							{
 								["action"] = "fleshcraft",
+								["enabled"] = true,
 							}, -- [2]
 							{
 								["action"] = "consecration",
+								["enabled"] = true,
 							}, -- [3]
 							{
 								["action"] = "lights_judgment",
+								["enabled"] = true,
 							}, -- [4]
 							{
 								["action"] = "ashen_hallow",
+								["enabled"] = true,
 							}, -- [5]
 						},
 						["cooldowns"] = {
@@ -11655,15 +12202,15 @@ HekiliDB = {
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["name"] = "grongs_primal_rage",
 								["action"] = "grongs_primal_rage",
 								["criteria"] = "( ( cooldown.judgment.full_recharge_time > 4 || ( ! talent.crusaders_judgment.enabled & prev_gcd.1.judgment ) ) & cooldown.avengers_shield.remains > 4 & buff.seraphim.remains > 4 ) || ( buff.seraphim.remains < 4 )",
+								["name"] = "grongs_primal_rage",
 							}, -- [11]
 							{
 								["enabled"] = true,
-								["name"] = "merekthas_fang",
 								["action"] = "merekthas_fang",
 								["criteria"] = "! buff.avenging_wrath.up & ( buff.seraphim.up || ! talent.seraphim.enabled )",
+								["name"] = "merekthas_fang",
 							}, -- [12]
 							{
 								["enabled"] = true,
@@ -11714,9 +12261,9 @@ HekiliDB = {
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["criteria"] = "incoming_damage_2500ms > health.max * 0.4 & ! ( buff.ardent_defender.up || buff.guardian_of_ancient_kings.up || buff.divine_shield.up || buff.potion.up )",
 								["action"] = "guardian_of_ancient_kings",
 								["description"] = "actions.mitigation+=/shield_of_the_righteous,if=buff.shield_of_the_righteous.down&(holy_power>2||buff.divine_purpose.up)",
+								["criteria"] = "incoming_damage_2500ms > health.max * 0.4 & ! ( buff.ardent_defender.up || buff.guardian_of_ancient_kings.up || buff.divine_shield.up || buff.potion.up )",
 							}, -- [9]
 							{
 								["enabled"] = true,
@@ -11835,518 +12382,6 @@ HekiliDB = {
 					["warnings"] = "Imported 5 action lists.\n",
 					["spec"] = 66,
 					["profile"] = "# Protection Paladin\n# July 10, 2021\n\n# Changes\n# - Added Rebuke.\n# - Remove Seraphim restrictions on multiple mitigation abilities.\n\n# Executed before combat begins. Accepts non-harmful actions only.\nactions.precombat+=/devotion_aura\nactions.precombat+=/fleshcraft\nactions.precombat+=/consecration\nactions.precombat+=/lights_judgment\nactions.precombat+=/ashen_hallow\n\n# Executed every time the actor is available.\nactions=rebuke\nactions+=/call_action_list,name=cooldowns\nactions+=/call_action_list,name=mitigation\nactions+=/call_action_list,name=standard\n\nactions+=/shield_of_the_righteous,if=holy_power.deficit=0&((buff.avenging_wrath.up&!talent.seraphim.enabled)||buff.seraphim.up)\nactions+=/shield_of_the_righteous,if=(buff.avenging_wrath.up&buff.avenging_wrath.remains<4&!talent.seraphim.enabled)||(buff.seraphim.remains<4&buff.seraphim.up)\nactions+=/hammer_of_wrath,if=holy_power.deficit>0\nactions+=/lights_judgment,if=buff.seraphim.up&buff.seraphim.remains<3\nactions+=/consecration,if=!consecration.up\nactions+=/judgment,if=(cooldown.judgment.remains<gcd&cooldown.judgment.charges_fractional>1&cooldown_react)||!talent.crusaders_judgment.enabled\nactions+=/avengers_shield,if=cooldown_react\nactions+=/judgment,if=cooldown_react||!talent.crusaders_judgment.enabled\nactions+=/lights_judgment,if=!talent.seraphim.enabled||buff.seraphim.up\nactions+=/blessed_hammer,strikes=3\nactions+=/hammer_of_the_righteous\nactions+=/consecration\n\nactions.standard=shield_of_the_righteous,if=debuff.judgment.up\nactions.standard+=/shield_of_the_righteous,if=holy_power=5||buff.holy_avenger.up||holy_power=4&talent.sanctified_wrath.enabled&buff.avenging_wrath.up\nactions.standard+=/judgment,cycle_targets=1,if=charges=2||!talent.crusaders_judgment.enabled\nactions.standard+=/hammer_of_wrath\nactions.standard+=/blessing_of_summer\nactions.standard+=/blessing_of_autumn\nactions.standard+=/blessing_of_winter\nactions.standard+=/blessing_of_spring\nactions.standard+=/avengers_shield\nactions.standard+=/judgment,cycle_targets=1\nactions.standard+=/vanquishers_hammer\nactions.standard+=/consecration,if=!consecration.up\nactions.standard+=/divine_toll\nactions.standard+=/blessed_hammer,strikes=2.4,if=charges=3\nactions.standard+=/ashen_hallow\nactions.standard+=/hammer_of_the_righteous,if=charges=2\nactions.standard+=/blessed_hammer,strikes=2.4\nactions.standard+=/hammer_of_the_righteous\nactions.standard+=/lights_judgment\nactions.standard+=/arcane_torrent\nactions.standard+=/consecration\n\nactions.cooldowns=fireblood,if=buff.avenging_wrath.up\nactions.cooldowns+=/seraphim\nactions.cooldowns+=/avenging_wrath\nactions.cooldowns+=/holy_avenger,if=buff.avenging_wrath.up||cooldown.avenging_wrath.remains>60\nactions.cooldowns+=/potion,if=buff.avenging_wrath.up\nactions.cooldowns+=/ashen_hallow,if=buff.avenging_wrath.down\nactions.cooldowns+=/vanquishers_hammer\nactions.cooldowns+=/divine_toll,if=holy_power.deficit>0\nactions.cooldowns+=/use_items,if=buff.seraphim.up||!talent.seraphim.enabled\nactions.cooldowns+=/moment_of_glory,if=prev_gcd.1.avengers_shield&cooldown.avengers_shield.remains\nactions.cooldowns+=/use_item,name=grongs_primal_rage,if=((cooldown.judgment.full_recharge_time>4||(!talent.crusaders_judgment.enabled&prev_gcd.1.judgment))&cooldown.avengers_shield.remains>4&buff.seraphim.remains>4)||(buff.seraphim.remains<4)\nactions.cooldowns+=/use_item,name=merekthas_fang,if=!buff.avenging_wrath.up&(buff.seraphim.up||!talent.seraphim.enabled)\nactions.cooldowns+=/use_item,name=razdunks_big_red_button\n\nactions.mitigation=shield_of_the_righteous,if=buff.shield_of_the_righteous.down&(holy_power.deficit=0||buff.divine_purpose.up)\nactions.mitigation+=/word_of_glory,if=buff.vanquishers_hammer.up\nactions.mitigation+=/word_of_glory,if=buff.shining_light_full.up&buff.shining_light_full.remains<gcd*2&health.pct<80&!covenant.necrolord\nactions.mitigation+=/word_of_glory,if=(health.pct<40)\nactions.mitigation+=/word_of_glory,if=(incoming_damage_10000ms<health.max*1.25)&health.pct<55&talent.righteous_protector.enabled\nactions.mitigation+=/word_of_glory,if=(incoming_damage_13000ms<health.max*1.6)&health.pct<55\nactions.mitigation+=/word_of_glory,if=(incoming_damage_6000ms<health.max*0.7)&health.pct<65&talent.righteous_protector.enabled\nactions.mitigation+=/word_of_glory,if=(incoming_damage_9000ms<health.max*1.2)&health.pct<55\n# actions.mitigation+=/shield_of_the_righteous,if=buff.shield_of_the_righteous.down&(holy_power>2||buff.divine_purpose.up)\nactions.mitigation+=/guardian_of_ancient_kings,if=incoming_damage_2500ms>health.max*0.4&!(buff.ardent_defender.up||buff.guardian_of_ancient_kings.up||buff.divine_shield.up||buff.potion.up)\nactions.mitigation+=/divine_shield,if=talent.final_stand.enabled&incoming_damage_2500ms>health.max*0.4&!(buff.ardent_defender.up||buff.guardian_of_ancient_kings.up||buff.divine_shield.up||buff.potion.up)\nactions.mitigation+=/ardent_defender,if=incoming_damage_2500ms>health.max*0.4&!(buff.ardent_defender.up||buff.guardian_of_ancient_kings.up||buff.divine_shield.up||buff.potion.up)\nactions.mitigation+=/lay_on_hands,if=health.pct<15",
-				},
-				["Retribution"] = {
-					["builtIn"] = true,
-					["date"] = 20220226,
-					["spec"] = 70,
-					["desc"] = "Retribution Paladin\nFebruary 25, 2022\n\nChanges:\n- Integrate new priority split from SimC.",
-					["profile"] = "## Retribution Paladin\n## February 25, 2022\n\n## Changes:\n## - Integrate new priority split from SimC.\n\nactions.precombat=potion\nactions.precombat+=/blessing_of_summer\nactions.precombat+=/blessing_of_autumn\nactions.precombat+=/blessing_of_winter\nactions.precombat+=/blessing_of_spring\nactions.precombat+=/fleshcraft,if=soulbind.pustule_eruption||soulbind.volatile_solvent\nactions.precombat+=/arcane_torrent,if=talent.final_reckoning.enabled&talent.seraphim.enabled\nactions.precombat+=/shield_of_vengeance\n\n## Executed every time the actor is available.\nactions=rebuke\nactions+=/call_action_list,name=cooldowns\nactions+=/call_action_list,name=es_fr_pooling,if=(!raid_event.adds.exists||raid_event.adds.up||raid_event.adds.in<9||raid_event.adds.in>30)&(talent.execution_sentence&cooldown.execution_sentence.remains<9&spell_targets.divine_storm<5||talent.final_reckoning&cooldown.final_reckoning.remains<9)&target.time_to_die>8\nactions+=/call_action_list,name=es_fr_active,strict=1,if=debuff.execution_sentence.up||debuff.final_reckoning.up\nactions+=/call_action_list,name=generators\n\nactions.cooldowns=potion,if=buff.avenging_wrath.up||buff.crusade.up&buff.crusade.stack=10||boss&fight_remains<25\nactions.cooldowns+=/lights_judgment,if=spell_targets.lights_judgment>=2||!raid_event.adds.exists||raid_event.adds.in>75||raid_event.adds.up\nactions.cooldowns+=/fireblood,if=(buff.avenging_wrath.up||buff.crusade.up&buff.crusade.stack=10)&!talent.execution_sentence\nactions.cooldowns+=/fleshcraft,if=soulbind.pustule_eruption||soulbind.volatile_solvent,interrupt_immediate=1,interrupt_global=1,interrupt_if=soulbind.volatile_solvent\nactions.cooldowns+=/shield_of_vengeance,if=(!talent.execution_sentence||cooldown.execution_sentence.remains<52)&fight_remains>15\nactions.cooldowns+=/blessing_of_summer\nactions.cooldowns+=/blessing_of_autumn\nactions.cooldowns+=/blessing_of_winter\nactions.cooldowns+=/blessing_of_spring\nactions.cooldowns+=/use_item,name=inscrutable_quantum_device,if=buff.avenging_wrath.up||buff.crusade.up&buff.crusade.stack=10||boss&fight_remains<30\nactions.cooldowns+=/use_item,name=overwhelming_power_crystal,if=buff.avenging_wrath.up||buff.crusade.up&buff.crusade.stack=10||boss&fight_remains<15\nactions.cooldowns+=/use_item,name=darkmoon_deck_voracity,if=buff.avenging_wrath.up||buff.crusade.up&buff.crusade.stack=10||boss&fight_remains<20\nactions.cooldowns+=/use_item,name=macabre_sheet_music,if=buff.avenging_wrath.up||buff.crusade.up&buff.crusade.stack=10||boss&fight_remains<20\nactions.cooldowns+=/use_item,name=faulty_countermeasure,if=!talent.crusade||buff.crusade.up||boss&fight_remains<30\nactions.cooldowns+=/use_item,name=dreadfire_vessel\nactions.cooldowns+=/use_item,name=skulkers_wing\nactions.cooldowns+=/use_item,name=grim_codex\nactions.cooldowns+=/use_item,name=memory_of_past_sins\nactions.cooldowns+=/use_item,name=spare_meat_hook\nactions.cooldowns+=/use_item,name=salvaged_fusion_amplifier\nactions.cooldowns+=/use_item,name=giant_ornamental_pearl\nactions.cooldowns+=/use_item,name=windscar_whetstone\nactions.cooldowns+=/use_item,name=scars_of_fraternal_strife\nactions.cooldowns+=/use_item,name=chains_of_domination\nactions.cooldowns+=/use_item,name=earthbreakers_impact\nactions.cooldowns+=/use_item,name=heart_of_the_swarm,if=!buff.avenging_wrath.up&buff.crusade.up\nactions.cooldowns+=/use_item,name=gladiators_badge,if=buff.avenging_wrath.up||buff.crusade.up&buff.crusade.stack>=10||cooldown.avenging_wrath.remains>45||cooldown.crusade.remains>45\nactions.cooldowns+=/use_items,if=buff.avenging_wrath.up||buff.crusade.up&buff.crusade.stack>=10\nactions.cooldowns+=/avenging_wrath,if=(holy_power>=4&time<5||holy_power>=3&(time>5||runeforge.the_magistrates_judgment)||holy_power>=2&runeforge.vanguards_momentum&talent.final_reckoning||talent.holy_avenger&cooldown.holy_avenger.remains=0)&(!talent.seraphim||!talent.final_reckoning||cooldown.seraphim.remains>0)\nactions.cooldowns+=/crusade,if=holy_power>=4&time<5||holy_power>=3&time>5\nactions.cooldowns+=/ashen_hallow\nactions.cooldowns+=/holy_avenger,if=time_to_hpg=0&holy_power<=2&(buff.avenging_wrath.up||talent.crusade&(cooldown.crusade.remains=0||buff.crusade.up)||boss&fight_remains<20)\nactions.cooldowns+=/final_reckoning,if=(holy_power>=4&time<8||holy_power>=3&(time>=8||spell_targets.divine_storm>=2&covenant.kyrian))&cooldown.avenging_wrath.remains>gcd&time_to_hpg=0&(!talent.seraphim||buff.seraphim.up)&(!raid_event.adds.exists||raid_event.adds.up||raid_event.adds.in>40)&(!buff.avenging_wrath.up||holy_power=5||cooldown.hammer_of_wrath.remains||spell_targets.divine_storm>=2&covenant.kyrian)\n\nactions.es_fr_active=fireblood\nactions.es_fr_active+=/call_action_list,name=finishers,if=holy_power=5||debuff.judgment.up||debuff.final_reckoning.up&(debuff.final_reckoning.remains<gcd.max||spell_targets.divine_storm>=2&!talent.execution_sentence)||debuff.execution_sentence.up&debuff.execution_sentence.remains<gcd.max\nactions.es_fr_active+=/divine_toll\nactions.es_fr_active+=/vanquishers_hammer\nactions.es_fr_active+=/wake_of_ashes,if=holy_power<=2&(debuff.final_reckoning.up&debuff.final_reckoning.remains<gcd*2&!runeforge.divine_resonance||debuff.execution_sentence.up&debuff.execution_sentence.remains<gcd||spell_targets.divine_storm>=5&runeforge.divine_resonance&talent.execution_sentence)\nactions.es_fr_active+=/blade_of_justice,if=conduit.expurgation&(!runeforge.divine_resonance&holy_power<=3||holy_power<=2)\nactions.es_fr_active+=/judgment,if=!debuff.judgment.up&(holy_power>=1&runeforge.the_magistrates_judgment||holy_power>=2)\nactions.es_fr_active+=/call_action_list,name=finishers\nactions.es_fr_active+=/wake_of_ashes,if=holy_power<=2\nactions.es_fr_active+=/blade_of_justice,if=holy_power<=3\nactions.es_fr_active+=/judgment,if=!debuff.judgment.up\nactions.es_fr_active+=/hammer_of_wrath\nactions.es_fr_active+=/crusader_strike\nactions.es_fr_active+=/arcane_torrent\nactions.es_fr_active+=/consecration\n\nactions.es_fr_pooling=seraphim,if=holy_power=5&(!talent.final_reckoning||cooldown.final_reckoning.remains<=gcd*3||cooldown.final_reckoning.remains>cooldown)&(!talent.execution_sentence||cooldown.execution_sentence.remains<=gcd*3||cooldown.execution_sentence.remains>cooldown||talent.final_reckoning)&(!covenant.kyrian||cooldown.divine_toll.remains<9||cooldown.divine_toll.remains>cooldown)\nactions.es_fr_pooling+=/call_action_list,name=finishers,if=holy_power=5||debuff.final_reckoning.up||buff.crusade.up&buff.crusade.stack<10\nactions.es_fr_pooling+=/vanquishers_hammer,if=buff.seraphim.up\nactions.es_fr_pooling+=/hammer_of_wrath,if=runeforge.vanguards_momentum\nactions.es_fr_pooling+=/wake_of_ashes,if=holy_power<=2&set_bonus.tier28_4pc\nactions.es_fr_pooling+=/blade_of_justice,if=holy_power<=3\nactions.es_fr_pooling+=/judgment,if=!debuff.judgment.up\nactions.es_fr_pooling+=/hammer_of_wrath\nactions.es_fr_pooling+=/crusader_strike,if=cooldown.crusader_strike.charges_fractional>=1.75&(holy_power<=2||holy_power<=3&cooldown.blade_of_justice.remains>gcd*2||holy_power=4&cooldown.blade_of_justice.remains>gcd*2&cooldown.judgment.remains>gcd*2)\nactions.es_fr_pooling+=/seraphim,if=!talent.final_reckoning&cooldown.execution_sentence.remains<=gcd*3&(!covenant.kyrian||cooldown.divine_toll.remains<9)\nactions.es_fr_pooling+=/call_action_list,name=finishers\nactions.es_fr_pooling+=/crusader_strike\nactions.es_fr_pooling+=/arcane_torrent,if=holy_power<=4\nactions.es_fr_pooling+=/seraphim,if=(!talent.final_reckoning||cooldown.final_reckoning.remains<=gcd*3)&(!talent.execution_sentence||cooldown.execution_sentence.remains<=gcd*3||talent.final_reckoning)&(!covenant.kyrian||cooldown.divine_toll.remains<9)\nactions.es_fr_pooling+=/consecration\n\nactions.finishers=variable,name=ds_castable,value=spell_targets.divine_storm=2&!(runeforge.final_verdict||talent.righteous_verdict)||spell_targets.divine_storm>2||buff.empyrean_power.up&!debuff.judgment.up&!buff.divine_purpose.up\nactions.finishers+=/seraphim,if=(cooldown.avenging_wrath.remains>15||cooldown.crusade.remains>15)&!talent.final_reckoning&(!talent.execution_sentence||spell_targets.divine_storm>=5)&(!raid_event.adds.exists||raid_event.adds.in>40||raid_event.adds.in<gcd||raid_event.adds.up)&(!covenant.kyrian||cooldown.divine_toll.remains<9)||fight_remains<15&fight_remains>5||buff.crusade.up&buff.crusade.stack<10\nactions.finishers+=/execution_sentence,if=(buff.crusade.down&cooldown.crusade.remains>10||buff.crusade.stack>=3||cooldown.avenging_wrath.remains>10)&(!talent.final_reckoning||cooldown.final_reckoning.remains>10)&target.time_to_die>8&spell_targets.divine_storm<5\nactions.finishers+=/divine_storm,if=variable.ds_castable&!buff.vanquishers_hammer.up&((!talent.crusade||cooldown.crusade.remains>gcd*3)&(!talent.execution_sentence||cooldown.execution_sentence.remains>gcd*6||cooldown.execution_sentence.remains>gcd*4&holy_power>=5||target.time_to_die<8||spell_targets.divine_storm>=5||!talent.seraphim&cooldown.execution_sentence.remains>gcd*2)&(!talent.final_reckoning||cooldown.final_reckoning.remains>gcd*6||cooldown.final_reckoning.remains>gcd*4&holy_power>=5||!talent.seraphim&cooldown.final_reckoning.remains>gcd*2)||talent.holy_avenger&cooldown.holy_avenger.remains<gcd*3||buff.holy_avenger.up||buff.crusade.up&buff.crusade.stack<10)\nactions.finishers+=/templars_verdict,if=(!talent.crusade||cooldown.crusade.remains>gcd*3)&(!talent.execution_sentence||cooldown.execution_sentence.remains>gcd*8||cooldown.execution_sentence.remains>gcd*6&holy_power>=4||target.time_to_die<8||!talent.seraphim&cooldown.execution_sentence.remains>gcd*2)&(!talent.final_reckoning||cooldown.final_reckoning.remains>gcd*8||cooldown.final_reckoning.remains>gcd*6&holy_power>=4||!talent.seraphim&cooldown.final_reckoning.remains>gcd*2)||talent.holy_avenger&cooldown.holy_avenger.remains<gcd*3||buff.holy_avenger.up||buff.crusade.up&buff.crusade.stack<10\n \nactions.generators=call_action_list,name=finishers,if=holy_power=5||(debuff.judgment.up||holy_power=4)&buff.divine_resonance.up||buff.holy_avenger.up\nactions.generators+=/vanquishers_hammer,if=!runeforge.dutybound_gavel||!talent.final_reckoning&!talent.execution_sentence||fight_remains<8\nactions.generators+=/hammer_of_wrath,if=runeforge.the_mad_paragon||covenant.venthyr&cooldown.ashen_hallow.remains>210\nactions.generators+=/wake_of_ashes,if=holy_power<=2&set_bonus.tier28_4pc&(cooldown.avenging_wrath.remains||cooldown.crusade.remains)\nactions.generators+=/divine_toll,if=holy_power<=1&!debuff.judgment.up&(!talent.seraphim||buff.seraphim.up)&(!raid_event.adds.exists||raid_event.adds.in>30||raid_event.adds.up)&!talent.final_reckoning&(!talent.execution_sentence||fight_remains<8||spell_targets.divine_storm>=5)&(cooldown.avenging_wrath.remains||cooldown.crusade.remains)\nactions.generators+=/judgment,if=!debuff.judgment.up&(holy_power>=1&runeforge.the_magistrates_judgment||holy_power>=2)\nactions.generators+=/wake_of_ashes,if=(holy_power=0||holy_power<=2&cooldown.blade_of_justice.remains>gcd*2)&(!raid_event.adds.exists||raid_event.adds.in>20||raid_event.adds.up)&(!talent.seraphim||cooldown.seraphim.remains>5||covenant.kyrian)&(!talent.execution_sentence||cooldown.execution_sentence.remains>15||target.time_to_die<8||spell_targets.divine_storm>=5)&(!talent.final_reckoning||cooldown.final_reckoning.remains>15||fight_remains<8)&(cooldown.avenging_wrath.remains||cooldown.crusade.remains)\nactions.generators+=/call_action_list,name=finishers,if=holy_power>=3&buff.crusade.up&buff.crusade.stack<10\nactions.generators+=/blade_of_justice,if=conduit.expurgation&holy_power<=3\nactions.generators+=/judgment,if=!debuff.judgment.up\nactions.generators+=/hammer_of_wrath\nactions.generators+=/blade_of_justice,if=holy_power<=3\nactions.generators+=/call_action_list,name=finishers,if=(target.health.pct<=20||buff.avenging_wrath.up||buff.crusade.up||buff.empyrean_power.up)\nactions.generators+=/consecration,if=!consecration.up&spell_targets.divine_storm>=2\nactions.generators+=/crusader_strike,if=cooldown.crusader_strike.charges_fractional>=1.75&(holy_power<=2||holy_power<=3&cooldown.blade_of_justice.remains>gcd*2||holy_power=4&cooldown.blade_of_justice.remains>gcd*2&cooldown.judgment.remains>gcd*2)\nactions.generators+=/call_action_list,name=finishers\nactions.generators+=/consecration,if=!consecration.up\nactions.generators+=/crusader_strike\nactions.generators+=/arcane_torrent\nactions.generators+=/consecration",
-					["version"] = 20220226,
-					["warnings"] = "WARNING:  The import for 'generators' required some automated changes.\nLine 2: Converted 'talent.X' to 'talent.X.enabled' (2x).\nLine 2: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 3: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 5: Converted 'talent.X' to 'talent.X.enabled' (3x).\nLine 6: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 7: Converted 'talent.X' to 'talent.X.enabled' (3x).\n\nWARNING:  The import for 'default' required some automated changes.\nLine 3: Converted 'talent.X' to 'talent.X.enabled' (2x).\n\nWARNING:  The import for 'precombat' required some automated changes.\nLine 6: Converted 'soulbind.X' to 'soulbind.X.enabled' (1x).\nLine 6: Converted 'soulbind.X' to 'soulbind.X.enabled' at EOL (1x).\n\nWARNING:  The import for 'cooldowns' required some automated changes.\nLine 3: Converted 'talent.X' to 'talent.X.enabled' at EOL (1x).\nLine 4: Converted 'soulbind.X' to 'soulbind.X.enabled' (1x).\nLine 4: Converted 'soulbind.X' to 'soulbind.X.enabled' at EOL (1x).\nLine 5: Converted 'talent.X' to 'talent.X.enabled' (1x).\nLine 14: Converted 'talent.X' to 'talent.X.enabled' (1x).\nLine 29: Converted 'talent.X' to 'talent.X.enabled' (4x).\nLine 29: Converted 'runeforge.X' to 'runeforge.X.enabled' (2x).\nLine 32: Converted 'talent.X' to 'talent.X.enabled' (1x).\nLine 33: Converted 'talent.X' to 'talent.X.enabled' (1x).\n\nWARNING:  The import for 'finishers' required some automated changes.\nLine 1: Converted 'talent.X' to 'talent.X.enabled' (1x).\nLine 1: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 2: Converted 'talent.X' to 'talent.X.enabled' (2x).\nLine 3: Converted 'talent.X' to 'talent.X.enabled' (1x).\nLine 4: Converted 'talent.X' to 'talent.X.enabled' (6x).\nLine 5: Converted 'talent.X' to 'talent.X.enabled' (6x).\n\nWARNING:  The import for 'es_fr_active' required some automated changes.\nLine 2: Converted 'talent.X' to 'talent.X.enabled' (1x).\nLine 5: Converted 'talent.X' to 'talent.X.enabled' (1x).\nLine 5: Converted 'runeforge.X' to 'runeforge.X.enabled' (2x).\nLine 6: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 7: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\n\nWARNING:  The import for 'es_fr_pooling' required some automated changes.\nLine 1: Converted 'talent.X' to 'talent.X.enabled' (3x).\nLine 4: Converted 'runeforge.X' to 'runeforge.X.enabled' at EOL (1x).\nLine 10: Converted 'talent.X' to 'talent.X.enabled' (1x).\nLine 14: Converted 'talent.X' to 'talent.X.enabled' (3x).\n\nImported 7 action lists.\n",
-					["author"] = "SimC",
-					["lists"] = {
-						["generators"] = {
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["criteria"] = "holy_power = 5 || ( debuff.judgment.up || holy_power = 4 ) & buff.divine_resonance.up || buff.holy_avenger.up",
-								["list_name"] = "finishers",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "! runeforge.dutybound_gavel.enabled || ! talent.final_reckoning.enabled & ! talent.execution_sentence.enabled || fight_remains < 8",
-								["action"] = "vanquishers_hammer",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "runeforge.the_mad_paragon.enabled || covenant.venthyr & cooldown.ashen_hallow.remains > 210",
-								["action"] = "hammer_of_wrath",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "holy_power <= 2 & set_bonus.tier28_4pc & ( cooldown.avenging_wrath.remains || cooldown.crusade.remains )",
-								["action"] = "wake_of_ashes",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "holy_power <= 1 & ! debuff.judgment.up & ( ! talent.seraphim.enabled || buff.seraphim.up ) & ( ! raid_event.adds.exists || raid_event.adds.in > 30 || raid_event.adds.up ) & ! talent.final_reckoning.enabled & ( ! talent.execution_sentence.enabled || fight_remains < 8 || spell_targets.divine_storm >= 5 ) & ( cooldown.avenging_wrath.remains || cooldown.crusade.remains )",
-								["action"] = "divine_toll",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "! debuff.judgment.up & ( holy_power >= 1 & runeforge.the_magistrates_judgment.enabled || holy_power >= 2 )",
-								["action"] = "judgment",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "( holy_power = 0 || holy_power <= 2 & cooldown.blade_of_justice.remains > gcd * 2 ) & ( ! raid_event.adds.exists || raid_event.adds.in > 20 || raid_event.adds.up ) & ( ! talent.seraphim.enabled || cooldown.seraphim.remains > 5 || covenant.kyrian ) & ( ! talent.execution_sentence.enabled || cooldown.execution_sentence.remains > 15 || target.time_to_die < 8 || spell_targets.divine_storm >= 5 ) & ( ! talent.final_reckoning.enabled || cooldown.final_reckoning.remains > 15 || fight_remains < 8 ) & ( cooldown.avenging_wrath.remains || cooldown.crusade.remains )",
-								["action"] = "wake_of_ashes",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["criteria"] = "holy_power >= 3 & buff.crusade.up & buff.crusade.stack < 10",
-								["list_name"] = "finishers",
-							}, -- [8]
-							{
-								["enabled"] = true,
-								["criteria"] = "conduit.expurgation & holy_power <= 3",
-								["action"] = "blade_of_justice",
-							}, -- [9]
-							{
-								["enabled"] = true,
-								["criteria"] = "! debuff.judgment.up",
-								["action"] = "judgment",
-							}, -- [10]
-							{
-								["action"] = "hammer_of_wrath",
-								["enabled"] = true,
-							}, -- [11]
-							{
-								["enabled"] = true,
-								["criteria"] = "holy_power <= 3",
-								["action"] = "blade_of_justice",
-							}, -- [12]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["criteria"] = "( target.health.pct <= 20 || buff.avenging_wrath.up || buff.crusade.up || buff.empyrean_power.up )",
-								["list_name"] = "finishers",
-							}, -- [13]
-							{
-								["enabled"] = true,
-								["criteria"] = "! consecration.up & spell_targets.divine_storm >= 2",
-								["action"] = "consecration",
-							}, -- [14]
-							{
-								["enabled"] = true,
-								["criteria"] = "cooldown.crusader_strike.charges_fractional >= 1.75 & ( holy_power <= 2 || holy_power <= 3 & cooldown.blade_of_justice.remains > gcd * 2 || holy_power = 4 & cooldown.blade_of_justice.remains > gcd * 2 & cooldown.judgment.remains > gcd * 2 )",
-								["action"] = "crusader_strike",
-							}, -- [15]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["list_name"] = "finishers",
-							}, -- [16]
-							{
-								["enabled"] = true,
-								["criteria"] = "! consecration.up",
-								["action"] = "consecration",
-							}, -- [17]
-							{
-								["action"] = "crusader_strike",
-								["enabled"] = true,
-							}, -- [18]
-							{
-								["action"] = "arcane_torrent",
-								["enabled"] = true,
-							}, -- [19]
-							{
-								["action"] = "consecration",
-								["enabled"] = true,
-							}, -- [20]
-						},
-						["default"] = {
-							{
-								["action"] = "rebuke",
-							}, -- [1]
-							{
-								["action"] = "call_action_list",
-								["list_name"] = "cooldowns",
-							}, -- [2]
-							{
-								["action"] = "call_action_list",
-								["criteria"] = "( ! raid_event.adds.exists || raid_event.adds.up || raid_event.adds.in < 9 || raid_event.adds.in > 30 ) & ( talent.execution_sentence.enabled & cooldown.execution_sentence.remains < 9 & spell_targets.divine_storm < 5 || talent.final_reckoning.enabled & cooldown.final_reckoning.remains < 9 ) & target.time_to_die > 8",
-								["list_name"] = "es_fr_pooling",
-							}, -- [3]
-							{
-								["action"] = "call_action_list",
-								["strict"] = 1,
-								["criteria"] = "debuff.execution_sentence.up || debuff.final_reckoning.up",
-								["list_name"] = "es_fr_active",
-							}, -- [4]
-							{
-								["action"] = "call_action_list",
-								["list_name"] = "generators",
-							}, -- [5]
-						},
-						["precombat"] = {
-							{
-								["action"] = "potion",
-							}, -- [1]
-							{
-								["action"] = "blessing_of_summer",
-							}, -- [2]
-							{
-								["action"] = "blessing_of_autumn",
-							}, -- [3]
-							{
-								["action"] = "blessing_of_winter",
-							}, -- [4]
-							{
-								["action"] = "blessing_of_spring",
-							}, -- [5]
-							{
-								["criteria"] = "soulbind.pustule_eruption.enabled || soulbind.volatile_solvent.enabled",
-								["action"] = "fleshcraft",
-							}, -- [6]
-							{
-								["criteria"] = "talent.final_reckoning.enabled & talent.seraphim.enabled",
-								["action"] = "arcane_torrent",
-							}, -- [7]
-							{
-								["action"] = "shield_of_vengeance",
-							}, -- [8]
-						},
-						["cooldowns"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || boss & fight_remains < 25",
-								["action"] = "potion",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "spell_targets.lights_judgment >= 2 || ! raid_event.adds.exists || raid_event.adds.in > 75 || raid_event.adds.up",
-								["action"] = "lights_judgment",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "( buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 ) & ! talent.execution_sentence.enabled",
-								["action"] = "fireblood",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "soulbind.pustule_eruption.enabled || soulbind.volatile_solvent.enabled",
-								["interrupt_if"] = "soulbind.volatile_solvent",
-								["interrupt_immediate"] = "1",
-								["action"] = "fleshcraft",
-								["interrupt_global"] = "1",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "( ! talent.execution_sentence.enabled || cooldown.execution_sentence.remains < 52 ) & fight_remains > 15",
-								["action"] = "shield_of_vengeance",
-							}, -- [5]
-							{
-								["action"] = "blessing_of_summer",
-								["enabled"] = true,
-							}, -- [6]
-							{
-								["action"] = "blessing_of_autumn",
-								["enabled"] = true,
-							}, -- [7]
-							{
-								["action"] = "blessing_of_winter",
-								["enabled"] = true,
-							}, -- [8]
-							{
-								["action"] = "blessing_of_spring",
-								["enabled"] = true,
-							}, -- [9]
-							{
-								["enabled"] = true,
-								["name"] = "inscrutable_quantum_device",
-								["action"] = "inscrutable_quantum_device",
-								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || boss & fight_remains < 30",
-							}, -- [10]
-							{
-								["enabled"] = true,
-								["name"] = "overwhelming_power_crystal",
-								["action"] = "overwhelming_power_crystal",
-								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || boss & fight_remains < 15",
-							}, -- [11]
-							{
-								["enabled"] = true,
-								["name"] = "darkmoon_deck_voracity",
-								["action"] = "darkmoon_deck_voracity",
-								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || boss & fight_remains < 20",
-							}, -- [12]
-							{
-								["enabled"] = true,
-								["name"] = "macabre_sheet_music",
-								["action"] = "macabre_sheet_music",
-								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || boss & fight_remains < 20",
-							}, -- [13]
-							{
-								["enabled"] = true,
-								["name"] = "faulty_countermeasure",
-								["action"] = "faulty_countermeasure",
-								["criteria"] = "! talent.crusade.enabled || buff.crusade.up || boss & fight_remains < 30",
-							}, -- [14]
-							{
-								["enabled"] = true,
-								["name"] = "dreadfire_vessel",
-								["action"] = "dreadfire_vessel",
-							}, -- [15]
-							{
-								["enabled"] = true,
-								["name"] = "skulkers_wing",
-								["action"] = "skulkers_wing",
-							}, -- [16]
-							{
-								["enabled"] = true,
-								["name"] = "grim_codex",
-								["action"] = "grim_codex",
-							}, -- [17]
-							{
-								["enabled"] = true,
-								["name"] = "memory_of_past_sins",
-								["action"] = "memory_of_past_sins",
-							}, -- [18]
-							{
-								["enabled"] = true,
-								["name"] = "spare_meat_hook",
-								["action"] = "spare_meat_hook",
-							}, -- [19]
-							{
-								["enabled"] = true,
-								["name"] = "salvaged_fusion_amplifier",
-								["action"] = "salvaged_fusion_amplifier",
-							}, -- [20]
-							{
-								["enabled"] = true,
-								["name"] = "giant_ornamental_pearl",
-								["action"] = "giant_ornamental_pearl",
-							}, -- [21]
-							{
-								["enabled"] = true,
-								["name"] = "windscar_whetstone",
-								["action"] = "windscar_whetstone",
-							}, -- [22]
-							{
-								["enabled"] = true,
-								["name"] = "scars_of_fraternal_strife",
-								["action"] = "scars_of_fraternal_strife",
-							}, -- [23]
-							{
-								["enabled"] = true,
-								["name"] = "chains_of_domination",
-								["action"] = "chains_of_domination",
-							}, -- [24]
-							{
-								["enabled"] = true,
-								["name"] = "earthbreakers_impact",
-								["action"] = "earthbreakers_impact",
-							}, -- [25]
-							{
-								["enabled"] = true,
-								["name"] = "heart_of_the_swarm",
-								["action"] = "heart_of_the_swarm",
-								["criteria"] = "! buff.avenging_wrath.up & buff.crusade.up",
-							}, -- [26]
-							{
-								["enabled"] = true,
-								["name"] = "gladiators_badge",
-								["action"] = "gladiators_badge",
-								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack >= 10 || cooldown.avenging_wrath.remains > 45 || cooldown.crusade.remains > 45",
-							}, -- [27]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack >= 10",
-								["action"] = "use_items",
-							}, -- [28]
-							{
-								["enabled"] = true,
-								["criteria"] = "( holy_power >= 4 & time < 5 || holy_power >= 3 & ( time > 5 || runeforge.the_magistrates_judgment.enabled ) || holy_power >= 2 & runeforge.vanguards_momentum.enabled & talent.final_reckoning.enabled || talent.holy_avenger.enabled & cooldown.holy_avenger.remains = 0 ) & ( ! talent.seraphim.enabled || ! talent.final_reckoning.enabled || cooldown.seraphim.remains > 0 )",
-								["action"] = "avenging_wrath",
-							}, -- [29]
-							{
-								["enabled"] = true,
-								["criteria"] = "holy_power >= 4 & time < 5 || holy_power >= 3 & time > 5",
-								["action"] = "crusade",
-							}, -- [30]
-							{
-								["action"] = "ashen_hallow",
-								["enabled"] = true,
-							}, -- [31]
-							{
-								["enabled"] = true,
-								["criteria"] = "time_to_hpg = 0 & holy_power <= 2 & ( buff.avenging_wrath.up || talent.crusade.enabled & ( cooldown.crusade.remains = 0 || buff.crusade.up ) || boss & fight_remains < 20 )",
-								["action"] = "holy_avenger",
-							}, -- [32]
-							{
-								["enabled"] = true,
-								["criteria"] = "( holy_power >= 4 & time < 8 || holy_power >= 3 & ( time >= 8 || spell_targets.divine_storm >= 2 & covenant.kyrian ) ) & cooldown.avenging_wrath.remains > gcd & time_to_hpg = 0 & ( ! talent.seraphim.enabled || buff.seraphim.up ) & ( ! raid_event.adds.exists || raid_event.adds.up || raid_event.adds.in > 40 ) & ( ! buff.avenging_wrath.up || holy_power = 5 || cooldown.hammer_of_wrath.remains || spell_targets.divine_storm >= 2 & covenant.kyrian )",
-								["action"] = "final_reckoning",
-							}, -- [33]
-						},
-						["finishers"] = {
-							{
-								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "spell_targets.divine_storm = 2 & ! ( runeforge.final_verdict.enabled || talent.righteous_verdict.enabled ) || spell_targets.divine_storm > 2 || buff.empyrean_power.up & ! debuff.judgment.up & ! buff.divine_purpose.up",
-								["var_name"] = "ds_castable",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "( cooldown.avenging_wrath.remains > 15 || cooldown.crusade.remains > 15 ) & ! talent.final_reckoning.enabled & ( ! talent.execution_sentence.enabled || spell_targets.divine_storm >= 5 ) & ( ! raid_event.adds.exists || raid_event.adds.in > 40 || raid_event.adds.in < gcd || raid_event.adds.up ) & ( ! covenant.kyrian || cooldown.divine_toll.remains < 9 ) || fight_remains < 15 & fight_remains > 5 || buff.crusade.up & buff.crusade.stack < 10",
-								["action"] = "seraphim",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "( buff.crusade.down & cooldown.crusade.remains > 10 || buff.crusade.stack >= 3 || cooldown.avenging_wrath.remains > 10 ) & ( ! talent.final_reckoning.enabled || cooldown.final_reckoning.remains > 10 ) & target.time_to_die > 8 & spell_targets.divine_storm < 5",
-								["action"] = "execution_sentence",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.ds_castable & ! buff.vanquishers_hammer.up & ( ( ! talent.crusade.enabled || cooldown.crusade.remains > gcd * 3 ) & ( ! talent.execution_sentence.enabled || cooldown.execution_sentence.remains > gcd * 6 || cooldown.execution_sentence.remains > gcd * 4 & holy_power >= 5 || target.time_to_die < 8 || spell_targets.divine_storm >= 5 || ! talent.seraphim.enabled & cooldown.execution_sentence.remains > gcd * 2 ) & ( ! talent.final_reckoning.enabled || cooldown.final_reckoning.remains > gcd * 6 || cooldown.final_reckoning.remains > gcd * 4 & holy_power >= 5 || ! talent.seraphim.enabled & cooldown.final_reckoning.remains > gcd * 2 ) || talent.holy_avenger.enabled & cooldown.holy_avenger.remains < gcd * 3 || buff.holy_avenger.up || buff.crusade.up & buff.crusade.stack < 10 )",
-								["action"] = "divine_storm",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "( ! talent.crusade.enabled || cooldown.crusade.remains > gcd * 3 ) & ( ! talent.execution_sentence.enabled || cooldown.execution_sentence.remains > gcd * 8 || cooldown.execution_sentence.remains > gcd * 6 & holy_power >= 4 || target.time_to_die < 8 || ! talent.seraphim.enabled & cooldown.execution_sentence.remains > gcd * 2 ) & ( ! talent.final_reckoning.enabled || cooldown.final_reckoning.remains > gcd * 8 || cooldown.final_reckoning.remains > gcd * 6 & holy_power >= 4 || ! talent.seraphim.enabled & cooldown.final_reckoning.remains > gcd * 2 ) || talent.holy_avenger.enabled & cooldown.holy_avenger.remains < gcd * 3 || buff.holy_avenger.up || buff.crusade.up & buff.crusade.stack < 10",
-								["action"] = "templars_verdict",
-							}, -- [5]
-						},
-						["es_fr_active"] = {
-							{
-								["action"] = "fireblood",
-								["enabled"] = true,
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["criteria"] = "holy_power = 5 || debuff.judgment.up || debuff.final_reckoning.up & ( debuff.final_reckoning.remains < gcd.max || spell_targets.divine_storm >= 2 & ! talent.execution_sentence.enabled ) || debuff.execution_sentence.up & debuff.execution_sentence.remains < gcd.max",
-								["list_name"] = "finishers",
-							}, -- [2]
-							{
-								["action"] = "divine_toll",
-								["enabled"] = true,
-							}, -- [3]
-							{
-								["action"] = "vanquishers_hammer",
-								["enabled"] = true,
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "holy_power <= 2 & ( debuff.final_reckoning.up & debuff.final_reckoning.remains < gcd * 2 & ! runeforge.divine_resonance.enabled || debuff.execution_sentence.up & debuff.execution_sentence.remains < gcd || spell_targets.divine_storm >= 5 & runeforge.divine_resonance.enabled & talent.execution_sentence.enabled )",
-								["action"] = "wake_of_ashes",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "conduit.expurgation & ( ! runeforge.divine_resonance.enabled & holy_power <= 3 || holy_power <= 2 )",
-								["action"] = "blade_of_justice",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "! debuff.judgment.up & ( holy_power >= 1 & runeforge.the_magistrates_judgment.enabled || holy_power >= 2 )",
-								["action"] = "judgment",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["list_name"] = "finishers",
-							}, -- [8]
-							{
-								["enabled"] = true,
-								["criteria"] = "holy_power <= 2",
-								["action"] = "wake_of_ashes",
-							}, -- [9]
-							{
-								["enabled"] = true,
-								["criteria"] = "holy_power <= 3",
-								["action"] = "blade_of_justice",
-							}, -- [10]
-							{
-								["enabled"] = true,
-								["criteria"] = "! debuff.judgment.up",
-								["action"] = "judgment",
-							}, -- [11]
-							{
-								["action"] = "hammer_of_wrath",
-								["enabled"] = true,
-							}, -- [12]
-							{
-								["action"] = "crusader_strike",
-								["enabled"] = true,
-							}, -- [13]
-							{
-								["action"] = "arcane_torrent",
-								["enabled"] = true,
-							}, -- [14]
-							{
-								["action"] = "consecration",
-								["enabled"] = true,
-							}, -- [15]
-						},
-						["es_fr_pooling"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "holy_power = 5 & ( ! talent.final_reckoning.enabled || cooldown.final_reckoning.remains <= gcd * 3 || cooldown.final_reckoning.remains > action_cooldown ) & ( ! talent.execution_sentence.enabled || cooldown.execution_sentence.remains <= gcd * 3 || cooldown.execution_sentence.remains > action_cooldown || talent.final_reckoning.enabled ) & ( ! covenant.kyrian || cooldown.divine_toll.remains < 9 || cooldown.divine_toll.remains > action_cooldown )",
-								["action"] = "seraphim",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["criteria"] = "holy_power = 5 || debuff.final_reckoning.up || buff.crusade.up & buff.crusade.stack < 10",
-								["list_name"] = "finishers",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.seraphim.up",
-								["action"] = "vanquishers_hammer",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "runeforge.vanguards_momentum.enabled",
-								["action"] = "hammer_of_wrath",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "holy_power <= 2 & set_bonus.tier28_4pc",
-								["action"] = "wake_of_ashes",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "holy_power <= 3",
-								["action"] = "blade_of_justice",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "! debuff.judgment.up",
-								["action"] = "judgment",
-							}, -- [7]
-							{
-								["action"] = "hammer_of_wrath",
-								["enabled"] = true,
-							}, -- [8]
-							{
-								["enabled"] = true,
-								["criteria"] = "cooldown.crusader_strike.charges_fractional >= 1.75 & ( holy_power <= 2 || holy_power <= 3 & cooldown.blade_of_justice.remains > gcd * 2 || holy_power = 4 & cooldown.blade_of_justice.remains > gcd * 2 & cooldown.judgment.remains > gcd * 2 )",
-								["action"] = "crusader_strike",
-							}, -- [9]
-							{
-								["enabled"] = true,
-								["criteria"] = "! talent.final_reckoning.enabled & cooldown.execution_sentence.remains <= gcd * 3 & ( ! covenant.kyrian || cooldown.divine_toll.remains < 9 )",
-								["action"] = "seraphim",
-							}, -- [10]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["list_name"] = "finishers",
-							}, -- [11]
-							{
-								["action"] = "crusader_strike",
-								["enabled"] = true,
-							}, -- [12]
-							{
-								["enabled"] = true,
-								["criteria"] = "holy_power <= 4",
-								["action"] = "arcane_torrent",
-							}, -- [13]
-							{
-								["enabled"] = true,
-								["criteria"] = "( ! talent.final_reckoning.enabled || cooldown.final_reckoning.remains <= gcd * 3 ) & ( ! talent.execution_sentence.enabled || cooldown.execution_sentence.remains <= gcd * 3 || talent.final_reckoning.enabled ) & ( ! covenant.kyrian || cooldown.divine_toll.remains < 9 )",
-								["action"] = "seraphim",
-							}, -- [14]
-							{
-								["action"] = "consecration",
-								["enabled"] = true,
-							}, -- [15]
-						},
-					},
 				},
 			},
 		},
@@ -14522,18 +14557,20 @@ HekiliDB = {
 		},
 		["Zulbathal - Zul'jin"] = {
 			["runOnce"] = {
-				["forceEnableAllClassesOnceDueToBug_20220225-104"] = true,
-				["autoconvertGlowsForCustomGlow_20190326"] = true,
-				["autoconvertDelaySweepToExtend_20190729"] = true,
+				["forceEnableAllClassesOnceDueToBug_20220225"] = true,
 				["forceEnableAllClassesOnceDueToBug_20220225-103"] = true,
-				["resetPotionsToDefaults_20190717"] = true,
-				["autoconvertDisplayToggle_20190621_1"] = true,
+				["autoconvertGlowsForCustomGlow_20190326"] = true,
+				["forceEnableAllClassesOnceDueToBug_20220225-104"] = true,
+				["updateMaxRefreshToNewSpecOptions_20220222"] = true,
+				["autoconvertDelaySweepToExtend_20190729"] = true,
 				["resetGlobalCooldownSync_20210403"] = true,
+				["resetPotionsToDefaults_20190717"] = true,
 				["resetRogueMfDOption_20200226"] = true,
+				["autoconvertDisplayToggle_20190621_1"] = true,
 				["resetAllPotions_20201209"] = true,
 				["enableAllOfTheThings_20180820"] = true,
 				["forceEnableEnhancedRecheckBoomkin_20210712"] = true,
-				["updateMaxRefreshToNewSpecOptions_20220222"] = true,
+				["forceReloadAllDefaultPriorities_20220228"] = true,
 				["forceEnableAllClassesOnceDueToBug_20220225-102"] = true,
 				["resetAberrantPackageDates_20190728_1"] = true,
 			},
@@ -14545,10 +14582,10 @@ HekiliDB = {
 						["brutal_charges"] = 2,
 					},
 					["potion"] = "spectral_agility",
-					["aoe"] = 3,
+					["package"] = "Feral",
 					["damageExpiration"] = 3,
 					["potionsReset"] = 20180919.1,
-					["package"] = "Feral",
+					["aoe"] = 3,
 				},
 				[104] = {
 					["enabled"] = true,
@@ -14561,24 +14598,24 @@ HekiliDB = {
 						["shift_for_convoke"] = false,
 					},
 					["potion"] = "spectral_agility",
-					["aoe"] = 3,
+					["package"] = "Guardian",
 					["damageExpiration"] = 6,
 					["potionsReset"] = 20180919.1,
-					["package"] = "Guardian",
+					["aoe"] = 3,
 				},
 				[102] = {
 					["enabled"] = true,
 					["package"] = "Balance",
+					["potion"] = "spectral_intellect",
 					["settings"] = {
 						["starlord_cancel"] = false,
 						["solo_drift"] = false,
 					},
-					["potion"] = "spectral_intellect",
-					["nameplates"] = false,
-					["potionsReset"] = 20180919.1,
-					["damageExpiration"] = 6,
 					["aoe"] = 3,
+					["nameplates"] = false,
+					["damageExpiration"] = 6,
 					["enhancedRecheck"] = true,
+					["potionsReset"] = 20180919.1,
 				},
 			},
 			["packs"] = {
@@ -14592,8 +14629,8 @@ HekiliDB = {
 						["filler"] = {
 							{
 								["enabled"] = true,
-								["action"] = "rake",
 								["criteria"] = "variable.filler = 1 & refreshable & dot.rake.pmultiplier <= 1.2 * persistent_multiplier",
+								["action"] = "rake",
 								["cycle_targets"] = 1,
 							}, -- [1]
 							{
@@ -14635,8 +14672,8 @@ HekiliDB = {
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["action"] = "rip",
 								["criteria"] = "refreshable & druid.rip.ticks_gained_on_refresh > variable.rip_ticks & ( ( buff.tigers_fury.up || ! ticking ) & ( buff.bloodtalons.up || ! talent.bloodtalons.enabled ) || ! talent.sabertooth.enabled ) & ( spell_targets.primal_wrath = 1 || ! talent.primal_wrath.enabled ) & ( active_dot.rip = 0 || ticking & active_dot.rip = 1 || ! runeforge.draught_of_deep_focus.enabled || ! talent.sabertooth.enabled )",
+								["action"] = "rip",
 								["cycle_targets"] = 1,
 							}, -- [4]
 							{
@@ -14652,32 +14689,10 @@ HekiliDB = {
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["action"] = "ferocious_bite",
 								["criteria"] = "buff.bs_inc.up & talent.soul_of_the_forest.enabled || cooldown.convoke_the_spirits.remains < 1 & covenant.night_fae",
+								["action"] = "ferocious_bite",
 								["cycle_targets"] = 1,
 							}, -- [7]
-						},
-						["balance"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.eclipse_solar.down & buff.eclipse_lunar.down & ( refreshable || ( active_enemies > 1 & active_dot.sunfire < active_enemies ) )",
-								["action"] = "sunfire",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.eclipse_solar.remains > 10 + cast_time || buff.eclipse_lunar.remains > 10 + cast_time",
-								["action"] = "starsurge",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.eclipse_lunar.remains > cast_time || buff.eclipse_solar.down & solar_eclipse > 0 || buff.eclipse_solar.down & lunar_eclipse - action.wrath.in_flight < 1",
-								["action"] = "starfire",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.eclipse_solar.remains > cast_time || buff.eclipse_lunar.down & lunar_eclipse - action.wrath.in_flight > 0",
-								["action"] = "wrath",
-							}, -- [4]
 						},
 						["setup"] = {
 							{
@@ -14703,8 +14718,8 @@ HekiliDB = {
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["criteria"] = "talent.bloodtalons.enabled & buff.bloodtalons.down & ( combo_points < 5 || spell_targets.thrash_cat = 1 )",
 								["action"] = "call_action_list",
+								["criteria"] = "talent.bloodtalons.enabled & buff.bloodtalons.down & ( combo_points < 5 || spell_targets.thrash_cat = 1 )",
 								["list_name"] = "bloodtalons",
 							}, -- [5]
 							{
@@ -14720,32 +14735,60 @@ HekiliDB = {
 								["list_name"] = "finisher",
 							}, -- [7]
 						},
+						["balance"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.eclipse_solar.down & buff.eclipse_lunar.down & ( refreshable || ( active_enemies > 1 & active_dot.sunfire < active_enemies ) )",
+								["action"] = "sunfire",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.eclipse_solar.remains > 10 + cast_time || buff.eclipse_lunar.remains > 10 + cast_time",
+								["action"] = "starsurge",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.eclipse_lunar.remains > cast_time || buff.eclipse_solar.down & solar_eclipse > 0 || buff.eclipse_solar.down & lunar_eclipse - action.wrath.in_flight < 1",
+								["action"] = "starfire",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.eclipse_solar.remains > cast_time || buff.eclipse_lunar.down & lunar_eclipse - action.wrath.in_flight > 0",
+								["action"] = "wrath",
+							}, -- [4]
+						},
 						["default"] = {
 							{
-								["criteria"] = "buff.moonkin_form.up & ! druid.owlweave_cat",
-								["strict"] = 1,
+								["enabled"] = true,
 								["action"] = "run_action_list",
+								["strict"] = 1,
+								["criteria"] = "buff.moonkin_form.up & ! druid.owlweave_cat",
 								["list_name"] = "balance",
 							}, -- [1]
 							{
-								["criteria"] = "druid.owlweave_cat",
-								["strict"] = 1,
+								["enabled"] = true,
 								["action"] = "call_action_list",
+								["strict"] = 1,
+								["criteria"] = "druid.owlweave_cat",
 								["list_name"] = "owlweave",
 							}, -- [2]
 							{
+								["enabled"] = true,
 								["description"] = "Prowl whenever possible",
 								["action"] = "prowl",
 							}, -- [3]
 							{
+								["enabled"] = true,
 								["criteria"] = "buff.cat_form.down",
 								["action"] = "tigers_fury",
 							}, -- [4]
 							{
+								["enabled"] = true,
 								["criteria"] = "buff.cat_form.down",
 								["action"] = "cat_form",
 							}, -- [5]
 							{
+								["enabled"] = true,
 								["action"] = "run_action_list",
 								["description"] = "One shot stealth",
 								["strict"] = 1,
@@ -14754,34 +14797,41 @@ HekiliDB = {
 							}, -- [6]
 							{
 								["action"] = "skull_bash",
+								["enabled"] = true,
 							}, -- [7]
 							{
-								["criteria"] = "active_dot.rip = 0",
-								["strict"] = 1,
+								["enabled"] = true,
 								["action"] = "call_action_list",
+								["strict"] = 1,
+								["criteria"] = "active_dot.rip = 0",
 								["list_name"] = "setup",
 							}, -- [8]
 							{
+								["enabled"] = true,
 								["action"] = "call_action_list",
 								["list_name"] = "cooldown",
 							}, -- [9]
 							{
-								["description"] = "Necrolord: Cast 3 or 4 combo point rips on single target outside of berserk or during berserk if feral frenzy is up OR apply a 5cp Rip when TF is up and will soon fall off.",
+								["enabled"] = true,
 								["criteria"] = "covenant.necrolord & ( ! talent.bloodtalons.enabled || buff.bloodtalons.up ) & spell_targets.thrash_cat = 1 & ( combo_points > 2 & refreshable & druid.rip.ticks_gained_on_refresh > variable.rip_ticks & ( ! buff.bs_inc.up || cooldown.bs_inc.up || ( buff.bs_inc.up & cooldown.feral_frenzy.up ) ) || combo_points = 5 & buff.tigers_fury.up & buff.tigers_fury.remains < 4 & druid.rip.ticks_gained_on_refresh > 5 )",
 								["action"] = "rip",
+								["description"] = "Necrolord: Cast 3 or 4 combo point rips on single target outside of berserk or during berserk if feral frenzy is up OR apply a 5cp Rip when TF is up and will soon fall off.",
 							}, -- [10]
 							{
-								["criteria"] = "combo_points >= ( 5 - variable.fourcp_bite )",
-								["strict"] = 1,
+								["enabled"] = true,
 								["action"] = "run_action_list",
+								["strict"] = 1,
+								["criteria"] = "combo_points >= ( 5 - variable.fourcp_bite )",
 								["list_name"] = "finisher",
 							}, -- [11]
 							{
-								["criteria"] = "druid.primal_wrath.ticks_gained_on_refresh >= 20 & combo_points >= 2",
+								["enabled"] = true,
 								["action"] = "primal_wrath",
+								["criteria"] = "druid.primal_wrath.ticks_gained_on_refresh >= 20 & combo_points >= 2",
 								["line_cd"] = "5",
 							}, -- [12]
 							{
+								["enabled"] = true,
 								["action"] = "call_action_list",
 								["description"] = "Multi-gcd stealth",
 								["strict"] = 1,
@@ -14789,101 +14839,126 @@ HekiliDB = {
 								["list_name"] = "stealth",
 							}, -- [13]
 							{
-								["description"] = "The most expensive BT cycle (Thresh Shred Swipe cost 115 energy, make sure we can make that in 4 globals)",
-								["sec"] = "( ( 115 - 23 * buff.incarnation_king_of_the_jungle.up ) - ( energy.current + 3.5 * energy.regen + ( 40 * buff.clearcasting.up ) ) ) / energy.regen",
+								["enabled"] = true,
 								["action"] = "wait",
+								["sec"] = "( ( 115 - 23 * buff.incarnation_king_of_the_jungle.up ) - ( energy.current + 3.5 * energy.regen + ( 40 * buff.clearcasting.up ) ) ) / energy.regen",
 								["criteria"] = "talent.bloodtalons.enabled & buff.bloodtalons.down & active_bt_triggers = 0",
+								["description"] = "The most expensive BT cycle (Thresh Shred Swipe cost 115 energy, make sure we can make that in 4 globals)",
 							}, -- [14]
 							{
-								["criteria"] = "talent.bloodtalons.enabled & buff.bloodtalons.down",
+								["enabled"] = true,
 								["action"] = "run_action_list",
+								["criteria"] = "talent.bloodtalons.enabled & buff.bloodtalons.down",
 								["list_name"] = "bloodtalons",
 							}, -- [15]
 							{
-								["action"] = "ferocious_bite",
+								["enabled"] = true,
 								["criteria"] = "buff.apex_predators_craving.up",
+								["action"] = "ferocious_bite",
 								["cycle_targets"] = 1,
 							}, -- [16]
 							{
+								["enabled"] = true,
 								["for_next"] = 1,
 								["action"] = "pool_resource",
 							}, -- [17]
 							{
-								["action"] = "rake",
+								["enabled"] = true,
 								["criteria"] = "( refreshable || persistent_multiplier > dot.rake.pmultiplier ) & druid.rake.ticks_gained_on_refresh > spell_targets.swipe_cat * 2 - 2",
+								["action"] = "rake",
 								["cycle_targets"] = 1,
 							}, -- [18]
 							{
-								["action"] = "lunar_inspiration",
+								["enabled"] = true,
 								["criteria"] = "( refreshable || persistent_multiplier > dot.lunar_inspiration.pmultiplier ) & druid.lunar_inspiration.ticks_gained_on_refresh > spell_targets.swipe_cat * 2 - 2",
+								["action"] = "lunar_inspiration",
 								["cycle_targets"] = 1,
 							}, -- [19]
 							{
+								["enabled"] = true,
 								["for_next"] = 1,
 								["action"] = "pool_resource",
 							}, -- [20]
 							{
-								["action"] = "thrash_cat",
+								["enabled"] = true,
 								["criteria"] = "refreshable & druid.thrash_cat.ticks_gained_on_refresh > ( 4 + spell_targets.thrash_cat * 4 ) / ( 1 + mastery_value ) - conduit.taste_for_blood.enabled - covenant.necrolord & ( ! buff.bs_inc.up || spell_targets.thrash_cat > 1 )",
+								["action"] = "thrash_cat",
 								["cycle_targets"] = 1,
 							}, -- [21]
 							{
+								["enabled"] = true,
 								["for_next"] = 1,
 								["action"] = "pool_resource",
 							}, -- [22]
 							{
+								["enabled"] = true,
 								["criteria"] = "( raid_event.adds.in > ( 1 + max_charges - charges_fractional ) * recharge_time ) & ( spell_targets.brutal_slash * action.brutal_slash.damage / action.brutal_slash.cost ) > ( action.shred.damage / action.shred.cost )",
 								["action"] = "brutal_slash",
 							}, -- [23]
 							{
+								["enabled"] = true,
 								["criteria"] = "spell_targets.swipe_cat > 1 + buff.bs_inc.up * 2",
 								["action"] = "swipe_cat",
 							}, -- [24]
 							{
+								["enabled"] = true,
 								["criteria"] = "spell_targets.thrash_cat > 3",
 								["action"] = "thrash_cat",
 							}, -- [25]
 							{
+								["enabled"] = true,
 								["criteria"] = "buff.clearcasting.up & ( buff.sudden_ambush.down & buff.shadowmeld.down || buff.bs_inc.up )",
 								["action"] = "shred",
 							}, -- [26]
 							{
+								["enabled"] = true,
 								["action"] = "call_action_list",
 								["list_name"] = "filler",
 							}, -- [27]
 						},
 						["precombat"] = {
 							{
-								["value"] = "0",
+								["enabled"] = true,
+								["op"] = "set",
 								["action"] = "variable",
+								["value"] = "0",
 								["var_name"] = "fourcp_bite",
 							}, -- [1]
 							{
-								["value"] = "1",
+								["enabled"] = true,
+								["op"] = "set",
 								["action"] = "variable",
-								["description"] = "Shred = 0, Non-snapshot Rake = 1, Snapshot Rake = 2, LI = 3, Swipe = 4",
+								["value"] = "1",
 								["var_name"] = "filler",
+								["description"] = "Shred = 0, Non-snapshot Rake = 1, Snapshot Rake = 2, LI = 3, Swipe = 4",
 							}, -- [2]
 							{
-								["value"] = "7",
+								["enabled"] = true,
+								["op"] = "set",
 								["action"] = "variable",
+								["value"] = "7",
 								["var_name"] = "rip_ticks",
 							}, -- [3]
 							{
 								["action"] = "kindred_spirits",
+								["enabled"] = true,
 							}, -- [4]
 							{
 								["action"] = "bottled_flayedwing_toxin",
+								["enabled"] = true,
 							}, -- [5]
 							{
+								["enabled"] = true,
 								["criteria"] = "soulbind.pustule_eruption.enabled || soulbind.volatile_solvent.enabled",
 								["action"] = "fleshcraft",
 							}, -- [6]
 							{
+								["enabled"] = true,
 								["criteria"] = "buff.moonkin_form.down",
 								["action"] = "prowl",
 							}, -- [7]
 							{
+								["enabled"] = true,
 								["criteria"] = "buff.moonkin_form.down",
 								["action"] = "cat_form",
 							}, -- [8]
@@ -14891,20 +14966,20 @@ HekiliDB = {
 						["bloodtalons"] = {
 							{
 								["enabled"] = true,
-								["action"] = "rake",
 								["criteria"] = "( ! ticking || ( 1.2 * persistent_multiplier >= dot.rake.pmultiplier ) || ( active_bt_triggers = 2 & refreshable ) ) & buff.bt_rake.down",
+								["action"] = "rake",
 								["cycle_targets"] = 1,
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["action"] = "lunar_inspiration",
 								["criteria"] = "refreshable & buff.bt_moonfire.down",
+								["action"] = "lunar_inspiration",
 								["cycle_targets"] = 1,
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["action"] = "thrash_cat",
 								["criteria"] = "refreshable & buff.bt_thrash.down & druid.thrash_cat.ticks_gained_on_refresh > ( 4 + spell_targets.thrash_cat * 4 ) / ( 1 + mastery_value ) - conduit.taste_for_blood.enabled",
+								["action"] = "thrash_cat",
 								["cycle_targets"] = 1,
 							}, -- [3]
 							{
@@ -14943,8 +15018,8 @@ HekiliDB = {
 								["enabled"] = true,
 								["action"] = "rake",
 								["cycle_targets"] = 1,
-								["criteria"] = "( dot.rake.pmultiplier < 1.5 || refreshable ) & druid.rake.ticks_gained_on_refresh > 2 || ( persistent_multiplier > dot.rake.pmultiplier & buff.bs_inc.up & spell_targets.thrash_cat < 3 & covenant.necrolord ) || buff.bs_inc.remains < 1",
 								["description"] = "Rake needs roughly 50% of its length at a minimum to surpass shreds dpe",
+								["criteria"] = "( dot.rake.pmultiplier < 1.5 || refreshable ) & druid.rake.ticks_gained_on_refresh > 2 || ( persistent_multiplier > dot.rake.pmultiplier & buff.bs_inc.up & spell_targets.thrash_cat < 3 & covenant.necrolord ) || buff.bs_inc.remains < 1",
 							}, -- [2]
 							{
 								["enabled"] = true,
@@ -14953,9 +15028,9 @@ HekiliDB = {
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["description"] = "Brutal Slash is better than stealth Shred at 3 targets",
 								["criteria"] = "spell_targets.brutal_slash > 2",
 								["action"] = "brutal_slash",
+								["description"] = "Brutal Slash is better than stealth Shred at 3 targets",
 							}, -- [4]
 							{
 								["enabled"] = true,
@@ -14971,28 +15046,28 @@ HekiliDB = {
 						["cooldown"] = {
 							{
 								["enabled"] = true,
-								["action"] = "adaptive_swarm",
 								["criteria"] = "( ( ! dot.adaptive_swarm_damage.ticking || dot.adaptive_swarm_damage.remains < 2 ) & ( dot.adaptive_swarm_damage.stack < 3 || ! dot.adaptive_swarm_heal.stack > 1 ) & ! action.adaptive_swarm_heal.in_flight & ! action.adaptive_swarm_damage.in_flight & ! action.adaptive_swarm.in_flight ) & target.time_to_die > 5 || active_enemies > 2 & ! dot.adaptive_swarm_damage.ticking & energy < 35 & target.time_to_die > 5",
+								["action"] = "adaptive_swarm",
 								["cycle_targets"] = 1,
 							}, -- [1]
 							{
 								["enabled"] = true,
 								["sync"] = "feral_frenzy",
-								["description"] = "Cast Tiger's Fury before (or immediatly after) casting Feral Frenzy if Berserk is NOT on cooldown.",
-								["criteria"] = "cooldown.bs_inc.up",
 								["action"] = "tigers_fury",
+								["criteria"] = "cooldown.bs_inc.up",
+								["description"] = "Cast Tiger's Fury before (or immediatly after) casting Feral Frenzy if Berserk is NOT on cooldown.",
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["action"] = "feral_frenzy",
 								["criteria"] = "combo_points < 3 & target.time_to_die > 7 & ( buff.savage_roar.up || ! talent.savage_roar.enabled ) & ( ! cooldown.tigers_fury.up || cooldown.bs_inc.up ) || boss & fight_remains < 8 & fight_remains > 2",
+								["action"] = "feral_frenzy",
 								["cycle_targets"] = 1,
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["description"] = "TODO: Need to sync with with ravenous frenzy when we run frenzyband, or atleast check if its worth it",
 								["criteria"] = "combo_points >= 3",
 								["action"] = "berserk",
+								["description"] = "TODO: Need to sync with with ravenous frenzy when we run frenzyband, or atleast check if its worth it",
 							}, -- [4]
 							{
 								["enabled"] = true,
@@ -15001,15 +15076,15 @@ HekiliDB = {
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["description"] = "Try and not waste TF energy, but also just use it for zerk and incarns",
 								["criteria"] = "energy.deficit > 40 || buff.bs_inc.up || ( talent.predator.enabled & shortest_ttd < 3 )",
 								["action"] = "tigers_fury",
+								["description"] = "Try and not waste TF energy, but also just use it for zerk and incarns",
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["description"] = "Might be wrong to use Smeld on Rake in very very niche situations, but very rarely",
 								["criteria"] = "buff.tigers_fury.up & buff.bs_inc.down & combo_points < 4 & buff.sudden_ambush.down & dot.rake.pmultiplier < 1.6 & energy > 40 & druid.rake.ticks_gained_on_refresh > spell_targets.swipe_cat * 2 - 2 & target.time_to_die > 5",
 								["action"] = "shadowmeld",
+								["description"] = "Might be wrong to use Smeld on Rake in very very niche situations, but very rarely",
 							}, -- [7]
 							{
 								["enabled"] = true,
@@ -15028,22 +15103,22 @@ HekiliDB = {
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["description"] = "TODO: Check moonkin hotw and stuff like this, and maybe better combat remain resync",
 								["criteria"] = "( dot.rip.remains > 4 & combo_points < 5 & ( dot.rake.ticking || spell_targets.thrash_cat > 1 ) & energy.deficit >= 20 ) || boss & fight_remains < 5",
 								["action"] = "convoke_the_spirits",
+								["description"] = "TODO: Check moonkin hotw and stuff like this, and maybe better combat remain resync",
 							}, -- [11]
 							{
 								["enabled"] = true,
-								["description"] = "Maybe there should be more conditions on the conduit",
 								["criteria"] = "buff.tigers_fury.up || ( conduit.deep_allegiance.enabled )",
 								["action"] = "empower_bond",
+								["description"] = "Maybe there should be more conditions on the conduit",
 							}, -- [12]
 							{
 								["enabled"] = true,
 								["name"] = "jotungeirr_destinys_call",
-								["description"] = "Give priority to on-use weapon",
-								["criteria"] = "equipped.jotungeirr_destinys_call",
 								["action"] = "jotungeirr_destinys_call",
+								["criteria"] = "equipped.jotungeirr_destinys_call",
+								["description"] = "Give priority to on-use weapon",
 							}, -- [13]
 							{
 								["action"] = "use_items",
@@ -15063,8 +15138,8 @@ HekiliDB = {
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["action"] = "moonfire",
 								["criteria"] = "buff.moonkin_form.up & spell_targets.thrash_cat < 2 & ! talent.lunar_inspiration.enabled",
+								["action"] = "moonfire",
 								["line_cd"] = "4*gcd",
 							}, -- [3]
 							{
@@ -15081,143 +15156,169 @@ HekiliDB = {
 					},
 					["version"] = 20220227,
 					["warnings"] = "WARNING:  The import for 'finisher' required some automated changes.\nLine 4: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\n\nWARNING:  The import for 'default' required some automated changes.\nLine 21: Converted SimC syntax % to Lua division operator (/) (1x).\nLine 23: Converted SimC syntax % to Lua division operator (/) (2x).\n\nWARNING:  The import for 'bloodtalons' required some automated changes.\nLine 3: Converted SimC syntax % to Lua division operator (/) (1x).\n\nWARNING:  The import for 'owlweave' required some automated changes.\nLine 4: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 5: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\n\nImported 10 action lists.\n",
-					["spec"] = 103,
 					["profile"] = "## Feral Druid\n## February 27, 2022\n\n## Changes:\n## - druid.owlweave_cat=1 checks to druid.owlweave_cat.\n## - Convert BT pool_resource to wait expression (x2).\n## - Add interruptible Fleshcraft if you have nothing else to do.\n## - Don't hold Convoke for Rip unless you'll really Rip.\n\nactions.precombat+=/variable,name=fourcp_bite,value=0\n# Shred = 0, Non-snapshot Rake = 1, Snapshot Rake = 2, LI = 3, Swipe = 4\nactions.precombat+=/variable,name=filler,value=1\nactions.precombat+=/variable,name=rip_ticks,value=7\nactions.precombat+=/kindred_spirits\nactions.precombat+=/bottled_flayedwing_toxin\nactions.precombat+=/fleshcraft,if=soulbind.pustule_eruption.enabled||soulbind.volatile_solvent.enabled\nactions.precombat+=/prowl,if=buff.moonkin_form.down\nactions.precombat+=/cat_form,if=buff.moonkin_form.down\n\nactions=run_action_list,name=balance,strict=1,if=buff.moonkin_form.up&!druid.owlweave_cat\nactions+=/call_action_list,name=owlweave,strict=1,if=druid.owlweave_cat\n# Prowl whenever possible\nactions+=/prowl\nactions+=/tigers_fury,if=buff.cat_form.down\nactions+=/cat_form,if=buff.cat_form.down\n## actions+=/variable,name=shortest_ttd,value=target.time_to_die\n## actions+=/cycling_variable,name=shortest_ttd,op=min,value=target.time_to_die\n# One shot stealth\nactions+=/run_action_list,name=stealth,strict=1,if=buff.shadowmeld.up||buff.prowl.up\nactions+=/skull_bash\nactions+=/call_action_list,name=setup,strict=1,if=active_dot.rip=0\nactions+=/call_action_list,name=cooldown\n# Necrolord: Cast 3 or 4 combo point rips on single target outside of berserk or during berserk if feral frenzy is up OR apply a 5cp Rip when TF is up and will soon fall off.\nactions+=/rip,if=covenant.necrolord&(!talent.bloodtalons.enabled||buff.bloodtalons.up)&spell_targets.thrash_cat=1&(combo_points>2&refreshable&druid.rip.ticks_gained_on_refresh>variable.rip_ticks&(!buff.bs_inc.up||cooldown.bs_inc.up||(buff.bs_inc.up&cooldown.feral_frenzy.up))||combo_points=5&buff.tigers_fury.up&buff.tigers_fury.remains<4&druid.rip.ticks_gained_on_refresh>5)\nactions+=/run_action_list,name=finisher,strict=1,if=combo_points>=(5-variable.fourcp_bite)\nactions+=/primal_wrath,if=druid.primal_wrath.ticks_gained_on_refresh>=20&combo_points>=2,line_cd=5\n# Multi-gcd stealth\nactions+=/call_action_list,name=stealth,strict=1,if=buff.bs_inc.up\n# The most expensive BT cycle (Thresh Shred Swipe cost 115 energy, make sure we can make that in 4 globals)\nactions+=/wait,sec=((115-23*buff.incarnation_king_of_the_jungle.up)-(energy.current+3.5*energy.regen+(40*buff.clearcasting.up)))/energy.regen,if=talent.bloodtalons.enabled&buff.bloodtalons.down&active_bt_triggers=0\n## actions+=/pool_resource,if=talent.bloodtalons.enabled&buff.bloodtalons.down&(energy+3.5*energy.regen+(40*buff.clearcasting.up))<(115-23*buff.incarnation_king_of_the_jungle.up)&active_bt_triggers=0\nactions+=/run_action_list,name=bloodtalons,if=talent.bloodtalons.enabled&buff.bloodtalons.down\nactions+=/ferocious_bite,cycle_targets=1,if=buff.apex_predators_craving.up\nactions+=/pool_resource,for_next=1\nactions+=/rake,cycle_targets=1,if=(refreshable||persistent_multiplier>dot.rake.pmultiplier)&druid.rake.ticks_gained_on_refresh>spell_targets.swipe_cat*2-2\nactions+=/lunar_inspiration,cycle_targets=1,if=(refreshable||persistent_multiplier>dot.lunar_inspiration.pmultiplier)&druid.lunar_inspiration.ticks_gained_on_refresh>spell_targets.swipe_cat*2-2\nactions+=/pool_resource,for_next=1\nactions+=/thrash_cat,cycle_targets=1,if=refreshable&druid.thrash_cat.ticks_gained_on_refresh>(4+spell_targets.thrash_cat*4)%(1+mastery_value)-conduit.taste_for_blood.enabled-covenant.necrolord&(!buff.bs_inc.up||spell_targets.thrash_cat>1)\nactions+=/pool_resource,for_next=1\nactions+=/brutal_slash,if=(raid_event.adds.in>(1+max_charges-charges_fractional)*recharge_time)&(spell_targets.brutal_slash*action.brutal_slash.damage%action.brutal_slash.cost)>(action.shred.damage%action.shred.cost)\nactions+=/swipe_cat,if=spell_targets.swipe_cat>1+buff.bs_inc.up*2\nactions+=/thrash_cat,if=spell_targets.thrash_cat>3\nactions+=/shred,if=buff.clearcasting.up&(buff.sudden_ambush.down&buff.shadowmeld.down||buff.bs_inc.up)\nactions+=/call_action_list,name=filler\n\nactions.bloodtalons=rake,cycle_targets=1,if=(!ticking||(1.2*persistent_multiplier>=dot.rake.pmultiplier)||(active_bt_triggers=2&refreshable))&buff.bt_rake.down\nactions.bloodtalons+=/lunar_inspiration,cycle_targets=1,if=refreshable&buff.bt_moonfire.down\nactions.bloodtalons+=/thrash_cat,cycle_targets=1,if=refreshable&buff.bt_thrash.down&druid.thrash_cat.ticks_gained_on_refresh>(4+spell_targets.thrash_cat*4)%(1+mastery_value)-conduit.taste_for_blood.enabled\nactions.bloodtalons+=/brutal_slash,if=buff.bt_brutal_slash.down\nactions.bloodtalons+=/swipe_cat,if=buff.bt_swipe.down&spell_targets.swipe_cat>1\nactions.bloodtalons+=/shred,if=buff.bt_shred.down\nactions.bloodtalons+=/swipe_cat,if=buff.bt_swipe.down\nactions.bloodtalons+=/thrash_cat,if=buff.bt_thrash.down\n\nactions.cooldown=adaptive_swarm,cycle_targets=1,if=((!dot.adaptive_swarm_damage.ticking||dot.adaptive_swarm_damage.remains<2)&(dot.adaptive_swarm_damage.stack<3||!dot.adaptive_swarm_heal.stack>1)&!action.adaptive_swarm_heal.in_flight&!action.adaptive_swarm_damage.in_flight&!action.adaptive_swarm.in_flight)&target.time_to_die>5||active_enemies>2&!dot.adaptive_swarm_damage.ticking&energy<35&target.time_to_die>5\n## actions.cooldown+=/fleshcraft,if=(soulbind.pustule_eruption||soulbind.volatile_solvent),interrupt_immediate=1,interrupt_global=1,interrupt_if=soulbind.volatile_solvent\n# Cast Tiger's Fury before (or immediatly after) casting Feral Frenzy if Berserk is NOT on cooldown.\nactions.cooldown+=/tigers_fury,sync=feral_frenzy,if=cooldown.bs_inc.up\nactions.cooldown+=/feral_frenzy,cycle_targets=1,if=combo_points<3&target.time_to_die>7&(buff.savage_roar.up||!talent.savage_roar.enabled)&(!cooldown.tigers_fury.up||cooldown.bs_inc.up)||boss&fight_remains<8&fight_remains>2\n# TODO: Need to sync with with ravenous frenzy when we run frenzyband, or atleast check if its worth it\nactions.cooldown+=/berserk,if=combo_points>=3\nactions.cooldown+=/incarnation,if=combo_points>=3\n# Try and not waste TF energy, but also just use it for zerk and incarns\nactions.cooldown+=/tigers_fury,if=energy.deficit>40||buff.bs_inc.up||(talent.predator.enabled&shortest_ttd<3)\n# Might be wrong to use Smeld on Rake in very very niche situations, but very rarely\nactions.cooldown+=/shadowmeld,if=buff.tigers_fury.up&buff.bs_inc.down&combo_points<4&buff.sudden_ambush.down&dot.rake.pmultiplier<1.6&energy>40&druid.rake.ticks_gained_on_refresh>spell_targets.swipe_cat*2-2&target.time_to_die>5\nactions.cooldown+=/berserking,if=buff.tigers_fury.up||buff.bs_inc.up\nactions.cooldown+=/potion,if=buff.bs_inc.up||boss&fight_remains<cooldown.bs_inc.remains||boss&fight_remains<25\nactions.cooldown+=/ravenous_frenzy,if=buff.bs_inc.up||fight_remains<21\n# TODO: Check moonkin hotw and stuff like this, and maybe better combat remain resync\nactions.cooldown+=/convoke_the_spirits,if=(dot.rip.remains>4&combo_points<5&(dot.rake.ticking||spell_targets.thrash_cat>1)&energy.deficit>=20)||boss&fight_remains<5\n# Maybe there should be more conditions on the conduit\nactions.cooldown+=/empower_bond,if=buff.tigers_fury.up||(conduit.deep_allegiance.enabled)\n# Give priority to on-use weapon\nactions.cooldown+=/use_item,name=jotungeirr_destinys_call,if=equipped.jotungeirr_destinys_call\nactions.cooldown+=/use_items\n\nactions.filler=rake,cycle_targets=1,if=variable.filler=1&refreshable&dot.rake.pmultiplier<=1.2*persistent_multiplier\nactions.filler+=/rake,if=variable.filler=2\nactions.filler+=/lunar_inspiration,if=variable.filler=3\nactions.filler+=/swipe,if=variable.filler=4\nactions.filler+=/shred,if=buff.sudden_ambush.down\n## actions.filler+=/fleshcraft,if=soulbind.pustule_eruption.enabled||soulbind.volatile_solvent.enabled,interrupt_immediate=1,interrupt_global=1,interrupt_if=soulbind.volatile_solvent\n\nactions.finisher=pool_resource,for_next=1\nactions.finisher+=/savage_roar,if=buff.savage_roar.remains<3\nactions.finisher+=/primal_wrath,if=(druid.primal_wrath.ticks_gained_on_refresh>3*(spell_targets.primal_wrath+1)&spell_targets.primal_wrath>1)||spell_targets.primal_wrath>(3+1*talent.sabertooth.enabled)\nactions.finisher+=/rip,cycle_targets=1,if=refreshable&druid.rip.ticks_gained_on_refresh>variable.rip_ticks&((buff.tigers_fury.up||!ticking)&(buff.bloodtalons.up||!talent.bloodtalons.enabled)||!talent.sabertooth.enabled)&(spell_targets.primal_wrath=1||!talent.primal_wrath.enabled)&(active_dot.rip=0||ticking&active_dot.rip=1||!runeforge.draught_of_deep_focus||!talent.sabertooth.enabled)\nactions.finisher+=/savage_roar,if=buff.savage_roar.remains<(combo_points+1)*6*0.3\nactions.finisher+=/ferocious_bite,max_energy=1,cycle_targets=1\nactions.finisher+=/ferocious_bite,cycle_targets=1,if=buff.bs_inc.up&talent.soul_of_the_forest.enabled||cooldown.convoke_the_spirits.remains<1&covenant.night_fae\n\nactions.owlweave=starsurge,if=buff.heart_of_the_wild.up\nactions.owlweave+=/sunfire,line_cd=4*gcd\nactions.owlweave+=/moonfire,line_cd=4*gcd,if=buff.moonkin_form.up&spell_targets.thrash_cat<2&!talent.lunar_inspiration.enabled\nactions.owlweave+=/heart_of_the_wild,if=energy<30&dot.rip.remains>4.5&(cooldown.tigers_fury.remains>=6.5||runeforge.cateye_curio)&buff.clearcasting.stack<1&!buff.apex_predators_craving.up&!buff.bloodlust.up&!buff.bs_inc.up&(cooldown.convoke_the_spirits.remains>6.5||!covenant.night_fae)&(!covenant.necrolord||cooldown.adaptive_swarm.remains>=5||dot.adaptive_swarm_damage.remains>7)\nactions.owlweave+=/moonkin_form,if=energy<30&dot.rip.remains>4.5&(cooldown.tigers_fury.remains>=4.5||runeforge.cateye_curio)&buff.clearcasting.stack<1&!buff.apex_predators_craving.up&!buff.bloodlust.up&(!buff.bs_inc.up||covenant.necrolord&talent.savage_roar.enabled&buff.bs_inc.remains>6)&(cooldown.convoke_the_spirits.remains>6.5||!covenant.night_fae)&(!covenant.necrolord||cooldown.adaptive_swarm.remains>=5||dot.adaptive_swarm_damage.remains>7)&fight_remains>7\n\nactions.setup=lunar_inspiration,if=covenant.necrolord&spell_targets.thrash_cat<4&combo_points<5&!ticking&!buff.bs_inc.up\nactions.setup+=/pool_resource,for_next=1\nactions.setup+=/savage_roar,if=talent.feral_frenzy.enabled&cooldown.feral_frenzy.up&!buff.savage_roar.up&combo_points>1&dot.rake.ticking&(dot.lunar_inspiration.ticking||!talent.lunar_inspiration.enabled)\n## actions.setup+=/pool_resource,if=talent.bloodtalons.enabled&buff.bloodtalons.down&(energy+3.5*energy.regen+(40*buff.clearcasting.up))<(115-23*buff.incarnation_king_of_the_jungle.up)&active_bt_triggers=0\nactions.setup+=/wait,sec=((115-23*buff.incarnation_king_of_the_jungle.up)-(energy.current+3.5*energy.regen+(40*buff.clearcasting.up)))/energy.regen,if=talent.bloodtalons.enabled&buff.bloodtalons.down&active_bt_triggers=0\nactions.setup+=/call_action_list,name=bloodtalons,if=talent.bloodtalons.enabled&buff.bloodtalons.down&(combo_points<5||spell_targets.thrash_cat=1)\nactions.setup+=/call_action_list,name=cooldown\nactions.setup+=/call_action_list,name=finisher,strict=1,if=combo_points>3&(buff.bloodtalons.up||!talent.bloodtalons.enabled)\n\nactions.stealth=pool_resource,for_next=1\n# Rake needs roughly 50% of its length at a minimum to surpass shreds dpe\nactions.stealth+=/rake,cycle_targets=1,if=(dot.rake.pmultiplier<1.5||refreshable)&druid.rake.ticks_gained_on_refresh>2||(persistent_multiplier>dot.rake.pmultiplier&buff.bs_inc.up&spell_targets.thrash_cat<3&covenant.necrolord)||buff.bs_inc.remains<1\nactions.stealth+=/lunar_inspiration,if=spell_targets.thrash_cat<3&refreshable&druid.lunar_inspiration.ticks_gained_on_refresh>5&(combo_points=4||dot.lunar_inspiration.remains<5||!dot.lunar_inspiration.ticking)\n# Brutal Slash is better than stealth Shred at 3 targets\nactions.stealth+=/brutal_slash,if=spell_targets.brutal_slash>2\nactions.stealth+=/pool_resource,for_next=1\nactions.stealth+=/shred,if=combo_points<4&spell_targets.thrash_cat<5\n\nactions.balance=sunfire,if=buff.eclipse_solar.down&buff.eclipse_lunar.down&(refreshable||(active_enemies>1&active_dot.sunfire<active_enemies))\nactions.balance+=/starsurge,if=buff.eclipse_solar.remains>10+cast_time||buff.eclipse_lunar.remains>10+cast_time\nactions.balance+=/starfire,if=buff.eclipse_lunar.remains>cast_time||buff.eclipse_solar.down&solar_eclipse>0||buff.eclipse_solar.down&lunar_eclipse-action.wrath.in_flight<1\nactions.balance+=/wrath,if=buff.eclipse_solar.remains>cast_time||buff.eclipse_lunar.down&lunar_eclipse-action.wrath.in_flight>0",
+					["spec"] = 103,
 				},
 				["Balance"] = {
 					["source"] = "https://balance-simc.github.io/Balance-SimC/md.html?file=balance.txt",
 					["builtIn"] = true,
-					["date"] = 20220227,
+					["date"] = 20220302,
 					["author"] = "SimC",
-					["desc"] = "Balance Druid\nFebruary 27, 2022\n\nChanges:\n- Added Solar Beam.\n- Changed target_if cases to cycle_targets.\n- Removed unnecessary variables (i.e., prev_starsurge -> prev.starsurge).\n- Avoid precasting Wrath if it's the wrong Eclipse.\n- Make Convoke the Spirits a little more flexible (if you hadn't hit it simultaneously with BOAT + Celestial Alignment, it'd skip).\n- Make most 'fight_remains' scenarios apply to boss fights only.\n- Treat Tome of Blah Blah Blah as a special trinket.\n- Opener (i.e., Wrath, Wrath, Starfire) made more resilient to earlier combat-start.\n- Fix Kindred Empowerment check for CD usage.",
+					["desc"] = "Balance Druid\nMarch 2, 2022\n\nChanges:\n- Added Solar Beam.\n- Changed target_if cases to cycle_targets.\n- Removed unnecessary variables (i.e., prev_starsurge -> prev.starsurge).\n- Avoid precasting Wrath if it's the wrong Eclipse.\n- Make Convoke the Spirits a little more flexible (if you hadn't hit it simultaneously with BOAT + Celestial Alignment, it'd skip).\n- Make most 'fight_remains' scenarios apply to boss fights only.\n- Treat Tome of Blah Blah Blah as a special trinket.\n- Opener (i.e., Wrath, Wrath, Starfire) made more resilient to earlier combat-start.\n- Fix Kindred Empowerment check for CD usage.",
 					["lists"] = {
 						["opener"] = {
 							{
 								["enabled"] = true,
-								["description"] = "Precast 2 Wrath and a Starsurge on ST with Night Fae and BoAT or Starfire otherwise",
 								["criteria"] = "( eclipse.lunar_next || eclipse.in_solar || eclipse.in_both || eclipse.any_next ) & prev.1.wrath & ! prev.2.wrath",
 								["action"] = "wrath",
+								["description"] = "Precast 2 Wrath and a Starsurge on ST with Night Fae and BoAT or Starfire otherwise",
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["action"] = "starfire",
 								["criteria"] = "! runeforge.balance_of_all_things.enabled || ! covenant.night_fae || ! spell_targets.starfall = 1 || ! talent.natures_balance.enabled || ( eclipse.solar_next || eclipse.in_lunar || eclipse.in_both || eclipse.any_next )",
+								["action"] = "starfire",
 								["line_cd"] = "5",
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["action"] = "starfire",
 								["criteria"] = "( ! runeforge.balance_of_all_things.enabled || ! covenant.night_fae || ! spell_targets.starfall = 1 || ! talent.natures_balance.enabled ) & ! set_bonus.tier28_2pc || ( eclipse.solar_next || eclipse.in_lunar || eclipse.in_both || eclipse.any_next )",
+								["action"] = "starfire",
 								["line_cd"] = "5",
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["action"] = "starsurge",
 								["criteria"] = "( runeforge.balance_of_all_things.enabled & covenant.night_fae & spell_targets.starfall = 1 ) & ! set_bonus.tier28_2pc",
+								["action"] = "starsurge",
 								["line_cd"] = "5",
 							}, -- [4]
 						},
 						["default"] = {
 							{
 								["action"] = "solar_beam",
+								["enabled"] = true,
 							}, -- [1]
 							{
-								["criteria"] = "time < ( 2 * action.wrath.cast_time + action.starfire.cast_time )",
-								["strict"] = 1,
+								["enabled"] = true,
 								["action"] = "call_action_list",
+								["strict"] = 1,
+								["criteria"] = "time < ( 2 * action.wrath.cast_time + action.starfire.cast_time )",
 								["list_name"] = "opener",
 							}, -- [2]
 							{
-								["value"] = "spell_targets.starfall > 1 & ( ! talent.starlord.enabled || talent.stellar_drift.enabled ) || spell_targets.starfall > 2",
+								["enabled"] = true,
+								["op"] = "set",
 								["action"] = "variable",
-								["description"] = "Sets AoE on 3+ without drift and with Starlord and 2+ otherwise",
+								["value"] = "spell_targets.starfall > 1 & ( ! talent.starlord.enabled || talent.stellar_drift.enabled ) || spell_targets.starfall > 2",
 								["var_name"] = "is_aoe",
+								["description"] = "Sets AoE on 3+ without drift and with Starlord and 2+ otherwise",
 							}, -- [3]
 							{
-								["value"] = "spell_targets.starfire > 1",
+								["enabled"] = true,
+								["op"] = "set",
 								["action"] = "variable",
-								["description"] = "Sets cleave when Starfire can hit 2+ targets which is relevant for the Eclipse to be preferred and which filler to cast",
+								["value"] = "spell_targets.starfire > 1",
 								["var_name"] = "is_cleave",
+								["description"] = "Sets cleave when Starfire can hit 2+ targets which is relevant for the Eclipse to be preferred and which filler to cast",
 							}, -- [4]
 							{
-								["value"] = "prev_gcd.1.moonfire || prev_gcd.1.sunfire || prev_gcd.1.starsurge || prev_gcd.1.starfall || prev_gcd.1.fury_of_elune || prev.ravenous_frenzy || buff.ca_inc.remains = buff.ca_inc.duration || variable.is_aoe",
+								["enabled"] = true,
+								["op"] = "set",
 								["action"] = "variable",
-								["description"] = "Variable that checks if you are in a gcd to avoid the situation where a trinket etc is used in between casts",
+								["value"] = "prev_gcd.1.moonfire || prev_gcd.1.sunfire || prev_gcd.1.starsurge || prev_gcd.1.starfall || prev_gcd.1.fury_of_elune || prev.ravenous_frenzy || buff.ca_inc.remains = buff.ca_inc.duration || variable.is_aoe",
 								["var_name"] = "in_gcd",
+								["description"] = "Variable that checks if you are in a gcd to avoid the situation where a trinket etc is used in between casts",
 							}, -- [5]
 							{
-								["description"] = "Use Berserking at the end of Frenzy when haste is above 60%, after Convoke and otherwise with CA/Inc",
+								["enabled"] = true,
 								["criteria"] = "( ( ! covenant.night_fae || ! cooldown.convoke_the_spirits.up || runeforge.celestial_spirits.enabled ) & buff.ca_inc.remains > 15 & buff.ravenous_frenzy.remains < 4 & ! covenant.venthyr || covenant.venthyr & buff.ca_inc.up & buff.ravenous_frenzy.up & ( buff.ravenous_frenzy.remains <= 12 - 4 * runeforge.sinful_hysteria.enabled || buff.ca_inc.remains < 11 || 1 / spell_haste < 1.6 ) ) & variable.in_gcd",
 								["action"] = "berserking",
+								["description"] = "Use Berserking at the end of Frenzy when haste is above 60%, after Convoke and otherwise with CA/Inc",
 							}, -- [6]
 							{
-								["description"] = "Pot with a CA/Inc that isn't a Pulsar proc or when the fight is about to end",
+								["enabled"] = true,
 								["action"] = "potion",
 								["criteria"] = "( buff.ca_inc.remains > 15 & ( ! runeforge.sinful_hysteria.enabled || buff.ravenous_frenzy.remains < 19 & buff.ravenous_frenzy.up ) || boss & fight_remains < 25 ) & variable.in_gcd",
+								["description"] = "Pot with a CA/Inc that isn't a Pulsar proc or when the fight is about to end",
 							}, -- [7]
 							{
-								["value"] = "ceil ( ( fight_remains - 15 - cooldown.ca_inc.remains ) / 180 ) = ceil ( ( fight_remains - 15 - cooldown.convoke_the_spirits.duration - cooldown.convoke_the_spirits.remains ) / 180 ) & ! raid_event.adds.exists & ( ! cooldown.ca_inc.ready || ! cooldown.convoke.ready ) || cooldown.ca_inc.remains > interpolated_fight_remains || runeforge.celestial_spirits.enabled & cooldown.ca_inc.remains > 30 || cooldown.convoke_the_spirits.remains > interpolated_fight_remains - 10 || ! covenant.night_fae",
+								["enabled"] = true,
+								["op"] = "set",
 								["action"] = "variable",
-								["description"] = "Calculates whether using Convoke now will allow you to still cast the same amount of Convoke+CA/Inc casts",
+								["value"] = "ceil ( ( fight_remains - 15 - cooldown.ca_inc.remains ) / 180 ) = ceil ( ( fight_remains - 15 - cooldown.convoke_the_spirits.duration - cooldown.convoke_the_spirits.remains ) / 180 ) & ! raid_event.adds.exists & ( ! cooldown.ca_inc.ready || ! cooldown.convoke.ready ) || cooldown.ca_inc.remains > interpolated_fight_remains || runeforge.celestial_spirits.enabled & cooldown.ca_inc.remains > 30 || cooldown.convoke_the_spirits.remains > interpolated_fight_remains - 10 || ! covenant.night_fae",
 								["var_name"] = "convoke_desync",
+								["description"] = "Calculates whether using Convoke now will allow you to still cast the same amount of Convoke+CA/Inc casts",
 							}, -- [8]
 							{
-								["value"] = "( target.time_to_die > 15 || raid_event.adds.in > 50 ) & ( ( equipped.empyreal_ordnance & ( ! covenant.venthyr || cooldown.empyreal_ordnance.remains < 167 + ( 5 * runeforge.sinful_hysteria.enabled ) ) & ! cooldown.empyreal_ordnance.ready ) || equipped.soulletting_ruby & ( ! covenant.night_fae || cooldown.soulletting_ruby_345801.remains < 114 ) || ( cooldown.berserking.ready || ! race.troll || covenant.night_fae ) & ( ! talent.fury_of_elune.enabled || covenant.venthyr & cooldown.fury_of_elune.remains < 11 + 5 * runeforge.sinful_hysteria.enabled || ! covenant.venthyr & cooldown.fury_of_elune.remains < buff.ca_inc.duration + 12 * runeforge.primordial_arcanic_pulsar.enabled - 12 ) & ( ( equipped.inscrutable_quantum_device & cooldown.inscrutable_quantum_device.ready ) || ( equipped.shadowed_orb_of_torment & cooldown.tormented_insight_355321.remains ) || ( ( variable.on_use_trinket = 1 || variable.on_use_trinket = 3 ) & ( trinket.t1.ready_cooldown || trinket.t1.cooldown.remains > interpolated_fight_remains - 10 ) || variable.on_use_trinket = 2 & ( trinket.t2.ready_cooldown || trinket.t2.cooldown.remains > interpolated_fight_remains - 10 ) || variable.on_use_trinket = 0 ) ) )",
+								["enabled"] = true,
+								["op"] = "set",
 								["action"] = "variable",
-								["description"] = "Used to delay the usage of CA/Inc when using double on use and prevent usage when an add event is about to die",
+								["value"] = "( target.time_to_die > 15 || raid_event.adds.in > 50 ) & ( ( equipped.empyreal_ordnance & ( ! covenant.venthyr || cooldown.empyreal_ordnance.remains < 167 + ( 5 * runeforge.sinful_hysteria.enabled ) ) & ! cooldown.empyreal_ordnance.ready ) || equipped.soulletting_ruby & ( ! covenant.night_fae || cooldown.soulletting_ruby_345801.remains < 114 ) || ( cooldown.berserking.ready || ! race.troll || covenant.night_fae ) & ( ! talent.fury_of_elune.enabled || covenant.venthyr & cooldown.fury_of_elune.remains < 11 + 5 * runeforge.sinful_hysteria.enabled || ! covenant.venthyr & cooldown.fury_of_elune.remains < buff.ca_inc.duration + 12 * runeforge.primordial_arcanic_pulsar.enabled - 12 ) & ( equipped.inscrutable_quantum_device & cooldown.inscrutable_quantum_device.remains < 5 ) || ( ( equipped.shadowed_orb_of_torment & cooldown.tormented_insight_355321.remains ) || ( ( variable.on_use_trinket = 1 || variable.on_use_trinket = 3 ) & ( trinket.t1.ready_cooldown || trinket.t1.cooldown.remains > interpolated_fight_remains - 10 ) || variable.on_use_trinket = 2 & ( trinket.t2.ready_cooldown || trinket.t2.cooldown.remains > interpolated_fight_remains - 10 ) || variable.on_use_trinket = 0 ) ) )",
 								["var_name"] = "cd_condition",
+								["description"] = "Used to delay the usage of CA/Inc when using double on use and prevent usage when an add event is about to die",
 							}, -- [9]
 							{
-								["value"] = "! soulbind.thrill_seeker.enabled || fight_remains > 200 || boss & fight_remains < 25 + ( 40 - buff.thrill_seeker.stack * 2 ) || buff.thrill_seeker.stack > 38 - ( runeforge.sinful_hysteria.enabled * 2 )",
+								["enabled"] = true,
+								["op"] = "set",
 								["action"] = "variable",
-								["description"] = "Variable used to delay any trinkets and cds when waiting for an Euphoria proc",
+								["value"] = "! soulbind.thrill_seeker.enabled || fight_remains > 200 || boss & fight_remains < 25 + ( 40 - buff.thrill_seeker.stack * 2 ) || buff.thrill_seeker.stack > 38 - ( runeforge.sinful_hysteria.enabled * 2 )",
 								["var_name"] = "thrill_seeker_wait",
+								["description"] = "Variable used to delay any trinkets and cds when waiting for an Euphoria proc",
 							}, -- [10]
 							{
+								["enabled"] = true,
+								["name"] = "empyreal_ordnance",
+								["action"] = "empyreal_ordnance",
 								["criteria"] = "cooldown.ca_inc.remains < 20 & cooldown.convoke_the_spirits.remains < 20 & ( variable.thrill_seeker_wait || buff.thrill_seeker.stack > 30 + ( runeforge.sinful_hysteria.enabled * 3 ) ) & variable.in_gcd || boss & fight_remains < 37",
 								["description"] = "Use Empyreal Ordnance 20secs before a CA/Inc use or so that it will line up with the end of Frenzy",
-								["action"] = "empyreal_ordnance",
-								["name"] = "empyreal_ordnance",
 							}, -- [11]
 							{
+								["enabled"] = true,
+								["name"] = "soulletting_ruby",
+								["action"] = "soulletting_ruby",
 								["criteria"] = "( cooldown.ca_inc.remains < 6 & ! covenant.venthyr & ! covenant.night_fae || covenant.night_fae & cooldown.convoke_the_spirits.remains < 6 & ( variable.convoke_desync || cooldown.ca_inc.remains < 6 ) || covenant.venthyr & ( ! runeforge.sinful_hysteria.enabled & cooldown.ca_inc.remains < 6 || buff.ravenous_frenzy.remains < 10 + ( 5 * equipped.instructors_divine_bell ) & buff.ravenous_frenzy.up ) || boss & fight_remains < 25 || equipped.empyreal_ordnance & cooldown.empyreal_ordnance.remains > 20 ) & variable.in_gcd & ! equipped.inscrutable_quantum_device || cooldown.inscrutable_quantum_device.remains > 20 || boss & fight_remains < 20",
 								["description"] = "Use Soulleting Ruby 6secs before a CA/Inc use or so that it will line up with the end of Frenzy",
-								["action"] = "soulletting_ruby",
-								["name"] = "soulletting_ruby",
 							}, -- [12]
 							{
-								["value"] = "buff.ca_inc.remains > 15 & ( ! runeforge.sinful_hysteria.enabled || buff.ravenous_frenzy.remains <= 15.5 + ( 3.5 * buff.bloodlust.up ) + ( 4.5 - 3.5 * buff.bloodlust.up ) * equipped.instructors_divine_bell & buff.ravenous_frenzy.up ) || boss & fight_remains < 25 || equipped.empyreal_ordnance & cooldown.empyreal_ordnance.remains",
+								["enabled"] = true,
+								["op"] = "set",
 								["action"] = "variable",
-								["description"] = "Always use IQD with CA/Inc or at the end of Frenzy",
+								["value"] = "buff.ca_inc.remains > 15 & ( ! runeforge.sinful_hysteria.enabled || buff.ravenous_frenzy.remains <= 15.5 + ( 3.5 * buff.bloodlust.up ) + ( 4.5 - 3.5 * buff.bloodlust.up ) * equipped.instructors_divine_bell + 4.5 * ( equipped.the_first_sigil & cooldown.the_first_sigil.remains <= 20 ) & buff.ravenous_frenzy.up ) || boss & fight_remains < 25 || equipped.empyreal_ordnance & cooldown.empyreal_ordnance.remains",
 								["var_name"] = "iqd_condition",
+								["description"] = "Always use IQD with CA/Inc or at the end of Frenzy",
 							}, -- [13]
 							{
-								["criteria"] = "variable.iqd_condition & variable.in_gcd",
+								["enabled"] = true,
 								["name"] = "inscrutable_quantum_device",
 								["action"] = "inscrutable_quantum_device",
+								["criteria"] = "variable.iqd_condition & variable.in_gcd",
 							}, -- [14]
 							{
+								["enabled"] = true,
+								["name"] = "shadowed_orb_of_torment",
+								["action"] = "shadowed_orb_of_torment",
 								["criteria"] = "( cooldown.ca_inc.ready & ! covenant.night_fae & variable.thrill_seeker_wait & ( cooldown.berserking.ready || ! race.troll ) || covenant.night_fae & cooldown.convoke_the_spirits.ready & ( variable.convoke_desync || cooldown.ca_inc.ready ) ) & dot.sunfire.ticking & ( dot.stellar_flare.ticking || ! talent.stellar_flare.enabled || spell_targets.starfire > 3 ) & dot.moonfire.ticking & ( variable.is_aoe || runeforge.balance_of_all_things.enabled || astral_power >= 90 || variable.convoke_desync || buff.bloodlust.up ) & ! equipped.inscrutable_quantum_device || equipped.inscrutable_quantum_device & cooldown.inscrutable_quantum_device.remains > 30 & ! buff.ca_inc.up || boss & fight_remains < 40",
 								["description"] = "Use Shadowed Orb before CA/Inc",
-								["action"] = "shadowed_orb_of_torment",
-								["name"] = "shadowed_orb_of_torment",
 							}, -- [15]
 							{
+								["enabled"] = true,
+								["criteria"] = "( variable.on_use_trinket != 1 & ! trinket.t2.ready_cooldown || ( variable.on_use_trinket = 1 || variable.on_use_trinket = 3 ) & ( buff.ca_inc.up & ( ! covenant.venthyr || buff.ravenous_frenzy.remains + ( 3.5 * runeforge.sinful_hysteria.enabled ) <= trinket.t1.buff_duration & buff.ravenous_frenzy.up || buff.ravenous_frenzy_sinful_hysteria.up ) || cooldown.ca_inc.remains + 2 > trinket.t1.cooldown.duration & ! buff.ca_inc.up & ( ! covenant.night_fae || ! variable.convoke_desync ) & ! covenant.kyrian || covenant.night_fae & variable.convoke_desync & cooldown.convoke_the_spirits.up & ! cooldown.ca_inc.up & ( ( buff.eclipse_lunar.remains > 10 || buff.eclipse_solar.remains > 10 ) & ! runeforge.balance_of_all_things.enabled || ( buff.balance_of_all_things_nature.stack = 5 || buff.balance_of_all_things_arcane.stack = 8 ) ) || buff.kindred_empowerment_energize.up ) || boss & fight_remains < 20 || variable.on_use_trinket = 0 ) & variable.in_gcd",
+								["action"] = "trinket1",
 								["slots"] = "trinket1",
 								["description"] = "This is a rather elaborate way to make all on use stat trinkets to be lined up with CA/Inc and Convoke and use the 2nd slot on cd if both trinkets are on use stat trinkets",
-								["action"] = "trinket1",
-								["criteria"] = "( variable.on_use_trinket != 1 & ! trinket.t2.ready_cooldown || ( variable.on_use_trinket = 1 || variable.on_use_trinket = 3 ) & ( buff.ca_inc.up & ( ! covenant.venthyr || buff.ravenous_frenzy.remains + ( 3.5 * runeforge.sinful_hysteria.enabled ) <= trinket.t1.buff_duration & buff.ravenous_frenzy.up || buff.ravenous_frenzy_sinful_hysteria.up ) || cooldown.ca_inc.remains + 2 > trinket.t1.cooldown.duration & ! buff.ca_inc.up & ( ! covenant.night_fae || ! variable.convoke_desync ) & ! covenant.kyrian || covenant.night_fae & variable.convoke_desync & cooldown.convoke_the_spirits.up & ! cooldown.ca_inc.up & ( ( buff.eclipse_lunar.remains > 10 || buff.eclipse_solar.remains > 10 ) & ! runeforge.balance_of_all_things.enabled || ( buff.balance_of_all_things_nature.stack = 5 || buff.balance_of_all_things_arcane.stack = 8 ) ) || buff.kindred_empowerment_energize.up ) || boss & fight_remains < 20 || variable.on_use_trinket = 0 ) & variable.in_gcd",
 							}, -- [16]
 							{
-								["criteria"] = "( variable.on_use_trinket != 2 & ! trinket.t1.ready_cooldown || variable.on_use_trinket = 2 & ( buff.ca_inc.up & ( ! covenant.venthyr || buff.ravenous_frenzy.remains + ( 3.5 * runeforge.sinful_hysteria.enabled ) <= trinket.t2.buff_duration & buff.ravenous_frenzy.up || buff.ravenous_frenzy_sinful_hysteria.up ) || cooldown.ca_inc.remains + 2 > trinket.t2.cooldown.duration & ! buff.ca_inc.up & ( ! covenant.night_fae || ! variable.convoke_desync ) & ! covenant.kyrian & ( ! buff.ca_inc.up || ! covenant.venthyr ) || covenant.night_fae & variable.convoke_desync & cooldown.convoke_the_spirits.up & ! cooldown.ca_inc.up & ( ( buff.eclipse_lunar.remains > 10 || buff.eclipse_solar.remains > 10 ) & ! runeforge.balance_of_all_things.enabled || ( buff.balance_of_all_things_nature.stack = 5 || buff.balance_of_all_things_arcane.stack = 8 ) ) ) || buff.kindred_empowerment_energize.up || boss & fight_remains < 20 || variable.on_use_trinket = 0 ) & variable.in_gcd",
+								["enabled"] = true,
 								["slots"] = "trinket2",
 								["action"] = "trinket2",
+								["criteria"] = "( variable.on_use_trinket != 2 & ! trinket.t1.ready_cooldown || variable.on_use_trinket = 2 & ( buff.ca_inc.up & ( ! covenant.venthyr || buff.ravenous_frenzy.remains + ( 3.5 * runeforge.sinful_hysteria.enabled ) <= trinket.t2.buff_duration & buff.ravenous_frenzy.up || buff.ravenous_frenzy_sinful_hysteria.up ) || cooldown.ca_inc.remains + 2 > trinket.t2.cooldown.duration & ! buff.ca_inc.up & ( ! covenant.night_fae || ! variable.convoke_desync ) & ! covenant.kyrian & ( ! buff.ca_inc.up || ! covenant.venthyr ) || covenant.night_fae & variable.convoke_desync & cooldown.convoke_the_spirits.up & ! cooldown.ca_inc.up & ( ( buff.eclipse_lunar.remains > 10 || buff.eclipse_solar.remains > 10 ) & ! runeforge.balance_of_all_things.enabled || ( buff.balance_of_all_things_nature.stack = 5 || buff.balance_of_all_things_arcane.stack = 8 ) ) ) || buff.kindred_empowerment_energize.up || boss & fight_remains < 20 || variable.on_use_trinket = 0 ) & variable.in_gcd",
 							}, -- [17]
 							{
+								["enabled"] = true,
 								["description"] = "Uses all other on use items on cd",
 								["action"] = "use_items",
 							}, -- [18]
 							{
+								["enabled"] = true,
 								["action"] = "run_action_list",
 								["description"] = "Either go into the st or aoe action list",
 								["strict"] = 1,
@@ -15225,6 +15326,7 @@ HekiliDB = {
 								["list_name"] = "aoe",
 							}, -- [19]
 							{
+								["enabled"] = true,
 								["action"] = "run_action_list",
 								["list_name"] = "st",
 							}, -- [20]
@@ -15232,53 +15334,65 @@ HekiliDB = {
 						["precombat"] = {
 							{
 								["action"] = "kindred_spirits",
+								["enabled"] = true,
 							}, -- [1]
 							{
-								["value"] = "0",
+								["enabled"] = true,
+								["op"] = "set",
 								["action"] = "variable",
-								["description"] = "The variable is set to 0 with no stat on use trinkets, 1 when the first one is on use, 2 if the second is and 3 if both are",
+								["value"] = "0",
 								["var_name"] = "on_use_trinket",
+								["description"] = "The variable is set to 0 with no stat on use trinkets, 1 when the first one is on use, 2 if the second is and 3 if both are",
 							}, -- [2]
 							{
+								["enabled"] = true,
 								["op"] = "add",
 								["action"] = "variable",
 								["value"] = "1",
-								["criteria"] = "trinket.t1.has_use_buff & trinket.t1.cooldown.duration & ! trinket.t1.is.tome_of_monstrous_constructions",
 								["var_name"] = "on_use_trinket",
+								["criteria"] = "trinket.t1.has_use_buff & trinket.t1.cooldown.duration & ! trinket.t1.is.tome_of_monstrous_constructions",
 							}, -- [3]
 							{
+								["enabled"] = true,
 								["op"] = "add",
 								["action"] = "variable",
 								["value"] = "2",
-								["criteria"] = "trinket.t2.has_use_buff & trinket.t2.cooldown.duration & ! trinket.t2.is.tome_of_monstrous_constructions",
 								["var_name"] = "on_use_trinket",
+								["criteria"] = "trinket.t2.has_use_buff & trinket.t2.cooldown.duration & ! trinket.t2.is.tome_of_monstrous_constructions",
 							}, -- [4]
 							{
+								["enabled"] = true,
 								["op"] = "add",
 								["action"] = "variable",
 								["var_name"] = "on_use_trinket",
-								["criteria"] = "equipped.inscrutable_quantum_device || equipped.empyreal_ordnance || equipped.soulletting_ruby",
-								["description"] = "These trinkets are not automatically detected as on use stat trinkets.  Set variable to 4 as they also need special handling.",
 								["value"] = "4",
+								["description"] = "These trinkets are not automatically detected as on use stat trinkets.  Set variable to 4 as they also need special handling.",
+								["criteria"] = "equipped.inscrutable_quantum_device || equipped.empyreal_ordnance || equipped.soulletting_ruby",
 							}, -- [5]
 							{
-								["value"] = "30 * ( 1 - 0.2 * set_bonus.tier28_4pc )",
+								["enabled"] = true,
+								["op"] = "set",
 								["action"] = "variable",
-								["description"] = "Sets the Starsurge cost for later calculations (for example when to start dumping before Frenzy falls off)",
+								["value"] = "30 * ( 1 - 0.2 * set_bonus.tier28_4pc )",
 								["var_name"] = "ss_cost",
+								["description"] = "Sets the Starsurge cost for later calculations (for example when to start dumping before Frenzy falls off)",
 							}, -- [6]
 							{
-								["value"] = "30 + 10 * runeforge.celestial_spirits.enabled",
+								["enabled"] = true,
+								["op"] = "set",
 								["action"] = "variable",
-								["description"] = "Sets at which amount of AsP Convoke should be used: 40 without Celestial Spirits and 30 with.",
+								["value"] = "30 + 10 * runeforge.celestial_spirits.enabled",
 								["var_name"] = "convoke_asp",
+								["description"] = "Sets at which amount of AsP Convoke should be used: 40 without Celestial Spirits and 30 with.",
 							}, -- [7]
 							{
 								["action"] = "moonkin_form",
+								["enabled"] = true,
 							}, -- [8]
 							{
-								["action"] = "wrath",
+								["enabled"] = true,
 								["criteria"] = "( eclipse.lunar_next || eclipse.in_solar || eclipse.in_both || eclipse.any_next )",
+								["action"] = "wrath",
 								["line_cd"] = "10",
 							}, -- [9]
 						},
@@ -15288,87 +15402,87 @@ HekiliDB = {
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "runeforge.timeworn_dreambinder.enabled & ( buff.timeworn_dreambinder.remains < gcd.max + 0.1 || buff.timeworn_dreambinder.remains < action.starfire.execute_time + 0.1 & ( eclipse.in_lunar || eclipse.solar_next || eclipse.any_next ) ) & buff.timeworn_dreambinder.up",
-								["description"] = "Calculates whether the Dreamcatcher buff will fall off within the next cast",
 								["var_name"] = "dream_will_fall_off",
+								["description"] = "Calculates whether the Dreamcatcher buff will fall off within the next cast",
 							}, -- [1]
 							{
 								["enabled"] = true,
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "! eclipse.in_solar & spell_targets.starfire > 7 - talent.soul_of_the_forest.enabled * 2 + eclipse.in_both & ! runeforge.primordial_arcanic_pulsar.enabled & ! runeforge.oneths_clear_vision.enabled",
-								["description"] = "Calculates whether Starsurge is worth casting over Starfire in Lunar Eclipse",
 								["var_name"] = "ignore_starsurge",
+								["description"] = "Calculates whether Starsurge is worth casting over Starfire in Lunar Eclipse",
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["description"] = "Use Convoke when at less than 50 AsP and line up with CA/Inc",
 								["criteria"] = "! druid.no_cds & ( ( variable.convoke_desync & ! cooldown.ca_inc.ready || buff.ca_inc.up ) & ( buff.eclipse_lunar.remains > 5 || buff.eclipse_solar.remains > 5 ) & ( astral_power < 50 & ( spell_targets.starfire > 3 || buff.ca_inc.up ) || ! runeforge.primordial_arcanic_pulsar.enabled ) & ( ! talent.stellar_drift.enabled || buff.starfall.remains < 1.5 - 0.5 * runeforge.celestial_spirits.enabled || buff.ca_inc.remains < buff.starfall.remains + 5 & buff.ca_inc.up ) & ( ! runeforge.balance_of_all_things.enabled || buff.balance_of_all_things_nature.stack > 3 || buff.balance_of_all_things_arcane.stack > 3 ) || boss & fight_remains < 10 & cooldown.ca_inc.remains > 5 )",
 								["action"] = "convoke_the_spirits",
+								["description"] = "Use Convoke when at less than 50 AsP and line up with CA/Inc",
 							}, -- [3]
 							{
 								["enabled"] = true,
 								["action"] = "sunfire",
 								["cycle_targets"] = 1,
-								["criteria"] = "( refreshable || buff.eclipse_solar.remains < 3 & eclipse.in_solar & remains < 14 & talent.soul_of_the_forest.enabled ) & target.time_to_die > 14 - spell_targets + remains & ( eclipse.in_any || remains < gcd.max )",
 								["description"] = "Use Sunfire in pandemic on anything that lives 14secs and less with more targets and at the end of a Solar Eclipse at 14 secs or less remaining as to not having to refresh during Lunar Eclipse",
+								["criteria"] = "( refreshable || buff.eclipse_solar.remains < 3 & eclipse.in_solar & remains < 14 & talent.soul_of_the_forest.enabled ) & target.time_to_die > 14 - spell_targets + remains & ( eclipse.in_any || remains < gcd.max )",
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["description"] = "Use Sunfire to have a global to use IQD",
 								["criteria"] = "variable.iqd_condition & cooldown.inscrutable_quantum_device.ready & equipped.inscrutable_quantum_device & ap_check",
 								["action"] = "sunfire",
+								["description"] = "Use Sunfire to have a global to use IQD",
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["description"] = "Keep up Starfall at all times unless using Lycaras and it is about to proc or let the special action line below handle Dreambinder on 2 targets",
 								["criteria"] = "! talent.stellar_drift.enabled & ( ! set_bonus.tier28_4pc || eclipse.in_any || spell_targets.starfall > 3 ) & ( buff.starfall.refreshable & ( spell_targets.starfall < 3 || ! runeforge.timeworn_dreambinder.enabled ) || talent.soul_of_the_forest.enabled & buff.eclipse_solar.remains < 3 & eclipse.in_solar & buff.starfall.remains < 7 & spell_targets.starfall >= 4 ) & ( ! runeforge.lycaras_fleeting_glimpse.enabled || time % 45 > buff.starfall.remains + 2 ) & target.time_to_die > 5",
 								["action"] = "starfall",
+								["description"] = "Keep up Starfall at all times unless using Lycaras and it is about to proc or let the special action line below handle Dreambinder on 2 targets",
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["description"] = "With Stellar Drift use on cd when refreshable but still wait for Lycaras proc and don't use before CDs. Still use before Convoke since that will proc another Starfall",
 								["criteria"] = "talent.stellar_drift.enabled & buff.starfall.refreshable & ( ! set_bonus.tier28_4pc || eclipse.in_any || spell_targets.starfall > 4 ) & ( ! runeforge.lycaras_fleeting_glimpse.enabled || time % 45 > 4 ) & target.time_to_die > 3",
 								["action"] = "starfall",
+								["description"] = "With Stellar Drift use on cd when refreshable but still wait for Lycaras proc and don't use before CDs. Still use before Convoke since that will proc another Starfall",
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["description"] = "With Dreambinder use Starfall to keep up the buff by also using Starfall on 5 seconds or less remaining",
 								["criteria"] = "runeforge.timeworn_dreambinder.enabled & spell_targets.starfall >= 3 & ( ! buff.timeworn_dreambinder.up & buff.starfall.refreshable || ( variable.dream_will_fall_off & ( buff.starfall.remains < 3 || spell_targets.starfall > 2 & talent.stellar_drift.enabled & buff.starfall.remains < 5 ) ) )",
 								["action"] = "starfall",
+								["description"] = "With Dreambinder use Starfall to keep up the buff by also using Starfall on 5 seconds or less remaining",
 							}, -- [8]
 							{
 								["enabled"] = true,
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "astral_power > 80 * ( 1 - set_bonus.tier28_2pc * 0.2 ) * ( 1 - buff.timeworn_dreambinder.stack * 0.1 ) - ( buff.starfall.remains * 3 / spell_haste * ! talent.stellar_drift.enabled ) - ( cooldown.starfall.remains * 3 / spell_haste * talent.stellar_drift.enabled ) - ( buff.fury_of_elune.remains * 5 ) & ( buff.starfall.up || cooldown.starfall.remains )",
-								["description"] = "Calculates whether a Starsurge use will cause Starfall to fall off, and use Starsurge to keep Dreambinder stack up. 80 is the required AsP to cast Starsurge+Starfall",
 								["var_name"] = "starfall_wont_fall_off",
+								["description"] = "Calculates whether a Starsurge use will cause Starfall to fall off, and use Starsurge to keep Dreambinder stack up. 80 is the required AsP to cast Starsurge+Starfall",
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["description"] = "Use Starsurge with Dreambinder to keep up the buff without losing Starfall uptime and use Starsurge on 4+ BoAT stacks until 4 targets",
 								["criteria"] = "variable.dream_will_fall_off & variable.starfall_wont_fall_off & ! variable.ignore_starsurge || ( buff.balance_of_all_things_nature.stack > 3 || buff.balance_of_all_things_arcane.stack > 3 ) & spell_targets.starfall < 4 & variable.starfall_wont_fall_off",
 								["action"] = "starsurge",
+								["description"] = "Use Starsurge with Dreambinder to keep up the buff without losing Starfall uptime and use Starsurge on 4+ BoAT stacks until 4 targets",
 							}, -- [10]
 							{
 								["enabled"] = true,
 								["action"] = "adaptive_swarm",
 								["cycle_targets"] = 1,
-								["criteria"] = "! ticking & ! action.adaptive_swarm_damage.in_flight || dot.adaptive_swarm_damage.stack < 3 & dot.adaptive_swarm_damage.remains < 3",
 								["description"] = "Use swarm so that you get max uptime by using it as late as possible on less than 3 stacks or just when 3+ stacks expire",
+								["criteria"] = "! ticking & ! action.adaptive_swarm_damage.in_flight || dot.adaptive_swarm_damage.stack < 3 & dot.adaptive_swarm_damage.remains < 3",
 							}, -- [11]
 							{
 								["enabled"] = true,
 								["action"] = "moonfire",
 								["cycle_targets"] = 1,
-								["criteria"] = "refreshable & target.time_to_die > ( ( 14 + ( spell_targets.starfire * 2 * buff.eclipse_lunar.up ) ) + remains ) / ( 1 + talent.twin_moons.enabled ) & ( ap_check || variable.ignore_starsurge || ! eclipse.in_any ) & ( cooldown.ca_inc.ready & eclipse.in_any & ! druid.no_cds & ( variable.convoke_desync || cooldown.convoke_the_spirits.ready || ! covenant.night_fae ) || spell_targets.starfire < ( ( 6 - ( buff.eclipse_lunar.up * 2 ) ) * ( 1 + talent.twin_moons.enabled ) ) & ! eclipse.solar_next & ! cooldown.ca_inc.ready || ( eclipse.in_solar || buff.eclipse_lunar.up & ! talent.soul_of_the_forest.enabled || buff.primordial_arcanic_pulsar.value >= 250 ) & ( spell_targets.starfire < 10 * ( 1 + talent.twin_moons.enabled ) ) & astral_power > 50 - buff.starfall.remains * 6 ) & ( ! covenant.kyrian || ! buff.kindred_empowerment_energize.up || eclipse.in_solar ) & ! buff.ravenous_frenzy_sinful_hysteria.up",
 								["description"] = "Refresh Moonfire if CA/Inc is ready, there are less than 5 targets in Lunar Eclipse with SotF, less than 10 otherwise in any Eclipse or up to 5 targets before a Lunar Eclipse. Don't refresh during Kindred Empowerment unless in Solar Eclipse",
+								["criteria"] = "refreshable & target.time_to_die > ( ( 14 + ( spell_targets.starfire * 2 * buff.eclipse_lunar.up ) ) + remains ) / ( 1 + talent.twin_moons.enabled ) & ( ap_check || variable.ignore_starsurge || ! eclipse.in_any ) & ( cooldown.ca_inc.ready & eclipse.in_any & ! druid.no_cds & ( variable.convoke_desync || cooldown.convoke_the_spirits.ready || ! covenant.night_fae ) || spell_targets.starfire < ( ( 6 - ( buff.eclipse_lunar.up * 2 ) ) * ( 1 + talent.twin_moons.enabled ) ) & ! eclipse.solar_next & ! cooldown.ca_inc.ready || ( eclipse.in_solar || buff.eclipse_lunar.up & ! talent.soul_of_the_forest.enabled || buff.primordial_arcanic_pulsar.value >= 250 ) & ( spell_targets.starfire < 10 * ( 1 + talent.twin_moons.enabled ) ) & astral_power > 50 - buff.starfall.remains * 6 ) & ( ! covenant.kyrian || ! buff.kindred_empowerment_energize.up || eclipse.in_solar ) & ! buff.ravenous_frenzy_sinful_hysteria.up",
 							}, -- [12]
 							{
 								["enabled"] = true,
-								["description"] = "Use FoN on cd without capping",
 								["criteria"] = "ap_check || variable.ignore_starsurge",
 								["action"] = "force_of_nature",
+								["description"] = "Use FoN on cd without capping",
 							}, -- [13]
 							{
 								["enabled"] = true,
@@ -15379,15 +15493,15 @@ HekiliDB = {
 							}, -- [14]
 							{
 								["enabled"] = true,
-								["description"] = "Use Frenzy with CA/Inc",
 								["criteria"] = "buff.ca_inc.remains > 15 || buff.ca_inc.duration + 12 * runeforge.primordial_arcanic_pulsar.enabled < 26 & variable.cd_condition_aoe",
 								["action"] = "ravenous_frenzy",
+								["description"] = "Use Frenzy with CA/Inc",
 							}, -- [15]
 							{
 								["enabled"] = true,
-								["description"] = "Use CA/Inc on cd unless and line it up with Convoke",
 								["criteria"] = "variable.cd_condition_aoe & ( buff.ca_inc.duration + 12 * runeforge.primordial_arcanic_pulsar.enabled >= 26 || ! covenant.venthyr ) || buff.ravenous_frenzy.up & buff.ravenous_frenzy.remains < 9 + conduit.precise_alignment.time_value + ( ! buff.bloodlust.up & ! talent.starlord.enabled )",
 								["action"] = "celestial_alignment",
+								["description"] = "Use CA/Inc on cd unless and line it up with Convoke",
 							}, -- [16]
 							{
 								["enabled"] = true,
@@ -15396,34 +15510,34 @@ HekiliDB = {
 							}, -- [17]
 							{
 								["enabled"] = true,
-								["description"] = "Use Empower Bond on cd with Starfall up and save for Pulsar and CA/Inc",
 								["criteria"] = "( cooldown.ca_inc.remains + buff.ca_inc.duration + runeforge.primordial_arcanic_pulsar.enabled * 12 > cooldown.empower_bond.duration + 10 ) || buff.ca_inc.remains > 8 || druid.no_cds",
 								["action"] = "empower_bond",
+								["description"] = "Use Empower Bond on cd with Starfall up and save for Pulsar and CA/Inc",
 							}, -- [18]
 							{
 								["enabled"] = true,
 								["action"] = "stellar_flare",
 								["cycle_targets"] = 1,
-								["criteria"] = "refreshable & time_to_die > 15 & spell_targets.starfire < 4 & ap_check & ( buff.ca_inc.remains > 10 || ! buff.ca_inc.up )",
 								["description"] = "Refresh flare on up to 3 targets without CA/Inc being about to expire and not overcapping",
+								["criteria"] = "refreshable & time_to_die > 15 & spell_targets.starfire < 4 & ap_check & ( buff.ca_inc.remains > 10 || ! buff.ca_inc.up )",
 							}, -- [19]
 							{
 								["enabled"] = true,
-								["description"] = "Use FoE if inside an Eclipse and line it up with a Pulsar proc and Adaptive Swarm",
 								["criteria"] = "eclipse.in_any & ( ap_check || ! runeforge.primordial_arcanic_pulsar.enabled ) & ( buff.primordial_arcanic_pulsar.value < 250 || buff.ca_inc.remains > 8 ) & ( dot.adaptive_swarm_damage.ticking || ! covenant.necrolord || spell_targets > 2 ) & ( buff.ravenous_frenzy.remains < 9 - ( 4 * runeforge.sinful_hysteria.enabled ) & buff.ravenous_frenzy.up || ! buff.ravenous_frenzy.up ) & ( ! cooldown.ca_inc.up || buff.thrill_seeker.stack < 15 & fight_remains < 200 & fight_remains > 100 || ! soulbind.thrill_seeker.enabled ) & ( soulbind.thrill_seeker.enabled || cooldown.ca_inc.remains > 30 ) & target.time_to_die > 5 || boss & fight_remains < 10",
 								["action"] = "fury_of_elune",
+								["description"] = "Use FoE if inside an Eclipse and line it up with a Pulsar proc and Adaptive Swarm",
 							}, -- [20]
 							{
 								["enabled"] = true,
-								["description"] = "Use a Starfall Oneth proc unless Starfall is already up or you are about to overcap AsP",
 								["criteria"] = "buff.oneths_perception.up & ( buff.starfall.refreshable || astral_power > 90 )",
 								["action"] = "starfall",
+								["description"] = "Use a Starfall Oneth proc unless Starfall is already up or you are about to overcap AsP",
 							}, -- [21]
 							{
 								["enabled"] = true,
-								["description"] = "Dump AsP before Convoke with Starfall and then Starsurge",
 								["criteria"] = "covenant.night_fae & ! talent.stellar_drift.enabled & ( variable.convoke_desync || cooldown.ca_inc.up || buff.ca_inc.up ) & cooldown.convoke_the_spirits.remains < gcd.max * ceil ( astral_power / 50 ) & buff.starfall.remains < 4 & ! druid.no_cds",
 								["action"] = "starfall",
+								["description"] = "Dump AsP before Convoke with Starfall and then Starsurge",
 							}, -- [22]
 							{
 								["enabled"] = true,
@@ -15432,15 +15546,15 @@ HekiliDB = {
 							}, -- [23]
 							{
 								["enabled"] = true,
-								["description"] = "Use Starsurge with an Oneth proc or if you'd overcap AsP with your next cast. Also dump AsP at the end of the Venthyr buff if Starfall wouldn't fall off or you are on 2 targets",
 								["criteria"] = "buff.oneths_clear_vision.up || ( ! starfire.ap_check & ! variable.ignore_starsurge || ( buff.ca_inc.remains < 5 & buff.ca_inc.up || ( ( buff.ca_inc.remains < gcd.max * ceil ( astral_power / variable.ss_cost ) & buff.ca_inc.up || buff.ravenous_frenzy_sinful_hysteria.remains < gcd.max * ceil ( astral_power / variable.ss_cost ) & buff.ravenous_frenzy_sinful_hysteria.up ) & covenant.venthyr ) ) & ( spell_targets.starfall < 3 || variable.starfall_wont_fall_off ) ) & ! variable.ignore_starsurge & ( ! runeforge.timeworn_dreambinder.enabled || spell_targets.starfall < 3 )",
 								["action"] = "starsurge",
+								["description"] = "Use Starsurge with an Oneth proc or if you'd overcap AsP with your next cast. Also dump AsP at the end of the Venthyr buff if Starfall wouldn't fall off or you are on 2 targets",
 							}, -- [24]
 							{
 								["enabled"] = true,
-								["description"] = "Use Moons in Solar Eclipse and save Full Moon for CA/Inc",
 								["criteria"] = "( buff.eclipse_solar.remains > execute_time || ( charges = 2 & recharge_time < 5 ) || charges = 3 ) & ap_check",
 								["action"] = "new_moon",
+								["description"] = "Use Moons in Solar Eclipse and save Full Moon for CA/Inc",
 							}, -- [25]
 							{
 								["enabled"] = true,
@@ -15462,22 +15576,22 @@ HekiliDB = {
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "spell_targets.starfire > 4 + floor ( mastery_value * 100 / 20 ) + floor ( buff.starsurge_empowerment_solar.stack / 4 )",
-								["description"] = "Calculates whether to use Starfire in Solar which is at 5 targets+1 for every 20% mastery or 4 Starsurge Empowerment stacks",
 								["var_name"] = "starfire_in_solar",
+								["description"] = "Calculates whether to use Starfire in Solar which is at 5 targets+1 for every 20% mastery or 4 Starsurge Empowerment stacks",
 							}, -- [29]
 							{
 								["enabled"] = true,
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "1 / spell_haste < 2 - ( 0.2 * ( spell_targets.starfire - 1 ) * ( 1 + talent.soul_of_the_forest.enabled * 1.5 ) ) + 0.15 * buff.ravenous_frenzy.remains",
-								["description"] = "Calculates whether to Wrath during Frenzy",
 								["var_name"] = "wrath_in_frenzy",
+								["description"] = "Calculates whether to Wrath during Frenzy",
 							}, -- [30]
 							{
 								["enabled"] = true,
-								["description"] = "Use Wrath in Solar Eclipse or if no Starfire will fit into CA/Inc anymore",
 								["criteria"] = "( eclipse.lunar_next || eclipse.any_next & variable.is_cleave ) & ( target.time_to_die > 4 || eclipse.lunar_in_2 || boss & fight_remains < 10 ) || buff.eclipse_solar.remains < action.starfire.execute_time & buff.eclipse_solar.up || eclipse.in_solar & ! variable.starfire_in_solar || buff.ca_inc.remains < action.starfire.execute_time & ! variable.is_cleave & buff.ca_inc.remains < execute_time & buff.ca_inc.up || buff.ravenous_frenzy.up & variable.wrath_in_frenzy || ! variable.is_cleave & buff.ca_inc.remains > execute_time",
 								["action"] = "wrath",
+								["description"] = "Use Wrath in Solar Eclipse or if no Starfire will fit into CA/Inc anymore",
 							}, -- [31]
 							{
 								["enabled"] = true,
@@ -15486,24 +15600,24 @@ HekiliDB = {
 							}, -- [32]
 							{
 								["enabled"] = true,
-								["description"] = "Fallthru",
 								["action"] = "run_action_list",
+								["description"] = "Fallthru",
 								["list_name"] = "fallthru",
 							}, -- [33]
 						},
 						["fallthru"] = {
 							{
 								["enabled"] = true,
-								["description"] = "Starsurge for movement unless using BoAT",
 								["criteria"] = "! runeforge.balance_of_all_things.equipped",
 								["action"] = "starsurge",
+								["description"] = "Starsurge for movement unless using BoAT",
 							}, -- [1]
 							{
 								["enabled"] = true,
 								["action"] = "sunfire",
 								["cycle_targets"] = 1,
-								["criteria"] = "dot.moonfire.remains > remains * 22 / 18",
 								["description"] = "Cast the dot with the most time to add until the max duration is hit. Sunfire remains multiplied to match moonfire duration",
+								["criteria"] = "dot.moonfire.remains > remains * 22 / 18",
 							}, -- [2]
 							{
 								["action"] = "moonfire",
@@ -15515,60 +15629,60 @@ HekiliDB = {
 								["enabled"] = true,
 								["action"] = "adaptive_swarm",
 								["cycle_targets"] = 1,
-								["criteria"] = "! dot.adaptive_swarm_damage.ticking & ! action.adaptive_swarm_damage.in_flight & ( ! dot.adaptive_swarm_heal.ticking || dot.adaptive_swarm_heal.remains > 5 ) || dot.adaptive_swarm_damage.stack < 3 & dot.adaptive_swarm_damage.remains < 3 & dot.adaptive_swarm_damage.ticking",
 								["description"] = "Use Adaptive Swarm when there is no active swarm, as late as possible on swarm with 2 or fewer stacks or on a 3+ swarm so that the new swarm arrives just after that swarm expires",
+								["criteria"] = "! dot.adaptive_swarm_damage.ticking & ! action.adaptive_swarm_damage.in_flight & ( ! dot.adaptive_swarm_heal.ticking || dot.adaptive_swarm_heal.remains > 5 ) || dot.adaptive_swarm_damage.stack < 3 & dot.adaptive_swarm_damage.remains < 3 & dot.adaptive_swarm_damage.ticking",
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["description"] = "Uses Convoke if CA/Inc is up or you are desyncing CA/Inc with Convoke and you are below 40/30(Celestial Spirits) AsP in a 10+ sec Eclipse. Also don't let Dreambinder expire, always use in CA/Inc with Pulsar and at the start of a BoAT window.",
 								["criteria"] = "! druid.no_cds & ( ( variable.convoke_desync & ! cooldown.ca_inc.ready & ! runeforge.primordial_arcanic_pulsar.enabled || buff.ca_inc.up ) & ( ( astral_power <= variable.convoke_asp & ( buff.eclipse_lunar.remains > 10 || buff.eclipse_solar.remains > 10 ) || buff.ca_inc.remains > 5 & buff.ca_inc.remains <= 12 ) & ( ! runeforge.timeworn_dreambinder.enabled || ! runeforge.celestial_spirits.enabled || buff.timeworn_dreambinder.remains > execute_time ) || runeforge.balance_of_all_things.enabled ) & ( ! runeforge.balance_of_all_things.enabled || ( buff.balance_of_all_things_nature.stack = 8 || buff.balance_of_all_things_arcane.stack = 8 ) ) || boss & fight_remains < 10 & ! cooldown.ca_inc.ready )",
 								["action"] = "convoke_the_spirits",
+								["description"] = "Uses Convoke if CA/Inc is up or you are desyncing CA/Inc with Convoke and you are below 40/30(Celestial Spirits) AsP in a 10+ sec Eclipse. Also don't let Dreambinder expire, always use in CA/Inc with Pulsar and at the start of a BoAT window.",
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["description"] = "Use Starsurge to keep up the Dreambinder buff if it would expire before finishing the next cast or to dump before Convoke",
 								["criteria"] = "runeforge.timeworn_dreambinder.enabled & ( ! ( ( buff.timeworn_dreambinder.remains > action.wrath.execute_time + 0.1 & ( eclipse.in_both || eclipse.in_solar || eclipse.lunar_next ) || buff.timeworn_dreambinder.remains > action.starfire.execute_time + 0.1 & ( eclipse.in_lunar || eclipse.solar_next || eclipse.any_next ) ) || ! buff.timeworn_dreambinder.up ) || ( buff.ca_inc.up || variable.convoke_desync ) & cooldown.convoke_the_spirits.ready & covenant.night_fae & ( buff.eclipse_lunar.remains > 10 || buff.eclipse_solar.remains > 10 ) ) & ( ! covenant.kyrian || cooldown.empower_bond.remains > 8 )",
 								["action"] = "starsurge",
+								["description"] = "Use Starsurge to keep up the Dreambinder buff if it would expire before finishing the next cast or to dump before Convoke",
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["description"] = "Dump Starsurges with Balance of All Things or to prepare for Convoke with BoAT",
 								["criteria"] = "runeforge.balance_of_all_things.enabled & ( ( buff.balance_of_all_things_nature.stack > 2 || buff.balance_of_all_things_arcane.stack > 2 ) & cooldown.ca_inc.remains > 7 & ! cooldown.convoke_the_spirits.up || ( covenant.night_fae & cooldown.convoke_the_spirits.remains < 10 & eclipse.in_any & astral_power > 20 + 30 * cooldown.ca_inc.ready ) )",
 								["action"] = "starsurge",
+								["description"] = "Dump Starsurges with Balance of All Things or to prepare for Convoke with BoAT",
 							}, -- [4]
 							{
 								["enabled"] = true,
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "( buff.ravenous_frenzy.remains > 5 || ! buff.ravenous_frenzy.up ) & ! buff.ravenous_frenzy_sinful_hysteria.up & ( buff.kindred_empowerment_energize.remains < gcd.max ) & ( buff.eclipse_solar.remains > gcd.max || buff.eclipse_lunar.remains > gcd.max || ( ! buff.eclipse_lunar.up || ! buff.eclipse_solar.up ) & ! talent.solstice.enabled )",
-								["description"] = "Condition for all dots that makes sure they aren't refreshed when Ravenous Frenzy has less than 5 secs remaining or the Empower Bond buff is about to fall off or any Eclipse is about to expire",
 								["var_name"] = "dot_requirements",
+								["description"] = "Condition for all dots that makes sure they aren't refreshed when Ravenous Frenzy has less than 5 secs remaining or the Empower Bond buff is about to fall off or any Eclipse is about to expire",
 							}, -- [5]
 							{
 								["enabled"] = true,
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "( ! buff.eclipse_solar.up & ! buff.eclipse_lunar.up ) & ! talent.solstice.enabled & ! runeforge.timeworn_dreambinder.enabled",
-								["description"] = "Condition that checks if you are outside eclipse to only dot there or ignore this with Solstice",
 								["var_name"] = "dot_outside_eclipse",
+								["description"] = "Condition that checks if you are outside eclipse to only dot there or ignore this with Solstice",
 							}, -- [6]
 							{
 								["enabled"] = true,
 								["action"] = "moonfire",
 								["cycle_targets"] = 1,
-								["criteria"] = "( buff.eclipse_solar.remains > remains || buff.eclipse_lunar.remains > remains || variable.dot_outside_eclipse ) & refreshable & target.time_to_die > 12 & ap_check & variable.dot_requirements",
 								["description"] = "Dot all targets within Pandemic without overcapping+the above conditions",
+								["criteria"] = "( buff.eclipse_solar.remains > remains || buff.eclipse_lunar.remains > remains || variable.dot_outside_eclipse ) & refreshable & target.time_to_die > 12 & ap_check & variable.dot_requirements",
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["action"] = "sunfire",
 								["criteria"] = "( buff.eclipse_solar.remains > remains || buff.eclipse_lunar.remains > remains || variable.dot_outside_eclipse ) & refreshable & target.time_to_die > 12 & ap_check & variable.dot_requirements",
+								["action"] = "sunfire",
 								["cycle_targets"] = 1,
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["action"] = "stellar_flare",
 								["criteria"] = "( buff.eclipse_solar.remains > remains || buff.eclipse_lunar.remains > remains || variable.dot_outside_eclipse ) & refreshable & target.time_to_die > 16 & ap_check & variable.dot_requirements",
+								["action"] = "stellar_flare",
 								["cycle_targets"] = 1,
 							}, -- [9]
 							{
@@ -15576,8 +15690,8 @@ HekiliDB = {
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "covenant.venthyr & ! runeforge.sinful_hysteria.enabled & ! runeforge.circle_of_life_and_death.enabled & cooldown.berserking.ready & cooldown.ravenous_frenzy.ready & ! buff.ca_inc.up & ( astral_power > 87 || buff.bloodlust.up )",
-								["description"] = "Dot right before Frenzy if it would allow you to refresh less during Frenzy (this only happens without Sinful Hysteria)",
 								["var_name"] = "no_hysteria_early_dot",
+								["description"] = "Dot right before Frenzy if it would allow you to refresh less during Frenzy (this only happens without Sinful Hysteria)",
 							}, -- [10]
 							{
 								["enabled"] = true,
@@ -15591,37 +15705,37 @@ HekiliDB = {
 							}, -- [12]
 							{
 								["enabled"] = true,
-								["description"] = "Use FoN on cd without capping",
 								["criteria"] = "ap_check",
 								["action"] = "force_of_nature",
+								["description"] = "Use FoN on cd without capping",
 							}, -- [13]
 							{
 								["enabled"] = true,
-								["description"] = "Use Empower Bond with any long enough lasting Eclipse and try to line it up with Pulsar and CA/Inc",
 								["criteria"] = "( cooldown.ca_inc.remains + buff.ca_inc.duration + runeforge.primordial_arcanic_pulsar.enabled * 12 > cooldown.empower_bond.duration + 10 ) || buff.ca_inc.remains > 8 || druid.no_cds",
 								["action"] = "empower_bond",
+								["description"] = "Use Empower Bond with any long enough lasting Eclipse and try to line it up with Pulsar and CA/Inc",
 							}, -- [14]
 							{
 								["enabled"] = true,
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "astral_power > 90 - ( 2.5 * buff.fury_of_elune.stack - 2 * eclipse.in_lunar )",
-								["description"] = "Sets when AsP should be dumped to not overcap (Depends on Fury of Elune and the Eclipse)",
 								["var_name"] = "asp_dump",
+								["description"] = "Sets when AsP should be dumped to not overcap (Depends on Fury of Elune and the Eclipse)",
 							}, -- [15]
 							{
 								["enabled"] = true,
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "! druid.no_cds & ( variable.cd_condition & ! buff.ca_inc.up & ( ! set_bonus.tier28_2pc || eclipse.in_lunar || eclipse.solar_next ) & ( ( ( variable.asp_dump || covenant.night_fae || ( covenant.kyrian & cooldown.empower_bond.ready ) || runeforge.timeworn_dreambinder.enabled ) & dot.sunfire.remains > 8 & dot.moonfire.remains > 9 & ( dot.stellar_flare.remains > 10 || ! talent.stellar_flare.enabled ) & variable.thrill_seeker_wait & target.time_to_die > buff.ca_inc.duration * 0.7 || buff.bloodlust.up & buff.bloodlust.remains < buff.ca_inc.duration + ( 12 * runeforge.primordial_arcanic_pulsar.enabled ) ) || ( equipped.empyreal_ordnance & cooldown.empyreal_ordnance.remains < 167 + ( 5 * runeforge.sinful_hysteria.enabled ) ) ) & ( ! covenant.night_fae || ( cooldown.convoke_the_spirits.remains < buff.ca_inc.duration / 2 & ! runeforge.balance_of_all_things.enabled || cooldown.convoke_the_spirits.ready & astral_power < 50 ) || boss & fight_remains < cooldown.convoke_the_spirits.remains ) || boss & fight_remains < buff.ca_inc.duration + 12 * runeforge.primordial_arcanic_pulsar.enabled )",
-								["description"] = "Use CA/Inc with Convoke/Kindred Spirits and don't overwrite Pulsar or when Bloodlust would expire before CA/Inc expires. Make sure to enter a Lunar Eclipse when usign T28 2pc and all CDs will become ready soon enough during the buff and dots have been sufficiently refreshed.",
 								["var_name"] = "cd_condition_st",
+								["description"] = "Use CA/Inc with Convoke/Kindred Spirits and don't overwrite Pulsar or when Bloodlust would expire before CA/Inc expires. Make sure to enter a Lunar Eclipse when usign T28 2pc and all CDs will become ready soon enough during the buff and dots have been sufficiently refreshed.",
 							}, -- [16]
 							{
 								["enabled"] = true,
-								["description"] = "Use Frenzy with CA/Inc unless Frenzy would last longer than CA/Inc, then use before",
 								["criteria"] = "buff.ca_inc.remains > 15 || buff.ca_inc.duration < 27 + runeforge.primordial_arcanic_pulsar.enabled * 12 & variable.cd_condition_st",
 								["action"] = "ravenous_frenzy",
+								["description"] = "Use Frenzy with CA/Inc unless Frenzy would last longer than CA/Inc, then use before",
 							}, -- [17]
 							{
 								["enabled"] = true,
@@ -15638,60 +15752,60 @@ HekiliDB = {
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "cooldown.ca_inc.remains > 10 || ! variable.convoke_desync & covenant.night_fae || druid.no_cds",
-								["description"] = "Variable used on abilities that want to be saved for CA/Inc so that they arent wasted just before them",
 								["var_name"] = "save_for_ca_inc",
+								["description"] = "Variable used on abilities that want to be saved for CA/Inc so that they arent wasted just before them",
 							}, -- [20]
 							{
 								["enabled"] = true,
-								["description"] = "Uses FoE if in an Eclipse and tries to line it up with Pulsar, CA/Inc, Empower Bond and Adaptive Swarm",
 								["criteria"] = "eclipse.in_any & ( astral_power < 92 - buff.fury_of_elune.stack * 5 || buff.ravenous_frenzy.up ) & ( buff.primordial_arcanic_pulsar.value < 240 || buff.ca_inc.remains > 8 ) & variable.save_for_ca_inc & ( ! covenant.necrolord || dot.adaptive_swarm_damage.ticking ) & ( ! covenant.venthyr || buff.ravenous_frenzy.remains < 9 - ( 4 * runeforge.sinful_hysteria.enabled ) & buff.ravenous_frenzy.up || ! buff.ravenous_frenzy.up ) & ( ! covenant.kyrian || cooldown.empower_bond.remains > 20 ) & target.time_to_die > 5 || boss & fight_remains < 10",
 								["action"] = "fury_of_elune",
+								["description"] = "Uses FoE if in an Eclipse and tries to line it up with Pulsar, CA/Inc, Empower Bond and Adaptive Swarm",
 							}, -- [21]
 							{
 								["enabled"] = true,
-								["description"] = "Use Oneth Starfall procs if Starfall isn't up",
 								["criteria"] = "buff.oneths_perception.up & buff.starfall.refreshable",
 								["action"] = "starfall",
+								["description"] = "Use Oneth Starfall procs if Starfall isn't up",
 							}, -- [22]
 							{
 								["buff_name"] = "starlord",
 								["criteria"] = "buff.starlord.remains < 5 & ( buff.eclipse_solar.remains > 5 || buff.eclipse_lunar.remains > 5 ) & astral_power > 90",
-								["action"] = "cancel_buff",
-								["enabled"] = true,
 								["description"] = "Cancel Starlord if it has less than 5s remaining, you are at 90+ AsP and the current Eclipse has 5+s remaining",
+								["enabled"] = true,
+								["action"] = "cancel_buff",
 							}, -- [23]
 							{
 								["buff_name"] = "primordial_arcanic_pulsar",
 								["criteria"] = "talent.incarnation.enabled & ! talent.new_moon.enabled & @ ( ( 300 - astral_power + 40 - set_bonus.tier28_2pc * 40 ) / ( 4 / spell_haste ) - cooldown.convoke_the_spirits.remains ) < @ ( ( 300 - astral_power - buff.primordial_arcanic_pulsar.value + 40 - set_bonus.tier28_2pc * 40 ) / ( 4 / spell_haste ) - cooldown.convoke_the_spirits.remains ) & cooldown.ca_inc.remains > 30 & buff.primordial_arcanic_pulsar.value < 210 & buff.primordial_arcanic_pulsar.value > 30 & cooldown.convoke_the_spirits.remains < 40 & fight_remains > cooldown.convoke_the_spirits.remains + 6 & ( runeforge.celestial_spirits.enabled || variable.convoke_desync )",
-								["action"] = "cancel_buff",
-								["enabled"] = true,
 								["description"] = "Cancel the Pulsar buff if the proc wouldn't line up with the next time Convoke comes off cd. This usually only happens during the BL.",
+								["enabled"] = true,
+								["action"] = "cancel_buff",
 							}, -- [24]
 							{
 								["enabled"] = true,
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "covenant.night_fae & runeforge.primordial_arcanic_pulsar.enabled & buff.primordial_arcanic_pulsar.value + astral_power + 3 >= 300 & variable.convoke_desync & cooldown.convoke_the_spirits.remains < astral_power / 30 * gcd.max & ! druid.no_cds & eclipse.in_any & astral_power > variable.convoke_asp & cooldown.ca_inc.remains > 5",
-								["description"] = "Sets when Pulsar should be procced early to be able to use Convoke on cooldown (Essentially becomes true if dumping AsP now will allow you to perfectly enter Pulsar and then use Convoke)",
 								["var_name"] = "proc_pulsar_early",
+								["description"] = "Sets when Pulsar should be procced early to be able to use Convoke on cooldown (Essentially becomes true if dumping AsP now will allow you to perfectly enter Pulsar and then use Convoke)",
 							}, -- [25]
 							{
 								["enabled"] = true,
-								["description"] = "Use Starfall with Stellar Drift or t28 4pc and no Starlord, when no Starfall is up or to proc Pulsar when above 90 AsP(or the early Pulsar proc variable is true) or adpative swarm has 8+secs remaining or is in flight",
-								["criteria"] = "( talent.stellar_drift.enabled || set_bonus.tier28_4pc ) & ! talent.starlord.enabled & buff.starfall.refreshable & ! runeforge.timeworn_dreambinder.enabled & ( buff.primordial_arcanic_pulsar.value >= 250 & ! buff.ca_inc.up & ( variable.asp_dump || buff.kindred_empowerment_energize.up || variable.proc_pulsar_early ) || ( covenant.necrolord & talent.stellar_drift.enabled & ( dot.adaptive_swarm_damage.remains > 8 || action.adaptive_swarm_damage.in_flight ) ) ) & cooldown.ca_inc.remains > 10",
+								["criteria"] = "( talent.stellar_drift.enabled || set_bonus.tier28_4pc ) & ! talent.starlord.enabled & buff.starfall.refreshable & ! runeforge.timeworn_dreambinder.enabled & ( buff.primordial_arcanic_pulsar.value >= 250 & ! buff.ca_inc.up & ( variable.asp_dump || buff.kindred_empowerment_energize.up || variable.proc_pulsar_early ) || ( covenant.necrolord & talent.stellar_drift.enabled & ( dot.adaptive_swarm_damage.remains > 8 || action.adaptive_swarm_damage.in_flight ) ) ) & ( cooldown.ca_inc.remains > 10 || cooldown.convoke_the_spirits.remains > 10 )",
 								["action"] = "starfall",
+								["description"] = "Use Starfall with Stellar Drift or t28 4pc and no Starlord, when no Starfall is up or to proc Pulsar when above 90 AsP(or the early Pulsar proc variable is true) or adpative swarm has 8+secs remaining or is in flight",
 							}, -- [26]
 							{
 								["enabled"] = true,
-								["description"] = "Dumps AsP before Convoke using the Convoke condition to check if Convoke is actually about to be cast",
 								["criteria"] = "variable.proc_pulsar_early",
 								["action"] = "starsurge",
+								["description"] = "Dumps AsP before Convoke using the Convoke condition to check if Convoke is actually about to be cast",
 							}, -- [27]
 							{
 								["enabled"] = true,
-								["description"] = "Use Moons when you are about to/are capping charges and make sure they are in an Eclipse still for HM/FM",
 								["criteria"] = "ap_check & ( charges = 2 & recharge_time < 5 || charges = 3 )",
 								["action"] = "new_moon",
+								["description"] = "Use Moons when you are about to/are capping charges and make sure they are in an Eclipse still for HM/FM",
 							}, -- [28]
 							{
 								["enabled"] = true,
@@ -15705,35 +15819,35 @@ HekiliDB = {
 							}, -- [30]
 							{
 								["enabled"] = true,
-								["description"] = "Use Starsurge Oneth procs and dump AsP when CA/Inc, Empower Bond, the Venthyr buff is about to fall off or you'd cap AsP",
 								["criteria"] = "eclipse.in_any & ( buff.oneths_clear_vision.up || buff.kindred_empowerment_energize.up || buff.ca_inc.up & ( ! covenant.kyrian || cooldown.empower_bond.remains > 5 || buff.ca_inc.remains < gcd.max * floor ( astral_power / variable.ss_cost ) ) & ( ! covenant.venthyr || buff.ravenous_frenzy.remains < gcd.max * ceil ( ( astral_power + 40 * talent.fury_of_elune.enabled ) / variable.ss_cost ) + 3 * talent.new_moon.enabled & ! runeforge.sinful_hysteria.enabled & buff.ravenous_frenzy.up || buff.ravenous_frenzy_sinful_hysteria.up || ( buff.ravenous_frenzy.remains < action.starfire.execute_time & spell_haste < 0.4 || buff.ravenous_frenzy.remains < action.wrath.execute_time || variable.iqd_condition & cooldown.inscrutable_quantum_device.ready & equipped.inscrutable_quantum_device ) & buff.ravenous_frenzy.up || ! buff.ravenous_frenzy.up & ! cooldown.ravenous_frenzy.ready ) || variable.asp_dump || boss & fight_remains < gcd.max * ceil ( astral_power / variable.ss_cost ) )",
 								["action"] = "starsurge",
+								["description"] = "Use Starsurge Oneth procs and dump AsP when CA/Inc, Empower Bond, the Venthyr buff is about to fall off or you'd cap AsP",
 							}, -- [31]
 							{
 								["enabled"] = true,
-								["description"] = "Try to make the best of Starlord by stacking it up quickly in any Eclipse but Pulsar isn't about to be procced",
 								["criteria"] = "talent.starlord.enabled & ! runeforge.timeworn_dreambinder.enabled & ( buff.starlord.up || astral_power > 90 ) & buff.starlord.stack < 3 & ( buff.eclipse_solar.up || buff.eclipse_lunar.up ) & buff.primordial_arcanic_pulsar.value < 270 & ( cooldown.ca_inc.remains > 10 || ! variable.convoke_desync & covenant.night_fae )",
 								["action"] = "starsurge",
+								["description"] = "Try to make the best of Starlord by stacking it up quickly in any Eclipse but Pulsar isn't about to be procced",
 							}, -- [32]
 							{
 								["enabled"] = true,
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "eclipse.in_lunar * 8 / action.starfire.execute_time + ! eclipse.in_lunar * ( 6 + talent.soul_of_the_forest.enabled * 3 ) / action.wrath.execute_time + 0.45 / spell_haste + 0.5 * talent.natures_balance.enabled",
-								["description"] = "Estimates how much AsP are gained per second. Only takes a snapshot for the current situation so wouldn't be accurate for larger timeframes",
 								["var_name"] = "aspPerSec",
+								["description"] = "Estimates how much AsP are gained per second. Only takes a snapshot for the current situation so wouldn't be accurate for larger timeframes",
 							}, -- [33]
 							{
 								["enabled"] = true,
-								["description"] = "Dump Starsurge in an Eclipse as soon as possible as long as you will end up with 80+ when entering the next Eclipse, don't let it proc Pulsar, don't overwrite an Oneth proc and pool before CA/Inc and Empower Bond",
 								["criteria"] = "! runeforge.timeworn_dreambinder.enabled & ( buff.primordial_arcanic_pulsar.value < 270 || buff.primordial_arcanic_pulsar.value < 250 & talent.stellar_drift.enabled ) & ( eclipse.in_solar & astral_power + variable.aspPerSec * buff.eclipse_solar.remains + dot.fury_of_elune.ticks_remain * 2.5 > 80 || eclipse.in_lunar & astral_power + variable.aspPerSec * buff.eclipse_lunar.remains + dot.fury_of_elune.ticks_remain * 2.5 > 90 ) & ! buff.oneths_perception.up & ! talent.starlord.enabled & ( cooldown.ca_inc.remains > 7 || soulbind.thrill_seeker.enabled & buff.thrill_seeker.stack < 33 - ( runeforge.sinful_hysteria.enabled * 2 ) & fight_remains > 100 & fight_remains < 200 || druid.no_cds ) & ( ! covenant.kyrian || cooldown.empower_bond.remains > 2 )",
 								["action"] = "starsurge",
+								["description"] = "Dump Starsurge in an Eclipse as soon as possible as long as you will end up with 80+ when entering the next Eclipse, don't let it proc Pulsar, don't overwrite an Oneth proc and pool before CA/Inc and Empower Bond",
 							}, -- [34]
 							{
 								["enabled"] = true,
-								["description"] = "Use Moons in any Eclipse and save Half+Full Moon for CA/Inc and Kindred Empowerment. Also use NM and FM at the end of Frenzy and don't let Dreambinder fall off",
 								["criteria"] = "ap_check & variable.save_for_ca_inc & ( buff.eclipse_lunar.remains > execute_time || buff.eclipse_solar.remains > execute_time )",
 								["action"] = "new_moon",
+								["description"] = "Use Moons in any Eclipse and save Half+Full Moon for CA/Inc and Kindred Empowerment. Also use NM and FM at the end of Frenzy and don't let Dreambinder fall off",
 							}, -- [35]
 							{
 								["enabled"] = true,
@@ -15752,9 +15866,9 @@ HekiliDB = {
 							}, -- [38]
 							{
 								["enabled"] = true,
-								["description"] = "Use Starfire to proc Solar Eclipse, CA/Inc has less time than a Wrath execute left or only Lunar Eclipse is up. With T28 2pc enter a Solar Eclipse if Pulsar still has less than 210 stacks and CA/Inc and Convoke have more than 17s CD remaining. Use above 250% haste during Frenzy and 222% haste without Frenzy",
 								["criteria"] = "eclipse.in_lunar & ! buff.ravenous_frenzy.up || eclipse.solar_next || ( eclipse.any_next || buff.ca_inc.remains < action.wrath.execute_time & buff.ca_inc.up ) & ( ! set_bonus.tier28_2pc || runeforge.primordial_arcanic_pulsar.enabled & buff.primordial_arcanic_pulsar.value < 210 & cooldown.ca_inc.remains > 17 & ( ! covenant.night_fae || cooldown.convoke_the_spirits.remains > 17 ) & ( ! race.troll || cooldown.berserking.remains > 17 ) ) || eclipse.in_any & ( buff.warrior_of_elune.up || spell_haste < 0.45 & ( ! covenant.venthyr || ! buff.ravenous_frenzy.up ) || covenant.venthyr & spell_haste < 0.4 )",
 								["action"] = "starfire",
+								["description"] = "Use Starfire to proc Solar Eclipse, CA/Inc has less time than a Wrath execute left or only Lunar Eclipse is up. With T28 2pc enter a Solar Eclipse if Pulsar still has less than 210 stacks and CA/Inc and Convoke have more than 17s CD remaining. Use above 250% haste during Frenzy and 222% haste without Frenzy",
 							}, -- [39]
 							{
 								["enabled"] = true,
@@ -15763,15 +15877,15 @@ HekiliDB = {
 							}, -- [40]
 							{
 								["enabled"] = true,
-								["description"] = "Fallthru",
 								["action"] = "run_action_list",
+								["description"] = "Fallthru",
 								["list_name"] = "fallthru",
 							}, -- [41]
 						},
 					},
-					["version"] = 20220227,
+					["version"] = 20220302,
 					["warnings"] = "WARNING:  The import for 'opener' required some automated changes.\nLine 2: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 3: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 4: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\n\nWARNING:  The import for 'default' required some automated changes.\nLine 6: Converted SimC syntax % to Lua division operator (/) (1x).\nLine 6: Converted 'runeforge.X' to 'runeforge.X.enabled' (2x).\nLine 7: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 8: Converted SimC syntax % to Lua division operator (/) (2x).\nLine 8: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 9: Converted 'runeforge.X' to 'runeforge.X.enabled' (3x).\nLine 9: Converted 'trinket.1.X' to 'trinket.t1.X' (2x).\nLine 9: Converted 'trinket.2.X' to 'trinket.t2.X' (2x).\nLine 10: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 11: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 12: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 13: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 15: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 16: Converted 'runeforge.X' to 'runeforge.X.enabled' (2x).\nLine 16: Converted 'trinket.1.X' to 'trinket.t1.X' (2x).\nLine 16: Converted 'trinket.2.X' to 'trinket.t2.X' (1x).\nLine 17: Converted 'runeforge.X' to 'runeforge.X.enabled' (2x).\nLine 17: Converted 'trinket.1.X' to 'trinket.t1.X' (1x).\nLine 17: Converted 'trinket.2.X' to 'trinket.t2.X' (2x).\n\nWARNING:  The import for 'precombat' required some automated changes.\nLine 3: Converted 'trinket.1.X' to 'trinket.t1.X' (3x).\nLine 4: Converted 'trinket.2.X' to 'trinket.t2.X' (3x).\nLine 7: Converted 'runeforge.X' to 'runeforge.X.enabled' at EOL (1x).\n\nWARNING:  The import for 'aoe' required some automated changes.\nLine 1: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 2: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 2: Converted 'runeforge.X' to 'runeforge.X.enabled' at EOL (1x).\nLine 3: Converted 'talent.X' to 'talent.X.enabled' (1x).\nLine 3: Converted 'runeforge.X' to 'runeforge.X.enabled' (3x).\nLine 6: Converted SimC syntax %% to Lua modulus operator (%) (1x).\nLine 6: Converted 'runeforge.X' to 'runeforge.X.enabled' (2x).\nLine 7: Converted SimC syntax %% to Lua modulus operator (%) (1x).\nLine 7: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 8: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 9: Converted SimC syntax % to Lua division operator (/) (2x).\nLine 12: Converted SimC syntax % to Lua division operator (/) (1x).\nLine 14: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 15: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 16: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 18: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 20: Converted 'runeforge.X' to 'runeforge.X.enabled' (2x).\nLine 22: Converted SimC syntax % to Lua division operator (/) (1x).\nLine 24: Converted SimC syntax % to Lua division operator (/) (2x).\nLine 24: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 26: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 27: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 29: Converted SimC syntax % to Lua division operator (/) (2x).\nLine 30: Converted SimC syntax % to Lua division operator (/) (1x).\n\nWARNING:  The import for 'fallthru' required some automated changes.\nLine 2: Converted SimC syntax % to Lua division operator (/) (1x).\n\nWARNING:  The import for 'st' required some automated changes.\nLine 2: Converted 'runeforge.X' to 'runeforge.X.enabled' (5x).\nLine 3: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 4: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 6: Converted 'runeforge.X' to 'runeforge.X.enabled' at EOL (1x).\nLine 10: Converted 'runeforge.X' to 'runeforge.X.enabled' (2x).\nLine 14: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 16: Converted SimC syntax % to Lua division operator (/) (1x).\nLine 16: Converted 'runeforge.X' to 'runeforge.X.enabled' (5x).\nLine 17: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 18: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 21: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 24: Converted SimC syntax % to Lua division operator (/) (4x).\nLine 24: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 25: Converted SimC syntax % to Lua division operator (/) (1x).\nLine 25: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 26: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 31: Converted SimC syntax % to Lua division operator (/) (3x).\nLine 31: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 32: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 33: Converted SimC syntax % to Lua division operator (/) (3x).\nLine 34: Converted 'runeforge.X' to 'runeforge.X.enabled' (2x).\nLine 36: Converted 'runeforge.X' to 'runeforge.X.enabled' (2x).\nLine 37: Converted 'runeforge.X' to 'runeforge.X.enabled' (2x).\nLine 39: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\n\nImported 6 action lists.\n",
-					["profile"] = "## Balance Druid\n## February 27, 2022\n\n## Changes:\n## - Added Solar Beam.\n## - Changed target_if cases to cycle_targets.\n## - Removed unnecessary variables (i.e., prev_starsurge -> prev.starsurge).\n## - Avoid precasting Wrath if it's the wrong Eclipse.\n## - Make Convoke the Spirits a little more flexible (if you hadn't hit it simultaneously with BOAT + Celestial Alignment, it'd skip).\n## - Make most 'fight_remains' scenarios apply to boss fights only.\n## - Treat Tome of Blah Blah Blah as a special trinket.\n## - Opener (i.e., Wrath, Wrath, Starfire) made more resilient to earlier combat-start.\n## - Fix Kindred Empowerment check for CD usage.\n\n## Annotated Balance APL can be found at https://balance-simc.github.io/Balance-SimC/md.html?file=balance.txt\n\nactions.precombat=kindred_spirits\n# The variable is set to 0 with no stat on use trinkets, 1 when the first one is on use, 2 if the second is and 3 if both are\nactions.precombat+=/variable,name=on_use_trinket,value=0\nactions.precombat+=/variable,name=on_use_trinket,op=add,value=1,if=trinket.1.has_use_buff&trinket.1.cooldown.duration&!trinket.1.is.tome_of_monstrous_constructions\nactions.precombat+=/variable,name=on_use_trinket,op=add,value=2,if=trinket.2.has_use_buff&trinket.2.cooldown.duration&!trinket.2.is.tome_of_monstrous_constructions\n# These trinkets are not automatically detected as on use stat trinkets.  Set variable to 4 as they also need special handling.\nactions.precombat+=/variable,name=on_use_trinket,op=add,value=4,if=equipped.inscrutable_quantum_device||equipped.empyreal_ordnance||equipped.soulletting_ruby\n# Sets the Starsurge cost for later calculations (for example when to start dumping before Frenzy falls off)\nactions.precombat+=/variable,name=ss_cost,value=30*(1-0.2*set_bonus.tier28_4pc)\n# Sets at which amount of AsP Convoke should be used: 40 without Celestial Spirits and 30 with.\nactions.precombat+=/variable,name=convoke_asp,value=30+10*runeforge.celestial_spirits\nactions.precombat+=/moonkin_form\nactions.precombat+=/wrath,line_cd=10,if=(eclipse.lunar_next||eclipse.in_solar||eclipse.in_both||eclipse.any_next)\n\n# Precast 2 Wrath and a Starsurge on ST with Night Fae and BoAT or Starfire otherwise\nactions.opener+=/wrath,if=(eclipse.lunar_next||eclipse.in_solar||eclipse.in_both||eclipse.any_next)&prev.1.wrath&!prev.2.wrath\nactions.opener+=/starfire,line_cd=5,if=!runeforge.balance_of_all_things||!covenant.night_fae||!spell_targets.starfall=1||!talent.natures_balance.enabled||(eclipse.solar_next||eclipse.in_lunar||eclipse.in_both||eclipse.any_next)\nactions.opener+=/starfire,line_cd=5,if=(!runeforge.balance_of_all_things||!covenant.night_fae||!spell_targets.starfall=1||!talent.natures_balance.enabled)&!set_bonus.tier28_2pc||(eclipse.solar_next||eclipse.in_lunar||eclipse.in_both||eclipse.any_next)\nactions.opener+=/starsurge,line_cd=5,if=(runeforge.balance_of_all_things&covenant.night_fae&spell_targets.starfall=1)&!set_bonus.tier28_2pc\n\n## Executed every time the actor is available.\nactions=solar_beam\nactions+=/call_action_list,name=opener,strict=1,if=time<(2*action.wrath.cast_time+action.starfire.cast_time)\n# Sets AoE on 3+ without drift and with Starlord and 2+ otherwise\nactions+=/variable,name=is_aoe,value=spell_targets.starfall>1&(!talent.starlord.enabled||talent.stellar_drift.enabled)||spell_targets.starfall>2\n# Sets cleave when Starfire can hit 2+ targets which is relevant for the Eclipse to be preferred and which filler to cast\nactions+=/variable,name=is_cleave,value=spell_targets.starfire>1\n# Variable that checks if you are in a gcd to avoid the situation where a trinket etc is used in between casts\nactions+=/variable,name=in_gcd,value=prev_gcd.1.moonfire||prev_gcd.1.sunfire||prev_gcd.1.starsurge||prev_gcd.1.starfall||prev_gcd.1.fury_of_elune||prev.ravenous_frenzy||buff.ca_inc.remains=buff.ca_inc.duration||variable.is_aoe\n# Use Berserking at the end of Frenzy when haste is above 60%, after Convoke and otherwise with CA/Inc\nactions+=/berserking,if=((!covenant.night_fae||!cooldown.convoke_the_spirits.up||runeforge.celestial_spirits)&buff.ca_inc.remains>15&buff.ravenous_frenzy.remains<4&!covenant.venthyr||covenant.venthyr&buff.ca_inc.up&buff.ravenous_frenzy.up&(buff.ravenous_frenzy.remains<=12-4*runeforge.sinful_hysteria||buff.ca_inc.remains<11||1%spell_haste<1.6))&variable.in_gcd\n# Pot with a CA/Inc that isn't a Pulsar proc or when the fight is about to end\nactions+=/potion,if=(buff.ca_inc.remains>15&(!runeforge.sinful_hysteria||buff.ravenous_frenzy.remains<19&buff.ravenous_frenzy.up)||boss&fight_remains<25)&variable.in_gcd\n# Calculates whether using Convoke now will allow you to still cast the same amount of Convoke+CA/Inc casts\nactions+=/variable,name=convoke_desync,value=ceil((fight_remains-15-cooldown.ca_inc.remains)%180)=ceil((fight_remains-15-cooldown.convoke_the_spirits.duration-cooldown.convoke_the_spirits.remains)%180)&!raid_event.adds.exists&(!cooldown.ca_inc.ready||!cooldown.convoke.ready)||cooldown.ca_inc.remains>interpolated_fight_remains||runeforge.celestial_spirits&cooldown.ca_inc.remains>30||cooldown.convoke_the_spirits.remains>interpolated_fight_remains-10||!covenant.night_fae\n# Used to delay the usage of CA/Inc when using double on use and prevent usage when an add event is about to die\nactions+=/variable,name=cd_condition,value=(target.time_to_die>15||raid_event.adds.in>50)&((equipped.empyreal_ordnance&(!covenant.venthyr||cooldown.empyreal_ordnance.remains<167+(5*runeforge.sinful_hysteria))&!cooldown.empyreal_ordnance.ready)||equipped.soulletting_ruby&(!covenant.night_fae||cooldown.soulletting_ruby_345801.remains<114)||(cooldown.berserking.ready||!race.troll||covenant.night_fae)&(!talent.fury_of_elune.enabled||covenant.venthyr&cooldown.fury_of_elune.remains<11+5*runeforge.sinful_hysteria||!covenant.venthyr&cooldown.fury_of_elune.remains<buff.ca_inc.duration+12*runeforge.primordial_arcanic_pulsar-12)&((equipped.inscrutable_quantum_device&cooldown.inscrutable_quantum_device.ready)||(equipped.shadowed_orb_of_torment&cooldown.tormented_insight_355321.remains)||((variable.on_use_trinket=1||variable.on_use_trinket=3)&(trinket.1.ready_cooldown||trinket.1.cooldown.remains>interpolated_fight_remains-10)||variable.on_use_trinket=2&(trinket.2.ready_cooldown||trinket.2.cooldown.remains>interpolated_fight_remains-10)||variable.on_use_trinket=0)))\n# Variable used to delay any trinkets and cds when waiting for an Euphoria proc\nactions+=/variable,name=thrill_seeker_wait,value=!soulbind.thrill_seeker.enabled||fight_remains>200||boss&fight_remains<25+(40-buff.thrill_seeker.stack*2)||buff.thrill_seeker.stack>38-(runeforge.sinful_hysteria*2)\n# Use Empyreal Ordnance 20secs before a CA/Inc use or so that it will line up with the end of Frenzy\nactions+=/use_item,name=empyreal_ordnance,if=cooldown.ca_inc.remains<20&cooldown.convoke_the_spirits.remains<20&(variable.thrill_seeker_wait||buff.thrill_seeker.stack>30+(runeforge.sinful_hysteria*3))&variable.in_gcd||boss&fight_remains<37\n# Use Soulleting Ruby 6secs before a CA/Inc use or so that it will line up with the end of Frenzy\nactions+=/use_item,name=soulletting_ruby,if=(cooldown.ca_inc.remains<6&!covenant.venthyr&!covenant.night_fae||covenant.night_fae&cooldown.convoke_the_spirits.remains<6&(variable.convoke_desync||cooldown.ca_inc.remains<6)||covenant.venthyr&(!runeforge.sinful_hysteria&cooldown.ca_inc.remains<6||buff.ravenous_frenzy.remains<10+(5*equipped.instructors_divine_bell)&buff.ravenous_frenzy.up)||boss&fight_remains<25||equipped.empyreal_ordnance&cooldown.empyreal_ordnance.remains>20)&variable.in_gcd&!equipped.inscrutable_quantum_device||cooldown.inscrutable_quantum_device.remains>20||boss&fight_remains<20\n# Always use IQD with CA/Inc or at the end of Frenzy\nactions+=/variable,name=iqd_condition,value=buff.ca_inc.remains>15&(!runeforge.sinful_hysteria||buff.ravenous_frenzy.remains<=15.5+(3.5*buff.bloodlust.up)+(4.5-3.5*buff.bloodlust.up)*equipped.instructors_divine_bell&buff.ravenous_frenzy.up)||boss&fight_remains<25||equipped.empyreal_ordnance&cooldown.empyreal_ordnance.remains\nactions+=/use_item,name=inscrutable_quantum_device,if=variable.iqd_condition&variable.in_gcd\n# Use Shadowed Orb before CA/Inc\nactions+=/use_item,name=shadowed_orb_of_torment,if=(cooldown.ca_inc.ready&!covenant.night_fae&variable.thrill_seeker_wait&(cooldown.berserking.ready||!race.troll)||covenant.night_fae&cooldown.convoke_the_spirits.ready&(variable.convoke_desync||cooldown.ca_inc.ready))&dot.sunfire.ticking&(dot.stellar_flare.ticking||!talent.stellar_flare.enabled||spell_targets.starfire>3)&dot.moonfire.ticking&(variable.is_aoe||runeforge.balance_of_all_things||astral_power>=90||variable.convoke_desync||buff.bloodlust.up)&!equipped.inscrutable_quantum_device||equipped.inscrutable_quantum_device&cooldown.inscrutable_quantum_device.remains>30&!buff.ca_inc.up||boss&fight_remains<40\n# This is a rather elaborate way to make all on use stat trinkets to be lined up with CA/Inc and Convoke and use the 2nd slot on cd if both trinkets are on use stat trinkets\nactions+=/use_items,slots=trinket1,if=(variable.on_use_trinket!=1&!trinket.2.ready_cooldown||(variable.on_use_trinket=1||variable.on_use_trinket=3)&(buff.ca_inc.up&(!covenant.venthyr||buff.ravenous_frenzy.remains+(3.5*runeforge.sinful_hysteria)<=trinket.1.buff_duration&buff.ravenous_frenzy.up||buff.ravenous_frenzy_sinful_hysteria.up)||cooldown.ca_inc.remains+2>trinket.1.cooldown.duration&!buff.ca_inc.up&(!covenant.night_fae||!variable.convoke_desync)&!covenant.kyrian||covenant.night_fae&variable.convoke_desync&cooldown.convoke_the_spirits.up&!cooldown.ca_inc.up&((buff.eclipse_lunar.remains>10||buff.eclipse_solar.remains>10)&!runeforge.balance_of_all_things||(buff.balance_of_all_things_nature.stack=5||buff.balance_of_all_things_arcane.stack=8))||buff.kindred_empowerment_energize.up)||boss&fight_remains<20||variable.on_use_trinket=0)&variable.in_gcd\nactions+=/use_items,slots=trinket2,if=(variable.on_use_trinket!=2&!trinket.1.ready_cooldown||variable.on_use_trinket=2&(buff.ca_inc.up&(!covenant.venthyr||buff.ravenous_frenzy.remains+(3.5*runeforge.sinful_hysteria)<=trinket.2.buff_duration&buff.ravenous_frenzy.up||buff.ravenous_frenzy_sinful_hysteria.up)||cooldown.ca_inc.remains+2>trinket.2.cooldown.duration&!buff.ca_inc.up&(!covenant.night_fae||!variable.convoke_desync)&!covenant.kyrian&(!buff.ca_inc.up||!covenant.venthyr)||covenant.night_fae&variable.convoke_desync&cooldown.convoke_the_spirits.up&!cooldown.ca_inc.up&((buff.eclipse_lunar.remains>10||buff.eclipse_solar.remains>10)&!runeforge.balance_of_all_things||(buff.balance_of_all_things_nature.stack=5||buff.balance_of_all_things_arcane.stack=8)))||buff.kindred_empowerment_energize.up||boss&fight_remains<20||variable.on_use_trinket=0)&variable.in_gcd\n# Uses all other on use items on cd\nactions+=/use_items\n# Either go into the st or aoe action list\nactions+=/run_action_list,name=aoe,strict=1,if=variable.is_aoe\nactions+=/run_action_list,name=st\n\n# Calculates whether the Dreamcatcher buff will fall off within the next cast\nactions.aoe=variable,name=dream_will_fall_off,value=runeforge.timeworn_dreambinder&(buff.timeworn_dreambinder.remains<gcd.max+0.1||buff.timeworn_dreambinder.remains<action.starfire.execute_time+0.1&(eclipse.in_lunar||eclipse.solar_next||eclipse.any_next))&buff.timeworn_dreambinder.up\n# Calculates whether Starsurge is worth casting over Starfire in Lunar Eclipse\nactions.aoe+=/variable,name=ignore_starsurge,value=!eclipse.in_solar&spell_targets.starfire>7-talent.soul_of_the_forest.enabled*2+eclipse.in_both&!runeforge.primordial_arcanic_pulsar&!runeforge.oneths_clear_vision\n# Use Convoke when at less than 50 AsP and line up with CA/Inc\nactions.aoe+=/convoke_the_spirits,if=!druid.no_cds&((variable.convoke_desync&!cooldown.ca_inc.ready||buff.ca_inc.up)&(buff.eclipse_lunar.remains>5||buff.eclipse_solar.remains>5)&(astral_power<50&(spell_targets.starfire>3||buff.ca_inc.up)||!runeforge.primordial_arcanic_pulsar)&(!talent.stellar_drift||buff.starfall.remains<1.5-0.5*runeforge.celestial_spirits||buff.ca_inc.remains<buff.starfall.remains+5&buff.ca_inc.up)&(!runeforge.balance_of_all_things||buff.balance_of_all_things_nature.stack>3||buff.balance_of_all_things_arcane.stack>3)||boss&fight_remains<10&cooldown.ca_inc.remains>5)\n# Use Sunfire in pandemic on anything that lives 14secs and less with more targets and at the end of a Solar Eclipse at 14 secs or less remaining as to not having to refresh during Lunar Eclipse\nactions.aoe+=/sunfire,cycle_targets=1,if=(refreshable||buff.eclipse_solar.remains<3&eclipse.in_solar&remains<14&talent.soul_of_the_forest.enabled)&target.time_to_die>14-spell_targets+remains&(eclipse.in_any||remains<gcd.max)\n# Use Sunfire to have a global to use IQD\nactions.aoe+=/sunfire,if=variable.iqd_condition&cooldown.inscrutable_quantum_device.ready&equipped.inscrutable_quantum_device&ap_check\n# Keep up Starfall at all times unless using Lycaras and it is about to proc or let the special action line below handle Dreambinder on 2 targets\nactions.aoe+=/starfall,if=!talent.stellar_drift.enabled&(!set_bonus.tier28_4pc||eclipse.in_any||spell_targets.starfall>3)&(buff.starfall.refreshable&(spell_targets.starfall<3||!runeforge.timeworn_dreambinder)||talent.soul_of_the_forest.enabled&buff.eclipse_solar.remains<3&eclipse.in_solar&buff.starfall.remains<7&spell_targets.starfall>=4)&(!runeforge.lycaras_fleeting_glimpse||time%%45>buff.starfall.remains+2)&target.time_to_die>5\n# With Stellar Drift use on cd when refreshable but still wait for Lycaras proc and don't use before CDs. Still use before Convoke since that will proc another Starfall\nactions.aoe+=/starfall,if=talent.stellar_drift.enabled&buff.starfall.refreshable&(!set_bonus.tier28_4pc||eclipse.in_any||spell_targets.starfall>4)&(!runeforge.lycaras_fleeting_glimpse||time%%45>4)&target.time_to_die>3\n# With Dreambinder use Starfall to keep up the buff by also using Starfall on 5 seconds or less remaining\nactions.aoe+=/starfall,if=runeforge.timeworn_dreambinder&spell_targets.starfall>=3&(!buff.timeworn_dreambinder.up&buff.starfall.refreshable||(variable.dream_will_fall_off&(buff.starfall.remains<3||spell_targets.starfall>2&talent.stellar_drift.enabled&buff.starfall.remains<5)))\n# Calculates whether a Starsurge use will cause Starfall to fall off, and use Starsurge to keep Dreambinder stack up. 80 is the required AsP to cast Starsurge+Starfall\nactions.aoe+=/variable,name=starfall_wont_fall_off,value=astral_power>80*(1-set_bonus.tier28_2pc*0.2)*(1-buff.timeworn_dreambinder.stack*0.1)-(buff.starfall.remains*3%spell_haste*!talent.stellar_drift.enabled)-(cooldown.starfall.remains*3%spell_haste*talent.stellar_drift.enabled)-(buff.fury_of_elune.remains*5)&(buff.starfall.up||cooldown.starfall.remains)\n# Use Starsurge with Dreambinder to keep up the buff without losing Starfall uptime and use Starsurge on 4+ BoAT stacks until 4 targets\nactions.aoe+=/starsurge,if=variable.dream_will_fall_off&variable.starfall_wont_fall_off&!variable.ignore_starsurge||(buff.balance_of_all_things_nature.stack>3||buff.balance_of_all_things_arcane.stack>3)&spell_targets.starfall<4&variable.starfall_wont_fall_off\n# Use swarm so that you get max uptime by using it as late as possible on less than 3 stacks or just when 3+ stacks expire\nactions.aoe+=/adaptive_swarm,cycle_targets=1,if=!ticking&!action.adaptive_swarm_damage.in_flight||dot.adaptive_swarm_damage.stack<3&dot.adaptive_swarm_damage.remains<3\n# Refresh Moonfire if CA/Inc is ready, there are less than 5 targets in Lunar Eclipse with SotF, less than 10 otherwise in any Eclipse or up to 5 targets before a Lunar Eclipse. Don't refresh during Kindred Empowerment unless in Solar Eclipse\nactions.aoe+=/moonfire,cycle_targets=1,if=refreshable&target.time_to_die>((14+(spell_targets.starfire*2*buff.eclipse_lunar.up))+remains)%(1+talent.twin_moons.enabled)&(ap_check||variable.ignore_starsurge||!eclipse.in_any)&(cooldown.ca_inc.ready&eclipse.in_any&!druid.no_cds&(variable.convoke_desync||cooldown.convoke_the_spirits.ready||!covenant.night_fae)||spell_targets.starfire<((6-(buff.eclipse_lunar.up*2))*(1+talent.twin_moons.enabled))&!eclipse.solar_next&!cooldown.ca_inc.ready||(eclipse.in_solar||buff.eclipse_lunar.up&!talent.soul_of_the_forest.enabled||buff.primordial_arcanic_pulsar.value>=250)&(spell_targets.starfire<10*(1+talent.twin_moons.enabled))&astral_power>50-buff.starfall.remains*6)&(!covenant.kyrian||!buff.kindred_empowerment_energize.up||eclipse.in_solar)&!buff.ravenous_frenzy_sinful_hysteria.up\n# Use FoN on cd without capping\nactions.aoe+=/force_of_nature,if=ap_check||variable.ignore_starsurge\nactions.aoe+=/variable,name=cd_condition_aoe,value=!druid.no_cds&(variable.cd_condition&(buff.starfall.up||talent.stellar_drift.enabled||covenant.night_fae)&dot.moonfire.ticking&(!buff.solstice.up&!buff.ca_inc.up&(!talent.fury_of_elune.enabled||buff.ca_inc.duration>cooldown.fury_of_elune.remains+8)&(!set_bonus.tier28_2pc||eclipse.in_lunar||eclipse.solar_next)&variable.thrill_seeker_wait&(!covenant.night_fae||cooldown.convoke_the_spirits.remains<buff.ca_inc.duration*0.5)&target.time_to_die>buff.ca_inc.duration*0.7)||boss&fight_remains<buff.ca_inc.duration+12*runeforge.primordial_arcanic_pulsar)\n# Use Frenzy with CA/Inc\nactions.aoe+=/ravenous_frenzy,if=buff.ca_inc.remains>15||buff.ca_inc.duration+12*runeforge.primordial_arcanic_pulsar<26&variable.cd_condition_aoe\n# Use CA/Inc on cd unless and line it up with Convoke\nactions.aoe+=/celestial_alignment,if=variable.cd_condition_aoe&(buff.ca_inc.duration+12*runeforge.primordial_arcanic_pulsar>=26||!covenant.venthyr)||buff.ravenous_frenzy.up&buff.ravenous_frenzy.remains<9+conduit.precise_alignment.time_value+(!buff.bloodlust.up&!talent.starlord.enabled)\nactions.aoe+=/incarnation,if=variable.cd_condition_aoe\n# Use Empower Bond on cd with Starfall up and save for Pulsar and CA/Inc\nactions.aoe+=/empower_bond,if=(cooldown.ca_inc.remains+buff.ca_inc.duration+runeforge.primordial_arcanic_pulsar*12>cooldown.empower_bond.duration+10)||buff.ca_inc.remains>8||druid.no_cds\n# Refresh flare on up to 3 targets without CA/Inc being about to expire and not overcapping\nactions.aoe+=/stellar_flare,cycle_targets=1,if=refreshable&time_to_die>15&spell_targets.starfire<4&ap_check&(buff.ca_inc.remains>10||!buff.ca_inc.up)\n# Use FoE if inside an Eclipse and line it up with a Pulsar proc and Adaptive Swarm\nactions.aoe+=/fury_of_elune,if=eclipse.in_any&(ap_check||!runeforge.primordial_arcanic_pulsar)&(buff.primordial_arcanic_pulsar.value<250||buff.ca_inc.remains>8)&(dot.adaptive_swarm_damage.ticking||!covenant.necrolord||spell_targets>2)&(buff.ravenous_frenzy.remains<9-(4*runeforge.sinful_hysteria)&buff.ravenous_frenzy.up||!buff.ravenous_frenzy.up)&(!cooldown.ca_inc.up||buff.thrill_seeker.stack<15&fight_remains<200&fight_remains>100||!soulbind.thrill_seeker.enabled)&(soulbind.thrill_seeker.enabled||cooldown.ca_inc.remains>30)&target.time_to_die>5||boss&fight_remains<10\n# Use a Starfall Oneth proc unless Starfall is already up or you are about to overcap AsP\nactions.aoe+=/starfall,if=buff.oneths_perception.up&(buff.starfall.refreshable||astral_power>90)\n# Dump AsP before Convoke with Starfall and then Starsurge\nactions.aoe+=/starfall,if=covenant.night_fae&!talent.stellar_drift.enabled&(variable.convoke_desync||cooldown.ca_inc.up||buff.ca_inc.up)&cooldown.convoke_the_spirits.remains<gcd.max*ceil(astral_power%50)&buff.starfall.remains<4&!druid.no_cds\nactions.aoe+=/starsurge,if=covenant.night_fae&(variable.convoke_desync||cooldown.ca_inc.up||buff.ca_inc.up)&cooldown.convoke_the_spirits.remains<5&variable.starfall_wont_fall_off&eclipse.in_any&!variable.ignore_starsurge&!druid.no_cds\n# Use Starsurge with an Oneth proc or if you'd overcap AsP with your next cast. Also dump AsP at the end of the Venthyr buff if Starfall wouldn't fall off or you are on 2 targets\nactions.aoe+=/starsurge,if=buff.oneths_clear_vision.up||(!starfire.ap_check&!variable.ignore_starsurge||(buff.ca_inc.remains<5&buff.ca_inc.up||((buff.ca_inc.remains<gcd.max*ceil(astral_power%variable.ss_cost)&buff.ca_inc.up||buff.ravenous_frenzy_sinful_hysteria.remains<gcd.max*ceil(astral_power%variable.ss_cost)&buff.ravenous_frenzy_sinful_hysteria.up)&covenant.venthyr))&(spell_targets.starfall<3||variable.starfall_wont_fall_off))&!variable.ignore_starsurge&(!runeforge.timeworn_dreambinder||spell_targets.starfall<3)\n# Use Moons in Solar Eclipse and save Full Moon for CA/Inc\nactions.aoe+=/new_moon,if=(buff.eclipse_solar.remains>execute_time||(charges=2&recharge_time<5)||charges=3)&ap_check\nactions.aoe+=/half_moon,if=(buff.eclipse_solar.remains>execute_time||(charges=2&recharge_time<5)||charges=3)&ap_check&(buff.ravenous_frenzy.remains<5&buff.ravenous_frenzy.up&!runeforge.sinful_hysteria||!buff.ravenous_frenzy.up)\nactions.aoe+=/full_moon,if=(buff.eclipse_solar.remains>execute_time&(cooldown.ca_inc.remains>50||cooldown.convoke_the_spirits.remains>50)||(charges=2&recharge_time<5)||charges=3)&ap_check&(buff.ravenous_frenzy.remains<5&buff.ravenous_frenzy.up&!runeforge.sinful_hysteria||!buff.ravenous_frenzy.up)\n# Use WoE on CD\nactions.aoe+=/warrior_of_elune\n# Calculates whether to use Starfire in Solar which is at 5 targets+1 for every 20% mastery or 4 Starsurge Empowerment stacks\nactions.aoe+=/variable,name=starfire_in_solar,value=spell_targets.starfire>4+floor(mastery_value*100%20)+floor(buff.starsurge_empowerment_solar.stack%4)\n# Calculates whether to Wrath during Frenzy\nactions.aoe+=/variable,name=wrath_in_frenzy,value=1%spell_haste<2-(0.2*(spell_targets.starfire-1)*(1+talent.soul_of_the_forest.enabled*1.5))+0.15*buff.ravenous_frenzy.remains\n# Use Wrath in Solar Eclipse or if no Starfire will fit into CA/Inc anymore\nactions.aoe+=/wrath,if=(eclipse.lunar_next||eclipse.any_next&variable.is_cleave)&(target.time_to_die>4||eclipse.lunar_in_2||boss&fight_remains<10)||buff.eclipse_solar.remains<action.starfire.execute_time&buff.eclipse_solar.up||eclipse.in_solar&!variable.starfire_in_solar||buff.ca_inc.remains<action.starfire.execute_time&!variable.is_cleave&buff.ca_inc.remains<execute_time&buff.ca_inc.up||buff.ravenous_frenzy.up&variable.wrath_in_frenzy||!variable.is_cleave&buff.ca_inc.remains>execute_time\n# Use Starfire if in Lunar Eclipse, in Solar Eclipse on 4+ targets or to proc Solar Eclipse\nactions.aoe+=/starfire\n# Fallthru\nactions.aoe+=/run_action_list,name=fallthru\n\n# Starsurge for movement unless using BoAT\nactions.fallthru=starsurge,if=!runeforge.balance_of_all_things.equipped\n# Cast the dot with the most time to add until the max duration is hit. Sunfire remains multiplied to match moonfire duration\nactions.fallthru+=/sunfire,cycle_targets=1,if=dot.moonfire.remains>remains*22%18\nactions.fallthru+=/moonfire\n\n# Use Adaptive Swarm when there is no active swarm, as late as possible on swarm with 2 or fewer stacks or on a 3+ swarm so that the new swarm arrives just after that swarm expires\nactions.st=adaptive_swarm,cycle_targets=1,if=!dot.adaptive_swarm_damage.ticking&!action.adaptive_swarm_damage.in_flight&(!dot.adaptive_swarm_heal.ticking||dot.adaptive_swarm_heal.remains>5)||dot.adaptive_swarm_damage.stack<3&dot.adaptive_swarm_damage.remains<3&dot.adaptive_swarm_damage.ticking\n# Uses Convoke if CA/Inc is up or you are desyncing CA/Inc with Convoke and you are below 40/30(Celestial Spirits) AsP in a 10+ sec Eclipse. Also don't let Dreambinder expire, always use in CA/Inc with Pulsar and at the start of a BoAT window.\nactions.st+=/convoke_the_spirits,if=!druid.no_cds&((variable.convoke_desync&!cooldown.ca_inc.ready&!runeforge.primordial_arcanic_pulsar||buff.ca_inc.up)&((astral_power<=variable.convoke_asp&(buff.eclipse_lunar.remains>10||buff.eclipse_solar.remains>10)||buff.ca_inc.remains>5&buff.ca_inc.remains<=12)&(!runeforge.timeworn_dreambinder||!runeforge.celestial_spirits||buff.timeworn_dreambinder.remains>execute_time)||runeforge.balance_of_all_things)&(!runeforge.balance_of_all_things||(buff.balance_of_all_things_nature.stack=8||buff.balance_of_all_things_arcane.stack=8))||boss&fight_remains<10&!cooldown.ca_inc.ready)\n# Use Starsurge to keep up the Dreambinder buff if it would expire before finishing the next cast or to dump before Convoke\nactions.st+=/starsurge,if=runeforge.timeworn_dreambinder&(!((buff.timeworn_dreambinder.remains>action.wrath.execute_time+0.1&(eclipse.in_both||eclipse.in_solar||eclipse.lunar_next)||buff.timeworn_dreambinder.remains>action.starfire.execute_time+0.1&(eclipse.in_lunar||eclipse.solar_next||eclipse.any_next))||!buff.timeworn_dreambinder.up)||(buff.ca_inc.up||variable.convoke_desync)&cooldown.convoke_the_spirits.ready&covenant.night_fae&(buff.eclipse_lunar.remains>10||buff.eclipse_solar.remains>10))&(!covenant.kyrian||cooldown.empower_bond.remains>8)\n# Dump Starsurges with Balance of All Things or to prepare for Convoke with BoAT\nactions.st+=/starsurge,if=runeforge.balance_of_all_things&((buff.balance_of_all_things_nature.stack>2||buff.balance_of_all_things_arcane.stack>2)&cooldown.ca_inc.remains>7&!cooldown.convoke_the_spirits.up||(covenant.night_fae&cooldown.convoke_the_spirits.remains<10&eclipse.in_any&astral_power>20+30*cooldown.ca_inc.ready))\n# Condition for all dots that makes sure they aren't refreshed when Ravenous Frenzy has less than 5 secs remaining or the Empower Bond buff is about to fall off or any Eclipse is about to expire\nactions.st+=/variable,name=dot_requirements,value=(buff.ravenous_frenzy.remains>5||!buff.ravenous_frenzy.up)&!buff.ravenous_frenzy_sinful_hysteria.up&(buff.kindred_empowerment_energize.remains<gcd.max)&(buff.eclipse_solar.remains>gcd.max||buff.eclipse_lunar.remains>gcd.max||(!buff.eclipse_lunar.up||!buff.eclipse_solar.up)&!talent.solstice.enabled)\n# Condition that checks if you are outside eclipse to only dot there or ignore this with Solstice\nactions.st+=/variable,name=dot_outside_eclipse,value=(!buff.eclipse_solar.up&!buff.eclipse_lunar.up)&!talent.solstice.enabled&!runeforge.timeworn_dreambinder\n# Dot all targets within Pandemic without overcapping+the above conditions\nactions.st+=/moonfire,cycle_targets=1,if=(buff.eclipse_solar.remains>remains||buff.eclipse_lunar.remains>remains||variable.dot_outside_eclipse)&refreshable&target.time_to_die>12&ap_check&variable.dot_requirements\nactions.st+=/sunfire,cycle_targets=1,if=(buff.eclipse_solar.remains>remains||buff.eclipse_lunar.remains>remains||variable.dot_outside_eclipse)&refreshable&target.time_to_die>12&ap_check&variable.dot_requirements\nactions.st+=/stellar_flare,cycle_targets=1,if=(buff.eclipse_solar.remains>remains||buff.eclipse_lunar.remains>remains||variable.dot_outside_eclipse)&refreshable&target.time_to_die>16&ap_check&variable.dot_requirements\n# Dot right before Frenzy if it would allow you to refresh less during Frenzy (this only happens without Sinful Hysteria)\nactions.st+=/variable,name=no_hysteria_early_dot,value=covenant.venthyr&!runeforge.sinful_hysteria&!runeforge.circle_of_life_and_death&cooldown.berserking.ready&cooldown.ravenous_frenzy.ready&!buff.ca_inc.up&(astral_power>87||buff.bloodlust.up)\nactions.st+=/moonfire,if=variable.no_hysteria_early_dot&remains<20\nactions.st+=/sunfire,if=variable.no_hysteria_early_dot&remains<19\n# Use FoN on cd without capping\nactions.st+=/force_of_nature,if=ap_check\n# Use Empower Bond with any long enough lasting Eclipse and try to line it up with Pulsar and CA/Inc\nactions.st+=/empower_bond,if=(cooldown.ca_inc.remains+buff.ca_inc.duration+runeforge.primordial_arcanic_pulsar*12>cooldown.empower_bond.duration+10)||buff.ca_inc.remains>8||druid.no_cds\n# Sets when AsP should be dumped to not overcap (Depends on Fury of Elune and the Eclipse)\nactions.st+=/variable,name=asp_dump,value=astral_power>90-(2.5*buff.fury_of_elune.stack-2*eclipse.in_lunar)\n# Use CA/Inc with Convoke/Kindred Spirits and don't overwrite Pulsar or when Bloodlust would expire before CA/Inc expires. Make sure to enter a Lunar Eclipse when usign T28 2pc and all CDs will become ready soon enough during the buff and dots have been sufficiently refreshed.\nactions.st+=/variable,name=cd_condition_st,value=!druid.no_cds&(variable.cd_condition&!buff.ca_inc.up&(!set_bonus.tier28_2pc||eclipse.in_lunar||eclipse.solar_next)&(((variable.asp_dump||covenant.night_fae||(covenant.kyrian&cooldown.empower_bond.ready)||runeforge.timeworn_dreambinder)&dot.sunfire.remains>8&dot.moonfire.remains>9&(dot.stellar_flare.remains>10||!talent.stellar_flare.enabled)&variable.thrill_seeker_wait&target.time_to_die>buff.ca_inc.duration*0.7||buff.bloodlust.up&buff.bloodlust.remains<buff.ca_inc.duration+(12*runeforge.primordial_arcanic_pulsar))||(equipped.empyreal_ordnance&cooldown.empyreal_ordnance.remains<167+(5*runeforge.sinful_hysteria)))&(!covenant.night_fae||(cooldown.convoke_the_spirits.remains<buff.ca_inc.duration%2&!runeforge.balance_of_all_things||cooldown.convoke_the_spirits.ready&astral_power<50)||boss&fight_remains<cooldown.convoke_the_spirits.remains)||boss&fight_remains<buff.ca_inc.duration+12*runeforge.primordial_arcanic_pulsar)\n# Use Frenzy with CA/Inc unless Frenzy would last longer than CA/Inc, then use before\nactions.st+=/ravenous_frenzy,if=buff.ca_inc.remains>15||buff.ca_inc.duration<27+runeforge.primordial_arcanic_pulsar*12&variable.cd_condition_st\nactions.st+=/celestial_alignment,if=variable.cd_condition_st&(buff.ca_inc.duration>=27+runeforge.primordial_arcanic_pulsar*12||!covenant.venthyr)||buff.ravenous_frenzy.up&buff.ravenous_frenzy.remains<9+conduit.precise_alignment.time_value+(!buff.bloodlust.up&!talent.starlord.enabled)\nactions.st+=/incarnation,if=variable.cd_condition_st\n# Variable used on abilities that want to be saved for CA/Inc so that they arent wasted just before them\nactions.st+=/variable,name=save_for_ca_inc,value=cooldown.ca_inc.remains>10||!variable.convoke_desync&covenant.night_fae||druid.no_cds\n# Uses FoE if in an Eclipse and tries to line it up with Pulsar, CA/Inc, Empower Bond and Adaptive Swarm\nactions.st+=/fury_of_elune,if=eclipse.in_any&(astral_power<92-buff.fury_of_elune.stack*5||buff.ravenous_frenzy.up)&(buff.primordial_arcanic_pulsar.value<240||buff.ca_inc.remains>8)&variable.save_for_ca_inc&(!covenant.necrolord||dot.adaptive_swarm_damage.ticking)&(!covenant.venthyr||buff.ravenous_frenzy.remains<9-(4*runeforge.sinful_hysteria)&buff.ravenous_frenzy.up||!buff.ravenous_frenzy.up)&(!covenant.kyrian||cooldown.empower_bond.remains>20)&target.time_to_die>5||boss&fight_remains<10\n# Use Oneth Starfall procs if Starfall isn't up\nactions.st+=/starfall,if=buff.oneths_perception.up&buff.starfall.refreshable\n# Cancel Starlord if it has less than 5s remaining, you are at 90+ AsP and the current Eclipse has 5+s remaining\nactions.st+=/cancel_buff,name=starlord,if=buff.starlord.remains<5&(buff.eclipse_solar.remains>5||buff.eclipse_lunar.remains>5)&astral_power>90\n# Cancel the Pulsar buff if the proc wouldn't line up with the next time Convoke comes off cd. This usually only happens during the BL.\nactions.st+=/cancel_buff,name=primordial_arcanic_pulsar,if=talent.incarnation.enabled&!talent.new_moon.enabled&@((300-astral_power+40-set_bonus.tier28_2pc*40)%(4%spell_haste)-cooldown.convoke_the_spirits.remains)<@((300-astral_power-buff.primordial_arcanic_pulsar.value+40-set_bonus.tier28_2pc*40)%(4%spell_haste)-cooldown.convoke_the_spirits.remains)&cooldown.ca_inc.remains>30&buff.primordial_arcanic_pulsar.value<210&buff.primordial_arcanic_pulsar.value>30&cooldown.convoke_the_spirits.remains<40&fight_remains>cooldown.convoke_the_spirits.remains+6&(runeforge.celestial_spirits||variable.convoke_desync)\n# Sets when Pulsar should be procced early to be able to use Convoke on cooldown (Essentially becomes true if dumping AsP now will allow you to perfectly enter Pulsar and then use Convoke)\nactions.st+=/variable,name=proc_pulsar_early,value=covenant.night_fae&runeforge.primordial_arcanic_pulsar&buff.primordial_arcanic_pulsar.value+astral_power+3>=300&variable.convoke_desync&cooldown.convoke_the_spirits.remains<astral_power%30*gcd.max&!druid.no_cds&eclipse.in_any&astral_power>variable.convoke_asp&cooldown.ca_inc.remains>5\n# Use Starfall with Stellar Drift or t28 4pc and no Starlord, when no Starfall is up or to proc Pulsar when above 90 AsP(or the early Pulsar proc variable is true) or adpative swarm has 8+secs remaining or is in flight\nactions.st+=/starfall,if=(talent.stellar_drift.enabled||set_bonus.tier28_4pc)&!talent.starlord.enabled&buff.starfall.refreshable&!runeforge.timeworn_dreambinder&(buff.primordial_arcanic_pulsar.value>=250&!buff.ca_inc.up&(variable.asp_dump||buff.kindred_empowerment_energize.up||variable.proc_pulsar_early)||(covenant.necrolord&talent.stellar_drift.enabled&(dot.adaptive_swarm_damage.remains>8||action.adaptive_swarm_damage.in_flight)))&cooldown.ca_inc.remains>10\n# Dumps AsP before Convoke using the Convoke condition to check if Convoke is actually about to be cast\nactions.st+=/starsurge,if=variable.proc_pulsar_early\n# Use Moons when you are about to/are capping charges and make sure they are in an Eclipse still for HM/FM\nactions.st+=/new_moon,if=ap_check&(charges=2&recharge_time<5||charges=3)\nactions.st+=/half_moon,if=ap_check&(charges=2&recharge_time<5||charges=3)&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)\nactions.st+=/full_moon,if=ap_check&(charges=2&recharge_time<5||charges=3)&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)\n# Use Starsurge Oneth procs and dump AsP when CA/Inc, Empower Bond, the Venthyr buff is about to fall off or you'd cap AsP\nactions.st+=/starsurge,if=eclipse.in_any&(buff.oneths_clear_vision.up||buff.kindred_empowerment_energize.up||buff.ca_inc.up&(!covenant.kyrian||cooldown.empower_bond.remains>5||buff.ca_inc.remains<gcd.max*floor(astral_power%variable.ss_cost))&(!covenant.venthyr||buff.ravenous_frenzy.remains<gcd.max*ceil((astral_power+40*talent.fury_of_elune.enabled)%variable.ss_cost)+3*talent.new_moon.enabled&!runeforge.sinful_hysteria&buff.ravenous_frenzy.up||buff.ravenous_frenzy_sinful_hysteria.up||(buff.ravenous_frenzy.remains<action.starfire.execute_time&spell_haste<0.4||buff.ravenous_frenzy.remains<action.wrath.execute_time||variable.iqd_condition&cooldown.inscrutable_quantum_device.ready&equipped.inscrutable_quantum_device)&buff.ravenous_frenzy.up||!buff.ravenous_frenzy.up&!cooldown.ravenous_frenzy.ready)||variable.asp_dump||boss&fight_remains<gcd.max*ceil(astral_power%variable.ss_cost))\n# Try to make the best of Starlord by stacking it up quickly in any Eclipse but Pulsar isn't about to be procced\nactions.st+=/starsurge,if=talent.starlord.enabled&!runeforge.timeworn_dreambinder&(buff.starlord.up||astral_power>90)&buff.starlord.stack<3&(buff.eclipse_solar.up||buff.eclipse_lunar.up)&buff.primordial_arcanic_pulsar.value<270&(cooldown.ca_inc.remains>10||!variable.convoke_desync&covenant.night_fae)\n# Estimates how much AsP are gained per second. Only takes a snapshot for the current situation so wouldn't be accurate for larger timeframes\nactions.st+=/variable,name=aspPerSec,value=eclipse.in_lunar*8%action.starfire.execute_time+!eclipse.in_lunar*(6+talent.soul_of_the_forest.enabled*3)%action.wrath.execute_time+0.45%spell_haste+0.5*talent.natures_balance.enabled\n# Dump Starsurge in an Eclipse as soon as possible as long as you will end up with 80+ when entering the next Eclipse, don't let it proc Pulsar, don't overwrite an Oneth proc and pool before CA/Inc and Empower Bond\nactions.st+=/starsurge,if=!runeforge.timeworn_dreambinder&(buff.primordial_arcanic_pulsar.value<270||buff.primordial_arcanic_pulsar.value<250&talent.stellar_drift.enabled)&(eclipse.in_solar&astral_power+variable.aspPerSec*buff.eclipse_solar.remains+dot.fury_of_elune.ticks_remain*2.5>80||eclipse.in_lunar&astral_power+variable.aspPerSec*buff.eclipse_lunar.remains+dot.fury_of_elune.ticks_remain*2.5>90)&!buff.oneths_perception.up&!talent.starlord.enabled&(cooldown.ca_inc.remains>7||soulbind.thrill_seeker.enabled&buff.thrill_seeker.stack<33-(runeforge.sinful_hysteria*2)&fight_remains>100&fight_remains<200||druid.no_cds)&(!covenant.kyrian||cooldown.empower_bond.remains>2)\n# Use Moons in any Eclipse and save Half+Full Moon for CA/Inc and Kindred Empowerment. Also use NM and FM at the end of Frenzy and don't let Dreambinder fall off\nactions.st+=/new_moon,if=ap_check&variable.save_for_ca_inc&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)\nactions.st+=/half_moon,if=ap_check&variable.save_for_ca_inc&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)&(buff.ca_inc.up||buff.primordial_arcanic_pulsar.value<=210)&(!covenant.venthyr||buff.ravenous_frenzy.remains<(5-2*runeforge.sinful_hysteria)&buff.ravenous_frenzy.up||!buff.ravenous_frenzy.up)&(!runeforge.timeworn_dreambinder||execute_time<buff.timeworn_dreambinder.remains||!buff.timeworn_dreambinder.up)\nactions.st+=/full_moon,if=ap_check&variable.save_for_ca_inc&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)&(buff.ca_inc.up||buff.primordial_arcanic_pulsar.value<=210)&(!covenant.kyrian||buff.kindred_empowerment_energize.up)&(!covenant.venthyr||buff.ravenous_frenzy.remains<5&buff.ravenous_frenzy.up&!runeforge.sinful_hysteria||!buff.ravenous_frenzy.up)&(!runeforge.timeworn_dreambinder||execute_time<buff.timeworn_dreambinder.remains||!buff.timeworn_dreambinder.up)\n# Use WoE on cd\nactions.st+=/warrior_of_elune\n# Use Starfire to proc Solar Eclipse, CA/Inc has less time than a Wrath execute left or only Lunar Eclipse is up. With T28 2pc enter a Solar Eclipse if Pulsar still has less than 210 stacks and CA/Inc and Convoke have more than 17s CD remaining. Use above 250% haste during Frenzy and 222% haste without Frenzy\nactions.st+=/starfire,if=eclipse.in_lunar&!buff.ravenous_frenzy.up||eclipse.solar_next||(eclipse.any_next||buff.ca_inc.remains<action.wrath.execute_time&buff.ca_inc.up)&(!set_bonus.tier28_2pc||runeforge.primordial_arcanic_pulsar&buff.primordial_arcanic_pulsar.value<210&cooldown.ca_inc.remains>17&(!covenant.night_fae||cooldown.convoke_the_spirits.remains>17)&(!race.troll||cooldown.berserking.remains>17))||eclipse.in_any&(buff.warrior_of_elune.up||spell_haste<0.45&(!covenant.venthyr||!buff.ravenous_frenzy.up)||covenant.venthyr&spell_haste<0.4)\n# Use Wrath otherwise which is in Solar Eclipse, CA/Inc or to proc Lunar Eclipse\nactions.st+=/wrath\n# Fallthru\nactions.st+=/run_action_list,name=fallthru",
+					["profile"] = "## Balance Druid\n## March 2, 2022\n\n## Changes:\n## - Added Solar Beam.\n## - Changed target_if cases to cycle_targets.\n## - Removed unnecessary variables (i.e., prev_starsurge -> prev.starsurge).\n## - Avoid precasting Wrath if it's the wrong Eclipse.\n## - Make Convoke the Spirits a little more flexible (if you hadn't hit it simultaneously with BOAT + Celestial Alignment, it'd skip).\n## - Make most 'fight_remains' scenarios apply to boss fights only.\n## - Treat Tome of Blah Blah Blah as a special trinket.\n## - Opener (i.e., Wrath, Wrath, Starfire) made more resilient to earlier combat-start.\n## - Fix Kindred Empowerment check for CD usage.\n\n## Annotated Balance APL can be found at https://balance-simc.github.io/Balance-SimC/md.html?file=balance.txt\n\nactions.precombat=kindred_spirits\n# The variable is set to 0 with no stat on use trinkets, 1 when the first one is on use, 2 if the second is and 3 if both are\nactions.precombat+=/variable,name=on_use_trinket,value=0\nactions.precombat+=/variable,name=on_use_trinket,op=add,value=1,if=trinket.1.has_use_buff&trinket.1.cooldown.duration&!trinket.1.is.tome_of_monstrous_constructions\nactions.precombat+=/variable,name=on_use_trinket,op=add,value=2,if=trinket.2.has_use_buff&trinket.2.cooldown.duration&!trinket.2.is.tome_of_monstrous_constructions\n# These trinkets are not automatically detected as on use stat trinkets.  Set variable to 4 as they also need special handling.\nactions.precombat+=/variable,name=on_use_trinket,op=add,value=4,if=equipped.inscrutable_quantum_device||equipped.empyreal_ordnance||equipped.soulletting_ruby\n# Sets the Starsurge cost for later calculations (for example when to start dumping before Frenzy falls off)\nactions.precombat+=/variable,name=ss_cost,value=30*(1-0.2*set_bonus.tier28_4pc)\n# Sets at which amount of AsP Convoke should be used: 40 without Celestial Spirits and 30 with.\nactions.precombat+=/variable,name=convoke_asp,value=30+10*runeforge.celestial_spirits\nactions.precombat+=/moonkin_form\nactions.precombat+=/wrath,line_cd=10,if=(eclipse.lunar_next||eclipse.in_solar||eclipse.in_both||eclipse.any_next)\n\n# Precast 2 Wrath and a Starsurge on ST with Night Fae and BoAT or Starfire otherwise\nactions.opener+=/wrath,if=(eclipse.lunar_next||eclipse.in_solar||eclipse.in_both||eclipse.any_next)&prev.1.wrath&!prev.2.wrath\nactions.opener+=/starfire,line_cd=5,if=!runeforge.balance_of_all_things||!covenant.night_fae||!spell_targets.starfall=1||!talent.natures_balance.enabled||(eclipse.solar_next||eclipse.in_lunar||eclipse.in_both||eclipse.any_next)\nactions.opener+=/starfire,line_cd=5,if=(!runeforge.balance_of_all_things||!covenant.night_fae||!spell_targets.starfall=1||!talent.natures_balance.enabled)&!set_bonus.tier28_2pc||(eclipse.solar_next||eclipse.in_lunar||eclipse.in_both||eclipse.any_next)\nactions.opener+=/starsurge,line_cd=5,if=(runeforge.balance_of_all_things&covenant.night_fae&spell_targets.starfall=1)&!set_bonus.tier28_2pc\n\n## Executed every time the actor is available.\nactions=solar_beam\nactions+=/call_action_list,name=opener,strict=1,if=time<(2*action.wrath.cast_time+action.starfire.cast_time)\n# Sets AoE on 3+ without drift and with Starlord and 2+ otherwise\nactions+=/variable,name=is_aoe,value=spell_targets.starfall>1&(!talent.starlord.enabled||talent.stellar_drift.enabled)||spell_targets.starfall>2\n# Sets cleave when Starfire can hit 2+ targets which is relevant for the Eclipse to be preferred and which filler to cast\nactions+=/variable,name=is_cleave,value=spell_targets.starfire>1\n# Variable that checks if you are in a gcd to avoid the situation where a trinket etc is used in between casts\nactions+=/variable,name=in_gcd,value=prev_gcd.1.moonfire||prev_gcd.1.sunfire||prev_gcd.1.starsurge||prev_gcd.1.starfall||prev_gcd.1.fury_of_elune||prev.ravenous_frenzy||buff.ca_inc.remains=buff.ca_inc.duration||variable.is_aoe\n# Use Berserking at the end of Frenzy when haste is above 60%, after Convoke and otherwise with CA/Inc\nactions+=/berserking,if=((!covenant.night_fae||!cooldown.convoke_the_spirits.up||runeforge.celestial_spirits)&buff.ca_inc.remains>15&buff.ravenous_frenzy.remains<4&!covenant.venthyr||covenant.venthyr&buff.ca_inc.up&buff.ravenous_frenzy.up&(buff.ravenous_frenzy.remains<=12-4*runeforge.sinful_hysteria||buff.ca_inc.remains<11||1%spell_haste<1.6))&variable.in_gcd\n# Pot with a CA/Inc that isn't a Pulsar proc or when the fight is about to end\nactions+=/potion,if=(buff.ca_inc.remains>15&(!runeforge.sinful_hysteria||buff.ravenous_frenzy.remains<19&buff.ravenous_frenzy.up)||boss&fight_remains<25)&variable.in_gcd\n# Calculates whether using Convoke now will allow you to still cast the same amount of Convoke+CA/Inc casts\nactions+=/variable,name=convoke_desync,value=ceil((fight_remains-15-cooldown.ca_inc.remains)%180)=ceil((fight_remains-15-cooldown.convoke_the_spirits.duration-cooldown.convoke_the_spirits.remains)%180)&!raid_event.adds.exists&(!cooldown.ca_inc.ready||!cooldown.convoke.ready)||cooldown.ca_inc.remains>interpolated_fight_remains||runeforge.celestial_spirits&cooldown.ca_inc.remains>30||cooldown.convoke_the_spirits.remains>interpolated_fight_remains-10||!covenant.night_fae\n# Used to delay the usage of CA/Inc when using double on use and prevent usage when an add event is about to die\nactions+=/variable,name=cd_condition,value=(target.time_to_die>15||raid_event.adds.in>50)&((equipped.empyreal_ordnance&(!covenant.venthyr||cooldown.empyreal_ordnance.remains<167+(5*runeforge.sinful_hysteria))&!cooldown.empyreal_ordnance.ready)||equipped.soulletting_ruby&(!covenant.night_fae||cooldown.soulletting_ruby_345801.remains<114)||(cooldown.berserking.ready||!race.troll||covenant.night_fae)&(!talent.fury_of_elune.enabled||covenant.venthyr&cooldown.fury_of_elune.remains<11+5*runeforge.sinful_hysteria||!covenant.venthyr&cooldown.fury_of_elune.remains<buff.ca_inc.duration+12*runeforge.primordial_arcanic_pulsar-12)&(equipped.inscrutable_quantum_device&cooldown.inscrutable_quantum_device.remains<5)||((equipped.shadowed_orb_of_torment&cooldown.tormented_insight_355321.remains)||((variable.on_use_trinket=1||variable.on_use_trinket=3)&(trinket.1.ready_cooldown||trinket.1.cooldown.remains>interpolated_fight_remains-10)||variable.on_use_trinket=2&(trinket.2.ready_cooldown||trinket.2.cooldown.remains>interpolated_fight_remains-10)||variable.on_use_trinket=0)))\n# Variable used to delay any trinkets and cds when waiting for an Euphoria proc\nactions+=/variable,name=thrill_seeker_wait,value=!soulbind.thrill_seeker.enabled||fight_remains>200||boss&fight_remains<25+(40-buff.thrill_seeker.stack*2)||buff.thrill_seeker.stack>38-(runeforge.sinful_hysteria*2)\n# Use Empyreal Ordnance 20secs before a CA/Inc use or so that it will line up with the end of Frenzy\nactions+=/use_item,name=empyreal_ordnance,if=cooldown.ca_inc.remains<20&cooldown.convoke_the_spirits.remains<20&(variable.thrill_seeker_wait||buff.thrill_seeker.stack>30+(runeforge.sinful_hysteria*3))&variable.in_gcd||boss&fight_remains<37\n# Use Soulleting Ruby 6secs before a CA/Inc use or so that it will line up with the end of Frenzy\nactions+=/use_item,name=soulletting_ruby,if=(cooldown.ca_inc.remains<6&!covenant.venthyr&!covenant.night_fae||covenant.night_fae&cooldown.convoke_the_spirits.remains<6&(variable.convoke_desync||cooldown.ca_inc.remains<6)||covenant.venthyr&(!runeforge.sinful_hysteria&cooldown.ca_inc.remains<6||buff.ravenous_frenzy.remains<10+(5*equipped.instructors_divine_bell)&buff.ravenous_frenzy.up)||boss&fight_remains<25||equipped.empyreal_ordnance&cooldown.empyreal_ordnance.remains>20)&variable.in_gcd&!equipped.inscrutable_quantum_device||cooldown.inscrutable_quantum_device.remains>20||boss&fight_remains<20\n# Always use IQD with CA/Inc or at the end of Frenzy\nactions+=/variable,name=iqd_condition,value=buff.ca_inc.remains>15&(!runeforge.sinful_hysteria||buff.ravenous_frenzy.remains<=15.5+(3.5*buff.bloodlust.up)+(4.5-3.5*buff.bloodlust.up)*equipped.instructors_divine_bell+4.5*(equipped.the_first_sigil&cooldown.the_first_sigil.remains<=20)&buff.ravenous_frenzy.up)||boss&fight_remains<25||equipped.empyreal_ordnance&cooldown.empyreal_ordnance.remains\nactions+=/use_item,name=inscrutable_quantum_device,if=variable.iqd_condition&variable.in_gcd\n# Use Shadowed Orb before CA/Inc\nactions+=/use_item,name=shadowed_orb_of_torment,if=(cooldown.ca_inc.ready&!covenant.night_fae&variable.thrill_seeker_wait&(cooldown.berserking.ready||!race.troll)||covenant.night_fae&cooldown.convoke_the_spirits.ready&(variable.convoke_desync||cooldown.ca_inc.ready))&dot.sunfire.ticking&(dot.stellar_flare.ticking||!talent.stellar_flare.enabled||spell_targets.starfire>3)&dot.moonfire.ticking&(variable.is_aoe||runeforge.balance_of_all_things||astral_power>=90||variable.convoke_desync||buff.bloodlust.up)&!equipped.inscrutable_quantum_device||equipped.inscrutable_quantum_device&cooldown.inscrutable_quantum_device.remains>30&!buff.ca_inc.up||boss&fight_remains<40\n# This is a rather elaborate way to make all on use stat trinkets to be lined up with CA/Inc and Convoke and use the 2nd slot on cd if both trinkets are on use stat trinkets\nactions+=/use_items,slots=trinket1,if=(variable.on_use_trinket!=1&!trinket.2.ready_cooldown||(variable.on_use_trinket=1||variable.on_use_trinket=3)&(buff.ca_inc.up&(!covenant.venthyr||buff.ravenous_frenzy.remains+(3.5*runeforge.sinful_hysteria)<=trinket.1.buff_duration&buff.ravenous_frenzy.up||buff.ravenous_frenzy_sinful_hysteria.up)||cooldown.ca_inc.remains+2>trinket.1.cooldown.duration&!buff.ca_inc.up&(!covenant.night_fae||!variable.convoke_desync)&!covenant.kyrian||covenant.night_fae&variable.convoke_desync&cooldown.convoke_the_spirits.up&!cooldown.ca_inc.up&((buff.eclipse_lunar.remains>10||buff.eclipse_solar.remains>10)&!runeforge.balance_of_all_things||(buff.balance_of_all_things_nature.stack=5||buff.balance_of_all_things_arcane.stack=8))||buff.kindred_empowerment_energize.up)||boss&fight_remains<20||variable.on_use_trinket=0)&variable.in_gcd\nactions+=/use_items,slots=trinket2,if=(variable.on_use_trinket!=2&!trinket.1.ready_cooldown||variable.on_use_trinket=2&(buff.ca_inc.up&(!covenant.venthyr||buff.ravenous_frenzy.remains+(3.5*runeforge.sinful_hysteria)<=trinket.2.buff_duration&buff.ravenous_frenzy.up||buff.ravenous_frenzy_sinful_hysteria.up)||cooldown.ca_inc.remains+2>trinket.2.cooldown.duration&!buff.ca_inc.up&(!covenant.night_fae||!variable.convoke_desync)&!covenant.kyrian&(!buff.ca_inc.up||!covenant.venthyr)||covenant.night_fae&variable.convoke_desync&cooldown.convoke_the_spirits.up&!cooldown.ca_inc.up&((buff.eclipse_lunar.remains>10||buff.eclipse_solar.remains>10)&!runeforge.balance_of_all_things||(buff.balance_of_all_things_nature.stack=5||buff.balance_of_all_things_arcane.stack=8)))||buff.kindred_empowerment_energize.up||boss&fight_remains<20||variable.on_use_trinket=0)&variable.in_gcd\n# Uses all other on use items on cd\nactions+=/use_items\n# Either go into the st or aoe action list\nactions+=/run_action_list,name=aoe,strict=1,if=variable.is_aoe\nactions+=/run_action_list,name=st\n\n# Calculates whether the Dreamcatcher buff will fall off within the next cast\nactions.aoe=variable,name=dream_will_fall_off,value=runeforge.timeworn_dreambinder&(buff.timeworn_dreambinder.remains<gcd.max+0.1||buff.timeworn_dreambinder.remains<action.starfire.execute_time+0.1&(eclipse.in_lunar||eclipse.solar_next||eclipse.any_next))&buff.timeworn_dreambinder.up\n# Calculates whether Starsurge is worth casting over Starfire in Lunar Eclipse\nactions.aoe+=/variable,name=ignore_starsurge,value=!eclipse.in_solar&spell_targets.starfire>7-talent.soul_of_the_forest.enabled*2+eclipse.in_both&!runeforge.primordial_arcanic_pulsar&!runeforge.oneths_clear_vision\n# Use Convoke when at less than 50 AsP and line up with CA/Inc\nactions.aoe+=/convoke_the_spirits,if=!druid.no_cds&((variable.convoke_desync&!cooldown.ca_inc.ready||buff.ca_inc.up)&(buff.eclipse_lunar.remains>5||buff.eclipse_solar.remains>5)&(astral_power<50&(spell_targets.starfire>3||buff.ca_inc.up)||!runeforge.primordial_arcanic_pulsar)&(!talent.stellar_drift||buff.starfall.remains<1.5-0.5*runeforge.celestial_spirits||buff.ca_inc.remains<buff.starfall.remains+5&buff.ca_inc.up)&(!runeforge.balance_of_all_things||buff.balance_of_all_things_nature.stack>3||buff.balance_of_all_things_arcane.stack>3)||boss&fight_remains<10&cooldown.ca_inc.remains>5)\n# Use Sunfire in pandemic on anything that lives 14secs and less with more targets and at the end of a Solar Eclipse at 14 secs or less remaining as to not having to refresh during Lunar Eclipse\nactions.aoe+=/sunfire,cycle_targets=1,if=(refreshable||buff.eclipse_solar.remains<3&eclipse.in_solar&remains<14&talent.soul_of_the_forest.enabled)&target.time_to_die>14-spell_targets+remains&(eclipse.in_any||remains<gcd.max)\n# Use Sunfire to have a global to use IQD\nactions.aoe+=/sunfire,if=variable.iqd_condition&cooldown.inscrutable_quantum_device.ready&equipped.inscrutable_quantum_device&ap_check\n# Keep up Starfall at all times unless using Lycaras and it is about to proc or let the special action line below handle Dreambinder on 2 targets\nactions.aoe+=/starfall,if=!talent.stellar_drift.enabled&(!set_bonus.tier28_4pc||eclipse.in_any||spell_targets.starfall>3)&(buff.starfall.refreshable&(spell_targets.starfall<3||!runeforge.timeworn_dreambinder)||talent.soul_of_the_forest.enabled&buff.eclipse_solar.remains<3&eclipse.in_solar&buff.starfall.remains<7&spell_targets.starfall>=4)&(!runeforge.lycaras_fleeting_glimpse||time%%45>buff.starfall.remains+2)&target.time_to_die>5\n# With Stellar Drift use on cd when refreshable but still wait for Lycaras proc and don't use before CDs. Still use before Convoke since that will proc another Starfall\nactions.aoe+=/starfall,if=talent.stellar_drift.enabled&buff.starfall.refreshable&(!set_bonus.tier28_4pc||eclipse.in_any||spell_targets.starfall>4)&(!runeforge.lycaras_fleeting_glimpse||time%%45>4)&target.time_to_die>3\n# With Dreambinder use Starfall to keep up the buff by also using Starfall on 5 seconds or less remaining\nactions.aoe+=/starfall,if=runeforge.timeworn_dreambinder&spell_targets.starfall>=3&(!buff.timeworn_dreambinder.up&buff.starfall.refreshable||(variable.dream_will_fall_off&(buff.starfall.remains<3||spell_targets.starfall>2&talent.stellar_drift.enabled&buff.starfall.remains<5)))\n# Calculates whether a Starsurge use will cause Starfall to fall off, and use Starsurge to keep Dreambinder stack up. 80 is the required AsP to cast Starsurge+Starfall\nactions.aoe+=/variable,name=starfall_wont_fall_off,value=astral_power>80*(1-set_bonus.tier28_2pc*0.2)*(1-buff.timeworn_dreambinder.stack*0.1)-(buff.starfall.remains*3%spell_haste*!talent.stellar_drift.enabled)-(cooldown.starfall.remains*3%spell_haste*talent.stellar_drift.enabled)-(buff.fury_of_elune.remains*5)&(buff.starfall.up||cooldown.starfall.remains)\n# Use Starsurge with Dreambinder to keep up the buff without losing Starfall uptime and use Starsurge on 4+ BoAT stacks until 4 targets\nactions.aoe+=/starsurge,if=variable.dream_will_fall_off&variable.starfall_wont_fall_off&!variable.ignore_starsurge||(buff.balance_of_all_things_nature.stack>3||buff.balance_of_all_things_arcane.stack>3)&spell_targets.starfall<4&variable.starfall_wont_fall_off\n# Use swarm so that you get max uptime by using it as late as possible on less than 3 stacks or just when 3+ stacks expire\nactions.aoe+=/adaptive_swarm,cycle_targets=1,if=!ticking&!action.adaptive_swarm_damage.in_flight||dot.adaptive_swarm_damage.stack<3&dot.adaptive_swarm_damage.remains<3\n# Refresh Moonfire if CA/Inc is ready, there are less than 5 targets in Lunar Eclipse with SotF, less than 10 otherwise in any Eclipse or up to 5 targets before a Lunar Eclipse. Don't refresh during Kindred Empowerment unless in Solar Eclipse\nactions.aoe+=/moonfire,cycle_targets=1,if=refreshable&target.time_to_die>((14+(spell_targets.starfire*2*buff.eclipse_lunar.up))+remains)%(1+talent.twin_moons.enabled)&(ap_check||variable.ignore_starsurge||!eclipse.in_any)&(cooldown.ca_inc.ready&eclipse.in_any&!druid.no_cds&(variable.convoke_desync||cooldown.convoke_the_spirits.ready||!covenant.night_fae)||spell_targets.starfire<((6-(buff.eclipse_lunar.up*2))*(1+talent.twin_moons.enabled))&!eclipse.solar_next&!cooldown.ca_inc.ready||(eclipse.in_solar||buff.eclipse_lunar.up&!talent.soul_of_the_forest.enabled||buff.primordial_arcanic_pulsar.value>=250)&(spell_targets.starfire<10*(1+talent.twin_moons.enabled))&astral_power>50-buff.starfall.remains*6)&(!covenant.kyrian||!buff.kindred_empowerment_energize.up||eclipse.in_solar)&!buff.ravenous_frenzy_sinful_hysteria.up\n# Use FoN on cd without capping\nactions.aoe+=/force_of_nature,if=ap_check||variable.ignore_starsurge\nactions.aoe+=/variable,name=cd_condition_aoe,value=!druid.no_cds&(variable.cd_condition&(buff.starfall.up||talent.stellar_drift.enabled||covenant.night_fae)&dot.moonfire.ticking&(!buff.solstice.up&!buff.ca_inc.up&(!talent.fury_of_elune.enabled||buff.ca_inc.duration>cooldown.fury_of_elune.remains+8)&(!set_bonus.tier28_2pc||eclipse.in_lunar||eclipse.solar_next)&variable.thrill_seeker_wait&(!covenant.night_fae||cooldown.convoke_the_spirits.remains<buff.ca_inc.duration*0.5)&target.time_to_die>buff.ca_inc.duration*0.7)||boss&fight_remains<buff.ca_inc.duration+12*runeforge.primordial_arcanic_pulsar)\n# Use Frenzy with CA/Inc\nactions.aoe+=/ravenous_frenzy,if=buff.ca_inc.remains>15||buff.ca_inc.duration+12*runeforge.primordial_arcanic_pulsar<26&variable.cd_condition_aoe\n# Use CA/Inc on cd unless and line it up with Convoke\nactions.aoe+=/celestial_alignment,if=variable.cd_condition_aoe&(buff.ca_inc.duration+12*runeforge.primordial_arcanic_pulsar>=26||!covenant.venthyr)||buff.ravenous_frenzy.up&buff.ravenous_frenzy.remains<9+conduit.precise_alignment.time_value+(!buff.bloodlust.up&!talent.starlord.enabled)\nactions.aoe+=/incarnation,if=variable.cd_condition_aoe\n# Use Empower Bond on cd with Starfall up and save for Pulsar and CA/Inc\nactions.aoe+=/empower_bond,if=(cooldown.ca_inc.remains+buff.ca_inc.duration+runeforge.primordial_arcanic_pulsar*12>cooldown.empower_bond.duration+10)||buff.ca_inc.remains>8||druid.no_cds\n# Refresh flare on up to 3 targets without CA/Inc being about to expire and not overcapping\nactions.aoe+=/stellar_flare,cycle_targets=1,if=refreshable&time_to_die>15&spell_targets.starfire<4&ap_check&(buff.ca_inc.remains>10||!buff.ca_inc.up)\n# Use FoE if inside an Eclipse and line it up with a Pulsar proc and Adaptive Swarm\nactions.aoe+=/fury_of_elune,if=eclipse.in_any&(ap_check||!runeforge.primordial_arcanic_pulsar)&(buff.primordial_arcanic_pulsar.value<250||buff.ca_inc.remains>8)&(dot.adaptive_swarm_damage.ticking||!covenant.necrolord||spell_targets>2)&(buff.ravenous_frenzy.remains<9-(4*runeforge.sinful_hysteria)&buff.ravenous_frenzy.up||!buff.ravenous_frenzy.up)&(!cooldown.ca_inc.up||buff.thrill_seeker.stack<15&fight_remains<200&fight_remains>100||!soulbind.thrill_seeker.enabled)&(soulbind.thrill_seeker.enabled||cooldown.ca_inc.remains>30)&target.time_to_die>5||boss&fight_remains<10\n# Use a Starfall Oneth proc unless Starfall is already up or you are about to overcap AsP\nactions.aoe+=/starfall,if=buff.oneths_perception.up&(buff.starfall.refreshable||astral_power>90)\n# Dump AsP before Convoke with Starfall and then Starsurge\nactions.aoe+=/starfall,if=covenant.night_fae&!talent.stellar_drift.enabled&(variable.convoke_desync||cooldown.ca_inc.up||buff.ca_inc.up)&cooldown.convoke_the_spirits.remains<gcd.max*ceil(astral_power%50)&buff.starfall.remains<4&!druid.no_cds\nactions.aoe+=/starsurge,if=covenant.night_fae&(variable.convoke_desync||cooldown.ca_inc.up||buff.ca_inc.up)&cooldown.convoke_the_spirits.remains<5&variable.starfall_wont_fall_off&eclipse.in_any&!variable.ignore_starsurge&!druid.no_cds\n# Use Starsurge with an Oneth proc or if you'd overcap AsP with your next cast. Also dump AsP at the end of the Venthyr buff if Starfall wouldn't fall off or you are on 2 targets\nactions.aoe+=/starsurge,if=buff.oneths_clear_vision.up||(!starfire.ap_check&!variable.ignore_starsurge||(buff.ca_inc.remains<5&buff.ca_inc.up||((buff.ca_inc.remains<gcd.max*ceil(astral_power%variable.ss_cost)&buff.ca_inc.up||buff.ravenous_frenzy_sinful_hysteria.remains<gcd.max*ceil(astral_power%variable.ss_cost)&buff.ravenous_frenzy_sinful_hysteria.up)&covenant.venthyr))&(spell_targets.starfall<3||variable.starfall_wont_fall_off))&!variable.ignore_starsurge&(!runeforge.timeworn_dreambinder||spell_targets.starfall<3)\n# Use Moons in Solar Eclipse and save Full Moon for CA/Inc\nactions.aoe+=/new_moon,if=(buff.eclipse_solar.remains>execute_time||(charges=2&recharge_time<5)||charges=3)&ap_check\nactions.aoe+=/half_moon,if=(buff.eclipse_solar.remains>execute_time||(charges=2&recharge_time<5)||charges=3)&ap_check&(buff.ravenous_frenzy.remains<5&buff.ravenous_frenzy.up&!runeforge.sinful_hysteria||!buff.ravenous_frenzy.up)\nactions.aoe+=/full_moon,if=(buff.eclipse_solar.remains>execute_time&(cooldown.ca_inc.remains>50||cooldown.convoke_the_spirits.remains>50)||(charges=2&recharge_time<5)||charges=3)&ap_check&(buff.ravenous_frenzy.remains<5&buff.ravenous_frenzy.up&!runeforge.sinful_hysteria||!buff.ravenous_frenzy.up)\n# Use WoE on CD\nactions.aoe+=/warrior_of_elune\n# Calculates whether to use Starfire in Solar which is at 5 targets+1 for every 20% mastery or 4 Starsurge Empowerment stacks\nactions.aoe+=/variable,name=starfire_in_solar,value=spell_targets.starfire>4+floor(mastery_value*100%20)+floor(buff.starsurge_empowerment_solar.stack%4)\n# Calculates whether to Wrath during Frenzy\nactions.aoe+=/variable,name=wrath_in_frenzy,value=1%spell_haste<2-(0.2*(spell_targets.starfire-1)*(1+talent.soul_of_the_forest.enabled*1.5))+0.15*buff.ravenous_frenzy.remains\n# Use Wrath in Solar Eclipse or if no Starfire will fit into CA/Inc anymore\nactions.aoe+=/wrath,if=(eclipse.lunar_next||eclipse.any_next&variable.is_cleave)&(target.time_to_die>4||eclipse.lunar_in_2||boss&fight_remains<10)||buff.eclipse_solar.remains<action.starfire.execute_time&buff.eclipse_solar.up||eclipse.in_solar&!variable.starfire_in_solar||buff.ca_inc.remains<action.starfire.execute_time&!variable.is_cleave&buff.ca_inc.remains<execute_time&buff.ca_inc.up||buff.ravenous_frenzy.up&variable.wrath_in_frenzy||!variable.is_cleave&buff.ca_inc.remains>execute_time\n# Use Starfire if in Lunar Eclipse, in Solar Eclipse on 4+ targets or to proc Solar Eclipse\nactions.aoe+=/starfire\n# Fallthru\nactions.aoe+=/run_action_list,name=fallthru\n\n# Starsurge for movement unless using BoAT\nactions.fallthru=starsurge,if=!runeforge.balance_of_all_things.equipped\n# Cast the dot with the most time to add until the max duration is hit. Sunfire remains multiplied to match moonfire duration\nactions.fallthru+=/sunfire,cycle_targets=1,if=dot.moonfire.remains>remains*22%18\nactions.fallthru+=/moonfire\n\n# Use Adaptive Swarm when there is no active swarm, as late as possible on swarm with 2 or fewer stacks or on a 3+ swarm so that the new swarm arrives just after that swarm expires\nactions.st=adaptive_swarm,cycle_targets=1,if=!dot.adaptive_swarm_damage.ticking&!action.adaptive_swarm_damage.in_flight&(!dot.adaptive_swarm_heal.ticking||dot.adaptive_swarm_heal.remains>5)||dot.adaptive_swarm_damage.stack<3&dot.adaptive_swarm_damage.remains<3&dot.adaptive_swarm_damage.ticking\n# Uses Convoke if CA/Inc is up or you are desyncing CA/Inc with Convoke and you are below 40/30(Celestial Spirits) AsP in a 10+ sec Eclipse. Also don't let Dreambinder expire, always use in CA/Inc with Pulsar and at the start of a BoAT window.\nactions.st+=/convoke_the_spirits,if=!druid.no_cds&((variable.convoke_desync&!cooldown.ca_inc.ready&!runeforge.primordial_arcanic_pulsar||buff.ca_inc.up)&((astral_power<=variable.convoke_asp&(buff.eclipse_lunar.remains>10||buff.eclipse_solar.remains>10)||buff.ca_inc.remains>5&buff.ca_inc.remains<=12)&(!runeforge.timeworn_dreambinder||!runeforge.celestial_spirits||buff.timeworn_dreambinder.remains>execute_time)||runeforge.balance_of_all_things)&(!runeforge.balance_of_all_things||(buff.balance_of_all_things_nature.stack=8||buff.balance_of_all_things_arcane.stack=8))||boss&fight_remains<10&!cooldown.ca_inc.ready)\n# Use Starsurge to keep up the Dreambinder buff if it would expire before finishing the next cast or to dump before Convoke\nactions.st+=/starsurge,if=runeforge.timeworn_dreambinder&(!((buff.timeworn_dreambinder.remains>action.wrath.execute_time+0.1&(eclipse.in_both||eclipse.in_solar||eclipse.lunar_next)||buff.timeworn_dreambinder.remains>action.starfire.execute_time+0.1&(eclipse.in_lunar||eclipse.solar_next||eclipse.any_next))||!buff.timeworn_dreambinder.up)||(buff.ca_inc.up||variable.convoke_desync)&cooldown.convoke_the_spirits.ready&covenant.night_fae&(buff.eclipse_lunar.remains>10||buff.eclipse_solar.remains>10))&(!covenant.kyrian||cooldown.empower_bond.remains>8)\n# Dump Starsurges with Balance of All Things or to prepare for Convoke with BoAT\nactions.st+=/starsurge,if=runeforge.balance_of_all_things&((buff.balance_of_all_things_nature.stack>2||buff.balance_of_all_things_arcane.stack>2)&cooldown.ca_inc.remains>7&!cooldown.convoke_the_spirits.up||(covenant.night_fae&cooldown.convoke_the_spirits.remains<10&eclipse.in_any&astral_power>20+30*cooldown.ca_inc.ready))\n# Condition for all dots that makes sure they aren't refreshed when Ravenous Frenzy has less than 5 secs remaining or the Empower Bond buff is about to fall off or any Eclipse is about to expire\nactions.st+=/variable,name=dot_requirements,value=(buff.ravenous_frenzy.remains>5||!buff.ravenous_frenzy.up)&!buff.ravenous_frenzy_sinful_hysteria.up&(buff.kindred_empowerment_energize.remains<gcd.max)&(buff.eclipse_solar.remains>gcd.max||buff.eclipse_lunar.remains>gcd.max||(!buff.eclipse_lunar.up||!buff.eclipse_solar.up)&!talent.solstice.enabled)\n# Condition that checks if you are outside eclipse to only dot there or ignore this with Solstice\nactions.st+=/variable,name=dot_outside_eclipse,value=(!buff.eclipse_solar.up&!buff.eclipse_lunar.up)&!talent.solstice.enabled&!runeforge.timeworn_dreambinder\n# Dot all targets within Pandemic without overcapping+the above conditions\nactions.st+=/moonfire,cycle_targets=1,if=(buff.eclipse_solar.remains>remains||buff.eclipse_lunar.remains>remains||variable.dot_outside_eclipse)&refreshable&target.time_to_die>12&ap_check&variable.dot_requirements\nactions.st+=/sunfire,cycle_targets=1,if=(buff.eclipse_solar.remains>remains||buff.eclipse_lunar.remains>remains||variable.dot_outside_eclipse)&refreshable&target.time_to_die>12&ap_check&variable.dot_requirements\nactions.st+=/stellar_flare,cycle_targets=1,if=(buff.eclipse_solar.remains>remains||buff.eclipse_lunar.remains>remains||variable.dot_outside_eclipse)&refreshable&target.time_to_die>16&ap_check&variable.dot_requirements\n# Dot right before Frenzy if it would allow you to refresh less during Frenzy (this only happens without Sinful Hysteria)\nactions.st+=/variable,name=no_hysteria_early_dot,value=covenant.venthyr&!runeforge.sinful_hysteria&!runeforge.circle_of_life_and_death&cooldown.berserking.ready&cooldown.ravenous_frenzy.ready&!buff.ca_inc.up&(astral_power>87||buff.bloodlust.up)\nactions.st+=/moonfire,if=variable.no_hysteria_early_dot&remains<20\nactions.st+=/sunfire,if=variable.no_hysteria_early_dot&remains<19\n# Use FoN on cd without capping\nactions.st+=/force_of_nature,if=ap_check\n# Use Empower Bond with any long enough lasting Eclipse and try to line it up with Pulsar and CA/Inc\nactions.st+=/empower_bond,if=(cooldown.ca_inc.remains+buff.ca_inc.duration+runeforge.primordial_arcanic_pulsar*12>cooldown.empower_bond.duration+10)||buff.ca_inc.remains>8||druid.no_cds\n# Sets when AsP should be dumped to not overcap (Depends on Fury of Elune and the Eclipse)\nactions.st+=/variable,name=asp_dump,value=astral_power>90-(2.5*buff.fury_of_elune.stack-2*eclipse.in_lunar)\n# Use CA/Inc with Convoke/Kindred Spirits and don't overwrite Pulsar or when Bloodlust would expire before CA/Inc expires. Make sure to enter a Lunar Eclipse when usign T28 2pc and all CDs will become ready soon enough during the buff and dots have been sufficiently refreshed.\nactions.st+=/variable,name=cd_condition_st,value=!druid.no_cds&(variable.cd_condition&!buff.ca_inc.up&(!set_bonus.tier28_2pc||eclipse.in_lunar||eclipse.solar_next)&(((variable.asp_dump||covenant.night_fae||(covenant.kyrian&cooldown.empower_bond.ready)||runeforge.timeworn_dreambinder)&dot.sunfire.remains>8&dot.moonfire.remains>9&(dot.stellar_flare.remains>10||!talent.stellar_flare.enabled)&variable.thrill_seeker_wait&target.time_to_die>buff.ca_inc.duration*0.7||buff.bloodlust.up&buff.bloodlust.remains<buff.ca_inc.duration+(12*runeforge.primordial_arcanic_pulsar))||(equipped.empyreal_ordnance&cooldown.empyreal_ordnance.remains<167+(5*runeforge.sinful_hysteria)))&(!covenant.night_fae||(cooldown.convoke_the_spirits.remains<buff.ca_inc.duration%2&!runeforge.balance_of_all_things||cooldown.convoke_the_spirits.ready&astral_power<50)||boss&fight_remains<cooldown.convoke_the_spirits.remains)||boss&fight_remains<buff.ca_inc.duration+12*runeforge.primordial_arcanic_pulsar)\n# Use Frenzy with CA/Inc unless Frenzy would last longer than CA/Inc, then use before\nactions.st+=/ravenous_frenzy,if=buff.ca_inc.remains>15||buff.ca_inc.duration<27+runeforge.primordial_arcanic_pulsar*12&variable.cd_condition_st\nactions.st+=/celestial_alignment,if=variable.cd_condition_st&(buff.ca_inc.duration>=27+runeforge.primordial_arcanic_pulsar*12||!covenant.venthyr)||buff.ravenous_frenzy.up&buff.ravenous_frenzy.remains<9+conduit.precise_alignment.time_value+(!buff.bloodlust.up&!talent.starlord.enabled)\nactions.st+=/incarnation,if=variable.cd_condition_st\n# Variable used on abilities that want to be saved for CA/Inc so that they arent wasted just before them\nactions.st+=/variable,name=save_for_ca_inc,value=cooldown.ca_inc.remains>10||!variable.convoke_desync&covenant.night_fae||druid.no_cds\n# Uses FoE if in an Eclipse and tries to line it up with Pulsar, CA/Inc, Empower Bond and Adaptive Swarm\nactions.st+=/fury_of_elune,if=eclipse.in_any&(astral_power<92-buff.fury_of_elune.stack*5||buff.ravenous_frenzy.up)&(buff.primordial_arcanic_pulsar.value<240||buff.ca_inc.remains>8)&variable.save_for_ca_inc&(!covenant.necrolord||dot.adaptive_swarm_damage.ticking)&(!covenant.venthyr||buff.ravenous_frenzy.remains<9-(4*runeforge.sinful_hysteria)&buff.ravenous_frenzy.up||!buff.ravenous_frenzy.up)&(!covenant.kyrian||cooldown.empower_bond.remains>20)&target.time_to_die>5||boss&fight_remains<10\n# Use Oneth Starfall procs if Starfall isn't up\nactions.st+=/starfall,if=buff.oneths_perception.up&buff.starfall.refreshable\n# Cancel Starlord if it has less than 5s remaining, you are at 90+ AsP and the current Eclipse has 5+s remaining\nactions.st+=/cancel_buff,name=starlord,if=buff.starlord.remains<5&(buff.eclipse_solar.remains>5||buff.eclipse_lunar.remains>5)&astral_power>90\n# Cancel the Pulsar buff if the proc wouldn't line up with the next time Convoke comes off cd. This usually only happens during the BL.\nactions.st+=/cancel_buff,name=primordial_arcanic_pulsar,if=talent.incarnation.enabled&!talent.new_moon.enabled&@((300-astral_power+40-set_bonus.tier28_2pc*40)%(4%spell_haste)-cooldown.convoke_the_spirits.remains)<@((300-astral_power-buff.primordial_arcanic_pulsar.value+40-set_bonus.tier28_2pc*40)%(4%spell_haste)-cooldown.convoke_the_spirits.remains)&cooldown.ca_inc.remains>30&buff.primordial_arcanic_pulsar.value<210&buff.primordial_arcanic_pulsar.value>30&cooldown.convoke_the_spirits.remains<40&fight_remains>cooldown.convoke_the_spirits.remains+6&(runeforge.celestial_spirits||variable.convoke_desync)\n# Sets when Pulsar should be procced early to be able to use Convoke on cooldown (Essentially becomes true if dumping AsP now will allow you to perfectly enter Pulsar and then use Convoke)\nactions.st+=/variable,name=proc_pulsar_early,value=covenant.night_fae&runeforge.primordial_arcanic_pulsar&buff.primordial_arcanic_pulsar.value+astral_power+3>=300&variable.convoke_desync&cooldown.convoke_the_spirits.remains<astral_power%30*gcd.max&!druid.no_cds&eclipse.in_any&astral_power>variable.convoke_asp&cooldown.ca_inc.remains>5\n# Use Starfall with Stellar Drift or t28 4pc and no Starlord, when no Starfall is up or to proc Pulsar when above 90 AsP(or the early Pulsar proc variable is true) or adpative swarm has 8+secs remaining or is in flight\nactions.st+=/starfall,if=(talent.stellar_drift.enabled||set_bonus.tier28_4pc)&!talent.starlord.enabled&buff.starfall.refreshable&!runeforge.timeworn_dreambinder&(buff.primordial_arcanic_pulsar.value>=250&!buff.ca_inc.up&(variable.asp_dump||buff.kindred_empowerment_energize.up||variable.proc_pulsar_early)||(covenant.necrolord&talent.stellar_drift.enabled&(dot.adaptive_swarm_damage.remains>8||action.adaptive_swarm_damage.in_flight)))&(cooldown.ca_inc.remains>10||cooldown.convoke_the_spirits.remains>10)\n# Dumps AsP before Convoke using the Convoke condition to check if Convoke is actually about to be cast\nactions.st+=/starsurge,if=variable.proc_pulsar_early\n# Use Moons when you are about to/are capping charges and make sure they are in an Eclipse still for HM/FM\nactions.st+=/new_moon,if=ap_check&(charges=2&recharge_time<5||charges=3)\nactions.st+=/half_moon,if=ap_check&(charges=2&recharge_time<5||charges=3)&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)\nactions.st+=/full_moon,if=ap_check&(charges=2&recharge_time<5||charges=3)&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)\n# Use Starsurge Oneth procs and dump AsP when CA/Inc, Empower Bond, the Venthyr buff is about to fall off or you'd cap AsP\nactions.st+=/starsurge,if=eclipse.in_any&(buff.oneths_clear_vision.up||buff.kindred_empowerment_energize.up||buff.ca_inc.up&(!covenant.kyrian||cooldown.empower_bond.remains>5||buff.ca_inc.remains<gcd.max*floor(astral_power%variable.ss_cost))&(!covenant.venthyr||buff.ravenous_frenzy.remains<gcd.max*ceil((astral_power+40*talent.fury_of_elune.enabled)%variable.ss_cost)+3*talent.new_moon.enabled&!runeforge.sinful_hysteria&buff.ravenous_frenzy.up||buff.ravenous_frenzy_sinful_hysteria.up||(buff.ravenous_frenzy.remains<action.starfire.execute_time&spell_haste<0.4||buff.ravenous_frenzy.remains<action.wrath.execute_time||variable.iqd_condition&cooldown.inscrutable_quantum_device.ready&equipped.inscrutable_quantum_device)&buff.ravenous_frenzy.up||!buff.ravenous_frenzy.up&!cooldown.ravenous_frenzy.ready)||variable.asp_dump||boss&fight_remains<gcd.max*ceil(astral_power%variable.ss_cost))\n# Try to make the best of Starlord by stacking it up quickly in any Eclipse but Pulsar isn't about to be procced\nactions.st+=/starsurge,if=talent.starlord.enabled&!runeforge.timeworn_dreambinder&(buff.starlord.up||astral_power>90)&buff.starlord.stack<3&(buff.eclipse_solar.up||buff.eclipse_lunar.up)&buff.primordial_arcanic_pulsar.value<270&(cooldown.ca_inc.remains>10||!variable.convoke_desync&covenant.night_fae)\n# Estimates how much AsP are gained per second. Only takes a snapshot for the current situation so wouldn't be accurate for larger timeframes\nactions.st+=/variable,name=aspPerSec,value=eclipse.in_lunar*8%action.starfire.execute_time+!eclipse.in_lunar*(6+talent.soul_of_the_forest.enabled*3)%action.wrath.execute_time+0.45%spell_haste+0.5*talent.natures_balance.enabled\n# Dump Starsurge in an Eclipse as soon as possible as long as you will end up with 80+ when entering the next Eclipse, don't let it proc Pulsar, don't overwrite an Oneth proc and pool before CA/Inc and Empower Bond\nactions.st+=/starsurge,if=!runeforge.timeworn_dreambinder&(buff.primordial_arcanic_pulsar.value<270||buff.primordial_arcanic_pulsar.value<250&talent.stellar_drift.enabled)&(eclipse.in_solar&astral_power+variable.aspPerSec*buff.eclipse_solar.remains+dot.fury_of_elune.ticks_remain*2.5>80||eclipse.in_lunar&astral_power+variable.aspPerSec*buff.eclipse_lunar.remains+dot.fury_of_elune.ticks_remain*2.5>90)&!buff.oneths_perception.up&!talent.starlord.enabled&(cooldown.ca_inc.remains>7||soulbind.thrill_seeker.enabled&buff.thrill_seeker.stack<33-(runeforge.sinful_hysteria*2)&fight_remains>100&fight_remains<200||druid.no_cds)&(!covenant.kyrian||cooldown.empower_bond.remains>2)\n# Use Moons in any Eclipse and save Half+Full Moon for CA/Inc and Kindred Empowerment. Also use NM and FM at the end of Frenzy and don't let Dreambinder fall off\nactions.st+=/new_moon,if=ap_check&variable.save_for_ca_inc&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)\nactions.st+=/half_moon,if=ap_check&variable.save_for_ca_inc&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)&(buff.ca_inc.up||buff.primordial_arcanic_pulsar.value<=210)&(!covenant.venthyr||buff.ravenous_frenzy.remains<(5-2*runeforge.sinful_hysteria)&buff.ravenous_frenzy.up||!buff.ravenous_frenzy.up)&(!runeforge.timeworn_dreambinder||execute_time<buff.timeworn_dreambinder.remains||!buff.timeworn_dreambinder.up)\nactions.st+=/full_moon,if=ap_check&variable.save_for_ca_inc&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)&(buff.ca_inc.up||buff.primordial_arcanic_pulsar.value<=210)&(!covenant.kyrian||buff.kindred_empowerment_energize.up)&(!covenant.venthyr||buff.ravenous_frenzy.remains<5&buff.ravenous_frenzy.up&!runeforge.sinful_hysteria||!buff.ravenous_frenzy.up)&(!runeforge.timeworn_dreambinder||execute_time<buff.timeworn_dreambinder.remains||!buff.timeworn_dreambinder.up)\n# Use WoE on cd\nactions.st+=/warrior_of_elune\n# Use Starfire to proc Solar Eclipse, CA/Inc has less time than a Wrath execute left or only Lunar Eclipse is up. With T28 2pc enter a Solar Eclipse if Pulsar still has less than 210 stacks and CA/Inc and Convoke have more than 17s CD remaining. Use above 250% haste during Frenzy and 222% haste without Frenzy\nactions.st+=/starfire,if=eclipse.in_lunar&!buff.ravenous_frenzy.up||eclipse.solar_next||(eclipse.any_next||buff.ca_inc.remains<action.wrath.execute_time&buff.ca_inc.up)&(!set_bonus.tier28_2pc||runeforge.primordial_arcanic_pulsar&buff.primordial_arcanic_pulsar.value<210&cooldown.ca_inc.remains>17&(!covenant.night_fae||cooldown.convoke_the_spirits.remains>17)&(!race.troll||cooldown.berserking.remains>17))||eclipse.in_any&(buff.warrior_of_elune.up||spell_haste<0.45&(!covenant.venthyr||!buff.ravenous_frenzy.up)||covenant.venthyr&spell_haste<0.4)\n# Use Wrath otherwise which is in Solar Eclipse, CA/Inc or to proc Lunar Eclipse\nactions.st+=/wrath\n# Fallthru\nactions.st+=/run_action_list,name=fallthru",
 					["spec"] = 102,
 				},
 				["Guardian"] = {
@@ -15794,14 +15908,14 @@ HekiliDB = {
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["action"] = "moonfire",
 								["criteria"] = "( ( ! ticking & time_to_die > 12 & buff.galactic_guardian.up ) || ( refreshable & time_to_die > 12 & buff.galactic_guardian.up ) ) & active_enemies < 6",
+								["action"] = "moonfire",
 								["cycle_targets"] = 1,
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["action"] = "moonfire",
 								["criteria"] = "( ( ! ticking & time_to_die > 12 ) || ( refreshable & time_to_die > 12 ) ) & active_enemies < 6",
+								["action"] = "moonfire",
 								["cycle_targets"] = 1,
 							}, -- [4]
 							{
@@ -15810,20 +15924,20 @@ HekiliDB = {
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["criteria"] = "covenant.venthyr",
 								["name"] = "jotungeirr_destinys_call",
 								["action"] = "jotungeirr_destinys_call",
+								["criteria"] = "covenant.venthyr",
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["action"] = "trinket1",
 								["criteria"] = "! buff.prowl.up & covenant.venthyr",
+								["action"] = "trinket1",
 								["slot"] = "trinket1",
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["action"] = "trinket2",
 								["criteria"] = "! buff.prowl.up & covenant.venthyr",
+								["action"] = "trinket2",
 								["slot"] = "trinket2",
 							}, -- [8]
 							{
@@ -15867,8 +15981,8 @@ HekiliDB = {
 							}, -- [16]
 							{
 								["enabled"] = true,
-								["action"] = "thrash_bear",
 								["criteria"] = "refreshable || dot.thrash_bear.stack < 3 || ( dot.thrash_bear.stack < 4 & runeforge.luffainfused_embrace.equipped ) || active_enemies >= 4 || buff.berserk_bear.up & buff.berserk_bear.remains <= gcd + 0.5",
+								["action"] = "thrash_bear",
 								["cycle_targets"] = 1,
 							}, -- [17]
 							{
@@ -15921,8 +16035,8 @@ HekiliDB = {
 							}, -- [26]
 							{
 								["enabled"] = true,
-								["action"] = "pulverize",
 								["criteria"] = "dot.thrash_bear.stack > 2",
+								["action"] = "pulverize",
 								["cycle_targets"] = 1,
 							}, -- [27]
 							{
@@ -15976,81 +16090,6 @@ HekiliDB = {
 								["action"] = "survival_instincts",
 							}, -- [6]
 						},
-						["default"] = {
-							{
-								["description"] = "Executed every time the actor is available.",
-								["action"] = "skull_bash",
-							}, -- [1]
-							{
-								["criteria"] = "! buff.prowl.up & ! covenant.venthyr",
-								["name"] = "jotungeirr_destinys_call",
-								["action"] = "jotungeirr_destinys_call",
-							}, -- [2]
-							{
-								["action"] = "trinket1",
-								["criteria"] = "! buff.prowl.up & ! covenant.venthyr",
-								["slot"] = "trinket1",
-							}, -- [3]
-							{
-								["action"] = "trinket2",
-								["criteria"] = "! buff.prowl.up & ! covenant.venthyr",
-								["slot"] = "trinket2",
-							}, -- [4]
-							{
-								["criteria"] = "! covenant.venthyr & ( ( ( talent.heart_of_the_wild.enabled & buff.heart_of_the_wild.up ) & ( druid.catweave_bear || druid.owlweave_bear ) & ! buff.prowl.up ) || ( ( buff.berserk_bear.up || buff.incarnation_guardian_of_ursoc.up ) & ( ! druid.catweave_bear & ! druid.owlweave_bear ) ) )",
-								["action"] = "potion",
-							}, -- [5]
-							{
-								["criteria"] = "druid.catweave_bear & ! tanking & ! covenant.venthyr & buff.incarnation_guardian_of_ursoc.down & buff.berserk_bear.down & ( ( cooldown.thrash_bear.remains > 0 & cooldown.mangle.remains > 0 & dot.moonfire.remains >= gcd + 0.5 & rage < 40 & buff.incarnation_guardian_of_ursoc.down & buff.berserk_bear.down & buff.galactic_guardian.down ) || ( buff.cat_form.up & energy > 25 ) || ( dot.rake.refreshable & dot.rip.refreshable ) || ( runeforge.oath_of_the_elder_druid.equipped & ! buff.oath_of_the_elder_druid.up & ( buff.cat_form.up & energy > 20 ) & buff.heart_of_the_wild.remains <= 10 ) || ( covenant.kyrian & cooldown.empower_bond.remains <= 1 & active_enemies < 2 ) || ( buff.heart_of_the_wild.up & energy > 90 ) )",
-								["strict"] = 1,
-								["action"] = "run_action_list",
-								["list_name"] = "catweave",
-							}, -- [6]
-							{
-								["criteria"] = "druid.catweave_bear & ! tanking & covenant.venthyr & ( ( cooldown.thrash_bear.remains > 0 & cooldown.mangle.remains > 0 & dot.moonfire.remains >= gcd + 0.5 & rage < 40 & buff.incarnation_guardian_of_ursoc.down & buff.berserk_bear.down & buff.galactic_guardian.down ) || ( buff.cat_form.up & energy > 25 ) || ( dot.rake.refreshable & dot.rip.refreshable & rage < 40 & buff.incarnation_guardian_of_ursoc.down & buff.berserk_bear.down & buff.galactic_guardian.down ) )",
-								["strict"] = 1,
-								["action"] = "run_action_list",
-								["list_name"] = "catweave",
-							}, -- [7]
-							{
-								["criteria"] = "! druid.catweave_bear & buff.cat_form.up",
-								["strict"] = 1,
-								["action"] = "run_action_list",
-								["list_name"] = "catweave",
-							}, -- [8]
-							{
-								["criteria"] = "druid.owlweave_bear & ! tanking & buff.incarnation_guardian_of_ursoc.down & buff.berserk_bear.down & ( ( cooldown.thrash_bear.remains > 0 & cooldown.mangle.remains > 0 & buff.galactic_guardian.down ) || ( buff.moonkin_form.up & dot.sunfire.refreshable ) || ( runeforge.oath_of_the_elder_druid.equipped & ! buff.oath_of_the_elder_druid.up ) || ( covenant.night_fae & cooldown.convoke_the_spirits.remains <= 1 ) )",
-								["strict"] = 1,
-								["action"] = "run_action_list",
-								["list_name"] = "owlweave",
-							}, -- [9]
-							{
-								["criteria"] = "! druid.owlweave_bear & buff.moonkin_form.up",
-								["strict"] = 1,
-								["action"] = "run_action_list",
-								["list_name"] = "owlweave",
-							}, -- [10]
-							{
-								["description"] = "If we're a nightfae and we don't want to catweave/owlweave, and we have balance/feral affinity talented, Whenever convoke cd is up we switch into affinity form to cast it, here moonkin form.",
-								["criteria"] = "settings.shift_for_convoke & ( ( talent.balance_affinity.enabled ) & ( ! druid.catweave_bear ) & ( ! druid.owlweave_bear ) & ( covenant.night_fae & cooldown.convoke_the_spirits.remains <= 1 ) )",
-								["action"] = "run_action_list",
-								["list_name"] = "oconvoke",
-							}, -- [11]
-							{
-								["description"] = "If we're a nightfae and we don't want to catweave/owlweave, and we have balance/feral affinity talented, Whenever convoke cd is up we switch into affinity form to cast it, here catform form.",
-								["criteria"] = "settings.shift_for_convoke & ( ( talent.feral_affinity.enabled ) & ( ! druid.catweave_bear ) & ( ! druid.owlweave_bear ) & ( covenant.night_fae & cooldown.convoke_the_spirits.remains <= 1 ) )",
-								["action"] = "run_action_list",
-								["list_name"] = "cconvoke",
-							}, -- [12]
-							{
-								["action"] = "call_action_list",
-								["list_name"] = "mitigation",
-							}, -- [13]
-							{
-								["action"] = "run_action_list",
-								["list_name"] = "bear",
-							}, -- [14]
-						},
 						["oconvoke"] = {
 							{
 								["enabled"] = true,
@@ -16086,6 +16125,95 @@ HekiliDB = {
 								["action"] = "convoke_the_spirits",
 								["enabled"] = true,
 							}, -- [7]
+						},
+						["default"] = {
+							{
+								["enabled"] = true,
+								["description"] = "Executed every time the actor is available.",
+								["action"] = "skull_bash",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["name"] = "jotungeirr_destinys_call",
+								["action"] = "jotungeirr_destinys_call",
+								["criteria"] = "! buff.prowl.up & ! covenant.venthyr",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "! buff.prowl.up & ! covenant.venthyr",
+								["action"] = "trinket1",
+								["slot"] = "trinket1",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "! buff.prowl.up & ! covenant.venthyr",
+								["action"] = "trinket2",
+								["slot"] = "trinket2",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "! covenant.venthyr & ( ( ( talent.heart_of_the_wild.enabled & buff.heart_of_the_wild.up ) & ( druid.catweave_bear || druid.owlweave_bear ) & ! buff.prowl.up ) || ( ( buff.berserk_bear.up || buff.incarnation_guardian_of_ursoc.up ) & ( ! druid.catweave_bear & ! druid.owlweave_bear ) ) )",
+								["action"] = "potion",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["action"] = "run_action_list",
+								["strict"] = 1,
+								["criteria"] = "druid.catweave_bear & ! tanking & ! covenant.venthyr & buff.incarnation_guardian_of_ursoc.down & buff.berserk_bear.down & ( ( cooldown.thrash_bear.remains > 0 & cooldown.mangle.remains > 0 & dot.moonfire.remains >= gcd + 0.5 & rage < 40 & buff.incarnation_guardian_of_ursoc.down & buff.berserk_bear.down & buff.galactic_guardian.down ) || ( buff.cat_form.up & energy > 25 ) || ( dot.rake.refreshable & dot.rip.refreshable ) || ( runeforge.oath_of_the_elder_druid.equipped & ! buff.oath_of_the_elder_druid.up & ( buff.cat_form.up & energy > 20 ) & buff.heart_of_the_wild.remains <= 10 ) || ( covenant.kyrian & cooldown.empower_bond.remains <= 1 & active_enemies < 2 ) || ( buff.heart_of_the_wild.up & energy > 90 ) )",
+								["list_name"] = "catweave",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["action"] = "run_action_list",
+								["strict"] = 1,
+								["criteria"] = "druid.catweave_bear & ! tanking & covenant.venthyr & ( ( cooldown.thrash_bear.remains > 0 & cooldown.mangle.remains > 0 & dot.moonfire.remains >= gcd + 0.5 & rage < 40 & buff.incarnation_guardian_of_ursoc.down & buff.berserk_bear.down & buff.galactic_guardian.down ) || ( buff.cat_form.up & energy > 25 ) || ( dot.rake.refreshable & dot.rip.refreshable & rage < 40 & buff.incarnation_guardian_of_ursoc.down & buff.berserk_bear.down & buff.galactic_guardian.down ) )",
+								["list_name"] = "catweave",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["action"] = "run_action_list",
+								["strict"] = 1,
+								["criteria"] = "! druid.catweave_bear & buff.cat_form.up",
+								["list_name"] = "catweave",
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["action"] = "run_action_list",
+								["strict"] = 1,
+								["criteria"] = "druid.owlweave_bear & ! tanking & buff.incarnation_guardian_of_ursoc.down & buff.berserk_bear.down & ( ( cooldown.thrash_bear.remains > 0 & cooldown.mangle.remains > 0 & buff.galactic_guardian.down ) || ( buff.moonkin_form.up & dot.sunfire.refreshable ) || ( runeforge.oath_of_the_elder_druid.equipped & ! buff.oath_of_the_elder_druid.up ) || ( covenant.night_fae & cooldown.convoke_the_spirits.remains <= 1 ) )",
+								["list_name"] = "owlweave",
+							}, -- [9]
+							{
+								["enabled"] = true,
+								["action"] = "run_action_list",
+								["strict"] = 1,
+								["criteria"] = "! druid.owlweave_bear & buff.moonkin_form.up",
+								["list_name"] = "owlweave",
+							}, -- [10]
+							{
+								["enabled"] = true,
+								["action"] = "run_action_list",
+								["description"] = "If we're a nightfae and we don't want to catweave/owlweave, and we have balance/feral affinity talented, Whenever convoke cd is up we switch into affinity form to cast it, here moonkin form.",
+								["criteria"] = "settings.shift_for_convoke & ( ( talent.balance_affinity.enabled ) & ( ! druid.catweave_bear ) & ( ! druid.owlweave_bear ) & ( covenant.night_fae & cooldown.convoke_the_spirits.remains <= 1 ) )",
+								["list_name"] = "oconvoke",
+							}, -- [11]
+							{
+								["enabled"] = true,
+								["action"] = "run_action_list",
+								["description"] = "If we're a nightfae and we don't want to catweave/owlweave, and we have balance/feral affinity talented, Whenever convoke cd is up we switch into affinity form to cast it, here catform form.",
+								["criteria"] = "settings.shift_for_convoke & ( ( talent.feral_affinity.enabled ) & ( ! druid.catweave_bear ) & ( ! druid.owlweave_bear ) & ( covenant.night_fae & cooldown.convoke_the_spirits.remains <= 1 ) )",
+								["list_name"] = "cconvoke",
+							}, -- [12]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["list_name"] = "mitigation",
+							}, -- [13]
+							{
+								["enabled"] = true,
+								["action"] = "run_action_list",
+								["list_name"] = "bear",
+							}, -- [14]
 						},
 						["catweave"] = {
 							{
@@ -16134,9 +16262,9 @@ HekiliDB = {
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["criteria"] = "combo_points >= 4 & energy > 50",
-								["action"] = "ferocious_bite",
 								["max_energy"] = 1,
+								["action"] = "ferocious_bite",
+								["criteria"] = "combo_points >= 4 & energy > 50",
 							}, -- [10]
 							{
 								["enabled"] = true,
@@ -16221,30 +16349,37 @@ HekiliDB = {
 						},
 						["precombat"] = {
 							{
+								["enabled"] = true,
 								["description"] = "Executed before combat begins. Accepts non-harmful actions only.",
 								["action"] = "kindred_spirits",
 							}, -- [1]
 							{
+								["enabled"] = true,
 								["criteria"] = "talent.heart_of_the_wild.enabled & ( druid.catweave_bear & buff.cat_form.up || druid.owlweave_bear & buff.moonkin_form.up || buff.moonkin_form.up & talent.balance_affinity.enabled )",
 								["action"] = "heart_of_the_wild",
 							}, -- [2]
 							{
+								["enabled"] = true,
 								["criteria"] = "buff.cat_form.up & druid.catweave_bear",
 								["action"] = "prowl",
 							}, -- [3]
 							{
+								["enabled"] = true,
 								["criteria"] = "! buff.any_form.up & ( ( ! druid.owlweave_bear & ! druid.catweave_bear ) & ( ! covenant.night_fae ) ) || ( ( ! druid.owlweave_bear & ! druid.catweave_bear ) & ( covenant.night_fae & talent.restoration_affinity.enabled ) )",
 								["action"] = "bear_form",
 							}, -- [4]
 							{
+								["enabled"] = true,
 								["criteria"] = "buff.moonkin_form.up & druid.owlweave_bear & ! covenant.night_fae",
 								["action"] = "wrath",
 							}, -- [5]
 							{
+								["enabled"] = true,
 								["criteria"] = "buff.moonkin_form.up & druid.owlweave_bear & covenant.night_fae",
 								["action"] = "starfire",
 							}, -- [6]
 							{
+								["enabled"] = true,
 								["criteria"] = "soulbind.pustule_eruption.enabled || soulbind.volatile_solvent.enabled",
 								["interrupt_if"] = "soulbind.volatile_solvent",
 								["interrupt_immediate"] = "1",
@@ -16305,14 +16440,14 @@ HekiliDB = {
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["action"] = "sunfire",
 								["criteria"] = "refreshable",
+								["action"] = "sunfire",
 								["cycle_targets"] = 1,
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["action"] = "moonfire",
 								["criteria"] = "refreshable || buff.galactic_guardian.up",
+								["action"] = "moonfire",
 								["cycle_targets"] = 1,
 							}, -- [9]
 							{
@@ -16343,8 +16478,8 @@ HekiliDB = {
 					},
 					["version"] = 20220226,
 					["warnings"] = "Imported 9 action lists.\n",
-					["profile"] = "## Guardian Druid\n## February 25, 2022\n\n## Changes:\n## - Incorporate Cat/Moonkin priorities (if setting is checked).\n## - Incorporate option to shift (or not) before Convoke.\n\n# Executed before combat begins. Accepts non-harmful actions only.\nactions.precombat+=/kindred_spirits\nactions.precombat+=/heart_of_the_wild,if=talent.heart_of_the_wild.enabled&(druid.catweave_bear&buff.cat_form.up||druid.owlweave_bear&buff.moonkin_form.up||buff.moonkin_form.up&talent.balance_affinity.enabled)\nactions.precombat+=/prowl,if=buff.cat_form.up&druid.catweave_bear\nactions.precombat+=/bear_form,if=!buff.any_form.up&((!druid.owlweave_bear&!druid.catweave_bear)&(!covenant.night_fae))||((!druid.owlweave_bear&!druid.catweave_bear)&(covenant.night_fae&talent.restoration_affinity.enabled))\nactions.precombat+=/wrath,if=buff.moonkin_form.up&druid.owlweave_bear&!covenant.night_fae\nactions.precombat+=/starfire,if=buff.moonkin_form.up&druid.owlweave_bear&covenant.night_fae\nactions.precombat+=/fleshcraft,if=soulbind.pustule_eruption.enabled||soulbind.volatile_solvent.enabled,interrupt_immediate=1,interrupt_global=1,interrupt_if=soulbind.volatile_solvent\n\n# Executed every time the actor is available.\nactions=skull_bash\nactions+=/use_item,name=jotungeirr_destinys_call,if=!buff.prowl.up&!covenant.venthyr\nactions+=/use_item,slot=trinket1,if=!buff.prowl.up&!covenant.venthyr\nactions+=/use_item,slot=trinket2,if=!buff.prowl.up&!covenant.venthyr\nactions+=/potion,if=!covenant.venthyr&(((talent.heart_of_the_wild.enabled&buff.heart_of_the_wild.up)&(druid.catweave_bear||druid.owlweave_bear)&!buff.prowl.up)||((buff.berserk_bear.up||buff.incarnation_guardian_of_ursoc.up)&(!druid.catweave_bear&!druid.owlweave_bear)))\n## Catweaving action list will be ran if, mangle/thrash are on cd, rage is below 40, zerk and incarnation are down and Gualactic guardian buff is not active, or if, we're in catform and energy is above 25, Or if we have the Oath legendary equipped, the debuff linked to it is not up and energy is above 20,Or if we're kyrian and Empower bond cooldown is up and enemies are inferior to 2.\nactions+=/run_action_list,strict=1,name=catweave,if=druid.catweave_bear&!tanking&!covenant.venthyr&buff.incarnation_guardian_of_ursoc.down&buff.berserk_bear.down&((cooldown.thrash_bear.remains>0&cooldown.mangle.remains>0&dot.moonfire.remains>=gcd+0.5&rage<40&buff.incarnation_guardian_of_ursoc.down&buff.berserk_bear.down&buff.galactic_guardian.down)||(buff.cat_form.up&energy>25)||(dot.rake.refreshable&dot.rip.refreshable)||(runeforge.oath_of_the_elder_druid.equipped&!buff.oath_of_the_elder_druid.up&(buff.cat_form.up&energy>20)&buff.heart_of_the_wild.remains<=10)||(covenant.kyrian&cooldown.empower_bond.remains<=1&active_enemies<2)||(buff.heart_of_the_wild.up&energy>90))\nactions+=/run_action_list,strict=1,name=catweave,if=druid.catweave_bear&!tanking&covenant.venthyr&((cooldown.thrash_bear.remains>0&cooldown.mangle.remains>0&dot.moonfire.remains>=gcd+0.5&rage<40&buff.incarnation_guardian_of_ursoc.down&buff.berserk_bear.down&buff.galactic_guardian.down)||(buff.cat_form.up&energy>25)||(dot.rake.refreshable&dot.rip.refreshable&rage<40&buff.incarnation_guardian_of_ursoc.down&buff.berserk_bear.down&buff.galactic_guardian.down))\nactions+=/run_action_list,strict=1,name=catweave,if=!druid.catweave_bear&buff.cat_form.up\n## Owlweaving action list will be ran if, mangle/thrash are on cd, rage is below 15, zerk and incarnation are down and Gualactic guardian buff is not active. Or if, we're in moonkin form and sunfire is refreshable, Or if we have the Oath legendary equipped, the debuff linked to it is not up.Or if we're kyrian and Empower bond cooldown is up and enemies are below 2, or if we're Night fae and Convoke cd is up.\nactions+=/run_action_list,strict=1,name=owlweave,if=druid.owlweave_bear&!tanking&buff.incarnation_guardian_of_ursoc.down&buff.berserk_bear.down&((cooldown.thrash_bear.remains>0&cooldown.mangle.remains>0&buff.galactic_guardian.down)||(buff.moonkin_form.up&dot.sunfire.refreshable)||(runeforge.oath_of_the_elder_druid.equipped&!buff.oath_of_the_elder_druid.up)||(covenant.night_fae&cooldown.convoke_the_spirits.remains<=1))\nactions+=/run_action_list,strict=1,name=owlweave,if=!druid.owlweave_bear&buff.moonkin_form.up\n# If we're a nightfae and we don't want to catweave/owlweave, and we have balance/feral affinity talented, Whenever convoke cd is up we switch into affinity form to cast it, here moonkin form.\nactions+=/run_action_list,name=oconvoke,if=settings.shift_for_convoke&((talent.balance_affinity.enabled)&(!druid.catweave_bear)&(!druid.owlweave_bear)&(covenant.night_fae&cooldown.convoke_the_spirits.remains<=1))\n# If we're a nightfae and we don't want to catweave/owlweave, and we have balance/feral affinity talented, Whenever convoke cd is up we switch into affinity form to cast it, here catform form.\nactions+=/run_action_list,name=cconvoke,if=settings.shift_for_convoke&((talent.feral_affinity.enabled)&(!druid.catweave_bear)&(!druid.owlweave_bear)&(covenant.night_fae&cooldown.convoke_the_spirits.remains<=1))\nactions+=/call_action_list,name=mitigation\nactions+=/run_action_list,name=bear\n\nactions.bear=bear_form,if=!buff.bear_form.up\nactions.bear+=/heart_of_the_wild,if=talent.heart_of_the_wild.enabled&(talent.balance_affinity.enabled)\nactions.bear+=/moonfire,cycle_targets=1,if=((!ticking&time_to_die>12&buff.galactic_guardian.up)||(refreshable&time_to_die>12&buff.galactic_guardian.up))&active_enemies<6\nactions.bear+=/moonfire,cycle_targets=1,if=((!ticking&time_to_die>12)||(refreshable&time_to_die>12))&active_enemies<6\nactions.bear+=/ravenous_frenzy\nactions.bear+=/use_item,name=jotungeirr_destinys_call,if=covenant.venthyr\nactions.bear+=/use_item,slot=trinket1,if=!buff.prowl.up&covenant.venthyr\nactions.bear+=/use_item,slot=trinket2,if=!buff.prowl.up&covenant.venthyr\nactions.bear+=/potion,if=covenant.venthyr&buff.incarnation.remains>=24&buff.incarnation.remains<=25\nactions.bear+=/convoke_the_spirits,if=!druid.catweave_bear&!druid.owlweave_bear\nactions.bear+=/berserk_bear,if=(buff.ravenous_frenzy.up||!covenant.venthyr)\nactions.bear+=/incarnation,if=(buff.ravenous_frenzy.up||!covenant.venthyr)\nactions.bear+=/berserking,if=(buff.berserk_bear.up||buff.incarnation_guardian_of_ursoc.up)\nactions.bear+=/empower_bond\nactions.bear+=/adaptive_swarm,if=(!dot.adaptive_swarm_damage.ticking&!action.adaptive_swarm_damage.in_flight&(!dot.adaptive_swarm_heal.ticking||dot.adaptive_swarm_heal.remains>3)||dot.adaptive_swarm_damage.stack<3&dot.adaptive_swarm_damage.remains<5&dot.adaptive_swarm_damage.ticking)\nactions.bear+=/moonfire,if=buff.galactic_guardian.up&active_enemies<3\nactions.bear+=/thrash_bear,cycle_targets=1,if=refreshable||dot.thrash_bear.stack<3||(dot.thrash_bear.stack<4&runeforge.luffainfused_embrace.equipped)||active_enemies>=4||buff.berserk_bear.up&buff.berserk_bear.remains<=gcd+0.5\nactions.bear+=/mangle,if=rage.deficit>10&settings.mangle_more\nactions.bear+=/fleshcraft,if=soulbind.pustule_eruption.enabled&((cooldown.thrash_bear.remains>0&cooldown.mangle.remains>0)&(dot.moonfire.remains>=3)&(buff.incarnation_guardian_of_ursoc.down&buff.berserk_bear.down&buff.galactic_guardian.down))||soulbind.volatile_solvent.enabled,interrupt_immediate=1,interrupt_global=1,interrupt_if=soulbind.volatile_solvent&(cooldown.thrash_bear.remains>0&cooldown.mangle.remains>0)\nactions.bear+=/swipe,if=buff.incarnation_guardian_of_ursoc.down&buff.berserk_bear.down&active_enemies>=4\nactions.bear+=/maul,if=(buff.incarnation.up)&active_enemies<3||(buff.incarnation.up)&active_enemies<3&(buff.tooth_and_claw.stack>=2)||(buff.tooth_and_claw.up&buff.tooth_and_claw.remains<1.5)||(buff.savage_combatant.stack>=3)||buff.berserk_bear.up&active_enemies<3\nactions.bear+=/maul,if=(buff.savage_combatant.stack>=1)&(buff.tooth_and_claw.up)&buff.incarnation.up&active_enemies=2\nactions.bear+=/mangle,if=buff.incarnation.up&active_enemies<=3\nactions.bear+=/maul,if=(((buff.tooth_and_claw.stack>=2)||(buff.tooth_and_claw.up&buff.tooth_and_claw.remains<1.5)||(buff.savage_combatant.stack>=3))&active_enemies<3)\nactions.bear+=/thrash_bear,if=active_enemies>1\nactions.bear+=/mangle,if=((rage<90)&active_enemies<3)||((rage<85)&active_enemies<3&talent.soul_of_the_forest.enabled)\nactions.bear+=/pulverize,cycle_targets=1,if=dot.thrash_bear.stack>2\nactions.bear+=/thrash_bear\nactions.bear+=/maul,if=active_enemies<3\nactions.bear+=/swipe_bear\nactions.bear+=/ironfur,if=rage.deficit<40&buff.ironfur.remains<0.5\n\nactions.mitigation=ironfur,if=incoming_damage_5s>ironfur_damage_threshold&buff.ironfur.remains<3*haste\nactions.mitigation+=/renewal,if=tanking&health.pct<65\nactions.mitigation+=/frenzied_regeneration,if=tanking&health.pct<65\nactions.mitigation+=/empower_bond,if=(!druid.catweave_bear&!druid.owlweave_bear)||active_enemies>=2\nactions.mitigation+=/barkskin,if=tanking&health.pct<75&incoming_damage_5s>0.1*health.max\nactions.mitigation+=/survival_instincts,if=buff.survival_instincts.down&buff.barkskin.down&health.pct<60&incoming_damage_5s>0.25*health.max\n\nactions.cooldowns=potion\nactions.cooldowns+=/blood_fury\nactions.cooldowns+=/berserking\nactions.cooldowns+=/arcane_torrent\nactions.cooldowns+=/lights_judgment\nactions.cooldowns+=/fireblood\nactions.cooldowns+=/ancestral_call\nactions.cooldowns+=/bristling_fur,if=buff.bear_form.up\nactions.cooldowns+=/incarnation,if=(dot.moonfire.ticking||active_enemies>1)&dot.thrash_bear.ticking\nactions.cooldowns+=/berserk\nactions.cooldowns+=/use_item,effect_name=cyclotronic_blast\nactions.cooldowns+=/use_items\n\nactions.catweave=heart_of_the_wild,if=talent.heart_of_the_wild.enabled&!buff.heart_of_the_wild.up&!buff.cat_form.up\nactions.catweave+=/prowl\nactions.catweave+=/cat_form,if=!buff.cat_form.up\nactions.catweave+=/rake,if=buff.prowl.up\nactions.catweave+=/heart_of_the_wild,if=talent.heart_of_the_wild.enabled&!buff.heart_of_the_wild.up\nactions.catweave+=/empower_bond,if=druid.catweave_bear\nactions.catweave+=/rake,if=dot.rake.refreshable||energy<45\nactions.catweave+=/rip,if=dot.rip.refreshable&combo_points>=4\nactions.catweave+=/convoke_the_spirits,if=druid.catweave_bear\nactions.catweave+=/ferocious_bite,max_energy=1,if=combo_points>=4&energy>50\nactions.catweave+=/adaptive_swarm,if=(!dot.adaptive_swarm_damage.ticking&!action.adaptive_swarm_damage.in_flight&(!dot.adaptive_swarm_heal.ticking||dot.adaptive_swarm_heal.remains>3)||dot.adaptive_swarm_damage.stack<3&dot.adaptive_swarm_damage.remains<5&dot.adaptive_swarm_damage.ticking)\nactions.catweave+=/fleshcraft,if=soulbind.pustule_eruption.enabled&energy<35||soulbind.volatile_solvent.enabled,interrupt_immediate=1,interrupt_global=1,interrupt_if=soulbind.volatile_solvent&energy<35\nactions.catweave+=/swipe\nactions.catweave+=/rake,if=refreshable&combo_points<5\nactions.catweave+=/shred,if=combo_points<5\n\nactions.cconvoke=heart_of_the_wild,if=talent.heart_of_the_wild.enabled&!buff.heart_of_the_wild.up&!buff.cat_form.up\nactions.cconvoke+=/cat_form,if=!buff.cat_form.up\nactions.cconvoke+=/convoke_the_spirits\n\nactions.oconvoke=heart_of_the_wild,if=talent.heart_of_the_wild.enabled&!buff.heart_of_the_wild.up&!buff.moonkin_form.up\nactions.oconvoke+=/moonkin_form,if=!buff.moonkin_form.up\nactions.oconvoke+=/convoke_the_spirits,if=soulbind.first_strike.enabled&buff.first_strike.up\nactions.oconvoke+=/convoke_the_spirits,if=runeforge.legacy_of_the_sleeper.equipped\nactions.oconvoke+=/starfire,if=eclipse.any_next||eclipse.solar_next\nactions.oconvoke+=/wrath,if=eclipse.any_next||eclipse.lunar_next\nactions.oconvoke+=/convoke_the_spirits\n\nactions.owlweave=heart_of_the_wild,if=talent.heart_of_the_wild.enabled&!buff.heart_of_the_wild.up&!buff.moonkin_form.up\nactions.owlweave+=/moonkin_form,if=!buff.moonkin_form.up\nactions.owlweave+=/starsurge\nactions.owlweave+=/convoke_the_spirits,if=runeforge.legacy_of_the_sleeper.equipped\nactions.owlweave+=/convoke_the_spirits,if=soulbind.first_strike.enabled\nactions.owlweave+=/empower_bond,if=druid.owlweave_bear\nactions.owlweave+=/adaptive_swarm,if=(!dot.adaptive_swarm_damage.ticking&!action.adaptive_swarm_damage.in_flight&(!dot.adaptive_swarm_heal.ticking||dot.adaptive_swarm_heal.remains>3)||dot.adaptive_swarm_damage.stack<3&dot.adaptive_swarm_damage.remains<5&dot.adaptive_swarm_damage.ticking)\nactions.owlweave+=/sunfire,cycle_targets=1,if=refreshable\nactions.owlweave+=/moonfire,cycle_targets=1,if=refreshable||buff.galactic_guardian.up\nactions.owlweave+=/starfire,if=covenant.night_fae&eclipse.any_next\nactions.owlweave+=/wrath,if=!covenant.night_fae&eclipse.any_next\nactions.owlweave+=/convoke_the_spirits,if=(buff.eclipse_lunar.up||buff.eclipse_solar.up)\nactions.owlweave+=/starfire,if=(eclipse.in_lunar||eclipse.solar_next)||(eclipse.in_lunar&buff.starsurge_empowerment_lunar.up)\nactions.owlweave+=/wrath",
 					["spec"] = 104,
+					["profile"] = "## Guardian Druid\n## February 25, 2022\n\n## Changes:\n## - Incorporate Cat/Moonkin priorities (if setting is checked).\n## - Incorporate option to shift (or not) before Convoke.\n\n# Executed before combat begins. Accepts non-harmful actions only.\nactions.precombat+=/kindred_spirits\nactions.precombat+=/heart_of_the_wild,if=talent.heart_of_the_wild.enabled&(druid.catweave_bear&buff.cat_form.up||druid.owlweave_bear&buff.moonkin_form.up||buff.moonkin_form.up&talent.balance_affinity.enabled)\nactions.precombat+=/prowl,if=buff.cat_form.up&druid.catweave_bear\nactions.precombat+=/bear_form,if=!buff.any_form.up&((!druid.owlweave_bear&!druid.catweave_bear)&(!covenant.night_fae))||((!druid.owlweave_bear&!druid.catweave_bear)&(covenant.night_fae&talent.restoration_affinity.enabled))\nactions.precombat+=/wrath,if=buff.moonkin_form.up&druid.owlweave_bear&!covenant.night_fae\nactions.precombat+=/starfire,if=buff.moonkin_form.up&druid.owlweave_bear&covenant.night_fae\nactions.precombat+=/fleshcraft,if=soulbind.pustule_eruption.enabled||soulbind.volatile_solvent.enabled,interrupt_immediate=1,interrupt_global=1,interrupt_if=soulbind.volatile_solvent\n\n# Executed every time the actor is available.\nactions=skull_bash\nactions+=/use_item,name=jotungeirr_destinys_call,if=!buff.prowl.up&!covenant.venthyr\nactions+=/use_item,slot=trinket1,if=!buff.prowl.up&!covenant.venthyr\nactions+=/use_item,slot=trinket2,if=!buff.prowl.up&!covenant.venthyr\nactions+=/potion,if=!covenant.venthyr&(((talent.heart_of_the_wild.enabled&buff.heart_of_the_wild.up)&(druid.catweave_bear||druid.owlweave_bear)&!buff.prowl.up)||((buff.berserk_bear.up||buff.incarnation_guardian_of_ursoc.up)&(!druid.catweave_bear&!druid.owlweave_bear)))\n## Catweaving action list will be ran if, mangle/thrash are on cd, rage is below 40, zerk and incarnation are down and Gualactic guardian buff is not active, or if, we're in catform and energy is above 25, Or if we have the Oath legendary equipped, the debuff linked to it is not up and energy is above 20,Or if we're kyrian and Empower bond cooldown is up and enemies are inferior to 2.\nactions+=/run_action_list,strict=1,name=catweave,if=druid.catweave_bear&!tanking&!covenant.venthyr&buff.incarnation_guardian_of_ursoc.down&buff.berserk_bear.down&((cooldown.thrash_bear.remains>0&cooldown.mangle.remains>0&dot.moonfire.remains>=gcd+0.5&rage<40&buff.incarnation_guardian_of_ursoc.down&buff.berserk_bear.down&buff.galactic_guardian.down)||(buff.cat_form.up&energy>25)||(dot.rake.refreshable&dot.rip.refreshable)||(runeforge.oath_of_the_elder_druid.equipped&!buff.oath_of_the_elder_druid.up&(buff.cat_form.up&energy>20)&buff.heart_of_the_wild.remains<=10)||(covenant.kyrian&cooldown.empower_bond.remains<=1&active_enemies<2)||(buff.heart_of_the_wild.up&energy>90))\nactions+=/run_action_list,strict=1,name=catweave,if=druid.catweave_bear&!tanking&covenant.venthyr&((cooldown.thrash_bear.remains>0&cooldown.mangle.remains>0&dot.moonfire.remains>=gcd+0.5&rage<40&buff.incarnation_guardian_of_ursoc.down&buff.berserk_bear.down&buff.galactic_guardian.down)||(buff.cat_form.up&energy>25)||(dot.rake.refreshable&dot.rip.refreshable&rage<40&buff.incarnation_guardian_of_ursoc.down&buff.berserk_bear.down&buff.galactic_guardian.down))\nactions+=/run_action_list,strict=1,name=catweave,if=!druid.catweave_bear&buff.cat_form.up\n## Owlweaving action list will be ran if, mangle/thrash are on cd, rage is below 15, zerk and incarnation are down and Gualactic guardian buff is not active. Or if, we're in moonkin form and sunfire is refreshable, Or if we have the Oath legendary equipped, the debuff linked to it is not up.Or if we're kyrian and Empower bond cooldown is up and enemies are below 2, or if we're Night fae and Convoke cd is up.\nactions+=/run_action_list,strict=1,name=owlweave,if=druid.owlweave_bear&!tanking&buff.incarnation_guardian_of_ursoc.down&buff.berserk_bear.down&((cooldown.thrash_bear.remains>0&cooldown.mangle.remains>0&buff.galactic_guardian.down)||(buff.moonkin_form.up&dot.sunfire.refreshable)||(runeforge.oath_of_the_elder_druid.equipped&!buff.oath_of_the_elder_druid.up)||(covenant.night_fae&cooldown.convoke_the_spirits.remains<=1))\nactions+=/run_action_list,strict=1,name=owlweave,if=!druid.owlweave_bear&buff.moonkin_form.up\n# If we're a nightfae and we don't want to catweave/owlweave, and we have balance/feral affinity talented, Whenever convoke cd is up we switch into affinity form to cast it, here moonkin form.\nactions+=/run_action_list,name=oconvoke,if=settings.shift_for_convoke&((talent.balance_affinity.enabled)&(!druid.catweave_bear)&(!druid.owlweave_bear)&(covenant.night_fae&cooldown.convoke_the_spirits.remains<=1))\n# If we're a nightfae and we don't want to catweave/owlweave, and we have balance/feral affinity talented, Whenever convoke cd is up we switch into affinity form to cast it, here catform form.\nactions+=/run_action_list,name=cconvoke,if=settings.shift_for_convoke&((talent.feral_affinity.enabled)&(!druid.catweave_bear)&(!druid.owlweave_bear)&(covenant.night_fae&cooldown.convoke_the_spirits.remains<=1))\nactions+=/call_action_list,name=mitigation\nactions+=/run_action_list,name=bear\n\nactions.bear=bear_form,if=!buff.bear_form.up\nactions.bear+=/heart_of_the_wild,if=talent.heart_of_the_wild.enabled&(talent.balance_affinity.enabled)\nactions.bear+=/moonfire,cycle_targets=1,if=((!ticking&time_to_die>12&buff.galactic_guardian.up)||(refreshable&time_to_die>12&buff.galactic_guardian.up))&active_enemies<6\nactions.bear+=/moonfire,cycle_targets=1,if=((!ticking&time_to_die>12)||(refreshable&time_to_die>12))&active_enemies<6\nactions.bear+=/ravenous_frenzy\nactions.bear+=/use_item,name=jotungeirr_destinys_call,if=covenant.venthyr\nactions.bear+=/use_item,slot=trinket1,if=!buff.prowl.up&covenant.venthyr\nactions.bear+=/use_item,slot=trinket2,if=!buff.prowl.up&covenant.venthyr\nactions.bear+=/potion,if=covenant.venthyr&buff.incarnation.remains>=24&buff.incarnation.remains<=25\nactions.bear+=/convoke_the_spirits,if=!druid.catweave_bear&!druid.owlweave_bear\nactions.bear+=/berserk_bear,if=(buff.ravenous_frenzy.up||!covenant.venthyr)\nactions.bear+=/incarnation,if=(buff.ravenous_frenzy.up||!covenant.venthyr)\nactions.bear+=/berserking,if=(buff.berserk_bear.up||buff.incarnation_guardian_of_ursoc.up)\nactions.bear+=/empower_bond\nactions.bear+=/adaptive_swarm,if=(!dot.adaptive_swarm_damage.ticking&!action.adaptive_swarm_damage.in_flight&(!dot.adaptive_swarm_heal.ticking||dot.adaptive_swarm_heal.remains>3)||dot.adaptive_swarm_damage.stack<3&dot.adaptive_swarm_damage.remains<5&dot.adaptive_swarm_damage.ticking)\nactions.bear+=/moonfire,if=buff.galactic_guardian.up&active_enemies<3\nactions.bear+=/thrash_bear,cycle_targets=1,if=refreshable||dot.thrash_bear.stack<3||(dot.thrash_bear.stack<4&runeforge.luffainfused_embrace.equipped)||active_enemies>=4||buff.berserk_bear.up&buff.berserk_bear.remains<=gcd+0.5\nactions.bear+=/mangle,if=rage.deficit>10&settings.mangle_more\nactions.bear+=/fleshcraft,if=soulbind.pustule_eruption.enabled&((cooldown.thrash_bear.remains>0&cooldown.mangle.remains>0)&(dot.moonfire.remains>=3)&(buff.incarnation_guardian_of_ursoc.down&buff.berserk_bear.down&buff.galactic_guardian.down))||soulbind.volatile_solvent.enabled,interrupt_immediate=1,interrupt_global=1,interrupt_if=soulbind.volatile_solvent&(cooldown.thrash_bear.remains>0&cooldown.mangle.remains>0)\nactions.bear+=/swipe,if=buff.incarnation_guardian_of_ursoc.down&buff.berserk_bear.down&active_enemies>=4\nactions.bear+=/maul,if=(buff.incarnation.up)&active_enemies<3||(buff.incarnation.up)&active_enemies<3&(buff.tooth_and_claw.stack>=2)||(buff.tooth_and_claw.up&buff.tooth_and_claw.remains<1.5)||(buff.savage_combatant.stack>=3)||buff.berserk_bear.up&active_enemies<3\nactions.bear+=/maul,if=(buff.savage_combatant.stack>=1)&(buff.tooth_and_claw.up)&buff.incarnation.up&active_enemies=2\nactions.bear+=/mangle,if=buff.incarnation.up&active_enemies<=3\nactions.bear+=/maul,if=(((buff.tooth_and_claw.stack>=2)||(buff.tooth_and_claw.up&buff.tooth_and_claw.remains<1.5)||(buff.savage_combatant.stack>=3))&active_enemies<3)\nactions.bear+=/thrash_bear,if=active_enemies>1\nactions.bear+=/mangle,if=((rage<90)&active_enemies<3)||((rage<85)&active_enemies<3&talent.soul_of_the_forest.enabled)\nactions.bear+=/pulverize,cycle_targets=1,if=dot.thrash_bear.stack>2\nactions.bear+=/thrash_bear\nactions.bear+=/maul,if=active_enemies<3\nactions.bear+=/swipe_bear\nactions.bear+=/ironfur,if=rage.deficit<40&buff.ironfur.remains<0.5\n\nactions.mitigation=ironfur,if=incoming_damage_5s>ironfur_damage_threshold&buff.ironfur.remains<3*haste\nactions.mitigation+=/renewal,if=tanking&health.pct<65\nactions.mitigation+=/frenzied_regeneration,if=tanking&health.pct<65\nactions.mitigation+=/empower_bond,if=(!druid.catweave_bear&!druid.owlweave_bear)||active_enemies>=2\nactions.mitigation+=/barkskin,if=tanking&health.pct<75&incoming_damage_5s>0.1*health.max\nactions.mitigation+=/survival_instincts,if=buff.survival_instincts.down&buff.barkskin.down&health.pct<60&incoming_damage_5s>0.25*health.max\n\nactions.cooldowns=potion\nactions.cooldowns+=/blood_fury\nactions.cooldowns+=/berserking\nactions.cooldowns+=/arcane_torrent\nactions.cooldowns+=/lights_judgment\nactions.cooldowns+=/fireblood\nactions.cooldowns+=/ancestral_call\nactions.cooldowns+=/bristling_fur,if=buff.bear_form.up\nactions.cooldowns+=/incarnation,if=(dot.moonfire.ticking||active_enemies>1)&dot.thrash_bear.ticking\nactions.cooldowns+=/berserk\nactions.cooldowns+=/use_item,effect_name=cyclotronic_blast\nactions.cooldowns+=/use_items\n\nactions.catweave=heart_of_the_wild,if=talent.heart_of_the_wild.enabled&!buff.heart_of_the_wild.up&!buff.cat_form.up\nactions.catweave+=/prowl\nactions.catweave+=/cat_form,if=!buff.cat_form.up\nactions.catweave+=/rake,if=buff.prowl.up\nactions.catweave+=/heart_of_the_wild,if=talent.heart_of_the_wild.enabled&!buff.heart_of_the_wild.up\nactions.catweave+=/empower_bond,if=druid.catweave_bear\nactions.catweave+=/rake,if=dot.rake.refreshable||energy<45\nactions.catweave+=/rip,if=dot.rip.refreshable&combo_points>=4\nactions.catweave+=/convoke_the_spirits,if=druid.catweave_bear\nactions.catweave+=/ferocious_bite,max_energy=1,if=combo_points>=4&energy>50\nactions.catweave+=/adaptive_swarm,if=(!dot.adaptive_swarm_damage.ticking&!action.adaptive_swarm_damage.in_flight&(!dot.adaptive_swarm_heal.ticking||dot.adaptive_swarm_heal.remains>3)||dot.adaptive_swarm_damage.stack<3&dot.adaptive_swarm_damage.remains<5&dot.adaptive_swarm_damage.ticking)\nactions.catweave+=/fleshcraft,if=soulbind.pustule_eruption.enabled&energy<35||soulbind.volatile_solvent.enabled,interrupt_immediate=1,interrupt_global=1,interrupt_if=soulbind.volatile_solvent&energy<35\nactions.catweave+=/swipe\nactions.catweave+=/rake,if=refreshable&combo_points<5\nactions.catweave+=/shred,if=combo_points<5\n\nactions.cconvoke=heart_of_the_wild,if=talent.heart_of_the_wild.enabled&!buff.heart_of_the_wild.up&!buff.cat_form.up\nactions.cconvoke+=/cat_form,if=!buff.cat_form.up\nactions.cconvoke+=/convoke_the_spirits\n\nactions.oconvoke=heart_of_the_wild,if=talent.heart_of_the_wild.enabled&!buff.heart_of_the_wild.up&!buff.moonkin_form.up\nactions.oconvoke+=/moonkin_form,if=!buff.moonkin_form.up\nactions.oconvoke+=/convoke_the_spirits,if=soulbind.first_strike.enabled&buff.first_strike.up\nactions.oconvoke+=/convoke_the_spirits,if=runeforge.legacy_of_the_sleeper.equipped\nactions.oconvoke+=/starfire,if=eclipse.any_next||eclipse.solar_next\nactions.oconvoke+=/wrath,if=eclipse.any_next||eclipse.lunar_next\nactions.oconvoke+=/convoke_the_spirits\n\nactions.owlweave=heart_of_the_wild,if=talent.heart_of_the_wild.enabled&!buff.heart_of_the_wild.up&!buff.moonkin_form.up\nactions.owlweave+=/moonkin_form,if=!buff.moonkin_form.up\nactions.owlweave+=/starsurge\nactions.owlweave+=/convoke_the_spirits,if=runeforge.legacy_of_the_sleeper.equipped\nactions.owlweave+=/convoke_the_spirits,if=soulbind.first_strike.enabled\nactions.owlweave+=/empower_bond,if=druid.owlweave_bear\nactions.owlweave+=/adaptive_swarm,if=(!dot.adaptive_swarm_damage.ticking&!action.adaptive_swarm_damage.in_flight&(!dot.adaptive_swarm_heal.ticking||dot.adaptive_swarm_heal.remains>3)||dot.adaptive_swarm_damage.stack<3&dot.adaptive_swarm_damage.remains<5&dot.adaptive_swarm_damage.ticking)\nactions.owlweave+=/sunfire,cycle_targets=1,if=refreshable\nactions.owlweave+=/moonfire,cycle_targets=1,if=refreshable||buff.galactic_guardian.up\nactions.owlweave+=/starfire,if=covenant.night_fae&eclipse.any_next\nactions.owlweave+=/wrath,if=!covenant.night_fae&eclipse.any_next\nactions.owlweave+=/convoke_the_spirits,if=(buff.eclipse_lunar.up||buff.eclipse_solar.up)\nactions.owlweave+=/starfire,if=(eclipse.in_lunar||eclipse.solar_next)||(eclipse.in_lunar&buff.starsurge_empowerment_lunar.up)\nactions.owlweave+=/wrath",
 				},
 			},
 		},
@@ -36211,18 +36346,20 @@ HekiliDB = {
 		},
 		["Durlok - Black Dragonflight"] = {
 			["runOnce"] = {
-				["forceEnableAllClassesOnceDueToBug_20220225-104"] = true,
-				["resetPotionsToDefaults_20190717"] = true,
-				["autoconvertDelaySweepToExtend_20190729"] = true,
-				["forceEnableAllClassesOnceDueToBug_20220225-103"] = true,
+				["forceEnableAllClassesOnceDueToBug_20220225"] = true,
+				["forceReloadAllDefaultPriorities_20220228"] = true,
+				["autoconvertDisplayToggle_20190621_1"] = true,
 				["autoconvertGlowsForCustomGlow_20190326"] = true,
+				["autoconvertDelaySweepToExtend_20190729"] = true,
 				["updateMaxRefreshToNewSpecOptions_20220222"] = true,
-				["forceEnableEnhancedRecheckBoomkin_20210712"] = true,
+				["resetGlobalCooldownSync_20210403"] = true,
+				["forceEnableAllClassesOnceDueToBug_20220225-104"] = true,
 				["resetRogueMfDOption_20200226"] = true,
+				["resetPotionsToDefaults_20190717"] = true,
 				["resetAllPotions_20201209"] = true,
 				["enableAllOfTheThings_20180820"] = true,
-				["resetGlobalCooldownSync_20210403"] = true,
-				["autoconvertDisplayToggle_20190621_1"] = true,
+				["forceEnableEnhancedRecheckBoomkin_20210712"] = true,
+				["forceEnableAllClassesOnceDueToBug_20220225-103"] = true,
 				["forceEnableAllClassesOnceDueToBug_20220225-102"] = true,
 				["resetAberrantPackageDates_20190728_1"] = true,
 			},
@@ -36233,11 +36370,11 @@ HekiliDB = {
 						["brutal_charges"] = 2,
 						["owlweave_cat"] = false,
 					},
-					["package"] = "Feral",
+					["potion"] = "spectral_agility",
 					["aoe"] = 3,
 					["damageExpiration"] = 3,
 					["potionsReset"] = 20180919.1,
-					["potion"] = "spectral_agility",
+					["package"] = "Feral",
 				},
 				[104] = {
 					["enabled"] = true,
@@ -36249,25 +36386,25 @@ HekiliDB = {
 						["owlweave_bear"] = false,
 						["shift_for_convoke"] = false,
 					},
-					["package"] = "Guardian",
+					["potion"] = "spectral_agility",
 					["aoe"] = 3,
 					["damageExpiration"] = 6,
 					["potionsReset"] = 20180919.1,
-					["potion"] = "spectral_agility",
+					["package"] = "Guardian",
 				},
 				[102] = {
 					["enabled"] = true,
 					["package"] = "Balance",
-					["enhancedRecheck"] = true,
 					["settings"] = {
 						["starlord_cancel"] = false,
 						["solo_drift"] = false,
 					},
+					["potion"] = "spectral_intellect",
+					["enhancedRecheck"] = true,
 					["aoe"] = 3,
-					["nameplates"] = false,
 					["damageExpiration"] = 6,
 					["potionsReset"] = 20180919.1,
-					["potion"] = "spectral_intellect",
+					["nameplates"] = false,
 				},
 			},
 			["packs"] = {
@@ -36281,8 +36418,8 @@ HekiliDB = {
 						["filler"] = {
 							{
 								["enabled"] = true,
-								["criteria"] = "variable.filler = 1 & refreshable & dot.rake.pmultiplier <= 1.2 * persistent_multiplier",
 								["action"] = "rake",
+								["criteria"] = "variable.filler = 1 & refreshable & dot.rake.pmultiplier <= 1.2 * persistent_multiplier",
 								["cycle_targets"] = 1,
 							}, -- [1]
 							{
@@ -36324,8 +36461,8 @@ HekiliDB = {
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["criteria"] = "refreshable & druid.rip.ticks_gained_on_refresh > variable.rip_ticks & ( ( buff.tigers_fury.up || ! ticking ) & ( buff.bloodtalons.up || ! talent.bloodtalons.enabled ) || ! talent.sabertooth.enabled ) & ( spell_targets.primal_wrath = 1 || ! talent.primal_wrath.enabled ) & ( active_dot.rip = 0 || ticking & active_dot.rip = 1 || ! runeforge.draught_of_deep_focus.enabled || ! talent.sabertooth.enabled )",
 								["action"] = "rip",
+								["criteria"] = "refreshable & druid.rip.ticks_gained_on_refresh > variable.rip_ticks & ( ( buff.tigers_fury.up || ! ticking ) & ( buff.bloodtalons.up || ! talent.bloodtalons.enabled ) || ! talent.sabertooth.enabled ) & ( spell_targets.primal_wrath = 1 || ! talent.primal_wrath.enabled ) & ( active_dot.rip = 0 || ticking & active_dot.rip = 1 || ! runeforge.draught_of_deep_focus.enabled || ! talent.sabertooth.enabled )",
 								["cycle_targets"] = 1,
 							}, -- [4]
 							{
@@ -36341,10 +36478,32 @@ HekiliDB = {
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.bs_inc.up & talent.soul_of_the_forest.enabled || cooldown.convoke_the_spirits.remains < 1 & covenant.night_fae",
 								["action"] = "ferocious_bite",
+								["criteria"] = "buff.bs_inc.up & talent.soul_of_the_forest.enabled || cooldown.convoke_the_spirits.remains < 1 & covenant.night_fae",
 								["cycle_targets"] = 1,
 							}, -- [7]
+						},
+						["balance"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.eclipse_solar.down & buff.eclipse_lunar.down & ( refreshable || ( active_enemies > 1 & active_dot.sunfire < active_enemies ) )",
+								["action"] = "sunfire",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.eclipse_solar.remains > 10 + cast_time || buff.eclipse_lunar.remains > 10 + cast_time",
+								["action"] = "starsurge",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.eclipse_lunar.remains > cast_time || buff.eclipse_solar.down & solar_eclipse > 0 || buff.eclipse_solar.down & lunar_eclipse - action.wrath.in_flight < 1",
+								["action"] = "starfire",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.eclipse_solar.remains > cast_time || buff.eclipse_lunar.down & lunar_eclipse - action.wrath.in_flight > 0",
+								["action"] = "wrath",
+							}, -- [4]
 						},
 						["setup"] = {
 							{
@@ -36370,8 +36529,8 @@ HekiliDB = {
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["action"] = "call_action_list",
 								["criteria"] = "talent.bloodtalons.enabled & buff.bloodtalons.down & ( combo_points < 5 || spell_targets.thrash_cat = 1 )",
+								["action"] = "call_action_list",
 								["list_name"] = "bloodtalons",
 							}, -- [5]
 							{
@@ -36387,54 +36546,38 @@ HekiliDB = {
 								["list_name"] = "finisher",
 							}, -- [7]
 						},
-						["balance"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.eclipse_solar.down & buff.eclipse_lunar.down & ( refreshable || ( active_enemies > 1 & active_dot.sunfire < active_enemies ) )",
-								["action"] = "sunfire",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.eclipse_solar.remains > 10 + cast_time || buff.eclipse_lunar.remains > 10 + cast_time",
-								["action"] = "starsurge",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.eclipse_lunar.remains > cast_time || buff.eclipse_solar.down & solar_eclipse > 0 || buff.eclipse_solar.down & lunar_eclipse - action.wrath.in_flight < 1",
-								["action"] = "starfire",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.eclipse_solar.remains > cast_time || buff.eclipse_lunar.down & lunar_eclipse - action.wrath.in_flight > 0",
-								["action"] = "wrath",
-							}, -- [4]
-						},
 						["default"] = {
 							{
+								["enabled"] = true,
 								["action"] = "run_action_list",
 								["strict"] = 1,
 								["criteria"] = "buff.moonkin_form.up & ! druid.owlweave_cat",
 								["list_name"] = "balance",
 							}, -- [1]
 							{
+								["enabled"] = true,
 								["action"] = "call_action_list",
 								["strict"] = 1,
 								["criteria"] = "druid.owlweave_cat",
 								["list_name"] = "owlweave",
 							}, -- [2]
 							{
+								["enabled"] = true,
 								["description"] = "Prowl whenever possible",
 								["action"] = "prowl",
 							}, -- [3]
 							{
+								["enabled"] = true,
 								["criteria"] = "buff.cat_form.down",
 								["action"] = "tigers_fury",
 							}, -- [4]
 							{
+								["enabled"] = true,
 								["criteria"] = "buff.cat_form.down",
 								["action"] = "cat_form",
 							}, -- [5]
 							{
+								["enabled"] = true,
 								["action"] = "run_action_list",
 								["description"] = "One shot stealth",
 								["strict"] = 1,
@@ -36443,34 +36586,41 @@ HekiliDB = {
 							}, -- [6]
 							{
 								["action"] = "skull_bash",
+								["enabled"] = true,
 							}, -- [7]
 							{
+								["enabled"] = true,
 								["action"] = "call_action_list",
 								["strict"] = 1,
 								["criteria"] = "active_dot.rip = 0",
 								["list_name"] = "setup",
 							}, -- [8]
 							{
+								["enabled"] = true,
 								["action"] = "call_action_list",
 								["list_name"] = "cooldown",
 							}, -- [9]
 							{
-								["action"] = "rip",
+								["enabled"] = true,
 								["description"] = "Necrolord: Cast 3 or 4 combo point rips on single target outside of berserk or during berserk if feral frenzy is up OR apply a 5cp Rip when TF is up and will soon fall off.",
 								["criteria"] = "covenant.necrolord & ( ! talent.bloodtalons.enabled || buff.bloodtalons.up ) & spell_targets.thrash_cat = 1 & ( combo_points > 2 & refreshable & druid.rip.ticks_gained_on_refresh > variable.rip_ticks & ( ! buff.bs_inc.up || cooldown.bs_inc.up || ( buff.bs_inc.up & cooldown.feral_frenzy.up ) ) || combo_points = 5 & buff.tigers_fury.up & buff.tigers_fury.remains < 4 & druid.rip.ticks_gained_on_refresh > 5 )",
+								["action"] = "rip",
 							}, -- [10]
 							{
+								["enabled"] = true,
 								["action"] = "run_action_list",
 								["strict"] = 1,
 								["criteria"] = "combo_points >= ( 5 - variable.fourcp_bite )",
 								["list_name"] = "finisher",
 							}, -- [11]
 							{
-								["action"] = "primal_wrath",
+								["enabled"] = true,
 								["criteria"] = "druid.primal_wrath.ticks_gained_on_refresh >= 20 & combo_points >= 2",
+								["action"] = "primal_wrath",
 								["line_cd"] = "5",
 							}, -- [12]
 							{
+								["enabled"] = true,
 								["action"] = "call_action_list",
 								["description"] = "Multi-gcd stealth",
 								["strict"] = 1,
@@ -36478,101 +36628,126 @@ HekiliDB = {
 								["list_name"] = "stealth",
 							}, -- [13]
 							{
-								["criteria"] = "talent.bloodtalons.enabled & buff.bloodtalons.down & active_bt_triggers = 0",
+								["enabled"] = true,
+								["action"] = "wait",
 								["sec"] = "( ( 115 - 23 * buff.incarnation_king_of_the_jungle.up ) - ( energy.current + 3.5 * energy.regen + ( 40 * buff.clearcasting.up ) ) ) / energy.regen",
 								["description"] = "The most expensive BT cycle (Thresh Shred Swipe cost 115 energy, make sure we can make that in 4 globals)",
-								["action"] = "wait",
+								["criteria"] = "talent.bloodtalons.enabled & buff.bloodtalons.down & active_bt_triggers = 0",
 							}, -- [14]
 							{
-								["action"] = "run_action_list",
+								["enabled"] = true,
 								["criteria"] = "talent.bloodtalons.enabled & buff.bloodtalons.down",
+								["action"] = "run_action_list",
 								["list_name"] = "bloodtalons",
 							}, -- [15]
 							{
-								["criteria"] = "buff.apex_predators_craving.up",
+								["enabled"] = true,
 								["action"] = "ferocious_bite",
+								["criteria"] = "buff.apex_predators_craving.up",
 								["cycle_targets"] = 1,
 							}, -- [16]
 							{
+								["enabled"] = true,
 								["for_next"] = 1,
 								["action"] = "pool_resource",
 							}, -- [17]
 							{
-								["criteria"] = "( refreshable || persistent_multiplier > dot.rake.pmultiplier ) & druid.rake.ticks_gained_on_refresh > spell_targets.swipe_cat * 2 - 2",
+								["enabled"] = true,
 								["action"] = "rake",
+								["criteria"] = "( refreshable || persistent_multiplier > dot.rake.pmultiplier ) & druid.rake.ticks_gained_on_refresh > spell_targets.swipe_cat * 2 - 2",
 								["cycle_targets"] = 1,
 							}, -- [18]
 							{
-								["criteria"] = "( refreshable || persistent_multiplier > dot.lunar_inspiration.pmultiplier ) & druid.lunar_inspiration.ticks_gained_on_refresh > spell_targets.swipe_cat * 2 - 2",
+								["enabled"] = true,
 								["action"] = "lunar_inspiration",
+								["criteria"] = "( refreshable || persistent_multiplier > dot.lunar_inspiration.pmultiplier ) & druid.lunar_inspiration.ticks_gained_on_refresh > spell_targets.swipe_cat * 2 - 2",
 								["cycle_targets"] = 1,
 							}, -- [19]
 							{
+								["enabled"] = true,
 								["for_next"] = 1,
 								["action"] = "pool_resource",
 							}, -- [20]
 							{
-								["criteria"] = "refreshable & druid.thrash_cat.ticks_gained_on_refresh > ( 4 + spell_targets.thrash_cat * 4 ) / ( 1 + mastery_value ) - conduit.taste_for_blood.enabled - covenant.necrolord & ( ! buff.bs_inc.up || spell_targets.thrash_cat > 1 )",
+								["enabled"] = true,
 								["action"] = "thrash_cat",
+								["criteria"] = "refreshable & druid.thrash_cat.ticks_gained_on_refresh > ( 4 + spell_targets.thrash_cat * 4 ) / ( 1 + mastery_value ) - conduit.taste_for_blood.enabled - covenant.necrolord & ( ! buff.bs_inc.up || spell_targets.thrash_cat > 1 )",
 								["cycle_targets"] = 1,
 							}, -- [21]
 							{
+								["enabled"] = true,
 								["for_next"] = 1,
 								["action"] = "pool_resource",
 							}, -- [22]
 							{
+								["enabled"] = true,
 								["criteria"] = "( raid_event.adds.in > ( 1 + max_charges - charges_fractional ) * recharge_time ) & ( spell_targets.brutal_slash * action.brutal_slash.damage / action.brutal_slash.cost ) > ( action.shred.damage / action.shred.cost )",
 								["action"] = "brutal_slash",
 							}, -- [23]
 							{
+								["enabled"] = true,
 								["criteria"] = "spell_targets.swipe_cat > 1 + buff.bs_inc.up * 2",
 								["action"] = "swipe_cat",
 							}, -- [24]
 							{
+								["enabled"] = true,
 								["criteria"] = "spell_targets.thrash_cat > 3",
 								["action"] = "thrash_cat",
 							}, -- [25]
 							{
+								["enabled"] = true,
 								["criteria"] = "buff.clearcasting.up & ( buff.sudden_ambush.down & buff.shadowmeld.down || buff.bs_inc.up )",
 								["action"] = "shred",
 							}, -- [26]
 							{
+								["enabled"] = true,
 								["action"] = "call_action_list",
 								["list_name"] = "filler",
 							}, -- [27]
 						},
 						["precombat"] = {
 							{
-								["value"] = "0",
+								["enabled"] = true,
+								["op"] = "set",
 								["action"] = "variable",
+								["value"] = "0",
 								["var_name"] = "fourcp_bite",
 							}, -- [1]
 							{
-								["value"] = "1",
-								["var_name"] = "filler",
+								["enabled"] = true,
+								["op"] = "set",
 								["action"] = "variable",
+								["value"] = "1",
 								["description"] = "Shred = 0, Non-snapshot Rake = 1, Snapshot Rake = 2, LI = 3, Swipe = 4",
+								["var_name"] = "filler",
 							}, -- [2]
 							{
-								["value"] = "7",
+								["enabled"] = true,
+								["op"] = "set",
 								["action"] = "variable",
+								["value"] = "7",
 								["var_name"] = "rip_ticks",
 							}, -- [3]
 							{
 								["action"] = "kindred_spirits",
+								["enabled"] = true,
 							}, -- [4]
 							{
 								["action"] = "bottled_flayedwing_toxin",
+								["enabled"] = true,
 							}, -- [5]
 							{
+								["enabled"] = true,
 								["criteria"] = "soulbind.pustule_eruption.enabled || soulbind.volatile_solvent.enabled",
 								["action"] = "fleshcraft",
 							}, -- [6]
 							{
+								["enabled"] = true,
 								["criteria"] = "buff.moonkin_form.down",
 								["action"] = "prowl",
 							}, -- [7]
 							{
+								["enabled"] = true,
 								["criteria"] = "buff.moonkin_form.down",
 								["action"] = "cat_form",
 							}, -- [8]
@@ -36580,20 +36755,20 @@ HekiliDB = {
 						["bloodtalons"] = {
 							{
 								["enabled"] = true,
-								["criteria"] = "( ! ticking || ( 1.2 * persistent_multiplier >= dot.rake.pmultiplier ) || ( active_bt_triggers = 2 & refreshable ) ) & buff.bt_rake.down",
 								["action"] = "rake",
+								["criteria"] = "( ! ticking || ( 1.2 * persistent_multiplier >= dot.rake.pmultiplier ) || ( active_bt_triggers = 2 & refreshable ) ) & buff.bt_rake.down",
 								["cycle_targets"] = 1,
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["criteria"] = "refreshable & buff.bt_moonfire.down",
 								["action"] = "lunar_inspiration",
+								["criteria"] = "refreshable & buff.bt_moonfire.down",
 								["cycle_targets"] = 1,
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["criteria"] = "refreshable & buff.bt_thrash.down & druid.thrash_cat.ticks_gained_on_refresh > ( 4 + spell_targets.thrash_cat * 4 ) / ( 1 + mastery_value ) - conduit.taste_for_blood.enabled",
 								["action"] = "thrash_cat",
+								["criteria"] = "refreshable & buff.bt_thrash.down & druid.thrash_cat.ticks_gained_on_refresh > ( 4 + spell_targets.thrash_cat * 4 ) / ( 1 + mastery_value ) - conduit.taste_for_blood.enabled",
 								["cycle_targets"] = 1,
 							}, -- [3]
 							{
@@ -36632,8 +36807,8 @@ HekiliDB = {
 								["enabled"] = true,
 								["action"] = "rake",
 								["cycle_targets"] = 1,
-								["description"] = "Rake needs roughly 50% of its length at a minimum to surpass shreds dpe",
 								["criteria"] = "( dot.rake.pmultiplier < 1.5 || refreshable ) & druid.rake.ticks_gained_on_refresh > 2 || ( persistent_multiplier > dot.rake.pmultiplier & buff.bs_inc.up & spell_targets.thrash_cat < 3 & covenant.necrolord ) || buff.bs_inc.remains < 1",
+								["description"] = "Rake needs roughly 50% of its length at a minimum to surpass shreds dpe",
 							}, -- [2]
 							{
 								["enabled"] = true,
@@ -36642,9 +36817,9 @@ HekiliDB = {
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["action"] = "brutal_slash",
 								["description"] = "Brutal Slash is better than stealth Shred at 3 targets",
 								["criteria"] = "spell_targets.brutal_slash > 2",
+								["action"] = "brutal_slash",
 							}, -- [4]
 							{
 								["enabled"] = true,
@@ -36660,28 +36835,28 @@ HekiliDB = {
 						["cooldown"] = {
 							{
 								["enabled"] = true,
-								["criteria"] = "( ( ! dot.adaptive_swarm_damage.ticking || dot.adaptive_swarm_damage.remains < 2 ) & ( dot.adaptive_swarm_damage.stack < 3 || ! dot.adaptive_swarm_heal.stack > 1 ) & ! action.adaptive_swarm_heal.in_flight & ! action.adaptive_swarm_damage.in_flight & ! action.adaptive_swarm.in_flight ) & target.time_to_die > 5 || active_enemies > 2 & ! dot.adaptive_swarm_damage.ticking & energy < 35 & target.time_to_die > 5",
 								["action"] = "adaptive_swarm",
+								["criteria"] = "( ( ! dot.adaptive_swarm_damage.ticking || dot.adaptive_swarm_damage.remains < 2 ) & ( dot.adaptive_swarm_damage.stack < 3 || ! dot.adaptive_swarm_heal.stack > 1 ) & ! action.adaptive_swarm_heal.in_flight & ! action.adaptive_swarm_damage.in_flight & ! action.adaptive_swarm.in_flight ) & target.time_to_die > 5 || active_enemies > 2 & ! dot.adaptive_swarm_damage.ticking & energy < 35 & target.time_to_die > 5",
 								["cycle_targets"] = 1,
 							}, -- [1]
 							{
 								["enabled"] = true,
 								["sync"] = "feral_frenzy",
-								["action"] = "tigers_fury",
-								["criteria"] = "cooldown.bs_inc.up",
 								["description"] = "Cast Tiger's Fury before (or immediatly after) casting Feral Frenzy if Berserk is NOT on cooldown.",
+								["criteria"] = "cooldown.bs_inc.up",
+								["action"] = "tigers_fury",
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["criteria"] = "combo_points < 3 & target.time_to_die > 7 & ( buff.savage_roar.up || ! talent.savage_roar.enabled ) & ( ! cooldown.tigers_fury.up || cooldown.bs_inc.up ) || boss & fight_remains < 8 & fight_remains > 2",
 								["action"] = "feral_frenzy",
+								["criteria"] = "combo_points < 3 & target.time_to_die > 7 & ( buff.savage_roar.up || ! talent.savage_roar.enabled ) & ( ! cooldown.tigers_fury.up || cooldown.bs_inc.up ) || boss & fight_remains < 8 & fight_remains > 2",
 								["cycle_targets"] = 1,
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["action"] = "berserk",
 								["description"] = "TODO: Need to sync with with ravenous frenzy when we run frenzyband, or atleast check if its worth it",
 								["criteria"] = "combo_points >= 3",
+								["action"] = "berserk",
 							}, -- [4]
 							{
 								["enabled"] = true,
@@ -36690,15 +36865,15 @@ HekiliDB = {
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["action"] = "tigers_fury",
 								["description"] = "Try and not waste TF energy, but also just use it for zerk and incarns",
 								["criteria"] = "energy.deficit > 40 || buff.bs_inc.up || ( talent.predator.enabled & shortest_ttd < 3 )",
+								["action"] = "tigers_fury",
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["action"] = "shadowmeld",
 								["description"] = "Might be wrong to use Smeld on Rake in very very niche situations, but very rarely",
 								["criteria"] = "buff.tigers_fury.up & buff.bs_inc.down & combo_points < 4 & buff.sudden_ambush.down & dot.rake.pmultiplier < 1.6 & energy > 40 & druid.rake.ticks_gained_on_refresh > spell_targets.swipe_cat * 2 - 2 & target.time_to_die > 5",
+								["action"] = "shadowmeld",
 							}, -- [7]
 							{
 								["enabled"] = true,
@@ -36717,22 +36892,22 @@ HekiliDB = {
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["action"] = "convoke_the_spirits",
 								["description"] = "TODO: Check moonkin hotw and stuff like this, and maybe better combat remain resync",
 								["criteria"] = "( dot.rip.remains > 4 & combo_points < 5 & ( dot.rake.ticking || spell_targets.thrash_cat > 1 ) & energy.deficit >= 20 ) || boss & fight_remains < 5",
+								["action"] = "convoke_the_spirits",
 							}, -- [11]
 							{
 								["enabled"] = true,
-								["action"] = "empower_bond",
 								["description"] = "Maybe there should be more conditions on the conduit",
 								["criteria"] = "buff.tigers_fury.up || ( conduit.deep_allegiance.enabled )",
+								["action"] = "empower_bond",
 							}, -- [12]
 							{
 								["enabled"] = true,
 								["name"] = "jotungeirr_destinys_call",
-								["action"] = "jotungeirr_destinys_call",
-								["criteria"] = "equipped.jotungeirr_destinys_call",
 								["description"] = "Give priority to on-use weapon",
+								["criteria"] = "equipped.jotungeirr_destinys_call",
+								["action"] = "jotungeirr_destinys_call",
 							}, -- [13]
 							{
 								["action"] = "use_items",
@@ -36752,8 +36927,8 @@ HekiliDB = {
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.moonkin_form.up & spell_targets.thrash_cat < 2 & ! talent.lunar_inspiration.enabled",
 								["action"] = "moonfire",
+								["criteria"] = "buff.moonkin_form.up & spell_targets.thrash_cat < 2 & ! talent.lunar_inspiration.enabled",
 								["line_cd"] = "4*gcd",
 							}, -- [3]
 							{
@@ -36770,143 +36945,169 @@ HekiliDB = {
 					},
 					["version"] = 20220227,
 					["warnings"] = "WARNING:  The import for 'finisher' required some automated changes.\nLine 4: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\n\nWARNING:  The import for 'default' required some automated changes.\nLine 21: Converted SimC syntax % to Lua division operator (/) (1x).\nLine 23: Converted SimC syntax % to Lua division operator (/) (2x).\n\nWARNING:  The import for 'bloodtalons' required some automated changes.\nLine 3: Converted SimC syntax % to Lua division operator (/) (1x).\n\nWARNING:  The import for 'owlweave' required some automated changes.\nLine 4: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 5: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\n\nImported 10 action lists.\n",
-					["profile"] = "## Feral Druid\n## February 27, 2022\n\n## Changes:\n## - druid.owlweave_cat=1 checks to druid.owlweave_cat.\n## - Convert BT pool_resource to wait expression (x2).\n## - Add interruptible Fleshcraft if you have nothing else to do.\n## - Don't hold Convoke for Rip unless you'll really Rip.\n\nactions.precombat+=/variable,name=fourcp_bite,value=0\n# Shred = 0, Non-snapshot Rake = 1, Snapshot Rake = 2, LI = 3, Swipe = 4\nactions.precombat+=/variable,name=filler,value=1\nactions.precombat+=/variable,name=rip_ticks,value=7\nactions.precombat+=/kindred_spirits\nactions.precombat+=/bottled_flayedwing_toxin\nactions.precombat+=/fleshcraft,if=soulbind.pustule_eruption.enabled||soulbind.volatile_solvent.enabled\nactions.precombat+=/prowl,if=buff.moonkin_form.down\nactions.precombat+=/cat_form,if=buff.moonkin_form.down\n\nactions=run_action_list,name=balance,strict=1,if=buff.moonkin_form.up&!druid.owlweave_cat\nactions+=/call_action_list,name=owlweave,strict=1,if=druid.owlweave_cat\n# Prowl whenever possible\nactions+=/prowl\nactions+=/tigers_fury,if=buff.cat_form.down\nactions+=/cat_form,if=buff.cat_form.down\n## actions+=/variable,name=shortest_ttd,value=target.time_to_die\n## actions+=/cycling_variable,name=shortest_ttd,op=min,value=target.time_to_die\n# One shot stealth\nactions+=/run_action_list,name=stealth,strict=1,if=buff.shadowmeld.up||buff.prowl.up\nactions+=/skull_bash\nactions+=/call_action_list,name=setup,strict=1,if=active_dot.rip=0\nactions+=/call_action_list,name=cooldown\n# Necrolord: Cast 3 or 4 combo point rips on single target outside of berserk or during berserk if feral frenzy is up OR apply a 5cp Rip when TF is up and will soon fall off.\nactions+=/rip,if=covenant.necrolord&(!talent.bloodtalons.enabled||buff.bloodtalons.up)&spell_targets.thrash_cat=1&(combo_points>2&refreshable&druid.rip.ticks_gained_on_refresh>variable.rip_ticks&(!buff.bs_inc.up||cooldown.bs_inc.up||(buff.bs_inc.up&cooldown.feral_frenzy.up))||combo_points=5&buff.tigers_fury.up&buff.tigers_fury.remains<4&druid.rip.ticks_gained_on_refresh>5)\nactions+=/run_action_list,name=finisher,strict=1,if=combo_points>=(5-variable.fourcp_bite)\nactions+=/primal_wrath,if=druid.primal_wrath.ticks_gained_on_refresh>=20&combo_points>=2,line_cd=5\n# Multi-gcd stealth\nactions+=/call_action_list,name=stealth,strict=1,if=buff.bs_inc.up\n# The most expensive BT cycle (Thresh Shred Swipe cost 115 energy, make sure we can make that in 4 globals)\nactions+=/wait,sec=((115-23*buff.incarnation_king_of_the_jungle.up)-(energy.current+3.5*energy.regen+(40*buff.clearcasting.up)))/energy.regen,if=talent.bloodtalons.enabled&buff.bloodtalons.down&active_bt_triggers=0\n## actions+=/pool_resource,if=talent.bloodtalons.enabled&buff.bloodtalons.down&(energy+3.5*energy.regen+(40*buff.clearcasting.up))<(115-23*buff.incarnation_king_of_the_jungle.up)&active_bt_triggers=0\nactions+=/run_action_list,name=bloodtalons,if=talent.bloodtalons.enabled&buff.bloodtalons.down\nactions+=/ferocious_bite,cycle_targets=1,if=buff.apex_predators_craving.up\nactions+=/pool_resource,for_next=1\nactions+=/rake,cycle_targets=1,if=(refreshable||persistent_multiplier>dot.rake.pmultiplier)&druid.rake.ticks_gained_on_refresh>spell_targets.swipe_cat*2-2\nactions+=/lunar_inspiration,cycle_targets=1,if=(refreshable||persistent_multiplier>dot.lunar_inspiration.pmultiplier)&druid.lunar_inspiration.ticks_gained_on_refresh>spell_targets.swipe_cat*2-2\nactions+=/pool_resource,for_next=1\nactions+=/thrash_cat,cycle_targets=1,if=refreshable&druid.thrash_cat.ticks_gained_on_refresh>(4+spell_targets.thrash_cat*4)%(1+mastery_value)-conduit.taste_for_blood.enabled-covenant.necrolord&(!buff.bs_inc.up||spell_targets.thrash_cat>1)\nactions+=/pool_resource,for_next=1\nactions+=/brutal_slash,if=(raid_event.adds.in>(1+max_charges-charges_fractional)*recharge_time)&(spell_targets.brutal_slash*action.brutal_slash.damage%action.brutal_slash.cost)>(action.shred.damage%action.shred.cost)\nactions+=/swipe_cat,if=spell_targets.swipe_cat>1+buff.bs_inc.up*2\nactions+=/thrash_cat,if=spell_targets.thrash_cat>3\nactions+=/shred,if=buff.clearcasting.up&(buff.sudden_ambush.down&buff.shadowmeld.down||buff.bs_inc.up)\nactions+=/call_action_list,name=filler\n\nactions.bloodtalons=rake,cycle_targets=1,if=(!ticking||(1.2*persistent_multiplier>=dot.rake.pmultiplier)||(active_bt_triggers=2&refreshable))&buff.bt_rake.down\nactions.bloodtalons+=/lunar_inspiration,cycle_targets=1,if=refreshable&buff.bt_moonfire.down\nactions.bloodtalons+=/thrash_cat,cycle_targets=1,if=refreshable&buff.bt_thrash.down&druid.thrash_cat.ticks_gained_on_refresh>(4+spell_targets.thrash_cat*4)%(1+mastery_value)-conduit.taste_for_blood.enabled\nactions.bloodtalons+=/brutal_slash,if=buff.bt_brutal_slash.down\nactions.bloodtalons+=/swipe_cat,if=buff.bt_swipe.down&spell_targets.swipe_cat>1\nactions.bloodtalons+=/shred,if=buff.bt_shred.down\nactions.bloodtalons+=/swipe_cat,if=buff.bt_swipe.down\nactions.bloodtalons+=/thrash_cat,if=buff.bt_thrash.down\n\nactions.cooldown=adaptive_swarm,cycle_targets=1,if=((!dot.adaptive_swarm_damage.ticking||dot.adaptive_swarm_damage.remains<2)&(dot.adaptive_swarm_damage.stack<3||!dot.adaptive_swarm_heal.stack>1)&!action.adaptive_swarm_heal.in_flight&!action.adaptive_swarm_damage.in_flight&!action.adaptive_swarm.in_flight)&target.time_to_die>5||active_enemies>2&!dot.adaptive_swarm_damage.ticking&energy<35&target.time_to_die>5\n## actions.cooldown+=/fleshcraft,if=(soulbind.pustule_eruption||soulbind.volatile_solvent),interrupt_immediate=1,interrupt_global=1,interrupt_if=soulbind.volatile_solvent\n# Cast Tiger's Fury before (or immediatly after) casting Feral Frenzy if Berserk is NOT on cooldown.\nactions.cooldown+=/tigers_fury,sync=feral_frenzy,if=cooldown.bs_inc.up\nactions.cooldown+=/feral_frenzy,cycle_targets=1,if=combo_points<3&target.time_to_die>7&(buff.savage_roar.up||!talent.savage_roar.enabled)&(!cooldown.tigers_fury.up||cooldown.bs_inc.up)||boss&fight_remains<8&fight_remains>2\n# TODO: Need to sync with with ravenous frenzy when we run frenzyband, or atleast check if its worth it\nactions.cooldown+=/berserk,if=combo_points>=3\nactions.cooldown+=/incarnation,if=combo_points>=3\n# Try and not waste TF energy, but also just use it for zerk and incarns\nactions.cooldown+=/tigers_fury,if=energy.deficit>40||buff.bs_inc.up||(talent.predator.enabled&shortest_ttd<3)\n# Might be wrong to use Smeld on Rake in very very niche situations, but very rarely\nactions.cooldown+=/shadowmeld,if=buff.tigers_fury.up&buff.bs_inc.down&combo_points<4&buff.sudden_ambush.down&dot.rake.pmultiplier<1.6&energy>40&druid.rake.ticks_gained_on_refresh>spell_targets.swipe_cat*2-2&target.time_to_die>5\nactions.cooldown+=/berserking,if=buff.tigers_fury.up||buff.bs_inc.up\nactions.cooldown+=/potion,if=buff.bs_inc.up||boss&fight_remains<cooldown.bs_inc.remains||boss&fight_remains<25\nactions.cooldown+=/ravenous_frenzy,if=buff.bs_inc.up||fight_remains<21\n# TODO: Check moonkin hotw and stuff like this, and maybe better combat remain resync\nactions.cooldown+=/convoke_the_spirits,if=(dot.rip.remains>4&combo_points<5&(dot.rake.ticking||spell_targets.thrash_cat>1)&energy.deficit>=20)||boss&fight_remains<5\n# Maybe there should be more conditions on the conduit\nactions.cooldown+=/empower_bond,if=buff.tigers_fury.up||(conduit.deep_allegiance.enabled)\n# Give priority to on-use weapon\nactions.cooldown+=/use_item,name=jotungeirr_destinys_call,if=equipped.jotungeirr_destinys_call\nactions.cooldown+=/use_items\n\nactions.filler=rake,cycle_targets=1,if=variable.filler=1&refreshable&dot.rake.pmultiplier<=1.2*persistent_multiplier\nactions.filler+=/rake,if=variable.filler=2\nactions.filler+=/lunar_inspiration,if=variable.filler=3\nactions.filler+=/swipe,if=variable.filler=4\nactions.filler+=/shred,if=buff.sudden_ambush.down\n## actions.filler+=/fleshcraft,if=soulbind.pustule_eruption.enabled||soulbind.volatile_solvent.enabled,interrupt_immediate=1,interrupt_global=1,interrupt_if=soulbind.volatile_solvent\n\nactions.finisher=pool_resource,for_next=1\nactions.finisher+=/savage_roar,if=buff.savage_roar.remains<3\nactions.finisher+=/primal_wrath,if=(druid.primal_wrath.ticks_gained_on_refresh>3*(spell_targets.primal_wrath+1)&spell_targets.primal_wrath>1)||spell_targets.primal_wrath>(3+1*talent.sabertooth.enabled)\nactions.finisher+=/rip,cycle_targets=1,if=refreshable&druid.rip.ticks_gained_on_refresh>variable.rip_ticks&((buff.tigers_fury.up||!ticking)&(buff.bloodtalons.up||!talent.bloodtalons.enabled)||!talent.sabertooth.enabled)&(spell_targets.primal_wrath=1||!talent.primal_wrath.enabled)&(active_dot.rip=0||ticking&active_dot.rip=1||!runeforge.draught_of_deep_focus||!talent.sabertooth.enabled)\nactions.finisher+=/savage_roar,if=buff.savage_roar.remains<(combo_points+1)*6*0.3\nactions.finisher+=/ferocious_bite,max_energy=1,cycle_targets=1\nactions.finisher+=/ferocious_bite,cycle_targets=1,if=buff.bs_inc.up&talent.soul_of_the_forest.enabled||cooldown.convoke_the_spirits.remains<1&covenant.night_fae\n\nactions.owlweave=starsurge,if=buff.heart_of_the_wild.up\nactions.owlweave+=/sunfire,line_cd=4*gcd\nactions.owlweave+=/moonfire,line_cd=4*gcd,if=buff.moonkin_form.up&spell_targets.thrash_cat<2&!talent.lunar_inspiration.enabled\nactions.owlweave+=/heart_of_the_wild,if=energy<30&dot.rip.remains>4.5&(cooldown.tigers_fury.remains>=6.5||runeforge.cateye_curio)&buff.clearcasting.stack<1&!buff.apex_predators_craving.up&!buff.bloodlust.up&!buff.bs_inc.up&(cooldown.convoke_the_spirits.remains>6.5||!covenant.night_fae)&(!covenant.necrolord||cooldown.adaptive_swarm.remains>=5||dot.adaptive_swarm_damage.remains>7)\nactions.owlweave+=/moonkin_form,if=energy<30&dot.rip.remains>4.5&(cooldown.tigers_fury.remains>=4.5||runeforge.cateye_curio)&buff.clearcasting.stack<1&!buff.apex_predators_craving.up&!buff.bloodlust.up&(!buff.bs_inc.up||covenant.necrolord&talent.savage_roar.enabled&buff.bs_inc.remains>6)&(cooldown.convoke_the_spirits.remains>6.5||!covenant.night_fae)&(!covenant.necrolord||cooldown.adaptive_swarm.remains>=5||dot.adaptive_swarm_damage.remains>7)&fight_remains>7\n\nactions.setup=lunar_inspiration,if=covenant.necrolord&spell_targets.thrash_cat<4&combo_points<5&!ticking&!buff.bs_inc.up\nactions.setup+=/pool_resource,for_next=1\nactions.setup+=/savage_roar,if=talent.feral_frenzy.enabled&cooldown.feral_frenzy.up&!buff.savage_roar.up&combo_points>1&dot.rake.ticking&(dot.lunar_inspiration.ticking||!talent.lunar_inspiration.enabled)\n## actions.setup+=/pool_resource,if=talent.bloodtalons.enabled&buff.bloodtalons.down&(energy+3.5*energy.regen+(40*buff.clearcasting.up))<(115-23*buff.incarnation_king_of_the_jungle.up)&active_bt_triggers=0\nactions.setup+=/wait,sec=((115-23*buff.incarnation_king_of_the_jungle.up)-(energy.current+3.5*energy.regen+(40*buff.clearcasting.up)))/energy.regen,if=talent.bloodtalons.enabled&buff.bloodtalons.down&active_bt_triggers=0\nactions.setup+=/call_action_list,name=bloodtalons,if=talent.bloodtalons.enabled&buff.bloodtalons.down&(combo_points<5||spell_targets.thrash_cat=1)\nactions.setup+=/call_action_list,name=cooldown\nactions.setup+=/call_action_list,name=finisher,strict=1,if=combo_points>3&(buff.bloodtalons.up||!talent.bloodtalons.enabled)\n\nactions.stealth=pool_resource,for_next=1\n# Rake needs roughly 50% of its length at a minimum to surpass shreds dpe\nactions.stealth+=/rake,cycle_targets=1,if=(dot.rake.pmultiplier<1.5||refreshable)&druid.rake.ticks_gained_on_refresh>2||(persistent_multiplier>dot.rake.pmultiplier&buff.bs_inc.up&spell_targets.thrash_cat<3&covenant.necrolord)||buff.bs_inc.remains<1\nactions.stealth+=/lunar_inspiration,if=spell_targets.thrash_cat<3&refreshable&druid.lunar_inspiration.ticks_gained_on_refresh>5&(combo_points=4||dot.lunar_inspiration.remains<5||!dot.lunar_inspiration.ticking)\n# Brutal Slash is better than stealth Shred at 3 targets\nactions.stealth+=/brutal_slash,if=spell_targets.brutal_slash>2\nactions.stealth+=/pool_resource,for_next=1\nactions.stealth+=/shred,if=combo_points<4&spell_targets.thrash_cat<5\n\nactions.balance=sunfire,if=buff.eclipse_solar.down&buff.eclipse_lunar.down&(refreshable||(active_enemies>1&active_dot.sunfire<active_enemies))\nactions.balance+=/starsurge,if=buff.eclipse_solar.remains>10+cast_time||buff.eclipse_lunar.remains>10+cast_time\nactions.balance+=/starfire,if=buff.eclipse_lunar.remains>cast_time||buff.eclipse_solar.down&solar_eclipse>0||buff.eclipse_solar.down&lunar_eclipse-action.wrath.in_flight<1\nactions.balance+=/wrath,if=buff.eclipse_solar.remains>cast_time||buff.eclipse_lunar.down&lunar_eclipse-action.wrath.in_flight>0",
 					["spec"] = 103,
+					["profile"] = "## Feral Druid\n## February 27, 2022\n\n## Changes:\n## - druid.owlweave_cat=1 checks to druid.owlweave_cat.\n## - Convert BT pool_resource to wait expression (x2).\n## - Add interruptible Fleshcraft if you have nothing else to do.\n## - Don't hold Convoke for Rip unless you'll really Rip.\n\nactions.precombat+=/variable,name=fourcp_bite,value=0\n# Shred = 0, Non-snapshot Rake = 1, Snapshot Rake = 2, LI = 3, Swipe = 4\nactions.precombat+=/variable,name=filler,value=1\nactions.precombat+=/variable,name=rip_ticks,value=7\nactions.precombat+=/kindred_spirits\nactions.precombat+=/bottled_flayedwing_toxin\nactions.precombat+=/fleshcraft,if=soulbind.pustule_eruption.enabled||soulbind.volatile_solvent.enabled\nactions.precombat+=/prowl,if=buff.moonkin_form.down\nactions.precombat+=/cat_form,if=buff.moonkin_form.down\n\nactions=run_action_list,name=balance,strict=1,if=buff.moonkin_form.up&!druid.owlweave_cat\nactions+=/call_action_list,name=owlweave,strict=1,if=druid.owlweave_cat\n# Prowl whenever possible\nactions+=/prowl\nactions+=/tigers_fury,if=buff.cat_form.down\nactions+=/cat_form,if=buff.cat_form.down\n## actions+=/variable,name=shortest_ttd,value=target.time_to_die\n## actions+=/cycling_variable,name=shortest_ttd,op=min,value=target.time_to_die\n# One shot stealth\nactions+=/run_action_list,name=stealth,strict=1,if=buff.shadowmeld.up||buff.prowl.up\nactions+=/skull_bash\nactions+=/call_action_list,name=setup,strict=1,if=active_dot.rip=0\nactions+=/call_action_list,name=cooldown\n# Necrolord: Cast 3 or 4 combo point rips on single target outside of berserk or during berserk if feral frenzy is up OR apply a 5cp Rip when TF is up and will soon fall off.\nactions+=/rip,if=covenant.necrolord&(!talent.bloodtalons.enabled||buff.bloodtalons.up)&spell_targets.thrash_cat=1&(combo_points>2&refreshable&druid.rip.ticks_gained_on_refresh>variable.rip_ticks&(!buff.bs_inc.up||cooldown.bs_inc.up||(buff.bs_inc.up&cooldown.feral_frenzy.up))||combo_points=5&buff.tigers_fury.up&buff.tigers_fury.remains<4&druid.rip.ticks_gained_on_refresh>5)\nactions+=/run_action_list,name=finisher,strict=1,if=combo_points>=(5-variable.fourcp_bite)\nactions+=/primal_wrath,if=druid.primal_wrath.ticks_gained_on_refresh>=20&combo_points>=2,line_cd=5\n# Multi-gcd stealth\nactions+=/call_action_list,name=stealth,strict=1,if=buff.bs_inc.up\n# The most expensive BT cycle (Thresh Shred Swipe cost 115 energy, make sure we can make that in 4 globals)\nactions+=/wait,sec=((115-23*buff.incarnation_king_of_the_jungle.up)-(energy.current+3.5*energy.regen+(40*buff.clearcasting.up)))/energy.regen,if=talent.bloodtalons.enabled&buff.bloodtalons.down&active_bt_triggers=0\n## actions+=/pool_resource,if=talent.bloodtalons.enabled&buff.bloodtalons.down&(energy+3.5*energy.regen+(40*buff.clearcasting.up))<(115-23*buff.incarnation_king_of_the_jungle.up)&active_bt_triggers=0\nactions+=/run_action_list,name=bloodtalons,if=talent.bloodtalons.enabled&buff.bloodtalons.down\nactions+=/ferocious_bite,cycle_targets=1,if=buff.apex_predators_craving.up\nactions+=/pool_resource,for_next=1\nactions+=/rake,cycle_targets=1,if=(refreshable||persistent_multiplier>dot.rake.pmultiplier)&druid.rake.ticks_gained_on_refresh>spell_targets.swipe_cat*2-2\nactions+=/lunar_inspiration,cycle_targets=1,if=(refreshable||persistent_multiplier>dot.lunar_inspiration.pmultiplier)&druid.lunar_inspiration.ticks_gained_on_refresh>spell_targets.swipe_cat*2-2\nactions+=/pool_resource,for_next=1\nactions+=/thrash_cat,cycle_targets=1,if=refreshable&druid.thrash_cat.ticks_gained_on_refresh>(4+spell_targets.thrash_cat*4)%(1+mastery_value)-conduit.taste_for_blood.enabled-covenant.necrolord&(!buff.bs_inc.up||spell_targets.thrash_cat>1)\nactions+=/pool_resource,for_next=1\nactions+=/brutal_slash,if=(raid_event.adds.in>(1+max_charges-charges_fractional)*recharge_time)&(spell_targets.brutal_slash*action.brutal_slash.damage%action.brutal_slash.cost)>(action.shred.damage%action.shred.cost)\nactions+=/swipe_cat,if=spell_targets.swipe_cat>1+buff.bs_inc.up*2\nactions+=/thrash_cat,if=spell_targets.thrash_cat>3\nactions+=/shred,if=buff.clearcasting.up&(buff.sudden_ambush.down&buff.shadowmeld.down||buff.bs_inc.up)\nactions+=/call_action_list,name=filler\n\nactions.bloodtalons=rake,cycle_targets=1,if=(!ticking||(1.2*persistent_multiplier>=dot.rake.pmultiplier)||(active_bt_triggers=2&refreshable))&buff.bt_rake.down\nactions.bloodtalons+=/lunar_inspiration,cycle_targets=1,if=refreshable&buff.bt_moonfire.down\nactions.bloodtalons+=/thrash_cat,cycle_targets=1,if=refreshable&buff.bt_thrash.down&druid.thrash_cat.ticks_gained_on_refresh>(4+spell_targets.thrash_cat*4)%(1+mastery_value)-conduit.taste_for_blood.enabled\nactions.bloodtalons+=/brutal_slash,if=buff.bt_brutal_slash.down\nactions.bloodtalons+=/swipe_cat,if=buff.bt_swipe.down&spell_targets.swipe_cat>1\nactions.bloodtalons+=/shred,if=buff.bt_shred.down\nactions.bloodtalons+=/swipe_cat,if=buff.bt_swipe.down\nactions.bloodtalons+=/thrash_cat,if=buff.bt_thrash.down\n\nactions.cooldown=adaptive_swarm,cycle_targets=1,if=((!dot.adaptive_swarm_damage.ticking||dot.adaptive_swarm_damage.remains<2)&(dot.adaptive_swarm_damage.stack<3||!dot.adaptive_swarm_heal.stack>1)&!action.adaptive_swarm_heal.in_flight&!action.adaptive_swarm_damage.in_flight&!action.adaptive_swarm.in_flight)&target.time_to_die>5||active_enemies>2&!dot.adaptive_swarm_damage.ticking&energy<35&target.time_to_die>5\n## actions.cooldown+=/fleshcraft,if=(soulbind.pustule_eruption||soulbind.volatile_solvent),interrupt_immediate=1,interrupt_global=1,interrupt_if=soulbind.volatile_solvent\n# Cast Tiger's Fury before (or immediatly after) casting Feral Frenzy if Berserk is NOT on cooldown.\nactions.cooldown+=/tigers_fury,sync=feral_frenzy,if=cooldown.bs_inc.up\nactions.cooldown+=/feral_frenzy,cycle_targets=1,if=combo_points<3&target.time_to_die>7&(buff.savage_roar.up||!talent.savage_roar.enabled)&(!cooldown.tigers_fury.up||cooldown.bs_inc.up)||boss&fight_remains<8&fight_remains>2\n# TODO: Need to sync with with ravenous frenzy when we run frenzyband, or atleast check if its worth it\nactions.cooldown+=/berserk,if=combo_points>=3\nactions.cooldown+=/incarnation,if=combo_points>=3\n# Try and not waste TF energy, but also just use it for zerk and incarns\nactions.cooldown+=/tigers_fury,if=energy.deficit>40||buff.bs_inc.up||(talent.predator.enabled&shortest_ttd<3)\n# Might be wrong to use Smeld on Rake in very very niche situations, but very rarely\nactions.cooldown+=/shadowmeld,if=buff.tigers_fury.up&buff.bs_inc.down&combo_points<4&buff.sudden_ambush.down&dot.rake.pmultiplier<1.6&energy>40&druid.rake.ticks_gained_on_refresh>spell_targets.swipe_cat*2-2&target.time_to_die>5\nactions.cooldown+=/berserking,if=buff.tigers_fury.up||buff.bs_inc.up\nactions.cooldown+=/potion,if=buff.bs_inc.up||boss&fight_remains<cooldown.bs_inc.remains||boss&fight_remains<25\nactions.cooldown+=/ravenous_frenzy,if=buff.bs_inc.up||fight_remains<21\n# TODO: Check moonkin hotw and stuff like this, and maybe better combat remain resync\nactions.cooldown+=/convoke_the_spirits,if=(dot.rip.remains>4&combo_points<5&(dot.rake.ticking||spell_targets.thrash_cat>1)&energy.deficit>=20)||boss&fight_remains<5\n# Maybe there should be more conditions on the conduit\nactions.cooldown+=/empower_bond,if=buff.tigers_fury.up||(conduit.deep_allegiance.enabled)\n# Give priority to on-use weapon\nactions.cooldown+=/use_item,name=jotungeirr_destinys_call,if=equipped.jotungeirr_destinys_call\nactions.cooldown+=/use_items\n\nactions.filler=rake,cycle_targets=1,if=variable.filler=1&refreshable&dot.rake.pmultiplier<=1.2*persistent_multiplier\nactions.filler+=/rake,if=variable.filler=2\nactions.filler+=/lunar_inspiration,if=variable.filler=3\nactions.filler+=/swipe,if=variable.filler=4\nactions.filler+=/shred,if=buff.sudden_ambush.down\n## actions.filler+=/fleshcraft,if=soulbind.pustule_eruption.enabled||soulbind.volatile_solvent.enabled,interrupt_immediate=1,interrupt_global=1,interrupt_if=soulbind.volatile_solvent\n\nactions.finisher=pool_resource,for_next=1\nactions.finisher+=/savage_roar,if=buff.savage_roar.remains<3\nactions.finisher+=/primal_wrath,if=(druid.primal_wrath.ticks_gained_on_refresh>3*(spell_targets.primal_wrath+1)&spell_targets.primal_wrath>1)||spell_targets.primal_wrath>(3+1*talent.sabertooth.enabled)\nactions.finisher+=/rip,cycle_targets=1,if=refreshable&druid.rip.ticks_gained_on_refresh>variable.rip_ticks&((buff.tigers_fury.up||!ticking)&(buff.bloodtalons.up||!talent.bloodtalons.enabled)||!talent.sabertooth.enabled)&(spell_targets.primal_wrath=1||!talent.primal_wrath.enabled)&(active_dot.rip=0||ticking&active_dot.rip=1||!runeforge.draught_of_deep_focus||!talent.sabertooth.enabled)\nactions.finisher+=/savage_roar,if=buff.savage_roar.remains<(combo_points+1)*6*0.3\nactions.finisher+=/ferocious_bite,max_energy=1,cycle_targets=1\nactions.finisher+=/ferocious_bite,cycle_targets=1,if=buff.bs_inc.up&talent.soul_of_the_forest.enabled||cooldown.convoke_the_spirits.remains<1&covenant.night_fae\n\nactions.owlweave=starsurge,if=buff.heart_of_the_wild.up\nactions.owlweave+=/sunfire,line_cd=4*gcd\nactions.owlweave+=/moonfire,line_cd=4*gcd,if=buff.moonkin_form.up&spell_targets.thrash_cat<2&!talent.lunar_inspiration.enabled\nactions.owlweave+=/heart_of_the_wild,if=energy<30&dot.rip.remains>4.5&(cooldown.tigers_fury.remains>=6.5||runeforge.cateye_curio)&buff.clearcasting.stack<1&!buff.apex_predators_craving.up&!buff.bloodlust.up&!buff.bs_inc.up&(cooldown.convoke_the_spirits.remains>6.5||!covenant.night_fae)&(!covenant.necrolord||cooldown.adaptive_swarm.remains>=5||dot.adaptive_swarm_damage.remains>7)\nactions.owlweave+=/moonkin_form,if=energy<30&dot.rip.remains>4.5&(cooldown.tigers_fury.remains>=4.5||runeforge.cateye_curio)&buff.clearcasting.stack<1&!buff.apex_predators_craving.up&!buff.bloodlust.up&(!buff.bs_inc.up||covenant.necrolord&talent.savage_roar.enabled&buff.bs_inc.remains>6)&(cooldown.convoke_the_spirits.remains>6.5||!covenant.night_fae)&(!covenant.necrolord||cooldown.adaptive_swarm.remains>=5||dot.adaptive_swarm_damage.remains>7)&fight_remains>7\n\nactions.setup=lunar_inspiration,if=covenant.necrolord&spell_targets.thrash_cat<4&combo_points<5&!ticking&!buff.bs_inc.up\nactions.setup+=/pool_resource,for_next=1\nactions.setup+=/savage_roar,if=talent.feral_frenzy.enabled&cooldown.feral_frenzy.up&!buff.savage_roar.up&combo_points>1&dot.rake.ticking&(dot.lunar_inspiration.ticking||!talent.lunar_inspiration.enabled)\n## actions.setup+=/pool_resource,if=talent.bloodtalons.enabled&buff.bloodtalons.down&(energy+3.5*energy.regen+(40*buff.clearcasting.up))<(115-23*buff.incarnation_king_of_the_jungle.up)&active_bt_triggers=0\nactions.setup+=/wait,sec=((115-23*buff.incarnation_king_of_the_jungle.up)-(energy.current+3.5*energy.regen+(40*buff.clearcasting.up)))/energy.regen,if=talent.bloodtalons.enabled&buff.bloodtalons.down&active_bt_triggers=0\nactions.setup+=/call_action_list,name=bloodtalons,if=talent.bloodtalons.enabled&buff.bloodtalons.down&(combo_points<5||spell_targets.thrash_cat=1)\nactions.setup+=/call_action_list,name=cooldown\nactions.setup+=/call_action_list,name=finisher,strict=1,if=combo_points>3&(buff.bloodtalons.up||!talent.bloodtalons.enabled)\n\nactions.stealth=pool_resource,for_next=1\n# Rake needs roughly 50% of its length at a minimum to surpass shreds dpe\nactions.stealth+=/rake,cycle_targets=1,if=(dot.rake.pmultiplier<1.5||refreshable)&druid.rake.ticks_gained_on_refresh>2||(persistent_multiplier>dot.rake.pmultiplier&buff.bs_inc.up&spell_targets.thrash_cat<3&covenant.necrolord)||buff.bs_inc.remains<1\nactions.stealth+=/lunar_inspiration,if=spell_targets.thrash_cat<3&refreshable&druid.lunar_inspiration.ticks_gained_on_refresh>5&(combo_points=4||dot.lunar_inspiration.remains<5||!dot.lunar_inspiration.ticking)\n# Brutal Slash is better than stealth Shred at 3 targets\nactions.stealth+=/brutal_slash,if=spell_targets.brutal_slash>2\nactions.stealth+=/pool_resource,for_next=1\nactions.stealth+=/shred,if=combo_points<4&spell_targets.thrash_cat<5\n\nactions.balance=sunfire,if=buff.eclipse_solar.down&buff.eclipse_lunar.down&(refreshable||(active_enemies>1&active_dot.sunfire<active_enemies))\nactions.balance+=/starsurge,if=buff.eclipse_solar.remains>10+cast_time||buff.eclipse_lunar.remains>10+cast_time\nactions.balance+=/starfire,if=buff.eclipse_lunar.remains>cast_time||buff.eclipse_solar.down&solar_eclipse>0||buff.eclipse_solar.down&lunar_eclipse-action.wrath.in_flight<1\nactions.balance+=/wrath,if=buff.eclipse_solar.remains>cast_time||buff.eclipse_lunar.down&lunar_eclipse-action.wrath.in_flight>0",
 				},
 				["Balance"] = {
 					["source"] = "https://balance-simc.github.io/Balance-SimC/md.html?file=balance.txt",
 					["builtIn"] = true,
-					["date"] = 20220227,
+					["date"] = 20220302,
 					["author"] = "SimC",
-					["desc"] = "Balance Druid\nFebruary 27, 2022\n\nChanges:\n- Added Solar Beam.\n- Changed target_if cases to cycle_targets.\n- Removed unnecessary variables (i.e., prev_starsurge -> prev.starsurge).\n- Avoid precasting Wrath if it's the wrong Eclipse.\n- Make Convoke the Spirits a little more flexible (if you hadn't hit it simultaneously with BOAT + Celestial Alignment, it'd skip).\n- Make most 'fight_remains' scenarios apply to boss fights only.\n- Treat Tome of Blah Blah Blah as a special trinket.\n- Opener (i.e., Wrath, Wrath, Starfire) made more resilient to earlier combat-start.\n- Fix Kindred Empowerment check for CD usage.",
+					["desc"] = "Balance Druid\nMarch 2, 2022\n\nChanges:\n- Added Solar Beam.\n- Changed target_if cases to cycle_targets.\n- Removed unnecessary variables (i.e., prev_starsurge -> prev.starsurge).\n- Avoid precasting Wrath if it's the wrong Eclipse.\n- Make Convoke the Spirits a little more flexible (if you hadn't hit it simultaneously with BOAT + Celestial Alignment, it'd skip).\n- Make most 'fight_remains' scenarios apply to boss fights only.\n- Treat Tome of Blah Blah Blah as a special trinket.\n- Opener (i.e., Wrath, Wrath, Starfire) made more resilient to earlier combat-start.\n- Fix Kindred Empowerment check for CD usage.",
 					["lists"] = {
 						["opener"] = {
 							{
 								["enabled"] = true,
-								["action"] = "wrath",
 								["description"] = "Precast 2 Wrath and a Starsurge on ST with Night Fae and BoAT or Starfire otherwise",
 								["criteria"] = "( eclipse.lunar_next || eclipse.in_solar || eclipse.in_both || eclipse.any_next ) & prev.1.wrath & ! prev.2.wrath",
+								["action"] = "wrath",
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["criteria"] = "! runeforge.balance_of_all_things.enabled || ! covenant.night_fae || ! spell_targets.starfall = 1 || ! talent.natures_balance.enabled || ( eclipse.solar_next || eclipse.in_lunar || eclipse.in_both || eclipse.any_next )",
 								["action"] = "starfire",
+								["criteria"] = "! runeforge.balance_of_all_things.enabled || ! covenant.night_fae || ! spell_targets.starfall = 1 || ! talent.natures_balance.enabled || ( eclipse.solar_next || eclipse.in_lunar || eclipse.in_both || eclipse.any_next )",
 								["line_cd"] = "5",
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["criteria"] = "( ! runeforge.balance_of_all_things.enabled || ! covenant.night_fae || ! spell_targets.starfall = 1 || ! talent.natures_balance.enabled ) & ! set_bonus.tier28_2pc || ( eclipse.solar_next || eclipse.in_lunar || eclipse.in_both || eclipse.any_next )",
 								["action"] = "starfire",
+								["criteria"] = "( ! runeforge.balance_of_all_things.enabled || ! covenant.night_fae || ! spell_targets.starfall = 1 || ! talent.natures_balance.enabled ) & ! set_bonus.tier28_2pc || ( eclipse.solar_next || eclipse.in_lunar || eclipse.in_both || eclipse.any_next )",
 								["line_cd"] = "5",
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["criteria"] = "( runeforge.balance_of_all_things.enabled & covenant.night_fae & spell_targets.starfall = 1 ) & ! set_bonus.tier28_2pc",
 								["action"] = "starsurge",
+								["criteria"] = "( runeforge.balance_of_all_things.enabled & covenant.night_fae & spell_targets.starfall = 1 ) & ! set_bonus.tier28_2pc",
 								["line_cd"] = "5",
 							}, -- [4]
 						},
 						["default"] = {
 							{
 								["action"] = "solar_beam",
+								["enabled"] = true,
 							}, -- [1]
 							{
+								["enabled"] = true,
 								["action"] = "call_action_list",
 								["strict"] = 1,
 								["criteria"] = "time < ( 2 * action.wrath.cast_time + action.starfire.cast_time )",
 								["list_name"] = "opener",
 							}, -- [2]
 							{
-								["value"] = "spell_targets.starfall > 1 & ( ! talent.starlord.enabled || talent.stellar_drift.enabled ) || spell_targets.starfall > 2",
-								["var_name"] = "is_aoe",
+								["enabled"] = true,
+								["op"] = "set",
 								["action"] = "variable",
+								["value"] = "spell_targets.starfall > 1 & ( ! talent.starlord.enabled || talent.stellar_drift.enabled ) || spell_targets.starfall > 2",
 								["description"] = "Sets AoE on 3+ without drift and with Starlord and 2+ otherwise",
+								["var_name"] = "is_aoe",
 							}, -- [3]
 							{
-								["value"] = "spell_targets.starfire > 1",
-								["var_name"] = "is_cleave",
+								["enabled"] = true,
+								["op"] = "set",
 								["action"] = "variable",
+								["value"] = "spell_targets.starfire > 1",
 								["description"] = "Sets cleave when Starfire can hit 2+ targets which is relevant for the Eclipse to be preferred and which filler to cast",
+								["var_name"] = "is_cleave",
 							}, -- [4]
 							{
-								["value"] = "prev_gcd.1.moonfire || prev_gcd.1.sunfire || prev_gcd.1.starsurge || prev_gcd.1.starfall || prev_gcd.1.fury_of_elune || prev.ravenous_frenzy || buff.ca_inc.remains = buff.ca_inc.duration || variable.is_aoe",
-								["var_name"] = "in_gcd",
+								["enabled"] = true,
+								["op"] = "set",
 								["action"] = "variable",
+								["value"] = "prev_gcd.1.moonfire || prev_gcd.1.sunfire || prev_gcd.1.starsurge || prev_gcd.1.starfall || prev_gcd.1.fury_of_elune || prev.ravenous_frenzy || buff.ca_inc.remains = buff.ca_inc.duration || variable.is_aoe",
 								["description"] = "Variable that checks if you are in a gcd to avoid the situation where a trinket etc is used in between casts",
+								["var_name"] = "in_gcd",
 							}, -- [5]
 							{
-								["action"] = "berserking",
+								["enabled"] = true,
 								["description"] = "Use Berserking at the end of Frenzy when haste is above 60%, after Convoke and otherwise with CA/Inc",
 								["criteria"] = "( ( ! covenant.night_fae || ! cooldown.convoke_the_spirits.up || runeforge.celestial_spirits.enabled ) & buff.ca_inc.remains > 15 & buff.ravenous_frenzy.remains < 4 & ! covenant.venthyr || covenant.venthyr & buff.ca_inc.up & buff.ravenous_frenzy.up & ( buff.ravenous_frenzy.remains <= 12 - 4 * runeforge.sinful_hysteria.enabled || buff.ca_inc.remains < 11 || 1 / spell_haste < 1.6 ) ) & variable.in_gcd",
+								["action"] = "berserking",
 							}, -- [6]
 							{
-								["criteria"] = "( buff.ca_inc.remains > 15 & ( ! runeforge.sinful_hysteria.enabled || buff.ravenous_frenzy.remains < 19 & buff.ravenous_frenzy.up ) || boss & fight_remains < 25 ) & variable.in_gcd",
+								["enabled"] = true,
 								["description"] = "Pot with a CA/Inc that isn't a Pulsar proc or when the fight is about to end",
 								["action"] = "potion",
+								["criteria"] = "( buff.ca_inc.remains > 15 & ( ! runeforge.sinful_hysteria.enabled || buff.ravenous_frenzy.remains < 19 & buff.ravenous_frenzy.up ) || boss & fight_remains < 25 ) & variable.in_gcd",
 							}, -- [7]
 							{
-								["value"] = "ceil ( ( fight_remains - 15 - cooldown.ca_inc.remains ) / 180 ) = ceil ( ( fight_remains - 15 - cooldown.convoke_the_spirits.duration - cooldown.convoke_the_spirits.remains ) / 180 ) & ! raid_event.adds.exists & ( ! cooldown.ca_inc.ready || ! cooldown.convoke.ready ) || cooldown.ca_inc.remains > interpolated_fight_remains || runeforge.celestial_spirits.enabled & cooldown.ca_inc.remains > 30 || cooldown.convoke_the_spirits.remains > interpolated_fight_remains - 10 || ! covenant.night_fae",
-								["var_name"] = "convoke_desync",
+								["enabled"] = true,
+								["op"] = "set",
 								["action"] = "variable",
+								["value"] = "ceil ( ( fight_remains - 15 - cooldown.ca_inc.remains ) / 180 ) = ceil ( ( fight_remains - 15 - cooldown.convoke_the_spirits.duration - cooldown.convoke_the_spirits.remains ) / 180 ) & ! raid_event.adds.exists & ( ! cooldown.ca_inc.ready || ! cooldown.convoke.ready ) || cooldown.ca_inc.remains > interpolated_fight_remains || runeforge.celestial_spirits.enabled & cooldown.ca_inc.remains > 30 || cooldown.convoke_the_spirits.remains > interpolated_fight_remains - 10 || ! covenant.night_fae",
 								["description"] = "Calculates whether using Convoke now will allow you to still cast the same amount of Convoke+CA/Inc casts",
+								["var_name"] = "convoke_desync",
 							}, -- [8]
 							{
-								["value"] = "( target.time_to_die > 15 || raid_event.adds.in > 50 ) & ( ( equipped.empyreal_ordnance & ( ! covenant.venthyr || cooldown.empyreal_ordnance.remains < 167 + ( 5 * runeforge.sinful_hysteria.enabled ) ) & ! cooldown.empyreal_ordnance.ready ) || equipped.soulletting_ruby & ( ! covenant.night_fae || cooldown.soulletting_ruby_345801.remains < 114 ) || ( cooldown.berserking.ready || ! race.troll || covenant.night_fae ) & ( ! talent.fury_of_elune.enabled || covenant.venthyr & cooldown.fury_of_elune.remains < 11 + 5 * runeforge.sinful_hysteria.enabled || ! covenant.venthyr & cooldown.fury_of_elune.remains < buff.ca_inc.duration + 12 * runeforge.primordial_arcanic_pulsar.enabled - 12 ) & ( ( equipped.inscrutable_quantum_device & cooldown.inscrutable_quantum_device.ready ) || ( equipped.shadowed_orb_of_torment & cooldown.tormented_insight_355321.remains ) || ( ( variable.on_use_trinket = 1 || variable.on_use_trinket = 3 ) & ( trinket.t1.ready_cooldown || trinket.t1.cooldown.remains > interpolated_fight_remains - 10 ) || variable.on_use_trinket = 2 & ( trinket.t2.ready_cooldown || trinket.t2.cooldown.remains > interpolated_fight_remains - 10 ) || variable.on_use_trinket = 0 ) ) )",
-								["var_name"] = "cd_condition",
+								["enabled"] = true,
+								["op"] = "set",
 								["action"] = "variable",
+								["value"] = "( target.time_to_die > 15 || raid_event.adds.in > 50 ) & ( ( equipped.empyreal_ordnance & ( ! covenant.venthyr || cooldown.empyreal_ordnance.remains < 167 + ( 5 * runeforge.sinful_hysteria.enabled ) ) & ! cooldown.empyreal_ordnance.ready ) || equipped.soulletting_ruby & ( ! covenant.night_fae || cooldown.soulletting_ruby_345801.remains < 114 ) || ( cooldown.berserking.ready || ! race.troll || covenant.night_fae ) & ( ! talent.fury_of_elune.enabled || covenant.venthyr & cooldown.fury_of_elune.remains < 11 + 5 * runeforge.sinful_hysteria.enabled || ! covenant.venthyr & cooldown.fury_of_elune.remains < buff.ca_inc.duration + 12 * runeforge.primordial_arcanic_pulsar.enabled - 12 ) & ( equipped.inscrutable_quantum_device & cooldown.inscrutable_quantum_device.remains < 5 ) || ( ( equipped.shadowed_orb_of_torment & cooldown.tormented_insight_355321.remains ) || ( ( variable.on_use_trinket = 1 || variable.on_use_trinket = 3 ) & ( trinket.t1.ready_cooldown || trinket.t1.cooldown.remains > interpolated_fight_remains - 10 ) || variable.on_use_trinket = 2 & ( trinket.t2.ready_cooldown || trinket.t2.cooldown.remains > interpolated_fight_remains - 10 ) || variable.on_use_trinket = 0 ) ) )",
 								["description"] = "Used to delay the usage of CA/Inc when using double on use and prevent usage when an add event is about to die",
+								["var_name"] = "cd_condition",
 							}, -- [9]
 							{
-								["value"] = "! soulbind.thrill_seeker.enabled || fight_remains > 200 || boss & fight_remains < 25 + ( 40 - buff.thrill_seeker.stack * 2 ) || buff.thrill_seeker.stack > 38 - ( runeforge.sinful_hysteria.enabled * 2 )",
-								["var_name"] = "thrill_seeker_wait",
+								["enabled"] = true,
+								["op"] = "set",
 								["action"] = "variable",
+								["value"] = "! soulbind.thrill_seeker.enabled || fight_remains > 200 || boss & fight_remains < 25 + ( 40 - buff.thrill_seeker.stack * 2 ) || buff.thrill_seeker.stack > 38 - ( runeforge.sinful_hysteria.enabled * 2 )",
 								["description"] = "Variable used to delay any trinkets and cds when waiting for an Euphoria proc",
+								["var_name"] = "thrill_seeker_wait",
 							}, -- [10]
 							{
+								["enabled"] = true,
 								["name"] = "empyreal_ordnance",
-								["action"] = "empyreal_ordnance",
-								["criteria"] = "cooldown.ca_inc.remains < 20 & cooldown.convoke_the_spirits.remains < 20 & ( variable.thrill_seeker_wait || buff.thrill_seeker.stack > 30 + ( runeforge.sinful_hysteria.enabled * 3 ) ) & variable.in_gcd || boss & fight_remains < 37",
 								["description"] = "Use Empyreal Ordnance 20secs before a CA/Inc use or so that it will line up with the end of Frenzy",
+								["criteria"] = "cooldown.ca_inc.remains < 20 & cooldown.convoke_the_spirits.remains < 20 & ( variable.thrill_seeker_wait || buff.thrill_seeker.stack > 30 + ( runeforge.sinful_hysteria.enabled * 3 ) ) & variable.in_gcd || boss & fight_remains < 37",
+								["action"] = "empyreal_ordnance",
 							}, -- [11]
 							{
+								["enabled"] = true,
 								["name"] = "soulletting_ruby",
-								["action"] = "soulletting_ruby",
-								["criteria"] = "( cooldown.ca_inc.remains < 6 & ! covenant.venthyr & ! covenant.night_fae || covenant.night_fae & cooldown.convoke_the_spirits.remains < 6 & ( variable.convoke_desync || cooldown.ca_inc.remains < 6 ) || covenant.venthyr & ( ! runeforge.sinful_hysteria.enabled & cooldown.ca_inc.remains < 6 || buff.ravenous_frenzy.remains < 10 + ( 5 * equipped.instructors_divine_bell ) & buff.ravenous_frenzy.up ) || boss & fight_remains < 25 || equipped.empyreal_ordnance & cooldown.empyreal_ordnance.remains > 20 ) & variable.in_gcd & ! equipped.inscrutable_quantum_device || cooldown.inscrutable_quantum_device.remains > 20 || boss & fight_remains < 20",
 								["description"] = "Use Soulleting Ruby 6secs before a CA/Inc use or so that it will line up with the end of Frenzy",
+								["criteria"] = "( cooldown.ca_inc.remains < 6 & ! covenant.venthyr & ! covenant.night_fae || covenant.night_fae & cooldown.convoke_the_spirits.remains < 6 & ( variable.convoke_desync || cooldown.ca_inc.remains < 6 ) || covenant.venthyr & ( ! runeforge.sinful_hysteria.enabled & cooldown.ca_inc.remains < 6 || buff.ravenous_frenzy.remains < 10 + ( 5 * equipped.instructors_divine_bell ) & buff.ravenous_frenzy.up ) || boss & fight_remains < 25 || equipped.empyreal_ordnance & cooldown.empyreal_ordnance.remains > 20 ) & variable.in_gcd & ! equipped.inscrutable_quantum_device || cooldown.inscrutable_quantum_device.remains > 20 || boss & fight_remains < 20",
+								["action"] = "soulletting_ruby",
 							}, -- [12]
 							{
-								["value"] = "buff.ca_inc.remains > 15 & ( ! runeforge.sinful_hysteria.enabled || buff.ravenous_frenzy.remains <= 15.5 + ( 3.5 * buff.bloodlust.up ) + ( 4.5 - 3.5 * buff.bloodlust.up ) * equipped.instructors_divine_bell & buff.ravenous_frenzy.up ) || boss & fight_remains < 25 || equipped.empyreal_ordnance & cooldown.empyreal_ordnance.remains",
-								["var_name"] = "iqd_condition",
+								["enabled"] = true,
+								["op"] = "set",
 								["action"] = "variable",
+								["value"] = "buff.ca_inc.remains > 15 & ( ! runeforge.sinful_hysteria.enabled || buff.ravenous_frenzy.remains <= 15.5 + ( 3.5 * buff.bloodlust.up ) + ( 4.5 - 3.5 * buff.bloodlust.up ) * equipped.instructors_divine_bell + 4.5 * ( equipped.the_first_sigil & cooldown.the_first_sigil.remains <= 20 ) & buff.ravenous_frenzy.up ) || boss & fight_remains < 25 || equipped.empyreal_ordnance & cooldown.empyreal_ordnance.remains",
 								["description"] = "Always use IQD with CA/Inc or at the end of Frenzy",
+								["var_name"] = "iqd_condition",
 							}, -- [13]
 							{
-								["action"] = "inscrutable_quantum_device",
+								["enabled"] = true,
 								["criteria"] = "variable.iqd_condition & variable.in_gcd",
 								["name"] = "inscrutable_quantum_device",
+								["action"] = "inscrutable_quantum_device",
 							}, -- [14]
 							{
+								["enabled"] = true,
 								["name"] = "shadowed_orb_of_torment",
-								["action"] = "shadowed_orb_of_torment",
-								["criteria"] = "( cooldown.ca_inc.ready & ! covenant.night_fae & variable.thrill_seeker_wait & ( cooldown.berserking.ready || ! race.troll ) || covenant.night_fae & cooldown.convoke_the_spirits.ready & ( variable.convoke_desync || cooldown.ca_inc.ready ) ) & dot.sunfire.ticking & ( dot.stellar_flare.ticking || ! talent.stellar_flare.enabled || spell_targets.starfire > 3 ) & dot.moonfire.ticking & ( variable.is_aoe || runeforge.balance_of_all_things.enabled || astral_power >= 90 || variable.convoke_desync || buff.bloodlust.up ) & ! equipped.inscrutable_quantum_device || equipped.inscrutable_quantum_device & cooldown.inscrutable_quantum_device.remains > 30 & ! buff.ca_inc.up || boss & fight_remains < 40",
 								["description"] = "Use Shadowed Orb before CA/Inc",
+								["criteria"] = "( cooldown.ca_inc.ready & ! covenant.night_fae & variable.thrill_seeker_wait & ( cooldown.berserking.ready || ! race.troll ) || covenant.night_fae & cooldown.convoke_the_spirits.ready & ( variable.convoke_desync || cooldown.ca_inc.ready ) ) & dot.sunfire.ticking & ( dot.stellar_flare.ticking || ! talent.stellar_flare.enabled || spell_targets.starfire > 3 ) & dot.moonfire.ticking & ( variable.is_aoe || runeforge.balance_of_all_things.enabled || astral_power >= 90 || variable.convoke_desync || buff.bloodlust.up ) & ! equipped.inscrutable_quantum_device || equipped.inscrutable_quantum_device & cooldown.inscrutable_quantum_device.remains > 30 & ! buff.ca_inc.up || boss & fight_remains < 40",
+								["action"] = "shadowed_orb_of_torment",
 							}, -- [15]
 							{
+								["enabled"] = true,
 								["criteria"] = "( variable.on_use_trinket != 1 & ! trinket.t2.ready_cooldown || ( variable.on_use_trinket = 1 || variable.on_use_trinket = 3 ) & ( buff.ca_inc.up & ( ! covenant.venthyr || buff.ravenous_frenzy.remains + ( 3.5 * runeforge.sinful_hysteria.enabled ) <= trinket.t1.buff_duration & buff.ravenous_frenzy.up || buff.ravenous_frenzy_sinful_hysteria.up ) || cooldown.ca_inc.remains + 2 > trinket.t1.cooldown.duration & ! buff.ca_inc.up & ( ! covenant.night_fae || ! variable.convoke_desync ) & ! covenant.kyrian || covenant.night_fae & variable.convoke_desync & cooldown.convoke_the_spirits.up & ! cooldown.ca_inc.up & ( ( buff.eclipse_lunar.remains > 10 || buff.eclipse_solar.remains > 10 ) & ! runeforge.balance_of_all_things.enabled || ( buff.balance_of_all_things_nature.stack = 5 || buff.balance_of_all_things_arcane.stack = 8 ) ) || buff.kindred_empowerment_energize.up ) || boss & fight_remains < 20 || variable.on_use_trinket = 0 ) & variable.in_gcd",
-								["action"] = "trinket1",
-								["slots"] = "trinket1",
 								["description"] = "This is a rather elaborate way to make all on use stat trinkets to be lined up with CA/Inc and Convoke and use the 2nd slot on cd if both trinkets are on use stat trinkets",
+								["slots"] = "trinket1",
+								["action"] = "trinket1",
 							}, -- [16]
 							{
-								["action"] = "trinket2",
+								["enabled"] = true,
 								["criteria"] = "( variable.on_use_trinket != 2 & ! trinket.t1.ready_cooldown || variable.on_use_trinket = 2 & ( buff.ca_inc.up & ( ! covenant.venthyr || buff.ravenous_frenzy.remains + ( 3.5 * runeforge.sinful_hysteria.enabled ) <= trinket.t2.buff_duration & buff.ravenous_frenzy.up || buff.ravenous_frenzy_sinful_hysteria.up ) || cooldown.ca_inc.remains + 2 > trinket.t2.cooldown.duration & ! buff.ca_inc.up & ( ! covenant.night_fae || ! variable.convoke_desync ) & ! covenant.kyrian & ( ! buff.ca_inc.up || ! covenant.venthyr ) || covenant.night_fae & variable.convoke_desync & cooldown.convoke_the_spirits.up & ! cooldown.ca_inc.up & ( ( buff.eclipse_lunar.remains > 10 || buff.eclipse_solar.remains > 10 ) & ! runeforge.balance_of_all_things.enabled || ( buff.balance_of_all_things_nature.stack = 5 || buff.balance_of_all_things_arcane.stack = 8 ) ) ) || buff.kindred_empowerment_energize.up || boss & fight_remains < 20 || variable.on_use_trinket = 0 ) & variable.in_gcd",
 								["slots"] = "trinket2",
+								["action"] = "trinket2",
 							}, -- [17]
 							{
+								["enabled"] = true,
 								["description"] = "Uses all other on use items on cd",
 								["action"] = "use_items",
 							}, -- [18]
 							{
+								["enabled"] = true,
 								["action"] = "run_action_list",
 								["description"] = "Either go into the st or aoe action list",
 								["strict"] = 1,
@@ -36914,6 +37115,7 @@ HekiliDB = {
 								["list_name"] = "aoe",
 							}, -- [19]
 							{
+								["enabled"] = true,
 								["action"] = "run_action_list",
 								["list_name"] = "st",
 							}, -- [20]
@@ -36921,53 +37123,65 @@ HekiliDB = {
 						["precombat"] = {
 							{
 								["action"] = "kindred_spirits",
+								["enabled"] = true,
 							}, -- [1]
 							{
-								["value"] = "0",
-								["var_name"] = "on_use_trinket",
+								["enabled"] = true,
+								["op"] = "set",
 								["action"] = "variable",
+								["value"] = "0",
 								["description"] = "The variable is set to 0 with no stat on use trinkets, 1 when the first one is on use, 2 if the second is and 3 if both are",
+								["var_name"] = "on_use_trinket",
 							}, -- [2]
 							{
+								["enabled"] = true,
 								["op"] = "add",
 								["action"] = "variable",
 								["value"] = "1",
-								["var_name"] = "on_use_trinket",
 								["criteria"] = "trinket.t1.has_use_buff & trinket.t1.cooldown.duration & ! trinket.t1.is.tome_of_monstrous_constructions",
+								["var_name"] = "on_use_trinket",
 							}, -- [3]
 							{
+								["enabled"] = true,
 								["op"] = "add",
 								["action"] = "variable",
 								["value"] = "2",
-								["var_name"] = "on_use_trinket",
 								["criteria"] = "trinket.t2.has_use_buff & trinket.t2.cooldown.duration & ! trinket.t2.is.tome_of_monstrous_constructions",
+								["var_name"] = "on_use_trinket",
 							}, -- [4]
 							{
+								["enabled"] = true,
 								["op"] = "add",
 								["action"] = "variable",
 								["var_name"] = "on_use_trinket",
-								["value"] = "4",
-								["description"] = "These trinkets are not automatically detected as on use stat trinkets.  Set variable to 4 as they also need special handling.",
 								["criteria"] = "equipped.inscrutable_quantum_device || equipped.empyreal_ordnance || equipped.soulletting_ruby",
+								["description"] = "These trinkets are not automatically detected as on use stat trinkets.  Set variable to 4 as they also need special handling.",
+								["value"] = "4",
 							}, -- [5]
 							{
-								["value"] = "30 * ( 1 - 0.2 * set_bonus.tier28_4pc )",
-								["var_name"] = "ss_cost",
+								["enabled"] = true,
+								["op"] = "set",
 								["action"] = "variable",
+								["value"] = "30 * ( 1 - 0.2 * set_bonus.tier28_4pc )",
 								["description"] = "Sets the Starsurge cost for later calculations (for example when to start dumping before Frenzy falls off)",
+								["var_name"] = "ss_cost",
 							}, -- [6]
 							{
-								["value"] = "30 + 10 * runeforge.celestial_spirits.enabled",
-								["var_name"] = "convoke_asp",
+								["enabled"] = true,
+								["op"] = "set",
 								["action"] = "variable",
+								["value"] = "30 + 10 * runeforge.celestial_spirits.enabled",
 								["description"] = "Sets at which amount of AsP Convoke should be used: 40 without Celestial Spirits and 30 with.",
+								["var_name"] = "convoke_asp",
 							}, -- [7]
 							{
 								["action"] = "moonkin_form",
+								["enabled"] = true,
 							}, -- [8]
 							{
-								["criteria"] = "( eclipse.lunar_next || eclipse.in_solar || eclipse.in_both || eclipse.any_next )",
+								["enabled"] = true,
 								["action"] = "wrath",
+								["criteria"] = "( eclipse.lunar_next || eclipse.in_solar || eclipse.in_both || eclipse.any_next )",
 								["line_cd"] = "10",
 							}, -- [9]
 						},
@@ -36977,87 +37191,87 @@ HekiliDB = {
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "runeforge.timeworn_dreambinder.enabled & ( buff.timeworn_dreambinder.remains < gcd.max + 0.1 || buff.timeworn_dreambinder.remains < action.starfire.execute_time + 0.1 & ( eclipse.in_lunar || eclipse.solar_next || eclipse.any_next ) ) & buff.timeworn_dreambinder.up",
-								["var_name"] = "dream_will_fall_off",
 								["description"] = "Calculates whether the Dreamcatcher buff will fall off within the next cast",
+								["var_name"] = "dream_will_fall_off",
 							}, -- [1]
 							{
 								["enabled"] = true,
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "! eclipse.in_solar & spell_targets.starfire > 7 - talent.soul_of_the_forest.enabled * 2 + eclipse.in_both & ! runeforge.primordial_arcanic_pulsar.enabled & ! runeforge.oneths_clear_vision.enabled",
-								["var_name"] = "ignore_starsurge",
 								["description"] = "Calculates whether Starsurge is worth casting over Starfire in Lunar Eclipse",
+								["var_name"] = "ignore_starsurge",
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["action"] = "convoke_the_spirits",
 								["description"] = "Use Convoke when at less than 50 AsP and line up with CA/Inc",
 								["criteria"] = "! druid.no_cds & ( ( variable.convoke_desync & ! cooldown.ca_inc.ready || buff.ca_inc.up ) & ( buff.eclipse_lunar.remains > 5 || buff.eclipse_solar.remains > 5 ) & ( astral_power < 50 & ( spell_targets.starfire > 3 || buff.ca_inc.up ) || ! runeforge.primordial_arcanic_pulsar.enabled ) & ( ! talent.stellar_drift.enabled || buff.starfall.remains < 1.5 - 0.5 * runeforge.celestial_spirits.enabled || buff.ca_inc.remains < buff.starfall.remains + 5 & buff.ca_inc.up ) & ( ! runeforge.balance_of_all_things.enabled || buff.balance_of_all_things_nature.stack > 3 || buff.balance_of_all_things_arcane.stack > 3 ) || boss & fight_remains < 10 & cooldown.ca_inc.remains > 5 )",
+								["action"] = "convoke_the_spirits",
 							}, -- [3]
 							{
 								["enabled"] = true,
 								["action"] = "sunfire",
 								["cycle_targets"] = 1,
-								["description"] = "Use Sunfire in pandemic on anything that lives 14secs and less with more targets and at the end of a Solar Eclipse at 14 secs or less remaining as to not having to refresh during Lunar Eclipse",
 								["criteria"] = "( refreshable || buff.eclipse_solar.remains < 3 & eclipse.in_solar & remains < 14 & talent.soul_of_the_forest.enabled ) & target.time_to_die > 14 - spell_targets + remains & ( eclipse.in_any || remains < gcd.max )",
+								["description"] = "Use Sunfire in pandemic on anything that lives 14secs and less with more targets and at the end of a Solar Eclipse at 14 secs or less remaining as to not having to refresh during Lunar Eclipse",
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["action"] = "sunfire",
 								["description"] = "Use Sunfire to have a global to use IQD",
 								["criteria"] = "variable.iqd_condition & cooldown.inscrutable_quantum_device.ready & equipped.inscrutable_quantum_device & ap_check",
+								["action"] = "sunfire",
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["action"] = "starfall",
 								["description"] = "Keep up Starfall at all times unless using Lycaras and it is about to proc or let the special action line below handle Dreambinder on 2 targets",
 								["criteria"] = "! talent.stellar_drift.enabled & ( ! set_bonus.tier28_4pc || eclipse.in_any || spell_targets.starfall > 3 ) & ( buff.starfall.refreshable & ( spell_targets.starfall < 3 || ! runeforge.timeworn_dreambinder.enabled ) || talent.soul_of_the_forest.enabled & buff.eclipse_solar.remains < 3 & eclipse.in_solar & buff.starfall.remains < 7 & spell_targets.starfall >= 4 ) & ( ! runeforge.lycaras_fleeting_glimpse.enabled || time % 45 > buff.starfall.remains + 2 ) & target.time_to_die > 5",
+								["action"] = "starfall",
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["action"] = "starfall",
 								["description"] = "With Stellar Drift use on cd when refreshable but still wait for Lycaras proc and don't use before CDs. Still use before Convoke since that will proc another Starfall",
 								["criteria"] = "talent.stellar_drift.enabled & buff.starfall.refreshable & ( ! set_bonus.tier28_4pc || eclipse.in_any || spell_targets.starfall > 4 ) & ( ! runeforge.lycaras_fleeting_glimpse.enabled || time % 45 > 4 ) & target.time_to_die > 3",
+								["action"] = "starfall",
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["action"] = "starfall",
 								["description"] = "With Dreambinder use Starfall to keep up the buff by also using Starfall on 5 seconds or less remaining",
 								["criteria"] = "runeforge.timeworn_dreambinder.enabled & spell_targets.starfall >= 3 & ( ! buff.timeworn_dreambinder.up & buff.starfall.refreshable || ( variable.dream_will_fall_off & ( buff.starfall.remains < 3 || spell_targets.starfall > 2 & talent.stellar_drift.enabled & buff.starfall.remains < 5 ) ) )",
+								["action"] = "starfall",
 							}, -- [8]
 							{
 								["enabled"] = true,
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "astral_power > 80 * ( 1 - set_bonus.tier28_2pc * 0.2 ) * ( 1 - buff.timeworn_dreambinder.stack * 0.1 ) - ( buff.starfall.remains * 3 / spell_haste * ! talent.stellar_drift.enabled ) - ( cooldown.starfall.remains * 3 / spell_haste * talent.stellar_drift.enabled ) - ( buff.fury_of_elune.remains * 5 ) & ( buff.starfall.up || cooldown.starfall.remains )",
-								["var_name"] = "starfall_wont_fall_off",
 								["description"] = "Calculates whether a Starsurge use will cause Starfall to fall off, and use Starsurge to keep Dreambinder stack up. 80 is the required AsP to cast Starsurge+Starfall",
+								["var_name"] = "starfall_wont_fall_off",
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["action"] = "starsurge",
 								["description"] = "Use Starsurge with Dreambinder to keep up the buff without losing Starfall uptime and use Starsurge on 4+ BoAT stacks until 4 targets",
 								["criteria"] = "variable.dream_will_fall_off & variable.starfall_wont_fall_off & ! variable.ignore_starsurge || ( buff.balance_of_all_things_nature.stack > 3 || buff.balance_of_all_things_arcane.stack > 3 ) & spell_targets.starfall < 4 & variable.starfall_wont_fall_off",
+								["action"] = "starsurge",
 							}, -- [10]
 							{
 								["enabled"] = true,
 								["action"] = "adaptive_swarm",
 								["cycle_targets"] = 1,
-								["description"] = "Use swarm so that you get max uptime by using it as late as possible on less than 3 stacks or just when 3+ stacks expire",
 								["criteria"] = "! ticking & ! action.adaptive_swarm_damage.in_flight || dot.adaptive_swarm_damage.stack < 3 & dot.adaptive_swarm_damage.remains < 3",
+								["description"] = "Use swarm so that you get max uptime by using it as late as possible on less than 3 stacks or just when 3+ stacks expire",
 							}, -- [11]
 							{
 								["enabled"] = true,
 								["action"] = "moonfire",
 								["cycle_targets"] = 1,
-								["description"] = "Refresh Moonfire if CA/Inc is ready, there are less than 5 targets in Lunar Eclipse with SotF, less than 10 otherwise in any Eclipse or up to 5 targets before a Lunar Eclipse. Don't refresh during Kindred Empowerment unless in Solar Eclipse",
 								["criteria"] = "refreshable & target.time_to_die > ( ( 14 + ( spell_targets.starfire * 2 * buff.eclipse_lunar.up ) ) + remains ) / ( 1 + talent.twin_moons.enabled ) & ( ap_check || variable.ignore_starsurge || ! eclipse.in_any ) & ( cooldown.ca_inc.ready & eclipse.in_any & ! druid.no_cds & ( variable.convoke_desync || cooldown.convoke_the_spirits.ready || ! covenant.night_fae ) || spell_targets.starfire < ( ( 6 - ( buff.eclipse_lunar.up * 2 ) ) * ( 1 + talent.twin_moons.enabled ) ) & ! eclipse.solar_next & ! cooldown.ca_inc.ready || ( eclipse.in_solar || buff.eclipse_lunar.up & ! talent.soul_of_the_forest.enabled || buff.primordial_arcanic_pulsar.value >= 250 ) & ( spell_targets.starfire < 10 * ( 1 + talent.twin_moons.enabled ) ) & astral_power > 50 - buff.starfall.remains * 6 ) & ( ! covenant.kyrian || ! buff.kindred_empowerment_energize.up || eclipse.in_solar ) & ! buff.ravenous_frenzy_sinful_hysteria.up",
+								["description"] = "Refresh Moonfire if CA/Inc is ready, there are less than 5 targets in Lunar Eclipse with SotF, less than 10 otherwise in any Eclipse or up to 5 targets before a Lunar Eclipse. Don't refresh during Kindred Empowerment unless in Solar Eclipse",
 							}, -- [12]
 							{
 								["enabled"] = true,
-								["action"] = "force_of_nature",
 								["description"] = "Use FoN on cd without capping",
 								["criteria"] = "ap_check || variable.ignore_starsurge",
+								["action"] = "force_of_nature",
 							}, -- [13]
 							{
 								["enabled"] = true,
@@ -37068,15 +37282,15 @@ HekiliDB = {
 							}, -- [14]
 							{
 								["enabled"] = true,
-								["action"] = "ravenous_frenzy",
 								["description"] = "Use Frenzy with CA/Inc",
 								["criteria"] = "buff.ca_inc.remains > 15 || buff.ca_inc.duration + 12 * runeforge.primordial_arcanic_pulsar.enabled < 26 & variable.cd_condition_aoe",
+								["action"] = "ravenous_frenzy",
 							}, -- [15]
 							{
 								["enabled"] = true,
-								["action"] = "celestial_alignment",
 								["description"] = "Use CA/Inc on cd unless and line it up with Convoke",
 								["criteria"] = "variable.cd_condition_aoe & ( buff.ca_inc.duration + 12 * runeforge.primordial_arcanic_pulsar.enabled >= 26 || ! covenant.venthyr ) || buff.ravenous_frenzy.up & buff.ravenous_frenzy.remains < 9 + conduit.precise_alignment.time_value + ( ! buff.bloodlust.up & ! talent.starlord.enabled )",
+								["action"] = "celestial_alignment",
 							}, -- [16]
 							{
 								["enabled"] = true,
@@ -37085,34 +37299,34 @@ HekiliDB = {
 							}, -- [17]
 							{
 								["enabled"] = true,
-								["action"] = "empower_bond",
 								["description"] = "Use Empower Bond on cd with Starfall up and save for Pulsar and CA/Inc",
 								["criteria"] = "( cooldown.ca_inc.remains + buff.ca_inc.duration + runeforge.primordial_arcanic_pulsar.enabled * 12 > cooldown.empower_bond.duration + 10 ) || buff.ca_inc.remains > 8 || druid.no_cds",
+								["action"] = "empower_bond",
 							}, -- [18]
 							{
 								["enabled"] = true,
 								["action"] = "stellar_flare",
 								["cycle_targets"] = 1,
-								["description"] = "Refresh flare on up to 3 targets without CA/Inc being about to expire and not overcapping",
 								["criteria"] = "refreshable & time_to_die > 15 & spell_targets.starfire < 4 & ap_check & ( buff.ca_inc.remains > 10 || ! buff.ca_inc.up )",
+								["description"] = "Refresh flare on up to 3 targets without CA/Inc being about to expire and not overcapping",
 							}, -- [19]
 							{
 								["enabled"] = true,
-								["action"] = "fury_of_elune",
 								["description"] = "Use FoE if inside an Eclipse and line it up with a Pulsar proc and Adaptive Swarm",
 								["criteria"] = "eclipse.in_any & ( ap_check || ! runeforge.primordial_arcanic_pulsar.enabled ) & ( buff.primordial_arcanic_pulsar.value < 250 || buff.ca_inc.remains > 8 ) & ( dot.adaptive_swarm_damage.ticking || ! covenant.necrolord || spell_targets > 2 ) & ( buff.ravenous_frenzy.remains < 9 - ( 4 * runeforge.sinful_hysteria.enabled ) & buff.ravenous_frenzy.up || ! buff.ravenous_frenzy.up ) & ( ! cooldown.ca_inc.up || buff.thrill_seeker.stack < 15 & fight_remains < 200 & fight_remains > 100 || ! soulbind.thrill_seeker.enabled ) & ( soulbind.thrill_seeker.enabled || cooldown.ca_inc.remains > 30 ) & target.time_to_die > 5 || boss & fight_remains < 10",
+								["action"] = "fury_of_elune",
 							}, -- [20]
 							{
 								["enabled"] = true,
-								["action"] = "starfall",
 								["description"] = "Use a Starfall Oneth proc unless Starfall is already up or you are about to overcap AsP",
 								["criteria"] = "buff.oneths_perception.up & ( buff.starfall.refreshable || astral_power > 90 )",
+								["action"] = "starfall",
 							}, -- [21]
 							{
 								["enabled"] = true,
-								["action"] = "starfall",
 								["description"] = "Dump AsP before Convoke with Starfall and then Starsurge",
 								["criteria"] = "covenant.night_fae & ! talent.stellar_drift.enabled & ( variable.convoke_desync || cooldown.ca_inc.up || buff.ca_inc.up ) & cooldown.convoke_the_spirits.remains < gcd.max * ceil ( astral_power / 50 ) & buff.starfall.remains < 4 & ! druid.no_cds",
+								["action"] = "starfall",
 							}, -- [22]
 							{
 								["enabled"] = true,
@@ -37121,15 +37335,15 @@ HekiliDB = {
 							}, -- [23]
 							{
 								["enabled"] = true,
-								["action"] = "starsurge",
 								["description"] = "Use Starsurge with an Oneth proc or if you'd overcap AsP with your next cast. Also dump AsP at the end of the Venthyr buff if Starfall wouldn't fall off or you are on 2 targets",
 								["criteria"] = "buff.oneths_clear_vision.up || ( ! starfire.ap_check & ! variable.ignore_starsurge || ( buff.ca_inc.remains < 5 & buff.ca_inc.up || ( ( buff.ca_inc.remains < gcd.max * ceil ( astral_power / variable.ss_cost ) & buff.ca_inc.up || buff.ravenous_frenzy_sinful_hysteria.remains < gcd.max * ceil ( astral_power / variable.ss_cost ) & buff.ravenous_frenzy_sinful_hysteria.up ) & covenant.venthyr ) ) & ( spell_targets.starfall < 3 || variable.starfall_wont_fall_off ) ) & ! variable.ignore_starsurge & ( ! runeforge.timeworn_dreambinder.enabled || spell_targets.starfall < 3 )",
+								["action"] = "starsurge",
 							}, -- [24]
 							{
 								["enabled"] = true,
-								["action"] = "new_moon",
 								["description"] = "Use Moons in Solar Eclipse and save Full Moon for CA/Inc",
 								["criteria"] = "( buff.eclipse_solar.remains > execute_time || ( charges = 2 & recharge_time < 5 ) || charges = 3 ) & ap_check",
+								["action"] = "new_moon",
 							}, -- [25]
 							{
 								["enabled"] = true,
@@ -37151,22 +37365,22 @@ HekiliDB = {
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "spell_targets.starfire > 4 + floor ( mastery_value * 100 / 20 ) + floor ( buff.starsurge_empowerment_solar.stack / 4 )",
-								["var_name"] = "starfire_in_solar",
 								["description"] = "Calculates whether to use Starfire in Solar which is at 5 targets+1 for every 20% mastery or 4 Starsurge Empowerment stacks",
+								["var_name"] = "starfire_in_solar",
 							}, -- [29]
 							{
 								["enabled"] = true,
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "1 / spell_haste < 2 - ( 0.2 * ( spell_targets.starfire - 1 ) * ( 1 + talent.soul_of_the_forest.enabled * 1.5 ) ) + 0.15 * buff.ravenous_frenzy.remains",
-								["var_name"] = "wrath_in_frenzy",
 								["description"] = "Calculates whether to Wrath during Frenzy",
+								["var_name"] = "wrath_in_frenzy",
 							}, -- [30]
 							{
 								["enabled"] = true,
-								["action"] = "wrath",
 								["description"] = "Use Wrath in Solar Eclipse or if no Starfire will fit into CA/Inc anymore",
 								["criteria"] = "( eclipse.lunar_next || eclipse.any_next & variable.is_cleave ) & ( target.time_to_die > 4 || eclipse.lunar_in_2 || boss & fight_remains < 10 ) || buff.eclipse_solar.remains < action.starfire.execute_time & buff.eclipse_solar.up || eclipse.in_solar & ! variable.starfire_in_solar || buff.ca_inc.remains < action.starfire.execute_time & ! variable.is_cleave & buff.ca_inc.remains < execute_time & buff.ca_inc.up || buff.ravenous_frenzy.up & variable.wrath_in_frenzy || ! variable.is_cleave & buff.ca_inc.remains > execute_time",
+								["action"] = "wrath",
 							}, -- [31]
 							{
 								["enabled"] = true,
@@ -37175,24 +37389,24 @@ HekiliDB = {
 							}, -- [32]
 							{
 								["enabled"] = true,
-								["action"] = "run_action_list",
 								["description"] = "Fallthru",
+								["action"] = "run_action_list",
 								["list_name"] = "fallthru",
 							}, -- [33]
 						},
 						["fallthru"] = {
 							{
 								["enabled"] = true,
-								["action"] = "starsurge",
 								["description"] = "Starsurge for movement unless using BoAT",
 								["criteria"] = "! runeforge.balance_of_all_things.equipped",
+								["action"] = "starsurge",
 							}, -- [1]
 							{
 								["enabled"] = true,
 								["action"] = "sunfire",
 								["cycle_targets"] = 1,
-								["description"] = "Cast the dot with the most time to add until the max duration is hit. Sunfire remains multiplied to match moonfire duration",
 								["criteria"] = "dot.moonfire.remains > remains * 22 / 18",
+								["description"] = "Cast the dot with the most time to add until the max duration is hit. Sunfire remains multiplied to match moonfire duration",
 							}, -- [2]
 							{
 								["action"] = "moonfire",
@@ -37204,60 +37418,60 @@ HekiliDB = {
 								["enabled"] = true,
 								["action"] = "adaptive_swarm",
 								["cycle_targets"] = 1,
-								["description"] = "Use Adaptive Swarm when there is no active swarm, as late as possible on swarm with 2 or fewer stacks or on a 3+ swarm so that the new swarm arrives just after that swarm expires",
 								["criteria"] = "! dot.adaptive_swarm_damage.ticking & ! action.adaptive_swarm_damage.in_flight & ( ! dot.adaptive_swarm_heal.ticking || dot.adaptive_swarm_heal.remains > 5 ) || dot.adaptive_swarm_damage.stack < 3 & dot.adaptive_swarm_damage.remains < 3 & dot.adaptive_swarm_damage.ticking",
+								["description"] = "Use Adaptive Swarm when there is no active swarm, as late as possible on swarm with 2 or fewer stacks or on a 3+ swarm so that the new swarm arrives just after that swarm expires",
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["action"] = "convoke_the_spirits",
 								["description"] = "Uses Convoke if CA/Inc is up or you are desyncing CA/Inc with Convoke and you are below 40/30(Celestial Spirits) AsP in a 10+ sec Eclipse. Also don't let Dreambinder expire, always use in CA/Inc with Pulsar and at the start of a BoAT window.",
 								["criteria"] = "! druid.no_cds & ( ( variable.convoke_desync & ! cooldown.ca_inc.ready & ! runeforge.primordial_arcanic_pulsar.enabled || buff.ca_inc.up ) & ( ( astral_power <= variable.convoke_asp & ( buff.eclipse_lunar.remains > 10 || buff.eclipse_solar.remains > 10 ) || buff.ca_inc.remains > 5 & buff.ca_inc.remains <= 12 ) & ( ! runeforge.timeworn_dreambinder.enabled || ! runeforge.celestial_spirits.enabled || buff.timeworn_dreambinder.remains > execute_time ) || runeforge.balance_of_all_things.enabled ) & ( ! runeforge.balance_of_all_things.enabled || ( buff.balance_of_all_things_nature.stack = 8 || buff.balance_of_all_things_arcane.stack = 8 ) ) || boss & fight_remains < 10 & ! cooldown.ca_inc.ready )",
+								["action"] = "convoke_the_spirits",
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["action"] = "starsurge",
 								["description"] = "Use Starsurge to keep up the Dreambinder buff if it would expire before finishing the next cast or to dump before Convoke",
 								["criteria"] = "runeforge.timeworn_dreambinder.enabled & ( ! ( ( buff.timeworn_dreambinder.remains > action.wrath.execute_time + 0.1 & ( eclipse.in_both || eclipse.in_solar || eclipse.lunar_next ) || buff.timeworn_dreambinder.remains > action.starfire.execute_time + 0.1 & ( eclipse.in_lunar || eclipse.solar_next || eclipse.any_next ) ) || ! buff.timeworn_dreambinder.up ) || ( buff.ca_inc.up || variable.convoke_desync ) & cooldown.convoke_the_spirits.ready & covenant.night_fae & ( buff.eclipse_lunar.remains > 10 || buff.eclipse_solar.remains > 10 ) ) & ( ! covenant.kyrian || cooldown.empower_bond.remains > 8 )",
+								["action"] = "starsurge",
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["action"] = "starsurge",
 								["description"] = "Dump Starsurges with Balance of All Things or to prepare for Convoke with BoAT",
 								["criteria"] = "runeforge.balance_of_all_things.enabled & ( ( buff.balance_of_all_things_nature.stack > 2 || buff.balance_of_all_things_arcane.stack > 2 ) & cooldown.ca_inc.remains > 7 & ! cooldown.convoke_the_spirits.up || ( covenant.night_fae & cooldown.convoke_the_spirits.remains < 10 & eclipse.in_any & astral_power > 20 + 30 * cooldown.ca_inc.ready ) )",
+								["action"] = "starsurge",
 							}, -- [4]
 							{
 								["enabled"] = true,
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "( buff.ravenous_frenzy.remains > 5 || ! buff.ravenous_frenzy.up ) & ! buff.ravenous_frenzy_sinful_hysteria.up & ( buff.kindred_empowerment_energize.remains < gcd.max ) & ( buff.eclipse_solar.remains > gcd.max || buff.eclipse_lunar.remains > gcd.max || ( ! buff.eclipse_lunar.up || ! buff.eclipse_solar.up ) & ! talent.solstice.enabled )",
-								["var_name"] = "dot_requirements",
 								["description"] = "Condition for all dots that makes sure they aren't refreshed when Ravenous Frenzy has less than 5 secs remaining or the Empower Bond buff is about to fall off or any Eclipse is about to expire",
+								["var_name"] = "dot_requirements",
 							}, -- [5]
 							{
 								["enabled"] = true,
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "( ! buff.eclipse_solar.up & ! buff.eclipse_lunar.up ) & ! talent.solstice.enabled & ! runeforge.timeworn_dreambinder.enabled",
-								["var_name"] = "dot_outside_eclipse",
 								["description"] = "Condition that checks if you are outside eclipse to only dot there or ignore this with Solstice",
+								["var_name"] = "dot_outside_eclipse",
 							}, -- [6]
 							{
 								["enabled"] = true,
 								["action"] = "moonfire",
 								["cycle_targets"] = 1,
-								["description"] = "Dot all targets within Pandemic without overcapping+the above conditions",
 								["criteria"] = "( buff.eclipse_solar.remains > remains || buff.eclipse_lunar.remains > remains || variable.dot_outside_eclipse ) & refreshable & target.time_to_die > 12 & ap_check & variable.dot_requirements",
+								["description"] = "Dot all targets within Pandemic without overcapping+the above conditions",
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["criteria"] = "( buff.eclipse_solar.remains > remains || buff.eclipse_lunar.remains > remains || variable.dot_outside_eclipse ) & refreshable & target.time_to_die > 12 & ap_check & variable.dot_requirements",
 								["action"] = "sunfire",
+								["criteria"] = "( buff.eclipse_solar.remains > remains || buff.eclipse_lunar.remains > remains || variable.dot_outside_eclipse ) & refreshable & target.time_to_die > 12 & ap_check & variable.dot_requirements",
 								["cycle_targets"] = 1,
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["criteria"] = "( buff.eclipse_solar.remains > remains || buff.eclipse_lunar.remains > remains || variable.dot_outside_eclipse ) & refreshable & target.time_to_die > 16 & ap_check & variable.dot_requirements",
 								["action"] = "stellar_flare",
+								["criteria"] = "( buff.eclipse_solar.remains > remains || buff.eclipse_lunar.remains > remains || variable.dot_outside_eclipse ) & refreshable & target.time_to_die > 16 & ap_check & variable.dot_requirements",
 								["cycle_targets"] = 1,
 							}, -- [9]
 							{
@@ -37265,8 +37479,8 @@ HekiliDB = {
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "covenant.venthyr & ! runeforge.sinful_hysteria.enabled & ! runeforge.circle_of_life_and_death.enabled & cooldown.berserking.ready & cooldown.ravenous_frenzy.ready & ! buff.ca_inc.up & ( astral_power > 87 || buff.bloodlust.up )",
-								["var_name"] = "no_hysteria_early_dot",
 								["description"] = "Dot right before Frenzy if it would allow you to refresh less during Frenzy (this only happens without Sinful Hysteria)",
+								["var_name"] = "no_hysteria_early_dot",
 							}, -- [10]
 							{
 								["enabled"] = true,
@@ -37280,37 +37494,37 @@ HekiliDB = {
 							}, -- [12]
 							{
 								["enabled"] = true,
-								["action"] = "force_of_nature",
 								["description"] = "Use FoN on cd without capping",
 								["criteria"] = "ap_check",
+								["action"] = "force_of_nature",
 							}, -- [13]
 							{
 								["enabled"] = true,
-								["action"] = "empower_bond",
 								["description"] = "Use Empower Bond with any long enough lasting Eclipse and try to line it up with Pulsar and CA/Inc",
 								["criteria"] = "( cooldown.ca_inc.remains + buff.ca_inc.duration + runeforge.primordial_arcanic_pulsar.enabled * 12 > cooldown.empower_bond.duration + 10 ) || buff.ca_inc.remains > 8 || druid.no_cds",
+								["action"] = "empower_bond",
 							}, -- [14]
 							{
 								["enabled"] = true,
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "astral_power > 90 - ( 2.5 * buff.fury_of_elune.stack - 2 * eclipse.in_lunar )",
-								["var_name"] = "asp_dump",
 								["description"] = "Sets when AsP should be dumped to not overcap (Depends on Fury of Elune and the Eclipse)",
+								["var_name"] = "asp_dump",
 							}, -- [15]
 							{
 								["enabled"] = true,
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "! druid.no_cds & ( variable.cd_condition & ! buff.ca_inc.up & ( ! set_bonus.tier28_2pc || eclipse.in_lunar || eclipse.solar_next ) & ( ( ( variable.asp_dump || covenant.night_fae || ( covenant.kyrian & cooldown.empower_bond.ready ) || runeforge.timeworn_dreambinder.enabled ) & dot.sunfire.remains > 8 & dot.moonfire.remains > 9 & ( dot.stellar_flare.remains > 10 || ! talent.stellar_flare.enabled ) & variable.thrill_seeker_wait & target.time_to_die > buff.ca_inc.duration * 0.7 || buff.bloodlust.up & buff.bloodlust.remains < buff.ca_inc.duration + ( 12 * runeforge.primordial_arcanic_pulsar.enabled ) ) || ( equipped.empyreal_ordnance & cooldown.empyreal_ordnance.remains < 167 + ( 5 * runeforge.sinful_hysteria.enabled ) ) ) & ( ! covenant.night_fae || ( cooldown.convoke_the_spirits.remains < buff.ca_inc.duration / 2 & ! runeforge.balance_of_all_things.enabled || cooldown.convoke_the_spirits.ready & astral_power < 50 ) || boss & fight_remains < cooldown.convoke_the_spirits.remains ) || boss & fight_remains < buff.ca_inc.duration + 12 * runeforge.primordial_arcanic_pulsar.enabled )",
-								["var_name"] = "cd_condition_st",
 								["description"] = "Use CA/Inc with Convoke/Kindred Spirits and don't overwrite Pulsar or when Bloodlust would expire before CA/Inc expires. Make sure to enter a Lunar Eclipse when usign T28 2pc and all CDs will become ready soon enough during the buff and dots have been sufficiently refreshed.",
+								["var_name"] = "cd_condition_st",
 							}, -- [16]
 							{
 								["enabled"] = true,
-								["action"] = "ravenous_frenzy",
 								["description"] = "Use Frenzy with CA/Inc unless Frenzy would last longer than CA/Inc, then use before",
 								["criteria"] = "buff.ca_inc.remains > 15 || buff.ca_inc.duration < 27 + runeforge.primordial_arcanic_pulsar.enabled * 12 & variable.cd_condition_st",
+								["action"] = "ravenous_frenzy",
 							}, -- [17]
 							{
 								["enabled"] = true,
@@ -37327,60 +37541,60 @@ HekiliDB = {
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "cooldown.ca_inc.remains > 10 || ! variable.convoke_desync & covenant.night_fae || druid.no_cds",
-								["var_name"] = "save_for_ca_inc",
 								["description"] = "Variable used on abilities that want to be saved for CA/Inc so that they arent wasted just before them",
+								["var_name"] = "save_for_ca_inc",
 							}, -- [20]
 							{
 								["enabled"] = true,
-								["action"] = "fury_of_elune",
 								["description"] = "Uses FoE if in an Eclipse and tries to line it up with Pulsar, CA/Inc, Empower Bond and Adaptive Swarm",
 								["criteria"] = "eclipse.in_any & ( astral_power < 92 - buff.fury_of_elune.stack * 5 || buff.ravenous_frenzy.up ) & ( buff.primordial_arcanic_pulsar.value < 240 || buff.ca_inc.remains > 8 ) & variable.save_for_ca_inc & ( ! covenant.necrolord || dot.adaptive_swarm_damage.ticking ) & ( ! covenant.venthyr || buff.ravenous_frenzy.remains < 9 - ( 4 * runeforge.sinful_hysteria.enabled ) & buff.ravenous_frenzy.up || ! buff.ravenous_frenzy.up ) & ( ! covenant.kyrian || cooldown.empower_bond.remains > 20 ) & target.time_to_die > 5 || boss & fight_remains < 10",
+								["action"] = "fury_of_elune",
 							}, -- [21]
 							{
 								["enabled"] = true,
-								["action"] = "starfall",
 								["description"] = "Use Oneth Starfall procs if Starfall isn't up",
 								["criteria"] = "buff.oneths_perception.up & buff.starfall.refreshable",
+								["action"] = "starfall",
 							}, -- [22]
 							{
 								["buff_name"] = "starlord",
 								["criteria"] = "buff.starlord.remains < 5 & ( buff.eclipse_solar.remains > 5 || buff.eclipse_lunar.remains > 5 ) & astral_power > 90",
-								["description"] = "Cancel Starlord if it has less than 5s remaining, you are at 90+ AsP and the current Eclipse has 5+s remaining",
-								["enabled"] = true,
 								["action"] = "cancel_buff",
+								["enabled"] = true,
+								["description"] = "Cancel Starlord if it has less than 5s remaining, you are at 90+ AsP and the current Eclipse has 5+s remaining",
 							}, -- [23]
 							{
 								["buff_name"] = "primordial_arcanic_pulsar",
 								["criteria"] = "talent.incarnation.enabled & ! talent.new_moon.enabled & @ ( ( 300 - astral_power + 40 - set_bonus.tier28_2pc * 40 ) / ( 4 / spell_haste ) - cooldown.convoke_the_spirits.remains ) < @ ( ( 300 - astral_power - buff.primordial_arcanic_pulsar.value + 40 - set_bonus.tier28_2pc * 40 ) / ( 4 / spell_haste ) - cooldown.convoke_the_spirits.remains ) & cooldown.ca_inc.remains > 30 & buff.primordial_arcanic_pulsar.value < 210 & buff.primordial_arcanic_pulsar.value > 30 & cooldown.convoke_the_spirits.remains < 40 & fight_remains > cooldown.convoke_the_spirits.remains + 6 & ( runeforge.celestial_spirits.enabled || variable.convoke_desync )",
-								["description"] = "Cancel the Pulsar buff if the proc wouldn't line up with the next time Convoke comes off cd. This usually only happens during the BL.",
-								["enabled"] = true,
 								["action"] = "cancel_buff",
+								["enabled"] = true,
+								["description"] = "Cancel the Pulsar buff if the proc wouldn't line up with the next time Convoke comes off cd. This usually only happens during the BL.",
 							}, -- [24]
 							{
 								["enabled"] = true,
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "covenant.night_fae & runeforge.primordial_arcanic_pulsar.enabled & buff.primordial_arcanic_pulsar.value + astral_power + 3 >= 300 & variable.convoke_desync & cooldown.convoke_the_spirits.remains < astral_power / 30 * gcd.max & ! druid.no_cds & eclipse.in_any & astral_power > variable.convoke_asp & cooldown.ca_inc.remains > 5",
-								["var_name"] = "proc_pulsar_early",
 								["description"] = "Sets when Pulsar should be procced early to be able to use Convoke on cooldown (Essentially becomes true if dumping AsP now will allow you to perfectly enter Pulsar and then use Convoke)",
+								["var_name"] = "proc_pulsar_early",
 							}, -- [25]
 							{
 								["enabled"] = true,
-								["action"] = "starfall",
 								["description"] = "Use Starfall with Stellar Drift or t28 4pc and no Starlord, when no Starfall is up or to proc Pulsar when above 90 AsP(or the early Pulsar proc variable is true) or adpative swarm has 8+secs remaining or is in flight",
-								["criteria"] = "( talent.stellar_drift.enabled || set_bonus.tier28_4pc ) & ! talent.starlord.enabled & buff.starfall.refreshable & ! runeforge.timeworn_dreambinder.enabled & ( buff.primordial_arcanic_pulsar.value >= 250 & ! buff.ca_inc.up & ( variable.asp_dump || buff.kindred_empowerment_energize.up || variable.proc_pulsar_early ) || ( covenant.necrolord & talent.stellar_drift.enabled & ( dot.adaptive_swarm_damage.remains > 8 || action.adaptive_swarm_damage.in_flight ) ) ) & cooldown.ca_inc.remains > 10",
+								["criteria"] = "( talent.stellar_drift.enabled || set_bonus.tier28_4pc ) & ! talent.starlord.enabled & buff.starfall.refreshable & ! runeforge.timeworn_dreambinder.enabled & ( buff.primordial_arcanic_pulsar.value >= 250 & ! buff.ca_inc.up & ( variable.asp_dump || buff.kindred_empowerment_energize.up || variable.proc_pulsar_early ) || ( covenant.necrolord & talent.stellar_drift.enabled & ( dot.adaptive_swarm_damage.remains > 8 || action.adaptive_swarm_damage.in_flight ) ) ) & ( cooldown.ca_inc.remains > 10 || cooldown.convoke_the_spirits.remains > 10 )",
+								["action"] = "starfall",
 							}, -- [26]
 							{
 								["enabled"] = true,
-								["action"] = "starsurge",
 								["description"] = "Dumps AsP before Convoke using the Convoke condition to check if Convoke is actually about to be cast",
 								["criteria"] = "variable.proc_pulsar_early",
+								["action"] = "starsurge",
 							}, -- [27]
 							{
 								["enabled"] = true,
-								["action"] = "new_moon",
 								["description"] = "Use Moons when you are about to/are capping charges and make sure they are in an Eclipse still for HM/FM",
 								["criteria"] = "ap_check & ( charges = 2 & recharge_time < 5 || charges = 3 )",
+								["action"] = "new_moon",
 							}, -- [28]
 							{
 								["enabled"] = true,
@@ -37394,35 +37608,35 @@ HekiliDB = {
 							}, -- [30]
 							{
 								["enabled"] = true,
-								["action"] = "starsurge",
 								["description"] = "Use Starsurge Oneth procs and dump AsP when CA/Inc, Empower Bond, the Venthyr buff is about to fall off or you'd cap AsP",
 								["criteria"] = "eclipse.in_any & ( buff.oneths_clear_vision.up || buff.kindred_empowerment_energize.up || buff.ca_inc.up & ( ! covenant.kyrian || cooldown.empower_bond.remains > 5 || buff.ca_inc.remains < gcd.max * floor ( astral_power / variable.ss_cost ) ) & ( ! covenant.venthyr || buff.ravenous_frenzy.remains < gcd.max * ceil ( ( astral_power + 40 * talent.fury_of_elune.enabled ) / variable.ss_cost ) + 3 * talent.new_moon.enabled & ! runeforge.sinful_hysteria.enabled & buff.ravenous_frenzy.up || buff.ravenous_frenzy_sinful_hysteria.up || ( buff.ravenous_frenzy.remains < action.starfire.execute_time & spell_haste < 0.4 || buff.ravenous_frenzy.remains < action.wrath.execute_time || variable.iqd_condition & cooldown.inscrutable_quantum_device.ready & equipped.inscrutable_quantum_device ) & buff.ravenous_frenzy.up || ! buff.ravenous_frenzy.up & ! cooldown.ravenous_frenzy.ready ) || variable.asp_dump || boss & fight_remains < gcd.max * ceil ( astral_power / variable.ss_cost ) )",
+								["action"] = "starsurge",
 							}, -- [31]
 							{
 								["enabled"] = true,
-								["action"] = "starsurge",
 								["description"] = "Try to make the best of Starlord by stacking it up quickly in any Eclipse but Pulsar isn't about to be procced",
 								["criteria"] = "talent.starlord.enabled & ! runeforge.timeworn_dreambinder.enabled & ( buff.starlord.up || astral_power > 90 ) & buff.starlord.stack < 3 & ( buff.eclipse_solar.up || buff.eclipse_lunar.up ) & buff.primordial_arcanic_pulsar.value < 270 & ( cooldown.ca_inc.remains > 10 || ! variable.convoke_desync & covenant.night_fae )",
+								["action"] = "starsurge",
 							}, -- [32]
 							{
 								["enabled"] = true,
 								["op"] = "set",
 								["action"] = "variable",
 								["value"] = "eclipse.in_lunar * 8 / action.starfire.execute_time + ! eclipse.in_lunar * ( 6 + talent.soul_of_the_forest.enabled * 3 ) / action.wrath.execute_time + 0.45 / spell_haste + 0.5 * talent.natures_balance.enabled",
-								["var_name"] = "aspPerSec",
 								["description"] = "Estimates how much AsP are gained per second. Only takes a snapshot for the current situation so wouldn't be accurate for larger timeframes",
+								["var_name"] = "aspPerSec",
 							}, -- [33]
 							{
 								["enabled"] = true,
-								["action"] = "starsurge",
 								["description"] = "Dump Starsurge in an Eclipse as soon as possible as long as you will end up with 80+ when entering the next Eclipse, don't let it proc Pulsar, don't overwrite an Oneth proc and pool before CA/Inc and Empower Bond",
 								["criteria"] = "! runeforge.timeworn_dreambinder.enabled & ( buff.primordial_arcanic_pulsar.value < 270 || buff.primordial_arcanic_pulsar.value < 250 & talent.stellar_drift.enabled ) & ( eclipse.in_solar & astral_power + variable.aspPerSec * buff.eclipse_solar.remains + dot.fury_of_elune.ticks_remain * 2.5 > 80 || eclipse.in_lunar & astral_power + variable.aspPerSec * buff.eclipse_lunar.remains + dot.fury_of_elune.ticks_remain * 2.5 > 90 ) & ! buff.oneths_perception.up & ! talent.starlord.enabled & ( cooldown.ca_inc.remains > 7 || soulbind.thrill_seeker.enabled & buff.thrill_seeker.stack < 33 - ( runeforge.sinful_hysteria.enabled * 2 ) & fight_remains > 100 & fight_remains < 200 || druid.no_cds ) & ( ! covenant.kyrian || cooldown.empower_bond.remains > 2 )",
+								["action"] = "starsurge",
 							}, -- [34]
 							{
 								["enabled"] = true,
-								["action"] = "new_moon",
 								["description"] = "Use Moons in any Eclipse and save Half+Full Moon for CA/Inc and Kindred Empowerment. Also use NM and FM at the end of Frenzy and don't let Dreambinder fall off",
 								["criteria"] = "ap_check & variable.save_for_ca_inc & ( buff.eclipse_lunar.remains > execute_time || buff.eclipse_solar.remains > execute_time )",
+								["action"] = "new_moon",
 							}, -- [35]
 							{
 								["enabled"] = true,
@@ -37441,9 +37655,9 @@ HekiliDB = {
 							}, -- [38]
 							{
 								["enabled"] = true,
-								["action"] = "starfire",
 								["description"] = "Use Starfire to proc Solar Eclipse, CA/Inc has less time than a Wrath execute left or only Lunar Eclipse is up. With T28 2pc enter a Solar Eclipse if Pulsar still has less than 210 stacks and CA/Inc and Convoke have more than 17s CD remaining. Use above 250% haste during Frenzy and 222% haste without Frenzy",
 								["criteria"] = "eclipse.in_lunar & ! buff.ravenous_frenzy.up || eclipse.solar_next || ( eclipse.any_next || buff.ca_inc.remains < action.wrath.execute_time & buff.ca_inc.up ) & ( ! set_bonus.tier28_2pc || runeforge.primordial_arcanic_pulsar.enabled & buff.primordial_arcanic_pulsar.value < 210 & cooldown.ca_inc.remains > 17 & ( ! covenant.night_fae || cooldown.convoke_the_spirits.remains > 17 ) & ( ! race.troll || cooldown.berserking.remains > 17 ) ) || eclipse.in_any & ( buff.warrior_of_elune.up || spell_haste < 0.45 & ( ! covenant.venthyr || ! buff.ravenous_frenzy.up ) || covenant.venthyr & spell_haste < 0.4 )",
+								["action"] = "starfire",
 							}, -- [39]
 							{
 								["enabled"] = true,
@@ -37452,16 +37666,16 @@ HekiliDB = {
 							}, -- [40]
 							{
 								["enabled"] = true,
-								["action"] = "run_action_list",
 								["description"] = "Fallthru",
+								["action"] = "run_action_list",
 								["list_name"] = "fallthru",
 							}, -- [41]
 						},
 					},
-					["version"] = 20220227,
+					["version"] = 20220302,
 					["warnings"] = "WARNING:  The import for 'opener' required some automated changes.\nLine 2: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 3: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 4: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\n\nWARNING:  The import for 'default' required some automated changes.\nLine 6: Converted SimC syntax % to Lua division operator (/) (1x).\nLine 6: Converted 'runeforge.X' to 'runeforge.X.enabled' (2x).\nLine 7: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 8: Converted SimC syntax % to Lua division operator (/) (2x).\nLine 8: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 9: Converted 'runeforge.X' to 'runeforge.X.enabled' (3x).\nLine 9: Converted 'trinket.1.X' to 'trinket.t1.X' (2x).\nLine 9: Converted 'trinket.2.X' to 'trinket.t2.X' (2x).\nLine 10: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 11: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 12: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 13: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 15: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 16: Converted 'runeforge.X' to 'runeforge.X.enabled' (2x).\nLine 16: Converted 'trinket.1.X' to 'trinket.t1.X' (2x).\nLine 16: Converted 'trinket.2.X' to 'trinket.t2.X' (1x).\nLine 17: Converted 'runeforge.X' to 'runeforge.X.enabled' (2x).\nLine 17: Converted 'trinket.1.X' to 'trinket.t1.X' (1x).\nLine 17: Converted 'trinket.2.X' to 'trinket.t2.X' (2x).\n\nWARNING:  The import for 'precombat' required some automated changes.\nLine 3: Converted 'trinket.1.X' to 'trinket.t1.X' (3x).\nLine 4: Converted 'trinket.2.X' to 'trinket.t2.X' (3x).\nLine 7: Converted 'runeforge.X' to 'runeforge.X.enabled' at EOL (1x).\n\nWARNING:  The import for 'aoe' required some automated changes.\nLine 1: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 2: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 2: Converted 'runeforge.X' to 'runeforge.X.enabled' at EOL (1x).\nLine 3: Converted 'talent.X' to 'talent.X.enabled' (1x).\nLine 3: Converted 'runeforge.X' to 'runeforge.X.enabled' (3x).\nLine 6: Converted SimC syntax %% to Lua modulus operator (%) (1x).\nLine 6: Converted 'runeforge.X' to 'runeforge.X.enabled' (2x).\nLine 7: Converted SimC syntax %% to Lua modulus operator (%) (1x).\nLine 7: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 8: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 9: Converted SimC syntax % to Lua division operator (/) (2x).\nLine 12: Converted SimC syntax % to Lua division operator (/) (1x).\nLine 14: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 15: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 16: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 18: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 20: Converted 'runeforge.X' to 'runeforge.X.enabled' (2x).\nLine 22: Converted SimC syntax % to Lua division operator (/) (1x).\nLine 24: Converted SimC syntax % to Lua division operator (/) (2x).\nLine 24: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 26: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 27: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 29: Converted SimC syntax % to Lua division operator (/) (2x).\nLine 30: Converted SimC syntax % to Lua division operator (/) (1x).\n\nWARNING:  The import for 'fallthru' required some automated changes.\nLine 2: Converted SimC syntax % to Lua division operator (/) (1x).\n\nWARNING:  The import for 'st' required some automated changes.\nLine 2: Converted 'runeforge.X' to 'runeforge.X.enabled' (5x).\nLine 3: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 4: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 6: Converted 'runeforge.X' to 'runeforge.X.enabled' at EOL (1x).\nLine 10: Converted 'runeforge.X' to 'runeforge.X.enabled' (2x).\nLine 14: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 16: Converted SimC syntax % to Lua division operator (/) (1x).\nLine 16: Converted 'runeforge.X' to 'runeforge.X.enabled' (5x).\nLine 17: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 18: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 21: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 24: Converted SimC syntax % to Lua division operator (/) (4x).\nLine 24: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 25: Converted SimC syntax % to Lua division operator (/) (1x).\nLine 25: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 26: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 31: Converted SimC syntax % to Lua division operator (/) (3x).\nLine 31: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 32: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\nLine 33: Converted SimC syntax % to Lua division operator (/) (3x).\nLine 34: Converted 'runeforge.X' to 'runeforge.X.enabled' (2x).\nLine 36: Converted 'runeforge.X' to 'runeforge.X.enabled' (2x).\nLine 37: Converted 'runeforge.X' to 'runeforge.X.enabled' (2x).\nLine 39: Converted 'runeforge.X' to 'runeforge.X.enabled' (1x).\n\nImported 6 action lists.\n",
 					["spec"] = 102,
-					["profile"] = "## Balance Druid\n## February 27, 2022\n\n## Changes:\n## - Added Solar Beam.\n## - Changed target_if cases to cycle_targets.\n## - Removed unnecessary variables (i.e., prev_starsurge -> prev.starsurge).\n## - Avoid precasting Wrath if it's the wrong Eclipse.\n## - Make Convoke the Spirits a little more flexible (if you hadn't hit it simultaneously with BOAT + Celestial Alignment, it'd skip).\n## - Make most 'fight_remains' scenarios apply to boss fights only.\n## - Treat Tome of Blah Blah Blah as a special trinket.\n## - Opener (i.e., Wrath, Wrath, Starfire) made more resilient to earlier combat-start.\n## - Fix Kindred Empowerment check for CD usage.\n\n## Annotated Balance APL can be found at https://balance-simc.github.io/Balance-SimC/md.html?file=balance.txt\n\nactions.precombat=kindred_spirits\n# The variable is set to 0 with no stat on use trinkets, 1 when the first one is on use, 2 if the second is and 3 if both are\nactions.precombat+=/variable,name=on_use_trinket,value=0\nactions.precombat+=/variable,name=on_use_trinket,op=add,value=1,if=trinket.1.has_use_buff&trinket.1.cooldown.duration&!trinket.1.is.tome_of_monstrous_constructions\nactions.precombat+=/variable,name=on_use_trinket,op=add,value=2,if=trinket.2.has_use_buff&trinket.2.cooldown.duration&!trinket.2.is.tome_of_monstrous_constructions\n# These trinkets are not automatically detected as on use stat trinkets.  Set variable to 4 as they also need special handling.\nactions.precombat+=/variable,name=on_use_trinket,op=add,value=4,if=equipped.inscrutable_quantum_device||equipped.empyreal_ordnance||equipped.soulletting_ruby\n# Sets the Starsurge cost for later calculations (for example when to start dumping before Frenzy falls off)\nactions.precombat+=/variable,name=ss_cost,value=30*(1-0.2*set_bonus.tier28_4pc)\n# Sets at which amount of AsP Convoke should be used: 40 without Celestial Spirits and 30 with.\nactions.precombat+=/variable,name=convoke_asp,value=30+10*runeforge.celestial_spirits\nactions.precombat+=/moonkin_form\nactions.precombat+=/wrath,line_cd=10,if=(eclipse.lunar_next||eclipse.in_solar||eclipse.in_both||eclipse.any_next)\n\n# Precast 2 Wrath and a Starsurge on ST with Night Fae and BoAT or Starfire otherwise\nactions.opener+=/wrath,if=(eclipse.lunar_next||eclipse.in_solar||eclipse.in_both||eclipse.any_next)&prev.1.wrath&!prev.2.wrath\nactions.opener+=/starfire,line_cd=5,if=!runeforge.balance_of_all_things||!covenant.night_fae||!spell_targets.starfall=1||!talent.natures_balance.enabled||(eclipse.solar_next||eclipse.in_lunar||eclipse.in_both||eclipse.any_next)\nactions.opener+=/starfire,line_cd=5,if=(!runeforge.balance_of_all_things||!covenant.night_fae||!spell_targets.starfall=1||!talent.natures_balance.enabled)&!set_bonus.tier28_2pc||(eclipse.solar_next||eclipse.in_lunar||eclipse.in_both||eclipse.any_next)\nactions.opener+=/starsurge,line_cd=5,if=(runeforge.balance_of_all_things&covenant.night_fae&spell_targets.starfall=1)&!set_bonus.tier28_2pc\n\n## Executed every time the actor is available.\nactions=solar_beam\nactions+=/call_action_list,name=opener,strict=1,if=time<(2*action.wrath.cast_time+action.starfire.cast_time)\n# Sets AoE on 3+ without drift and with Starlord and 2+ otherwise\nactions+=/variable,name=is_aoe,value=spell_targets.starfall>1&(!talent.starlord.enabled||talent.stellar_drift.enabled)||spell_targets.starfall>2\n# Sets cleave when Starfire can hit 2+ targets which is relevant for the Eclipse to be preferred and which filler to cast\nactions+=/variable,name=is_cleave,value=spell_targets.starfire>1\n# Variable that checks if you are in a gcd to avoid the situation where a trinket etc is used in between casts\nactions+=/variable,name=in_gcd,value=prev_gcd.1.moonfire||prev_gcd.1.sunfire||prev_gcd.1.starsurge||prev_gcd.1.starfall||prev_gcd.1.fury_of_elune||prev.ravenous_frenzy||buff.ca_inc.remains=buff.ca_inc.duration||variable.is_aoe\n# Use Berserking at the end of Frenzy when haste is above 60%, after Convoke and otherwise with CA/Inc\nactions+=/berserking,if=((!covenant.night_fae||!cooldown.convoke_the_spirits.up||runeforge.celestial_spirits)&buff.ca_inc.remains>15&buff.ravenous_frenzy.remains<4&!covenant.venthyr||covenant.venthyr&buff.ca_inc.up&buff.ravenous_frenzy.up&(buff.ravenous_frenzy.remains<=12-4*runeforge.sinful_hysteria||buff.ca_inc.remains<11||1%spell_haste<1.6))&variable.in_gcd\n# Pot with a CA/Inc that isn't a Pulsar proc or when the fight is about to end\nactions+=/potion,if=(buff.ca_inc.remains>15&(!runeforge.sinful_hysteria||buff.ravenous_frenzy.remains<19&buff.ravenous_frenzy.up)||boss&fight_remains<25)&variable.in_gcd\n# Calculates whether using Convoke now will allow you to still cast the same amount of Convoke+CA/Inc casts\nactions+=/variable,name=convoke_desync,value=ceil((fight_remains-15-cooldown.ca_inc.remains)%180)=ceil((fight_remains-15-cooldown.convoke_the_spirits.duration-cooldown.convoke_the_spirits.remains)%180)&!raid_event.adds.exists&(!cooldown.ca_inc.ready||!cooldown.convoke.ready)||cooldown.ca_inc.remains>interpolated_fight_remains||runeforge.celestial_spirits&cooldown.ca_inc.remains>30||cooldown.convoke_the_spirits.remains>interpolated_fight_remains-10||!covenant.night_fae\n# Used to delay the usage of CA/Inc when using double on use and prevent usage when an add event is about to die\nactions+=/variable,name=cd_condition,value=(target.time_to_die>15||raid_event.adds.in>50)&((equipped.empyreal_ordnance&(!covenant.venthyr||cooldown.empyreal_ordnance.remains<167+(5*runeforge.sinful_hysteria))&!cooldown.empyreal_ordnance.ready)||equipped.soulletting_ruby&(!covenant.night_fae||cooldown.soulletting_ruby_345801.remains<114)||(cooldown.berserking.ready||!race.troll||covenant.night_fae)&(!talent.fury_of_elune.enabled||covenant.venthyr&cooldown.fury_of_elune.remains<11+5*runeforge.sinful_hysteria||!covenant.venthyr&cooldown.fury_of_elune.remains<buff.ca_inc.duration+12*runeforge.primordial_arcanic_pulsar-12)&((equipped.inscrutable_quantum_device&cooldown.inscrutable_quantum_device.ready)||(equipped.shadowed_orb_of_torment&cooldown.tormented_insight_355321.remains)||((variable.on_use_trinket=1||variable.on_use_trinket=3)&(trinket.1.ready_cooldown||trinket.1.cooldown.remains>interpolated_fight_remains-10)||variable.on_use_trinket=2&(trinket.2.ready_cooldown||trinket.2.cooldown.remains>interpolated_fight_remains-10)||variable.on_use_trinket=0)))\n# Variable used to delay any trinkets and cds when waiting for an Euphoria proc\nactions+=/variable,name=thrill_seeker_wait,value=!soulbind.thrill_seeker.enabled||fight_remains>200||boss&fight_remains<25+(40-buff.thrill_seeker.stack*2)||buff.thrill_seeker.stack>38-(runeforge.sinful_hysteria*2)\n# Use Empyreal Ordnance 20secs before a CA/Inc use or so that it will line up with the end of Frenzy\nactions+=/use_item,name=empyreal_ordnance,if=cooldown.ca_inc.remains<20&cooldown.convoke_the_spirits.remains<20&(variable.thrill_seeker_wait||buff.thrill_seeker.stack>30+(runeforge.sinful_hysteria*3))&variable.in_gcd||boss&fight_remains<37\n# Use Soulleting Ruby 6secs before a CA/Inc use or so that it will line up with the end of Frenzy\nactions+=/use_item,name=soulletting_ruby,if=(cooldown.ca_inc.remains<6&!covenant.venthyr&!covenant.night_fae||covenant.night_fae&cooldown.convoke_the_spirits.remains<6&(variable.convoke_desync||cooldown.ca_inc.remains<6)||covenant.venthyr&(!runeforge.sinful_hysteria&cooldown.ca_inc.remains<6||buff.ravenous_frenzy.remains<10+(5*equipped.instructors_divine_bell)&buff.ravenous_frenzy.up)||boss&fight_remains<25||equipped.empyreal_ordnance&cooldown.empyreal_ordnance.remains>20)&variable.in_gcd&!equipped.inscrutable_quantum_device||cooldown.inscrutable_quantum_device.remains>20||boss&fight_remains<20\n# Always use IQD with CA/Inc or at the end of Frenzy\nactions+=/variable,name=iqd_condition,value=buff.ca_inc.remains>15&(!runeforge.sinful_hysteria||buff.ravenous_frenzy.remains<=15.5+(3.5*buff.bloodlust.up)+(4.5-3.5*buff.bloodlust.up)*equipped.instructors_divine_bell&buff.ravenous_frenzy.up)||boss&fight_remains<25||equipped.empyreal_ordnance&cooldown.empyreal_ordnance.remains\nactions+=/use_item,name=inscrutable_quantum_device,if=variable.iqd_condition&variable.in_gcd\n# Use Shadowed Orb before CA/Inc\nactions+=/use_item,name=shadowed_orb_of_torment,if=(cooldown.ca_inc.ready&!covenant.night_fae&variable.thrill_seeker_wait&(cooldown.berserking.ready||!race.troll)||covenant.night_fae&cooldown.convoke_the_spirits.ready&(variable.convoke_desync||cooldown.ca_inc.ready))&dot.sunfire.ticking&(dot.stellar_flare.ticking||!talent.stellar_flare.enabled||spell_targets.starfire>3)&dot.moonfire.ticking&(variable.is_aoe||runeforge.balance_of_all_things||astral_power>=90||variable.convoke_desync||buff.bloodlust.up)&!equipped.inscrutable_quantum_device||equipped.inscrutable_quantum_device&cooldown.inscrutable_quantum_device.remains>30&!buff.ca_inc.up||boss&fight_remains<40\n# This is a rather elaborate way to make all on use stat trinkets to be lined up with CA/Inc and Convoke and use the 2nd slot on cd if both trinkets are on use stat trinkets\nactions+=/use_items,slots=trinket1,if=(variable.on_use_trinket!=1&!trinket.2.ready_cooldown||(variable.on_use_trinket=1||variable.on_use_trinket=3)&(buff.ca_inc.up&(!covenant.venthyr||buff.ravenous_frenzy.remains+(3.5*runeforge.sinful_hysteria)<=trinket.1.buff_duration&buff.ravenous_frenzy.up||buff.ravenous_frenzy_sinful_hysteria.up)||cooldown.ca_inc.remains+2>trinket.1.cooldown.duration&!buff.ca_inc.up&(!covenant.night_fae||!variable.convoke_desync)&!covenant.kyrian||covenant.night_fae&variable.convoke_desync&cooldown.convoke_the_spirits.up&!cooldown.ca_inc.up&((buff.eclipse_lunar.remains>10||buff.eclipse_solar.remains>10)&!runeforge.balance_of_all_things||(buff.balance_of_all_things_nature.stack=5||buff.balance_of_all_things_arcane.stack=8))||buff.kindred_empowerment_energize.up)||boss&fight_remains<20||variable.on_use_trinket=0)&variable.in_gcd\nactions+=/use_items,slots=trinket2,if=(variable.on_use_trinket!=2&!trinket.1.ready_cooldown||variable.on_use_trinket=2&(buff.ca_inc.up&(!covenant.venthyr||buff.ravenous_frenzy.remains+(3.5*runeforge.sinful_hysteria)<=trinket.2.buff_duration&buff.ravenous_frenzy.up||buff.ravenous_frenzy_sinful_hysteria.up)||cooldown.ca_inc.remains+2>trinket.2.cooldown.duration&!buff.ca_inc.up&(!covenant.night_fae||!variable.convoke_desync)&!covenant.kyrian&(!buff.ca_inc.up||!covenant.venthyr)||covenant.night_fae&variable.convoke_desync&cooldown.convoke_the_spirits.up&!cooldown.ca_inc.up&((buff.eclipse_lunar.remains>10||buff.eclipse_solar.remains>10)&!runeforge.balance_of_all_things||(buff.balance_of_all_things_nature.stack=5||buff.balance_of_all_things_arcane.stack=8)))||buff.kindred_empowerment_energize.up||boss&fight_remains<20||variable.on_use_trinket=0)&variable.in_gcd\n# Uses all other on use items on cd\nactions+=/use_items\n# Either go into the st or aoe action list\nactions+=/run_action_list,name=aoe,strict=1,if=variable.is_aoe\nactions+=/run_action_list,name=st\n\n# Calculates whether the Dreamcatcher buff will fall off within the next cast\nactions.aoe=variable,name=dream_will_fall_off,value=runeforge.timeworn_dreambinder&(buff.timeworn_dreambinder.remains<gcd.max+0.1||buff.timeworn_dreambinder.remains<action.starfire.execute_time+0.1&(eclipse.in_lunar||eclipse.solar_next||eclipse.any_next))&buff.timeworn_dreambinder.up\n# Calculates whether Starsurge is worth casting over Starfire in Lunar Eclipse\nactions.aoe+=/variable,name=ignore_starsurge,value=!eclipse.in_solar&spell_targets.starfire>7-talent.soul_of_the_forest.enabled*2+eclipse.in_both&!runeforge.primordial_arcanic_pulsar&!runeforge.oneths_clear_vision\n# Use Convoke when at less than 50 AsP and line up with CA/Inc\nactions.aoe+=/convoke_the_spirits,if=!druid.no_cds&((variable.convoke_desync&!cooldown.ca_inc.ready||buff.ca_inc.up)&(buff.eclipse_lunar.remains>5||buff.eclipse_solar.remains>5)&(astral_power<50&(spell_targets.starfire>3||buff.ca_inc.up)||!runeforge.primordial_arcanic_pulsar)&(!talent.stellar_drift||buff.starfall.remains<1.5-0.5*runeforge.celestial_spirits||buff.ca_inc.remains<buff.starfall.remains+5&buff.ca_inc.up)&(!runeforge.balance_of_all_things||buff.balance_of_all_things_nature.stack>3||buff.balance_of_all_things_arcane.stack>3)||boss&fight_remains<10&cooldown.ca_inc.remains>5)\n# Use Sunfire in pandemic on anything that lives 14secs and less with more targets and at the end of a Solar Eclipse at 14 secs or less remaining as to not having to refresh during Lunar Eclipse\nactions.aoe+=/sunfire,cycle_targets=1,if=(refreshable||buff.eclipse_solar.remains<3&eclipse.in_solar&remains<14&talent.soul_of_the_forest.enabled)&target.time_to_die>14-spell_targets+remains&(eclipse.in_any||remains<gcd.max)\n# Use Sunfire to have a global to use IQD\nactions.aoe+=/sunfire,if=variable.iqd_condition&cooldown.inscrutable_quantum_device.ready&equipped.inscrutable_quantum_device&ap_check\n# Keep up Starfall at all times unless using Lycaras and it is about to proc or let the special action line below handle Dreambinder on 2 targets\nactions.aoe+=/starfall,if=!talent.stellar_drift.enabled&(!set_bonus.tier28_4pc||eclipse.in_any||spell_targets.starfall>3)&(buff.starfall.refreshable&(spell_targets.starfall<3||!runeforge.timeworn_dreambinder)||talent.soul_of_the_forest.enabled&buff.eclipse_solar.remains<3&eclipse.in_solar&buff.starfall.remains<7&spell_targets.starfall>=4)&(!runeforge.lycaras_fleeting_glimpse||time%%45>buff.starfall.remains+2)&target.time_to_die>5\n# With Stellar Drift use on cd when refreshable but still wait for Lycaras proc and don't use before CDs. Still use before Convoke since that will proc another Starfall\nactions.aoe+=/starfall,if=talent.stellar_drift.enabled&buff.starfall.refreshable&(!set_bonus.tier28_4pc||eclipse.in_any||spell_targets.starfall>4)&(!runeforge.lycaras_fleeting_glimpse||time%%45>4)&target.time_to_die>3\n# With Dreambinder use Starfall to keep up the buff by also using Starfall on 5 seconds or less remaining\nactions.aoe+=/starfall,if=runeforge.timeworn_dreambinder&spell_targets.starfall>=3&(!buff.timeworn_dreambinder.up&buff.starfall.refreshable||(variable.dream_will_fall_off&(buff.starfall.remains<3||spell_targets.starfall>2&talent.stellar_drift.enabled&buff.starfall.remains<5)))\n# Calculates whether a Starsurge use will cause Starfall to fall off, and use Starsurge to keep Dreambinder stack up. 80 is the required AsP to cast Starsurge+Starfall\nactions.aoe+=/variable,name=starfall_wont_fall_off,value=astral_power>80*(1-set_bonus.tier28_2pc*0.2)*(1-buff.timeworn_dreambinder.stack*0.1)-(buff.starfall.remains*3%spell_haste*!talent.stellar_drift.enabled)-(cooldown.starfall.remains*3%spell_haste*talent.stellar_drift.enabled)-(buff.fury_of_elune.remains*5)&(buff.starfall.up||cooldown.starfall.remains)\n# Use Starsurge with Dreambinder to keep up the buff without losing Starfall uptime and use Starsurge on 4+ BoAT stacks until 4 targets\nactions.aoe+=/starsurge,if=variable.dream_will_fall_off&variable.starfall_wont_fall_off&!variable.ignore_starsurge||(buff.balance_of_all_things_nature.stack>3||buff.balance_of_all_things_arcane.stack>3)&spell_targets.starfall<4&variable.starfall_wont_fall_off\n# Use swarm so that you get max uptime by using it as late as possible on less than 3 stacks or just when 3+ stacks expire\nactions.aoe+=/adaptive_swarm,cycle_targets=1,if=!ticking&!action.adaptive_swarm_damage.in_flight||dot.adaptive_swarm_damage.stack<3&dot.adaptive_swarm_damage.remains<3\n# Refresh Moonfire if CA/Inc is ready, there are less than 5 targets in Lunar Eclipse with SotF, less than 10 otherwise in any Eclipse or up to 5 targets before a Lunar Eclipse. Don't refresh during Kindred Empowerment unless in Solar Eclipse\nactions.aoe+=/moonfire,cycle_targets=1,if=refreshable&target.time_to_die>((14+(spell_targets.starfire*2*buff.eclipse_lunar.up))+remains)%(1+talent.twin_moons.enabled)&(ap_check||variable.ignore_starsurge||!eclipse.in_any)&(cooldown.ca_inc.ready&eclipse.in_any&!druid.no_cds&(variable.convoke_desync||cooldown.convoke_the_spirits.ready||!covenant.night_fae)||spell_targets.starfire<((6-(buff.eclipse_lunar.up*2))*(1+talent.twin_moons.enabled))&!eclipse.solar_next&!cooldown.ca_inc.ready||(eclipse.in_solar||buff.eclipse_lunar.up&!talent.soul_of_the_forest.enabled||buff.primordial_arcanic_pulsar.value>=250)&(spell_targets.starfire<10*(1+talent.twin_moons.enabled))&astral_power>50-buff.starfall.remains*6)&(!covenant.kyrian||!buff.kindred_empowerment_energize.up||eclipse.in_solar)&!buff.ravenous_frenzy_sinful_hysteria.up\n# Use FoN on cd without capping\nactions.aoe+=/force_of_nature,if=ap_check||variable.ignore_starsurge\nactions.aoe+=/variable,name=cd_condition_aoe,value=!druid.no_cds&(variable.cd_condition&(buff.starfall.up||talent.stellar_drift.enabled||covenant.night_fae)&dot.moonfire.ticking&(!buff.solstice.up&!buff.ca_inc.up&(!talent.fury_of_elune.enabled||buff.ca_inc.duration>cooldown.fury_of_elune.remains+8)&(!set_bonus.tier28_2pc||eclipse.in_lunar||eclipse.solar_next)&variable.thrill_seeker_wait&(!covenant.night_fae||cooldown.convoke_the_spirits.remains<buff.ca_inc.duration*0.5)&target.time_to_die>buff.ca_inc.duration*0.7)||boss&fight_remains<buff.ca_inc.duration+12*runeforge.primordial_arcanic_pulsar)\n# Use Frenzy with CA/Inc\nactions.aoe+=/ravenous_frenzy,if=buff.ca_inc.remains>15||buff.ca_inc.duration+12*runeforge.primordial_arcanic_pulsar<26&variable.cd_condition_aoe\n# Use CA/Inc on cd unless and line it up with Convoke\nactions.aoe+=/celestial_alignment,if=variable.cd_condition_aoe&(buff.ca_inc.duration+12*runeforge.primordial_arcanic_pulsar>=26||!covenant.venthyr)||buff.ravenous_frenzy.up&buff.ravenous_frenzy.remains<9+conduit.precise_alignment.time_value+(!buff.bloodlust.up&!talent.starlord.enabled)\nactions.aoe+=/incarnation,if=variable.cd_condition_aoe\n# Use Empower Bond on cd with Starfall up and save for Pulsar and CA/Inc\nactions.aoe+=/empower_bond,if=(cooldown.ca_inc.remains+buff.ca_inc.duration+runeforge.primordial_arcanic_pulsar*12>cooldown.empower_bond.duration+10)||buff.ca_inc.remains>8||druid.no_cds\n# Refresh flare on up to 3 targets without CA/Inc being about to expire and not overcapping\nactions.aoe+=/stellar_flare,cycle_targets=1,if=refreshable&time_to_die>15&spell_targets.starfire<4&ap_check&(buff.ca_inc.remains>10||!buff.ca_inc.up)\n# Use FoE if inside an Eclipse and line it up with a Pulsar proc and Adaptive Swarm\nactions.aoe+=/fury_of_elune,if=eclipse.in_any&(ap_check||!runeforge.primordial_arcanic_pulsar)&(buff.primordial_arcanic_pulsar.value<250||buff.ca_inc.remains>8)&(dot.adaptive_swarm_damage.ticking||!covenant.necrolord||spell_targets>2)&(buff.ravenous_frenzy.remains<9-(4*runeforge.sinful_hysteria)&buff.ravenous_frenzy.up||!buff.ravenous_frenzy.up)&(!cooldown.ca_inc.up||buff.thrill_seeker.stack<15&fight_remains<200&fight_remains>100||!soulbind.thrill_seeker.enabled)&(soulbind.thrill_seeker.enabled||cooldown.ca_inc.remains>30)&target.time_to_die>5||boss&fight_remains<10\n# Use a Starfall Oneth proc unless Starfall is already up or you are about to overcap AsP\nactions.aoe+=/starfall,if=buff.oneths_perception.up&(buff.starfall.refreshable||astral_power>90)\n# Dump AsP before Convoke with Starfall and then Starsurge\nactions.aoe+=/starfall,if=covenant.night_fae&!talent.stellar_drift.enabled&(variable.convoke_desync||cooldown.ca_inc.up||buff.ca_inc.up)&cooldown.convoke_the_spirits.remains<gcd.max*ceil(astral_power%50)&buff.starfall.remains<4&!druid.no_cds\nactions.aoe+=/starsurge,if=covenant.night_fae&(variable.convoke_desync||cooldown.ca_inc.up||buff.ca_inc.up)&cooldown.convoke_the_spirits.remains<5&variable.starfall_wont_fall_off&eclipse.in_any&!variable.ignore_starsurge&!druid.no_cds\n# Use Starsurge with an Oneth proc or if you'd overcap AsP with your next cast. Also dump AsP at the end of the Venthyr buff if Starfall wouldn't fall off or you are on 2 targets\nactions.aoe+=/starsurge,if=buff.oneths_clear_vision.up||(!starfire.ap_check&!variable.ignore_starsurge||(buff.ca_inc.remains<5&buff.ca_inc.up||((buff.ca_inc.remains<gcd.max*ceil(astral_power%variable.ss_cost)&buff.ca_inc.up||buff.ravenous_frenzy_sinful_hysteria.remains<gcd.max*ceil(astral_power%variable.ss_cost)&buff.ravenous_frenzy_sinful_hysteria.up)&covenant.venthyr))&(spell_targets.starfall<3||variable.starfall_wont_fall_off))&!variable.ignore_starsurge&(!runeforge.timeworn_dreambinder||spell_targets.starfall<3)\n# Use Moons in Solar Eclipse and save Full Moon for CA/Inc\nactions.aoe+=/new_moon,if=(buff.eclipse_solar.remains>execute_time||(charges=2&recharge_time<5)||charges=3)&ap_check\nactions.aoe+=/half_moon,if=(buff.eclipse_solar.remains>execute_time||(charges=2&recharge_time<5)||charges=3)&ap_check&(buff.ravenous_frenzy.remains<5&buff.ravenous_frenzy.up&!runeforge.sinful_hysteria||!buff.ravenous_frenzy.up)\nactions.aoe+=/full_moon,if=(buff.eclipse_solar.remains>execute_time&(cooldown.ca_inc.remains>50||cooldown.convoke_the_spirits.remains>50)||(charges=2&recharge_time<5)||charges=3)&ap_check&(buff.ravenous_frenzy.remains<5&buff.ravenous_frenzy.up&!runeforge.sinful_hysteria||!buff.ravenous_frenzy.up)\n# Use WoE on CD\nactions.aoe+=/warrior_of_elune\n# Calculates whether to use Starfire in Solar which is at 5 targets+1 for every 20% mastery or 4 Starsurge Empowerment stacks\nactions.aoe+=/variable,name=starfire_in_solar,value=spell_targets.starfire>4+floor(mastery_value*100%20)+floor(buff.starsurge_empowerment_solar.stack%4)\n# Calculates whether to Wrath during Frenzy\nactions.aoe+=/variable,name=wrath_in_frenzy,value=1%spell_haste<2-(0.2*(spell_targets.starfire-1)*(1+talent.soul_of_the_forest.enabled*1.5))+0.15*buff.ravenous_frenzy.remains\n# Use Wrath in Solar Eclipse or if no Starfire will fit into CA/Inc anymore\nactions.aoe+=/wrath,if=(eclipse.lunar_next||eclipse.any_next&variable.is_cleave)&(target.time_to_die>4||eclipse.lunar_in_2||boss&fight_remains<10)||buff.eclipse_solar.remains<action.starfire.execute_time&buff.eclipse_solar.up||eclipse.in_solar&!variable.starfire_in_solar||buff.ca_inc.remains<action.starfire.execute_time&!variable.is_cleave&buff.ca_inc.remains<execute_time&buff.ca_inc.up||buff.ravenous_frenzy.up&variable.wrath_in_frenzy||!variable.is_cleave&buff.ca_inc.remains>execute_time\n# Use Starfire if in Lunar Eclipse, in Solar Eclipse on 4+ targets or to proc Solar Eclipse\nactions.aoe+=/starfire\n# Fallthru\nactions.aoe+=/run_action_list,name=fallthru\n\n# Starsurge for movement unless using BoAT\nactions.fallthru=starsurge,if=!runeforge.balance_of_all_things.equipped\n# Cast the dot with the most time to add until the max duration is hit. Sunfire remains multiplied to match moonfire duration\nactions.fallthru+=/sunfire,cycle_targets=1,if=dot.moonfire.remains>remains*22%18\nactions.fallthru+=/moonfire\n\n# Use Adaptive Swarm when there is no active swarm, as late as possible on swarm with 2 or fewer stacks or on a 3+ swarm so that the new swarm arrives just after that swarm expires\nactions.st=adaptive_swarm,cycle_targets=1,if=!dot.adaptive_swarm_damage.ticking&!action.adaptive_swarm_damage.in_flight&(!dot.adaptive_swarm_heal.ticking||dot.adaptive_swarm_heal.remains>5)||dot.adaptive_swarm_damage.stack<3&dot.adaptive_swarm_damage.remains<3&dot.adaptive_swarm_damage.ticking\n# Uses Convoke if CA/Inc is up or you are desyncing CA/Inc with Convoke and you are below 40/30(Celestial Spirits) AsP in a 10+ sec Eclipse. Also don't let Dreambinder expire, always use in CA/Inc with Pulsar and at the start of a BoAT window.\nactions.st+=/convoke_the_spirits,if=!druid.no_cds&((variable.convoke_desync&!cooldown.ca_inc.ready&!runeforge.primordial_arcanic_pulsar||buff.ca_inc.up)&((astral_power<=variable.convoke_asp&(buff.eclipse_lunar.remains>10||buff.eclipse_solar.remains>10)||buff.ca_inc.remains>5&buff.ca_inc.remains<=12)&(!runeforge.timeworn_dreambinder||!runeforge.celestial_spirits||buff.timeworn_dreambinder.remains>execute_time)||runeforge.balance_of_all_things)&(!runeforge.balance_of_all_things||(buff.balance_of_all_things_nature.stack=8||buff.balance_of_all_things_arcane.stack=8))||boss&fight_remains<10&!cooldown.ca_inc.ready)\n# Use Starsurge to keep up the Dreambinder buff if it would expire before finishing the next cast or to dump before Convoke\nactions.st+=/starsurge,if=runeforge.timeworn_dreambinder&(!((buff.timeworn_dreambinder.remains>action.wrath.execute_time+0.1&(eclipse.in_both||eclipse.in_solar||eclipse.lunar_next)||buff.timeworn_dreambinder.remains>action.starfire.execute_time+0.1&(eclipse.in_lunar||eclipse.solar_next||eclipse.any_next))||!buff.timeworn_dreambinder.up)||(buff.ca_inc.up||variable.convoke_desync)&cooldown.convoke_the_spirits.ready&covenant.night_fae&(buff.eclipse_lunar.remains>10||buff.eclipse_solar.remains>10))&(!covenant.kyrian||cooldown.empower_bond.remains>8)\n# Dump Starsurges with Balance of All Things or to prepare for Convoke with BoAT\nactions.st+=/starsurge,if=runeforge.balance_of_all_things&((buff.balance_of_all_things_nature.stack>2||buff.balance_of_all_things_arcane.stack>2)&cooldown.ca_inc.remains>7&!cooldown.convoke_the_spirits.up||(covenant.night_fae&cooldown.convoke_the_spirits.remains<10&eclipse.in_any&astral_power>20+30*cooldown.ca_inc.ready))\n# Condition for all dots that makes sure they aren't refreshed when Ravenous Frenzy has less than 5 secs remaining or the Empower Bond buff is about to fall off or any Eclipse is about to expire\nactions.st+=/variable,name=dot_requirements,value=(buff.ravenous_frenzy.remains>5||!buff.ravenous_frenzy.up)&!buff.ravenous_frenzy_sinful_hysteria.up&(buff.kindred_empowerment_energize.remains<gcd.max)&(buff.eclipse_solar.remains>gcd.max||buff.eclipse_lunar.remains>gcd.max||(!buff.eclipse_lunar.up||!buff.eclipse_solar.up)&!talent.solstice.enabled)\n# Condition that checks if you are outside eclipse to only dot there or ignore this with Solstice\nactions.st+=/variable,name=dot_outside_eclipse,value=(!buff.eclipse_solar.up&!buff.eclipse_lunar.up)&!talent.solstice.enabled&!runeforge.timeworn_dreambinder\n# Dot all targets within Pandemic without overcapping+the above conditions\nactions.st+=/moonfire,cycle_targets=1,if=(buff.eclipse_solar.remains>remains||buff.eclipse_lunar.remains>remains||variable.dot_outside_eclipse)&refreshable&target.time_to_die>12&ap_check&variable.dot_requirements\nactions.st+=/sunfire,cycle_targets=1,if=(buff.eclipse_solar.remains>remains||buff.eclipse_lunar.remains>remains||variable.dot_outside_eclipse)&refreshable&target.time_to_die>12&ap_check&variable.dot_requirements\nactions.st+=/stellar_flare,cycle_targets=1,if=(buff.eclipse_solar.remains>remains||buff.eclipse_lunar.remains>remains||variable.dot_outside_eclipse)&refreshable&target.time_to_die>16&ap_check&variable.dot_requirements\n# Dot right before Frenzy if it would allow you to refresh less during Frenzy (this only happens without Sinful Hysteria)\nactions.st+=/variable,name=no_hysteria_early_dot,value=covenant.venthyr&!runeforge.sinful_hysteria&!runeforge.circle_of_life_and_death&cooldown.berserking.ready&cooldown.ravenous_frenzy.ready&!buff.ca_inc.up&(astral_power>87||buff.bloodlust.up)\nactions.st+=/moonfire,if=variable.no_hysteria_early_dot&remains<20\nactions.st+=/sunfire,if=variable.no_hysteria_early_dot&remains<19\n# Use FoN on cd without capping\nactions.st+=/force_of_nature,if=ap_check\n# Use Empower Bond with any long enough lasting Eclipse and try to line it up with Pulsar and CA/Inc\nactions.st+=/empower_bond,if=(cooldown.ca_inc.remains+buff.ca_inc.duration+runeforge.primordial_arcanic_pulsar*12>cooldown.empower_bond.duration+10)||buff.ca_inc.remains>8||druid.no_cds\n# Sets when AsP should be dumped to not overcap (Depends on Fury of Elune and the Eclipse)\nactions.st+=/variable,name=asp_dump,value=astral_power>90-(2.5*buff.fury_of_elune.stack-2*eclipse.in_lunar)\n# Use CA/Inc with Convoke/Kindred Spirits and don't overwrite Pulsar or when Bloodlust would expire before CA/Inc expires. Make sure to enter a Lunar Eclipse when usign T28 2pc and all CDs will become ready soon enough during the buff and dots have been sufficiently refreshed.\nactions.st+=/variable,name=cd_condition_st,value=!druid.no_cds&(variable.cd_condition&!buff.ca_inc.up&(!set_bonus.tier28_2pc||eclipse.in_lunar||eclipse.solar_next)&(((variable.asp_dump||covenant.night_fae||(covenant.kyrian&cooldown.empower_bond.ready)||runeforge.timeworn_dreambinder)&dot.sunfire.remains>8&dot.moonfire.remains>9&(dot.stellar_flare.remains>10||!talent.stellar_flare.enabled)&variable.thrill_seeker_wait&target.time_to_die>buff.ca_inc.duration*0.7||buff.bloodlust.up&buff.bloodlust.remains<buff.ca_inc.duration+(12*runeforge.primordial_arcanic_pulsar))||(equipped.empyreal_ordnance&cooldown.empyreal_ordnance.remains<167+(5*runeforge.sinful_hysteria)))&(!covenant.night_fae||(cooldown.convoke_the_spirits.remains<buff.ca_inc.duration%2&!runeforge.balance_of_all_things||cooldown.convoke_the_spirits.ready&astral_power<50)||boss&fight_remains<cooldown.convoke_the_spirits.remains)||boss&fight_remains<buff.ca_inc.duration+12*runeforge.primordial_arcanic_pulsar)\n# Use Frenzy with CA/Inc unless Frenzy would last longer than CA/Inc, then use before\nactions.st+=/ravenous_frenzy,if=buff.ca_inc.remains>15||buff.ca_inc.duration<27+runeforge.primordial_arcanic_pulsar*12&variable.cd_condition_st\nactions.st+=/celestial_alignment,if=variable.cd_condition_st&(buff.ca_inc.duration>=27+runeforge.primordial_arcanic_pulsar*12||!covenant.venthyr)||buff.ravenous_frenzy.up&buff.ravenous_frenzy.remains<9+conduit.precise_alignment.time_value+(!buff.bloodlust.up&!talent.starlord.enabled)\nactions.st+=/incarnation,if=variable.cd_condition_st\n# Variable used on abilities that want to be saved for CA/Inc so that they arent wasted just before them\nactions.st+=/variable,name=save_for_ca_inc,value=cooldown.ca_inc.remains>10||!variable.convoke_desync&covenant.night_fae||druid.no_cds\n# Uses FoE if in an Eclipse and tries to line it up with Pulsar, CA/Inc, Empower Bond and Adaptive Swarm\nactions.st+=/fury_of_elune,if=eclipse.in_any&(astral_power<92-buff.fury_of_elune.stack*5||buff.ravenous_frenzy.up)&(buff.primordial_arcanic_pulsar.value<240||buff.ca_inc.remains>8)&variable.save_for_ca_inc&(!covenant.necrolord||dot.adaptive_swarm_damage.ticking)&(!covenant.venthyr||buff.ravenous_frenzy.remains<9-(4*runeforge.sinful_hysteria)&buff.ravenous_frenzy.up||!buff.ravenous_frenzy.up)&(!covenant.kyrian||cooldown.empower_bond.remains>20)&target.time_to_die>5||boss&fight_remains<10\n# Use Oneth Starfall procs if Starfall isn't up\nactions.st+=/starfall,if=buff.oneths_perception.up&buff.starfall.refreshable\n# Cancel Starlord if it has less than 5s remaining, you are at 90+ AsP and the current Eclipse has 5+s remaining\nactions.st+=/cancel_buff,name=starlord,if=buff.starlord.remains<5&(buff.eclipse_solar.remains>5||buff.eclipse_lunar.remains>5)&astral_power>90\n# Cancel the Pulsar buff if the proc wouldn't line up with the next time Convoke comes off cd. This usually only happens during the BL.\nactions.st+=/cancel_buff,name=primordial_arcanic_pulsar,if=talent.incarnation.enabled&!talent.new_moon.enabled&@((300-astral_power+40-set_bonus.tier28_2pc*40)%(4%spell_haste)-cooldown.convoke_the_spirits.remains)<@((300-astral_power-buff.primordial_arcanic_pulsar.value+40-set_bonus.tier28_2pc*40)%(4%spell_haste)-cooldown.convoke_the_spirits.remains)&cooldown.ca_inc.remains>30&buff.primordial_arcanic_pulsar.value<210&buff.primordial_arcanic_pulsar.value>30&cooldown.convoke_the_spirits.remains<40&fight_remains>cooldown.convoke_the_spirits.remains+6&(runeforge.celestial_spirits||variable.convoke_desync)\n# Sets when Pulsar should be procced early to be able to use Convoke on cooldown (Essentially becomes true if dumping AsP now will allow you to perfectly enter Pulsar and then use Convoke)\nactions.st+=/variable,name=proc_pulsar_early,value=covenant.night_fae&runeforge.primordial_arcanic_pulsar&buff.primordial_arcanic_pulsar.value+astral_power+3>=300&variable.convoke_desync&cooldown.convoke_the_spirits.remains<astral_power%30*gcd.max&!druid.no_cds&eclipse.in_any&astral_power>variable.convoke_asp&cooldown.ca_inc.remains>5\n# Use Starfall with Stellar Drift or t28 4pc and no Starlord, when no Starfall is up or to proc Pulsar when above 90 AsP(or the early Pulsar proc variable is true) or adpative swarm has 8+secs remaining or is in flight\nactions.st+=/starfall,if=(talent.stellar_drift.enabled||set_bonus.tier28_4pc)&!talent.starlord.enabled&buff.starfall.refreshable&!runeforge.timeworn_dreambinder&(buff.primordial_arcanic_pulsar.value>=250&!buff.ca_inc.up&(variable.asp_dump||buff.kindred_empowerment_energize.up||variable.proc_pulsar_early)||(covenant.necrolord&talent.stellar_drift.enabled&(dot.adaptive_swarm_damage.remains>8||action.adaptive_swarm_damage.in_flight)))&cooldown.ca_inc.remains>10\n# Dumps AsP before Convoke using the Convoke condition to check if Convoke is actually about to be cast\nactions.st+=/starsurge,if=variable.proc_pulsar_early\n# Use Moons when you are about to/are capping charges and make sure they are in an Eclipse still for HM/FM\nactions.st+=/new_moon,if=ap_check&(charges=2&recharge_time<5||charges=3)\nactions.st+=/half_moon,if=ap_check&(charges=2&recharge_time<5||charges=3)&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)\nactions.st+=/full_moon,if=ap_check&(charges=2&recharge_time<5||charges=3)&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)\n# Use Starsurge Oneth procs and dump AsP when CA/Inc, Empower Bond, the Venthyr buff is about to fall off or you'd cap AsP\nactions.st+=/starsurge,if=eclipse.in_any&(buff.oneths_clear_vision.up||buff.kindred_empowerment_energize.up||buff.ca_inc.up&(!covenant.kyrian||cooldown.empower_bond.remains>5||buff.ca_inc.remains<gcd.max*floor(astral_power%variable.ss_cost))&(!covenant.venthyr||buff.ravenous_frenzy.remains<gcd.max*ceil((astral_power+40*talent.fury_of_elune.enabled)%variable.ss_cost)+3*talent.new_moon.enabled&!runeforge.sinful_hysteria&buff.ravenous_frenzy.up||buff.ravenous_frenzy_sinful_hysteria.up||(buff.ravenous_frenzy.remains<action.starfire.execute_time&spell_haste<0.4||buff.ravenous_frenzy.remains<action.wrath.execute_time||variable.iqd_condition&cooldown.inscrutable_quantum_device.ready&equipped.inscrutable_quantum_device)&buff.ravenous_frenzy.up||!buff.ravenous_frenzy.up&!cooldown.ravenous_frenzy.ready)||variable.asp_dump||boss&fight_remains<gcd.max*ceil(astral_power%variable.ss_cost))\n# Try to make the best of Starlord by stacking it up quickly in any Eclipse but Pulsar isn't about to be procced\nactions.st+=/starsurge,if=talent.starlord.enabled&!runeforge.timeworn_dreambinder&(buff.starlord.up||astral_power>90)&buff.starlord.stack<3&(buff.eclipse_solar.up||buff.eclipse_lunar.up)&buff.primordial_arcanic_pulsar.value<270&(cooldown.ca_inc.remains>10||!variable.convoke_desync&covenant.night_fae)\n# Estimates how much AsP are gained per second. Only takes a snapshot for the current situation so wouldn't be accurate for larger timeframes\nactions.st+=/variable,name=aspPerSec,value=eclipse.in_lunar*8%action.starfire.execute_time+!eclipse.in_lunar*(6+talent.soul_of_the_forest.enabled*3)%action.wrath.execute_time+0.45%spell_haste+0.5*talent.natures_balance.enabled\n# Dump Starsurge in an Eclipse as soon as possible as long as you will end up with 80+ when entering the next Eclipse, don't let it proc Pulsar, don't overwrite an Oneth proc and pool before CA/Inc and Empower Bond\nactions.st+=/starsurge,if=!runeforge.timeworn_dreambinder&(buff.primordial_arcanic_pulsar.value<270||buff.primordial_arcanic_pulsar.value<250&talent.stellar_drift.enabled)&(eclipse.in_solar&astral_power+variable.aspPerSec*buff.eclipse_solar.remains+dot.fury_of_elune.ticks_remain*2.5>80||eclipse.in_lunar&astral_power+variable.aspPerSec*buff.eclipse_lunar.remains+dot.fury_of_elune.ticks_remain*2.5>90)&!buff.oneths_perception.up&!talent.starlord.enabled&(cooldown.ca_inc.remains>7||soulbind.thrill_seeker.enabled&buff.thrill_seeker.stack<33-(runeforge.sinful_hysteria*2)&fight_remains>100&fight_remains<200||druid.no_cds)&(!covenant.kyrian||cooldown.empower_bond.remains>2)\n# Use Moons in any Eclipse and save Half+Full Moon for CA/Inc and Kindred Empowerment. Also use NM and FM at the end of Frenzy and don't let Dreambinder fall off\nactions.st+=/new_moon,if=ap_check&variable.save_for_ca_inc&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)\nactions.st+=/half_moon,if=ap_check&variable.save_for_ca_inc&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)&(buff.ca_inc.up||buff.primordial_arcanic_pulsar.value<=210)&(!covenant.venthyr||buff.ravenous_frenzy.remains<(5-2*runeforge.sinful_hysteria)&buff.ravenous_frenzy.up||!buff.ravenous_frenzy.up)&(!runeforge.timeworn_dreambinder||execute_time<buff.timeworn_dreambinder.remains||!buff.timeworn_dreambinder.up)\nactions.st+=/full_moon,if=ap_check&variable.save_for_ca_inc&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)&(buff.ca_inc.up||buff.primordial_arcanic_pulsar.value<=210)&(!covenant.kyrian||buff.kindred_empowerment_energize.up)&(!covenant.venthyr||buff.ravenous_frenzy.remains<5&buff.ravenous_frenzy.up&!runeforge.sinful_hysteria||!buff.ravenous_frenzy.up)&(!runeforge.timeworn_dreambinder||execute_time<buff.timeworn_dreambinder.remains||!buff.timeworn_dreambinder.up)\n# Use WoE on cd\nactions.st+=/warrior_of_elune\n# Use Starfire to proc Solar Eclipse, CA/Inc has less time than a Wrath execute left or only Lunar Eclipse is up. With T28 2pc enter a Solar Eclipse if Pulsar still has less than 210 stacks and CA/Inc and Convoke have more than 17s CD remaining. Use above 250% haste during Frenzy and 222% haste without Frenzy\nactions.st+=/starfire,if=eclipse.in_lunar&!buff.ravenous_frenzy.up||eclipse.solar_next||(eclipse.any_next||buff.ca_inc.remains<action.wrath.execute_time&buff.ca_inc.up)&(!set_bonus.tier28_2pc||runeforge.primordial_arcanic_pulsar&buff.primordial_arcanic_pulsar.value<210&cooldown.ca_inc.remains>17&(!covenant.night_fae||cooldown.convoke_the_spirits.remains>17)&(!race.troll||cooldown.berserking.remains>17))||eclipse.in_any&(buff.warrior_of_elune.up||spell_haste<0.45&(!covenant.venthyr||!buff.ravenous_frenzy.up)||covenant.venthyr&spell_haste<0.4)\n# Use Wrath otherwise which is in Solar Eclipse, CA/Inc or to proc Lunar Eclipse\nactions.st+=/wrath\n# Fallthru\nactions.st+=/run_action_list,name=fallthru",
+					["profile"] = "## Balance Druid\n## March 2, 2022\n\n## Changes:\n## - Added Solar Beam.\n## - Changed target_if cases to cycle_targets.\n## - Removed unnecessary variables (i.e., prev_starsurge -> prev.starsurge).\n## - Avoid precasting Wrath if it's the wrong Eclipse.\n## - Make Convoke the Spirits a little more flexible (if you hadn't hit it simultaneously with BOAT + Celestial Alignment, it'd skip).\n## - Make most 'fight_remains' scenarios apply to boss fights only.\n## - Treat Tome of Blah Blah Blah as a special trinket.\n## - Opener (i.e., Wrath, Wrath, Starfire) made more resilient to earlier combat-start.\n## - Fix Kindred Empowerment check for CD usage.\n\n## Annotated Balance APL can be found at https://balance-simc.github.io/Balance-SimC/md.html?file=balance.txt\n\nactions.precombat=kindred_spirits\n# The variable is set to 0 with no stat on use trinkets, 1 when the first one is on use, 2 if the second is and 3 if both are\nactions.precombat+=/variable,name=on_use_trinket,value=0\nactions.precombat+=/variable,name=on_use_trinket,op=add,value=1,if=trinket.1.has_use_buff&trinket.1.cooldown.duration&!trinket.1.is.tome_of_monstrous_constructions\nactions.precombat+=/variable,name=on_use_trinket,op=add,value=2,if=trinket.2.has_use_buff&trinket.2.cooldown.duration&!trinket.2.is.tome_of_monstrous_constructions\n# These trinkets are not automatically detected as on use stat trinkets.  Set variable to 4 as they also need special handling.\nactions.precombat+=/variable,name=on_use_trinket,op=add,value=4,if=equipped.inscrutable_quantum_device||equipped.empyreal_ordnance||equipped.soulletting_ruby\n# Sets the Starsurge cost for later calculations (for example when to start dumping before Frenzy falls off)\nactions.precombat+=/variable,name=ss_cost,value=30*(1-0.2*set_bonus.tier28_4pc)\n# Sets at which amount of AsP Convoke should be used: 40 without Celestial Spirits and 30 with.\nactions.precombat+=/variable,name=convoke_asp,value=30+10*runeforge.celestial_spirits\nactions.precombat+=/moonkin_form\nactions.precombat+=/wrath,line_cd=10,if=(eclipse.lunar_next||eclipse.in_solar||eclipse.in_both||eclipse.any_next)\n\n# Precast 2 Wrath and a Starsurge on ST with Night Fae and BoAT or Starfire otherwise\nactions.opener+=/wrath,if=(eclipse.lunar_next||eclipse.in_solar||eclipse.in_both||eclipse.any_next)&prev.1.wrath&!prev.2.wrath\nactions.opener+=/starfire,line_cd=5,if=!runeforge.balance_of_all_things||!covenant.night_fae||!spell_targets.starfall=1||!talent.natures_balance.enabled||(eclipse.solar_next||eclipse.in_lunar||eclipse.in_both||eclipse.any_next)\nactions.opener+=/starfire,line_cd=5,if=(!runeforge.balance_of_all_things||!covenant.night_fae||!spell_targets.starfall=1||!talent.natures_balance.enabled)&!set_bonus.tier28_2pc||(eclipse.solar_next||eclipse.in_lunar||eclipse.in_both||eclipse.any_next)\nactions.opener+=/starsurge,line_cd=5,if=(runeforge.balance_of_all_things&covenant.night_fae&spell_targets.starfall=1)&!set_bonus.tier28_2pc\n\n## Executed every time the actor is available.\nactions=solar_beam\nactions+=/call_action_list,name=opener,strict=1,if=time<(2*action.wrath.cast_time+action.starfire.cast_time)\n# Sets AoE on 3+ without drift and with Starlord and 2+ otherwise\nactions+=/variable,name=is_aoe,value=spell_targets.starfall>1&(!talent.starlord.enabled||talent.stellar_drift.enabled)||spell_targets.starfall>2\n# Sets cleave when Starfire can hit 2+ targets which is relevant for the Eclipse to be preferred and which filler to cast\nactions+=/variable,name=is_cleave,value=spell_targets.starfire>1\n# Variable that checks if you are in a gcd to avoid the situation where a trinket etc is used in between casts\nactions+=/variable,name=in_gcd,value=prev_gcd.1.moonfire||prev_gcd.1.sunfire||prev_gcd.1.starsurge||prev_gcd.1.starfall||prev_gcd.1.fury_of_elune||prev.ravenous_frenzy||buff.ca_inc.remains=buff.ca_inc.duration||variable.is_aoe\n# Use Berserking at the end of Frenzy when haste is above 60%, after Convoke and otherwise with CA/Inc\nactions+=/berserking,if=((!covenant.night_fae||!cooldown.convoke_the_spirits.up||runeforge.celestial_spirits)&buff.ca_inc.remains>15&buff.ravenous_frenzy.remains<4&!covenant.venthyr||covenant.venthyr&buff.ca_inc.up&buff.ravenous_frenzy.up&(buff.ravenous_frenzy.remains<=12-4*runeforge.sinful_hysteria||buff.ca_inc.remains<11||1%spell_haste<1.6))&variable.in_gcd\n# Pot with a CA/Inc that isn't a Pulsar proc or when the fight is about to end\nactions+=/potion,if=(buff.ca_inc.remains>15&(!runeforge.sinful_hysteria||buff.ravenous_frenzy.remains<19&buff.ravenous_frenzy.up)||boss&fight_remains<25)&variable.in_gcd\n# Calculates whether using Convoke now will allow you to still cast the same amount of Convoke+CA/Inc casts\nactions+=/variable,name=convoke_desync,value=ceil((fight_remains-15-cooldown.ca_inc.remains)%180)=ceil((fight_remains-15-cooldown.convoke_the_spirits.duration-cooldown.convoke_the_spirits.remains)%180)&!raid_event.adds.exists&(!cooldown.ca_inc.ready||!cooldown.convoke.ready)||cooldown.ca_inc.remains>interpolated_fight_remains||runeforge.celestial_spirits&cooldown.ca_inc.remains>30||cooldown.convoke_the_spirits.remains>interpolated_fight_remains-10||!covenant.night_fae\n# Used to delay the usage of CA/Inc when using double on use and prevent usage when an add event is about to die\nactions+=/variable,name=cd_condition,value=(target.time_to_die>15||raid_event.adds.in>50)&((equipped.empyreal_ordnance&(!covenant.venthyr||cooldown.empyreal_ordnance.remains<167+(5*runeforge.sinful_hysteria))&!cooldown.empyreal_ordnance.ready)||equipped.soulletting_ruby&(!covenant.night_fae||cooldown.soulletting_ruby_345801.remains<114)||(cooldown.berserking.ready||!race.troll||covenant.night_fae)&(!talent.fury_of_elune.enabled||covenant.venthyr&cooldown.fury_of_elune.remains<11+5*runeforge.sinful_hysteria||!covenant.venthyr&cooldown.fury_of_elune.remains<buff.ca_inc.duration+12*runeforge.primordial_arcanic_pulsar-12)&(equipped.inscrutable_quantum_device&cooldown.inscrutable_quantum_device.remains<5)||((equipped.shadowed_orb_of_torment&cooldown.tormented_insight_355321.remains)||((variable.on_use_trinket=1||variable.on_use_trinket=3)&(trinket.1.ready_cooldown||trinket.1.cooldown.remains>interpolated_fight_remains-10)||variable.on_use_trinket=2&(trinket.2.ready_cooldown||trinket.2.cooldown.remains>interpolated_fight_remains-10)||variable.on_use_trinket=0)))\n# Variable used to delay any trinkets and cds when waiting for an Euphoria proc\nactions+=/variable,name=thrill_seeker_wait,value=!soulbind.thrill_seeker.enabled||fight_remains>200||boss&fight_remains<25+(40-buff.thrill_seeker.stack*2)||buff.thrill_seeker.stack>38-(runeforge.sinful_hysteria*2)\n# Use Empyreal Ordnance 20secs before a CA/Inc use or so that it will line up with the end of Frenzy\nactions+=/use_item,name=empyreal_ordnance,if=cooldown.ca_inc.remains<20&cooldown.convoke_the_spirits.remains<20&(variable.thrill_seeker_wait||buff.thrill_seeker.stack>30+(runeforge.sinful_hysteria*3))&variable.in_gcd||boss&fight_remains<37\n# Use Soulleting Ruby 6secs before a CA/Inc use or so that it will line up with the end of Frenzy\nactions+=/use_item,name=soulletting_ruby,if=(cooldown.ca_inc.remains<6&!covenant.venthyr&!covenant.night_fae||covenant.night_fae&cooldown.convoke_the_spirits.remains<6&(variable.convoke_desync||cooldown.ca_inc.remains<6)||covenant.venthyr&(!runeforge.sinful_hysteria&cooldown.ca_inc.remains<6||buff.ravenous_frenzy.remains<10+(5*equipped.instructors_divine_bell)&buff.ravenous_frenzy.up)||boss&fight_remains<25||equipped.empyreal_ordnance&cooldown.empyreal_ordnance.remains>20)&variable.in_gcd&!equipped.inscrutable_quantum_device||cooldown.inscrutable_quantum_device.remains>20||boss&fight_remains<20\n# Always use IQD with CA/Inc or at the end of Frenzy\nactions+=/variable,name=iqd_condition,value=buff.ca_inc.remains>15&(!runeforge.sinful_hysteria||buff.ravenous_frenzy.remains<=15.5+(3.5*buff.bloodlust.up)+(4.5-3.5*buff.bloodlust.up)*equipped.instructors_divine_bell+4.5*(equipped.the_first_sigil&cooldown.the_first_sigil.remains<=20)&buff.ravenous_frenzy.up)||boss&fight_remains<25||equipped.empyreal_ordnance&cooldown.empyreal_ordnance.remains\nactions+=/use_item,name=inscrutable_quantum_device,if=variable.iqd_condition&variable.in_gcd\n# Use Shadowed Orb before CA/Inc\nactions+=/use_item,name=shadowed_orb_of_torment,if=(cooldown.ca_inc.ready&!covenant.night_fae&variable.thrill_seeker_wait&(cooldown.berserking.ready||!race.troll)||covenant.night_fae&cooldown.convoke_the_spirits.ready&(variable.convoke_desync||cooldown.ca_inc.ready))&dot.sunfire.ticking&(dot.stellar_flare.ticking||!talent.stellar_flare.enabled||spell_targets.starfire>3)&dot.moonfire.ticking&(variable.is_aoe||runeforge.balance_of_all_things||astral_power>=90||variable.convoke_desync||buff.bloodlust.up)&!equipped.inscrutable_quantum_device||equipped.inscrutable_quantum_device&cooldown.inscrutable_quantum_device.remains>30&!buff.ca_inc.up||boss&fight_remains<40\n# This is a rather elaborate way to make all on use stat trinkets to be lined up with CA/Inc and Convoke and use the 2nd slot on cd if both trinkets are on use stat trinkets\nactions+=/use_items,slots=trinket1,if=(variable.on_use_trinket!=1&!trinket.2.ready_cooldown||(variable.on_use_trinket=1||variable.on_use_trinket=3)&(buff.ca_inc.up&(!covenant.venthyr||buff.ravenous_frenzy.remains+(3.5*runeforge.sinful_hysteria)<=trinket.1.buff_duration&buff.ravenous_frenzy.up||buff.ravenous_frenzy_sinful_hysteria.up)||cooldown.ca_inc.remains+2>trinket.1.cooldown.duration&!buff.ca_inc.up&(!covenant.night_fae||!variable.convoke_desync)&!covenant.kyrian||covenant.night_fae&variable.convoke_desync&cooldown.convoke_the_spirits.up&!cooldown.ca_inc.up&((buff.eclipse_lunar.remains>10||buff.eclipse_solar.remains>10)&!runeforge.balance_of_all_things||(buff.balance_of_all_things_nature.stack=5||buff.balance_of_all_things_arcane.stack=8))||buff.kindred_empowerment_energize.up)||boss&fight_remains<20||variable.on_use_trinket=0)&variable.in_gcd\nactions+=/use_items,slots=trinket2,if=(variable.on_use_trinket!=2&!trinket.1.ready_cooldown||variable.on_use_trinket=2&(buff.ca_inc.up&(!covenant.venthyr||buff.ravenous_frenzy.remains+(3.5*runeforge.sinful_hysteria)<=trinket.2.buff_duration&buff.ravenous_frenzy.up||buff.ravenous_frenzy_sinful_hysteria.up)||cooldown.ca_inc.remains+2>trinket.2.cooldown.duration&!buff.ca_inc.up&(!covenant.night_fae||!variable.convoke_desync)&!covenant.kyrian&(!buff.ca_inc.up||!covenant.venthyr)||covenant.night_fae&variable.convoke_desync&cooldown.convoke_the_spirits.up&!cooldown.ca_inc.up&((buff.eclipse_lunar.remains>10||buff.eclipse_solar.remains>10)&!runeforge.balance_of_all_things||(buff.balance_of_all_things_nature.stack=5||buff.balance_of_all_things_arcane.stack=8)))||buff.kindred_empowerment_energize.up||boss&fight_remains<20||variable.on_use_trinket=0)&variable.in_gcd\n# Uses all other on use items on cd\nactions+=/use_items\n# Either go into the st or aoe action list\nactions+=/run_action_list,name=aoe,strict=1,if=variable.is_aoe\nactions+=/run_action_list,name=st\n\n# Calculates whether the Dreamcatcher buff will fall off within the next cast\nactions.aoe=variable,name=dream_will_fall_off,value=runeforge.timeworn_dreambinder&(buff.timeworn_dreambinder.remains<gcd.max+0.1||buff.timeworn_dreambinder.remains<action.starfire.execute_time+0.1&(eclipse.in_lunar||eclipse.solar_next||eclipse.any_next))&buff.timeworn_dreambinder.up\n# Calculates whether Starsurge is worth casting over Starfire in Lunar Eclipse\nactions.aoe+=/variable,name=ignore_starsurge,value=!eclipse.in_solar&spell_targets.starfire>7-talent.soul_of_the_forest.enabled*2+eclipse.in_both&!runeforge.primordial_arcanic_pulsar&!runeforge.oneths_clear_vision\n# Use Convoke when at less than 50 AsP and line up with CA/Inc\nactions.aoe+=/convoke_the_spirits,if=!druid.no_cds&((variable.convoke_desync&!cooldown.ca_inc.ready||buff.ca_inc.up)&(buff.eclipse_lunar.remains>5||buff.eclipse_solar.remains>5)&(astral_power<50&(spell_targets.starfire>3||buff.ca_inc.up)||!runeforge.primordial_arcanic_pulsar)&(!talent.stellar_drift||buff.starfall.remains<1.5-0.5*runeforge.celestial_spirits||buff.ca_inc.remains<buff.starfall.remains+5&buff.ca_inc.up)&(!runeforge.balance_of_all_things||buff.balance_of_all_things_nature.stack>3||buff.balance_of_all_things_arcane.stack>3)||boss&fight_remains<10&cooldown.ca_inc.remains>5)\n# Use Sunfire in pandemic on anything that lives 14secs and less with more targets and at the end of a Solar Eclipse at 14 secs or less remaining as to not having to refresh during Lunar Eclipse\nactions.aoe+=/sunfire,cycle_targets=1,if=(refreshable||buff.eclipse_solar.remains<3&eclipse.in_solar&remains<14&talent.soul_of_the_forest.enabled)&target.time_to_die>14-spell_targets+remains&(eclipse.in_any||remains<gcd.max)\n# Use Sunfire to have a global to use IQD\nactions.aoe+=/sunfire,if=variable.iqd_condition&cooldown.inscrutable_quantum_device.ready&equipped.inscrutable_quantum_device&ap_check\n# Keep up Starfall at all times unless using Lycaras and it is about to proc or let the special action line below handle Dreambinder on 2 targets\nactions.aoe+=/starfall,if=!talent.stellar_drift.enabled&(!set_bonus.tier28_4pc||eclipse.in_any||spell_targets.starfall>3)&(buff.starfall.refreshable&(spell_targets.starfall<3||!runeforge.timeworn_dreambinder)||talent.soul_of_the_forest.enabled&buff.eclipse_solar.remains<3&eclipse.in_solar&buff.starfall.remains<7&spell_targets.starfall>=4)&(!runeforge.lycaras_fleeting_glimpse||time%%45>buff.starfall.remains+2)&target.time_to_die>5\n# With Stellar Drift use on cd when refreshable but still wait for Lycaras proc and don't use before CDs. Still use before Convoke since that will proc another Starfall\nactions.aoe+=/starfall,if=talent.stellar_drift.enabled&buff.starfall.refreshable&(!set_bonus.tier28_4pc||eclipse.in_any||spell_targets.starfall>4)&(!runeforge.lycaras_fleeting_glimpse||time%%45>4)&target.time_to_die>3\n# With Dreambinder use Starfall to keep up the buff by also using Starfall on 5 seconds or less remaining\nactions.aoe+=/starfall,if=runeforge.timeworn_dreambinder&spell_targets.starfall>=3&(!buff.timeworn_dreambinder.up&buff.starfall.refreshable||(variable.dream_will_fall_off&(buff.starfall.remains<3||spell_targets.starfall>2&talent.stellar_drift.enabled&buff.starfall.remains<5)))\n# Calculates whether a Starsurge use will cause Starfall to fall off, and use Starsurge to keep Dreambinder stack up. 80 is the required AsP to cast Starsurge+Starfall\nactions.aoe+=/variable,name=starfall_wont_fall_off,value=astral_power>80*(1-set_bonus.tier28_2pc*0.2)*(1-buff.timeworn_dreambinder.stack*0.1)-(buff.starfall.remains*3%spell_haste*!talent.stellar_drift.enabled)-(cooldown.starfall.remains*3%spell_haste*talent.stellar_drift.enabled)-(buff.fury_of_elune.remains*5)&(buff.starfall.up||cooldown.starfall.remains)\n# Use Starsurge with Dreambinder to keep up the buff without losing Starfall uptime and use Starsurge on 4+ BoAT stacks until 4 targets\nactions.aoe+=/starsurge,if=variable.dream_will_fall_off&variable.starfall_wont_fall_off&!variable.ignore_starsurge||(buff.balance_of_all_things_nature.stack>3||buff.balance_of_all_things_arcane.stack>3)&spell_targets.starfall<4&variable.starfall_wont_fall_off\n# Use swarm so that you get max uptime by using it as late as possible on less than 3 stacks or just when 3+ stacks expire\nactions.aoe+=/adaptive_swarm,cycle_targets=1,if=!ticking&!action.adaptive_swarm_damage.in_flight||dot.adaptive_swarm_damage.stack<3&dot.adaptive_swarm_damage.remains<3\n# Refresh Moonfire if CA/Inc is ready, there are less than 5 targets in Lunar Eclipse with SotF, less than 10 otherwise in any Eclipse or up to 5 targets before a Lunar Eclipse. Don't refresh during Kindred Empowerment unless in Solar Eclipse\nactions.aoe+=/moonfire,cycle_targets=1,if=refreshable&target.time_to_die>((14+(spell_targets.starfire*2*buff.eclipse_lunar.up))+remains)%(1+talent.twin_moons.enabled)&(ap_check||variable.ignore_starsurge||!eclipse.in_any)&(cooldown.ca_inc.ready&eclipse.in_any&!druid.no_cds&(variable.convoke_desync||cooldown.convoke_the_spirits.ready||!covenant.night_fae)||spell_targets.starfire<((6-(buff.eclipse_lunar.up*2))*(1+talent.twin_moons.enabled))&!eclipse.solar_next&!cooldown.ca_inc.ready||(eclipse.in_solar||buff.eclipse_lunar.up&!talent.soul_of_the_forest.enabled||buff.primordial_arcanic_pulsar.value>=250)&(spell_targets.starfire<10*(1+talent.twin_moons.enabled))&astral_power>50-buff.starfall.remains*6)&(!covenant.kyrian||!buff.kindred_empowerment_energize.up||eclipse.in_solar)&!buff.ravenous_frenzy_sinful_hysteria.up\n# Use FoN on cd without capping\nactions.aoe+=/force_of_nature,if=ap_check||variable.ignore_starsurge\nactions.aoe+=/variable,name=cd_condition_aoe,value=!druid.no_cds&(variable.cd_condition&(buff.starfall.up||talent.stellar_drift.enabled||covenant.night_fae)&dot.moonfire.ticking&(!buff.solstice.up&!buff.ca_inc.up&(!talent.fury_of_elune.enabled||buff.ca_inc.duration>cooldown.fury_of_elune.remains+8)&(!set_bonus.tier28_2pc||eclipse.in_lunar||eclipse.solar_next)&variable.thrill_seeker_wait&(!covenant.night_fae||cooldown.convoke_the_spirits.remains<buff.ca_inc.duration*0.5)&target.time_to_die>buff.ca_inc.duration*0.7)||boss&fight_remains<buff.ca_inc.duration+12*runeforge.primordial_arcanic_pulsar)\n# Use Frenzy with CA/Inc\nactions.aoe+=/ravenous_frenzy,if=buff.ca_inc.remains>15||buff.ca_inc.duration+12*runeforge.primordial_arcanic_pulsar<26&variable.cd_condition_aoe\n# Use CA/Inc on cd unless and line it up with Convoke\nactions.aoe+=/celestial_alignment,if=variable.cd_condition_aoe&(buff.ca_inc.duration+12*runeforge.primordial_arcanic_pulsar>=26||!covenant.venthyr)||buff.ravenous_frenzy.up&buff.ravenous_frenzy.remains<9+conduit.precise_alignment.time_value+(!buff.bloodlust.up&!talent.starlord.enabled)\nactions.aoe+=/incarnation,if=variable.cd_condition_aoe\n# Use Empower Bond on cd with Starfall up and save for Pulsar and CA/Inc\nactions.aoe+=/empower_bond,if=(cooldown.ca_inc.remains+buff.ca_inc.duration+runeforge.primordial_arcanic_pulsar*12>cooldown.empower_bond.duration+10)||buff.ca_inc.remains>8||druid.no_cds\n# Refresh flare on up to 3 targets without CA/Inc being about to expire and not overcapping\nactions.aoe+=/stellar_flare,cycle_targets=1,if=refreshable&time_to_die>15&spell_targets.starfire<4&ap_check&(buff.ca_inc.remains>10||!buff.ca_inc.up)\n# Use FoE if inside an Eclipse and line it up with a Pulsar proc and Adaptive Swarm\nactions.aoe+=/fury_of_elune,if=eclipse.in_any&(ap_check||!runeforge.primordial_arcanic_pulsar)&(buff.primordial_arcanic_pulsar.value<250||buff.ca_inc.remains>8)&(dot.adaptive_swarm_damage.ticking||!covenant.necrolord||spell_targets>2)&(buff.ravenous_frenzy.remains<9-(4*runeforge.sinful_hysteria)&buff.ravenous_frenzy.up||!buff.ravenous_frenzy.up)&(!cooldown.ca_inc.up||buff.thrill_seeker.stack<15&fight_remains<200&fight_remains>100||!soulbind.thrill_seeker.enabled)&(soulbind.thrill_seeker.enabled||cooldown.ca_inc.remains>30)&target.time_to_die>5||boss&fight_remains<10\n# Use a Starfall Oneth proc unless Starfall is already up or you are about to overcap AsP\nactions.aoe+=/starfall,if=buff.oneths_perception.up&(buff.starfall.refreshable||astral_power>90)\n# Dump AsP before Convoke with Starfall and then Starsurge\nactions.aoe+=/starfall,if=covenant.night_fae&!talent.stellar_drift.enabled&(variable.convoke_desync||cooldown.ca_inc.up||buff.ca_inc.up)&cooldown.convoke_the_spirits.remains<gcd.max*ceil(astral_power%50)&buff.starfall.remains<4&!druid.no_cds\nactions.aoe+=/starsurge,if=covenant.night_fae&(variable.convoke_desync||cooldown.ca_inc.up||buff.ca_inc.up)&cooldown.convoke_the_spirits.remains<5&variable.starfall_wont_fall_off&eclipse.in_any&!variable.ignore_starsurge&!druid.no_cds\n# Use Starsurge with an Oneth proc or if you'd overcap AsP with your next cast. Also dump AsP at the end of the Venthyr buff if Starfall wouldn't fall off or you are on 2 targets\nactions.aoe+=/starsurge,if=buff.oneths_clear_vision.up||(!starfire.ap_check&!variable.ignore_starsurge||(buff.ca_inc.remains<5&buff.ca_inc.up||((buff.ca_inc.remains<gcd.max*ceil(astral_power%variable.ss_cost)&buff.ca_inc.up||buff.ravenous_frenzy_sinful_hysteria.remains<gcd.max*ceil(astral_power%variable.ss_cost)&buff.ravenous_frenzy_sinful_hysteria.up)&covenant.venthyr))&(spell_targets.starfall<3||variable.starfall_wont_fall_off))&!variable.ignore_starsurge&(!runeforge.timeworn_dreambinder||spell_targets.starfall<3)\n# Use Moons in Solar Eclipse and save Full Moon for CA/Inc\nactions.aoe+=/new_moon,if=(buff.eclipse_solar.remains>execute_time||(charges=2&recharge_time<5)||charges=3)&ap_check\nactions.aoe+=/half_moon,if=(buff.eclipse_solar.remains>execute_time||(charges=2&recharge_time<5)||charges=3)&ap_check&(buff.ravenous_frenzy.remains<5&buff.ravenous_frenzy.up&!runeforge.sinful_hysteria||!buff.ravenous_frenzy.up)\nactions.aoe+=/full_moon,if=(buff.eclipse_solar.remains>execute_time&(cooldown.ca_inc.remains>50||cooldown.convoke_the_spirits.remains>50)||(charges=2&recharge_time<5)||charges=3)&ap_check&(buff.ravenous_frenzy.remains<5&buff.ravenous_frenzy.up&!runeforge.sinful_hysteria||!buff.ravenous_frenzy.up)\n# Use WoE on CD\nactions.aoe+=/warrior_of_elune\n# Calculates whether to use Starfire in Solar which is at 5 targets+1 for every 20% mastery or 4 Starsurge Empowerment stacks\nactions.aoe+=/variable,name=starfire_in_solar,value=spell_targets.starfire>4+floor(mastery_value*100%20)+floor(buff.starsurge_empowerment_solar.stack%4)\n# Calculates whether to Wrath during Frenzy\nactions.aoe+=/variable,name=wrath_in_frenzy,value=1%spell_haste<2-(0.2*(spell_targets.starfire-1)*(1+talent.soul_of_the_forest.enabled*1.5))+0.15*buff.ravenous_frenzy.remains\n# Use Wrath in Solar Eclipse or if no Starfire will fit into CA/Inc anymore\nactions.aoe+=/wrath,if=(eclipse.lunar_next||eclipse.any_next&variable.is_cleave)&(target.time_to_die>4||eclipse.lunar_in_2||boss&fight_remains<10)||buff.eclipse_solar.remains<action.starfire.execute_time&buff.eclipse_solar.up||eclipse.in_solar&!variable.starfire_in_solar||buff.ca_inc.remains<action.starfire.execute_time&!variable.is_cleave&buff.ca_inc.remains<execute_time&buff.ca_inc.up||buff.ravenous_frenzy.up&variable.wrath_in_frenzy||!variable.is_cleave&buff.ca_inc.remains>execute_time\n# Use Starfire if in Lunar Eclipse, in Solar Eclipse on 4+ targets or to proc Solar Eclipse\nactions.aoe+=/starfire\n# Fallthru\nactions.aoe+=/run_action_list,name=fallthru\n\n# Starsurge for movement unless using BoAT\nactions.fallthru=starsurge,if=!runeforge.balance_of_all_things.equipped\n# Cast the dot with the most time to add until the max duration is hit. Sunfire remains multiplied to match moonfire duration\nactions.fallthru+=/sunfire,cycle_targets=1,if=dot.moonfire.remains>remains*22%18\nactions.fallthru+=/moonfire\n\n# Use Adaptive Swarm when there is no active swarm, as late as possible on swarm with 2 or fewer stacks or on a 3+ swarm so that the new swarm arrives just after that swarm expires\nactions.st=adaptive_swarm,cycle_targets=1,if=!dot.adaptive_swarm_damage.ticking&!action.adaptive_swarm_damage.in_flight&(!dot.adaptive_swarm_heal.ticking||dot.adaptive_swarm_heal.remains>5)||dot.adaptive_swarm_damage.stack<3&dot.adaptive_swarm_damage.remains<3&dot.adaptive_swarm_damage.ticking\n# Uses Convoke if CA/Inc is up or you are desyncing CA/Inc with Convoke and you are below 40/30(Celestial Spirits) AsP in a 10+ sec Eclipse. Also don't let Dreambinder expire, always use in CA/Inc with Pulsar and at the start of a BoAT window.\nactions.st+=/convoke_the_spirits,if=!druid.no_cds&((variable.convoke_desync&!cooldown.ca_inc.ready&!runeforge.primordial_arcanic_pulsar||buff.ca_inc.up)&((astral_power<=variable.convoke_asp&(buff.eclipse_lunar.remains>10||buff.eclipse_solar.remains>10)||buff.ca_inc.remains>5&buff.ca_inc.remains<=12)&(!runeforge.timeworn_dreambinder||!runeforge.celestial_spirits||buff.timeworn_dreambinder.remains>execute_time)||runeforge.balance_of_all_things)&(!runeforge.balance_of_all_things||(buff.balance_of_all_things_nature.stack=8||buff.balance_of_all_things_arcane.stack=8))||boss&fight_remains<10&!cooldown.ca_inc.ready)\n# Use Starsurge to keep up the Dreambinder buff if it would expire before finishing the next cast or to dump before Convoke\nactions.st+=/starsurge,if=runeforge.timeworn_dreambinder&(!((buff.timeworn_dreambinder.remains>action.wrath.execute_time+0.1&(eclipse.in_both||eclipse.in_solar||eclipse.lunar_next)||buff.timeworn_dreambinder.remains>action.starfire.execute_time+0.1&(eclipse.in_lunar||eclipse.solar_next||eclipse.any_next))||!buff.timeworn_dreambinder.up)||(buff.ca_inc.up||variable.convoke_desync)&cooldown.convoke_the_spirits.ready&covenant.night_fae&(buff.eclipse_lunar.remains>10||buff.eclipse_solar.remains>10))&(!covenant.kyrian||cooldown.empower_bond.remains>8)\n# Dump Starsurges with Balance of All Things or to prepare for Convoke with BoAT\nactions.st+=/starsurge,if=runeforge.balance_of_all_things&((buff.balance_of_all_things_nature.stack>2||buff.balance_of_all_things_arcane.stack>2)&cooldown.ca_inc.remains>7&!cooldown.convoke_the_spirits.up||(covenant.night_fae&cooldown.convoke_the_spirits.remains<10&eclipse.in_any&astral_power>20+30*cooldown.ca_inc.ready))\n# Condition for all dots that makes sure they aren't refreshed when Ravenous Frenzy has less than 5 secs remaining or the Empower Bond buff is about to fall off or any Eclipse is about to expire\nactions.st+=/variable,name=dot_requirements,value=(buff.ravenous_frenzy.remains>5||!buff.ravenous_frenzy.up)&!buff.ravenous_frenzy_sinful_hysteria.up&(buff.kindred_empowerment_energize.remains<gcd.max)&(buff.eclipse_solar.remains>gcd.max||buff.eclipse_lunar.remains>gcd.max||(!buff.eclipse_lunar.up||!buff.eclipse_solar.up)&!talent.solstice.enabled)\n# Condition that checks if you are outside eclipse to only dot there or ignore this with Solstice\nactions.st+=/variable,name=dot_outside_eclipse,value=(!buff.eclipse_solar.up&!buff.eclipse_lunar.up)&!talent.solstice.enabled&!runeforge.timeworn_dreambinder\n# Dot all targets within Pandemic without overcapping+the above conditions\nactions.st+=/moonfire,cycle_targets=1,if=(buff.eclipse_solar.remains>remains||buff.eclipse_lunar.remains>remains||variable.dot_outside_eclipse)&refreshable&target.time_to_die>12&ap_check&variable.dot_requirements\nactions.st+=/sunfire,cycle_targets=1,if=(buff.eclipse_solar.remains>remains||buff.eclipse_lunar.remains>remains||variable.dot_outside_eclipse)&refreshable&target.time_to_die>12&ap_check&variable.dot_requirements\nactions.st+=/stellar_flare,cycle_targets=1,if=(buff.eclipse_solar.remains>remains||buff.eclipse_lunar.remains>remains||variable.dot_outside_eclipse)&refreshable&target.time_to_die>16&ap_check&variable.dot_requirements\n# Dot right before Frenzy if it would allow you to refresh less during Frenzy (this only happens without Sinful Hysteria)\nactions.st+=/variable,name=no_hysteria_early_dot,value=covenant.venthyr&!runeforge.sinful_hysteria&!runeforge.circle_of_life_and_death&cooldown.berserking.ready&cooldown.ravenous_frenzy.ready&!buff.ca_inc.up&(astral_power>87||buff.bloodlust.up)\nactions.st+=/moonfire,if=variable.no_hysteria_early_dot&remains<20\nactions.st+=/sunfire,if=variable.no_hysteria_early_dot&remains<19\n# Use FoN on cd without capping\nactions.st+=/force_of_nature,if=ap_check\n# Use Empower Bond with any long enough lasting Eclipse and try to line it up with Pulsar and CA/Inc\nactions.st+=/empower_bond,if=(cooldown.ca_inc.remains+buff.ca_inc.duration+runeforge.primordial_arcanic_pulsar*12>cooldown.empower_bond.duration+10)||buff.ca_inc.remains>8||druid.no_cds\n# Sets when AsP should be dumped to not overcap (Depends on Fury of Elune and the Eclipse)\nactions.st+=/variable,name=asp_dump,value=astral_power>90-(2.5*buff.fury_of_elune.stack-2*eclipse.in_lunar)\n# Use CA/Inc with Convoke/Kindred Spirits and don't overwrite Pulsar or when Bloodlust would expire before CA/Inc expires. Make sure to enter a Lunar Eclipse when usign T28 2pc and all CDs will become ready soon enough during the buff and dots have been sufficiently refreshed.\nactions.st+=/variable,name=cd_condition_st,value=!druid.no_cds&(variable.cd_condition&!buff.ca_inc.up&(!set_bonus.tier28_2pc||eclipse.in_lunar||eclipse.solar_next)&(((variable.asp_dump||covenant.night_fae||(covenant.kyrian&cooldown.empower_bond.ready)||runeforge.timeworn_dreambinder)&dot.sunfire.remains>8&dot.moonfire.remains>9&(dot.stellar_flare.remains>10||!talent.stellar_flare.enabled)&variable.thrill_seeker_wait&target.time_to_die>buff.ca_inc.duration*0.7||buff.bloodlust.up&buff.bloodlust.remains<buff.ca_inc.duration+(12*runeforge.primordial_arcanic_pulsar))||(equipped.empyreal_ordnance&cooldown.empyreal_ordnance.remains<167+(5*runeforge.sinful_hysteria)))&(!covenant.night_fae||(cooldown.convoke_the_spirits.remains<buff.ca_inc.duration%2&!runeforge.balance_of_all_things||cooldown.convoke_the_spirits.ready&astral_power<50)||boss&fight_remains<cooldown.convoke_the_spirits.remains)||boss&fight_remains<buff.ca_inc.duration+12*runeforge.primordial_arcanic_pulsar)\n# Use Frenzy with CA/Inc unless Frenzy would last longer than CA/Inc, then use before\nactions.st+=/ravenous_frenzy,if=buff.ca_inc.remains>15||buff.ca_inc.duration<27+runeforge.primordial_arcanic_pulsar*12&variable.cd_condition_st\nactions.st+=/celestial_alignment,if=variable.cd_condition_st&(buff.ca_inc.duration>=27+runeforge.primordial_arcanic_pulsar*12||!covenant.venthyr)||buff.ravenous_frenzy.up&buff.ravenous_frenzy.remains<9+conduit.precise_alignment.time_value+(!buff.bloodlust.up&!talent.starlord.enabled)\nactions.st+=/incarnation,if=variable.cd_condition_st\n# Variable used on abilities that want to be saved for CA/Inc so that they arent wasted just before them\nactions.st+=/variable,name=save_for_ca_inc,value=cooldown.ca_inc.remains>10||!variable.convoke_desync&covenant.night_fae||druid.no_cds\n# Uses FoE if in an Eclipse and tries to line it up with Pulsar, CA/Inc, Empower Bond and Adaptive Swarm\nactions.st+=/fury_of_elune,if=eclipse.in_any&(astral_power<92-buff.fury_of_elune.stack*5||buff.ravenous_frenzy.up)&(buff.primordial_arcanic_pulsar.value<240||buff.ca_inc.remains>8)&variable.save_for_ca_inc&(!covenant.necrolord||dot.adaptive_swarm_damage.ticking)&(!covenant.venthyr||buff.ravenous_frenzy.remains<9-(4*runeforge.sinful_hysteria)&buff.ravenous_frenzy.up||!buff.ravenous_frenzy.up)&(!covenant.kyrian||cooldown.empower_bond.remains>20)&target.time_to_die>5||boss&fight_remains<10\n# Use Oneth Starfall procs if Starfall isn't up\nactions.st+=/starfall,if=buff.oneths_perception.up&buff.starfall.refreshable\n# Cancel Starlord if it has less than 5s remaining, you are at 90+ AsP and the current Eclipse has 5+s remaining\nactions.st+=/cancel_buff,name=starlord,if=buff.starlord.remains<5&(buff.eclipse_solar.remains>5||buff.eclipse_lunar.remains>5)&astral_power>90\n# Cancel the Pulsar buff if the proc wouldn't line up with the next time Convoke comes off cd. This usually only happens during the BL.\nactions.st+=/cancel_buff,name=primordial_arcanic_pulsar,if=talent.incarnation.enabled&!talent.new_moon.enabled&@((300-astral_power+40-set_bonus.tier28_2pc*40)%(4%spell_haste)-cooldown.convoke_the_spirits.remains)<@((300-astral_power-buff.primordial_arcanic_pulsar.value+40-set_bonus.tier28_2pc*40)%(4%spell_haste)-cooldown.convoke_the_spirits.remains)&cooldown.ca_inc.remains>30&buff.primordial_arcanic_pulsar.value<210&buff.primordial_arcanic_pulsar.value>30&cooldown.convoke_the_spirits.remains<40&fight_remains>cooldown.convoke_the_spirits.remains+6&(runeforge.celestial_spirits||variable.convoke_desync)\n# Sets when Pulsar should be procced early to be able to use Convoke on cooldown (Essentially becomes true if dumping AsP now will allow you to perfectly enter Pulsar and then use Convoke)\nactions.st+=/variable,name=proc_pulsar_early,value=covenant.night_fae&runeforge.primordial_arcanic_pulsar&buff.primordial_arcanic_pulsar.value+astral_power+3>=300&variable.convoke_desync&cooldown.convoke_the_spirits.remains<astral_power%30*gcd.max&!druid.no_cds&eclipse.in_any&astral_power>variable.convoke_asp&cooldown.ca_inc.remains>5\n# Use Starfall with Stellar Drift or t28 4pc and no Starlord, when no Starfall is up or to proc Pulsar when above 90 AsP(or the early Pulsar proc variable is true) or adpative swarm has 8+secs remaining or is in flight\nactions.st+=/starfall,if=(talent.stellar_drift.enabled||set_bonus.tier28_4pc)&!talent.starlord.enabled&buff.starfall.refreshable&!runeforge.timeworn_dreambinder&(buff.primordial_arcanic_pulsar.value>=250&!buff.ca_inc.up&(variable.asp_dump||buff.kindred_empowerment_energize.up||variable.proc_pulsar_early)||(covenant.necrolord&talent.stellar_drift.enabled&(dot.adaptive_swarm_damage.remains>8||action.adaptive_swarm_damage.in_flight)))&(cooldown.ca_inc.remains>10||cooldown.convoke_the_spirits.remains>10)\n# Dumps AsP before Convoke using the Convoke condition to check if Convoke is actually about to be cast\nactions.st+=/starsurge,if=variable.proc_pulsar_early\n# Use Moons when you are about to/are capping charges and make sure they are in an Eclipse still for HM/FM\nactions.st+=/new_moon,if=ap_check&(charges=2&recharge_time<5||charges=3)\nactions.st+=/half_moon,if=ap_check&(charges=2&recharge_time<5||charges=3)&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)\nactions.st+=/full_moon,if=ap_check&(charges=2&recharge_time<5||charges=3)&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)\n# Use Starsurge Oneth procs and dump AsP when CA/Inc, Empower Bond, the Venthyr buff is about to fall off or you'd cap AsP\nactions.st+=/starsurge,if=eclipse.in_any&(buff.oneths_clear_vision.up||buff.kindred_empowerment_energize.up||buff.ca_inc.up&(!covenant.kyrian||cooldown.empower_bond.remains>5||buff.ca_inc.remains<gcd.max*floor(astral_power%variable.ss_cost))&(!covenant.venthyr||buff.ravenous_frenzy.remains<gcd.max*ceil((astral_power+40*talent.fury_of_elune.enabled)%variable.ss_cost)+3*talent.new_moon.enabled&!runeforge.sinful_hysteria&buff.ravenous_frenzy.up||buff.ravenous_frenzy_sinful_hysteria.up||(buff.ravenous_frenzy.remains<action.starfire.execute_time&spell_haste<0.4||buff.ravenous_frenzy.remains<action.wrath.execute_time||variable.iqd_condition&cooldown.inscrutable_quantum_device.ready&equipped.inscrutable_quantum_device)&buff.ravenous_frenzy.up||!buff.ravenous_frenzy.up&!cooldown.ravenous_frenzy.ready)||variable.asp_dump||boss&fight_remains<gcd.max*ceil(astral_power%variable.ss_cost))\n# Try to make the best of Starlord by stacking it up quickly in any Eclipse but Pulsar isn't about to be procced\nactions.st+=/starsurge,if=talent.starlord.enabled&!runeforge.timeworn_dreambinder&(buff.starlord.up||astral_power>90)&buff.starlord.stack<3&(buff.eclipse_solar.up||buff.eclipse_lunar.up)&buff.primordial_arcanic_pulsar.value<270&(cooldown.ca_inc.remains>10||!variable.convoke_desync&covenant.night_fae)\n# Estimates how much AsP are gained per second. Only takes a snapshot for the current situation so wouldn't be accurate for larger timeframes\nactions.st+=/variable,name=aspPerSec,value=eclipse.in_lunar*8%action.starfire.execute_time+!eclipse.in_lunar*(6+talent.soul_of_the_forest.enabled*3)%action.wrath.execute_time+0.45%spell_haste+0.5*talent.natures_balance.enabled\n# Dump Starsurge in an Eclipse as soon as possible as long as you will end up with 80+ when entering the next Eclipse, don't let it proc Pulsar, don't overwrite an Oneth proc and pool before CA/Inc and Empower Bond\nactions.st+=/starsurge,if=!runeforge.timeworn_dreambinder&(buff.primordial_arcanic_pulsar.value<270||buff.primordial_arcanic_pulsar.value<250&talent.stellar_drift.enabled)&(eclipse.in_solar&astral_power+variable.aspPerSec*buff.eclipse_solar.remains+dot.fury_of_elune.ticks_remain*2.5>80||eclipse.in_lunar&astral_power+variable.aspPerSec*buff.eclipse_lunar.remains+dot.fury_of_elune.ticks_remain*2.5>90)&!buff.oneths_perception.up&!talent.starlord.enabled&(cooldown.ca_inc.remains>7||soulbind.thrill_seeker.enabled&buff.thrill_seeker.stack<33-(runeforge.sinful_hysteria*2)&fight_remains>100&fight_remains<200||druid.no_cds)&(!covenant.kyrian||cooldown.empower_bond.remains>2)\n# Use Moons in any Eclipse and save Half+Full Moon for CA/Inc and Kindred Empowerment. Also use NM and FM at the end of Frenzy and don't let Dreambinder fall off\nactions.st+=/new_moon,if=ap_check&variable.save_for_ca_inc&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)\nactions.st+=/half_moon,if=ap_check&variable.save_for_ca_inc&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)&(buff.ca_inc.up||buff.primordial_arcanic_pulsar.value<=210)&(!covenant.venthyr||buff.ravenous_frenzy.remains<(5-2*runeforge.sinful_hysteria)&buff.ravenous_frenzy.up||!buff.ravenous_frenzy.up)&(!runeforge.timeworn_dreambinder||execute_time<buff.timeworn_dreambinder.remains||!buff.timeworn_dreambinder.up)\nactions.st+=/full_moon,if=ap_check&variable.save_for_ca_inc&(buff.eclipse_lunar.remains>execute_time||buff.eclipse_solar.remains>execute_time)&(buff.ca_inc.up||buff.primordial_arcanic_pulsar.value<=210)&(!covenant.kyrian||buff.kindred_empowerment_energize.up)&(!covenant.venthyr||buff.ravenous_frenzy.remains<5&buff.ravenous_frenzy.up&!runeforge.sinful_hysteria||!buff.ravenous_frenzy.up)&(!runeforge.timeworn_dreambinder||execute_time<buff.timeworn_dreambinder.remains||!buff.timeworn_dreambinder.up)\n# Use WoE on cd\nactions.st+=/warrior_of_elune\n# Use Starfire to proc Solar Eclipse, CA/Inc has less time than a Wrath execute left or only Lunar Eclipse is up. With T28 2pc enter a Solar Eclipse if Pulsar still has less than 210 stacks and CA/Inc and Convoke have more than 17s CD remaining. Use above 250% haste during Frenzy and 222% haste without Frenzy\nactions.st+=/starfire,if=eclipse.in_lunar&!buff.ravenous_frenzy.up||eclipse.solar_next||(eclipse.any_next||buff.ca_inc.remains<action.wrath.execute_time&buff.ca_inc.up)&(!set_bonus.tier28_2pc||runeforge.primordial_arcanic_pulsar&buff.primordial_arcanic_pulsar.value<210&cooldown.ca_inc.remains>17&(!covenant.night_fae||cooldown.convoke_the_spirits.remains>17)&(!race.troll||cooldown.berserking.remains>17))||eclipse.in_any&(buff.warrior_of_elune.up||spell_haste<0.45&(!covenant.venthyr||!buff.ravenous_frenzy.up)||covenant.venthyr&spell_haste<0.4)\n# Use Wrath otherwise which is in Solar Eclipse, CA/Inc or to proc Lunar Eclipse\nactions.st+=/wrath\n# Fallthru\nactions.st+=/run_action_list,name=fallthru",
 				},
 				["Guardian"] = {
 					["source"] = "https://github.com/simulationcraft/simc/",
@@ -37483,14 +37697,14 @@ HekiliDB = {
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["criteria"] = "( ( ! ticking & time_to_die > 12 & buff.galactic_guardian.up ) || ( refreshable & time_to_die > 12 & buff.galactic_guardian.up ) ) & active_enemies < 6",
 								["action"] = "moonfire",
+								["criteria"] = "( ( ! ticking & time_to_die > 12 & buff.galactic_guardian.up ) || ( refreshable & time_to_die > 12 & buff.galactic_guardian.up ) ) & active_enemies < 6",
 								["cycle_targets"] = 1,
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["criteria"] = "( ( ! ticking & time_to_die > 12 ) || ( refreshable & time_to_die > 12 ) ) & active_enemies < 6",
 								["action"] = "moonfire",
+								["criteria"] = "( ( ! ticking & time_to_die > 12 ) || ( refreshable & time_to_die > 12 ) ) & active_enemies < 6",
 								["cycle_targets"] = 1,
 							}, -- [4]
 							{
@@ -37499,20 +37713,20 @@ HekiliDB = {
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["action"] = "jotungeirr_destinys_call",
 								["criteria"] = "covenant.venthyr",
 								["name"] = "jotungeirr_destinys_call",
+								["action"] = "jotungeirr_destinys_call",
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["criteria"] = "! buff.prowl.up & covenant.venthyr",
 								["action"] = "trinket1",
+								["criteria"] = "! buff.prowl.up & covenant.venthyr",
 								["slot"] = "trinket1",
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["criteria"] = "! buff.prowl.up & covenant.venthyr",
 								["action"] = "trinket2",
+								["criteria"] = "! buff.prowl.up & covenant.venthyr",
 								["slot"] = "trinket2",
 							}, -- [8]
 							{
@@ -37556,8 +37770,8 @@ HekiliDB = {
 							}, -- [16]
 							{
 								["enabled"] = true,
-								["criteria"] = "refreshable || dot.thrash_bear.stack < 3 || ( dot.thrash_bear.stack < 4 & runeforge.luffainfused_embrace.equipped ) || active_enemies >= 4 || buff.berserk_bear.up & buff.berserk_bear.remains <= gcd + 0.5",
 								["action"] = "thrash_bear",
+								["criteria"] = "refreshable || dot.thrash_bear.stack < 3 || ( dot.thrash_bear.stack < 4 & runeforge.luffainfused_embrace.equipped ) || active_enemies >= 4 || buff.berserk_bear.up & buff.berserk_bear.remains <= gcd + 0.5",
 								["cycle_targets"] = 1,
 							}, -- [17]
 							{
@@ -37610,8 +37824,8 @@ HekiliDB = {
 							}, -- [26]
 							{
 								["enabled"] = true,
-								["criteria"] = "dot.thrash_bear.stack > 2",
 								["action"] = "pulverize",
+								["criteria"] = "dot.thrash_bear.stack > 2",
 								["cycle_targets"] = 1,
 							}, -- [27]
 							{
@@ -37665,6 +37879,95 @@ HekiliDB = {
 								["action"] = "survival_instincts",
 							}, -- [6]
 						},
+						["default"] = {
+							{
+								["enabled"] = true,
+								["description"] = "Executed every time the actor is available.",
+								["action"] = "skull_bash",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "! buff.prowl.up & ! covenant.venthyr",
+								["name"] = "jotungeirr_destinys_call",
+								["action"] = "jotungeirr_destinys_call",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["action"] = "trinket1",
+								["criteria"] = "! buff.prowl.up & ! covenant.venthyr",
+								["slot"] = "trinket1",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["action"] = "trinket2",
+								["criteria"] = "! buff.prowl.up & ! covenant.venthyr",
+								["slot"] = "trinket2",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "! covenant.venthyr & ( ( ( talent.heart_of_the_wild.enabled & buff.heart_of_the_wild.up ) & ( druid.catweave_bear || druid.owlweave_bear ) & ! buff.prowl.up ) || ( ( buff.berserk_bear.up || buff.incarnation_guardian_of_ursoc.up ) & ( ! druid.catweave_bear & ! druid.owlweave_bear ) ) )",
+								["action"] = "potion",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["action"] = "run_action_list",
+								["strict"] = 1,
+								["criteria"] = "druid.catweave_bear & ! tanking & ! covenant.venthyr & buff.incarnation_guardian_of_ursoc.down & buff.berserk_bear.down & ( ( cooldown.thrash_bear.remains > 0 & cooldown.mangle.remains > 0 & dot.moonfire.remains >= gcd + 0.5 & rage < 40 & buff.incarnation_guardian_of_ursoc.down & buff.berserk_bear.down & buff.galactic_guardian.down ) || ( buff.cat_form.up & energy > 25 ) || ( dot.rake.refreshable & dot.rip.refreshable ) || ( runeforge.oath_of_the_elder_druid.equipped & ! buff.oath_of_the_elder_druid.up & ( buff.cat_form.up & energy > 20 ) & buff.heart_of_the_wild.remains <= 10 ) || ( covenant.kyrian & cooldown.empower_bond.remains <= 1 & active_enemies < 2 ) || ( buff.heart_of_the_wild.up & energy > 90 ) )",
+								["list_name"] = "catweave",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["action"] = "run_action_list",
+								["strict"] = 1,
+								["criteria"] = "druid.catweave_bear & ! tanking & covenant.venthyr & ( ( cooldown.thrash_bear.remains > 0 & cooldown.mangle.remains > 0 & dot.moonfire.remains >= gcd + 0.5 & rage < 40 & buff.incarnation_guardian_of_ursoc.down & buff.berserk_bear.down & buff.galactic_guardian.down ) || ( buff.cat_form.up & energy > 25 ) || ( dot.rake.refreshable & dot.rip.refreshable & rage < 40 & buff.incarnation_guardian_of_ursoc.down & buff.berserk_bear.down & buff.galactic_guardian.down ) )",
+								["list_name"] = "catweave",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["action"] = "run_action_list",
+								["strict"] = 1,
+								["criteria"] = "! druid.catweave_bear & buff.cat_form.up",
+								["list_name"] = "catweave",
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["action"] = "run_action_list",
+								["strict"] = 1,
+								["criteria"] = "druid.owlweave_bear & ! tanking & buff.incarnation_guardian_of_ursoc.down & buff.berserk_bear.down & ( ( cooldown.thrash_bear.remains > 0 & cooldown.mangle.remains > 0 & buff.galactic_guardian.down ) || ( buff.moonkin_form.up & dot.sunfire.refreshable ) || ( runeforge.oath_of_the_elder_druid.equipped & ! buff.oath_of_the_elder_druid.up ) || ( covenant.night_fae & cooldown.convoke_the_spirits.remains <= 1 ) )",
+								["list_name"] = "owlweave",
+							}, -- [9]
+							{
+								["enabled"] = true,
+								["action"] = "run_action_list",
+								["strict"] = 1,
+								["criteria"] = "! druid.owlweave_bear & buff.moonkin_form.up",
+								["list_name"] = "owlweave",
+							}, -- [10]
+							{
+								["enabled"] = true,
+								["action"] = "run_action_list",
+								["description"] = "If we're a nightfae and we don't want to catweave/owlweave, and we have balance/feral affinity talented, Whenever convoke cd is up we switch into affinity form to cast it, here moonkin form.",
+								["criteria"] = "settings.shift_for_convoke & ( ( talent.balance_affinity.enabled ) & ( ! druid.catweave_bear ) & ( ! druid.owlweave_bear ) & ( covenant.night_fae & cooldown.convoke_the_spirits.remains <= 1 ) )",
+								["list_name"] = "oconvoke",
+							}, -- [11]
+							{
+								["enabled"] = true,
+								["action"] = "run_action_list",
+								["description"] = "If we're a nightfae and we don't want to catweave/owlweave, and we have balance/feral affinity talented, Whenever convoke cd is up we switch into affinity form to cast it, here catform form.",
+								["criteria"] = "settings.shift_for_convoke & ( ( talent.feral_affinity.enabled ) & ( ! druid.catweave_bear ) & ( ! druid.owlweave_bear ) & ( covenant.night_fae & cooldown.convoke_the_spirits.remains <= 1 ) )",
+								["list_name"] = "cconvoke",
+							}, -- [12]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["list_name"] = "mitigation",
+							}, -- [13]
+							{
+								["enabled"] = true,
+								["action"] = "run_action_list",
+								["list_name"] = "bear",
+							}, -- [14]
+						},
 						["oconvoke"] = {
 							{
 								["enabled"] = true,
@@ -37700,81 +38003,6 @@ HekiliDB = {
 								["action"] = "convoke_the_spirits",
 								["enabled"] = true,
 							}, -- [7]
-						},
-						["default"] = {
-							{
-								["description"] = "Executed every time the actor is available.",
-								["action"] = "skull_bash",
-							}, -- [1]
-							{
-								["action"] = "jotungeirr_destinys_call",
-								["criteria"] = "! buff.prowl.up & ! covenant.venthyr",
-								["name"] = "jotungeirr_destinys_call",
-							}, -- [2]
-							{
-								["criteria"] = "! buff.prowl.up & ! covenant.venthyr",
-								["action"] = "trinket1",
-								["slot"] = "trinket1",
-							}, -- [3]
-							{
-								["criteria"] = "! buff.prowl.up & ! covenant.venthyr",
-								["action"] = "trinket2",
-								["slot"] = "trinket2",
-							}, -- [4]
-							{
-								["criteria"] = "! covenant.venthyr & ( ( ( talent.heart_of_the_wild.enabled & buff.heart_of_the_wild.up ) & ( druid.catweave_bear || druid.owlweave_bear ) & ! buff.prowl.up ) || ( ( buff.berserk_bear.up || buff.incarnation_guardian_of_ursoc.up ) & ( ! druid.catweave_bear & ! druid.owlweave_bear ) ) )",
-								["action"] = "potion",
-							}, -- [5]
-							{
-								["action"] = "run_action_list",
-								["strict"] = 1,
-								["criteria"] = "druid.catweave_bear & ! tanking & ! covenant.venthyr & buff.incarnation_guardian_of_ursoc.down & buff.berserk_bear.down & ( ( cooldown.thrash_bear.remains > 0 & cooldown.mangle.remains > 0 & dot.moonfire.remains >= gcd + 0.5 & rage < 40 & buff.incarnation_guardian_of_ursoc.down & buff.berserk_bear.down & buff.galactic_guardian.down ) || ( buff.cat_form.up & energy > 25 ) || ( dot.rake.refreshable & dot.rip.refreshable ) || ( runeforge.oath_of_the_elder_druid.equipped & ! buff.oath_of_the_elder_druid.up & ( buff.cat_form.up & energy > 20 ) & buff.heart_of_the_wild.remains <= 10 ) || ( covenant.kyrian & cooldown.empower_bond.remains <= 1 & active_enemies < 2 ) || ( buff.heart_of_the_wild.up & energy > 90 ) )",
-								["list_name"] = "catweave",
-							}, -- [6]
-							{
-								["action"] = "run_action_list",
-								["strict"] = 1,
-								["criteria"] = "druid.catweave_bear & ! tanking & covenant.venthyr & ( ( cooldown.thrash_bear.remains > 0 & cooldown.mangle.remains > 0 & dot.moonfire.remains >= gcd + 0.5 & rage < 40 & buff.incarnation_guardian_of_ursoc.down & buff.berserk_bear.down & buff.galactic_guardian.down ) || ( buff.cat_form.up & energy > 25 ) || ( dot.rake.refreshable & dot.rip.refreshable & rage < 40 & buff.incarnation_guardian_of_ursoc.down & buff.berserk_bear.down & buff.galactic_guardian.down ) )",
-								["list_name"] = "catweave",
-							}, -- [7]
-							{
-								["action"] = "run_action_list",
-								["strict"] = 1,
-								["criteria"] = "! druid.catweave_bear & buff.cat_form.up",
-								["list_name"] = "catweave",
-							}, -- [8]
-							{
-								["action"] = "run_action_list",
-								["strict"] = 1,
-								["criteria"] = "druid.owlweave_bear & ! tanking & buff.incarnation_guardian_of_ursoc.down & buff.berserk_bear.down & ( ( cooldown.thrash_bear.remains > 0 & cooldown.mangle.remains > 0 & buff.galactic_guardian.down ) || ( buff.moonkin_form.up & dot.sunfire.refreshable ) || ( runeforge.oath_of_the_elder_druid.equipped & ! buff.oath_of_the_elder_druid.up ) || ( covenant.night_fae & cooldown.convoke_the_spirits.remains <= 1 ) )",
-								["list_name"] = "owlweave",
-							}, -- [9]
-							{
-								["action"] = "run_action_list",
-								["strict"] = 1,
-								["criteria"] = "! druid.owlweave_bear & buff.moonkin_form.up",
-								["list_name"] = "owlweave",
-							}, -- [10]
-							{
-								["criteria"] = "settings.shift_for_convoke & ( ( talent.balance_affinity.enabled ) & ( ! druid.catweave_bear ) & ( ! druid.owlweave_bear ) & ( covenant.night_fae & cooldown.convoke_the_spirits.remains <= 1 ) )",
-								["action"] = "run_action_list",
-								["description"] = "If we're a nightfae and we don't want to catweave/owlweave, and we have balance/feral affinity talented, Whenever convoke cd is up we switch into affinity form to cast it, here moonkin form.",
-								["list_name"] = "oconvoke",
-							}, -- [11]
-							{
-								["criteria"] = "settings.shift_for_convoke & ( ( talent.feral_affinity.enabled ) & ( ! druid.catweave_bear ) & ( ! druid.owlweave_bear ) & ( covenant.night_fae & cooldown.convoke_the_spirits.remains <= 1 ) )",
-								["action"] = "run_action_list",
-								["description"] = "If we're a nightfae and we don't want to catweave/owlweave, and we have balance/feral affinity talented, Whenever convoke cd is up we switch into affinity form to cast it, here catform form.",
-								["list_name"] = "cconvoke",
-							}, -- [12]
-							{
-								["action"] = "call_action_list",
-								["list_name"] = "mitigation",
-							}, -- [13]
-							{
-								["action"] = "run_action_list",
-								["list_name"] = "bear",
-							}, -- [14]
 						},
 						["catweave"] = {
 							{
@@ -37823,9 +38051,9 @@ HekiliDB = {
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["max_energy"] = 1,
 								["criteria"] = "combo_points >= 4 & energy > 50",
 								["action"] = "ferocious_bite",
+								["max_energy"] = 1,
 							}, -- [10]
 							{
 								["enabled"] = true,
@@ -37910,30 +38138,37 @@ HekiliDB = {
 						},
 						["precombat"] = {
 							{
+								["enabled"] = true,
 								["description"] = "Executed before combat begins. Accepts non-harmful actions only.",
 								["action"] = "kindred_spirits",
 							}, -- [1]
 							{
+								["enabled"] = true,
 								["criteria"] = "talent.heart_of_the_wild.enabled & ( druid.catweave_bear & buff.cat_form.up || druid.owlweave_bear & buff.moonkin_form.up || buff.moonkin_form.up & talent.balance_affinity.enabled )",
 								["action"] = "heart_of_the_wild",
 							}, -- [2]
 							{
+								["enabled"] = true,
 								["criteria"] = "buff.cat_form.up & druid.catweave_bear",
 								["action"] = "prowl",
 							}, -- [3]
 							{
+								["enabled"] = true,
 								["criteria"] = "! buff.any_form.up & ( ( ! druid.owlweave_bear & ! druid.catweave_bear ) & ( ! covenant.night_fae ) ) || ( ( ! druid.owlweave_bear & ! druid.catweave_bear ) & ( covenant.night_fae & talent.restoration_affinity.enabled ) )",
 								["action"] = "bear_form",
 							}, -- [4]
 							{
+								["enabled"] = true,
 								["criteria"] = "buff.moonkin_form.up & druid.owlweave_bear & ! covenant.night_fae",
 								["action"] = "wrath",
 							}, -- [5]
 							{
+								["enabled"] = true,
 								["criteria"] = "buff.moonkin_form.up & druid.owlweave_bear & covenant.night_fae",
 								["action"] = "starfire",
 							}, -- [6]
 							{
+								["enabled"] = true,
 								["criteria"] = "soulbind.pustule_eruption.enabled || soulbind.volatile_solvent.enabled",
 								["interrupt_if"] = "soulbind.volatile_solvent",
 								["interrupt_immediate"] = "1",
@@ -37994,14 +38229,14 @@ HekiliDB = {
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["criteria"] = "refreshable",
 								["action"] = "sunfire",
+								["criteria"] = "refreshable",
 								["cycle_targets"] = 1,
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["criteria"] = "refreshable || buff.galactic_guardian.up",
 								["action"] = "moonfire",
+								["criteria"] = "refreshable || buff.galactic_guardian.up",
 								["cycle_targets"] = 1,
 							}, -- [9]
 							{
@@ -38032,8 +38267,8 @@ HekiliDB = {
 					},
 					["version"] = 20220226,
 					["warnings"] = "Imported 9 action lists.\n",
-					["spec"] = 104,
 					["profile"] = "## Guardian Druid\n## February 25, 2022\n\n## Changes:\n## - Incorporate Cat/Moonkin priorities (if setting is checked).\n## - Incorporate option to shift (or not) before Convoke.\n\n# Executed before combat begins. Accepts non-harmful actions only.\nactions.precombat+=/kindred_spirits\nactions.precombat+=/heart_of_the_wild,if=talent.heart_of_the_wild.enabled&(druid.catweave_bear&buff.cat_form.up||druid.owlweave_bear&buff.moonkin_form.up||buff.moonkin_form.up&talent.balance_affinity.enabled)\nactions.precombat+=/prowl,if=buff.cat_form.up&druid.catweave_bear\nactions.precombat+=/bear_form,if=!buff.any_form.up&((!druid.owlweave_bear&!druid.catweave_bear)&(!covenant.night_fae))||((!druid.owlweave_bear&!druid.catweave_bear)&(covenant.night_fae&talent.restoration_affinity.enabled))\nactions.precombat+=/wrath,if=buff.moonkin_form.up&druid.owlweave_bear&!covenant.night_fae\nactions.precombat+=/starfire,if=buff.moonkin_form.up&druid.owlweave_bear&covenant.night_fae\nactions.precombat+=/fleshcraft,if=soulbind.pustule_eruption.enabled||soulbind.volatile_solvent.enabled,interrupt_immediate=1,interrupt_global=1,interrupt_if=soulbind.volatile_solvent\n\n# Executed every time the actor is available.\nactions=skull_bash\nactions+=/use_item,name=jotungeirr_destinys_call,if=!buff.prowl.up&!covenant.venthyr\nactions+=/use_item,slot=trinket1,if=!buff.prowl.up&!covenant.venthyr\nactions+=/use_item,slot=trinket2,if=!buff.prowl.up&!covenant.venthyr\nactions+=/potion,if=!covenant.venthyr&(((talent.heart_of_the_wild.enabled&buff.heart_of_the_wild.up)&(druid.catweave_bear||druid.owlweave_bear)&!buff.prowl.up)||((buff.berserk_bear.up||buff.incarnation_guardian_of_ursoc.up)&(!druid.catweave_bear&!druid.owlweave_bear)))\n## Catweaving action list will be ran if, mangle/thrash are on cd, rage is below 40, zerk and incarnation are down and Gualactic guardian buff is not active, or if, we're in catform and energy is above 25, Or if we have the Oath legendary equipped, the debuff linked to it is not up and energy is above 20,Or if we're kyrian and Empower bond cooldown is up and enemies are inferior to 2.\nactions+=/run_action_list,strict=1,name=catweave,if=druid.catweave_bear&!tanking&!covenant.venthyr&buff.incarnation_guardian_of_ursoc.down&buff.berserk_bear.down&((cooldown.thrash_bear.remains>0&cooldown.mangle.remains>0&dot.moonfire.remains>=gcd+0.5&rage<40&buff.incarnation_guardian_of_ursoc.down&buff.berserk_bear.down&buff.galactic_guardian.down)||(buff.cat_form.up&energy>25)||(dot.rake.refreshable&dot.rip.refreshable)||(runeforge.oath_of_the_elder_druid.equipped&!buff.oath_of_the_elder_druid.up&(buff.cat_form.up&energy>20)&buff.heart_of_the_wild.remains<=10)||(covenant.kyrian&cooldown.empower_bond.remains<=1&active_enemies<2)||(buff.heart_of_the_wild.up&energy>90))\nactions+=/run_action_list,strict=1,name=catweave,if=druid.catweave_bear&!tanking&covenant.venthyr&((cooldown.thrash_bear.remains>0&cooldown.mangle.remains>0&dot.moonfire.remains>=gcd+0.5&rage<40&buff.incarnation_guardian_of_ursoc.down&buff.berserk_bear.down&buff.galactic_guardian.down)||(buff.cat_form.up&energy>25)||(dot.rake.refreshable&dot.rip.refreshable&rage<40&buff.incarnation_guardian_of_ursoc.down&buff.berserk_bear.down&buff.galactic_guardian.down))\nactions+=/run_action_list,strict=1,name=catweave,if=!druid.catweave_bear&buff.cat_form.up\n## Owlweaving action list will be ran if, mangle/thrash are on cd, rage is below 15, zerk and incarnation are down and Gualactic guardian buff is not active. Or if, we're in moonkin form and sunfire is refreshable, Or if we have the Oath legendary equipped, the debuff linked to it is not up.Or if we're kyrian and Empower bond cooldown is up and enemies are below 2, or if we're Night fae and Convoke cd is up.\nactions+=/run_action_list,strict=1,name=owlweave,if=druid.owlweave_bear&!tanking&buff.incarnation_guardian_of_ursoc.down&buff.berserk_bear.down&((cooldown.thrash_bear.remains>0&cooldown.mangle.remains>0&buff.galactic_guardian.down)||(buff.moonkin_form.up&dot.sunfire.refreshable)||(runeforge.oath_of_the_elder_druid.equipped&!buff.oath_of_the_elder_druid.up)||(covenant.night_fae&cooldown.convoke_the_spirits.remains<=1))\nactions+=/run_action_list,strict=1,name=owlweave,if=!druid.owlweave_bear&buff.moonkin_form.up\n# If we're a nightfae and we don't want to catweave/owlweave, and we have balance/feral affinity talented, Whenever convoke cd is up we switch into affinity form to cast it, here moonkin form.\nactions+=/run_action_list,name=oconvoke,if=settings.shift_for_convoke&((talent.balance_affinity.enabled)&(!druid.catweave_bear)&(!druid.owlweave_bear)&(covenant.night_fae&cooldown.convoke_the_spirits.remains<=1))\n# If we're a nightfae and we don't want to catweave/owlweave, and we have balance/feral affinity talented, Whenever convoke cd is up we switch into affinity form to cast it, here catform form.\nactions+=/run_action_list,name=cconvoke,if=settings.shift_for_convoke&((talent.feral_affinity.enabled)&(!druid.catweave_bear)&(!druid.owlweave_bear)&(covenant.night_fae&cooldown.convoke_the_spirits.remains<=1))\nactions+=/call_action_list,name=mitigation\nactions+=/run_action_list,name=bear\n\nactions.bear=bear_form,if=!buff.bear_form.up\nactions.bear+=/heart_of_the_wild,if=talent.heart_of_the_wild.enabled&(talent.balance_affinity.enabled)\nactions.bear+=/moonfire,cycle_targets=1,if=((!ticking&time_to_die>12&buff.galactic_guardian.up)||(refreshable&time_to_die>12&buff.galactic_guardian.up))&active_enemies<6\nactions.bear+=/moonfire,cycle_targets=1,if=((!ticking&time_to_die>12)||(refreshable&time_to_die>12))&active_enemies<6\nactions.bear+=/ravenous_frenzy\nactions.bear+=/use_item,name=jotungeirr_destinys_call,if=covenant.venthyr\nactions.bear+=/use_item,slot=trinket1,if=!buff.prowl.up&covenant.venthyr\nactions.bear+=/use_item,slot=trinket2,if=!buff.prowl.up&covenant.venthyr\nactions.bear+=/potion,if=covenant.venthyr&buff.incarnation.remains>=24&buff.incarnation.remains<=25\nactions.bear+=/convoke_the_spirits,if=!druid.catweave_bear&!druid.owlweave_bear\nactions.bear+=/berserk_bear,if=(buff.ravenous_frenzy.up||!covenant.venthyr)\nactions.bear+=/incarnation,if=(buff.ravenous_frenzy.up||!covenant.venthyr)\nactions.bear+=/berserking,if=(buff.berserk_bear.up||buff.incarnation_guardian_of_ursoc.up)\nactions.bear+=/empower_bond\nactions.bear+=/adaptive_swarm,if=(!dot.adaptive_swarm_damage.ticking&!action.adaptive_swarm_damage.in_flight&(!dot.adaptive_swarm_heal.ticking||dot.adaptive_swarm_heal.remains>3)||dot.adaptive_swarm_damage.stack<3&dot.adaptive_swarm_damage.remains<5&dot.adaptive_swarm_damage.ticking)\nactions.bear+=/moonfire,if=buff.galactic_guardian.up&active_enemies<3\nactions.bear+=/thrash_bear,cycle_targets=1,if=refreshable||dot.thrash_bear.stack<3||(dot.thrash_bear.stack<4&runeforge.luffainfused_embrace.equipped)||active_enemies>=4||buff.berserk_bear.up&buff.berserk_bear.remains<=gcd+0.5\nactions.bear+=/mangle,if=rage.deficit>10&settings.mangle_more\nactions.bear+=/fleshcraft,if=soulbind.pustule_eruption.enabled&((cooldown.thrash_bear.remains>0&cooldown.mangle.remains>0)&(dot.moonfire.remains>=3)&(buff.incarnation_guardian_of_ursoc.down&buff.berserk_bear.down&buff.galactic_guardian.down))||soulbind.volatile_solvent.enabled,interrupt_immediate=1,interrupt_global=1,interrupt_if=soulbind.volatile_solvent&(cooldown.thrash_bear.remains>0&cooldown.mangle.remains>0)\nactions.bear+=/swipe,if=buff.incarnation_guardian_of_ursoc.down&buff.berserk_bear.down&active_enemies>=4\nactions.bear+=/maul,if=(buff.incarnation.up)&active_enemies<3||(buff.incarnation.up)&active_enemies<3&(buff.tooth_and_claw.stack>=2)||(buff.tooth_and_claw.up&buff.tooth_and_claw.remains<1.5)||(buff.savage_combatant.stack>=3)||buff.berserk_bear.up&active_enemies<3\nactions.bear+=/maul,if=(buff.savage_combatant.stack>=1)&(buff.tooth_and_claw.up)&buff.incarnation.up&active_enemies=2\nactions.bear+=/mangle,if=buff.incarnation.up&active_enemies<=3\nactions.bear+=/maul,if=(((buff.tooth_and_claw.stack>=2)||(buff.tooth_and_claw.up&buff.tooth_and_claw.remains<1.5)||(buff.savage_combatant.stack>=3))&active_enemies<3)\nactions.bear+=/thrash_bear,if=active_enemies>1\nactions.bear+=/mangle,if=((rage<90)&active_enemies<3)||((rage<85)&active_enemies<3&talent.soul_of_the_forest.enabled)\nactions.bear+=/pulverize,cycle_targets=1,if=dot.thrash_bear.stack>2\nactions.bear+=/thrash_bear\nactions.bear+=/maul,if=active_enemies<3\nactions.bear+=/swipe_bear\nactions.bear+=/ironfur,if=rage.deficit<40&buff.ironfur.remains<0.5\n\nactions.mitigation=ironfur,if=incoming_damage_5s>ironfur_damage_threshold&buff.ironfur.remains<3*haste\nactions.mitigation+=/renewal,if=tanking&health.pct<65\nactions.mitigation+=/frenzied_regeneration,if=tanking&health.pct<65\nactions.mitigation+=/empower_bond,if=(!druid.catweave_bear&!druid.owlweave_bear)||active_enemies>=2\nactions.mitigation+=/barkskin,if=tanking&health.pct<75&incoming_damage_5s>0.1*health.max\nactions.mitigation+=/survival_instincts,if=buff.survival_instincts.down&buff.barkskin.down&health.pct<60&incoming_damage_5s>0.25*health.max\n\nactions.cooldowns=potion\nactions.cooldowns+=/blood_fury\nactions.cooldowns+=/berserking\nactions.cooldowns+=/arcane_torrent\nactions.cooldowns+=/lights_judgment\nactions.cooldowns+=/fireblood\nactions.cooldowns+=/ancestral_call\nactions.cooldowns+=/bristling_fur,if=buff.bear_form.up\nactions.cooldowns+=/incarnation,if=(dot.moonfire.ticking||active_enemies>1)&dot.thrash_bear.ticking\nactions.cooldowns+=/berserk\nactions.cooldowns+=/use_item,effect_name=cyclotronic_blast\nactions.cooldowns+=/use_items\n\nactions.catweave=heart_of_the_wild,if=talent.heart_of_the_wild.enabled&!buff.heart_of_the_wild.up&!buff.cat_form.up\nactions.catweave+=/prowl\nactions.catweave+=/cat_form,if=!buff.cat_form.up\nactions.catweave+=/rake,if=buff.prowl.up\nactions.catweave+=/heart_of_the_wild,if=talent.heart_of_the_wild.enabled&!buff.heart_of_the_wild.up\nactions.catweave+=/empower_bond,if=druid.catweave_bear\nactions.catweave+=/rake,if=dot.rake.refreshable||energy<45\nactions.catweave+=/rip,if=dot.rip.refreshable&combo_points>=4\nactions.catweave+=/convoke_the_spirits,if=druid.catweave_bear\nactions.catweave+=/ferocious_bite,max_energy=1,if=combo_points>=4&energy>50\nactions.catweave+=/adaptive_swarm,if=(!dot.adaptive_swarm_damage.ticking&!action.adaptive_swarm_damage.in_flight&(!dot.adaptive_swarm_heal.ticking||dot.adaptive_swarm_heal.remains>3)||dot.adaptive_swarm_damage.stack<3&dot.adaptive_swarm_damage.remains<5&dot.adaptive_swarm_damage.ticking)\nactions.catweave+=/fleshcraft,if=soulbind.pustule_eruption.enabled&energy<35||soulbind.volatile_solvent.enabled,interrupt_immediate=1,interrupt_global=1,interrupt_if=soulbind.volatile_solvent&energy<35\nactions.catweave+=/swipe\nactions.catweave+=/rake,if=refreshable&combo_points<5\nactions.catweave+=/shred,if=combo_points<5\n\nactions.cconvoke=heart_of_the_wild,if=talent.heart_of_the_wild.enabled&!buff.heart_of_the_wild.up&!buff.cat_form.up\nactions.cconvoke+=/cat_form,if=!buff.cat_form.up\nactions.cconvoke+=/convoke_the_spirits\n\nactions.oconvoke=heart_of_the_wild,if=talent.heart_of_the_wild.enabled&!buff.heart_of_the_wild.up&!buff.moonkin_form.up\nactions.oconvoke+=/moonkin_form,if=!buff.moonkin_form.up\nactions.oconvoke+=/convoke_the_spirits,if=soulbind.first_strike.enabled&buff.first_strike.up\nactions.oconvoke+=/convoke_the_spirits,if=runeforge.legacy_of_the_sleeper.equipped\nactions.oconvoke+=/starfire,if=eclipse.any_next||eclipse.solar_next\nactions.oconvoke+=/wrath,if=eclipse.any_next||eclipse.lunar_next\nactions.oconvoke+=/convoke_the_spirits\n\nactions.owlweave=heart_of_the_wild,if=talent.heart_of_the_wild.enabled&!buff.heart_of_the_wild.up&!buff.moonkin_form.up\nactions.owlweave+=/moonkin_form,if=!buff.moonkin_form.up\nactions.owlweave+=/starsurge\nactions.owlweave+=/convoke_the_spirits,if=runeforge.legacy_of_the_sleeper.equipped\nactions.owlweave+=/convoke_the_spirits,if=soulbind.first_strike.enabled\nactions.owlweave+=/empower_bond,if=druid.owlweave_bear\nactions.owlweave+=/adaptive_swarm,if=(!dot.adaptive_swarm_damage.ticking&!action.adaptive_swarm_damage.in_flight&(!dot.adaptive_swarm_heal.ticking||dot.adaptive_swarm_heal.remains>3)||dot.adaptive_swarm_damage.stack<3&dot.adaptive_swarm_damage.remains<5&dot.adaptive_swarm_damage.ticking)\nactions.owlweave+=/sunfire,cycle_targets=1,if=refreshable\nactions.owlweave+=/moonfire,cycle_targets=1,if=refreshable||buff.galactic_guardian.up\nactions.owlweave+=/starfire,if=covenant.night_fae&eclipse.any_next\nactions.owlweave+=/wrath,if=!covenant.night_fae&eclipse.any_next\nactions.owlweave+=/convoke_the_spirits,if=(buff.eclipse_lunar.up||buff.eclipse_solar.up)\nactions.owlweave+=/starfire,if=(eclipse.in_lunar||eclipse.solar_next)||(eclipse.in_lunar&buff.starsurge_empowerment_lunar.up)\nactions.owlweave+=/wrath",
+					["spec"] = 104,
 				},
 			},
 		},

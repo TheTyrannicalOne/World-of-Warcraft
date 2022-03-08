@@ -104,8 +104,8 @@ TomCats_Account = {
 		["preferences"] = {
 		},
 	},
-	["discoveriesVersion"] = "2.4.3",
-	["lastVersionSeen"] = "2.4.3",
+	["discoveriesVersion"] = "2.4.5",
+	["lastVersionSeen"] = "2.4.5",
 	["preferences"] = {
 		["MapOptions"] = {
 			["iconScale"] = 1,

@@ -7,16 +7,22 @@ QuestTogether = {
 				"0/4 Echo of Time", -- [1]
 			},
 		},
-		[43179] = {
-			["title"] = "The Kirin Tor of Dalaran",
+		[42234] = {
+			["title"] = "The Valarjar",
 			["objectives"] = {
-				"0/3 Complete 3 Kirin Tor World Quests", -- [1]
+				"0/4 Complete 4 world quests in Stormheim", -- [1]
 			},
 		},
-		[56352] = {
-			["title"] = "The Eternal Palace: We Can Make It Stronger...",
+		[61705] = {
+			["title"] = "Ember Court: Refreshments",
 			["objectives"] = {
-				"3/20 Eternal Ornament", -- [1]
+				"0/1 Review the Refreshments List", -- [1]
+				"1/1 Complete the requirement to access Tubbins's Tea Party", -- [2]
+			},
+		},
+		[54462] = {
+			["title"] = "Supplies from the Zandalari Empire",
+			["objectives"] = {
 			},
 		},
 		[62719] = {
@@ -27,10 +33,10 @@ QuestTogether = {
 				"1/1 Runecarver Memory Restored", -- [3]
 			},
 		},
-		[50562] = {
-			["title"] = "Champions of Azeroth",
+		[47727] = {
+			["title"] = "Tomb of Sargeras: Aegwynn's Path",
 			["objectives"] = {
-				"0/4 Complete 4 Azerite World Quest for Magni", -- [1]
+				"3/4 Fragment of the Guardian's Seal", -- [1]
 			},
 		},
 		[63731] = {
@@ -38,25 +44,10 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[59701] = {
-			["title"] = "Common Ground",
+		[57563] = {
+			["title"] = "Mogu Assault Tracker",
 			["objectives"] = {
-				"1/4 Renathal Banner placed", -- [1]
-			},
-		},
-		[56120] = {
-			["title"] = "The Unshackled",
-			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
-			},
-		},
-		[58327] = {
-			["title"] = "Snacks for Stonehead",
-			["objectives"] = {
-				"50/50 Gooey Bug Bites", -- [1]
-				"20/20 Ash Crisps", -- [2]
-				"0/6 Mirror Candy", -- [3]
-				"1/1 A Light Snack", -- [4]
+				"0/1 [DNT] Dummy Credit slain", -- [1]
 			},
 		},
 		[49133] = {
@@ -76,12 +67,6 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[57205] = {
-			["title"] = "A Few Bumps Along the Way",
-			["objectives"] = {
-				"0/2 Artillery defended", -- [1]
-			},
-		},
 		[47129] = {
 			["title"] = "Tomb of Sargeras: The Deceiver",
 			["objectives"] = {
@@ -95,10 +80,10 @@ QuestTogether = {
 				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
-		[40329] = {
-			["title"] = "Battle Pet Tamers: Warlords",
+		[50598] = {
+			["title"] = "Zandalari Empire",
 			["objectives"] = {
-				"2/5 Pet Battlemasters Defeated", -- [1]
+				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
 			},
 		},
 		[53435] = {
@@ -107,34 +92,53 @@ QuestTogether = {
 				"18349/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
 			},
 		},
-		[50602] = {
-			["title"] = "Talanji's Expedition",
+		[50606] = {
+			["title"] = "Horde War Effort",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Nazmir.", -- [1]
+				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
 			},
 		},
-		[42420] = {
-			["title"] = "Court of Farondis",
+		[45381] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
-				"0/4 Complete 4 world quests in Azsuna", -- [1]
+				"1/4 Echo of Time", -- [1]
+			},
+		},
+		[42422] = {
+			["title"] = "The Wardens",
+			["objectives"] = {
+				"0/4 Complete 4 Wardens World Quests", -- [1]
+			},
+		},
+		[61704] = {
+			["title"] = "Ember Court: Guest RSVPs",
+			["objectives"] = {
+				"1/1 Review the Guest List", -- [1]
+				"1/1 Ask Lady Ilinca for more information (Optional)", -- [2]
+				"0/1 Complete the requirement to meet Cryptkeeper Kassir", -- [3]
+			},
+		},
+		[44948] = {
+			["title"] = "Raising Your Snowfeather",
+			["objectives"] = {
+				"Level 25 Snowfeather Hatchling", -- [1]
+			},
+		},
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
+			["objectives"] = {
+				"2/5 Pet Battlemasters Defeated", -- [1]
+			},
+		},
+		[63984] = {
+			["title"] = "Coins for the Ferryman",
+			["objectives"] = {
 			},
 		},
 		[45383] = {
 			["title"] = "The Nighthold: Talisman of the Shal'dorei",
 			["objectives"] = {
 				"2/4 Echo of Time", -- [1]
-			},
-		},
-		[65625] = {
-			["title"] = "The Jailer's Gauntlet",
-			["objectives"] = {
-				"0/1 Enter the new portal in the Torghast Lobby.", -- [1]
-			},
-		},
-		[63982] = {
-			["title"] = "Above My Station",
-			["objectives"] = {
-				"Portal to Transfer Station Ta taken", -- [1]
 			},
 		},
 		[64555] = {
@@ -147,16 +151,9 @@ QuestTogether = {
 				"0/1 Mawsworn Movement Report", -- [5]
 			},
 		},
-		[57564] = {
-			["title"] = "Mantid Assault Tracker",
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
 			["objectives"] = {
-			},
-		},
-		[48305] = {
-			["title"] = "The Burning Coven",
-			["objectives"] = {
-				"Defeat the Coven of Shivarra in the Antorus, The Burning Throne", -- [1]
-				"1/1 Sargerei Manifesto", -- [2]
 			},
 		},
 		[24756] = {
@@ -175,40 +172,22 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[44948] = {
-			["title"] = "Raising Your Snowfeather",
+		[58842] = {
+			["title"] = "The Curator",
 			["objectives"] = {
-				"Level 25 Snowfeather Hatchling", -- [1]
+				"0/1 Speak to the Curator", -- [1]
 			},
 		},
-		[45381] = {
-			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+		[42170] = {
+			["title"] = "The Dreamweavers",
 			["objectives"] = {
-				"1/4 Echo of Time", -- [1]
+				"0/4 Complete 4 world quests in Val'sharah", -- [1]
 			},
 		},
-		[60394] = {
-			["title"] = "Aiding Bastion",
+		[60460] = {
+			["title"] = "Anima Salvage",
 			["objectives"] = {
-				"0/3 Complete 3 World Quests in Bastion", -- [1]
-			},
-		},
-		[59661] = {
-			["title"] = "Ember Court Rehearsal",
-			["objectives"] = {
-				"0/1 Speak with Temel to start the rehearsal", -- [1]
-			},
-		},
-		[47727] = {
-			["title"] = "Tomb of Sargeras: Aegwynn's Path",
-			["objectives"] = {
-				"3/4 Fragment of the Guardian's Seal", -- [1]
-			},
-		},
-		[61492] = {
-			["title"] = "The Princeguard",
-			["objectives"] = {
-				"0/1 Chelra the Bladewall revived", -- [1]
+				"0/150 Gather Anima Embers from Torghast", -- [1]
 			},
 		},
 		[57462] = {
@@ -217,10 +196,11 @@ QuestTogether = {
 				"28/200 Shred of Insanity", -- [1]
 			},
 		},
-		[61981] = {
-			["title"] = "Replenish the Reservoir",
+		[48305] = {
+			["title"] = "The Burning Coven",
 			["objectives"] = {
-				"220/1000 Anima sources", -- [1]
+				"Defeat the Coven of Shivarra in the Antorus, The Burning Throne", -- [1]
+				"1/1 Sargerei Manifesto", -- [2]
 			},
 		},
 		[57403] = {
@@ -229,15 +209,10 @@ QuestTogether = {
 				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
 			},
 		},
-		[57566] = {
-			["title"] = "N'Zoth Assault Tracker (Uldum)",
+		[56352] = {
+			["title"] = "The Eternal Palace: We Can Make It Stronger...",
 			["objectives"] = {
-			},
-		},
-		[48641] = {
-			["title"] = "Armies of Legionfall",
-			["objectives"] = {
-				"0/4 Complete 4 world quests on the Broken Shore", -- [1]
+				"3/20 Eternal Ornament", -- [1]
 			},
 		},
 		[30567] = {
@@ -252,17 +227,17 @@ QuestTogether = {
 				"1/4 Rune of Passage", -- [1]
 			},
 		},
-		[60280] = {
-			["title"] = "WANTED: Lord Darion",
+		[56120] = {
+			["title"] = "The Unshackled",
 			["objectives"] = {
-				"0/1 Lord Darion slain", -- [1]
+				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 		["showDebugInfo"] = false,
 	},
 }

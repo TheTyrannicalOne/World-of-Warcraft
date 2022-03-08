@@ -23,7 +23,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Dalaran.Avisar"] = {
 				["activeSpecRole"] = "DAMAGER",
-				["lastUpdate"] = 1646075224,
+				["lastUpdate"] = 1646612225,
 				["Specializations"] = {
 					[3] = 9562,
 				},
@@ -43,7 +43,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Dalaran.Illingrath"] = {
 				["activeSpecRole"] = "TANK",
-				["lastUpdate"] = 1645405970,
+				["lastUpdate"] = 1646493499,
 				["Specializations"] = {
 					[2] = 6649,
 				},
@@ -53,7 +53,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Zul'jin.Zulbathal"] = {
 				["activeSpecRole"] = "DAMAGER",
-				["lastUpdate"] = 1646075051,
+				["lastUpdate"] = 1646607301,
 				["Specializations"] = {
 					9709, -- [1]
 				},
@@ -63,7 +63,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Black Dragonflight.Durlok"] = {
 				["activeSpecRole"] = "TANK",
-				["lastUpdate"] = 1646074908,
+				["lastUpdate"] = 1646485873,
 				["Specializations"] = {
 					[3] = 5631,
 				},
@@ -94,11 +94,11 @@ DataStore_TalentsDB = {
 					[64] = "1|181776|171|3|Fury",
 					[52] = "1|181735|171|3|Fury",
 					[50] = "1|181712|171|3|Fury",
-					[165] = "1|182463|158|2|",
-					[49] = "2|181709|158|2|Protection",
+					[165] = "1|182463|171|3|",
+					[49] = "2|181709|171|3|Protection",
 				},
 				["activeSpecRole"] = "DAMAGER",
-				["lastUpdate"] = 1646287577,
+				["lastUpdate"] = 1646727545,
 				["Specializations"] = {
 					5851, -- [1]
 				},
@@ -155,7 +155,7 @@ DataStore_TalentsDB = {
 					[1420] = "0|0|0|-1|Complete the campaign to unlock General Draven",
 					[1552] = "0|0|0|-1|",
 					[1422] = "0|0|0|2|",
-					[1395] = "1|165|2|1|",
+					[1395] = "1|165|3|1|",
 					[1399] = "1|0|0|0|",
 					[1403] = "3|0|0|-1|",
 					[1555] = "0|0|0|2|",
@@ -259,7 +259,7 @@ DataStore_TalentsRefDB = {
 					},
 				}, -- [3]
 			},
-			["Version"] = 42488,
+			["Version"] = 42560,
 		},
 		["MAGE"] = {
 			["Locale"] = "enUS",
@@ -361,7 +361,7 @@ DataStore_TalentsRefDB = {
 					["id"] = 105,
 				}, -- [4]
 			},
-			["Version"] = 42488,
+			["Version"] = 42560,
 		},
 		["DEMONHUNTER"] = {
 			["Locale"] = "enUS",
@@ -396,7 +396,7 @@ DataStore_TalentsRefDB = {
 					},
 				}, -- [2]
 			},
-			["Version"] = 42010,
+			["Version"] = 42560,
 		},
 		["SHAMAN"] = {
 			["Locale"] = "enUS",

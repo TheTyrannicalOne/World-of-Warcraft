@@ -1,6 +1,7 @@
 # Hekili
 
-## [v9.2.0-1.0.6a](https://github.com/Hekili/hekili/tree/v9.2.0-1.0.6a) (2022-03-03)
-[Full Changelog](https://github.com/Hekili/hekili/compare/v9.2.0-1.0.6...v9.2.0-1.0.6a) [Previous Releases](https://github.com/Hekili/hekili/releases)
+## [v9.2.0-1.0.8a](https://github.com/Hekili/hekili/tree/v9.2.0-1.0.8a) (2022-03-08)
+[Full Changelog](https://github.com/Hekili/hekili/compare/v9.2.0-1.0.8...v9.2.0-1.0.8a) [Previous Releases](https://github.com/Hekili/hekili/releases)
 
-- Remove Demonology debug print; make published versions less likely to show debug prints.  
+- Don't let Cache of Acquired Treasures break recommendations.  
+- Quick fixes to minimap menu and refresh rates.  

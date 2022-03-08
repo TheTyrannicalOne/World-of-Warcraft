@@ -1,11 +1,35 @@
 
 EncounterDetailsDB = {
+	["emotes"] = {
+		{
+			["boss"] = "Majordomo Executus",
+		}, -- [1]
+		{
+			["boss"] = "Majordomo Executus",
+		}, -- [2]
+		{
+			{
+				0.2049999999999272, -- [1]
+				"Reckless mortals! None may challenge the Sons of the Living flame!", -- [2]
+				"Majordomo Executus", -- [3]
+				7, -- [4]
+			}, -- [1]
+			{
+				4.22400000000016, -- [1]
+				"You think you've won already? Perhaps you'll need another lesson in pain!", -- [2]
+				"Majordomo Executus", -- [3]
+				7, -- [4]
+			}, -- [2]
+			["boss"] = "Majordomo Executus",
+		}, -- [3]
+	},
 	["encounter_spells"] = {
 		[19785] = {
 			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Sulfuron Harbinger",
 		},
@@ -27,6 +51,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lucifron",
 		},
+		[19497] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Firesworn",
+		},
 		[19771] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
@@ -45,6 +76,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lucifron",
 		},
+		[19516] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Garr",
+		},
 		[1604] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
@@ -57,6 +97,7 @@ EncounterDetailsDB = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Flamewaker Protector",
 		},
@@ -83,6 +124,7 @@ EncounterDetailsDB = {
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_DAMAGE"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
 			["source"] = "Ragnaros",
 		},
@@ -105,37 +147,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lucifron",
 		},
-		[19516] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[20228] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Garr",
+			["source"] = "Golemagg the Incinerator",
 		},
-	},
-	["emotes"] = {
-		{
-			["boss"] = "Majordomo Executus",
-		}, -- [1]
-		{
-			["boss"] = "Majordomo Executus",
-		}, -- [2]
-		{
-			{
-				0.2110000000102446, -- [1]
-				"Reckless mortals! None may challenge the Sons of the Living flame!", -- [2]
-				"Majordomo Executus", -- [3]
-				7, -- [4]
-			}, -- [1]
-			{
-				3.838000000003376, -- [1]
-				"You think you've won already? Perhaps you'll need another lesson in pain!", -- [2]
-				"Majordomo Executus", -- [3]
-				7, -- [4]
-			}, -- [2]
-			["boss"] = "Majordomo Executus",
-		}, -- [3]
 	},
 }

@@ -1,30 +1,6 @@
 
 ElvCharacterDB = {
-	["CliqueDatatext"] = {
-	},
 	["ChatHistoryLog"] = {
-		{
-			"{rt1} Stevehenry has prepared a |cff71d5ff|Hspell:29893:0|h[Create Soulwell]|h|r. {rt1}", -- [1]
-			"Ukah-Azralon", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Ukah-Azralon", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			136, -- [11]
-			"Player-3209-052298D3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cUkah-Azralon|r",
-			[51] = 1637283491,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [1]
 		{
 			"1/1 Doomwalker slain", -- [1]
 			"Zulbathal-Zul'jin", -- [2]
@@ -46,7 +22,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Zulbathal|r",
 			[51] = 1637283624,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [2]
+		}, -- [1]
 		{
 			"mass pls", -- [1]
 			"Ukah-Azralon", -- [2]
@@ -68,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cUkah-Azralon|r",
 			[51] = 1637283631,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [3]
+		}, -- [2]
 		{
 			"yay!", -- [1]
 			"Kaitryn-Eonar", -- [2]
@@ -90,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Kaitryn-Eonar|r",
 			[51] = 1637283642,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [4]
+		}, -- [3]
 		{
 			"ress", -- [1]
 			"Micaelly-Azralon", -- [2]
@@ -112,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMicaelly-Azralon|r",
 			[51] = 1637283645,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [5]
+		}, -- [4]
 		{
 			"ty for rez", -- [1]
 			"Manacake-Shandris", -- [2]
@@ -134,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaManacake-Shandris|r",
 			[51] = 1637283647,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [6]
+		}, -- [5]
 		{
 			"tyvm", -- [1]
 			"Ukah-Azralon", -- [2]
@@ -156,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cUkah-Azralon|r",
 			[51] = 1637283647,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [7]
+		}, -- [6]
 		{
 			"ty sir", -- [1]
 			"Oneillita-Thrall", -- [2]
@@ -178,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Oneillita-Thrall|r",
 			[51] = 1637283647,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [8]
+		}, -- [7]
 		{
 			"ty", -- [1]
 			"Foxxy-Wildhammer", -- [2]
@@ -200,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcFoxxy-Wildhammer|r",
 			[51] = 1637283651,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [9]
+		}, -- [8]
 		{
 			"Thanks", -- [1]
 			"Drayk-Feathermoon", -- [2]
@@ -222,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cDrayk-Feathermoon|r",
 			[51] = 1637283653,
 			[50] = "CHAT_MSG_RAID_LEADER",
-		}, -- [10]
+		}, -- [9]
 		{
 			"anyone wanna do doomwalker ?", -- [1]
 			"Duraksaur-Zul'jin", -- [2]
@@ -244,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcDuraksaur|r",
 			[51] = 1637396384,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
+		}, -- [10]
 		{
 			"no never / waiting for more people", -- [1]
 			"Holybullvine-Zul'jin", -- [2]
@@ -266,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Holybullvine|r",
 			[51] = 1637396412,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
+		}, -- [11]
 		{
 			"Domimae cast |cff71d5ff|Hspell:20707:0|h[Soulstone]|h|r -> Taefur", -- [1]
 			"Tydee-Tichondrius", -- [2]
@@ -288,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeTydee-Tichondrius|r",
 			[51] = 1637396439,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [13]
+		}, -- [12]
 		{
 			"can i get some water please", -- [1]
 			"Ekkio-Area52", -- [2]
@@ -310,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Ekkio-Area52|r",
 			[51] = 1637396446,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [14]
+		}, -- [13]
 		{
 			"Phreezrburn bakes a |cff71d5ff|Hspell:190336:0|h[Conjure Refreshment]|h|r", -- [1]
 			"Tydee-Tichondrius", -- [2]
@@ -332,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeTydee-Tichondrius|r",
 			[51] = 1637396460,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [15]
+		}, -- [14]
 		{
 			"ty", -- [1]
 			"Ekkio-Area52", -- [2]
@@ -354,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Ekkio-Area52|r",
 			[51] = 1637396467,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [16]
+		}, -- [15]
 		{
 			"Lust Detector: Cranos-Llane cast haste spell: |cff71d5ff|Hspell:272678:0|h[Primal Rage]|h|r on the party!! ", -- [1]
 			"Tydee-Tichondrius", -- [2]
@@ -376,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeTydee-Tichondrius|r",
 			[51] = 1637396506,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [17]
+		}, -- [16]
 		{
 			"Lust Detector: [HUNTER] Ardrinaa's Pet Used |cff71d5ff|Hspell:264667:0|h[Primal Rage]|h|rAnd increased +30% Haste on your party!", -- [1]
 			"Tydee-Tichondrius", -- [2]
@@ -398,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeTydee-Tichondrius|r",
 			[51] = 1637396507,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [18]
+		}, -- [17]
 		{
 			"Zephidel cast |cff71d5ff|Hspell:20707:0|h[Soulstone]|h|r -> Zephidel", -- [1]
 			"Tydee-Tichondrius", -- [2]
@@ -420,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeTydee-Tichondrius|r",
 			[51] = 1637396545,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [19]
+		}, -- [18]
 		{
 			"ty", -- [1]
 			"Jingu-Gilneas", -- [2]
@@ -442,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Jingu-Gilneas|r",
 			[51] = 1637396574,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [20]
+		}, -- [19]
 		{
 			"which draon of nightmare is up today?", -- [1]
 			"Darthis-Wildhammer", -- [2]
@@ -464,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaDarthis-Wildhammer|r",
 			[51] = 1638118232,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
+		}, -- [20]
 		{
 			"Feralas", -- [1]
 			"Karachun-Area52", -- [2]
@@ -486,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Karachun-Area52|r",
 			[51] = 1638118245,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
+		}, -- [21]
 		{
 			"ty", -- [1]
 			"Darthis-Wildhammer", -- [2]
@@ -508,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaDarthis-Wildhammer|r",
 			[51] = 1638118252,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
+		}, -- [22]
 		{
 			"---SUPER CHEAP SALE --- Wednesday to Monday 20:00 EST TIME SOD RAID  10/10  ! HEROIC  (375k for full run ) (130k per loot funnels  )!  >>> STORMRAGE COMMUNITY <<< GOLD ONLY !", -- [1]
 			"Letgoboost-Zul'jin", -- [2]
@@ -530,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeLetgoboost|r",
 			[51] = 1638118321,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
+		}, -- [23]
 		{
 			"Huokan Community || WTS M+ 10-20s with Armor Stack! || Buy 3x Key Deal at Discount || KSM Available || +20 Timed Portals  || Specific keys available upon request!! || Gold Only || DM for info!", -- [1]
 			"Muufu-Zul'jin", -- [2]
@@ -552,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaMuufu|r",
 			[51] = 1638118326,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
+		}, -- [24]
 		{
 			"WTS >>+15=115K<< +12=99K +10=69K +20TIMED=542k || VaultDeals 3x15=294k 3x12=225k || 15timed/specific(KSM)=124k(4 more) || 2+ base FREE ARMOR STACK || tazavesh n&hm || levelling 51-60 || torghast || sod h&m || DM Deals <3 Gold Only <Huokan>", -- [1]
 			"Nayruzj-Zul'jin", -- [2]
@@ -574,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaNayruzj|r",
 			[51] = 1638118354,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
+		}, -- [25]
 		{
 			"[SALE 27% OFF] SoD HC 10/10 raid + LOOT, Mythic +15-20 carry & other Boosts! BLACK FRIDAY: use coupon *WOW27* to get 27% discount tonight! We have over 16825 Trustpilot reviews. Visit WowVendor.com for more info! [SALE 27% OFF]", -- [1]
 			"Fylamuyn-Zul'jin", -- [2]
@@ -596,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Fylamuyn|r",
 			[51] = 1638118355,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
+		}, -- [26]
 		{
 			"<Polaris> Selling 10/10 Mythic SoD -  |cffffff00|Hachievement:15135:Player-61-0E8F0DC9:1:8:26:21:0:0:0:0|h[Cutting Edge: Sylvanas Windrunner]|h|r |cffa335ee|Hitem:186642::::::::60:268::6:1:3524:1:28:872:::::|h[Vengeance's Reins]|h|r - pst for dettails!", -- [1]
 			"Vengemonk-Zul'jin", -- [2]
@@ -618,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Vengemonk|r",
 			[51] = 1638118357,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
+		}, -- [27]
 		{
 			"---SPECIAL OFFER---  INTIME AND ALL LOOT TRADED JUST >>>M15+ for ONLY ___105k___/   2x200k  /    3x 295k /  M20 + 485k! Timed   /Keystone Master is available  and SOD Heroic & Mythic / Torghast / Tazavesh and more !! GOLD ONLY !!", -- [1]
 			"Stormbooster-Zul'jin", -- [2]
@@ -640,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Stormbooster|r",
 			[51] = 1638118381,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
+		}, -- [28]
 		{
 			"!!WTS M +15 115K!! <BUY 2 GET FREE LOOT STACK> l +14 110K l  l +12 99K l  l +10 69K l TIMED +20 KEY 542K !!SPECIAL DEAL ON 3 RUNS (3x15=294K(W/FUNNEL 303K))!! / WTS LEGION Time Walking / WTS TAZAVESH / HC SoD / TORGHAST / ONLY GOLD >HUOKAN COMMUNITY<", -- [1]
 			"Yelz-Zul'jin", -- [2]
@@ -662,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Yelz|r",
 			[51] = 1639329468,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
+		}, -- [29]
 		{
 			">>WTS M+0-20 || +15 -115k  ( BUY 2 GET FREE ARMOR STACK ) || 15 x 3 - 294K (WITH STACK 303k ) ||LEGION TIMEWALKING / 20Timed Key - 542K|| 14 - 110K || 12 - 99K || 10 - 69K ||  MYTHIC HEROIC SOD || Torghast|| Tazavesh|| GOLD ONLY || Huokan Community <", -- [1]
 			"Abellmoon-Zul'jin", -- [2]
@@ -684,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Abellmoon|r",
 			[51] = 1639329482,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
+		}, -- [30]
 		{
 			"[WТS] Sanctum of Domination HС Carry Tonight! Order a Trial run to test our service with no risks! Up to 12 guild runs daily. Get 239-246 ilvl gear and AOTC. We have over 17805 Trustpilot reviews. Visit WowVendor.org for more info!", -- [1]
 			"Hurnax-Zul'jin", -- [2]
@@ -706,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Hurnax|r",
 			[51] = 1640113113,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
+		}, -- [31]
 		{
 			"WTS CHEAP M+15 LEGION 200K//M+15 (115K)- SPECIAL DAY Deals BUY 2 and GET Free Looot funnel - DEALS X3+15(98k)+12 (99k)+10 (69k)+/ KEY TIMED +20(545K)/ torghast/tazavesh or hm/leveling 51-60/ SOD Full clear HC(375k)/AOTC(80K)/Only Gold/ Huokan COMMUNITY", -- [1]
 			"Odorlzuji-Zul'jin", -- [2]
@@ -728,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaOdorlzuji|r",
 			[51] = 1640113113,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
+		}, -- [32]
 		{
 			"WTB TANK OR HEALER FOR FAST QUEUE !!", -- [1]
 			"Jtestep-Zul'jin", -- [2]
@@ -750,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Jtestep|r",
 			[51] = 1640113123,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
+		}, -- [33]
 		{
 			"rank 1 wts 2s  carries, GOLD ONLY. come get 1400/1600/1800. pst", -- [1]
 			"Bukumxo-Zul'jin", -- [2]
@@ -772,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cBukumxo|r",
 			[51] = 1640113123,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
+		}, -- [34]
 		{
 			"WTS LEGION =200K  /TIMED +20=542k +key/+15=115K/+10=69k(x2 armor stack free)/+15x3=294k/+15x3+funnel=303k /  /+15 TIMED=126k / KSM deal (x4) 124k per key / +15x3 TIMED+FUNNEL =372K  / M SOD / H SOD =  375k AOTC = 80k / Tazavesh /  Huokan / gold/  :)", -- [1]
 			"Kachïnsales-Zul'jin", -- [2]
@@ -794,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cKachïnsales|r",
 			[51] = 1640113131,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
+		}, -- [35]
 		{
 			"Make |cffffd100|HclubFinder:ClubFinder-1-289318-61-103871552|h[Guild: Winter Wyverns]|h|r your home! We are very active & ALL ARE WELCOME - esp. if you are slightly crazy, sick sense of humor, & don't mind when the GM healer lets you die. Pst to join..", -- [1]
 			"Tyralynn-Zul'jin", -- [2]
@@ -816,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Tyralynn|r",
 			[51] = 1640113132,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
+		}, -- [36]
 		{
 			"WTS torghast layer 1-12 (5gems/speed) quick runs gold only", -- [1]
 			"Sordon-Zul'jin", -- [2]
@@ -838,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSordon|r",
 			[51] = 1640113149,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
+		}, -- [37]
 		{
 			"Oh so you can still do lfg timewalking but not keystone timewalking?", -- [1]
 			"Tse-Zul'jin", -- [2]
@@ -860,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Tse|r",
 			[51] = 1640113155,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
+		}, -- [38]
 		{
 			"----BIG SALE----  M15+ TIMED + Free SPECIFIC key ---- 125k ---|cffffff00|Hachievement:15078:Player-57-0D20C9ED:1:8:6:21:4294967295:4294967295:4294967295:4294967295|h[Shadowlands Keystone Master: Season Two]|h|r--- M20+ Timed --- 485k--- Gold Only--", -- [1]
 			"Boostmebaby-Zul'jin", -- [2]
@@ -882,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Boostmebaby|r",
 			[51] = 1641392000,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
+		}, -- [39]
 		{
 			"!!WTS +15 Only>>115k>(BUY 2 GET FREE ARMOR STACK) 15x3-98k (WITH STACK 102K) +20 TIMED+KEY SPECIFIC 489K /+14 110K /+12 99k /+10 69K />WTS LEGION KEYS<(SPECIAL DEALS FOR 3 RUNS)!!WTS TAZAVESH<WTS SoD><TORGHAST<RENOWN FARM>/ONLY GOLD>HUOKAN COMMUNITY<<", -- [1]
 			"Dulcesales-Zul'jin", -- [2]
@@ -904,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Dulcesales|r",
 			[51] = 1641392009,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
+		}, -- [40]
 		{
 			"just a heads up Zekedeals is a scammer. Feel free to ignore him", -- [1]
 			"Ràting-Zul'jin", -- [2]
@@ -926,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Ràting|r",
 			[51] = 1642866360,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
+		}, -- [41]
 		{
 			"WowVendor is running a GIVEAWAY for the community! ♥ Join now and have a chance to win a Razer Headset or Mouse, Balance Gift Cards & WoW Store Mounts! Visit ► WowVendor.com/RAFFLE and enter before the giveaway ends on January 23!☻", -- [1]
 			"Choondyn-Zul'jin", -- [2]
@@ -948,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Choondyn|r",
 			[51] = 1642866360,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [42]
 		{
 			"[WTS]//PvP Boost//  1800 Rival// ,2100 Duelist//, //2400 Glad + Mount //KSM AOTC// GOLD ONLY", -- [1]
 			"Zekedeals-Zul'jin", -- [2]
@@ -970,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edZekedeals|r",
 			[51] = 1642866362,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [43]
 		{
 			"> Wts +15  109k  Buy 2 Get FREE Loot Funnel <  || 3x15 armor stacks 96k each ||  +20 472k TIMED  ||  10/10 SOD  295k || Mythic Sylvanas + Mount   || TORGHAST FARM || HUOKAN GOLD ONLY", -- [1]
 			"Azapriest-Zul'jin", -- [2]
@@ -992,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeAzapriest|r",
 			[51] = 1642866372,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [44]
 		{
 			"WTS CHEAP M0+ -27//M+15 (109K)- SPECIAL DAY Deals BUY 2 and GET Free Looot funnel -DEALS X3+15(93k)+12 (99k)+10 (69k)+/ KEY TIMED +20(472K)/ torghast/tazavesh or hm/leveling 51-60/ SOD Full clear HC(330k)/AOTC(59K)/Only Gold/ Huokan COMMUNITY", -- [1]
 			"Odorlzuji-Zul'jin", -- [2]
@@ -1014,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaOdorlzuji|r",
 			[51] = 1642980552,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [45]
 		{
 			"WowVendor is running a GIVEAWAY for the community! ♥ Join now and have a chance to win a Razer Headset or Mouse, Balance Gift Cards & WoW Store Mounts! Visit ► WowVendor.com/RAFFLE and enter before the giveaway ends on January 23!☻", -- [1]
 			"Choondyn-Zul'jin", -- [2]
@@ -1036,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Choondyn|r",
 			[51] = 1642980559,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [46]
 		{
 			"WTS M+ 10-25||Buy 2 &Free Armor Stack||M15 109k||M12 99k||M10 69k||& |cff66bbff|Hjournal:0:1193:14|h[Sanctum of Domination]|h|r (10/10) Heroic 295K & Sylvanas Heroic 59K Only ||Tazavesh HardMode 189k||PvP Boosts||Legacy Raids||RENOWN Farm||GOLD ONLY||", -- [1]
 			"Tipsysales-Zul'jin", -- [2]
@@ -1058,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Tipsysales|r",
 			[51] = 1642980565,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [47]
 		{
 			"<NOVA>  WTS 10/10 SoD Heroic @ 8:30pm est!!! = 280k ||  5 cloth = 930k ||  Discord Verify || Gold Only  /w for info", -- [1]
 			"Lillynova-Zul'jin", -- [2]
@@ -1080,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edLillynova|r",
 			[51] = 1642980571,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [48]
 		{
 			"WTS  full clear SOD H 295k funnel available  << +15 = 109k >> Buy two and get free lootfunnel || x3 +15s each 93k ||  Portal offer mythic 20s time gurantee specfic key 472 k || Torghast|| Tazavesh ||Legacy Run  || PVP 2v2 or 3v3 || M SOD || 15-27 keys", -- [1]
 			"Pikal-Zul'jin", -- [2]
@@ -1102,7 +1078,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcPikal|r",
 			[51] = 1642980571,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [49]
 		{
 			"SellingM+0 to27 >> (+15=109k)(BUY 2 FREE ARMOR STACK) 15X3RUN - 93K (FUNNEL 96K) / TAZAVESH (Hard)/ TORGHAST (UNLOCK/SPAM)/ SOD M/H /51-60 LEVELING/ PVP BOOSTING (GOLD ONLY) HUOKAN COMMUNITY ", -- [1]
 			"Westlifebabe-Zul'jin", -- [2]
@@ -1124,7 +1100,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Westlifebabe|r",
 			[51] = 1642980578,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [50]
 		{
 			"<<WTS>> HAVE THE BEST PRICES--> +20 timed =472k, +15 109k,  3x 93K each one,   <Mythic 0-27s  Keys BIG DEALS  !> KSM < POWER LEVELING 51-60 ! > <<RAID N/H/M>> >BUY 2 AND GET FREE ARMOR STACK> < < TORGHAST & TC > GOLD ONLY < Huokan boosting, DM ME ", -- [1]
 			"Bigdëals-Zul'jin", -- [2]
@@ -1146,7 +1122,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeBigdëals|r",
 			[51] = 1642980581,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [51]
 		{
 			"DEAL: SPECIFIC KEY 20+ TIMED 472k || KEYS +10--+26 |||| m15+ONLY 109k  -->> BUY 2 GET FREE ARMOR STACK>> M14 =110K || M12= 99K || M10=69K || Bundles: 3x M15  93k ea|| 3x M14 84k ea ||KSM DEAL|| SOD HC/M || TORGHAST / TC || LeveL ||GOLD ONLY>>HUOKAN<<", -- [1]
 			"Gamerstyle-Zul'jin", -- [2]
@@ -1168,7 +1144,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcGamerstyle|r",
 			[51] = 1643164073,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [52]
 		{
 			"WTS FULL HEROIC RUN |cff66bbff|Hjournal:0:1193:14|h[Sanctum of Domination]|h|rFast and smooth run. Closest raid 11:00PM SERVER TIME! JUST FEW SPOTS LEFT!Get your 239+ iLvl gear TONIGHT !Discord verify! BEST PRICE!  /w me for more info!", -- [1]
 			"Pertik-Zul'jin", -- [2]
@@ -1190,7 +1166,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Pertik|r",
 			[51] = 1643164090,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [53]
 		{
 			"WTS  full clear SOD H 295k  << +15 = 109k >> Buy two and get free lootfunnel || x3 +15s each 93k ||  Portal offer mythic 20s time gurante specfic key 472 k || Torghast|| Tazavesh ||Legacy Run  || PVP 2v2 or 3v3 || M SOD sylvanas + mount || 15-27 keys", -- [1]
 			"Pikal-Zul'jin", -- [2]
@@ -1212,7 +1188,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcPikal|r",
 			[51] = 1643164096,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [54]
 		{
 			"[WТS] Mythic +15-20 fast CARRY now. Order a Trial run to test our service with no risks! Runs start every hour. Get ilvl 233-252+ Gear, Rating, and KSM Season 2. We have over 18207 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Choondyn-Zul'jin", -- [2]
@@ -1234,7 +1210,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Choondyn|r",
 			[51] = 1643164099,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [55]
 		{
 			">>WTS<< The best services for you +M15 up high keys - Torghast - Leveling - Pvp - Dm for more info only gold", -- [1]
 			"Cronchi-Zul'jin", -- [2]
@@ -1256,7 +1232,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Cronchi|r",
 			[51] = 1644616242,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [56]
 		{
 			"May I please have |cff0070dd|Hitem:143908::::::::51:102::22:1:7464:2:28:181:9:60:::::|h[Choker of the Pure Heart]|h|r if you don't need it?", -- [1]
 			"Bigmouthbite-Zul'jin", -- [2]
@@ -1278,7 +1254,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Bigmouthbite|r",
 			[51] = 1644681615,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [58]
+		}, -- [57]
 		{
 			"<Pepo Squad> Mythic experienced GUILD offers Sanctum of Domination HC & MM Boosts. The next Heroic raid is starting in a few hours. W/me for info", -- [1]
 			"Ifydelyxe-Zul'jin", -- [2]
@@ -1300,7 +1276,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cIfydelyxe|r",
 			[51] = 1644788986,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [58]
 		{
 			"level 1s arent running me through shit", -- [1]
 			"Verrietche-Zul'jin", -- [2]
@@ -1322,7 +1298,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Verrietche|r",
 			[51] = 1644788988,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [59]
 		{
 			"Yeah level 1s and 10s = instant report. Sorry did the valentine stuff. ", -- [1]
 			"Adarariams-Zul'jin", -- [2]
@@ -1344,7 +1320,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Adarariams|r",
 			[51] = 1644789014,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [60]
 		{
 			"interesting", -- [1]
 			"Monkmanguy-Zul'jin", -- [2]
@@ -1366,7 +1342,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Monkmanguy|r",
 			[51] = 1644789031,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [61]
 		{
 			"im farming charms :(", -- [1]
 			"Monkmanguy-Zul'jin", -- [2]
@@ -1388,7 +1364,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Monkmanguy|r",
 			[51] = 1644789045,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [62]
 		{
 			"hes not reporting you for being level 10 - hes reporting people selling runs below level 60", -- [1]
 			"Verrietche-Zul'jin", -- [2]
@@ -1410,7 +1386,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Verrietche|r",
 			[51] = 1644789065,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [63]
 		{
 			"ohhh", -- [1]
 			"Monkmanguy-Zul'jin", -- [2]
@@ -1432,7 +1408,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Monkmanguy|r",
 			[51] = 1644789071,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [64]
 		{
 			"<Adequate> 10/10M guild on Zul'jin WTS 15 - 20 keys and Tazavesh! Msg if interested :)", -- [1]
 			"Kavena-Zul'jin", -- [2]
@@ -1454,7 +1430,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcKavena|r",
 			[51] = 1644789085,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [65]
 		{
 			"okay thats gods work then", -- [1]
 			"Monkmanguy-Zul'jin", -- [2]
@@ -1476,7 +1452,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Monkmanguy|r",
 			[51] = 1644789087,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [66]
 		{
 			"nah we just gotta report all level 10's everywhere, can't trust them, they're up to something", -- [1]
 			"Shartah-Zul'jin", -- [2]
@@ -1498,7 +1474,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Shartah|r",
 			[51] = 1644789105,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [67]
 		{
 			"<Blame the Hunter> is an 18+ guild that is looking for DPS and heals for next tier.   We are an AOTC minded guild.  10/10H.  Raid times: Tue @ 7-10pm EST & Sat 3-6pm EST. We do M+ & fun events like drunken pvp. Casuals welcome.", -- [1]
 			"Vidic-Zul'jin", -- [2]
@@ -1520,7 +1496,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edVidic|r",
 			[51] = 1644789108,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [68]
 		{
 			"0_0", -- [1]
 			"Monkmanguy-Zul'jin", -- [2]
@@ -1542,7 +1518,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Monkmanguy|r",
 			[51] = 1644789115,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [69]
 		{
 			"yeah, level 10s should just be 60 already, wtf haha", -- [1]
 			"Verrietche-Zul'jin", -- [2]
@@ -1564,7 +1540,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Verrietche|r",
 			[51] = 1644789124,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [70]
 		{
 			"I'm glad I never have to look at valentines day again cause I paid so much money to get all thet toys", -- [1]
 			"Shartah-Zul'jin", -- [2]
@@ -1586,7 +1562,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Shartah|r",
 			[51] = 1644789137,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [71]
 		{
 			"rank 1 wts 2s/3s  carries, GOLD ONLY. come get 1400/1600/1800/2100/2400+gladiator. pst", -- [1]
 			"Trillwarr-Zul'jin", -- [2]
@@ -1608,7 +1584,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cTrillwarr|r",
 			[51] = 1644886096,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [72]
 		{
 			"1", -- [1]
 			"Dilligad-Zul'jin", -- [2]
@@ -1630,7 +1606,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDilligad|r",
 			[51] = 1644886126,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [73]
 		{
 			"WTB Lightless Silk 7g each Shrouded Cloth1g each Eternal Crystal100g each Sacred Shard 25g each buying in bulk pst or cod ty in advance", -- [1]
 			"Dilligad-Zul'jin", -- [2]
@@ -1652,7 +1628,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edDilligad|r",
 			[51] = 1644886128,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [74]
 		{
 			"wts m+15 timed // all loot for you // pst", -- [1]
 			"Syld-Zul'jin", -- [2]
@@ -1674,7 +1650,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeSyld|r",
 			[51] = 1644891686,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [75]
 		{
 			"WTS +15-20 keys / Earn your Hero's Path: Shadowlands Portals / 2.9k io group, quick n easy :) PST! GOLD ONLY", -- [1]
 			"Snooshuu-Zul'jin", -- [2]
@@ -1696,7 +1672,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSnooshuu|r",
 			[51] = 1644982511,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [76]
 		{
 			"<MythoClast> 5/10 M, Looking for DPS/heals who are looking to get into our  mythic  9.2 Roster.  Raid times are Sun/Mon 8EST-11EST. Pst for more info.", -- [1]
 			"Rizzloe-Zul'jin", -- [2]
@@ -1718,7 +1694,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcRizzloe|r",
 			[51] = 1644982547,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [77]
 		{
 			"Looking for someone who can buy me a transfer and faction change service .ive got an amazing mindblowing offer that im sure u wont be able to pass.pst for extra information to find out what it is.", -- [1]
 			"Sardugg-Zul'jin", -- [2]
@@ -1740,7 +1716,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cSardugg|r",
 			[51] = 1644982595,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [78]
 		{
 			"WTS +15-20 keys / Earn your Hero's Path: Shadowlands Portals / 2.9k io group, quick n easy :) PST! GOLD ONLY", -- [1]
 			"Snooshuu-Zul'jin", -- [2]
@@ -1762,7 +1738,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSnooshuu|r",
 			[51] = 1644982719,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [79]
 		{
 			"WTS M+15 with my group. only gold. If you are interested, whisper to me.|cffffd100|HdungeonScore:2416:Player-61-0EA666F4:Huntertøny:3:253:60:412:375:1:20:376:1:21:377:1:20:378:1:20:379:1:20:380:1:20:381:1:20:382:1:20|h[Mythic+ Rating]|h|r", -- [1]
 			"Huntertøny-Zul'jin", -- [2]
@@ -1784,7 +1760,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Huntertøny|r",
 			[51] = 1645073411,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [80]
 		{
 			"Vae Victae is a casual raiding guild that has been together for 10+ years. We are currently recruiting  for our heroic raid team for the  next raid tier. We raid T/W/T 1045-1 Server time.. Wsp me for more info", -- [1]
 			"Bashbrother-Zul'jin", -- [2]
@@ -1806,7 +1782,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edBashbrother|r",
 			[51] = 1645073435,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [81]
 		{
 			"« Maple Story 10/10 hm » recrute un HEAL pour la 9.2 , On raid le Vendredi 21hrs à minuit & Dimanche 19h30 à 22h30. ", -- [1]
 			"Peluche-Zul'jin", -- [2]
@@ -1828,7 +1804,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Peluche|r",
 			[51] = 1645224738,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [82]
 		{
 			"WTS M+15 with my team. only gold. If you are interested, whisper to me.|cffffd100|HdungeonScore:2416:Player-61-0EA666F4:Huntertøny:3:253:60:419:375:1:20:376:1:21:377:1:20:378:1:20:379:1:20:380:1:20:381:1:20:382:1:20|h[Mythic+ Rating]|h|r", -- [1]
 			"Huntertøny-Zul'jin", -- [2]
@@ -1850,7 +1826,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Huntertøny|r",
 			[51] = 1645224822,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [83]
 		{
 			"Resto sham lf mythic raiding guild for 9.2 pst", -- [1]
 			"Grihpme-Zul'jin", -- [2]
@@ -1872,7 +1848,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcGrihpme|r",
 			[51] = 1645224868,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [84]
 		{
 			"« Maple Story 10/10 hm » recrute un HEAL pour la 9.2 , On raid le Vendredi 21hrs à minuit & Dimanche 19h30 à 22h30. ", -- [1]
 			"Peluche-Zul'jin", -- [2]
@@ -1894,7 +1870,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Peluche|r",
 			[51] = 1645224871,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [85]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-236044-61-93540548|h[Guild: Clan of the Silver Rings]|h|r 10/10H SoD - CE Mythic/KSM led progression guild looking for fun/dedicated players to work patiently together for raid/M+ heading into 9.2 Raiding on Tue/Fri 9-12 EST Chill and fun - social players also welcome!", -- [1]
 			"Thanatoseus-Zul'jin", -- [2]
@@ -1916,7 +1892,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Thanatoseus|r",
 			[51] = 1645224893,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [86]
 		{
 			"how do i change one of the secondary stats on my legendary ?", -- [1]
 			"Chamuze-Zul'jin", -- [2]
@@ -1938,7 +1914,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Chamuze|r",
 			[51] = 1645224905,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [87]
 		{
 			"remake it", -- [1]
 			"Vyndakiedis-Zul'jin", -- [2]
@@ -1960,7 +1936,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Vyndakiedis|r",
 			[51] = 1645224929,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [88]
 		{
 			"unfortunately that's how.  you can break it down and get some mats back", -- [1]
 			"Slimmus-Zul'jin", -- [2]
@@ -1982,7 +1958,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Slimmus|r",
 			[51] = 1645225001,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [89]
 		{
 			"WTS M+15 with my team. only gold. If you are interested, whisper to me.|cffffd100|HdungeonScore:2416:Player-61-0EA666F4:Huntertøny:3:253:60:419:375:1:20:376:1:21:377:1:20:378:1:20:379:1:20:380:1:20:381:1:20:382:1:20|h[Mythic+ Rating]|h|r", -- [1]
 			"Huntertøny-Zul'jin", -- [2]
@@ -2004,7 +1980,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Huntertøny|r",
 			[51] = 1645225104,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [90]
 		{
 			"Any reason why weakauras wont show after you close the settings panel?", -- [1]
 			"Sounds-Zul'jin", -- [2]
@@ -2026,7 +2002,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeSounds|r",
 			[51] = 1645225216,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [91]
 		{
 			"WTS 20-26 keys gold only. Play with my 2900+ IO friends and myself! PST for more information! [Mythic+ Rating]", -- [1]
 			"Bravden-Zul'jin", -- [2]
@@ -2048,7 +2024,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaBravden|r",
 			[51] = 1645225426,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [92]
 		{
 			"<Preeminent>10/10 H Casual guild recruiting mage is who are interested in N/H raiding & M+ with like minded people in 9.2 Must be active, have raid experience and be able to meet raid times. Raid times Fri 8:30pm-11:30pm EST / Sun 7-9pm EST.", -- [1]
 			"Weaksàs-Zul'jin", -- [2]
@@ -2070,7 +2046,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cWeaksàs|r",
 			[51] = 1645225477,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [93]
 		{
 			"<preeminent> is looking for a dedicated mage for 9.2 N/H raiding and mythic+ content PM for details", -- [1]
 			"Hophots-Zul'jin", -- [2]
@@ -2092,7 +2068,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Hophots|r",
 			[51] = 1645363488,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [94]
 		{
 			"<Overtuned> AOTC focused guild. We're an adult semi-casual Guild looking for 1 Tank and 1 Healer, preff holy pally and some strong dps for our main roster come 9.2 10/10H SoD. Raid times Thur/Fri 7-10pm EST", -- [1]
 			"Galacius-Zul'jin", -- [2]
@@ -2114,7 +2090,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeGalacius|r",
 			[51] = 1645363553,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [95]
 		{
 			"resto shaman holy pally and hunter LF raiding guild 2 times a week heroic  pst", -- [1]
 			"Impúlse-Zul'jin", -- [2]
@@ -2136,7 +2112,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcImpúlse|r",
 			[51] = 1645398765,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [96]
 		{
 			"<preeminent> is looking for a dedicated mage for 9.2 N/H raiding and mythic+ content PM for details", -- [1]
 			"Hophots-Zul'jin", -- [2]
@@ -2158,7 +2134,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Hophots|r",
 			[51] = 1645398766,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [97]
 		{
 			"just put some on the AH for ya :D", -- [1]
 			"Darthverm-Zul'jin", -- [2]
@@ -2180,29 +2156,53 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Darthverm|r",
 			[51] = 1646075093,
 			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"wts |cffa335ee|Hitem:190735::::::::10:71::::1:28:2169:::::|h[Varruth's Guillotine]|h|r cheaper that ah - Pst.", -- [1]
+			"Altrightbank-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Altrightbank-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			29, -- [11]
+			"Player-61-0D8BC5C2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cAltrightbank|r",
+			[51] = 1646607336,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},
+	["ConvertKeybindings"] = true,
 	["ChatEditHistory"] = {
 		"/cancelform", -- [1]
-		"/wAVE", -- [2]
-		"/wave", -- [3]
-		"/click extraaddonbutton1", -- [4]
-		"/fishingbuddy", -- [5]
-		"/allthethings", -- [6]
-		"/reload", -- [7]
+		"/canimogit", -- [2]
+		"/reloadui", -- [3]
+		"/p cant it says an invite pending", -- [4]
+		"/allthethings", -- [5]
+		"/fishingbuddy", -- [6]
+		"/skada toggle", -- [7]
 		"/dance", -- [8]
-		"/omnicc", -- [9]
-		"/skada toggle", -- [10]
-		"/omen", -- [11]
-		"/reloadui", -- [12]
-		"/p cant it says an invite pending", -- [13]
+		"/omen", -- [9]
+		"/opie", -- [10]
+		"/omnicc", -- [11]
+		"/wave", -- [12]
+		"/p weird", -- [13]
 		"/invite melene-bladefist", -- [14]
 		"/skada hide", -- [15]
-		"/opie", -- [16]
-		"/canimogit", -- [17]
+		"/reload", -- [16]
+		"/wAVE", -- [17]
 		"/invite melene-blackhand", -- [18]
-		"/p weird", -- [19]
+		"/click extraaddonbutton1", -- [19]
 		"/click ExtraActionButton1", -- [20]
 	},
-	["ConvertKeybindings"] = true,
+	["CliqueDatatext"] = {
+	},
 }

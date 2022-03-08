@@ -504,132 +504,117 @@ do
                 -- Add specialization toggles where applicable.
                 for i, spec in pairs( Hekili.Class.specs ) do
                     if i > 0 then
-                        local titled = false
+                        insert( menuData, {
+                            isSeparator = 1,
+                            hidden = function () return Hekili.State.spec.id ~= i end,
+                        } )
+                        insert( menuData, {
+                            isTitle = 1,
+                            text = spec.name,
+                            notCheckable = 1,
+                            hidden = function () return Hekili.State.spec.id ~= i end,
+                        } )
+                        insert( menuData, {
+                            text = "Recommend Target Swaps",
+                            func = function ()
+                                Hekili.DB.profile.specs[ i ].cycle = not Hekili.DB.profile.specs[ i ].cycle
+                                if Hekili.DB.profile.notifications.enabled then
+                                    Hekili:Notify( "Recommend Target Swaps: " .. ( Hekili.DB.profile.specs[ i ].cycle and "ON" or "OFF" ) )
+                                else
+                                    self:Print( "Recommend Target Swaps: " .. ( Hekili.DB.profile.specs[ i ].cycle and " |cFF00FF00ENABLED|r." or " |cFFFF0000DISABLED|r." ) )
+                                end
+                            end,
+                            checked = function ()
+                                return Hekili.DB.profile.specs[ i ].cycle
+                            end,
+                            hidden = function () return Hekili.State.spec.id ~= i end,
+                        } )
+
     
                         -- Check for Toggles.
                         for n, setting in pairs( spec.settings ) do
-                            if setting.info.type == "toggle" then
-                                if not titled then
-                                    insert( menuData, { 
-                                        isSeparator = 1,
-                                        hidden = function () return Hekili.State.spec.id ~= i end,
-                                    } )
+                            if not setting.info.arg or setting.info.arg() then
+                                if setting.info.type == "toggle" then
                                     insert( menuData, {
-                                        isTitle = 1,
-                                        text = spec.name,
-                                        notCheckable = 1,
+                                        text = setting.info.name,
+                                        func = function ()
+                                            menu.args[1] = setting.name
+                                            setting.info.set( menu.args, not setting.info.get( menu.args ) )
+
+                                            if Hekili.DB.profile.notifications.enabled then
+                                                Hekili:Notify( setting.info.name .. ": " .. ( setting.info.get( menu.args ) and "ON" or "OFF" ) )
+                                            else
+                                                self:Print( setting.info.name .. ": " .. ( setting.info.get( menu.args ) and " |cFF00FF00ENABLED|r." or " |cFFFF0000DISABLED|r." ) )
+                                            end
+                                        end,
+                                        checked = function ()
+                                            menu.args[1] = setting.name
+                                            return setting.info.get( menu.args )
+                                        end,
                                         hidden = function () return Hekili.State.spec.id ~= i end,
                                     } )
-                                    titled = true
-                                end
 
-                                insert( menuData, {
-                                    text = setting.info.name,
-                                    func = function ()
-                                        menu.args[1] = setting.name
-                                        setting.info.set( menu.args, not setting.info.get( menu.args ) )
+                                elseif setting.info.type == "select" then
+                                    local submenu = {
+                                        text = setting.info.name,
+                                        hasArrow = true,
+                                        menuList = {},
+                                        notCheckable = true,
+                                        hidden = function () return Hekili.State.spec.id ~= i end,
+                                    }
 
-                                        if Hekili.DB.profile.notifications.enabled then
-                                            Hekili:Notify( setting.info.name .. ": " .. ( setting.info.get( menu.args ) and "ON" or "OFF" ) )
-                                        else
-                                            self:Print( setting.info.name .. ": " .. ( setting.info.get( menu.args ) and " |cFF00FF00ENABLED|r." or " |cFFFF0000DISABLED|r." ) )
+                                    local values = setting.info.values
+                                    if type( values ) == "function" then values = values() end
+
+                                    if values then
+                                        for k, v in orderedPairs( values ) do
+                                            insert( submenu.menuList, {
+                                                text = v,
+                                                func = function ()
+                                                    menu.args[1] = setting.name
+                                                    setting.info.set( menu.args, k )
+                                                    
+                                                    for k, v in pairs( Hekili.DisplayPool ) do
+                                                        v:OnEvent( "HEKILI_MENU" )
+                                                    end
+                                                end,
+                                                checked = function ()
+                                                    menu.args[1] = setting.name
+                                                    return setting.info.get( menu.args ) == k
+                                                end,
+                                                hidden = function () return Hekili.State.spec.id ~= i end,
+                                            } )
                                         end
-                                    end,
-                                    checked = function ()
-                                        menu.args[1] = setting.name
-                                        return setting.info.get( menu.args )
-                                    end,
-                                    hidden = function () return Hekili.State.spec.id ~= i end,
-                                } )
+                                    end
 
-                            elseif setting.info.type == "select" then
-                                if not titled then
-                                    insert( menuData, { 
-                                        isSeparator = 1,
+                                    insert( menuData, submenu )
+
+                                elseif setting.info.type == "range" and setting.info.step == 1 and ( ( setting.info.max or 999 ) - ( setting.info.min or -999 ) ) < 30 then
+                                    local submenu = {
+                                        text = setting.info.name,
+                                        hasArrow = true,
+                                        menuList = {},
+                                        notCheckable = true,
                                         hidden = function () return Hekili.State.spec.id ~= i end,
-                                    } )
-                                    insert( menuData, {
-                                        isTitle = 1,
-                                        text = spec.name,
-                                        notCheckable = 1,
-                                        hidden = function () return Hekili.State.spec.id ~= i end,
-                                    } )
-                                    titled = true
-                                end
+                                    }
 
-                                local submenu = {
-                                    text = setting.info.name,
-                                    hasArrow = true,
-                                    menuList = {},
-                                    notCheckable = true,
-                                    hidden = function () return Hekili.State.spec.id ~= i end,
-                                }
-
-                                local values = setting.info.values
-                                if type( values ) == "function" then values = values() end
-
-                                if values then
-                                    for k, v in orderedPairs( values ) do
+                                    for j = setting.info.min, setting.info.max do
                                         insert( submenu.menuList, {
-                                            text = v,
+                                            text = tostring( j ),
                                             func = function ()
                                                 menu.args[1] = setting.name
-                                                setting.info.set( menu.args, k )
-                                                
-                                                for k, v in pairs( Hekili.DisplayPool ) do
-                                                    v:OnEvent( "HEKILI_MENU" )
-                                                end
+                                                setting.info.set( menu.args, j )
                                             end,
                                             checked = function ()
                                                 menu.args[1] = setting.name
-                                                return setting.info.get( menu.args ) == k
+                                                return setting.info.get( menu.args ) == j
                                             end,
                                             hidden = function () return Hekili.State.spec.id ~= i end,
                                         } )
                                     end
+
+                                    insert( menuData, submenu )
                                 end
-
-                                insert( menuData, submenu )
-
-                            elseif setting.info.type == "range" and setting.info.step == 1 and ( ( setting.info.max or 999 ) - ( setting.info.min or -999 ) ) < 30 then
-                                if not titled then
-                                    insert( menuData, { 
-                                        isSeparator = 1,
-                                        hidden = function () return Hekili.State.spec.id ~= i end,
-                                    } )
-                                    insert( menuData, {
-                                        isTitle = 1,
-                                        text = spec.name,
-                                        notCheckable = 1,
-                                        hidden = function () return Hekili.State.spec.id ~= i end,
-                                    } )
-                                    titled = true
-                                end
-
-                                local submenu = {
-                                    text = setting.info.name,
-                                    hasArrow = true,
-                                    menuList = {},
-                                    notCheckable = true,
-                                    hidden = function () return Hekili.State.spec.id ~= i end,
-                                }
-
-                                --[[ for j = setting.info.min, setting.info.max do
-                                    insert( submenu.menuList, {
-                                        text = tostring( j ),
-                                        func = function ()
-                                            menu.args[1] = setting.name
-                                            setting.info.set( menu.args, j )
-                                        end,
-                                        checked = function ()
-                                            menu.args[1] = setting.name
-                                            return setting.info.get( menu.args ) == j
-                                        end,
-                                        hidden = function () return Hekili.State.spec.id ~= i end,
-                                    } )                                        
-                                end ]]
-
-                                insert( menuData, submenu )
                             end
                         end
                     end
@@ -1008,7 +993,7 @@ do
                     b.Action = action
                     b.Text = caption
                     b.Indicator = indicator
-                    b.Keybind = keybind                    
+                    b.Keybind = keybind
                     b.Ability = ability
                     b.ExactTime = b.Recommendation.exact_time
                 end
@@ -1031,11 +1016,11 @@ do
                 local thread = self.activeThread
                 
                 if thread or not Hekili.Pause then
-                    self.refreshRate = self.refreshRate or 0.1
-                    self.combatRate = self.combatRate or 0.5
+                    self.refreshRate = self.refreshRate or 0.5
+                    self.combatRate = self.combatRate or 0.1
 
                     -- If there's no thread, then see if we have a reason to update.
-                    if  ( not thread or self.superUpdate ) and Hekili.freshFrame and self.refreshTimer > ( self.criticalUpdate and self.combatRate or self.refreshRate ) then
+                    if not thread and Hekili.freshFrame and self.refreshTimer > ( self.criticalUpdate and self.combatRate or self.refreshRate ) then
                         self.superUpdate = false
 
                         self.activeThread = coroutine.create( Hekili.Update )
@@ -1228,7 +1213,7 @@ do
                                 end
         
                                 if i == 1 and conf.delays.fade then
-                                    local delay = b.ExactTime - now            
+                                    local delay = b.ExactTime and ( b.ExactTime - now ) or 0
                                     local moment = 0
         
                                     local init, duration = 0, 0
@@ -1252,7 +1237,7 @@ do
                                     if delay > moment + 0.05 then
                                         unusable = true
                                     end
-                                end    
+                                end
         
                                 if unusable and not b.unusable then
                                     b.Texture:SetVertexColor(0.4, 0.4, 0.4, 1.0)
@@ -1272,6 +1257,7 @@ do
                 
                 if conf.flash.enabled and LSF then
                     self.flashTimer = self.flashTimer - elapsed
+                    self.flashWarnings = self.flashWarnings or {}
         
                     local a = self.Buttons[ 1 ].Action
                     local changed = self.lastFlash ~= a
@@ -1290,10 +1276,21 @@ do
         
                         if ability.item then
                             local iname = LSF.ItemName( ability.item )
-                            LSF.FlashItem( iname, self.flashColor, conf.flash.size, conf.flash.brightness, conf.flash.blink, nil, conf.flash.texture )
+                            if LSF.Flashable( iname ) then
+                                LSF.FlashItem( iname, self.flashColor, conf.flash.size, conf.flash.brightness, conf.flash.blink, nil, conf.flash.texture )
+                            elseif conf.flash.suppress and not self.flashWarnings[ iname ] then
+                                self.flashWarnings[ iname ] = true
+                                Hekili:Print( "|cff000000WARNING|r - Could not flash recommended item '" .. iname .. "' (" .. self.id .. ")." )
+                            end
                         else
-                            if ability.flash then
-                                LSF.FlashAction( ability.flash, self.flashColor )
+                            local aFlash = ability.flash
+                            if aFlash then
+                                if LSF.Flashable( aFlash ) then
+                                    LSF.FlashAction( aFlash, self.flashColor )
+                                elseif conf.flash.suppress and not self.flashWarnings[ aFlash ] then
+                                    self.flashWarnings[ aFlash ] = true
+                                    Hekili:Print( "|cff000000WARNING|r - Could not flash recommended action '" .. aFlash .. "' (" .. self.id .. ")." )
+                                end
                             else
                                 local id = ability.known
                                 
@@ -1302,7 +1299,12 @@ do
                                 end
         
                                 local sname = LSF.SpellName( id )
-                                LSF.FlashAction( sname, self.flashColor, conf.flash.size, conf.flash.brightness, conf.flash.blink, nil, conf.flash.texture )
+                                if LSF.Flashable( sname ) then
+                                    LSF.FlashAction( sname, self.flashColor, conf.flash.size, conf.flash.brightness, conf.flash.blink, nil, conf.flash.texture )
+                                elseif conf.flash.suppress and not self.flashWarnings[ sname ] then
+                                    self.flashWarnings[ sname ] = true
+                                    Hekili:Print( "|cff000000WARNING|r - Could not flash recommended ability '" .. sname .. "' (" .. self.id .. ")." )
+                                end
                             end
                         end
         

@@ -6,7 +6,7 @@ RareShareDB = {
 		["MapPin"] = true,
 		["CChannel"] = {
 			["CID"] = 1,
-			["CName"] = "General - Nazjatar",
+			["CName"] = "General - Shrine of Two Moons",
 		},
 		["TomTom"] = {
 			["Rares"] = true,
@@ -23,7 +23,7 @@ RareShareDB = {
 		["Duplicates"] = true,
 	},
 	["LastAnnounce"] = {
-		["Time"] = 1633900457,
-		["ID"] = 152570,
+		["Time"] = 1646498785,
+		["ID"] = 157153,
 	},
 }

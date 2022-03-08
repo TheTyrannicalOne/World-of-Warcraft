@@ -7,32 +7,10 @@ QuestTogether = {
 				"0/5 Elemental-Imbued Weapon broken", -- [1]
 			},
 		},
-		[56128] = {
-			["title"] = "Drowning the Horde",
+		[54485] = {
+			["title"] = "Battle of Dazar'alor",
 			["objectives"] = {
-				"0/25 Horde Players slain", -- [1]
-			},
-		},
-		[13413] = {
-			["title"] = "Aces High!",
-			["objectives"] = {
-				"1/5 Scalesworn Elites Killed", -- [1]
-			},
-		},
-		[57567] = {
-			["title"] = "N'Zoth Assault Tracker (Vale)",
-			["objectives"] = {
-			},
-		},
-		[53436] = {
-			["title"] = "Azerite for the Alliance",
-			["objectives"] = {
-				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
-			},
-		},
-		[57562] = {
-			["title"] = "Amathet Assault Tracker",
-			["objectives"] = {
+				"0/1 Defeat King Rastakhan in the Battle of Dazar'alor", -- [1]
 			},
 		},
 		[32806] = {
@@ -41,15 +19,52 @@ QuestTogether = {
 				"0/1 \"Blood in the Snow\" scenario complete", -- [1]
 			},
 		},
+		[56378] = {
+			["title"] = "The Missing Crew",
+			["objectives"] = {
+				"0/1 Captain Stonestare found", -- [1]
+				"0/1 Captain Greensails found", -- [2]
+				"0/1 Thermospark found", -- [3]
+			},
+		},
+		[56128] = {
+			["title"] = "Drowning the Horde",
+			["objectives"] = {
+				"0/25 Horde Players slain", -- [1]
+			},
+		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[53436] = {
+			["title"] = "Azerite for the Alliance",
+			["objectives"] = {
+				"0/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
+			},
+		},
+		[28238] = {
+			["title"] = "Twilight Shores",
+			["objectives"] = {
+			},
+		},
+		[13413] = {
+			["title"] = "Aces High!",
+			["objectives"] = {
+				"1/5 Scalesworn Elites Killed", -- [1]
+			},
+		},
 		[62801] = {
 			["title"] = "The Call of Fate",
 			["objectives"] = {
 			},
 		},
-		[50605] = {
-			["title"] = "Alliance War Effort",
+		[57563] = {
+			["title"] = "Mogu Assault Tracker",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
+				"0/1 [DNT] Dummy Credit slain", -- [1]
 			},
 		},
 		[57006] = {
@@ -66,10 +81,9 @@ QuestTogether = {
 				"0/5 Pet Battlemasters Defeated", -- [1]
 			},
 		},
-		[57378] = {
-			["title"] = "Remnants of a Shattered World",
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
 			["objectives"] = {
-				"0/1 \"Curse of Stone\" book obtained", -- [1]
 			},
 		},
 		[39060] = {
@@ -80,10 +94,10 @@ QuestTogether = {
 				"1/1 Western Plague Cache Burned", -- [3]
 			},
 		},
-		[58632] = {
-			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
+		[44948] = {
+			["title"] = "Raising Your Snowfeather",
 			["objectives"] = {
-				"N'Zoth, the Corruptor defeated", -- [1]
+				"Level 25 Snowfeather Hatchling", -- [1]
 			},
 		},
 		[54438] = {
@@ -92,10 +106,10 @@ QuestTogether = {
 				"Defeat Uu'nat in the Crucible of Storms Raid", -- [1]
 			},
 		},
-		[44948] = {
-			["title"] = "Raising Your Snowfeather",
+		[57378] = {
+			["title"] = "Remnants of a Shattered World",
 			["objectives"] = {
-				"Level 25 Snowfeather Hatchling", -- [1]
+				"0/1 \"Curse of Stone\" book obtained", -- [1]
 			},
 		},
 		[36615] = {
@@ -103,12 +117,6 @@ QuestTogether = {
 			["objectives"] = {
 				"172/2000 Garrison Resources gathered (Optional)", -- [1]
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
-			},
-		},
-		[44989] = {
-			["title"] = "Raising Your Sharptalon",
-			["objectives"] = {
-				"Level 25 Sharptalon Hatchling", -- [1]
 			},
 		},
 		[7848] = {
@@ -173,12 +181,16 @@ QuestTogether = {
 				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
-		[56378] = {
-			["title"] = "The Missing Crew",
+		[50605] = {
+			["title"] = "Alliance War Effort",
 			["objectives"] = {
-				"0/1 Captain Stonestare found", -- [1]
-				"0/1 Captain Greensails found", -- [2]
-				"0/1 Thermospark found", -- [3]
+				"0/4 Complete 4 world quests on Zandalar, Assaults or Warfront Zones", -- [1]
+			},
+		},
+		[58632] = {
+			["title"] = "Ny'alotha, the Waking City: The Corruptor's End",
+			["objectives"] = {
+				"N'Zoth, the Corruptor defeated", -- [1]
 			},
 		},
 		[44720] = {
@@ -186,17 +198,11 @@ QuestTogether = {
 			["objectives"] = {
 			},
 		},
-		[54485] = {
-			["title"] = "Battle of Dazar'alor",
-			["objectives"] = {
-				"0/1 Defeat King Rastakhan in the Battle of Dazar'alor", -- [1]
-			},
-		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
+		["showDebugInfo"] = false,
 		["messages"] = false,
 		["events"] = false,
-		["showDebugInfo"] = false,
 	},
 }

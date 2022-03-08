@@ -1,11 +1,243 @@
 
 QuestTogether = {
 	["questTracker"] = {
+		[45382] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+			["objectives"] = {
+				"0/4 Echo of Time", -- [1]
+			},
+		},
+		[42234] = {
+			["title"] = "The Valarjar",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Stormheim", -- [1]
+			},
+		},
+		[61705] = {
+			["title"] = "Ember Court: Refreshments",
+			["objectives"] = {
+				"0/1 Review the Refreshments List", -- [1]
+				"1/1 Complete the requirement to access Tubbins's Tea Party", -- [2]
+			},
+		},
+		[54462] = {
+			["title"] = "Supplies from the Zandalari Empire",
+			["objectives"] = {
+			},
+		},
+		[62719] = {
+			["title"] = "The Final Pieces",
+			["objectives"] = {
+				"0/1 Rune Vessel Acquired", -- [1]
+				"0/2 Different Missives Obtained", -- [2]
+				"1/1 Runecarver Memory Restored", -- [3]
+			},
+		},
+		[47727] = {
+			["title"] = "Tomb of Sargeras: Aegwynn's Path",
+			["objectives"] = {
+				"3/4 Fragment of the Guardian's Seal", -- [1]
+			},
+		},
+		[63731] = {
+			["title"] = "Researching Korthian Relics",
+			["objectives"] = {
+			},
+		},
+		[57563] = {
+			["title"] = "Mogu Assault Tracker",
+			["objectives"] = {
+				"0/1 [DNT] Dummy Credit slain", -- [1]
+			},
+		},
+		[56120] = {
+			["title"] = "The Unshackled",
+			["objectives"] = {
+				"0/4 Complete world quests in Nazjatar", -- [1]
+			},
+		},
+		[49133] = {
+			["title"] = "Antorus, the Burning Throne: The Heart of Argus",
+			["objectives"] = {
+				"0/4 Sigil of the Dark Titan", -- [1]
+			},
+		},
+		[62869] = {
+			["title"] = "Return Lost Souls",
+			["objectives"] = {
+				"0/20 Rescue Souls from the Maw", -- [1]
+			},
+		},
+		[46745] = {
+			["title"] = "Supplies From the Court",
+			["objectives"] = {
+			},
+		},
+		[47129] = {
+			["title"] = "Tomb of Sargeras: The Deceiver",
+			["objectives"] = {
+				"Defeat Kil'jaeden", -- [1]
+				"1/1 Seal of the Deceiver", -- [2]
+			},
+		},
+		[44989] = {
+			["title"] = "Raising Your Sharptalon",
+			["objectives"] = {
+				"Level 25 Sharptalon Hatchling", -- [1]
+			},
+		},
+		[50598] = {
+			["title"] = "Zandalari Empire",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Zuldazar.", -- [1]
+			},
+		},
+		[53435] = {
+			["title"] = "Azerite for the Horde",
+			["objectives"] = {
+				"18349/36000 Collect 36000 Azerite on Island Expeditions", -- [1]
+			},
+		},
+		[50602] = {
+			["title"] = "Talanji's Expedition",
+			["objectives"] = {
+				"0/4 Complete 4 world quests in Nazmir.", -- [1]
+			},
+		},
+		[45381] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+			["objectives"] = {
+				"1/4 Echo of Time", -- [1]
+			},
+		},
+		[42422] = {
+			["title"] = "The Wardens",
+			["objectives"] = {
+				"0/4 Complete 4 Wardens World Quests", -- [1]
+			},
+		},
+		[61704] = {
+			["title"] = "Ember Court: Guest RSVPs",
+			["objectives"] = {
+				"1/1 Review the Guest List", -- [1]
+				"1/1 Ask Lady Ilinca for more information (Optional)", -- [2]
+				"0/1 Complete the requirement to meet Cryptkeeper Kassir", -- [3]
+			},
+		},
+		[44948] = {
+			["title"] = "Raising Your Snowfeather",
+			["objectives"] = {
+				"Level 25 Snowfeather Hatchling", -- [1]
+			},
+		},
+		[63984] = {
+			["title"] = "Coins for the Ferryman",
+			["objectives"] = {
+			},
+		},
+		[64555] = {
+			["title"] = "Surveying Secrets",
+			["objectives"] = {
+				"1/1 Keeper's Respite Defense Report", -- [1]
+				"1/1 Fauna of Korthia Report", -- [2]
+				"1/1 Anima Survey Notes", -- [3]
+				"1/1 Maldraxxi scout spoken with", -- [4]
+				"0/1 Mawsworn Movement Report", -- [5]
+			},
+		},
+		[57566] = {
+			["title"] = "N'Zoth Assault Tracker (Uldum)",
+			["objectives"] = {
+			},
+		},
+		[24756] = {
+			["title"] = "Blood Infusion",
+			["objectives"] = {
+				"Infuse Shadow's Edge with Blood then defeat Lana'thel.", -- [1]
+			},
+		},
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
+			["objectives"] = {
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
+			},
+		},
+		[58842] = {
+			["title"] = "The Curator",
+			["objectives"] = {
+				"0/1 Speak to the Curator", -- [1]
+			},
+		},
+		[40329] = {
+			["title"] = "Battle Pet Tamers: Warlords",
+			["objectives"] = {
+				"2/5 Pet Battlemasters Defeated", -- [1]
+			},
+		},
+		[57462] = {
+			["title"] = "Dream Catcher",
+			["objectives"] = {
+				"28/200 Shred of Insanity", -- [1]
+			},
+		},
+		[48642] = {
+			["title"] = "Argussian Reach",
+			["objectives"] = {
+				"0/4 Complete 4 Argussian Reach World Quests", -- [1]
+			},
+		},
+		[60460] = {
+			["title"] = "Anima Salvage",
+			["objectives"] = {
+				"0/150 Gather Anima Embers from Torghast", -- [1]
+			},
+		},
+		[57403] = {
+			["title"] = "Reconstructing \"Fear and Flesh\"",
+			["objectives"] = {
+				"2/4 Torn Page of \"Fear and Flesh\"", -- [1]
+			},
+		},
+		[45383] = {
+			["title"] = "The Nighthold: Talisman of the Shal'dorei",
+			["objectives"] = {
+				"2/4 Echo of Time", -- [1]
+			},
+		},
+		[56352] = {
+			["title"] = "The Eternal Palace: We Can Make It Stronger...",
+			["objectives"] = {
+				"3/20 Eternal Ornament", -- [1]
+			},
+		},
+		[30567] = {
+			["title"] = "Blanche's Boomer Brew",
+			["objectives"] = {
+				"0/1 Scenario Complete", -- [1]
+			},
+		},
+		[49032] = {
+			["title"] = "Antorus, the Burning Throne: Dark Passage",
+			["objectives"] = {
+				"1/4 Rune of Passage", -- [1]
+			},
+		},
+		[48305] = {
+			["title"] = "The Burning Coven",
+			["objectives"] = {
+				"Defeat the Coven of Shivarra in the Antorus, The Burning Throne", -- [1]
+				"1/1 Sargerei Manifesto", -- [2]
+			},
+		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 	},
 }

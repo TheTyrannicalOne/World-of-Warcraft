@@ -11,7 +11,7 @@ RareShareDB = {
 			["Duplicates"] = true,
 		},
 		["CChannel"] = {
-			["CName"] = "General - Nazjatar",
+			["CName"] = "General - Shrine of Two Moons",
 			["CID"] = 1,
 		},
 		["OnDeath"] = false,
@@ -23,7 +23,7 @@ RareShareDB = {
 		["Duplicates"] = true,
 	},
 	["LastAnnounce"] = {
-		["Time"] = 1633900457,
-		["ID"] = 152570,
+		["Time"] = 1646498785,
+		["ID"] = 157153,
 	},
 }

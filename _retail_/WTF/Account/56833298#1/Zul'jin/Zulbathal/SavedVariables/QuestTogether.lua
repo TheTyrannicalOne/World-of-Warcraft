@@ -46,11 +46,10 @@ QuestTogether = {
 				"0/100 Dream Seeds planted", -- [1]
 			},
 		},
-		[61874] = {
-			["title"] = "Shadowlands: A Chilling Summons",
+		[31015] = {
+			["title"] = "Your Private Collection",
 			["objectives"] = {
-				"1/1 Learn about your leaders' fate", -- [1]
-				"0/1 Take the Death Gate to Acherus", -- [2]
+				"0/1 An empty bookshelf", -- [1]
 			},
 		},
 		[42129] = {
@@ -66,12 +65,6 @@ QuestTogether = {
 				"0/1 Wrath of Azshara slain", -- [2]
 			},
 		},
-		[56120] = {
-			["title"] = "The Unshackled",
-			["objectives"] = {
-				"0/4 Complete world quests in Nazjatar", -- [1]
-			},
-		},
 		[36614] = {
 			["title"] = "My Very Own Fortress",
 			["objectives"] = {
@@ -79,15 +72,20 @@ QuestTogether = {
 				"0/1 Upgrade your garrison to Tier 3", -- [2]
 			},
 		},
-		[50606] = {
-			["title"] = "Horde War Effort",
+		[56120] = {
+			["title"] = "The Unshackled",
 			["objectives"] = {
-				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
+				"0/4 Complete world quests in Nazjatar", -- [1]
 			},
 		},
-		[51432] = {
-			["title"] = "An Unusual Mentor",
+		[31891] = {
+			["title"] = "Battle Pet Tamers: Kalimdor",
 			["objectives"] = {
+				"Defeat Traitor Gluk", -- [1]
+				"Defeat Grazzle the Great", -- [2]
+				"Defeat Kela Grimtotem", -- [3]
+				"Defeat Zoltan", -- [4]
+				"Defeat Elena Flutterfly", -- [5]
 			},
 		},
 		[50598] = {
@@ -131,14 +129,15 @@ QuestTogether = {
 				"0/1 Review final foothold", -- [1]
 			},
 		},
-		[31891] = {
-			["title"] = "Battle Pet Tamers: Kalimdor",
+		[51432] = {
+			["title"] = "An Unusual Mentor",
 			["objectives"] = {
-				"Defeat Traitor Gluk", -- [1]
-				"Defeat Grazzle the Great", -- [2]
-				"Defeat Kela Grimtotem", -- [3]
-				"Defeat Zoltan", -- [4]
-				"Defeat Elena Flutterfly", -- [5]
+			},
+		},
+		[50606] = {
+			["title"] = "Horde War Effort",
+			["objectives"] = {
+				"0/4 Complete 4 world quests on Kul Tiras, Assaults or Warfront Zones", -- [1]
 			},
 		},
 		[40019] = {
@@ -148,23 +147,24 @@ QuestTogether = {
 				"5/5 Blight-Infested Dreamleaf", -- [2]
 			},
 		},
+		[61874] = {
+			["title"] = "Shadowlands: A Chilling Summons",
+			["objectives"] = {
+				"1/1 Learn about your leaders' fate", -- [1]
+				"0/1 Take the Death Gate to Acherus", -- [2]
+			},
+		},
 		[49901] = {
 			["title"] = "Atal'Dazar: Yazma the Fallen Priestess",
 			["objectives"] = {
 				"0/1 Yazma slain", -- [1]
 			},
 		},
-		[31015] = {
-			["title"] = "Your Private Collection",
-			["objectives"] = {
-				"0/1 An empty bookshelf", -- [1]
-			},
-		},
 	},
 	["DEBUG"] = {
 		["questLogUpdate"] = false,
 		["showDebugInfo"] = false,
-		["events"] = false,
 		["messages"] = false,
+		["events"] = false,
 	},
 }

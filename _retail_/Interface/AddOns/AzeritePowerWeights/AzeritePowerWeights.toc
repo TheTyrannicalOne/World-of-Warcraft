@@ -1,7 +1,7 @@
-## Interface: 90105
+## Interface: 90200
 ## Author: Sanex (Arathor EU)
 ## Title: AzeritePowerWeights
-## Version: 9.1.2
+## Version: 9.2.0
 ## Notes: Helps you pick the best Azerite powers on your gear for your class and spec.
 ## RequiredDeps:
 ## SavedVariables: AzeritePowerWeightsDB

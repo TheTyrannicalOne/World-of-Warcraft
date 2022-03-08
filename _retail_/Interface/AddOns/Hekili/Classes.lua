@@ -17,6 +17,7 @@ local RegisterUnitEvent = ns.RegisterUnitEvent
 
 local formatKey = ns.formatKey
 local getSpecializationKey = ns.getSpecializationKey
+local tableCopy = ns.tableCopy
 
 local insert, wipe = table.insert, table.wipe
 
@@ -48,7 +49,7 @@ local specTemplate = {
     nameplateRange = 8,
 
     petbased = false,
-    
+
     damage = true,
     damageExpiration = 8,
     damageDots = false,
@@ -273,10 +274,6 @@ local HekiliSpecMixin = {
                             if v == a then class.auraList[ k ] = nil end
                         end
 
-                        --[[ for k, v in pairs( self.auras ) do 
-                            if v == a then self.auras[ k ] = nil end
-                        end ]]
-
                         Hekili.InvalidSpellIDs = Hekili.InvalidSpellIDs or {}
                         Hekili.InvalidSpellIDs[ a.id ] = a.name or a.key
 
@@ -290,7 +287,9 @@ local HekiliSpecMixin = {
 
                     local texture = a.texture or GetSpellTexture( a.id )
 
-                    class.auraList[ a.key ] = "|T" .. texture .. ":0|t " .. a.name
+                    if self.id > 0 then
+                        class.auraList[ a.key ] = "|T" .. texture .. ":0|t " .. a.name
+                    end
 
                     self.auras[ a.name ] = a
                     if GetSpecializationInfo( GetSpecialization() or 0 ) == self.id then
@@ -372,7 +371,6 @@ local HekiliSpecMixin = {
             end
         end
     end,
-
 
     RegisterStateExpr = function( self, key, func )
         setfenv( func, state )
@@ -493,7 +491,6 @@ local HekiliSpecMixin = {
                 if t.funcs[ k ] then return t.funcs[ k ]() end
                 if k == "lastCast" then return state.history.casts[ t.key ] or t.realCast end
                 if k == "lastUnit" then return state.history.units[ t.key ] or t.realUnit end
-                return
             end,
         } )
 
@@ -799,9 +796,6 @@ local HekiliSpecMixin = {
 
     RegisterOptions = function( self, options )
         self.options = options
-        for k, v in pairs( specTemplate ) do
-            if options[ k ] == nil then options[ k ] = v end
-        end
     end,
 
     RegisterEvent = function( self, event, func )
@@ -918,8 +912,8 @@ function Hekili:RestoreDefaults()
         end
 
         if msg then C_Timer.After( 5, function() 
-            if Hekili.DB.profile.notifications.enabled then Hekili:Print( msg ) end
-            Hekili:Notify( msg, 6 )
+            if Hekili.DB.profile.notifications.enabled then Hekili:Notify( msg, 6 ) end
+            Hekili:Print( msg )
         end ) end
     end
 end
@@ -944,7 +938,6 @@ end
 
 
 ns.restoreDefaults = function( category, purge )
-    return    
 end
 
 
@@ -1929,6 +1922,13 @@ all:RegisterPotions( {
         item = 152557,
         buff = 'steelskin_potion',
     },
+
+    -- 7.0
+    prolonged_power = {
+        item = 142117,
+        buff = 'prolonged_power',
+        copy = "potion_of_prolonged_power"
+    }
 } )
 
 
@@ -2071,8 +2071,8 @@ all:RegisterAuras( {
         id = 251231,
         duration = 25,
         max_stack = 1,
-    }
-})
+    },
+} )
 
 
 all:SetPotion( "prolonged_power" )
@@ -5673,7 +5673,7 @@ ns.setRole = setRole
 
 
 function Hekili:GetActiveSpecOption( opt )
-    if not self.currentSpecOpts then return ns.specTemplate[ opt ] end
+    if not self.currentSpecOpts then return end
     return self.currentSpecOpts[ opt ]
 end
 
@@ -5910,22 +5910,19 @@ function Hekili:SpecializationChanged()
                 end
             end
 
+            if spec.id > 0 then
+                local s = Hekili.DB.profile.specs[ spec.id ]
 
-            local s = Hekili.DB.profile.specs[ spec.id ]
-
-            for k, v in pairs( spec.options ) do
-                if rawget( s, k ) == nil then s[ k ] = v end
-            end
-
-            for k, v in pairs( spec.settings ) do
-                if s.settings[ v.name ] == nil then s.settings[ v.name ] = v.default end
+                for k, v in pairs( spec.settings ) do
+                    if s.settings[ v.name ] == nil then s.settings[ v.name ] = v.default end
+                end
             end
         end
     end
 
     for k in pairs( class.abilityList ) do
         local ability = class.abilities[ k ]
-        
+
         if ability and ability.id > 0 then
             if not ability.texture or not ability.name then
                 local name, _, tex = GetSpellInfo( ability.id )
@@ -5987,7 +5984,7 @@ function Hekili:SpecializationChanged()
         end
     end
 
-    tooltip:Hide()    
+    tooltip:Hide()
 end
 
 

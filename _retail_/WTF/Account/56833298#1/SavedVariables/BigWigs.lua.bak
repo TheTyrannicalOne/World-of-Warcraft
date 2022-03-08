@@ -19,7 +19,7 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Sounds"] = {
 		},
-		["BigWigs_Plugins_AutoReply"] = {
+		["BigWigs_Plugins_Statistics"] = {
 		},
 		["BigWigs_Plugins_Countdown"] = {
 		},
@@ -27,7 +27,7 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Colors"] = {
 		},
-		["BigWigs_Plugins_Wipe"] = {
+		["BigWigs_Plugins_Raid Icons"] = {
 		},
 		["BigWigs_Plugins_InfoBox"] = {
 		},
@@ -43,11 +43,7 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 		},
-		["BigWigs_Plugins_BossBlock"] = {
-		},
 		["BigWigs_Plugins_Pull"] = {
-		},
-		["BigWigs_Plugins_Messages"] = {
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
@@ -57,11 +53,15 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Raid Icons"] = {
+		["BigWigs_Plugins_AutoReply"] = {
+		},
+		["BigWigs_Plugins_Messages"] = {
+		},
+		["BigWigs_Plugins_BossBlock"] = {
 		},
 		["BigWigs_Plugins_Common Auras"] = {
 		},
-		["BigWigs_Plugins_Statistics"] = {
+		["BigWigs_Plugins_Wipe"] = {
 		},
 	},
 	["global"] = {
@@ -290,55 +290,55 @@ BigWigsStatsDB = {
 		[1587] = {
 			["normal"] = {
 				["best"] = 88.69200000000001,
-				["kills"] = 2,
+				["kills"] = 3,
 			},
 		},
 		[1584] = {
 			["normal"] = {
-				["best"] = 37.99499999999989,
-				["kills"] = 2,
+				["best"] = 36.03599999999642,
+				["kills"] = 3,
 			},
 		},
 		[1588] = {
 			["normal"] = {
 				["best"] = 1.690999999999804,
-				["kills"] = 2,
+				["kills"] = 3,
 			},
 		},
 		[1585] = {
 			["normal"] = {
-				["best"] = 2.272999999986496,
-				["kills"] = 2,
+				["best"] = 0.4120000000002619,
+				["kills"] = 3,
 			},
 		},
 		[1589] = {
 			["normal"] = {
-				["best"] = 1.328999999997905,
-				["kills"] = 2,
+				["best"] = 1.240999999998167,
+				["kills"] = 3,
 			},
 		},
 		[1582] = {
 			["normal"] = {
 				["best"] = 2.011000000000422,
-				["kills"] = 2,
+				["kills"] = 3,
 			},
 		},
 		[1586] = {
 			["normal"] = {
 				["best"] = 2.419000000008964,
-				["kills"] = 2,
+				["kills"] = 3,
 			},
 		},
 		[1590] = {
 			["normal"] = {
 				["best"] = 98.40099999999984,
-				["kills"] = 2,
+				["kills"] = 3,
 			},
 		},
 		[1583] = {
 			["normal"] = {
-				["best"] = 3.744999999995343,
-				["kills"] = 2,
+				["best"] = 3.265999999999622,
+				["kills"] = 3,
 			},
 		},
 	},

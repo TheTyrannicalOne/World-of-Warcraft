@@ -1,14 +1,6 @@
 
 ElvCharacterDB = {
-	["ConvertKeybindings"] = true,
 	["CliqueDatatext"] = {
-	},
-	["ChatEditHistory"] = {
-		"/allthethings", -- [1]
-		"/wa", -- [2]
-		"/dance", -- [3]
-		"/opie", -- [4]
-		"/cw Lantevar-Proudmoore alrighty", -- [5]
 	},
 	["ChatHistoryLog"] = {
 		{
@@ -2190,4 +2182,12 @@ ElvCharacterDB = {
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},
+	["ChatEditHistory"] = {
+		"/allthethings", -- [1]
+		"/wa", -- [2]
+		"/opie", -- [3]
+		"/cw Lantevar-Proudmoore alrighty", -- [4]
+		"/dance", -- [5]
+	},
+	["ConvertKeybindings"] = true,
 }
