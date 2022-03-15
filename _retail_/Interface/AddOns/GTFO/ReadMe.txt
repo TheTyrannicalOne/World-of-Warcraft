@@ -1719,3 +1719,12 @@ Change Log:
 4.66.2
 * Added Shadowlands spells (world)
 * Added SL spells for Sepulcher of the First Ones
+
+4.66.3
+* Added Shadowlands spells (world)
+* Added SL spells for Sepulcher of the First Ones
+
+4.66.4
+* Added Shadowlands spells (world)
+* Added SL spells for Sepulcher of the First Ones
+* Fixed BC spells for Black Temple

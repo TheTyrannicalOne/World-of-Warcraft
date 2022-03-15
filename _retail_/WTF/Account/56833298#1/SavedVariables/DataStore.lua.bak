@@ -35,15 +35,15 @@ DataStoreDB = {
 				["faction"] = "Horde",
 			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["faction"] = "Horde",
 				["guildName"] = "Bloodmoon Chosen",
+				["faction"] = "Horde",
 			},
 		},
 		["ShortToLongRealmNames"] = {
 			["BlackDragonflight"] = "Black Dragonflight",
 			["Dalaran"] = "Dalaran",
-			["Zul'jin"] = "Zul'jin",
 			["ArgentDawn"] = "Argent Dawn",
+			["Zul'jin"] = "Zul'jin",
 		},
 	},
 }

@@ -1,12 +1,25 @@
-local L = BigWigs:NewBossLocale("Artificer Xy'mox v2", "deDE")
+local L = BigWigs:NewBossLocale("Vigilant Guardian", "deDE")
 if not L then return end
+if L then
+	L.sentry = "Tank Add"
+	L.materium = "Kleine Adds"
+	--L.shield = "Shield" -- Global locale canidate?
+end
+
+L = BigWigs:NewBossLocale("Skolex, the Insatiable Ravener", "deDE")
+if L then
+	L.tank_combo_desc = "Timer für die Fähigkeiten Rissschlund/Verwunden bei 100 Energie."
+end
+
+L = BigWigs:NewBossLocale("Artificer Xy'mox v2", "deDE")
 if L then
 	L.traps = "Fallen" -- Stasis Trap
 	L.sparknova = "Funkennova" -- Hyperlight Sparknova
 	L.relocation = "Tank Bombe" -- Glyph of Relocation
-	L.wormholes = "Wumrlöcher" -- Interdimensional Wormholes
+	L.relocation_count = "%s P%d (%d)" -- Tank Bomb S1 (1) // Tank Bomb (stage)(count)
+	L.wormholes = "Wurmlöcher" -- Interdimensional Wormholes
 	L.wormhole = "Wurmloch" -- Interdimensional Wormhole
-	L.rings = "Ringe P%d" -- Forerunner Rings // Added P1, P2, P3 etc to help identify what rings
+	L.rings = "Ringe P%d" -- Rings S1 // Forerunner Rings Stage 1/2/3/4
 end
 
 L = BigWigs:NewBossLocale("Dausegne, the Fallen Oracle", "deDE")
@@ -19,6 +32,9 @@ if L then
 	L.rings_x = "Ringe x%d"
 	L.rings_enrage = "Ringe (Berserker)"
 	L.ring_count = "Ring (%d/%d)"
+
+	--L.custom_on_ring_timers = "Individual Halo Timers"
+	--L.custom_on_ring_timers_desc = "Disintegration Halo triggers a set of rings, this will show bars for when each of the rings starts moving. Uses settings from Disintegration Halo."
 
 	L.shield_removed = "%s entfernt nach %.1fs" -- "Shield removed after 1.1s" s = seconds
 end
@@ -35,13 +51,28 @@ end
 
 L = BigWigs:NewBossLocale("Lihuvim, Principal Architect", "deDE")
 if L then
-	L.protoform_cascade = "Frontal"
+	L.protoform_cascade = "Kreis"
 	L.cosmic_shift = "Rückstoß"
+	--L.cosmic_shift_mythic = "Shift: %s"
 	L.unstable_mote = "Partikel"
 	L.mote = "Partikel"
 
 	L.custom_on_nameplate_fixate = "Fixieren-Symbol an Namensplaketten"
 	L.custom_on_nameplate_fixate_desc = "Zeigt ein Symbol an der Namensplakette des Dich fixierenden Akquisitionsautomas an.\n\nBenötigt die Nutzung von gegnerischen Namensplaketten sowie ein unterstütztes Addon (KuiNameplates, Plater)."
+
+	--L.harmonic = "Push"
+	--L.melodic = "Pull"
+end
+
+L = BigWigs:NewBossLocale("Halondrus the Reclaimer", "deDE")
+if L then
+	L.seismic_tremors = "Partikel + Beben" -- Seismic Tremors
+	L.earthbreaker_missiles = "Geschosse" -- Earthbreaker Missiles
+	L.crushing_prism = "Prismen" -- Crushing Prism
+	L.prism = "Prisma"
+
+	L.custom_on_stop_timers = "Fähigkeiten Leisten immer anzeigen"
+	L.custom_on_stop_timers_desc = "Halondrus kann Fähigkeiten verzögern. Wenn diese Option aktiviert ist, bleiben die Leisten für diese Fähigkeiten bestehen."
 end
 
 L = BigWigs:NewBossLocale("Anduin Wrynn", "deDE")
@@ -59,9 +90,12 @@ if L then
 	L.march_of_the_damned = "Wände"
 	L.dire_blasphemy = "Male"
 	L.beacon_of_hope = "Flamme"
+
+	L.remnant_active = "Überrest aktiv"
 end
 
-L = BigWigs:NewBossLocale("Skolex, the Insatiable Ravener", "deDE")
+L = BigWigs:NewBossLocale("The Jailer", "deDE")
 if L then
-	L.tank_combo_desc = "Timer für die Fähigkeiten Rissschlund/Verwunden bei 100 Energie."
+	L.rune_of_damnation_countdown = "Countdown"
+	L.rune_of_damnation_countdown_desc = "Countdown für Spieler welche von Rune der Verdammnis betroffen sind."
 end

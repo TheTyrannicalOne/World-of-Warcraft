@@ -1,35 +1,11 @@
 
 MasterPlanAG = {
-	["IgnoreRewards"] = {
-	},
-	["Zul'jin"] = {
-		["Zulbathal"] = {
-			["faction"] = "Horde",
-			["class"] = "DRUID",
-		},
-	},
-	["Black Dragonflight"] = {
-		["Durlok"] = {
-			["faction"] = "Horde",
-			["class"] = "DRUID",
-		},
-	},
-	["Dalaran"] = {
-		["Illingrath"] = {
-			["faction"] = "Alliance",
-			["class"] = "DEMONHUNTER",
-		},
-		["Avisar"] = {
-			["faction"] = "Alliance",
-			["class"] = "PALADIN",
-		},
-	},
 	["Argent Dawn"] = {
 		["Shanyt"] = {
-			["curOil"] = 97890,
+			["lastCacheTime"] = 1646502542,
 			["summary"] = {
 				["ti1"] = 118531,
-				["lastOilTime"] = 1646483577,
+				["tt1"] = 1646438137,
 				["inProgress"] = {
 					[485] = 1646516878,
 					[396] = 1646510802,
@@ -38,19 +14,43 @@ MasterPlanAG = {
 					[665] = 1646506068,
 					[267] = 1646516875,
 					[669] = 1646510838,
-					[745] = 1646548377,
-					[563] = 1646516888,
-					[543] = 1646516893,
-					[685] = 1646525136,
 					[325] = 1646510779,
+					[685] = 1646525136,
+					[543] = 1646516893,
+					[563] = 1646516888,
+					[745] = 1646548377,
 				},
-				["tt1"] = 1646438137,
+				["lastOilTime"] = 1646483577,
 			},
 			["faction"] = "Horde",
 			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1646502542,
-			["curRes"] = 9908,
 			["class"] = "WARRIOR",
+			["curRes"] = 9908,
+			["curOil"] = 97890,
 		},
+	},
+	["Black Dragonflight"] = {
+		["Durlok"] = {
+			["class"] = "DRUID",
+			["faction"] = "Horde",
+		},
+	},
+	["Dalaran"] = {
+		["Illingrath"] = {
+			["class"] = "DEMONHUNTER",
+			["faction"] = "Alliance",
+		},
+		["Avisar"] = {
+			["class"] = "PALADIN",
+			["faction"] = "Alliance",
+		},
+	},
+	["Zul'jin"] = {
+		["Zulbathal"] = {
+			["class"] = "DRUID",
+			["faction"] = "Horde",
+		},
+	},
+	["IgnoreRewards"] = {
 	},
 }

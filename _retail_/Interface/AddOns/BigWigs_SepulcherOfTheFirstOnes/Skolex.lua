@@ -17,6 +17,7 @@ local comboCounter = 1
 local flailCount = 1
 local retchCount = 1
 local burrowCount = 1
+local devouringBloodTimer = nil
 
 --------------------------------------------------------------------------------
 -- Localization
@@ -42,7 +43,11 @@ function mod:GetOptions()
 		"tank_combo", -- Tank Combo
 		359979, -- Rend
 		359975, -- Riftmaw
+		364522, -- Devouring Blood
 		364778, -- Destroy
+		366070, -- Volatile Residue
+	},{
+		[366070] = "mythic",
 	}
 end
 
@@ -55,6 +60,10 @@ function mod:OnBossEnable()
 	self:Log("SPELL_CAST_START", "Rend", 359979)
 	self:Log("SPELL_CAST_START", "Riftmaw", 359975)
 	self:Log("SPELL_CAST_START", "Destroy", 364778)
+
+	self:Log("SPELL_AURA_APPLIED", "GroundDamage", 366070) -- Volatile Residue
+	self:Log("SPELL_PERIODIC_DAMAGE", "GroundDamage", 366070)
+	self:Log("SPELL_PERIODIC_MISSED", "GroundDamage", 366070)
 end
 
 function mod:OnEngage()
@@ -65,7 +74,9 @@ function mod:OnEngage()
 
 	self:Bar(359829, 2, CL.count:format(self:SpellName(359829), flailCount)) -- Dust Flail
 	self:Bar("tank_combo", 9, CL.count:format(CL.tank_combo, tankComboCounter), L.tank_combo_icon) -- Tank Combo
-	self:Bar(360451, 24.5, CL.count:format(self:SpellName(360451), retchCount)) -- Retch
+	self:Bar(360451, 24, CL.count:format(self:SpellName(360451), retchCount)) -- Retch
+	devouringBloodTimer = self:ScheduleTimer("DevouringBlood", 9)
+	self:Bar(364522, 9) -- Devouring Blood
 	self:Berserk(360)
 end
 
@@ -82,6 +93,17 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(_, _, _, spellId)
 	end
 end
 
+function mod:DevouringBlood()
+	self:StopBar(364522)
+	local speedUp = self:Mythic() and 0.75 or 0.5
+	--self:Message(364522, "orange") -- XXX Disabled until we confirm mythic is correct as well
+	--self:PlaySound(364522, "info")
+	local cd = 9 - ((burrowCount - 1) * speedUp) -- speeds up after each burrow
+	self:Bar(364522, cd)
+	self:CancelTimer(devouringBloodTimer)
+	devouringBloodTimer = self:ScheduleTimer("DevouringBlood", cd)
+end
+
 function mod:RaveningBurrow(args)
 	self:Message(args.spellId, "red", CL.count:format(args.spellName, burrowCount))
 	self:PlaySound(args.spellId, "long")
@@ -90,8 +112,14 @@ function mod:RaveningBurrow(args)
 	local nextTankCombo = self:BarTimeLeft(CL.count:format(CL.tank_combo, tankComboCounter)) + 10
 	self:CDBar("tank_combo", nextTankCombo, CL.count:format(CL.tank_combo, tankComboCounter), L.tank_combo_icon) -- Tank Combo
 
-	local nextRetch = self:BarTimeLeft(CL.count:format(self:SpellName(360451), retchCount)) + 10 -- XXX Not Always correct, different logic?
-	self:Bar(360451, nextRetch, CL.count:format(self:SpellName(360451), retchCount)) -- Retch
+	local nextRetch = self:BarTimeLeft(CL.count:format(self:SpellName(360451), retchCount))
+	if nextRetch < 10 then -- skipped, new bar
+		self:StopBar(CL.count:format(self:SpellName(360451), retchCount))
+		local cd = self:Easy() and 37.5 or 34
+		nextRetch = nextRetch + cd
+		retchCount = retchCount + 1
+		self:Bar(360451, nextRetch, CL.count:format(self:SpellName(360451), retchCount)) -- Retch
+	end
 
 	self:StopBar(CL.count:format(self:SpellName(359829), flailCount)) -- Dust Flail
 	flailCount = 1
@@ -103,7 +131,7 @@ function mod:DustFlail(args)
 	self:Message(args.spellId, "yellow", CL.count:format(args.spellName, flailCount))
 	self:PlaySound(args.spellId, "alert")
 	flailCount = flailCount + 1
-	self:CDBar(args.spellId, self:Easy() and 19.5 or 17, CL.count:format(args.spellName, flailCount))
+	self:CDBar(args.spellId, self:Easy() and 19 or 17, CL.count:format(args.spellName, flailCount))
 end
 
 function mod:Retch(args)
@@ -129,4 +157,18 @@ end
 function mod:Destroy(args)
 	self:Message(args.spellId, "yellow")
 	self:PlaySound(args.spellId, "alert")
+end
+
+do
+	local prev = 0
+	function mod:GroundDamage(args)
+		if self:Me(args.destGUID) then
+			local t = args.time
+			if t-prev > 2 then
+				prev = t
+				self:PlaySound(args.spellId, "underyou")
+				self:PersonalMessage(args.spellId, "underyou")
+			end
+		end
+	end
 end

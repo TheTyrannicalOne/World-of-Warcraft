@@ -1,10 +1,19 @@
-# BigWigs
+# BigWigs [Sepulcher of the First Ones]
 
-## [v235](https://github.com/BigWigsMods/BigWigs/tree/v235) (2022-03-02)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v234.3...v235) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
+## [v237](https://github.com/BigWigsMods/BigWigs/tree/v237) (2022-03-13)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v236.1...v237) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
 
-- bump version  
 - SepulcherOfTheFirstOnes: Update option files  
-- Sepulcher/AnduinWyrnn: Update Army timer  
-- Sepulcher/Halondrus: Fix re-enabling the module after winning  
-- SepulcherOfTheFirstOnes/AnduinWrynn: Fix an error/bar in the intermission  
+- bump version  
+- SepulcherOfTheFirstOnes/VigilantGuardian: Tweaks  
+- SepulcherOfTheFirstOnes/VigilantGuardian: Fix typo  
+- Update zhCN (#1162)  
+- SepulcherOfTheFirstOnes/Locales: Add new locales after mythic updates  
+- SepulcherOfTheFirstOnes/Lihuvim: Mythic Updates and fixes  
+- SepulcherOfTheFirstOnes/PrototypePantheon: Disable seed markers by default, mark nighthunters using worldmarker order, mythic timers  
+- SepulcherOfTheFirstOnes/ArtificerXymox: Mythic Updates  
+- SepulcherOfTheFirstOnes/Dausegne: Mythic Updates and Normal Mode timers  
+- SepulcherOfTheFirstOnes/Skolex: Mythic updates (Devouring blood still needs feedback/improvements)  
+- SepulcherOfTheFirstOnes/VigilantGuardian: Mythic Updates  
+- SepulcherOfTheFirstOnes/Rygelon: Update module for Heroic  
+- SepulcherOfTheFirstOnes/LordsOfDread: Update module for Heroic  
