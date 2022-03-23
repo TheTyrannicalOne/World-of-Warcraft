@@ -1,30 +1,6 @@
 
 ElvCharacterDB = {
-	["CliqueDatatext"] = {
-	},
 	["ConvertKeybindings"] = true,
-	["ChatEditHistory"] = {
-		"/cw Girnar-Lightbringer ok np thanks any\\", -- [1]
-		"/paste", -- [2]
-		"/fishingbuddy", -- [3]
-		"/cw Mhercurio-Quel'Thalas ok thanks anyway", -- [4]
-		"/npcscan add 66935 Clamstok", -- [5]
-		"/npcscan add 66934 Damlak", -- [6]
-		"/s nice", -- [7]
-		"/tsm", -- [8]
-		"/p if not will try again later", -- [9]
-		"/invite lillys-blackhand", -- [10]
-		"/s launch fireworks out the launchers he raises out the water and we kill him", -- [11]
-		"/npcscan add 66932 Akkalou", -- [12]
-		"/s two druids just went to get some", -- [13]
-		"/p well looks like its slow right now good luck will try again later", -- [14]
-		"/p np", -- [15]
-		"/p lets go", -- [16]
-		"/dance", -- [17]
-		"/hekili", -- [18]
-		"/cw Xugaaz-WyrmrestAccord TY!", -- [19]
-		"/cw Peroyjenkins-Mal'Ganis TY", -- [20]
-	},
 	["ChatHistoryLog"] = {
 		{
 			"32% House of the Chosen disrupted (32%)", -- [1]
@@ -2204,5 +2180,29 @@ ElvCharacterDB = {
 			[51] = 1647060572,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
+	},
+	["ChatEditHistory"] = {
+		"/paste", -- [1]
+		"/fishingbuddy", -- [2]
+		"/cw Mhercurio-Quel'Thalas ok thanks anyway", -- [3]
+		"/npcscan add 66935 Clamstok", -- [4]
+		"/npcscan add 66934 Damlak", -- [5]
+		"/s nice", -- [6]
+		"/tsm", -- [7]
+		"/p if not will try again later", -- [8]
+		"/invite lillys-blackhand", -- [9]
+		"/s launch fireworks out the launchers he raises out the water and we kill him", -- [10]
+		"/npcscan add 66932 Akkalou", -- [11]
+		"/s two druids just went to get some", -- [12]
+		"/p well looks like its slow right now good luck will try again later", -- [13]
+		"/p np", -- [14]
+		"/p lets go", -- [15]
+		"/dance", -- [16]
+		"/hekili", -- [17]
+		"/cw Xugaaz-WyrmrestAccord TY!", -- [18]
+		"/cw Peroyjenkins-Mal'Ganis TY", -- [19]
+		"/opie", -- [20]
+	},
+	["CliqueDatatext"] = {
 	},
 }

@@ -1,3 +1,0 @@
-
-failState = "true"
-levelState = "true"

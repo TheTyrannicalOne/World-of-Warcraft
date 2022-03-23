@@ -2,10 +2,18 @@
 RematchSaved = {
 }
 RematchSettings = {
+	["PetCardYPos"] = 1232,
 	["JournalUsed"] = true,
+	["XPos"] = 995.0079345703125,
+	["SpecialSlots"] = {
+	},
+	["SelectedTab"] = 1,
 	["DialogYPos"] = 667.0057983398438,
-	["HidePetToast"] = true,
+	["YPos"] = 418.0044860839844,
 	["QueueSanctuary"] = {
+	},
+	["HidePetToast"] = true,
+	["LevelingQueue"] = {
 	},
 	["Sort"] = {
 		["Order"] = 2,
@@ -13,13 +21,59 @@ RematchSettings = {
 	},
 	["JournalPanel"] = 1,
 	["BackupCount"] = 0,
+	["TeamGroups"] = {
+		{
+			"General", -- [1]
+			"Interface\\Icons\\PetJournalPortrait", -- [2]
+		}, -- [1]
+	},
+	["DialogXPos"] = 1343.008666992188,
+	["Filters"] = {
+		["Other"] = {
+		},
+		["Expansion"] = {
+		},
+		["Script"] = {
+		},
+		["Moveset"] = {
+		},
+		["Tough"] = {
+		},
+		["Level"] = {
+		},
+		["Sources"] = {
+		},
+		["Similar"] = {
+		},
+		["Breed"] = {
+		},
+		["Rarity"] = {
+		},
+		["Strong"] = {
+		},
+		["Collected"] = {
+		},
+		["Favorite"] = {
+		},
+		["Types"] = {
+		},
+	},
+	["ExpandedOptHeaders"] = {
+	},
+	["FavoriteFilters"] = {
+	},
 	["PetCardXPos"] = 401,
+	["QueueSortOrder"] = 1,
+	["CollapsedOptHeaders"] = {
+	},
+	["ExpandedTargetHeaders"] = {
+	},
 	["ElvUIToastDefaulted"] = true,
 	["ActivePanel"] = 1,
 	["Sanctuary"] = {
 	},
-	["YPos"] = 418.0044860839844,
-	["SelectedTab"] = 1,
+	["PreferredMode"] = 1,
+	["CornerPos"] = "BOTTOMLEFT",
 	["ScriptFilters"] = {
 		{
 			"Unnamed Pets", -- [1]
@@ -42,61 +96,7 @@ RematchSettings = {
 			"-- Pets with three or more attack types different than their pet type.\n\nlocal count = 0\nfor _,abilityID in ipairs(abilityList) do\n  local abilityType,noHints = select(7, C_PetBattles.GetAbilityInfoByID(abilityID) )\n  if not noHints and abilityType~=petType then\n    count = count + 1\n  end\nend\n\nreturn count>=3\n", -- [2]
 		}, -- [5]
 	},
-	["QueueSortOrder"] = 1,
-	["XPos"] = 995.0079345703125,
-	["LevelingQueue"] = {
-	},
-	["DialogXPos"] = 1343.008666992188,
-	["TeamGroups"] = {
-		{
-			"General", -- [1]
-			"Interface\\Icons\\PetJournalPortrait", -- [2]
-		}, -- [1]
-	},
-	["Filters"] = {
-		["Other"] = {
-		},
-		["Expansion"] = {
-		},
-		["Script"] = {
-		},
-		["Types"] = {
-		},
-		["Favorite"] = {
-		},
-		["Collected"] = {
-		},
-		["Strong"] = {
-		},
-		["Similar"] = {
-		},
-		["Breed"] = {
-		},
-		["Rarity"] = {
-		},
-		["Sources"] = {
-		},
-		["Level"] = {
-		},
-		["Tough"] = {
-		},
-		["Moveset"] = {
-		},
-	},
-	["ExpandedOptHeaders"] = {
-	},
-	["CollapsedOptHeaders"] = {
-	},
-	["ExpandedTargetHeaders"] = {
-	},
-	["PetCardYPos"] = 1232,
-	["SpecialSlots"] = {
-	},
-	["FavoriteFilters"] = {
-	},
-	["CornerPos"] = "BOTTOMLEFT",
 	["AllowHiddenPetsDefaulted"] = true,
-	["PreferredMode"] = 1,
 	["UseTypeBar"] = true,
 	["CustomScaleValue"] = 100,
 	["PetNotes"] = {

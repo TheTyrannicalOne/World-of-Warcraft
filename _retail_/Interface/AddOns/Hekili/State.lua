@@ -2031,7 +2031,9 @@ local mt_state = {
 
         -- The next block are values that reference an ability.
         local action = t.this_action
+        local model = t.action[ action ]
         local ability = class.abilities[ action ]
+        local cooldown = t.cooldown[ action ]
 
         if k == "time" then
             -- Calculate time in combat.
@@ -2057,24 +2059,24 @@ local mt_state = {
             return ability and ability.cooldown or 0
 
         elseif k == "charges" then
-            return t.cooldown[ action ].charges
+            return cooldown.charges
 
         elseif k == "charges_fractional" then
-            return t.cooldown[ action ].charges_fractional
+            return cooldown.charges_fractional
 
         elseif k == "time_to_max_charges" or k == "full_recharge_time" then
-                return ( ( ability.charges or 1 ) - t.charges_fractional ) * ( ability.recharge or ability.cooldown )
+            return cooldown.full_recharge_time
 
         elseif k == "max_charges" or k == "charges_max" then
             return ability and ability.charges or 1
 
         elseif k == "recharge" then
             -- TODO: Recheck what value SimC would use for recharge if an ability doesn't have charges.
-            return t.cooldown[ action ].recharge
+            return cooldown.recharge
 
         elseif k == "recharge_time" then
             -- TODO: Recheck what value SimC would use for recharge if an ability doesn't have charges.
-            return t.cooldown[ action ].recharge_time
+            return cooldown.recharge_time
 
         elseif k == "cost" then
             if ability then
@@ -2102,7 +2104,7 @@ local mt_state = {
             return ability and ability.critical or t.stat.crit
 
         elseif k == "in_range" then
-            return t.action[ action ].in_range
+            return model.in_range
 
         end
 
@@ -2731,7 +2733,7 @@ local mt_default_cooldown = {
             end
         end
 
-        local raw = state.display ~= "Primary" and state.display ~= "AOE"
+        local raw = ( state.display ~= "Primary" and state.display ~= "AOE" ) or ( profile.toggles.cooldowns.value and profile.toggles.cooldowns.separate and profile.specs[ state.spec.id ].noFeignedCooldown )
 
         if k:sub(1, 5) == "true_" then
             k = k:sub(6)
@@ -2793,8 +2795,14 @@ local mt_default_cooldown = {
                     duration = 0
                 end ]]
 
+                if not duration then duration = max( ability.recharge or 0, ability.cooldown or 0 ) end
+
+                t.true_duration = duration
+                duration = max( duration, ability.recharge )
+
                 t.charge = charges or 1
-                t.recharge = duration or ability.recharge
+                t.duration = duration
+                t.recharge = duration
 
                 if charges and charges < maxCharges then
                     t.next_charge = start + duration
@@ -2825,8 +2833,8 @@ local mt_default_cooldown = {
             return ability.recharge or ability.cooldown or 0
 
         elseif k == "time_to_max_charges" or k == "full_recharge_time" then
-            if raw then return ( ( ability.charges or 1 ) - t.true_charges_fractional ) * ( ability.recharge or ability.cooldown ) end
-            return ( ( ability.charges or 1 ) - t.charges_fractional ) * ( ability.recharge or ability.cooldown )
+            if raw then return ( ( ability.charges or 1 ) - t.true_charges_fractional ) * t.duration end
+            return ( ( ability.charges or 1 ) - t.charges_fractional ) * t.duration
 
         elseif k == "remains" then
             if t.key == "global_cooldown" then
@@ -2979,7 +2987,7 @@ local mt_gcd = {
 
         elseif k == "remains" then
             return state.cooldown.global_cooldown.remains
-        
+
         elseif k == "expires" then
             return state.cooldown.global_cooldown.expires
 
@@ -3294,8 +3302,15 @@ local mt_alias_buff = {
         if k == "count" or k == "stack" or k == "stacks" then
             local n = 0
 
-            for i, child in ipairs( aura.alias ) do
-                if state[ type ][ child ].up then n = n + max( 1, state[ type ][ child ].stack ) end
+            if type == "any" then
+                for i, child in ipairs( aura.alias ) do
+                    if state.buff[ child ].up then n = n + max( 1, state.buff[ child ].stack ) end
+                    if state.debuff[ child ].up then n = n + max( 1, state.debuff[ child ].stack ) end
+                end
+            else
+                for i, child in ipairs( aura.alias ) do
+                    if state[ type ][ child ].up then n = n + max( 1, state[ type ][ child ].stack ) end
+                end
             end
 
             return n
@@ -3306,7 +3321,14 @@ local mt_alias_buff = {
         local mode = aura.aliasMode or "first"
 
         for i, v in ipairs( aura.alias ) do
-            local child = state[ type ][ v ]
+            local child
+
+            if type == "any" then
+                child = state.debuff[ v ].up and state.debuff[ v ] or state.buff[ v ]
+            else
+                child = state[ type ][ v ]
+            end
+
             if not alias and mode == "first" and child.up then return child[ k ] end
 
             if child.up then
@@ -3314,6 +3336,8 @@ local mt_alias_buff = {
                 elseif mode == "longest" and ( not alias or child.remains > alias.remains ) then alias = child end
             end
         end
+
+        if type == "any" then type = "buff" end
 
         if alias then return alias[ k ]
         else return state[ type ][ aura.alias[1] ][ k ] end
@@ -3529,7 +3553,7 @@ local mt_buffs = {
             if Hekili.PLAYER_ENTERING_WORLD and not buffs_warned[ k ] then
                 Hekili:Error( "Unknown buff: " .. k )
                 buffs_warned[ k ] = true
-            end            
+            end
             return unknown_buff
         end
 
@@ -4105,7 +4129,7 @@ do
                         end
 
                         -- Cache the value in case it is an intermediate value (i.e., multiple calculation steps).
-                        if debug then Hekili:Debug( var .. " #" .. i .. " [" .. scriptID .. "]; conditions = " .. conditions .. " - value = " .. tostring( value or "nil" .. "." ) ) end
+                        if debug then Hekili:Debug( var .. " #" .. i .. " [" .. scriptID .. "]; conditions = " .. conditions .. " - value = " .. tostring( value or "nil" ) .. "." ) end
                         state.variable[ var ] = value
                         cache[ var ][ pathKey ] = value
                     end
@@ -4181,8 +4205,15 @@ local mt_alias_debuff = {
         if k == "count" or k == "stack" or k == "stacks" then
             local n = 0
 
-            for i, child in ipairs( aura.alias ) do
-                if state[ type ][ child ].up then n = n + max( 1, state[ type ][ child ].stack ) end
+            if type == "any" then
+                for i, child in ipairs( aura.alias ) do
+                    if state.buff[ child ].up then n = n + max( 1, state.buff[ child ].stack ) end
+                    if state.debuff[ child ].up then n = n + max( 1, state.debuff[ child ].stack ) end
+                end
+            else
+                for i, child in ipairs( aura.alias ) do
+                    if state[ type ][ child ].up then n = n + max( 1, state[ type ][ child ].stack ) end
+                end
             end
 
             return n
@@ -4192,7 +4223,14 @@ local mt_alias_debuff = {
         local mode = aura.aliasMode or "first"
 
         for i, v in ipairs( aura.alias ) do
-            local child = state[ type ][ v ]
+            local child
+
+            if type == "any" then
+                child = state.buff[ v ].up and state.buff[ v ] or state.debuff[ v ]
+            else
+                child = state.debuff[ v ]
+            end
+
             if not alias and mode == "first" and child.up then return child[ k ] end
 
             if child.up then
@@ -4200,6 +4238,8 @@ local mt_alias_debuff = {
                 elseif mode == "longest" and ( not alias or child.remains > alias.remains ) then alias = child end
             end
         end
+
+        if type == "any" then type = "debuff" end
 
         if alias then return alias[ k ]
         else return state[ type ][ aura.alias[1] ][ k ] end
@@ -4661,7 +4701,7 @@ local mt_default_action = {
 
         elseif k == "cycle" then
             return ability.cycle == "cycle"
-        
+
         else
             local val = ability[ k ]
 
@@ -4732,7 +4772,7 @@ local mt_swing_timer = {
     __index = function( t, k )
         local speed = state.swings[ t.type .. "_speed" ]
         if speed == 0 then return 999 end
-        
+
         local swing = state.time == 0 and state.now or state.swings.mainhand
         if swing == 0 then return speed end
 
@@ -4918,39 +4958,41 @@ do
 
         local i = 1
         while ( true ) do
-            local name, _, count, _, duration, expires, caster, _, _, spellID, _, _, _, _, timeMod, v1, v2, v3 = UnitBuff( unit, i, "PLAYER" )
+            local name, _, count, _, duration, expires, caster, _, _, spellID, _, _, _, _, timeMod, v1, v2, v3 = UnitBuff( unit, i )
             if not name then break end
 
-            local key = class.auras[ spellID ] and class.auras[ spellID ].key
-            -- if not key then key = class.auras[ name ] and class.auras[ name ].key end
-            if not key then key = autoAuraKey[ spellID ] end
+            if caster and ( UnitIsUnit( "pet", caster ) or UnitIsUnit( "player", caster ) ) then
+                local key = class.auras[ spellID ] and class.auras[ spellID ].key
+                -- if not key then key = class.auras[ name ] and class.auras[ name ].key end
+                if not key then key = autoAuraKey[ spellID ] end
 
-            if key then
-                db.buff[ key ] = db.buff[ key ] or {}
-                local buff = db.buff[ key ]
+                if key then
+                    db.buff[ key ] = db.buff[ key ] or {}
+                    local buff = db.buff[ key ]
 
-                if expires == 0 then
-                    expires = GetTime() + 3600
-                    duration = 7200
+                    if expires == 0 then
+                        expires = GetTime() + 3600
+                        duration = 7200
+                    end
+
+                    buff.key = key
+                    buff.id = spellID
+                    buff.name = name
+                    buff.count = count > 0 and count or 1
+                    buff.expires = expires
+                    buff.duration = duration
+                    buff.applied = expires - duration
+                    buff.caster = caster
+                    buff.timeMod = timeMod
+                    buff.v1 = v1
+                    buff.v2 = v2
+                    buff.v3 = v3
+
+                    buff.last_application = buff.last_application or 0
+                    buff.last_expiry      = buff.last_expiry or 0
+
+                    buff.unit = unit
                 end
-
-                buff.key = key
-                buff.id = spellID
-                buff.name = name
-                buff.count = count > 0 and count or 1
-                buff.expires = expires
-                buff.duration = duration
-                buff.applied = expires - duration
-                buff.caster = caster
-                buff.timeMod = timeMod
-                buff.v1 = v1
-                buff.v2 = v2
-                buff.v3 = v3
-
-                buff.last_application = buff.last_application or 0
-                buff.last_expiry      = buff.last_expiry or 0
-
-                buff.unit = unit
             end
 
             i = i + 1
@@ -4958,37 +5000,38 @@ do
 
         i = 1
         while ( true ) do
-            local name, _, count, _, duration, expires, caster, _, _, spellID, _, _, _, _, timeMod, v1, v2, v3 = UnitDebuff( unit, i, unit ~= "player" and "PLAYER" or nil )
+            local name, _, count, _, duration, expires, caster, _, _, spellID, _, _, _, _, timeMod, v1, v2, v3 = UnitDebuff( unit, i )
             if not name then break end
 
+            if caster and ( UnitIsUnit( "pet", caster ) or UnitIsUnit( "player", caster ) ) then
+                local key = class.auras[ spellID ] and class.auras[ spellID ].key
+                -- if not key then key = class.auras[ name ] and class.auras[ name ].key end
+                if not key then key = autoAuraKey[ spellID ] end
 
-            local key = class.auras[ spellID ] and class.auras[ spellID ].key
-            -- if not key then key = class.auras[ name ] and class.auras[ name ].key end
-            if not key then key = autoAuraKey[ spellID ] end
+                if key then
+                    db.debuff[ key ] = db.debuff[ key ] or {}
+                    local debuff = db.debuff[ key ]
 
-            if key then
-                db.debuff[ key ] = db.debuff[ key ] or {}
-                local debuff = db.debuff[ key ]
+                    if expires == 0 then
+                        expires = GetTime() + 3600
+                        duration = 7200
+                    end
 
-                if expires == 0 then
-                    expires = GetTime() + 3600
-                    duration = 7200
+                    debuff.key = key
+                    debuff.id = spellID
+                    debuff.name = name
+                    debuff.count = count > 0 and count or 1
+                    debuff.expires = expires
+                    debuff.duration = duration
+                    debuff.applied = expires - duration
+                    debuff.caster = caster
+                    debuff.timeMod = timeMod
+                    debuff.v1 = v1
+                    debuff.v2 = v2
+                    debuff.v3 = v3
+
+                    debuff.unit = unit
                 end
-
-                debuff.key = key
-                debuff.id = spellID
-                debuff.name = name
-                debuff.count = count > 0 and count or 1
-                debuff.expires = expires
-                debuff.duration = duration
-                debuff.applied = expires - duration
-                debuff.caster = caster
-                debuff.timeMod = timeMod
-                debuff.v1 = v1
-                debuff.v2 = v2
-                debuff.v3 = v3
-
-                debuff.unit = unit
             end
 
             i = i + 1
@@ -5202,7 +5245,7 @@ do
 
     Hekili:ProfileCPU( "QueueEvent", state.QueueEvent )
 
-    function state:QueueAuraEvent( action, func, time, eType )
+    function state:QueueAuraEvent( action, func, time, eType, data )
         local queue = virtualQueue
         local e = NewEvent()
 
@@ -5214,6 +5257,7 @@ do
         e.time   = time
         e.type   = eType
         e.target = "nobody"
+        e.data   = data
 
         insert( queue, e )
         sort( queue, byTime )
@@ -5238,8 +5282,8 @@ do
         end
     end
 
-    function state:QueueAuraExpiration( action, func, time )
-        self:QueueAuraEvent( action, func, time, "AURA_EXPIRATION" )
+    function state:QueueAuraExpiration( action, func, time, data )
+        self:QueueAuraEvent( action, func, time, "AURA_EXPIRATION", data )
     end
 
     function state:RemoveAuraExpiration( action )
@@ -5311,10 +5355,12 @@ do
 
         local success = false
 
+        local impactSpells = class.abilities[ action ] and class.abilities[ action ].impactSpells
+
         for i = #queue, 1, -1 do
             local e = queue[ i ]
 
-            if e.action == action and ( eType == nil or e.type == eType ) then
+            if ( e.action == action or impactSpells and impactSpells[ action ] ) and ( eType == nil or e.type == eType ) then
                 RecycleEvent( queue, i )
                 success = true
             end
@@ -5454,7 +5500,7 @@ do
             self:StartCombat()
 
         elseif e.type == "AURA_EXPIRATION" then
-            if e.func then e.func() end
+            if e.func then e.func( e.data ) end
 
         end
 
@@ -5941,7 +5987,7 @@ function state.reset( dispName )
 
         state.rangefilter = display.range.enabled and display.range.type == "xclude"
     end
-            
+
     -- Special case spells that suck.
     if class.abilities[ "ascendance" ] and state.buff.ascendance.up then
         setCooldown( "ascendance", state.buff.ascendance.remains + 165 )
@@ -5950,6 +5996,7 @@ function state.reset( dispName )
     -- Trinkets that need special handling.
     if state.set_bonus.cache_of_acquired_treasures > 0 then
         -- This required changing how buffs are tracked (that applied time is greater than the query time, which was always just expected to be true before).
+        -- If this remains problematic, use QueueAuraExpiration instead.
         if state.buff.acquired_sword.up then
             state.applyBuff( "acquired_axe" )
             state.buff.acquired_axe.expires = state.buff.acquired_sword.expires + 12
@@ -6412,7 +6459,7 @@ function state:IsKnown( sID, notoggle )
             return ability.known
         end
 
-        if ability.item then
+        if ability.item and ability.key ~= "potion" then
             return IsUsableItem( ability.item ), "IsUsableItem item " .. ability.item .. " and " .. ( tostring( ability.known ) or "nil" )
         end
 
@@ -6520,7 +6567,6 @@ do
     -- TODO:  Finish this, need to support toggles that knock spells to their own display vs. toggles that disable an ability entirely.
     function state:IsFiltered( spell )
         if state.filter == "none" then return false end
-
         spell = spell or self.this_action
 
         local ability = class.abilities[ spell ]
@@ -6530,9 +6576,7 @@ do
 
         local profile = Hekili.DB.profile
         local spec = profile.specs[ state.spec.id ]
-
         local option = ability.item and spec.items[ spell ] or spec.abilities[ spell ]
-
         local toggle = option.toggle
         if not toggle or toggle == "default" then toggle = ability.toggle end
 
@@ -6540,7 +6584,7 @@ do
             if state.filter ~= "none" and state.filter ~= toggle and not ability[ state.filter ] then return true, "display"
             elseif ability.item and not ability.bagItem and not state.equipped[ ability.item ] then return false, "not equipped"
             elseif toggle and toggle ~= "none" then
-                if not self.toggle[ toggle ] or ( profile.toggles[ toggle ].separate and state.filter ~= toggle ) then return true, "toggle" end
+                if not self.toggle[ toggle ] or ( profile.toggles[ toggle ].separate and state.filter ~= toggle and not spec.noFeignedCooldown ) then return true, "toggle" end
             end
         end
 
@@ -6780,7 +6824,7 @@ function state:TimeToReady( action, pool )
         end
     end
 
-    local line_cd = state.args.line_cd    
+    local line_cd = state.args.line_cd
     if ( line_cd and type( line_cd ) == "number" ) then
         if lastCast > self.combat then
             if Hekili.Debug then Hekili:Debug( "Line CD is " .. line_cd .. ", last cast was " .. lastCast .. ", remaining CD: " .. max( 0, lastCast + line_cd - now ) ) end

@@ -1,12 +1,48 @@
-3/14 18:57:43.586  Loading add-on AngryWorldQuests
-3/14 18:57:43.586  ** Loading table of contents Interface\AddOns\AngryWorldQuests\AngryWorldQuests.toc
-3/14 18:57:43.586  (null)
-3/14 18:57:43.586  Loading add-on Overachiever
-3/14 18:57:43.586  ** Loading table of contents Interface\AddOns\Overachiever\Overachiever.toc
-3/14 18:57:43.586  (null)
-3/14 18:57:56.495  Loading add-on Overachiever_Trade
-3/14 18:57:56.495  ** Loading table of contents Interface\AddOns\Overachiever_Trade\Overachiever_Trade.toc
-3/14 18:57:56.495  (null)
-3/14 18:58:07.778  Loading add-on Overachiever_Tabs
-3/14 18:58:07.778  ** Loading table of contents Interface\AddOns\Overachiever_Tabs\Overachiever_Tabs.toc
-3/14 18:58:07.778  (null)
+3/22 03:36:43.474  Loading add-on AngryWorldQuests
+3/22 03:36:43.474  ** Loading table of contents Interface\AddOns\AngryWorldQuests\AngryWorldQuests.toc
+3/22 03:36:43.474  (null)
+3/22 03:36:43.474  Loading add-on NPCScan
+3/22 03:36:43.474  Interface\AddOns\NPCScan\Bindings.xml(1): error: not well-formed (invalid token)
+3/22 03:36:43.474  Loading add-on Overachiever
+3/22 03:36:43.474  ** Loading table of contents Interface\AddOns\Overachiever\Overachiever.toc
+3/22 03:36:43.474  (null)
+3/22 03:36:43.474  Loading add-on Paste
+3/22 03:36:43.474  ** Loading table of contents Interface\AddOns\Paste\Paste.toc
+3/22 03:36:43.474  ++ Loading file Interface\AddOns\Paste\embeds.xml
+3/22 03:36:43.474  Interface\AddOns\Paste\libs\AceAddon-3.0\AceAddon-3.0.xml(1): error: not well-formed (invalid token)
+3/22 03:36:43.474  Interface\AddOns\Paste\libs\AceConfig-3.0\AceConfig-3.0.xml(1): error: not well-formed (invalid token)
+3/22 03:36:43.474  Interface\AddOns\Paste\libs\AceConsole-3.0\AceConsole-3.0.xml(1): error: not well-formed (invalid token)
+3/22 03:36:43.474  Interface\AddOns\Paste\libs\AceDB-3.0\AceDB-3.0.xml(1): error: not well-formed (invalid token)
+3/22 03:36:43.474  Interface\AddOns\Paste\libs\AceDBOptions-3.0\AceDBOptions-3.0.xml(1): error: not well-formed (invalid token)
+3/22 03:36:43.474  Interface\AddOns\Paste\Bindings.xml(1): error: not well-formed (invalid token)
+3/22 03:36:43.474  Loading add-on PetEmote
+3/22 03:36:43.474  Interface\AddOns\PetEmote\Bindings.xml(1): error: not well-formed (invalid token)
+3/22 03:36:43.474  Loading add-on RareShareMechagon
+3/22 03:36:43.474  ** Loading table of contents Interface\AddOns\RareShareMechagon\RareShareMechagon.toc
+3/22 03:36:43.474  (null)
+3/22 03:36:43.474  Loading add-on RareShareNazjatar
+3/22 03:36:43.474  ** Loading table of contents Interface\AddOns\RareShareNazjatar\RareShareNazjatar.toc
+3/22 03:36:43.474  (null)
+3/22 03:36:43.474  Loading add-on RareShare_Uldum
+3/22 03:36:43.474  ** Loading table of contents Interface\AddOns\RareShare_Uldum\RareShare_Uldum.toc
+3/22 03:36:43.474  (null)
+3/22 03:36:43.474  Loading add-on RareShare_Vale of Eternal Blossoms
+3/22 03:36:43.474  ** Loading table of contents Interface\AddOns\RareShare_Vale of Eternal Blossoms\RareShare_Vale of Eternal Blossoms.toc
+3/22 03:36:43.474  (null)
+3/22 03:36:43.474  Loading add-on TargetNameplateIndicator
+3/22 03:36:43.474  ** Loading table of contents Interface\AddOns\TargetNameplateIndicator\TargetNameplateIndicator.toc
+3/22 03:36:43.474  Interface\AddOns\TargetNameplateIndicator\Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml(1): error: not well-formed (invalid token)
+3/22 03:36:43.474  Interface\AddOns\TargetNameplateIndicator\Libs\AceEvent-3.0\AceEvent-3.0.xml(1): error: not well-formed (invalid token)
+3/22 03:36:43.474  Interface\AddOns\TargetNameplateIndicator\Libs\AceConsole-3.0\AceConsole-3.0.xml(1): error: not well-formed (invalid token)
+3/22 03:36:43.474  Interface\AddOns\TargetNameplateIndicator\Libs\AceDB-3.0\AceDB-3.0.xml(1): error: not well-formed (invalid token)
+3/22 03:36:43.474  Interface\AddOns\TargetNameplateIndicator\Libs\AceConfig-3.0\AceConfig-3.0.xml(1): error: not well-formed (invalid token)
+3/22 03:36:43.474  Interface\AddOns\TargetNameplateIndicator\Libs\AceDBOptions-3.0\AceDBOptions-3.0.xml(1): error: not well-formed (invalid token)
+3/22 03:36:43.474  Interface\AddOns\TargetNameplateIndicator\Libs\AceAddon-3.0\AceAddon-3.0.xml(1): error: not well-formed (invalid token)
+3/22 03:36:43.474  Interface\AddOns\TargetNameplateIndicator\Libs\AceLocale-3.0\AceLocale-3.0.xml(1): error: not well-formed (invalid token)
+3/22 03:36:43.474  Interface\AddOns\TargetNameplateIndicator\Libs\LibNameplateRegistry-1.0\LibNameplateRegistry-1.0\LibNameplateRegistry-1.0.xml(1): error: not well-formed (invalid token)
+3/22 03:36:55.823  Loading add-on Overachiever_Trade
+3/22 03:36:55.823  ** Loading table of contents Interface\AddOns\Overachiever_Trade\Overachiever_Trade.toc
+3/22 03:36:55.823  (null)
+3/22 03:37:07.323  Loading add-on Overachiever_Tabs
+3/22 03:37:07.323  ** Loading table of contents Interface\AddOns\Overachiever_Tabs\Overachiever_Tabs.toc
+3/22 03:37:07.323  (null)

@@ -66,6 +66,7 @@ local specTemplate = {
     -- Toggles
     custom1Name = "Custom 1",
     custom2Name = "Custom 2",
+    noFeignedCooldown = false,
 
     abilities = {
         ['**'] = {
@@ -87,7 +88,7 @@ local specTemplate = {
             boss = false,
             criteria = nil
         }
-    },                    
+    },
     settings = {},
     cooldowns = {},
     utility = {},
@@ -296,7 +297,7 @@ local HekiliSpecMixin = {
                         -- Copy to class table as well.
                         class.auras[ a.name ] = a
                     end
-                    
+
                     if self.pendingItemSpells[ a.name ] then
                         local items = self.pendingItemSpells[ a.name ]
 
@@ -475,7 +476,7 @@ local HekiliSpecMixin = {
     RegisterRecheck = function( self, func )
         self.recheck = func
     end,
-    
+
     RegisterHook = function( self, hook, func )
         self.hooks[ hook ] = self.hooks[ hook ] or {}
         insert( self.hooks[ hook ], setfenv( func, state ) )
@@ -524,12 +525,12 @@ local HekiliSpecMixin = {
         if not data.charges  then data.charges = 1 end
 
         if data.hasteCD then
-            if type( data.cooldown ) == "number" and data.cooldown > 0 then data.cooldown = loadstring( "return " .. data.cooldown .. " * haste" ) end
-            if type( data.recharge ) == "number" and data.recharge > 0 then data.recharge = loadstring( "return " .. data.recharge .. " * haste" ) end
+            if type( data.cooldown ) == "number" and data.cooldown > 0 then data.cooldown = Hekili:Loadstring( "return " .. data.cooldown .. " * haste" ) end
+            if type( data.recharge ) == "number" and data.recharge > 0 then data.recharge = Hekili:Loadstring( "return " .. data.recharge .. " * haste" ) end
         end
 
         if not data.fixedCast and type( data.cast ) == "number" then
-            data.cast = loadstring( "return " .. data.cast .. " * haste" )
+            data.cast = Hekili:Loadstring( "return " .. data.cast .. " * haste" )
         end
 
         if data.toggle == "interrupts" and data.gcd == "off" and data.readyTime == state.timeToInterrupt and data.interrupt == nil then
@@ -623,7 +624,7 @@ local HekiliSpecMixin = {
                                     a.itemSpellKey = itemAura.key .. "_" .. a.itemSpellID
                                     self.abilities[ a.itemSpellKey ] = a
                                     class.abilities[ a.itemSpellKey ] = a
-                                    
+
                                 else
                                     if self.pendingItemSpells[ a.itemSpellName ] then
                                         if type( self.pendingItemSpells[ a.itemSpellName ] ) == 'table' then
@@ -675,7 +676,7 @@ local HekiliSpecMixin = {
                                         if name then
                                             class.abilities[ name ] = a
                                             self.abilities[ name ]  = a
-                                            
+
                                             if not class.itemList[ id ] then
                                                 class.itemList[ id ] = "|T" .. ( a.texture or texture ) .. ":0|t " .. link
                                                 addedToItemList = true
@@ -769,7 +770,7 @@ local HekiliSpecMixin = {
             for _, itemID in ipairs( data.items ) do
                 class.itemMap[ itemID ] = ability
             end
-        end        
+        end
 
         if a.castableWhileCasting or a.funcs.castableWhileCasting then
             self.canCastWhileCasting = true
@@ -840,7 +841,7 @@ local HekiliSpecMixin = {
     end,
 
     -- option should be an AceOption table.
-    RegisterSetting = function( self, key, value, option )        
+    RegisterSetting = function( self, key, value, option )
         table.insert( self.settings, {
             name = key,
             default = value,
@@ -848,7 +849,7 @@ local HekiliSpecMixin = {
         } )
 
         option.order = 100 + #self.settings
-        
+
         option.get = option.get or function( info )
             local setting = info[ #info ]
             local val = Hekili.DB.profile.specs[ self.id ].settings[ setting ]
@@ -877,7 +878,7 @@ function Hekili:RestoreDefaults()
     for k, v in pairs( class.packs ) do
         local existing = rawget( p.packs, k )
 
-        if not existing or not existing.version or existing.version < v.version then            
+        if not existing or not existing.version or existing.version < v.version then
             local data = self:DeserializeActionPack( v.import )
 
             if data and type( data ) == 'table' then
@@ -911,7 +912,7 @@ function Hekili:RestoreDefaults()
             msg = "The " .. msg .. ", and |cFFFFD100" .. changed[ #changed ] .. "|r priorities were updated."
         end
 
-        if msg then C_Timer.After( 5, function() 
+        if msg then C_Timer.After( 5, function()
             if Hekili.DB.profile.notifications.enabled then Hekili:Notify( msg, 6 ) end
             Hekili:Print( msg )
         end ) end
@@ -965,7 +966,7 @@ function Hekili:NewSpecialization( specID, isRanged )
     if not specID or specID < 0 then return end
 
     local id, name, _, texture, role, pClass
-    
+
     if specID > 0 then id, name, _, texture, role, pClass = GetSpecializationInfoByID( specID )
     else id = specID end
 
@@ -1035,6 +1036,12 @@ function Hekili:NewSpecialization( specID, isRanged )
 end
 
 
+function Hekili:GetSpecialization( specID )
+    if not specID then return class.specs[ 0 ] end
+    return class.specs[ specID ]
+end
+
+
 class.file = UnitClassBase( "player" )
 local all = Hekili:NewSpecialization( 0, "All", "Interface\\Addons\\Hekili\\Textures\\LOGO-WHITE.blp" )
 
@@ -1077,14 +1084,14 @@ all:RegisterAuras( {
         id = 194249,
         duration = 15,
         max_stack = 1,
-    },    
+    },
 
     adrenaline_rush = {
         id = 13750,
         duration = 20,
         max_stack = 1,
     },
-    
+
     -- Bloodlusts
     ancient_hysteria = {
         id = 90355,
@@ -1519,14 +1526,14 @@ all:RegisterAuras( {
 
     arcane_pulse = {
         id = 260369,
-        duration = 12,        
+        duration = 12,
     },
 
     fireblood = {
         id = 273104,
         duration = 8,
     },
-   
+
     out_of_range = {
         generate = function ()
             local oor = buff.out_of_range
@@ -1550,13 +1557,13 @@ all:RegisterAuras( {
         duration = 10,
         generate = function( t )
             local max_events = GetActiveLossOfControlDataCount()
-            
+
             if max_events > 0 then
                 local spell, start, duration, remains = "none", 0, 0, 0
 
                 for i = 1, max_events do
                     local event = GetActiveLossOfControlData( i )
-                    
+
                     if event.lockoutSchool == 0 and event.startTime and event.startTime > 0 and event.timeRemaining and event.timeRemaining > 0 and event.startTime > start and event.timeRemaining > remains then
                         spell = event.spellID
                         start = event.startTime
@@ -1686,18 +1693,18 @@ all:RegisterAuras( {
                     t.caster = "nobody"
                     return
                 end
-            
+
             else
                 local i = 1
                 local name, _, count, debuffType, duration, expirationTime = UnitDebuff( "player", i, "RAID" )
-    
+
                 while( name ) do
                     if debuffType == "Magic" then break end
-    
+
                     i = i + 1
                     name, _, count, debuffType, duration, expirationTime = UnitDebuff( "player", i, "RAID" )
                 end
-    
+
                 if name then
                     t.count = count > 0 and count or 1
                     t.expires = expirationTime > 0 and expirationTime or query_time + 5
@@ -1705,7 +1712,7 @@ all:RegisterAuras( {
                     t.caster = "nobody"
                     return
                 end
-            
+
             end
 
             t.count = 0
@@ -1812,7 +1819,7 @@ all:RegisterPotions( {
     potion_of_spectral_agility = {
         item = 171270,
         buff = "potion_of_spectral_agility",
-        copy = "spectral_agility",        
+        copy = "spectral_agility",
     },
     potion_of_spiritual_clarity = {
         item = 171272,
@@ -1888,9 +1895,9 @@ all:RegisterPotions( {
     },
     superior_steelskin_potion = {
         item = 168501,
-        buff = 'superior_steelskin_potion',        
+        buff = 'superior_steelskin_potion',
     },
-    
+
     -- 8.0
     battle_potion_of_agility = {
         item = 163223,
@@ -2274,7 +2281,7 @@ all:RegisterAbilities( {
         cooldown = 180,
         gcd = "off",
 
-        toggle = "defensives",        
+        toggle = "defensives",
     },
 
     shadowmeld = {
@@ -2342,7 +2349,7 @@ all:RegisterAbilities( {
         toggle = "cooldowns",
 
         -- usable = function () return race.dark_iron_dwarf end,
-        handler = function () applyBuff( "fireblood" ) end,            
+        handler = function () applyBuff( "fireblood" ) end,
     },
 
 
@@ -2382,7 +2389,7 @@ all:RegisterAbilities( {
         name = "|cff00ccff[Cancel Action]|r",
         cast = 0,
         cooldown = 0,
-        gcd = "off",        
+        gcd = "off",
     },
 
     variable = {
@@ -2402,6 +2409,28 @@ all:RegisterAbilities( {
         startsCombat = false,
         toggle = "potions",
 
+        item = function ()
+            local potion = args.potion or args.name
+            if not potion or potion == default then potion = class.potion end
+            potion = class.potions[ potion ]
+
+            if potion then return potion.item end
+        end,
+        bagItem = true,
+
+        timeToReady = function ()
+            local potion = args.potion or args.name
+            if not potion or potion == "default" then potion = class.potion end
+            potion = class.potions[ potion ]
+
+            if potion then
+                local start, dur = GetItemCooldown( potion.item )
+                return max( 0, start + dur - query_time )
+            end
+
+            return 3600
+        end,
+
         handler = function ()
             local potion = args.potion or args.name
             if not potion or potion == "default" then potion = class.potion end
@@ -2415,9 +2444,9 @@ all:RegisterAbilities( {
         usable = function ()
             local pName = args.potion or args.name
             if not pName or pName == "default" then pName = class.potion end
+            local potion = class.potions[ pName ]
 
-            local potion = class.potions[ pName ]            
-            if not potion or GetItemCount( potion.item ) == 0 then return false, "no potion found" end
+            if not potion or GetItemCount( potion.item ) == 0 then return false, "no potion found/" .. tostring(potion) .. "/" .. ( potion and potion.item or 0 ) end
 
             return true
         end,
@@ -2443,7 +2472,7 @@ all:RegisterAbilities( {
         end,
 
         readyTime = function ()
-            local start, duration = GetItemCooldown( 5512 )            
+            local start, duration = GetItemCooldown( 5512 )
             return max( 0, start + duration - query_time )
         end,
 
@@ -2468,10 +2497,10 @@ all:RegisterAbilities( {
             local a = class.auras[ args.buff_name ]
             -- if not a then return 134400 end
             if a.texture then return a.texture end
-            
+
             a = a and a.id
             a = a and GetSpellTexture( a )
-            
+
             return a or 134400
         end,
 
@@ -2533,12 +2562,12 @@ do
         cast = 0,
         cooldown = 0,
         gcd = 'off',
-        
+
         item = 158075,
         essence = true,
 
         toggle = "essences",
-        
+
         usable = function () return false, "your equipped major essence is supported elsewhere in the priority or is not an active ability" end
     } )
 end
@@ -2763,7 +2792,7 @@ all:RegisterAbility( "sigil_of_warding", {
     cast = 0,
     cooldown = 120,
     gcd = "off",
-    
+
     item = 173940,
     toggle = "defensives",
 
@@ -2930,7 +2959,7 @@ do
                 applyDebuff( "target", "razor_coral" )
             end
         end
-    } )    
+    } )
 
 
     --[[ local f = CreateFrame("Frame")
@@ -2964,7 +2993,7 @@ do
 
     Hekili:ProfileFrame( "RazorCoralFrame", f )
 
-    all:RegisterStateExpr( "coral_time_to_30", function() 
+    all:RegisterStateExpr( "coral_time_to_30", function()
         if coralGUID == 0 then return 3600 end
         return Hekili:GetTimeToPctByGUID( coralGUID, 30 ) - ( offset + delay )
     end ) ]]
@@ -3093,12 +3122,12 @@ do
     all:RegisterGear( "pocketsized_computation_device", 167555 )
     all:RegisterGear( "cyclotronic_blast", 167672 )
     all:RegisterGear( "harmonic_dematerializer", 167677 )
-    
+
     all:RegisterAura( "cyclotronic_blast", {
         id = 293491,
         duration = function () return 2.5 * haste end,
         max_stack = 1
-    } )    
+    } )
 
     --[[ all:RegisterAbility( "pocketsized_computation_device", {
         -- key = "pocketsized_computation_device",
@@ -3167,7 +3196,7 @@ do
         texture = 2115322,
 
         bind = { "pocketsized_computation_device", "cyclotronic_blast", "inactive_red_punchcard" },
-        
+
         startsCombat = true,
 
         usable = function ()
@@ -3189,7 +3218,7 @@ do
         item = 168989,
 
         handler = function ()
-            -- Gain 5 seconds of CD for the last 3 spells.            
+            -- Gain 5 seconds of CD for the last 3 spells.
             for i = 1, 3 do
                 local ability = prev[i].spell
 
@@ -3202,7 +3231,7 @@ do
         copy = "hyperthread_wristwraps_300142"
     } )
 
-    
+
     all:RegisterAbility( "neural_synapse_enhancer", {
         cast = 0,
         cooldown = 45,
@@ -3211,7 +3240,7 @@ do
         item = 168973,
 
         handler = function ()
-            applyBuff( "enhance_synapses" )            
+            applyBuff( "enhance_synapses" )
         end,
 
         copy = "enhance_synapses_300612"
@@ -3262,7 +3291,7 @@ all:RegisterAbility( "remote_guidance_device", {
     gcd = "off",
 
     item = 169769,
-    toggle = "cooldowns",    
+    toggle = "cooldowns",
 } )
 
 
@@ -3425,7 +3454,7 @@ all:RegisterAbility( "lurkers_insidious_gift", {
     item = 167866,
     toggle = "cooldowns",
 
-    handler = function ()        
+    handler = function ()
         applyBuff( "insidious_gift" )
         applyDebuff( "suffering" )
     end
@@ -3453,7 +3482,7 @@ all:RegisterAbility( "void_stone", {
     cast = 0,
     cooldown = 120,
     gcd = "off",
-    
+
     item = 167865,
     toggle = "defensives",
 
@@ -3475,7 +3504,7 @@ all:RegisterAbility( "kezan_stamped_bijou", {
     cast = 0,
     cooldown = 60,
     gcd = "off",
-    
+
     item = 165662,
     toggle = "cooldowns",
 
@@ -3599,7 +3628,7 @@ all:RegisterAura( "vigor_engaged", {
     id = 287916,
     duration = 3600,
     max_stack = 6
-    -- May need to emulate the stacking portion.    
+    -- May need to emulate the stacking portion.
 } )
 
 all:RegisterAura( "vigor_cooldown", {
@@ -3658,7 +3687,7 @@ all:RegisterAbility( "tidestorm_codex", {
 all:RegisterAura( "bwonsamdis_due", {
     id = 288193,
     duration = 300,
-    max_stack = 1    
+    max_stack = 1
 } )
 
 all:RegisterAura( "bwonsamdis_bargain_fulfilled", {
@@ -4021,7 +4050,7 @@ all:RegisterAura( "tea_time", {
     id = 268504,
     duration = 15,
     max_stack = 1,
-} ) 
+} )
 
 all:RegisterAbility( "bygone_bee_almanac", {
     cast = 0,
@@ -4344,7 +4373,7 @@ do
             for _, medallion in ipairs( pvp_medallions ) do
                 m = medallion[ 2 ]
                 if equipped[ m ] then return m end
-            end            
+            end
             return m
         end,
         items = { 161674, 162897, 165055, 165220, 167377, 167525, 181333, 184052, 184055, 172666, 184058, 185309, 185304, 186966, 186869 },
@@ -4364,7 +4393,7 @@ do
         duration = 20,
         max_stack = 1
     } )
-end 
+end
 
 -- Badges
 do
@@ -4402,7 +4431,7 @@ do
 
         items = { 162966, 161902, 165223, 165058, 167528, 167380, 172849, 172669, 175884, 175921, 185161, 185197, 186906, 186866 },
         texture = 135884,
-            
+
         toggle = "cooldowns",
         item = function ()
             local b
@@ -4429,7 +4458,7 @@ do
         duration = 15,
         max_stack = 1
     } )
-end 
+end
 
 
 -- Insignias -- N/A, not on-use.
@@ -4438,7 +4467,7 @@ all:RegisterAura( "gladiators_insignia", {
     duration = 20,
     max_stack = 1,
     copy = 345230
-} )    
+} )
 
 
 -- Safeguard (equipped, not on-use)
@@ -4477,7 +4506,7 @@ do
         all:RegisterGear( "gladiators_emblem", v )
     end
 
-    
+
     all:RegisterAbility( "gladiators_emblem", {
         name = function () return "\"" .. ( ( GetSpellInfo( 277187 ) ) or "Gladiator's Emblem" ) .. "\"" end,
         link = function () return "|cff00ccff[" .. ( ( GetSpellInfo( 277187 ) ) or "Gladiator's Emblem" ) .. "]|r" end,
@@ -4501,7 +4530,7 @@ do
         end,
 
         copy = pvp_emblems_copy
-    } ) 
+    } )
 
     all:RegisterAura( "gladiators_emblem", {
         id = 277187,
@@ -4930,7 +4959,7 @@ all:RegisterAbility( "faulty_countermeasure", {
 
     handler = function ()
         applyBuff( "sheathed_in_frost" )
-    end        
+    end
 } )
 
 all:RegisterAura( "sheathed_in_frost", {
@@ -4950,7 +4979,7 @@ all:RegisterAbility( "feloiled_infernal_machine", {
 
     handler = function ()
         applyBuff( "grease_the_gears" )
-    end,        
+    end,
 } )
 
 all:RegisterAura( "grease_the_gears", {
@@ -5241,11 +5270,11 @@ all:RegisterAbilities( {
         cast = 0,
         cooldown = 120,
         gcd = "off",
-    
+
         item = 137486,
-    
+
         toggle = "cooldowns",
-    
+
         handler = function ()
             applyBuff( "slicing_maelstrom" )
         end,
@@ -5263,11 +5292,11 @@ all:RegisterAbilities( {
         cast = 0,
         cooldown = 60,
         gcd = "off",
-    
+
         item = 137369,
-    
+
         toggle = "cooldowns",
-    
+
         handler = function ()
             applyBuff( "gaseous_bubble" )
         end,
@@ -5280,15 +5309,15 @@ all:RegisterAbilities( {
             }
         }
     },
-    
+
     bottled_hurricane = {
         cast = 0,
         gcd = "off",
-    
+
         item = 137369,
-    
+
         toggle = "cooldowns",
-    
+
         buff = "gathering_clouds",
 
         handler = function ()
@@ -5303,14 +5332,14 @@ all:RegisterAbilities( {
             }
         }
     },
-    
+
     shard_of_rokmora = {
         cast = 0,
         cooldown = 120,
         gcd = "off",
-    
+
         item = 137338,
-    
+
         toggle = "defensives",
 
         handler = function ()
@@ -5324,17 +5353,17 @@ all:RegisterAbilities( {
                 max_stack = 1
             }
         }
-    },  
-        
+    },
+
     talisman_of_the_cragshaper = {
         cast = 0,
         cooldown = 60,
         gcd = "off",
-    
+
         item = 137344,
-    
+
         toggle = "defensives",
-    
+
         handler = function ()
             applyBuff( "stance_of_the_mountain" )
         end,
@@ -5347,16 +5376,16 @@ all:RegisterAbilities( {
             }
         }
     },
-            
+
     tirathons_betrayal = {
         cast = 0,
         cooldown = 75,
         gcd = "off",
-    
+
         item = 137537,
-    
+
         toggle = "cooldowns",
-    
+
         handler = function ()
             applyBuff( "darkstrikes" )
         end,
@@ -5369,16 +5398,16 @@ all:RegisterAbilities( {
             }
         }
     },
-            
+
     orb_of_torment = {
         cast = 0,
         cooldown = 120,
         gcd = "off",
-    
+
         item = 137538,
-    
+
         toggle = "defensives",
-    
+
         handler = function ()
             applyDebuff( "target", "soul_sap" )
         end,
@@ -5391,16 +5420,16 @@ all:RegisterAbilities( {
             }
         }
     },
-            
+
     moonlit_prism = {
         cast = 0,
         cooldown = 90,
         gcd = "off",
-    
+
         item = 137541,
-    
+
         toggle = "cooldowns",
-    
+
         handler = function ()
             applyBuff( "elunes_light" )
         end,
@@ -5711,7 +5740,7 @@ function Hekili:SpecializationChanged()
     wipe( class.auras )
     wipe( class.abilities )
     wipe( class.talents )
-    wipe( class.pvptalents )    
+    wipe( class.pvptalents )
     wipe( class.powers )
     wipe( class.gear )
     wipe( class.setBonuses )
@@ -5734,7 +5763,7 @@ function Hekili:SpecializationChanged()
             table.insert( specs, 1, id )
 
             state.spec.id = id
-            state.spec.name = name        
+            state.spec.name = name
             state.spec.key = getSpecializationKey( id )
 
             for k in pairs( state.role ) do
@@ -5761,11 +5790,11 @@ function Hekili:SpecializationChanged()
         class[ key ] = nil
     end
     if rawget( state, "rune" ) then state.rune = nil; class.rune = nil; end
-    
+
     for k in pairs( class.resourceAuras ) do
         class.resourceAuras[ k ] = nil
     end
-    
+
     class.primaryResource = nil
 
     for k in pairs( class.stateTables ) do
@@ -5792,7 +5821,7 @@ function Hekili:SpecializationChanged()
                 state.settings.spec = self.DB.profile.specs[ specID ]
 
                 state.spec.canCastWhileCasting = spec.canCastWhileCasting
-                state.spec.castableWhileCasting = spec.castableWhileCasting    
+                state.spec.castableWhileCasting = spec.castableWhileCasting
 
                 for res, model in pairs( spec.resources ) do
                     class.resources[ res ] = model
