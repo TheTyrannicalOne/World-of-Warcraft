@@ -451,6 +451,60 @@ Columns.RegisterColumn("Story91", {
 		end,
 })
 
+Columns.RegisterColumn("Story92", {
+	-- Header
+	headerWidth = 70,
+	headerLabel = format("%s %s9.2", L["COLUMN_CAMPAIGNPROGRESS_TITLE_SHORT"], colors.green),
+	tooltipTitle = L["COLUMN_CAMPAIGNPROGRESS_TITLE"],
+	tooltipSubTitle = C_CampaignInfo.GetCampaignInfo(158).name,
+	headerOnClick = function() AltoholicFrame.TabSummary:SortBy("Story92") end,
+	headerSort = DataStore.GetSecretsOfTheFirstOnesStorylineProgress,
+	
+	-- Content
+	Width = 70,
+	JustifyH = "CENTER",
+	GetText = function(character) 
+		local numCompleted = DataStore:GetSecretsOfTheFirstOnesStorylineProgress(character)
+		local numQuests = DataStore:GetSecretsOfTheFirstOnesStorylineLength(character)
+
+		local colorCompleted = (numCompleted == 0) and colors.grey or colors.white
+		local colorNumQuests = (numQuests == 0) and colors.grey or colors.yellow
+		
+		return format("%s%s%s/%s%s", colorCompleted, numCompleted, colors.white, colorNumQuests, numQuests)
+	end,
+	OnEnter = function(frame)
+			local character = frame:GetParent().character
+			if not character then return end
+			
+			local numCompleted = DataStore:GetSecretsOfTheFirstOnesStorylineProgress(character)
+			local numQuests = DataStore:GetSecretsOfTheFirstOnesStorylineLength(character)
+			
+			local tt = AddonFactory_Tooltip
+			tt:ClearLines()
+			tt:SetOwner(frame, "ANCHOR_RIGHT")
+			tt:AddDoubleLine(DataStore:GetColoredCharacterName(character), C_CampaignInfo.GetCampaignInfo(158).name)
+			tt:AddLine(" ")
+			tt:AddLine(format(CAMPAIGN_PROGRESS_CHAPTERS_TOOLTIP, numCompleted, numQuests))
+			
+			for _, info in pairs(DataStore:GetCampaignChaptersInfo(character, 158, "story92Progress")) do
+				local color
+				local icon = " - "
+				
+				if info.completed == nil then
+					color = colors.grey				-- grey for not started
+				elseif info.completed == false then
+					color = colors.white				-- white for ongoing
+				elseif info.completed == true then
+					color = colors.green				-- green for completed
+					icon = CRITERIA_COMPLETE_ICON
+				end
+				
+				tt:AddLine(format("%s%s%s", icon, color, info.name))
+			end
+			tt:Show()
+		end,
+})
+
 -- ** Sanctum Reservoir **
 local function GetReservoirFeatureLevel(character, featureType)
 	local level = 0

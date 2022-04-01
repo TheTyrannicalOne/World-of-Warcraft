@@ -42,6 +42,7 @@ local AddonDB_Defaults = {
 				activeCovenantID = 0,				-- Active Covenant ID (0 = None)
 				covenantCampaignProgress = 0,		-- Track the progress in the covenant storyline
 				story91Progress = 0,					-- Track the progress in the 9.1 storyline (Chains of Domination)
+				story92Progress = 0,					-- Track the progress in the 9.2 storyline (Secrets of the First Ones)
 			}
 		}
 	}
@@ -90,9 +91,14 @@ local covenantCampaignQuestChapters = {
 	[Enum.CovenantType.Necrolord] = { 59609, 60272, 57648, 58820, 59894, 57636, 58624, 61761, 62406 },		-- https://www.wowhead.com/guides/necrolords-covenant-campaign-story-rewards
 }
 
+-- 9.0
 local TorghastQuestLine = { 62932, 62935, 62938, 60139, 62966, 62969, 60146, 62836, 61730 }
-
+-- 9.1
 local ChainsCampaignQuestChapters = { 63639, 64555, 63902, 63727, 63622, 63656, 64437, 63593, 64314 }
+-- 9.2
+local SecretsOfTheFirstOnesQuestChapters = { 64958, 64825, 65305, 64844, 64813, 65328, 65238 }
+
+
 
 
 -- *** Utility functions ***
@@ -439,6 +445,7 @@ local function ScanQuests()
 	C_QuestLog.SetSelectedQuest(currentSelection)		-- restore the selection to match the cursor, must be properly set if a user abandons a quest
 	ScanCovenantCampaignProgress()
 	ScanCampaignProgress(ChainsCampaignQuestChapters, "story91Progress")
+	ScanCampaignProgress(SecretsOfTheFirstOnesQuestChapters, "story92Progress")
 	
 	addon.ThisCharacter.lastUpdate = time()
 	
@@ -824,6 +831,14 @@ local function _GetChainsOfDominationStorylineLength(character)
 	return #ChainsCampaignQuestChapters
 end
 
+local function _GetSecretsOfTheFirstOnesStorylineProgress(character)
+	return character.story92Progress
+end
+
+local function _GetSecretsOfTheFirstOnesStorylineLength(character)
+	return #SecretsOfTheFirstOnesQuestChapters
+end
+
 local PublicMethods = {
 	GetEmissaryQuests = _GetEmissaryQuests,
 	GetEmissaryQuestInfo = _GetEmissaryQuestInfo,
@@ -852,6 +867,8 @@ local PublicMethods = {
 	GetTorghastStorylineLength = _GetTorghastStorylineLength,
 	GetChainsOfDominationStorylineProgress = _GetChainsOfDominationStorylineProgress,
 	GetChainsOfDominationStorylineLength = _GetChainsOfDominationStorylineLength,
+	GetSecretsOfTheFirstOnesStorylineProgress = _GetSecretsOfTheFirstOnesStorylineProgress,
+	GetSecretsOfTheFirstOnesStorylineLength = _GetSecretsOfTheFirstOnesStorylineLength,
 }
 
 function addon:OnInitialize()
@@ -881,6 +898,8 @@ function addon:OnInitialize()
 	DataStore:SetCharacterBasedMethod("GetTorghastStorylineLength")
 	DataStore:SetCharacterBasedMethod("GetChainsOfDominationStorylineProgress")
 	DataStore:SetCharacterBasedMethod("GetChainsOfDominationStorylineLength")
+	DataStore:SetCharacterBasedMethod("GetSecretsOfTheFirstOnesStorylineProgress")
+	DataStore:SetCharacterBasedMethod("GetSecretsOfTheFirstOnesStorylineLength")
 end
 
 function addon:OnEnable()

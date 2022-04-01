@@ -22,6 +22,7 @@ BigWigs:AddColors("Skolex, the Insatiable Ravener", {
 	[359975] = "purple",
 	[359979] = "purple",
 	[360451] = "cyan",
+	[364522] = "orange",
 	[364778] = "yellow",
 	[366070] = "blue",
 })
@@ -81,19 +82,22 @@ BigWigs:AddColors("Lihuvim, Principal Architect", {
 })
 
 BigWigs:AddColors("Halondrus the Reclaimer", {
+	[360114] = "blue",
 	[360115] = {"green","red"},
 	[360977] = {"blue","purple"},
-	[361676] = "yellow",
+	[361676] = "orange",
 	[364979] = "yellow",
 	[365297] = {"blue","green","yellow"},
 	[367079] = "yellow",
-	[368529] = "yellow",
+	[368363] = "blue",
+	[368529] = "red",
+	[368969] = {"blue","green"},
 	[369207] = "blue",
-	["stages"] = {"cyan","green","yellow"},
+	["stages"] = {"cyan","green"},
 })
 
 BigWigs:AddColors("Anduin Wrynn", {
-	[361815] = "yellow",
+	[361815] = "orange",
 	[361989] = {"blue","yellow"},
 	[362405] = "red",
 	[362771] = "purple",
@@ -113,7 +117,7 @@ BigWigs:AddColors("Anduin Wrynn", {
 BigWigs:AddColors("Lords of Dread", {
 	[359960] = {"blue","yellow"},
 	[359963] = {"blue","purple"},
-	[360012] = {"blue","cyan","green"},
+	[360012] = {"blue","cyan","green","orange"},
 	[360146] = {"blue","orange","yellow"},
 	[360229] = "yellow",
 	[360284] = {"blue","purple"},
@@ -139,7 +143,7 @@ BigWigs:AddColors("Rygelon", {
 	[364386] = "red",
 	[366379] = "orange",
 	[366606] = "red",
-	[368080] = {"blue","yellow"},
+	[368080] = {"blue","green","yellow"},
 })
 
 BigWigs:AddColors("The Jailer", {
@@ -147,6 +151,7 @@ BigWigs:AddColors("The Jailer", {
 	[359856] = "purple",
 	[360281] = {"blue","cyan"},
 	[360373] = "yellow",
+	[360378] = "yellow",
 	[360562] = "yellow",
 	[362012] = "red",
 	[362028] = "red",
@@ -156,13 +161,18 @@ BigWigs:AddColors("The Jailer", {
 	[365150] = {"blue","cyan"},
 	[365169] = "orange",
 	[365212] = {"blue","green","yellow"},
-	[365436] = "orange",
-	[365810] = "orange",
-	[366132] = {"blue","orange"},
+	[365436] = "yellow",
+	[366132] = "blue",
 	[366285] = {"blue","cyan"},
-	[366377] = "red",
+	[366374] = "cyan",
 	[366545] = {"blue","purple"},
-	[366776] = "red",
-	[367053] = "red",
+	[366678] = "cyan",
+	[367051] = "cyan",
+	[368591] = {"blue","yellow"},
+	["azeroth_health"] = {"green","red"},
+	["mythic_blood_soak_stage_1"] = "yellow",
+	["mythic_blood_soak_stage_2"] = "yellow",
+	["mythic_blood_soak_stage_3"] = "yellow",
+	["mythic_dispel_stage_4"] = "yellow",
 	["stages"] = "cyan",
 })

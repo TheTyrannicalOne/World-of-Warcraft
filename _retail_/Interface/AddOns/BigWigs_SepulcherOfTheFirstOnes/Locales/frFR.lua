@@ -78,7 +78,6 @@ if L then
 	L.grim_reflections = "Adds qui fear"
 	L.march_of_the_damned = "Murs"
 	L.dire_blasphemy = "Marques"
-	L.beacon_of_hope = "Signal"
 
 	L.remnant_active = "Vestige actif"
 end
@@ -90,6 +89,8 @@ if L then
 	--L.crushing_prism = "Prisms"
 	--L.prism = "Prism"
 
+	-- L.bomb_dropped = "Bomb dropped"
+
 	--L.custom_on_stop_timers = "Always show ability bars"
 	--L.custom_on_stop_timers_desc = "Halondrus can delay its abilities. When this option is enabled, the bars for those abilities will stay on your screen."
 end
@@ -98,12 +99,17 @@ L = BigWigs:NewBossLocale("Lords of Dread", "frFR")
 if L then
 	--L.unto_darkness = "AoE Phase"
 	--L.cloud_of_carrion = "Carrion"
+	--L.empowered_cloud_of_carrion = "Big Carrion" -- Empowered Cloud of Carrion
 	--L.manifest_shadows = "Adds"
 	--L.leeching_claws = "Frontal (M)"
 	--L.infiltration_of_dread = "Among Us"
+	--L.infiltration_removed = "Imposters found in %.1fs" -- "Imposters found in 1.1s" s = seconds
 	--L.fearful_trepidation = "Fears"
 	--L.slumber_cloud = "Clouds"
 	--L.anguishing_strike = "Frontal (K)"
+
+	--L.custom_on_repeating_biting_wound = "Repeating Biting Wound"
+	--L.custom_on_repeating_biting_wound_desc = "Repeating Biting Wound say messages with icons {rt7} to make it more visible."
 end
 
 L = BigWigs:NewBossLocale("Rygelon", "frFR")
@@ -111,6 +117,7 @@ if L then
 	--L.celestial_collapse = "Quasars"
 	--L.manifest_cosmos = "Cores"
 	--L.stellar_shroud = "Heal Absorb"
+	--L.knock = "Knock" -- Countdown knockbacking other players nearby. Knock 3, Knock 2, Knock 1
 end
 
 L = BigWigs:NewBossLocale("The Jailer", "frFR")
@@ -119,15 +126,36 @@ if L then
 	--L.rune_of_damnation_countdown_desc = "Countdown for the players who are affected by Rune of Damnation"
 	--L.jump = "Jump In"
 
-	--L.chain = "Chain"
-	--L.rune = "Rune"
-
-	--L.chain_target = "Chaining %s!"
-	--L.chains_remaining = "%d/%d Chains Broken"
-
+	--L.relentless_domination = "Domination"
 	--L.chains_of_oppression = "Pull Chains"
 	--L.unholy_attunement = "Pylons"
-	--L.chains_of_anguish = "Spread Chains"
+	--L.shattering_blast = "Tank Blast"
 	--L.rune_of_compulsion = "Charms"
+	--L.desolation = "Azeroth Soak"
+	--L.chains_of_anguish = "Spread Chains"
+	--L.chain = "Chain"
+	--L.chain_target = "Chaining %s!"
+	--L.chains_remaining = "%d/%d Chains Broken"
 	--L.rune_of_domination = "Group Soaks"
+
+	--L.final = "Final %s" -- Final Unholy Attunement/Domination (last spell of a stage)
+
+	-- L.azeroth_health = "Azeroth Health"
+	-- L.azeroth_health_desc = "Azeroth Health Warnings"
+
+	-- L.azeroth_new_health_plus = "Azeroth Health: +%.1f%% (%d)"
+	-- L.azeroth_new_health_minus = "Azeroth Health: -%.1f%%  (%d)"
+
+	-- L.mythic_blood_soak_stage_1 = "Stage 1 Blood Soak timings"
+	-- L.mythic_blood_soak_stage_2 = "Stage 2 Blood Soak timings"
+	-- L.mythic_blood_soak_stage_3 = "Stage 3 Blood Soak timings"
+	-- L.mythic_blood_soak_stage_1_desc = "Show a bar for timings when healing azeroth is at a good time, used by Echo on their first kill"
+	-- L.mythic_blood_soak_bar = "Heal Azeroth"
+
+	-- L.floors_open = "Floors Open"
+	-- L.floors_open_desc = "Time until the floors opens up and you can fall into opened holes."
+
+	-- L.mythic_dispel_stage_4 = "Dispel Timers"
+	-- L.mythic_dispel_stage_4_desc = "Timers for when to do dispels in the last stage, used by Echo on their first kill"
+	-- L.mythic_dispel_bar = "Dispels"
 end

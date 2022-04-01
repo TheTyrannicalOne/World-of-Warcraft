@@ -1,4 +1,5 @@
-## Interface: 90105
+## Interface: 90200
+## Version: r54-release
 ## LoadOnDemand: 1
 ## Title: Lib: Dropdown Items
 ## Notes: Simple AceGUI3 dropdown item classes for font/statusbar/sound/etc.

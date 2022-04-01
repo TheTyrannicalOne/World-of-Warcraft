@@ -272,7 +272,7 @@ DefineTag("CN","waypcomplete","boolean",nil,function (value,i) WoWPro.waypcomple
 -- Item or Quest Objective Tags
 DefineTag("L","lootitem","string",nil,function(text,i)
     local _
-    _, _, WoWPro.lootitem[i], WoWPro.lootqty[i] = text:find("(%d+)%s?(%d*)");
+    _, _, WoWPro.lootitem[i], WoWPro.lootqty[i] = text:find("(%d+)%s?(%-?%d*)");
     -- WoWPro:dbp("L [%s]/[%s]",WoWPro.lootitem[i], WoWPro.lootqty[i])
     if WoWPro.lootitem[i] then
         if tonumber(WoWPro.lootqty[i]) ~= nil then
@@ -1084,6 +1084,8 @@ function WoWPro.SetupGuideReal()
     end
 
     -- Checking to see if any steps are already complete --
+    WoWProCharDB.Guide[GID] = WoWProCharDB.Guide[GID] or {}
+    WoWProCharDB.Guide[GID].completion =  WoWProCharDB.Guide[GID].completion or {}
     for i=1, WoWPro.stepcount do
         local action = WoWPro.action[i]
         if (action == ";") or (action == '!') then

@@ -71,6 +71,8 @@ if L then
 	L.crushing_prism = "Prismen" -- Crushing Prism
 	L.prism = "Prisma"
 
+	L.bomb_dropped = "Bombe fallen gelassen"
+
 	L.custom_on_stop_timers = "Fähigkeiten Leisten immer anzeigen"
 	L.custom_on_stop_timers_desc = "Halondrus kann Fähigkeiten verzögern. Wenn diese Option aktiviert ist, bleiben die Leisten für diese Fähigkeiten bestehen."
 end
@@ -89,7 +91,6 @@ if L then
 	L.grim_reflections = "Furcht Adds"
 	L.march_of_the_damned = "Wände"
 	L.dire_blasphemy = "Male"
-	L.beacon_of_hope = "Flamme"
 
 	L.remnant_active = "Überrest aktiv"
 end
@@ -98,12 +99,17 @@ L = BigWigs:NewBossLocale("Lords of Dread", "deDE")
 if L then
 	L.unto_darkness = "AoE Phase"-- Unto Darkness
 	L.cloud_of_carrion = "Fäulnis" -- Cloud of Carrion
+	L.empowered_cloud_of_carrion = "Große Fäulnis" -- Empowered Cloud of Carrion
 	L.manifest_shadows = "Adds" -- Manifest Shadows
 	L.leeching_claws = "Frontal (M)" -- Leeching Claws
 	L.infiltration_of_dread = "Unter uns" -- Infiltration of Dread
+	L.infiltration_removed = "Verräter gefunden in %.1fs" -- "Imposters found in 1.1s" s = seconds
 	L.fearful_trepidation = "Furcht" -- Fearful Trepidation
 	L.slumber_cloud = "Wolken" -- Slumber Cloud
 	L.anguishing_strike = "Frontal (K)" -- Anguishing Strike
+
+	L.custom_on_repeating_biting_wound = "Beißende Wunden wiederholen"
+	L.custom_on_repeating_biting_wound_desc = "Gibt wiederholt Beißende Wunden Chatnachrichten mit Symbol {rt7} aus, um es sichtbarer zu machen."
 end
 
 L = BigWigs:NewBossLocale("Rygelon", "deDE")
@@ -111,6 +117,7 @@ if L then
 	L.celestial_collapse = "Quasare" -- Celestial Collapse
 	L.manifest_cosmos = "Kerne" -- Manifest Cosmos
 	L.stellar_shroud = "Heilung absorbiert" -- Stellar Shroud
+	L.knock = "Rückstoß" -- Countdown knockbacking other players nearby. Knock 3, Knock 2, Knock 1
 end
 
 L = BigWigs:NewBossLocale("The Jailer", "deDE")
@@ -119,15 +126,37 @@ if L then
 	L.rune_of_damnation_countdown_desc = "Countdown für Spieler welche von Rune der Verdammnis betroffen sind."
 	L.jump = "Reinspringen"
 
-	L.chain = "Kette"
-	L.rune = "Rune"
-
-	L.chain_target = "Kette auf %s!"
-	L.chains_remaining = "%d/%d Ketten gebrochen"
-
+	L.relentless_domination = "Herrschaft"
 	L.chains_of_oppression = "Ketten zerreißen"
 	L.unholy_attunement = "Pylonen"
+	L.shattering_blast = "Tank Eruption"
+	L.rune_of_compulsion = "Übernahme"
+	L.desolation = "Azeroth-Soak"
 	L.chains_of_anguish = "Ketten auseinander"
-	L.rune_of_compulsion = "Übernommene"
+	L.chain = "Kette"
+	L.chain_target = "Kette auf %s!"
+	L.chains_remaining = "%d/%d Ketten gebrochen"
 	L.rune_of_domination = "Gruppensoak"
+
+	L.final = "Letzte %s" -- Final Unholy Attunement/Domination (last spell of a stage)
+
+	L.azeroth_health = "Azeroths Lebenskraft"
+	L.azeroth_health_desc = "Azeroths Lebenskraft Warnungen"
+
+	L.azeroth_new_health_plus = "Azeroths Lebenskraft: +%.1f%% (%d)"
+	L.azeroth_new_health_minus = "Azeroths Lebenskraft: -%.1f%%  (%d)"
+
+	L.mythic_blood_soak_stage_1 = "Phase 1 Blut-Soak Timer"
+	L.mythic_blood_soak_stage_1_desc = "Zeigt eine Leiste mit guten Zeitpunkten zum Heilen von Azeroth an, genutzt von Echo beim ersten Kill"
+	L.mythic_blood_soak_stage_2 = "Phase 2 Blut-Soak Timer"
+	L.mythic_blood_soak_stage_3 = "Phase 3 Blut-Soak Timer"
+
+	L.mythic_blood_soak_bar = "Azeroth heilen"
+
+	L.floors_open = "Boden offen"
+	L.floors_open_desc = "Zeit bis der Boden sich öffnet und Ihr in geöffnete Löcher fallen könnt."
+
+	L.mythic_dispel_stage_4 = "Dispel Timer"
+	L.mythic_dispel_stage_4_desc = "Timer für den Zeitpunkt zum Dispellen in der letzten Phase, genutzt von Echo beim ersten Kill"
+	L.mythic_dispel_bar = "Dispels"
 end

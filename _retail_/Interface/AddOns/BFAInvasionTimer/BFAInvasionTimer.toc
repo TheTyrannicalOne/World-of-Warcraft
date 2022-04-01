@@ -1,5 +1,5 @@
 ## Interface: 90200
-## Version: v9.2.1
+## Version: v9.2.2
 ## Title: BFAInvasionTimer
 ## Author: Funkydude
 ## Notes: Shows the Battle for Azeroth assault/invasion timer.

@@ -1,6 +1,7 @@
 
 DialogKeyDB = {
 	["profileKeys"] = {
+		["Tendralas - Dalaran"] = "Default",
 		["Armaguth - Zul'jin"] = "Default",
 		["Charbeatic - Zul'jin"] = "Default",
 		["Brotus - Argent Dawn"] = "Default",
@@ -10,6 +11,7 @@ DialogKeyDB = {
 		["Guufnah - Zul'jin"] = "Default",
 		["Avisar - Dalaran"] = "Default",
 		["Banuumine - Zul'jin"] = "Default",
+		["Thorinbane - Dalaran"] = "Default",
 		["Laymonan - Zul'jin"] = "Default",
 		["Illingrath - Dalaran"] = "Default",
 		["Vadder - Argent Dawn"] = "Default",

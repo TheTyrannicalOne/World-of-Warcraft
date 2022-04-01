@@ -315,3 +315,4 @@ LittleWigs_BattleForAzeroth: enabled
 VenturePlan: enabled
 Narcissus_Database_Item: enabled
 ElvUI_CustomTags: disabled
+kExtraBossFrames: disabled

@@ -71,6 +71,8 @@ if L then
 	L.crushing_prism = "棱镜" -- Crushing Prism
 	L.prism = "棱镜"
 
+	L.bomb_dropped = "炸弹掉落"
+
 	L.custom_on_stop_timers = "总是显示技能条"
 	L.custom_on_stop_timers_desc = "黑伦度斯可能延迟它的技能。启用此选项后,这些技能将保留在您的屏幕上。"
 end
@@ -78,7 +80,7 @@ end
 L = BigWigs:NewBossLocale("Anduin Wrynn", "zhCN")
 if L then
 	L.custom_off_repeating_blasphemy = "重复渎神之光"
-	L.custom_off_repeating_blasphemy_desc = "以{rt1}和{rt3} 说话两种渎神之光印记,方便你快速地找到相反印记的队友，并消除自身印记"
+	L.custom_off_repeating_blasphemy_desc = "以{rt1}和{rt3} >说<两种渎神之光印记,方便你快速地找到相反印记的队友，并消除自身印记"
 
 	L.kingsmourne_hungers = "王之哀伤"
 	L.blasphemy = "标记"
@@ -89,7 +91,6 @@ if L then
 	L.grim_reflections = "黑暗镜像"
 	L.march_of_the_damned = "阶段"
 	L.dire_blasphemy = "标记"
-	L.beacon_of_hope = "信标"
 
 	L.remnant_active = "陨落君王"
 end
@@ -98,12 +99,17 @@ L = BigWigs:NewBossLocale("Lords of Dread", "zhCN")
 if L then
 	L.unto_darkness = "AoE 阶段"-- Unto Darkness
 	L.cloud_of_carrion = "腐臭" -- Cloud of Carrion
+	L.empowered_cloud_of_carrion = "强化腐臭" -- Empowered Cloud of Carrion
 	L.manifest_shadows = "小怪" -- Manifest Shadows
 	L.leeching_claws = "正面顺劈 (玛)" -- Leeching Claws
 	L.infiltration_of_dread = "抓內鬼" -- Infiltration of Dread
+	L.infiltration_removed = "内鬼发现于 %.1fs" -- "Imposters found in 1.1s" s = seconds
 	L.fearful_trepidation = "爆裂恐惧" -- Fearful Trepidation
 	L.slumber_cloud = "迷雾" -- Slumber Cloud
 	L.anguishing_strike = "正面顺劈 (金)" -- Anguishing Strike
+
+	L.custom_on_repeating_biting_wound = "重复啃噬伤口"
+	L.custom_on_repeating_biting_wound_desc = "重复啃噬伤口:以>说<的方式发送带有图标 {rt7} 的信息,以使其显得更明显。"
 end
 
 L = BigWigs:NewBossLocale("Rygelon", "zhCN")
@@ -111,6 +117,7 @@ if L then
 	L.celestial_collapse = "类星体" -- Celestial Collapse
 	L.manifest_cosmos = "宇宙核心" -- Manifest Cosmos
 	L.stellar_shroud = "吸收治疗量" -- Stellar Shroud
+	L.knock = "击退" -- Countdown knockbacking other players nearby. Knock 3, Knock 2, Knock 1
 end
 
 L = BigWigs:NewBossLocale("The Jailer", "zhCN")
@@ -119,15 +126,36 @@ if L then
 	L.rune_of_damnation_countdown_desc = "为受到咒罚符文影响的玩家倒计时。"
 	L.jump = "跳入"
 
+	--L.relentless_domination = "Domination"
+	L.chains_of_oppression = "压迫之链"
+	L.unholy_attunement = "晶塔"
+	--L.shattering_blast = "Tank Blast"
+	L.rune_of_compulsion = "心控"
+	--L.desolation = "Azeroth Soak"
+	L.chains_of_anguish = "痛苦之链"
 	L.chain = "锁链"
-	L.rune = "符文"
-
 	L.chain_target = "锁链 %s!"
 	L.chains_remaining = "%d/%d 锁链碎裂"
-
-	L.chains_of_oppression = "拉链"
-	L.unholy_attunement = "晶塔"
-	L.chains_of_anguish = "扩散链"
-	L.rune_of_compulsion = "咒符"
 	L.rune_of_domination = "团队分摊"
+
+	--L.final = "Final %s" -- Final Unholy Attunement/Domination (last spell of a stage)
+
+	-- L.azeroth_health = "Azeroth Health"
+	-- L.azeroth_health_desc = "Azeroth Health Warnings"
+
+	-- L.azeroth_new_health_plus = "Azeroth Health: +%.1f%% (%d)"
+	-- L.azeroth_new_health_minus = "Azeroth Health: -%.1f%%  (%d)"
+
+	-- L.mythic_blood_soak_stage_1 = "Stage 1 Blood Soak timings"
+	-- L.mythic_blood_soak_stage_2 = "Stage 2 Blood Soak timings"
+	-- L.mythic_blood_soak_stage_3 = "Stage 3 Blood Soak timings"
+	-- L.mythic_blood_soak_stage_1_desc = "Show a bar for timings when healing azeroth is at a good time, used by Echo on their first kill"
+	-- L.mythic_blood_soak_bar = "Heal Azeroth"
+
+	-- L.floors_open = "Floors Open"
+	-- L.floors_open_desc = "Time until the floors opens up and you can fall into opened holes."
+
+	-- L.mythic_dispel_stage_4 = "Dispel Timers"
+	-- L.mythic_dispel_stage_4_desc = "Timers for when to do dispels in the last stage, used by Echo on their first kill"
+	-- L.mythic_dispel_bar = "Dispels"
 end

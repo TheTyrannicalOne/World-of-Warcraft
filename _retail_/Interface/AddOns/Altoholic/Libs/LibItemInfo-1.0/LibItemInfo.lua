@@ -98,6 +98,7 @@ local TYPE_REAGENT = 1
 local TYPE_DUNGEON_LOOT = 2
 local TYPE_RAID_LOOT = 3
 local TYPE_PVP_LOOT = 4
+local TYPE_FACTION_ITEM = 5
 
 local reagentTypes = {
 	[1] = GetSpellInfo(2259),		-- Alchemy
@@ -155,6 +156,13 @@ function lib.SetPvPItem(expansion, season, classes)
 		+ ((classes or 0) * 2^15)							-- Bits 15+ : classes (1 bit per class)
 end
 
+function lib.SetFactionItem(expansion, factionID, instanceID)
+	return expansion											-- Bits 0-4 : expansion (classic = 0)
+		+ (TYPE_FACTION_ITEM * 32)							-- Bits 5-9 : type
+		+ (factionID * 2^10)									-- Bits 10-25 : faction ID
+		+ ((instanceID or 0) * 2^26)						-- Bits 26+ : instance ID
+end
+
 
 -- Returns the name of the profession that created the item
 function lib:GetItemSource(itemID)
@@ -185,5 +193,14 @@ function lib:GetItemSource(itemID)
 		local instanceName = GetRealZoneText(instanceID)
 	
 		return itemType, _G[format("EXPANSION_NAME%d", expansion)], expansion, instanceName, bossName
+		
+	elseif itemType == TYPE_FACTION_ITEM then
+		local factionID = bAnd(RightShift(attrib, 10), 65535)		-- Bits 10-25 : faction id
+		local instanceID = bAnd(RightShift(attrib, 26), 65535)	-- Bits 26+ : instance id
+		
+		local factionName = GetFactionInfoByID(factionID)
+		local instanceName = (instanceID ~= 0) and GetRealZoneText(instanceID) or nil
+		
+		return itemType, _G[format("EXPANSION_NAME%d", expansion)], expansion, factionName, instanceName
 	end
 end

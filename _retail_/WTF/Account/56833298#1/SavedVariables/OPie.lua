@@ -35,7 +35,7 @@ OneRing_Config = {
 				["Utility11"] = "ALT-E",
 				["Mounts61"] = "ALT-Q",
 				["Utility2"] = "ALT-E",
-				["Utility9"] = "ALT-E",
+				["Utility8"] = "ALT-E",
 				["Utility5"] = "ALT-E",
 				["Utility3"] = "ALT-E",
 				["Mounts6"] = "ALT-Q",
@@ -50,7 +50,7 @@ OneRing_Config = {
 				["Mounts2"] = "ALT-Q",
 				["Mounts15"] = "ALT-Q",
 				["Mounts4"] = "ALT-Q",
-				["Utility8"] = "ALT-E",
+				["Utility9"] = "ALT-E",
 			},
 		},
 	},
@@ -76,13 +76,13 @@ OneRing_Config = {
 				["hotkey"] = "ALT-Q",
 				["name"] = "Mounts",
 			},
-			["Tools3"] = {
+			["Tools2"] = {
 				{
 					"macro", -- [1]
 					" ", -- [2]
-					["sliceToken"] = "ABue4979NIl",
+					["sliceToken"] = "ABue4OjoZGe",
 				}, -- [1]
-				["limit"] = "Ruffinton-Dalaran",
+				["limit"] = "Thorinbane-Dalaran",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
 				["name"] = "Tools",
@@ -149,10 +149,10 @@ OneRing_Config = {
 					"BattlePet-0-0000064BC55A", -- [2]
 					["sliceToken"] = "ABuede=1Srtr",
 				}, -- [6]
-				["name"] = "Utility",
+				["limit"] = "Shanyt-ArgentDawn",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["limit"] = "Shanyt-ArgentDawn",
+				["name"] = "Utility",
 			},
 			["Utility9"] = {
 				{
@@ -216,16 +216,16 @@ OneRing_Config = {
 			["OPieFlagStore"] = {
 				["StoreVersion"] = 2,
 			},
-			["Utility1"] = {
+			["Utility5"] = {
 				{
-					"toy", -- [1]
-					64488, -- [2]
-					["sliceToken"] = "ABuedyqmNB16",
+					"macro", -- [1]
+					" ", -- [2]
+					["sliceToken"] = "ABuexQZ0CXe",
 				}, -- [1]
-				["limit"] = "Vancard-Zul'jin",
+				["name"] = "Utility",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["name"] = "Utility",
+				["limit"] = "Illingrath-Dalaran",
 			},
 			["Mounts2"] = {
 				{
@@ -395,13 +395,13 @@ OneRing_Config = {
 				["hotkey"] = "ALT-Q",
 				["limit"] = "Thorinbane-Dalaran",
 			},
-			["Tools2"] = {
+			["Tools3"] = {
 				{
 					"macro", -- [1]
 					" ", -- [2]
-					["sliceToken"] = "ABue4OjoZGe",
+					["sliceToken"] = "ABue4979NIl",
 				}, -- [1]
-				["limit"] = "Thorinbane-Dalaran",
+				["limit"] = "Ruffinton-Dalaran",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
 				["name"] = "Tools",
@@ -768,16 +768,16 @@ OneRing_Config = {
 				["save"] = true,
 				["hotkey"] = "ALT-H",
 			},
-			["Tools4"] = {
+			["Utility1"] = {
 				{
-					"macro", -- [1]
-					" ", -- [2]
-					["sliceToken"] = "ABuejtRGNKi",
+					"toy", -- [1]
+					64488, -- [2]
+					["sliceToken"] = "ABuedyqmNB16",
 				}, -- [1]
-				["limit"] = "Avisar-Dalaran",
+				["limit"] = "Vancard-Zul'jin",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["name"] = "Tools",
+				["name"] = "Utility",
 			},
 			["Mounts"] = {
 				{
@@ -845,32 +845,6 @@ OneRing_Config = {
 				["hotkey"] = "ALT-Q",
 				["limit"] = "Shanyt-ArgentDawn",
 			},
-			["Utility5"] = {
-				{
-					"macro", -- [1]
-					" ", -- [2]
-					["sliceToken"] = "ABueku=XhMe",
-				}, -- [1]
-				["name"] = "Utility",
-				["save"] = true,
-				["hotkey"] = "ALT-E",
-				["limit"] = "Illingrath-Dalaran",
-			},
-			["Mounts31"] = {
-				{
-					["id"] = 150544,
-					["sliceToken"] = "ABuejVCRbPu",
-				}, -- [1]
-				{
-					"mount", -- [1]
-					460, -- [2]
-					["sliceToken"] = "ABuejVCRbPy",
-				}, -- [2]
-				["name"] = "Mounts",
-				["save"] = true,
-				["hotkey"] = "ALT-Q",
-				["limit"] = "Illingrath-Dalaran",
-			},
 			["Mounts8"] = {
 				{
 					["id"] = 150544,
@@ -900,6 +874,21 @@ OneRing_Config = {
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
 				["name"] = "Mounts",
+			},
+			["Mounts31"] = {
+				{
+					["id"] = 150544,
+					["sliceToken"] = "ABuejVCRbPu",
+				}, -- [1]
+				{
+					"mount", -- [1]
+					460, -- [2]
+					["sliceToken"] = "ABuejVCRbPy",
+				}, -- [2]
+				["name"] = "Mounts",
+				["save"] = true,
+				["hotkey"] = "ALT-Q",
+				["limit"] = "Illingrath-Dalaran",
 			},
 			["Utility8"] = {
 				{
@@ -941,6 +930,17 @@ OneRing_Config = {
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
 				["limit"] = "Ruffinton-Dalaran",
+			},
+			["Tools4"] = {
+				{
+					"macro", -- [1]
+					" ", -- [2]
+					["sliceToken"] = "ABuejtRGNKi",
+				}, -- [1]
+				["limit"] = "Avisar-Dalaran",
+				["save"] = true,
+				["hotkey"] = "ALT-E",
+				["name"] = "Tools",
 			},
 		},
 	},

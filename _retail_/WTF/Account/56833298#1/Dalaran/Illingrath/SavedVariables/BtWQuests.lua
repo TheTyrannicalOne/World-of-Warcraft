@@ -4,9 +4,9 @@ BtWQuests_Settings = {
 BtWQuests_AutoLoad = {
 	["BtWQuestsCataclysm"] = false,
 	["BtWQuestsLegion"] = true,
-	["BtWQuestsBattleForAzerothPrologue"] = true,
+	["BtWQuestsBattleForAzeroth"] = true,
 	["BtWQuestsShadowlands"] = true,
 	["BtWQuestsShadowlandsPrologue"] = true,
 	["BtWQuestsClassic"] = true,
-	["BtWQuestsBattleForAzeroth"] = true,
+	["BtWQuestsBattleForAzerothPrologue"] = true,
 }

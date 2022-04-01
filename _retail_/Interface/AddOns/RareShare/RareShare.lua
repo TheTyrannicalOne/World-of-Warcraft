@@ -212,7 +212,7 @@ end
 
 function Addon:GetRareCompleted(Module, RareID)
   if (Module.Rares[RareID][5] ~= nil) then
-    return IsQuestFlaggedCompleted(Module.Rares[RareID][5])
+    return C_QuestLog.IsQuestFlaggedCompleted(Module.Rares[RareID][5])
   else
     return nil
   end

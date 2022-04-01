@@ -1,0 +1,13 @@
+
+HandyNotes_ShadowlandsDB = {
+	["profileKeys"] = {
+		["Darnastris - Dalaran"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
+		["Avisar - Dalaran"] = "Default",
+		["Tendralas - Dalaran"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

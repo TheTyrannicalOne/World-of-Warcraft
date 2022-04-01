@@ -274,3 +274,4 @@ TomCats-Nazjatar: disabled
 TomCats-Nzoth: disabled
 ElvUI_CustomTags: disabled
 LittleWigs_Classic: enabled
+kExtraBossFrames: disabled

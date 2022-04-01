@@ -19,7 +19,7 @@ AAP-WoD: enabled
 AAP-Legion: enabled
 AAP-BfA: enabled
 Azeroth Auto Pilot: enabled
-Leatrix_Plus: enabled
+Leatrix_Plus: disabled
 AceGUI-3.0_SFX-Widgets: enabled
 AchievementsReminder: enabled
 AckisRecipeList: enabled
@@ -248,4 +248,19 @@ ElvUI: enabled
 ElvUI_SLE: enabled
 ElvUI_CliqueDatatext: enabled
 Narcissus: enabled
-Narcissus_Database: enabled
+ElvUI_DTBars2: disabled
+ElvUI_QuestXP: disabled
+ElvUI_CustomTags: disabled
+kExtraBossFrames: disabled
+TomCats-ArathiHighlandsRares: disabled
+TomCats-DarkshoreRares: disabled
+TomCats-Mechagon: disabled
+TomCats-Nazjatar: disabled
+TomCats-Nzoth: disabled
+TomCats-WarfrontsCommandCenter: disabled
+TomCats-Complete: disabled
+TomCats-ChildrensWeek: disabled
+TomCats-HallowsEnd: disabled
+TomCats-LoveIsInTheAir: disabled
+TomCats-LunarFestival: disabled
+TomCats-Noblegarden: disabled

@@ -1,5 +1,7 @@
 
 ElvCharacterDB = {
+	["CliqueDatatext"] = {
+	},
 	["ChatHistoryLog"] = {
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-360367-3683-107255874|h[Guild: Joint Task Force]|h|r is recruiting! We run as a guild, raid as a guild, die, laugh, share nudes & feet pics as a guild--& lookin for more! Can actually do mechanics & don't suck (18+)", -- [1]
@@ -2180,14 +2182,12 @@ ElvCharacterDB = {
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},
-	["ConvertKeybindings"] = true,
 	["ChatEditHistory"] = {
 		"/allthethings", -- [1]
 		"/wa", -- [2]
-		"/dance", -- [3]
-		"/opie", -- [4]
-		"/cw Lantevar-Proudmoore alrighty", -- [5]
+		"/opie", -- [3]
+		"/cw Lantevar-Proudmoore alrighty", -- [4]
+		"/dance", -- [5]
 	},
-	["CliqueDatatext"] = {
-	},
+	["ConvertKeybindings"] = true,
 }

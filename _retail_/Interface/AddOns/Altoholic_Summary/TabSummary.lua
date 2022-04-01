@@ -718,6 +718,7 @@ addon:Controller("AltoholicUI.TabSummaryCategoriesList", {
 				{ text = EXPANSION_NAME8, subMenu = {
 					{ text = format("%s9.0|r %s", colors.green, L["PATCH_X.0"]), profile = 16 },
 					{ text = format("%s9.1|r %s", colors.green, L["PATCH_9.1"]), profile = 17 },
+					{ text = format("%s9.2|r %s", colors.green, L["PATCH_9.2"]), profile = 23 },
 				}},
 			}},
 			-- Expansion Features
@@ -746,6 +747,8 @@ addon:Controller("AltoholicUI.TabSummaryCategoriesList", {
 					{ text = GetCategoryInfo(15441), profile = 20 },
 					-- Sanctum Reservoir
 					{ text = COVENANT_SANCTUM_TAB_UPGRADES, profile = 21 },
+					-- Campain Progress
+					{ text = L["COLUMN_CAMPAIGNPROGRESS_TITLE"], profile = 24 },
 					-- Torghast
 					-- { text = GetCategoryInfo(15440), profile = 23 },
 				}},

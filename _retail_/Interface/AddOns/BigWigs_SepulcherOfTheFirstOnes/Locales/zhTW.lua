@@ -71,6 +71,8 @@ if L then
 	L.crushing_prism = "稜光" -- Crushing Prism
 	L.prism = "稜光"
 
+	L.bomb_dropped = "炸彈掉落"
+
 	L.custom_on_stop_timers = "總是顯示計時器总是显示技能条"
 	L.custom_on_stop_timers_desc = "哈隆德魯斯的技能可能延遲施放。啟用此選項後，這些技能的計時條會保持顯示。"
 end
@@ -89,7 +91,6 @@ if L then
 	L.grim_reflections = "幻影"
 	L.march_of_the_damned = "影牆"
 	L.dire_blasphemy = "印記"
-	L.beacon_of_hope = "信標"
 
 	L.remnant_active = "墮落之王出現"
 end
@@ -98,12 +99,17 @@ L = BigWigs:NewBossLocale("Lords of Dread", "zhTW")
 if L then
 	L.unto_darkness = "AoE 階段"-- Unto Darkness
 	L.cloud_of_carrion = "Carrion" -- Cloud of Carrion
+	--L.empowered_cloud_of_carrion = "Big Carrion" -- Empowered Cloud of Carrion
 	L.manifest_shadows = "小怪" -- Manifest Shadows
 	L.leeching_claws = "順劈（瑪）" -- Leeching Claws
 	L.infiltration_of_dread = "抓內鬼" -- Infiltration of Dread
+	--L.infiltration_removed = "Imposters found in %.1fs" -- "Imposters found in 1.1s" s = seconds
 	L.fearful_trepidation = "驚懼爆發" -- Fearful Trepidation
 	L.slumber_cloud = "雲霧" -- Slumber Cloud
 	L.anguishing_strike = "順劈（金）" -- Anguishing Strike
+
+	--L.custom_on_repeating_biting_wound = "Repeating Biting Wound"
+	--L.custom_on_repeating_biting_wound_desc = "Repeating Biting Wound say messages with icons {rt7} to make it more visible."
 end
 
 L = BigWigs:NewBossLocale("Rygelon", "zhTW")
@@ -111,23 +117,45 @@ if L then
 	L.celestial_collapse = "類星體" -- Celestial Collapse
 	L.manifest_cosmos = "核心" -- Manifest Cosmos
 	L.stellar_shroud = "治療吸收" -- Stellar Shroud
+	--L.knock = "Knock" -- Countdown knockbacking other players nearby. Knock 3, Knock 2, Knock 1
 end
 
 L = BigWigs:NewBossLocale("The Jailer", "zhTW")
 if L then
 	L.rune_of_damnation_countdown = "倒數計時"
 	L.rune_of_damnation_countdown_desc = "為受到災罰符文影響的玩家顯示倒數計時。"
-	--L.jump = "Jump In"
+	L.jump = "跳入"
 
-	--L.chain = "Chain"
-	--L.rune = "Rune"
+	--L.relentless_domination = "Domination"
+	L.chains_of_oppression = "壓迫之鏈" -- 這個中文技能名夠短，不需縮寫
+	L.unholy_attunement = "水晶塔"
+	--L.shattering_blast = "Tank Blast"
+	L.rune_of_compulsion = "心控"
+	--L.desolation = "Azeroth Soak"
+	L.chains_of_anguish = "痛苦之鏈" -- 這個中文技能名夠短，不需縮寫
+	L.chain = "鎖鏈"
+	L.chain_target = "鎖鏈：%s!"
+	L.chains_remaining = "鎖鏈拉斷：%d/%d"
+	L.rune_of_domination = "團隊分攤"
 
-	--L.chain_target = "Chaining %s!"
-	--L.chains_remaining = "%d/%d Chains Broken"
+	--L.final = "Final %s" -- Final Unholy Attunement/Domination (last spell of a stage)
 
-	--L.chains_of_oppression = "Pull Chains"
-	--L.unholy_attunement = "Pylons"
-	--L.chains_of_anguish = "Spread Chains"
-	--L.rune_of_compulsion = "Charms"
-	--L.rune_of_domination = "Group Soaks"
+	-- L.azeroth_health = "Azeroth Health"
+	-- L.azeroth_health_desc = "Azeroth Health Warnings"
+
+	-- L.azeroth_new_health_plus = "Azeroth Health: +%.1f%% (%d)"
+	-- L.azeroth_new_health_minus = "Azeroth Health: -%.1f%%  (%d)"
+
+	-- L.mythic_blood_soak_stage_1 = "Stage 1 Blood Soak timings"
+	-- L.mythic_blood_soak_stage_2 = "Stage 2 Blood Soak timings"
+	-- L.mythic_blood_soak_stage_3 = "Stage 3 Blood Soak timings"
+	-- L.mythic_blood_soak_stage_1_desc = "Show a bar for timings when healing azeroth is at a good time, used by Echo on their first kill"
+	-- L.mythic_blood_soak_bar = "Heal Azeroth"
+
+	-- L.floors_open = "Floors Open"
+	-- L.floors_open_desc = "Time until the floors opens up and you can fall into opened holes."
+
+	-- L.mythic_dispel_stage_4 = "Dispel Timers"
+	-- L.mythic_dispel_stage_4_desc = "Timers for when to do dispels in the last stage, used by Echo on their first kill"
+	-- L.mythic_dispel_bar = "Dispels"
 end

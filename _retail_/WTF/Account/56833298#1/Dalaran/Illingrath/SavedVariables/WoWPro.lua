@@ -12,32 +12,33 @@ WoWProCharDB = {
 	},
 	["Trades"] = {
 	},
-	["Rank"] = {
+	["EnableRares"] = true,
+	["Enabled"] = true,
+	["completedQIDs"] = {
+	},
+	["EnableGrailQuestName"] = false,
+	["EnableGrailQuestObsolete"] = false,
+	["EnableGrailBreadcrumbs"] = false,
+	["EnablePetBattles"] = true,
+	["Tradeskills"] = {
+	},
+	["DebugLevel"] = 0,
+	["Taxi"] = {
 	},
 	["BuildingLocations"] = {
 	},
-	["EnableGrailQuestName"] = false,
-	["EnableGrailBreadcrumbs"] = false,
-	["EnableGrailQuestObsolete"] = false,
-	["GuideStack"] = {
-	},
-	["Tradeskills"] = {
+	["EnableTreasures"] = true,
+	["EnableFlight"] = true,
+	["AutoHideInsideInstancesNotify"] = true,
+	["AutoHideInCombat"] = false,
+	["GuideVersion"] = {
 	},
 	["Guide"] = {
 	},
-	["Taxi"] = {
+	["GuideStack"] = {
 	},
-	["GuideVersion"] = {
-	},
-	["EnableTreasures"] = true,
-	["EnableFlight"] = true,
-	["Enabled"] = true,
-	["AutoHideInCombat"] = false,
-	["completedQIDs"] = {
-	},
-	["DebugLevel"] = 0,
-	["EnablePetBattles"] = true,
 	["skippedQIDs"] = {
 	},
-	["EnableRares"] = true,
+	["Rank"] = {
+	},
 }

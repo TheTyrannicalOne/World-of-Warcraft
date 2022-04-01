@@ -438,6 +438,7 @@ local function ProcessTooltip(tooltip, link)
 		local TYPE_REAGENT = 1
 		local TYPE_DUNGEON_LOOT = 2
 		local TYPE_RAID_LOOT = 3
+		local TYPE_FACTION_ITEM = 5
 		
 		local itemType, expansion, expansionID, arg1, arg2 = LII:GetItemSource(itemID)
 		
@@ -457,6 +458,12 @@ local function ProcessTooltip(tooltip, link)
 			elseif itemType == TYPE_RAID_LOOT then
 				tooltip:AddLine(format("%s%s: %s%s", colors.gold, RAID, colors.teal, arg1), 1,1,1)
 				tooltip:AddLine(format("%s%s: %s%s", colors.gold, ENCOUNTER_JOURNAL_ENCOUNTER , colors.teal, arg2), 1,1,1)
+			
+			elseif itemType == TYPE_FACTION_ITEM then
+				tooltip:AddLine(format("%s%s: %s%s", colors.gold, FACTION, colors.teal, arg1), 1,1,1)
+				if arg2 then
+					tooltip:AddLine(format("%s%s: %s%s", colors.gold, ENCOUNTER_JOURNAL_INSTANCE, colors.teal, arg2), 1,1,1)
+				end
 			end
 			
 			if Options.Get("UI.Tooltip.ShowItemXPack") then

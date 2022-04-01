@@ -5,23 +5,26 @@ WoWProCharDB = {
 	["AutoHideInsideInstances"] = true,
 	["EnableGrailCheckPrereq"] = false,
 	["QID2Guide"] = {
-		[28705] = "JamHel6063",
-		[47221] = "Ludo_Argus",
 		[47835] = "Ludo_Argus",
 		[9407] = "JamHel6063",
+		[28705] = "JamHel6063",
+		[47221] = "Ludo_Argus",
 	},
 	["Trades"] = {
 	},
 	["EnableRares"] = true,
+	["Enabled"] = true,
+	["completedQIDs"] = {
+	},
 	["EnableGrailQuestName"] = false,
-	["EnableFlight"] = true,
 	["EnableGrailQuestObsolete"] = false,
 	["EnableGrailBreadcrumbs"] = false,
+	["EnablePetBattles"] = true,
 	["Tradeskills"] = {
 		[2586] = {
 			["skillLvl"] = 1,
-			["skillMod"] = 0,
 			["name"] = "Legion Fishing",
+			["skillMod"] = 0,
 			["skillMax"] = 100,
 		},
 		[182] = {
@@ -72,17 +75,17 @@ WoWProCharDB = {
 			["name"] = "Fishing",
 			["skillMax"] = 100,
 		},
-		[185] = {
-			["skillLvl"] = 1,
-			["skillMod"] = 0,
-			["name"] = "Cooking",
-			["skillMax"] = 100,
-		},
 		[2552] = {
 			["skillLvl"] = 42,
 			["skillMod"] = 0,
 			["name"] = "Pandaria Herbalism",
 			["skillMax"] = 75,
+		},
+		[185] = {
+			["skillLvl"] = 1,
+			["skillMod"] = 0,
+			["name"] = "Cooking",
+			["skillMax"] = 100,
 		},
 		[2481] = {
 			["skillLvl"] = 1,
@@ -121,18 +124,16 @@ WoWProCharDB = {
 			["skillMax"] = 100,
 		},
 	},
-	["EnablePetBattles"] = true,
+	["DebugLevel"] = 0,
 	["Taxi"] = {
 	},
-	["GuideVersion"] = {
+	["BuildingLocations"] = {
 	},
 	["EnableTreasures"] = true,
-	["DebugLevel"] = 0,
-	["completedQIDs"] = {
-	},
-	["Enabled"] = true,
+	["EnableFlight"] = true,
+	["AutoHideInsideInstancesNotify"] = true,
 	["AutoHideInCombat"] = false,
-	["BuildingLocations"] = {
+	["GuideVersion"] = {
 	},
 	["Guide"] = {
 	},

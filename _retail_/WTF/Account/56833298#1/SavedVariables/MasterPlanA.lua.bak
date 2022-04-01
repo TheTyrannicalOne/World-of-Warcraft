@@ -2,47 +2,72 @@
 MasterPlanAG = {
 	["Argent Dawn"] = {
 		["Shanyt"] = {
-			["lastCacheTime"] = 1646502542,
-			["summary"] = {
-				["ti1"] = 118531,
-				["tt1"] = 1646438137,
-				["inProgress"] = {
-					[485] = 1646516878,
-					[396] = 1646510802,
-					[674] = 1646510826,
-					[385] = 1646516872,
-					[665] = 1646506068,
-					[267] = 1646516875,
-					[669] = 1646510838,
-					[325] = 1646510779,
-					[685] = 1646525136,
-					[543] = 1646516893,
-					[563] = 1646516888,
-					[745] = 1646548377,
-				},
-				["lastOilTime"] = 1646483577,
-			},
-			["faction"] = "Horde",
-			["cacheSize"] = 1000,
 			["class"] = "WARRIOR",
-			["curRes"] = 9908,
-			["curOil"] = 97890,
+			["summary"] = {
+				["lastOilTime"] = 1648303256,
+				["ti2"] = 122486,
+				["inProgress"] = {
+					[455] = 1648332005,
+					[396] = 1648331989,
+					[126] = 1648317651,
+					[133] = 1648324844,
+					[738] = 1648304163,
+					[268] = 1648317593,
+					[210] = 1648305935,
+					[733] = 1648304166,
+					[677] = 1648321249,
+					[174] = 1648306846,
+					[678] = 1648346386,
+					[726] = 1648304160,
+					[325] = 1648332018,
+				},
+				["ti3"] = 127855,
+				["tt1"] = 1647937630,
+				["ti1"] = 118531,
+				["tt3"] = true,
+				["tt2"] = 1647937631,
+			},
+			["curOil"] = 98140,
+			["cacheSize"] = 1000,
+			["lastCacheTime"] = 1648303146,
+			["curRes"] = 9555,
+			["faction"] = "Horde",
 		},
 	},
 	["Black Dragonflight"] = {
 		["Durlok"] = {
-			["class"] = "DRUID",
 			["faction"] = "Horde",
+			["class"] = "DRUID",
 		},
 	},
 	["Dalaran"] = {
 		["Illingrath"] = {
+			["faction"] = "Alliance",
 			["class"] = "DEMONHUNTER",
+		},
+		["Tendralas"] = {
+			["class"] = "PRIEST",
 			["faction"] = "Alliance",
 		},
 		["Avisar"] = {
-			["class"] = "PALADIN",
 			["faction"] = "Alliance",
+			["class"] = "PALADIN",
+		},
+		["Thorinbane"] = {
+			["faction"] = "Alliance",
+			["class"] = "WARRIOR",
+		},
+		["Rotclaugh"] = {
+			["faction"] = "Alliance",
+			["class"] = "DEATHKNIGHT",
+		},
+		["Varlouris"] = {
+			["class"] = "SHAMAN",
+			["faction"] = "Alliance",
+		},
+		["Darnastris"] = {
+			["faction"] = "Alliance",
+			["class"] = "MAGE",
 		},
 	},
 	["Zul'jin"] = {
@@ -50,7 +75,5 @@ MasterPlanAG = {
 			["class"] = "DRUID",
 			["faction"] = "Horde",
 		},
-	},
-	["IgnoreRewards"] = {
 	},
 }

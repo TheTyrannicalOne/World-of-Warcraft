@@ -1,25 +1,19 @@
 
 SpyPerCharDB = {
-	["version"] = "1.1",
-	["IgnoreData"] = {
-	},
-	["KOSData"] = {
-	},
 	["PlayerData"] = {
-		["Maxxis-BurningBlade"] = {
-			["mapID"] = 23,
-			["zone"] = "Eastern Plaguelands",
-			["mapY"] = 0.68,
-			["class"] = "PALADIN",
+		["Beligard-Area52"] = {
+			["mapID"] = 111,
+			["zone"] = "Shattrath City",
+			["mapY"] = 0.4,
+			["class"] = "MAGE",
 			["isEnemy"] = true,
-			["loses"] = 1,
-			["mapX"] = 0.23,
-			["name"] = "Maxxis-BurningBlade",
-			["time"] = 1605661467,
-			["subZone"] = "The Marris Stead",
-			["level"] = 46,
-			["race"] = "Human",
-			["isGuess"] = true,
+			["race"] = "Blood Elf",
+			["name"] = "Beligard-Area52",
+			["subZone"] = "Terrace of Light",
+			["mapX"] = 0.54,
+			["level"] = 60,
+			["isGuess"] = false,
+			["time"] = 1646493506,
 		},
 		["Blaithe-Turalyon"] = {
 			["mapID"] = 104,
@@ -30,11 +24,31 @@ SpyPerCharDB = {
 			["isEnemy"] = true,
 			["race"] = "Troll",
 			["isGuess"] = false,
-			["subZone"] = "The Black Temple",
-			["mapX"] = 0.71,
-			["level"] = 60,
-			["time"] = 1644687910,
 			["name"] = "Blaithe-Turalyon",
+			["time"] = 1644687910,
+			["level"] = 60,
+			["mapX"] = 0.71,
+			["subZone"] = "The Black Temple",
 		},
+		["Maxxis-BurningBlade"] = {
+			["mapID"] = 23,
+			["zone"] = "Eastern Plaguelands",
+			["mapY"] = 0.68,
+			["class"] = "PALADIN",
+			["isEnemy"] = true,
+			["isGuess"] = true,
+			["mapX"] = 0.23,
+			["name"] = "Maxxis-BurningBlade",
+			["race"] = "Human",
+			["subZone"] = "The Marris Stead",
+			["level"] = 46,
+			["time"] = 1605661467,
+			["loses"] = 1,
+		},
+	},
+	["IgnoreData"] = {
+	},
+	["version"] = "1.1",
+	["KOSData"] = {
 	},
 }

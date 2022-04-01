@@ -2,12 +2,15 @@
 DataStoreDB = {
 	["profileKeys"] = {
 		["Avisar - Dalaran"] = "Avisar - Dalaran",
-		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
+		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
+		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
+		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
+		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
-		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
-		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
+		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 	},
 	["global"] = {
 		["Guilds"] = {
@@ -16,23 +19,32 @@ DataStoreDB = {
 			},
 		},
 		["Characters"] = {
-			["Default.Dalaran.Varlouris"] = {
-				["faction"] = "Alliance",
-			},
 			["Default.Dalaran.Avisar"] = {
 				["faction"] = "Alliance",
 			},
 			["Default.Dalaran.Darnastris"] = {
 				["faction"] = "Alliance",
 			},
+			["Default.Dalaran.Tendralas"] = {
+				["faction"] = "Alliance",
+			},
+			["Default.Black Dragonflight.Durlok"] = {
+				["faction"] = "Horde",
+			},
+			["Default.Dalaran.Rotclaugh"] = {
+				["faction"] = "Alliance",
+			},
 			["Default.Dalaran.Illingrath"] = {
+				["faction"] = "Alliance",
+			},
+			["Default.Dalaran.Thorinbane"] = {
 				["faction"] = "Alliance",
 			},
 			["Default.Zul'jin.Zulbathal"] = {
 				["faction"] = "Horde",
 			},
-			["Default.Black Dragonflight.Durlok"] = {
-				["faction"] = "Horde",
+			["Default.Dalaran.Varlouris"] = {
+				["faction"] = "Alliance",
 			},
 			["Default.Argent Dawn.Shanyt"] = {
 				["faction"] = "Horde",

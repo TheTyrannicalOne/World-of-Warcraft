@@ -1,501 +1,6 @@
 
 ElvCharacterDB = {
-	["ConvertKeybindings"] = true,
-	["CliqueDatatext"] = {
-	},
-	["ChatEditHistory"] = {
-		"/cw Brelin-Gallywix alrighty thanks", -- [1]
-		"/dance", -- [2]
-		"/cw Stocklock-Azuremyst ok np", -- [3]
-		"/omen toggle", -- [4]
-		"/allthethings", -- [5]
-		"/skada toggle", -- [6]
-	},
 	["ChatHistoryLog"] = {
-		{
-			"WTS M+15 125k ||M+14 115k ||M+12 99k ||M+10 69K||<||BUY 2 GET ARMOR STACK FREE||> Mythic Keys 10-20: M+20 TIMED+KEY 553k ||\"KSM DEAL\"||\"SPECIAL DEAL  FOR 3 RUN AND DISCOUNT\"||TAZAVESH||TORGHAST 1-12||ONLY GOLD||<Huokan Community>", -- [1]
-			"Minervakl-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Minervakl-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1986, -- [11]
-			"Player-3683-0D2C5E51", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Minervakl|r",
-			[51] = 1634611342,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
-		{
-			"WTS AOTC with HoF guild <Efficient>!! END OF WEEK DEAL!!! PST FOR INFO!! GOING NOW!! GOLD ONLY", -- [1]
-			"Iriarí-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Iriarí-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2090, -- [11]
-			"Player-3683-0D26448A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaIriarí|r",
-			[51] = 1634611427,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
-		{
-			"WTS RARE mounts |cffa335ee|Hitem:121815::::::::10:1449:::::::::|h[Voidtalon of the Dark Star]|h|r |cffa335ee|Hitem:63042::::::::10:1449:::::::::|h[Reins of the Phosphorescent Stone Drake]|h|r |cffa335ee|Hitem:63046::::::::10:1449:::::::::|h[Reins of the Grey Riding Camel]|h|rGOLD ONLY!", -- [1]
-			"Salasc-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Salasc-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2177, -- [11]
-			"Player-3683-0D17F308", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaSalasc|r",
-			[51] = 1634611477,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
-		{
-			"WTS M+15 125k ||M+14 115k ||M+12 99k ||M+10 69K||<||BUY 2 GET ARMOR STACK FREE||> Mythic Keys 10-20: M+20 TIMED+KEY 553k ||\"KSM DEAL\"||\"SPECIAL DEAL  FOR 3 RUN AND DISCOUNT\"||TAZAVESH||TORGHAST 1-12||ONLY GOLD||<Huokan Community>", -- [1]
-			"Minervakl-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Minervakl-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2401, -- [11]
-			"Player-3683-0D2C5E51", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Minervakl|r",
-			[51] = 1634611651,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
-		{
-			"WTS RARE mounts |cffa335ee|Hitem:138387::::::::10:1449:::::::::|h[Ratstallion]|h|r |cffa335ee|Hitem:138258::::::::10:1449:::::::::|h[Reins of the Long-Forgotten Hippogryph]|h|r |cffa335ee|Hitem:166433::::::::10:1449:::::::::|h[Frightened Kodo]|h|rGOLD ONLY!", -- [1]
-			"Salasc-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Salasc-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2428, -- [11]
-			"Player-3683-0D17F308", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaSalasc|r",
-			[51] = 1634611672,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
-		{
-			"WTS RARE mounts |cffa335ee|Hitem:121815::::::::10:1449:::::::::|h[Voidtalon of the Dark Star]|h|r |cffa335ee|Hitem:63042::::::::10:1449:::::::::|h[Reins of the Phosphorescent Stone Drake]|h|r |cffa335ee|Hitem:63046::::::::10:1449:::::::::|h[Reins of the Grey Riding Camel]|h|rGOLD ONLY!", -- [1]
-			"Salasc-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Salasc-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2562, -- [11]
-			"Player-3683-0D17F308", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaSalasc|r",
-			[51] = 1634611818,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
-		{
-			"!!WTS +15 Only 125K/(BUY 2 GET FREE ARMOR STACK AND DISCOUNT). Mythic Keys 0-20!/+14=115K /+12=99k /+10=69k /(SPECIAL DEAL FOR 3 RUNS)<WTS  SOD  H & M > WTS Torghast 12/Tazavesh Hardmode /(Leveling 51-60)(PVP in 2s)/ ONLY GOLD >>HUOKAN COMMUNITY<<", -- [1]
-			"Silowert-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Silowert-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2619, -- [11]
-			"Player-3683-0D2AE94A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Silowert|r",
-			[51] = 1634611928,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
-		{
-			"WTS M+15 125k ||M+14 115k ||M+12 99k ||M+10 69K||<||BUY 2 GET ARMOR STACK FREE||> Mythic Keys 10-20: M+20 TIMED+KEY 553k ||\"KSM DEAL\"||\"SPECIAL DEAL  FOR 3 RUN AND DISCOUNT\"||TAZAVESH||TORGHAST 1-12||ONLY GOLD||<Huokan Community>", -- [1]
-			"Minervakl-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Minervakl-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2621, -- [11]
-			"Player-3683-0D2C5E51", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Minervakl|r",
-			[51] = 1634611961,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
-		{
-			"WTS RARE mounts |cffa335ee|Hitem:138387::::::::10:1449:::::::::|h[Ratstallion]|h|r |cffa335ee|Hitem:138258::::::::10:1449:::::::::|h[Reins of the Long-Forgotten Hippogryph]|h|r |cffa335ee|Hitem:166433::::::::10:1449:::::::::|h[Frightened Kodo]|h|rGOLD ONLY!", -- [1]
-			"Salasc-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Salasc-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2622, -- [11]
-			"Player-3683-0D17F308", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaSalasc|r",
-			[51] = 1634611976,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
-		{
-			"F", -- [1]
-			"Chalaman-MoonGuard", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Chalaman-MoonGuard", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2744, -- [11]
-			"Player-3675-0A3F6FF9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Chalaman-MoonGuard|r",
-			[51] = 1634615905,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [10]
-		{
-			"sorry", -- [1]
-			"Palidium-Undermine", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Palidium-Undermine", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2772, -- [11]
-			"Player-71-0E8E78AC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Palidium-Undermine|r",
-			[51] = 1634612503,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [11]
-		{
-			"ty", -- [1]
-			"Dræfend-Ghostlands", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Dræfend-Ghostlands", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2773, -- [11]
-			"Player-1175-0DD904AE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Dræfend-Ghostlands|r",
-			[51] = 1634612513,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [12]
-		{
-			"sry didnt see them ther", -- [1]
-			"Dræfend-Ghostlands", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Dræfend-Ghostlands", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2778, -- [11]
-			"Player-1175-0DD904AE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Dræfend-Ghostlands|r",
-			[51] = 1634612539,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [13]
-		{
-			"melee comp", -- [1]
-			"Palidium-Undermine", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Palidium-Undermine", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2779, -- [11]
-			"Player-71-0E8E78AC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Palidium-Undermine|r",
-			[51] = 1634612542,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [14]
-		{
-			"we have no ranged", -- [1]
-			"Palidium-Undermine", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Palidium-Undermine", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2780, -- [11]
-			"Player-71-0E8E78AC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Palidium-Undermine|r",
-			[51] = 1634612549,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [15]
-		{
-			"it makes it way more effective as holy pally", -- [1]
-			"Palidium-Undermine", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Palidium-Undermine", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2784, -- [11]
-			"Player-71-0E8E78AC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Palidium-Undermine|r",
-			[51] = 1634612573,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [16]
-		{
-			"I've never seen that fire add in here before ", -- [1]
-			"Dræfend-Ghostlands", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Dræfend-Ghostlands", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2789, -- [11]
-			"Player-1175-0DD904AE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Dræfend-Ghostlands|r",
-			[51] = 1634612655,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [17]
-		{
-			"i was gonna red s", -- [1]
-			"Palidium-Undermine", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Palidium-Undermine", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2805, -- [11]
-			"Player-71-0E8E78AC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Palidium-Undermine|r",
-			[51] = 1634612674,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [18]
-		{
-			"*res", -- [1]
-			"Palidium-Undermine", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Palidium-Undermine", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2806, -- [11]
-			"Player-71-0E8E78AC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Palidium-Undermine|r",
-			[51] = 1634612677,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [19]
-		{
-			"gnome or goblin eneineering?", -- [1]
-			"Mythengineer-Zangarmarsh", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Mythengineer-Zangarmarsh", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			2839, -- [11]
-			"Player-53-0D2B729A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeMythengineer-Zangarmarsh|r",
-			[51] = 1634612729,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
-		{
-			"would you rather have teleport to gadgetzan or evverlook?", -- [1]
-			"Balgith-Gorefiend", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Balgith-Gorefiend", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			2853, -- [11]
-			"Player-53-0C499F00", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Balgith-Gorefiend|r",
-			[51] = 1634612748,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
-		{
-			"everlook prob", -- [1]
-			"Mythengineer-Zangarmarsh", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Mythengineer-Zangarmarsh", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			2861, -- [11]
-			"Player-53-0D2B729A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeMythengineer-Zangarmarsh|r",
-			[51] = 1634612761,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
 		{
 			"goblin then", -- [1]
 			"Balgith-Gorefiend", -- [2]
@@ -517,7 +22,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Balgith-Gorefiend|r",
 			[51] = 1634612767,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
+		}, -- [1]
 		{
 			"thanks", -- [1]
 			"Mythengineer-Zangarmarsh", -- [2]
@@ -539,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeMythengineer-Zangarmarsh|r",
 			[51] = 1634612784,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
+		}, -- [2]
 		{
 			"WTS RARE mounts |cffa335ee|Hitem:121815::::::::10:1449:::::::::|h[Voidtalon of the Dark Star]|h|r |cffa335ee|Hitem:63042::::::::10:1449:::::::::|h[Reins of the Phosphorescent Stone Drake]|h|r |cffa335ee|Hitem:63046::::::::10:1449:::::::::|h[Reins of the Grey Riding Camel]|h|rGOLD ONLY!", -- [1]
 			"Salasc-Dalaran", -- [2]
@@ -561,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaSalasc|r",
 			[51] = 1634612789,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
+		}, -- [3]
 		{
 			"!!WTS +15 Only 125K/(BUY 2 GET FREE ARMOR STACK AND DISCOUNT). Mythic Keys 0-20!/+14=115K /+12=99k /+10=69k /(SPECIAL DEAL FOR 3 RUNS)<WTS  SOD  H & M > WTS Torghast 12/Tazavesh Hardmode /(Leveling 51-60)(PVP in 2s)/ ONLY GOLD >>HUOKAN COMMUNITY<<", -- [1]
 			"Silowert-Dalaran", -- [2]
@@ -583,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Silowert|r",
 			[51] = 1634612820,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
+		}, -- [4]
 		{
 			"WTS RARE mounts |cffa335ee|Hitem:138387::::::::10:1449:::::::::|h[Ratstallion]|h|r |cffa335ee|Hitem:138258::::::::10:1449:::::::::|h[Reins of the Long-Forgotten Hippogryph]|h|r |cffa335ee|Hitem:166433::::::::10:1449:::::::::|h[Frightened Kodo]|h|rGOLD ONLY!", -- [1]
 			"Salasc-Dalaran", -- [2]
@@ -605,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaSalasc|r",
 			[51] = 1634612948,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
+		}, -- [5]
 		{
 			"WTS |cffa335ee|Hitem:1168::::::::60:103:::::::::|h[Skullflame Shield]|h|r 100k", -- [1]
 			"Äkümá-Dalaran", -- [2]
@@ -627,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Äkümá|r",
 			[51] = 1634612959,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
+		}, -- [6]
 		{
 			"WTS |cffa335ee|Hitem:163574::::::::60:103:::::::::|h[Chewed-On Reins of the Terrified Pack Mule]|h|r 350k", -- [1]
 			"Äkümá-Dalaran", -- [2]
@@ -649,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Äkümá|r",
 			[51] = 1634612965,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
+		}, -- [7]
 		{
 			"WTS |cff0070dd|Hitem:164334::::::::60:103:::::::::|h[Plundered Blade of Northern Kings]|h|r 120k", -- [1]
 			"Äkümá-Dalaran", -- [2]
@@ -671,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Äkümá|r",
 			[51] = 1634612994,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
+		}, -- [8]
 		{
 			"WTS M+15 125k ||M+14 115k ||M+12 99k ||M+10 69K||<||BUY 2 GET ARMOR STACK FREE||> Mythic Keys 10-20: M+20 TIMED+KEY 553k ||\"KSM DEAL\"||\"SPECIAL DEAL  FOR 3 RUN AND DISCOUNT\"||TAZAVESH||TORGHAST 1-12||ONLY GOLD||<Huokan Community>", -- [1]
 			"Minervakl-Dalaran", -- [2]
@@ -693,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Minervakl|r",
 			[51] = 1634613033,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
+		}, -- [9]
 		{
 			"Dispelled and removed  Divinestorm's |cff71d5ff|Hspell:42514:0|h[Squash Soul]|h|r!", -- [1]
 			"Divinestorm-Dawnbringer", -- [2]
@@ -715,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Divinestorm-Dawnbringer|r",
 			[51] = 1634613332,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [32]
+		}, -- [10]
 		{
 			"May I please have |cff0070dd|Hitem:143901::::::::50:263::22:1:7464:2:28:181:9:60:::::|h[Band of the Petrified Pumpkin]|h|r if you don't need it?", -- [1]
 			"Stocklock-Azuremyst", -- [2]
@@ -737,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edStocklock-Azuremyst|r",
 			[51] = 1634613345,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [33]
+		}, -- [11]
 		{
 			"wont let me trade sorry", -- [1]
 			"Stocklock-Azuremyst", -- [2]
@@ -759,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edStocklock-Azuremyst|r",
 			[51] = 1634613375,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [34]
+		}, -- [12]
 		{
 			"ok np", -- [1]
 			"Stocklock-Azuremyst", -- [2]
@@ -781,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edStocklock-Azuremyst|r",
 			[51] = 1634613392,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [35]
+		}, -- [13]
 		{
 			"|cffffff00Dwarven District is under attack!|r", -- [1]
 			"", -- [2]
@@ -803,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1634703051,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
+		}, -- [14]
 		{
 			"!!WTS +15 Only 140k>(BUY 2 GET ARMOR STACK FREE)//Mythic Keys +10-20!<TIMED+KEY SPECIFIC/+14 135K /+12 99k /+10 69K /+20x3 Runs 568k PER RUN>Key+Timed(SPECIAL DEAL FOR 3 RUNS)!!WTS TAZAVESH <WTS SoD HC>/ ONLY GOLD >>HUOKAN COMMUNITY<< ", -- [1]
 			"Dulcesaless-Dalaran", -- [2]
@@ -825,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcDulcesaless|r",
 			[51] = 1634703084,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
+		}, -- [15]
 		{
 			"WTS  SOD |cff66bbff|Hjournal:0:1193:15|h[Sanctum of Domination]|h|r HC ||10/10  || AOTC || Last 2  || Pst for more info  > GOLD ONLY < Masters Community <", -- [1]
 			"Bufoo-Dalaran", -- [2]
@@ -847,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Bufoo|r",
 			[51] = 1634703125,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
+		}, -- [16]
 		{
 			"Where do I find a Rune Vessel for |cffff2020|Hquest:62719:709|h[The Final Pieces]|h|r I have never seen one in the auction house...", -- [1]
 			"Ainia-Dalaran", -- [2]
@@ -869,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Ainia|r",
 			[51] = 1634703128,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
+		}, -- [17]
 		{
 			"|cffffff00The Canals is under attack!|r", -- [1]
 			"", -- [2]
@@ -891,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1634703128,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
+		}, -- [18]
 		{
 			"WTS Mythic+(12-15) for 233+items;Also do Heroic SOD 10/10 with items guaranteed;Unlock|cffffff00|Hachievement:15130:Player-3683-0D2AFFD6:0:0:0:-1:0:0:0:0|h[Glory of the Dominant Raider]|h|rand do Tazavesh the Veiled Market HM for|cffa335ee|Hitem:186637::::::::1:1448:::::::::|h[Tazavesh Gearglider]|h|r}!,PST", -- [1]
 			"Naisolah-Dalaran", -- [2]
@@ -913,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Naisolah|r",
 			[51] = 1634703150,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
+		}, -- [19]
 		{
 			"check upgrade in the ah shadowgast", -- [1]
 			"Terenadan-Dalaran", -- [2]
@@ -935,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Terenadan|r",
 			[51] = 1634703183,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
+		}, -- [20]
 		{
 			"is what your looking 4", -- [1]
 			"Terenadan-Dalaran", -- [2]
@@ -957,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Terenadan|r",
 			[51] = 1634703195,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [21]
 		{
 			"|cffffff00Lion's Pride Inn is under attack!|r", -- [1]
 			"", -- [2]
@@ -979,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1634941053,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [22]
 		{
 			"|cffffff00Goldshire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1001,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1634941053,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [23]
 		{
 			"Hello Varlouris! Looking for a Guild?  Consider <The Øld Gods>, a large Multi-Server Community / Active Discord / 2 Heroic Raid teams / Events / Mythic Groups / Social-Casual atmosphere.  Accept/PST if interested.", -- [1]
 			"Thornager-Dalaran", -- [2]
@@ -1023,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Thornager|r",
 			[51] = 1634941295,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [46]
+		}, -- [24]
 		{
 			"|cffffff00Saldean's Farm is under attack!|r", -- [1]
 			"", -- [2]
@@ -1045,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1635004044,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [25]
 		{
 			"thx group", -- [1]
 			"Jeremiiah-Darkspear", -- [2]
@@ -1067,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Jeremiiah-Darkspear|r",
 			[51] = 1635124939,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [48]
+		}, -- [26]
 		{
 			"grr wanted gear ><", -- [1]
 			"Rassberry-AeriePeak", -- [2]
@@ -1089,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Rassberry-AeriePeak|r",
 			[51] = 1637293262,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [27]
 		{
 			"o well tmmorw", -- [1]
 			"Rassberry-AeriePeak", -- [2]
@@ -1111,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Rassberry-AeriePeak|r",
 			[51] = 1637293266,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [28]
 		{
 			"wts|cff71d5ff|Hspell:215159:0|h[Long-Forgotten Hippogryph]|h|rCool MOUNT! Get yours now!~pst", -- [1]
 			"Naethoris-Dalaran", -- [2]
@@ -1133,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Naethoris|r",
 			[51] = 1644617305,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [29]
 		{
 			"outside AH |cffffffff|Hitem:49916::::::::32:253:::::::::|h[Lovely Charm Bracelet]|h|r", -- [1]
 			"Asyna-Azuremyst", -- [2]
@@ -1155,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Asyna-Azuremyst|r",
 			[51] = 1644617305,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [30]
 		{
 			"any dwarf hunter near the ah?", -- [1]
 			"Paratha-Dalaran", -- [2]
@@ -1177,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Paratha|r",
 			[51] = 1644617342,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [31]
 		{
 			"there's always a dwarf near the AH..", -- [1]
 			"Porkbbq-Dalaran", -- [2]
@@ -1199,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cPorkbbq|r",
 			[51] = 1644617372,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [32]
 		{
 			"fjb...", -- [1]
 			"Porkbbq-Dalaran", -- [2]
@@ -1221,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cPorkbbq|r",
 			[51] = 1644617494,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [33]
 		{
 			"<Clairvoyance> is selling M+ and heroic/mythic SoD for gold! Come and run with the best Alliance guild on Dalaran! Runs are guaranteed timed and all loot is yours. Guild runs, gold only!", -- [1]
 			"Argenten-Dalaran", -- [2]
@@ -1243,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Argenten|r",
 			[51] = 1644617500,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [34]
 		{
 			"May I please have |cff0070dd|Hitem:143907::::::::51:263::22:1:7464:2:28:181:9:60:::::|h[Shard of Pirouetting Happiness]|h|r if you don't need it?", -- [1]
 			"Brelin-Gallywix", -- [2]
@@ -1265,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Brelin-Gallywix|r",
 			[51] = 1644688466,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [57]
+		}, -- [35]
 		{
 			"soulbound", -- [1]
 			"Brelin-Gallywix", -- [2]
@@ -1287,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Brelin-Gallywix|r",
 			[51] = 1644688486,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [58]
+		}, -- [36]
 		{
 			"alrighty thanks", -- [1]
 			"Brelin-Gallywix", -- [2]
@@ -1309,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Brelin-Gallywix|r",
 			[51] = 1644688495,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [59]
+		}, -- [37]
 		{
 			"WHAT IS LOVE", -- [1]
 			"Çommander-Dalaran", -- [2]
@@ -1331,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cÇommander|r",
 			[51] = 1644790121,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [38]
 		{
 			"BABY DONT HURT ME", -- [1]
 			"Çommander-Dalaran", -- [2]
@@ -1353,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cÇommander|r",
 			[51] = 1644790124,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [39]
 		{
 			"<Final Union> 10/10H, 3/10M is a friendly, casual progression guild LF skilled dependable Tank/healer for our Mythic adventures on Tues/Thurs 9pm-11:30pm. We provide consumables, repairs and help with M+. All good players are welcome!", -- [1]
 			"Kaedaric-Dalaran", -- [2]
@@ -1375,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Kaedaric|r",
 			[51] = 1644790128,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [40]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-301255-3683-104909875|h[Guild: TWO GIRLS ONE SQUID]|h|r is looking for more active and social friends!  We are a casual 18+ guild that just likes to screw around, have fun and enjoy the game together! PST for info.", -- [1]
 			"Flamelox-Dalaran", -- [2]
@@ -1397,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edFlamelox|r",
 			[51] = 1644790128,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [41]
 		{
 			"who tryna go on a romantic gondola ride in the canal?", -- [1]
 			"Torstensen-Dalaran", -- [2]
@@ -1419,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cTorstensen|r",
 			[51] = 1644790289,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [42]
 		{
 			"me", -- [1]
 			"Xuure-Dalaran", -- [2]
@@ -1441,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Xuure|r",
 			[51] = 1644790338,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [43]
 		{
 			"<Final Union> 10/10H, 3/10M is a friendly, casual progression guild LF skilled dependable Tank/healer for our Mythic adventures on Tues/Thurs 9pm-11:30pm. We provide consumables, repairs and help with M+. All good players are welcome!", -- [1]
 			"Kaedaric-Dalaran", -- [2]
@@ -1463,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Kaedaric|r",
 			[51] = 1644790505,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [44]
 		{
 			"Selling 2v2 arena carries for GOLD whisper me", -- [1]
 			"Marcí-Dalaran", -- [2]
@@ -1485,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcMarcí|r",
 			[51] = 1644790511,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [45]
 		{
 			"at what lvl can i solo |cffffff00|Hquest:52228:292|h[Atal'Dazar: An Unbreakable Bone Needle]|h|r? is it still 60?", -- [1]
 			"Baumerrin-Dalaran", -- [2]
@@ -1507,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Baumerrin|r",
 			[51] = 1644790529,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [46]
 		{
 			"like a normal atal?", -- [1]
 			"Kaedaric-Dalaran", -- [2]
@@ -1529,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Kaedaric|r",
 			[51] = 1644790564,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [47]
 		{
 			"cuz i was soloing those at 50", -- [1]
 			"Kaedaric-Dalaran", -- [2]
@@ -1551,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Kaedaric|r",
 			[51] = 1644790575,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [48]
 		{
 			"ok thanks", -- [1]
 			"Baumerrin-Dalaran", -- [2]
@@ -1573,7 +1078,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Baumerrin|r",
 			[51] = 1644790603,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [49]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-301255-3683-104909875|h[Guild: TWO GIRLS ONE SQUID]|h|r is looking for more active and social friends!  We are a casual 18+ guild that just likes to screw around, have fun and enjoy the game together! PST for info.", -- [1]
 			"Flamelox-Dalaran", -- [2]
@@ -1595,7 +1100,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edFlamelox|r",
 			[51] = 1644790608,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [50]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-13585-3683-85720866|h[Guild: Ashes of Renewal]|h|r is now recruiting raiders for 9.2! All classes are welcome.  Raids are on Tues/Mon 8-11 EST. Seeking dps to round out the roster. PST for more info :)", -- [1]
 			"Mooncréscent-Dalaran", -- [2]
@@ -1617,7 +1122,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Mooncréscent|r",
 			[51] = 1644790631,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [51]
 		{
 			"i decided rated was enough fun to keep me playing", -- [1]
 			"Coug-Dawnbringer", -- [2]
@@ -1639,7 +1144,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cCoug-Dawnbringer|r",
 			[51] = 1644892583,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [52]
 		{
 			"Same. Off and on since 07 as well. Came back bcuz it's still quite enjoyable at times", -- [1]
 			"Wickerbeast-Ysera", -- [2]
@@ -1661,7 +1166,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Wickerbeast-Ysera|r",
 			[51] = 1644892595,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [53]
 		{
 			"<Sanctification> is recruiting new members for raiding and dungeons. Friendly and helpful people. Looking for tanks, dps and healers to do Mythics. |cffffd100|HclubFinder:ClubFinder-1-234833-3683-98820873|h[Guild: Sanctification]|h|r", -- [1]
 			"Haruspexx-Dalaran", -- [2]
@@ -1683,7 +1188,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Haruspexx|r",
 			[51] = 1644892601,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [54]
 		{
 			"never been a pvp player maybe i should try", -- [1]
 			"Branwu-Staghelm", -- [2]
@@ -1705,7 +1210,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Branwu-Staghelm|r",
 			[51] = 1644892617,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [55]
 		{
 			"i'm a mad crusade to get everything collected on 12 toons, as in get a high % completion on AllTheThings. and 9.2 comes out on the 22nd. ", -- [1]
 			"Shadoworchid-AeriePeak", -- [2]
@@ -1727,7 +1232,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Shadoworchid-AeriePeak|r",
 			[51] = 1644892646,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [56]
 		{
 			"PvP is definitely worth doing imo", -- [1]
 			"Wickerbeast-Ysera", -- [2]
@@ -1749,7 +1254,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Wickerbeast-Ysera|r",
 			[51] = 1644892646,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [57]
 		{
 			"WTs Tazavesh |cffa335ee|Hitem:186637::::::::1:1446:::::::::|h[Tazavesh Gearglider]|h|r/KSM for(Soultwisted Deathwalker)}||Mythic+15-21s||Heroic SOD raid (10/10-AOTC: Sylvanas Windrunner) /! Pst", -- [1]
 			"Weguois-Dalaran", -- [2]
@@ -1771,7 +1276,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cWeguois|r",
 			[51] = 1644989579,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [58]
 		{
 			"The trees can't be harmed if the Lorax is armed.", -- [1]
 			"Lorax-Spinebreaker", -- [2]
@@ -1793,7 +1298,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Lorax-Spinebreaker|r",
 			[51] = 1645074448,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [59]
 		{
 			"10/10H Fri/Sat 10pm-12am |cffffd100|HclubFinder:ClubFinder-1-46122-3683-86807868|h[Guild: Divine Brilliance]|h|r is actively recruiting raiders for our main team. We’re looking for Healers and Ranged DPS so we can venture farther!  Pst for info!", -- [1]
 			"Lyrarei-Dalaran", -- [2]
@@ -1815,7 +1320,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeLyrarei|r",
 			[51] = 1645074481,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [60]
 		{
 			"u dont need an ak to protect the trees", -- [1]
 			"Kureem-Dalaran", -- [2]
@@ -1837,7 +1342,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Kureem|r",
 			[51] = 1645074488,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [61]
 		{
 			"I am the Lorax who speaks for the trees, which you seem to be chopping as fast as you please!", -- [1]
 			"Lorax-Spinebreaker", -- [2]
@@ -1859,7 +1364,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Lorax-Spinebreaker|r",
 			[51] = 1645074519,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [62]
 		{
 			"these houses wont build themselves!", -- [1]
 			"Kureem-Dalaran", -- [2]
@@ -1881,7 +1386,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Kureem|r",
 			[51] = 1645074531,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [63]
 		{
 			"My poor Swomee-Swans... why they can't sing a note! No one can sing who has smog in his throat. And so, said the Lorax, - please pardon my cough - they cannot live here. So I'm sending them off.", -- [1]
 			"Lorax-Spinebreaker", -- [2]
@@ -1903,7 +1408,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Lorax-Spinebreaker|r",
 			[51] = 1645074551,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [64]
 		{
 			"good riddance", -- [1]
 			"Kureem-Dalaran", -- [2]
@@ -1925,7 +1430,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Kureem|r",
 			[51] = 1645074579,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [65]
 		{
 			"--- N E X U S --- 8/10 Mythic 10/10 Heroic - is recruiting for our Mon/Wed 9-12 EST raid team! Our previous CE mythic core is looking to add a healer and a few more ranged DPS to our roster. Whisper for details!", -- [1]
 			"Mariuss-Dalaran", -- [2]
@@ -1947,7 +1452,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Mariuss|r",
 			[51] = 1645074583,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [66]
 		{
 			"But now... that you're here, the word of the Lorax seems perfectly clear. Unless someone like you cares a whole awful lot, nothing is going to get better. It's not. ", -- [1]
 			"Lorax-Spinebreaker", -- [2]
@@ -1969,7 +1474,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Lorax-Spinebreaker|r",
 			[51] = 1645074604,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [67]
 		{
 			"is this a letter to Ion and Steve?", -- [1]
 			"Kureem-Dalaran", -- [2]
@@ -1991,7 +1496,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Kureem|r",
 			[51] = 1645074629,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [68]
 		{
 			"I don't write letters, they're made of wood. I instead use general chat please use if you could.", -- [1]
 			"Lorax-Spinebreaker", -- [2]
@@ -2013,7 +1518,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Lorax-Spinebreaker|r",
 			[51] = 1645074744,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [69]
 		{
 			"When can you start queueing for Random LFG?", -- [1]
 			"Kemplore-Dalaran", -- [2]
@@ -2035,7 +1540,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcKemplore|r",
 			[51] = 1645164273,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [70]
 		{
 			"anyone want to death roll", -- [1]
 			"Hannes-Doomhammer", -- [2]
@@ -2057,7 +1562,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cHannes-Doomhammer|r",
 			[51] = 1645226616,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [71]
 		{
 			"WHAT IS THAT", -- [1]
 			"Neabh-Dalaran", -- [2]
@@ -2079,7 +1584,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Neabh|r",
 			[51] = 1645226646,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [72]
 		{
 			"<Sanctification> is recruiting new members for raiding and dungeons. Friendly and helpful people. Looking for tanks, dps and healers to do Mythics. |cffffd100|HclubFinder:ClubFinder-1-234833-3683-98820873|h[Guild: Sanctification]|h|r", -- [1]
 			"Haruspexx-Dalaran", -- [2]
@@ -2101,7 +1606,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Haruspexx|r",
 			[51] = 1645226693,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [73]
 		{
 			"<Sanctification> is an AOTC guild recruiting members for raid team and mythics. Friendly and helpful people. Raid Wed 7:30-10/Sun 7:30-10. |cffffd100|HclubFinder:ClubFinder-1-234833-3683-98820873|h[Guild: Sanctification]|h|r", -- [1]
 			"Haruspexx-Dalaran", -- [2]
@@ -2123,7 +1628,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Haruspexx|r",
 			[51] = 1645226694,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [74]
 		{
 			"WTS |cffa335ee|Hitem:72146::::::::10:103::14::1:28:872:::::|h[Swift Lovebird]|h|r 40k", -- [1]
 			"Rageterror-Dalaran", -- [2]
@@ -2145,7 +1650,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Rageterror|r",
 			[51] = 1645226744,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [75]
 		{
 			"<Sanctification> is recruiting new members for raiding and dungeons. Friendly and helpful people. Looking for tanks, dps and healers to do Mythics. |cffffd100|HclubFinder:ClubFinder-1-234833-3683-98820873|h[Guild: Sanctification]|h|r", -- [1]
 			"Haruspexx-Dalaran", -- [2]
@@ -2167,7 +1672,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Haruspexx|r",
 			[51] = 1645226966,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [76]
 		{
 			"<Sanctification> is an AOTC guild recruiting members for raid team and mythics. Friendly and helpful people. Raid Wed 7:30-10/Sun 7:30-10. |cffffd100|HclubFinder:ClubFinder-1-234833-3683-98820873|h[Guild: Sanctification]|h|r", -- [1]
 			"Haruspexx-Dalaran", -- [2]
@@ -2189,6 +1694,501 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Haruspexx|r",
 			[51] = 1645226966,
 			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [77]
+		{
+			"WTB |cffffffff|Hitem:49916::::::::60:105:::::::::|h[Lovely Charm Bracelet]|h|r 150g pst", -- [1]
+			"Bleubelle-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Bleubelle-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2200, -- [11]
+			"Player-3683-0D32EBEE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Bleubelle|r",
+			[51] = 1645401429,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [78]
+		{
+			"<happy friends> is looking for happy friends :)", -- [1]
+			"Tackito-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Tackito-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2202, -- [11]
+			"Player-3683-0D36797B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaTackito|r",
+			[51] = 1645401472,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [79]
+		{
+			"well im depressed and in debt i cant be happy", -- [1]
+			"Ökboomer-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Ökboomer-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2203, -- [11]
+			"Player-3683-0BA96B3C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Ökboomer|r",
+			[51] = 1645401536,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [80]
+		{
+			"i work for the system that holds me down ", -- [1]
+			"Ökboomer-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Ökboomer-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2204, -- [11]
+			"Player-3683-0BA96B3C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Ökboomer|r",
+			[51] = 1645401553,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [81]
+		{
+			"Im not in debt but am also depressed", -- [1]
+			"Aelvkara-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Aelvkara-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2206, -- [11]
+			"Player-3683-0D37820D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcAelvkara|r",
+			[51] = 1645398055,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [82]
+		{
+			"WTB lovely charm bracelets", -- [1]
+			"Radarissa-Dalaran", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Radarissa-Dalaran", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			2207, -- [11]
+			"Player-3683-0D37E2DE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Radarissa|r",
+			[51] = 1645398094,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [83]
+		{
+			"WTB |cffffffff|Hitem:49916::::::::60:260:::::::::|h[Lovely Charm Bracelet]|h|r paying more than radarissa", -- [1]
+			"Queedle-Azuremyst", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Queedle-Azuremyst", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			2208, -- [11]
+			"Player-160-09CC1103", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Queedle-Azuremyst|r",
+			[51] = 1645398113,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [84]
+		{
+			"How do you pull up what something looks like in auction house?", -- [1]
+			"Tigereyez-Dalaran", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Tigereyez-Dalaran", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			2209, -- [11]
+			"Player-3683-0BD0504A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Tigereyez|r",
+			[51] = 1645398117,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [85]
+		{
+			"Its been a LONG time", -- [1]
+			"Tigereyez-Dalaran", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Tigereyez-Dalaran", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			2210, -- [11]
+			"Player-3683-0BD0504A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Tigereyez|r",
+			[51] = 1645398127,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [86]
+		{
+			"<Sanctification> is recruiting new members for raiding and dungeons. Friendly and helpful people. Looking for tanks, dps and healers to do Mythics. |cffffd100|HclubFinder:ClubFinder-1-234833-3683-98820873|h[Guild: Sanctification]|h|r", -- [1]
+			"Chaosramda-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Chaosramda-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2211, -- [11]
+			"Player-3683-0B48E981", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Chaosramda|r",
+			[51] = 1645398129,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [87]
+		{
+			"WTB I HAte you Braclets...", -- [1]
+			"Darkredpally-Staghelm", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Darkredpally-Staghelm", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			2212, -- [11]
+			"Player-160-0B724522", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Darkredpally-Staghelm|r",
+			[51] = 1645398129,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [88]
+		{
+			"ill make more than Queenle", -- [1]
+			"Radarissa-Dalaran", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Radarissa-Dalaran", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			2213, -- [11]
+			"Player-3683-0D37E2DE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Radarissa|r",
+			[51] = 1645398129,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [89]
+		{
+			"|cffffd100|HclubFinder:ClubFinder-1-291188-3683-103981874|h[Guild: Bread Company]|h|r is a social raid/m+ guild recruiting members of all skill levels to join the ranks.  10/10H T/Th 9:30-12 eastern with a bonus Sunday raid.", -- [1]
+			"Doohn-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Doohn-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2214, -- [11]
+			"Player-3683-0D139127", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8687edDoohn|r",
+			[51] = 1645401758,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [90]
+		{
+			"pay*", -- [1]
+			"Radarissa-Dalaran", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Radarissa-Dalaran", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			2215, -- [11]
+			"Player-3683-0D37E2DE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Radarissa|r",
+			[51] = 1645401771,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [91]
+		{
+			"ikd why i typed out 'make'", -- [1]
+			"Radarissa-Dalaran", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Radarissa-Dalaran", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			2216, -- [11]
+			"Player-3683-0D37E2DE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Radarissa|r",
+			[51] = 1645401778,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [92]
+		{
+			"|cffffd100|HclubFinder:ClubFinder-1-13585-3683-85720866|h[Guild: Ashes of Renewal]|h|r is now recruiting raiders for 9.2! All classes are welcome.  Raids are on Tues/Mon 8-11 EST. Seeking a mage to round out the roster. PST for more info :)", -- [1]
+			"Mooncréscent-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Mooncréscent-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2217, -- [11]
+			"Player-3683-0B8F8ED3", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Mooncréscent|r",
+			[51] = 1645401794,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [93]
+		{
+			"Are Dalaran and Azuremyst realms you can trade across?", -- [1]
+			"Queedle-Azuremyst", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Queedle-Azuremyst", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			2218, -- [11]
+			"Player-160-09CC1103", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Queedle-Azuremyst|r",
+			[51] = 1645401818,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [94]
+		{
+			"i dont think you can, no. gotta be the same realm. i think", -- [1]
+			"Radarissa-Dalaran", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Radarissa-Dalaran", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			2219, -- [11]
+			"Player-3683-0D37E2DE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Radarissa|r",
+			[51] = 1645401853,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [95]
+		{
+			"nope", -- [1]
+			"Snowcrest-Staghelm", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Snowcrest-Staghelm", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			2220, -- [11]
+			"Player-160-0B5FDFAA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Snowcrest-Staghelm|r",
+			[51] = 1645401870,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			"Varlouris want to join an awesome guild?  We play nice with others (newbies too), we Raid, we run dungeons, and we help with quests.  We're just chillin in the rain.  Join the RAIN STALKERS.", -- [1]
+			"Peromalin-Dalaran", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Peromalin-Dalaran", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2228, -- [11]
+			"Player-3683-0CBC174C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8687edPeromalin|r",
+			[51] = 1645401949,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [97]
+		{
+			"ty Snowcrest <3", -- [1]
+			"Queedle-Azuremyst", -- [2]
+			"", -- [3]
+			"1. General - Stormwind City", -- [4]
+			"Queedle-Azuremyst", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormwind City", -- [9]
+			0, -- [10]
+			2251, -- [11]
+			"Player-160-09CC1103", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Queedle-Azuremyst|r",
+			[51] = 1645401990,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"|cffffd100|HclubFinder:ClubFinder-1-360367-3683-107255874|h[Guild: Joint Task Force]|h|r is recruiting! We run as a guild, raid as a guild, die, laugh, share nudes & feet pics as a guild--& lookin for more! Can actually do mechanics & don't suck (18+)", -- [1]
+			"Oreocrum-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Oreocrum-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2370, -- [11]
+			"Player-3683-0D2C280F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8687edOreocrum|r",
+			[51] = 1645402415,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
+	},
+	["ConvertKeybindings"] = true,
+	["ChatEditHistory"] = {
+		"/skada toggle", -- [1]
+		"/allthethings", -- [2]
+		"/dance", -- [3]
+		"/cw Brelin-Gallywix alrighty thanks", -- [4]
+		"/cw Stocklock-Azuremyst ok np", -- [5]
+		"/omen toggle", -- [6]
+	},
+	["CliqueDatatext"] = {
 	},
 }

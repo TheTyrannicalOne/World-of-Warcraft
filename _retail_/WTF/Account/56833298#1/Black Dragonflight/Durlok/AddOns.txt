@@ -33,3 +33,4 @@ BFAInvasionTimer_Options: enabled
 Leatrix_Plus: disabled
 ElvUI_CustomTags: disabled
 LittleWigs_Classic: enabled
+kExtraBossFrames: disabled

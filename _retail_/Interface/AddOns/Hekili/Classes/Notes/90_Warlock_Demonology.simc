@@ -1,6 +1,6 @@
 ## Demonology Warlock
 ## https://github.com/simulationcraft/simc/
-## March 15, 2022
+## March 27, 2022
 
 ## Changes:
 ## - Spell Lock.
@@ -11,6 +11,7 @@
 ## - Fleshcraft/Volatile Solvent cancel_if changed to interrupt_if.
 ## - Try to avoid wasting Demonic Core stacks.
 ## - Try to make opener priority only work if we can actually open with a Tyrant.
+## - Improve compatibility with M+ builds.
 
 # Executed before combat begins. Accepts non-harmful actions only.
 actions.precombat+=/fel_domination,if=time>0&!pet.alive
@@ -66,7 +67,7 @@ actions+=/shadow_bolt,if=soul_shard<5&runeforge.balespiders_burning_core&buff.ba
 # If Dreadstalkers are already active, no need to save shards
 actions+=/hand_of_guldan,if=soul_shard>=3&(pet.dreadstalker.active|pet.demonic_tyrant.active)
 actions+=/hand_of_guldan,if=soul_shard>=1&buff.nether_portal.up&cooldown.call_dreadstalkers.remains>2*gcd.max
-actions+=/hand_of_guldan,if=soul_shard>=1&buff.wild_imps.stack>2&variable.next_tyrant_cd<gcd.max&time>first_tyrant_time-gcd.max
+actions+=/hand_of_guldan,if=soul_shard>=1&buff.wild_imps.stack>2&pet.dreadstalker.remains>0.5+cast_time+action.summon_demonic_tyrant.cast_time&pet.dreadstalker.remains<0.5+cast_time+action.summon_demonic_tyrant.cast_time+(0>?(3-soul_shard))*action.shadow_bolt.cast_time&variable.next_tyrant_cd<gcd.max&time>first_tyrant_time-gcd.max
 actions+=/call_action_list,name=covenant_ability,strict=1,if=!covenant.venthyr
 # Without Sacrificed Souls, Soul Strike is stronger than Demonbolt, so it has a higher priority
 actions+=/soul_strike,if=!talent.sacrificed_souls.enabled
@@ -90,9 +91,9 @@ actions.slow_trinkets=use_item,name=soulletting_ruby,cycle_targets=1,if=variable
 actions.slow_trinkets+=/use_item,name=sunblood_amethyst,if=variable.buff_sync_cd<target.distance%5+(2*variable.use_bolt_timings)
 actions.slow_trinkets+=/use_item,name=empyreal_ordnance,if=variable.buff_sync_cd<(target.distance%5)+12+(2*variable.use_bolt_timings)
 
-actions.covenant_ability=soul_rot,if=soulbind.grove_invigoration&(variable.next_tyrant_cd<20|variable.next_tyrant_cd>30)
-actions.covenant_ability+=/soul_rot,if=soulbind.field_of_blossoms&pet.demonic_tyrant.active
-actions.covenant_ability+=/soul_rot,if=soulbind.wild_hunt_tactics&!pet.demonic_tyrant.active&variable.next_tyrant_cd>18
+actions.covenant_ability=soul_rot,if=(soulbind.field_of_blossoms|runeforge.decaying_soul_satchel)&pet.demonic_tyrant.active
+actions.covenant_ability+=/soul_rot,if=soulbind.grove_invigoration&!runeforge.decaying_soul_satchel&(variable.next_tyrant_cd<20|variable.next_tyrant_cd>30)
+actions.covenant_ability+=/soul_rot,if=soulbind.wild_hunt_tactics&!runeforge.decaying_soul_satchel&!pet.demonic_tyrant.active&variable.next_tyrant_cd>18
 actions.covenant_ability+=/decimating_bolt,cycle_targets=1,if=min:target.health.pct,if=!variable.use_bolt_timings&soulbind.lead_by_example&(pet.demonic_tyrant.active&soul_shard<2|!pet.demonic_tyrant.active&variable.next_tyrant_cd>40)
 actions.covenant_ability+=/decimating_bolt,cycle_targets=1,if=min:target.health.pct,if=!variable.use_bolt_timings&soulbind.kevins_oozeling&(pet.demonic_tyrant.active|!pet.demonic_tyrant.active&variable.next_tyrant_cd>40)
 actions.covenant_ability+=/decimating_bolt,cycle_targets=1,if=!variable.use_bolt_timings&(soulbind.forgeborne_reveries|(soulbind.volatile_solvent&!soulbind.kevins_oozeling))&!pet.demonic_tyrant.active

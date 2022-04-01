@@ -22,6 +22,7 @@ BigWigs:AddSounds("Skolex, the Insatiable Ravener", {
 	[359975] = "alarm",
 	[359979] = "alarm",
 	[360451] = "info",
+	[364522] = "info",
 	[364778] = "alert",
 	[366070] = "underyou",
 })
@@ -80,13 +81,16 @@ BigWigs:AddSounds("Lihuvim, Principal Architect", {
 })
 
 BigWigs:AddSounds("Halondrus the Reclaimer", {
-	[360115] = {"info","long"},
+	[360114] = "underyou",
+	[360115] = {"alarm","info","long"},
 	[360977] = {"alert","warning"},
 	[361676] = "alert",
 	[364979] = "long",
 	[365297] = {"alarm","info"},
 	[367079] = "alert",
+	[368363] = "underyou",
 	[368529] = "long",
+	[368969] = {"alarm","info"},
 	[369207] = "underyou",
 	["stages"] = "long",
 })
@@ -112,7 +116,7 @@ BigWigs:AddSounds("Anduin Wrynn", {
 BigWigs:AddSounds("Lords of Dread", {
 	[359960] = "alarm",
 	[359963] = "warning",
-	[360012] = {"info","warning"},
+	[360012] = {"alert","info","warning"},
 	[360146] = "alert",
 	[360229] = "alert",
 	[360284] = {"alarm","alert"},
@@ -138,7 +142,7 @@ BigWigs:AddSounds("Rygelon", {
 	[364386] = "warning",
 	[366379] = "alert",
 	[366606] = "alarm",
-	[368080] = "alert",
+	[368080] = {"alert","info","warning"},
 })
 
 BigWigs:AddSounds("The Jailer", {
@@ -146,21 +150,27 @@ BigWigs:AddSounds("The Jailer", {
 	[359856] = "alarm",
 	[360281] = "warning",
 	[360373] = "alert",
+	[360378] = "alert",
 	[360562] = "alert",
 	[362012] = "long",
 	[362028] = "warning",
-	[362075] = "alarm",
+	[362075] = "warning",
 	[363893] = "alarm",
 	[365033] = "alert",
 	[365150] = "warning",
 	[365169] = "warning",
 	[365212] = {"alert","info","warning"},
-	[365810] = "alarm",
+	[365436] = "warning",
 	[366132] = "alarm",
 	[366285] = "warning",
-	[366377] = "alert",
+	[366374] = "info",
 	[366545] = "warning",
-	[366776] = "alert",
-	[367053] = "alert",
-	["stages"] = {"info","long"},
+	[366678] = "info",
+	[367051] = "info",
+	[368591] = "warning",
+	["mythic_blood_soak_stage_1"] = "long",
+	["mythic_blood_soak_stage_2"] = "long",
+	["mythic_blood_soak_stage_3"] = "long",
+	["mythic_dispel_stage_4"] = "long",
+	["stages"] = "long",
 })

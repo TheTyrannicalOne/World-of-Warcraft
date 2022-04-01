@@ -1,28 +1,16 @@
 
 ElvCharacterDB = {
+	["ConvertKeybindings"] = true,
+	["CliqueDatatext"] = {
+	},
+	["ChatEditHistory"] = {
+		"/opie", -- [1]
+		"/kneel", -- [2]
+		"/reload", -- [3]
+		"/skada toggle", -- [4]
+		"/played", -- [5]
+	},
 	["ChatHistoryLog"] = {
-		{
-			"I heard if biden wins he si goona give away little toons to hsi supporters", -- [1]
-			"Guchito-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Guchito-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			864, -- [11]
-			"Player-3683-0A65001A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcGuchito|r",
-			[51] = 1603840622,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
 		{
 			"go trump go", -- [1]
 			"Cheezestickz-Dalaran", -- [2]
@@ -44,7 +32,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cheezestickz|r",
 			[51] = 1603840623,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
+		}, -- [1]
 		{
 			"There will be no civil war", -- [1]
 			"Woddershins-Dalaran", -- [2]
@@ -66,7 +54,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Woddershins|r",
 			[51] = 1603840625,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
+		}, -- [2]
 		{
 			"2020 2024 2028", -- [1]
 			"Cheezestickz-Dalaran", -- [2]
@@ -88,7 +76,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cheezestickz|r",
 			[51] = 1603840632,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
+		}, -- [3]
 		{
 			"Spammers take it away! clear em out lol", -- [1]
 			"Kyrex-Dalaran", -- [2]
@@ -110,7 +98,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Kyrex|r",
 			[51] = 1603840633,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
+		}, -- [4]
 		{
 			"Go Trump GO to jail!!", -- [1]
 			"Duskstriker-Dalaran", -- [2]
@@ -132,7 +120,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Duskstriker|r",
 			[51] = 1603840642,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
+		}, -- [5]
 		{
 			"definitely a civil war", -- [1]
 			"Taihon-Dalaran", -- [2]
@@ -154,7 +142,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaTaihon|r",
 			[51] = 1603840644,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
+		}, -- [6]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-132573-3683-91314870|h[Guild: Desired Rage]|h|r12/12H Nya Friendly social leveling and raiding guild looking to grow our numbers for Shadowlands. Raid nights (T/TH) M+ (Friday) at 7PM CSTPST Maravox for info.", -- [1]
 			"Marabrand-Dalaran", -- [2]
@@ -176,7 +164,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Marabrand|r",
 			[51] = 1603840645,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
+		}, -- [7]
 		{
 			"ANAL |cff71d5ff|Hpvptal:757|h[Jurisdiction]|h|r", -- [1]
 			"Holyhandx-Dalaran", -- [2]
@@ -198,7 +186,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Holyhandx|r",
 			[51] = 1603840648,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
+		}, -- [8]
 		{
 			"get ready to cry in 7 days liberals", -- [1]
 			"Tastykake-Dalaran", -- [2]
@@ -220,7 +208,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Tastykake|r",
 			[51] = 1603840665,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
+		}, -- [9]
 		{
 			"theres not gonna be a civil war lmfao first day of fighting everyones gonna be like \"fuck i cant check-in at this restaurant on facebook to not give away my location? Im outtie\"", -- [1]
 			"Jørach-Dalaran", -- [2]
@@ -242,7 +230,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Jørach|r",
 			[51] = 1603840669,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
+		}, -- [10]
 		{
 			"i heard biden would take away all the jarbs", -- [1]
 			"Notodaysatan-Dalaran", -- [2]
@@ -264,7 +252,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edNotodaysatan|r",
 			[51] = 1603840670,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
+		}, -- [11]
 		{
 			"lol", -- [1]
 			"Cheezestickz-Dalaran", -- [2]
@@ -286,7 +274,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cheezestickz|r",
 			[51] = 1603840671,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
+		}, -- [12]
 		{
 			"is there such a thing as an \"uncivil\" war?", -- [1]
 			"Inashesxx-Dalaran", -- [2]
@@ -308,7 +296,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeInashesxx|r",
 			[51] = 1603840671,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
+		}, -- [13]
 		{
 			"i think all politicians should go away...", -- [1]
 			"Tzaphqiel-Dalaran", -- [2]
@@ -330,7 +318,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Tzaphqiel|r",
 			[51] = 1603840671,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
+		}, -- [14]
 		{
 			"civil war? ROFL you wont have any guns the pedo will take them away", -- [1]
 			"Talerric-Dalaran", -- [2]
@@ -352,7 +340,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Talerric|r",
 			[51] = 1603840672,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
+		}, -- [15]
 		{
 			"\"liberal\" is right wing, you idiot", -- [1]
 			"Ellyssia-Dalaran", -- [2]
@@ -374,7 +362,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cEllyssia|r",
 			[51] = 1603840678,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
+		}, -- [16]
 		{
 			"just had another downs syndrome retard trump supporter tell me he can't be racist because he is 1/16ths cherokee", -- [1]
 			"Justroot-Dalaran", -- [2]
@@ -396,7 +384,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edJustroot|r",
 			[51] = 1603840679,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
+		}, -- [17]
 		{
 			"i think if the supreme court is involved in this election in any capacity, there will be riots that absolutely dwarf what weve seen so far", -- [1]
 			"Volatize-Dalaran", -- [2]
@@ -418,7 +406,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Volatize|r",
 			[51] = 1603840679,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
+		}, -- [18]
 		{
 			"yeah im gonna love the liberals crying again in 7 days", -- [1]
 			"Loudpackk-Dalaran", -- [2]
@@ -440,7 +428,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Loudpackk|r",
 			[51] = 1603840681,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
+		}, -- [19]
 		{
 			"liberal is left, conservative is right you mindless twit", -- [1]
 			"Tzaphqiel-Dalaran", -- [2]
@@ -462,7 +450,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Tzaphqiel|r",
 			[51] = 1603840695,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
+		}, -- [20]
 		{
 			"Americans are a particularly vulgar sort", -- [1]
 			"Silviasaint-Dalaran", -- [2]
@@ -484,7 +472,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Silviasaint|r",
 			[51] = 1603840700,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
+		}, -- [21]
 		{
 			"smelly chat ", -- [1]
 			"Dankbanana-Dalaran", -- [2]
@@ -506,7 +494,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeDankbanana|r",
 			[51] = 1603840701,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
+		}, -- [22]
 		{
 			"so who want to pick it?", -- [1]
 			"Bankrel-Dalaran", -- [2]
@@ -528,7 +516,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Bankrel|r",
 			[51] = 1603859167,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
+		}, -- [23]
 		{
 			"any one got a blingaton for sw ah steps pls", -- [1]
 			"Cromlust-Dalaran", -- [2]
@@ -550,7 +538,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Cromlust|r",
 			[51] = 1603859274,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
+		}, -- [24]
 		{
 			"Any healers wanna queue for bfda wing 1 lfr so i can finish and sleep :))", -- [1]
 			"Vangzi-Dalaran", -- [2]
@@ -572,7 +560,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Vangzi|r",
 			[51] = 1603859346,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
+		}, -- [25]
 		{
 			"WTS:  Mythic/Heroic Ny'alotha12/12; Mythic+11-20keys Carry;Weekly reward 130ilvl gear ;Guaranteed transmog gear (Dazar'alor).Also do Jaina mount |cffa335ee|Hitem:166705::::::::10:1448:::::::|h[Glacial Tidestorm]|h|r; Pst !", -- [1]
 			"Dopeu-Dalaran", -- [2]
@@ -594,7 +582,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Dopeu|r",
 			[51] = 1603859457,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
+		}, -- [26]
 		{
 			"who would win in a fight hitler or fat albert?", -- [1]
 			"Gadzaka-Dalaran", -- [2]
@@ -616,7 +604,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcGadzaka|r",
 			[51] = 1603900261,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
+		}, -- [27]
 		{
 			"they're unironically really realistic now", -- [1]
 			"Memeshizzle-Dalaran", -- [2]
@@ -638,7 +626,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Memeshizzle|r",
 			[51] = 1604007640,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
+		}, -- [28]
 		{
 			"look real, feel fake", -- [1]
 			"Aurinna-Dalaran", -- [2]
@@ -660,7 +648,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Aurinna|r",
 			[51] = 1604007649,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
+		}, -- [29]
 		{
 			"for some you can hardly tell it's a doll with a good photo it's insane", -- [1]
 			"Memeshizzle-Dalaran", -- [2]
@@ -682,7 +670,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Memeshizzle|r",
 			[51] = 1604007652,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
+		}, -- [30]
 		{
 			"jesus crist!", -- [1]
 			"Biufor-Dalaran", -- [2]
@@ -704,7 +692,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edBiufor|r",
 			[51] = 1604007666,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
+		}, -- [31]
 		{
 			"No, there's no jesus here", -- [1]
 			"Jayci-Dalaran", -- [2]
@@ -726,7 +714,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcJayci|r",
 			[51] = 1604007687,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
+		}, -- [32]
 		{
 			"next step if evolution is no ones married, sits at home hooked to a machine with a sex robot", -- [1]
 			"Apáche-Dalaran", -- [2]
@@ -748,7 +736,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Apáche|r",
 			[51] = 1604007693,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
+		}, -- [33]
 		{
 			"can a mage port me to iron forge?", -- [1]
 			"Nirvãna-Dalaran", -- [2]
@@ -770,7 +758,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Nirvãna|r",
 			[51] = 1604007710,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
+		}, -- [34]
 		{
 			"He left when we started talking about porn. He's a good Christian kid ya know", -- [1]
 			"Lysitheia-Dalaran", -- [2]
@@ -792,7 +780,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lysitheia|r",
 			[51] = 1604007711,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
+		}, -- [35]
 		{
 			"people do that already apache", -- [1]
 			"Aurinna-Dalaran", -- [2]
@@ -814,7 +802,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Aurinna|r",
 			[51] = 1604007715,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
+		}, -- [36]
 		{
 			"freshly baked tendies and a handjob simultaneously, that's the future", -- [1]
 			"Memeshizzle-Dalaran", -- [2]
@@ -836,7 +824,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Memeshizzle|r",
 			[51] = 1604007723,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
+		}, -- [37]
 		{
 			"Freshly baked tendies sounds amazing", -- [1]
 			"Demonmara-Dalaran", -- [2]
@@ -858,7 +846,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Demonmara|r",
 			[51] = 1604007736,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
+		}, -- [38]
 		{
 			"Buffalo tendies", -- [1]
 			"Demonmara-Dalaran", -- [2]
@@ -880,7 +868,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Demonmara|r",
 			[51] = 1604007738,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
+		}, -- [39]
 		{
 			"door dash for nuggies, and have dick pump on max", -- [1]
 			"Aurinna-Dalaran", -- [2]
@@ -902,7 +890,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Aurinna|r",
 			[51] = 1604007740,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
+		}, -- [40]
 		{
 			"It'll get incel genes out the pool so I can dig it.", -- [1]
 			"Lysitheia-Dalaran", -- [2]
@@ -924,7 +912,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lysitheia|r",
 			[51] = 1604007750,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
+		}, -- [41]
 		{
 			"kinda sad, then a few hundred years after that there will be a \"nostalgia\" phase we're people brave going outside", -- [1]
 			"Apáche-Dalaran", -- [2]
@@ -946,7 +934,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Apáche|r",
 			[51] = 1604007757,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [42]
 		{
 			"Is uhh Anduin dead?", -- [1]
 			"Humblewar-Dalaran", -- [2]
@@ -968,7 +956,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cHumblewar|r",
 			[51] = 1604007974,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [43]
 		{
 			"how hard is it to say \"stop sending me your fetish\"", -- [1]
 			"Kandalla-Dalaran", -- [2]
@@ -990,7 +978,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Kandalla|r",
 			[51] = 1604007976,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [44]
 		{
 			"wts|cff71d5ff|Hspell:215159:0|h[Long-Forgotten Hippogryph]|h|rcool MOUNT! Get yours now! pst", -- [1]
 			"Naethoris-Dalaran", -- [2]
@@ -1012,7 +1000,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Naethoris|r",
 			[51] = 1604082245,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [45]
 		{
 			"trying to complete achievement \"tides of vengeance\" but stuck....watched youtube video but something is not matching up...any help would be awesome", -- [1]
 			"Siñ-Dalaran", -- [2]
@@ -1034,7 +1022,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edSiñ|r",
 			[51] = 1604082300,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [46]
 		{
 			"nov 23rd shadowlands drops", -- [1]
 			"Marketvalue-Dalaran", -- [2]
@@ -1056,7 +1044,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Marketvalue|r",
 			[51] = 1604194245,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [47]
 		{
 			"6pm est", -- [1]
 			"Marketvalue-Dalaran", -- [2]
@@ -1078,7 +1066,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Marketvalue|r",
 			[51] = 1604194246,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [48]
 		{
 			"If you redistribute the funds police and their shit unions get and give that to support and mental health workers, you end up with way better opportunity to get to the route of issues rather than just shooting people who don't follow your commands", -- [1]
 			"Prot-Dalaran", -- [2]
@@ -1100,7 +1088,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Prot|r",
 			[51] = 1604194247,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [49]
 		{
 			"Nov 3'rd Trump wins", -- [1]
 			"Tåssiåh-Dalaran", -- [2]
@@ -1122,7 +1110,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Tåssiåh|r",
 			[51] = 1604194251,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [50]
 		{
 			"The moon is flat", -- [1]
 			"Coolranched-Dalaran", -- [2]
@@ -1144,7 +1132,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Coolranched|r",
 			[51] = 1604194255,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [51]
 		{
 			"im just curious how that convictd pimp they put in charge of public safty is going to handle a domestic abuse call?  Seriously, its concerning.", -- [1]
 			"Numinøus-Dalaran", -- [2]
@@ -1166,7 +1154,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeNuminøus|r",
 			[51] = 1604194259,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [52]
 		{
 			"wts|cff71d5ff|Hspell:215159:0|h[Long-Forgotten Hippogryph]|h|rcool MOUNT! Get yours now! pst", -- [1]
 			"Naethoris-Dalaran", -- [2]
@@ -1188,7 +1176,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Naethoris|r",
 			[51] = 1604194262,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [53]
 		{
 			"nov 3rd Trump drops and get fucked his ass", -- [1]
 			"Lógic-Dalaran", -- [2]
@@ -1210,7 +1198,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lógic|r",
 			[51] = 1604194262,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [54]
 		{
 			"wts|cffa335ee|Hitem:163573::::::::50:577:::::::|h[Goldenmane's Reins]|h|rCheaper than AH! pst", -- [1]
 			"Naethoris-Dalaran", -- [2]
@@ -1232,7 +1220,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Naethoris|r",
 			[51] = 1604194265,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [55]
 		{
 			"Wts +15 timed keys cheaper than a wow token. Gold ONLY. The KSM mount is still achieveable (A nice bug) thats unobtainable on the 23rd! Add Awaked Mindborer to your collection now! Will trade all gear aswell. Will gear stack if we can!", -- [1]
 			"Kinkyspal-Dalaran", -- [2]
@@ -1254,7 +1242,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Kinkyspal|r",
 			[51] = 1605219868,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [56]
 		{
 			"Looking for a buddy to do |cffffff00|Hachievement:6932:Player-3683-0B191C83:0:0:0:-1:536866944:0:0:0|h[Glory of the Pandaria Raider]|h|r", -- [1]
 			"Zukkoh-Dalaran", -- [2]
@@ -1276,7 +1264,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Zukkoh|r",
 			[51] = 1605219939,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
+		}, -- [57]
 		{
 			"wts|cff71d5ff|Hspell:215159:0|h[Long-Forgotten Hippogryph]|h|rNice looking MOUNT!Get yours now! pst", -- [1]
 			"Naethoris-Dalaran", -- [2]
@@ -1298,7 +1286,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Naethoris|r",
 			[51] = 1605219964,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [58]
 		{
 			"Sigh.......SIGH......SIGHHHHHH.....", -- [1]
 			"Nekromantic-Dalaran", -- [2]
@@ -1320,7 +1308,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Nekromantic|r",
 			[51] = 1605219974,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [59]
 		{
 			"indeed", -- [1]
 			"Cheezestickz-Dalaran", -- [2]
@@ -1342,7 +1330,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Cheezestickz|r",
 			[51] = 1605219989,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [60]
 		{
 			"WTS RARE mounts |cffa335ee|Hitem:121815::::::::10:1449:::::::::|h[Voidtalon of the Dark Star]|h|r |cffa335ee|Hitem:63042::::::::10:1449:::::::::|h[Reins of the Phosphorescent Stone Drake]|h|r |cffa335ee|Hitem:63046::::::::10:1449:::::::::|h[Reins of the Grey Riding Camel]|h|rGOLD ONLY!", -- [1]
 			"Salasc-Dalaran", -- [2]
@@ -1364,7 +1352,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaSalasc|r",
 			[51] = 1634614692,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [61]
 		{
 			"WTS +10/12/14/15 Carry!! For Gold!! get your 252!! Torgasth? that too, level 10/11/12 Whisp me if interested!!", -- [1]
 			"Shiivana-Dalaran", -- [2]
@@ -1386,7 +1374,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShiivana|r",
 			[51] = 1634614735,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [62]
 		{
 			"WTS M+15 125k ||M+14 115k ||M+12 99k ||M+10 69K||<||BUY 2 GET ARMOR STACK FREE||> Mythic Keys 10-20: M+20 TIMED+KEY 553k ||\"KSM DEAL\"||\"SPECIAL DEAL  FOR 3 RUN AND DISCOUNT\"||TAZAVESH||TORGHAST 1-12||ONLY GOLD||<Huokan Community>", -- [1]
 			"Minervakl-Dalaran", -- [2]
@@ -1408,7 +1396,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Minervakl|r",
 			[51] = 1634614780,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [63]
 		{
 			"!!WTS +15 Only 125K/(BUY 2 GET FREE ARMOR STACK AND DISCOUNT). Mythic Keys 0-20!/+14=115K /+12=99k /+10=69k /(SPECIAL DEAL FOR 3 RUNS)<WTS  SOD  H & M > WTS Torghast 12/Tazavesh Hardmode /(Leveling 51-60)(PVP in 2s)/ ONLY GOLD >>HUOKAN COMMUNITY<<", -- [1]
 			"Silowert-Dalaran", -- [2]
@@ -1430,7 +1418,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Silowert|r",
 			[51] = 1634614809,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [64]
 		{
 			"WTS +10/12/14/15 Carry!! For Gold!! get your 252!! Torgasth? that too, level 10/11/12 Whisp me if interested!!", -- [1]
 			"Shiivana-Dalaran", -- [2]
@@ -1452,7 +1440,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShiivana|r",
 			[51] = 1634614833,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [65]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-1853-3683-48747730|h[Guild: Shadows of Eternity]|h|r We are looking for more people to join our family. We have 3 raid teams currently running, achievement runs, mount runs, mythics and a great player base. If you are wanting a place to call home, PST for more info!", -- [1]
 			"Mmy-Dalaran", -- [2]
@@ -1474,7 +1462,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Mmy|r",
 			[51] = 1634614961,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [66]
 		{
 			"WTS  SOD |cff66bbff|Hjournal:0:1193:15|h[Sanctum of Domination]|h|r HC ||10/10  || AOTC || Last 2  || Pst for more info  > GOLD ONLY < Masters Community <", -- [1]
 			"Bufoo-Dalaran", -- [2]
@@ -1496,7 +1484,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Bufoo|r",
 			[51] = 1634704254,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [67]
 		{
 			"WTS M+15 140k ||M+14 135k ||M+12 99k ||M+10 69K||<||BUY 2 GET ARMOR STACK FREE||> Mythic Keys 10-20: M+20 TIMED+KEY 568k ||\"KSM DEAL\"||\"SPECIAL DEAL  FOR 3 RUN AND DISCOUNT\"||TAZAVESH||TORGHAST 1-12||ONLY GOLD||<Huokan Community>", -- [1]
 			"Minervakl-Dalaran", -- [2]
@@ -1518,7 +1506,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Minervakl|r",
 			[51] = 1634704259,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [68]
 		{
 			"!!WTS +15 Only 140k/(BUY 2 GET FREE ARMOR STACK AND DISCOUNT). Mythic Keys 0-20!/+14=135K /+12=99k /+10=69k /(SPECIAL DEAL FOR 3 RUNS)<WTS  SOD  H & M > WTS Torghast 12/Tazavesh Hardmode /(Leveling 51-60)(PVP in 2s)/ ONLY GOLD >>HUOKAN COMMUNITY<<", -- [1]
 			"Silowert-Dalaran", -- [2]
@@ -1540,7 +1528,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Silowert|r",
 			[51] = 1634704317,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [69]
 		{
 			"WTS Mythic+(12-15) for 233+items;Also do Heroic SOD 10/10 with items guaranteed;Unlock|cffffff00|Hachievement:15130:Player-3683-0D2AFFD6:0:0:0:-1:0:0:0:0|h[Glory of the Dominant Raider]|h|rand do Tazavesh the Veiled Market HM for|cffa335ee|Hitem:186637::::::::1:1448:::::::::|h[Tazavesh Gearglider]|h|r}!,PST", -- [1]
 			"Naisolah-Dalaran", -- [2]
@@ -1562,7 +1550,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Naisolah|r",
 			[51] = 1634704363,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [70]
 		{
 			"!!WTS +15 Only 140k/(BUY 2 GET FREE ARMOR STACK AND DISCOUNT). Mythic Keys 0-20!/+14=135K /+12=99k /+10=69k /(SPECIAL DEAL FOR 3 RUNS)<WTS  SOD  H & M > WTS Torghast 12/Tazavesh Hardmode /(Leveling 51-60)(PVP in 2s)/ ONLY GOLD >>HUOKAN COMMUNITY<<", -- [1]
 			"Silowert-Dalaran", -- [2]
@@ -1584,7 +1572,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Silowert|r",
 			[51] = 1634704513,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [71]
 		{
 			"WTS M+15 140k ||M+14 135k ||M+12 99k ||M+10 69K||<||BUY 2 GET ARMOR STACK FREE||> Mythic Keys 10-20: M+20 TIMED+KEY 568k ||\"KSM DEAL\"||\"SPECIAL DEAL  FOR 3 RUN AND DISCOUNT\"||TAZAVESH||TORGHAST 1-12||ONLY GOLD||<Huokan Community>", -- [1]
 			"Minervakl-Dalaran", -- [2]
@@ -1606,7 +1594,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Minervakl|r",
 			[51] = 1634704564,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [72]
 		{
 			"!!WTS +15 Only 140k>(BUY 2 GET ARMOR STACK FREE)//Mythic Keys +10-20!<TIMED+KEY SPECIFIC/+14 135K /+12 99k /+10 69K /+20x3 Runs 568k PER RUN>Key+Timed(SPECIAL DEAL FOR 3 RUNS)!!WTS TAZAVESH <WTS SoD HC>/ ONLY GOLD >>HUOKAN COMMUNITY<< ", -- [1]
 			"Dulcesaless-Dalaran", -- [2]
@@ -1628,7 +1616,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcDulcesaless|r",
 			[51] = 1634704601,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [73]
 		{
 			"WTS Mythic+(12-15) for 233+items;Also do Heroic SOD 10/10 with items guaranteed;Unlock|cffffff00|Hachievement:15130:Player-3683-0D2AFFD6:0:0:0:-1:0:0:0:0|h[Glory of the Dominant Raider]|h|rand do Tazavesh the Veiled Market HM for|cffa335ee|Hitem:186637::::::::1:1448:::::::::|h[Tazavesh Gearglider]|h|r}!,PST", -- [1]
 			"Naisolah-Dalaran", -- [2]
@@ -1650,7 +1638,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Naisolah|r",
 			[51] = 1634704766,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [74]
 		{
 			"RESET DEALS: M15+ONLY 140k>> BUY 2 GET FREE ARMOR STACK>> M14 135K|| M12 99K|| M10 69K|| SPECIFIC KEY 20+ TIMED 568k|| Bundles: 3xM15 119k ea|| 3xM14 108k ea || 3xM12 75k ea||3xM10 52k ea || SOD HC&M ||WTS TAZAVESH/TORGHAST/ LVL ||GOLD ONLY >>HUOKAN<<", -- [1]
 			"Papusan-Dalaran", -- [2]
@@ -1672,7 +1660,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Papusan|r",
 			[51] = 1634704831,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [75]
 		{
 			"Need Venthyr dps", -- [1]
 			"Wheelsnlegmn-Dalaran", -- [2]
@@ -1694,7 +1682,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Wheelsnlegmn|r",
 			[51] = 1634943475,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [76]
 		{
 			"WTS M+15 140k ||M+14 135k ||M+12 99k ||M+10 69K||<||BUY 2 GET ARMOR STACK FREE||> Mythic Keys 10-20: M+20 TIMED+KEY 568k ||\"KSM DEAL\"||\"SPECIAL DEAL  FOR 3 RUN AND DISCOUNT\"||TAZAVESH||TORGHAST 1-12||ONLY GOLD||<Huokan Community>", -- [1]
 			"Minervakl-Dalaran", -- [2]
@@ -1716,7 +1704,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Minervakl|r",
 			[51] = 1634943476,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [77]
 		{
 			"!!WTS +15 Only 140k>(BUY 2 GET ARMOR STACK FREE)</Mythic Keys +10-20!<TIMED+KEY SPECIFIC/+14 135K /+12 99k /+10 69K /(KEY+TIMED +20 568K) Bundles: 3xM15 119k ea/3xM14 108k ea/3xM12 75k ea/ SoD HC-M / WTS TAZAVESH/TORGHAST/LVL<GOLD ONLY>>>HUOKAN<<<", -- [1]
 			"Dulcessaless-Dalaran", -- [2]
@@ -1738,7 +1726,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcDulcessaless|r",
 			[51] = 1634943497,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [78]
 		{
 			"y not", -- [1]
 			"Wheelsnlegmn-Dalaran", -- [2]
@@ -1760,7 +1748,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Wheelsnlegmn|r",
 			[51] = 1634943505,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [79]
 		{
 			"WTS of the SOD 10/10 HEROIC. THE CHEAPEST PRICES. Fast and Smooth run. 9:00 PM EDT time. For details /w  Only gold. ", -- [1]
 			"Sillena-Dalaran", -- [2]
@@ -1782,7 +1770,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Sillena|r",
 			[51] = 1634943523,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [80]
 		{
 			"WTS >FLASH SALE< |cffffff00|Hachievement:15134:Player-3676-0AFCD208:1:7:24:21:0:0:0:0|h[Ahead of the Curve: Sylvanas Windrunner]|h|r (Tonight) / FULL CLEAR (Tonight) + Funnels / MYTHIC SOD / Halls of Fame Guilds / Verify channel / GOLD ONLY!", -- [1]
 			"Fosfofosfo-Dalaran", -- [2]
@@ -1804,7 +1792,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Fosfofosfo|r",
 			[51] = 1634943798,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [81]
 		{
 			"!!WTS +15 Only 140k>(BUY 2 GET ARMOR STACK FREE)</Mythic Keys +10-20!<TIMED+KEY SPECIFIC/+14 135K /+12 99k /+10 69K /(KEY+TIMED +20 568K) Bundles: 3xM15 119k ea/3xM14 108k ea/3xM12 75k ea/ SoD HC-M / WTS TAZAVESH/TORGHAST/LVL<GOLD ONLY>>>HUOKAN<<<", -- [1]
 			"Dulcessaless-Dalaran", -- [2]
@@ -1826,7 +1814,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcDulcessaless|r",
 			[51] = 1634943811,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [82]
 		{
 			"WTS M+15 140k ||M+14 135k ||M+12 99k ||M+10 69K||<||BUY 2 GET ARMOR STACK FREE||> Mythic Keys 10-20: M+20 TIMED+KEY 568k ||\"KSM DEAL\"||\"SPECIAL DEAL  FOR 3 RUN AND DISCOUNT\"||TAZAVESH||TORGHAST 1-12||ONLY GOLD||<Huokan Community>", -- [1]
 			"Minervakl-Dalaran", -- [2]
@@ -1848,7 +1836,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Minervakl|r",
 			[51] = 1634943871,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [83]
 		{
 			"!!WTS +15 Only 140k/(BUY 2 GET FREE ARMOR STACK AND DISCOUNT). Mythic Keys 0-20!/+14=135K /+12=99k /+10=69k /(SPECIAL DEAL FOR 3 RUNS)<WTS  SOD  H & M > WTS Torghast 12/Tazavesh Hardmode /(Leveling 51-60)(PVP in 2s)/ ONLY GOLD >>HUOKAN COMMUNITY<<", -- [1]
 			"Silowert-Dalaran", -- [2]
@@ -1870,7 +1858,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Silowert|r",
 			[51] = 1635017642,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [84]
 		{
 			"Sale,m+10-15-20 run every 15 min,trusted discord with 5000 ppl, more than 1000 positive reviews on Truspilot,best price Guaranteed!SOD H&N Torghast and Tazaveshavailable too! if you need more loot you can use discount for full run 20% OFF  PLS PM!", -- [1]
 			"Adreessaena-Dalaran", -- [2]
@@ -1892,7 +1880,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Adreessaena|r",
 			[51] = 1635017649,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [85]
 		{
 			"!!WTS +15 Only 140k>(BUY 2 GET ARMOR STACK FREE)/Mythic Keys +10-20!<TIMED+KEY SPECIFIC/+14 135K /+12 99k /+10 69K /+20x3 Runs 568k PER RUN>Key+Timed(SPECIAL DEAL FOR 3 RUNS)!!WTS TAZAVESH<WTS SoD HC/M><PVP<TORGHAST<LVL>/ONLY GOLD>HUOKAN COMMUNITY<", -- [1]
 			"Dulceesaless-Dalaran", -- [2]
@@ -1914,7 +1902,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcDulceesaless|r",
 			[51] = 1635017747,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [86]
 		{
 			"WTS Fast and cheap Sylvanas Sanctum of Domination Normal&Heroic and Torghast and Tazavesh, the Veiled Market with hard mode available too! if you need more loot you can use discount for full run 20% OFF PLS PM!", -- [1]
 			"Adreessaena-Dalaran", -- [2]
@@ -1936,7 +1924,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Adreessaena|r",
 			[51] = 1635017789,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [87]
 		{
 			"Sale,m+10-15-20 run every 15 min,trusted discord with 5000 ppl, more than 1000 positive reviews on Truspilot,best price Guaranteed!SOD H&N Torghast and Tazaveshavailable too! if you need more loot you can use discount for full run 20% OFF  PLS PM!", -- [1]
 			"Adreessaena-Dalaran", -- [2]
@@ -1958,7 +1946,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Adreessaena|r",
 			[51] = 1635017932,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [88]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-301255-3683-104909875|h[Guild: TWO GIRLS ONE SQUID]|h|r is looking for more members to build up our guild. We run keys, torghast, and raiding. We are definitely an 18+ guild so come in and join us. PST for inv ", -- [1]
 			"Mcßeaver-Dalaran", -- [2]
@@ -1980,7 +1968,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edMcßeaver|r",
 			[51] = 1635017989,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [89]
 		{
 			"!!WTS +15 Only 140k>(BUY 2 GET ARMOR STACK FREE)/Mythic Keys +10-20!<TIMED+KEY SPECIFIC/+14 135K /+12 99k /+10 69K /+20x3 Runs 568k PER RUN>Key+Timed(SPECIAL DEAL FOR 3 RUNS)!!WTS TAZAVESH<WTS SoD HC/M><PVP<TORGHAST<LVL>/ONLY GOLD>HUOKAN COMMUNITY<", -- [1]
 			"Dulceesaless-Dalaran", -- [2]
@@ -2002,7 +1990,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcDulceesaless|r",
 			[51] = 1635018072,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [90]
 		{
 			"WTS Fast and cheap Sylvanas Sanctum of Domination Normal&Heroic and Torghast and Tazavesh, the Veiled Market with hard mode available too! if you need more loot you can use discount for full run 20% OFF PLS PM!", -- [1]
 			"Adreessaena-Dalaran", -- [2]
@@ -2024,7 +2012,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Adreessaena|r",
 			[51] = 1635018073,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [91]
 		{
 			"!!WTS +15 Only 140k/(BUY 2 GET FREE ARMOR STACK AND DISCOUNT). Mythic Keys 0-20!/+14=135K /+12=99k /+10=69k /(SPECIAL DEAL FOR 3 RUNS)<WTS  SOD  H & M > WTS Torghast 12/Tazavesh Hardmode /(Leveling 51-60)(PVP in 2s)/ ONLY GOLD >>HUOKAN COMMUNITY<<", -- [1]
 			"Silowert-Dalaran", -- [2]
@@ -2046,7 +2034,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Silowert|r",
 			[51] = 1635018100,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [92]
 		{
 			"WTS  SOD |cff66bbff|Hjournal:0:1193:15|h[Sanctum of Domination]|h|r HC ||10/10  || AOTC || Last 2  || Pst for more info  > GOLD ONLY < Masters Community <", -- [1]
 			"Bufoo-Dalaran", -- [2]
@@ -2068,7 +2056,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Bufoo|r",
 			[51] = 1635126105,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [93]
 		{
 			"is it the right kind of gear? cloth, leather....", -- [1]
 			"Rockstarfire-Dalaran", -- [2]
@@ -2090,7 +2078,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Rockstarfire|r",
 			[51] = 1635126106,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [94]
 		{
 			"WTS FULL HEROIC RUN |cff66bbff|Hjournal:0:1193:15|h[Sanctum of Domination]|h|r Fast and smooth run. Closest raid12:00 PM EASTERN TIME! JUST FEW SPOTS LEFT!Get your 239+ iLvl gear TONIGHT !Discord verify! BEST PRICE!  /w me for more info!", -- [1]
 			"Dtpp-Dalaran", -- [2]
@@ -2112,7 +2100,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Dtpp|r",
 			[51] = 1635126109,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [95]
 		{
 			"is there a way to get king Wrynn's blue lion shoulderguards? and yeah- rockstarfire, I'm a warrior looking at plate on the auction house", -- [1]
 			"Mörzæn-Dalaran", -- [2]
@@ -2134,7 +2122,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cMörzæn|r",
 			[51] = 1635126126,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [96]
 		{
 			"WEEEND DEALS: M15+ONLY 140k>> BUY 2 GET FREE ARMOR STACK>> M14 135K|| M12 99K|| M10 69K|| SPECIFIC KEY 20+ TIMED 568k|| Bundles: 3xM15 119k ea|| 3xM14 108k ea || 3xM12 75k ea||3xM10 52k ea || SOD HC&M ||WTS TAZAVESH/TORGHAST/ LVL ||GOLD ONLY >>HUOKAN<<", -- [1]
 			"Papusan-Dalaran", -- [2]
@@ -2156,7 +2144,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Papusan|r",
 			[51] = 1635126136,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [97]
 		{
 			"when i mouse over certain shoulders it doesn't say \"you haven't collected this appearance yet\" but I don't see the option when I mog", -- [1]
 			"Mörzæn-Dalaran", -- [2]
@@ -2178,16 +2166,28 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cMörzæn|r",
 			[51] = 1635126144,
 			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"<Sanctification> is recruiting new members for raiding and dungeons. Friendly and helpful people. Looking for tanks, dps and healers to do Mythics. |cffffd100|HclubFinder:ClubFinder-1-234833-3683-98820873|h[Guild: Sanctification]|h|r", -- [1]
+			"Chaosramda-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Chaosramda-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			313, -- [11]
+			"Player-3683-0B48E981", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Chaosramda|r",
+			[51] = 1648343640,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
-	},
-	["ConvertKeybindings"] = true,
-	["ChatEditHistory"] = {
-		"/opie", -- [1]
-		"/kneel", -- [2]
-		"/reload", -- [3]
-		"/skada toggle", -- [4]
-		"/played", -- [5]
-	},
-	["CliqueDatatext"] = {
 	},
 }

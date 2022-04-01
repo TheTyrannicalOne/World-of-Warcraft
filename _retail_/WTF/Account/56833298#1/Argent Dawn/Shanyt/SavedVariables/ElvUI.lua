@@ -1,6 +1,5 @@
 
 ElvCharacterDB = {
-	["ConvertKeybindings"] = true,
 	["ChatHistoryLog"] = {
 		{
 			"32% House of the Chosen disrupted (32%)", -- [1]
@@ -2181,6 +2180,8 @@ ElvCharacterDB = {
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},
+	["CliqueDatatext"] = {
+	},
 	["ChatEditHistory"] = {
 		"/paste", -- [1]
 		"/fishingbuddy", -- [2]
@@ -2203,6 +2204,5 @@ ElvCharacterDB = {
 		"/cw Peroyjenkins-Mal'Ganis TY", -- [19]
 		"/opie", -- [20]
 	},
-	["CliqueDatatext"] = {
-	},
+	["ConvertKeybindings"] = true,
 }

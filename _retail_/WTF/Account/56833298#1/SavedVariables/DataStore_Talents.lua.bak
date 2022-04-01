@@ -2,28 +2,21 @@
 DataStore_TalentsDB = {
 	["profileKeys"] = {
 		["Avisar - Dalaran"] = "Avisar - Dalaran",
-		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
+		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
+		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
+		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
+		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
-		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
-		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
+		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 	},
 	["global"] = {
 		["Characters"] = {
-			["Default.Dalaran.Varlouris"] = {
-				["activeSpecRole"] = "DAMAGER",
-				["lastUpdate"] = 1645402377,
-				["Specializations"] = {
-					[2] = 16277,
-				},
-				["activeSpecIndex"] = 2,
-				["activeSpecName"] = "Enhancement",
-				["Class"] = "SHAMAN",
-			},
 			["Default.Dalaran.Avisar"] = {
 				["activeSpecRole"] = "DAMAGER",
-				["lastUpdate"] = 1646612225,
+				["lastUpdate"] = 1648402341,
 				["Specializations"] = {
 					[3] = 9562,
 				},
@@ -33,7 +26,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Dalaran.Darnastris"] = {
 				["activeSpecRole"] = "DAMAGER",
-				["lastUpdate"] = 1645403362,
+				["lastUpdate"] = 1648401437,
 				["Specializations"] = {
 					[3] = 7098,
 				},
@@ -41,9 +34,33 @@ DataStore_TalentsDB = {
 				["activeSpecName"] = "Frost",
 				["Class"] = "MAGE",
 			},
+			["Default.Dalaran.Tendralas"] = {
+				["Class"] = "PRIEST",
+				["lastUpdate"] = 1648401584,
+			},
+			["Default.Black Dragonflight.Durlok"] = {
+				["activeSpecRole"] = "TANK",
+				["lastUpdate"] = 1648303393,
+				["Specializations"] = {
+					[3] = 5631,
+				},
+				["activeSpecIndex"] = 3,
+				["activeSpecName"] = "Guardian",
+				["Class"] = "DRUID",
+			},
+			["Default.Dalaran.Rotclaugh"] = {
+				["activeSpecRole"] = "DAMAGER",
+				["lastUpdate"] = 1648343589,
+				["Specializations"] = {
+					[2] = 1703,
+				},
+				["activeSpecIndex"] = 2,
+				["activeSpecName"] = "Frost",
+				["Class"] = "DEATHKNIGHT",
+			},
 			["Default.Dalaran.Illingrath"] = {
 				["activeSpecRole"] = "TANK",
-				["lastUpdate"] = 1646493499,
+				["lastUpdate"] = 1648343079,
 				["Specializations"] = {
 					[2] = 6649,
 				},
@@ -51,9 +68,19 @@ DataStore_TalentsDB = {
 				["activeSpecName"] = "Vengeance",
 				["Class"] = "DEMONHUNTER",
 			},
+			["Default.Dalaran.Thorinbane"] = {
+				["activeSpecRole"] = "TANK",
+				["lastUpdate"] = 1648345046,
+				["Specializations"] = {
+					[3] = 0,
+				},
+				["activeSpecIndex"] = 3,
+				["activeSpecName"] = "Protection",
+				["Class"] = "WARRIOR",
+			},
 			["Default.Zul'jin.Zulbathal"] = {
 				["activeSpecRole"] = "DAMAGER",
-				["lastUpdate"] = 1646607301,
+				["lastUpdate"] = 1648402490,
 				["Specializations"] = {
 					9709, -- [1]
 				},
@@ -61,15 +88,15 @@ DataStore_TalentsDB = {
 				["activeSpecName"] = "Balance",
 				["Class"] = "DRUID",
 			},
-			["Default.Black Dragonflight.Durlok"] = {
-				["activeSpecRole"] = "TANK",
-				["lastUpdate"] = 1646485873,
+			["Default.Dalaran.Varlouris"] = {
+				["activeSpecRole"] = "DAMAGER",
+				["lastUpdate"] = 1648343288,
 				["Specializations"] = {
-					[3] = 5631,
+					[2] = 16277,
 				},
-				["activeSpecIndex"] = 3,
-				["activeSpecName"] = "Guardian",
-				["Class"] = "DRUID",
+				["activeSpecIndex"] = 2,
+				["activeSpecName"] = "Enhancement",
+				["Class"] = "SHAMAN",
 			},
 			["Default.Argent Dawn.Shanyt"] = {
 				["Conduits"] = {
@@ -100,7 +127,7 @@ DataStore_TalentsDB = {
 					[52] = "1|181735|171|3|Fury",
 				},
 				["activeSpecRole"] = "DAMAGER",
-				["lastUpdate"] = 1647586534,
+				["lastUpdate"] = 1648302387,
 				["Specializations"] = {
 					5851, -- [1]
 				},
@@ -108,8 +135,8 @@ DataStore_TalentsDB = {
 				["activeSpecName"] = "Arms",
 				["Class"] = "WARRIOR",
 				["Soulbinds"] = {
-					[1869] = "1|0|0|0|",
-					[1425] = "0|0|0|-1|",
+					[1554] = "0|0|0|1|",
+					[1551] = "2|0|0|-1|",
 					[1396] = "1|10|3|2|",
 					[1400] = "1|169|3|1|",
 					[1404] = "1|0|0|-1|",
@@ -117,8 +144,8 @@ DataStore_TalentsDB = {
 					[1872] = "0|0|0|1|",
 					[1857] = "0|0|0|-1|",
 					[1546] = "0|0|0|-1|",
-					[1550] = "0|0|0|-1|",
-					[1554] = "0|0|0|1|",
+					[1424] = "0|0|0|-1|",
+					[1869] = "1|0|0|0|",
 					[1873] = "0|0|0|-1|",
 					[1877] = "0|0|0|-1|",
 					[1005] = "2|0|0|0|",
@@ -129,9 +156,9 @@ DataStore_TalentsDB = {
 					[1397] = "3|8|3|0|",
 					[1401] = "3|283|7|2|",
 					[1405] = "3|27|3|2|",
-					[1551] = "2|0|0|-1|",
+					[1425] = "0|0|0|-1|",
 					[998] = "0|0|0|-1|",
-					[1000] = "0|0|0|0|",
+					[1858] = "0|0|0|0|",
 					[1421] = "0|0|0|-1|",
 					[1866] = "3|11|3|1|",
 					[1006] = "2|0|0|2|",
@@ -140,23 +167,23 @@ DataStore_TalentsDB = {
 					[1870] = "3|7|3|2|",
 					[1419] = "0|0|0|-1|",
 					[1426] = "3|0|0|-1|",
-					[1548] = "0|0|0|0|",
+					[1422] = "0|0|0|2|",
 					[1394] = "1|0|0|-1|",
 					[1398] = "3|0|0|-1|",
 					[1402] = "3|0|0|-1|",
 					[1406] = "3|0|0|-1|",
-					[1867] = "1|0|0|-1|",
+					[1552] = "0|0|0|-1|",
 					[1855] = "0|0|0|1|",
 					[1859] = "0|0|0|2|",
-					[1422] = "0|0|0|2|",
-					[1552] = "0|0|0|-1|",
-					[1556] = "0|0|0|2|",
-					[1560] = "0|0|0|-1|",
+					[1548] = "0|0|0|0|",
+					[1867] = "1|0|0|-1|",
+					[1871] = "3|0|0|-1|",
+					[1875] = "0|0|0|0|",
 					[1420] = "0|0|0|-1|",
 					[1553] = "0|0|0|0|",
 					[1559] = "0|0|0|-1|",
-					[1875] = "0|0|0|0|",
-					[1871] = "3|0|0|-1|",
+					[1560] = "0|0|0|-1|",
+					[1556] = "0|0|0|2|",
 					[1395] = "3|165|3|1|",
 					[1399] = "1|0|0|0|",
 					[1403] = "1|0|0|-1|",
@@ -168,8 +195,8 @@ DataStore_TalentsDB = {
 					[1868] = "3|0|0|-1|",
 					[1557] = "0|0|0|-1|",
 					[1876] = "0|0|0|2|",
-					[1858] = "0|0|0|0|",
-					[1424] = "0|0|0|-1|",
+					[1000] = "0|0|0|0|",
+					[1550] = "0|0|0|-1|",
 				},
 				["activeSoulbindID"] = 8,
 			},
@@ -179,14 +206,52 @@ DataStore_TalentsDB = {
 DataStore_TalentsRefDB = {
 	["profileKeys"] = {
 		["Avisar - Dalaran"] = "Avisar - Dalaran",
-		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
+		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
+		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
+		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
+		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
-		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
-		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
+		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 	},
 	["global"] = {
+		["DEATHKNIGHT"] = {
+			["Locale"] = "enUS",
+			["Specializations"] = {
+				{
+					["id"] = 250,
+				}, -- [1]
+				{
+					["id"] = 251,
+					["talents"] = {
+						22016, -- [1]
+						22017, -- [2]
+						22018, -- [3]
+						22019, -- [4]
+						22020, -- [5]
+						22021, -- [6]
+						22515, -- [7]
+						22517, -- [8]
+						22519, -- [9]
+						22521, -- [10]
+						22523, -- [11]
+						22525, -- [12]
+						22527, -- [13]
+						22530, -- [14]
+						23373, -- [15]
+						22531, -- [16]
+						22533, -- [17]
+						22535, -- [18]
+					},
+				}, -- [2]
+				{
+					["id"] = 252,
+				}, -- [3]
+			},
+			["Version"] = 42852,
+		},
 		["WARRIOR"] = {
 			["Locale"] = "enUS",
 			["Specializations"] = {
@@ -221,9 +286,17 @@ DataStore_TalentsRefDB = {
 				}, -- [2]
 				{
 					["id"] = 73,
+					["talents"] = {
+						15760, -- [1]
+						15759, -- [2]
+						15774, -- [3]
+						19676, -- [4]
+						22629, -- [5]
+						22409, -- [6]
+					},
 				}, -- [3]
 			},
-			["Version"] = 42698,
+			["Version"] = 42852,
 		},
 		["PALADIN"] = {
 			["Locale"] = "enUS",
@@ -261,7 +334,7 @@ DataStore_TalentsRefDB = {
 					},
 				}, -- [3]
 			},
-			["Version"] = 42560,
+			["Version"] = 42852,
 		},
 		["MAGE"] = {
 			["Locale"] = "enUS",
@@ -299,7 +372,7 @@ DataStore_TalentsRefDB = {
 					},
 				}, -- [3]
 			},
-			["Version"] = 42010,
+			["Version"] = 42852,
 		},
 		["DRUID"] = {
 			["Locale"] = "enUS",
@@ -363,7 +436,7 @@ DataStore_TalentsRefDB = {
 					["id"] = 105,
 				}, -- [4]
 			},
-			["Version"] = 42560,
+			["Version"] = 42852,
 		},
 		["SHAMAN"] = {
 			["Locale"] = "enUS",
@@ -401,7 +474,7 @@ DataStore_TalentsRefDB = {
 					["id"] = 264,
 				}, -- [3]
 			},
-			["Version"] = 42010,
+			["Version"] = 42852,
 		},
 		["DEMONHUNTER"] = {
 			["Locale"] = "enUS",
@@ -436,7 +509,7 @@ DataStore_TalentsRefDB = {
 					},
 				}, -- [2]
 			},
-			["Version"] = 42560,
+			["Version"] = 42852,
 		},
 	},
 }
