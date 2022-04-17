@@ -20,26 +20,26 @@ HandyNotes_BrokenShoreDB = {
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
-		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
-		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
-		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
-		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Laymonan - Zul'jin"] = "Laymonan - Zul'jin",
-		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
-		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
 		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
+		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
+		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
-		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Abyronterner - Zul'jin"] = "Abyronterner - Zul'jin",
-		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Jasmoney - Zul'jin"] = "Jasmoney - Zul'jin",
-		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
+		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Mandles - Zul'jin"] = "Mandles - Zul'jin",
 	},
 	["profiles"] = {
@@ -81,45 +81,45 @@ HandyNotes_BrokenShoreDB = {
 		},
 		["Kelvalatar - Dalaran"] = {
 		},
-		["Brotus - Argent Dawn"] = {
-		},
-		["Shimzo - Zul'jin"] = {
+		["Banesmuncy - Zul'jin"] = {
 		},
 		["Varlouris - Dalaran"] = {
 		},
-		["Okona - Zul'jin"] = {
+		["Shimzo - Zul'jin"] = {
 		},
-		["Tinkster - Dalaran"] = {
+		["Guufnah - Zul'jin"] = {
+		},
+		["Okona - Zul'jin"] = {
 		},
 		["Jingojaggot - Zul'jin"] = {
 		},
-		["Fantastiburo - Zul'jin"] = {
+		["Kotalkhan - Zul'jin"] = {
 		},
 		["Shanyt - Argent Dawn"] = {
 		},
 		["Laymonan - Zul'jin"] = {
 		},
-		["Datgore - Zul'jin"] = {
+		["Tyran - Argent Dawn"] = {
 		},
 		["Vadder - Argent Dawn"] = {
 		},
-		["Tyran - Argent Dawn"] = {
-		},
 		["Serbitechna - Dalaran"] = {
+		},
+		["Datgore - Zul'jin"] = {
 		},
 		["Darnastris - Dalaran"] = {
 		},
 		["Rotclaugh - Dalaran"] = {
 		},
-		["Kotalkhan - Zul'jin"] = {
+		["Fantastiburo - Zul'jin"] = {
 		},
 		["Abyronterner - Zul'jin"] = {
 		},
-		["Guufnah - Zul'jin"] = {
+		["Tinkster - Dalaran"] = {
 		},
 		["Jasmoney - Zul'jin"] = {
 		},
-		["Banesmuncy - Zul'jin"] = {
+		["Brotus - Argent Dawn"] = {
 		},
 		["Mandles - Zul'jin"] = {
 		},

@@ -16,15 +16,15 @@ DataStore_AgendaDB = {
 		["Options"] = {
 			["WeeklyResetHour"] = 6,
 			["WeeklyResetDay"] = 2,
-			["NextWeeklyReset"] = "2022-03-29",
+			["NextWeeklyReset"] = "2022-04-19",
 		},
 		["Characters"] = {
 			["Default.Dalaran.Avisar"] = {
 				["DungeonIDs"] = {
-					["Blackwing Lair 40 Player|409045461"] = "163660|1648402344|0|1",
-					["Molten Core 40 Player|409043695"] = "163660|1648402344|0|1",
+					["Blackwing Lair 40 Player|409969311"] = "223192|1650157212|0|1",
+					["Molten Core 40 Player|409968591"] = "223192|1650157212|0|1",
 				},
-				["lastUpdate"] = 1648402354,
+				["lastUpdate"] = 1650157223,
 			},
 			["Default.Dalaran.Darnastris"] = {
 				["lastUpdate"] = 1648401449,
@@ -33,28 +33,28 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1648402104,
 			},
 			["Default.Black Dragonflight.Durlok"] = {
-				["lastUpdate"] = 1648303404,
+				["lastUpdate"] = 1650149160,
 			},
 			["Default.Dalaran.Rotclaugh"] = {
 				["lastUpdate"] = 1648343686,
 			},
 			["Default.Dalaran.Illingrath"] = {
 				["DungeonIDs"] = {
-					["Black Temple Normal|409013769"] = "222922|1648343079|0|1",
+					["Black Temple Normal|409971684"] = "223320|1650157085|0|1",
 				},
-				["lastUpdate"] = 1648343079,
-			},
-			["Default.Zul'jin.Zulbathal"] = {
-				["lastUpdate"] = 1648402502,
+				["lastUpdate"] = 1650157094,
 			},
 			["Default.Dalaran.Thorinbane"] = {
 				["lastUpdate"] = 1648345057,
+			},
+			["Default.Zul'jin.Zulbathal"] = {
+				["lastUpdate"] = 1650149500,
 			},
 			["Default.Dalaran.Varlouris"] = {
 				["lastUpdate"] = 1648343298,
 			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["lastUpdate"] = 1648402747,
+				["lastUpdate"] = 1650157828,
 			},
 		},
 	},

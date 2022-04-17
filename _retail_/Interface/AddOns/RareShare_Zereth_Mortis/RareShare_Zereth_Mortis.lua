@@ -31,7 +31,7 @@ RareShare:LoadModule({
 		[180924] = {Addon.Loc.Rares[180924], 1, false, false, 64719, 69.07, 36.64}, -- Garudeon
         [180978] = {Addon.Loc.Rares[180978], 1, false, false, 65548, 52.36, 75.51}, -- Hirukon
         [183814] = {Addon.Loc.Rares[183814], 1, false, false, 65257, 58.65, 40.36}, -- Otaris the Provoked
-        [183748] = {Addon.Loc.Rares[183748], 1, false, false, 65551, 58.09, 68.29}, -- Helmix
+        [183748] = {Addon.Loc.Rares[183748], 1, false, false, 65551, 58.09, 68.29}, -- Helmix (quest id is wrong)
         [183516] = {Addon.Loc.Rares[183516], 1, false, false, 65580, 43.93, 75.07}, -- The Engulfer
         [183746] = {Addon.Loc.Rares[183746], 1, false, false, 65556, 43.35, 89.20}, -- Otiosen
         [180917] = {Addon.Loc.Rares[180917], 1, false, false, 64716, 53.63, 44.36}, -- Destabilized Core
@@ -66,19 +66,24 @@ function RareShare:CheckZerethMortisEvent(inText, inSourceName)
     if (RareShareDB_ZerethMortis["Config"]["Events"]) then
         local Module = RareShare:GetModule(1970)
         local Msg = Addon.Loc.Events.Prefix .. " "
-        local X, Y, Rare, RareID
+        local X, Y, Rare, RareID, QuestID
 		
 		for id, text in pairs (Addon.Loc.Events) do
 			if(string.find(inText, text)) then
 				RareID = id
 				Rare = Addon.Loc.Rares[RareID]
+				QuestID = Module.Rares[RareID][5]
 				x = Module.Rares[RareID][6]
 				y = Module.Rares[RareID][7]
 				break
 			end
 		end
         
-        if Rare == nil then return end
+        if Rare == nil or QuestID == nil then return end
+		
+		-- Blizzard keeps broadcasting even after Helmix is done for some reason
+		if C_QuestLog.IsQuestFlaggedCompleted(QuestID) == true then return end
+		
 		Msg = Msg .. Rare .. " (" .. x .. ", " .. y .. ")"
 		
 		-- Set hyperlink

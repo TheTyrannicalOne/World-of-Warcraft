@@ -3,138 +3,93 @@ EncounterDetailsDB = {
 	["emotes"] = {
 		{
 			{
-				6.742000000000076, -- [1]
+				1.871000000000095, -- [1]
 				"Come, my minions. Deal with this traitor as he deserves!", -- [2]
 				"Illidan Stormrage", -- [3]
 				7, -- [4]
 			}, -- [1]
 			{
-				12.82800000000009, -- [1]
+				7.922000000000026, -- [1]
 				"I will deal with these mongrels! Strike now, friends! Strike at the Betrayer!", -- [2]
 				"Akama", -- [3]
 				7, -- [4]
 			}, -- [2]
 			{
-				57.85300000000007, -- [1]
+				41.87900000000036, -- [1]
 				"Is this it, mortals? Is this all the fury you can muster?", -- [2]
 				"Illidan Stormrage", -- [3]
 				7, -- [4]
 			}, -- [3]
 			{
-				67.53700000000003, -- [1]
+				51.62199999999984, -- [1]
 				"Their fury pales before mine, Illidan. We have some unsettled business between us.", -- [2]
 				"Maiev Shadowsong", -- [3]
 				7, -- [4]
 			}, -- [4]
 			{
-				76.12, -- [1]
+				60.11299999999983, -- [1]
 				"Maiev... How is it even possible?", -- [2]
 				"Illidan Stormrage", -- [3]
 				7, -- [4]
 			}, -- [5]
 			{
-				82.23300000000006, -- [1]
+				66.18200000000024, -- [1]
 				"My long hunt is finally over. Today, Justice will be done!", -- [2]
 				"Maiev Shadowsong", -- [3]
 				7, -- [4]
 			}, -- [6]
 			{
-				91.18200000000002, -- [1]
+				76.00700000000006, -- [1]
 				"Feel the hatred of ten thousand years!", -- [2]
 				"Illidan Stormrage", -- [3]
 				7, -- [4]
 			}, -- [7]
 			{
-				120.3760000000001, -- [1]
-				"%s falls to the floor.", -- [2]
-				"Maiev Shadowsong", -- [3]
-				3, -- [4]
-			}, -- [8]
-			{
-				121.211, -- [1]
+				78.3449999999998, -- [1]
 				"It is finished. You are beaten.", -- [2]
 				"Maiev Shadowsong", -- [3]
 				7, -- [4]
-			}, -- [9]
+			}, -- [8]
 			{
-				127.293, -- [1]
+				84.41300000000001, -- [1]
 				"You have won... Maiev. But the huntress... is nothing without the hunt. You... are nothing... without me.", -- [2]
 				"Illidan Stormrage", -- [3]
 				7, -- [4]
-			}, -- [10]
+			}, -- [9]
 			["boss"] = "Illidan Stormrage",
 		}, -- [1]
 		{
 			{
-				1.127000000000408, -- [1]
-				"Come, my minions. Deal with this traitor as he deserves!", -- [2]
-				"Illidan Stormrage", -- [3]
-				7, -- [4]
-			}, -- [1]
-			{
-				7.18500000000131, -- [1]
-				"I will deal with these mongrels! Strike now, friends! Strike at the Betrayer!", -- [2]
-				"Akama", -- [3]
-				7, -- [4]
-			}, -- [2]
-			{
-				41.19700000000012, -- [1]
-				"Is this it, mortals? Is this all the fury you can muster?", -- [2]
-				"Illidan Stormrage", -- [3]
-				7, -- [4]
-			}, -- [3]
-			{
-				50.81300000000192, -- [1]
-				"Their fury pales before mine, Illidan. We have some unsettled business between us.", -- [2]
-				"Maiev Shadowsong", -- [3]
-				7, -- [4]
-			}, -- [4]
-			{
-				59.42399999999907, -- [1]
-				"Maiev... How is it even possible?", -- [2]
-				"Illidan Stormrage", -- [3]
-				7, -- [4]
-			}, -- [5]
-			{
-				65.50200000000041, -- [1]
-				"My long hunt is finally over. Today, Justice will be done!", -- [2]
-				"Maiev Shadowsong", -- [3]
-				7, -- [4]
-			}, -- [6]
-			{
-				75.31999999999971, -- [1]
-				"Feel the hatred of ten thousand years!", -- [2]
-				"Illidan Stormrage", -- [3]
-				7, -- [4]
-			}, -- [7]
-			{
-				78.88500000000204, -- [1]
-				"It is finished. You are beaten.", -- [2]
-				"Maiev Shadowsong", -- [3]
-				7, -- [4]
-			}, -- [8]
-			{
-				84.9320000000007, -- [1]
-				"You have won... Maiev. But the huntress... is nothing without the hunt. You... are nothing... without me.", -- [2]
-				"Illidan Stormrage", -- [3]
-				7, -- [4]
-			}, -- [9]
-			["boss"] = "Illidan Stormrage",
-		}, -- [2]
-		{
-			{
-				0.2010000000009313, -- [1]
-				"Flee or die!", -- [2]
-				"Lady Malande", -- [3]
+				0.1700000000000728, -- [1]
+				"I have better things to do...", -- [2]
+				"Gathios the Shatterer", -- [3]
 				7, -- [4]
 			}, -- [1]
 			["boss"] = "The Illidari Council",
+		}, -- [2]
+		{
+			{
+				0.1619999999998072, -- [1]
+				"So... business or pleasure?", -- [2]
+				"Mother Shahraz", -- [3]
+				7, -- [4]
+			}, -- [1]
+			{
+				3.994999999999891, -- [1]
+				"Stop toying with my emotions!", -- [2]
+				"Mother Shahraz", -- [3]
+				7, -- [4]
+			}, -- [2]
+			["boss"] = "Mother Shahraz",
 		}, -- [3]
 	},
 	["encounter_spells"] = {
 		[41978] = {
 			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Ashtongue Rogue",
@@ -165,6 +120,15 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Illidan Stormrage",
+		},
+		[41431] = {
+			["school"] = 8,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Essence of Desire",
 		},
 		[41248] = {
 			["school"] = 32,
@@ -198,6 +162,7 @@ EncounterDetailsDB = {
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Gathios the Shatterer",
@@ -324,6 +289,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Illidan Stormrage",
 		},
+		[40832] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Illidan Stormrage",
+		},
 		[42023] = {
 			["school"] = 4,
 			["type"] = "DEBUFF",
@@ -333,12 +306,11 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ashtongue Elementalist",
 		},
-		[39635] = {
-			["school"] = 1,
+		[40841] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Illidan Stormrage",
 		},
 		[1604] = {
 			["school"] = 1,
@@ -348,19 +320,28 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Illidari Elite",
 		},
-		[40832] = {
-			["school"] = 4,
+		[39635] = {
+			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "Illidan Stormrage",
 		},
-		[40841] = {
-			["school"] = 4,
+		[41471] = {
+			["school"] = 2,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
+			["source"] = "Lady Malande",
+		},
+		[40647] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Illidan Stormrage",
 		},
 		[40836] = {
 			["school"] = 4,
@@ -370,13 +351,6 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Flame Crash",
-		},
-		[41471] = {
-			["school"] = 2,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Lady Malande",
 		},
 		[41032] = {
 			["school"] = 1,
@@ -396,14 +370,16 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Essence of Suffering",
 		},
-		[40647] = {
-			["school"] = 1,
+		[41426] = {
+			["school"] = 64,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Illidan Stormrage",
+			["source"] = "Essence of Desire",
 		},
 	},
 }

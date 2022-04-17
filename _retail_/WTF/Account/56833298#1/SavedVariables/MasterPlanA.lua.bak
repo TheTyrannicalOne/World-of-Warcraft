@@ -1,43 +1,9 @@
 
 MasterPlanAG = {
-	["Argent Dawn"] = {
-		["Shanyt"] = {
-			["class"] = "WARRIOR",
-			["summary"] = {
-				["lastOilTime"] = 1648303256,
-				["ti2"] = 122486,
-				["inProgress"] = {
-					[455] = 1648332005,
-					[396] = 1648331989,
-					[126] = 1648317651,
-					[133] = 1648324844,
-					[738] = 1648304163,
-					[268] = 1648317593,
-					[210] = 1648305935,
-					[733] = 1648304166,
-					[677] = 1648321249,
-					[174] = 1648306846,
-					[678] = 1648346386,
-					[726] = 1648304160,
-					[325] = 1648332018,
-				},
-				["ti3"] = 127855,
-				["tt1"] = 1647937630,
-				["ti1"] = 118531,
-				["tt3"] = true,
-				["tt2"] = 1647937631,
-			},
-			["curOil"] = 98140,
-			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1648303146,
-			["curRes"] = 9555,
-			["faction"] = "Horde",
-		},
-	},
-	["Black Dragonflight"] = {
-		["Durlok"] = {
-			["faction"] = "Horde",
+	["Zul'jin"] = {
+		["Zulbathal"] = {
 			["class"] = "DRUID",
+			["faction"] = "Horde",
 		},
 	},
 	["Dalaran"] = {
@@ -46,34 +12,70 @@ MasterPlanAG = {
 			["class"] = "DEMONHUNTER",
 		},
 		["Tendralas"] = {
-			["class"] = "PRIEST",
 			["faction"] = "Alliance",
+			["class"] = "PRIEST",
 		},
 		["Avisar"] = {
-			["faction"] = "Alliance",
 			["class"] = "PALADIN",
+			["faction"] = "Alliance",
 		},
 		["Thorinbane"] = {
-			["faction"] = "Alliance",
 			["class"] = "WARRIOR",
+			["faction"] = "Alliance",
 		},
 		["Rotclaugh"] = {
-			["faction"] = "Alliance",
 			["class"] = "DEATHKNIGHT",
+			["faction"] = "Alliance",
 		},
 		["Varlouris"] = {
-			["class"] = "SHAMAN",
 			["faction"] = "Alliance",
+			["class"] = "SHAMAN",
 		},
 		["Darnastris"] = {
-			["faction"] = "Alliance",
 			["class"] = "MAGE",
+			["faction"] = "Alliance",
 		},
 	},
-	["Zul'jin"] = {
-		["Zulbathal"] = {
+	["Black Dragonflight"] = {
+		["Durlok"] = {
 			["class"] = "DRUID",
 			["faction"] = "Horde",
+		},
+	},
+	["Argent Dawn"] = {
+		["Shanyt"] = {
+			["curOil"] = 97495,
+			["summary"] = {
+				["lastOilTime"] = 1649718882,
+				["ti2"] = 122486,
+				["inProgress"] = {
+					[261] = 1649733246,
+					[397] = 1649754843,
+					[745] = 1649783682,
+					[264] = 1649747639,
+					[310] = 1649740425,
+					[381] = 1649754782,
+					[571] = 1649726076,
+					[564] = 1649783669,
+					[174] = 1649723288,
+					[673] = 1649733200,
+					[570] = 1649726880,
+					[497] = 1649754859,
+					[188] = 1649721486,
+					[666] = 1649726012,
+					[582] = 1649783673,
+				},
+				["ti3"] = 127855,
+				["ti1"] = 118531,
+				["tt1"] = 1648906616,
+				["tt3"] = 1648903616,
+				["tt2"] = 1647937631,
+			},
+			["faction"] = "Horde",
+			["cacheSize"] = 1000,
+			["lastCacheTime"] = 1649718931,
+			["curRes"] = 4677,
+			["class"] = "WARRIOR",
 		},
 	},
 }

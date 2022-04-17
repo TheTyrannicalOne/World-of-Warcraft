@@ -1810,10 +1810,12 @@ end
 local function CloneData(data)
 	return CreateObject(data);
 end
-local function RawCloneData(data)
-	local clone = {};
+local function RawCloneData(data, clone)
+	clone = clone or {};
 	for key,value in pairs(data) do
-		rawset(clone, key, value);
+		if not clone[key] then
+			rawset(clone, key, value);
+		end
 	end
 	return clone;
 end
@@ -3253,16 +3255,6 @@ subroutines = {
 			{"pop"},									-- Discard the Header and acquire all of their children.
 		}
 	end,
-	-- Pet Battle Rewards
-	["common_pb_rewards"] = function(itemID)
-		return {
-			{"select", "headerID", -796},				-- Pet Battle
-			{"pop"},									-- Discard the Header and acquire all of their children.
-			{"where", "headerID", -18},					-- REWARDS Header
-			{"pop"},									-- Discard the Header and acquire all of their children.
-			{"where", "itemID", itemID},				-- Which Container
-		}
-	end,
 	-- Korthian Armaments
 	["korthian_armaments"] = function(invtyp)
 		return {
@@ -3776,28 +3768,18 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	-- For Creatures and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
 	if paramA == "creatureID" or paramA == "encounterID" then
 		if group and #group > 0 then
-			if IsInInstance() then
-				local difficultyID = select(3, GetInstanceInfo());
-				if difficultyID and difficultyID > 0 then
-					local subgroup = {};
-					for i,j in ipairs(group) do
-						if GetRelativeDifficulty(j, difficultyID) then
-							tinsert(subgroup, j);
-						end
+			local difficultyID = (IsInInstance() and select(3, GetInstanceInfo())) or (paramA == "encounterID" and EJ_GetDifficulty()) or 0;
+			-- print("difficultyID",difficultyID,"params",paramA,paramB)
+			if difficultyID > 0 then
+				local subgroup = {};
+				for _,j in ipairs(group) do
+					-- print("Check",j.hash,GetRelativeValue(j, "difficultyID"))
+					if GetRelativeDifficulty(j, difficultyID) then
+						-- print("Match Difficulty")
+						tinsert(subgroup, j);
 					end
-					group = subgroup;
 				end
-			elseif paramA == "encounterID" then
-				local difficultyID = EJ_GetDifficulty();
-				if difficultyID and difficultyID > 0 then
-					local subgroup = {};
-					for i,j in ipairs(group) do
-						if GetRelativeDifficulty(j, difficultyID) then
-							tinsert(subgroup, j);
-						end
-					end
-					group = subgroup;
-				end
+				group = subgroup;
 			end
 		end
 	elseif paramA == "achievementID" then
@@ -4667,7 +4649,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- If the user wants to show the progress of this search result, do so
 		if app.Settings:GetTooltipSetting("Progress") and (group.key ~= "spellID" or group.collectible) then
 			group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(group);
-			
+
 			-- add the progress as a new line for encounter tooltips instead of using right text since it can overlap the NPC name
 			if group.encounterID then tinsert(info, 1, { left = "Progress", right = group.collectionText }); end
 		end
@@ -5083,7 +5065,7 @@ app.NestSourceQuests = function(root, addedQuests, depth)
 						sq.g = nil;
 
 						-- force collectible for normally un-collectible things to make sure it shows in list if the quest needs to be completed to progess
-						if not sq.collectible and not sq.sourceQuestsCompleted then
+						if not sq.collectible and sq.missingSourceQuests then
 							sq.collectible = true;
 						end
 
@@ -5124,7 +5106,11 @@ app.NestSourceQuests = function(root, addedQuests, depth)
 			if p[1] == "i" then
 				-- print("Root Provider",p[1], p[2]);
 				local pRef = app.SearchForObject("itemID", p[2]);
-				NestObject(root, pRef, true, 1);
+				if pRef then
+					NestObject(root, pRef, true, 1);
+				else
+					NestObject(root, app.CreateItem(p[2]), nil, 1);
+				end
 			end
 		end
 	end
@@ -5821,6 +5807,7 @@ end
 
 -- Map Information Lib
 (function()
+local math_floor, C_SuperTrack = math.floor, C_SuperTrack;
 local __TomTomWaypointCacheIndexY = { __index = function(t, y)
 	local o = {};
 	rawset(t, y, o);
@@ -5831,16 +5818,18 @@ local __TomTomWaypointCacheIndexX = { __index = function(t, x)
 	rawset(t, x, o);
 	return o;
 end };
-local __TomTomWaypointCache, __TomTomWaypointFirst = setmetatable({}, { __index = function(t, mapID)
+local __TomTomWaypointCache = setmetatable({}, { __index = function(t, mapID)
 	local o = setmetatable({}, __TomTomWaypointCacheIndexX);
 	rawset(t, mapID, o);
 	return o;
 end });
+local __TomTomWaypointFirst;
 local function AddTomTomWaypointCache(coord, group)
 	local mapID = coord[3];
 	if mapID then
-		__TomTomWaypointCache[mapID][math.floor(coord[1] * 10)][math.floor(coord[2] * 10)][group.key .. ":" .. group[group.key]] = group;
+		__TomTomWaypointCache[mapID][math_floor(coord[1] * 10)][math_floor(coord[2] * 10)][group.key .. ":" .. group[group.key]] = group;
 	else
+		-- coord[3] not existing is checked by Parser and shouldn't ever happen
 		print("Missing mapID for", group.text, coord[1], coord[2], mapID);
 	end
 end
@@ -5855,7 +5844,7 @@ local function AddTomTomWaypointInternal(group, depth)
 			end
 			depth = depth - 1;
 		end
-		
+
 		local searchResults = ResolveSymbolicLink(group);
 		if searchResults then
 			depth = depth + 1;
@@ -5865,27 +5854,29 @@ local function AddTomTomWaypointInternal(group, depth)
 			depth = depth - 1;
 		end
 		group.plotting = nil;
-		
+
 		if TomTom then
-			if (depth == 0 and not __TomTomWaypointFirst) or not group.saved then
+			-- always plot directly clicked otherwise don't plot saved or inaccessible groups
+			if depth == 0 or (not group.saved and not group.missingSourceQuests) then
 				if group.coords or group.coord then
-					__TomTomWaypointFirst = false;
 					if group.coords then
 						for _,coord in ipairs(group.coords) do
 							AddTomTomWaypointCache(coord, group);
 						end
 					end
-					if group.coord then AddTomTomWaypointCache(coord, group); end
+					if group.coord then AddTomTomWaypointCache(group.coord, group); end
 				end
 			end
 		elseif C_SuperTrack then
-			if depth == 0 or __TomTomWaypointFirst then
+			-- always plot directly clicked or first available waypoint otherwise don't plot saved or inaccessible groups
+			if depth == 0 or (__TomTomWaypointFirst and (not group.saved and not group.missingSourceQuests)) then
 				local coord = group.coords and group.coords[1] or group.coord;
 				if coord then
 					__TomTomWaypointFirst = false;
 					C_SuperTrack.SetSuperTrackedUserWaypoint(false);
 					C_Map.ClearUserWaypoint();
-					C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(coord[3] or defaultMapID,coord[1]/100,coord[2]/100));
+					-- coord[3] not existing is checked by Parser and shouldn't ever happen
+					C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(coord[3] or C_Map.GetBestMapForUnit("player") or 1, coord[1]/100, coord[2]/100));
 					C_SuperTrack.SetSuperTrackedUserWaypoint(true);
 				end
 			end
@@ -5931,7 +5922,7 @@ AddTomTomWaypoint = function(group)
 									if count > 1 and group.coords and #group.coords == count then
 										for i=count,1,-1 do
 											local coord = group.coords[i];
-											if coord[3] == mapID and math.floor(coord[1] * 10) == x and math.floor(coord[2] * 10) == y then
+											if coord[3] == mapID and math_floor(coord[1] * 10) == x and math_floor(coord[2] * 10) == y then
 												creatureID = group.qgs[i];
 												break;
 											end
@@ -5948,7 +5939,7 @@ AddTomTomWaypoint = function(group)
 									if count > 1 and group.coords and #group.coords == count then
 										for i=count,1,-1 do
 											local coord = group.coords[i];
-											if coord[3] == mapID and math.floor(coord[1] * 10) == x and math.floor(coord[2] * 10) == y then
+											if coord[3] == mapID and math_floor(coord[1] * 10) == x and math_floor(coord[2] * 10) == y then
 												creatureID = group.crs[i];
 												break;
 											end
@@ -5975,7 +5966,7 @@ AddTomTomWaypoint = function(group)
 								tinsert(root, group);
 							end
 						end
-						
+
 						local first = root[1];
 						if first then
 							local opt = { from = "ATT", persistent = false };
@@ -5989,30 +5980,32 @@ AddTomTomWaypoint = function(group)
 								opt.minimap_icon = first.icon;
 								opt.worldmap_icon = first.icon;
 							end
-							
-							local callbacks = TomTom:DefaultCallbacks();
-							callbacks.minimap.tooltip_update = Nil;
-							callbacks.minimap.tooltip_show = function(event, tooltip, uid, dist)
-								tooltip:ClearLines();
-								for i,o in ipairs(root) do
-									local lineNumber = tooltip:NumLines() + 1;
-									tooltip:AddLine(o.text);
-									if o.title and not o.explorationID then tooltip:AddLine(o.title); end
-									local key = o.key;
-									if key == "objectiveID" then
-										if o.parent and o.parent.questID then tooltip:AddLine("Objective for " .. o.parent.text); end
-									elseif key == "criteriaID" then
-										tooltip:AddLine("Criteria for " .. GetAchievementLink(group.achievementID));
-									else
-										if key == "npcID" then key = "creatureID"; end
-										AttachTooltipSearchResults(tooltip, lineNumber, key .. ":" .. o[o.key], SearchForField, key, o[o.key]);
+
+							if TomTom.DefaultCallbacks then
+								local callbacks = TomTom:DefaultCallbacks();
+								callbacks.minimap.tooltip_update = nil;
+								callbacks.minimap.tooltip_show = function(event, tooltip, uid, dist)
+									tooltip:ClearLines();
+									for i,o in ipairs(root) do
+										local lineNumber = tooltip:NumLines() + 1;
+										tooltip:AddLine(o.text);
+										if o.title and not o.explorationID then tooltip:AddLine(o.title); end
+										local key = o.key;
+										if key == "objectiveID" then
+											if o.parent and o.parent.questID then tooltip:AddLine("Objective for " .. o.parent.text); end
+										elseif key == "criteriaID" then
+											tooltip:AddLine("Criteria for " .. GetAchievementLink(group.achievementID));
+										else
+											if key == "npcID" then key = "creatureID"; end
+											AttachTooltipSearchResults(tooltip, lineNumber, key .. ":" .. o[o.key], SearchForField, key, o[o.key]);
+										end
 									end
+									tooltip:Show();
 								end
-								tooltip:Show();
+								callbacks.world.tooltip_update = nil;
+								callbacks.world.tooltip_show = callbacks.minimap.tooltip_show;
+								opt.callbacks = callbacks;
 							end
-							callbacks.world.tooltip_update = Nil;
-							callbacks.world.tooltip_show = callbacks.minimap.tooltip_show;
-							opt.callbacks = callbacks;
 							TomTom:AddWaypoint(mapID, xnormal, y / 1000, opt);
 						end
 					end
@@ -11769,30 +11762,24 @@ local questFields = {
 			end
 		end
 	end,
-	["sourceQuestsCompleted"] = function(t)
+	["missingSourceQuests"] = function(t)
 		if t.sourceQuests and #t.sourceQuests > 0 then
-			local completed = true;
 			local includeBreadcrumbs = app.Settings:Get("Thing:QuestBreadcrumbs");
 			local sq;
-			for i,sourceQuestID in ipairs(t.sourceQuests) do
+			for _,sourceQuestID in ipairs(t.sourceQuests) do
 				if not IsQuestFlaggedCompleted(sourceQuestID) then
 					if includeBreadcrumbs then
 						-- consider the breadcrumb as an actual sq since the user is tracking them
-						completed = false;
+						return true;
 					else
 						-- otherwise incomplete breadcrumbs will not prevent picking up a quest if they are ignored
 						sq = app.SearchForObject("questID", sourceQuestID);
-						if sq then
-							if not sq.isBreadcrumb and not (sq.breadcrumbLockedBy or sq.altcollected) then
-								completed = false;
-							end
-						else
-							completed = false;
+						if sq and not sq.isBreadcrumb and not (sq.breadcrumbLockedBy or sq.altcollected) then
+							return true;
 						end
 					end
 				end
 			end
-			return completed;
 		end
 	end,
 };
@@ -12396,116 +12383,34 @@ app.CreateRace = function(id, t)
 end
 end)();
 
--- Recipe Lib
-(function()
-local fields = {
-	["key"] = function(t)
-		return "spellID";
-	end,
-	["filterID"] = function(t)
-		return 200;
-	end,
-	["text"] = function(t)
-		return t.link;
-	end,
-	["icon"] = function(t)
-		if t.itemID then
-			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-			if link then
-				t.link = link;
-				t.icon = icon;
-				return link;
-			end
-		end
-		return select(3, GetSpellInfo(t.spellID))
-			or (t.requireSkill and select(3, GetSpellInfo(t.requireSkill)))
-			or 134939;	-- Inv_scroll_03
-	end,
-	["link"] = function(t)
-		if t.itemID then
-			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-			if link then
-				t.link = link;
-				t.icon = icon;
-				return link;
-			end
-		end
-		return select(1, GetSpellLink(t.spellID));
-	end,
-	["collectible"] = function(t)
-		return app.CollectibleRecipes;
-		-- if app.CollectibleRecipes then
-		-- 	if app.AccountWideRecipes then
-		-- 		return true;
-		-- 	end
-		-- 	if t.requireSkill and (app.GetTradeSkillCache())[t.requireSkill] then
-		-- 		return true;
-		-- 	end
-		-- 	if t.c and contains(t.c, app.ClassIndex) then
-		-- 		return true;
-		-- 	end
-		-- end
-	end,
-	["collected"] = function(t)
-		if app.CurrentCharacter.Spells[t.spellID] then return 1; end
-		if app.AccountWideRecipes and ATTAccountWideData.Spells[t.spellID] then return 2; end
-		if IsSpellKnown(t.spellID) then
-			app.CurrentCharacter.Spells[t.spellID] = 1;
-			ATTAccountWideData.Spells[t.spellID] = 1;
-			return 1;
-		end
-	end,
-	["name"] = function(t)
-		return t.itemID and GetItemInfo(t.itemID);
-	end,
-	["specs"] = function(t)
-		if t.itemID then
-			return GetFixedItemSpecInfo(t.itemID);
-		end
-	end,
-	["tsm"] = function(t)
-		if t.itemID then
-			return string.format("i:%d", t.itemID);
-		end
-	end,
-	["skillID"] = function(t)
-		return t.requireSkill;
-	end,
-	["b"] = function(t)
-		-- If not tracking Recipes Account-Wide, then pretend that every Recipe is BoP
-		return t.itemID and app.AccountWideRecipes and 2 or 1;
-	end,
-};
-app.BaseRecipe = app.BaseObjectFields(fields, "BaseRecipe");
-app.CreateRecipe = function(id, t)
-	return setmetatable(constructor(id, t, "spellID"), app.BaseRecipe);
-end
-end)();
-
 -- Spell Lib
 (function()
+local GetSpellInfo, GetSpellLink, IsSpellKnown, GetNumSpellTabs, GetSpellTabInfo = GetSpellInfo, GetSpellLink, IsSpellKnown, GetNumSpellTabs, GetSpellTabInfo
+
 local SpellIDToSpellName = {};
-app.GetSpellName = function(spellID)
+local SpellNameToSpellID;
+local GetSpellName = function(spellID)
 	local spellName = rawget(SpellIDToSpellName, spellID);
 	if spellName then return spellName; end
 	spellName = GetSpellInfo(spellID);
 	if spellName and spellName ~= "" then
 		rawset(SpellIDToSpellName, spellID, spellName);
-		rawset(app.SpellNameToSpellID, spellName, spellID);
+		rawset(SpellNameToSpellID, spellName, spellID);
 		return spellName;
 	end
 end
-app.SpellNameToSpellID = setmetatable({}, {
+app.GetSpellName = GetSpellName;
+SpellNameToSpellID = setmetatable({}, {
 	__index = function(t, key)
 		local cache = fieldCache["spellID"];
 		for spellID,g in pairs(cache) do
-			app.GetSpellName(spellID);
+			GetSpellName(spellID);
 		end
 		for _,spellID in pairs(app.SkillIDToSpellID) do
-			app.GetSpellName(spellID);
+			GetSpellName(spellID);
 		end
 		for specID,spellID in pairs(app.SpecializationSpellIDs) do
-			app.GetSpellName(spellID);
+			GetSpellName(spellID);
 		end
 		local numSpellTabs, offset, lastSpellName, currentSpellRank = GetNumSpellTabs(), select(4, GetSpellTabInfo(1)), "", 1;
 		for spellTabIndex=2,numSpellTabs do
@@ -12519,8 +12424,8 @@ app.SpellNameToSpellID = setmetatable({}, {
 						lastSpellName = spellName;
 						currentSpellRank = 1;
 					end
-					app.GetSpellName(spellID, currentSpellRank);
-					rawset(app.SpellNameToSpellID, spellName, spellID);
+					GetSpellName(spellID, currentSpellRank);
+					rawset(SpellNameToSpellID, spellName, spellID);
 				-- else
 				-- 	print("GetSpellInfo:Failed",offset + spellIndex);
 				end
@@ -12530,27 +12435,54 @@ app.SpellNameToSpellID = setmetatable({}, {
 		return rawget(t, key);
 	end
 });
+app.SpellNameToSpellID = SpellNameToSpellID;
+
+local cache = app.CreateCache("_cachekey");
+local function CacheInfo(t, field)
+	local _t, id = cache.GetCached(t);
+	if t.itemID then
+		local name, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
+		if link then
+			_t.name = name;
+			_t.link = link;
+			_t.icon = icon;
+		end
+	else
+		local name, _, icon = GetSpellInfo(id);
+		_t.name = name;
+		_t.icon = icon or 136243;	-- Trade_engineering
+		local link = GetSpellLink(id);
+		_t.link = link;
+	end
+	-- track number of attempts to cache data for fallback to default values
+	local retries = (_t.retries or 0) + 1;
+	if retries > app.MaximumItemInfoRetries then
+		_t.name = t.itemID and "Item #"..t.itemID or "Spell #"..t.spellID;
+		_t.icon = 136243;
+		_t.link = _t.name;
+	end
+	_t.retries = retries;
+	if field then return _t[field]; end
+end
+
 local fields = {
 	["key"] = function(t)
 		return "spellID";
 	end,
-	["text"] = function(t)
-		return t.link;
+	["_cachekey"] = function(t)
+		return t.itemID and t.spellID + (t.itemID / 1000000) or t.spellID;
 	end,
-	["icon"] = function(t)
-		return select(3, GetSpellInfo(t.spellID))
-			or 136243;	-- Trade_engineering
+	["name"] = function(t)
+		return cache.GetCachedField(t, "name", CacheInfo);
 	end,
 	["link"] = function(t)
-		if t.itemID and t.filterID ~= 200 and t.f ~= 200 then
-			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-			if link then
-				t.link = link;
-				t.icon = icon;
-				return link;
-			end
-		end
-		return select(1, GetSpellLink(t.spellID));
+		return cache.GetCachedField(t, "link", CacheInfo);
+	end,
+	["icon"] = function(t)
+		return cache.GetCachedField(t, "icon", CacheInfo) or 136243;	-- Trade_engineering
+	end,
+	["text"] = function(t)
+		return t.link;
 	end,
 	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
@@ -12571,9 +12503,6 @@ local fields = {
 			return 1;
 		end
 	end,
-	["name"] = function(t)
-		return t.itemID and GetItemInfo(t.itemID);
-	end,
 	["specs"] = function(t)
 		if t.itemID then
 			return GetFixedItemSpecInfo(t.itemID);
@@ -12591,6 +12520,33 @@ local fields = {
 app.BaseSpell = app.BaseObjectFields(fields, "BaseSpell");
 app.CreateSpell = function(id, t)
 	return setmetatable(constructor(id, t, "spellID"), app.BaseSpell);
+end
+
+-- Recipe Lib
+local recipeFields = RawCloneData(fields, {
+	["filterID"] = function(t)
+		return 200;
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleRecipes;
+	end,
+	["collected"] = function(t)
+		if app.CurrentCharacter.Spells[t.spellID] then return 1; end
+		if app.AccountWideRecipes and ATTAccountWideData.Spells[t.spellID] then return 2; end
+		if IsSpellKnown(t.spellID) then
+			app.CurrentCharacter.Spells[t.spellID] = 1;
+			ATTAccountWideData.Spells[t.spellID] = 1;
+			return 1;
+		end
+	end,
+	["b"] = function(t)
+		-- If not tracking Recipes Account-Wide, then pretend that every Recipe is BoP
+		return t.itemID and app.AccountWideRecipes and 2 or 1;
+	end,
+});
+app.BaseRecipe = app.BaseObjectFields(recipeFields, "BaseRecipe");
+app.CreateRecipe = function(id, t)
+	return setmetatable(constructor(id, t, "spellID"), app.BaseRecipe);
 end
 end)();
 
@@ -13296,7 +13252,8 @@ app.RequireCustomCollectFilter = app.FilterItemClass_CustomCollect;
 app.UnobtainableItemFilter = app.NoFilter;
 app.RequiredSkillFilter = app.NoFilter;
 app.ShowTrackableThings = app.Filter;
-app.DefaultFilter = app.Filter;
+app.DefaultGroupFilter = app.Filter;
+app.DefaultThingFilter = app.Filter;
 
 -- Recursive Checks
 app.VerifyCache = function()
@@ -13397,7 +13354,7 @@ end
 -- Processing Functions
 local function SetGroupVisibility(parent, group)
 	-- if app.DEBUG_PRINT then print("SetGroupVisibility",group.key,group[group.key]) end
-	-- If this group is forced to be shown due to contained groups being shown without being collectible
+	-- If this group is forced to be shown due to contained groups being shown
 	if group.forceShow then
 		group.visible = true;
 		group.forceShow = nil;
@@ -13405,16 +13362,21 @@ local function SetGroupVisibility(parent, group)
 		parent.forceShow = true;
 		-- if app.DEBUG_PRINT then print("SetGroupVisibility.forceShow",group.progress,group.total,group.visible) end
 	-- If this group contains Things, show based on visibility filter
-	elseif group.total > 0 and app.GroupVisibilityFilter(group) then
-		group.visible = true;
+	elseif group.total > 0 then
+		group.visible = group.progress < group.total or app.GroupVisibilityFilter(group);
 		-- if app.DEBUG_PRINT then print("SetGroupVisibility.total",group.progress,group.total,group.visible) end
+		-- The group can still be trackable even if it isn't visible due to the total
+		if not group.visible and app.ShowTrackableThings(group) then
+			group.visible = not group.saved or app.GroupVisibilityFilter(group);
+			parent.forceShow = group.visible or parent.forceShow;
+		end
 	-- If this group is trackable, then we should show it.
 	elseif app.ShowTrackableThings(group) then
 		group.visible = not group.saved or app.GroupVisibilityFilter(group);
 		parent.forceShow = group.visible or parent.forceShow;
 		-- if app.DEBUG_PRINT then print("SetGroupVisibility.trackable",group.progress,group.total,group.visible) end
 	else
-		group.visible = app.DefaultFilter();
+		group.visible = app.DefaultGroupFilter();
 		-- if app.DEBUG_PRINT then print("SetGroupVisibility.default",group.progress,group.total,group.visible) end
 	end
 end
@@ -13422,13 +13384,7 @@ local function SetThingVisibility(parent, group)
 	-- if app.DEBUG_PRINT then print("SetThingVisibility",group.key,group[group.key]) end
 	if group.total > 0 then
 		-- If we've collected the item, use the "Show Collected Items" filter.
-		if group.total == group.progress then
-			if app.CollectedItemVisibilityFilter(group) then
-				group.visible = true;
-			end
-		else
-			group.visible = true;
-		end
+		group.visible = group.progress < group.total or app.CollectedItemVisibilityFilter(group);
 		-- if app.DEBUG_PRINT then print("SetThingVisibility.total",group.progress,group.total,group.visible) end
 	elseif app.ShowTrackableThings(group) then
 		-- If this group is trackable, then we should show it.
@@ -13436,7 +13392,7 @@ local function SetThingVisibility(parent, group)
 		parent.forceShow = group.visible or parent.forceShow;
 		-- if app.DEBUG_PRINT then print("SetThingVisibility.trackable",group.progress,group.total,group.visible) end
 	else
-		group.visible = app.DefaultFilter();
+		group.visible = app.DefaultThingFilter();
 		-- if app.DEBUG_PRINT then print("SetThingVisibility.default",group.progress,group.total,group.visible) end
 	end
 end
@@ -14553,7 +14509,12 @@ function app:CreateMiniListForGroup(group)
 						-- print("Root Provider",p[1], p[2]);
 						local pRef = app.SearchForObject("itemID", p[2]);
 						if pRef then
-							pRef = CloneData(pRef);
+							pRef = CreateObject(pRef);
+							-- Set the full Quest Chain as the child of the Item
+							pRef.g = g;
+							g = { pRef };
+						else
+							pRef = app.CreateItem(p[2]);
 							-- Set the full Quest Chain as the child of the Item
 							pRef.g = g;
 							g = { pRef };
@@ -14982,7 +14943,8 @@ local function RowOnClick(self, button)
 		local window = self:GetParent():GetParent();
 		-- All non-Shift Right Clicks open a mini list or the settings.
 		if button == "RightButton" then
-			if IsAltKeyDown() and (self.index > 0 or window.isQuestChain) then
+			-- Plot waypoints, not from window header unless a popout window
+			if IsAltKeyDown() and (self.index > 0 or window.ExpireTime) then
 				AddTomTomWaypoint(reference);
 			elseif IsShiftKeyDown() then
 				if app.Settings:GetTooltipSetting("Sort:Progress") then
@@ -19760,22 +19722,20 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 									categories[currentCategoryID] = true;
 								end
 							end
+							-- cannot be crafted, so don't cache the outputs for reagent tooltips
+							if spellRecipeInfo.disabled then
+								skipcaching = true;
+							end
+							-- recipe is learned, so cache that it's learned regardless of being craftable
 							if spellRecipeInfo.learned then
-								if spellRecipeInfo.disabled then
-									if charSpells[recipeID] then
-										charSpells[recipeID] = nil;
-										acctSpells[recipeID] = nil;
-									end
-								else
-									charSpells[recipeID] = 1;
-									if not acctSpells[recipeID] then
-										acctSpells[recipeID] = 1;
-										tinsert(learned, recipeID);
-									end
+								charSpells[recipeID] = 1;
+								if not acctSpells[recipeID] then
+									acctSpells[recipeID] = 1;
+									tinsert(learned, recipeID);
 								end
+							-- enabled, unlearned recipes should be checked against ATT data to verify they CAN actually be learned
 							elseif not spellRecipeInfo.disabled and not acctSpells[recipeID] then
 								-- print("unlearned, enabled RecipeID",recipeID)
-								-- enabled, unlearned recipes should be checked against ATT data to verify they CAN actually be learned
 								local cachedRecipe = app.SearchForMergedObject("spellID", recipeID);
 								-- verify the merged cached version is not 'super' unobtainable
 								if cachedRecipe and cachedRecipe.u and cachedRecipe.u < 3 then

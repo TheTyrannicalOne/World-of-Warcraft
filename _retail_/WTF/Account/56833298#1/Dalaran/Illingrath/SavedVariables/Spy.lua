@@ -1,9 +1,5 @@
 
 SpyPerCharDB = {
-	["KOSData"] = {
-	},
-	["IgnoreData"] = {
-	},
 	["PlayerData"] = {
 		["Beligard-Area52"] = {
 			["mapID"] = 111,
@@ -57,12 +53,12 @@ SpyPerCharDB = {
 			["isEnemy"] = true,
 			["loses"] = 1,
 			["mapX"] = 0.23,
-			["isGuess"] = true,
+			["name"] = "Maxxis-BurningBlade",
 			["time"] = 1605661467,
 			["subZone"] = "The Marris Stead",
 			["level"] = 46,
 			["race"] = "Human",
-			["name"] = "Maxxis-BurningBlade",
+			["isGuess"] = true,
 		},
 		["Blaithe-Turalyon"] = {
 			["mapID"] = 104,
@@ -110,5 +106,9 @@ SpyPerCharDB = {
 			["name"] = "Jagg-Doomhammer",
 		},
 	},
+	["IgnoreData"] = {
+	},
 	["version"] = "1.1",
+	["KOSData"] = {
+	},
 }

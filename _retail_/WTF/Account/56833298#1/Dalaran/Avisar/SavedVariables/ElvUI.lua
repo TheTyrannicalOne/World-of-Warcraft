@@ -4,28 +4,6 @@ ElvCharacterDB = {
 	},
 	["ChatHistoryLog"] = {
 		{
-			"<Sanctification> is recruiting new members for raiding and dungeons. Friendly and helpful people. Looking for tanks, dps and healers to do Mythics. |cffffd100|HclubFinder:ClubFinder-1-234833-3683-98820873|h[Guild: Sanctification]|h|r", -- [1]
-			"Chaosramda-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Chaosramda-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			381, -- [11]
-			"Player-3683-0B48E981", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Chaosramda|r",
-			[51] = 1648344315,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
-		{
 			"its funny how they get to decide when \"the Science\" is to be believed or not", -- [1]
 			"Zaknafeign-Dawnbringer", -- [2]
 			"", -- [3]
@@ -46,7 +24,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Zaknafeign-Dawnbringer|r",
 			[51] = 1648344326,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
+		}, -- [1]
 		{
 			"harvard law school don't mean anything. alot of people that come out of there don't have any clue what they are doing no offence", -- [1]
 			"Finrlorn-Dalaran", -- [2]
@@ -68,7 +46,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Finrlorn|r",
 			[51] = 1648344331,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
+		}, -- [2]
 		{
 			"i totally agree", -- [1]
 			"Mogley-Baelgun", -- [2]
@@ -90,7 +68,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Mogley-Baelgun|r",
 			[51] = 1648344345,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
+		}, -- [3]
 		{
 			"We live in a diverse society", -- [1]
 			"Amarok-AeriePeak", -- [2]
@@ -112,7 +90,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Amarok-AeriePeak|r",
 			[51] = 1648344371,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
+		}, -- [4]
 		{
 			"unfortunately that also applies to most if not all universities.", -- [1]
 			"Mogley-Baelgun", -- [2]
@@ -134,7 +112,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Mogley-Baelgun|r",
 			[51] = 1648344375,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
+		}, -- [5]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-373454-3683-107657931|h[Guild: Greyjoy]|h|r has moved to Dalaran! Do you like to get drunk and Raid or PVP? Do you pillage and take what is yours? Raid nights Wed/Mon 9pm EST. What is dead may never die...", -- [1]
 			"Solofrawg-Dalaran", -- [2]
@@ -156,7 +134,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Solofrawg|r",
 			[51] = 1648344382,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
+		}, -- [6]
 		{
 			"What are our words? Our words? We do not sow. We are ironborn. We're not subjects, we're not slaves, we do not plough the fields or toil in the mine, we take whats ours! |cffffd100|HclubFinder:ClubFinder-1-373454-3683-107657931|h[Guild: Greyjoy]|h|r", -- [1]
 			"Solofrawg-Dalaran", -- [2]
@@ -178,7 +156,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Solofrawg|r",
 			[51] = 1648344382,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
+		}, -- [7]
 		{
 			"perverse", -- [1]
 			"Tbonesteaks-Dalaran", -- [2]
@@ -200,7 +178,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Tbonesteaks|r",
 			[51] = 1648344383,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
+		}, -- [8]
 		{
 			"you spelled crazy wrong", -- [1]
 			"Zaknafeign-Dawnbringer", -- [2]
@@ -222,7 +200,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Zaknafeign-Dawnbringer|r",
 			[51] = 1648344384,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
+		}, -- [9]
 		{
 			"why do you type like that?", -- [1]
 			"Bänkjob-AeriePeak", -- [2]
@@ -244,7 +222,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Bänkjob-AeriePeak|r",
 			[51] = 1648344398,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
+		}, -- [10]
 		{
 			"perverse is 100% more like it", -- [1]
 			"Zaknafeign-Dawnbringer", -- [2]
@@ -266,7 +244,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Zaknafeign-Dawnbringer|r",
 			[51] = 1648344402,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
+		}, -- [11]
 		{
 			"we got someone going on the supreme court who is afraid to define what a woman is.....", -- [1]
 			"Tbonesteaks-Dalaran", -- [2]
@@ -288,7 +266,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Tbonesteaks|r",
 			[51] = 1648344445,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
+		}, -- [12]
 		{
 			"modern day Sodam and Gamora", -- [1]
 			"Zaknafeign-Dawnbringer", -- [2]
@@ -310,7 +288,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Zaknafeign-Dawnbringer|r",
 			[51] = 1648344449,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
+		}, -- [13]
 		{
 			"dont you hate spelling bbee kids who play WoW", -- [1]
 			"Lakrey-AeriePeak", -- [2]
@@ -332,7 +310,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Lakrey-AeriePeak|r",
 			[51] = 1648344459,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
+		}, -- [14]
 		{
 			"sad times", -- [1]
 			"Zaknafeign-Dawnbringer", -- [2]
@@ -354,7 +332,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Zaknafeign-Dawnbringer|r",
 			[51] = 1648344461,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
+		}, -- [15]
 		{
 			"- RUIN ZERETH MORTIS RARES WM ON - LISTED: Custom PVP Group Finder. Rares - Gear - Currency - COSMIC FLUX - CYPHERS OF THE FIRST ONES - Achievements - MOUNTS - PETS - Discord: https://discord.gg/ruin Streaming: https://twitch.tv/RuinTV", -- [1]
 			"Arconsolon-Dalaran", -- [2]
@@ -376,7 +354,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeArconsolon|r",
 			[51] = 1648344475,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
+		}, -- [16]
 		{
 			"\"embrace the perverse\".......end of civilization", -- [1]
 			"Tbonesteaks-Dalaran", -- [2]
@@ -398,7 +376,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Tbonesteaks|r",
 			[51] = 1648344497,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
+		}, -- [17]
 		{
 			"Sad when people are transphobic and shallow and see the world in black and white like their WoW opinion is going to bend the world to their belief system", -- [1]
 			"Amarok-AeriePeak", -- [2]
@@ -420,7 +398,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Amarok-AeriePeak|r",
 			[51] = 1648344521,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
+		}, -- [18]
 		{
 			"Hey spelling bee kids ... go kiis a bee", -- [1]
 			"Lakrey-AeriePeak", -- [2]
@@ -442,7 +420,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Lakrey-AeriePeak|r",
 			[51] = 1648344522,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
+		}, -- [19]
 		{
 			"thats the next Wow Xpan", -- [1]
 			"Tbonesteaks-Dalaran", -- [2]
@@ -464,7 +442,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Tbonesteaks|r",
 			[51] = 1648344530,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
+		}, -- [20]
 		{
 			"strangely enough.. these perversities have always spelled the end of civilizations", -- [1]
 			"Zaknafeign-Dawnbringer", -- [2]
@@ -486,7 +464,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Zaknafeign-Dawnbringer|r",
 			[51] = 1648344539,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
+		}, -- [21]
 		{
 			"..and somebody says \"transphobic\"", -- [1]
 			"Tbonesteaks-Dalaran", -- [2]
@@ -508,7 +486,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Tbonesteaks|r",
 			[51] = 1648344588,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
+		}, -- [22]
 		{
 			"And yet civilizations continue to rise up. I'd like to think we continueally evolve and get better with new developments. If it's coming to an end of a civilization, maybe something better will rise from it. Stop being dramatic. ", -- [1]
 			"Avesa-Ysera", -- [2]
@@ -530,7 +508,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Avesa-Ysera|r",
 			[51] = 1648344592,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
+		}, -- [23]
 		{
 			"well u cant compare us to Rome   Rome had good roads", -- [1]
 			"Pookybear-Ysera", -- [2]
@@ -552,7 +530,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Pookybear-Ysera|r",
 			[51] = 1648344599,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
+		}, -- [24]
 		{
 			"I hate cooking with a pan ... it's now my xpan", -- [1]
 			"Lakrey-AeriePeak", -- [2]
@@ -574,7 +552,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Lakrey-AeriePeak|r",
 			[51] = 1648344602,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
+		}, -- [25]
 		{
 			"yeah i have a question though. anyone know what % of the human population is \"trans\"?", -- [1]
 			"Mogley-Baelgun", -- [2]
@@ -596,7 +574,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Mogley-Baelgun|r",
 			[51] = 1648344617,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
+		}, -- [26]
 		{
 			"about 2%", -- [1]
 			"Amarok-AeriePeak", -- [2]
@@ -618,7 +596,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Amarok-AeriePeak|r",
 			[51] = 1648344628,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
+		}, -- [27]
 		{
 			"2%", -- [1]
 			"Tbonesteaks-Dalaran", -- [2]
@@ -640,7 +618,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Tbonesteaks|r",
 			[51] = 1648344633,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
+		}, -- [28]
 		{
 			"thats not alot", -- [1]
 			"Redrumtac-Doomhammer", -- [2]
@@ -662,7 +640,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Redrumtac-Doomhammer|r",
 			[51] = 1648344648,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
+		}, -- [29]
 		{
 			"nope", -- [1]
 			"Amarok-AeriePeak", -- [2]
@@ -684,7 +662,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Amarok-AeriePeak|r",
 			[51] = 1648344656,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
+		}, -- [30]
 		{
 			".... do you know how many people are alive today? 2% of that is actually quite a lot of lives.", -- [1]
 			"Avesa-Ysera", -- [2]
@@ -706,7 +684,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Avesa-Ysera|r",
 			[51] = 1648344672,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
+		}, -- [31]
 		{
 			"90% ar ein california", -- [1]
 			"Tbonesteaks-Dalaran", -- [2]
@@ -728,7 +706,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Tbonesteaks|r",
 			[51] = 1648344691,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
+		}, -- [32]
 		{
 			"okay but 98% of all the people is kinda ALOT too", -- [1]
 			"Redrumtac-Doomhammer", -- [2]
@@ -750,7 +728,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Redrumtac-Doomhammer|r",
 			[51] = 1648344693,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
+		}, -- [33]
 		{
 			"we are living Rome in many ways ... you are reading Roman letters for example", -- [1]
 			"Lakrey-AeriePeak", -- [2]
@@ -772,7 +750,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Lakrey-AeriePeak|r",
 			[51] = 1648344697,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
+		}, -- [34]
 		{
 			"wrong on your percentage", -- [1]
 			"Mogley-Baelgun", -- [2]
@@ -794,7 +772,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Mogley-Baelgun|r",
 			[51] = 1648344700,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
+		}, -- [35]
 		{
 			"in the US alone :  About 0.7% of adults 18-24 identify as transgender, and 0.5% of adults 65 and older identify as transgender.", -- [1]
 			"Mogley-Baelgun", -- [2]
@@ -816,7 +794,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Mogley-Baelgun|r",
 			[51] = 1648344707,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
+		}, -- [36]
 		{
 			"and i didnt wish to make it seem like im diminishing their lives. its quite alot of lives", -- [1]
 			"Redrumtac-Doomhammer", -- [2]
@@ -838,7 +816,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Redrumtac-Doomhammer|r",
 			[51] = 1648344720,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
+		}, -- [37]
 		{
 			"outside the US, the % is alot lower", -- [1]
 			"Mogley-Baelgun", -- [2]
@@ -860,7 +838,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Mogley-Baelgun|r",
 			[51] = 1648344732,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
+		}, -- [38]
 		{
 			"thats a lot of mentally ill individuals", -- [1]
 			"Zaknafeign-Dawnbringer", -- [2]
@@ -882,7 +860,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Zaknafeign-Dawnbringer|r",
 			[51] = 1648344738,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
+		}, -- [39]
 		{
 			"No, not really", -- [1]
 			"Amarok-AeriePeak", -- [2]
@@ -904,7 +882,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Amarok-AeriePeak|r",
 			[51] = 1648344740,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
+		}, -- [40]
 		{
 			"So what you're saying is they're delusional.", -- [1]
 			"Varaline-Hellscream", -- [2]
@@ -926,7 +904,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edVaraline-Hellscream|r",
 			[51] = 1648344742,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
+		}, -- [41]
 		{
 			"very", -- [1]
 			"Mogley-Baelgun", -- [2]
@@ -948,7 +926,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Mogley-Baelgun|r",
 			[51] = 1648344748,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [42]
 		{
 			"That's just the way American tend to see it", -- [1]
 			"Amarok-AeriePeak", -- [2]
@@ -970,7 +948,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Amarok-AeriePeak|r",
 			[51] = 1648344756,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [43]
 		{
 			"we should get them some help not encourage them", -- [1]
 			"Zaknafeign-Dawnbringer", -- [2]
@@ -992,7 +970,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Zaknafeign-Dawnbringer|r",
 			[51] = 1648344768,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [44]
 		{
 			"Thailand I bet has a higher percentage", -- [1]
 			"Amarok-AeriePeak", -- [2]
@@ -1014,7 +992,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Amarok-AeriePeak|r",
 			[51] = 1648344771,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [45]
 		{
 			"but all the people trying to push their policies on just 2% of the population seems silly ... let them do what they want", -- [1]
 			"Redrumtac-Doomhammer", -- [2]
@@ -1036,7 +1014,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Redrumtac-Doomhammer|r",
 			[51] = 1648344778,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [46]
 		{
 			"i agree Redrumtac", -- [1]
 			"Mogley-Baelgun", -- [2]
@@ -1058,7 +1036,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Mogley-Baelgun|r",
 			[51] = 1648344791,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [47]
 		{
 			"let them do what they want?", -- [1]
 			"Tbonesteaks-Dalaran", -- [2]
@@ -1080,7 +1058,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Tbonesteaks|r",
 			[51] = 1648344812,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [48]
 		{
 			"Isn't that what freedom is all about? No one told you to fuck them if you don't want to", -- [1]
 			"Amarok-AeriePeak", -- [2]
@@ -1102,7 +1080,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Amarok-AeriePeak|r",
 			[51] = 1648344815,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [49]
 		{
 			"i don't care if people are gay or change their sex. doesn't bother me at all. but pushing the politics on others is sad really.", -- [1]
 			"Mogley-Baelgun", -- [2]
@@ -1124,7 +1102,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Mogley-Baelgun|r",
 			[51] = 1648344815,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [50]
 		{
 			"there are those who say Rome copied the Greek actually it's the Greeks settled in Eastern Italy that left the Greekj style ... it's took hold noit copied", -- [1]
 			"Lakrey-AeriePeak", -- [2]
@@ -1146,7 +1124,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Lakrey-AeriePeak|r",
 			[51] = 1648344821,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [51]
 		{
 			"i AGREE ALL YOU PEOPLE ARE MORONS !!", -- [1]
 			"Moneyplz-Eredar", -- [2]
@@ -1168,7 +1146,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edMoneyplz-Eredar|r",
 			[51] = 1648344825,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [52]
 		{
 			"pushing your perverse lifestyle on, say, children IS wrong!", -- [1]
 			"Tbonesteaks-Dalaran", -- [2]
@@ -1190,7 +1168,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Tbonesteaks|r",
 			[51] = 1648344857,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [53]
 		{
 			"yes", -- [1]
 			"Mogley-Baelgun", -- [2]
@@ -1212,7 +1190,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Mogley-Baelgun|r",
 			[51] = 1648344862,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [54]
 		{
 			"who you callin \"you people\"... thats racist", -- [1]
 			"Zaknafeign-Dawnbringer", -- [2]
@@ -1234,7 +1212,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Zaknafeign-Dawnbringer|r",
 			[51] = 1648344863,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [55]
 		{
 			"LOL", -- [1]
 			"Redrumtac-Doomhammer", -- [2]
@@ -1256,7 +1234,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Redrumtac-Doomhammer|r",
 			[51] = 1648344869,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [56]
 		{
 			"i like cock in my ass", -- [1]
 			"Alexjonesie-Aggramar", -- [2]
@@ -1278,7 +1256,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Alexjonesie-Aggramar|r",
 			[51] = 1648344870,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
+		}, -- [57]
 		{
 			"I know shit or two", -- [1]
 			"Lakrey-AeriePeak", -- [2]
@@ -1300,7 +1278,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Lakrey-AeriePeak|r",
 			[51] = 1648344870,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [58]
 		{
 			"- RUIN ZERETH MORTIS RARES WM ON - LISTED: Custom PVP Group Finder. Rares - Gear - Currency - COSMIC FLUX - CYPHERS OF THE FIRST ONES - Achievements - MOUNTS - PETS - Discord: https://discord.gg/ruin Streaming: https://twitch.tv/RuinTV", -- [1]
 			"Arconsolon-Dalaran", -- [2]
@@ -1322,7 +1300,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeArconsolon|r",
 			[51] = 1648344877,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [59]
 		{
 			"how dare you say \"people\"", -- [1]
 			"Tbonesteaks-Dalaran", -- [2]
@@ -1344,7 +1322,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Tbonesteaks|r",
 			[51] = 1648344882,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [60]
 		{
 			"fuck", -- [1]
 			"Zise-Dalaran", -- [2]
@@ -1366,7 +1344,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Zise|r",
 			[51] = 1648344886,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [61]
 		{
 			"Well, when you say \"get them help\"... what do you mean?", -- [1]
 			"Amarok-AeriePeak", -- [2]
@@ -1388,7 +1366,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Amarok-AeriePeak|r",
 			[51] = 1648344894,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [62]
 		{
 			"What happened,babe?", -- [1]
 			"Elsmore-Dalaran", -- [2]
@@ -1410,7 +1388,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Elsmore|r",
 			[51] = 1648344901,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [63]
 		{
 			"How much does it affect you if those policies are put in place? How negativly will your lives change beause of it? Now, how negatively are their lives affected by NOT getting them these things? ", -- [1]
 			"Avesa-Ysera", -- [2]
@@ -1432,7 +1410,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Avesa-Ysera|r",
 			[51] = 1648344907,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [64]
 		{
 			"what \"things\"?", -- [1]
 			"Tbonesteaks-Dalaran", -- [2]
@@ -1454,7 +1432,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Tbonesteaks|r",
 			[51] = 1648344927,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [65]
 		{
 			"daddy", -- [1]
 			"Vuraa-Ysera", -- [2]
@@ -1476,7 +1454,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcVuraa-Ysera|r",
 			[51] = 1648345321,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [66]
 		{
 			"i dont understand... you said proctor... like school bus proctor? i dont know what you're saying, dont short me", -- [1]
 			"Eraser-Wildhammer", -- [2]
@@ -1498,7 +1476,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cEraser-Wildhammer|r",
 			[51] = 1648345322,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [67]
 		{
 			"woah", -- [1]
 			"Zaknafeign-Dawnbringer", -- [2]
@@ -1520,7 +1498,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Zaknafeign-Dawnbringer|r",
 			[51] = 1648345323,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [68]
 		{
 			"Mom I'm goiong to be a proctologist !", -- [1]
 			"Lakrey-AeriePeak", -- [2]
@@ -1542,7 +1520,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Lakrey-AeriePeak|r",
 			[51] = 1648345344,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [69]
 		{
 			"shet just got weird", -- [1]
 			"Zaknafeign-Dawnbringer", -- [2]
@@ -1564,7 +1542,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Zaknafeign-Dawnbringer|r",
 			[51] = 1648345350,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [70]
 		{
 			"man im going down... you guys found m e", -- [1]
 			"Eraser-Wildhammer", -- [2]
@@ -1586,7 +1564,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cEraser-Wildhammer|r",
 			[51] = 1648345360,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [71]
 		{
 			"lay off the drugs, you're somehow slurring your words in text.", -- [1]
 			"Owlfrog-Dalaran", -- [2]
@@ -1608,7 +1586,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Owlfrog|r",
 			[51] = 1648395533,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [72]
 		{
 			"keep tryin", -- [1]
 			"Autumarisane-Dalaran", -- [2]
@@ -1630,7 +1608,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Autumarisane|r",
 			[51] = 1648395542,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [73]
 		{
 			"WTB |cffffffff|Hitem:173249::::::::60:258::69:4:7193:7882:8156:1588:1:28:2142::::Player-3683-0CF75F2B:|h[Grim-Veiled Bracers]|h|r 35k", -- [1]
 			"Staystrong-Dalaran", -- [2]
@@ -1652,7 +1630,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeStaystrong|r",
 			[51] = 1648395568,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [74]
 		{
 			"I do it to cover my true alts .... this is my slurring alt ", -- [1]
 			"Lakrey-AeriePeak", -- [2]
@@ -1674,7 +1652,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Lakrey-AeriePeak|r",
 			[51] = 1648395597,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [75]
 		{
 			"you think this is my only talkjing alt ?", -- [1]
 			"Lakrey-AeriePeak", -- [2]
@@ -1696,7 +1674,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Lakrey-AeriePeak|r",
 			[51] = 1648395645,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [76]
 		{
 			"always cover your tgracks", -- [1]
 			"Lakrey-AeriePeak", -- [2]
@@ -1718,7 +1696,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Lakrey-AeriePeak|r",
 			[51] = 1648395677,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [77]
 		{
 			"WTB |cffffffff|Hitem:173249::::::::60:258::69:4:7193:7882:8156:1588:1:28:2142::::Player-3683-0CF75F2B:|h[Grim-Veiled Bracers]|h|r 35k", -- [1]
 			"Staystrong-Dalaran", -- [2]
@@ -1740,7 +1718,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeStaystrong|r",
 			[51] = 1648397434,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [78]
 		{
 			"i never had over 5m at once lol", -- [1]
 			"Bigburner-Dalaran", -- [2]
@@ -1762,7 +1740,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Bigburner|r",
 			[51] = 1648399674,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [79]
 		{
 			"lol", -- [1]
 			"Dinarras-Dalaran", -- [2]
@@ -1784,7 +1762,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Dinarras|r",
 			[51] = 1648399682,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [80]
 		{
 			"highest for me was 3m", -- [1]
 			"Bigburner-Dalaran", -- [2]
@@ -1806,7 +1784,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Bigburner|r",
 			[51] = 1648399696,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [81]
 		{
 			"you're not extra girthy then /shrug", -- [1]
 			"Audrynn-Dalaran", -- [2]
@@ -1828,7 +1806,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Audrynn|r",
 			[51] = 1648399697,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [82]
 		{
 			"you guys had a mil?", -- [1]
 			"Vesprestus-Dalaran", -- [2]
@@ -1850,7 +1828,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cVesprestus|r",
 			[51] = 1648399703,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [83]
 		{
 			"tired of gold eh? send me a milly ", -- [1]
 			"Facelessqt-Dalaran", -- [2]
@@ -1872,7 +1850,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Facelessqt|r",
 			[51] = 1648399704,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [84]
 		{
 			"i got 95g ", -- [1]
 			"Vesprestus-Dalaran", -- [2]
@@ -1894,7 +1872,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cVesprestus|r",
 			[51] = 1648399714,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [85]
 		{
 			"if pladypus messages u guys be careful ok", -- [1]
 			"Extragirthy-Dalaran", -- [2]
@@ -1916,7 +1894,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Extragirthy|r",
 			[51] = 1648399730,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [86]
 		{
 			"wont say much, but be carefullllll", -- [1]
 			"Extragirthy-Dalaran", -- [2]
@@ -1938,7 +1916,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Extragirthy|r",
 			[51] = 1648399741,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [87]
 		{
 			"<SOMA> WTS M+ 15 keys  GOLD ONLY pst for more info!", -- [1]
 			"Saluhzar-Dalaran", -- [2]
@@ -1960,7 +1938,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Saluhzar|r",
 			[51] = 1648399827,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [88]
 		{
 			"im tired of having so much gold can u guys send me stuff in mail so i can buy", -- [1]
 			"Extragirthy-Dalaran", -- [2]
@@ -1982,7 +1960,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Extragirthy|r",
 			[51] = 1648399933,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [89]
 		{
 			"no", -- [1]
 			"Facelessqt-Dalaran", -- [2]
@@ -2004,7 +1982,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Facelessqt|r",
 			[51] = 1648399955,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [90]
 		{
 			"this pally from the guild goated is asking me for free gold! lmao", -- [1]
 			"Extragirthy-Dalaran", -- [2]
@@ -2026,7 +2004,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Extragirthy|r",
 			[51] = 1648400004,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [91]
 		{
 			"Girthy you seem like a fun guy to be around irl", -- [1]
 			"Facelessqt-Dalaran", -- [2]
@@ -2048,7 +2026,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Facelessqt|r",
 			[51] = 1648400047,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [92]
 		{
 			"Heck, dead mobs are dropping money all over the place", -- [1]
 			"Cattybear-Dalaran", -- [2]
@@ -2070,7 +2048,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Cattybear|r",
 			[51] = 1648400050,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [93]
 		{
 			"Pladypus is asking me to call him on discord lmao, i told him im a guy", -- [1]
 			"Extragirthy-Dalaran", -- [2]
@@ -2092,7 +2070,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Extragirthy|r",
 			[51] = 1648400094,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [94]
 		{
 			"<SOMA> WTS M+ 15 keys  GOLD ONLY pst for more info!", -- [1]
 			"Saluhzar-Dalaran", -- [2]
@@ -2114,7 +2092,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Saluhzar|r",
 			[51] = 1648400108,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [95]
 		{
 			"wts|cffa335ee|Hitem:138258::::::::60:577::::1:28:872:::::|h[Reins of the Long-Forgotten Hippogryph]|h|rCool MOUNT! Get yours now! pst", -- [1]
 			"Naethoris-Dalaran", -- [2]
@@ -2136,7 +2114,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Naethoris|r",
 			[51] = 1648400841,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [96]
 		{
 			"im so lonely join my guild", -- [1]
 			"Extragirthy-Dalaran", -- [2]
@@ -2158,7 +2136,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Extragirthy|r",
 			[51] = 1648401139,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [97]
 		{
 			"all this gold and no one to share it with", -- [1]
 			"Extragirthy-Dalaran", -- [2]
@@ -2179,6 +2157,28 @@ ElvCharacterDB = {
 			true, -- [17]
 			[52] = "|cfffef367Extragirthy|r",
 			[51] = 1648401144,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"<Clairvoyance> is selling M+ for gold! Come and run with the best Alliance guild on Dalaran!  Guild runs, gold only! Come get your KSM mount!", -- [1]
+			"Leienhance-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Leienhance-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			251, -- [11]
+			"Player-3683-0D34865E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcLeienhance|r",
+			[51] = 1649624032,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},

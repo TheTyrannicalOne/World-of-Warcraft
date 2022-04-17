@@ -1,38 +1,8 @@
 
 ElvCharacterDB = {
-	["ConvertKeybindings"] = true,
 	["CliqueDatatext"] = {
 	},
-	["ChatEditHistory"] = {
-		"/allthethings", -- [1]
-		"/wa", -- [2]
-		"/cw Lantevar-Proudmoore alrighty", -- [3]
-		"/dance", -- [4]
-		"/opie", -- [5]
-	},
 	["ChatHistoryLog"] = {
-		{
-			"If were going by law here....", -- [1]
-			"Nacklepets-Dalaran", -- [2]
-			"", -- [3]
-			"1. General - Stormwind City", -- [4]
-			"Nacklepets-Dalaran", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormwind City", -- [9]
-			0, -- [10]
-			1104, -- [11]
-			"Player-3683-0CB9B49E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Nacklepets|r",
-			[51] = 1644687473,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
 		{
 			"lol", -- [1]
 			"Birdpersone-Madoran", -- [2]
@@ -54,7 +24,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Birdpersone-Madoran|r",
 			[51] = 1644687480,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
+		}, -- [1]
 		{
 			"all marriage sex become a Al Bundy sex ?", -- [1]
 			"Lakrey-AeriePeak", -- [2]
@@ -76,7 +46,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Lakrey-AeriePeak|r",
 			[51] = 1644687487,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
+		}, -- [2]
 		{
 			"<Sanctification> is recruiting new members for raiding and dungeons. Friendly and helpful people. Looking for tanks, dps and healers to do Mythics. |cffffd100|HclubFinder:ClubFinder-1-234833-3683-98820873|h[Guild: Sanctification]|h|r", -- [1]
 			"Haruspexx-Dalaran", -- [2]
@@ -98,7 +68,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Haruspexx|r",
 			[51] = 1644687495,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
+		}, -- [3]
 		{
 			"<Sanctification> is an AOTC guild recruiting members for raid team and mythics. Friendly and helpful people. Raid Wed 7:30-10/Sun 7:30-10. |cffffd100|HclubFinder:ClubFinder-1-234833-3683-98820873|h[Guild: Sanctification]|h|r", -- [1]
 			"Haruspexx-Dalaran", -- [2]
@@ -120,7 +90,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Haruspexx|r",
 			[51] = 1644687496,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
+		}, -- [4]
 		{
 			"|cffffff00The Horde has taken control of a Spirit Tower!|r", -- [1]
 			"", -- [2]
@@ -142,7 +112,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1644687592,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
+		}, -- [5]
 		{
 			"Hey, i saw you are unguilded and im recruiting for mine <Seventh Sun>. We're casual and just enjoy having fun in groups and discord. Mythic+ and Heroic SOD every week.  Wanna join?", -- [1]
 			"Smðke-Dalaran", -- [2]
@@ -164,7 +134,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Smðke|r",
 			[51] = 1644687597,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [7]
+		}, -- [6]
 		{
 			"May I please have |cff0070dd|Hitem:143907::::::::51:581::22:1:7464:2:28:181:9:54:::::|h[Shard of Pirouetting Happiness]|h|r if you don't need it?", -- [1]
 			"Lantevar-Proudmoore", -- [2]
@@ -186,7 +156,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Lantevar-Proudmoore|r",
 			[51] = 1644687712,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [8]
+		}, -- [7]
 		{
 			"no u may not", -- [1]
 			"Lantevar-Proudmoore", -- [2]
@@ -208,7 +178,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Lantevar-Proudmoore|r",
 			[51] = 1644687723,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [9]
+		}, -- [8]
 		{
 			"alrighty", -- [1]
 			"Lantevar-Proudmoore", -- [2]
@@ -230,7 +200,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Lantevar-Proudmoore|r",
 			[51] = 1644687729,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [10]
+		}, -- [9]
 		{
 			"i need the 8gold to vendor it", -- [1]
 			"Lantevar-Proudmoore", -- [2]
@@ -252,7 +222,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Lantevar-Proudmoore|r",
 			[51] = 1644687746,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [11]
+		}, -- [10]
 		{
 			"join up for free coaching/pvp advice and pvp partners :)", -- [1]
 			"Duès-Dalaran", -- [2]
@@ -274,7 +244,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Duès|r",
 			[51] = 1644795091,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
+		}, -- [11]
 		{
 			"Real life gets in the way and |cffffd100|HclubFinder:ClubFinder-1-252637-3683-100623873|h[Guild: Legends of Shadow]|h|r understands that.", -- [1]
 			"Idylle-Dalaran", -- [2]
@@ -296,7 +266,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Idylle|r",
 			[51] = 1644795124,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
+		}, -- [12]
 		{
 			"how do i avoid stuns in melee cleve", -- [1]
 			"Kaedaric-Dalaran", -- [2]
@@ -318,7 +288,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Kaedaric|r",
 			[51] = 1644795126,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
+		}, -- [13]
 		{
 			"by finding a place to hide", -- [1]
 			"Idylle-Dalaran", -- [2]
@@ -340,7 +310,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Idylle|r",
 			[51] = 1644795158,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
+		}, -- [14]
 		{
 			"Makes sense. ", -- [1]
 			"Scathy-Dalaran", -- [2]
@@ -362,7 +332,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Scathy|r",
 			[51] = 1644795175,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
+		}, -- [15]
 		{
 			"pre evasion when they pop cds", -- [1]
 			"Duès-Dalaran", -- [2]
@@ -384,7 +354,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Duès|r",
 			[51] = 1644795191,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
+		}, -- [16]
 		{
 			"Looking for a place to call home or make friends? |cffffd100|HclubFinder:ClubFinder-1-301255-3683-104909875|h[Guild: TWO GIRLS ONE SQUID]|h|r is the place for you. We are looking for more friends to enjoy PvP and PvE content. PST for inv or for info", -- [1]
 			"Mcßeaver-Dalaran", -- [2]
@@ -406,7 +376,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cMcßeaver|r",
 			[51] = 1644984878,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
+		}, -- [17]
 		{
 			"fjb...", -- [1]
 			"Porkbbq-Dalaran", -- [2]
@@ -428,7 +398,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cPorkbbq|r",
 			[51] = 1644984927,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
+		}, -- [18]
 		{
 			"Blingtrons 5k and 7k up near the inn and AH for the next 10 min. They offer a gift to whoever talks to them, once per account per day. Whisper me if you want to know more, and have a great day!", -- [1]
 			"Berraylor-Aggramar", -- [2]
@@ -450,7 +420,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Berraylor-Aggramar|r",
 			[51] = 1644985151,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
+		}, -- [19]
 		{
 			"lf guild", -- [1]
 			"Tricep-Dalaran", -- [2]
@@ -472,7 +442,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cTricep|r",
 			[51] = 1644985336,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
+		}, -- [20]
 		{
 			"also anyone wanna do uldir xmog run just need 4-5 other 60s", -- [1]
 			"Tricep-Dalaran", -- [2]
@@ -494,7 +464,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cTricep|r",
 			[51] = 1644985347,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
+		}, -- [21]
 		{
 			"anyone here from either Doomhammer or Baelgun", -- [1]
 			"Yanizhalthan-Doomhammer", -- [2]
@@ -516,7 +486,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Yanizhalthan-Doomhammer|r",
 			[51] = 1644985775,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
+		}, -- [22]
 		{
 			"wts |cff1eff00|Hitem:164438::::::::60:72::14::1:28:186:::::|h[Razorfin Helm]|h|r |cff1eff00|Hitem:164440::::::::60:72::14::1:28:186:::::|h[Razorfin Shoulderguards]|h|r", -- [1]
 			"Skollsoul-Dalaran", -- [2]
@@ -538,7 +508,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cSkollsoul|r",
 			[51] = 1644985782,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
+		}, -- [23]
 		{
 			"wts |cffa335ee|Hitem:147064::::::::60:72::6:4:3563:1808:1472:3528:1:28:498:::::|h[Diadem of the Highborne]|h|r", -- [1]
 			"Skollsoul-Dalaran", -- [2]
@@ -560,7 +530,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cSkollsoul|r",
 			[51] = 1644985786,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
+		}, -- [24]
 		{
 			"YURD", -- [1]
 			"Vikus-Doomhammer", -- [2]
@@ -582,7 +552,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Vikus-Doomhammer|r",
 			[51] = 1644985801,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
+		}, -- [25]
 		{
 			"Lf guild that raids on Fridays and Saturdays", -- [1]
 			"Corpsé-Dalaran", -- [2]
@@ -604,7 +574,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaCorpsé|r",
 			[51] = 1644985816,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
+		}, -- [26]
 		{
 			"what color", -- [1]
 			"Ùwú-Dalaran", -- [2]
@@ -626,7 +596,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Ùwú|r",
 			[51] = 1644985816,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
+		}, -- [27]
 		{
 			"yay!", -- [1]
 			"Yanizhalthan-Doomhammer", -- [2]
@@ -648,7 +618,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Yanizhalthan-Doomhammer|r",
 			[51] = 1644985816,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
+		}, -- [28]
 		{
 			"diadem", -- [1]
 			"Ùwú-Dalaran", -- [2]
@@ -670,7 +640,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Ùwú|r",
 			[51] = 1644985829,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
+		}, -- [29]
 		{
 			"nintendo is ending wii u and 3ds eshop shortly", -- [1]
 			"Necrocutie-Dalaran", -- [2]
@@ -692,7 +662,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Necrocutie|r",
 			[51] = 1644985854,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
+		}, -- [30]
 		{
 			"payments stop in next few months, then whole things going down in march 23'", -- [1]
 			"Necrocutie-Dalaran", -- [2]
@@ -714,7 +684,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Necrocutie|r",
 			[51] = 1644985870,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
+		}, -- [31]
 		{
 			"wts |cffa335ee|Hitem:59467::::::::60:72::::1:28:1026:::::|h[Hide of Chromaggus]|h|r |cff0070dd|Hitem:3417::::::::60:72::1:1:6710:2:9:20:28:1908:::::|h[Onyx Claymore]|h|r pst", -- [1]
 			"Skollsoul-Dalaran", -- [2]
@@ -736,7 +706,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cSkollsoul|r",
 			[51] = 1644985988,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
+		}, -- [32]
 		{
 			"i offer a brand new LT chevy silverado trail boss with 6.2 v8", -- [1]
 			"Adarrad-Dalaran", -- [2]
@@ -758,7 +728,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcAdarrad|r",
 			[51] = 1644986023,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
+		}, -- [33]
 		{
 			"LF active guild that raids on fridays and saturdays", -- [1]
 			"Corpsé-Dalaran", -- [2]
@@ -780,7 +750,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaCorpsé|r",
 			[51] = 1644986064,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
+		}, -- [34]
 		{
 			"all right then, why not.  need one more signature from someone on this server or Baelgun.", -- [1]
 			"Yanizhalthan-Doomhammer", -- [2]
@@ -802,7 +772,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Yanizhalthan-Doomhammer|r",
 			[51] = 1644986099,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
+		}, -- [35]
 		{
 			"wts |cffa335ee|Hitem:59467::::::::60:72::::1:28:1026:::::|h[Hide of Chromaggus]|h|r |cff0070dd|Hitem:3417::::::::60:72::1:1:6710:2:9:20:28:1908:::::|h[Onyx Claymore]|h|r pst", -- [1]
 			"Skollsoul-Dalaran", -- [2]
@@ -824,7 +794,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cSkollsoul|r",
 			[51] = 1644986155,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
+		}, -- [36]
 		{
 			"five more minutes, if anyone wants 500g and can sign it", -- [1]
 			"Yanizhalthan-Doomhammer", -- [2]
@@ -846,7 +816,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Yanizhalthan-Doomhammer|r",
 			[51] = 1644986181,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
+		}, -- [37]
 		{
 			"CMON HELP A BROTHA OUT", -- [1]
 			"Vikus-Doomhammer", -- [2]
@@ -868,7 +838,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Vikus-Doomhammer|r",
 			[51] = 1644986220,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
+		}, -- [38]
 		{
 			"ill pay someone 1000g to run me through a +5", -- [1]
 			"Ttvtimelapse-Baelgun", -- [2]
@@ -890,7 +860,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Ttvtimelapse-Baelgun|r",
 			[51] = 1644986230,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
+		}, -- [39]
 		{
 			"reported >:(", -- [1]
 			"Canadian-Azuremyst", -- [2]
@@ -912,7 +882,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Canadian-Azuremyst|r",
 			[51] = 1644986248,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
+		}, -- [40]
 		{
 			"Ted Cruz and other GOP senators oppose a no fly list for unruly passengers .,.. they might as well oppose to airport security screenings in the name of freedom", -- [1]
 			"Tuher-Dalaran", -- [2]
@@ -934,7 +904,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Tuher|r",
 			[51] = 1644986397,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
+		}, -- [41]
 		{
 			"reported for fake news", -- [1]
 			"Wolfènstein-Azuremyst", -- [2]
@@ -956,7 +926,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Wolfènstein-Azuremyst|r",
 			[51] = 1644986421,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [42]
 		{
 			"Its on CBC ... US news dont report it", -- [1]
 			"Tuher-Dalaran", -- [2]
@@ -978,7 +948,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Tuher|r",
 			[51] = 1644986458,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [43]
 		{
 			"all right, I'm done spamming for tonight.", -- [1]
 			"Yanizhalthan-Doomhammer", -- [2]
@@ -1000,7 +970,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Yanizhalthan-Doomhammer|r",
 			[51] = 1644986478,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [44]
 		{
 			"wts |cffa335ee|Hitem:59467::::::::60:72::::1:28:1026:::::|h[Hide of Chromaggus]|h|r|cff0070dd|Hitem:3417::::::::60:72::1:1:6710:2:9:20:28:1908:::::|h[Onyx Claymore]|h|r pst", -- [1]
 			"Skollsoul-Dalaran", -- [2]
@@ -1022,7 +992,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cSkollsoul|r",
 			[51] = 1644986483,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [45]
 		{
 			"selective news reporting is done in the US by both left and right .... CBC has no left or right American veiws", -- [1]
 			"Tuher-Dalaran", -- [2]
@@ -1044,7 +1014,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Tuher|r",
 			[51] = 1644986523,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [46]
 		{
 			"try watching CBC and learn reality American news lol", -- [1]
 			"Tuher-Dalaran", -- [2]
@@ -1066,7 +1036,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Tuher|r",
 			[51] = 1644986581,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [47]
 		{
 			"BBC is even better", -- [1]
 			"Tuher-Dalaran", -- [2]
@@ -1088,7 +1058,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Tuher|r",
 			[51] = 1644986662,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [48]
 		{
 			"wts |cffa335ee|Hitem:59467::::::::60:72::::1:28:1026:::::|h[Hide of Chromaggus]|h|r |cff0070dd|Hitem:3417::::::::60:72::1:1:6710:2:9:20:28:1908:::::|h[Onyx Claymore]|h|r pst", -- [1]
 			"Skollsoul-Dalaran", -- [2]
@@ -1110,7 +1080,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cSkollsoul|r",
 			[51] = 1644986713,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [49]
 		{
 			"wts |cff0070dd|Hitem:187913::::::::60:250::74::1:28:2060:::::|h[Apprentice Slimemancer's Boots]|h|r 1k", -- [1]
 			"Ùwú-Dalaran", -- [2]
@@ -1132,7 +1102,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Ùwú|r",
 			[51] = 1644986760,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [50]
 		{
 			"i'll pay 200k", -- [1]
 			"Ilysanna-Dalaran", -- [2]
@@ -1154,7 +1124,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Ilysanna|r",
 			[51] = 1644986785,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [51]
 		{
 			"cute", -- [1]
 			"Ùwú-Dalaran", -- [2]
@@ -1176,7 +1146,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Ùwú|r",
 			[51] = 1644986814,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [52]
 		{
 			"10/10H Fri/Sat 10pm-12am |cffffd100|HclubFinder:ClubFinder-1-46122-3683-86807868|h[Guild: Divine Brilliance]|h|r is actively recruiting raiders for our main team. We’re looking for Healers and Ranged DPS so we can venture farther!  Pst for info!", -- [1]
 			"Lyrarei-Dalaran", -- [2]
@@ -1198,7 +1168,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeLyrarei|r",
 			[51] = 1644987423,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [53]
 		{
 			"WTs Tazavesh |cffa335ee|Hitem:186637::::::::1:1446:::::::::|h[Tazavesh Gearglider]|h|r/KSM for(Soultwisted Deathwalker)}||Mythic+15-21s||Heroic SOD raid (10/10-AOTC: Sylvanas Windrunner) /! Pst", -- [1]
 			"Weguois-Dalaran", -- [2]
@@ -1220,7 +1190,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cWeguois|r",
 			[51] = 1644987438,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [54]
 		{
 			"WTs Tazavesh |cffa335ee|Hitem:186637::::::::1:1446:::::::::|h[Tazavesh Gearglider]|h|r/KSM for(Soultwisted Deathwalker)}||Mythic+15-21s||Heroic SOD raid (10/10-AOTC: Sylvanas Windrunner) /! Pst", -- [1]
 			"Weguois-Dalaran", -- [2]
@@ -1242,7 +1212,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cWeguois|r",
 			[51] = 1644988294,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [55]
 		{
 			"WTS |cff1eff00|Hitem:1461::::::::1:259:::::::::|h[Slayer's Battle Axe]|h|r", -- [1]
 			"Battleaxebro-Dalaran", -- [2]
@@ -1264,7 +1234,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Battleaxebro|r",
 			[51] = 1644988398,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [56]
 		{
 			"WTs Tazavesh |cffa335ee|Hitem:186637::::::::1:1446:::::::::|h[Tazavesh Gearglider]|h|r/KSM for(Soultwisted Deathwalker)}||Mythic+15-21s||Heroic SOD raid (10/10-AOTC: Sylvanas Windrunner) /! Pst", -- [1]
 			"Weguois-Dalaran", -- [2]
@@ -1286,7 +1256,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cWeguois|r",
 			[51] = 1644988437,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
+		}, -- [57]
 		{
 			"Anyone selling |cff1eff00|Hitem:1461::::::::1:259:::::::::|h[Slayer's Battle Axe]|h|r?", -- [1]
 			"Dun-Dalaran", -- [2]
@@ -1308,7 +1278,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Dun|r",
 			[51] = 1644988448,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [58]
 		{
 			"WTS |cffa335ee|Hitem:52251::::::::60:251::11::1:28:1023:::::|h[Jaina's Locket]|h|r", -- [1]
 			"Toughmoe-Wildhammer", -- [2]
@@ -1330,7 +1300,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Toughmoe-Wildhammer|r",
 			[51] = 1644988611,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [59]
 		{
 			"dont let anyone else ruin your day, its your day, ruin it yourself :)", -- [1]
 			"Warsrus-Dalaran", -- [2]
@@ -1352,7 +1322,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cWarsrus|r",
 			[51] = 1644988680,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [60]
 		{
 			"what", -- [1]
 			"Blackwing-Dalaran", -- [2]
@@ -1374,7 +1344,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Blackwing|r",
 			[51] = 1644988713,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [61]
 		{
 			"WTs Tazavesh |cffa335ee|Hitem:186637::::::::1:1446:::::::::|h[Tazavesh Gearglider]|h|r/KSM for(Soultwisted Deathwalker)}||Mythic+15-21s||Heroic SOD raid (10/10-AOTC: Sylvanas Windrunner) /! Pst", -- [1]
 			"Weguois-Dalaran", -- [2]
@@ -1396,7 +1366,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cWeguois|r",
 			[51] = 1644988722,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [62]
 		{
 			"precisely", -- [1]
 			"Warsrus-Dalaran", -- [2]
@@ -1418,7 +1388,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cWarsrus|r",
 			[51] = 1644988737,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [63]
 		{
 			"thanks, gg", -- [1]
 			"Pademonium-Dawnbringer", -- [2]
@@ -1440,7 +1410,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Pademonium-Dawnbringer|r",
 			[51] = 1645074323,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [65]
+		}, -- [64]
 		{
 			"Blingtrons 5k and 7k up near the inn and AH for the next 10 min. They offer a gift to whoever talks to them, once per account per day. Whisper me if you want to know more, and have a great day!", -- [1]
 			"Daenuk-Dalaran", -- [2]
@@ -1462,7 +1432,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Daenuk|r",
 			[51] = 1645074346,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [65]
 		{
 			"Blingtrons 5k and 7k up in Stormwind's Trade District for the next 10 min. I place them at the same times every day, and they offer a gift once per day per account. Whisper me if you want to know more, and have a great day!", -- [1]
 			"Daenuk-Dalaran", -- [2]
@@ -1484,7 +1454,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Daenuk|r",
 			[51] = 1645074350,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [66]
 		{
 			"looks like highest mythic drops from SoFO is 285", -- [1]
 			"Univers-Dalaran", -- [2]
@@ -1506,7 +1476,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Univers|r",
 			[51] = 1645152193,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [67]
 		{
 			"sheesh", -- [1]
 			"Androidcurry-Dalaran", -- [2]
@@ -1528,7 +1498,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Androidcurry|r",
 			[51] = 1645152244,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [68]
 		{
 			"u have to be lvl 60 to go into new area right? cant go there at like 56?", -- [1]
 			"Androidcurry-Dalaran", -- [2]
@@ -1550,7 +1520,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Androidcurry|r",
 			[51] = 1645152348,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [69]
 		{
 			"58", -- [1]
 			"Duesbanker-Dalaran", -- [2]
@@ -1572,7 +1542,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaDuesbanker|r",
 			[51] = 1645152355,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [70]
 		{
 			"oh thats nice that'll help", -- [1]
 			"Androidcurry-Dalaran", -- [2]
@@ -1594,7 +1564,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Androidcurry|r",
 			[51] = 1645152373,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [71]
 		{
 			"there might be a summon option", -- [1]
 			"Mezzmorize-Dalaran", -- [2]
@@ -1616,7 +1586,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edMezzmorize|r",
 			[51] = 1645152382,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [72]
 		{
 			"in a group", -- [1]
 			"Mezzmorize-Dalaran", -- [2]
@@ -1638,7 +1608,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edMezzmorize|r",
 			[51] = 1645152389,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [73]
 		{
 			"Looking for a place to call home or make friends? |cffffd100|HclubFinder:ClubFinder-1-301255-3683-104909875|h[Guild: TWO GIRLS ONE SQUID]|h|r is the place for you. We are looking for more friends to enjoy PvP and PvE content. PST for inv or for info", -- [1]
 			"Mcßeaver-Dalaran", -- [2]
@@ -1660,7 +1630,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cMcßeaver|r",
 			[51] = 1645152395,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [74]
 		{
 			"or mage", -- [1]
 			"Mezzmorize-Dalaran", -- [2]
@@ -1682,7 +1652,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edMezzmorize|r",
 			[51] = 1645152416,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [75]
 		{
 			"Can I please have some gold for a mount from the auction house?", -- [1]
 			"Druhunt-Aggramar", -- [2]
@@ -1704,7 +1674,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Druhunt-Aggramar|r",
 			[51] = 1645364576,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [76]
 		{
 			"|cffffff00|Hquest:24655:378|h[Something Stinks]|h|r this even able to be done?", -- [1]
 			"Pthirtyeight-Dalaran", -- [2]
@@ -1726,7 +1696,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cPthirtyeight|r",
 			[51] = 1645403498,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [77]
 		{
 			"WTB |cffa335ee|Hitem:72146::::::::52:251::14::1:28:872:::::|h[Swift Lovebird]|h|r 30k PST!!", -- [1]
 			"Nackleiscute-Dalaran", -- [2]
@@ -1748,7 +1718,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Nackleiscute|r",
 			[51] = 1645403574,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [78]
 		{
 			"no just stating facts", -- [1]
 			"Ziegenbock-Dalaran", -- [2]
@@ -1770,7 +1740,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Ziegenbock|r",
 			[51] = 1645405982,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [79]
 		{
 			"lol", -- [1]
 			"Bleubelle-Dalaran", -- [2]
@@ -1792,7 +1762,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Bleubelle|r",
 			[51] = 1645405990,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [80]
 		{
 			"for me registration was a nightmare so i'd believe it", -- [1]
 			"Jormongund-Dalaran", -- [2]
@@ -1814,7 +1784,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Jormongund|r",
 			[51] = 1645405997,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [81]
 		{
 			"just curious, why do you care how someone else identifies?", -- [1]
 			"Elisalethe-Dalaran", -- [2]
@@ -1836,7 +1806,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Elisalethe|r",
 			[51] = 1645406005,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [82]
 		{
 			"a total quit moment for me for ffonline", -- [1]
 			"Jormongund-Dalaran", -- [2]
@@ -1858,7 +1828,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Jormongund|r",
 			[51] = 1645406021,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [83]
 		{
 			"i dont just dont force your beliefs on me ", -- [1]
 			"Ziegenbock-Dalaran", -- [2]
@@ -1880,7 +1850,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Ziegenbock|r",
 			[51] = 1645406027,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [84]
 		{
 			"about what final fantasy online?", -- [1]
 			"Jormongund-Dalaran", -- [2]
@@ -1902,7 +1872,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Jormongund|r",
 			[51] = 1645406040,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [85]
 		{
 			"lmao", -- [1]
 			"Ironikh-Dalaran", -- [2]
@@ -1924,7 +1894,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edIronikh|r",
 			[51] = 1645406041,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [86]
 		{
 			"what? giving an opinion is \"forcing\" my beliefs on you?", -- [1]
 			"Elisalethe-Dalaran", -- [2]
@@ -1946,7 +1916,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Elisalethe|r",
 			[51] = 1645406054,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [87]
 		{
 			"and saying i have to call you by your pronouns is forcing your irrational beliefs on me", -- [1]
 			"Ziegenbock-Dalaran", -- [2]
@@ -1968,7 +1938,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Ziegenbock|r",
 			[51] = 1645406060,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [88]
 		{
 			"<Sanctification> is recruiting new members for raiding and dungeons. Friendly and helpful people. Looking for tanks, dps and healers to do Mythics. |cffffd100|HclubFinder:ClubFinder-1-234833-3683-98820873|h[Guild: Sanctification]|h|r", -- [1]
 			"Chaosramda-Dalaran", -- [2]
@@ -1990,7 +1960,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Chaosramda|r",
 			[51] = 1648343005,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [89]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-360505-160-88020434|h[Guild: MadHouse]|h|r Experienced guild with a family feel now recruiting active players for mythic+/PVP and raids. New/leveling characters welcome. 100% no drama guild.", -- [1]
 			"Cindyloohoo-Dawnbringer", -- [2]
@@ -2012,7 +1982,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeCindyloohoo-Dawnbringer|r",
 			[51] = 1648343083,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [90]
 		{
 			"We are here to have fun & enjoy our gaming time. Please watch your step as you join the ride. Tara keeps spilling her drinks. Kora keeps falling off cliffs, & Bryce throws his legos. We have snacks & straight jackets.", -- [1]
 			"Cindyloohoo-Dawnbringer", -- [2]
@@ -2034,7 +2004,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeCindyloohoo-Dawnbringer|r",
 			[51] = 1648343091,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [91]
 		{
 			"Not sure where the music keeps coming from but we like it and it really helps on Drunkin Dungeon nights.. Apply today for your stay in the MadHouse.", -- [1]
 			"Cindyloohoo-Dawnbringer", -- [2]
@@ -2056,7 +2026,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeCindyloohoo-Dawnbringer|r",
 			[51] = 1648343114,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [92]
 		{
 			"Please apply if interested by clicking the Gold link or PM me for invite. Madoran, Dawnbringer, Azuremyst, &  Staghelm servers. ", -- [1]
 			"Cindyloohoo-Dawnbringer", -- [2]
@@ -2078,7 +2048,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeCindyloohoo-Dawnbringer|r",
 			[51] = 1648343125,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [93]
 		{
 			"fjb", -- [1]
 			"Tbonesteaks-Dalaran", -- [2]
@@ -2100,7 +2070,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Tbonesteaks|r",
 			[51] = 1648343143,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [94]
 		{
 			"i think that beats the record for longest Guild ad. ", -- [1]
 			"Mogley-Baelgun", -- [2]
@@ -2122,7 +2092,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Mogley-Baelgun|r",
 			[51] = 1648343158,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [95]
 		{
 			"lol", -- [1]
 			"Desideria-Staghelm", -- [2]
@@ -2144,7 +2114,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Desideria-Staghelm|r",
 			[51] = 1648343180,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [96]
 		{
 			"way too \"chatty\"", -- [1]
 			"Tbonesteaks-Dalaran", -- [2]
@@ -2166,7 +2136,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Tbonesteaks|r",
 			[51] = 1648343185,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [97]
 		{
 			"wts |cffa335ee|Hitem:69960::::::::60:72::3::1:28:1029:::::|h[Pattern: Dragonfire Gloves]|h|r pst", -- [1]
 			"Frankenstrat-Dalaran", -- [2]
@@ -2188,6 +2158,36 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cFrankenstrat|r",
 			[51] = 1648343225,
 			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"|cffffd100|HclubFinder:ClubFinder-1-125012-3683-90682868|h[Guild: The Hedgehugs]|h|r is recruiting! A bunch of buds with a dad's penchant for puns. M+ nightly & raid Fri 9p & Sun 7p EST! 11/11N 3/11H. Leave the pugs, join the hugs!", -- [1]
+			"Melagnomah-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Melagnomah-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			209, -- [11]
+			"Player-3683-0BF3C579", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cMelagnomah|r",
+			[51] = 1650154664,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},
+	["ChatEditHistory"] = {
+		"/allthethings", -- [1]
+		"/wa", -- [2]
+		"/cw Lantevar-Proudmoore alrighty", -- [3]
+		"/dance", -- [4]
+		"/opie", -- [5]
+	},
+	["ConvertKeybindings"] = true,
 }

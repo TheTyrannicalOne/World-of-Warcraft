@@ -1,9 +1,8 @@
 
 SpyPerCharDB = {
-	["version"] = "1.1",
-	["IgnoreData"] = {
-	},
 	["KOSData"] = {
+	},
+	["IgnoreData"] = {
 	},
 	["PlayerData"] = {
 		["Xînz-Gilneas"] = {
@@ -22,4 +21,5 @@ SpyPerCharDB = {
 			["subZone"] = "Valley of Strength",
 		},
 	},
+	["version"] = "1.1",
 }

@@ -1,78 +1,47 @@
 # AllTheThings
 
-## [SL-2.7.5](https://github.com/DFortun81/AllTheThings/tree/SL-2.7.5) (2022-03-27)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.7.4...SL-2.7.5) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [SL-2.7.7](https://github.com/DFortun81/AllTheThings/tree/SL-2.7.7) (2022-04-10)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.7.6...SL-2.7.7) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
-- Reparse  
-- Merge branch 'master' of https://github.com/DFortun81/AllTheThings  
-- -- Reparse  
-- Merge pull request #960 from DFortun81/auto\_localization  
+- Merge pull request #968 from DFortun81/auto\_localization  
     Sync localization  
 - Sync localization  
-- Merge pull request #959 from DFortun81/auto\_localization  
+- Merge pull request #967 from DFortun81/auto\_localization  
     Sync localization  
 - Sync localization  
-- Various Errors  
-    Conduits in the raid,  
-    and NYI  
-- Greatly improved the Tom Tom Waypoint implementation.  
-- Couple ZM achievement listing improvements from completing them personally  
-- Big update regrading mounts  
-- Fixed repeated Object listings to work with modified waypoint-plotting logic  
-    Repeated Objects will now show their cumulative, nested, unsaved coordinates in the root-Object tooltip (i.e. Argus Treasures, etc.)  
-    Tooltips will now only show up to 10 Coordinates with a note of how many additional coordinates exist  
-- Cleaned up the TomTomWaypoint functionality.  
-- Whooops! I left my debug code in for the holiday settings.  
-- All of the Holidays now automatically activate the base seasonal filters for their respective holiday.  
-- All holidays now make use of the Holidays root.  
-- Fixed a weird caching issue with the new autoresolver. (see the difference on "To Honor One's Elders")  
-- Updated Lunar Festival. (Particularly with how the elders achievements work!)  
-    Achievements now autoresolve their symbolic links OnUpdate, should they have one.  
-    Symbolic Links are now cached on the object whose symbolic link was resolved.  
-- Various #errors  
-- Fixed popout windows not inheriting current Minilist scale when created  
-- Parser now complains about badly-formatted coord/coords data  
-    Fixed all the badly-formatted coords data  
-- Some data adjustments to appease Parser complaints  
-- Few more Parser adjustments:  
-    * Remove invalid FilterID values when validating the data  
-    * Cleaned up 'timeline' logic ('removed' items should no longer become unsorted? maybe?)  
-    * Accidentally removed all Shadowlands Outdoor Zones content, but put it all back because I know how upset everyone would have been  
-    * Instances which are Raids will now show as Raids everywhere they are referenced (i.e. in NYI headers as well)  
-- NYI sorting  
-- Various errors  
-- Updated single quoted fields to double quotes.  
-    Lunar Festival to one file.  
-- The Stranglethorn Fishing Extravaganza file is now the source of truth for classic.  
-- Found an odd issue in the Parser where a specific version of an Item could overwrite a valid filter value with an invalid filter value, leading to the in-game reference of that Item not matching the filters for anyone, requiring Account or Debug modes to be considered collectible (There were apparently 3779 Things tagged with an invalid filter previously)  
-- Some unsorted stuff and start of conduits in Sofo  
-- Added item information for Formula: Enchant Ring - Stats.  
-- Added Item Data for the Greater Drum patterns.  
-- Updated "To Hellfire And Back" to also reference the HFC dungeon quests.  
-- Reworked Trial of Style to use costs  
-- Couple more coords for sphere items  
-- Outland Outdoor Zones now use root so they can be embedded in the reference file without losing data.  
-- Merged Shattrath City with the TBC Classic version.  
-- Merged Hellfire Peninsula with the TBC Classic version.  
-- Merged Netherstorm with the TBC Classic version.  
-- Merged Blade's Edge Mountains with the TBC Classic version.  
-- Merged Nagrand with the TBC Classic version.  
-- Merged Terokkar Forest with the TBC Classic version.  
-- Merged Zangarmarsh with the TBC Classic version of Zangarmarsh.  
-- Added timeline data for 'An Awfully Big Pain in my As-dventure' to prevent it from appearing in the addon before it should.  
-- Outland has had its subzones merged into singular files for easier comparisons between classic and retail database structures. (data merge incoming)  
-- Added the northrend vendor mount achievements.  
-- Added the exploration achievements for azuremyst isle and bloodmyst isle.  
-- Couple #errors  
-- Added the exploration achievements for ghostlands and eversong woods.  
-- Added some missing classic dungeon reputation achievements.  
-- Added The Violet Eye and The Scale of the Sands Achievements to their respective raids.  
-- Added the remaining shadowmoon valley achievements.  
-- Added Explore Shadowmoon Valley for TBC Classic.  
-- Converted all remaining simple achievement handlers to use the common ones instead.  
-- Added the ALL\_SOURCE\_QUESTS and ANY\_SOURCE\_QUESTS achievement handlers.  
-- Added the ALL\_ITEM\_PROVIDERS common achievement handler.  
-- Added the ANY\_ITEM\_PROVIDER common achievement handler.  
-- The battleground rep achievements now use common achievement handlers.  
-- Fixed the phase requirements for Primal Nether.  
-- Fixed race filter for Meats to Orgrimmar  
+- --Update to creation catalyst and PvP  
+    --Various Error Fixes  
+- Knocked out a few quick #errors  
+- Consolidated some logic for showing content within creature tooltips (still haven't found the cause/reason that Infinite Timereaver shows up for some people without being in Timewalking...)  
+    While in Debug Mode, Show Completed Groups/Things now properly will hide both Completed/Empty Groups & Uncollectible Things respectively  
+    Fixed a situation where theoretically a trackable group with content could be completed but not visible with Show Trackable enabled  
+    Debug Mode no longer forces Show Trackable Things since groups are now properly visible based on the Default filter  
+- Adjusted Parser's object merging logic to only merge common data into objects which do not already contain the respective fields  
+    Fixed Cata ZA from showing as a Raid due to BC ZA  
+- Moving Azjol-Nerub quests to the instance.  
+- Marking Chefs faction specific in Hellfire.  
+- More Pocopoc QuestIDs  
+- -- Added Pocopocs but still missing 3 questIDs  
+    -- Symlink and deduplicated some PS materials  
+    -- Add all cosmetic cloaks  
+- Vestige of Origins added to Korthia vendor.  
+- Creation Catalyst should only contain unique sourceIDs with the rest being symlinked. The header is also moved to expansions features instead of Zereth Mortis.  
+- Note about Aspirant Eolis  
+- Some adjustments to Threads introduction quest sequences (many much breadcrumbs)  
+- Fixed Glimmer of Satisfaction in ZM  
+    Quest popouts which are started from Items that are not Sourced in ATT will now show a reference of the Item under the Quest Requirements header  
+    Popout lists can now plot coordinates from the header  
+- FP's in SotFO are not really collectible since they reset based on weekly raid progress  
+    Removed some excessive Genesis Motes in SotFO  
+    Cleaned up Pet Battle quests/rewards using simpler symlink tech and so the Item rewards have proper Sources  
+- Added a few more coords from Wowhead for Fedfennel (fixes #942)  
+- Fixed a map reference  
+- Improved the layout of some ZM treasures and required alcove interactions  
+    Big pass through #errors of quick fixes  
+- saering gorge recipe coords  
+- popocoppocpocpopcopooocoocopopo stuff  
+- Added some missing vendor items to Zangarmarsh for Classic TBC.  
+- wotlk timeline stuff for crieve  
+- added coordinates for some zone drops  
+- Some sorting and fixes  
+- Craftables (pre-cata) now properly use root.  

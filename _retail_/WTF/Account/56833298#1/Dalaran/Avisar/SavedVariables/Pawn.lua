@@ -1,8 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0534,
-	["LastPlayerFullName"] = "Avisar-Dalaran",
-	["AutoSelectScales"] = true,
+	["LastVersion"] = 2.0537,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173836,
@@ -91,6 +89,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:13006::::::::52:70:::1:6659:2:28:1004:9:30:::::|h[Mass of McGowan]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["LastPlayerFullName"] = "Avisar-Dalaran",
+	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[120978] = {
 			["Relics"] = {
@@ -104,7 +105,6 @@ PawnOptions = {
 			["Name"] = "Ashbringer",
 		},
 	},
-	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "PALADIN",

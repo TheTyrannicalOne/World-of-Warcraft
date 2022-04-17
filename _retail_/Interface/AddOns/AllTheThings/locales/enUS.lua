@@ -1290,6 +1290,13 @@ app.L = {
 		--
 	-- Sets
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
+	-- Temp Sets for Creation Catalyst
+		[-1001] = app.asset("Difficulty_LFR"),
+		[-1002] = app.asset("Difficulty_Normal"),
+		[-1003] = app.asset("Difficulty_Heroic"),
+		[-1004] = app.asset("Difficulty_Mythic"),
+		[-1005] = "Interface\\Worldmap\\GlowSkull_64Purple",
+		[-1006] = "Interface\\Worldmap\\GlowSkull_64Red",
 	-- Warrior order hall lore items
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
 		[-2201] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1826,6 +1833,13 @@ app.L = {
 		[-988] = select(2, GetAchievementInfo(15402)),							-- Cypher of the First Ones
 	-- Sets
 		[-1000] = WARDROBE_SETS, 												-- Sets
+	-- Temp Sets for Creation Catalyst
+		[-1001] = "Looking For Raid Alternative",
+		[-1002] = "Normal Alternative",
+		[-1003] = "Heroic Alternative",
+		[-1004] = "Mythic Alternative",
+		[-1005] = "Gladiator Alternative",
+		[-1006] = "Elite Alternative",
 	-- Warrior order hall lore items
 		[-2200] = "Great Odyn and the Firelord",
 		[-2201] = "The Wanderer and the Serpent",

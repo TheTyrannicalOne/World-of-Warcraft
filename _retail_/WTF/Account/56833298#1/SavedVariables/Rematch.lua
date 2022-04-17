@@ -7,12 +7,13 @@ RematchSettings = {
 	["XPos"] = 995.0079345703125,
 	["SpecialSlots"] = {
 	},
-	["CustomScaleValue"] = 100,
+	["SelectedTab"] = 1,
 	["DialogYPos"] = 667.0057983398438,
-	["UseTypeBar"] = true,
-	["JournalPanel"] = 1,
-	["HidePetToast"] = true,
+	["YPos"] = 418.0044860839844,
 	["LevelingQueue"] = {
+	},
+	["HidePetToast"] = true,
+	["QueueSanctuary"] = {
 	},
 	["Sort"] = {
 		["Order"] = 2,
@@ -26,6 +27,53 @@ RematchSettings = {
 			"Interface\\Icons\\PetJournalPortrait", -- [2]
 		}, -- [1]
 	},
+	["DialogXPos"] = 1343.008666992188,
+	["Filters"] = {
+		["Other"] = {
+		},
+		["Expansion"] = {
+		},
+		["Script"] = {
+		},
+		["Moveset"] = {
+		},
+		["Tough"] = {
+		},
+		["Level"] = {
+		},
+		["Similar"] = {
+		},
+		["Sources"] = {
+		},
+		["Breed"] = {
+		},
+		["Rarity"] = {
+		},
+		["Strong"] = {
+		},
+		["Collected"] = {
+		},
+		["Favorite"] = {
+		},
+		["Types"] = {
+		},
+	},
+	["ExpandedOptHeaders"] = {
+	},
+	["FavoriteFilters"] = {
+	},
+	["PetCardXPos"] = 401,
+	["QueueSortOrder"] = 1,
+	["CollapsedOptHeaders"] = {
+	},
+	["ExpandedTargetHeaders"] = {
+	},
+	["PreferredMode"] = 1,
+	["ActivePanel"] = 1,
+	["Sanctuary"] = {
+	},
+	["ElvUIToastDefaulted"] = true,
+	["CornerPos"] = "BOTTOMLEFT",
 	["ScriptFilters"] = {
 		{
 			"Unnamed Pets", -- [1]
@@ -48,57 +96,9 @@ RematchSettings = {
 			"-- Pets with three or more attack types different than their pet type.\n\nlocal count = 0\nfor _,abilityID in ipairs(abilityList) do\n  local abilityType,noHints = select(7, C_PetBattles.GetAbilityInfoByID(abilityID) )\n  if not noHints and abilityType~=petType then\n    count = count + 1\n  end\nend\n\nreturn count>=3\n", -- [2]
 		}, -- [5]
 	},
-	["Filters"] = {
-		["Other"] = {
-		},
-		["Expansion"] = {
-		},
-		["Script"] = {
-		},
-		["Types"] = {
-		},
-		["Favorite"] = {
-		},
-		["Collected"] = {
-		},
-		["Strong"] = {
-		},
-		["Similar"] = {
-		},
-		["Breed"] = {
-		},
-		["Rarity"] = {
-		},
-		["Sources"] = {
-		},
-		["Level"] = {
-		},
-		["Tough"] = {
-		},
-		["Moveset"] = {
-		},
-	},
-	["ExpandedOptHeaders"] = {
-	},
-	["FavoriteFilters"] = {
-	},
-	["PetCardXPos"] = 401,
-	["ElvUIToastDefaulted"] = true,
-	["CollapsedOptHeaders"] = {
-	},
-	["ExpandedTargetHeaders"] = {
-	},
-	["PreferredMode"] = 1,
-	["ActivePanel"] = 1,
-	["Sanctuary"] = {
-	},
-	["QueueSortOrder"] = 1,
-	["CornerPos"] = "BOTTOMLEFT",
-	["DialogXPos"] = 1343.008666992188,
-	["QueueSanctuary"] = {
-	},
-	["YPos"] = 418.0044860839844,
-	["SelectedTab"] = 1,
+	["JournalPanel"] = 1,
+	["UseTypeBar"] = true,
+	["CustomScaleValue"] = 100,
 	["PetNotes"] = {
 	},
 }

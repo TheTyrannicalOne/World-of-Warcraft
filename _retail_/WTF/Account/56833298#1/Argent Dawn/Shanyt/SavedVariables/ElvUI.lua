@@ -2,1106 +2,6 @@
 ElvCharacterDB = {
 	["ChatHistoryLog"] = {
 		{
-			"32% House of the Chosen disrupted (32%)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			647, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646443864,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [1]
-		{
-			"36% House of the Chosen disrupted (36%)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			648, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646443871,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [2]
-		{
-			"40% House of the Chosen disrupted (40%)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			662, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646443907,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [3]
-		{
-			"44% House of the Chosen disrupted (44%)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			665, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646443915,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [4]
-		{
-			"48% House of the Chosen disrupted (48%)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			675, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646443946,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [5]
-		{
-			"52% House of the Chosen disrupted (52%)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			676, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646443955,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [6]
-		{
-			"54% House of the Chosen disrupted (54%)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			677, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646443958,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [7]
-		{
-			"56% House of the Chosen disrupted (56%)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			683, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646443973,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [8]
-		{
-			"58% House of the Chosen disrupted (58%)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			684, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646443982,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [9]
-		{
-			"62% House of the Chosen disrupted (62%)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			686, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646443998,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [10]
-		{
-			"66% House of the Chosen disrupted (66%)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			687, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646444003,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [11]
-		{
-			"70% House of the Chosen disrupted (70%)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			688, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646444009,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [12]
-		{
-			"74% House of the Chosen disrupted (74%)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			701, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646444044,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [13]
-		{
-			"78% House of the Chosen disrupted (78%)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			702, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646444052,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [14]
-		{
-			"82% House of the Chosen disrupted (82%)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			703, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646444052,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [15]
-		{
-			"86% House of the Chosen disrupted (86%)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			718, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646444085,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [16]
-		{
-			"90% House of the Chosen disrupted (90%)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			719, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646444090,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [17]
-		{
-			"92% House of the Chosen disrupted (92%)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			724, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646444105,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [18]
-		{
-			"96% House of the Chosen disrupted (96%)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			725, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646444106,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [19]
-		{
-			"98% House of the Chosen disrupted (98%)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			728, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646444109,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [20]
-		{
-			"1/1 Defeat the powerful foes of Maldraxxus", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			735, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646444113,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [21]
-		{
-			"100% House of the Chosen disrupted (100%)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			736, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646444113,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [22]
-		{
-			"75% Maldraxxus Defended (75%)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			737, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646444114,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [23]
-		{
-			"Completed: Chosen Champions", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			739, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646444114,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [24]
-		{
-			"thanks om", -- [1]
-			"Trabajo-Lightninghoof", -- [2]
-			"", -- [3]
-			"1. General - Maldraxxus", -- [4]
-			"Trabajo-Lightninghoof", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Maldraxxus", -- [9]
-			0, -- [10]
-			62, -- [11]
-			"Player-163-07F448D8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edTrabajo-Lightninghoof|r",
-			[51] = 1646476250,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
-		{
-			"1/5 Devourer Rifts closed", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			449, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646479656,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [26]
-		{
-			"2/5 Devourer Rifts closed", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			452, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646479660,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [27]
-		{
-			"3/5 Devourer Rifts closed", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			485, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646479681,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [28]
-		{
-			"4/5 Devourer Rifts closed", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			501, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646479696,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [29]
-		{
-			"5/5 Devourer Rifts closed", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			532, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646479715,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [30]
-		{
-			"Completed: Who Devours the Devourers?", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			533, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646479716,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [31]
-		{
-			"thanks gang", -- [1]
-			"Garstov-Illidan", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Garstov-Illidan", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			535, -- [11]
-			"Player-57-0B340DE7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Garstov-Illidan|r",
-			[51] = 1646479718,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [32]
-		{
-			"WTS |cffff8000|Hitem:187707::::::::60:577:::::::::|h[Esencia de progenitor]|h|r", -- [1]
-			"Orlianys-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Orlianys-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			388, -- [11]
-			"Player-75-0EA0B277", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Orlianys|r",
-			[51] = 1646484197,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
-		{
-			"Ha-Li 99.96% ~(36.28, 35.72) |cffffff00|Hworldmap:1530:3628:3572|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"1. General - Vale of Eternal Blossoms", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Vale of Eternal Blossoms", -- [9]
-			0, -- [10]
-			398, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646484389,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
-		{
-			"WTS |cffff8000|Hitem:187707::::::::60:577:::::::::|h[Esencia de progenitor]|h|r", -- [1]
-			"Orlianys-ArgentDawn", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Orlianys-ArgentDawn", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			418, -- [11]
-			"Player-75-0EA0B277", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Orlianys|r",
-			[51] = 1646484812,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
-		{
-			"yo", -- [1]
-			"Dregahh-EmeraldDream", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Dregahh-EmeraldDream", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1571, -- [11]
-			"Player-162-0B4F3E7E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cDregahh-EmeraldDream|r",
-			[51] = 1646497618,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [36]
-		{
-			"do the portals rotate every week?", -- [1]
-			"Dregahh-EmeraldDream", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Dregahh-EmeraldDream", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1572, -- [11]
-			"Player-162-0B4F3E7E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cDregahh-EmeraldDream|r",
-			[51] = 1646497626,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [37]
-		{
-			"Ha-Li 76.04% ~(31.6, 41.72) |cffffff00|Hworldmap:1530:3160:4172|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"1. General - Vale of Eternal Blossoms", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Vale of Eternal Blossoms", -- [9]
-			0, -- [10]
-			1624, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646498785,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
-		{
-			"/wave  /laugh  /dance  /sleep    /sigh", -- [1]
-			"Zoxxiz-ArgentDawn", -- [2]
-			"", -- [3]
-			"4. LookingForGroup", -- [4]
-			"Zoxxiz-ArgentDawn", -- [5]
-			"", -- [6]
-			26, -- [7]
-			4, -- [8]
-			"LookingForGroup", -- [9]
-			0, -- [10]
-			68, -- [11]
-			"Player-75-055FCE33", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff006fdcZoxxiz|r",
-			[51] = 1646787864,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:14306:Player-75-058380E2:1:3:8:22:4294967295:4294967295:4294967295:4294967295|h[Explore Revendreth]|h|r!", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			378, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646798530,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [40]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:15388:Player-75-058380E2:1:3:8:22:4294967295:4294967295:4294967295:4294967295|h[Shadowlands Explorer]|h|r!", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			380, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646798530,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [41]
-		{
-			"yay, tank dc", -- [1]
-			"Dernatt-Dragonblight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Dernatt-Dragonblight", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			842, -- [11]
-			"Player-114-07ED4598", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec6eaDernatt-Dragonblight|r",
-			[51] = 1646803163,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [42]
-		{
-			"May I please have |cff0070dd|Hitem:178818::::::::60:71::2:5:8134:6806:6652:1537:4785:1:28:748:::::|h[Halkias's Towering Pillars]|h|r if you don't need it?", -- [1]
-			"Xugaaz-WyrmrestAccord", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Xugaaz-WyrmrestAccord", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			1, -- [10]
-			911, -- [11]
-			"Player-1171-0821DA2C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cXugaaz-WyrmrestAccord|r",
-			[51] = 1646803400,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [43]
-		{
-			"yes", -- [1]
-			"Xugaaz-WyrmrestAccord", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Xugaaz-WyrmrestAccord", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			914, -- [11]
-			"Player-1171-0821DA2C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cXugaaz-WyrmrestAccord|r",
-			[51] = 1646803433,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [44]
-		{
-			"TY!", -- [1]
-			"Xugaaz-WyrmrestAccord", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Xugaaz-WyrmrestAccord", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			1, -- [10]
-			926, -- [11]
-			"Player-1171-0821DA2C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cXugaaz-WyrmrestAccord|r",
-			[51] = 1646803456,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [45]
-		{
-			"LUST", -- [1]
-			"Raonw-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Raonw-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			929, -- [11]
-			"Player-1427-0DB3D23A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cRaonw-Ragnaros|r",
-			[51] = 1646803503,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [46]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:14410:Player-75-058380E2:1:3:8:22:4294967295:4294967295:4294967295:4294967295|h[Heroic: Halls of Atonement]|h|r!", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			992, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646803836,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [47]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:15241:Player-75-058380E2:1:3:8:22:4294967295:4294967295:4294967295:4294967295|h[Renowned]|h|r!", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1046, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646804457,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [48]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:14798:Player-75-058380E2:1:3:8:22:4294967295:4294967295:4294967295:4294967295|h[Sojourner of Revendreth]|h|r!", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1097, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646805107,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [49]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:14310:Player-75-058380E2:1:3:9:22:4294967295:4294967295:4294967295:4294967295|h[Adventurer of Revendreth]|h|r!", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			181, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1646871393,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [50]
-		{
 			"Hopecrusher |cffffff00|Hworldmap:1525:5198:5179|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Sika-TheVentureCo", -- [2]
 			"", -- [3]
@@ -1122,7 +22,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaSika-TheVentureCo|r",
 			[51] = 1646872589,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [1]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14790:Player-75-058380E2:1:3:10:22:4294967295:4294967295:4294967295:4294967295|h[Covenant Campaign]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1144,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1646960647,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [52]
+		}, -- [2]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14836:Player-75-058380E2:1:3:10:22:4294967295:4294967295:4294967295:4294967295|h[Unwavering Bond]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1166,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1646960817,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [53]
+		}, -- [3]
 		{
 			"Domi Pro is about to be pulled.", -- [1]
 			"Hightail-Lightninghoof", -- [2]
@@ -1188,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Hightail-Lightninghoof|r",
 			[51] = 1646970375,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [4]
 		{
 			"anyone know when Zelnithop was last up?", -- [1]
 			"Shaydon-TheScryers", -- [2]
@@ -1210,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Shaydon-TheScryers|r",
 			[51] = 1646972688,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [5]
 		{
 			"relic gorger up |cffffff00|Hworldmap:1961:5677:4073|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Augren-ArgentDawn", -- [2]
@@ -1232,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Augren|r",
 			[51] = 1646973948,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [6]
 		{
 			"way 54.80, 20.34", -- [1]
 			"Augren-ArgentDawn", -- [2]
@@ -1254,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Augren|r",
 			[51] = 1646975439,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [7]
 		{
 			"Dominated Protector (232.56k/232.56k 100.00%) 52.98 21.80 |cffffff00|Hworldmap:1961:5297:2179|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Athorne-EarthenRing", -- [2]
@@ -1276,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Athorne-EarthenRing|r",
 			[51] = 1647037987,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
+		}, -- [8]
 		{
 			"teleporter up ", -- [1]
 			"Lyloth-Ravenholdt", -- [2]
@@ -1298,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Lyloth-Ravenholdt|r",
 			[51] = 1647038670,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [9]
 		{
 			"|cffffff00|Hworldmap:1961:3994:5030|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Lyloth-Ravenholdt", -- [2]
@@ -1320,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Lyloth-Ravenholdt|r",
 			[51] = 1647038689,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [10]
 		{
 			"haha cute name for a piece of gear |cffa335ee|Hitem:187391::::::::60:252::28:4:7695:6652:1492:6646:1:28:2043:::::|h[Yarxhov's Rib-Cage]|h|r", -- [1]
 			"Lyloth-Ravenholdt", -- [2]
@@ -1342,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Lyloth-Ravenholdt|r",
 			[51] = 1647038905,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [11]
 		{
 			"Kroke the Tormented (930.24k/930.24k 100.00%) 58.85 37.01 |cffffff00|Hworldmap:1961:5884:3700|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Athorne-EarthenRing", -- [2]
@@ -1364,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Athorne-EarthenRing|r",
 			[51] = 1647039174,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [12]
 		{
 			"need help?", -- [1]
 			"Lyloth-Ravenholdt", -- [2]
@@ -1386,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Lyloth-Ravenholdt|r",
 			[51] = 1647039226,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [13]
 		{
 			"starting fleshwing", -- [1]
 			"Lyloth-Ravenholdt", -- [2]
@@ -1408,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Lyloth-Ravenholdt|r",
 			[51] = 1647039291,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [14]
 		{
 			"fleshwing event is up", -- [1]
 			"Athorne-EarthenRing", -- [2]
@@ -1430,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Athorne-EarthenRing|r",
 			[51] = 1647039301,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [15]
 		{
 			"Fleshwing (232.56k/232.56k 100.00%) 60.14 43.51 |cffffff00|Hworldmap:1961:6013:4350|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Athorne-EarthenRing", -- [2]
@@ -1452,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Athorne-EarthenRing|r",
 			[51] = 1647039454,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [16]
 		{
 			"Fleshwing died at 17:58 server time!", -- [1]
 			"Athorne-EarthenRing", -- [2]
@@ -1474,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Athorne-EarthenRing|r",
 			[51] = 1647039523,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [17]
 		{
 			"Rift Boss at Fleshwing", -- [1]
 			"Athorne-EarthenRing", -- [2]
@@ -1496,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Athorne-EarthenRing|r",
 			[51] = 1647039538,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [18]
 		{
 			"Man I don't know what to main this tier", -- [1]
 			"Sylphrenaa-TheVentureCo", -- [2]
@@ -1518,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeSylphrenaa-TheVentureCo|r",
 			[51] = 1647039538,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [19]
 		{
 			"Towering Exterminator (1.16m/1.16m 100.00%) 60.05 44.47 |cffffff00|Hworldmap:1961:6004:4446|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Athorne-EarthenRing", -- [2]
@@ -1540,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Athorne-EarthenRing|r",
 			[51] = 1647039593,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [20]
 		{
 			"Towering Exterminator died at 18:01 server time!", -- [1]
 			"Athorne-EarthenRing", -- [2]
@@ -1562,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Athorne-EarthenRing|r",
 			[51] = 1647036088,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [21]
 		{
 			"I am woman!  I am |cff71d5ff|Hspell:72286:0|h[Invincible]|h|r!", -- [1]
 			"Lyloth-Ravenholdt", -- [2]
@@ -1584,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Lyloth-Ravenholdt|r",
 			[51] = 1647039899,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [22]
 		{
 			"suck it Kroke", -- [1]
 			"Lyloth-Ravenholdt", -- [2]
@@ -1606,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Lyloth-Ravenholdt|r",
 			[51] = 1647039920,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [23]
 		{
 			"Kroke is up", -- [1]
 			"Nächtzëhrër-EmeraldDream", -- [2]
@@ -1628,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edNächtzëhrër-EmeraldDream|r",
 			[51] = 1647041025,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [24]
 		{
 			"i just spawned him", -- [1]
 			"Nächtzëhrër-EmeraldDream", -- [2]
@@ -1650,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edNächtzëhrër-EmeraldDream|r",
 			[51] = 1647041041,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [25]
 		{
 			"Dominated Protector (232.56k/232.56k 100.00%) 52.60 21.90 |cffffff00|Hworldmap:1961:5259:2189|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Chuva-EarthenRing", -- [2]
@@ -1672,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Chuva-EarthenRing|r",
 			[51] = 1647041585,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [26]
 		{
 			"killing balthier slowly", -- [1]
 			"Tillt-EmeraldDream", -- [2]
@@ -1694,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Tillt-EmeraldDream|r",
 			[51] = 1647042204,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [27]
 		{
 			"working on tormentors of torghast if anyone wants to join", -- [1]
 			"Jivanta-EmeraldDream", -- [2]
@@ -1716,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Jivanta-EmeraldDream|r",
 			[51] = 1647042223,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [28]
 		{
 			"can someone invite me to a group to see if I can un-bug my covenant campaign for venthyr. Prince Renathal is not showing up in sinfall for me", -- [1]
 			"Agirlkilledu-EmeraldDream", -- [2]
@@ -1738,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Agirlkilledu-EmeraldDream|r",
 			[51] = 1647053500,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [29]
 		{
 			"Summoning WOrldedge Gorger soon", -- [1]
 			"Noparole-EmeraldDream", -- [2]
@@ -1760,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cNoparole-EmeraldDream|r",
 			[51] = 1647054813,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [30]
 		{
 			"looking for a couple dps for HOA 0 its ok if your a bit shitty we are to", -- [1]
 			"Blkdth-Ravenholdt", -- [2]
@@ -1782,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcBlkdth-Ravenholdt|r",
 			[51] = 1647055162,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [31]
 		{
 			"Summoning WOrldedge Gorger", -- [1]
 			"Noparole-EmeraldDream", -- [2]
@@ -1804,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cNoparole-EmeraldDream|r",
 			[51] = 1647055336,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [32]
 		{
 			"can you not stand in that shit ", -- [1]
 			"Separatist-Dragonblight", -- [2]
@@ -1826,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeSeparatist-Dragonblight|r",
 			[51] = 1647055827,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [83]
+		}, -- [33]
 		{
 			"dude wtf ", -- [1]
 			"Separatist-Dragonblight", -- [2]
@@ -1848,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeSeparatist-Dragonblight|r",
 			[51] = 1647055938,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [84]
+		}, -- [34]
 		{
 			"we have to go back and kill nest", -- [1]
 			"Peroyjenkins-Mal'Ganis", -- [2]
@@ -1870,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Peroyjenkins-Mal'Ganis|r",
 			[51] = 1647056032,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [85]
+		}, -- [35]
 		{
 			"weare in combat ", -- [1]
 			"Separatist-Dragonblight", -- [2]
@@ -1892,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeSeparatist-Dragonblight|r",
 			[51] = 1647056033,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [86]
+		}, -- [36]
 		{
 			"somone pulled a damn nest or something ", -- [1]
 			"Separatist-Dragonblight", -- [2]
@@ -1914,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeSeparatist-Dragonblight|r",
 			[51] = 1647056044,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [87]
+		}, -- [37]
 		{
 			"wtf is this ", -- [1]
 			"Separatist-Dragonblight", -- [2]
@@ -1936,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeSeparatist-Dragonblight|r",
 			[51] = 1647056143,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [88]
+		}, -- [38]
 		{
 			"gotta dispell it", -- [1]
 			"Peroyjenkins-Mal'Ganis", -- [2]
@@ -1958,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Peroyjenkins-Mal'Ganis|r",
 			[51] = 1647056159,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [89]
+		}, -- [39]
 		{
 			"you cant ", -- [1]
 			"Separatist-Dragonblight", -- [2]
@@ -1980,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeSeparatist-Dragonblight|r",
 			[51] = 1647056167,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [90]
+		}, -- [40]
 		{
 			"walk through some acid or something ", -- [1]
 			"Separatist-Dragonblight", -- [2]
@@ -2002,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeSeparatist-Dragonblight|r",
 			[51] = 1647056190,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [91]
+		}, -- [41]
 		{
 			"need those?", -- [1]
 			"Peroyjenkins-Mal'Ganis", -- [2]
@@ -2024,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Peroyjenkins-Mal'Ganis|r",
 			[51] = 1647056703,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [92]
+		}, -- [42]
 		{
 			"May I please have |cff0070dd|Hitem:178931::::::::60:71::2:6:8139:6806:6652:7580:1537:4785:1:28:748:::::|h[Scarred Bloodbound Girdle]|h|r if you don't need it?", -- [1]
 			"Peroyjenkins-Mal'Ganis", -- [2]
@@ -2046,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Peroyjenkins-Mal'Ganis|r",
 			[51] = 1647057012,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [93]
+		}, -- [43]
 		{
 			"TY", -- [1]
 			"Peroyjenkins-Mal'Ganis", -- [2]
@@ -2068,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Peroyjenkins-Mal'Ganis|r",
 			[51] = 1647057031,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [94]
+		}, -- [44]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14414:Player-75-058380E2:1:3:11:22:4294967295:4294967295:4294967295:4294967295|h[Heroic: Plaguefall]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2090,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1647057238,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [95]
+		}, -- [45]
 		{
 			"ty", -- [1]
 			"Separatist-Dragonblight", -- [2]
@@ -2112,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeSeparatist-Dragonblight|r",
 			[51] = 1647057248,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [96]
+		}, -- [46]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14197:Player-75-058380E2:1:3:11:22:4294967295:4294967295:4294967295:4294967295|h[Sanguine Depths]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2134,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1647059811,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [97]
+		}, -- [47]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14198:Player-75-058380E2:1:3:11:22:4294967295:4294967295:4294967295:4294967295|h[Heroic: Sanguine Depths]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2156,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1647059811,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [98]
+		}, -- [48]
 		{
 			"Looking for LW for 291 mail shoulders. My mats, generous tip. pst", -- [1]
 			"Ayrn-ArgentDawn", -- [2]
@@ -2178,31 +1078,1131 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcAyrn|r",
 			[51] = 1647060572,
 			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [49]
+		{
+			"LFG 4 RFC", -- [1]
+			"Beyondburger-ArgentDawn", -- [2]
+			"", -- [3]
+			"4. LookingForGroup", -- [4]
+			"Beyondburger-ArgentDawn", -- [5]
+			"", -- [6]
+			26, -- [7]
+			4, -- [8]
+			"LookingForGroup", -- [9]
+			0, -- [10]
+			524, -- [11]
+			"Player-75-0EAF82AE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeBeyondburger|r",
+			[51] = 1649626403,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [50]
+		{
+			"Consumption 100.00% ~(52.34, 40.33) |cffffff00|Hworldmap:1961:5234:4032|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			710, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1649628190,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [51]
+		{
+			"hes not big enough ", -- [1]
+			"Äphrødite-Ravenholdt", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Äphrødite-Ravenholdt", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			712, -- [11]
+			"Player-163-0A9F8D29", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Äphrødite-Ravenholdt|r",
+			[51] = 1649628221,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [52]
+		{
+			"wait ", -- [1]
+			"Äphrødite-Ravenholdt", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Äphrødite-Ravenholdt", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			713, -- [11]
+			"Player-163-0A9F8D29", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Äphrødite-Ravenholdt|r",
+			[51] = 1649628265,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [53]
+		{
+			"green and 42", -- [1]
+			"Äphrødite-Ravenholdt", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Äphrødite-Ravenholdt", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			714, -- [11]
+			"Player-163-0A9F8D29", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Äphrødite-Ravenholdt|r",
+			[51] = 1649628275,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [54]
+		{
+			"Consumption 96.79% ~(51.65, 41.34) |cffffff00|Hworldmap:1961:5165:4134|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			720, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1649628365,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [55]
+		{
+			"nice and big lol ", -- [1]
+			"Äphrødite-Ravenholdt", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Äphrødite-Ravenholdt", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			721, -- [11]
+			"Player-163-0A9F8D29", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Äphrødite-Ravenholdt|r",
+			[51] = 1649628378,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [56]
+		{
+			"Yarxhov the Pillager 72.73% ~(52.23, 33.38) |cffffff00|Hworldmap:1961:5223:3338|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			758, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1649628868,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [57]
+		{
+			"Has anyone seen Maelie today? :-)", -- [1]
+			"Wolfdaance-TwistingNether", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Wolfdaance-TwistingNether", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			759, -- [11]
+			"Player-163-0AA1E8EF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Wolfdaance-TwistingNether|r",
+			[51] = 1649628890,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [58]
+		{
+			"lol", -- [1]
+			"Beyondburger-ArgentDawn", -- [2]
+			"", -- [3]
+			"4. LookingForGroup", -- [4]
+			"Beyondburger-ArgentDawn", -- [5]
+			"", -- [6]
+			26, -- [7]
+			4, -- [8]
+			"LookingForGroup", -- [9]
+			0, -- [10]
+			768, -- [11]
+			"Player-75-0EAF82AE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeBeyondburger|r",
+			[51] = 1649629031,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [59]
+		{
+			"im pulling the relic breaker krelva", -- [1]
+			"Äphrødite-Ravenholdt", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Äphrødite-Ravenholdt", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			779, -- [11]
+			"Player-163-0A9F8D29", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Äphrødite-Ravenholdt|r",
+			[51] = 1649629146,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [60]
+		{
+			"Fleshwing 98.08% ~(59.86, 43.62) |cffffff00|Hworldmap:1961:5985:4362|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			808, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1649629289,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [61]
+		{
+			"Relic Breaker Krelva 100.00% ~(23.21, 39.93) |cffffff00|Hworldmap:1961:2321:3993|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			946, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1649630479,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [62]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:15053:Player-75-058380E2:1:4:10:22:4294967295:4294967295:4294967295:4294967295|h[Explore Korthia]|h|r!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			974, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1649630927,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [63]
+		{
+			"Stygian Stonecrusher 97.48% ~(45.68, 79.45) |cffffff00|Hworldmap:1961:4568:7945|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			1061, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1649631579,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [64]
+		{
+			"Screaming Shade 10.05% ~(45.8, 42.53) |cffffff00|Hworldmap:1961:4580:4253|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			1153, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1649632669,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [65]
+		{
+			"Dominated Protector 100.00% ~(52.53, 20.07) |cffffff00|Hworldmap:1961:5253:2007|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			1174, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1649632928,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [66]
+		{
+			"anyone find maelie?", -- [1]
+			"Splaterefect-Maelstrom", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Splaterefect-Maelstrom", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			1225, -- [11]
+			"Player-163-09EC3739", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cSplaterefect-Maelstrom|r",
+			[51] = 1649633785,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [67]
+		{
+			"Ve'rayn 100.00% ~(42.44, 59.78) |cffffff00|Hworldmap:1961:4244:5978|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			1272, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1649634631,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [68]
+		{
+			"Towering Exterminator 85.89% ~(47.94, 44.53) |cffffff00|Hworldmap:1961:4794:4453|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			1281, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1649634778,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [69]
+		{
+			"pulling the deadsoul hatcher out of the rift ", -- [1]
+			"Äphrødite-Ravenholdt", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Äphrødite-Ravenholdt", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			1344, -- [11]
+			"Player-163-0A9F8D29", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Äphrødite-Ravenholdt|r",
+			[51] = 1649635258,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [70]
+		{
+			"Wild Worldcracker 97.95% ~(47.34, 36.01) |cffffff00|Hworldmap:1961:4734:3601|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			1364, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1649635406,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [71]
+		{
+			"Konthrogz the Obliterator 98.90% ~(47.73, 35.53) |cffffff00|Hworldmap:1961:4773:3553|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			1394, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1649635534,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [72]
+		{
+			"Malbog 49.46% ~(44.73, 29.02) |cffffff00|Hworldmap:1961:4473:2902|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			1402, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1649635645,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [73]
+		{
+			"bout to pull relic breaker lady", -- [1]
+			"Keilana-Ravenholdt", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Keilana-Ravenholdt", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			1440, -- [11]
+			"Player-163-0A96A01E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaKeilana-Ravenholdt|r",
+			[51] = 1649635882,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [74]
+		{
+			"ty", -- [1]
+			"Keilana-Ravenholdt", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Keilana-Ravenholdt", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			1520, -- [11]
+			"Player-163-0A96A01E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaKeilana-Ravenholdt|r",
+			[51] = 1649636587,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [75]
+		{
+			"Konthrogz the Obliterator 100.00% ~(57.76, 26.5) |cffffff00|Hworldmap:1961:5776:2649|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			1, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1649647889,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [76]
+		{
+			"Yarxhov the Pillager 100.00% ~(52.61, 32.31) |cffffff00|Hworldmap:1961:5261:3231|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			150, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1649650122,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [77]
+		{
+			"Consumption 100.00% ~(49.91, 42.6) |cffffff00|Hworldmap:1961:4991:4260|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			154, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1649650343,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [78]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:14659:Player-75-058380E2:1:4:10:22:4294967295:4294967295:4294967295:4294967295|h[Handling His Henchmen]|h|r!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			174, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1649650714,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [79]
+		{
+			"Consumption 100.00% ~(52.6, 40.62) |cffffff00|Hworldmap:1961:5260:4062|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			254, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1649720270,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [80]
+		{
+			"Consumption 100.00% ~(52.7, 40.93) |cffffff00|Hworldmap:1961:5270:4093|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Sanivan-KirinTor", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Sanivan-KirinTor", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			255, -- [11]
+			"Player-1071-03088A15", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaSanivan-KirinTor|r",
+			[51] = 1649720305,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [81]
+		{
+			"reliwink up", -- [1]
+			"Mixaplix-EmeraldDream", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Mixaplix-EmeraldDream", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			256, -- [11]
+			"Player-162-0982F490", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Mixaplix-EmeraldDream|r",
+			[51] = 1649720314,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [82]
+		{
+			"|cffffff00|Hworldmap:1961:5586:6667|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r mount chance", -- [1]
+			"Mixaplix-EmeraldDream", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Mixaplix-EmeraldDream", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			265, -- [11]
+			"Player-162-0982F490", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Mixaplix-EmeraldDream|r",
+			[51] = 1649720408,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [83]
+		{
+			"Screaming Shade 73.52% ~(44.73, 43.06) |cffffff00|Hworldmap:1961:4473:4306|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			268, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1649720460,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [84]
+		{
+			"Wild Worldcracker 95.83% ~(48.35, 35.35) |cffffff00|Hworldmap:1961:4835:3535|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			322, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1649720958,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [85]
+		{
+			"Dominated Protector 99.42% ~(52.55, 21.02) |cffffff00|Hworldmap:1961:5255:2102|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			400, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1649721811,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [86]
+		{
+			"Towering Exterminator 100.00% ~(49.36, 33.73) |cffffff00|Hworldmap:1961:4936:3373|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"1. General - Korthia", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Korthia", -- [9]
+			0, -- [10]
+			426, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1649722121,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [87]
+		{
+			"ok need 3 more anyone else please", -- [1]
+			"Vikinghealer-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Vikinghealer-ArgentDawn", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1493, -- [11]
+			"Player-75-0EB04352", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeVikinghealer|r",
+			[51] = 1650157946,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [88]
+		{
+			"for what?", -- [1]
+			"Pikogo-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Pikogo-ArgentDawn", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1498, -- [11]
+			"Player-75-0EAFCE0C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Pikogo|r",
+			[51] = 1650158006,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [89]
+		{
+			"to sign my guild charter", -- [1]
+			"Vikinghealer-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Vikinghealer-ArgentDawn", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1499, -- [11]
+			"Player-75-0EB04352", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeVikinghealer|r",
+			[51] = 1650158021,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [90]
+		{
+			"i can sign it after i train J. Riding real quik", -- [1]
+			"Pikogo-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Pikogo-ArgentDawn", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1500, -- [11]
+			"Player-75-0EAFCE0C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Pikogo|r",
+			[51] = 1650158055,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [91]
+		{
+			"ok where are you", -- [1]
+			"Pikogo-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Pikogo-ArgentDawn", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1501, -- [11]
+			"Player-75-0EAFCE0C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Pikogo|r",
+			[51] = 1650158067,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [92]
+		{
+			"org", -- [1]
+			"Vikinghealer-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Vikinghealer-ArgentDawn", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1502, -- [11]
+			"Player-75-0EB04352", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeVikinghealer|r",
+			[51] = 1650158080,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [93]
+		{
+			"ok i need two more for the guild charter please", -- [1]
+			"Vikinghealer-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Vikinghealer-ArgentDawn", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1536, -- [11]
+			"Player-75-0EB04352", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeVikinghealer|r",
+			[51] = 1650158227,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [94]
+		{
+			"when you at?", -- [1]
+			"Montare-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Montare-ArgentDawn", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1537, -- [11]
+			"Player-75-0EAF18C6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Montare|r",
+			[51] = 1650158254,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [95]
+		{
+			"org", -- [1]
+			"Vikinghealer-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Vikinghealer-ArgentDawn", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1538, -- [11]
+			"Player-75-0EB04352", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeVikinghealer|r",
+			[51] = 1650158258,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			"when in?", -- [1]
+			"Montare-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Montare-ArgentDawn", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1539, -- [11]
+			"Player-75-0EAF18C6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Montare|r",
+			[51] = 1650158266,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"ill come to ui", -- [1]
+			"Vikinghealer-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Vikinghealer-ArgentDawn", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1540, -- [11]
+			"Player-75-0EB04352", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeVikinghealer|r",
+			[51] = 1650158292,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"u", -- [1]
+			"Vikinghealer-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Vikinghealer-ArgentDawn", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1541, -- [11]
+			"Player-75-0EB04352", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeVikinghealer|r",
+			[51] = 1650158295,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},
 	["CliqueDatatext"] = {
 	},
 	["ChatEditHistory"] = {
-		"/paste", -- [1]
-		"/fishingbuddy", -- [2]
-		"/cw Mhercurio-Quel'Thalas ok thanks anyway", -- [3]
-		"/npcscan add 66935 Clamstok", -- [4]
-		"/npcscan add 66934 Damlak", -- [5]
-		"/s nice", -- [6]
-		"/tsm", -- [7]
-		"/p if not will try again later", -- [8]
-		"/invite lillys-blackhand", -- [9]
-		"/s launch fireworks out the launchers he raises out the water and we kill him", -- [10]
-		"/npcscan add 66932 Akkalou", -- [11]
-		"/s two druids just went to get some", -- [12]
-		"/p well looks like its slow right now good luck will try again later", -- [13]
-		"/p np", -- [14]
-		"/p lets go", -- [15]
-		"/dance", -- [16]
-		"/hekili", -- [17]
-		"/cw Xugaaz-WyrmrestAccord TY!", -- [18]
-		"/cw Peroyjenkins-Mal'Ganis TY", -- [19]
-		"/opie", -- [20]
+		"/npcscan add 66935 Clamstok", -- [1]
+		"/npcscan add 66934 Damlak", -- [2]
+		"/s nice", -- [3]
+		"/tsm", -- [4]
+		"/p if not will try again later", -- [5]
+		"/invite lillys-blackhand", -- [6]
+		"/s launch fireworks out the launchers he raises out the water and we kill him", -- [7]
+		"/npcscan add 66932 Akkalou", -- [8]
+		"/s two druids just went to get some", -- [9]
+		"/p well looks like its slow right now good luck will try again later", -- [10]
+		"/p np", -- [11]
+		"/p lets go", -- [12]
+		"/dance", -- [13]
+		"/hekili", -- [14]
+		"/cw Xugaaz-WyrmrestAccord TY!", -- [15]
+		"/cw Peroyjenkins-Mal'Ganis TY", -- [16]
+		"/opie", -- [17]
+		"/pet", -- [18]
+		"/hug", -- [19]
+		"/love", -- [20]
 	},
 	["ConvertKeybindings"] = true,
 }

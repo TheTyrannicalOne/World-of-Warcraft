@@ -2,7 +2,7 @@
 ## Title: HandyNotes_LegionTreasures
 ## Notes: Where are the hidden treasures in Legion?
 ## Author: Kemayo
-## Version: v24
+## Version: v25
 ## DefaultState: enabled
 ## X-Category: Map
 ## X-eMail: kemayo @ gmail DOT com
@@ -17,6 +17,8 @@ handler\handler.lua
 handler\config.lua
 handler\overlay.lua
 handler\routes.xml
+
+legion.lua
 
 zones\BrokenIsles.lua
 zones\Dalaran.lua
