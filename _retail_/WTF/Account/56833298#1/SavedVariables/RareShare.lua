@@ -4,26 +4,26 @@ RareShareDB = {
 	},
 	["Config"] = {
 		["MapPin"] = true,
-		["Sound"] = {
-			["Rares"] = true,
-			["Master"] = true,
-			["Duplicates"] = true,
-		},
+		["ChatAnnounce"] = true,
 		["TomTom"] = {
 			["Rares"] = true,
 			["Master"] = true,
 			["Duplicates"] = true,
 		},
-		["ChatAnnounce"] = true,
-		["OnDeath"] = false,
 		["CChannel"] = {
-			["CName"] = "General - Korthia",
 			["CID"] = 1,
+			["CName"] = "General - Korthia",
+		},
+		["OnDeath"] = false,
+		["Sound"] = {
+			["Rares"] = true,
+			["Master"] = true,
+			["Duplicates"] = true,
 		},
 		["Duplicates"] = true,
 	},
 	["LastAnnounce"] = {
-		["Time"] = 1649722120,
-		["ID"] = 179760,
+		["Time"] = 1650513389,
+		["ID"] = 179108,
 	},
 }

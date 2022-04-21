@@ -1,36 +1,16 @@
-tag d7ac94ebaa78e4cf02598f41d312733423c4ed4b 9.2.5-1
+lightweight tag 214c448d78c6171537618dc736e0d2000bfe35ca 9.2.5-2
 Author:	Xuerian <xuerian@gmail.com>
-Date:	Sat Apr 16 13:09:50 2022 -0400
+Date:	Wed Apr 20 13:10:54 2022 -0400
 
-TOC bump, LiteStep masque SKIN_TWEAK (Thanks Amenitra)
-
-commit e04b0e45f521a4ca719ebf1428504ce7c5c62a84
+commit 214c448d78c6171537618dc736e0d2000bfe35ca
 Author: Xuerian <xuerian@gmail.com>
-Date:   Sat Apr 16 13:08:09 2022 -0400
+Date:   Wed Apr 20 13:10:54 2022 -0400
 
-    9.2.5 toc bump
+    Skins: Slice by sixths instead of thirds, avoiding overlapping corner tiles
 
-commit f9e98a49afce432ad274fbabfe32d8339b4e528b
+commit 9f8dd83d03a620364a09558e66a703e3232a44c7
 Author: Xuerian <xuerian@gmail.com>
-Date:   Sat Apr 16 13:02:36 2022 -0400
+Date:   Tue Apr 19 18:51:14 2022 -0400
 
-    frame: whitespace cleanup
-
-commit 8a19bf4cea40afd27cb8b56a287d37efc55198ed
-Author: Xuerian <xuerian@gmail.com>
-Date:   Sat Apr 16 12:58:36 2022 -0400
-
-    SKIN_TWEAK for LiteStep/XLT
-
-commit 28740f8c64db3dc6374c3327cd62b3391a1e69f8
-Author: Xuerian <xuerian@gmail.com>
-Date:   Sat Apr 16 12:56:49 2022 -0400
-
-    options: Cleanup
-
-commit 077f34962e15e08dac21e2ff2a4b1ace0d35abd9
-Author: Xuerian <xuerian@gmail.com>
-Date:   Fri Apr 15 15:28:40 2022 -0400
-
-    skins.lua: cleanup
+    cleanup
 

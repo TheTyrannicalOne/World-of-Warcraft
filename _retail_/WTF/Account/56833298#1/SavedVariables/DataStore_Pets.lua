@@ -32,17 +32,17 @@ DataStore_PetsDB = {
 			["Default.Dalaran.Illingrath"] = {
 				["lastUpdate"] = 1650157086,
 			},
-			["Default.Dalaran.Thorinbane"] = {
-				["lastUpdate"] = 1648345048,
-			},
 			["Default.Zul'jin.Zulbathal"] = {
 				["lastUpdate"] = 1650149500,
+			},
+			["Default.Dalaran.Thorinbane"] = {
+				["lastUpdate"] = 1648345048,
 			},
 			["Default.Dalaran.Varlouris"] = {
 				["lastUpdate"] = 1648343288,
 			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["lastUpdate"] = 1650157826,
+				["lastUpdate"] = 1650519374,
 			},
 		},
 		["Reference"] = {
@@ -58,12 +58,13 @@ DataStore_PetsDB = {
 				[179835] = 90206,
 				[335087] = 171719,
 				[135265] = 68663,
+				[334987] = 171667,
 				[334143] = 171231,
 				[318876] = 163897,
-				[135261] = 68666,
-				[335056] = 171697,
-				[179831] = 90202,
 				[335755] = 171984,
+				[179831] = 90202,
+				[335056] = 171697,
+				[135261] = 68666,
 			},
 		},
 	},

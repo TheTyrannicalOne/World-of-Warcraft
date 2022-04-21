@@ -1,81 +1,77 @@
 
 MasterPlanAG = {
-	["IgnoreRewards"] = {
-	},
-	["Argent Dawn"] = {
-		["Shanyt"] = {
-			["class"] = "WARRIOR",
-			["summary"] = {
-				["lastOilTime"] = 1650157942,
-				["inProgress"] = {
-					[728] = 1650159751,
-					[457] = 1650186698,
-					[309] = 1650179536,
-					[678] = 1650201071,
-					[326] = 1650186710,
-					[194] = 1650163321,
-					[651] = 1650159756,
-					[737] = 1650158403,
-					[391] = 1650172314,
-					[677] = 1650193917,
-					[179] = 1650161524,
-					[259] = 1650172339,
-					[200] = 1650160583,
-				},
-				["ti3"] = 127855,
-				["ti2"] = 122486,
-				["tt1"] = 1650066434,
-				["ti1"] = 118531,
-				["tt3"] = true,
-				["tt2"] = 1650160441,
-			},
-			["curOil"] = 97820,
-			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1649718931,
-			["curRes"] = 4406,
+	["Zul'jin"] = {
+		["Zulbathal"] = {
+			["class"] = "DRUID",
 			["faction"] = "Horde",
 		},
 	},
 	["Black Dragonflight"] = {
 		["Durlok"] = {
-			["faction"] = "Horde",
 			["class"] = "DRUID",
+			["faction"] = "Horde",
 		},
 	},
 	["Dalaran"] = {
 		["Illingrath"] = {
-			["class"] = "DEMONHUNTER",
 			["faction"] = "Alliance",
+			["class"] = "DEMONHUNTER",
 		},
 		["Tendralas"] = {
-			["class"] = "PRIEST",
 			["faction"] = "Alliance",
+			["class"] = "PRIEST",
 		},
 		["Avisar"] = {
-			["faction"] = "Alliance",
 			["class"] = "PALADIN",
+			["faction"] = "Alliance",
 		},
 		["Thorinbane"] = {
-			["faction"] = "Alliance",
 			["class"] = "WARRIOR",
+			["faction"] = "Alliance",
 		},
 		["Rotclaugh"] = {
-			["faction"] = "Alliance",
 			["class"] = "DEATHKNIGHT",
+			["faction"] = "Alliance",
 		},
 		["Varlouris"] = {
-			["class"] = "SHAMAN",
 			["faction"] = "Alliance",
+			["class"] = "SHAMAN",
 		},
 		["Darnastris"] = {
-			["faction"] = "Alliance",
 			["class"] = "MAGE",
+			["faction"] = "Alliance",
 		},
 	},
-	["Zul'jin"] = {
-		["Zulbathal"] = {
+	["Argent Dawn"] = {
+		["Shanyt"] = {
+			["curOil"] = 97140,
+			["summary"] = {
+				["lastOilTime"] = 1650205749,
+				["tt2"] = 1650160441,
+				["tt3"] = 1650063435,
+				["ti1"] = 118531,
+				["tt1"] = 1650066434,
+				["ti3"] = 127855,
+				["inProgress"] = {
+					[260] = 1650220134,
+					[745] = 1650270549,
+					[184] = 1650218711,
+					[308] = 1650234508,
+					[539] = 1650270556,
+					[587] = 1650224119,
+					[258] = 1650234530,
+					[544] = 1650220159,
+					[572] = 1650231321,
+				},
+				["ti2"] = 122486,
+			},
 			["faction"] = "Horde",
-			["class"] = "DRUID",
+			["cacheSize"] = 1000,
+			["lastCacheTime"] = 1650216885,
+			["curRes"] = 5506,
+			["class"] = "WARRIOR",
 		},
+	},
+	["IgnoreRewards"] = {
 	},
 }

@@ -3,7 +3,7 @@
 ## Interface-BCC: 20502
 ## Title: XLoot Monitor
 ## Notes: A graphical presentation of items looted by yourself and your group
-## Version: 9.2.5-1
+## Version: 9.2.5-2
 ## Author: Xuerian
 ## X-Category: Inventory
 

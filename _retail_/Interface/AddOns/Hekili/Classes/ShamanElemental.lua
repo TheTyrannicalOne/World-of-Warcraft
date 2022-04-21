@@ -200,12 +200,6 @@ if UnitClassBase( "player" ) == "SHAMAN" then
             max_stack = 1,
         },
 
-        fleshcraft = {
-            id = 324631,
-            duration = 120,
-            max_stack = 1,
-        },
-
         frost_shock = {
             id = 196840,
             duration = 6,
@@ -1824,6 +1818,8 @@ if UnitClassBase( "player" ) == "SHAMAN" then
             channeled = true,
             cooldown = 0,
             gcd = "spell",
+
+            suffix = "(Heal)",
 
             startsCombat = false,
             texture = 3636849,
