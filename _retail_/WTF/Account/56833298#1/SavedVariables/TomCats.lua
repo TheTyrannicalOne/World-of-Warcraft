@@ -2,20 +2,6 @@
 TomCats_Account = {
 	["loveisintheair"] = {
 		["characters"] = {
-			["Player-75-058380E2"] = {
-				["bracelets"] = 0,
-				["class"] = "WARRIOR",
-				["boxes"] = 0,
-				["charms"] = 0,
-				["tokens"] = 109,
-				["level"] = 60,
-				["name"] = "Shanyt",
-				["faction"] = "Horde",
-				["completedDungeon"] = true,
-				["timestamp"] = 1645406972,
-				["canLootMount"] = true,
-				["realm"] = "ArgentDawn",
-			},
 			["Player-96-0CBEA15E"] = {
 				["bracelets"] = 0,
 				["class"] = "DRUID",
@@ -29,6 +15,20 @@ TomCats_Account = {
 				["level"] = 51,
 				["canLootMount"] = true,
 				["realm"] = "BlackDragonflight",
+			},
+			["Player-3683-0B9BB303"] = {
+				["bracelets"] = 0,
+				["class"] = "MAGE",
+				["boxes"] = 0,
+				["charms"] = 0,
+				["name"] = "Darnastris",
+				["timestamp"] = 1645403068,
+				["tokens"] = 102,
+				["faction"] = "Alliance",
+				["completedDungeon"] = true,
+				["level"] = 51,
+				["canLootMount"] = true,
+				["realm"] = "Dalaran",
 			},
 			["Player-3683-0C0E386E"] = {
 				["bracelets"] = 0,
@@ -86,26 +86,26 @@ TomCats_Account = {
 				["canLootMount"] = true,
 				["realm"] = "Dalaran",
 			},
-			["Player-3683-0B9BB303"] = {
+			["Player-75-058380E2"] = {
 				["bracelets"] = 0,
-				["class"] = "MAGE",
+				["class"] = "WARRIOR",
 				["boxes"] = 0,
 				["charms"] = 0,
-				["name"] = "Darnastris",
-				["timestamp"] = 1645403068,
-				["tokens"] = 102,
-				["faction"] = "Alliance",
+				["tokens"] = 109,
+				["level"] = 60,
+				["name"] = "Shanyt",
+				["faction"] = "Horde",
 				["completedDungeon"] = true,
-				["level"] = 51,
+				["timestamp"] = 1645406972,
 				["canLootMount"] = true,
-				["realm"] = "Dalaran",
+				["realm"] = "ArgentDawn",
 			},
 		},
 		["preferences"] = {
 		},
 	},
-	["discoveriesVersion"] = "2.4.8",
-	["lastVersionSeen"] = "2.4.8",
+	["discoveriesVersion"] = "2.4.9",
+	["lastVersionSeen"] = "2.4.9",
 	["preferences"] = {
 		["MapOptions"] = {
 			["iconScale"] = 1,

@@ -23,21 +23,21 @@ OmniCCDB = {
 		["Brotus - Argent Dawn"] = "Default",
 		["Shimzo - Zul'jin"] = "Default",
 		["Varlouris - Dalaran"] = "Default",
-		["Tinkster - Dalaran"] = "Default",
 		["Guufnah - Zul'jin"] = "Default",
+		["Okona - Zul'jin"] = "Default",
 		["Jingojaggot - Zul'jin"] = "Default",
 		["Fantastiburo - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Laymonan - Zul'jin"] = "Default",
-		["Serbitechna - Dalaran"] = "Default",
-		["Vadder - Argent Dawn"] = "Default",
-		["Datgore - Zul'jin"] = "Default",
 		["Tyran - Argent Dawn"] = "Default",
+		["Vadder - Argent Dawn"] = "Default",
+		["Serbitechna - Dalaran"] = "Default",
+		["Datgore - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
 		["Kotalkhan - Zul'jin"] = "Default",
 		["Abyronterner - Zul'jin"] = "Default",
-		["Okona - Zul'jin"] = "Default",
+		["Tinkster - Dalaran"] = "Default",
 		["Jasmoney - Zul'jin"] = "Default",
 		["Banesmuncy - Zul'jin"] = "Default",
 		["Mandles - Zul'jin"] = "Default",
@@ -51,11 +51,11 @@ OmniCCDB = {
 			["themes"] = {
 				["Default"] = {
 					["textStyles"] = {
+						["soon"] = {
+						},
 						["seconds"] = {
 						},
 						["minutes"] = {
-						},
-						["soon"] = {
 						},
 					},
 					["enableText"] = false,

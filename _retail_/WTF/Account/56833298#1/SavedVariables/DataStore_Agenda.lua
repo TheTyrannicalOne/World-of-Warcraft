@@ -16,7 +16,7 @@ DataStore_AgendaDB = {
 		["Options"] = {
 			["WeeklyResetHour"] = 6,
 			["WeeklyResetDay"] = 2,
-			["NextWeeklyReset"] = "2022-04-26",
+			["NextWeeklyReset"] = "2022-05-03",
 		},
 		["Characters"] = {
 			["Default.Dalaran.Avisar"] = {
@@ -47,7 +47,7 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1648343298,
 			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["lastUpdate"] = 1650519392,
+				["lastUpdate"] = 1651425518,
 			},
 		},
 	},

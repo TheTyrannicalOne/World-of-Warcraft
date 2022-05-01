@@ -1,3 +1,9 @@
+local TransmogDataProvider;
+do
+    local _, addon = ...
+    TransmogDataProvider = addon.TransmogDataProvider;
+end
+
 local Narci = Narci;
 
 local function GetItemIcon(itemID)
@@ -14,9 +20,18 @@ end
 local function HoldWeaponButton_OnClick(self)
 	local model = Narci:GetActiveActor();
 	self.isOn = not self.isOn;
-
 	if model.SetSheathed then
-		model:SetSheathed(not self.isOn);
+        local isSheathed = not model:GetSheathed();
+        self.isOn = not isSheathed;
+		model:SetSheathed(isSheathed);
+        if model.bowData then
+            if isSheathed then
+                model:SetItemTransmogInfo(model.bowData, 16);
+            else
+                model:SetItemTransmogInfo(model.bowData, 17); --swtich bow to the left hand
+                model:UndressSlot(16);
+            end
+        end
     elseif model.EquipItem then
 		if self.isOn then
             local weapons = model.equippedWeapons;
@@ -197,6 +212,7 @@ end
 function NarciPhotoModeWeaponFrameMixin:SetItemFromActor(actor)
     if actor then
         actor.isItemLoaded = true;
+        actor.bowData = nil;
         if actor.GetItemTransmogInfo then
             --New Method in 9.1.0   return ItemTransmogInfoMixin
             --DressUpModel / ModelSceneActor
@@ -212,6 +228,9 @@ function NarciPhotoModeWeaponFrameMixin:SetItemFromActor(actor)
                         name = sourceInfo.name;
                     else
                         itemID = 0;
+                    end
+                    if TransmogDataProvider:IsSourceBow(sourceID) then
+                        actor.bowData = transmogInfo;
                     end
                 else
                     itemID = 0;

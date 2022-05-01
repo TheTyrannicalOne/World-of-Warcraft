@@ -648,7 +648,7 @@ function NarciEquipmentTooltipMixin:DisplayItemData(link, itemData, slotID, visu
             if _G[k] and not match(k, "^EMPTY_SOCKET") then
                 statText = format("+%d %s", v, _G[k]);
                 self:AddLine(statText, GetColorByIndex(2));
-                print(k)
+                --print(k)  --special stats
             end
         end
     end

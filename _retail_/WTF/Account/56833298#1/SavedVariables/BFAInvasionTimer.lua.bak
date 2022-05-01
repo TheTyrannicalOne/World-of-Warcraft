@@ -53,6 +53,6 @@ BFAInvasionTimerDB = {
 	},
 }
 BFAInvasionData = {
-	1650495604, -- [1]
+	1651316403, -- [1]
 	6, -- [2]
 }

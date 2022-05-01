@@ -90,6 +90,7 @@ local AchievementOptions = {
     ["Theme"] = 1,
     ["IncompleteFirst"] = true,
     ["ShowRedMark"] = false,                        --Mark achievement that was not earned by me with a red cross
+    ["ReplaceToast"] = true,                        --Replace the original achievement toast
 };
 
 

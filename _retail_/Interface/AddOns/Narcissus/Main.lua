@@ -1556,7 +1556,7 @@ end
 local GetInventoryItemCooldown = GetInventoryItemCooldown;
 
 local function SetItemSocketingFramePosition(self)		--Let ItemSocketingFrame appear on the side of the slot
-	if ItemSocketingFrame then																		
+	if ItemSocketingFrame then
 		if self.GemSlot:IsShown() then
 			ItemSocketingFrame:Show()
 		else
@@ -2605,7 +2605,7 @@ SlotController.updateFrame:SetScript("OnUpdate", function(f, elapsed)
 	f.t = f.t + elapsed;
 	if f.t >= 0.05 then
 		f.t = 0;
-		if SlotController:Refresh( f.sequence[f.i], f.forceRefresh) then
+		if SlotController:Refresh(f.sequence[f.i], f.forceRefresh) then
 			f.i = f.i + 1;
 		else
 			f:Hide();
@@ -5947,31 +5947,8 @@ end
 
 ----------------------------------------------------------------------
 function Narci_SetActiveBorderTexture()
-	local themeName = NarciAPI.GetBorderThemeName();
-	local MinimapButton = MiniButton;
 	local minimapBackgroundSize = 42;
-	local slotWidth, slotHeight, iconSize, slotShadow, runePlateVisible;
-	local borderSize;
-	if themeName == "Dark" then
-		slotWidth = 70;
-		slotHeight = 72;
-		iconSize = 50;
-		borderSize = 128;
-		runePlateVisible = false;
-	else
-		slotWidth = 64;
-		slotHeight = 68;
-		iconSize = 48;
-		borderSize = 64;
-		runePlateVisible = true;
-	end
 
-	for slotID, slotButton in pairs(slotTable) do
-		--slotButton.RuneSlot.Background:SetShown(runePlateVisible);
-		slotButton.Icon:SetSize(iconSize, iconSize);
-		slotButton:SetSize(slotWidth, slotHeight);
-		slotButton.Border:SetSize(borderSize, borderSize);
-	end
 	SlotController:LazyRefresh();
 
 	--Optimize this minimap button's radial offset
@@ -5992,7 +5969,7 @@ function Narci_SetActiveBorderTexture()
 		MapShapeUtil.cornerRadius = 10;
 	end
 
-	MinimapButton.Background:SetSize(minimapBackgroundSize, minimapBackgroundSize);	
+	MiniButton.Background:SetSize(minimapBackgroundSize, minimapBackgroundSize);
 end
 
 function Narci_GuideLineFrame_OnSizing(self, offset)

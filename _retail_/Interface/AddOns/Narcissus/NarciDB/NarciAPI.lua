@@ -11,7 +11,6 @@ local unpack = unpack;
 local _, _, _, tocversion = GetBuildInfo();
 
 local match = string.match;
-local gsub = string.gsub;
 local strsub = string.sub;
 local strsplit = strsplit;
 
@@ -773,6 +772,27 @@ end
 
 NarciAPI.FormatLargeNumbers = NarciAPI_FormatLargeNumbers;
 
+
+local RemoveTextBeforeColon;
+if TEXT_LOCALE == "zhCN" or TEXT_LOCALE == "zhTW" then
+    function RemoveTextBeforeColon(text)
+        if string.find(text, ": ") then
+            return string.match(text, ": (.+)");
+        elseif string.find(text, "：") then
+            return string.match(text, "：(.+)");
+        else
+            return text
+        end
+    end
+else
+    function RemoveTextBeforeColon(text)
+        return string.gsub(text, "^.+[:]%s*", "");
+    end
+end
+
+NarciAPI.RemoveTextBeforeColon = RemoveTextBeforeColon;
+
+
 --------------------
 ---Fade Frame API---
 --------------------
@@ -842,11 +862,23 @@ end
 
 NarciAPI.GetPixelForWidget = GetPixelForWidget;
 
+
+local function GetPixelByScale(scale, pixelSize)
+    if pixelSize then
+        return pixelSize * (768/SCREEN_HEIGHT)/scale
+    else
+        return (768/SCREEN_HEIGHT)/scale
+    end
+end
+
+NarciAPI.GetPixelByScale = GetPixelByScale;
+
+
 function NarciAPI_OptimizeBorderThickness(self)
     if not self.HasOptimized then
         local point, relativeTo, relativePoint, xOfs, yOfs = self:GetPoint()
 
-        local uiScale = self:GetEffectiveScale(); 
+        local uiScale = self:GetEffectiveScale();
         local rate = (768/SCREEN_HEIGHT)/uiScale;
         local borderWeight = 2.0;
         local weight = borderWeight * rate;
@@ -868,8 +900,6 @@ function NarciAPI_OptimizeBorderThickness(self)
         self.HasOptimized = true;
     end
 end
-
-local OptimizeBorderThickness = NarciAPI_OptimizeBorderThickness;
 
 function NarciAPI_SliderWithSteps_OnLoad(self)
     self.oldValue = -1208;
@@ -896,97 +926,6 @@ function NarciAPI_SliderWithSteps_OnLoad(self)
 end
 
 
---Internal Keybinding
-NarciGenericKeyBindingButtonMixin = {};
-
-local function ResetBindVisualAndScript(self)
-    self.Border:SetColorTexture(0, 0, 0);
-    self.Value:SetTextColor(1, 1, 1);
-    self.Value:SetShadowColor(0, 0, 0);
-    self.Value:SetShadowOffset(0.6, -0.6);
-    self:SetPropagateKeyboardInput(true)
-    self:SetScript("OnKeyDown", nil); 
-    self.IsOn = false;
-end
-
-local function GenericKeyBindingButton_OnKeydown(self, key)
-    if key == "ESCAPE" or key == "SPACE" or key == "ENTER" then
-        self:ExitKeyBinding();
-        return
-    end
-
-    if self.actionName then
-        self:ExitKeyBinding(true);
-        NarcissusDB[self.actionName] = key;
-    end
-end
-
-function NarciGenericKeyBindingButtonMixin:ExitKeyBinding(success)
-    ResetBindVisualAndScript(self);
-    After(0, function()
-        self:GetBindingKey();
-    end)
-    if success then
-        self.Highlight:SetColorTexture(0.4862, 0.7725, 0.4627);
-        self.Description:SetText("|cff7cc576".. KEY_BOUND);
-        FadeFrame(self.Highlight, 0.2, 1);
-        FadeFrame(self.Description, 0.2, 1);
-        self.Timer:Stop();
-        self.Timer:SetScript("OnFinished", function()
-            FadeFrame(self.Highlight, 0.5, 0);
-            FadeFrame(self.Description, 0.5, 0);
-        end);
-        self.Timer:Play();
-    end
-end
-
-function NarciGenericKeyBindingButtonMixin:GetBindingKey()
-    OptimizeBorderThickness(self);
-    if self.actionName then
-        self.Value:SetText(NarcissusDB[self.actionName] or NOT_BOUND);
-    else
-        self.Value:SetText(NARCI_COLOR_RED_MILD.. "No Action");
-    end
-end
-
-function NarciGenericKeyBindingButtonMixin:ReleaseBindingKey()
-    ResetBindVisualAndScript(self);
-    if self.actionName then
-        self.Value:SetText(self.defaultKey or NOT_BOUND);
-        NarcissusDB[self.actionName] = self.defaultKey;
-        self.Highlight:SetColorTexture(0.9333, 0.1961, 0.1412);
-        self.Description:SetText(NARCI_COLOR_RED_MILD.."Hotkey reset");
-        FadeFrame(self.Description, 0.2, 1);
-        FadeFrame(self.Highlight, 0.2, 1);
-        self.Timer:Stop();
-        self.Timer:SetScript("OnFinished", function()
-            FadeFrame(self.Highlight, 0.5, 0);
-            FadeFrame(self.Description, 0.5, 0);
-        end);
-        self.Timer:Play();
-    end
-end
-
-function NarciGenericKeyBindingButtonMixin:OnClick(button)
-    self.IsOn = not self.IsOn;
-
-    if button == "LeftButton" then
-        if self.IsOn then
-            self.Border:SetColorTexture(0.9, 0.9, 0.9);
-            self.Value:SetTextColor(0, 0, 0);
-            self.Value:SetShadowColor(1, 1, 1);
-            self.Value:SetShadowOffset(0.6, -0.6);
-            self:SetPropagateKeyboardInput(false);
-            self:SetScript("OnKeyDown", GenericKeyBindingButton_OnKeydown);
-        end
-    else
-        self:ReleaseBindingKey();
-    end
-end
-
-function NarciGenericKeyBindingButtonMixin:OnHide()
-    self:StopAnimating();
-end
 
 -----Smooth Scroll-----
 

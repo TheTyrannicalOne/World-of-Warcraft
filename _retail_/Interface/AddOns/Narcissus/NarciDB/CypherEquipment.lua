@@ -1,6 +1,6 @@
+--Crystallic Socket use the same texture as Meta Socket 136257
 local crystallicItems = {
     190979, 190997, 190991, 190985, --Cryptic/Oracular/
-
 };
 
 for i = 1, #crystallicItems do

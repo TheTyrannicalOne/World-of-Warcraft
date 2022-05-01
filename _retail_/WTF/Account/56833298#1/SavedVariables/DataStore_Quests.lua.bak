@@ -51,6 +51,31 @@ DataStore_QuestsDB = {
 					"|cff808080|Hquest:44948:347|h[Raising Your Snowfeather]|h|r", -- [30]
 					"|cffffff00|Hquest:31891:373|h[Battle Pet Tamers: Kalimdor]|h|r", -- [31]
 				},
+				["QuestHeaders"] = {
+					"Shadowlands Campaign", -- [1]
+					"Battle of Dazar'alor", -- [2]
+					"Blackrock Depths", -- [3]
+					"Borean Tundra", -- [4]
+					"Molten Core", -- [5]
+					"Nazjatar", -- [6]
+					"Oribos", -- [7]
+					"Stormheim", -- [8]
+					"Tiragarde Sound", -- [9]
+					"Twilight Highlands", -- [10]
+					"Uldum", -- [11]
+					"Vale of Eternal Blossoms", -- [12]
+					"Black Empire Campaign", -- [13]
+					"Cooking", -- [14]
+					"Crucible of Storms", -- [15]
+					"Garrison Support", -- [16]
+					"Pandaren Campaign", -- [17]
+					"Visions of N'Zoth", -- [18]
+					"World Quest", -- [19]
+					"Battle Pets", -- [20]
+				},
+				["Rewards"] = {
+					[31] = "r|89125|1|1",
+				},
 				["Money"] = {
 					119340, -- [1]
 					936000, -- [2]
@@ -83,31 +108,6 @@ DataStore_QuestsDB = {
 					202200, -- [29]
 					202200, -- [30]
 					238680, -- [31]
-				},
-				["Rewards"] = {
-					[31] = "r|89125|1|1",
-				},
-				["QuestHeaders"] = {
-					"Shadowlands Campaign", -- [1]
-					"Battle of Dazar'alor", -- [2]
-					"Blackrock Depths", -- [3]
-					"Borean Tundra", -- [4]
-					"Molten Core", -- [5]
-					"Nazjatar", -- [6]
-					"Oribos", -- [7]
-					"Stormheim", -- [8]
-					"Tiragarde Sound", -- [9]
-					"Twilight Highlands", -- [10]
-					"Uldum", -- [11]
-					"Vale of Eternal Blossoms", -- [12]
-					"Black Empire Campaign", -- [13]
-					"Cooking", -- [14]
-					"Crucible of Storms", -- [15]
-					"Garrison Support", -- [16]
-					"Pandaren Campaign", -- [17]
-					"Visions of N'Zoth", -- [18]
-					"World Quest", -- [19]
-					"Battle Pets", -- [20]
 				},
 				["QuestTags"] = {
 					[15] = 1,
@@ -760,6 +760,28 @@ DataStore_QuestsDB = {
 					"|cff808080|Hquest:44948:347|h[Raising Your Snowfeather]|h|r", -- [24]
 					"|cffffff00|Hquest:31891:373|h[Battle Pet Tamers: Kalimdor]|h|r", -- [25]
 				},
+				["QuestHeaders"] = {
+					"Shadowlands Campaign", -- [1]
+					"Blackfathom Deeps", -- [2]
+					"Blackrock Depths", -- [3]
+					"Dragonblight", -- [4]
+					"Northern Stranglethorn", -- [5]
+					"Silithus: The Wound", -- [6]
+					"Southern Barrens", -- [7]
+					"Stormsong Valley", -- [8]
+					"The Ruby Sanctum", -- [9]
+					"Tiragarde Sound", -- [10]
+					"Alliance War Campaign", -- [11]
+					"Artifact", -- [12]
+					"Dungeon", -- [13]
+					"Elemental Bonds", -- [14]
+					"Garrison Support", -- [15]
+					"Jewelcrafting", -- [16]
+					"Mage Campaign", -- [17]
+					"Proving Grounds", -- [18]
+					"Special", -- [19]
+					"Battle Pets", -- [20]
+				},
 				["Money"] = {
 					23400, -- [1]
 					10500, -- [2]
@@ -787,7 +809,6 @@ DataStore_QuestsDB = {
 					202200, -- [24]
 					236340, -- [25]
 				},
-				["HistoryBuild"] = "42852",
 				["QuestTags"] = {
 					[24] = 102,
 					[25] = 102,
@@ -1133,28 +1154,7 @@ DataStore_QuestsDB = {
 				["Rewards"] = {
 					[25] = "r|89125|1|1",
 				},
-				["QuestHeaders"] = {
-					"Shadowlands Campaign", -- [1]
-					"Blackfathom Deeps", -- [2]
-					"Blackrock Depths", -- [3]
-					"Dragonblight", -- [4]
-					"Northern Stranglethorn", -- [5]
-					"Silithus: The Wound", -- [6]
-					"Southern Barrens", -- [7]
-					"Stormsong Valley", -- [8]
-					"The Ruby Sanctum", -- [9]
-					"Tiragarde Sound", -- [10]
-					"Alliance War Campaign", -- [11]
-					"Artifact", -- [12]
-					"Dungeon", -- [13]
-					"Elemental Bonds", -- [14]
-					"Garrison Support", -- [15]
-					"Jewelcrafting", -- [16]
-					"Mage Campaign", -- [17]
-					"Proving Grounds", -- [18]
-					"Special", -- [19]
-					"Battle Pets", -- [20]
-				},
+				["HistoryBuild"] = "42852",
 				["Quests"] = {
 					3278848, -- [1]
 					1970176, -- [2]
@@ -1194,6 +1194,10 @@ DataStore_QuestsDB = {
 					"|cffff2020|Hquest:44948:347|h[Raising Your Snowfeather]|h|r", -- [4]
 					"|cffff2020|Hquest:44989:347|h[Raising Your Sharptalon]|h|r", -- [5]
 				},
+				["QuestHeaders"] = {
+					"Ammen Vale", -- [1]
+					"Battle Pets", -- [2]
+				},
 				["Money"] = {
 					0, -- [1]
 					55, -- [2]
@@ -1201,7 +1205,6 @@ DataStore_QuestsDB = {
 					202200, -- [4]
 					202200, -- [5]
 				},
-				["HistoryBuild"] = "42852",
 				["QuestTags"] = {
 					nil, -- [1]
 					102, -- [2]
@@ -1241,25 +1244,25 @@ DataStore_QuestsDB = {
 					[1087] = 4194304,
 					[1343] = 24,
 					[1847] = 32768,
-					[1785] = 256,
+					[1848] = 65536,
 					[1757] = 8192,
 					[997] = 15360,
-					[995] = 31449840,
+					[1785] = 256,
 					[1946] = 16384,
 					[987] = 4294901787,
 					[979] = 1060864,
-					[1694] = 256,
+					[2009] = 64,
 					[1950] = 1073741824,
 					[2017] = 4,
 					[2021] = 32768,
 					[1773] = 33554432,
 					[1891] = 2147484672,
 					[993] = 256,
-					[1848] = 65536,
+					[995] = 31449840,
 					[1663] = 4194304,
-					[1568] = 14,
+					[1694] = 256,
 					[1001] = 512,
-					[2009] = 64,
+					[1568] = 14,
 					[1656] = 512,
 					[1242] = 14338,
 					[1687] = 16,
@@ -1269,10 +1272,7 @@ DataStore_QuestsDB = {
 				["Rewards"] = {
 					[2] = "r|89125|1|1",
 				},
-				["QuestHeaders"] = {
-					"Ammen Vale", -- [1]
-					"Battle Pets", -- [2]
-				},
+				["HistoryBuild"] = "42852",
 				["Quests"] = {
 					67584, -- [1]
 					69632, -- [2]
@@ -1308,25 +1308,6 @@ DataStore_QuestsDB = {
 					"|cff808080|Hquest:44948:347|h[Raising Your Snowfeather]|h|r", -- [20]
 					"|cffffff00|Hquest:31891:373|h[Battle Pet Tamers: Kalimdor]|h|r", -- [21]
 				},
-				["QuestHeaders"] = {
-					"Shadowlands Campaign", -- [1]
-					"Dalaran", -- [2]
-					"Darkshore", -- [3]
-					"Nazjatar", -- [4]
-					"Nazmir", -- [5]
-					"Stormheim", -- [6]
-					"Suramar", -- [7]
-					"Zuldazar", -- [8]
-					"Artifact", -- [9]
-					"Herbalism", -- [10]
-					"Horde War Campaign", -- [11]
-					"World Quest", -- [12]
-					"Battle Pets", -- [13]
-				},
-				["Rewards"] = {
-					[14] = "s|252441",
-					[13] = "s|252431",
-				},
 				["Money"] = {
 					23400, -- [1]
 					0, -- [2]
@@ -1349,6 +1330,25 @@ DataStore_QuestsDB = {
 					202200, -- [19]
 					202200, -- [20]
 					236340, -- [21]
+				},
+				["Rewards"] = {
+					[14] = "s|252441",
+					[13] = "s|252431",
+				},
+				["QuestHeaders"] = {
+					"Shadowlands Campaign", -- [1]
+					"Dalaran", -- [2]
+					"Darkshore", -- [3]
+					"Nazjatar", -- [4]
+					"Nazmir", -- [5]
+					"Stormheim", -- [6]
+					"Suramar", -- [7]
+					"Zuldazar", -- [8]
+					"Artifact", -- [9]
+					"Herbalism", -- [10]
+					"Horde War Campaign", -- [11]
+					"World Quest", -- [12]
+					"Battle Pets", -- [13]
 				},
 				["QuestTags"] = {
 					[7] = 128,
@@ -1618,6 +1618,13 @@ DataStore_QuestsDB = {
 					"|cffffff00|Hquest:44948:347|h[Raising Your Snowfeather]|h|r", -- [7]
 					"|cffffff00|Hquest:31891:373|h[Battle Pet Tamers: Kalimdor]|h|r", -- [8]
 				},
+				["QuestHeaders"] = {
+					"War Campaign", -- [1]
+					"Deepholm", -- [2]
+					"Eye of Azshara", -- [3]
+					"Elemental Bonds", -- [4]
+					"Battle Pets", -- [5]
+				},
 				["Money"] = {
 					21490, -- [1]
 					13740, -- [2]
@@ -1628,7 +1635,6 @@ DataStore_QuestsDB = {
 					202200, -- [7]
 					214920, -- [8]
 				},
-				["HistoryBuild"] = "42852",
 				["QuestTags"] = {
 					nil, -- [1]
 					nil, -- [2]
@@ -1663,7 +1669,7 @@ DataStore_QuestsDB = {
 					[1625] = 67108864,
 					[1048] = 536870912,
 					[1171] = 2080376320,
-					[1057] = 8388608,
+					[913] = 30720,
 					[1098] = 50331648,
 					[811] = 1048840,
 					[1172] = 59785216,
@@ -1683,7 +1689,7 @@ DataStore_QuestsDB = {
 					[1558] = 138412032,
 					[1112] = 16,
 					[371] = 4143972353,
-					[1567] = 4026531841,
+					[1057] = 8388608,
 					[1559] = 976,
 					[1568] = 14,
 					[1177] = 526516224,
@@ -1716,7 +1722,7 @@ DataStore_QuestsDB = {
 					[1120] = 68157440,
 					[1694] = 256,
 					[1221] = 1610612736,
-					[913] = 30720,
+					[1567] = 4026531841,
 					[1121] = 1073741824,
 					[362] = 1098907648,
 					[378] = 289931274,
@@ -1732,7 +1738,7 @@ DataStore_QuestsDB = {
 					[1124] = 1024,
 					[1188] = 3221225600,
 					[2017] = 4,
-					[397] = 906002880,
+					[1325] = 158,
 					[1380] = 4608,
 					[363] = 918257736,
 					[379] = 6291460,
@@ -1757,9 +1763,9 @@ DataStore_QuestsDB = {
 					[1194] = 134217728,
 					[1768] = 134217728,
 					[1322] = 526400,
-					[1078] = 16384,
+					[796] = 22020097,
 					[1960] = 2097152,
-					[398] = 566082692,
+					[794] = 268501601,
 					[791] = 4039067649,
 					[1132] = 2147942400,
 					[1961] = 33554432,
@@ -1768,10 +1774,10 @@ DataStore_QuestsDB = {
 					[1133] = 402653184,
 					[365] = 2172682241,
 					[1771] = 4096,
-					[1325] = 158,
+					[792] = 1391532,
 					[413] = 48,
 					[1198] = 2,
-					[1331] = 128,
+					[795] = 5308440,
 					[1141] = 268435456,
 					[1664] = 16,
 					[1199] = 2684354560,
@@ -1781,10 +1787,10 @@ DataStore_QuestsDB = {
 					[857] = 192,
 					[987] = 4294901787,
 					[1328] = 1048576,
-					[399] = 3997644,
+					[1588] = 1048576,
 					[366] = 1501458455,
 					[1663] = 4194304,
-					[794] = 268501601,
+					[1074] = 268435456,
 					[797] = 1232863232,
 					[858] = 786432,
 					[1336] = 404750336,
@@ -1792,7 +1798,7 @@ DataStore_QuestsDB = {
 					[1139] = 7405568,
 					[986] = 4026531841,
 					[401] = 2,
-					[795] = 5308440,
+					[1076] = 2733637633,
 					[1395] = 536870912,
 					[798] = 136938600,
 					[1268] = 536870912,
@@ -1800,7 +1806,7 @@ DataStore_QuestsDB = {
 					[1396] = 8912896,
 					[367] = 2615370,
 					[1269] = 256,
-					[796] = 22020097,
+					[1078] = 16384,
 					[1343] = 24,
 					[1461] = 8192,
 					[1848] = 65536,
@@ -1811,7 +1817,7 @@ DataStore_QuestsDB = {
 					[1335] = 112,
 					[1144] = 537395200,
 					[1342] = 4194304,
-					[1785] = 256,
+					[1022] = 12,
 					[1081] = 130056193,
 					[1145] = 8389632,
 					[800] = 2684422081,
@@ -1821,9 +1827,9 @@ DataStore_QuestsDB = {
 					[432] = 32768,
 					[1274] = 16,
 					[1338] = 4,
-					[1275] = 67108864,
+					[1785] = 256,
 					[1341] = 2085984280,
-					[1022] = 12,
+					[1275] = 67108864,
 					[799] = 17821952,
 					[1148] = 34078721,
 					[1085] = 122368,
@@ -1846,20 +1852,20 @@ DataStore_QuestsDB = {
 					[1280] = 508,
 					[1089] = 258,
 					[1153] = 131072,
-					[1588] = 1048576,
+					[399] = 3997644,
 					[1281] = 201326592,
 					[802] = 2174750721,
 					[1154] = 16777216,
 					[400] = 3073,
-					[1076] = 2733637633,
-					[1074] = 268435456,
+					[1331] = 128,
+					[398] = 566082692,
 					[1201] = 128,
 					[994] = 512,
 					[1200] = 81920,
 					[1092] = 8192,
 					[1337] = 16,
 					[867] = 4096,
-					[792] = 1391532,
+					[397] = 906002880,
 					[1093] = 16384,
 					[1195] = 553648128,
 					[995] = 31449840,
@@ -1891,13 +1897,7 @@ DataStore_QuestsDB = {
 				["Rewards"] = {
 					[8] = "r|89125|1|1",
 				},
-				["QuestHeaders"] = {
-					"War Campaign", -- [1]
-					"Deepholm", -- [2]
-					"Eye of Azshara", -- [3]
-					"Elemental Bonds", -- [4]
-					"Battle Pets", -- [5]
-				},
+				["HistoryBuild"] = "42852",
 				["Quests"] = {
 					3082240, -- [1]
 					2297856, -- [2]
@@ -1946,33 +1946,6 @@ DataStore_QuestsDB = {
 					"|cff808080|Hquest:44948:347|h[Raising Your Snowfeather]|h|r", -- [30]
 					"|cffffff00|Hquest:31891:373|h[Battle Pet Tamers: Kalimdor]|h|r", -- [31]
 				},
-				["QuestHeaders"] = {
-					"Shadowlands Campaign", -- [1]
-					"Dalaran", -- [2]
-					"Drustvar", -- [3]
-					"Highmountain", -- [4]
-					"Nazjatar", -- [5]
-					"Stormheim", -- [6]
-					"Suramar", -- [7]
-					"Tiragarde Sound", -- [8]
-					"Alliance War Campaign", -- [9]
-					"Demon Hunter Campaign", -- [10]
-					"Special", -- [11]
-					"The Pride of Kul Tiras", -- [12]
-					"Treasure Map", -- [13]
-					"Tyrande's Vengeance", -- [14]
-					"World Quest", -- [15]
-					"Battle Pets", -- [16]
-				},
-				["Rewards"] = {
-					[2] = "c|147410|1|1,c|147411|1|1,c|147412|1|1,c|147413|1|1,c|147414|1|1,c|147415|1|1,c|147727|1|1,c|152956|1|1,c|152961|1|1,r|157828|1|1",
-					[28] = "c|116429|10|1",
-					[10] = "r|157824|1|1",
-					[12] = "r|157826|1|1",
-					[14] = "c|158220|1|1",
-					[7] = "c|121680|1|1,c|130300|1|1",
-					[31] = "r|89125|1|1",
-				},
 				["Money"] = {
 					23400, -- [1]
 					0, -- [2]
@@ -2005,6 +1978,33 @@ DataStore_QuestsDB = {
 					202200, -- [29]
 					202200, -- [30]
 					236340, -- [31]
+				},
+				["Rewards"] = {
+					[2] = "c|147410|1|1,c|147411|1|1,c|147412|1|1,c|147413|1|1,c|147414|1|1,c|147415|1|1,c|147727|1|1,c|152956|1|1,c|152961|1|1,r|157828|1|1",
+					[28] = "c|116429|10|1",
+					[10] = "r|157824|1|1",
+					[12] = "r|157826|1|1",
+					[14] = "c|158220|1|1",
+					[7] = "c|121680|1|1,c|130300|1|1",
+					[31] = "r|89125|1|1",
+				},
+				["QuestHeaders"] = {
+					"Shadowlands Campaign", -- [1]
+					"Dalaran", -- [2]
+					"Drustvar", -- [3]
+					"Highmountain", -- [4]
+					"Nazjatar", -- [5]
+					"Stormheim", -- [6]
+					"Suramar", -- [7]
+					"Tiragarde Sound", -- [8]
+					"Alliance War Campaign", -- [9]
+					"Demon Hunter Campaign", -- [10]
+					"Special", -- [11]
+					"The Pride of Kul Tiras", -- [12]
+					"Treasure Map", -- [13]
+					"Tyrande's Vengeance", -- [14]
+					"World Quest", -- [15]
+					"Battle Pets", -- [16]
 				},
 				["QuestTags"] = {
 					[27] = 128,
@@ -2048,13 +2048,13 @@ DataStore_QuestsDB = {
 					[1864] = 33554432,
 					[1429] = 2147483648,
 					[1493] = 2048,
-					[1799] = 8388608,
+					[1289] = 1056,
 					[1876] = 8,
 					[1242] = 1612724226,
 					[1625] = 67108864,
 					[1303] = 1073741824,
 					[1881] = 512,
-					[1034] = 32768,
+					[774] = 512,
 					[1240] = 40960,
 					[1304] = 320,
 					[1623] = 20480,
@@ -2082,7 +2082,7 @@ DataStore_QuestsDB = {
 					[2011] = 524288,
 					[1565] = 3072,
 					[1629] = 1,
-					[2017] = 4,
+					[1507] = 88,
 					[1757] = 8192,
 					[1566] = 1073479680,
 					[1187] = 131072,
@@ -2096,14 +2096,14 @@ DataStore_QuestsDB = {
 					[1506] = 16518176,
 					[1186] = 49152,
 					[1250] = 22839996,
-					[1507] = 88,
+					[1252] = 524288,
 					[1381] = 16777218,
 					[1697] = 16,
 					[1251] = 6912,
 					[1254] = 134283264,
 					[1379] = 16777216,
-					[1511] = 134217728,
-					[1252] = 524288,
+					[1256] = 128,
+					[2017] = 4,
 					[1316] = 16777216,
 					[1380] = 33554432,
 					[979] = 1060864,
@@ -2112,17 +2112,17 @@ DataStore_QuestsDB = {
 					[1891] = 2147484672,
 					[996] = 1073741824,
 					[1509] = 134217728,
-					[1515] = 67108864,
+					[1260] = 8192,
 					[1257] = 3355443200,
 					[1701] = 1024,
 					[2020] = 1048576,
 					[1319] = 32,
 					[1541] = 32768,
 					[1258] = 3934259073,
-					[1766] = 1536,
+					[2021] = 32768,
 					[1320] = 2097152,
 					[1639] = 134221824,
-					[1770] = 201261056,
+					[1515] = 67108864,
 					[1512] = 131072,
 					[1261] = 262208,
 					[1385] = 256,
@@ -2135,7 +2135,7 @@ DataStore_QuestsDB = {
 					[1922] = 16384,
 					[1642] = 1,
 					[1961] = 33554432,
-					[1260] = 8192,
+					[1770] = 201261056,
 					[1324] = 2147483649,
 					[1898] = 10485760,
 					[1517] = 67125184,
@@ -2146,10 +2146,10 @@ DataStore_QuestsDB = {
 					[1262] = 211812352,
 					[1475] = 2367488,
 					[1390] = 41975808,
-					[1263] = 20,
 					[1518] = 8192,
-					[1391] = 24,
+					[1773] = 33554432,
 					[1901] = 402653184,
+					[1646] = 16384,
 					[1519] = 2097152,
 					[1264] = 64,
 					[1219] = 524288,
@@ -2182,7 +2182,7 @@ DataStore_QuestsDB = {
 					[1526] = 48,
 					[1335] = 516,
 					[1472] = 201326592,
-					[1275] = 536870928,
+					[1530] = 10240,
 					[1272] = 512,
 					[1336] = 2097152,
 					[1655] = 262144,
@@ -2193,9 +2193,9 @@ DataStore_QuestsDB = {
 					[432] = 32768,
 					[1274] = 8394880,
 					[1338] = 131072,
-					[1785] = 256,
+					[1275] = 536870928,
 					[1211] = 936,
-					[1530] = 10240,
+					[1785] = 256,
 					[1339] = 32768,
 					[1658] = 268435472,
 					[1212] = 24704,
@@ -2228,8 +2228,8 @@ DataStore_QuestsDB = {
 					[1665] = 524288,
 					[994] = 512,
 					[1283] = 2105856,
-					[1646] = 16384,
-					[1773] = 33554432,
+					[1391] = 24,
+					[1263] = 20,
 					[1220] = 917504,
 					[1284] = 27728,
 					[1603] = 491520,
@@ -2243,21 +2243,21 @@ DataStore_QuestsDB = {
 					[1605] = 3221233672,
 					[1669] = 256,
 					[1223] = 536870912,
-					[2021] = 32768,
+					[1766] = 1536,
 					[1606] = 384,
 					[1670] = 67108864,
-					[1256] = 128,
+					[1511] = 134217728,
 					[1288] = 268435456,
 					[1607] = 67110912,
 					[1185] = 6,
 					[997] = 15360,
-					[774] = 512,
+					[1034] = 32768,
 					[1499] = 50363905,
 					[1879] = 3801088,
 					[1751] = 2147483648,
 					[1545] = 2315257360,
 					[1609] = 512,
-					[1289] = 1056,
+					[1799] = 8388608,
 					[1872] = 48,
 				},
 				["HistoryBuild"] = "43206",
@@ -2323,6 +2323,17 @@ DataStore_QuestsDB = {
 					"|cffff2020|Hquest:44948:347|h[Raising Your Snowfeather]|h|r", -- [13]
 					"|cffff2020|Hquest:44989:347|h[Raising Your Sharptalon]|h|r", -- [14]
 				},
+				["QuestHeaders"] = {
+					"Badlands", -- [1]
+					"Blasted Lands", -- [2]
+					"Dun Morogh", -- [3]
+					"Eastern Plaguelands", -- [4]
+					"Scholomance", -- [5]
+					"Stratholme", -- [6]
+					"The Temple of Atal'Hakkar", -- [7]
+					"Wetlands", -- [8]
+					"Battle Pets", -- [9]
+				},
 				["Money"] = {
 					0, -- [1]
 					39625, -- [2]
@@ -2339,7 +2350,6 @@ DataStore_QuestsDB = {
 					202200, -- [13]
 					202200, -- [14]
 				},
-				["HistoryBuild"] = "42852",
 				["QuestTags"] = {
 					[11] = 102,
 					[7] = 81,
@@ -2365,13 +2375,13 @@ DataStore_QuestsDB = {
 					[1020] = 1024,
 					[10] = 236978688,
 					[893] = 8388608,
-					[871] = 538180136,
+					[998] = 16384,
 					[13] = 268435456,
 					[839] = 2080374784,
 					[847] = 108,
 					[840] = 1151168,
 					[863] = 4026654985,
-					[998] = 16384,
+					[12] = 1,
 					[1242] = 14338,
 					[2020] = 1048576,
 					[1022] = 14,
@@ -2458,7 +2468,7 @@ DataStore_QuestsDB = {
 					[872] = 1073741849,
 					[1697] = 16,
 					[1766] = 1536,
-					[12] = 1,
+					[871] = 538180136,
 					[813] = 8196,
 					[258] = 8192,
 					[9] = 32768,
@@ -2466,17 +2476,7 @@ DataStore_QuestsDB = {
 				["Rewards"] = {
 					[11] = "r|89125|1|1",
 				},
-				["QuestHeaders"] = {
-					"Badlands", -- [1]
-					"Blasted Lands", -- [2]
-					"Dun Morogh", -- [3]
-					"Eastern Plaguelands", -- [4]
-					"Scholomance", -- [5]
-					"Stratholme", -- [6]
-					"The Temple of Atal'Hakkar", -- [7]
-					"Wetlands", -- [8]
-					"Battle Pets", -- [9]
-				},
+				["HistoryBuild"] = "42852",
 				["Quests"] = {
 					1640448, -- [1]
 					1642496, -- [2]
@@ -2525,6 +2525,25 @@ DataStore_QuestsDB = {
 					"|cff808080|Hquest:44948:347|h[Raising Your Snowfeather]|h|r", -- [24]
 					"|cffffff00|Hquest:31891:373|h[Battle Pet Tamers: Kalimdor]|h|r", -- [25]
 				},
+				["QuestHeaders"] = {
+					"Shadowlands Campaign", -- [1]
+					"Nazjatar", -- [2]
+					"Suramar", -- [3]
+					"Val'sharah", -- [4]
+					"Vale of Eternal Blossoms", -- [5]
+					"Zuldazar", -- [6]
+					"Cooking", -- [7]
+					"Druid Campaign", -- [8]
+					"Dungeon", -- [9]
+					"Garrison Support", -- [10]
+					"Herbalism", -- [11]
+					"Horde War Campaign", -- [12]
+					"World Quest", -- [13]
+					"Battle Pets", -- [14]
+				},
+				["Rewards"] = {
+					[18] = "s|193418",
+				},
 				["Money"] = {
 					23400, -- [1]
 					0, -- [2]
@@ -2551,25 +2570,6 @@ DataStore_QuestsDB = {
 					202200, -- [23]
 					202200, -- [24]
 					236340, -- [25]
-				},
-				["Rewards"] = {
-					[18] = "s|193418",
-				},
-				["QuestHeaders"] = {
-					"Shadowlands Campaign", -- [1]
-					"Nazjatar", -- [2]
-					"Suramar", -- [3]
-					"Val'sharah", -- [4]
-					"Vale of Eternal Blossoms", -- [5]
-					"Zuldazar", -- [6]
-					"Cooking", -- [7]
-					"Druid Campaign", -- [8]
-					"Dungeon", -- [9]
-					"Garrison Support", -- [10]
-					"Herbalism", -- [11]
-					"Horde War Campaign", -- [12]
-					"World Quest", -- [13]
-					"Battle Pets", -- [14]
 				},
 				["QuestTags"] = {
 					nil, -- [1]
@@ -2747,7 +2747,7 @@ DataStore_QuestsDB = {
 					[1342] = 4194304,
 					[1087] = 8396864,
 					[928] = 3288334400,
-					[1604] = 65536,
+					[1093] = 25247744,
 					[1100] = 393536,
 					[1089] = 176161730,
 					[929] = 137363778,
@@ -2757,7 +2757,7 @@ DataStore_QuestsDB = {
 					[930] = 536510476,
 					[1092] = 34086912,
 					[1102] = 2625280,
-					[1093] = 25247744,
+					[402] = 8192,
 					[931] = 32,
 					[1094] = 536872960,
 					[1616] = 100352,
@@ -3066,7 +3066,7 @@ DataStore_QuestsDB = {
 					[1246] = 2097152,
 					[1609] = 512,
 					[1097] = 2147483649,
-					[402] = 8192,
+					[1604] = 65536,
 					[1085] = 134217744,
 					[377] = 2097172,
 					[881] = 16,
@@ -3155,28 +3155,6 @@ DataStore_QuestsDB = {
 					"|cff808080|Hquest:44948:347|h[Raising Your Snowfeather]|h|r", -- [26]
 					"|cffffff00|Hquest:31891:373|h[Battle Pet Tamers: Kalimdor]|h|r", -- [27]
 				},
-				["QuestHeaders"] = {
-					"Shadowlands Campaign", -- [1]
-					"Azsuna", -- [2]
-					"Broken Shore", -- [3]
-					"Eye of Azshara", -- [4]
-					"Gnomeregan", -- [5]
-					"Invasion Point", -- [6]
-					"Krokuun", -- [7]
-					"Old Hillsbrad Foothills", -- [8]
-					"Stormheim", -- [9]
-					"Suramar", -- [10]
-					"Tiragarde Sound", -- [11]
-					"Val'sharah", -- [12]
-					"Artifact", -- [13]
-					"Legionfall Campaign", -- [14]
-					"Order Hall", -- [15]
-					"Shaman Campaign", -- [16]
-					"Battle Pets", -- [17]
-				},
-				["Rewards"] = {
-					[27] = "r|89125|1|1",
-				},
 				["Money"] = {
 					23400, -- [1]
 					0, -- [2]
@@ -3205,6 +3183,28 @@ DataStore_QuestsDB = {
 					202200, -- [25]
 					202200, -- [26]
 					236340, -- [27]
+				},
+				["Rewards"] = {
+					[27] = "r|89125|1|1",
+				},
+				["QuestHeaders"] = {
+					"Shadowlands Campaign", -- [1]
+					"Azsuna", -- [2]
+					"Broken Shore", -- [3]
+					"Eye of Azshara", -- [4]
+					"Gnomeregan", -- [5]
+					"Invasion Point", -- [6]
+					"Krokuun", -- [7]
+					"Old Hillsbrad Foothills", -- [8]
+					"Stormheim", -- [9]
+					"Suramar", -- [10]
+					"Tiragarde Sound", -- [11]
+					"Val'sharah", -- [12]
+					"Artifact", -- [13]
+					"Legionfall Campaign", -- [14]
+					"Order Hall", -- [15]
+					"Shaman Campaign", -- [16]
+					"Battle Pets", -- [17]
 				},
 				["QuestTags"] = {
 					nil, -- [1]
@@ -3523,101 +3523,73 @@ DataStore_QuestsDB = {
 				},
 			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["lastUpdate"] = 1650514164,
-				["HistorySize"] = 13999,
-				["covenantCampaignProgress"] = 9,
-				["Dailies"] = {
-					{
-						["id"] = 59607,
-						["timestamp"] = 1650496177,
-						["title"] = "Takin' Down the Beast",
-					}, -- [1]
-					{
-						["id"] = 58128,
-						["timestamp"] = 1650498084,
-						["title"] = "High Inquisitor Sinstone",
-					}, -- [2]
-					{
-						["id"] = 60406,
-						["timestamp"] = 1650506344,
-						["title"] = "Training in Bastion",
-					}, -- [3]
-					{
-						["id"] = 60446,
-						["timestamp"] = 1650506441,
-						["title"] = "Challenges in Maldraxxus",
-					}, -- [4]
-					{
-						["id"] = 60422,
-						["timestamp"] = 1650512262,
-						["title"] = "A Call to Ardenweald",
-					}, -- [5]
-					{
-						["id"] = 56042,
-						["timestamp"] = 1650512280,
-						["title"] = "Blingtron 7000",
-					}, -- [6]
-					{
-						["id"] = 63934,
-						["timestamp"] = 1650513691,
-						["title"] = "Assail Mail",
-					}, -- [7]
-					{
-						["id"] = 63779,
-						["timestamp"] = 1650514069,
-						["title"] = "A Semblance of Normalcy",
-					}, -- [8]
-					{
-						["id"] = 63959,
-						["timestamp"] = 1650514163,
-						["title"] = "Observational Records",
-					}, -- [9]
-				},
-				["HistoryLastUpdate"] = 1650495243,
+				["lastUpdate"] = 1651420213,
+				["HistorySize"] = 14196,
+				["activeCovenantID"] = 2,
+				["HistoryLastUpdate"] = 1651422092,
 				["QuestLinks"] = {
-					"|cffffff00|Hquest:63672:2043|h[A Cry From the Heart]|h|r", -- [1]
-					"|cffffff00|Hquest:63949:2043|h[Shaping Fate]|h|r", -- [2]
+					"|cffffff00|Hquest:64814:2057|h[Battle for the Forge]|h|r", -- [1]
+					"|cffffff00|Hquest:64815:2057|h[Together, We Ride]|h|r", -- [2]
 					"|cff808080|Hquest:49032:347|h[Antorus, the Burning Throne: Dark Passage]|h|r", -- [3]
 					"|cff808080|Hquest:49133:347|h[Antorus, the Burning Throne: The Heart of Argus]|h|r", -- [4]
 					"|cff808080|Hquest:48305:344|h[The Burning Coven]|h|r", -- [5]
-					"|cff808080|Hquest:42420:347|h[Court of Farondis]|h|r", -- [6]
-					"|cff808080|Hquest:46745:347|h[Supplies From the Court]|h|r", -- [7]
-					"|cff808080|Hquest:42422:347|h[The Wardens]|h|r", -- [8]
-					"|cff808080|Hquest:42233:347|h[Highmountain Tribes]|h|r", -- [9]
-					"|cff808080|Hquest:24756:1023|h[Blood Infusion]|h|r", -- [10]
-					"|cffffff00|Hquest:63784:2043|h[Gold's No Object]|h|r", -- [11]
-					"|cffffff00|Hquest:64166:2043|h[Random Memory Access]|h|r", -- [12]
-					"|cffffff00|Hquest:64274:2043|h[Tracking Quest]|h|r", -- [13]
-					"|cffffff00|Hquest:64376:2043|h[Tracking Quest]|h|r", -- [14]
-					"|cffffff00|Hquest:63903:2107|h[Storming the Sanctum]|h|r", -- [15]
-					"|cff808080|Hquest:50562:464|h[Champions of Azeroth]|h|r", -- [16]
-					"|cff808080|Hquest:46746:347|h[Supplies From the Valarjar]|h|r", -- [17]
-					"|cffffff00|Hquest:63986:2139|h[Tazavesh: Raiders of the Lost Artifact]|h|r", -- [18]
-					"|cffffff00|Hquest:60622:742|h[Eye of the Scryer]|h|r", -- [19]
-					"|cffffff00|Hquest:60284:837|h[Rule 5: Be Audacious]|h|r", -- [20]
-					"|cffffff00|Hquest:62719:2149|h[The Final Pieces]|h|r", -- [21]
-					"|cff808080|Hquest:45383:347|h[The Nighthold: Talisman of the Shal'dorei]|h|r", -- [22]
-					"|cff808080|Hquest:45382:347|h[The Nighthold: Talisman of the Shal'dorei]|h|r", -- [23]
-					"|cff808080|Hquest:45381:347|h[The Nighthold: Talisman of the Shal'dorei]|h|r", -- [24]
-					"|cff808080|Hquest:47727:347|h[Tomb of Sargeras: Aegwynn's Path]|h|r", -- [25]
-					"|cff808080|Hquest:47129:344|h[Tomb of Sargeras: The Deceiver]|h|r", -- [26]
-					"|cff808080|Hquest:57565:703|h[Aqir Assault Tracker]|h|r", -- [27]
-					"|cff808080|Hquest:57567:703|h[N'Zoth Assault Tracker (Vale)]|h|r", -- [28]
-					"|cff808080|Hquest:50603:464|h[Voldunai]|h|r", -- [29]
-					"|cff808080|Hquest:50598:464|h[Zandalari Empire]|h|r", -- [30]
-					"|cff808080|Hquest:53435:289|h[Azerite for the Horde]|h|r", -- [31]
-					"|cffffff00|Hquest:64106:2043|h[A Unified Effort]|h|r", -- [32]
-					"|cffffff00|Hquest:61706:2060|h[Ember Court: Entertainment]|h|r", -- [33]
-					"|cff808080|Hquest:57462:708|h[Dream Catcher]|h|r", -- [34]
-					"|cff808080|Hquest:56352:708|h[The Eternal Palace: We Can Make It Stronger...]|h|r", -- [35]
-					"|cff808080|Hquest:57403:737|h[Reconstructing \"Fear and Flesh\"]|h|r", -- [36]
-					"|cff808080|Hquest:40329:828|h[Battle Pet Tamers: Warlords]|h|r", -- [37]
-					"|cff808080|Hquest:44989:347|h[Raising Your Sharptalon]|h|r", -- [38]
-					"|cff808080|Hquest:44948:347|h[Raising Your Snowfeather]|h|r", -- [39]
-					"|cffffff00|Hquest:31891:373|h[Battle Pet Tamers: Kalimdor]|h|r", -- [40]
+					"|cff808080|Hquest:46745:347|h[Supplies From the Court]|h|r", -- [6]
+					"|cff808080|Hquest:42422:347|h[The Wardens]|h|r", -- [7]
+					"|cff808080|Hquest:48642:347|h[Argussian Reach]|h|r", -- [8]
+					"|cff808080|Hquest:24756:1023|h[Blood Infusion]|h|r", -- [9]
+					"|cff808080|Hquest:56120:464|h[The Unshackled]|h|r", -- [10]
+					"|cffffff00|Hquest:62457:837|h[The Great Vault]|h|r", -- [11]
+					"|cffffff00|Hquest:63903:2107|h[Storming the Sanctum]|h|r", -- [12]
+					"|cff808080|Hquest:46746:347|h[Supplies From the Valarjar]|h|r", -- [13]
+					"|cff808080|Hquest:45383:347|h[The Nighthold: Talisman of the Shal'dorei]|h|r", -- [14]
+					"|cff808080|Hquest:45381:347|h[The Nighthold: Talisman of the Shal'dorei]|h|r", -- [15]
+					"|cff808080|Hquest:45382:347|h[The Nighthold: Talisman of the Shal'dorei]|h|r", -- [16]
+					"|cff808080|Hquest:47727:347|h[Tomb of Sargeras: Aegwynn's Path]|h|r", -- [17]
+					"|cff808080|Hquest:47129:344|h[Tomb of Sargeras: The Deceiver]|h|r", -- [18]
+					"|cff808080|Hquest:57566:703|h[N'Zoth Assault Tracker (Uldum)]|h|r", -- [19]
+					"|cff808080|Hquest:42170:347|h[The Dreamweavers]|h|r", -- [20]
+					"|cff808080|Hquest:57563:703|h[Mogu Assault Tracker]|h|r", -- [21]
+					"|cff808080|Hquest:50603:464|h[Voldunai]|h|r", -- [22]
+					"|cff808080|Hquest:54461:464|h[Supplies from the Voldunai]|h|r", -- [23]
+					"|cffffff00|Hquest:65353:2057|h[An Automa-free Diet]|h|r", -- [24]
+					"|cffffff00|Hquest:65350:2057|h[Restore the Flow]|h|r", -- [25]
+					"|cff808080|Hquest:50598:464|h[Zandalari Empire]|h|r", -- [26]
+					"|cff808080|Hquest:53435:289|h[Azerite for the Horde]|h|r", -- [27]
+					"|cff808080|Hquest:57462:708|h[Dream Catcher]|h|r", -- [28]
+					"|cff808080|Hquest:56352:708|h[The Eternal Palace: We Can Make It Stronger...]|h|r", -- [29]
+					"|cffffff00|Hquest:60422:2060|h[A Call to Ardenweald]|h|r", -- [30]
+					"|cff808080|Hquest:57403:737|h[Reconstructing \"Fear and Flesh\"]|h|r", -- [31]
+					"|cff808080|Hquest:40329:828|h[Battle Pet Tamers: Warlords]|h|r", -- [32]
+					"|cff808080|Hquest:44989:347|h[Raising Your Sharptalon]|h|r", -- [33]
+					"|cff808080|Hquest:44948:347|h[Raising Your Snowfeather]|h|r", -- [34]
+					"|cffffff00|Hquest:31891:373|h[Battle Pet Tamers: Kalimdor]|h|r", -- [35]
+				},
+				["QuestHeaders"] = {
+					"Secrets of the First Ones", -- [1]
+					"Antorus, the Burning Throne", -- [2]
+					"Azsuna", -- [3]
+					"Dalaran", -- [4]
+					"Eredath", -- [5]
+					"Icecrown Citadel", -- [6]
+					"Nazjatar", -- [7]
+					"Oribos", -- [8]
+					"Sanctum of Domination", -- [9]
+					"Stormheim", -- [10]
+					"The Nighthold", -- [11]
+					"Tomb of Sargeras", -- [12]
+					"Uldum", -- [13]
+					"Val'sharah", -- [14]
+					"Vale of Eternal Blossoms", -- [15]
+					"Vol'dun", -- [16]
+					"Zereth Mortis", -- [17]
+					"Zuldazar", -- [18]
+					"Professions", -- [19]
+					"Venthyr Callings", -- [20]
+					"Visions of N'Zoth", -- [21]
+					"Battle Pets", -- [22]
 				},
 				["Money"] = {
-					25740, -- [1]
+					0, -- [1]
 					0, -- [2]
 					404400, -- [3]
 					404400, -- [4]
@@ -3625,140 +3597,161 @@ DataStore_QuestsDB = {
 					0, -- [6]
 					0, -- [7]
 					0, -- [8]
-					0, -- [9]
-					210000, -- [10]
+					210000, -- [9]
+					0, -- [10]
 					0, -- [11]
-					0, -- [12]
+					772200, -- [12]
 					0, -- [13]
-					0, -- [14]
-					772200, -- [15]
-					0, -- [16]
-					0, -- [17]
-					2574000, -- [18]
+					404400, -- [14]
+					404400, -- [15]
+					404400, -- [16]
+					404400, -- [17]
+					0, -- [18]
 					0, -- [19]
-					514800, -- [20]
+					0, -- [20]
 					0, -- [21]
-					404400, -- [22]
-					404400, -- [23]
-					404400, -- [24]
-					404400, -- [25]
+					0, -- [22]
+					0, -- [23]
+					257400, -- [24]
+					257400, -- [25]
 					0, -- [26]
 					0, -- [27]
-					0, -- [28]
-					0, -- [29]
+					936000, -- [28]
+					936000, -- [29]
 					0, -- [30]
 					0, -- [31]
-					514800, -- [32]
-					257400, -- [33]
-					936000, -- [34]
-					936000, -- [35]
-					175500, -- [36]
-					169800, -- [37]
-					202200, -- [38]
-					202200, -- [39]
-					257400, -- [40]
+					169800, -- [32]
+					202200, -- [33]
+					202200, -- [34]
+					257400, -- [35]
 				},
+				["story92Progress"] = 1,
 				["Rewards"] = {
 					nil, -- [1]
-					"r|186196|1|1,r|187347|2|1", -- [2]
+					nil, -- [2]
 					nil, -- [3]
 					nil, -- [4]
 					"r|153503|1|1", -- [5]
-					"r|157825|1|1", -- [6]
-					"r|152102|1|1", -- [7]
-					"r|157827|1|1", -- [8]
-					"r|157823|1|1", -- [9]
+					"r|152102|1|1", -- [6]
+					"r|157827|1|1", -- [7]
+					"r|157831|1|1", -- [8]
+					nil, -- [9]
 					nil, -- [10]
 					nil, -- [11]
-					nil, -- [12]
-					"r|186651|1|1", -- [13]
-					"r|186646|1|1", -- [14]
-					"r|187175|6|1", -- [15]
-					nil, -- [16]
-					"r|152106|1|1", -- [17]
-					"r|184315|3|1", -- [18]
+					"r|187175|6|1", -- [12]
+					"r|152106|1|1", -- [13]
+					"r|141326|1|1", -- [14]
+					"r|141324|1|1", -- [15]
+					"r|141325|1|1", -- [16]
+					nil, -- [17]
+					"r|147521|1|1", -- [18]
 					nil, -- [19]
-					nil, -- [20]
+					"r|157822|1|1", -- [20]
 					nil, -- [21]
-					"r|141326|1|1", -- [22]
-					"r|141325|1|1", -- [23]
-					"r|141324|1|1", -- [24]
+					nil, -- [22]
+					"r|166290|1|1", -- [23]
+					nil, -- [24]
 					nil, -- [25]
-					"r|147521|1|1", -- [26]
+					nil, -- [26]
 					nil, -- [27]
 					nil, -- [28]
 					nil, -- [29]
 					nil, -- [30]
-					"r|166883|1|1", -- [31]
-					"r|187347|2|1", -- [32]
-					[36] = "r|171354|1|1",
-					[37] = "c|116429|10|1",
-					[40] = "r|89125|1|1",
+					nil, -- [31]
+					"c|116429|10|1", -- [32]
+					[35] = "r|89125|1|1",
 				},
-				["QuestHeaders"] = {
-					"Secrets of the First Ones", -- [1]
-					"Chains of Domination", -- [2]
-					"Antorus, the Burning Throne", -- [3]
-					"Azsuna", -- [4]
-					"Dalaran", -- [5]
-					"Highmountain", -- [6]
-					"Icecrown Citadel", -- [7]
-					"Korthia", -- [8]
-					"Sanctum of Domination", -- [9]
-					"Silithus: The Wound", -- [10]
-					"Stormheim", -- [11]
-					"Tazavesh, the Veiled Market", -- [12]
-					"The Maw", -- [13]
-					"The Nighthold", -- [14]
-					"Tomb of Sargeras", -- [15]
-					"Uldum", -- [16]
-					"Vale of Eternal Blossoms", -- [17]
-					"Vol'dun", -- [18]
-					"Zuldazar", -- [19]
-					"Covenant Assaults", -- [20]
-					"Ember Court", -- [21]
-					"Professions", -- [22]
-					"Visions of N'Zoth", -- [23]
-					"Battle Pets", -- [24]
+				["Weeklies"] = {
+					{
+						["id"] = 61816,
+						["timestamp"] = 1651033323,
+						["title"] = "Mortanis",
+						["expiresIn"] = 556676,
+					}, -- [1]
+					{
+						["id"] = 61981,
+						["timestamp"] = 1651034053,
+						["title"] = "Replenish the Reservoir",
+						["expiresIn"] = 555946,
+					}, -- [2]
+					{
+						["id"] = 64541,
+						["timestamp"] = 1651116453,
+						["title"] = "The Cost of Death",
+						["expiresIn"] = 473546,
+					}, -- [3]
+					{
+						["id"] = 63949,
+						["timestamp"] = 1651202560,
+						["title"] = "Shaping Fate",
+						["expiresIn"] = 387439,
+					}, -- [4]
+					{
+						["id"] = 57301,
+						["timestamp"] = 1651277137,
+						["title"] = "Callous Concoctions",
+						["expiresIn"] = 312862,
+					}, -- [5]
+					{
+						["id"] = 62869,
+						["timestamp"] = 1651291905,
+						["title"] = "Return Lost Souls",
+						["expiresIn"] = 298094,
+					}, -- [6]
+					{
+						["id"] = 57245,
+						["timestamp"] = 1651346005,
+						["title"] = "Ani-Matter Animator",
+						["expiresIn"] = 243994,
+					}, -- [7]
+					{
+						["id"] = 65266,
+						["timestamp"] = 1651361076,
+						["title"] = "Lost Research",
+						["expiresIn"] = 228923,
+					}, -- [8]
+					{
+						["id"] = 64522,
+						["timestamp"] = 1651361120,
+						["title"] = "Stolen Korthian Supplies",
+						["expiresIn"] = 228879,
+					}, -- [9]
 				},
 				["QuestTags"] = {
 					nil, -- [1]
-					"WEEKLY", -- [2]
+					nil, -- [2]
 					62, -- [3]
 					62, -- [4]
 					62, -- [5]
 					128, -- [6]
 					128, -- [7]
 					128, -- [8]
-					128, -- [9]
-					89, -- [10]
-					"DAILY", -- [11]
-					"DAILY", -- [12]
-					265, -- [13]
-					265, -- [14]
+					89, -- [9]
+					128, -- [10]
+					nil, -- [11]
+					62, -- [12]
+					128, -- [13]
+					62, -- [14]
 					62, -- [15]
-					128, -- [16]
-					128, -- [17]
-					81, -- [18]
-					"DAILY", -- [19]
-					nil, -- [20]
-					83, -- [21]
-					62, -- [22]
-					62, -- [23]
-					62, -- [24]
-					62, -- [25]
-					62, -- [26]
-					270, -- [27]
-					270, -- [28]
-					128, -- [29]
-					128, -- [30]
-					261, -- [31]
-					[34] = 267,
-					[35] = 62,
-					[37] = 102,
-					[38] = 102,
-					[39] = 102,
-					[40] = 102,
+					62, -- [16]
+					62, -- [17]
+					62, -- [18]
+					270, -- [19]
+					128, -- [20]
+					270, -- [21]
+					128, -- [22]
+					128, -- [23]
+					nil, -- [24]
+					nil, -- [25]
+					128, -- [26]
+					261, -- [27]
+					267, -- [28]
+					62, -- [29]
+					271, -- [30]
+					[32] = 102,
+					[33] = 102,
+					[34] = 102,
+					[35] = 102,
 				},
 				["History"] = {
 					58720260, -- [1]
@@ -3940,7 +3933,7 @@ DataStore_QuestsDB = {
 					[446] = 3656908480,
 					[1785] = 18176,
 					[447] = 2073039873,
-					[1789] = 285212784,
+					[1789] = 822083696,
 					[448] = 4156315134,
 					[1793] = 1610940417,
 					[449] = 1063258104,
@@ -3953,8 +3946,8 @@ DataStore_QuestsDB = {
 					[1809] = 4152032817,
 					[453] = 150600176,
 					[1813] = 184551023,
-					[1815] = 269506561,
-					[1817] = 65568,
+					[1815] = 269506560,
+					[1817] = 32,
 					[1821] = 520093697,
 					[1823] = 48234496,
 					[1825] = 264224784,
@@ -3962,7 +3955,7 @@ DataStore_QuestsDB = {
 					[1829] = 272630784,
 					[1831] = 3890774017,
 					[1833] = 1081071041,
-					[1835] = 2218786817,
+					[1835] = 2755657729,
 					[1837] = 524288,
 					[1839] = 201352230,
 					[1841] = 204472450,
@@ -3973,23 +3966,23 @@ DataStore_QuestsDB = {
 					[1851] = 2160068301,
 					[1855] = 1083211776,
 					[1857] = 393216,
-					[1863] = 8388609,
+					[1863] = 1,
 					[1865] = 335556864,
 					[1867] = 20894,
 					[1869] = 117440544,
-					[1871] = 436469824,
+					[1871] = 437125184,
 					[1873] = 76936,
 					[1875] = 335544416,
 					[1877] = 4092592129,
 					[1879] = 3225026561,
 					[1881] = 12517888,
 					[1883] = 49190,
-					[1885] = 444799282,
+					[1885] = 444823858,
 					[1887] = 16896,
-					[1889] = 1073745984,
+					[1889] = 528385,
 					[1891] = 2890925184,
 					[1893] = 2429034498,
-					[1895] = 3992009664,
+					[1895] = 3992009708,
 					[1897] = 2,
 					[1899] = 3665821702,
 					[1901] = 2550136832,
@@ -3997,12 +3990,12 @@ DataStore_QuestsDB = {
 					[1905] = 144,
 					[1907] = 16414,
 					[1909] = 2316800,
-					[1913] = 2147500353,
-					[1919] = 268435456,
+					[1913] = 2415935809,
+					[1919] = 2415919104,
 					[1921] = 1073743888,
 					[1923] = 1024,
 					[1925] = 524288,
-					[1929] = 1573632,
+					[1929] = 2149058304,
 					[1931] = 1946157057,
 					[1937] = 536870912,
 					[1939] = 16,
@@ -4011,39 +4004,43 @@ DataStore_QuestsDB = {
 					[1945] = 131072,
 					[1951] = 2048,
 					[1957] = 1073751040,
-					[1959] = 142606337,
+					[1959] = 142632505,
 					[1961] = 3791676416,
-					[1963] = 27271170,
-					[1965] = 4195102,
+					[1963] = 94380034,
+					[1965] = 6292254,
 					[1967] = 210778060,
 					[1971] = 3615557632,
 					[1973] = 2684354560,
 					[1977] = 3505634784,
 					[1979] = 2282260608,
 					[1981] = 1092,
-					[1987] = 83886080,
+					[1983] = 1073741824,
+					[1987] = 4244635649,
 					[1989] = 4039131231,
-					[1991] = 3883925505,
-					[1993] = 1049600,
-					[1995] = 8388620,
+					[1991] = 3883925519,
+					[1993] = 2096128,
+					[1995] = 9515020,
 					[1997] = 1638924289,
-					[1999] = 8388608,
+					[1999] = 8192,
 					[2001] = 16512,
-					[2003] = 8127032,
+					[2003] = 477897272,
 					[2005] = 248,
-					[2007] = 1099237392,
+					[2007] = 1107101712,
 					[2009] = 3221229921,
-					[2011] = 524348,
+					[2011] = 557116,
 					[2013] = 8388608,
 					[2015] = 3670128,
-					[2017] = 557842574,
-					[2019] = 32,
+					[2017] = 559957134,
+					[2019] = 38,
 					[2021] = 32768,
-					[2025] = 16384,
+					[2025] = 872431624,
 					[2031] = 8,
 					[2035] = 100663296,
 					[2037] = 393216,
 					[2041] = 256,
+					[2043] = 32,
+					[2047] = 536871216,
+					[2054] = 2415919104,
 					[639] = 12582912,
 					[742] = 2097152,
 					[757] = 8388608,
@@ -4296,6 +4293,7 @@ DataStore_QuestsDB = {
 					[1022] = 16320,
 					[1023] = 4194364,
 					[1026] = 491736,
+					[2055] = 1058944,
 					[1030] = 8194,
 					[1032] = 1986789415,
 					[1034] = 288,
@@ -4393,7 +4391,7 @@ DataStore_QuestsDB = {
 					[1226] = 22342,
 					[1228] = 24862,
 					[1230] = 4227858433,
-					[1232] = 2332045854,
+					[1232] = 2332176926,
 					[1234] = 2147542657,
 					[1236] = 11264,
 					[1238] = 4208082897,
@@ -4621,7 +4619,7 @@ DataStore_QuestsDB = {
 					[1746] = 2143291392,
 					[1748] = 4225761273,
 					[1750] = 3624402944,
-					[1752] = 2147546112,
+					[1752] = 2147545088,
 					[1754] = 6291456,
 					[1756] = 2130338,
 					[1758] = 570398720,
@@ -4650,7 +4648,7 @@ DataStore_QuestsDB = {
 					[1806] = 134223872,
 					[1808] = 2,
 					[1810] = 3442475071,
-					[1812] = 3406708765,
+					[1812] = 3406741533,
 					[1814] = 670076864,
 					[1816] = 143431104,
 					[1818] = 1081999360,
@@ -4660,7 +4658,7 @@ DataStore_QuestsDB = {
 					[1830] = 134217732,
 					[1832] = 4286597378,
 					[1834] = 196608,
-					[1836] = 3221356634,
+					[1836] = 3221356666,
 					[1838] = 1037927426,
 					[1840] = 2097152,
 					[1842] = 555221008,
@@ -4671,9 +4669,9 @@ DataStore_QuestsDB = {
 					[1852] = 3238006786,
 					[1854] = 3132915712,
 					[1858] = 380,
-					[1860] = 1,
+					[1860] = 786625,
 					[1864] = 268959968,
-					[1866] = 3693084673,
+					[1866] = 3693084737,
 					[1868] = 1692925889,
 					[117] = 512,
 					[1872] = 33814708,
@@ -4682,66 +4680,73 @@ DataStore_QuestsDB = {
 					[1878] = 6,
 					[1880] = 368969986,
 					[1882] = 4261412865,
-					[1884] = 2214459952,
+					[1884] = 2482895408,
 					[1886] = 2359296,
-					[1888] = 4194304,
-					[1890] = 1081876521,
-					[1892] = 4004,
+					[1888] = 58720260,
+					[1890] = 1081876527,
+					[1892] = 1052548,
 					[1894] = 3775137927,
 					[1896] = 3761250704,
-					[1898] = 2763915296,
+					[1898] = 2763915304,
 					[1900] = 1024,
-					[1902] = 721422528,
+					[1902] = 733079744,
 					[1904] = 1840,
 					[1906] = 4096,
 					[1908] = 1058013184,
 					[1910] = 526592,
 					[1912] = 270336,
-					[1914] = 192,
+					[1914] = 452,
 					[1918] = 2048,
+					[1920] = 1073741824,
 					[1922] = 1642500,
 					[1924] = 12583936,
 					[1930] = 6,
-					[1934] = 285474820,
+					[1932] = 16777216,
+					[1934] = 352583684,
 					[1938] = 33100,
 					[1940] = 32768,
 					[1944] = 13708800,
-					[1946] = 540936,
+					[1946] = 541000,
 					[1950] = 1073741848,
-					[1952] = 1082130432,
+					[1952] = 1350565888,
 					[1956] = 512,
-					[1958] = 3758227456,
-					[1960] = 1277434104,
+					[1958] = 3221356544,
+					[1960] = 3424917752,
 					[1964] = 2184185856,
-					[1966] = 465567748,
+					[1966] = 465567780,
 					[1968] = 46137408,
 					[1970] = 56623104,
-					[1974] = 6816258,
+					[1974] = 276300290,
 					[1976] = 3178496,
 					[1978] = 143132808,
 					[1980] = 4542600,
-					[1988] = 4026531841,
-					[1990] = 195070,
-					[1992] = 528016422,
-					[1994] = 8,
-					[1996] = 137593648,
-					[1998] = 1074932192,
-					[2000] = 67361536,
+					[1988] = 4026532863,
+					[1990] = 4278385151,
+					[1992] = 528081958,
+					[1996] = 163021616,
+					[1998] = 1210848,
+					[2000] = 71817984,
+					[2002] = 1024,
+					[2004] = 1024,
 					[2006] = 128,
-					[2008] = 1074176,
-					[2010] = 14155782,
-					[2012] = 8388608,
+					[2008] = 1205248,
+					[2010] = 81264646,
+					[2012] = 42008576,
 					[126] = 2097152,
-					[2016] = 2214592512,
+					[2016] = 2348810240,
 					[2018] = 8853504,
 					[2020] = 2149056512,
-					[2024] = 2,
+					[2024] = 20972002,
+					[2026] = 268435456,
 					[2028] = 65632,
-					[2030] = 737280,
+					[2030] = 1676361728,
 					[2032] = 268435456,
 					[2034] = 16777216,
 					[2036] = 33554432,
+					[2040] = 8650752,
 					[128] = 524288,
+					[2048] = 1,
+					[2056] = 6400,
 					[144] = 1711276032,
 					[158] = 131072,
 					[159] = 268435456,
@@ -4758,177 +4763,179 @@ DataStore_QuestsDB = {
 					[205] = 65536,
 					[207] = 1611497472,
 					[208] = 131072,
-					[2014] = 4194304,
-					[2063] = 1073741824,
+					[2014] = 39854080,
+					[2051] = 33554432,
 					[382] = 4234870777,
-					[1535] = 1,
+					[2063] = 1073741824,
 					[381] = 1940357170,
-					[2046] = 65536,
+					[1535] = 1,
 					[380] = 67098462,
-					[1539] = 52480,
+					[2046] = 65664,
 					[379] = 4152280954,
-					[1543] = 666895376,
+					[1539] = 52480,
 					[378] = 3996647413,
-					[1551] = 3727366,
+					[1543] = 666895376,
 					[377] = 2943877047,
-					[217] = 1024,
 					[1555] = 1409286152,
 					[376] = 4093852641,
-					[1567] = 4127197189,
+					[217] = 1024,
+					[1559] = 805357568,
 					[375] = 2196239674,
-					[1571] = 4036497541,
+					[1567] = 4127197189,
 					[374] = 3269518499,
-					[1563] = 536903682,
+					[1571] = 4036497541,
 					[373] = 235724271,
-					[1575] = 1044258816,
+					[1563] = 536903682,
 					[372] = 503183056,
-					[1579] = 1677725697,
+					[1575] = 1044258816,
 					[371] = 4143972353,
 					[1583] = 12984321,
+					[1591] = 53747674,
 					[1599] = 905969670,
 					[1603] = 4194304,
 					[1531] = 2570874881,
 					[1587] = 10354728,
 					[1607] = 536903681,
-					[1611] = 35467330,
 					[367] = 2627510,
 					[1615] = 3960504321,
 					[366] = 2814412798,
-					[1651] = 940570304,
+					[1623] = 806912,
 					[365] = 4236377051,
 					[1655] = 134660096,
-					[1659] = 109053440,
+					[1619] = 2943893249,
 					[1663] = 390070272,
-					[224] = 436207617,
-					[1627] = 547772416,
+					[1639] = 2456956929,
 					[1675] = 32792,
+					[224] = 436207617,
 					[362] = 1096810428,
+					[1671] = 2683160953,
+					[361] = 536889024,
 					[225] = 2,
 					[1631] = 4286578689,
-					[361] = 536889024,
 					[1687] = 538968080,
 					[1635] = 3322052929,
-					[1695] = 3230072953,
 					[359] = 127053070,
+					[1695] = 3230072953,
 					[1679] = 142606336,
 					[1703] = 1073741926,
-					[1711] = 262144,
 					[357] = 3263693025,
 					[1707] = 67895296,
 					[356] = 226,
-					[1727] = 879788032,
+					[1715] = 2048,
 					[355] = 3925082112,
-					[1731] = 1124098049,
+					[1727] = 879788032,
 					[354] = 415170470,
-					[1667] = 2359296,
+					[1731] = 1124098049,
 					[353] = 2163182047,
+					[1667] = 2359296,
 					[1735] = 2685375015,
 					[1739] = 3221307477,
-					[1743] = 768,
 					[351] = 1747052929,
-					[1719] = 4229988353,
+					[1743] = 768,
 					[350] = 268451844,
-					[1747] = 3221225472,
+					[1719] = 4229988353,
 					[349] = 2147483649,
-					[1775] = 16776712,
+					[1747] = 3221225472,
 					[348] = 33589240,
+					[1775] = 16776712,
 					[1779] = 227200,
 					[1783] = 4202806,
-					[1787] = 1608520320,
 					[346] = 4226774015,
-					[1767] = 2137457146,
+					[1787] = 1608520320,
 					[345] = 4034340983,
-					[1791] = 2362624,
+					[1767] = 2137457146,
 					[344] = 3178766464,
-					[1799] = 9415173,
+					[1791] = 2362640,
 					[343] = 201383996,
-					[1803] = 1849700352,
+					[1799] = 9415173,
 					[342] = 491311,
-					[1807] = 83886081,
+					[1803] = 1849700352,
 					[341] = 3238355707,
-					[1811] = 4161010687,
+					[1807] = 83886081,
 					[340] = 4294967291,
 					[1150] = 1466564362,
 					[339] = 4026295867,
 					[1390] = 2147811843,
 					[338] = 4287628167,
-					[1751] = 1073741840,
+					[1454] = 57384,
 					[337] = 4160742275,
 					[1486] = 1118845414,
 					[336] = 4282786366,
-					[1502] = 2196773119,
+					[1755] = 163864,
 					[335] = 3997130779,
-					[1870] = 570425344,
+					[1502] = 2196773119,
 					[334] = 4287856593,
-					[1771] = 138416288,
+					[1870] = 570425344,
 					[333] = 784580222,
-					[1550] = 2,
+					[1771] = 138416288,
 					[332] = 4009287673,
+					[1550] = 2,
 					[1795] = 1966080,
-					[258] = 8192,
-					[259] = 3219390464,
+					[1025] = 494960640,
 					[330] = 97515016,
-					[260] = 1719468033,
+					[258] = 8192,
 					[329] = 4270719873,
+					[259] = 3219390464,
+					[260] = 1719468033,
 					[265] = 3209723905,
 					[242] = 262144,
-					[266] = 3534,
-					[268] = 28672,
 					[327] = 340778494,
-					[243] = 131072,
-					[269] = 8,
+					[266] = 3534,
 					[326] = 4023848938,
+					[243] = 131072,
+					[268] = 28672,
+					[269] = 8,
 					[270] = 402655232,
 					[244] = 3968,
-					[271] = 3221258237,
-					[272] = 4294934527,
 					[324] = 2147660491,
-					[245] = 4,
-					[273] = 16758782,
+					[271] = 3221258237,
 					[323] = 4180672355,
-					[274] = 63488,
-					[246] = 256,
+					[245] = 4,
+					[272] = 4294934527,
 					[322] = 1005504510,
-					[275] = 8388608,
+					[273] = 16758782,
+					[246] = 256,
 					[321] = 4268212207,
-					[1103] = 2826157954,
+					[274] = 63488,
 					[320] = 4294963247,
 					[1107] = 16893434,
 					[319] = 3934377937,
-					[248] = 4194320,
-					[1135] = 269354974,
+					[276] = 6,
 					[318] = 2110685221,
-					[1139] = 4026949364,
+					[248] = 4194320,
+					[278] = 3757576140,
 					[317] = 4048698365,
-					[286] = 4288413697,
+					[1135] = 269354974,
 					[316] = 2866872551,
-					[1147] = 1073741824,
+					[1139] = 4026949364,
 					[315] = 1409286296,
+					[286] = 4288413697,
+					[1147] = 1073741824,
 					[288] = 3498083073,
-					[289] = 20,
-					[290] = 1006634192,
 					[313] = 796638952,
-					[291] = 2,
+					[289] = 20,
 					[312] = 3460138784,
-					[292] = 268664840,
+					[290] = 1006634192,
 					[311] = 2535389600,
-					[293] = 3561689507,
+					[291] = 2,
 					[310] = 2546834670,
-					[294] = 3812395040,
+					[292] = 268664840,
 					[309] = 69238783,
-					[295] = 805323012,
+					[293] = 3561689507,
 					[308] = 4278153655,
-					[296] = 67239937,
-					[254] = 16777728,
+					[294] = 3812395040,
 					[307] = 4294735161,
-					[297] = 67108864,
+					[295] = 805323012,
+					[254] = 16777728,
 					[306] = 838925824,
-					[301] = 3290431488,
+					[296] = 67239937,
 					[305] = 1091078270,
-					[302] = 12768,
+					[297] = 67108864,
 					[304] = 1364210531,
+					[301] = 3290431488,
+					[303] = 65536,
 					[256] = 4032,
-					[1025] = 494960640,
+					[2049] = 2098562,
 					[1027] = 89395264,
 					[1029] = 4194304,
 					[1031] = 3820601345,
@@ -4967,11 +4974,11 @@ DataStore_QuestsDB = {
 					[1097] = 2140143520,
 					[1099] = 3304974219,
 					[1101] = 2886331351,
-					[276] = 6,
+					[1103] = 2826157954,
 					[1105] = 34093294,
 					[277] = 805306368,
 					[1109] = 3321889233,
-					[278] = 3757576140,
+					[1111] = 1610809496,
 					[1113] = 134853313,
 					[1115] = 4294701183,
 					[1117] = 234627327,
@@ -5000,7 +5007,7 @@ DataStore_QuestsDB = {
 					[1163] = 1879310792,
 					[1165] = 268436351,
 					[1167] = 1032276,
-					[303] = 65536,
+					[302] = 12768,
 					[1171] = 2080376384,
 					[1173] = 88101065,
 					[1175] = 268435466,
@@ -5054,7 +5061,7 @@ DataStore_QuestsDB = {
 					[1271] = 270925829,
 					[1273] = 75522688,
 					[1275] = 1409286176,
-					[1111] = 1610809496,
+					[275] = 8388608,
 					[1279] = 2155879014,
 					[1281] = 4039155640,
 					[1283] = 1342178641,
@@ -5088,13 +5095,13 @@ DataStore_QuestsDB = {
 					[1339] = 134199296,
 					[1341] = 4233468440,
 					[1343] = 1140867096,
-					[1755] = 163864,
+					[1751] = 1073741840,
 					[1347] = 262144,
 					[1349] = 14320,
 					[1351] = 416,
-					[1454] = 57384,
-					[1355] = 1106272265,
 					[1374] = 51781703,
+					[1355] = 1106272265,
+					[1811] = 4161010687,
 					[1359] = 452984832,
 					[1361] = 4210686,
 					[1363] = 1589214,
@@ -5128,7 +5135,7 @@ DataStore_QuestsDB = {
 					[1419] = 538836992,
 					[1421] = 3221225472,
 					[1423] = 8142,
-					[1715] = 2048,
+					[1711] = 262144,
 					[1427] = 491526,
 					[1429] = 2147483648,
 					[358] = 2785019409,
@@ -5140,15 +5147,15 @@ DataStore_QuestsDB = {
 					[1443] = 536870921,
 					[1445] = 32,
 					[1447] = 33570880,
-					[1671] = 2683160953,
+					[1627] = 547772416,
 					[363] = 4293165007,
-					[1639] = 2456956929,
+					[1659] = 109053440,
 					[364] = 3758030751,
-					[1619] = 2943893249,
+					[1651] = 940570304,
 					[1459] = 1024,
 					[1461] = 29696,
 					[1463] = 2151019521,
-					[1623] = 806912,
+					[1611] = 35467330,
 					[1467] = 613400576,
 					[1469] = 16777218,
 					[1471] = 68125128,
@@ -5156,7 +5163,7 @@ DataStore_QuestsDB = {
 					[1475] = 3725709313,
 					[1477] = 4262441545,
 					[1479] = 3619667968,
-					[1591] = 53747674,
+					[1579] = 1677725697,
 					[1483] = 2584464,
 					[1485] = 1194389001,
 					[1487] = 3077346789,
@@ -5168,7 +5175,7 @@ DataStore_QuestsDB = {
 					[1499] = 2828271752,
 					[1501] = 3324035073,
 					[1503] = 872579084,
-					[1559] = 805357568,
+					[1551] = 3727366,
 					[1507] = 3968,
 					[1509] = 52658208,
 					[1511] = 50396374,
@@ -5181,82 +5188,77 @@ DataStore_QuestsDB = {
 					[1525] = 4204549,
 					[1527] = 64275713,
 					[1529] = 259,
-					[2051] = 33554432,
+					[2075] = 32768,
 				},
-				["story91Progress"] = 6,
+				["story91Progress"] = 9,
 				["Callings"] = {
-					[60422] = "2124|3581873",
+					[60422] = "4240|3581873",
 				},
-				["HistoryBuild"] = "43206",
-				["activeCovenantID"] = 2,
+				["HistoryBuild"] = "43340",
+				["covenantCampaignProgress"] = 9,
 				["Quests"] = {
-					3936256, -- [1]
-					3936256, -- [2]
-					3938304, -- [3]
-					3938304, -- [4]
-					3938304, -- [5]
-					3940392, -- [6]
+					3934208, -- [1]
+					3934208, -- [2]
+					3936256, -- [3]
+					3936256, -- [4]
+					3936256, -- [5]
+					3938344, -- [6]
 					3940392, -- [7]
 					3942440, -- [8]
-					3944488, -- [9]
-					1980416, -- [10]
-					3948546, -- [11]
-					3948546, -- [12]
-					3948584, -- [13]
-					3948584, -- [14]
-					3950592, -- [15]
-					3297320, -- [16]
-					3954728, -- [17]
+					1978368, -- [9]
+					3291176, -- [10]
+					3948544, -- [11]
+					3950592, -- [12]
+					3952680, -- [13]
+					3954688, -- [14]
+					3954688, -- [15]
+					3954688, -- [16]
+					3956736, -- [17]
 					3956736, -- [18]
-					3958786, -- [19]
-					3958784, -- [20]
-					3958784, -- [21]
-					3960832, -- [22]
-					3960832, -- [23]
-					3960832, -- [24]
-					3962880, -- [25]
-					3962880, -- [26]
-					3964960, -- [27]
-					3967008, -- [28]
-					3313704, -- [29]
-					3315752, -- [30]
-					3971104, -- [31]
-					3973120, -- [32]
-					3975168, -- [33]
+					3958816, -- [19]
+					3960872, -- [20]
+					3962912, -- [21]
+					3309608, -- [22]
+					3309608, -- [23]
+					3966976, -- [24]
+					3966976, -- [25]
+					3313704, -- [26]
+					3969056, -- [27]
+					3971072, -- [28]
+					3971072, -- [29]
+					3973120, -- [30]
+					3975168, -- [31]
+					3977216, -- [32]
+					3977216, -- [33]
 					3977216, -- [34]
 					3977216, -- [35]
-					3979264, -- [36]
-					3981312, -- [37]
-					3981312, -- [38]
-					3981312, -- [39]
-					3981312, -- [40]
 				},
 				["Emissaries"] = {
-					[60406] = "3|3|783|3/3 Complete 3 World Quests in Bastion with your trainee|1650506319|Training in Bastion",
-					[60409] = "0|3|1218|0/3 Complete 3 World Quests in Maldraxxus with your trainee|1650220995|Training in Maldraxxus",
-					[60441] = "0|1|600|0/1 Defeat the powerful foes of Ardenweald|1650430854|Challenges in Ardenweald",
+					[60406] = "3|3|855|3/3 Complete 3 World Quests in Bastion with your trainee|1651279563|Training in Bastion",
+					[60409] = "3|3|4068|3/3 Complete 3 World Quests in Maldraxxus with your trainee|1651346010|Training in Maldraxxus",
+					[60410] = "0|3|4049|0/3 Complete 3 World Quests in Revendreth with your trainee|1650828764|Training Our Forces",
 					[60444] = "0|1|542|0/1 Defeat the powerful foes of Bastion|1647064786|Challenges in Bastion",
 					[60446] = "1|1|3662|1/1 Defeat the powerful foes of Maldraxxus|1650506345|Challenges in Maldraxxus",
-					[60448] = "0|1|0|0/1 Defeat the powerful foes of Revendreth|1650205500|Challenges in Revendreth",
-					[50598] = "0|4|652|0/4 Complete 4 world quests in Zuldazar.|1650514164|Zandalari Empire",
-					[50603] = "0|4|3532|0/4 Complete 4 world quests in Vol'dun|1650514164|Voldunai",
-					[60389] = "0|3|412|0/3 Complete 3 World Quests in Ardenweald|1646899784|Aiding Ardenweald",
-					[50562] = "0|4|2092|0/4 Complete 4 Azerite World Quest for Magni|1650514164|Champions of Azeroth",
-					[60422] = "1|1|2129|Ardenweald Defended (100%)|1650511926|A Call to Ardenweald",
-					[60410] = "3|3|1877|3/3 Complete 3 World Quests in Revendreth with your trainee|1646034238|Training Our Forces",
-					[60417] = "3|3|4136|3/3 Coin of Brokerage|1646071494|Rare Resources",
-					[60394] = "0|3|2294|0/3 Complete 3 World Quests in Bastion|1646268432|Aiding Bastion",
-					[60456] = "0|3|0|0/3 Rare or special encounter bosses slain|1645535518|Storm the Maw",
+					[60448] = "1|1|3859|1/1 Defeat the powerful foes of Revendreth|1651272140|Challenges in Revendreth",
+					[60432] = "1|1|2132|Revendreth Defended (100%)|1651030173|Troubles at Home",
+					[56120] = "0|4|1391|0/4 Complete world quests in Nazjatar|1651420213|The Unshackled",
+					[60389] = "0|3|46|0/3 Complete 3 World Quests in Ardenweald|1650809734|Aiding Ardenweald",
+					[60456] = "3|3|1990|3/3 Rare or special encounter bosses slain|1650865895|Storm the Maw",
+					[60422] = "0|1|4271|Ardenweald Defended (0%)|1651420213|A Call to Ardenweald",
+					[60417] = "3|3|3570|3/3 Coin of Brokerage|1651030273|Rare Resources",
+					[60460] = "0|150|535|0/150 Gather Anima Embers from Torghast|1646805968|Anima Salvage",
+					[50598] = "0|4|2831|0/4 Complete 4 world quests in Zuldazar.|1651420213|Zandalari Empire",
+					[60399] = "3|3|3359|3/3 Complete 3 World Quests in Revendreth|1645167770|Aiding Revendreth",
 					[60427] = "1|1|2095|Bastion Defended (100%)|1650254800|A Call to Bastion",
 					[60397] = "0|3|1922|0/3 Complete 3 World Quests in Maldraxxus|1647586751|Aiding Maldraxxus",
-					[60460] = "0|150|535|0/150 Gather Anima Embers from Torghast|1646805968|Anima Salvage",
-					[42233] = "0|4|3532|0/4 Complete 4 world quests in Highmountain.|1650514164|Highmountain Tribes",
-					[42420] = "0|4|652|0/4 Complete 4 world quests in Azsuna|1650514164|Court of Farondis",
-					[60432] = "0|1|1927|Revendreth Defended (75%)|1645858455|Troubles at Home",
-					[42422] = "0|4|2092|0/4 Complete 4 Wardens World Quests|1650514164|The Wardens",
-					[60399] = "3|3|3359|3/3 Complete 3 World Quests in Revendreth|1645167770|Aiding Revendreth",
-					[60431] = "0|1|546|Maldraxxus Defended (0%)|1646978149|A Call to Maldraxxus",
+					[42170] = "0|4|2831|0/4 Complete 4 world quests in Val'sharah|1651420213|The Dreamweavers",
+					[50603] = "0|4|4271|0/4 Complete 4 world quests in Vol'dun|1651420213|Voldunai",
+					[60431] = "1|1|2301|Maldraxxus Defended (100%)|1651279238|A Call to Maldraxxus",
 					[60401] = "3|3|3093|3/3 Complete 3 World Quests in Ardenweald with your trainee|1646479715|Training in Ardenweald",
+					[42422] = "0|4|4271|0/4 Complete 4 Wardens World Quests|1651420213|The Wardens",
+					[60394] = "0|3|2294|0/3 Complete 3 World Quests in Bastion|1646268432|Aiding Bastion",
+					[60441] = "0|1|600|0/1 Defeat the powerful foes of Ardenweald|1650430854|Challenges in Ardenweald",
+					[48642] = "0|4|1391|0/4 Complete 4 Argussian Reach World Quests|1651420213|Argussian Reach",
 				},
 			},
 		},

@@ -4637,4 +4637,6 @@ function SetModelID(fileID)
 	end);
 end
 
+
+/script local m=Narci.ActiveModel;local v=m.variationID;v=(v<15 and v+1)or(0);m.variationID=v;m:PlayAnimation(m.animationID);print(v);
 --]]
