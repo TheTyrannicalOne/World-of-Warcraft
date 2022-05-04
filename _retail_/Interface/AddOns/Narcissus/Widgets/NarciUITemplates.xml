@@ -2717,7 +2717,7 @@
 	<EditBox name="NarciResponsiveEditBoxTemplate" autoFocus="false" inherits="NarciFrameBorderTemplate" mixin="NarciResponsiveClipboardMixin" virtual="true">
 		<KeyValues>
 			<KeyValue key="cornerRadius" value="4" type="number"/>
-			<KeyValue key="isSubFrame" value="true" type="bool"/>
+			<KeyValue key="isSubFrame" value="true" type="boolean"/>
 		</KeyValues>
 		<TextInsets>
 			<AbsInset left="16" right="16" top="16" bottom="16"/>
@@ -2743,7 +2743,7 @@
 	<Frame name="NarciScrollEditBoxTemplate" inherits="NarciFrameBorderTemplate" mixin="NarciScrollEditBoxMixin" virtual="true">
 		<KeyValues>
 			<KeyValue key="cornerRadius" value="4" type="number"/>
-			<KeyValue key="isSubFrame" value="true" type="bool"/>
+			<KeyValue key="isSubFrame" value="true" type="boolean"/>
 		</KeyValues>
 		<HitRectInsets>
 			<AbsInset left="8" right="8" top="8" bottom="8"/>
@@ -2802,7 +2802,7 @@
 		<KeyValues>
 			<KeyValue key="swipeRadius" value="36" type="number"/>
 			<KeyValue key="numPolygonSides" value="0" type="number"/>
-			<KeyValue key="keepOnHide" value="false" type="bool"/>
+			<KeyValue key="keepOnHide" value="false" type="boolean"/>
 		</KeyValues>
 		<Layers>
 			<Layer levle="OVERLAY">
@@ -2823,8 +2823,8 @@
 
 	<Frame name="NarciAutoCloseFrameTemplate" mixin="NarciAutoCloseFrameMixin" hidden="true" virtual="true">
 		<KeyValues>
-			<KeyValue key="autoClose" value="true" type="bool"/>
-			<!--KeyValue key="setParentObjectManually" value="true" type="bool"/-->
+			<KeyValue key="autoClose" value="true" type="boolean"/>
+			<!--KeyValue key="setParentObjectManually" value="true" type="boolean"/-->
 		</KeyValues>
 		<Animations>
 			<AnimationGroup parentKey="AutoCloseTimer">

@@ -1,82 +1,80 @@
 
 MasterPlanAG = {
-	["IgnoreRewards"] = {
-	},
-	["Argent Dawn"] = {
-		["Shanyt"] = {
-			["lastCacheTime"] = 1651025600,
-			["summary"] = {
-				["lastOilTime"] = 1651420369,
-				["tt2"] = 1651367203,
-				["tt3"] = true,
-				["ti1"] = 118531,
-				["tt1"] = 1651267097,
-				["ti3"] = 127855,
-				["inProgress"] = {
-					[683] = 1651431078,
-					[191] = 1651423954,
-					[337] = 1651477884,
-					[399] = 1651456287,
-					[325] = 1651449117,
-					[186] = 1651423963,
-					[312] = 1651441951,
-					[457] = 1651449103,
-					[184] = 1651422161,
-					[214] = 1651427538,
-					[737] = 1651420839,
-					[174] = 1651423957,
-					[727] = 1651422178,
-					[736] = 1651421274,
-				},
-				["ti2"] = 122486,
-			},
+	["Zul'jin"] = {
+		["Zulbathal"] = {
+			["class"] = "DRUID",
 			["faction"] = "Horde",
-			["cacheSize"] = 1000,
-			["class"] = "WARRIOR",
-			["curRes"] = 7481,
-			["curOil"] = 97225,
 		},
 	},
 	["Dalaran"] = {
 		["Illingrath"] = {
-			["class"] = "DEMONHUNTER",
 			["faction"] = "Alliance",
+			["class"] = "DEMONHUNTER",
 		},
 		["Tendralas"] = {
-			["class"] = "PRIEST",
 			["faction"] = "Alliance",
+			["class"] = "PRIEST",
 		},
 		["Avisar"] = {
-			["faction"] = "Alliance",
 			["class"] = "PALADIN",
+			["faction"] = "Alliance",
 		},
 		["Thorinbane"] = {
-			["faction"] = "Alliance",
 			["class"] = "WARRIOR",
+			["faction"] = "Alliance",
 		},
 		["Rotclaugh"] = {
-			["faction"] = "Alliance",
 			["class"] = "DEATHKNIGHT",
+			["faction"] = "Alliance",
 		},
 		["Varlouris"] = {
-			["class"] = "SHAMAN",
 			["faction"] = "Alliance",
+			["class"] = "SHAMAN",
 		},
 		["Darnastris"] = {
-			["faction"] = "Alliance",
 			["class"] = "MAGE",
+			["faction"] = "Alliance",
 		},
 	},
 	["Black Dragonflight"] = {
 		["Durlok"] = {
-			["faction"] = "Horde",
 			["class"] = "DRUID",
+			["faction"] = "Horde",
 		},
 	},
-	["Zul'jin"] = {
-		["Zulbathal"] = {
+	["Argent Dawn"] = {
+		["Shanyt"] = {
 			["faction"] = "Horde",
-			["class"] = "DRUID",
+			["summary"] = {
+				["lastOilTime"] = 1651424382,
+				["ti2"] = 122486,
+				["inProgress"] = {
+					[131] = 1651472366,
+					[337] = 1651477884,
+					[674] = 1651472360,
+					[266] = 1651472363,
+					[194] = 1651463336,
+					[555] = 1651490382,
+					[583] = 1651490144,
+					[570] = 1651472379,
+					[745] = 1651489182,
+					[672] = 1651472349,
+					[175] = 1651460639,
+					[397] = 1651493969,
+				},
+				["ti3"] = 127855,
+				["ti1"] = 118531,
+				["tt1"] = 1651267097,
+				["tt3"] = 1651200197,
+				["tt2"] = 1651367203,
+			},
+			["curOil"] = 96395,
+			["cacheSize"] = 1000,
+			["class"] = "WARRIOR",
+			["curRes"] = 9850,
+			["lastCacheTime"] = 1651424333,
 		},
+	},
+	["IgnoreRewards"] = {
 	},
 }

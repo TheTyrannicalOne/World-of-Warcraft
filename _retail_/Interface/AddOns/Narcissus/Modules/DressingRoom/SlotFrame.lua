@@ -453,19 +453,28 @@ function NarciDressingRoomItemButtonMixin:OnDragStop()
 end
 
 function NarciDressingRoomItemButtonMixin:IsSameSouce(newSouceID, newSecondarySourceID)
-    if self.isValidForSecondarySource then
-        return (newSouceID == self.sourceID) and (newSecondarySourceID == self.secondarySourceID);
+    if self.isSlotHidden then
+        return false
     else
-        return (newSouceID == self.sourceID)
+        if self.isValidForSecondarySource then
+            return (newSouceID == self.sourceID) and (newSecondarySourceID == self.secondarySourceID);
+        else
+            return (newSouceID == self.sourceID)
+        end
     end
 end
 
 function NarciDressingRoomItemButtonMixin:SetItemSource(sourceID, secondarySourceID)
     --secondarySourceID can be (ItemTransmogInfoMixin).secondaryAppearanceID or .illusionID
+    if sourceID == 0 and self.isSlotHidden then
+        return
+    end
+
     local isKnown;
     sourceID, isKnown = DataProvider:FindKnownSource(sourceID);
+
     self.sourceID = sourceID;
-    self:SetHiddenVisual(false);
+    self:HideSlot(false);
     self:SetSecondarySource(secondarySourceID);
 
     if not(sourceID and sourceID > 0) then
@@ -600,7 +609,7 @@ function NarciDressingRoomItemButtonMixin:Desaturate(state)
     end
 end
 
-function NarciDressingRoomItemButtonMixin:SetHiddenVisual(state)
+function NarciDressingRoomItemButtonMixin:HideSlot(state)
     if state then
         self.ItemIcon:SetVertexColor(0.6, 0.6, 0.6);
         if self.isValidForSecondarySource then
@@ -963,7 +972,7 @@ end)
 function NarciDressingRoomItemButtonMixin:OnMouseDown(mouseButton)
     if mouseButton == "LeftButton" then
         if self:HasItem() then
-            self:SetHiddenVisual(not self.isSlotHidden);
+            self:HideSlot(not self.isSlotHidden);
             self:DressSlot(not self.isSlotHidden);
         else
             self:DressSlot(false);

@@ -14,6 +14,10 @@ L["Dropdown.RegionPoint.TOPLEFT.Desc"] = "左上 - 方形的左上角"
 L["Dropdown.RegionPoint.TOPRIGHT.Desc"] = "右上 - 方形的右上角"
 L["Dropdown.Texture.arrow_tip_green.Desc"] = "綠色 3D 箭頭"
 L["Dropdown.Texture.arrow_tip_red.Desc"] = "紅色 3D 箭頭"
+--[[Translation missing --]]
+L["Dropdown.Texture.Arrows_Away.Desc"] = "Arrows Away Nameplate"
+--[[Translation missing --]]
+L["Dropdown.Texture.Arrows_Towards.Desc"] = "Arrows Towards Nameplate"
 L["Dropdown.Texture.BlueArrow.Desc"] = "藍色向下箭頭"
 L["Dropdown.Texture.bluearrow1.Desc"] = "抽象藍色向下箭頭"
 L["Dropdown.Texture.circles_target.Desc"] = "紅色同心圓標靶"
@@ -75,6 +79,10 @@ L["Option.UnitReactionType.opacity.Desc"] = "材質圖案的透明度。1 是完
 L["Option.UnitReactionType.opacity.Name"] = "材質透明度"
 L["Option.UnitReactionType.texture.Desc"] = "指示箭頭使用的材質圖案"
 L["Option.UnitReactionType.texture.Name"] = "材質"
+--[[Translation missing --]]
+L["Option.UnitReactionType.textureCustom.Desc"] = "The custom texture path to use for the indicator"
+--[[Translation missing --]]
+L["Option.UnitReactionType.textureCustom.Name"] = "Custom Texture"
 L["Option.UnitReactionType.texturePoint.Desc"] = "材質圖案的哪個位置要對齊到血條"
 L["Option.UnitReactionType.texturePoint.Name"] = "材質對齊點"
 L["Option.UnitReactionType.width.Desc"] = "材質圖案的寬度"

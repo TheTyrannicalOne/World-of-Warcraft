@@ -726,17 +726,18 @@ function NarciEquipmentTooltipMixin:DisplayItemData(link, itemData, slotID, visu
     self:Show();
 end
 
-function NarciEquipmentTooltipMixin:SetTransmogSlot(slotID)
+function NarciEquipmentTooltipMixin:SetTransmogSource(appliedSourceID)
     self:ClearLines();
     self:SetUseTransmogLayout(true);
 
-    local appliedSourceID, appliedVisualID, hasSecondaryAppearance = GetSlotVisualID(slotID);
+    --local appliedSourceID, appliedVisualID, hasSecondaryAppearance = GetSlotVisualID(slotID);
     if appliedSourceID and appliedSourceID > 0 then
         local sourceInfo = C_TransmogCollection.GetSourceInfo(appliedSourceID);
         local itemName = sourceInfo and sourceInfo.name;
         if not itemName or itemName == "" then
             return
         end
+        local appliedVisualID = sourceInfo.visualID;
         local itemID, itemType, itemSubType, itemEquipLoc, icon, classID, subclassID = GetItemInfoInstant(sourceInfo.itemID);
         local quality = sourceInfo.quality;
         if quality then
@@ -1076,7 +1077,7 @@ end
 
 function NarciEquipmentTooltipMixin:SetTransmogFromSlotButton(slotButton, offsetX, offsetY)
     self:AnchorToSlotButton(slotButton, offsetX, offsetY);
-    self:SetTransmogSlot(slotButton.slotID);
+    self:SetTransmogSource(slotButton.sourceID);
     self:FadeIn();
 end
 

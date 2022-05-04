@@ -47,8 +47,8 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2022/04/16 18:49",
 			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["lastUpdate"] = 1651425534,
-				["lastVisitDate"] = "2022/05/01 13:18",
+				["lastUpdate"] = 1651555872,
+				["lastVisitDate"] = "2022/05/03 01:31",
 			},
 		},
 	},

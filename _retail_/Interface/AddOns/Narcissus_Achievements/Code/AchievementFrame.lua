@@ -30,7 +30,6 @@ local format = string.format;
 local tremove = table.remove;
 local tinsert = table.insert;
 
-local GetAchievementInfo = GetAchievementInfo;
 local GetAchievementNumCriteria = GetAchievementNumCriteria;
 local GetAchievementCriteriaInfo = GetAchievementCriteriaInfo;
 local GetRewardItemID = C_AchievementInfo.GetRewardItemID;

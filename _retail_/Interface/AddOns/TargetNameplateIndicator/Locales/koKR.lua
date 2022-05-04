@@ -23,6 +23,10 @@ L["Dropdown.RegionPoint.TOPLEFT.Desc"] = "Top Left - The top left corner of the 
 L["Dropdown.RegionPoint.TOPRIGHT.Desc"] = "Top Right - The top right corner of the rectangle"
 L["Dropdown.Texture.arrow_tip_green.Desc"] = "녹색 3D 화살표"
 L["Dropdown.Texture.arrow_tip_red.Desc"] = "빨간색 3D 화살표"
+--[[Translation missing --]]
+L["Dropdown.Texture.Arrows_Away.Desc"] = "Arrows Away Nameplate"
+--[[Translation missing --]]
+L["Dropdown.Texture.Arrows_Towards.Desc"] = "Arrows Towards Nameplate"
 L["Dropdown.Texture.BlueArrow.Desc"] = "아래쪽을 가리키는 파란색 화살표"
 L["Dropdown.Texture.bluearrow1.Desc"] = "아래쪽을 가리키는 추상 스타일 파란색 화살표"
 --[[Translation missing --]]
@@ -104,6 +108,10 @@ L["Option.UnitReactionType.opacity.Desc"] = "텍스처의 불투명도입니다.
 L["Option.UnitReactionType.opacity.Name"] = "텍스처 불투명도"
 L["Option.UnitReactionType.texture.Desc"] = "표시기에 사용할 텍스처"
 L["Option.UnitReactionType.texture.Name"] = "텍스처"
+--[[Translation missing --]]
+L["Option.UnitReactionType.textureCustom.Desc"] = "The custom texture path to use for the indicator"
+--[[Translation missing --]]
+L["Option.UnitReactionType.textureCustom.Name"] = "Custom Texture"
 L["Option.UnitReactionType.texturePoint.Desc"] = "이름표에 고정되어야 하는 텍스처의 지점"
 L["Option.UnitReactionType.texturePoint.Name"] = "텍스처 지점"
 L["Option.UnitReactionType.width.Desc"] = "텍스처의 너비"

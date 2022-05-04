@@ -4,26 +4,26 @@ RareShareDB = {
 	},
 	["Config"] = {
 		["MapPin"] = true,
-		["Sound"] = {
-			["Rares"] = true,
-			["Master"] = true,
-			["Duplicates"] = true,
-		},
+		["ChatAnnounce"] = true,
 		["TomTom"] = {
 			["Rares"] = true,
 			["Master"] = true,
 			["Duplicates"] = true,
 		},
-		["ChatAnnounce"] = true,
-		["OnDeath"] = false,
 		["CChannel"] = {
-			["CID"] = 1,
 			["CName"] = "General - Vale of Eternal Blossoms",
+			["CID"] = 1,
+		},
+		["OnDeath"] = false,
+		["Sound"] = {
+			["Rares"] = true,
+			["Master"] = true,
+			["Duplicates"] = true,
 		},
 		["Duplicates"] = true,
 	},
 	["LastAnnounce"] = {
-		["Time"] = 1651418050,
-		["ID"] = 178229,
+		["Time"] = 1651554373,
+		["ID"] = 157153,
 	},
 }

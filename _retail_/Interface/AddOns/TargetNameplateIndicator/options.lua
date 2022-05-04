@@ -1,5 +1,3 @@
--- List globals here for Mikk's FindGlobals script
-
 local addon, TNI = ...
 local ACR = LibStub("AceConfigRegistry-3.0")
 local ACD = LibStub("AceConfigDialog-3.0")
@@ -41,6 +39,8 @@ local TEXTURE_NAMES = {
 	"Q_RedTarget",
 	"Q_WhiteTarget",
 	"Hunters_Mark",
+	"Arrows_Towards",
+	"Arrows_Away",
 }
 
 -- Add the directory prefix to the texture names and localise the descriptions

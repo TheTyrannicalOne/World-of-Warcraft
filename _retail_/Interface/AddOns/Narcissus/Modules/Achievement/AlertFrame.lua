@@ -121,7 +121,7 @@ end
 
 local function CriteriaAlertFrame_SetUp(frame, achievementID, criteriaString)
     frame.id = achievementID;
-    frame.Name:SetText(criteriaString);
+    frame.name:SetText(criteriaString);
     frame.unlockedText:SetText( string.upper(ACHIEVEMENT_PROGRESSED) );
     SetSmallFont(frame.unlockedText);
 end

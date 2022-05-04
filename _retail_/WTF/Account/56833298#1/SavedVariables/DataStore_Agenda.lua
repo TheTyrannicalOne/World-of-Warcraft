@@ -37,17 +37,20 @@ DataStore_AgendaDB = {
 			["Default.Dalaran.Illingrath"] = {
 				["lastUpdate"] = 1650157094,
 			},
-			["Default.Zul'jin.Zulbathal"] = {
-				["lastUpdate"] = 1650149500,
-			},
 			["Default.Dalaran.Thorinbane"] = {
 				["lastUpdate"] = 1648345057,
+			},
+			["Default.Zul'jin.Zulbathal"] = {
+				["lastUpdate"] = 1650149500,
 			},
 			["Default.Dalaran.Varlouris"] = {
 				["lastUpdate"] = 1648343298,
 			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["lastUpdate"] = 1651425518,
+				["lastUpdate"] = 1651555263,
+				["ItemCooldowns"] = {
+					"Primal Egg|1651554841|259200", -- [1]
+				},
 			},
 		},
 	},

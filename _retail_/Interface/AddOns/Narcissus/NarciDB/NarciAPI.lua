@@ -1153,6 +1153,25 @@ local function LanguageDetector(str)
 	return "RM"
 end
 
+local function GetFirstLetterLanguage(str)
+    local c = string.byte(str, 1);
+    if (c > 0 and c <= 127)then
+        return "RM"
+    elseif c == 195 then
+        return "RM"	--Latin/Greek
+    elseif (c >= 208 and c <=211) then
+        return "RU"
+    elseif (c >= 224 and c <= 227) then
+        return "JP"
+    elseif (c >= 228 and c <= 233) then
+        return "CN"
+    elseif (c >= 234 and c <= 237) then
+        return "KR"
+    elseif (c >= 240 and c <= 244) then
+        return "CN"	--Unknown invalid
+    end
+end
+
 NarciAPI.LanguageDetector = LanguageDetector;
 --[[
 function LDTest(string)
@@ -1203,6 +1222,24 @@ local NormalFont12 = {
 	["JP"] = {"Interface\\AddOns\\Narcissus\\Font\\NotoSansCJKsc-Medium.otf", 11},
 }
 
+local ActorNameFont = {
+	["CN"] = {"Interface\\AddOns\\Narcissus\\Font\\NotoSansCJKsc-Medium.otf", 8},
+	["RM"] = {"Interface\\AddOns\\Narcissus\\Font\\SourceSansPro-Semibold.ttf", 9},
+	["RU"] = {"Interface\\AddOns\\Narcissus\\Font\\NotoSans-Medium.ttf", 8},
+	["KR"] = {"Interface\\AddOns\\Narcissus\\Font\\NotoSansCJKsc-Medium.otf", 8},
+	["JP"] = {"Interface\\AddOns\\Narcissus\\Font\\NotoSansCJKsc-Medium.otf", 8},
+}
+
+local function SmartSetActorName(fontstring, text)
+	--Automatically apply different font based on given text languange. Change text color after this step.
+	if not fontstring then return; end;
+	fontstring:SetText(text);
+	local language = GetFirstLetterLanguage(text);
+	if language and ActorNameFont[language] then
+		fontstring:SetFont(ActorNameFont[language][1] , ActorNameFont[language][2]);
+	end
+end
+
 local function SmartFontType(self, fontTable)
 	local str = self:GetText();
 	local language = LanguageDetector(str);
@@ -1234,6 +1271,7 @@ local function SmartSetName(fontString, str)
     fontString:SetText(str);
 end
 
+NarciAPI.SmartSetActorName = SmartSetActorName;
 NarciAPI.SmartFontType = NarciAPI_SmartFontType;
 NarciAPI.SmartSetName = SmartSetName;
 
@@ -3082,11 +3120,17 @@ end
 
 NarciAPI.UpdateScreenshotsCounter = UpdateScreenshotsCounter;
 
+local function GetClassColorByClassID(classID)
+    local classInfo = classID and C_CreatureInfo.GetClassInfo(classID);
+    if classInfo then
+        return C_ClassColor.GetClassColor(classInfo.classFile);
+    end
+end
 
 local function WrapNameWithClassColor(name, classID, specID, showIcon, offsetY)
     local classInfo = C_CreatureInfo.GetClassInfo(classID);
     if classInfo then
-        local color = C_ClassColor.GetClassColor(classInfo.classFile);
+        local color = GetClassColorByClassID(classID);
         if color then
             if specID and showIcon then
                 local str = color:WrapTextInColorCode(name);
@@ -3107,7 +3151,7 @@ local function WrapNameWithClassColor(name, classID, specID, showIcon, offsetY)
     end
 end
 
-
+NarciAPI.GetClassColorByClassID = GetClassColorByClassID;
 NarciAPI.WrapNameWithClassColor = WrapNameWithClassColor;
 
 

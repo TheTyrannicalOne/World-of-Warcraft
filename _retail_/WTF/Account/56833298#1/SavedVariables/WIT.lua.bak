@@ -1,15 +1,9 @@
 
 WITDB = {
-	["Version"] = "v4.0.9",
 	["Settings"] = {
-		["MinimapIcon"] = {
-		},
-		["CustomItemPrices"] = {
-		},
-		["RecorderMinPrice"] = 0,
 		["FarmPlannerIds"] = {
 		},
-		["BagValueMinQuality"] = 1,
+		["TUJPricingSelect"] = "market",
 		["Modules"] = {
 			["Dashboard"] = {
 				["ShowCurrentContent"] = true,
@@ -17,21 +11,34 @@ WITDB = {
 				},
 			},
 		},
-		["CustomPriceSource"] = "DBMinBuyout",
-		["LegacyCustomPriceSource"] = "DBMinBuyout",
-		["PricingSelect"] = "DBMarket",
 		["BagValueMinPrice"] = 0,
-		["HideMinimapIcon"] = false,
-		["RecorderMinQuality"] = 1,
+		["CustomPriceSource"] = "DBMinBuyout",
 		["Recorder"] = {
 		},
-		["BelowTresholdValue"] = 1,
-		["LegacyPricingSelect"] = "DBMarket",
-	},
-	["UserData"] = {
-		["ColumnFilters"] = {
+		["MinimapIcon"] = {
 		},
+		["LegacyPricingSelect"] = "DBMarket",
+		["DataSource"] = 1,
+		["RecorderMinPrice"] = 0,
+		["BelowTresholdValue"] = 1,
+		["TUJCustomItemPrices"] = {
+		},
+		["TUJLegacyPricingSelect"] = "market",
+		["LegacyCustomPriceSource"] = "DBMinBuyout",
+		["RecorderMinQuality"] = 1,
+		["TUJLegacyCustomPriceSource"] = "market",
+		["TUJCustomPriceSource"] = "market",
+		["BagValueMinQuality"] = 1,
+		["PricingSelect"] = "DBMarket",
+		["HideMinimapIcon"] = false,
+		["CustomItemPrices"] = {
+		},
+	},
+	["Version"] = "v4.0.10",
+	["UserData"] = {
 		["Farms"] = {
+		},
+		["ColumnFilters"] = {
 		},
 	},
 }

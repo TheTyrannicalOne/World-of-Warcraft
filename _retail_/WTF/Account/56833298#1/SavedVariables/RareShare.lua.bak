@@ -4,26 +4,26 @@ RareShareDB = {
 	},
 	["Config"] = {
 		["MapPin"] = true,
-		["CChannel"] = {
-			["CName"] = "General - Zereth Mortis",
-			["CID"] = 1,
+		["Sound"] = {
+			["Rares"] = true,
+			["Master"] = true,
+			["Duplicates"] = true,
 		},
 		["TomTom"] = {
 			["Rares"] = true,
 			["Master"] = true,
 			["Duplicates"] = true,
 		},
-		["Sound"] = {
-			["Rares"] = true,
-			["Master"] = true,
-			["Duplicates"] = true,
-		},
-		["OnDeath"] = false,
 		["ChatAnnounce"] = true,
+		["OnDeath"] = false,
+		["CChannel"] = {
+			["CID"] = 1,
+			["CName"] = "General - Shrine of Two Moons",
+		},
 		["Duplicates"] = true,
 	},
 	["LastAnnounce"] = {
-		["Time"] = 1651418050,
-		["ID"] = 178229,
+		["Time"] = 1651457566,
+		["ID"] = 179108,
 	},
 }

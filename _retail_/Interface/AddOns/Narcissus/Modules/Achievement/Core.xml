@@ -413,7 +413,7 @@
 						</Offset>
 					</Shadow>
 					<Anchors>
-						<Anchor point="BOTTOM" relativeKey="$parent.Name" relativePoint="TOP" x="0" y="5"/>
+						<Anchor point="BOTTOM" relativeKey="$parent.name" relativePoint="TOP" x="0" y="5"/>
 					</Anchors>
 				</FontString>
 			</Layer>

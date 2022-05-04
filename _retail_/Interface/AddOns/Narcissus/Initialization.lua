@@ -38,6 +38,7 @@ local DefaultValue = {
     ["DressingRoom"] = true,                        --Enable dressing room module
     ["DressingRoomUseTargetModel"] = true,          --Replace the the dressing room room with your targeted player
     ["DressingRoomIncludeItemID"] = false,          --Show Item ID in the clipboard
+    ["DressingRoomShowIconSelect"] = false,         --Display a list of icons when saving a new outfit
     ["UseEntranceVisual"] = true,
     ["ModelPanelScale"] = 1,
     ["BaseLineOffset"] = 0,                         --Ultra-wide
@@ -59,7 +60,7 @@ local DefaultValue = {
     ["OnlyShowOwnedUpgradeItem"] = true,            --Filter for gems/enchant scrolls
     ["ItemTooltipStyle"] = 1,
     ["ShowItemID"] = false,
-    
+    ["OutfitSortMethod"] = "name",                  --Filter for sorting outfits: (name alphabet/recently visited)
     --# Internal Hotkey
     ["SearchRelativesHotkey"] = "TAB",              --The key you press to begin/cycle relative search
 

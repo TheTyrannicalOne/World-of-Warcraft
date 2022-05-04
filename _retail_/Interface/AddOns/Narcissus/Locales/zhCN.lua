@@ -446,7 +446,7 @@ L["Splash Content7 Description"] = "-六边形装备边框有了新的外观。�
 
 --Project Details--
 NARCI_ALL_PROJECTS = "全部项目";
-NARCI_PROJECT_DETAILS = "|cFFFFD100插件作者: Peterodox\n更新日期: 2022.4.4|r\n\n感谢你使用此插件！如果你遇到任何问题，或者有任何想法或建议，请在CurseForge项目主页上留言，或者在以下网站上联系我。";
+NARCI_PROJECT_DETAILS = "|cFFFFD100插件作者: Peterodox\n更新日期: 2022.5.2|r\n\n感谢你使用此插件！如果你遇到任何问题，或者有任何想法或建议，请在CurseForge项目主页上留言，或者在以下网站上联系我。";
 NARCI_PROJECT_AAA_SUMMARY = "探索艾泽拉斯上的不同景点，并收集各种故事和照片。";
 NARCI_PROJECT_NARCISSUS_SUMMARY = "沉浸式角色面板；你最好的截图助手。"
 
@@ -543,3 +543,10 @@ L["Showcase Splash 4"] = "录制屏幕然后将视频转换为GIF动图。";
 L["Cycle Spec"] = "按Tab键切换专精";
 L["Paperdoll Splash 1"] = "使用套装指示器？";
 L["Paperdoll Splash 2"] = "选择主题色";
+
+--Outfit Select--
+L["Models"] = "模型";
+L["Origin Outfits"] = "原始外观";
+L["Outfit Owner Format"] = "%s的外观方案";
+L["SortMethod Recent"] = "最近登录";
+L["SortMethod Name"] = "角色姓名";

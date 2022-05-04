@@ -191,7 +191,7 @@ function NarciShowcaseAnimationSliderMixin:OnMouseDown(button)
     if button == "LeftButton" then
         self.isDragging = true;
     elseif button == "MiddleButton" then
-        self:ResetValue();
+        self:SetValue(0, true);
     end
 end
 

@@ -5,9 +5,9 @@ HandyNotes_ShadowlandsDB = {
 		["Zulbathal - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Tendralas - Dalaran"] = "Default",
-		["Darnastris - Dalaran"] = "Default",
-		["Illingrath - Dalaran"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
+		["Illingrath - Dalaran"] = "Default",
+		["Darnastris - Dalaran"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

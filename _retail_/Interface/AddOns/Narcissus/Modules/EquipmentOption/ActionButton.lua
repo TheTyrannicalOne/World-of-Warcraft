@@ -19,7 +19,7 @@ local function FormatReplacementString(effectText, isNew)
             end
         else
             if string.sub(effectText, 0, 1) == "+" then
-                string.gsub(effectText, "+", "-", 1);
+                effectText = string.gsub(effectText, "+", "-", 1);
             else
                 effectText = "- "..effectText;
             end

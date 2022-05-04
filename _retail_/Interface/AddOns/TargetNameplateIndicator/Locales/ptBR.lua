@@ -26,6 +26,10 @@ L["Dropdown.Texture.arrow_tip_green.Desc"] = "Green 3D arrow"
 --[[Translation missing --]]
 L["Dropdown.Texture.arrow_tip_red.Desc"] = "Red 3D arrow"
 --[[Translation missing --]]
+L["Dropdown.Texture.Arrows_Away.Desc"] = "Arrows Away Nameplate"
+--[[Translation missing --]]
+L["Dropdown.Texture.Arrows_Towards.Desc"] = "Arrows Towards Nameplate"
+--[[Translation missing --]]
 L["Dropdown.Texture.BlueArrow.Desc"] = "Blue arrow pointing downwards"
 --[[Translation missing --]]
 L["Dropdown.Texture.bluearrow1.Desc"] = "Abstract style blue arrow pointing downwards"
@@ -147,6 +151,10 @@ L["Option.UnitReactionType.opacity.Name"] = "Texture Opacity"
 L["Option.UnitReactionType.texture.Desc"] = "The texture to use for the indicator"
 --[[Translation missing --]]
 L["Option.UnitReactionType.texture.Name"] = "Texture"
+--[[Translation missing --]]
+L["Option.UnitReactionType.textureCustom.Desc"] = "The custom texture path to use for the indicator"
+--[[Translation missing --]]
+L["Option.UnitReactionType.textureCustom.Name"] = "Custom Texture"
 --[[Translation missing --]]
 L["Option.UnitReactionType.texturePoint.Desc"] = "The point of the texture that should be anchored to the nameplate"
 --[[Translation missing --]]
