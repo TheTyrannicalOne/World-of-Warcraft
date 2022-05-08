@@ -1,16 +1,10 @@
-lightweight tag 214c448d78c6171537618dc736e0d2000bfe35ca 9.2.5-2
+lightweight tag 40acc05a7b3bef28cce9573d04dba662582d29cd 9.2.5-3
 Author:	Xuerian <xuerian@gmail.com>
-Date:	Wed Apr 20 13:10:54 2022 -0400
+Date:	Thu Apr 21 15:22:21 2022 -0400
 
-commit 214c448d78c6171537618dc736e0d2000bfe35ca
+commit 40acc05a7b3bef28cce9573d04dba662582d29cd
 Author: Xuerian <xuerian@gmail.com>
-Date:   Wed Apr 20 13:10:54 2022 -0400
+Date:   Thu Apr 21 15:22:21 2022 -0400
 
-    Skins: Slice by sixths instead of thirds, avoiding overlapping corner tiles
-
-commit 9f8dd83d03a620364a09558e66a703e3232a44c7
-Author: Xuerian <xuerian@gmail.com>
-Date:   Tue Apr 19 18:51:14 2022 -0400
-
-    cleanup
+    Monitor: Add offset and spacing options
 

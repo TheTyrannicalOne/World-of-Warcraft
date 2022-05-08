@@ -248,6 +248,17 @@ function WoWPro.QuestAvailible(QIDs, debug, why)
     return value
 end
 
+function WoWPro.QuestCompleted(QIDs, debug, why)
+    if debug or quids_debug then
+        WoWPro:dbp("WoWPro.QuestCompleted(%s)",tostring(QIDs))
+    end
+    local value = QidMapReduce(QIDs,false,"^","&",function (qid) return WoWPro:IsQuestFlaggedCompleted(qid, true) and (not WoWPro.QuestLog[qid]) and qid; end, why or "QuestCompleted", debug or quids_debug)
+    if debug or quids_debug then
+        WoWPro:dbp("WoWPro.QuestCompleted(%s) return %s",tostring(QIDs),tostring(value))
+    end
+    return value
+end
+
 function WoWPro:QuestFailed(QIDs, debug, why)
     if debug or quids_debug then
         WoWPro:dbp("WoWPro:QuestFailed(%s)",tostring(QIDs))
@@ -404,7 +415,7 @@ end
 function WoWPro.ScenarioObjectiveStatus(stage, objective)
     local predicate, target
     objective, predicate, target = WoWPro.ParseObjective(objective, "S")
-    if (not WoWPro.Scenario) or not (WoWPro.Scenario.currentStage == stage) then
+    if (not WoWPro.Scenario) or (WoWPro.Scenario.currentStage ~= stage) then
         return false, "Scenario stage "..tostring(stage).." not active"
     end
     return predicate(stage, objective, target)
@@ -502,7 +513,9 @@ function WoWPro.LoadGuideReal()
                 GID = nil
             end
             -- Is the guide within 10 levels of us?
-			WoWPro.Leveling:GetGuideListInfo()
+            if WoWPro.Leveling then
+                WoWPro.Leveling:GetGuideListInfo()
+            end
             if GID and WoWPro.Guides[GID].startlevel > (WoWPro:PlayerLevel() + 10) then
                 WoWPro:dbp("Guide %s is too high level.  Check next guide.", GID)
                 GID = nil
@@ -1592,16 +1605,14 @@ function WoWPro.NextStep(guideIndex, rowIndex)
             end
 
             -- Skip Completed Quests
+
             if QID then
-                local numQID = select("#", ("^"):split(QID))
-                for j = 1, numQID do
-                    local jqid = select(numQID-j + 1, ("^"):split(QID))
-                    if WoWPro:IsQuestFlaggedCompleted(jqid, true) then
-                        skip = true -- If quest complete, step is skipped.
-                        WoWPro.why[guideIndex] = "NextStep(): QID is complete: " .. jqid
-                        guide.completion[guideIndex] = QID
-                        break
-                    end
+                local jqid = WoWPro.QuestCompleted(QID, "Skip Completed Quests")
+                if jqid then
+                    skip = true -- If quest complete, step is skipped.
+                    WoWPro.why[guideIndex] = "NextStep(): QID is complete: " .. jqid
+                    guide.completion[guideIndex] = jqid
+                    break
                 end
             end
 
@@ -2306,7 +2317,7 @@ function WoWPro.NextStep(guideIndex, rowIndex)
                 end
 
                 if type(replvl) == "boolean" then
-                    if not(replvl) == not(hasBonusRepGain) then
+                    if (not replvl) == (not hasBonusRepGain) then
                         skip = false
                         WoWPro.why[guideIndex] = "NextStep(): RepStep no skip on bonus"
                     end
@@ -2703,6 +2714,12 @@ function WoWPro.NextStep(guideIndex, rowIndex)
                     if expansion == "BFA" and canFly then
                         spellName = _G.GetSpellInfo(278833)
 						spellKnown = _G.GetSpellInfo(spellName)
+					elseif expansion == "SHADOWLANDS" and canFly then
+						spellName = _G.GetSpellInfo(352177)
+						spellKnown = _G.C_QuestLog.IsQuestFlaggedCompleted(63893)
+					elseif expansion == "SHADOWLANDS9.2" and canFly then
+						spellName = _G.GetSpellInfo(366736)
+						spellKnown = _G.C_QuestLog.IsQuestFlaggedCompleted(65539)
                     elseif expansion == "LEGION" and canFly then
                         spellKnown = true
                     elseif expansion == "WOD" and canFly then
