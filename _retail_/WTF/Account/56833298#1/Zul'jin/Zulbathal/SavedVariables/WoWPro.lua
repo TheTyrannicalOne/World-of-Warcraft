@@ -5,32 +5,33 @@ WoWProCharDB = {
 	["AutoHideInsideInstances"] = true,
 	["EnableGrailCheckPrereq"] = false,
 	["QID2Guide"] = {
-		[47835] = "Ludo_Argus",
-		[9407] = "JamHel6063",
-		[28705] = "JamHel6063",
 		[47221] = "Ludo_Argus",
+		[9407] = "JamHel6063",
+		[47835] = "Ludo_Argus",
+		[28705] = "JamHel6063",
 	},
 	["Trades"] = {
 	},
 	["GuideStack"] = {
 	},
-	["completedQIDs"] = {
+	["EnableFlight"] = true,
+	["Rank"] = {
 	},
-	["EnableRares"] = true,
 	["EnableGrailQuestName"] = false,
+	["EnableGrailBreadcrumbs"] = false,
 	["EnableGrailQuestObsolete"] = false,
-	["Enabled"] = true,
-	["EnablePetBattles"] = true,
+	["BuildingLocations"] = {
+	},
 	["Tradeskills"] = {
 		[2586] = {
 			["skillLvl"] = 1,
+			["skillMax"] = 100,
 			["name"] = "Legion Fishing",
 			["skillMod"] = 0,
-			["skillMax"] = 100,
 		},
 		[182] = {
 			["skillLvl"] = 83,
-			["skillMod"] = 10,
+			["skillMod"] = 0,
 			["name"] = "Herbalism",
 			["skillMax"] = 175,
 		},
@@ -48,7 +49,7 @@ WoWProCharDB = {
 		},
 		[2550] = {
 			["skillLvl"] = 15,
-			["skillMod"] = 10,
+			["skillMod"] = 0,
 			["name"] = "Legion Herbalism",
 			["skillMax"] = 100,
 		},
@@ -60,33 +61,33 @@ WoWProCharDB = {
 		},
 		[2554] = {
 			["skillLvl"] = 29,
-			["skillMod"] = 10,
+			["skillMod"] = 0,
 			["name"] = "Northrend Herbalism",
 			["skillMax"] = 75,
 		},
 		[2556] = {
 			["skillLvl"] = 191,
-			["skillMod"] = 10,
+			["skillMod"] = 0,
 			["name"] = "Herbalism",
 			["skillMax"] = 300,
 		},
-		[356] = {
+		[2480] = {
 			["skillLvl"] = 1,
 			["skillMod"] = 0,
-			["name"] = "Fishing",
+			["name"] = "Draenor Alchemy",
 			["skillMax"] = 100,
 		},
 		[2552] = {
 			["skillLvl"] = 42,
-			["skillMod"] = 10,
+			["skillMod"] = 0,
 			["name"] = "Pandaria Herbalism",
 			["skillMax"] = 75,
 		},
-		[185] = {
-			["skillLvl"] = 1,
+		[2549] = {
+			["skillLvl"] = 83,
 			["skillMod"] = 0,
-			["name"] = "Cooking",
-			["skillMax"] = 100,
+			["name"] = "Battle for Azeroth Herbalism",
+			["skillMax"] = 175,
 		},
 		[2481] = {
 			["skillLvl"] = 1,
@@ -106,41 +107,40 @@ WoWProCharDB = {
 			["name"] = "Alchemy",
 			["skillMax"] = 300,
 		},
-		[2549] = {
-			["skillLvl"] = 83,
-			["skillMod"] = 10,
-			["name"] = "Battle for Azeroth Herbalism",
-			["skillMax"] = 175,
+		[185] = {
+			["skillLvl"] = 1,
+			["skillMod"] = 0,
+			["name"] = "Cooking",
+			["skillMax"] = 100,
 		},
 		[2551] = {
 			["skillLvl"] = 79,
-			["skillMod"] = 10,
+			["skillMod"] = 0,
 			["name"] = "Draenor Herbalism",
 			["skillMax"] = 100,
 		},
-		[2480] = {
+		[356] = {
 			["skillLvl"] = 1,
 			["skillMod"] = 0,
-			["name"] = "Draenor Alchemy",
+			["name"] = "Fishing",
 			["skillMax"] = 100,
 		},
 	},
-	["DebugLevel"] = 0,
+	["Guide"] = {
+	},
 	["Taxi"] = {
 	},
 	["GuideVersion"] = {
 	},
 	["EnableTreasures"] = true,
-	["EnableFlight"] = true,
+	["completedQIDs"] = {
+	},
 	["AutoHideInsideInstancesNotify"] = true,
 	["AutoHideInCombat"] = false,
-	["Guide"] = {
-	},
-	["BuildingLocations"] = {
-	},
-	["EnableGrailBreadcrumbs"] = false,
+	["DebugLevel"] = 0,
+	["EnablePetBattles"] = true,
+	["Enabled"] = true,
 	["skippedQIDs"] = {
 	},
-	["Rank"] = {
-	},
+	["EnableRares"] = true,
 }

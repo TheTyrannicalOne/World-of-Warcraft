@@ -3180,6 +3180,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Oryphrion",
 		},
+		[119981] = {
+			["school"] = 0,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Ming the Cunning",
+		},
 		[322893] = {
 			["school"] = 1,
 			["type"] = "BUFF",
@@ -3188,15 +3196,6 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Devos",
-		},
-		[118958] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Glintrok Ironhide",
 		},
 		[39415] = {
 			["school"] = 32,
@@ -3571,11 +3570,10 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lord Jaraxxus",
 		},
-		[118961] = {
-			["school"] = 0,
-			["type"] = "DEBUFF",
+		[106854] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Master Snowdrift",
 		},
@@ -3586,10 +3584,11 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Nalthor the Rimebinder",
 		},
-		[106854] = {
-			["school"] = 4,
+		[118961] = {
+			["school"] = 0,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Master Snowdrift",
 		},
@@ -4031,6 +4030,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "High Astromancer Solarian",
 		},
+		[156728] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Iron Soldier",
+		},
 		[346959] = {
 			["school"] = 2,
 			["type"] = "BUFF",
@@ -4039,14 +4046,6 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Titanic Defense Turret",
-		},
-		[357189] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "So'azmi",
 		},
 		[38459] = {
 			["school"] = 8,
@@ -4194,13 +4193,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Unknown",
 		},
-		[351057] = {
-			["school"] = 64,
+		[324459] = {
+			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "So'leah",
+			["source"] = "Globgrog",
 		},
 		[320366] = {
 			["school"] = 40,
@@ -4236,13 +4234,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Vestige of Hatred",
 		},
-		[207881] = {
-			["school"] = 4,
+		[351057] = {
+			["school"] = 64,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Talixae Flamewreath",
+			["source"] = "So'leah",
 		},
 		[32315] = {
 			["school"] = 1,
@@ -4461,15 +4459,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Vault Purifier",
 		},
-		[320120] = {
-			["school"] = 40,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Paceran the Virulent",
-		},
 		[129262] = {
 			["school"] = 1,
 			["type"] = "BUFF",
@@ -4478,6 +4467,16 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Gekkan",
+		},
+		[228729] = {
+			["school"] = 2,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_HEAL"] = true,
+			},
+			["source"] = "Mrs. Cauldrons",
 		},
 		[320630] = {
 			["school"] = 1,
@@ -4529,15 +4528,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lady Catriona Von'Indi",
 		},
-		[228729] = {
-			["school"] = 2,
-			["type"] = "BUFF",
+		[320120] = {
+			["school"] = 40,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_HEAL"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Mrs. Cauldrons",
+			["source"] = "Paceran the Virulent",
 		},
 		[320376] = {
 			["school"] = 1,
@@ -5044,14 +5042,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ethereal Sorcerer",
 		},
-		[359028] = {
-			["school"] = 1,
+		[334476] = {
+			["school"] = 40,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Zo'gron",
+			["source"] = "Surgeon Stitchflesh",
 		},
 		[228225] = {
 			["school"] = 4,
@@ -5078,13 +5075,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Netherstrand Longbow",
 		},
-		[334476] = {
-			["school"] = 40,
+		[328338] = {
+			["school"] = 32,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Surgeon Stitchflesh",
+			["source"] = "Venomous Sniper",
 		},
 		[110852] = {
 			["school"] = 1,
@@ -5270,13 +5267,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Corsair Brute",
 		},
-		[324490] = {
-			["school"] = 1,
+		[351088] = {
+			["school"] = 64,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Globgrog",
+			["source"] = "Progenitor Relic",
 		},
 		[68335] = {
 			["school"] = 1,
@@ -5294,13 +5291,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Grand Proctor Beryllia",
 		},
-		[357226] = {
+		[324490] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Adorned Starseer",
+			["source"] = "Globgrog",
 		},
 		[320300] = {
 			["school"] = 32,
@@ -5393,14 +5390,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Grand Proctor Beryllia",
 		},
-		[66099] = {
-			["school"] = 2,
-			["type"] = "BUFF",
+		[34616] = {
+			["school"] = 8,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Anthar Forgemender",
+			["source"] = "Nethervine Inciter",
 		},
 		[355439] = {
 			["school"] = 1,
@@ -5411,12 +5407,11 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Zo'gron",
 		},
-		[194216] = {
+		[355440] = {
 			["school"] = 64,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Harbaron",
 		},
 		[331399] = {
 			["school"] = 8,
@@ -5428,21 +5423,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Margrave Stradama",
 		},
-		[34616] = {
+		[53030] = {
 			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Nethervine Inciter",
+			["source"] = "Hadronox",
 		},
-		[9613] = {
-			["school"] = 32,
+		[194216] = {
+			["school"] = 64,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Skeletal Guardian",
+			["source"] = "Harbaron",
 		},
 		[66546] = {
 			["school"] = 1,
@@ -5516,20 +5511,22 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Xav the Unfallen",
 		},
-		[53030] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
+		[66099] = {
+			["school"] = 2,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Hadronox",
+			["source"] = "Anthar Forgemender",
 		},
-		[355440] = {
-			["school"] = 64,
+		[9613] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
+			["source"] = "Skeletal Guardian",
 		},
 		[323730] = {
 			["school"] = 16,
@@ -5580,13 +5577,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Argent Confessor Paletress",
 		},
-		[351088] = {
-			["school"] = 64,
-			["type"] = "BUFF",
+		[357226] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Progenitor Relic",
+			["source"] = "Adorned Starseer",
 		},
 		[227338] = {
 			["school"] = 1,
@@ -5684,13 +5681,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Anthar Forgemender",
 		},
-		[328338] = {
-			["school"] = 32,
+		[359028] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Venomous Sniper",
+			["source"] = "Zo'gron",
 		},
 		[357238] = {
 			["school"] = 64,
@@ -6024,6 +6022,22 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Halkias",
 		},
+		[32363] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Nexus-Prince Shaffar",
+		},
+		[207881] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Talixae Flamewreath",
+		},
 		[320717] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
@@ -6032,13 +6046,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Unknown",
 		},
-		[32363] = {
-			["school"] = 4,
+		[338013] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Nexus-Prince Shaffar",
+			["source"] = "Anima Fountain",
 		},
 		[114807] = {
 			["school"] = 1,
@@ -6048,20 +6061,6 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Brother Korloff",
-		},
-		[324459] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Globgrog",
-		},
-		[338013] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Anima Fountain",
 		},
 		[328651] = {
 			["school"] = 32,
@@ -6097,13 +6096,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Surgeon Stitchflesh",
 		},
-		[156728] = {
-			["school"] = 4,
+		[357189] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Iron Soldier",
+			["source"] = "So'azmi",
 		},
 		[319655] = {
 			["school"] = 32,
@@ -6516,13 +6515,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Stealthling",
 		},
-		[119981] = {
-			["school"] = 0,
+		[118958] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Ming the Cunning",
+			["source"] = "Glintrok Ironhide",
 		},
 		[131521] = {
 			["school"] = 32,

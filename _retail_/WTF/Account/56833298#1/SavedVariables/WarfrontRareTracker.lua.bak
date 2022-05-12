@@ -1,8 +1,5 @@
 
 WarfrontRareTrackerDB = {
-	["global"] = {
-		["printCompatibilityMessage1"] = false,
-	},
 	["profileKeys"] = {
 		["Vancard - Zul'jin"] = "Default",
 		["Armaguth - Zul'jin"] = "Default",
@@ -23,27 +20,30 @@ WarfrontRareTrackerDB = {
 		["Tyrannithal - Argent Dawn"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
 		["Kelvalatar - Dalaran"] = "Default",
-		["Brotus - Argent Dawn"] = "Default",
-		["Shimzo - Zul'jin"] = "Default",
+		["Banesmuncy - Zul'jin"] = "Default",
 		["Varlouris - Dalaran"] = "Default",
+		["Shimzo - Zul'jin"] = "Default",
+		["Tinkster - Dalaran"] = "Default",
 		["Guufnah - Zul'jin"] = "Default",
-		["Okona - Zul'jin"] = "Default",
 		["Jingojaggot - Zul'jin"] = "Default",
-		["Fantastiburo - Zul'jin"] = "Default",
+		["Kotalkhan - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Laymonan - Zul'jin"] = "Default",
-		["Tyran - Argent Dawn"] = "Default",
-		["Vadder - Argent Dawn"] = "Default",
 		["Serbitechna - Dalaran"] = "Default",
+		["Vadder - Argent Dawn"] = "Default",
 		["Datgore - Zul'jin"] = "Default",
+		["Tyran - Argent Dawn"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
-		["Kotalkhan - Zul'jin"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Default",
 		["Abyronterner - Zul'jin"] = "Default",
-		["Tinkster - Dalaran"] = "Default",
+		["Okona - Zul'jin"] = "Default",
 		["Jasmoney - Zul'jin"] = "Default",
-		["Banesmuncy - Zul'jin"] = "Default",
+		["Brotus - Argent Dawn"] = "Default",
 		["Mandles - Zul'jin"] = "Default",
+	},
+	["global"] = {
+		["printCompatibilityMessage1"] = false,
 	},
 	["profiles"] = {
 		["Default"] = {

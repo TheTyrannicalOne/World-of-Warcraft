@@ -1,5 +1,7 @@
 
 ElvCharacterDB = {
+	["CliqueDatatext"] = {
+	},
 	["ChatHistoryLog"] = {
 		{
 			"its funny how they get to decide when \"the Science\" is to be believed or not", -- [1]
@@ -2180,7 +2182,6 @@ ElvCharacterDB = {
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},
-	["ConvertKeybindings"] = true,
 	["ChatEditHistory"] = {
 		"/kiss", -- [1]
 		"/fishingbuddy", -- [2]
@@ -2203,6 +2204,5 @@ ElvCharacterDB = {
 		"/cw Bourbonn-Dalaran TY", -- [19]
 		"/tsm", -- [20]
 	},
-	["CliqueDatatext"] = {
-	},
+	["ConvertKeybindings"] = true,
 }

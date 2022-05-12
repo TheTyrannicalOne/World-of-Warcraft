@@ -1,7 +1,7 @@
 
 GrailDatabase = {
 	["_retail_"] = {
-		["delayEventsHandled"] = true,
+		["delayEvents"] = true,
 		["learned"] = {
 			["QUEST_NAME"] = {
 				"enUS|36322|54353|Darkshore Donations: Blood-Stained Bone", -- [1]
@@ -1850,6 +1850,8 @@ GrailDatabase = {
 				"43340|enUS|171849|1533:67.37,43.77", -- [1510]
 				"43340|enUS|3000167|1699:55.26,59.33 1525:31.64,42.81|77789", -- [1511]
 				"43340|enUS|179234|1543:68.81,43.98", -- [1512]
+				"43345|enUS|6000028|863:61.67,7.63", -- [1513]
+				"43345|enUS|6000030|863:95.16,23.72", -- [1514]
 			},
 			["QUEST_CODE"] = {
 				"0|enUS|0|A:153684", -- [1]
@@ -9645,6 +9647,11 @@ GrailDatabase = {
 				"117|43340|enUS|62210|A:-1543", -- [7791]
 				"117|43340|enUS|62210|K32768", -- [7792]
 				"117|43340|enUS|62210|N60", -- [7793]
+				"117|43345|enUS|53289|K262144", -- [7794]
+				"117|43345|enUS|53289|P:a53289+PH001", -- [7795]
+				"117|43345|enUS|53289|T:-863", -- [7796]
+				"117|43345|enUS|53289|A:6000028", -- [7797]
+				"117|43345|enUS|53289|A:6000030", -- [7798]
 			},
 		},
 		["Tracking"] = {
@@ -23796,7 +23803,7 @@ GrailDatabase = {
 			"New quest completed 54649 Flames of War", -- [14146]
 			"New quest completed 54646 Grand Marshal Fury", -- [14147]
 		},
-		["delayEvents"] = true,
+		["delayEventsHandled"] = true,
 	},
 	["BadQuestData"] = {
 	},
