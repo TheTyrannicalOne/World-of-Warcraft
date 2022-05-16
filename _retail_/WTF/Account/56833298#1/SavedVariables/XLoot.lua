@@ -8,9 +8,9 @@ XLootADB = {
 						["visible"] = false,
 					},
 					["roll_anchor"] = {
-						["y"] = 564.0005493164062,
-						["x"] = 1595.000122070313,
 						["visible"] = false,
+						["x"] = 1595.000122070313,
+						["y"] = 564.0005493164062,
 					},
 				},
 			},
@@ -22,6 +22,8 @@ XLootADB = {
 				},
 			},
 		},
+		["Master"] = {
+		},
 		["Monitor"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -30,8 +32,6 @@ XLootADB = {
 					},
 				},
 			},
-		},
-		["Master"] = {
 		},
 	},
 	["profileKeys"] = {
@@ -54,13 +54,13 @@ XLootADB = {
 		["Tyrannithal - Argent Dawn"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
 		["Kelvalatar - Dalaran"] = "Default",
-		["Brotus - Argent Dawn"] = "Default",
-		["Shimzo - Zul'jin"] = "Default",
+		["Banesmuncy - Zul'jin"] = "Default",
 		["Varlouris - Dalaran"] = "Default",
+		["Shimzo - Zul'jin"] = "Default",
 		["Okona - Zul'jin"] = "Default",
 		["Tinkster - Dalaran"] = "Default",
 		["Jingojaggot - Zul'jin"] = "Default",
-		["Fantastiburo - Zul'jin"] = "Default",
+		["Kotalkhan - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Laymonan - Zul'jin"] = "Default",
 		["Datgore - Zul'jin"] = "Default",
@@ -69,11 +69,11 @@ XLootADB = {
 		["Serbitechna - Dalaran"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
-		["Kotalkhan - Zul'jin"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Default",
 		["Abyronterner - Zul'jin"] = "Default",
 		["Guufnah - Zul'jin"] = "Default",
 		["Jasmoney - Zul'jin"] = "Default",
-		["Banesmuncy - Zul'jin"] = "Default",
+		["Brotus - Argent Dawn"] = "Default",
 		["Mandles - Zul'jin"] = "Default",
 	},
 	["profiles"] = {

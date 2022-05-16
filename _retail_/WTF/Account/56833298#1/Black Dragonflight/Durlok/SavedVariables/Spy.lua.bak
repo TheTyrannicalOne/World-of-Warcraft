@@ -1,8 +1,9 @@
 
 SpyPerCharDB = {
-	["KOSData"] = {
-	},
+	["version"] = "1.1",
 	["IgnoreData"] = {
+	},
+	["KOSData"] = {
 	},
 	["PlayerData"] = {
 		["Xînz-Gilneas"] = {
@@ -14,12 +15,11 @@ SpyPerCharDB = {
 			["isEnemy"] = true,
 			["race"] = "Night Elf",
 			["isGuess"] = false,
-			["name"] = "Xînz-Gilneas",
-			["time"] = 1644684741,
-			["level"] = 60,
-			["mapX"] = 0.53,
 			["subZone"] = "Valley of Strength",
+			["mapX"] = 0.53,
+			["level"] = 60,
+			["time"] = 1644684741,
+			["name"] = "Xînz-Gilneas",
 		},
 	},
-	["version"] = "1.1",
 }

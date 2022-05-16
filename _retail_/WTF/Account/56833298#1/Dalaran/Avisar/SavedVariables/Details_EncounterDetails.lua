@@ -1,5 +1,28 @@
 
 EncounterDetailsDB = {
+	["emotes"] = {
+		{
+			{
+				50.3710000000001, -- [1]
+				"Well done, my minions. The mortals' courage begins to wane! Now, let's see how they contend with the true Lord of Blackrock Spire!!!", -- [2]
+				"Nefarian", -- [3]
+				7, -- [4]
+			}, -- [1]
+			{
+				60.65700000000015, -- [1]
+				"BURN! You wretches! BURN!", -- [2]
+				"Nefarian", -- [3]
+				7, -- [4]
+			}, -- [2]
+			["boss"] = "Nefarian",
+		}, -- [1]
+		{
+			["boss"] = "Chromaggus",
+		}, -- [2]
+		{
+			["boss"] = "Ebonroc",
+		}, -- [3]
+	},
 	["encounter_spells"] = {
 		[23513] = {
 			["school"] = 1,
@@ -18,6 +41,13 @@ EncounterDetailsDB = {
 				["SPELL_HEAL"] = true,
 			},
 			["source"] = "Majordomo Executus",
+		},
+		[19364] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Ancient Core Hound",
 		},
 		[22642] = {
 			["school"] = 64,
@@ -64,12 +94,33 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Firemaw",
 		},
+		[19630] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Flameguard",
+		},
+		[19631] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Flameguard",
+		},
 		[19319] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Ancient Core Hound",
+		},
+		[19635] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Firewalker",
 		},
 		[22976] = {
 			["school"] = 4,
@@ -120,6 +171,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lava Reaver",
 		},
+		[19272] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Ancient Core Hound",
+		},
 		[19771] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
@@ -130,14 +188,28 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Core Hound",
 		},
-		[19703] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
+		[19712] = {
+			["school"] = 64,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Shazzrah",
+		},
+		[19641] = {
+			["school"] = 4,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Lucifron",
+			["source"] = "Lava Elemental",
+		},
+		[22979] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Nefarian",
 		},
 		[19460] = {
 			["school"] = 32,
@@ -154,14 +226,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Flamewaker Priest",
 		},
-		[19516] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[22978] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Garr",
+			["source"] = "Nefarian",
+		},
+		[22666] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Lord Victor Nefarius",
 		},
 		[22677] = {
 			["school"] = 32,
@@ -172,21 +251,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lord Victor Nefarius",
 		},
-		[22992] = {
-			["school"] = 32,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Nefarian",
-		},
-		[22458] = {
-			["school"] = 2,
+		[23462] = {
+			["school"] = 4,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Blackwing Taskmaster",
+			["source"] = "Vaelastrasz the Corrupt",
 		},
 		[19451] = {
 			["school"] = 1,
@@ -197,14 +268,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Magmadar",
 		},
-		[19408] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
+		[20605] = {
+			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Magmadar",
+			["source"] = "Flamewaker Protector",
 		},
 		[22681] = {
 			["school"] = 32,
@@ -214,13 +284,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lord Victor Nefarius",
 		},
-		[1604] = {
-			["school"] = 1,
+		[22559] = {
+			["school"] = 16,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Baron Geddon",
+			["source"] = "Blue Drakonid",
 		},
 		[19785] = {
 			["school"] = 1,
@@ -231,13 +303,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Sulfuron Harbinger",
 		},
-		[20605] = {
-			["school"] = 1,
+		[19408] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Flamewaker Protector",
+			["source"] = "Magmadar",
 		},
 		[20228] = {
 			["school"] = 4,
@@ -257,6 +330,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Chromatic Drakonid",
 		},
+		[1604] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Baron Geddon",
+		},
 		[22561] = {
 			["school"] = 8,
 			["type"] = "DEBUFF",
@@ -265,16 +346,6 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Green Drakonid",
-		},
-		[22559] = {
-			["school"] = 16,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Blue Drakonid",
 		},
 		[19728] = {
 			["school"] = 32,
@@ -294,53 +365,39 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Gehennas",
 		},
-		[23462] = {
-			["school"] = 4,
+		[22458] = {
+			["school"] = 2,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Vaelastrasz the Corrupt",
+			["source"] = "Blackwing Taskmaster",
 		},
-		[22666] = {
-			["school"] = 8,
+		[22992] = {
+			["school"] = 32,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Nefarian",
+		},
+		[19516] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Garr",
+		},
+		[19703] = {
+			["school"] = 32,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Lord Victor Nefarius",
+			["source"] = "Lucifron",
 		},
-		[22978] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Nefarian",
-		},
-		[22979] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Nefarian",
-		},
-	},
-	["emotes"] = {
-		{
-			{
-				50.35400000000004, -- [1]
-				"Well done, my minions. The mortals' courage begins to wane! Now, let's see how they contend with the true Lord of Blackrock Spire!!!", -- [2]
-				"Nefarian", -- [3]
-				7, -- [4]
-			}, -- [1]
-			["boss"] = "Nefarian",
-		}, -- [1]
-		{
-			["boss"] = "Chromaggus",
-		}, -- [2]
-		{
-			["boss"] = "Ebonroc",
-		}, -- [3]
 	},
 }

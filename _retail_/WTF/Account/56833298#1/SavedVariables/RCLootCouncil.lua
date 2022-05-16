@@ -1,2056 +1,2021 @@
 
 RCLootCouncilDB = {
-	["profileKeys"] = {
-		["Vancard - Zul'jin"] = "Default",
-		["Armaguth - Zul'jin"] = "Default",
-		["Charbeatic - Zul'jin"] = "Default",
-		["Shaekhan - Zul'jin"] = "Default",
-		["Shanyt - Zul'jin"] = "Default",
-		["Avisar - Dalaran"] = "Default",
-		["Banuumine - Zul'jin"] = "Default",
-		["Thorinbane - Dalaran"] = "Default",
-		["Shaekhan - Argent Dawn"] = "Default",
-		["Ruffinton - Dalaran"] = "Default",
-		["Malivant - Dalaran"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
-		["Dachas - Zul'jin"] = "Default",
-		["Tyranasticus - Zul'jin"] = "Default",
-		["Illingrath - Dalaran"] = "Default",
-		["Tendralas - Dalaran"] = "Default",
-		["Tyrannithal - Argent Dawn"] = "Default",
-		["Zulbathal - Zul'jin"] = "Default",
-		["Kelvalatar - Dalaran"] = "Default",
-		["Brotus - Argent Dawn"] = "Default",
-		["Shimzo - Zul'jin"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
-		["Okona - Zul'jin"] = "Default",
-		["Tinkster - Dalaran"] = "Default",
-		["Jingojaggot - Zul'jin"] = "Default",
-		["Fantastiburo - Zul'jin"] = "Default",
-		["Shanyt - Argent Dawn"] = "Default",
-		["Laymonan - Zul'jin"] = "Default",
-		["Datgore - Zul'jin"] = "Default",
-		["Vadder - Argent Dawn"] = "Default",
-		["Tyran - Argent Dawn"] = "Default",
-		["Serbitechna - Dalaran"] = "Default",
-		["Darnastris - Dalaran"] = "Default",
-		["Rotclaugh - Dalaran"] = "Default",
-		["Kotalkhan - Zul'jin"] = "Default",
-		["Abyronterner - Zul'jin"] = "Default",
-		["Guufnah - Zul'jin"] = "Default",
-		["Jasmoney - Zul'jin"] = "Default",
-		["Banesmuncy - Zul'jin"] = "Default",
-		["Mandles - Zul'jin"] = "Default",
-	},
 	["global"] = {
 		["log"] = {
-			"<22:33:50> <DEBUG>		Adding to self.lootSlotInfo	2	nil	1	0	Creature-0-3135-2441-26860-178139-0000EDF0E4	60258	Creature-0-3135-2441-26860-178141-0002EDF0E3	21941", -- [1]
-			"<22:33:50> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:173362::::::::60:71:::::::::|h[Lustrous Scale]|h|r	0	2	Creature-0-3135-2441-26860-178139-0000EDF0E4	1	Creature-0-3135-2441-26860-178141-0002EDF0E3	1", -- [2]
-			"<22:33:50> <DEBUG>		Event:	LOOT_CLOSED", -- [3]
-			"<22:33:50> <DEBUG>		OnLootSlotCleared()	4	|cff9d9d9d|Hitem:173362::::::::60:71:::::::::|h[Lustrous Scale]|h|r	0", -- [4]
-			"<22:33:50> <DEBUG>		Event:	LOOT_CLOSED", -- [5]
-			"<22:33:50> <Comm>		^1^Sl^T^N1^S178139^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [6]
-			"<22:33:51> <DEBUG>		Event:	LOOT_CLOSED", -- [7]
-			"<22:33:51> <Comm>		^1^Sl^T^N1^S178139^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [8]
-			"<22:34:45> <DEBUG>		Event:	LOOT_READY	true", -- [9]
-			"<22:34:45> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3135-2441-26860-178163-000DEDF0E4	3512	Creature-0-3135-2441-26860-178163-000C6DF0E4	1667	Creature-0-3135-2441-26860-178163-000CEDF0E4	4294	Creature-0-3135-2441-26860-178163-000D6DF0E4	2127	Creature-0-3135-2441-26860-178163-0017EDF0E3	3363	Creature-0-3135-2441-26860-178163-00186DF0E3	2013	Creature-0-3135-2441-26860-178163-0018EDF0E3	5264", -- [10]
-			"<22:34:45> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:173362::::::::60:71:::::::::|h[Lustrous Scale]|h|r	0	6	Creature-0-3135-2441-26860-178163-000DEDF0E4	1	Creature-0-3135-2441-26860-178163-000C6DF0E4	1	Creature-0-3135-2441-26860-178163-000CEDF0E4	1	Creature-0-3135-2441-26860-178163-000D6DF0E4	1	Creature-0-3135-2441-26860-178163-0017EDF0E3	1	Creature-0-3135-2441-26860-178163-00186DF0E3	1", -- [11]
-			"<22:34:45> <DEBUG>		Adding to self.lootSlotInfo	6	|cff9d9d9d|Hitem:176858::::::::60:71:::::::::|h[Pliable Tail Fin]|h|r	0	1	Creature-0-3135-2441-26860-178163-0018EDF0E3	1", -- [12]
-			"<22:34:45> <DEBUG>		Event:	LOOT_READY	true", -- [13]
-			"<22:34:45> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3135-2441-26860-178163-000DEDF0E4	3512	Creature-0-3135-2441-26860-178163-000C6DF0E4	1667	Creature-0-3135-2441-26860-178163-000CEDF0E4	4294	Creature-0-3135-2441-26860-178163-000D6DF0E4	2127	Creature-0-3135-2441-26860-178163-0017EDF0E3	3363	Creature-0-3135-2441-26860-178163-00186DF0E3	2013	Creature-0-3135-2441-26860-178163-0018EDF0E3	5264", -- [14]
-			"<22:34:45> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:173362::::::::60:71:::::::::|h[Lustrous Scale]|h|r	0	6	Creature-0-3135-2441-26860-178163-000DEDF0E4	1	Creature-0-3135-2441-26860-178163-000C6DF0E4	1	Creature-0-3135-2441-26860-178163-000CEDF0E4	1	Creature-0-3135-2441-26860-178163-000D6DF0E4	1	Creature-0-3135-2441-26860-178163-0017EDF0E3	1	Creature-0-3135-2441-26860-178163-00186DF0E3	1", -- [15]
-			"<22:34:45> <DEBUG>		Adding to self.lootSlotInfo	6	|cff9d9d9d|Hitem:176858::::::::60:71:::::::::|h[Pliable Tail Fin]|h|r	0	1	Creature-0-3135-2441-26860-178163-0018EDF0E3	1", -- [16]
-			"<22:34:46> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [17]
-			"<22:34:46> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:173362::::::::60:71:::::::::|h[Lustrous Scale]|h|r	0", -- [18]
-			"<22:34:46> <DEBUG>		Event:	LOOT_CLOSED", -- [19]
-			"<22:34:46> <DEBUG>		OnLootSlotCleared()	6	|cff9d9d9d|Hitem:176858::::::::60:71:::::::::|h[Pliable Tail Fin]|h|r	0", -- [20]
-			"<22:34:46> <DEBUG>		Event:	LOOT_CLOSED", -- [21]
-			"<22:34:47> <Comm>		^1^Sl^T^N1^S178163^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [22]
-			"<22:35:25> <DEBUG>		Event:	LOOT_READY	true", -- [23]
-			"<22:35:25> <DEBUG>		Event:	LOOT_READY	true", -- [24]
-			"<22:35:26> <DEBUG>		Event:	LOOT_CLOSED", -- [25]
-			"<22:35:26> <DEBUG>		Event:	LOOT_CLOSED", -- [26]
-			"<22:36:39> <DEBUG>		Event:	ENCOUNTER_START	2426	Hylbrande	2	5", -- [27]
-			"<22:36:39> <INFO>		UpdatePlayersData()", -- [28]
-			"<22:37:18> <DEBUG>		Event:	ENCOUNTER_END	2426	Hylbrande	2	5	1", -- [29]
-			"<22:37:21> <DEBUG>		Event:	LOOT_READY	true", -- [30]
-			"<22:37:21> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3135-2441-26860-175663-00006DF22C	63611", -- [31]
-			"<22:37:22> <DEBUG>		Event:	LOOT_READY	true", -- [32]
-			"<22:37:22> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3135-2441-26860-175663-00006DF22C	63611", -- [33]
-			"<22:37:22> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [34]
-			"<22:37:22> <DEBUG>		Event:	LOOT_CLOSED", -- [35]
-			"<22:37:22> <DEBUG>		Event:	LOOT_CLOSED", -- [36]
-			"<22:37:22> <Comm>		^1^Sl^T^N1^S175663^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [37]
-			"<22:37:22> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2426	185781	|cff0070dd|Hitem:185781::::::::60:71::2:5:8140:6806:6652:1540:4785:1:28:748:::::|h[Drape of Titanic Dreams]|h|r	1	Moolalah-Proudmoore	DRUID", -- [38]
-			"<22:37:22> <Comm>		^1^Sl^T^N1^S175663^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [39]
-			"<22:39:07> <DEBUG>		Event:	ENCOUNTER_START	2419	Timecap'n Hooktail	2	5", -- [40]
-			"<22:39:07> <INFO>		UpdatePlayersData()", -- [41]
-			"<22:40:21> <DEBUG>		Event:	ENCOUNTER_END	2419	Timecap'n Hooktail	2	5	1", -- [42]
-			"<22:40:22> <DEBUG>		Event:	LOOT_READY	true", -- [43]
-			"<22:40:22> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Vehicle-0-3135-2441-26860-175546-00006DF2C7	66504", -- [44]
-			"<22:40:22> <DEBUG>		Event:	LOOT_READY	true", -- [45]
-			"<22:40:22> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Vehicle-0-3135-2441-26860-175546-00006DF2C7	66504", -- [46]
-			"<22:40:23> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [47]
-			"<22:40:23> <DEBUG>		Event:	LOOT_CLOSED", -- [48]
-			"<22:40:23> <DEBUG>		Event:	LOOT_CLOSED", -- [49]
-			"<22:40:23> <Comm>		^1^Sl^T^N1^S175546^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [50]
-			"<22:40:23> <Comm>		^1^Sl^T^N1^S175546^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [51]
-			"<22:40:26> <DEBUG>		Event:	LOOT_READY	true", -- [52]
-			"<22:40:26> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3135-2441-26860-179388-0000EDF0E3	52399", -- [53]
-			"<22:40:26> <DEBUG>		Event:	LOOT_READY	true", -- [54]
-			"<22:40:26> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3135-2441-26860-179388-0000EDF0E3	52399", -- [55]
-			"<22:40:26> <DEBUG>		Event:	LOOT_CLOSED", -- [56]
-			"<22:40:26> <Comm>		^1^Sl^T^N1^S179388^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [57]
-			"<22:40:38> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2419	185820	|cff0070dd|Hitem:185820::::::::60:71::2:5:6806:6652:7578:1540:4785:1:28:748:::::|h[Cabochon of the Infinite Flight]|h|r	1	Maupo-Silvermoon	WARRIOR", -- [58]
-			"<22:41:12> <DEBUG>		Event:	LOOT_READY	true", -- [59]
-			"<22:41:12> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3135-2441-26860-179388-00016DF0E3	49920", -- [60]
-			"<22:41:13> <DEBUG>		Event:	LOOT_READY	true", -- [61]
-			"<22:41:13> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3135-2441-26860-179388-00016DF0E3	49920", -- [62]
-			"<22:41:13> <DEBUG>		Event:	LOOT_CLOSED", -- [63]
-			"<22:41:13> <Comm>		^1^Sl^T^N1^S179388^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [64]
-			"<22:42:54> <DEBUG>		Event:	LOOT_READY	true", -- [65]
-			"<22:42:54> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3135-2441-26860-180431-0001EDF0E3	36245", -- [66]
-			"<22:42:55> <DEBUG>		Event:	LOOT_READY	true", -- [67]
-			"<22:42:55> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3135-2441-26860-180431-0001EDF0E3	36245", -- [68]
-			"<22:42:55> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [69]
-			"<22:42:55> <DEBUG>		Event:	LOOT_CLOSED", -- [70]
-			"<22:42:55> <Comm>		^1^Sl^T^N1^S180431^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [71]
-			"<22:43:04> <DEBUG>		Event:	ENCOUNTER_START	2442	So'leah	2	5", -- [72]
-			"<22:43:04> <INFO>		UpdatePlayersData()", -- [73]
-			"<22:44:38> <DEBUG>		Event:	LOOT_READY	true", -- [74]
-			"<22:44:38> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3135-2441-26860-180429-0000EDF0E3	33545", -- [75]
-			"<22:44:39> <DEBUG>		Event:	LOOT_READY	true", -- [76]
-			"<22:44:39> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3135-2441-26860-180429-0000EDF0E3	33545", -- [77]
-			"<22:44:39> <DEBUG>		Event:	LOOT_CLOSED", -- [78]
-			"<22:44:39> <Comm>		^1^Sl^T^N1^S180429^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [79]
-			"<22:45:24> <DEBUG>		Event:	ENCOUNTER_END	2442	So'leah	2	5	1", -- [80]
-			"<22:45:25> <DEBUG>		Event:	LOOT_READY	true", -- [81]
-			"<22:45:25> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3135-2441-26860-177269-00006DF0E3	130748", -- [82]
-			"<22:45:25> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:185784::::::::60:71::2:5:8134:6806:6652:1540:4785:1:28:748:::::|h[Novaburst Warplate]|h|r	3	1	Creature-0-3135-2441-26860-177269-00006DF0E3	1", -- [83]
-			"<22:45:25> <DEBUG>		Event:	LOOT_READY	true", -- [84]
-			"<22:45:25> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3135-2441-26860-177269-00006DF0E3	130748", -- [85]
-			"<22:45:25> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:185784::::::::60:71::2:5:8134:6806:6652:1540:4785:1:28:748:::::|h[Novaburst Warplate]|h|r	3	1	Creature-0-3135-2441-26860-177269-00006DF0E3	1", -- [86]
-			"<22:45:26> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [87]
-			"<22:45:26> <DEBUG>		OnLootSlotCleared()	2	|cff0070dd|Hitem:185784::::::::60:71::2:5:8134:6806:6652:1540:4785:1:28:748:::::|h[Novaburst Warplate]|h|r	3", -- [88]
-			"<22:45:26> <DEBUG>		Event:	LOOT_CLOSED", -- [89]
-			"<22:45:26> <DEBUG>		Event:	LOOT_CLOSED", -- [90]
-			"<22:45:26> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2442	185784	|cff0070dd|Hitem:185784::::::::60:71::2:5:8134:6806:6652:1540:4785:1:28:748:::::|h[Novaburst Warplate]|h|r	1	Shanyt	WARRIOR", -- [91]
-			"<22:45:26> <Comm>		^1^Sl^T^N1^S177269^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [92]
-			"<22:45:27> <Comm>		^1^Sl^T^N1^S177269^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [93]
-			"<22:45:27> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2442	190958	|cff0070dd|Hitem:190958::::::::60:71::2:4:6806:6652:1540:4785:1:28:748:::::|h[So'leah's Secret Technique]|h|r	1	Ringpro-Tichondrius	PALADIN", -- [94]
-			"<22:45:28> <DEBUG>		Storage:New	|cff0070dd|Hitem:185784::::::::60:71::2:5:8134:6806:6652:1540:4785:1:28:748:::::|h[Novaburst Warplate]|h|r	temp", -- [95]
-			"<22:45:28> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:185784::::::::60:71::2:5:8134:6806:6652:1540:4785:1:28:748:::::||h[Novaburst Warplate]||h||r	5", -- [96]
-			"<22:45:28> <DEBUG>		Found item at	3	23", -- [97]
-			"<22:45:28> <DEBUG>		Found:	3	23	0", -- [98]
-			"<22:45:29> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:185784::::::::60:71::2:5:8134:6806:6652:1540:4785:1:28:748:::::||h[Novaburst Warplate]||h||r	5", -- [99]
-			"<22:45:29> <DEBUG>		Found item at	3	23", -- [100]
-			"<22:45:29> <DEBUG>		Found:	3	23	0", -- [101]
-			"<22:45:30> <Comm>		^1^Sn_t^T^N1^S|cff0070dd|Hitem:185784::::::::60:71::2:5:8134:6806:6652:1540:4785:1:28:748:::::|h[Novaburst~`Warplate]|h|r^N2^S177269^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [102]
-			"<22:45:32> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2442	190958	|cff0070dd|Hitem:190958::::::::60:71::2:4:6806:6652:1540:4785:1:28:748:::::|h[So'leah's Secret Technique]|h|r	1	Sterg-BleedingHollow	SHAMAN", -- [103]
-			"<22:45:32> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [104]
-			"<22:45:34> <DEBUG>		GetML()", -- [105]
-			"<22:45:58> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [106]
-			"<22:46:00> <DEBUG>		GetML()", -- [107]
-			"<22:46:06> <DEBUG>		Event:	GROUP_LEFT	2	Party-3017-1-0000481D024B", -- [108]
-			"<22:46:06> <DEBUG>		GetML()", -- [109]
-			"<22:46:12> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [110]
-			"<22:46:12> <INFO>		UpdatePlayersData()", -- [111]
-			"<22:46:16> <DEBUG>		GetML()", -- [112]
-			"<22:47:43> <DEBUG>		Event:	LOOT_READY	true", -- [113]
-			"<22:47:43> <DEBUG>		Event:	LOOT_READY	true", -- [114]
-			"<22:47:44> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187704	|cff0070dd|Hitem:187704::::::::60:71:::::::::|h[Protoflesh]|h|r	1	Shanyt	WARRIOR", -- [115]
-			"<22:48:31> <DEBUG>		Event:	LOOT_READY	true", -- [116]
-			"<22:48:31> <DEBUG>		Event:	LOOT_READY	true", -- [117]
-			"<22:48:39> <DEBUG>		Event:	LOOT_READY	true", -- [118]
-			"<22:48:39> <DEBUG>		Event:	LOOT_READY	true", -- [119]
-			"<22:48:39> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	190339	|cff0070dd|Hitem:190339::::::::60:71::::1:28:2057:::::|h[Enlightened Offering]|h|r	1	Shanyt	WARRIOR", -- [120]
-			"<22:50:32> <DEBUG>		Event:	LOOT_READY	true", -- [121]
-			"<22:50:33> <DEBUG>		Event:	LOOT_READY	true", -- [122]
-			"<22:52:26> <DEBUG>		Event:	LOOT_READY	true", -- [123]
-			"<22:52:26> <DEBUG>		Event:	LOOT_READY	true", -- [124]
-			"<22:52:26> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189863	|cff0070dd|Hitem:189863::::::::60:71:::::::::|h[Spatial Opener]|h|r	1	Shanyt	WARRIOR", -- [125]
-			"<22:52:27> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	1	Shanyt	WARRIOR", -- [126]
-			"<22:52:28> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	190941	|cff0070dd|Hitem:190941::::::::60:71::::1:28:2057:::::|h[Teachings of the Elders]|h|r	1	Shanyt	WARRIOR", -- [127]
-			"<22:54:04> <DEBUG>		Event:	LOOT_READY	true", -- [128]
-			"<22:54:04> <DEBUG>		Event:	LOOT_READY	true", -- [129]
-			"<22:54:05> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187704	|cff0070dd|Hitem:187704::::::::60:71:::::::::|h[Protoflesh]|h|r	5	Shanyt	WARRIOR", -- [130]
-			"<22:54:05> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	5	Shanyt	WARRIOR", -- [131]
-			"<22:54:54> <DEBUG>		Event:	LOOT_READY	true", -- [132]
-			"<22:54:54> <DEBUG>		Event:	LOOT_READY	true", -- [133]
-			"<22:54:57> <DEBUG>		Event:	LOOT_READY	true", -- [134]
-			"<22:54:57> <DEBUG>		Event:	LOOT_READY	true", -- [135]
-			"<22:58:20> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [136]
-			"<22:58:20> <INFO>		UpdatePlayersData()", -- [137]
-			"<22:58:25> <DEBUG>		GetML()", -- [138]
-			"<23:05:11> <DEBUG>		Event:	LOOT_READY	true", -- [139]
-			"<23:05:12> <DEBUG>		Event:	LOOT_READY	true", -- [140]
-			"<23:22:19> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [141]
-			"<23:22:19> <INFO>		UpdatePlayersData()", -- [142]
-			"<23:22:27> <DEBUG>		GetML()", -- [143]
-			"<23:33:08> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [144]
-			"<23:33:08> <INFO>		UpdatePlayersData()", -- [145]
-			"<23:33:15> <DEBUG>		GetML()", -- [146]
-			"05/01/22", -- [147]
-			"<10:08:21> <INFO>		Logged In", -- [148]
-			"<10:08:21> [ML]<INFO>		Init", -- [149]
-			"<10:08:21> <INFO>		RCLootCouncil	TradeUI enabled", -- [150]
-			"<10:08:42> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Shanyt-ArgentDawn	Player-75-058380E2", -- [151]
-			"<10:08:42> <INFO>		Shanyt-ArgentDawn	3.3.0	nil", -- [152]
-			"<10:08:42> <DEBUG>		ActivateSkin	bfa", -- [153]
-			"<10:08:53> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [154]
-			"<10:08:53> <INFO>		UpdatePlayersData()", -- [155]
-			"<10:08:53> <INFO>		Player relog...", -- [156]
-			"<10:08:57> <DEBUG>		GetPlayersGuildRank()", -- [157]
-			"<10:08:57> <DEBUG>		GetPlayersGuildRank()", -- [158]
-			"<10:08:57> <DEBUG>		Found Guild Rank: Thuerge", -- [159]
-			"<10:09:06> <DEBUG>		GetML()", -- [160]
-			"<10:10:24> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [161]
-			"<10:10:24> <INFO>		UpdatePlayersData()", -- [162]
-			"<10:10:32> <DEBUG>		GetML()", -- [163]
-			"<10:13:17> <DEBUG>		Event:	LOOT_READY	true", -- [164]
-			"<10:13:18> <DEBUG>		Event:	LOOT_READY	true", -- [165]
-			"<10:13:48> <DEBUG>		Event:	LOOT_READY	true", -- [166]
-			"<10:13:48> <DEBUG>		Event:	LOOT_READY	true", -- [167]
-			"<10:13:53> <DEBUG>		Event:	LOOT_READY	true", -- [168]
-			"<10:13:53> <DEBUG>		Event:	LOOT_READY	true", -- [169]
-			"<10:14:09> <DEBUG>		Event:	LOOT_READY	true", -- [170]
-			"<10:14:10> <DEBUG>		Event:	LOOT_READY	true", -- [171]
-			"<10:14:12> <DEBUG>		Event:	LOOT_READY	true", -- [172]
-			"<10:14:13> <DEBUG>		Event:	LOOT_READY	true", -- [173]
-			"<10:14:18> <DEBUG>		Event:	LOOT_READY	true", -- [174]
-			"<10:14:18> <DEBUG>		Event:	LOOT_READY	true", -- [175]
-			"<10:14:49> <DEBUG>		Event:	LOOT_READY	true", -- [176]
-			"<10:14:50> <DEBUG>		Event:	LOOT_READY	true", -- [177]
-			"<10:15:03> <DEBUG>		Event:	LOOT_READY	true", -- [178]
-			"<10:15:03> <DEBUG>		Event:	LOOT_READY	true", -- [179]
-			"<10:15:21> <DEBUG>		Event:	LOOT_READY	true", -- [180]
-			"<10:15:21> <DEBUG>		Event:	LOOT_READY	true", -- [181]
-			"<10:15:31> <DEBUG>		Event:	LOOT_READY	true", -- [182]
-			"<10:15:31> <DEBUG>		Event:	LOOT_READY	true", -- [183]
-			"<10:15:34> <DEBUG>		Event:	LOOT_READY	true", -- [184]
-			"<10:15:35> <DEBUG>		Event:	LOOT_READY	true", -- [185]
-			"<10:15:44> <DEBUG>		Event:	LOOT_READY	true", -- [186]
-			"<10:15:45> <DEBUG>		Event:	LOOT_READY	true", -- [187]
-			"<10:16:07> <DEBUG>		Event:	LOOT_READY	true", -- [188]
-			"<10:16:07> <DEBUG>		Event:	LOOT_READY	true", -- [189]
-			"<10:16:09> <DEBUG>		Event:	LOOT_READY	true", -- [190]
-			"<10:16:10> <DEBUG>		Event:	LOOT_READY	true", -- [191]
-			"<10:16:14> <DEBUG>		Event:	LOOT_READY	true", -- [192]
-			"<10:16:15> <DEBUG>		Event:	LOOT_READY	true", -- [193]
-			"<10:16:29> <DEBUG>		Event:	LOOT_READY	true", -- [194]
-			"<10:16:29> <DEBUG>		Event:	LOOT_READY	true", -- [195]
-			"<10:16:32> <DEBUG>		Event:	LOOT_READY	true", -- [196]
-			"<10:16:32> <DEBUG>		Event:	LOOT_READY	true", -- [197]
-			"<10:16:43> <DEBUG>		Event:	LOOT_READY	true", -- [198]
-			"<10:16:43> <DEBUG>		Event:	LOOT_READY	true", -- [199]
-			"<10:16:50> <DEBUG>		Event:	LOOT_READY	true", -- [200]
-			"<10:16:50> <DEBUG>		Event:	LOOT_READY	true", -- [201]
-			"<10:17:12> <DEBUG>		Event:	LOOT_READY	true", -- [202]
-			"<10:17:12> <DEBUG>		Event:	LOOT_READY	true", -- [203]
-			"<10:17:14> <DEBUG>		Event:	LOOT_READY	true", -- [204]
-			"<10:17:14> <DEBUG>		Event:	LOOT_READY	true", -- [205]
-			"<10:20:04> <DEBUG>		Event:	LOOT_READY	true", -- [206]
-			"<10:20:04> <DEBUG>		Event:	LOOT_READY	true", -- [207]
-			"<10:20:06> <DEBUG>		Event:	LOOT_READY	true", -- [208]
-			"<10:20:06> <DEBUG>		Event:	LOOT_READY	true", -- [209]
-			"<10:20:38> <DEBUG>		Event:	LOOT_READY	true", -- [210]
-			"<10:20:38> <DEBUG>		Event:	LOOT_READY	true", -- [211]
-			"<10:21:04> <DEBUG>		Event:	LOOT_READY	true", -- [212]
-			"<10:21:04> <DEBUG>		Event:	LOOT_READY	true", -- [213]
-			"<10:21:27> <DEBUG>		Event:	LOOT_READY	true", -- [214]
-			"<10:21:27> <DEBUG>		Event:	LOOT_READY	true", -- [215]
-			"<10:22:06> <DEBUG>		Event:	LOOT_READY	true", -- [216]
-			"<10:22:06> <DEBUG>		Event:	LOOT_READY	true", -- [217]
-			"<10:24:17> <DEBUG>		Event:	LOOT_READY	true", -- [218]
-			"<10:24:17> <DEBUG>		Event:	LOOT_READY	true", -- [219]
-			"<10:24:18> <DEBUG>		Event:	LOOT_READY	true", -- [220]
-			"<10:25:24> <DEBUG>		Event:	LOOT_READY	true", -- [221]
-			"<10:25:24> <DEBUG>		Event:	LOOT_READY	true", -- [222]
-			"<10:25:29> <DEBUG>		Event:	LOOT_READY	true", -- [223]
-			"<10:25:29> <DEBUG>		Event:	LOOT_READY	true", -- [224]
-			"<10:30:14> <DEBUG>		Event:	LOOT_READY	true", -- [225]
-			"<10:30:15> <DEBUG>		Event:	LOOT_READY	true", -- [226]
-			"<10:30:15> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187707	|cffff8000|Hitem:187707::::::::60:71:::::::::|h[Progenitor Essentia]|h|r	1	Shanyt	WARRIOR", -- [227]
-			"<10:30:16> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	2	Shanyt	WARRIOR", -- [228]
-			"<10:31:51> <DEBUG>		Event:	LOOT_READY	true", -- [229]
-			"<10:31:51> <DEBUG>		Event:	LOOT_READY	true", -- [230]
-			"<10:31:52> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189711	|cff0070dd|Hitem:189711::::::::60:71::::1:28:2057:::::|h[Pocopoc's Gold and Ruby Components]|h|r	1	Shanyt	WARRIOR", -- [231]
-			"<10:38:28> <DEBUG>		Event:	LOOT_READY	true", -- [232]
-			"<10:38:28> <DEBUG>		Event:	LOOT_READY	true", -- [233]
-			"<10:38:35> <DEBUG>		Event:	LOOT_READY	true", -- [234]
-			"<10:38:35> <DEBUG>		Event:	LOOT_READY	true", -- [235]
-			"<10:39:32> <DEBUG>		Event:	LOOT_READY	true", -- [236]
-			"<10:39:32> <DEBUG>		Event:	LOOT_READY	true", -- [237]
-			"<10:39:38> <DEBUG>		Event:	LOOT_READY	true", -- [238]
-			"<10:39:39> <DEBUG>		Event:	LOOT_READY	true", -- [239]
-			"<10:41:30> <DEBUG>		Event:	LOOT_READY	true", -- [240]
-			"<10:41:30> <DEBUG>		Event:	LOOT_READY	true", -- [241]
-			"<10:41:31> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	188054	|cff0070dd|Hitem:188054::::::::60:71::27:3:6652:8108:1482:1:28:2057:::::|h[Antecedent Drape]|h|r	1	Shanyt	WARRIOR", -- [242]
-			"<10:41:31> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	2	Shanyt	WARRIOR", -- [243]
-			"<10:41:42> <DEBUG>		Event:	LOOT_READY	true", -- [244]
-			"<10:41:42> <DEBUG>		Event:	LOOT_READY	true", -- [245]
-			"<10:41:45> <DEBUG>		Event:	LOOT_READY	true", -- [246]
-			"<10:41:45> <DEBUG>		Event:	LOOT_READY	true", -- [247]
-			"<10:41:58> <DEBUG>		Event:	LOOT_READY	true", -- [248]
-			"<10:41:58> <DEBUG>		Event:	LOOT_READY	true", -- [249]
-			"<10:44:49> <DEBUG>		Event:	LOOT_READY	true", -- [250]
-			"<10:44:50> <DEBUG>		Event:	LOOT_READY	true", -- [251]
-			"<10:44:50> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187704	|cff0070dd|Hitem:187704::::::::60:71:::::::::|h[Protoflesh]|h|r	4	Shanyt	WARRIOR", -- [252]
-			"<10:44:51> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	5	Shanyt	WARRIOR", -- [253]
-			"<10:47:07> <DEBUG>		Event:	LOOT_READY	true", -- [254]
-			"<10:47:07> <DEBUG>		Event:	LOOT_READY	true", -- [255]
-			"<10:47:53> <DEBUG>		Event:	LOOT_READY	true", -- [256]
-			"<10:47:53> <DEBUG>		Event:	LOOT_READY	true", -- [257]
-			"<10:47:53> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187707	|cffff8000|Hitem:187707::::::::60:71:::::::::|h[Progenitor Essentia]|h|r	1	Shanyt	WARRIOR", -- [258]
-			"<10:47:54> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189712	|cff0070dd|Hitem:189712::::::::60:71::::1:28:2057:::::|h[Pocopoc's Silver and Beryllium Components]|h|r	1	Shanyt	WARRIOR", -- [259]
-			"<10:49:20> <DEBUG>		Event:	LOOT_READY	true", -- [260]
-			"<10:49:21> <DEBUG>		Event:	LOOT_READY	true", -- [261]
-			"<10:49:21> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	190952	|cffa335ee|Hitem:190952::::::::60:71::::1:28:2057:::::|h[Protoflora Harvester]|h|r	1	Shanyt	WARRIOR", -- [262]
-			"<10:49:21> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	2	Shanyt	WARRIOR", -- [263]
-			"<10:51:00> <DEBUG>		Event:	LOOT_READY	true", -- [264]
-			"<10:51:00> <DEBUG>		Event:	LOOT_READY	true", -- [265]
-			"<10:51:00> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187703	|cff0070dd|Hitem:187703::::::::60:71:::::::::|h[Silken Protofiber]|h|r	1	Shanyt	WARRIOR", -- [266]
-			"<10:51:51> <DEBUG>		Event:	LOOT_READY	true", -- [267]
-			"<10:51:52> <DEBUG>		Event:	LOOT_READY	true", -- [268]
-			"<10:51:52> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187704	|cff0070dd|Hitem:187704::::::::60:71:::::::::|h[Protoflesh]|h|r	1	Shanyt	WARRIOR", -- [269]
-			"<10:55:55> <DEBUG>		Event:	LOOT_READY	true", -- [270]
-			"<10:55:55> <DEBUG>		Event:	LOOT_READY	true", -- [271]
-			"<10:59:22> <DEBUG>		Event:	LOOT_READY	true", -- [272]
-			"<10:59:22> <DEBUG>		Event:	LOOT_READY	true", -- [273]
-			"<11:00:03> <DEBUG>		Event:	LOOT_READY	true", -- [274]
-			"<11:00:03> <DEBUG>		Event:	LOOT_READY	true", -- [275]
-			"<11:00:09> <DEBUG>		Event:	LOOT_READY	true", -- [276]
-			"<11:00:09> <DEBUG>		Event:	LOOT_READY	true", -- [277]
-			"<11:00:52> <DEBUG>		Event:	LOOT_READY	true", -- [278]
-			"<11:00:52> <DEBUG>		Event:	LOOT_READY	true", -- [279]
-			"<11:01:25> <DEBUG>		Event:	LOOT_READY	true", -- [280]
-			"<11:01:25> <DEBUG>		Event:	LOOT_READY	true", -- [281]
-			"<11:02:17> <DEBUG>		Event:	LOOT_READY	true", -- [282]
-			"<11:02:18> <DEBUG>		Event:	LOOT_READY	true", -- [283]
-			"<11:02:45> <DEBUG>		Event:	LOOT_READY	true", -- [284]
-			"<11:02:46> <DEBUG>		Event:	LOOT_READY	true", -- [285]
-			"<11:03:46> <DEBUG>		Event:	LOOT_READY	true", -- [286]
-			"<11:03:46> <DEBUG>		Event:	LOOT_READY	true", -- [287]
-			"<11:04:43> <DEBUG>		Event:	LOOT_READY	true", -- [288]
-			"<11:04:43> <DEBUG>		Event:	LOOT_READY	true", -- [289]
-			"<11:05:14> <DEBUG>		Event:	LOOT_READY	true", -- [290]
-			"<11:05:15> <DEBUG>		Event:	LOOT_READY	true", -- [291]
-			"<11:05:40> <DEBUG>		Event:	LOOT_READY	true", -- [292]
-			"<11:05:40> <DEBUG>		Event:	LOOT_READY	true", -- [293]
-			"<11:05:43> <DEBUG>		Event:	LOOT_READY	true", -- [294]
-			"<11:05:44> <DEBUG>		Event:	LOOT_READY	true", -- [295]
-			"<11:06:47> <DEBUG>		Event:	LOOT_READY	true", -- [296]
-			"<11:06:47> <DEBUG>		Event:	LOOT_READY	true", -- [297]
-			"<11:07:18> <DEBUG>		Event:	LOOT_READY	true", -- [298]
-			"<11:07:19> <DEBUG>		Event:	LOOT_READY	true", -- [299]
-			"<11:07:31> <DEBUG>		Event:	LOOT_READY	true", -- [300]
-			"<11:07:31> <DEBUG>		Event:	LOOT_READY	true", -- [301]
-			"<11:08:07> <DEBUG>		Event:	LOOT_READY	true", -- [302]
-			"<11:08:07> <DEBUG>		Event:	LOOT_READY	true", -- [303]
-			"<11:08:43> <DEBUG>		Event:	LOOT_READY	true", -- [304]
-			"<11:08:43> <DEBUG>		Event:	LOOT_READY	true", -- [305]
-			"<11:09:13> <DEBUG>		Event:	LOOT_READY	true", -- [306]
-			"<11:09:14> <DEBUG>		Event:	LOOT_READY	true", -- [307]
-			"<11:10:17> <DEBUG>		Event:	LOOT_READY	true", -- [308]
-			"<11:10:17> <DEBUG>		Event:	LOOT_READY	true", -- [309]
-			"<11:10:36> <DEBUG>		Event:	LOOT_READY	true", -- [310]
-			"<11:10:36> <DEBUG>		Event:	LOOT_READY	true", -- [311]
-			"<11:11:06> <DEBUG>		Event:	LOOT_READY	true", -- [312]
-			"<11:11:06> <DEBUG>		Event:	LOOT_READY	true", -- [313]
-			"<11:11:28> <DEBUG>		Event:	LOOT_READY	true", -- [314]
-			"<11:11:28> <DEBUG>		Event:	LOOT_READY	true", -- [315]
-			"<11:13:54> <DEBUG>		Event:	LOOT_READY	true", -- [316]
-			"<11:13:54> <DEBUG>		Event:	LOOT_READY	true", -- [317]
-			"<11:13:54> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	6	Shanyt	WARRIOR", -- [318]
-			"<11:13:55> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187703	|cff0070dd|Hitem:187703::::::::60:71:::::::::|h[Silken Protofiber]|h|r	2	Shanyt	WARRIOR", -- [319]
-			"<11:13:55> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187704	|cff0070dd|Hitem:187704::::::::60:71:::::::::|h[Protoflesh]|h|r	4	Shanyt	WARRIOR", -- [320]
-			"<11:15:06> <DEBUG>		Event:	LOOT_READY	true", -- [321]
-			"<11:15:07> <DEBUG>		Event:	LOOT_READY	true", -- [322]
-			"<11:16:52> <DEBUG>		Event:	LOOT_READY	true", -- [323]
-			"<11:16:53> <DEBUG>		Event:	LOOT_READY	true", -- [324]
-			"<11:16:53> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187704	|cff0070dd|Hitem:187704::::::::60:71:::::::::|h[Protoflesh]|h|r	4	Shanyt	WARRIOR", -- [325]
-			"<11:16:54> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	4	Shanyt	WARRIOR", -- [326]
-			"<11:20:26> <DEBUG>		Event:	LOOT_READY	true", -- [327]
-			"<11:20:27> <DEBUG>		Event:	LOOT_READY	true", -- [328]
-			"<11:21:41> <DEBUG>		Event:	LOOT_READY	true", -- [329]
-			"<11:21:41> <DEBUG>		Event:	LOOT_READY	true", -- [330]
-			"<11:23:14> <DEBUG>		Event:	LOOT_READY	true", -- [331]
-			"<11:23:15> <DEBUG>		Event:	LOOT_READY	true", -- [332]
-			"<11:27:49> <DEBUG>		Event:	LOOT_READY	true", -- [333]
-			"<11:27:49> <DEBUG>		Event:	LOOT_READY	true", -- [334]
-			"<11:27:50> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187703	|cff0070dd|Hitem:187703::::::::60:71:::::::::|h[Silken Protofiber]|h|r	1	Shanyt	WARRIOR", -- [335]
-			"<11:30:15> <DEBUG>		Event:	LOOT_READY	true", -- [336]
-			"<11:30:15> <DEBUG>		Event:	LOOT_READY	true", -- [337]
-			"<11:30:30> <DEBUG>		Event:	LOOT_READY	true", -- [338]
-			"<11:30:30> <DEBUG>		Event:	LOOT_READY	true", -- [339]
-			"<11:30:41> <DEBUG>		Event:	LOOT_READY	true", -- [340]
-			"<11:30:42> <DEBUG>		Event:	LOOT_READY	true", -- [341]
-			"<11:30:42> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	171833	|cff0070dd|Hitem:171833::::::::60:71:::::::::|h[Elethium Ore]|h|r	5	Shanyt	WARRIOR", -- [342]
-			"<11:31:36> <DEBUG>		Event:	LOOT_READY	true", -- [343]
-			"<11:31:37> <DEBUG>		Event:	LOOT_READY	true", -- [344]
-			"<11:32:04> <DEBUG>		Event:	LOOT_READY	true", -- [345]
-			"<11:32:05> <DEBUG>		Event:	LOOT_READY	true", -- [346]
-			"<11:40:23> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [347]
-			"<11:40:23> <INFO>		UpdatePlayersData()", -- [348]
-			"<11:40:31> <DEBUG>		GetML()", -- [349]
-			"<11:50:13> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [350]
-			"<11:50:13> <INFO>		UpdatePlayersData()", -- [351]
-			"<11:50:21> <DEBUG>		GetML()", -- [352]
-			"05/01/22", -- [353]
-			"<12:20:57> <INFO>		Logged In", -- [354]
-			"<12:20:57> [ML]<INFO>		Init", -- [355]
-			"<12:20:57> <INFO>		RCLootCouncil	TradeUI enabled", -- [356]
-			"<12:21:11> <INFO>		Shanyt-ArgentDawn	3.3.0	nil", -- [357]
-			"<12:21:11> <DEBUG>		ActivateSkin	bfa", -- [358]
-			"<12:21:23> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [359]
-			"<12:21:23> <INFO>		UpdatePlayersData()", -- [360]
-			"<12:21:23> <INFO>		Player relog...", -- [361]
-			"<12:21:29> <DEBUG>		GetPlayersGuildRank()", -- [362]
-			"<12:21:29> <DEBUG>		Found Guild Rank: Thuerge", -- [363]
-			"<12:21:32> <DEBUG>		GetML()", -- [364]
-			"<12:21:33> <Comm>		^1^Sv^T^N1^S3.3.0^t^^	GUILD	Shanyt-ArgentDawn", -- [365]
-			"05/01/22", -- [366]
-			"<12:36:26> <INFO>		Logged In", -- [367]
-			"<12:36:26> [ML]<INFO>		Init", -- [368]
-			"<12:36:26> <INFO>		RCLootCouncil	TradeUI enabled", -- [369]
-			"<12:36:39> <INFO>		Shanyt-ArgentDawn	3.3.0	nil", -- [370]
-			"<12:36:39> <DEBUG>		ActivateSkin	bfa", -- [371]
-			"<12:36:51> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [372]
-			"<12:36:51> <INFO>		UpdatePlayersData()", -- [373]
-			"<12:36:51> <INFO>		Player relog...", -- [374]
-			"<12:36:57> <DEBUG>		GetPlayersGuildRank()", -- [375]
-			"<12:36:57> <DEBUG>		Found Guild Rank: Thuerge", -- [376]
-			"<12:37:00> <DEBUG>		GetML()", -- [377]
-			"<12:37:02> <Comm>		^1^Sv^T^N1^S3.3.0^t^^	GUILD	Shanyt-ArgentDawn", -- [378]
-			"<13:02:23> <DEBUG>		Event:	LOOT_READY	true", -- [379]
-			"<13:02:23> <DEBUG>		Event:	LOOT_READY	true", -- [380]
-			"<13:02:23> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	119355	|cff0070dd|Hitem:119355::::::::60:71:::1:6691:2:28:68:9:40:::::|h[Leggings of Howling Winds]|h|r	1	Shanyt	WARRIOR", -- [381]
-			"<13:02:32> <DEBUG>		Event:	LOOT_READY	true", -- [382]
-			"<13:02:33> <DEBUG>		Event:	LOOT_READY	true", -- [383]
-			"<13:02:50> <DEBUG>		Event:	LOOT_READY	true", -- [384]
-			"<13:02:50> <DEBUG>		Event:	LOOT_READY	true", -- [385]
-			"<13:02:51> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	118661	|cffa335ee|Hitem:118661::::::::60:71:::::::::|h[Xelganak's Stinger]|h|r	1	Shanyt	WARRIOR", -- [386]
-			"<13:03:50> <DEBUG>		Event:	LOOT_READY	true", -- [387]
-			"<13:03:50> <DEBUG>		Event:	LOOT_READY	true", -- [388]
-			"<13:07:56> <DEBUG>		Event:	LOOT_READY	true", -- [389]
-			"<13:07:56> <DEBUG>		Event:	LOOT_READY	true", -- [390]
-			"<13:08:07> <DEBUG>		BONUS_ROLL	item	|cffa335ee|Hitem:115440::::::::60:71:::::::::|h[Burning Beak Band]|h|r	1	0	2	false	nil	false	false", -- [391]
-			"<13:08:08> <Comm>		^1^Sbonus_roll^T^N1^Sitem^N2^S|cffa335ee|Hitem:115440::::::::60:71:::::::::|h[Burning~`Beak~`Band]|h|r^t^^	WHISPER	Shanyt-ArgentDawn", -- [392]
-			"<13:10:23> <DEBUG>		Event:	LOOT_READY	true", -- [393]
-			"<13:10:23> <DEBUG>		Event:	LOOT_READY	true", -- [394]
-			"<13:15:20> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [395]
-			"<13:15:20> <INFO>		UpdatePlayersData()", -- [396]
-			"<13:15:30> <DEBUG>		GetML()", -- [397]
-			"<13:16:51> <DEBUG>		Event:	LOOT_READY	true", -- [398]
-			"<13:16:51> <DEBUG>		Event:	LOOT_READY	true", -- [399]
-			"<13:16:51> <DEBUG>		Event:	LOOT_READY	true", -- [400]
-			"<13:16:52> <DEBUG>		Event:	LOOT_READY	true", -- [401]
-			"<13:18:35> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [402]
-			"<13:18:35> <INFO>		UpdatePlayersData()", -- [403]
-			"<13:18:40> <DEBUG>		GetML()", -- [404]
-			"05/01/22", -- [405]
-			"<18:34:21> <INFO>		Logged In", -- [406]
-			"<18:34:21> [ML]<INFO>		Init", -- [407]
-			"<18:34:21> <INFO>		RCLootCouncil	TradeUI enabled", -- [408]
-			"<18:34:37> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Shanyt-ArgentDawn	Player-75-058380E2", -- [409]
-			"<18:34:37> <INFO>		Shanyt-ArgentDawn	3.3.0	nil", -- [410]
-			"<18:34:37> <DEBUG>		ActivateSkin	bfa", -- [411]
-			"<18:34:47> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [412]
-			"<18:34:47> <INFO>		UpdatePlayersData()", -- [413]
-			"<18:34:47> <INFO>		Player relog...", -- [414]
-			"<18:34:51> <DEBUG>		GetPlayersGuildRank()", -- [415]
-			"<18:34:51> <DEBUG>		Found Guild Rank: Thuerge", -- [416]
-			"<18:34:58> <DEBUG>		GetML()", -- [417]
-			"05/01/22", -- [418]
-			"<18:42:42> <INFO>		Logged In", -- [419]
-			"<18:42:42> [ML]<INFO>		Init", -- [420]
-			"<18:42:42> <INFO>		RCLootCouncil	TradeUI enabled", -- [421]
-			"<18:42:56> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Shanyt-ArgentDawn	Player-75-058380E2", -- [422]
-			"<18:42:56> <INFO>		Shanyt-ArgentDawn	3.3.0	nil", -- [423]
-			"<18:42:56> <DEBUG>		ActivateSkin	bfa", -- [424]
-			"<18:43:06> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [425]
-			"<18:43:06> <INFO>		UpdatePlayersData()", -- [426]
-			"<18:43:06> <INFO>		Player relog...", -- [427]
-			"<18:43:10> <DEBUG>		GetPlayersGuildRank()", -- [428]
-			"<18:43:10> <DEBUG>		GetPlayersGuildRank()", -- [429]
-			"<18:43:10> <DEBUG>		Found Guild Rank: Thuerge", -- [430]
-			"<18:43:17> <DEBUG>		GetML()", -- [431]
-			"<18:49:04> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [432]
-			"<18:49:04> <INFO>		UpdatePlayersData()", -- [433]
-			"<18:49:11> <DEBUG>		GetML()", -- [434]
-			"<18:49:42> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [435]
-			"<18:49:42> <INFO>		UpdatePlayersData()", -- [436]
-			"<18:49:45> <DEBUG>		GetML()", -- [437]
-			"<18:50:11> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [438]
-			"<18:50:11> <INFO>		UpdatePlayersData()", -- [439]
-			"<18:50:15> <DEBUG>		GetML()", -- [440]
-			"<18:51:50> <DEBUG>		Event:	LOOT_READY	true", -- [441]
-			"<18:51:50> <DEBUG>		Event:	LOOT_READY	true", -- [442]
-			"<18:52:27> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [443]
-			"<18:52:27> <INFO>		UpdatePlayersData()", -- [444]
-			"<18:52:31> <DEBUG>		GetML()", -- [445]
-			"<18:53:05> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [446]
-			"<18:53:05> <INFO>		UpdatePlayersData()", -- [447]
-			"<18:53:09> <DEBUG>		GetML()", -- [448]
-			"<18:53:30> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [449]
-			"<18:53:30> <INFO>		UpdatePlayersData()", -- [450]
-			"<18:53:34> <DEBUG>		GetML()", -- [451]
-			"<19:04:54> <DEBUG>		Event:	LOOT_READY	true", -- [452]
-			"<19:04:54> <DEBUG>		Event:	LOOT_READY	true", -- [453]
-			"<19:04:54> <DEBUG>		Event:	LOOT_READY	true", -- [454]
-			"<19:04:54> <DEBUG>		Event:	LOOT_READY	true", -- [455]
-			"<19:04:55> <DEBUG>		Event:	LOOT_READY	true", -- [456]
-			"<19:05:01> <DEBUG>		Event:	LOOT_READY	true", -- [457]
-			"<19:05:02> <DEBUG>		Event:	LOOT_READY	true", -- [458]
-			"<19:05:31> <DEBUG>		Event:	LOOT_READY	true", -- [459]
-			"<19:05:31> <DEBUG>		Event:	LOOT_READY	true", -- [460]
-			"<19:05:51> <DEBUG>		Event:	LOOT_READY	true", -- [461]
-			"<19:05:51> <DEBUG>		Event:	LOOT_READY	true", -- [462]
-			"<19:06:04> <DEBUG>		Event:	LOOT_READY	true", -- [463]
-			"<19:06:05> <DEBUG>		Event:	LOOT_READY	true", -- [464]
-			"<19:06:29> <DEBUG>		Event:	LOOT_READY	true", -- [465]
-			"<19:06:30> <DEBUG>		Event:	LOOT_READY	true", -- [466]
-			"<19:06:47> <DEBUG>		Event:	LOOT_READY	true", -- [467]
-			"<19:06:47> <DEBUG>		Event:	LOOT_READY	true", -- [468]
-			"<19:11:00> <DEBUG>		Event:	LOOT_READY	true", -- [469]
-			"<19:11:00> <DEBUG>		Event:	LOOT_READY	true", -- [470]
-			"<19:11:00> <DEBUG>		Event:	LOOT_READY	true", -- [471]
-			"<19:11:37> <DEBUG>		Event:	LOOT_READY	true", -- [472]
-			"<19:11:37> <DEBUG>		Event:	LOOT_READY	true", -- [473]
-			"<19:14:45> <DEBUG>		Event:	LOOT_READY	true", -- [474]
-			"<19:14:45> <DEBUG>		Event:	LOOT_READY	true", -- [475]
-			"<19:20:02> <DEBUG>		Event:	LOOT_READY	true", -- [476]
-			"<19:20:03> <DEBUG>		Event:	LOOT_READY	true", -- [477]
-			"<19:21:34> <DEBUG>		Event:	LOOT_READY	true", -- [478]
-			"<19:21:34> <DEBUG>		Event:	LOOT_READY	true", -- [479]
-			"<19:23:04> <DEBUG>		Event:	LOOT_READY	true", -- [480]
-			"<19:23:04> <DEBUG>		Event:	LOOT_READY	true", -- [481]
-			"<19:24:19> <DEBUG>		Event:	LOOT_READY	true", -- [482]
-			"<19:24:19> <DEBUG>		Event:	LOOT_READY	true", -- [483]
-			"<19:25:03> <DEBUG>		Event:	LOOT_READY	true", -- [484]
-			"<19:25:03> <DEBUG>		Event:	LOOT_READY	true", -- [485]
-			"<19:26:15> <DEBUG>		Event:	LOOT_READY	true", -- [486]
-			"<19:26:15> <DEBUG>		Event:	LOOT_READY	true", -- [487]
-			"<19:26:44> <DEBUG>		Event:	LOOT_READY	true", -- [488]
-			"<19:26:44> <DEBUG>		Event:	LOOT_READY	true", -- [489]
-			"<19:27:06> <DEBUG>		Event:	LOOT_READY	true", -- [490]
-			"<19:27:06> <DEBUG>		Event:	LOOT_READY	true", -- [491]
-			"<19:27:34> <DEBUG>		Event:	LOOT_READY	true", -- [492]
-			"<19:27:34> <DEBUG>		Event:	LOOT_READY	true", -- [493]
-			"<19:27:50> <DEBUG>		Event:	LOOT_READY	true", -- [494]
-			"<19:27:51> <DEBUG>		Event:	LOOT_READY	true", -- [495]
-			"<19:27:59> <DEBUG>		Event:	LOOT_READY	true", -- [496]
-			"<19:28:00> <DEBUG>		Event:	LOOT_READY	true", -- [497]
-			"<19:28:12> <DEBUG>		Event:	LOOT_READY	true", -- [498]
-			"<19:28:13> <DEBUG>		Event:	LOOT_READY	true", -- [499]
-			"<19:29:08> <DEBUG>		Event:	LOOT_READY	true", -- [500]
-			"<19:29:08> <DEBUG>		Event:	LOOT_READY	true", -- [501]
-			"<19:30:21> <DEBUG>		Event:	LOOT_READY	true", -- [502]
-			"<19:30:21> <DEBUG>		Event:	LOOT_READY	true", -- [503]
-			"<19:30:23> <DEBUG>		Event:	LOOT_READY	true", -- [504]
-			"<19:30:24> <DEBUG>		Event:	LOOT_READY	true", -- [505]
-			"<19:35:07> <DEBUG>		Event:	LOOT_READY	true", -- [506]
-			"<19:35:08> <DEBUG>		Event:	LOOT_READY	true", -- [507]
-			"<19:35:26> <DEBUG>		Event:	LOOT_READY	true", -- [508]
-			"<19:35:27> <DEBUG>		Event:	LOOT_READY	true", -- [509]
-			"<19:35:54> <DEBUG>		Event:	LOOT_READY	true", -- [510]
-			"<19:35:55> <DEBUG>		Event:	LOOT_READY	true", -- [511]
-			"<19:35:58> <DEBUG>		Event:	LOOT_READY	true", -- [512]
-			"<19:35:58> <DEBUG>		Event:	LOOT_READY	true", -- [513]
-			"<19:36:13> <DEBUG>		Event:	LOOT_READY	true", -- [514]
-			"<19:36:13> <DEBUG>		Event:	LOOT_READY	true", -- [515]
-			"<19:36:25> <DEBUG>		Event:	LOOT_READY	true", -- [516]
-			"<19:36:25> <DEBUG>		Event:	LOOT_READY	true", -- [517]
-			"<19:36:51> <DEBUG>		Event:	LOOT_READY	true", -- [518]
-			"<19:36:51> <DEBUG>		Event:	LOOT_READY	true", -- [519]
-			"<19:37:01> <DEBUG>		Event:	LOOT_READY	true", -- [520]
-			"<19:37:01> <DEBUG>		Event:	LOOT_READY	true", -- [521]
-			"<19:37:09> <DEBUG>		Event:	LOOT_READY	true", -- [522]
-			"<19:37:10> <DEBUG>		Event:	LOOT_READY	true", -- [523]
-			"<19:37:27> <DEBUG>		Event:	LOOT_READY	true", -- [524]
-			"<19:37:27> <DEBUG>		Event:	LOOT_READY	true", -- [525]
-			"<19:37:45> <DEBUG>		Event:	LOOT_READY	true", -- [526]
-			"<19:37:45> <DEBUG>		Event:	LOOT_READY	true", -- [527]
-			"<19:39:28> <DEBUG>		Event:	LOOT_READY	true", -- [528]
-			"<19:39:28> <DEBUG>		Event:	LOOT_READY	true", -- [529]
-			"<19:39:28> <DEBUG>		Event:	LOOT_READY	true", -- [530]
-			"<19:39:28> <DEBUG>		Event:	LOOT_READY	true", -- [531]
-			"<19:39:47> <DEBUG>		Event:	LOOT_READY	true", -- [532]
-			"<19:39:47> <DEBUG>		Event:	LOOT_READY	true", -- [533]
-			"<19:40:25> <DEBUG>		Event:	LOOT_READY	true", -- [534]
-			"<19:40:26> <DEBUG>		Event:	LOOT_READY	true", -- [535]
-			"<19:41:30> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [536]
-			"<19:41:30> <INFO>		UpdatePlayersData()", -- [537]
-			"<19:41:36> <DEBUG>		GetML()", -- [538]
-			"<19:45:39> <DEBUG>		Event:	LOOT_READY	true", -- [539]
-			"<19:45:39> <DEBUG>		Event:	LOOT_READY	true", -- [540]
-			"<19:45:39> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	182759	|cff0070dd|Hitem:182759::::::::60:71:::::::::|h[Functioning Anima Core]|h|r	1	Shanyt	WARRIOR", -- [541]
-			"<19:47:09> <DEBUG>		Event:	LOOT_READY	true", -- [542]
-			"<19:47:09> <DEBUG>		Event:	LOOT_READY	true", -- [543]
-			"<19:47:09> <DEBUG>		Event:	LOOT_READY	true", -- [544]
-			"<19:47:09> <DEBUG>		Event:	LOOT_READY	true", -- [545]
-			"<19:47:10> <DEBUG>		Event:	LOOT_READY	true", -- [546]
-			"<19:48:01> <DEBUG>		Event:	LOOT_READY	true", -- [547]
-			"<19:48:01> <DEBUG>		Event:	LOOT_READY	true", -- [548]
-			"<19:48:01> <DEBUG>		Event:	LOOT_READY	true", -- [549]
-			"<19:48:25> <DEBUG>		Event:	LOOT_READY	true", -- [550]
-			"<19:48:25> <DEBUG>		Event:	LOOT_READY	true", -- [551]
-			"<19:48:41> <DEBUG>		Event:	LOOT_READY	true", -- [552]
-			"<19:48:42> <DEBUG>		Event:	LOOT_READY	true", -- [553]
-			"<19:49:08> <DEBUG>		Event:	LOOT_READY	true", -- [554]
-			"<19:49:08> <DEBUG>		Event:	LOOT_READY	true", -- [555]
-			"<19:49:48> <DEBUG>		Event:	LOOT_READY	true", -- [556]
-			"<19:49:48> <DEBUG>		Event:	LOOT_READY	true", -- [557]
-			"<19:49:57> <DEBUG>		Event:	LOOT_READY	true", -- [558]
-			"<19:49:57> <DEBUG>		Event:	LOOT_READY	true", -- [559]
-			"<19:50:08> <DEBUG>		Event:	LOOT_READY	true", -- [560]
-			"<19:50:09> <DEBUG>		Event:	LOOT_READY	true", -- [561]
-			"<19:50:19> <DEBUG>		Event:	LOOT_READY	true", -- [562]
-			"<19:50:20> <DEBUG>		Event:	LOOT_READY	true", -- [563]
-			"<19:50:22> <DEBUG>		Event:	LOOT_READY	true", -- [564]
-			"<19:50:22> <DEBUG>		Event:	LOOT_READY	true", -- [565]
-			"<19:50:35> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [566]
-			"<19:50:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [567]
-			"<19:50:40> <DEBUG>		GetML()", -- [568]
-			"<19:50:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [569]
-			"<19:50:41> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [570]
-			"<19:50:41> <INFO>		UpdatePlayersData()", -- [571]
-			"<19:50:46> <DEBUG>		GetML()", -- [572]
-			"<19:51:16> <DEBUG>		Event:	LOOT_READY	true", -- [573]
-			"<19:51:16> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3783-2293-8623-170838-00006F1CC0	30442", -- [574]
-			"<19:51:16> <DEBUG>		Event:	LOOT_READY	true", -- [575]
-			"<19:51:16> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3783-2293-8623-170838-00006F1CC0	30442", -- [576]
-			"<19:51:16> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [577]
-			"<19:51:16> <DEBUG>		Event:	LOOT_CLOSED", -- [578]
-			"<19:51:16> <DEBUG>		Event:	LOOT_CLOSED", -- [579]
-			"<19:51:17> <Comm>		^1^Sl^T^N1^S170838^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [580]
-			"<19:51:17> <Comm>		^1^Sl^T^N1^S170838^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [581]
-			"<19:51:18> <DEBUG>		Event:	ENCOUNTER_START	2391	An Affront of Challengers	2	5", -- [582]
-			"<19:51:18> <INFO>		UpdatePlayersData()", -- [583]
-			"<19:52:27> <DEBUG>		Event:	ENCOUNTER_END	2391	An Affront of Challengers	2	5	1", -- [584]
-			"<19:52:32> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2391	178799	|cff0070dd|Hitem:178799::::::::60:71::2:6:8134:6806:6652:7580:1537:4785:1:28:748:::::|h[Amphitheater Stalker's Hood]|h|r	1	Kelzir-Chromaggus	SHAMAN", -- [585]
-			"<19:52:32> <DEBUG>		Event:	LOOT_READY	true", -- [586]
-			"<19:52:32> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Vehicle-0-3783-2293-8623-164451-00006F1CC0	68696", -- [587]
-			"<19:52:32> <DEBUG>		Event:	LOOT_READY	true", -- [588]
-			"<19:52:32> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Vehicle-0-3783-2293-8623-164451-00006F1CC0	68696", -- [589]
-			"<19:52:32> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [590]
-			"<19:52:32> <DEBUG>		Event:	LOOT_CLOSED", -- [591]
-			"<19:52:32> <DEBUG>		Event:	LOOT_CLOSED", -- [592]
-			"<19:52:33> <Comm>		^1^Sl^T^N1^S164451^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [593]
-			"<19:52:33> <Comm>		^1^Sl^T^N1^S164451^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [594]
-			"<19:52:33> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2391	178871	|cff0070dd|Hitem:178871::::::::60:71::2:5:6806:6652:7578:1537:4785:1:28:748:::::|h[Bloodoath Signet]|h|r	1	Rahahaha-BlackDragonflight	WARRIOR", -- [595]
-			"<19:53:18> <DEBUG>		Event:	LOOT_READY	true", -- [596]
-			"<19:53:18> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:176874::::::::60:71:::::::::|h[Desiccated Humerus]|h|r	0	1	Creature-0-3783-2293-8623-167994-0001EF1CC0	1", -- [597]
-			"<19:53:18> <DEBUG>		Event:	LOOT_READY	true", -- [598]
-			"<19:53:18> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:176874::::::::60:71:::::::::|h[Desiccated Humerus]|h|r	0	1	Creature-0-3783-2293-8623-167994-0001EF1CC0	1", -- [599]
-			"<19:53:18> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:176874::::::::60:71:::::::::|h[Desiccated Humerus]|h|r	0", -- [600]
-			"<19:53:18> <DEBUG>		Event:	LOOT_CLOSED", -- [601]
-			"<19:53:18> <DEBUG>		Event:	LOOT_CLOSED", -- [602]
-			"<19:53:19> <Comm>		^1^Sl^T^N1^S167994^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [603]
-			"<19:53:19> <Comm>		^1^Sl^T^N1^S167994^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [604]
-			"<19:53:42> <DEBUG>		Event:	LOOT_READY	true", -- [605]
-			"<19:53:42> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3783-2293-8623-167538-00006F1CC0	39072", -- [606]
-			"<19:53:42> <DEBUG>		Event:	LOOT_READY	true", -- [607]
-			"<19:53:42> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3783-2293-8623-167538-00006F1CC0	39072", -- [608]
-			"<19:53:43> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [609]
-			"<19:53:43> <DEBUG>		Event:	LOOT_CLOSED", -- [610]
-			"<19:53:43> <DEBUG>		Event:	LOOT_CLOSED", -- [611]
-			"<19:53:43> <Comm>		^1^Sl^T^N1^S167538^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [612]
-			"<19:53:43> <Comm>		^1^Sl^T^N1^S167538^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [613]
-			"<19:56:00> <DEBUG>		Event:	ENCOUNTER_START	2366	Xav the Unfallen	2	5", -- [614]
-			"<19:56:00> <INFO>		UpdatePlayersData()", -- [615]
-			"<19:56:51> <DEBUG>		Event:	ENCOUNTER_END	2366	Xav the Unfallen	2	5	1", -- [616]
-			"<19:56:55> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2366	178807	|cff0070dd|Hitem:178807::::::::60:71::2:6:8140:6806:6652:7579:1537:4785:1:28:748:::::|h[Pit Fighter's Wristguards]|h|r	1	Mokkar-Dalaran	WARRIOR", -- [617]
-			"<19:56:58> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2366	178807	|cff0070dd|Hitem:178807::::::::60:71::2:6:8140:6806:6652:7580:1537:4785:1:28:748:::::|h[Pit Fighter's Wristguards]|h|r	1	Aristotal-Boulderfist	PALADIN", -- [618]
-			"<19:56:59> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2366	183300	|cffff8000|Hitem:183300::::::::60:71::2::1:28:748:::::|h[Memory of the Magistrate's Judgment]|h|r	1	Aristotal-Boulderfist	PALADIN", -- [619]
-			"<19:57:02> <DEBUG>		Event:	LOOT_READY	true", -- [620]
-			"<19:57:02> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3783-2293-8623-162329-00006F1CC0	69959", -- [621]
-			"<19:57:02> <DEBUG>		Event:	LOOT_READY	true", -- [622]
-			"<19:57:02> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3783-2293-8623-162329-00006F1CC0	69959", -- [623]
-			"<19:57:03> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [624]
-			"<19:57:03> <DEBUG>		Event:	LOOT_CLOSED", -- [625]
-			"<19:57:03> <DEBUG>		Event:	LOOT_CLOSED", -- [626]
-			"<19:57:03> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2366	183385	|cffff8000|Hitem:183385::::::::60:71::2::1:28:748:::::|h[Memory of the Unhinged]|h|r	1	Shanyt	WARRIOR", -- [627]
-			"<19:57:03> <Comm>		^1^Sl^T^N1^S162329^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [628]
-			"<19:57:03> <Comm>		^1^Sl^T^N1^S162329^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [629]
-			"<19:57:05> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2366	183385	|cffff8000|Hitem:183385::::::::60:71::2::1:28:748:::::|h[Memory of the Unhinged]|h|r	1	Rahahaha-BlackDragonflight	WARRIOR", -- [630]
-			"<19:57:55> <DEBUG>		Event:	LOOT_READY	true", -- [631]
-			"<19:57:55> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:176866::::::::60:71:::::::::|h[Putrid Sludge]|h|r	0	1	Creature-0-3783-2293-8623-163089-0007EF1CC0	1", -- [632]
-			"<19:57:55> <DEBUG>		Event:	LOOT_READY	true", -- [633]
-			"<19:57:55> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:176866::::::::60:71:::::::::|h[Putrid Sludge]|h|r	0	1	Creature-0-3783-2293-8623-163089-0007EF1CC0	1", -- [634]
-			"<19:57:56> <DEBUG>		Event:	LOOT_CLOSED", -- [635]
-			"<19:57:56> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:176866::::::::60:71:::::::::|h[Putrid Sludge]|h|r	0", -- [636]
-			"<19:57:56> <DEBUG>		Event:	LOOT_CLOSED", -- [637]
-			"<19:57:56> <Comm>		^1^Sl^T^N1^S163089^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [638]
-			"<19:59:29> <DEBUG>		Event:	LOOT_READY	true", -- [639]
-			"<19:59:29> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:176866::::::::60:71:::::::::|h[Putrid Sludge]|h|r	0	1	Creature-0-3783-2293-8623-170690-00016F1CC0	1", -- [640]
-			"<19:59:29> <DEBUG>		Event:	LOOT_READY	true", -- [641]
-			"<19:59:29> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:176866::::::::60:71:::::::::|h[Putrid Sludge]|h|r	0	1	Creature-0-3783-2293-8623-170690-00016F1CC0	1", -- [642]
-			"<19:59:29> <DEBUG>		Event:	LOOT_CLOSED", -- [643]
-			"<19:59:29> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:176866::::::::60:71:::::::::|h[Putrid Sludge]|h|r	0", -- [644]
-			"<19:59:29> <DEBUG>		Event:	LOOT_CLOSED", -- [645]
-			"<19:59:29> <Comm>		^1^Sl^T^N1^S170690^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [646]
-			"<19:59:53> <DEBUG>		Event:	LOOT_READY	true", -- [647]
-			"<19:59:53> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:176866::::::::60:71:::::::::|h[Putrid Sludge]|h|r	0	1	Creature-0-3783-2293-8623-163089-0000EF1CC0	1", -- [648]
-			"<19:59:53> <DEBUG>		Event:	LOOT_READY	true", -- [649]
-			"<19:59:53> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:176866::::::::60:71:::::::::|h[Putrid Sludge]|h|r	0	1	Creature-0-3783-2293-8623-163089-0000EF1CC0	1", -- [650]
-			"<19:59:53> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:176866::::::::60:71:::::::::|h[Putrid Sludge]|h|r	0", -- [651]
-			"<19:59:53> <DEBUG>		Event:	LOOT_CLOSED", -- [652]
-			"<19:59:53> <DEBUG>		Event:	LOOT_CLOSED", -- [653]
-			"<19:59:54> <Comm>		^1^Sl^T^N1^S163089^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [654]
-			"<19:59:54> <Comm>		^1^Sl^T^N1^S163089^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [655]
-			"<20:00:26> <DEBUG>		Event:	ENCOUNTER_START	2365	Gorechop	2	5", -- [656]
-			"<20:00:26> <INFO>		UpdatePlayersData()", -- [657]
-			"<20:01:20> <DEBUG>		Event:	ENCOUNTER_END	2365	Gorechop	2	5	1", -- [658]
-			"<20:01:22> <DEBUG>		Event:	LOOT_READY	true", -- [659]
-			"<20:01:22> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3783-2293-8623-162317-00006F1CC0	69755", -- [660]
-			"<20:01:22> <DEBUG>		Event:	LOOT_READY	true", -- [661]
-			"<20:01:22> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3783-2293-8623-162317-00006F1CC0	69755", -- [662]
-			"<20:01:22> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [663]
-			"<20:01:22> <DEBUG>		Event:	LOOT_CLOSED", -- [664]
-			"<20:01:22> <DEBUG>		Event:	LOOT_CLOSED", -- [665]
-			"<20:01:22> <Comm>		^1^Sl^T^N1^S162317^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [666]
-			"<20:01:22> <Comm>		^1^Sl^T^N1^S162317^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [667]
-			"<20:01:24> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2365	178798	|cff0070dd|Hitem:178798::::::::60:71::2:5:8135:6806:6652:1537:4785:1:28:748:::::|h[Grips of Overwhelming Beatings]|h|r	1	Kelzir-Chromaggus	SHAMAN", -- [668]
-			"<20:01:24> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2365	178793	|cff0070dd|Hitem:178793::::::::60:71::2:5:8134:6806:6652:1537:4785:1:28:748:::::|h[Abdominal Securing Chestguard]|h|r	1	Rahahaha-BlackDragonflight	WARRIOR", -- [669]
-			"<20:03:36> <DEBUG>		Event:	LOOT_READY	true", -- [670]
-			"<20:03:36> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:176869::::::::60:71:::::::::|h[Bone Chip]|h|r	0	1	Creature-0-3783-2293-8623-170882-0000EF1CC0	1", -- [671]
-			"<20:03:37> <DEBUG>		Event:	LOOT_READY	true", -- [672]
-			"<20:03:37> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:176869::::::::60:71:::::::::|h[Bone Chip]|h|r	0	1	Creature-0-3783-2293-8623-170882-0000EF1CC0	1", -- [673]
-			"<20:03:37> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:176869::::::::60:71:::::::::|h[Bone Chip]|h|r	0", -- [674]
-			"<20:03:37> <DEBUG>		Event:	LOOT_CLOSED", -- [675]
-			"<20:03:37> <DEBUG>		Event:	LOOT_CLOSED", -- [676]
-			"<20:03:38> <Comm>		^1^Sl^T^N1^S170882^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [677]
-			"<20:03:38> <Comm>		^1^Sl^T^N1^S170882^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [678]
-			"<20:06:53> <DEBUG>		Event:	ENCOUNTER_START	2364	Kul'tharok	2	5", -- [679]
-			"<20:06:53> <INFO>		UpdatePlayersData()", -- [680]
-			"<20:07:34> <DEBUG>		Event:	ENCOUNTER_END	2364	Kul'tharok	2	5	1", -- [681]
-			"<20:07:35> <DEBUG>		Event:	LOOT_READY	true", -- [682]
-			"<20:07:35> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3783-2293-8623-162309-00006F1CC0	66221", -- [683]
-			"<20:07:35> <DEBUG>		Event:	LOOT_READY	true", -- [684]
-			"<20:07:35> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3783-2293-8623-162309-00006F1CC0	66221", -- [685]
-			"<20:07:36> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [686]
-			"<20:07:36> <DEBUG>		Event:	LOOT_CLOSED", -- [687]
-			"<20:07:36> <DEBUG>		Event:	LOOT_CLOSED", -- [688]
-			"<20:07:36> <Comm>		^1^Sl^T^N1^S162309^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [689]
-			"<20:07:36> <Comm>		^1^Sl^T^N1^S162309^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [690]
-			"<20:07:37> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2364	178870	|cff0070dd|Hitem:178870::::::::60:71::2:5:6806:6652:7580:1537:4785:1:28:748:::::|h[Ritual Bone Band]|h|r	1	Mokkar-Dalaran	WARRIOR", -- [691]
-			"<20:08:43> <DEBUG>		Event:	ENCOUNTER_START	2404	Mordretha	2	5", -- [692]
-			"<20:08:43> <INFO>		UpdatePlayersData()", -- [693]
-			"<20:09:33> <DEBUG>		Event:	ENCOUNTER_END	2404	Mordretha	2	5	1", -- [694]
-			"<20:09:34> <DEBUG>		Event:	LOOT_READY	true", -- [695]
-			"<20:09:34> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3783-2293-8623-165946-00006F20CB	134252", -- [696]
-			"<20:09:34> <DEBUG>		Event:	LOOT_READY	true", -- [697]
-			"<20:09:34> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3783-2293-8623-165946-00006F20CB	134252", -- [698]
-			"<20:09:35> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [699]
-			"<20:09:35> <DEBUG>		Event:	LOOT_CLOSED", -- [700]
-			"<20:09:35> <DEBUG>		Event:	LOOT_CLOSED", -- [701]
-			"<20:09:35> <Comm>		^1^Sl^T^N1^S165946^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [702]
-			"<20:09:35> <Comm>		^1^Sl^T^N1^S165946^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [703]
-			"<20:09:37> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2404	178872	|cff0070dd|Hitem:178872::::::::60:71::2:5:6806:6652:7579:1537:4785:1:28:748:::::|h[Ring of Perpetual Conflict]|h|r	1	Rahahaha-BlackDragonflight	WARRIOR", -- [704]
-			"<20:09:37> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2404	178802	|cff0070dd|Hitem:178802::::::::60:71::2:5:8135:6806:6652:1537:4785:1:28:748:::::|h[Unyielding Combatant's Pauldrons]|h|r	1	Aristotal-Boulderfist	PALADIN", -- [705]
-			"<20:09:40> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2404	178872	|cff0070dd|Hitem:178872::::::::60:71::2:5:6806:6652:7578:1537:4785:1:28:748:::::|h[Ring of Perpetual Conflict]|h|r	1	Kelzir-Chromaggus	SHAMAN", -- [706]
-			"<20:09:40> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [707]
-			"<20:09:42> <DEBUG>		GetML()", -- [708]
-			"<20:09:50> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [709]
-			"<20:09:52> <DEBUG>		GetML()", -- [710]
-			"<20:10:00> <DEBUG>		Event:	GROUP_LEFT	2	Party-3017-1-0000481FF057", -- [711]
-			"<20:10:00> <DEBUG>		GetML()", -- [712]
-			"<20:10:06> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [713]
-			"<20:10:06> <INFO>		UpdatePlayersData()", -- [714]
-			"<20:10:12> <DEBUG>		GetML()", -- [715]
-			"<20:11:48> <DEBUG>		Event:	LOOT_READY	true", -- [716]
-			"<20:11:48> <DEBUG>		Event:	LOOT_READY	true", -- [717]
-			"<20:11:48> <DEBUG>		Event:	LOOT_READY	true", -- [718]
-			"<20:11:48> <DEBUG>		Event:	LOOT_READY	true", -- [719]
-			"<20:11:48> <DEBUG>		Event:	LOOT_READY	true", -- [720]
-			"<20:11:48> <DEBUG>		Event:	LOOT_READY	true", -- [721]
-			"<20:11:48> <DEBUG>		Event:	LOOT_READY	true", -- [722]
-			"<20:11:48> <DEBUG>		Event:	LOOT_READY	true", -- [723]
-			"<20:12:23> <DEBUG>		Event:	LOOT_READY	true", -- [724]
-			"<20:12:23> <DEBUG>		Event:	LOOT_READY	true", -- [725]
-			"<20:13:12> <DEBUG>		Event:	LOOT_READY	true", -- [726]
-			"<20:13:12> <DEBUG>		Event:	LOOT_READY	true", -- [727]
-			"<20:14:33> <DEBUG>		Event:	LOOT_READY	true", -- [728]
-			"<20:14:33> <DEBUG>		Event:	LOOT_READY	true", -- [729]
-			"<20:15:03> <DEBUG>		Event:	LOOT_READY	true", -- [730]
-			"<20:15:03> <DEBUG>		Event:	LOOT_READY	true", -- [731]
-			"05/01/22", -- [732]
-			"<20:15:45> <INFO>		Logged In", -- [733]
-			"<20:15:45> [ML]<INFO>		Init", -- [734]
-			"<20:15:45> <INFO>		RCLootCouncil	TradeUI enabled", -- [735]
-			"<20:15:55> <INFO>		Shanyt-ArgentDawn	3.3.0	nil", -- [736]
-			"<20:15:55> <DEBUG>		ActivateSkin	bfa", -- [737]
-			"<20:16:06> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [738]
-			"<20:16:06> <INFO>		UpdatePlayersData()", -- [739]
-			"<20:16:06> <INFO>		Player relog...", -- [740]
-			"<20:16:11> <DEBUG>		GetPlayersGuildRank()", -- [741]
-			"<20:16:11> <DEBUG>		Found Guild Rank: Thuerge", -- [742]
-			"<20:16:13> <DEBUG>		GetML()", -- [743]
-			"<20:16:15> <Comm>		^1^Sv^T^N1^S3.3.0^t^^	GUILD	Shanyt-ArgentDawn", -- [744]
-			"05/01/22", -- [745]
-			"<20:16:37> <INFO>		Logged In", -- [746]
-			"<20:16:37> [ML]<INFO>		Init", -- [747]
-			"<20:16:37> <INFO>		RCLootCouncil	TradeUI enabled", -- [748]
-			"<20:16:48> <INFO>		Shanyt-ArgentDawn	3.3.0	nil", -- [749]
-			"<20:16:48> <DEBUG>		ActivateSkin	bfa", -- [750]
-			"<20:16:57> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [751]
-			"<20:16:57> <INFO>		UpdatePlayersData()", -- [752]
-			"<20:16:57> <INFO>		Player relog...", -- [753]
-			"<20:17:02> <DEBUG>		GetPlayersGuildRank()", -- [754]
-			"<20:17:02> <DEBUG>		Found Guild Rank: Thuerge", -- [755]
-			"<20:17:05> <DEBUG>		GetML()", -- [756]
-			"<20:17:06> <Comm>		^1^Sv^T^N1^S3.3.0^t^^	GUILD	Shanyt-ArgentDawn", -- [757]
-			"<20:18:11> <DEBUG>		Event:	LOOT_READY	true", -- [758]
-			"<20:18:11> <DEBUG>		Event:	LOOT_READY	true", -- [759]
-			"<20:18:42> <DEBUG>		Event:	LOOT_READY	true", -- [760]
-			"<20:18:42> <DEBUG>		Event:	LOOT_READY	true", -- [761]
-			"<20:19:37> <DEBUG>		Event:	LOOT_READY	true", -- [762]
-			"<20:19:38> <DEBUG>		Event:	LOOT_READY	true", -- [763]
-			"<20:20:04> <DEBUG>		Event:	LOOT_READY	true", -- [764]
-			"<20:20:05> <DEBUG>		Event:	LOOT_READY	true", -- [765]
-			"<20:27:24> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [766]
-			"<20:27:24> <INFO>		UpdatePlayersData()", -- [767]
-			"<20:27:30> <DEBUG>		GetML()", -- [768]
-			"<20:29:29> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [769]
-			"<20:29:29> <INFO>		UpdatePlayersData()", -- [770]
-			"<20:29:33> <DEBUG>		GetML()", -- [771]
-			"<20:31:28> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [772]
-			"<20:31:28> <INFO>		UpdatePlayersData()", -- [773]
-			"<20:31:32> <DEBUG>		GetML()", -- [774]
-			"<20:32:07> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [775]
-			"<20:32:07> <INFO>		UpdatePlayersData()", -- [776]
-			"<20:32:11> <DEBUG>		GetML()", -- [777]
-			"<20:34:37> <DEBUG>		Event:	LOOT_READY	true", -- [778]
-			"<20:34:37> <DEBUG>		Event:	LOOT_READY	true", -- [779]
-			"<20:34:41> <DEBUG>		Event:	LOOT_READY	true", -- [780]
-			"<20:34:41> <DEBUG>		Event:	LOOT_READY	true", -- [781]
-			"<20:34:42> <DEBUG>		Event:	LOOT_READY	true", -- [782]
-			"<20:35:15> <DEBUG>		Event:	LOOT_READY	true", -- [783]
-			"<20:35:15> <DEBUG>		Event:	LOOT_READY	true", -- [784]
-			"<20:35:25> <DEBUG>		Event:	LOOT_READY	true", -- [785]
-			"<20:35:26> <DEBUG>		Event:	LOOT_READY	true", -- [786]
-			"<20:35:45> <DEBUG>		Event:	LOOT_READY	true", -- [787]
-			"<20:35:45> <DEBUG>		Event:	LOOT_READY	true", -- [788]
-			"<20:36:12> <DEBUG>		Event:	LOOT_READY	true", -- [789]
-			"<20:36:12> <DEBUG>		Event:	LOOT_READY	true", -- [790]
-			"<20:36:52> <DEBUG>		Event:	LOOT_READY	true", -- [791]
-			"<20:36:53> <DEBUG>		Event:	LOOT_READY	true", -- [792]
-			"<20:37:02> <DEBUG>		Event:	LOOT_READY	true", -- [793]
-			"<20:37:03> <DEBUG>		Event:	LOOT_READY	true", -- [794]
-			"<20:42:24> <DEBUG>		Event:	LOOT_READY	true", -- [795]
-			"<20:42:24> <DEBUG>		Event:	LOOT_READY	true", -- [796]
-			"<20:43:31> <DEBUG>		Event:	LOOT_READY	true", -- [797]
-			"<20:43:31> <DEBUG>		Event:	LOOT_READY	true", -- [798]
-			"<20:43:53> <DEBUG>		Event:	LOOT_READY	true", -- [799]
-			"<20:43:53> <DEBUG>		Event:	LOOT_READY	true", -- [800]
-			"<20:44:02> <DEBUG>		Event:	LOOT_READY	true", -- [801]
-			"<20:44:02> <DEBUG>		Event:	LOOT_READY	true", -- [802]
-			"<20:44:31> <DEBUG>		Event:	LOOT_READY	true", -- [803]
-			"<20:44:31> <DEBUG>		Event:	LOOT_READY	true", -- [804]
-			"<20:44:55> <DEBUG>		Event:	LOOT_READY	true", -- [805]
-			"<20:44:55> <DEBUG>		Event:	LOOT_READY	true", -- [806]
-			"<20:45:26> <DEBUG>		Event:	LOOT_READY	true", -- [807]
-			"<20:45:27> <DEBUG>		Event:	LOOT_READY	true", -- [808]
-			"<20:45:31> <DEBUG>		Event:	LOOT_READY	true", -- [809]
-			"<20:45:31> <DEBUG>		Event:	LOOT_READY	true", -- [810]
-			"<20:45:48> <DEBUG>		Event:	LOOT_READY	true", -- [811]
-			"<20:45:48> <DEBUG>		Event:	LOOT_READY	true", -- [812]
-			"<20:46:01> <DEBUG>		Event:	LOOT_READY	true", -- [813]
-			"<20:46:01> <DEBUG>		Event:	LOOT_READY	true", -- [814]
-			"<20:46:17> <DEBUG>		Event:	LOOT_READY	true", -- [815]
-			"<20:46:17> <DEBUG>		Event:	LOOT_READY	true", -- [816]
-			"<20:46:31> <DEBUG>		Event:	LOOT_READY	true", -- [817]
-			"<20:46:31> <DEBUG>		Event:	LOOT_READY	true", -- [818]
-			"<20:46:40> <DEBUG>		Event:	LOOT_READY	true", -- [819]
-			"<20:46:40> <DEBUG>		Event:	LOOT_READY	true", -- [820]
-			"<20:47:01> <DEBUG>		Event:	LOOT_READY	true", -- [821]
-			"<20:47:01> <DEBUG>		Event:	LOOT_READY	true", -- [822]
-			"<20:47:26> <DEBUG>		Event:	LOOT_READY	true", -- [823]
-			"<20:47:26> <DEBUG>		Event:	LOOT_READY	true", -- [824]
-			"<20:47:54> <DEBUG>		Event:	LOOT_READY	true", -- [825]
-			"<20:47:54> <DEBUG>		Event:	LOOT_READY	true", -- [826]
-			"<20:48:02> <DEBUG>		Event:	LOOT_READY	true", -- [827]
-			"<20:48:02> <DEBUG>		Event:	LOOT_READY	true", -- [828]
-			"<20:48:08> <DEBUG>		Event:	LOOT_READY	true", -- [829]
-			"<20:48:08> <DEBUG>		Event:	LOOT_READY	true", -- [830]
-			"<20:48:15> <DEBUG>		Event:	LOOT_READY	true", -- [831]
-			"<20:48:15> <DEBUG>		Event:	LOOT_READY	true", -- [832]
-			"<20:48:21> <DEBUG>		Event:	LOOT_READY	true", -- [833]
-			"<20:48:21> <DEBUG>		Event:	LOOT_READY	true", -- [834]
-			"<20:48:25> <DEBUG>		Event:	LOOT_READY	true", -- [835]
-			"<20:48:25> <DEBUG>		Event:	LOOT_READY	true", -- [836]
-			"<20:48:31> <DEBUG>		Event:	LOOT_READY	true", -- [837]
-			"<20:48:31> <DEBUG>		Event:	LOOT_READY	true", -- [838]
-			"<20:48:36> <DEBUG>		Event:	LOOT_READY	true", -- [839]
-			"<20:48:37> <DEBUG>		Event:	LOOT_READY	true", -- [840]
-			"<20:48:44> <DEBUG>		Event:	LOOT_READY	true", -- [841]
-			"<20:48:45> <DEBUG>		Event:	LOOT_READY	true", -- [842]
-			"<20:48:55> <DEBUG>		Event:	LOOT_READY	true", -- [843]
-			"<20:48:55> <DEBUG>		Event:	LOOT_READY	true", -- [844]
-			"<20:49:14> <DEBUG>		Event:	LOOT_READY	true", -- [845]
-			"<20:49:14> <DEBUG>		Event:	LOOT_READY	true", -- [846]
-			"<20:50:13> <DEBUG>		Event:	LOOT_READY	true", -- [847]
-			"<20:50:13> <DEBUG>		Event:	LOOT_READY	true", -- [848]
-			"<20:50:35> <DEBUG>		Event:	LOOT_READY	true", -- [849]
-			"<20:50:36> <DEBUG>		Event:	LOOT_READY	true", -- [850]
-			"<20:50:42> <DEBUG>		Event:	LOOT_READY	true", -- [851]
-			"<20:50:42> <DEBUG>		Event:	LOOT_READY	true", -- [852]
-			"<20:51:03> <DEBUG>		Event:	LOOT_READY	true", -- [853]
-			"<20:51:04> <DEBUG>		Event:	LOOT_READY	true", -- [854]
-			"<20:52:14> <DEBUG>		Event:	LOOT_READY	true", -- [855]
-			"<20:52:14> <DEBUG>		Event:	LOOT_READY	true", -- [856]
-			"<20:52:23> <DEBUG>		Event:	LOOT_READY	true", -- [857]
-			"<20:52:24> <DEBUG>		Event:	LOOT_READY	true", -- [858]
-			"<20:53:16> <DEBUG>		Event:	LOOT_READY	true", -- [859]
-			"<20:53:17> <DEBUG>		Event:	LOOT_READY	true", -- [860]
-			"<20:53:21> <DEBUG>		Event:	LOOT_READY	true", -- [861]
-			"<20:53:21> <DEBUG>		Event:	LOOT_READY	true", -- [862]
-			"<20:53:24> <DEBUG>		Event:	LOOT_READY	true", -- [863]
-			"<20:53:24> <DEBUG>		Event:	LOOT_READY	true", -- [864]
-			"<20:53:42> <DEBUG>		Event:	LOOT_READY	true", -- [865]
-			"<20:53:43> <DEBUG>		Event:	LOOT_READY	true", -- [866]
-			"<20:54:27> <DEBUG>		Event:	LOOT_READY	true", -- [867]
-			"<20:54:27> <DEBUG>		Event:	LOOT_READY	true", -- [868]
-			"<20:55:21> <DEBUG>		Event:	LOOT_READY	true", -- [869]
-			"<20:55:21> <DEBUG>		Event:	LOOT_READY	true", -- [870]
-			"<20:56:44> <DEBUG>		Event:	LOOT_READY	true", -- [871]
-			"<20:56:44> <DEBUG>		Event:	LOOT_READY	true", -- [872]
-			"<20:56:46> <DEBUG>		Event:	LOOT_READY	true", -- [873]
-			"<20:56:46> <DEBUG>		Event:	LOOT_READY	true", -- [874]
-			"<20:56:47> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	184383	|cff0070dd|Hitem:184383::::::::60:71:::::::::|h[Duskfall Tuber]|h|r	2	Shanyt	WARRIOR", -- [875]
-			"<20:57:39> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [876]
-			"<20:57:41> <DEBUG>		GetML()", -- [877]
-			"<20:57:41> <Data.Player>		CreatePlayer	Player-84-03EE70A0", -- [878]
-			"<20:57:41> <DEBUG>		Resetting council as we have a new ML!", -- [879]
-			"<20:57:41> <INFO>		MasterLooter = 	Kûkâkü-Dragonmaw", -- [880]
-			"<20:57:56> <DEBUG>		Timer MLdb_check passed", -- [881]
-			"<20:57:56> <Comm>		^1^Sxrealm^T^N1^SKûkâkü-Dragonmaw^N2^SMLdb_request^t^^	PARTY	Shanyt-ArgentDawn", -- [882]
-			"<20:57:56> <Comm>		^1^Sxrealm^T^N1^SKûkâkü-Dragonmaw^N2^Scouncil_request^t^^	PARTY	Shanyt-ArgentDawn", -- [883]
-			"<20:58:04> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	180008	|cff0070dd|Hitem:180008::::::::60:71:::::::::|h[Resonating Anima Core]|h|r	2	Demonluthar-Madoran	DEMONHUNTER", -- [884]
-			"<20:58:07> <DEBUG>		Event:	LOOT_READY	true", -- [885]
-			"<20:58:07> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	180008	|cff0070dd|Hitem:180008::::::::60:71:::::::::|h[Resonating Anima Core]|h|r	2	Kûkâkü-Dragonmaw	HUNTER", -- [886]
-			"<20:58:07> <DEBUG>		Event:	LOOT_READY	true", -- [887]
-			"<20:58:08> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	180008	|cff0070dd|Hitem:180008::::::::60:71:::::::::|h[Resonating Anima Core]|h|r	2	Shanyt	WARRIOR", -- [888]
-			"<20:58:47> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	180008	|cff0070dd|Hitem:180008::::::::60:71:::::::::|h[Resonating Anima Core]|h|r	2	Demonluthar-Madoran	DEMONHUNTER", -- [889]
-			"<20:58:48> <DEBUG>		Event:	LOOT_READY	true", -- [890]
-			"<20:58:49> <DEBUG>		Event:	LOOT_READY	true", -- [891]
-			"<20:58:49> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	180008	|cff0070dd|Hitem:180008::::::::60:71:::::::::|h[Resonating Anima Core]|h|r	1	Molvy-KirinTor	WARRIOR", -- [892]
-			"<20:58:50> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	180008	|cff0070dd|Hitem:180008::::::::60:71:::::::::|h[Resonating Anima Core]|h|r	2	Shanyt	WARRIOR", -- [893]
-			"<20:59:00> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [894]
-			"<20:59:02> <DEBUG>		GetML()", -- [895]
-			"<20:59:02> <Data.Player>		CreatePlayer	Player-115-03E8863F", -- [896]
-			"<20:59:02> <DEBUG>		Resetting council as we have a new ML!", -- [897]
-			"<20:59:02> <INFO>		MasterLooter = 	Bahummbug-Draenor", -- [898]
-			"<20:59:03> <DEBUG>		Event:	LOOT_READY	true", -- [899]
-			"<20:59:03> <DEBUG>		Event:	LOOT_READY	true", -- [900]
-			"<20:59:14> <DEBUG>		Event:	LOOT_READY	true", -- [901]
-			"<20:59:15> <DEBUG>		Event:	LOOT_READY	true", -- [902]
-			"<20:59:15> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	180008	|cff0070dd|Hitem:180008::::::::60:71:::::::::|h[Resonating Anima Core]|h|r	1	Shanyt	WARRIOR", -- [903]
-			"<20:59:17> <DEBUG>		Timer MLdb_check passed", -- [904]
-			"<20:59:18> <Comm>		^1^Sxrealm^T^N1^SBahummbug-Draenor^N2^SMLdb_request^t^^	PARTY	Shanyt-ArgentDawn", -- [905]
-			"<20:59:18> <Comm>		^1^Sxrealm^T^N1^SBahummbug-Draenor^N2^Scouncil_request^t^^	PARTY	Shanyt-ArgentDawn", -- [906]
-			"<20:59:26> <DEBUG>		Event:	LOOT_READY	true", -- [907]
-			"<20:59:26> <DEBUG>		Event:	LOOT_READY	true", -- [908]
-			"<20:59:46> <DEBUG>		Event:	LOOT_READY	true", -- [909]
-			"<20:59:47> <DEBUG>		Event:	LOOT_READY	true", -- [910]
-			"<21:00:01> <DEBUG>		Event:	GROUP_LEFT	1	Party-84-1-0000482029BC", -- [911]
-			"<21:00:01> <DEBUG>		GetML()", -- [912]
-			"<21:01:03> <DEBUG>		Event:	LOOT_READY	true", -- [913]
-			"<21:01:03> <DEBUG>		Event:	LOOT_READY	true", -- [914]
-			"<21:01:57> <DEBUG>		Event:	LOOT_READY	true", -- [915]
-			"<21:01:58> <DEBUG>		Event:	LOOT_READY	true", -- [916]
-			"<21:02:11> <DEBUG>		Event:	LOOT_READY	true", -- [917]
-			"<21:02:12> <DEBUG>		Event:	LOOT_READY	true", -- [918]
-			"<21:02:54> <DEBUG>		Event:	LOOT_READY	true", -- [919]
-			"<21:02:54> <DEBUG>		Event:	LOOT_READY	true", -- [920]
-			"<21:04:37> <DEBUG>		Event:	LOOT_READY	true", -- [921]
-			"<21:04:37> <DEBUG>		Event:	LOOT_READY	true", -- [922]
-			"<21:05:57> <DEBUG>		Event:	LOOT_READY	true", -- [923]
-			"<21:05:57> <DEBUG>		Event:	LOOT_READY	true", -- [924]
-			"<21:06:00> <DEBUG>		Event:	LOOT_READY	true", -- [925]
-			"<21:06:00> <DEBUG>		Event:	LOOT_READY	true", -- [926]
-			"<21:07:12> <DEBUG>		Event:	LOOT_READY	true", -- [927]
-			"<21:07:13> <DEBUG>		Event:	LOOT_READY	true", -- [928]
-			"<21:07:20> <DEBUG>		Event:	LOOT_READY	true", -- [929]
-			"<21:07:20> <DEBUG>		Event:	LOOT_READY	true", -- [930]
-			"<21:07:21> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	179549	|cffa335ee|Hitem:179549::::::::60:71::28:4:6652:1465:5920:6646:1:28:1229:::::|h[Nightwillow Cudgel]|h|r	1	Shanyt	WARRIOR", -- [931]
-			"<21:16:06> <DEBUG>		Event:	LOOT_READY	true", -- [932]
-			"<21:16:06> <DEBUG>		Event:	LOOT_READY	true", -- [933]
-			"<21:16:19> <DEBUG>		Event:	LOOT_READY	true", -- [934]
-			"<21:16:20> <DEBUG>		Event:	LOOT_READY	true", -- [935]
-			"<21:23:40> <DEBUG>		Event:	LOOT_READY	true", -- [936]
-			"<21:23:40> <DEBUG>		Event:	LOOT_READY	true", -- [937]
-			"<21:29:17> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [938]
-			"<21:29:17> <INFO>		UpdatePlayersData()", -- [939]
-			"<21:29:21> <DEBUG>		GetML()", -- [940]
-			"<21:30:14> <DEBUG>		Event:	LOOT_READY	true", -- [941]
-			"<21:30:14> <DEBUG>		Event:	LOOT_READY	true", -- [942]
-			"<21:30:34> <DEBUG>		Event:	LOOT_READY	true", -- [943]
-			"<21:30:35> <DEBUG>		Event:	LOOT_READY	true", -- [944]
-			"<21:30:36> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187216	|cffa335ee|Hitem:187216::::::::60:71:::::::::|h[Soultwining Crescent]|h|r	1	Shanyt	WARRIOR", -- [945]
-			"<21:31:13> <DEBUG>		Event:	LOOT_READY	true", -- [946]
-			"<21:31:14> <DEBUG>		Event:	LOOT_READY	true", -- [947]
-			"<21:31:14> <DEBUG>		Event:	LOOT_READY	true", -- [948]
-			"<21:31:15> <DEBUG>		Event:	LOOT_READY	true", -- [949]
-			"<21:32:05> <DEBUG>		Event:	LOOT_READY	true", -- [950]
-			"<21:32:05> <DEBUG>		Event:	LOOT_READY	true", -- [951]
-			"<21:32:05> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	171833	|cff0070dd|Hitem:171833::::::::60:71:::::::::|h[Elethium Ore]|h|r	5	Shanyt	WARRIOR", -- [952]
-			"<21:32:48> <DEBUG>		Event:	LOOT_READY	true", -- [953]
-			"<21:32:48> <DEBUG>		Event:	LOOT_READY	true", -- [954]
-			"<21:32:48> <DEBUG>		Event:	LOOT_READY	true", -- [955]
-			"<21:32:57> <DEBUG>		Event:	LOOT_READY	true", -- [956]
-			"<21:32:57> <DEBUG>		Event:	LOOT_READY	true", -- [957]
-			"<21:33:15> <DEBUG>		Event:	LOOT_READY	true", -- [958]
-			"<21:33:15> <DEBUG>		Event:	LOOT_READY	true", -- [959]
-			"<21:33:18> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [960]
-			"<21:33:20> <DEBUG>		GetML()", -- [961]
-			"<21:33:20> <Data.Player>		CreatePlayer	Player-1071-095F20AD", -- [962]
-			"<21:33:20> <DEBUG>		Resetting council as we have a new ML!", -- [963]
-			"<21:33:20> <INFO>		MasterLooter = 	Tricidia-Sentinels", -- [964]
-			"<21:33:23> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	172097	|cff0070dd|Hitem:172097::::::::60:71:::::::::|h[Heavy Callous Hide]|h|r	1	Tricidia-Sentinels	DEMONHUNTER", -- [965]
-			"<21:33:28> <DEBUG>		Event:	LOOT_READY	true", -- [966]
-			"<21:33:28> <DEBUG>		Event:	LOOT_READY	true", -- [967]
-			"<21:33:35> <DEBUG>		Timer MLdb_check passed", -- [968]
-			"<21:33:35> <Comm>		^1^Sxrealm^T^N1^STricidia-Sentinels^N2^SMLdb_request^t^^	PARTY	Shanyt-ArgentDawn", -- [969]
-			"<21:33:35> <Comm>		^1^Sxrealm^T^N1^STricidia-Sentinels^N2^Scouncil_request^t^^	PARTY	Shanyt-ArgentDawn", -- [970]
-			"<21:33:36> <DEBUG>		Event:	LOOT_READY	true", -- [971]
-			"<21:33:37> <DEBUG>		Event:	LOOT_READY	true", -- [972]
-			"<21:33:55> <DEBUG>		Event:	LOOT_READY	true", -- [973]
-			"<21:33:56> <DEBUG>		Event:	LOOT_READY	true", -- [974]
-			"<21:34:00> <DEBUG>		Event:	LOOT_READY	true", -- [975]
-			"<21:34:00> <DEBUG>		Event:	LOOT_READY	true", -- [976]
-			"<21:34:19> <DEBUG>		Event:	LOOT_READY	true", -- [977]
-			"<21:34:20> <DEBUG>		Event:	LOOT_READY	true", -- [978]
-			"<21:34:29> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	172097	|cff0070dd|Hitem:172097::::::::60:71:::::::::|h[Heavy Callous Hide]|h|r	1	Tricidia-Sentinels	DEMONHUNTER", -- [979]
-			"<21:34:51> <DEBUG>		Event:	LOOT_READY	true", -- [980]
-			"<21:34:51> <DEBUG>		Event:	LOOT_READY	true", -- [981]
-			"<21:35:25> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [982]
-			"<21:35:28> <DEBUG>		GetML()", -- [983]
-			"<21:35:28> <Data.Player>		CreatePlayer	Player-162-097757FD", -- [984]
-			"<21:35:28> <DEBUG>		Resetting council as we have a new ML!", -- [985]
-			"<21:35:28> <INFO>		MasterLooter = 	Underbheit-EmeraldDream", -- [986]
-			"<21:35:31> <DEBUG>		Event:	LOOT_READY	true", -- [987]
-			"<21:35:31> <DEBUG>		Event:	LOOT_READY	true", -- [988]
-			"<21:35:37> <DEBUG>		Event:	LOOT_READY	true", -- [989]
-			"<21:35:38> <DEBUG>		Event:	LOOT_READY	true", -- [990]
-			"<21:35:43> <DEBUG>		Timer MLdb_check passed", -- [991]
-			"<21:35:43> <Comm>		^1^Sxrealm^T^N1^SUnderbheit-EmeraldDream^N2^SMLdb_request^t^^	PARTY	Shanyt-ArgentDawn", -- [992]
-			"<21:35:43> <Comm>		^1^Sxrealm^T^N1^SUnderbheit-EmeraldDream^N2^Scouncil_request^t^^	PARTY	Shanyt-ArgentDawn", -- [993]
-			"<21:35:43> <DEBUG>		Event:	GROUP_LEFT	1	Party-1071-1-00003057AA40", -- [994]
-			"<21:35:43> <DEBUG>		GetML()", -- [995]
-			"<21:36:38> <DEBUG>		Event:	LOOT_READY	true", -- [996]
-			"<21:36:38> <DEBUG>		Event:	LOOT_READY	true", -- [997]
-			"<21:40:03> <DEBUG>		Event:	LOOT_READY	true", -- [998]
-			"<21:40:04> <DEBUG>		Event:	LOOT_READY	true", -- [999]
-			"<21:40:37> <DEBUG>		Event:	LOOT_READY	true", -- [1000]
-			"<21:40:37> <DEBUG>		Event:	LOOT_READY	true", -- [1001]
-			"<21:40:38> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	171833	|cff0070dd|Hitem:171833::::::::60:71:::::::::|h[Elethium Ore]|h|r	4	Shanyt	WARRIOR", -- [1002]
-			"<21:41:21> <DEBUG>		Event:	LOOT_READY	true", -- [1003]
-			"<21:41:21> <DEBUG>		Event:	LOOT_READY	true", -- [1004]
-			"<21:41:21> <DEBUG>		Event:	LOOT_READY	true", -- [1005]
-			"<21:41:22> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187326	|cff0070dd|Hitem:187326::::::::60:71:::::::::|h[Half-Completed Runeforge Pattern]|h|r	2	Shanyt	WARRIOR", -- [1006]
-			"<21:41:22> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187330	|cffa335ee|Hitem:187330::::::::60:71:::::::::|h[Naaru Shard Fragment]|h|r	2	Shanyt	WARRIOR", -- [1007]
-			"<21:41:43> <DEBUG>		Event:	LOOT_READY	true", -- [1008]
-			"<21:41:44> <DEBUG>		Event:	LOOT_READY	true", -- [1009]
-			"<21:41:46> <DEBUG>		Event:	LOOT_READY	true", -- [1010]
-			"<21:41:46> <DEBUG>		Event:	LOOT_READY	true", -- [1011]
-			"<21:42:17> <DEBUG>		Event:	LOOT_READY	true", -- [1012]
-			"<21:42:18> <DEBUG>		Event:	LOOT_READY	true", -- [1013]
-			"<21:42:34> <DEBUG>		Event:	LOOT_READY	true", -- [1014]
-			"<21:42:34> <DEBUG>		Event:	LOOT_READY	true", -- [1015]
-			"<21:42:47> <DEBUG>		Event:	LOOT_READY	true", -- [1016]
-			"<21:42:47> <DEBUG>		Event:	LOOT_READY	true", -- [1017]
-			"<21:43:29> <DEBUG>		Event:	LOOT_READY	true", -- [1018]
-			"<21:43:29> <DEBUG>		Event:	LOOT_READY	true", -- [1019]
-			"<21:44:12> <DEBUG>		Event:	LOOT_READY	true", -- [1020]
-			"<21:44:13> <DEBUG>		Event:	LOOT_READY	true", -- [1021]
-			"<21:44:46> <DEBUG>		Event:	LOOT_READY	true", -- [1022]
-			"<21:44:46> <DEBUG>		Event:	LOOT_READY	true", -- [1023]
-			"<21:45:26> <DEBUG>		Event:	LOOT_READY	true", -- [1024]
-			"<21:45:27> <DEBUG>		Event:	LOOT_READY	true", -- [1025]
-			"<21:47:08> <DEBUG>		Event:	LOOT_READY	true", -- [1026]
-			"<21:47:09> <DEBUG>		Event:	LOOT_READY	true", -- [1027]
-			"<21:48:38> <DEBUG>		Event:	LOOT_READY	true", -- [1028]
-			"<21:48:38> <DEBUG>		Event:	LOOT_READY	true", -- [1029]
-			"<21:48:39> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	186206	|cff0070dd|Hitem:186206::::::::60:71:::::::::|h[Vault Emberstone]|h|r	5	Shanyt	WARRIOR", -- [1030]
-			"<21:48:39> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187465	|cff0070dd|Hitem:187465::::::::60:71:::::::::|h[Complicated Organism Harmonizer]|h|r	2	Shanyt	WARRIOR", -- [1031]
-			"<21:49:15> <DEBUG>		Event:	LOOT_READY	true", -- [1032]
-			"<21:49:15> <DEBUG>		Event:	LOOT_READY	true", -- [1033]
-			"<21:49:48> <DEBUG>		Event:	LOOT_READY	true", -- [1034]
-			"<21:49:48> <DEBUG>		Event:	LOOT_READY	true", -- [1035]
-			"<21:49:49> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	171833	|cff0070dd|Hitem:171833::::::::60:71:::::::::|h[Elethium Ore]|h|r	5	Shanyt	WARRIOR", -- [1036]
-			"<21:50:21> <DEBUG>		Event:	LOOT_READY	true", -- [1037]
-			"<21:50:21> <DEBUG>		Event:	LOOT_READY	true", -- [1038]
-			"<21:50:38> <DEBUG>		Event:	LOOT_READY	true", -- [1039]
-			"<21:50:38> <DEBUG>		Event:	LOOT_READY	true", -- [1040]
-			"<21:51:35> <DEBUG>		Event:	LOOT_READY	true", -- [1041]
-			"<21:51:35> <DEBUG>		Event:	LOOT_READY	true", -- [1042]
-			"<21:52:01> <DEBUG>		Event:	LOOT_READY	true", -- [1043]
-			"<21:52:01> <DEBUG>		Event:	LOOT_READY	true", -- [1044]
-			"<21:52:01> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	171833	|cff0070dd|Hitem:171833::::::::60:71:::::::::|h[Elethium Ore]|h|r	3	Shanyt	WARRIOR", -- [1045]
-			"<21:52:24> <DEBUG>		Event:	LOOT_READY	true", -- [1046]
-			"<21:52:24> <DEBUG>		Event:	LOOT_READY	true", -- [1047]
-			"<21:52:26> <DEBUG>		Event:	LOOT_READY	true", -- [1048]
-			"<21:52:27> <DEBUG>		Event:	LOOT_READY	true", -- [1049]
-			"<21:53:03> <DEBUG>		Event:	LOOT_READY	true", -- [1050]
-			"<21:53:04> <DEBUG>		Event:	LOOT_READY	true", -- [1051]
-			"<21:53:11> <DEBUG>		Event:	LOOT_READY	true", -- [1052]
-			"<21:53:11> <DEBUG>		Event:	LOOT_READY	true", -- [1053]
-			"<21:53:16> <DEBUG>		Event:	LOOT_READY	true", -- [1054]
-			"<21:53:16> <DEBUG>		Event:	LOOT_READY	true", -- [1055]
-			"<21:53:16> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	171833	|cff0070dd|Hitem:171833::::::::60:71:::::::::|h[Elethium Ore]|h|r	5	Shanyt	WARRIOR", -- [1056]
-			"<21:53:24> <DEBUG>		Event:	LOOT_READY	true", -- [1057]
-			"<21:53:24> <DEBUG>		Event:	LOOT_READY	true", -- [1058]
-			"<21:53:44> <DEBUG>		Event:	LOOT_READY	true", -- [1059]
-			"<21:53:45> <DEBUG>		Event:	LOOT_READY	true", -- [1060]
-			"<21:54:04> <DEBUG>		Event:	LOOT_READY	true", -- [1061]
-			"<21:54:04> <DEBUG>		Event:	LOOT_READY	true", -- [1062]
-			"<21:54:04> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	171833	|cff0070dd|Hitem:171833::::::::60:71:::::::::|h[Elethium Ore]|h|r	2	Shanyt	WARRIOR", -- [1063]
-			"<21:54:41> <DEBUG>		Event:	LOOT_READY	true", -- [1064]
-			"<21:54:41> <DEBUG>		Event:	LOOT_READY	true", -- [1065]
-			"<21:55:39> <DEBUG>		Event:	LOOT_READY	true", -- [1066]
-			"<21:55:39> <DEBUG>		Event:	LOOT_READY	true", -- [1067]
-			"<21:57:37> <DEBUG>		Event:	LOOT_READY	true", -- [1068]
-			"<21:57:37> <DEBUG>		Event:	LOOT_READY	true", -- [1069]
-			"<21:57:38> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187467	|cffa335ee|Hitem:187467::::::::60:71:::::::::|h[Perplexing Rune-Cube]|h|r	2	Shanyt	WARRIOR", -- [1070]
-			"<21:57:38> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187465	|cff0070dd|Hitem:187465::::::::60:71:::::::::|h[Complicated Organism Harmonizer]|h|r	2	Shanyt	WARRIOR", -- [1071]
-			"<21:57:39> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	184395	|cff0070dd|Hitem:184395::::::::60:71::::1:28:2098:::::|h[Fallen Adventurer's Cache]|h|r	1	Shanyt	WARRIOR", -- [1072]
-			"<21:57:50> <DEBUG>		Event:	LOOT_READY	true", -- [1073]
-			"<21:57:50> <DEBUG>		Event:	LOOT_READY	true", -- [1074]
-			"<21:58:40> <DEBUG>		Event:	LOOT_READY	true", -- [1075]
-			"<21:58:40> <DEBUG>		Event:	LOOT_READY	true", -- [1076]
-			"<21:58:59> <DEBUG>		Event:	LOOT_READY	true", -- [1077]
-			"<21:59:00> <DEBUG>		Event:	LOOT_READY	true", -- [1078]
-			"<21:59:45> <DEBUG>		Event:	LOOT_READY	true", -- [1079]
-			"<21:59:45> <DEBUG>		Event:	LOOT_READY	true", -- [1080]
-			"<21:59:46> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187431	|cff0070dd|Hitem:187431::::::::60:71:::::::::|h[Sleeping Armament]|h|r	1	Shanyt	WARRIOR", -- [1081]
-			"<21:59:52> <DEBUG>		Event:	LOOT_READY	true", -- [1082]
-			"<21:59:52> <DEBUG>		Event:	LOOT_READY	true", -- [1083]
-			"<22:00:17> <DEBUG>		Event:	LOOT_READY	true", -- [1084]
-			"<22:00:17> <DEBUG>		Event:	LOOT_READY	true", -- [1085]
-			"<22:00:31> <DEBUG>		Event:	LOOT_READY	true", -- [1086]
-			"<22:00:31> <DEBUG>		Event:	LOOT_READY	true", -- [1087]
-			"<22:00:40> <DEBUG>		Event:	LOOT_READY	true", -- [1088]
-			"<22:00:40> <DEBUG>		Event:	LOOT_READY	true", -- [1089]
-			"<22:00:46> <DEBUG>		Event:	LOOT_READY	true", -- [1090]
-			"<22:00:47> <DEBUG>		Event:	LOOT_READY	true", -- [1091]
-			"<22:04:17> <DEBUG>		Event:	LOOT_READY	true", -- [1092]
-			"<22:04:18> <DEBUG>		Event:	LOOT_READY	true", -- [1093]
-			"<22:04:18> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187350	|cffa335ee|Hitem:187350::::::::60:71:::::::::|h[Displaced Relic]|h|r	1	Shanyt	WARRIOR", -- [1094]
-			"<22:05:32> <DEBUG>		Event:	LOOT_READY	true", -- [1095]
-			"<22:05:32> <DEBUG>		Event:	LOOT_READY	true", -- [1096]
-			"<22:06:58> <DEBUG>		Event:	LOOT_READY	true", -- [1097]
-			"<22:06:58> <DEBUG>		Event:	LOOT_READY	true", -- [1098]
-			"<22:07:21> <DEBUG>		Event:	LOOT_READY	true", -- [1099]
-			"<22:07:22> <DEBUG>		Event:	LOOT_READY	true", -- [1100]
-			"<22:09:13> <DEBUG>		Event:	LOOT_READY	true", -- [1101]
-			"<22:09:14> <DEBUG>		Event:	LOOT_READY	true", -- [1102]
-			"<22:10:17> <DEBUG>		Event:	LOOT_READY	true", -- [1103]
-			"<22:10:17> <DEBUG>		Event:	LOOT_READY	true", -- [1104]
-			"<22:11:12> <DEBUG>		Event:	LOOT_READY	true", -- [1105]
-			"<22:11:13> <DEBUG>		Event:	LOOT_READY	true", -- [1106]
-			"<22:12:15> <DEBUG>		Event:	LOOT_READY	true", -- [1107]
-			"<22:12:15> <DEBUG>		Event:	LOOT_READY	true", -- [1108]
-			"<22:12:16> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	186205	|cff0070dd|Hitem:186205::::::::60:71:::::::::|h[Scholarly Attendant's Bangle]|h|r	9	Shanyt	WARRIOR", -- [1109]
-			"<22:12:16> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187326	|cff0070dd|Hitem:187326::::::::60:71:::::::::|h[Half-Completed Runeforge Pattern]|h|r	2	Shanyt	WARRIOR", -- [1110]
-			"<22:12:17> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187333	|cffa335ee|Hitem:187333::::::::60:71:::::::::|h[Core of an Unknown Titan]|h|r	1	Shanyt	WARRIOR", -- [1111]
-			"<22:13:44> <DEBUG>		Event:	LOOT_READY	true", -- [1112]
-			"<22:13:44> <DEBUG>		Event:	LOOT_READY	true", -- [1113]
-			"<22:14:40> <DEBUG>		Event:	LOOT_READY	true", -- [1114]
-			"<22:14:40> <DEBUG>		Event:	LOOT_READY	true", -- [1115]
-			"<22:14:41> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	186201	|cff0070dd|Hitem:186201::::::::60:71:::::::::|h[Ancient Anima Vessel]|h|r	5	Shanyt	WARRIOR", -- [1116]
-			"<22:14:53> <DEBUG>		Event:	LOOT_READY	true", -- [1117]
-			"<22:14:54> <DEBUG>		Event:	LOOT_READY	true", -- [1118]
-			"<22:14:54> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	171833	|cff0070dd|Hitem:171833::::::::60:71:::::::::|h[Elethium Ore]|h|r	2	Shanyt	WARRIOR", -- [1119]
-			"<22:16:34> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1120]
-			"<22:16:34> <INFO>		UpdatePlayersData()", -- [1121]
-			"<22:16:40> <DEBUG>		GetML()", -- [1122]
-			"<22:18:30> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1123]
-			"<22:18:30> <INFO>		UpdatePlayersData()", -- [1124]
-			"<22:18:34> <DEBUG>		GetML()", -- [1125]
-			"<22:20:37> <DEBUG>		Event:	LOOT_READY	true", -- [1126]
-			"<22:20:37> <DEBUG>		Event:	LOOT_READY	true", -- [1127]
-			"<22:26:08> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1128]
-			"<22:26:08> <INFO>		UpdatePlayersData()", -- [1129]
-			"<22:26:12> <DEBUG>		GetML()", -- [1130]
-			"05/02/22", -- [1131]
-			"<00:26:40> <INFO>		Logged In", -- [1132]
-			"<00:26:40> [ML]<INFO>		Init", -- [1133]
-			"<00:26:40> <INFO>		RCLootCouncil	TradeUI enabled", -- [1134]
-			"<00:26:59> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Shanyt-ArgentDawn	Player-75-058380E2", -- [1135]
-			"<00:26:59> <INFO>		Shanyt-ArgentDawn	3.3.0	nil", -- [1136]
-			"<00:26:59> <DEBUG>		ActivateSkin	bfa", -- [1137]
-			"<00:27:09> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1138]
-			"<00:27:09> <INFO>		UpdatePlayersData()", -- [1139]
-			"<00:27:09> <INFO>		Player relog...", -- [1140]
-			"<00:27:12> <DEBUG>		GetPlayersGuildRank()", -- [1141]
-			"<00:27:12> <DEBUG>		Found Guild Rank: Thuerge", -- [1142]
-			"<00:27:19> <DEBUG>		GetML()", -- [1143]
-			"<00:28:08> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1144]
-			"<00:28:08> <INFO>		UpdatePlayersData()", -- [1145]
-			"<00:28:16> <DEBUG>		GetML()", -- [1146]
-			"<00:28:29> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1147]
-			"<00:28:29> <INFO>		UpdatePlayersData()", -- [1148]
-			"<00:28:37> <DEBUG>		GetML()", -- [1149]
-			"05/02/22", -- [1150]
-			"<18:16:43> <INFO>		Logged In", -- [1151]
-			"<18:16:43> [ML]<INFO>		Init", -- [1152]
-			"<18:16:43> <INFO>		RCLootCouncil	TradeUI enabled", -- [1153]
-			"<18:17:03> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Shanyt-ArgentDawn	Player-75-058380E2", -- [1154]
-			"<18:17:03> <INFO>		Shanyt-ArgentDawn	3.3.0	nil", -- [1155]
-			"<18:17:03> <DEBUG>		ActivateSkin	bfa", -- [1156]
-			"<18:17:13> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1157]
-			"<18:17:13> <INFO>		UpdatePlayersData()", -- [1158]
-			"<18:17:13> <INFO>		Player relog...", -- [1159]
-			"<18:17:17> <DEBUG>		GetPlayersGuildRank()", -- [1160]
-			"<18:17:17> <DEBUG>		GetPlayersGuildRank()", -- [1161]
-			"<18:17:17> <DEBUG>		Found Guild Rank: Thuerge", -- [1162]
-			"<18:17:24> <DEBUG>		GetML()", -- [1163]
-			"<18:22:26> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1164]
-			"<18:22:26> <INFO>		UpdatePlayersData()", -- [1165]
-			"<18:22:34> <DEBUG>		GetML()", -- [1166]
-			"<18:23:20> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1167]
-			"<18:23:20> <INFO>		UpdatePlayersData()", -- [1168]
-			"<18:23:23> <DEBUG>		GetML()", -- [1169]
-			"<18:25:57> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1170]
-			"<18:25:57> <INFO>		UpdatePlayersData()", -- [1171]
-			"<18:26:01> <DEBUG>		GetML()", -- [1172]
-			"<18:26:33> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1173]
-			"<18:26:33> <INFO>		UpdatePlayersData()", -- [1174]
-			"<18:26:37> <DEBUG>		GetML()", -- [1175]
-			"05/02/22", -- [1176]
-			"<21:51:24> <INFO>		Logged In", -- [1177]
-			"<21:51:24> [ML]<INFO>		Init", -- [1178]
-			"<21:51:24> <INFO>		RCLootCouncil	TradeUI enabled", -- [1179]
-			"<21:51:43> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Shanyt-ArgentDawn	Player-75-058380E2", -- [1180]
-			"<21:51:43> <INFO>		Shanyt-ArgentDawn	3.3.0	nil", -- [1181]
-			"<21:51:43> <DEBUG>		ActivateSkin	bfa", -- [1182]
-			"<21:51:54> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1183]
-			"<21:51:54> <INFO>		UpdatePlayersData()", -- [1184]
-			"<21:51:54> <INFO>		Player relog...", -- [1185]
-			"<21:51:57> <DEBUG>		GetPlayersGuildRank()", -- [1186]
-			"<21:51:58> <DEBUG>		GetPlayersGuildRank()", -- [1187]
-			"<21:51:58> <DEBUG>		Found Guild Rank: Thuerge", -- [1188]
-			"<21:52:05> <DEBUG>		GetML()", -- [1189]
-			"<21:52:38> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1190]
-			"<21:52:38> <INFO>		UpdatePlayersData()", -- [1191]
-			"<21:52:46> <DEBUG>		GetML()", -- [1192]
-			"<21:58:23> <DEBUG>		Event:	LOOT_READY	true", -- [1193]
-			"<21:58:24> <DEBUG>		Event:	LOOT_READY	true", -- [1194]
-			"<21:58:25> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187216	|cffa335ee|Hitem:187216::::::::60:71:::::::::|h[Soultwining Crescent]|h|r	1	Shanyt	WARRIOR", -- [1195]
-			"<21:58:41> <DEBUG>		Event:	LOOT_READY	true", -- [1196]
-			"<21:58:42> <DEBUG>		Event:	LOOT_READY	true", -- [1197]
-			"<21:58:57> <DEBUG>		Event:	LOOT_READY	true", -- [1198]
-			"<21:58:57> <DEBUG>		Event:	LOOT_READY	true", -- [1199]
-			"<21:58:58> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187325	|cff0070dd|Hitem:187325::::::::60:71:::::::::|h[Faded Razorwing Anatomy Illustration]|h|r	2	Shanyt	WARRIOR", -- [1200]
-			"<21:58:59> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	186017	|cffff8000|Hitem:186017::::::::60:71:::::::::|h[Korthite Crystal]|h|r	1	Shanyt	WARRIOR", -- [1201]
-			"<21:59:28> <DEBUG>		Event:	LOOT_READY	true", -- [1202]
-			"<21:59:29> <DEBUG>		Event:	LOOT_READY	true", -- [1203]
-			"<21:59:31> <DEBUG>		Event:	LOOT_READY	true", -- [1204]
-			"<21:59:31> <DEBUG>		Event:	LOOT_READY	true", -- [1205]
-			"<21:59:34> <DEBUG>		Event:	LOOT_READY	true", -- [1206]
-			"<21:59:34> <DEBUG>		Event:	LOOT_READY	true", -- [1207]
-			"<22:00:29> <DEBUG>		Event:	LOOT_READY	true", -- [1208]
-			"<22:00:30> <DEBUG>		Event:	LOOT_READY	true", -- [1209]
-			"<22:00:31> <DEBUG>		Event:	LOOT_READY	true", -- [1210]
-			"<22:00:31> <DEBUG>		Event:	LOOT_READY	true", -- [1211]
-			"<22:00:33> <DEBUG>		Event:	LOOT_READY	true", -- [1212]
-			"<22:00:33> <DEBUG>		Event:	LOOT_READY	true", -- [1213]
-			"<22:00:51> <DEBUG>		Event:	LOOT_READY	true", -- [1214]
-			"<22:00:52> <DEBUG>		Event:	LOOT_READY	true", -- [1215]
-			"<22:00:53> <DEBUG>		Event:	LOOT_READY	true", -- [1216]
-			"<22:00:54> <DEBUG>		Event:	LOOT_READY	true", -- [1217]
-			"<22:00:57> <DEBUG>		Event:	LOOT_READY	true", -- [1218]
-			"<22:00:57> <DEBUG>		Event:	LOOT_READY	true", -- [1219]
-			"<22:01:06> <DEBUG>		Event:	LOOT_READY	true", -- [1220]
-			"<22:01:06> <DEBUG>		Event:	LOOT_READY	true", -- [1221]
-			"<22:01:08> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187466	|cffa335ee|Hitem:187466::::::::60:71:::::::::|h[Korthian Cypher Book]|h|r	2	Shanyt	WARRIOR", -- [1222]
-			"<22:01:08> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	186205	|cff0070dd|Hitem:186205::::::::60:71:::::::::|h[Scholarly Attendant's Bangle]|h|r	5	Shanyt	WARRIOR", -- [1223]
-			"<22:01:17> <DEBUG>		Event:	LOOT_READY	true", -- [1224]
-			"<22:01:17> <DEBUG>		Event:	LOOT_READY	true", -- [1225]
-			"<22:01:20> <DEBUG>		Event:	LOOT_READY	true", -- [1226]
-			"<22:01:20> <DEBUG>		Event:	LOOT_READY	true", -- [1227]
-			"<22:02:03> <DEBUG>		Event:	LOOT_READY	true", -- [1228]
-			"<22:02:03> <DEBUG>		Event:	LOOT_READY	true", -- [1229]
-			"<22:02:03> <DEBUG>		Event:	LOOT_READY	true", -- [1230]
-			"<22:02:26> <DEBUG>		Event:	LOOT_READY	true", -- [1231]
-			"<22:02:27> <DEBUG>		Event:	LOOT_READY	true", -- [1232]
-			"<22:03:44> <DEBUG>		Event:	LOOT_READY	true", -- [1233]
-			"<22:03:44> <DEBUG>		Event:	LOOT_READY	true", -- [1234]
-			"<22:04:37> <DEBUG>		Event:	LOOT_READY	true", -- [1235]
-			"<22:04:37> <DEBUG>		Event:	LOOT_READY	true", -- [1236]
-			"<22:05:19> <DEBUG>		Event:	LOOT_READY	true", -- [1237]
-			"<22:05:19> <DEBUG>		Event:	LOOT_READY	true", -- [1238]
-			"<22:05:22> <DEBUG>		Event:	LOOT_READY	true", -- [1239]
-			"<22:05:23> <DEBUG>		Event:	LOOT_READY	true", -- [1240]
-			"<22:05:47> <DEBUG>		Event:	LOOT_READY	true", -- [1241]
-			"<22:05:47> <DEBUG>		Event:	LOOT_READY	true", -- [1242]
-			"<22:06:10> <DEBUG>		Event:	LOOT_READY	true", -- [1243]
-			"<22:06:11> <DEBUG>		Event:	LOOT_READY	true", -- [1244]
-			"<22:06:26> <DEBUG>		Event:	LOOT_READY	true", -- [1245]
-			"<22:06:27> <DEBUG>		Event:	LOOT_READY	true", -- [1246]
-			"<22:06:36> <DEBUG>		Event:	LOOT_READY	true", -- [1247]
-			"<22:06:36> <DEBUG>		Event:	LOOT_READY	true", -- [1248]
-			"<22:06:36> <DEBUG>		Event:	LOOT_READY	true", -- [1249]
-			"<22:06:37> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	171833	|cff0070dd|Hitem:171833::::::::60:71:::::::::|h[Elethium Ore]|h|r	6	Shanyt	WARRIOR", -- [1250]
-			"<22:06:44> <DEBUG>		Event:	LOOT_READY	true", -- [1251]
-			"<22:06:44> <DEBUG>		Event:	LOOT_READY	true", -- [1252]
-			"<22:06:59> <DEBUG>		Event:	LOOT_READY	true", -- [1253]
-			"<22:06:59> <DEBUG>		Event:	LOOT_READY	true", -- [1254]
-			"<22:07:08> <DEBUG>		Event:	LOOT_READY	true", -- [1255]
-			"<22:07:09> <DEBUG>		Event:	LOOT_READY	true", -- [1256]
-			"<22:07:42> <DEBUG>		Event:	LOOT_READY	true", -- [1257]
-			"<22:07:43> <DEBUG>		Event:	LOOT_READY	true", -- [1258]
-			"<22:08:09> <DEBUG>		Event:	LOOT_READY	true", -- [1259]
-			"<22:08:09> <DEBUG>		Event:	LOOT_READY	true", -- [1260]
-			"<22:08:15> <DEBUG>		Event:	LOOT_READY	true", -- [1261]
-			"<22:08:15> <DEBUG>		Event:	LOOT_READY	true", -- [1262]
-			"<22:08:47> <DEBUG>		Event:	LOOT_READY	true", -- [1263]
-			"<22:08:48> <DEBUG>		Event:	LOOT_READY	true", -- [1264]
-			"<22:09:04> <DEBUG>		Event:	LOOT_READY	true", -- [1265]
-			"<22:09:05> <DEBUG>		Event:	LOOT_READY	true", -- [1266]
-			"<22:09:58> <DEBUG>		Event:	LOOT_READY	true", -- [1267]
-			"<22:09:58> <DEBUG>		Event:	LOOT_READY	true", -- [1268]
-			"<22:09:58> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	171833	|cff0070dd|Hitem:171833::::::::60:71:::::::::|h[Elethium Ore]|h|r	5	Shanyt	WARRIOR", -- [1269]
-			"<22:10:03> <DEBUG>		Event:	LOOT_READY	true", -- [1270]
-			"<22:10:04> <DEBUG>		Event:	LOOT_READY	true", -- [1271]
-			"<22:10:24> <DEBUG>		Event:	LOOT_READY	true", -- [1272]
-			"<22:10:24> <DEBUG>		Event:	LOOT_READY	true", -- [1273]
-			"<22:10:25> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187431	|cff0070dd|Hitem:187431::::::::60:71:::::::::|h[Sleeping Armament]|h|r	1	Shanyt	WARRIOR", -- [1274]
-			"<22:10:36> <DEBUG>		Event:	LOOT_READY	true", -- [1275]
-			"<22:10:36> <DEBUG>		Event:	LOOT_READY	true", -- [1276]
-			"<22:10:44> <DEBUG>		Event:	LOOT_READY	true", -- [1277]
-			"<22:10:44> <DEBUG>		Event:	LOOT_READY	true", -- [1278]
-			"<22:11:00> <DEBUG>		Event:	LOOT_READY	true", -- [1279]
-			"<22:11:00> <DEBUG>		Event:	LOOT_READY	true", -- [1280]
-			"<22:11:24> <DEBUG>		Event:	LOOT_READY	true", -- [1281]
-			"<22:11:24> <DEBUG>		Event:	LOOT_READY	true", -- [1282]
-			"<22:11:28> <DEBUG>		Event:	LOOT_READY	true", -- [1283]
-			"<22:11:28> <DEBUG>		Event:	LOOT_READY	true", -- [1284]
-			"<22:11:35> <DEBUG>		Event:	LOOT_READY	true", -- [1285]
-			"<22:11:35> <DEBUG>		Event:	LOOT_READY	true", -- [1286]
-			"<22:11:41> <DEBUG>		Event:	LOOT_READY	true", -- [1287]
-			"<22:11:42> <DEBUG>		Event:	LOOT_READY	true", -- [1288]
-			"<22:14:35> <DEBUG>		Event:	LOOT_READY	true", -- [1289]
-			"<22:14:35> <DEBUG>		Event:	LOOT_READY	true", -- [1290]
-			"<22:15:12> <DEBUG>		Event:	LOOT_READY	true", -- [1291]
-			"<22:15:13> <DEBUG>		Event:	LOOT_READY	true", -- [1292]
-			"<22:15:13> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	171833	|cff0070dd|Hitem:171833::::::::60:71:::::::::|h[Elethium Ore]|h|r	4	Shanyt	WARRIOR", -- [1293]
-			"<22:17:31> <DEBUG>		Event:	LOOT_READY	true", -- [1294]
-			"<22:17:32> <DEBUG>		Event:	LOOT_READY	true", -- [1295]
-			"<22:19:51> <DEBUG>		Event:	LOOT_READY	true", -- [1296]
-			"<22:19:51> <DEBUG>		Event:	LOOT_READY	true", -- [1297]
-			"<22:19:52> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187428	|cff0070dd|Hitem:187428::::::::60:71:::::::::|h[Legend of the Animaswell]|h|r	1	Shanyt	WARRIOR", -- [1298]
-			"<22:20:11> <DEBUG>		Event:	LOOT_READY	true", -- [1299]
-			"<22:20:11> <DEBUG>		Event:	LOOT_READY	true", -- [1300]
-			"<22:20:21> <DEBUG>		Event:	LOOT_READY	true", -- [1301]
-			"<22:20:21> <DEBUG>		Event:	LOOT_READY	true", -- [1302]
-			"<22:20:39> <DEBUG>		Event:	LOOT_READY	true", -- [1303]
-			"<22:20:39> <DEBUG>		Event:	LOOT_READY	true", -- [1304]
-			"<22:20:45> <DEBUG>		Event:	LOOT_READY	true", -- [1305]
-			"<22:20:45> <DEBUG>		Event:	LOOT_READY	true", -- [1306]
-			"<22:20:59> <DEBUG>		Event:	LOOT_READY	true", -- [1307]
-			"<22:21:00> <DEBUG>		Event:	LOOT_READY	true", -- [1308]
-			"<22:21:07> <DEBUG>		Event:	LOOT_READY	true", -- [1309]
-			"<22:21:08> <DEBUG>		Event:	LOOT_READY	true", -- [1310]
-			"<22:21:19> <DEBUG>		Event:	LOOT_READY	true", -- [1311]
-			"<22:21:19> <DEBUG>		Event:	LOOT_READY	true", -- [1312]
-			"<22:21:34> <DEBUG>		Event:	LOOT_READY	true", -- [1313]
-			"<22:21:34> <DEBUG>		Event:	LOOT_READY	true", -- [1314]
-			"<22:21:48> <DEBUG>		Event:	LOOT_READY	true", -- [1315]
-			"<22:21:48> <DEBUG>		Event:	LOOT_READY	true", -- [1316]
-			"<22:21:58> <DEBUG>		Event:	LOOT_READY	true", -- [1317]
-			"<22:21:59> <DEBUG>		Event:	LOOT_READY	true", -- [1318]
-			"<22:22:14> <DEBUG>		Event:	LOOT_READY	true", -- [1319]
-			"<22:22:14> <DEBUG>		Event:	LOOT_READY	true", -- [1320]
-			"<22:32:43> <DEBUG>		Event:	LOOT_READY	true", -- [1321]
-			"<22:32:43> <DEBUG>		Event:	LOOT_READY	true", -- [1322]
-			"<22:32:55> <DEBUG>		Event:	LOOT_READY	true", -- [1323]
-			"<22:32:55> <DEBUG>		Event:	LOOT_READY	true", -- [1324]
-			"<22:33:32> <DEBUG>		Event:	LOOT_READY	true", -- [1325]
-			"<22:33:32> <DEBUG>		Event:	LOOT_READY	true", -- [1326]
-			"<22:33:48> <DEBUG>		Event:	LOOT_READY	true", -- [1327]
-			"<22:33:48> <DEBUG>		Event:	LOOT_READY	true", -- [1328]
-			"<22:34:23> <DEBUG>		Event:	LOOT_READY	true", -- [1329]
-			"<22:34:23> <DEBUG>		Event:	LOOT_READY	true", -- [1330]
-			"<22:34:33> <DEBUG>		Event:	LOOT_READY	true", -- [1331]
-			"<22:34:33> <DEBUG>		Event:	LOOT_READY	true", -- [1332]
-			"<22:35:36> <DEBUG>		Event:	LOOT_READY	true", -- [1333]
-			"<22:35:37> <DEBUG>		Event:	LOOT_READY	true", -- [1334]
-			"<22:37:36> <DEBUG>		Event:	LOOT_READY	true", -- [1335]
-			"<22:37:37> <DEBUG>		Event:	LOOT_READY	true", -- [1336]
-			"<22:40:06> <DEBUG>		Event:	LOOT_READY	true", -- [1337]
-			"<22:40:06> <DEBUG>		Event:	LOOT_READY	true", -- [1338]
-			"<22:41:06> <DEBUG>		Event:	LOOT_READY	true", -- [1339]
-			"<22:41:07> <DEBUG>		Event:	LOOT_READY	true", -- [1340]
-			"<22:42:03> <DEBUG>		Event:	LOOT_READY	true", -- [1341]
-			"<22:42:03> <DEBUG>		Event:	LOOT_READY	true", -- [1342]
-			"<22:43:09> <DEBUG>		Event:	LOOT_READY	true", -- [1343]
-			"<22:43:10> <DEBUG>		Event:	LOOT_READY	true", -- [1344]
-			"<22:44:00> <DEBUG>		Event:	LOOT_READY	true", -- [1345]
-			"<22:44:00> <DEBUG>		Event:	LOOT_READY	true", -- [1346]
-			"<22:45:02> <DEBUG>		Event:	LOOT_READY	true", -- [1347]
-			"<22:45:02> <DEBUG>		Event:	LOOT_READY	true", -- [1348]
-			"<22:45:49> <DEBUG>		Event:	LOOT_READY	true", -- [1349]
-			"<22:45:49> <DEBUG>		Event:	LOOT_READY	true", -- [1350]
-			"<22:47:04> <DEBUG>		Event:	LOOT_READY	true", -- [1351]
-			"<22:47:04> <DEBUG>		Event:	LOOT_READY	true", -- [1352]
-			"<22:47:12> <DEBUG>		Event:	LOOT_READY	true", -- [1353]
-			"<22:47:12> <DEBUG>		Event:	LOOT_READY	true", -- [1354]
-			"<22:47:13> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	171833	|cff0070dd|Hitem:171833::::::::60:71:::::::::|h[Elethium Ore]|h|r	5	Shanyt	WARRIOR", -- [1355]
-			"<22:47:42> <DEBUG>		Event:	LOOT_READY	true", -- [1356]
-			"<22:47:43> <DEBUG>		Event:	LOOT_READY	true", -- [1357]
-			"<22:51:18> <DEBUG>		Event:	LOOT_READY	true", -- [1358]
-			"<22:51:19> <DEBUG>		Event:	LOOT_READY	true", -- [1359]
-			"<22:51:47> <DEBUG>		Event:	LOOT_READY	true", -- [1360]
-			"<22:51:47> <DEBUG>		Event:	LOOT_READY	true", -- [1361]
-			"<22:52:25> <DEBUG>		Event:	LOOT_READY	true", -- [1362]
-			"<22:52:25> <DEBUG>		Event:	LOOT_READY	true", -- [1363]
-			"<22:52:31> <DEBUG>		Event:	LOOT_READY	true", -- [1364]
-			"<22:52:31> <DEBUG>		Event:	LOOT_READY	true", -- [1365]
-			"<22:53:38> <DEBUG>		Event:	LOOT_READY	true", -- [1366]
-			"<22:53:38> <DEBUG>		Event:	LOOT_READY	true", -- [1367]
-			"<22:53:49> <DEBUG>		Event:	LOOT_READY	true", -- [1368]
-			"<22:53:50> <DEBUG>		Event:	LOOT_READY	true", -- [1369]
-			"<22:53:51> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187275	|cff0070dd|Hitem:187275::::::::60:71:::::::::|h[Helsworn Battle Plans]|h|r	1	Shanyt	WARRIOR", -- [1370]
-			"<22:54:13> <DEBUG>		Event:	LOOT_READY	true", -- [1371]
-			"<22:54:14> <DEBUG>		Event:	LOOT_READY	true", -- [1372]
-			"<22:55:19> <DEBUG>		Event:	LOOT_READY	true", -- [1373]
-			"<22:55:19> <DEBUG>		Event:	LOOT_READY	true", -- [1374]
-			"<22:56:17> <DEBUG>		Event:	LOOT_READY	true", -- [1375]
-			"<22:56:17> <DEBUG>		Event:	LOOT_READY	true", -- [1376]
-			"<22:58:12> <DEBUG>		Event:	LOOT_READY	true", -- [1377]
-			"<22:58:12> <DEBUG>		Event:	LOOT_READY	true", -- [1378]
-			"<22:58:30> <DEBUG>		Event:	LOOT_READY	true", -- [1379]
-			"<22:58:30> <DEBUG>		Event:	LOOT_READY	true", -- [1380]
-			"<22:58:34> <DEBUG>		Event:	LOOT_READY	true", -- [1381]
-			"<22:58:34> <DEBUG>		Event:	LOOT_READY	true", -- [1382]
-			"<22:58:35> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	171833	|cff0070dd|Hitem:171833::::::::60:71:::::::::|h[Elethium Ore]|h|r	2	Shanyt	WARRIOR", -- [1383]
-			"<22:58:38> <DEBUG>		Event:	LOOT_READY	true", -- [1384]
-			"<22:58:38> <DEBUG>		Event:	LOOT_READY	true", -- [1385]
-			"<22:58:39> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	186727	|cff0070dd|Hitem:186727::::::::60:71:::::::::|h[Seal Breaker Key]|h|r	1	Shanyt	WARRIOR", -- [1386]
-			"<22:59:11> <DEBUG>		Event:	LOOT_READY	true", -- [1387]
-			"<22:59:12> <DEBUG>		Event:	LOOT_READY	true", -- [1388]
-			"<22:59:31> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1389]
-			"<22:59:33> <DEBUG>		GetML()", -- [1390]
-			"<22:59:33> <Data.Player>		CreatePlayer	Player-3678-0B65E4F4", -- [1391]
-			"<22:59:33> <DEBUG>		Resetting council as we have a new ML!", -- [1392]
-			"<22:59:33> <INFO>		MasterLooter = 	Rekithekami-Thrall", -- [1393]
-			"<22:59:48> <DEBUG>		Timer MLdb_check passed", -- [1394]
-			"<22:59:48> <Comm>		^1^Sxrealm^T^N1^SRekithekami-Thrall^N2^SMLdb_request^t^^	PARTY	Shanyt-ArgentDawn", -- [1395]
-			"<22:59:48> <Comm>		^1^Sxrealm^T^N1^SRekithekami-Thrall^N2^Scouncil_request^t^^	PARTY	Shanyt-ArgentDawn", -- [1396]
-			"<23:00:02> <DEBUG>		Event:	LOOT_READY	true", -- [1397]
-			"<23:00:03> <DEBUG>		Event:	LOOT_READY	true", -- [1398]
-			"<23:00:28> <DEBUG>		Event:	LOOT_READY	true", -- [1399]
-			"<23:00:28> <DEBUG>		Event:	LOOT_READY	true", -- [1400]
-			"<23:00:41> <DEBUG>		Event:	LOOT_READY	true", -- [1401]
-			"<23:00:41> <DEBUG>		Event:	LOOT_READY	true", -- [1402]
-			"<23:00:48> <DEBUG>		Event:	LOOT_READY	true", -- [1403]
-			"<23:00:48> <DEBUG>		Event:	LOOT_READY	true", -- [1404]
-			"<23:00:49> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	171833	|cff0070dd|Hitem:171833::::::::60:71:::::::::|h[Elethium Ore]|h|r	2	Shanyt	WARRIOR", -- [1405]
-			"<23:01:05> <DEBUG>		Event:	LOOT_READY	true", -- [1406]
-			"<23:01:05> <DEBUG>		Event:	LOOT_READY	true", -- [1407]
-			"<23:01:14> <DEBUG>		Event:	LOOT_READY	true", -- [1408]
-			"<23:01:14> <DEBUG>		Event:	LOOT_READY	true", -- [1409]
-			"<23:03:25> <DEBUG>		Event:	LOOT_READY	true", -- [1410]
-			"<23:03:25> <DEBUG>		Event:	LOOT_READY	true", -- [1411]
-			"<23:03:58> <DEBUG>		Event:	LOOT_READY	true", -- [1412]
-			"<23:03:59> <DEBUG>		Event:	LOOT_READY	true", -- [1413]
-			"<23:04:00> <DEBUG>		Event:	LOOT_READY	true", -- [1414]
-			"<23:04:01> <DEBUG>		Event:	LOOT_READY	true", -- [1415]
-			"<23:04:34> <DEBUG>		Event:	LOOT_READY	true", -- [1416]
-			"<23:04:35> <DEBUG>		Event:	LOOT_READY	true", -- [1417]
-			"<23:05:28> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	186727	|cff0070dd|Hitem:186727::::::::60:71:::::::::|h[Seal Breaker Key]|h|r	1	Brokzun-Zul'jin	SHAMAN", -- [1418]
-			"<23:06:09> <DEBUG>		Event:	LOOT_READY	true", -- [1419]
-			"<23:06:09> <DEBUG>		Event:	LOOT_READY	true", -- [1420]
-			"<23:06:58> <DEBUG>		Event:	GROUP_LEFT	1	Party-3678-1-0000305A2445", -- [1421]
-			"<23:06:58> <DEBUG>		GetML()", -- [1422]
-			"<23:08:07> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1423]
-			"<23:08:09> <DEBUG>		GetML()", -- [1424]
-			"<23:08:09> <DEBUG>		Resetting council as we have a new ML!", -- [1425]
-			"<23:08:09> <INFO>		MasterLooter = 	Shanyt-ArgentDawn", -- [1426]
-			"<23:08:09> [ML]<DEBUG>		UpdateGroupCouncil	Shanyt-ArgentDawn", -- [1427]
-			"<23:08:09> [ML]<DEBUG>		NewML	Shanyt-ArgentDawn", -- [1428]
-			"<23:08:09> [ML]<DEBUG>		UpdateMLdb", -- [1429]
-			"<23:08:09> <INFO>		OnMLDBReceived", -- [1430]
-			"<23:08:09> <Comm>		^1^SplayerInfoRequest^T^t^^	PARTY	Shanyt-ArgentDawn", -- [1431]
-			"<23:08:09> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|5^N3^S|2^B^t^t^^	PARTY	Shanyt-ArgentDawn", -- [1432]
-			"<23:08:10> <Comm>		^1^Sxrealm^T^N1^SShanyt-ArgentDawn^N2^SpI^N3^SDAMAGER^N4^SThuerge^N6^N0^N7^N225.75^N8^N71^t^^	PARTY	Shanyt-ArgentDawn", -- [1433]
-			"<23:08:11> [ML]<DEBUG>		UpdateGroupCouncil	Shanyt-ArgentDawn", -- [1434]
-			"<23:08:12> <Comm>		^1^Scouncil^T^N1^T^S75-058380E2^B^t^t^^	PARTY	Shanyt-ArgentDawn", -- [1435]
-			"<23:08:12> <DEBUG>		isCouncil	true", -- [1436]
-			"<23:08:12> <DEBUG>		GetLootDBStatistics()", -- [1437]
-			"<23:08:12> <DEBUG>		GetGuildRankNum()", -- [1438]
-			"<23:08:12> <INFO>		RCVotingFrame	enabled", -- [1439]
-			"<23:08:24> <DEBUG>		Timer MLdb_check passed", -- [1440]
-			"<23:09:01> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1441]
-			"<23:09:51> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1442]
-			"<23:11:06> <DEBUG>		Event:	GROUP_LEFT	1	Party-75-1-00003FAE4E5E", -- [1443]
-			"<23:11:06> <DEBUG>		GetML()", -- [1444]
-			"<23:11:06> <INFO>		Stop handling loot", -- [1445]
-			"<23:11:06> [ML]<INFO>		Disabled", -- [1446]
-			"<23:11:06> <Comm>		^1^SStopHandleLoot^T^t^^	WHISPER	Shanyt-ArgentDawn", -- [1447]
-			"<23:12:37> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1448]
-			"<23:12:39> <DEBUG>		GetML()", -- [1449]
-			"<23:12:39> <DEBUG>		Resetting council as we have a new ML!", -- [1450]
-			"<23:12:39> <INFO>		MasterLooter = 	Shanyt-ArgentDawn", -- [1451]
-			"<23:12:39> [ML]<DEBUG>		UpdateGroupCouncil	Shanyt-ArgentDawn", -- [1452]
-			"<23:12:39> [ML]<DEBUG>		NewML	Shanyt-ArgentDawn", -- [1453]
-			"<23:12:39> [ML]<DEBUG>		UpdateMLdb", -- [1454]
-			"<23:12:39> <INFO>		OnMLDBReceived", -- [1455]
-			"<23:12:39> <Comm>		^1^SplayerInfoRequest^T^t^^	PARTY	Shanyt-ArgentDawn", -- [1456]
-			"<23:12:39> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|5^N3^S|2^B^t^t^^	PARTY	Shanyt-ArgentDawn", -- [1457]
-			"<23:12:39> <Comm>		^1^Sxrealm^T^N1^SShanyt-ArgentDawn^N2^SpI^N3^SDAMAGER^N4^SThuerge^N6^N0^N7^N225.75^N8^N71^t^^	PARTY	Shanyt-ArgentDawn", -- [1458]
-			"<23:12:41> [ML]<DEBUG>		UpdateGroupCouncil	Shanyt-ArgentDawn", -- [1459]
-			"<23:12:41> <Comm>		^1^Scouncil^T^N1^T^S75-058380E2^B^t^t^^	PARTY	Shanyt-ArgentDawn", -- [1460]
-			"<23:12:41> <DEBUG>		isCouncil	true", -- [1461]
-			"<23:12:54> <DEBUG>		Timer MLdb_check passed", -- [1462]
-			"<23:13:21> <DEBUG>		Event:	GROUP_LEFT	1	Party-75-1-00003FAE4FF6", -- [1463]
-			"<23:13:21> <DEBUG>		GetML()", -- [1464]
-			"<23:13:21> <INFO>		Stop handling loot", -- [1465]
-			"<23:13:21> [ML]<INFO>		Disabled", -- [1466]
-			"<23:13:21> <Comm>		^1^SStopHandleLoot^T^t^^	WHISPER	Shanyt-ArgentDawn", -- [1467]
-			"<23:13:51> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1468]
-			"<23:13:53> <DEBUG>		GetML()", -- [1469]
-			"<23:13:53> <DEBUG>		Resetting council as we have a new ML!", -- [1470]
-			"<23:13:53> <INFO>		MasterLooter = 	Shanyt-ArgentDawn", -- [1471]
-			"<23:13:53> [ML]<DEBUG>		UpdateGroupCouncil	Shanyt-ArgentDawn", -- [1472]
-			"<23:13:53> [ML]<DEBUG>		NewML	Shanyt-ArgentDawn", -- [1473]
-			"<23:13:53> [ML]<DEBUG>		UpdateMLdb", -- [1474]
-			"<23:13:53> <INFO>		OnMLDBReceived", -- [1475]
-			"<23:13:54> <Comm>		^1^SplayerInfoRequest^T^t^^	PARTY	Shanyt-ArgentDawn", -- [1476]
-			"<23:13:54> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|5^N3^S|2^B^t^t^^	PARTY	Shanyt-ArgentDawn", -- [1477]
-			"<23:13:54> <Comm>		^1^Sxrealm^T^N1^SShanyt-ArgentDawn^N2^SpI^N3^SDAMAGER^N4^SThuerge^N6^N0^N7^N225.75^N8^N71^t^^	PARTY	Shanyt-ArgentDawn", -- [1478]
-			"<23:13:55> [ML]<DEBUG>		UpdateGroupCouncil	Shanyt-ArgentDawn", -- [1479]
-			"<23:13:56> <Comm>		^1^Scouncil^T^N1^T^S75-058380E2^B^t^t^^	PARTY	Shanyt-ArgentDawn", -- [1480]
-			"<23:13:56> <DEBUG>		isCouncil	true", -- [1481]
-			"<23:14:08> <DEBUG>		Timer MLdb_check passed", -- [1482]
-			"<23:15:36> <DEBUG>		Event:	GROUP_LEFT	1	Party-75-1-00003FAE5069", -- [1483]
-			"<23:15:36> <DEBUG>		GetML()", -- [1484]
-			"<23:15:36> <INFO>		Stop handling loot", -- [1485]
-			"<23:15:36> [ML]<INFO>		Disabled", -- [1486]
-			"<23:15:36> <Comm>		^1^SStopHandleLoot^T^t^^	WHISPER	Shanyt-ArgentDawn", -- [1487]
-			"<23:15:47> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1488]
-			"<23:15:48> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1489]
-			"<23:15:49> <DEBUG>		GetML()", -- [1490]
-			"<23:15:49> <Data.Player>		CreatePlayer	Player-61-0E2C464F", -- [1491]
-			"<23:15:49> <DEBUG>		Resetting council as we have a new ML!", -- [1492]
-			"<23:15:49> <INFO>		MasterLooter = 	Brokzun-Zul'jin", -- [1493]
-			"<23:15:50> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1494]
-			"<23:15:57> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1495]
-			"<23:15:59> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1496]
-			"<23:16:00> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1497]
-			"<23:16:04> <DEBUG>		Timer MLdb_check passed", -- [1498]
-			"<23:16:05> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1499]
-			"<23:16:08> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1500]
-			"<23:16:11> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1501]
-			"<23:16:17> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1502]
-			"<23:16:21> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1503]
-			"<23:16:23> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1504]
-			"<23:16:24> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1505]
-			"<23:16:30> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1506]
-			"<23:16:30> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187351	|cff00ccff|Hitem:187351::::::::60:71::::1:28:743:::::|h[Stygic Cluster]|h|r	1	Rekithekami-Thrall	SHAMAN", -- [1507]
-			"<23:16:30> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187431	|cff0070dd|Hitem:187431::::::::60:71:::::::::|h[Sleeping Armament]|h|r	1	Rekithekami-Thrall	SHAMAN", -- [1508]
-			"<23:16:31> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1509]
-			"<23:16:34> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1510]
-			"<23:16:35> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1511]
-			"<23:16:36> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1512]
-			"<23:16:39> <Comm>		^1^Sxrealm^T^N1^SBrokzun-Zul'jin^N2^SMLdb_request^t^^	RAID	Primùs-Illidan", -- [1513]
-			"<23:16:39> <Comm>		^1^Sxrealm^T^N1^SBrokzun-Zul'jin^N2^Scouncil_request^t^^	RAID	Primùs-Illidan", -- [1514]
-			"<23:16:41> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1515]
-			"<23:16:45> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1516]
-			"<23:16:47> <DEBUG>		GetML()", -- [1517]
-			"<23:16:47> <Data.Player>		CreatePlayer	Player-1175-0CB5A0D6", -- [1518]
-			"<23:16:47> <DEBUG>		Resetting council as we have a new ML!", -- [1519]
-			"<23:16:47> <INFO>		MasterLooter = 	Furyfortwo-Malfurion", -- [1520]
-			"<23:16:50> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1521]
-			"<23:17:02> <DEBUG>		Timer MLdb_check passed", -- [1522]
-			"<23:17:02> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1523]
-			"<23:17:07> <DEBUG>		Event:	GROUP_LEFT	1	Party-61-1-00003FAE4EBD", -- [1524]
-			"<23:17:07> <DEBUG>		GetML()", -- [1525]
-			"<23:17:08> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1526]
-			"<23:19:02> <DEBUG>		Event:	LOOT_READY	true", -- [1527]
-			"<23:19:02> <DEBUG>		Event:	LOOT_READY	true", -- [1528]
-			"<23:19:03> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	171833	|cff0070dd|Hitem:171833::::::::60:71:::::::::|h[Elethium Ore]|h|r	9	Shanyt	WARRIOR", -- [1529]
-			"<23:20:43> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1530]
-			"<23:22:45> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1531]
-			"<23:25:45> <DEBUG>		Event:	LOOT_READY	true", -- [1532]
-			"<23:25:46> <DEBUG>		Event:	LOOT_READY	true", -- [1533]
-			"<23:26:38> <DEBUG>		Event:	LOOT_READY	true", -- [1534]
-			"<23:26:38> <DEBUG>		Event:	LOOT_READY	true", -- [1535]
-			"<23:27:23> <DEBUG>		Event:	LOOT_READY	true", -- [1536]
-			"<23:27:24> <DEBUG>		Event:	LOOT_READY	true", -- [1537]
-			"<23:27:59> <DEBUG>		Event:	LOOT_READY	true", -- [1538]
-			"<23:27:59> <DEBUG>		Event:	LOOT_READY	true", -- [1539]
-			"<23:29:32> <DEBUG>		Event:	LOOT_READY	true", -- [1540]
-			"<23:29:32> <DEBUG>		Event:	LOOT_READY	true", -- [1541]
-			"<23:31:35> <DEBUG>		Event:	LOOT_READY	true", -- [1542]
-			"<23:31:36> <DEBUG>		Event:	LOOT_READY	true", -- [1543]
-			"<23:32:25> <DEBUG>		Event:	LOOT_READY	true", -- [1544]
-			"<23:32:25> <DEBUG>		Event:	LOOT_READY	true", -- [1545]
-			"<23:33:01> <DEBUG>		Event:	LOOT_READY	true", -- [1546]
-			"<23:33:02> <DEBUG>		Event:	LOOT_READY	true", -- [1547]
-			"<23:33:45> <DEBUG>		Event:	LOOT_READY	true", -- [1548]
-			"<23:33:45> <DEBUG>		Event:	LOOT_READY	true", -- [1549]
-			"<23:34:28> <DEBUG>		Event:	LOOT_READY	true", -- [1550]
-			"<23:34:28> <DEBUG>		Event:	LOOT_READY	true", -- [1551]
-			"<23:35:18> <DEBUG>		Event:	LOOT_READY	true", -- [1552]
-			"<23:35:18> <DEBUG>		Event:	LOOT_READY	true", -- [1553]
-			"<23:36:00> <DEBUG>		Event:	LOOT_READY	true", -- [1554]
-			"<23:36:00> <DEBUG>		Event:	LOOT_READY	true", -- [1555]
-			"<23:36:09> <DEBUG>		Event:	LOOT_READY	true", -- [1556]
-			"<23:36:09> <DEBUG>		Event:	LOOT_READY	true", -- [1557]
-			"<23:36:39> <DEBUG>		Event:	LOOT_READY	true", -- [1558]
-			"<23:36:40> <DEBUG>		Event:	LOOT_READY	true", -- [1559]
-			"<23:36:58> <DEBUG>		Event:	LOOT_READY	true", -- [1560]
-			"<23:36:58> <DEBUG>		Event:	LOOT_READY	true", -- [1561]
-			"<23:36:58> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	171833	|cff0070dd|Hitem:171833::::::::60:71:::::::::|h[Elethium Ore]|h|r	3	Shanyt	WARRIOR", -- [1562]
-			"<23:37:44> <DEBUG>		Event:	LOOT_READY	true", -- [1563]
-			"<23:37:44> <DEBUG>		Event:	LOOT_READY	true", -- [1564]
-			"<23:38:32> <DEBUG>		Event:	LOOT_READY	true", -- [1565]
-			"<23:38:32> <DEBUG>		Event:	LOOT_READY	true", -- [1566]
-			"<23:44:58> <DEBUG>		Event:	LOOT_READY	true", -- [1567]
-			"<23:44:59> <DEBUG>		Event:	LOOT_READY	true", -- [1568]
-			"<23:45:05> <DEBUG>		Event:	LOOT_READY	true", -- [1569]
-			"<23:45:05> <DEBUG>		Event:	LOOT_READY	true", -- [1570]
-			"<23:45:21> <DEBUG>		Event:	LOOT_READY	true", -- [1571]
-			"<23:45:22> <DEBUG>		Event:	LOOT_READY	true", -- [1572]
-			"<23:45:23> <DEBUG>		Event:	LOOT_READY	true", -- [1573]
-			"<23:45:23> <DEBUG>		Event:	LOOT_READY	true", -- [1574]
-			"<23:46:12> <DEBUG>		Event:	LOOT_READY	true", -- [1575]
-			"<23:46:12> <DEBUG>		Event:	LOOT_READY	true", -- [1576]
-			"<23:46:26> <DEBUG>		Event:	LOOT_READY	true", -- [1577]
-			"<23:46:26> <DEBUG>		Event:	LOOT_READY	true", -- [1578]
-			"<23:48:06> <DEBUG>		Event:	LOOT_READY	true", -- [1579]
-			"<23:48:06> <DEBUG>		Event:	LOOT_READY	true", -- [1580]
-			"<23:50:20> <DEBUG>		Event:	LOOT_READY	true", -- [1581]
-			"<23:50:20> <DEBUG>		Event:	LOOT_READY	true", -- [1582]
-			"<23:51:47> <DEBUG>		Event:	LOOT_READY	true", -- [1583]
-			"<23:51:48> <DEBUG>		Event:	LOOT_READY	true", -- [1584]
-			"<23:55:20> <DEBUG>		Event:	LOOT_READY	true", -- [1585]
-			"<23:55:20> <DEBUG>		Event:	LOOT_READY	true", -- [1586]
-			"<23:57:10> <DEBUG>		Event:	LOOT_READY	true", -- [1587]
-			"<23:57:10> <DEBUG>		Event:	LOOT_READY	true", -- [1588]
-			"<23:57:20> <DEBUG>		Event:	LOOT_READY	true", -- [1589]
-			"<23:57:20> <DEBUG>		Event:	LOOT_READY	true", -- [1590]
-			"<23:57:50> <DEBUG>		Event:	LOOT_READY	true", -- [1591]
-			"<23:57:50> <DEBUG>		Event:	LOOT_READY	true", -- [1592]
-			"<23:57:54> <DEBUG>		Event:	LOOT_READY	true", -- [1593]
-			"<23:57:54> <DEBUG>		Event:	LOOT_READY	true", -- [1594]
-			"<23:58:10> <DEBUG>		Event:	LOOT_READY	true", -- [1595]
-			"<23:58:10> <DEBUG>		Event:	LOOT_READY	true", -- [1596]
-			"<00:03:05> <DEBUG>		Event:	LOOT_READY	true", -- [1597]
-			"<00:03:05> <DEBUG>		Event:	LOOT_READY	true", -- [1598]
-			"<00:03:14> <DEBUG>		Event:	LOOT_READY	true", -- [1599]
-			"<00:03:14> <DEBUG>		Event:	LOOT_READY	true", -- [1600]
-			"<00:03:58> <DEBUG>		Event:	LOOT_READY	true", -- [1601]
-			"<00:03:58> <DEBUG>		Event:	LOOT_READY	true", -- [1602]
-			"<00:04:07> <DEBUG>		Event:	LOOT_READY	true", -- [1603]
-			"<00:04:07> <DEBUG>		Event:	LOOT_READY	true", -- [1604]
-			"<00:04:12> <DEBUG>		Event:	LOOT_READY	true", -- [1605]
-			"<00:04:12> <DEBUG>		Event:	LOOT_READY	true", -- [1606]
-			"<00:05:06> <DEBUG>		Event:	LOOT_READY	true", -- [1607]
-			"<00:05:06> <DEBUG>		Event:	LOOT_READY	true", -- [1608]
-			"<00:05:32> <DEBUG>		Event:	LOOT_READY	true", -- [1609]
-			"<00:05:33> <DEBUG>		Event:	LOOT_READY	true", -- [1610]
-			"<00:06:01> <DEBUG>		Event:	LOOT_READY	true", -- [1611]
-			"<00:06:01> <DEBUG>		Event:	LOOT_READY	true", -- [1612]
-			"<00:06:40> <DEBUG>		Event:	LOOT_READY	true", -- [1613]
-			"<00:06:40> <DEBUG>		Event:	LOOT_READY	true", -- [1614]
-			"<00:06:43> <DEBUG>		Event:	LOOT_READY	true", -- [1615]
-			"<00:06:43> <DEBUG>		Event:	LOOT_READY	true", -- [1616]
-			"<00:07:08> <DEBUG>		Event:	LOOT_READY	true", -- [1617]
-			"<00:07:09> <DEBUG>		Event:	LOOT_READY	true", -- [1618]
-			"<00:07:55> <DEBUG>		Event:	LOOT_READY	true", -- [1619]
-			"<00:07:55> <DEBUG>		Event:	LOOT_READY	true", -- [1620]
-			"<00:08:22> <DEBUG>		Event:	LOOT_READY	true", -- [1621]
-			"<00:08:22> <DEBUG>		Event:	LOOT_READY	true", -- [1622]
-			"<00:08:54> <DEBUG>		Event:	LOOT_READY	true", -- [1623]
-			"<00:08:55> <DEBUG>		Event:	LOOT_READY	true", -- [1624]
-			"<00:09:38> <DEBUG>		Event:	LOOT_READY	true", -- [1625]
-			"<00:09:38> <DEBUG>		Event:	LOOT_READY	true", -- [1626]
-			"<00:10:11> <DEBUG>		Event:	LOOT_READY	true", -- [1627]
-			"<00:10:11> <DEBUG>		Event:	LOOT_READY	true", -- [1628]
-			"<00:11:41> <DEBUG>		Event:	LOOT_READY	true", -- [1629]
-			"<00:11:42> <DEBUG>		Event:	LOOT_READY	true", -- [1630]
-			"<00:11:48> <DEBUG>		Event:	LOOT_READY	true", -- [1631]
-			"<00:11:48> <DEBUG>		Event:	LOOT_READY	true", -- [1632]
-			"<00:11:48> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	171833	|cff0070dd|Hitem:171833::::::::60:71:::::::::|h[Elethium Ore]|h|r	2	Shanyt	WARRIOR", -- [1633]
-			"<00:13:03> <DEBUG>		Event:	LOOT_READY	true", -- [1634]
-			"<00:13:03> <DEBUG>		Event:	LOOT_READY	true", -- [1635]
-			"<00:16:13> <DEBUG>		Event:	LOOT_READY	true", -- [1636]
-			"<00:16:13> <DEBUG>		Event:	LOOT_READY	true", -- [1637]
-			"<00:16:23> <DEBUG>		Event:	LOOT_READY	true", -- [1638]
-			"<00:16:23> <DEBUG>		Event:	LOOT_READY	true", -- [1639]
-			"<00:16:24> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	171833	|cff0070dd|Hitem:171833::::::::60:71:::::::::|h[Elethium Ore]|h|r	4	Shanyt	WARRIOR", -- [1640]
-			"<00:16:54> <DEBUG>		Event:	LOOT_READY	true", -- [1641]
-			"<00:16:54> <DEBUG>		Event:	LOOT_READY	true", -- [1642]
-			"<00:17:40> <DEBUG>		Event:	LOOT_READY	true", -- [1643]
-			"<00:17:40> <DEBUG>		Event:	LOOT_READY	true", -- [1644]
-			"<00:17:58> <DEBUG>		Event:	LOOT_READY	true", -- [1645]
-			"<00:17:58> <DEBUG>		Event:	LOOT_READY	true", -- [1646]
-			"<00:18:05> <DEBUG>		Event:	LOOT_READY	true", -- [1647]
-			"<00:18:05> <DEBUG>		Event:	LOOT_READY	true", -- [1648]
-			"<00:18:42> <DEBUG>		Event:	LOOT_READY	true", -- [1649]
-			"<00:18:42> <DEBUG>		Event:	LOOT_READY	true", -- [1650]
-			"<00:18:43> <DEBUG>		Event:	LOOT_READY	true", -- [1651]
-			"<00:18:43> <DEBUG>		Event:	LOOT_READY	true", -- [1652]
-			"<00:18:53> <DEBUG>		Event:	LOOT_READY	true", -- [1653]
-			"<00:18:53> <DEBUG>		Event:	LOOT_READY	true", -- [1654]
-			"<00:21:28> <DEBUG>		Event:	LOOT_READY	true", -- [1655]
-			"<00:21:28> <DEBUG>		Event:	LOOT_READY	true", -- [1656]
-			"<00:21:28> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	171833	|cff0070dd|Hitem:171833::::::::60:71:::::::::|h[Elethium Ore]|h|r	5	Shanyt	WARRIOR", -- [1657]
-			"<00:22:14> <DEBUG>		Event:	LOOT_READY	true", -- [1658]
-			"<00:22:15> <DEBUG>		Event:	LOOT_READY	true", -- [1659]
-			"<00:22:19> <DEBUG>		Event:	LOOT_READY	true", -- [1660]
-			"<00:22:19> <DEBUG>		Event:	LOOT_READY	true", -- [1661]
-			"<00:22:19> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	171833	|cff0070dd|Hitem:171833::::::::60:71:::::::::|h[Elethium Ore]|h|r	5	Shanyt	WARRIOR", -- [1662]
-			"<00:22:27> <DEBUG>		Event:	LOOT_READY	true", -- [1663]
-			"<00:22:28> <DEBUG>		Event:	LOOT_READY	true", -- [1664]
-			"<00:23:19> <DEBUG>		Event:	LOOT_READY	true", -- [1665]
-			"<00:23:20> <DEBUG>		Event:	LOOT_READY	true", -- [1666]
-			"<00:23:47> <DEBUG>		Event:	LOOT_READY	true", -- [1667]
-			"<00:23:47> <DEBUG>		Event:	LOOT_READY	true", -- [1668]
-			"<00:24:04> <DEBUG>		Event:	LOOT_READY	true", -- [1669]
-			"<00:24:05> <DEBUG>		Event:	LOOT_READY	true", -- [1670]
-			"<00:24:27> <DEBUG>		Event:	LOOT_READY	true", -- [1671]
-			"<00:24:28> <DEBUG>		Event:	LOOT_READY	true", -- [1672]
-			"<00:24:28> <DEBUG>		Event:	LOOT_READY	true", -- [1673]
-			"<00:24:28> <DEBUG>		Event:	LOOT_READY	true", -- [1674]
-			"<00:25:02> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1675]
-			"<00:25:04> <DEBUG>		GetML()", -- [1676]
-			"<00:25:04> <DEBUG>		Resetting council as we have a new ML!", -- [1677]
-			"<00:25:04> <INFO>		MasterLooter = 	Shanyt-ArgentDawn", -- [1678]
-			"<00:25:04> [ML]<DEBUG>		UpdateGroupCouncil	Shanyt-ArgentDawn", -- [1679]
-			"<00:25:04> [ML]<DEBUG>		NewML	Shanyt-ArgentDawn", -- [1680]
-			"<00:25:04> [ML]<DEBUG>		UpdateMLdb", -- [1681]
-			"<00:25:04> <INFO>		OnMLDBReceived", -- [1682]
-			"<00:25:05> <Comm>		^1^SplayerInfoRequest^T^t^^	PARTY	Shanyt-ArgentDawn", -- [1683]
-			"<00:25:05> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|5^N3^S|2^B^t^t^^	PARTY	Shanyt-ArgentDawn", -- [1684]
-			"<00:25:05> <Comm>		^1^Sxrealm^T^N1^SShanyt-ArgentDawn^N2^SpI^N3^SDAMAGER^N4^SThuerge^N6^N0^N7^N225.75^N8^N71^t^^	PARTY	Shanyt-ArgentDawn", -- [1685]
-			"<00:25:06> [ML]<DEBUG>		UpdateGroupCouncil	Shanyt-ArgentDawn", -- [1686]
-			"<00:25:07> <Comm>		^1^Scouncil^T^N1^T^S75-058380E2^B^t^t^^	PARTY	Shanyt-ArgentDawn", -- [1687]
-			"<00:25:07> <DEBUG>		isCouncil	true", -- [1688]
-			"<00:25:19> <DEBUG>		Timer MLdb_check passed", -- [1689]
-			"<00:26:01> <DEBUG>		Event:	GROUP_LEFT	1	Party-75-1-00003FAE84B1", -- [1690]
-			"<00:26:01> <DEBUG>		GetML()", -- [1691]
-			"<00:26:01> <INFO>		Stop handling loot", -- [1692]
-			"<00:26:01> [ML]<INFO>		Disabled", -- [1693]
-			"<00:26:01> <Comm>		^1^SStopHandleLoot^T^t^^	WHISPER	Shanyt-ArgentDawn", -- [1694]
-			"<00:26:39> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1695]
-			"<00:26:41> <DEBUG>		GetML()", -- [1696]
-			"<00:26:41> <DEBUG>		Resetting council as we have a new ML!", -- [1697]
-			"<00:26:41> <INFO>		MasterLooter = 	Shanyt-ArgentDawn", -- [1698]
-			"<00:26:41> [ML]<DEBUG>		UpdateGroupCouncil	Shanyt-ArgentDawn", -- [1699]
-			"<00:26:41> [ML]<DEBUG>		NewML	Shanyt-ArgentDawn", -- [1700]
-			"<00:26:41> [ML]<DEBUG>		UpdateMLdb", -- [1701]
-			"<00:26:41> <INFO>		OnMLDBReceived", -- [1702]
-			"<00:26:41> <Comm>		^1^SplayerInfoRequest^T^t^^	PARTY	Shanyt-ArgentDawn", -- [1703]
-			"<00:26:41> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|5^N3^S|2^B^t^t^^	PARTY	Shanyt-ArgentDawn", -- [1704]
-			"<00:26:42> <Comm>		^1^Sxrealm^T^N1^SShanyt-ArgentDawn^N2^SpI^N3^SDAMAGER^N4^SThuerge^N6^N0^N7^N225.75^N8^N71^t^^	PARTY	Shanyt-ArgentDawn", -- [1705]
-			"<00:26:43> [ML]<DEBUG>		UpdateGroupCouncil	Shanyt-ArgentDawn", -- [1706]
-			"<00:26:44> <Comm>		^1^Scouncil^T^N1^T^S75-058380E2^B^t^t^^	PARTY	Shanyt-ArgentDawn", -- [1707]
-			"<00:26:44> <DEBUG>		isCouncil	true", -- [1708]
-			"<00:26:56> <DEBUG>		Timer MLdb_check passed", -- [1709]
-			"<00:28:06> <DEBUG>		Event:	LOOT_READY	true", -- [1710]
-			"<00:28:06> [ML]<DEBUG>		ML event	PLAYER_REGEN_ENABLED", -- [1711]
-			"<00:28:06> <DEBUG>		Event:	LOOT_READY	true", -- [1712]
-			"<00:29:05> [ML]<DEBUG>		ML event	PLAYER_REGEN_ENABLED", -- [1713]
-			"<00:29:05> <DEBUG>		Event:	LOOT_READY	true", -- [1714]
-			"<00:29:06> <DEBUG>		Event:	LOOT_READY	true", -- [1715]
-			"<00:30:00> [ML]<DEBUG>		ML event	PLAYER_REGEN_ENABLED", -- [1716]
-			"<00:30:01> <DEBUG>		Event:	LOOT_READY	true", -- [1717]
-			"<00:30:01> <DEBUG>		Event:	LOOT_READY	true", -- [1718]
-			"<00:30:33> <DEBUG>		Event:	LOOT_READY	true", -- [1719]
-			"<00:30:34> <DEBUG>		Event:	LOOT_READY	true", -- [1720]
-			"<00:30:39> <DEBUG>		Event:	LOOT_READY	true", -- [1721]
-			"<00:30:40> <DEBUG>		Event:	LOOT_READY	true", -- [1722]
-			"<00:30:40> [ML]<DEBUG>		ML event	PLAYER_REGEN_ENABLED", -- [1723]
-			"<00:34:49> <DEBUG>		Event:	LOOT_READY	true", -- [1724]
-			"<00:34:49> <DEBUG>		Event:	LOOT_READY	true", -- [1725]
-			"<00:36:23> <DEBUG>		Event:	LOOT_READY	true", -- [1726]
-			"<00:36:23> <DEBUG>		Event:	LOOT_READY	true", -- [1727]
-			"<00:36:36> [ML]<DEBUG>		ML event	PLAYER_REGEN_ENABLED", -- [1728]
-			"<00:36:36> <DEBUG>		Event:	LOOT_READY	true", -- [1729]
-			"<00:36:36> <DEBUG>		Event:	LOOT_READY	true", -- [1730]
-			"<00:36:46> <DEBUG>		Event:	GROUP_LEFT	1	Party-75-1-00003FAE852C", -- [1731]
-			"<00:36:46> <DEBUG>		GetML()", -- [1732]
-			"<00:36:46> <INFO>		Stop handling loot", -- [1733]
-			"<00:36:46> [ML]<INFO>		Disabled", -- [1734]
-			"<00:36:46> <Comm>		^1^SStopHandleLoot^T^t^^	WHISPER	Shanyt-ArgentDawn", -- [1735]
-			"<00:38:06> <DEBUG>		Event:	LOOT_READY	true", -- [1736]
-			"<00:38:06> <DEBUG>		Event:	LOOT_READY	true", -- [1737]
-			"<00:40:43> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1738]
-			"<00:40:43> <INFO>		UpdatePlayersData()", -- [1739]
-			"<00:40:49> <DEBUG>		GetML()", -- [1740]
-			"<00:40:51> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1741]
-			"<00:43:18> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1742]
-			"<00:43:22> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1743]
-			"<00:43:24> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1744]
-			"<00:43:25> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1745]
-			"<00:53:50> <DEBUG>		Event:	LOOT_READY	true", -- [1746]
-			"<00:53:50> <DEBUG>		Event:	LOOT_READY	true", -- [1747]
-			"<00:58:03> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1748]
-			"<00:58:10> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1749]
-			"<00:58:46> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1750]
-			"<00:58:46> <INFO>		UpdatePlayersData()", -- [1751]
-			"<00:58:54> <DEBUG>		GetML()", -- [1752]
-			"<00:58:56> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1753]
-			"<01:00:01> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1754]
-			"<01:00:01> <INFO>		UpdatePlayersData()", -- [1755]
-			"<01:00:05> <DEBUG>		GetML()", -- [1756]
-			"<01:00:06> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1757]
-			"<01:02:54> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1758]
-			"<01:02:54> <INFO>		UpdatePlayersData()", -- [1759]
-			"<01:02:58> <DEBUG>		GetML()", -- [1760]
-			"<01:02:59> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1761]
-			"<01:03:26> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1762]
-			"<01:03:26> <INFO>		UpdatePlayersData()", -- [1763]
-			"<01:03:30> <DEBUG>		GetML()", -- [1764]
-			"<01:03:32> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1765]
-			"<01:04:40> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1766]
-			"<01:04:40> <INFO>		UpdatePlayersData()", -- [1767]
-			"<01:04:44> <DEBUG>		GetML()", -- [1768]
-			"<01:04:45> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1769]
-			"<01:05:01> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1770]
-			"<01:07:50> <DEBUG>		Event:	LOOT_READY	true", -- [1771]
-			"<01:07:50> <DEBUG>		Event:	LOOT_READY	true", -- [1772]
-			"<01:08:18> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1773]
-			"<01:09:23> <DEBUG>		Event:	LOOT_READY	true", -- [1774]
-			"<01:09:24> <DEBUG>		Event:	LOOT_READY	true", -- [1775]
-			"<01:10:14> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1776]
-			"<01:10:50> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1777]
-			"<01:11:41> <DEBUG>		Event:	LOOT_READY	true", -- [1778]
-			"<01:11:41> <DEBUG>		Event:	LOOT_READY	true", -- [1779]
-			"<01:13:24> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1780]
-			"<01:13:59> <DEBUG>		Event:	LOOT_READY	true", -- [1781]
-			"<01:14:00> <DEBUG>		Event:	LOOT_READY	true", -- [1782]
-			"<01:14:03> <DEBUG>		Event:	LOOT_READY	true", -- [1783]
-			"<01:14:04> <DEBUG>		Event:	LOOT_READY	true", -- [1784]
-			"<01:14:43> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1785]
-			"<01:17:01> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1786]
-			"<01:18:44> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1787]
-			"<01:18:44> <INFO>		UpdatePlayersData()", -- [1788]
-			"<01:18:48> <DEBUG>		GetML()", -- [1789]
-			"<01:18:50> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1790]
-			"<01:20:40> <DEBUG>		Event:	LOOT_READY	true", -- [1791]
-			"<01:20:40> <DEBUG>		Event:	LOOT_READY	true", -- [1792]
-			"<01:21:01> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1793]
-			"<01:21:01> <INFO>		UpdatePlayersData()", -- [1794]
-			"<01:21:05> <DEBUG>		GetML()", -- [1795]
-			"<01:21:07> <DEBUG>		VotingFrame:Update() without lootTable!!", -- [1796]
-			"<01:23:31> <DEBUG>		Event:	LOOT_READY	true", -- [1797]
-			"<01:23:31> <DEBUG>		Event:	LOOT_READY	true", -- [1798]
-			"<01:23:31> <DEBUG>		Event:	LOOT_READY	true", -- [1799]
-			"05/09/22", -- [1800]
-			"<02:11:34> <INFO>		Logged In", -- [1801]
-			"<02:11:34> [ML]<INFO>		Init", -- [1802]
-			"<02:11:34> <INFO>		RCLootCouncil	TradeUI enabled", -- [1803]
-			"<02:11:57> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Shanyt-ArgentDawn	Player-75-058380E2", -- [1804]
-			"<02:11:57> <INFO>		Shanyt-ArgentDawn	3.3.0	nil", -- [1805]
-			"<02:11:57> <DEBUG>		ActivateSkin	bfa", -- [1806]
-			"<02:12:09> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1807]
-			"<02:12:09> <INFO>		UpdatePlayersData()", -- [1808]
-			"<02:12:09> <INFO>		Player relog...", -- [1809]
-			"<02:12:24> <DEBUG>		GetPlayersGuildRank()", -- [1810]
-			"<02:12:24> <DEBUG>		Found Guild Rank: Thuerge", -- [1811]
-			"<02:12:42> <DEBUG>		GetML()", -- [1812]
-			"<02:17:30> <DEBUG>		Event:	LOOT_READY	true", -- [1813]
-			"<02:17:31> <DEBUG>		Event:	LOOT_READY	true", -- [1814]
-			"05/09/22", -- [1815]
-			"<02:21:57> <INFO>		Logged In", -- [1816]
-			"<02:21:57> [ML]<INFO>		Init", -- [1817]
-			"<02:21:57> <INFO>		RCLootCouncil	TradeUI enabled", -- [1818]
-			"<02:22:13> <INFO>		Zulbathal-Zul'jin	3.3.0	nil", -- [1819]
-			"<02:22:13> <DEBUG>		ActivateSkin	bfa", -- [1820]
-			"<02:22:25> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1821]
-			"<02:22:25> <INFO>		UpdatePlayersData()", -- [1822]
-			"<02:22:25> <INFO>		Player relog...", -- [1823]
-			"<02:22:36> <DEBUG>		GetML()", -- [1824]
-			"05/09/22", -- [1825]
-			"<02:24:43> <INFO>		Logged In", -- [1826]
-			"<02:24:43> [ML]<INFO>		Init", -- [1827]
-			"<02:24:43> <INFO>		RCLootCouncil	TradeUI enabled", -- [1828]
-			"<02:24:57> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Durlok-BlackDragonflight	Player-96-0CBEA15E", -- [1829]
-			"<02:24:57> <INFO>		Durlok-BlackDragonflight	3.3.0	nil", -- [1830]
-			"<02:24:57> <DEBUG>		ActivateSkin	bfa", -- [1831]
-			"<02:25:09> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1832]
-			"<02:25:09> <INFO>		UpdatePlayersData()", -- [1833]
-			"<02:25:09> <INFO>		Player relog...", -- [1834]
-			"<02:25:19> <DEBUG>		GetML()", -- [1835]
-			"05/09/22", -- [1836]
-			"<02:26:48> <INFO>		Logged In", -- [1837]
-			"<02:26:48> [ML]<INFO>		Init", -- [1838]
-			"<02:26:48> <INFO>		RCLootCouncil	TradeUI enabled", -- [1839]
-			"<02:27:06> <INFO>		Avisar-Dalaran	3.3.0	nil", -- [1840]
-			"<02:27:06> <DEBUG>		ActivateSkin	bfa", -- [1841]
-			"<02:27:19> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1842]
-			"<02:27:19> <INFO>		UpdatePlayersData()", -- [1843]
-			"<02:27:19> <INFO>		Player relog...", -- [1844]
-			"<02:27:28> <DEBUG>		GetML()", -- [1845]
-			"05/09/22", -- [1846]
-			"<02:38:40> <INFO>		Logged In", -- [1847]
-			"<02:38:40> [ML]<INFO>		Init", -- [1848]
-			"<02:38:40> <INFO>		RCLootCouncil	TradeUI enabled", -- [1849]
-			"<02:39:02> <INFO>		Shanyt-ArgentDawn	3.3.0	nil", -- [1850]
-			"<02:39:02> <DEBUG>		ActivateSkin	bfa", -- [1851]
-			"<02:39:14> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1852]
-			"<02:39:14> <INFO>		UpdatePlayersData()", -- [1853]
-			"<02:39:14> <INFO>		Player relog...", -- [1854]
-			"<02:39:28> <DEBUG>		GetPlayersGuildRank()", -- [1855]
-			"<02:39:28> <DEBUG>		GetPlayersGuildRank()", -- [1856]
-			"<02:39:28> <DEBUG>		Found Guild Rank: Thuerge", -- [1857]
-			"<02:39:45> <DEBUG>		GetML()", -- [1858]
-			"<02:40:28> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1859]
-			"<02:40:28> <INFO>		UpdatePlayersData()", -- [1860]
-			"<02:40:37> <DEBUG>		GetML()", -- [1861]
-			"<02:41:00> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1862]
-			"<02:41:00> <INFO>		UpdatePlayersData()", -- [1863]
-			"<02:41:09> <DEBUG>		GetML()", -- [1864]
-			"<02:41:33> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1865]
-			"<02:41:33> <INFO>		UpdatePlayersData()", -- [1866]
-			"<02:41:41> <DEBUG>		GetML()", -- [1867]
-			"05/09/22", -- [1868]
-			"<21:00:43> <INFO>		Logged In", -- [1869]
-			"<21:00:43> [ML]<INFO>		Init", -- [1870]
-			"<21:00:43> <INFO>		RCLootCouncil	TradeUI enabled", -- [1871]
-			"<21:01:06> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Shanyt-ArgentDawn	Player-75-058380E2", -- [1872]
-			"<21:01:06> <INFO>		Shanyt-ArgentDawn	3.3.0	nil", -- [1873]
-			"<21:01:06> <DEBUG>		ActivateSkin	bfa", -- [1874]
-			"<21:01:18> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1875]
-			"<21:01:18> <INFO>		UpdatePlayersData()", -- [1876]
-			"<21:01:18> <INFO>		Player relog...", -- [1877]
-			"<21:01:22> <DEBUG>		GetPlayersGuildRank()", -- [1878]
-			"<21:01:22> <DEBUG>		GetPlayersGuildRank()", -- [1879]
-			"<21:01:22> <DEBUG>		Found Guild Rank: Thuerge", -- [1880]
-			"<21:01:29> <DEBUG>		GetML()", -- [1881]
-			"<21:06:23> <DEBUG>		Event:	LOOT_READY	true", -- [1882]
-			"<21:06:23> <DEBUG>		Event:	LOOT_READY	true", -- [1883]
-			"<21:06:26> <DEBUG>		Event:	LOOT_READY	true", -- [1884]
-			"<21:06:26> <DEBUG>		Event:	LOOT_READY	true", -- [1885]
-			"<21:06:54> <DEBUG>		Event:	LOOT_READY	true", -- [1886]
-			"<21:06:54> <DEBUG>		Event:	LOOT_READY	true", -- [1887]
-			"<21:06:54> <DEBUG>		Event:	LOOT_READY	true", -- [1888]
-			"<21:07:10> <DEBUG>		Event:	LOOT_READY	true", -- [1889]
-			"<21:07:10> <DEBUG>		Event:	LOOT_READY	true", -- [1890]
-			"<21:07:18> <DEBUG>		Event:	LOOT_READY	true", -- [1891]
-			"<21:07:18> <DEBUG>		Event:	LOOT_READY	true", -- [1892]
-			"<21:07:55> <DEBUG>		Event:	LOOT_READY	true", -- [1893]
-			"<21:07:55> <DEBUG>		Event:	LOOT_READY	true", -- [1894]
-			"<21:07:55> <DEBUG>		Event:	LOOT_READY	true", -- [1895]
-			"<21:08:38> <DEBUG>		Event:	LOOT_READY	true", -- [1896]
-			"<21:08:38> <DEBUG>		Event:	LOOT_READY	true", -- [1897]
-			"<21:09:10> <DEBUG>		Event:	LOOT_READY	true", -- [1898]
-			"<21:09:11> <DEBUG>		Event:	LOOT_READY	true", -- [1899]
-			"<21:09:22> <DEBUG>		Event:	LOOT_READY	true", -- [1900]
-			"<21:09:22> <DEBUG>		Event:	LOOT_READY	true", -- [1901]
-			"<21:09:41> <DEBUG>		Event:	LOOT_READY	true", -- [1902]
-			"<21:09:42> <DEBUG>		Event:	LOOT_READY	true", -- [1903]
-			"<21:09:55> <DEBUG>		Event:	LOOT_READY	true", -- [1904]
-			"<21:09:55> <DEBUG>		Event:	LOOT_READY	true", -- [1905]
-			"<21:10:11> <DEBUG>		Event:	LOOT_READY	true", -- [1906]
-			"<21:10:11> <DEBUG>		Event:	LOOT_READY	true", -- [1907]
-			"<21:10:32> <DEBUG>		Event:	LOOT_READY	true", -- [1908]
-			"<21:10:32> <DEBUG>		Event:	LOOT_READY	true", -- [1909]
-			"<21:10:52> <DEBUG>		Event:	LOOT_READY	true", -- [1910]
-			"<21:10:53> <DEBUG>		Event:	LOOT_READY	true", -- [1911]
-			"<21:11:12> <DEBUG>		Event:	LOOT_READY	true", -- [1912]
-			"<21:11:12> <DEBUG>		Event:	LOOT_READY	true", -- [1913]
-			"<21:11:25> <DEBUG>		Event:	LOOT_READY	true", -- [1914]
-			"<21:11:26> <DEBUG>		Event:	LOOT_READY	true", -- [1915]
-			"<21:11:32> <DEBUG>		Event:	LOOT_READY	true", -- [1916]
-			"<21:11:32> <DEBUG>		Event:	LOOT_READY	true", -- [1917]
-			"<21:11:46> <DEBUG>		Event:	LOOT_READY	true", -- [1918]
-			"<21:11:46> <DEBUG>		Event:	LOOT_READY	true", -- [1919]
-			"<21:12:04> <DEBUG>		Event:	LOOT_READY	true", -- [1920]
-			"<21:12:05> <DEBUG>		Event:	LOOT_READY	true", -- [1921]
-			"<21:12:40> <DEBUG>		Event:	LOOT_READY	true", -- [1922]
-			"<21:12:40> <DEBUG>		Event:	LOOT_READY	true", -- [1923]
-			"<21:13:21> <DEBUG>		Event:	LOOT_READY	true", -- [1924]
-			"<21:13:21> <DEBUG>		Event:	LOOT_READY	true", -- [1925]
-			"<21:13:49> <DEBUG>		Event:	LOOT_READY	true", -- [1926]
-			"<21:13:49> <DEBUG>		Event:	LOOT_READY	true", -- [1927]
-			"<21:14:10> <DEBUG>		Event:	LOOT_READY	true", -- [1928]
-			"<21:14:10> <DEBUG>		Event:	LOOT_READY	true", -- [1929]
-			"<21:14:20> <DEBUG>		Event:	LOOT_READY	true", -- [1930]
-			"<21:14:20> <DEBUG>		Event:	LOOT_READY	true", -- [1931]
-			"<21:14:52> <DEBUG>		Event:	LOOT_READY	true", -- [1932]
-			"<21:14:52> <DEBUG>		Event:	LOOT_READY	true", -- [1933]
-			"<21:15:09> <DEBUG>		Event:	LOOT_READY	true", -- [1934]
-			"<21:15:09> <DEBUG>		Event:	LOOT_READY	true", -- [1935]
-			"<21:15:25> <DEBUG>		Event:	LOOT_READY	true", -- [1936]
-			"<21:15:25> <DEBUG>		Event:	LOOT_READY	true", -- [1937]
-			"<21:15:51> <DEBUG>		Event:	LOOT_READY	true", -- [1938]
-			"<21:15:52> <DEBUG>		Event:	LOOT_READY	true", -- [1939]
-			"<21:15:56> <DEBUG>		Event:	LOOT_READY	true", -- [1940]
-			"<21:15:57> <DEBUG>		Event:	LOOT_READY	true", -- [1941]
-			"<21:16:35> <DEBUG>		Event:	LOOT_READY	true", -- [1942]
-			"<21:16:35> <DEBUG>		Event:	LOOT_READY	true", -- [1943]
-			"<21:17:04> <DEBUG>		Event:	LOOT_READY	true", -- [1944]
-			"<21:17:04> <DEBUG>		Event:	LOOT_READY	true", -- [1945]
-			"<21:17:29> <DEBUG>		Event:	LOOT_READY	true", -- [1946]
-			"<21:17:29> <DEBUG>		Event:	LOOT_READY	true", -- [1947]
-			"<21:18:08> <DEBUG>		Event:	LOOT_READY	true", -- [1948]
-			"<21:18:08> <DEBUG>		Event:	LOOT_READY	true", -- [1949]
-			"<21:18:38> <DEBUG>		Event:	LOOT_READY	true", -- [1950]
-			"<21:18:38> <DEBUG>		Event:	LOOT_READY	true", -- [1951]
-			"<21:19:17> <DEBUG>		Event:	LOOT_READY	true", -- [1952]
-			"<21:19:18> <DEBUG>		Event:	LOOT_READY	true", -- [1953]
-			"<21:20:05> <DEBUG>		Event:	LOOT_READY	true", -- [1954]
-			"<21:20:05> <DEBUG>		Event:	LOOT_READY	true", -- [1955]
-			"<21:20:12> <DEBUG>		Event:	LOOT_READY	true", -- [1956]
-			"<21:20:13> <DEBUG>		Event:	LOOT_READY	true", -- [1957]
-			"<21:20:28> <DEBUG>		Event:	LOOT_READY	true", -- [1958]
-			"<21:20:28> <DEBUG>		Event:	LOOT_READY	true", -- [1959]
-			"<21:20:30> <DEBUG>		Event:	LOOT_READY	true", -- [1960]
-			"<21:20:30> <DEBUG>		Event:	LOOT_READY	true", -- [1961]
-			"<21:20:50> <DEBUG>		Event:	LOOT_READY	true", -- [1962]
-			"<21:20:50> <DEBUG>		Event:	LOOT_READY	true", -- [1963]
-			"<21:21:31> <DEBUG>		Event:	LOOT_READY	true", -- [1964]
-			"<21:21:31> <DEBUG>		Event:	LOOT_READY	true", -- [1965]
-			"<21:21:53> <DEBUG>		Event:	LOOT_READY	true", -- [1966]
-			"<21:21:53> <DEBUG>		Event:	LOOT_READY	true", -- [1967]
-			"<21:22:35> <DEBUG>		Event:	LOOT_READY	true", -- [1968]
-			"<21:22:36> <DEBUG>		Event:	LOOT_READY	true", -- [1969]
-			"<21:23:24> <DEBUG>		Event:	LOOT_READY	true", -- [1970]
-			"<21:23:24> <DEBUG>		Event:	LOOT_READY	true", -- [1971]
-			"<21:23:39> <DEBUG>		Event:	LOOT_READY	true", -- [1972]
-			"<21:23:39> <DEBUG>		Event:	LOOT_READY	true", -- [1973]
-			"<21:24:03> <DEBUG>		Event:	LOOT_READY	true", -- [1974]
-			"<21:24:03> <DEBUG>		Event:	LOOT_READY	true", -- [1975]
-			"<21:24:31> <DEBUG>		Event:	LOOT_READY	true", -- [1976]
-			"<21:24:31> <DEBUG>		Event:	LOOT_READY	true", -- [1977]
-			"<21:24:49> <DEBUG>		Event:	LOOT_READY	true", -- [1978]
-			"<21:24:49> <DEBUG>		Event:	LOOT_READY	true", -- [1979]
-			"<21:25:32> <DEBUG>		Event:	LOOT_READY	true", -- [1980]
-			"<21:25:32> <DEBUG>		Event:	LOOT_READY	true", -- [1981]
-			"05/12/22", -- [1982]
-			"<02:25:46> <INFO>		Logged In", -- [1983]
-			"<02:25:46> [ML]<INFO>		Init", -- [1984]
-			"<02:25:46> <INFO>		RCLootCouncil	TradeUI enabled", -- [1985]
-			"<02:26:14> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Shanyt-ArgentDawn	Player-75-058380E2", -- [1986]
-			"<02:26:14> <INFO>		Shanyt-ArgentDawn	3.3.0	nil", -- [1987]
-			"<02:26:14> <DEBUG>		ActivateSkin	bfa", -- [1988]
-			"<02:26:31> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1989]
-			"<02:26:31> <INFO>		UpdatePlayersData()", -- [1990]
-			"<02:26:31> <INFO>		Player relog...", -- [1991]
-			"<02:26:36> <DEBUG>		GetPlayersGuildRank()", -- [1992]
-			"<02:26:36> <DEBUG>		Found Guild Rank: Thuerge", -- [1993]
-			"<02:26:47> <DEBUG>		GetML()", -- [1994]
-			"<02:27:23> <DEBUG>		Event:	LOOT_READY	true", -- [1995]
-			"<02:27:24> <DEBUG>		Event:	LOOT_READY	true", -- [1996]
-			"<02:28:07> <DEBUG>		Event:	LOOT_READY	true", -- [1997]
-			"<02:28:07> <DEBUG>		Event:	LOOT_READY	true", -- [1998]
-			"<02:29:34> <DEBUG>		Event:	LOOT_READY	true", -- [1999]
-			"<02:29:34> <DEBUG>		Event:	LOOT_READY	true", -- [2000]
+			"<16:05:22> <DEBUG>		Found:	1	5	0", -- [1]
+			"<16:05:23> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:16835::::::::52:70::::1:28:1004:::::|h[Cenarion~`Leggings]|h|r^N2^S11982^t^^	WHISPER	Avisar-Dalaran", -- [2]
+			"<16:05:23> <Comm>		^1^Sn_t^T^N1^S|cff0070dd|Hitem:93034::::::::52:70::::1:28:373:::::|h[Blazing~`Rune]|h|r^N2^S11982^t^^	WHISPER	Avisar-Dalaran", -- [3]
+			"<16:05:23> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:18872::::::::52:70::::1:28:1004:::::||h[Manastorm Leggings]||h||r	5", -- [4]
+			"<16:05:23> <DEBUG>		Found item at	1	7", -- [5]
+			"<16:05:23> <DEBUG>		Found:	1	7	0", -- [6]
+			"<16:05:23> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16814::::::::52:70::::1:28:1004:::::||h[Pants of Prophecy]||h||r	5", -- [7]
+			"<16:05:23> <DEBUG>		Found item at	1	8", -- [8]
+			"<16:05:23> <DEBUG>		Found:	1	8	0", -- [9]
+			"<16:05:23> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:17077::::::::52:70::::1:28:1004:::::||h[Crimson Shocker]||h||r	5", -- [10]
+			"<16:05:23> <DEBUG>		Found item at	1	9", -- [11]
+			"<16:05:23> <DEBUG>		Found:	1	9	0", -- [12]
+			"<16:05:23> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:18872::::::::52:70::::1:28:1004:::::|h[Manastorm~`Leggings]|h|r^N2^S12118^t^^	WHISPER	Avisar-Dalaran", -- [13]
+			"<16:05:23> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:16814::::::::52:70::::1:28:1004:::::|h[Pants~`of~`Prophecy]|h|r^N2^S11982^t^^	WHISPER	Avisar-Dalaran", -- [14]
+			"<16:05:23> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:17077::::::::52:70::::1:28:1004:::::|h[Crimson~`Shocker]|h|r^N2^S12118^t^^	WHISPER	Avisar-Dalaran", -- [15]
+			"<16:05:23> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19144::::::::52:70::::1:28:1004:::::||h[Sabatons of the Flamewalker]||h||r	5", -- [16]
+			"<16:05:23> <DEBUG>		Found item at	1	11", -- [17]
+			"<16:05:23> <DEBUG>		Found:	1	11	0", -- [18]
+			"<16:05:23> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:19144::::::::52:70::::1:28:1004:::::|h[Sabatons~`of~`the~`Flamewalker]|h|r^N2^S11982^t^^	WHISPER	Avisar-Dalaran", -- [19]
+			"<16:06:37> <DEBUG>		Event:	LOOT_READY	true", -- [20]
+			"<16:06:38> <DEBUG>		Event:	LOOT_READY	true", -- [21]
+			"<16:06:38> <DEBUG>		Event:	LOOT_CLOSED", -- [22]
+			"<16:06:38> <DEBUG>		Event:	LOOT_CLOSED", -- [23]
+			"<16:06:44> <DEBUG>		Event:	LOOT_READY	true", -- [24]
+			"<16:06:44> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-11665-00017EB8FE	1", -- [25]
+			"<16:06:44> <DEBUG>		Event:	LOOT_READY	true", -- [26]
+			"<16:06:44> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-11665-00017EB8FE	1", -- [27]
+			"<16:06:44> <DEBUG>		Event:	LOOT_CLOSED", -- [28]
+			"<16:06:44> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [29]
+			"<16:06:44> <DEBUG>		Event:	LOOT_CLOSED", -- [30]
+			"<16:06:44> <Comm>		^1^Sl^T^N1^S11665^t^^	WHISPER	Avisar-Dalaran", -- [31]
+			"<16:06:47> <DEBUG>		Event:	LOOT_READY	true", -- [32]
+			"<16:06:47> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-11665-00047EB8FF	1", -- [33]
+			"<16:06:47> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:16851::::::::52:70::::1:28:1004:::::|h[Giantstalker's Belt]|h|r	4	1	Creature-0-4216-409-11641-11665-00047EB8FF	1", -- [34]
+			"<16:06:47> <DEBUG>		Event:	LOOT_READY	true", -- [35]
+			"<16:06:47> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-11665-00047EB8FF	1", -- [36]
+			"<16:06:47> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:16851::::::::52:70::::1:28:1004:::::|h[Giantstalker's Belt]|h|r	4	1	Creature-0-4216-409-11641-11665-00047EB8FF	1", -- [37]
+			"<16:06:47> <DEBUG>		Event:	LOOT_CLOSED", -- [38]
+			"<16:06:47> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [39]
+			"<16:06:47> <DEBUG>		Event:	LOOT_CLOSED", -- [40]
+			"<16:06:47> <DEBUG>		OnLootSlotCleared()	2	|cffa335ee|Hitem:16851::::::::52:70::::1:28:1004:::::|h[Giantstalker's Belt]|h|r	4", -- [41]
+			"<16:06:47> <DEBUG>		Event:	LOOT_CLOSED", -- [42]
+			"<16:06:48> <Comm>		^1^Sl^T^N1^S11665^t^^	WHISPER	Avisar-Dalaran", -- [43]
+			"<16:06:48> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	16851	|cffa335ee|Hitem:16851::::::::52:70::::1:28:1004:::::|h[Giantstalker's Belt]|h|r	1	Avisar	PALADIN", -- [44]
+			"<16:06:49> <DEBUG>		Storage:New	|cffa335ee|Hitem:16851::::::::52:70::::1:28:1004:::::|h[Giantstalker's Belt]|h|r	temp", -- [45]
+			"<16:06:49> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16851::::::::52:70::::1:28:1004:::::||h[Giantstalker's Belt]||h||r	5", -- [46]
+			"<16:06:49> <DEBUG>		Found item at	1	4", -- [47]
+			"<16:06:50> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16851::::::::52:70::::1:28:1004:::::||h[Giantstalker's Belt]||h||r	5", -- [48]
+			"<16:06:50> <DEBUG>		Found item at	1	4", -- [49]
+			"<16:06:51> <Comm>		^1^Stradable^T^N1^S|cffa335ee|Hitem:16851::::::::52:70::::1:28:1004:::::|h[Giantstalker's~`Belt]|h|r^N2^S11665^t^^	WHISPER	Avisar-Dalaran", -- [50]
+			"<16:06:56> <DEBUG>		Event:	LOOT_READY	true", -- [51]
+			"<16:06:56> <DEBUG>		Event:	LOOT_READY	true", -- [52]
+			"<16:06:57> <DEBUG>		Event:	LOOT_CLOSED", -- [53]
+			"<16:06:57> <DEBUG>		Event:	LOOT_CLOSED", -- [54]
+			"<16:07:04> <DEBUG>		Event:	LOOT_READY	true", -- [55]
+			"<16:07:04> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-12101-00017EB8FE	1", -- [56]
+			"<16:07:04> <DEBUG>		Event:	LOOT_READY	true", -- [57]
+			"<16:07:04> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-12101-00017EB8FE	1", -- [58]
+			"<16:07:04> <DEBUG>		Event:	LOOT_READY	true", -- [59]
+			"<16:07:04> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-12101-00017EB8FE	1", -- [60]
+			"<16:07:05> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [61]
+			"<16:07:05> <DEBUG>		Event:	LOOT_CLOSED", -- [62]
+			"<16:07:05> <Comm>		^1^Sl^T^N1^S12101^t^^	WHISPER	Avisar-Dalaran", -- [63]
+			"<16:07:13> <DEBUG>		Event:	LOOT_READY	true", -- [64]
+			"<16:07:13> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0	2	Creature-0-4216-409-11641-11658-0001FEB8FE	1	Creature-0-4216-409-11641-11658-00017EB8FE	1", -- [65]
+			"<16:07:14> <DEBUG>		Event:	LOOT_READY	true", -- [66]
+			"<16:07:14> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0	2	Creature-0-4216-409-11641-11658-0001FEB8FE	1	Creature-0-4216-409-11641-11658-00017EB8FE	1", -- [67]
+			"<16:07:14> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0", -- [68]
+			"<16:07:14> <DEBUG>		Event:	LOOT_CLOSED", -- [69]
+			"<16:07:14> <DEBUG>		Event:	LOOT_CLOSED", -- [70]
+			"<16:07:14> <Comm>		^1^Sl^T^N1^S11658^t^^	WHISPER	Avisar-Dalaran", -- [71]
+			"<16:07:14> <Comm>		^1^Sl^T^N1^S11658^t^^	WHISPER	Avisar-Dalaran", -- [72]
+			"<16:07:30> <DEBUG>		Event:	LOOT_READY	true", -- [73]
+			"<16:07:31> <DEBUG>		Event:	LOOT_READY	true", -- [74]
+			"<16:07:31> <DEBUG>		Event:	LOOT_CLOSED", -- [75]
+			"<16:07:33> <DEBUG>		Event:	LOOT_READY	true", -- [76]
+			"<16:07:33> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-11665-0002FEB8FF	1", -- [77]
+			"<16:07:33> <DEBUG>		Event:	LOOT_READY	true", -- [78]
+			"<16:07:33> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-11665-0002FEB8FF	1", -- [79]
+			"<16:07:33> <DEBUG>		Event:	LOOT_CLOSED", -- [80]
+			"<16:07:33> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [81]
+			"<16:07:33> <DEBUG>		Event:	LOOT_CLOSED", -- [82]
+			"<16:07:33> <Comm>		^1^Sl^T^N1^S11665^t^^	WHISPER	Avisar-Dalaran", -- [83]
+			"<16:07:38> <DEBUG>		Event:	LOOT_READY	true", -- [84]
+			"<16:07:38> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-11665-0000FEB8FF	1", -- [85]
+			"<16:07:39> <DEBUG>		Event:	LOOT_READY	true", -- [86]
+			"<16:07:39> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-11665-0000FEB8FF	1", -- [87]
+			"<16:07:39> <DEBUG>		Event:	LOOT_CLOSED", -- [88]
+			"<16:07:39> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [89]
+			"<16:07:39> <DEBUG>		Event:	LOOT_CLOSED", -- [90]
+			"<16:07:39> <Comm>		^1^Sl^T^N1^S11665^t^^	WHISPER	Avisar-Dalaran", -- [91]
+			"<16:07:43> <DEBUG>		Event:	LOOT_READY	true", -- [92]
+			"<16:07:43> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-11665-0001FEB8FF	1", -- [93]
+			"<16:07:43> <DEBUG>		Event:	LOOT_READY	true", -- [94]
+			"<16:07:43> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-11665-0001FEB8FF	1", -- [95]
+			"<16:07:43> <DEBUG>		Event:	LOOT_CLOSED", -- [96]
+			"<16:07:43> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [97]
+			"<16:07:43> <DEBUG>		Event:	LOOT_CLOSED", -- [98]
+			"<16:07:43> <Comm>		^1^Sl^T^N1^S11665^t^^	WHISPER	Avisar-Dalaran", -- [99]
+			"<16:08:10> <DEBUG>		Event:	LOOT_READY	true", -- [100]
+			"<16:08:10> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-12101-0000FEB8FE	1", -- [101]
+			"<16:08:10> <DEBUG>		Event:	LOOT_READY	true", -- [102]
+			"<16:08:10> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-12101-0000FEB8FE	1", -- [103]
+			"<16:08:11> <DEBUG>		Event:	LOOT_CLOSED", -- [104]
+			"<16:08:11> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [105]
+			"<16:08:11> <DEBUG>		Event:	LOOT_CLOSED", -- [106]
+			"<16:08:11> <Comm>		^1^Sl^T^N1^S12101^t^^	WHISPER	Avisar-Dalaran", -- [107]
+			"<16:08:19> <DEBUG>		Event:	LOOT_READY	true", -- [108]
+			"<16:08:20> <DEBUG>		Event:	LOOT_READY	true", -- [109]
+			"<16:08:20> <DEBUG>		Event:	LOOT_CLOSED", -- [110]
+			"<16:08:20> <DEBUG>		Event:	LOOT_CLOSED", -- [111]
+			"<16:08:24> <DEBUG>		Event:	LOOT_READY	true", -- [112]
+			"<16:08:24> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0	2	Creature-0-4216-409-11641-11658-0005FEB8FE	1	Creature-0-4216-409-11641-11659-00027EB8FE	1", -- [113]
+			"<16:08:24> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-11665-00057EB8FF	1", -- [114]
+			"<16:08:24> <DEBUG>		Event:	LOOT_READY	true", -- [115]
+			"<16:08:24> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0	2	Creature-0-4216-409-11641-11658-0005FEB8FE	1	Creature-0-4216-409-11641-11659-00027EB8FE	1", -- [116]
+			"<16:08:24> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-11665-00057EB8FF	1", -- [117]
+			"<16:08:24> <DEBUG>		Event:	LOOT_CLOSED", -- [118]
+			"<16:08:24> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0", -- [119]
+			"<16:08:24> <DEBUG>		Event:	LOOT_CLOSED", -- [120]
+			"<16:08:24> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [121]
+			"<16:08:24> <DEBUG>		Event:	LOOT_CLOSED", -- [122]
+			"<16:08:24> <Comm>		^1^Sl^T^N1^S11665^t^^	WHISPER	Avisar-Dalaran", -- [123]
+			"<16:08:46> <DEBUG>		Event:	ENCOUNTER_START	665	Gehennas	9	40", -- [124]
+			"<16:08:46> <INFO>		UpdatePlayersData()", -- [125]
+			"<16:08:46> <DEBUG>		Event:	ENCOUNTER_END	665	Gehennas	9	40	1", -- [126]
+			"<16:08:47> <DEBUG>		Event:	LOOT_READY	true", -- [127]
+			"<16:08:47> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4216-409-11641-12259-00007EB8FE	32245	Creature-0-4216-409-11641-11661-00007EB8FE	2993", -- [128]
+			"<16:08:47> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:16812::::::::52:70::::1:28:1004:::::|h[Gloves of Prophecy]|h|r	4	1	Creature-0-4216-409-11641-12259-00007EB8FE	1", -- [129]
+			"<16:08:47> <DEBUG>		Adding to self.lootSlotInfo	6	|cffa335ee|Hitem:19146::::::::52:70::::1:28:1004:::::|h[Wristguards of Stability]|h|r	4	1	Creature-0-4216-409-11641-12259-00007EB8FE	1", -- [130]
+			"<16:08:47> <DEBUG>		Event:	LOOT_READY	true", -- [131]
+			"<16:08:47> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4216-409-11641-12259-00007EB8FE	32245	Creature-0-4216-409-11641-11661-00007EB8FE	2993", -- [132]
+			"<16:08:47> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:16812::::::::52:70::::1:28:1004:::::|h[Gloves of Prophecy]|h|r	4	1	Creature-0-4216-409-11641-12259-00007EB8FE	1", -- [133]
+			"<16:08:47> <DEBUG>		Adding to self.lootSlotInfo	6	|cffa335ee|Hitem:19146::::::::52:70::::1:28:1004:::::|h[Wristguards of Stability]|h|r	4	1	Creature-0-4216-409-11641-12259-00007EB8FE	1", -- [134]
+			"<16:08:48> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [135]
+			"<16:08:48> <DEBUG>		OnLootSlotCleared()	2	|cffa335ee|Hitem:16812::::::::52:70::::1:28:1004:::::|h[Gloves of Prophecy]|h|r	4", -- [136]
+			"<16:08:48> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	665	16812	|cffa335ee|Hitem:16812::::::::52:70::::1:28:1004:::::|h[Gloves of Prophecy]|h|r	1	Avisar	PALADIN", -- [137]
+			"<16:08:48> <DEBUG>		Event:	LOOT_CLOSED", -- [138]
+			"<16:08:48> <DEBUG>		OnLootSlotCleared()	6	|cffa335ee|Hitem:19146::::::::52:70::::1:28:1004:::::|h[Wristguards of Stability]|h|r	4", -- [139]
+			"<16:08:48> <DEBUG>		Event:	LOOT_CLOSED", -- [140]
+			"<16:08:48> <Comm>		^1^Sl^T^N1^S12259^t^^	WHISPER	Avisar-Dalaran", -- [141]
+			"<16:08:49> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	665	19146	|cffa335ee|Hitem:19146::::::::52:70::::1:28:1004:::::|h[Wristguards of Stability]|h|r	1	Avisar	PALADIN", -- [142]
+			"<16:08:49> <DEBUG>		Event:	LOOT_READY	true", -- [143]
+			"<16:08:49> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4216-409-11641-11661-0000FEB8FE	6820", -- [144]
+			"<16:08:50> <DEBUG>		Event:	LOOT_READY	true", -- [145]
+			"<16:08:50> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4216-409-11641-11661-0000FEB8FE	6820", -- [146]
+			"<16:08:50> <DEBUG>		Event:	LOOT_CLOSED", -- [147]
+			"<16:08:50> <Comm>		^1^Sl^T^N1^S11661^t^^	WHISPER	Avisar-Dalaran", -- [148]
+			"<16:08:50> <DEBUG>		Storage:New	|cffa335ee|Hitem:16812::::::::52:70::::1:28:1004:::::|h[Gloves of Prophecy]|h|r	temp", -- [149]
+			"<16:08:50> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16812::::::::52:70::::1:28:1004:::::||h[Gloves of Prophecy]||h||r	5", -- [150]
+			"<16:08:50> <DEBUG>		Found item at	1	7", -- [151]
+			"<16:08:50> <DEBUG>		Found:	1	7	0", -- [152]
+			"<16:08:50> <DEBUG>		Storage:New	|cffa335ee|Hitem:19146::::::::52:70::::1:28:1004:::::|h[Wristguards of Stability]|h|r	temp", -- [153]
+			"<16:08:50> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19146::::::::52:70::::1:28:1004:::::||h[Wristguards of Stability]||h||r	5", -- [154]
+			"<16:08:50> <DEBUG>		Found item at	1	8", -- [155]
+			"<16:08:50> <DEBUG>		Found:	1	8	0", -- [156]
+			"<16:08:51> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16812::::::::52:70::::1:28:1004:::::||h[Gloves of Prophecy]||h||r	5", -- [157]
+			"<16:08:51> <DEBUG>		Found item at	1	7", -- [158]
+			"<16:08:51> <DEBUG>		Found:	1	7	0", -- [159]
+			"<16:08:51> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:16812::::::::52:70::::1:28:1004:::::|h[Gloves~`of~`Prophecy]|h|r^N2^S12259^t^^	WHISPER	Avisar-Dalaran", -- [160]
+			"<16:08:51> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19146::::::::52:70::::1:28:1004:::::||h[Wristguards of Stability]||h||r	5", -- [161]
+			"<16:08:51> <DEBUG>		Found item at	1	8", -- [162]
+			"<16:08:51> <DEBUG>		Found:	1	8	0", -- [163]
+			"<16:08:52> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:19146::::::::52:70::::1:28:1004:::::|h[Wristguards~`of~`Stability]|h|r^N2^S12259^t^^	WHISPER	Avisar-Dalaran", -- [164]
+			"<16:08:57> <DEBUG>		Event:	LOOT_READY	true", -- [165]
+			"<16:08:57> <DEBUG>		Event:	LOOT_READY	true", -- [166]
+			"<16:08:57> <DEBUG>		Event:	LOOT_CLOSED", -- [167]
+			"<16:09:02> <DEBUG>		Event:	LOOT_READY	true", -- [168]
+			"<16:09:02> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-11665-0005FEB8FF	1", -- [169]
+			"<16:09:02> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:10274::::::::52:70:::2:6654:1680:1:28:1004:::::|h[Masterwork Pauldrons of the Quickblade]|h|r	2	1	Creature-0-4216-409-11641-11665-0005FEB8FF	1", -- [170]
+			"<16:09:02> <DEBUG>		Event:	LOOT_READY	true", -- [171]
+			"<16:09:02> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-11665-0005FEB8FF	1", -- [172]
+			"<16:09:02> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:10274::::::::52:70:::2:6654:1680:1:28:1004:::::|h[Masterwork Pauldrons of the Quickblade]|h|r	2	1	Creature-0-4216-409-11641-11665-0005FEB8FF	1", -- [173]
+			"<16:09:02> <DEBUG>		Event:	LOOT_CLOSED", -- [174]
+			"<16:09:02> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [175]
+			"<16:09:02> <DEBUG>		Event:	LOOT_CLOSED", -- [176]
+			"<16:09:02> <DEBUG>		OnLootSlotCleared()	2	|cff1eff00|Hitem:10274::::::::52:70:::2:6654:1680:1:28:1004:::::|h[Masterwork Pauldrons of the Quickblade]|h|r	2", -- [177]
+			"<16:09:02> <DEBUG>		Event:	LOOT_CLOSED", -- [178]
+			"<16:09:02> <Comm>		^1^Sl^T^N1^S11665^t^^	WHISPER	Avisar-Dalaran", -- [179]
+			"<16:09:04> <DEBUG>		Storage:New	|cff1eff00|Hitem:10274::::::::52:70:::2:6654:1680:1:28:1004:::::|h[Masterwork Pauldrons of the Quickblade]|h|r	temp", -- [180]
+			"<16:09:04> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10274::::::::52:70:::2:6654:1680:1:28:1004:::::||h[Masterwork Pauldrons of the Quickblade]||h||r	5", -- [181]
+			"<16:09:04> <DEBUG>		Found:	nil	nil	nil", -- [182]
+			"<16:09:05> <DEBUG>		Event:	LOOT_READY	true", -- [183]
+			"<16:09:05> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10274::::::::52:70:::2:6654:1680:1:28:1004:::::||h[Masterwork Pauldrons of the Quickblade]||h||r	5", -- [184]
+			"<16:09:05> <DEBUG>		Found:	nil	nil	nil", -- [185]
+			"<16:09:05> <DEBUG>		Event:	LOOT_READY	true", -- [186]
+			"<16:09:06> <DEBUG>		Event:	LOOT_CLOSED", -- [187]
+			"<16:09:06> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10274::::::::52:70:::2:6654:1680:1:28:1004:::::||h[Masterwork Pauldrons of the Quickblade]||h||r	5", -- [188]
+			"<16:09:06> <DEBUG>		Found:	nil	nil	nil", -- [189]
+			"<16:09:07> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10274::::::::52:70:::2:6654:1680:1:28:1004:::::||h[Masterwork Pauldrons of the Quickblade]||h||r	5", -- [190]
+			"<16:09:07> <DEBUG>		Found:	nil	nil	nil", -- [191]
+			"<16:09:07> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:10274::::::::52:70:::2:6654:1680:1:28:1004:::::|h[Masterwork Pauldrons of the Quickblade]|h|r not found in bags", -- [192]
+			"<16:09:21> <DEBUG>		Event:	LOOT_READY	true", -- [193]
+			"<16:09:21> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0	1	Creature-0-4216-409-11641-11668-0000FEB8FF	1", -- [194]
+			"<16:09:21> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-11665-00007EB8FE	1", -- [195]
+			"<16:09:21> <DEBUG>		Event:	LOOT_READY	true", -- [196]
+			"<16:09:21> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0	1	Creature-0-4216-409-11641-11668-0000FEB8FF	1", -- [197]
+			"<16:09:21> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-11665-00007EB8FE	1", -- [198]
+			"<16:09:22> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0", -- [199]
+			"<16:09:22> <DEBUG>		OnLootSlotCleared()	4	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [200]
+			"<16:09:22> <DEBUG>		Event:	LOOT_CLOSED", -- [201]
+			"<16:09:22> <DEBUG>		Event:	LOOT_CLOSED", -- [202]
+			"<16:09:22> <Comm>		^1^Sl^T^N1^S11665^t^^	WHISPER	Avisar-Dalaran", -- [203]
+			"<16:09:22> <Comm>		^1^Sl^T^N1^S11665^t^^	WHISPER	Avisar-Dalaran", -- [204]
+			"<16:09:30> <DEBUG>		Event:	LOOT_READY	true", -- [205]
+			"<16:09:30> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:8082::::::::52:70:::1:6656:1:28:1004:::::|h[Light Plate Boots]|h|r	0	1	Creature-0-4216-409-11641-11659-0001FEB8FE	1", -- [206]
+			"<16:09:30> <DEBUG>		Event:	LOOT_READY	true", -- [207]
+			"<16:09:30> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:8082::::::::52:70:::1:6656:1:28:1004:::::|h[Light Plate Boots]|h|r	0	1	Creature-0-4216-409-11641-11659-0001FEB8FE	1", -- [208]
+			"<16:09:30> <DEBUG>		Event:	LOOT_CLOSED", -- [209]
+			"<16:09:30> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:8082::::::::52:70:::1:6656:1:28:1004:::::|h[Light Plate Boots]|h|r	0", -- [210]
+			"<16:09:30> <DEBUG>		Event:	LOOT_CLOSED", -- [211]
+			"<16:09:30> <Comm>		^1^Sl^T^N1^S11659^t^^	WHISPER	Avisar-Dalaran", -- [212]
+			"<16:09:30> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	17010	|cff0070dd|Hitem:17010::::::::52:70:::::::::|h[Fiery Core]|h|r	1	Avisar	PALADIN", -- [213]
+			"<16:09:32> <DEBUG>		Event:	LOOT_READY	true", -- [214]
+			"<16:09:32> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0	1	Creature-0-4216-409-11641-11659-00017EB8FE	1", -- [215]
+			"<16:09:32> <DEBUG>		Event:	LOOT_READY	true", -- [216]
+			"<16:09:32> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0	1	Creature-0-4216-409-11641-11659-00017EB8FE	1", -- [217]
+			"<16:09:32> <DEBUG>		Event:	LOOT_CLOSED", -- [218]
+			"<16:09:32> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0", -- [219]
+			"<16:09:32> <DEBUG>		Event:	LOOT_CLOSED", -- [220]
+			"<16:09:32> <Comm>		^1^Sl^T^N1^S11659^t^^	WHISPER	Avisar-Dalaran", -- [221]
+			"<16:09:45> <DEBUG>		Event:	ENCOUNTER_START	666	Garr	9	40", -- [222]
+			"<16:09:45> <INFO>		UpdatePlayersData()", -- [223]
+			"<16:09:46> <DEBUG>		Event:	ENCOUNTER_END	666	Garr	9	40	1", -- [224]
+			"<16:09:47> <DEBUG>		Event:	LOOT_READY	true", -- [225]
+			"<16:09:47> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4216-409-11641-12057-00007EB8FE	17002", -- [226]
+			"<16:09:47> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:16813::::::::52:70::::1:28:1004:::::|h[Circlet of Prophecy]|h|r	4	1	Creature-0-4216-409-11641-12057-00007EB8FE	1", -- [227]
+			"<16:09:47> <DEBUG>		Adding to self.lootSlotInfo	3	|cffa335ee|Hitem:16846::::::::52:70::::1:28:1004:::::|h[Giantstalker's Helmet]|h|r	4	1	Creature-0-4216-409-11641-12057-00007EB8FE	1", -- [228]
+			"<16:09:47> <DEBUG>		Adding to self.lootSlotInfo	8	|cffa335ee|Hitem:18829::::::::52:70::::1:28:1004:::::|h[Deep Earth Spaulders]|h|r	4	1	Creature-0-4216-409-11641-12057-00007EB8FE	1", -- [229]
+			"<16:09:48> <DEBUG>		Event:	LOOT_READY	true", -- [230]
+			"<16:09:48> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4216-409-11641-12057-00007EB8FE	17002", -- [231]
+			"<16:09:48> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:16813::::::::52:70::::1:28:1004:::::|h[Circlet of Prophecy]|h|r	4	1	Creature-0-4216-409-11641-12057-00007EB8FE	1", -- [232]
+			"<16:09:48> <DEBUG>		Adding to self.lootSlotInfo	3	|cffa335ee|Hitem:16846::::::::52:70::::1:28:1004:::::|h[Giantstalker's Helmet]|h|r	4	1	Creature-0-4216-409-11641-12057-00007EB8FE	1", -- [233]
+			"<16:09:48> <DEBUG>		Adding to self.lootSlotInfo	8	|cffa335ee|Hitem:18829::::::::52:70::::1:28:1004:::::|h[Deep Earth Spaulders]|h|r	4	1	Creature-0-4216-409-11641-12057-00007EB8FE	1", -- [234]
+			"<16:09:48> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [235]
+			"<16:09:48> <DEBUG>		OnLootSlotCleared()	2	|cffa335ee|Hitem:16813::::::::52:70::::1:28:1004:::::|h[Circlet of Prophecy]|h|r	4", -- [236]
+			"<16:09:48> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	666	16813	|cffa335ee|Hitem:16813::::::::52:70::::1:28:1004:::::|h[Circlet of Prophecy]|h|r	1	Avisar	PALADIN", -- [237]
+			"<16:09:48> <DEBUG>		Event:	LOOT_CLOSED", -- [238]
+			"<16:09:48> <DEBUG>		OnLootSlotCleared()	3	|cffa335ee|Hitem:16846::::::::52:70::::1:28:1004:::::|h[Giantstalker's Helmet]|h|r	4", -- [239]
+			"<16:09:48> <DEBUG>		Event:	LOOT_CLOSED", -- [240]
+			"<16:09:48> <DEBUG>		OnLootSlotCleared()	8	|cffa335ee|Hitem:18829::::::::52:70::::1:28:1004:::::|h[Deep Earth Spaulders]|h|r	4", -- [241]
+			"<16:09:48> <DEBUG>		Event:	LOOT_CLOSED", -- [242]
+			"<16:09:48> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	666	16846	|cffa335ee|Hitem:16846::::::::52:70::::1:28:1004:::::|h[Giantstalker's Helmet]|h|r	1	Avisar	PALADIN", -- [243]
+			"<16:09:48> <Comm>		^1^Sl^T^N1^S12057^t^^	WHISPER	Avisar-Dalaran", -- [244]
+			"<16:09:49> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	666	17011	|cff0070dd|Hitem:17011::::::::52:70:::::::::|h[Lava Core]|h|r	1	Avisar	PALADIN", -- [245]
+			"<16:09:49> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	666	18829	|cffa335ee|Hitem:18829::::::::52:70::::1:28:1004:::::|h[Deep Earth Spaulders]|h|r	1	Avisar	PALADIN", -- [246]
+			"<16:09:50> <DEBUG>		Storage:New	|cffa335ee|Hitem:16813::::::::52:70::::1:28:1004:::::|h[Circlet of Prophecy]|h|r	temp", -- [247]
+			"<16:09:50> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16813::::::::52:70::::1:28:1004:::::||h[Circlet of Prophecy]||h||r	5", -- [248]
+			"<16:09:50> <DEBUG>		Found item at	1	12", -- [249]
+			"<16:09:50> <DEBUG>		Found:	1	12	0", -- [250]
+			"<16:09:50> <DEBUG>		Storage:New	|cffa335ee|Hitem:16846::::::::52:70::::1:28:1004:::::|h[Giantstalker's Helmet]|h|r	temp", -- [251]
+			"<16:09:50> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16846::::::::52:70::::1:28:1004:::::||h[Giantstalker's Helmet]||h||r	5", -- [252]
+			"<16:09:50> <DEBUG>		Found item at	1	13", -- [253]
+			"<16:09:50> <DEBUG>		Found:	1	13	0", -- [254]
+			"<16:09:50> <DEBUG>		Storage:New	|cffa335ee|Hitem:18829::::::::52:70::::1:28:1004:::::|h[Deep Earth Spaulders]|h|r	temp", -- [255]
+			"<16:09:50> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:18829::::::::52:70::::1:28:1004:::::||h[Deep Earth Spaulders]||h||r	5", -- [256]
+			"<16:09:50> <DEBUG>		Found item at	1	15", -- [257]
+			"<16:09:50> <DEBUG>		Found:	1	15	0", -- [258]
+			"<16:09:51> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16813::::::::52:70::::1:28:1004:::::||h[Circlet of Prophecy]||h||r	5", -- [259]
+			"<16:09:51> <DEBUG>		Found item at	1	12", -- [260]
+			"<16:09:51> <DEBUG>		Found:	1	12	0", -- [261]
+			"<16:09:51> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:18829::::::::52:70::::1:28:1004:::::||h[Deep Earth Spaulders]||h||r	5", -- [262]
+			"<16:09:51> <DEBUG>		Found item at	1	15", -- [263]
+			"<16:09:51> <DEBUG>		Found:	1	15	0", -- [264]
+			"<16:09:51> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16846::::::::52:70::::1:28:1004:::::||h[Giantstalker's Helmet]||h||r	5", -- [265]
+			"<16:09:51> <DEBUG>		Found item at	1	13", -- [266]
+			"<16:09:51> <DEBUG>		Found:	1	13	0", -- [267]
+			"<16:09:51> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:16813::::::::52:70::::1:28:1004:::::|h[Circlet~`of~`Prophecy]|h|r^N2^S12057^t^^	WHISPER	Avisar-Dalaran", -- [268]
+			"<16:09:51> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:18829::::::::52:70::::1:28:1004:::::|h[Deep~`Earth~`Spaulders]|h|r^N2^S12057^t^^	WHISPER	Avisar-Dalaran", -- [269]
+			"<16:09:51> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:16846::::::::52:70::::1:28:1004:::::|h[Giantstalker's~`Helmet]|h|r^N2^S12057^t^^	WHISPER	Avisar-Dalaran", -- [270]
+			"<16:10:07> <DEBUG>		Event:	LOOT_CLOSED", -- [271]
+			"<16:10:08> <Comm>		^1^Sl^T^N1^S12057^t^^	WHISPER	Avisar-Dalaran", -- [272]
+			"<16:10:10> <DEBUG>		Event:	LOOT_READY	true", -- [273]
+			"<16:10:10> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0	1	Creature-0-4216-409-11641-11659-0000FEB8FE	1", -- [274]
+			"<16:10:10> <DEBUG>		Adding to self.lootSlotInfo	3	|cff1eff00|Hitem:10388::::::::52:70:::2:6654:1694:1:28:1004:::::|h[Hyperion Helm of the Fireflash]|h|r	2	1	Creature-0-4216-409-11641-11659-00007EB8FE	1", -- [275]
+			"<16:10:10> <DEBUG>		Event:	LOOT_READY	true", -- [276]
+			"<16:10:10> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0	1	Creature-0-4216-409-11641-11659-0000FEB8FE	1", -- [277]
+			"<16:10:10> <DEBUG>		Adding to self.lootSlotInfo	3	|cff1eff00|Hitem:10388::::::::52:70:::2:6654:1694:1:28:1004:::::|h[Hyperion Helm of the Fireflash]|h|r	2	1	Creature-0-4216-409-11641-11659-00007EB8FE	1", -- [278]
+			"<16:10:10> <DEBUG>		Event:	LOOT_CLOSED", -- [279]
+			"<16:10:10> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0", -- [280]
+			"<16:10:10> <DEBUG>		Event:	LOOT_CLOSED", -- [281]
+			"<16:10:10> <DEBUG>		OnLootSlotCleared()	3	|cff1eff00|Hitem:10388::::::::52:70:::2:6654:1694:1:28:1004:::::|h[Hyperion Helm of the Fireflash]|h|r	2", -- [282]
+			"<16:10:10> <DEBUG>		Event:	LOOT_CLOSED", -- [283]
+			"<16:10:10> <Comm>		^1^Sl^T^N1^S11659^t^^	WHISPER	Avisar-Dalaran", -- [284]
+			"<16:10:12> <DEBUG>		Storage:New	|cff1eff00|Hitem:10388::::::::52:70:::2:6654:1694:1:28:1004:::::|h[Hyperion Helm of the Fireflash]|h|r	temp", -- [285]
+			"<16:10:12> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10388::::::::52:70:::2:6654:1694:1:28:1004:::::||h[Hyperion Helm of the Fireflash]||h||r	5", -- [286]
+			"<16:10:12> <DEBUG>		Found:	nil	nil	nil", -- [287]
+			"<16:10:13> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10388::::::::52:70:::2:6654:1694:1:28:1004:::::||h[Hyperion Helm of the Fireflash]||h||r	5", -- [288]
+			"<16:10:13> <DEBUG>		Found:	nil	nil	nil", -- [289]
+			"<16:10:14> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10388::::::::52:70:::2:6654:1694:1:28:1004:::::||h[Hyperion Helm of the Fireflash]||h||r	5", -- [290]
+			"<16:10:14> <DEBUG>		Found:	nil	nil	nil", -- [291]
+			"<16:10:15> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10388::::::::52:70:::2:6654:1694:1:28:1004:::::||h[Hyperion Helm of the Fireflash]||h||r	5", -- [292]
+			"<16:10:15> <DEBUG>		Found:	nil	nil	nil", -- [293]
+			"<16:10:15> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:10388::::::::52:70:::2:6654:1694:1:28:1004:::::|h[Hyperion Helm of the Fireflash]|h|r not found in bags", -- [294]
+			"<16:10:16> <DEBUG>		Event:	LOOT_READY	true", -- [295]
+			"<16:10:16> <DEBUG>		Event:	LOOT_READY	true", -- [296]
+			"<16:10:17> <DEBUG>		Event:	LOOT_CLOSED", -- [297]
+			"<16:10:17> <DEBUG>		Event:	LOOT_CLOSED", -- [298]
+			"<16:10:37> <DEBUG>		Event:	LOOT_READY	true", -- [299]
+			"<16:10:37> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-12101-0000FEB8FF	1", -- [300]
+			"<16:10:37> <DEBUG>		Event:	LOOT_READY	true", -- [301]
+			"<16:10:37> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-12101-0000FEB8FF	1", -- [302]
+			"<16:10:37> <DEBUG>		Event:	LOOT_CLOSED", -- [303]
+			"<16:10:37> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [304]
+			"<16:10:37> <DEBUG>		Event:	LOOT_CLOSED", -- [305]
+			"<16:10:37> <Comm>		^1^Sl^T^N1^S12101^t^^	WHISPER	Avisar-Dalaran", -- [306]
+			"<16:10:50> <DEBUG>		Event:	LOOT_READY	true", -- [307]
+			"<16:10:50> <DEBUG>		Event:	LOOT_READY	true", -- [308]
+			"<16:10:50> <DEBUG>		Event:	LOOT_CLOSED", -- [309]
+			"<16:10:50> <DEBUG>		Event:	LOOT_CLOSED", -- [310]
+			"<16:11:00> <DEBUG>		Event:	LOOT_READY	true", -- [311]
+			"<16:11:00> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0	2	Creature-0-4216-409-11641-11667-00007EB8FF	1	Creature-0-4216-409-11641-11666-00007EB8FF	1", -- [312]
+			"<16:11:00> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-12076-0000FEB8FF	1", -- [313]
+			"<16:11:01> <DEBUG>		Event:	LOOT_READY	true", -- [314]
+			"<16:11:01> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0	2	Creature-0-4216-409-11641-11667-00007EB8FF	1	Creature-0-4216-409-11641-11666-00007EB8FF	1", -- [315]
+			"<16:11:01> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-12076-0000FEB8FF	1", -- [316]
+			"<16:11:01> <DEBUG>		Event:	LOOT_CLOSED", -- [317]
+			"<16:11:01> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0", -- [318]
+			"<16:11:01> <DEBUG>		Event:	LOOT_CLOSED", -- [319]
+			"<16:11:01> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [320]
+			"<16:11:01> <DEBUG>		Event:	LOOT_CLOSED", -- [321]
+			"<16:11:01> <Comm>		^1^Sl^T^N1^S12076^t^^	WHISPER	Avisar-Dalaran", -- [322]
+			"<16:11:07> <DEBUG>		Event:	LOOT_READY	true", -- [323]
+			"<16:11:07> <DEBUG>		Event:	LOOT_READY	true", -- [324]
+			"<16:11:07> <DEBUG>		Event:	LOOT_CLOSED", -- [325]
+			"<16:11:07> <DEBUG>		Event:	LOOT_CLOSED", -- [326]
+			"<16:11:13> <DEBUG>		Event:	LOOT_READY	true", -- [327]
+			"<16:11:13> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0	1	Creature-0-4216-409-11641-11666-0002FEB8FF	1", -- [328]
+			"<16:11:13> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-12076-0003FEB8FF	1", -- [329]
+			"<16:11:13> <DEBUG>		Adding to self.lootSlotInfo	7	|cffa335ee|Hitem:16850::::::::52:70::::1:28:1004:::::|h[Giantstalker's Bracers]|h|r	4	1	Creature-0-4216-409-11641-12076-0003FEB8FF	1", -- [330]
+			"<16:11:13> <DEBUG>		Event:	LOOT_READY	true", -- [331]
+			"<16:11:13> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0	1	Creature-0-4216-409-11641-11666-0002FEB8FF	1", -- [332]
+			"<16:11:13> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-12076-0003FEB8FF	1", -- [333]
+			"<16:11:13> <DEBUG>		Adding to self.lootSlotInfo	7	|cffa335ee|Hitem:16850::::::::52:70::::1:28:1004:::::|h[Giantstalker's Bracers]|h|r	4	1	Creature-0-4216-409-11641-12076-0003FEB8FF	1", -- [334]
+			"<16:11:14> <DEBUG>		Event:	LOOT_CLOSED", -- [335]
+			"<16:11:14> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0", -- [336]
+			"<16:11:14> <DEBUG>		Event:	LOOT_CLOSED", -- [337]
+			"<16:11:14> <DEBUG>		OnLootSlotCleared()	4	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [338]
+			"<16:11:14> <DEBUG>		Event:	LOOT_CLOSED", -- [339]
+			"<16:11:14> <DEBUG>		OnLootSlotCleared()	7	|cffa335ee|Hitem:16850::::::::52:70::::1:28:1004:::::|h[Giantstalker's Bracers]|h|r	4", -- [340]
+			"<16:11:14> <DEBUG>		Event:	LOOT_CLOSED", -- [341]
+			"<16:11:14> <Comm>		^1^Sl^T^N1^S12076^t^^	WHISPER	Avisar-Dalaran", -- [342]
+			"<16:11:14> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	17011	|cff0070dd|Hitem:17011::::::::52:70:::::::::|h[Lava Core]|h|r	1	Avisar	PALADIN", -- [343]
+			"<16:11:14> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	16850	|cffa335ee|Hitem:16850::::::::52:70::::1:28:1004:::::|h[Giantstalker's Bracers]|h|r	1	Avisar	PALADIN", -- [344]
+			"<16:11:16> <DEBUG>		Storage:New	|cffa335ee|Hitem:16850::::::::52:70::::1:28:1004:::::|h[Giantstalker's Bracers]|h|r	temp", -- [345]
+			"<16:11:16> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16850::::::::52:70::::1:28:1004:::::||h[Giantstalker's Bracers]||h||r	5", -- [346]
+			"<16:11:16> <DEBUG>		Found item at	1	11", -- [347]
+			"<16:11:17> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16850::::::::52:70::::1:28:1004:::::||h[Giantstalker's Bracers]||h||r	5", -- [348]
+			"<16:11:17> <DEBUG>		Found item at	1	11", -- [349]
+			"<16:11:17> <Comm>		^1^Stradable^T^N1^S|cffa335ee|Hitem:16850::::::::52:70::::1:28:1004:::::|h[Giantstalker's~`Bracers]|h|r^N2^S12076^t^^	WHISPER	Avisar-Dalaran", -- [350]
+			"<16:11:23> <DEBUG>		Event:	LOOT_READY	true", -- [351]
+			"<16:11:23> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-12100-0000FEB8FF	1", -- [352]
+			"<16:11:23> <DEBUG>		Event:	LOOT_READY	true", -- [353]
+			"<16:11:23> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-12100-0000FEB8FF	1", -- [354]
+			"<16:11:23> <DEBUG>		Event:	LOOT_CLOSED", -- [355]
+			"<16:11:23> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [356]
+			"<16:11:23> <DEBUG>		Event:	LOOT_CLOSED", -- [357]
+			"<16:11:23> <Comm>		^1^Sl^T^N1^S12100^t^^	WHISPER	Avisar-Dalaran", -- [358]
+			"<16:11:23> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	17011	|cff0070dd|Hitem:17011::::::::52:70:::::::::|h[Lava Core]|h|r	1	Avisar	PALADIN", -- [359]
+			"<16:11:25> <DEBUG>		Event:	ENCOUNTER_START	668	Baron Geddon	9	40", -- [360]
+			"<16:11:25> <INFO>		UpdatePlayersData()", -- [361]
+			"<16:11:25> <DEBUG>		Event:	ENCOUNTER_END	668	Baron Geddon	9	40	1", -- [362]
+			"<16:11:34> <DEBUG>		Event:	LOOT_READY	true", -- [363]
+			"<16:11:34> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4216-409-11641-12056-00007EB8FE	18148", -- [364]
+			"<16:11:34> <DEBUG>		Adding to self.lootSlotInfo	6	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0	3	Creature-0-4216-409-11641-12056-00007EB8FE	3", -- [365]
+			"<16:11:34> <DEBUG>		Adding to self.lootSlotInfo	7	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	2	Creature-0-4216-409-11641-11665-00027EB8FF	1	Creature-0-4216-409-11641-12100-00017EB8FF	1", -- [366]
+			"<16:11:34> <DEBUG>		Adding to self.lootSlotInfo	8	|cffa335ee|Hitem:19136::::::::52:70::::1:28:1004:::::|h[Mana Igniting Cord]|h|r	4	1	Creature-0-4216-409-11641-12056-00007EB8FE	1", -- [367]
+			"<16:11:34> <DEBUG>		Adding to self.lootSlotInfo	9	|cffa335ee|Hitem:19136::::::::52:70::::1:28:1004:::::|h[Mana Igniting Cord]|h|r	4	1	Creature-0-4216-409-11641-12056-00007EB8FE	1", -- [368]
+			"<16:11:34> <DEBUG>		Adding to self.lootSlotInfo	10	|cff1eff00|Hitem:16251::::::::52:70::::1:28:1004:::::|h[Formula: Enchant Bracer - Superior Stamina]|h|r	2	1	Creature-0-4216-409-11641-11666-0003FEB8FF	1", -- [369]
+			"<16:11:34> <DEBUG>		Event:	LOOT_READY	true", -- [370]
+			"<16:11:34> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4216-409-11641-12056-00007EB8FE	18148", -- [371]
+			"<16:11:34> <DEBUG>		Adding to self.lootSlotInfo	6	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0	3	Creature-0-4216-409-11641-12056-00007EB8FE	3", -- [372]
+			"<16:11:34> <DEBUG>		Adding to self.lootSlotInfo	7	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	2	Creature-0-4216-409-11641-11665-00027EB8FF	1	Creature-0-4216-409-11641-12100-00017EB8FF	1", -- [373]
+			"<16:11:34> <DEBUG>		Adding to self.lootSlotInfo	8	|cffa335ee|Hitem:19136::::::::52:70::::1:28:1004:::::|h[Mana Igniting Cord]|h|r	4	1	Creature-0-4216-409-11641-12056-00007EB8FE	1", -- [374]
+			"<16:11:34> <DEBUG>		Adding to self.lootSlotInfo	9	|cffa335ee|Hitem:19136::::::::52:70::::1:28:1004:::::|h[Mana Igniting Cord]|h|r	4	1	Creature-0-4216-409-11641-12056-00007EB8FE	1", -- [375]
+			"<16:11:34> <DEBUG>		Adding to self.lootSlotInfo	10	|cff1eff00|Hitem:16251::::::::52:70::::1:28:1004:::::|h[Formula: Enchant Bracer - Superior Stamina]|h|r	2	1	Creature-0-4216-409-11641-11666-0003FEB8FF	1", -- [376]
+			"<16:11:35> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [377]
+			"<16:11:35> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	668	17010	|cff0070dd|Hitem:17010::::::::52:70:::::::::|h[Fiery Core]|h|r	1	Avisar	PALADIN", -- [378]
+			"<16:11:36> <DEBUG>		OnLootSlotCleared()	6	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0", -- [379]
+			"<16:11:36> <DEBUG>		OnLootSlotCleared()	7	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [380]
+			"<16:11:36> <DEBUG>		OnLootSlotCleared()	8	|cffa335ee|Hitem:19136::::::::52:70::::1:28:1004:::::|h[Mana Igniting Cord]|h|r	4", -- [381]
+			"<16:11:36> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	668	19136	|cffa335ee|Hitem:19136::::::::52:70::::1:28:1004:::::|h[Mana Igniting Cord]|h|r	1	Avisar	PALADIN", -- [382]
+			"<16:11:36> <DEBUG>		OnLootSlotCleared()	9	|cffa335ee|Hitem:19136::::::::52:70::::1:28:1004:::::|h[Mana Igniting Cord]|h|r	4", -- [383]
+			"<16:11:36> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	668	19136	|cffa335ee|Hitem:19136::::::::52:70::::1:28:1004:::::|h[Mana Igniting Cord]|h|r	1	Avisar	PALADIN", -- [384]
+			"<16:11:36> <DEBUG>		OnLootSlotCleared()	10	|cff1eff00|Hitem:16251::::::::52:70::::1:28:1004:::::|h[Formula: Enchant Bracer - Superior Stamina]|h|r	2", -- [385]
+			"<16:11:36> <DEBUG>		Event:	LOOT_CLOSED", -- [386]
+			"<16:11:36> <DEBUG>		Event:	LOOT_CLOSED", -- [387]
+			"<16:11:37> <Comm>		^1^Sl^T^N1^S12056^t^^	WHISPER	Avisar-Dalaran", -- [388]
+			"<16:11:37> <Comm>		^1^Sl^T^N1^S12056^t^^	WHISPER	Avisar-Dalaran", -- [389]
+			"<16:11:38> <DEBUG>		Storage:New	|cffa335ee|Hitem:19136::::::::52:70::::1:28:1004:::::|h[Mana Igniting Cord]|h|r	temp", -- [390]
+			"<16:11:38> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19136::::::::52:70::::1:28:1004:::::||h[Mana Igniting Cord]||h||r	5", -- [391]
+			"<16:11:38> <DEBUG>		Found item at	1	14", -- [392]
+			"<16:11:38> <DEBUG>		Found item at	1	15", -- [393]
+			"<16:11:38> <DEBUG>		Found:	1	15	0", -- [394]
+			"<16:11:38> <DEBUG>		Storage:New	|cffa335ee|Hitem:19136::::::::52:70::::1:28:1004:::::|h[Mana Igniting Cord]|h|r	temp", -- [395]
+			"<16:11:38> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19136::::::::52:70::::1:28:1004:::::||h[Mana Igniting Cord]||h||r	5", -- [396]
+			"<16:11:38> <DEBUG>		Found item at	1	14", -- [397]
+			"<16:11:38> <DEBUG>		Found item at	1	15", -- [398]
+			"<16:11:38> <DEBUG>		Found:	1	15	0", -- [399]
+			"<16:11:38> <DEBUG>		Storage:New	|cff1eff00|Hitem:16251::::::::52:70::::1:28:1004:::::|h[Formula: Enchant Bracer - Superior Stamina]|h|r	temp", -- [400]
+			"<16:11:38> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:16251::::::::52:70::::1:28:1004:::::||h[Formula: Enchant Bracer - Superior Stamina]||h||r	5", -- [401]
+			"<16:11:38> <DEBUG>		Found item at	1	16", -- [402]
+			"<16:11:39> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19136::::::::52:70::::1:28:1004:::::||h[Mana Igniting Cord]||h||r	5", -- [403]
+			"<16:11:39> <DEBUG>		Found item at	1	14", -- [404]
+			"<16:11:39> <DEBUG>		Found item at	1	15", -- [405]
+			"<16:11:39> <DEBUG>		Found:	1	15	0", -- [406]
+			"<16:11:39> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19136::::::::52:70::::1:28:1004:::::||h[Mana Igniting Cord]||h||r	5", -- [407]
+			"<16:11:39> <DEBUG>		Found item at	1	14", -- [408]
+			"<16:11:39> <DEBUG>		Found item at	1	15", -- [409]
+			"<16:11:39> <DEBUG>		Found:	1	15	0", -- [410]
+			"<16:11:39> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:19136::::::::52:70::::1:28:1004:::::|h[Mana~`Igniting~`Cord]|h|r^N2^S12056^t^^	WHISPER	Avisar-Dalaran", -- [411]
+			"<16:11:39> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:16251::::::::52:70::::1:28:1004:::::||h[Formula: Enchant Bracer - Superior Stamina]||h||r	5", -- [412]
+			"<16:11:39> <DEBUG>		Found item at	1	16", -- [413]
+			"<16:11:39> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:19136::::::::52:70::::1:28:1004:::::|h[Mana~`Igniting~`Cord]|h|r^N2^S12056^t^^	WHISPER	Avisar-Dalaran", -- [414]
+			"<16:11:39> <Comm>		^1^Stradable^T^N1^S|cff1eff00|Hitem:16251::::::::52:70::::1:28:1004:::::|h[Formula:~`Enchant~`Bracer~`-~`Superior~`Stamina]|h|r^N2^S11666^t^^	WHISPER	Avisar-Dalaran", -- [415]
+			"<16:11:52> <DEBUG>		Event:	ENCOUNTER_START	667	Shazzrah	9	40", -- [416]
+			"<16:11:52> <INFO>		UpdatePlayersData()", -- [417]
+			"<16:12:00> <DEBUG>		Event:	ENCOUNTER_END	667	Shazzrah	9	40	1", -- [418]
+			"<16:12:02> <DEBUG>		Event:	LOOT_READY	true", -- [419]
+			"<16:12:02> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	3	Creature-0-4216-409-11641-12100-00007EB900	1	Creature-0-4216-409-11641-12076-00027EB8FF	1	Creature-0-4216-409-11641-12076-0002FEB8FF	1", -- [420]
+			"<16:12:02> <DEBUG>		Adding to self.lootSlotInfo	3	|cffa335ee|Hitem:16857::::::::52:70::::1:28:1004:::::|h[Lawbringer Bracers]|h|r	4	1	Creature-0-4216-409-11641-11666-0001FEB8FF	1", -- [421]
+			"<16:12:02> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0	1	Creature-0-4216-409-11641-11667-0000FEB900	1", -- [422]
+			"<16:12:02> <DEBUG>		Adding to self.lootSlotInfo	9	nil	1	0	Creature-0-4216-409-11641-12264-00007EB8FE	32849", -- [423]
+			"<16:12:02> <DEBUG>		Adding to self.lootSlotInfo	10	|cffa335ee|Hitem:16811::::::::52:70::::1:28:1004:::::|h[Boots of Prophecy]|h|r	4	1	Creature-0-4216-409-11641-12264-00007EB8FE	1", -- [424]
+			"<16:12:02> <DEBUG>		Adding to self.lootSlotInfo	13	|cff0070dd|Hitem:18257::::::::52:70::::1:28:1004:::::|h[Recipe: Major Rejuvenation Potion]|h|r	3	1	Creature-0-4216-409-11641-12264-00007EB8FE	1", -- [425]
+			"<16:12:02> <DEBUG>		Adding to self.lootSlotInfo	14	|cffa335ee|Hitem:19147::::::::52:70::::1:28:1004:::::|h[Ring of Spell Power]|h|r	4	1	Creature-0-4216-409-11641-12264-00007EB8FE	1", -- [426]
+			"<16:12:02> <DEBUG>		Event:	LOOT_READY	true", -- [427]
+			"<16:12:02> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	3	Creature-0-4216-409-11641-12100-00007EB900	1	Creature-0-4216-409-11641-12076-00027EB8FF	1	Creature-0-4216-409-11641-12076-0002FEB8FF	1", -- [428]
+			"<16:12:02> <DEBUG>		Adding to self.lootSlotInfo	3	|cffa335ee|Hitem:16857::::::::52:70::::1:28:1004:::::|h[Lawbringer Bracers]|h|r	4	1	Creature-0-4216-409-11641-11666-0001FEB8FF	1", -- [429]
+			"<16:12:02> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0	1	Creature-0-4216-409-11641-11667-0000FEB900	1", -- [430]
+			"<16:12:02> <DEBUG>		Adding to self.lootSlotInfo	9	nil	1	0	Creature-0-4216-409-11641-12264-00007EB8FE	32849", -- [431]
+			"<16:12:02> <DEBUG>		Adding to self.lootSlotInfo	10	|cffa335ee|Hitem:16811::::::::52:70::::1:28:1004:::::|h[Boots of Prophecy]|h|r	4	1	Creature-0-4216-409-11641-12264-00007EB8FE	1", -- [432]
+			"<16:12:02> <DEBUG>		Adding to self.lootSlotInfo	13	|cff0070dd|Hitem:18257::::::::52:70::::1:28:1004:::::|h[Recipe: Major Rejuvenation Potion]|h|r	3	1	Creature-0-4216-409-11641-12264-00007EB8FE	1", -- [433]
+			"<16:12:02> <DEBUG>		Adding to self.lootSlotInfo	14	|cffa335ee|Hitem:19147::::::::52:70::::1:28:1004:::::|h[Ring of Spell Power]|h|r	4	1	Creature-0-4216-409-11641-12264-00007EB8FE	1", -- [434]
+			"<16:12:03> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [435]
+			"<16:12:03> <DEBUG>		OnLootSlotCleared()	3	|cffa335ee|Hitem:16857::::::::52:70::::1:28:1004:::::|h[Lawbringer Bracers]|h|r	4", -- [436]
+			"<16:12:03> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	16857	|cffa335ee|Hitem:16857::::::::52:70::::1:28:1004:::::|h[Lawbringer Bracers]|h|r	1	Avisar	PALADIN", -- [437]
+			"<16:12:03> <DEBUG>		OnLootSlotCleared()	4	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0", -- [438]
+			"<16:12:04> <DEBUG>		OnLootSlotCleared()	9	nil	1", -- [439]
+			"<16:12:04> <DEBUG>		OnLootSlotCleared()	10	|cffa335ee|Hitem:16811::::::::52:70::::1:28:1004:::::|h[Boots of Prophecy]|h|r	4", -- [440]
+			"<16:12:04> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	667	16811	|cffa335ee|Hitem:16811::::::::52:70::::1:28:1004:::::|h[Boots of Prophecy]|h|r	1	Avisar	PALADIN", -- [441]
+			"<16:12:05> <DEBUG>		OnLootSlotCleared()	13	|cff0070dd|Hitem:18257::::::::52:70::::1:28:1004:::::|h[Recipe: Major Rejuvenation Potion]|h|r	3", -- [442]
+			"<16:12:05> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	667	18257	|cff0070dd|Hitem:18257::::::::52:70::::1:28:1004:::::|h[Recipe: Major Rejuvenation Potion]|h|r	1	Avisar	PALADIN", -- [443]
+			"<16:12:05> <DEBUG>		OnLootSlotCleared()	14	|cffa335ee|Hitem:19147::::::::52:70::::1:28:1004:::::|h[Ring of Spell Power]|h|r	4", -- [444]
+			"<16:12:05> <DEBUG>		Event:	LOOT_CLOSED", -- [445]
+			"<16:12:05> <DEBUG>		Event:	LOOT_CLOSED", -- [446]
+			"<16:12:05> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	667	19147	|cffa335ee|Hitem:19147::::::::52:70::::1:28:1004:::::|h[Ring of Spell Power]|h|r	1	Avisar	PALADIN", -- [447]
+			"<16:12:05> <DEBUG>		Storage:New	|cffa335ee|Hitem:16857::::::::52:70::::1:28:1004:::::|h[Lawbringer Bracers]|h|r	temp", -- [448]
+			"<16:12:05> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16857::::::::52:70::::1:28:1004:::::||h[Lawbringer Bracers]||h||r	5", -- [449]
+			"<16:12:05> <DEBUG>		Found item at	1	13", -- [450]
+			"<16:12:05> <Comm>		^1^Sl^T^N1^S12264^t^^	WHISPER	Avisar-Dalaran", -- [451]
+			"<16:12:05> <Comm>		^1^Sl^T^N1^S12264^t^^	WHISPER	Avisar-Dalaran", -- [452]
+			"<16:12:06> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16857::::::::52:70::::1:28:1004:::::||h[Lawbringer Bracers]||h||r	5", -- [453]
+			"<16:12:06> <DEBUG>		Found item at	1	13", -- [454]
+			"<16:12:06> <DEBUG>		Storage:New	|cffa335ee|Hitem:16811::::::::52:70::::1:28:1004:::::|h[Boots of Prophecy]|h|r	temp", -- [455]
+			"<16:12:06> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16811::::::::52:70::::1:28:1004:::::||h[Boots of Prophecy]||h||r	5", -- [456]
+			"<16:12:06> <DEBUG>		Found item at	1	14", -- [457]
+			"<16:12:06> <DEBUG>		Found:	1	14	0", -- [458]
+			"<16:12:06> <Comm>		^1^Stradable^T^N1^S|cffa335ee|Hitem:16857::::::::52:70::::1:28:1004:::::|h[Lawbringer~`Bracers]|h|r^N2^S11666^t^^	WHISPER	Avisar-Dalaran", -- [459]
+			"<16:12:07> <DEBUG>		Storage:New	|cff0070dd|Hitem:18257::::::::52:70::::1:28:1004:::::|h[Recipe: Major Rejuvenation Potion]|h|r	temp", -- [460]
+			"<16:12:07> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:18257::::::::52:70::::1:28:1004:::::||h[Recipe: Major Rejuvenation Potion]||h||r	5", -- [461]
+			"<16:12:07> <DEBUG>		Found item at	1	15", -- [462]
+			"<16:12:07> <DEBUG>		Storage:New	|cffa335ee|Hitem:19147::::::::52:70::::1:28:1004:::::|h[Ring of Spell Power]|h|r	temp", -- [463]
+			"<16:12:07> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19147::::::::52:70::::1:28:1004:::::||h[Ring of Spell Power]||h||r	5", -- [464]
+			"<16:12:07> <DEBUG>		Found item at	1	16", -- [465]
+			"<16:12:07> <DEBUG>		Found:	1	16	0", -- [466]
+			"<16:12:07> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16811::::::::52:70::::1:28:1004:::::||h[Boots of Prophecy]||h||r	5", -- [467]
+			"<16:12:07> <DEBUG>		Found item at	1	14", -- [468]
+			"<16:12:07> <DEBUG>		Found:	1	14	0", -- [469]
+			"<16:12:08> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:16811::::::::52:70::::1:28:1004:::::|h[Boots~`of~`Prophecy]|h|r^N2^S12264^t^^	WHISPER	Avisar-Dalaran", -- [470]
+			"<16:12:08> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:18257::::::::52:70::::1:28:1004:::::||h[Recipe: Major Rejuvenation Potion]||h||r	5", -- [471]
+			"<16:12:08> <DEBUG>		Found item at	1	15", -- [472]
+			"<16:12:08> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19147::::::::52:70::::1:28:1004:::::||h[Ring of Spell Power]||h||r	5", -- [473]
+			"<16:12:08> <DEBUG>		Found item at	1	16", -- [474]
+			"<16:12:08> <DEBUG>		Found:	1	16	0", -- [475]
+			"<16:12:08> <Comm>		^1^Stradable^T^N1^S|cff0070dd|Hitem:18257::::::::52:70::::1:28:1004:::::|h[Recipe:~`Major~`Rejuvenation~`Potion]|h|r^N2^S12264^t^^	WHISPER	Avisar-Dalaran", -- [476]
+			"<16:12:08> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:19147::::::::52:70::::1:28:1004:::::|h[Ring~`of~`Spell~`Power]|h|r^N2^S12264^t^^	WHISPER	Avisar-Dalaran", -- [477]
+			"<16:12:18> <DEBUG>		Event:	LOOT_READY	true", -- [478]
+			"<16:12:18> <DEBUG>		Event:	LOOT_READY	true", -- [479]
+			"<16:12:18> <DEBUG>		Event:	LOOT_CLOSED", -- [480]
+			"<16:12:18> <DEBUG>		Event:	LOOT_CLOSED", -- [481]
+			"<16:12:49> <DEBUG>		Event:	LOOT_READY	true", -- [482]
+			"<16:12:49> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-11665-0000FEB8FE	1", -- [483]
+			"<16:12:49> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:10160::::::::52:70:::2:6654:1709:1:28:1004:::::|h[Mercurial Circlet of the Aurora]|h|r	2	1	Creature-0-4216-409-11641-11665-0000FEB8FE	1", -- [484]
+			"<16:12:50> <DEBUG>		Event:	LOOT_READY	true", -- [485]
+			"<16:12:50> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-11665-0000FEB8FE	1", -- [486]
+			"<16:12:50> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:10160::::::::52:70:::2:6654:1709:1:28:1004:::::|h[Mercurial Circlet of the Aurora]|h|r	2	1	Creature-0-4216-409-11641-11665-0000FEB8FE	1", -- [487]
+			"<16:12:50> <DEBUG>		Event:	LOOT_CLOSED", -- [488]
+			"<16:12:50> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [489]
+			"<16:12:50> <DEBUG>		Event:	LOOT_CLOSED", -- [490]
+			"<16:12:50> <DEBUG>		OnLootSlotCleared()	2	|cff1eff00|Hitem:10160::::::::52:70:::2:6654:1709:1:28:1004:::::|h[Mercurial Circlet of the Aurora]|h|r	2", -- [491]
+			"<16:12:50> <DEBUG>		Event:	LOOT_CLOSED", -- [492]
+			"<16:12:50> <Comm>		^1^Sl^T^N1^S11665^t^^	WHISPER	Avisar-Dalaran", -- [493]
+			"<16:12:52> <DEBUG>		Storage:New	|cff1eff00|Hitem:10160::::::::52:70:::2:6654:1709:1:28:1004:::::|h[Mercurial Circlet of the Aurora]|h|r	temp", -- [494]
+			"<16:12:52> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10160::::::::52:70:::2:6654:1709:1:28:1004:::::||h[Mercurial Circlet of the Aurora]||h||r	5", -- [495]
+			"<16:12:52> <DEBUG>		Found:	nil	nil	nil", -- [496]
+			"<16:12:53> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10160::::::::52:70:::2:6654:1709:1:28:1004:::::||h[Mercurial Circlet of the Aurora]||h||r	5", -- [497]
+			"<16:12:53> <DEBUG>		Found:	nil	nil	nil", -- [498]
+			"<16:12:54> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10160::::::::52:70:::2:6654:1709:1:28:1004:::::||h[Mercurial Circlet of the Aurora]||h||r	5", -- [499]
+			"<16:12:54> <DEBUG>		Found:	nil	nil	nil", -- [500]
+			"<16:12:55> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10160::::::::52:70:::2:6654:1709:1:28:1004:::::||h[Mercurial Circlet of the Aurora]||h||r	5", -- [501]
+			"<16:12:55> <DEBUG>		Found:	nil	nil	nil", -- [502]
+			"<16:12:55> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:10160::::::::52:70:::2:6654:1709:1:28:1004:::::|h[Mercurial Circlet of the Aurora]|h|r not found in bags", -- [503]
+			"<16:12:55> <DEBUG>		Event:	LOOT_READY	true", -- [504]
+			"<16:12:55> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-12100-00007EB8FE	1", -- [505]
+			"<16:12:55> <DEBUG>		Event:	LOOT_READY	true", -- [506]
+			"<16:12:55> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-12100-00007EB8FE	1", -- [507]
+			"<16:12:55> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [508]
+			"<16:12:56> <DEBUG>		Event:	LOOT_CLOSED", -- [509]
+			"<16:12:56> <Comm>		^1^Sl^T^N1^S12100^t^^	WHISPER	Avisar-Dalaran", -- [510]
+			"<16:13:00> <DEBUG>		Event:	LOOT_READY	true", -- [511]
+			"<16:13:01> <DEBUG>		Event:	LOOT_READY	true", -- [512]
+			"<16:13:01> <DEBUG>		Event:	LOOT_CLOSED", -- [513]
+			"<16:13:18> <DEBUG>		Event:	LOOT_READY	true", -- [514]
+			"<16:13:18> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	2	Creature-0-4216-409-11641-12076-0000FEB900	1	Creature-0-4216-409-11641-12076-00007EB900	1", -- [515]
+			"<16:13:18> <DEBUG>		Event:	LOOT_READY	true", -- [516]
+			"<16:13:18> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	2	Creature-0-4216-409-11641-12076-0000FEB900	1	Creature-0-4216-409-11641-12076-00007EB900	1", -- [517]
+			"<16:13:18> <DEBUG>		Event:	LOOT_CLOSED", -- [518]
+			"<16:13:18> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [519]
+			"<16:13:18> <DEBUG>		Event:	LOOT_CLOSED", -- [520]
+			"<16:13:18> <Comm>		^1^Sl^T^N1^S12076^t^^	WHISPER	Avisar-Dalaran", -- [521]
+			"<16:13:19> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	17011	|cff0070dd|Hitem:17011::::::::52:70:::::::::|h[Lava Core]|h|r	1	Avisar	PALADIN", -- [522]
+			"<16:13:25> <DEBUG>		Event:	LOOT_READY	true", -- [523]
+			"<16:13:25> <DEBUG>		Event:	LOOT_READY	true", -- [524]
+			"<16:13:26> <DEBUG>		Event:	LOOT_CLOSED", -- [525]
+			"<16:13:26> <DEBUG>		Event:	LOOT_CLOSED", -- [526]
+			"<16:13:36> <DEBUG>		Event:	ENCOUNTER_START	670	Golemagg the Incinerator	9	40", -- [527]
+			"<16:13:36> <INFO>		UpdatePlayersData()", -- [528]
+			"<16:13:40> <DEBUG>		Event:	ENCOUNTER_END	670	Golemagg the Incinerator	9	40	1", -- [529]
+			"<16:13:42> <DEBUG>		Event:	LOOT_READY	true", -- [530]
+			"<16:13:42> <DEBUG>		Adding to self.lootSlotInfo	1	|cffa335ee|Hitem:19136::::::::52:70::::1:28:1004:::::|h[Mana Igniting Cord]|h|r	4	1	Creature-0-4216-409-11641-11988-00007EB8FE	1", -- [531]
+			"<16:13:42> <DEBUG>		Adding to self.lootSlotInfo	7	|cffa335ee|Hitem:19142::::::::52:70::::1:28:1004:::::|h[Fire Runed Grimoire]|h|r	4	1	Creature-0-4216-409-11641-11988-00007EB8FE	1", -- [532]
+			"<16:13:42> <DEBUG>		Adding to self.lootSlotInfo	8	|cffa335ee|Hitem:19143::::::::52:70::::1:28:1004:::::|h[Flameguard Gauntlets]|h|r	4	1	Creature-0-4216-409-11641-11988-00007EB8FE	1", -- [533]
+			"<16:13:42> <DEBUG>		Event:	LOOT_READY	true", -- [534]
+			"<16:13:42> <DEBUG>		Adding to self.lootSlotInfo	1	|cffa335ee|Hitem:19136::::::::52:70::::1:28:1004:::::|h[Mana Igniting Cord]|h|r	4	1	Creature-0-4216-409-11641-11988-00007EB8FE	1", -- [535]
+			"<16:13:42> <DEBUG>		Adding to self.lootSlotInfo	7	|cffa335ee|Hitem:19142::::::::52:70::::1:28:1004:::::|h[Fire Runed Grimoire]|h|r	4	1	Creature-0-4216-409-11641-11988-00007EB8FE	1", -- [536]
+			"<16:13:42> <DEBUG>		Adding to self.lootSlotInfo	8	|cffa335ee|Hitem:19143::::::::52:70::::1:28:1004:::::|h[Flameguard Gauntlets]|h|r	4	1	Creature-0-4216-409-11641-11988-00007EB8FE	1", -- [537]
+			"<16:13:43> <DEBUG>		OnLootSlotCleared()	1	|cffa335ee|Hitem:19136::::::::52:70::::1:28:1004:::::|h[Mana Igniting Cord]|h|r	4", -- [538]
+			"<16:13:43> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	670	19136	|cffa335ee|Hitem:19136::::::::52:70::::1:28:1004:::::|h[Mana Igniting Cord]|h|r	1	Avisar	PALADIN", -- [539]
+			"<16:13:44> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	670	17011	|cff0070dd|Hitem:17011::::::::52:70:::::::::|h[Lava Core]|h|r	1	Avisar	PALADIN", -- [540]
+			"<16:13:44> <DEBUG>		OnLootSlotCleared()	7	|cffa335ee|Hitem:19142::::::::52:70::::1:28:1004:::::|h[Fire Runed Grimoire]|h|r	4", -- [541]
+			"<16:13:44> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	670	19142	|cffa335ee|Hitem:19142::::::::52:70::::1:28:1004:::::|h[Fire Runed Grimoire]|h|r	1	Avisar	PALADIN", -- [542]
+			"<16:13:44> <DEBUG>		OnLootSlotCleared()	8	|cffa335ee|Hitem:19143::::::::52:70::::1:28:1004:::::|h[Flameguard Gauntlets]|h|r	4", -- [543]
+			"<16:13:44> <DEBUG>		Event:	LOOT_CLOSED", -- [544]
+			"<16:13:44> <DEBUG>		Event:	LOOT_CLOSED", -- [545]
+			"<16:13:44> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	670	19143	|cffa335ee|Hitem:19143::::::::52:70::::1:28:1004:::::|h[Flameguard Gauntlets]|h|r	1	Avisar	PALADIN", -- [546]
+			"<16:13:44> <Comm>		^1^Sl^T^N1^S11988^t^^	WHISPER	Avisar-Dalaran", -- [547]
+			"<16:13:44> <Comm>		^1^Sl^T^N1^S11988^t^^	WHISPER	Avisar-Dalaran", -- [548]
+			"<16:13:45> <DEBUG>		Storage:New	|cffa335ee|Hitem:19136::::::::52:70::::1:28:1004:::::|h[Mana Igniting Cord]|h|r	temp", -- [549]
+			"<16:13:45> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19136::::::::52:70::::1:28:1004:::::||h[Mana Igniting Cord]||h||r	5", -- [550]
+			"<16:13:45> <DEBUG>		Found item at	1	16", -- [551]
+			"<16:13:45> <DEBUG>		Found item at	3	11", -- [552]
+			"<16:13:45> <DEBUG>		Found item at	3	12", -- [553]
+			"<16:13:45> <DEBUG>		Found:	3	12	0", -- [554]
+			"<16:13:46> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19136::::::::52:70::::1:28:1004:::::||h[Mana Igniting Cord]||h||r	5", -- [555]
+			"<16:13:46> <DEBUG>		Found item at	1	16", -- [556]
+			"<16:13:46> <DEBUG>		Found item at	3	11", -- [557]
+			"<16:13:46> <DEBUG>		Found item at	3	12", -- [558]
+			"<16:13:46> <DEBUG>		Found:	3	12	0", -- [559]
+			"<16:13:46> <DEBUG>		Storage:New	|cffa335ee|Hitem:19142::::::::52:70::::1:28:1004:::::|h[Fire Runed Grimoire]|h|r	temp", -- [560]
+			"<16:13:46> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19142::::::::52:70::::1:28:1004:::::||h[Fire Runed Grimoire]||h||r	5", -- [561]
+			"<16:13:46> <DEBUG>		Found item at	1	17", -- [562]
+			"<16:13:46> <DEBUG>		Found:	1	17	0", -- [563]
+			"<16:13:46> <DEBUG>		Storage:New	|cffa335ee|Hitem:19143::::::::52:70::::1:28:1004:::::|h[Flameguard Gauntlets]|h|r	temp", -- [564]
+			"<16:13:46> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19143::::::::52:70::::1:28:1004:::::||h[Flameguard Gauntlets]||h||r	5", -- [565]
+			"<16:13:46> <DEBUG>		Found item at	1	18", -- [566]
+			"<16:13:46> <DEBUG>		Found:	1	18	0", -- [567]
+			"<16:13:46> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:19136::::::::52:70::::1:28:1004:::::|h[Mana~`Igniting~`Cord]|h|r^N2^S11988^t^^	WHISPER	Avisar-Dalaran", -- [568]
+			"<16:13:47> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19142::::::::52:70::::1:28:1004:::::||h[Fire Runed Grimoire]||h||r	5", -- [569]
+			"<16:13:47> <DEBUG>		Found item at	1	17", -- [570]
+			"<16:13:47> <DEBUG>		Found:	1	17	0", -- [571]
+			"<16:13:47> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19143::::::::52:70::::1:28:1004:::::||h[Flameguard Gauntlets]||h||r	5", -- [572]
+			"<16:13:47> <DEBUG>		Found item at	1	18", -- [573]
+			"<16:13:47> <DEBUG>		Found:	1	18	0", -- [574]
+			"<16:13:47> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:19142::::::::52:70::::1:28:1004:::::|h[Fire~`Runed~`Grimoire]|h|r^N2^S11988^t^^	WHISPER	Avisar-Dalaran", -- [575]
+			"<16:13:47> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:19143::::::::52:70::::1:28:1004:::::|h[Flameguard~`Gauntlets]|h|r^N2^S11988^t^^	WHISPER	Avisar-Dalaran", -- [576]
+			"<16:13:53> <DEBUG>		Event:	LOOT_READY	true", -- [577]
+			"<16:13:53> <DEBUG>		Event:	LOOT_READY	true", -- [578]
+			"<16:13:53> <DEBUG>		Event:	LOOT_CLOSED", -- [579]
+			"<16:13:53> <DEBUG>		Event:	LOOT_CLOSED", -- [580]
+			"<16:14:09> <DEBUG>		Event:	LOOT_READY	true", -- [581]
+			"<16:14:09> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-12100-0000FEB900	1", -- [582]
+			"<16:14:09> <DEBUG>		Adding to self.lootSlotInfo	5	|cffa335ee|Hitem:16851::::::::52:70::::1:28:1004:::::|h[Giantstalker's Belt]|h|r	4	1	Creature-0-4216-409-11641-11666-00017EB900	1", -- [583]
+			"<16:14:09> <DEBUG>		Event:	LOOT_READY	true", -- [584]
+			"<16:14:09> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-12100-0000FEB900	1", -- [585]
+			"<16:14:09> <DEBUG>		Adding to self.lootSlotInfo	5	|cffa335ee|Hitem:16851::::::::52:70::::1:28:1004:::::|h[Giantstalker's Belt]|h|r	4	1	Creature-0-4216-409-11641-11666-00017EB900	1", -- [586]
+			"<16:14:10> <DEBUG>		Event:	LOOT_CLOSED", -- [587]
+			"<16:14:10> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [588]
+			"<16:14:10> <DEBUG>		Event:	LOOT_CLOSED", -- [589]
+			"<16:14:10> <DEBUG>		OnLootSlotCleared()	5	|cffa335ee|Hitem:16851::::::::52:70::::1:28:1004:::::|h[Giantstalker's Belt]|h|r	4", -- [590]
+			"<16:14:10> <DEBUG>		Event:	LOOT_CLOSED", -- [591]
+			"<16:14:10> <Comm>		^1^Sl^T^N1^S11666^t^^	WHISPER	Avisar-Dalaran", -- [592]
+			"<16:14:11> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	17011	|cff0070dd|Hitem:17011::::::::52:70:::::::::|h[Lava Core]|h|r	1	Avisar	PALADIN", -- [593]
+			"<16:14:11> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	17010	|cff0070dd|Hitem:17010::::::::52:70:::::::::|h[Fiery Core]|h|r	1	Avisar	PALADIN", -- [594]
+			"<16:14:11> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	16851	|cffa335ee|Hitem:16851::::::::52:70::::1:28:1004:::::|h[Giantstalker's Belt]|h|r	1	Avisar	PALADIN", -- [595]
+			"<16:14:12> <DEBUG>		Storage:New	|cffa335ee|Hitem:16851::::::::52:70::::1:28:1004:::::|h[Giantstalker's Belt]|h|r	temp", -- [596]
+			"<16:14:12> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16851::::::::52:70::::1:28:1004:::::||h[Giantstalker's Belt]||h||r	5", -- [597]
+			"<16:14:12> <DEBUG>		Found item at	1	4", -- [598]
+			"<16:14:13> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16851::::::::52:70::::1:28:1004:::::||h[Giantstalker's Belt]||h||r	5", -- [599]
+			"<16:14:13> <DEBUG>		Found item at	1	4", -- [600]
+			"<16:14:13> <Comm>		^1^Stradable^T^N1^S|cffa335ee|Hitem:16851::::::::52:70::::1:28:1004:::::|h[Giantstalker's~`Belt]|h|r^N2^S11666^t^^	WHISPER	Avisar-Dalaran", -- [601]
+			"<16:14:16> <DEBUG>		Event:	LOOT_READY	true", -- [602]
+			"<16:14:16> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-11665-0003FEB8FF	1", -- [603]
+			"<16:14:16> <DEBUG>		Event:	LOOT_READY	true", -- [604]
+			"<16:14:16> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-11665-0003FEB8FF	1", -- [605]
+			"<16:14:16> <DEBUG>		Event:	LOOT_CLOSED", -- [606]
+			"<16:14:16> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [607]
+			"<16:14:16> <DEBUG>		Event:	LOOT_CLOSED", -- [608]
+			"<16:14:16> <Comm>		^1^Sl^T^N1^S11665^t^^	WHISPER	Avisar-Dalaran", -- [609]
+			"<16:14:19> <DEBUG>		Event:	LOOT_READY	true", -- [610]
+			"<16:14:19> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-11665-00017EB8FF	1", -- [611]
+			"<16:14:19> <DEBUG>		Event:	LOOT_READY	true", -- [612]
+			"<16:14:19> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-11665-00017EB8FF	1", -- [613]
+			"<16:14:19> <DEBUG>		Event:	LOOT_CLOSED", -- [614]
+			"<16:14:19> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [615]
+			"<16:14:19> <DEBUG>		Event:	LOOT_CLOSED", -- [616]
+			"<16:14:19> <Comm>		^1^Sl^T^N1^S11665^t^^	WHISPER	Avisar-Dalaran", -- [617]
+			"<16:14:24> <DEBUG>		Event:	LOOT_READY	true", -- [618]
+			"<16:14:24> <DEBUG>		Event:	LOOT_READY	true", -- [619]
+			"<16:14:24> <DEBUG>		Event:	LOOT_CLOSED", -- [620]
+			"<16:14:26> <DEBUG>		Event:	LOOT_READY	true", -- [621]
+			"<16:14:26> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0	1	Creature-0-4216-409-11641-11668-00027EB8FF	1", -- [622]
+			"<16:14:26> <DEBUG>		Event:	LOOT_READY	true", -- [623]
+			"<16:14:26> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0	1	Creature-0-4216-409-11641-11668-00027EB8FF	1", -- [624]
+			"<16:14:26> <DEBUG>		Event:	LOOT_CLOSED", -- [625]
+			"<16:14:26> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0", -- [626]
+			"<16:14:26> <DEBUG>		Event:	LOOT_CLOSED", -- [627]
+			"<16:14:27> <Comm>		^1^Sl^T^N1^S11668^t^^	WHISPER	Avisar-Dalaran", -- [628]
+			"<16:14:36> <DEBUG>		Event:	LOOT_READY	true", -- [629]
+			"<16:14:36> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-12076-0004FEB8FF	1", -- [630]
+			"<16:14:36> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0	1	Creature-0-4216-409-11641-11666-00037EB8FF	1", -- [631]
+			"<16:14:36> <DEBUG>		Event:	LOOT_READY	true", -- [632]
+			"<16:14:36> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-12076-0004FEB8FF	1", -- [633]
+			"<16:14:36> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0	1	Creature-0-4216-409-11641-11666-00037EB8FF	1", -- [634]
+			"<16:14:36> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [635]
+			"<16:14:36> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	17011	|cff0070dd|Hitem:17011::::::::52:70:::::::::|h[Lava Core]|h|r	1	Avisar	PALADIN", -- [636]
+			"<16:14:37> <DEBUG>		OnLootSlotCleared()	3	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0", -- [637]
+			"<16:14:37> <DEBUG>		Event:	LOOT_CLOSED", -- [638]
+			"<16:14:37> <DEBUG>		Event:	LOOT_CLOSED", -- [639]
+			"<16:14:37> <Comm>		^1^Sl^T^N1^S11666^t^^	WHISPER	Avisar-Dalaran", -- [640]
+			"<16:14:37> <Comm>		^1^Sl^T^N1^S11666^t^^	WHISPER	Avisar-Dalaran", -- [641]
+			"<16:14:38> <DEBUG>		Event:	LOOT_READY	true", -- [642]
+			"<16:14:38> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-12076-00047EB8FF	1", -- [643]
+			"<16:14:38> <DEBUG>		Event:	LOOT_READY	true", -- [644]
+			"<16:14:38> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-12076-00047EB8FF	1", -- [645]
+			"<16:14:38> <DEBUG>		Event:	LOOT_CLOSED", -- [646]
+			"<16:14:38> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [647]
+			"<16:14:38> <DEBUG>		Event:	LOOT_CLOSED", -- [648]
+			"<16:14:38> <Comm>		^1^Sl^T^N1^S12076^t^^	WHISPER	Avisar-Dalaran", -- [649]
+			"<16:14:38> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	17011	|cff0070dd|Hitem:17011::::::::52:70:::::::::|h[Lava Core]|h|r	1	Avisar	PALADIN", -- [650]
+			"<16:15:09> <DEBUG>		Event:	LOOT_READY	true", -- [651]
+			"<16:15:10> <DEBUG>		Event:	LOOT_READY	true", -- [652]
+			"<16:15:10> <DEBUG>		Event:	LOOT_CLOSED", -- [653]
+			"<16:15:10> <DEBUG>		Event:	LOOT_CLOSED", -- [654]
+			"<16:15:31> <DEBUG>		Event:	LOOT_READY	true", -- [655]
+			"<16:15:32> <DEBUG>		Event:	LOOT_READY	true", -- [656]
+			"<16:15:32> <DEBUG>		Event:	LOOT_CLOSED", -- [657]
+			"<16:15:47> <DEBUG>		Event:	LOOT_READY	true", -- [658]
+			"<16:15:47> <DEBUG>		Event:	LOOT_READY	true", -- [659]
+			"<16:15:47> <DEBUG>		Event:	LOOT_CLOSED", -- [660]
+			"<16:15:47> <DEBUG>		Event:	LOOT_CLOSED", -- [661]
+			"<16:15:57> <DEBUG>		Event:	LOOT_READY	true", -- [662]
+			"<16:15:57> <DEBUG>		Event:	LOOT_READY	true", -- [663]
+			"<16:15:58> <DEBUG>		Event:	LOOT_CLOSED", -- [664]
+			"<16:15:58> <DEBUG>		Event:	LOOT_CLOSED", -- [665]
+			"<16:16:08> <DEBUG>		Event:	LOOT_READY	true", -- [666]
+			"<16:16:08> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	2	Creature-0-4216-409-11641-12076-00017EB8FF	1	Creature-0-4216-409-11641-12076-0001FEB8FF	1", -- [667]
+			"<16:16:08> <DEBUG>		Event:	LOOT_READY	true", -- [668]
+			"<16:16:08> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	2	Creature-0-4216-409-11641-12076-00017EB8FF	1	Creature-0-4216-409-11641-12076-0001FEB8FF	1", -- [669]
+			"<16:16:08> <DEBUG>		Event:	LOOT_CLOSED", -- [670]
+			"<16:16:08> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [671]
+			"<16:16:08> <DEBUG>		Event:	LOOT_CLOSED", -- [672]
+			"<16:16:08> <Comm>		^1^Sl^T^N1^S12076^t^^	WHISPER	Avisar-Dalaran", -- [673]
+			"<16:16:13> <DEBUG>		Event:	LOOT_READY	true", -- [674]
+			"<16:16:13> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-12101-0001FEB8FE	1", -- [675]
+			"<16:16:13> <DEBUG>		Event:	LOOT_READY	true", -- [676]
+			"<16:16:13> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-12101-0001FEB8FE	1", -- [677]
+			"<16:16:13> <DEBUG>		Event:	LOOT_CLOSED", -- [678]
+			"<16:16:13> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [679]
+			"<16:16:13> <DEBUG>		Event:	LOOT_CLOSED", -- [680]
+			"<16:16:13> <Comm>		^1^Sl^T^N1^S12101^t^^	WHISPER	Avisar-Dalaran", -- [681]
+			"<16:16:16> <DEBUG>		Event:	LOOT_READY	true", -- [682]
+			"<16:16:16> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0	1	Creature-0-4216-409-11641-11668-0001FEB8FF	1", -- [683]
+			"<16:16:17> <DEBUG>		Event:	LOOT_READY	true", -- [684]
+			"<16:16:17> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0	1	Creature-0-4216-409-11641-11668-0001FEB8FF	1", -- [685]
+			"<16:16:17> <DEBUG>		Event:	LOOT_CLOSED", -- [686]
+			"<16:16:17> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0", -- [687]
+			"<16:16:17> <DEBUG>		Event:	LOOT_CLOSED", -- [688]
+			"<16:16:17> <Comm>		^1^Sl^T^N1^S11668^t^^	WHISPER	Avisar-Dalaran", -- [689]
+			"<16:16:26> <DEBUG>		Event:	LOOT_READY	true", -- [690]
+			"<16:16:26> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-12076-0000FEB8FE	1", -- [691]
+			"<16:16:27> <DEBUG>		Event:	LOOT_READY	true", -- [692]
+			"<16:16:27> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-12076-0000FEB8FE	1", -- [693]
+			"<16:16:27> <DEBUG>		Event:	LOOT_CLOSED", -- [694]
+			"<16:16:27> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [695]
+			"<16:16:27> <DEBUG>		Event:	LOOT_CLOSED", -- [696]
+			"<16:16:27> <Comm>		^1^Sl^T^N1^S12076^t^^	WHISPER	Avisar-Dalaran", -- [697]
+			"<16:16:29> <DEBUG>		Event:	LOOT_READY	true", -- [698]
+			"<16:16:29> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-12076-00007EB8FE	1", -- [699]
+			"<16:16:29> <DEBUG>		Event:	LOOT_READY	true", -- [700]
+			"<16:16:29> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0	1	Creature-0-4216-409-11641-12076-00007EB8FE	1", -- [701]
+			"<16:16:29> <DEBUG>		Event:	LOOT_CLOSED", -- [702]
+			"<16:16:29> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4784::::::::52:70:::::::::|h[Lifeless Stone]|h|r	0", -- [703]
+			"<16:16:29> <DEBUG>		Event:	LOOT_CLOSED", -- [704]
+			"<16:16:29> <Comm>		^1^Sl^T^N1^S12076^t^^	WHISPER	Avisar-Dalaran", -- [705]
+			"<16:16:35> <DEBUG>		Event:	LOOT_READY	true", -- [706]
+			"<16:16:35> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0	1	Creature-0-4216-409-11641-11668-0000FEB900	1", -- [707]
+			"<16:16:35> <DEBUG>		Event:	LOOT_READY	true", -- [708]
+			"<16:16:35> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0	1	Creature-0-4216-409-11641-11668-0000FEB900	1", -- [709]
+			"<16:16:35> <DEBUG>		Event:	LOOT_CLOSED", -- [710]
+			"<16:16:35> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4787::::::::52:70:::::::::|h[Burning Pitch]|h|r	0", -- [711]
+			"<16:16:35> <DEBUG>		Event:	LOOT_CLOSED", -- [712]
+			"<16:16:35> <Comm>		^1^Sl^T^N1^S11668^t^^	WHISPER	Avisar-Dalaran", -- [713]
+			"<16:16:42> <DEBUG>		Event:	ENCOUNTER_START	669	Sulfuron Harbinger	9	40", -- [714]
+			"<16:16:42> <INFO>		UpdatePlayersData()", -- [715]
+			"<16:16:46> <DEBUG>		Event:	ENCOUNTER_END	669	Sulfuron Harbinger	9	40	1", -- [716]
+			"<16:16:48> <DEBUG>		Event:	LOOT_READY	true", -- [717]
+			"<16:16:48> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4216-409-11641-12098-00007EB8FE	32715	Creature-0-4216-409-11641-11662-00007EB8FE	9459	Creature-0-4216-409-11641-11662-0000FEB8FE	9157	Creature-0-4216-409-11641-11662-00017EB8FE	7958	Creature-0-4216-409-11641-11662-0001FEB8FE	2741", -- [718]
+			"<16:16:48> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:19146::::::::52:70::::1:28:1004:::::|h[Wristguards of Stability]|h|r	4	1	Creature-0-4216-409-11641-12098-00007EB8FE	1", -- [719]
+			"<16:16:48> <DEBUG>		Adding to self.lootSlotInfo	6	|cffa335ee|Hitem:18875::::::::52:70::::1:28:1004:::::|h[Salamander Scale Pants]|h|r	4	1	Creature-0-4216-409-11641-12098-00007EB8FE	1", -- [720]
+			"<16:16:48> <DEBUG>		Event:	LOOT_READY	true", -- [721]
+			"<16:16:48> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4216-409-11641-12098-00007EB8FE	32715	Creature-0-4216-409-11641-11662-00007EB8FE	9459	Creature-0-4216-409-11641-11662-0000FEB8FE	9157	Creature-0-4216-409-11641-11662-00017EB8FE	7958	Creature-0-4216-409-11641-11662-0001FEB8FE	2741", -- [722]
+			"<16:16:48> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:19146::::::::52:70::::1:28:1004:::::|h[Wristguards of Stability]|h|r	4	1	Creature-0-4216-409-11641-12098-00007EB8FE	1", -- [723]
+			"<16:16:48> <DEBUG>		Adding to self.lootSlotInfo	6	|cffa335ee|Hitem:18875::::::::52:70::::1:28:1004:::::|h[Salamander Scale Pants]|h|r	4	1	Creature-0-4216-409-11641-12098-00007EB8FE	1", -- [724]
+			"<16:16:49> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [725]
+			"<16:16:49> <DEBUG>		OnLootSlotCleared()	2	|cffa335ee|Hitem:19146::::::::52:70::::1:28:1004:::::|h[Wristguards of Stability]|h|r	4", -- [726]
+			"<16:16:49> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	669	19146	|cffa335ee|Hitem:19146::::::::52:70::::1:28:1004:::::|h[Wristguards of Stability]|h|r	1	Avisar	PALADIN", -- [727]
+			"<16:16:49> <DEBUG>		Event:	LOOT_CLOSED", -- [728]
+			"<16:16:49> <DEBUG>		OnLootSlotCleared()	6	|cffa335ee|Hitem:18875::::::::52:70::::1:28:1004:::::|h[Salamander Scale Pants]|h|r	4", -- [729]
+			"<16:16:49> <DEBUG>		Event:	LOOT_CLOSED", -- [730]
+			"<16:16:50> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	669	18875	|cffa335ee|Hitem:18875::::::::52:70::::1:28:1004:::::|h[Salamander Scale Pants]|h|r	1	Avisar	PALADIN", -- [731]
+			"<16:16:50> <Comm>		^1^Sl^T^N1^S12098^t^^	WHISPER	Avisar-Dalaran", -- [732]
+			"<16:16:51> <DEBUG>		Storage:New	|cffa335ee|Hitem:19146::::::::52:70::::1:28:1004:::::|h[Wristguards of Stability]|h|r	temp", -- [733]
+			"<16:16:51> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19146::::::::52:70::::1:28:1004:::::||h[Wristguards of Stability]||h||r	5", -- [734]
+			"<16:16:51> <DEBUG>		Found item at	1	17", -- [735]
+			"<16:16:51> <DEBUG>		Found item at	3	13", -- [736]
+			"<16:16:51> <DEBUG>		Found:	3	13	0", -- [737]
+			"<16:16:51> <DEBUG>		Storage:New	|cffa335ee|Hitem:18875::::::::52:70::::1:28:1004:::::|h[Salamander Scale Pants]|h|r	temp", -- [738]
+			"<16:16:51> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:18875::::::::52:70::::1:28:1004:::::||h[Salamander Scale Pants]||h||r	5", -- [739]
+			"<16:16:51> <DEBUG>		Found item at	1	18", -- [740]
+			"<16:16:51> <DEBUG>		Found:	1	18	0", -- [741]
+			"<16:16:52> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19146::::::::52:70::::1:28:1004:::::||h[Wristguards of Stability]||h||r	5", -- [742]
+			"<16:16:52> <DEBUG>		Found item at	1	17", -- [743]
+			"<16:16:52> <DEBUG>		Found item at	3	13", -- [744]
+			"<16:16:52> <DEBUG>		Found:	3	13	0", -- [745]
+			"<16:16:52> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:19146::::::::52:70::::1:28:1004:::::|h[Wristguards~`of~`Stability]|h|r^N2^S12098^t^^	WHISPER	Avisar-Dalaran", -- [746]
+			"<16:16:52> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:18875::::::::52:70::::1:28:1004:::::||h[Salamander Scale Pants]||h||r	5", -- [747]
+			"<16:16:52> <DEBUG>		Found item at	1	18", -- [748]
+			"<16:16:52> <DEBUG>		Found:	1	18	0", -- [749]
+			"<16:16:53> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:18875::::::::52:70::::1:28:1004:::::|h[Salamander~`Scale~`Pants]|h|r^N2^S12098^t^^	WHISPER	Avisar-Dalaran", -- [750]
+			"<16:16:57> <DEBUG>		Event:	LOOT_READY	true", -- [751]
+			"<16:16:57> <DEBUG>		Event:	LOOT_READY	true", -- [752]
+			"<16:16:57> <DEBUG>		Event:	LOOT_CLOSED", -- [753]
+			"<16:18:07> <DEBUG>		Event:	ENCOUNTER_START	671	Majordomo Executus	9	40", -- [754]
+			"<16:18:07> <INFO>		UpdatePlayersData()", -- [755]
+			"<16:18:12> <DEBUG>		Event:	LOOT_READY	true", -- [756]
+			"<16:18:12> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4216-409-11641-11664-00017EBCAE	7257	Creature-0-4216-409-11641-11663-00007EBCAE	5656	Creature-0-4216-409-11641-11663-0000FEBCAE	8155	Creature-0-4216-409-11641-11663-00017EBCAE	3697	Creature-0-4216-409-11641-11663-0001FEBCAE	7956	Creature-0-4216-409-11641-11664-00007EBCAE	5183	Creature-0-4216-409-11641-11664-0000FEBCAE	2336	Creature-0-4216-409-11641-11664-0001FEBCAE	8933", -- [757]
+			"<16:18:12> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:13824::::::::52:70:::1:6657:1:28:1004:::::|h[Recurve Long Bow]|h|r	0	1	Creature-0-4216-409-11641-11663-0000FEBCAE	1", -- [758]
+			"<16:18:13> <DEBUG>		Event:	LOOT_READY	true", -- [759]
+			"<16:18:13> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4216-409-11641-11664-00017EBCAE	7257	Creature-0-4216-409-11641-11663-00007EBCAE	5656	Creature-0-4216-409-11641-11663-0000FEBCAE	8155	Creature-0-4216-409-11641-11663-00017EBCAE	3697	Creature-0-4216-409-11641-11663-0001FEBCAE	7956	Creature-0-4216-409-11641-11664-00007EBCAE	5183	Creature-0-4216-409-11641-11664-0000FEBCAE	2336	Creature-0-4216-409-11641-11664-0001FEBCAE	8933", -- [760]
+			"<16:18:13> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:13824::::::::52:70:::1:6657:1:28:1004:::::|h[Recurve Long Bow]|h|r	0	1	Creature-0-4216-409-11641-11663-0000FEBCAE	1", -- [761]
+			"<16:18:13> <DEBUG>		Event:	ENCOUNTER_END	671	Majordomo Executus	9	40	1", -- [762]
+			"<16:18:13> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [763]
+			"<16:18:13> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:13824::::::::52:70:::1:6657:1:28:1004:::::|h[Recurve Long Bow]|h|r	0", -- [764]
+			"<16:18:13> <DEBUG>		Event:	LOOT_CLOSED", -- [765]
+			"<16:18:13> <DEBUG>		Event:	LOOT_CLOSED", -- [766]
+			"<16:18:13> <Comm>		^1^Sl^T^N1^S11663^t^^	WHISPER	Avisar-Dalaran", -- [767]
+			"<16:18:13> <Comm>		^1^Sl^T^N1^S11663^t^^	WHISPER	Avisar-Dalaran", -- [768]
+			"<16:18:23> <DEBUG>		Event:	LOOT_READY	true", -- [769]
+			"<16:18:23> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	GameObject-0-4216-409-11641-179703-00007EBD05	19637", -- [770]
+			"<16:18:23> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:18810::::::::52:70::::1:28:1004:::::|h[Wild Growth Spaulders]|h|r	4	1	GameObject-0-4216-409-11641-179703-00007EBD05	1", -- [771]
+			"<16:18:23> <DEBUG>		Adding to self.lootSlotInfo	3	|cffa335ee|Hitem:18806::::::::52:70::::1:28:1004:::::|h[Core Forged Greaves]|h|r	4	1	GameObject-0-4216-409-11641-179703-00007EBD05	1", -- [772]
+			"<16:18:23> <DEBUG>		Event:	LOOT_READY	true", -- [773]
+			"<16:18:23> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	GameObject-0-4216-409-11641-179703-00007EBD05	19637", -- [774]
+			"<16:18:23> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:18810::::::::52:70::::1:28:1004:::::|h[Wild Growth Spaulders]|h|r	4	1	GameObject-0-4216-409-11641-179703-00007EBD05	1", -- [775]
+			"<16:18:23> <DEBUG>		Adding to self.lootSlotInfo	3	|cffa335ee|Hitem:18806::::::::52:70::::1:28:1004:::::|h[Core Forged Greaves]|h|r	4	1	GameObject-0-4216-409-11641-179703-00007EBD05	1", -- [776]
+			"<16:18:24> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [777]
+			"<16:18:24> <DEBUG>		OnLootSlotCleared()	2	|cffa335ee|Hitem:18810::::::::52:70::::1:28:1004:::::|h[Wild Growth Spaulders]|h|r	4", -- [778]
+			"<16:18:24> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	671	18810	|cffa335ee|Hitem:18810::::::::52:70::::1:28:1004:::::|h[Wild Growth Spaulders]|h|r	1	Avisar	PALADIN", -- [779]
+			"<16:18:24> <DEBUG>		OnLootSlotCleared()	3	|cffa335ee|Hitem:18806::::::::52:70::::1:28:1004:::::|h[Core Forged Greaves]|h|r	4", -- [780]
+			"<16:18:24> <DEBUG>		Event:	LOOT_CLOSED", -- [781]
+			"<16:18:24> <DEBUG>		Event:	LOOT_CLOSED", -- [782]
+			"<16:18:24> <Comm>		^1^Sl^T^N1^S179703^t^^	WHISPER	Avisar-Dalaran", -- [783]
+			"<16:18:24> <Comm>		^1^Sl^T^N1^S179703^t^^	WHISPER	Avisar-Dalaran", -- [784]
+			"<16:18:25> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	671	18806	|cffa335ee|Hitem:18806::::::::52:70::::1:28:1004:::::|h[Core Forged Greaves]|h|r	1	Avisar	PALADIN", -- [785]
+			"<16:18:26> <DEBUG>		Storage:New	|cffa335ee|Hitem:18810::::::::52:70::::1:28:1004:::::|h[Wild Growth Spaulders]|h|r	temp", -- [786]
+			"<16:18:26> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:18810::::::::52:70::::1:28:1004:::::||h[Wild Growth Spaulders]||h||r	5", -- [787]
+			"<16:18:26> <DEBUG>		Found item at	1	17", -- [788]
+			"<16:18:26> <DEBUG>		Found:	1	17	0", -- [789]
+			"<16:18:26> <DEBUG>		Storage:New	|cffa335ee|Hitem:18806::::::::52:70::::1:28:1004:::::|h[Core Forged Greaves]|h|r	temp", -- [790]
+			"<16:18:26> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:18806::::::::52:70::::1:28:1004:::::||h[Core Forged Greaves]||h||r	5", -- [791]
+			"<16:18:26> <DEBUG>		Found item at	1	18", -- [792]
+			"<16:18:26> <DEBUG>		Found:	1	18	0", -- [793]
+			"<16:18:27> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:18810::::::::52:70::::1:28:1004:::::||h[Wild Growth Spaulders]||h||r	5", -- [794]
+			"<16:18:27> <DEBUG>		Found item at	1	17", -- [795]
+			"<16:18:27> <DEBUG>		Found:	1	17	0", -- [796]
+			"<16:18:27> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:18806::::::::52:70::::1:28:1004:::::||h[Core Forged Greaves]||h||r	5", -- [797]
+			"<16:18:27> <DEBUG>		Found item at	1	18", -- [798]
+			"<16:18:27> <DEBUG>		Found:	1	18	0", -- [799]
+			"<16:18:27> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:18810::::::::52:70::::1:28:1004:::::|h[Wild~`Growth~`Spaulders]|h|r^N2^S179703^t^^	WHISPER	Avisar-Dalaran", -- [800]
+			"<16:18:27> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:18806::::::::52:70::::1:28:1004:::::|h[Core~`Forged~`Greaves]|h|r^N2^S179703^t^^	WHISPER	Avisar-Dalaran", -- [801]
+			"<16:21:32> <DEBUG>		Event:	LOOT_READY	true", -- [802]
+			"<16:21:33> <DEBUG>		Event:	LOOT_READY	true", -- [803]
+			"<16:21:33> <DEBUG>		Event:	LOOT_CLOSED", -- [804]
+			"<16:21:33> <DEBUG>		Event:	LOOT_CLOSED", -- [805]
+			"<16:22:24> <DEBUG>		Event:	ENCOUNTER_START	672	Ragnaros	9	40", -- [806]
+			"<16:22:24> <INFO>		UpdatePlayersData()", -- [807]
+			"<16:22:27> <DEBUG>		Event:	ENCOUNTER_END	672	Ragnaros	9	40	1", -- [808]
+			"<16:22:27> <DEBUG>		Event:	LOOT_READY	true", -- [809]
+			"<16:22:27> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4216-409-11641-11502-00007EBDCB	11721", -- [810]
+			"<16:22:27> <DEBUG>		Adding to self.lootSlotInfo	3	|cffa335ee|Hitem:16930::::::::52:70::::1:28:1004:::::|h[Nemesis Leggings]|h|r	4	1	Creature-0-4216-409-11641-11502-00007EBDCB	1", -- [811]
+			"<16:22:27> <DEBUG>		Adding to self.lootSlotInfo	4	|cff0070dd|Hitem:13091::::::::52:70:::1:6658:1:28:1004:::::|h[Medallion of Grand Marshal Morris]|h|r	3	1	Creature-0-4216-409-11641-11502-00007EBDCB	1", -- [812]
+			"<16:22:27> <DEBUG>		Adding to self.lootSlotInfo	5	|cffa335ee|Hitem:16915::::::::52:70::::1:28:1004:::::|h[Netherwind Pants]|h|r	4	1	Creature-0-4216-409-11641-11502-00007EBDCB	1", -- [813]
+			"<16:22:27> <DEBUG>		Adding to self.lootSlotInfo	6	|cffa335ee|Hitem:16946::::::::52:70::::1:28:1004:::::|h[Legplates of Ten Storms]|h|r	4	1	Creature-0-4216-409-11641-11502-00007EBDCB	1", -- [814]
+			"<16:22:27> <DEBUG>		Adding to self.lootSlotInfo	7	|cff0070dd|Hitem:13111::::::::52:70:::1:6658:1:28:1004:::::|h[Sandals of the Insurgent]|h|r	3	1	Creature-0-4216-409-11641-11502-00007EBDCB	1", -- [815]
+			"<16:22:27> <DEBUG>		Adding to self.lootSlotInfo	8	|cffa335ee|Hitem:16901::::::::52:70::::1:28:1004:::::|h[Stormrage Legguards]|h|r	4	1	Creature-0-4216-409-11641-11502-00007EBDCB	1", -- [816]
+			"<16:22:27> <DEBUG>		Event:	LOOT_READY	true", -- [817]
+			"<16:22:27> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4216-409-11641-11502-00007EBDCB	11721", -- [818]
+			"<16:22:27> <DEBUG>		Adding to self.lootSlotInfo	3	|cffa335ee|Hitem:16930::::::::52:70::::1:28:1004:::::|h[Nemesis Leggings]|h|r	4	1	Creature-0-4216-409-11641-11502-00007EBDCB	1", -- [819]
+			"<16:22:27> <DEBUG>		Adding to self.lootSlotInfo	4	|cff0070dd|Hitem:13091::::::::52:70:::1:6658:1:28:1004:::::|h[Medallion of Grand Marshal Morris]|h|r	3	1	Creature-0-4216-409-11641-11502-00007EBDCB	1", -- [820]
+			"<16:22:27> <DEBUG>		Adding to self.lootSlotInfo	5	|cffa335ee|Hitem:16915::::::::52:70::::1:28:1004:::::|h[Netherwind Pants]|h|r	4	1	Creature-0-4216-409-11641-11502-00007EBDCB	1", -- [821]
+			"<16:22:27> <DEBUG>		Adding to self.lootSlotInfo	6	|cffa335ee|Hitem:16946::::::::52:70::::1:28:1004:::::|h[Legplates of Ten Storms]|h|r	4	1	Creature-0-4216-409-11641-11502-00007EBDCB	1", -- [822]
+			"<16:22:27> <DEBUG>		Adding to self.lootSlotInfo	7	|cff0070dd|Hitem:13111::::::::52:70:::1:6658:1:28:1004:::::|h[Sandals of the Insurgent]|h|r	3	1	Creature-0-4216-409-11641-11502-00007EBDCB	1", -- [823]
+			"<16:22:27> <DEBUG>		Adding to self.lootSlotInfo	8	|cffa335ee|Hitem:16901::::::::52:70::::1:28:1004:::::|h[Stormrage Legguards]|h|r	4	1	Creature-0-4216-409-11641-11502-00007EBDCB	1", -- [824]
+			"<16:22:27> <DEBUG>		Adding to self.lootSlotInfo	9	|cffa335ee|Hitem:16901::::::::52:70::::1:28:1004:::::|h[Stormrage Legguards]|h|r	4	1	Creature-0-4216-409-11641-11502-00007EBDCB	1", -- [825]
+			"<16:22:28> <DEBUG>		Event:	LOOT_READY	true", -- [826]
+			"<16:22:28> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4216-409-11641-11502-00007EBDCB	11721", -- [827]
+			"<16:22:28> <DEBUG>		Adding to self.lootSlotInfo	3	|cffa335ee|Hitem:16930::::::::52:70::::1:28:1004:::::|h[Nemesis Leggings]|h|r	4	1	Creature-0-4216-409-11641-11502-00007EBDCB	1", -- [828]
+			"<16:22:28> <DEBUG>		Adding to self.lootSlotInfo	4	|cff0070dd|Hitem:13091::::::::52:70:::1:6658:1:28:1004:::::|h[Medallion of Grand Marshal Morris]|h|r	3	1	Creature-0-4216-409-11641-11502-00007EBDCB	1", -- [829]
+			"<16:22:28> <DEBUG>		Adding to self.lootSlotInfo	5	|cffa335ee|Hitem:16915::::::::52:70::::1:28:1004:::::|h[Netherwind Pants]|h|r	4	1	Creature-0-4216-409-11641-11502-00007EBDCB	1", -- [830]
+			"<16:22:28> <DEBUG>		Adding to self.lootSlotInfo	6	|cffa335ee|Hitem:16946::::::::52:70::::1:28:1004:::::|h[Legplates of Ten Storms]|h|r	4	1	Creature-0-4216-409-11641-11502-00007EBDCB	1", -- [831]
+			"<16:22:28> <DEBUG>		Adding to self.lootSlotInfo	7	|cff0070dd|Hitem:13111::::::::52:70:::1:6658:1:28:1004:::::|h[Sandals of the Insurgent]|h|r	3	1	Creature-0-4216-409-11641-11502-00007EBDCB	1", -- [832]
+			"<16:22:28> <DEBUG>		Adding to self.lootSlotInfo	8	|cffa335ee|Hitem:16901::::::::52:70::::1:28:1004:::::|h[Stormrage Legguards]|h|r	4	1	Creature-0-4216-409-11641-11502-00007EBDCB	1", -- [833]
+			"<16:22:28> <DEBUG>		Adding to self.lootSlotInfo	9	|cffa335ee|Hitem:16901::::::::52:70::::1:28:1004:::::|h[Stormrage Legguards]|h|r	4	1	Creature-0-4216-409-11641-11502-00007EBDCB	1", -- [834]
+			"<16:22:28> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [835]
+			"<16:22:28> <DEBUG>		OnLootSlotCleared()	3	|cffa335ee|Hitem:16930::::::::52:70::::1:28:1004:::::|h[Nemesis Leggings]|h|r	4", -- [836]
+			"<16:22:28> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	672	16930	|cffa335ee|Hitem:16930::::::::52:70::::1:28:1004:::::|h[Nemesis Leggings]|h|r	1	Avisar	PALADIN", -- [837]
+			"<16:22:29> <DEBUG>		OnLootSlotCleared()	4	|cff0070dd|Hitem:13091::::::::52:70:::1:6658:1:28:1004:::::|h[Medallion of Grand Marshal Morris]|h|r	3", -- [838]
+			"<16:22:29> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	672	13091	|cff0070dd|Hitem:13091::::::::52:70:::1:6658:2:28:1004:9:30:::::|h[Medallion of Grand Marshal Morris]|h|r	1	Avisar	PALADIN", -- [839]
+			"<16:22:29> <DEBUG>		OnLootSlotCleared()	5	|cffa335ee|Hitem:16915::::::::52:70::::1:28:1004:::::|h[Netherwind Pants]|h|r	4", -- [840]
+			"<16:22:29> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	672	16915	|cffa335ee|Hitem:16915::::::::52:70::::1:28:1004:::::|h[Netherwind Pants]|h|r	1	Avisar	PALADIN", -- [841]
+			"<16:22:29> <DEBUG>		OnLootSlotCleared()	6	|cffa335ee|Hitem:16946::::::::52:70::::1:28:1004:::::|h[Legplates of Ten Storms]|h|r	4", -- [842]
+			"<16:22:29> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	672	16946	|cffa335ee|Hitem:16946::::::::52:70::::1:28:1004:::::|h[Legplates of Ten Storms]|h|r	1	Avisar	PALADIN", -- [843]
+			"<16:22:29> <DEBUG>		OnLootSlotCleared()	7	|cff0070dd|Hitem:13111::::::::52:70:::1:6658:1:28:1004:::::|h[Sandals of the Insurgent]|h|r	3", -- [844]
+			"<16:22:29> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	672	13111	|cff0070dd|Hitem:13111::::::::52:70:::1:6658:2:28:1004:9:30:::::|h[Sandals of the Insurgent]|h|r	1	Avisar	PALADIN", -- [845]
+			"<16:22:29> <DEBUG>		OnLootSlotCleared()	8	|cffa335ee|Hitem:16901::::::::52:70::::1:28:1004:::::|h[Stormrage Legguards]|h|r	4", -- [846]
+			"<16:22:29> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	672	16901	|cffa335ee|Hitem:16901::::::::52:70::::1:28:1004:::::|h[Stormrage Legguards]|h|r	1	Avisar	PALADIN", -- [847]
+			"<16:22:29> <DEBUG>		OnLootSlotCleared()	9	|cffa335ee|Hitem:16901::::::::52:70::::1:28:1004:::::|h[Stormrage Legguards]|h|r	4", -- [848]
+			"<16:22:29> <DEBUG>		Event:	LOOT_CLOSED", -- [849]
+			"<16:22:29> <DEBUG>		Event:	LOOT_CLOSED", -- [850]
+			"<16:22:29> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	672	16901	|cffa335ee|Hitem:16901::::::::52:70::::1:28:1004:::::|h[Stormrage Legguards]|h|r	1	Avisar	PALADIN", -- [851]
+			"<16:22:30> <Comm>		^1^Sl^T^N1^S11502^t^^	WHISPER	Avisar-Dalaran", -- [852]
+			"<16:22:30> <Comm>		^1^Sl^T^N1^S11502^t^^	WHISPER	Avisar-Dalaran", -- [853]
+			"<16:22:30> <DEBUG>		Storage:New	|cffa335ee|Hitem:16930::::::::52:70::::1:28:1004:::::|h[Nemesis Leggings]|h|r	temp", -- [854]
+			"<16:22:30> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16930::::::::52:70::::1:28:1004:::::||h[Nemesis Leggings]||h||r	5", -- [855]
+			"<16:22:30> <DEBUG>		Found item at	1	17", -- [856]
+			"<16:22:30> <DEBUG>		Found:	1	17	0", -- [857]
+			"<16:22:31> <DEBUG>		Storage:New	|cff0070dd|Hitem:13091::::::::52:70:::1:6658:1:28:1004:::::|h[Medallion of Grand Marshal Morris]|h|r	temp", -- [858]
+			"<16:22:31> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:13091::::::::52:70:::1:6658:1:28:1004:::::||h[Medallion of Grand Marshal Morris]||h||r	5", -- [859]
+			"<16:22:31> <DEBUG>		Found:	nil	nil	nil", -- [860]
+			"<16:22:31> <DEBUG>		Storage:New	|cffa335ee|Hitem:16915::::::::52:70::::1:28:1004:::::|h[Netherwind Pants]|h|r	temp", -- [861]
+			"<16:22:31> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16915::::::::52:70::::1:28:1004:::::||h[Netherwind Pants]||h||r	5", -- [862]
+			"<16:22:31> <DEBUG>		Found item at	1	19", -- [863]
+			"<16:22:31> <DEBUG>		Found:	1	19	0", -- [864]
+			"<16:22:31> <DEBUG>		Storage:New	|cffa335ee|Hitem:16946::::::::52:70::::1:28:1004:::::|h[Legplates of Ten Storms]|h|r	temp", -- [865]
+			"<16:22:31> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16946::::::::52:70::::1:28:1004:::::||h[Legplates of Ten Storms]||h||r	5", -- [866]
+			"<16:22:31> <DEBUG>		Found item at	1	20", -- [867]
+			"<16:22:31> <DEBUG>		Found:	1	20	0", -- [868]
+			"<16:22:31> <DEBUG>		Storage:New	|cff0070dd|Hitem:13111::::::::52:70:::1:6658:1:28:1004:::::|h[Sandals of the Insurgent]|h|r	temp", -- [869]
+			"<16:22:31> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:13111::::::::52:70:::1:6658:1:28:1004:::::||h[Sandals of the Insurgent]||h||r	5", -- [870]
+			"<16:22:31> <DEBUG>		Found:	nil	nil	nil", -- [871]
+			"<16:22:31> <DEBUG>		Storage:New	|cffa335ee|Hitem:16901::::::::52:70::::1:28:1004:::::|h[Stormrage Legguards]|h|r	temp", -- [872]
+			"<16:22:31> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16901::::::::52:70::::1:28:1004:::::||h[Stormrage Legguards]||h||r	5", -- [873]
+			"<16:22:31> <DEBUG>		Found item at	1	22", -- [874]
+			"<16:22:31> <DEBUG>		Found item at	1	23", -- [875]
+			"<16:22:31> <DEBUG>		Found:	1	23	0", -- [876]
+			"<16:22:31> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16930::::::::52:70::::1:28:1004:::::||h[Nemesis Leggings]||h||r	5", -- [877]
+			"<16:22:31> <DEBUG>		Found item at	1	17", -- [878]
+			"<16:22:31> <DEBUG>		Found:	1	17	0", -- [879]
+			"<16:22:31> <DEBUG>		Storage:New	|cffa335ee|Hitem:16901::::::::52:70::::1:28:1004:::::|h[Stormrage Legguards]|h|r	temp", -- [880]
+			"<16:22:31> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16901::::::::52:70::::1:28:1004:::::||h[Stormrage Legguards]||h||r	5", -- [881]
+			"<16:22:31> <DEBUG>		Found item at	1	22", -- [882]
+			"<16:22:31> <DEBUG>		Found item at	1	23", -- [883]
+			"<16:22:31> <DEBUG>		Found:	1	23	0", -- [884]
+			"<16:22:31> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:16930::::::::52:70::::1:28:1004:::::|h[Nemesis~`Leggings]|h|r^N2^S11502^t^^	WHISPER	Avisar-Dalaran", -- [885]
+			"<16:22:32> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:13091::::::::52:70:::1:6658:1:28:1004:::::||h[Medallion of Grand Marshal Morris]||h||r	5", -- [886]
+			"<16:22:32> <DEBUG>		Found:	nil	nil	nil", -- [887]
+			"<16:22:32> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16915::::::::52:70::::1:28:1004:::::||h[Netherwind Pants]||h||r	5", -- [888]
+			"<16:22:32> <DEBUG>		Found item at	1	19", -- [889]
+			"<16:22:32> <DEBUG>		Found:	1	19	0", -- [890]
+			"<16:22:32> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16946::::::::52:70::::1:28:1004:::::||h[Legplates of Ten Storms]||h||r	5", -- [891]
+			"<16:22:32> <DEBUG>		Found item at	1	20", -- [892]
+			"<16:22:32> <DEBUG>		Found:	1	20	0", -- [893]
+			"<16:22:32> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:16915::::::::52:70::::1:28:1004:::::|h[Netherwind~`Pants]|h|r^N2^S11502^t^^	WHISPER	Avisar-Dalaran", -- [894]
+			"<16:22:32> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:16946::::::::52:70::::1:28:1004:::::|h[Legplates~`of~`Ten~`Storms]|h|r^N2^S11502^t^^	WHISPER	Avisar-Dalaran", -- [895]
+			"<16:22:32> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:13111::::::::52:70:::1:6658:1:28:1004:::::||h[Sandals of the Insurgent]||h||r	5", -- [896]
+			"<16:22:32> <DEBUG>		Found:	nil	nil	nil", -- [897]
+			"<16:22:32> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16901::::::::52:70::::1:28:1004:::::||h[Stormrage Legguards]||h||r	5", -- [898]
+			"<16:22:32> <DEBUG>		Found item at	1	22", -- [899]
+			"<16:22:32> <DEBUG>		Found item at	1	23", -- [900]
+			"<16:22:32> <DEBUG>		Found:	1	23	0", -- [901]
+			"<16:22:32> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16901::::::::52:70::::1:28:1004:::::||h[Stormrage Legguards]||h||r	5", -- [902]
+			"<16:22:32> <DEBUG>		Found item at	1	22", -- [903]
+			"<16:22:32> <DEBUG>		Found item at	1	23", -- [904]
+			"<16:22:32> <DEBUG>		Found:	1	23	0", -- [905]
+			"<16:22:32> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:16901::::::::52:70::::1:28:1004:::::|h[Stormrage~`Legguards]|h|r^N2^S11502^t^^	WHISPER	Avisar-Dalaran", -- [906]
+			"<16:22:32> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:16901::::::::52:70::::1:28:1004:::::|h[Stormrage~`Legguards]|h|r^N2^S11502^t^^	WHISPER	Avisar-Dalaran", -- [907]
+			"<16:22:33> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:13091::::::::52:70:::1:6658:1:28:1004:::::||h[Medallion of Grand Marshal Morris]||h||r	5", -- [908]
+			"<16:22:33> <DEBUG>		Found:	nil	nil	nil", -- [909]
+			"<16:22:33> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:13111::::::::52:70:::1:6658:1:28:1004:::::||h[Sandals of the Insurgent]||h||r	5", -- [910]
+			"<16:22:33> <DEBUG>		Found:	nil	nil	nil", -- [911]
+			"<16:22:34> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:13091::::::::52:70:::1:6658:1:28:1004:::::||h[Medallion of Grand Marshal Morris]||h||r	5", -- [912]
+			"<16:22:34> <DEBUG>		Found:	nil	nil	nil", -- [913]
+			"<16:22:34> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:13091::::::::52:70:::1:6658:1:28:1004:::::|h[Medallion of Grand Marshal Morris]|h|r not found in bags", -- [914]
+			"<16:22:34> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:13111::::::::52:70:::1:6658:1:28:1004:::::||h[Sandals of the Insurgent]||h||r	5", -- [915]
+			"<16:22:34> <DEBUG>		Found:	nil	nil	nil", -- [916]
+			"<16:22:34> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:13111::::::::52:70:::1:6658:1:28:1004:::::|h[Sandals of the Insurgent]|h|r not found in bags", -- [917]
+			"<16:22:50> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [918]
+			"<16:22:50> <INFO>		UpdatePlayersData()", -- [919]
+			"<16:22:53> <DEBUG>		GetML()", -- [920]
+			"<16:27:25> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Blackwing Lair (40 Player)	325954	0	0", -- [921]
+			"<16:27:25> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [922]
+			"<16:27:25> <INFO>		UpdatePlayersData()", -- [923]
+			"<16:27:27> <DEBUG>		GetML()", -- [924]
+			"<16:27:41> <DEBUG>		Event:	ENCOUNTER_START	610	Razorgore the Untamed	9	40", -- [925]
+			"<16:27:41> <INFO>		UpdatePlayersData()", -- [926]
+			"<16:27:46> <DEBUG>		Event:	ENCOUNTER_END	610	Razorgore the Untamed	9	40	0", -- [927]
+			"<16:28:36> <DEBUG>		Event:	ENCOUNTER_START	610	Razorgore the Untamed	9	40", -- [928]
+			"<16:28:36> <INFO>		UpdatePlayersData()", -- [929]
+			"<16:28:41> <DEBUG>		Event:	ENCOUNTER_END	610	Razorgore the Untamed	9	40	1", -- [930]
+			"<16:28:42> <DEBUG>		Event:	LOOT_READY	true", -- [931]
+			"<16:28:42> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12435-00007EBF2C	48663", -- [932]
+			"<16:28:42> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:19335::::::::52:70::::1:28:1005:::::|h[Spineshatter]|h|r	4	1	Creature-0-3778-469-18067-12435-00007EBF2C	1", -- [933]
+			"<16:28:42> <DEBUG>		Adding to self.lootSlotInfo	3	|cffa335ee|Hitem:16935::::::::52:70::::1:28:1005:::::|h[Dragonstalker's Bracers]|h|r	4	1	Creature-0-3778-469-18067-12435-00007EBF2C	1", -- [934]
+			"<16:28:42> <DEBUG>		Adding to self.lootSlotInfo	4	|cffa335ee|Hitem:16926::::::::52:70::::1:28:1005:::::|h[Bindings of Transcendence]|h|r	4	1	Creature-0-3778-469-18067-12435-00007EBF2C	1", -- [935]
+			"<16:28:42> <DEBUG>		Event:	LOOT_READY	true", -- [936]
+			"<16:28:42> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12435-00007EBF2C	48663", -- [937]
+			"<16:28:42> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:19335::::::::52:70::::1:28:1005:::::|h[Spineshatter]|h|r	4	1	Creature-0-3778-469-18067-12435-00007EBF2C	1", -- [938]
+			"<16:28:42> <DEBUG>		Adding to self.lootSlotInfo	3	|cffa335ee|Hitem:16935::::::::52:70::::1:28:1005:::::|h[Dragonstalker's Bracers]|h|r	4	1	Creature-0-3778-469-18067-12435-00007EBF2C	1", -- [939]
+			"<16:28:42> <DEBUG>		Adding to self.lootSlotInfo	4	|cffa335ee|Hitem:16926::::::::52:70::::1:28:1005:::::|h[Bindings of Transcendence]|h|r	4	1	Creature-0-3778-469-18067-12435-00007EBF2C	1", -- [940]
+			"<16:28:42> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [941]
+			"<16:28:43> <DEBUG>		OnLootSlotCleared()	2	|cffa335ee|Hitem:19335::::::::52:70::::1:28:1005:::::|h[Spineshatter]|h|r	4", -- [942]
+			"<16:28:43> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	610	19335	|cffa335ee|Hitem:19335::::::::52:70::::1:28:1005:::::|h[Spineshatter]|h|r	1	Avisar	PALADIN", -- [943]
+			"<16:28:43> <DEBUG>		OnLootSlotCleared()	3	|cffa335ee|Hitem:16935::::::::52:70::::1:28:1005:::::|h[Dragonstalker's Bracers]|h|r	4", -- [944]
+			"<16:28:43> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	610	16935	|cffa335ee|Hitem:16935::::::::52:70::::1:28:1005:::::|h[Dragonstalker's Bracers]|h|r	1	Avisar	PALADIN", -- [945]
+			"<16:28:43> <DEBUG>		OnLootSlotCleared()	4	|cffa335ee|Hitem:16926::::::::52:70::::1:28:1005:::::|h[Bindings of Transcendence]|h|r	4", -- [946]
+			"<16:28:43> <DEBUG>		Event:	LOOT_CLOSED", -- [947]
+			"<16:28:43> <DEBUG>		Event:	LOOT_CLOSED", -- [948]
+			"<16:28:43> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	610	16926	|cffa335ee|Hitem:16926::::::::52:70::::1:28:1005:::::|h[Bindings of Transcendence]|h|r	1	Avisar	PALADIN", -- [949]
+			"<16:28:43> <Comm>		^1^Sl^T^N1^S12435^t^^	WHISPER	Avisar-Dalaran", -- [950]
+			"<16:28:43> <Comm>		^1^Sl^T^N1^S12435^t^^	WHISPER	Avisar-Dalaran", -- [951]
+			"<16:28:45> <DEBUG>		Storage:New	|cffa335ee|Hitem:19335::::::::52:70::::1:28:1005:::::|h[Spineshatter]|h|r	temp", -- [952]
+			"<16:28:45> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19335::::::::52:70::::1:28:1005:::::||h[Spineshatter]||h||r	5", -- [953]
+			"<16:28:45> <DEBUG>		Found item at	0	13", -- [954]
+			"<16:28:45> <DEBUG>		Found:	0	13	0", -- [955]
+			"<16:28:45> <DEBUG>		Storage:New	|cffa335ee|Hitem:16935::::::::52:70::::1:28:1005:::::|h[Dragonstalker's Bracers]|h|r	temp", -- [956]
+			"<16:28:45> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16935::::::::52:70::::1:28:1005:::::||h[Dragonstalker's Bracers]||h||r	5", -- [957]
+			"<16:28:45> <DEBUG>		Found item at	0	14", -- [958]
+			"<16:28:45> <DEBUG>		Found:	0	14	0", -- [959]
+			"<16:28:45> <DEBUG>		Storage:New	|cffa335ee|Hitem:16926::::::::52:70::::1:28:1005:::::|h[Bindings of Transcendence]|h|r	temp", -- [960]
+			"<16:28:45> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16926::::::::52:70::::1:28:1005:::::||h[Bindings of Transcendence]||h||r	5", -- [961]
+			"<16:28:45> <DEBUG>		Found item at	0	15", -- [962]
+			"<16:28:45> <DEBUG>		Found:	0	15	0", -- [963]
+			"<16:28:46> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19335::::::::52:70::::1:28:1005:::::||h[Spineshatter]||h||r	5", -- [964]
+			"<16:28:46> <DEBUG>		Found item at	0	13", -- [965]
+			"<16:28:46> <DEBUG>		Found:	0	13	0", -- [966]
+			"<16:28:46> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16935::::::::52:70::::1:28:1005:::::||h[Dragonstalker's Bracers]||h||r	5", -- [967]
+			"<16:28:46> <DEBUG>		Found item at	0	14", -- [968]
+			"<16:28:46> <DEBUG>		Found:	0	14	0", -- [969]
+			"<16:28:46> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:19335::::::::52:70::::1:28:1005:::::|h[Spineshatter]|h|r^N2^S12435^t^^	WHISPER	Avisar-Dalaran", -- [970]
+			"<16:28:46> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:16935::::::::52:70::::1:28:1005:::::|h[Dragonstalker's~`Bracers]|h|r^N2^S12435^t^^	WHISPER	Avisar-Dalaran", -- [971]
+			"<16:28:46> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16926::::::::52:70::::1:28:1005:::::||h[Bindings of Transcendence]||h||r	5", -- [972]
+			"<16:28:46> <DEBUG>		Found item at	0	15", -- [973]
+			"<16:28:46> <DEBUG>		Found:	0	15	0", -- [974]
+			"<16:28:46> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:16926::::::::52:70::::1:28:1005:::::|h[Bindings~`of~`Transcendence]|h|r^N2^S12435^t^^	WHISPER	Avisar-Dalaran", -- [975]
+			"<16:29:01> <DEBUG>		Event:	LOOT_READY	true", -- [976]
+			"<16:29:01> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-13996-0002FEBF7A	8783	Creature-0-3778-469-18067-13996-0001FEBF7A	6825	Creature-0-3778-469-18067-13996-00027EBF7A	1590", -- [977]
+			"<16:29:01> <DEBUG>		Event:	LOOT_READY	true", -- [978]
+			"<16:29:01> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-13996-0002FEBF7A	8783	Creature-0-3778-469-18067-13996-0001FEBF7A	6825	Creature-0-3778-469-18067-13996-00027EBF7A	1590", -- [979]
+			"<16:29:01> <DEBUG>		Event:	LOOT_READY	true", -- [980]
+			"<16:29:01> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-13996-0002FEBF7A	8783	Creature-0-3778-469-18067-13996-0001FEBF7A	6825	Creature-0-3778-469-18067-13996-00027EBF7A	1590", -- [981]
+			"<16:29:01> <DEBUG>		Event:	LOOT_CLOSED", -- [982]
+			"<16:29:01> <Comm>		^1^Sl^T^N1^S13996^t^^	WHISPER	Avisar-Dalaran", -- [983]
+			"<16:29:50> <DEBUG>		Event:	ENCOUNTER_START	611	Vaelastrasz the Corrupt	9	40", -- [984]
+			"<16:29:50> <INFO>		UpdatePlayersData()", -- [985]
+			"<16:29:52> <DEBUG>		Event:	ENCOUNTER_END	611	Vaelastrasz the Corrupt	9	40	1", -- [986]
+			"<16:29:53> <DEBUG>		Event:	LOOT_READY	true", -- [987]
+			"<16:29:53> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-13020-00007EBF2C	54623", -- [988]
+			"<16:29:53> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:16952::::::::52:70::::1:28:1005:::::|h[Judgment Belt]|h|r	4	1	Creature-0-3778-469-18067-13020-00007EBF2C	1", -- [989]
+			"<16:29:53> <DEBUG>		Adding to self.lootSlotInfo	3	|cffa335ee|Hitem:16952::::::::52:70::::1:28:1005:::::|h[Judgment Belt]|h|r	4	1	Creature-0-3778-469-18067-13020-00007EBF2C	1", -- [990]
+			"<16:29:53> <DEBUG>		Adding to self.lootSlotInfo	4	|cffa335ee|Hitem:19340::::::::52:70::::1:28:1005:::::|h[Rune of Metamorphosis]|h|r	4	1	Creature-0-3778-469-18067-13020-00007EBF2C	1", -- [991]
+			"<16:29:53> <DEBUG>		Event:	LOOT_READY	true", -- [992]
+			"<16:29:53> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-13020-00007EBF2C	54623", -- [993]
+			"<16:29:53> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:16952::::::::52:70::::1:28:1005:::::|h[Judgment Belt]|h|r	4	1	Creature-0-3778-469-18067-13020-00007EBF2C	1", -- [994]
+			"<16:29:53> <DEBUG>		Adding to self.lootSlotInfo	3	|cffa335ee|Hitem:16952::::::::52:70::::1:28:1005:::::|h[Judgment Belt]|h|r	4	1	Creature-0-3778-469-18067-13020-00007EBF2C	1", -- [995]
+			"<16:29:53> <DEBUG>		Adding to self.lootSlotInfo	4	|cffa335ee|Hitem:19340::::::::52:70::::1:28:1005:::::|h[Rune of Metamorphosis]|h|r	4	1	Creature-0-3778-469-18067-13020-00007EBF2C	1", -- [996]
+			"<16:29:54> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [997]
+			"<16:29:54> <DEBUG>		OnLootSlotCleared()	2	|cffa335ee|Hitem:16952::::::::52:70::::1:28:1005:::::|h[Judgment Belt]|h|r	4", -- [998]
+			"<16:29:54> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	611	16952	|cffa335ee|Hitem:16952::::::::52:70::::1:28:1005:::::|h[Judgment Belt]|h|r	1	Avisar	PALADIN", -- [999]
+			"<16:29:54> <DEBUG>		OnLootSlotCleared()	3	|cffa335ee|Hitem:16952::::::::52:70::::1:28:1005:::::|h[Judgment Belt]|h|r	4", -- [1000]
+			"<16:29:54> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	611	16952	|cffa335ee|Hitem:16952::::::::52:70::::1:28:1005:::::|h[Judgment Belt]|h|r	1	Avisar	PALADIN", -- [1001]
+			"<16:29:54> <DEBUG>		OnLootSlotCleared()	4	|cffa335ee|Hitem:19340::::::::52:70::::1:28:1005:::::|h[Rune of Metamorphosis]|h|r	4", -- [1002]
+			"<16:29:54> <DEBUG>		Event:	LOOT_CLOSED", -- [1003]
+			"<16:29:54> <DEBUG>		Event:	LOOT_CLOSED", -- [1004]
+			"<16:29:54> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	611	19340	|cffa335ee|Hitem:19340::::::::52:70::::1:28:1005:::::|h[Rune of Metamorphosis]|h|r	1	Avisar	PALADIN", -- [1005]
+			"<16:29:54> <Comm>		^1^Sl^T^N1^S13020^t^^	WHISPER	Avisar-Dalaran", -- [1006]
+			"<16:29:54> <Comm>		^1^Sl^T^N1^S13020^t^^	WHISPER	Avisar-Dalaran", -- [1007]
+			"<16:29:56> <DEBUG>		Storage:New	|cffa335ee|Hitem:16952::::::::52:70::::1:28:1005:::::|h[Judgment Belt]|h|r	temp", -- [1008]
+			"<16:29:56> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16952::::::::52:70::::1:28:1005:::::||h[Judgment Belt]||h||r	5", -- [1009]
+			"<16:29:56> <DEBUG>		Found item at	0	15", -- [1010]
+			"<16:29:56> <DEBUG>		Found item at	0	16", -- [1011]
+			"<16:29:56> <DEBUG>		Found:	0	16	0", -- [1012]
+			"<16:29:56> <DEBUG>		Storage:New	|cffa335ee|Hitem:16952::::::::52:70::::1:28:1005:::::|h[Judgment Belt]|h|r	temp", -- [1013]
+			"<16:29:56> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16952::::::::52:70::::1:28:1005:::::||h[Judgment Belt]||h||r	5", -- [1014]
+			"<16:29:56> <DEBUG>		Found item at	0	15", -- [1015]
+			"<16:29:56> <DEBUG>		Found item at	0	16", -- [1016]
+			"<16:29:56> <DEBUG>		Found:	0	16	0", -- [1017]
+			"<16:29:56> <DEBUG>		Storage:New	|cffa335ee|Hitem:19340::::::::52:70::::1:28:1005:::::|h[Rune of Metamorphosis]|h|r	temp", -- [1018]
+			"<16:29:56> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19340::::::::52:70::::1:28:1005:::::||h[Rune of Metamorphosis]||h||r	5", -- [1019]
+			"<16:29:56> <DEBUG>		Found item at	0	17", -- [1020]
+			"<16:29:56> <DEBUG>		Found:	0	17	0", -- [1021]
+			"<16:29:57> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16952::::::::52:70::::1:28:1005:::::||h[Judgment Belt]||h||r	5", -- [1022]
+			"<16:29:57> <DEBUG>		Found item at	0	15", -- [1023]
+			"<16:29:57> <DEBUG>		Found item at	0	16", -- [1024]
+			"<16:29:57> <DEBUG>		Found:	0	16	0", -- [1025]
+			"<16:29:57> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16952::::::::52:70::::1:28:1005:::::||h[Judgment Belt]||h||r	5", -- [1026]
+			"<16:29:57> <DEBUG>		Found item at	0	15", -- [1027]
+			"<16:29:57> <DEBUG>		Found item at	0	16", -- [1028]
+			"<16:29:57> <DEBUG>		Found:	0	16	0", -- [1029]
+			"<16:29:57> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:16952::::::::52:70::::1:28:1005:::::|h[Judgment~`Belt]|h|r^N2^S13020^t^^	WHISPER	Avisar-Dalaran", -- [1030]
+			"<16:29:57> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:16952::::::::52:70::::1:28:1005:::::|h[Judgment~`Belt]|h|r^N2^S13020^t^^	WHISPER	Avisar-Dalaran", -- [1031]
+			"<16:29:57> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19340::::::::52:70::::1:28:1005:::::||h[Rune of Metamorphosis]||h||r	5", -- [1032]
+			"<16:29:57> <DEBUG>		Found item at	0	17", -- [1033]
+			"<16:29:57> <DEBUG>		Found:	0	17	0", -- [1034]
+			"<16:29:58> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:19340::::::::52:70::::1:28:1005:::::|h[Rune~`of~`Metamorphosis]|h|r^N2^S13020^t^^	WHISPER	Avisar-Dalaran", -- [1035]
+			"<16:30:33> <DEBUG>		Event:	LOOT_READY	true", -- [1036]
+			"<16:30:33> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12467-00007EBF2C	10202	Creature-0-3778-469-18067-12463-00007EBF2C	10887	Creature-0-3778-469-18067-12463-0000FEBF2C	8744	Creature-0-3778-469-18067-12464-00007EBF2C	2175	Creature-0-3778-469-18067-12464-0000FEBF2C	2657", -- [1037]
+			"<16:30:34> <DEBUG>		Event:	LOOT_READY	true", -- [1038]
+			"<16:30:34> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12467-00007EBF2C	10202	Creature-0-3778-469-18067-12463-00007EBF2C	10887	Creature-0-3778-469-18067-12463-0000FEBF2C	8744	Creature-0-3778-469-18067-12464-00007EBF2C	2175	Creature-0-3778-469-18067-12464-0000FEBF2C	2657", -- [1039]
+			"<16:30:34> <DEBUG>		Event:	LOOT_CLOSED", -- [1040]
+			"<16:30:34> <Comm>		^1^Sl^T^N1^S12467^t^^	WHISPER	Avisar-Dalaran", -- [1041]
+			"<16:30:36> <DEBUG>		Event:	LOOT_READY	true", -- [1042]
+			"<16:30:36> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12465-00007EBF2C	1859", -- [1043]
+			"<16:30:36> <DEBUG>		Event:	LOOT_READY	true", -- [1044]
+			"<16:30:36> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12465-00007EBF2C	1859", -- [1045]
+			"<16:30:36> <DEBUG>		Event:	LOOT_CLOSED", -- [1046]
+			"<16:30:36> <Comm>		^1^Sl^T^N1^S12465^t^^	WHISPER	Avisar-Dalaran", -- [1047]
+			"<16:30:46> <DEBUG>		Event:	LOOT_READY	true", -- [1048]
+			"<16:30:46> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12463-0001FEBF2C	8135	Creature-0-3778-469-18067-12463-00017EBF2C	7072	Creature-0-3778-469-18067-12464-00017EBF2C	2175	Creature-0-3778-469-18067-12465-0000FEBF2C	7122	Creature-0-3778-469-18067-12465-00017EBF2C	9033	Creature-0-3778-469-18067-12467-0000FEBF2C	10783", -- [1049]
+			"<16:30:46> <DEBUG>		Event:	LOOT_READY	true", -- [1050]
+			"<16:30:46> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12463-0001FEBF2C	8135	Creature-0-3778-469-18067-12463-00017EBF2C	7072	Creature-0-3778-469-18067-12464-00017EBF2C	2175	Creature-0-3778-469-18067-12465-0000FEBF2C	7122	Creature-0-3778-469-18067-12465-00017EBF2C	9033	Creature-0-3778-469-18067-12467-0000FEBF2C	10783", -- [1051]
+			"<16:30:46> <DEBUG>		Event:	LOOT_CLOSED", -- [1052]
+			"<16:30:46> <Comm>		^1^Sl^T^N1^S12463^t^^	WHISPER	Avisar-Dalaran", -- [1053]
+			"<16:31:17> <DEBUG>		Event:	LOOT_READY	true", -- [1054]
+			"<16:31:17> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12468-0000FEBF2C	9141	Creature-0-3778-469-18067-12468-0002FEBF2C	9873", -- [1055]
+			"<16:31:17> <DEBUG>		Event:	LOOT_READY	true", -- [1056]
+			"<16:31:17> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12468-0000FEBF2C	9141	Creature-0-3778-469-18067-12468-0002FEBF2C	9873", -- [1057]
+			"<16:31:17> <DEBUG>		Event:	LOOT_CLOSED", -- [1058]
+			"<16:31:17> <Comm>		^1^Sl^T^N1^S12468^t^^	WHISPER	Avisar-Dalaran", -- [1059]
+			"<16:31:34> <DEBUG>		Event:	LOOT_READY	true", -- [1060]
+			"<16:31:34> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12468-0001FEBF2C	6967	Creature-0-3778-469-18067-12468-00027EBF2C	4952", -- [1061]
+			"<16:31:34> <DEBUG>		Event:	LOOT_READY	true", -- [1062]
+			"<16:31:34> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12468-0001FEBF2C	6967	Creature-0-3778-469-18067-12468-00027EBF2C	4952", -- [1063]
+			"<16:31:34> <DEBUG>		Event:	LOOT_CLOSED", -- [1064]
+			"<16:31:35> <Comm>		^1^Sl^T^N1^S12468^t^^	WHISPER	Avisar-Dalaran", -- [1065]
+			"<16:31:48> <DEBUG>		Event:	LOOT_READY	true", -- [1066]
+			"<16:31:48> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12468-00047EBF2C	3387	Creature-0-3778-469-18067-12468-00057EBF2C	8580", -- [1067]
+			"<16:31:48> <DEBUG>		Event:	LOOT_READY	true", -- [1068]
+			"<16:31:48> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12468-00047EBF2C	3387	Creature-0-3778-469-18067-12468-00057EBF2C	8580", -- [1069]
+			"<16:31:48> <DEBUG>		Event:	LOOT_CLOSED", -- [1070]
+			"<16:31:48> <Comm>		^1^Sl^T^N1^S12468^t^^	WHISPER	Avisar-Dalaran", -- [1071]
+			"<16:32:59> <DEBUG>		Event:	LOOT_READY	true", -- [1072]
+			"<16:32:59> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12468-0003FEBF2C	4681", -- [1073]
+			"<16:33:00> <DEBUG>		Event:	LOOT_READY	true", -- [1074]
+			"<16:33:00> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12468-0003FEBF2C	4681", -- [1075]
+			"<16:33:00> <DEBUG>		Event:	LOOT_CLOSED", -- [1076]
+			"<16:33:00> <Comm>		^1^Sl^T^N1^S12468^t^^	WHISPER	Avisar-Dalaran", -- [1077]
+			"<16:33:17> <DEBUG>		Event:	LOOT_READY	true", -- [1078]
+			"<16:33:17> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12468-00037EBF2C	10133	Creature-0-3778-469-18067-12468-00017EBF2C	1775	Creature-0-3778-469-18067-12468-0004FEBF2C	8143", -- [1079]
+			"<16:33:17> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:10152::::::::52:70:::2:6654:1707:1:28:1005:::::|h[Mighty Leggings of the Aurora]|h|r	2	1	Creature-0-3778-469-18067-12468-00037EBF2C	1", -- [1080]
+			"<16:33:18> <DEBUG>		Event:	LOOT_READY	true", -- [1081]
+			"<16:33:18> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12468-00037EBF2C	10133	Creature-0-3778-469-18067-12468-00017EBF2C	1775	Creature-0-3778-469-18067-12468-0004FEBF2C	8143", -- [1082]
+			"<16:33:18> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:10152::::::::52:70:::2:6654:1707:1:28:1005:::::|h[Mighty Leggings of the Aurora]|h|r	2	1	Creature-0-3778-469-18067-12468-00037EBF2C	1", -- [1083]
+			"<16:33:18> <DEBUG>		Event:	LOOT_CLOSED", -- [1084]
+			"<16:33:18> <DEBUG>		OnLootSlotCleared()	2	|cff1eff00|Hitem:10152::::::::52:70:::2:6654:1707:1:28:1005:::::|h[Mighty Leggings of the Aurora]|h|r	2", -- [1085]
+			"<16:33:18> <DEBUG>		Event:	LOOT_CLOSED", -- [1086]
+			"<16:33:18> <Comm>		^1^Sl^T^N1^S12468^t^^	WHISPER	Avisar-Dalaran", -- [1087]
+			"<16:33:20> <DEBUG>		Storage:New	|cff1eff00|Hitem:10152::::::::52:70:::2:6654:1707:1:28:1005:::::|h[Mighty Leggings of the Aurora]|h|r	temp", -- [1088]
+			"<16:33:20> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10152::::::::52:70:::2:6654:1707:1:28:1005:::::||h[Mighty Leggings of the Aurora]||h||r	5", -- [1089]
+			"<16:33:20> <DEBUG>		Found:	nil	nil	nil", -- [1090]
+			"<16:33:21> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10152::::::::52:70:::2:6654:1707:1:28:1005:::::||h[Mighty Leggings of the Aurora]||h||r	5", -- [1091]
+			"<16:33:21> <DEBUG>		Found:	nil	nil	nil", -- [1092]
+			"<16:33:22> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10152::::::::52:70:::2:6654:1707:1:28:1005:::::||h[Mighty Leggings of the Aurora]||h||r	5", -- [1093]
+			"<16:33:22> <DEBUG>		Found:	nil	nil	nil", -- [1094]
+			"<16:33:23> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10152::::::::52:70:::2:6654:1707:1:28:1005:::::||h[Mighty Leggings of the Aurora]||h||r	5", -- [1095]
+			"<16:33:23> <DEBUG>		Found:	nil	nil	nil", -- [1096]
+			"<16:33:23> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:10152::::::::52:70:::2:6654:1707:1:28:1005:::::|h[Mighty Leggings of the Aurora]|h|r not found in bags", -- [1097]
+			"<16:33:27> <DEBUG>		Event:	LOOT_READY	true", -- [1098]
+			"<16:33:27> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12468-00007EBF2C	7993", -- [1099]
+			"<16:33:27> <DEBUG>		Event:	LOOT_READY	true", -- [1100]
+			"<16:33:27> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12468-00007EBF2C	7993", -- [1101]
+			"<16:33:27> <DEBUG>		Event:	LOOT_CLOSED", -- [1102]
+			"<16:33:27> <Comm>		^1^Sl^T^N1^S12468^t^^	WHISPER	Avisar-Dalaran", -- [1103]
+			"<16:33:35> <DEBUG>		Event:	ENCOUNTER_START	612	Broodlord Lashlayer	9	40", -- [1104]
+			"<16:33:35> <INFO>		UpdatePlayersData()", -- [1105]
+			"<16:33:35> <DEBUG>		Event:	ENCOUNTER_END	612	Broodlord Lashlayer	9	40	1", -- [1106]
+			"<16:33:38> <DEBUG>		Event:	LOOT_READY	true", -- [1107]
+			"<16:33:38> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12017-00007EBF2C	42698", -- [1108]
+			"<16:33:38> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:16941::::::::52:70::::1:28:1005:::::|h[Dragonstalker's Greaves]|h|r	4	1	Creature-0-3778-469-18067-12017-00007EBF2C	1", -- [1109]
+			"<16:33:38> <DEBUG>		Adding to self.lootSlotInfo	3	|cffa335ee|Hitem:19342::::::::52:70::::1:28:1005:::::|h[Venomous Totem]|h|r	4	1	Creature-0-3778-469-18067-12017-00007EBF2C	1", -- [1110]
+			"<16:33:38> <DEBUG>		Adding to self.lootSlotInfo	4	|cffa335ee|Hitem:19351::::::::52:70::::1:28:1005:::::|h[Maladath, Runed Blade of the Black Flight]|h|r	4	1	Creature-0-3778-469-18067-12017-00007EBF2C	1", -- [1111]
+			"<16:33:39> <DEBUG>		Event:	LOOT_READY	true", -- [1112]
+			"<16:33:39> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12017-00007EBF2C	42698", -- [1113]
+			"<16:33:39> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:16941::::::::52:70::::1:28:1005:::::|h[Dragonstalker's Greaves]|h|r	4	1	Creature-0-3778-469-18067-12017-00007EBF2C	1", -- [1114]
+			"<16:33:39> <DEBUG>		Adding to self.lootSlotInfo	3	|cffa335ee|Hitem:19342::::::::52:70::::1:28:1005:::::|h[Venomous Totem]|h|r	4	1	Creature-0-3778-469-18067-12017-00007EBF2C	1", -- [1115]
+			"<16:33:39> <DEBUG>		Adding to self.lootSlotInfo	4	|cffa335ee|Hitem:19351::::::::52:70::::1:28:1005:::::|h[Maladath, Runed Blade of the Black Flight]|h|r	4	1	Creature-0-3778-469-18067-12017-00007EBF2C	1", -- [1116]
+			"<16:33:39> <DEBUG>		Event:	LOOT_CLOSED", -- [1117]
+			"<16:33:39> <DEBUG>		OnLootSlotCleared()	2	|cffa335ee|Hitem:16941::::::::52:70::::1:28:1005:::::|h[Dragonstalker's Greaves]|h|r	4", -- [1118]
+			"<16:33:39> <DEBUG>		Event:	LOOT_CLOSED", -- [1119]
+			"<16:33:39> <DEBUG>		OnLootSlotCleared()	3	|cffa335ee|Hitem:19342::::::::52:70::::1:28:1005:::::|h[Venomous Totem]|h|r	4", -- [1120]
+			"<16:33:39> <DEBUG>		Event:	LOOT_CLOSED", -- [1121]
+			"<16:33:39> <DEBUG>		OnLootSlotCleared()	4	|cffa335ee|Hitem:19351::::::::52:70::::1:28:1005:::::|h[Maladath, Runed Blade of the Black Flight]|h|r	4", -- [1122]
+			"<16:33:39> <DEBUG>		Event:	LOOT_CLOSED", -- [1123]
+			"<16:33:39> <Comm>		^1^Sl^T^N1^S12017^t^^	WHISPER	Avisar-Dalaran", -- [1124]
+			"<16:33:39> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	612	16941	|cffa335ee|Hitem:16941::::::::52:70::::1:28:1005:::::|h[Dragonstalker's Greaves]|h|r	1	Avisar	PALADIN", -- [1125]
+			"<16:33:39> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	612	19342	|cffa335ee|Hitem:19342::::::::52:70::::1:28:1005:::::|h[Venomous Totem]|h|r	1	Avisar	PALADIN", -- [1126]
+			"<16:33:39> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	612	19351	|cffa335ee|Hitem:19351::::::::52:70::::1:28:1005:::::|h[Maladath, Runed Blade of the Black Flight]|h|r	1	Avisar	PALADIN", -- [1127]
+			"<16:33:41> <DEBUG>		Storage:New	|cffa335ee|Hitem:16941::::::::52:70::::1:28:1005:::::|h[Dragonstalker's Greaves]|h|r	temp", -- [1128]
+			"<16:33:41> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16941::::::::52:70::::1:28:1005:::::||h[Dragonstalker's Greaves]||h||r	5", -- [1129]
+			"<16:33:41> <DEBUG>		Found item at	0	17", -- [1130]
+			"<16:33:41> <DEBUG>		Found:	0	17	0", -- [1131]
+			"<16:33:41> <DEBUG>		Storage:New	|cffa335ee|Hitem:19342::::::::52:70::::1:28:1005:::::|h[Venomous Totem]|h|r	temp", -- [1132]
+			"<16:33:41> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19342::::::::52:70::::1:28:1005:::::||h[Venomous Totem]||h||r	5", -- [1133]
+			"<16:33:41> <DEBUG>		Found item at	0	18", -- [1134]
+			"<16:33:41> <DEBUG>		Found:	0	18	0", -- [1135]
+			"<16:33:41> <DEBUG>		Storage:New	|cffa335ee|Hitem:19351::::::::52:70::::1:28:1005:::::|h[Maladath, Runed Blade of the Black Flight]|h|r	temp", -- [1136]
+			"<16:33:41> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19351::::::::52:70::::1:28:1005:::::||h[Maladath, Runed Blade of the Black Flight]||h||r	5", -- [1137]
+			"<16:33:41> <DEBUG>		Found item at	0	19", -- [1138]
+			"<16:33:41> <DEBUG>		Found:	0	19	0", -- [1139]
+			"<16:33:42> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19351::::::::52:70::::1:28:1005:::::||h[Maladath, Runed Blade of the Black Flight]||h||r	5", -- [1140]
+			"<16:33:42> <DEBUG>		Found item at	0	19", -- [1141]
+			"<16:33:42> <DEBUG>		Found:	0	19	0", -- [1142]
+			"<16:33:42> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16941::::::::52:70::::1:28:1005:::::||h[Dragonstalker's Greaves]||h||r	5", -- [1143]
+			"<16:33:42> <DEBUG>		Found item at	0	17", -- [1144]
+			"<16:33:42> <DEBUG>		Found:	0	17	0", -- [1145]
+			"<16:33:42> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19342::::::::52:70::::1:28:1005:::::||h[Venomous Totem]||h||r	5", -- [1146]
+			"<16:33:42> <DEBUG>		Found item at	0	18", -- [1147]
+			"<16:33:42> <DEBUG>		Found:	0	18	0", -- [1148]
+			"<16:33:42> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:19351::::::::52:70::::1:28:1005:::::|h[Maladath,~`Runed~`Blade~`of~`the~`Black~`Flight]|h|r^N2^S12017^t^^	WHISPER	Avisar-Dalaran", -- [1149]
+			"<16:33:42> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:16941::::::::52:70::::1:28:1005:::::|h[Dragonstalker's~`Greaves]|h|r^N2^S12017^t^^	WHISPER	Avisar-Dalaran", -- [1150]
+			"<16:33:42> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:19342::::::::52:70::::1:28:1005:::::|h[Venomous~`Totem]|h|r^N2^S12017^t^^	WHISPER	Avisar-Dalaran", -- [1151]
+			"<16:33:47> <DEBUG>		Event:	LOOT_READY	true", -- [1152]
+			"<16:33:47> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12459-0000FEBF2C	2512	Creature-0-3778-469-18067-13996-00007EBF2C	9788	Creature-0-3778-469-18067-13996-0000FEBF2C	6387	Creature-0-3778-469-18067-13996-00017EBF2C	8209", -- [1153]
+			"<16:33:47> <DEBUG>		Event:	LOOT_READY	true", -- [1154]
+			"<16:33:47> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12459-0000FEBF2C	2512	Creature-0-3778-469-18067-13996-00007EBF2C	9788	Creature-0-3778-469-18067-13996-0000FEBF2C	6387	Creature-0-3778-469-18067-13996-00017EBF2C	8209", -- [1155]
+			"<16:33:47> <DEBUG>		Event:	LOOT_CLOSED", -- [1156]
+			"<16:33:47> <Comm>		^1^Sl^T^N1^S12459^t^^	WHISPER	Avisar-Dalaran", -- [1157]
+			"<16:33:54> <DEBUG>		Event:	LOOT_READY	true", -- [1158]
+			"<16:33:54> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-13996-0001FEBF2C	8109	Creature-0-3778-469-18067-12459-00007EBF2C	9615	Creature-0-3778-469-18067-13996-00027EBF2C	9286	Creature-0-3778-469-18067-13996-0002FEBF2C	8223", -- [1159]
+			"<16:33:54> <DEBUG>		Event:	LOOT_READY	true", -- [1160]
+			"<16:33:54> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-13996-0001FEBF2C	8109	Creature-0-3778-469-18067-12459-00007EBF2C	9615	Creature-0-3778-469-18067-13996-00027EBF2C	9286	Creature-0-3778-469-18067-13996-0002FEBF2C	8223", -- [1161]
+			"<16:33:54> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1162]
+			"<16:33:55> <DEBUG>		Event:	LOOT_CLOSED", -- [1163]
+			"<16:33:55> <DEBUG>		Event:	LOOT_CLOSED", -- [1164]
+			"<16:33:55> <Comm>		^1^Sl^T^N1^S13996^t^^	WHISPER	Avisar-Dalaran", -- [1165]
+			"<16:33:55> <Comm>		^1^Sl^T^N1^S13996^t^^	WHISPER	Avisar-Dalaran", -- [1166]
+			"<16:34:25> <DEBUG>		Event:	LOOT_READY	true", -- [1167]
+			"<16:34:25> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12459-0001FEBF2C	3573	Creature-0-3778-469-18067-12457-00007EBF2C	5161	Creature-0-3778-469-18067-12461-00007EBF2C	9490	Creature-0-3778-469-18067-13996-00037EBF2C	7855	Creature-0-3778-469-18067-13996-0003FEBF2C	4312	Creature-0-3778-469-18067-13996-0004FEBF2C	6240	Creature-0-3778-469-18067-13996-00057EBF2C	8327	Creature-0-3778-469-18067-13996-0005FEBF2C	8830	Creature-0-3778-469-18067-13996-00067EBF2C	2949	Creature-0-3778-469-18067-13996-0006FEBF2C	4752	Creature-0-3778-469-18067-13996-00077EBF2C	1785	Creature-0-3778-469-18067-13996-0007FEBF2C	9630", -- [1168]
+			"<16:34:25> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:8303::::::::52:70:::1:6654:1:28:1005:::::|h[Hero's Breastplate]|h|r	2	1	Creature-0-3778-469-18067-12457-00007EBF2C	1", -- [1169]
+			"<16:34:26> <DEBUG>		Event:	LOOT_READY	true", -- [1170]
+			"<16:34:26> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12459-0001FEBF2C	3573	Creature-0-3778-469-18067-12457-00007EBF2C	5161	Creature-0-3778-469-18067-12461-00007EBF2C	9490	Creature-0-3778-469-18067-13996-00037EBF2C	7855	Creature-0-3778-469-18067-13996-0003FEBF2C	4312	Creature-0-3778-469-18067-13996-0004FEBF2C	6240	Creature-0-3778-469-18067-13996-00057EBF2C	8327	Creature-0-3778-469-18067-13996-0005FEBF2C	8830	Creature-0-3778-469-18067-13996-00067EBF2C	2949	Creature-0-3778-469-18067-13996-0006FEBF2C	4752	Creature-0-3778-469-18067-13996-00077EBF2C	1785	Creature-0-3778-469-18067-13996-0007FEBF2C	9630", -- [1171]
+			"<16:34:26> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:8303::::::::52:70:::1:6654:1:28:1005:::::|h[Hero's Breastplate]|h|r	2	1	Creature-0-3778-469-18067-12457-00007EBF2C	1", -- [1172]
+			"<16:34:26> <DEBUG>		Event:	LOOT_CLOSED", -- [1173]
+			"<16:34:26> <DEBUG>		OnLootSlotCleared()	5	|cff1eff00|Hitem:8303::::::::52:70:::1:6654:1:28:1005:::::|h[Hero's Breastplate]|h|r	2", -- [1174]
+			"<16:34:26> <DEBUG>		Event:	LOOT_CLOSED", -- [1175]
+			"<16:34:26> <Comm>		^1^Sl^T^N1^S12457^t^^	WHISPER	Avisar-Dalaran", -- [1176]
+			"<16:34:26> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	18562	|cffa335ee|Hitem:18562::::::::52:70:::::::::|h[Elementium Ingot]|h|r	1	Avisar	PALADIN", -- [1177]
+			"<16:34:27> <DEBUG>		Event:	LOOT_READY	true", -- [1178]
+			"<16:34:27> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-13996-00047EBF2C	9551", -- [1179]
+			"<16:34:27> <DEBUG>		Event:	LOOT_READY	true", -- [1180]
+			"<16:34:27> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-13996-00047EBF2C	9551", -- [1181]
+			"<16:34:27> <DEBUG>		Event:	LOOT_READY	true", -- [1182]
+			"<16:34:27> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-13996-00047EBF2C	9551", -- [1183]
+			"<16:34:27> <DEBUG>		Event:	LOOT_CLOSED", -- [1184]
+			"<16:34:27> <Comm>		^1^Sl^T^N1^S13996^t^^	WHISPER	Avisar-Dalaran", -- [1185]
+			"<16:34:28> <DEBUG>		Storage:New	|cff1eff00|Hitem:8303::::::::52:70:::1:6654:1:28:1005:::::|h[Hero's Breastplate]|h|r	temp", -- [1186]
+			"<16:34:28> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8303::::::::52:70:::1:6654:1:28:1005:::::||h[Hero's Breastplate]||h||r	5", -- [1187]
+			"<16:34:28> <DEBUG>		Found:	nil	nil	nil", -- [1188]
+			"<16:34:29> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8303::::::::52:70:::1:6654:1:28:1005:::::||h[Hero's Breastplate]||h||r	5", -- [1189]
+			"<16:34:29> <DEBUG>		Found:	nil	nil	nil", -- [1190]
+			"<16:34:30> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8303::::::::52:70:::1:6654:1:28:1005:::::||h[Hero's Breastplate]||h||r	5", -- [1191]
+			"<16:34:30> <DEBUG>		Found:	nil	nil	nil", -- [1192]
+			"<16:34:30> <DEBUG>		Event:	LOOT_READY	true", -- [1193]
+			"<16:34:30> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12459-00017EBF2C	9112", -- [1194]
+			"<16:34:30> <DEBUG>		Event:	LOOT_READY	true", -- [1195]
+			"<16:34:30> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12459-00017EBF2C	9112", -- [1196]
+			"<16:34:31> <DEBUG>		Event:	LOOT_CLOSED", -- [1197]
+			"<16:34:31> <Comm>		^1^Sl^T^N1^S12459^t^^	WHISPER	Avisar-Dalaran", -- [1198]
+			"<16:34:31> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8303::::::::52:70:::1:6654:1:28:1005:::::||h[Hero's Breastplate]||h||r	5", -- [1199]
+			"<16:34:31> <DEBUG>		Found:	nil	nil	nil", -- [1200]
+			"<16:34:31> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:8303::::::::52:70:::1:6654:1:28:1005:::::|h[Hero's Breastplate]|h|r not found in bags", -- [1201]
+			"<16:34:51> <DEBUG>		Event:	LOOT_READY	true", -- [1202]
+			"<16:34:51> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12457-0000FEBF2C	4435	Creature-0-3778-469-18067-12459-00027EBF2C	7302	Creature-0-3778-469-18067-12459-0002FEBF2C	10266	Creature-0-3778-469-18067-12461-0000FEBF2C	9606	Creature-0-3778-469-18067-13996-00087EBF2C	9705	Creature-0-3778-469-18067-13996-0008FEBF2C	2866	Creature-0-3778-469-18067-13996-00097EBF2C	3233	Creature-0-3778-469-18067-13996-0009FEBF2C	6110	Creature-0-3778-469-18067-13996-000A7EBF2C	9260	Creature-0-3778-469-18067-13996-000AFEBF2C	3894	Creature-0-3778-469-18067-13996-000B7EBF2C	10457	Creature-0-3778-469-18067-13996-000BFEBF2C	5588	Creature-0-3778-469-18067-13996-000C7EBF2C	9422	Creature-0-3778-469-18067-13996-000CFEBF2C	1672", -- [1203]
+			"<16:34:52> <DEBUG>		Event:	LOOT_READY	true", -- [1204]
+			"<16:34:52> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12457-0000FEBF2C	4435	Creature-0-3778-469-18067-12459-00027EBF2C	7302	Creature-0-3778-469-18067-12459-0002FEBF2C	10266	Creature-0-3778-469-18067-12461-0000FEBF2C	9606	Creature-0-3778-469-18067-13996-00087EBF2C	9705	Creature-0-3778-469-18067-13996-0008FEBF2C	2866	Creature-0-3778-469-18067-13996-00097EBF2C	3233	Creature-0-3778-469-18067-13996-0009FEBF2C	6110	Creature-0-3778-469-18067-13996-000A7EBF2C	9260	Creature-0-3778-469-18067-13996-000AFEBF2C	3894	Creature-0-3778-469-18067-13996-000B7EBF2C	10457	Creature-0-3778-469-18067-13996-000BFEBF2C	5588	Creature-0-3778-469-18067-13996-000C7EBF2C	9422	Creature-0-3778-469-18067-13996-000CFEBF2C	1672", -- [1205]
+			"<16:34:52> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1206]
+			"<16:34:52> <DEBUG>		Event:	LOOT_CLOSED", -- [1207]
+			"<16:34:52> <DEBUG>		Event:	LOOT_CLOSED", -- [1208]
+			"<16:34:53> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	18562	|cffa335ee|Hitem:18562::::::::52:70:::::::::|h[Elementium Ingot]|h|r	1	Avisar	PALADIN", -- [1209]
+			"<16:34:53> <Comm>		^1^Sl^T^N1^S12457^t^^	WHISPER	Avisar-Dalaran", -- [1210]
+			"<16:34:53> <Comm>		^1^Sl^T^N1^S12457^t^^	WHISPER	Avisar-Dalaran", -- [1211]
+			"<16:34:57> <DEBUG>		Event:	ENCOUNTER_START	613	Firemaw	9	40", -- [1212]
+			"<16:34:57> <INFO>		UpdatePlayersData()", -- [1213]
+			"<16:34:57> <DEBUG>		Event:	ENCOUNTER_END	613	Firemaw	9	40	1", -- [1214]
+			"<16:35:00> <DEBUG>		Event:	LOOT_READY	true", -- [1215]
+			"<16:35:00> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-11983-00007EBF2C	40410", -- [1216]
+			"<16:35:00> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:16907::::::::52:70::::1:28:1005:::::|h[Bloodfang Gloves]|h|r	4	1	Creature-0-3778-469-18067-11983-00007EBF2C	1", -- [1217]
+			"<16:35:00> <DEBUG>		Adding to self.lootSlotInfo	3	|cffa335ee|Hitem:19394::::::::52:70::::1:28:1005:::::|h[Drake Talon Pauldrons]|h|r	4	1	Creature-0-3778-469-18067-11983-00007EBF2C	1", -- [1218]
+			"<16:35:00> <DEBUG>		Event:	LOOT_READY	true", -- [1219]
+			"<16:35:00> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-11983-00007EBF2C	40410", -- [1220]
+			"<16:35:00> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:16907::::::::52:70::::1:28:1005:::::|h[Bloodfang Gloves]|h|r	4	1	Creature-0-3778-469-18067-11983-00007EBF2C	1", -- [1221]
+			"<16:35:00> <DEBUG>		Adding to self.lootSlotInfo	3	|cffa335ee|Hitem:19394::::::::52:70::::1:28:1005:::::|h[Drake Talon Pauldrons]|h|r	4	1	Creature-0-3778-469-18067-11983-00007EBF2C	1", -- [1222]
+			"<16:35:00> <DEBUG>		Event:	LOOT_CLOSED", -- [1223]
+			"<16:35:00> <DEBUG>		OnLootSlotCleared()	2	|cffa335ee|Hitem:16907::::::::52:70::::1:28:1005:::::|h[Bloodfang Gloves]|h|r	4", -- [1224]
+			"<16:35:00> <DEBUG>		Event:	LOOT_CLOSED", -- [1225]
+			"<16:35:00> <DEBUG>		OnLootSlotCleared()	3	|cffa335ee|Hitem:19394::::::::52:70::::1:28:1005:::::|h[Drake Talon Pauldrons]|h|r	4", -- [1226]
+			"<16:35:00> <DEBUG>		Event:	LOOT_CLOSED", -- [1227]
+			"<16:35:00> <Comm>		^1^Sl^T^N1^S11983^t^^	WHISPER	Avisar-Dalaran", -- [1228]
+			"<16:35:00> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	613	16907	|cffa335ee|Hitem:16907::::::::52:70::::1:28:1005:::::|h[Bloodfang Gloves]|h|r	1	Avisar	PALADIN", -- [1229]
+			"<16:35:00> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	613	19394	|cffa335ee|Hitem:19394::::::::52:70::::1:28:1005:::::|h[Drake Talon Pauldrons]|h|r	1	Avisar	PALADIN", -- [1230]
+			"<16:35:02> <DEBUG>		Storage:New	|cffa335ee|Hitem:16907::::::::52:70::::1:28:1005:::::|h[Bloodfang Gloves]|h|r	temp", -- [1231]
+			"<16:35:02> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16907::::::::52:70::::1:28:1005:::::||h[Bloodfang Gloves]||h||r	5", -- [1232]
+			"<16:35:02> <DEBUG>		Found item at	1	2", -- [1233]
+			"<16:35:02> <DEBUG>		Found:	1	2	0", -- [1234]
+			"<16:35:02> <DEBUG>		Storage:New	|cffa335ee|Hitem:19394::::::::52:70::::1:28:1005:::::|h[Drake Talon Pauldrons]|h|r	temp", -- [1235]
+			"<16:35:02> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19394::::::::52:70::::1:28:1005:::::||h[Drake Talon Pauldrons]||h||r	5", -- [1236]
+			"<16:35:02> <DEBUG>		Found item at	1	3", -- [1237]
+			"<16:35:02> <DEBUG>		Found:	1	3	0", -- [1238]
+			"<16:35:03> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19394::::::::52:70::::1:28:1005:::::||h[Drake Talon Pauldrons]||h||r	5", -- [1239]
+			"<16:35:03> <DEBUG>		Found item at	1	3", -- [1240]
+			"<16:35:03> <DEBUG>		Found:	1	3	0", -- [1241]
+			"<16:35:03> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16907::::::::52:70::::1:28:1005:::::||h[Bloodfang Gloves]||h||r	5", -- [1242]
+			"<16:35:03> <DEBUG>		Found item at	1	2", -- [1243]
+			"<16:35:03> <DEBUG>		Found:	1	2	0", -- [1244]
+			"<16:35:03> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:19394::::::::52:70::::1:28:1005:::::|h[Drake~`Talon~`Pauldrons]|h|r^N2^S11983^t^^	WHISPER	Avisar-Dalaran", -- [1245]
+			"<16:35:03> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:16907::::::::52:70::::1:28:1005:::::|h[Bloodfang~`Gloves]|h|r^N2^S11983^t^^	WHISPER	Avisar-Dalaran", -- [1246]
+			"<16:35:09> <DEBUG>		Event:	LOOT_READY	true", -- [1247]
+			"<16:35:09> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12460-0001FEBF2C	9306	Creature-0-3778-469-18067-12461-00017EBF2C	9998	Creature-0-3778-469-18067-12461-00027EBF2C	8422	Creature-0-3778-469-18067-12461-0001FEBF2C	9283", -- [1248]
+			"<16:35:09> <DEBUG>		Adding to self.lootSlotInfo	3	|cffa335ee|Hitem:19354::::::::52:70::::1:28:1005:::::|h[Draconic Avenger]|h|r	4	1	Creature-0-3778-469-18067-12460-0001FEBF2C	1", -- [1249]
+			"<16:35:09> <DEBUG>		Event:	LOOT_READY	true", -- [1250]
+			"<16:35:09> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12460-0001FEBF2C	9306	Creature-0-3778-469-18067-12461-00017EBF2C	9998	Creature-0-3778-469-18067-12461-00027EBF2C	8422	Creature-0-3778-469-18067-12461-0001FEBF2C	9283", -- [1251]
+			"<16:35:09> <DEBUG>		Adding to self.lootSlotInfo	3	|cffa335ee|Hitem:19354::::::::52:70::::1:28:1005:::::|h[Draconic Avenger]|h|r	4	1	Creature-0-3778-469-18067-12460-0001FEBF2C	1", -- [1252]
+			"<16:35:09> <DEBUG>		Event:	LOOT_CLOSED", -- [1253]
+			"<16:35:09> <DEBUG>		OnLootSlotCleared()	3	|cffa335ee|Hitem:19354::::::::52:70::::1:28:1005:::::|h[Draconic Avenger]|h|r	4", -- [1254]
+			"<16:35:09> <DEBUG>		Event:	LOOT_CLOSED", -- [1255]
+			"<16:35:09> <Comm>		^1^Sl^T^N1^S12460^t^^	WHISPER	Avisar-Dalaran", -- [1256]
+			"<16:35:09> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	19354	|cffa335ee|Hitem:19354::::::::52:70::::1:28:1005:::::|h[Draconic Avenger]|h|r	1	Avisar	PALADIN", -- [1257]
+			"<16:35:11> <DEBUG>		Storage:New	|cffa335ee|Hitem:19354::::::::52:70::::1:28:1005:::::|h[Draconic Avenger]|h|r	temp", -- [1258]
+			"<16:35:11> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19354::::::::52:70::::1:28:1005:::::||h[Draconic Avenger]||h||r	5", -- [1259]
+			"<16:35:11> <DEBUG>		Found item at	1	4", -- [1260]
+			"<16:35:11> <DEBUG>		Found:	1	4	0", -- [1261]
+			"<16:35:12> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19354::::::::52:70::::1:28:1005:::::||h[Draconic Avenger]||h||r	5", -- [1262]
+			"<16:35:12> <DEBUG>		Found item at	1	4", -- [1263]
+			"<16:35:12> <DEBUG>		Found:	1	4	0", -- [1264]
+			"<16:35:12> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:19354::::::::52:70::::1:28:1005:::::|h[Draconic~`Avenger]|h|r^N2^S12460^t^^	WHISPER	Avisar-Dalaran", -- [1265]
+			"<16:35:31> <DEBUG>		Event:	LOOT_READY	true", -- [1266]
+			"<16:35:31> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12461-0002FEBF2C	10714	Creature-0-3778-469-18067-12459-00037EBF2C	2217	Creature-0-3778-469-18067-12459-0003FEBF2C	7272	Creature-0-3778-469-18067-13996-000D7EBF2C	2071	Creature-0-3778-469-18067-13996-000DFEBF2C	2457	Creature-0-3778-469-18067-13996-000E7EBF2C	8961	Creature-0-3778-469-18067-13996-000EFEBF2C	4358	Creature-0-3778-469-18067-13996-000F7EBF2C	3213	Creature-0-3778-469-18067-13996-000FFEBF2C	8610	Creature-0-3778-469-18067-13996-00107EBF2C	4901	Creature-0-3778-469-18067-13996-0010FEBF2C	9900	Creature-0-3778-469-18067-13996-00117EBF2C	7172	Creature-0-3778-469-18067-13996-0011FEBF2C	4748", -- [1267]
+			"<16:35:32> <DEBUG>		Event:	LOOT_READY	true", -- [1268]
+			"<16:35:32> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12461-0002FEBF2C	10714	Creature-0-3778-469-18067-12459-00037EBF2C	2217	Creature-0-3778-469-18067-12459-0003FEBF2C	7272	Creature-0-3778-469-18067-13996-000D7EBF2C	2071	Creature-0-3778-469-18067-13996-000DFEBF2C	2457	Creature-0-3778-469-18067-13996-000E7EBF2C	8961	Creature-0-3778-469-18067-13996-000EFEBF2C	4358	Creature-0-3778-469-18067-13996-000F7EBF2C	3213	Creature-0-3778-469-18067-13996-000FFEBF2C	8610	Creature-0-3778-469-18067-13996-00107EBF2C	4901	Creature-0-3778-469-18067-13996-0010FEBF2C	9900	Creature-0-3778-469-18067-13996-00117EBF2C	7172	Creature-0-3778-469-18067-13996-0011FEBF2C	4748", -- [1269]
+			"<16:35:32> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1270]
+			"<16:35:32> <DEBUG>		Event:	LOOT_CLOSED", -- [1271]
+			"<16:35:32> <Comm>		^1^Sl^T^N1^S12461^t^^	WHISPER	Avisar-Dalaran", -- [1272]
+			"<16:35:32> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	18562	|cffa335ee|Hitem:18562::::::::52:70:::::::::|h[Elementium Ingot]|h|r	1	Avisar	PALADIN", -- [1273]
+			"<16:35:33> <DEBUG>		Event:	LOOT_READY	true", -- [1274]
+			"<16:35:33> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12457-00017EBF2C	9594", -- [1275]
+			"<16:35:34> <DEBUG>		Event:	LOOT_READY	true", -- [1276]
+			"<16:35:34> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12457-00017EBF2C	9594", -- [1277]
+			"<16:35:34> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1278]
+			"<16:35:34> <DEBUG>		Event:	LOOT_CLOSED", -- [1279]
+			"<16:35:34> <DEBUG>		Event:	LOOT_CLOSED", -- [1280]
+			"<16:35:34> <Comm>		^1^Sl^T^N1^S12457^t^^	WHISPER	Avisar-Dalaran", -- [1281]
+			"<16:35:34> <Comm>		^1^Sl^T^N1^S12457^t^^	WHISPER	Avisar-Dalaran", -- [1282]
+			"<16:35:57> <DEBUG>		Event:	LOOT_READY	true", -- [1283]
+			"<16:35:57> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-13996-0013FEBF2C	2449	Creature-0-3778-469-18067-12457-0001FEBF2C	10281	Creature-0-3778-469-18067-12459-00047EBF2C	10852	Creature-0-3778-469-18067-12461-00037EBF2C	1592	Creature-0-3778-469-18067-13996-00127EBF2C	10298	Creature-0-3778-469-18067-13996-0012FEBF2C	5007	Creature-0-3778-469-18067-13996-00137EBF2C	9114	Creature-0-3778-469-18067-13996-00147EBF2C	2535	Creature-0-3778-469-18067-13996-0014FEBF2C	10013	Creature-0-3778-469-18067-13996-0015FEBF2C	2524", -- [1284]
+			"<16:35:57> <DEBUG>		Adding to self.lootSlotInfo	4	|cffa335ee|Hitem:19435::::::::52:70::::1:28:1005:::::|h[Essence Gatherer]|h|r	4	1	Creature-0-3778-469-18067-12461-00037EBF2C	1", -- [1285]
+			"<16:35:57> <DEBUG>		Event:	LOOT_READY	true", -- [1286]
+			"<16:35:57> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-13996-0013FEBF2C	2449	Creature-0-3778-469-18067-12457-0001FEBF2C	10281	Creature-0-3778-469-18067-12459-00047EBF2C	10852	Creature-0-3778-469-18067-12461-00037EBF2C	1592	Creature-0-3778-469-18067-13996-00127EBF2C	10298	Creature-0-3778-469-18067-13996-0012FEBF2C	5007	Creature-0-3778-469-18067-13996-00137EBF2C	9114	Creature-0-3778-469-18067-13996-00147EBF2C	2535	Creature-0-3778-469-18067-13996-0014FEBF2C	10013	Creature-0-3778-469-18067-13996-0015FEBF2C	2524", -- [1287]
+			"<16:35:57> <DEBUG>		Adding to self.lootSlotInfo	4	|cffa335ee|Hitem:19435::::::::52:70::::1:28:1005:::::|h[Essence Gatherer]|h|r	4	1	Creature-0-3778-469-18067-12461-00037EBF2C	1", -- [1288]
+			"<16:35:57> <DEBUG>		Event:	LOOT_CLOSED", -- [1289]
+			"<16:35:57> <DEBUG>		OnLootSlotCleared()	4	|cffa335ee|Hitem:19435::::::::52:70::::1:28:1005:::::|h[Essence Gatherer]|h|r	4", -- [1290]
+			"<16:35:57> <DEBUG>		Event:	LOOT_CLOSED", -- [1291]
+			"<16:35:57> <Comm>		^1^Sl^T^N1^S12461^t^^	WHISPER	Avisar-Dalaran", -- [1292]
+			"<16:35:58> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	19435	|cffa335ee|Hitem:19435::::::::52:70::::1:28:1005:::::|h[Essence Gatherer]|h|r	1	Avisar	PALADIN", -- [1293]
+			"<16:35:58> <DEBUG>		Event:	LOOT_READY	true", -- [1294]
+			"<16:35:58> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-13996-00157EBF2C	5915", -- [1295]
+			"<16:35:58> <DEBUG>		Event:	LOOT_READY	true", -- [1296]
+			"<16:35:58> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-13996-00157EBF2C	5915", -- [1297]
+			"<16:35:58> <DEBUG>		Event:	LOOT_CLOSED", -- [1298]
+			"<16:35:58> <Comm>		^1^Sl^T^N1^S13996^t^^	WHISPER	Avisar-Dalaran", -- [1299]
+			"<16:35:59> <DEBUG>		Storage:New	|cffa335ee|Hitem:19435::::::::52:70::::1:28:1005:::::|h[Essence Gatherer]|h|r	temp", -- [1300]
+			"<16:35:59> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19435::::::::52:70::::1:28:1005:::::||h[Essence Gatherer]||h||r	5", -- [1301]
+			"<16:35:59> <DEBUG>		Found item at	0	19", -- [1302]
+			"<16:35:59> <DEBUG>		Found:	0	19	0", -- [1303]
+			"<16:36:00> <DEBUG>		Event:	LOOT_READY	true", -- [1304]
+			"<16:36:00> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-13996-00167EBF2C	10506", -- [1305]
+			"<16:36:00> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19435::::::::52:70::::1:28:1005:::::||h[Essence Gatherer]||h||r	5", -- [1306]
+			"<16:36:00> <DEBUG>		Found item at	0	19", -- [1307]
+			"<16:36:00> <DEBUG>		Found:	0	19	0", -- [1308]
+			"<16:36:00> <DEBUG>		Event:	LOOT_READY	true", -- [1309]
+			"<16:36:00> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-13996-00167EBF2C	10506", -- [1310]
+			"<16:36:01> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:19435::::::::52:70::::1:28:1005:::::|h[Essence~`Gatherer]|h|r^N2^S12461^t^^	WHISPER	Avisar-Dalaran", -- [1311]
+			"<16:36:01> <DEBUG>		Event:	LOOT_CLOSED", -- [1312]
+			"<16:36:01> <Comm>		^1^Sl^T^N1^S13996^t^^	WHISPER	Avisar-Dalaran", -- [1313]
+			"<16:36:03> <DEBUG>		Event:	LOOT_READY	true", -- [1314]
+			"<16:36:03> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12459-0004FEBF2C	9670", -- [1315]
+			"<16:36:04> <DEBUG>		Event:	LOOT_READY	true", -- [1316]
+			"<16:36:04> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12459-0004FEBF2C	9670", -- [1317]
+			"<16:36:04> <DEBUG>		Event:	LOOT_CLOSED", -- [1318]
+			"<16:36:04> <Comm>		^1^Sl^T^N1^S12459^t^^	WHISPER	Avisar-Dalaran", -- [1319]
+			"<16:36:26> <DEBUG>		Event:	LOOT_READY	true", -- [1320]
+			"<16:36:26> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12461-0003FEBF2C	8935	Creature-0-3778-469-18067-12457-00027EBF2C	9145	Creature-0-3778-469-18067-12457-0002FEBF2C	2110	Creature-0-3778-469-18067-12459-00057EBF2C	3289	Creature-0-3778-469-18067-12459-0005FEBF2C	8165	Creature-0-3778-469-18067-13996-0016FEBF2C	6409	Creature-0-3778-469-18067-13996-00177EBF2C	8726	Creature-0-3778-469-18067-13996-0017FEBF2C	10405	Creature-0-3778-469-18067-13996-00187EBF2C	9160	Creature-0-3778-469-18067-13996-0018FEBF2C	4418	Creature-0-3778-469-18067-13996-00197EBF2C	9738	Creature-0-3778-469-18067-13996-0019FEBF2C	5428	Creature-0-3778-469-18067-13996-001A7EBF2C	6725	Creature-0-3778-469-18067-13996-001AFEBF2C	7465", -- [1321]
+			"<16:36:26> <DEBUG>		Event:	LOOT_READY	true", -- [1322]
+			"<16:36:26> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12461-0003FEBF2C	8935	Creature-0-3778-469-18067-12457-00027EBF2C	9145	Creature-0-3778-469-18067-12457-0002FEBF2C	2110	Creature-0-3778-469-18067-12459-00057EBF2C	3289	Creature-0-3778-469-18067-12459-0005FEBF2C	8165	Creature-0-3778-469-18067-13996-0016FEBF2C	6409	Creature-0-3778-469-18067-13996-00177EBF2C	8726	Creature-0-3778-469-18067-13996-0017FEBF2C	10405	Creature-0-3778-469-18067-13996-00187EBF2C	9160	Creature-0-3778-469-18067-13996-0018FEBF2C	4418	Creature-0-3778-469-18067-13996-00197EBF2C	9738	Creature-0-3778-469-18067-13996-0019FEBF2C	5428	Creature-0-3778-469-18067-13996-001A7EBF2C	6725	Creature-0-3778-469-18067-13996-001AFEBF2C	7465", -- [1323]
+			"<16:36:26> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1324]
+			"<16:36:27> <DEBUG>		Event:	LOOT_CLOSED", -- [1325]
+			"<16:36:27> <DEBUG>		Event:	LOOT_CLOSED", -- [1326]
+			"<16:36:27> <Comm>		^1^Sl^T^N1^S12461^t^^	WHISPER	Avisar-Dalaran", -- [1327]
+			"<16:36:27> <Comm>		^1^Sl^T^N1^S12461^t^^	WHISPER	Avisar-Dalaran", -- [1328]
+			"<16:36:45> <DEBUG>		Event:	LOOT_READY	true", -- [1329]
+			"<16:36:45> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-13996-001EFEBF2C	8862	Creature-0-3778-469-18067-12457-00037EBF2C	4313	Creature-0-3778-469-18067-12457-0003FEBF2C	10937	Creature-0-3778-469-18067-12459-00067EBF2C	6369	Creature-0-3778-469-18067-12459-0006FEBF2C	10378	Creature-0-3778-469-18067-12461-00047EBF2C	2289	Creature-0-3778-469-18067-13996-001B7EBF2C	2589	Creature-0-3778-469-18067-13996-001BFEBF2C	5754	Creature-0-3778-469-18067-13996-001C7EBF2C	1737	Creature-0-3778-469-18067-13996-001CFEBF2C	6468	Creature-0-3778-469-18067-13996-001D7EBF2C	6575	Creature-0-3778-469-18067-13996-001DFEBF2C	4672	Creature-0-3778-469-18067-13996-001E7EBF2C	6720	Creature-0-3778-469-18067-13996-001F7EBF2C	8347", -- [1330]
+			"<16:36:45> <DEBUG>		Event:	LOOT_READY	true", -- [1331]
+			"<16:36:45> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-13996-001EFEBF2C	8862	Creature-0-3778-469-18067-12457-00037EBF2C	4313	Creature-0-3778-469-18067-12457-0003FEBF2C	10937	Creature-0-3778-469-18067-12459-00067EBF2C	6369	Creature-0-3778-469-18067-12459-0006FEBF2C	10378	Creature-0-3778-469-18067-12461-00047EBF2C	2289	Creature-0-3778-469-18067-13996-001B7EBF2C	2589	Creature-0-3778-469-18067-13996-001BFEBF2C	5754	Creature-0-3778-469-18067-13996-001C7EBF2C	1737	Creature-0-3778-469-18067-13996-001CFEBF2C	6468	Creature-0-3778-469-18067-13996-001D7EBF2C	6575	Creature-0-3778-469-18067-13996-001DFEBF2C	4672	Creature-0-3778-469-18067-13996-001E7EBF2C	6720	Creature-0-3778-469-18067-13996-001F7EBF2C	8347", -- [1332]
+			"<16:36:46> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1333]
+			"<16:36:46> <DEBUG>		Event:	LOOT_CLOSED", -- [1334]
+			"<16:36:46> <DEBUG>		Event:	LOOT_CLOSED", -- [1335]
+			"<16:36:46> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	18562	|cffa335ee|Hitem:18562::::::::52:70:::::::::|h[Elementium Ingot]|h|r	1	Avisar	PALADIN", -- [1336]
+			"<16:36:47> <Comm>		^1^Sl^T^N1^S13996^t^^	WHISPER	Avisar-Dalaran", -- [1337]
+			"<16:36:47> <Comm>		^1^Sl^T^N1^S13996^t^^	WHISPER	Avisar-Dalaran", -- [1338]
+			"<16:37:00> <DEBUG>		Event:	LOOT_READY	true", -- [1339]
+			"<16:37:00> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12460-0000FEBF2C	9305	Creature-0-3778-469-18067-12460-00007EBF2C	6589	Creature-0-3778-469-18067-12460-00017EBF2C	7576	Creature-0-3778-469-18067-14401-00007EBF2C	6905", -- [1340]
+			"<16:37:00> <DEBUG>		Event:	LOOT_READY	true", -- [1341]
+			"<16:37:00> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12460-0000FEBF2C	9305	Creature-0-3778-469-18067-12460-00007EBF2C	6589	Creature-0-3778-469-18067-12460-00017EBF2C	7576	Creature-0-3778-469-18067-14401-00007EBF2C	6905", -- [1342]
+			"<16:37:01> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1343]
+			"<16:37:01> <DEBUG>		Event:	LOOT_CLOSED", -- [1344]
+			"<16:37:01> <DEBUG>		Event:	LOOT_CLOSED", -- [1345]
+			"<16:37:01> <Comm>		^1^Sl^T^N1^S12460^t^^	WHISPER	Avisar-Dalaran", -- [1346]
+			"<16:37:01> <Comm>		^1^Sl^T^N1^S12460^t^^	WHISPER	Avisar-Dalaran", -- [1347]
+			"<16:37:09> <DEBUG>		Event:	ENCOUNTER_START	614	Ebonroc	9	40", -- [1348]
+			"<16:37:09> <INFO>		UpdatePlayersData()", -- [1349]
+			"<16:37:09> <DEBUG>		Event:	ENCOUNTER_END	614	Ebonroc	9	40	1", -- [1350]
+			"<16:37:11> <DEBUG>		Event:	LOOT_READY	true", -- [1351]
+			"<16:37:11> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-14601-00007EBF2C	48152", -- [1352]
+			"<16:37:11> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:19406::::::::52:70::::1:28:1005:::::|h[Drake Fang Talisman]|h|r	4	1	Creature-0-3778-469-18067-14601-00007EBF2C	1", -- [1353]
+			"<16:37:11> <DEBUG>		Event:	LOOT_READY	true", -- [1354]
+			"<16:37:11> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-14601-00007EBF2C	48152", -- [1355]
+			"<16:37:11> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:19406::::::::52:70::::1:28:1005:::::|h[Drake Fang Talisman]|h|r	4	1	Creature-0-3778-469-18067-14601-00007EBF2C	1", -- [1356]
+			"<16:37:11> <DEBUG>		Adding to self.lootSlotInfo	3	|cffa335ee|Hitem:19406::::::::52:70::::1:28:1005:::::|h[Drake Fang Talisman]|h|r	4	1	Creature-0-3778-469-18067-14601-00007EBF2C	1", -- [1357]
+			"<16:37:12> <DEBUG>		Event:	LOOT_READY	true", -- [1358]
+			"<16:37:12> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-14601-00007EBF2C	48152", -- [1359]
+			"<16:37:12> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:19406::::::::52:70::::1:28:1005:::::|h[Drake Fang Talisman]|h|r	4	1	Creature-0-3778-469-18067-14601-00007EBF2C	1", -- [1360]
+			"<16:37:12> <DEBUG>		Adding to self.lootSlotInfo	3	|cffa335ee|Hitem:19406::::::::52:70::::1:28:1005:::::|h[Drake Fang Talisman]|h|r	4	1	Creature-0-3778-469-18067-14601-00007EBF2C	1", -- [1361]
+			"<16:37:12> <DEBUG>		Event:	LOOT_CLOSED", -- [1362]
+			"<16:37:12> <DEBUG>		OnLootSlotCleared()	2	|cffa335ee|Hitem:19406::::::::52:70::::1:28:1005:::::|h[Drake Fang Talisman]|h|r	4", -- [1363]
+			"<16:37:12> <DEBUG>		Event:	LOOT_CLOSED", -- [1364]
+			"<16:37:12> <DEBUG>		OnLootSlotCleared()	3	|cffa335ee|Hitem:19406::::::::52:70::::1:28:1005:::::|h[Drake Fang Talisman]|h|r	4", -- [1365]
+			"<16:37:12> <DEBUG>		Event:	LOOT_CLOSED", -- [1366]
+			"<16:37:12> <Comm>		^1^Sl^T^N1^S14601^t^^	WHISPER	Avisar-Dalaran", -- [1367]
+			"<16:37:12> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	614	19406	|cffa335ee|Hitem:19406::::::::52:70::::1:28:1005:::::|h[Drake Fang Talisman]|h|r	1	Avisar	PALADIN", -- [1368]
+			"<16:37:12> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	614	19406	|cffa335ee|Hitem:19406::::::::52:70::::1:28:1005:::::|h[Drake Fang Talisman]|h|r	1	Avisar	PALADIN", -- [1369]
+			"<16:37:14> <DEBUG>		Storage:New	|cffa335ee|Hitem:19406::::::::52:70::::1:28:1005:::::|h[Drake Fang Talisman]|h|r	temp", -- [1370]
+			"<16:37:14> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19406::::::::52:70::::1:28:1005:::::||h[Drake Fang Talisman]||h||r	5", -- [1371]
+			"<16:37:14> <DEBUG>		Found item at	0	19", -- [1372]
+			"<16:37:14> <DEBUG>		Found item at	0	20", -- [1373]
+			"<16:37:14> <DEBUG>		Found:	0	20	0", -- [1374]
+			"<16:37:14> <DEBUG>		Storage:New	|cffa335ee|Hitem:19406::::::::52:70::::1:28:1005:::::|h[Drake Fang Talisman]|h|r	temp", -- [1375]
+			"<16:37:14> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19406::::::::52:70::::1:28:1005:::::||h[Drake Fang Talisman]||h||r	5", -- [1376]
+			"<16:37:14> <DEBUG>		Found item at	0	19", -- [1377]
+			"<16:37:14> <DEBUG>		Found item at	0	20", -- [1378]
+			"<16:37:14> <DEBUG>		Found:	0	20	0", -- [1379]
+			"<16:37:15> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19406::::::::52:70::::1:28:1005:::::||h[Drake Fang Talisman]||h||r	5", -- [1380]
+			"<16:37:15> <DEBUG>		Found item at	0	19", -- [1381]
+			"<16:37:15> <DEBUG>		Found item at	0	20", -- [1382]
+			"<16:37:15> <DEBUG>		Found:	0	20	0", -- [1383]
+			"<16:37:15> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19406::::::::52:70::::1:28:1005:::::||h[Drake Fang Talisman]||h||r	5", -- [1384]
+			"<16:37:15> <DEBUG>		Found item at	0	19", -- [1385]
+			"<16:37:15> <DEBUG>		Found item at	0	20", -- [1386]
+			"<16:37:15> <DEBUG>		Found:	0	20	0", -- [1387]
+			"<16:37:15> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:19406::::::::52:70::::1:28:1005:::::|h[Drake~`Fang~`Talisman]|h|r^N2^S14601^t^^	WHISPER	Avisar-Dalaran", -- [1388]
+			"<16:37:15> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:19406::::::::52:70::::1:28:1005:::::|h[Drake~`Fang~`Talisman]|h|r^N2^S14601^t^^	WHISPER	Avisar-Dalaran", -- [1389]
+			"<16:37:15> <DEBUG>		Event:	ENCOUNTER_START	615	Flamegor	9	40", -- [1390]
+			"<16:37:15> <INFO>		UpdatePlayersData()", -- [1391]
+			"<16:37:15> <DEBUG>		Event:	ENCOUNTER_END	615	Flamegor	9	40	1", -- [1392]
+			"<16:37:17> <DEBUG>		Event:	LOOT_READY	true", -- [1393]
+			"<16:37:17> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-11981-00007EBF2C	53795", -- [1394]
+			"<16:37:17> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:16920::::::::52:70::::1:28:1005:::::|h[Handguards of Transcendence]|h|r	4	1	Creature-0-3778-469-18067-11981-00007EBF2C	1", -- [1395]
+			"<16:37:17> <DEBUG>		Adding to self.lootSlotInfo	3	|cffa335ee|Hitem:19430::::::::52:70::::1:28:1005:::::|h[Shroud of Pure Thought]|h|r	4	1	Creature-0-3778-469-18067-11981-00007EBF2C	1", -- [1396]
+			"<16:37:17> <DEBUG>		Event:	LOOT_READY	true", -- [1397]
+			"<16:37:17> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-11981-00007EBF2C	53795", -- [1398]
+			"<16:37:17> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:16920::::::::52:70::::1:28:1005:::::|h[Handguards of Transcendence]|h|r	4	1	Creature-0-3778-469-18067-11981-00007EBF2C	1", -- [1399]
+			"<16:37:17> <DEBUG>		Adding to self.lootSlotInfo	3	|cffa335ee|Hitem:19430::::::::52:70::::1:28:1005:::::|h[Shroud of Pure Thought]|h|r	4	1	Creature-0-3778-469-18067-11981-00007EBF2C	1", -- [1400]
+			"<16:37:17> <DEBUG>		Event:	LOOT_CLOSED", -- [1401]
+			"<16:37:17> <DEBUG>		OnLootSlotCleared()	2	|cffa335ee|Hitem:16920::::::::52:70::::1:28:1005:::::|h[Handguards of Transcendence]|h|r	4", -- [1402]
+			"<16:37:17> <DEBUG>		Event:	LOOT_CLOSED", -- [1403]
+			"<16:37:17> <DEBUG>		OnLootSlotCleared()	3	|cffa335ee|Hitem:19430::::::::52:70::::1:28:1005:::::|h[Shroud of Pure Thought]|h|r	4", -- [1404]
+			"<16:37:17> <DEBUG>		Event:	LOOT_CLOSED", -- [1405]
+			"<16:37:17> <Comm>		^1^Sl^T^N1^S11981^t^^	WHISPER	Avisar-Dalaran", -- [1406]
+			"<16:37:18> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	615	16920	|cffa335ee|Hitem:16920::::::::52:70::::1:28:1005:::::|h[Handguards of Transcendence]|h|r	1	Avisar	PALADIN", -- [1407]
+			"<16:37:18> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	615	19430	|cffa335ee|Hitem:19430::::::::52:70::::1:28:1005:::::|h[Shroud of Pure Thought]|h|r	1	Avisar	PALADIN", -- [1408]
+			"<16:37:19> <DEBUG>		Storage:New	|cffa335ee|Hitem:16920::::::::52:70::::1:28:1005:::::|h[Handguards of Transcendence]|h|r	temp", -- [1409]
+			"<16:37:19> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16920::::::::52:70::::1:28:1005:::::||h[Handguards of Transcendence]||h||r	5", -- [1410]
+			"<16:37:19> <DEBUG>		Found item at	1	1", -- [1411]
+			"<16:37:19> <DEBUG>		Found:	1	1	0", -- [1412]
+			"<16:37:19> <DEBUG>		Storage:New	|cffa335ee|Hitem:19430::::::::52:70::::1:28:1005:::::|h[Shroud of Pure Thought]|h|r	temp", -- [1413]
+			"<16:37:19> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19430::::::::52:70::::1:28:1005:::::||h[Shroud of Pure Thought]||h||r	5", -- [1414]
+			"<16:37:19> <DEBUG>		Found item at	1	2", -- [1415]
+			"<16:37:19> <DEBUG>		Found:	1	2	0", -- [1416]
+			"<16:37:20> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16920::::::::52:70::::1:28:1005:::::||h[Handguards of Transcendence]||h||r	5", -- [1417]
+			"<16:37:20> <DEBUG>		Found item at	1	1", -- [1418]
+			"<16:37:20> <DEBUG>		Found:	1	1	0", -- [1419]
+			"<16:37:20> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19430::::::::52:70::::1:28:1005:::::||h[Shroud of Pure Thought]||h||r	5", -- [1420]
+			"<16:37:20> <DEBUG>		Found item at	1	2", -- [1421]
+			"<16:37:20> <DEBUG>		Found:	1	2	0", -- [1422]
+			"<16:37:21> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:16920::::::::52:70::::1:28:1005:::::|h[Handguards~`of~`Transcendence]|h|r^N2^S11981^t^^	WHISPER	Avisar-Dalaran", -- [1423]
+			"<16:37:21> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:19430::::::::52:70::::1:28:1005:::::|h[Shroud~`of~`Pure~`Thought]|h|r^N2^S11981^t^^	WHISPER	Avisar-Dalaran", -- [1424]
+			"<16:37:26> <DEBUG>		Event:	LOOT_READY	true", -- [1425]
+			"<16:37:26> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12460-00037EBF2C	6107	Creature-0-3778-469-18067-12460-00027EBF2C	5916	Creature-0-3778-469-18067-12460-0002FEBF2C	2504", -- [1426]
+			"<16:37:27> <DEBUG>		Event:	LOOT_READY	true", -- [1427]
+			"<16:37:27> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-12460-00037EBF2C	6107	Creature-0-3778-469-18067-12460-00027EBF2C	5916	Creature-0-3778-469-18067-12460-0002FEBF2C	2504", -- [1428]
+			"<16:37:27> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1429]
+			"<16:37:27> <DEBUG>		Event:	LOOT_CLOSED", -- [1430]
+			"<16:37:27> <DEBUG>		Event:	LOOT_CLOSED", -- [1431]
+			"<16:37:27> <Comm>		^1^Sl^T^N1^S12460^t^^	WHISPER	Avisar-Dalaran", -- [1432]
+			"<16:37:27> <Comm>		^1^Sl^T^N1^S12460^t^^	WHISPER	Avisar-Dalaran", -- [1433]
+			"<16:37:45> <DEBUG>		Event:	ENCOUNTER_START	616	Chromaggus	9	40", -- [1434]
+			"<16:37:45> <INFO>		UpdatePlayersData()", -- [1435]
+			"<16:37:48> <DEBUG>		Event:	ENCOUNTER_END	616	Chromaggus	9	40	1", -- [1436]
+			"<16:37:48> <DEBUG>		Event:	LOOT_READY	true", -- [1437]
+			"<16:37:48> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-14020-00007EBF2C	57056", -- [1438]
+			"<16:37:48> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:19392::::::::52:70::::1:28:1005:::::|h[Girdle of the Fallen Crusader]|h|r	4	1	Creature-0-3778-469-18067-14020-00007EBF2C	1", -- [1439]
+			"<16:37:48> <DEBUG>		Adding to self.lootSlotInfo	3	|cffa335ee|Hitem:16937::::::::52:70::::1:28:1005:::::|h[Dragonstalker's Spaulders]|h|r	4	1	Creature-0-3778-469-18067-14020-00007EBF2C	1", -- [1440]
+			"<16:37:48> <DEBUG>		Adding to self.lootSlotInfo	4	|cffa335ee|Hitem:19361::::::::52:70::::1:28:1005:::::|h[Ashjre'thul, Crossbow of Smiting]|h|r	4	1	Creature-0-3778-469-18067-14020-00007EBF2C	1", -- [1441]
+			"<16:37:48> <DEBUG>		Adding to self.lootSlotInfo	5	|cffa335ee|Hitem:19347::::::::52:70::::1:28:1005:::::|h[Claw of Chromaggus]|h|r	4	1	Creature-0-3778-469-18067-14020-00007EBF2C	1", -- [1442]
+			"<16:37:49> <DEBUG>		Event:	LOOT_READY	true", -- [1443]
+			"<16:37:49> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-14020-00007EBF2C	57056", -- [1444]
+			"<16:37:49> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:19392::::::::52:70::::1:28:1005:::::|h[Girdle of the Fallen Crusader]|h|r	4	1	Creature-0-3778-469-18067-14020-00007EBF2C	1", -- [1445]
+			"<16:37:49> <DEBUG>		Adding to self.lootSlotInfo	3	|cffa335ee|Hitem:16937::::::::52:70::::1:28:1005:::::|h[Dragonstalker's Spaulders]|h|r	4	1	Creature-0-3778-469-18067-14020-00007EBF2C	1", -- [1446]
+			"<16:37:49> <DEBUG>		Adding to self.lootSlotInfo	4	|cffa335ee|Hitem:19361::::::::52:70::::1:28:1005:::::|h[Ashjre'thul, Crossbow of Smiting]|h|r	4	1	Creature-0-3778-469-18067-14020-00007EBF2C	1", -- [1447]
+			"<16:37:49> <DEBUG>		Adding to self.lootSlotInfo	5	|cffa335ee|Hitem:19347::::::::52:70::::1:28:1005:::::|h[Claw of Chromaggus]|h|r	4	1	Creature-0-3778-469-18067-14020-00007EBF2C	1", -- [1448]
+			"<16:37:49> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1449]
+			"<16:37:49> <DEBUG>		Event:	LOOT_CLOSED", -- [1450]
+			"<16:37:49> <DEBUG>		OnLootSlotCleared()	2	|cffa335ee|Hitem:19392::::::::52:70::::1:28:1005:::::|h[Girdle of the Fallen Crusader]|h|r	4", -- [1451]
+			"<16:37:49> <DEBUG>		Event:	LOOT_CLOSED", -- [1452]
+			"<16:37:49> <DEBUG>		OnLootSlotCleared()	3	|cffa335ee|Hitem:16937::::::::52:70::::1:28:1005:::::|h[Dragonstalker's Spaulders]|h|r	4", -- [1453]
+			"<16:37:49> <DEBUG>		Event:	LOOT_CLOSED", -- [1454]
+			"<16:37:49> <DEBUG>		OnLootSlotCleared()	4	|cffa335ee|Hitem:19361::::::::52:70::::1:28:1005:::::|h[Ashjre'thul, Crossbow of Smiting]|h|r	4", -- [1455]
+			"<16:37:49> <DEBUG>		Event:	LOOT_CLOSED", -- [1456]
+			"<16:37:49> <DEBUG>		OnLootSlotCleared()	5	|cffa335ee|Hitem:19347::::::::52:70::::1:28:1005:::::|h[Claw of Chromaggus]|h|r	4", -- [1457]
+			"<16:37:49> <DEBUG>		Event:	LOOT_CLOSED", -- [1458]
+			"<16:37:49> <Comm>		^1^Sl^T^N1^S14020^t^^	WHISPER	Avisar-Dalaran", -- [1459]
+			"<16:37:49> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	616	19392	|cffa335ee|Hitem:19392::::::::52:70::::1:28:1005:::::|h[Girdle of the Fallen Crusader]|h|r	1	Avisar	PALADIN", -- [1460]
+			"<16:37:49> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	616	16937	|cffa335ee|Hitem:16937::::::::52:70::::1:28:1005:::::|h[Dragonstalker's Spaulders]|h|r	1	Avisar	PALADIN", -- [1461]
+			"<16:37:49> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	616	19361	|cffa335ee|Hitem:19361::::::::52:70::::1:28:1005:::::|h[Ashjre'thul, Crossbow of Smiting]|h|r	1	Avisar	PALADIN", -- [1462]
+			"<16:37:49> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	616	19347	|cffa335ee|Hitem:19347::::::::52:70::::1:28:1005:::::|h[Claw of Chromaggus]|h|r	1	Avisar	PALADIN", -- [1463]
+			"<16:37:51> <DEBUG>		Storage:New	|cffa335ee|Hitem:19392::::::::52:70::::1:28:1005:::::|h[Girdle of the Fallen Crusader]|h|r	temp", -- [1464]
+			"<16:37:51> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19392::::::::52:70::::1:28:1005:::::||h[Girdle of the Fallen Crusader]||h||r	5", -- [1465]
+			"<16:37:51> <DEBUG>		Found item at	0	19", -- [1466]
+			"<16:37:51> <DEBUG>		Found:	0	19	0", -- [1467]
+			"<16:37:51> <DEBUG>		Storage:New	|cffa335ee|Hitem:16937::::::::52:70::::1:28:1005:::::|h[Dragonstalker's Spaulders]|h|r	temp", -- [1468]
+			"<16:37:51> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16937::::::::52:70::::1:28:1005:::::||h[Dragonstalker's Spaulders]||h||r	5", -- [1469]
+			"<16:37:51> <DEBUG>		Found item at	0	20", -- [1470]
+			"<16:37:51> <DEBUG>		Found:	0	20	0", -- [1471]
+			"<16:37:51> <DEBUG>		Storage:New	|cffa335ee|Hitem:19361::::::::52:70::::1:28:1005:::::|h[Ashjre'thul, Crossbow of Smiting]|h|r	temp", -- [1472]
+			"<16:37:51> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19361::::::::52:70::::1:28:1005:::::||h[Ashjre'thul, Crossbow of Smiting]||h||r	5", -- [1473]
+			"<16:37:51> <DEBUG>		Found item at	1	1", -- [1474]
+			"<16:37:51> <DEBUG>		Found:	1	1	0", -- [1475]
+			"<16:37:51> <DEBUG>		Storage:New	|cffa335ee|Hitem:19347::::::::52:70::::1:28:1005:::::|h[Claw of Chromaggus]|h|r	temp", -- [1476]
+			"<16:37:51> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19347::::::::52:70::::1:28:1005:::::||h[Claw of Chromaggus]||h||r	5", -- [1477]
+			"<16:37:51> <DEBUG>		Found item at	1	2", -- [1478]
+			"<16:37:51> <DEBUG>		Found:	1	2	0", -- [1479]
+			"<16:37:52> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19347::::::::52:70::::1:28:1005:::::||h[Claw of Chromaggus]||h||r	5", -- [1480]
+			"<16:37:52> <DEBUG>		Found item at	1	2", -- [1481]
+			"<16:37:52> <DEBUG>		Found:	1	2	0", -- [1482]
+			"<16:37:52> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19361::::::::52:70::::1:28:1005:::::||h[Ashjre'thul, Crossbow of Smiting]||h||r	5", -- [1483]
+			"<16:37:52> <DEBUG>		Found item at	1	1", -- [1484]
+			"<16:37:52> <DEBUG>		Found:	1	1	0", -- [1485]
+			"<16:37:52> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16937::::::::52:70::::1:28:1005:::::||h[Dragonstalker's Spaulders]||h||r	5", -- [1486]
+			"<16:37:52> <DEBUG>		Found item at	0	20", -- [1487]
+			"<16:37:52> <DEBUG>		Found:	0	20	0", -- [1488]
+			"<16:37:52> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19392::::::::52:70::::1:28:1005:::::||h[Girdle of the Fallen Crusader]||h||r	5", -- [1489]
+			"<16:37:52> <DEBUG>		Found item at	0	19", -- [1490]
+			"<16:37:52> <DEBUG>		Found:	0	19	0", -- [1491]
+			"<16:37:52> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:19347::::::::52:70::::1:28:1005:::::|h[Claw~`of~`Chromaggus]|h|r^N2^S14020^t^^	WHISPER	Avisar-Dalaran", -- [1492]
+			"<16:37:52> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:19361::::::::52:70::::1:28:1005:::::|h[Ashjre'thul,~`Crossbow~`of~`Smiting]|h|r^N2^S14020^t^^	WHISPER	Avisar-Dalaran", -- [1493]
+			"<16:37:52> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:16937::::::::52:70::::1:28:1005:::::|h[Dragonstalker's~`Spaulders]|h|r^N2^S14020^t^^	WHISPER	Avisar-Dalaran", -- [1494]
+			"<16:37:52> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:19392::::::::52:70::::1:28:1005:::::|h[Girdle~`of~`the~`Fallen~`Crusader]|h|r^N2^S14020^t^^	WHISPER	Avisar-Dalaran", -- [1495]
+			"<16:38:33> <DEBUG>		Event:	ENCOUNTER_START	617	Nefarian	9	40", -- [1496]
+			"<16:38:33> <INFO>		UpdatePlayersData()", -- [1497]
+			"<16:39:59> <DEBUG>		Event:	ENCOUNTER_END	617	Nefarian	9	40	1", -- [1498]
+			"<16:40:00> <DEBUG>		Event:	LOOT_READY	true", -- [1499]
+			"<16:40:00> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-11583-00007EC20E	58463", -- [1500]
+			"<16:40:00> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:16955::::::::52:70::::1:28:1005:::::|h[Judgment Crown]|h|r	4	1	Creature-0-3778-469-18067-11583-00007EC20E	1", -- [1501]
+			"<16:40:00> <DEBUG>		Adding to self.lootSlotInfo	3	|cffa335ee|Hitem:16963::::::::52:70::::1:28:1005:::::|h[Helm of Wrath]|h|r	4	1	Creature-0-3778-469-18067-11583-00007EC20E	1", -- [1502]
+			"<16:40:00> <DEBUG>		Adding to self.lootSlotInfo	4	|cffa335ee|Hitem:19364::::::::52:70::::1:28:1005:::::|h[Ashkandi, Greatsword of the Brotherhood]|h|r	4	1	Creature-0-3778-469-18067-11583-00007EC20E	1", -- [1503]
+			"<16:40:00> <DEBUG>		Adding to self.lootSlotInfo	5	|cffa335ee|Hitem:16966::::::::52:70::::1:28:1005:::::|h[Breastplate of Wrath]|h|r	4	1	Creature-0-3778-469-18067-11583-00007EC20E	1", -- [1504]
+			"<16:40:00> <DEBUG>		Adding to self.lootSlotInfo	6	|cffa335ee|Hitem:16914::::::::52:70::::1:28:1005:::::|h[Netherwind Crown]|h|r	4	1	Creature-0-3778-469-18067-11583-00007EC20E	1", -- [1505]
+			"<16:40:00> <DEBUG>		Adding to self.lootSlotInfo	7	|cff1eff00|Hitem:10389::::::::52:70:::2:6654:1692:1:28:1005:::::|h[Hyperion Legplates of the Fireflash]|h|r	2	1	Creature-0-3778-469-18067-11583-00007EC20E	1", -- [1506]
+			"<16:40:00> <DEBUG>		Adding to self.lootSlotInfo	8	|cff1eff00|Hitem:17969::::::::52:70::::1:28:1005:::::|h[Red Sack of Gems]|h|r	2	1	Creature-0-3778-469-18067-11583-00007EC20E	1", -- [1507]
+			"<16:40:00> <DEBUG>		Adding to self.lootSlotInfo	9	|cff0070dd|Hitem:13047::::::::52:70:::1:6659:1:28:1005:::::|h[Twig of the World Tree]|h|r	3	1	Creature-0-3778-469-18067-11583-00007EC20E	1", -- [1508]
+			"<16:40:00> <DEBUG>		Adding to self.lootSlotInfo	10	|cff1eff00|Hitem:10261::::::::52:70:::2:6654:1708:1:28:1005:::::|h[Adventurer's Bandana of the Aurora]|h|r	2	1	Creature-0-3778-469-18067-11583-00007EC20E	1", -- [1509]
+			"<16:40:00> <DEBUG>		Adding to self.lootSlotInfo	11	|cff0070dd|Hitem:13067::::::::52:70:::1:6658:1:28:1005:::::|h[Hydralick Armor]|h|r	3	1	Creature-0-3778-469-18067-11583-00007EC20E	1", -- [1510]
+			"<16:40:00> <DEBUG>		Event:	LOOT_READY	true", -- [1511]
+			"<16:40:00> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3778-469-18067-11583-00007EC20E	58463", -- [1512]
+			"<16:40:00> <DEBUG>		Adding to self.lootSlotInfo	2	|cffa335ee|Hitem:16955::::::::52:70::::1:28:1005:::::|h[Judgment Crown]|h|r	4	1	Creature-0-3778-469-18067-11583-00007EC20E	1", -- [1513]
+			"<16:40:00> <DEBUG>		Adding to self.lootSlotInfo	3	|cffa335ee|Hitem:16963::::::::52:70::::1:28:1005:::::|h[Helm of Wrath]|h|r	4	1	Creature-0-3778-469-18067-11583-00007EC20E	1", -- [1514]
+			"<16:40:00> <DEBUG>		Adding to self.lootSlotInfo	4	|cffa335ee|Hitem:19364::::::::52:70::::1:28:1005:::::|h[Ashkandi, Greatsword of the Brotherhood]|h|r	4	1	Creature-0-3778-469-18067-11583-00007EC20E	1", -- [1515]
+			"<16:40:00> <DEBUG>		Adding to self.lootSlotInfo	5	|cffa335ee|Hitem:16966::::::::52:70::::1:28:1005:::::|h[Breastplate of Wrath]|h|r	4	1	Creature-0-3778-469-18067-11583-00007EC20E	1", -- [1516]
+			"<16:40:00> <DEBUG>		Adding to self.lootSlotInfo	6	|cffa335ee|Hitem:16914::::::::52:70::::1:28:1005:::::|h[Netherwind Crown]|h|r	4	1	Creature-0-3778-469-18067-11583-00007EC20E	1", -- [1517]
+			"<16:40:00> <DEBUG>		Adding to self.lootSlotInfo	7	|cff1eff00|Hitem:10389::::::::52:70:::2:6654:1692:1:28:1005:::::|h[Hyperion Legplates of the Fireflash]|h|r	2	1	Creature-0-3778-469-18067-11583-00007EC20E	1", -- [1518]
+			"<16:40:00> <DEBUG>		Adding to self.lootSlotInfo	8	|cff1eff00|Hitem:17969::::::::52:70::::1:28:1005:::::|h[Red Sack of Gems]|h|r	2	1	Creature-0-3778-469-18067-11583-00007EC20E	1", -- [1519]
+			"<16:40:00> <DEBUG>		Adding to self.lootSlotInfo	9	|cff0070dd|Hitem:13047::::::::52:70:::1:6659:1:28:1005:::::|h[Twig of the World Tree]|h|r	3	1	Creature-0-3778-469-18067-11583-00007EC20E	1", -- [1520]
+			"<16:40:00> <DEBUG>		Adding to self.lootSlotInfo	10	|cff1eff00|Hitem:10261::::::::52:70:::2:6654:1708:1:28:1005:::::|h[Adventurer's Bandana of the Aurora]|h|r	2	1	Creature-0-3778-469-18067-11583-00007EC20E	1", -- [1521]
+			"<16:40:00> <DEBUG>		Adding to self.lootSlotInfo	11	|cff0070dd|Hitem:13067::::::::52:70:::1:6658:1:28:1005:::::|h[Hydralick Armor]|h|r	3	1	Creature-0-3778-469-18067-11583-00007EC20E	1", -- [1522]
+			"<16:40:00> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1523]
+			"<16:40:00> <DEBUG>		OnLootSlotCleared()	2	|cffa335ee|Hitem:16955::::::::52:70::::1:28:1005:::::|h[Judgment Crown]|h|r	4", -- [1524]
+			"<16:40:00> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	617	16955	|cffa335ee|Hitem:16955::::::::52:70::::1:28:1005:::::|h[Judgment Crown]|h|r	1	Avisar	PALADIN", -- [1525]
+			"<16:40:01> <DEBUG>		OnLootSlotCleared()	3	|cffa335ee|Hitem:16963::::::::52:70::::1:28:1005:::::|h[Helm of Wrath]|h|r	4", -- [1526]
+			"<16:40:01> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	617	16963	|cffa335ee|Hitem:16963::::::::52:70::::1:28:1005:::::|h[Helm of Wrath]|h|r	1	Avisar	PALADIN", -- [1527]
+			"<16:40:01> <DEBUG>		OnLootSlotCleared()	4	|cffa335ee|Hitem:19364::::::::52:70::::1:28:1005:::::|h[Ashkandi, Greatsword of the Brotherhood]|h|r	4", -- [1528]
+			"<16:40:01> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	617	19364	|cffa335ee|Hitem:19364::::::::52:70::::1:28:1005:::::|h[Ashkandi, Greatsword of the Brotherhood]|h|r	1	Avisar	PALADIN", -- [1529]
+			"<16:40:01> <DEBUG>		OnLootSlotCleared()	5	|cffa335ee|Hitem:16966::::::::52:70::::1:28:1005:::::|h[Breastplate of Wrath]|h|r	4", -- [1530]
+			"<16:40:01> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	617	16966	|cffa335ee|Hitem:16966::::::::52:70::::1:28:1005:::::|h[Breastplate of Wrath]|h|r	1	Avisar	PALADIN", -- [1531]
+			"<16:40:01> <DEBUG>		OnLootSlotCleared()	6	|cffa335ee|Hitem:16914::::::::52:70::::1:28:1005:::::|h[Netherwind Crown]|h|r	4", -- [1532]
+			"<16:40:01> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	617	16914	|cffa335ee|Hitem:16914::::::::52:70::::1:28:1005:::::|h[Netherwind Crown]|h|r	1	Avisar	PALADIN", -- [1533]
+			"<16:40:01> <DEBUG>		OnLootSlotCleared()	7	|cff1eff00|Hitem:10389::::::::52:70:::2:6654:1692:1:28:1005:::::|h[Hyperion Legplates of the Fireflash]|h|r	2", -- [1534]
+			"<16:40:02> <DEBUG>		OnLootSlotCleared()	8	|cff1eff00|Hitem:17969::::::::52:70::::1:28:1005:::::|h[Red Sack of Gems]|h|r	2", -- [1535]
+			"<16:40:02> <DEBUG>		OnLootSlotCleared()	9	|cff0070dd|Hitem:13047::::::::52:70:::1:6659:1:28:1005:::::|h[Twig of the World Tree]|h|r	3", -- [1536]
+			"<16:40:02> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	617	13047	|cff0070dd|Hitem:13047::::::::52:70:::1:6659:2:28:1005:9:30:::::|h[Twig of the World Tree]|h|r	1	Avisar	PALADIN", -- [1537]
+			"<16:40:02> <DEBUG>		OnLootSlotCleared()	10	|cff1eff00|Hitem:10261::::::::52:70:::2:6654:1708:1:28:1005:::::|h[Adventurer's Bandana of the Aurora]|h|r	2", -- [1538]
+			"<16:40:02> <DEBUG>		OnLootSlotCleared()	11	|cff0070dd|Hitem:13067::::::::52:70:::1:6658:1:28:1005:::::|h[Hydralick Armor]|h|r	3", -- [1539]
+			"<16:40:02> <DEBUG>		Event:	LOOT_CLOSED", -- [1540]
+			"<16:40:02> <DEBUG>		Event:	LOOT_CLOSED", -- [1541]
+			"<16:40:02> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	617	13067	|cff0070dd|Hitem:13067::::::::52:70:::1:6658:2:28:1005:9:30:::::|h[Hydralick Armor]|h|r	1	Avisar	PALADIN", -- [1542]
+			"<16:40:02> <Comm>		^1^Sl^T^N1^S11583^t^^	WHISPER	Avisar-Dalaran", -- [1543]
+			"<16:40:02> <Comm>		^1^Sl^T^N1^S11583^t^^	WHISPER	Avisar-Dalaran", -- [1544]
+			"<16:40:02> <DEBUG>		Storage:New	|cffa335ee|Hitem:16955::::::::52:70::::1:28:1005:::::|h[Judgment Crown]|h|r	temp", -- [1545]
+			"<16:40:02> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16955::::::::52:70::::1:28:1005:::::||h[Judgment Crown]||h||r	5", -- [1546]
+			"<16:40:02> <DEBUG>		Found item at	0	19", -- [1547]
+			"<16:40:02> <DEBUG>		Found:	0	19	0", -- [1548]
+			"<16:40:03> <DEBUG>		Storage:New	|cffa335ee|Hitem:16963::::::::52:70::::1:28:1005:::::|h[Helm of Wrath]|h|r	temp", -- [1549]
+			"<16:40:03> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16963::::::::52:70::::1:28:1005:::::||h[Helm of Wrath]||h||r	5", -- [1550]
+			"<16:40:03> <DEBUG>		Found item at	0	20", -- [1551]
+			"<16:40:03> <DEBUG>		Found:	0	20	0", -- [1552]
+			"<16:40:03> <DEBUG>		Storage:New	|cffa335ee|Hitem:19364::::::::52:70::::1:28:1005:::::|h[Ashkandi, Greatsword of the Brotherhood]|h|r	temp", -- [1553]
+			"<16:40:03> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19364::::::::52:70::::1:28:1005:::::||h[Ashkandi, Greatsword of the Brotherhood]||h||r	5", -- [1554]
+			"<16:40:03> <DEBUG>		Found item at	1	1", -- [1555]
+			"<16:40:03> <DEBUG>		Found:	1	1	0", -- [1556]
+			"<16:40:03> <DEBUG>		Storage:New	|cffa335ee|Hitem:16966::::::::52:70::::1:28:1005:::::|h[Breastplate of Wrath]|h|r	temp", -- [1557]
+			"<16:40:03> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16966::::::::52:70::::1:28:1005:::::||h[Breastplate of Wrath]||h||r	5", -- [1558]
+			"<16:40:03> <DEBUG>		Found item at	1	2", -- [1559]
+			"<16:40:03> <DEBUG>		Found:	1	2	0", -- [1560]
+			"<16:40:03> <DEBUG>		Storage:New	|cffa335ee|Hitem:16914::::::::52:70::::1:28:1005:::::|h[Netherwind Crown]|h|r	temp", -- [1561]
+			"<16:40:03> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16914::::::::52:70::::1:28:1005:::::||h[Netherwind Crown]||h||r	5", -- [1562]
+			"<16:40:03> <DEBUG>		Found item at	1	3", -- [1563]
+			"<16:40:03> <DEBUG>		Found:	1	3	0", -- [1564]
+			"<16:40:03> <DEBUG>		Storage:New	|cff1eff00|Hitem:10389::::::::52:70:::2:6654:1692:1:28:1005:::::|h[Hyperion Legplates of the Fireflash]|h|r	temp", -- [1565]
+			"<16:40:03> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10389::::::::52:70:::2:6654:1692:1:28:1005:::::||h[Hyperion Legplates of the Fireflash]||h||r	5", -- [1566]
+			"<16:40:03> <DEBUG>		Found:	nil	nil	nil", -- [1567]
+			"<16:40:03> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16955::::::::52:70::::1:28:1005:::::||h[Judgment Crown]||h||r	5", -- [1568]
+			"<16:40:03> <DEBUG>		Found item at	0	19", -- [1569]
+			"<16:40:03> <DEBUG>		Found:	0	19	0", -- [1570]
+			"<16:40:04> <DEBUG>		Storage:New	|cff1eff00|Hitem:17969::::::::52:70::::1:28:1005:::::|h[Red Sack of Gems]|h|r	temp", -- [1571]
+			"<16:40:04> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:17969::::::::52:70::::1:28:1005:::::||h[Red Sack of Gems]||h||r	5", -- [1572]
+			"<16:40:04> <DEBUG>		Found item at	1	5", -- [1573]
+			"<16:40:04> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16963::::::::52:70::::1:28:1005:::::||h[Helm of Wrath]||h||r	5", -- [1574]
+			"<16:40:04> <DEBUG>		Found item at	0	20", -- [1575]
+			"<16:40:04> <DEBUG>		Found:	0	20	0", -- [1576]
+			"<16:40:04> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:16955::::::::52:70::::1:28:1005:::::|h[Judgment~`Crown]|h|r^N2^S11583^t^^	WHISPER	Avisar-Dalaran", -- [1577]
+			"<16:40:04> <DEBUG>		Storage:New	|cff0070dd|Hitem:13047::::::::52:70:::1:6659:1:28:1005:::::|h[Twig of the World Tree]|h|r	temp", -- [1578]
+			"<16:40:04> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:13047::::::::52:70:::1:6659:1:28:1005:::::||h[Twig of the World Tree]||h||r	5", -- [1579]
+			"<16:40:04> <DEBUG>		Found:	nil	nil	nil", -- [1580]
+			"<16:40:04> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:19364::::::::52:70::::1:28:1005:::::||h[Ashkandi, Greatsword of the Brotherhood]||h||r	5", -- [1581]
+			"<16:40:04> <DEBUG>		Found item at	1	1", -- [1582]
+			"<16:40:04> <DEBUG>		Found:	1	1	0", -- [1583]
+			"<16:40:04> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:16963::::::::52:70::::1:28:1005:::::|h[Helm~`of~`Wrath]|h|r^N2^S11583^t^^	WHISPER	Avisar-Dalaran", -- [1584]
+			"<16:40:04> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:19364::::::::52:70::::1:28:1005:::::|h[Ashkandi,~`Greatsword~`of~`the~`Brotherhood]|h|r^N2^S11583^t^^	WHISPER	Avisar-Dalaran", -- [1585]
+			"<16:40:04> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16966::::::::52:70::::1:28:1005:::::||h[Breastplate of Wrath]||h||r	5", -- [1586]
+			"<16:40:04> <DEBUG>		Found item at	1	2", -- [1587]
+			"<16:40:04> <DEBUG>		Found:	1	2	0", -- [1588]
+			"<16:40:04> <DEBUG>		Storage:New	|cff1eff00|Hitem:10261::::::::52:70:::2:6654:1708:1:28:1005:::::|h[Adventurer's Bandana of the Aurora]|h|r	temp", -- [1589]
+			"<16:40:04> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10261::::::::52:70:::2:6654:1708:1:28:1005:::::||h[Adventurer's Bandana of the Aurora]||h||r	5", -- [1590]
+			"<16:40:04> <DEBUG>		Found:	nil	nil	nil", -- [1591]
+			"<16:40:04> <DEBUG>		Storage:New	|cff0070dd|Hitem:13067::::::::52:70:::1:6658:1:28:1005:::::|h[Hydralick Armor]|h|r	temp", -- [1592]
+			"<16:40:04> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:13067::::::::52:70:::1:6658:1:28:1005:::::||h[Hydralick Armor]||h||r	5", -- [1593]
+			"<16:40:04> <DEBUG>		Found:	nil	nil	nil", -- [1594]
+			"<16:40:04> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16914::::::::52:70::::1:28:1005:::::||h[Netherwind Crown]||h||r	5", -- [1595]
+			"<16:40:04> <DEBUG>		Found item at	1	3", -- [1596]
+			"<16:40:04> <DEBUG>		Found:	1	3	0", -- [1597]
+			"<16:40:04> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:16966::::::::52:70::::1:28:1005:::::|h[Breastplate~`of~`Wrath]|h|r^N2^S11583^t^^	WHISPER	Avisar-Dalaran", -- [1598]
+			"<16:40:04> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10389::::::::52:70:::2:6654:1692:1:28:1005:::::||h[Hyperion Legplates of the Fireflash]||h||r	5", -- [1599]
+			"<16:40:04> <DEBUG>		Found:	nil	nil	nil", -- [1600]
+			"<16:40:04> <Comm>		^1^Sn_t^T^N1^S|cffa335ee|Hitem:16914::::::::52:70::::1:28:1005:::::|h[Netherwind~`Crown]|h|r^N2^S11583^t^^	WHISPER	Avisar-Dalaran", -- [1601]
+			"<16:40:05> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:17969::::::::52:70::::1:28:1005:::::||h[Red Sack of Gems]||h||r	5", -- [1602]
+			"<16:40:05> <DEBUG>		Found item at	1	5", -- [1603]
+			"<16:40:05> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:13047::::::::52:70:::1:6659:1:28:1005:::::||h[Twig of the World Tree]||h||r	5", -- [1604]
+			"<16:40:05> <DEBUG>		Found:	nil	nil	nil", -- [1605]
+			"<16:40:05> <Comm>		^1^Stradable^T^N1^S|cff1eff00|Hitem:17969::::::::52:70::::1:28:1005:::::|h[Red~`Sack~`of~`Gems]|h|r^N2^S11583^t^^	WHISPER	Avisar-Dalaran", -- [1606]
+			"<16:40:05> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10261::::::::52:70:::2:6654:1708:1:28:1005:::::||h[Adventurer's Bandana of the Aurora]||h||r	5", -- [1607]
+			"<16:40:05> <DEBUG>		Found:	nil	nil	nil", -- [1608]
+			"<16:40:05> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:13067::::::::52:70:::1:6658:1:28:1005:::::||h[Hydralick Armor]||h||r	5", -- [1609]
+			"<16:40:05> <DEBUG>		Found:	nil	nil	nil", -- [1610]
+			"<16:40:05> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10389::::::::52:70:::2:6654:1692:1:28:1005:::::||h[Hyperion Legplates of the Fireflash]||h||r	5", -- [1611]
+			"<16:40:05> <DEBUG>		Found:	nil	nil	nil", -- [1612]
+			"<16:40:06> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:13047::::::::52:70:::1:6659:1:28:1005:::::||h[Twig of the World Tree]||h||r	5", -- [1613]
+			"<16:40:06> <DEBUG>		Found:	nil	nil	nil", -- [1614]
+			"<16:40:06> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10261::::::::52:70:::2:6654:1708:1:28:1005:::::||h[Adventurer's Bandana of the Aurora]||h||r	5", -- [1615]
+			"<16:40:06> <DEBUG>		Found:	nil	nil	nil", -- [1616]
+			"<16:40:06> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:13067::::::::52:70:::1:6658:1:28:1005:::::||h[Hydralick Armor]||h||r	5", -- [1617]
+			"<16:40:06> <DEBUG>		Found:	nil	nil	nil", -- [1618]
+			"<16:40:06> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10389::::::::52:70:::2:6654:1692:1:28:1005:::::||h[Hyperion Legplates of the Fireflash]||h||r	5", -- [1619]
+			"<16:40:06> <DEBUG>		Found:	nil	nil	nil", -- [1620]
+			"<16:40:06> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:10389::::::::52:70:::2:6654:1692:1:28:1005:::::|h[Hyperion Legplates of the Fireflash]|h|r not found in bags", -- [1621]
+			"<16:40:07> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:13047::::::::52:70:::1:6659:1:28:1005:::::||h[Twig of the World Tree]||h||r	5", -- [1622]
+			"<16:40:07> <DEBUG>		Found:	nil	nil	nil", -- [1623]
+			"<16:40:07> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:13047::::::::52:70:::1:6659:1:28:1005:::::|h[Twig of the World Tree]|h|r not found in bags", -- [1624]
+			"<16:40:07> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10261::::::::52:70:::2:6654:1708:1:28:1005:::::||h[Adventurer's Bandana of the Aurora]||h||r	5", -- [1625]
+			"<16:40:07> <DEBUG>		Found:	nil	nil	nil", -- [1626]
+			"<16:40:07> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:10261::::::::52:70:::2:6654:1708:1:28:1005:::::|h[Adventurer's Bandana of the Aurora]|h|r not found in bags", -- [1627]
+			"<16:40:07> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:13067::::::::52:70:::1:6658:1:28:1005:::::||h[Hydralick Armor]||h||r	5", -- [1628]
+			"<16:40:07> <DEBUG>		Found:	nil	nil	nil", -- [1629]
+			"<16:40:07> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:13067::::::::52:70:::1:6658:1:28:1005:::::|h[Hydralick Armor]|h|r not found in bags", -- [1630]
+			"<16:40:36> <DEBUG>		Event:	LOOT_READY	true", -- [1631]
+			"<16:40:36> <DEBUG>		Event:	LOOT_READY	true", -- [1632]
+			"<16:40:37> <DEBUG>		Event:	LOOT_CLOSED", -- [1633]
+			"<16:40:37> <DEBUG>		Event:	LOOT_CLOSED", -- [1634]
+			"<16:43:41> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1635]
+			"<16:43:41> <INFO>		UpdatePlayersData()", -- [1636]
+			"<16:43:45> <DEBUG>		GetML()", -- [1637]
+			"<16:48:45> <DEBUG>		Event:	LOOT_READY	true", -- [1638]
+			"<16:48:45> <DEBUG>		Event:	LOOT_READY	true", -- [1639]
+			"<16:48:50> <DEBUG>		Event:	LOOT_READY	true", -- [1640]
+			"<16:48:50> <DEBUG>		Event:	LOOT_READY	true", -- [1641]
+			"<16:48:52> <DEBUG>		Event:	LOOT_READY	true", -- [1642]
+			"<16:48:52> <DEBUG>		Event:	LOOT_READY	true", -- [1643]
+			"<16:48:59> <DEBUG>		Event:	LOOT_READY	true", -- [1644]
+			"<16:48:59> <DEBUG>		Event:	LOOT_READY	true", -- [1645]
+			"<16:49:03> <DEBUG>		Event:	LOOT_READY	true", -- [1646]
+			"<16:49:04> <DEBUG>		Event:	LOOT_READY	true", -- [1647]
+			"<16:49:40> <DEBUG>		Event:	LOOT_READY	true", -- [1648]
+			"<16:49:40> <DEBUG>		Event:	LOOT_READY	true", -- [1649]
+			"<16:49:44> <DEBUG>		Event:	LOOT_READY	true", -- [1650]
+			"<16:49:44> <DEBUG>		Event:	LOOT_READY	true", -- [1651]
+			"<16:49:48> <DEBUG>		Event:	LOOT_READY	true", -- [1652]
+			"<16:49:49> <DEBUG>		Event:	LOOT_READY	true", -- [1653]
+			"<16:49:51> <DEBUG>		Event:	LOOT_READY	true", -- [1654]
+			"<16:49:52> <DEBUG>		Event:	LOOT_READY	true", -- [1655]
+			"<16:49:52> <DEBUG>		Event:	LOOT_READY	true", -- [1656]
+			"<16:50:25> <DEBUG>		Event:	LOOT_READY	true", -- [1657]
+			"<16:50:26> <DEBUG>		Event:	LOOT_READY	true", -- [1658]
+			"<16:50:30> <DEBUG>		Event:	LOOT_READY	true", -- [1659]
+			"<16:50:30> <DEBUG>		Event:	LOOT_READY	true", -- [1660]
+			"<16:50:48> <DEBUG>		Event:	LOOT_READY	true", -- [1661]
+			"<16:50:48> <DEBUG>		Event:	LOOT_READY	true", -- [1662]
+			"<16:52:09> <DEBUG>		Event:	LOOT_READY	true", -- [1663]
+			"<16:52:09> <DEBUG>		Event:	LOOT_READY	true", -- [1664]
+			"<16:52:16> <DEBUG>		Event:	LOOT_READY	true", -- [1665]
+			"<16:52:17> <DEBUG>		Event:	LOOT_READY	true", -- [1666]
+			"<16:55:35> <DEBUG>		Event:	LOOT_READY	true", -- [1667]
+			"<16:55:35> <DEBUG>		Event:	LOOT_READY	true", -- [1668]
+			"<16:55:40> <DEBUG>		Event:	LOOT_READY	true", -- [1669]
+			"<16:55:40> <DEBUG>		Event:	LOOT_READY	true", -- [1670]
+			"<16:55:50> <DEBUG>		Event:	LOOT_READY	true", -- [1671]
+			"<16:55:51> <DEBUG>		Event:	LOOT_READY	true", -- [1672]
+			"<16:55:53> <DEBUG>		Event:	LOOT_READY	true", -- [1673]
+			"<16:55:53> <DEBUG>		Event:	LOOT_READY	true", -- [1674]
+			"<16:56:08> <DEBUG>		Event:	LOOT_READY	true", -- [1675]
+			"<16:56:08> <DEBUG>		Event:	LOOT_READY	true", -- [1676]
+			"<16:56:22> <DEBUG>		Event:	LOOT_READY	true", -- [1677]
+			"<16:56:22> <DEBUG>		Event:	LOOT_READY	true", -- [1678]
+			"<16:56:25> <DEBUG>		Event:	LOOT_READY	true", -- [1679]
+			"<16:56:25> <DEBUG>		Event:	LOOT_READY	true", -- [1680]
+			"<16:56:29> <DEBUG>		Event:	LOOT_READY	true", -- [1681]
+			"<16:56:29> <DEBUG>		Event:	LOOT_READY	true", -- [1682]
+			"<16:56:37> <DEBUG>		Event:	LOOT_READY	true", -- [1683]
+			"<16:56:37> <DEBUG>		Event:	LOOT_READY	true", -- [1684]
+			"<16:56:40> <DEBUG>		Event:	LOOT_READY	true", -- [1685]
+			"<16:56:40> <DEBUG>		Event:	LOOT_READY	true", -- [1686]
+			"<16:56:44> <DEBUG>		Event:	LOOT_READY	true", -- [1687]
+			"<16:56:45> <DEBUG>		Event:	LOOT_READY	true", -- [1688]
+			"<16:56:50> <DEBUG>		Event:	LOOT_READY	true", -- [1689]
+			"<16:56:50> <DEBUG>		Event:	LOOT_READY	true", -- [1690]
+			"<16:57:12> <DEBUG>		Event:	LOOT_READY	true", -- [1691]
+			"<16:57:13> <DEBUG>		Event:	LOOT_READY	true", -- [1692]
+			"<16:57:21> <DEBUG>		Event:	LOOT_READY	true", -- [1693]
+			"<16:57:21> <DEBUG>		Event:	LOOT_READY	true", -- [1694]
+			"<16:57:30> <DEBUG>		Event:	LOOT_READY	true", -- [1695]
+			"<16:57:31> <DEBUG>		Event:	LOOT_READY	true", -- [1696]
+			"<16:57:36> <DEBUG>		Event:	LOOT_READY	true", -- [1697]
+			"<16:57:36> <DEBUG>		Event:	LOOT_READY	true", -- [1698]
+			"<16:57:42> <DEBUG>		Event:	LOOT_READY	true", -- [1699]
+			"<16:57:42> <DEBUG>		Event:	LOOT_READY	true", -- [1700]
+			"<16:57:50> <DEBUG>		Event:	LOOT_READY	true", -- [1701]
+			"<16:57:50> <DEBUG>		Event:	LOOT_READY	true", -- [1702]
+			"<17:00:09> <DEBUG>		Event:	LOOT_READY	true", -- [1703]
+			"<17:00:09> <DEBUG>		Event:	LOOT_READY	true", -- [1704]
+			"<17:00:16> <DEBUG>		Event:	LOOT_READY	true", -- [1705]
+			"<17:00:16> <DEBUG>		Event:	LOOT_READY	true", -- [1706]
+			"<17:00:20> <DEBUG>		Event:	LOOT_READY	true", -- [1707]
+			"<17:00:20> <DEBUG>		Event:	LOOT_READY	true", -- [1708]
+			"<17:00:21> <DEBUG>		Event:	LOOT_READY	true", -- [1709]
+			"<17:00:22> <DEBUG>		Event:	LOOT_READY	true", -- [1710]
+			"<17:00:29> <DEBUG>		Event:	LOOT_READY	true", -- [1711]
+			"<17:00:30> <DEBUG>		Event:	LOOT_READY	true", -- [1712]
+			"<17:00:34> <DEBUG>		Event:	LOOT_READY	true", -- [1713]
+			"<17:00:34> <DEBUG>		Event:	LOOT_READY	true", -- [1714]
+			"<17:00:40> <DEBUG>		Event:	LOOT_READY	true", -- [1715]
+			"<17:00:40> <DEBUG>		Event:	LOOT_READY	true", -- [1716]
+			"<17:00:44> <DEBUG>		Event:	LOOT_READY	true", -- [1717]
+			"<17:00:45> <DEBUG>		Event:	LOOT_READY	true", -- [1718]
+			"<17:00:49> <DEBUG>		Event:	LOOT_READY	true", -- [1719]
+			"<17:00:49> <DEBUG>		Event:	LOOT_READY	true", -- [1720]
+			"<17:01:14> <DEBUG>		Event:	LOOT_READY	true", -- [1721]
+			"<17:01:14> <DEBUG>		Event:	LOOT_READY	true", -- [1722]
+			"<17:01:21> <DEBUG>		Event:	LOOT_READY	true", -- [1723]
+			"<17:01:21> <DEBUG>		Event:	LOOT_READY	true", -- [1724]
+			"<17:01:32> <DEBUG>		Event:	LOOT_READY	true", -- [1725]
+			"<17:01:32> <DEBUG>		Event:	LOOT_READY	true", -- [1726]
+			"<17:01:42> <DEBUG>		Event:	LOOT_READY	true", -- [1727]
+			"<17:01:42> <DEBUG>		Event:	LOOT_READY	true", -- [1728]
+			"<17:01:55> <DEBUG>		Event:	LOOT_READY	true", -- [1729]
+			"<17:01:56> <DEBUG>		Event:	LOOT_READY	true", -- [1730]
+			"<17:02:01> <DEBUG>		Event:	LOOT_READY	true", -- [1731]
+			"<17:02:01> <DEBUG>		Event:	LOOT_READY	true", -- [1732]
+			"<17:02:05> <DEBUG>		Event:	LOOT_READY	true", -- [1733]
+			"<17:02:05> <DEBUG>		Event:	LOOT_READY	true", -- [1734]
+			"<17:02:12> <DEBUG>		Event:	LOOT_READY	true", -- [1735]
+			"<17:02:12> <DEBUG>		Event:	LOOT_READY	true", -- [1736]
+			"<17:04:37> <DEBUG>		Event:	LOOT_READY	true", -- [1737]
+			"<17:04:37> <DEBUG>		Event:	LOOT_READY	true", -- [1738]
+			"<17:04:50> <DEBUG>		Event:	LOOT_READY	true", -- [1739]
+			"<17:04:50> <DEBUG>		Event:	LOOT_READY	true", -- [1740]
+			"<17:04:57> <DEBUG>		Event:	LOOT_READY	true", -- [1741]
+			"<17:04:58> <DEBUG>		Event:	LOOT_READY	true", -- [1742]
+			"<17:05:05> <DEBUG>		Event:	LOOT_READY	true", -- [1743]
+			"<17:05:05> <DEBUG>		Event:	LOOT_READY	true", -- [1744]
+			"<17:05:21> <DEBUG>		Event:	LOOT_READY	true", -- [1745]
+			"<17:05:21> <DEBUG>		Event:	LOOT_READY	true", -- [1746]
+			"<17:06:35> <DEBUG>		Event:	LOOT_READY	true", -- [1747]
+			"<17:06:36> <DEBUG>		Event:	LOOT_READY	true", -- [1748]
+			"<17:06:40> <DEBUG>		Event:	LOOT_READY	true", -- [1749]
+			"<17:06:40> <DEBUG>		Event:	LOOT_READY	true", -- [1750]
+			"<17:06:46> <DEBUG>		Event:	LOOT_READY	true", -- [1751]
+			"<17:06:52> <DEBUG>		Event:	LOOT_READY	true", -- [1752]
+			"<17:06:52> <DEBUG>		Event:	LOOT_READY	true", -- [1753]
+			"<17:07:02> <DEBUG>		Event:	LOOT_READY	true", -- [1754]
+			"<17:07:02> <DEBUG>		Event:	LOOT_READY	true", -- [1755]
+			"<17:07:07> <DEBUG>		Event:	LOOT_READY	true", -- [1756]
+			"<17:07:13> <DEBUG>		Event:	LOOT_READY	true", -- [1757]
+			"<17:07:13> <DEBUG>		Event:	LOOT_READY	true", -- [1758]
+			"<17:07:18> <DEBUG>		Event:	LOOT_READY	true", -- [1759]
+			"<17:07:18> <DEBUG>		Event:	LOOT_READY	true", -- [1760]
+			"<17:07:24> <DEBUG>		Event:	LOOT_READY	true", -- [1761]
+			"<17:07:24> <DEBUG>		Event:	LOOT_READY	true", -- [1762]
+			"<17:07:30> <DEBUG>		Event:	LOOT_READY	true", -- [1763]
+			"<17:07:38> <DEBUG>		Event:	LOOT_READY	true", -- [1764]
+			"<17:07:38> <DEBUG>		Event:	LOOT_READY	true", -- [1765]
+			"<17:07:40> <DEBUG>		Event:	LOOT_READY	true", -- [1766]
+			"<17:07:40> <DEBUG>		Event:	LOOT_READY	true", -- [1767]
+			"<17:15:20> <DEBUG>		Event:	LOOT_READY	true", -- [1768]
+			"<17:15:21> <DEBUG>		Event:	LOOT_READY	true", -- [1769]
+			"<17:15:22> <DEBUG>		Event:	LOOT_READY	true", -- [1770]
+			"<17:15:23> <DEBUG>		Event:	LOOT_READY	true", -- [1771]
+			"<17:15:28> <DEBUG>		Event:	LOOT_READY	true", -- [1772]
+			"<17:15:28> <DEBUG>		Event:	LOOT_READY	true", -- [1773]
+			"<17:15:30> <DEBUG>		Event:	LOOT_READY	true", -- [1774]
+			"<17:15:31> <DEBUG>		Event:	LOOT_READY	true", -- [1775]
+			"<17:15:36> <DEBUG>		Event:	LOOT_READY	true", -- [1776]
+			"<17:15:36> <DEBUG>		Event:	LOOT_READY	true", -- [1777]
+			"<17:15:43> <DEBUG>		Event:	LOOT_READY	true", -- [1778]
+			"<17:15:43> <DEBUG>		Event:	LOOT_READY	true", -- [1779]
+			"<17:15:48> <DEBUG>		Event:	LOOT_READY	true", -- [1780]
+			"<17:15:48> <DEBUG>		Event:	LOOT_READY	true", -- [1781]
+			"<17:15:53> <DEBUG>		Event:	LOOT_READY	true", -- [1782]
+			"<17:15:53> <DEBUG>		Event:	LOOT_READY	true", -- [1783]
+			"<17:15:56> <DEBUG>		Event:	LOOT_READY	true", -- [1784]
+			"<17:15:56> <DEBUG>		Event:	LOOT_READY	true", -- [1785]
+			"<17:16:00> <DEBUG>		Event:	LOOT_READY	true", -- [1786]
+			"<17:16:00> <DEBUG>		Event:	LOOT_READY	true", -- [1787]
+			"<17:16:02> <DEBUG>		Event:	LOOT_READY	true", -- [1788]
+			"<17:16:02> <DEBUG>		Event:	LOOT_READY	true", -- [1789]
+			"<17:16:08> <DEBUG>		Event:	LOOT_READY	true", -- [1790]
+			"<17:16:08> <DEBUG>		Event:	LOOT_READY	true", -- [1791]
+			"<17:16:10> <DEBUG>		Event:	LOOT_READY	true", -- [1792]
+			"<17:16:10> <DEBUG>		Event:	LOOT_READY	true", -- [1793]
+			"<17:16:14> <DEBUG>		Event:	LOOT_READY	true", -- [1794]
+			"<17:16:14> <DEBUG>		Event:	LOOT_READY	true", -- [1795]
+			"<17:16:20> <DEBUG>		Event:	LOOT_READY	true", -- [1796]
+			"<17:16:20> <DEBUG>		Event:	LOOT_READY	true", -- [1797]
+			"<17:16:24> <DEBUG>		Event:	LOOT_READY	true", -- [1798]
+			"<17:16:24> <DEBUG>		Event:	LOOT_READY	true", -- [1799]
+			"<17:16:31> <DEBUG>		Event:	LOOT_READY	true", -- [1800]
+			"<17:16:31> <DEBUG>		Event:	LOOT_READY	true", -- [1801]
+			"<17:18:30> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1802]
+			"<17:18:30> <INFO>		UpdatePlayersData()", -- [1803]
+			"<17:18:32> <DEBUG>		GetML()", -- [1804]
+			"05/13/22", -- [1805]
+			"<17:24:55> <INFO>		Logged In", -- [1806]
+			"<17:24:55> [ML]<INFO>		Init", -- [1807]
+			"<17:24:55> <INFO>		RCLootCouncil	TradeUI enabled", -- [1808]
+			"<17:25:17> <INFO>		Shanyt-ArgentDawn	3.3.0	nil", -- [1809]
+			"<17:25:17> <DEBUG>		ActivateSkin	bfa", -- [1810]
+			"<17:25:30> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1811]
+			"<17:25:30> <INFO>		UpdatePlayersData()", -- [1812]
+			"<17:25:30> <INFO>		Player relog...", -- [1813]
+			"<17:25:34> <DEBUG>		GetPlayersGuildRank()", -- [1814]
+			"<17:25:34> <DEBUG>		GetPlayersGuildRank()", -- [1815]
+			"<17:25:34> <DEBUG>		Found Guild Rank: Thuerge", -- [1816]
+			"<17:25:43> <DEBUG>		GetML()", -- [1817]
+			"<17:25:43> <DEBUG>		Storage:New	|cffa335ee|Hitem:16825::::::::52:70::::1:28:1004:::::|h[Nightslayer Bracelets]|h|r	temp	restored	table: 000001E18F178BD0", -- [1818]
+			"<17:25:43> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16825::::::::52:70::::1:28:1004:::::||h[Nightslayer Bracelets]||h||r	5", -- [1819]
+			"<17:25:43> <DEBUG>		Found:	nil	nil	nil", -- [1820]
+			"<17:25:43> <WARNING>		ItemStorage, db item no longer in bags	|cffa335ee|Hitem:16825::::::::52:70::::1:28:1004:::::|h[Nightslayer Bracelets]|h|r", -- [1821]
+			"<17:25:43> <DEBUG>		Storage:RemoveItem	|cffa335ee|Hitem:16825::::::::52:70::::1:28:1004:::::|h[Nightslayer Bracelets]|h|r", -- [1822]
+			"<17:25:43> <DEBUG>		Storage:New	|cffa335ee|Hitem:16850::::::::52:70::::1:28:1004:::::|h[Giantstalker's Bracers]|h|r	temp	restored	table: 000001E18F178D10", -- [1823]
+			"<17:25:43> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16850::::::::52:70::::1:28:1004:::::||h[Giantstalker's Bracers]||h||r	5", -- [1824]
+			"<17:25:43> <DEBUG>		Found:	nil	nil	nil", -- [1825]
+			"<17:25:43> <WARNING>		ItemStorage, db item no longer in bags	|cffa335ee|Hitem:16850::::::::52:70::::1:28:1004:::::|h[Giantstalker's Bracers]|h|r", -- [1826]
+			"<17:25:43> <DEBUG>		Storage:RemoveItem	|cffa335ee|Hitem:16850::::::::52:70::::1:28:1004:::::|h[Giantstalker's Bracers]|h|r", -- [1827]
+			"<17:25:43> <DEBUG>		Storage:New	|cffa335ee|Hitem:16857::::::::52:70::::1:28:1004:::::|h[Lawbringer Bracers]|h|r	temp	restored	table: 000001E18F178E50", -- [1828]
+			"<17:25:43> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16857::::::::52:70::::1:28:1004:::::||h[Lawbringer Bracers]||h||r	5", -- [1829]
+			"<17:25:43> <DEBUG>		Found:	nil	nil	nil", -- [1830]
+			"<17:25:43> <WARNING>		ItemStorage, db item no longer in bags	|cffa335ee|Hitem:16857::::::::52:70::::1:28:1004:::::|h[Lawbringer Bracers]|h|r", -- [1831]
+			"<17:25:43> <DEBUG>		Storage:RemoveItem	|cffa335ee|Hitem:16857::::::::52:70::::1:28:1004:::::|h[Lawbringer Bracers]|h|r", -- [1832]
+			"<17:25:43> <DEBUG>		Storage:New	|cffa335ee|Hitem:16851::::::::52:70::::1:28:1004:::::|h[Giantstalker's Belt]|h|r	temp	restored	table: 000001E18F178F90", -- [1833]
+			"<17:25:43> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16851::::::::52:70::::1:28:1004:::::||h[Giantstalker's Belt]||h||r	5", -- [1834]
+			"<17:25:43> <DEBUG>		Found:	nil	nil	nil", -- [1835]
+			"<17:25:43> <WARNING>		ItemStorage, db item no longer in bags	|cffa335ee|Hitem:16851::::::::52:70::::1:28:1004:::::|h[Giantstalker's Belt]|h|r", -- [1836]
+			"<17:25:43> <DEBUG>		Storage:RemoveItem	|cffa335ee|Hitem:16851::::::::52:70::::1:28:1004:::::|h[Giantstalker's Belt]|h|r", -- [1837]
+			"05/13/22", -- [1838]
+			"<21:43:14> <INFO>		Logged In", -- [1839]
+			"<21:43:14> [ML]<INFO>		Init", -- [1840]
+			"<21:43:14> <INFO>		RCLootCouncil	TradeUI enabled", -- [1841]
+			"<21:43:38> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Shanyt-ArgentDawn	Player-75-058380E2", -- [1842]
+			"<21:43:38> <INFO>		Shanyt-ArgentDawn	3.3.0	nil", -- [1843]
+			"<21:43:38> <DEBUG>		ActivateSkin	bfa", -- [1844]
+			"<21:43:54> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1845]
+			"<21:43:54> <INFO>		UpdatePlayersData()", -- [1846]
+			"<21:43:54> <INFO>		Player relog...", -- [1847]
+			"<21:44:02> <DEBUG>		GetPlayersGuildRank()", -- [1848]
+			"<21:44:03> <DEBUG>		GetPlayersGuildRank()", -- [1849]
+			"<21:44:03> <DEBUG>		Found Guild Rank: Thuerge", -- [1850]
+			"<21:44:14> <DEBUG>		GetML()", -- [1851]
+			"<21:44:14> <DEBUG>		Storage:New	|cff1eff00|Hitem:16251::::::::52:70::::1:28:1004:::::|h[Formula: Enchant Bracer - Superior Stamina]|h|r	temp	restored	table: 00000275F8267550", -- [1852]
+			"<21:44:14> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:16251::::::::52:70::::1:28:1004:::::||h[Formula: Enchant Bracer - Superior Stamina]||h||r	5", -- [1853]
+			"<21:44:14> <DEBUG>		Found:	nil	nil	nil", -- [1854]
+			"<21:44:14> <WARNING>		ItemStorage, db item no longer in bags	|cff1eff00|Hitem:16251::::::::52:70::::1:28:1004:::::|h[Formula: Enchant Bracer - Superior Stamina]|h|r", -- [1855]
+			"<21:44:14> <DEBUG>		Storage:RemoveItem	|cff1eff00|Hitem:16251::::::::52:70::::1:28:1004:::::|h[Formula: Enchant Bracer - Superior Stamina]|h|r", -- [1856]
+			"<21:44:14> <DEBUG>		Storage:New	|cffa335ee|Hitem:16851::::::::52:70::::1:28:1004:::::|h[Giantstalker's Belt]|h|r	temp	restored	table: 00000275F8267690", -- [1857]
+			"<21:44:14> <DEBUG>		Storage: searching for item:	||cffa335ee||Hitem:16851::::::::52:70::::1:28:1004:::::||h[Giantstalker's Belt]||h||r	5", -- [1858]
+			"<21:44:14> <DEBUG>		Found:	nil	nil	nil", -- [1859]
+			"<21:44:14> <WARNING>		ItemStorage, db item no longer in bags	|cffa335ee|Hitem:16851::::::::52:70::::1:28:1004:::::|h[Giantstalker's Belt]|h|r", -- [1860]
+			"<21:44:14> <DEBUG>		Storage:RemoveItem	|cffa335ee|Hitem:16851::::::::52:70::::1:28:1004:::::|h[Giantstalker's Belt]|h|r", -- [1861]
+			"<21:48:40> <DEBUG>		Event:	LOOT_READY	true", -- [1862]
+			"<21:48:40> <DEBUG>		Event:	LOOT_READY	true", -- [1863]
+			"<21:48:40> <DEBUG>		Event:	LOOT_READY	true", -- [1864]
+			"<21:48:56> <DEBUG>		Event:	LOOT_READY	true", -- [1865]
+			"<21:48:56> <DEBUG>		Event:	LOOT_READY	true", -- [1866]
+			"<21:49:05> <DEBUG>		Event:	LOOT_READY	true", -- [1867]
+			"<21:49:06> <DEBUG>		Event:	LOOT_READY	true", -- [1868]
+			"<21:49:23> <DEBUG>		Event:	LOOT_READY	true", -- [1869]
+			"<21:49:24> <DEBUG>		Event:	LOOT_READY	true", -- [1870]
+			"<21:49:29> <DEBUG>		Event:	LOOT_READY	true", -- [1871]
+			"<21:49:29> <DEBUG>		Event:	LOOT_READY	true", -- [1872]
+			"<21:49:51> <DEBUG>		Event:	LOOT_READY	true", -- [1873]
+			"<21:49:51> <DEBUG>		Event:	LOOT_READY	true", -- [1874]
+			"<21:50:06> <DEBUG>		Event:	LOOT_READY	true", -- [1875]
+			"<21:50:07> <DEBUG>		Event:	LOOT_READY	true", -- [1876]
+			"<21:50:38> <DEBUG>		Event:	LOOT_READY	true", -- [1877]
+			"<21:50:38> <DEBUG>		Event:	LOOT_READY	true", -- [1878]
+			"<21:51:02> <DEBUG>		Event:	LOOT_READY	true", -- [1879]
+			"<21:51:02> <DEBUG>		Event:	LOOT_READY	true", -- [1880]
+			"<21:51:40> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1881]
+			"<21:51:42> <DEBUG>		GetML()", -- [1882]
+			"<21:51:42> <Data.Player>		CreatePlayer	Player-1171-07B982FB", -- [1883]
+			"<21:51:42> <DEBUG>		Resetting council as we have a new ML!", -- [1884]
+			"<21:51:42> <INFO>		MasterLooter = 	Aryatha-WyrmrestAccord", -- [1885]
+			"<21:51:47> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1886]
+			"<21:51:49> <DEBUG>		GetML()", -- [1887]
+			"<21:51:49> <Data.Player>		CreatePlayer	Player-96-0CC11717", -- [1888]
+			"<21:51:49> <DEBUG>		Resetting council as we have a new ML!", -- [1889]
+			"<21:51:49> <INFO>		MasterLooter = 	Afktornado-Skullcrusher", -- [1890]
+			"<21:51:57> <DEBUG>		Timer MLdb_check passed", -- [1891]
+			"<21:51:57> <Comm>		^1^Sxrealm^T^N1^SAfktornado-Skullcrusher^N2^SMLdb_request^t^^	RAID	Shanyt-ArgentDawn", -- [1892]
+			"<21:51:57> <Comm>		^1^Sxrealm^T^N1^SAfktornado-Skullcrusher^N2^Scouncil_request^t^^	RAID	Shanyt-ArgentDawn", -- [1893]
+			"<21:52:03> <DEBUG>		Event:	GROUP_LEFT	1	Party-60-1-00003FCA74E1", -- [1894]
+			"<21:52:03> <DEBUG>		GetML()", -- [1895]
+			"<21:52:04> <DEBUG>		Timer MLdb_check passed", -- [1896]
+			"<21:52:14> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1897]
+			"<21:52:16> <DEBUG>		GetML()", -- [1898]
+			"<21:52:16> <Data.Player>		CreatePlayer	Player-71-09CACDF7", -- [1899]
+			"<21:52:16> <DEBUG>		Resetting council as we have a new ML!", -- [1900]
+			"<21:52:16> <INFO>		MasterLooter = 	Kimbul-AlteracMountains", -- [1901]
+			"<21:52:31> <DEBUG>		Timer MLdb_check passed", -- [1902]
+			"<21:52:31> <Comm>		^1^Sxrealm^T^N1^SKimbul-AlteracMountains^N2^SMLdb_request^t^^	RAID	Shanyt-ArgentDawn", -- [1903]
+			"<21:52:31> <Comm>		^1^Sxrealm^T^N1^SKimbul-AlteracMountains^N2^Scouncil_request^t^^	RAID	Shanyt-ArgentDawn", -- [1904]
+			"<21:52:46> <Comm>		^1^Sxrealm^T^N1^SKimbul-AlteracMountains^N2^SMLdb_request^t^^	RAID	Tesus-Area52", -- [1905]
+			"<21:52:46> <Comm>		^1^Sxrealm^T^N1^SKimbul-AlteracMountains^N2^Scouncil_request^t^^	RAID	Tesus-Area52", -- [1906]
+			"<21:54:43> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1907]
+			"<21:54:45> <DEBUG>		GetML()", -- [1908]
+			"<21:54:45> <Data.Player>		CreatePlayer	Player-3209-08CE0CF5", -- [1909]
+			"<21:54:45> <DEBUG>		Resetting council as we have a new ML!", -- [1910]
+			"<21:54:45> <INFO>		MasterLooter = 	Camuflada-Azralon", -- [1911]
+			"<21:54:45> <Comm>		^1^SplayerInfoRequest^T^t^^	RAID	Camuflada-Azralon", -- [1912]
+			"<21:54:45> <Comm>		^1^Smldb^T^N1^T^S|8^T^S|14^T^S|5^N3^t^t^S|12^N60^S|11^T^S|14^T^t^t^S|1^B^S|5^N3^S|2^B^t^t^^	RAID	Camuflada-Azralon", -- [1913]
+			"<21:54:45> <INFO>		OnMLDBReceived", -- [1914]
+			"<21:54:45> <Comm>		^1^Sxrealm^T^N1^SCamuflada-Azralon^N2^SpI^N3^SDAMAGER^N4^SThuerge^N6^N0^N7^N225.75^N8^N71^t^^	RAID	Shanyt-ArgentDawn", -- [1915]
+			"<21:54:47> <Comm>		^1^Scouncil^T^N1^T^S3209-08CE0CF5^B^t^t^^	RAID	Camuflada-Azralon", -- [1916]
+			"<21:54:47> <DEBUG>		isCouncil	false", -- [1917]
+			"<21:54:51> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1918]
+			"<21:54:53> <DEBUG>		GetML()", -- [1919]
+			"<21:54:53> <Data.Player>		CreatePlayer	Player-11-0E2A3EDB", -- [1920]
+			"<21:54:53> <DEBUG>		Resetting council as we have a new ML!", -- [1921]
+			"<21:54:53> <INFO>		MasterLooter = 	Phatkiwi-Tichondrius", -- [1922]
+			"<21:55:00> <DEBUG>		Timer MLdb_check passed", -- [1923]
+			"<21:55:05> <DEBUG>		Event:	GROUP_LEFT	1	Party-71-1-00003FCA7988", -- [1924]
+			"<21:55:05> <DEBUG>		GetML()", -- [1925]
+			"<21:55:08> <DEBUG>		Timer MLdb_check passed", -- [1926]
+			"<21:56:38> <DEBUG>		Event:	LOOT_READY	true", -- [1927]
+			"<21:56:38> <DEBUG>		Event:	LOOT_READY	true", -- [1928]
+			"<21:56:55> <DEBUG>		Event:	LOOT_READY	true", -- [1929]
+			"<21:56:55> <DEBUG>		Event:	LOOT_READY	true", -- [1930]
+			"<21:57:17> <DEBUG>		Event:	LOOT_READY	true", -- [1931]
+			"<21:57:17> <DEBUG>		Event:	LOOT_READY	true", -- [1932]
+			"<21:57:17> <DEBUG>		Event:	LOOT_READY	true", -- [1933]
+			"<21:57:50> <DEBUG>		Event:	LOOT_READY	true", -- [1934]
+			"<21:57:50> <DEBUG>		Event:	LOOT_READY	true", -- [1935]
+			"<21:58:03> <DEBUG>		Event:	LOOT_READY	true", -- [1936]
+			"<21:58:03> <DEBUG>		Event:	LOOT_READY	true", -- [1937]
+			"<21:58:23> <DEBUG>		Event:	LOOT_READY	true", -- [1938]
+			"<21:58:23> <DEBUG>		Event:	LOOT_READY	true", -- [1939]
+			"<21:58:25> <DEBUG>		Event:	LOOT_READY	true", -- [1940]
+			"<21:58:25> <DEBUG>		Event:	LOOT_READY	true", -- [1941]
+			"<21:58:32> <DEBUG>		Event:	LOOT_READY	true", -- [1942]
+			"<21:58:32> <DEBUG>		Event:	LOOT_READY	true", -- [1943]
+			"<21:58:47> <DEBUG>		Event:	LOOT_READY	true", -- [1944]
+			"<21:58:47> <DEBUG>		Event:	LOOT_READY	true", -- [1945]
+			"<21:59:19> <DEBUG>		Event:	LOOT_READY	true", -- [1946]
+			"<21:59:19> <DEBUG>		Event:	LOOT_READY	true", -- [1947]
+			"<22:02:38> <DEBUG>		Event:	LOOT_READY	true", -- [1948]
+			"<22:02:38> <DEBUG>		Event:	LOOT_READY	true", -- [1949]
+			"<22:06:23> <DEBUG>		Event:	LOOT_READY	true", -- [1950]
+			"<22:06:31> <DEBUG>		Event:	LOOT_READY	true", -- [1951]
+			"<22:06:42> <DEBUG>		Event:	LOOT_READY	true", -- [1952]
+			"<22:06:56> <DEBUG>		Event:	LOOT_READY	true", -- [1953]
+			"<22:07:09> <DEBUG>		Event:	LOOT_READY	true", -- [1954]
+			"<22:07:16> <DEBUG>		Event:	LOOT_READY	true", -- [1955]
+			"<22:07:32> <DEBUG>		Event:	LOOT_READY	true", -- [1956]
+			"<22:07:47> <DEBUG>		Event:	LOOT_READY	true", -- [1957]
+			"<22:08:16> <DEBUG>		Event:	LOOT_READY	true", -- [1958]
+			"<22:08:27> <DEBUG>		Event:	LOOT_READY	true", -- [1959]
+			"<22:08:45> <DEBUG>		Event:	LOOT_READY	true", -- [1960]
+			"<22:09:02> <DEBUG>		Event:	LOOT_READY	true", -- [1961]
+			"05/15/22", -- [1962]
+			"<09:35:11> <INFO>		Logged In", -- [1963]
+			"<09:35:11> [ML]<INFO>		Init", -- [1964]
+			"<09:35:11> <INFO>		RCLootCouncil	TradeUI enabled", -- [1965]
+			"<09:35:34> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Shanyt-ArgentDawn	Player-75-058380E2", -- [1966]
+			"<09:35:34> <INFO>		Shanyt-ArgentDawn	3.3.0	nil", -- [1967]
+			"<09:35:34> <DEBUG>		ActivateSkin	bfa", -- [1968]
+			"<09:35:47> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1969]
+			"<09:35:47> <INFO>		UpdatePlayersData()", -- [1970]
+			"<09:35:47> <INFO>		Player relog...", -- [1971]
+			"<09:35:53> <DEBUG>		GetPlayersGuildRank()", -- [1972]
+			"<09:35:53> <DEBUG>		GetPlayersGuildRank()", -- [1973]
+			"<09:35:53> <DEBUG>		Found Guild Rank: Thuerge", -- [1974]
+			"<09:36:01> <DEBUG>		GetML()", -- [1975]
+			"<09:36:01> <DEBUG>		Storage:New	|cff0070dd|Hitem:18257::::::::52:70::::1:28:1004:::::|h[Recipe: Major Rejuvenation Potion]|h|r	temp	restored	table: 000001ACFD0D3980", -- [1976]
+			"<09:36:01> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:18257::::::::52:70::::1:28:1004:::::||h[Recipe: Major Rejuvenation Potion]||h||r	5", -- [1977]
+			"<09:36:01> <DEBUG>		Found:	nil	nil	nil", -- [1978]
+			"<09:36:01> <WARNING>		ItemStorage, db item no longer in bags	|cff0070dd|Hitem:18257::::::::52:70::::1:28:1004:::::|h[Recipe: Major Rejuvenation Potion]|h|r", -- [1979]
+			"<09:36:01> <DEBUG>		Storage:RemoveItem	|cff0070dd|Hitem:18257::::::::52:70::::1:28:1004:::::|h[Recipe: Major Rejuvenation Potion]|h|r", -- [1980]
+			"<09:37:28> <DEBUG>		Event:	LOOT_READY	true", -- [1981]
+			"<09:37:28> <DEBUG>		Event:	LOOT_READY	true", -- [1982]
+			"05/16/22", -- [1983]
+			"<02:08:05> <INFO>		Logged In", -- [1984]
+			"<02:08:05> [ML]<INFO>		Init", -- [1985]
+			"<02:08:05> <INFO>		RCLootCouncil	TradeUI enabled", -- [1986]
+			"<02:08:29> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Shanyt-ArgentDawn	Player-75-058380E2", -- [1987]
+			"<02:08:29> <INFO>		Shanyt-ArgentDawn	3.3.0	nil", -- [1988]
+			"<02:08:29> <DEBUG>		ActivateSkin	bfa", -- [1989]
+			"<02:08:42> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1990]
+			"<02:08:42> <INFO>		UpdatePlayersData()", -- [1991]
+			"<02:08:42> <INFO>		Player relog...", -- [1992]
+			"<02:08:46> <DEBUG>		GetPlayersGuildRank()", -- [1993]
+			"<02:08:46> <DEBUG>		Found Guild Rank: Thuerge", -- [1994]
+			"<02:08:55> <DEBUG>		GetML()", -- [1995]
+			"<02:08:55> <DEBUG>		Storage:New	|cff1eff00|Hitem:17969::::::::52:70::::1:28:1005:::::|h[Red Sack of Gems]|h|r	temp	restored	table: 00000275F9F50890", -- [1996]
+			"<02:08:55> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:17969::::::::52:70::::1:28:1005:::::||h[Red Sack of Gems]||h||r	5", -- [1997]
+			"<02:08:55> <DEBUG>		Found:	nil	nil	nil", -- [1998]
+			"<02:08:55> <WARNING>		ItemStorage, db item no longer in bags	|cff1eff00|Hitem:17969::::::::52:70::::1:28:1005:::::|h[Red Sack of Gems]|h|r", -- [1999]
+			"<02:08:55> <DEBUG>		Storage:RemoveItem	|cff1eff00|Hitem:17969::::::::52:70::::1:28:1005:::::|h[Red Sack of Gems]|h|r", -- [2000]
 		},
-		["oldVersion"] = "3.2.1",
-		["regionID"] = 1,
 		["locale"] = "enUS",
 		["version"] = "3.3.0",
+		["oldVersion"] = "3.2.1",
+		["regionID"] = 1,
 		["cache"] = {
 			["player"] = {
+				["Player-11-0E2A3EDB"] = {
+					["name"] = "Phatkiwi-Tichondrius",
+					["guid"] = "Player-11-0E2A3EDB",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1652493293,
+					["realm"] = "Tichondrius",
+				},
 				["Player-54-0AD15E94"] = {
 					["name"] = "Lillys-Blackhand",
 					["guid"] = "Player-54-0AD15E94",
@@ -2160,7 +2125,7 @@ RCLootCouncilDB = {
 					["name"] = "Avisar-Dalaran",
 					["guid"] = "Player-3683-0BE4455C",
 					["class"] = "PALADIN",
-					["cache_time"] = 1652077626,
+					["cache_time"] = 1652471465,
 					["realm"] = "Dalaran",
 				},
 				["Player-1425-0ADD9236"] = {
@@ -2524,7 +2489,7 @@ RCLootCouncilDB = {
 					["name"] = "Zulbathal-Zul'jin",
 					["guid"] = "Player-61-0CA8EB69",
 					["class"] = "DRUID",
-					["cache_time"] = 1652077333,
+					["cache_time"] = 1652471249,
 					["realm"] = "Zul'jin",
 				},
 				["Player-96-0CC10407"] = {
@@ -2540,6 +2505,13 @@ RCLootCouncilDB = {
 					["class"] = "DEATHKNIGHT",
 					["cache_time"] = 1651455328,
 					["realm"] = "EmeraldDream",
+				},
+				["Player-3209-08CE0CF5"] = {
+					["name"] = "Camuflada-Azralon",
+					["guid"] = "Player-3209-08CE0CF5",
+					["class"] = "ROGUE",
+					["cache_time"] = 1652493287,
+					["realm"] = "Azralon",
 				},
 				["Player-3678-0B65E4F4"] = {
 					["name"] = "Rekithekami-Thrall",
@@ -2569,6 +2541,20 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605058753,
 					["realm"] = "Ravencrest",
 				},
+				["Player-1175-0D89818C"] = {
+					["name"] = "Slanken-Gnomeregan",
+					["guid"] = "Player-1175-0D89818C",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1604700988,
+					["realm"] = "Gnomeregan",
+				},
+				["Player-151-08E7289A"] = {
+					["name"] = "Palmeroelia-Uther",
+					["guid"] = "Player-151-08E7289A",
+					["class"] = "DRUID",
+					["cache_time"] = 1646479721,
+					["realm"] = "Uther",
+				},
 				["Player-3678-0BB440F6"] = {
 					["name"] = "Chaddacus-Thrall",
 					["guid"] = "Player-3678-0BB440F6",
@@ -2583,33 +2569,33 @@ RCLootCouncilDB = {
 					["cache_time"] = 1604698885,
 					["realm"] = "Destromath",
 				},
-				["Player-1175-0D89818C"] = {
-					["name"] = "Slanken-Gnomeregan",
-					["guid"] = "Player-1175-0D89818C",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1604700988,
-					["realm"] = "Gnomeregan",
-				},
-				["Player-3675-079E7C51"] = {
-					["name"] = "Xhilvanas-MoonGuard",
-					["guid"] = "Player-3675-079E7C51",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1637137074,
-					["realm"] = "MoonGuard",
-				},
-				["Player-3683-0CB6231E"] = {
-					["name"] = "Varlouris-Dalaran",
-					["guid"] = "Player-3683-0CB6231E",
+				["Player-96-0CC11717"] = {
+					["name"] = "Afktornado-Skullcrusher",
+					["guid"] = "Player-96-0CC11717",
 					["class"] = "SHAMAN",
-					["cache_time"] = 1648343273,
-					["realm"] = "Dalaran",
+					["cache_time"] = 1652493109,
+					["realm"] = "Skullcrusher",
 				},
-				["Player-1427-076E7426"] = {
-					["name"] = "Requiemm-Ragnaros",
-					["guid"] = "Player-1427-076E7426",
+				["Player-1175-0CB5A0D6"] = {
+					["name"] = "Furyfortwo-Malfurion",
+					["guid"] = "Player-1175-0CB5A0D6",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1651547807,
+					["realm"] = "Malfurion",
+				},
+				["Player-1171-07B982FB"] = {
+					["name"] = "Aryatha-WyrmrestAccord",
+					["guid"] = "Player-1171-07B982FB",
 					["class"] = "PRIEST",
-					["cache_time"] = 1645168417,
-					["realm"] = "Ragnaros",
+					["cache_time"] = 1652493102,
+					["realm"] = "WyrmrestAccord",
+				},
+				["Player-61-0B1B8B19"] = {
+					["name"] = "Vitapally-Zul'jin",
+					["guid"] = "Player-61-0B1B8B19",
+					["class"] = "PALADIN",
+					["cache_time"] = 1651270935,
+					["realm"] = "Zul'jin",
 				},
 				["Player-1428-0915848B"] = {
 					["name"] = "Andarin-Quel'Thalas",
@@ -2618,12 +2604,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1650503063,
 					["realm"] = "Quel'Thalas",
 				},
-				["Player-3726-0BDFB652"] = {
-					["name"] = "Shelah-Khaz'goroth",
-					["guid"] = "Player-3726-0BDFB652",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1605424192,
-					["realm"] = "Khaz'goroth",
+				["Player-1428-0A2D5217"] = {
+					["name"] = "Lightcors-Quel'Thalas",
+					["guid"] = "Player-1428-0A2D5217",
+					["class"] = "PALADIN",
+					["cache_time"] = 1604874907,
+					["realm"] = "Quel'Thalas",
+				},
+				["Player-67-0DBC2E9B"] = {
+					["name"] = "Frankyice-Cho'gall",
+					["guid"] = "Player-67-0DBC2E9B",
+					["class"] = "PRIEST",
+					["cache_time"] = 1650500249,
+					["realm"] = "Cho'gall",
 				},
 				["Player-69-0D1E083E"] = {
 					["name"] = "Quesadiazy-Arthas",
@@ -2636,31 +2629,31 @@ RCLootCouncilDB = {
 					["role"] = "DAMAGER",
 					["name"] = "Joseishi-Ragnaros",
 					["guid"] = "Player-1427-0D9EAC58",
-					["realm"] = "Ragnaros",
+					["rank"] = "Member",
 					["class"] = "MONK",
 					["cache_time"] = 1645168619,
-					["rank"] = "Member",
+					["realm"] = "Ragnaros",
 				},
-				["Player-1168-09FCF163"] = {
-					["name"] = "Crazycam-Frostmane",
-					["guid"] = "Player-1168-09FCF163",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1638111681,
-					["realm"] = "Frostmane",
+				["Player-100-016B5029"] = {
+					["name"] = "Rhodaria-EarthenRing",
+					["guid"] = "Player-100-016B5029",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1637293108,
+					["realm"] = "EarthenRing",
 				},
-				["Player-57-0D347122"] = {
-					["name"] = "Bonegamble-Illidan",
-					["guid"] = "Player-57-0D347122",
-					["class"] = "ROGUE",
-					["cache_time"] = 1644648584,
-					["realm"] = "Illidan",
+				["Player-3676-0DA0924F"] = {
+					["name"] = "Varose-Area52",
+					["guid"] = "Player-3676-0DA0924F",
+					["class"] = "MAGE",
+					["cache_time"] = 1650500431,
+					["realm"] = "Area52",
 				},
-				["Player-163-0B1A7ED5"] = {
-					["name"] = "Foexonexfoe-Lightninghoof",
-					["guid"] = "Player-163-0B1A7ED5",
-					["class"] = "ROGUE",
-					["cache_time"] = 1637460321,
-					["realm"] = "Lightninghoof",
+				["Player-163-0AA06887"] = {
+					["name"] = "Bountyhunter-TwistingNether",
+					["guid"] = "Player-163-0AA06887",
+					["class"] = "HUNTER",
+					["cache_time"] = 1637292012,
+					["realm"] = "TwistingNether",
 				},
 				["Player-3676-0AD53F73"] = {
 					["name"] = "Tozal-Area52",
@@ -2690,12 +2683,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1644801415,
 					["realm"] = "Tichondrius",
 				},
-				["Player-163-07EE0763"] = {
-					["name"] = "Drinkycrow-Lightninghoof",
-					["guid"] = "Player-163-07EE0763",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1605015590,
-					["realm"] = "Lightninghoof",
+				["Player-75-0A33732A"] = {
+					["name"] = "Tyran-ArgentDawn",
+					["guid"] = "Player-75-0A33732A",
+					["class"] = "MAGE",
+					["cache_time"] = 1623596411,
+					["realm"] = "",
 				},
 				["Player-4-09D6EABB"] = {
 					["name"] = "Salsrath-Kilrogg",
@@ -2704,12 +2697,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1612658087,
 					["realm"] = "Kilrogg",
 				},
-				["Player-114-08D301B8"] = {
-					["name"] = "Beaujob-Dragonblight",
-					["guid"] = "Player-114-08D301B8",
-					["class"] = "HUNTER",
-					["cache_time"] = 1604700190,
-					["realm"] = "Dragonblight",
+				["Player-71-09CACDF7"] = {
+					["name"] = "Kimbul-AlteracMountains",
+					["guid"] = "Player-71-09CACDF7",
+					["class"] = "DRUID",
+					["cache_time"] = 1652493136,
+					["realm"] = "AlteracMountains",
 				},
 				["Player-52-0CB380DE"] = {
 					["name"] = "Börte-Medivh",
@@ -2718,12 +2711,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605676860,
 					["realm"] = "Medivh",
 				},
-				["Player-1185-087ADE86"] = {
-					["name"] = "Gulf-Quel'dorei",
-					["guid"] = "Player-1185-087ADE86",
-					["class"] = "PRIEST",
-					["cache_time"] = 1644648309,
-					["realm"] = "Quel'dorei",
+				["Player-73-0CC81FDC"] = {
+					["name"] = "Saxen-BleedingHollow",
+					["guid"] = "Player-73-0CC81FDC",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1605478962,
+					["realm"] = "BleedingHollow",
 				},
 				["Player-73-0DF508EF"] = {
 					["name"] = "Ineloras-BleedingHollow",
@@ -2732,12 +2725,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1604874543,
 					["realm"] = "BleedingHollow",
 				},
-				["Player-3678-099FCF5E"] = {
-					["name"] = "Darquis-Thrall",
-					["guid"] = "Player-3678-099FCF5E",
-					["class"] = "HUNTER",
-					["cache_time"] = 1637137182,
-					["realm"] = "Thrall",
+				["Player-1185-087ADE86"] = {
+					["name"] = "Gulf-Quel'dorei",
+					["guid"] = "Player-1185-087ADE86",
+					["class"] = "PRIEST",
+					["cache_time"] = 1644648309,
+					["realm"] = "Quel'dorei",
 				},
 				["Player-3683-0C12FF2D"] = {
 					["name"] = "Noäh-Dalaran",
@@ -2746,33 +2739,33 @@ RCLootCouncilDB = {
 					["cache_time"] = 1604875537,
 					["realm"] = "Dalaran",
 				},
-				["Player-1426-0AE01960"] = {
-					["name"] = "Lyssanoria-AeriePeak",
-					["guid"] = "Player-1426-0AE01960",
-					["class"] = "DRUID",
-					["cache_time"] = 1605285527,
-					["realm"] = "AeriePeak",
-				},
-				["Player-160-0B17AED5"] = {
-					["name"] = "Lodkavalier-Azuremyst",
-					["guid"] = "Player-160-0B17AED5",
+				["Player-162-06AEDAF0"] = {
+					["name"] = "Vage-EmeraldDream",
+					["guid"] = "Player-162-06AEDAF0",
 					["class"] = "WARRIOR",
-					["cache_time"] = 1605660343,
-					["realm"] = "Azuremyst",
+					["cache_time"] = 1605290630,
+					["realm"] = "EmeraldDream",
 				},
-				["Player-3661-084E3FCA"] = {
-					["name"] = "Badazzme-Hyjal",
-					["guid"] = "Player-3661-084E3FCA",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1637282866,
-					["realm"] = "Hyjal",
+				["Player-9-0DCC3930"] = {
+					["name"] = "Dominija-Kil'jaeden",
+					["guid"] = "Player-9-0DCC3930",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1605923326,
+					["realm"] = "Kil'jaeden",
 				},
-				["Player-60-0DF162C1"] = {
-					["name"] = "Fhaita-Stormrage",
-					["guid"] = "Player-60-0DF162C1",
-					["class"] = "PRIEST",
-					["cache_time"] = 1605291376,
-					["realm"] = "Stormrage",
+				["Player-118-00DC8ECC"] = {
+					["name"] = "Drayk-Feathermoon",
+					["guid"] = "Player-118-00DC8ECC",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1637283490,
+					["realm"] = "Feathermoon",
+				},
+				["Player-118-0A78A279"] = {
+					["name"] = "Phaliias-Feathermoon",
+					["guid"] = "Player-118-0A78A279",
+					["class"] = "MAGE",
+					["cache_time"] = 1637292007,
+					["realm"] = "Feathermoon",
 				},
 				["Player-57-0D11D4AD"] = {
 					["name"] = "Pantaloon-Illidan",
@@ -2781,12 +2774,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1651270818,
 					["realm"] = "Illidan",
 				},
-				["Player-1168-069744DF"] = {
-					["name"] = "Bluecoder-Cenarius",
-					["guid"] = "Player-1168-069744DF",
-					["class"] = "PRIEST",
-					["cache_time"] = 1605285204,
-					["realm"] = "Cenarius",
+				["Player-1070-08CBE548"] = {
+					["name"] = "Sapper-Terokkar",
+					["guid"] = "Player-1070-08CBE548",
+					["class"] = "HUNTER",
+					["cache_time"] = 1650503226,
+					["realm"] = "Terokkar",
 				},
 				["Player-84-0A47099D"] = {
 					["name"] = "Fissure-Dragonmaw",
@@ -2795,12 +2788,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1644648586,
 					["realm"] = "Dragonmaw",
 				},
-				["Player-1171-0A347FCC"] = {
-					["name"] = "Cassy-WyrmrestAccord",
-					["guid"] = "Player-1171-0A347FCC",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1605059571,
-					["realm"] = "WyrmrestAccord",
+				["Player-61-0E7E9705"] = {
+					["name"] = "Abyronterner-Zul'jin",
+					["guid"] = "Player-61-0E7E9705",
+					["class"] = "MONK",
+					["cache_time"] = 1623090360,
+					["realm"] = "",
 				},
 				["Player-61-0E7E1DFE"] = {
 					["name"] = "Laymonan-Zul'jin",
@@ -2821,12 +2814,12 @@ RCLootCouncilDB = {
 					["guid"] = "Player-75-058380E2",
 					["class"] = "WARRIOR",
 					["role"] = "DAMAGER",
-					["cache_time"] = 1652078342,
-					["realm"] = "Argent Dawn",
+					["cache_time"] = 1652477117,
+					["rank"] = "Thuerge",
 					["name"] = "Shanyt-ArgentDawn",
 					["specID"] = 71,
 					["enchantingLvl"] = 0,
-					["rank"] = "Thuerge",
+					["realm"] = "Argent Dawn",
 				},
 				["Player-3721-0BEE5730"] = {
 					["name"] = "Amonthree-Nagrand",
@@ -2842,12 +2835,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1637291844,
 					["realm"] = "Feathermoon",
 				},
-				["Player-75-0B7FB5EB"] = {
-					["name"] = "Lisperwind-TheScryers",
-					["guid"] = "Player-75-0B7FB5EB",
-					["class"] = "MAGE",
-					["cache_time"] = 1605660567,
-					["realm"] = "TheScryers",
+				["Player-1175-0D8CD76A"] = {
+					["name"] = "Engel-Gnomeregan",
+					["guid"] = "Player-1175-0D8CD76A",
+					["class"] = "PRIEST",
+					["cache_time"] = 1604700946,
+					["realm"] = "Gnomeregan",
 				},
 				["Player-3683-0C0E386E"] = {
 					["name"] = "Illingrath-Dalaran",
@@ -2863,19 +2856,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605290247,
 					["realm"] = "Alexstrasza",
 				},
-				["Player-61-0E7E9705"] = {
-					["name"] = "Abyronterner-Zul'jin",
-					["guid"] = "Player-61-0E7E9705",
-					["class"] = "MONK",
-					["cache_time"] = 1623090360,
-					["realm"] = "",
+				["Player-60-0DF162C1"] = {
+					["name"] = "Fhaita-Stormrage",
+					["guid"] = "Player-60-0DF162C1",
+					["class"] = "PRIEST",
+					["cache_time"] = 1605291376,
+					["realm"] = "Stormrage",
 				},
-				["Player-1136-08908D6E"] = {
-					["name"] = "Kashta-Garrosh",
-					["guid"] = "Player-1136-08908D6E",
-					["class"] = "ROGUE",
-					["cache_time"] = 1605213336,
-					["realm"] = "Garrosh",
+				["Player-1171-0A347FCC"] = {
+					["name"] = "Cassy-WyrmrestAccord",
+					["guid"] = "Player-1171-0A347FCC",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1605059571,
+					["realm"] = "WyrmrestAccord",
 				},
 				["Player-61-0E7EA216"] = {
 					["name"] = "Charbeatic-Zul'jin",
@@ -2891,19 +2884,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1604877041,
 					["realm"] = "TolBarad",
 				},
-				["Player-1175-0D8CD76A"] = {
-					["name"] = "Engel-Gnomeregan",
-					["guid"] = "Player-1175-0D8CD76A",
-					["class"] = "PRIEST",
-					["cache_time"] = 1604700946,
-					["realm"] = "Gnomeregan",
+				["Player-12-062BA247"] = {
+					["name"] = "Serenefyre-SilverHand",
+					["guid"] = "Player-12-062BA247",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1637206618,
+					["realm"] = "SilverHand",
 				},
-				["Player-1175-0B424A2A"] = {
-					["name"] = "Slaygore-Trollbane",
-					["guid"] = "Player-1175-0B424A2A",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1644991472,
-					["realm"] = "Trollbane",
+				["Player-3693-0CEED0C4"] = {
+					["name"] = "Talonius-Kel'Thuzad",
+					["guid"] = "Player-3693-0CEED0C4",
+					["class"] = "PALADIN",
+					["cache_time"] = 1605292516,
+					["realm"] = "Kel'Thuzad",
 				},
 				["Player-61-0E7EA0A9"] = {
 					["name"] = "Banuumine-Zul'jin",
@@ -2912,12 +2905,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1623093728,
 					["realm"] = "",
 				},
-				["Player-3683-0B9BAB24"] = {
-					["name"] = "Thorinbane-Dalaran",
-					["guid"] = "Player-3683-0B9BAB24",
+				["Player-84-001F04E3"] = {
+					["name"] = "Hownow-Dragonmaw",
+					["guid"] = "Player-84-001F04E3",
 					["class"] = "WARRIOR",
-					["cache_time"] = 1648345032,
-					["realm"] = "Dalaran",
+					["cache_time"] = 1604700977,
+					["realm"] = "Dragonmaw",
 				},
 				["Player-1185-0D69EB5E"] = {
 					["name"] = "Samsquamch-Boulderfist",
@@ -2961,6 +2954,13 @@ RCLootCouncilDB = {
 					["cache_time"] = 1650503038,
 					["realm"] = "Ragnaros",
 				},
+				["Player-11-0BB8771F"] = {
+					["name"] = "Koepphunt-Tichondrius",
+					["guid"] = "Player-11-0BB8771F",
+					["class"] = "HUNTER",
+					["cache_time"] = 1604699132,
+					["realm"] = "Tichondrius",
+				},
 				["Player-3209-08503025"] = {
 					["name"] = "Kadrorg-Azralon",
 					["guid"] = "Player-3209-08503025",
@@ -2968,19 +2968,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1651271045,
 					["realm"] = "Azralon",
 				},
-				["Player-76-0A40D7E1"] = {
-					["name"] = "Kittywfleas-Sargeras",
-					["guid"] = "Player-76-0A40D7E1",
-					["class"] = "DRUID",
-					["cache_time"] = 1605291587,
-					["realm"] = "Sargeras",
-				},
-				["Player-61-0E7EA163"] = {
-					["name"] = "Guufnah-Zul'jin",
-					["guid"] = "Player-61-0E7EA163",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1623096804,
-					["realm"] = "",
+				["Player-3683-0B9BAB24"] = {
+					["name"] = "Thorinbane-Dalaran",
+					["guid"] = "Player-3683-0B9BAB24",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1648345032,
+					["realm"] = "Dalaran",
 				},
 				["Player-3683-0BD93453"] = {
 					["name"] = "Scarletglove-Dalaran",
@@ -2989,12 +2982,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1606323520,
 					["realm"] = "Dalaran",
 				},
-				["Player-11-0BB8771F"] = {
-					["name"] = "Koepphunt-Tichondrius",
-					["guid"] = "Player-11-0BB8771F",
-					["class"] = "HUNTER",
-					["cache_time"] = 1604699132,
-					["realm"] = "Tichondrius",
+				["Player-3723-0BE33132"] = {
+					["name"] = "Darkpup-Barthilas",
+					["guid"] = "Player-3723-0BE33132",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1605478421,
+					["realm"] = "Barthilas",
 				},
 				["Player-115-03E8863F"] = {
 					["name"] = "Bahummbug-Draenor",
@@ -3024,6 +3017,13 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605212276,
 					["realm"] = "Illidan",
 				},
+				["Player-96-0CBEA15E"] = {
+					["name"] = "Durlok-BlackDragonflight",
+					["guid"] = "Player-96-0CBEA15E",
+					["class"] = "DRUID",
+					["cache_time"] = 1645397985,
+					["realm"] = "Black Dragonflight",
+				},
 				["Player-61-0C01CBBE"] = {
 					["name"] = "Shoesalesman-Zul'jin",
 					["guid"] = "Player-61-0C01CBBE",
@@ -3031,26 +3031,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1644903523,
 					["realm"] = "Zul'jin",
 				},
-				["Player-11-0D995E85"] = {
-					["name"] = "Huker-Tichondrius",
-					["guid"] = "Player-11-0D995E85",
+				["Player-3683-0B9BC2E8"] = {
+					["name"] = "Rotclaugh-Dalaran",
+					["guid"] = "Player-3683-0B9BC2E8",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1648343669,
+					["realm"] = "Dalaran",
+				},
+				["Player-1427-04360738"] = {
+					["name"] = "Afkautoshot-Ragnaros",
+					["guid"] = "Player-1427-04360738",
 					["class"] = "HUNTER",
-					["cache_time"] = 1651033194,
-					["realm"] = "Tichondrius",
-				},
-				["Player-3678-07B7087C"] = {
-					["name"] = "Cwaerslainte-Thrall",
-					["guid"] = "Player-3678-07B7087C",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1646479492,
-					["realm"] = "Thrall",
-				},
-				["Player-96-0CBEA15E"] = {
-					["name"] = "Durlok-BlackDragonflight",
-					["guid"] = "Player-96-0CBEA15E",
-					["class"] = "DRUID",
-					["cache_time"] = 1645397985,
-					["realm"] = "Black Dragonflight",
+					["cache_time"] = 1637396416,
+					["realm"] = "Ragnaros",
 				},
 				["Player-61-0E7E9545"] = {
 					["name"] = "Jasmoney-Zul'jin",
@@ -3066,12 +3059,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1648402087,
 					["realm"] = "Dalaran",
 				},
-				["Player-3683-0B9BC2E8"] = {
-					["name"] = "Rotclaugh-Dalaran",
-					["guid"] = "Player-3683-0B9BC2E8",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1648343669,
-					["realm"] = "Dalaran",
+				["Player-3678-07B7087C"] = {
+					["name"] = "Cwaerslainte-Thrall",
+					["guid"] = "Player-3678-07B7087C",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1646479492,
+					["realm"] = "Thrall",
 				},
 				["Player-155-067CCD01"] = {
 					["name"] = "Hoovehearted-Executus",
@@ -3094,12 +3087,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605290739,
 					["realm"] = "Proudmoore",
 				},
-				["Player-1427-04360738"] = {
-					["name"] = "Afkautoshot-Ragnaros",
-					["guid"] = "Player-1427-04360738",
+				["Player-11-0D995E85"] = {
+					["name"] = "Huker-Tichondrius",
+					["guid"] = "Player-11-0D995E85",
 					["class"] = "HUNTER",
-					["cache_time"] = 1637396416,
-					["realm"] = "Ragnaros",
+					["cache_time"] = 1651033194,
+					["realm"] = "Tichondrius",
 				},
 				["Player-75-0A3EC0ED"] = {
 					["name"] = "Shaekhan-ArgentDawn",
@@ -3108,12 +3101,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1606106807,
 					["realm"] = "ArgentDawn",
 				},
-				["Player-3723-0BE33132"] = {
-					["name"] = "Darkpup-Barthilas",
-					["guid"] = "Player-3723-0BE33132",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1605478421,
-					["realm"] = "Barthilas",
+				["Player-61-0E7EA163"] = {
+					["name"] = "Guufnah-Zul'jin",
+					["guid"] = "Player-61-0E7EA163",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1623096804,
+					["realm"] = "",
 				},
 				["Player-3684-0D9AC65F"] = {
 					["name"] = "Wizzytest-Mal'Ganis",
@@ -3122,12 +3115,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1646443722,
 					["realm"] = "Mal'Ganis",
 				},
-				["Player-84-001F04E3"] = {
-					["name"] = "Hownow-Dragonmaw",
-					["guid"] = "Player-84-001F04E3",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1604700977,
-					["realm"] = "Dragonmaw",
+				["Player-76-0A40D7E1"] = {
+					["name"] = "Kittywfleas-Sargeras",
+					["guid"] = "Player-76-0A40D7E1",
+					["class"] = "DRUID",
+					["cache_time"] = 1605291587,
+					["realm"] = "Sargeras",
 				},
 				["Player-1175-0E10C601"] = {
 					["name"] = "Sinpie-Moonrunner",
@@ -3136,19 +3129,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605292309,
 					["realm"] = "Moonrunner",
 				},
-				["Player-12-062BA247"] = {
-					["name"] = "Serenefyre-SilverHand",
-					["guid"] = "Player-12-062BA247",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1637206618,
-					["realm"] = "SilverHand",
+				["Player-1175-0B424A2A"] = {
+					["name"] = "Slaygore-Trollbane",
+					["guid"] = "Player-1175-0B424A2A",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1644991472,
+					["realm"] = "Trollbane",
 				},
-				["Player-3693-0CEED0C4"] = {
-					["name"] = "Talonius-Kel'Thuzad",
-					["guid"] = "Player-3693-0CEED0C4",
-					["class"] = "PALADIN",
-					["cache_time"] = 1605292516,
-					["realm"] = "Kel'Thuzad",
+				["Player-1136-08908D6E"] = {
+					["name"] = "Kashta-Garrosh",
+					["guid"] = "Player-1136-08908D6E",
+					["class"] = "ROGUE",
+					["cache_time"] = 1605213336,
+					["realm"] = "Garrosh",
 				},
 				["Player-162-08013801"] = {
 					["name"] = "Mushmoo-EmeraldDream",
@@ -3164,12 +3157,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1606246434,
 					["realm"] = "Area52",
 				},
-				["Player-1070-08CBE548"] = {
-					["name"] = "Sapper-Terokkar",
-					["guid"] = "Player-1070-08CBE548",
-					["class"] = "HUNTER",
-					["cache_time"] = 1650503226,
-					["realm"] = "Terokkar",
+				["Player-75-0B7FB5EB"] = {
+					["name"] = "Lisperwind-TheScryers",
+					["guid"] = "Player-75-0B7FB5EB",
+					["class"] = "MAGE",
+					["cache_time"] = 1605660567,
+					["realm"] = "TheScryers",
 				},
 				["Player-1129-0AEB7F97"] = {
 					["name"] = "Baridan-Kargath",
@@ -3178,49 +3171,49 @@ RCLootCouncilDB = {
 					["cache_time"] = 1637460435,
 					["realm"] = "Kargath",
 				},
-				["Player-118-00DC8ECC"] = {
-					["name"] = "Drayk-Feathermoon",
-					["guid"] = "Player-118-00DC8ECC",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1637283490,
-					["realm"] = "Feathermoon",
+				["Player-1168-069744DF"] = {
+					["name"] = "Bluecoder-Cenarius",
+					["guid"] = "Player-1168-069744DF",
+					["class"] = "PRIEST",
+					["cache_time"] = 1605285204,
+					["realm"] = "Cenarius",
 				},
 				["Player-118-062E1619"] = {
 					["role"] = "DAMAGER",
 					["name"] = "Namphir-ScarletCrusade",
 					["guid"] = "Player-118-062E1619",
-					["realm"] = "ScarletCrusade",
+					["rank"] = "Unguilded",
 					["class"] = "WARRIOR",
 					["cache_time"] = 1637137719,
-					["rank"] = "Unguilded",
+					["realm"] = "ScarletCrusade",
 				},
-				["Player-118-0A78A279"] = {
-					["name"] = "Phaliias-Feathermoon",
-					["guid"] = "Player-118-0A78A279",
-					["class"] = "MAGE",
-					["cache_time"] = 1637292007,
-					["realm"] = "Feathermoon",
-				},
-				["Player-9-0DCC3930"] = {
-					["name"] = "Dominija-Kil'jaeden",
-					["guid"] = "Player-9-0DCC3930",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1605923326,
-					["realm"] = "Kil'jaeden",
-				},
-				["Player-162-06AEDAF0"] = {
-					["name"] = "Vage-EmeraldDream",
-					["guid"] = "Player-162-06AEDAF0",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1605290630,
-					["realm"] = "EmeraldDream",
-				},
-				["Player-73-0CC81FDC"] = {
-					["name"] = "Saxen-BleedingHollow",
-					["guid"] = "Player-73-0CC81FDC",
+				["Player-3661-084E3FCA"] = {
+					["name"] = "Badazzme-Hyjal",
+					["guid"] = "Player-3661-084E3FCA",
 					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1605478962,
-					["realm"] = "BleedingHollow",
+					["cache_time"] = 1637282866,
+					["realm"] = "Hyjal",
+				},
+				["Player-160-0B17AED5"] = {
+					["name"] = "Lodkavalier-Azuremyst",
+					["guid"] = "Player-160-0B17AED5",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1605660343,
+					["realm"] = "Azuremyst",
+				},
+				["Player-1426-0AE01960"] = {
+					["name"] = "Lyssanoria-AeriePeak",
+					["guid"] = "Player-1426-0AE01960",
+					["class"] = "DRUID",
+					["cache_time"] = 1605285527,
+					["realm"] = "AeriePeak",
+				},
+				["Player-3678-099FCF5E"] = {
+					["name"] = "Darquis-Thrall",
+					["guid"] = "Player-3678-099FCF5E",
+					["class"] = "HUNTER",
+					["cache_time"] = 1637137182,
+					["realm"] = "Thrall",
 				},
 				["Player-163-07ECB002"] = {
 					["name"] = "Aggrivation-Lightninghoof",
@@ -3236,19 +3229,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1650219579,
 					["realm"] = "Azuremyst",
 				},
-				["Player-163-0AA06887"] = {
-					["name"] = "Bountyhunter-TwistingNether",
-					["guid"] = "Player-163-0AA06887",
+				["Player-114-08D301B8"] = {
+					["name"] = "Beaujob-Dragonblight",
+					["guid"] = "Player-114-08D301B8",
 					["class"] = "HUNTER",
-					["cache_time"] = 1637292012,
-					["realm"] = "TwistingNether",
+					["cache_time"] = 1604700190,
+					["realm"] = "Dragonblight",
 				},
-				["Player-75-0A33732A"] = {
-					["name"] = "Tyran-ArgentDawn",
-					["guid"] = "Player-75-0A33732A",
-					["class"] = "MAGE",
-					["cache_time"] = 1623596411,
-					["realm"] = "",
+				["Player-163-07EE0763"] = {
+					["name"] = "Drinkycrow-Lightninghoof",
+					["guid"] = "Player-163-07EE0763",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1605015590,
+					["realm"] = "Lightninghoof",
 				},
 				["Player-47-001F075B"] = {
 					["name"] = "Murgle-Eitrigg",
@@ -3257,33 +3250,33 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605058082,
 					["realm"] = "Eitrigg",
 				},
-				["Player-3676-0DA0924F"] = {
-					["name"] = "Varose-Area52",
-					["guid"] = "Player-3676-0DA0924F",
-					["class"] = "MAGE",
-					["cache_time"] = 1650500431,
-					["realm"] = "Area52",
+				["Player-163-0B1A7ED5"] = {
+					["name"] = "Foexonexfoe-Lightninghoof",
+					["guid"] = "Player-163-0B1A7ED5",
+					["class"] = "ROGUE",
+					["cache_time"] = 1637460321,
+					["realm"] = "Lightninghoof",
 				},
-				["Player-100-016B5029"] = {
-					["name"] = "Rhodaria-EarthenRing",
-					["guid"] = "Player-100-016B5029",
+				["Player-57-0D347122"] = {
+					["name"] = "Bonegamble-Illidan",
+					["guid"] = "Player-57-0D347122",
+					["class"] = "ROGUE",
+					["cache_time"] = 1644648584,
+					["realm"] = "Illidan",
+				},
+				["Player-1168-09FCF163"] = {
+					["name"] = "Crazycam-Frostmane",
+					["guid"] = "Player-1168-09FCF163",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1638111681,
+					["realm"] = "Frostmane",
+				},
+				["Player-3726-0BDFB652"] = {
+					["name"] = "Shelah-Khaz'goroth",
+					["guid"] = "Player-3726-0BDFB652",
 					["class"] = "SHAMAN",
-					["cache_time"] = 1637293108,
-					["realm"] = "EarthenRing",
-				},
-				["Player-67-0DBC2E9B"] = {
-					["name"] = "Frankyice-Cho'gall",
-					["guid"] = "Player-67-0DBC2E9B",
-					["class"] = "PRIEST",
-					["cache_time"] = 1650500249,
-					["realm"] = "Cho'gall",
-				},
-				["Player-1428-0A2D5217"] = {
-					["name"] = "Lightcors-Quel'Thalas",
-					["guid"] = "Player-1428-0A2D5217",
-					["class"] = "PALADIN",
-					["cache_time"] = 1604874907,
-					["realm"] = "Quel'Thalas",
+					["cache_time"] = 1605424192,
+					["realm"] = "Khaz'goroth",
 				},
 				["Player-3683-0A9B9254"] = {
 					["name"] = "Allostery-Dalaran",
@@ -3292,29 +3285,71 @@ RCLootCouncilDB = {
 					["cache_time"] = 1644991417,
 					["realm"] = "Dalaran",
 				},
-				["Player-61-0B1B8B19"] = {
-					["name"] = "Vitapally-Zul'jin",
-					["guid"] = "Player-61-0B1B8B19",
-					["class"] = "PALADIN",
-					["cache_time"] = 1651270935,
-					["realm"] = "Zul'jin",
+				["Player-1427-076E7426"] = {
+					["name"] = "Requiemm-Ragnaros",
+					["guid"] = "Player-1427-076E7426",
+					["class"] = "PRIEST",
+					["cache_time"] = 1645168417,
+					["realm"] = "Ragnaros",
 				},
-				["Player-151-08E7289A"] = {
-					["name"] = "Palmeroelia-Uther",
-					["guid"] = "Player-151-08E7289A",
-					["class"] = "DRUID",
-					["cache_time"] = 1646479721,
-					["realm"] = "Uther",
+				["Player-3683-0CB6231E"] = {
+					["name"] = "Varlouris-Dalaran",
+					["guid"] = "Player-3683-0CB6231E",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1648343273,
+					["realm"] = "Dalaran",
 				},
-				["Player-1175-0CB5A0D6"] = {
-					["name"] = "Furyfortwo-Malfurion",
-					["guid"] = "Player-1175-0CB5A0D6",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1651547807,
-					["realm"] = "Malfurion",
+				["Player-3675-079E7C51"] = {
+					["name"] = "Xhilvanas-MoonGuard",
+					["guid"] = "Player-3675-079E7C51",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1637137074,
+					["realm"] = "MoonGuard",
 				},
 			},
 		},
+	},
+	["profileKeys"] = {
+		["Vancard - Zul'jin"] = "Default",
+		["Armaguth - Zul'jin"] = "Default",
+		["Charbeatic - Zul'jin"] = "Default",
+		["Shaekhan - Zul'jin"] = "Default",
+		["Shanyt - Zul'jin"] = "Default",
+		["Avisar - Dalaran"] = "Default",
+		["Banuumine - Zul'jin"] = "Default",
+		["Thorinbane - Dalaran"] = "Default",
+		["Shaekhan - Argent Dawn"] = "Default",
+		["Ruffinton - Dalaran"] = "Default",
+		["Malivant - Dalaran"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
+		["Dachas - Zul'jin"] = "Default",
+		["Tyranasticus - Zul'jin"] = "Default",
+		["Illingrath - Dalaran"] = "Default",
+		["Tendralas - Dalaran"] = "Default",
+		["Tyrannithal - Argent Dawn"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
+		["Kelvalatar - Dalaran"] = "Default",
+		["Banesmuncy - Zul'jin"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
+		["Shimzo - Zul'jin"] = "Default",
+		["Okona - Zul'jin"] = "Default",
+		["Tinkster - Dalaran"] = "Default",
+		["Jingojaggot - Zul'jin"] = "Default",
+		["Kotalkhan - Zul'jin"] = "Default",
+		["Shanyt - Argent Dawn"] = "Default",
+		["Laymonan - Zul'jin"] = "Default",
+		["Datgore - Zul'jin"] = "Default",
+		["Vadder - Argent Dawn"] = "Default",
+		["Tyran - Argent Dawn"] = "Default",
+		["Serbitechna - Dalaran"] = "Default",
+		["Darnastris - Dalaran"] = "Default",
+		["Rotclaugh - Dalaran"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Default",
+		["Abyronterner - Zul'jin"] = "Default",
+		["Guufnah - Zul'jin"] = "Default",
+		["Jasmoney - Zul'jin"] = "Default",
+		["Brotus - Argent Dawn"] = "Default",
+		["Mandles - Zul'jin"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -3389,13 +3424,13 @@ RCLootCouncilLootDB = {
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
-		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
-		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
-		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Laymonan - Zul'jin"] = "Laymonan - Zul'jin",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
@@ -3404,41 +3439,15 @@ RCLootCouncilLootDB = {
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
-		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Abyronterner - Zul'jin"] = "Abyronterner - Zul'jin",
 		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
 		["Jasmoney - Zul'jin"] = "Jasmoney - Zul'jin",
-		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
+		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Mandles - Zul'jin"] = "Mandles - Zul'jin",
 	},
 	["factionrealm"] = {
 		["Horde - Argent Dawn"] = {
-			["Gënërícnamë-Thrall"] = {
-				{
-					["mapID"] = 1642,
-					["date"] = "30/08/20",
-					["class"] = "WARLOCK",
-					["iSubClass"] = 1,
-					["groupSize"] = 0,
-					["isAwardReason"] = false,
-					["time"] = "20:56:31",
-					["iClass"] = 4,
-					["id"] = "1598853391-0",
-					["owner"] = "Gënërícnamë-Thrall",
-					["response"] = "Bonus Loot",
-					["difficultyID"] = 0,
-					["lootWon"] = "|cffa335ee|Hitem:164385::::::::120:267::3:5:4798:40:1477:5870:4784:::|h[Desert Nomad's Wrap]|h|r",
-					["boss"] = "Blackhand",
-					["responseID"] = "BONUSROLL",
-					["instance"] = "Zandalar-",
-					["color"] = {
-						1, -- [1]
-						0.8, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-				}, -- [1]
-			},
 			["Marcí-Area52"] = {
 				{
 					["mapID"] = 1718,
@@ -3454,15 +3463,41 @@ RCLootCouncilLootDB = {
 					["response"] = "Bonus Loot",
 					["difficultyID"] = 0,
 					["lootWon"] = "|cffa335ee|Hitem:169927::::::::120:263::3:3:4798:1487:4786:::|h[Deepcaller's Clasp]|h|r",
-					["boss"] = "Unknown",
-					["responseID"] = "BONUSROLL",
-					["instance"] = "Nazjatar-",
 					["color"] = {
 						1, -- [1]
 						0.8, -- [2]
 						0, -- [3]
 						1, -- [4]
 					},
+					["responseID"] = "BONUSROLL",
+					["instance"] = "Nazjatar-",
+					["boss"] = "Unknown",
+				}, -- [1]
+			},
+			["Gënërícnamë-Thrall"] = {
+				{
+					["mapID"] = 1642,
+					["date"] = "30/08/20",
+					["class"] = "WARLOCK",
+					["iSubClass"] = 1,
+					["groupSize"] = 0,
+					["isAwardReason"] = false,
+					["time"] = "20:56:31",
+					["iClass"] = 4,
+					["id"] = "1598853391-0",
+					["owner"] = "Gënërícnamë-Thrall",
+					["response"] = "Bonus Loot",
+					["difficultyID"] = 0,
+					["lootWon"] = "|cffa335ee|Hitem:164385::::::::120:267::3:5:4798:40:1477:5870:4784:::|h[Desert Nomad's Wrap]|h|r",
+					["color"] = {
+						1, -- [1]
+						0.8, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["responseID"] = "BONUSROLL",
+					["instance"] = "Zandalar-",
+					["boss"] = "Blackhand",
 				}, -- [1]
 			},
 		},

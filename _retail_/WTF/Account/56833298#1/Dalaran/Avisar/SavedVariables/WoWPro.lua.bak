@@ -13,14 +13,13 @@ WoWProCharDB = {
 	["Trades"] = {
 	},
 	["EnablePetBattles"] = true,
-	["EnableFlight"] = true,
-	["Rank"] = {
+	["completedQIDs"] = {
 	},
+	["EnableRares"] = true,
 	["EnableGrailQuestName"] = false,
+	["Enabled"] = true,
 	["EnableGrailQuestObsolete"] = false,
-	["EnableGrailBreadcrumbs"] = false,
-	["GuideStack"] = {
-	},
+	["DebugLevel"] = 0,
 	["Tradeskills"] = {
 		[2551] = {
 			["skillLvl"] = 12,
@@ -28,11 +27,11 @@ WoWProCharDB = {
 			["name"] = "Draenor Herbalism",
 			["skillMax"] = 100,
 		},
-		[2566] = {
-			["skillLvl"] = 21,
+		[185] = {
+			["skillLvl"] = 1,
 			["skillMod"] = 0,
-			["name"] = "Legion Mining",
-			["skillMax"] = 100,
+			["name"] = "Cooking",
+			["skillMax"] = 175,
 		},
 		[2567] = {
 			["skillLvl"] = 5,
@@ -52,11 +51,11 @@ WoWProCharDB = {
 			["name"] = "Pandaria Mining",
 			["skillMax"] = 75,
 		},
-		[2550] = {
-			["skillLvl"] = 23,
+		[356] = {
+			["skillLvl"] = 13,
 			["skillMod"] = 0,
-			["name"] = "Legion Herbalism",
-			["skillMax"] = 100,
+			["name"] = "Fishing",
+			["skillMax"] = 175,
 		},
 		[2569] = {
 			["skillLvl"] = 1,
@@ -64,17 +63,17 @@ WoWProCharDB = {
 			["name"] = "Cataclysm Mining",
 			["skillMax"] = 75,
 		},
-		[2565] = {
-			["skillLvl"] = 147,
+		[182] = {
+			["skillLvl"] = 175,
 			["skillMod"] = 0,
-			["name"] = "Battle for Azeroth Mining",
+			["name"] = "Herbalism",
 			["skillMax"] = 175,
 		},
 		[2585] = {
 			["skillLvl"] = 13,
-			["skillMax"] = 175,
-			["skillMod"] = 0,
 			["name"] = "Battle for Azeroth Fishing",
+			["skillMod"] = 0,
+			["skillMax"] = 175,
 		},
 		[186] = {
 			["skillLvl"] = 147,
@@ -100,41 +99,42 @@ WoWProCharDB = {
 			["name"] = "Mining",
 			["skillMax"] = 300,
 		},
-		[182] = {
-			["skillLvl"] = 175,
+		[2550] = {
+			["skillLvl"] = 23,
 			["skillMod"] = 0,
-			["name"] = "Herbalism",
+			["name"] = "Legion Herbalism",
+			["skillMax"] = 100,
+		},
+		[2565] = {
+			["skillLvl"] = 147,
+			["skillMod"] = 0,
+			["name"] = "Battle for Azeroth Mining",
 			["skillMax"] = 175,
 		},
-		[356] = {
-			["skillLvl"] = 13,
+		[2566] = {
+			["skillLvl"] = 21,
 			["skillMod"] = 0,
-			["name"] = "Fishing",
-			["skillMax"] = 175,
-		},
-		[185] = {
-			["skillLvl"] = 1,
-			["skillMod"] = 0,
-			["name"] = "Cooking",
-			["skillMax"] = 175,
+			["name"] = "Legion Mining",
+			["skillMax"] = 100,
 		},
 	},
-	["Guide"] = {
+	["BuildingLocations"] = {
 	},
 	["Taxi"] = {
 	},
-	["GuideVersion"] = {
+	["Guide"] = {
 	},
 	["EnableTreasures"] = true,
-	["completedQIDs"] = {
-	},
+	["EnableFlight"] = true,
 	["AutoHideInsideInstancesNotify"] = true,
 	["AutoHideInCombat"] = false,
-	["BuildingLocations"] = {
+	["GuideVersion"] = {
 	},
-	["DebugLevel"] = 0,
-	["Enabled"] = true,
+	["GuideStack"] = {
+	},
+	["EnableGrailBreadcrumbs"] = false,
 	["skippedQIDs"] = {
 	},
-	["EnableRares"] = true,
+	["Rank"] = {
+	},
 }

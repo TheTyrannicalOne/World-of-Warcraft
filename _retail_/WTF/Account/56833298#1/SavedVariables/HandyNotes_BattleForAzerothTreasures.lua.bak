@@ -20,13 +20,13 @@ HandyNotes_BattleForAzerothTreasuresDB = {
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
-		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
-		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
-		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Laymonan - Zul'jin"] = "Laymonan - Zul'jin",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
@@ -35,11 +35,11 @@ HandyNotes_BattleForAzerothTreasuresDB = {
 		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
-		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
 		["Abyronterner - Zul'jin"] = "Abyronterner - Zul'jin",
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Jasmoney - Zul'jin"] = "Jasmoney - Zul'jin",
-		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
+		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
 		["Mandles - Zul'jin"] = "Mandles - Zul'jin",
 	},
 	["profiles"] = {
@@ -81,11 +81,11 @@ HandyNotes_BattleForAzerothTreasuresDB = {
 		},
 		["Kelvalatar - Dalaran"] = {
 		},
-		["Banesmuncy - Zul'jin"] = {
-		},
-		["Varlouris - Dalaran"] = {
+		["Brotus - Argent Dawn"] = {
 		},
 		["Shimzo - Zul'jin"] = {
+		},
+		["Varlouris - Dalaran"] = {
 		},
 		["Tinkster - Dalaran"] = {
 		},
@@ -93,7 +93,7 @@ HandyNotes_BattleForAzerothTreasuresDB = {
 		},
 		["Jingojaggot - Zul'jin"] = {
 		},
-		["Kotalkhan - Zul'jin"] = {
+		["Fantastiburo - Zul'jin"] = {
 		},
 		["Shanyt - Argent Dawn"] = {
 		},
@@ -111,7 +111,7 @@ HandyNotes_BattleForAzerothTreasuresDB = {
 		},
 		["Rotclaugh - Dalaran"] = {
 		},
-		["Fantastiburo - Zul'jin"] = {
+		["Kotalkhan - Zul'jin"] = {
 		},
 		["Abyronterner - Zul'jin"] = {
 		},
@@ -119,7 +119,7 @@ HandyNotes_BattleForAzerothTreasuresDB = {
 		},
 		["Jasmoney - Zul'jin"] = {
 		},
-		["Brotus - Argent Dawn"] = {
+		["Banesmuncy - Zul'jin"] = {
 		},
 		["Mandles - Zul'jin"] = {
 		},

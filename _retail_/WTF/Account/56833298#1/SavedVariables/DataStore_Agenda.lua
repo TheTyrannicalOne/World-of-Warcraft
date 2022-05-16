@@ -20,7 +20,11 @@ DataStore_AgendaDB = {
 		},
 		["Characters"] = {
 			["Default.Dalaran.Avisar"] = {
-				["lastUpdate"] = 1652077655,
+				["DungeonIDs"] = {
+					["Blackwing Lair 40 Player|411491860"] = "322693|1652476906|0|1",
+					["Molten Core 40 Player|411490323"] = "322693|1652476906|0|1",
+				},
+				["lastUpdate"] = 1652476906,
 			},
 			["Default.Dalaran.Darnastris"] = {
 				["lastUpdate"] = 1648401449,
@@ -29,7 +33,7 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1648402104,
 			},
 			["Default.Black Dragonflight.Durlok"] = {
-				["lastUpdate"] = 1652077524,
+				["lastUpdate"] = 1652471144,
 			},
 			["Default.Dalaran.Rotclaugh"] = {
 				["lastUpdate"] = 1648343686,
@@ -37,17 +41,17 @@ DataStore_AgendaDB = {
 			["Default.Dalaran.Illingrath"] = {
 				["lastUpdate"] = 1650157094,
 			},
-			["Default.Zul'jin.Zulbathal"] = {
-				["lastUpdate"] = 1652077363,
-			},
 			["Default.Dalaran.Thorinbane"] = {
 				["lastUpdate"] = 1648345057,
+			},
+			["Default.Zul'jin.Zulbathal"] = {
+				["lastUpdate"] = 1652471278,
 			},
 			["Default.Dalaran.Varlouris"] = {
 				["lastUpdate"] = 1648343298,
 			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["lastUpdate"] = 1652336815,
+				["lastUpdate"] = 1652681342,
 			},
 		},
 	},

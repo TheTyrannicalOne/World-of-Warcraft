@@ -15,22 +15,22 @@ DataStore_AuctionsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.Dalaran.Avisar"] = {
-				["lastUpdate"] = 1652078205,
-				["lastAuctionsScan"] = 1652078205,
+				["lastUpdate"] = 1652476796,
+				["lastAuctionsScan"] = 1652476796,
 			},
 			["Default.Dalaran.Darnastris"] = {
 				["lastUpdate"] = 1644618191,
 			},
 			["Default.Black Dragonflight.Durlok"] = {
-				["lastUpdate"] = 1652077547,
-				["lastAuctionsScan"] = 1652077547,
+				["lastUpdate"] = 1652471176,
+				["lastAuctionsScan"] = 1652471176,
 			},
 			["Default.Dalaran.Illingrath"] = {
 				["lastUpdate"] = 1645403714,
 			},
 			["Default.Zul'jin.Zulbathal"] = {
-				["lastUpdate"] = 1652077397,
-				["lastAuctionsScan"] = 1652077397,
+				["lastUpdate"] = 1652471363,
+				["lastAuctionsScan"] = 1652471363,
 			},
 			["Default.Dalaran.Varlouris"] = {
 				["lastUpdate"] = 1644617576,
