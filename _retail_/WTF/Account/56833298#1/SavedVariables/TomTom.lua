@@ -5,6 +5,7 @@ TomTomDB = {
 		["Thorinbane - Dalaran"] = "Default",
 		["Shaekhan - Argent Dawn"] = "Default",
 		["Illingrath - Dalaran"] = "Default",
+		["Valmagus - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
@@ -48,6 +49,7 @@ TomTomWaypointsM = {
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
+		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
@@ -65,6 +67,8 @@ TomTomWaypointsM = {
 		["Shaekhan - Argent Dawn"] = {
 		},
 		["Illingrath - Dalaran"] = {
+		},
+		["Valmagus - Zul'jin"] = {
 		},
 		["Darnastris - Dalaran"] = {
 		},

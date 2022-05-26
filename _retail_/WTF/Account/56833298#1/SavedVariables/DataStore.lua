@@ -10,6 +10,7 @@ DataStoreDB = {
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 	},
 	["global"] = {
@@ -27,6 +28,9 @@ DataStoreDB = {
 			},
 			["Default.Dalaran.Tendralas"] = {
 				["faction"] = "Alliance",
+			},
+			["Default.Zul'jin.Valmagus"] = {
+				["faction"] = "Horde",
 			},
 			["Default.Black Dragonflight.Durlok"] = {
 				["faction"] = "Horde",

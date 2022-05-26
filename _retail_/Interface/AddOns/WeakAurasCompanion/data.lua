@@ -9,6 +9,8 @@ WeakAurasCompanion = {
     },
     stash = {
     },
+    stopmotionFiles = {
+    },
   },
   Plater = {
     slugs = {
@@ -18,6 +20,8 @@ WeakAurasCompanion = {
     ids = {
     },
     stash = {
+    },
+    stopmotionFiles = {
     },
   },
 }

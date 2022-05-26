@@ -36,7 +36,7 @@ do
 	local RELEASE = "RELEASE"
 
 	local releaseType = RELEASE
-	local myGitHash = "8613730" -- The ZIP packager will replace this with the Git hash.
+	local myGitHash = "1b57c56" -- The ZIP packager will replace this with the Git hash.
 	local releaseString = ""
 	--[=[@alpha@
 	-- The following code will only be present in alpha ZIPs.
@@ -976,7 +976,7 @@ do
 		esES = "Spanish (esES)",
 		esMX = "Spanish (esMX)",
 		--deDE = "German (deDE)",
-		ptBR = "Portuguese (ptBR)",
+		--ptBR = "Portuguese (ptBR)",
 		frFR = "French (frFR)",
 	}
 	if locales[L] then

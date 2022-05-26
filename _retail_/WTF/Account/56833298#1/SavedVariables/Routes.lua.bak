@@ -11,5 +11,6 @@ RoutesDB = {
 		["Durlok - Black Dragonflight"] = "Default",
 		["Varlouris - Dalaran"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
+		["Valmagus - Zul'jin"] = "Default",
 	},
 }

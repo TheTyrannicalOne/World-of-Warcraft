@@ -4,6 +4,7 @@ HandyNotes_BattleForAzerothTreasuresDB = {
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
 		["Armaguth - Zul'jin"] = "Armaguth - Zul'jin",
 		["Charbeatic - Zul'jin"] = "Charbeatic - Zul'jin",
+		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
 		["Shaekhan - Zul'jin"] = "Shaekhan - Zul'jin",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Avisar - Dalaran"] = "Avisar - Dalaran",
@@ -23,21 +24,21 @@ HandyNotes_BattleForAzerothTreasuresDB = {
 		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
-		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Laymonan - Zul'jin"] = "Laymonan - Zul'jin",
-		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
-		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
 		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
+		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
+		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Abyronterner - Zul'jin"] = "Abyronterner - Zul'jin",
-		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Jasmoney - Zul'jin"] = "Jasmoney - Zul'jin",
 		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Mandles - Zul'jin"] = "Mandles - Zul'jin",
@@ -48,6 +49,8 @@ HandyNotes_BattleForAzerothTreasuresDB = {
 		["Armaguth - Zul'jin"] = {
 		},
 		["Charbeatic - Zul'jin"] = {
+		},
+		["Valmagus - Zul'jin"] = {
 		},
 		["Shaekhan - Zul'jin"] = {
 		},
@@ -87,9 +90,9 @@ HandyNotes_BattleForAzerothTreasuresDB = {
 		},
 		["Shimzo - Zul'jin"] = {
 		},
-		["Okona - Zul'jin"] = {
+		["Guufnah - Zul'jin"] = {
 		},
-		["Tinkster - Dalaran"] = {
+		["Okona - Zul'jin"] = {
 		},
 		["Jingojaggot - Zul'jin"] = {
 		},
@@ -99,13 +102,13 @@ HandyNotes_BattleForAzerothTreasuresDB = {
 		},
 		["Laymonan - Zul'jin"] = {
 		},
-		["Datgore - Zul'jin"] = {
+		["Tyran - Argent Dawn"] = {
 		},
 		["Vadder - Argent Dawn"] = {
 		},
-		["Tyran - Argent Dawn"] = {
-		},
 		["Serbitechna - Dalaran"] = {
+		},
+		["Datgore - Zul'jin"] = {
 		},
 		["Darnastris - Dalaran"] = {
 		},
@@ -115,7 +118,7 @@ HandyNotes_BattleForAzerothTreasuresDB = {
 		},
 		["Abyronterner - Zul'jin"] = {
 		},
-		["Guufnah - Zul'jin"] = {
+		["Tinkster - Dalaran"] = {
 		},
 		["Jasmoney - Zul'jin"] = {
 		},

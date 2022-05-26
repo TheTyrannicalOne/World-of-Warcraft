@@ -171,12 +171,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lava Reaver",
 		},
-		[19272] = {
+		[19641] = {
 			["school"] = 4,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Ancient Core Hound",
+			["source"] = "Lava Elemental",
 		},
 		[19771] = {
 			["school"] = 1,
@@ -187,22 +187,6 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Core Hound",
-		},
-		[19712] = {
-			["school"] = 64,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Shazzrah",
-		},
-		[19641] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Lava Elemental",
 		},
 		[22979] = {
 			["school"] = 4,
@@ -226,12 +210,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Flamewaker Priest",
 		},
-		[22978] = {
-			["school"] = 4,
+		[19712] = {
+			["school"] = 64,
 			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Nefarian",
+			["source"] = "Shazzrah",
+		},
+		[19272] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Ancient Core Hound",
 		},
 		[22666] = {
 			["school"] = 8,
@@ -251,6 +244,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lord Victor Nefarius",
 		},
+		[22992] = {
+			["school"] = 32,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Nefarian",
+		},
 		[23462] = {
 			["school"] = 4,
 			["token"] = {
@@ -259,14 +260,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Vaelastrasz the Corrupt",
 		},
-		[19451] = {
+		[1604] = {
 			["school"] = 1,
-			["type"] = "BUFF",
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Magmadar",
+			["source"] = "Baron Geddon",
 		},
 		[20605] = {
 			["school"] = 1,
@@ -330,14 +330,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Chromatic Drakonid",
 		},
-		[1604] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Baron Geddon",
-		},
 		[22561] = {
 			["school"] = 8,
 			["type"] = "DEBUFF",
@@ -346,6 +338,15 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Green Drakonid",
+		},
+		[19451] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Magmadar",
 		},
 		[19728] = {
 			["school"] = 32,
@@ -365,6 +366,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Gehennas",
 		},
+		[22978] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Nefarian",
+		},
 		[22458] = {
 			["school"] = 2,
 			["token"] = {
@@ -372,14 +380,6 @@ EncounterDetailsDB = {
 				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "Blackwing Taskmaster",
-		},
-		[22992] = {
-			["school"] = 32,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Nefarian",
 		},
 		[19516] = {
 			["school"] = 1,

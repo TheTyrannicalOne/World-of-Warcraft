@@ -7,6 +7,7 @@ DialogKeyDB = {
 		["Brotus - Argent Dawn"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
+		["Valmagus - Zul'jin"] = "Default",
 		["Varlouris - Dalaran"] = "Default",
 		["Guufnah - Zul'jin"] = "Default",
 		["Avisar - Dalaran"] = "Default",

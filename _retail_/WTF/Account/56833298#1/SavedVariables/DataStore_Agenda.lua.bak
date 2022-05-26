@@ -11,20 +11,17 @@ DataStore_AgendaDB = {
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
 	},
 	["global"] = {
 		["Options"] = {
 			["WeeklyResetHour"] = 6,
 			["WeeklyResetDay"] = 2,
-			["NextWeeklyReset"] = "2022-05-17",
+			["NextWeeklyReset"] = "2022-05-31",
 		},
 		["Characters"] = {
 			["Default.Dalaran.Avisar"] = {
-				["DungeonIDs"] = {
-					["Blackwing Lair 40 Player|411491860"] = "322693|1652476906|0|1",
-					["Molten Core 40 Player|411490323"] = "322693|1652476906|0|1",
-				},
-				["lastUpdate"] = 1652476906,
+				["lastUpdate"] = 1653523142,
 			},
 			["Default.Dalaran.Darnastris"] = {
 				["lastUpdate"] = 1648401449,
@@ -32,8 +29,11 @@ DataStore_AgendaDB = {
 			["Default.Dalaran.Tendralas"] = {
 				["lastUpdate"] = 1648402104,
 			},
+			["Default.Zul'jin.Valmagus"] = {
+				["lastUpdate"] = 1653525981,
+			},
 			["Default.Black Dragonflight.Durlok"] = {
-				["lastUpdate"] = 1652471144,
+				["lastUpdate"] = 1653442614,
 			},
 			["Default.Dalaran.Rotclaugh"] = {
 				["lastUpdate"] = 1648343686,
@@ -45,13 +45,13 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1648345057,
 			},
 			["Default.Zul'jin.Zulbathal"] = {
-				["lastUpdate"] = 1652471278,
+				["lastUpdate"] = 1653523268,
 			},
 			["Default.Dalaran.Varlouris"] = {
 				["lastUpdate"] = 1648343298,
 			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["lastUpdate"] = 1652681342,
+				["lastUpdate"] = 1653522915,
 			},
 		},
 	},

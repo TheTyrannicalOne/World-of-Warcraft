@@ -10,15 +10,15 @@ RematchSettings = {
 	["CustomScaleValue"] = 100,
 	["DialogYPos"] = 667.0057983398438,
 	["UseTypeBar"] = true,
-	["AllowHiddenPetsDefaulted"] = true,
+	["JournalPanel"] = 1,
 	["HidePetToast"] = true,
-	["QueueSanctuary"] = {
+	["LevelingQueue"] = {
 	},
 	["Sort"] = {
 		["Order"] = 2,
 		["FavoritesFirst"] = true,
 	},
-	["JournalPanel"] = 1,
+	["AllowHiddenPetsDefaulted"] = true,
 	["BackupCount"] = 0,
 	["TeamGroups"] = {
 		{
@@ -63,13 +63,13 @@ RematchSettings = {
 		},
 		["Strong"] = {
 		},
-		["Sources"] = {
+		["Similar"] = {
 		},
 		["Breed"] = {
 		},
 		["Rarity"] = {
 		},
-		["Similar"] = {
+		["Sources"] = {
 		},
 		["Level"] = {
 		},
@@ -83,19 +83,19 @@ RematchSettings = {
 	["FavoriteFilters"] = {
 	},
 	["PetCardXPos"] = 401,
-	["PreferredMode"] = 1,
+	["ElvUIToastDefaulted"] = true,
 	["CollapsedOptHeaders"] = {
 	},
 	["ExpandedTargetHeaders"] = {
 	},
-	["ElvUIToastDefaulted"] = true,
+	["PreferredMode"] = 1,
 	["ActivePanel"] = 1,
 	["Sanctuary"] = {
 	},
 	["QueueSortOrder"] = 1,
 	["CornerPos"] = "BOTTOMLEFT",
 	["DialogXPos"] = 1343.008666992188,
-	["LevelingQueue"] = {
+	["QueueSanctuary"] = {
 	},
 	["YPos"] = 418.0044860839844,
 	["SelectedTab"] = 1,

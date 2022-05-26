@@ -17,8 +17,8 @@ WoWProCharDB = {
 	},
 	["EnableRares"] = true,
 	["EnableGrailQuestName"] = false,
-	["Enabled"] = true,
 	["EnableGrailQuestObsolete"] = false,
+	["EnableGrailBreadcrumbs"] = false,
 	["DebugLevel"] = 0,
 	["Tradeskills"] = {
 		[2551] = {
@@ -27,11 +27,11 @@ WoWProCharDB = {
 			["name"] = "Draenor Herbalism",
 			["skillMax"] = 100,
 		},
-		[185] = {
-			["skillLvl"] = 1,
+		[2568] = {
+			["skillLvl"] = 17,
 			["skillMod"] = 0,
-			["name"] = "Cooking",
-			["skillMax"] = 175,
+			["name"] = "Pandaria Mining",
+			["skillMax"] = 75,
 		},
 		[2567] = {
 			["skillLvl"] = 5,
@@ -45,16 +45,10 @@ WoWProCharDB = {
 			["name"] = "Archaeology",
 			["skillMax"] = 950,
 		},
-		[2568] = {
-			["skillLvl"] = 17,
+		[185] = {
+			["skillLvl"] = 1,
 			["skillMod"] = 0,
-			["name"] = "Pandaria Mining",
-			["skillMax"] = 75,
-		},
-		[356] = {
-			["skillLvl"] = 13,
-			["skillMod"] = 0,
-			["name"] = "Fishing",
+			["name"] = "Cooking",
 			["skillMax"] = 175,
 		},
 		[2569] = {
@@ -62,6 +56,12 @@ WoWProCharDB = {
 			["skillMod"] = 0,
 			["name"] = "Cataclysm Mining",
 			["skillMax"] = 75,
+		},
+		[356] = {
+			["skillLvl"] = 13,
+			["skillMod"] = 0,
+			["name"] = "Fishing",
+			["skillMax"] = 175,
 		},
 		[182] = {
 			["skillLvl"] = 175,
@@ -71,8 +71,8 @@ WoWProCharDB = {
 		},
 		[2585] = {
 			["skillLvl"] = 13,
-			["name"] = "Battle for Azeroth Fishing",
 			["skillMod"] = 0,
+			["name"] = "Battle for Azeroth Fishing",
 			["skillMax"] = 175,
 		},
 		[186] = {
@@ -99,17 +99,17 @@ WoWProCharDB = {
 			["name"] = "Mining",
 			["skillMax"] = 300,
 		},
-		[2550] = {
-			["skillLvl"] = 23,
-			["skillMod"] = 0,
-			["name"] = "Legion Herbalism",
-			["skillMax"] = 100,
-		},
 		[2565] = {
 			["skillLvl"] = 147,
 			["skillMod"] = 0,
 			["name"] = "Battle for Azeroth Mining",
 			["skillMax"] = 175,
+		},
+		[2550] = {
+			["skillLvl"] = 23,
+			["skillMod"] = 0,
+			["name"] = "Legion Herbalism",
+			["skillMax"] = 100,
 		},
 		[2566] = {
 			["skillLvl"] = 21,
@@ -118,21 +118,21 @@ WoWProCharDB = {
 			["skillMax"] = 100,
 		},
 	},
-	["BuildingLocations"] = {
+	["Guide"] = {
 	},
 	["Taxi"] = {
 	},
-	["Guide"] = {
+	["GuideVersion"] = {
 	},
 	["EnableTreasures"] = true,
 	["EnableFlight"] = true,
 	["AutoHideInsideInstancesNotify"] = true,
 	["AutoHideInCombat"] = false,
-	["GuideVersion"] = {
+	["BuildingLocations"] = {
 	},
 	["GuideStack"] = {
 	},
-	["EnableGrailBreadcrumbs"] = false,
+	["Enabled"] = true,
 	["skippedQIDs"] = {
 	},
 	["Rank"] = {

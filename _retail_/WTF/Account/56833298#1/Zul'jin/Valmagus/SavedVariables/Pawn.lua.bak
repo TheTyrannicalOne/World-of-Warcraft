@@ -1,0 +1,99 @@
+
+PawnOptions = {
+	["LastVersion"] = 2.0538,
+	["LastPlayerFullName"] = "Valmagus-Zul'jin",
+	["AutoSelectScales"] = true,
+	["ItemLevels"] = {
+		{
+			["ID"] = 122263,
+			["Level"] = 18,
+			["Link"] = "|cff00ccff|Hitem:122263::::::::15:66:::1:7920::::::|h[Burnished Helm of Might]|h|r",
+		}, -- [1]
+		{
+			["ID"] = 122662,
+			["Level"] = 18,
+			["Link"] = "|cff00ccff|Hitem:122662::::::::15:66:::1:5805::::::|h[Eternal Talisman of Evasion]|h|r",
+		}, -- [2]
+		{
+			["ID"] = 122388,
+			["Level"] = 18,
+			["Link"] = "|cff00ccff|Hitem:122388::::::::15:66:::1:5805::::::|h[Burnished Pauldrons of Might]|h|r",
+		}, -- [3]
+		[14] = {
+			["ID"] = 122361,
+			["Level"] = 18,
+			["AlsoFitsIn"] = 13,
+			["Link"] = "|cff00ccff|Hitem:122361::::::::15:70:::1:5805::::::|h[Swift Hand of Justice]|h|r",
+		},
+		[13] = {
+			["ID"] = 122361,
+			["Level"] = 18,
+			["AlsoFitsIn"] = 14,
+			["Link"] = "|cff00ccff|Hitem:122361::::::::15:66:::1:5805::::::|h[Swift Hand of Justice]|h|r",
+		},
+		[7] = {
+			["ID"] = 21013,
+			["Level"] = 4,
+			["Link"] = "|cff9d9d9d|Hitem:21013::::::::3:1451:::1:6656:2:28:1485:9:2:::::|h[Scraggy Leather Pants]|h|r",
+		},
+		[15] = {
+			["ID"] = 122266,
+			["Level"] = 18,
+			["Link"] = "|cff00ccff|Hitem:122266::::::::15:66:::1:5805::::::|h[Ripped Sandstorm Cloak]|h|r",
+		},
+		[8] = {
+			["ID"] = 14086,
+			["Level"] = 5,
+			["Link"] = "|cffffffff|Hitem:14086::::::::12:66::::1:28:77:::::|h[Beaded Sandals]|h|r",
+		},
+		[16] = {
+			["ID"] = 122389,
+			["Level"] = 18,
+			["AlsoFitsIn"] = 17,
+			["Link"] = "|cff00ccff|Hitem:122389::::::::15:66:::1:5805::::::|h[Bloodsoaked Skullforge Reaver]|h|r",
+		},
+		[17] = {
+			["ID"] = 122391,
+			["Level"] = 18,
+			["Link"] = "|cff00ccff|Hitem:122391::::::::15:66:::1:5805::::::|h[Flamescarred Draconian Deflector]|h|r",
+		},
+		[5] = {
+			["ID"] = 122387,
+			["Level"] = 18,
+			["Link"] = "|cff00ccff|Hitem:122387::::::::15:66:::1:5805::::::|h[Burnished Breastplate of Might]|h|r",
+		},
+		[10] = {
+			["ID"] = 23376,
+			["Level"] = 11,
+			["Link"] = "|cffffffff|Hitem:23376::::::::10:1451::11:1:6713:2:28:77:9:10:::::|h[Gatewatcher's Plate Gloves]|h|r",
+		},
+		[11] = {
+			["ID"] = 122529,
+			["Level"] = 18,
+			["AlsoFitsIn"] = 12,
+			["Link"] = "|cff00ccff|Hitem:122529::::::::15:66:::1:5805::::::|h[Dread Pirate Ring]|h|r",
+		},
+		[6] = {
+			["ID"] = 23265,
+			["Level"] = 15,
+			["Link"] = "|cffffffff|Hitem:23265::::::::14:66::11:1:6713:2:28:77:9:14:::::|h[Blackened Plate Girdle]|h|r",
+		},
+		[12] = {
+			["ID"] = 128169,
+			["Level"] = 18,
+			["AlsoFitsIn"] = 11,
+			["Link"] = "|cff00ccff|Hitem:128169::::::::15:66:::1:5805::::::|h[Signet of the Third Fleet]|h|r",
+		},
+		[9] = {
+			["ID"] = 3373,
+			["Level"] = 11,
+			["Link"] = "|cff9d9d9d|Hitem:3373::::::::13:66:::1:6656:2:28:77:9:13:::::|h[Patchwork Bracers]|h|r",
+		},
+	},
+	["LastKeybindingsSet"] = 1,
+}
+PawnMrRobotScaleProviderOptions = {
+	["LastClass"] = "PALADIN",
+	["LastAdded"] = 1,
+}
+PawnClassicScaleProviderOptions = nil

@@ -10,6 +10,7 @@ DataStore_CurrenciesDB = {
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 	},
 	["global"] = {
@@ -104,11 +105,11 @@ DataStore_CurrenciesDB = {
 				["Lingering Soul Fragment"] = 28,
 				["Mogu Rune of Fate"] = 44,
 				["Elder Charm of Good Fortune"] = 42,
-				["Corrupted Mementos"] = 18,
+				["Ironpaw Token"] = 12,
 				["Seal of Tempered Fate"] = 41,
-				["Conquest"] = 13,
-				["Timeworn Artifact"] = 33,
 				["Seal of Broken Fate"] = 31,
+				["Timeworn Artifact"] = 33,
+				["Conquest"] = 13,
 				["Infused Ruby"] = 3,
 				["Lesser Charm of Good Fortune"] = 43,
 				["Curious Coin"] = 26,
@@ -116,10 +117,10 @@ DataStore_CurrenciesDB = {
 				["Artifact Fragment"] = 37,
 				["Oil"] = 39,
 				["Tower Knowledge"] = 7,
-				["7th Legion Service Medal"] = 53,
 				["Redeemed Soul"] = 52,
-				["Timewarped Badge"] = 9,
+				["7th Legion Service Medal"] = 53,
 				["Soul Ash"] = 5,
+				["Timewarped Badge"] = 9,
 				["Seafarer's Dubloon"] = 22,
 				["Garrison Resources"] = 38,
 				["Honor"] = 14,
@@ -127,7 +128,7 @@ DataStore_CurrenciesDB = {
 				["Echoes of Ny'alotha"] = 19,
 				["Stygia"] = 6,
 				["Wakening Essence"] = 35,
-				["Ironpaw Token"] = 12,
+				["Corrupted Mementos"] = 18,
 				["Apexis Crystal"] = 36,
 				["Darkmoon Prize Ticket"] = 10,
 				["Coalescing Visions"] = 17,
@@ -138,16 +139,16 @@ DataStore_CurrenciesDB = {
 			},
 			["HeadersRev"] = {
 				["Battle for Azeroth"] = 5,
+				["Dungeon and Raid"] = 2,
 				["Miscellaneous"] = 3,
-				["Burning Crusade"] = 11,
 				["Warlords of Draenor"] = 7,
 				["Legion"] = 6,
-				["Mists of Pandaria"] = 8,
-				["Cataclysm"] = 9,
-				["Wrath of the Lich King"] = 10,
 				["Shadowlands"] = 1,
+				["Cataclysm"] = 9,
+				["Mists of Pandaria"] = 8,
+				["Wrath of the Lich King"] = 10,
 				["Player vs. Player"] = 4,
-				["Dungeon and Raid"] = 2,
+				["Burning Crusade"] = 11,
 			},
 			["Headers"] = {
 				"Shadowlands", -- [1]
@@ -205,24 +206,24 @@ DataStore_CurrenciesDB = {
 					0, -- [19]
 					0, -- [20]
 				},
-				["lastUpdate"] = 1652476710,
+				["lastUpdate"] = 1653523128,
 				["CurrencyInfo"] = {
 					[1602] = "0-0-0-0",
-					[1299] = "4-0-0-5000",
+					[824] = "172-0-0-10000",
 					[1220] = "1434-0-0-0",
-					[1719] = "52-0-0-0",
-					[1755] = "35393-0-0-0",
+					[1299] = "4-0-0-5000",
+					[1710] = "34-0-0-0",
 					[738] = "3-0-0-0",
 					[1721] = "0-0-0-0",
-					[1710] = "34-0-0-0",
+					[1560] = "103-0-0-0",
 					[1754] = "15-0-0-0",
 					[1803] = "2000-0-0-0",
 					[1717] = "40-0-0-0",
 					[1166] = "845-0-0-0",
-					[1560] = "103-0-0-0",
+					[1755] = "35393-0-0-0",
 					[1129] = "2-0-0-20",
 					[1718] = "0-0-0-0",
-					[824] = "172-0-0-10000",
+					[1719] = "52-0-0-0",
 				},
 			},
 			["Default.Dalaran.Darnastris"] = {
@@ -267,6 +268,31 @@ DataStore_CurrenciesDB = {
 			["Default.Dalaran.Tendralas"] = {
 				["lastUpdate"] = 1648401584,
 			},
+			["Default.Zul'jin.Valmagus"] = {
+				["lastUpdate"] = 1653523338,
+				["Archeology"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					0, -- [4]
+					0, -- [5]
+					0, -- [6]
+					0, -- [7]
+					0, -- [8]
+					0, -- [9]
+					0, -- [10]
+					0, -- [11]
+					0, -- [12]
+					0, -- [13]
+					0, -- [14]
+					0, -- [15]
+					0, -- [16]
+					0, -- [17]
+					0, -- [18]
+					0, -- [19]
+					0, -- [20]
+				},
+			},
 			["Default.Black Dragonflight.Durlok"] = {
 				["Currencies"] = {
 					2490497, -- [1]
@@ -296,12 +322,12 @@ DataStore_CurrenciesDB = {
 					0, -- [19]
 					0, -- [20]
 				},
-				["lastUpdate"] = 1652471129,
+				["lastUpdate"] = 1653442603,
 				["CurrencyInfo"] = {
 					[1560] = "3-0-0-0",
 					[1155] = "250-0-0-300",
-					[1754] = "19-0-0-0",
 					[1166] = "1145-0-0-0",
+					[1754] = "19-0-0-0",
 				},
 			},
 			["Default.Dalaran.Rotclaugh"] = {
@@ -396,7 +422,7 @@ DataStore_CurrenciesDB = {
 					0, -- [19]
 					0, -- [20]
 				},
-				["lastUpdate"] = 1652471263,
+				["lastUpdate"] = 1653523256,
 				["CurrencyInfo"] = {
 					[1602] = "0-0-0-0",
 					[81] = "2-0-0-0",
@@ -473,16 +499,16 @@ DataStore_CurrenciesDB = {
 					2319588481, -- [2]
 					171186945, -- [3]
 					10755457, -- [4]
-					11141377, -- [5]
+					16777473, -- [5]
 					13107585, -- [6]
-					78905857, -- [7]
-					275913601, -- [8]
+					365822465, -- [7]
+					345906049, -- [8]
 					611451521, -- [9]
 					113253633, -- [10]
 					236585729, -- [11]
 					5381121, -- [12]
 					897, -- [13]
-					104203265, -- [14]
+					122553345, -- [14]
 					1014498434, -- [15]
 					22938883, -- [16]
 					1312131, -- [17]
@@ -549,9 +575,9 @@ DataStore_CurrenciesDB = {
 					32, -- [19]
 					1, -- [20]
 				},
-				["lastUpdate"] = 1652833301,
+				["lastUpdate"] = 1653542953,
 				["CurrencyInfo"] = {
-					[1191] = "795-0-0-0",
+					[1191] = "935-0-0-0",
 					[515] = "175-0-0-0",
 					[1904] = "0-0-0-3510",
 					[1719] = "6416-0-0-0",
@@ -561,7 +587,7 @@ DataStore_CurrenciesDB = {
 					[1810] = "13-0-0-100",
 					[241] = "138-0-0-0",
 					[1314] = "0-0-20-40",
-					[1885] = "85-0-0-0",
+					[1885] = "128-0-0-0",
 					[1704] = "175-0-0-200",
 					[1767] = "1805-0-0-0",
 					[614] = "25-0-0-0",
@@ -578,24 +604,24 @@ DataStore_CurrenciesDB = {
 					[697] = "0-0-0-20",
 					[823] = "484260-0-0-0",
 					[1508] = "1554-0-0-2000",
-					[1977] = "41-0-0-0",
+					[776] = "6-0-0-20",
 					[1533] = "14719-0-0-0",
 					[1268] = "938-0-0-1000",
 					[615] = "4-0-0-0",
 					[1906] = "864-0-0-0",
 					[391] = "127-0-0-0",
-					[776] = "6-0-0-20",
+					[1977] = "41-0-0-0",
 					[1792] = "1952-0-0-15000",
 					[1166] = "7740-0-0-0",
 					[1721] = "2819-0-0-0",
 					[824] = "7702-0-0-10000",
 					[1275] = "194-0-0-0",
 					[1560] = "71073-0-0-0",
-					[1816] = "2105-0-0-0",
-					[2009] = "1306-0-0-0",
+					[1816] = "2639-0-0-0",
+					[1820] = "100-0-0-100",
 					[1828] = "4665-0-0-0",
 					[402] = "29-0-0-0",
-					[1820] = "100-0-0-100",
+					[2009] = "1306-0-0-0",
 					[1710] = "99-0-0-0",
 					[1273] = "0-0-0-6",
 					[1718] = "0-0-0-0",
@@ -606,7 +632,7 @@ DataStore_CurrenciesDB = {
 					[1299] = "3428-0-0-5000",
 					[1931] = "17697-0-0-0",
 					[944] = "4-0-0-1000",
-					[1813] = "602-0-0-200000",
+					[1813] = "2791-0-0-200000",
 					[1754] = "5-0-0-0",
 					[1979] = "82-0-0-0",
 				},

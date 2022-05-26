@@ -10,12 +10,13 @@ DataStore_ReputationsDB = {
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 	},
 	["global"] = {
 		["Characters"] = {
 			["Default.Dalaran.Avisar"] = {
-				["lastUpdate"] = 1652476710,
+				["lastUpdate"] = 1653523130,
 				["Factions"] = {
 					10099, -- [1]
 					10099, -- [2]
@@ -89,9 +90,9 @@ DataStore_ReputationsDB = {
 					[24] = 0,
 					[75] = 14787,
 					[150] = 0,
-					[56] = 7779,
-					[57] = 9974,
 					[79] = 12400,
+					[57] = 9974,
+					[56] = 7779,
 				},
 			},
 			["Default.Dalaran.Tendralas"] = {
@@ -107,8 +108,22 @@ DataStore_ReputationsDB = {
 					[75] = 3300,
 				},
 			},
+			["Default.Zul'jin.Valmagus"] = {
+				["lastUpdate"] = 1653526694,
+				["Factions"] = {
+					[7] = 1365,
+					[78] = 3965,
+					[8] = 1365,
+					[9] = 3965,
+					[34] = 8750,
+					[10] = 17380,
+					[76] = 4365,
+					[6] = 1440,
+					[113] = 3965,
+				},
+			},
 			["Default.Black Dragonflight.Durlok"] = {
-				["lastUpdate"] = 1652471132,
+				["lastUpdate"] = 1653442603,
 				["Factions"] = {
 					[83] = 0,
 					[85] = 0,
@@ -168,8 +183,8 @@ DataStore_ReputationsDB = {
 					[75] = 4802,
 					[77] = 4502,
 					[79] = 27365,
-					[57] = 6168,
 					[112] = 4502,
+					[57] = 6168,
 				},
 			},
 			["Default.Dalaran.Illingrath"] = {
@@ -188,8 +203,8 @@ DataStore_ReputationsDB = {
 					[37] = 42000,
 					[152] = 2000,
 					[153] = 500,
-					[57] = 0,
 					[158] = 620,
+					[57] = 0,
 					[154] = 9410,
 					[138] = 6100,
 					[63] = 0,
@@ -201,7 +216,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Zul'jin.Zulbathal"] = {
-				["lastUpdate"] = 1652471263,
+				["lastUpdate"] = 1653523256,
 				["Factions"] = {
 					[122] = 40000,
 					[38] = 4230,
@@ -291,8 +306,8 @@ DataStore_ReputationsDB = {
 					[38] = 4230,
 					[20] = 647,
 					[80] = 290,
-					[57] = 4017,
 					[81] = -42000,
+					[57] = 4017,
 					[17] = 795,
 					[141] = 3348,
 					[150] = 0,
@@ -311,7 +326,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["lastUpdate"] = 1652832992,
+				["lastUpdate"] = 1653542870,
 				["guildName"] = "Bloodmoon Chosen",
 				["guildRep"] = 42000,
 				["Factions"] = {
@@ -459,24 +474,24 @@ DataStore_ReputationsDB = {
 					47995, -- [142]
 					42000, -- [143]
 					[162] = 43555,
-					[166] = 44000,
+					[166] = 45000,
 					[170] = 15215,
 					[174] = 16925,
 					[159] = 53435,
 					[163] = 51651,
-					[167] = 50180,
+					[167] = 54490,
 					[171] = 3224,
 					[175] = 17488,
 					[152] = 51716,
 					[156] = 47145,
 					[160] = 43143,
 					[164] = 46350,
-					[168] = 35417,
+					[168] = 35667,
 					[172] = 0,
 					[176] = 1630,
 					[157] = 46706,
 					[165] = 48411,
-					[169] = 49200,
+					[169] = 44075,
 					[150] = 15000,
 					[158] = 45662,
 				},

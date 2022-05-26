@@ -34,6 +34,11 @@ loadedFrame:SetScript("OnEvent", function(_, _, addonName)
             WeakAuras.prettyPrint(WeakAuras.L["You have new auras ready to be installed!"])
           end
         end
+        WeakAuras.StopMotion.texture_types["WeakAuras Companion"] = WeakAuras.StopMotion.texture_types["WeakAuras Companion"] or {}
+        local CompanionTextures = WeakAuras.StopMotion.texture_types["WeakAuras Companion"]
+        for fileName, name in pairs(WeakAurasData.stopmotionFiles) do
+          CompanionTextures["Interface\\AddOns\\WeakAurasCompanion\\animations\\" .. fileName] = name
+        end
       end
     end
 

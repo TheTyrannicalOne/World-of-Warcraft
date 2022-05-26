@@ -5,22 +5,21 @@ WoWProCharDB = {
 	["AutoHideInsideInstances"] = true,
 	["EnableGrailCheckPrereq"] = false,
 	["QID2Guide"] = {
-		[9407] = "JamHel6063",
-		[47221] = "Ludo_Argus",
-		[28705] = "JamHel6063",
 		[47835] = "Ludo_Argus",
+		[9407] = "JamHel6063",
+		[28705] = "JamHel6063",
+		[47221] = "Ludo_Argus",
 	},
 	["Trades"] = {
 	},
 	["EnablePetBattles"] = true,
-	["EnableFlight"] = true,
-	["Rank"] = {
+	["completedQIDs"] = {
 	},
+	["EnableRares"] = true,
 	["EnableGrailQuestName"] = false,
+	["EnableGrailQuestObsolete"] = false,
 	["EnableGrailBreadcrumbs"] = false,
-	["Enabled"] = true,
-	["GuideStack"] = {
-	},
+	["DebugLevel"] = 0,
 	["Tradeskills"] = {
 		[2485] = {
 			["skillLvl"] = 1,
@@ -42,9 +41,9 @@ WoWProCharDB = {
 		},
 		[2592] = {
 			["skillLvl"] = 1,
-			["skillMax"] = 300,
-			["skillMod"] = 0,
 			["name"] = "Fishing",
+			["skillMod"] = 0,
+			["skillMax"] = 300,
 		},
 		[2556] = {
 			["skillLvl"] = 22,
@@ -58,11 +57,11 @@ WoWProCharDB = {
 			["name"] = "Battle for Azeroth Herbalism",
 			["skillMax"] = 175,
 		},
-		[794] = {
+		[185] = {
 			["skillLvl"] = 1,
 			["skillMod"] = 0,
-			["name"] = "Archaeology",
-			["skillMax"] = 950,
+			["name"] = "Cooking",
+			["skillMax"] = 175,
 		},
 		[182] = {
 			["skillLvl"] = 67,
@@ -76,29 +75,30 @@ WoWProCharDB = {
 			["name"] = "Fishing",
 			["skillMax"] = 300,
 		},
-		[185] = {
+		[794] = {
 			["skillLvl"] = 1,
 			["skillMod"] = 0,
-			["name"] = "Cooking",
-			["skillMax"] = 175,
+			["name"] = "Archaeology",
+			["skillMax"] = 950,
 		},
 	},
-	["GuideVersion"] = {
+	["Guide"] = {
 	},
 	["Taxi"] = {
 	},
-	["BuildingLocations"] = {
+	["GuideVersion"] = {
 	},
 	["EnableTreasures"] = true,
-	["completedQIDs"] = {
-	},
+	["EnableFlight"] = true,
 	["AutoHideInsideInstancesNotify"] = true,
 	["AutoHideInCombat"] = false,
-	["Guide"] = {
+	["BuildingLocations"] = {
 	},
-	["DebugLevel"] = 0,
-	["EnableGrailQuestObsolete"] = false,
+	["GuideStack"] = {
+	},
+	["Enabled"] = true,
 	["skippedQIDs"] = {
 	},
-	["EnableRares"] = true,
+	["Rank"] = {
+	},
 }

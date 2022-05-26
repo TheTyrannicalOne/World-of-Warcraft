@@ -11,6 +11,7 @@ DataStoreDB = {
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
 	},
 	["global"] = {
 		["Guilds"] = {
@@ -27,6 +28,9 @@ DataStoreDB = {
 			},
 			["Default.Dalaran.Tendralas"] = {
 				["faction"] = "Alliance",
+			},
+			["Default.Zul'jin.Valmagus"] = {
+				["faction"] = "Horde",
 			},
 			["Default.Black Dragonflight.Durlok"] = {
 				["faction"] = "Horde",

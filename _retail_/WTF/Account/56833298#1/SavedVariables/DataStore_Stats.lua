@@ -10,6 +10,7 @@ DataStore_StatsDB = {
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 	},
 	["global"] = {
@@ -25,7 +26,7 @@ DataStore_StatsDB = {
 					["Base"] = "468|73|872|208|0",
 					["Spell"] = "574|613|0|24.066669464111|151|441",
 				},
-				["lastUpdate"] = 1652476777,
+				["lastUpdate"] = 1653523136,
 			},
 			["Default.Dalaran.Darnastris"] = {
 				["Stats"] = {
@@ -53,6 +54,19 @@ DataStore_StatsDB = {
 				},
 				["lastUpdate"] = 1648402214,
 			},
+			["Default.Zul'jin.Valmagus"] = {
+				["Stats"] = {
+					["Ranged"] = "1-2|0|0|0|13.942101478577",
+					["HealthMax"] = 1210,
+					["Melee"] = "59-67|3.1120002269745|81|0|13.942101478577|0",
+					["MaxPower"] = "0|152",
+					["Defense"] = "0|0|3|7.7264533042908|10|0",
+					["PVP"] = "0|0",
+					["Base"] = "81|20|110|56|0",
+					["Spell"] = "97|100|0|13.942101478577|54|24",
+				},
+				["lastUpdate"] = 1653526695,
+			},
 			["Default.Black Dragonflight.Durlok"] = {
 				["Stats"] = {
 					["Ranged"] = "1-2|0|0|0|17.893964767456",
@@ -64,7 +78,7 @@ DataStore_StatsDB = {
 					["Base"] = "84|418|640|190|0",
 					["Spell"] = "591|650|0|17.893964767456|372|375",
 				},
-				["lastUpdate"] = 1652471158,
+				["lastUpdate"] = 1653442629,
 			},
 			["Default.Dalaran.Rotclaugh"] = {
 				["Stats"] = {
@@ -103,7 +117,7 @@ DataStore_StatsDB = {
 					["Base"] = "84|195|640|541|0",
 					["Defense"] = "0|0|6.2811770439148|0|0|0",
 				},
-				["lastUpdate"] = 1652471293,
+				["lastUpdate"] = 1653523261,
 			},
 			["Default.Dalaran.Thorinbane"] = {
 				["Stats"] = {
@@ -135,14 +149,14 @@ DataStore_StatsDB = {
 				["Stats"] = {
 					["Ranged"] = "1-2|0|0|0|20.34285736084",
 					["HealthMax"] = 41140,
-					["Melee"] = "1095-1226|3.2880001068115|1323|0|20.34285736084|0",
+					["Melee"] = "1153-1284|3.2880001068115|1389|0|20.34285736084|0",
 					["MaxPower"] = "1|100",
 					["Defense"] = "0|0|3|11.829582214355|10|0",
 					["PVP"] = "3735|0",
 					["Base"] = "1323|309|2057|304|0",
 					["Spell"] = "304|346|0|20.34285736084|313|0",
 				},
-				["lastUpdate"] = 1652833095,
+				["lastUpdate"] = 1653542880,
 			},
 		},
 	},
