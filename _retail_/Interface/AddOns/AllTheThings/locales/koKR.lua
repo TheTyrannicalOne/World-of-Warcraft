@@ -101,6 +101,9 @@ local L = app.L;
 	--TODO: L.BREADCRUMB_PARTYSYNC = "This may be unable to be completed without Party Sync if completing any of these quests first:";
 	--TODO: L.BREADCRUMB_PARTYSYNC_2 = "This may be obtained via Party Sync with another character that has not completed any of these quests:";
 	--TODO: L.BREADCRUMB_PARTYSYNC_3 = "This may be obtained via Party Sync with a character that is able to accept this quest.";
+	--TODO: L.BREADCRUMB_PARTYSYNC_4 = "Please let us know your results on Discord if you attempt obtaining this Quest via Party Sync!";
+	--TODO: L.DISABLE_PARTYSYNC = "This is likely not able to be completed by this character even using Party Sync. If you manage otherwise, please let us know on Discord!";
+	--TODO: L.UNAVAILABLE_WARNING_FORMAT = "|c%sBecomes unavailable if %d of the following are met:|r";
 	--TODO: L.NO_ENTRIES = "No entries matching your filters were found.";
 	--TODO: L.NO_ENTRIES_DESC = "If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group.";
 	--TODO: L.DEBUG_LOGIN = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.";
@@ -216,8 +219,13 @@ local L = app.L;
 	--TODO: L.REPORT_INACCURATE_QUEST = "Wrong Quest Info! (Click to Report)";
 	--TODO: L.NESTED_QUEST_REQUIREMENTS = "Nested Quest Requirements";
 	--TODO: L.MAIN_LIST_REQUIRES_REFRESH = "[Open Main list to update progress]";
-	--TODO: L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207This group and its content do not contribute to the progress of this window!|r";
-	--TODO: L.CURRENCY_NEEDED_TO_BUY = "Items needed to buy not collected Things";
+	--TODO: L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207This group and its content do not contribute to the progress of this window since it is Sourced in another Location!|r";
+	--TODO: L.CURRENCY_NEEDED_TO_BUY = "Estimated amount needed to obtain remaining Things";
+	--TODO: L.LOCK_CRITERIA_LEVEL_LABEL = "Player Level";
+	--TODO: L.LOCK_CRITERIA_QUEST_LABEL = "Completed Quest";
+	--TODO: L.LOCK_CRITERIA_SPELL_LABEL = "Learned Spell/Mount/Recipe";
+	--TODO: L.LOCK_CRITERIA_FACTION_LABEL = "Faction Reputation";
+	--TODO: L.LOCK_CRITERIA_FACTION_FORMAT = "%s with %s (Current: %s)";
 
 	-- Item Filter Window
 		--TODO: L.ITEM_FILTER_TEXT = "Item Filters";
@@ -304,8 +312,8 @@ local L = app.L;
 		--TODO: L.MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t |cffADD8E6Music Rolls / Selfie Filters";
 		--TODO: L.MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX_TOOLTIP = "Enable this option to track music rolls and selfie filters.\n\nYou can use your Jukebox Toy to play in-game music and your Selfie Camera toy to collect filters for your selfies from certain locations.";
 		--TODO: L.QUESTS_CHECKBOX_TOOLTIP = "Enable this option to track normal Quests.\n\nYou can right click any Quest in the lists to pop out their full quest chain to show your progress and any prerequisite Quests.\n\nNOTE: Quests are not permanently tracked due to the nature of how Daily, Weekly, Yearly, and World Quests are tracked in the Blizzard Database.";
-		--TODO: L.QUESTS_LOCKED_CHECKBOX = "|cffADD8E6+Breadcrumbs";
-		--TODO: L.QUESTS_LOCKED_CHECKBOX_TOOLTIP = "Enable this option to specifically include tracking of Breadcrumb Quest completion.\n\nBreadcrumb Quests are technically 'optional' in that they only serve to lead the player to a different Quest, and become unavailable if they are not completed prior to completing their following Quest(s).\nThis can make obtaining Breadcrumbs very reliant on the Party Sync feature or Account-Wide Quests";
+		--TODO: L.QUESTS_LOCKED_CHECKBOX = "|cffADD8E6Locked Quests";
+		--TODO: L.QUESTS_LOCKED_CHECKBOX_TOOLTIP = "Enable this option to specifically include tracking of Locked Quest completion.\n\nLocked Quests are those which the player is no longer able to complete (according to known ATT data) through normal gameplay.\n\nObtaining these Quests is very reliant on the Party Sync feature or using Account-Wide Quests to incorporate progress from other characters.";
 		--TODO: L.RECIPES_CHECKBOX_TOOLTIP = "Enable this option to track recipes for your professions.\n\nNOTE: You must open your professions list in order to cache these.";
 		--TODO: L.REPUTATIONS_CHECKBOX = "|cffADD8E6Reputations";
 		--TODO: L.REPUTATIONS_CHECKBOX_TOOLTIP = "Enable this option to track reputations.\n\nOnce you reach Exalted or Best Friend with a reputation, it will be marked Collected.\n\nYou may have to do a manual refresh for this to update correctly.";
@@ -413,13 +421,17 @@ local L = app.L;
 		--TODO: L.SHOW_MODELS_CHECKBOX = "Model Preview";
 		--TODO: L.SHOW_MODELS_CHECKBOX_TOOLTIP = "Enable this option to show models within a preview instead of the icon on the tooltip.\n\nThis option may assist you in identifying what a Rare Spawn or Vendor looks like. It might be a good idea to keep this turned on for that reason.";
 		--TODO: L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX = "Currency calculation";
-		--TODO: L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP = "Enable this option to show the approximate amount of items/currency required to buy Uncollected Things.\n\nOnly those collectible Things that can be directly purchased for an item/currency are counted. Containers that do not give items with a 100% chance are not counted.";
+		--TODO: L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP = "Enable this option to show the estimated amount of Items/Currency required to collect Things.\n\nFor Containers which do not reward all of their available content at once, the estimate will thus be lower than actually required.";
 		--TODO: L.SHARED_APPEARANCES_CHECKBOX = "Shared Appearances";
 		--TODO: L.SHARED_APPEARANCES_CHECKBOX_TOOLTIP = "Enable this option to see items that share a similar appearance in the tooltip.\n\nNOTE: Items that do not match the armor type are displayed in the list. This is to help you diagnose the Collection progress.\n\nIf you are ever confused by this, as of ATT v1.5.0, you can Right Click the item to open the item and its Shared Appearances into their own standalone Mini List.";
 		--TODO: L.INCLUDE_ORIGINAL_CHECKBOX = "Original Source";
 		--TODO: L.INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP = "Enable this option if you actually liked seeing the original source info within the Shared Appearances list in the tooltip.";
 		--TODO: L.ONLY_RELEVANT_CHECKBOX = "Only Relevant";
 		--TODO: L.ONLY_RELEVANT_CHECKBOX_TOOLTIP = "Enable this option if you only want to see shared appearances that your character can unlock.\n\nNOTE: We recommend you keep this off as knowing the unlock requirements for an item can be helpful in identifying why an item is Not Collected.";
+		--TODO: L.PROFESSION_CHECKBOX = "Professions";
+		--TODO: L.PROFESSION_CHECKBOX_TOOLTIP = "Enable this option if you want to see the profession requirements in the tooltip.";
+		--TODO: L.LEVELREQ_CHECKBOX = "Levels";
+		--TODO: L.LEVELREQ_CHECKBOX_TOOLTIP = "Enable this option if you want to see the level requirements in the tooltip.";
 		--TODO: L.CLASSES_CHECKBOX = "Classes";
 		--TODO: L.CLASSES_CHECKBOX_TOOLTIP = "Enable this option if you want to see the full list of class requirements in the tooltip.";
 		--TODO: L.RACES_CHECKBOX = "Races";
@@ -473,7 +485,7 @@ local L = app.L;
 		--TODO: L.AUTO_MINI_LIST_CHECKBOX = "Automatically Open the Mini List";
 		--TODO: L.AUTO_MINI_LIST_CHECKBOX_TOOLTIP = "Enable this option if you want to see everything you can collect in your current zone. The list will automatically switch when you change zones. Some people don't like this feature, but when you are solo farming, this feature is extremely useful.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Mini List\n\nShortcut Command: /att mini";
 		--TODO: L.AUTO_PROF_LIST_CHECKBOX = "Automatically Open the Profession List";
-		--TODO: L.AUTO_PROF_LIST_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to open and refresh the profession list when you open your professions. Due to an API limitation imposed by Blizzard, the only time an addon can interact with your profession data is when it is open. The list will automatically switch when you change to a different profession.\n\nWe don't recommend disabling this option as it may prevent recipes from tracking correctly.\n\nYou can also bind this setting to a Key. (only works when a profession is open)\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Profession Mini List\n\nShortcut Command: /att prof";
+		--TODO: L.AUTO_PROF_LIST_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to open and refresh the profession list when you open your professions. Due to an API limitation imposed by Blizzard, the only time an addon can interact with your profession data is when it is open. The list will automatically switch when you change to a different profession.\n\nWe don't recommend disabling this option as it may prevent recipes from tracking correctly.\n\nYou can also bind this setting to a Key. (only works when a profession is open)\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Profession Mini List";
 		--TODO: L.AUTO_RAID_ASSISTANT_CHECKBOX = "Automatically Open the Raid Assistant";
 		--TODO: L.AUTO_RAID_ASSISTANT_CHECKBOX_TOOLTIP = "Enable this option if you want to see an alternative group/party/raid settings manager called the 'Raid Assistant'. The list will automatically update whenever group settings change.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Raid Assistant\n\nShortcut Command: /attra";
 		--TODO: L.AUTO_WQ_LIST_CHECKBOX = "Automatically Open the World Quests List";
@@ -508,6 +520,28 @@ local L = app.L;
 		--TODO: L.PROFILE_COPY_TOOLTIP = "Copy the Selected Profile into the Current Profile";
 		--TODO: L.PROFILE_DELETE_TOOLTIP = "Delete the Selected Profile";
 		--TODO: L.PROFILE_SWITCH_TOOLTIP = "Set the Selected Profile as the Current Profile\n\nA Profile can also be Shift-Clicked to Switch to it";
+
+	-- Sync tab
+		--TODO: L.SYNC = "Sync";
+		--TODO: L.ACCOUNT_SYNCHRONIZATION = "Account Synchronization";
+		--TODO: L.AUTO_SYNC_ACC_DATA_CHECKBOX = "Automatically Sync Account Data";
+		--TODO: L.AUTO_SYNC_ACC_DATA_TOOLTIP = "Enable this option if you want ATT to attempt to automatically synchronize account data between accounts when logging in or reloading the UI.";
+		--TODO: L.ACCOUNT_MANAGEMENT = "Account Management";
+		--TODO: L.ACCOUNT_MANAGEMENT_TOOLTIP = "This list shows you all of the functionality related to syncing account data.";
+		--TODO: L.ADD_LINKED_CHARACTER_ACCOUNT = "Add Linked Character / Account";
+		--TODO: L.ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP = "Click here to link a character or account to your account.";
+		--TODO: L.ADD_LINKED_POPUP = "Please type the name of the character or BNET account to link to.";
+		--TODO: L.CHARACTERS = "Characters";
+		--TODO: L.SYNC_CHARACTERS_TOOLTIP = "This shows all of the characters on your account.";
+		--TODO: L.NO_CHARACTERS_FOUND = "No characters found.";
+		--TODO: L.LINKED_ACCOUNTS = "Linked Accounts";
+		--TODO: L.LINKED_ACCOUNTS_TOOLTIP = "This shows all of the linked accounts you have defined so far.";
+		--TODO: L.NO_LINKED_ACCOUNTS = "No linked accounts found.";
+		--TODO: L.LINKED_ACCOUNT_TOOLTIP = "This character's account will be synchronized with automatically when they log in. For optimal play, you should whitelist a bank character and probably not your main as to not affect your ability to play your character when syncing account data.";
+		--TODO: L.DELETE_LINKED_CHARACTER = "Right Click to Delete this Linked Character";
+		--TODO: L.DELETE_LINKED_ACCOUNT = "Right Click to Delete this Linked Account";
+		--TODO: L.DELETE_CHARACTER = "Right Click to Delete this Character";
+		--TODO: L.CONFIRM_DELETE = "\n \nAre you sure you want to delete this?";
 
 	-- About tab
 		--TODO: L.ABOUT = "About";
@@ -554,6 +588,7 @@ local L = app.L;
 		--TODO: L.SECRETS_HEADER = "Secrets";
 		--TODO: L.LIMITED_QUANTITY = "This has a limited quantity and may not always be present on the vendor.";
 		--TODO: L.SOURCE_ID_MISSING = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!";
+		--TODO: L.REMOVED_WITH_PATCH_FORMAT = "This gets removed in patch %s";
 
 	-- Artifact Relic Completion
 		--TODO: L.ARTIFACT_RELIC_CACHE = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not.";
@@ -646,6 +681,8 @@ for key,value in pairs({
 		--TODO: [-22] = "Secrets",									-- Secrets
 		--TODO: [-23] = "Common Dungeon Drop",						-- WoD Common Dungeon Drop
 		--TODO: [-26] = "Drops",									-- Drops
+		--TODO: [-27] = "Lower",									-- Lower (Blackrock Spire)
+		--TODO: [-28] = "Upper",									-- Upper (Blackrock Spire)
 		--TODO: [-41] = "Cache of Madness",
 	-- World Events
 		--TODO: [-53] = "Midsummer Fire Festival",					-- Midsummer Fire Festival
@@ -688,6 +725,8 @@ for key,value in pairs({
 	-- Fishing
 		--TODO: [-217] = "Lures",									-- Lures (for Fishing)
 		--TODO: [-218] = "Coastal",									-- Coastal (for Fishing)
+	--TODO: [-219] = "Sourceless",									-- Sourceless
+	-- PvP
 		--TODO: [-242] = "Unrated",									-- Unrated
 		--TODO: [-243] = "Bounty",									-- Bounty
 	-- Allied Races
@@ -807,7 +846,6 @@ for key,value in pairs({
 			[-1005] = "야생의 영혼",								-- Untamed Spirit
 		-- SL Bastion/Kyrian
 			[-940] = "승천자 의회",										-- Ascended Counil
-			--TODO: [-966] = "Blueprints & Crafting",				-- Blueprints (for Path of Ascension)
 			--TODO: [-973] = "Loyalty",								-- Loyalty
 			--TODO: [-975] = "Humility",							-- Humility
 		-- SL Revendreth/Venthyr
@@ -819,6 +857,13 @@ for key,value in pairs({
 			--TODO: [-969] = "Set B",								-- Set B
 			--TODO: [-970] = "Set C",								-- Set C
 			--TODO: [-971] = "Set D",								-- Set D
+	-- Temp Sets for Creation Catalyst
+		[-1006] = "공격대 찾기 Alternative",								-- TODO: Raid Finder Alternative
+		[-1007] = "일반 Alternative",									-- TODO: Normal Alternative
+		[-1008] = "영웅 Alternative",									-- TODO: Heroic Alternative
+		[-1009] = "신화 Alternative",									-- TODO: Mythic Alternative
+		[-1010] = "검투사 Alternative",								-- TODO: Gladiator Alternative
+		[-1011] = "정예병 Alternative",								-- TODO: Elite Alternative
 	-- Warrior order hall lore items
 		--TODO: [-2200] = "Great Odyn and the Firelord",
 		--TODO: [-2201] = "The Wanderer and the Serpent",
@@ -902,6 +947,7 @@ for key,value in pairs({
 	[257] = "수상한 통",	-- Suspicious Barrel
 	[259] = "반쯤 묻힌 통",	-- Half-buried Barrel
 	[261] = "부서진 상자",	-- Damaged Crate
+	[269] = "야벤이 지키고 있는 썬더브루 맥주통",	-- Guarded Thunder Ale Barrel
 	[270] = "아무도 지키지 않는 썬더브루 맥주통",	-- Unguarded Thunder Ale Barrel	--TODO: This was taken from classic Wowhead
 	[711] = "현상 수배!",	-- Wanted!
 	[1561] = "봉인된 함",	-- Sealed Crate
@@ -1868,6 +1914,7 @@ for key,value in pairs({
 	[241150] = "작은 보물 상자",	-- Small Treasure Chest
 	[241151] = "작은 보물 상자",	-- Small Treasure Chest
 	[241152] = "보물 상자",	-- Treasure Chest
+	[241153] = "작은 보물 상자",	-- Small Treasure Chest
 	[241154] = "작은 보물 상자",	-- Small Treasure Chest
 	[241155] = "보물 상자",	-- Treasure Chest
 	[241180] = "보물 상자",	-- Treasure Chest
@@ -2011,6 +2058,7 @@ for key,value in pairs({
 	[245479] = "찌그러진 궤짝",	-- Battered Chest
 	[245524] = "보물 상자",	-- Treasure Chest
 	[245525] = "작은 보물 상자",	-- Small Treasure Chest
+	[245527] = "보물 상자",	-- Treasure Chest
 	[245528] = "보물 상자",	-- Treasure Chest
 	[245529] = "작은 보물 상자",	-- Small Treasure Chest
 	[245530] = "반짝이는 보물 상자",	-- Glimmering Treasure Chest
@@ -2041,6 +2089,7 @@ for key,value in pairs({
 	[245603] = "작은 보물 상자",	-- Small Treasure Chest
 	[245688] = "조각난 유골 단지",	-- Shattered Burial Urn
 	[245793] = "닳아해진 일지",	-- Battered Journal
+	--TODO: [245941] = "Warp Cache",	-- Warp Cache
 	[245996] = "작은 보물 상자",	-- Small Treasure Chest
 	[246037] = "보물 상자",	-- Treasure Chest
 	[246147] = "작은 보물 상자",	-- Small Treasure Chest
@@ -2093,7 +2142,9 @@ for key,value in pairs({
 	[250541] = "보물 상자",	-- Treasure Chest
 	[250984] = "작은 보물 상자",	-- Small Treasure Chest
 	[250985] = "보물 상자",	-- Treasure Chest
+	[250987] = "작은 보물 상자",	-- Small Treasure Chest
 	[251032] = "장식장",	-- Armoire
+	[251124] = "반짝이는 보물 상자",	-- Glimmering Treasure Chest	--TODO: This was manually translated
 	[251168] = "찰나의 수정",	-- Ephemeral Crystal
 	[251218] = "롤로의 룬석",	-- Rollo's Runestone
 	[251220] = "라그나르의 룬석",	-- Ragnar's Runestone
@@ -2113,6 +2164,7 @@ for key,value in pairs({
 	[251762] = "작은 보물 상자",	-- Small Treasure Chest
 	[251764] = "작은 보물 상자",	-- Small Treasure Chest
 	[251772] = "작은 보물 상자",	-- Small Treasure Chest
+	[251776] = "작은 보물 상자",	-- Small Treasure Chest
 	[251780] = "작은 보물 상자",	-- Small Treasure Chest
 	[251782] = "작은 보물 상자",	-- Small Treasure Chest
 	[251792] = "작은 보물 상자",	-- Small Treasure Chest
@@ -2219,6 +2271,7 @@ for key,value in pairs({
 	[257393] = "보물 상자",	-- Treasure Chest
 	[257545] = "보물 상자",	-- Treasure Chest
 	[257546] = "보물 상자",	-- Treasure Chest
+	[257978] = "보물 상자",	-- Treasure Chest
 	[257999] = "각인 기법: 고요한 정신의 고서",	-- Technique: Tome of the Tranquil Mind
 	[258690] = "작은 보물 상자",	-- Small Treasure Chest
 	[258978] = "물에 젖은 고서",	-- Waterlogged Tome
@@ -2269,6 +2322,7 @@ for key,value in pairs({
 	--TODO: [273414] = "Ancient Eredar Cache",	-- Ancient Eredar Cache
 	[273415] = "고대 에레다르 보관함",	-- Ancient Eredar Cache
 	[273439] = "고대 에레다르 보관함",	-- Ancient Eredar Cache
+	[273443] = "공허가 스민 보관함",	-- Void-Seeped Cache
 	[273519] = "군단 전쟁 물자",	-- Legion War Supplies
 	[273521] = "군단 전쟁 물자",	-- Legion War Supplies
 	[273523] = "군단 전쟁 물자",	-- Legion War Supplies
@@ -2333,6 +2387,9 @@ for key,value in pairs({
 	[279260] = "\"교묘하게\" 위장된 상자",	-- Cleverly Disguised Chest
 	[279299] = "맹독의 문장",	-- Venomous Seal
 	[279609] = "판다리아 전리품",	-- Spoils of Pandaria
+	--TODO: [279645] = "Tome of Oblivion",	-- Tome of Oblivion
+	[279646] = "혈투사 연대기",	-- Bloodguard Chronicles
+	[279647] = "희생의 고서",	-- Tome of Sacrifice
 	[279689] = "잃어버린 나즈마니 보물",	-- Lost Nazmani Treasure
 	--TODO: [279750] = "Hay Covered Chest",	-- Hay Covered Chest
 	[280504] = "삼켜진 상자",	-- Swallowed Naga Chest
@@ -2642,7 +2699,10 @@ for key,value in pairs({
 	[337237] = "잃어버린 금고",	-- Lost Vault
 	[337241] = "장비 보관함",	-- Stashed Equipment
 	[339211] = "|cFFFFFFFFStep 2:|r 빈 그릇",	--|cFFFFFFFFStep 2:|r  Empty Dish
+	[339243] = "감염된 금고",	-- Infested Strongbox
 	[339248] = "감염된 보관함",	-- Infested Cache
+	[339249] = "감염된 보관함",	-- Infested Cache
+	[339250] = "감염된 보관함",	-- Infested Cache
 	[339283] = "잊힌 귀족의 상자",	-- Forgotten Noble's Chest
 	[339601] = "영겁의 두루마리",	-- Scroll of Aeons
 	[339625] = "소피아의 선물",	-- Sophia's Gift
@@ -2958,6 +3018,8 @@ for key,value in pairs({
 	[369440] = "균열결속 보관함",	-- Riftbound Cache
 	[369602] = "저항의 손",	-- Hands of Defiance
 	[369757] = "가라앉은 상자",	-- Submerged Chest
+	[369893] = "긴급 서신",	-- Urgent Missive
+	[369894] = "긴급 서신",	-- Urgent Missive
 	[370140] = "손상된 지로 보관함",	-- Damaged Jiro Stash
 	--TODO: [370469] = "Spectral Feed",	-- Spectral Feed
 	[370494] = "토카타 보관함",	-- Toccatian Cache

@@ -5,14 +5,14 @@ TomTomDB = {
 		["Thorinbane - Dalaran"] = "Default",
 		["Shaekhan - Argent Dawn"] = "Default",
 		["Illingrath - Dalaran"] = "Default",
-		["Valmagus - Zul'jin"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
-		["Tendralas - Dalaran"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
+		["Valmagus - Zul'jin"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
+		["Tendralas - Dalaran"] = "Default",
 		["Okona - Zul'jin"] = "Default",
 	},
 	["profiles"] = {
@@ -49,14 +49,14 @@ TomTomWaypointsM = {
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
-		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
-		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
 	},
 	["profiles"] = {
@@ -68,7 +68,7 @@ TomTomWaypointsM = {
 		},
 		["Illingrath - Dalaran"] = {
 		},
-		["Valmagus - Zul'jin"] = {
+		["Durlok - Black Dragonflight"] = {
 		},
 		["Darnastris - Dalaran"] = {
 		},
@@ -76,13 +76,13 @@ TomTomWaypointsM = {
 		},
 		["Shanyt - Argent Dawn"] = {
 		},
-		["Durlok - Black Dragonflight"] = {
+		["Valmagus - Zul'jin"] = {
 		},
-		["Tendralas - Dalaran"] = {
+		["Zulbathal - Zul'jin"] = {
 		},
 		["Varlouris - Dalaran"] = {
 		},
-		["Zulbathal - Zul'jin"] = {
+		["Tendralas - Dalaran"] = {
 		},
 		["Okona - Zul'jin"] = {
 		},

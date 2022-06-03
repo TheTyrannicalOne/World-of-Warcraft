@@ -28,3 +28,5 @@ TomCats-LunarFestival: disabled
 TomCats-Noblegarden: disabled
 Leatrix_Plus: enabled
 ElvUI_OptionsUI: enabled
+BigWigs_CommonAuras: enabled
+LittleWigs_Classic: enabled

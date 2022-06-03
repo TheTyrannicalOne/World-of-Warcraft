@@ -17,8 +17,8 @@ WoWProCharDB = {
 	["Rank"] = {
 	},
 	["EnableGrailQuestName"] = false,
+	["EnableGrailBreadcrumbs"] = false,
 	["Enabled"] = true,
-	["EnableGrailQuestObsolete"] = false,
 	["GuideStack"] = {
 	},
 	["Tradeskills"] = {
@@ -46,23 +46,11 @@ WoWProCharDB = {
 			["name"] = "Archaeology",
 			["skillMax"] = 950,
 		},
-		[2568] = {
-			["skillLvl"] = 17,
-			["skillMod"] = 0,
-			["name"] = "Pandaria Mining",
-			["skillMax"] = 75,
-		},
-		[2550] = {
-			["skillLvl"] = 23,
-			["skillMod"] = 0,
-			["name"] = "Legion Herbalism",
-			["skillMax"] = 100,
-		},
-		[2569] = {
+		[185] = {
 			["skillLvl"] = 1,
 			["skillMod"] = 0,
-			["name"] = "Cataclysm Mining",
-			["skillMax"] = 75,
+			["name"] = "Cooking",
+			["skillMax"] = 175,
 		},
 		[2565] = {
 			["skillLvl"] = 147,
@@ -70,11 +58,23 @@ WoWProCharDB = {
 			["name"] = "Battle for Azeroth Mining",
 			["skillMax"] = 175,
 		},
+		[356] = {
+			["skillLvl"] = 13,
+			["skillMod"] = 0,
+			["name"] = "Fishing",
+			["skillMax"] = 175,
+		},
+		[2550] = {
+			["skillLvl"] = 23,
+			["skillMod"] = 0,
+			["name"] = "Legion Herbalism",
+			["skillMax"] = 100,
+		},
 		[2585] = {
 			["skillLvl"] = 13,
 			["skillMax"] = 175,
-			["skillMod"] = 0,
 			["name"] = "Battle for Azeroth Fishing",
+			["skillMod"] = 0,
 		},
 		[186] = {
 			["skillLvl"] = 147,
@@ -106,34 +106,34 @@ WoWProCharDB = {
 			["name"] = "Herbalism",
 			["skillMax"] = 175,
 		},
-		[356] = {
-			["skillLvl"] = 13,
-			["skillMod"] = 0,
-			["name"] = "Fishing",
-			["skillMax"] = 175,
-		},
-		[185] = {
+		[2569] = {
 			["skillLvl"] = 1,
 			["skillMod"] = 0,
-			["name"] = "Cooking",
-			["skillMax"] = 175,
+			["name"] = "Cataclysm Mining",
+			["skillMax"] = 75,
+		},
+		[2568] = {
+			["skillLvl"] = 17,
+			["skillMod"] = 0,
+			["name"] = "Pandaria Mining",
+			["skillMax"] = 75,
 		},
 	},
-	["BuildingLocations"] = {
+	["GuideVersion"] = {
 	},
 	["Taxi"] = {
 	},
-	["Guide"] = {
+	["BuildingLocations"] = {
 	},
 	["EnableTreasures"] = true,
 	["completedQIDs"] = {
 	},
 	["AutoHideInsideInstancesNotify"] = true,
 	["AutoHideInCombat"] = false,
-	["GuideVersion"] = {
+	["Guide"] = {
 	},
 	["DebugLevel"] = 0,
-	["EnableGrailBreadcrumbs"] = false,
+	["EnableGrailQuestObsolete"] = false,
 	["skippedQIDs"] = {
 	},
 	["EnableRares"] = true,

@@ -1,0 +1,19 @@
+## Interface: 90205
+## Title: Bron Cena
+## Notes: Helps Bron Cena announce his arrival in style
+## Author: whup
+## Version: v1.6.1
+## SavedVariables: BronCenaDB
+## OptionalDeps: Ace3, LibSharedMedia-3.0
+## X-Embeds: Ace3
+## DefaultState: Enabled
+## X-Category: Miscellaneous, Audio & Video
+## X-License: MIT License
+## X-Website: https://github.com/SadRobotGG/BronCena
+## X-Curse-Project-ID: 513767
+## X-WoWI-ID: 26129
+## X-Wago-ID: 0mKO7kKx
+embeds.xml
+Locales/en-US.lua
+BronCena.lua
+BronCenaMessageFrame.xml

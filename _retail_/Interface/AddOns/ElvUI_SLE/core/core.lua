@@ -14,8 +14,10 @@ SLE.callbacks = SLE.callbacks or LibStub('CallbackHandler-1.0'):New(SLE)
 SLE.version = GetAddOnMetadata('ElvUI_SLE', 'Version')
 SLE.DBversion = '4.24'
 SLE.Title = format('|cff9482c9%s|r', 'Shadow & Light')
+
+_G.ElvDB.ShadowLightAlpha = false
 --[=[@alpha@
-ElvDB.ShadowLightAlpha = true
+_G.ElvDB.ShadowLightAlpha = true
 --@end-alpha@]=]
 
 BINDING_HEADER_SLE = '|cff9482c9Shadow & Light|r'

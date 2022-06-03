@@ -1298,15 +1298,12 @@ L["Yetis"] = "예티"
 elseif locale == "ptBR" then
     ADDON.isMetric = true
     L["Black Market"] = "Mercado Negro"
---[[Translation missing --]]
---[[ L["DRESSUP_LABEL"] = "Journal"--]] 
+L["DRESSUP_LABEL"] = "Diário"
 L["Family"] = "Família"
---[[Translation missing --]]
---[[ L["FAVOR_AUTO"] = "Auto-favor new mounts"--]] 
+L["FAVOR_AUTO"] = "Auto-favoritar novas montarias"
 L["FAVOR_DISPLAYED"] = "Exibir todos"
 L["FAVOR_PER_CHARACTER"] = "Por personagem"
---[[Translation missing --]]
---[[ L["FILTER_ONLY_LATEST"] = "Only latest additions"--]] 
+L["FILTER_ONLY_LATEST"] = "Apenas adições mais recentes"
 L["FILTER_SECRET"] = "Oculto pelo jogo"
 L["Hidden"] = "Oculto"
 L["Only tradable"] = "Apenas negociável"
@@ -1315,8 +1312,7 @@ L["Reset filters"] = "Resetar filtros "
 L["ROTATE_DOWN"] = "Girar para Baixo"
 L["ROTATE_UP"] = "Girar para Cima"
 L["SORT_BY_LAST_USAGE"] = "Último uso"
---[[Translation missing --]]
---[[ L["SORT_BY_LEARNED_DATE"] = "Date of receipt"--]] 
+L["SORT_BY_LEARNED_DATE"] = "Data da recebimento"
 L["SORT_BY_TRAVEL_DISTANCE"] = "Distância percorrida"
 L["SORT_BY_TRAVEL_DURATION"] = "Duração de viagem"
 L["SORT_BY_USAGE_COUNT"] = "Contagem de uso"
@@ -1326,19 +1322,15 @@ L["SORT_UNOWNED_BOTTOM"] = "Não aprendidos por último"
 L["SORT_UNUSABLE_BOTTOM"] = "Inutilizável depois de utilizável"
 L["TASK_END"] = "[MJE] Ufa! Terminei."
 L["TASK_FAVOR_START"] = "[MJE] Reaplicando estrelas em todas as suas montagens. Por favor, espere alguns segundos até eu terminar."
---[[Translation missing --]]
---[[ L["TOGGLE_COLOR"] = "Show next color variation"--]] 
+L["TOGGLE_COLOR"] = "Mostrar próxima variação de cor"
 L["Transform"] = "Transformar"
 
     -- Settings
---[[Translation missing --]]
---[[ L["DISPLAY_ALL_SETTINGS"] = "Display all settings"--]] 
---[[Translation missing --]]
---[[ L[ [=[RESET_WINDOW_SIZE
-]=] ] = "Reset journal size"--]] 
+L["DISPLAY_ALL_SETTINGS"] = "Exibir todas as configurações"
+L[ [=[RESET_WINDOW_SIZE
+]=] ] = "Redefinir tamanho do diário"
 L["SETTING_ACHIEVEMENT_POINTS"] = "Mostrar Pontos de Conquista"
---[[Translation missing --]]
---[[ L["SETTING_AUTO_FAVOR"] = "Automatically set new mounts as favorite"--]] 
+L["SETTING_AUTO_FAVOR"] = "Definir automaticamente novas montagens como favoritas"
 L["SETTING_COMPACT_LIST"] = "Lista de Montarias Compacta"
 L["SETTING_CURSOR_KEYS"] = "Ativar as teclas para cima e para baixo para navegar pelas montarias"
 L["SETTING_FAVORITE_PER_CHAR"] = "Montarias favoritas por personagem"
@@ -1371,16 +1363,14 @@ L["Bees"] = "Abelhas"
 L["Birds"] = "Aves"
 L["Blood Ticks"] = "Tiques Sangrentos"
 L["Boars"] = "Javalis"
---[[Translation missing --]]
---[[ L["Book"] = "Book"--]] 
+L["Book"] = "Livro"
 L["Bovids"] = "Bovídeos"
 L["Brutosaurs"] = "Brutossauros"
 L["Camels"] = "Camelos"
 L["Carnivorans"] = "Carnívoros"
 L["Carpets"] = "Tapetes"
 L["Cats"] = "Gatos"
---[[Translation missing --]]
---[[ L["Cervid"] = "Cervid"--]] 
+L["Cervid"] = "Cervídeo"
 L["Chargers"] = "Corcéis"
 L["Chickens"] = "Galinhas"
 L["Clefthooves"] = "Fenocerontes"
@@ -1394,8 +1384,7 @@ L["Crows"] = "Corvos"
 L["Demonic Hounds"] = "Cães Demoníacos"
 L["Demonic Steeds"] = "Corcéis Demoníacos"
 L["Demons"] = "Demônios"
---[[Translation missing --]]
---[[ L["Devourer"] = "Devourer"--]] 
+L["Devourer"] = "Devorador"
 L["Dinosaurs"] = "Dinossauros"
 L["Dire Wolves"] = "Lobos Hediondos"
 L["Direhorns"] = "Escornantes"
@@ -1410,13 +1399,11 @@ L["Fathom Rays"] = "Raias-Profundas"
 L["Feathermanes"] = "Aquifélix"
 L["Felsabers"] = "Sabrevis"
 L["Fish"] = "Peixe"
---[[Translation missing --]]
---[[ L["Flies"] = "Flies"--]] 
+L["Flies"] = "Moscas"
 L["Flying Steeds"] = "Corcéis Voadores"
 L["Foxes"] = "Raposas"
 L["Gargon"] = "Gargono"
---[[Translation missing --]]
---[[ L["Gargoyle"] = "Gargoyle"--]] 
+L["Gargoyle"] = "Gárgula"
 L["Goats"] = "Bodes"
 L["Gorger"] = "Engolidor"
 L["Gorm"] = "Gorm"
@@ -1424,8 +1411,7 @@ L["Grand Drakes"] = "Dracos Grandes"
 L["Gronnlings"] = "Gronnídeos"
 L["Gryphons"] = "Grifos"
 L["Gyrocopters"] = "Girocóptero"
---[[Translation missing --]]
---[[ L["Hands"] = "Hands"--]] 
+L["Hands"] = "Mãos"
 L["Hawkstriders"] = "Falcostruzes"
 L["Hippogryphs"] = "Hipogrifos"
 L["Horned Steeds"] = "Corcéis com Chifres"
@@ -1443,13 +1429,11 @@ L["Kodos"] = "Kodos"
 L["Krolusks"] = "Croluscos"
 L["Larion"] = "Larião"
 L["Lions"] = "Leões"
---[[Translation missing --]]
---[[ L["Lupine"] = "Lupine"--]] 
+L["Lupine"] = "Lupino"
 L["Mammoths"] = "Mamutes"
 L["Mana Rays"] = "Arraias de Mana"
 L["Manasabers"] = "Manassabres"
---[[Translation missing --]]
---[[ L["Mauler"] = "Mauler"--]] 
+L["Mauler"] = "Espancador"
 L["Mechanical Animals"] = "Animais Mecânicos"
 L["Mechanical Birds"] = "Pássaros Mecânicos"
 L["Mechanical Cats"] = "Gatos Mecânicos"
@@ -1473,14 +1457,12 @@ L["Proto-Drakes"] = "Protodracos"
 L["Pterrordaxes"] = "Pterrordaxes"
 L["Quilen"] = "Quílen"
 L["Rams"] = "Carneiros"
---[[Translation missing --]]
---[[ L["Raptora"] = "Raptora"--]] 
+L["Raptora"] = "Raptora"
 L["Raptors"] = "Raptores"
 L["Rats"] = "Ratos"
 L["Ravagers"] = "Assoladores"
 L["Rays"] = "Arraias"
---[[Translation missing --]]
---[[ L["Razorwing"] = "Razorwing"--]] 
+L["Razorwing"] = "Talhasa"
 L["Reptiles"] = "Répteis"
 L["Rhinos"] = "Rinocerontes"
 L["Riverbeasts"] = "Feras-do-rio"
@@ -1495,8 +1477,7 @@ L["Sea Serpents"] = "Serpente Marinha"
 L["Seahorses"] = "Cavalos-marinhos"
 L["Seat"] = "Assento"
 L["Silithids"] = "Silitídeos"
---[[Translation missing --]]
---[[ L["Snail"] = "Snail"--]] 
+L["Snail"] = "Caracol"
 L["Snapdragons"] = "Dracoliscos"
 L["Spider Tanks"] = "Tanques Aranha"
 L["Spiders"] = "Aranhas"
@@ -1517,16 +1498,13 @@ L["Undead Wolves"] = "Lobos Mortos-vivos"
 L["Ungulates"] = "Ungulados"
 L["Ur'zul"] = "Ur'zul"
 L["Vehicles"] = "Veículos"
---[[Translation missing --]]
---[[ L["Vombata"] = "Vombata"--]] 
+L["Vombata"] = "Vombate"
 L["Vulpin"] = "Vulpino"
 L["Vultures"] = "Abutres"
 L["War Wolves"] = "Lobos de Guerra"
---[[Translation missing --]]
---[[ L["Wasp"] = "Wasp"--]] 
+L["Wasp"] = "Vespa"
 L["Water Striders"] = "Caminhante das Águas "
---[[Translation missing --]]
---[[ L["Wilderlings"] = "Wilderlings"--]] 
+L["Wilderlings"] = "Silvestritos"
 L["Wind Drakes"] = "Dracos do Vento"
 L["Wolfhawks"] = "Falcolobos"
 L["Wolves"] = "Lobos"

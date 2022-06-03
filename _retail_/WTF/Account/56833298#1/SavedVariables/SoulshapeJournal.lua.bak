@@ -10,7 +10,7 @@ SoulshapeJournalDB = {
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
-		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
+		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 	},
 }

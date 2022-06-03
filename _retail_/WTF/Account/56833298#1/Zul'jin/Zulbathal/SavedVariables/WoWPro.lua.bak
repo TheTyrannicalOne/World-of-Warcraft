@@ -5,10 +5,10 @@ WoWProCharDB = {
 	["AutoHideInsideInstances"] = true,
 	["EnableGrailCheckPrereq"] = false,
 	["QID2Guide"] = {
-		[47835] = "Ludo_Argus",
-		[9407] = "JamHel6063",
 		[28705] = "JamHel6063",
 		[47221] = "Ludo_Argus",
+		[47835] = "Ludo_Argus",
+		[9407] = "JamHel6063",
 	},
 	["Trades"] = {
 	},
@@ -18,14 +18,14 @@ WoWProCharDB = {
 	},
 	["EnableRares"] = true,
 	["EnableGrailQuestName"] = false,
-	["EnableGrailBreadcrumbs"] = false,
 	["EnableGrailQuestObsolete"] = false,
+	["Enabled"] = true,
 	["EnablePetBattles"] = true,
 	["Tradeskills"] = {
 		[2586] = {
 			["skillLvl"] = 1,
-			["name"] = "Legion Fishing",
 			["skillMod"] = 0,
+			["name"] = "Legion Fishing",
 			["skillMax"] = 100,
 		},
 		[182] = {
@@ -128,17 +128,17 @@ WoWProCharDB = {
 	["DebugLevel"] = 0,
 	["Taxi"] = {
 	},
-	["Guide"] = {
+	["GuideVersion"] = {
 	},
 	["EnableTreasures"] = true,
 	["EnableFlight"] = true,
 	["AutoHideInsideInstancesNotify"] = true,
 	["AutoHideInCombat"] = false,
+	["Guide"] = {
+	},
 	["BuildingLocations"] = {
 	},
-	["GuideVersion"] = {
-	},
-	["Enabled"] = true,
+	["EnableGrailBreadcrumbs"] = false,
 	["skippedQIDs"] = {
 	},
 	["Rank"] = {

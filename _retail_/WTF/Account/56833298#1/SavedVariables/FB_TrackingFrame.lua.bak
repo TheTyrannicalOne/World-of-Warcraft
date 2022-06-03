@@ -57,8 +57,8 @@ PBTF_Info = {
 				0, -- [23]
 			},
 			["nevermore"] = false,
-			["count"] = 23,
 			["name"] = "Raw Nightfin Snapper",
+			["count"] = 23,
 			["item"] = "13759:0:0:0:0:0:0:0",
 			["texture"] = 133909,
 		},
@@ -154,8 +154,8 @@ PBTF_Info = {
 				0, -- [52]
 			},
 			["nevermore"] = false,
-			["count"] = 52,
 			["name"] = "Raw Summer Bass",
+			["count"] = 52,
 			["item"] = "13756:0:0:0:0:0:0:0",
 			["texture"] = 133889,
 		},

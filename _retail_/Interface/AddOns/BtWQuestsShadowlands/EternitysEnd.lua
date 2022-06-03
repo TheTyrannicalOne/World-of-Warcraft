@@ -1,6 +1,3 @@
-if select(4, GetBuildInfo()) < 90200 then
-    return
-end
 local BtWQuests = BtWQuests
 local L = BtWQuests.L
 local Database = BtWQuests.Database
@@ -1483,7 +1480,7 @@ Database:AddChain(Chain.StartingOver, {
     },
     active = {
         type = "quest",
-        id = 64879,
+        ids = {64879, 64723, },
         status = {'active', 'completed'}
     },
     completed = {
@@ -1508,16 +1505,21 @@ Database:AddChain(Chain.StartingOver, {
     },
     items = {
         {
-            type = "npc",
-            id = 181183,
-            x = 0,
-            connections = {
-                1, 
+            variations = {
+                {
+                    type = "quest",
+                    id = 64879,
+                    restrictions = {
+                        type = "quest",
+                        id = 64879,
+                        status = {'active', 'completed'}
+                    },
+                },
+                {
+                    type = "npc",
+                    id = 177958,
+                }
             },
-        },
-        {
-            type = "quest",
-            id = 64879,
             x = 0,
             connections = {
                 1, 

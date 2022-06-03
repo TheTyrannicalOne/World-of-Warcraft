@@ -176,14 +176,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Garr",
 		},
-		[22992] = {
-			["school"] = 32,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Nefarian",
-		},
 		[22458] = {
 			["school"] = 2,
 			["token"] = {
@@ -192,28 +184,27 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Blackwing Taskmaster",
 		},
-		[19712] = {
-			["school"] = 64,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Shazzrah",
-		},
-		[19272] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Ancient Core Hound",
-		},
 		[22978] = {
 			["school"] = 4,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Nefarian",
+		},
+		[19460] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Lucifron",
+		},
+		[19776] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Flamewaker Priest",
 		},
 		[22666] = {
 			["school"] = 8,
@@ -224,6 +215,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lord Victor Nefarius",
 		},
+		[22992] = {
+			["school"] = 32,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Nefarian",
+		},
 		[22677] = {
 			["school"] = 32,
 			["token"] = {
@@ -233,15 +232,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lord Victor Nefarius",
 		},
-		[22561] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Green Drakonid",
-		},
 		[19451] = {
 			["school"] = 1,
 			["type"] = "BUFF",
@@ -250,6 +240,15 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Magmadar",
+		},
+		[22561] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Green Drakonid",
 		},
 		[19408] = {
 			["school"] = 32,
@@ -347,20 +346,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Gehennas",
 		},
-		[19776] = {
-			["school"] = 32,
+		[19272] = {
+			["school"] = 4,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Flamewaker Priest",
+			["source"] = "Ancient Core Hound",
 		},
-		[19460] = {
-			["school"] = 32,
+		[19712] = {
+			["school"] = 64,
 			["token"] = {
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Lucifron",
+			["source"] = "Shazzrah",
 		},
 		[22979] = {
 			["school"] = 4,

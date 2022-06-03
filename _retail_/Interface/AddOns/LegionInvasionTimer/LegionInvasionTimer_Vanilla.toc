@@ -1,5 +1,5 @@
 ## Interface: 11403
-## Version: v9.2.3
+## Version: v9.2.4
 ## LoadOnDemand: 1
 ## DefaultState: disabled
 ## Title: LegionInvasionTimer

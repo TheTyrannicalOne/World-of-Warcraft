@@ -12,6 +12,7 @@
 
 local name, app = ...;
 app.L = {
+	["TAB_SPACING"] = -10;	-- This is to control spacing between tab names in Settings
 	-- General Text
 	["TITLE"] = "|cffb4b4ffALL THE THINGS|r";
 	["AUCTION_TAB"] = "|cffb4b4ffATT|r";
@@ -112,6 +113,7 @@ app.L = {
 	["BREADCRUMB_PARTYSYNC"] = "This may be unable to be completed without Party Sync if completing any of these quests first:";
 	["BREADCRUMB_PARTYSYNC_2"] = "This may be obtained via Party Sync with another character that has not completed any of these quests:";
 	["BREADCRUMB_PARTYSYNC_3"] = "This may be obtained via Party Sync with a character that is able to accept this quest.";
+	["BREADCRUMB_PARTYSYNC_4"] = "Please let us know your results on Discord if you attempt obtaining this Quest via Party Sync!";
 	["DISABLE_PARTYSYNC"] = "This is likely not able to be completed by this character even using Party Sync. If you manage otherwise, please let us know on Discord!";
 	["UNAVAILABLE_WARNING_FORMAT"] = "|c%sBecomes unavailable if %d of the following are met:|r";
 	["NO_ENTRIES"] = "No entries matching your filters were found.";
@@ -231,7 +233,7 @@ app.L = {
 	["NESTED_QUEST_REQUIREMENTS"] = "Nested Quest Requirements";
 	["MAIN_LIST_REQUIRES_REFRESH"] = "[Open Main list to update progress]";
 	["DOES_NOT_CONTRIBUTE_TO_PROGRESS"] = "|cffe08207This group and its content do not contribute to the progress of this window since it is Sourced in another Location!|r";
-	["CURRENCY_NEEDED_TO_BUY"] = "Items needed to buy not collected Things";
+	["CURRENCY_NEEDED_TO_BUY"] = "Estimated amount needed to obtain remaining Things";
 	["LOCK_CRITERIA_LEVEL_LABEL"] = "Player Level";
 	["LOCK_CRITERIA_QUEST_LABEL"] = "Completed Quest";
 	["LOCK_CRITERIA_SPELL_LABEL"] = "Learned Spell/Mount/Recipe";
@@ -458,13 +460,17 @@ app.L = {
 	["SHOW_MODELS_CHECKBOX"] = "Model Preview";
 	["SHOW_MODELS_CHECKBOX_TOOLTIP"] = "Enable this option to show models within a preview instead of the icon on the tooltip.\n\nThis option may assist you in identifying what a Rare Spawn or Vendor looks like. It might be a good idea to keep this turned on for that reason.";
 	["SHOW_CURRENCY_CALCULATIONS_CHECKBOX"] = "Currency calculation";
-	["SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP"] = "Enable this option to show the approximate amount of items/currency required to buy Uncollected Things.\n\nOnly those collectible Things that can be directly purchased for an item/currency are counted. Containers that do not give items with a 100% chance are not counted.";
+	["SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP"] = "Enable this option to show the estimated amount of Items/Currency required to collect Things.\n\nFor Containers which do not reward all of their available content at once, the estimate will thus be lower than actually required.";
 	["SHARED_APPEARANCES_CHECKBOX"] = "Shared Appearances";
 	["SHARED_APPEARANCES_CHECKBOX_TOOLTIP"] = "Enable this option to see items that share a similar appearance in the tooltip.\n\nNOTE: Items that do not match the armor type are displayed in the list. This is to help you diagnose the Collection progress.\n\nIf you are ever confused by this, as of ATT v1.5.0, you can Right Click the item to open the item and its Shared Appearances into their own standalone Mini List.";
 	["INCLUDE_ORIGINAL_CHECKBOX"] = "Original Source";
 	["INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP"] = "Enable this option if you actually liked seeing the original source info within the Shared Appearances list in the tooltip.";
 	["ONLY_RELEVANT_CHECKBOX"] = "Only Relevant";
 	["ONLY_RELEVANT_CHECKBOX_TOOLTIP"] = "Enable this option if you only want to see shared appearances that your character can unlock.\n\nNOTE: We recommend you keep this off as knowing the unlock requirements for an item can be helpful in identifying why an item is Not Collected.";
+	["PROFESSION_CHECKBOX"] = "Professions";
+	["PROFESSION_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the profession requirements in the tooltip.";
+	["LEVELREQ_CHECKBOX"] = "Levels";
+	["LEVELREQ_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the level requirements in the tooltip.";
 	["CLASSES_CHECKBOX"] = "Classes";
 	["CLASSES_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the full list of class requirements in the tooltip.";
 	["RACES_CHECKBOX"] = "Races";
@@ -519,7 +525,7 @@ app.L = {
 	["AUTO_MINI_LIST_CHECKBOX"] = "Automatically Open the Mini List";
 	["AUTO_MINI_LIST_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see everything you can collect in your current zone. The list will automatically switch when you change zones. Some people don't like this feature, but when you are solo farming, this feature is extremely useful.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Mini List\n\nShortcut Command: /att mini";
 	["AUTO_PROF_LIST_CHECKBOX"] = "Automatically Open the Profession List";
-	["AUTO_PROF_LIST_CHECKBOX_TOOLTIP"] = "Enable this option if you want ATT to open and refresh the profession list when you open your professions. Due to an API limitation imposed by Blizzard, the only time an addon can interact with your profession data is when it is open. The list will automatically switch when you change to a different profession.\n\nWe don't recommend disabling this option as it may prevent recipes from tracking correctly.\n\nYou can also bind this setting to a Key. (only works when a profession is open)\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Profession Mini List\n\nShortcut Command: /att prof";
+	["AUTO_PROF_LIST_CHECKBOX_TOOLTIP"] = "Enable this option if you want ATT to open and refresh the profession list when you open your professions. Due to an API limitation imposed by Blizzard, the only time an addon can interact with your profession data is when it is open. The list will automatically switch when you change to a different profession.\n\nWe don't recommend disabling this option as it may prevent recipes from tracking correctly.\n\nYou can also bind this setting to a Key. (only works when a profession is open)\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Profession Mini List";
 	["AUTO_RAID_ASSISTANT_CHECKBOX"] = "Automatically Open the Raid Assistant";
 	["AUTO_RAID_ASSISTANT_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see an alternative group/party/raid settings manager called the 'Raid Assistant'. The list will automatically update whenever group settings change.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Raid Assistant\n\nShortcut Command: /attra";
 	["AUTO_WQ_LIST_CHECKBOX"] = "Automatically Open the World Quests List";
@@ -554,6 +560,28 @@ app.L = {
 	["PROFILE_COPY_TOOLTIP"] = "Copy the Selected Profile into the Current Profile";
 	["PROFILE_DELETE_TOOLTIP"] = "Delete the Selected Profile";
 	["PROFILE_SWITCH_TOOLTIP"] = "Set the Selected Profile as the Current Profile\n\nA Profile can also be Shift-Clicked to Switch to it";
+
+	-- Sync tab
+	["SYNC"] = "Sync";
+	["ACCOUNT_SYNCHRONIZATION"] = "Account Synchronization";
+	["AUTO_SYNC_ACC_DATA_CHECKBOX"] = "Automatically Sync Account Data";
+	["AUTO_SYNC_ACC_DATA_TOOLTIP"] = "Enable this option if you want ATT to attempt to automatically synchronize account data between accounts when logging in or reloading the UI.";
+	["ACCOUNT_MANAGEMENT"] = "Account Management";
+	["ACCOUNT_MANAGEMENT_TOOLTIP"] = "This list shows you all of the functionality related to syncing account data.";
+	["ADD_LINKED_CHARACTER_ACCOUNT"] = "Add Linked Character / Account";
+	["ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP"] = "Click here to link a character or account to your account.";
+	["ADD_LINKED_POPUP"] = "Please type the name of the character or BNET account to link to.";
+	["CHARACTERS"] = "Characters";
+	["SYNC_CHARACTERS_TOOLTIP"] = "This shows all of the characters on your account.";
+	["NO_CHARACTERS_FOUND"] = "No characters found.";
+	["LINKED_ACCOUNTS"] = "Linked Accounts";
+	["LINKED_ACCOUNTS_TOOLTIP"] = "This shows all of the linked accounts you have defined so far.";
+	["NO_LINKED_ACCOUNTS"] = "No linked accounts found.";
+	["LINKED_ACCOUNT_TOOLTIP"] = "This character's account will be synchronized with automatically when they log in. For optimal play, you should whitelist a bank character and probably not your main as to not affect your ability to play your character when syncing account data.";
+	["DELETE_LINKED_CHARACTER"] = "Right Click to Delete this Linked Character";
+	["DELETE_LINKED_ACCOUNT"] = "Right Click to Delete this Linked Account";
+	["DELETE_CHARACTER"] = "Right Click to Delete this Character";
+	["CONFIRM_DELETE"] = "\n \nAre you sure you want to delete this?";
 
 	-- About tab
 	["ABOUT"] = "About";
@@ -600,6 +628,7 @@ app.L = {
 	["SECRETS_HEADER"] = "Secrets";
 	["LIMITED_QUANTITY"] = "This has a limited quantity and may not always be present on the vendor.";
 	["SOURCE_ID_MISSING"] = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!";
+	["REMOVED_WITH_PATCH_FORMAT"] = "This gets removed in patch %s";
 
 	-- Filter Text
 	["ACHIEVEMENT_ID"] = "Achievement ID";
@@ -1208,6 +1237,7 @@ app.L = {
 		[-693] = "Interface\\Icons\\inv_shadebeastmount",									-- Sinful Gladiator: Shadowlands Season 1
 		[-694] = "Interface\\Icons\\inv_shadebeastmount_blue",								-- Unchained Gladiator: Shadowlands Season 2
 		[-695] = "Interface\\Icons\\inv_shadebeastmount_red",								-- Cosmic Gladiator: Shadowlands Season 3
+		[-696] = "Interface\\Icons\\inv_shadebeastmount_orange",							-- Eternal Gladiator: Shadowlands Season 4
 	-- More PvP Seasons are likely to come dont use IDs here
 	-- Pets
 		[-795] = app.asset("Pet_Dungeon"),													-- Pet Battle Dungeons
@@ -1274,7 +1304,6 @@ app.L = {
 		[-955] = "Interface\\Icons\\spell_animarevendreth_buff",							-- High Inquisitors
 		[-956] = "Interface\\Icons\\spell_animarevendreth_buff",							-- Grand Inquisitors
 		[-960] = 3675493,																	-- The Ember Court
-		[-966] = 979574,																	-- Blueprints & Crafting (for Kyrian Path of Ascension)
 		[-967] = 3854020,																	-- Mirror Restoration
 		[-968] = 3854020,																	-- Set A
 		[-969] = 3854020,																	-- Set B
@@ -1536,7 +1565,7 @@ app.L = {
 	-- Fishing
 		[-217] = "Lures",														-- Lures (for Fishing)
 		[-218] = "Coastal",														-- Coastal (for Fishing)
-		[-219] = "Sourceless",													-- Sourceless
+	[-219] = "Sourceless",														-- Sourceless
 	-- Class
 		[-220] = CLASS,															-- Class
 	-- Bonus Objectives
@@ -1741,7 +1770,8 @@ app.L = {
 	-- Shadowlands PvP Seasons
 		[-693] = select(2, GetAchievementInfo(14690)),							-- Sinful Gladiator: Shadowlands Season 1
 		[-694] = select(2, GetAchievementInfo(14973)),							-- Unchained Gladiator: Shadowlands Season 2
-		[-695] = select(2, GetAchievementInfo(15353)) or "Cosmic Gladiator",	-- Cosmic Gladiator: Shadowlands Season 3
+		[-695] = select(2, GetAchievementInfo(15353)),							-- Cosmic Gladiator: Shadowlands Season 3
+		[-696] = select(2, GetAchievementInfo(15606)) or "Eternal Gladiator",	-- Eternal Gladiator: Shadowlands Season 4
 	-- More PvP Seasons are likely to come dont use IDs here
 	-- Pets
 		[-795] = "Pet Battle Dungeons",											-- Pet Battle Dungeons
@@ -1818,7 +1848,6 @@ app.L = {
 		[-939] = GetSpellInfo(321076),											-- Kyrian
 		[-940] = "Ascended Council",											-- Ascended Counil
 		[-942] = COVENANT_SANCTUM_FEATURE_KYRIAN,								-- Path of Ascension
-		[-966] = "Blueprints & Crafting",										-- Blueprints (for Path of Ascension)
 		[-972] = C_PetJournal.GetPetInfoBySpeciesID(3065),						-- Courage
 		[-973] = "Loyalty",														-- Loyalty
 		[-974] = GetSpellInfo(3166),											-- Wisdom
@@ -1850,12 +1879,12 @@ app.L = {
 		--[-1004] = "Prideful Spirit",												-- Prideful Spirit
 		--[-1005] = "Untamed Spirit",												-- Untamed Spirit
 	-- Temp Sets for Creation Catalyst
-		[-1006] = "Looking For Raid Alternative",
-		[-1007] = "Normal Alternative",
-		[-1008] = "Heroic Alternative",
-		[-1009] = "Mythic Alternative",
-		[-1010] = "Gladiator Alternative",
-		[-1011] = "Elite Alternative",
+		[-1006] = "Raid Finder Alternative",										-- Raid Finder Alternative
+		[-1007] = "Normal Alternative",												-- Normal Alternative
+		[-1008] = "Heroic Alternative",												-- Heroic Alternative
+		[-1009] = "Mythic Alternative",												-- Mythic Alternative
+		[-1010] = "Gladiator Alternative",											-- Gladiator Alternative
+		[-1011] = "Elite Alternative",												-- Elite Alternative
 	-- Warrior order hall lore items
 		[-2200] = "Great Odyn and the Firelord",
 		[-2201] = "The Wanderer and the Serpent",

@@ -195,21 +195,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Nefarian",
 		},
-		[19460] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Lucifron",
-		},
-		[19776] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Flamewaker Priest",
-		},
 		[19712] = {
 			["school"] = 64,
 			["token"] = {
@@ -225,6 +210,21 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Ancient Core Hound",
+		},
+		[19460] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Lucifron",
+		},
+		[19776] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Flamewaker Priest",
 		},
 		[22666] = {
 			["school"] = 8,

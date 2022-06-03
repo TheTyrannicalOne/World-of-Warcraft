@@ -1,6 +1,75 @@
 
 MasterPlanAG = {
-	["IgnoreRewards"] = {
+	["Argent Dawn"] = {
+		["Shanyt"] = {
+			["class"] = "WARRIOR",
+			["summary"] = {
+				["lastOilTime"] = 1653790173,
+				["ti2"] = 122486,
+				["inProgress"] = {
+					[395] = 1653818879,
+					[337] = 1653818948,
+					[177] = 1653792858,
+					[200] = 1653792834,
+					[325] = 1653818916,
+					[727] = 1653791977,
+					[268] = 1653804555,
+					[455] = 1653818893,
+					[188] = 1653792864,
+					[735] = 1653791082,
+					[677] = 1653826166,
+					[739] = 1653791079,
+					[444] = 1653818952,
+					[397] = 1653826143,
+				},
+				["ti3"] = 127855,
+				["tt1"] = 1653687307,
+				["ti1"] = 118531,
+				["tt3"] = 1652336797,
+				["tt2"] = 1653791147,
+			},
+			["curOil"] = 96085,
+			["cacheSize"] = 1000,
+			["lastCacheTime"] = 1653790223,
+			["curRes"] = 8722,
+			["faction"] = "Horde",
+		},
+	},
+	["Dalaran"] = {
+		["Illingrath"] = {
+			["class"] = "DEMONHUNTER",
+			["faction"] = "Alliance",
+		},
+		["Tendralas"] = {
+			["class"] = "PRIEST",
+			["faction"] = "Alliance",
+		},
+		["Avisar"] = {
+			["class"] = "PALADIN",
+			["faction"] = "Alliance",
+		},
+		["Thorinbane"] = {
+			["faction"] = "Alliance",
+			["class"] = "WARRIOR",
+		},
+		["Rotclaugh"] = {
+			["faction"] = "Alliance",
+			["class"] = "DEATHKNIGHT",
+		},
+		["Varlouris"] = {
+			["class"] = "SHAMAN",
+			["faction"] = "Alliance",
+		},
+		["Darnastris"] = {
+			["faction"] = "Alliance",
+			["class"] = "MAGE",
+		},
+	},
+	["Black Dragonflight"] = {
+		["Durlok"] = {
+			["faction"] = "Horde",
+			["class"] = "DRUID",
+		},
 	},
 	["Zul'jin"] = {
 		["Zulbathal"] = {
@@ -12,74 +81,6 @@ MasterPlanAG = {
 			["class"] = "PALADIN",
 		},
 	},
-	["Dalaran"] = {
-		["Illingrath"] = {
-			["faction"] = "Alliance",
-			["class"] = "DEMONHUNTER",
-		},
-		["Tendralas"] = {
-			["faction"] = "Alliance",
-			["class"] = "PRIEST",
-		},
-		["Avisar"] = {
-			["faction"] = "Alliance",
-			["class"] = "PALADIN",
-		},
-		["Thorinbane"] = {
-			["class"] = "WARRIOR",
-			["faction"] = "Alliance",
-		},
-		["Rotclaugh"] = {
-			["class"] = "DEATHKNIGHT",
-			["faction"] = "Alliance",
-		},
-		["Varlouris"] = {
-			["faction"] = "Alliance",
-			["class"] = "SHAMAN",
-		},
-		["Darnastris"] = {
-			["class"] = "MAGE",
-			["faction"] = "Alliance",
-		},
-	},
-	["Black Dragonflight"] = {
-		["Durlok"] = {
-			["faction"] = "Horde",
-			["class"] = "DRUID",
-		},
-	},
-	["Argent Dawn"] = {
-		["Shanyt"] = {
-			["faction"] = "Horde",
-			["summary"] = {
-				["lastOilTime"] = 1652076882,
-				["ti2"] = 122486,
-				["inProgress"] = {
-					[396] = 1652105764,
-					[192] = 1652080583,
-					[652] = 1652077793,
-					[740] = 1652077789,
-					[267] = 1652091418,
-					[651] = 1652078697,
-					[685] = 1652120157,
-					[673] = 1652091396,
-					[211] = 1652083728,
-					[402] = 1652098561,
-					[331] = 1652078781,
-					[666] = 1652084208,
-					[481] = 1652091414,
-				},
-				["ti3"] = 127855,
-				["ti1"] = 118531,
-				["tt1"] = 1651267097,
-				["tt3"] = 1651200197,
-				["tt2"] = 1651367203,
-			},
-			["curOil"] = 96715,
-			["cacheSize"] = 1000,
-			["class"] = "WARRIOR",
-			["curRes"] = 7702,
-			["lastCacheTime"] = 1652077080,
-		},
+	["IgnoreRewards"] = {
 	},
 }

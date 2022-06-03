@@ -12,31 +12,49 @@ WoWProCharDB = {
 	},
 	["Trades"] = {
 	},
-	["EnablePetBattles"] = true,
-	["EnableFlight"] = true,
-	["EnableGrailQuestName"] = false,
-	["Enabled"] = true,
-	["EnableGrailQuestObsolete"] = false,
-	["EnableRares"] = true,
-	["Tradeskills"] = {
+	["GuideStack"] = {
 	},
+	["EnableFlight"] = true,
+	["EnableRares"] = true,
+	["EnableGrailQuestName"] = false,
+	["EnablePetBattles"] = true,
+	["Enabled"] = true,
 	["EnableGrailBreadcrumbs"] = false,
+	["Tradeskills"] = {
+		[356] = {
+			["skillLvl"] = 1,
+			["skillMod"] = 0,
+			["name"] = "Fishing",
+			["skillMax"] = 200,
+		},
+		[185] = {
+			["skillLvl"] = 1,
+			["skillMod"] = 0,
+			["name"] = "Cooking",
+			["skillMax"] = 75,
+		},
+		[2754] = {
+			["skillLvl"] = 1,
+			["name"] = "Shadowlands Fishing",
+			["skillMod"] = 0,
+			["skillMax"] = 200,
+		},
+	},
+	["DebugLevel"] = 0,
 	["Taxi"] = {
 	},
-	["GuideVersion"] = {
+	["Guide"] = {
 	},
 	["EnableTreasures"] = true,
-	["DebugLevel"] = 0,
 	["completedQIDs"] = {
 	},
 	["AutoHideInsideInstancesNotify"] = true,
 	["AutoHideInCombat"] = false,
+	["GuideVersion"] = {
+	},
 	["BuildingLocations"] = {
 	},
-	["Guide"] = {
-	},
-	["GuideStack"] = {
-	},
+	["EnableGrailQuestObsolete"] = false,
 	["skippedQIDs"] = {
 	},
 	["Rank"] = {

@@ -103,6 +103,9 @@ local L = app.L;
 	L.BREADCRUMB_PARTYSYNC = "如果先完成这些任务中的任何一个在没有小队同步的情况下可能无法完成：";
 	L.BREADCRUMB_PARTYSYNC_2 = "这可以通过与另一个没有完成这些任务的角色进行小队同步获得：";
 	L.BREADCRUMB_PARTYSYNC_3 = "可能需要与能够接受此任务的角色进行小队同步。";
+	--TODO: L.BREADCRUMB_PARTYSYNC_4 = "Please let us know your results on Discord if you attempt obtaining this Quest via Party Sync!";
+	--TODO: L.DISABLE_PARTYSYNC = "This is likely not able to be completed by this character even using Party Sync. If you manage otherwise, please let us know on Discord!";
+	--TODO: L.UNAVAILABLE_WARNING_FORMAT = "|c%sBecomes unavailable if %d of the following are met:|r";
 	L.NO_ENTRIES = "没有找到符合过滤条件的条目。";
 	L.NO_ENTRIES_DESC = "如果认为这是错误的，请尝试激活'调试模式'。某个过滤条件可能会限制该组的可见性。";
 	L.DEBUG_LOGIN = "登录后获得的奖励。\n\n干得好！你做到了！\n\n仅在调试模式下可见。";
@@ -218,8 +221,8 @@ local L = app.L;
 	L.REPORT_INACCURATE_QUEST = "错误任务信息！（点击报告）";
 	L.NESTED_QUEST_REQUIREMENTS = "多重任务需要";
 	L.MAIN_LIST_REQUIRES_REFRESH = "[打开主列表更新进度 ]";
-	L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207此群组及其内容不影响此窗口的进度！|r";
-	L.CURRENCY_NEEDED_TO_BUY = "需要购买物品未收藏的事物";
+	L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207此群组及其内容不影响此窗口的进度 since it is Sourced in another Location！|r";	-- TODO: Localize this
+	L.CURRENCY_NEEDED_TO_BUY = "需要购买物品未收藏的事物";	-- TODO: Estimated amount needed to obtain remaining Things
 	L.LOCK_CRITERIA_LEVEL_LABEL = "玩家等级";
 	L.LOCK_CRITERIA_QUEST_LABEL = "已完成任务";
 	L.LOCK_CRITERIA_SPELL_LABEL = "已学法术/坐骑/配方";
@@ -311,8 +314,8 @@ local L = app.L;
 		L.MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t |cffADD8E6乐谱/自拍滤镜";
 		L.MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX_TOOLTIP = "启用此选项以追踪乐谱和自拍滤镜。\n\n你可以用你的点唱机播放游戏中的音乐并且你的自拍相机玩具为你的自拍收藏特定地点的滤镜。";
 		L.QUESTS_CHECKBOX_TOOLTIP = "启用此选项以追踪任务。\n\n你可以右键单击列表中的任何任务，弹出它们的完整任务链，以显示你的进度和任何先决条件或后续任务。\n\n注意：由于暴雪数据库中每日、每周、每年和世界任务的追踪方式的性质，任务不会被永久追踪。";
-		L.QUESTS_LOCKED_CHECKBOX = "|cffADD8E6+无关紧要";
-		L.QUESTS_LOCKED_CHECKBOX_TOOLTIP = "启用此选项以专门包括跟踪无关紧要任务完成情况。 \n\n无关紧要任务是从技术上讲，它们是“可选的”，因为它们仅用于将玩家引导至不同的任务，如果在完成后续任务之前未完成，则它们将变得不可用。\nT这会使获取无关紧要非常依赖队伍同步功能或账号通用的任务";
+		--TODO: L.QUESTS_LOCKED_CHECKBOX = "|cffADD8E6Locked Quests";
+		--TODO: L.QUESTS_LOCKED_CHECKBOX_TOOLTIP = "Enable this option to specifically include tracking of Locked Quest completion.\n\nLocked Quests are those which the player is no longer able to complete (according to known ATT data) through normal gameplay.\n\nObtaining these Quests is very reliant on the Party Sync feature or using Account-Wide Quests to incorporate progress from other characters.";
 		L.RECIPES_CHECKBOX_TOOLTIP = "启用此选项可追踪你的专业图纸。\n\n注意：你必须打开专业列表才能缓存这些。";
 		L.REPUTATIONS_CHECKBOX = "|cffADD8E6声望";
 		L.REPUTATIONS_CHECKBOX_TOOLTIP = "启用此选项可追踪声望。\n\n一旦你达到了有声望的尊敬或最好的朋友，它将被标记为收藏。\n\n你可能需要手动刷新才能正确更新。";
@@ -417,13 +420,17 @@ local L = app.L;
 		L.SHOW_MODELS_CHECKBOX = "模型预览";
 		L.SHOW_MODELS_CHECKBOX_TOOLTIP = "启用此选项可在预览中显示模型而不是鼠标提示上的图标。\n\n此选项可帮助你识别稀有生物或商人的模样。因为这个原因你可能想保持这个开启。";
 		L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX = "货币计算";
-		L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP = "启用此选项可显示购买未收藏事物所需的大致物品/货币数量。\n\n仅计算可以直接用物品/货币购买的收藏事物。不以 100% 几率提供物品的容器不计算在内。";
+		L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP = "启用此选项可显示购买未收藏事物所需的大致物品/货币数量。\n\nFor Containers which do not reward all of their available content at once, the estimate will thus be lower than actually required.";	-- TODO: Enable this option to show the estimated amount of Items/Currency required to collect Things.\n\nFor Containers which do not reward all of their available content at once, the estimate will thus be lower than actually required.
 		L.SHARED_APPEARANCES_CHECKBOX = "共享外观";
 		L.SHARED_APPEARANCES_CHECKBOX_TOOLTIP = "启用该选项可以在鼠标提示中看到外观相似的物品。\n\n注意：不符合装备类型的物品会显示在列表中。这是为了帮助你判断收藏进度。\n\n如果你对此感到困惑，从 ATT v1.5.0 开始，你可以右键单击物品，打开物品和它的共享外观，进入它们自己的独立小列表。";
 		L.INCLUDE_ORIGINAL_CHECKBOX = "原始来源";
 		L.INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP = "如果你真的喜欢在鼠标提示中的共享外观列表中看到原始来源信息，请启用此选项。";
 		L.ONLY_RELEVANT_CHECKBOX = "仅相关";
 		L.ONLY_RELEVANT_CHECKBOX_TOOLTIP = "如果你只想看到你的角色可以解锁的共享外观，请启用此选项。\n\n注意：我们建议你保持这个关闭，因为了解一个物品的解锁要求可以帮助识别为什么一个物品没有被收藏。";
+		--TODO: L.PROFESSION_CHECKBOX = "Professions";
+		--TODO: L.PROFESSION_CHECKBOX_TOOLTIP = "Enable this option if you want to see the profession requirements in the tooltip.";
+		--TODO L.LEVELREQ_CHECKBOX = "Levels";
+		--TODO L.LEVELREQ_CHECKBOX_TOOLTIP = "Enable this option if you want to see the level requirements in the tooltip.";
 		L.CLASSES_CHECKBOX = "职业";
 		L.CLASSES_CHECKBOX_TOOLTIP = "如果你想在鼠标提示中看到完整的职业需求列表，请启用此选项。";
 		L.RACES_CHECKBOX = "种族";
@@ -477,7 +484,7 @@ local L = app.L;
 		L.AUTO_MINI_LIST_CHECKBOX = "自动打开小列表";
 		L.AUTO_MINI_LIST_CHECKBOX_TOOLTIP = "如果你想查看在当前区域内可以收藏的所有信息请启用此选项。当改变区域时列表将自动切换。有些人不喜欢这个功能，但是当你单刷的时候这个功能是非常有用的。\n\n你也可以将此设置绑定到一个键上。\n\n按键设置 -> 插件 -> ALL THE THINGS -> 打开/关闭小列表\n\n快捷命令：/att mini";
 		L.AUTO_PROF_LIST_CHECKBOX = "自动打开专业列表";
-		L.AUTO_PROF_LIST_CHECKBOX_TOOLTIP = "如果你希望 ATT 在你打开专业时打开并刷新专业列表请启用此选项。由于暴雪 API 限制，只有在打开专业界面时，插件才能与专业数据进行交互。当你换成其他专业时列表会自动切换。\n\n我们不建议禁用此选项因为它可能会阻止图纸的正确追踪。\n\n你也可以将此设置绑定到一个键上。（仅在打开专业时工作）\n\n按键设置 -> 插件 -> ALL THE THINGS -> 打开/关闭专业技能列表\n\n快捷命令：/att prof";
+		L.AUTO_PROF_LIST_CHECKBOX_TOOLTIP = "如果你希望 ATT 在你打开专业时打开并刷新专业列表请启用此选项。由于暴雪 API 限制，只有在打开专业界面时，插件才能与专业数据进行交互。当你换成其他专业时列表会自动切换。\n\n我们不建议禁用此选项因为它可能会阻止图纸的正确追踪。\n\n你也可以将此设置绑定到一个键上。（仅在打开专业时工作）\n\n按键设置 -> 插件 -> ALL THE THINGS -> 打开/关闭专业技能列表";
 		L.AUTO_RAID_ASSISTANT_CHECKBOX = "自动打开团队助手";
 		L.AUTO_RAID_ASSISTANT_CHECKBOX_TOOLTIP = "如果你想看到一个名为'团队助手'替代组/队伍/团队设置管理器请启用此选项。每当队伍设置改变时列表会自动更新。\n\n你也可以将此设置绑定到一个键上。\n\n按键设置 -> 插件 -> ALL THE THINGS -> 打开/关闭团队助手\n\n快捷命令：/attra";
 		L.AUTO_WQ_LIST_CHECKBOX = "自动打开世界任务列表";
@@ -512,6 +519,28 @@ local L = app.L;
 		L.PROFILE_COPY_TOOLTIP = "复制已选配置文件到当前配置文件";
 		L.PROFILE_DELETE_TOOLTIP = "删除已选配置文件";
 		L.PROFILE_SWITCH_TOOLTIP = "将选定的配置文件设置为当前配置文件\n\n一个配置文件也可以通过 Shift-点击切换到它";
+
+	-- Sync tab
+		--TODO: L.SYNC = "Sync";
+		--TODO: L.ACCOUNT_SYNCHRONIZATION = "Account Synchronization";
+		--TODO: L.AUTO_SYNC_ACC_DATA_CHECKBOX = "Automatically Sync Account Data";
+		--TODO: L.AUTO_SYNC_ACC_DATA_TOOLTIP = "Enable this option if you want ATT to attempt to automatically synchronize account data between accounts when logging in or reloading the UI.";
+		--TODO: L.ACCOUNT_MANAGEMENT = "Account Management";
+		--TODO: L.ACCOUNT_MANAGEMENT_TOOLTIP = "This list shows you all of the functionality related to syncing account data.";
+		--TODO: L.ADD_LINKED_CHARACTER_ACCOUNT = "Add Linked Character / Account";
+		--TODO: L.ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP = "Click here to link a character or account to your account.";
+		--TODO: L.ADD_LINKED_POPUP = "Please type the name of the character or BNET account to link to.";
+		--TODO: L.CHARACTERS = "Characters";
+		--TODO: L.SYNC_CHARACTERS_TOOLTIP = "This shows all of the characters on your account.";
+		--TODO: L.NO_CHARACTERS_FOUND = "No characters found.";
+		--TODO: L.LINKED_ACCOUNTS = "Linked Accounts";
+		--TODO: L.LINKED_ACCOUNTS_TOOLTIP = "This shows all of the linked accounts you have defined so far.";
+		--TODO: L.NO_LINKED_ACCOUNTS = "No linked accounts found.";
+		--TODO: L.LINKED_ACCOUNT_TOOLTIP = "This character's account will be synchronized with automatically when they log in. For optimal play, you should whitelist a bank character and probably not your main as to not affect your ability to play your character when syncing account data.";
+		--TODO: L.DELETE_LINKED_CHARACTER = "Right Click to Delete this Linked Character";
+		--TODO: L.DELETE_LINKED_ACCOUNT = "Right Click to Delete this Linked Account";
+		--TODO: L.DELETE_CHARACTER = "Right Click to Delete this Character";
+		--TODO: L.CONFIRM_DELETE = "\n \nAre you sure you want to delete this?";
 
 	-- About tab
 		L.ABOUT = "关于";
@@ -558,6 +587,7 @@ local L = app.L;
 		L.SECRETS_HEADER = "解密";
 		L.LIMITED_QUANTITY = "此物品有数量限制，在商人处并非总是可见。";
 		L.SOURCE_ID_MISSING = "请在 #retail-errors 中向 ATT Discord 报告此物品及其获取地点！";
+		--TODO: L.REMOVED_WITH_PATCH_FORMAT = "This gets removed in patch %s";
 
 	-- Filter Text
 		L.ACHIEVEMENT_ID = "成就 ID";
@@ -659,6 +689,8 @@ for key,value in pairs({
 		[-22] = "秘密",												-- Secrets
 		[-23] = "一般地下城掉落",											-- WoD Common Dungeon Drop
 		[-26] = "掉落",												-- Drops
+		--TODO: [-27] = "Lower",									-- Lower (Blackrock Spire)
+		--TODO: [-28] = "Upper",									-- Upper (Blackrock Spire)
 		[-41] = "疯狂宝箱",												-- Cache of Madness
 	-- World Events
 		[-53] = "仲夏火焰节",											-- Midsummer Fire Festival
@@ -691,6 +723,8 @@ for key,value in pairs({
 	-- Fishing
 		[-217] = "鱼竿",												-- Lures (for Fishing)
 		[-218] = "鱼饵",												-- Coastal (for Fishing)
+	--TODO: [-219] = "Sourceless",									-- Sourceless
+	-- PvP
 		[-242] = "无评级",												-- Unrated
 		[-243] = "赏金任务",											-- Bounty
 	-- Allied Races
@@ -814,7 +848,6 @@ for key,value in pairs({
 			[-1005] = "狂野精魂",										-- Untamed Spirit
 		-- SL Bastion/Kyrian
 			[-940] = "晋升者议会",										-- Ascended Counil
-			[-966] = "图纸和制造",										-- Blueprints (for Path of Ascension)
 			[-973] = "忠诚",											-- Loyalty
 			[-975] = "谦逊",											-- Humility
 		-- SL Revendreth/Venthyr
@@ -826,6 +859,13 @@ for key,value in pairs({
 			[-969] = "组 B",											-- Set B
 			[-970] = "组 C",											-- Set C
 			[-971] = "组 D",											-- Set D
+	-- Temp Sets for Creation Catalyst
+		[-1006] = "随机团队 Alternative",								-- TODO: Raid Finder Alternative
+		[-1007] = "普通 Alternative",									-- TODO: Normal Alternative
+		[-1008] = "英雄 Alternative",									-- TODO: Heroic Alternative
+		[-1009] = "史诗 Alternative",									-- TODO: Mythic Alternative
+		[-1010] = "角斗士 Alternative",								-- TODO: Gladiator Alternative
+		[-1011] = "精锐 Alternative",									-- TODO: Elite Alternative
 	-- Warrior order hall lore items
 		[-2200] = "伟大的奥丁与炎魔之王",
 		[-2201] = "流浪者与蛇",
@@ -907,6 +947,7 @@ for key, value in pairs({
 	[257] = "可疑的桶",	-- Suspicious Barrel
 	[259] = "半埋的大桶",	-- Half-buried Barrel
 	[261] = "破损的箱子",	-- Damaged Crate
+	[269] = "被看守着的酒桶",	-- Guarded Thunder Ale Barrel
 	[270] = "无人守卫的雷酒桶",	-- Unguarded Thunder Ale Barrel	--TODO: This was taken from classic Wowhead
 	[711] = "通缉！",	-- Wanted!	--TODO: This was taken from classic Wowhead
 	[1561] = "密封的箱子",	-- Sealed Crate
@@ -1873,6 +1914,7 @@ for key, value in pairs({
 	[241150] = "小宝箱",	-- Small Treasure Chest
 	[241151] = "小宝箱",	-- Small Treasure Chest
 	[241152] = "宝箱",	-- Treasure Chest
+	[241153] = "小宝箱",	-- Small Treasure Chest
 	[241154] = "小宝箱",	-- Small Treasure Chest
 	[241155] = "宝箱",	-- Treasure Chest
 	[241180] = "宝箱",	-- Treasure Chest
@@ -2016,6 +2058,7 @@ for key, value in pairs({
 	--TODO: [245479] = "Battered Chest",	-- Battered Chest
 	[245524] = "宝箱",	-- Treasure Chest
 	[245525] = "小宝箱",	-- Small Treasure Chest
+	[245527] = "宝箱",	-- Treasure Chest
 	[245528] = "宝箱",	-- Treasure Chest
 	[245529] = "小宝箱",	-- Small Treasure Chest
 	[245530] = "闪闪发光的宝箱",	-- Glimmering Treasure Chest
@@ -2046,6 +2089,7 @@ for key, value in pairs({
 	[245603] = "小宝箱",	-- Small Treasure Chest
 	[245688] = "碎裂的骨灰坛",	-- Shattered Burial Urn
 	[245793] = "破碎的日记",	-- Battered Journal
+	--TODO: [245941] = "Warp Cache",	-- Warp Cache
 	[245996] = "小宝箱",	-- Small Treasure Chest
 	[246037] = "宝箱",	-- Treasure Chest
 	[246147] = "小宝箱",	-- Small Treasure Chest
@@ -2098,7 +2142,9 @@ for key, value in pairs({
 	[250541] = "宝箱",	-- Treasure Chest
 	[250984] = "小宝箱",	-- Small Treasure Chest
 	[250985] = "宝箱",	-- Treasure Chest
+	[250987] = "小宝箱",	-- Small Treasure Chest
 	[251032] = "衣橱",	-- Armoire
+	[251124] = "闪闪发光的宝箱",	-- Glimmering Treasure Chest	--TODO: This was manually translated
 	[251168] = "瞬灭水晶",	-- Ephemeral Crystal
 	[251218] = "罗洛的符文石",	-- Rollo's Runestone
 	[251220] = "拉格纳的符文石",	-- Ragnar's Runestone
@@ -2118,6 +2164,7 @@ for key, value in pairs({
 	[251762] = "小宝箱",	-- Small Treasure Chest
 	[251764] = "小宝箱",	-- Small Treasure Chest
 	[251772] = "小宝箱",	-- Small Treasure Chest
+	[251776] = "小宝箱",	-- Small Treasure Chest
 	[251780] = "小宝箱",	-- Small Treasure Chest
 	[251782] = "小宝箱",	-- Small Treasure Chest
 	[251792] = "小宝箱",	-- Small Treasure Chest
@@ -2224,6 +2271,7 @@ for key, value in pairs({
 	[257393] = "宝箱",	-- Treasure Chest
 	[257545] = "宝箱",	-- Treasure Chest
 	[257546] = "宝箱",	-- Treasure Chest
+	[257978] = "宝箱",	-- Treasure Chest
 	[257999] = "工艺图：宁神书卷",	-- Technique: Tome of the Tranquil Mind
 	[258690] = "小宝箱",	-- Small Treasure Chest
 	[258978] = "浸水的书籍",	-- Waterlogged Tome
@@ -2274,6 +2322,7 @@ for key, value in pairs({
 	[273414] = "上古艾瑞达宝箱",	-- Ancient Eredar Cache
 	[273415] = "上古艾瑞达宝箱",	-- Ancient Eredar Cache
 	[273439] = "上古艾瑞达宝箱",	-- Ancient Eredar Cache
+	[273443] = "浸透虚空的宝箱",	-- Void-Seeped Cache
 	[273519] = "军团战争物资",	-- Legion War Supplies
 	[273521] = "军团战争物资",	-- Legion War Supplies
 	[273523] = "军团战争物资",	-- Legion War Supplies
@@ -2338,6 +2387,9 @@ for key, value in pairs({
 	[279260] = "“精心”伪装的宝箱",	-- Cleverly Disguised Chest
 	[279299] = "剧毒封印",	-- Venomous Seal
 	--TODO: [279609] = "Spoils of Pandaria",	-- Spoils of Pandaria
+	--TODO: [279645] = "Tome of Oblivion",	-- Tome of Oblivion
+	[279646] = "血卫士编年史",	-- Bloodguard Chronicles
+	[279647] = "牺牲之书",	-- Tome of Sacrifice
 	[279689] = "丢失的纳兹曼尼宝物",	-- Lost Nazmani Treasure
 	[279750] = "干草覆盖的宝箱",	-- Hay Covered Chest
 	[280504] = "被吞没的宝箱",	-- Swallowed Naga Chest
@@ -2647,7 +2699,10 @@ for key, value in pairs({
 	[337237] = "失落宝物",	-- Lost Vault
 	[337241] = "贮藏的装备",	-- Stashed Equipment
 	--TODO: [339211] = "|cFFFFFFFFStep 2:|r Empty Dish",	-- |cFFFFFFFFStep 2:|r Empty Dish
+	--TODO: [339243] = "Infested Strongbox",	-- Infested Strongbox
 	[339248] = "感染宝箱",	-- Infested Cache
+	[339249] = "感染宝箱",	-- Infested Cache
+	[339250] = "感染宝箱",	-- Infested Cache	--TODO: This was manually translated
 	[339283] = "被遗忘的贵族宝箱",	-- Forgotten Noble's Chest
 	[339601] = "万世卷轴",	-- Scroll of Aeons
 	--TODO: [339625] = "Sophia's Gift",	-- Sophia's Gift
@@ -2963,6 +3018,8 @@ for key, value in pairs({
 	[369440] = "隙缚宝箱",	-- Riftbound Cache
 	[369602] = "蔑视之手",	-- Hands of Defiance
 	[369757] = "水下的宝箱",	-- Submerged Chest
+	[369893] = "急件",	-- Urgent Missive
+	[369894] = "急件",	-- Urgent Missive
 	[370140] = "损坏的机若藏品",	-- Damaged Jiro Stash
 	--TODO: [370469] = "Spectral Feed",	-- Spectral Feed
 	[370494] = "弹奏宝箱",	-- Toccatian Cache
@@ -3171,6 +3228,7 @@ do a[key] = value; end
 --TODO:
 local a = L.UNOBTAINABLE_ITEM_REASONS;
 for key,value in pairs({
+	-- Arbitrary Filters
 		[1] = {1, "|CFFFF0000此项玩家永远无法获得。|r", "从未实施"}, -- No Hope
 		[2] = {1, "|CFFFF0000此项已从游戏中删除。|r", "从游戏中移除"}, -- No Hope
 		[9] = {3, "|CFFFF0000获得它的原始来源已被删除，现在只能通过黑市拍卖行获得。|r", "黑市拍卖行 [BMAH]"},

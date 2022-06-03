@@ -45,13 +45,13 @@ MJEPersonalSettings = {
 			[0] = true,
 		},
 		["source"] = {
-			["World Event"] = true,
+			["Promotion"] = true,
 			["Black Market"] = true,
 			["PVP"] = true,
-			["Promotion"] = true,
+			["Vendor"] = true,
 			["Reputation"] = true,
 			["Class"] = true,
-			["Vendor"] = true,
+			["World Event"] = true,
 			["Garrison"] = true,
 			["Achievement"] = true,
 			["Shop"] = true,
@@ -66,15 +66,12 @@ MJEPersonalSettings = {
 		["color"] = {
 		},
 		["hidden"] = false,
-		["onlyUsable"] = false,
-		["mountType"] = {
-			["repair"] = true,
-			["flying"] = true,
-			["underwater"] = true,
-			["transform"] = true,
-			["ground"] = true,
-			["passenger"] = true,
+		["faction"] = {
+			["horde"] = true,
+			["alliance"] = true,
+			["noFaction"] = true,
 		},
+		["onlyUsable"] = false,
 		["onlyFavorites"] = false,
 		["family"] = {
 			["Arachnids"] = {
@@ -162,10 +159,10 @@ MJEPersonalSettings = {
 				["Undead Wolves"] = true,
 			},
 			["Rays"] = {
-				["Fathom Rays"] = true,
 				["Nether Rays"] = true,
-				["Mana Rays"] = true,
 				["Stingrays"] = true,
+				["Mana Rays"] = true,
+				["Fathom Rays"] = true,
 			},
 			["Rats"] = true,
 			["Carnivorans"] = {
@@ -177,7 +174,11 @@ MJEPersonalSettings = {
 				["Gargon"] = true,
 				["Hyenas"] = true,
 			},
-			["Crabs"] = true,
+			["Humanoids"] = {
+				["Gronnlings"] = true,
+				["Gorger"] = true,
+				["Yetis"] = true,
+			},
 			["Elementals"] = {
 				["Sabers"] = true,
 				["Wind Drakes"] = true,
@@ -195,11 +196,7 @@ MJEPersonalSettings = {
 				["Ruinstriders"] = true,
 				["Goats"] = true,
 			},
-			["Humanoids"] = {
-				["Gronnlings"] = true,
-				["Gorger"] = true,
-				["Yetis"] = true,
-			},
+			["Crabs"] = true,
 			["Reptiles"] = {
 				["Others"] = true,
 				["Mushan"] = true,
@@ -278,10 +275,13 @@ MJEPersonalSettings = {
 			},
 			["Snail"] = true,
 		},
-		["faction"] = {
-			["horde"] = true,
-			["alliance"] = true,
-			["noFaction"] = true,
+		["mountType"] = {
+			["repair"] = true,
+			["flying"] = true,
+			["underwater"] = true,
+			["transform"] = true,
+			["ground"] = true,
+			["passenger"] = true,
 		},
 		["onlyTradable"] = false,
 		["collected"] = true,

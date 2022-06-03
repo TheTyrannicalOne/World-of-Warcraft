@@ -1,36 +1,14 @@
 
 MasterPlanAG = {
-	["Argent Dawn"] = {
-		["Shanyt"] = {
-			["class"] = "WARRIOR",
-			["summary"] = {
-				["lastOilTime"] = 1652076882,
-				["tt2"] = 1651367203,
-				["tt3"] = 1651200197,
-				["ti1"] = 118531,
-				["tt1"] = 1651267097,
-				["ti3"] = 127855,
-				["inProgress"] = {
-					[396] = 1652105764,
-					[192] = 1652080583,
-					[211] = 1652083728,
-					[740] = 1652077789,
-					[267] = 1652091418,
-					[666] = 1652084208,
-					[481] = 1652091414,
-					[673] = 1652091396,
-					[331] = 1652078781,
-					[402] = 1652098561,
-					[685] = 1652120157,
-					[651] = 1652078697,
-					[652] = 1652077793,
-				},
-				["ti2"] = 122486,
-			},
-			["curOil"] = 96715,
-			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1652077080,
-			["curRes"] = 7702,
+	["IgnoreRewards"] = {
+	},
+	["Zul'jin"] = {
+		["Zulbathal"] = {
+			["faction"] = "Horde",
+			["class"] = "DRUID",
+		},
+		["Valmagus"] = {
+			["class"] = "PALADIN",
 			["faction"] = "Horde",
 		},
 	},
@@ -42,42 +20,67 @@ MasterPlanAG = {
 	},
 	["Dalaran"] = {
 		["Illingrath"] = {
-			["class"] = "DEMONHUNTER",
 			["faction"] = "Alliance",
+			["class"] = "DEMONHUNTER",
 		},
 		["Tendralas"] = {
-			["class"] = "PRIEST",
 			["faction"] = "Alliance",
+			["class"] = "PRIEST",
 		},
 		["Avisar"] = {
-			["class"] = "PALADIN",
 			["faction"] = "Alliance",
+			["class"] = "PALADIN",
 		},
 		["Thorinbane"] = {
-			["faction"] = "Alliance",
 			["class"] = "WARRIOR",
+			["faction"] = "Alliance",
 		},
 		["Rotclaugh"] = {
-			["faction"] = "Alliance",
 			["class"] = "DEATHKNIGHT",
+			["faction"] = "Alliance",
 		},
 		["Varlouris"] = {
-			["class"] = "SHAMAN",
 			["faction"] = "Alliance",
+			["class"] = "SHAMAN",
 		},
 		["Darnastris"] = {
-			["faction"] = "Alliance",
 			["class"] = "MAGE",
+			["faction"] = "Alliance",
 		},
 	},
-	["Zul'jin"] = {
-		["Zulbathal"] = {
+	["Argent Dawn"] = {
+		["Shanyt"] = {
+			["curOil"] = 96085,
+			["summary"] = {
+				["lastOilTime"] = 1653790173,
+				["tt2"] = 1653791147,
+				["tt3"] = 1652336797,
+				["tt1"] = 1653687307,
+				["ti1"] = 118531,
+				["ti3"] = 127855,
+				["inProgress"] = {
+					[395] = 1653818879,
+					[337] = 1653818948,
+					[177] = 1653792858,
+					[200] = 1653792834,
+					[325] = 1653818916,
+					[727] = 1653791977,
+					[268] = 1653804555,
+					[397] = 1653826143,
+					[188] = 1653792864,
+					[735] = 1653791082,
+					[677] = 1653826166,
+					[739] = 1653791079,
+					[444] = 1653818952,
+					[455] = 1653818893,
+				},
+				["ti2"] = 122486,
+			},
 			["faction"] = "Horde",
-			["class"] = "DRUID",
-		},
-		["Valmagus"] = {
-			["class"] = "PALADIN",
-			["faction"] = "Horde",
+			["cacheSize"] = 1000,
+			["lastCacheTime"] = 1653790223,
+			["curRes"] = 8722,
+			["class"] = "WARRIOR",
 		},
 	},
 }

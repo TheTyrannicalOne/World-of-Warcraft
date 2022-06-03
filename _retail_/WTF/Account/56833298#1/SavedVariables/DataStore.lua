@@ -10,8 +10,8 @@ DataStoreDB = {
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
-		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
 	},
 	["global"] = {
 		["Guilds"] = {
@@ -41,25 +41,25 @@ DataStoreDB = {
 			["Default.Dalaran.Illingrath"] = {
 				["faction"] = "Alliance",
 			},
-			["Default.Zul'jin.Zulbathal"] = {
-				["faction"] = "Horde",
-			},
 			["Default.Dalaran.Thorinbane"] = {
 				["faction"] = "Alliance",
+			},
+			["Default.Zul'jin.Zulbathal"] = {
+				["faction"] = "Horde",
 			},
 			["Default.Dalaran.Varlouris"] = {
 				["faction"] = "Alliance",
 			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["guildName"] = "Bloodmoon Chosen",
 				["faction"] = "Horde",
+				["guildName"] = "Bloodmoon Chosen",
 			},
 		},
 		["ShortToLongRealmNames"] = {
 			["BlackDragonflight"] = "Black Dragonflight",
 			["Dalaran"] = "Dalaran",
-			["ArgentDawn"] = "Argent Dawn",
 			["Zul'jin"] = "Zul'jin",
+			["ArgentDawn"] = "Argent Dawn",
 		},
 	},
 }
