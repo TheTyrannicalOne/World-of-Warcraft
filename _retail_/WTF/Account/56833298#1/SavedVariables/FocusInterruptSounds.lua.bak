@@ -6,8 +6,11 @@ FocusInterruptSoundsDB = {
 		["Shanyt - Argent Dawn"] = "WARRIOR",
 		["Valmagus - Zul'jin"] = "PALADIN",
 		["Durlok - Black Dragonflight"] = "DRUID",
+		["Alatra - Zul'jin"] = "HUNTER",
 	},
 	["profiles"] = {
+		["HUNTER"] = {
+		},
 		["DRUID"] = {
 		},
 		["WARRIOR"] = {

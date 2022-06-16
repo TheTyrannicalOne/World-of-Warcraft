@@ -112,7 +112,7 @@ ralllocationnames = {
 	"Neltharion's Lair", -- [110]
 	"The Arcway", -- [111]
 	"Vault of the Wardens", -- [112]
-	"The Violet Hold", -- [113]
+	"Violet Hold", -- [113]
 	"The Emerald Nightmare", -- [114]
 	"The Nighthold", -- [115]
 	"Trial of Valor", -- [116]

@@ -9,8 +9,9 @@ AltoholicDB = {
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
-		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
+		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
 	},
 }

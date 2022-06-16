@@ -255,13 +255,13 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					239165.942493, -- [1]
-					-0.2735380000000222, -- [2]
+					239165.921987, -- [1]
+					-0.7247739999999165, -- [2]
 					{
-						-0.02302100000000706, -- [1]
-						[0] = -0.001279,
+						-0.04535900000000837, -- [1]
+						[0] = -0.005275000000015629,
 						["alternatepower"] = 0,
-						[6] = -0.008247000000000781,
+						[6] = -0.01933899999999866,
 						[3] = -0.007362,
 					}, -- [3]
 					{
@@ -443,26 +443,114 @@ _detalhes_database = {
 							0, -- [8]
 						}, -- [10]
 						{
+							false, -- [1]
+							1064, -- [2]
+							968, -- [3]
+							1654227173.249, -- [4]
+							17860, -- [5]
+							"Ðevalyn", -- [6]
+							nil, -- [7]
+							0, -- [8]
 						}, -- [11]
 						{
+							false, -- [1]
+							64844, -- [2]
+							1226, -- [3]
+							1654819416.797, -- [4]
+							17860, -- [5]
+							"Darlaw-AeriePeak", -- [6]
+							nil, -- [7]
+							0, -- [8]
 						}, -- [12]
 						{
+							false, -- [1]
+							64844, -- [2]
+							1269, -- [3]
+							1654819418.544, -- [4]
+							17860, -- [5]
+							"Darlaw-AeriePeak", -- [6]
+							nil, -- [7]
+							0, -- [8]
 						}, -- [13]
 						{
+							false, -- [1]
+							77489, -- [2]
+							333, -- [3]
+							1654819419.892, -- [4]
+							17860, -- [5]
+							"Darlaw-AeriePeak", -- [6]
+							nil, -- [7]
+							0, -- [8]
 						}, -- [14]
 						{
+							false, -- [1]
+							64844, -- [2]
+							1364, -- [3]
+							1654819420.315, -- [4]
+							17860, -- [5]
+							"Darlaw-AeriePeak", -- [6]
+							nil, -- [7]
+							0, -- [8]
 						}, -- [15]
 						{
+							false, -- [1]
+							64844, -- [2]
+							1407, -- [3]
+							1654819422.014, -- [4]
+							17860, -- [5]
+							"Darlaw-AeriePeak", -- [6]
+							nil, -- [7]
+							0, -- [8]
 						}, -- [16]
 						{
+							false, -- [1]
+							77489, -- [2]
+							591, -- [3]
+							1654819422.996, -- [4]
+							17860, -- [5]
+							"Darlaw-AeriePeak", -- [6]
+							nil, -- [7]
+							0, -- [8]
 						}, -- [17]
 						{
+							false, -- [1]
+							64844, -- [2]
+							1419, -- [3]
+							1654819423.72, -- [4]
+							17860, -- [5]
+							"Darlaw-AeriePeak", -- [6]
+							nil, -- [7]
+							0, -- [8]
 						}, -- [18]
 						{
+							false, -- [1]
+							77489, -- [2]
+							584, -- [3]
+							1654819425.891, -- [4]
+							17860, -- [5]
+							"Darlaw-AeriePeak", -- [6]
+							nil, -- [7]
+							0, -- [8]
 						}, -- [19]
 						{
+							false, -- [1]
+							77489, -- [2]
+							584, -- [3]
+							1654819428.887, -- [4]
+							17860, -- [5]
+							"Darlaw-AeriePeak", -- [6]
+							nil, -- [7]
+							0, -- [8]
 						}, -- [20]
 						{
+							false, -- [1]
+							77489, -- [2]
+							584, -- [3]
+							1654819431.903, -- [4]
+							17860, -- [5]
+							"Darlaw-AeriePeak", -- [6]
+							nil, -- [7]
+							0, -- [8]
 						}, -- [21]
 						{
 						}, -- [22]
@@ -486,7 +574,7 @@ _detalhes_database = {
 						}, -- [31]
 						{
 						}, -- [32]
-						["n"] = 11,
+						["n"] = 22,
 					},
 				},
 				["start_time"] = 7663.271,
@@ -14234,7 +14322,7 @@ _detalhes_database = {
 			["defensive-personal"] = false,
 		},
 	},
-	["last_version"] = "9.2.09817",
+	["last_version"] = "9.2.59824",
 	["SoloTablesSaved"] = {
 		["Mode"] = 1,
 	},
@@ -14261,10 +14349,9 @@ _detalhes_database = {
 	["active_profile"] = "Shanyt-Argent Dawn",
 	["last_realversion"] = 146,
 	["ignore_nicktag"] = false,
-	["announce_prepots"] = {
-		["enabled"] = false,
-		["channel"] = "SELF",
-		["reverse"] = false,
+	["benchmark_db"] = {
+		["frame"] = {
+		},
 	},
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
@@ -14279,11 +14366,13 @@ _detalhes_database = {
 			},
 			["playSound"] = false,
 			["updatespeed"] = 1,
+			["usefocus"] = false,
 			["showamount"] = false,
 			["useplayercolor"] = false,
-			["usefocus"] = false,
-			["playSoundFile"] = "Details Threat Warning Volume 3",
+			["absolute_mode"] = false,
 			["author"] = "Details! Team",
+			["playSoundFile"] = "Details Threat Warning Volume 3",
+			["disable_gouge"] = false,
 		},
 		["DETAILS_PLUGIN_RAIDCHECK"] = {
 			["enabled"] = true,
@@ -14373,7 +14462,7 @@ _detalhes_database = {
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["y"] = 1.52587890625e-05,
+			["use_spark"] = true,
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -14383,7 +14472,6 @@ _detalhes_database = {
 			},
 			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["font_size"] = 10,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -14395,32 +14483,14 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
+			["font_size"] = 10,
 			["x"] = 0,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["use_spark"] = true,
+			["y"] = 1.52587890625e-05,
 			["arrow_anchor_y"] = 0,
 			["main_frame_locked"] = false,
 			["use_square_mode"] = false,
-		},
-	},
-	["mythic_dungeon_currentsaved"] = {
-		["dungeon_name"] = "",
-		["started"] = false,
-		["segment_id"] = 0,
-		["ej_id"] = 0,
-		["started_at"] = 0,
-		["run_id"] = 0,
-		["level"] = 0,
-		["dungeon_zone_id"] = 0,
-		["previous_boss_killed_at"] = 0,
-	},
-	["announce_damagerecord"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
-	["benchmark_db"] = {
-		["frame"] = {
 		},
 	},
 	["cd_tracker"] = {
@@ -14434,13 +14504,23 @@ _detalhes_database = {
 		["pos"] = {
 		},
 	},
+	["announce_damagerecord"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["last_day"] = "12",
 	["announce_firsthit"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 	},
-	["combat_counter"] = 806,
+	["announce_prepots"] = {
+		["enabled"] = false,
+		["channel"] = "SELF",
+		["reverse"] = false,
+	},
+	["combat_counter"] = 818,
 	["character_data"] = {
-		["logons"] = 99,
+		["logons"] = 111,
 	},
 	["combat_id"] = 241,
 	["savedStyles"] = {
@@ -14973,7 +15053,8 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["total"] = 13787288.309078,
 					["aID"] = "3683-0BE4455C",
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["boss_fight_component"] = true,
 					["spec"] = 70,
 					["grupo"] = true,
@@ -14985,8 +15066,7 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["start_time"] = 1652474298,
 					["serial"] = "Player-3683-0BE4455C",
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 				}, -- [2]
 				{
 					["flag_original"] = 68168,
@@ -15359,9 +15439,8 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["on_hold"] = false,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.008175,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
@@ -15370,7 +15449,8 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1652474616,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Environment (Falling)",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15409,7 +15489,7 @@ _detalhes_database = {
 					["total"] = 1221.008175,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 0.008175,
+					["on_hold"] = false,
 					["start_time"] = 1652474612,
 					["serial"] = "",
 					["aID"] = "",
@@ -16148,7 +16228,7 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["received"] = 0.030546,
-					["resource"] = 379.6670049999999,
+					["resource"] = 777.4522330000026,
 					["targets"] = {
 					},
 					["pets"] = {
@@ -16914,11 +16994,21 @@ _detalhes_database = {
 		},
 	},
 	["nick_tag_cache"] = {
-		["nextreset"] = 1654737928,
+		["nextreset"] = 1656114565,
 		["last_version"] = 14,
 	},
+	["mythic_dungeon_currentsaved"] = {
+		["dungeon_name"] = "",
+		["started"] = false,
+		["segment_id"] = 0,
+		["ej_id"] = 0,
+		["started_at"] = 0,
+		["run_id"] = 0,
+		["level"] = 0,
+		["dungeon_zone_id"] = 0,
+		["previous_boss_killed_at"] = 0,
+	},
 	["last_encounter"] = "Nefarian",
-	["last_day"] = "30",
 	["announce_cooldowns"] = {
 		["enabled"] = false,
 		["ignored_cooldowns"] = {

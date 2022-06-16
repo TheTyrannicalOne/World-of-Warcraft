@@ -384,6 +384,34 @@ function private.FilterBonusIdsAndModifiers(itemString, importantBonusIdsOnly, i
 		return itemString
 	end
 
+	-- filter the bonusIds
+	local bonusIdsStr = ""
+	local modifierFromBonusId1, modifierFromBonusId2 = nil, nil
+	if numBonusIds > 0 then
+		-- get the list of bonusIds and filter them
+		wipe(private.bonusIdsTemp)
+		for i = 1, numBonusIds do
+			local bonusId = select(i, ...)
+			private.bonusIdsTemp[i] = bonusId
+			local modifier = BonusIds.GetCraftingStatModifier(tonumber(bonusId))
+			if modifier then
+				if not modifierFromBonusId1 then
+					modifierFromBonusId1 = modifier
+				elseif not modifierFromBonusId2 then
+					modifierFromBonusId2 = modifier
+				end
+			end
+		end
+		if importantBonusIdsOnly then
+			-- Only track bonusIds if the itemId is above our minimum
+			if tonumber(itemId) >= MINIMUM_VARIANT_ITEM_ID then
+				bonusIdsStr = BonusIds.FilterImportant(table.concat(private.bonusIdsTemp, ":"))
+			end
+		else
+			bonusIdsStr = BonusIds.FilterAll(table.concat(private.bonusIdsTemp, ":"))
+		end
+	end
+
 	-- grab the modifiers and filter them
 	local numModifiers = numParts - numBonusIds
 	local modifiersStr = (numModifiers > 0 and numModifiers > 1 and numModifiers % 2 == 1) and strjoin(":", select(numBonusIds + 1, ...)) or ""
@@ -404,6 +432,13 @@ function private.FilterBonusIdsAndModifiers(itemString, importantBonusIdsOnly, i
 					assert(not private.modifiersValueTemp[modifierType])
 					private.modifiersValueTemp[modifierType] = modifier
 				elseif not importantBonusIdsOnly and EXTRA_STAT_MODIFIER_TYPES[modifierType] then
+					if modifierFromBonusId1 then
+						modifier = modifierFromBonusId1
+						modifierFromBonusId1 = nil
+					elseif modifierFromBonusId2 then
+						modifier = modifierFromBonusId2
+						modifierFromBonusId2 = nil
+					end
 					tinsert(private.modifiersTemp, modifierType)
 					tinsert(private.extraStatModifiersTemp, modifier)
 				end
@@ -430,24 +465,6 @@ function private.FilterBonusIdsAndModifiers(itemString, importantBonusIdsOnly, i
 			modifiersStr = table.concat(private.modifiersTemp, ":")
 		else
 			modifiersStr = ""
-		end
-	end
-
-	-- filter the bonusIds
-	local bonusIdsStr = ""
-	if numBonusIds > 0 then
-		-- get the list of bonusIds and filter them
-		wipe(private.bonusIdsTemp)
-		for i = 1, numBonusIds do
-			private.bonusIdsTemp[i] = select(i, ...)
-		end
-		if importantBonusIdsOnly then
-			-- Only track bonusIds if the itemId is above our minimum
-			if tonumber(itemId) >= MINIMUM_VARIANT_ITEM_ID then
-				bonusIdsStr = BonusIds.FilterImportant(table.concat(private.bonusIdsTemp, ":"))
-			end
-		else
-			bonusIdsStr = BonusIds.FilterAll(table.concat(private.bonusIdsTemp, ":"))
 		end
 	end
 

@@ -1,2012 +1,2056 @@
 
 RCLootCouncilDB = {
+	["profileKeys"] = {
+		["Vancard - Zul'jin"] = "Default",
+		["Armaguth - Zul'jin"] = "Default",
+		["Charbeatic - Zul'jin"] = "Default",
+		["Valmagus - Zul'jin"] = "Default",
+		["Shaekhan - Zul'jin"] = "Default",
+		["Shanyt - Zul'jin"] = "Default",
+		["Avisar - Dalaran"] = "Default",
+		["Banuumine - Zul'jin"] = "Default",
+		["Thorinbane - Dalaran"] = "Default",
+		["Shaekhan - Argent Dawn"] = "Default",
+		["Ruffinton - Dalaran"] = "Default",
+		["Malivant - Dalaran"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
+		["Dachas - Zul'jin"] = "Default",
+		["Tyranasticus - Zul'jin"] = "Default",
+		["Tendralas - Dalaran"] = "Default",
+		["Illingrath - Dalaran"] = "Default",
+		["Brotus - Argent Dawn"] = "Default",
+		["Tyrannithal - Argent Dawn"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
+		["Kelvalatar - Dalaran"] = "Default",
+		["Shimzo - Zul'jin"] = "Default",
+		["Okona - Zul'jin"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
+		["Tinkster - Dalaran"] = "Default",
+		["Guufnah - Zul'jin"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Default",
+		["Kotalkhan - Zul'jin"] = "Default",
+		["Shanyt - Argent Dawn"] = "Default",
+		["Laymonan - Zul'jin"] = "Default",
+		["Datgore - Zul'jin"] = "Default",
+		["Vadder - Argent Dawn"] = "Default",
+		["Serbitechna - Dalaran"] = "Default",
+		["Tyran - Argent Dawn"] = "Default",
+		["Darnastris - Dalaran"] = "Default",
+		["Rotclaugh - Dalaran"] = "Default",
+		["Jingojaggot - Zul'jin"] = "Default",
+		["Abyronterner - Zul'jin"] = "Default",
+		["Alatra - Zul'jin"] = "Default",
+		["Jasmoney - Zul'jin"] = "Default",
+		["Banesmuncy - Zul'jin"] = "Default",
+		["Mandles - Zul'jin"] = "Default",
+	},
 	["global"] = {
 		["log"] = {
-			"<19:44:30> <DEBUG>		Adding to self.lootSlotInfo	7	|cff9d9d9d|Hitem:22527::::::::48:70:::::::::|h[Core of Elements]|h|r	0	5	Creature-0-4232-230-30316-8911-00011553CA	3	Creature-0-4232-230-30316-8911-00021553CA	2", -- [1]
-			"<19:44:30> <DEBUG>		Event:	LOOT_READY	true", -- [2]
-			"<19:44:30> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8898-00019553CB	1708	Creature-0-4232-230-30316-8899-00029553CB	6825", -- [3]
-			"<19:44:30> <DEBUG>		Adding to self.lootSlotInfo	3	|cff1eff00|Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::|h[Imperial Red Mantle]|h|r	2	1	Creature-0-4232-230-30316-8898-00019553CB	1", -- [4]
-			"<19:44:30> <DEBUG>		Adding to self.lootSlotInfo	5	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	9	Creature-0-4232-230-30316-8899-00029553CB	4	Creature-0-4232-230-30316-8911-00011553CA	2	Creature-0-4232-230-30316-8911-00021553CA	3", -- [5]
-			"<19:44:30> <DEBUG>		Adding to self.lootSlotInfo	7	|cff9d9d9d|Hitem:22527::::::::48:70:::::::::|h[Core of Elements]|h|r	0	5	Creature-0-4232-230-30316-8911-00011553CA	3	Creature-0-4232-230-30316-8911-00021553CA	2", -- [6]
-			"<19:44:31> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [7]
-			"<19:44:31> <DEBUG>		Event:	LOOT_READY	true", -- [8]
-			"<19:44:31> <DEBUG>		Adding to self.lootSlotInfo	3	|cff1eff00|Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::|h[Imperial Red Mantle]|h|r	2	1	Creature-0-4232-230-30316-8898-00019553CB	1", -- [9]
-			"<19:44:31> <DEBUG>		Adding to self.lootSlotInfo	5	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	9	Creature-0-4232-230-30316-8899-00029553CB	4	Creature-0-4232-230-30316-8911-00011553CA	2	Creature-0-4232-230-30316-8911-00021553CA	3", -- [10]
-			"<19:44:31> <DEBUG>		Adding to self.lootSlotInfo	7	|cff9d9d9d|Hitem:22527::::::::48:70:::::::::|h[Core of Elements]|h|r	0	5	Creature-0-4232-230-30316-8911-00011553CA	3	Creature-0-4232-230-30316-8911-00021553CA	2", -- [11]
-			"<19:44:34> <DEBUG>		Event:	LOOT_CLOSED", -- [12]
-			"<19:44:34> <DEBUG>		OnLootSlotCleared()	3	|cff1eff00|Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::|h[Imperial Red Mantle]|h|r	2", -- [13]
-			"<19:44:34> <DEBUG>		Event:	LOOT_CLOSED", -- [14]
-			"<19:44:34> <DEBUG>		OnLootSlotCleared()	5	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0", -- [15]
-			"<19:44:34> <DEBUG>		Event:	LOOT_CLOSED", -- [16]
-			"<19:44:34> <DEBUG>		OnLootSlotCleared()	7	|cff9d9d9d|Hitem:22527::::::::48:70:::::::::|h[Core of Elements]|h|r	0", -- [17]
-			"<19:44:34> <DEBUG>		Event:	LOOT_CLOSED", -- [18]
-			"<19:44:34> <Comm>		^1^Sl^T^N1^S8911^t^^	WHISPER	Valmagus-Zul'jin", -- [19]
-			"<19:44:35> <DEBUG>		Event:	LOOT_READY	true", -- [20]
-			"<19:44:35> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::|h[Imperial Red Mantle]|h|r	2	1	Creature-0-4232-230-30316-8898-00019553CB	1", -- [21]
-			"<19:44:35> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	9	Creature-0-4232-230-30316-8899-00029553CB	4	Creature-0-4232-230-30316-8911-00011553CA	2	Creature-0-4232-230-30316-8911-00021553CA	3", -- [22]
-			"<19:44:35> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:22527::::::::48:70:::::::::|h[Core of Elements]|h|r	0	5	Creature-0-4232-230-30316-8911-00011553CA	3	Creature-0-4232-230-30316-8911-00021553CA	2", -- [23]
-			"<19:44:35> <DEBUG>		Event:	LOOT_READY	true", -- [24]
-			"<19:44:35> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::|h[Imperial Red Mantle]|h|r	2	1	Creature-0-4232-230-30316-8898-00019553CB	1", -- [25]
-			"<19:44:35> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	9	Creature-0-4232-230-30316-8899-00029553CB	4	Creature-0-4232-230-30316-8911-00011553CA	2	Creature-0-4232-230-30316-8911-00021553CA	3", -- [26]
-			"<19:44:35> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:22527::::::::48:70:::::::::|h[Core of Elements]|h|r	0	5	Creature-0-4232-230-30316-8911-00011553CA	3	Creature-0-4232-230-30316-8911-00021553CA	2", -- [27]
-			"<19:44:35> <DEBUG>		Event:	LOOT_READY	true", -- [28]
-			"<19:44:35> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::|h[Imperial Red Mantle]|h|r	2	1	Creature-0-4232-230-30316-8898-00019553CB	1", -- [29]
-			"<19:44:35> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	9	Creature-0-4232-230-30316-8899-00029553CB	4	Creature-0-4232-230-30316-8911-00011553CA	2	Creature-0-4232-230-30316-8911-00021553CA	3", -- [30]
-			"<19:44:35> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:22527::::::::48:70:::::::::|h[Core of Elements]|h|r	0	5	Creature-0-4232-230-30316-8911-00011553CA	3	Creature-0-4232-230-30316-8911-00021553CA	2", -- [31]
-			"<19:44:35> <DEBUG>		Event:	LOOT_READY	true", -- [32]
-			"<19:44:35> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::|h[Imperial Red Mantle]|h|r	2	1	Creature-0-4232-230-30316-8898-00019553CB	1", -- [33]
-			"<19:44:35> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	9	Creature-0-4232-230-30316-8899-00029553CB	4	Creature-0-4232-230-30316-8911-00011553CA	2	Creature-0-4232-230-30316-8911-00021553CA	3", -- [34]
-			"<19:44:35> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:22527::::::::48:70:::::::::|h[Core of Elements]|h|r	0	5	Creature-0-4232-230-30316-8911-00011553CA	3	Creature-0-4232-230-30316-8911-00021553CA	2", -- [35]
-			"<19:44:35> <DEBUG>		Event:	LOOT_READY	true", -- [36]
-			"<19:44:35> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::|h[Imperial Red Mantle]|h|r	2	1	Creature-0-4232-230-30316-8898-00019553CB	1", -- [37]
-			"<19:44:35> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	9	Creature-0-4232-230-30316-8899-00029553CB	4	Creature-0-4232-230-30316-8911-00011553CA	2	Creature-0-4232-230-30316-8911-00021553CA	3", -- [38]
-			"<19:44:35> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:22527::::::::48:70:::::::::|h[Core of Elements]|h|r	0	5	Creature-0-4232-230-30316-8911-00011553CA	3	Creature-0-4232-230-30316-8911-00021553CA	2", -- [39]
-			"<19:44:35> <DEBUG>		Event:	LOOT_READY	true", -- [40]
-			"<19:44:35> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::|h[Imperial Red Mantle]|h|r	2	1	Creature-0-4232-230-30316-8898-00019553CB	1", -- [41]
-			"<19:44:35> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	9	Creature-0-4232-230-30316-8899-00029553CB	4	Creature-0-4232-230-30316-8911-00011553CA	2	Creature-0-4232-230-30316-8911-00021553CA	3", -- [42]
-			"<19:44:35> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:22527::::::::48:70:::::::::|h[Core of Elements]|h|r	0	5	Creature-0-4232-230-30316-8911-00011553CA	3	Creature-0-4232-230-30316-8911-00021553CA	2", -- [43]
-			"<19:44:35> <DEBUG>		Event:	LOOT_READY	true", -- [44]
-			"<19:44:35> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::|h[Imperial Red Mantle]|h|r	2	1	Creature-0-4232-230-30316-8898-00019553CB	1", -- [45]
-			"<19:44:35> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	9	Creature-0-4232-230-30316-8899-00029553CB	4	Creature-0-4232-230-30316-8911-00011553CA	2	Creature-0-4232-230-30316-8911-00021553CA	3", -- [46]
-			"<19:44:35> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:22527::::::::48:70:::::::::|h[Core of Elements]|h|r	0	5	Creature-0-4232-230-30316-8911-00011553CA	3	Creature-0-4232-230-30316-8911-00021553CA	2", -- [47]
-			"<19:44:36> <DEBUG>		Event:	LOOT_READY	true", -- [48]
-			"<19:44:36> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::|h[Imperial Red Mantle]|h|r	2	1	Creature-0-4232-230-30316-8898-00019553CB	1", -- [49]
-			"<19:44:36> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	9	Creature-0-4232-230-30316-8899-00029553CB	4	Creature-0-4232-230-30316-8911-00011553CA	2	Creature-0-4232-230-30316-8911-00021553CA	3", -- [50]
-			"<19:44:36> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:22527::::::::48:70:::::::::|h[Core of Elements]|h|r	0	5	Creature-0-4232-230-30316-8911-00011553CA	3	Creature-0-4232-230-30316-8911-00021553CA	2", -- [51]
-			"<19:44:36> <DEBUG>		Storage:New	|cff1eff00|Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::|h[Imperial Red Mantle]|h|r	temp", -- [52]
-			"<19:44:36> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::||h[Imperial Red Mantle]||h||r	5", -- [53]
-			"<19:44:36> <DEBUG>		Found:	nil	nil	nil", -- [54]
-			"<19:44:37> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::||h[Imperial Red Mantle]||h||r	5", -- [55]
-			"<19:44:37> <DEBUG>		Found:	nil	nil	nil", -- [56]
-			"<19:44:38> <DEBUG>		Event:	LOOT_CLOSED", -- [57]
-			"<19:44:38> <DEBUG>		OnLootSlotCleared()	2	|cff1eff00|Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::|h[Imperial Red Mantle]|h|r	2", -- [58]
-			"<19:44:38> <DEBUG>		Event:	LOOT_CLOSED", -- [59]
-			"<19:44:38> <DEBUG>		OnLootSlotCleared()	3	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0", -- [60]
-			"<19:44:38> <DEBUG>		Event:	LOOT_CLOSED", -- [61]
-			"<19:44:38> <DEBUG>		OnLootSlotCleared()	4	|cff9d9d9d|Hitem:22527::::::::48:70:::::::::|h[Core of Elements]|h|r	0", -- [62]
-			"<19:44:38> <DEBUG>		Event:	LOOT_CLOSED", -- [63]
-			"<19:44:38> <Comm>		^1^Sl^T^N1^S8911^t^^	WHISPER	Valmagus-Zul'jin", -- [64]
-			"<19:44:38> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::||h[Imperial Red Mantle]||h||r	5", -- [65]
-			"<19:44:38> <DEBUG>		Found:	nil	nil	nil", -- [66]
-			"<19:44:39> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::||h[Imperial Red Mantle]||h||r	5", -- [67]
-			"<19:44:39> <DEBUG>		Found:	nil	nil	nil", -- [68]
-			"<19:44:39> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::|h[Imperial Red Mantle]|h|r not found in bags", -- [69]
-			"<19:44:40> <DEBUG>		Storage:New	|cff1eff00|Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::|h[Imperial Red Mantle]|h|r	temp", -- [70]
-			"<19:44:40> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::||h[Imperial Red Mantle]||h||r	5", -- [71]
-			"<19:44:40> <DEBUG>		Found:	nil	nil	nil", -- [72]
-			"<19:44:41> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::||h[Imperial Red Mantle]||h||r	5", -- [73]
-			"<19:44:41> <DEBUG>		Found:	nil	nil	nil", -- [74]
-			"<19:44:42> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::||h[Imperial Red Mantle]||h||r	5", -- [75]
-			"<19:44:42> <DEBUG>		Found:	nil	nil	nil", -- [76]
-			"<19:44:43> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::||h[Imperial Red Mantle]||h||r	5", -- [77]
-			"<19:44:43> <DEBUG>		Found:	nil	nil	nil", -- [78]
-			"<19:44:43> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::|h[Imperial Red Mantle]|h|r not found in bags", -- [79]
-			"<19:44:44> <DEBUG>		Event:	LOOT_READY	true", -- [80]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8898-00009553CA	2916	Creature-0-4232-230-30316-8898-00021553CB	8832", -- [81]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	3	|cff1eff00|Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::|h[Imperial Red Mantle]|h|r	2	1	Creature-0-4232-230-30316-8898-00019553CB	1", -- [82]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	4	|cffffffff|Hitem:11078::::::::48:70:::::::::|h[Relic Coffer Key]|h|r	1	1	Creature-0-4232-230-30316-8898-00021553CB	1", -- [83]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	7	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	3	Creature-0-4232-230-30316-8911-00021553CA	3", -- [84]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	8	|cff9d9d9d|Hitem:22527::::::::48:70:::::::::|h[Core of Elements]|h|r	0	2	Creature-0-4232-230-30316-8911-00021553CA	2", -- [85]
-			"<19:44:44> <DEBUG>		Event:	LOOT_READY	true", -- [86]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8898-00009553CA	2916	Creature-0-4232-230-30316-8898-00021553CB	8832", -- [87]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	3	|cff1eff00|Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::|h[Imperial Red Mantle]|h|r	2	1	Creature-0-4232-230-30316-8898-00019553CB	1", -- [88]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	4	|cffffffff|Hitem:11078::::::::48:70:::::::::|h[Relic Coffer Key]|h|r	1	1	Creature-0-4232-230-30316-8898-00021553CB	1", -- [89]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	7	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	3	Creature-0-4232-230-30316-8911-00021553CA	3", -- [90]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	8	|cff9d9d9d|Hitem:22527::::::::48:70:::::::::|h[Core of Elements]|h|r	0	2	Creature-0-4232-230-30316-8911-00021553CA	2", -- [91]
-			"<19:44:44> <DEBUG>		Event:	LOOT_READY	true", -- [92]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8898-00009553CA	2916	Creature-0-4232-230-30316-8898-00021553CB	8832", -- [93]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	3	|cff1eff00|Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::|h[Imperial Red Mantle]|h|r	2	1	Creature-0-4232-230-30316-8898-00019553CB	1", -- [94]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	4	|cffffffff|Hitem:11078::::::::48:70:::::::::|h[Relic Coffer Key]|h|r	1	1	Creature-0-4232-230-30316-8898-00021553CB	1", -- [95]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	7	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	3	Creature-0-4232-230-30316-8911-00021553CA	3", -- [96]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	8	|cff9d9d9d|Hitem:22527::::::::48:70:::::::::|h[Core of Elements]|h|r	0	2	Creature-0-4232-230-30316-8911-00021553CA	2", -- [97]
-			"<19:44:44> <DEBUG>		Event:	LOOT_READY	true", -- [98]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8898-00009553CA	2916	Creature-0-4232-230-30316-8898-00021553CB	8832", -- [99]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	3	|cff1eff00|Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::|h[Imperial Red Mantle]|h|r	2	1	Creature-0-4232-230-30316-8898-00019553CB	1", -- [100]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	4	|cffffffff|Hitem:11078::::::::48:70:::::::::|h[Relic Coffer Key]|h|r	1	1	Creature-0-4232-230-30316-8898-00021553CB	1", -- [101]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	7	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	3	Creature-0-4232-230-30316-8911-00021553CA	3", -- [102]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	8	|cff9d9d9d|Hitem:22527::::::::48:70:::::::::|h[Core of Elements]|h|r	0	2	Creature-0-4232-230-30316-8911-00021553CA	2", -- [103]
-			"<19:44:44> <DEBUG>		Event:	LOOT_READY	true", -- [104]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8898-00009553CA	2916	Creature-0-4232-230-30316-8898-00021553CB	8832", -- [105]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	3	|cff1eff00|Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::|h[Imperial Red Mantle]|h|r	2	1	Creature-0-4232-230-30316-8898-00019553CB	1", -- [106]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	4	|cffffffff|Hitem:11078::::::::48:70:::::::::|h[Relic Coffer Key]|h|r	1	1	Creature-0-4232-230-30316-8898-00021553CB	1", -- [107]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	7	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	3	Creature-0-4232-230-30316-8911-00021553CA	3", -- [108]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	8	|cff9d9d9d|Hitem:22527::::::::48:70:::::::::|h[Core of Elements]|h|r	0	2	Creature-0-4232-230-30316-8911-00021553CA	2", -- [109]
-			"<19:44:44> <DEBUG>		OnLootSlotCleared()	4	|cffffffff|Hitem:11078::::::::48:70:::::::::|h[Relic Coffer Key]|h|r	1", -- [110]
-			"<19:44:44> <DEBUG>		Event:	LOOT_READY	true", -- [111]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8898-00009553CA	2916	Creature-0-4232-230-30316-8898-00021553CB	8832", -- [112]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	3	|cff1eff00|Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::|h[Imperial Red Mantle]|h|r	2	1	Creature-0-4232-230-30316-8898-00019553CB	1", -- [113]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	7	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	3	Creature-0-4232-230-30316-8911-00021553CA	3", -- [114]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	8	|cff9d9d9d|Hitem:22527::::::::48:70:::::::::|h[Core of Elements]|h|r	0	2	Creature-0-4232-230-30316-8911-00021553CA	2", -- [115]
-			"<19:44:44> <DEBUG>		Event:	LOOT_READY	true", -- [116]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8898-00009553CA	2916	Creature-0-4232-230-30316-8898-00021553CB	8832", -- [117]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	3	|cff1eff00|Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::|h[Imperial Red Mantle]|h|r	2	1	Creature-0-4232-230-30316-8898-00019553CB	1", -- [118]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	7	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	3	Creature-0-4232-230-30316-8911-00021553CA	3", -- [119]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	8	|cff9d9d9d|Hitem:22527::::::::48:70:::::::::|h[Core of Elements]|h|r	0	2	Creature-0-4232-230-30316-8911-00021553CA	2", -- [120]
-			"<19:44:44> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [121]
-			"<19:44:44> <DEBUG>		Event:	LOOT_READY	true", -- [122]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	3	|cff1eff00|Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::|h[Imperial Red Mantle]|h|r	2	1	Creature-0-4232-230-30316-8898-00019553CB	1", -- [123]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	7	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	3	Creature-0-4232-230-30316-8911-00021553CA	3", -- [124]
-			"<19:44:44> <DEBUG>		Adding to self.lootSlotInfo	8	|cff9d9d9d|Hitem:22527::::::::48:70:::::::::|h[Core of Elements]|h|r	0	2	Creature-0-4232-230-30316-8911-00021553CA	2", -- [125]
-			"<19:44:46> <DEBUG>		Event:	LOOT_CLOSED", -- [126]
-			"<19:44:46> <DEBUG>		OnLootSlotCleared()	3	|cff1eff00|Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::|h[Imperial Red Mantle]|h|r	2", -- [127]
-			"<19:44:46> <DEBUG>		Event:	LOOT_CLOSED", -- [128]
-			"<19:44:46> <DEBUG>		OnLootSlotCleared()	7	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0", -- [129]
-			"<19:44:46> <DEBUG>		Event:	LOOT_CLOSED", -- [130]
-			"<19:44:46> <DEBUG>		OnLootSlotCleared()	8	|cff9d9d9d|Hitem:22527::::::::48:70:::::::::|h[Core of Elements]|h|r	0", -- [131]
-			"<19:44:46> <DEBUG>		Event:	LOOT_CLOSED", -- [132]
-			"<19:44:46> <Comm>		^1^Sl^T^N1^S8911^t^^	WHISPER	Valmagus-Zul'jin", -- [133]
-			"<19:44:48> <DEBUG>		Storage:New	|cff1eff00|Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::|h[Imperial Red Mantle]|h|r	temp", -- [134]
-			"<19:44:48> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::||h[Imperial Red Mantle]||h||r	5", -- [135]
-			"<19:44:48> <DEBUG>		Found:	nil	nil	nil", -- [136]
-			"<19:44:49> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::||h[Imperial Red Mantle]||h||r	5", -- [137]
-			"<19:44:49> <DEBUG>		Found:	nil	nil	nil", -- [138]
-			"<19:44:50> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::||h[Imperial Red Mantle]||h||r	5", -- [139]
-			"<19:44:50> <DEBUG>		Found:	nil	nil	nil", -- [140]
-			"<19:44:51> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::||h[Imperial Red Mantle]||h||r	5", -- [141]
-			"<19:44:51> <DEBUG>		Found:	nil	nil	nil", -- [142]
-			"<19:44:51> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:8250::::::::48:70::1:1:6654:1:28:201:::::|h[Imperial Red Mantle]|h|r not found in bags", -- [143]
-			"<19:45:05> <DEBUG>		Event:	ENCOUNTER_START	236	General Angerforge	1	5", -- [144]
-			"<19:45:05> <INFO>		UpdatePlayersData()", -- [145]
-			"<19:45:06> <DEBUG>		Event:	ENCOUNTER_END	236	General Angerforge	1	5	1", -- [146]
-			"<19:45:09> <DEBUG>		Event:	LOOT_READY	true", -- [147]
-			"<19:45:09> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9033-00001553CA	83871", -- [148]
-			"<19:45:09> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	3	Creature-0-4232-230-30316-9033-00001553CA	3", -- [149]
-			"<19:45:09> <DEBUG>		Adding to self.lootSlotInfo	3	|cffffffff|Hitem:11078::::::::48:70:::::::::|h[Relic Coffer Key]|h|r	1	1	Creature-0-4232-230-30316-9033-00001553CA	1", -- [150]
-			"<19:45:09> <DEBUG>		Adding to self.lootSlotInfo	4	|cff0070dd|Hitem:12557::::::::48:70::1:1:6710:1:28:201:::::|h[Ebonsteel Spaulders]|h|r	3	1	Creature-0-4232-230-30316-9033-00001553CA	1", -- [151]
-			"<19:45:09> <DEBUG>		Adding to self.lootSlotInfo	5	|cff0070dd|Hitem:11820::::::::48:70::1:1:6710:1:28:201:::::|h[Royal Decorated Armor]|h|r	3	1	Creature-0-4232-230-30316-9033-00001553CA	1", -- [152]
-			"<19:45:09> <DEBUG>		Event:	LOOT_READY	true", -- [153]
-			"<19:45:09> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9033-00001553CA	83871", -- [154]
-			"<19:45:09> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	3	Creature-0-4232-230-30316-9033-00001553CA	3", -- [155]
-			"<19:45:09> <DEBUG>		Adding to self.lootSlotInfo	3	|cffffffff|Hitem:11078::::::::48:70:::::::::|h[Relic Coffer Key]|h|r	1	1	Creature-0-4232-230-30316-9033-00001553CA	1", -- [156]
-			"<19:45:09> <DEBUG>		Adding to self.lootSlotInfo	4	|cff0070dd|Hitem:12557::::::::48:70::1:1:6710:1:28:201:::::|h[Ebonsteel Spaulders]|h|r	3	1	Creature-0-4232-230-30316-9033-00001553CA	1", -- [157]
-			"<19:45:09> <DEBUG>		Adding to self.lootSlotInfo	5	|cff0070dd|Hitem:11820::::::::48:70::1:1:6710:1:28:201:::::|h[Royal Decorated Armor]|h|r	3	1	Creature-0-4232-230-30316-9033-00001553CA	1", -- [158]
-			"<19:45:09> <DEBUG>		Event:	LOOT_READY	true", -- [159]
-			"<19:45:09> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9033-00001553CA	83871", -- [160]
-			"<19:45:09> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	3	Creature-0-4232-230-30316-9033-00001553CA	3", -- [161]
-			"<19:45:09> <DEBUG>		Adding to self.lootSlotInfo	3	|cffffffff|Hitem:11078::::::::48:70:::::::::|h[Relic Coffer Key]|h|r	1	1	Creature-0-4232-230-30316-9033-00001553CA	1", -- [162]
-			"<19:45:09> <DEBUG>		Adding to self.lootSlotInfo	4	|cff0070dd|Hitem:12557::::::::48:70::1:1:6710:1:28:201:::::|h[Ebonsteel Spaulders]|h|r	3	1	Creature-0-4232-230-30316-9033-00001553CA	1", -- [163]
-			"<19:45:09> <DEBUG>		Adding to self.lootSlotInfo	5	|cff0070dd|Hitem:11820::::::::48:70::1:1:6710:1:28:201:::::|h[Royal Decorated Armor]|h|r	3	1	Creature-0-4232-230-30316-9033-00001553CA	1", -- [164]
-			"<19:45:09> <DEBUG>		OnLootSlotCleared()	3	|cffffffff|Hitem:11078::::::::48:70:::::::::|h[Relic Coffer Key]|h|r	1", -- [165]
-			"<19:45:09> <DEBUG>		Event:	LOOT_READY	true", -- [166]
-			"<19:45:09> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9033-00001553CA	83871", -- [167]
-			"<19:45:09> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	3	Creature-0-4232-230-30316-9033-00001553CA	3", -- [168]
-			"<19:45:09> <DEBUG>		Adding to self.lootSlotInfo	4	|cff0070dd|Hitem:12557::::::::48:70::1:1:6710:1:28:201:::::|h[Ebonsteel Spaulders]|h|r	3	1	Creature-0-4232-230-30316-9033-00001553CA	1", -- [169]
-			"<19:45:09> <DEBUG>		Adding to self.lootSlotInfo	5	|cff0070dd|Hitem:11820::::::::48:70::1:1:6710:1:28:201:::::|h[Royal Decorated Armor]|h|r	3	1	Creature-0-4232-230-30316-9033-00001553CA	1", -- [170]
-			"<19:45:09> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [171]
-			"<19:45:09> <DEBUG>		Event:	LOOT_READY	true", -- [172]
-			"<19:45:09> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	3	Creature-0-4232-230-30316-9033-00001553CA	3", -- [173]
-			"<19:45:09> <DEBUG>		Adding to self.lootSlotInfo	4	|cff0070dd|Hitem:12557::::::::48:70::1:1:6710:1:28:201:::::|h[Ebonsteel Spaulders]|h|r	3	1	Creature-0-4232-230-30316-9033-00001553CA	1", -- [174]
-			"<19:45:09> <DEBUG>		Adding to self.lootSlotInfo	5	|cff0070dd|Hitem:11820::::::::48:70::1:1:6710:1:28:201:::::|h[Royal Decorated Armor]|h|r	3	1	Creature-0-4232-230-30316-9033-00001553CA	1", -- [175]
-			"<19:45:11> <DEBUG>		Event:	LOOT_CLOSED", -- [176]
-			"<19:45:11> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0", -- [177]
-			"<19:45:11> <DEBUG>		Event:	LOOT_CLOSED", -- [178]
-			"<19:45:11> <DEBUG>		OnLootSlotCleared()	4	|cff0070dd|Hitem:12557::::::::48:70::1:1:6710:1:28:201:::::|h[Ebonsteel Spaulders]|h|r	3", -- [179]
-			"<19:45:11> <DEBUG>		Event:	LOOT_CLOSED", -- [180]
-			"<19:45:11> <DEBUG>		OnLootSlotCleared()	5	|cff0070dd|Hitem:11820::::::::48:70::1:1:6710:1:28:201:::::|h[Royal Decorated Armor]|h|r	3", -- [181]
-			"<19:45:11> <DEBUG>		Event:	LOOT_CLOSED", -- [182]
-			"<19:45:11> <Comm>		^1^Sl^T^N1^S9033^t^^	WHISPER	Valmagus-Zul'jin", -- [183]
-			"<19:45:13> <DEBUG>		Storage:New	|cff0070dd|Hitem:12557::::::::48:70::1:1:6710:1:28:201:::::|h[Ebonsteel Spaulders]|h|r	temp", -- [184]
-			"<19:45:13> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:12557::::::::48:70::1:1:6710:1:28:201:::::||h[Ebonsteel Spaulders]||h||r	5", -- [185]
-			"<19:45:13> <DEBUG>		Found:	nil	nil	nil", -- [186]
-			"<19:45:13> <DEBUG>		Storage:New	|cff0070dd|Hitem:11820::::::::48:70::1:1:6710:1:28:201:::::|h[Royal Decorated Armor]|h|r	temp", -- [187]
-			"<19:45:13> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11820::::::::48:70::1:1:6710:1:28:201:::::||h[Royal Decorated Armor]||h||r	5", -- [188]
-			"<19:45:13> <DEBUG>		Found:	nil	nil	nil", -- [189]
-			"<19:45:14> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11820::::::::48:70::1:1:6710:1:28:201:::::||h[Royal Decorated Armor]||h||r	5", -- [190]
-			"<19:45:14> <DEBUG>		Found:	nil	nil	nil", -- [191]
-			"<19:45:14> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:12557::::::::48:70::1:1:6710:1:28:201:::::||h[Ebonsteel Spaulders]||h||r	5", -- [192]
-			"<19:45:14> <DEBUG>		Found:	nil	nil	nil", -- [193]
-			"<19:45:15> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:12557::::::::48:70::1:1:6710:1:28:201:::::||h[Ebonsteel Spaulders]||h||r	5", -- [194]
-			"<19:45:15> <DEBUG>		Found:	nil	nil	nil", -- [195]
-			"<19:45:15> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11820::::::::48:70::1:1:6710:1:28:201:::::||h[Royal Decorated Armor]||h||r	5", -- [196]
-			"<19:45:15> <DEBUG>		Found:	nil	nil	nil", -- [197]
-			"<19:45:16> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11820::::::::48:70::1:1:6710:1:28:201:::::||h[Royal Decorated Armor]||h||r	5", -- [198]
-			"<19:45:16> <DEBUG>		Found:	nil	nil	nil", -- [199]
-			"<19:45:16> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:11820::::::::48:70::1:1:6710:1:28:201:::::|h[Royal Decorated Armor]|h|r not found in bags", -- [200]
-			"<19:45:16> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:12557::::::::48:70::1:1:6710:1:28:201:::::||h[Ebonsteel Spaulders]||h||r	5", -- [201]
-			"<19:45:16> <DEBUG>		Found:	nil	nil	nil", -- [202]
-			"<19:45:16> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:12557::::::::48:70::1:1:6710:1:28:201:::::|h[Ebonsteel Spaulders]|h|r not found in bags", -- [203]
-			"<19:45:36> <DEBUG>		Event:	LOOT_READY	true", -- [204]
-			"<19:45:36> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8900-00009553CB	1329", -- [205]
-			"<19:45:36> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [206]
-			"<19:45:36> <DEBUG>		Event:	LOOT_CLOSED", -- [207]
-			"<19:45:36> <DEBUG>		Event:	LOOT_CLOSED", -- [208]
-			"<19:45:37> <Comm>		^1^Sl^T^N1^S8900^t^^	WHISPER	Valmagus-Zul'jin", -- [209]
-			"<19:45:37> <Comm>		^1^Sl^T^N1^S8900^t^^	WHISPER	Valmagus-Zul'jin", -- [210]
-			"<19:45:41> <DEBUG>		Event:	ENCOUNTER_START	237	Golem Lord Argelmach	1	5", -- [211]
-			"<19:45:41> <INFO>		UpdatePlayersData()", -- [212]
-			"<19:45:41> <DEBUG>		Event:	ENCOUNTER_END	237	Golem Lord Argelmach	1	5	1", -- [213]
-			"<19:45:44> <DEBUG>		Event:	LOOT_READY	true", -- [214]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8983-00001553CA	77242	Creature-0-4232-230-30316-8906-00001553CA	9614	Creature-0-4232-230-30316-8907-00009553CA	6514", -- [215]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:15294::::::::48:70::1:2:6655:1695:1:28:201:::::|h[Siege Bow of the Fireflash]|h|r	2	1	Creature-0-4232-230-30316-8906-00001553CA	1", -- [216]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4232-230-30316-8907-00009553CA	1", -- [217]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	5	|cff0070dd|Hitem:11819::::::::48:70::1:1:6710:1:28:201:::::|h[Second Wind]|h|r	3	1	Creature-0-4232-230-30316-8983-00001553CA	1", -- [218]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	7	|cff0070dd|Hitem:11823::::::::48:70::1:1:6710:1:28:201:::::|h[Luminary Kilt]|h|r	3	1	Creature-0-4232-230-30316-8983-00001553CA	1", -- [219]
-			"<19:45:44> <DEBUG>		Event:	LOOT_READY	true", -- [220]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8983-00001553CA	77242	Creature-0-4232-230-30316-8906-00001553CA	9614	Creature-0-4232-230-30316-8907-00009553CA	6514", -- [221]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:15294::::::::48:70::1:2:6655:1695:1:28:201:::::|h[Siege Bow of the Fireflash]|h|r	2	1	Creature-0-4232-230-30316-8906-00001553CA	1", -- [222]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4232-230-30316-8907-00009553CA	1", -- [223]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	5	|cff0070dd|Hitem:11819::::::::48:70::1:1:6710:1:28:201:::::|h[Second Wind]|h|r	3	1	Creature-0-4232-230-30316-8983-00001553CA	1", -- [224]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	7	|cff0070dd|Hitem:11823::::::::48:70::1:1:6710:1:28:201:::::|h[Luminary Kilt]|h|r	3	1	Creature-0-4232-230-30316-8983-00001553CA	1", -- [225]
-			"<19:45:44> <DEBUG>		Event:	LOOT_READY	true", -- [226]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8983-00001553CA	77242	Creature-0-4232-230-30316-8906-00001553CA	9614	Creature-0-4232-230-30316-8907-00009553CA	6514", -- [227]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:15294::::::::48:70::1:2:6655:1695:1:28:201:::::|h[Siege Bow of the Fireflash]|h|r	2	1	Creature-0-4232-230-30316-8906-00001553CA	1", -- [228]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4232-230-30316-8907-00009553CA	1", -- [229]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	5	|cff0070dd|Hitem:11819::::::::48:70::1:1:6710:1:28:201:::::|h[Second Wind]|h|r	3	1	Creature-0-4232-230-30316-8983-00001553CA	1", -- [230]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	7	|cff0070dd|Hitem:11823::::::::48:70::1:1:6710:1:28:201:::::|h[Luminary Kilt]|h|r	3	1	Creature-0-4232-230-30316-8983-00001553CA	1", -- [231]
-			"<19:45:44> <DEBUG>		Event:	LOOT_READY	true", -- [232]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8983-00001553CA	77242	Creature-0-4232-230-30316-8906-00001553CA	9614	Creature-0-4232-230-30316-8907-00009553CA	6514", -- [233]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:15294::::::::48:70::1:2:6655:1695:1:28:201:::::|h[Siege Bow of the Fireflash]|h|r	2	1	Creature-0-4232-230-30316-8906-00001553CA	1", -- [234]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4232-230-30316-8907-00009553CA	1", -- [235]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	5	|cff0070dd|Hitem:11819::::::::48:70::1:1:6710:1:28:201:::::|h[Second Wind]|h|r	3	1	Creature-0-4232-230-30316-8983-00001553CA	1", -- [236]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	7	|cff0070dd|Hitem:11823::::::::48:70::1:1:6710:1:28:201:::::|h[Luminary Kilt]|h|r	3	1	Creature-0-4232-230-30316-8983-00001553CA	1", -- [237]
-			"<19:45:44> <DEBUG>		Event:	LOOT_READY	true", -- [238]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8983-00001553CA	77242	Creature-0-4232-230-30316-8906-00001553CA	9614	Creature-0-4232-230-30316-8907-00009553CA	6514", -- [239]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:15294::::::::48:70::1:2:6655:1695:1:28:201:::::|h[Siege Bow of the Fireflash]|h|r	2	1	Creature-0-4232-230-30316-8906-00001553CA	1", -- [240]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4232-230-30316-8907-00009553CA	1", -- [241]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	5	|cff0070dd|Hitem:11819::::::::48:70::1:1:6710:1:28:201:::::|h[Second Wind]|h|r	3	1	Creature-0-4232-230-30316-8983-00001553CA	1", -- [242]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	7	|cff0070dd|Hitem:11823::::::::48:70::1:1:6710:1:28:201:::::|h[Luminary Kilt]|h|r	3	1	Creature-0-4232-230-30316-8983-00001553CA	1", -- [243]
-			"<19:45:44> <DEBUG>		Event:	LOOT_READY	true", -- [244]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8983-00001553CA	77242	Creature-0-4232-230-30316-8906-00001553CA	9614	Creature-0-4232-230-30316-8907-00009553CA	6514", -- [245]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:15294::::::::48:70::1:2:6655:1695:1:28:201:::::|h[Siege Bow of the Fireflash]|h|r	2	1	Creature-0-4232-230-30316-8906-00001553CA	1", -- [246]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4232-230-30316-8907-00009553CA	1", -- [247]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	5	|cff0070dd|Hitem:11819::::::::48:70::1:1:6710:1:28:201:::::|h[Second Wind]|h|r	3	1	Creature-0-4232-230-30316-8983-00001553CA	1", -- [248]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	7	|cff0070dd|Hitem:11823::::::::48:70::1:1:6710:1:28:201:::::|h[Luminary Kilt]|h|r	3	1	Creature-0-4232-230-30316-8983-00001553CA	1", -- [249]
-			"<19:45:44> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [250]
-			"<19:45:44> <DEBUG>		Event:	LOOT_READY	true", -- [251]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:15294::::::::48:70::1:2:6655:1695:1:28:201:::::|h[Siege Bow of the Fireflash]|h|r	2	1	Creature-0-4232-230-30316-8906-00001553CA	1", -- [252]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4232-230-30316-8907-00009553CA	1", -- [253]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	5	|cff0070dd|Hitem:11819::::::::48:70::1:1:6710:1:28:201:::::|h[Second Wind]|h|r	3	1	Creature-0-4232-230-30316-8983-00001553CA	1", -- [254]
-			"<19:45:44> <DEBUG>		Adding to self.lootSlotInfo	7	|cff0070dd|Hitem:11823::::::::48:70::1:1:6710:1:28:201:::::|h[Luminary Kilt]|h|r	3	1	Creature-0-4232-230-30316-8983-00001553CA	1", -- [255]
-			"<19:45:52> <DEBUG>		Event:	LOOT_CLOSED", -- [256]
-			"<19:45:52> <DEBUG>		OnLootSlotCleared()	2	|cff1eff00|Hitem:15294::::::::48:70::1:2:6655:1695:1:28:201:::::|h[Siege Bow of the Fireflash]|h|r	2", -- [257]
-			"<19:45:52> <DEBUG>		Event:	LOOT_CLOSED", -- [258]
-			"<19:45:52> <DEBUG>		OnLootSlotCleared()	4	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0", -- [259]
-			"<19:45:52> <DEBUG>		Event:	LOOT_CLOSED", -- [260]
-			"<19:45:52> <DEBUG>		OnLootSlotCleared()	5	|cff0070dd|Hitem:11819::::::::48:70::1:1:6710:1:28:201:::::|h[Second Wind]|h|r	3", -- [261]
-			"<19:45:52> <DEBUG>		Event:	LOOT_CLOSED", -- [262]
-			"<19:45:52> <DEBUG>		OnLootSlotCleared()	7	|cff0070dd|Hitem:11823::::::::48:70::1:1:6710:1:28:201:::::|h[Luminary Kilt]|h|r	3", -- [263]
-			"<19:45:52> <DEBUG>		Event:	LOOT_CLOSED", -- [264]
-			"<19:45:53> <Comm>		^1^Sl^T^N1^S8983^t^^	WHISPER	Valmagus-Zul'jin", -- [265]
-			"<19:45:54> <DEBUG>		Storage:New	|cff0070dd|Hitem:11823::::::::48:70::1:1:6710:1:28:201:::::|h[Luminary Kilt]|h|r	temp", -- [266]
-			"<19:45:54> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11823::::::::48:70::1:1:6710:1:28:201:::::||h[Luminary Kilt]||h||r	5", -- [267]
-			"<19:45:54> <DEBUG>		Found:	nil	nil	nil", -- [268]
-			"<19:45:54> <DEBUG>		Storage:New	|cff0070dd|Hitem:11819::::::::48:70::1:1:6710:1:28:201:::::|h[Second Wind]|h|r	temp", -- [269]
-			"<19:45:54> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11819::::::::48:70::1:1:6710:1:28:201:::::||h[Second Wind]||h||r	5", -- [270]
-			"<19:45:54> <DEBUG>		Found:	nil	nil	nil", -- [271]
-			"<19:45:54> <DEBUG>		Storage:New	|cff1eff00|Hitem:15294::::::::48:70::1:2:6655:1695:1:28:201:::::|h[Siege Bow of the Fireflash]|h|r	temp", -- [272]
-			"<19:45:54> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:15294::::::::48:70::1:2:6655:1695:1:28:201:::::||h[Siege Bow of the Fireflash]||h||r	5", -- [273]
-			"<19:45:54> <DEBUG>		Found:	nil	nil	nil", -- [274]
-			"<19:45:55> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11823::::::::48:70::1:1:6710:1:28:201:::::||h[Luminary Kilt]||h||r	5", -- [275]
-			"<19:45:55> <DEBUG>		Found:	nil	nil	nil", -- [276]
-			"<19:45:55> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:15294::::::::48:70::1:2:6655:1695:1:28:201:::::||h[Siege Bow of the Fireflash]||h||r	5", -- [277]
-			"<19:45:55> <DEBUG>		Found:	nil	nil	nil", -- [278]
-			"<19:45:55> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11819::::::::48:70::1:1:6710:1:28:201:::::||h[Second Wind]||h||r	5", -- [279]
-			"<19:45:55> <DEBUG>		Found:	nil	nil	nil", -- [280]
-			"<19:45:56> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:15294::::::::48:70::1:2:6655:1695:1:28:201:::::||h[Siege Bow of the Fireflash]||h||r	5", -- [281]
-			"<19:45:56> <DEBUG>		Found:	nil	nil	nil", -- [282]
-			"<19:45:56> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11823::::::::48:70::1:1:6710:1:28:201:::::||h[Luminary Kilt]||h||r	5", -- [283]
-			"<19:45:56> <DEBUG>		Found:	nil	nil	nil", -- [284]
-			"<19:45:56> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11819::::::::48:70::1:1:6710:1:28:201:::::||h[Second Wind]||h||r	5", -- [285]
-			"<19:45:56> <DEBUG>		Found:	nil	nil	nil", -- [286]
-			"<19:45:57> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11823::::::::48:70::1:1:6710:1:28:201:::::||h[Luminary Kilt]||h||r	5", -- [287]
-			"<19:45:57> <DEBUG>		Found:	nil	nil	nil", -- [288]
-			"<19:45:57> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:11823::::::::48:70::1:1:6710:1:28:201:::::|h[Luminary Kilt]|h|r not found in bags", -- [289]
-			"<19:45:57> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:15294::::::::48:70::1:2:6655:1695:1:28:201:::::||h[Siege Bow of the Fireflash]||h||r	5", -- [290]
-			"<19:45:57> <DEBUG>		Found:	nil	nil	nil", -- [291]
-			"<19:45:57> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:15294::::::::48:70::1:2:6655:1695:1:28:201:::::|h[Siege Bow of the Fireflash]|h|r not found in bags", -- [292]
-			"<19:45:57> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11819::::::::48:70::1:1:6710:1:28:201:::::||h[Second Wind]||h||r	5", -- [293]
-			"<19:45:57> <DEBUG>		Found:	nil	nil	nil", -- [294]
-			"<19:45:57> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:11819::::::::48:70::1:1:6710:1:28:201:::::|h[Second Wind]|h|r not found in bags", -- [295]
-			"<19:46:08> <DEBUG>		Event:	LOOT_READY	true", -- [296]
-			"<19:46:08> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8920-00021553CA	579	Creature-0-4232-230-30316-8907-00001553CA	3496	Creature-0-4232-230-30316-8920-00019553CA	1924	Creature-0-4232-230-30316-8907-00009553CB	9226", -- [297]
-			"<19:46:08> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4232-230-30316-8907-00001553CA	1", -- [298]
-			"<19:46:08> <DEBUG>		Event:	LOOT_READY	true", -- [299]
-			"<19:46:08> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8920-00021553CA	579	Creature-0-4232-230-30316-8907-00001553CA	3496	Creature-0-4232-230-30316-8920-00019553CA	1924	Creature-0-4232-230-30316-8907-00009553CB	9226", -- [300]
-			"<19:46:08> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4232-230-30316-8907-00001553CA	1", -- [301]
-			"<19:46:08> <DEBUG>		Event:	LOOT_READY	true", -- [302]
-			"<19:46:08> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8920-00021553CA	579	Creature-0-4232-230-30316-8907-00001553CA	3496	Creature-0-4232-230-30316-8920-00019553CA	1924	Creature-0-4232-230-30316-8907-00009553CB	9226", -- [303]
-			"<19:46:08> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4232-230-30316-8907-00001553CA	1", -- [304]
-			"<19:46:08> <DEBUG>		Event:	LOOT_READY	true", -- [305]
-			"<19:46:08> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8920-00021553CA	579	Creature-0-4232-230-30316-8907-00001553CA	3496	Creature-0-4232-230-30316-8920-00019553CA	1924	Creature-0-4232-230-30316-8907-00009553CB	9226", -- [306]
-			"<19:46:08> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4232-230-30316-8907-00001553CA	1", -- [307]
-			"<19:46:08> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [308]
-			"<19:46:08> <DEBUG>		Event:	LOOT_READY	true", -- [309]
-			"<19:46:08> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4232-230-30316-8907-00001553CA	1", -- [310]
-			"<19:46:09> <DEBUG>		Event:	LOOT_CLOSED", -- [311]
-			"<19:46:09> <DEBUG>		OnLootSlotCleared()	3	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0", -- [312]
-			"<19:46:09> <DEBUG>		Event:	LOOT_CLOSED", -- [313]
-			"<19:46:09> <Comm>		^1^Sl^T^N1^S8907^t^^	WHISPER	Valmagus-Zul'jin", -- [314]
-			"<19:46:15> <DEBUG>		Event:	LOOT_READY	true", -- [315]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8907-00001553CB	1610	Creature-0-4232-230-30316-8900-00071553CA	900	Creature-0-4232-230-30316-8900-00079553CA	3348	Creature-0-4232-230-30316-8920-00009553CB	839	Creature-0-4232-230-30316-8920-00021553CB	1888	Creature-0-4232-230-30316-8920-00029553CA	1681	Creature-0-4232-230-30316-8920-00031553CA	1160", -- [316]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	2	Creature-0-4232-230-30316-8907-00001553CB	2", -- [317]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4232-230-30316-8907-00001553CB	1", -- [318]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	6	|cff1eff00|Hitem:18661::::::::48:70::1::1:28:201:::::|h[Schematic: World Enlarger]|h|r	2	1	Creature-0-4232-230-30316-8920-00031553CA	1", -- [319]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	7	|cff1eff00|Hitem:8256::::::::48:70::1:1:6654:1:28:201:::::|h[Serpentskin Boots]|h|r	2	1	Creature-0-4232-230-30316-8920-00021553CB	1", -- [320]
-			"<19:46:15> <DEBUG>		Event:	LOOT_READY	true", -- [321]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8907-00001553CB	1610	Creature-0-4232-230-30316-8900-00071553CA	900	Creature-0-4232-230-30316-8900-00079553CA	3348	Creature-0-4232-230-30316-8920-00009553CB	839	Creature-0-4232-230-30316-8920-00021553CB	1888	Creature-0-4232-230-30316-8920-00029553CA	1681	Creature-0-4232-230-30316-8920-00031553CA	1160", -- [322]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	2	Creature-0-4232-230-30316-8907-00001553CB	2", -- [323]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4232-230-30316-8907-00001553CB	1", -- [324]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	6	|cff1eff00|Hitem:18661::::::::48:70::1::1:28:201:::::|h[Schematic: World Enlarger]|h|r	2	1	Creature-0-4232-230-30316-8920-00031553CA	1", -- [325]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	7	|cff1eff00|Hitem:8256::::::::48:70::1:1:6654:1:28:201:::::|h[Serpentskin Boots]|h|r	2	1	Creature-0-4232-230-30316-8920-00021553CB	1", -- [326]
-			"<19:46:15> <DEBUG>		Event:	LOOT_READY	true", -- [327]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8907-00001553CB	1610	Creature-0-4232-230-30316-8900-00071553CA	900	Creature-0-4232-230-30316-8900-00079553CA	3348	Creature-0-4232-230-30316-8920-00009553CB	839	Creature-0-4232-230-30316-8920-00021553CB	1888	Creature-0-4232-230-30316-8920-00029553CA	1681	Creature-0-4232-230-30316-8920-00031553CA	1160", -- [328]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	2	Creature-0-4232-230-30316-8907-00001553CB	2", -- [329]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4232-230-30316-8907-00001553CB	1", -- [330]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	6	|cff1eff00|Hitem:18661::::::::48:70::1::1:28:201:::::|h[Schematic: World Enlarger]|h|r	2	1	Creature-0-4232-230-30316-8920-00031553CA	1", -- [331]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	7	|cff1eff00|Hitem:8256::::::::48:70::1:1:6654:1:28:201:::::|h[Serpentskin Boots]|h|r	2	1	Creature-0-4232-230-30316-8920-00021553CB	1", -- [332]
-			"<19:46:15> <DEBUG>		Event:	LOOT_READY	true", -- [333]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8907-00001553CB	1610	Creature-0-4232-230-30316-8900-00071553CA	900	Creature-0-4232-230-30316-8900-00079553CA	3348	Creature-0-4232-230-30316-8920-00009553CB	839	Creature-0-4232-230-30316-8920-00021553CB	1888	Creature-0-4232-230-30316-8920-00029553CA	1681	Creature-0-4232-230-30316-8920-00031553CA	1160", -- [334]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	2	Creature-0-4232-230-30316-8907-00001553CB	2", -- [335]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4232-230-30316-8907-00001553CB	1", -- [336]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	6	|cff1eff00|Hitem:18661::::::::48:70::1::1:28:201:::::|h[Schematic: World Enlarger]|h|r	2	1	Creature-0-4232-230-30316-8920-00031553CA	1", -- [337]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	7	|cff1eff00|Hitem:8256::::::::48:70::1:1:6654:1:28:201:::::|h[Serpentskin Boots]|h|r	2	1	Creature-0-4232-230-30316-8920-00021553CB	1", -- [338]
-			"<19:46:15> <DEBUG>		Event:	LOOT_READY	true", -- [339]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8907-00001553CB	1610	Creature-0-4232-230-30316-8900-00071553CA	900	Creature-0-4232-230-30316-8900-00079553CA	3348	Creature-0-4232-230-30316-8920-00009553CB	839	Creature-0-4232-230-30316-8920-00021553CB	1888	Creature-0-4232-230-30316-8920-00029553CA	1681	Creature-0-4232-230-30316-8920-00031553CA	1160", -- [340]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	2	Creature-0-4232-230-30316-8907-00001553CB	2", -- [341]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4232-230-30316-8907-00001553CB	1", -- [342]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	6	|cff1eff00|Hitem:18661::::::::48:70::1::1:28:201:::::|h[Schematic: World Enlarger]|h|r	2	1	Creature-0-4232-230-30316-8920-00031553CA	1", -- [343]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	7	|cff1eff00|Hitem:8256::::::::48:70::1:1:6654:1:28:201:::::|h[Serpentskin Boots]|h|r	2	1	Creature-0-4232-230-30316-8920-00021553CB	1", -- [344]
-			"<19:46:15> <DEBUG>		Event:	LOOT_READY	true", -- [345]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8907-00001553CB	1610	Creature-0-4232-230-30316-8900-00071553CA	900	Creature-0-4232-230-30316-8900-00079553CA	3348	Creature-0-4232-230-30316-8920-00009553CB	839	Creature-0-4232-230-30316-8920-00021553CB	1888	Creature-0-4232-230-30316-8920-00029553CA	1681	Creature-0-4232-230-30316-8920-00031553CA	1160", -- [346]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	2	Creature-0-4232-230-30316-8907-00001553CB	2", -- [347]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4232-230-30316-8907-00001553CB	1", -- [348]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	6	|cff1eff00|Hitem:18661::::::::48:70::1::1:28:201:::::|h[Schematic: World Enlarger]|h|r	2	1	Creature-0-4232-230-30316-8920-00031553CA	1", -- [349]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	7	|cff1eff00|Hitem:8256::::::::48:70::1:1:6654:1:28:201:::::|h[Serpentskin Boots]|h|r	2	1	Creature-0-4232-230-30316-8920-00021553CB	1", -- [350]
-			"<19:46:15> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [351]
-			"<19:46:15> <DEBUG>		Event:	LOOT_READY	true", -- [352]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	2	Creature-0-4232-230-30316-8907-00001553CB	2", -- [353]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4232-230-30316-8907-00001553CB	1", -- [354]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	6	|cff1eff00|Hitem:18661::::::::48:70::1::1:28:201:::::|h[Schematic: World Enlarger]|h|r	2	1	Creature-0-4232-230-30316-8920-00031553CA	1", -- [355]
-			"<19:46:15> <DEBUG>		Adding to self.lootSlotInfo	7	|cff1eff00|Hitem:8256::::::::48:70::1:1:6654:1:28:201:::::|h[Serpentskin Boots]|h|r	2	1	Creature-0-4232-230-30316-8920-00021553CB	1", -- [356]
-			"<19:46:19> <DEBUG>		Event:	LOOT_CLOSED", -- [357]
-			"<19:46:19> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0", -- [358]
-			"<19:46:19> <DEBUG>		Event:	LOOT_CLOSED", -- [359]
-			"<19:46:19> <DEBUG>		OnLootSlotCleared()	3	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0", -- [360]
-			"<19:46:19> <DEBUG>		Event:	LOOT_CLOSED", -- [361]
-			"<19:46:19> <DEBUG>		OnLootSlotCleared()	6	|cff1eff00|Hitem:18661::::::::48:70::1::1:28:201:::::|h[Schematic: World Enlarger]|h|r	2", -- [362]
-			"<19:46:19> <DEBUG>		Event:	LOOT_CLOSED", -- [363]
-			"<19:46:19> <DEBUG>		OnLootSlotCleared()	7	|cff1eff00|Hitem:8256::::::::48:70::1:1:6654:1:28:201:::::|h[Serpentskin Boots]|h|r	2", -- [364]
-			"<19:46:19> <DEBUG>		Event:	LOOT_CLOSED", -- [365]
-			"<19:46:19> <Comm>		^1^Sl^T^N1^S8920^t^^	WHISPER	Valmagus-Zul'jin", -- [366]
-			"<19:46:21> <DEBUG>		Storage:New	|cff1eff00|Hitem:8256::::::::48:70::1:1:6654:1:28:201:::::|h[Serpentskin Boots]|h|r	temp", -- [367]
-			"<19:46:21> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8256::::::::48:70::1:1:6654:1:28:201:::::||h[Serpentskin Boots]||h||r	5", -- [368]
-			"<19:46:21> <DEBUG>		Found:	nil	nil	nil", -- [369]
-			"<19:46:21> <DEBUG>		Storage:New	|cff1eff00|Hitem:18661::::::::48:70::1::1:28:201:::::|h[Schematic: World Enlarger]|h|r	temp", -- [370]
-			"<19:46:21> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:18661::::::::48:70::1::1:28:201:::::||h[Schematic: World Enlarger]||h||r	5", -- [371]
-			"<19:46:21> <DEBUG>		Found:	nil	nil	nil", -- [372]
-			"<19:46:22> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:18661::::::::48:70::1::1:28:201:::::||h[Schematic: World Enlarger]||h||r	5", -- [373]
-			"<19:46:22> <DEBUG>		Found:	nil	nil	nil", -- [374]
-			"<19:46:22> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8256::::::::48:70::1:1:6654:1:28:201:::::||h[Serpentskin Boots]||h||r	5", -- [375]
-			"<19:46:22> <DEBUG>		Found:	nil	nil	nil", -- [376]
-			"<19:46:23> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:18661::::::::48:70::1::1:28:201:::::||h[Schematic: World Enlarger]||h||r	5", -- [377]
-			"<19:46:23> <DEBUG>		Found:	nil	nil	nil", -- [378]
-			"<19:46:23> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8256::::::::48:70::1:1:6654:1:28:201:::::||h[Serpentskin Boots]||h||r	5", -- [379]
-			"<19:46:23> <DEBUG>		Found:	nil	nil	nil", -- [380]
-			"<19:46:24> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:18661::::::::48:70::1::1:28:201:::::||h[Schematic: World Enlarger]||h||r	5", -- [381]
-			"<19:46:24> <DEBUG>		Found:	nil	nil	nil", -- [382]
-			"<19:46:24> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:18661::::::::48:70::1::1:28:201:::::|h[Schematic: World Enlarger]|h|r not found in bags", -- [383]
-			"<19:46:24> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8256::::::::48:70::1:1:6654:1:28:201:::::||h[Serpentskin Boots]||h||r	5", -- [384]
-			"<19:46:24> <DEBUG>		Found:	nil	nil	nil", -- [385]
-			"<19:46:24> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:8256::::::::48:70::1:1:6654:1:28:201:::::|h[Serpentskin Boots]|h|r not found in bags", -- [386]
-			"<19:46:28> <DEBUG>		Event:	LOOT_READY	true", -- [387]
-			"<19:46:28> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22527::::::::48:70:::::::::|h[Core of Elements]|h|r	0	2	Creature-0-4232-230-30316-8911-00099553CA	2", -- [388]
-			"<19:46:28> <DEBUG>		Event:	LOOT_READY	true", -- [389]
-			"<19:46:28> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22527::::::::48:70:::::::::|h[Core of Elements]|h|r	0	2	Creature-0-4232-230-30316-8911-00099553CA	2", -- [390]
-			"<19:46:28> <DEBUG>		Event:	LOOT_READY	true", -- [391]
-			"<19:46:28> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22527::::::::48:70:::::::::|h[Core of Elements]|h|r	0	2	Creature-0-4232-230-30316-8911-00099553CA	2", -- [392]
-			"<19:46:28> <DEBUG>		Event:	LOOT_READY	true", -- [393]
-			"<19:46:28> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22527::::::::48:70:::::::::|h[Core of Elements]|h|r	0	2	Creature-0-4232-230-30316-8911-00099553CA	2", -- [394]
-			"<19:46:28> <DEBUG>		Event:	LOOT_CLOSED", -- [395]
-			"<19:46:28> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:22527::::::::48:70:::::::::|h[Core of Elements]|h|r	0", -- [396]
-			"<19:46:28> <DEBUG>		Event:	LOOT_CLOSED", -- [397]
-			"<19:46:28> <Comm>		^1^Sl^T^N1^S8911^t^^	WHISPER	Valmagus-Zul'jin", -- [398]
-			"<19:46:54> <DEBUG>		Event:	ENCOUNTER_START	240	Ribbly Screwspigot	1	5", -- [399]
-			"<19:46:54> <INFO>		UpdatePlayersData()", -- [400]
-			"<19:46:55> <DEBUG>		Event:	ENCOUNTER_END	240	Ribbly Screwspigot	1	5	1", -- [401]
-			"<19:47:01> <DEBUG>		Event:	LOOT_READY	true", -- [402]
-			"<19:47:01> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-10043-00001553CA	5773	Creature-0-4232-230-30316-9545-00001553CB	541	Creature-0-4232-230-30316-9545-00011553CB	1401	Creature-0-4232-230-30316-9545-00011553CD	815	Creature-0-4232-230-30316-9545-00021553CC	2058	Creature-0-4232-230-30316-9547-00019553CC	3146	Creature-0-4232-230-30316-9547-00021553CB	2309	Creature-0-4232-230-30316-9547-00039553CC	770	Creature-0-4232-230-30316-9547-00059553CC	915	Creature-0-4232-230-30316-10043-00009553CA	10314	Creature-0-4232-230-30316-10043-00011553CA	2289	Creature-0-4232-230-30316-9543-00001553CA	3804", -- [403]
-			"<19:47:01> <DEBUG>		Adding to self.lootSlotInfo	5	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-9547-00039553CC	4", -- [404]
-			"<19:47:01> <DEBUG>		Adding to self.lootSlotInfo	8	|cff0070dd|Hitem:11742::::::::48:70:::::::::|h[Wayfarer's Knapsack]|h|r	3	1	Creature-0-4232-230-30316-9543-00001553CA	1", -- [405]
-			"<19:47:01> <DEBUG>		Event:	LOOT_READY	true", -- [406]
-			"<19:47:01> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-10043-00001553CA	5773	Creature-0-4232-230-30316-9545-00001553CB	541	Creature-0-4232-230-30316-9545-00011553CB	1401	Creature-0-4232-230-30316-9545-00011553CD	815	Creature-0-4232-230-30316-9545-00021553CC	2058	Creature-0-4232-230-30316-9547-00019553CC	3146	Creature-0-4232-230-30316-9547-00021553CB	2309	Creature-0-4232-230-30316-9547-00039553CC	770	Creature-0-4232-230-30316-9547-00059553CC	915	Creature-0-4232-230-30316-10043-00009553CA	10314	Creature-0-4232-230-30316-10043-00011553CA	2289	Creature-0-4232-230-30316-9543-00001553CA	3804", -- [407]
-			"<19:47:01> <DEBUG>		Adding to self.lootSlotInfo	5	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-9547-00039553CC	4", -- [408]
-			"<19:47:01> <DEBUG>		Adding to self.lootSlotInfo	8	|cff0070dd|Hitem:11742::::::::48:70:::::::::|h[Wayfarer's Knapsack]|h|r	3	1	Creature-0-4232-230-30316-9543-00001553CA	1", -- [409]
-			"<19:47:01> <DEBUG>		Event:	LOOT_READY	true", -- [410]
-			"<19:47:01> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-10043-00001553CA	5773	Creature-0-4232-230-30316-9545-00001553CB	541	Creature-0-4232-230-30316-9545-00011553CB	1401	Creature-0-4232-230-30316-9545-00011553CD	815	Creature-0-4232-230-30316-9545-00021553CC	2058	Creature-0-4232-230-30316-9547-00019553CC	3146	Creature-0-4232-230-30316-9547-00021553CB	2309	Creature-0-4232-230-30316-9547-00039553CC	770	Creature-0-4232-230-30316-9547-00059553CC	915	Creature-0-4232-230-30316-10043-00009553CA	10314	Creature-0-4232-230-30316-10043-00011553CA	2289	Creature-0-4232-230-30316-9543-00001553CA	3804", -- [411]
-			"<19:47:01> <DEBUG>		Adding to self.lootSlotInfo	5	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-9547-00039553CC	4", -- [412]
-			"<19:47:01> <DEBUG>		Adding to self.lootSlotInfo	8	|cff0070dd|Hitem:11742::::::::48:70:::::::::|h[Wayfarer's Knapsack]|h|r	3	1	Creature-0-4232-230-30316-9543-00001553CA	1", -- [413]
-			"<19:47:01> <DEBUG>		Event:	LOOT_READY	true", -- [414]
-			"<19:47:01> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-10043-00001553CA	5773	Creature-0-4232-230-30316-9545-00001553CB	541	Creature-0-4232-230-30316-9545-00011553CB	1401	Creature-0-4232-230-30316-9545-00011553CD	815	Creature-0-4232-230-30316-9545-00021553CC	2058	Creature-0-4232-230-30316-9547-00019553CC	3146	Creature-0-4232-230-30316-9547-00021553CB	2309	Creature-0-4232-230-30316-9547-00039553CC	770	Creature-0-4232-230-30316-9547-00059553CC	915	Creature-0-4232-230-30316-10043-00009553CA	10314	Creature-0-4232-230-30316-10043-00011553CA	2289	Creature-0-4232-230-30316-9543-00001553CA	3804", -- [415]
-			"<19:47:01> <DEBUG>		Adding to self.lootSlotInfo	5	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-9547-00039553CC	4", -- [416]
-			"<19:47:01> <DEBUG>		Adding to self.lootSlotInfo	8	|cff0070dd|Hitem:11742::::::::48:70:::::::::|h[Wayfarer's Knapsack]|h|r	3	1	Creature-0-4232-230-30316-9543-00001553CA	1", -- [417]
-			"<19:47:01> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [418]
-			"<19:47:01> <DEBUG>		Event:	LOOT_CLOSED", -- [419]
-			"<19:47:01> <DEBUG>		OnLootSlotCleared()	5	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0", -- [420]
-			"<19:47:01> <DEBUG>		Event:	LOOT_CLOSED", -- [421]
-			"<19:47:01> <DEBUG>		OnLootSlotCleared()	8	|cff0070dd|Hitem:11742::::::::48:70:::::::::|h[Wayfarer's Knapsack]|h|r	3", -- [422]
-			"<19:47:01> <DEBUG>		Event:	LOOT_CLOSED", -- [423]
-			"<19:47:02> <Comm>		^1^Sl^T^N1^S9543^t^^	WHISPER	Valmagus-Zul'jin", -- [424]
-			"<19:47:03> <DEBUG>		Storage:New	|cff0070dd|Hitem:11742::::::::48:70:::::::::|h[Wayfarer's Knapsack]|h|r	temp", -- [425]
-			"<19:47:03> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11742::::::::48:70:::::::::||h[Wayfarer's Knapsack]||h||r	5", -- [426]
-			"<19:47:03> <DEBUG>		Found:	nil	nil	nil", -- [427]
-			"<19:47:04> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11742::::::::48:70:::::::::||h[Wayfarer's Knapsack]||h||r	5", -- [428]
-			"<19:47:04> <DEBUG>		Found:	nil	nil	nil", -- [429]
-			"<19:47:05> <DEBUG>		Event:	LOOT_READY	true", -- [430]
-			"<19:47:05> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9554-00001553CD	3498	Creature-0-4232-230-30316-9545-00011553CC	1312	Creature-0-4232-230-30316-9545-00019553CD	1858", -- [431]
-			"<19:47:05> <DEBUG>		Adding to self.lootSlotInfo	5	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-9547-00039553CC	4", -- [432]
-			"<19:47:05> <DEBUG>		Adding to self.lootSlotInfo	6	|cff0070dd|Hitem:11742::::::::48:70:::::::::|h[Wayfarer's Knapsack]|h|r	3	1	Creature-0-4232-230-30316-9543-00001553CA	1", -- [433]
-			"<19:47:05> <DEBUG>		Event:	LOOT_READY	true", -- [434]
-			"<19:47:05> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9554-00001553CD	3498	Creature-0-4232-230-30316-9545-00011553CC	1312	Creature-0-4232-230-30316-9545-00019553CD	1858", -- [435]
-			"<19:47:05> <DEBUG>		Adding to self.lootSlotInfo	5	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-9547-00039553CC	4", -- [436]
-			"<19:47:05> <DEBUG>		Adding to self.lootSlotInfo	6	|cff0070dd|Hitem:11742::::::::48:70:::::::::|h[Wayfarer's Knapsack]|h|r	3	1	Creature-0-4232-230-30316-9543-00001553CA	1", -- [437]
-			"<19:47:05> <DEBUG>		Event:	LOOT_READY	true", -- [438]
-			"<19:47:05> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9554-00001553CD	3498	Creature-0-4232-230-30316-9545-00011553CC	1312	Creature-0-4232-230-30316-9545-00019553CD	1858", -- [439]
-			"<19:47:05> <DEBUG>		Adding to self.lootSlotInfo	5	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-9547-00039553CC	4", -- [440]
-			"<19:47:05> <DEBUG>		Adding to self.lootSlotInfo	6	|cff0070dd|Hitem:11742::::::::48:70:::::::::|h[Wayfarer's Knapsack]|h|r	3	1	Creature-0-4232-230-30316-9543-00001553CA	1", -- [441]
-			"<19:47:05> <DEBUG>		Event:	LOOT_READY	true", -- [442]
-			"<19:47:05> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9554-00001553CD	3498	Creature-0-4232-230-30316-9545-00011553CC	1312	Creature-0-4232-230-30316-9545-00019553CD	1858", -- [443]
-			"<19:47:05> <DEBUG>		Adding to self.lootSlotInfo	5	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-9547-00039553CC	4", -- [444]
-			"<19:47:05> <DEBUG>		Adding to self.lootSlotInfo	6	|cff0070dd|Hitem:11742::::::::48:70:::::::::|h[Wayfarer's Knapsack]|h|r	3	1	Creature-0-4232-230-30316-9543-00001553CA	1", -- [445]
-			"<19:47:05> <DEBUG>		Event:	LOOT_READY	true", -- [446]
-			"<19:47:05> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9554-00001553CD	3498	Creature-0-4232-230-30316-9545-00011553CC	1312	Creature-0-4232-230-30316-9545-00019553CD	1858", -- [447]
-			"<19:47:05> <DEBUG>		Adding to self.lootSlotInfo	5	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-9547-00039553CC	4", -- [448]
-			"<19:47:05> <DEBUG>		Adding to self.lootSlotInfo	6	|cff0070dd|Hitem:11742::::::::48:70:::::::::|h[Wayfarer's Knapsack]|h|r	3	1	Creature-0-4232-230-30316-9543-00001553CA	1", -- [449]
-			"<19:47:05> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [450]
-			"<19:47:05> <DEBUG>		Event:	LOOT_READY	true", -- [451]
-			"<19:47:05> <DEBUG>		Adding to self.lootSlotInfo	5	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-9547-00039553CC	4", -- [452]
-			"<19:47:05> <DEBUG>		Adding to self.lootSlotInfo	6	|cff0070dd|Hitem:11742::::::::48:70:::::::::|h[Wayfarer's Knapsack]|h|r	3	1	Creature-0-4232-230-30316-9543-00001553CA	1", -- [453]
-			"<19:47:06> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11742::::::::48:70:::::::::||h[Wayfarer's Knapsack]||h||r	5", -- [454]
-			"<19:47:06> <DEBUG>		Found:	nil	nil	nil", -- [455]
-			"<19:47:07> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11742::::::::48:70:::::::::||h[Wayfarer's Knapsack]||h||r	5", -- [456]
-			"<19:47:07> <DEBUG>		Found:	nil	nil	nil", -- [457]
-			"<19:47:07> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:11742::::::::48:70:::::::::|h[Wayfarer's Knapsack]|h|r not found in bags", -- [458]
-			"<19:47:14> <DEBUG>		OnLootSlotCleared()	6	|cff0070dd|Hitem:11742::::::::48:70:::::::::|h[Wayfarer's Knapsack]|h|r	3", -- [459]
-			"<19:47:14> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	240	11742	|cff0070dd|Hitem:11742::::::::48:70:::::::::|h[Wayfarer's Knapsack]|h|r	1	Valmagus	PALADIN", -- [460]
-			"<19:47:14> <DEBUG>		Event:	LOOT_CLOSED", -- [461]
-			"<19:47:14> <DEBUG>		OnLootSlotCleared()	5	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0", -- [462]
-			"<19:47:14> <DEBUG>		Event:	LOOT_CLOSED", -- [463]
-			"<19:47:14> <Comm>		^1^Sl^T^N1^S9543^t^^	WHISPER	Valmagus-Zul'jin", -- [464]
-			"<19:47:16> <DEBUG>		Storage:New	|cff0070dd|Hitem:11742::::::::48:70:::::::::|h[Wayfarer's Knapsack]|h|r	temp", -- [465]
-			"<19:47:16> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11742::::::::48:70:::::::::||h[Wayfarer's Knapsack]||h||r	5", -- [466]
-			"<19:47:16> <DEBUG>		Found item at	2	1", -- [467]
-			"<19:47:16> <DEBUG>		Found:	2	1	0", -- [468]
-			"<19:47:17> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11742::::::::48:70:::::::::||h[Wayfarer's Knapsack]||h||r	5", -- [469]
-			"<19:47:17> <DEBUG>		Found item at	2	1", -- [470]
-			"<19:47:17> <DEBUG>		Found:	2	1	0", -- [471]
-			"<19:47:17> <Comm>		^1^Sn_t^T^N1^S|cff0070dd|Hitem:11742::::::::48:70:::::::::|h[Wayfarer's~`Knapsack]|h|r^N2^S9543^t^^	WHISPER	Valmagus-Zul'jin", -- [472]
-			"<19:47:23> <DEBUG>		Event:	LOOT_READY	true", -- [473]
-			"<19:47:23> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9547-00029553CB	1062", -- [474]
-			"<19:47:23> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-9547-00039553CC	4", -- [475]
-			"<19:47:23> <DEBUG>		Event:	LOOT_READY	true", -- [476]
-			"<19:47:23> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9547-00029553CB	1062", -- [477]
-			"<19:47:23> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-9547-00039553CC	4", -- [478]
-			"<19:47:23> <DEBUG>		Event:	LOOT_READY	true", -- [479]
-			"<19:47:23> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9547-00029553CB	1062", -- [480]
-			"<19:47:23> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-9547-00039553CC	4", -- [481]
-			"<19:47:23> <DEBUG>		Event:	LOOT_READY	true", -- [482]
-			"<19:47:23> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9547-00029553CB	1062", -- [483]
-			"<19:47:23> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-9547-00039553CC	4", -- [484]
-			"<19:47:23> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [485]
-			"<19:47:23> <DEBUG>		Event:	LOOT_READY	true", -- [486]
-			"<19:47:23> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-9547-00039553CC	4", -- [487]
-			"<19:47:33> <DEBUG>		Event:	LOOT_CLOSED", -- [488]
-			"<19:47:33> <DEBUG>		OnLootSlotCleared()	4	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0", -- [489]
-			"<19:47:33> <DEBUG>		Event:	LOOT_CLOSED", -- [490]
-			"<19:47:34> <Comm>		^1^Sl^T^N1^S9547^t^^	WHISPER	Valmagus-Zul'jin", -- [491]
-			"<19:47:35> <DEBUG>		Event:	LOOT_READY	true", -- [492]
-			"<19:47:35> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-9547-00039553CC	4", -- [493]
-			"<19:47:36> <DEBUG>		Event:	LOOT_READY	true", -- [494]
-			"<19:47:36> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-9547-00039553CC	4", -- [495]
-			"<19:47:36> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0", -- [496]
-			"<19:47:36> <DEBUG>		Event:	LOOT_CLOSED", -- [497]
-			"<19:47:36> <DEBUG>		Event:	LOOT_CLOSED", -- [498]
-			"<19:47:36> <Comm>		^1^Sl^T^N1^S9547^t^^	WHISPER	Valmagus-Zul'jin", -- [499]
-			"<19:47:36> <Comm>		^1^Sl^T^N1^S9547^t^^	WHISPER	Valmagus-Zul'jin", -- [500]
-			"<19:48:00> <DEBUG>		Event:	ENCOUNTER_START	238	Hurley Blackbreath	1	5", -- [501]
-			"<19:48:00> <INFO>		UpdatePlayersData()", -- [502]
-			"<19:48:01> <DEBUG>		Event:	ENCOUNTER_END	238	Hurley Blackbreath	1	5	1", -- [503]
-			"<19:48:04> <DEBUG>		Event:	LOOT_READY	true", -- [504]
-			"<19:48:04> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9537-00001557AA	76635	Creature-0-4232-230-30316-9541-00001557AA	3304	Creature-0-4232-230-30316-9541-00009557AA	2381	Creature-0-4232-230-30316-9541-00011557AA	7406", -- [505]
-			"<19:48:04> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:18044::::::::48:70::1:1:6710:1:28:201:::::|h[Hurley's Tankard]|h|r	3	1	Creature-0-4232-230-30316-9537-00001557AA	1", -- [506]
-			"<19:48:04> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:18044::::::::48:70::1:1:6710:1:28:201:::::|h[Hurley's Tankard]|h|r	3	1	Creature-0-4232-230-30316-9537-00001557AA	1", -- [507]
-			"<19:48:04> <DEBUG>		Adding to self.lootSlotInfo	5	|cff9d9d9d|Hitem:13822::::::::48:70::1:1:6657:1:28:201:::::|h[Spiked Dagger]|h|r	0	1	Creature-0-4232-230-30316-9537-00001557AA	1", -- [508]
-			"<19:48:04> <DEBUG>		OnLootSlotCleared()	5	|cff9d9d9d|Hitem:13822::::::::48:70::1:1:6657:1:28:201:::::|h[Spiked Dagger]|h|r	0", -- [509]
-			"<19:48:04> <DEBUG>		Event:	LOOT_READY	true", -- [510]
-			"<19:48:04> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9537-00001557AA	76635	Creature-0-4232-230-30316-9541-00001557AA	3304	Creature-0-4232-230-30316-9541-00009557AA	2381	Creature-0-4232-230-30316-9541-00011557AA	7406", -- [511]
-			"<19:48:04> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:18044::::::::48:70::1:1:6710:1:28:201:::::|h[Hurley's Tankard]|h|r	3	1	Creature-0-4232-230-30316-9537-00001557AA	1", -- [512]
-			"<19:48:04> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:18044::::::::48:70::1:1:6710:1:28:201:::::|h[Hurley's Tankard]|h|r	3	1	Creature-0-4232-230-30316-9537-00001557AA	1", -- [513]
-			"<19:48:04> <DEBUG>		OnLootSlotCleared()	3	|cff0070dd|Hitem:18044::::::::48:70::1:1:6710:1:28:201:::::|h[Hurley's Tankard]|h|r	3", -- [514]
-			"<19:48:05> <DEBUG>		OnLootSlotCleared()	2	|cff0070dd|Hitem:18044::::::::48:70::1:1:6710:1:28:201:::::|h[Hurley's Tankard]|h|r	3", -- [515]
-			"<19:48:05> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	238	18044	|cff0070dd|Hitem:18044::::::::48:70::1:1:6710:2:28:201:9:30:::::|h[Hurley's Tankard]|h|r	1	Valmagus	PALADIN", -- [516]
-			"<19:48:05> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	238	18044	|cff0070dd|Hitem:18044::::::::48:70::1:1:6710:2:28:201:9:30:::::|h[Hurley's Tankard]|h|r	1	Valmagus	PALADIN", -- [517]
-			"<19:48:05> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [518]
-			"<19:48:05> <DEBUG>		Event:	LOOT_CLOSED", -- [519]
-			"<19:48:05> <DEBUG>		Event:	LOOT_CLOSED", -- [520]
-			"<19:48:05> <Comm>		^1^Sl^T^N1^S9537^t^^	WHISPER	Valmagus-Zul'jin", -- [521]
-			"<19:48:05> <Comm>		^1^Sl^T^N1^S9537^t^^	WHISPER	Valmagus-Zul'jin", -- [522]
-			"<19:48:06> <DEBUG>		Storage:New	|cff0070dd|Hitem:18044::::::::48:70::1:1:6710:1:28:201:::::|h[Hurley's Tankard]|h|r	temp", -- [523]
-			"<19:48:06> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:18044::::::::48:70::1:1:6710:1:28:201:::::||h[Hurley's Tankard]||h||r	5", -- [524]
-			"<19:48:06> <DEBUG>		Found:	nil	nil	nil", -- [525]
-			"<19:48:07> <DEBUG>		Storage:New	|cff0070dd|Hitem:18044::::::::48:70::1:1:6710:1:28:201:::::|h[Hurley's Tankard]|h|r	temp", -- [526]
-			"<19:48:07> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:18044::::::::48:70::1:1:6710:1:28:201:::::||h[Hurley's Tankard]||h||r	5", -- [527]
-			"<19:48:07> <DEBUG>		Found:	nil	nil	nil", -- [528]
-			"<19:48:07> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:18044::::::::48:70::1:1:6710:1:28:201:::::||h[Hurley's Tankard]||h||r	5", -- [529]
-			"<19:48:07> <DEBUG>		Found:	nil	nil	nil", -- [530]
-			"<19:48:08> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:18044::::::::48:70::1:1:6710:1:28:201:::::||h[Hurley's Tankard]||h||r	5", -- [531]
-			"<19:48:08> <DEBUG>		Found:	nil	nil	nil", -- [532]
-			"<19:48:09> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:18044::::::::48:70::1:1:6710:1:28:201:::::||h[Hurley's Tankard]||h||r	5", -- [533]
-			"<19:48:09> <DEBUG>		Found:	nil	nil	nil", -- [534]
-			"<19:48:09> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:18044::::::::48:70::1:1:6710:1:28:201:::::||h[Hurley's Tankard]||h||r	5", -- [535]
-			"<19:48:09> <DEBUG>		Found:	nil	nil	nil", -- [536]
-			"<19:48:10> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:18044::::::::48:70::1:1:6710:1:28:201:::::||h[Hurley's Tankard]||h||r	5", -- [537]
-			"<19:48:10> <DEBUG>		Found:	nil	nil	nil", -- [538]
-			"<19:48:10> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:18044::::::::48:70::1:1:6710:1:28:201:::::|h[Hurley's Tankard]|h|r not found in bags", -- [539]
-			"<19:48:10> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:18044::::::::48:70::1:1:6710:1:28:201:::::||h[Hurley's Tankard]||h||r	5", -- [540]
-			"<19:48:10> <DEBUG>		Found:	nil	nil	nil", -- [541]
-			"<19:48:10> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:18044::::::::48:70::1:1:6710:1:28:201:::::|h[Hurley's Tankard]|h|r not found in bags", -- [542]
-			"<19:48:31> <DEBUG>		Event:	LOOT_READY	true", -- [543]
-			"<19:48:31> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-8911-000015577B	4", -- [544]
-			"<19:48:31> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0", -- [545]
-			"<19:48:31> <DEBUG>		Event:	LOOT_CLOSED", -- [546]
-			"<19:48:31> <DEBUG>		Event:	LOOT_CLOSED", -- [547]
-			"<19:48:31> <Comm>		^1^Sl^T^N1^S8911^t^^	WHISPER	Valmagus-Zul'jin", -- [548]
-			"<19:48:31> <Comm>		^1^Sl^T^N1^S8911^t^^	WHISPER	Valmagus-Zul'jin", -- [549]
-			"<19:48:32> <DEBUG>		Event:	LOOT_READY	true", -- [550]
-			"<19:48:32> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8895-000015577B	6001	Creature-0-4232-230-30316-9554-00029553CC	5663", -- [551]
-			"<19:48:32> <DEBUG>		Adding to self.lootSlotInfo	3	|cffffffff|Hitem:11078::::::::48:70:::::::::|h[Relic Coffer Key]|h|r	1	1	Creature-0-4232-230-30316-9554-00029553CC	1", -- [552]
-			"<19:48:32> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	3	Creature-0-4232-230-30316-9554-00029553CC	3", -- [553]
-			"<19:48:32> <DEBUG>		OnLootSlotCleared()	4	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0", -- [554]
-			"<19:48:32> <DEBUG>		OnLootSlotCleared()	3	|cffffffff|Hitem:11078::::::::48:70:::::::::|h[Relic Coffer Key]|h|r	1", -- [555]
-			"<19:48:32> <DEBUG>		Event:	LOOT_READY	true", -- [556]
-			"<19:48:32> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8895-000015577B	6001	Creature-0-4232-230-30316-9554-00029553CC	5663", -- [557]
-			"<19:48:32> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [558]
-			"<19:48:32> <DEBUG>		Event:	LOOT_CLOSED", -- [559]
-			"<19:48:32> <DEBUG>		Event:	LOOT_CLOSED", -- [560]
-			"<19:48:33> <Comm>		^1^Sl^T^N1^S8895^t^^	WHISPER	Valmagus-Zul'jin", -- [561]
-			"<19:48:33> <Comm>		^1^Sl^T^N1^S8895^t^^	WHISPER	Valmagus-Zul'jin", -- [562]
-			"<19:48:34> <DEBUG>		Event:	LOOT_READY	true", -- [563]
-			"<19:48:34> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9554-00019553CC	3201	Creature-0-4232-230-30316-8895-000095577B	2474	Creature-0-4232-230-30316-9545-00001553CC	640	Creature-0-4232-230-30316-9554-00001553CB	2902	Creature-0-4232-230-30316-9554-00001553CC	10848	Creature-0-4232-230-30316-9554-00009553CC	3803", -- [564]
-			"<19:48:34> <DEBUG>		Adding to self.lootSlotInfo	3	|cffffffff|Hitem:11078::::::::48:70:::::::::|h[Relic Coffer Key]|h|r	1	1	Creature-0-4232-230-30316-8895-000095577B	1", -- [565]
-			"<19:48:34> <DEBUG>		Adding to self.lootSlotInfo	6	|cff9d9d9d|Hitem:13816::::::::48:70::1:1:6657:1:28:201:::::|h[Fine Longsword]|h|r	0	1	Creature-0-4232-230-30316-9554-00001553CB	1", -- [566]
-			"<19:48:34> <DEBUG>		OnLootSlotCleared()	6	|cff9d9d9d|Hitem:13816::::::::48:70::1:1:6657:1:28:201:::::|h[Fine Longsword]|h|r	0", -- [567]
-			"<19:48:34> <DEBUG>		Event:	LOOT_READY	true", -- [568]
-			"<19:48:34> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9554-00019553CC	3201	Creature-0-4232-230-30316-8895-000095577B	2474	Creature-0-4232-230-30316-9545-00001553CC	640	Creature-0-4232-230-30316-9554-00001553CB	2902	Creature-0-4232-230-30316-9554-00001553CC	10848	Creature-0-4232-230-30316-9554-00009553CC	3803", -- [569]
-			"<19:48:34> <DEBUG>		Adding to self.lootSlotInfo	3	|cffffffff|Hitem:11078::::::::48:70:::::::::|h[Relic Coffer Key]|h|r	1	1	Creature-0-4232-230-30316-8895-000095577B	1", -- [570]
-			"<19:48:34> <DEBUG>		OnLootSlotCleared()	3	|cffffffff|Hitem:11078::::::::48:70:::::::::|h[Relic Coffer Key]|h|r	1", -- [571]
-			"<19:48:34> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [572]
-			"<19:48:34> <DEBUG>		Event:	LOOT_CLOSED", -- [573]
-			"<19:48:34> <DEBUG>		Event:	LOOT_CLOSED", -- [574]
-			"<19:48:35> <Comm>		^1^Sl^T^N1^S8895^t^^	WHISPER	Valmagus-Zul'jin", -- [575]
-			"<19:48:35> <Comm>		^1^Sl^T^N1^S8895^t^^	WHISPER	Valmagus-Zul'jin", -- [576]
-			"<19:48:40> <DEBUG>		Event:	LOOT_READY	true", -- [577]
-			"<19:48:40> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9545-00009553CC	1339	Creature-0-4232-230-30316-9545-00009553CA	1370	Creature-0-4232-230-30316-9545-00019553CC	2734	Creature-0-4232-230-30316-9545-00021553CB	700	Creature-0-4232-230-30316-9545-00031553CB	1086	Creature-0-4232-230-30316-9545-00039553CC	2023	Creature-0-4232-230-30316-9547-00001553CA	2762	Creature-0-4232-230-30316-9547-00051553CC	2424", -- [578]
-			"<19:48:40> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	3	Creature-0-4232-230-30316-9545-00031553CB	3", -- [579]
-			"<19:48:40> <DEBUG>		OnLootSlotCleared()	4	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0", -- [580]
-			"<19:48:41> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [581]
-			"<19:48:41> <DEBUG>		Event:	LOOT_CLOSED", -- [582]
-			"<19:48:41> <DEBUG>		Event:	LOOT_CLOSED", -- [583]
-			"<19:48:41> <Comm>		^1^Sl^T^N1^S9545^t^^	WHISPER	Valmagus-Zul'jin", -- [584]
-			"<19:48:41> <Comm>		^1^Sl^T^N1^S9545^t^^	WHISPER	Valmagus-Zul'jin", -- [585]
-			"<19:48:46> <DEBUG>		Event:	LOOT_READY	true", -- [586]
-			"<19:48:46> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9547-00009553CB	1839	Creature-0-4232-230-30316-9545-00001553CA	2981	Creature-0-4232-230-30316-9545-00009553CD	1418	Creature-0-4232-230-30316-9547-00021553CC	767	Creature-0-4232-230-30316-9547-00031553CB	3381", -- [587]
-			"<19:48:46> <DEBUG>		Adding to self.lootSlotInfo	5	|cff9d9d9d|Hitem:4001::::::::48:70::1:1:6656:1:28:201:::::|h[Overlinked Chain Boots]|h|r	0	1	Creature-0-4232-230-30316-9545-00001553CA	1", -- [588]
-			"<19:48:46> <DEBUG>		OnLootSlotCleared()	5	|cff9d9d9d|Hitem:4001::::::::48:70::1:1:6656:1:28:201:::::|h[Overlinked Chain Boots]|h|r	0", -- [589]
-			"<19:48:46> <DEBUG>		Event:	LOOT_READY	true", -- [590]
-			"<19:48:46> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9547-00009553CB	1839	Creature-0-4232-230-30316-9545-00001553CA	2981	Creature-0-4232-230-30316-9545-00009553CD	1418	Creature-0-4232-230-30316-9547-00021553CC	767	Creature-0-4232-230-30316-9547-00031553CB	3381", -- [591]
-			"<19:48:46> <DEBUG>		Event:	LOOT_CLOSED", -- [592]
-			"<19:48:46> <Comm>		^1^Sl^T^N1^S9547^t^^	WHISPER	Valmagus-Zul'jin", -- [593]
-			"<19:51:15> <DEBUG>		Event:	LOOT_READY	true", -- [594]
-			"<19:51:15> <DEBUG>		Event:	LOOT_READY	true", -- [595]
-			"<19:51:15> <DEBUG>		Event:	LOOT_CLOSED", -- [596]
-			"<19:51:15> <DEBUG>		Event:	LOOT_CLOSED", -- [597]
-			"<19:51:16> <DEBUG>		Event:	LOOT_READY	true", -- [598]
-			"<19:51:16> <DEBUG>		Event:	LOOT_CLOSED", -- [599]
-			"<19:51:16> <DEBUG>		Event:	LOOT_CLOSED", -- [600]
-			"<19:51:17> <DEBUG>		Event:	LOOT_READY	true", -- [601]
-			"<19:51:17> <DEBUG>		Event:	LOOT_CLOSED", -- [602]
-			"<19:51:17> <DEBUG>		Event:	LOOT_CLOSED", -- [603]
-			"<19:51:20> <DEBUG>		Event:	LOOT_READY	true", -- [604]
-			"<19:51:20> <DEBUG>		Event:	LOOT_CLOSED", -- [605]
-			"<19:51:20> <DEBUG>		Event:	LOOT_CLOSED", -- [606]
-			"<19:51:23> <DEBUG>		Event:	LOOT_READY	true", -- [607]
-			"<19:51:23> <DEBUG>		Event:	LOOT_CLOSED", -- [608]
-			"<19:51:23> <DEBUG>		Event:	LOOT_CLOSED", -- [609]
-			"<19:51:24> <DEBUG>		Event:	LOOT_READY	true", -- [610]
-			"<19:51:24> <DEBUG>		Event:	LOOT_CLOSED", -- [611]
-			"<19:51:24> <DEBUG>		Event:	LOOT_CLOSED", -- [612]
-			"<19:51:48> <DEBUG>		Event:	ENCOUNTER_START	241	Plugger Spazzring	1	5", -- [613]
-			"<19:51:48> <INFO>		UpdatePlayersData()", -- [614]
-			"<19:51:48> <DEBUG>		Event:	ENCOUNTER_END	241	Plugger Spazzring	1	5	1", -- [615]
-			"<19:51:50> <DEBUG>		Event:	LOOT_READY	true", -- [616]
-			"<19:51:50> <DEBUG>		Event:	LOOT_CLOSED", -- [617]
-			"<19:51:50> <DEBUG>		Event:	LOOT_CLOSED", -- [618]
-			"<19:51:56> <DEBUG>		Event:	LOOT_READY	true", -- [619]
-			"<19:51:56> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9547-00001553CD	2975	Creature-0-4232-230-30316-9545-00051553CC	1065	Creature-0-4232-230-30316-9547-00009553CC	489	Creature-0-4232-230-30316-9547-00019553CB	1331	Creature-0-4232-230-30316-9499-00001553CA	70893", -- [620]
-			"<19:51:56> <DEBUG>		Adding to self.lootSlotInfo	4	|cff0070dd|Hitem:151410::::::::48:70::1:1:6710:1:28:201:::::|h[Bottle-Popper Ring]|h|r	3	1	Creature-0-4232-230-30316-9499-00001553CA	1", -- [621]
-			"<19:51:56> <DEBUG>		Adding to self.lootSlotInfo	5	|cff0070dd|Hitem:12793::::::::48:70::1:1:6710:1:28:201:::::|h[Mixologist's Tunic]|h|r	3	1	Creature-0-4232-230-30316-9499-00001553CA	1", -- [622]
-			"<19:51:56> <DEBUG>		OnLootSlotCleared()	5	|cff0070dd|Hitem:12793::::::::48:70::1:1:6710:1:28:201:::::|h[Mixologist's Tunic]|h|r	3", -- [623]
-			"<19:51:56> <DEBUG>		Event:	LOOT_READY	true", -- [624]
-			"<19:51:56> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9547-00001553CD	2975	Creature-0-4232-230-30316-9545-00051553CC	1065	Creature-0-4232-230-30316-9547-00009553CC	489	Creature-0-4232-230-30316-9547-00019553CB	1331	Creature-0-4232-230-30316-9499-00001553CA	70893", -- [625]
-			"<19:51:56> <DEBUG>		Adding to self.lootSlotInfo	4	|cff0070dd|Hitem:151410::::::::48:70::1:1:6710:1:28:201:::::|h[Bottle-Popper Ring]|h|r	3	1	Creature-0-4232-230-30316-9499-00001553CA	1", -- [626]
-			"<19:51:56> <DEBUG>		OnLootSlotCleared()	4	|cff0070dd|Hitem:151410::::::::48:70::1:1:6710:1:28:201:::::|h[Bottle-Popper Ring]|h|r	3", -- [627]
-			"<19:51:56> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	241	12793	|cff0070dd|Hitem:12793::::::::48:70::1:1:6710:2:28:201:9:30:::::|h[Mixologist's Tunic]|h|r	1	Valmagus	PALADIN", -- [628]
-			"<19:51:56> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	241	151410	|cff0070dd|Hitem:151410::::::::48:70::1:1:6710:2:28:201:9:30:::::|h[Bottle-Popper Ring]|h|r	1	Valmagus	PALADIN", -- [629]
-			"<19:51:56> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [630]
-			"<19:51:56> <DEBUG>		Event:	LOOT_CLOSED", -- [631]
-			"<19:51:56> <DEBUG>		Event:	LOOT_CLOSED", -- [632]
-			"<19:51:57> <Comm>		^1^Sl^T^N1^S9499^t^^	WHISPER	Valmagus-Zul'jin", -- [633]
-			"<19:51:57> <Comm>		^1^Sl^T^N1^S9499^t^^	WHISPER	Valmagus-Zul'jin", -- [634]
-			"<19:51:58> <DEBUG>		Storage:New	|cff0070dd|Hitem:12793::::::::48:70::1:1:6710:1:28:201:::::|h[Mixologist's Tunic]|h|r	temp", -- [635]
-			"<19:51:58> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:12793::::::::48:70::1:1:6710:1:28:201:::::||h[Mixologist's Tunic]||h||r	5", -- [636]
-			"<19:51:58> <DEBUG>		Found:	nil	nil	nil", -- [637]
-			"<19:51:58> <DEBUG>		Storage:New	|cff0070dd|Hitem:151410::::::::48:70::1:1:6710:1:28:201:::::|h[Bottle-Popper Ring]|h|r	temp", -- [638]
-			"<19:51:58> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:151410::::::::48:70::1:1:6710:1:28:201:::::||h[Bottle-Popper Ring]||h||r	5", -- [639]
-			"<19:51:58> <DEBUG>		Found:	nil	nil	nil", -- [640]
-			"<19:51:59> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:12793::::::::48:70::1:1:6710:1:28:201:::::||h[Mixologist's Tunic]||h||r	5", -- [641]
-			"<19:51:59> <DEBUG>		Found:	nil	nil	nil", -- [642]
-			"<19:51:59> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:151410::::::::48:70::1:1:6710:1:28:201:::::||h[Bottle-Popper Ring]||h||r	5", -- [643]
-			"<19:51:59> <DEBUG>		Found:	nil	nil	nil", -- [644]
-			"<19:52:00> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:12793::::::::48:70::1:1:6710:1:28:201:::::||h[Mixologist's Tunic]||h||r	5", -- [645]
-			"<19:52:00> <DEBUG>		Found:	nil	nil	nil", -- [646]
-			"<19:52:00> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:151410::::::::48:70::1:1:6710:1:28:201:::::||h[Bottle-Popper Ring]||h||r	5", -- [647]
-			"<19:52:00> <DEBUG>		Found:	nil	nil	nil", -- [648]
-			"<19:52:01> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:12793::::::::48:70::1:1:6710:1:28:201:::::||h[Mixologist's Tunic]||h||r	5", -- [649]
-			"<19:52:01> <DEBUG>		Found:	nil	nil	nil", -- [650]
-			"<19:52:01> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:12793::::::::48:70::1:1:6710:1:28:201:::::|h[Mixologist's Tunic]|h|r not found in bags", -- [651]
-			"<19:52:01> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:151410::::::::48:70::1:1:6710:1:28:201:::::||h[Bottle-Popper Ring]||h||r	5", -- [652]
-			"<19:52:01> <DEBUG>		Found:	nil	nil	nil", -- [653]
-			"<19:52:01> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:151410::::::::48:70::1:1:6710:1:28:201:::::|h[Bottle-Popper Ring]|h|r not found in bags", -- [654]
-			"<19:52:04> <DEBUG>		Event:	LOOT_READY	true", -- [655]
-			"<19:52:04> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9545-00009553CB	1560	Creature-0-4232-230-30316-9545-00019553CB	1002	Creature-0-4232-230-30316-9545-00049553CC	1383	Creature-0-4232-230-30316-9547-00009553CA	458	Creature-0-4232-230-30316-9547-00011553CC	2952	Creature-0-4232-230-30316-9547-00031553CC	676	Creature-0-4232-230-30316-9547-00049553CC	1451", -- [656]
-			"<19:52:04> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	8	Creature-0-4232-230-30316-9545-00019553CB	4	Creature-0-4232-230-30316-9547-00011553CC	4", -- [657]
-			"<19:52:04> <DEBUG>		Event:	LOOT_READY	true", -- [658]
-			"<19:52:04> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9545-00009553CB	1560	Creature-0-4232-230-30316-9545-00019553CB	1002	Creature-0-4232-230-30316-9545-00049553CC	1383	Creature-0-4232-230-30316-9547-00009553CA	458	Creature-0-4232-230-30316-9547-00011553CC	2952	Creature-0-4232-230-30316-9547-00031553CC	676	Creature-0-4232-230-30316-9547-00049553CC	1451", -- [659]
-			"<19:52:04> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	8	Creature-0-4232-230-30316-9545-00019553CB	4	Creature-0-4232-230-30316-9547-00011553CC	4", -- [660]
-			"<19:52:05> <DEBUG>		OnLootSlotCleared()	3	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0", -- [661]
-			"<19:52:05> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [662]
-			"<19:52:05> <DEBUG>		Event:	LOOT_CLOSED", -- [663]
-			"<19:52:05> <DEBUG>		Event:	LOOT_CLOSED", -- [664]
-			"<19:52:05> <Comm>		^1^Sl^T^N1^S9545^t^^	WHISPER	Valmagus-Zul'jin", -- [665]
-			"<19:52:05> <Comm>		^1^Sl^T^N1^S9545^t^^	WHISPER	Valmagus-Zul'jin", -- [666]
-			"<19:52:07> <DEBUG>		Event:	ENCOUNTER_START	239	Phalanx	1	5", -- [667]
-			"<19:52:07> <INFO>		UpdatePlayersData()", -- [668]
-			"<19:52:07> <DEBUG>		Event:	ENCOUNTER_END	239	Phalanx	1	5	1", -- [669]
-			"<19:52:08> <DEBUG>		Event:	LOOT_READY	true", -- [670]
-			"<19:52:08> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9502-00001553CA	76037", -- [671]
-			"<19:52:08> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	3	Creature-0-4232-230-30316-9502-00001553CA	3", -- [672]
-			"<19:52:08> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:151409::::::::48:70::1:1:6710:1:28:201:::::|h[Ferrous Cord]|h|r	3	1	Creature-0-4232-230-30316-9502-00001553CA	1", -- [673]
-			"<19:52:08> <DEBUG>		Event:	LOOT_READY	true", -- [674]
-			"<19:52:08> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9502-00001553CA	76037", -- [675]
-			"<19:52:08> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	3	Creature-0-4232-230-30316-9502-00001553CA	3", -- [676]
-			"<19:52:08> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:151409::::::::48:70::1:1:6710:1:28:201:::::|h[Ferrous Cord]|h|r	3	1	Creature-0-4232-230-30316-9502-00001553CA	1", -- [677]
-			"<19:52:08> <DEBUG>		Adding to self.lootSlotInfo	4	|cff0070dd|Hitem:151409::::::::48:70::1:1:6710:1:28:201:::::|h[Ferrous Cord]|h|r	3	1	Creature-0-4232-230-30316-9502-00001553CA	1", -- [678]
-			"<19:52:08> <DEBUG>		OnLootSlotCleared()	3	|cff0070dd|Hitem:151409::::::::48:70::1:1:6710:1:28:201:::::|h[Ferrous Cord]|h|r	3", -- [679]
-			"<19:52:08> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0", -- [680]
-			"<19:52:08> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	239	151409	|cff0070dd|Hitem:151409::::::::48:70::1:1:6710:2:28:201:9:30:::::|h[Ferrous Cord]|h|r	1	Valmagus	PALADIN", -- [681]
-			"<19:52:08> <DEBUG>		Event:	LOOT_READY	true", -- [682]
-			"<19:52:08> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9502-00001553CA	76037", -- [683]
-			"<19:52:08> <DEBUG>		Adding to self.lootSlotInfo	4	|cff0070dd|Hitem:151409::::::::48:70::1:1:6710:1:28:201:::::|h[Ferrous Cord]|h|r	3	1	Creature-0-4232-230-30316-9502-00001553CA	1", -- [684]
-			"<19:52:08> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [685]
-			"<19:52:09> <DEBUG>		OnLootSlotCleared()	4	|cff0070dd|Hitem:151409::::::::48:70::1:1:6710:1:28:201:::::|h[Ferrous Cord]|h|r	3", -- [686]
-			"<19:52:09> <DEBUG>		Event:	LOOT_CLOSED", -- [687]
-			"<19:52:09> <DEBUG>		Event:	LOOT_CLOSED", -- [688]
-			"<19:52:09> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	239	151409	|cff0070dd|Hitem:151409::::::::48:70::1:1:6710:2:28:201:9:30:::::|h[Ferrous Cord]|h|r	1	Valmagus	PALADIN", -- [689]
-			"<19:52:09> <Comm>		^1^Sl^T^N1^S9502^t^^	WHISPER	Valmagus-Zul'jin", -- [690]
-			"<19:52:09> <Comm>		^1^Sl^T^N1^S9502^t^^	WHISPER	Valmagus-Zul'jin", -- [691]
-			"<19:52:10> <DEBUG>		Storage:New	|cff0070dd|Hitem:151409::::::::48:70::1:1:6710:1:28:201:::::|h[Ferrous Cord]|h|r	temp", -- [692]
-			"<19:52:10> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:151409::::::::48:70::1:1:6710:1:28:201:::::||h[Ferrous Cord]||h||r	5", -- [693]
-			"<19:52:10> <DEBUG>		Found:	nil	nil	nil", -- [694]
-			"<19:52:11> <DEBUG>		Storage:New	|cff0070dd|Hitem:151409::::::::48:70::1:1:6710:1:28:201:::::|h[Ferrous Cord]|h|r	temp", -- [695]
-			"<19:52:11> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:151409::::::::48:70::1:1:6710:1:28:201:::::||h[Ferrous Cord]||h||r	5", -- [696]
-			"<19:52:11> <DEBUG>		Found:	nil	nil	nil", -- [697]
-			"<19:52:11> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:151409::::::::48:70::1:1:6710:1:28:201:::::||h[Ferrous Cord]||h||r	5", -- [698]
-			"<19:52:11> <DEBUG>		Found:	nil	nil	nil", -- [699]
-			"<19:52:12> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:151409::::::::48:70::1:1:6710:1:28:201:::::||h[Ferrous Cord]||h||r	5", -- [700]
-			"<19:52:12> <DEBUG>		Found:	nil	nil	nil", -- [701]
-			"<19:52:12> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:151409::::::::48:70::1:1:6710:1:28:201:::::||h[Ferrous Cord]||h||r	5", -- [702]
-			"<19:52:12> <DEBUG>		Found:	nil	nil	nil", -- [703]
-			"<19:52:13> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:151409::::::::48:70::1:1:6710:1:28:201:::::||h[Ferrous Cord]||h||r	5", -- [704]
-			"<19:52:13> <DEBUG>		Found:	nil	nil	nil", -- [705]
-			"<19:52:13> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:151409::::::::48:70::1:1:6710:1:28:201:::::||h[Ferrous Cord]||h||r	5", -- [706]
-			"<19:52:13> <DEBUG>		Found:	nil	nil	nil", -- [707]
-			"<19:52:13> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:151409::::::::48:70::1:1:6710:1:28:201:::::|h[Ferrous Cord]|h|r not found in bags", -- [708]
-			"<19:52:14> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:151409::::::::48:70::1:1:6710:1:28:201:::::||h[Ferrous Cord]||h||r	5", -- [709]
-			"<19:52:14> <DEBUG>		Found:	nil	nil	nil", -- [710]
-			"<19:52:14> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:151409::::::::48:70::1:1:6710:1:28:201:::::|h[Ferrous Cord]|h|r not found in bags", -- [711]
-			"<19:56:42> <DEBUG>		Event:	LOOT_READY	true", -- [712]
-			"<19:56:42> <DEBUG>		Adding to self.lootSlotInfo	2	nil	1	0	Creature-0-4232-230-30316-8898-00021553CA	2971	Creature-0-4232-230-30316-8900-00081553CA	829	Creature-0-4232-230-30316-8900-00089553CA	2822	Creature-0-4232-230-30316-8902-00021553CA	1196	Creature-0-4232-230-30316-8902-00029553CA	1631", -- [713]
-			"<19:56:42> <DEBUG>		OnLootSlotCleared()	2	nil	1", -- [714]
-			"<19:56:42> <DEBUG>		Event:	LOOT_READY	true", -- [715]
-			"<19:56:42> <DEBUG>		Event:	LOOT_CLOSED", -- [716]
-			"<19:56:42> <DEBUG>		Event:	LOOT_CLOSED", -- [717]
-			"<19:57:02> <DEBUG>		Event:	ENCOUNTER_START	242	Ambassador Flamelash	1	5", -- [718]
-			"<19:57:02> <INFO>		UpdatePlayersData()", -- [719]
-			"<19:57:02> <DEBUG>		Event:	ENCOUNTER_END	242	Ambassador Flamelash	1	5	1", -- [720]
-			"<19:57:05> <DEBUG>		Event:	LOOT_READY	true", -- [721]
-			"<19:57:05> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9156-00001553CA	74948", -- [722]
-			"<19:57:05> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:11812::::::::48:70::1:1:6710:1:28:201:::::|h[Cape of the Fire Salamander]|h|r	3	1	Creature-0-4232-230-30316-9156-00001553CA	1", -- [723]
-			"<19:57:05> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:11809::::::::48:70::1:1:6710:1:28:201:::::|h[Flame Wrath]|h|r	3	1	Creature-0-4232-230-30316-9156-00001553CA	1", -- [724]
-			"<19:57:05> <DEBUG>		OnLootSlotCleared()	3	|cff0070dd|Hitem:11809::::::::48:70::1:1:6710:1:28:201:::::|h[Flame Wrath]|h|r	3", -- [725]
-			"<19:57:05> <DEBUG>		OnLootSlotCleared()	2	|cff0070dd|Hitem:11812::::::::48:70::1:1:6710:1:28:201:::::|h[Cape of the Fire Salamander]|h|r	3", -- [726]
-			"<19:57:05> <DEBUG>		Event:	LOOT_READY	true", -- [727]
-			"<19:57:05> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9156-00001553CA	74948", -- [728]
-			"<19:57:05> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	242	11809	|cff0070dd|Hitem:11809::::::::48:70::1:1:6710:2:28:201:9:30:::::|h[Flame Wrath]|h|r	1	Valmagus	PALADIN", -- [729]
-			"<19:57:05> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	242	11812	|cff0070dd|Hitem:11812::::::::48:70::1:1:6710:2:28:201:9:30:::::|h[Cape of the Fire Salamander]|h|r	1	Valmagus	PALADIN", -- [730]
-			"<19:57:05> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [731]
-			"<19:57:05> <DEBUG>		Event:	LOOT_CLOSED", -- [732]
-			"<19:57:05> <DEBUG>		Event:	LOOT_CLOSED", -- [733]
-			"<19:57:05> <Comm>		^1^Sl^T^N1^S9156^t^^	WHISPER	Valmagus-Zul'jin", -- [734]
-			"<19:57:05> <Comm>		^1^Sl^T^N1^S9156^t^^	WHISPER	Valmagus-Zul'jin", -- [735]
-			"<19:57:07> <DEBUG>		Storage:New	|cff0070dd|Hitem:11809::::::::48:70::1:1:6710:1:28:201:::::|h[Flame Wrath]|h|r	temp", -- [736]
-			"<19:57:07> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11809::::::::48:70::1:1:6710:1:28:201:::::||h[Flame Wrath]||h||r	5", -- [737]
-			"<19:57:07> <DEBUG>		Found:	nil	nil	nil", -- [738]
-			"<19:57:07> <DEBUG>		Storage:New	|cff0070dd|Hitem:11812::::::::48:70::1:1:6710:1:28:201:::::|h[Cape of the Fire Salamander]|h|r	temp", -- [739]
-			"<19:57:07> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11812::::::::48:70::1:1:6710:1:28:201:::::||h[Cape of the Fire Salamander]||h||r	5", -- [740]
-			"<19:57:07> <DEBUG>		Found:	nil	nil	nil", -- [741]
-			"<19:57:08> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11809::::::::48:70::1:1:6710:1:28:201:::::||h[Flame Wrath]||h||r	5", -- [742]
-			"<19:57:08> <DEBUG>		Found:	nil	nil	nil", -- [743]
-			"<19:57:08> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11812::::::::48:70::1:1:6710:1:28:201:::::||h[Cape of the Fire Salamander]||h||r	5", -- [744]
-			"<19:57:08> <DEBUG>		Found:	nil	nil	nil", -- [745]
-			"<19:57:09> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11809::::::::48:70::1:1:6710:1:28:201:::::||h[Flame Wrath]||h||r	5", -- [746]
-			"<19:57:09> <DEBUG>		Found:	nil	nil	nil", -- [747]
-			"<19:57:09> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11812::::::::48:70::1:1:6710:1:28:201:::::||h[Cape of the Fire Salamander]||h||r	5", -- [748]
-			"<19:57:09> <DEBUG>		Found:	nil	nil	nil", -- [749]
-			"<19:57:10> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11809::::::::48:70::1:1:6710:1:28:201:::::||h[Flame Wrath]||h||r	5", -- [750]
-			"<19:57:10> <DEBUG>		Found:	nil	nil	nil", -- [751]
-			"<19:57:10> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:11809::::::::48:70::1:1:6710:1:28:201:::::|h[Flame Wrath]|h|r not found in bags", -- [752]
-			"<19:57:10> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11812::::::::48:70::1:1:6710:1:28:201:::::||h[Cape of the Fire Salamander]||h||r	5", -- [753]
-			"<19:57:10> <DEBUG>		Found:	nil	nil	nil", -- [754]
-			"<19:57:10> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:11812::::::::48:70::1:1:6710:1:28:201:::::|h[Cape of the Fire Salamander]|h|r not found in bags", -- [755]
-			"<19:57:19> <DEBUG>		Event:	LOOT_READY	true", -- [756]
-			"<19:57:19> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8908-00029553CA	3253", -- [757]
-			"<19:57:19> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [758]
-			"<19:57:19> <DEBUG>		Event:	LOOT_CLOSED", -- [759]
-			"<19:57:19> <DEBUG>		Event:	LOOT_CLOSED", -- [760]
-			"<19:57:20> <Comm>		^1^Sl^T^N1^S8908^t^^	WHISPER	Valmagus-Zul'jin", -- [761]
-			"<19:57:20> <Comm>		^1^Sl^T^N1^S8908^t^^	WHISPER	Valmagus-Zul'jin", -- [762]
-			"<19:57:23> <DEBUG>		Event:	LOOT_READY	true", -- [763]
-			"<19:57:23> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8908-00021553CA	2509	Creature-0-4232-230-30316-8900-00001553CA	1325	Creature-0-4232-230-30316-8900-00009553CA	3650	Creature-0-4232-230-30316-8900-00011553CA	2172", -- [764]
-			"<19:57:23> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-8908-00021553CA	4", -- [765]
-			"<19:57:23> <DEBUG>		Adding to self.lootSlotInfo	5	|cff9d9d9d|Hitem:62519::::::::48:70:::::::::|h[Keening Stone]|h|r	0	1	Creature-0-4232-230-30316-8908-00021553CA	1", -- [766]
-			"<19:57:24> <DEBUG>		OnLootSlotCleared()	5	|cff9d9d9d|Hitem:62519::::::::48:70:::::::::|h[Keening Stone]|h|r	0", -- [767]
-			"<19:57:24> <DEBUG>		Event:	LOOT_READY	true", -- [768]
-			"<19:57:24> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8908-00021553CA	2509	Creature-0-4232-230-30316-8900-00001553CA	1325	Creature-0-4232-230-30316-8900-00009553CA	3650	Creature-0-4232-230-30316-8900-00011553CA	2172", -- [769]
-			"<19:57:24> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-8908-00021553CA	4", -- [770]
-			"<19:57:24> <DEBUG>		Event:	LOOT_CLOSED", -- [771]
-			"<19:57:24> <DEBUG>		OnLootSlotCleared()	3	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0", -- [772]
-			"<19:57:24> <DEBUG>		Event:	LOOT_CLOSED", -- [773]
-			"<19:57:24> <Comm>		^1^Sl^T^N1^S8908^t^^	WHISPER	Valmagus-Zul'jin", -- [774]
-			"<19:57:32> <DEBUG>		Event:	LOOT_READY	true", -- [775]
-			"<19:57:32> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8908-00011553CA	9505	Creature-0-4232-230-30316-8900-00031553CA	1163	Creature-0-4232-230-30316-8900-00039553CA	2298	Creature-0-4232-230-30316-8900-00041553CA	1273", -- [776]
-			"<19:57:32> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [777]
-			"<19:57:32> <DEBUG>		Event:	LOOT_CLOSED", -- [778]
-			"<19:57:32> <DEBUG>		Event:	LOOT_CLOSED", -- [779]
-			"<19:57:32> <Comm>		^1^Sl^T^N1^S8908^t^^	WHISPER	Valmagus-Zul'jin", -- [780]
-			"<19:57:32> <Comm>		^1^Sl^T^N1^S8908^t^^	WHISPER	Valmagus-Zul'jin", -- [781]
-			"<19:57:40> <DEBUG>		Event:	LOOT_READY	true", -- [782]
-			"<19:57:40> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8908-00001553CA	9915	Creature-0-4232-230-30316-8900-00049553CA	1948	Creature-0-4232-230-30316-8900-00051553CA	799	Creature-0-4232-230-30316-8900-00059553CA	2134", -- [783]
-			"<19:57:40> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	2	Creature-0-4232-230-30316-8900-00051553CA	2", -- [784]
-			"<19:57:40> <DEBUG>		OnLootSlotCleared()	3	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0", -- [785]
-			"<19:57:40> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [786]
-			"<19:57:40> <DEBUG>		Event:	LOOT_CLOSED", -- [787]
-			"<19:57:40> <DEBUG>		Event:	LOOT_CLOSED", -- [788]
-			"<19:57:40> <Comm>		^1^Sl^T^N1^S8900^t^^	WHISPER	Valmagus-Zul'jin", -- [789]
-			"<19:57:40> <Comm>		^1^Sl^T^N1^S8900^t^^	WHISPER	Valmagus-Zul'jin", -- [790]
-			"<19:58:19> <DEBUG>		Event:	ENCOUNTER_START	243	The Seven	1	5", -- [791]
-			"<19:58:19> <INFO>		UpdatePlayersData()", -- [792]
-			"<19:58:42> <DEBUG>		Event:	ENCOUNTER_END	243	The Seven	1	5	1", -- [793]
-			"<19:58:56> <DEBUG>		Event:	LOOT_READY	true", -- [794]
-			"<19:58:56> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	GameObject-0-4232-230-30316-169243-0000155A32	60575", -- [795]
-			"<19:58:56> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:11929::::::::48:70::1:1:6710:1:28:201:::::|h[Haunting Specter Leggings]|h|r	3	1	GameObject-0-4232-230-30316-169243-0000155A32	1", -- [796]
-			"<19:58:56> <DEBUG>		Adding to self.lootSlotInfo	4	|cff0070dd|Hitem:11925::::::::48:70::1:1:6710:1:28:201:::::|h[Ghostshroud]|h|r	3	1	GameObject-0-4232-230-30316-169243-0000155A32	1", -- [797]
-			"<19:58:56> <DEBUG>		Event:	LOOT_READY	true", -- [798]
-			"<19:58:56> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	GameObject-0-4232-230-30316-169243-0000155A32	60575", -- [799]
-			"<19:58:56> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:11929::::::::48:70::1:1:6710:1:28:201:::::|h[Haunting Specter Leggings]|h|r	3	1	GameObject-0-4232-230-30316-169243-0000155A32	1", -- [800]
-			"<19:58:56> <DEBUG>		Adding to self.lootSlotInfo	4	|cff0070dd|Hitem:11925::::::::48:70::1:1:6710:1:28:201:::::|h[Ghostshroud]|h|r	3	1	GameObject-0-4232-230-30316-169243-0000155A32	1", -- [801]
-			"<19:58:56> <DEBUG>		Event:	LOOT_READY	true", -- [802]
-			"<19:58:56> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	GameObject-0-4232-230-30316-169243-0000155A32	60575", -- [803]
-			"<19:58:56> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:11929::::::::48:70::1:1:6710:1:28:201:::::|h[Haunting Specter Leggings]|h|r	3	1	GameObject-0-4232-230-30316-169243-0000155A32	1", -- [804]
-			"<19:58:56> <DEBUG>		Adding to self.lootSlotInfo	4	|cff0070dd|Hitem:11925::::::::48:70::1:1:6710:1:28:201:::::|h[Ghostshroud]|h|r	3	1	GameObject-0-4232-230-30316-169243-0000155A32	1", -- [805]
-			"<19:58:56> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [806]
-			"<19:58:56> <DEBUG>		Event:	LOOT_READY	true", -- [807]
-			"<19:58:56> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:11929::::::::48:70::1:1:6710:1:28:201:::::|h[Haunting Specter Leggings]|h|r	3	1	GameObject-0-4232-230-30316-169243-0000155A32	1", -- [808]
-			"<19:58:56> <DEBUG>		Adding to self.lootSlotInfo	4	|cff0070dd|Hitem:11925::::::::48:70::1:1:6710:1:28:201:::::|h[Ghostshroud]|h|r	3	1	GameObject-0-4232-230-30316-169243-0000155A32	1", -- [809]
-			"<19:58:58> <DEBUG>		Event:	LOOT_CLOSED", -- [810]
-			"<19:58:58> <DEBUG>		OnLootSlotCleared()	3	|cff0070dd|Hitem:11929::::::::48:70::1:1:6710:1:28:201:::::|h[Haunting Specter Leggings]|h|r	3", -- [811]
-			"<19:58:58> <DEBUG>		Event:	LOOT_CLOSED", -- [812]
-			"<19:58:58> <DEBUG>		OnLootSlotCleared()	4	|cff0070dd|Hitem:11925::::::::48:70::1:1:6710:1:28:201:::::|h[Ghostshroud]|h|r	3", -- [813]
-			"<19:58:58> <DEBUG>		Event:	LOOT_CLOSED", -- [814]
-			"<19:58:59> <Comm>		^1^Sl^T^N1^S169243^t^^	WHISPER	Valmagus-Zul'jin", -- [815]
-			"<19:59:00> <DEBUG>		Storage:New	|cff0070dd|Hitem:11929::::::::48:70::1:1:6710:1:28:201:::::|h[Haunting Specter Leggings]|h|r	temp", -- [816]
-			"<19:59:00> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11929::::::::48:70::1:1:6710:1:28:201:::::||h[Haunting Specter Leggings]||h||r	5", -- [817]
-			"<19:59:00> <DEBUG>		Found:	nil	nil	nil", -- [818]
-			"<19:59:00> <DEBUG>		Storage:New	|cff0070dd|Hitem:11925::::::::48:70::1:1:6710:1:28:201:::::|h[Ghostshroud]|h|r	temp", -- [819]
-			"<19:59:00> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11925::::::::48:70::1:1:6710:1:28:201:::::||h[Ghostshroud]||h||r	5", -- [820]
-			"<19:59:00> <DEBUG>		Found:	nil	nil	nil", -- [821]
-			"<19:59:01> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11925::::::::48:70::1:1:6710:1:28:201:::::||h[Ghostshroud]||h||r	5", -- [822]
-			"<19:59:01> <DEBUG>		Found:	nil	nil	nil", -- [823]
-			"<19:59:01> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11929::::::::48:70::1:1:6710:1:28:201:::::||h[Haunting Specter Leggings]||h||r	5", -- [824]
-			"<19:59:01> <DEBUG>		Found:	nil	nil	nil", -- [825]
-			"<19:59:02> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11925::::::::48:70::1:1:6710:1:28:201:::::||h[Ghostshroud]||h||r	5", -- [826]
-			"<19:59:02> <DEBUG>		Found:	nil	nil	nil", -- [827]
-			"<19:59:02> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11929::::::::48:70::1:1:6710:1:28:201:::::||h[Haunting Specter Leggings]||h||r	5", -- [828]
-			"<19:59:02> <DEBUG>		Found:	nil	nil	nil", -- [829]
-			"<19:59:03> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11925::::::::48:70::1:1:6710:1:28:201:::::||h[Ghostshroud]||h||r	5", -- [830]
-			"<19:59:03> <DEBUG>		Found:	nil	nil	nil", -- [831]
-			"<19:59:03> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:11925::::::::48:70::1:1:6710:1:28:201:::::|h[Ghostshroud]|h|r not found in bags", -- [832]
-			"<19:59:03> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11929::::::::48:70::1:1:6710:1:28:201:::::||h[Haunting Specter Leggings]||h||r	5", -- [833]
-			"<19:59:03> <DEBUG>		Found:	nil	nil	nil", -- [834]
-			"<19:59:03> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:11929::::::::48:70::1:1:6710:1:28:201:::::|h[Haunting Specter Leggings]|h|r not found in bags", -- [835]
-			"<19:59:41> <DEBUG>		Event:	LOOT_READY	true", -- [836]
-			"<19:59:41> <DEBUG>		Event:	LOOT_CLOSED", -- [837]
-			"<19:59:41> <DEBUG>		Event:	LOOT_CLOSED", -- [838]
-			"<20:00:12> <DEBUG>		Event:	LOOT_READY	true", -- [839]
-			"<20:00:12> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9956-00001553CA	648", -- [840]
-			"<20:00:12> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:4787::::::::48:70:::::::::|h[Burning Pitch]|h|r	0	1	Creature-0-4232-230-30316-8911-00099553CB	1", -- [841]
-			"<20:00:12> <DEBUG>		Event:	LOOT_READY	true", -- [842]
-			"<20:00:12> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9956-00001553CA	648", -- [843]
-			"<20:00:12> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:4787::::::::48:70:::::::::|h[Burning Pitch]|h|r	0	1	Creature-0-4232-230-30316-8911-00099553CB	1", -- [844]
-			"<20:00:12> <DEBUG>		Event:	LOOT_READY	true", -- [845]
-			"<20:00:12> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9956-00001553CA	648", -- [846]
-			"<20:00:12> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:4787::::::::48:70:::::::::|h[Burning Pitch]|h|r	0	1	Creature-0-4232-230-30316-8911-00099553CB	1", -- [847]
-			"<20:00:12> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [848]
-			"<20:00:12> <DEBUG>		Event:	LOOT_READY	true", -- [849]
-			"<20:00:12> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:4787::::::::48:70:::::::::|h[Burning Pitch]|h|r	0	1	Creature-0-4232-230-30316-8911-00099553CB	1", -- [850]
-			"<20:00:19> <DEBUG>		Event:	LOOT_CLOSED", -- [851]
-			"<20:00:19> <DEBUG>		OnLootSlotCleared()	3	|cff9d9d9d|Hitem:4787::::::::48:70:::::::::|h[Burning Pitch]|h|r	0", -- [852]
-			"<20:00:19> <DEBUG>		Event:	LOOT_CLOSED", -- [853]
-			"<20:00:19> <Comm>		^1^Sl^T^N1^S8911^t^^	WHISPER	Valmagus-Zul'jin", -- [854]
-			"<20:00:35> <DEBUG>		Event:	LOOT_READY	true", -- [855]
-			"<20:00:35> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:4787::::::::48:70:::::::::|h[Burning Pitch]|h|r	0	1	Creature-0-4232-230-30316-8911-00099553CB	1", -- [856]
-			"<20:00:35> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:4787::::::::48:70:::::::::|h[Burning Pitch]|h|r	0", -- [857]
-			"<20:00:35> <DEBUG>		Event:	LOOT_CLOSED", -- [858]
-			"<20:00:35> <DEBUG>		Event:	LOOT_CLOSED", -- [859]
-			"<20:00:35> <Comm>		^1^Sl^T^N1^S8911^t^^	WHISPER	Valmagus-Zul'jin", -- [860]
-			"<20:00:35> <Comm>		^1^Sl^T^N1^S8911^t^^	WHISPER	Valmagus-Zul'jin", -- [861]
-			"<20:00:52> <DEBUG>		Event:	LOOT_READY	true", -- [862]
-			"<20:00:52> <DEBUG>		Event:	LOOT_READY	true", -- [863]
-			"<20:00:52> <DEBUG>		Event:	LOOT_READY	true", -- [864]
-			"<20:00:56> <DEBUG>		Event:	LOOT_CLOSED", -- [865]
-			"<20:00:56> <DEBUG>		Event:	LOOT_CLOSED", -- [866]
-			"<20:02:30> <DEBUG>		Event:	ENCOUNTER_START	244	Magmus	1	5", -- [867]
-			"<20:02:30> <INFO>		UpdatePlayersData()", -- [868]
-			"<20:02:30> <DEBUG>		Event:	ENCOUNTER_END	244	Magmus	1	5	1", -- [869]
-			"<20:02:32> <DEBUG>		Event:	LOOT_READY	true", -- [870]
-			"<20:02:32> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9938-00001553CA	66195", -- [871]
-			"<20:02:32> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:11935::::::::48:70::1:1:6710:1:28:201:::::|h[Magmus Stone]|h|r	3	1	Creature-0-4232-230-30316-9938-00001553CA	1", -- [872]
-			"<20:02:32> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:22208::::::::48:70::1:1:6710:1:28:201:::::|h[Lavastone Hammer]|h|r	3	1	Creature-0-4232-230-30316-9938-00001553CA	1", -- [873]
-			"<20:02:32> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:4787::::::::48:70:::::::::|h[Burning Pitch]|h|r	0	1	Creature-0-4232-230-30316-9938-00001553CA	1", -- [874]
-			"<20:02:32> <DEBUG>		OnLootSlotCleared()	4	|cff9d9d9d|Hitem:4787::::::::48:70:::::::::|h[Burning Pitch]|h|r	0", -- [875]
-			"<20:02:32> <DEBUG>		Event:	LOOT_READY	true", -- [876]
-			"<20:02:32> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9938-00001553CA	66195", -- [877]
-			"<20:02:32> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:11935::::::::48:70::1:1:6710:1:28:201:::::|h[Magmus Stone]|h|r	3	1	Creature-0-4232-230-30316-9938-00001553CA	1", -- [878]
-			"<20:02:32> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:22208::::::::48:70::1:1:6710:1:28:201:::::|h[Lavastone Hammer]|h|r	3	1	Creature-0-4232-230-30316-9938-00001553CA	1", -- [879]
-			"<20:02:32> <DEBUG>		Event:	LOOT_READY	true", -- [880]
-			"<20:02:32> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9938-00001553CA	66195", -- [881]
-			"<20:02:32> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:11935::::::::48:70::1:1:6710:1:28:201:::::|h[Magmus Stone]|h|r	3	1	Creature-0-4232-230-30316-9938-00001553CA	1", -- [882]
-			"<20:02:32> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:22208::::::::48:70::1:1:6710:1:28:201:::::|h[Lavastone Hammer]|h|r	3	1	Creature-0-4232-230-30316-9938-00001553CA	1", -- [883]
-			"<20:02:32> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [884]
-			"<20:02:32> <DEBUG>		Event:	LOOT_READY	true", -- [885]
-			"<20:02:32> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:11935::::::::48:70::1:1:6710:1:28:201:::::|h[Magmus Stone]|h|r	3	1	Creature-0-4232-230-30316-9938-00001553CA	1", -- [886]
-			"<20:02:32> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:22208::::::::48:70::1:1:6710:1:28:201:::::|h[Lavastone Hammer]|h|r	3	1	Creature-0-4232-230-30316-9938-00001553CA	1", -- [887]
-			"<20:02:32> <DEBUG>		Event:	LOOT_CLOSED", -- [888]
-			"<20:02:32> <DEBUG>		OnLootSlotCleared()	2	|cff0070dd|Hitem:11935::::::::48:70::1:1:6710:1:28:201:::::|h[Magmus Stone]|h|r	3", -- [889]
-			"<20:02:32> <DEBUG>		Event:	LOOT_CLOSED", -- [890]
-			"<20:02:32> <DEBUG>		OnLootSlotCleared()	3	|cff0070dd|Hitem:22208::::::::48:70::1:1:6710:1:28:201:::::|h[Lavastone Hammer]|h|r	3", -- [891]
-			"<20:02:32> <DEBUG>		Event:	LOOT_CLOSED", -- [892]
-			"<20:02:32> <Comm>		^1^Sl^T^N1^S9938^t^^	WHISPER	Valmagus-Zul'jin", -- [893]
-			"<20:02:34> <DEBUG>		Event:	LOOT_READY	true", -- [894]
-			"<20:02:34> <DEBUG>		Adding to self.lootSlotInfo	1	|cff0070dd|Hitem:11935::::::::48:70::1:1:6710:1:28:201:::::|h[Magmus Stone]|h|r	3	1	Creature-0-4232-230-30316-9938-00001553CA	1", -- [895]
-			"<20:02:34> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:22208::::::::48:70::1:1:6710:1:28:201:::::|h[Lavastone Hammer]|h|r	3	1	Creature-0-4232-230-30316-9938-00001553CA	1", -- [896]
-			"<20:02:34> <DEBUG>		Event:	LOOT_READY	true", -- [897]
-			"<20:02:34> <DEBUG>		Adding to self.lootSlotInfo	1	|cff0070dd|Hitem:11935::::::::48:70::1:1:6710:1:28:201:::::|h[Magmus Stone]|h|r	3	1	Creature-0-4232-230-30316-9938-00001553CA	1", -- [898]
-			"<20:02:34> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:22208::::::::48:70::1:1:6710:1:28:201:::::|h[Lavastone Hammer]|h|r	3	1	Creature-0-4232-230-30316-9938-00001553CA	1", -- [899]
-			"<20:02:34> <DEBUG>		Event:	LOOT_READY	true", -- [900]
-			"<20:02:34> <DEBUG>		Adding to self.lootSlotInfo	1	|cff0070dd|Hitem:11935::::::::48:70::1:1:6710:1:28:201:::::|h[Magmus Stone]|h|r	3	1	Creature-0-4232-230-30316-9938-00001553CA	1", -- [901]
-			"<20:02:34> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:22208::::::::48:70::1:1:6710:1:28:201:::::|h[Lavastone Hammer]|h|r	3	1	Creature-0-4232-230-30316-9938-00001553CA	1", -- [902]
-			"<20:02:34> <DEBUG>		Event:	LOOT_READY	true", -- [903]
-			"<20:02:34> <DEBUG>		Adding to self.lootSlotInfo	1	|cff0070dd|Hitem:11935::::::::48:70::1:1:6710:1:28:201:::::|h[Magmus Stone]|h|r	3	1	Creature-0-4232-230-30316-9938-00001553CA	1", -- [904]
-			"<20:02:34> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:22208::::::::48:70::1:1:6710:1:28:201:::::|h[Lavastone Hammer]|h|r	3	1	Creature-0-4232-230-30316-9938-00001553CA	1", -- [905]
-			"<20:02:34> <DEBUG>		Storage:New	|cff0070dd|Hitem:11935::::::::48:70::1:1:6710:1:28:201:::::|h[Magmus Stone]|h|r	temp", -- [906]
-			"<20:02:34> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11935::::::::48:70::1:1:6710:1:28:201:::::||h[Magmus Stone]||h||r	5", -- [907]
-			"<20:02:34> <DEBUG>		Found:	nil	nil	nil", -- [908]
-			"<20:02:34> <DEBUG>		Storage:New	|cff0070dd|Hitem:22208::::::::48:70::1:1:6710:1:28:201:::::|h[Lavastone Hammer]|h|r	temp", -- [909]
-			"<20:02:34> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:22208::::::::48:70::1:1:6710:1:28:201:::::||h[Lavastone Hammer]||h||r	5", -- [910]
-			"<20:02:34> <DEBUG>		Found:	nil	nil	nil", -- [911]
-			"<20:02:35> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:22208::::::::48:70::1:1:6710:1:28:201:::::||h[Lavastone Hammer]||h||r	5", -- [912]
-			"<20:02:35> <DEBUG>		Found:	nil	nil	nil", -- [913]
-			"<20:02:35> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11935::::::::48:70::1:1:6710:1:28:201:::::||h[Magmus Stone]||h||r	5", -- [914]
-			"<20:02:35> <DEBUG>		Found:	nil	nil	nil", -- [915]
-			"<20:02:36> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:22208::::::::48:70::1:1:6710:1:28:201:::::||h[Lavastone Hammer]||h||r	5", -- [916]
-			"<20:02:36> <DEBUG>		Found:	nil	nil	nil", -- [917]
-			"<20:02:36> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11935::::::::48:70::1:1:6710:1:28:201:::::||h[Magmus Stone]||h||r	5", -- [918]
-			"<20:02:36> <DEBUG>		Found:	nil	nil	nil", -- [919]
-			"<20:02:37> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11935::::::::48:70::1:1:6710:1:28:201:::::||h[Magmus Stone]||h||r	5", -- [920]
-			"<20:02:37> <DEBUG>		Found:	nil	nil	nil", -- [921]
-			"<20:02:37> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:11935::::::::48:70::1:1:6710:1:28:201:::::|h[Magmus Stone]|h|r not found in bags", -- [922]
-			"<20:02:37> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:22208::::::::48:70::1:1:6710:1:28:201:::::||h[Lavastone Hammer]||h||r	5", -- [923]
-			"<20:02:37> <DEBUG>		Found:	nil	nil	nil", -- [924]
-			"<20:02:37> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:22208::::::::48:70::1:1:6710:1:28:201:::::|h[Lavastone Hammer]|h|r not found in bags", -- [925]
-			"<20:02:39> <DEBUG>		Event:	LOOT_CLOSED", -- [926]
-			"<20:02:39> <DEBUG>		OnLootSlotCleared()	1	|cff0070dd|Hitem:11935::::::::48:70::1:1:6710:1:28:201:::::|h[Magmus Stone]|h|r	3", -- [927]
-			"<20:02:39> <DEBUG>		Event:	LOOT_CLOSED", -- [928]
-			"<20:02:39> <DEBUG>		OnLootSlotCleared()	2	|cff0070dd|Hitem:22208::::::::48:70::1:1:6710:1:28:201:::::|h[Lavastone Hammer]|h|r	3", -- [929]
-			"<20:02:39> <DEBUG>		Event:	LOOT_CLOSED", -- [930]
-			"<20:02:39> <Comm>		^1^Sl^T^N1^S9938^t^^	WHISPER	Valmagus-Zul'jin", -- [931]
-			"<20:02:41> <DEBUG>		Storage:New	|cff0070dd|Hitem:22208::::::::48:70::1:1:6710:1:28:201:::::|h[Lavastone Hammer]|h|r	temp", -- [932]
-			"<20:02:41> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:22208::::::::48:70::1:1:6710:1:28:201:::::||h[Lavastone Hammer]||h||r	5", -- [933]
-			"<20:02:41> <DEBUG>		Found:	nil	nil	nil", -- [934]
-			"<20:02:41> <DEBUG>		Storage:New	|cff0070dd|Hitem:11935::::::::48:70::1:1:6710:1:28:201:::::|h[Magmus Stone]|h|r	temp", -- [935]
-			"<20:02:41> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11935::::::::48:70::1:1:6710:1:28:201:::::||h[Magmus Stone]||h||r	5", -- [936]
-			"<20:02:41> <DEBUG>		Found:	nil	nil	nil", -- [937]
-			"<20:02:42> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:22208::::::::48:70::1:1:6710:1:28:201:::::||h[Lavastone Hammer]||h||r	5", -- [938]
-			"<20:02:42> <DEBUG>		Found:	nil	nil	nil", -- [939]
-			"<20:02:42> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11935::::::::48:70::1:1:6710:1:28:201:::::||h[Magmus Stone]||h||r	5", -- [940]
-			"<20:02:42> <DEBUG>		Found:	nil	nil	nil", -- [941]
-			"<20:02:43> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11935::::::::48:70::1:1:6710:1:28:201:::::||h[Magmus Stone]||h||r	5", -- [942]
-			"<20:02:43> <DEBUG>		Found:	nil	nil	nil", -- [943]
-			"<20:02:43> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:22208::::::::48:70::1:1:6710:1:28:201:::::||h[Lavastone Hammer]||h||r	5", -- [944]
-			"<20:02:43> <DEBUG>		Found:	nil	nil	nil", -- [945]
-			"<20:02:44> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11935::::::::48:70::1:1:6710:1:28:201:::::||h[Magmus Stone]||h||r	5", -- [946]
-			"<20:02:44> <DEBUG>		Found:	nil	nil	nil", -- [947]
-			"<20:02:44> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:11935::::::::48:70::1:1:6710:1:28:201:::::|h[Magmus Stone]|h|r not found in bags", -- [948]
-			"<20:02:44> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:22208::::::::48:70::1:1:6710:1:28:201:::::||h[Lavastone Hammer]||h||r	5", -- [949]
-			"<20:02:44> <DEBUG>		Found:	nil	nil	nil", -- [950]
-			"<20:02:44> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:22208::::::::48:70::1:1:6710:1:28:201:::::|h[Lavastone Hammer]|h|r not found in bags", -- [951]
-			"<20:02:51> <DEBUG>		Event:	LOOT_READY	true", -- [952]
-			"<20:02:51> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8904-00061553CB	2346	Creature-0-4232-230-30316-8903-00001553CB	6663	Creature-0-4232-230-30316-8903-00009553CB	8959	Creature-0-4232-230-30316-8904-00051553CB	2536	Creature-0-4232-230-30316-8904-00059553CB	2041	Creature-0-4232-230-30316-8915-00021553CB	1245", -- [953]
-			"<20:02:51> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-8904-00059553CB	4", -- [954]
-			"<20:02:51> <DEBUG>		Event:	LOOT_READY	true", -- [955]
-			"<20:02:51> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8904-00061553CB	2346	Creature-0-4232-230-30316-8903-00001553CB	6663	Creature-0-4232-230-30316-8903-00009553CB	8959	Creature-0-4232-230-30316-8904-00051553CB	2536	Creature-0-4232-230-30316-8904-00059553CB	2041	Creature-0-4232-230-30316-8915-00021553CB	1245", -- [956]
-			"<20:02:51> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-8904-00059553CB	4", -- [957]
-			"<20:02:51> <DEBUG>		Event:	LOOT_READY	true", -- [958]
-			"<20:02:51> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8904-00061553CB	2346	Creature-0-4232-230-30316-8903-00001553CB	6663	Creature-0-4232-230-30316-8903-00009553CB	8959	Creature-0-4232-230-30316-8904-00051553CB	2536	Creature-0-4232-230-30316-8904-00059553CB	2041	Creature-0-4232-230-30316-8915-00021553CB	1245", -- [959]
-			"<20:02:51> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-8904-00059553CB	4", -- [960]
-			"<20:02:51> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [961]
-			"<20:02:51> <DEBUG>		Event:	LOOT_READY	true", -- [962]
-			"<20:02:51> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-8904-00059553CB	4", -- [963]
-			"<20:02:52> <DEBUG>		Event:	LOOT_CLOSED", -- [964]
-			"<20:02:52> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0", -- [965]
-			"<20:02:52> <DEBUG>		Event:	LOOT_CLOSED", -- [966]
-			"<20:02:53> <Comm>		^1^Sl^T^N1^S8904^t^^	WHISPER	Valmagus-Zul'jin", -- [967]
-			"<20:03:02> <DEBUG>		Event:	LOOT_READY	true", -- [968]
-			"<20:03:02> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8904-00049553CA	2683	Creature-0-4232-230-30316-8903-00001553CA	6301	Creature-0-4232-230-30316-8904-00031553CA	3584	Creature-0-4232-230-30316-8904-00039553CA	1404	Creature-0-4232-230-30316-8904-00041553CA	3629	Creature-0-4232-230-30316-8904-00051553CA	3505", -- [969]
-			"<20:03:02> <DEBUG>		Adding to self.lootSlotInfo	4	|cff1eff00|Hitem:8113::::::::48:70::1:1:6654:1:28:201:::::|h[Hibernal Robe]|h|r	2	1	Creature-0-4232-230-30316-8904-00039553CA	1", -- [970]
-			"<20:03:02> <DEBUG>		Event:	LOOT_READY	true", -- [971]
-			"<20:03:02> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8904-00049553CA	2683	Creature-0-4232-230-30316-8903-00001553CA	6301	Creature-0-4232-230-30316-8904-00031553CA	3584	Creature-0-4232-230-30316-8904-00039553CA	1404	Creature-0-4232-230-30316-8904-00041553CA	3629	Creature-0-4232-230-30316-8904-00051553CA	3505", -- [972]
-			"<20:03:02> <DEBUG>		Adding to self.lootSlotInfo	4	|cff1eff00|Hitem:8113::::::::48:70::1:1:6654:1:28:201:::::|h[Hibernal Robe]|h|r	2	1	Creature-0-4232-230-30316-8904-00039553CA	1", -- [973]
-			"<20:03:02> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [974]
-			"<20:03:02> <DEBUG>		Event:	LOOT_READY	true", -- [975]
-			"<20:03:02> <DEBUG>		Adding to self.lootSlotInfo	4	|cff1eff00|Hitem:8113::::::::48:70::1:1:6654:1:28:201:::::|h[Hibernal Robe]|h|r	2	1	Creature-0-4232-230-30316-8904-00039553CA	1", -- [976]
-			"<20:03:03> <DEBUG>		Event:	LOOT_CLOSED", -- [977]
-			"<20:03:03> <DEBUG>		OnLootSlotCleared()	4	|cff1eff00|Hitem:8113::::::::48:70::1:1:6654:1:28:201:::::|h[Hibernal Robe]|h|r	2", -- [978]
-			"<20:03:03> <DEBUG>		Event:	LOOT_CLOSED", -- [979]
-			"<20:03:03> <Comm>		^1^Sl^T^N1^S8904^t^^	WHISPER	Valmagus-Zul'jin", -- [980]
-			"<20:03:05> <DEBUG>		Storage:New	|cff1eff00|Hitem:8113::::::::48:70::1:1:6654:1:28:201:::::|h[Hibernal Robe]|h|r	temp", -- [981]
-			"<20:03:05> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8113::::::::48:70::1:1:6654:1:28:201:::::||h[Hibernal Robe]||h||r	5", -- [982]
-			"<20:03:05> <DEBUG>		Found:	nil	nil	nil", -- [983]
-			"<20:03:06> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8113::::::::48:70::1:1:6654:1:28:201:::::||h[Hibernal Robe]||h||r	5", -- [984]
-			"<20:03:06> <DEBUG>		Found:	nil	nil	nil", -- [985]
-			"<20:03:07> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8113::::::::48:70::1:1:6654:1:28:201:::::||h[Hibernal Robe]||h||r	5", -- [986]
-			"<20:03:07> <DEBUG>		Found:	nil	nil	nil", -- [987]
-			"<20:03:08> <DEBUG>		Event:	LOOT_READY	true", -- [988]
-			"<20:03:08> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8899-00001553CB	10200", -- [989]
-			"<20:03:08> <DEBUG>		Adding to self.lootSlotInfo	3	|cff1eff00|Hitem:8113::::::::48:70::1:1:6654:1:28:201:::::|h[Hibernal Robe]|h|r	2	1	Creature-0-4232-230-30316-8904-00039553CA	1", -- [990]
-			"<20:03:08> <DEBUG>		Event:	LOOT_READY	true", -- [991]
-			"<20:03:08> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8899-00001553CB	10200", -- [992]
-			"<20:03:08> <DEBUG>		Adding to self.lootSlotInfo	3	|cff1eff00|Hitem:8113::::::::48:70::1:1:6654:1:28:201:::::|h[Hibernal Robe]|h|r	2	1	Creature-0-4232-230-30316-8904-00039553CA	1", -- [993]
-			"<20:03:08> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [994]
-			"<20:03:08> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8113::::::::48:70::1:1:6654:1:28:201:::::||h[Hibernal Robe]||h||r	5", -- [995]
-			"<20:03:08> <DEBUG>		Found:	nil	nil	nil", -- [996]
-			"<20:03:08> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:8113::::::::48:70::1:1:6654:1:28:201:::::|h[Hibernal Robe]|h|r not found in bags", -- [997]
-			"<20:03:08> <DEBUG>		Event:	LOOT_READY	true", -- [998]
-			"<20:03:08> <DEBUG>		Adding to self.lootSlotInfo	3	|cff1eff00|Hitem:8113::::::::48:70::1:1:6654:1:28:201:::::|h[Hibernal Robe]|h|r	2	1	Creature-0-4232-230-30316-8904-00039553CA	1", -- [999]
-			"<20:03:08> <DEBUG>		Event:	LOOT_CLOSED", -- [1000]
-			"<20:03:08> <DEBUG>		OnLootSlotCleared()	3	|cff1eff00|Hitem:8113::::::::48:70::1:1:6654:1:28:201:::::|h[Hibernal Robe]|h|r	2", -- [1001]
-			"<20:03:08> <DEBUG>		Event:	LOOT_CLOSED", -- [1002]
-			"<20:03:08> <Comm>		^1^Sl^T^N1^S8904^t^^	WHISPER	Valmagus-Zul'jin", -- [1003]
-			"<20:03:10> <DEBUG>		Storage:New	|cff1eff00|Hitem:8113::::::::48:70::1:1:6654:1:28:201:::::|h[Hibernal Robe]|h|r	temp", -- [1004]
-			"<20:03:10> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8113::::::::48:70::1:1:6654:1:28:201:::::||h[Hibernal Robe]||h||r	5", -- [1005]
-			"<20:03:10> <DEBUG>		Found:	nil	nil	nil", -- [1006]
-			"<20:03:11> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8113::::::::48:70::1:1:6654:1:28:201:::::||h[Hibernal Robe]||h||r	5", -- [1007]
-			"<20:03:11> <DEBUG>		Found:	nil	nil	nil", -- [1008]
-			"<20:03:12> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8113::::::::48:70::1:1:6654:1:28:201:::::||h[Hibernal Robe]||h||r	5", -- [1009]
-			"<20:03:12> <DEBUG>		Found:	nil	nil	nil", -- [1010]
-			"<20:03:13> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8113::::::::48:70::1:1:6654:1:28:201:::::||h[Hibernal Robe]||h||r	5", -- [1011]
-			"<20:03:13> <DEBUG>		Found:	nil	nil	nil", -- [1012]
-			"<20:03:13> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:8113::::::::48:70::1:1:6654:1:28:201:::::|h[Hibernal Robe]|h|r not found in bags", -- [1013]
-			"<20:03:16> <DEBUG>		Event:	LOOT_READY	true", -- [1014]
-			"<20:03:16> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8915-00011553CB	939	Creature-0-4232-230-30316-8903-00009553CA	5154	Creature-0-4232-230-30316-8904-00011553CB	1228	Creature-0-4232-230-30316-8904-00019553CB	2264	Creature-0-4232-230-30316-8904-00021553CB	3241	Creature-0-4232-230-30316-8915-00019553CB	2328", -- [1015]
-			"<20:03:16> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-8915-00011553CB	4", -- [1016]
-			"<20:03:16> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r	2	1	Creature-0-4232-230-30316-8915-00019553CB	1", -- [1017]
-			"<20:03:16> <DEBUG>		Adding to self.lootSlotInfo	6	|cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r	2	1	Creature-0-4232-230-30316-8904-00011553CB	1", -- [1018]
-			"<20:03:16> <DEBUG>		Event:	LOOT_READY	true", -- [1019]
-			"<20:03:16> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8915-00011553CB	939	Creature-0-4232-230-30316-8903-00009553CA	5154	Creature-0-4232-230-30316-8904-00011553CB	1228	Creature-0-4232-230-30316-8904-00019553CB	2264	Creature-0-4232-230-30316-8904-00021553CB	3241	Creature-0-4232-230-30316-8915-00019553CB	2328", -- [1020]
-			"<20:03:16> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-8915-00011553CB	4", -- [1021]
-			"<20:03:16> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r	2	1	Creature-0-4232-230-30316-8915-00019553CB	1", -- [1022]
-			"<20:03:16> <DEBUG>		Adding to self.lootSlotInfo	6	|cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r	2	1	Creature-0-4232-230-30316-8904-00011553CB	1", -- [1023]
-			"<20:03:16> <DEBUG>		Event:	LOOT_READY	true", -- [1024]
-			"<20:03:16> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8915-00011553CB	939	Creature-0-4232-230-30316-8903-00009553CA	5154	Creature-0-4232-230-30316-8904-00011553CB	1228	Creature-0-4232-230-30316-8904-00019553CB	2264	Creature-0-4232-230-30316-8904-00021553CB	3241	Creature-0-4232-230-30316-8915-00019553CB	2328", -- [1025]
-			"<20:03:16> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-8915-00011553CB	4", -- [1026]
-			"<20:03:16> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r	2	1	Creature-0-4232-230-30316-8915-00019553CB	1", -- [1027]
-			"<20:03:16> <DEBUG>		Adding to self.lootSlotInfo	6	|cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r	2	1	Creature-0-4232-230-30316-8904-00011553CB	1", -- [1028]
-			"<20:03:16> <DEBUG>		Event:	LOOT_READY	true", -- [1029]
-			"<20:03:16> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8915-00011553CB	939	Creature-0-4232-230-30316-8903-00009553CA	5154	Creature-0-4232-230-30316-8904-00011553CB	1228	Creature-0-4232-230-30316-8904-00019553CB	2264	Creature-0-4232-230-30316-8904-00021553CB	3241	Creature-0-4232-230-30316-8915-00019553CB	2328", -- [1030]
-			"<20:03:16> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-8915-00011553CB	4", -- [1031]
-			"<20:03:16> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r	2	1	Creature-0-4232-230-30316-8915-00019553CB	1", -- [1032]
-			"<20:03:16> <DEBUG>		Adding to self.lootSlotInfo	6	|cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r	2	1	Creature-0-4232-230-30316-8904-00011553CB	1", -- [1033]
-			"<20:03:16> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1034]
-			"<20:03:16> <DEBUG>		Event:	LOOT_READY	true", -- [1035]
-			"<20:03:16> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-8915-00011553CB	4", -- [1036]
-			"<20:03:16> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r	2	1	Creature-0-4232-230-30316-8915-00019553CB	1", -- [1037]
-			"<20:03:16> <DEBUG>		Adding to self.lootSlotInfo	6	|cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r	2	1	Creature-0-4232-230-30316-8904-00011553CB	1", -- [1038]
-			"<20:03:20> <DEBUG>		Event:	LOOT_CLOSED", -- [1039]
-			"<20:03:20> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0", -- [1040]
-			"<20:03:20> <DEBUG>		Event:	LOOT_CLOSED", -- [1041]
-			"<20:03:20> <DEBUG>		OnLootSlotCleared()	5	|cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r	2", -- [1042]
-			"<20:03:20> <DEBUG>		Event:	LOOT_CLOSED", -- [1043]
-			"<20:03:20> <DEBUG>		OnLootSlotCleared()	6	|cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r	2", -- [1044]
-			"<20:03:20> <DEBUG>		Event:	LOOT_CLOSED", -- [1045]
-			"<20:03:20> <Comm>		^1^Sl^T^N1^S8904^t^^	WHISPER	Valmagus-Zul'jin", -- [1046]
-			"<20:03:22> <DEBUG>		Storage:New	|cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r	temp", -- [1047]
-			"<20:03:22> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::||h[Councillor's Boots of the Quickblade]||h||r	5", -- [1048]
-			"<20:03:22> <DEBUG>		Found:	nil	nil	nil", -- [1049]
-			"<20:03:22> <DEBUG>		Storage:New	|cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r	temp", -- [1050]
-			"<20:03:22> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::||h[Lord's Legguards of the Aurora]||h||r	5", -- [1051]
-			"<20:03:22> <DEBUG>		Found:	nil	nil	nil", -- [1052]
-			"<20:03:23> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::||h[Lord's Legguards of the Aurora]||h||r	5", -- [1053]
-			"<20:03:23> <DEBUG>		Found:	nil	nil	nil", -- [1054]
-			"<20:03:23> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::||h[Councillor's Boots of the Quickblade]||h||r	5", -- [1055]
-			"<20:03:23> <DEBUG>		Found:	nil	nil	nil", -- [1056]
-			"<20:03:24> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::||h[Lord's Legguards of the Aurora]||h||r	5", -- [1057]
-			"<20:03:24> <DEBUG>		Found:	nil	nil	nil", -- [1058]
-			"<20:03:24> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::||h[Councillor's Boots of the Quickblade]||h||r	5", -- [1059]
-			"<20:03:24> <DEBUG>		Found:	nil	nil	nil", -- [1060]
-			"<20:03:25> <DEBUG>		Event:	ENCOUNTER_START	245	Emperor Dagran Thaurissan	1	5", -- [1061]
-			"<20:03:25> <INFO>		UpdatePlayersData()", -- [1062]
-			"<20:03:25> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::||h[Councillor's Boots of the Quickblade]||h||r	5", -- [1063]
-			"<20:03:25> <DEBUG>		Found:	nil	nil	nil", -- [1064]
-			"<20:03:25> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r not found in bags", -- [1065]
-			"<20:03:25> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::||h[Lord's Legguards of the Aurora]||h||r	5", -- [1066]
-			"<20:03:25> <DEBUG>		Found:	nil	nil	nil", -- [1067]
-			"<20:03:25> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r not found in bags", -- [1068]
-			"<20:03:27> <DEBUG>		Event:	ENCOUNTER_END	245	Emperor Dagran Thaurissan	1	5	1", -- [1069]
-			"<20:03:27> <DEBUG>		Event:	LOOT_READY	true", -- [1070]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9019-00001553CA	175143	Creature-0-4232-230-30316-10076-00001553CA	9230", -- [1071]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::|h[The Emperor's New Cape]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1072]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::|h[Hands of the Exalted Herald]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1073]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r	2	1	Creature-0-4232-230-30316-8904-00011553CB	1", -- [1074]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	6	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-8915-00011553CB	4", -- [1075]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	7	|cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r	2	1	Creature-0-4232-230-30316-8915-00019553CB	1", -- [1076]
-			"<20:03:27> <DEBUG>		Event:	LOOT_READY	true", -- [1077]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9019-00001553CA	175143	Creature-0-4232-230-30316-10076-00001553CA	9230", -- [1078]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::|h[The Emperor's New Cape]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1079]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::|h[Hands of the Exalted Herald]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1080]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r	2	1	Creature-0-4232-230-30316-8904-00011553CB	1", -- [1081]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	6	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-8915-00011553CB	4", -- [1082]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	7	|cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r	2	1	Creature-0-4232-230-30316-8915-00019553CB	1", -- [1083]
-			"<20:03:27> <DEBUG>		Event:	LOOT_READY	true", -- [1084]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9019-00001553CA	175143	Creature-0-4232-230-30316-10076-00001553CA	9230", -- [1085]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::|h[The Emperor's New Cape]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1086]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::|h[Hands of the Exalted Herald]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1087]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r	2	1	Creature-0-4232-230-30316-8904-00011553CB	1", -- [1088]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	6	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-8915-00011553CB	4", -- [1089]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	7	|cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r	2	1	Creature-0-4232-230-30316-8915-00019553CB	1", -- [1090]
-			"<20:03:27> <DEBUG>		Event:	LOOT_READY	true", -- [1091]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9019-00001553CA	175143	Creature-0-4232-230-30316-10076-00001553CA	9230", -- [1092]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::|h[The Emperor's New Cape]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1093]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::|h[Hands of the Exalted Herald]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1094]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r	2	1	Creature-0-4232-230-30316-8904-00011553CB	1", -- [1095]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	6	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-8915-00011553CB	4", -- [1096]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	7	|cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r	2	1	Creature-0-4232-230-30316-8915-00019553CB	1", -- [1097]
-			"<20:03:27> <DEBUG>		Event:	LOOT_READY	true", -- [1098]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9019-00001553CA	175143	Creature-0-4232-230-30316-10076-00001553CA	9230", -- [1099]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::|h[The Emperor's New Cape]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1100]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::|h[Hands of the Exalted Herald]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1101]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r	2	1	Creature-0-4232-230-30316-8904-00011553CB	1", -- [1102]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	6	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-8915-00011553CB	4", -- [1103]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	7	|cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r	2	1	Creature-0-4232-230-30316-8915-00019553CB	1", -- [1104]
-			"<20:03:27> <DEBUG>		Event:	LOOT_READY	true", -- [1105]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9019-00001553CA	175143	Creature-0-4232-230-30316-10076-00001553CA	9230", -- [1106]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::|h[The Emperor's New Cape]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1107]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::|h[Hands of the Exalted Herald]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1108]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r	2	1	Creature-0-4232-230-30316-8904-00011553CB	1", -- [1109]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	6	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-8915-00011553CB	4", -- [1110]
-			"<20:03:27> <DEBUG>		Adding to self.lootSlotInfo	7	|cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r	2	1	Creature-0-4232-230-30316-8915-00019553CB	1", -- [1111]
-			"<20:03:27> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1112]
-			"<20:03:28> <DEBUG>		Event:	LOOT_READY	true", -- [1113]
-			"<20:03:28> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::|h[The Emperor's New Cape]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1114]
-			"<20:03:28> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::|h[Hands of the Exalted Herald]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1115]
-			"<20:03:28> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r	2	1	Creature-0-4232-230-30316-8904-00011553CB	1", -- [1116]
-			"<20:03:28> <DEBUG>		Adding to self.lootSlotInfo	6	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-8915-00011553CB	4", -- [1117]
-			"<20:03:28> <DEBUG>		Adding to self.lootSlotInfo	7	|cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r	2	1	Creature-0-4232-230-30316-8915-00019553CB	1", -- [1118]
-			"<20:03:34> <DEBUG>		Event:	LOOT_CLOSED", -- [1119]
-			"<20:03:34> <DEBUG>		OnLootSlotCleared()	2	|cff0070dd|Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::|h[The Emperor's New Cape]|h|r	3", -- [1120]
-			"<20:03:34> <DEBUG>		Event:	LOOT_CLOSED", -- [1121]
-			"<20:03:34> <DEBUG>		OnLootSlotCleared()	3	|cff0070dd|Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::|h[Hands of the Exalted Herald]|h|r	3", -- [1122]
-			"<20:03:34> <DEBUG>		Event:	LOOT_CLOSED", -- [1123]
-			"<20:03:34> <DEBUG>		OnLootSlotCleared()	5	|cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r	2", -- [1124]
-			"<20:03:34> <DEBUG>		Event:	LOOT_CLOSED", -- [1125]
-			"<20:03:34> <DEBUG>		OnLootSlotCleared()	6	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0", -- [1126]
-			"<20:03:34> <DEBUG>		Event:	LOOT_CLOSED", -- [1127]
-			"<20:03:34> <DEBUG>		OnLootSlotCleared()	7	|cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r	2", -- [1128]
-			"<20:03:34> <DEBUG>		Event:	LOOT_CLOSED", -- [1129]
-			"<20:03:34> <Comm>		^1^Sl^T^N1^S8915^t^^	WHISPER	Valmagus-Zul'jin", -- [1130]
-			"<20:03:34> <DEBUG>		Event:	LOOT_READY	true", -- [1131]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	1	|cff0070dd|Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::|h[The Emperor's New Cape]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1132]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::|h[Hands of the Exalted Herald]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1133]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	3	|cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r	2	1	Creature-0-4232-230-30316-8904-00011553CB	1", -- [1134]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-8915-00011553CB	4", -- [1135]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r	2	1	Creature-0-4232-230-30316-8915-00019553CB	1", -- [1136]
-			"<20:03:34> <DEBUG>		Event:	LOOT_READY	true", -- [1137]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	1	|cff0070dd|Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::|h[The Emperor's New Cape]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1138]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::|h[Hands of the Exalted Herald]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1139]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	3	|cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r	2	1	Creature-0-4232-230-30316-8904-00011553CB	1", -- [1140]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-8915-00011553CB	4", -- [1141]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r	2	1	Creature-0-4232-230-30316-8915-00019553CB	1", -- [1142]
-			"<20:03:34> <DEBUG>		Event:	LOOT_READY	true", -- [1143]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	1	|cff0070dd|Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::|h[The Emperor's New Cape]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1144]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::|h[Hands of the Exalted Herald]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1145]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	3	|cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r	2	1	Creature-0-4232-230-30316-8904-00011553CB	1", -- [1146]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-8915-00011553CB	4", -- [1147]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r	2	1	Creature-0-4232-230-30316-8915-00019553CB	1", -- [1148]
-			"<20:03:34> <DEBUG>		Event:	LOOT_READY	true", -- [1149]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	1	|cff0070dd|Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::|h[The Emperor's New Cape]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1150]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::|h[Hands of the Exalted Herald]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1151]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	3	|cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r	2	1	Creature-0-4232-230-30316-8904-00011553CB	1", -- [1152]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-8915-00011553CB	4", -- [1153]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r	2	1	Creature-0-4232-230-30316-8915-00019553CB	1", -- [1154]
-			"<20:03:34> <DEBUG>		Event:	LOOT_READY	true", -- [1155]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	1	|cff0070dd|Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::|h[The Emperor's New Cape]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1156]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::|h[Hands of the Exalted Herald]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1157]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	3	|cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r	2	1	Creature-0-4232-230-30316-8904-00011553CB	1", -- [1158]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-8915-00011553CB	4", -- [1159]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r	2	1	Creature-0-4232-230-30316-8915-00019553CB	1", -- [1160]
-			"<20:03:34> <DEBUG>		Event:	LOOT_READY	true", -- [1161]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	1	|cff0070dd|Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::|h[The Emperor's New Cape]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1162]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::|h[Hands of the Exalted Herald]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1163]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	3	|cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r	2	1	Creature-0-4232-230-30316-8904-00011553CB	1", -- [1164]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-8915-00011553CB	4", -- [1165]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r	2	1	Creature-0-4232-230-30316-8915-00019553CB	1", -- [1166]
-			"<20:03:34> <DEBUG>		Event:	LOOT_READY	true", -- [1167]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	1	|cff0070dd|Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::|h[The Emperor's New Cape]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1168]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::|h[Hands of the Exalted Herald]|h|r	3	1	Creature-0-4232-230-30316-9019-00001553CA	1", -- [1169]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	3	|cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r	2	1	Creature-0-4232-230-30316-8904-00011553CB	1", -- [1170]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	4	Creature-0-4232-230-30316-8915-00011553CB	4", -- [1171]
-			"<20:03:34> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r	2	1	Creature-0-4232-230-30316-8915-00019553CB	1", -- [1172]
-			"<20:03:35> <DEBUG>		Event:	LOOT_CLOSED", -- [1173]
-			"<20:03:35> <DEBUG>		OnLootSlotCleared()	1	|cff0070dd|Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::|h[The Emperor's New Cape]|h|r	3", -- [1174]
-			"<20:03:35> <DEBUG>		Event:	LOOT_CLOSED", -- [1175]
-			"<20:03:35> <DEBUG>		OnLootSlotCleared()	2	|cff0070dd|Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::|h[Hands of the Exalted Herald]|h|r	3", -- [1176]
-			"<20:03:35> <DEBUG>		Event:	LOOT_CLOSED", -- [1177]
-			"<20:03:35> <DEBUG>		OnLootSlotCleared()	3	|cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r	2", -- [1178]
-			"<20:03:35> <DEBUG>		Event:	LOOT_CLOSED", -- [1179]
-			"<20:03:35> <DEBUG>		OnLootSlotCleared()	4	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0", -- [1180]
-			"<20:03:35> <DEBUG>		Event:	LOOT_CLOSED", -- [1181]
-			"<20:03:35> <DEBUG>		OnLootSlotCleared()	5	|cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r	2", -- [1182]
-			"<20:03:35> <DEBUG>		Event:	LOOT_CLOSED", -- [1183]
-			"<20:03:35> <Comm>		^1^Sl^T^N1^S8915^t^^	WHISPER	Valmagus-Zul'jin", -- [1184]
-			"<20:03:36> <DEBUG>		Storage:New	|cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r	temp", -- [1185]
-			"<20:03:36> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::||h[Lord's Legguards of the Aurora]||h||r	5", -- [1186]
-			"<20:03:36> <DEBUG>		Found:	nil	nil	nil", -- [1187]
-			"<20:03:36> <DEBUG>		Storage:New	|cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r	temp", -- [1188]
-			"<20:03:36> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::||h[Councillor's Boots of the Quickblade]||h||r	5", -- [1189]
-			"<20:03:36> <DEBUG>		Found:	nil	nil	nil", -- [1190]
-			"<20:03:36> <DEBUG>		Storage:New	|cff0070dd|Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::|h[Hands of the Exalted Herald]|h|r	temp", -- [1191]
-			"<20:03:36> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::||h[Hands of the Exalted Herald]||h||r	5", -- [1192]
-			"<20:03:36> <DEBUG>		Found:	nil	nil	nil", -- [1193]
-			"<20:03:36> <DEBUG>		Storage:New	|cff0070dd|Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::|h[The Emperor's New Cape]|h|r	temp", -- [1194]
-			"<20:03:36> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::||h[The Emperor's New Cape]||h||r	5", -- [1195]
-			"<20:03:36> <DEBUG>		Found:	nil	nil	nil", -- [1196]
-			"<20:03:37> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::||h[Councillor's Boots of the Quickblade]||h||r	5", -- [1197]
-			"<20:03:37> <DEBUG>		Found:	nil	nil	nil", -- [1198]
-			"<20:03:37> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::||h[Hands of the Exalted Herald]||h||r	5", -- [1199]
-			"<20:03:37> <DEBUG>		Found:	nil	nil	nil", -- [1200]
-			"<20:03:37> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::||h[Lord's Legguards of the Aurora]||h||r	5", -- [1201]
-			"<20:03:37> <DEBUG>		Found:	nil	nil	nil", -- [1202]
-			"<20:03:37> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::||h[The Emperor's New Cape]||h||r	5", -- [1203]
-			"<20:03:37> <DEBUG>		Found:	nil	nil	nil", -- [1204]
-			"<20:03:37> <DEBUG>		Storage:New	|cff0070dd|Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::|h[The Emperor's New Cape]|h|r	temp", -- [1205]
-			"<20:03:37> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::||h[The Emperor's New Cape]||h||r	5", -- [1206]
-			"<20:03:37> <DEBUG>		Found:	nil	nil	nil", -- [1207]
-			"<20:03:37> <DEBUG>		Storage:New	|cff0070dd|Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::|h[Hands of the Exalted Herald]|h|r	temp", -- [1208]
-			"<20:03:37> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::||h[Hands of the Exalted Herald]||h||r	5", -- [1209]
-			"<20:03:37> <DEBUG>		Found:	nil	nil	nil", -- [1210]
-			"<20:03:37> <DEBUG>		Storage:New	|cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r	temp", -- [1211]
-			"<20:03:37> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::||h[Lord's Legguards of the Aurora]||h||r	5", -- [1212]
-			"<20:03:37> <DEBUG>		Found:	nil	nil	nil", -- [1213]
-			"<20:03:37> <DEBUG>		Storage:New	|cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r	temp", -- [1214]
-			"<20:03:37> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::||h[Councillor's Boots of the Quickblade]||h||r	5", -- [1215]
-			"<20:03:37> <DEBUG>		Found:	nil	nil	nil", -- [1216]
-			"<20:03:38> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::||h[Hands of the Exalted Herald]||h||r	5", -- [1217]
-			"<20:03:38> <DEBUG>		Found:	nil	nil	nil", -- [1218]
-			"<20:03:38> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::||h[Councillor's Boots of the Quickblade]||h||r	5", -- [1219]
-			"<20:03:38> <DEBUG>		Found:	nil	nil	nil", -- [1220]
-			"<20:03:38> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::||h[Lord's Legguards of the Aurora]||h||r	5", -- [1221]
-			"<20:03:38> <DEBUG>		Found:	nil	nil	nil", -- [1222]
-			"<20:03:38> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::||h[The Emperor's New Cape]||h||r	5", -- [1223]
-			"<20:03:38> <DEBUG>		Found:	nil	nil	nil", -- [1224]
-			"<20:03:38> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::||h[Councillor's Boots of the Quickblade]||h||r	5", -- [1225]
-			"<20:03:38> <DEBUG>		Found:	nil	nil	nil", -- [1226]
-			"<20:03:38> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::||h[Lord's Legguards of the Aurora]||h||r	5", -- [1227]
-			"<20:03:38> <DEBUG>		Found:	nil	nil	nil", -- [1228]
-			"<20:03:38> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::||h[Hands of the Exalted Herald]||h||r	5", -- [1229]
-			"<20:03:38> <DEBUG>		Found:	nil	nil	nil", -- [1230]
-			"<20:03:38> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::||h[The Emperor's New Cape]||h||r	5", -- [1231]
-			"<20:03:38> <DEBUG>		Found:	nil	nil	nil", -- [1232]
-			"<20:03:39> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::||h[Lord's Legguards of the Aurora]||h||r	5", -- [1233]
-			"<20:03:39> <DEBUG>		Found:	nil	nil	nil", -- [1234]
-			"<20:03:39> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r not found in bags", -- [1235]
-			"<20:03:39> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::||h[The Emperor's New Cape]||h||r	5", -- [1236]
-			"<20:03:39> <DEBUG>		Found:	nil	nil	nil", -- [1237]
-			"<20:03:39> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::|h[The Emperor's New Cape]|h|r not found in bags", -- [1238]
-			"<20:03:39> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::||h[Councillor's Boots of the Quickblade]||h||r	5", -- [1239]
-			"<20:03:39> <DEBUG>		Found:	nil	nil	nil", -- [1240]
-			"<20:03:39> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r not found in bags", -- [1241]
-			"<20:03:39> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::||h[Hands of the Exalted Herald]||h||r	5", -- [1242]
-			"<20:03:39> <DEBUG>		Found:	nil	nil	nil", -- [1243]
-			"<20:03:39> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::|h[Hands of the Exalted Herald]|h|r not found in bags", -- [1244]
-			"<20:03:39> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::||h[Councillor's Boots of the Quickblade]||h||r	5", -- [1245]
-			"<20:03:39> <DEBUG>		Found:	nil	nil	nil", -- [1246]
-			"<20:03:39> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::||h[Hands of the Exalted Herald]||h||r	5", -- [1247]
-			"<20:03:39> <DEBUG>		Found:	nil	nil	nil", -- [1248]
-			"<20:03:39> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::||h[Lord's Legguards of the Aurora]||h||r	5", -- [1249]
-			"<20:03:39> <DEBUG>		Found:	nil	nil	nil", -- [1250]
-			"<20:03:39> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::||h[The Emperor's New Cape]||h||r	5", -- [1251]
-			"<20:03:39> <DEBUG>		Found:	nil	nil	nil", -- [1252]
-			"<20:03:40> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::||h[Hands of the Exalted Herald]||h||r	5", -- [1253]
-			"<20:03:40> <DEBUG>		Found:	nil	nil	nil", -- [1254]
-			"<20:03:40> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:12554::::::::48:70::1:1:6710:1:28:201:::::|h[Hands of the Exalted Herald]|h|r not found in bags", -- [1255]
-			"<20:03:40> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::||h[The Emperor's New Cape]||h||r	5", -- [1256]
-			"<20:03:40> <DEBUG>		Found:	nil	nil	nil", -- [1257]
-			"<20:03:40> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:11930::::::::48:70::1:1:6710:1:28:201:::::|h[The Emperor's New Cape]|h|r not found in bags", -- [1258]
-			"<20:03:40> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::||h[Lord's Legguards of the Aurora]||h||r	5", -- [1259]
-			"<20:03:40> <DEBUG>		Found:	nil	nil	nil", -- [1260]
-			"<20:03:40> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:10084::::::::48:70::1:2:6654:1707:1:28:201:::::|h[Lord's Legguards of the Aurora]|h|r not found in bags", -- [1261]
-			"<20:03:40> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::||h[Councillor's Boots of the Quickblade]||h||r	5", -- [1262]
-			"<20:03:40> <DEBUG>		Found:	nil	nil	nil", -- [1263]
-			"<20:03:40> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:10095::::::::48:70::1:2:6654:1677:1:28:201:::::|h[Councillor's Boots of the Quickblade]|h|r not found in bags", -- [1264]
-			"<20:05:35> <DEBUG>		Event:	LOOT_READY	true", -- [1265]
-			"<20:05:35> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8908-00009553CA	6718	Creature-0-4232-230-30316-8900-00061553CA	544	Creature-0-4232-230-30316-8900-00069553CA	1605", -- [1266]
-			"<20:05:35> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:8199::::::::48:70::1:2:6655:1692:1:28:201:::::|h[Battlefield Destroyer of the Fireflash]|h|r	2	1	Creature-0-4232-230-30316-8908-00009553CA	1", -- [1267]
-			"<20:05:35> <DEBUG>		Adding to self.lootSlotInfo	6	|cff9d9d9d|Hitem:13823::::::::48:70::1:1:6657:1:28:201:::::|h[Stout War Staff]|h|r	0	1	Creature-0-4232-230-30316-8908-00009553CA	1", -- [1268]
-			"<20:05:35> <DEBUG>		Event:	LOOT_READY	true", -- [1269]
-			"<20:05:35> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8908-00009553CA	6718	Creature-0-4232-230-30316-8900-00061553CA	544	Creature-0-4232-230-30316-8900-00069553CA	1605", -- [1270]
-			"<20:05:35> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:8199::::::::48:70::1:2:6655:1692:1:28:201:::::|h[Battlefield Destroyer of the Fireflash]|h|r	2	1	Creature-0-4232-230-30316-8908-00009553CA	1", -- [1271]
-			"<20:05:35> <DEBUG>		Adding to self.lootSlotInfo	6	|cff9d9d9d|Hitem:13823::::::::48:70::1:1:6657:1:28:201:::::|h[Stout War Staff]|h|r	0	1	Creature-0-4232-230-30316-8908-00009553CA	1", -- [1272]
-			"<20:05:35> <DEBUG>		Event:	LOOT_READY	true", -- [1273]
-			"<20:05:35> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8908-00009553CA	6718	Creature-0-4232-230-30316-8900-00061553CA	544	Creature-0-4232-230-30316-8900-00069553CA	1605", -- [1274]
-			"<20:05:35> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:8199::::::::48:70::1:2:6655:1692:1:28:201:::::|h[Battlefield Destroyer of the Fireflash]|h|r	2	1	Creature-0-4232-230-30316-8908-00009553CA	1", -- [1275]
-			"<20:05:35> <DEBUG>		Adding to self.lootSlotInfo	6	|cff9d9d9d|Hitem:13823::::::::48:70::1:1:6657:1:28:201:::::|h[Stout War Staff]|h|r	0	1	Creature-0-4232-230-30316-8908-00009553CA	1", -- [1276]
-			"<20:05:36> <DEBUG>		Event:	LOOT_READY	true", -- [1277]
-			"<20:05:36> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8908-00009553CA	6718	Creature-0-4232-230-30316-8900-00061553CA	544	Creature-0-4232-230-30316-8900-00069553CA	1605", -- [1278]
-			"<20:05:36> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:8199::::::::48:70::1:2:6655:1692:1:28:201:::::|h[Battlefield Destroyer of the Fireflash]|h|r	2	1	Creature-0-4232-230-30316-8908-00009553CA	1", -- [1279]
-			"<20:05:36> <DEBUG>		Adding to self.lootSlotInfo	6	|cff9d9d9d|Hitem:13823::::::::48:70::1:1:6657:1:28:201:::::|h[Stout War Staff]|h|r	0	1	Creature-0-4232-230-30316-8908-00009553CA	1", -- [1280]
-			"<20:05:36> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1281]
-			"<20:05:36> <DEBUG>		Event:	LOOT_CLOSED", -- [1282]
-			"<20:05:36> <DEBUG>		OnLootSlotCleared()	5	|cff1eff00|Hitem:8199::::::::48:70::1:2:6655:1692:1:28:201:::::|h[Battlefield Destroyer of the Fireflash]|h|r	2", -- [1283]
-			"<20:05:36> <DEBUG>		Event:	LOOT_CLOSED", -- [1284]
-			"<20:05:36> <DEBUG>		OnLootSlotCleared()	6	|cff9d9d9d|Hitem:13823::::::::48:70::1:1:6657:1:28:201:::::|h[Stout War Staff]|h|r	0", -- [1285]
-			"<20:05:36> <DEBUG>		Event:	LOOT_CLOSED", -- [1286]
-			"<20:05:36> <Comm>		^1^Sl^T^N1^S8908^t^^	WHISPER	Valmagus-Zul'jin", -- [1287]
-			"<20:05:37> <DEBUG>		Event:	LOOT_READY	true", -- [1288]
-			"<20:05:37> <DEBUG>		Adding to self.lootSlotInfo	1	|cff1eff00|Hitem:8199::::::::48:70::1:2:6655:1692:1:28:201:::::|h[Battlefield Destroyer of the Fireflash]|h|r	2	1	Creature-0-4232-230-30316-8908-00009553CA	1", -- [1289]
-			"<20:05:37> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:13823::::::::48:70::1:1:6657:1:28:201:::::|h[Stout War Staff]|h|r	0	1	Creature-0-4232-230-30316-8908-00009553CA	1", -- [1290]
-			"<20:05:37> <DEBUG>		Event:	LOOT_READY	true", -- [1291]
-			"<20:05:37> <DEBUG>		Adding to self.lootSlotInfo	1	|cff1eff00|Hitem:8199::::::::48:70::1:2:6655:1692:1:28:201:::::|h[Battlefield Destroyer of the Fireflash]|h|r	2	1	Creature-0-4232-230-30316-8908-00009553CA	1", -- [1292]
-			"<20:05:37> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:13823::::::::48:70::1:1:6657:1:28:201:::::|h[Stout War Staff]|h|r	0	1	Creature-0-4232-230-30316-8908-00009553CA	1", -- [1293]
-			"<20:05:37> <DEBUG>		Event:	LOOT_READY	true", -- [1294]
-			"<20:05:37> <DEBUG>		Adding to self.lootSlotInfo	1	|cff1eff00|Hitem:8199::::::::48:70::1:2:6655:1692:1:28:201:::::|h[Battlefield Destroyer of the Fireflash]|h|r	2	1	Creature-0-4232-230-30316-8908-00009553CA	1", -- [1295]
-			"<20:05:37> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:13823::::::::48:70::1:1:6657:1:28:201:::::|h[Stout War Staff]|h|r	0	1	Creature-0-4232-230-30316-8908-00009553CA	1", -- [1296]
-			"<20:05:37> <DEBUG>		Event:	LOOT_READY	true", -- [1297]
-			"<20:05:37> <DEBUG>		Adding to self.lootSlotInfo	1	|cff1eff00|Hitem:8199::::::::48:70::1:2:6655:1692:1:28:201:::::|h[Battlefield Destroyer of the Fireflash]|h|r	2	1	Creature-0-4232-230-30316-8908-00009553CA	1", -- [1298]
-			"<20:05:37> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:13823::::::::48:70::1:1:6657:1:28:201:::::|h[Stout War Staff]|h|r	0	1	Creature-0-4232-230-30316-8908-00009553CA	1", -- [1299]
-			"<20:05:38> <DEBUG>		Storage:New	|cff1eff00|Hitem:8199::::::::48:70::1:2:6655:1692:1:28:201:::::|h[Battlefield Destroyer of the Fireflash]|h|r	temp", -- [1300]
-			"<20:05:38> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8199::::::::48:70::1:2:6655:1692:1:28:201:::::||h[Battlefield Destroyer of the Fireflash]||h||r	5", -- [1301]
-			"<20:05:38> <DEBUG>		Found:	nil	nil	nil", -- [1302]
-			"<20:05:39> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8199::::::::48:70::1:2:6655:1692:1:28:201:::::||h[Battlefield Destroyer of the Fireflash]||h||r	5", -- [1303]
-			"<20:05:39> <DEBUG>		Found:	nil	nil	nil", -- [1304]
-			"<20:05:39> <DEBUG>		Event:	LOOT_CLOSED", -- [1305]
-			"<20:05:39> <DEBUG>		OnLootSlotCleared()	1	|cff1eff00|Hitem:8199::::::::48:70::1:2:6655:1692:1:28:201:::::|h[Battlefield Destroyer of the Fireflash]|h|r	2", -- [1306]
-			"<20:05:39> <DEBUG>		Event:	LOOT_CLOSED", -- [1307]
-			"<20:05:39> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:13823::::::::48:70::1:1:6657:1:28:201:::::|h[Stout War Staff]|h|r	0", -- [1308]
-			"<20:05:39> <DEBUG>		Event:	LOOT_CLOSED", -- [1309]
-			"<20:05:39> <Comm>		^1^Sl^T^N1^S8908^t^^	WHISPER	Valmagus-Zul'jin", -- [1310]
-			"<20:05:40> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8199::::::::48:70::1:2:6655:1692:1:28:201:::::||h[Battlefield Destroyer of the Fireflash]||h||r	5", -- [1311]
-			"<20:05:40> <DEBUG>		Found:	nil	nil	nil", -- [1312]
-			"<20:05:41> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8199::::::::48:70::1:2:6655:1692:1:28:201:::::||h[Battlefield Destroyer of the Fireflash]||h||r	5", -- [1313]
-			"<20:05:41> <DEBUG>		Found:	nil	nil	nil", -- [1314]
-			"<20:05:41> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:8199::::::::48:70::1:2:6655:1692:1:28:201:::::|h[Battlefield Destroyer of the Fireflash]|h|r not found in bags", -- [1315]
-			"<20:05:41> <DEBUG>		Storage:New	|cff1eff00|Hitem:8199::::::::48:70::1:2:6655:1692:1:28:201:::::|h[Battlefield Destroyer of the Fireflash]|h|r	temp", -- [1316]
-			"<20:05:41> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8199::::::::48:70::1:2:6655:1692:1:28:201:::::||h[Battlefield Destroyer of the Fireflash]||h||r	5", -- [1317]
-			"<20:05:41> <DEBUG>		Found:	nil	nil	nil", -- [1318]
-			"<20:05:42> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8199::::::::48:70::1:2:6655:1692:1:28:201:::::||h[Battlefield Destroyer of the Fireflash]||h||r	5", -- [1319]
-			"<20:05:42> <DEBUG>		Found:	nil	nil	nil", -- [1320]
-			"<20:05:43> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8199::::::::48:70::1:2:6655:1692:1:28:201:::::||h[Battlefield Destroyer of the Fireflash]||h||r	5", -- [1321]
-			"<20:05:43> <DEBUG>		Found:	nil	nil	nil", -- [1322]
-			"<20:05:44> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:8199::::::::48:70::1:2:6655:1692:1:28:201:::::||h[Battlefield Destroyer of the Fireflash]||h||r	5", -- [1323]
-			"<20:05:44> <DEBUG>		Found:	nil	nil	nil", -- [1324]
-			"<20:05:44> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:8199::::::::48:70::1:2:6655:1692:1:28:201:::::|h[Battlefield Destroyer of the Fireflash]|h|r not found in bags", -- [1325]
-			"<20:07:20> <DEBUG>		Event:	LOOT_READY	true", -- [1326]
-			"<20:07:20> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00019553CA	1", -- [1327]
-			"<20:07:20> <DEBUG>		Adding to self.lootSlotInfo	2	|cffffffff|Hitem:11966::::::::48:70::1::1:28:201:::::|h[Small Sack of Coins]|h|r	1	1	GameObject-0-4232-230-30316-160836-00019553CA	1", -- [1328]
-			"<20:07:20> <DEBUG>		Adding to self.lootSlotInfo	3	|cffffffff|Hitem:11938::::::::48:70::1::1:28:201:::::|h[Sack of Gems]|h|r	1	1	GameObject-0-4232-230-30316-160836-00019553CA	1", -- [1329]
-			"<20:07:20> <DEBUG>		Event:	LOOT_READY	true", -- [1330]
-			"<20:07:20> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00019553CA	1", -- [1331]
-			"<20:07:20> <DEBUG>		Adding to self.lootSlotInfo	2	|cffffffff|Hitem:11966::::::::48:70::1::1:28:201:::::|h[Small Sack of Coins]|h|r	1	1	GameObject-0-4232-230-30316-160836-00019553CA	1", -- [1332]
-			"<20:07:20> <DEBUG>		Adding to self.lootSlotInfo	3	|cffffffff|Hitem:11938::::::::48:70::1::1:28:201:::::|h[Sack of Gems]|h|r	1	1	GameObject-0-4232-230-30316-160836-00019553CA	1", -- [1333]
-			"<20:07:20> <DEBUG>		Event:	LOOT_READY	true", -- [1334]
-			"<20:07:20> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00019553CA	1", -- [1335]
-			"<20:07:20> <DEBUG>		Adding to self.lootSlotInfo	2	|cffffffff|Hitem:11966::::::::48:70::1::1:28:201:::::|h[Small Sack of Coins]|h|r	1	1	GameObject-0-4232-230-30316-160836-00019553CA	1", -- [1336]
-			"<20:07:20> <DEBUG>		Adding to self.lootSlotInfo	3	|cffffffff|Hitem:11938::::::::48:70::1::1:28:201:::::|h[Sack of Gems]|h|r	1	1	GameObject-0-4232-230-30316-160836-00019553CA	1", -- [1337]
-			"<20:07:20> <DEBUG>		Event:	LOOT_READY	true", -- [1338]
-			"<20:07:20> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00019553CA	1", -- [1339]
-			"<20:07:20> <DEBUG>		Adding to self.lootSlotInfo	2	|cffffffff|Hitem:11966::::::::48:70::1::1:28:201:::::|h[Small Sack of Coins]|h|r	1	1	GameObject-0-4232-230-30316-160836-00019553CA	1", -- [1340]
-			"<20:07:20> <DEBUG>		Adding to self.lootSlotInfo	3	|cffffffff|Hitem:11938::::::::48:70::1::1:28:201:::::|h[Sack of Gems]|h|r	1	1	GameObject-0-4232-230-30316-160836-00019553CA	1", -- [1341]
-			"<20:07:21> <DEBUG>		Event:	LOOT_READY	true", -- [1342]
-			"<20:07:21> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00019553CA	1", -- [1343]
-			"<20:07:21> <DEBUG>		Adding to self.lootSlotInfo	2	|cffffffff|Hitem:11966::::::::48:70::1::1:28:201:::::|h[Small Sack of Coins]|h|r	1	1	GameObject-0-4232-230-30316-160836-00019553CA	1", -- [1344]
-			"<20:07:21> <DEBUG>		Adding to self.lootSlotInfo	3	|cffffffff|Hitem:11938::::::::48:70::1::1:28:201:::::|h[Sack of Gems]|h|r	1	1	GameObject-0-4232-230-30316-160836-00019553CA	1", -- [1345]
-			"<20:07:33> <DEBUG>		OnLootSlotCleared()	2	|cffffffff|Hitem:11966::::::::48:70::1::1:28:201:::::|h[Small Sack of Coins]|h|r	1", -- [1346]
-			"<20:07:33> <DEBUG>		OnLootSlotCleared()	3	|cffffffff|Hitem:11938::::::::48:70::1::1:28:201:::::|h[Sack of Gems]|h|r	1", -- [1347]
-			"<20:07:34> <DEBUG>		Event:	LOOT_CLOSED", -- [1348]
-			"<20:07:34> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0", -- [1349]
-			"<20:07:34> <DEBUG>		Event:	LOOT_CLOSED", -- [1350]
-			"<20:07:34> <Comm>		^1^Sl^T^N1^S160836^t^^	WHISPER	Valmagus-Zul'jin", -- [1351]
-			"<20:07:35> <DEBUG>		Event:	LOOT_READY	true", -- [1352]
-			"<20:07:35> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Item-61-0-4000000B43091F2E	271", -- [1353]
-			"<20:07:35> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1354]
-			"<20:07:35> <DEBUG>		Event:	LOOT_CLOSED", -- [1355]
-			"<20:07:35> <DEBUG>		Event:	LOOT_CLOSED", -- [1356]
-			"<20:07:35> <Comm>		^1^Sl^T^N1^S0^t^^	WHISPER	Valmagus-Zul'jin", -- [1357]
-			"<20:07:35> <Comm>		^1^Sl^T^N1^S0^t^^	WHISPER	Valmagus-Zul'jin", -- [1358]
-			"<20:07:35> <DEBUG>		Event:	LOOT_READY	true", -- [1359]
-			"<20:07:36> <DEBUG>		Event:	LOOT_READY	true", -- [1360]
-			"<20:07:36> <DEBUG>		Event:	LOOT_READY	true", -- [1361]
-			"<20:07:36> <DEBUG>		Event:	LOOT_READY	true", -- [1362]
-			"<20:07:37> <DEBUG>		Event:	LOOT_CLOSED", -- [1363]
-			"<20:07:38> <DEBUG>		Event:	LOOT_READY	true", -- [1364]
-			"<20:07:38> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00019553CA	1", -- [1365]
-			"<20:07:38> <DEBUG>		Event:	LOOT_READY	true", -- [1366]
-			"<20:07:38> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00019553CA	1", -- [1367]
-			"<20:07:38> <DEBUG>		Event:	LOOT_READY	true", -- [1368]
-			"<20:07:38> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00019553CA	1", -- [1369]
-			"<20:07:47> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0", -- [1370]
-			"<20:07:47> <DEBUG>		Event:	LOOT_CLOSED", -- [1371]
-			"<20:07:47> <DEBUG>		Event:	LOOT_CLOSED", -- [1372]
-			"<20:07:48> <Comm>		^1^Sl^T^N1^S160836^t^^	WHISPER	Valmagus-Zul'jin", -- [1373]
-			"<20:07:48> <Comm>		^1^Sl^T^N1^S160836^t^^	WHISPER	Valmagus-Zul'jin", -- [1374]
-			"<20:07:52> <DEBUG>		Event:	LOOT_READY	true", -- [1375]
-			"<20:07:52> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11941::::::::48:70:::::::::|h[False Documents]|h|r	0	1	GameObject-0-4232-230-30316-160836-00041553CA	1", -- [1376]
-			"<20:07:52> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00041553CA	1", -- [1377]
-			"<20:07:52> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:11940::::::::48:70:::::::::|h[Sparkly Necklace]|h|r	0	1	GameObject-0-4232-230-30316-160836-00041553CA	1", -- [1378]
-			"<20:07:52> <DEBUG>		Adding to self.lootSlotInfo	4	|cffffffff|Hitem:11966::::::::48:70::1::1:28:201:::::|h[Small Sack of Coins]|h|r	1	1	GameObject-0-4232-230-30316-160836-00041553CA	1", -- [1379]
-			"<20:07:52> <DEBUG>		OnLootSlotCleared()	4	|cffffffff|Hitem:11966::::::::48:70::1::1:28:201:::::|h[Small Sack of Coins]|h|r	1", -- [1380]
-			"<20:07:52> <DEBUG>		Event:	LOOT_READY	true", -- [1381]
-			"<20:07:52> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11941::::::::48:70:::::::::|h[False Documents]|h|r	0	1	GameObject-0-4232-230-30316-160836-00041553CA	1", -- [1382]
-			"<20:07:52> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00041553CA	1", -- [1383]
-			"<20:07:52> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:11940::::::::48:70:::::::::|h[Sparkly Necklace]|h|r	0	1	GameObject-0-4232-230-30316-160836-00041553CA	1", -- [1384]
-			"<20:07:54> <DEBUG>		Event:	LOOT_CLOSED", -- [1385]
-			"<20:07:54> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:11941::::::::48:70:::::::::|h[False Documents]|h|r	0", -- [1386]
-			"<20:07:54> <DEBUG>		Event:	LOOT_CLOSED", -- [1387]
-			"<20:07:54> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0", -- [1388]
-			"<20:07:54> <DEBUG>		Event:	LOOT_CLOSED", -- [1389]
-			"<20:07:54> <DEBUG>		OnLootSlotCleared()	3	|cff9d9d9d|Hitem:11940::::::::48:70:::::::::|h[Sparkly Necklace]|h|r	0", -- [1390]
-			"<20:07:54> <DEBUG>		Event:	LOOT_CLOSED", -- [1391]
-			"<20:07:54> <Comm>		^1^Sl^T^N1^S160836^t^^	WHISPER	Valmagus-Zul'jin", -- [1392]
-			"<20:07:54> <DEBUG>		Event:	LOOT_READY	true", -- [1393]
-			"<20:07:54> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Item-61-0-4000000B430929CC	780", -- [1394]
-			"<20:07:54> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1395]
-			"<20:07:54> <DEBUG>		Event:	LOOT_CLOSED", -- [1396]
-			"<20:07:54> <DEBUG>		Event:	LOOT_CLOSED", -- [1397]
-			"<20:07:54> <Comm>		^1^Sl^T^N1^S0^t^^	WHISPER	Valmagus-Zul'jin", -- [1398]
-			"<20:07:54> <Comm>		^1^Sl^T^N1^S0^t^^	WHISPER	Valmagus-Zul'jin", -- [1399]
-			"<20:07:59> <DEBUG>		Event:	LOOT_READY	true", -- [1400]
-			"<20:07:59> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11941::::::::48:70:::::::::|h[False Documents]|h|r	0	1	GameObject-0-4232-230-30316-160836-00041553CA	1", -- [1401]
-			"<20:07:59> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00041553CA	1", -- [1402]
-			"<20:07:59> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:11940::::::::48:70:::::::::|h[Sparkly Necklace]|h|r	0	1	GameObject-0-4232-230-30316-160836-00041553CA	1", -- [1403]
-			"<20:07:59> <DEBUG>		OnLootSlotCleared()	3	|cff9d9d9d|Hitem:11940::::::::48:70:::::::::|h[Sparkly Necklace]|h|r	0", -- [1404]
-			"<20:07:59> <DEBUG>		Event:	LOOT_READY	true", -- [1405]
-			"<20:07:59> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11941::::::::48:70:::::::::|h[False Documents]|h|r	0	1	GameObject-0-4232-230-30316-160836-00041553CA	1", -- [1406]
-			"<20:07:59> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00041553CA	1", -- [1407]
-			"<20:07:59> <DEBUG>		Event:	LOOT_READY	true", -- [1408]
-			"<20:07:59> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11941::::::::48:70:::::::::|h[False Documents]|h|r	0	1	GameObject-0-4232-230-30316-160836-00041553CA	1", -- [1409]
-			"<20:07:59> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00041553CA	1", -- [1410]
-			"<20:07:59> <DEBUG>		Event:	LOOT_READY	true", -- [1411]
-			"<20:07:59> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11941::::::::48:70:::::::::|h[False Documents]|h|r	0	1	GameObject-0-4232-230-30316-160836-00041553CA	1", -- [1412]
-			"<20:07:59> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00041553CA	1", -- [1413]
-			"<20:08:04> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:11941::::::::48:70:::::::::|h[False Documents]|h|r	0", -- [1414]
-			"<20:08:10> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0", -- [1415]
-			"<20:08:10> <DEBUG>		Event:	LOOT_CLOSED", -- [1416]
-			"<20:08:10> <DEBUG>		Event:	LOOT_CLOSED", -- [1417]
-			"<20:08:10> <Comm>		^1^Sl^T^N1^S160836^t^^	WHISPER	Valmagus-Zul'jin", -- [1418]
-			"<20:08:10> <Comm>		^1^Sl^T^N1^S160836^t^^	WHISPER	Valmagus-Zul'jin", -- [1419]
-			"<20:08:14> <DEBUG>		Event:	LOOT_READY	true", -- [1420]
-			"<20:08:14> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11944::::::::48:70:::::::::|h[Dark Iron Baby Booties]|h|r	0	1	GameObject-0-4232-230-30316-160836-00021553CA	1", -- [1421]
-			"<20:08:14> <DEBUG>		Adding to self.lootSlotInfo	2	|cffffffff|Hitem:11938::::::::48:70::1::1:28:201:::::|h[Sack of Gems]|h|r	1	1	GameObject-0-4232-230-30316-160836-00021553CA	1", -- [1422]
-			"<20:08:14> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00021553CA	1", -- [1423]
-			"<20:08:14> <DEBUG>		Adding to self.lootSlotInfo	4	|cffffffff|Hitem:11966::::::::48:70::1::1:28:201:::::|h[Small Sack of Coins]|h|r	1	1	GameObject-0-4232-230-30316-160836-00021553CA	1", -- [1424]
-			"<20:08:14> <DEBUG>		OnLootSlotCleared()	4	|cffffffff|Hitem:11966::::::::48:70::1::1:28:201:::::|h[Small Sack of Coins]|h|r	1", -- [1425]
-			"<20:08:14> <DEBUG>		Event:	LOOT_READY	true", -- [1426]
-			"<20:08:14> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11944::::::::48:70:::::::::|h[Dark Iron Baby Booties]|h|r	0	1	GameObject-0-4232-230-30316-160836-00021553CA	1", -- [1427]
-			"<20:08:14> <DEBUG>		Adding to self.lootSlotInfo	2	|cffffffff|Hitem:11938::::::::48:70::1::1:28:201:::::|h[Sack of Gems]|h|r	1	1	GameObject-0-4232-230-30316-160836-00021553CA	1", -- [1428]
-			"<20:08:14> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00021553CA	1", -- [1429]
-			"<20:08:15> <DEBUG>		Event:	LOOT_CLOSED", -- [1430]
-			"<20:08:15> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:11944::::::::48:70:::::::::|h[Dark Iron Baby Booties]|h|r	0", -- [1431]
-			"<20:08:15> <DEBUG>		Event:	LOOT_CLOSED", -- [1432]
-			"<20:08:15> <DEBUG>		OnLootSlotCleared()	2	|cffffffff|Hitem:11938::::::::48:70::1::1:28:201:::::|h[Sack of Gems]|h|r	1", -- [1433]
-			"<20:08:15> <DEBUG>		Event:	LOOT_CLOSED", -- [1434]
-			"<20:08:15> <DEBUG>		OnLootSlotCleared()	3	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0", -- [1435]
-			"<20:08:15> <DEBUG>		Event:	LOOT_CLOSED", -- [1436]
-			"<20:08:15> <DEBUG>		Event:	LOOT_READY	true", -- [1437]
-			"<20:08:15> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Item-61-0-4000000B43093139	102", -- [1438]
-			"<20:08:15> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1439]
-			"<20:08:15> <DEBUG>		Event:	LOOT_CLOSED", -- [1440]
-			"<20:08:15> <DEBUG>		Event:	LOOT_CLOSED", -- [1441]
-			"<20:08:16> <Comm>		^1^Sl^T^N1^S160836^t^^	WHISPER	Valmagus-Zul'jin", -- [1442]
-			"<20:08:16> <Comm>		^1^Sl^T^N1^S0^t^^	WHISPER	Valmagus-Zul'jin", -- [1443]
-			"<20:08:16> <Comm>		^1^Sl^T^N1^S0^t^^	WHISPER	Valmagus-Zul'jin", -- [1444]
-			"<20:08:18> <DEBUG>		Event:	LOOT_READY	true", -- [1445]
-			"<20:08:18> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11944::::::::48:70:::::::::|h[Dark Iron Baby Booties]|h|r	0	1	GameObject-0-4232-230-30316-160836-00021553CA	1", -- [1446]
-			"<20:08:18> <DEBUG>		Adding to self.lootSlotInfo	2	|cffffffff|Hitem:11938::::::::48:70::1::1:28:201:::::|h[Sack of Gems]|h|r	1	1	GameObject-0-4232-230-30316-160836-00021553CA	1", -- [1447]
-			"<20:08:18> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00021553CA	1", -- [1448]
-			"<20:08:18> <DEBUG>		OnLootSlotCleared()	3	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0", -- [1449]
-			"<20:08:18> <DEBUG>		Event:	LOOT_READY	true", -- [1450]
-			"<20:08:18> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11944::::::::48:70:::::::::|h[Dark Iron Baby Booties]|h|r	0	1	GameObject-0-4232-230-30316-160836-00021553CA	1", -- [1451]
-			"<20:08:18> <DEBUG>		Adding to self.lootSlotInfo	2	|cffffffff|Hitem:11938::::::::48:70::1::1:28:201:::::|h[Sack of Gems]|h|r	1	1	GameObject-0-4232-230-30316-160836-00021553CA	1", -- [1452]
-			"<20:08:18> <DEBUG>		Event:	LOOT_READY	true", -- [1453]
-			"<20:08:18> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11944::::::::48:70:::::::::|h[Dark Iron Baby Booties]|h|r	0	1	GameObject-0-4232-230-30316-160836-00021553CA	1", -- [1454]
-			"<20:08:18> <DEBUG>		Adding to self.lootSlotInfo	2	|cffffffff|Hitem:11938::::::::48:70::1::1:28:201:::::|h[Sack of Gems]|h|r	1	1	GameObject-0-4232-230-30316-160836-00021553CA	1", -- [1455]
-			"<20:08:18> <DEBUG>		Event:	LOOT_READY	true", -- [1456]
-			"<20:08:18> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11944::::::::48:70:::::::::|h[Dark Iron Baby Booties]|h|r	0	1	GameObject-0-4232-230-30316-160836-00021553CA	1", -- [1457]
-			"<20:08:18> <DEBUG>		Adding to self.lootSlotInfo	2	|cffffffff|Hitem:11938::::::::48:70::1::1:28:201:::::|h[Sack of Gems]|h|r	1	1	GameObject-0-4232-230-30316-160836-00021553CA	1", -- [1458]
-			"<20:08:22> <DEBUG>		Event:	LOOT_CLOSED", -- [1459]
-			"<20:08:22> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:11944::::::::48:70:::::::::|h[Dark Iron Baby Booties]|h|r	0", -- [1460]
-			"<20:08:22> <DEBUG>		Event:	LOOT_CLOSED", -- [1461]
-			"<20:08:22> <DEBUG>		OnLootSlotCleared()	2	|cffffffff|Hitem:11938::::::::48:70::1::1:28:201:::::|h[Sack of Gems]|h|r	1", -- [1462]
-			"<20:08:22> <DEBUG>		Event:	LOOT_CLOSED", -- [1463]
-			"<20:08:22> <Comm>		^1^Sl^T^N1^S160836^t^^	WHISPER	Valmagus-Zul'jin", -- [1464]
-			"<20:08:26> <DEBUG>		Event:	LOOT_READY	true", -- [1465]
-			"<20:08:26> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11944::::::::48:70:::::::::|h[Dark Iron Baby Booties]|h|r	0	1	GameObject-0-4232-230-30316-160836-00021553CA	1", -- [1466]
-			"<20:08:26> <DEBUG>		Adding to self.lootSlotInfo	2	|cffffffff|Hitem:11938::::::::48:70::1::1:28:201:::::|h[Sack of Gems]|h|r	1	1	GameObject-0-4232-230-30316-160836-00021553CA	1", -- [1467]
-			"<20:08:26> <DEBUG>		OnLootSlotCleared()	2	|cffffffff|Hitem:11938::::::::48:70::1::1:28:201:::::|h[Sack of Gems]|h|r	1", -- [1468]
-			"<20:08:26> <DEBUG>		Event:	LOOT_READY	true", -- [1469]
-			"<20:08:26> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11944::::::::48:70:::::::::|h[Dark Iron Baby Booties]|h|r	0	1	GameObject-0-4232-230-30316-160836-00021553CA	1", -- [1470]
-			"<20:08:26> <DEBUG>		Event:	LOOT_READY	true", -- [1471]
-			"<20:08:26> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11944::::::::48:70:::::::::|h[Dark Iron Baby Booties]|h|r	0	1	GameObject-0-4232-230-30316-160836-00021553CA	1", -- [1472]
-			"<20:08:28> <DEBUG>		Event:	LOOT_CLOSED", -- [1473]
-			"<20:08:28> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:11944::::::::48:70:::::::::|h[Dark Iron Baby Booties]|h|r	0", -- [1474]
-			"<20:08:28> <DEBUG>		Event:	LOOT_CLOSED", -- [1475]
-			"<20:08:28> <Comm>		^1^Sl^T^N1^S160836^t^^	WHISPER	Valmagus-Zul'jin", -- [1476]
-			"<20:08:30> <DEBUG>		Event:	LOOT_READY	true", -- [1477]
-			"<20:08:30> <DEBUG>		Event:	LOOT_READY	true", -- [1478]
-			"<20:08:30> <DEBUG>		Event:	LOOT_READY	true", -- [1479]
-			"<20:08:30> <DEBUG>		Event:	LOOT_READY	true", -- [1480]
-			"<20:08:30> <DEBUG>		Event:	LOOT_READY	true", -- [1481]
-			"<20:08:30> <DEBUG>		Event:	LOOT_READY	true", -- [1482]
-			"<20:08:31> <DEBUG>		Event:	LOOT_READY	true", -- [1483]
-			"<20:08:32> <DEBUG>		Event:	LOOT_CLOSED", -- [1484]
-			"<20:08:34> <DEBUG>		Event:	LOOT_READY	true", -- [1485]
-			"<20:08:34> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11944::::::::48:70:::::::::|h[Dark Iron Baby Booties]|h|r	0	1	GameObject-0-4232-230-30316-160836-00021553CA	1", -- [1486]
-			"<20:08:34> <DEBUG>		Event:	LOOT_READY	true", -- [1487]
-			"<20:08:34> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11944::::::::48:70:::::::::|h[Dark Iron Baby Booties]|h|r	0	1	GameObject-0-4232-230-30316-160836-00021553CA	1", -- [1488]
-			"<20:08:34> <DEBUG>		Event:	LOOT_READY	true", -- [1489]
-			"<20:08:34> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11944::::::::48:70:::::::::|h[Dark Iron Baby Booties]|h|r	0	1	GameObject-0-4232-230-30316-160836-00021553CA	1", -- [1490]
-			"<20:08:36> <DEBUG>		Event:	LOOT_CLOSED", -- [1491]
-			"<20:08:36> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:11944::::::::48:70:::::::::|h[Dark Iron Baby Booties]|h|r	0", -- [1492]
-			"<20:08:36> <DEBUG>		Event:	LOOT_CLOSED", -- [1493]
-			"<20:08:36> <Comm>		^1^Sl^T^N1^S160836^t^^	WHISPER	Valmagus-Zul'jin", -- [1494]
-			"<20:08:44> <DEBUG>		Event:	LOOT_READY	true", -- [1495]
-			"<20:08:44> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11944::::::::48:70:::::::::|h[Dark Iron Baby Booties]|h|r	0	1	GameObject-0-4232-230-30316-160836-00021553CA	1", -- [1496]
-			"<20:08:44> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:11944::::::::48:70:::::::::|h[Dark Iron Baby Booties]|h|r	0", -- [1497]
-			"<20:08:44> <DEBUG>		Event:	LOOT_CLOSED", -- [1498]
-			"<20:08:44> <DEBUG>		Event:	LOOT_CLOSED", -- [1499]
-			"<20:08:45> <Comm>		^1^Sl^T^N1^S160836^t^^	WHISPER	Valmagus-Zul'jin", -- [1500]
-			"<20:08:45> <Comm>		^1^Sl^T^N1^S160836^t^^	WHISPER	Valmagus-Zul'jin", -- [1501]
-			"<20:08:51> <DEBUG>		Event:	LOOT_READY	true", -- [1502]
-			"<20:08:51> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00039553CA	1", -- [1503]
-			"<20:08:51> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:11940::::::::48:70:::::::::|h[Sparkly Necklace]|h|r	0	1	GameObject-0-4232-230-30316-160836-00039553CA	1", -- [1504]
-			"<20:08:51> <DEBUG>		Adding to self.lootSlotInfo	3	|cffffffff|Hitem:11966::::::::48:70::1::1:28:201:::::|h[Small Sack of Coins]|h|r	1	1	GameObject-0-4232-230-30316-160836-00039553CA	1", -- [1505]
-			"<20:08:51> <DEBUG>		OnLootSlotCleared()	3	|cffffffff|Hitem:11966::::::::48:70::1::1:28:201:::::|h[Small Sack of Coins]|h|r	1", -- [1506]
-			"<20:08:51> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:11940::::::::48:70:::::::::|h[Sparkly Necklace]|h|r	0", -- [1507]
-			"<20:08:51> <DEBUG>		Event:	LOOT_READY	true", -- [1508]
-			"<20:08:51> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00039553CA	1", -- [1509]
-			"<20:08:51> <DEBUG>		Event:	LOOT_READY	true", -- [1510]
-			"<20:08:51> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00039553CA	1", -- [1511]
-			"<20:08:52> <DEBUG>		Event:	LOOT_CLOSED", -- [1512]
-			"<20:08:52> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0", -- [1513]
-			"<20:08:52> <DEBUG>		Event:	LOOT_CLOSED", -- [1514]
-			"<20:08:52> <Comm>		^1^Sl^T^N1^S160836^t^^	WHISPER	Valmagus-Zul'jin", -- [1515]
-			"<20:08:52> <DEBUG>		Event:	LOOT_READY	true", -- [1516]
-			"<20:08:52> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Item-61-0-4000000B43093F1D	722", -- [1517]
-			"<20:08:52> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1518]
-			"<20:08:52> <DEBUG>		Event:	LOOT_CLOSED", -- [1519]
-			"<20:08:52> <DEBUG>		Event:	LOOT_CLOSED", -- [1520]
-			"<20:08:53> <Comm>		^1^Sl^T^N1^S0^t^^	WHISPER	Valmagus-Zul'jin", -- [1521]
-			"<20:08:53> <Comm>		^1^Sl^T^N1^S0^t^^	WHISPER	Valmagus-Zul'jin", -- [1522]
-			"<20:08:56> <DEBUG>		Event:	LOOT_READY	true", -- [1523]
-			"<20:08:56> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00039553CA	1", -- [1524]
-			"<20:08:56> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0", -- [1525]
-			"<20:08:56> <DEBUG>		Event:	LOOT_CLOSED", -- [1526]
-			"<20:08:56> <DEBUG>		Event:	LOOT_CLOSED", -- [1527]
-			"<20:08:56> <Comm>		^1^Sl^T^N1^S160836^t^^	WHISPER	Valmagus-Zul'jin", -- [1528]
-			"<20:08:56> <Comm>		^1^Sl^T^N1^S160836^t^^	WHISPER	Valmagus-Zul'jin", -- [1529]
-			"<20:09:06> <DEBUG>		Event:	LOOT_READY	true", -- [1530]
-			"<20:09:06> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11940::::::::48:70:::::::::|h[Sparkly Necklace]|h|r	0	1	GameObject-0-4232-230-30316-160836-00001553CA	1", -- [1531]
-			"<20:09:06> <DEBUG>		Adding to self.lootSlotInfo	2	|cffffffff|Hitem:11966::::::::48:70::1::1:28:201:::::|h[Small Sack of Coins]|h|r	1	1	GameObject-0-4232-230-30316-160836-00001553CA	1", -- [1532]
-			"<20:09:07> <DEBUG>		OnLootSlotCleared()	2	|cffffffff|Hitem:11966::::::::48:70::1::1:28:201:::::|h[Small Sack of Coins]|h|r	1", -- [1533]
-			"<20:09:07> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:11940::::::::48:70:::::::::|h[Sparkly Necklace]|h|r	0", -- [1534]
-			"<20:09:07> <DEBUG>		Event:	LOOT_CLOSED", -- [1535]
-			"<20:09:07> <DEBUG>		Event:	LOOT_CLOSED", -- [1536]
-			"<20:09:07> <Comm>		^1^Sl^T^N1^S160836^t^^	WHISPER	Valmagus-Zul'jin", -- [1537]
-			"<20:09:07> <Comm>		^1^Sl^T^N1^S160836^t^^	WHISPER	Valmagus-Zul'jin", -- [1538]
-			"<20:09:11> <DEBUG>		Event:	LOOT_READY	true", -- [1539]
-			"<20:09:11> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Item-61-0-4000000B43094596	722", -- [1540]
-			"<20:09:11> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1541]
-			"<20:09:11> <DEBUG>		Event:	LOOT_CLOSED", -- [1542]
-			"<20:09:11> <DEBUG>		Event:	LOOT_CLOSED", -- [1543]
-			"<20:09:11> <Comm>		^1^Sl^T^N1^S0^t^^	WHISPER	Valmagus-Zul'jin", -- [1544]
-			"<20:09:11> <Comm>		^1^Sl^T^N1^S0^t^^	WHISPER	Valmagus-Zul'jin", -- [1545]
-			"<20:09:19> <DEBUG>		Event:	LOOT_READY	true", -- [1546]
-			"<20:09:19> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11940::::::::48:70:::::::::|h[Sparkly Necklace]|h|r	0	1	GameObject-0-4232-230-30316-160836-00009553CB	1", -- [1547]
-			"<20:09:19> <DEBUG>		Adding to self.lootSlotInfo	2	|cffffffff|Hitem:11966::::::::48:70::1::1:28:201:::::|h[Small Sack of Coins]|h|r	1	1	GameObject-0-4232-230-30316-160836-00009553CB	1", -- [1548]
-			"<20:09:19> <DEBUG>		OnLootSlotCleared()	2	|cffffffff|Hitem:11966::::::::48:70::1::1:28:201:::::|h[Small Sack of Coins]|h|r	1", -- [1549]
-			"<20:09:19> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:11940::::::::48:70:::::::::|h[Sparkly Necklace]|h|r	0", -- [1550]
-			"<20:09:19> <DEBUG>		Event:	LOOT_CLOSED", -- [1551]
-			"<20:09:19> <DEBUG>		Event:	LOOT_CLOSED", -- [1552]
-			"<20:09:19> <Comm>		^1^Sl^T^N1^S160836^t^^	WHISPER	Valmagus-Zul'jin", -- [1553]
-			"<20:09:19> <Comm>		^1^Sl^T^N1^S160836^t^^	WHISPER	Valmagus-Zul'jin", -- [1554]
-			"<20:09:21> <DEBUG>		Event:	LOOT_READY	true", -- [1555]
-			"<20:09:21> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Item-61-0-4000000B43094B68	522", -- [1556]
-			"<20:09:21> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1557]
-			"<20:09:21> <DEBUG>		Event:	LOOT_CLOSED", -- [1558]
-			"<20:09:21> <DEBUG>		Event:	LOOT_CLOSED", -- [1559]
-			"<20:09:21> <Comm>		^1^Sl^T^N1^S0^t^^	WHISPER	Valmagus-Zul'jin", -- [1560]
-			"<20:09:21> <Comm>		^1^Sl^T^N1^S0^t^^	WHISPER	Valmagus-Zul'jin", -- [1561]
-			"<20:09:30> <DEBUG>		Event:	LOOT_READY	true", -- [1562]
-			"<20:09:30> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11942::::::::48:70:::::::::|h[Legal Documents]|h|r	0	1	GameObject-0-4232-230-30316-160836-00009553CA	1", -- [1563]
-			"<20:09:30> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00009553CA	1", -- [1564]
-			"<20:09:30> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:11940::::::::48:70:::::::::|h[Sparkly Necklace]|h|r	0	1	GameObject-0-4232-230-30316-160836-00009553CA	1", -- [1565]
-			"<20:09:30> <DEBUG>		Adding to self.lootSlotInfo	4	|cffffffff|Hitem:11966::::::::48:70::1::1:28:201:::::|h[Small Sack of Coins]|h|r	1	1	GameObject-0-4232-230-30316-160836-00009553CA	1", -- [1566]
-			"<20:09:30> <DEBUG>		OnLootSlotCleared()	4	|cffffffff|Hitem:11966::::::::48:70::1::1:28:201:::::|h[Small Sack of Coins]|h|r	1", -- [1567]
-			"<20:09:30> <DEBUG>		OnLootSlotCleared()	3	|cff9d9d9d|Hitem:11940::::::::48:70:::::::::|h[Sparkly Necklace]|h|r	0", -- [1568]
-			"<20:09:30> <DEBUG>		Event:	LOOT_READY	true", -- [1569]
-			"<20:09:30> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11942::::::::48:70:::::::::|h[Legal Documents]|h|r	0	1	GameObject-0-4232-230-30316-160836-00009553CA	1", -- [1570]
-			"<20:09:30> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00009553CA	1", -- [1571]
-			"<20:09:30> <DEBUG>		Event:	LOOT_READY	true", -- [1572]
-			"<20:09:30> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11942::::::::48:70:::::::::|h[Legal Documents]|h|r	0	1	GameObject-0-4232-230-30316-160836-00009553CA	1", -- [1573]
-			"<20:09:30> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00009553CA	1", -- [1574]
-			"<20:09:30> <DEBUG>		Event:	LOOT_READY	true", -- [1575]
-			"<20:09:30> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11942::::::::48:70:::::::::|h[Legal Documents]|h|r	0	1	GameObject-0-4232-230-30316-160836-00009553CA	1", -- [1576]
-			"<20:09:30> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00009553CA	1", -- [1577]
-			"<20:09:31> <DEBUG>		Event:	LOOT_CLOSED", -- [1578]
-			"<20:09:31> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:11942::::::::48:70:::::::::|h[Legal Documents]|h|r	0", -- [1579]
-			"<20:09:31> <DEBUG>		Event:	LOOT_CLOSED", -- [1580]
-			"<20:09:31> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0", -- [1581]
-			"<20:09:31> <DEBUG>		Event:	LOOT_CLOSED", -- [1582]
-			"<20:09:31> <DEBUG>		Event:	LOOT_READY	true", -- [1583]
-			"<20:09:31> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Item-61-0-4000000B43094D4D	991", -- [1584]
-			"<20:09:31> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1585]
-			"<20:09:31> <DEBUG>		Event:	LOOT_CLOSED", -- [1586]
-			"<20:09:31> <DEBUG>		Event:	LOOT_CLOSED", -- [1587]
-			"<20:09:31> <Comm>		^1^Sl^T^N1^S160836^t^^	WHISPER	Valmagus-Zul'jin", -- [1588]
-			"<20:09:32> <Comm>		^1^Sl^T^N1^S0^t^^	WHISPER	Valmagus-Zul'jin", -- [1589]
-			"<20:09:32> <Comm>		^1^Sl^T^N1^S0^t^^	WHISPER	Valmagus-Zul'jin", -- [1590]
-			"<20:09:38> <DEBUG>		Event:	LOOT_READY	true", -- [1591]
-			"<20:09:38> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11942::::::::48:70:::::::::|h[Legal Documents]|h|r	0	1	GameObject-0-4232-230-30316-160836-00009553CA	1", -- [1592]
-			"<20:09:38> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00009553CA	1", -- [1593]
-			"<20:09:38> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0", -- [1594]
-			"<20:09:38> <DEBUG>		Event:	LOOT_READY	true", -- [1595]
-			"<20:09:38> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11942::::::::48:70:::::::::|h[Legal Documents]|h|r	0	1	GameObject-0-4232-230-30316-160836-00009553CA	1", -- [1596]
-			"<20:09:38> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:11942::::::::48:70:::::::::|h[Legal Documents]|h|r	0", -- [1597]
-			"<20:09:38> <DEBUG>		Event:	LOOT_CLOSED", -- [1598]
-			"<20:09:38> <DEBUG>		Event:	LOOT_CLOSED", -- [1599]
-			"<20:09:38> <Comm>		^1^Sl^T^N1^S160836^t^^	WHISPER	Valmagus-Zul'jin", -- [1600]
-			"<20:09:38> <Comm>		^1^Sl^T^N1^S160836^t^^	WHISPER	Valmagus-Zul'jin", -- [1601]
-			"<20:09:49> <DEBUG>		Event:	LOOT_READY	true", -- [1602]
-			"<20:09:49> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11941::::::::48:70:::::::::|h[False Documents]|h|r	0	1	GameObject-0-4232-230-30316-160836-00029553CA	1", -- [1603]
-			"<20:09:49> <DEBUG>		Adding to self.lootSlotInfo	2	|cffffffff|Hitem:11966::::::::48:70::1::1:28:201:::::|h[Small Sack of Coins]|h|r	1	1	GameObject-0-4232-230-30316-160836-00029553CA	1", -- [1604]
-			"<20:09:50> <DEBUG>		OnLootSlotCleared()	2	|cffffffff|Hitem:11966::::::::48:70::1::1:28:201:::::|h[Small Sack of Coins]|h|r	1", -- [1605]
-			"<20:09:50> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:11941::::::::48:70:::::::::|h[False Documents]|h|r	0", -- [1606]
-			"<20:09:50> <DEBUG>		Event:	LOOT_CLOSED", -- [1607]
-			"<20:09:50> <DEBUG>		Event:	LOOT_CLOSED", -- [1608]
-			"<20:09:50> <Comm>		^1^Sl^T^N1^S160836^t^^	WHISPER	Valmagus-Zul'jin", -- [1609]
-			"<20:09:50> <Comm>		^1^Sl^T^N1^S160836^t^^	WHISPER	Valmagus-Zul'jin", -- [1610]
-			"<20:10:45> <DEBUG>		Event:	LOOT_READY	true", -- [1611]
-			"<20:10:45> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8896-000B9553CA	2737	Creature-0-4232-230-30316-8895-00029553CA	8028	Creature-0-4232-230-30316-8896-000B1553CA	1274	Creature-0-4232-230-30316-8897-00081553CA	2292	Creature-0-4232-230-30316-8913-00021553CA	6486	Creature-0-4232-230-30316-8913-00029553CA	5865", -- [1612]
-			"<20:10:45> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	2	Creature-0-4232-230-30316-8896-000B9553CA	2", -- [1613]
-			"<20:10:45> <DEBUG>		Adding to self.lootSlotInfo	5	|cffffffff|Hitem:11078::::::::48:70:::::::::|h[Relic Coffer Key]|h|r	1	1	Creature-0-4232-230-30316-8895-00029553CA	1", -- [1614]
-			"<20:10:45> <DEBUG>		Adding to self.lootSlotInfo	7	|cff1eff00|Hitem:11976::::::::48:70::1:2:6654:1694:1:28:201:::::|h[Sardonyx Knuckle of the Fireflash]|h|r	2	1	Creature-0-4232-230-30316-8913-00021553CA	1", -- [1615]
-			"<20:10:45> <DEBUG>		OnLootSlotCleared()	7	|cff1eff00|Hitem:11976::::::::48:70::1:2:6654:1694:1:28:201:::::|h[Sardonyx Knuckle of the Fireflash]|h|r	2", -- [1616]
-			"<20:10:45> <DEBUG>		Event:	LOOT_READY	true", -- [1617]
-			"<20:10:45> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8896-000B9553CA	2737	Creature-0-4232-230-30316-8895-00029553CA	8028	Creature-0-4232-230-30316-8896-000B1553CA	1274	Creature-0-4232-230-30316-8897-00081553CA	2292	Creature-0-4232-230-30316-8913-00021553CA	6486	Creature-0-4232-230-30316-8913-00029553CA	5865", -- [1618]
-			"<20:10:45> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0	2	Creature-0-4232-230-30316-8896-000B9553CA	2", -- [1619]
-			"<20:10:45> <DEBUG>		Adding to self.lootSlotInfo	5	|cffffffff|Hitem:11078::::::::48:70:::::::::|h[Relic Coffer Key]|h|r	1	1	Creature-0-4232-230-30316-8895-00029553CA	1", -- [1620]
-			"<20:10:45> <DEBUG>		OnLootSlotCleared()	5	|cffffffff|Hitem:11078::::::::48:70:::::::::|h[Relic Coffer Key]|h|r	1", -- [1621]
-			"<20:10:46> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1622]
-			"<20:10:46> <DEBUG>		Event:	LOOT_CLOSED", -- [1623]
-			"<20:10:46> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:22528::::::::48:70:::::::::|h[Dark Iron Scraps]|h|r	0", -- [1624]
-			"<20:10:46> <DEBUG>		Event:	LOOT_CLOSED", -- [1625]
-			"<20:10:46> <Comm>		^1^Sl^T^N1^S8895^t^^	WHISPER	Valmagus-Zul'jin", -- [1626]
-			"<20:10:47> <DEBUG>		Storage:New	|cff1eff00|Hitem:11976::::::::48:70::1:2:6654:1694:1:28:201:::::|h[Sardonyx Knuckle of the Fireflash]|h|r	temp", -- [1627]
-			"<20:10:47> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:11976::::::::48:70::1:2:6654:1694:1:28:201:::::||h[Sardonyx Knuckle of the Fireflash]||h||r	5", -- [1628]
-			"<20:10:47> <DEBUG>		Found:	nil	nil	nil", -- [1629]
-			"<20:10:48> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:11976::::::::48:70::1:2:6654:1694:1:28:201:::::||h[Sardonyx Knuckle of the Fireflash]||h||r	5", -- [1630]
-			"<20:10:48> <DEBUG>		Found:	nil	nil	nil", -- [1631]
-			"<20:10:49> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:11976::::::::48:70::1:2:6654:1694:1:28:201:::::||h[Sardonyx Knuckle of the Fireflash]||h||r	5", -- [1632]
-			"<20:10:49> <DEBUG>		Found:	nil	nil	nil", -- [1633]
-			"<20:10:50> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:11976::::::::48:70::1:2:6654:1694:1:28:201:::::||h[Sardonyx Knuckle of the Fireflash]||h||r	5", -- [1634]
-			"<20:10:50> <DEBUG>		Found:	nil	nil	nil", -- [1635]
-			"<20:10:50> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:11976::::::::48:70::1:2:6654:1694:1:28:201:::::|h[Sardonyx Knuckle of the Fireflash]|h|r not found in bags", -- [1636]
-			"<20:11:07> <DEBUG>		Event:	LOOT_READY	true", -- [1637]
-			"<20:11:07> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00049553CA	1", -- [1638]
-			"<20:11:07> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:11940::::::::48:70:::::::::|h[Sparkly Necklace]|h|r	0	1	GameObject-0-4232-230-30316-160836-00049553CA	1", -- [1639]
-			"<20:11:07> <DEBUG>		Adding to self.lootSlotInfo	3	|cffffffff|Hitem:11966::::::::48:70::1::1:28:201:::::|h[Small Sack of Coins]|h|r	1	1	GameObject-0-4232-230-30316-160836-00049553CA	1", -- [1640]
-			"<20:11:08> <DEBUG>		OnLootSlotCleared()	3	|cffffffff|Hitem:11966::::::::48:70::1::1:28:201:::::|h[Small Sack of Coins]|h|r	1", -- [1641]
-			"<20:11:08> <DEBUG>		Event:	LOOT_READY	true", -- [1642]
-			"<20:11:08> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0	1	GameObject-0-4232-230-30316-160836-00049553CA	1", -- [1643]
-			"<20:11:08> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:11940::::::::48:70:::::::::|h[Sparkly Necklace]|h|r	0	1	GameObject-0-4232-230-30316-160836-00049553CA	1", -- [1644]
-			"<20:11:09> <DEBUG>		Event:	LOOT_CLOSED", -- [1645]
-			"<20:11:09> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:11939::::::::48:70:::::::::|h[Shiny Bracelet]|h|r	0", -- [1646]
-			"<20:11:09> <DEBUG>		Event:	LOOT_CLOSED", -- [1647]
-			"<20:11:09> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:11940::::::::48:70:::::::::|h[Sparkly Necklace]|h|r	0", -- [1648]
-			"<20:11:09> <DEBUG>		Event:	LOOT_CLOSED", -- [1649]
-			"<20:11:09> <Comm>		^1^Sl^T^N1^S160836^t^^	WHISPER	Valmagus-Zul'jin", -- [1650]
-			"<20:11:14> <DEBUG>		Event:	LOOT_READY	true", -- [1651]
-			"<20:11:14> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8905-00041553CA	4208	Creature-0-4232-230-30316-8905-00031553CA	5770	Creature-0-4232-230-30316-8905-00039553CA	4248	Creature-0-4232-230-30316-8905-00049553CA	5297", -- [1652]
-			"<20:11:14> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4232-230-30316-8905-00031553CA	1", -- [1653]
-			"<20:11:14> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:4088::::::::48:70::1:2:6655:1691:1:28:201:::::|h[Dreadblade of the Fireflash]|h|r	2	1	Creature-0-4232-230-30316-8905-00041553CA	1", -- [1654]
-			"<20:11:14> <DEBUG>		Event:	LOOT_READY	true", -- [1655]
-			"<20:11:14> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8905-00041553CA	4208	Creature-0-4232-230-30316-8905-00031553CA	5770	Creature-0-4232-230-30316-8905-00039553CA	4248	Creature-0-4232-230-30316-8905-00049553CA	5297", -- [1656]
-			"<20:11:14> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4232-230-30316-8905-00031553CA	1", -- [1657]
-			"<20:11:14> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:4088::::::::48:70::1:2:6655:1691:1:28:201:::::|h[Dreadblade of the Fireflash]|h|r	2	1	Creature-0-4232-230-30316-8905-00041553CA	1", -- [1658]
-			"<20:11:14> <DEBUG>		Event:	LOOT_READY	true", -- [1659]
-			"<20:11:14> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8905-00041553CA	4208	Creature-0-4232-230-30316-8905-00031553CA	5770	Creature-0-4232-230-30316-8905-00039553CA	4248	Creature-0-4232-230-30316-8905-00049553CA	5297", -- [1660]
-			"<20:11:14> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4232-230-30316-8905-00031553CA	1", -- [1661]
-			"<20:11:14> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:4088::::::::48:70::1:2:6655:1691:1:28:201:::::|h[Dreadblade of the Fireflash]|h|r	2	1	Creature-0-4232-230-30316-8905-00041553CA	1", -- [1662]
-			"<20:11:14> <DEBUG>		Event:	LOOT_READY	true", -- [1663]
-			"<20:11:14> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8905-00041553CA	4208	Creature-0-4232-230-30316-8905-00031553CA	5770	Creature-0-4232-230-30316-8905-00039553CA	4248	Creature-0-4232-230-30316-8905-00049553CA	5297", -- [1664]
-			"<20:11:14> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4232-230-30316-8905-00031553CA	1", -- [1665]
-			"<20:11:14> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:4088::::::::48:70::1:2:6655:1691:1:28:201:::::|h[Dreadblade of the Fireflash]|h|r	2	1	Creature-0-4232-230-30316-8905-00041553CA	1", -- [1666]
-			"<20:11:14> <DEBUG>		Event:	LOOT_READY	true", -- [1667]
-			"<20:11:14> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-8905-00041553CA	4208	Creature-0-4232-230-30316-8905-00031553CA	5770	Creature-0-4232-230-30316-8905-00039553CA	4248	Creature-0-4232-230-30316-8905-00049553CA	5297", -- [1668]
-			"<20:11:14> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4232-230-30316-8905-00031553CA	1", -- [1669]
-			"<20:11:14> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:4088::::::::48:70::1:2:6655:1691:1:28:201:::::|h[Dreadblade of the Fireflash]|h|r	2	1	Creature-0-4232-230-30316-8905-00041553CA	1", -- [1670]
-			"<20:11:14> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1671]
-			"<20:11:14> <DEBUG>		Event:	LOOT_READY	true", -- [1672]
-			"<20:11:14> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4232-230-30316-8905-00031553CA	1", -- [1673]
-			"<20:11:14> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:4088::::::::48:70::1:2:6655:1691:1:28:201:::::|h[Dreadblade of the Fireflash]|h|r	2	1	Creature-0-4232-230-30316-8905-00041553CA	1", -- [1674]
-			"<20:11:16> <DEBUG>		Event:	LOOT_CLOSED", -- [1675]
-			"<20:11:16> <DEBUG>		OnLootSlotCleared()	4	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0", -- [1676]
-			"<20:11:16> <DEBUG>		Event:	LOOT_CLOSED", -- [1677]
-			"<20:11:16> <DEBUG>		OnLootSlotCleared()	5	|cff1eff00|Hitem:4088::::::::48:70::1:2:6655:1691:1:28:201:::::|h[Dreadblade of the Fireflash]|h|r	2", -- [1678]
-			"<20:11:16> <DEBUG>		Event:	LOOT_CLOSED", -- [1679]
-			"<20:11:16> <DEBUG>		Event:	LOOT_READY	true", -- [1680]
-			"<20:11:16> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Item-61-0-4000000B430971E2	1130", -- [1681]
-			"<20:11:16> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1682]
-			"<20:11:16> <DEBUG>		Event:	LOOT_CLOSED", -- [1683]
-			"<20:11:16> <DEBUG>		Event:	LOOT_CLOSED", -- [1684]
-			"<20:11:16> <Comm>		^1^Sl^T^N1^S8905^t^^	WHISPER	Valmagus-Zul'jin", -- [1685]
-			"<20:11:16> <Comm>		^1^Sl^T^N1^S0^t^^	WHISPER	Valmagus-Zul'jin", -- [1686]
-			"<20:11:16> <Comm>		^1^Sl^T^N1^S0^t^^	WHISPER	Valmagus-Zul'jin", -- [1687]
-			"<20:11:18> <DEBUG>		Event:	LOOT_READY	true", -- [1688]
-			"<20:11:18> <DEBUG>		Adding to self.lootSlotInfo	1	|cff1eff00|Hitem:4088::::::::48:70::1:2:6655:1691:1:28:201:::::|h[Dreadblade of the Fireflash]|h|r	2	1	Creature-0-4232-230-30316-8905-00041553CA	1", -- [1689]
-			"<20:11:18> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4232-230-30316-8905-00031553CA	1", -- [1690]
-			"<20:11:18> <DEBUG>		OnLootSlotCleared()	4	|cff9d9d9d|Hitem:62518::::::::48:70:::::::::|h[Cracked Stone Shard]|h|r	0", -- [1691]
-			"<20:11:18> <DEBUG>		Event:	LOOT_READY	true", -- [1692]
-			"<20:11:18> <DEBUG>		Adding to self.lootSlotInfo	1	|cff1eff00|Hitem:4088::::::::48:70::1:2:6655:1691:1:28:201:::::|h[Dreadblade of the Fireflash]|h|r	2	1	Creature-0-4232-230-30316-8905-00041553CA	1", -- [1693]
-			"<20:11:18> <DEBUG>		Event:	LOOT_READY	true", -- [1694]
-			"<20:11:18> <DEBUG>		Adding to self.lootSlotInfo	1	|cff1eff00|Hitem:4088::::::::48:70::1:2:6655:1691:1:28:201:::::|h[Dreadblade of the Fireflash]|h|r	2	1	Creature-0-4232-230-30316-8905-00041553CA	1", -- [1695]
-			"<20:11:18> <DEBUG>		Event:	LOOT_READY	true", -- [1696]
-			"<20:11:18> <DEBUG>		Adding to self.lootSlotInfo	1	|cff1eff00|Hitem:4088::::::::48:70::1:2:6655:1691:1:28:201:::::|h[Dreadblade of the Fireflash]|h|r	2	1	Creature-0-4232-230-30316-8905-00041553CA	1", -- [1697]
-			"<20:11:18> <DEBUG>		Event:	LOOT_READY	true", -- [1698]
-			"<20:11:18> <DEBUG>		Adding to self.lootSlotInfo	1	|cff1eff00|Hitem:4088::::::::48:70::1:2:6655:1691:1:28:201:::::|h[Dreadblade of the Fireflash]|h|r	2	1	Creature-0-4232-230-30316-8905-00041553CA	1", -- [1699]
-			"<20:11:18> <DEBUG>		Storage:New	|cff1eff00|Hitem:4088::::::::48:70::1:2:6655:1691:1:28:201:::::|h[Dreadblade of the Fireflash]|h|r	temp", -- [1700]
-			"<20:11:18> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:4088::::::::48:70::1:2:6655:1691:1:28:201:::::||h[Dreadblade of the Fireflash]||h||r	5", -- [1701]
-			"<20:11:18> <DEBUG>		Found:	nil	nil	nil", -- [1702]
-			"<20:11:19> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:4088::::::::48:70::1:2:6655:1691:1:28:201:::::||h[Dreadblade of the Fireflash]||h||r	5", -- [1703]
-			"<20:11:19> <DEBUG>		Found:	nil	nil	nil", -- [1704]
-			"<20:11:20> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:4088::::::::48:70::1:2:6655:1691:1:28:201:::::||h[Dreadblade of the Fireflash]||h||r	5", -- [1705]
-			"<20:11:20> <DEBUG>		Found:	nil	nil	nil", -- [1706]
-			"<20:11:21> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:4088::::::::48:70::1:2:6655:1691:1:28:201:::::||h[Dreadblade of the Fireflash]||h||r	5", -- [1707]
-			"<20:11:21> <DEBUG>		Found:	nil	nil	nil", -- [1708]
-			"<20:11:21> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:4088::::::::48:70::1:2:6655:1691:1:28:201:::::|h[Dreadblade of the Fireflash]|h|r not found in bags", -- [1709]
-			"<20:11:23> <DEBUG>		OnLootSlotCleared()	1	|cff1eff00|Hitem:4088::::::::48:70::1:2:6655:1691:1:28:201:::::|h[Dreadblade of the Fireflash]|h|r	2", -- [1710]
-			"<20:11:25> <DEBUG>		Storage:New	|cff1eff00|Hitem:4088::::::::48:70::1:2:6655:1691:1:28:201:::::|h[Dreadblade of the Fireflash]|h|r	temp", -- [1711]
-			"<20:11:25> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:4088::::::::48:70::1:2:6655:1691:1:28:201:::::||h[Dreadblade of the Fireflash]||h||r	5", -- [1712]
-			"<20:11:25> <DEBUG>		Found:	nil	nil	nil", -- [1713]
-			"<20:11:25> <DEBUG>		Event:	LOOT_CLOSED", -- [1714]
-			"<20:11:26> <Comm>		^1^Sl^T^N1^S8905^t^^	WHISPER	Valmagus-Zul'jin", -- [1715]
-			"<20:11:26> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:4088::::::::48:70::1:2:6655:1691:1:28:201:::::||h[Dreadblade of the Fireflash]||h||r	5", -- [1716]
-			"<20:11:26> <DEBUG>		Found:	nil	nil	nil", -- [1717]
-			"<20:11:27> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:4088::::::::48:70::1:2:6655:1691:1:28:201:::::||h[Dreadblade of the Fireflash]||h||r	5", -- [1718]
-			"<20:11:27> <DEBUG>		Found:	nil	nil	nil", -- [1719]
-			"<20:11:27> <DEBUG>		Event:	LOOT_READY	true", -- [1720]
-			"<20:11:27> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9476-0000155D19	5848", -- [1721]
-			"<20:11:27> <DEBUG>		Event:	LOOT_READY	true", -- [1722]
-			"<20:11:27> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9476-0000155D19	5848", -- [1723]
-			"<20:11:27> <DEBUG>		Event:	LOOT_READY	true", -- [1724]
-			"<20:11:27> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4232-230-30316-9476-0000155D19	5848", -- [1725]
-			"<20:11:27> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1726]
-			"<20:11:27> <DEBUG>		Event:	LOOT_READY	true", -- [1727]
-			"<20:11:28> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:4088::::::::48:70::1:2:6655:1691:1:28:201:::::||h[Dreadblade of the Fireflash]||h||r	5", -- [1728]
-			"<20:11:28> <DEBUG>		Found:	nil	nil	nil", -- [1729]
-			"<20:11:28> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:4088::::::::48:70::1:2:6655:1691:1:28:201:::::|h[Dreadblade of the Fireflash]|h|r not found in bags", -- [1730]
-			"<20:11:29> <DEBUG>		Event:	LOOT_CLOSED", -- [1731]
-			"<20:11:34> <DEBUG>		Event:	LOOT_READY	true", -- [1732]
-			"<20:11:34> <DEBUG>		Event:	LOOT_CLOSED", -- [1733]
-			"<20:11:34> <DEBUG>		Event:	LOOT_CLOSED", -- [1734]
-			"<20:11:37> <DEBUG>		Event:	LOOT_READY	true", -- [1735]
-			"<20:11:37> <DEBUG>		Adding to self.lootSlotInfo	1	|cff0070dd|Hitem:22256::::::::48:70::1:1:6710:1:28:201:::::|h[Mana Shaping Handwraps]|h|r	3	1	GameObject-0-4232-230-30316-161495-00001553CB	1", -- [1736]
-			"<20:11:37> <DEBUG>		Event:	LOOT_READY	true", -- [1737]
-			"<20:11:37> <DEBUG>		Adding to self.lootSlotInfo	1	|cff0070dd|Hitem:22256::::::::48:70::1:1:6710:1:28:201:::::|h[Mana Shaping Handwraps]|h|r	3	1	GameObject-0-4232-230-30316-161495-00001553CB	1", -- [1738]
-			"<20:11:37> <DEBUG>		Event:	LOOT_READY	true", -- [1739]
-			"<20:11:37> <DEBUG>		Adding to self.lootSlotInfo	1	|cff0070dd|Hitem:22256::::::::48:70::1:1:6710:1:28:201:::::|h[Mana Shaping Handwraps]|h|r	3	1	GameObject-0-4232-230-30316-161495-00001553CB	1", -- [1740]
-			"<20:11:38> <DEBUG>		Event:	LOOT_CLOSED", -- [1741]
-			"<20:11:38> <DEBUG>		OnLootSlotCleared()	1	|cff0070dd|Hitem:22256::::::::48:70::1:1:6710:1:28:201:::::|h[Mana Shaping Handwraps]|h|r	3", -- [1742]
-			"<20:11:38> <DEBUG>		Event:	LOOT_CLOSED", -- [1743]
-			"<20:11:38> <Comm>		^1^Sl^T^N1^S161495^t^^	WHISPER	Valmagus-Zul'jin", -- [1744]
-			"<20:11:39> <DEBUG>		Event:	LOOT_READY	true", -- [1745]
-			"<20:11:39> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Item-61-0-4000000B430958A6	303", -- [1746]
-			"<20:11:39> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1747]
-			"<20:11:39> <DEBUG>		Event:	LOOT_CLOSED", -- [1748]
-			"<20:11:39> <DEBUG>		Event:	LOOT_CLOSED", -- [1749]
-			"<20:11:39> <Comm>		^1^Sl^T^N1^S0^t^^	WHISPER	Valmagus-Zul'jin", -- [1750]
-			"<20:11:39> <Comm>		^1^Sl^T^N1^S0^t^^	WHISPER	Valmagus-Zul'jin", -- [1751]
-			"<20:11:40> <DEBUG>		Storage:New	|cff0070dd|Hitem:22256::::::::48:70::1:1:6710:1:28:201:::::|h[Mana Shaping Handwraps]|h|r	temp", -- [1752]
-			"<20:11:40> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:22256::::::::48:70::1:1:6710:1:28:201:::::||h[Mana Shaping Handwraps]||h||r	5", -- [1753]
-			"<20:11:40> <DEBUG>		Found:	nil	nil	nil", -- [1754]
-			"<20:11:40> <DEBUG>		Event:	LOOT_READY	true", -- [1755]
-			"<20:11:40> <DEBUG>		Adding to self.lootSlotInfo	1	|cff0070dd|Hitem:22256::::::::48:70::1:1:6710:1:28:201:::::|h[Mana Shaping Handwraps]|h|r	3	1	GameObject-0-4232-230-30316-161495-00001553CB	1", -- [1756]
-			"<20:11:41> <DEBUG>		OnLootSlotCleared()	1	|cff0070dd|Hitem:22256::::::::48:70::1:1:6710:1:28:201:::::|h[Mana Shaping Handwraps]|h|r	3", -- [1757]
-			"<20:11:41> <DEBUG>		Event:	LOOT_CLOSED", -- [1758]
-			"<20:11:41> <DEBUG>		Event:	LOOT_CLOSED", -- [1759]
-			"<20:11:41> <Comm>		^1^Sl^T^N1^S161495^t^^	WHISPER	Valmagus-Zul'jin", -- [1760]
-			"<20:11:41> <Comm>		^1^Sl^T^N1^S161495^t^^	WHISPER	Valmagus-Zul'jin", -- [1761]
-			"<20:11:41> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:22256::::::::48:70::1:1:6710:1:28:201:::::||h[Mana Shaping Handwraps]||h||r	5", -- [1762]
-			"<20:11:41> <DEBUG>		Found:	nil	nil	nil", -- [1763]
-			"<20:11:41> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	22256	|cff0070dd|Hitem:22256::::::::48:70::1:1:6710:2:28:201:9:30:::::|h[Mana Shaping Handwraps]|h|r	1	Valmagus	PALADIN", -- [1764]
-			"<20:11:42> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:22256::::::::48:70::1:1:6710:1:28:201:::::||h[Mana Shaping Handwraps]||h||r	5", -- [1765]
-			"<20:11:42> <DEBUG>		Found:	nil	nil	nil", -- [1766]
-			"<20:11:43> <DEBUG>		Storage:New	|cff0070dd|Hitem:22256::::::::48:70::1:1:6710:1:28:201:::::|h[Mana Shaping Handwraps]|h|r	temp", -- [1767]
-			"<20:11:43> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:22256::::::::48:70::1:1:6710:1:28:201:::::||h[Mana Shaping Handwraps]||h||r	5", -- [1768]
-			"<20:11:43> <DEBUG>		Found:	nil	nil	nil", -- [1769]
-			"<20:11:43> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:22256::::::::48:70::1:1:6710:1:28:201:::::||h[Mana Shaping Handwraps]||h||r	5", -- [1770]
-			"<20:11:43> <DEBUG>		Found:	nil	nil	nil", -- [1771]
-			"<20:11:43> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:22256::::::::48:70::1:1:6710:1:28:201:::::|h[Mana Shaping Handwraps]|h|r not found in bags", -- [1772]
-			"<20:11:44> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:22256::::::::48:70::1:1:6710:1:28:201:::::||h[Mana Shaping Handwraps]||h||r	5", -- [1773]
-			"<20:11:44> <DEBUG>		Found:	nil	nil	nil", -- [1774]
-			"<20:11:45> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:22256::::::::48:70::1:1:6710:1:28:201:::::||h[Mana Shaping Handwraps]||h||r	5", -- [1775]
-			"<20:11:45> <DEBUG>		Found:	nil	nil	nil", -- [1776]
-			"<20:11:46> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:22256::::::::48:70::1:1:6710:1:28:201:::::||h[Mana Shaping Handwraps]||h||r	5", -- [1777]
-			"<20:11:46> <DEBUG>		Found:	nil	nil	nil", -- [1778]
-			"<20:11:46> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:22256::::::::48:70::1:1:6710:1:28:201:::::|h[Mana Shaping Handwraps]|h|r not found in bags", -- [1779]
-			"<20:12:49> <DEBUG>		Event:	LOOT_READY	true", -- [1780]
-			"<20:12:49> <DEBUG>		Event:	LOOT_READY	true", -- [1781]
-			"<20:12:49> <DEBUG>		Event:	LOOT_CLOSED", -- [1782]
-			"<20:12:49> <DEBUG>		Event:	LOOT_CLOSED", -- [1783]
-			"<20:12:50> <DEBUG>		Event:	LOOT_READY	true", -- [1784]
-			"<20:12:50> <DEBUG>		Event:	LOOT_READY	true", -- [1785]
-			"<20:12:50> <DEBUG>		Event:	LOOT_CLOSED", -- [1786]
-			"<20:12:50> <DEBUG>		Event:	LOOT_CLOSED", -- [1787]
-			"<20:13:21> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1788]
-			"<20:13:21> <INFO>		UpdatePlayersData()", -- [1789]
-			"<20:13:25> <DEBUG>		GetML()", -- [1790]
-			"<20:15:39> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1791]
-			"<20:15:39> <INFO>		UpdatePlayersData()", -- [1792]
-			"<20:15:41> <DEBUG>		GetML()", -- [1793]
-			"<20:16:25> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1794]
-			"<20:16:25> <INFO>		UpdatePlayersData()", -- [1795]
-			"<20:16:28> <DEBUG>		GetML()", -- [1796]
-			"05/30/22", -- [1797]
-			"<21:43:53> <INFO>		Logged In", -- [1798]
-			"<21:43:53> [ML]<INFO>		Init", -- [1799]
-			"<21:43:53> <INFO>		RCLootCouncil	TradeUI enabled", -- [1800]
-			"<21:44:10> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Zulbathal-Zul'jin	Player-61-0CA8EB69", -- [1801]
-			"<21:44:10> <INFO>		Zulbathal-Zul'jin	3.3.0	nil", -- [1802]
-			"<21:44:10> <DEBUG>		ActivateSkin	bfa", -- [1803]
-			"<21:44:22> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1804]
-			"<21:44:22> <INFO>		UpdatePlayersData()", -- [1805]
-			"<21:44:22> <INFO>		Player relog...", -- [1806]
-			"<21:44:32> <DEBUG>		GetML()", -- [1807]
-			"<21:44:32> <DEBUG>		Storage:New	|cff1eff00|Hitem:4638::::::::48:70::1::1:28:201:::::|h[Reinforced Steel Lockbox]|h|r	temp	restored	table: 00000246BB24BBD0", -- [1808]
-			"<21:44:32> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:4638::::::::48:70::1::1:28:201:::::||h[Reinforced Steel Lockbox]||h||r	5", -- [1809]
-			"<21:44:32> <DEBUG>		Found:	nil	nil	nil", -- [1810]
-			"<21:44:32> <WARNING>		ItemStorage, db item no longer in bags	|cff1eff00|Hitem:4638::::::::48:70::1::1:28:201:::::|h[Reinforced Steel Lockbox]|h|r", -- [1811]
-			"<21:44:32> <DEBUG>		Storage:RemoveItem	|cff1eff00|Hitem:4638::::::::48:70::1::1:28:201:::::|h[Reinforced Steel Lockbox]|h|r", -- [1812]
-			"05/30/22", -- [1813]
-			"<21:49:31> <INFO>		Logged In", -- [1814]
-			"<21:49:31> [ML]<INFO>		Init", -- [1815]
-			"<21:49:31> <INFO>		RCLootCouncil	TradeUI enabled", -- [1816]
-			"<21:49:51> <INFO>		Valmagus-Zul'jin	3.3.0	nil", -- [1817]
-			"<21:49:51> <DEBUG>		ActivateSkin	bfa", -- [1818]
-			"<21:50:04> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1819]
-			"<21:50:04> <INFO>		UpdatePlayersData()", -- [1820]
-			"<21:50:04> <INFO>		Player relog...", -- [1821]
-			"<21:50:12> <DEBUG>		GetML()", -- [1822]
-			"<21:50:59> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1823]
-			"<21:50:59> <INFO>		UpdatePlayersData()", -- [1824]
-			"<21:51:01> <DEBUG>		GetML()", -- [1825]
-			"<21:51:40> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1826]
-			"<21:51:40> <INFO>		UpdatePlayersData()", -- [1827]
-			"<21:51:43> <DEBUG>		GetML()", -- [1828]
-			"<21:52:18> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1829]
-			"<21:52:18> <INFO>		UpdatePlayersData()", -- [1830]
-			"<21:52:19> <DEBUG>		GetML()", -- [1831]
-			"<21:57:19> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1832]
-			"<21:57:19> <INFO>		UpdatePlayersData()", -- [1833]
-			"<21:57:20> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1834]
-			"<21:57:21> <DEBUG>		GetML()", -- [1835]
-			"<21:57:22> <DEBUG>		GetML()", -- [1836]
-			"<22:02:43> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1837]
-			"<22:02:43> <INFO>		UpdatePlayersData()", -- [1838]
-			"<22:02:44> <DEBUG>		Event:	GROUP_LEFT	2	Party-61-1-00003FF417C3", -- [1839]
-			"<22:02:44> <DEBUG>		GetML()", -- [1840]
-			"<22:02:46> <DEBUG>		GetML()", -- [1841]
-			"<22:06:22> <DEBUG>		Event:	LOOT_READY	true", -- [1842]
-			"<22:06:26> <DEBUG>		Event:	LOOT_READY	true", -- [1843]
-			"<22:07:15> <DEBUG>		Event:	LOOT_READY	true", -- [1844]
-			"<22:07:15> <DEBUG>		Event:	LOOT_READY	true", -- [1845]
-			"<22:09:44> <DEBUG>		Event:	LOOT_READY	true", -- [1846]
-			"<22:09:49> <DEBUG>		Event:	LOOT_READY	true", -- [1847]
-			"<22:10:35> <DEBUG>		Event:	LOOT_READY	true", -- [1848]
-			"<22:20:15> <DEBUG>		Event:	LOOT_READY	true", -- [1849]
-			"<22:36:03> <DEBUG>		Event:	LOOT_READY	true", -- [1850]
-			"<22:39:14> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1851]
-			"<22:39:14> <INFO>		UpdatePlayersData()", -- [1852]
-			"<22:39:16> <DEBUG>		GetML()", -- [1853]
-			"05/30/22", -- [1854]
-			"<22:42:23> <INFO>		Logged In", -- [1855]
-			"<22:42:23> [ML]<INFO>		Init", -- [1856]
-			"<22:42:23> <INFO>		RCLootCouncil	TradeUI enabled", -- [1857]
-			"<22:42:49> <INFO>		Shanyt-ArgentDawn	3.3.0	nil", -- [1858]
-			"<22:42:49> <DEBUG>		ActivateSkin	bfa", -- [1859]
-			"<22:43:01> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1860]
-			"<22:43:01> <INFO>		UpdatePlayersData()", -- [1861]
-			"<22:43:01> <INFO>		Player relog...", -- [1862]
-			"<22:43:06> <DEBUG>		GetPlayersGuildRank()", -- [1863]
-			"<22:43:06> <DEBUG>		Found Guild Rank: Thuerge", -- [1864]
-			"<22:43:14> <DEBUG>		GetML()", -- [1865]
-			"<22:44:09> <DEBUG>		Event:	LOOT_READY	true", -- [1866]
-			"<22:44:10> <DEBUG>		Event:	LOOT_READY	true", -- [1867]
-			"05/30/22", -- [1868]
-			"<22:46:43> <INFO>		Logged In", -- [1869]
-			"<22:46:43> [ML]<INFO>		Init", -- [1870]
-			"<22:46:43> <INFO>		RCLootCouncil	TradeUI enabled", -- [1871]
-			"<22:47:00> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Durlok-BlackDragonflight	Player-96-0CBEA15E", -- [1872]
-			"<22:47:00> <INFO>		Durlok-BlackDragonflight	3.3.0	nil", -- [1873]
-			"<22:47:00> <DEBUG>		ActivateSkin	bfa", -- [1874]
-			"<22:47:11> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1875]
-			"<22:47:11> <INFO>		UpdatePlayersData()", -- [1876]
-			"<22:47:11> <INFO>		Player relog...", -- [1877]
-			"<22:47:20> <DEBUG>		GetML()", -- [1878]
-			"05/30/22", -- [1879]
-			"<22:49:30> <INFO>		Logged In", -- [1880]
-			"<22:49:30> [ML]<INFO>		Init", -- [1881]
-			"<22:49:30> <INFO>		RCLootCouncil	TradeUI enabled", -- [1882]
-			"<22:49:48> <INFO>		Avisar-Dalaran	3.3.0	nil", -- [1883]
-			"<22:49:48> <DEBUG>		ActivateSkin	bfa", -- [1884]
-			"<22:50:01> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1885]
-			"<22:50:01> <INFO>		UpdatePlayersData()", -- [1886]
-			"<22:50:01> <INFO>		Player relog...", -- [1887]
-			"<22:50:10> <DEBUG>		GetML()", -- [1888]
-			"05/30/22", -- [1889]
-			"<22:51:42> <INFO>		Logged In", -- [1890]
-			"<22:51:42> [ML]<INFO>		Init", -- [1891]
-			"<22:51:42> <INFO>		RCLootCouncil	TradeUI enabled", -- [1892]
-			"<22:51:58> <INFO>		Valmagus-Zul'jin	3.3.0	nil", -- [1893]
-			"<22:51:58> <DEBUG>		ActivateSkin	bfa", -- [1894]
-			"<22:52:10> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1895]
-			"<22:52:10> <INFO>		UpdatePlayersData()", -- [1896]
-			"<22:52:10> <INFO>		Player relog...", -- [1897]
-			"<22:52:20> <DEBUG>		GetML()", -- [1898]
-			"<22:53:58> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1899]
-			"<22:53:58> <INFO>		UpdatePlayersData()", -- [1900]
-			"<22:53:59> <DEBUG>		GetML()", -- [1901]
-			"<23:18:51> <DEBUG>		Event:	LOOT_READY	true", -- [1902]
-			"<23:18:52> <DEBUG>		Event:	LOOT_READY	true", -- [1903]
-			"<23:24:19> <DEBUG>		Event:	LOOT_READY	true", -- [1904]
-			"<23:24:38> <DEBUG>		Event:	LOOT_READY	true", -- [1905]
-			"<23:25:14> <DEBUG>		Event:	LOOT_READY	true", -- [1906]
-			"<23:26:12> <DEBUG>		Event:	LOOT_READY	true", -- [1907]
-			"<23:26:54> <DEBUG>		Event:	LOOT_READY	true", -- [1908]
-			"<23:30:20> <DEBUG>		Event:	LOOT_READY	true", -- [1909]
-			"<23:31:02> <DEBUG>		Event:	LOOT_READY	true", -- [1910]
-			"<23:32:31> <DEBUG>		Event:	LOOT_READY	true", -- [1911]
-			"<23:33:49> <DEBUG>		Event:	LOOT_READY	true", -- [1912]
-			"<23:34:28> <DEBUG>		Event:	LOOT_READY	true", -- [1913]
-			"<23:36:12> <DEBUG>		Event:	LOOT_READY	true", -- [1914]
-			"<23:37:15> <DEBUG>		Event:	LOOT_READY	true", -- [1915]
-			"<23:38:35> <DEBUG>		Event:	LOOT_READY	true", -- [1916]
-			"<23:47:51> <DEBUG>		Event:	LOOT_READY	true", -- [1917]
-			"<23:47:57> <DEBUG>		Event:	LOOT_READY	true", -- [1918]
-			"<23:47:57> <DEBUG>		Event:	LOOT_READY	true", -- [1919]
-			"<23:47:57> <DEBUG>		Event:	LOOT_READY	true", -- [1920]
-			"<23:48:11> <DEBUG>		Event:	LOOT_READY	true", -- [1921]
-			"<23:48:20> <DEBUG>		Event:	LOOT_READY	true", -- [1922]
-			"<23:48:42> <DEBUG>		Event:	LOOT_READY	true", -- [1923]
-			"<23:49:09> <DEBUG>		Event:	LOOT_READY	true", -- [1924]
-			"<23:49:28> <DEBUG>		Event:	LOOT_READY	true", -- [1925]
-			"<23:49:32> <DEBUG>		Event:	LOOT_READY	true", -- [1926]
-			"<23:49:49> <DEBUG>		Event:	LOOT_READY	true", -- [1927]
-			"<23:50:15> <DEBUG>		Event:	LOOT_READY	true", -- [1928]
-			"<23:50:25> <DEBUG>		Event:	LOOT_READY	true", -- [1929]
-			"<23:50:52> <DEBUG>		Event:	LOOT_READY	true", -- [1930]
-			"<23:51:29> <DEBUG>		Event:	LOOT_READY	true", -- [1931]
-			"<23:52:24> <DEBUG>		Event:	LOOT_READY	true", -- [1932]
-			"<23:52:24> <DEBUG>		Event:	LOOT_READY	true", -- [1933]
-			"<23:52:51> <DEBUG>		Event:	LOOT_READY	true", -- [1934]
-			"<23:53:54> <DEBUG>		Event:	LOOT_READY	true", -- [1935]
-			"<23:54:28> <DEBUG>		Event:	LOOT_READY	true", -- [1936]
-			"<23:58:27> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1937]
-			"<23:58:27> <INFO>		UpdatePlayersData()", -- [1938]
-			"<23:58:29> <DEBUG>		GetML()", -- [1939]
-			"<00:00:34> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1940]
-			"<00:00:34> <INFO>		UpdatePlayersData()", -- [1941]
-			"<00:00:37> <DEBUG>		GetML()", -- [1942]
-			"<00:02:17> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1943]
-			"<00:02:17> <INFO>		UpdatePlayersData()", -- [1944]
-			"<00:02:19> <DEBUG>		GetML()", -- [1945]
-			"<00:06:44> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1946]
-			"<00:06:44> <INFO>		UpdatePlayersData()", -- [1947]
-			"<00:06:46> <DEBUG>		GetML()", -- [1948]
-			"<00:07:20> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1949]
-			"<00:07:20> <INFO>		UpdatePlayersData()", -- [1950]
-			"<00:07:22> <DEBUG>		GetML()", -- [1951]
-			"<00:07:36> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1952]
-			"<00:07:36> <INFO>		UpdatePlayersData()", -- [1953]
-			"<00:07:38> <DEBUG>		GetML()", -- [1954]
-			"<00:08:41> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1955]
-			"<00:08:41> <INFO>		UpdatePlayersData()", -- [1956]
-			"<00:08:43> <DEBUG>		GetML()", -- [1957]
-			"05/31/22", -- [1958]
-			"<00:09:34> <INFO>		Logged In", -- [1959]
-			"<00:09:34> [ML]<INFO>		Init", -- [1960]
-			"<00:09:34> <INFO>		RCLootCouncil	TradeUI enabled", -- [1961]
-			"<00:09:51> <INFO>		Zulbathal-Zul'jin	3.3.0	nil", -- [1962]
-			"<00:09:51> <DEBUG>		ActivateSkin	bfa", -- [1963]
-			"<00:10:04> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1964]
-			"<00:10:04> <INFO>		UpdatePlayersData()", -- [1965]
-			"<00:10:04> <INFO>		Player relog...", -- [1966]
-			"<00:10:11> <DEBUG>		GetML()", -- [1967]
-			"05/31/22", -- [1968]
-			"<21:38:13> <INFO>		Logged In", -- [1969]
-			"<21:38:13> [ML]<INFO>		Init", -- [1970]
-			"<21:38:13> <INFO>		RCLootCouncil	TradeUI enabled", -- [1971]
-			"<21:38:34> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Shanyt-ArgentDawn	Player-75-058380E2", -- [1972]
-			"<21:38:34> <INFO>		Shanyt-ArgentDawn	3.3.0	nil", -- [1973]
-			"<21:38:34> <DEBUG>		ActivateSkin	bfa", -- [1974]
-			"<21:38:47> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1975]
-			"<21:38:47> <INFO>		UpdatePlayersData()", -- [1976]
-			"<21:38:47> <INFO>		Player relog...", -- [1977]
-			"<21:38:50> <DEBUG>		GetPlayersGuildRank()", -- [1978]
-			"<21:38:51> <DEBUG>		GetPlayersGuildRank()", -- [1979]
-			"<21:38:51> <DEBUG>		Found Guild Rank: Thuerge", -- [1980]
-			"<21:38:59> <DEBUG>		GetML()", -- [1981]
-			"<21:39:35> <DEBUG>		Event:	LOOT_READY	true", -- [1982]
-			"<21:39:35> <DEBUG>		Event:	LOOT_READY	true", -- [1983]
-			"<21:39:38> <DEBUG>		Event:	LOOT_READY	true", -- [1984]
-			"<21:39:38> <DEBUG>		Event:	LOOT_READY	true", -- [1985]
-			"<21:39:54> <DEBUG>		Event:	LOOT_READY	true", -- [1986]
-			"<21:39:54> <DEBUG>		Event:	LOOT_READY	true", -- [1987]
-			"06/01/22", -- [1988]
-			"<01:20:51> <INFO>		Logged In", -- [1989]
-			"<01:20:51> [ML]<INFO>		Init", -- [1990]
-			"<01:20:51> <INFO>		RCLootCouncil	TradeUI enabled", -- [1991]
-			"<01:21:11> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Shanyt-ArgentDawn	Player-75-058380E2", -- [1992]
-			"<01:21:11> <INFO>		Shanyt-ArgentDawn	3.3.0	nil", -- [1993]
-			"<01:21:11> <DEBUG>		ActivateSkin	bfa", -- [1994]
-			"<01:21:24> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1995]
-			"<01:21:24> <INFO>		UpdatePlayersData()", -- [1996]
-			"<01:21:24> <INFO>		Player relog...", -- [1997]
-			"<01:21:27> <DEBUG>		GetPlayersGuildRank()", -- [1998]
-			"<01:21:27> <DEBUG>		Found Guild Rank: Thuerge", -- [1999]
-			"<01:21:36> <DEBUG>		GetML()", -- [2000]
+			"<22:04:29> <DEBUG>		Event:	LOOT_READY	true", -- [1]
+			"<22:04:41> <DEBUG>		Event:	LOOT_READY	true", -- [2]
+			"<22:07:59> <DEBUG>		Event:	LOOT_READY	true", -- [3]
+			"<22:08:27> <DEBUG>		Event:	LOOT_READY	true", -- [4]
+			"<22:09:59> <DEBUG>		Event:	LOOT_READY	true", -- [5]
+			"<22:10:10> <DEBUG>		Event:	LOOT_READY	true", -- [6]
+			"<22:10:27> <DEBUG>		Event:	LOOT_READY	true", -- [7]
+			"<22:10:29> <DEBUG>		Event:	LOOT_READY	true", -- [8]
+			"<22:10:52> <DEBUG>		Event:	LOOT_READY	true", -- [9]
+			"<22:11:03> <DEBUG>		Event:	LOOT_READY	true", -- [10]
+			"<22:11:06> <DEBUG>		Event:	LOOT_READY	true", -- [11]
+			"<22:11:14> <DEBUG>		Event:	LOOT_READY	true", -- [12]
+			"<22:11:17> <DEBUG>		Event:	LOOT_READY	true", -- [13]
+			"<22:11:45> <DEBUG>		Event:	LOOT_READY	true", -- [14]
+			"<22:11:50> <DEBUG>		Event:	LOOT_READY	true", -- [15]
+			"<22:12:33> <DEBUG>		Event:	LOOT_READY	true", -- [16]
+			"<22:12:33> <DEBUG>		Event:	LOOT_READY	true", -- [17]
+			"<22:12:33> <DEBUG>		Event:	LOOT_READY	true", -- [18]
+			"<22:12:33> <DEBUG>		Event:	LOOT_READY	true", -- [19]
+			"<22:13:05> <DEBUG>		Event:	LOOT_READY	true", -- [20]
+			"<22:13:07> <DEBUG>		Event:	LOOT_READY	true", -- [21]
+			"<22:13:55> <DEBUG>		Event:	LOOT_READY	true", -- [22]
+			"<22:14:05> <DEBUG>		Event:	LOOT_READY	true", -- [23]
+			"<22:14:15> <DEBUG>		Event:	LOOT_READY	true", -- [24]
+			"<22:14:34> <DEBUG>		Event:	LOOT_READY	true", -- [25]
+			"<22:14:38> <DEBUG>		Event:	LOOT_READY	true", -- [26]
+			"<22:14:48> <DEBUG>		Event:	LOOT_READY	true", -- [27]
+			"<22:15:43> <DEBUG>		Event:	LOOT_READY	true", -- [28]
+			"<22:16:06> <DEBUG>		Event:	LOOT_READY	true", -- [29]
+			"<22:17:25> <DEBUG>		Event:	LOOT_READY	true", -- [30]
+			"<22:17:33> <DEBUG>		Event:	LOOT_READY	true", -- [31]
+			"<22:17:45> <DEBUG>		Event:	LOOT_READY	true", -- [32]
+			"<22:18:55> <DEBUG>		Event:	LOOT_READY	true", -- [33]
+			"<22:19:12> <DEBUG>		Event:	LOOT_READY	true", -- [34]
+			"<22:19:35> <DEBUG>		Event:	LOOT_READY	true", -- [35]
+			"<22:20:07> <DEBUG>		Event:	LOOT_READY	true", -- [36]
+			"<22:20:22> <DEBUG>		Event:	LOOT_READY	true", -- [37]
+			"<22:20:42> <DEBUG>		Event:	LOOT_READY	true", -- [38]
+			"<22:20:46> <DEBUG>		Event:	LOOT_READY	true", -- [39]
+			"<22:21:00> <DEBUG>		Event:	LOOT_READY	true", -- [40]
+			"<22:21:08> <DEBUG>		Event:	LOOT_READY	true", -- [41]
+			"<22:21:49> <DEBUG>		Event:	LOOT_READY	true", -- [42]
+			"<22:21:59> <DEBUG>		Event:	LOOT_READY	true", -- [43]
+			"<22:22:33> <DEBUG>		Event:	LOOT_READY	true", -- [44]
+			"<22:26:47> <DEBUG>		Event:	LOOT_READY	true", -- [45]
+			"<22:27:18> <DEBUG>		Event:	LOOT_READY	true", -- [46]
+			"<22:27:22> <DEBUG>		Event:	LOOT_READY	true", -- [47]
+			"06/12/22", -- [48]
+			"<03:31:32> <INFO>		Logged In", -- [49]
+			"<03:31:32> [ML]<INFO>		Init", -- [50]
+			"<03:31:32> <INFO>		RCLootCouncil	TradeUI enabled", -- [51]
+			"<03:31:51> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Zulbathal-Zul'jin	Player-61-0CA8EB69", -- [52]
+			"<03:31:51> <INFO>		Zulbathal-Zul'jin	3.3.0	nil", -- [53]
+			"<03:31:51> <DEBUG>		ActivateSkin	bfa", -- [54]
+			"<03:32:04> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [55]
+			"<03:32:04> <INFO>		UpdatePlayersData()", -- [56]
+			"<03:32:04> <INFO>		Player relog...", -- [57]
+			"<03:32:13> <DEBUG>		GetML()", -- [58]
+			"06/12/22", -- [59]
+			"<03:34:46> <INFO>		Logged In", -- [60]
+			"<03:34:46> [ML]<INFO>		Init", -- [61]
+			"<03:34:46> <INFO>		RCLootCouncil	TradeUI enabled", -- [62]
+			"<03:35:07> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Valmagus-Zul'jin	Player-61-0EB84EA0", -- [63]
+			"<03:35:07> <INFO>		Valmagus-Zul'jin	3.3.0	nil", -- [64]
+			"<03:35:07> <DEBUG>		ActivateSkin	bfa", -- [65]
+			"<03:35:20> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [66]
+			"<03:35:20> <INFO>		UpdatePlayersData()", -- [67]
+			"<03:35:20> <INFO>		Player relog...", -- [68]
+			"<03:35:29> <DEBUG>		GetML()", -- [69]
+			"06/12/22", -- [70]
+			"<03:36:37> <INFO>		Logged In", -- [71]
+			"<03:36:37> [ML]<INFO>		Init", -- [72]
+			"<03:36:37> <INFO>		RCLootCouncil	TradeUI enabled", -- [73]
+			"<03:36:53> <INFO>		Zulbathal-Zul'jin	3.3.0	nil", -- [74]
+			"<03:36:53> <DEBUG>		ActivateSkin	bfa", -- [75]
+			"<03:37:05> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [76]
+			"<03:37:05> <INFO>		UpdatePlayersData()", -- [77]
+			"<03:37:05> <INFO>		Player relog...", -- [78]
+			"<03:37:15> <DEBUG>		GetML()", -- [79]
+			"06/12/22", -- [80]
+			"<03:38:22> <INFO>		Logged In", -- [81]
+			"<03:38:22> [ML]<INFO>		Init", -- [82]
+			"<03:38:22> <INFO>		RCLootCouncil	TradeUI enabled", -- [83]
+			"<03:38:42> <INFO>		Avisar-Dalaran	3.3.0	nil", -- [84]
+			"<03:38:42> <DEBUG>		ActivateSkin	bfa", -- [85]
+			"<03:38:55> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [86]
+			"<03:38:55> <INFO>		UpdatePlayersData()", -- [87]
+			"<03:38:55> <INFO>		Player relog...", -- [88]
+			"<03:39:04> <DEBUG>		GetML()", -- [89]
+			"06/12/22", -- [90]
+			"<03:40:33> <INFO>		Logged In", -- [91]
+			"<03:40:33> [ML]<INFO>		Init", -- [92]
+			"<03:40:33> <INFO>		RCLootCouncil	TradeUI enabled", -- [93]
+			"<03:40:49> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Durlok-BlackDragonflight	Player-96-0CBEA15E", -- [94]
+			"<03:40:49> <INFO>		Durlok-BlackDragonflight	3.3.0	nil", -- [95]
+			"<03:40:49> <DEBUG>		ActivateSkin	bfa", -- [96]
+			"<03:41:01> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [97]
+			"<03:41:01> <INFO>		UpdatePlayersData()", -- [98]
+			"<03:41:01> <INFO>		Player relog...", -- [99]
+			"<03:41:10> <DEBUG>		GetML()", -- [100]
+			"06/12/22", -- [101]
+			"<03:42:28> <INFO>		Logged In", -- [102]
+			"<03:42:28> [ML]<INFO>		Init", -- [103]
+			"<03:42:28> <INFO>		RCLootCouncil	TradeUI enabled", -- [104]
+			"<03:42:52> <INFO>		Shanyt-ArgentDawn	3.3.0	nil", -- [105]
+			"<03:42:52> <DEBUG>		ActivateSkin	bfa", -- [106]
+			"<03:43:05> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [107]
+			"<03:43:05> <INFO>		UpdatePlayersData()", -- [108]
+			"<03:43:05> <INFO>		Player relog...", -- [109]
+			"<03:43:08> <DEBUG>		GetPlayersGuildRank()", -- [110]
+			"<03:43:08> <DEBUG>		GetPlayersGuildRank()", -- [111]
+			"<03:43:08> <DEBUG>		Found Guild Rank: Thuerge", -- [112]
+			"<03:43:17> <DEBUG>		GetML()", -- [113]
+			"<03:45:17> <DEBUG>		Event:	LOOT_READY	true", -- [114]
+			"<03:45:18> <DEBUG>		Event:	LOOT_READY	true", -- [115]
+			"<03:47:54> <DEBUG>		Event:	LOOT_READY	true", -- [116]
+			"<03:47:54> <DEBUG>		Event:	LOOT_READY	true", -- [117]
+			"<03:50:12> <DEBUG>		Event:	LOOT_READY	true", -- [118]
+			"<03:50:12> <DEBUG>		Event:	LOOT_READY	true", -- [119]
+			"<03:54:27> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [120]
+			"<03:54:27> <INFO>		UpdatePlayersData()", -- [121]
+			"<03:54:35> <DEBUG>		GetML()", -- [122]
+			"<03:56:51> <DEBUG>		Event:	LOOT_READY	true", -- [123]
+			"<03:56:51> <DEBUG>		Event:	LOOT_READY	true", -- [124]
+			"<03:57:10> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [125]
+			"<03:57:10> <INFO>		UpdatePlayersData()", -- [126]
+			"<03:57:15> <DEBUG>		GetML()", -- [127]
+			"<04:03:46> <DEBUG>		BONUS_ROLL	money		299493	0	2	false	nil	false	false", -- [128]
+			"<04:04:12> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [129]
+			"<04:04:12> <INFO>		UpdatePlayersData()", -- [130]
+			"<04:04:17> <DEBUG>		GetML()", -- [131]
+			"<04:04:34> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [132]
+			"<04:04:34> <INFO>		UpdatePlayersData()", -- [133]
+			"<04:04:38> <DEBUG>		GetML()", -- [134]
+			"<04:08:14> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [135]
+			"<04:08:14> <INFO>		UpdatePlayersData()", -- [136]
+			"<04:08:18> <DEBUG>		GetML()", -- [137]
+			"<04:08:56> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [138]
+			"<04:08:56> <INFO>		UpdatePlayersData()", -- [139]
+			"<04:09:01> <DEBUG>		GetML()", -- [140]
+			"<04:10:28> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [141]
+			"<04:10:28> <INFO>		UpdatePlayersData()", -- [142]
+			"<04:10:32> <DEBUG>		GetML()", -- [143]
+			"<04:10:42> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [144]
+			"<04:10:42> <INFO>		UpdatePlayersData()", -- [145]
+			"<04:10:47> <DEBUG>		GetML()", -- [146]
+			"<04:11:01> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [147]
+			"<04:11:01> <INFO>		UpdatePlayersData()", -- [148]
+			"<04:11:06> <DEBUG>		GetML()", -- [149]
+			"<04:11:16> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [150]
+			"<04:11:16> <INFO>		UpdatePlayersData()", -- [151]
+			"<04:11:20> <DEBUG>		GetML()", -- [152]
+			"<04:12:45> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [153]
+			"<04:12:45> <INFO>		UpdatePlayersData()", -- [154]
+			"<04:12:49> <DEBUG>		GetML()", -- [155]
+			"<04:12:59> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [156]
+			"<04:12:59> <INFO>		UpdatePlayersData()", -- [157]
+			"<04:13:03> <DEBUG>		GetML()", -- [158]
+			"<04:13:32> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [159]
+			"<04:13:32> <INFO>		UpdatePlayersData()", -- [160]
+			"<04:13:36> <DEBUG>		GetML()", -- [161]
+			"06/12/22", -- [162]
+			"<04:16:58> <INFO>		Logged In", -- [163]
+			"<04:16:58> [ML]<INFO>		Init", -- [164]
+			"<04:16:58> <INFO>		RCLootCouncil	TradeUI enabled", -- [165]
+			"<04:17:15> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Alatra-Zul'jin	Player-61-0EBAD280", -- [166]
+			"<04:17:15> <INFO>		Alatra-Zul'jin	3.3.0	nil", -- [167]
+			"<04:17:15> <DEBUG>		ActivateSkin	bfa", -- [168]
+			"<04:17:27> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [169]
+			"<04:17:27> <INFO>		UpdatePlayersData()", -- [170]
+			"<04:17:27> <INFO>		Player relog...", -- [171]
+			"<04:17:36> <DEBUG>		GetML()", -- [172]
+			"06/12/22", -- [173]
+			"<10:13:58> <INFO>		Logged In", -- [174]
+			"<10:13:58> [ML]<INFO>		Init", -- [175]
+			"<10:13:58> <INFO>		RCLootCouncil	TradeUI enabled", -- [176]
+			"<10:14:13> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Zulbathal-Zul'jin	Player-61-0CA8EB69", -- [177]
+			"<10:14:13> <INFO>		Zulbathal-Zul'jin	3.3.0	nil", -- [178]
+			"<10:14:13> <DEBUG>		ActivateSkin	bfa", -- [179]
+			"<10:14:26> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [180]
+			"<10:14:26> <INFO>		UpdatePlayersData()", -- [181]
+			"<10:14:26> <INFO>		Player relog...", -- [182]
+			"<10:14:35> <DEBUG>		GetML()", -- [183]
+			"06/12/22", -- [184]
+			"<10:15:49> <INFO>		Logged In", -- [185]
+			"<10:15:49> [ML]<INFO>		Init", -- [186]
+			"<10:15:49> <INFO>		RCLootCouncil	TradeUI enabled", -- [187]
+			"<10:16:07> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Valmagus-Zul'jin	Player-61-0EB84EA0", -- [188]
+			"<10:16:07> <INFO>		Valmagus-Zul'jin	3.3.0	nil", -- [189]
+			"<10:16:07> <DEBUG>		ActivateSkin	bfa", -- [190]
+			"<10:16:20> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [191]
+			"<10:16:20> <INFO>		UpdatePlayersData()", -- [192]
+			"<10:16:20> <INFO>		Player relog...", -- [193]
+			"<10:16:29> <DEBUG>		GetML()", -- [194]
+			"06/12/22", -- [195]
+			"<10:19:43> <INFO>		Logged In", -- [196]
+			"<10:19:43> [ML]<INFO>		Init", -- [197]
+			"<10:19:43> <INFO>		RCLootCouncil	TradeUI enabled", -- [198]
+			"<10:19:59> <INFO>		Alatra-Zul'jin	3.3.0	nil", -- [199]
+			"<10:19:59> <DEBUG>		ActivateSkin	bfa", -- [200]
+			"<10:20:12> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [201]
+			"<10:20:12> <INFO>		UpdatePlayersData()", -- [202]
+			"<10:20:12> <INFO>		Player relog...", -- [203]
+			"<10:20:21> <DEBUG>		GetML()", -- [204]
+			"<10:23:21> <DEBUG>		Event:	LOOT_READY	true", -- [205]
+			"<10:24:51> <DEBUG>		Event:	LOOT_READY	true", -- [206]
+			"<10:25:25> <DEBUG>		Event:	LOOT_READY	true", -- [207]
+			"<10:25:53> <DEBUG>		Event:	LOOT_READY	true", -- [208]
+			"<10:25:53> <DEBUG>		Event:	LOOT_READY	true", -- [209]
+			"<10:26:32> <DEBUG>		Event:	LOOT_READY	true", -- [210]
+			"<10:26:48> <DEBUG>		Event:	LOOT_READY	true", -- [211]
+			"<10:27:31> <DEBUG>		Event:	LOOT_READY	true", -- [212]
+			"<10:27:31> <DEBUG>		Event:	LOOT_READY	true", -- [213]
+			"<10:27:36> <DEBUG>		Event:	LOOT_READY	true", -- [214]
+			"<10:27:36> <DEBUG>		Event:	LOOT_READY	true", -- [215]
+			"<10:28:24> <DEBUG>		Event:	LOOT_READY	true", -- [216]
+			"<10:28:49> <DEBUG>		Event:	LOOT_READY	true", -- [217]
+			"<10:29:00> <DEBUG>		Event:	LOOT_READY	true", -- [218]
+			"<10:29:10> <DEBUG>		Event:	LOOT_READY	true", -- [219]
+			"<10:29:22> <DEBUG>		Event:	LOOT_READY	true", -- [220]
+			"<10:29:58> <DEBUG>		Event:	LOOT_READY	true", -- [221]
+			"<10:30:10> <DEBUG>		Event:	LOOT_READY	true", -- [222]
+			"<10:30:28> <DEBUG>		Event:	LOOT_READY	true", -- [223]
+			"<10:30:40> <DEBUG>		Event:	LOOT_READY	true", -- [224]
+			"<10:31:04> <DEBUG>		Event:	LOOT_READY	true", -- [225]
+			"<10:31:17> <DEBUG>		Event:	LOOT_READY	true", -- [226]
+			"<10:31:46> <DEBUG>		Event:	LOOT_READY	true", -- [227]
+			"<10:32:17> <DEBUG>		Event:	LOOT_READY	true", -- [228]
+			"<10:32:42> <DEBUG>		Event:	LOOT_READY	true", -- [229]
+			"<10:32:59> <DEBUG>		Event:	LOOT_READY	true", -- [230]
+			"<10:33:15> <DEBUG>		Event:	LOOT_READY	true", -- [231]
+			"<10:33:32> <DEBUG>		Event:	LOOT_READY	true", -- [232]
+			"<10:34:58> <DEBUG>		Event:	LOOT_READY	true", -- [233]
+			"<10:36:28> <DEBUG>		Event:	LOOT_READY	true", -- [234]
+			"<10:37:09> <DEBUG>		Event:	LOOT_READY	true", -- [235]
+			"<10:39:41> <DEBUG>		Event:	LOOT_READY	true", -- [236]
+			"<10:39:41> <DEBUG>		Event:	LOOT_READY	true", -- [237]
+			"<10:41:33> <DEBUG>		Event:	LOOT_READY	true", -- [238]
+			"<10:41:51> <DEBUG>		Event:	LOOT_READY	true", -- [239]
+			"<10:42:30> <DEBUG>		Event:	LOOT_READY	true", -- [240]
+			"<10:43:56> <DEBUG>		Event:	LOOT_READY	true", -- [241]
+			"<10:51:44> <DEBUG>		Event:	LOOT_READY	true", -- [242]
+			"<10:51:45> <DEBUG>		Event:	LOOT_READY	true", -- [243]
+			"<10:53:19> <DEBUG>		Event:	LOOT_READY	true", -- [244]
+			"<10:53:19> <DEBUG>		Event:	LOOT_READY	true", -- [245]
+			"<10:54:13> <DEBUG>		Event:	LOOT_READY	true", -- [246]
+			"<10:54:24> <DEBUG>		Event:	LOOT_READY	true", -- [247]
+			"<10:54:29> <DEBUG>		Event:	LOOT_READY	true", -- [248]
+			"<10:54:35> <DEBUG>		Event:	LOOT_READY	true", -- [249]
+			"<10:54:42> <DEBUG>		Event:	LOOT_READY	true", -- [250]
+			"<10:54:57> <DEBUG>		Event:	LOOT_READY	true", -- [251]
+			"<10:55:08> <DEBUG>		Event:	LOOT_READY	true", -- [252]
+			"<10:55:18> <DEBUG>		Event:	LOOT_READY	true", -- [253]
+			"<10:55:41> <DEBUG>		Event:	LOOT_READY	true", -- [254]
+			"<10:55:48> <DEBUG>		Event:	LOOT_READY	true", -- [255]
+			"<10:56:11> <DEBUG>		Event:	LOOT_READY	true", -- [256]
+			"<10:56:50> <DEBUG>		Event:	LOOT_READY	true", -- [257]
+			"<10:57:24> <DEBUG>		Event:	LOOT_READY	true", -- [258]
+			"<10:59:13> <DEBUG>		Event:	LOOT_READY	true", -- [259]
+			"<11:02:13> <DEBUG>		Event:	LOOT_READY	true", -- [260]
+			"<11:03:33> <DEBUG>		Event:	LOOT_READY	true", -- [261]
+			"<11:03:33> <DEBUG>		Event:	LOOT_READY	true", -- [262]
+			"<11:04:49> <DEBUG>		Event:	LOOT_READY	true", -- [263]
+			"<11:07:39> <DEBUG>		Event:	LOOT_READY	true", -- [264]
+			"<11:09:02> <DEBUG>		Event:	LOOT_READY	true", -- [265]
+			"<11:10:02> <DEBUG>		Event:	LOOT_READY	true", -- [266]
+			"<11:10:10> <DEBUG>		Event:	LOOT_READY	true", -- [267]
+			"<11:10:19> <DEBUG>		Event:	LOOT_READY	true", -- [268]
+			"<11:10:29> <DEBUG>		Event:	LOOT_READY	true", -- [269]
+			"<11:10:44> <DEBUG>		Event:	LOOT_READY	true", -- [270]
+			"<11:11:07> <DEBUG>		Event:	LOOT_READY	true", -- [271]
+			"<11:11:15> <DEBUG>		Event:	LOOT_READY	true", -- [272]
+			"<11:11:30> <DEBUG>		Event:	LOOT_READY	true", -- [273]
+			"<11:11:54> <DEBUG>		Event:	LOOT_READY	true", -- [274]
+			"<11:12:13> <DEBUG>		Event:	LOOT_READY	true", -- [275]
+			"<11:12:20> <DEBUG>		Event:	LOOT_READY	true", -- [276]
+			"<11:12:33> <DEBUG>		Event:	LOOT_READY	true", -- [277]
+			"<11:12:40> <DEBUG>		Event:	LOOT_READY	true", -- [278]
+			"<11:12:54> <DEBUG>		Event:	LOOT_READY	true", -- [279]
+			"<11:13:06> <DEBUG>		Event:	LOOT_READY	true", -- [280]
+			"<11:13:23> <DEBUG>		Event:	LOOT_READY	true", -- [281]
+			"<11:13:50> <DEBUG>		Event:	LOOT_READY	true", -- [282]
+			"<11:14:03> <DEBUG>		Event:	LOOT_READY	true", -- [283]
+			"<11:14:16> <DEBUG>		Event:	LOOT_READY	true", -- [284]
+			"<11:14:33> <DEBUG>		Event:	LOOT_READY	true", -- [285]
+			"<11:14:34> <DEBUG>		Event:	LOOT_READY	true", -- [286]
+			"<11:15:31> <DEBUG>		Event:	LOOT_READY	true", -- [287]
+			"<11:15:31> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	161125	|cff0070dd|Hitem:161125::::::::47:254::19:1:4776:2:28:189:9:47:::::|h[Kaja-fied Banana]|h|r	1	Alatra	HUNTER", -- [288]
+			"<11:16:00> <DEBUG>		Event:	LOOT_READY	true", -- [289]
+			"<11:16:08> <DEBUG>		Event:	LOOT_READY	true", -- [290]
+			"<11:16:44> <DEBUG>		Event:	LOOT_READY	true", -- [291]
+			"<11:20:43> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [292]
+			"<11:20:43> <INFO>		UpdatePlayersData()", -- [293]
+			"<11:20:45> <DEBUG>		GetML()", -- [294]
+			"<11:21:23> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [295]
+			"<11:21:23> <INFO>		UpdatePlayersData()", -- [296]
+			"<11:21:25> <DEBUG>		GetML()", -- [297]
+			"<11:23:18> <DEBUG>		Event:	LOOT_READY	true", -- [298]
+			"<11:23:38> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [299]
+			"<11:23:38> <INFO>		UpdatePlayersData()", -- [300]
+			"<11:23:40> <DEBUG>		GetML()", -- [301]
+			"<11:23:51> <DEBUG>		Event:	LOOT_READY	true", -- [302]
+			"<11:23:51> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47131-0005A604F9	1929	Creature-0-4230-33-29480-47131-00022604FA	2794	Creature-0-4230-33-29480-47134-0000A604F9	8726", -- [303]
+			"<11:23:51> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [304]
+			"<11:23:51> <DEBUG>		Event:	LOOT_CLOSED", -- [305]
+			"<11:23:51> <DEBUG>		Event:	LOOT_CLOSED", -- [306]
+			"<11:23:51> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [307]
+			"<11:23:51> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [308]
+			"<11:23:54> <DEBUG>		Event:	LOOT_READY	true", -- [309]
+			"<11:23:54> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47134-00012604F9	2318", -- [310]
+			"<11:23:54> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [311]
+			"<11:23:54> <DEBUG>		Event:	LOOT_CLOSED", -- [312]
+			"<11:23:54> <DEBUG>		Event:	LOOT_CLOSED", -- [313]
+			"<11:23:54> <Comm>		^1^Sl^T^N1^S47134^t^^	WHISPER	Alatra-Zul'jin", -- [314]
+			"<11:23:54> <Comm>		^1^Sl^T^N1^S47134^t^^	WHISPER	Alatra-Zul'jin", -- [315]
+			"<11:23:55> <DEBUG>		Event:	LOOT_READY	true", -- [316]
+			"<11:23:55> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47131-00002604FA	2994", -- [317]
+			"<11:23:55> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [318]
+			"<11:23:55> <DEBUG>		Event:	LOOT_CLOSED", -- [319]
+			"<11:23:55> <DEBUG>		Event:	LOOT_CLOSED", -- [320]
+			"<11:23:56> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [321]
+			"<11:23:56> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [322]
+			"<11:23:58> <DEBUG>		Event:	LOOT_READY	true", -- [323]
+			"<11:23:58> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47134-00002604F9	8102", -- [324]
+			"<11:23:59> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [325]
+			"<11:23:59> <DEBUG>		Event:	LOOT_CLOSED", -- [326]
+			"<11:23:59> <DEBUG>		Event:	LOOT_CLOSED", -- [327]
+			"<11:23:59> <Comm>		^1^Sl^T^N1^S47134^t^^	WHISPER	Alatra-Zul'jin", -- [328]
+			"<11:23:59> <Comm>		^1^Sl^T^N1^S47134^t^^	WHISPER	Alatra-Zul'jin", -- [329]
+			"<11:24:03> <DEBUG>		Event:	LOOT_READY	true", -- [330]
+			"<11:24:03> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47131-0000A604FA	2326	Creature-0-4230-33-29480-47131-00012604FA	1695	Creature-0-4230-33-29480-47131-00052604F9	1685	Creature-0-4230-33-29480-47134-0001A604F9	2238", -- [331]
+			"<11:24:03> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [332]
+			"<11:24:03> <DEBUG>		Event:	LOOT_CLOSED", -- [333]
+			"<11:24:03> <DEBUG>		Event:	LOOT_CLOSED", -- [334]
+			"<11:24:03> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [335]
+			"<11:24:03> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [336]
+			"<11:24:07> <DEBUG>		Event:	LOOT_READY	true", -- [337]
+			"<11:24:07> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47131-00042604F9	2764	Creature-0-4230-33-29480-47131-0004A604F9	1934	Creature-0-4230-33-29480-47134-0000A604FA	7948", -- [338]
+			"<11:24:07> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [339]
+			"<11:24:07> <DEBUG>		Event:	LOOT_CLOSED", -- [340]
+			"<11:24:07> <DEBUG>		Event:	LOOT_CLOSED", -- [341]
+			"<11:24:08> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [342]
+			"<11:24:08> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [343]
+			"<11:24:13> <DEBUG>		Event:	LOOT_READY	true", -- [344]
+			"<11:24:13> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47131-00062604F9	2966	Creature-0-4230-33-29480-47134-00022604F9	7035", -- [345]
+			"<11:24:13> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:6552::::::::47:254::1:2:6654:1693:1:28:213:::::|h[Bard's Tunic of the Fireflash]|h|r	2	1	Creature-0-4230-33-29480-47131-00062604F9	1", -- [346]
+			"<11:24:14> <DEBUG>		OnLootSlotCleared()	2	|cff1eff00|Hitem:6552::::::::47:254::1:2:6654:1693:1:28:213:::::|h[Bard's Tunic of the Fireflash]|h|r	2", -- [347]
+			"<11:24:14> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [348]
+			"<11:24:14> <DEBUG>		Event:	LOOT_CLOSED", -- [349]
+			"<11:24:14> <DEBUG>		Event:	LOOT_CLOSED", -- [350]
+			"<11:24:14> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [351]
+			"<11:24:14> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [352]
+			"<11:24:16> <DEBUG>		Storage:New	|cff1eff00|Hitem:6552::::::::47:254::1:2:6654:1693:1:28:213:::::|h[Bard's Tunic of the Fireflash]|h|r	temp", -- [353]
+			"<11:24:16> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:6552::::::::47:254::1:2:6654:1693:1:28:213:::::||h[Bard's Tunic of the Fireflash]||h||r	5", -- [354]
+			"<11:24:16> <DEBUG>		Found:	nil	nil	nil", -- [355]
+			"<11:24:17> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:6552::::::::47:254::1:2:6654:1693:1:28:213:::::||h[Bard's Tunic of the Fireflash]||h||r	5", -- [356]
+			"<11:24:17> <DEBUG>		Found:	nil	nil	nil", -- [357]
+			"<11:24:18> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:6552::::::::47:254::1:2:6654:1693:1:28:213:::::||h[Bard's Tunic of the Fireflash]||h||r	5", -- [358]
+			"<11:24:18> <DEBUG>		Found:	nil	nil	nil", -- [359]
+			"<11:24:18> <DEBUG>		Event:	LOOT_READY	true", -- [360]
+			"<11:24:18> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47131-0001A604FA	3644	Creature-0-4230-33-29480-47134-00002604FA	4393	Creature-0-4230-33-29480-47134-00012604FA	5827", -- [361]
+			"<11:24:18> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:1767::::::::47:254::1:1:6656:1:28:213:::::|h[Canvas Gloves]|h|r	0	1	Creature-0-4230-33-29480-47134-00012604FA	1", -- [362]
+			"<11:24:18> <DEBUG>		OnLootSlotCleared()	4	|cff9d9d9d|Hitem:1767::::::::47:254::1:1:6656:1:28:213:::::|h[Canvas Gloves]|h|r	0", -- [363]
+			"<11:24:18> <DEBUG>		Event:	LOOT_READY	true", -- [364]
+			"<11:24:18> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47131-0001A604FA	3644	Creature-0-4230-33-29480-47134-00002604FA	4393	Creature-0-4230-33-29480-47134-00012604FA	5827", -- [365]
+			"<11:24:18> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [366]
+			"<11:24:18> <DEBUG>		Event:	LOOT_CLOSED", -- [367]
+			"<11:24:18> <DEBUG>		Event:	LOOT_CLOSED", -- [368]
+			"<11:24:19> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [369]
+			"<11:24:19> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [370]
+			"<11:24:19> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:6552::::::::47:254::1:2:6654:1693:1:28:213:::::||h[Bard's Tunic of the Fireflash]||h||r	5", -- [371]
+			"<11:24:19> <DEBUG>		Found:	nil	nil	nil", -- [372]
+			"<11:24:19> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:6552::::::::47:254::1:2:6654:1693:1:28:213:::::|h[Bard's Tunic of the Fireflash]|h|r not found in bags", -- [373]
+			"<11:24:24> <DEBUG>		Event:	ENCOUNTER_START	1069	Baron Ashbury	1	5", -- [374]
+			"<11:24:24> <INFO>		UpdatePlayersData()", -- [375]
+			"<11:24:24> <DEBUG>		Event:	ENCOUNTER_END	1069	Baron Ashbury	1	5	1", -- [376]
+			"<11:24:25> <DEBUG>		Event:	LOOT_READY	true", -- [377]
+			"<11:24:25> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Vehicle-0-4230-33-29480-46962-00002604F9	66590", -- [378]
+			"<11:24:25> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:6314::::::::47:254::1:1:6710:1:28:213:::::|h[Wolfmaster Cape]|h|r	3	1	Vehicle-0-4230-33-29480-46962-00002604F9	1", -- [379]
+			"<11:24:25> <DEBUG>		Event:	LOOT_READY	true", -- [380]
+			"<11:24:25> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Vehicle-0-4230-33-29480-46962-00002604F9	66590", -- [381]
+			"<11:24:25> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:6314::::::::47:254::1:1:6710:1:28:213:::::|h[Wolfmaster Cape]|h|r	3	1	Vehicle-0-4230-33-29480-46962-00002604F9	1", -- [382]
+			"<11:24:25> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:6314::::::::47:254::1:1:6710:1:28:213:::::|h[Wolfmaster Cape]|h|r	3	1	Vehicle-0-4230-33-29480-46962-00002604F9	1", -- [383]
+			"<11:24:26> <DEBUG>		OnLootSlotCleared()	2	|cff0070dd|Hitem:6314::::::::47:254::1:1:6710:1:28:213:::::|h[Wolfmaster Cape]|h|r	3", -- [384]
+			"<11:24:26> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	1069	6314	|cff0070dd|Hitem:6314::::::::47:254::1:1:6710:2:28:213:9:30:::::|h[Wolfmaster Cape]|h|r	1	Alatra	HUNTER", -- [385]
+			"<11:24:26> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [386]
+			"<11:24:26> <DEBUG>		Event:	LOOT_READY	true", -- [387]
+			"<11:24:26> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:6314::::::::47:254::1:1:6710:1:28:213:::::|h[Wolfmaster Cape]|h|r	3	1	Vehicle-0-4230-33-29480-46962-00002604F9	1", -- [388]
+			"<11:24:26> <DEBUG>		OnLootSlotCleared()	3	|cff0070dd|Hitem:6314::::::::47:254::1:1:6710:1:28:213:::::|h[Wolfmaster Cape]|h|r	3", -- [389]
+			"<11:24:26> <DEBUG>		Event:	LOOT_CLOSED", -- [390]
+			"<11:24:26> <DEBUG>		Event:	LOOT_CLOSED", -- [391]
+			"<11:24:26> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	1069	6314	|cff0070dd|Hitem:6314::::::::47:254::1:1:6710:2:28:213:9:30:::::|h[Wolfmaster Cape]|h|r	1	Alatra	HUNTER", -- [392]
+			"<11:24:26> <Comm>		^1^Sl^T^N1^S46962^t^^	WHISPER	Alatra-Zul'jin", -- [393]
+			"<11:24:26> <Comm>		^1^Sl^T^N1^S46962^t^^	WHISPER	Alatra-Zul'jin", -- [394]
+			"<11:24:28> <DEBUG>		Storage:New	|cff0070dd|Hitem:6314::::::::47:254::1:1:6710:1:28:213:::::|h[Wolfmaster Cape]|h|r	temp", -- [395]
+			"<11:24:28> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:6314::::::::47:254::1:1:6710:1:28:213:::::||h[Wolfmaster Cape]||h||r	5", -- [396]
+			"<11:24:28> <DEBUG>		Found:	nil	nil	nil", -- [397]
+			"<11:24:28> <DEBUG>		Storage:New	|cff0070dd|Hitem:6314::::::::47:254::1:1:6710:1:28:213:::::|h[Wolfmaster Cape]|h|r	temp", -- [398]
+			"<11:24:28> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:6314::::::::47:254::1:1:6710:1:28:213:::::||h[Wolfmaster Cape]||h||r	5", -- [399]
+			"<11:24:28> <DEBUG>		Found:	nil	nil	nil", -- [400]
+			"<11:24:29> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:6314::::::::47:254::1:1:6710:1:28:213:::::||h[Wolfmaster Cape]||h||r	5", -- [401]
+			"<11:24:29> <DEBUG>		Found:	nil	nil	nil", -- [402]
+			"<11:24:29> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:6314::::::::47:254::1:1:6710:1:28:213:::::||h[Wolfmaster Cape]||h||r	5", -- [403]
+			"<11:24:29> <DEBUG>		Found:	nil	nil	nil", -- [404]
+			"<11:24:30> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:6314::::::::47:254::1:1:6710:1:28:213:::::||h[Wolfmaster Cape]||h||r	5", -- [405]
+			"<11:24:30> <DEBUG>		Found:	nil	nil	nil", -- [406]
+			"<11:24:30> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:6314::::::::47:254::1:1:6710:1:28:213:::::||h[Wolfmaster Cape]||h||r	5", -- [407]
+			"<11:24:30> <DEBUG>		Found:	nil	nil	nil", -- [408]
+			"<11:24:31> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:6314::::::::47:254::1:1:6710:1:28:213:::::||h[Wolfmaster Cape]||h||r	5", -- [409]
+			"<11:24:31> <DEBUG>		Found:	nil	nil	nil", -- [410]
+			"<11:24:31> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:6314::::::::47:254::1:1:6710:1:28:213:::::|h[Wolfmaster Cape]|h|r not found in bags", -- [411]
+			"<11:24:31> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:6314::::::::47:254::1:1:6710:1:28:213:::::||h[Wolfmaster Cape]||h||r	5", -- [412]
+			"<11:24:31> <DEBUG>		Found:	nil	nil	nil", -- [413]
+			"<11:24:31> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:6314::::::::47:254::1:1:6710:1:28:213:::::|h[Wolfmaster Cape]|h|r not found in bags", -- [414]
+			"<11:25:01> <DEBUG>		Event:	LOOT_READY	true", -- [415]
+			"<11:25:01> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47137-00002604F9	8902", -- [416]
+			"<11:25:01> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:1799::::::::47:254::1:1:6656:1:28:213:::::|h[Rawhide Gloves]|h|r	0	1	Creature-0-4230-33-29480-47137-00002604F9	1", -- [417]
+			"<11:25:01> <DEBUG>		OnLootSlotCleared()	3	|cff9d9d9d|Hitem:1799::::::::47:254::1:1:6656:1:28:213:::::|h[Rawhide Gloves]|h|r	0", -- [418]
+			"<11:25:01> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [419]
+			"<11:25:01> <DEBUG>		Event:	LOOT_CLOSED", -- [420]
+			"<11:25:01> <DEBUG>		Event:	LOOT_CLOSED", -- [421]
+			"<11:25:01> <Comm>		^1^Sl^T^N1^S47137^t^^	WHISPER	Alatra-Zul'jin", -- [422]
+			"<11:25:01> <Comm>		^1^Sl^T^N1^S47137^t^^	WHISPER	Alatra-Zul'jin", -- [423]
+			"<11:25:05> <DEBUG>		Event:	LOOT_READY	true", -- [424]
+			"<11:25:05> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47131-0000A604F9	3526	Creature-0-4230-33-29480-3875-0005A604F9	2715	Creature-0-4230-33-29480-47131-00002604F9	2372	Creature-0-4230-33-29480-47131-00012604F9	1010", -- [425]
+			"<11:25:05> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [426]
+			"<11:25:05> <DEBUG>		Event:	LOOT_CLOSED", -- [427]
+			"<11:25:05> <DEBUG>		Event:	LOOT_CLOSED", -- [428]
+			"<11:25:06> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [429]
+			"<11:25:06> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [430]
+			"<11:25:08> <DEBUG>		Event:	LOOT_READY	true", -- [431]
+			"<11:25:08> <DEBUG>		Event:	LOOT_CLOSED", -- [432]
+			"<11:25:08> <DEBUG>		Event:	LOOT_CLOSED", -- [433]
+			"<11:25:10> <DEBUG>		Event:	LOOT_READY	true", -- [434]
+			"<11:25:11> <DEBUG>		Event:	LOOT_CLOSED", -- [435]
+			"<11:25:11> <DEBUG>		Event:	LOOT_CLOSED", -- [436]
+			"<11:25:15> <DEBUG>		Event:	LOOT_READY	true", -- [437]
+			"<11:25:15> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47137-00012604F9	4007	Creature-0-4230-33-29480-3875-00052604F9	4739", -- [438]
+			"<11:25:15> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:6585::::::::47:254::1:2:6654:1692:1:28:213:::::|h[Scouting Cloak of the Fireflash]|h|r	2	1	Creature-0-4230-33-29480-47137-00012604F9	1", -- [439]
+			"<11:25:16> <DEBUG>		OnLootSlotCleared()	2	|cff1eff00|Hitem:6585::::::::47:254::1:2:6654:1692:1:28:213:::::|h[Scouting Cloak of the Fireflash]|h|r	2", -- [440]
+			"<11:25:16> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [441]
+			"<11:25:16> <DEBUG>		Event:	LOOT_CLOSED", -- [442]
+			"<11:25:16> <DEBUG>		Event:	LOOT_CLOSED", -- [443]
+			"<11:25:16> <Comm>		^1^Sl^T^N1^S47137^t^^	WHISPER	Alatra-Zul'jin", -- [444]
+			"<11:25:16> <Comm>		^1^Sl^T^N1^S47137^t^^	WHISPER	Alatra-Zul'jin", -- [445]
+			"<11:25:18> <DEBUG>		Storage:New	|cff1eff00|Hitem:6585::::::::47:254::1:2:6654:1692:1:28:213:::::|h[Scouting Cloak of the Fireflash]|h|r	temp", -- [446]
+			"<11:25:18> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:6585::::::::47:254::1:2:6654:1692:1:28:213:::::||h[Scouting Cloak of the Fireflash]||h||r	5", -- [447]
+			"<11:25:18> <DEBUG>		Found:	nil	nil	nil", -- [448]
+			"<11:25:19> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:6585::::::::47:254::1:2:6654:1692:1:28:213:::::||h[Scouting Cloak of the Fireflash]||h||r	5", -- [449]
+			"<11:25:19> <DEBUG>		Found:	nil	nil	nil", -- [450]
+			"<11:25:20> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:6585::::::::47:254::1:2:6654:1692:1:28:213:::::||h[Scouting Cloak of the Fireflash]||h||r	5", -- [451]
+			"<11:25:20> <DEBUG>		Found:	nil	nil	nil", -- [452]
+			"<11:25:21> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:6585::::::::47:254::1:2:6654:1692:1:28:213:::::||h[Scouting Cloak of the Fireflash]||h||r	5", -- [453]
+			"<11:25:21> <DEBUG>		Found:	nil	nil	nil", -- [454]
+			"<11:25:21> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:6585::::::::47:254::1:2:6654:1692:1:28:213:::::|h[Scouting Cloak of the Fireflash]|h|r not found in bags", -- [455]
+			"<11:25:22> <DEBUG>		Event:	LOOT_READY	true", -- [456]
+			"<11:25:22> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47137-0000A604F9	4540	Creature-0-4230-33-29480-3875-00062604F9	10351	Creature-0-4230-33-29480-47137-0001A604F9	7372", -- [457]
+			"<11:25:22> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [458]
+			"<11:25:22> <DEBUG>		Event:	LOOT_CLOSED", -- [459]
+			"<11:25:22> <DEBUG>		Event:	LOOT_CLOSED", -- [460]
+			"<11:25:22> <Comm>		^1^Sl^T^N1^S47137^t^^	WHISPER	Alatra-Zul'jin", -- [461]
+			"<11:25:22> <Comm>		^1^Sl^T^N1^S47137^t^^	WHISPER	Alatra-Zul'jin", -- [462]
+			"<11:25:30> <DEBUG>		Event:	LOOT_READY	true", -- [463]
+			"<11:25:30> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:60393::::::::47:254:::::::::|h[Crushed Hoof]|h|r	0	1	Creature-0-4230-33-29480-3864-0000A604F9	1", -- [464]
+			"<11:25:30> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:60393::::::::47:254:::::::::|h[Crushed Hoof]|h|r	0", -- [465]
+			"<11:25:30> <DEBUG>		Event:	LOOT_CLOSED", -- [466]
+			"<11:25:30> <DEBUG>		Event:	LOOT_CLOSED", -- [467]
+			"<11:25:30> <Comm>		^1^Sl^T^N1^S3864^t^^	WHISPER	Alatra-Zul'jin", -- [468]
+			"<11:25:30> <Comm>		^1^Sl^T^N1^S3864^t^^	WHISPER	Alatra-Zul'jin", -- [469]
+			"<11:25:33> <DEBUG>		Event:	LOOT_CLOSED", -- [470]
+			"<11:25:33> <DEBUG>		Event:	LOOT_READY	true", -- [471]
+			"<11:25:33> <Comm>		^1^Sl^T^N1^S3864^t^^	WHISPER	Alatra-Zul'jin", -- [472]
+			"<11:25:33> <DEBUG>		Event:	LOOT_CLOSED", -- [473]
+			"<11:25:33> <DEBUG>		Event:	LOOT_CLOSED", -- [474]
+			"<11:25:40> <DEBUG>		Event:	LOOT_READY	true", -- [475]
+			"<11:25:40> <DEBUG>		Event:	LOOT_CLOSED", -- [476]
+			"<11:25:40> <DEBUG>		Event:	LOOT_CLOSED", -- [477]
+			"<11:25:45> <DEBUG>		Event:	LOOT_READY	true", -- [478]
+			"<11:25:45> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47131-00022604F9	2510	Creature-0-4230-33-29480-47131-0001A604F9	2172	Creature-0-4230-33-29480-47131-0002A604F9	1179", -- [479]
+			"<11:25:45> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:9777::::::::47:254::1:2:6654:1706:1:28:213:::::|h[Bandit Bracers of the Aurora]|h|r	2	1	Creature-0-4230-33-29480-47131-0002A604F9	1", -- [480]
+			"<11:25:45> <DEBUG>		OnLootSlotCleared()	2	|cff1eff00|Hitem:9777::::::::47:254::1:2:6654:1706:1:28:213:::::|h[Bandit Bracers of the Aurora]|h|r	2", -- [481]
+			"<11:25:45> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [482]
+			"<11:25:45> <DEBUG>		Event:	LOOT_CLOSED", -- [483]
+			"<11:25:45> <DEBUG>		Event:	LOOT_CLOSED", -- [484]
+			"<11:25:45> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [485]
+			"<11:25:45> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [486]
+			"<11:25:47> <DEBUG>		Storage:New	|cff1eff00|Hitem:9777::::::::47:254::1:2:6654:1706:1:28:213:::::|h[Bandit Bracers of the Aurora]|h|r	temp", -- [487]
+			"<11:25:47> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:9777::::::::47:254::1:2:6654:1706:1:28:213:::::||h[Bandit Bracers of the Aurora]||h||r	5", -- [488]
+			"<11:25:47> <DEBUG>		Found:	nil	nil	nil", -- [489]
+			"<11:25:47> <DEBUG>		Event:	LOOT_READY	true", -- [490]
+			"<11:25:47> <DEBUG>		Event:	LOOT_CLOSED", -- [491]
+			"<11:25:47> <DEBUG>		Event:	LOOT_CLOSED", -- [492]
+			"<11:25:48> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:9777::::::::47:254::1:2:6654:1706:1:28:213:::::||h[Bandit Bracers of the Aurora]||h||r	5", -- [493]
+			"<11:25:48> <DEBUG>		Found:	nil	nil	nil", -- [494]
+			"<11:25:49> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:9777::::::::47:254::1:2:6654:1706:1:28:213:::::||h[Bandit Bracers of the Aurora]||h||r	5", -- [495]
+			"<11:25:49> <DEBUG>		Found:	nil	nil	nil", -- [496]
+			"<11:25:50> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:9777::::::::47:254::1:2:6654:1706:1:28:213:::::||h[Bandit Bracers of the Aurora]||h||r	5", -- [497]
+			"<11:25:50> <DEBUG>		Found:	nil	nil	nil", -- [498]
+			"<11:25:50> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:9777::::::::47:254::1:2:6654:1706:1:28:213:::::|h[Bandit Bracers of the Aurora]|h|r not found in bags", -- [499]
+			"<11:25:54> <DEBUG>		Event:	LOOT_READY	true", -- [500]
+			"<11:25:54> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-3875-0006A604F9	7254", -- [501]
+			"<11:25:54> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [502]
+			"<11:25:54> <DEBUG>		Event:	LOOT_CLOSED", -- [503]
+			"<11:25:54> <DEBUG>		Event:	LOOT_CLOSED", -- [504]
+			"<11:25:54> <Comm>		^1^Sl^T^N1^S3875^t^^	WHISPER	Alatra-Zul'jin", -- [505]
+			"<11:25:54> <Comm>		^1^Sl^T^N1^S3875^t^^	WHISPER	Alatra-Zul'jin", -- [506]
+			"<11:26:03> <DEBUG>		Event:	LOOT_READY	true", -- [507]
+			"<11:26:03> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-3875-0000A604F9	9546	Creature-0-4230-33-29480-47231-00002604F9	6811", -- [508]
+			"<11:26:03> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [509]
+			"<11:26:03> <DEBUG>		Event:	LOOT_CLOSED", -- [510]
+			"<11:26:03> <DEBUG>		Event:	LOOT_CLOSED", -- [511]
+			"<11:26:03> <Comm>		^1^Sl^T^N1^S3875^t^^	WHISPER	Alatra-Zul'jin", -- [512]
+			"<11:26:03> <Comm>		^1^Sl^T^N1^S3875^t^^	WHISPER	Alatra-Zul'jin", -- [513]
+			"<11:26:07> <DEBUG>		Event:	LOOT_READY	true", -- [514]
+			"<11:26:07> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-3875-00002604F9	3947", -- [515]
+			"<11:26:07> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [516]
+			"<11:26:07> <DEBUG>		Event:	LOOT_CLOSED", -- [517]
+			"<11:26:07> <DEBUG>		Event:	LOOT_CLOSED", -- [518]
+			"<11:26:07> <Comm>		^1^Sl^T^N1^S3875^t^^	WHISPER	Alatra-Zul'jin", -- [519]
+			"<11:26:07> <Comm>		^1^Sl^T^N1^S3875^t^^	WHISPER	Alatra-Zul'jin", -- [520]
+			"<11:26:11> <DEBUG>		Event:	LOOT_READY	true", -- [521]
+			"<11:26:11> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47232-00012604F9	4447	Creature-0-4230-33-29480-47232-00002604F9	8938	Creature-0-4230-33-29480-47232-0000A604F9	8526	Creature-0-4230-33-29480-47232-0001A604F9	9780", -- [522]
+			"<11:26:11> <DEBUG>		Event:	LOOT_READY	true", -- [523]
+			"<11:26:11> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47232-00012604F9	4447	Creature-0-4230-33-29480-47232-00002604F9	8938	Creature-0-4230-33-29480-47232-0000A604F9	8526	Creature-0-4230-33-29480-47232-0001A604F9	9780", -- [524]
+			"<11:26:11> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [525]
+			"<11:26:11> <DEBUG>		Event:	LOOT_CLOSED", -- [526]
+			"<11:26:11> <DEBUG>		Event:	LOOT_CLOSED", -- [527]
+			"<11:26:11> <Comm>		^1^Sl^T^N1^S47232^t^^	WHISPER	Alatra-Zul'jin", -- [528]
+			"<11:26:11> <Comm>		^1^Sl^T^N1^S47232^t^^	WHISPER	Alatra-Zul'jin", -- [529]
+			"<11:26:14> <DEBUG>		Event:	LOOT_READY	true", -- [530]
+			"<11:26:14> <DEBUG>		Event:	LOOT_CLOSED", -- [531]
+			"<11:26:14> <DEBUG>		Event:	LOOT_CLOSED", -- [532]
+			"<11:26:28> <DEBUG>		Event:	LOOT_READY	true", -- [533]
+			"<11:26:28> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-3875-00022604F9	4763	Creature-0-4230-33-29480-3875-00012604F9	9351	Creature-0-4230-33-29480-3875-0001A604F9	3943	Creature-0-4230-33-29480-3875-0002A604F9	2204	Creature-0-4230-33-29480-47231-0000A604F9	5609	Creature-0-4230-33-29480-47231-00012604F9	8046	Creature-0-4230-33-29480-47231-0001A604F9	3963	Creature-0-4230-33-29480-47231-00022604F9	2729", -- [534]
+			"<11:26:28> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:4575::::::::47:254::1:2:6655:1677:1:28:213:::::|h[Medicine Staff of the Quickblade]|h|r	2	1	Creature-0-4230-33-29480-3875-0001A604F9	1", -- [535]
+			"<11:26:28> <DEBUG>		OnLootSlotCleared()	5	|cff1eff00|Hitem:4575::::::::47:254::1:2:6655:1677:1:28:213:::::|h[Medicine Staff of the Quickblade]|h|r	2", -- [536]
+			"<11:26:28> <DEBUG>		Event:	LOOT_READY	true", -- [537]
+			"<11:26:28> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-3875-00022604F9	4763	Creature-0-4230-33-29480-3875-00012604F9	9351	Creature-0-4230-33-29480-3875-0001A604F9	3943	Creature-0-4230-33-29480-3875-0002A604F9	2204	Creature-0-4230-33-29480-47231-0000A604F9	5609	Creature-0-4230-33-29480-47231-00012604F9	8046	Creature-0-4230-33-29480-47231-0001A604F9	3963	Creature-0-4230-33-29480-47231-00022604F9	2729", -- [538]
+			"<11:26:28> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [539]
+			"<11:26:28> <DEBUG>		Event:	LOOT_CLOSED", -- [540]
+			"<11:26:28> <DEBUG>		Event:	LOOT_CLOSED", -- [541]
+			"<11:26:28> <Comm>		^1^Sl^T^N1^S3875^t^^	WHISPER	Alatra-Zul'jin", -- [542]
+			"<11:26:28> <Comm>		^1^Sl^T^N1^S3875^t^^	WHISPER	Alatra-Zul'jin", -- [543]
+			"<11:26:30> <DEBUG>		Storage:New	|cff1eff00|Hitem:4575::::::::47:254::1:2:6655:1677:1:28:213:::::|h[Medicine Staff of the Quickblade]|h|r	temp", -- [544]
+			"<11:26:30> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:4575::::::::47:254::1:2:6655:1677:1:28:213:::::||h[Medicine Staff of the Quickblade]||h||r	5", -- [545]
+			"<11:26:30> <DEBUG>		Found:	nil	nil	nil", -- [546]
+			"<11:26:31> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:4575::::::::47:254::1:2:6655:1677:1:28:213:::::||h[Medicine Staff of the Quickblade]||h||r	5", -- [547]
+			"<11:26:31> <DEBUG>		Found:	nil	nil	nil", -- [548]
+			"<11:26:32> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:4575::::::::47:254::1:2:6655:1677:1:28:213:::::||h[Medicine Staff of the Quickblade]||h||r	5", -- [549]
+			"<11:26:32> <DEBUG>		Found:	nil	nil	nil", -- [550]
+			"<11:26:32> <DEBUG>		Event:	LOOT_READY	true", -- [551]
+			"<11:26:32> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	GameObject-0-4230-33-29480-75293-00002604F9	160", -- [552]
+			"<11:26:32> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:3205::::::::47:254::1:1:6654:1:28:8:::::|h[Inscribed Leather Bracers]|h|r	2	1	GameObject-0-4230-33-29480-75293-00002604F9	1", -- [553]
+			"<11:26:32> <DEBUG>		Adding to self.lootSlotInfo	3	|cff1eff00|Hitem:3184::::::::47:254::1:2:6655:1709:1:28:8:::::|h[Hook Dagger of the Aurora]|h|r	2	1	GameObject-0-4230-33-29480-75293-00002604F9	1", -- [554]
+			"<11:26:32> <DEBUG>		Adding to self.lootSlotInfo	4	|cff1eff00|Hitem:2987::::::::47:254::1:1:6654:1:28:8:::::|h[Inscribed Leather Boots]|h|r	2	1	GameObject-0-4230-33-29480-75293-00002604F9	1", -- [555]
+			"<11:26:32> <DEBUG>		OnLootSlotCleared()	4	|cff1eff00|Hitem:2987::::::::47:254::1:1:6654:1:28:8:::::|h[Inscribed Leather Boots]|h|r	2", -- [556]
+			"<11:26:32> <DEBUG>		OnLootSlotCleared()	3	|cff1eff00|Hitem:3184::::::::47:254::1:2:6655:1709:1:28:8:::::|h[Hook Dagger of the Aurora]|h|r	2", -- [557]
+			"<11:26:32> <DEBUG>		Event:	LOOT_READY	true", -- [558]
+			"<11:26:32> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	GameObject-0-4230-33-29480-75293-00002604F9	160", -- [559]
+			"<11:26:32> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:3205::::::::47:254::1:1:6654:1:28:8:::::|h[Inscribed Leather Bracers]|h|r	2	1	GameObject-0-4230-33-29480-75293-00002604F9	1", -- [560]
+			"<11:26:32> <DEBUG>		OnLootSlotCleared()	2	|cff1eff00|Hitem:3205::::::::47:254::1:1:6654:1:28:8:::::|h[Inscribed Leather Bracers]|h|r	2", -- [561]
+			"<11:26:32> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [562]
+			"<11:26:32> <DEBUG>		Event:	LOOT_CLOSED", -- [563]
+			"<11:26:32> <DEBUG>		Event:	LOOT_CLOSED", -- [564]
+			"<11:26:33> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:4575::::::::47:254::1:2:6655:1677:1:28:213:::::||h[Medicine Staff of the Quickblade]||h||r	5", -- [565]
+			"<11:26:33> <DEBUG>		Found:	nil	nil	nil", -- [566]
+			"<11:26:33> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:4575::::::::47:254::1:2:6655:1677:1:28:213:::::|h[Medicine Staff of the Quickblade]|h|r not found in bags", -- [567]
+			"<11:26:33> <Comm>		^1^Sl^T^N1^S75293^t^^	WHISPER	Alatra-Zul'jin", -- [568]
+			"<11:26:33> <Comm>		^1^Sl^T^N1^S75293^t^^	WHISPER	Alatra-Zul'jin", -- [569]
+			"<11:26:34> <DEBUG>		Storage:New	|cff1eff00|Hitem:2987::::::::47:254::1:1:6654:1:28:8:::::|h[Inscribed Leather Boots]|h|r	temp", -- [570]
+			"<11:26:34> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:2987::::::::47:254::1:1:6654:1:28:8:::::||h[Inscribed Leather Boots]||h||r	5", -- [571]
+			"<11:26:34> <DEBUG>		Found:	nil	nil	nil", -- [572]
+			"<11:26:34> <DEBUG>		Storage:New	|cff1eff00|Hitem:3184::::::::47:254::1:2:6655:1709:1:28:8:::::|h[Hook Dagger of the Aurora]|h|r	temp", -- [573]
+			"<11:26:34> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:3184::::::::47:254::1:2:6655:1709:1:28:8:::::||h[Hook Dagger of the Aurora]||h||r	5", -- [574]
+			"<11:26:34> <DEBUG>		Found:	nil	nil	nil", -- [575]
+			"<11:26:34> <DEBUG>		Storage:New	|cff1eff00|Hitem:3205::::::::47:254::1:1:6654:1:28:8:::::|h[Inscribed Leather Bracers]|h|r	temp", -- [576]
+			"<11:26:34> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:3205::::::::47:254::1:1:6654:1:28:8:::::||h[Inscribed Leather Bracers]||h||r	5", -- [577]
+			"<11:26:34> <DEBUG>		Found:	nil	nil	nil", -- [578]
+			"<11:26:35> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:2987::::::::47:254::1:1:6654:1:28:8:::::||h[Inscribed Leather Boots]||h||r	5", -- [579]
+			"<11:26:35> <DEBUG>		Found:	nil	nil	nil", -- [580]
+			"<11:26:35> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:3184::::::::47:254::1:2:6655:1709:1:28:8:::::||h[Hook Dagger of the Aurora]||h||r	5", -- [581]
+			"<11:26:35> <DEBUG>		Found:	nil	nil	nil", -- [582]
+			"<11:26:35> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:3205::::::::47:254::1:1:6654:1:28:8:::::||h[Inscribed Leather Bracers]||h||r	5", -- [583]
+			"<11:26:35> <DEBUG>		Found:	nil	nil	nil", -- [584]
+			"<11:26:36> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:2987::::::::47:254::1:1:6654:1:28:8:::::||h[Inscribed Leather Boots]||h||r	5", -- [585]
+			"<11:26:36> <DEBUG>		Found:	nil	nil	nil", -- [586]
+			"<11:26:36> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:3184::::::::47:254::1:2:6655:1709:1:28:8:::::||h[Hook Dagger of the Aurora]||h||r	5", -- [587]
+			"<11:26:36> <DEBUG>		Found:	nil	nil	nil", -- [588]
+			"<11:26:36> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:3205::::::::47:254::1:1:6654:1:28:8:::::||h[Inscribed Leather Bracers]||h||r	5", -- [589]
+			"<11:26:36> <DEBUG>		Found:	nil	nil	nil", -- [590]
+			"<11:26:37> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:2987::::::::47:254::1:1:6654:1:28:8:::::||h[Inscribed Leather Boots]||h||r	5", -- [591]
+			"<11:26:37> <DEBUG>		Found:	nil	nil	nil", -- [592]
+			"<11:26:37> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:2987::::::::47:254::1:1:6654:1:28:8:::::|h[Inscribed Leather Boots]|h|r not found in bags", -- [593]
+			"<11:26:37> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:3184::::::::47:254::1:2:6655:1709:1:28:8:::::||h[Hook Dagger of the Aurora]||h||r	5", -- [594]
+			"<11:26:37> <DEBUG>		Found:	nil	nil	nil", -- [595]
+			"<11:26:37> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:3184::::::::47:254::1:2:6655:1709:1:28:8:::::|h[Hook Dagger of the Aurora]|h|r not found in bags", -- [596]
+			"<11:26:37> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:3205::::::::47:254::1:1:6654:1:28:8:::::||h[Inscribed Leather Bracers]||h||r	5", -- [597]
+			"<11:26:37> <DEBUG>		Found:	nil	nil	nil", -- [598]
+			"<11:26:37> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:3205::::::::47:254::1:1:6654:1:28:8:::::|h[Inscribed Leather Bracers]|h|r not found in bags", -- [599]
+			"<11:26:38> <DEBUG>		Event:	ENCOUNTER_START	1070	Baron Silverlaine	1	5", -- [600]
+			"<11:26:38> <INFO>		UpdatePlayersData()", -- [601]
+			"<11:26:38> <DEBUG>		Event:	ENCOUNTER_END	1070	Baron Silverlaine	1	5	1", -- [602]
+			"<11:26:39> <DEBUG>		Event:	LOOT_READY	true", -- [603]
+			"<11:26:39> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-3875-00032604F9	8001	Creature-0-4230-33-29480-3887-00002604F9	73794", -- [604]
+			"<11:26:39> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:132567::::::::47:254::1:1:6710:1:28:213:::::|h[Blindwatcher's Chain]|h|r	3	1	Creature-0-4230-33-29480-3887-00002604F9	1", -- [605]
+			"<11:26:39> <DEBUG>		Adding to self.lootSlotInfo	4	|cff0070dd|Hitem:6319::::::::47:254::1:1:6710:1:28:213:::::|h[Girdle of the Blindwatcher]|h|r	3	1	Creature-0-4230-33-29480-3887-00002604F9	1", -- [606]
+			"<11:26:39> <DEBUG>		OnLootSlotCleared()	4	|cff0070dd|Hitem:6319::::::::47:254::1:1:6710:1:28:213:::::|h[Girdle of the Blindwatcher]|h|r	3", -- [607]
+			"<11:26:39> <DEBUG>		OnLootSlotCleared()	3	|cff0070dd|Hitem:132567::::::::47:254::1:1:6710:1:28:213:::::|h[Blindwatcher's Chain]|h|r	3", -- [608]
+			"<11:26:39> <DEBUG>		Event:	LOOT_READY	true", -- [609]
+			"<11:26:39> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-3875-00032604F9	8001	Creature-0-4230-33-29480-3887-00002604F9	73794", -- [610]
+			"<11:26:39> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	1070	6319	|cff0070dd|Hitem:6319::::::::47:254::1:1:6710:2:28:213:9:30:::::|h[Girdle of the Blindwatcher]|h|r	1	Alatra	HUNTER", -- [611]
+			"<11:26:39> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	1070	132567	|cff0070dd|Hitem:132567::::::::47:254::1:1:6710:2:28:213:9:30:::::|h[Blindwatcher's Chain]|h|r	1	Alatra	HUNTER", -- [612]
+			"<11:26:39> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [613]
+			"<11:26:39> <DEBUG>		Event:	LOOT_CLOSED", -- [614]
+			"<11:26:39> <DEBUG>		Event:	LOOT_CLOSED", -- [615]
+			"<11:26:40> <Comm>		^1^Sl^T^N1^S3875^t^^	WHISPER	Alatra-Zul'jin", -- [616]
+			"<11:26:40> <Comm>		^1^Sl^T^N1^S3875^t^^	WHISPER	Alatra-Zul'jin", -- [617]
+			"<11:26:41> <DEBUG>		Storage:New	|cff0070dd|Hitem:6319::::::::47:254::1:1:6710:1:28:213:::::|h[Girdle of the Blindwatcher]|h|r	temp", -- [618]
+			"<11:26:41> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:6319::::::::47:254::1:1:6710:1:28:213:::::||h[Girdle of the Blindwatcher]||h||r	5", -- [619]
+			"<11:26:41> <DEBUG>		Found:	nil	nil	nil", -- [620]
+			"<11:26:41> <DEBUG>		Storage:New	|cff0070dd|Hitem:132567::::::::47:254::1:1:6710:1:28:213:::::|h[Blindwatcher's Chain]|h|r	temp", -- [621]
+			"<11:26:41> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:132567::::::::47:254::1:1:6710:1:28:213:::::||h[Blindwatcher's Chain]||h||r	5", -- [622]
+			"<11:26:41> <DEBUG>		Found:	nil	nil	nil", -- [623]
+			"<11:26:42> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:6319::::::::47:254::1:1:6710:1:28:213:::::||h[Girdle of the Blindwatcher]||h||r	5", -- [624]
+			"<11:26:42> <DEBUG>		Found:	nil	nil	nil", -- [625]
+			"<11:26:42> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:132567::::::::47:254::1:1:6710:1:28:213:::::||h[Blindwatcher's Chain]||h||r	5", -- [626]
+			"<11:26:42> <DEBUG>		Found:	nil	nil	nil", -- [627]
+			"<11:26:43> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:6319::::::::47:254::1:1:6710:1:28:213:::::||h[Girdle of the Blindwatcher]||h||r	5", -- [628]
+			"<11:26:43> <DEBUG>		Found:	nil	nil	nil", -- [629]
+			"<11:26:43> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:132567::::::::47:254::1:1:6710:1:28:213:::::||h[Blindwatcher's Chain]||h||r	5", -- [630]
+			"<11:26:43> <DEBUG>		Found:	nil	nil	nil", -- [631]
+			"<11:26:44> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:6319::::::::47:254::1:1:6710:1:28:213:::::||h[Girdle of the Blindwatcher]||h||r	5", -- [632]
+			"<11:26:44> <DEBUG>		Found:	nil	nil	nil", -- [633]
+			"<11:26:44> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:6319::::::::47:254::1:1:6710:1:28:213:::::|h[Girdle of the Blindwatcher]|h|r not found in bags", -- [634]
+			"<11:26:44> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:132567::::::::47:254::1:1:6710:1:28:213:::::||h[Blindwatcher's Chain]||h||r	5", -- [635]
+			"<11:26:44> <DEBUG>		Found:	nil	nil	nil", -- [636]
+			"<11:26:44> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:132567::::::::47:254::1:1:6710:1:28:213:::::|h[Blindwatcher's Chain]|h|r not found in bags", -- [637]
+			"<11:27:29> <DEBUG>		Event:	LOOT_READY	true", -- [638]
+			"<11:27:29> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47143-0000A604F9	9567", -- [639]
+			"<11:27:29> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [640]
+			"<11:27:29> <DEBUG>		Event:	LOOT_CLOSED", -- [641]
+			"<11:27:29> <DEBUG>		Event:	LOOT_CLOSED", -- [642]
+			"<11:27:29> <Comm>		^1^Sl^T^N1^S47143^t^^	WHISPER	Alatra-Zul'jin", -- [643]
+			"<11:27:29> <Comm>		^1^Sl^T^N1^S47143^t^^	WHISPER	Alatra-Zul'jin", -- [644]
+			"<11:27:36> <DEBUG>		Event:	LOOT_READY	true", -- [645]
+			"<11:27:36> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-3877-00052604F9	10783	Creature-0-4230-33-29480-47143-00012604F9	4754	Creature-0-4230-33-29480-3875-00042604F9	5250	Creature-0-4230-33-29480-3875-0004A604F9	5734	Creature-0-4230-33-29480-47231-00032604F9	4024", -- [646]
+			"<11:27:36> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:9780::::::::47:254::1:2:6654:1693:1:28:213:::::|h[Bandit Gloves of the Fireflash]|h|r	2	1	Creature-0-4230-33-29480-3877-00052604F9	1", -- [647]
+			"<11:27:36> <DEBUG>		Adding to self.lootSlotInfo	4	|cff1eff00|Hitem:15268::::::::47:254::1:2:6655:1691:1:28:213:::::|h[Twin-Bladed Axe of the Fireflash]|h|r	2	1	Creature-0-4230-33-29480-47143-00012604F9	1", -- [648]
+			"<11:27:36> <DEBUG>		OnLootSlotCleared()	4	|cff1eff00|Hitem:15268::::::::47:254::1:2:6655:1691:1:28:213:::::|h[Twin-Bladed Axe of the Fireflash]|h|r	2", -- [649]
+			"<11:27:37> <DEBUG>		Event:	LOOT_READY	true", -- [650]
+			"<11:27:37> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-3877-00052604F9	10783	Creature-0-4230-33-29480-47143-00012604F9	4754	Creature-0-4230-33-29480-3875-00042604F9	5250	Creature-0-4230-33-29480-3875-0004A604F9	5734	Creature-0-4230-33-29480-47231-00032604F9	4024", -- [651]
+			"<11:27:37> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:9780::::::::47:254::1:2:6654:1693:1:28:213:::::|h[Bandit Gloves of the Fireflash]|h|r	2	1	Creature-0-4230-33-29480-3877-00052604F9	1", -- [652]
+			"<11:27:37> <DEBUG>		OnLootSlotCleared()	2	|cff1eff00|Hitem:9780::::::::47:254::1:2:6654:1693:1:28:213:::::|h[Bandit Gloves of the Fireflash]|h|r	2", -- [653]
+			"<11:27:37> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [654]
+			"<11:27:37> <DEBUG>		Event:	LOOT_CLOSED", -- [655]
+			"<11:27:37> <DEBUG>		Event:	LOOT_CLOSED", -- [656]
+			"<11:27:37> <Comm>		^1^Sl^T^N1^S3877^t^^	WHISPER	Alatra-Zul'jin", -- [657]
+			"<11:27:37> <Comm>		^1^Sl^T^N1^S3877^t^^	WHISPER	Alatra-Zul'jin", -- [658]
+			"<11:27:38> <DEBUG>		Storage:New	|cff1eff00|Hitem:15268::::::::47:254::1:2:6655:1691:1:28:213:::::|h[Twin-Bladed Axe of the Fireflash]|h|r	temp", -- [659]
+			"<11:27:38> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:15268::::::::47:254::1:2:6655:1691:1:28:213:::::||h[Twin-Bladed Axe of the Fireflash]||h||r	5", -- [660]
+			"<11:27:38> <DEBUG>		Found:	nil	nil	nil", -- [661]
+			"<11:27:39> <DEBUG>		Storage:New	|cff1eff00|Hitem:9780::::::::47:254::1:2:6654:1693:1:28:213:::::|h[Bandit Gloves of the Fireflash]|h|r	temp", -- [662]
+			"<11:27:39> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:9780::::::::47:254::1:2:6654:1693:1:28:213:::::||h[Bandit Gloves of the Fireflash]||h||r	5", -- [663]
+			"<11:27:39> <DEBUG>		Found:	nil	nil	nil", -- [664]
+			"<11:27:39> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:15268::::::::47:254::1:2:6655:1691:1:28:213:::::||h[Twin-Bladed Axe of the Fireflash]||h||r	5", -- [665]
+			"<11:27:39> <DEBUG>		Found:	nil	nil	nil", -- [666]
+			"<11:27:40> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:9780::::::::47:254::1:2:6654:1693:1:28:213:::::||h[Bandit Gloves of the Fireflash]||h||r	5", -- [667]
+			"<11:27:40> <DEBUG>		Found:	nil	nil	nil", -- [668]
+			"<11:27:40> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:15268::::::::47:254::1:2:6655:1691:1:28:213:::::||h[Twin-Bladed Axe of the Fireflash]||h||r	5", -- [669]
+			"<11:27:40> <DEBUG>		Found:	nil	nil	nil", -- [670]
+			"<11:27:41> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:9780::::::::47:254::1:2:6654:1693:1:28:213:::::||h[Bandit Gloves of the Fireflash]||h||r	5", -- [671]
+			"<11:27:41> <DEBUG>		Found:	nil	nil	nil", -- [672]
+			"<11:27:41> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:15268::::::::47:254::1:2:6655:1691:1:28:213:::::||h[Twin-Bladed Axe of the Fireflash]||h||r	5", -- [673]
+			"<11:27:41> <DEBUG>		Found:	nil	nil	nil", -- [674]
+			"<11:27:41> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:15268::::::::47:254::1:2:6655:1691:1:28:213:::::|h[Twin-Bladed Axe of the Fireflash]|h|r not found in bags", -- [675]
+			"<11:27:42> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:9780::::::::47:254::1:2:6654:1693:1:28:213:::::||h[Bandit Gloves of the Fireflash]||h||r	5", -- [676]
+			"<11:27:42> <DEBUG>		Found:	nil	nil	nil", -- [677]
+			"<11:27:42> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:9780::::::::47:254::1:2:6654:1693:1:28:213:::::|h[Bandit Gloves of the Fireflash]|h|r not found in bags", -- [678]
+			"<11:27:42> <DEBUG>		Event:	LOOT_READY	true", -- [679]
+			"<11:27:42> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-3875-0003A604F9	5705	Creature-0-4230-33-29480-3877-00042604F9	9876	Creature-0-4230-33-29480-3877-0005A604F9	1869	Creature-0-4230-33-29480-47231-0003A604F9	3236", -- [680]
+			"<11:27:42> <DEBUG>		Adding to self.lootSlotInfo	2	|cff1eff00|Hitem:2987::::::::47:254::1:1:6654:1:28:213:::::|h[Inscribed Leather Boots]|h|r	2	1	Creature-0-4230-33-29480-3877-0005A604F9	1", -- [681]
+			"<11:27:42> <DEBUG>		OnLootSlotCleared()	2	|cff1eff00|Hitem:2987::::::::47:254::1:1:6654:1:28:213:::::|h[Inscribed Leather Boots]|h|r	2", -- [682]
+			"<11:27:42> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [683]
+			"<11:27:42> <DEBUG>		Event:	LOOT_CLOSED", -- [684]
+			"<11:27:42> <DEBUG>		Event:	LOOT_CLOSED", -- [685]
+			"<11:27:42> <Comm>		^1^Sl^T^N1^S3877^t^^	WHISPER	Alatra-Zul'jin", -- [686]
+			"<11:27:42> <Comm>		^1^Sl^T^N1^S3877^t^^	WHISPER	Alatra-Zul'jin", -- [687]
+			"<11:27:44> <DEBUG>		Storage:New	|cff1eff00|Hitem:2987::::::::47:254::1:1:6654:1:28:213:::::|h[Inscribed Leather Boots]|h|r	temp", -- [688]
+			"<11:27:44> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:2987::::::::47:254::1:1:6654:1:28:213:::::||h[Inscribed Leather Boots]||h||r	5", -- [689]
+			"<11:27:44> <DEBUG>		Found:	nil	nil	nil", -- [690]
+			"<11:27:44> <DEBUG>		Event:	LOOT_READY	true", -- [691]
+			"<11:27:44> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47143-00002604F9	2004", -- [692]
+			"<11:27:44> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [693]
+			"<11:27:44> <DEBUG>		Event:	LOOT_CLOSED", -- [694]
+			"<11:27:44> <DEBUG>		Event:	LOOT_CLOSED", -- [695]
+			"<11:27:45> <Comm>		^1^Sl^T^N1^S47143^t^^	WHISPER	Alatra-Zul'jin", -- [696]
+			"<11:27:45> <Comm>		^1^Sl^T^N1^S47143^t^^	WHISPER	Alatra-Zul'jin", -- [697]
+			"<11:27:45> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:2987::::::::47:254::1:1:6654:1:28:213:::::||h[Inscribed Leather Boots]||h||r	5", -- [698]
+			"<11:27:45> <DEBUG>		Found:	nil	nil	nil", -- [699]
+			"<11:27:46> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:2987::::::::47:254::1:1:6654:1:28:213:::::||h[Inscribed Leather Boots]||h||r	5", -- [700]
+			"<11:27:46> <DEBUG>		Found:	nil	nil	nil", -- [701]
+			"<11:27:47> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:2987::::::::47:254::1:1:6654:1:28:213:::::||h[Inscribed Leather Boots]||h||r	5", -- [702]
+			"<11:27:47> <DEBUG>		Found:	nil	nil	nil", -- [703]
+			"<11:27:47> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:2987::::::::47:254::1:1:6654:1:28:213:::::|h[Inscribed Leather Boots]|h|r not found in bags", -- [704]
+			"<11:27:58> <DEBUG>		Event:	LOOT_READY	true", -- [705]
+			"<11:27:58> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	GameObject-0-4230-33-29480-75298-0000A604F9	228", -- [706]
+			"<11:27:58> <DEBUG>		Adding to self.lootSlotInfo	5	|cff1eff00|Hitem:9782::::::::47:254::1:2:6654:1707:1:28:200:::::|h[Bandit Jerkin of the Aurora]|h|r	2	1	GameObject-0-4230-33-29480-75298-0000A604F9	1", -- [707]
+			"<11:27:58> <DEBUG>		OnLootSlotCleared()	5	|cff1eff00|Hitem:9782::::::::47:254::1:2:6654:1707:1:28:200:::::|h[Bandit Jerkin of the Aurora]|h|r	2", -- [708]
+			"<11:27:58> <DEBUG>		Event:	LOOT_READY	true", -- [709]
+			"<11:27:58> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	GameObject-0-4230-33-29480-75298-0000A604F9	228", -- [710]
+			"<11:27:58> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [711]
+			"<11:27:58> <DEBUG>		Event:	LOOT_CLOSED", -- [712]
+			"<11:27:58> <DEBUG>		Event:	LOOT_CLOSED", -- [713]
+			"<11:27:59> <Comm>		^1^Sl^T^N1^S75298^t^^	WHISPER	Alatra-Zul'jin", -- [714]
+			"<11:27:59> <Comm>		^1^Sl^T^N1^S75298^t^^	WHISPER	Alatra-Zul'jin", -- [715]
+			"<11:28:00> <DEBUG>		Storage:New	|cff1eff00|Hitem:9782::::::::47:254::1:2:6654:1707:1:28:200:::::|h[Bandit Jerkin of the Aurora]|h|r	temp", -- [716]
+			"<11:28:00> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:9782::::::::47:254::1:2:6654:1707:1:28:200:::::||h[Bandit Jerkin of the Aurora]||h||r	5", -- [717]
+			"<11:28:00> <DEBUG>		Found:	nil	nil	nil", -- [718]
+			"<11:28:01> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:9782::::::::47:254::1:2:6654:1707:1:28:200:::::||h[Bandit Jerkin of the Aurora]||h||r	5", -- [719]
+			"<11:28:01> <DEBUG>		Found:	nil	nil	nil", -- [720]
+			"<11:28:02> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:9782::::::::47:254::1:2:6654:1707:1:28:200:::::||h[Bandit Jerkin of the Aurora]||h||r	5", -- [721]
+			"<11:28:02> <DEBUG>		Found:	nil	nil	nil", -- [722]
+			"<11:28:03> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:9782::::::::47:254::1:2:6654:1707:1:28:200:::::||h[Bandit Jerkin of the Aurora]||h||r	5", -- [723]
+			"<11:28:03> <DEBUG>		Found:	nil	nil	nil", -- [724]
+			"<11:28:03> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:9782::::::::47:254::1:2:6654:1707:1:28:200:::::|h[Bandit Jerkin of the Aurora]|h|r not found in bags", -- [725]
+			"<11:28:34> <DEBUG>		Event:	LOOT_READY	true", -- [726]
+			"<11:28:34> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47231-0002A604F9	2800	Creature-0-4230-33-29480-3877-0004A604F9	6291", -- [727]
+			"<11:28:34> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [728]
+			"<11:28:34> <DEBUG>		Event:	LOOT_CLOSED", -- [729]
+			"<11:28:34> <DEBUG>		Event:	LOOT_CLOSED", -- [730]
+			"<11:28:34> <Comm>		^1^Sl^T^N1^S47231^t^^	WHISPER	Alatra-Zul'jin", -- [731]
+			"<11:28:34> <Comm>		^1^Sl^T^N1^S47231^t^^	WHISPER	Alatra-Zul'jin", -- [732]
+			"<11:28:40> <DEBUG>		Event:	LOOT_READY	true", -- [733]
+			"<11:28:40> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47143-0001A604F9	6014", -- [734]
+			"<11:28:40> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [735]
+			"<11:28:40> <DEBUG>		Event:	LOOT_CLOSED", -- [736]
+			"<11:28:40> <DEBUG>		Event:	LOOT_CLOSED", -- [737]
+			"<11:28:40> <Comm>		^1^Sl^T^N1^S47143^t^^	WHISPER	Alatra-Zul'jin", -- [738]
+			"<11:28:40> <Comm>		^1^Sl^T^N1^S47143^t^^	WHISPER	Alatra-Zul'jin", -- [739]
+			"<11:28:44> <DEBUG>		Event:	LOOT_READY	true", -- [740]
+			"<11:28:44> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-3877-0001A604F9	3876	Creature-0-4230-33-29480-3877-00022604F9	4437", -- [741]
+			"<11:28:44> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [742]
+			"<11:28:44> <DEBUG>		Event:	LOOT_CLOSED", -- [743]
+			"<11:28:44> <DEBUG>		Event:	LOOT_CLOSED", -- [744]
+			"<11:28:44> <Comm>		^1^Sl^T^N1^S3877^t^^	WHISPER	Alatra-Zul'jin", -- [745]
+			"<11:28:44> <Comm>		^1^Sl^T^N1^S3877^t^^	WHISPER	Alatra-Zul'jin", -- [746]
+			"<11:28:46> <DEBUG>		Event:	LOOT_READY	true", -- [747]
+			"<11:28:46> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-3877-00032604F9	1707	Creature-0-4230-33-29480-3877-0003A604F9	2514", -- [748]
+			"<11:28:46> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [749]
+			"<11:28:46> <DEBUG>		Event:	LOOT_CLOSED", -- [750]
+			"<11:28:46> <DEBUG>		Event:	LOOT_CLOSED", -- [751]
+			"<11:28:46> <Comm>		^1^Sl^T^N1^S3877^t^^	WHISPER	Alatra-Zul'jin", -- [752]
+			"<11:28:46> <Comm>		^1^Sl^T^N1^S3877^t^^	WHISPER	Alatra-Zul'jin", -- [753]
+			"<11:28:49> <DEBUG>		Event:	ENCOUNTER_START	1071	Commander Springvale	1	5", -- [754]
+			"<11:28:49> <INFO>		UpdatePlayersData()", -- [755]
+			"<11:28:49> <DEBUG>		Event:	ENCOUNTER_END	1071	Commander Springvale	1	5	1", -- [756]
+			"<11:28:51> <DEBUG>		Event:	LOOT_READY	true", -- [757]
+			"<11:28:51> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-3873-0000A604F9	3813	Creature-0-4230-33-29480-3877-0002A604F9	4357	Creature-0-4230-33-29480-4278-00002604F9	72587", -- [758]
+			"<11:28:51> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:151068::::::::47:254::1:1:6710:1:28:213:::::|h[Boots of the Predator]|h|r	3	1	Creature-0-4230-33-29480-4278-00002604F9	1", -- [759]
+			"<11:28:51> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:6320::::::::47:254::1:1:6710:1:28:213:::::|h[Commander's Crest]|h|r	3	1	Creature-0-4230-33-29480-4278-00002604F9	1", -- [760]
+			"<11:28:51> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:2780::::::::47:254::1:1:6657:1:28:213:::::|h[Light Hunting Bow]|h|r	0	1	Creature-0-4230-33-29480-4278-00002604F9	1", -- [761]
+			"<11:28:51> <DEBUG>		OnLootSlotCleared()	4	|cff9d9d9d|Hitem:2780::::::::47:254::1:1:6657:1:28:213:::::|h[Light Hunting Bow]|h|r	0", -- [762]
+			"<11:28:51> <DEBUG>		OnLootSlotCleared()	3	|cff0070dd|Hitem:6320::::::::47:254::1:1:6710:1:28:213:::::|h[Commander's Crest]|h|r	3", -- [763]
+			"<11:28:51> <DEBUG>		Event:	LOOT_READY	true", -- [764]
+			"<11:28:51> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-3873-0000A604F9	3813	Creature-0-4230-33-29480-3877-0002A604F9	4357	Creature-0-4230-33-29480-4278-00002604F9	72587", -- [765]
+			"<11:28:51> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:151068::::::::47:254::1:1:6710:1:28:213:::::|h[Boots of the Predator]|h|r	3	1	Creature-0-4230-33-29480-4278-00002604F9	1", -- [766]
+			"<11:28:51> <DEBUG>		OnLootSlotCleared()	2	|cff0070dd|Hitem:151068::::::::47:254::1:1:6710:1:28:213:::::|h[Boots of the Predator]|h|r	3", -- [767]
+			"<11:28:51> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	1071	6320	|cff0070dd|Hitem:6320::::::::47:254::1:1:6710:2:28:213:9:30:::::|h[Commander's Crest]|h|r	1	Alatra	HUNTER", -- [768]
+			"<11:28:51> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	1071	151068	|cff0070dd|Hitem:151068::::::::47:254::1:1:6710:2:28:213:9:30:::::|h[Boots of the Predator]|h|r	1	Alatra	HUNTER", -- [769]
+			"<11:28:51> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [770]
+			"<11:28:51> <DEBUG>		Event:	LOOT_CLOSED", -- [771]
+			"<11:28:51> <DEBUG>		Event:	LOOT_CLOSED", -- [772]
+			"<11:28:52> <Comm>		^1^Sl^T^N1^S4278^t^^	WHISPER	Alatra-Zul'jin", -- [773]
+			"<11:28:52> <Comm>		^1^Sl^T^N1^S4278^t^^	WHISPER	Alatra-Zul'jin", -- [774]
+			"<11:28:53> <DEBUG>		Storage:New	|cff0070dd|Hitem:6320::::::::47:254::1:1:6710:1:28:213:::::|h[Commander's Crest]|h|r	temp", -- [775]
+			"<11:28:53> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:6320::::::::47:254::1:1:6710:1:28:213:::::||h[Commander's Crest]||h||r	5", -- [776]
+			"<11:28:53> <DEBUG>		Found:	nil	nil	nil", -- [777]
+			"<11:28:53> <DEBUG>		Storage:New	|cff0070dd|Hitem:151068::::::::47:254::1:1:6710:1:28:213:::::|h[Boots of the Predator]|h|r	temp", -- [778]
+			"<11:28:53> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:151068::::::::47:254::1:1:6710:1:28:213:::::||h[Boots of the Predator]||h||r	5", -- [779]
+			"<11:28:53> <DEBUG>		Found:	nil	nil	nil", -- [780]
+			"<11:28:54> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:6320::::::::47:254::1:1:6710:1:28:213:::::||h[Commander's Crest]||h||r	5", -- [781]
+			"<11:28:54> <DEBUG>		Found:	nil	nil	nil", -- [782]
+			"<11:28:54> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:151068::::::::47:254::1:1:6710:1:28:213:::::||h[Boots of the Predator]||h||r	5", -- [783]
+			"<11:28:54> <DEBUG>		Found:	nil	nil	nil", -- [784]
+			"<11:28:55> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:6320::::::::47:254::1:1:6710:1:28:213:::::||h[Commander's Crest]||h||r	5", -- [785]
+			"<11:28:55> <DEBUG>		Found:	nil	nil	nil", -- [786]
+			"<11:28:55> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:151068::::::::47:254::1:1:6710:1:28:213:::::||h[Boots of the Predator]||h||r	5", -- [787]
+			"<11:28:55> <DEBUG>		Found:	nil	nil	nil", -- [788]
+			"<11:28:56> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:6320::::::::47:254::1:1:6710:1:28:213:::::||h[Commander's Crest]||h||r	5", -- [789]
+			"<11:28:56> <DEBUG>		Found:	nil	nil	nil", -- [790]
+			"<11:28:56> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:6320::::::::47:254::1:1:6710:1:28:213:::::|h[Commander's Crest]|h|r not found in bags", -- [791]
+			"<11:28:56> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:151068::::::::47:254::1:1:6710:1:28:213:::::||h[Boots of the Predator]||h||r	5", -- [792]
+			"<11:28:56> <DEBUG>		Found:	nil	nil	nil", -- [793]
+			"<11:28:56> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:151068::::::::47:254::1:1:6710:1:28:213:::::|h[Boots of the Predator]|h|r not found in bags", -- [794]
+			"<11:29:14> <DEBUG>		Event:	LOOT_READY	true", -- [795]
+			"<11:29:14> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-3873-00002604F9	7102", -- [796]
+			"<11:29:14> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [797]
+			"<11:29:14> <DEBUG>		Event:	LOOT_CLOSED", -- [798]
+			"<11:29:14> <DEBUG>		Event:	LOOT_CLOSED", -- [799]
+			"<11:29:14> <Comm>		^1^Sl^T^N1^S3873^t^^	WHISPER	Alatra-Zul'jin", -- [800]
+			"<11:29:14> <Comm>		^1^Sl^T^N1^S3873^t^^	WHISPER	Alatra-Zul'jin", -- [801]
+			"<11:29:18> <DEBUG>		Event:	LOOT_READY	true", -- [802]
+			"<11:29:18> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-3877-00012604F9	9735	Creature-0-4230-33-29480-3877-0000A604F9	10480", -- [803]
+			"<11:29:18> <DEBUG>		Adding to self.lootSlotInfo	3	|cff1eff00|Hitem:4571::::::::47:254::1::1:28:213:::::|h[War Knife]|h|r	2	1	Creature-0-4230-33-29480-3877-0000A604F9	1", -- [804]
+			"<11:29:18> <DEBUG>		OnLootSlotCleared()	3	|cff1eff00|Hitem:4571::::::::47:254::1::1:28:213:::::|h[War Knife]|h|r	2", -- [805]
+			"<11:29:18> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [806]
+			"<11:29:18> <DEBUG>		Event:	LOOT_CLOSED", -- [807]
+			"<11:29:18> <DEBUG>		Event:	LOOT_CLOSED", -- [808]
+			"<11:29:18> <Comm>		^1^Sl^T^N1^S3877^t^^	WHISPER	Alatra-Zul'jin", -- [809]
+			"<11:29:18> <Comm>		^1^Sl^T^N1^S3877^t^^	WHISPER	Alatra-Zul'jin", -- [810]
+			"<11:29:20> <DEBUG>		Storage:New	|cff1eff00|Hitem:4571::::::::47:254::1::1:28:213:::::|h[War Knife]|h|r	temp", -- [811]
+			"<11:29:20> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:4571::::::::47:254::1::1:28:213:::::||h[War Knife]||h||r	5", -- [812]
+			"<11:29:20> <DEBUG>		Found item at	2	3", -- [813]
+			"<11:29:21> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:4571::::::::47:254::1::1:28:213:::::||h[War Knife]||h||r	5", -- [814]
+			"<11:29:21> <DEBUG>		Found item at	2	3", -- [815]
+			"<11:29:21> <Comm>		^1^Stradable^T^N1^S|cff1eff00|Hitem:4571::::::::47:254::1::1:28:213:::::|h[War~`Knife]|h|r^N2^S3877^t^^	WHISPER	Alatra-Zul'jin", -- [816]
+			"<11:29:24> <DEBUG>		Event:	LOOT_READY	true", -- [817]
+			"<11:29:24> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-3877-00002604F9	5327", -- [818]
+			"<11:29:24> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [819]
+			"<11:29:24> <DEBUG>		Event:	LOOT_CLOSED", -- [820]
+			"<11:29:24> <DEBUG>		Event:	LOOT_CLOSED", -- [821]
+			"<11:29:24> <Comm>		^1^Sl^T^N1^S3877^t^^	WHISPER	Alatra-Zul'jin", -- [822]
+			"<11:29:24> <Comm>		^1^Sl^T^N1^S3877^t^^	WHISPER	Alatra-Zul'jin", -- [823]
+			"<11:29:29> <DEBUG>		Event:	LOOT_READY	true", -- [824]
+			"<11:29:29> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47132-00002604F9	1863	Creature-0-4230-33-29480-47135-00012604F9	6204	Creature-0-4230-33-29480-47140-00012604F9	3138", -- [825]
+			"<11:29:30> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [826]
+			"<11:29:30> <DEBUG>		Event:	LOOT_CLOSED", -- [827]
+			"<11:29:30> <DEBUG>		Event:	LOOT_CLOSED", -- [828]
+			"<11:29:30> <Comm>		^1^Sl^T^N1^S47132^t^^	WHISPER	Alatra-Zul'jin", -- [829]
+			"<11:29:30> <Comm>		^1^Sl^T^N1^S47132^t^^	WHISPER	Alatra-Zul'jin", -- [830]
+			"<11:29:32> <DEBUG>		Event:	LOOT_READY	true", -- [831]
+			"<11:29:32> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47135-00002604F9	8445	Creature-0-4230-33-29480-47140-00002604F9	6310", -- [832]
+			"<11:29:32> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:1769::::::::47:254::1:1:6656:1:28:213:::::|h[Canvas Shoulderpads]|h|r	0	1	Creature-0-4230-33-29480-47135-00002604F9	1", -- [833]
+			"<11:29:32> <DEBUG>		Adding to self.lootSlotInfo	4	|cff1eff00|Hitem:6528::::::::47:254::1:1:6654:1:28:213:::::|h[Spellbinder Robe]|h|r	2	1	Creature-0-4230-33-29480-47140-00002604F9	1", -- [834]
+			"<11:29:32> <DEBUG>		OnLootSlotCleared()	4	|cff1eff00|Hitem:6528::::::::47:254::1:1:6654:1:28:213:::::|h[Spellbinder Robe]|h|r	2", -- [835]
+			"<11:29:32> <DEBUG>		Event:	LOOT_READY	true", -- [836]
+			"<11:29:32> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47135-00002604F9	8445	Creature-0-4230-33-29480-47140-00002604F9	6310", -- [837]
+			"<11:29:32> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:1769::::::::47:254::1:1:6656:1:28:213:::::|h[Canvas Shoulderpads]|h|r	0	1	Creature-0-4230-33-29480-47135-00002604F9	1", -- [838]
+			"<11:29:32> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:1769::::::::47:254::1:1:6656:1:28:213:::::|h[Canvas Shoulderpads]|h|r	0", -- [839]
+			"<11:29:32> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [840]
+			"<11:29:32> <DEBUG>		Event:	LOOT_CLOSED", -- [841]
+			"<11:29:32> <DEBUG>		Event:	LOOT_CLOSED", -- [842]
+			"<11:29:33> <Comm>		^1^Sl^T^N1^S47135^t^^	WHISPER	Alatra-Zul'jin", -- [843]
+			"<11:29:33> <Comm>		^1^Sl^T^N1^S47135^t^^	WHISPER	Alatra-Zul'jin", -- [844]
+			"<11:29:34> <DEBUG>		Storage:New	|cff1eff00|Hitem:6528::::::::47:254::1:1:6654:1:28:213:::::|h[Spellbinder Robe]|h|r	temp", -- [845]
+			"<11:29:34> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:6528::::::::47:254::1:1:6654:1:28:213:::::||h[Spellbinder Robe]||h||r	5", -- [846]
+			"<11:29:34> <DEBUG>		Found:	nil	nil	nil", -- [847]
+			"<11:29:35> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:6528::::::::47:254::1:1:6654:1:28:213:::::||h[Spellbinder Robe]||h||r	5", -- [848]
+			"<11:29:35> <DEBUG>		Found:	nil	nil	nil", -- [849]
+			"<11:29:36> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:6528::::::::47:254::1:1:6654:1:28:213:::::||h[Spellbinder Robe]||h||r	5", -- [850]
+			"<11:29:36> <DEBUG>		Found:	nil	nil	nil", -- [851]
+			"<11:29:37> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:6528::::::::47:254::1:1:6654:1:28:213:::::||h[Spellbinder Robe]||h||r	5", -- [852]
+			"<11:29:37> <DEBUG>		Found:	nil	nil	nil", -- [853]
+			"<11:29:37> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:6528::::::::47:254::1:1:6654:1:28:213:::::|h[Spellbinder Robe]|h|r not found in bags", -- [854]
+			"<11:29:37> <DEBUG>		Event:	LOOT_READY	true", -- [855]
+			"<11:29:37> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47135-0000A604F9	10310	Creature-0-4230-33-29480-47140-0000A604F9	10214", -- [856]
+			"<11:29:37> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [857]
+			"<11:29:37> <DEBUG>		Event:	LOOT_CLOSED", -- [858]
+			"<11:29:37> <DEBUG>		Event:	LOOT_CLOSED", -- [859]
+			"<11:29:38> <Comm>		^1^Sl^T^N1^S47135^t^^	WHISPER	Alatra-Zul'jin", -- [860]
+			"<11:29:38> <Comm>		^1^Sl^T^N1^S47135^t^^	WHISPER	Alatra-Zul'jin", -- [861]
+			"<11:29:46> <DEBUG>		Event:	LOOT_READY	true", -- [862]
+			"<11:29:46> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:62518::::::::47:254:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4230-33-29480-3870-00002604F9	1", -- [863]
+			"<11:29:46> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:62518::::::::47:254:::::::::|h[Cracked Stone Shard]|h|r	0", -- [864]
+			"<11:29:46> <DEBUG>		Event:	LOOT_CLOSED", -- [865]
+			"<11:29:46> <DEBUG>		Event:	LOOT_CLOSED", -- [866]
+			"<11:29:46> <Comm>		^1^Sl^T^N1^S3870^t^^	WHISPER	Alatra-Zul'jin", -- [867]
+			"<11:29:46> <Comm>		^1^Sl^T^N1^S3870^t^^	WHISPER	Alatra-Zul'jin", -- [868]
+			"<11:29:47> <DEBUG>		Event:	LOOT_READY	true", -- [869]
+			"<11:29:47> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:62519::::::::47:254:::::::::|h[Keening Stone]|h|r	0	1	Creature-0-4230-33-29480-3870-0000A604F9	1", -- [870]
+			"<11:29:47> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:62519::::::::47:254:::::::::|h[Keening Stone]|h|r	0", -- [871]
+			"<11:29:47> <DEBUG>		Event:	LOOT_CLOSED", -- [872]
+			"<11:29:47> <DEBUG>		Event:	LOOT_CLOSED", -- [873]
+			"<11:29:47> <Comm>		^1^Sl^T^N1^S3870^t^^	WHISPER	Alatra-Zul'jin", -- [874]
+			"<11:29:47> <Comm>		^1^Sl^T^N1^S3870^t^^	WHISPER	Alatra-Zul'jin", -- [875]
+			"<11:29:55> <DEBUG>		Event:	LOOT_READY	true", -- [876]
+			"<11:29:55> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:62518::::::::47:254:::::::::|h[Cracked Stone Shard]|h|r	0	1	Creature-0-4230-33-29480-3870-00012604F9	1", -- [877]
+			"<11:29:55> <DEBUG>		Adding to self.lootSlotInfo	2	nil	1	0	Creature-0-4230-33-29480-47131-00032604F9	1526	Creature-0-4230-33-29480-47131-0003A604F9	2446", -- [878]
+			"<11:29:55> <DEBUG>		OnLootSlotCleared()	2	nil	1", -- [879]
+			"<11:29:55> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:62518::::::::47:254:::::::::|h[Cracked Stone Shard]|h|r	0", -- [880]
+			"<11:29:55> <DEBUG>		Event:	LOOT_CLOSED", -- [881]
+			"<11:29:55> <DEBUG>		Event:	LOOT_CLOSED", -- [882]
+			"<11:29:55> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [883]
+			"<11:29:55> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [884]
+			"<11:30:09> <DEBUG>		Event:	LOOT_READY	true", -- [885]
+			"<11:30:09> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47145-0000A604F9	8997	Creature-0-4230-33-29480-47132-00012604F9	1759	Creature-0-4230-33-29480-47132-00022604F9	885", -- [886]
+			"<11:30:09> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [887]
+			"<11:30:09> <DEBUG>		Event:	LOOT_CLOSED", -- [888]
+			"<11:30:09> <DEBUG>		Event:	LOOT_CLOSED", -- [889]
+			"<11:30:09> <Comm>		^1^Sl^T^N1^S47145^t^^	WHISPER	Alatra-Zul'jin", -- [890]
+			"<11:30:09> <Comm>		^1^Sl^T^N1^S47145^t^^	WHISPER	Alatra-Zul'jin", -- [891]
+			"<11:30:11> <DEBUG>		Event:	LOOT_READY	true", -- [892]
+			"<11:30:11> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47136-0000A604F9	2295	Creature-0-4230-33-29480-47136-00002604F9	4105", -- [893]
+			"<11:30:11> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [894]
+			"<11:30:11> <DEBUG>		Event:	LOOT_CLOSED", -- [895]
+			"<11:30:11> <DEBUG>		Event:	LOOT_CLOSED", -- [896]
+			"<11:30:12> <Comm>		^1^Sl^T^N1^S47136^t^^	WHISPER	Alatra-Zul'jin", -- [897]
+			"<11:30:12> <Comm>		^1^Sl^T^N1^S47136^t^^	WHISPER	Alatra-Zul'jin", -- [898]
+			"<11:30:21> <DEBUG>		Event:	LOOT_READY	true", -- [899]
+			"<11:30:21> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47145-00002604F9	6863", -- [900]
+			"<11:30:21> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [901]
+			"<11:30:21> <DEBUG>		Event:	LOOT_CLOSED", -- [902]
+			"<11:30:21> <DEBUG>		Event:	LOOT_CLOSED", -- [903]
+			"<11:30:22> <Comm>		^1^Sl^T^N1^S47145^t^^	WHISPER	Alatra-Zul'jin", -- [904]
+			"<11:30:22> <Comm>		^1^Sl^T^N1^S47145^t^^	WHISPER	Alatra-Zul'jin", -- [905]
+			"<11:30:27> <DEBUG>		Event:	LOOT_READY	true", -- [906]
+			"<11:30:27> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47132-0000A604F9	3236	Creature-0-4230-33-29480-47132-0001A604F9	1213	Creature-0-4230-33-29480-47136-00012604F9	7258", -- [907]
+			"<11:30:27> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [908]
+			"<11:30:27> <DEBUG>		Event:	LOOT_CLOSED", -- [909]
+			"<11:30:27> <DEBUG>		Event:	LOOT_CLOSED", -- [910]
+			"<11:30:27> <Comm>		^1^Sl^T^N1^S47132^t^^	WHISPER	Alatra-Zul'jin", -- [911]
+			"<11:30:27> <Comm>		^1^Sl^T^N1^S47132^t^^	WHISPER	Alatra-Zul'jin", -- [912]
+			"<11:30:48> <DEBUG>		Event:	ENCOUNTER_START	1073	Lord Walden	1	5", -- [913]
+			"<11:30:48> <INFO>		UpdatePlayersData()", -- [914]
+			"<11:30:48> <DEBUG>		Event:	ENCOUNTER_END	1073	Lord Walden	1	5	1", -- [915]
+			"<11:30:49> <DEBUG>		Event:	LOOT_READY	true", -- [916]
+			"<11:30:49> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-46963-00002604F9	69812", -- [917]
+			"<11:30:49> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:6642::::::::47:254::1:1:6710:1:28:213:::::|h[Phantom Armor]|h|r	3	1	Creature-0-4230-33-29480-46963-00002604F9	1", -- [918]
+			"<11:30:49> <DEBUG>		Event:	LOOT_READY	true", -- [919]
+			"<11:30:49> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-46963-00002604F9	69812", -- [920]
+			"<11:30:49> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:6642::::::::47:254::1:1:6710:1:28:213:::::|h[Phantom Armor]|h|r	3	1	Creature-0-4230-33-29480-46963-00002604F9	1", -- [921]
+			"<11:30:49> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:6642::::::::47:254::1:1:6710:1:28:213:::::|h[Phantom Armor]|h|r	3	1	Creature-0-4230-33-29480-46963-00002604F9	1", -- [922]
+			"<11:30:49> <DEBUG>		OnLootSlotCleared()	2	|cff0070dd|Hitem:6642::::::::47:254::1:1:6710:1:28:213:::::|h[Phantom Armor]|h|r	3", -- [923]
+			"<11:30:49> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	1073	6642	|cff0070dd|Hitem:6642::::::::47:254::1:1:6710:2:28:213:9:30:::::|h[Phantom Armor]|h|r	1	Alatra	HUNTER", -- [924]
+			"<11:30:49> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [925]
+			"<11:30:49> <DEBUG>		Event:	LOOT_READY	true", -- [926]
+			"<11:30:49> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:6642::::::::47:254::1:1:6710:1:28:213:::::|h[Phantom Armor]|h|r	3	1	Creature-0-4230-33-29480-46963-00002604F9	1", -- [927]
+			"<11:30:49> <DEBUG>		Event:	LOOT_CLOSED", -- [928]
+			"<11:30:49> <DEBUG>		OnLootSlotCleared()	3	|cff0070dd|Hitem:6642::::::::47:254::1:1:6710:1:28:213:::::|h[Phantom Armor]|h|r	3", -- [929]
+			"<11:30:49> <DEBUG>		Event:	LOOT_CLOSED", -- [930]
+			"<11:30:49> <Comm>		^1^Sl^T^N1^S46963^t^^	WHISPER	Alatra-Zul'jin", -- [931]
+			"<11:30:49> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	1073	6642	|cff0070dd|Hitem:6642::::::::47:254::1:1:6710:2:28:213:9:30:::::|h[Phantom Armor]|h|r	1	Alatra	HUNTER", -- [932]
+			"<11:30:51> <DEBUG>		Storage:New	|cff0070dd|Hitem:6642::::::::47:254::1:1:6710:1:28:213:::::|h[Phantom Armor]|h|r	temp", -- [933]
+			"<11:30:51> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:6642::::::::47:254::1:1:6710:1:28:213:::::||h[Phantom Armor]||h||r	5", -- [934]
+			"<11:30:51> <DEBUG>		Found:	nil	nil	nil", -- [935]
+			"<11:30:51> <DEBUG>		Storage:New	|cff0070dd|Hitem:6642::::::::47:254::1:1:6710:1:28:213:::::|h[Phantom Armor]|h|r	temp", -- [936]
+			"<11:30:51> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:6642::::::::47:254::1:1:6710:1:28:213:::::||h[Phantom Armor]||h||r	5", -- [937]
+			"<11:30:51> <DEBUG>		Found:	nil	nil	nil", -- [938]
+			"<11:30:52> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:6642::::::::47:254::1:1:6710:1:28:213:::::||h[Phantom Armor]||h||r	5", -- [939]
+			"<11:30:52> <DEBUG>		Found:	nil	nil	nil", -- [940]
+			"<11:30:52> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:6642::::::::47:254::1:1:6710:1:28:213:::::||h[Phantom Armor]||h||r	5", -- [941]
+			"<11:30:52> <DEBUG>		Found:	nil	nil	nil", -- [942]
+			"<11:30:53> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:6642::::::::47:254::1:1:6710:1:28:213:::::||h[Phantom Armor]||h||r	5", -- [943]
+			"<11:30:53> <DEBUG>		Found:	nil	nil	nil", -- [944]
+			"<11:30:53> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:6642::::::::47:254::1:1:6710:1:28:213:::::||h[Phantom Armor]||h||r	5", -- [945]
+			"<11:30:53> <DEBUG>		Found:	nil	nil	nil", -- [946]
+			"<11:30:54> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:6642::::::::47:254::1:1:6710:1:28:213:::::||h[Phantom Armor]||h||r	5", -- [947]
+			"<11:30:54> <DEBUG>		Found:	nil	nil	nil", -- [948]
+			"<11:30:54> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:6642::::::::47:254::1:1:6710:1:28:213:::::|h[Phantom Armor]|h|r not found in bags", -- [949]
+			"<11:30:54> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:6642::::::::47:254::1:1:6710:1:28:213:::::||h[Phantom Armor]||h||r	5", -- [950]
+			"<11:30:54> <DEBUG>		Found:	nil	nil	nil", -- [951]
+			"<11:30:54> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:6642::::::::47:254::1:1:6710:1:28:213:::::|h[Phantom Armor]|h|r not found in bags", -- [952]
+			"<11:31:48> <DEBUG>		Event:	LOOT_READY	true", -- [953]
+			"<11:31:48> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47132-0003A604F9	1300	Creature-0-4230-33-29480-47132-0002A604F9	3158	Creature-0-4230-33-29480-47132-00032604F9	1584", -- [954]
+			"<11:31:48> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [955]
+			"<11:31:48> <DEBUG>		Event:	LOOT_CLOSED", -- [956]
+			"<11:31:48> <DEBUG>		Event:	LOOT_CLOSED", -- [957]
+			"<11:31:48> <Comm>		^1^Sl^T^N1^S47132^t^^	WHISPER	Alatra-Zul'jin", -- [958]
+			"<11:31:48> <Comm>		^1^Sl^T^N1^S47132^t^^	WHISPER	Alatra-Zul'jin", -- [959]
+			"<11:32:05> <DEBUG>		Event:	LOOT_READY	true", -- [960]
+			"<11:32:05> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47146-00002604F9	2903	Creature-0-4230-33-29480-47141-00002604F9	3102	Creature-0-4230-33-29480-47141-0000A604F9	6156	Creature-0-4230-33-29480-47146-0000A604F9	1794", -- [961]
+			"<11:32:05> <DEBUG>		Adding to self.lootSlotInfo	3	|cff1eff00|Hitem:9789::::::::47:254::1:2:6654:1708:1:28:213:::::|h[Raider's Legguards of the Aurora]|h|r	2	1	Creature-0-4230-33-29480-47141-0000A604F9	1", -- [962]
+			"<11:32:05> <DEBUG>		OnLootSlotCleared()	3	|cff1eff00|Hitem:9789::::::::47:254::1:2:6654:1708:1:28:213:::::|h[Raider's Legguards of the Aurora]|h|r	2", -- [963]
+			"<11:32:05> <DEBUG>		Event:	LOOT_READY	true", -- [964]
+			"<11:32:05> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47146-00002604F9	2903	Creature-0-4230-33-29480-47141-00002604F9	3102	Creature-0-4230-33-29480-47141-0000A604F9	6156	Creature-0-4230-33-29480-47146-0000A604F9	1794", -- [965]
+			"<11:32:05> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [966]
+			"<11:32:05> <DEBUG>		Event:	LOOT_CLOSED", -- [967]
+			"<11:32:05> <DEBUG>		Event:	LOOT_CLOSED", -- [968]
+			"<11:32:05> <Comm>		^1^Sl^T^N1^S47146^t^^	WHISPER	Alatra-Zul'jin", -- [969]
+			"<11:32:05> <Comm>		^1^Sl^T^N1^S47146^t^^	WHISPER	Alatra-Zul'jin", -- [970]
+			"<11:32:07> <DEBUG>		Storage:New	|cff1eff00|Hitem:9789::::::::47:254::1:2:6654:1708:1:28:213:::::|h[Raider's Legguards of the Aurora]|h|r	temp", -- [971]
+			"<11:32:07> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:9789::::::::47:254::1:2:6654:1708:1:28:213:::::||h[Raider's Legguards of the Aurora]||h||r	5", -- [972]
+			"<11:32:07> <DEBUG>		Found:	nil	nil	nil", -- [973]
+			"<11:32:08> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:9789::::::::47:254::1:2:6654:1708:1:28:213:::::||h[Raider's Legguards of the Aurora]||h||r	5", -- [974]
+			"<11:32:08> <DEBUG>		Found:	nil	nil	nil", -- [975]
+			"<11:32:09> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:9789::::::::47:254::1:2:6654:1708:1:28:213:::::||h[Raider's Legguards of the Aurora]||h||r	5", -- [976]
+			"<11:32:09> <DEBUG>		Found:	nil	nil	nil", -- [977]
+			"<11:32:10> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:9789::::::::47:254::1:2:6654:1708:1:28:213:::::||h[Raider's Legguards of the Aurora]||h||r	5", -- [978]
+			"<11:32:10> <DEBUG>		Found:	nil	nil	nil", -- [979]
+			"<11:32:10> <ERROR>		UpdateAndSendRecentTradableItem: |cff1eff00|Hitem:9789::::::::47:254::1:2:6654:1708:1:28:213:::::|h[Raider's Legguards of the Aurora]|h|r not found in bags", -- [980]
+			"<11:32:57> <DEBUG>		Event:	LOOT_READY	true", -- [981]
+			"<11:32:57> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-47138-0000A604F9	8359	Creature-0-4230-33-29480-47138-00002604F9	7461", -- [982]
+			"<11:32:57> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [983]
+			"<11:32:57> <DEBUG>		Event:	LOOT_CLOSED", -- [984]
+			"<11:32:57> <DEBUG>		Event:	LOOT_CLOSED", -- [985]
+			"<11:32:58> <Comm>		^1^Sl^T^N1^S47138^t^^	WHISPER	Alatra-Zul'jin", -- [986]
+			"<11:32:58> <Comm>		^1^Sl^T^N1^S47138^t^^	WHISPER	Alatra-Zul'jin", -- [987]
+			"<11:33:08> <DEBUG>		Event:	ENCOUNTER_START	1072	Lord Godfrey	1	5", -- [988]
+			"<11:33:08> <INFO>		UpdatePlayersData()", -- [989]
+			"<11:33:09> <DEBUG>		Event:	ENCOUNTER_END	1072	Lord Godfrey	1	5	1", -- [990]
+			"<11:33:10> <DEBUG>		Event:	LOOT_READY	true", -- [991]
+			"<11:33:10> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-46964-00002606A9	163429", -- [992]
+			"<11:33:10> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:3748::::::::47:254::1:1:6710:1:28:213:::::|h[Feline Mantle]|h|r	3	1	Creature-0-4230-33-29480-46964-00002606A9	1", -- [993]
+			"<11:33:10> <DEBUG>		Adding to self.lootSlotInfo	4	|cff0070dd|Hitem:151071::::::::47:254::1:1:6710:1:28:213:::::|h[Gloves of the Uplifted Cup]|h|r	3	1	Creature-0-4230-33-29480-46964-00002606A9	1", -- [994]
+			"<11:33:10> <DEBUG>		OnLootSlotCleared()	4	|cff0070dd|Hitem:151071::::::::47:254::1:1:6710:1:28:213:::::|h[Gloves of the Uplifted Cup]|h|r	3", -- [995]
+			"<11:33:10> <DEBUG>		OnLootSlotCleared()	3	|cff0070dd|Hitem:3748::::::::47:254::1:1:6710:1:28:213:::::|h[Feline Mantle]|h|r	3", -- [996]
+			"<11:33:10> <DEBUG>		Event:	LOOT_READY	true", -- [997]
+			"<11:33:10> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29480-46964-00002606A9	163429", -- [998]
+			"<11:33:11> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	1072	151071	|cff0070dd|Hitem:151071::::::::47:254::1:1:6710:2:28:213:9:30:::::|h[Gloves of the Uplifted Cup]|h|r	1	Alatra	HUNTER", -- [999]
+			"<11:33:11> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	1072	3748	|cff0070dd|Hitem:3748::::::::47:254::1:1:6710:2:28:213:9:30:::::|h[Feline Mantle]|h|r	1	Alatra	HUNTER", -- [1000]
+			"<11:33:11> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1001]
+			"<11:33:11> <DEBUG>		Event:	LOOT_CLOSED", -- [1002]
+			"<11:33:11> <DEBUG>		Event:	LOOT_CLOSED", -- [1003]
+			"<11:33:11> <Comm>		^1^Sl^T^N1^S46964^t^^	WHISPER	Alatra-Zul'jin", -- [1004]
+			"<11:33:11> <Comm>		^1^Sl^T^N1^S46964^t^^	WHISPER	Alatra-Zul'jin", -- [1005]
+			"<11:33:12> <DEBUG>		Storage:New	|cff0070dd|Hitem:151071::::::::47:254::1:1:6710:1:28:213:::::|h[Gloves of the Uplifted Cup]|h|r	temp", -- [1006]
+			"<11:33:12> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:151071::::::::47:254::1:1:6710:1:28:213:::::||h[Gloves of the Uplifted Cup]||h||r	5", -- [1007]
+			"<11:33:12> <DEBUG>		Found:	nil	nil	nil", -- [1008]
+			"<11:33:12> <DEBUG>		Storage:New	|cff0070dd|Hitem:3748::::::::47:254::1:1:6710:1:28:213:::::|h[Feline Mantle]|h|r	temp", -- [1009]
+			"<11:33:12> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:3748::::::::47:254::1:1:6710:1:28:213:::::||h[Feline Mantle]||h||r	5", -- [1010]
+			"<11:33:12> <DEBUG>		Found:	nil	nil	nil", -- [1011]
+			"<11:33:13> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:151071::::::::47:254::1:1:6710:1:28:213:::::||h[Gloves of the Uplifted Cup]||h||r	5", -- [1012]
+			"<11:33:13> <DEBUG>		Found:	nil	nil	nil", -- [1013]
+			"<11:33:13> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:3748::::::::47:254::1:1:6710:1:28:213:::::||h[Feline Mantle]||h||r	5", -- [1014]
+			"<11:33:13> <DEBUG>		Found:	nil	nil	nil", -- [1015]
+			"<11:33:14> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:151071::::::::47:254::1:1:6710:1:28:213:::::||h[Gloves of the Uplifted Cup]||h||r	5", -- [1016]
+			"<11:33:14> <DEBUG>		Found:	nil	nil	nil", -- [1017]
+			"<11:33:14> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:3748::::::::47:254::1:1:6710:1:28:213:::::||h[Feline Mantle]||h||r	5", -- [1018]
+			"<11:33:14> <DEBUG>		Found:	nil	nil	nil", -- [1019]
+			"<11:33:15> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:151071::::::::47:254::1:1:6710:1:28:213:::::||h[Gloves of the Uplifted Cup]||h||r	5", -- [1020]
+			"<11:33:15> <DEBUG>		Found:	nil	nil	nil", -- [1021]
+			"<11:33:15> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:151071::::::::47:254::1:1:6710:1:28:213:::::|h[Gloves of the Uplifted Cup]|h|r not found in bags", -- [1022]
+			"<11:33:15> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:3748::::::::47:254::1:1:6710:1:28:213:::::||h[Feline Mantle]||h||r	5", -- [1023]
+			"<11:33:15> <DEBUG>		Found:	nil	nil	nil", -- [1024]
+			"<11:33:15> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:3748::::::::47:254::1:1:6710:1:28:213:::::|h[Feline Mantle]|h|r not found in bags", -- [1025]
+			"<11:35:08> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1026]
+			"<11:35:08> <INFO>		UpdatePlayersData()", -- [1027]
+			"<11:35:11> <DEBUG>		GetML()", -- [1028]
+			"<11:35:23> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Shadowfang Keep (Heroic)	84276	0	0", -- [1029]
+			"<11:35:24> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1030]
+			"<11:35:24> <INFO>		UpdatePlayersData()", -- [1031]
+			"<11:35:25> <DEBUG>		GetML()", -- [1032]
+			"<11:35:43> <DEBUG>		Event:	LOOT_READY	true", -- [1033]
+			"<11:35:43> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47131-00022607BB	2146	Creature-0-4230-33-29651-47131-0000A607BB	2987	Creature-0-4230-33-29651-47131-0002A607BB	4589	Creature-0-4230-33-29651-47134-0003A607BB	13110	Creature-0-4230-33-29651-47134-00032607BB	3434", -- [1034]
+			"<11:35:43> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:68197::::::::47:254:::::::::|h[Scavenged Animal Parts]|h|r	0	1	Creature-0-4230-33-29651-47131-00022607BB	1", -- [1035]
+			"<11:35:43> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:68197::::::::47:254:::::::::|h[Scavenged Animal Parts]|h|r	0", -- [1036]
+			"<11:35:43> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1037]
+			"<11:35:43> <DEBUG>		Event:	LOOT_CLOSED", -- [1038]
+			"<11:35:43> <DEBUG>		Event:	LOOT_CLOSED", -- [1039]
+			"<11:35:44> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [1040]
+			"<11:35:44> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [1041]
+			"<11:35:48> <DEBUG>		Event:	LOOT_READY	true", -- [1042]
+			"<11:35:48> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47134-00012607BB	15252", -- [1043]
+			"<11:35:48> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1044]
+			"<11:35:48> <DEBUG>		Event:	LOOT_CLOSED", -- [1045]
+			"<11:35:48> <DEBUG>		Event:	LOOT_CLOSED", -- [1046]
+			"<11:35:48> <Comm>		^1^Sl^T^N1^S47134^t^^	WHISPER	Alatra-Zul'jin", -- [1047]
+			"<11:35:48> <Comm>		^1^Sl^T^N1^S47134^t^^	WHISPER	Alatra-Zul'jin", -- [1048]
+			"<11:35:51> <DEBUG>		Event:	LOOT_READY	true", -- [1049]
+			"<11:35:51> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47134-0001A607BB	10782", -- [1050]
+			"<11:35:51> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1051]
+			"<11:35:51> <DEBUG>		Event:	LOOT_CLOSED", -- [1052]
+			"<11:35:51> <DEBUG>		Event:	LOOT_CLOSED", -- [1053]
+			"<11:35:51> <Comm>		^1^Sl^T^N1^S47134^t^^	WHISPER	Alatra-Zul'jin", -- [1054]
+			"<11:35:51> <Comm>		^1^Sl^T^N1^S47134^t^^	WHISPER	Alatra-Zul'jin", -- [1055]
+			"<11:35:56> <DEBUG>		Event:	LOOT_READY	true", -- [1056]
+			"<11:35:56> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47131-00012607BB	5951	Creature-0-4230-33-29651-47131-00002607BB	1261	Creature-0-4230-33-29651-47131-00032607BB	2182	Creature-0-4230-33-29651-47131-0003A607BB	1989	Creature-0-4230-33-29651-47134-00042607BB	11237	Creature-0-4230-33-29651-47134-0004A607BB	6327", -- [1057]
+			"<11:35:56> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:62071::::::::47:254::2:1:6657:1:28:1184:::::|h[Corroded Blade]|h|r	0	1	Creature-0-4230-33-29651-47131-0003A607BB	1", -- [1058]
+			"<11:35:56> <DEBUG>		Adding to self.lootSlotInfo	4	|cff9d9d9d|Hitem:68198::::::::47:254:::::::::|h[Ruined Embersilk Scraps]|h|r	0	1	Creature-0-4230-33-29651-47131-00002607BB	1", -- [1059]
+			"<11:35:56> <DEBUG>		OnLootSlotCleared()	4	|cff9d9d9d|Hitem:68198::::::::47:254:::::::::|h[Ruined Embersilk Scraps]|h|r	0", -- [1060]
+			"<11:35:56> <DEBUG>		OnLootSlotCleared()	3	|cff9d9d9d|Hitem:62071::::::::47:254::2:1:6657:1:28:1184:::::|h[Corroded Blade]|h|r	0", -- [1061]
+			"<11:35:56> <DEBUG>		Event:	LOOT_READY	true", -- [1062]
+			"<11:35:56> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47131-00012607BB	5951	Creature-0-4230-33-29651-47131-00002607BB	1261	Creature-0-4230-33-29651-47131-00032607BB	2182	Creature-0-4230-33-29651-47131-0003A607BB	1989	Creature-0-4230-33-29651-47134-00042607BB	11237	Creature-0-4230-33-29651-47134-0004A607BB	6327", -- [1063]
+			"<11:35:56> <DEBUG>		Event:	LOOT_CLOSED", -- [1064]
+			"<11:35:56> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [1065]
+			"<11:36:00> <DEBUG>		Event:	LOOT_READY	true", -- [1066]
+			"<11:36:00> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47131-00002607BC	3280	Creature-0-4230-33-29651-47131-0001A607BB	5347", -- [1067]
+			"<11:36:00> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1068]
+			"<11:36:00> <DEBUG>		Event:	LOOT_CLOSED", -- [1069]
+			"<11:36:00> <DEBUG>		Event:	LOOT_CLOSED", -- [1070]
+			"<11:36:00> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [1071]
+			"<11:36:00> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [1072]
+			"<11:36:01> <DEBUG>		Event:	LOOT_READY	true", -- [1073]
+			"<11:36:01> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47134-00022607BB	5424", -- [1074]
+			"<11:36:01> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1075]
+			"<11:36:01> <DEBUG>		Event:	LOOT_CLOSED", -- [1076]
+			"<11:36:01> <DEBUG>		Event:	LOOT_CLOSED", -- [1077]
+			"<11:36:02> <Comm>		^1^Sl^T^N1^S47134^t^^	WHISPER	Alatra-Zul'jin", -- [1078]
+			"<11:36:02> <Comm>		^1^Sl^T^N1^S47134^t^^	WHISPER	Alatra-Zul'jin", -- [1079]
+			"<11:36:03> <DEBUG>		Event:	LOOT_READY	true", -- [1080]
+			"<11:36:03> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47134-0002A607BB	5371	Creature-0-4230-33-29651-47131-00042607BB	5947", -- [1081]
+			"<11:36:03> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1082]
+			"<11:36:03> <DEBUG>		Event:	LOOT_CLOSED", -- [1083]
+			"<11:36:03> <DEBUG>		Event:	LOOT_CLOSED", -- [1084]
+			"<11:36:04> <Comm>		^1^Sl^T^N1^S47134^t^^	WHISPER	Alatra-Zul'jin", -- [1085]
+			"<11:36:04> <Comm>		^1^Sl^T^N1^S47134^t^^	WHISPER	Alatra-Zul'jin", -- [1086]
+			"<11:36:06> <DEBUG>		Event:	LOOT_READY	true", -- [1087]
+			"<11:36:06> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47134-00002607BB	16066	Creature-0-4230-33-29651-47134-0000A607BB	16427", -- [1088]
+			"<11:36:06> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1089]
+			"<11:36:06> <DEBUG>		Event:	LOOT_CLOSED", -- [1090]
+			"<11:36:06> <DEBUG>		Event:	LOOT_CLOSED", -- [1091]
+			"<11:36:06> <Comm>		^1^Sl^T^N1^S47134^t^^	WHISPER	Alatra-Zul'jin", -- [1092]
+			"<11:36:06> <Comm>		^1^Sl^T^N1^S47134^t^^	WHISPER	Alatra-Zul'jin", -- [1093]
+			"<11:36:11> <DEBUG>		Event:	ENCOUNTER_START	1069	Baron Ashbury	2	5", -- [1094]
+			"<11:36:11> <INFO>		UpdatePlayersData()", -- [1095]
+			"<11:36:12> <DEBUG>		Event:	ENCOUNTER_END	1069	Baron Ashbury	2	5	1", -- [1096]
+			"<11:36:13> <DEBUG>		Event:	LOOT_READY	true", -- [1097]
+			"<11:36:13> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Vehicle-0-4230-33-29651-46962-00002607BB	84619", -- [1098]
+			"<11:36:13> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:63437::::::::47:254::2:1:4198:1:28:1184:::::|h[Baron Ashbury's Cuffs]|h|r	3	1	Vehicle-0-4230-33-29651-46962-00002607BB	1", -- [1099]
+			"<11:36:13> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:63434::::::::47:254::2:1:4198:1:28:1184:::::|h[Gloves of the Greymane Wall]|h|r	3	1	Vehicle-0-4230-33-29651-46962-00002607BB	1", -- [1100]
+			"<11:36:13> <DEBUG>		OnLootSlotCleared()	3	|cff0070dd|Hitem:63434::::::::47:254::2:1:4198:1:28:1184:::::|h[Gloves of the Greymane Wall]|h|r	3", -- [1101]
+			"<11:36:13> <DEBUG>		OnLootSlotCleared()	2	|cff0070dd|Hitem:63437::::::::47:254::2:1:4198:1:28:1184:::::|h[Baron Ashbury's Cuffs]|h|r	3", -- [1102]
+			"<11:36:13> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	1069	63434	|cff0070dd|Hitem:63434::::::::47:254::2:1:4198:2:28:1184:9:35:::::|h[Gloves of the Greymane Wall]|h|r	1	Alatra	HUNTER", -- [1103]
+			"<11:36:13> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	1069	63437	|cff0070dd|Hitem:63437::::::::47:254::2:1:4198:2:28:1184:9:35:::::|h[Baron Ashbury's Cuffs]|h|r	1	Alatra	HUNTER", -- [1104]
+			"<11:36:13> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1105]
+			"<11:36:13> <DEBUG>		Event:	LOOT_CLOSED", -- [1106]
+			"<11:36:13> <DEBUG>		Event:	LOOT_CLOSED", -- [1107]
+			"<11:36:13> <Comm>		^1^Sl^T^N1^S46962^t^^	WHISPER	Alatra-Zul'jin", -- [1108]
+			"<11:36:13> <Comm>		^1^Sl^T^N1^S46962^t^^	WHISPER	Alatra-Zul'jin", -- [1109]
+			"<11:36:15> <DEBUG>		Storage:New	|cff0070dd|Hitem:63434::::::::47:254::2:1:4198:1:28:1184:::::|h[Gloves of the Greymane Wall]|h|r	temp", -- [1110]
+			"<11:36:15> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63434::::::::47:254::2:1:4198:1:28:1184:::::||h[Gloves of the Greymane Wall]||h||r	5", -- [1111]
+			"<11:36:15> <DEBUG>		Found:	nil	nil	nil", -- [1112]
+			"<11:36:15> <DEBUG>		Storage:New	|cff0070dd|Hitem:63437::::::::47:254::2:1:4198:1:28:1184:::::|h[Baron Ashbury's Cuffs]|h|r	temp", -- [1113]
+			"<11:36:15> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63437::::::::47:254::2:1:4198:1:28:1184:::::||h[Baron Ashbury's Cuffs]||h||r	5", -- [1114]
+			"<11:36:15> <DEBUG>		Found:	nil	nil	nil", -- [1115]
+			"<11:36:16> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63434::::::::47:254::2:1:4198:1:28:1184:::::||h[Gloves of the Greymane Wall]||h||r	5", -- [1116]
+			"<11:36:16> <DEBUG>		Found:	nil	nil	nil", -- [1117]
+			"<11:36:16> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63437::::::::47:254::2:1:4198:1:28:1184:::::||h[Baron Ashbury's Cuffs]||h||r	5", -- [1118]
+			"<11:36:16> <DEBUG>		Found:	nil	nil	nil", -- [1119]
+			"<11:36:17> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63434::::::::47:254::2:1:4198:1:28:1184:::::||h[Gloves of the Greymane Wall]||h||r	5", -- [1120]
+			"<11:36:17> <DEBUG>		Found:	nil	nil	nil", -- [1121]
+			"<11:36:17> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63437::::::::47:254::2:1:4198:1:28:1184:::::||h[Baron Ashbury's Cuffs]||h||r	5", -- [1122]
+			"<11:36:17> <DEBUG>		Found:	nil	nil	nil", -- [1123]
+			"<11:36:18> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63434::::::::47:254::2:1:4198:1:28:1184:::::||h[Gloves of the Greymane Wall]||h||r	5", -- [1124]
+			"<11:36:18> <DEBUG>		Found:	nil	nil	nil", -- [1125]
+			"<11:36:18> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:63434::::::::47:254::2:1:4198:1:28:1184:::::|h[Gloves of the Greymane Wall]|h|r not found in bags", -- [1126]
+			"<11:36:18> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63437::::::::47:254::2:1:4198:1:28:1184:::::||h[Baron Ashbury's Cuffs]||h||r	5", -- [1127]
+			"<11:36:18> <DEBUG>		Found:	nil	nil	nil", -- [1128]
+			"<11:36:18> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:63437::::::::47:254::2:1:4198:1:28:1184:::::|h[Baron Ashbury's Cuffs]|h|r not found in bags", -- [1129]
+			"<11:36:46> <DEBUG>		Event:	LOOT_READY	true", -- [1130]
+			"<11:36:46> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47137-00012607BB	12057	Creature-0-4230-33-29651-3875-0001A607BB	10879	Creature-0-4230-33-29651-47137-00002607BB	14606", -- [1131]
+			"<11:36:46> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:68197::::::::47:254:::::::::|h[Scavenged Animal Parts]|h|r	0	2	Creature-0-4230-33-29651-3875-0001A607BB	2", -- [1132]
+			"<11:36:46> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:68197::::::::47:254:::::::::|h[Scavenged Animal Parts]|h|r	0", -- [1133]
+			"<11:36:46> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1134]
+			"<11:36:46> <DEBUG>		Event:	LOOT_CLOSED", -- [1135]
+			"<11:36:46> <DEBUG>		Event:	LOOT_CLOSED", -- [1136]
+			"<11:36:46> <Comm>		^1^Sl^T^N1^S3875^t^^	WHISPER	Alatra-Zul'jin", -- [1137]
+			"<11:36:46> <Comm>		^1^Sl^T^N1^S3875^t^^	WHISPER	Alatra-Zul'jin", -- [1138]
+			"<11:36:55> <DEBUG>		Event:	LOOT_READY	true", -- [1139]
+			"<11:36:55> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47131-0008A607BB	3989	Creature-0-4230-33-29651-47131-00072607BB	5553	Creature-0-4230-33-29651-47131-0007A607BB	2427	Creature-0-4230-33-29651-47131-00082607BB	4213	Creature-0-4230-33-29651-47131-00092607BB	3069", -- [1140]
+			"<11:36:55> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:68198::::::::47:254:::::::::|h[Ruined Embersilk Scraps]|h|r	0	3	Creature-0-4230-33-29651-47131-00072607BB	2	Creature-0-4230-33-29651-47131-00082607BB	1", -- [1141]
+			"<11:36:55> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:68198::::::::47:254:::::::::|h[Ruined Embersilk Scraps]|h|r	0", -- [1142]
+			"<11:36:55> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1143]
+			"<11:36:55> <DEBUG>		Event:	LOOT_CLOSED", -- [1144]
+			"<11:36:55> <DEBUG>		Event:	LOOT_CLOSED", -- [1145]
+			"<11:36:55> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [1146]
+			"<11:36:55> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [1147]
+			"<11:37:00> <DEBUG>		Event:	LOOT_READY	true", -- [1148]
+			"<11:37:00> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-3875-00012607BB	15393	Creature-0-4230-33-29651-47137-0000A607BB	5633", -- [1149]
+			"<11:37:00> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1150]
+			"<11:37:00> <DEBUG>		Event:	LOOT_CLOSED", -- [1151]
+			"<11:37:00> <DEBUG>		Event:	LOOT_CLOSED", -- [1152]
+			"<11:37:00> <Comm>		^1^Sl^T^N1^S3875^t^^	WHISPER	Alatra-Zul'jin", -- [1153]
+			"<11:37:00> <Comm>		^1^Sl^T^N1^S3875^t^^	WHISPER	Alatra-Zul'jin", -- [1154]
+			"<11:37:05> <DEBUG>		Event:	LOOT_READY	true", -- [1155]
+			"<11:37:05> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-3865-00002607BB	8158	Creature-0-4230-33-29651-3864-00002607BB	17329	Creature-0-4230-33-29651-3865-0000A607BB	5285", -- [1156]
+			"<11:37:05> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1157]
+			"<11:37:05> <DEBUG>		Event:	LOOT_CLOSED", -- [1158]
+			"<11:37:05> <DEBUG>		Event:	LOOT_CLOSED", -- [1159]
+			"<11:37:06> <Comm>		^1^Sl^T^N1^S3865^t^^	WHISPER	Alatra-Zul'jin", -- [1160]
+			"<11:37:06> <Comm>		^1^Sl^T^N1^S3865^t^^	WHISPER	Alatra-Zul'jin", -- [1161]
+			"<11:37:10> <DEBUG>		Event:	LOOT_READY	true", -- [1162]
+			"<11:37:10> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-3875-0000A607BB	14565", -- [1163]
+			"<11:37:11> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1164]
+			"<11:37:11> <DEBUG>		Event:	LOOT_CLOSED", -- [1165]
+			"<11:37:11> <DEBUG>		Event:	LOOT_CLOSED", -- [1166]
+			"<11:37:11> <Comm>		^1^Sl^T^N1^S3875^t^^	WHISPER	Alatra-Zul'jin", -- [1167]
+			"<11:37:11> <Comm>		^1^Sl^T^N1^S3875^t^^	WHISPER	Alatra-Zul'jin", -- [1168]
+			"<11:37:15> <DEBUG>		Event:	LOOT_READY	true", -- [1169]
+			"<11:37:15> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47131-0004A607BB	1706	Creature-0-4230-33-29651-47131-00052607BB	1461	Creature-0-4230-33-29651-47131-0005A607BB	1601	Creature-0-4230-33-29651-47131-00062607BB	1073	Creature-0-4230-33-29651-47131-0006A607BB	3358", -- [1170]
+			"<11:37:15> <DEBUG>		Adding to self.lootSlotInfo	3	|cff9d9d9d|Hitem:68198::::::::47:254:::::::::|h[Ruined Embersilk Scraps]|h|r	0	2	Creature-0-4230-33-29651-47131-00062607BB	2", -- [1171]
+			"<11:37:15> <DEBUG>		OnLootSlotCleared()	3	|cff9d9d9d|Hitem:68198::::::::47:254:::::::::|h[Ruined Embersilk Scraps]|h|r	0", -- [1172]
+			"<11:37:15> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1173]
+			"<11:37:15> <DEBUG>		Event:	LOOT_CLOSED", -- [1174]
+			"<11:37:15> <DEBUG>		Event:	LOOT_CLOSED", -- [1175]
+			"<11:37:15> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [1176]
+			"<11:37:15> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [1177]
+			"<11:37:23> <DEBUG>		Event:	LOOT_READY	true", -- [1178]
+			"<11:37:23> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-3875-00002607BB	4082", -- [1179]
+			"<11:37:23> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1180]
+			"<11:37:23> <DEBUG>		Event:	LOOT_CLOSED", -- [1181]
+			"<11:37:23> <DEBUG>		Event:	LOOT_CLOSED", -- [1182]
+			"<11:37:23> <Comm>		^1^Sl^T^N1^S3875^t^^	WHISPER	Alatra-Zul'jin", -- [1183]
+			"<11:37:23> <Comm>		^1^Sl^T^N1^S3875^t^^	WHISPER	Alatra-Zul'jin", -- [1184]
+			"<11:37:32> <DEBUG>		Event:	LOOT_READY	true", -- [1185]
+			"<11:37:32> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-3875-0002A607BB	17711	Creature-0-4230-33-29651-3875-00032607BB	9316	Creature-0-4230-33-29651-47231-00002607BB	14192	Creature-0-4230-33-29651-47231-0000A607BB	14129", -- [1186]
+			"<11:37:32> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:68198::::::::47:254:::::::::|h[Ruined Embersilk Scraps]|h|r	0	1	Creature-0-4230-33-29651-47231-00002607BB	1", -- [1187]
+			"<11:37:32> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:68198::::::::47:254:::::::::|h[Ruined Embersilk Scraps]|h|r	0", -- [1188]
+			"<11:37:32> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1189]
+			"<11:37:32> <DEBUG>		Event:	LOOT_CLOSED", -- [1190]
+			"<11:37:32> <DEBUG>		Event:	LOOT_CLOSED", -- [1191]
+			"<11:37:32> <Comm>		^1^Sl^T^N1^S47231^t^^	WHISPER	Alatra-Zul'jin", -- [1192]
+			"<11:37:32> <Comm>		^1^Sl^T^N1^S47231^t^^	WHISPER	Alatra-Zul'jin", -- [1193]
+			"<11:37:38> <DEBUG>		Event:	LOOT_READY	true", -- [1194]
+			"<11:37:38> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47232-0001A607BB	17602	Creature-0-4230-33-29651-47232-00002607BB	17148	Creature-0-4230-33-29651-47232-0000A607BB	4015	Creature-0-4230-33-29651-47232-00012607BB	13885", -- [1195]
+			"<11:37:38> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:68197::::::::47:254:::::::::|h[Scavenged Animal Parts]|h|r	0	2	Creature-0-4230-33-29651-47232-00012607BB	2", -- [1196]
+			"<11:37:38> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:68197::::::::47:254:::::::::|h[Scavenged Animal Parts]|h|r	0", -- [1197]
+			"<11:37:38> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1198]
+			"<11:37:38> <DEBUG>		Event:	LOOT_CLOSED", -- [1199]
+			"<11:37:38> <DEBUG>		Event:	LOOT_CLOSED", -- [1200]
+			"<11:37:38> <Comm>		^1^Sl^T^N1^S47232^t^^	WHISPER	Alatra-Zul'jin", -- [1201]
+			"<11:37:38> <Comm>		^1^Sl^T^N1^S47232^t^^	WHISPER	Alatra-Zul'jin", -- [1202]
+			"<11:37:42> <DEBUG>		Event:	LOOT_READY	true", -- [1203]
+			"<11:37:42> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-3875-00022607BB	5206", -- [1204]
+			"<11:37:42> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1205]
+			"<11:37:42> <DEBUG>		Event:	LOOT_CLOSED", -- [1206]
+			"<11:37:42> <DEBUG>		Event:	LOOT_CLOSED", -- [1207]
+			"<11:37:42> <Comm>		^1^Sl^T^N1^S3875^t^^	WHISPER	Alatra-Zul'jin", -- [1208]
+			"<11:37:42> <Comm>		^1^Sl^T^N1^S3875^t^^	WHISPER	Alatra-Zul'jin", -- [1209]
+			"<11:37:50> <DEBUG>		Event:	LOOT_READY	true", -- [1210]
+			"<11:37:50> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47231-00012607BB	15708	Creature-0-4230-33-29651-3875-0003A607BB	5592	Creature-0-4230-33-29651-3875-00042607BB	8819	Creature-0-4230-33-29651-47231-0001A607BB	14792	Creature-0-4230-33-29651-47231-00022607BB	3901", -- [1211]
+			"<11:37:50> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1212]
+			"<11:37:50> <DEBUG>		Event:	LOOT_CLOSED", -- [1213]
+			"<11:37:50> <DEBUG>		Event:	LOOT_CLOSED", -- [1214]
+			"<11:37:50> <Comm>		^1^Sl^T^N1^S47231^t^^	WHISPER	Alatra-Zul'jin", -- [1215]
+			"<11:37:50> <Comm>		^1^Sl^T^N1^S47231^t^^	WHISPER	Alatra-Zul'jin", -- [1216]
+			"<11:37:55> <DEBUG>		Event:	ENCOUNTER_START	1070	Baron Silverlaine	2	5", -- [1217]
+			"<11:37:55> <INFO>		UpdatePlayersData()", -- [1218]
+			"<11:37:57> <DEBUG>		Event:	ENCOUNTER_END	1070	Baron Silverlaine	2	5	1", -- [1219]
+			"<11:37:58> <DEBUG>		Event:	LOOT_READY	true", -- [1220]
+			"<11:37:58> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-3887-00002607BB	90664", -- [1221]
+			"<11:37:58> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:63438::::::::47:254::2:1:4198:1:28:1184:::::|h[Baroness Silverlaine's Locket]|h|r	3	1	Creature-0-4230-33-29651-3887-00002607BB	1", -- [1222]
+			"<11:37:58> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:63440::::::::47:254::2:1:4198:1:28:1184:::::|h[Boots of Lingering Sorrow]|h|r	3	1	Creature-0-4230-33-29651-3887-00002607BB	1", -- [1223]
+			"<11:37:58> <DEBUG>		OnLootSlotCleared()	3	|cff0070dd|Hitem:63440::::::::47:254::2:1:4198:1:28:1184:::::|h[Boots of Lingering Sorrow]|h|r	3", -- [1224]
+			"<11:37:58> <DEBUG>		OnLootSlotCleared()	2	|cff0070dd|Hitem:63438::::::::47:254::2:1:4198:1:28:1184:::::|h[Baroness Silverlaine's Locket]|h|r	3", -- [1225]
+			"<11:37:58> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	1070	63440	|cff0070dd|Hitem:63440::::::::47:254::2:1:4198:2:28:1184:9:35:::::|h[Boots of Lingering Sorrow]|h|r	1	Alatra	HUNTER", -- [1226]
+			"<11:37:58> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	1070	63438	|cff0070dd|Hitem:63438::::::::47:254::2:1:4198:2:28:1184:9:35:::::|h[Baroness Silverlaine's Locket]|h|r	1	Alatra	HUNTER", -- [1227]
+			"<11:37:58> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1228]
+			"<11:37:58> <DEBUG>		Event:	LOOT_CLOSED", -- [1229]
+			"<11:37:58> <DEBUG>		Event:	LOOT_CLOSED", -- [1230]
+			"<11:37:58> <Comm>		^1^Sl^T^N1^S3887^t^^	WHISPER	Alatra-Zul'jin", -- [1231]
+			"<11:37:58> <Comm>		^1^Sl^T^N1^S3887^t^^	WHISPER	Alatra-Zul'jin", -- [1232]
+			"<11:38:00> <DEBUG>		Storage:New	|cff0070dd|Hitem:63440::::::::47:254::2:1:4198:1:28:1184:::::|h[Boots of Lingering Sorrow]|h|r	temp", -- [1233]
+			"<11:38:00> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63440::::::::47:254::2:1:4198:1:28:1184:::::||h[Boots of Lingering Sorrow]||h||r	5", -- [1234]
+			"<11:38:00> <DEBUG>		Found:	nil	nil	nil", -- [1235]
+			"<11:38:00> <DEBUG>		Storage:New	|cff0070dd|Hitem:63438::::::::47:254::2:1:4198:1:28:1184:::::|h[Baroness Silverlaine's Locket]|h|r	temp", -- [1236]
+			"<11:38:00> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63438::::::::47:254::2:1:4198:1:28:1184:::::||h[Baroness Silverlaine's Locket]||h||r	5", -- [1237]
+			"<11:38:00> <DEBUG>		Found:	nil	nil	nil", -- [1238]
+			"<11:38:01> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63440::::::::47:254::2:1:4198:1:28:1184:::::||h[Boots of Lingering Sorrow]||h||r	5", -- [1239]
+			"<11:38:01> <DEBUG>		Found:	nil	nil	nil", -- [1240]
+			"<11:38:01> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63438::::::::47:254::2:1:4198:1:28:1184:::::||h[Baroness Silverlaine's Locket]||h||r	5", -- [1241]
+			"<11:38:01> <DEBUG>		Found:	nil	nil	nil", -- [1242]
+			"<11:38:02> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63440::::::::47:254::2:1:4198:1:28:1184:::::||h[Boots of Lingering Sorrow]||h||r	5", -- [1243]
+			"<11:38:02> <DEBUG>		Found:	nil	nil	nil", -- [1244]
+			"<11:38:02> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63438::::::::47:254::2:1:4198:1:28:1184:::::||h[Baroness Silverlaine's Locket]||h||r	5", -- [1245]
+			"<11:38:02> <DEBUG>		Found:	nil	nil	nil", -- [1246]
+			"<11:38:03> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63440::::::::47:254::2:1:4198:1:28:1184:::::||h[Boots of Lingering Sorrow]||h||r	5", -- [1247]
+			"<11:38:03> <DEBUG>		Found:	nil	nil	nil", -- [1248]
+			"<11:38:03> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:63440::::::::47:254::2:1:4198:1:28:1184:::::|h[Boots of Lingering Sorrow]|h|r not found in bags", -- [1249]
+			"<11:38:03> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63438::::::::47:254::2:1:4198:1:28:1184:::::||h[Baroness Silverlaine's Locket]||h||r	5", -- [1250]
+			"<11:38:03> <DEBUG>		Found:	nil	nil	nil", -- [1251]
+			"<11:38:03> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:63438::::::::47:254::2:1:4198:1:28:1184:::::|h[Baroness Silverlaine's Locket]|h|r not found in bags", -- [1252]
+			"<11:38:23> <DEBUG>		Event:	LOOT_READY	true", -- [1253]
+			"<11:38:23> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47143-00012607BB	7282	Creature-0-4230-33-29651-3875-0004A607BB	6107	Creature-0-4230-33-29651-3875-0005A607BB	7662	Creature-0-4230-33-29651-3877-00002607BB	3108	Creature-0-4230-33-29651-3877-00012607BB	8562	Creature-0-4230-33-29651-3877-0001A607BB	12841	Creature-0-4230-33-29651-47231-0002A607BB	13475	Creature-0-4230-33-29651-47231-00032607BB	16770	Creature-0-4230-33-29651-47231-0004A607BB	4924", -- [1254]
+			"<11:38:23> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1255]
+			"<11:38:23> <DEBUG>		Event:	LOOT_CLOSED", -- [1256]
+			"<11:38:23> <DEBUG>		Event:	LOOT_CLOSED", -- [1257]
+			"<11:38:23> <Comm>		^1^Sl^T^N1^S47143^t^^	WHISPER	Alatra-Zul'jin", -- [1258]
+			"<11:38:23> <Comm>		^1^Sl^T^N1^S47143^t^^	WHISPER	Alatra-Zul'jin", -- [1259]
+			"<11:38:29> <DEBUG>		Event:	LOOT_READY	true", -- [1260]
+			"<11:38:29> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47143-0000A607BB	3154", -- [1261]
+			"<11:38:30> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1262]
+			"<11:38:30> <DEBUG>		Event:	LOOT_CLOSED", -- [1263]
+			"<11:38:30> <DEBUG>		Event:	LOOT_CLOSED", -- [1264]
+			"<11:38:30> <Comm>		^1^Sl^T^N1^S47143^t^^	WHISPER	Alatra-Zul'jin", -- [1265]
+			"<11:38:30> <Comm>		^1^Sl^T^N1^S47143^t^^	WHISPER	Alatra-Zul'jin", -- [1266]
+			"<11:39:07> <DEBUG>		Event:	LOOT_READY	true", -- [1267]
+			"<11:39:07> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-3875-00052607BB	4117	Creature-0-4230-33-29651-3877-0000A607BB	5534	Creature-0-4230-33-29651-47231-0003A607BB	8138	Creature-0-4230-33-29651-47231-00042607BB	7260", -- [1268]
+			"<11:39:07> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1269]
+			"<11:39:07> <DEBUG>		Event:	LOOT_CLOSED", -- [1270]
+			"<11:39:07> <DEBUG>		Event:	LOOT_CLOSED", -- [1271]
+			"<11:39:08> <Comm>		^1^Sl^T^N1^S3875^t^^	WHISPER	Alatra-Zul'jin", -- [1272]
+			"<11:39:08> <Comm>		^1^Sl^T^N1^S3875^t^^	WHISPER	Alatra-Zul'jin", -- [1273]
+			"<11:39:11> <DEBUG>		Event:	LOOT_READY	true", -- [1274]
+			"<11:39:11> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47143-00002607BB	14687", -- [1275]
+			"<11:39:11> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1276]
+			"<11:39:11> <DEBUG>		Event:	LOOT_CLOSED", -- [1277]
+			"<11:39:11> <DEBUG>		Event:	LOOT_CLOSED", -- [1278]
+			"<11:39:12> <Comm>		^1^Sl^T^N1^S47143^t^^	WHISPER	Alatra-Zul'jin", -- [1279]
+			"<11:39:12> <Comm>		^1^Sl^T^N1^S47143^t^^	WHISPER	Alatra-Zul'jin", -- [1280]
+			"<11:39:18> <DEBUG>		Event:	LOOT_READY	true", -- [1281]
+			"<11:39:18> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-3873-00012607BB	4108	Creature-0-4230-33-29651-3877-0002A607BB	14061	Creature-0-4230-33-29651-3877-00032607BB	13062", -- [1282]
+			"<11:39:18> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1283]
+			"<11:39:18> <DEBUG>		Event:	LOOT_CLOSED", -- [1284]
+			"<11:39:18> <DEBUG>		Event:	LOOT_CLOSED", -- [1285]
+			"<11:39:18> <Comm>		^1^Sl^T^N1^S3873^t^^	WHISPER	Alatra-Zul'jin", -- [1286]
+			"<11:39:18> <Comm>		^1^Sl^T^N1^S3873^t^^	WHISPER	Alatra-Zul'jin", -- [1287]
+			"<11:39:20> <DEBUG>		Event:	LOOT_READY	true", -- [1288]
+			"<11:39:20> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-3873-00002607BB	8171	Creature-0-4230-33-29651-3873-0000A607BB	11900	Creature-0-4230-33-29651-3877-00022607BB	5995", -- [1289]
+			"<11:39:20> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:62070::::::::47:254::2:1:6657:1:28:1184:::::|h[Rusted Timber Axe]|h|r	0	1	Creature-0-4230-33-29651-3877-00022607BB	1", -- [1290]
+			"<11:39:20> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:62070::::::::47:254::2:1:6657:1:28:1184:::::|h[Rusted Timber Axe]|h|r	0", -- [1291]
+			"<11:39:20> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1292]
+			"<11:39:20> <DEBUG>		Event:	LOOT_CLOSED", -- [1293]
+			"<11:39:20> <DEBUG>		Event:	LOOT_CLOSED", -- [1294]
+			"<11:39:21> <Comm>		^1^Sl^T^N1^S3877^t^^	WHISPER	Alatra-Zul'jin", -- [1295]
+			"<11:39:21> <Comm>		^1^Sl^T^N1^S3877^t^^	WHISPER	Alatra-Zul'jin", -- [1296]
+			"<11:39:23> <DEBUG>		Event:	ENCOUNTER_START	1071	Commander Springvale	2	5", -- [1297]
+			"<11:39:23> <INFO>		UpdatePlayersData()", -- [1298]
+			"<11:39:25> <DEBUG>		Event:	ENCOUNTER_END	1071	Commander Springvale	2	5	1", -- [1299]
+			"<11:39:26> <DEBUG>		Event:	LOOT_READY	true", -- [1300]
+			"<11:39:26> <DEBUG>		Adding to self.lootSlotInfo	1	|cff0070dd|Hitem:63445::::::::47:254::2:1:4198:1:28:1184:::::|h[Arced War Axe]|h|r	3	1	Creature-0-4230-33-29651-4278-00002607BB	1", -- [1301]
+			"<11:39:26> <DEBUG>		Event:	LOOT_READY	true", -- [1302]
+			"<11:39:26> <DEBUG>		Adding to self.lootSlotInfo	1	|cff0070dd|Hitem:63445::::::::47:254::2:1:4198:1:28:1184:::::|h[Arced War Axe]|h|r	3	1	Creature-0-4230-33-29651-4278-00002607BB	1", -- [1303]
+			"<11:39:26> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:63445::::::::47:254::2:1:4198:1:28:1184:::::|h[Arced War Axe]|h|r	3	1	Creature-0-4230-33-29651-4278-00002607BB	1", -- [1304]
+			"<11:39:26> <DEBUG>		OnLootSlotCleared()	1	|cff0070dd|Hitem:63445::::::::47:254::2:1:4198:1:28:1184:::::|h[Arced War Axe]|h|r	3", -- [1305]
+			"<11:39:26> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	1071	63445	|cff0070dd|Hitem:63445::::::::47:254::2:1:4198:2:28:1184:9:35:::::|h[Arced War Axe]|h|r	1	Alatra	HUNTER", -- [1306]
+			"<11:39:26> <DEBUG>		Event:	LOOT_READY	true", -- [1307]
+			"<11:39:26> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:63445::::::::47:254::2:1:4198:1:28:1184:::::|h[Arced War Axe]|h|r	3	1	Creature-0-4230-33-29651-4278-00002607BB	1", -- [1308]
+			"<11:39:27> <DEBUG>		Event:	LOOT_CLOSED", -- [1309]
+			"<11:39:27> <DEBUG>		OnLootSlotCleared()	2	|cff0070dd|Hitem:63445::::::::47:254::2:1:4198:1:28:1184:::::|h[Arced War Axe]|h|r	3", -- [1310]
+			"<11:39:27> <DEBUG>		Event:	LOOT_CLOSED", -- [1311]
+			"<11:39:27> <Comm>		^1^Sl^T^N1^S4278^t^^	WHISPER	Alatra-Zul'jin", -- [1312]
+			"<11:39:27> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	1071	63445	|cff0070dd|Hitem:63445::::::::47:254::2:1:4198:2:28:1184:9:35:::::|h[Arced War Axe]|h|r	1	Alatra	HUNTER", -- [1313]
+			"<11:39:28> <DEBUG>		Storage:New	|cff0070dd|Hitem:63445::::::::47:254::2:1:4198:1:28:1184:::::|h[Arced War Axe]|h|r	temp", -- [1314]
+			"<11:39:28> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63445::::::::47:254::2:1:4198:1:28:1184:::::||h[Arced War Axe]||h||r	5", -- [1315]
+			"<11:39:28> <DEBUG>		Found:	nil	nil	nil", -- [1316]
+			"<11:39:29> <DEBUG>		Storage:New	|cff0070dd|Hitem:63445::::::::47:254::2:1:4198:1:28:1184:::::|h[Arced War Axe]|h|r	temp", -- [1317]
+			"<11:39:29> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63445::::::::47:254::2:1:4198:1:28:1184:::::||h[Arced War Axe]||h||r	5", -- [1318]
+			"<11:39:29> <DEBUG>		Found:	nil	nil	nil", -- [1319]
+			"<11:39:29> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63445::::::::47:254::2:1:4198:1:28:1184:::::||h[Arced War Axe]||h||r	5", -- [1320]
+			"<11:39:29> <DEBUG>		Found:	nil	nil	nil", -- [1321]
+			"<11:39:30> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63445::::::::47:254::2:1:4198:1:28:1184:::::||h[Arced War Axe]||h||r	5", -- [1322]
+			"<11:39:30> <DEBUG>		Found:	nil	nil	nil", -- [1323]
+			"<11:39:30> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63445::::::::47:254::2:1:4198:1:28:1184:::::||h[Arced War Axe]||h||r	5", -- [1324]
+			"<11:39:30> <DEBUG>		Found:	nil	nil	nil", -- [1325]
+			"<11:39:31> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63445::::::::47:254::2:1:4198:1:28:1184:::::||h[Arced War Axe]||h||r	5", -- [1326]
+			"<11:39:31> <DEBUG>		Found:	nil	nil	nil", -- [1327]
+			"<11:39:31> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63445::::::::47:254::2:1:4198:1:28:1184:::::||h[Arced War Axe]||h||r	5", -- [1328]
+			"<11:39:31> <DEBUG>		Found:	nil	nil	nil", -- [1329]
+			"<11:39:31> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:63445::::::::47:254::2:1:4198:1:28:1184:::::|h[Arced War Axe]|h|r not found in bags", -- [1330]
+			"<11:39:32> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63445::::::::47:254::2:1:4198:1:28:1184:::::||h[Arced War Axe]||h||r	5", -- [1331]
+			"<11:39:32> <DEBUG>		Found:	nil	nil	nil", -- [1332]
+			"<11:39:32> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:63445::::::::47:254::2:1:4198:1:28:1184:::::|h[Arced War Axe]|h|r not found in bags", -- [1333]
+			"<11:39:53> <DEBUG>		Event:	LOOT_READY	true", -- [1334]
+			"<11:39:53> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-3873-0001A607BB	4580	Creature-0-4230-33-29651-3873-00022607BB	4509	Creature-0-4230-33-29651-3877-0003A607BB	6467	Creature-0-4230-33-29651-3877-00042607BB	11377", -- [1335]
+			"<11:39:53> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1336]
+			"<11:39:53> <DEBUG>		Event:	LOOT_CLOSED", -- [1337]
+			"<11:39:53> <DEBUG>		Event:	LOOT_CLOSED", -- [1338]
+			"<11:39:53> <Comm>		^1^Sl^T^N1^S3873^t^^	WHISPER	Alatra-Zul'jin", -- [1339]
+			"<11:39:53> <Comm>		^1^Sl^T^N1^S3873^t^^	WHISPER	Alatra-Zul'jin", -- [1340]
+			"<11:40:05> <DEBUG>		Event:	LOOT_READY	true", -- [1341]
+			"<11:40:05> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47135-00002607BB	15744	Creature-0-4230-33-29651-47140-00002607BB	8703	Creature-0-4230-33-29651-47140-0000A607BB	13994", -- [1342]
+			"<11:40:05> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1343]
+			"<11:40:05> <DEBUG>		Event:	LOOT_CLOSED", -- [1344]
+			"<11:40:05> <DEBUG>		Event:	LOOT_CLOSED", -- [1345]
+			"<11:40:05> <Comm>		^1^Sl^T^N1^S47135^t^^	WHISPER	Alatra-Zul'jin", -- [1346]
+			"<11:40:05> <Comm>		^1^Sl^T^N1^S47135^t^^	WHISPER	Alatra-Zul'jin", -- [1347]
+			"<11:40:09> <DEBUG>		Event:	LOOT_READY	true", -- [1348]
+			"<11:40:09> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47140-00012607BB	9273	Creature-0-4230-33-29651-47135-0000A607BB	3213	Creature-0-4230-33-29651-47140-0001A607BB	6110", -- [1349]
+			"<11:40:09> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1350]
+			"<11:40:09> <DEBUG>		Event:	LOOT_CLOSED", -- [1351]
+			"<11:40:09> <DEBUG>		Event:	LOOT_CLOSED", -- [1352]
+			"<11:40:09> <Comm>		^1^Sl^T^N1^S47140^t^^	WHISPER	Alatra-Zul'jin", -- [1353]
+			"<11:40:09> <Comm>		^1^Sl^T^N1^S47140^t^^	WHISPER	Alatra-Zul'jin", -- [1354]
+			"<11:40:18> <DEBUG>		Event:	LOOT_READY	true", -- [1355]
+			"<11:40:18> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-3870-00002607BB	9655	Creature-0-4230-33-29651-3869-00002607BB	9174	Creature-0-4230-33-29651-3869-0000A607BB	17026	Creature-0-4230-33-29651-3870-0000A607BB	13079", -- [1356]
+			"<11:40:18> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1357]
+			"<11:40:18> <DEBUG>		Event:	LOOT_CLOSED", -- [1358]
+			"<11:40:18> <DEBUG>		Event:	LOOT_CLOSED", -- [1359]
+			"<11:40:19> <Comm>		^1^Sl^T^N1^S3870^t^^	WHISPER	Alatra-Zul'jin", -- [1360]
+			"<11:40:19> <Comm>		^1^Sl^T^N1^S3870^t^^	WHISPER	Alatra-Zul'jin", -- [1361]
+			"<11:40:25> <DEBUG>		Event:	LOOT_READY	true", -- [1362]
+			"<11:40:25> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47131-0009A607BB	1839	Creature-0-4230-33-29651-47131-000A2607BB	4537	Creature-0-4230-33-29651-47131-000AA607BB	2678	Creature-0-4230-33-29651-47131-000B2607BB	3186	Creature-0-4230-33-29651-47131-000BA607BB	2257	Creature-0-4230-33-29651-3869-0001A607BB	5422", -- [1363]
+			"<11:40:25> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:68198::::::::47:254:::::::::|h[Ruined Embersilk Scraps]|h|r	0	1	Creature-0-4230-33-29651-47131-0009A607BB	1", -- [1364]
+			"<11:40:25> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:68198::::::::47:254:::::::::|h[Ruined Embersilk Scraps]|h|r	0", -- [1365]
+			"<11:40:25> <DEBUG>		Event:	LOOT_READY	true", -- [1366]
+			"<11:40:25> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47131-0009A607BB	1839	Creature-0-4230-33-29651-47131-000A2607BB	4537	Creature-0-4230-33-29651-47131-000AA607BB	2678	Creature-0-4230-33-29651-47131-000B2607BB	3186	Creature-0-4230-33-29651-47131-000BA607BB	2257	Creature-0-4230-33-29651-3869-0001A607BB	5422", -- [1367]
+			"<11:40:25> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1368]
+			"<11:40:25> <DEBUG>		Event:	LOOT_CLOSED", -- [1369]
+			"<11:40:25> <DEBUG>		Event:	LOOT_CLOSED", -- [1370]
+			"<11:40:25> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [1371]
+			"<11:40:25> <Comm>		^1^Sl^T^N1^S47131^t^^	WHISPER	Alatra-Zul'jin", -- [1372]
+			"<11:40:26> <DEBUG>		Event:	LOOT_READY	true", -- [1373]
+			"<11:40:26> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-3870-0001A607BB	2968", -- [1374]
+			"<11:40:26> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1375]
+			"<11:40:26> <DEBUG>		Event:	LOOT_CLOSED", -- [1376]
+			"<11:40:26> <DEBUG>		Event:	LOOT_CLOSED", -- [1377]
+			"<11:40:27> <Comm>		^1^Sl^T^N1^S3870^t^^	WHISPER	Alatra-Zul'jin", -- [1378]
+			"<11:40:27> <Comm>		^1^Sl^T^N1^S3870^t^^	WHISPER	Alatra-Zul'jin", -- [1379]
+			"<11:40:28> <DEBUG>		Event:	LOOT_READY	true", -- [1380]
+			"<11:40:28> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-3870-00012607BB	5432	Creature-0-4230-33-29651-3869-00012607BB	5755", -- [1381]
+			"<11:40:28> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1382]
+			"<11:40:28> <DEBUG>		Event:	LOOT_CLOSED", -- [1383]
+			"<11:40:28> <DEBUG>		Event:	LOOT_CLOSED", -- [1384]
+			"<11:40:28> <Comm>		^1^Sl^T^N1^S3870^t^^	WHISPER	Alatra-Zul'jin", -- [1385]
+			"<11:40:28> <Comm>		^1^Sl^T^N1^S3870^t^^	WHISPER	Alatra-Zul'jin", -- [1386]
+			"<11:40:44> <DEBUG>		Event:	LOOT_READY	true", -- [1387]
+			"<11:40:44> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47132-00002607BB	3402	Creature-0-4230-33-29651-47136-00002607BB	12580	Creature-0-4230-33-29651-47132-0000A607BB	3327	Creature-0-4230-33-29651-47132-00012607BB	4451	Creature-0-4230-33-29651-47132-0001A607BB	2935", -- [1388]
+			"<11:40:44> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1389]
+			"<11:40:44> <DEBUG>		Event:	LOOT_CLOSED", -- [1390]
+			"<11:40:44> <DEBUG>		Event:	LOOT_CLOSED", -- [1391]
+			"<11:40:45> <Comm>		^1^Sl^T^N1^S47132^t^^	WHISPER	Alatra-Zul'jin", -- [1392]
+			"<11:40:45> <Comm>		^1^Sl^T^N1^S47132^t^^	WHISPER	Alatra-Zul'jin", -- [1393]
+			"<11:40:45> <DEBUG>		Event:	LOOT_READY	true", -- [1394]
+			"<11:40:45> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47136-0000A607BB	17961", -- [1395]
+			"<11:40:46> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1396]
+			"<11:40:46> <DEBUG>		Event:	LOOT_CLOSED", -- [1397]
+			"<11:40:46> <DEBUG>		Event:	LOOT_CLOSED", -- [1398]
+			"<11:40:46> <Comm>		^1^Sl^T^N1^S47136^t^^	WHISPER	Alatra-Zul'jin", -- [1399]
+			"<11:40:46> <Comm>		^1^Sl^T^N1^S47136^t^^	WHISPER	Alatra-Zul'jin", -- [1400]
+			"<11:40:57> <DEBUG>		Event:	LOOT_READY	true", -- [1401]
+			"<11:40:57> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47145-00002607BB	12648", -- [1402]
+			"<11:40:57> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1403]
+			"<11:40:57> <DEBUG>		Event:	LOOT_CLOSED", -- [1404]
+			"<11:40:57> <DEBUG>		Event:	LOOT_CLOSED", -- [1405]
+			"<11:40:57> <Comm>		^1^Sl^T^N1^S47145^t^^	WHISPER	Alatra-Zul'jin", -- [1406]
+			"<11:40:57> <Comm>		^1^Sl^T^N1^S47145^t^^	WHISPER	Alatra-Zul'jin", -- [1407]
+			"<11:41:01> <DEBUG>		Event:	LOOT_READY	true", -- [1408]
+			"<11:41:01> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47132-00022607BB	1711	Creature-0-4230-33-29651-47132-0002A607BB	4942	Creature-0-4230-33-29651-47132-00032607BB	3358	Creature-0-4230-33-29651-47132-0003A607BB	1598	Creature-0-4230-33-29651-47136-00012607BB	5531	Creature-0-4230-33-29651-47136-0001A607BB	18498", -- [1409]
+			"<11:41:01> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:68197::::::::47:254:::::::::|h[Scavenged Animal Parts]|h|r	0	2	Creature-0-4230-33-29651-47132-00022607BB	2", -- [1410]
+			"<11:41:02> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:68197::::::::47:254:::::::::|h[Scavenged Animal Parts]|h|r	0", -- [1411]
+			"<11:41:02> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1412]
+			"<11:41:02> <DEBUG>		Event:	LOOT_CLOSED", -- [1413]
+			"<11:41:02> <DEBUG>		Event:	LOOT_CLOSED", -- [1414]
+			"<11:41:02> <Comm>		^1^Sl^T^N1^S47132^t^^	WHISPER	Alatra-Zul'jin", -- [1415]
+			"<11:41:02> <Comm>		^1^Sl^T^N1^S47132^t^^	WHISPER	Alatra-Zul'jin", -- [1416]
+			"<11:41:21> <DEBUG>		Event:	ENCOUNTER_START	1073	Lord Walden	2	5", -- [1417]
+			"<11:41:21> <INFO>		UpdatePlayersData()", -- [1418]
+			"<11:41:21> <DEBUG>		Event:	ENCOUNTER_END	1073	Lord Walden	2	5	1", -- [1419]
+			"<11:41:22> <DEBUG>		Event:	LOOT_READY	true", -- [1420]
+			"<11:41:22> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-46963-00002607BB	84856", -- [1421]
+			"<11:41:22> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:63455::::::::47:254::2:1:4198:1:28:1184:::::|h[Blinders of the Follower]|h|r	3	1	Creature-0-4230-33-29651-46963-00002607BB	1", -- [1422]
+			"<11:41:22> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:63454::::::::47:254::2:1:4198:1:28:1184:::::|h[Double Dealing Bracers]|h|r	3	1	Creature-0-4230-33-29651-46963-00002607BB	1", -- [1423]
+			"<11:41:22> <DEBUG>		OnLootSlotCleared()	3	|cff0070dd|Hitem:63454::::::::47:254::2:1:4198:1:28:1184:::::|h[Double Dealing Bracers]|h|r	3", -- [1424]
+			"<11:41:23> <DEBUG>		OnLootSlotCleared()	2	|cff0070dd|Hitem:63455::::::::47:254::2:1:4198:1:28:1184:::::|h[Blinders of the Follower]|h|r	3", -- [1425]
+			"<11:41:23> <DEBUG>		Event:	LOOT_READY	true", -- [1426]
+			"<11:41:23> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-46963-00002607BB	84856", -- [1427]
+			"<11:41:23> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	1073	63454	|cff0070dd|Hitem:63454::::::::47:254::2:1:4198:2:28:1184:9:35:::::|h[Double Dealing Bracers]|h|r	1	Alatra	HUNTER", -- [1428]
+			"<11:41:23> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	1073	63455	|cff0070dd|Hitem:63455::::::::47:254::2:1:4198:2:28:1184:9:35:::::|h[Blinders of the Follower]|h|r	1	Alatra	HUNTER", -- [1429]
+			"<11:41:23> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1430]
+			"<11:41:23> <DEBUG>		Event:	LOOT_CLOSED", -- [1431]
+			"<11:41:23> <DEBUG>		Event:	LOOT_CLOSED", -- [1432]
+			"<11:41:23> <Comm>		^1^Sl^T^N1^S46963^t^^	WHISPER	Alatra-Zul'jin", -- [1433]
+			"<11:41:23> <Comm>		^1^Sl^T^N1^S46963^t^^	WHISPER	Alatra-Zul'jin", -- [1434]
+			"<11:41:24> <DEBUG>		Storage:New	|cff0070dd|Hitem:63454::::::::47:254::2:1:4198:1:28:1184:::::|h[Double Dealing Bracers]|h|r	temp", -- [1435]
+			"<11:41:24> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63454::::::::47:254::2:1:4198:1:28:1184:::::||h[Double Dealing Bracers]||h||r	5", -- [1436]
+			"<11:41:24> <DEBUG>		Found:	nil	nil	nil", -- [1437]
+			"<11:41:25> <DEBUG>		Storage:New	|cff0070dd|Hitem:63455::::::::47:254::2:1:4198:1:28:1184:::::|h[Blinders of the Follower]|h|r	temp", -- [1438]
+			"<11:41:25> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63455::::::::47:254::2:1:4198:1:28:1184:::::||h[Blinders of the Follower]||h||r	5", -- [1439]
+			"<11:41:25> <DEBUG>		Found:	nil	nil	nil", -- [1440]
+			"<11:41:25> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63454::::::::47:254::2:1:4198:1:28:1184:::::||h[Double Dealing Bracers]||h||r	5", -- [1441]
+			"<11:41:25> <DEBUG>		Found:	nil	nil	nil", -- [1442]
+			"<11:41:26> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63455::::::::47:254::2:1:4198:1:28:1184:::::||h[Blinders of the Follower]||h||r	5", -- [1443]
+			"<11:41:26> <DEBUG>		Found:	nil	nil	nil", -- [1444]
+			"<11:41:26> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63454::::::::47:254::2:1:4198:1:28:1184:::::||h[Double Dealing Bracers]||h||r	5", -- [1445]
+			"<11:41:26> <DEBUG>		Found:	nil	nil	nil", -- [1446]
+			"<11:41:27> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63455::::::::47:254::2:1:4198:1:28:1184:::::||h[Blinders of the Follower]||h||r	5", -- [1447]
+			"<11:41:27> <DEBUG>		Found:	nil	nil	nil", -- [1448]
+			"<11:41:27> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63454::::::::47:254::2:1:4198:1:28:1184:::::||h[Double Dealing Bracers]||h||r	5", -- [1449]
+			"<11:41:27> <DEBUG>		Found:	nil	nil	nil", -- [1450]
+			"<11:41:27> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:63454::::::::47:254::2:1:4198:1:28:1184:::::|h[Double Dealing Bracers]|h|r not found in bags", -- [1451]
+			"<11:41:28> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63455::::::::47:254::2:1:4198:1:28:1184:::::||h[Blinders of the Follower]||h||r	5", -- [1452]
+			"<11:41:28> <DEBUG>		Found:	nil	nil	nil", -- [1453]
+			"<11:41:28> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:63455::::::::47:254::2:1:4198:1:28:1184:::::|h[Blinders of the Follower]|h|r not found in bags", -- [1454]
+			"<11:42:18> <DEBUG>		Event:	LOOT_READY	true", -- [1455]
+			"<11:42:18> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47132-0004A607BB	4369	Creature-0-4230-33-29651-47132-00042607BB	1286	Creature-0-4230-33-29651-47132-00052607BB	3604	Creature-0-4230-33-29651-47132-0005A607BB	4442", -- [1456]
+			"<11:42:18> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:68198::::::::47:254:::::::::|h[Ruined Embersilk Scraps]|h|r	0	1	Creature-0-4230-33-29651-47132-00052607BB	1", -- [1457]
+			"<11:42:18> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:68198::::::::47:254:::::::::|h[Ruined Embersilk Scraps]|h|r	0", -- [1458]
+			"<11:42:18> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1459]
+			"<11:42:18> <DEBUG>		Event:	LOOT_CLOSED", -- [1460]
+			"<11:42:18> <DEBUG>		Event:	LOOT_CLOSED", -- [1461]
+			"<11:42:19> <Comm>		^1^Sl^T^N1^S47132^t^^	WHISPER	Alatra-Zul'jin", -- [1462]
+			"<11:42:19> <Comm>		^1^Sl^T^N1^S47132^t^^	WHISPER	Alatra-Zul'jin", -- [1463]
+			"<11:42:30> <DEBUG>		Event:	LOOT_READY	true", -- [1464]
+			"<11:42:30> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47146-0000A607BB	18214	Creature-0-4230-33-29651-47141-00012607BB	16878	Creature-0-4230-33-29651-47141-0001A607BB	11412	Creature-0-4230-33-29651-47141-00002607BB	9904	Creature-0-4230-33-29651-47141-0000A607BB	11451	Creature-0-4230-33-29651-47146-00002607BB	5146", -- [1465]
+			"<11:42:30> <DEBUG>		Adding to self.lootSlotInfo	2	|cff9d9d9d|Hitem:68198::::::::47:254:::::::::|h[Ruined Embersilk Scraps]|h|r	0	2	Creature-0-4230-33-29651-47141-00012607BB	2", -- [1466]
+			"<11:42:30> <DEBUG>		OnLootSlotCleared()	2	|cff9d9d9d|Hitem:68198::::::::47:254:::::::::|h[Ruined Embersilk Scraps]|h|r	0", -- [1467]
+			"<11:42:30> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1468]
+			"<11:42:30> <DEBUG>		Event:	LOOT_CLOSED", -- [1469]
+			"<11:42:30> <DEBUG>		Event:	LOOT_CLOSED", -- [1470]
+			"<11:42:30> <Comm>		^1^Sl^T^N1^S47141^t^^	WHISPER	Alatra-Zul'jin", -- [1471]
+			"<11:42:30> <Comm>		^1^Sl^T^N1^S47141^t^^	WHISPER	Alatra-Zul'jin", -- [1472]
+			"<11:42:58> <DEBUG>		Event:	LOOT_READY	true", -- [1473]
+			"<11:42:58> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-47138-00002607BB	3791", -- [1474]
+			"<11:42:58> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1475]
+			"<11:42:58> <DEBUG>		Event:	LOOT_CLOSED", -- [1476]
+			"<11:42:58> <DEBUG>		Event:	LOOT_CLOSED", -- [1477]
+			"<11:42:59> <Comm>		^1^Sl^T^N1^S47138^t^^	WHISPER	Alatra-Zul'jin", -- [1478]
+			"<11:42:59> <Comm>		^1^Sl^T^N1^S47138^t^^	WHISPER	Alatra-Zul'jin", -- [1479]
+			"<11:43:02> <DEBUG>		Event:	ENCOUNTER_START	1072	Lord Godfrey	2	5", -- [1480]
+			"<11:43:02> <INFO>		UpdatePlayersData()", -- [1481]
+			"<11:43:03> <DEBUG>		Event:	ENCOUNTER_END	1072	Lord Godfrey	2	5	1", -- [1482]
+			"<11:43:04> <DEBUG>		Event:	LOOT_READY	true", -- [1483]
+			"<11:43:04> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-46964-0000260922	192679", -- [1484]
+			"<11:43:04> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:63462::::::::47:254::2:1:4198:1:28:1184:::::|h[Helm of Untold Stories]|h|r	3	1	Creature-0-4230-33-29651-46964-0000260922	1", -- [1485]
+			"<11:43:04> <DEBUG>		Adding to self.lootSlotInfo	4	|cff0070dd|Hitem:63456::::::::47:254::2:1:4198:1:28:1184:::::|h[Meteor Shard]|h|r	3	1	Creature-0-4230-33-29651-46964-0000260922	1", -- [1486]
+			"<11:43:04> <DEBUG>		OnLootSlotCleared()	4	|cff0070dd|Hitem:63456::::::::47:254::2:1:4198:1:28:1184:::::|h[Meteor Shard]|h|r	3", -- [1487]
+			"<11:43:04> <DEBUG>		Event:	LOOT_READY	true", -- [1488]
+			"<11:43:04> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4230-33-29651-46964-0000260922	192679", -- [1489]
+			"<11:43:04> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:63462::::::::47:254::2:1:4198:1:28:1184:::::|h[Helm of Untold Stories]|h|r	3	1	Creature-0-4230-33-29651-46964-0000260922	1", -- [1490]
+			"<11:43:04> <DEBUG>		OnLootSlotCleared()	2	|cff0070dd|Hitem:63462::::::::47:254::2:1:4198:1:28:1184:::::|h[Helm of Untold Stories]|h|r	3", -- [1491]
+			"<11:43:04> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	1072	63456	|cff0070dd|Hitem:63456::::::::47:254::2:1:4198:2:28:1184:9:35:::::|h[Meteor Shard]|h|r	1	Alatra	HUNTER", -- [1492]
+			"<11:43:04> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	1072	52078	|cff0070dd|Hitem:52078::::::::47:254:::::::::|h[Chaos Orb]|h|r	1	Alatra	HUNTER", -- [1493]
+			"<11:43:04> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	1072	63462	|cff0070dd|Hitem:63462::::::::47:254::2:1:4198:2:28:1184:9:35:::::|h[Helm of Untold Stories]|h|r	1	Alatra	HUNTER", -- [1494]
+			"<11:43:04> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1495]
+			"<11:43:04> <DEBUG>		Event:	LOOT_CLOSED", -- [1496]
+			"<11:43:04> <DEBUG>		Event:	LOOT_CLOSED", -- [1497]
+			"<11:43:04> <Comm>		^1^Sl^T^N1^S46964^t^^	WHISPER	Alatra-Zul'jin", -- [1498]
+			"<11:43:04> <Comm>		^1^Sl^T^N1^S46964^t^^	WHISPER	Alatra-Zul'jin", -- [1499]
+			"<11:43:06> <DEBUG>		Storage:New	|cff0070dd|Hitem:63456::::::::47:254::2:1:4198:1:28:1184:::::|h[Meteor Shard]|h|r	temp", -- [1500]
+			"<11:43:06> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63456::::::::47:254::2:1:4198:1:28:1184:::::||h[Meteor Shard]||h||r	5", -- [1501]
+			"<11:43:06> <DEBUG>		Found:	nil	nil	nil", -- [1502]
+			"<11:43:06> <DEBUG>		Storage:New	|cff0070dd|Hitem:63462::::::::47:254::2:1:4198:1:28:1184:::::|h[Helm of Untold Stories]|h|r	temp", -- [1503]
+			"<11:43:06> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63462::::::::47:254::2:1:4198:1:28:1184:::::||h[Helm of Untold Stories]||h||r	5", -- [1504]
+			"<11:43:06> <DEBUG>		Found:	nil	nil	nil", -- [1505]
+			"<11:43:07> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63456::::::::47:254::2:1:4198:1:28:1184:::::||h[Meteor Shard]||h||r	5", -- [1506]
+			"<11:43:07> <DEBUG>		Found:	nil	nil	nil", -- [1507]
+			"<11:43:07> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63462::::::::47:254::2:1:4198:1:28:1184:::::||h[Helm of Untold Stories]||h||r	5", -- [1508]
+			"<11:43:07> <DEBUG>		Found:	nil	nil	nil", -- [1509]
+			"<11:43:08> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63456::::::::47:254::2:1:4198:1:28:1184:::::||h[Meteor Shard]||h||r	5", -- [1510]
+			"<11:43:08> <DEBUG>		Found:	nil	nil	nil", -- [1511]
+			"<11:43:08> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63462::::::::47:254::2:1:4198:1:28:1184:::::||h[Helm of Untold Stories]||h||r	5", -- [1512]
+			"<11:43:08> <DEBUG>		Found:	nil	nil	nil", -- [1513]
+			"<11:43:09> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63456::::::::47:254::2:1:4198:1:28:1184:::::||h[Meteor Shard]||h||r	5", -- [1514]
+			"<11:43:09> <DEBUG>		Found:	nil	nil	nil", -- [1515]
+			"<11:43:09> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:63456::::::::47:254::2:1:4198:1:28:1184:::::|h[Meteor Shard]|h|r not found in bags", -- [1516]
+			"<11:43:09> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:63462::::::::47:254::2:1:4198:1:28:1184:::::||h[Helm of Untold Stories]||h||r	5", -- [1517]
+			"<11:43:09> <DEBUG>		Found:	nil	nil	nil", -- [1518]
+			"<11:43:09> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:63462::::::::47:254::2:1:4198:1:28:1184:::::|h[Helm of Untold Stories]|h|r not found in bags", -- [1519]
+			"<11:43:47> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1520]
+			"<11:43:47> <INFO>		UpdatePlayersData()", -- [1521]
+			"<11:43:50> <DEBUG>		GetML()", -- [1522]
+			"<11:46:01> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1523]
+			"<11:46:01> <INFO>		UpdatePlayersData()", -- [1524]
+			"<11:46:05> <DEBUG>		GetML()", -- [1525]
+			"<11:48:49> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1526]
+			"<11:48:49> <INFO>		UpdatePlayersData()", -- [1527]
+			"<11:48:51> <DEBUG>		GetML()", -- [1528]
+			"<11:55:24> <DEBUG>		Event:	LOOT_READY	true", -- [1529]
+			"<11:55:24> <DEBUG>		Event:	LOOT_READY	true", -- [1530]
+			"<11:55:24> <DEBUG>		Event:	LOOT_READY	true", -- [1531]
+			"<11:56:00> <DEBUG>		Event:	LOOT_READY	true", -- [1532]
+			"<11:56:01> <DEBUG>		Event:	LOOT_READY	true", -- [1533]
+			"<11:57:02> <DEBUG>		Event:	LOOT_READY	true", -- [1534]
+			"<11:57:03> <DEBUG>		Event:	LOOT_READY	true", -- [1535]
+			"<11:57:12> <DEBUG>		Event:	LOOT_READY	true", -- [1536]
+			"<11:57:20> <DEBUG>		Event:	LOOT_READY	true", -- [1537]
+			"<11:57:36> <DEBUG>		Event:	LOOT_READY	true", -- [1538]
+			"<11:57:49> <DEBUG>		Event:	LOOT_READY	true", -- [1539]
+			"<11:57:49> <DEBUG>		Event:	LOOT_READY	true", -- [1540]
+			"<11:58:02> <DEBUG>		Event:	LOOT_READY	true", -- [1541]
+			"<11:58:17> <DEBUG>		Event:	LOOT_READY	true", -- [1542]
+			"<11:58:23> <DEBUG>		Event:	LOOT_READY	true", -- [1543]
+			"<11:58:34> <DEBUG>		Event:	LOOT_READY	true", -- [1544]
+			"<12:00:03> <DEBUG>		Event:	LOOT_READY	true", -- [1545]
+			"<12:01:00> <DEBUG>		Event:	LOOT_READY	true", -- [1546]
+			"<12:01:10> <DEBUG>		Event:	LOOT_READY	true", -- [1547]
+			"<12:01:23> <DEBUG>		Event:	LOOT_READY	true", -- [1548]
+			"<12:01:35> <DEBUG>		Event:	LOOT_READY	true", -- [1549]
+			"<12:02:22> <DEBUG>		Event:	LOOT_READY	true", -- [1550]
+			"<12:02:22> <DEBUG>		Event:	LOOT_READY	true", -- [1551]
+			"<12:02:40> <DEBUG>		Event:	LOOT_READY	true", -- [1552]
+			"<12:02:40> <DEBUG>		Event:	LOOT_READY	true", -- [1553]
+			"<12:02:48> <DEBUG>		Event:	LOOT_READY	true", -- [1554]
+			"<12:02:56> <DEBUG>		Event:	LOOT_READY	true", -- [1555]
+			"<12:23:38> <DEBUG>		Event:	LOOT_READY	true", -- [1556]
+			"<12:23:38> <DEBUG>		Event:	LOOT_READY	true", -- [1557]
+			"<12:23:43> <DEBUG>		Event:	LOOT_READY	true", -- [1558]
+			"<12:24:00> <DEBUG>		Event:	LOOT_READY	true", -- [1559]
+			"<12:24:01> <DEBUG>		Event:	LOOT_READY	true", -- [1560]
+			"<12:24:17> <DEBUG>		Event:	LOOT_READY	true", -- [1561]
+			"<12:24:26> <DEBUG>		Event:	LOOT_READY	true", -- [1562]
+			"<12:24:35> <DEBUG>		Event:	LOOT_READY	true", -- [1563]
+			"<12:24:58> <DEBUG>		Event:	LOOT_READY	true", -- [1564]
+			"<12:25:12> <DEBUG>		Event:	LOOT_READY	true", -- [1565]
+			"<12:25:26> <DEBUG>		Event:	LOOT_READY	true", -- [1566]
+			"<12:25:41> <DEBUG>		Event:	LOOT_READY	true", -- [1567]
+			"<12:25:42> <DEBUG>		Event:	LOOT_READY	true", -- [1568]
+			"<12:30:09> <DEBUG>		Event:	LOOT_READY	true", -- [1569]
+			"<12:32:08> <DEBUG>		Event:	LOOT_READY	true", -- [1570]
+			"<12:32:17> <DEBUG>		Event:	LOOT_READY	true", -- [1571]
+			"<12:32:27> <DEBUG>		Event:	LOOT_READY	true", -- [1572]
+			"<12:32:38> <DEBUG>		Event:	LOOT_READY	true", -- [1573]
+			"<12:32:47> <DEBUG>		Event:	LOOT_READY	true", -- [1574]
+			"<12:32:58> <DEBUG>		Event:	LOOT_READY	true", -- [1575]
+			"<12:33:15> <DEBUG>		Event:	LOOT_READY	true", -- [1576]
+			"<12:33:48> <DEBUG>		Event:	LOOT_READY	true", -- [1577]
+			"<12:33:57> <DEBUG>		Event:	LOOT_READY	true", -- [1578]
+			"<12:34:10> <DEBUG>		Event:	LOOT_READY	true", -- [1579]
+			"<12:34:29> <DEBUG>		Event:	LOOT_READY	true", -- [1580]
+			"<12:34:35> <DEBUG>		Event:	LOOT_READY	true", -- [1581]
+			"<12:34:47> <DEBUG>		Event:	LOOT_READY	true", -- [1582]
+			"<12:35:12> <DEBUG>		Event:	LOOT_READY	true", -- [1583]
+			"<12:35:41> <DEBUG>		Event:	LOOT_READY	true", -- [1584]
+			"<12:35:48> <DEBUG>		Event:	LOOT_READY	true", -- [1585]
+			"<12:35:54> <DEBUG>		Event:	LOOT_READY	true", -- [1586]
+			"<12:36:15> <DEBUG>		Event:	LOOT_READY	true", -- [1587]
+			"<12:36:30> <DEBUG>		Event:	LOOT_READY	true", -- [1588]
+			"<12:36:30> <DEBUG>		Event:	LOOT_READY	true", -- [1589]
+			"<12:37:12> <DEBUG>		Event:	LOOT_READY	true", -- [1590]
+			"<12:37:14> <DEBUG>		Event:	LOOT_READY	true", -- [1591]
+			"<12:37:24> <DEBUG>		Event:	LOOT_READY	true", -- [1592]
+			"<12:37:27> <DEBUG>		Event:	LOOT_READY	true", -- [1593]
+			"<12:37:44> <DEBUG>		Event:	LOOT_READY	true", -- [1594]
+			"<12:37:45> <DEBUG>		Event:	LOOT_READY	true", -- [1595]
+			"<12:37:49> <DEBUG>		Event:	LOOT_READY	true", -- [1596]
+			"<12:37:52> <DEBUG>		Event:	LOOT_READY	true", -- [1597]
+			"<12:38:01> <DEBUG>		Event:	LOOT_READY	true", -- [1598]
+			"<12:38:13> <DEBUG>		Event:	LOOT_READY	true", -- [1599]
+			"<12:38:16> <DEBUG>		Event:	LOOT_READY	true", -- [1600]
+			"<12:38:28> <DEBUG>		Event:	LOOT_READY	true", -- [1601]
+			"<12:38:36> <DEBUG>		Event:	LOOT_READY	true", -- [1602]
+			"<12:38:45> <DEBUG>		Event:	LOOT_READY	true", -- [1603]
+			"<12:39:11> <DEBUG>		Event:	LOOT_READY	true", -- [1604]
+			"<12:39:11> <DEBUG>		Event:	LOOT_READY	true", -- [1605]
+			"<12:39:15> <DEBUG>		Event:	LOOT_READY	true", -- [1606]
+			"<12:39:28> <DEBUG>		Event:	LOOT_READY	true", -- [1607]
+			"<12:39:33> <DEBUG>		Event:	LOOT_READY	true", -- [1608]
+			"<12:40:16> <DEBUG>		Event:	LOOT_READY	true", -- [1609]
+			"<12:40:16> <DEBUG>		Event:	LOOT_READY	true", -- [1610]
+			"<12:40:16> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	129035	|cff0070dd|Hitem:129035::::::::47:254:::1:6691:2:28:334:9:45:::::|h[Indomitable Bearskin Cloak]|h|r	1	Alatra	HUNTER", -- [1611]
+			"<12:40:23> <DEBUG>		Event:	LOOT_READY	true", -- [1612]
+			"<12:41:56> <DEBUG>		Event:	LOOT_READY	true", -- [1613]
+			"<12:41:59> <DEBUG>		Event:	LOOT_READY	true", -- [1614]
+			"<12:42:32> <DEBUG>		Event:	LOOT_READY	true", -- [1615]
+			"<12:42:57> <DEBUG>		Event:	LOOT_READY	true", -- [1616]
+			"<12:43:14> <DEBUG>		Event:	LOOT_READY	true", -- [1617]
+			"<12:44:22> <DEBUG>		Event:	LOOT_READY	true", -- [1618]
+			"<12:45:08> <DEBUG>		Event:	LOOT_READY	true", -- [1619]
+			"<12:45:20> <DEBUG>		Event:	LOOT_READY	true", -- [1620]
+			"<12:47:08> <DEBUG>		Event:	LOOT_READY	true", -- [1621]
+			"<12:47:17> <DEBUG>		Event:	LOOT_READY	true", -- [1622]
+			"<12:47:48> <DEBUG>		Event:	LOOT_READY	true", -- [1623]
+			"<12:48:03> <DEBUG>		Event:	LOOT_READY	true", -- [1624]
+			"<12:48:17> <DEBUG>		Event:	LOOT_READY	true", -- [1625]
+			"<12:48:43> <DEBUG>		Event:	LOOT_READY	true", -- [1626]
+			"<12:51:40> <DEBUG>		Event:	LOOT_READY	true", -- [1627]
+			"<12:51:58> <DEBUG>		Event:	LOOT_READY	true", -- [1628]
+			"<12:52:38> <DEBUG>		Event:	LOOT_READY	true", -- [1629]
+			"<12:52:51> <DEBUG>		Event:	LOOT_READY	true", -- [1630]
+			"<12:53:06> <DEBUG>		Event:	LOOT_READY	true", -- [1631]
+			"<12:53:34> <DEBUG>		Event:	LOOT_READY	true", -- [1632]
+			"<12:54:47> <DEBUG>		Event:	LOOT_READY	true", -- [1633]
+			"<12:56:27> <DEBUG>		Event:	LOOT_READY	true", -- [1634]
+			"<12:56:39> <DEBUG>		Event:	LOOT_READY	true", -- [1635]
+			"<12:57:03> <DEBUG>		Event:	LOOT_READY	true", -- [1636]
+			"<12:57:35> <DEBUG>		Event:	LOOT_READY	true", -- [1637]
+			"<12:57:41> <DEBUG>		Event:	LOOT_READY	true", -- [1638]
+			"<12:57:52> <DEBUG>		Event:	LOOT_READY	true", -- [1639]
+			"<12:58:01> <DEBUG>		Event:	LOOT_READY	true", -- [1640]
+			"<12:58:13> <DEBUG>		Event:	LOOT_READY	true", -- [1641]
+			"<12:58:39> <DEBUG>		Event:	LOOT_READY	true", -- [1642]
+			"<12:58:39> <DEBUG>		Event:	LOOT_READY	true", -- [1643]
+			"<12:59:14> <DEBUG>		Event:	LOOT_READY	true", -- [1644]
+			"<12:59:14> <DEBUG>		Event:	LOOT_READY	true", -- [1645]
+			"<12:59:31> <DEBUG>		Event:	LOOT_READY	true", -- [1646]
+			"<12:59:45> <DEBUG>		Event:	LOOT_READY	true", -- [1647]
+			"<13:02:10> <DEBUG>		Event:	LOOT_READY	true", -- [1648]
+			"<13:02:17> <DEBUG>		Event:	LOOT_READY	true", -- [1649]
+			"<13:02:26> <DEBUG>		Event:	LOOT_READY	true", -- [1650]
+			"<13:02:47> <DEBUG>		Event:	LOOT_READY	true", -- [1651]
+			"<13:02:58> <DEBUG>		Event:	LOOT_READY	true", -- [1652]
+			"<13:03:08> <DEBUG>		Event:	LOOT_READY	true", -- [1653]
+			"<13:03:18> <DEBUG>		Event:	LOOT_READY	true", -- [1654]
+			"<13:03:36> <DEBUG>		Event:	LOOT_READY	true", -- [1655]
+			"<13:03:43> <DEBUG>		Event:	LOOT_READY	true", -- [1656]
+			"<13:04:08> <DEBUG>		Event:	LOOT_READY	true", -- [1657]
+			"<13:04:12> <DEBUG>		Event:	LOOT_READY	true", -- [1658]
+			"<13:04:24> <DEBUG>		Event:	LOOT_READY	true", -- [1659]
+			"<13:04:31> <DEBUG>		Event:	LOOT_READY	true", -- [1660]
+			"<13:04:37> <DEBUG>		Event:	LOOT_READY	true", -- [1661]
+			"<13:04:43> <DEBUG>		Event:	LOOT_READY	true", -- [1662]
+			"<13:04:51> <DEBUG>		Event:	LOOT_READY	true", -- [1663]
+			"<13:05:12> <DEBUG>		Event:	LOOT_READY	true", -- [1664]
+			"<13:05:14> <DEBUG>		Event:	LOOT_READY	true", -- [1665]
+			"<13:05:28> <DEBUG>		Event:	LOOT_READY	true", -- [1666]
+			"<13:05:40> <DEBUG>		Event:	LOOT_READY	true", -- [1667]
+			"<13:06:07> <DEBUG>		Event:	LOOT_READY	true", -- [1668]
+			"<13:06:11> <DEBUG>		Event:	LOOT_READY	true", -- [1669]
+			"<13:06:16> <DEBUG>		Event:	LOOT_READY	true", -- [1670]
+			"<13:06:44> <DEBUG>		Event:	LOOT_READY	true", -- [1671]
+			"<13:06:52> <DEBUG>		Event:	LOOT_READY	true", -- [1672]
+			"<13:07:06> <DEBUG>		Event:	LOOT_READY	true", -- [1673]
+			"<13:07:06> <DEBUG>		Event:	LOOT_READY	true", -- [1674]
+			"<13:07:10> <DEBUG>		Event:	LOOT_READY	true", -- [1675]
+			"<13:07:14> <DEBUG>		Event:	LOOT_READY	true", -- [1676]
+			"<13:07:14> <DEBUG>		Event:	LOOT_READY	true", -- [1677]
+			"<13:10:10> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1678]
+			"<13:10:10> <INFO>		UpdatePlayersData()", -- [1679]
+			"<13:10:11> <DEBUG>		GetML()", -- [1680]
+			"<13:10:35> <DEBUG>		Event:	LOOT_READY	true", -- [1681]
+			"<13:11:04> <DEBUG>		Event:	LOOT_READY	true", -- [1682]
+			"<13:11:21> <DEBUG>		Event:	LOOT_READY	true", -- [1683]
+			"<13:11:27> <DEBUG>		Event:	LOOT_READY	true", -- [1684]
+			"<13:11:41> <DEBUG>		Event:	LOOT_READY	true", -- [1685]
+			"<13:12:01> <DEBUG>		Event:	LOOT_READY	true", -- [1686]
+			"<13:12:11> <DEBUG>		Event:	LOOT_READY	true", -- [1687]
+			"<13:12:20> <DEBUG>		Event:	LOOT_READY	true", -- [1688]
+			"<13:12:23> <DEBUG>		Event:	LOOT_READY	true", -- [1689]
+			"<13:12:35> <DEBUG>		Event:	LOOT_READY	true", -- [1690]
+			"<13:12:44> <DEBUG>		Event:	LOOT_READY	true", -- [1691]
+			"<13:12:49> <DEBUG>		Event:	LOOT_READY	true", -- [1692]
+			"<13:13:02> <DEBUG>		Event:	LOOT_READY	true", -- [1693]
+			"<13:13:04> <DEBUG>		Event:	LOOT_READY	true", -- [1694]
+			"<13:13:13> <DEBUG>		Event:	LOOT_READY	true", -- [1695]
+			"<13:13:26> <DEBUG>		Event:	LOOT_READY	true", -- [1696]
+			"<13:13:32> <DEBUG>		Event:	LOOT_READY	true", -- [1697]
+			"<13:13:37> <DEBUG>		Event:	LOOT_READY	true", -- [1698]
+			"<13:13:39> <DEBUG>		Event:	LOOT_READY	true", -- [1699]
+			"<13:13:47> <DEBUG>		Event:	LOOT_READY	true", -- [1700]
+			"<13:13:52> <DEBUG>		Event:	LOOT_READY	true", -- [1701]
+			"<13:15:23> <DEBUG>		Event:	LOOT_READY	true", -- [1702]
+			"<13:16:56> <DEBUG>		Event:	LOOT_READY	true", -- [1703]
+			"<13:17:07> <DEBUG>		Event:	LOOT_READY	true", -- [1704]
+			"<13:17:16> <DEBUG>		Event:	LOOT_READY	true", -- [1705]
+			"<13:17:35> <DEBUG>		Event:	LOOT_READY	true", -- [1706]
+			"<13:17:46> <DEBUG>		Event:	LOOT_READY	true", -- [1707]
+			"<13:17:56> <DEBUG>		Event:	LOOT_READY	true", -- [1708]
+			"<13:18:13> <DEBUG>		Event:	LOOT_READY	true", -- [1709]
+			"<13:18:48> <DEBUG>		Event:	LOOT_READY	true", -- [1710]
+			"<13:19:18> <DEBUG>		Event:	LOOT_READY	true", -- [1711]
+			"<13:19:25> <DEBUG>		Event:	LOOT_READY	true", -- [1712]
+			"<13:19:26> <DEBUG>		Event:	LOOT_READY	true", -- [1713]
+			"<13:19:49> <DEBUG>		Event:	LOOT_READY	true", -- [1714]
+			"<13:20:12> <DEBUG>		Event:	LOOT_READY	true", -- [1715]
+			"<13:21:02> <DEBUG>		Event:	LOOT_READY	true", -- [1716]
+			"<13:21:25> <DEBUG>		Event:	LOOT_READY	true", -- [1717]
+			"<13:21:36> <DEBUG>		Event:	LOOT_READY	true", -- [1718]
+			"<13:21:59> <DEBUG>		Event:	LOOT_READY	true", -- [1719]
+			"<13:22:25> <DEBUG>		Event:	LOOT_READY	true", -- [1720]
+			"<13:22:48> <DEBUG>		Event:	LOOT_READY	true", -- [1721]
+			"<13:23:10> <DEBUG>		Event:	LOOT_READY	true", -- [1722]
+			"<13:23:29> <DEBUG>		Event:	LOOT_READY	true", -- [1723]
+			"<13:23:58> <DEBUG>		Event:	LOOT_READY	true", -- [1724]
+			"<13:24:27> <DEBUG>		Event:	LOOT_READY	true", -- [1725]
+			"<13:24:54> <DEBUG>		Event:	LOOT_READY	true", -- [1726]
+			"<13:25:09> <DEBUG>		Event:	LOOT_READY	true", -- [1727]
+			"<13:25:16> <DEBUG>		Event:	LOOT_READY	true", -- [1728]
+			"<13:25:36> <DEBUG>		Event:	LOOT_READY	true", -- [1729]
+			"<13:26:02> <DEBUG>		Event:	LOOT_READY	true", -- [1730]
+			"<13:26:04> <DEBUG>		Event:	LOOT_READY	true", -- [1731]
+			"<13:26:19> <DEBUG>		Event:	LOOT_READY	true", -- [1732]
+			"<13:27:09> <DEBUG>		Event:	LOOT_READY	true", -- [1733]
+			"<13:28:11> <DEBUG>		Event:	LOOT_READY	true", -- [1734]
+			"06/12/22", -- [1735]
+			"<13:30:47> <INFO>		Logged In", -- [1736]
+			"<13:30:47> [ML]<INFO>		Init", -- [1737]
+			"<13:30:47> <INFO>		RCLootCouncil	TradeUI enabled", -- [1738]
+			"<13:30:59> <INFO>		Alatra-Zul'jin	3.3.0	nil", -- [1739]
+			"<13:30:59> <DEBUG>		ActivateSkin	bfa", -- [1740]
+			"<13:31:11> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1741]
+			"<13:31:11> <INFO>		UpdatePlayersData()", -- [1742]
+			"<13:31:11> <INFO>		Player relog...", -- [1743]
+			"<13:31:20> <DEBUG>		GetML()", -- [1744]
+			"<13:31:20> <DEBUG>		Storage:New	|cff1eff00|Hitem:4571::::::::47:254::1::1:28:213:::::|h[War Knife]|h|r	temp	restored	table: 0000023824D17950", -- [1745]
+			"<13:31:20> <DEBUG>		Storage: searching for item:	||cff1eff00||Hitem:4571::::::::47:254::1::1:28:213:::::||h[War Knife]||h||r	5", -- [1746]
+			"<13:31:20> <DEBUG>		Found:	nil	nil	nil", -- [1747]
+			"<13:31:20> <WARNING>		ItemStorage, db item no longer in bags	|cff1eff00|Hitem:4571::::::::47:254::1::1:28:213:::::|h[War Knife]|h|r", -- [1748]
+			"<13:31:20> <DEBUG>		Storage:RemoveItem	|cff1eff00|Hitem:4571::::::::47:254::1::1:28:213:::::|h[War Knife]|h|r", -- [1749]
+			"<13:32:49> <DEBUG>		Event:	LOOT_READY	true", -- [1750]
+			"<13:33:40> <DEBUG>		Event:	LOOT_READY	true", -- [1751]
+			"<13:34:14> <DEBUG>		Event:	LOOT_READY	true", -- [1752]
+			"<13:35:03> <DEBUG>		Event:	LOOT_READY	true", -- [1753]
+			"<13:35:23> <DEBUG>		Event:	LOOT_READY	true", -- [1754]
+			"<13:35:44> <DEBUG>		Event:	LOOT_READY	true", -- [1755]
+			"<13:37:12> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1756]
+			"<13:37:12> <INFO>		UpdatePlayersData()", -- [1757]
+			"<13:37:15> <DEBUG>		GetML()", -- [1758]
+			"06/12/22", -- [1759]
+			"<14:07:03> <INFO>		Logged In", -- [1760]
+			"<14:07:03> [ML]<INFO>		Init", -- [1761]
+			"<14:07:03> <INFO>		RCLootCouncil	TradeUI enabled", -- [1762]
+			"<14:07:20> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Alatra-Zul'jin	Player-61-0EBAD280", -- [1763]
+			"<14:07:20> <INFO>		Alatra-Zul'jin	3.3.0	nil", -- [1764]
+			"<14:07:20> <DEBUG>		ActivateSkin	bfa", -- [1765]
+			"<14:07:33> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1766]
+			"<14:07:33> <INFO>		UpdatePlayersData()", -- [1767]
+			"<14:07:33> <INFO>		Player relog...", -- [1768]
+			"<14:07:43> <DEBUG>		GetML()", -- [1769]
+			"<14:09:08> <DEBUG>		Event:	LOOT_READY	true", -- [1770]
+			"<14:09:09> <DEBUG>		Event:	LOOT_READY	true", -- [1771]
+			"<14:09:15> <DEBUG>		Event:	LOOT_READY	true", -- [1772]
+			"<14:12:32> <DEBUG>		Event:	LOOT_READY	true", -- [1773]
+			"<14:19:02> <DEBUG>		Event:	LOOT_READY	true", -- [1774]
+			"<14:19:02> <DEBUG>		Event:	LOOT_READY	true", -- [1775]
+			"<14:19:59> <DEBUG>		Event:	LOOT_READY	true", -- [1776]
+			"<14:20:02> <DEBUG>		Event:	LOOT_READY	true", -- [1777]
+			"<14:20:13> <DEBUG>		Event:	LOOT_READY	true", -- [1778]
+			"<14:20:18> <DEBUG>		Event:	LOOT_READY	true", -- [1779]
+			"<14:20:31> <DEBUG>		Event:	LOOT_READY	true", -- [1780]
+			"<14:20:48> <DEBUG>		Event:	LOOT_READY	true", -- [1781]
+			"<14:20:57> <DEBUG>		Event:	LOOT_READY	true", -- [1782]
+			"<14:21:19> <DEBUG>		Event:	LOOT_READY	true", -- [1783]
+			"<14:21:46> <DEBUG>		Event:	LOOT_READY	true", -- [1784]
+			"<14:21:57> <DEBUG>		Event:	LOOT_READY	true", -- [1785]
+			"<14:22:11> <DEBUG>		Event:	LOOT_READY	true", -- [1786]
+			"<14:22:51> <DEBUG>		Event:	LOOT_READY	true", -- [1787]
+			"<14:22:53> <DEBUG>		Event:	LOOT_READY	true", -- [1788]
+			"<14:24:13> <DEBUG>		Event:	LOOT_READY	true", -- [1789]
+			"<14:25:59> <DEBUG>		Event:	LOOT_READY	true", -- [1790]
+			"<14:26:15> <DEBUG>		Event:	LOOT_READY	true", -- [1791]
+			"<14:26:25> <DEBUG>		Event:	LOOT_READY	true", -- [1792]
+			"<14:26:44> <DEBUG>		Event:	LOOT_READY	true", -- [1793]
+			"<14:26:50> <DEBUG>		Event:	LOOT_READY	true", -- [1794]
+			"<14:27:11> <DEBUG>		Event:	LOOT_READY	true", -- [1795]
+			"<14:27:30> <DEBUG>		Event:	LOOT_READY	true", -- [1796]
+			"<14:27:30> <DEBUG>		Event:	LOOT_READY	true", -- [1797]
+			"<14:27:37> <DEBUG>		Event:	LOOT_READY	true", -- [1798]
+			"<14:28:09> <DEBUG>		Event:	LOOT_READY	true", -- [1799]
+			"<14:28:12> <DEBUG>		Event:	LOOT_READY	true", -- [1800]
+			"<14:28:55> <DEBUG>		Event:	LOOT_READY	true", -- [1801]
+			"<14:29:26> <DEBUG>		Event:	LOOT_READY	true", -- [1802]
+			"<14:29:45> <DEBUG>		Event:	LOOT_READY	true", -- [1803]
+			"<14:29:45> <DEBUG>		Event:	LOOT_READY	true", -- [1804]
+			"<14:29:58> <DEBUG>		Event:	LOOT_READY	true", -- [1805]
+			"<14:30:13> <DEBUG>		Event:	LOOT_READY	true", -- [1806]
+			"<14:30:22> <DEBUG>		Event:	LOOT_READY	true", -- [1807]
+			"<14:30:53> <DEBUG>		Event:	LOOT_READY	true", -- [1808]
+			"<14:31:04> <DEBUG>		Event:	LOOT_READY	true", -- [1809]
+			"<14:31:10> <DEBUG>		Event:	LOOT_READY	true", -- [1810]
+			"<14:31:26> <DEBUG>		Event:	LOOT_READY	true", -- [1811]
+			"<14:31:32> <DEBUG>		Event:	LOOT_READY	true", -- [1812]
+			"<14:31:43> <DEBUG>		Event:	LOOT_READY	true", -- [1813]
+			"<14:35:28> <DEBUG>		Event:	LOOT_READY	true", -- [1814]
+			"<14:35:45> <DEBUG>		Event:	LOOT_READY	true", -- [1815]
+			"<14:35:45> <DEBUG>		Event:	LOOT_READY	true", -- [1816]
+			"<14:35:47> <DEBUG>		Event:	LOOT_READY	true", -- [1817]
+			"<14:35:58> <DEBUG>		Event:	LOOT_READY	true", -- [1818]
+			"<14:36:00> <DEBUG>		Event:	LOOT_READY	true", -- [1819]
+			"<14:36:00> <DEBUG>		Event:	LOOT_READY	true", -- [1820]
+			"<14:36:13> <DEBUG>		Event:	LOOT_READY	true", -- [1821]
+			"<14:36:26> <DEBUG>		Event:	LOOT_READY	true", -- [1822]
+			"<14:36:37> <DEBUG>		Event:	LOOT_READY	true", -- [1823]
+			"<14:36:44> <DEBUG>		Event:	LOOT_READY	true", -- [1824]
+			"<14:36:56> <DEBUG>		Event:	LOOT_READY	true", -- [1825]
+			"<14:37:12> <DEBUG>		Event:	LOOT_READY	true", -- [1826]
+			"<14:37:16> <DEBUG>		Event:	LOOT_READY	true", -- [1827]
+			"<14:37:18> <DEBUG>		Event:	LOOT_READY	true", -- [1828]
+			"<14:37:28> <DEBUG>		Event:	LOOT_READY	true", -- [1829]
+			"<14:37:37> <DEBUG>		Event:	LOOT_READY	true", -- [1830]
+			"<14:37:42> <DEBUG>		Event:	LOOT_READY	true", -- [1831]
+			"<14:37:50> <DEBUG>		Event:	LOOT_READY	true", -- [1832]
+			"<14:38:04> <DEBUG>		Event:	LOOT_READY	true", -- [1833]
+			"<14:38:06> <DEBUG>		Event:	LOOT_READY	true", -- [1834]
+			"<14:38:15> <DEBUG>		Event:	LOOT_READY	true", -- [1835]
+			"<14:38:47> <DEBUG>		Event:	LOOT_READY	true", -- [1836]
+			"<14:38:57> <DEBUG>		Event:	LOOT_READY	true", -- [1837]
+			"<14:39:05> <DEBUG>		Event:	LOOT_READY	true", -- [1838]
+			"<14:39:16> <DEBUG>		Event:	LOOT_READY	true", -- [1839]
+			"<14:39:33> <DEBUG>		Event:	LOOT_READY	true", -- [1840]
+			"<14:39:42> <DEBUG>		Event:	LOOT_READY	true", -- [1841]
+			"<14:39:47> <DEBUG>		Event:	LOOT_READY	true", -- [1842]
+			"<14:40:09> <DEBUG>		Event:	LOOT_READY	true", -- [1843]
+			"<14:40:53> <DEBUG>		Event:	LOOT_READY	true", -- [1844]
+			"<14:41:04> <DEBUG>		Event:	LOOT_READY	true", -- [1845]
+			"<14:41:04> <DEBUG>		Event:	LOOT_READY	true", -- [1846]
+			"<14:42:48> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1847]
+			"<14:42:48> <INFO>		UpdatePlayersData()", -- [1848]
+			"<14:42:49> <DEBUG>		GetML()", -- [1849]
+			"<14:43:34> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1850]
+			"<14:43:34> <INFO>		UpdatePlayersData()", -- [1851]
+			"<14:43:35> <DEBUG>		GetML()", -- [1852]
+			"06/15/22", -- [1853]
+			"<21:53:27> <INFO>		Logged In", -- [1854]
+			"<21:53:27> [ML]<INFO>		Init", -- [1855]
+			"<21:53:27> <INFO>		RCLootCouncil	TradeUI enabled", -- [1856]
+			"<21:53:49> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Shanyt-ArgentDawn	Player-75-058380E2", -- [1857]
+			"<21:53:49> <INFO>		Shanyt-ArgentDawn	3.3.0	nil", -- [1858]
+			"<21:53:49> <DEBUG>		ActivateSkin	bfa", -- [1859]
+			"<21:54:04> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1860]
+			"<21:54:04> <INFO>		UpdatePlayersData()", -- [1861]
+			"<21:54:04> <INFO>		Player relog...", -- [1862]
+			"<21:54:07> <DEBUG>		GetPlayersGuildRank()", -- [1863]
+			"<21:54:07> <DEBUG>		GetPlayersGuildRank()", -- [1864]
+			"<21:54:07> <DEBUG>		Found Guild Rank: Thuerge", -- [1865]
+			"<21:54:17> <DEBUG>		GetML()", -- [1866]
+			"<21:59:45> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1867]
+			"<21:59:45> <INFO>		UpdatePlayersData()", -- [1868]
+			"<21:59:54> <DEBUG>		GetML()", -- [1869]
+			"<22:01:07> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1870]
+			"<22:01:07> <INFO>		UpdatePlayersData()", -- [1871]
+			"<22:01:15> <DEBUG>		GetML()", -- [1872]
+			"<22:01:54> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1873]
+			"<22:01:54> <INFO>		UpdatePlayersData()", -- [1874]
+			"<22:02:02> <DEBUG>		GetML()", -- [1875]
+			"<22:03:27> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1876]
+			"<22:03:27> <INFO>		UpdatePlayersData()", -- [1877]
+			"<22:03:37> <DEBUG>		GetML()", -- [1878]
+			"<22:03:48> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1879]
+			"<22:03:48> <INFO>		UpdatePlayersData()", -- [1880]
+			"<22:03:58> <DEBUG>		GetML()", -- [1881]
+			"<22:04:22> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1882]
+			"<22:04:22> <INFO>		UpdatePlayersData()", -- [1883]
+			"<22:04:32> <DEBUG>		GetML()", -- [1884]
+			"<22:04:39> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1885]
+			"<22:04:39> <INFO>		UpdatePlayersData()", -- [1886]
+			"<22:04:47> <DEBUG>		GetML()", -- [1887]
+			"<22:06:15> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1888]
+			"<22:06:15> <INFO>		UpdatePlayersData()", -- [1889]
+			"<22:06:25> <DEBUG>		GetML()", -- [1890]
+			"<22:06:38> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1891]
+			"<22:06:38> <INFO>		UpdatePlayersData()", -- [1892]
+			"<22:06:48> <DEBUG>		GetML()", -- [1893]
+			"<22:07:12> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1894]
+			"<22:07:12> <INFO>		UpdatePlayersData()", -- [1895]
+			"<22:07:22> <DEBUG>		GetML()", -- [1896]
+			"<22:08:47> <DEBUG>		Event:	LOOT_READY	true", -- [1897]
+			"<22:08:48> <DEBUG>		Event:	LOOT_READY	true", -- [1898]
+			"<22:11:10> <DEBUG>		Event:	LOOT_READY	true", -- [1899]
+			"<22:11:10> <DEBUG>		Event:	LOOT_READY	true", -- [1900]
+			"<22:15:44> <DEBUG>		Event:	LOOT_READY	true", -- [1901]
+			"<22:15:45> <DEBUG>		Event:	LOOT_READY	true", -- [1902]
+			"<22:20:12> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1903]
+			"<22:20:12> <INFO>		UpdatePlayersData()", -- [1904]
+			"<22:20:20> <DEBUG>		GetML()", -- [1905]
+			"<22:26:16> <DEBUG>		Event:	LOOT_READY	true", -- [1906]
+			"<22:26:16> <DEBUG>		Event:	LOOT_READY	true", -- [1907]
+			"06/15/22", -- [1908]
+			"<22:26:58> <INFO>		Logged In", -- [1909]
+			"<22:26:58> [ML]<INFO>		Init", -- [1910]
+			"<22:26:58> <INFO>		RCLootCouncil	TradeUI enabled", -- [1911]
+			"<22:27:12> <INFO>		Shanyt-ArgentDawn	3.3.0	nil", -- [1912]
+			"<22:27:12> <DEBUG>		ActivateSkin	bfa", -- [1913]
+			"<22:27:25> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	true", -- [1914]
+			"<22:27:25> <INFO>		UpdatePlayersData()", -- [1915]
+			"<22:27:25> <INFO>		Player relog...", -- [1916]
+			"<22:27:32> <DEBUG>		GetPlayersGuildRank()", -- [1917]
+			"<22:27:32> <DEBUG>		Found Guild Rank: Thuerge", -- [1918]
+			"<22:27:37> <DEBUG>		GetML()", -- [1919]
+			"<22:27:40> <Comm>		^1^Sv^T^N1^S3.3.0^t^^	GUILD	Shanyt-ArgentDawn", -- [1920]
+			"<22:29:31> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1921]
+			"<22:29:31> <INFO>		UpdatePlayersData()", -- [1922]
+			"<22:29:42> <DEBUG>		GetML()", -- [1923]
+			"06/15/22", -- [1924]
+			"<22:48:46> <INFO>		Logged In", -- [1925]
+			"<22:48:46> [ML]<INFO>		Init", -- [1926]
+			"<22:48:46> <INFO>		RCLootCouncil	TradeUI enabled", -- [1927]
+			"<22:49:00> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Durlok-BlackDragonflight	Player-96-0CBEA15E", -- [1928]
+			"<22:49:00> <INFO>		Durlok-BlackDragonflight	3.3.0	nil", -- [1929]
+			"<22:49:00> <DEBUG>		ActivateSkin	bfa", -- [1930]
+			"<22:49:12> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1931]
+			"<22:49:12> <INFO>		UpdatePlayersData()", -- [1932]
+			"<22:49:12> <INFO>		Player relog...", -- [1933]
+			"<22:49:22> <DEBUG>		GetML()", -- [1934]
+			"06/15/22", -- [1935]
+			"<22:51:07> <INFO>		Logged In", -- [1936]
+			"<22:51:07> [ML]<INFO>		Init", -- [1937]
+			"<22:51:07> <INFO>		RCLootCouncil	TradeUI enabled", -- [1938]
+			"<22:51:24> <INFO>		Avisar-Dalaran	3.3.0	nil", -- [1939]
+			"<22:51:24> <DEBUG>		ActivateSkin	bfa", -- [1940]
+			"<22:51:38> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1941]
+			"<22:51:38> <INFO>		UpdatePlayersData()", -- [1942]
+			"<22:51:38> <INFO>		Player relog...", -- [1943]
+			"<22:51:48> <DEBUG>		GetML()", -- [1944]
+			"06/15/22", -- [1945]
+			"<23:05:12> <INFO>		Logged In", -- [1946]
+			"<23:05:12> [ML]<INFO>		Init", -- [1947]
+			"<23:05:12> <INFO>		RCLootCouncil	TradeUI enabled", -- [1948]
+			"<23:05:27> <INFO>		Zulbathal-Zul'jin	3.3.0	nil", -- [1949]
+			"<23:05:27> <DEBUG>		ActivateSkin	bfa", -- [1950]
+			"<23:05:41> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1951]
+			"<23:05:41> <INFO>		UpdatePlayersData()", -- [1952]
+			"<23:05:41> <INFO>		Player relog...", -- [1953]
+			"<23:05:52> <DEBUG>		GetML()", -- [1954]
+			"06/15/22", -- [1955]
+			"<23:13:34> <INFO>		Logged In", -- [1956]
+			"<23:13:34> [ML]<INFO>		Init", -- [1957]
+			"<23:13:34> <INFO>		RCLootCouncil	TradeUI enabled", -- [1958]
+			"<23:13:53> <INFO>		Valmagus-Zul'jin	3.3.0	nil", -- [1959]
+			"<23:13:53> <DEBUG>		ActivateSkin	bfa", -- [1960]
+			"<23:14:07> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1961]
+			"<23:14:07> <INFO>		UpdatePlayersData()", -- [1962]
+			"<23:14:07> <INFO>		Player relog...", -- [1963]
+			"<23:14:17> <DEBUG>		GetML()", -- [1964]
+			"06/15/22", -- [1965]
+			"<23:16:05> <INFO>		Logged In", -- [1966]
+			"<23:16:05> [ML]<INFO>		Init", -- [1967]
+			"<23:16:05> <INFO>		RCLootCouncil	TradeUI enabled", -- [1968]
+			"<23:16:25> <INFO>		Alatra-Zul'jin	3.3.0	nil", -- [1969]
+			"<23:16:25> <DEBUG>		ActivateSkin	bfa", -- [1970]
+			"<23:16:40> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1971]
+			"<23:16:40> <INFO>		UpdatePlayersData()", -- [1972]
+			"<23:16:40> <INFO>		Player relog...", -- [1973]
+			"<23:16:50> <DEBUG>		GetML()", -- [1974]
+			"<23:19:10> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1975]
+			"<23:19:10> <INFO>		UpdatePlayersData()", -- [1976]
+			"<23:19:12> <DEBUG>		GetML()", -- [1977]
+			"06/15/22", -- [1978]
+			"<23:22:49> <INFO>		Logged In", -- [1979]
+			"<23:22:49> [ML]<INFO>		Init", -- [1980]
+			"<23:22:49> <INFO>		RCLootCouncil	TradeUI enabled", -- [1981]
+			"<23:23:04> <INFO>		Zulbathal-Zul'jin	3.3.0	nil", -- [1982]
+			"<23:23:04> <DEBUG>		ActivateSkin	bfa", -- [1983]
+			"<23:23:18> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1984]
+			"<23:23:18> <INFO>		UpdatePlayersData()", -- [1985]
+			"<23:23:18> <INFO>		Player relog...", -- [1986]
+			"<23:23:28> <DEBUG>		GetML()", -- [1987]
+			"06/15/22", -- [1988]
+			"<23:27:30> <INFO>		Logged In", -- [1989]
+			"<23:27:30> [ML]<INFO>		Init", -- [1990]
+			"<23:27:30> <INFO>		RCLootCouncil	TradeUI enabled", -- [1991]
+			"<23:27:53> <INFO>		Shanyt-ArgentDawn	3.3.0	nil", -- [1992]
+			"<23:27:53> <DEBUG>		ActivateSkin	bfa", -- [1993]
+			"<23:28:08> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1994]
+			"<23:28:08> <INFO>		UpdatePlayersData()", -- [1995]
+			"<23:28:08> <INFO>		Player relog...", -- [1996]
+			"<23:28:22> <DEBUG>		GetPlayersGuildRank()", -- [1997]
+			"<23:28:22> <DEBUG>		GetPlayersGuildRank()", -- [1998]
+			"<23:28:22> <DEBUG>		Found Guild Rank: Thuerge", -- [1999]
+			"<23:28:30> <DEBUG>		GetML()", -- [2000]
 		},
-		["locale"] = "enUS",
-		["version"] = "3.3.0",
 		["oldVersion"] = "3.2.1",
 		["regionID"] = 1,
+		["locale"] = "enUS",
+		["version"] = "3.3.0",
 		["cache"] = {
 			["player"] = {
 				["Player-11-0E2A3EDB"] = {
@@ -2132,7 +2176,7 @@ RCLootCouncilDB = {
 					["name"] = "Avisar-Dalaran",
 					["guid"] = "Player-3683-0BE4455C",
 					["class"] = "PALADIN",
-					["cache_time"] = 1653965388,
+					["cache_time"] = 1655347884,
 					["realm"] = "Dalaran",
 				},
 				["Player-1425-0ADD9236"] = {
@@ -2503,7 +2547,7 @@ RCLootCouncilDB = {
 					["name"] = "Zulbathal-Zul'jin",
 					["guid"] = "Player-61-0CA8EB69",
 					["class"] = "DRUID",
-					["cache_time"] = 1653970190,
+					["cache_time"] = 1655349784,
 					["realm"] = "Zul'jin",
 				},
 				["Player-96-0CC10407"] = {
@@ -2534,19 +2578,31 @@ RCLootCouncilDB = {
 					["cache_time"] = 1651546773,
 					["realm"] = "Thrall",
 				},
-				["Player-61-0EB84EA0"] = {
-					["name"] = "Valmagus-Zul'jin",
-					["guid"] = "Player-61-0EB84EA0",
-					["class"] = "PALADIN",
-					["cache_time"] = 1653965517,
+				["Player-61-0EBAD280"] = {
+					["name"] = "Alatra-Zul'jin",
+					["guid"] = "Player-61-0EBAD280",
+					["class"] = "HUNTER",
+					["cache_time"] = 1655349385,
 					["realm"] = "Zul'jin",
 				},
-				["Player-151-08E7289A"] = {
-					["name"] = "Palmeroelia-Uther",
-					["guid"] = "Player-151-08E7289A",
-					["class"] = "DRUID",
-					["cache_time"] = 1646479721,
-					["realm"] = "Uther",
+				["Player-3683-0CB6231E"] = {
+					["ilvl"] = 128.4375,
+					["guid"] = "Player-3683-0CB6231E",
+					["class"] = "SHAMAN",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1653803900,
+					["realm"] = "Dalaran",
+					["name"] = "Varlouris-Dalaran",
+					["specID"] = 263,
+					["enchantingLvl"] = 0,
+					["rank"] = "Unguilded",
+				},
+				["Player-3675-079E7C51"] = {
+					["name"] = "Xhilvanas-MoonGuard",
+					["guid"] = "Player-3675-079E7C51",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1637137074,
+					["realm"] = "MoonGuard",
 				},
 				["Player-57-0CCA8BA0"] = {
 					["name"] = "Felpenny-Illidan",
@@ -2569,12 +2625,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605058753,
 					["realm"] = "Ravencrest",
 				},
-				["Player-71-0E37B010"] = {
-					["name"] = "Naufrago-Undermine",
-					["guid"] = "Player-71-0E37B010",
-					["class"] = "DRUID",
-					["cache_time"] = 1653007252,
-					["realm"] = "Undermine",
+				["Player-1427-076E7426"] = {
+					["name"] = "Requiemm-Ragnaros",
+					["guid"] = "Player-1427-076E7426",
+					["class"] = "PRIEST",
+					["cache_time"] = 1645168417,
+					["realm"] = "Ragnaros",
 				},
 				["Player-1175-0D89818C"] = {
 					["name"] = "Slanken-Gnomeregan",
@@ -2604,33 +2660,33 @@ RCLootCouncilDB = {
 					["cache_time"] = 1652493109,
 					["realm"] = "Skullcrusher",
 				},
-				["Player-1175-0CB5A0D6"] = {
-					["name"] = "Furyfortwo-Malfurion",
-					["guid"] = "Player-1175-0CB5A0D6",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1651547807,
-					["realm"] = "Malfurion",
+				["Player-3726-0BDFB652"] = {
+					["name"] = "Shelah-Khaz'goroth",
+					["guid"] = "Player-3726-0BDFB652",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1605424192,
+					["realm"] = "Khaz'goroth",
 				},
-				["Player-1171-07B982FB"] = {
-					["name"] = "Aryatha-WyrmrestAccord",
-					["guid"] = "Player-1171-07B982FB",
-					["class"] = "PRIEST",
-					["cache_time"] = 1652493102,
-					["realm"] = "WyrmrestAccord",
+				["Player-1168-09FCF163"] = {
+					["name"] = "Crazycam-Frostmane",
+					["guid"] = "Player-1168-09FCF163",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1638111681,
+					["realm"] = "Frostmane",
 				},
-				["Player-61-0B1B8B19"] = {
-					["name"] = "Vitapally-Zul'jin",
-					["guid"] = "Player-61-0B1B8B19",
-					["class"] = "PALADIN",
-					["cache_time"] = 1651270935,
-					["realm"] = "Zul'jin",
+				["Player-57-0D347122"] = {
+					["name"] = "Bonegamble-Illidan",
+					["guid"] = "Player-57-0D347122",
+					["class"] = "ROGUE",
+					["cache_time"] = 1644648584,
+					["realm"] = "Illidan",
 				},
-				["Player-1428-0915848B"] = {
-					["name"] = "Andarin-Quel'Thalas",
-					["guid"] = "Player-1428-0915848B",
-					["class"] = "MONK",
-					["cache_time"] = 1650503063,
-					["realm"] = "Quel'Thalas",
+				["Player-163-0B1A7ED5"] = {
+					["name"] = "Foexonexfoe-Lightninghoof",
+					["guid"] = "Player-163-0B1A7ED5",
+					["class"] = "ROGUE",
+					["cache_time"] = 1637460321,
+					["realm"] = "Lightninghoof",
 				},
 				["Player-1428-0A2D5217"] = {
 					["name"] = "Lightcors-Quel'Thalas",
@@ -2639,12 +2695,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1604874907,
 					["realm"] = "Quel'Thalas",
 				},
-				["Player-67-0DBC2E9B"] = {
-					["name"] = "Frankyice-Cho'gall",
-					["guid"] = "Player-67-0DBC2E9B",
-					["class"] = "PRIEST",
-					["cache_time"] = 1650500249,
-					["realm"] = "Cho'gall",
+				["Player-114-08D301B8"] = {
+					["name"] = "Beaujob-Dragonblight",
+					["guid"] = "Player-114-08D301B8",
+					["class"] = "HUNTER",
+					["cache_time"] = 1604700190,
+					["realm"] = "Dragonblight",
 				},
 				["Player-69-0D1E083E"] = {
 					["name"] = "Quesadiazy-Arthas",
@@ -2657,17 +2713,17 @@ RCLootCouncilDB = {
 					["role"] = "DAMAGER",
 					["name"] = "Joseishi-Ragnaros",
 					["guid"] = "Player-1427-0D9EAC58",
-					["rank"] = "Member",
+					["realm"] = "Ragnaros",
 					["class"] = "MONK",
 					["cache_time"] = 1645168619,
-					["realm"] = "Ragnaros",
+					["rank"] = "Member",
 				},
-				["Player-163-0AA06887"] = {
-					["name"] = "Bountyhunter-TwistingNether",
-					["guid"] = "Player-163-0AA06887",
-					["class"] = "HUNTER",
-					["cache_time"] = 1637292012,
-					["realm"] = "TwistingNether",
+				["Player-163-07EE0763"] = {
+					["name"] = "Drinkycrow-Lightninghoof",
+					["guid"] = "Player-163-07EE0763",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1605015590,
+					["realm"] = "Lightninghoof",
 				},
 				["Player-100-016B5029"] = {
 					["name"] = "Rhodaria-EarthenRing",
@@ -2676,12 +2732,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1637293108,
 					["realm"] = "EarthenRing",
 				},
-				["Player-3676-0DA0924F"] = {
-					["name"] = "Varose-Area52",
-					["guid"] = "Player-3676-0DA0924F",
-					["class"] = "MAGE",
-					["cache_time"] = 1650500431,
-					["realm"] = "Area52",
+				["Player-3678-099FCF5E"] = {
+					["name"] = "Darquis-Thrall",
+					["guid"] = "Player-3678-099FCF5E",
+					["class"] = "HUNTER",
+					["cache_time"] = 1637137182,
+					["realm"] = "Thrall",
 				},
 				["Player-3676-0AD53F73"] = {
 					["name"] = "Tozal-Area52",
@@ -2704,19 +2760,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1604700787,
 					["realm"] = "Vek'nilash",
 				},
-				["Player-73-0CC81FDC"] = {
-					["name"] = "Saxen-BleedingHollow",
-					["guid"] = "Player-73-0CC81FDC",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1605478962,
-					["realm"] = "BleedingHollow",
+				["Player-3676-0DA0924F"] = {
+					["name"] = "Varose-Area52",
+					["guid"] = "Player-3676-0DA0924F",
+					["class"] = "MAGE",
+					["cache_time"] = 1650500431,
+					["realm"] = "Area52",
 				},
-				["Player-11-0DF20FF0"] = {
-					["name"] = "Barnardo-Tichondrius",
-					["guid"] = "Player-11-0DF20FF0",
-					["class"] = "PALADIN",
-					["cache_time"] = 1644801415,
-					["realm"] = "Tichondrius",
+				["Player-1426-0AE01960"] = {
+					["name"] = "Lyssanoria-AeriePeak",
+					["guid"] = "Player-1426-0AE01960",
+					["class"] = "DRUID",
+					["cache_time"] = 1605285527,
+					["realm"] = "AeriePeak",
 				},
 				["Player-4-09D6EABB"] = {
 					["name"] = "Salsrath-Kilrogg",
@@ -2739,26 +2795,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605676860,
 					["realm"] = "Medivh",
 				},
-				["Player-75-0A33732A"] = {
-					["name"] = "Tyran-ArgentDawn",
-					["guid"] = "Player-75-0A33732A",
-					["class"] = "MAGE",
-					["cache_time"] = 1623596411,
-					["realm"] = "",
+				["Player-160-0B17AED5"] = {
+					["name"] = "Lodkavalier-Azuremyst",
+					["guid"] = "Player-160-0B17AED5",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1605660343,
+					["realm"] = "Azuremyst",
 				},
-				["Player-73-0DF508EF"] = {
-					["name"] = "Ineloras-BleedingHollow",
-					["guid"] = "Player-73-0DF508EF",
+				["Player-3661-084E3FCA"] = {
+					["name"] = "Badazzme-Hyjal",
+					["guid"] = "Player-3661-084E3FCA",
 					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1604874543,
-					["realm"] = "BleedingHollow",
+					["cache_time"] = 1637282866,
+					["realm"] = "Hyjal",
 				},
-				["Player-1185-087ADE86"] = {
-					["name"] = "Gulf-Quel'dorei",
-					["guid"] = "Player-1185-087ADE86",
+				["Player-1168-069744DF"] = {
+					["name"] = "Bluecoder-Cenarius",
+					["guid"] = "Player-1168-069744DF",
 					["class"] = "PRIEST",
-					["cache_time"] = 1644648309,
-					["realm"] = "Quel'dorei",
+					["cache_time"] = 1605285204,
+					["realm"] = "Cenarius",
 				},
 				["Player-3683-0C12FF2D"] = {
 					["name"] = "Noäh-Dalaran",
@@ -2767,12 +2823,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1604875537,
 					["realm"] = "Dalaran",
 				},
-				["Player-118-00DC8ECC"] = {
-					["name"] = "Drayk-Feathermoon",
-					["guid"] = "Player-118-00DC8ECC",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1637283490,
-					["realm"] = "Feathermoon",
+				["Player-1185-087ADE86"] = {
+					["name"] = "Gulf-Quel'dorei",
+					["guid"] = "Player-1185-087ADE86",
+					["class"] = "PRIEST",
+					["cache_time"] = 1644648309,
+					["realm"] = "Quel'dorei",
+				},
+				["Player-75-0B7FB5EB"] = {
+					["name"] = "Lisperwind-TheScryers",
+					["guid"] = "Player-75-0B7FB5EB",
+					["class"] = "MAGE",
+					["cache_time"] = 1605660567,
+					["realm"] = "TheScryers",
 				},
 				["Player-162-06AEDAF0"] = {
 					["name"] = "Vage-EmeraldDream",
@@ -2780,13 +2843,6 @@ RCLootCouncilDB = {
 					["class"] = "WARRIOR",
 					["cache_time"] = 1605290630,
 					["realm"] = "EmeraldDream",
-				},
-				["Player-1070-08CBE548"] = {
-					["name"] = "Sapper-Terokkar",
-					["guid"] = "Player-1070-08CBE548",
-					["class"] = "HUNTER",
-					["cache_time"] = 1650503226,
-					["realm"] = "Terokkar",
 				},
 				["Player-9-0DCC3930"] = {
 					["name"] = "Dominija-Kil'jaeden",
@@ -2816,12 +2872,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1644648586,
 					["realm"] = "Dragonmaw",
 				},
-				["Player-1175-0D8CD76A"] = {
-					["name"] = "Engel-Gnomeregan",
-					["guid"] = "Player-1175-0D8CD76A",
-					["class"] = "PRIEST",
-					["cache_time"] = 1604700946,
-					["realm"] = "Gnomeregan",
+				["Player-3208-0A438E6C"] = {
+					["name"] = "Starlightt-TolBarad",
+					["guid"] = "Player-3208-0A438E6C",
+					["class"] = "DRUID",
+					["cache_time"] = 1604877041,
+					["realm"] = "TolBarad",
 				},
 				["Player-61-0E7E1DFE"] = {
 					["name"] = "Laymonan-Zul'jin",
@@ -2842,12 +2898,12 @@ RCLootCouncilDB = {
 					["guid"] = "Player-75-058380E2",
 					["class"] = "WARRIOR",
 					["role"] = "DAMAGER",
-					["cache_time"] = 1653964968,
-					["rank"] = "Thuerge",
+					["cache_time"] = 1655350073,
+					["realm"] = "Argent Dawn",
 					["name"] = "Shanyt-ArgentDawn",
 					["specID"] = 71,
 					["enchantingLvl"] = 0,
-					["realm"] = "Argent Dawn",
+					["rank"] = "Thuerge",
 				},
 				["Player-3721-0BEE5730"] = {
 					["name"] = "Amonthree-Nagrand",
@@ -2863,12 +2919,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1637291844,
 					["realm"] = "Feathermoon",
 				},
-				["Player-60-0DF162C1"] = {
-					["name"] = "Fhaita-Stormrage",
-					["guid"] = "Player-60-0DF162C1",
-					["class"] = "PRIEST",
-					["cache_time"] = 1605291376,
-					["realm"] = "Stormrage",
+				["Player-61-0E7EA216"] = {
+					["name"] = "Charbeatic-Zul'jin",
+					["guid"] = "Player-61-0E7EA216",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1633817191,
+					["realm"] = "Zul'jin",
 				},
 				["Player-3683-0C0E386E"] = {
 					["name"] = "Illingrath-Dalaran",
@@ -2891,12 +2947,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1623090360,
 					["realm"] = "",
 				},
-				["Player-1171-0A347FCC"] = {
-					["name"] = "Cassy-WyrmrestAccord",
-					["guid"] = "Player-1171-0A347FCC",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1605059571,
-					["realm"] = "WyrmrestAccord",
+				["Player-76-0A40D7E1"] = {
+					["name"] = "Kittywfleas-Sargeras",
+					["guid"] = "Player-76-0A40D7E1",
+					["class"] = "DRUID",
+					["cache_time"] = 1605291587,
+					["realm"] = "Sargeras",
 				},
 				["Player-1136-08908D6E"] = {
 					["name"] = "Kashta-Garrosh",
@@ -2905,12 +2961,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605213336,
 					["realm"] = "Garrosh",
 				},
-				["Player-84-001F04E3"] = {
-					["name"] = "Hownow-Dragonmaw",
-					["guid"] = "Player-84-001F04E3",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1604700977,
-					["realm"] = "Dragonmaw",
+				["Player-1171-0A347FCC"] = {
+					["name"] = "Cassy-WyrmrestAccord",
+					["guid"] = "Player-1171-0A347FCC",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1605059571,
+					["realm"] = "WyrmrestAccord",
 				},
 				["Player-3693-0CEED0C4"] = {
 					["name"] = "Talonius-Kel'Thuzad",
@@ -2933,12 +2989,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1623093728,
 					["realm"] = "",
 				},
-				["Player-1427-0DA4A1A1"] = {
-					["name"] = "Medalas-Ragnaros",
-					["guid"] = "Player-1427-0DA4A1A1",
-					["class"] = "MAGE",
-					["cache_time"] = 1650503038,
-					["realm"] = "Ragnaros",
+				["Player-75-0A3EC0ED"] = {
+					["name"] = "Shaekhan-ArgentDawn",
+					["guid"] = "Player-75-0A3EC0ED",
+					["class"] = "MONK",
+					["cache_time"] = 1606106807,
+					["realm"] = "ArgentDawn",
 				},
 				["Player-1185-0D69EB5E"] = {
 					["name"] = "Samsquamch-Boulderfist",
@@ -2982,19 +3038,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1637206618,
 					["realm"] = "SilverHand",
 				},
-				["Player-11-0BB8771F"] = {
-					["name"] = "Koepphunt-Tichondrius",
-					["guid"] = "Player-11-0BB8771F",
-					["class"] = "HUNTER",
-					["cache_time"] = 1604699132,
-					["realm"] = "Tichondrius",
-				},
-				["Player-3209-08503025"] = {
-					["name"] = "Kadrorg-Azralon",
-					["guid"] = "Player-3209-08503025",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1651271045,
-					["realm"] = "Azralon",
+				["Player-3723-0BE33132"] = {
+					["name"] = "Darkpup-Barthilas",
+					["guid"] = "Player-3723-0BE33132",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1605478421,
+					["realm"] = "Barthilas",
 				},
 				["Player-3683-0B9BAB24"] = {
 					["name"] = "Thorinbane-Dalaran",
@@ -3003,6 +3052,13 @@ RCLootCouncilDB = {
 					["cache_time"] = 1648345032,
 					["realm"] = "Dalaran",
 				},
+				["Player-3209-08503025"] = {
+					["name"] = "Kadrorg-Azralon",
+					["guid"] = "Player-3209-08503025",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1651271045,
+					["realm"] = "Azralon",
+				},
 				["Player-3683-0BD93453"] = {
 					["name"] = "Scarletglove-Dalaran",
 					["guid"] = "Player-3683-0BD93453",
@@ -3010,12 +3066,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1606323520,
 					["realm"] = "Dalaran",
 				},
-				["Player-61-0C01CBBE"] = {
-					["name"] = "Shoesalesman-Zul'jin",
-					["guid"] = "Player-61-0C01CBBE",
+				["Player-11-0D995E85"] = {
+					["name"] = "Huker-Tichondrius",
+					["guid"] = "Player-11-0D995E85",
 					["class"] = "HUNTER",
-					["cache_time"] = 1644903523,
-					["realm"] = "Zul'jin",
+					["cache_time"] = 1651033194,
+					["realm"] = "Tichondrius",
 				},
 				["Player-115-03E8863F"] = {
 					["name"] = "Bahummbug-Draenor",
@@ -3045,26 +3101,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605212276,
 					["realm"] = "Illidan",
 				},
-				["Player-96-0CBEA15E"] = {
-					["name"] = "Durlok-BlackDragonflight",
-					["guid"] = "Player-96-0CBEA15E",
-					["class"] = "DRUID",
-					["cache_time"] = 1653684642,
-					["realm"] = "Black Dragonflight",
+				["Player-3678-07B7087C"] = {
+					["name"] = "Cwaerslainte-Thrall",
+					["guid"] = "Player-3678-07B7087C",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1646479492,
+					["realm"] = "Thrall",
 				},
-				["Player-11-0D995E85"] = {
-					["name"] = "Huker-Tichondrius",
-					["guid"] = "Player-11-0D995E85",
+				["Player-61-0C01CBBE"] = {
+					["name"] = "Shoesalesman-Zul'jin",
+					["guid"] = "Player-61-0C01CBBE",
 					["class"] = "HUNTER",
-					["cache_time"] = 1651033194,
-					["realm"] = "Tichondrius",
-				},
-				["Player-3683-0B9BC2E8"] = {
-					["name"] = "Rotclaugh-Dalaran",
-					["guid"] = "Player-3683-0B9BC2E8",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1648343669,
-					["realm"] = "Dalaran",
+					["cache_time"] = 1644903523,
+					["realm"] = "Zul'jin",
 				},
 				["Player-1427-04360738"] = {
 					["name"] = "Afkautoshot-Ragnaros",
@@ -3072,6 +3121,13 @@ RCLootCouncilDB = {
 					["class"] = "HUNTER",
 					["cache_time"] = 1637396416,
 					["realm"] = "Ragnaros",
+				},
+				["Player-96-0CBEA15E"] = {
+					["name"] = "Durlok-BlackDragonflight",
+					["guid"] = "Player-96-0CBEA15E",
+					["class"] = "DRUID",
+					["cache_time"] = 1653684642,
+					["realm"] = "Black Dragonflight",
 				},
 				["Player-61-0E7E9545"] = {
 					["name"] = "Jasmoney-Zul'jin",
@@ -3087,12 +3143,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1648402087,
 					["realm"] = "Dalaran",
 				},
-				["Player-3678-07B7087C"] = {
-					["name"] = "Cwaerslainte-Thrall",
-					["guid"] = "Player-3678-07B7087C",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1646479492,
-					["realm"] = "Thrall",
+				["Player-3683-0B9BC2E8"] = {
+					["name"] = "Rotclaugh-Dalaran",
+					["guid"] = "Player-3683-0B9BC2E8",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1648343669,
+					["realm"] = "Dalaran",
 				},
 				["Player-155-067CCD01"] = {
 					["name"] = "Hoovehearted-Executus",
@@ -3122,19 +3178,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1623096804,
 					["realm"] = "",
 				},
-				["Player-3723-0BE33132"] = {
-					["name"] = "Darkpup-Barthilas",
-					["guid"] = "Player-3723-0BE33132",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1605478421,
-					["realm"] = "Barthilas",
+				["Player-1427-0DA4A1A1"] = {
+					["name"] = "Medalas-Ragnaros",
+					["guid"] = "Player-1427-0DA4A1A1",
+					["class"] = "MAGE",
+					["cache_time"] = 1650503038,
+					["realm"] = "Ragnaros",
 				},
-				["Player-75-0A3EC0ED"] = {
-					["name"] = "Shaekhan-ArgentDawn",
-					["guid"] = "Player-75-0A3EC0ED",
-					["class"] = "MONK",
-					["cache_time"] = 1606106807,
-					["realm"] = "ArgentDawn",
+				["Player-11-0BB8771F"] = {
+					["name"] = "Koepphunt-Tichondrius",
+					["guid"] = "Player-11-0BB8771F",
+					["class"] = "HUNTER",
+					["cache_time"] = 1604699132,
+					["realm"] = "Tichondrius",
 				},
 				["Player-3684-0D9AC65F"] = {
 					["name"] = "Wizzytest-Mal'Ganis",
@@ -3143,12 +3199,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1646443722,
 					["realm"] = "Mal'Ganis",
 				},
-				["Player-76-0A40D7E1"] = {
-					["name"] = "Kittywfleas-Sargeras",
-					["guid"] = "Player-76-0A40D7E1",
-					["class"] = "DRUID",
-					["cache_time"] = 1605291587,
-					["realm"] = "Sargeras",
+				["Player-84-001F04E3"] = {
+					["name"] = "Hownow-Dragonmaw",
+					["guid"] = "Player-84-001F04E3",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1604700977,
+					["realm"] = "Dragonmaw",
 				},
 				["Player-1175-0E10C601"] = {
 					["name"] = "Sinpie-Moonrunner",
@@ -3157,19 +3213,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605292309,
 					["realm"] = "Moonrunner",
 				},
-				["Player-61-0E7EA216"] = {
-					["name"] = "Charbeatic-Zul'jin",
-					["guid"] = "Player-61-0E7EA216",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1633817191,
-					["realm"] = "Zul'jin",
+				["Player-60-0DF162C1"] = {
+					["name"] = "Fhaita-Stormrage",
+					["guid"] = "Player-60-0DF162C1",
+					["class"] = "PRIEST",
+					["cache_time"] = 1605291376,
+					["realm"] = "Stormrage",
 				},
-				["Player-3208-0A438E6C"] = {
-					["name"] = "Starlightt-TolBarad",
-					["guid"] = "Player-3208-0A438E6C",
-					["class"] = "DRUID",
-					["cache_time"] = 1604877041,
-					["realm"] = "TolBarad",
+				["Player-1175-0D8CD76A"] = {
+					["name"] = "Engel-Gnomeregan",
+					["guid"] = "Player-1175-0D8CD76A",
+					["class"] = "PRIEST",
+					["cache_time"] = 1604700946,
+					["realm"] = "Gnomeregan",
 				},
 				["Player-162-08013801"] = {
 					["name"] = "Mushmoo-EmeraldDream",
@@ -3185,12 +3241,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1606246434,
 					["realm"] = "Area52",
 				},
-				["Player-75-0B7FB5EB"] = {
-					["name"] = "Lisperwind-TheScryers",
-					["guid"] = "Player-75-0B7FB5EB",
-					["class"] = "MAGE",
-					["cache_time"] = 1605660567,
-					["realm"] = "TheScryers",
+				["Player-1070-08CBE548"] = {
+					["name"] = "Sapper-Terokkar",
+					["guid"] = "Player-1070-08CBE548",
+					["class"] = "HUNTER",
+					["cache_time"] = 1650503226,
+					["realm"] = "Terokkar",
 				},
 				["Player-1129-0AEB7F97"] = {
 					["name"] = "Baridan-Kargath",
@@ -3199,49 +3255,49 @@ RCLootCouncilDB = {
 					["cache_time"] = 1637460435,
 					["realm"] = "Kargath",
 				},
-				["Player-1168-069744DF"] = {
-					["name"] = "Bluecoder-Cenarius",
-					["guid"] = "Player-1168-069744DF",
-					["class"] = "PRIEST",
-					["cache_time"] = 1605285204,
-					["realm"] = "Cenarius",
+				["Player-118-00DC8ECC"] = {
+					["name"] = "Drayk-Feathermoon",
+					["guid"] = "Player-118-00DC8ECC",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1637283490,
+					["realm"] = "Feathermoon",
 				},
 				["Player-118-062E1619"] = {
 					["role"] = "DAMAGER",
 					["name"] = "Namphir-ScarletCrusade",
 					["guid"] = "Player-118-062E1619",
-					["rank"] = "Unguilded",
+					["realm"] = "ScarletCrusade",
 					["class"] = "WARRIOR",
 					["cache_time"] = 1637137719,
-					["realm"] = "ScarletCrusade",
+					["rank"] = "Unguilded",
 				},
-				["Player-3661-084E3FCA"] = {
-					["name"] = "Badazzme-Hyjal",
-					["guid"] = "Player-3661-084E3FCA",
+				["Player-73-0DF508EF"] = {
+					["name"] = "Ineloras-BleedingHollow",
+					["guid"] = "Player-73-0DF508EF",
 					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1637282866,
-					["realm"] = "Hyjal",
+					["cache_time"] = 1604874543,
+					["realm"] = "BleedingHollow",
 				},
-				["Player-160-0B17AED5"] = {
-					["name"] = "Lodkavalier-Azuremyst",
-					["guid"] = "Player-160-0B17AED5",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1605660343,
-					["realm"] = "Azuremyst",
+				["Player-75-0A33732A"] = {
+					["name"] = "Tyran-ArgentDawn",
+					["guid"] = "Player-75-0A33732A",
+					["class"] = "MAGE",
+					["cache_time"] = 1623596411,
+					["realm"] = "",
 				},
-				["Player-1426-0AE01960"] = {
-					["name"] = "Lyssanoria-AeriePeak",
-					["guid"] = "Player-1426-0AE01960",
-					["class"] = "DRUID",
-					["cache_time"] = 1605285527,
-					["realm"] = "AeriePeak",
+				["Player-11-0DF20FF0"] = {
+					["name"] = "Barnardo-Tichondrius",
+					["guid"] = "Player-11-0DF20FF0",
+					["class"] = "PALADIN",
+					["cache_time"] = 1644801415,
+					["realm"] = "Tichondrius",
 				},
-				["Player-3678-099FCF5E"] = {
-					["name"] = "Darquis-Thrall",
-					["guid"] = "Player-3678-099FCF5E",
-					["class"] = "HUNTER",
-					["cache_time"] = 1637137182,
-					["realm"] = "Thrall",
+				["Player-73-0CC81FDC"] = {
+					["name"] = "Saxen-BleedingHollow",
+					["guid"] = "Player-73-0CC81FDC",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1605478962,
+					["realm"] = "BleedingHollow",
 				},
 				["Player-163-07ECB002"] = {
 					["name"] = "Aggrivation-Lightninghoof",
@@ -3257,19 +3313,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1650219579,
 					["realm"] = "Azuremyst",
 				},
-				["Player-114-08D301B8"] = {
-					["name"] = "Beaujob-Dragonblight",
-					["guid"] = "Player-114-08D301B8",
+				["Player-163-0AA06887"] = {
+					["name"] = "Bountyhunter-TwistingNether",
+					["guid"] = "Player-163-0AA06887",
 					["class"] = "HUNTER",
-					["cache_time"] = 1604700190,
-					["realm"] = "Dragonblight",
+					["cache_time"] = 1637292012,
+					["realm"] = "TwistingNether",
 				},
-				["Player-163-07EE0763"] = {
-					["name"] = "Drinkycrow-Lightninghoof",
-					["guid"] = "Player-163-07EE0763",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1605015590,
-					["realm"] = "Lightninghoof",
+				["Player-67-0DBC2E9B"] = {
+					["name"] = "Frankyice-Cho'gall",
+					["guid"] = "Player-67-0DBC2E9B",
+					["class"] = "PRIEST",
+					["cache_time"] = 1650500249,
+					["realm"] = "Cho'gall",
 				},
 				["Player-47-001F075B"] = {
 					["name"] = "Murgle-Eitrigg",
@@ -3278,33 +3334,33 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605058082,
 					["realm"] = "Eitrigg",
 				},
-				["Player-163-0B1A7ED5"] = {
-					["name"] = "Foexonexfoe-Lightninghoof",
-					["guid"] = "Player-163-0B1A7ED5",
-					["class"] = "ROGUE",
-					["cache_time"] = 1637460321,
-					["realm"] = "Lightninghoof",
+				["Player-1428-0915848B"] = {
+					["name"] = "Andarin-Quel'Thalas",
+					["guid"] = "Player-1428-0915848B",
+					["class"] = "MONK",
+					["cache_time"] = 1650503063,
+					["realm"] = "Quel'Thalas",
 				},
-				["Player-57-0D347122"] = {
-					["name"] = "Bonegamble-Illidan",
-					["guid"] = "Player-57-0D347122",
-					["class"] = "ROGUE",
-					["cache_time"] = 1644648584,
-					["realm"] = "Illidan",
+				["Player-61-0B1B8B19"] = {
+					["name"] = "Vitapally-Zul'jin",
+					["guid"] = "Player-61-0B1B8B19",
+					["class"] = "PALADIN",
+					["cache_time"] = 1651270935,
+					["realm"] = "Zul'jin",
 				},
-				["Player-1168-09FCF163"] = {
-					["name"] = "Crazycam-Frostmane",
-					["guid"] = "Player-1168-09FCF163",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1638111681,
-					["realm"] = "Frostmane",
+				["Player-1171-07B982FB"] = {
+					["name"] = "Aryatha-WyrmrestAccord",
+					["guid"] = "Player-1171-07B982FB",
+					["class"] = "PRIEST",
+					["cache_time"] = 1652493102,
+					["realm"] = "WyrmrestAccord",
 				},
-				["Player-3726-0BDFB652"] = {
-					["name"] = "Shelah-Khaz'goroth",
-					["guid"] = "Player-3726-0BDFB652",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1605424192,
-					["realm"] = "Khaz'goroth",
+				["Player-1175-0CB5A0D6"] = {
+					["name"] = "Furyfortwo-Malfurion",
+					["guid"] = "Player-1175-0CB5A0D6",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1651547807,
+					["realm"] = "Malfurion",
 				},
 				["Player-3683-0A9B9254"] = {
 					["name"] = "Allostery-Dalaran",
@@ -3313,77 +3369,29 @@ RCLootCouncilDB = {
 					["cache_time"] = 1644991417,
 					["realm"] = "Dalaran",
 				},
-				["Player-1427-076E7426"] = {
-					["name"] = "Requiemm-Ragnaros",
-					["guid"] = "Player-1427-076E7426",
-					["class"] = "PRIEST",
-					["cache_time"] = 1645168417,
-					["realm"] = "Ragnaros",
+				["Player-71-0E37B010"] = {
+					["name"] = "Naufrago-Undermine",
+					["guid"] = "Player-71-0E37B010",
+					["class"] = "DRUID",
+					["cache_time"] = 1653007252,
+					["realm"] = "Undermine",
 				},
-				["Player-3683-0CB6231E"] = {
-					["ilvl"] = 128.4375,
-					["guid"] = "Player-3683-0CB6231E",
-					["class"] = "SHAMAN",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1653803900,
-					["rank"] = "Unguilded",
-					["name"] = "Varlouris-Dalaran",
-					["specID"] = 263,
-					["enchantingLvl"] = 0,
-					["realm"] = "Dalaran",
+				["Player-151-08E7289A"] = {
+					["name"] = "Palmeroelia-Uther",
+					["guid"] = "Player-151-08E7289A",
+					["class"] = "DRUID",
+					["cache_time"] = 1646479721,
+					["realm"] = "Uther",
 				},
-				["Player-3675-079E7C51"] = {
-					["name"] = "Xhilvanas-MoonGuard",
-					["guid"] = "Player-3675-079E7C51",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1637137074,
-					["realm"] = "MoonGuard",
+				["Player-61-0EB84EA0"] = {
+					["name"] = "Valmagus-Zul'jin",
+					["guid"] = "Player-61-0EB84EA0",
+					["class"] = "PALADIN",
+					["cache_time"] = 1655349233,
+					["realm"] = "Zul'jin",
 				},
 			},
 		},
-	},
-	["profileKeys"] = {
-		["Vancard - Zul'jin"] = "Default",
-		["Armaguth - Zul'jin"] = "Default",
-		["Charbeatic - Zul'jin"] = "Default",
-		["Valmagus - Zul'jin"] = "Default",
-		["Shaekhan - Zul'jin"] = "Default",
-		["Shanyt - Zul'jin"] = "Default",
-		["Avisar - Dalaran"] = "Default",
-		["Banuumine - Zul'jin"] = "Default",
-		["Thorinbane - Dalaran"] = "Default",
-		["Shaekhan - Argent Dawn"] = "Default",
-		["Ruffinton - Dalaran"] = "Default",
-		["Malivant - Dalaran"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
-		["Dachas - Zul'jin"] = "Default",
-		["Tyranasticus - Zul'jin"] = "Default",
-		["Illingrath - Dalaran"] = "Default",
-		["Tendralas - Dalaran"] = "Default",
-		["Tyrannithal - Argent Dawn"] = "Default",
-		["Zulbathal - Zul'jin"] = "Default",
-		["Kelvalatar - Dalaran"] = "Default",
-		["Banesmuncy - Zul'jin"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
-		["Shimzo - Zul'jin"] = "Default",
-		["Okona - Zul'jin"] = "Default",
-		["Tinkster - Dalaran"] = "Default",
-		["Jingojaggot - Zul'jin"] = "Default",
-		["Kotalkhan - Zul'jin"] = "Default",
-		["Shanyt - Argent Dawn"] = "Default",
-		["Laymonan - Zul'jin"] = "Default",
-		["Datgore - Zul'jin"] = "Default",
-		["Vadder - Argent Dawn"] = "Default",
-		["Tyran - Argent Dawn"] = "Default",
-		["Serbitechna - Dalaran"] = "Default",
-		["Darnastris - Dalaran"] = "Default",
-		["Rotclaugh - Dalaran"] = "Default",
-		["Fantastiburo - Zul'jin"] = "Default",
-		["Abyronterner - Zul'jin"] = "Default",
-		["Guufnah - Zul'jin"] = "Default",
-		["Jasmoney - Zul'jin"] = "Default",
-		["Brotus - Argent Dawn"] = "Default",
-		["Mandles - Zul'jin"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -3454,61 +3462,36 @@ RCLootCouncilLootDB = {
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Dachas - Zul'jin"] = "Dachas - Zul'jin",
 		["Tyranasticus - Zul'jin"] = "Tyranasticus - Zul'jin",
-		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
 		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
+		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
+		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
-		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
-		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
+		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
-		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
+		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Laymonan - Zul'jin"] = "Laymonan - Zul'jin",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
-		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
+		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
-		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Abyronterner - Zul'jin"] = "Abyronterner - Zul'jin",
-		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
+		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
 		["Jasmoney - Zul'jin"] = "Jasmoney - Zul'jin",
-		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
+		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
 		["Mandles - Zul'jin"] = "Mandles - Zul'jin",
 	},
 	["factionrealm"] = {
 		["Horde - Argent Dawn"] = {
-			["Marcí-Area52"] = {
-				{
-					["mapID"] = 1718,
-					["date"] = "22/09/20",
-					["class"] = "SHAMAN",
-					["iSubClass"] = 3,
-					["groupSize"] = 0,
-					["isAwardReason"] = false,
-					["time"] = "12:17:48",
-					["iClass"] = 4,
-					["id"] = "1600816668-0",
-					["owner"] = "Marcí-Area52",
-					["response"] = "Bonus Loot",
-					["difficultyID"] = 0,
-					["lootWon"] = "|cffa335ee|Hitem:169927::::::::120:263::3:3:4798:1487:4786:::|h[Deepcaller's Clasp]|h|r",
-					["color"] = {
-						1, -- [1]
-						0.8, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["responseID"] = "BONUSROLL",
-					["instance"] = "Nazjatar-",
-					["boss"] = "Unknown",
-				}, -- [1]
-			},
 			["Gënërícnamë-Thrall"] = {
 				{
 					["mapID"] = 1642,
@@ -3524,15 +3507,41 @@ RCLootCouncilLootDB = {
 					["response"] = "Bonus Loot",
 					["difficultyID"] = 0,
 					["lootWon"] = "|cffa335ee|Hitem:164385::::::::120:267::3:5:4798:40:1477:5870:4784:::|h[Desert Nomad's Wrap]|h|r",
+					["boss"] = "Blackhand",
+					["responseID"] = "BONUSROLL",
+					["instance"] = "Zandalar-",
 					["color"] = {
 						1, -- [1]
 						0.8, -- [2]
 						0, -- [3]
 						1, -- [4]
 					},
+				}, -- [1]
+			},
+			["Marcí-Area52"] = {
+				{
+					["mapID"] = 1718,
+					["date"] = "22/09/20",
+					["class"] = "SHAMAN",
+					["iSubClass"] = 3,
+					["groupSize"] = 0,
+					["isAwardReason"] = false,
+					["time"] = "12:17:48",
+					["iClass"] = 4,
+					["id"] = "1600816668-0",
+					["owner"] = "Marcí-Area52",
+					["response"] = "Bonus Loot",
+					["difficultyID"] = 0,
+					["lootWon"] = "|cffa335ee|Hitem:169927::::::::120:263::3:3:4798:1487:4786:::|h[Deepcaller's Clasp]|h|r",
+					["boss"] = "Unknown",
 					["responseID"] = "BONUSROLL",
-					["instance"] = "Zandalar-",
-					["boss"] = "Blackhand",
+					["instance"] = "Nazjatar-",
+					["color"] = {
+						1, -- [1]
+						0.8, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
 				}, -- [1]
 			},
 		},

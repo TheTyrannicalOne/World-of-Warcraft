@@ -4,22 +4,22 @@ RareShareDB = {
 	},
 	["Config"] = {
 		["MapPin"] = true,
-		["CChannel"] = {
-			["CName"] = "General - Nazjatar",
-			["CID"] = 1,
-		},
+		["ChatAnnounce"] = true,
 		["TomTom"] = {
 			["Rares"] = true,
 			["Master"] = true,
 			["Duplicates"] = true,
 		},
+		["CChannel"] = {
+			["CID"] = 1,
+			["CName"] = "General - Vale of Eternal Blossoms",
+		},
+		["OnDeath"] = false,
 		["Sound"] = {
 			["Rares"] = true,
 			["Master"] = true,
 			["Duplicates"] = true,
 		},
-		["OnDeath"] = false,
-		["ChatAnnounce"] = true,
 		["Duplicates"] = true,
 	},
 	["LastAnnounce"] = {

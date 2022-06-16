@@ -1,0 +1,4 @@
+
+ProtoformSynthesisFieldJournalSettings = {
+	["activeTab"] = 1,
+}

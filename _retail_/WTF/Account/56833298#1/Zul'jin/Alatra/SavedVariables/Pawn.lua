@@ -1,0 +1,112 @@
+
+PawnOptions = {
+	["LastVersion"] = 2.0538,
+	["LastPlayerFullName"] = "Alatra-Zul'jin",
+	["AutoSelectScales"] = true,
+	["ItemLevels"] = {
+		{
+			["ID"] = 122246,
+			["Level"] = 58,
+			["Link"] = "|cff00ccff|Hitem:122246::::::::49:254:::1:7920::::::|h[Tarnished Raging Berserker's Helm]|h|r",
+		}, -- [1]
+		{
+			["ID"] = 122663,
+			["Level"] = 58,
+			["Link"] = "|cff00ccff|Hitem:122663::::::::49:254:::1:7920::::::|h[Eternal Amulet of the Redeemed]|h|r",
+		}, -- [2]
+		{
+			["ID"] = 122356,
+			["Level"] = 58,
+			["Link"] = "|cff00ccff|Hitem:122356::::::::49:254:::1:7920::::::|h[Champion Herod's Shoulder]|h|r",
+		}, -- [3]
+		nil, -- [4]
+		{
+			["ID"] = 122379,
+			["Level"] = 58,
+			["Link"] = "|cff00ccff|Hitem:122379::::::::49:254:::1:7920::::::|h[Champion's Deathdealer Breastplate]|h|r",
+		}, -- [5]
+		{
+			["ID"] = 139713,
+			["Level"] = 54,
+			["Link"] = "|cffa335ee|Hitem:139713::::::::47:254::14:2:3385:3384:1:28:633:::::|h[Belt of the Unseen Path]|h|r",
+		}, -- [6]
+		{
+			["ID"] = 122252,
+			["Level"] = 58,
+			["Link"] = "|cff00ccff|Hitem:122252::::::::49:254:::1:7920::::::|h[Tarnished Leggings of Destruction]|h|r",
+		}, -- [7]
+		{
+			["ID"] = 159148,
+			["Level"] = 50,
+			["Link"] = "|cff1eff00|Hitem:159148::::::::44:254::11:1:4790:2:28:189:9:44:::::|h[Torcalin Walkers]|h|r",
+		}, -- [8]
+		{
+			["ID"] = 139714,
+			["Level"] = 50,
+			["Link"] = "|cff0070dd|Hitem:139714::::::::47:254::11:2:3386:3381:1:28:343:::::|h[Wristwraps of the Unseen Path]|h|r",
+		}, -- [9]
+		{
+			["ID"] = 158426,
+			["Level"] = 50,
+			["Link"] = "|cff1eff00|Hitem:158426::::::::45:254::11:1:3631:2:28:189:9:45:::::|h[Torcalin Gauntlets]|h|r",
+		}, -- [10]
+		{
+			["ID"] = 122529,
+			["Level"] = 58,
+			["AlsoFitsIn"] = 12,
+			["Link"] = "|cff00ccff|Hitem:122529::::::::49:254:::1:7920::::::|h[Dread Pirate Ring]|h|r",
+		}, -- [11]
+		{
+			["ID"] = 128173,
+			["Level"] = 58,
+			["AlsoFitsIn"] = 11,
+			["Link"] = "|cff00ccff|Hitem:128173::::::::49:254:::1:7920::::::|h[Admiral Taylor's Loyalty Ring]|h|r",
+		}, -- [12]
+		{
+			["ID"] = 122361,
+			["Level"] = 58,
+			["AlsoFitsIn"] = 14,
+			["Link"] = "|cff00ccff|Hitem:122361::::::::49:254:::1:7920::::::|h[Swift Hand of Justice]|h|r",
+		}, -- [13]
+		{
+			["ID"] = 122361,
+			["Level"] = 56,
+			["AlsoFitsIn"] = 13,
+			["Link"] = "|cff00ccff|Hitem:122361::::::::48:254:::1:7920::::::|h[Swift Hand of Justice]|h|r",
+		}, -- [14]
+		{
+			["ID"] = 122261,
+			["Level"] = 58,
+			["Link"] = "|cff00ccff|Hitem:122261::::::::49:254:::1:7920::::::|h[Inherited Cape of the Black Baron]|h|r",
+		}, -- [15]
+		{
+			["ID"] = 122352,
+			["Level"] = 58,
+			["Link"] = "|cff00ccff|Hitem:122352::::::::49:254:::1:7920::::::|h[Charmed Ancient Bone Bow]|h|r",
+		}, -- [16]
+		{
+			["ID"] = 3420,
+			["Level"] = 22,
+			["Link"] = "|cffffffff|Hitem:3420::::::::31:254::14::1:28:633:::::|h[Black Rose]|h|r",
+		}, -- [17]
+	},
+	["LastKeybindingsSet"] = 1,
+	["Artifacts"] = {
+		[128826] = {
+			["Relics"] = {
+				{
+					["Type"] = "Wind",
+				}, -- [1]
+				{
+					["Type"] = "Blood",
+				}, -- [2]
+			},
+			["Name"] = "Thas'dorah, Legacy of the Windrunners",
+		},
+	},
+}
+PawnMrRobotScaleProviderOptions = {
+	["LastClass"] = "HUNTER",
+	["LastAdded"] = 1,
+}
+PawnClassicScaleProviderOptions = nil

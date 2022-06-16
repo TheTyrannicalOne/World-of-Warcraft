@@ -1,13 +1,5 @@
 
 NarciBarberShopDB = {
-	["ToggleRandomAppearance"] = false,
-	["ToggleNotification"] = true,
-	["Hotkeys"] = {
-		["RotateRight"] = "D",
-		["RotateLeft"] = "A",
-		["ZoomOut"] = "S",
-		["ZoomIn"] = "W",
-	},
 	["PlayerData"] = {
 		["0CBEA15E"] = {
 			["playerName"] = "Durlok",
@@ -87,5 +79,13 @@ NarciBarberShopDB = {
 			},
 			["realmName"] = "Dalaran",
 		},
+	},
+	["ToggleNotification"] = true,
+	["ToggleRandomAppearance"] = false,
+	["Hotkeys"] = {
+		["ZoomIn"] = "W",
+		["RotateLeft"] = "A",
+		["ZoomOut"] = "S",
+		["RotateRight"] = "D",
 	},
 }

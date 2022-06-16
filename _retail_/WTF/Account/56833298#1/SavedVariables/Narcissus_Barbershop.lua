@@ -1,5 +1,12 @@
 
 NarciBarberShopDB = {
+	["Hotkeys"] = {
+		["RotateRight"] = "D",
+		["RotateLeft"] = "A",
+		["ZoomOut"] = "S",
+		["ZoomIn"] = "W",
+	},
+	["ToggleNotification"] = true,
 	["PlayerData"] = {
 		["0CBEA15E"] = {
 			["playerName"] = "Durlok",
@@ -19,6 +26,19 @@ NarciBarberShopDB = {
 			["realmID"] = "61",
 			["SavedLooks"] = {
 				[31] = {
+					["male"] = {
+					},
+					["female"] = {
+					},
+				},
+			},
+			["realmName"] = "Zul'jin",
+		},
+		["0EB84EA0"] = {
+			["playerName"] = "Valmagus",
+			["realmID"] = "61",
+			["SavedLooks"] = {
+				[10] = {
 					["male"] = {
 					},
 					["female"] = {
@@ -80,12 +100,5 @@ NarciBarberShopDB = {
 			["realmName"] = "Dalaran",
 		},
 	},
-	["ToggleNotification"] = true,
 	["ToggleRandomAppearance"] = false,
-	["Hotkeys"] = {
-		["ZoomIn"] = "W",
-		["RotateLeft"] = "A",
-		["ZoomOut"] = "S",
-		["RotateRight"] = "D",
-	},
 }

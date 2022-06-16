@@ -30,3 +30,6 @@ Leatrix_Plus: enabled
 ElvUI_OptionsUI: enabled
 BigWigs_CommonAuras: enabled
 LittleWigs_Classic: enabled
+LittleWigs_Legion: enabled
+LittleWigs_BattleForAzeroth: enabled
+LittleWigs: enabled

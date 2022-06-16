@@ -194,7 +194,7 @@ HandyNotes_TimelessIsleChests: enabled
 Hekili: enabled
 Immersion: enabled
 !KalielsTracker: enabled
-Leatrix_Plus: disabled
+Leatrix_Plus: enabled
 LegionInvasionTimer: enabled
 LegionInvasionTimer_Options: enabled
 LittleWigs: enabled
@@ -382,3 +382,9 @@ Narcissus_GamePad: enabled
 Narcissus_Achievements: enabled
 WoWPro: enabled
 WoWPro_Leveling: enabled
+BronCena: enabled
+FocusInterruptSounds: enabled
+InstanceAchievementTracker: enabled
+MillButton: enabled
+ProtoformSynthesisFieldJournal: enabled
+WoWthing_Collector: enabled

@@ -78,18 +78,19 @@ function Addon:InitUI()
         Y = Y - 40
     end
 
-    CheckBoxes.OnDeath = self:CreateCheckBox({
-        ["Parent"]      = ConfigFrame,
-        ["DisplayText"] = Addon.Loc.Config.OnDeath[1],
-        ["X"]           = X,
-        ["Y"]           = Y,
-        ["Tooltip"]     = Addon.Loc.Config.OnDeath[2],
-        ["Default"]     = false,
-        ["Value"]       = RareShareDB["Config"]["OnDeath"],
-        ["OldValue"]    = RareShareDB["Config"]["OnDeath"],
-        ["Setting"]     = "RareShareDB[\"Config\"][\"OnDeath\"] = ",
-    })
-    Y = Y - 40
+--! DEATH NOTIFICATIONS REMOVED FOR THE TIME BEING DUE TO BLIZZARD API CHANGES
+--		CheckBoxes.OnDeath = self:CreateCheckBox({
+--			["Parent"]      = ConfigFrame,
+--			["DisplayText"] = Addon.Loc.Config.OnDeath[1],
+--			["X"]           = X,
+--			["Y"]           = Y,
+--			["Tooltip"]     = Addon.Loc.Config.OnDeath[2],
+--			["Default"]     = false,
+--			["Value"]       = RareShareDB["Config"]["OnDeath"],
+--			["OldValue"]    = RareShareDB["Config"]["OnDeath"],
+--			["Setting"]     = "RareShareDB[\"Config\"][\"OnDeath\"] = ",
+--		})
+--		Y = Y - 40
 
     CheckBoxes.Duplicates = self:CreateCheckBox({
         ["Parent"]      = ConfigFrame,

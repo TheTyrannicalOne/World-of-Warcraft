@@ -1,9 +1,5 @@
 
 OmniCCDB = {
-	["global"] = {
-		["dbVersion"] = 6,
-		["addonVersion"] = "9.2.0",
-	},
 	["profileKeys"] = {
 		["Vancard - Zul'jin"] = "Default",
 		["Armaguth - Zul'jin"] = "Default",
@@ -20,43 +16,48 @@ OmniCCDB = {
 		["Durlok - Black Dragonflight"] = "Default",
 		["Dachas - Zul'jin"] = "Default",
 		["Tyranasticus - Zul'jin"] = "Default",
-		["Illingrath - Dalaran"] = "Default",
 		["Tendralas - Dalaran"] = "Default",
+		["Illingrath - Dalaran"] = "Default",
+		["Brotus - Argent Dawn"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
 		["Kelvalatar - Dalaran"] = "Default",
-		["Banesmuncy - Zul'jin"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
 		["Shimzo - Zul'jin"] = "Default",
 		["Okona - Zul'jin"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
 		["Tinkster - Dalaran"] = "Default",
-		["Jingojaggot - Zul'jin"] = "Default",
+		["Guufnah - Zul'jin"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Default",
 		["Kotalkhan - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Laymonan - Zul'jin"] = "Default",
 		["Datgore - Zul'jin"] = "Default",
 		["Vadder - Argent Dawn"] = "Default",
-		["Tyran - Argent Dawn"] = "Default",
 		["Serbitechna - Dalaran"] = "Default",
+		["Tyran - Argent Dawn"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
-		["Fantastiburo - Zul'jin"] = "Default",
+		["Jingojaggot - Zul'jin"] = "Default",
 		["Abyronterner - Zul'jin"] = "Default",
-		["Guufnah - Zul'jin"] = "Default",
+		["Alatra - Zul'jin"] = "Default",
 		["Jasmoney - Zul'jin"] = "Default",
-		["Brotus - Argent Dawn"] = "Default",
+		["Banesmuncy - Zul'jin"] = "Default",
 		["Mandles - Zul'jin"] = "Default",
+	},
+	["global"] = {
+		["dbVersion"] = 6,
+		["addonVersion"] = "9.2.0",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["themes"] = {
 				["Default"] = {
 					["textStyles"] = {
-						["minutes"] = {
+						["soon"] = {
 						},
 						["seconds"] = {
 						},
-						["soon"] = {
+						["minutes"] = {
 						},
 					},
 					["enableText"] = false,
