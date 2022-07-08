@@ -18,9 +18,9 @@ WoWProCharDB = {
 	["Rank"] = {
 	},
 	["EnableGrailQuestName"] = false,
+	["EnableGrailBreadcrumbs"] = false,
 	["EnableGrailQuestObsolete"] = false,
-	["Enabled"] = true,
-	["Guide"] = {
+	["BuildingLocations"] = {
 	},
 	["Tradeskills"] = {
 		[2586] = {
@@ -126,11 +126,11 @@ WoWProCharDB = {
 			["skillMax"] = 100,
 		},
 	},
-	["GuideVersion"] = {
+	["Guide"] = {
 	},
 	["Taxi"] = {
 	},
-	["BuildingLocations"] = {
+	["GuideVersion"] = {
 	},
 	["EnableTreasures"] = true,
 	["completedQIDs"] = {
@@ -139,7 +139,7 @@ WoWProCharDB = {
 	["AutoHideInCombat"] = false,
 	["DebugLevel"] = 0,
 	["EnablePetBattles"] = true,
-	["EnableGrailBreadcrumbs"] = false,
+	["Enabled"] = true,
 	["skippedQIDs"] = {
 	},
 	["EnableRares"] = true,

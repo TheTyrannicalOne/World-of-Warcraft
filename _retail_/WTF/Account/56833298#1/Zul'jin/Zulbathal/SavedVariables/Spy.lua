@@ -1,5 +1,9 @@
 
 SpyPerCharDB = {
+	["KOSData"] = {
+	},
+	["IgnoreData"] = {
+	},
 	["PlayerData"] = {
 		["Hyecho-Stormrage"] = {
 			["mapID"] = 1,
@@ -27,12 +31,12 @@ SpyPerCharDB = {
 			["isEnemy"] = true,
 			["wins"] = 1,
 			["mapX"] = 0.63,
-			["time"] = 1589339205,
+			["isGuess"] = false,
 			["race"] = "Night Elf",
 			["subZone"] = "Grom'gar",
 			["level"] = 100,
-			["isGuess"] = false,
 			["name"] = "Daehkcarc-Stormrage",
+			["time"] = 1589339205,
 		},
 		["Crystallia-Dentarg"] = {
 			["mapID"] = 114,
@@ -271,9 +275,5 @@ SpyPerCharDB = {
 			["loses"] = 1,
 		},
 	},
-	["IgnoreData"] = {
-	},
 	["version"] = "1.1",
-	["KOSData"] = {
-	},
 }

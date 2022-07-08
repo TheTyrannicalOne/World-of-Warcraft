@@ -66,12 +66,19 @@ MJEPersonalSettings = {
 		["color"] = {
 		},
 		["hidden"] = false,
+		["mountType"] = {
+			["repair"] = true,
+			["flying"] = true,
+			["underwater"] = true,
+			["passenger"] = true,
+			["ground"] = true,
+			["transform"] = true,
+		},
 		["faction"] = {
 			["horde"] = true,
 			["alliance"] = true,
 			["noFaction"] = true,
 		},
-		["onlyUsable"] = false,
 		["onlyFavorites"] = false,
 		["family"] = {
 			["Arachnids"] = {
@@ -252,10 +259,10 @@ MJEPersonalSettings = {
 				["Others"] = true,
 			},
 			["Rays"] = {
-				["Fathom Rays"] = true,
 				["Nether Rays"] = true,
-				["Mana Rays"] = true,
 				["Stingrays"] = true,
+				["Mana Rays"] = true,
+				["Fathom Rays"] = true,
 			},
 			["Vombata"] = true,
 			["Dinosaurs"] = {
@@ -275,14 +282,7 @@ MJEPersonalSettings = {
 			["Rylaks"] = true,
 			["Snail"] = true,
 		},
-		["mountType"] = {
-			["repair"] = true,
-			["flying"] = true,
-			["underwater"] = true,
-			["passenger"] = true,
-			["ground"] = true,
-			["transform"] = true,
-		},
+		["onlyUsable"] = false,
 		["onlyTradable"] = false,
 		["collected"] = true,
 		["onlyRecent"] = false,

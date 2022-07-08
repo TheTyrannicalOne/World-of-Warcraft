@@ -2183,14 +2183,14 @@ ElvCharacterDB = {
 	["CliqueDatatext"] = {
 	},
 	["ChatEditHistory"] = {
-		"/i worth the try later", -- [1]
-		"/ltp", -- [2]
-		"/dance", -- [3]
-		"/opie", -- [4]
-		"/i yeah guess either someone did it or its glitched out", -- [5]
-		"/i it should be here", -- [6]
-		"/i nope", -- [7]
-		"/i Thansk for the run", -- [8]
+		"/opie", -- [1]
+		"/i Thansk for the run", -- [2]
+		"/i nope", -- [3]
+		"/i worth the try later", -- [4]
+		"/i it should be here", -- [5]
+		"/i yeah guess either someone did it or its glitched out", -- [6]
+		"/dance", -- [7]
+		"/ltp", -- [8]
 	},
 	["ConvertKeybindings"] = true,
 }

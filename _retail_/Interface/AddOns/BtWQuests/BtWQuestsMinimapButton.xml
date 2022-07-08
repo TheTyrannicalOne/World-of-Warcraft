@@ -80,6 +80,8 @@
 				BtWQuestsMinimapButtonDraggingFrame:Hide()
 			</OnDragStop>
 			<OnClick function="BtWQuestsMinimapButton_OnClick"/>
+			<OnEnter function="BtWQuestsMinimapButton_OnEnter"/>
+			<OnLeave function="BtWQuestsMinimapButton_OnLeave"/>
 		</Scripts>
 	</Button>
 </Ui>

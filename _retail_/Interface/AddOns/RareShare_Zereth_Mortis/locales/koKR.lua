@@ -1,7 +1,5 @@
 local AddonName, Addon = ...
 
--- Translated by 불은비_
-
 Addon.Loc = {
     Title = "Zereth Mortis",
 	Events = {

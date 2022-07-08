@@ -20,10 +20,10 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:188032::::::::60:70::26:2:6652:1475:1:28:2057:::::|h[Harmonium Spaulders]|h|r",
 		}, -- [3]
 		[13] = {
-			["ID"] = 173078,
-			["Level"] = 200,
+			["ID"] = 184841,
+			["Level"] = 210,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cffa335ee|Hitem:173078::::::::60:70::13::1:28:2142:::::|h[Darkmoon Deck: Repose]|h|r",
+			["Link"] = "|cffa335ee|Hitem:184841::::::::60:70::26:4:6652:1472:5907:6646::::::|h[Lyre of Sacred Purpose]|h|r",
 		},
 		[7] = {
 			["ID"] = 188031,
@@ -31,10 +31,10 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:188031::::::::60:70::26:2:6652:1475:1:28:2057:::::|h[Harmonium Legplates]|h|r",
 		},
 		[14] = {
-			["ID"] = 173096,
-			["Level"] = 200,
+			["ID"] = 181501,
+			["Level"] = 207,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cffa335ee|Hitem:173096::::::::60:70::13::1:28:2142:::::|h[Darkmoon Deck: Indomitable]|h|r",
+			["Link"] = "|cffa335ee|Hitem:181501::::::::60:70::25:4:6652:1472:5904:6646::::::|h[Flame of Battle]|h|r",
 		},
 		[15] = {
 			["ID"] = 173215,

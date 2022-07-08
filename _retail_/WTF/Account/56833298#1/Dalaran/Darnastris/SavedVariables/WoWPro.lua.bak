@@ -12,17 +12,14 @@ WoWProCharDB = {
 	},
 	["Trades"] = {
 	},
-	["EnableGrailQuestObsolete"] = false,
-	["completedQIDs"] = {
-	},
-	["Rank"] = {
-	},
-	["EnableGrailQuestName"] = false,
 	["GuideStack"] = {
 	},
-	["Enabled"] = true,
-	["Guide"] = {
-	},
+	["EnableFlight"] = true,
+	["EnableRares"] = true,
+	["EnableGrailQuestName"] = false,
+	["EnablePetBattles"] = true,
+	["EnableGrailQuestObsolete"] = false,
+	["EnableGrailBreadcrumbs"] = false,
 	["Tradeskills"] = {
 		[2522] = {
 			["skillLvl"] = 1,
@@ -56,32 +53,8 @@ WoWProCharDB = {
 		},
 		[2586] = {
 			["skillLvl"] = 1,
-			["skillMax"] = 100,
-			["skillMod"] = 0,
 			["name"] = "Legion Fishing",
-		},
-		[2524] = {
-			["skillLvl"] = 57,
 			["skillMod"] = 0,
-			["name"] = "Jewelcrafting",
-			["skillMax"] = 300,
-		},
-		[2572] = {
-			["skillLvl"] = 107,
-			["skillMod"] = 0,
-			["name"] = "Mining",
-			["skillMax"] = 300,
-		},
-		[186] = {
-			["skillLvl"] = 3,
-			["skillMod"] = 0,
-			["name"] = "Mining",
-			["skillMax"] = 100,
-		},
-		[2567] = {
-			["skillLvl"] = 3,
-			["skillMod"] = 0,
-			["name"] = "Draenor Mining",
 			["skillMax"] = 100,
 		},
 		[356] = {
@@ -90,21 +63,48 @@ WoWProCharDB = {
 			["name"] = "Fishing",
 			["skillMax"] = 100,
 		},
+		[2572] = {
+			["skillLvl"] = 107,
+			["skillMod"] = 0,
+			["name"] = "Mining",
+			["skillMax"] = 300,
+		},
+		[2567] = {
+			["skillLvl"] = 3,
+			["skillMod"] = 0,
+			["name"] = "Draenor Mining",
+			["skillMax"] = 100,
+		},
+		[186] = {
+			["skillLvl"] = 3,
+			["skillMod"] = 0,
+			["name"] = "Mining",
+			["skillMax"] = 100,
+		},
+		[2524] = {
+			["skillLvl"] = 57,
+			["skillMod"] = 0,
+			["name"] = "Jewelcrafting",
+			["skillMax"] = 300,
+		},
+	},
+	["DebugLevel"] = 0,
+	["Taxi"] = {
+	},
+	["Guide"] = {
+	},
+	["EnableTreasures"] = true,
+	["completedQIDs"] = {
+	},
+	["AutoHideInsideInstancesNotify"] = true,
+	["AutoHideInCombat"] = false,
+	["GuideVersion"] = {
 	},
 	["BuildingLocations"] = {
 	},
-	["Taxi"] = {
-	},
-	["GuideVersion"] = {
-	},
-	["EnableTreasures"] = true,
-	["EnableFlight"] = true,
-	["AutoHideInsideInstancesNotify"] = true,
-	["AutoHideInCombat"] = false,
-	["DebugLevel"] = 0,
-	["EnableGrailBreadcrumbs"] = false,
-	["EnablePetBattles"] = true,
+	["Enabled"] = true,
 	["skippedQIDs"] = {
 	},
-	["EnableRares"] = true,
+	["Rank"] = {
+	},
 }

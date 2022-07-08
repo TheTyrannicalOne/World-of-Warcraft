@@ -18,30 +18,30 @@ DeathNoteDB = {
 		["Tyranasticus - Zul'jin"] = "Tyranasticus - Zul'jin",
 		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
-		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
+		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
-		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
-		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
-		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
+		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
-		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Okona - Zul'jin"] = "Okona - Zul'jin",
+		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Laymonan - Zul'jin"] = "Laymonan - Zul'jin",
-		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
-		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
+		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
-		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Abyronterner - Zul'jin"] = "Abyronterner - Zul'jin",
-		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Jasmoney - Zul'jin"] = "Jasmoney - Zul'jin",
-		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
+		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Mandles - Zul'jin"] = "Mandles - Zul'jin",
 	},
 	["profiles"] = {
@@ -79,7 +79,7 @@ DeathNoteDB = {
 		},
 		["Illingrath - Dalaran"] = {
 		},
-		["Brotus - Argent Dawn"] = {
+		["Banesmuncy - Zul'jin"] = {
 		},
 		["Tyrannithal - Argent Dawn"] = {
 		},
@@ -87,17 +87,17 @@ DeathNoteDB = {
 		},
 		["Kelvalatar - Dalaran"] = {
 		},
-		["Shimzo - Zul'jin"] = {
-		},
-		["Okona - Zul'jin"] = {
-		},
 		["Varlouris - Dalaran"] = {
 		},
-		["Tinkster - Dalaran"] = {
+		["Alatra - Zul'jin"] = {
+		},
+		["Shimzo - Zul'jin"] = {
 		},
 		["Guufnah - Zul'jin"] = {
 		},
-		["Fantastiburo - Zul'jin"] = {
+		["Okona - Zul'jin"] = {
+		},
+		["Jingojaggot - Zul'jin"] = {
 		},
 		["Kotalkhan - Zul'jin"] = {
 		},
@@ -105,27 +105,27 @@ DeathNoteDB = {
 		},
 		["Laymonan - Zul'jin"] = {
 		},
-		["Datgore - Zul'jin"] = {
+		["Tyran - Argent Dawn"] = {
 		},
 		["Vadder - Argent Dawn"] = {
 		},
 		["Serbitechna - Dalaran"] = {
 		},
-		["Tyran - Argent Dawn"] = {
+		["Datgore - Zul'jin"] = {
 		},
 		["Darnastris - Dalaran"] = {
 		},
 		["Rotclaugh - Dalaran"] = {
 		},
-		["Jingojaggot - Zul'jin"] = {
+		["Fantastiburo - Zul'jin"] = {
 		},
 		["Abyronterner - Zul'jin"] = {
 		},
-		["Alatra - Zul'jin"] = {
+		["Tinkster - Dalaran"] = {
 		},
 		["Jasmoney - Zul'jin"] = {
 		},
-		["Banesmuncy - Zul'jin"] = {
+		["Brotus - Argent Dawn"] = {
 		},
 		["Mandles - Zul'jin"] = {
 		},

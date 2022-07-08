@@ -6,6 +6,8 @@ local deg, rad = math.deg, math.rad;
 local sqrt = math.sqrt;
 local atan2 = math.atan2;
 
+local L = BtWQuests.L;
+
 local minimapShapes = {
 	-- quadrant booleans (same order as SetTexCoord)
 	-- {bottom-right, bottom-left, top-right, top-left}
@@ -85,4 +87,13 @@ function BtWQuestsMinimapButton_OnClick(self, button)
 			BtWQuestsFrame:Show()
 		end
 	end
+end
+function BtWQuestsMinimapButton_OnEnter(self)
+    GameTooltip:SetOwner(self, "ANCHOR_BOTTOMLEFT", 32);
+    GameTooltip:SetText("BtWQuests", 1, 1, 1);
+    GameTooltip:AddLine(L["MINIMAP_TOOLTIP_MESSAGE"], nil, nil, nil, true);
+    GameTooltip:Show();
+end
+function BtWQuestsMinimapButton_OnLeave()
+    GameTooltip:Hide();
 end

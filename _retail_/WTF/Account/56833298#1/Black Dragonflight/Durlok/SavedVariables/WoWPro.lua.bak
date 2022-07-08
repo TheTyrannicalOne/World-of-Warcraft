@@ -5,21 +5,22 @@ WoWProCharDB = {
 	["AutoHideInsideInstances"] = true,
 	["EnableGrailCheckPrereq"] = false,
 	["QID2Guide"] = {
-		[47835] = "Ludo_Argus",
-		[9407] = "JamHel6063",
-		[28705] = "JamHel6063",
 		[47221] = "Ludo_Argus",
+		[9407] = "JamHel6063",
+		[47835] = "Ludo_Argus",
+		[28705] = "JamHel6063",
 	},
 	["Trades"] = {
 	},
 	["EnablePetBattles"] = true,
-	["completedQIDs"] = {
+	["EnableFlight"] = true,
+	["Rank"] = {
 	},
-	["EnableRares"] = true,
 	["EnableGrailQuestName"] = false,
-	["EnableGrailQuestObsolete"] = false,
 	["EnableGrailBreadcrumbs"] = false,
-	["DebugLevel"] = 0,
+	["Enabled"] = true,
+	["GuideStack"] = {
+	},
 	["Tradeskills"] = {
 		[2485] = {
 			["skillLvl"] = 1,
@@ -41,9 +42,9 @@ WoWProCharDB = {
 		},
 		[2592] = {
 			["skillLvl"] = 1,
+			["skillMax"] = 300,
 			["name"] = "Fishing",
 			["skillMod"] = 0,
-			["skillMax"] = 300,
 		},
 		[2556] = {
 			["skillLvl"] = 22,
@@ -57,11 +58,11 @@ WoWProCharDB = {
 			["name"] = "Battle for Azeroth Herbalism",
 			["skillMax"] = 175,
 		},
-		[185] = {
+		[794] = {
 			["skillLvl"] = 1,
 			["skillMod"] = 0,
-			["name"] = "Cooking",
-			["skillMax"] = 175,
+			["name"] = "Archaeology",
+			["skillMax"] = 950,
 		},
 		[182] = {
 			["skillLvl"] = 67,
@@ -75,30 +76,29 @@ WoWProCharDB = {
 			["name"] = "Fishing",
 			["skillMax"] = 300,
 		},
-		[794] = {
+		[185] = {
 			["skillLvl"] = 1,
 			["skillMod"] = 0,
-			["name"] = "Archaeology",
-			["skillMax"] = 950,
+			["name"] = "Cooking",
+			["skillMax"] = 175,
 		},
-	},
-	["Guide"] = {
-	},
-	["Taxi"] = {
 	},
 	["GuideVersion"] = {
 	},
-	["EnableTreasures"] = true,
-	["EnableFlight"] = true,
-	["AutoHideInsideInstancesNotify"] = true,
-	["AutoHideInCombat"] = false,
+	["Taxi"] = {
+	},
 	["BuildingLocations"] = {
 	},
-	["GuideStack"] = {
+	["EnableTreasures"] = true,
+	["completedQIDs"] = {
 	},
-	["Enabled"] = true,
+	["AutoHideInsideInstancesNotify"] = true,
+	["AutoHideInCombat"] = false,
+	["Guide"] = {
+	},
+	["DebugLevel"] = 0,
+	["EnableGrailQuestObsolete"] = false,
 	["skippedQIDs"] = {
 	},
-	["Rank"] = {
-	},
+	["EnableRares"] = true,
 }

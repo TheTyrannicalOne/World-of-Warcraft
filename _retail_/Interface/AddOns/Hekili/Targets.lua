@@ -164,8 +164,13 @@ local enemyExclusions = {
     [177117] = 355790,    -- Ner'zhul: Orb of Torment (Protected by Eternal Torment)
     [176581] = true,      -- Painsmith:  Spiked Ball
     [186150] = true,      -- Soul Fragment (Gavel of the First Arbiter)
+    [185685] = true,      -- Season 3 Relics
+    [185680] = true,      -- Season 3 Relics
+    [185683] = true,      -- Season 3 Relics
+    [183501] = 367573,    -- Xy'mox: Genesis Bulwark
 }
 
+local FindExclusionAuraByID
 
 local f = CreateFrame("Frame")
 f:RegisterEvent( "NAME_PLATE_UNIT_ADDED" )
@@ -273,9 +278,9 @@ do
         return next, counted, nil
     end
 
-    local function FindExclusionAuraByID( unit, spellID )
+    FindExclusionAuraByID = function( unit, spellID )
         if spellID < 0 then
-            return FindUnitDebuffByID( unit, -spellID ) ~= nil
+            return FindUnitDebuffByID( unit, -1 * spellID ) ~= nil
         end
         return FindUnitBuffByID( unit, spellID ) ~= nil
     end
@@ -791,7 +796,7 @@ Hekili.lastAudit = GetTime()
 Hekili.auditInterval = 0
 
 ns.Audit = function( special )
-    if not special and not Hekili.DB.profile.enabled then
+    if not special and not Hekili.DB.profile.enabled or not Hekili:IsValidSpec() then
         C_Timer.After( 1, ns.Audit )
         return
     end
@@ -966,7 +971,7 @@ do
         end
 
         if type( enemy.excluded ) == "number" then
-            return FindExclusionAuraByID( enemy.excluded )
+            return FindExclusionAuraByID( enemy.unit, enemy.excluded )
         end
 
         return false

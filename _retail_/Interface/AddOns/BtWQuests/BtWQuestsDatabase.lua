@@ -619,19 +619,45 @@ function BtWQuests_GetTimeZone(region, realm)
         return timezones[region]
     end
 end
-function BtWQuests_GetBestLocation(locations, relativeMapID, relativeX, relativeY)
-    if relativeMapID == nil then
-        local mapID, item = next(locations)
-        if item[1] ~= nil then
-            item = item[1]
+local function GetPlayerPosition(targetMapID)
+    local sourceMapID = C_Map.GetBestMapForUnit("player")
+    local sourceCoords = C_Map.GetPlayerMapPosition(sourceMapID, "player")
+    if sourceMapID == targetMapID then
+        return sourceCoords
+    else
+        local continentID, coords = C_Map.GetWorldPosFromMapPos(sourceMapID, sourceCoords)
+        if coords == nil then
+            return nil
         end
 
-        return mapID, CreateVector2D(item.x, item.y)
+        local _, coords = C_Map.GetMapPosFromWorldPos(continentID, coords, targetMapID)
+        if coords == nil then
+            return nil
+        end
+
+        return coords
+    end
+end
+function BtWQuests_GetBestLocation(database, locations, relativeMapID) -- , relativeX, relativeY Should these be added?
+    if relativeMapID == nil then
+        local possibleLocations = {}
+        for mapID in pairs(locations) do
+            local _, item = BtWQuests_GetBestLocation(database, locations, mapID)
+            if item then
+                possibleLocations[#possibleLocations+1] = item
+            end
+        end
+
+        table.sort(possibleLocations, function (a, b)
+            return (a.distanceSq or 0) < (b.distanceSq or 0)
+        end)
+
+        local result = possibleLocations[1]
+        return result.mapID, result
     end
 
     if locations[relativeMapID] == nil then -- This'll take a while
-        -- @TODO should look for the cloest location
-        local sourceMapID, sourceCoords = BtWQuests_GetBestLocation(locations)
+        local sourceMapID, sourceCoords = BtWQuests_GetBestLocation(database, locations)
         if sourceCoords == nil then
             return nil
         end
@@ -648,12 +674,33 @@ function BtWQuests_GetBestLocation(locations, relativeMapID, relativeX, relative
 
         return relativeMapID, coords
     else
-        local item = locations[relativeMapID]
-        if item[1] ~= nil then -- @TODO look for the closest location
-            item = item[1]
+        local filtered = database:FilterItems(locations[relativeMapID], BtWQuestsCharacters:GetPlayer())
+
+        local result = filtered[1]
+        local resultDistanceSq
+        if #filtered > 1 then
+            local playerPos = GetPlayerPosition(relativeMapID)
+            if playerPos then
+                resultDistanceSq = CalculateDistanceSq(result.x, result.y, playerPos.x, playerPos.y)
+                for i=2,#filtered do
+                    local item = filtered[i]
+                    local itemDistanceSq = CalculateDistanceSq(item.x, item.y, playerPos.x, playerPos.y)
+                    if itemDistanceSq < resultDistanceSq then
+                        result = item
+                        resultDistanceSq = itemDistanceSq
+                    end
+                end
+            end
         end
 
-        return relativeMapID, CreateVector2D(item.x, item.y)
+        if not result then
+            return nil
+        end
+
+        result = CreateVector2D(result.x, result.y)
+        result.mapID = relativeMapID
+        result.distanceSq = resultDistanceSq
+        return relativeMapID, result
     end
 end
 
@@ -883,7 +930,7 @@ function NPCMixin:GetLocation(...)
         return nil
     end
 
-    return BtWQuests_GetBestLocation(self.locations, ...)
+    return BtWQuests_GetBestLocation(self.database, self.locations, ...)
 end
 
 local ObjectMixin = CreateFromMixins(NPCMixin);
@@ -2048,7 +2095,7 @@ function NPCItemMixin:IsBreadcrumb(database, item, character)
 end
 function NPCItemMixin:GetLocation(database, item, ...)
     if item.locations ~= nil then
-        return BtWQuests_GetBestLocation(item.locations, ...)
+        return BtWQuests_GetBestLocation(database, item.locations, ...)
     end
 
     local target = self:GetTarget(database, item);
@@ -2444,7 +2491,7 @@ function CoordsItemMixin:IsBreadcrumb(database, item, character)
 end
 function CoordsItemMixin:GetLocation(database, item, relativeMapID, ...)
     if item.locations ~= nil then
-        return BtWQuests_GetBestLocation(item.locations, relativeMapID, ...)
+        return BtWQuests_GetBestLocation(database, item.locations, relativeMapID, ...)
     end
 
     if relativeMapID == nil or item.mapID == relativeMapID then
@@ -2882,6 +2929,21 @@ function Database:IsItemValidForCharacter(item, character) -- In effect its the 
     end
     
     return true;
+end
+function Database:FilterItems(items, character, tbl)
+    tbl = tbl or {}
+    if items[1] == nil then
+        if self:IsItemValidForCharacter(items, character) then
+            tbl[#tbl+1] = items
+        end
+    else
+        for _,item in ipairs(items) do
+            if self:IsItemValidForCharacter(item, character) then
+                tbl[#tbl+1] = item
+            end
+        end
+    end
+    return tbl
 end
 -- /dump BtWQuestsDatabase:EvalRequirement()
 function Database:EvalRequirement(requirement, item, character, one)

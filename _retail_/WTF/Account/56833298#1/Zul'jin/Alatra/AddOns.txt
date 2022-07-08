@@ -30,3 +30,8 @@ ElvUI_OptionsUI: enabled
 BigWigs_CommonAuras: enabled
 LittleWigs_Classic: enabled
 LittleWigs_Legion: enabled
+BigWigs_Legion: enabled
+LittleWigs_BattleForAzeroth: enabled
+LittleWigs_Cataclysm: enabled
+LittleWigs: enabled
+BigWigs_Shadowlands: enabled

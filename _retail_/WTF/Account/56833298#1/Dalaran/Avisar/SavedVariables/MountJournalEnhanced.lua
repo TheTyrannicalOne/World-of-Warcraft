@@ -45,13 +45,13 @@ MJEPersonalSettings = {
 			[0] = true,
 		},
 		["source"] = {
-			["Promotion"] = true,
+			["World Event"] = true,
 			["Black Market"] = true,
 			["PVP"] = true,
-			["Vendor"] = true,
+			["Promotion"] = true,
 			["Instance"] = true,
 			["Class"] = true,
-			["World Event"] = true,
+			["Vendor"] = true,
 			["Garrison"] = true,
 			["Island Expedition"] = true,
 			["Shop"] = true,
@@ -66,15 +66,12 @@ MJEPersonalSettings = {
 		["color"] = {
 		},
 		["hidden"] = false,
-		["mountType"] = {
-			["repair"] = true,
-			["flying"] = true,
-			["underwater"] = true,
-			["transform"] = true,
-			["ground"] = true,
-			["passenger"] = true,
-		},
 		["onlyUsable"] = false,
+		["faction"] = {
+			["horde"] = true,
+			["alliance"] = true,
+			["noFaction"] = true,
+		},
 		["onlyFavorites"] = false,
 		["family"] = {
 			["Arachnids"] = {
@@ -154,10 +151,10 @@ MJEPersonalSettings = {
 				["Infernals"] = true,
 			},
 			["Rays"] = {
-				["Fathom Rays"] = true,
-				["Nether Rays"] = true,
-				["Mana Rays"] = true,
 				["Stingrays"] = true,
+				["Fathom Rays"] = true,
+				["Mana Rays"] = true,
+				["Nether Rays"] = true,
 			},
 			["Carnivorans"] = {
 				["Bears"] = true,
@@ -278,10 +275,13 @@ MJEPersonalSettings = {
 			},
 			["Snail"] = true,
 		},
-		["faction"] = {
-			["horde"] = true,
-			["alliance"] = true,
-			["noFaction"] = true,
+		["mountType"] = {
+			["repair"] = true,
+			["flying"] = true,
+			["underwater"] = true,
+			["transform"] = true,
+			["ground"] = true,
+			["passenger"] = true,
 		},
 		["onlyTradable"] = false,
 		["collected"] = true,

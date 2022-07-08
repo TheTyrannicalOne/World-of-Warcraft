@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0534,
+	["LastVersion"] = 2.0538,
 	["LastPlayerFullName"] = "Darnastris-Dalaran",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
@@ -70,9 +70,9 @@ PawnOptions = {
 		}, -- [13]
 		{
 			["ID"] = 122362,
-			["Level"] = 58,
+			["Level"] = 98,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122362::::::::50:64:::1:5805::::|h[Discerning Eye of the Beast]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122362::::::::51:64:::1:7920::::::|h[Discerning Eye of the Beast]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 183524,

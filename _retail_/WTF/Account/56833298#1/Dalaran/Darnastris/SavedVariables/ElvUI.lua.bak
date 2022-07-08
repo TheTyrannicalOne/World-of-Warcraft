@@ -1,5 +1,7 @@
 
 ElvCharacterDB = {
+	["CliqueDatatext"] = {
+	},
 	["ChatHistoryLog"] = {
 		{
 			"LMAO", -- [1]
@@ -2180,26 +2182,24 @@ ElvCharacterDB = {
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},
-	["ConvertKeybindings"] = true,
 	["ChatEditHistory"] = {
-		"/dance", -- [1]
-		"/invite cayla", -- [2]
+		"/invite cayla-nordrassil", -- [1]
+		"/invite ailden-bladefist", -- [2]
 		"/invite vallina-bladefist", -- [3]
-		"/allthethings", -- [4]
+		"/wa", -- [4]
 		"/invite vallina-blackhand", -- [5]
 		"/skada toggle", -- [6]
 		"/invite Cayla-nordrissil", -- [7]
-		"/invite cayla-nordrassil", -- [8]
-		"/train", -- [9]
+		"/train", -- [8]
+		"/allthethings", -- [9]
 		"/kiss", -- [10]
-		"/wa", -- [11]
+		"/invite cayla", -- [11]
 		"/invite cayla-nordrasil", -- [12]
 		"/moo", -- [13]
 		"/invite Cayla-nordrassil", -- [14]
 		"/flirt", -- [15]
-		"/invite ailden-bladefist", -- [16]
+		"/dance", -- [16]
 		"/tired", -- [17]
 	},
-	["CliqueDatatext"] = {
-	},
+	["ConvertKeybindings"] = true,
 }

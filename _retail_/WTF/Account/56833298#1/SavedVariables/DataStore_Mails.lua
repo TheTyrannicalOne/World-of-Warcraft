@@ -17,28 +17,28 @@ DataStore_MailsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.Dalaran.Avisar"] = {
-				["lastUpdate"] = 1655348638,
-				["lastVisitDate"] = "2022/06/15 23:03",
+				["lastUpdate"] = 1656560675,
+				["lastVisitDate"] = "2022/06/29 23:44",
 			},
 			["Default.Dalaran.Darnastris"] = {
-				["lastUpdate"] = 1648401534,
-				["lastVisitDate"] = "2022/03/27 13:18",
+				["lastUpdate"] = 1656301264,
+				["lastVisitDate"] = "2022/06/26 23:41",
 			},
 			["Default.Dalaran.Tendralas"] = {
 				["lastUpdate"] = 1648402214,
 				["lastVisitDate"] = "2022/03/27 13:30",
 			},
 			["Default.Zul'jin.Alatra"] = {
-				["lastUpdate"] = 1655349667,
-				["lastVisitDate"] = "2022/06/15 23:21",
+				["lastUpdate"] = 1656110588,
+				["lastVisitDate"] = "2022/06/24 18:43",
 			},
 			["Default.Zul'jin.Valmagus"] = {
-				["lastUpdate"] = 1654646798,
-				["lastVisitDate"] = "2022/06/07 20:06",
+				["lastUpdate"] = 1656461551,
+				["lastVisitDate"] = "2022/06/28 20:12",
 			},
 			["Default.Black Dragonflight.Durlok"] = {
-				["lastUpdate"] = 1655347782,
-				["lastVisitDate"] = "2022/06/15 22:49",
+				["lastUpdate"] = 1656560935,
+				["lastVisitDate"] = "2022/06/29 23:48",
 			},
 			["Default.Dalaran.Varlouris"] = {
 				["lastUpdate"] = 1653803246,
@@ -53,12 +53,12 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2022/03/26 21:38",
 			},
 			["Default.Zul'jin.Zulbathal"] = {
-				["lastUpdate"] = 1655349978,
-				["lastVisitDate"] = "2022/06/15 23:26",
+				["lastUpdate"] = 1656560040,
+				["lastVisitDate"] = "2022/06/29 23:34",
 			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["lastUpdate"] = 1655350191,
-				["lastVisitDate"] = "2022/06/15 23:29",
+				["lastUpdate"] = 1656568112,
+				["lastVisitDate"] = "2022/06/30 01:48",
 			},
 		},
 	},

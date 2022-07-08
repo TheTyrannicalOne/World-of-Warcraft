@@ -528,12 +528,15 @@ if UnitClassBase( "player" ) == "ROGUE" then
         return combo_points.max
     end )
 
+
     spec:RegisterStateExpr( "effective_combo_points", function ()
         local c = combo_points.current or 0
-        if c == 0 then return 0 end
+        if not covenant.kyrian then return c end
+        if c < 2 or c > 5 then return c end
         if buff[ "echoing_reprimand_" .. c ].up then return 7 end
         return c
     end )
+
 
     -- Legendary from Legion, shows up in APL still.
     spec:RegisterGear( "cinidaria_the_symbiote", 133976 )
@@ -1062,8 +1065,6 @@ if UnitClassBase( "player" ) == "ROGUE" then
             spend = function () return 25 * ( ( talent.shadow_focus.enabled and ( buff.shadow_dance.up or buff.stealth.up ) ) and 0.8 or 1 ) * ( 1 + conduit.rushed_setup.mod * 0.01 ) end,
             spendType = "energy",
 
-            toggle = "cooldowns",
-
             startsCombat = true,
             texture = 132298,
 
@@ -1073,8 +1074,7 @@ if UnitClassBase( "player" ) == "ROGUE" then
                     addStack( "alacrity", 20, 1 )
                 end
 
-                local combo = min( talent.deeper_stratagem.enabled and 6 or 5, combo_points.current )
-                applyDebuff( "target", "kidney_shot", 2 + 1 * ( combo - 1 ) )
+                applyDebuff( "target", "kidney_shot", 1 + combo_points.current )
 
                 if talent.prey_on_the_weak.enabled then applyDebuff( "target", "prey_on_the_weak" ) end
 

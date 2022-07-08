@@ -3,11 +3,11 @@ Frame: AllTheThings-Window-CurrentInstance
 FrameLevel: 1
 Anchor: LEFT
 X: 0
-Y: 0
+Y: -34
 W: 300
-H: 299
+H: 298
 Frame: BagItemTooltipMover
-FrameLevel: 2
+FrameLevel: 3
 Anchor: TOP
 X: 0
 Y: 0

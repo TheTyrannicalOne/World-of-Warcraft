@@ -2,19 +2,19 @@
 AchievementTrackerOptions = {
 	["toggleSoundFailed"] = false,
 	["showMinimap"] = true,
-	["onlyTrackMissingAchievements"] = false,
+	["toggleSound"] = false,
 	["displayInfoFrame"] = true,
 	["enableAutomaticCombatLogging"] = false,
 	["greyOutCompletedAchievements"] = false,
 	["announceTrackedAchievements"] = false,
 	["announceToRaidWarning"] = true,
 	["trackAchievementsAutomatically"] = false,
-	["hideCompletedAchievements"] = false,
+	["trackCharacterAchievements"] = false,
 	["changeMinimapIcon"] = false,
 	["enableAddon"] = true,
-	["trackCharacterAchievements"] = false,
+	["hideCompletedAchievements"] = false,
 	["trackAchievementsInBlizzardUI"] = false,
-	["toggleSound"] = false,
+	["onlyTrackMissingAchievements"] = false,
 }
 AchievementTrackerDebug = {
 	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [1]
@@ -1850,6 +1850,1806 @@ AchievementTrackerDebug = {
 	"15/6/2022 23:21 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [1831]
 	"15/6/2022 23:22 [DEBUG] Showing Minimap Icon", -- [1832]
 	"15/6/2022 23:23 [DEBUG] NPC cache generated", -- [1833]
+	"15/6/2022 23:25 [DEBUG] ---IAT Runtime---", -- [1834]
+	"15/6/2022 23:25 [DEBUG] Version: 3.41.0", -- [1835]
+	"15/6/2022 23:25 [DEBUG] Attempting to load from local NPC Cache", -- [1836]
+	"15/6/2022 23:25 [DEBUG] Generating NPC Cache...", -- [1837]
+	"15/6/2022 23:25 [DEBUG] Enabling Addon", -- [1838]
+	"15/6/2022 23:25 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [1839]
+	"15/6/2022 23:27 [DEBUG] Showing Minimap Icon", -- [1840]
+	"15/6/2022 23:29 [DEBUG] NPC cache generated", -- [1841]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [1842]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [1843]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [1844]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [1845]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [1846]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [1847]
+	"16/6/2022 18:1 [DEBUG] Showing Minimap Icon", -- [1848]
+	"16/6/2022 18:1 [DEBUG] ---IAT Runtime---", -- [1849]
+	"16/6/2022 18:1 [DEBUG] Version: 3.41.0", -- [1850]
+	"16/6/2022 18:1 [DEBUG] Attempting to load from local NPC Cache", -- [1851]
+	"16/6/2022 18:1 [DEBUG] Generating NPC Cache...", -- [1852]
+	"16/6/2022 18:1 [DEBUG] Enabling Addon", -- [1853]
+	"16/6/2022 18:1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [1854]
+	"16/6/2022 18:3 [DEBUG] Showing Minimap Icon", -- [1855]
+	"16/6/2022 18:4 [DEBUG] NPC cache generated", -- [1856]
+	"16/6/2022 18:4 [DEBUG] ---IAT Runtime---", -- [1857]
+	"16/6/2022 18:4 [DEBUG] Version: 3.41.0", -- [1858]
+	"16/6/2022 18:4 [DEBUG] Attempting to load from local NPC Cache", -- [1859]
+	"16/6/2022 18:4 [DEBUG] Generating NPC Cache...", -- [1860]
+	"16/6/2022 18:4 [DEBUG] Enabling Addon", -- [1861]
+	"16/6/2022 18:4 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [1862]
+	"16/6/2022 18:6 [DEBUG] Showing Minimap Icon", -- [1863]
+	"16/6/2022 18:8 [DEBUG] NPC cache generated", -- [1864]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [1865]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [1866]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [1867]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [1868]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [1869]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [1870]
+	"16/6/2022 19:12 [DEBUG] Showing Minimap Icon", -- [1871]
+	"16/6/2022 19:12 [DEBUG] NPC cache generated", -- [1872]
+	"16/6/2022 19:15 [DEBUG] ---IAT Runtime---", -- [1873]
+	"16/6/2022 19:15 [DEBUG] Version: 3.41.0", -- [1874]
+	"16/6/2022 19:15 [DEBUG] Attempting to load from local NPC Cache", -- [1875]
+	"16/6/2022 19:15 [DEBUG] Generating NPC Cache...", -- [1876]
+	"16/6/2022 19:15 [DEBUG] Enabling Addon", -- [1877]
+	"16/6/2022 19:15 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [1878]
+	"16/6/2022 19:19 [DEBUG] Showing Minimap Icon", -- [1879]
+	"16/6/2022 19:20 [DEBUG] NPC cache generated", -- [1880]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [1881]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [1882]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [1883]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [1884]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [1885]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [1886]
+	"16/6/2022 23:46 [DEBUG] Showing Minimap Icon", -- [1887]
+	"16/6/2022 23:46 [DEBUG] NPC cache generated", -- [1888]
+	"16/6/2022 23:49 [DEBUG] ---IAT Runtime---", -- [1889]
+	"16/6/2022 23:49 [DEBUG] Version: 3.41.0", -- [1890]
+	"16/6/2022 23:49 [DEBUG] Attempting to load from local NPC Cache", -- [1891]
+	"16/6/2022 23:49 [DEBUG] Generating NPC Cache...", -- [1892]
+	"16/6/2022 23:49 [DEBUG] Enabling Addon", -- [1893]
+	"16/6/2022 23:49 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [1894]
+	"16/6/2022 23:50 [DEBUG] Showing Minimap Icon", -- [1895]
+	"16/6/2022 23:50 [DEBUG] NPC cache generated", -- [1896]
+	"16/6/2022 23:51 [DEBUG] ---IAT Runtime---", -- [1897]
+	"16/6/2022 23:51 [DEBUG] Version: 3.41.0", -- [1898]
+	"16/6/2022 23:51 [DEBUG] Attempting to load from local NPC Cache", -- [1899]
+	"16/6/2022 23:51 [DEBUG] Generating NPC Cache...", -- [1900]
+	"16/6/2022 23:51 [DEBUG] Enabling Addon", -- [1901]
+	"16/6/2022 23:51 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [1902]
+	"16/6/2022 23:53 [DEBUG] Showing Minimap Icon", -- [1903]
+	"16/6/2022 23:54 [DEBUG] NPC cache generated", -- [1904]
+	"17/6/2022 0:34 [DEBUG] Player has entered instance", -- [1905]
+	"17/6/2022 0:34 [DEBUG] 1733", -- [1906]
+	"17/6/2022 0:34 [DEBUG] Offical Instance Name: 1733 _1733", -- [1907]
+	"17/6/2022 0:34 [DEBUG] DifficultyID: 12", -- [1908]
+	"17/6/2022 0:34 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [1909]
+	"17/6/2022 0:34 [DEBUG] Player has entered instance", -- [1910]
+	"17/6/2022 0:34 [DEBUG] 1733", -- [1911]
+	"17/6/2022 0:34 [DEBUG] Offical Instance Name: 1733 _1733", -- [1912]
+	"17/6/2022 0:34 [DEBUG] DifficultyID: 12", -- [1913]
+	"17/6/2022 0:34 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [1914]
+	"17/6/2022 2:0 [DEBUG] ---IAT Runtime---", -- [1915]
+	"17/6/2022 2:0 [DEBUG] Version: 3.41.0", -- [1916]
+	"17/6/2022 2:0 [DEBUG] Attempting to load from local NPC Cache", -- [1917]
+	"17/6/2022 2:0 [DEBUG] Generating NPC Cache...", -- [1918]
+	"17/6/2022 2:0 [DEBUG] Enabling Addon", -- [1919]
+	"17/6/2022 2:0 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [1920]
+	"17/6/2022 1:59 [DEBUG] Showing Minimap Icon", -- [1921]
+	"17/6/2022 2:0 [DEBUG] NPC cache generated", -- [1922]
+	"17/6/2022 2:0 [DEBUG] ---IAT Runtime---", -- [1923]
+	"17/6/2022 2:0 [DEBUG] Version: 3.41.0", -- [1924]
+	"17/6/2022 2:0 [DEBUG] Attempting to load from local NPC Cache", -- [1925]
+	"17/6/2022 2:0 [DEBUG] Generating NPC Cache...", -- [1926]
+	"17/6/2022 2:0 [DEBUG] Enabling Addon", -- [1927]
+	"17/6/2022 2:0 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [1928]
+	"17/6/2022 2:8 [DEBUG] Showing Minimap Icon", -- [1929]
+	"17/6/2022 2:9 [DEBUG] NPC cache generated", -- [1930]
+	"17/6/2022 2:9 [DEBUG] ---IAT Runtime---", -- [1931]
+	"17/6/2022 2:9 [DEBUG] Version: 3.41.0", -- [1932]
+	"17/6/2022 2:9 [DEBUG] Attempting to load from local NPC Cache", -- [1933]
+	"17/6/2022 2:9 [DEBUG] Generating NPC Cache...", -- [1934]
+	"17/6/2022 2:9 [DEBUG] Enabling Addon", -- [1935]
+	"17/6/2022 2:9 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [1936]
+	"17/6/2022 2:11 [DEBUG] Showing Minimap Icon", -- [1937]
+	"17/6/2022 2:13 [DEBUG] NPC cache generated", -- [1938]
+	"17/6/2022 2:19 [DEBUG] ---IAT Runtime---", -- [1939]
+	"17/6/2022 2:19 [DEBUG] Version: 3.41.0", -- [1940]
+	"17/6/2022 2:19 [DEBUG] Attempting to load from local NPC Cache", -- [1941]
+	"17/6/2022 2:19 [DEBUG] Generating NPC Cache...", -- [1942]
+	"17/6/2022 2:19 [DEBUG] Enabling Addon", -- [1943]
+	"17/6/2022 2:19 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [1944]
+	"17/6/2022 2:19 [DEBUG] Showing Minimap Icon", -- [1945]
+	"17/6/2022 2:20 [DEBUG] NPC cache generated", -- [1946]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [1947]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [1948]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [1949]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [1950]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [1951]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [1952]
+	"17/6/2022 9:5 [DEBUG] Showing Minimap Icon", -- [1953]
+	"17/6/2022 9:5 [DEBUG] ---IAT Runtime---", -- [1954]
+	"17/6/2022 9:5 [DEBUG] Version: 3.41.0", -- [1955]
+	"17/6/2022 9:5 [DEBUG] Attempting to load from local NPC Cache", -- [1956]
+	"17/6/2022 9:5 [DEBUG] Generating NPC Cache...", -- [1957]
+	"17/6/2022 9:5 [DEBUG] Enabling Addon", -- [1958]
+	"17/6/2022 9:5 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [1959]
+	"17/6/2022 9:8 [DEBUG] Showing Minimap Icon", -- [1960]
+	"17/6/2022 9:9 [DEBUG] NPC cache generated", -- [1961]
+	"17/6/2022 9:10 [DEBUG] ---IAT Runtime---", -- [1962]
+	"17/6/2022 9:10 [DEBUG] Version: 3.41.0", -- [1963]
+	"17/6/2022 9:10 [DEBUG] Attempting to load from local NPC Cache", -- [1964]
+	"17/6/2022 9:10 [DEBUG] Generating NPC Cache...", -- [1965]
+	"17/6/2022 9:10 [DEBUG] Enabling Addon", -- [1966]
+	"17/6/2022 9:10 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [1967]
+	"17/6/2022 9:11 [DEBUG] Showing Minimap Icon", -- [1968]
+	"17/6/2022 9:11 [DEBUG] NPC cache generated", -- [1969]
+	"17/6/2022 9:28 [DEBUG] Player has entered instance", -- [1970]
+	"17/6/2022 9:28 [DEBUG] 1648", -- [1971]
+	"17/6/2022 9:28 [DEBUG] Offical Instance Name: 1648 _1648", -- [1972]
+	"17/6/2022 9:28 [DEBUG] Expansion: 4", -- [1973]
+	"17/6/2022 9:28 [DEBUG] Instance Type: Raids", -- [1974]
+	"17/6/2022 9:28 [DEBUG] Instance: 1648", -- [1975]
+	"17/6/2022 9:28 [DEBUG] DifficultyID: 14", -- [1976]
+	"17/6/2022 9:28 [DEBUG] Expansion: 4", -- [1977]
+	"17/6/2022 9:28 [DEBUG] Instance Type: Raids", -- [1978]
+	"17/6/2022 9:28 [DEBUG] Instance: 1648", -- [1979]
+	"17/6/2022 9:28 [DEBUG] Asking user whether they want to track this instance", -- [1980]
+	"17/6/2022 9:28 [DEBUG] Creating Tracking UI", -- [1981]
+	"17/6/2022 9:28 [DEBUG] InfoFrame Setup Complete", -- [1982]
+	"17/6/2022 9:28 |cff00ccffIAT: |cffffffffStarting achievement scan for Trial of Valor (This may freeze your game for a few seconds!)", -- [1983]
+	"17/6/2022 9:28 [DEBUG] Group Size set to: 1", -- [1984]
+	"17/6/2022 9:28 [DEBUG] Combatlog does not need to be enabled", -- [1985]
+	"17/6/2022 9:28 [DEBUG] Starting Initial Setup If Needed...", -- [1986]
+	"17/6/2022 9:28 [DEBUG] Starting Initial Setup For Instance", -- [1987]
+	"17/6/2022 9:28 [DEBUG] Setting Master Addon 1", -- [1988]
+	"17/6/2022 9:28 |cff00ccffIAT: |cffffffffAchievement Tracking Enabled for Trial of Valor", -- [1989]
+	"17/6/2022 9:28 [DEBUG] INSPECT_ACHIEVEMENT_READY FIRED. INFORMATION FOR: Alatra", -- [1990]
+	"17/6/2022 9:28 |cff00ccffIAT: |cffffffffAchievement Scanning Finished (1/1)", -- [1991]
+	"17/6/2022 9:28 |cff00ccffIAT: |cffffffffIncomplete achievements for this instance |cffffff00|Hachievement:11386:Player-61-0EBAD280:0:0:0:-1:0:0:0:0|h[Boneafide Tri Tip]|h|r|cffffff00|Hachievement:11337:Player-61-0EBAD280:0:0:0:-1:0:0:0:0|h[You Runed Everything!]|h|r|cffffff00|Hachievement:11377:Player-61-0EBAD280:0:0:0:-1:0:0:0:0|h[Patient Zero]|h|r", -- [1992]
+	"17/6/2022 9:28 |cff00ccffIAT: |cffffffff|cffffff00|Hachievement:11337:Player-61-0EBAD280:0:0:0:-1:0:0:0:0|h[You Runed Everything!]|h|r Players who need Achievement: Alatra, ", -- [1993]
+	"17/6/2022 9:30 [DEBUG] Calling Detect Boss 3: 114361", -- [1994]
+	"17/6/2022 9:30 [DEBUG] Found the following boss ID: 114361", -- [1995]
+	"17/6/2022 9:30 [DEBUG] Setting chat mode to SAY", -- [1996]
+	"17/6/2022 9:30 [DEBUG] Entered Combat", -- [1997]
+	"17/6/2022 9:30 [DEBUG] ---Encounter Started---", -- [1998]
+	"17/6/2022 9:30 [DEBUG] Encounter ID: 1958", -- [1999]
+	"17/6/2022 9:30 [DEBUG] Detected boss using ENCOUNTER ID", -- [2000]
+	"17/6/2022 9:30 [DEBUG] Found the following encounter ID: 1958", -- [2001]
+	"17/6/2022 9:30 [DEBUG] (E) Adding the following encounter ID: boss1", -- [2002]
+	"17/6/2022 9:30 [DEBUG] (E) Adding the following achievement ID beacuse it doesn't exist: 11337", -- [2003]
+	"17/6/2022 9:30 [DEBUG] Length of array: 1", -- [2004]
+	"17/6/2022 9:30 [DEBUG] Achievement: 11337", -- [2005]
+	"17/6/2022 9:30 |cff00ccffIAT: |cffffffffTracking: |cffffff00|Hachievement:11337:Player-61-0EBAD280:0:0:0:-1:0:0:0:0|h[You Runed Everything!]|h|r", -- [2006]
+	"17/6/2022 9:30 [DEBUG] Setting Master Addon 8", -- [2007]
+	"17/6/2022 9:30 [DEBUG] This addon is in charge of outputting messages", -- [2008]
+	"17/6/2022 9:31 [DEBUG] Not clearing global variables since encounter is still in progress", -- [2009]
+	"17/6/2022 9:31 [DEBUG] ---Encounter Ended---", -- [2010]
+	"17/6/2022 9:31 [DEBUG] Locking Detection for 3 seconds", -- [2011]
+	"17/6/2022 9:31 [DEBUG] Clearing Instance Variables if exists", -- [2012]
+	"17/6/2022 9:31 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2013]
+	"17/6/2022 9:31 [DEBUG] Clearing Instance Variables if exists", -- [2014]
+	"17/6/2022 9:31 [DEBUG] Clearing Instance Variables", -- [2015]
+	"17/6/2022 9:31 [DEBUG] Resetting Global Variables", -- [2016]
+	"17/6/2022 9:31 [DEBUG] InfoFrame does not need to be reset", -- [2017]
+	"17/6/2022 9:31 [DEBUG] Left Combat", -- [2018]
+	"17/6/2022 9:31 [DEBUG] Detection unlocked", -- [2019]
+	"17/6/2022 9:32 [DEBUG] Calling Detect Boss 2: 110973", -- [2020]
+	"17/6/2022 9:32 [DEBUG] Found the following boss ID: 110973", -- [2021]
+	"17/6/2022 9:32 [DEBUG] Clearing Instance Variables", -- [2022]
+	"17/6/2022 9:32 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [2023]
+	"17/6/2022 9:32 [DEBUG] Cleaning up instance events for _1648", -- [2024]
+	"17/6/2022 9:32 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [2025]
+	"17/6/2022 9:32 [DEBUG] Clearing Instance Variables if exists", -- [2026]
+	"17/6/2022 9:32 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2027]
+	"17/6/2022 9:32 [DEBUG] Clearing Instance Variables if exists", -- [2028]
+	"17/6/2022 9:32 [DEBUG] Clearing Instance Variables", -- [2029]
+	"17/6/2022 9:32 [DEBUG] Resetting Global Variables", -- [2030]
+	"17/6/2022 9:32 [DEBUG] InfoFrame does not need to be reset", -- [2031]
+	"17/6/2022 9:32 [DEBUG] Resetting PlayerRank", -- [2032]
+	"17/6/2022 9:32 [DEBUG] InfoFrame was not active", -- [2033]
+	"17/6/2022 9:32 [DEBUG] 6", -- [2034]
+	"17/6/2022 9:32 [DEBUG] Hiding Tracking UI", -- [2035]
+	"17/6/2022 9:34 [DEBUG] Hiding Tracking UI", -- [2036]
+	"17/6/2022 9:34 [DEBUG] Hiding Tracking UI", -- [2037]
+	"17/6/2022 9:36 [DEBUG] Hiding Tracking UI", -- [2038]
+	"17/6/2022 9:38 [DEBUG] Hiding Tracking UI", -- [2039]
+	"17/6/2022 9:38 [DEBUG] Player has entered instance", -- [2040]
+	"17/6/2022 9:38 [DEBUG] 1594", -- [2041]
+	"17/6/2022 9:38 [DEBUG] Offical Instance Name: 1594 _1594", -- [2042]
+	"17/6/2022 9:38 [DEBUG] Expansion: 3", -- [2043]
+	"17/6/2022 9:38 [DEBUG] Instance Type: Dungeons", -- [2044]
+	"17/6/2022 9:38 [DEBUG] Instance: 1594", -- [2045]
+	"17/6/2022 9:38 [DEBUG] DifficultyID: 1", -- [2046]
+	"17/6/2022 9:38 [DEBUG] Achievements cannot be earned for the following difficulty 1", -- [2047]
+	"17/6/2022 10:12 [DEBUG] Clearing Instance Variables", -- [2048]
+	"17/6/2022 10:12 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [2049]
+	"17/6/2022 10:12 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1912: attempt to call method 'InstanceCleanup' (a nil value).", -- [2050]
+	"17/6/2022 10:12 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [2051]
+	"17/6/2022 10:12 [DEBUG] Clearing Instance Variables if exists", -- [2052]
+	"17/6/2022 10:12 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2053]
+	"17/6/2022 10:12 [DEBUG] Clearing Instance Variables if exists", -- [2054]
+	"17/6/2022 10:12 [DEBUG] Clearing Instance Variables", -- [2055]
+	"17/6/2022 10:12 [DEBUG] Resetting Global Variables", -- [2056]
+	"17/6/2022 10:12 [DEBUG] InfoFrame does not need to be reset", -- [2057]
+	"17/6/2022 10:12 [DEBUG] Resetting PlayerRank", -- [2058]
+	"17/6/2022 10:12 [DEBUG] InfoFrame was not active", -- [2059]
+	"17/6/2022 10:13 [DEBUG] 6", -- [2060]
+	"17/6/2022 10:13 [DEBUG] Hiding Tracking UI", -- [2061]
+	"17/6/2022 11:33 [DEBUG] Hiding Tracking UI", -- [2062]
+	"17/6/2022 11:35 [DEBUG] Hiding Tracking UI", -- [2063]
+	"17/6/2022 11:35 [DEBUG] Hiding Tracking UI", -- [2064]
+	"17/6/2022 11:36 [DEBUG] Hiding Tracking UI", -- [2065]
+	"17/6/2022 11:36 [DEBUG] Player has entered instance", -- [2066]
+	"17/6/2022 11:36 [DEBUG] 1653", -- [2067]
+	"17/6/2022 11:36 [DEBUG] Offical Instance Name: 1653 _1653", -- [2068]
+	"17/6/2022 11:36 [DEBUG] DifficultyID: 12", -- [2069]
+	"17/6/2022 11:36 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [2070]
+	"17/6/2022 11:36 [DEBUG] Player has entered instance", -- [2071]
+	"17/6/2022 11:36 [DEBUG] 1653", -- [2072]
+	"17/6/2022 11:36 [DEBUG] Offical Instance Name: 1653 _1653", -- [2073]
+	"17/6/2022 11:36 [DEBUG] DifficultyID: 12", -- [2074]
+	"17/6/2022 11:36 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [2075]
+	"17/6/2022 11:38 [DEBUG] Hiding Tracking UI", -- [2076]
+	"17/6/2022 11:40 [DEBUG] Hiding Tracking UI", -- [2077]
+	"17/6/2022 11:41 [DEBUG] Hiding Tracking UI", -- [2078]
+	"17/6/2022 11:46 [DEBUG] Hiding Tracking UI", -- [2079]
+	"17/6/2022 11:54 [DEBUG] Hiding Tracking UI", -- [2080]
+	"17/6/2022 11:56 [DEBUG] Hiding Tracking UI", -- [2081]
+	"17/6/2022 12:1 [DEBUG] Hiding Tracking UI", -- [2082]
+	"17/6/2022 12:7 [DEBUG] Hiding Tracking UI", -- [2083]
+	"17/6/2022 12:8 [DEBUG] Hiding Tracking UI", -- [2084]
+	"17/6/2022 12:9 [DEBUG] Hiding Tracking UI", -- [2085]
+	"17/6/2022 12:9 [DEBUG] Hiding Tracking UI", -- [2086]
+	"17/6/2022 12:12 [DEBUG] Hiding Tracking UI", -- [2087]
+	"17/6/2022 12:12 [DEBUG] Hiding Tracking UI", -- [2088]
+	"17/6/2022 12:13 [DEBUG] Hiding Tracking UI", -- [2089]
+	"17/6/2022 12:13 [DEBUG] Hiding Tracking UI", -- [2090]
+	"17/6/2022 12:14 [DEBUG] Hiding Tracking UI", -- [2091]
+	"17/6/2022 12:14 [DEBUG] Player has entered instance", -- [2092]
+	"17/6/2022 12:14 [DEBUG] 1646", -- [2093]
+	"17/6/2022 12:14 [DEBUG] Offical Instance Name: 1646 _1646", -- [2094]
+	"17/6/2022 12:14 [DEBUG] DifficultyID: 12", -- [2095]
+	"17/6/2022 12:14 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [2096]
+	"17/6/2022 12:14 [DEBUG] Player has entered instance", -- [2097]
+	"17/6/2022 12:14 [DEBUG] 1646", -- [2098]
+	"17/6/2022 12:14 [DEBUG] Offical Instance Name: 1646 _1646", -- [2099]
+	"17/6/2022 12:14 [DEBUG] DifficultyID: 12", -- [2100]
+	"17/6/2022 12:14 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [2101]
+	"17/6/2022 12:30 [DEBUG] Hiding Tracking UI", -- [2102]
+	"17/6/2022 12:31 [DEBUG] Hiding Tracking UI", -- [2103]
+	"17/6/2022 12:32 [DEBUG] Hiding Tracking UI", -- [2104]
+	"17/6/2022 12:33 [DEBUG] Hiding Tracking UI", -- [2105]
+	"17/6/2022 12:35 [DEBUG] Hiding Tracking UI", -- [2106]
+	"17/6/2022 12:36 [DEBUG] Hiding Tracking UI", -- [2107]
+	"17/6/2022 12:42 [DEBUG] Hiding Tracking UI", -- [2108]
+	"17/6/2022 12:43 [DEBUG] Hiding Tracking UI", -- [2109]
+	"17/6/2022 12:43 [DEBUG] Hiding Tracking UI", -- [2110]
+	"17/6/2022 12:44 [DEBUG] Hiding Tracking UI", -- [2111]
+	"17/6/2022 12:45 [DEBUG] Hiding Tracking UI", -- [2112]
+	"17/6/2022 12:46 [DEBUG] Hiding Tracking UI", -- [2113]
+	"17/6/2022 12:47 [DEBUG] Hiding Tracking UI", -- [2114]
+	"17/6/2022 12:48 [DEBUG] Hiding Tracking UI", -- [2115]
+	"17/6/2022 12:48 [DEBUG] Player has entered instance", -- [2116]
+	"17/6/2022 12:48 [DEBUG] 939", -- [2117]
+	"17/6/2022 12:48 [DEBUG] Offical Instance Name: 939 _939", -- [2118]
+	"17/6/2022 12:48 [DEBUG] Expansion: 7", -- [2119]
+	"17/6/2022 12:48 [DEBUG] Instance Type: Dungeons", -- [2120]
+	"17/6/2022 12:48 [DEBUG] Instance: 939", -- [2121]
+	"17/6/2022 12:48 [DEBUG] DifficultyID: 2", -- [2122]
+	"17/6/2022 12:48 [DEBUG] Expansion: 7", -- [2123]
+	"17/6/2022 12:48 [DEBUG] Instance Type: Dungeons", -- [2124]
+	"17/6/2022 12:48 [DEBUG] Instance: 939", -- [2125]
+	"17/6/2022 12:48 [DEBUG] Asking user whether they want to track this instance", -- [2126]
+	"17/6/2022 12:48 [DEBUG] Displaying Tracking UI since it was already created", -- [2127]
+	"17/6/2022 12:48 [DEBUG] Clearing Instance Variables", -- [2128]
+	"17/6/2022 12:48 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [2129]
+	"17/6/2022 12:48 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1912: attempt to call method 'InstanceCleanup' (a nil value).", -- [2130]
+	"17/6/2022 12:48 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [2131]
+	"17/6/2022 12:48 [DEBUG] Clearing Instance Variables if exists", -- [2132]
+	"17/6/2022 12:48 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2133]
+	"17/6/2022 12:48 [DEBUG] Clearing Instance Variables if exists", -- [2134]
+	"17/6/2022 12:48 [DEBUG] Clearing Instance Variables", -- [2135]
+	"17/6/2022 12:48 [DEBUG] Resetting Global Variables", -- [2136]
+	"17/6/2022 12:48 [DEBUG] InfoFrame does not need to be reset", -- [2137]
+	"17/6/2022 12:48 [DEBUG] Resetting PlayerRank", -- [2138]
+	"17/6/2022 12:48 [DEBUG] InfoFrame was not active", -- [2139]
+	"17/6/2022 12:48 [DEBUG] 6", -- [2140]
+	"17/6/2022 12:48 [DEBUG] Hiding Tracking UI", -- [2141]
+	"17/6/2022 12:49 [DEBUG] Hiding Tracking UI", -- [2142]
+	"17/6/2022 12:50 [DEBUG] Hiding Tracking UI", -- [2143]
+	"17/6/2022 12:52 [DEBUG] Hiding Tracking UI", -- [2144]
+	"17/6/2022 12:52 [DEBUG] Hiding Tracking UI", -- [2145]
+	"17/6/2022 12:52 [DEBUG] Hiding Tracking UI", -- [2146]
+	"17/6/2022 12:54 [DEBUG] Hiding Tracking UI", -- [2147]
+	"17/6/2022 12:54 [DEBUG] Hiding Tracking UI", -- [2148]
+	"17/6/2022 12:55 [DEBUG] Hiding Tracking UI", -- [2149]
+	"17/6/2022 12:55 [DEBUG] Hiding Tracking UI", -- [2150]
+	"17/6/2022 12:57 [DEBUG] Hiding Tracking UI", -- [2151]
+	"17/6/2022 12:59 [DEBUG] Hiding Tracking UI", -- [2152]
+	"17/6/2022 12:59 [DEBUG] Player has entered instance", -- [2153]
+	"17/6/2022 12:59 [DEBUG] 1621", -- [2154]
+	"17/6/2022 12:59 [DEBUG] Offical Instance Name: 1621 _1621", -- [2155]
+	"17/6/2022 12:59 [DEBUG] DifficultyID: 12", -- [2156]
+	"17/6/2022 12:59 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [2157]
+	"17/6/2022 12:59 [DEBUG] Player has entered instance", -- [2158]
+	"17/6/2022 12:59 [DEBUG] 1621", -- [2159]
+	"17/6/2022 12:59 [DEBUG] Offical Instance Name: 1621 _1621", -- [2160]
+	"17/6/2022 12:59 [DEBUG] DifficultyID: 12", -- [2161]
+	"17/6/2022 12:59 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [2162]
+	"17/6/2022 13:2 [DEBUG] Hiding Tracking UI", -- [2163]
+	"17/6/2022 13:3 [DEBUG] Hiding Tracking UI", -- [2164]
+	"17/6/2022 13:3 [DEBUG] Player has entered instance", -- [2165]
+	"17/6/2022 13:3 [DEBUG] 1621", -- [2166]
+	"17/6/2022 13:3 [DEBUG] Offical Instance Name: 1621 _1621", -- [2167]
+	"17/6/2022 13:3 [DEBUG] DifficultyID: 12", -- [2168]
+	"17/6/2022 13:3 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [2169]
+	"17/6/2022 13:3 [DEBUG] Player has entered instance", -- [2170]
+	"17/6/2022 13:3 [DEBUG] 1621", -- [2171]
+	"17/6/2022 13:3 [DEBUG] Offical Instance Name: 1621 _1621", -- [2172]
+	"17/6/2022 13:3 [DEBUG] DifficultyID: 12", -- [2173]
+	"17/6/2022 13:3 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [2174]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [2175]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [2176]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [2177]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [2178]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [2179]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2180]
+	"17/6/2022 14:56 [DEBUG] Showing Minimap Icon", -- [2181]
+	"17/6/2022 14:56 [DEBUG] NPC cache generated", -- [2182]
+	"17/6/2022 14:59 [DEBUG] ---IAT Runtime---", -- [2183]
+	"17/6/2022 14:59 [DEBUG] Version: 3.41.0", -- [2184]
+	"17/6/2022 14:59 [DEBUG] Attempting to load from local NPC Cache", -- [2185]
+	"17/6/2022 14:59 [DEBUG] Generating NPC Cache...", -- [2186]
+	"17/6/2022 14:59 [DEBUG] Enabling Addon", -- [2187]
+	"17/6/2022 14:59 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2188]
+	"17/6/2022 15:2 [DEBUG] Showing Minimap Icon", -- [2189]
+	"17/6/2022 15:3 [DEBUG] NPC cache generated", -- [2190]
+	"17/6/2022 15:3 [DEBUG] Player has entered instance", -- [2191]
+	"17/6/2022 15:3 [DEBUG] 1621", -- [2192]
+	"17/6/2022 15:3 [DEBUG] Offical Instance Name: 1621 _1621", -- [2193]
+	"17/6/2022 15:3 [DEBUG] DifficultyID: 12", -- [2194]
+	"17/6/2022 15:3 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [2195]
+	"17/6/2022 15:3 [DEBUG] Player has entered instance", -- [2196]
+	"17/6/2022 15:3 [DEBUG] 1621", -- [2197]
+	"17/6/2022 15:3 [DEBUG] Offical Instance Name: 1621 _1621", -- [2198]
+	"17/6/2022 15:3 [DEBUG] DifficultyID: 12", -- [2199]
+	"17/6/2022 15:3 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [2200]
+	"17/6/2022 18:12 [DEBUG] Player has entered instance", -- [2201]
+	"17/6/2022 18:12 [DEBUG] 1579", -- [2202]
+	"17/6/2022 18:12 [DEBUG] Offical Instance Name: 1579 _1579", -- [2203]
+	"17/6/2022 18:12 [DEBUG] DifficultyID: 12", -- [2204]
+	"17/6/2022 18:12 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [2205]
+	"17/6/2022 18:12 [DEBUG] Player has entered instance", -- [2206]
+	"17/6/2022 18:12 [DEBUG] 1579", -- [2207]
+	"17/6/2022 18:12 [DEBUG] Offical Instance Name: 1579 _1579", -- [2208]
+	"17/6/2022 18:12 [DEBUG] DifficultyID: 12", -- [2209]
+	"17/6/2022 18:12 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [2210]
+	"17/6/2022 18:27 [DEBUG] ---IAT Runtime---", -- [2211]
+	"17/6/2022 18:27 [DEBUG] Version: 3.41.0", -- [2212]
+	"17/6/2022 18:27 [DEBUG] Attempting to load from local NPC Cache", -- [2213]
+	"17/6/2022 18:27 [DEBUG] Generating NPC Cache...", -- [2214]
+	"17/6/2022 18:27 [DEBUG] Enabling Addon", -- [2215]
+	"17/6/2022 18:27 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2216]
+	"17/6/2022 18:27 [DEBUG] Showing Minimap Icon", -- [2217]
+	"17/6/2022 18:29 [DEBUG] NPC cache generated", -- [2218]
+	"17/6/2022 18:39 [DEBUG] ---IAT Runtime---", -- [2219]
+	"17/6/2022 18:39 [DEBUG] Version: 3.41.0", -- [2220]
+	"17/6/2022 18:39 [DEBUG] Attempting to load from local NPC Cache", -- [2221]
+	"17/6/2022 18:39 [DEBUG] Generating NPC Cache...", -- [2222]
+	"17/6/2022 18:39 [DEBUG] Enabling Addon", -- [2223]
+	"17/6/2022 18:39 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2224]
+	"17/6/2022 18:38 [DEBUG] Showing Minimap Icon", -- [2225]
+	"17/6/2022 18:39 [DEBUG] NPC cache generated", -- [2226]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [2227]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [2228]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [2229]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [2230]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [2231]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2232]
+	"19/6/2022 5:56 [DEBUG] Showing Minimap Icon", -- [2233]
+	"19/6/2022 5:57 [DEBUG] NPC cache generated", -- [2234]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [2235]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [2236]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [2237]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [2238]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [2239]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2240]
+	"19/6/2022 12:48 [DEBUG] Showing Minimap Icon", -- [2241]
+	"19/6/2022 12:48 [DEBUG] NPC cache generated", -- [2242]
+	"19/6/2022 12:49 [DEBUG] ---IAT Runtime---", -- [2243]
+	"19/6/2022 12:49 [DEBUG] Version: 3.41.0", -- [2244]
+	"19/6/2022 12:49 [DEBUG] Attempting to load from local NPC Cache", -- [2245]
+	"19/6/2022 12:49 [DEBUG] Generating NPC Cache...", -- [2246]
+	"19/6/2022 12:49 [DEBUG] Enabling Addon", -- [2247]
+	"19/6/2022 12:49 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2248]
+	"19/6/2022 12:50 [DEBUG] Showing Minimap Icon", -- [2249]
+	"19/6/2022 12:50 [DEBUG] NPC cache generated", -- [2250]
+	"19/6/2022 12:52 [DEBUG] ---IAT Runtime---", -- [2251]
+	"19/6/2022 12:52 [DEBUG] Version: 3.41.0", -- [2252]
+	"19/6/2022 12:52 [DEBUG] Attempting to load from local NPC Cache", -- [2253]
+	"19/6/2022 12:52 [DEBUG] Generating NPC Cache...", -- [2254]
+	"19/6/2022 12:52 [DEBUG] Enabling Addon", -- [2255]
+	"19/6/2022 12:52 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2256]
+	"19/6/2022 12:53 [DEBUG] Showing Minimap Icon", -- [2257]
+	"19/6/2022 12:54 [DEBUG] NPC cache generated", -- [2258]
+	"19/6/2022 12:58 [DEBUG] ---IAT Runtime---", -- [2259]
+	"19/6/2022 12:58 [DEBUG] Version: 3.41.0", -- [2260]
+	"19/6/2022 12:58 [DEBUG] Attempting to load from local NPC Cache", -- [2261]
+	"19/6/2022 12:58 [DEBUG] Generating NPC Cache...", -- [2262]
+	"19/6/2022 12:58 [DEBUG] Enabling Addon", -- [2263]
+	"19/6/2022 12:58 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2264]
+	"19/6/2022 13:1 [DEBUG] Showing Minimap Icon", -- [2265]
+	"19/6/2022 13:1 [DEBUG] NPC cache generated", -- [2266]
+	"19/6/2022 13:2 [DEBUG] ---IAT Runtime---", -- [2267]
+	"19/6/2022 13:2 [DEBUG] Version: 3.41.0", -- [2268]
+	"19/6/2022 13:2 [DEBUG] Attempting to load from local NPC Cache", -- [2269]
+	"19/6/2022 13:2 [DEBUG] Generating NPC Cache...", -- [2270]
+	"19/6/2022 13:2 [DEBUG] Enabling Addon", -- [2271]
+	"19/6/2022 13:2 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2272]
+	"19/6/2022 13:3 [DEBUG] Showing Minimap Icon", -- [2273]
+	"19/6/2022 13:4 [DEBUG] NPC cache generated", -- [2274]
+	"19/6/2022 13:32 [DEBUG] ---IAT Runtime---", -- [2275]
+	"19/6/2022 13:32 [DEBUG] Version: 3.41.0", -- [2276]
+	"19/6/2022 13:32 [DEBUG] Attempting to load from local NPC Cache", -- [2277]
+	"19/6/2022 13:32 [DEBUG] Generating NPC Cache...", -- [2278]
+	"19/6/2022 13:32 [DEBUG] Enabling Addon", -- [2279]
+	"19/6/2022 13:32 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2280]
+	"19/6/2022 13:34 [DEBUG] Showing Minimap Icon", -- [2281]
+	"19/6/2022 13:34 [DEBUG] NPC cache generated", -- [2282]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [2283]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [2284]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [2285]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [2286]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [2287]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2288]
+	"19/6/2022 16:43 [DEBUG] Showing Minimap Icon", -- [2289]
+	"19/6/2022 16:43 [DEBUG] NPC cache generated", -- [2290]
+	"19/6/2022 16:43 [DEBUG] ---IAT Runtime---", -- [2291]
+	"19/6/2022 16:43 [DEBUG] Version: 3.41.0", -- [2292]
+	"19/6/2022 16:43 [DEBUG] Attempting to load from local NPC Cache", -- [2293]
+	"19/6/2022 16:43 [DEBUG] Generating NPC Cache...", -- [2294]
+	"19/6/2022 16:43 [DEBUG] Enabling Addon", -- [2295]
+	"19/6/2022 16:43 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2296]
+	"19/6/2022 16:45 [DEBUG] Showing Minimap Icon", -- [2297]
+	"19/6/2022 16:46 [DEBUG] NPC cache generated", -- [2298]
+	"19/6/2022 19:5 [DEBUG] Player has entered instance", -- [2299]
+	"19/6/2022 19:5 [DEBUG] 2162", -- [2300]
+	"19/6/2022 19:5 [DEBUG] Offical Instance Name: 2162 _2162", -- [2301]
+	"19/6/2022 19:5 [DEBUG] DifficultyID: 167", -- [2302]
+	"19/6/2022 19:5 [DEBUG] Achievements cannot be earned for the following difficulty 167", -- [2303]
+	"19/6/2022 19:5 [DEBUG] Player has entered instance", -- [2304]
+	"19/6/2022 19:5 [DEBUG] 2162", -- [2305]
+	"19/6/2022 19:5 [DEBUG] Offical Instance Name: 2162 _2162", -- [2306]
+	"19/6/2022 19:5 [DEBUG] DifficultyID: 167", -- [2307]
+	"19/6/2022 19:5 [DEBUG] Achievements cannot be earned for the following difficulty 167", -- [2308]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [2309]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [2310]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [2311]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [2312]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [2313]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2314]
+	"22/6/2022 19:1 [DEBUG] Showing Minimap Icon", -- [2315]
+	"22/6/2022 19:2 [DEBUG] NPC cache generated", -- [2316]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [2317]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [2318]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [2319]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [2320]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [2321]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2322]
+	"22/6/2022 20:37 [DEBUG] Showing Minimap Icon", -- [2323]
+	"22/6/2022 20:37 [DEBUG] NPC cache generated", -- [2324]
+	"22/6/2022 20:49 [DEBUG] ---IAT Runtime---", -- [2325]
+	"22/6/2022 20:49 [DEBUG] Version: 3.41.0", -- [2326]
+	"22/6/2022 20:49 [DEBUG] Attempting to load from local NPC Cache", -- [2327]
+	"22/6/2022 20:49 [DEBUG] Generating NPC Cache...", -- [2328]
+	"22/6/2022 20:49 [DEBUG] Enabling Addon", -- [2329]
+	"22/6/2022 20:49 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2330]
+	"22/6/2022 20:51 [DEBUG] Showing Minimap Icon", -- [2331]
+	"22/6/2022 20:52 [DEBUG] NPC cache generated", -- [2332]
+	"22/6/2022 20:53 [DEBUG] ---IAT Runtime---", -- [2333]
+	"22/6/2022 20:53 [DEBUG] Version: 3.41.0", -- [2334]
+	"22/6/2022 20:53 [DEBUG] Attempting to load from local NPC Cache", -- [2335]
+	"22/6/2022 20:53 [DEBUG] Generating NPC Cache...", -- [2336]
+	"22/6/2022 20:53 [DEBUG] Enabling Addon", -- [2337]
+	"22/6/2022 20:53 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2338]
+	"22/6/2022 20:56 [DEBUG] Showing Minimap Icon", -- [2339]
+	"22/6/2022 20:57 [DEBUG] NPC cache generated", -- [2340]
+	"22/6/2022 20:57 [DEBUG] ---IAT Runtime---", -- [2341]
+	"22/6/2022 20:57 [DEBUG] Version: 3.41.0", -- [2342]
+	"22/6/2022 20:57 [DEBUG] Attempting to load from local NPC Cache", -- [2343]
+	"22/6/2022 20:57 [DEBUG] Generating NPC Cache...", -- [2344]
+	"22/6/2022 20:57 [DEBUG] Enabling Addon", -- [2345]
+	"22/6/2022 20:57 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2346]
+	"22/6/2022 20:57 [DEBUG] Showing Minimap Icon", -- [2347]
+	"22/6/2022 20:59 [DEBUG] NPC cache generated", -- [2348]
+	"22/6/2022 21:6 [DEBUG] ---IAT Runtime---", -- [2349]
+	"22/6/2022 21:6 [DEBUG] Version: 3.41.0", -- [2350]
+	"22/6/2022 21:6 [DEBUG] Attempting to load from local NPC Cache", -- [2351]
+	"22/6/2022 21:6 [DEBUG] Generating NPC Cache...", -- [2352]
+	"22/6/2022 21:6 [DEBUG] Enabling Addon", -- [2353]
+	"22/6/2022 21:6 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2354]
+	"22/6/2022 21:6 [DEBUG] Showing Minimap Icon", -- [2355]
+	"22/6/2022 21:6 [DEBUG] NPC cache generated", -- [2356]
+	"22/6/2022 21:11 [DEBUG] ---IAT Runtime---", -- [2357]
+	"22/6/2022 21:11 [DEBUG] Version: 3.41.0", -- [2358]
+	"22/6/2022 21:11 [DEBUG] Attempting to load from local NPC Cache", -- [2359]
+	"22/6/2022 21:11 [DEBUG] Generating NPC Cache...", -- [2360]
+	"22/6/2022 21:11 [DEBUG] Enabling Addon", -- [2361]
+	"22/6/2022 21:11 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2362]
+	"22/6/2022 21:13 [DEBUG] Showing Minimap Icon", -- [2363]
+	"22/6/2022 21:15 [DEBUG] NPC cache generated", -- [2364]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [2365]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [2366]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [2367]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [2368]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [2369]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2370]
+	"23/6/2022 9:19 [DEBUG] Showing Minimap Icon", -- [2371]
+	"23/6/2022 9:20 [DEBUG] ---IAT Runtime---", -- [2372]
+	"23/6/2022 9:20 [DEBUG] Version: 3.41.0", -- [2373]
+	"23/6/2022 9:20 [DEBUG] Attempting to load from local NPC Cache", -- [2374]
+	"23/6/2022 9:20 [DEBUG] Generating NPC Cache...", -- [2375]
+	"23/6/2022 9:20 [DEBUG] Enabling Addon", -- [2376]
+	"23/6/2022 9:20 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2377]
+	"23/6/2022 9:22 [DEBUG] Showing Minimap Icon", -- [2378]
+	"23/6/2022 9:22 [DEBUG] ---IAT Runtime---", -- [2379]
+	"23/6/2022 9:22 [DEBUG] Version: 3.41.0", -- [2380]
+	"23/6/2022 9:22 [DEBUG] Attempting to load from local NPC Cache", -- [2381]
+	"23/6/2022 9:22 [DEBUG] Generating NPC Cache...", -- [2382]
+	"23/6/2022 9:22 [DEBUG] Enabling Addon", -- [2383]
+	"23/6/2022 9:22 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2384]
+	"23/6/2022 9:26 [DEBUG] Showing Minimap Icon", -- [2385]
+	"23/6/2022 9:27 [DEBUG] NPC cache generated", -- [2386]
+	"23/6/2022 9:29 [DEBUG] ---IAT Runtime---", -- [2387]
+	"23/6/2022 9:29 [DEBUG] Version: 3.41.0", -- [2388]
+	"23/6/2022 9:29 [DEBUG] Attempting to load from local NPC Cache", -- [2389]
+	"23/6/2022 9:29 [DEBUG] Generating NPC Cache...", -- [2390]
+	"23/6/2022 9:29 [DEBUG] Enabling Addon", -- [2391]
+	"23/6/2022 9:29 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2392]
+	"23/6/2022 9:31 [DEBUG] Showing Minimap Icon", -- [2393]
+	"23/6/2022 9:32 [DEBUG] ---IAT Runtime---", -- [2394]
+	"23/6/2022 9:32 [DEBUG] Version: 3.41.0", -- [2395]
+	"23/6/2022 9:32 [DEBUG] Attempting to load from local NPC Cache", -- [2396]
+	"23/6/2022 9:32 [DEBUG] Generating NPC Cache...", -- [2397]
+	"23/6/2022 9:32 [DEBUG] Enabling Addon", -- [2398]
+	"23/6/2022 9:32 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2399]
+	"23/6/2022 9:33 [DEBUG] Showing Minimap Icon", -- [2400]
+	"23/6/2022 9:34 [DEBUG] NPC cache generated", -- [2401]
+	"23/6/2022 9:49 [DEBUG] Player has entered instance", -- [2402]
+	"23/6/2022 9:49 [DEBUG] 2290", -- [2403]
+	"23/6/2022 9:49 [DEBUG] Offical Instance Name: 2290 _2290", -- [2404]
+	"23/6/2022 9:49 [DEBUG] Expansion: 2", -- [2405]
+	"23/6/2022 9:49 [DEBUG] Instance Type: Dungeons", -- [2406]
+	"23/6/2022 9:49 [DEBUG] Instance: 2290", -- [2407]
+	"23/6/2022 9:49 [DEBUG] DifficultyID: 1", -- [2408]
+	"23/6/2022 9:49 [DEBUG] Achievements cannot be earned for the following difficulty 1", -- [2409]
+	"23/6/2022 10:8 [DEBUG] 6", -- [2410]
+	"23/6/2022 10:8 [DEBUG] Clearing Instance Variables", -- [2411]
+	"23/6/2022 10:8 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [2412]
+	"23/6/2022 10:8 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1912: attempt to call method 'InstanceCleanup' (a nil value).", -- [2413]
+	"23/6/2022 10:8 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [2414]
+	"23/6/2022 10:8 [DEBUG] Clearing Instance Variables if exists", -- [2415]
+	"23/6/2022 10:8 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2416]
+	"23/6/2022 10:8 [DEBUG] Clearing Instance Variables if exists", -- [2417]
+	"23/6/2022 10:8 [DEBUG] Clearing Instance Variables", -- [2418]
+	"23/6/2022 10:8 [DEBUG] Resetting Global Variables", -- [2419]
+	"23/6/2022 10:8 [DEBUG] InfoFrame does not need to be reset", -- [2420]
+	"23/6/2022 10:8 [DEBUG] Resetting PlayerRank", -- [2421]
+	"23/6/2022 10:8 [DEBUG] InfoFrame was not active", -- [2422]
+	"23/6/2022 11:44 [DEBUG] Player has entered instance", -- [2423]
+	"23/6/2022 11:44 [DEBUG] 2289", -- [2424]
+	"23/6/2022 11:44 [DEBUG] Offical Instance Name: 2289 _2289", -- [2425]
+	"23/6/2022 11:44 [DEBUG] Expansion: 2", -- [2426]
+	"23/6/2022 11:44 [DEBUG] Instance Type: Dungeons", -- [2427]
+	"23/6/2022 11:44 [DEBUG] Instance: 2289", -- [2428]
+	"23/6/2022 11:44 [DEBUG] DifficultyID: 1", -- [2429]
+	"23/6/2022 11:44 [DEBUG] Achievements cannot be earned for the following difficulty 1", -- [2430]
+	"23/6/2022 11:57 [DEBUG] 6", -- [2431]
+	"23/6/2022 11:57 [DEBUG] Clearing Instance Variables", -- [2432]
+	"23/6/2022 11:57 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [2433]
+	"23/6/2022 11:57 [DEBUG] Function failed, error text: Interface\\AddOns\\InstanceAchievementTracker\\GUI.lua:2257: attempt to index upvalue 'InfoFrame' (a nil value).", -- [2434]
+	"23/6/2022 11:57 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [2435]
+	"23/6/2022 11:57 [DEBUG] Clearing Instance Variables if exists", -- [2436]
+	"23/6/2022 11:57 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2437]
+	"23/6/2022 11:57 [DEBUG] Clearing Instance Variables if exists", -- [2438]
+	"23/6/2022 11:57 [DEBUG] Clearing Instance Variables", -- [2439]
+	"23/6/2022 11:57 [DEBUG] Resetting Global Variables", -- [2440]
+	"23/6/2022 11:57 [DEBUG] InfoFrame does not need to be reset", -- [2441]
+	"23/6/2022 11:57 [DEBUG] Resetting PlayerRank", -- [2442]
+	"23/6/2022 11:57 [DEBUG] InfoFrame was not active", -- [2443]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [2444]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [2445]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [2446]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [2447]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [2448]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2449]
+	"23/6/2022 14:5 [DEBUG] Showing Minimap Icon", -- [2450]
+	"23/6/2022 14:5 [DEBUG] NPC cache generated", -- [2451]
+	"23/6/2022 14:7 [DEBUG] ---IAT Runtime---", -- [2452]
+	"23/6/2022 14:7 [DEBUG] Version: 3.41.0", -- [2453]
+	"23/6/2022 14:7 [DEBUG] Attempting to load from local NPC Cache", -- [2454]
+	"23/6/2022 14:7 [DEBUG] Generating NPC Cache...", -- [2455]
+	"23/6/2022 14:7 [DEBUG] Enabling Addon", -- [2456]
+	"23/6/2022 14:7 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2457]
+	"23/6/2022 14:10 [DEBUG] Showing Minimap Icon", -- [2458]
+	"23/6/2022 14:10 [DEBUG] NPC cache generated", -- [2459]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [2460]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [2461]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [2462]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [2463]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [2464]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2465]
+	"23/6/2022 16:4 [DEBUG] Showing Minimap Icon", -- [2466]
+	"23/6/2022 16:4 [DEBUG] NPC cache generated", -- [2467]
+	"23/6/2022 16:45 [DEBUG] Player has entered instance", -- [2468]
+	"23/6/2022 16:45 [DEBUG] 2286", -- [2469]
+	"23/6/2022 16:45 [DEBUG] Offical Instance Name: 2286 _2286", -- [2470]
+	"23/6/2022 16:45 [DEBUG] Expansion: 2", -- [2471]
+	"23/6/2022 16:45 [DEBUG] Instance Type: Dungeons", -- [2472]
+	"23/6/2022 16:45 [DEBUG] Instance: 2286", -- [2473]
+	"23/6/2022 16:45 [DEBUG] DifficultyID: 1", -- [2474]
+	"23/6/2022 16:45 [DEBUG] Achievements cannot be earned for the following difficulty 1", -- [2475]
+	"23/6/2022 17:2 [DEBUG] 6", -- [2476]
+	"23/6/2022 17:2 [DEBUG] Clearing Instance Variables", -- [2477]
+	"23/6/2022 17:2 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [2478]
+	"23/6/2022 17:2 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1912: attempt to call method 'InstanceCleanup' (a nil value).", -- [2479]
+	"23/6/2022 17:2 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [2480]
+	"23/6/2022 17:2 [DEBUG] Clearing Instance Variables if exists", -- [2481]
+	"23/6/2022 17:2 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2482]
+	"23/6/2022 17:2 [DEBUG] Clearing Instance Variables if exists", -- [2483]
+	"23/6/2022 17:2 [DEBUG] Clearing Instance Variables", -- [2484]
+	"23/6/2022 17:2 [DEBUG] Resetting Global Variables", -- [2485]
+	"23/6/2022 17:2 [DEBUG] InfoFrame does not need to be reset", -- [2486]
+	"23/6/2022 17:2 [DEBUG] Resetting PlayerRank", -- [2487]
+	"23/6/2022 17:2 [DEBUG] InfoFrame was not active", -- [2488]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [2489]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [2490]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [2491]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [2492]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [2493]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2494]
+	"24/6/2022 2:30 [DEBUG] Showing Minimap Icon", -- [2495]
+	"24/6/2022 2:30 [DEBUG] NPC cache generated", -- [2496]
+	"24/6/2022 2:35 [DEBUG] ---IAT Runtime---", -- [2497]
+	"24/6/2022 2:35 [DEBUG] Version: 3.41.0", -- [2498]
+	"24/6/2022 2:35 [DEBUG] Attempting to load from local NPC Cache", -- [2499]
+	"24/6/2022 2:35 [DEBUG] Generating NPC Cache...", -- [2500]
+	"24/6/2022 2:35 [DEBUG] Enabling Addon", -- [2501]
+	"24/6/2022 2:35 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2502]
+	"24/6/2022 2:37 [DEBUG] Showing Minimap Icon", -- [2503]
+	"24/6/2022 2:38 [DEBUG] NPC cache generated", -- [2504]
+	"24/6/2022 2:38 [DEBUG] ---IAT Runtime---", -- [2505]
+	"24/6/2022 2:38 [DEBUG] Version: 3.41.0", -- [2506]
+	"24/6/2022 2:38 [DEBUG] Attempting to load from local NPC Cache", -- [2507]
+	"24/6/2022 2:38 [DEBUG] Generating NPC Cache...", -- [2508]
+	"24/6/2022 2:38 [DEBUG] Enabling Addon", -- [2509]
+	"24/6/2022 2:38 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2510]
+	"24/6/2022 2:41 [DEBUG] Showing Minimap Icon", -- [2511]
+	"24/6/2022 2:43 [DEBUG] NPC cache generated", -- [2512]
+	"24/6/2022 2:46 [DEBUG] ---IAT Runtime---", -- [2513]
+	"24/6/2022 2:46 [DEBUG] Version: 3.41.0", -- [2514]
+	"24/6/2022 2:46 [DEBUG] Attempting to load from local NPC Cache", -- [2515]
+	"24/6/2022 2:46 [DEBUG] Generating NPC Cache...", -- [2516]
+	"24/6/2022 2:46 [DEBUG] Enabling Addon", -- [2517]
+	"24/6/2022 2:46 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2518]
+	"24/6/2022 2:47 [DEBUG] Showing Minimap Icon", -- [2519]
+	"24/6/2022 2:48 [DEBUG] NPC cache generated", -- [2520]
+	"24/6/2022 2:50 [DEBUG] ---IAT Runtime---", -- [2521]
+	"24/6/2022 2:50 [DEBUG] Version: 3.41.0", -- [2522]
+	"24/6/2022 2:50 [DEBUG] Attempting to load from local NPC Cache", -- [2523]
+	"24/6/2022 2:50 [DEBUG] Generating NPC Cache...", -- [2524]
+	"24/6/2022 2:50 [DEBUG] Enabling Addon", -- [2525]
+	"24/6/2022 2:50 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2526]
+	"24/6/2022 2:52 [DEBUG] Showing Minimap Icon", -- [2527]
+	"24/6/2022 2:54 [DEBUG] NPC cache generated", -- [2528]
+	"24/6/2022 3:15 [DEBUG] ---IAT Runtime---", -- [2529]
+	"24/6/2022 3:15 [DEBUG] Version: 3.41.0", -- [2530]
+	"24/6/2022 3:15 [DEBUG] Attempting to load from local NPC Cache", -- [2531]
+	"24/6/2022 3:15 [DEBUG] Generating NPC Cache...", -- [2532]
+	"24/6/2022 3:15 [DEBUG] Enabling Addon", -- [2533]
+	"24/6/2022 3:15 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2534]
+	"24/6/2022 3:17 [DEBUG] Showing Minimap Icon", -- [2535]
+	"24/6/2022 3:18 [DEBUG] NPC cache generated", -- [2536]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [2537]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [2538]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [2539]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [2540]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [2541]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2542]
+	"24/6/2022 11:29 [DEBUG] Showing Minimap Icon", -- [2543]
+	"24/6/2022 11:29 [DEBUG] NPC cache generated", -- [2544]
+	"24/6/2022 11:29 [DEBUG] ---IAT Runtime---", -- [2545]
+	"24/6/2022 11:29 [DEBUG] Version: 3.41.0", -- [2546]
+	"24/6/2022 11:29 [DEBUG] Attempting to load from local NPC Cache", -- [2547]
+	"24/6/2022 11:29 [DEBUG] Generating NPC Cache...", -- [2548]
+	"24/6/2022 11:29 [DEBUG] Enabling Addon", -- [2549]
+	"24/6/2022 11:29 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2550]
+	"24/6/2022 11:32 [DEBUG] Showing Minimap Icon", -- [2551]
+	"24/6/2022 11:33 [DEBUG] NPC cache generated", -- [2552]
+	"24/6/2022 11:34 [DEBUG] ---IAT Runtime---", -- [2553]
+	"24/6/2022 11:34 [DEBUG] Version: 3.41.0", -- [2554]
+	"24/6/2022 11:34 [DEBUG] Attempting to load from local NPC Cache", -- [2555]
+	"24/6/2022 11:34 [DEBUG] Generating NPC Cache...", -- [2556]
+	"24/6/2022 11:34 [DEBUG] Enabling Addon", -- [2557]
+	"24/6/2022 11:34 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2558]
+	"24/6/2022 11:35 [DEBUG] Showing Minimap Icon", -- [2559]
+	"24/6/2022 11:35 [DEBUG] NPC cache generated", -- [2560]
+	"24/6/2022 11:39 [DEBUG] Player has entered instance", -- [2561]
+	"24/6/2022 11:39 [DEBUG] 1466", -- [2562]
+	"24/6/2022 11:39 [DEBUG] Offical Instance Name: 1466 _1466", -- [2563]
+	"24/6/2022 11:39 [DEBUG] Expansion: 4", -- [2564]
+	"24/6/2022 11:39 [DEBUG] Instance Type: Dungeons", -- [2565]
+	"24/6/2022 11:39 [DEBUG] Instance: 1466", -- [2566]
+	"24/6/2022 11:39 [DEBUG] DifficultyID: 2", -- [2567]
+	"24/6/2022 11:39 [DEBUG] Achievements cannot be earned for the following difficulty 2", -- [2568]
+	"24/6/2022 11:50 [DEBUG] 6", -- [2569]
+	"24/6/2022 11:50 [DEBUG] Clearing Instance Variables", -- [2570]
+	"24/6/2022 11:50 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [2571]
+	"24/6/2022 11:50 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1912: attempt to call method 'InstanceCleanup' (a nil value).", -- [2572]
+	"24/6/2022 11:50 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [2573]
+	"24/6/2022 11:50 [DEBUG] Clearing Instance Variables if exists", -- [2574]
+	"24/6/2022 11:50 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2575]
+	"24/6/2022 11:50 [DEBUG] Clearing Instance Variables if exists", -- [2576]
+	"24/6/2022 11:50 [DEBUG] Clearing Instance Variables", -- [2577]
+	"24/6/2022 11:50 [DEBUG] Resetting Global Variables", -- [2578]
+	"24/6/2022 11:50 [DEBUG] InfoFrame does not need to be reset", -- [2579]
+	"24/6/2022 11:50 [DEBUG] Resetting PlayerRank", -- [2580]
+	"24/6/2022 11:50 [DEBUG] InfoFrame was not active", -- [2581]
+	"24/6/2022 12:1 [DEBUG] Player has entered instance", -- [2582]
+	"24/6/2022 12:1 [DEBUG] 1494", -- [2583]
+	"24/6/2022 12:1 [DEBUG] Offical Instance Name: 1494 _1494", -- [2584]
+	"24/6/2022 12:1 [DEBUG] DifficultyID: 12", -- [2585]
+	"24/6/2022 12:1 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [2586]
+	"24/6/2022 12:1 [DEBUG] Player has entered instance", -- [2587]
+	"24/6/2022 12:1 [DEBUG] 1494", -- [2588]
+	"24/6/2022 12:1 [DEBUG] Offical Instance Name: 1494 _1494", -- [2589]
+	"24/6/2022 12:1 [DEBUG] DifficultyID: 12", -- [2590]
+	"24/6/2022 12:1 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [2591]
+	"24/6/2022 12:8 [DEBUG] Player has entered instance", -- [2592]
+	"24/6/2022 12:8 [DEBUG] 1458", -- [2593]
+	"24/6/2022 12:8 [DEBUG] Offical Instance Name: 1458 _1458", -- [2594]
+	"24/6/2022 12:8 [DEBUG] Expansion: 4", -- [2595]
+	"24/6/2022 12:8 [DEBUG] Instance Type: Dungeons", -- [2596]
+	"24/6/2022 12:8 [DEBUG] Instance: 1458", -- [2597]
+	"24/6/2022 12:8 [DEBUG] DifficultyID: 2", -- [2598]
+	"24/6/2022 12:8 [DEBUG] Achievements cannot be earned for the following difficulty 2", -- [2599]
+	"24/6/2022 12:21 [DEBUG] 6", -- [2600]
+	"24/6/2022 12:21 [DEBUG] Clearing Instance Variables", -- [2601]
+	"24/6/2022 12:21 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [2602]
+	"24/6/2022 12:21 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1912: attempt to call method 'InstanceCleanup' (a nil value).", -- [2603]
+	"24/6/2022 12:21 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [2604]
+	"24/6/2022 12:21 [DEBUG] Clearing Instance Variables if exists", -- [2605]
+	"24/6/2022 12:21 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2606]
+	"24/6/2022 12:21 [DEBUG] Clearing Instance Variables if exists", -- [2607]
+	"24/6/2022 12:21 [DEBUG] Clearing Instance Variables", -- [2608]
+	"24/6/2022 12:21 [DEBUG] Resetting Global Variables", -- [2609]
+	"24/6/2022 12:21 [DEBUG] InfoFrame does not need to be reset", -- [2610]
+	"24/6/2022 12:21 [DEBUG] Resetting PlayerRank", -- [2611]
+	"24/6/2022 12:21 [DEBUG] InfoFrame was not active", -- [2612]
+	"24/6/2022 12:24 [DEBUG] Player has entered instance", -- [2613]
+	"24/6/2022 12:24 [DEBUG] 1492", -- [2614]
+	"24/6/2022 12:24 [DEBUG] Offical Instance Name: 1492 _1492", -- [2615]
+	"24/6/2022 12:24 [DEBUG] Expansion: 4", -- [2616]
+	"24/6/2022 12:24 [DEBUG] Instance Type: Dungeons", -- [2617]
+	"24/6/2022 12:24 [DEBUG] Instance: 1492", -- [2618]
+	"24/6/2022 12:24 [DEBUG] DifficultyID: 2", -- [2619]
+	"24/6/2022 12:24 [DEBUG] Achievements cannot be earned for the following difficulty 2", -- [2620]
+	"24/6/2022 12:31 [DEBUG] 6", -- [2621]
+	"24/6/2022 12:31 [DEBUG] Clearing Instance Variables", -- [2622]
+	"24/6/2022 12:31 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [2623]
+	"24/6/2022 12:31 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1912: attempt to call method 'InstanceCleanup' (a nil value).", -- [2624]
+	"24/6/2022 12:31 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [2625]
+	"24/6/2022 12:31 [DEBUG] Clearing Instance Variables if exists", -- [2626]
+	"24/6/2022 12:31 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2627]
+	"24/6/2022 12:31 [DEBUG] Clearing Instance Variables if exists", -- [2628]
+	"24/6/2022 12:31 [DEBUG] Clearing Instance Variables", -- [2629]
+	"24/6/2022 12:31 [DEBUG] Resetting Global Variables", -- [2630]
+	"24/6/2022 12:31 [DEBUG] InfoFrame does not need to be reset", -- [2631]
+	"24/6/2022 12:31 [DEBUG] Resetting PlayerRank", -- [2632]
+	"24/6/2022 12:31 [DEBUG] InfoFrame was not active", -- [2633]
+	"24/6/2022 12:33 [DEBUG] Player has entered instance", -- [2634]
+	"24/6/2022 12:33 [DEBUG] 1477", -- [2635]
+	"24/6/2022 12:33 [DEBUG] Offical Instance Name: 1477 _1477", -- [2636]
+	"24/6/2022 12:33 [DEBUG] Expansion: 4", -- [2637]
+	"24/6/2022 12:33 [DEBUG] Instance Type: Dungeons", -- [2638]
+	"24/6/2022 12:33 [DEBUG] Instance: 1477", -- [2639]
+	"24/6/2022 12:33 [DEBUG] DifficultyID: 2", -- [2640]
+	"24/6/2022 12:33 [DEBUG] Achievements cannot be earned for the following difficulty 2", -- [2641]
+	"24/6/2022 12:48 [DEBUG] 6", -- [2642]
+	"24/6/2022 12:48 [DEBUG] Clearing Instance Variables", -- [2643]
+	"24/6/2022 12:48 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [2644]
+	"24/6/2022 12:48 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1912: attempt to call method 'InstanceCleanup' (a nil value).", -- [2645]
+	"24/6/2022 12:48 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [2646]
+	"24/6/2022 12:48 [DEBUG] Clearing Instance Variables if exists", -- [2647]
+	"24/6/2022 12:48 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2648]
+	"24/6/2022 12:48 [DEBUG] Clearing Instance Variables if exists", -- [2649]
+	"24/6/2022 12:48 [DEBUG] Clearing Instance Variables", -- [2650]
+	"24/6/2022 12:48 [DEBUG] Resetting Global Variables", -- [2651]
+	"24/6/2022 12:48 [DEBUG] InfoFrame does not need to be reset", -- [2652]
+	"24/6/2022 12:48 [DEBUG] Resetting PlayerRank", -- [2653]
+	"24/6/2022 12:48 [DEBUG] InfoFrame was not active", -- [2654]
+	"24/6/2022 12:49 [DEBUG] Player has entered instance", -- [2655]
+	"24/6/2022 12:49 [DEBUG] 1648", -- [2656]
+	"24/6/2022 12:49 [DEBUG] Offical Instance Name: 1648 _1648", -- [2657]
+	"24/6/2022 12:49 [DEBUG] Expansion: 4", -- [2658]
+	"24/6/2022 12:49 [DEBUG] Instance Type: Raids", -- [2659]
+	"24/6/2022 12:49 [DEBUG] Instance: 1648", -- [2660]
+	"24/6/2022 12:49 [DEBUG] DifficultyID: 14", -- [2661]
+	"24/6/2022 12:49 [DEBUG] Expansion: 4", -- [2662]
+	"24/6/2022 12:49 [DEBUG] Instance Type: Raids", -- [2663]
+	"24/6/2022 12:49 [DEBUG] Instance: 1648", -- [2664]
+	"24/6/2022 12:49 [DEBUG] Asking user whether they want to track this instance", -- [2665]
+	"24/6/2022 12:49 [DEBUG] Creating Tracking UI", -- [2666]
+	"24/6/2022 12:49 [DEBUG] InfoFrame Setup Complete", -- [2667]
+	"24/6/2022 12:49 |cff00ccffIAT: |cffffffffStarting achievement scan for Trial of Valor (This may freeze your game for a few seconds!)", -- [2668]
+	"24/6/2022 12:49 [DEBUG] Group Size set to: 1", -- [2669]
+	"24/6/2022 12:49 [DEBUG] Combatlog does not need to be enabled", -- [2670]
+	"24/6/2022 12:49 [DEBUG] Starting Initial Setup If Needed...", -- [2671]
+	"24/6/2022 12:49 [DEBUG] Starting Initial Setup For Instance", -- [2672]
+	"24/6/2022 12:49 [DEBUG] Setting Master Addon 1", -- [2673]
+	"24/6/2022 12:49 |cff00ccffIAT: |cffffffffAchievement Tracking Enabled for Trial of Valor", -- [2674]
+	"24/6/2022 12:49 [DEBUG] INSPECT_ACHIEVEMENT_READY FIRED. INFORMATION FOR: Alatra", -- [2675]
+	"24/6/2022 12:49 |cff00ccffIAT: |cffffffffAchievement Scanning Finished (1/1)", -- [2676]
+	"24/6/2022 12:49 |cff00ccffIAT: |cffffffffIncomplete achievements for this instance |cffffff00|Hachievement:11386:Player-61-0EBAD280:0:0:0:-1:0:0:0:0|h[Boneafide Tri Tip]|h|r|cffffff00|Hachievement:11337:Player-61-0EBAD280:0:0:0:-1:0:0:0:0|h[You Runed Everything!]|h|r|cffffff00|Hachievement:11377:Player-61-0EBAD280:0:0:0:-1:0:0:0:0|h[Patient Zero]|h|r", -- [2677]
+	"24/6/2022 12:49 |cff00ccffIAT: |cffffffff|cffffff00|Hachievement:11337:Player-61-0EBAD280:0:0:0:-1:0:0:0:0|h[You Runed Everything!]|h|r Players who need Achievement: Alatra, ", -- [2678]
+	"24/6/2022 12:51 [DEBUG] Setting chat mode to SAY", -- [2679]
+	"24/6/2022 12:51 [DEBUG] Entered Combat", -- [2680]
+	"24/6/2022 12:51 [DEBUG] Calling Detect Boss 3: 114361", -- [2681]
+	"24/6/2022 12:51 [DEBUG] Found the following boss ID: 114361", -- [2682]
+	"24/6/2022 12:51 [DEBUG] ---Encounter Started---", -- [2683]
+	"24/6/2022 12:51 [DEBUG] Encounter ID: 1958", -- [2684]
+	"24/6/2022 12:51 [DEBUG] Detected boss using ENCOUNTER ID", -- [2685]
+	"24/6/2022 12:51 [DEBUG] Found the following encounter ID: 1958", -- [2686]
+	"24/6/2022 12:51 [DEBUG] (E) Adding the following encounter ID: boss1", -- [2687]
+	"24/6/2022 12:51 [DEBUG] (E) Adding the following achievement ID beacuse it doesn't exist: 11337", -- [2688]
+	"24/6/2022 12:51 [DEBUG] Length of array: 1", -- [2689]
+	"24/6/2022 12:51 [DEBUG] Achievement: 11337", -- [2690]
+	"24/6/2022 12:51 |cff00ccffIAT: |cffffffffTracking: |cffffff00|Hachievement:11337:Player-61-0EBAD280:0:0:0:-1:0:0:0:0|h[You Runed Everything!]|h|r", -- [2691]
+	"24/6/2022 12:51 [DEBUG] Setting Master Addon 8", -- [2692]
+	"24/6/2022 12:51 [DEBUG] This addon is in charge of outputting messages", -- [2693]
+	"24/6/2022 13:8 [DEBUG] ---Encounter Ended---", -- [2694]
+	"24/6/2022 13:8 [DEBUG] Locking Detection for 3 seconds", -- [2695]
+	"24/6/2022 13:8 [DEBUG] Detection unlocked", -- [2696]
+	"24/6/2022 13:8 [DEBUG] Clearing Instance Variables if exists", -- [2697]
+	"24/6/2022 13:8 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2698]
+	"24/6/2022 13:8 [DEBUG] Clearing Instance Variables if exists", -- [2699]
+	"24/6/2022 13:8 [DEBUG] Clearing Instance Variables", -- [2700]
+	"24/6/2022 13:8 [DEBUG] Resetting Global Variables", -- [2701]
+	"24/6/2022 13:8 [DEBUG] InfoFrame does not need to be reset", -- [2702]
+	"24/6/2022 13:8 [DEBUG] Left Combat", -- [2703]
+	"24/6/2022 13:9 [DEBUG] Calling Detect Boss 3: 116122", -- [2704]
+	"24/6/2022 13:9 [DEBUG] Found the following boss ID: 116122", -- [2705]
+	"24/6/2022 13:10 [DEBUG] Calling Detect Boss 2: 110973", -- [2706]
+	"24/6/2022 13:10 [DEBUG] Found the following boss ID: 110973", -- [2707]
+	"24/6/2022 13:10 [DEBUG] Clearing Instance Variables", -- [2708]
+	"24/6/2022 13:10 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [2709]
+	"24/6/2022 13:10 [DEBUG] Cleaning up instance events for _1648", -- [2710]
+	"24/6/2022 13:10 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [2711]
+	"24/6/2022 13:10 [DEBUG] Clearing Instance Variables if exists", -- [2712]
+	"24/6/2022 13:10 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2713]
+	"24/6/2022 13:10 [DEBUG] Clearing Instance Variables if exists", -- [2714]
+	"24/6/2022 13:10 [DEBUG] Clearing Instance Variables", -- [2715]
+	"24/6/2022 13:10 [DEBUG] Resetting Global Variables", -- [2716]
+	"24/6/2022 13:10 [DEBUG] InfoFrame does not need to be reset", -- [2717]
+	"24/6/2022 13:10 [DEBUG] Resetting PlayerRank", -- [2718]
+	"24/6/2022 13:10 [DEBUG] InfoFrame was not active", -- [2719]
+	"24/6/2022 13:10 [DEBUG] 6", -- [2720]
+	"24/6/2022 13:10 [DEBUG] Hiding Tracking UI", -- [2721]
+	"24/6/2022 13:10 [DEBUG] Hiding Tracking UI", -- [2722]
+	"24/6/2022 13:11 [DEBUG] Player has entered instance", -- [2723]
+	"24/6/2022 13:11 [DEBUG] 1648", -- [2724]
+	"24/6/2022 13:11 [DEBUG] Offical Instance Name: 1648 _1648", -- [2725]
+	"24/6/2022 13:11 [DEBUG] Expansion: 4", -- [2726]
+	"24/6/2022 13:11 [DEBUG] Instance Type: Raids", -- [2727]
+	"24/6/2022 13:11 [DEBUG] Instance: 1648", -- [2728]
+	"24/6/2022 13:11 [DEBUG] DifficultyID: 14", -- [2729]
+	"24/6/2022 13:11 [DEBUG] Expansion: 4", -- [2730]
+	"24/6/2022 13:11 [DEBUG] Instance Type: Raids", -- [2731]
+	"24/6/2022 13:11 [DEBUG] Instance: 1648", -- [2732]
+	"24/6/2022 13:11 [DEBUG] Asking user whether they want to track this instance", -- [2733]
+	"24/6/2022 13:11 [DEBUG] Displaying Tracking UI since it was already created", -- [2734]
+	"24/6/2022 13:11 |cff00ccffIAT: |cffffffffStarting achievement scan for Trial of Valor (This may freeze your game for a few seconds!)", -- [2735]
+	"24/6/2022 13:11 [DEBUG] Group Size set to: 1", -- [2736]
+	"24/6/2022 13:11 [DEBUG] Combatlog does not need to be enabled", -- [2737]
+	"24/6/2022 13:11 [DEBUG] Starting Initial Setup If Needed...", -- [2738]
+	"24/6/2022 13:11 [DEBUG] Starting Initial Setup For Instance", -- [2739]
+	"24/6/2022 13:11 [DEBUG] Setting Master Addon 1", -- [2740]
+	"24/6/2022 13:11 |cff00ccffIAT: |cffffffffAchievement Tracking Enabled for Trial of Valor", -- [2741]
+	"24/6/2022 13:11 [DEBUG] INSPECT_ACHIEVEMENT_READY FIRED. INFORMATION FOR: Alatra", -- [2742]
+	"24/6/2022 13:11 |cff00ccffIAT: |cffffffffAchievement Scanning Finished (1/1)", -- [2743]
+	"24/6/2022 13:11 |cff00ccffIAT: |cffffffffIncomplete achievements for this instance |cffffff00|Hachievement:11386:Player-61-0EBAD280:0:0:0:-1:0:0:0:0|h[Boneafide Tri Tip]|h|r|cffffff00|Hachievement:11337:Player-61-0EBAD280:0:0:0:-1:0:0:0:0|h[You Runed Everything!]|h|r|cffffff00|Hachievement:11377:Player-61-0EBAD280:0:0:0:-1:0:0:0:0|h[Patient Zero]|h|r", -- [2744]
+	"24/6/2022 13:11 [DEBUG] Setting chat mode to SAY", -- [2745]
+	"24/6/2022 13:11 [DEBUG] Entered Combat", -- [2746]
+	"24/6/2022 13:11 [DEBUG] Calling Detect Boss 3: 114547", -- [2747]
+	"24/6/2022 13:11 [DEBUG] Found the following boss ID: 114547", -- [2748]
+	"24/6/2022 13:11 [DEBUG] Clearing Instance Variables if exists", -- [2749]
+	"24/6/2022 13:11 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2750]
+	"24/6/2022 13:11 [DEBUG] Clearing Instance Variables if exists", -- [2751]
+	"24/6/2022 13:11 [DEBUG] Clearing Instance Variables", -- [2752]
+	"24/6/2022 13:11 [DEBUG] Resetting Global Variables", -- [2753]
+	"24/6/2022 13:11 [DEBUG] InfoFrame does not need to be reset", -- [2754]
+	"24/6/2022 13:11 [DEBUG] Left Combat", -- [2755]
+	"24/6/2022 13:11 [DEBUG] Setting chat mode to SAY", -- [2756]
+	"24/6/2022 13:11 [DEBUG] Entered Combat", -- [2757]
+	"24/6/2022 13:11 [DEBUG] Calling Detect Boss 3: 114532", -- [2758]
+	"24/6/2022 13:11 [DEBUG] Found the following boss ID: 114532", -- [2759]
+	"24/6/2022 13:11 [DEBUG] Calling Detect Boss 3: 114538", -- [2760]
+	"24/6/2022 13:11 [DEBUG] Found the following boss ID: 114538", -- [2761]
+	"24/6/2022 13:11 [DEBUG] Clearing Instance Variables if exists", -- [2762]
+	"24/6/2022 13:11 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2763]
+	"24/6/2022 13:11 [DEBUG] Clearing Instance Variables if exists", -- [2764]
+	"24/6/2022 13:11 [DEBUG] Clearing Instance Variables", -- [2765]
+	"24/6/2022 13:11 [DEBUG] Resetting Global Variables", -- [2766]
+	"24/6/2022 13:11 [DEBUG] InfoFrame does not need to be reset", -- [2767]
+	"24/6/2022 13:11 [DEBUG] Left Combat", -- [2768]
+	"24/6/2022 13:11 [DEBUG] Setting chat mode to SAY", -- [2769]
+	"24/6/2022 13:11 [DEBUG] Entered Combat", -- [2770]
+	"24/6/2022 13:11 [DEBUG] Clearing Instance Variables if exists", -- [2771]
+	"24/6/2022 13:11 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2772]
+	"24/6/2022 13:11 [DEBUG] Clearing Instance Variables if exists", -- [2773]
+	"24/6/2022 13:11 [DEBUG] Clearing Instance Variables", -- [2774]
+	"24/6/2022 13:11 [DEBUG] Resetting Global Variables", -- [2775]
+	"24/6/2022 13:11 [DEBUG] InfoFrame does not need to be reset", -- [2776]
+	"24/6/2022 13:11 [DEBUG] Left Combat", -- [2777]
+	"24/6/2022 13:11 [DEBUG] Setting chat mode to SAY", -- [2778]
+	"24/6/2022 13:11 [DEBUG] Entered Combat", -- [2779]
+	"24/6/2022 13:11 [DEBUG] Calling Detect Boss 3: 114534", -- [2780]
+	"24/6/2022 13:11 [DEBUG] Found the following boss ID: 114534", -- [2781]
+	"24/6/2022 13:11 [DEBUG] Clearing Instance Variables if exists", -- [2782]
+	"24/6/2022 13:11 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2783]
+	"24/6/2022 13:11 [DEBUG] Clearing Instance Variables if exists", -- [2784]
+	"24/6/2022 13:11 [DEBUG] Clearing Instance Variables", -- [2785]
+	"24/6/2022 13:11 [DEBUG] Resetting Global Variables", -- [2786]
+	"24/6/2022 13:11 [DEBUG] InfoFrame does not need to be reset", -- [2787]
+	"24/6/2022 13:11 [DEBUG] Left Combat", -- [2788]
+	"24/6/2022 13:11 [DEBUG] Setting chat mode to SAY", -- [2789]
+	"24/6/2022 13:11 [DEBUG] Entered Combat", -- [2790]
+	"24/6/2022 13:11 [DEBUG] Clearing Instance Variables if exists", -- [2791]
+	"24/6/2022 13:11 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2792]
+	"24/6/2022 13:11 [DEBUG] Clearing Instance Variables if exists", -- [2793]
+	"24/6/2022 13:11 [DEBUG] Clearing Instance Variables", -- [2794]
+	"24/6/2022 13:11 [DEBUG] Resetting Global Variables", -- [2795]
+	"24/6/2022 13:11 [DEBUG] InfoFrame does not need to be reset", -- [2796]
+	"24/6/2022 13:11 [DEBUG] Left Combat", -- [2797]
+	"24/6/2022 13:11 [DEBUG] Setting chat mode to SAY", -- [2798]
+	"24/6/2022 13:11 [DEBUG] Entered Combat", -- [2799]
+	"24/6/2022 13:11 [DEBUG] Calling Detect Boss 3: 114546", -- [2800]
+	"24/6/2022 13:11 [DEBUG] Found the following boss ID: 114546", -- [2801]
+	"24/6/2022 13:11 [DEBUG] Clearing Instance Variables if exists", -- [2802]
+	"24/6/2022 13:11 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2803]
+	"24/6/2022 13:11 [DEBUG] Clearing Instance Variables if exists", -- [2804]
+	"24/6/2022 13:11 [DEBUG] Clearing Instance Variables", -- [2805]
+	"24/6/2022 13:11 [DEBUG] Resetting Global Variables", -- [2806]
+	"24/6/2022 13:11 [DEBUG] InfoFrame does not need to be reset", -- [2807]
+	"24/6/2022 13:11 [DEBUG] Left Combat", -- [2808]
+	"24/6/2022 13:11 [DEBUG] Setting chat mode to SAY", -- [2809]
+	"24/6/2022 13:11 [DEBUG] Entered Combat", -- [2810]
+	"24/6/2022 13:11 [DEBUG] Clearing Instance Variables if exists", -- [2811]
+	"24/6/2022 13:11 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2812]
+	"24/6/2022 13:11 [DEBUG] Clearing Instance Variables if exists", -- [2813]
+	"24/6/2022 13:11 [DEBUG] Clearing Instance Variables", -- [2814]
+	"24/6/2022 13:11 [DEBUG] Resetting Global Variables", -- [2815]
+	"24/6/2022 13:11 [DEBUG] InfoFrame does not need to be reset", -- [2816]
+	"24/6/2022 13:11 [DEBUG] Left Combat", -- [2817]
+	"24/6/2022 13:11 [DEBUG] Setting chat mode to SAY", -- [2818]
+	"24/6/2022 13:11 [DEBUG] Entered Combat", -- [2819]
+	"24/6/2022 13:11 [DEBUG] Clearing Instance Variables if exists", -- [2820]
+	"24/6/2022 13:11 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2821]
+	"24/6/2022 13:11 [DEBUG] Clearing Instance Variables if exists", -- [2822]
+	"24/6/2022 13:11 [DEBUG] Clearing Instance Variables", -- [2823]
+	"24/6/2022 13:11 [DEBUG] Resetting Global Variables", -- [2824]
+	"24/6/2022 13:11 [DEBUG] InfoFrame does not need to be reset", -- [2825]
+	"24/6/2022 13:11 [DEBUG] Left Combat", -- [2826]
+	"24/6/2022 13:11 [DEBUG] Setting chat mode to SAY", -- [2827]
+	"24/6/2022 13:11 [DEBUG] Entered Combat", -- [2828]
+	"24/6/2022 13:11 [DEBUG] Calling Detect Boss 3: 114614", -- [2829]
+	"24/6/2022 13:11 [DEBUG] Found the following boss ID: 114614", -- [2830]
+	"24/6/2022 13:11 [DEBUG] Clearing Instance Variables if exists", -- [2831]
+	"24/6/2022 13:11 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2832]
+	"24/6/2022 13:11 [DEBUG] Clearing Instance Variables if exists", -- [2833]
+	"24/6/2022 13:11 [DEBUG] Clearing Instance Variables", -- [2834]
+	"24/6/2022 13:11 [DEBUG] Resetting Global Variables", -- [2835]
+	"24/6/2022 13:11 [DEBUG] InfoFrame does not need to be reset", -- [2836]
+	"24/6/2022 13:11 [DEBUG] Left Combat", -- [2837]
+	"24/6/2022 13:12 [DEBUG] Setting chat mode to SAY", -- [2838]
+	"24/6/2022 13:12 [DEBUG] Entered Combat", -- [2839]
+	"24/6/2022 13:12 [DEBUG] Clearing Instance Variables if exists", -- [2840]
+	"24/6/2022 13:12 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2841]
+	"24/6/2022 13:12 [DEBUG] Clearing Instance Variables if exists", -- [2842]
+	"24/6/2022 13:12 [DEBUG] Clearing Instance Variables", -- [2843]
+	"24/6/2022 13:12 [DEBUG] Resetting Global Variables", -- [2844]
+	"24/6/2022 13:12 [DEBUG] InfoFrame does not need to be reset", -- [2845]
+	"24/6/2022 13:12 [DEBUG] Left Combat", -- [2846]
+	"24/6/2022 13:12 [DEBUG] Setting chat mode to SAY", -- [2847]
+	"24/6/2022 13:12 [DEBUG] Entered Combat", -- [2848]
+	"24/6/2022 13:12 [DEBUG] Calling Detect Boss 3: 114548", -- [2849]
+	"24/6/2022 13:12 [DEBUG] Found the following boss ID: 114548", -- [2850]
+	"24/6/2022 13:12 [DEBUG] Clearing Instance Variables if exists", -- [2851]
+	"24/6/2022 13:12 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2852]
+	"24/6/2022 13:12 [DEBUG] Clearing Instance Variables if exists", -- [2853]
+	"24/6/2022 13:12 [DEBUG] Clearing Instance Variables", -- [2854]
+	"24/6/2022 13:12 [DEBUG] Resetting Global Variables", -- [2855]
+	"24/6/2022 13:12 [DEBUG] InfoFrame does not need to be reset", -- [2856]
+	"24/6/2022 13:12 [DEBUG] Left Combat", -- [2857]
+	"24/6/2022 13:12 [DEBUG] Setting chat mode to SAY", -- [2858]
+	"24/6/2022 13:12 [DEBUG] Entered Combat", -- [2859]
+	"24/6/2022 13:12 [DEBUG] Clearing Instance Variables if exists", -- [2860]
+	"24/6/2022 13:12 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2861]
+	"24/6/2022 13:12 [DEBUG] Clearing Instance Variables if exists", -- [2862]
+	"24/6/2022 13:12 [DEBUG] Clearing Instance Variables", -- [2863]
+	"24/6/2022 13:12 [DEBUG] Resetting Global Variables", -- [2864]
+	"24/6/2022 13:12 [DEBUG] InfoFrame does not need to be reset", -- [2865]
+	"24/6/2022 13:12 [DEBUG] Left Combat", -- [2866]
+	"24/6/2022 13:12 [DEBUG] Setting chat mode to SAY", -- [2867]
+	"24/6/2022 13:12 [DEBUG] Entered Combat", -- [2868]
+	"24/6/2022 13:12 [DEBUG] Clearing Instance Variables if exists", -- [2869]
+	"24/6/2022 13:12 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2870]
+	"24/6/2022 13:12 [DEBUG] Clearing Instance Variables if exists", -- [2871]
+	"24/6/2022 13:12 [DEBUG] Clearing Instance Variables", -- [2872]
+	"24/6/2022 13:12 [DEBUG] Resetting Global Variables", -- [2873]
+	"24/6/2022 13:12 [DEBUG] InfoFrame does not need to be reset", -- [2874]
+	"24/6/2022 13:12 [DEBUG] Left Combat", -- [2875]
+	"24/6/2022 13:12 [DEBUG] Setting chat mode to SAY", -- [2876]
+	"24/6/2022 13:12 [DEBUG] Entered Combat", -- [2877]
+	"24/6/2022 13:12 [DEBUG] Clearing Instance Variables if exists", -- [2878]
+	"24/6/2022 13:12 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2879]
+	"24/6/2022 13:12 [DEBUG] Clearing Instance Variables if exists", -- [2880]
+	"24/6/2022 13:12 [DEBUG] Clearing Instance Variables", -- [2881]
+	"24/6/2022 13:12 [DEBUG] Resetting Global Variables", -- [2882]
+	"24/6/2022 13:12 [DEBUG] InfoFrame does not need to be reset", -- [2883]
+	"24/6/2022 13:12 [DEBUG] Left Combat", -- [2884]
+	"24/6/2022 13:12 [DEBUG] Setting chat mode to SAY", -- [2885]
+	"24/6/2022 13:12 [DEBUG] Entered Combat", -- [2886]
+	"24/6/2022 13:12 [DEBUG] Calling Detect Boss 3: 114639", -- [2887]
+	"24/6/2022 13:12 [DEBUG] Found the following boss ID: 114639", -- [2888]
+	"24/6/2022 13:12 [DEBUG] Clearing Instance Variables if exists", -- [2889]
+	"24/6/2022 13:12 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2890]
+	"24/6/2022 13:12 [DEBUG] Clearing Instance Variables if exists", -- [2891]
+	"24/6/2022 13:12 [DEBUG] Clearing Instance Variables", -- [2892]
+	"24/6/2022 13:12 [DEBUG] Resetting Global Variables", -- [2893]
+	"24/6/2022 13:12 [DEBUG] InfoFrame does not need to be reset", -- [2894]
+	"24/6/2022 13:12 [DEBUG] Left Combat", -- [2895]
+	"24/6/2022 13:12 [DEBUG] Setting chat mode to SAY", -- [2896]
+	"24/6/2022 13:12 [DEBUG] Entered Combat", -- [2897]
+	"24/6/2022 13:12 [DEBUG] Clearing Instance Variables if exists", -- [2898]
+	"24/6/2022 13:12 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2899]
+	"24/6/2022 13:12 [DEBUG] Clearing Instance Variables if exists", -- [2900]
+	"24/6/2022 13:12 [DEBUG] Clearing Instance Variables", -- [2901]
+	"24/6/2022 13:12 [DEBUG] Resetting Global Variables", -- [2902]
+	"24/6/2022 13:12 [DEBUG] InfoFrame does not need to be reset", -- [2903]
+	"24/6/2022 13:12 [DEBUG] Left Combat", -- [2904]
+	"24/6/2022 13:12 [DEBUG] Setting chat mode to SAY", -- [2905]
+	"24/6/2022 13:12 [DEBUG] Entered Combat", -- [2906]
+	"24/6/2022 13:12 [DEBUG] Calling Detect Boss 3: 114539", -- [2907]
+	"24/6/2022 13:12 [DEBUG] Found the following boss ID: 114539", -- [2908]
+	"24/6/2022 13:12 [DEBUG] Clearing Instance Variables if exists", -- [2909]
+	"24/6/2022 13:12 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2910]
+	"24/6/2022 13:12 [DEBUG] Clearing Instance Variables if exists", -- [2911]
+	"24/6/2022 13:12 [DEBUG] Clearing Instance Variables", -- [2912]
+	"24/6/2022 13:12 [DEBUG] Resetting Global Variables", -- [2913]
+	"24/6/2022 13:12 [DEBUG] InfoFrame does not need to be reset", -- [2914]
+	"24/6/2022 13:12 [DEBUG] Left Combat", -- [2915]
+	"24/6/2022 13:12 [DEBUG] Setting chat mode to SAY", -- [2916]
+	"24/6/2022 13:12 [DEBUG] Entered Combat", -- [2917]
+	"24/6/2022 13:13 [DEBUG] Clearing Instance Variables if exists", -- [2918]
+	"24/6/2022 13:13 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2919]
+	"24/6/2022 13:13 [DEBUG] Clearing Instance Variables if exists", -- [2920]
+	"24/6/2022 13:13 [DEBUG] Clearing Instance Variables", -- [2921]
+	"24/6/2022 13:13 [DEBUG] Resetting Global Variables", -- [2922]
+	"24/6/2022 13:13 [DEBUG] InfoFrame does not need to be reset", -- [2923]
+	"24/6/2022 13:13 [DEBUG] Left Combat", -- [2924]
+	"24/6/2022 13:13 [DEBUG] Setting chat mode to SAY", -- [2925]
+	"24/6/2022 13:13 [DEBUG] Entered Combat", -- [2926]
+	"24/6/2022 13:13 [DEBUG] Clearing Instance Variables if exists", -- [2927]
+	"24/6/2022 13:13 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2928]
+	"24/6/2022 13:13 [DEBUG] Clearing Instance Variables if exists", -- [2929]
+	"24/6/2022 13:13 [DEBUG] Clearing Instance Variables", -- [2930]
+	"24/6/2022 13:13 [DEBUG] Resetting Global Variables", -- [2931]
+	"24/6/2022 13:13 [DEBUG] InfoFrame does not need to be reset", -- [2932]
+	"24/6/2022 13:13 [DEBUG] Left Combat", -- [2933]
+	"24/6/2022 13:14 [DEBUG] Setting chat mode to SAY", -- [2934]
+	"24/6/2022 13:14 [DEBUG] Entered Combat", -- [2935]
+	"24/6/2022 13:14 [DEBUG] Clearing Instance Variables if exists", -- [2936]
+	"24/6/2022 13:14 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2937]
+	"24/6/2022 13:14 [DEBUG] Clearing Instance Variables if exists", -- [2938]
+	"24/6/2022 13:14 [DEBUG] Clearing Instance Variables", -- [2939]
+	"24/6/2022 13:14 [DEBUG] Resetting Global Variables", -- [2940]
+	"24/6/2022 13:14 [DEBUG] InfoFrame does not need to be reset", -- [2941]
+	"24/6/2022 13:14 [DEBUG] Left Combat", -- [2942]
+	"24/6/2022 13:14 [DEBUG] Setting chat mode to SAY", -- [2943]
+	"24/6/2022 13:14 [DEBUG] Entered Combat", -- [2944]
+	"24/6/2022 13:14 [DEBUG] Clearing Instance Variables if exists", -- [2945]
+	"24/6/2022 13:14 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2946]
+	"24/6/2022 13:14 [DEBUG] Clearing Instance Variables if exists", -- [2947]
+	"24/6/2022 13:14 [DEBUG] Clearing Instance Variables", -- [2948]
+	"24/6/2022 13:14 [DEBUG] Resetting Global Variables", -- [2949]
+	"24/6/2022 13:14 [DEBUG] InfoFrame does not need to be reset", -- [2950]
+	"24/6/2022 13:14 [DEBUG] Left Combat", -- [2951]
+	"24/6/2022 13:14 [DEBUG] Setting chat mode to SAY", -- [2952]
+	"24/6/2022 13:14 [DEBUG] Entered Combat", -- [2953]
+	"24/6/2022 13:14 [DEBUG] Clearing Instance Variables if exists", -- [2954]
+	"24/6/2022 13:14 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2955]
+	"24/6/2022 13:14 [DEBUG] Clearing Instance Variables if exists", -- [2956]
+	"24/6/2022 13:14 [DEBUG] Clearing Instance Variables", -- [2957]
+	"24/6/2022 13:14 [DEBUG] Resetting Global Variables", -- [2958]
+	"24/6/2022 13:14 [DEBUG] InfoFrame does not need to be reset", -- [2959]
+	"24/6/2022 13:14 [DEBUG] Left Combat", -- [2960]
+	"24/6/2022 13:14 [DEBUG] Setting chat mode to SAY", -- [2961]
+	"24/6/2022 13:14 [DEBUG] Entered Combat", -- [2962]
+	"24/6/2022 13:14 [DEBUG] Clearing Instance Variables if exists", -- [2963]
+	"24/6/2022 13:14 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2964]
+	"24/6/2022 13:14 [DEBUG] Clearing Instance Variables if exists", -- [2965]
+	"24/6/2022 13:14 [DEBUG] Clearing Instance Variables", -- [2966]
+	"24/6/2022 13:14 [DEBUG] Resetting Global Variables", -- [2967]
+	"24/6/2022 13:14 [DEBUG] InfoFrame does not need to be reset", -- [2968]
+	"24/6/2022 13:14 [DEBUG] Left Combat", -- [2969]
+	"24/6/2022 13:14 |cff00ccffIAT: |cffffffff|cffffff00|Hachievement:11386:Player-61-0EBAD280:0:0:0:-1:0:0:0:0|h[Boneafide Tri Tip]|h|r Players who need Achievement: Alatra, ", -- [2970]
+	"24/6/2022 13:15 [DEBUG] Calling Detect Boss 3: 114323", -- [2971]
+	"24/6/2022 13:15 [DEBUG] Found the following boss ID: 114323", -- [2972]
+	"24/6/2022 13:15 [DEBUG] Adding the following boss: boss2", -- [2973]
+	"24/6/2022 13:15 [DEBUG] Adding the following achievement ID beacuse it doesn't exist: 11386", -- [2974]
+	"24/6/2022 13:15 [DEBUG] Setting chat mode to SAY", -- [2975]
+	"24/6/2022 13:15 [DEBUG] Entered Combat", -- [2976]
+	"24/6/2022 13:15 [DEBUG] ---Encounter Started---", -- [2977]
+	"24/6/2022 13:15 [DEBUG] Encounter ID: 1962", -- [2978]
+	"24/6/2022 13:15 [DEBUG] Detected boss using ENCOUNTER ID", -- [2979]
+	"24/6/2022 13:15 [DEBUG] Found the following encounter ID: 1962", -- [2980]
+	"24/6/2022 13:15 [DEBUG] Length of array: 1", -- [2981]
+	"24/6/2022 13:15 [DEBUG] Achievement: 11386", -- [2982]
+	"24/6/2022 13:15 |cff00ccffIAT: |cffffffffTracking: |cffffff00|Hachievement:11386:Player-61-0EBAD280:0:0:0:-1:0:0:0:0|h[Boneafide Tri Tip]|h|r", -- [2983]
+	"24/6/2022 13:15 [DEBUG] Setting Master Addon 8", -- [2984]
+	"24/6/2022 13:15 [DEBUG] This addon is in charge of outputting messages", -- [2985]
+	"24/6/2022 13:15 [DEBUG] ---Encounter Ended---", -- [2986]
+	"24/6/2022 13:15 [DEBUG] Locking Detection for 3 seconds", -- [2987]
+	"24/6/2022 13:15 [DEBUG] Clearing Instance Variables if exists", -- [2988]
+	"24/6/2022 13:15 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [2989]
+	"24/6/2022 13:15 [DEBUG] Clearing Instance Variables if exists", -- [2990]
+	"24/6/2022 13:15 [DEBUG] Clearing Instance Variables", -- [2991]
+	"24/6/2022 13:15 [DEBUG] Resetting Global Variables", -- [2992]
+	"24/6/2022 13:15 [DEBUG] InfoFrame does not need to be reset", -- [2993]
+	"24/6/2022 13:15 [DEBUG] Left Combat", -- [2994]
+	"24/6/2022 13:15 [DEBUG] Detection unlocked", -- [2995]
+	"24/6/2022 13:15 [DEBUG] Setting chat mode to SAY", -- [2996]
+	"24/6/2022 13:15 [DEBUG] Entered Combat", -- [2997]
+	"24/6/2022 13:15 [DEBUG] Calling Detect Boss 3: 114923", -- [2998]
+	"24/6/2022 13:15 [DEBUG] Found the following boss ID: 114923", -- [2999]
+	"24/6/2022 13:15 [DEBUG] Calling Detect Boss 3: 114922", -- [3000]
+	"24/6/2022 13:15 [DEBUG] Found the following boss ID: 114922", -- [3001]
+	"24/6/2022 13:15 [DEBUG] Clearing Instance Variables if exists", -- [3002]
+	"24/6/2022 13:15 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [3003]
+	"24/6/2022 13:15 [DEBUG] Clearing Instance Variables if exists", -- [3004]
+	"24/6/2022 13:15 [DEBUG] Clearing Instance Variables", -- [3005]
+	"24/6/2022 13:15 [DEBUG] Resetting Global Variables", -- [3006]
+	"24/6/2022 13:15 [DEBUG] InfoFrame does not need to be reset", -- [3007]
+	"24/6/2022 13:15 [DEBUG] Left Combat", -- [3008]
+	"24/6/2022 13:15 [DEBUG] Setting chat mode to SAY", -- [3009]
+	"24/6/2022 13:15 [DEBUG] Entered Combat", -- [3010]
+	"24/6/2022 13:15 [DEBUG] Calling Detect Boss 3: 114932", -- [3011]
+	"24/6/2022 13:15 [DEBUG] Found the following boss ID: 114932", -- [3012]
+	"24/6/2022 13:15 [DEBUG] Clearing Instance Variables if exists", -- [3013]
+	"24/6/2022 13:15 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [3014]
+	"24/6/2022 13:15 [DEBUG] Clearing Instance Variables if exists", -- [3015]
+	"24/6/2022 13:15 [DEBUG] Clearing Instance Variables", -- [3016]
+	"24/6/2022 13:15 [DEBUG] Resetting Global Variables", -- [3017]
+	"24/6/2022 13:15 [DEBUG] InfoFrame does not need to be reset", -- [3018]
+	"24/6/2022 13:15 [DEBUG] Left Combat", -- [3019]
+	"24/6/2022 13:15 [DEBUG] Setting chat mode to SAY", -- [3020]
+	"24/6/2022 13:15 [DEBUG] Entered Combat", -- [3021]
+	"24/6/2022 13:15 [DEBUG] Calling Detect Boss 3: 114813", -- [3022]
+	"24/6/2022 13:15 [DEBUG] Found the following boss ID: 114813", -- [3023]
+	"24/6/2022 13:15 [DEBUG] Clearing Instance Variables if exists", -- [3024]
+	"24/6/2022 13:15 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [3025]
+	"24/6/2022 13:15 [DEBUG] Clearing Instance Variables if exists", -- [3026]
+	"24/6/2022 13:15 [DEBUG] Clearing Instance Variables", -- [3027]
+	"24/6/2022 13:15 [DEBUG] Resetting Global Variables", -- [3028]
+	"24/6/2022 13:15 [DEBUG] InfoFrame does not need to be reset", -- [3029]
+	"24/6/2022 13:15 [DEBUG] Left Combat", -- [3030]
+	"24/6/2022 13:15 [DEBUG] Setting chat mode to SAY", -- [3031]
+	"24/6/2022 13:15 [DEBUG] Entered Combat", -- [3032]
+	"24/6/2022 13:16 [DEBUG] Clearing Instance Variables if exists", -- [3033]
+	"24/6/2022 13:16 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [3034]
+	"24/6/2022 13:16 [DEBUG] Clearing Instance Variables if exists", -- [3035]
+	"24/6/2022 13:16 [DEBUG] Clearing Instance Variables", -- [3036]
+	"24/6/2022 13:16 [DEBUG] Resetting Global Variables", -- [3037]
+	"24/6/2022 13:16 [DEBUG] InfoFrame does not need to be reset", -- [3038]
+	"24/6/2022 13:16 [DEBUG] Left Combat", -- [3039]
+	"24/6/2022 13:16 [DEBUG] Setting chat mode to SAY", -- [3040]
+	"24/6/2022 13:16 [DEBUG] Entered Combat", -- [3041]
+	"24/6/2022 13:16 [DEBUG] Clearing Instance Variables if exists", -- [3042]
+	"24/6/2022 13:16 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [3043]
+	"24/6/2022 13:16 [DEBUG] Clearing Instance Variables if exists", -- [3044]
+	"24/6/2022 13:16 [DEBUG] Clearing Instance Variables", -- [3045]
+	"24/6/2022 13:16 [DEBUG] Resetting Global Variables", -- [3046]
+	"24/6/2022 13:16 [DEBUG] InfoFrame does not need to be reset", -- [3047]
+	"24/6/2022 13:16 [DEBUG] Left Combat", -- [3048]
+	"24/6/2022 13:16 [DEBUG] Setting chat mode to SAY", -- [3049]
+	"24/6/2022 13:16 [DEBUG] Entered Combat", -- [3050]
+	"24/6/2022 13:16 [DEBUG] Clearing Instance Variables if exists", -- [3051]
+	"24/6/2022 13:16 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [3052]
+	"24/6/2022 13:16 [DEBUG] Clearing Instance Variables if exists", -- [3053]
+	"24/6/2022 13:16 [DEBUG] Clearing Instance Variables", -- [3054]
+	"24/6/2022 13:16 [DEBUG] Resetting Global Variables", -- [3055]
+	"24/6/2022 13:16 [DEBUG] InfoFrame does not need to be reset", -- [3056]
+	"24/6/2022 13:16 [DEBUG] Left Combat", -- [3057]
+	"24/6/2022 13:16 [DEBUG] Setting chat mode to SAY", -- [3058]
+	"24/6/2022 13:16 [DEBUG] Entered Combat", -- [3059]
+	"24/6/2022 13:16 [DEBUG] Calling Detect Boss 3: 114811", -- [3060]
+	"24/6/2022 13:16 [DEBUG] Found the following boss ID: 114811", -- [3061]
+	"24/6/2022 13:16 [DEBUG] Clearing Instance Variables if exists", -- [3062]
+	"24/6/2022 13:16 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [3063]
+	"24/6/2022 13:16 [DEBUG] Clearing Instance Variables if exists", -- [3064]
+	"24/6/2022 13:16 [DEBUG] Clearing Instance Variables", -- [3065]
+	"24/6/2022 13:16 [DEBUG] Resetting Global Variables", -- [3066]
+	"24/6/2022 13:16 [DEBUG] InfoFrame does not need to be reset", -- [3067]
+	"24/6/2022 13:16 [DEBUG] Left Combat", -- [3068]
+	"24/6/2022 13:16 |cff00ccffIAT: |cffffffff|cffffff00|Hachievement:11377:Player-61-0EBAD280:0:0:0:-1:0:0:0:0|h[Patient Zero]|h|r Players who need Achievement: Alatra, ", -- [3069]
+	"24/6/2022 13:16 [DEBUG] Setting chat mode to SAY", -- [3070]
+	"24/6/2022 13:16 [DEBUG] Entered Combat", -- [3071]
+	"24/6/2022 13:16 [DEBUG] Clearing Instance Variables if exists", -- [3072]
+	"24/6/2022 13:16 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [3073]
+	"24/6/2022 13:16 [DEBUG] Clearing Instance Variables if exists", -- [3074]
+	"24/6/2022 13:16 [DEBUG] Clearing Instance Variables", -- [3075]
+	"24/6/2022 13:16 [DEBUG] Resetting Global Variables", -- [3076]
+	"24/6/2022 13:16 [DEBUG] InfoFrame does not need to be reset", -- [3077]
+	"24/6/2022 13:16 [DEBUG] Left Combat", -- [3078]
+	"24/6/2022 13:17 [DEBUG] Setting chat mode to SAY", -- [3079]
+	"24/6/2022 13:17 [DEBUG] Entered Combat", -- [3080]
+	"24/6/2022 13:17 [DEBUG] Calling Detect Boss 3: 114537", -- [3081]
+	"24/6/2022 13:17 [DEBUG] Found the following boss ID: 114537", -- [3082]
+	"24/6/2022 13:17 [DEBUG] Adding the following boss: boss3", -- [3083]
+	"24/6/2022 13:17 [DEBUG] Adding the following achievement ID beacuse it doesn't exist: 11377", -- [3084]
+	"24/6/2022 13:17 [DEBUG] Showing InfoFrame", -- [3085]
+	"24/6/2022 13:17 [DEBUG] ---Encounter Started---", -- [3086]
+	"24/6/2022 13:17 [DEBUG] Encounter ID: 2008", -- [3087]
+	"24/6/2022 13:17 [DEBUG] Detected boss using ENCOUNTER ID", -- [3088]
+	"24/6/2022 13:17 [DEBUG] Found the following encounter ID: 2008", -- [3089]
+	"24/6/2022 13:17 [DEBUG] Length of array: 1", -- [3090]
+	"24/6/2022 13:17 [DEBUG] Achievement: 11377", -- [3091]
+	"24/6/2022 13:17 |cff00ccffIAT: |cffffffffTracking: |cffffff00|Hachievement:11377:Player-61-0EBAD280:0:0:0:-1:0:0:0:0|h[Patient Zero]|h|r", -- [3092]
+	"24/6/2022 13:17 [DEBUG] Setting Master Addon 8", -- [3093]
+	"24/6/2022 13:17 [DEBUG] Inserting into Message Queue: |cffffff00|Hachievement:11377:Player-61-0EBAD280:0:0:0:-1:0:0:0:0|h[Patient Zero]|h|r Criteria has been met. Boss can now be killed!,true", -- [3094]
+	"24/6/2022 13:17 [DEBUG] This addon is in charge of outputting messages", -- [3095]
+	"24/6/2022 13:17 [IAT] |cffffff00|Hachievement:11377:Player-61-0EBAD280:0:0:0:-1:0:0:0:0|h[Patient Zero]|h|r Criteria has been met. Boss can now be killed!", -- [3096]
+	"24/6/2022 13:17 [IAT] |cffffff00|Hachievement:11377:Player-61-0EBAD280:0:0:0:-1:0:0:0:0|h[Patient Zero]|h|r FAILED!", -- [3097]
+	"24/6/2022 13:17 [IAT] |cffffff00|Hachievement:11377:Player-61-0EBAD280:0:0:0:-1:0:0:0:0|h[Patient Zero]|h|r Criteria has been met. Boss can now be killed!", -- [3098]
+	"24/6/2022 13:18 [DEBUG] ---Encounter Ended---", -- [3099]
+	"24/6/2022 13:18 [DEBUG] Locking Detection for 3 seconds", -- [3100]
+	"24/6/2022 13:18 [DEBUG] Clearing Instance Variables if exists", -- [3101]
+	"24/6/2022 13:18 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [3102]
+	"24/6/2022 13:18 [DEBUG] Clearing Instance Variables if exists", -- [3103]
+	"24/6/2022 13:18 [DEBUG] Clearing Instance Variables", -- [3104]
+	"24/6/2022 13:18 [DEBUG] Resetting Global Variables", -- [3105]
+	"24/6/2022 13:18 [DEBUG] Resetting InfoFrame", -- [3106]
+	"24/6/2022 13:18 [DEBUG] Left Combat", -- [3107]
+	"24/6/2022 13:18 [DEBUG] Detection unlocked", -- [3108]
+	"24/6/2022 13:19 [DEBUG] Calling Detect Boss 2: 110973", -- [3109]
+	"24/6/2022 13:19 [DEBUG] Found the following boss ID: 110973", -- [3110]
+	"24/6/2022 13:19 [DEBUG] Clearing Instance Variables", -- [3111]
+	"24/6/2022 13:19 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3112]
+	"24/6/2022 13:19 [DEBUG] Cleaning up instance events for _1648", -- [3113]
+	"24/6/2022 13:19 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3114]
+	"24/6/2022 13:19 [DEBUG] Clearing Instance Variables if exists", -- [3115]
+	"24/6/2022 13:19 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [3116]
+	"24/6/2022 13:19 [DEBUG] Clearing Instance Variables if exists", -- [3117]
+	"24/6/2022 13:19 [DEBUG] Clearing Instance Variables", -- [3118]
+	"24/6/2022 13:19 [DEBUG] Resetting Global Variables", -- [3119]
+	"24/6/2022 13:19 [DEBUG] InfoFrame does not need to be reset", -- [3120]
+	"24/6/2022 13:19 [DEBUG] Resetting PlayerRank", -- [3121]
+	"24/6/2022 13:19 [DEBUG] InfoFrame was not active", -- [3122]
+	"24/6/2022 13:19 [DEBUG] 6", -- [3123]
+	"24/6/2022 13:19 [DEBUG] Hiding Tracking UI", -- [3124]
+	"24/6/2022 13:20 [DEBUG] Hiding Tracking UI", -- [3125]
+	"24/6/2022 13:21 [DEBUG] Hiding Tracking UI", -- [3126]
+	"24/6/2022 13:21 [DEBUG] Hiding Tracking UI", -- [3127]
+	"24/6/2022 13:21 [DEBUG] Hiding Tracking UI", -- [3128]
+	"24/6/2022 13:21 [DEBUG] Hiding Tracking UI", -- [3129]
+	"24/6/2022 13:21 [DEBUG] Hiding Tracking UI", -- [3130]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3131]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [3132]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3133]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3134]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3135]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3136]
+	"24/6/2022 15:35 [DEBUG] Showing Minimap Icon", -- [3137]
+	"24/6/2022 15:35 [DEBUG] NPC cache generated", -- [3138]
+	"24/6/2022 15:36 [DEBUG] ---IAT Runtime---", -- [3139]
+	"24/6/2022 15:36 [DEBUG] Version: 3.41.0", -- [3140]
+	"24/6/2022 15:36 [DEBUG] Attempting to load from local NPC Cache", -- [3141]
+	"24/6/2022 15:36 [DEBUG] Generating NPC Cache...", -- [3142]
+	"24/6/2022 15:36 [DEBUG] Enabling Addon", -- [3143]
+	"24/6/2022 15:36 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3144]
+	"24/6/2022 15:38 [DEBUG] Showing Minimap Icon", -- [3145]
+	"24/6/2022 15:38 [DEBUG] ---IAT Runtime---", -- [3146]
+	"24/6/2022 15:38 [DEBUG] Version: 3.41.0", -- [3147]
+	"24/6/2022 15:38 [DEBUG] Attempting to load from local NPC Cache", -- [3148]
+	"24/6/2022 15:38 [DEBUG] Generating NPC Cache...", -- [3149]
+	"24/6/2022 15:38 [DEBUG] Enabling Addon", -- [3150]
+	"24/6/2022 15:38 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3151]
+	"24/6/2022 15:38 [DEBUG] Showing Minimap Icon", -- [3152]
+	"24/6/2022 15:39 [DEBUG] NPC cache generated", -- [3153]
+	"24/6/2022 15:39 [DEBUG] Player has entered instance", -- [3154]
+	"24/6/2022 15:39 [DEBUG] 1677", -- [3155]
+	"24/6/2022 15:39 [DEBUG] Offical Instance Name: 1677 _1677", -- [3156]
+	"24/6/2022 15:39 [DEBUG] Expansion: 4", -- [3157]
+	"24/6/2022 15:39 [DEBUG] Instance Type: Dungeons", -- [3158]
+	"24/6/2022 15:39 [DEBUG] Instance: 1677", -- [3159]
+	"24/6/2022 15:39 [DEBUG] DifficultyID: 2", -- [3160]
+	"24/6/2022 15:39 [DEBUG] Achievements cannot be earned for the following difficulty 2", -- [3161]
+	"24/6/2022 15:52 [DEBUG] 6", -- [3162]
+	"24/6/2022 15:52 [DEBUG] Clearing Instance Variables", -- [3163]
+	"24/6/2022 15:52 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3164]
+	"24/6/2022 15:52 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1912: attempt to call method 'InstanceCleanup' (a nil value).", -- [3165]
+	"24/6/2022 15:52 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3166]
+	"24/6/2022 15:52 [DEBUG] Clearing Instance Variables if exists", -- [3167]
+	"24/6/2022 15:52 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [3168]
+	"24/6/2022 15:52 [DEBUG] Clearing Instance Variables if exists", -- [3169]
+	"24/6/2022 15:52 [DEBUG] Clearing Instance Variables", -- [3170]
+	"24/6/2022 15:52 [DEBUG] Resetting Global Variables", -- [3171]
+	"24/6/2022 15:52 [DEBUG] InfoFrame does not need to be reset", -- [3172]
+	"24/6/2022 15:52 [DEBUG] Resetting PlayerRank", -- [3173]
+	"24/6/2022 15:52 [DEBUG] InfoFrame was not active", -- [3174]
+	"24/6/2022 17:6 [DEBUG] Player has entered instance", -- [3175]
+	"24/6/2022 17:6 [DEBUG] 1728", -- [3176]
+	"24/6/2022 17:6 [DEBUG] Offical Instance Name: 1728 _1728", -- [3177]
+	"24/6/2022 17:6 [DEBUG] DifficultyID: 12", -- [3178]
+	"24/6/2022 17:6 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [3179]
+	"24/6/2022 17:6 [DEBUG] Player has entered instance", -- [3180]
+	"24/6/2022 17:6 [DEBUG] 1728", -- [3181]
+	"24/6/2022 17:6 [DEBUG] Offical Instance Name: 1728 _1728", -- [3182]
+	"24/6/2022 17:6 [DEBUG] DifficultyID: 12", -- [3183]
+	"24/6/2022 17:6 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [3184]
+	"24/6/2022 17:54 [DEBUG] Player has entered instance", -- [3185]
+	"24/6/2022 17:54 [DEBUG] 1456", -- [3186]
+	"24/6/2022 17:54 [DEBUG] Offical Instance Name: 1456 _1456", -- [3187]
+	"24/6/2022 17:54 [DEBUG] Expansion: 4", -- [3188]
+	"24/6/2022 17:54 [DEBUG] Instance Type: Dungeons", -- [3189]
+	"24/6/2022 17:54 [DEBUG] Instance: 1456", -- [3190]
+	"24/6/2022 17:54 [DEBUG] DifficultyID: 2", -- [3191]
+	"24/6/2022 17:54 [DEBUG] Achievements cannot be earned for the following difficulty 2", -- [3192]
+	"24/6/2022 18:14 [DEBUG] 6", -- [3193]
+	"24/6/2022 18:14 [DEBUG] Clearing Instance Variables", -- [3194]
+	"24/6/2022 18:14 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3195]
+	"24/6/2022 18:14 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1912: attempt to call method 'InstanceCleanup' (a nil value).", -- [3196]
+	"24/6/2022 18:14 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3197]
+	"24/6/2022 18:14 [DEBUG] Clearing Instance Variables if exists", -- [3198]
+	"24/6/2022 18:14 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [3199]
+	"24/6/2022 18:14 [DEBUG] Clearing Instance Variables if exists", -- [3200]
+	"24/6/2022 18:14 [DEBUG] Clearing Instance Variables", -- [3201]
+	"24/6/2022 18:14 [DEBUG] Resetting Global Variables", -- [3202]
+	"24/6/2022 18:14 [DEBUG] InfoFrame does not need to be reset", -- [3203]
+	"24/6/2022 18:14 [DEBUG] Resetting PlayerRank", -- [3204]
+	"24/6/2022 18:14 [DEBUG] InfoFrame was not active", -- [3205]
+	"24/6/2022 18:32 [DEBUG] Player has entered instance", -- [3206]
+	"24/6/2022 18:32 [DEBUG] 1707", -- [3207]
+	"24/6/2022 18:32 [DEBUG] Offical Instance Name: 1707 _1707", -- [3208]
+	"24/6/2022 18:32 [DEBUG] DifficultyID: 12", -- [3209]
+	"24/6/2022 18:32 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [3210]
+	"24/6/2022 18:32 [DEBUG] Player has entered instance", -- [3211]
+	"24/6/2022 18:32 [DEBUG] 1707", -- [3212]
+	"24/6/2022 18:32 [DEBUG] Offical Instance Name: 1707 _1707", -- [3213]
+	"24/6/2022 18:32 [DEBUG] DifficultyID: 12", -- [3214]
+	"24/6/2022 18:32 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [3215]
+	"24/6/2022 18:34 [DEBUG] Player has entered instance", -- [3216]
+	"24/6/2022 18:34 [DEBUG] 1707", -- [3217]
+	"24/6/2022 18:34 [DEBUG] Offical Instance Name: 1707 _1707", -- [3218]
+	"24/6/2022 18:34 [DEBUG] DifficultyID: 12", -- [3219]
+	"24/6/2022 18:34 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [3220]
+	"24/6/2022 18:34 [DEBUG] Player has entered instance", -- [3221]
+	"24/6/2022 18:34 [DEBUG] 1707", -- [3222]
+	"24/6/2022 18:34 [DEBUG] Offical Instance Name: 1707 _1707", -- [3223]
+	"24/6/2022 18:34 [DEBUG] DifficultyID: 12", -- [3224]
+	"24/6/2022 18:34 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [3225]
+	"24/6/2022 18:34 [DEBUG] Player has entered instance", -- [3226]
+	"24/6/2022 18:34 [DEBUG] 1707", -- [3227]
+	"24/6/2022 18:34 [DEBUG] Offical Instance Name: 1707 _1707", -- [3228]
+	"24/6/2022 18:34 [DEBUG] DifficultyID: 12", -- [3229]
+	"24/6/2022 18:34 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [3230]
+	"24/6/2022 18:35 [DEBUG] Player has entered instance", -- [3231]
+	"24/6/2022 18:35 [DEBUG] 1707", -- [3232]
+	"24/6/2022 18:35 [DEBUG] Offical Instance Name: 1707 _1707", -- [3233]
+	"24/6/2022 18:35 [DEBUG] DifficultyID: 12", -- [3234]
+	"24/6/2022 18:35 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [3235]
+	"24/6/2022 18:35 [DEBUG] Player has entered instance", -- [3236]
+	"24/6/2022 18:35 [DEBUG] 1707", -- [3237]
+	"24/6/2022 18:35 [DEBUG] Offical Instance Name: 1707 _1707", -- [3238]
+	"24/6/2022 18:35 [DEBUG] DifficultyID: 12", -- [3239]
+	"24/6/2022 18:35 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [3240]
+	"24/6/2022 18:36 [DEBUG] Player has entered instance", -- [3241]
+	"24/6/2022 18:36 [DEBUG] 1707", -- [3242]
+	"24/6/2022 18:36 [DEBUG] Offical Instance Name: 1707 _1707", -- [3243]
+	"24/6/2022 18:36 [DEBUG] DifficultyID: 12", -- [3244]
+	"24/6/2022 18:36 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [3245]
+	"24/6/2022 18:36 [DEBUG] Player has entered instance", -- [3246]
+	"24/6/2022 18:36 [DEBUG] 1707", -- [3247]
+	"24/6/2022 18:36 [DEBUG] Offical Instance Name: 1707 _1707", -- [3248]
+	"24/6/2022 18:36 [DEBUG] DifficultyID: 12", -- [3249]
+	"24/6/2022 18:36 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [3250]
+	"24/6/2022 18:36 [DEBUG] Player has entered instance", -- [3251]
+	"24/6/2022 18:36 [DEBUG] 1707", -- [3252]
+	"24/6/2022 18:36 [DEBUG] Offical Instance Name: 1707 _1707", -- [3253]
+	"24/6/2022 18:36 [DEBUG] DifficultyID: 12", -- [3254]
+	"24/6/2022 18:36 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [3255]
+	"24/6/2022 18:43 [DEBUG] ---IAT Runtime---", -- [3256]
+	"24/6/2022 18:43 [DEBUG] Version: 3.41.0", -- [3257]
+	"24/6/2022 18:43 [DEBUG] Attempting to load from local NPC Cache", -- [3258]
+	"24/6/2022 18:43 [DEBUG] Generating NPC Cache...", -- [3259]
+	"24/6/2022 18:43 [DEBUG] Enabling Addon", -- [3260]
+	"24/6/2022 18:43 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3261]
+	"24/6/2022 18:43 [DEBUG] Showing Minimap Icon", -- [3262]
+	"24/6/2022 18:44 [DEBUG] NPC cache generated", -- [3263]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3264]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [3265]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3266]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3267]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3268]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3269]
+	"25/6/2022 17:19 [DEBUG] Showing Minimap Icon", -- [3270]
+	"25/6/2022 17:20 [DEBUG] NPC cache generated", -- [3271]
+	"25/6/2022 17:23 [DEBUG] ---IAT Runtime---", -- [3272]
+	"25/6/2022 17:23 [DEBUG] Version: 3.41.0", -- [3273]
+	"25/6/2022 17:23 [DEBUG] Attempting to load from local NPC Cache", -- [3274]
+	"25/6/2022 17:23 [DEBUG] Generating NPC Cache...", -- [3275]
+	"25/6/2022 17:23 [DEBUG] Enabling Addon", -- [3276]
+	"25/6/2022 17:23 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3277]
+	"25/6/2022 17:25 [DEBUG] Showing Minimap Icon", -- [3278]
+	"25/6/2022 17:26 [DEBUG] NPC cache generated", -- [3279]
+	"25/6/2022 17:27 [DEBUG] ---IAT Runtime---", -- [3280]
+	"25/6/2022 17:27 [DEBUG] Version: 3.41.0", -- [3281]
+	"25/6/2022 17:27 [DEBUG] Attempting to load from local NPC Cache", -- [3282]
+	"25/6/2022 17:27 [DEBUG] Generating NPC Cache...", -- [3283]
+	"25/6/2022 17:27 [DEBUG] Enabling Addon", -- [3284]
+	"25/6/2022 17:27 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3285]
+	"25/6/2022 17:28 [DEBUG] Showing Minimap Icon", -- [3286]
+	"25/6/2022 17:29 [DEBUG] NPC cache generated", -- [3287]
+	"25/6/2022 17:31 [DEBUG] ---IAT Runtime---", -- [3288]
+	"25/6/2022 17:31 [DEBUG] Version: 3.41.0", -- [3289]
+	"25/6/2022 17:31 [DEBUG] Attempting to load from local NPC Cache", -- [3290]
+	"25/6/2022 17:31 [DEBUG] Generating NPC Cache...", -- [3291]
+	"25/6/2022 17:31 [DEBUG] Enabling Addon", -- [3292]
+	"25/6/2022 17:31 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3293]
+	"25/6/2022 17:33 [DEBUG] Showing Minimap Icon", -- [3294]
+	"25/6/2022 17:34 [DEBUG] NPC cache generated", -- [3295]
+	"25/6/2022 17:34 [DEBUG] ---IAT Runtime---", -- [3296]
+	"25/6/2022 17:34 [DEBUG] Version: 3.41.0", -- [3297]
+	"25/6/2022 17:34 [DEBUG] Attempting to load from local NPC Cache", -- [3298]
+	"25/6/2022 17:34 [DEBUG] Generating NPC Cache...", -- [3299]
+	"25/6/2022 17:34 [DEBUG] Enabling Addon", -- [3300]
+	"25/6/2022 17:34 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3301]
+	"25/6/2022 17:35 [DEBUG] Showing Minimap Icon", -- [3302]
+	"25/6/2022 17:37 [DEBUG] NPC cache generated", -- [3303]
+	"25/6/2022 17:48 [DEBUG] ---IAT Runtime---", -- [3304]
+	"25/6/2022 17:48 [DEBUG] Version: 3.41.0", -- [3305]
+	"25/6/2022 17:48 [DEBUG] Attempting to load from local NPC Cache", -- [3306]
+	"25/6/2022 17:48 [DEBUG] Generating NPC Cache...", -- [3307]
+	"25/6/2022 17:48 [DEBUG] Enabling Addon", -- [3308]
+	"25/6/2022 17:48 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3309]
+	"25/6/2022 17:49 [DEBUG] Showing Minimap Icon", -- [3310]
+	"25/6/2022 17:49 [DEBUG] ---IAT Runtime---", -- [3311]
+	"25/6/2022 17:49 [DEBUG] Version: 3.41.0", -- [3312]
+	"25/6/2022 17:49 [DEBUG] Attempting to load from local NPC Cache", -- [3313]
+	"25/6/2022 17:49 [DEBUG] Generating NPC Cache...", -- [3314]
+	"25/6/2022 17:49 [DEBUG] Enabling Addon", -- [3315]
+	"25/6/2022 17:49 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3316]
+	"25/6/2022 17:51 [DEBUG] Showing Minimap Icon", -- [3317]
+	"25/6/2022 17:52 [DEBUG] NPC cache generated", -- [3318]
+	"25/6/2022 19:38 [DEBUG] Player has entered instance", -- [3319]
+	"25/6/2022 19:38 [DEBUG] 2289", -- [3320]
+	"25/6/2022 19:38 [DEBUG] Offical Instance Name: 2289 _2289", -- [3321]
+	"25/6/2022 19:38 [DEBUG] Expansion: 2", -- [3322]
+	"25/6/2022 19:38 [DEBUG] Instance Type: Dungeons", -- [3323]
+	"25/6/2022 19:38 [DEBUG] Instance: 2289", -- [3324]
+	"25/6/2022 19:38 [DEBUG] DifficultyID: 1", -- [3325]
+	"25/6/2022 19:38 [DEBUG] Achievements cannot be earned for the following difficulty 1", -- [3326]
+	"25/6/2022 19:48 [DEBUG] 6", -- [3327]
+	"25/6/2022 19:48 [DEBUG] Clearing Instance Variables", -- [3328]
+	"25/6/2022 19:48 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3329]
+	"25/6/2022 19:48 [DEBUG] Function failed, error text: Interface\\AddOns\\InstanceAchievementTracker\\GUI.lua:2257: attempt to index upvalue 'InfoFrame' (a nil value).", -- [3330]
+	"25/6/2022 19:48 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3331]
+	"25/6/2022 19:48 [DEBUG] Clearing Instance Variables if exists", -- [3332]
+	"25/6/2022 19:48 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3770: attempt to call method 'clearVariables' (a nil value).", -- [3333]
+	"25/6/2022 19:48 [DEBUG] Clearing Instance Variables if exists", -- [3334]
+	"25/6/2022 19:48 [DEBUG] Clearing Instance Variables", -- [3335]
+	"25/6/2022 19:48 [DEBUG] Resetting Global Variables", -- [3336]
+	"25/6/2022 19:48 [DEBUG] InfoFrame does not need to be reset", -- [3337]
+	"25/6/2022 19:48 [DEBUG] Resetting PlayerRank", -- [3338]
+	"25/6/2022 19:48 [DEBUG] InfoFrame was not active", -- [3339]
+	"25/6/2022 20:10 [DEBUG] Player has entered instance", -- [3340]
+	"25/6/2022 20:10 [DEBUG] 2504", -- [3341]
+	"25/6/2022 20:10 [DEBUG] Offical Instance Name: 2504 _2504", -- [3342]
+	"25/6/2022 20:10 [DEBUG] DifficultyID: 12", -- [3343]
+	"25/6/2022 20:10 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [3344]
+	"25/6/2022 20:10 [DEBUG] Player has entered instance", -- [3345]
+	"25/6/2022 20:10 [DEBUG] 2504", -- [3346]
+	"25/6/2022 20:10 [DEBUG] Offical Instance Name: 2504 _2504", -- [3347]
+	"25/6/2022 20:10 [DEBUG] DifficultyID: 12", -- [3348]
+	"25/6/2022 20:10 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [3349]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3350]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [3351]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3352]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3353]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3354]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3355]
+	"26/6/2022 2:7 [DEBUG] Showing Minimap Icon", -- [3356]
+	"26/6/2022 2:9 [DEBUG] NPC cache generated", -- [3357]
+	"26/6/2022 2:10 [DEBUG] ---IAT Runtime---", -- [3358]
+	"26/6/2022 2:10 [DEBUG] Version: 3.41.0", -- [3359]
+	"26/6/2022 2:10 [DEBUG] Attempting to load from local NPC Cache", -- [3360]
+	"26/6/2022 2:10 [DEBUG] Generating NPC Cache...", -- [3361]
+	"26/6/2022 2:10 [DEBUG] Enabling Addon", -- [3362]
+	"26/6/2022 2:10 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3363]
+	"26/6/2022 2:11 [DEBUG] Showing Minimap Icon", -- [3364]
+	"26/6/2022 2:11 [DEBUG] NPC cache generated", -- [3365]
+	"26/6/2022 2:12 [DEBUG] ---IAT Runtime---", -- [3366]
+	"26/6/2022 2:12 [DEBUG] Version: 3.41.0", -- [3367]
+	"26/6/2022 2:12 [DEBUG] Attempting to load from local NPC Cache", -- [3368]
+	"26/6/2022 2:12 [DEBUG] Generating NPC Cache...", -- [3369]
+	"26/6/2022 2:12 [DEBUG] Enabling Addon", -- [3370]
+	"26/6/2022 2:12 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3371]
+	"26/6/2022 2:13 [DEBUG] Showing Minimap Icon", -- [3372]
+	"26/6/2022 2:13 [DEBUG] NPC cache generated", -- [3373]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3374]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [3375]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3376]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3377]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3378]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3379]
+	"26/6/2022 12:2 [DEBUG] Showing Minimap Icon", -- [3380]
+	"26/6/2022 12:2 [DEBUG] NPC cache generated", -- [3381]
+	"26/6/2022 12:2 [DEBUG] ---IAT Runtime---", -- [3382]
+	"26/6/2022 12:2 [DEBUG] Version: 3.41.0", -- [3383]
+	"26/6/2022 12:2 [DEBUG] Attempting to load from local NPC Cache", -- [3384]
+	"26/6/2022 12:2 [DEBUG] Generating NPC Cache...", -- [3385]
+	"26/6/2022 12:2 [DEBUG] Enabling Addon", -- [3386]
+	"26/6/2022 12:2 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3387]
+	"26/6/2022 12:4 [DEBUG] Showing Minimap Icon", -- [3388]
+	"26/6/2022 12:5 [DEBUG] NPC cache generated", -- [3389]
+	"26/6/2022 12:12 [DEBUG] ---IAT Runtime---", -- [3390]
+	"26/6/2022 12:12 [DEBUG] Version: 3.41.0", -- [3391]
+	"26/6/2022 12:12 [DEBUG] Attempting to load from local NPC Cache", -- [3392]
+	"26/6/2022 12:12 [DEBUG] Generating NPC Cache...", -- [3393]
+	"26/6/2022 12:12 [DEBUG] Enabling Addon", -- [3394]
+	"26/6/2022 12:12 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3395]
+	"26/6/2022 12:12 [DEBUG] Showing Minimap Icon", -- [3396]
+	"26/6/2022 12:12 [DEBUG] NPC cache generated", -- [3397]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3398]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [3399]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3400]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3401]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3402]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3403]
+	"26/6/2022 18:13 [DEBUG] Showing Minimap Icon", -- [3404]
+	"26/6/2022 18:13 [DEBUG] NPC cache generated", -- [3405]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3406]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [3407]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3408]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3409]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3410]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3411]
+	"26/6/2022 19:15 [DEBUG] Showing Minimap Icon", -- [3412]
+	"26/6/2022 19:15 [DEBUG] NPC cache generated", -- [3413]
+	"26/6/2022 19:20 [DEBUG] ---IAT Runtime---", -- [3414]
+	"26/6/2022 19:20 [DEBUG] Version: 3.41.0", -- [3415]
+	"26/6/2022 19:20 [DEBUG] Attempting to load from local NPC Cache", -- [3416]
+	"26/6/2022 19:20 [DEBUG] Generating NPC Cache...", -- [3417]
+	"26/6/2022 19:20 [DEBUG] Enabling Addon", -- [3418]
+	"26/6/2022 19:20 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3419]
+	"26/6/2022 19:24 [DEBUG] Showing Minimap Icon", -- [3420]
+	"26/6/2022 19:25 [DEBUG] NPC cache generated", -- [3421]
+	"26/6/2022 19:30 [DEBUG] ---IAT Runtime---", -- [3422]
+	"26/6/2022 19:30 [DEBUG] Version: 3.41.0", -- [3423]
+	"26/6/2022 19:30 [DEBUG] Attempting to load from local NPC Cache", -- [3424]
+	"26/6/2022 19:30 [DEBUG] Generating NPC Cache...", -- [3425]
+	"26/6/2022 19:30 [DEBUG] Enabling Addon", -- [3426]
+	"26/6/2022 19:30 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3427]
+	"26/6/2022 19:30 [DEBUG] Showing Minimap Icon", -- [3428]
+	"26/6/2022 19:31 [DEBUG] NPC cache generated", -- [3429]
+	"26/6/2022 20:5 [DEBUG] ---IAT Runtime---", -- [3430]
+	"26/6/2022 20:5 [DEBUG] Version: 3.41.0", -- [3431]
+	"26/6/2022 20:5 [DEBUG] Attempting to load from local NPC Cache", -- [3432]
+	"26/6/2022 20:5 [DEBUG] Generating NPC Cache...", -- [3433]
+	"26/6/2022 20:5 [DEBUG] Enabling Addon", -- [3434]
+	"26/6/2022 20:5 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3435]
+	"26/6/2022 20:17 [DEBUG] Showing Minimap Icon", -- [3436]
+	"26/6/2022 20:17 [DEBUG] NPC cache generated", -- [3437]
+	"26/6/2022 20:17 [DEBUG] ---IAT Runtime---", -- [3438]
+	"26/6/2022 20:17 [DEBUG] Version: 3.41.0", -- [3439]
+	"26/6/2022 20:17 [DEBUG] Attempting to load from local NPC Cache", -- [3440]
+	"26/6/2022 20:17 [DEBUG] Generating NPC Cache...", -- [3441]
+	"26/6/2022 20:17 [DEBUG] Enabling Addon", -- [3442]
+	"26/6/2022 20:17 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3443]
+	"26/6/2022 20:19 [DEBUG] Showing Minimap Icon", -- [3444]
+	"26/6/2022 20:20 [DEBUG] NPC cache generated", -- [3445]
+	"26/6/2022 20:50 [DEBUG] ---IAT Runtime---", -- [3446]
+	"26/6/2022 20:50 [DEBUG] Version: 3.41.0", -- [3447]
+	"26/6/2022 20:50 [DEBUG] Attempting to load from local NPC Cache", -- [3448]
+	"26/6/2022 20:50 [DEBUG] Generating NPC Cache...", -- [3449]
+	"26/6/2022 20:50 [DEBUG] Enabling Addon", -- [3450]
+	"26/6/2022 20:50 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3451]
+	"26/6/2022 20:51 [DEBUG] Showing Minimap Icon", -- [3452]
+	"26/6/2022 20:51 [DEBUG] NPC cache generated", -- [3453]
+	"26/6/2022 20:52 [DEBUG] ---IAT Runtime---", -- [3454]
+	"26/6/2022 20:52 [DEBUG] Version: 3.41.0", -- [3455]
+	"26/6/2022 20:52 [DEBUG] Attempting to load from local NPC Cache", -- [3456]
+	"26/6/2022 20:52 [DEBUG] Generating NPC Cache...", -- [3457]
+	"26/6/2022 20:52 [DEBUG] Enabling Addon", -- [3458]
+	"26/6/2022 20:52 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3459]
+	"26/6/2022 20:55 [DEBUG] Showing Minimap Icon", -- [3460]
+	"26/6/2022 20:57 [DEBUG] NPC cache generated", -- [3461]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3462]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [3463]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3464]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3465]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3466]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3467]
+	"26/6/2022 23:8 [DEBUG] Showing Minimap Icon", -- [3468]
+	"26/6/2022 23:8 [DEBUG] NPC cache generated", -- [3469]
+	"26/6/2022 23:24 [DEBUG] ---IAT Runtime---", -- [3470]
+	"26/6/2022 23:24 [DEBUG] Version: 3.41.0", -- [3471]
+	"26/6/2022 23:24 [DEBUG] Attempting to load from local NPC Cache", -- [3472]
+	"26/6/2022 23:24 [DEBUG] Generating NPC Cache...", -- [3473]
+	"26/6/2022 23:24 [DEBUG] Enabling Addon", -- [3474]
+	"26/6/2022 23:24 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3475]
+	"26/6/2022 23:25 [DEBUG] Showing Minimap Icon", -- [3476]
+	"26/6/2022 23:25 [DEBUG] NPC cache generated", -- [3477]
+	"26/6/2022 23:28 [DEBUG] ---IAT Runtime---", -- [3478]
+	"26/6/2022 23:28 [DEBUG] Version: 3.41.0", -- [3479]
+	"26/6/2022 23:28 [DEBUG] Attempting to load from local NPC Cache", -- [3480]
+	"26/6/2022 23:28 [DEBUG] Generating NPC Cache...", -- [3481]
+	"26/6/2022 23:28 [DEBUG] Enabling Addon", -- [3482]
+	"26/6/2022 23:28 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3483]
+	"26/6/2022 23:34 [DEBUG] Showing Minimap Icon", -- [3484]
+	"26/6/2022 23:34 [DEBUG] NPC cache generated", -- [3485]
+	"26/6/2022 23:35 [DEBUG] ---IAT Runtime---", -- [3486]
+	"26/6/2022 23:35 [DEBUG] Version: 3.41.0", -- [3487]
+	"26/6/2022 23:35 [DEBUG] Attempting to load from local NPC Cache", -- [3488]
+	"26/6/2022 23:35 [DEBUG] Generating NPC Cache...", -- [3489]
+	"26/6/2022 23:35 [DEBUG] Enabling Addon", -- [3490]
+	"26/6/2022 23:35 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3491]
+	"26/6/2022 23:36 [DEBUG] Showing Minimap Icon", -- [3492]
+	"26/6/2022 23:37 [DEBUG] NPC cache generated", -- [3493]
+	"26/6/2022 23:41 [DEBUG] ---IAT Runtime---", -- [3494]
+	"26/6/2022 23:41 [DEBUG] Version: 3.41.0", -- [3495]
+	"26/6/2022 23:41 [DEBUG] Attempting to load from local NPC Cache", -- [3496]
+	"26/6/2022 23:41 [DEBUG] Generating NPC Cache...", -- [3497]
+	"26/6/2022 23:41 [DEBUG] Enabling Addon", -- [3498]
+	"26/6/2022 23:41 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3499]
+	"26/6/2022 23:43 [DEBUG] Showing Minimap Icon", -- [3500]
+	"26/6/2022 23:44 [DEBUG] NPC cache generated", -- [3501]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3502]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [3503]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3504]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3505]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3506]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3507]
+	"27/6/2022 20:0 [DEBUG] Showing Minimap Icon", -- [3508]
+	"27/6/2022 20:0 [DEBUG] NPC cache generated", -- [3509]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3510]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [3511]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3512]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3513]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3514]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3515]
+	"28/6/2022 19:50 [DEBUG] Showing Minimap Icon", -- [3516]
+	"28/6/2022 19:51 [DEBUG] NPC cache generated", -- [3517]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3518]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [3519]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3520]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3521]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3522]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3523]
+	"28/6/2022 19:55 [DEBUG] Showing Minimap Icon", -- [3524]
+	"28/6/2022 19:55 [DEBUG] NPC cache generated", -- [3525]
+	"28/6/2022 19:56 [DEBUG] ---IAT Runtime---", -- [3526]
+	"28/6/2022 19:56 [DEBUG] Version: 3.41.0", -- [3527]
+	"28/6/2022 19:56 [DEBUG] Attempting to load from local NPC Cache", -- [3528]
+	"28/6/2022 19:56 [DEBUG] Generating NPC Cache...", -- [3529]
+	"28/6/2022 19:56 [DEBUG] Enabling Addon", -- [3530]
+	"28/6/2022 19:56 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3531]
+	"28/6/2022 19:56 [DEBUG] Showing Minimap Icon", -- [3532]
+	"28/6/2022 19:57 [DEBUG] NPC cache generated", -- [3533]
+	"28/6/2022 19:59 [DEBUG] ---IAT Runtime---", -- [3534]
+	"28/6/2022 19:59 [DEBUG] Version: 3.41.0", -- [3535]
+	"28/6/2022 19:59 [DEBUG] Attempting to load from local NPC Cache", -- [3536]
+	"28/6/2022 19:59 [DEBUG] Generating NPC Cache...", -- [3537]
+	"28/6/2022 19:59 [DEBUG] Enabling Addon", -- [3538]
+	"28/6/2022 19:59 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3539]
+	"28/6/2022 20:1 [DEBUG] Showing Minimap Icon", -- [3540]
+	"28/6/2022 20:2 [DEBUG] NPC cache generated", -- [3541]
+	"28/6/2022 20:6 [DEBUG] ---IAT Runtime---", -- [3542]
+	"28/6/2022 20:6 [DEBUG] Version: 3.41.0", -- [3543]
+	"28/6/2022 20:6 [DEBUG] Attempting to load from local NPC Cache", -- [3544]
+	"28/6/2022 20:6 [DEBUG] Generating NPC Cache...", -- [3545]
+	"28/6/2022 20:6 [DEBUG] Enabling Addon", -- [3546]
+	"28/6/2022 20:6 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3547]
+	"28/6/2022 20:7 [DEBUG] Showing Minimap Icon", -- [3548]
+	"28/6/2022 20:8 [DEBUG] NPC cache generated", -- [3549]
+	"28/6/2022 20:9 [DEBUG] ---IAT Runtime---", -- [3550]
+	"28/6/2022 20:9 [DEBUG] Version: 3.41.0", -- [3551]
+	"28/6/2022 20:9 [DEBUG] Attempting to load from local NPC Cache", -- [3552]
+	"28/6/2022 20:9 [DEBUG] Generating NPC Cache...", -- [3553]
+	"28/6/2022 20:9 [DEBUG] Enabling Addon", -- [3554]
+	"28/6/2022 20:9 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3555]
+	"28/6/2022 20:10 [DEBUG] Showing Minimap Icon", -- [3556]
+	"28/6/2022 20:11 [DEBUG] NPC cache generated", -- [3557]
+	"28/6/2022 20:11 [DEBUG] ---IAT Runtime---", -- [3558]
+	"28/6/2022 20:11 [DEBUG] Version: 3.41.0", -- [3559]
+	"28/6/2022 20:11 [DEBUG] Attempting to load from local NPC Cache", -- [3560]
+	"28/6/2022 20:11 [DEBUG] Generating NPC Cache...", -- [3561]
+	"28/6/2022 20:11 [DEBUG] Enabling Addon", -- [3562]
+	"28/6/2022 20:11 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3563]
+	"28/6/2022 20:12 [DEBUG] Showing Minimap Icon", -- [3564]
+	"28/6/2022 20:13 [DEBUG] NPC cache generated", -- [3565]
+	"28/6/2022 20:13 [DEBUG] ---IAT Runtime---", -- [3566]
+	"28/6/2022 20:13 [DEBUG] Version: 3.41.0", -- [3567]
+	"28/6/2022 20:13 [DEBUG] Attempting to load from local NPC Cache", -- [3568]
+	"28/6/2022 20:13 [DEBUG] Generating NPC Cache...", -- [3569]
+	"28/6/2022 20:13 [DEBUG] Enabling Addon", -- [3570]
+	"28/6/2022 20:13 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3571]
+	"28/6/2022 20:13 [DEBUG] Showing Minimap Icon", -- [3572]
+	"28/6/2022 20:14 [DEBUG] Player has entered instance", -- [3573]
+	"28/6/2022 20:14 [DEBUG] 2354", -- [3574]
+	"28/6/2022 20:14 [DEBUG] Offical Instance Name: 2354 _2354", -- [3575]
+	"28/6/2022 20:14 [DEBUG] DifficultyID: 12", -- [3576]
+	"28/6/2022 20:14 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [3577]
+	"28/6/2022 20:14 [DEBUG] Player has entered instance", -- [3578]
+	"28/6/2022 20:14 [DEBUG] 2354", -- [3579]
+	"28/6/2022 20:14 [DEBUG] Offical Instance Name: 2354 _2354", -- [3580]
+	"28/6/2022 20:14 [DEBUG] DifficultyID: 12", -- [3581]
+	"28/6/2022 20:14 [DEBUG] Achievements cannot be earned for the following difficulty 12", -- [3582]
+	"28/6/2022 20:14 [DEBUG] NPC cache generated", -- [3583]
+	"28/6/2022 20:24 [DEBUG] Player has entered instance", -- [3584]
+	"28/6/2022 20:24 [DEBUG] 2162", -- [3585]
+	"28/6/2022 20:24 [DEBUG] Offical Instance Name: 2162 _2162", -- [3586]
+	"28/6/2022 20:24 [DEBUG] DifficultyID: 167", -- [3587]
+	"28/6/2022 20:24 [DEBUG] Achievements cannot be earned for the following difficulty 167", -- [3588]
+	"28/6/2022 20:24 [DEBUG] Player has entered instance", -- [3589]
+	"28/6/2022 20:24 [DEBUG] 2162", -- [3590]
+	"28/6/2022 20:24 [DEBUG] Offical Instance Name: 2162 _2162", -- [3591]
+	"28/6/2022 20:24 [DEBUG] DifficultyID: 167", -- [3592]
+	"28/6/2022 20:24 [DEBUG] Achievements cannot be earned for the following difficulty 167", -- [3593]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3594]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [3595]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3596]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3597]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3598]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3599]
+	"29/6/2022 23:32 [DEBUG] Showing Minimap Icon", -- [3600]
+	"29/6/2022 23:32 [DEBUG] NPC cache generated", -- [3601]
+	"29/6/2022 23:34 [DEBUG] ---IAT Runtime---", -- [3602]
+	"29/6/2022 23:34 [DEBUG] Version: 3.41.0", -- [3603]
+	"29/6/2022 23:34 [DEBUG] Attempting to load from local NPC Cache", -- [3604]
+	"29/6/2022 23:34 [DEBUG] Generating NPC Cache...", -- [3605]
+	"29/6/2022 23:34 [DEBUG] Enabling Addon", -- [3606]
+	"29/6/2022 23:34 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3607]
+	"29/6/2022 23:33 [DEBUG] Showing Minimap Icon", -- [3608]
+	"29/6/2022 23:33 [DEBUG] NPC cache generated", -- [3609]
+	"29/6/2022 23:36 [DEBUG] ---IAT Runtime---", -- [3610]
+	"29/6/2022 23:36 [DEBUG] Version: 3.41.0", -- [3611]
+	"29/6/2022 23:36 [DEBUG] Attempting to load from local NPC Cache", -- [3612]
+	"29/6/2022 23:36 [DEBUG] Generating NPC Cache...", -- [3613]
+	"29/6/2022 23:36 [DEBUG] Enabling Addon", -- [3614]
+	"29/6/2022 23:36 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3615]
+	"29/6/2022 23:39 [DEBUG] Showing Minimap Icon", -- [3616]
+	"29/6/2022 23:40 [DEBUG] NPC cache generated", -- [3617]
+	"29/6/2022 23:43 [DEBUG] ---IAT Runtime---", -- [3618]
+	"29/6/2022 23:43 [DEBUG] Version: 3.41.0", -- [3619]
+	"29/6/2022 23:43 [DEBUG] Attempting to load from local NPC Cache", -- [3620]
+	"29/6/2022 23:43 [DEBUG] Generating NPC Cache...", -- [3621]
+	"29/6/2022 23:43 [DEBUG] Enabling Addon", -- [3622]
+	"29/6/2022 23:43 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3623]
+	"29/6/2022 23:47 [DEBUG] Showing Minimap Icon", -- [3624]
+	"29/6/2022 23:48 [DEBUG] NPC cache generated", -- [3625]
+	"29/6/2022 23:48 [DEBUG] ---IAT Runtime---", -- [3626]
+	"29/6/2022 23:48 [DEBUG] Version: 3.41.0", -- [3627]
+	"29/6/2022 23:48 [DEBUG] Attempting to load from local NPC Cache", -- [3628]
+	"29/6/2022 23:48 [DEBUG] Generating NPC Cache...", -- [3629]
+	"29/6/2022 23:48 [DEBUG] Enabling Addon", -- [3630]
+	"29/6/2022 23:48 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3631]
+	"29/6/2022 23:49 [DEBUG] Showing Minimap Icon", -- [3632]
+	"29/6/2022 23:51 [DEBUG] NPC cache generated", -- [3633]
 }
 AchievementTrackerNPCCache = {
 	[75829] = "Nhallish",
@@ -2179,9 +3979,9 @@ AchievementTrackerNPCCache = {
 	[154431] = "Khaz'goroth",
 	[68904] = "Suen",
 	[59100] = "Expired Test Subject",
-	[108600] = "Sister of the Moon",
-	[127503] = "Overseer Korgus",
-	[162719] = "Void Ascendant",
+	[53695] = "Rageface",
+	[178783] = "Moriaz the Red",
+	[131853] = "Huntmaster Grath",
 	[95886] = "Ash'Golm",
 	[102088] = "Murkwater Myrmidon",
 	[45993] = "Theralion",
@@ -2189,192 +3989,192 @@ AchievementTrackerNPCCache = {
 	[64471] = "Tenwu of the Red Smoke",
 	[26641] = "Drakkari Gutripper",
 	[74787] = "Slave Watcher Crushto",
-	[145903] = "Darkforged Crusader",
+	[149995] = "High Priestess Azil",
 	[154817] = "King Mechagon",
-	[155144] = "Abyssal Commander Sivara",
+	[153202] = "Piston Smasher",
 	[138705] = "Gourmet Parrot Chow",
 	[77153] = "Iron Star",
-	[74570] = "Ruination",
+	[111864] = "Sticky",
 	[155245] = "Depth Skulker",
-	[107699] = "Spellblade Aluriel",
+	[155243] = "Scavenging Crab",
 	[98696] = "Illysanna Ravencrest",
-	[162933] = "Thought Harvester",
+	[59080] = "Darkmaster Gandling",
 	[43404] = "Maloriak",
-	[161375] = "Promising Specimen",
+	[51405] = "Angered Earth",
 	[52675] = "Beth'tilac",
-	[144246] = "K.U.-J.0.",
-	[32927] = "Runemaster Molgeim",
+	[149043] = "Heavy Barrel",
+	[181579] = "Lihuvim",
 	[166246] = "Buttons",
-	[83775] = "Ogron Laborer",
-	[88938] = "Ragnaros",
-	[147896] = "Zandalari Crusader",
+	[53501] = "Living Meteor",
+	[155056] = "Robo-Waste",
+	[72889] = "Superheated Crawler Mine",
 	[67883] = "Rosey Axlerod",
-	[53694] = "Riplimb",
+	[155760] = "Tank Buster MK2",
 	[104217] = "Talixae Flamewreath",
 	[78736] = "Warlord Zaela",
 	[60913] = "Energy Charge",
 	[61243] = "Gekkan",
 	[95888] = "Cordana Felsong",
 	[33686] = "Lore Keeper of Norgannon",
-	[158190] = "Medivh",
+	[77814] = "Teron'gor",
 	[184823] = "Strange Artifact",
 	[73638] = "Tears of the Vale",
 	[101823] = "Mushroom Merchant",
 	[39984] = "Malignant Trogg",
-	[114895] = "Nightbane",
-	[68905] = "Lu'lin",
+	[181546] = "Prototype of Renewal",
+	[41440] = "Aberration",
 	[91349] = "Mannoroth",
-	[58605] = "Scarlet Judicator",
-	[153415] = "Sha of Violence",
+	[156575] = "Dark Inquisitor Xanesh",
 	[185128] = "Memorial Pylon",
 	[108996] = "Specter of Vengeance",
+	[153415] = "Sha of Violence",
 	[135129] = "Projection of Yogg-Saron",
 	[70250] = "Frozen Head",
-	[160271] = "Forbidden Manifestation",
+	[56843] = "Lorewalker Stonestep",
 	[135513] = "Ancient Tome",
 	[177584] = "Burning Gibbet",
 	[71529] = "Thok the Bloodthirsty",
 	[185439] = "Tainted Progenitor Relic",
 	[185129] = "Memorial Pylon",
-	[69820] = "Son of Animus",
+	[155645] = "Walkie Shockie X2",
 	[90199] = "Gorefiend",
-	[96223] = "Gamon",
+	[56839] = "Anduin Wrynn",
 	[115902] = "Razorjaw Waverunner",
 	[67231] = "Trial of the King",
 	[150081] = "Wise Mari",
 	[39665] = "Rom'ogg Bonecrusher",
 	[185130] = "Memorial Pylon",
-	[102169] = "Black Bile",
+	[171474] = "Finger Food",
 	[70251] = "Venomous Head",
 	[105097] = "Glow Bug",
-	[59822] = "Auntie Stormstout",
+	[69181] = "Saurid",
 	[71466] = "Iron Juggernaut",
-	[118924] = "Engine of Souls",
+	[165512] = "Cocoon of Lakali",
 	[169594] = "Filled Anima Container",
 	[185131] = "Memorial Pylon",
-	[61431] = "Glintrok Scout",
-	[185427] = "Unstable Progenitor Relic",
-	[67966] = "Whirl Turtle",
-	[166644] = "Artificer Xy'mox",
+	[120564] = "Titanic Anomaly",
+	[132609] = "The Hivemind",
+	[178095] = "Eye of the Jailer",
+	[61709] = "Spawn of Anger",
 	[36330] = "Lord Godfrey",
 	[99663] = "Frustrated Soul",
 	[87451] = "Fleshrender Nok'gar",
-	[29023] = "Jan'alai",
-	[72490] = "Overseer Mojka",
+	[43468] = "Lady Naz'jar",
+	[94996] = "Fragment of the Crone",
 	[70252] = "Arcane Head",
 	[144596] = "Chest o' Booty",
-	[62465] = "Captain Ook",
-	[94996] = "Fragment of the Crone",
+	[53258] = "Lord Rhyolith",
+	[72490] = "Overseer Mojka",
 	[61884] = "Xin the Weaponmaster",
 	[185005] = "Anduin's Grief",
+	[71979] = "Kor'kron Warbringer",
+	[61442] = "Kuai the Brute",
 	[78948] = "Tectus",
-	[53258] = "Lord Rhyolith",
-	[56897] = "Raigonn",
-	[49864] = "Twilight Fiend",
-	[105301] = "Expedient Elemental",
-	[180658] = "Focusing Prism",
 	[99664] = "Restless Soul",
-	[141805] = "Threshanator 3000",
-	[32919] = "Storm Lasher",
+	[169554] = "Disused Anima Container",
+	[180658] = "Focusing Prism",
+	[49864] = "Twilight Fiend",
+	[91938] = "Haunting Soul",
+	[155595] = "Sacred Gear",
 	[61213] = "Krik'thik Conscript",
 	[52442] = "Florawing Hive Queen",
 	[64346] = "Parasitoid Sha",
 	[152910] = "Queen Azshara",
 	[64556] = "Captain Ook",
-	[40634] = "Naz'jar Tempest Witch",
+	[114462] = "The Curator",
 	[135903] = "Manifestation of the Deep",
-	[56637] = "Ook-Ook",
+	[76283] = "Malefic Defender",
 	[68655] = "Mr. Bigglesworth",
 	[32857] = "Stormcaller Brundir",
-	[33768] = "Rubble",
-	[162102] = "Grand Proctor Beryllia",
-	[34035] = "Feral Defender",
+	[175474] = "Belligerent Waiter",
+	[111941] = "Hodir",
+	[33113] = "Flame Leviathan",
 	[50376] = "Angered Earth",
 	[15687] = "Moroes",
 	[73195] = "Kor'kron Jailer",
 	[136160] = "King Dazar",
 	[172093] = "Hearty Haunch",
-	[33552] = "Yogg-Saron",
+	[166266] = "Spare Parts",
 	[68336] = "Garrosh Hellscream",
 	[138718] = "Sharkbait's Empty Dish",
 	[33241] = "Freya",
 	[33202] = "Ancient Water Spirit",
 	[67569] = "Elder Adler",
-	[52422] = "Kaulema the Mover",
+	[139737] = "Lord Stormsong",
 	[77927] = "Son of the Beast",
 	[56930] = "Krik'thik Swarm Bringer",
-	[102423] = "Mug of Mead",
+	[147430] = "Virmen",
 	[138719] = "Serve Sharkbait's Meal",
 	[103758] = "Star Augur Etraeus",
-	[129440] = "Harlan Sweete",
-	[44530] = "Naz'jar Honor Guard",
-	[164218] = "Lord Chamberlain",
+	[52414] = "Tor-Tun",
+	[104341] = "Torment",
+	[52438] = "Mortaxx",
 	[164934] = "Manastorm",
-	[171456] = "Shattered Devastator",
+	[93145] = "Soul of the Crone",
 	[74475] = "Magmolatus",
-	[126712] = "Training Dummy",
-	[59779] = "Thunderpaw Guardian",
+	[171456] = "Shattered Devastator",
+	[72436] = "Immerseus",
 	[26627] = "Crystal Handler",
 	[23574] = "Akil'zon",
 	[39987] = "Evolved Twilight Zealot",
 	[116802] = "Rodent of Usual Size",
 	[108682] = "Amber Drake",
-	[162317] = "Gorechop",
+	[110758] = "High Inquisitor Whitemane",
 	[164967] = "Doctor Ickus",
 	[165408] = "Halkias",
-	[52440] = "Gub",
-	[76585] = "Ragewing the Untamed",
+	[33134] = "Sara",
+	[67779] = "Mature Saurok Egg",
 	[172992] = "Overgrown Hydra",
 	[94808] = "Hellfire Guardian",
-	[53494] = "Baleroc",
+	[185423] = "Reaving Automa: Neo",
 	[175422] = "Coalesced Anima",
-	[154741] = "Squirt Bot",
+	[69086] = "Flaming Head",
 	[153172] = "Stolen Scrapbot",
 	[109450] = "Saronite Vapors",
 	[67571] = "Millhouse Manastorm",
-	[78121] = "Gorian Warmage",
-	[36535] = "Corrupted Soul Fragment",
-	[115844] = "Goroth",
+	[123531] = "Manifestation of Taeshalach",
 	[105742] = "Turbax",
-	[71983] = "Farseer Wolf Rider",
-	[73033] = "Corrupted Skullsplitter",
-	[165066] = "Huntsman Altimor",
-	[90018] = "Hellfire Cannon",
-	[122366] = "Varimathras",
-	[174018] = "Volatile Plague Bomb",
+	[115844] = "Goroth",
+	[141792] = "Liz Vilepot",
+	[78121] = "Gorian Warmage",
+	[173770] = "Blazing Brazier",
 	[80551] = "Shard of Tectus",
+	[81834] = "Priceless Paraphernalia",
+	[122366] = "Varimathras",
+	[172995] = "Hydra Seed",
+	[165066] = "Huntsman Altimor",
 	[153941] = "Zoatroid",
 	[184759] = "Depleted Automa",
-	[100436] = "Illysanna Ravencrest",
-	[36855] = "Lady Deathwhisper",
-	[61567] = "Vizier Jin'bak",
-	[172995] = "Hydra Seed",
 	[104528] = "High Botanist Tel'arn",
-	[52392] = "Gurubashi Master Chef",
+	[36855] = "Lady Deathwhisper",
 	[129208] = "Dread Captain Lockwood",
-	[105743] = "Whipsnap",
-	[172386] = "Anima Conduit",
-	[33136] = "Guardian of Yogg-Saron",
-	[150995] = "Mimiron",
+	[174018] = "Volatile Plague Bomb",
+	[100436] = "Illysanna Ravencrest",
+	[71984] = "Siege Engineer",
+	[61567] = "Vizier Jin'bak",
+	[52392] = "Gurubashi Master Chef",
+	[138967] = "Zul",
+	[172094] = "Dissectible Dessert",
+	[34826] = "Mistress of Pain",
 	[86928] = "Empowered Construct",
 	[95833] = "Hyrja",
 	[156884] = "Essence of Vita",
-	[55308] = "Warlord Zon'ozz",
+	[69427] = "Dark Animus",
 	[72496] = "Overseer Thathung",
 	[55312] = "Yor'sahj the Unsleeping",
 	[164557] = "Shard of Halkias",
-	[27654] = "Drakos the Interrogator",
-	[111882] = "Sparky",
+	[55419] = "Captain Varo'then",
+	[105744] = "Blaze",
 	[64061] = "Mogu'shan Warden",
 	[119938] = "Reanimated Templar",
-	[105744] = "Blaze",
-	[28514] = "Nalorakk",
+	[52936] = "Druid of the Flame",
+	[111882] = "Sparky",
 	[146016] = "Leeroy Jenkins",
-	[86918] = "Uncharged Construct",
+	[29305] = "Moorabi",
 	[115143] = "Snaplasher",
+	[86250] = "Kyrak",
+	[173768] = "Fiery Brazier",
 	[179392] = "Kin'tessa",
-	[71603] = "Sha Puddle",
-	[56165] = "Crystal Conductor",
 	[99031] = "Artifact",
 	[122135] = "Shatug",
 	[164363] = "Undying Stonefiend",
@@ -2383,113 +4183,113 @@ AchievementTrackerNPCCache = {
 	[55334] = "Void of the Unmaking",
 	[59458] = "Hopling",
 	[110732] = "Creature of Madness",
+	[173767] = "Embered Brazier",
 	[136683] = "Trade Prince Gallywix",
-	[154074] = "Void Orb",
 	[142949] = "Theramore Citizen",
 	[38135] = "Deformed Fanatic",
-	[170851] = "Volatile Plague Bomb",
-	[73265] = "Corrupted Amalgamation",
 	[32273] = "Infinite Corruptor",
-	[173767] = "Embered Brazier",
+	[73265] = "Corrupted Amalgamation",
+	[170851] = "Volatile Plague Bomb",
+	[154074] = "Void Orb",
 	[129722] = "Mote of Titanic Power",
 	[58787] = "Big Bessa",
 	[33244] = "Mimiron",
-	[173768] = "Fiery Brazier",
-	[86250] = "Kyrak",
-	[29305] = "Moorabi",
-	[52936] = "Druid of the Flame",
+	[71603] = "Sha Puddle",
+	[56165] = "Crystal Conductor",
+	[86918] = "Uncharged Construct",
+	[28514] = "Nalorakk",
 	[165073] = "Forlorn Captive",
-	[55419] = "Captain Varo'then",
+	[27654] = "Drakos the Interrogator",
 	[141800] = "Brutik Blackanvil",
-	[69427] = "Dark Animus",
+	[55308] = "Warlord Zon'ozz",
 	[173769] = "Smoldering Brazier",
-	[34826] = "Mistress of Pain",
-	[172094] = "Dissectible Dessert",
-	[138967] = "Zul",
-	[71984] = "Siege Engineer",
+	[150995] = "Mimiron",
+	[33136] = "Guardian of Yogg-Saron",
+	[172386] = "Anima Conduit",
+	[105743] = "Whipsnap",
 	[158041] = "N'Zoth the Corruptor",
 	[176583] = "Energy Core",
 	[105299] = "Recursive Elemental",
-	[81834] = "Priceless Paraphernalia",
+	[90018] = "Hellfire Cannon",
 	[68599] = "Ferra Pearl",
-	[173770] = "Blazing Brazier",
-	[141792] = "Liz Vilepot",
+	[73033] = "Corrupted Skullsplitter",
+	[71983] = "Farseer Wolf Rider",
 	[50284] = "Twilight Zealot",
-	[123531] = "Manifestation of Taeshalach",
-	[69086] = "Flaming Head",
-	[185423] = "Reaving Automa: Neo",
-	[67779] = "Mature Saurok Egg",
-	[33134] = "Sara",
+	[36535] = "Corrupted Soul Fragment",
+	[154741] = "Squirt Bot",
+	[53494] = "Baleroc",
+	[76585] = "Ragewing the Untamed",
+	[52440] = "Gub",
 	[84520] = "Pitwarden Gwarnok",
 	[49485] = "Aberration",
-	[110758] = "High Inquisitor Whitemane",
-	[72436] = "Immerseus",
-	[93145] = "Soul of the Crone",
-	[52438] = "Mortaxx",
-	[104341] = "Torment",
-	[52414] = "Tor-Tun",
-	[147430] = "Virmen",
-	[139737] = "Lord Stormsong",
+	[162317] = "Gorechop",
+	[59779] = "Thunderpaw Guardian",
+	[126712] = "Training Dummy",
+	[164218] = "Lord Chamberlain",
+	[44530] = "Naz'jar Honor Guard",
+	[129440] = "Harlan Sweete",
+	[102423] = "Mug of Mead",
+	[52422] = "Kaulema the Mover",
 	[131318] = "Elder Leaxa",
-	[166266] = "Spare Parts",
-	[33113] = "Flame Leviathan",
-	[111941] = "Hodir",
-	[175474] = "Belligerent Waiter",
-	[76283] = "Malefic Defender",
-	[114462] = "The Curator",
+	[33552] = "Yogg-Saron",
+	[34035] = "Feral Defender",
+	[162102] = "Grand Proctor Beryllia",
+	[33768] = "Rubble",
+	[56637] = "Ook-Ook",
+	[40634] = "Naz'jar Tempest Witch",
 	[101976] = "Millificent Manastorm",
 	[80557] = "Mote of Tectus",
-	[155595] = "Sacred Gear",
-	[91938] = "Haunting Soul",
-	[169554] = "Disused Anima Container",
+	[32919] = "Storm Lasher",
+	[141805] = "Threshanator 3000",
+	[105301] = "Expedient Elemental",
 	[64479] = "Gatecrusher",
-	[61442] = "Kuai the Brute",
-	[71979] = "Kor'kron Warbringer",
+	[62465] = "Captain Ook",
+	[56897] = "Raigonn",
 	[160859] = "Haunting Memory",
 	[38009] = "Reanimated Fanatic",
-	[43468] = "Lady Naz'jar",
+	[29023] = "Jan'alai",
 	[145898] = "Anointed Disciple",
-	[61709] = "Spawn of Anger",
-	[178095] = "Eye of the Jailer",
-	[132609] = "The Hivemind",
-	[120564] = "Titanic Anomaly",
+	[166644] = "Artificer Xy'mox",
+	[67966] = "Whirl Turtle",
+	[185427] = "Unstable Progenitor Relic",
+	[61431] = "Glintrok Scout",
 	[33118] = "Ignis the Furnace Master",
-	[165512] = "Cocoon of Lakali",
-	[69181] = "Saurid",
-	[171474] = "Finger Food",
+	[118924] = "Engine of Souls",
+	[59822] = "Auntie Stormstout",
+	[102169] = "Black Bile",
 	[178763] = "Buttons",
 	[148201] = "Crawler Mine",
-	[56839] = "Anduin Wrynn",
-	[155645] = "Walkie Shockie X2",
+	[96223] = "Gamon",
+	[69820] = "Son of Animus",
 	[151654] = "Deuce Mecha-Buffer",
-	[56843] = "Lorewalker Stonestep",
+	[160271] = "Forbidden Manifestation",
 	[137588] = "Gasping Flounder",
 	[124164] = "Torment of Golganneth",
-	[156575] = "Dark Inquisitor Xanesh",
-	[41440] = "Aberration",
-	[181546] = "Prototype of Renewal",
+	[58605] = "Scarlet Judicator",
+	[68905] = "Lu'lin",
+	[114895] = "Nightbane",
 	[99868] = "Fenryr",
 	[45906] = "Camel",
-	[77814] = "Teron'gor",
+	[158190] = "Medivh",
 	[65407] = "Shado-Pan Novice",
 	[138740] = "Musashitake",
 	[127809] = "Reorigination Module",
-	[155760] = "Tank Buster MK2",
-	[72889] = "Superheated Crawler Mine",
-	[155056] = "Robo-Waste",
-	[53501] = "Living Meteor",
+	[53694] = "Riplimb",
+	[147896] = "Zandalari Crusader",
+	[88938] = "Ragnaros",
+	[83775] = "Ogron Laborer",
 	[38010] = "Reanimated Adherent",
-	[181579] = "Lihuvim",
-	[149043] = "Heavy Barrel",
-	[51405] = "Angered Earth",
-	[59080] = "Darkmaster Gandling",
+	[32927] = "Runemaster Molgeim",
+	[144246] = "K.U.-J.0.",
+	[161375] = "Promising Specimen",
+	[162933] = "Thought Harvester",
 	[61699] = "Sik'thik Amberwing",
-	[155243] = "Scavenging Crab",
+	[107699] = "Spellblade Aluriel",
 	[171094] = "Grisly Curio",
-	[111864] = "Sticky",
-	[153202] = "Piston Smasher",
-	[149995] = "High Priestess Azil",
-	[131853] = "Huntmaster Grath",
-	[178783] = "Moriaz the Red",
-	[53695] = "Rageface",
+	[74570] = "Ruination",
+	[155144] = "Abyssal Commander Sivara",
+	[145903] = "Darkforged Crusader",
+	[162719] = "Void Ascendant",
+	[127503] = "Overseer Korgus",
+	[108600] = "Sister of the Moon",
 }

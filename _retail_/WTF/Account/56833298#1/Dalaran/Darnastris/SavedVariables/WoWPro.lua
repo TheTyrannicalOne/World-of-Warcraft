@@ -14,12 +14,15 @@ WoWProCharDB = {
 	},
 	["GuideStack"] = {
 	},
-	["EnableFlight"] = true,
-	["EnableRares"] = true,
+	["completedQIDs"] = {
+	},
+	["Rank"] = {
+	},
 	["EnableGrailQuestName"] = false,
-	["EnablePetBattles"] = true,
+	["Enabled"] = true,
 	["EnableGrailQuestObsolete"] = false,
-	["EnableGrailBreadcrumbs"] = false,
+	["BuildingLocations"] = {
+	},
 	["Tradeskills"] = {
 		[2522] = {
 			["skillLvl"] = 1,
@@ -53,8 +56,32 @@ WoWProCharDB = {
 		},
 		[2586] = {
 			["skillLvl"] = 1,
+			["skillMax"] = 100,
 			["name"] = "Legion Fishing",
 			["skillMod"] = 0,
+		},
+		[2524] = {
+			["skillLvl"] = 57,
+			["skillMod"] = 0,
+			["name"] = "Jewelcrafting",
+			["skillMax"] = 300,
+		},
+		[2572] = {
+			["skillLvl"] = 107,
+			["skillMod"] = 0,
+			["name"] = "Mining",
+			["skillMax"] = 300,
+		},
+		[186] = {
+			["skillLvl"] = 3,
+			["skillMod"] = 0,
+			["name"] = "Mining",
+			["skillMax"] = 100,
+		},
+		[2567] = {
+			["skillLvl"] = 3,
+			["skillMod"] = 0,
+			["name"] = "Draenor Mining",
 			["skillMax"] = 100,
 		},
 		[356] = {
@@ -63,48 +90,21 @@ WoWProCharDB = {
 			["name"] = "Fishing",
 			["skillMax"] = 100,
 		},
-		[2572] = {
-			["skillLvl"] = 107,
-			["skillMod"] = 0,
-			["name"] = "Mining",
-			["skillMax"] = 300,
-		},
-		[2567] = {
-			["skillLvl"] = 3,
-			["skillMod"] = 0,
-			["name"] = "Draenor Mining",
-			["skillMax"] = 100,
-		},
-		[186] = {
-			["skillLvl"] = 3,
-			["skillMod"] = 0,
-			["name"] = "Mining",
-			["skillMax"] = 100,
-		},
-		[2524] = {
-			["skillLvl"] = 57,
-			["skillMod"] = 0,
-			["name"] = "Jewelcrafting",
-			["skillMax"] = 300,
-		},
 	},
-	["DebugLevel"] = 0,
+	["GuideVersion"] = {
+	},
 	["Taxi"] = {
 	},
 	["Guide"] = {
 	},
 	["EnableTreasures"] = true,
-	["completedQIDs"] = {
-	},
+	["EnableFlight"] = true,
 	["AutoHideInsideInstancesNotify"] = true,
 	["AutoHideInCombat"] = false,
-	["GuideVersion"] = {
-	},
-	["BuildingLocations"] = {
-	},
-	["Enabled"] = true,
+	["DebugLevel"] = 0,
+	["EnableGrailBreadcrumbs"] = false,
+	["EnablePetBattles"] = true,
 	["skippedQIDs"] = {
 	},
-	["Rank"] = {
-	},
+	["EnableRares"] = true,
 }

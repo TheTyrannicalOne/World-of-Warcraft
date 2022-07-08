@@ -231,7 +231,8 @@ if UnitClassBase( 'player' ) == 'ROGUE' then
 
     spec:RegisterStateExpr( "effective_combo_points", function ()
         local c = combo_points.current or 0
-        if c == 0 then return 0 end
+        if not covenant.kyrian then return c end
+        if c < 2 or c > 5 then return c end
         if buff[ "echoing_reprimand_" .. c ].up then return 7 end
         return c
     end )
@@ -1592,6 +1593,9 @@ if UnitClassBase( 'player' ) == 'ROGUE' then
 
             usable = function () return combo_points.current > 0 end,
             handler = function ()
+               	if talent.alacrity.enabled and combo_points.current > 4 then
+                    addStack( "alacrity", 20, 1 )
+                end
                 if talent.internal_bleeding.enabled then
                     applyDebuff( "target", "internal_bleeding" )
                     debuff.internal_bleeding.pmultiplier = persistent_multiplier

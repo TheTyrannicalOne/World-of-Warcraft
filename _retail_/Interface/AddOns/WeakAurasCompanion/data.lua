@@ -1,11 +1,7 @@
 -- file generated automatically
-WeakAurasCompanion = {
+WeakAurasCompanionData = {
   WeakAuras = {
     slugs = {
-    },
-    uids = {
-    },
-    ids = {
     },
     stash = {
     },
@@ -15,13 +11,7 @@ WeakAurasCompanion = {
   Plater = {
     slugs = {
     },
-    uids = {
-    },
-    ids = {
-    },
     stash = {
-    },
-    stopmotionFiles = {
     },
   },
 }
