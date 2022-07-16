@@ -27,7 +27,7 @@ DataStore_StatsDB = {
 					["Base"] = "468|73|893|208|0",
 					["Defense"] = "0|0|3|9.9252014160156|10|0",
 				},
-				["lastUpdate"] = 1656560661,
+				["lastUpdate"] = 1657469949,
 			},
 			["Default.Dalaran.Darnastris"] = {
 				["Stats"] = {
@@ -57,16 +57,16 @@ DataStore_StatsDB = {
 			},
 			["Default.Zul'jin.Alatra"] = {
 				["Stats"] = {
-					["Ranged"] = "510-511|0|960|0|18.542856216431",
-					["HealthMax"] = 25674,
-					["Melee"] = "340-341|1.8680000305176|960|0|18.542856216431|0",
+					["Ranged"] = "625-728|2.8010001182556|960|0|18.542856216431",
+					["HealthMax"] = 25420,
+					["Melee"] = "510-511|2.8010001182556|960|0|18.542856216431|0",
 					["MaxPower"] = "2|100",
 					["Defense"] = "0|0|9.5837802886963|0|0|0",
 					["PVP"] = "2|0",
 					["Base"] = "271|960|1271|371|0",
 					["Spell"] = "371|394|0|18.542856216431|234|0",
 				},
-				["lastUpdate"] = 1656463674,
+				["lastUpdate"] = 1657471790,
 			},
 			["Default.Zul'jin.Valmagus"] = {
 				["Stats"] = {
@@ -79,7 +79,7 @@ DataStore_StatsDB = {
 					["Base"] = "1263|158|2134|452|0",
 					["Defense"] = "0|0|3|11.460131645203|10|0",
 				},
-				["lastUpdate"] = 1656560130,
+				["lastUpdate"] = 1657471313,
 			},
 			["Default.Black Dragonflight.Durlok"] = {
 				["Stats"] = {
@@ -92,7 +92,7 @@ DataStore_StatsDB = {
 					["Base"] = "84|405|640|190|0",
 					["Defense"] = "0|0|15.61882686615|0|0|0",
 				},
-				["lastUpdate"] = 1656560907,
+				["lastUpdate"] = 1657469654,
 			},
 			["Default.Dalaran.Rotclaugh"] = {
 				["Stats"] = {
@@ -144,7 +144,7 @@ DataStore_StatsDB = {
 					["Base"] = "84|195|640|549|0",
 					["Spell"] = "549|604|0|18.581018447876|283|375",
 				},
-				["lastUpdate"] = 1656560028,
+				["lastUpdate"] = 1657470849,
 			},
 			["Default.Dalaran.Varlouris"] = {
 				["Stats"] = {
@@ -170,7 +170,7 @@ DataStore_StatsDB = {
 					["Base"] = "1341|309|2116|304|0",
 					["Defense"] = "0|0|3|11.938189506531|10|0",
 				},
-				["lastUpdate"] = 1656569353,
+				["lastUpdate"] = 1657469502,
 			},
 		},
 	},

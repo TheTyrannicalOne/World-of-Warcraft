@@ -6,11 +6,11 @@ TomTomDB = {
 		["Shaekhan - Argent Dawn"] = "Default",
 		["Alatra - Zul'jin"] = "Default",
 		["Illingrath - Dalaran"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
+		["Valmagus - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
-		["Valmagus - Zul'jin"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
 		["Varlouris - Dalaran"] = "Default",
 		["Tendralas - Dalaran"] = "Default",
@@ -51,11 +51,11 @@ TomTomWaypointsM = {
 		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
 		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
@@ -72,7 +72,7 @@ TomTomWaypointsM = {
 		},
 		["Illingrath - Dalaran"] = {
 		},
-		["Durlok - Black Dragonflight"] = {
+		["Valmagus - Zul'jin"] = {
 		},
 		["Darnastris - Dalaran"] = {
 		},
@@ -80,7 +80,7 @@ TomTomWaypointsM = {
 		},
 		["Shanyt - Argent Dawn"] = {
 		},
-		["Valmagus - Zul'jin"] = {
+		["Durlok - Black Dragonflight"] = {
 		},
 		["Zulbathal - Zul'jin"] = {
 		},

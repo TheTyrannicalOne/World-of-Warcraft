@@ -10,10 +10,10 @@ TomTomDB = {
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
-		["Valmagus - Zul'jin"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
 		["Varlouris - Dalaran"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
+		["Valmagus - Zul'jin"] = "Default",
 		["Alatra - Zul'jin"] = "Default",
 	},
 	["profiles"] = {
@@ -55,10 +55,10 @@ TomTomWaypointsM = {
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
 		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
 	},
 	["profiles"] = {
@@ -80,13 +80,13 @@ TomTomWaypointsM = {
 		},
 		["Shanyt - Argent Dawn"] = {
 		},
-		["Valmagus - Zul'jin"] = {
+		["Durlok - Black Dragonflight"] = {
 		},
 		["Zulbathal - Zul'jin"] = {
 		},
 		["Varlouris - Dalaran"] = {
 		},
-		["Durlok - Black Dragonflight"] = {
+		["Valmagus - Zul'jin"] = {
 		},
 		["Alatra - Zul'jin"] = {
 		},

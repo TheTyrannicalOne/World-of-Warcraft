@@ -1,6 +1,30 @@
 
 ElvCharacterDB = {
+	["CliqueDatatext"] = {
+	},
 	["ConvertKeybindings"] = true,
+	["ChatEditHistory"] = {
+		"/s launch fireworks out the launchers he raises out the water and we kill him", -- [1]
+		"/s two druids just went to get some", -- [2]
+		"/p np", -- [3]
+		"/hekili", -- [4]
+		"/cw Peroyjenkins-Mal'Ganis TY", -- [5]
+		"/hug", -- [6]
+		"/kneel", -- [7]
+		"/p that would be great", -- [8]
+		"/p TY!", -- [9]
+		"/pet", -- [10]
+		"/npcscan add 66932 Akkalou", -- [11]
+		"/p lets go", -- [12]
+		"/opie", -- [13]
+		"/bow", -- [14]
+		"/dance", -- [15]
+		"/p well looks like its slow right now good luck will try again later", -- [16]
+		"/love", -- [17]
+		"/invite lillys-blackhand", -- [18]
+		"/p all good", -- [19]
+		"/cw Xugaaz-WyrmrestAccord TY!", -- [20]
+	},
 	["ChatHistoryLog"] = {
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14735:Player-75-058380E2:1:4:30:22:4294967295:4294967295:4294967295:4294967295|h[Flight School Graduate]|h|r!", -- [1]
@@ -2180,29 +2204,5 @@ ElvCharacterDB = {
 			[51] = 1656566972,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [99]
-	},
-	["ChatEditHistory"] = {
-		"/s launch fireworks out the launchers he raises out the water and we kill him", -- [1]
-		"/s two druids just went to get some", -- [2]
-		"/p np", -- [3]
-		"/hekili", -- [4]
-		"/cw Peroyjenkins-Mal'Ganis TY", -- [5]
-		"/hug", -- [6]
-		"/kneel", -- [7]
-		"/p that would be great", -- [8]
-		"/p TY!", -- [9]
-		"/pet", -- [10]
-		"/npcscan add 66932 Akkalou", -- [11]
-		"/p lets go", -- [12]
-		"/opie", -- [13]
-		"/bow", -- [14]
-		"/dance", -- [15]
-		"/p well looks like its slow right now good luck will try again later", -- [16]
-		"/love", -- [17]
-		"/invite lillys-blackhand", -- [18]
-		"/p all good", -- [19]
-		"/cw Xugaaz-WyrmrestAccord TY!", -- [20]
-	},
-	["CliqueDatatext"] = {
 	},
 }

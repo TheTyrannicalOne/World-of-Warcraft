@@ -5,29 +5,28 @@ WoWProCharDB = {
 	["AutoHideInsideInstances"] = true,
 	["EnableGrailCheckPrereq"] = false,
 	["QID2Guide"] = {
-		[47221] = "Ludo_Argus",
-		[9407] = "JamHel6063",
-		[47835] = "Ludo_Argus",
 		[28705] = "JamHel6063",
+		[47221] = "Ludo_Argus",
+		[47835] = "Ludo_Argus",
+		[9407] = "JamHel6063",
 	},
 	["Trades"] = {
 	},
 	["GuideStack"] = {
 	},
-	["EnableFlight"] = true,
-	["Rank"] = {
+	["completedQIDs"] = {
 	},
+	["EnableRares"] = true,
 	["EnableGrailQuestName"] = false,
+	["Enabled"] = true,
 	["EnableGrailBreadcrumbs"] = false,
-	["EnableGrailQuestObsolete"] = false,
-	["BuildingLocations"] = {
-	},
+	["EnablePetBattles"] = true,
 	["Tradeskills"] = {
 		[2586] = {
 			["skillLvl"] = 1,
-			["skillMax"] = 100,
-			["name"] = "Legion Fishing",
 			["skillMod"] = 0,
+			["name"] = "Legion Fishing",
+			["skillMax"] = 100,
 		},
 		[182] = {
 			["skillLvl"] = 83,
@@ -71,10 +70,10 @@ WoWProCharDB = {
 			["name"] = "Herbalism",
 			["skillMax"] = 300,
 		},
-		[2480] = {
+		[356] = {
 			["skillLvl"] = 1,
 			["skillMod"] = 0,
-			["name"] = "Draenor Alchemy",
+			["name"] = "Fishing",
 			["skillMax"] = 100,
 		},
 		[2552] = {
@@ -83,11 +82,11 @@ WoWProCharDB = {
 			["name"] = "Pandaria Herbalism",
 			["skillMax"] = 75,
 		},
-		[2549] = {
-			["skillLvl"] = 83,
+		[185] = {
+			["skillLvl"] = 1,
 			["skillMod"] = 0,
-			["name"] = "Battle for Azeroth Herbalism",
-			["skillMax"] = 175,
+			["name"] = "Cooking",
+			["skillMax"] = 100,
 		},
 		[2481] = {
 			["skillLvl"] = 1,
@@ -107,11 +106,11 @@ WoWProCharDB = {
 			["name"] = "Alchemy",
 			["skillMax"] = 300,
 		},
-		[185] = {
-			["skillLvl"] = 1,
+		[2549] = {
+			["skillLvl"] = 83,
 			["skillMod"] = 0,
-			["name"] = "Cooking",
-			["skillMax"] = 100,
+			["name"] = "Battle for Azeroth Herbalism",
+			["skillMax"] = 175,
 		},
 		[2551] = {
 			["skillLvl"] = 79,
@@ -119,28 +118,29 @@ WoWProCharDB = {
 			["name"] = "Draenor Herbalism",
 			["skillMax"] = 100,
 		},
-		[356] = {
+		[2480] = {
 			["skillLvl"] = 1,
 			["skillMod"] = 0,
-			["name"] = "Fishing",
+			["name"] = "Draenor Alchemy",
 			["skillMax"] = 100,
 		},
 	},
-	["Guide"] = {
-	},
+	["DebugLevel"] = 0,
 	["Taxi"] = {
 	},
-	["GuideVersion"] = {
+	["BuildingLocations"] = {
 	},
 	["EnableTreasures"] = true,
-	["completedQIDs"] = {
-	},
+	["EnableFlight"] = true,
 	["AutoHideInsideInstancesNotify"] = true,
 	["AutoHideInCombat"] = false,
-	["DebugLevel"] = 0,
-	["EnablePetBattles"] = true,
-	["Enabled"] = true,
+	["GuideVersion"] = {
+	},
+	["Guide"] = {
+	},
+	["EnableGrailQuestObsolete"] = false,
 	["skippedQIDs"] = {
 	},
-	["EnableRares"] = true,
+	["Rank"] = {
+	},
 }

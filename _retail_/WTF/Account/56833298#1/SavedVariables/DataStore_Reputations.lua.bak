@@ -17,7 +17,7 @@ DataStore_ReputationsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.Dalaran.Avisar"] = {
-				["lastUpdate"] = 1656560418,
+				["lastUpdate"] = 1657469762,
 				["Factions"] = {
 					10099, -- [1]
 					10099, -- [2]
@@ -91,9 +91,9 @@ DataStore_ReputationsDB = {
 					[24] = 0,
 					[75] = 14787,
 					[150] = 0,
-					[56] = 7779,
-					[57] = 9974,
 					[79] = 12400,
+					[57] = 9974,
+					[56] = 7779,
 				},
 			},
 			["Default.Dalaran.Tendralas"] = {
@@ -150,7 +150,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Zul'jin.Valmagus"] = {
-				["lastUpdate"] = 1656560103,
+				["lastUpdate"] = 1657471287,
 				["Factions"] = {
 					[38] = 250,
 					[76] = 7826,
@@ -193,7 +193,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Black Dragonflight.Durlok"] = {
-				["lastUpdate"] = 1656560889,
+				["lastUpdate"] = 1657469611,
 				["Factions"] = {
 					[83] = 0,
 					[85] = 0,
@@ -253,8 +253,8 @@ DataStore_ReputationsDB = {
 					[75] = 4802,
 					[77] = 4502,
 					[79] = 27365,
-					[57] = 6168,
 					[112] = 4502,
+					[57] = 6168,
 				},
 			},
 			["Default.Dalaran.Illingrath"] = {
@@ -273,8 +273,8 @@ DataStore_ReputationsDB = {
 					[37] = 42000,
 					[152] = 2000,
 					[153] = 500,
-					[57] = 0,
 					[158] = 620,
+					[57] = 0,
 					[154] = 9410,
 					[138] = 6100,
 					[63] = 0,
@@ -286,7 +286,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Zul'jin.Zulbathal"] = {
-				["lastUpdate"] = 1656559908,
+				["lastUpdate"] = 1657470093,
 				["Factions"] = {
 					[122] = 40000,
 					[38] = 4230,
@@ -367,16 +367,16 @@ DataStore_ReputationsDB = {
 					[58] = 9520,
 					[166] = 2150,
 					[60] = 0,
-					[57] = 4017,
+					[81] = -42000,
 					[63] = 8732,
 					[64] = 4366,
 					[66] = 4373,
 					[18] = 647,
-					[36] = 0,
+					[167] = 2425,
 					[140] = 3475,
 					[38] = 4230,
 					[20] = 647,
-					[81] = -42000,
+					[57] = 4017,
 					[80] = 290,
 					[59] = 2307,
 					[150] = 0,
@@ -394,11 +394,11 @@ DataStore_ReputationsDB = {
 					[77] = 8999,
 					[56] = 6009,
 					[112] = 8999,
-					[167] = 2425,
+					[36] = 0,
 				},
 			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["lastUpdate"] = 1656568607,
+				["lastUpdate"] = 1657468815,
 				["guildName"] = "Bloodmoon Chosen",
 				["guildRep"] = 42000,
 				["Factions"] = {

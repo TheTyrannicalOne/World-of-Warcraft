@@ -23,10 +23,10 @@ ARLDB2 = {
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
-		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
-		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
-		["Okona - Zul'jin"] = "Okona - Zul'jin",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
@@ -39,7 +39,7 @@ ARLDB2 = {
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Abyronterner - Zul'jin"] = "Abyronterner - Zul'jin",
-		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
+		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Jasmoney - Zul'jin"] = "Jasmoney - Zul'jin",
 		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Mandles - Zul'jin"] = "Mandles - Zul'jin",
@@ -113,9 +113,9 @@ ARLDB2 = {
 				},
 				["Jasmoney"] = {
 				},
-				["Mandles"] = {
-				},
 				["Shimzo"] = {
+				},
+				["Mandles"] = {
 				},
 				["Banesmuncy"] = {
 				},
@@ -183,13 +183,13 @@ ARLDB2 = {
 		},
 		["Varlouris - Dalaran"] = {
 		},
-		["Alatra - Zul'jin"] = {
+		["Guufnah - Zul'jin"] = {
 		},
 		["Shimzo - Zul'jin"] = {
 		},
-		["Guufnah - Zul'jin"] = {
+		["Alatra - Zul'jin"] = {
 		},
-		["Okona - Zul'jin"] = {
+		["Tinkster - Dalaran"] = {
 		},
 		["Jingojaggot - Zul'jin"] = {
 		},
@@ -215,7 +215,7 @@ ARLDB2 = {
 		},
 		["Abyronterner - Zul'jin"] = {
 		},
-		["Tinkster - Dalaran"] = {
+		["Okona - Zul'jin"] = {
 		},
 		["Jasmoney - Zul'jin"] = {
 		},

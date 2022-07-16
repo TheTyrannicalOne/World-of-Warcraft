@@ -174,13 +174,6 @@ X: 0
 Y: 0
 W: 962
 H: 662
-Frame: CovenantSanctumFrame
-FrameLevel: 1
-Anchor: CENTER
-X: 0
-Y: 0
-W: 980
-H: 637
 Frame: GameMenuFrame
 FrameLevel: 1
 Anchor: CENTER

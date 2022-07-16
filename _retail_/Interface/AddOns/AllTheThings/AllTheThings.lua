@@ -301,6 +301,11 @@ local containsValue = function(dict, value)
 		if value2 == value then return true; end
 	end
 end
+local indexOf = function(arr, value)
+	for i,value2 in ipairs(arr) do
+		if value2 == value then return i; end
+	end
+end
 
 -- Sorting Logic
 (function()
@@ -5643,6 +5648,9 @@ fieldConverters = {
 	["questID"] = cacheQuestID,
 	["questIDA"] = cacheQuestID,
 	["questIDH"] = cacheQuestID,
+	["otherQuestData"] = function(group, value)
+		CacheFields(value);
+	end,
 	["requireSkill"] = function(group, value)
 		CacheField(group, "professionID", value);
 	end,
@@ -8192,9 +8200,53 @@ app.CreateQuest = function(id, t)
 	return setmetatable(constructor(id, t, "questID"), app.BaseQuest);
 end
 app.CreateQuestWithFactionData = function(t)
-	local questData = app.FactionID == Enum.FlightPathFaction.Horde and t.hqd or t.aqd;
+	local questData, otherQuestData;
+	if app.FactionID == Enum.FlightPathFaction.Horde then
+		questData = t.hqd;
+		otherQuestData = t.aqd;
+		otherQuestData.r = Enum.FlightPathFaction.Alliance;
+	else
+		questData = t.aqd;
+		otherQuestData = t.hqd;
+		otherQuestData.r = Enum.FlightPathFaction.Horde;
+	end
+	
+	-- Apply this quest's current data into the other faction's quest. (this is for tooltip caching and source quest resolution)
+	
+	-- Apply the faction specific quest data to this object.
 	for key,value in pairs(questData) do t[key] = value; end
-	return setmetatable(t, app.BaseQuest);
+	rawset(t, "r", app.FactionID);
+	local original = setmetatable(t, app.BaseQuest);
+	if not otherQuestData.questID or otherQuestData.questID == original.questID then
+		setmetatable(otherQuestData, { __index = t });
+		rawset(t, "otherQuestData", otherQuestData);
+		return original;
+	else
+		setmetatable(otherQuestData, app.BaseQuest);
+		for key,value in pairs(t) do
+			if not rawget(otherQuestData, key) then
+				rawset(otherQuestData, key, value);
+			end
+		end
+		local oldOnUpdate = original.OnUpdate;
+		original.OnUpdate = function(t)
+			otherQuestData.parent = t.parent;
+			CacheFields(otherQuestData);
+			local index = indexOf(t.parent.g, t);
+			if index then
+				tinsert(t.parent.g, index + 1, otherQuestData);
+			else
+				tinsert(t.parent.g, otherQuestData);
+			end
+			if oldOnUpdate then
+				t.OnUpdate = oldOnUpdate;
+				return oldOnUpdate(t);
+			else
+				t.OnUpdate = nil;
+			end
+		end
+		return original;
+	end
 end
 -- Causes a group to remain visible if it is replayable, regardless of collection status
 app.ShowIfReplayableQuest = function(data)
@@ -14697,6 +14749,7 @@ function app:CreateMiniListForGroup(group)
 						["icon"] = "Interface\\Icons\\Achievement_GarrisonFollower_ItemLevel650.blp",
 						["g"] = g,
 						["OnUpdate"] = app.AlwaysShowUpdate,
+						["sourceIgnored"] = true,
 					};
 				else
 					appearanceGroup = {
@@ -14704,6 +14757,7 @@ function app:CreateMiniListForGroup(group)
 						["description"] = L["UNIQUE_APPEARANCE_LABEL_DESC"],
 						["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO.blp",
 						["OnUpdate"] = app.AlwaysShowUpdate,
+						["sourceIgnored"] = true,
 					};
 				end
 				-- add the group showing the Appearance information for this popout
@@ -14768,8 +14822,8 @@ function app:CreateMiniListForGroup(group)
 						end
 					end
 					-- add the group showing the related Set information for this popout
-					if not group.g then group.g = { app.CreateGearSet(setID, { ["OnUpdate"] = app.AlwaysShowUpdate, ["g"] = g }) }
-					else tinsert(group.g, app.CreateGearSet(setID, { ["OnUpdate"] = app.AlwaysShowUpdate, ["g"] = g })) end
+					if not group.g then group.g = { app.CreateGearSet(setID, { ["OnUpdate"] = app.AlwaysShowUpdate, ["sourceIgnored"] = true, ["g"] = g }) }
+					else tinsert(group.g, app.CreateGearSet(setID, { ["OnUpdate"] = app.AlwaysShowUpdate, ["sourceIgnored"] = true, ["g"] = g })) end
 				end
 			end
 		end
@@ -14809,8 +14863,8 @@ function app:CreateMiniListForGroup(group)
 			end
 
 			-- Show Quest Prereqs
-			local gTop;
 			if root.sourceQuests then
+				local gTop;
 				if app.Settings:GetTooltipSetting("QuestChain:Nested") then
 					-- clean out the sub-groups of the root since it will be listed at the top of the popout
 					root.g = nil;
@@ -14950,6 +15004,7 @@ function app:CreateMiniListForGroup(group)
 					["g"] = gTop or g,
 					["hideText"] = true,
 					["OnUpdate"] = app.AlwaysShowUpdate,
+					["sourceIgnored"] = true,
 				};
 				NestObject(group, questChainHeader);
 			end
@@ -14985,7 +15040,8 @@ function app:CreateMiniListForGroup(group)
 				app.AccountWideQuests = oldQuestAccountWide;
 			end;
 			-- Populate the Quest Rewards
-			app.TryPopulateQuestRewards(group)
+			-- think this causes quest popouts to somehow break...
+			-- app.TryPopulateQuestRewards(group)
 		end
 	end
 	popout:Toggle(true);
@@ -17090,7 +17146,7 @@ function app:GetDataCache()
 		db = {};
 		db.text = L["FILTER_ID_TYPES"][103];
 		db.name = db.text;
-		db.icon = 132853;
+		db.icon = app.asset("Category_Illusions");
 		tinsert(g, DynamicCategory(db, "illusionID"));
 
 		-- Mounts - Dynamic
@@ -20377,11 +20433,11 @@ customWindowUpdates["quests"] = function(self, force, got)
 			if onlyCached then
 				overrides.visible = function(o, key)
 					return o._missing and HaveQuestData(o.questID);
-				end;
+				end
 			else
 				overrides.visible = function(o, key)
 					return o._missing;
-				end;
+				end
 			end
 			overrides.doUpdate = function(o, key)
 				-- trigger a repeat update to the holding window after the DLO is loaded into the window and is not missing in DB
@@ -20389,7 +20445,7 @@ customWindowUpdates["quests"] = function(self, force, got)
 					-- print("doUpdate override",o.hash)
 					return true;
 				end
-			end;
+			end
 		end
 		local partition, partitionStart, partitionGroups;
 		local dlo = app.DelayLoadedObject;

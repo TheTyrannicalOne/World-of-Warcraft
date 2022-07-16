@@ -4,11 +4,11 @@ CliqueDB3 = {
 	["char"] = {
 		["Avisar - Dalaran"] = {
 			["spec1_profileKey"] = "Avisar - Dalaran",
-			["spec2_profileKey"] = "Avisar - Dalaran",
+			["spec3_profileKey"] = "Avisar - Dalaran",
 			["downclick"] = false,
 			["fastooc"] = false,
-			["spec3_profileKey"] = "Avisar - Dalaran",
 			["specswap"] = false,
+			["spec2_profileKey"] = "Avisar - Dalaran",
 		},
 		["Laymonan - Zul'jin"] = {
 			["spec1_profileKey"] = "Laymonan - Zul'jin",
@@ -58,29 +58,29 @@ CliqueDB3 = {
 		},
 		["Shanyt - Argent Dawn"] = {
 			["spec1_profileKey"] = "Shanyt - Argent Dawn",
-			["fastooc"] = false,
-			["spec2_profileKey"] = "Shanyt - Argent Dawn",
-			["downclick"] = false,
 			["specswap"] = false,
+			["downclick"] = false,
+			["fastooc"] = false,
 			["alerthidden"] = true,
 			["spec3_profileKey"] = "Shanyt - Argent Dawn",
+			["spec2_profileKey"] = "Shanyt - Argent Dawn",
 		},
 		["Valmagus - Zul'jin"] = {
 			["spec1_profileKey"] = "Valmagus - Zul'jin",
-			["specswap"] = false,
+			["spec3_profileKey"] = "Valmagus - Zul'jin",
 			["downclick"] = false,
 			["fastooc"] = false,
-			["spec3_profileKey"] = "Valmagus - Zul'jin",
 			["spec2_profileKey"] = "Valmagus - Zul'jin",
+			["specswap"] = false,
 		},
 		["Zulbathal - Zul'jin"] = {
 			["spec1_profileKey"] = "Zulbathal - Zul'jin",
-			["specswap"] = false,
+			["spec3_profileKey"] = "Zulbathal - Zul'jin",
 			["downclick"] = false,
 			["fastooc"] = false,
-			["spec2_profileKey"] = "Zulbathal - Zul'jin",
-			["spec3_profileKey"] = "Zulbathal - Zul'jin",
 			["spec4_profileKey"] = "Zulbathal - Zul'jin",
+			["specswap"] = false,
+			["spec2_profileKey"] = "Zulbathal - Zul'jin",
 		},
 		["Varlouris - Dalaran"] = {
 			["spec1_profileKey"] = "Varlouris - Dalaran",
@@ -100,11 +100,11 @@ CliqueDB3 = {
 		},
 		["Alatra - Zul'jin"] = {
 			["spec1_profileKey"] = "Alatra - Zul'jin",
-			["specswap"] = false,
-			["downclick"] = false,
 			["fastooc"] = false,
-			["spec2_profileKey"] = "Alatra - Zul'jin",
 			["spec3_profileKey"] = "Alatra - Zul'jin",
+			["downclick"] = false,
+			["specswap"] = false,
+			["spec2_profileKey"] = "Alatra - Zul'jin",
 		},
 	},
 	["profileKeys"] = {
@@ -130,10 +130,10 @@ CliqueDB3 = {
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
-		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
-		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
-		["Okona - Zul'jin"] = "Okona - Zul'jin",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
@@ -146,7 +146,7 @@ CliqueDB3 = {
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Abyronterner - Zul'jin"] = "Abyronterner - Zul'jin",
-		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
+		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Jasmoney - Zul'jin"] = "Jasmoney - Zul'jin",
 		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Mandles - Zul'jin"] = "Mandles - Zul'jin",
@@ -570,7 +570,7 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Alatra - Zul'jin"] = {
+		["Guufnah - Zul'jin"] = {
 			["bindings"] = {
 				{
 					["sets"] = {
@@ -608,7 +608,7 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Guufnah - Zul'jin"] = {
+		["Alatra - Zul'jin"] = {
 			["bindings"] = {
 				{
 					["sets"] = {
@@ -627,13 +627,13 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Okona - Zul'jin"] = {
+		["Tinkster - Dalaran"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -874,13 +874,13 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Tinkster - Dalaran"] = {
+		["Okona - Zul'jin"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]

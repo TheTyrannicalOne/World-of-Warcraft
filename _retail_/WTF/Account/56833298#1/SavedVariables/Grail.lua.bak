@@ -1,7 +1,6 @@
 
 GrailDatabase = {
 	["_retail_"] = {
-		["delayEventsHandled"] = true,
 		["learned"] = {
 			["QUEST_NAME"] = {
 				"enUS|36322|54353|Darkshore Donations: Blood-Stained Bone", -- [1]
@@ -10483,6 +10482,7 @@ GrailDatabase = {
 				"118|44325|enUS|63944|T:177927", -- [8645]
 			},
 		},
+		["delayEventsHandled"] = true,
 		["Tracking"] = {
 			"2020-04-20 23:25 Argent Dawn/Shanyt/Horde/WARRIOR/Scourge/2/enUS/US/33941", -- [1]
 			"New quest completed 55604 UNKNOWN NAME", -- [2]

@@ -1,226 +1,8 @@
 
 ElvCharacterDB = {
+	["CliqueDatatext"] = {
+	},
 	["ChatHistoryLog"] = {
-		{
-			"<CTRL ALT DEPLETE> We are a new guild ran by a council. Our goal is to ensure our guildies feel included and enjoy their time with us! We are looking to build a team for heroic raids and keystones. Raid times are Wed. and Fri. 9PM-11PM realm time.", -- [1]
-			"Pcardèr-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Pcardèr-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2354, -- [11]
-			"Player-61-0EAB6F9A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Pcardèr|r",
-			[51] = 1655505562,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
-		{
-			"<Brave Magicans> Local Guild WTS SotFO 11/11 MM and HC, Sylvanas mount. M+15-22 Key, KSH, KSM. Start in 25 mins. 4 loot traders optional. Dm me for details", -- [1]
-			"Zosuhutyl-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Zosuhutyl-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			219, -- [11]
-			"Player-61-0EBD2027", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cZosuhutyl|r",
-			[51] = 1655632743,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
-		{
-			"offering SOTF 10/11HC HC for gold join me and try to take ur Items+Achive  whisper me for more ", -- [1]
-			"Pazermonk-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Pazermonk-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			28, -- [11]
-			"Player-61-0CA790FE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe97Pazermonk|r",
-			[51] = 1655657313,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
-		{
-			"<Brave Magicans> Local Guild WTS SotFO 11/11 MM and HC, Sylvanas mount. M+15-22 Key, KSH, KSM. Start in 25 mins. 4 loot traders optional. Dm me for details", -- [1]
-			"Zosuhutyl-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Zosuhutyl-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			65, -- [11]
-			"Player-61-0EBD2027", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cZosuhutyl|r",
-			[51] = 1655657356,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
-		{
-			"|cffffd100|HclubFinder:ClubFinder-1-33106-61-66403447|h[Guild: Preeminent]|h|r  9/11H - Casual guild recruiting warlock/mage DPS who are interested in Heroic raiding in SFO & M+. Raid times Fri 8:30pm-11:30pm EST / Sun 7-9pm EST. ", -- [1]
-			"Amayäh-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Amayäh-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			68, -- [11]
-			"Player-61-0B08105F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Amayäh|r",
-			[51] = 1655657359,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
-		{
-			"wts |cffa335ee|Hitem:41508::::::::60:257:::::::::|h[Mechano-Hog]|h|r/|cffa335ee|Hitem:153594::::::::60:257:::::::::|h[Xiwyllag ATV]|h|r/|cff0070dd|Hitem:87251::::::::60:257:::::::::|h[Geosynchronous World Spinner]|h|rcheaper then ah ", -- [1]
-			"Allaeda-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Allaeda-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			92, -- [11]
-			"Player-61-0E547EE8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeAllaeda|r",
-			[51] = 1655938904,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
-		{
-			"WTS |cff0070dd|Hitem:44218::::::::48:251::11::1:28:391:::::|h[Darkmoon Executioner]|h|r pst with offer", -- [1]
-			"Soulamber-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Soulamber-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			192, -- [11]
-			"Player-61-0EABF286", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Soulamber|r",
-			[51] = 1655938925,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
-		{
-			"<Blazing Boys> Guild party offers SotFO 11/11 Heroic & Mythic, Sylvanas mount. Mythic +15-22, KSH, KSM. Going in 20 mins. Additional 4 loot traders. Whisp me for info", -- [1]
-			"Igibovuri-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Igibovuri-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			208, -- [11]
-			"Player-61-0EBDC4AF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cIgibovuri|r",
-			[51] = 1655938933,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
-		{
-			"Glad 2.6k xp selling arena carry 0-2100 GOLD ONLY(DPS ONLY)", -- [1]
-			"Teachmeheal-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Teachmeheal-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			243, -- [11]
-			"Player-61-0E54F226", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeTeachmeheal|r",
-			[51] = 1655938969,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
-		{
-			"[WTS] M+15-20 || || Timed runs || || Whisper for additional details ||  Gold Only", -- [1]
-			"Shom-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Shom-Zul'jin", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			322, -- [11]
-			"Player-61-0EB0A1FA", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcShom|r",
-			[51] = 1655939009,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
 		{
 			"WTS M+15-20  ( Key Specific / LootFunnel ) TORGHAST Layer 10. Team 3K io+ |cffffff00|Hachievement:15506:Player-3678-0D4364BE:1:4:21:22:4294967295:4294967295:4294967295:4294967295|h[Shadowlands Keystone Hero: Season Three]|h|r Only Gold. Wisp more info", -- [1]
 			"Snákè-Zul'jin", -- [2]
@@ -242,7 +24,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Snákè|r",
 			[51] = 1655944627,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
+		}, -- [1]
 		{
 			"wts |cffa335ee|Hitem:41508::::::::60:257:::::::::|h[Mechano-Hog]|h|r/|cffa335ee|Hitem:153594::::::::60:257:::::::::|h[Xiwyllag ATV]|h|r/|cff0070dd|Hitem:87251::::::::60:257:::::::::|h[Geosynchronous World Spinner]|h|rcheaper then ah ", -- [1]
 			"Allaeda-Zul'jin", -- [2]
@@ -264,7 +46,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeAllaeda|r",
 			[51] = 1655944632,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
+		}, -- [2]
 		{
 			"|cffff80ff|Houtfit:'kl'\\d'ay']1&&&&&&&WD&i@'\\*']0'])'Kt&&&&nh&&&&&&&&&|h[|T1598183:13:13:-1:0|tOutfit]|h|r ", -- [1]
 			"Kpinz-Zul'jin", -- [2]
@@ -286,7 +68,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Kpinz|r",
 			[51] = 1655944707,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
+		}, -- [3]
 		{
 			"<Blazing Boys> Guild party offers SotFO 11/11 Heroic & Mythic, Sylvanas mount. Mythic +15-22, KSH, KSM. Going in 20 mins. Additional 4 loot traders. Whisp me for info", -- [1]
 			"Igibovuri-Zul'jin", -- [2]
@@ -308,7 +90,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cIgibovuri|r",
 			[51] = 1655944719,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
+		}, -- [4]
 		{
 			"||Selling *|cffa335ee|Hitem:156798::::::::50:250::23::1:28:872:::::|h[The Hivemind]|h|r* MOUNT ,RUN 100% guaranteed!!||Gold only! Run 20min", -- [1]
 			"Orcodeadlb-Zul'jin", -- [2]
@@ -330,7 +112,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Orcodeadlb|r",
 			[51] = 1655944731,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
+		}, -- [5]
 		{
 			"WTS |cffffffff|Hitem:38089::::::::60:255:::::::::|h[Ruby Shades]|h|r", -- [1]
 			"Eatrock-Zul'jin", -- [2]
@@ -352,7 +134,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Eatrock|r",
 			[51] = 1655944793,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
+		}, -- [6]
 		{
 			"Solo player selling |cffffff00|Hachievement:12861:Player-57-0D14D355:0:0:0:-1:0:0:0:0|h[Master of Duels]|h|r + \"Contender\" title+ |cff0070dd|Hitem:163055::::::::10:62:::1:3524::::::|h[Dueler's Tabard]|h|r + 8 achiv ! (gold only ) ! /w me for info !", -- [1]
 			"Narunai-Zul'jin", -- [2]
@@ -374,7 +156,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaNarunai|r",
 			[51] = 1655944753,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
+		}, -- [7]
 		{
 			"Solo player selling |cffffff00|Hachievement:12604:Player-3676-0D9F81B7:0:0:0:-1:4:0:0:0|h[Conqueror of Azeroth]|h|r title+|cffa335ee|Hitem:163577::::::::10:62:::::::::|h[Conqueror's Scythemaw]|h|r also\"The Alliance slayer\"title /w for price(gold only)", -- [1]
 			"Narunai-Zul'jin", -- [2]
@@ -396,7 +178,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaNarunai|r",
 			[51] = 1655944753,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
+		}, -- [8]
 		{
 			"Selling Mythic+15-20s /KSM & Heroic SOTFO 11/11 (AOTC-Jailer)& tier set boss /Mythic SOTFO 5/11 / Tazavesh mount |cffa335ee|Hitem:186637::::::::1:1444:::::::::|h[Tazavesh Gearglider]|h|r/Sylvanas Windrunner kill/ unlimited.valor farm,pst", -- [1]
 			"Dsiopew-Zul'jin", -- [2]
@@ -418,7 +200,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcDsiopew|r",
 			[51] = 1655944831,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
+		}, -- [9]
 		{
 			"WTS  M+15 - 20  TIMED GET YOUR KSM NOW. Key specific, Armor stack. Ask me about the deals !!GOLD ONLY!!", -- [1]
 			"Kchabritnys-Zul'jin", -- [2]
@@ -440,7 +222,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Kchabritnys|r",
 			[51] = 1655944814,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
+		}, -- [10]
 		{
 			"wts |cffa335ee|Hitem:41508::::::::60:257:::::::::|h[Mechano-Hog]|h|r/|cffa335ee|Hitem:153594::::::::60:257:::::::::|h[Xiwyllag ATV]|h|r/|cff0070dd|Hitem:87251::::::::60:257:::::::::|h[Geosynchronous World Spinner]|h|rcheaper then ah ", -- [1]
 			"Allaeda-Zul'jin", -- [2]
@@ -462,7 +244,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeAllaeda|r",
 			[51] = 1655944912,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
+		}, -- [11]
 		{
 			"[WTS] M+15-20 || || Timed runs || || Whisper for additional details ||  Gold Only", -- [1]
 			"Shom-Zul'jin", -- [2]
@@ -484,7 +266,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcShom|r",
 			[51] = 1655944882,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
+		}, -- [12]
 		{
 			"||Selling *|cffa335ee|Hitem:156798::::::::50:250::23::1:28:872:::::|h[The Hivemind]|h|r* MOUNT ,RUN 100% guaranteed!!||Gold only! Run 20min", -- [1]
 			"Orcodeadlb-Zul'jin", -- [2]
@@ -506,7 +288,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Orcodeadlb|r",
 			[51] = 1655944927,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
+		}, -- [13]
 		{
 			"|cffff80ff|Houtfit:>K`<bG<Gc5`K1;N1;O<M7<j?0z-5`h3Is9m_&&&&&&&&&&&&&&&|h[|T1598183:13:13:-1:0|tOutfit]|h|r ", -- [1]
 			"Ollymojo-Zul'jin", -- [2]
@@ -528,7 +310,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Ollymojo|r",
 			[51] = 1655945037,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
+		}, -- [14]
 		{
 			"Selling Mythic+15-20s /KSM & Heroic SOTFO 11/11 (AOTC-Jailer)& tier set boss /Mythic SOTFO 5/11 / Tazavesh mount |cffa335ee|Hitem:186637::::::::1:1444:::::::::|h[Tazavesh Gearglider]|h|r/Sylvanas Windrunner kill/ unlimited.valor farm,pst", -- [1]
 			"Dsiopew-Zul'jin", -- [2]
@@ -550,7 +332,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcDsiopew|r",
 			[51] = 1655944982,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
+		}, -- [15]
 		{
 			"WTS M+15-20|| M+15 TIMED|| M+20 Portals ||BUY 2 OR MORE GET SPECIAL DEAL|| KSM || Armor Stack and Specific Key|| Torghast || Tazavesh|| Leveling || Gold Only", -- [1]
 			"Grisu-Zul'jin", -- [2]
@@ -572,7 +354,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cGrisu|r",
 			[51] = 1655944985,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
+		}, -- [16]
 		{
 			"<Blazing Boys> Guild party offers SotFO 11/11 Heroic & Mythic, Sylvanas mount. Mythic +15-22, KSH, KSM. Going in 20 mins. Additional 4 loot traders. Whisp me for info", -- [1]
 			"Igibovuri-Zul'jin", -- [2]
@@ -594,7 +376,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cIgibovuri|r",
 			[51] = 1655944985,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
+		}, -- [17]
 		{
 			"WTS M+15-20 Cheaper than all  /w for more info.  500 runs sold come get your 278 ilvl gear in vault next week (get a discount if u bring key)", -- [1]
 			"Knifêdge-Zul'jin", -- [2]
@@ -616,7 +398,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Knifêdge|r",
 			[51] = 1655944988,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
+		}, -- [18]
 		{
 			"Solo player selling |cffffff00|Hachievement:12861:Player-57-0D14D355:0:0:0:-1:0:0:0:0|h[Master of Duels]|h|r + \"Contender\" title+ |cff0070dd|Hitem:163055::::::::10:62:::1:3524::::::|h[Dueler's Tabard]|h|r + 8 achiv ! (gold only ) ! /w me for info !", -- [1]
 			"Narunai-Zul'jin", -- [2]
@@ -638,7 +420,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaNarunai|r",
 			[51] = 1655945081,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
+		}, -- [19]
 		{
 			"Solo player selling |cffffff00|Hachievement:12604:Player-3676-0D9F81B7:0:0:0:-1:4:0:0:0|h[Conqueror of Azeroth]|h|r title+|cffa335ee|Hitem:163577::::::::10:62:::::::::|h[Conqueror's Scythemaw]|h|r also\"The Alliance slayer\"title /w for price(gold only)", -- [1]
 			"Narunai-Zul'jin", -- [2]
@@ -660,7 +442,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaNarunai|r",
 			[51] = 1655945081,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
+		}, -- [20]
 		{
 			"WTS M+15-20  ( Key Specific / LootFunnel ) TORGHAST Layer 10. Team 3K io+ |cffffff00|Hachievement:15506:Player-3678-0D4364BE:1:4:21:22:4294967295:4294967295:4294967295:4294967295|h[Shadowlands Keystone Hero: Season Three]|h|r Only Gold. Wisp more info", -- [1]
 			"Snákè-Zul'jin", -- [2]
@@ -682,7 +464,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Snákè|r",
 			[51] = 1655945085,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
+		}, -- [21]
 		{
 			"Selling M+15 - +20. specific key, armor\\trinket/weapon stack ||3kiO group|| PST.", -- [1]
 			"Jokes-Zul'jin", -- [2]
@@ -704,7 +486,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Jokes|r",
 			[51] = 1655945040,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
+		}, -- [22]
 		{
 			" /gasp", -- [1]
 			"Goredam-Zul'jin", -- [2]
@@ -726,7 +508,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Goredam|r",
 			[51] = 1655945131,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
+		}, -- [23]
 		{
 			"wts |cffa335ee|Hitem:41508::::::::60:257:::::::::|h[Mechano-Hog]|h|r/|cffa335ee|Hitem:153594::::::::60:257:::::::::|h[Xiwyllag ATV]|h|r/|cff0070dd|Hitem:87251::::::::60:257:::::::::|h[Geosynchronous World Spinner]|h|rcheaper then ah ", -- [1]
 			"Allaeda-Zul'jin", -- [2]
@@ -748,7 +530,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeAllaeda|r",
 			[51] = 1655945133,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
+		}, -- [24]
 		{
 			"Selling fast & clean timed Mythic +15s Gold Only 3.2k team ready to go <3 Comes with cute deals <3", -- [1]
 			"Gotpaladin-Zul'jin", -- [2]
@@ -770,7 +552,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Gotpaladin|r",
 			[51] = 1655945251,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
+		}, -- [25]
 		{
 			"Selling Mythic+15-20s /KSM & Heroic SOTFO 11/11 (AOTC-Jailer)& tier set boss /Mythic SOTFO 5/11 / Tazavesh mount |cffa335ee|Hitem:186637::::::::1:1444:::::::::|h[Tazavesh Gearglider]|h|r/Sylvanas Windrunner kill/ unlimited.valor farm,pst", -- [1]
 			"Dsiopew-Zul'jin", -- [2]
@@ -792,7 +574,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcDsiopew|r",
 			[51] = 1655945254,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
+		}, -- [26]
 		{
 			"Are you guildless, an altoholic, prone to falling off cliffs, or just dead sexy? Make |cffffd100|HclubFinder:ClubFinder-1-289318-61-103871552|h[Guild: Winter Wyverns]|h|r your home & we will pretend to be your friends in front of others. Pst to join!", -- [1]
 			"Tyralynn-Zul'jin", -- [2]
@@ -814,7 +596,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Tyralynn|r",
 			[51] = 1655945323,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
+		}, -- [27]
 		{
 			"wts |cffa335ee|Hitem:41508::::::::60:257:::::::::|h[Mechano-Hog]|h|r/|cffa335ee|Hitem:153594::::::::60:257:::::::::|h[Xiwyllag ATV]|h|r/|cff0070dd|Hitem:87251::::::::60:257:::::::::|h[Geosynchronous World Spinner]|h|rcheaper then ah ", -- [1]
 			"Allaeda-Zul'jin", -- [2]
@@ -836,7 +618,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeAllaeda|r",
 			[51] = 1655945293,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
+		}, -- [28]
 		{
 			"WTS M+15-20 Cheaper than all  /w for more info.  500 runs sold come get your 278 ilvl gear in vault next week (get a discount if u bring key)", -- [1]
 			"Knifêdge-Zul'jin", -- [2]
@@ -858,7 +640,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Knifêdge|r",
 			[51] = 1655945294,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
+		}, -- [29]
 		{
 			"<Blazing Boys> Guild party offers SotFO 11/11 Heroic & Mythic, Sylvanas mount. Mythic +15-22, KSH, KSM. Going in 20 mins. Additional 4 loot traders. Whisp me for info", -- [1]
 			"Igibovuri-Zul'jin", -- [2]
@@ -880,7 +662,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cIgibovuri|r",
 			[51] = 1655945383,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
+		}, -- [30]
 		{
 			"Selling Mythic+15-20s /KSM & Heroic SOTFO 11/11 (AOTC-Jailer)& tier set boss /Mythic SOTFO 5/11 / Tazavesh mount |cffa335ee|Hitem:186637::::::::1:1444:::::::::|h[Tazavesh Gearglider]|h|r/Sylvanas Windrunner kill/ unlimited.valor farm,pst", -- [1]
 			"Dsiopew-Zul'jin", -- [2]
@@ -902,7 +684,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcDsiopew|r",
 			[51] = 1655990520,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
+		}, -- [31]
 		{
 			"<Roaring Patrol> Guild group is selling 11/11 SotFO HC & MM, Jailer mount. Any M+15-22 weekly, KSM. Next run in 20 mins. 4 loot traders optional. Dm me for more info", -- [1]
 			"Igibovuri-Zul'jin", -- [2]
@@ -924,7 +706,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cIgibovuri|r",
 			[51] = 1656007614,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
+		}, -- [32]
 		{
 			"Glad selling arena carry 0-2100 GOLD ONLY(DPS ONLY)", -- [1]
 			"Teachmeheal-Zul'jin", -- [2]
@@ -946,7 +728,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeTeachmeheal|r",
 			[51] = 1656007596,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [33]
 		{
 			"no imnt", -- [1]
 			"Allaeda-Zul'jin", -- [2]
@@ -968,7 +750,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeAllaeda|r",
 			[51] = 1656052211,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [34]
 		{
 			"(3-3.1 io Team) WTS >Mythic Keys ||+15||+20||Special deal if buy 2 or more||secure your item 278,also torgasth (only accept gold)", -- [1]
 			"Buldex-Zul'jin", -- [2]
@@ -990,7 +772,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edBuldex|r",
 			[51] = 1656052228,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [35]
 		{
 			"WTS |cffa335ee|Hitem:153594::::::::60:257:::::::::|h[Xiwyllag ATV]|h|r//|cffa335ee|Hitem:41508::::::::60:257:::::::::|h[Mechano-Hog]|h|r//|cff0070dd|Hitem:87251::::::::60:257:::::::::|h[Geosynchronous World Spinner]|h|rcheaper then ah  !", -- [1]
 			"Allaeda-Zul'jin", -- [2]
@@ -1012,7 +794,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeAllaeda|r",
 			[51] = 1656052318,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [36]
 		{
 			"Selling Mythic+15-20s /KSM & Heroic SOTFO 11/11 (AOTC-Jailer) / Tazavesh mount (Tazavesh Gearglider) & Mythic Sylvannas windrunner mount( Vengeance's Reins) &Heroic Bow & Transmogs.  pst! )", -- [1]
 			"Dsiopew-Zul'jin", -- [2]
@@ -1034,7 +816,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcDsiopew|r",
 			[51] = 1656052342,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [37]
 		{
 			"<Nether Crusaders> 11/11M SFO guild [WTS] Heroic & Mythic SotFO 11/11, Jailer mount. Mythic +15-22 weekly. Going in 25 mins. Discounts available. Whisper me for info", -- [1]
 			"Conolodul-Zul'jin", -- [2]
@@ -1056,7 +838,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cConolodul|r",
 			[51] = 1656052539,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [38]
 		{
 			"WTS  M+15 - 20  Get you KSM Now. Key specific, Armor stack. Ask me about the deals !!GOLD ONLY!!", -- [1]
 			"Kchabritnys-Zul'jin", -- [2]
@@ -1078,7 +860,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Kchabritnys|r",
 			[51] = 1656052510,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [39]
 		{
 			"who said 20 yrs?", -- [1]
 			"Dankoholic-Zul'jin", -- [2]
@@ -1100,7 +882,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Dankoholic|r",
 			[51] = 1656110581,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [40]
 		{
 			"^", -- [1]
 			"Trickysort-Zul'jin", -- [2]
@@ -1122,7 +904,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaTrickysort|r",
 			[51] = 1656110585,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [41]
 		{
 			"oh 20 days, misread", -- [1]
 			"Barlisse-Zul'jin", -- [2]
@@ -1144,7 +926,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Barlisse|r",
 			[51] = 1656110595,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [42]
 		{
 			"Donald Duck is a rent boy", -- [1]
 			"Jadafire-Zul'jin", -- [2]
@@ -1166,7 +948,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Jadafire|r",
 			[51] = 1656110595,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [43]
 		{
 			"maybe i was busy?!?!?!", -- [1]
 			"Lockagain-Zul'jin", -- [2]
@@ -1188,7 +970,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edLockagain|r",
 			[51] = 1656110596,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [44]
 		{
 			"my point is lock", -- [1]
 			"Dankoholic-Zul'jin", -- [2]
@@ -1210,7 +992,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Dankoholic|r",
 			[51] = 1656110671,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [45]
 		{
 			"we havent kicked anyone for being inactive", -- [1]
 			"Dankoholic-Zul'jin", -- [2]
@@ -1232,7 +1014,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Dankoholic|r",
 			[51] = 1656110688,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [46]
 		{
 			"Individual WTS Torghast layers 1-16 (5gems/speed) & 1-8 Jailer's Gauntlet, quick runs, gold only", -- [1]
 			"Korihan-Zul'jin", -- [2]
@@ -1254,7 +1036,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Korihan|r",
 			[51] = 1656110695,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [47]
 		{
 			"WTS M+15-20  ( Key Specific / LootFunnel ) TORGHAST Layer 10. Team 3K io+ |cffffff00|Hachievement:15506:Player-3678-0D4364BE:1:4:21:22:4294967295:4294967295:4294967295:4294967295|h[Shadowlands Keystone Hero: Season Three]|h|r Only Gold. Wisp more info", -- [1]
 			"Snákè-Zul'jin", -- [2]
@@ -1276,7 +1058,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Snákè|r",
 			[51] = 1656110699,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
+		}, -- [48]
 		{
 			"its a 3 year policy", -- [1]
 			"Lutice-Zul'jin", -- [2]
@@ -1298,7 +1080,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaLutice|r",
 			[51] = 1656110642,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [49]
 		{
 			"and we are maybe a month and a half old so", -- [1]
 			"Dankoholic-Zul'jin", -- [2]
@@ -1320,7 +1102,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Dankoholic|r",
 			[51] = 1656110745,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [50]
 		{
 			"i hear d they kick inactive people all the time", -- [1]
 			"Melidorine-Zul'jin", -- [2]
@@ -1342,7 +1124,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeMelidorine|r",
 			[51] = 1656110720,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [51]
 		{
 			"wtb port to Shrine of Two Moons, in org", -- [1]
 			"Mcbanko-Zul'jin", -- [2]
@@ -1364,7 +1146,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaMcbanko|r",
 			[51] = 1656191982,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [52]
 		{
 			"3.5k io group selling 15-20s come get you 278 vault loot and 262 gear pst for price", -- [1]
 			"Sodowhunt-Zul'jin", -- [2]
@@ -1386,7 +1168,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Sodowhunt|r",
 			[51] = 1656191986,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [53]
 		{
 			"<Phõenix> (alt 0245) is a raiding focused guild that is recruiting. We run M+'s and are currently rebuilding for Dragonflight raiding. Everyone is welcome! We are willing to teach as long as you are willing to learn. Team/Family Environment", -- [1]
 			"Kayneshot-Zul'jin", -- [2]
@@ -1408,7 +1190,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Kayneshot|r",
 			[51] = 1656192044,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [54]
 		{
 			"WTS  M+15 - 20  Timed - loot funnel -  Get your  KSM Now .  Ask me about the deals !!GOLD ONLY!!", -- [1]
 			"Caox-Zul'jin", -- [2]
@@ -1430,7 +1212,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edCaox|r",
 			[51] = 1656192049,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [55]
 		{
 			"wtb portal to Shrine of Two Moons", -- [1]
 			"Mcbanko-Zul'jin", -- [2]
@@ -1452,7 +1234,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaMcbanko|r",
 			[51] = 1656192167,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [56]
 		{
 			"Team ready |cffffff00|Hachievement:15506:Player-11-0E27A221:1:4:13:22:4294967295:4294967295:4294967295:4294967295|h[Shadowlands Keystone Hero: Season Three]|h|r to go WTS M+15-20-23 Keys > Ksm > M+15 - 95 k MULTIPLE KEYS / SPECIAL  DEALS IF BUY 3 OR MORE , the best price you can get, just DM me /ONLY GOLD ", -- [1]
 			"Roanlee-Zul'jin", -- [2]
@@ -1474,7 +1256,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Roanlee|r",
 			[51] = 1656192200,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [57]
 		{
 			"WTS M+ 15s For Gold! Full 3.2k+ Team! Whisper For More info!", -- [1]
 			"Lobsterballs-Zul'jin", -- [2]
@@ -1496,7 +1278,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeLobsterballs|r",
 			[51] = 1656223756,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [58]
 		{
 			"WTS  M+15 - 20  Get you KSM Now. Key specific, Armor stack. Ask me about the deals !!GOLD ONLY!!", -- [1]
 			"Kchabritnys-Zul'jin", -- [2]
@@ -1518,7 +1300,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Kchabritnys|r",
 			[51] = 1656223854,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [59]
 		{
 			"Individual WTS Torghast layers 1-16 (5gems/speed) & 1-8 Jailer's Gauntlet, quick runs, gold only", -- [1]
 			"Korihan-Zul'jin", -- [2]
@@ -1540,7 +1322,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Korihan|r",
 			[51] = 1656285337,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [60]
 		{
 			"Local guild help FULL RUN  |cff66bbff|Hjournal:0:1195:14|h[Sepulcher of the First Ones]|h|r  Heroic. THE BEST PRICE.  Fast and smooth runing. 8:00 PM EDT/ 7:00 PM Server time . ONLY GOLD /w me for more details ", -- [1]
 			"Zulbuste-Zul'jin", -- [2]
@@ -1562,7 +1344,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Zulbuste|r",
 			[51] = 1656285397,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [61]
 		{
 			"WTS  M+15 - 20  Timed - loot funnel -  Get your  KSM Now .  Ask me about the deals !!GOLD ONLY!!", -- [1]
 			"Caox-Zul'jin", -- [2]
@@ -1584,7 +1366,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edCaox|r",
 			[51] = 1656285471,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [62]
 		{
 			"-Wizards And Monkeys - Offering Heroic / Mythic |cffffff00|Hachievement:15417:Player-61-0EBE9458:0:0:0:-1:0:0:0:0|h[Sepulcher of the First Ones]|h|r with funnels at BEST PRICE! Sylvanas Mythic and MOUNT every week. Gold only.", -- [1]
 			"Targargarn-Zul'jin", -- [2]
@@ -1606,7 +1388,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaTargargarn|r",
 			[51] = 1656285422,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [63]
 		{
 			"wts |cffa335ee|Hitem:153594::::::::60:257:::::::::|h[Xiwyllag ATV]|h|r  |cffa335ee|Hitem:41508::::::::60:257:::::::::|h[Mechano-Hog]|h|r  |cff0070dd|Hitem:87251::::::::60:257:::::::::|h[Geosynchronous World Spinner]|h|r cheaper then ah ! ", -- [1]
 			"Allaeda-Zul'jin", -- [2]
@@ -1628,7 +1410,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeAllaeda|r",
 			[51] = 1656285575,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [64]
 		{
 			"WTS :M+ 15 - + 23, , ARMOR STACK , discounts for more than 2 keys, FREE LOOT ,good prices, very cheap. DM for more details. only gold", -- [1]
 			"Gadrek-Zul'jin", -- [2]
@@ -1650,7 +1432,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Gadrek|r",
 			[51] = 1656285621,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [65]
 		{
 			"Team ready |cffffff00|Hachievement:15506:Player-11-0E27A221:1:4:13:22:4294967295:4294967295:4294967295:4294967295|h[Shadowlands Keystone Hero: Season Three]|h|r  to go WTS M+15-20-23 Keys > Ksm > M+15 - 95 k MULTIPLE KEYS / SPECIAL  DEALS IF BUY 3 OR MORE , the best price you can get, just DM me /ONLY GOLD", -- [1]
 			"Roanlee-Zul'jin", -- [2]
@@ -1672,7 +1454,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Roanlee|r",
 			[51] = 1656300307,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [66]
 		{
 			"WTS  M+15 - 20  Get you KSM Now. Key specific, Armor stack. Ask me about the deals !!GOLD ONLY!!", -- [1]
 			"Kchabritnys-Zul'jin", -- [2]
@@ -1694,7 +1476,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Kchabritnys|r",
 			[51] = 1656300316,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [67]
 		{
 			"Local guild help FULL RUN  |cff66bbff|Hjournal:0:1195:14|h[Sepulcher of the First Ones]|h|r  Heroic. THE BEST PRICE.  Fast and smooth runing.00:15  AM  Server time . ONLY GOLD /w me for more details ", -- [1]
 			"Zulbuste-Zul'jin", -- [2]
@@ -1716,7 +1498,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Zulbuste|r",
 			[51] = 1656300479,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [68]
 		{
 			"WTS  M+15 - 20  Timed - loot funnel -  Get your  KSM Now .  Ask me about the deals !!GOLD ONLY!!", -- [1]
 			"Caox-Zul'jin", -- [2]
@@ -1738,7 +1520,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edCaox|r",
 			[51] = 1656300439,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [69]
 		{
 			"WTS  M+15 - 20  Get you KSM Now. Key specific, Armor stack. Whisp for more info  !!Gold Only!!", -- [1]
 			"Kchabritnys-Zul'jin", -- [2]
@@ -1760,7 +1542,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Kchabritnys|r",
 			[51] = 1656460902,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [70]
 		{
 			"Is it possible to make the 262 crafted rings with Leech or only avoidance?", -- [1]
 			"Jupiterboiz-Zul'jin", -- [2]
@@ -1782,7 +1564,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeJupiterboiz|r",
 			[51] = 1656460943,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [71]
 		{
 			"Team ready |cffffff00|Hachievement:15506:Player-11-0E27A221:1:4:13:22:4294967295:4294967295:4294967295:4294967295|h[Shadowlands Keystone Hero: Season Three]|h|r  to go WTS M+15-20-23 Keys > Ksm > M+15 - 95 k MULTIPLE KEYS / SPECIAL  DEALS IF BUY 3 OR MORE , the best price you can get, just DM me /ONLY GOLD   ", -- [1]
 			"Roanlee-Zul'jin", -- [2]
@@ -1804,7 +1586,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Roanlee|r",
 			[51] = 1656460957,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [72]
 		{
 			"<Nox> 10/11M WTS Heroic SOFO, tonight starting at 8:30 ET. RUNNING HUGE AOTC/JAILER DISCOUNT (100k off) FOR LAST SPOTS AND FLASH DISCOUNT ON FULL CLEAR. DM me!", -- [1]
 			"Wibu-Zul'jin", -- [2]
@@ -1826,7 +1608,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edWibu|r",
 			[51] = 1656460961,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [73]
 		{
 			"<Phõenix> (alt 0245) is a raiding focused guild that is recruiting. We run M+'s and are currently rebuilding for Dragonflight raiding. Looking for all class/spec's. Everyone is welcome! Team/Family Environment Pst to ask any questions. Happy Hunting.", -- [1]
 			"Thrashurbate-Zul'jin", -- [2]
@@ -1848,7 +1630,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Thrashurbate|r",
 			[51] = 1656461031,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [74]
 		{
 			"WTS carry 2s2 /3s3 only gold", -- [1]
 			"Freyjaz-Zul'jin", -- [2]
@@ -1870,7 +1652,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Freyjaz|r",
 			[51] = 1656461036,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [75]
 		{
 			"WTB 278 |cffa335ee|Hitem:190625::::::::60:269:::::::::|h[Pauldrons of Possible Afterlives]|h|r PST price", -- [1]
 			"Disha-Zul'jin", -- [2]
@@ -1892,7 +1674,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Disha|r",
 			[51] = 1656460986,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [76]
 		{
 			"[WTS] M+ 15 || M +20-22 Timed || Bundle 15x4 ||  BUY 2 or more and Get  Free Armor Stack || Raid SFO Heroic and Mythic || Get ur weekly chest || Only Gold!!!", -- [1]
 			"Kuratwo-Zul'jin", -- [2]
@@ -1914,7 +1696,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Kuratwo|r",
 			[51] = 1656460990,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [77]
 		{
 			"WTS  M+15 - 20  Timed - loot funnel -  Get your  KSM Now .  Ask me about the deals !!GOLD ONLY!!", -- [1]
 			"Caox-Zul'jin", -- [2]
@@ -1936,7 +1718,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edCaox|r",
 			[51] = 1656461005,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [78]
 		{
 			"Local guild help FULL RUN  |cff66bbff|Hjournal:0:1195:14|h[Sepulcher of the First Ones]|h|r  Heroic. THE BEST PRICE.  Fast and smooth runing. 9:30 pm Server time . ONLY GOLD /w me for more details", -- [1]
 			"Zulbuste-Zul'jin", -- [2]
@@ -1958,7 +1740,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Zulbuste|r",
 			[51] = 1656461021,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [79]
 		{
 			"(3-3.1 io Team) WTS >Mythic Keys ||+15||+20||Special deal if buy 2 or more||secure your item 278,also torgasth (only accept gold)", -- [1]
 			"Buldex-Zul'jin", -- [2]
@@ -1980,7 +1762,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edBuldex|r",
 			[51] = 1656461068,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [80]
 		{
 			"<Late Night Pain Train 2/11M We are looking for fun reliable good players  for our team of great people. The guild is has been around for a long time and has a solid core. We raid T/W/T from 9:45-12 Server Mage/warlock/enhance shaman needed most. PST ", -- [1]
 			"Bambootëe-Zul'jin", -- [2]
@@ -2002,7 +1784,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcBambootëe|r",
 			[51] = 1656461071,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [81]
 		{
 			"<Nox> 10/11M WTS Heroic SOFO, tonight starting at 8:30 ET. RUNNING HUGE AOTC/JAILER DISCOUNT (100k off) FOR LAST SPOTS AND FLASH DISCOUNT ON FULL CLEAR. DM me!", -- [1]
 			"Wibu-Zul'jin", -- [2]
@@ -2024,7 +1806,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edWibu|r",
 			[51] = 1656461071,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [82]
 		{
 			"WTS |cffa335ee|Hitem:171700::::::::10:103::22:3:7756:1664:6646:1:28:1029:::::|h[Ward of the Red Widow]|h|r!!! 252 ilvl Shield", -- [1]
 			"Kaifman-Zul'jin", -- [2]
@@ -2046,7 +1828,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Kaifman|r",
 			[51] = 1656461102,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [83]
 		{
 			"WTB 278 |cffa335ee|Hitem:190625::::::::60:269:::::::::|h[Pauldrons of Possible Afterlives]|h|r PST price", -- [1]
 			"Disha-Zul'jin", -- [2]
@@ -2068,7 +1850,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Disha|r",
 			[51] = 1656461160,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [84]
 		{
 			"-Melt - Selling Heroic / Mythic  |cffffff00|Hachievement:15417:Player-3684-0DDDE7DB:0:0:0:-1:0:0:0:0|h[Sepulcher of the First Ones]|h|r with funnels! Sylvanas Mythic and MOUNT every week. Gold only.w.", -- [1]
 			"Nikusand-Zul'jin", -- [2]
@@ -2090,7 +1872,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edNikusand|r",
 			[51] = 1656461177,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [85]
 		{
 			"Trump 2024!", -- [1]
 			"Dahunterr-Zul'jin", -- [2]
@@ -2112,7 +1894,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Dahunterr|r",
 			[51] = 1656461178,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [86]
 		{
 			"someone did the legendary questline", -- [1]
 			"Omglolwtfuwu-Zul'jin", -- [2]
@@ -2134,7 +1916,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOmglolwtfuwu|r",
 			[51] = 1656559955,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [87]
 		{
 			"WTS M+ || +15 to +20 || 4-Men Carry || Armor stack free ||  Time guaranteed || || All loot to you || Gold Only", -- [1]
 			"Shom-Zul'jin", -- [2]
@@ -2156,7 +1938,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcShom|r",
 			[51] = 1656560017,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [88]
 		{
 			"is there a faster way to level?  ive only leveled from 10-23 and its taken me nearly 2hrs", -- [1]
 			"Junshi-Zul'jin", -- [2]
@@ -2178,31 +1960,249 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Junshi|r",
 			[51] = 1656560094,
 			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [89]
+		{
+			"WTS M+15 (KSM/Armor Stack/Specific Key) || +20 (Portal || Gold Only ||", -- [1]
+			"Wookiegold-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Wookiegold-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			508, -- [11]
+			"Player-61-0EBD3784", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cWookiegold|r",
+			[51] = 1657470236,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [90]
+		{
+			"(3-3.1 io Team) WTS >Mythic Keys ||+15||+20||Special deal if buy 2 or more||secure your item 278,also torgasth (only accept gold)", -- [1]
+			"Buldex-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Buldex-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			512, -- [11]
+			"Player-61-0EADA838", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8687edBuldex|r",
+			[51] = 1657470292,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [91]
+		{
+			"WTS M+15-20|| M+15 TIMED|| M+20 Portals ||BUY 2 OR MORE GET SPECIAL DEAL|| KSM || Armor Stack and Specific Key|| Torghast || Tazavesh|| Leveling || Gold Only", -- [1]
+			"Grisu-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Grisu-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			513, -- [11]
+			"Player-61-0E633B7D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cGrisu|r",
+			[51] = 1657470346,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [92]
+		{
+			"offering Jailer HC for gold join me and take ur AOTC+Mount whisper me for more ", -- [1]
+			"Pazermonk-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Pazermonk-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			572, -- [11]
+			"Player-61-0CA790FE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe97Pazermonk|r",
+			[51] = 1657470317,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [93]
+		{
+			"WTS M+15 (KSM/Armor Stack/Specific Key) || +20 (Portal || Gold Only ||", -- [1]
+			"Wookiegold-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Wookiegold-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			593, -- [11]
+			"Player-61-0EBD3784", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cWookiegold|r",
+			[51] = 1657470333,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [94]
+		{
+			"wts |cffa335ee|Hitem:153594::::::::60:257:::::::::|h[Xiwyllag ATV]|h|r    |cffa335ee|Hitem:41508::::::::60:257:::::::::|h[Mechano-Hog]|h|r    |cff0070dd|Hitem:87251::::::::60:257:::::::::|h[Geosynchronous World Spinner]|h|r  cheaper then ah !", -- [1]
+			"Allaeda-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Allaeda-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			594, -- [11]
+			"Player-61-0E547EE8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeAllaeda|r",
+			[51] = 1657470333,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [95]
+		{
+			"[WTS] M+ 15 || M +20-22 Timed || Bundle 15x4 ||  BUY 2 or more and Get  Free Armor Stack || Raid SFO Heroic and Mythic || Get ur weekly chest || Only Gold!!!", -- [1]
+			"Archërkurä-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Archërkurä-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			774, -- [11]
+			"Player-61-0EBF54EE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Archërkurä|r",
+			[51] = 1657470566,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			"[WTS]M+15 ^ M+20-24 Timed^ Bundle 15x2  15x4 || especific  key free || Get ur Weekly chest || Only GOLD.", -- [1]
+			"Mayße-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Mayße-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			810, -- [11]
+			"Player-61-0EB78734", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Mayße|r",
+			[51] = 1657470603,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"WTS M+15-20|| M+15 TIMED|| M+20 Portals ||BUY 2 OR MORE GET SPECIAL DEAL|| KSM || Armor Stack and Specific Key|| Torghast || Tazavesh|| Leveling || Gold Only", -- [1]
+			"Grisu-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Grisu-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			818, -- [11]
+			"Player-61-0E633B7D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cGrisu|r",
+			[51] = 1657470610,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"offering Jailer HC for gold join me and take ur AOTC+Mount whisper me for more ", -- [1]
+			"Pazermonk-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Pazermonk-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			882, -- [11]
+			"Player-61-0CA790FE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe97Pazermonk|r",
+			[51] = 1657470672,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},
-	["ConvertKeybindings"] = true,
 	["ChatEditHistory"] = {
 		"/cancelform", -- [1]
 		"/click extraaddonbutton1", -- [2]
 		"/click ExtraActionButton1", -- [3]
-		"/invite melene-bladefist", -- [4]
-		"/canimogit", -- [5]
+		"/fishingbuddy", -- [4]
+		"/wAVE", -- [5]
 		"/reloadui", -- [6]
-		"/p weird", -- [7]
+		"/p cant it says an invite pending", -- [7]
 		"/opie", -- [8]
 		"/skada hide", -- [9]
 		"/skada toggle", -- [10]
-		"/fishingbuddy", -- [11]
-		"/omen", -- [12]
+		"/omen", -- [11]
+		"/p weird", -- [12]
 		"/omnicc", -- [13]
-		"/p cant it says an invite pending", -- [14]
+		"/canimogit", -- [14]
 		"/wave", -- [15]
 		"/invite melene-blackhand", -- [16]
 		"/dance", -- [17]
 		"/reload", -- [18]
-		"/wAVE", -- [19]
+		"/invite melene-bladefist", -- [19]
 		"/allthethings", -- [20]
 	},
-	["CliqueDatatext"] = {
-	},
+	["ConvertKeybindings"] = true,
 }

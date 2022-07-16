@@ -10,16 +10,16 @@ RematchSettings = {
 	["SelectedTab"] = 1,
 	["DialogYPos"] = 667.0057983398438,
 	["YPos"] = 418.0044860839844,
-	["LevelingQueue"] = {
+	["QueueSanctuary"] = {
 	},
 	["HidePetToast"] = true,
-	["QueueSanctuary"] = {
+	["LevelingQueue"] = {
 	},
 	["Sort"] = {
 		["Order"] = 2,
 		["FavoritesFirst"] = true,
 	},
-	["AllowHiddenPetsDefaulted"] = true,
+	["JournalPanel"] = 1,
 	["BackupCount"] = 0,
 	["TeamGroups"] = {
 		{
@@ -41,9 +41,9 @@ RematchSettings = {
 		},
 		["Level"] = {
 		},
-		["Similar"] = {
-		},
 		["Sources"] = {
+		},
+		["Similar"] = {
 		},
 		["Breed"] = {
 		},
@@ -68,11 +68,11 @@ RematchSettings = {
 	},
 	["ExpandedTargetHeaders"] = {
 	},
-	["PreferredMode"] = 1,
+	["ElvUIToastDefaulted"] = true,
 	["ActivePanel"] = 1,
 	["Sanctuary"] = {
 	},
-	["ElvUIToastDefaulted"] = true,
+	["PreferredMode"] = 1,
 	["CornerPos"] = "BOTTOMLEFT",
 	["ScriptFilters"] = {
 		{
@@ -96,7 +96,7 @@ RematchSettings = {
 			"-- Pets with three or more attack types different than their pet type.\n\nlocal count = 0\nfor _,abilityID in ipairs(abilityList) do\n  local abilityType,noHints = select(7, C_PetBattles.GetAbilityInfoByID(abilityID) )\n  if not noHints and abilityType~=petType then\n    count = count + 1\n  end\nend\n\nreturn count>=3\n", -- [2]
 		}, -- [5]
 	},
-	["JournalPanel"] = 1,
+	["AllowHiddenPetsDefaulted"] = true,
 	["UseTypeBar"] = true,
 	["CustomScaleValue"] = 100,
 	["PetNotes"] = {

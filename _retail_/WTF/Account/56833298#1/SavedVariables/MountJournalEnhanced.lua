@@ -48,22 +48,22 @@ MJEGlobalSettings = {
 			["Black Market"] = true,
 			["Class"] = true,
 			["Promotion"] = true,
-			["Reputation"] = true,
+			["Instance"] = true,
 			["PVP"] = true,
 			["Garrison"] = true,
 			["World Event"] = true,
-			["Achievement"] = true,
+			["Island Expedition"] = true,
 			["Shop"] = true,
 			["Covenants"] = true,
-			["Profession"] = true,
 			["Drop"] = true,
-			["Island Expedition"] = true,
+			["Profession"] = true,
+			["Achievement"] = true,
 			["Quest"] = true,
-			["Instance"] = true,
+			["Reputation"] = true,
 		},
 		["hiddenIngame"] = false,
-		["notCollected"] = true,
 		["hidden"] = false,
+		["notCollected"] = true,
 		["onlyUsable"] = false,
 		["mountType"] = {
 			["repair"] = true,
@@ -203,19 +203,6 @@ MJEGlobalSettings = {
 				["Ruinstriders"] = true,
 				["Goats"] = true,
 			},
-			["Crabs"] = true,
-			["Reptiles"] = {
-				["Others"] = true,
-				["Mushan"] = true,
-				["N'Zoth Serpents"] = true,
-				["Snapdragons"] = true,
-				["Crocolisks"] = true,
-				["Turtles"] = true,
-				["Basilisks"] = true,
-				["Kodos"] = true,
-				["Sea Serpents"] = true,
-				["Shardhides"] = true,
-			},
 			["Ungulates"] = {
 				["Mammoths"] = true,
 				["Riverbeasts"] = true,
@@ -229,6 +216,19 @@ MJEGlobalSettings = {
 				["Camels"] = true,
 				["Runestag"] = true,
 			},
+			["Reptiles"] = {
+				["Others"] = true,
+				["Mushan"] = true,
+				["N'Zoth Serpents"] = true,
+				["Snapdragons"] = true,
+				["Crocolisks"] = true,
+				["Turtles"] = true,
+				["Basilisks"] = true,
+				["Kodos"] = true,
+				["Sea Serpents"] = true,
+				["Shardhides"] = true,
+			},
+			["Crabs"] = true,
 			["Jellyfish"] = true,
 			["Rats"] = true,
 			["Elementals"] = {
@@ -740,9 +740,9 @@ MJETrackingData = {
 		45988.01396267156, -- [4]
 	},
 	[460] = {
-		5202, -- [1]
-		1656568199, -- [2]
-		102806, -- [3]
+		5203, -- [1]
+		1657471731, -- [2]
+		102810, -- [3]
 		156188.0929422797, -- [4]
 	},
 	[664] = {
@@ -836,10 +836,10 @@ MJETrackingData = {
 		1462723200, -- [5]
 	},
 	[544] = {
-		128, -- [1]
-		1656109045, -- [2]
-		3481, -- [3]
-		32562.98176744306, -- [4]
+		129, -- [1]
+		1657471699, -- [2]
+		3511, -- [3]
+		33027.99842032914, -- [4]
 	},
 	[800] = {
 		56, -- [1]
@@ -1662,11 +1662,11 @@ MJETrackingData = {
 		30684.23601998524, -- [4]
 		1403452800, -- [5]
 	},
-	[867] = {
-		114, -- [1]
-		1651296158, -- [2]
-		2461, -- [3]
-		25179.85375930945, -- [4]
+	[434] = {
+		40, -- [1]
+		1654899947, -- [2]
+		609, -- [3]
+		5398.022838134325, -- [4]
 	},
 	[1246] = {
 		0, -- [1]
@@ -1675,10 +1675,10 @@ MJETrackingData = {
 		[5] = 1591978863,
 	},
 	[1222] = {
-		50, -- [1]
-		1656199162, -- [2]
-		2215, -- [3]
-		22382.08903663296, -- [4]
+		51, -- [1]
+		1657471775, -- [2]
+		2222, -- [3]
+		22541.61981076815, -- [4]
 	},
 	[612] = {
 		40, -- [1]
@@ -1762,10 +1762,10 @@ MJETrackingData = {
 		1655505065, -- [5]
 	},
 	[1229] = {
-		48, -- [1]
-		1656290115, -- [2]
-		3005, -- [3]
-		16945.71324400643, -- [4]
+		49, -- [1]
+		1657471567, -- [2]
+		3026, -- [3]
+		17128.59875995532, -- [4]
 	},
 	[999] = {
 		117, -- [1]
@@ -1787,9 +1787,9 @@ MJETrackingData = {
 		33453.77775895372, -- [4]
 	},
 	[382] = {
-		38058, -- [1]
-		1656570430, -- [2]
-		1831454, -- [3]
+		38059, -- [1]
+		1657468975, -- [2]
+		1831930, -- [3]
 		20701316.52157747, -- [4]
 		1394640000, -- [5]
 	},
@@ -1990,11 +1990,11 @@ MJETrackingData = {
 		1025, -- [3]
 		10068.07848185028, -- [4]
 	},
-	[434] = {
-		40, -- [1]
-		1654899947, -- [2]
-		609, -- [3]
-		5398.022838134325, -- [4]
+	[867] = {
+		114, -- [1]
+		1651296158, -- [2]
+		2461, -- [3]
+		25179.85375930945, -- [4]
 	},
 	[1247] = {
 		7, -- [1]
@@ -2063,10 +2063,10 @@ MJETrackingData = {
 		35076.41058368131, -- [4]
 	},
 	[1360] = {
-		40, -- [1]
-		1656104226, -- [2]
+		41, -- [1]
+		1657471805, -- [2]
 		596, -- [3]
-		8014.256440681795, -- [4]
+		8107.617215723611, -- [4]
 		1644648154, -- [5]
 	},
 	[488] = {
@@ -2100,10 +2100,10 @@ MJETrackingData = {
 		9213.551819616763, -- [4]
 	},
 	[1407] = {
-		24, -- [1]
-		1656107903, -- [2]
-		531, -- [3]
-		9065.845759165068, -- [4]
+		25, -- [1]
+		1657471463, -- [2]
+		599, -- [3]
+		9966.66420842147, -- [4]
 		1651349936, -- [5]
 	},
 	[1305] = {

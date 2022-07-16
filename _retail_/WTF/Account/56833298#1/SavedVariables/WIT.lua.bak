@@ -25,11 +25,11 @@ WITDB = {
 		},
 		["TUJLegacyPricingSelect"] = "market",
 		["LegacyCustomPriceSource"] = "DBMinBuyout",
-		["PricingSelect"] = "DBMarket",
+		["RecorderMinQuality"] = 1,
 		["TUJLegacyCustomPriceSource"] = "market",
 		["TUJCustomPriceSource"] = "market",
 		["BagValueMinQuality"] = 1,
-		["RecorderMinQuality"] = 1,
+		["PricingSelect"] = "DBMarket",
 		["HideMinimapIcon"] = false,
 		["CustomItemPrices"] = {
 		},

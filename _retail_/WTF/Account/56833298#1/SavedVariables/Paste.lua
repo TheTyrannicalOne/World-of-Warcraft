@@ -23,10 +23,10 @@ PasteDB = {
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
-		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
-		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
-		["Okona - Zul'jin"] = "Okona - Zul'jin",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
@@ -39,7 +39,7 @@ PasteDB = {
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Abyronterner - Zul'jin"] = "Abyronterner - Zul'jin",
-		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
+		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Jasmoney - Zul'jin"] = "Jasmoney - Zul'jin",
 		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Mandles - Zul'jin"] = "Mandles - Zul'jin",
@@ -111,16 +111,16 @@ PasteDB = {
 		["Varlouris - Dalaran"] = {
 			["loaded"] = true,
 		},
-		["Alatra - Zul'jin"] = {
+		["Guufnah - Zul'jin"] = {
 			["loaded"] = true,
 		},
 		["Shimzo - Zul'jin"] = {
 			["loaded"] = true,
 		},
-		["Guufnah - Zul'jin"] = {
+		["Alatra - Zul'jin"] = {
 			["loaded"] = true,
 		},
-		["Okona - Zul'jin"] = {
+		["Tinkster - Dalaran"] = {
 			["loaded"] = true,
 		},
 		["Jingojaggot - Zul'jin"] = {
@@ -131,8 +131,8 @@ PasteDB = {
 		},
 		["Shanyt - Argent Dawn"] = {
 			["loaded"] = true,
-			["where"] = "Default",
 			["whispertarget"] = "",
+			["where"] = "Default",
 			["pos"] = {
 			},
 		},
@@ -163,7 +163,7 @@ PasteDB = {
 		["Abyronterner - Zul'jin"] = {
 			["loaded"] = true,
 		},
-		["Tinkster - Dalaran"] = {
+		["Okona - Zul'jin"] = {
 			["loaded"] = true,
 		},
 		["Jasmoney - Zul'jin"] = {

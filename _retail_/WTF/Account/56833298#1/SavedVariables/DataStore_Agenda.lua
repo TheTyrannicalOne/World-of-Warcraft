@@ -18,11 +18,11 @@ DataStore_AgendaDB = {
 		["Options"] = {
 			["WeeklyResetHour"] = 6,
 			["WeeklyResetDay"] = 2,
-			["NextWeeklyReset"] = "2022-07-05",
+			["NextWeeklyReset"] = "2022-07-12",
 		},
 		["Characters"] = {
 			["Default.Dalaran.Avisar"] = {
-				["lastUpdate"] = 1656560430,
+				["lastUpdate"] = 1657469773,
 			},
 			["Default.Dalaran.Darnastris"] = {
 				["lastUpdate"] = 1656301032,
@@ -31,13 +31,13 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1648402104,
 			},
 			["Default.Zul'jin.Alatra"] = {
-				["lastUpdate"] = 1656463674,
+				["lastUpdate"] = 1657471539,
 			},
 			["Default.Zul'jin.Valmagus"] = {
-				["lastUpdate"] = 1656560113,
+				["lastUpdate"] = 1657471300,
 			},
 			["Default.Black Dragonflight.Durlok"] = {
-				["lastUpdate"] = 1656560898,
+				["lastUpdate"] = 1657469624,
 			},
 			["Default.Dalaran.Rotclaugh"] = {
 				["lastUpdate"] = 1648343686,
@@ -49,13 +49,13 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1648345057,
 			},
 			["Default.Zul'jin.Zulbathal"] = {
-				["lastUpdate"] = 1656559920,
+				["lastUpdate"] = 1657470106,
 			},
 			["Default.Dalaran.Varlouris"] = {
 				["lastUpdate"] = 1653803722,
 			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["lastUpdate"] = 1656569358,
+				["lastUpdate"] = 1657469481,
 			},
 		},
 	},

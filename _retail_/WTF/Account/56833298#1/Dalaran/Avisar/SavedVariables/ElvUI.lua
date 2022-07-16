@@ -1,6 +1,29 @@
 
 ElvCharacterDB = {
+	["ConvertKeybindings"] = true,
 	["CliqueDatatext"] = {
+	},
+	["ChatEditHistory"] = {
+		"/kiss", -- [1]
+		"/fishingbuddy", -- [2]
+		"/s idk", -- [3]
+		"/s got to beat it all the way through i think", -- [4]
+		"/invite ailden-bladefist", -- [5]
+		"/hekili", -- [6]
+		"/reload", -- [7]
+		"/dance", -- [8]
+		"/aap", -- [9]
+		"/cw Genieb-ShatteredHalls TY!", -- [10]
+		"/flirt", -- [11]
+		"/ltp", -- [12]
+		"/allthethings", -- [13]
+		"/s then chest?", -- [14]
+		"/wave", -- [15]
+		"/sit", -- [16]
+		"/skada hide", -- [17]
+		"/cw Willderhide-Stormrage all good thanks", -- [18]
+		"/cw Bourbonn-Dalaran TY", -- [19]
+		"/tsm", -- [20]
 	},
 	["ChatHistoryLog"] = {
 		{
@@ -2182,27 +2205,4 @@ ElvCharacterDB = {
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},
-	["ChatEditHistory"] = {
-		"/kiss", -- [1]
-		"/fishingbuddy", -- [2]
-		"/s idk", -- [3]
-		"/s got to beat it all the way through i think", -- [4]
-		"/invite ailden-bladefist", -- [5]
-		"/hekili", -- [6]
-		"/reload", -- [7]
-		"/dance", -- [8]
-		"/aap", -- [9]
-		"/cw Genieb-ShatteredHalls TY!", -- [10]
-		"/flirt", -- [11]
-		"/ltp", -- [12]
-		"/allthethings", -- [13]
-		"/s then chest?", -- [14]
-		"/wave", -- [15]
-		"/sit", -- [16]
-		"/skada hide", -- [17]
-		"/cw Willderhide-Stormrage all good thanks", -- [18]
-		"/cw Bourbonn-Dalaran TY", -- [19]
-		"/tsm", -- [20]
-	},
-	["ConvertKeybindings"] = true,
 }

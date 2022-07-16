@@ -17,8 +17,8 @@ DataStore_MailsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.Dalaran.Avisar"] = {
-				["lastUpdate"] = 1656560675,
-				["lastVisitDate"] = "2022/06/29 23:44",
+				["lastUpdate"] = 1657469965,
+				["lastVisitDate"] = "2022/07/10 12:19",
 			},
 			["Default.Dalaran.Darnastris"] = {
 				["lastUpdate"] = 1656301264,
@@ -33,12 +33,12 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2022/06/24 18:43",
 			},
 			["Default.Zul'jin.Valmagus"] = {
-				["lastUpdate"] = 1656461551,
-				["lastVisitDate"] = "2022/06/28 20:12",
+				["lastUpdate"] = 1657471368,
+				["lastVisitDate"] = "2022/07/10 12:42",
 			},
 			["Default.Black Dragonflight.Durlok"] = {
-				["lastUpdate"] = 1656560935,
-				["lastVisitDate"] = "2022/06/29 23:48",
+				["lastUpdate"] = 1657469674,
+				["lastVisitDate"] = "2022/07/10 12:14",
 			},
 			["Default.Dalaran.Varlouris"] = {
 				["lastUpdate"] = 1653803246,
@@ -53,12 +53,23 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2022/03/26 21:38",
 			},
 			["Default.Zul'jin.Zulbathal"] = {
-				["lastUpdate"] = 1656560040,
-				["lastVisitDate"] = "2022/06/29 23:34",
+				["lastUpdate"] = 1657470860,
+				["lastVisitDate"] = "2022/07/10 12:34",
 			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["lastUpdate"] = 1656568112,
-				["lastVisitDate"] = "2022/06/30 01:48",
+				["lastUpdate"] = 1657469523,
+				["Mails"] = {
+					{
+						["sender"] = "Valmagus",
+						["itemID"] = 163036,
+						["link"] = "|cffffffff|Hitem:163036::::::::60:70:::::::::|h[Polished Pet Charm]|h|r",
+						["count"] = 12,
+						["lastCheck"] = 1657471366,
+						["icon"] = 2004597,
+						["daysLeft"] = 30,
+					}, -- [1]
+				},
+				["lastVisitDate"] = "2022/07/10 12:12",
 			},
 		},
 	},

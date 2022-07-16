@@ -17,7 +17,7 @@ DataStore_ReputationsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.Dalaran.Avisar"] = {
-				["lastUpdate"] = 1656560418,
+				["lastUpdate"] = 1657469762,
 				["Factions"] = {
 					10099, -- [1]
 					10099, -- [2]
@@ -80,13 +80,13 @@ DataStore_ReputationsDB = {
 					[66] = 6730,
 					[38] = 4230,
 					[137] = 2930,
-					[79] = 12400,
+					[56] = 7779,
 					[12] = 75,
 					[123] = 6000,
 					[57] = 9974,
 					[65] = 6724,
 					[67] = 20683,
-					[56] = 7779,
+					[79] = 12400,
 					[150] = 0,
 					[24] = 0,
 					[75] = 14787,
@@ -110,7 +110,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Zul'jin.Alatra"] = {
-				["lastUpdate"] = 1656463674,
+				["lastUpdate"] = 1657471539,
 				["Factions"] = {
 					[150] = 0,
 					[6] = 1690,
@@ -150,7 +150,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Zul'jin.Valmagus"] = {
-				["lastUpdate"] = 1656560103,
+				["lastUpdate"] = 1657471287,
 				["Factions"] = {
 					[38] = 250,
 					[76] = 7826,
@@ -193,7 +193,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Black Dragonflight.Durlok"] = {
-				["lastUpdate"] = 1656560889,
+				["lastUpdate"] = 1657469611,
 				["Factions"] = {
 					[83] = 0,
 					[85] = 0,
@@ -249,11 +249,11 @@ DataStore_ReputationsDB = {
 					[65] = 4146,
 					[67] = 12760,
 					[134] = 9110,
-					[112] = 4502,
+					[57] = 6168,
 					[75] = 4802,
 					[77] = 4502,
 					[79] = 27365,
-					[57] = 6168,
+					[112] = 4502,
 					[135] = 1705,
 				},
 			},
@@ -281,8 +281,8 @@ DataStore_ReputationsDB = {
 					[75] = 3300,
 					[77] = 0,
 					[154] = 9410,
-					[57] = 0,
 					[158] = 620,
+					[57] = 0,
 				},
 			},
 			["Default.Dalaran.Thorinbane"] = {
@@ -306,7 +306,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Zul'jin.Zulbathal"] = {
-				["lastUpdate"] = 1656559908,
+				["lastUpdate"] = 1657470093,
 				["Factions"] = {
 					[122] = 40000,
 					[38] = 4230,
@@ -367,12 +367,12 @@ DataStore_ReputationsDB = {
 					[58] = 9520,
 					[166] = 2150,
 					[60] = 0,
-					[167] = 2425,
+					[36] = 0,
 					[63] = 8732,
 					[64] = 4366,
 					[66] = 4373,
 					[18] = 647,
-					[36] = 0,
+					[167] = 2425,
 					[140] = 3475,
 					[38] = 4230,
 					[20] = 647,
@@ -393,12 +393,12 @@ DataStore_ReputationsDB = {
 					[75] = 10457,
 					[150] = 0,
 					[56] = 6009,
-					[57] = 4017,
 					[81] = -42000,
+					[57] = 4017,
 				},
 			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["lastUpdate"] = 1656569344,
+				["lastUpdate"] = 1657468815,
 				["Factions"] = {
 					nil, -- [1]
 					nil, -- [2]

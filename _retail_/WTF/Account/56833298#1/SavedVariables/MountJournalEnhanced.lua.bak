@@ -44,18 +44,18 @@ MJEGlobalSettings = {
 			[0] = true,
 		},
 		["source"] = {
-			["Reputation"] = true,
+			["Instance"] = true,
 			["Black Market"] = true,
 			["PVP"] = true,
-			["Achievement"] = true,
-			["Instance"] = true,
+			["Island Expedition"] = true,
+			["Reputation"] = true,
 			["Class"] = true,
 			["Garrison"] = true,
-			["Profession"] = true,
-			["Island Expedition"] = true,
+			["Drop"] = true,
+			["Achievement"] = true,
 			["Shop"] = true,
 			["Covenants"] = true,
-			["Drop"] = true,
+			["Profession"] = true,
 			["World Event"] = true,
 			["Promotion"] = true,
 			["Quest"] = true,
@@ -64,7 +64,7 @@ MJEGlobalSettings = {
 		["hiddenIngame"] = false,
 		["color"] = {
 		},
-		["hidden"] = false,
+		["notCollected"] = true,
 		["faction"] = {
 			["horde"] = true,
 			["alliance"] = true,
@@ -221,6 +221,8 @@ MJEGlobalSettings = {
 				["Sea Serpents"] = true,
 				["Turtles"] = true,
 			},
+			["Crabs"] = true,
+			["Jellyfish"] = true,
 			["Ungulates"] = {
 				["Mammoths"] = true,
 				["Riverbeasts"] = true,
@@ -234,8 +236,6 @@ MJEGlobalSettings = {
 				["Camels"] = true,
 				["Runestag"] = true,
 			},
-			["Jellyfish"] = true,
-			["Crabs"] = true,
 			["Amphibian"] = {
 				["Crawgs"] = true,
 				["Toads"] = true,
@@ -285,7 +285,7 @@ MJEGlobalSettings = {
 		["onlyTradable"] = false,
 		["collected"] = true,
 		["onlyRecent"] = false,
-		["notCollected"] = true,
+		["hidden"] = false,
 	},
 	["personalHiddenMounts"] = false,
 	["searchInDescription"] = true,
@@ -1655,17 +1655,17 @@ MJETrackingData = {
 		996, -- [3]
 		6138.912503467948, -- [4]
 	},
-	[867] = {
-		114, -- [1]
-		1651296158, -- [2]
-		2461, -- [3]
-		25179.85375930945, -- [4]
-	},
 	[434] = {
 		40, -- [1]
 		1654899947, -- [2]
 		609, -- [3]
 		5398.022838134325, -- [4]
+	},
+	[867] = {
+		114, -- [1]
+		1651296158, -- [2]
+		2461, -- [3]
+		25179.85375930945, -- [4]
 	},
 	[624] = {
 		40, -- [1]
@@ -1938,10 +1938,10 @@ MJETrackingData = {
 		1612286122, -- [5]
 	},
 	[382] = {
-		38057, -- [1]
-		1656568269, -- [2]
-		1831454, -- [3]
-		20701306.40549434, -- [4]
+		38059, -- [1]
+		1657468975, -- [2]
+		1831930, -- [3]
+		20701316.52157747, -- [4]
 		1394640000, -- [5]
 	},
 	[471] = {

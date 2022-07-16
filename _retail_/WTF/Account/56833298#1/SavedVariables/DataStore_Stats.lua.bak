@@ -27,7 +27,7 @@ DataStore_StatsDB = {
 					["Base"] = "468|73|893|208|0",
 					["Spell"] = "574|613|0|24.066669464111|151|441",
 				},
-				["lastUpdate"] = 1656560661,
+				["lastUpdate"] = 1657469949,
 			},
 			["Default.Dalaran.Darnastris"] = {
 				["Stats"] = {
@@ -79,7 +79,7 @@ DataStore_StatsDB = {
 					["Base"] = "1263|158|2134|452|0",
 					["Spell"] = "1574|1723|0|30.02857208252|420|1600",
 				},
-				["lastUpdate"] = 1656560130,
+				["lastUpdate"] = 1657471313,
 			},
 			["Default.Black Dragonflight.Durlok"] = {
 				["Stats"] = {
@@ -92,7 +92,7 @@ DataStore_StatsDB = {
 					["Base"] = "84|405|640|190|0",
 					["Spell"] = "578|635|0|17.893964767456|390|375",
 				},
-				["lastUpdate"] = 1656560907,
+				["lastUpdate"] = 1657469654,
 			},
 			["Default.Dalaran.Rotclaugh"] = {
 				["Stats"] = {
@@ -131,7 +131,7 @@ DataStore_StatsDB = {
 					["Base"] = "84|195|640|549|0",
 					["Defense"] = "0|0|6.2811770439148|0|0|0",
 				},
-				["lastUpdate"] = 1656560028,
+				["lastUpdate"] = 1657470849,
 			},
 			["Default.Dalaran.Thorinbane"] = {
 				["Stats"] = {
@@ -170,7 +170,7 @@ DataStore_StatsDB = {
 					["Base"] = "1341|309|2116|304|0",
 					["Spell"] = "304|346|0|20.17142868042|387|0",
 				},
-				["lastUpdate"] = 1656568614,
+				["lastUpdate"] = 1657469502,
 			},
 		},
 	},

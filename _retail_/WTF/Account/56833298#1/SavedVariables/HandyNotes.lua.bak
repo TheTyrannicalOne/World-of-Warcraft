@@ -23,10 +23,10 @@ HandyNotesDB = {
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
 		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
-		["Okona - Zul'jin"] = "Okona - Zul'jin",
-		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
-		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
+		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Okona - Zul'jin"] = "Okona - Zul'jin",
+		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
@@ -39,7 +39,7 @@ HandyNotesDB = {
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Abyronterner - Zul'jin"] = "Abyronterner - Zul'jin",
-		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
+		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
 		["Jasmoney - Zul'jin"] = "Jasmoney - Zul'jin",
 		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
 		["Mandles - Zul'jin"] = "Mandles - Zul'jin",
@@ -89,13 +89,13 @@ HandyNotesDB = {
 		},
 		["Shimzo - Zul'jin"] = {
 		},
-		["Okona - Zul'jin"] = {
+		["Tinkster - Dalaran"] = {
 		},
 		["Varlouris - Dalaran"] = {
 		},
-		["Tinkster - Dalaran"] = {
+		["Okona - Zul'jin"] = {
 		},
-		["Guufnah - Zul'jin"] = {
+		["Alatra - Zul'jin"] = {
 		},
 		["Fantastiburo - Zul'jin"] = {
 		},
@@ -121,7 +121,7 @@ HandyNotesDB = {
 		},
 		["Abyronterner - Zul'jin"] = {
 		},
-		["Alatra - Zul'jin"] = {
+		["Guufnah - Zul'jin"] = {
 		},
 		["Jasmoney - Zul'jin"] = {
 		},
@@ -155,10 +155,10 @@ HandyNotes_HandyNotesDB = {
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
 		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
-		["Okona - Zul'jin"] = "Okona - Zul'jin",
-		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
-		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
+		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Okona - Zul'jin"] = "Okona - Zul'jin",
+		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
@@ -171,7 +171,7 @@ HandyNotes_HandyNotesDB = {
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Abyronterner - Zul'jin"] = "Abyronterner - Zul'jin",
-		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
+		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
 		["Jasmoney - Zul'jin"] = "Jasmoney - Zul'jin",
 		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
 		["Mandles - Zul'jin"] = "Mandles - Zul'jin",
@@ -221,13 +221,13 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Shimzo - Zul'jin"] = {
 		},
-		["Okona - Zul'jin"] = {
+		["Tinkster - Dalaran"] = {
 		},
 		["Varlouris - Dalaran"] = {
 		},
-		["Tinkster - Dalaran"] = {
+		["Okona - Zul'jin"] = {
 		},
-		["Guufnah - Zul'jin"] = {
+		["Alatra - Zul'jin"] = {
 		},
 		["Fantastiburo - Zul'jin"] = {
 		},
@@ -253,7 +253,7 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Abyronterner - Zul'jin"] = {
 		},
-		["Alatra - Zul'jin"] = {
+		["Guufnah - Zul'jin"] = {
 		},
 		["Jasmoney - Zul'jin"] = {
 		},

@@ -43,10 +43,10 @@ OneRing_Config = {
 				["Mounts61"] = "ALT-Q",
 				["Utility2"] = "ALT-E",
 				["Utility3"] = "ALT-E",
-				["Utility1"] = "ALT-E",
+				["Utility6"] = "ALT-E",
 				["Utilities"] = "ALT-E",
 				["Mounts4"] = "ALT-Q",
-				["Utility6"] = "ALT-E",
+				["Utility1"] = "ALT-E",
 				["Mounts14"] = "ALT-Q",
 				["Utility9"] = "ALT-E",
 				["OPieAutoQuest"] = false,
@@ -474,8 +474,8 @@ OneRing_Config = {
 			},
 			["Mounts104"] = {
 				{
-					["id"] = 150544,
 					["sliceToken"] = "ABuecy6Mi91",
+					["id"] = 150544,
 				}, -- [1]
 				{
 					"mount", -- [1]
@@ -738,64 +738,64 @@ OneRing_Config = {
 			},
 			["Mounts"] = {
 				{
-					["sliceToken"] = "ABuede=1Sr19",
 					["id"] = 150544,
+					["sliceToken"] = "ABuede=1Sr19",
 				}, -- [1]
 				{
-					["sliceToken"] = "ABuede=1Sr1A",
 					["id"] = 64731,
+					["sliceToken"] = "ABuede=1Sr1A",
 				}, -- [2]
 				{
-					["sliceToken"] = "ABuede=1Sr1P",
 					["id"] = 118089,
+					["sliceToken"] = "ABuede=1Sr1P",
 				}, -- [3]
 				{
-					["sliceToken"] = "ABuede=1Sr1O",
 					["id"] = 223018,
+					["sliceToken"] = "ABuede=1Sr1O",
 				}, -- [4]
 				{
-					["sliceToken"] = "ABuede=1Sr1I",
 					["id"] = 98718,
+					["sliceToken"] = "ABuede=1Sr1I",
 				}, -- [5]
 				{
-					["sliceToken"] = "ABuede=1Sr18",
 					["id"] = 228919,
+					["sliceToken"] = "ABuede=1Sr18",
 				}, -- [6]
 				{
-					["sliceToken"] = "ABuede=1Sr1U",
 					["id"] = 122708,
+					["sliceToken"] = "ABuede=1Sr1U",
 				}, -- [7]
 				{
-					["sliceToken"] = "ABuede=1Sr1Y",
 					["id"] = 17481,
+					["sliceToken"] = "ABuede=1Sr1Y",
 				}, -- [8]
 				{
-					["sliceToken"] = "ABuede=1Sr1T",
 					["id"] = 272472,
+					["sliceToken"] = "ABuede=1Sr1T",
 				}, -- [9]
 				{
-					["sliceToken"] = "ABuede=1Sr1R",
 					["id"] = 139595,
+					["sliceToken"] = "ABuede=1Sr1R",
 				}, -- [10]
 				{
-					["sliceToken"] = "ABuede=1Sr17",
 					["id"] = 213115,
+					["sliceToken"] = "ABuede=1Sr17",
 				}, -- [11]
 				{
-					["sliceToken"] = "ABuede=1Sr1E",
 					["id"] = 72286,
+					["sliceToken"] = "ABuede=1Sr1E",
 				}, -- [12]
 				{
-					["sliceToken"] = "ABuede=1Sr1W",
 					["id"] = 229388,
+					["sliceToken"] = "ABuede=1Sr1W",
 				}, -- [13]
 				{
-					["sliceToken"] = "ABuede=1Sr1Q",
 					["id"] = 245725,
+					["sliceToken"] = "ABuede=1Sr1Q",
 				}, -- [14]
 				{
-					["sliceToken"] = "ABuede=1Sr1m",
 					["id"] = 75973,
+					["sliceToken"] = "ABuede=1Sr1m",
 				}, -- [15]
 				["limit"] = "Shanyt-ArgentDawn",
 				["save"] = true,
@@ -859,10 +859,10 @@ OneRing_Config = {
 					"BattlePet-0-0000064BC55A", -- [2]
 					["sliceToken"] = "ABuede=1Srtr",
 				}, -- [6]
-				["name"] = "Utility",
+				["limit"] = "Shanyt-ArgentDawn",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["limit"] = "Shanyt-ArgentDawn",
+				["name"] = "Utility",
 			},
 			["Utility9"] = {
 				{
