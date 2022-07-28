@@ -167,6 +167,13 @@ X: 0
 Y: 0
 W: 300
 H: 300
+Frame: CovenantSanctumFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 980
+H: 637
 Frame: CovenantMissionFrame
 FrameLevel: 1
 Anchor: CENTER

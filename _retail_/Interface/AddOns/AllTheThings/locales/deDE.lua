@@ -353,6 +353,7 @@ local L = app.L;
 		--TODO: L.DYNAMIC_CATEGORY_NESTED = "Nested";
 		--TODO: L.DYNAMIC_CATEGORY_NESTED_TOOLTIP = "Generate Dynamic Categories based on their exact Source. This will lead to duplicates of Things that are also Sourced in multiple places.";
 		--TODO: L.DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000Requires Reload|r";
+		--TODO: L.CLICK_TO_CREATE_FORMAT = "Click to Create %s";
 
 	-- Account Wide Checkboxes
 		--TODO: L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nAchievement tracking is usually account wide, but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";
@@ -937,6 +938,8 @@ for key,value in pairs({
 	[261] = "Beschädigte Kiste",	-- Damaged Crate
 	[269] = "Bewachtes Fass mit Donnerbräu Lager",	-- Guarded Thunder Ale Barrel
 	[270] = "Unbewachtes Fass mit Donnerbräu Lager",	-- Unguarded Thunder Ale Barrel
+	[287] = "Buchmacher Herods Aufzeichnungen",	-- Bookie Herod's Records
+	[288] = "Buchmacher Herods Geldkassette",	-- Bookie Herod's Strongbox
 	[711] = "GESUCHT!",	-- Wanted!
 	[1557] = "Lilliths Esstisch",	-- Lillith's Dinner Table
 	[1561] = "Versiegelte Kiste",	-- Sealed Crate
@@ -946,10 +949,16 @@ for key,value in pairs({
 	[1599] = "Flaches Grab",	-- Shallow Grave
 	[1609] = "Katapult des Drachenmals",	-- Dragonmaw Catapult
 	[1627] = "Kiste aus Dalaran",	-- Dalaran Crate
+	[1738] = "Dokumente des Syndikats",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
+	[1739] = "Dokumente des Syndikats",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
+	[1740] = "Dokumente des Syndikats",	-- Syndicate Documents
 	[1763] = "GESUCHT",	-- WANTED
+	[1765] = "Abgenutzte Holztruhe",	-- Worn Wooden Chest
+	[2008] = "Gefährlich!",	-- Dangerous!
 	[2059] = "Eine Zwergenleiche",	-- A Dwarven Corpse
 	[2076] = "Blubbernder Kessel",	-- Bubbling Cauldron
 	[2083] = "Blutsegelkorrespondenz",	-- Bloodsail Correspondence
+	[2289] = "Unbrauchbares Rettungsboot",	-- Ruined Lifeboat
 	[2553] = "Eine glitschige Rolle",	-- A Soggy Scroll
 	[2555] = "Modrige Rolle",	-- Musty Scroll
 	[2652] = "Ebenezer Rostlockes Leichnam",	-- Ebenezer Rustlocke's Corpse
@@ -2684,6 +2693,8 @@ for key,value in pairs({
 	[327592] = "Verzaubertes Schloss",	-- Enchanted Lock
 	[327596] = "Zerbrochener abyssischer Fokus",	-- Broken Abyssal Focus
 	[327597] = "Alte rostige Truhe",	-- Old Rusty Chest
+	[327650] = "Kiste mit Kriegsvorräten",	-- War Supply Chest
+	[327652] = "Kiste mit Kriegsvorräten",	-- War Supply Chest
 	[327669] = "Maßvoller Bierlementar",	-- Contained Alemental
 	[328343] = "Düsterbräuzahnrad",	-- Direbrew Cog
 	[328413] = "Totem der Ho-zen",	-- Hozen Totem
@@ -2874,6 +2885,9 @@ for key,value in pairs({
 	[354856] = "Schleimbedeckte Kiste",	-- Slime-Coated Crate
 	[354911] = "Aufgequollener Animasamen",	-- Swollen Anima Seed
 	[355000] = "Truhe der Nacht",	-- Cache of the Night
+	[355019] = "Rohe Traumseide",	-- Raw Dream Silk
+	[355020] = "Verzauberter Zweig",	-- Enchanted Bough
+	[355021] = "Faeornament",	-- Fae Ornament
 	[355035] = "Runenlade der Auserwählten",	-- Treasure: House of the Chosen
 	[355037] = "Runengebundene Lade",	-- Runebound Coffer
 	[355038] = "Runengebundene Lade",	-- Runebound Coffer
@@ -2895,6 +2909,8 @@ for key,value in pairs({
 	[355880] = "Das Necro-mjam-nicon",	-- The Necronom-i-nom
 	[355886] = "Seuchensturztruhe",	-- Plaguefallen Chest
 	[355947] = "Glutherns Vorrat",	-- Glutharn's Stash
+	[355980] = "Truhe des Ritualisten",	-- Ritualist's Cache
+	[356535] = "Schatz des Runensprechers",	-- Runespeaker's Trove
 	[356555] = "Eurydeas Halskette",	-- Eurydea's Necklace
 	[356693] = "Baronin Vashjs extravaganter Tribut",	-- Baroness Vashj's Extravagant Tribute
 	[356697] = "Alexandros Mograines extravaganter Tribut",	-- Alexandros Mograine's Extravagant Tribute

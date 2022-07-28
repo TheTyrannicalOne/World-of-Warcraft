@@ -398,6 +398,9 @@ app.L = {
 	["DYNAMIC_CATEGORY_NESTED"] = "Nested";
 	["DYNAMIC_CATEGORY_NESTED_TOOLTIP"] = "Generate Dynamic Categories based on their exact Source. This will lead to duplicates of Things that are also Sourced in multiple places.";
 	["DYNAMIC_CATEGORY_TOOLTIP_NOTE"] = "\n\n|cffff0000Requires Reload|r";
+	["CLICK_TO_CREATE_FORMAT"] = "Click to Create %s";
+	["LOADING_FORMAT"] = "%s "..LFG_LIST_LOADING;	-- %s Loading...
+	["READY_FORMAT"] = "%s "..READY;	-- %s Ready
 
 	-- Account Wide Checkboxes
 	["ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP"] = "|cff00AB00Track Account-wide|R\n\nAchievement tracking is usually account wide, but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";
@@ -1182,8 +1185,6 @@ app.L = {
 		[-578] = app.asset("Expansion_CLASSIC"),											-- World of Warcraft 15th Anniversary
 		[-579] = "Interface\\Icons\\achievement_dungeon_outland_dungeonmaster",				-- Dark Portal Pass
 		[-580] = app.asset("Expansion_SL"),													-- Shadowlands Seasonal Promotions
-		[-581] = "Interface\\Icons\\inv_misc_mdi_banner01",									-- The Great Push: Season 2
-		[-582] = "Interface\\Icons\\inv_misc_mdi_banner02",									-- Mythic Dungeon International: Season 3
 	-- PvP Headers
 		[-650] = 1455894,																	-- Rated Battlegrounds
 		--[-651] = "Interface\\Worldmap\\GlowSkull_64Grey",									-- Not used yet. Future PvP Icons if needed
@@ -1712,8 +1713,6 @@ app.L = {
 		[-578] = select(2, GetAchievementInfo(13917)),							-- WoW's 15th Anniversary
 		[-579] = "Dark Portal Pass",											-- Dark Portal Pass
 		[-580] = "Shadowlands Seasonal Promotions",								-- Shadowlands Seasonal Promotions
-		[-581] = "The Great Push: Season 2",									-- The Great Push: Season 2
-		[-582] = "Mythic Dungeon International: Season 3",						-- Mythic Dungeon International: Season 3
 	-- PvP Header
 		-- Special Season Tags
 		--[-650] = "Rated Battleground",										-- Listed under Cata PvP Seasons

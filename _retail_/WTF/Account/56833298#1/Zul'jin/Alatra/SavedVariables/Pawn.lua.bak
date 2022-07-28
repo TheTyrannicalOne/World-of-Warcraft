@@ -1,8 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0538,
-	["LastPlayerFullName"] = "Alatra-Zul'jin",
-	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
 		{
 			["ID"] = 122246,
@@ -90,7 +88,8 @@ PawnOptions = {
 			["Link"] = "|cffffffff|Hitem:3420::::::::31:254::14::1:28:633:::::|h[Black Rose]|h|r",
 		}, -- [17]
 	},
-	["LastKeybindingsSet"] = 1,
+	["AutoSelectScales"] = true,
+	["LastPlayerFullName"] = "Alatra-Zul'jin",
 	["Artifacts"] = {
 		[128826] = {
 			["Relics"] = {
@@ -104,6 +103,7 @@ PawnOptions = {
 			["Name"] = "Thas'dorah, Legacy of the Windrunners",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",

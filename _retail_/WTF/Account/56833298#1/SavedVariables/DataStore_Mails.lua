@@ -17,8 +17,8 @@ DataStore_MailsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.Dalaran.Avisar"] = {
-				["lastUpdate"] = 1657469965,
-				["lastVisitDate"] = "2022/07/10 12:19",
+				["lastUpdate"] = 1658018395,
+				["lastVisitDate"] = "2022/07/16 20:39",
 			},
 			["Default.Dalaran.Darnastris"] = {
 				["lastUpdate"] = 1656301264,
@@ -37,8 +37,8 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2022/07/10 12:42",
 			},
 			["Default.Black Dragonflight.Durlok"] = {
-				["lastUpdate"] = 1657469674,
-				["lastVisitDate"] = "2022/07/10 12:14",
+				["lastUpdate"] = 1658018119,
+				["lastVisitDate"] = "2022/07/16 20:35",
 			},
 			["Default.Dalaran.Varlouris"] = {
 				["lastUpdate"] = 1653803246,
@@ -53,23 +53,12 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2022/03/26 21:38",
 			},
 			["Default.Zul'jin.Zulbathal"] = {
-				["lastUpdate"] = 1657470860,
-				["lastVisitDate"] = "2022/07/10 12:34",
+				["lastUpdate"] = 1658018812,
+				["lastVisitDate"] = "2022/07/16 20:46",
 			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["lastUpdate"] = 1657469523,
-				["Mails"] = {
-					{
-						["sender"] = "Valmagus",
-						["itemID"] = 163036,
-						["link"] = "|cffffffff|Hitem:163036::::::::60:70:::::::::|h[Polished Pet Charm]|h|r",
-						["count"] = 12,
-						["icon"] = 2004597,
-						["lastCheck"] = 1657471366,
-						["daysLeft"] = 30,
-					}, -- [1]
-				},
-				["lastVisitDate"] = "2022/07/10 12:12",
+				["lastUpdate"] = 1658272484,
+				["lastVisitDate"] = "2022/07/19 19:14",
 			},
 		},
 	},

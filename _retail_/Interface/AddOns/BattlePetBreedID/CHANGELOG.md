@@ -1,6 +1,6 @@
 # Battle Pet BreedID
 
-## v1.20.2 (2022-03-29)
+## v1.21.1 (2022-07-20)
  
 
-- Added almost all remaining Patch 9.2.5 pet breeds and fixed a bug where encrypted pets were always listed as 'NEW'.  
+- Updated base data and breeds for encrypted pets.  

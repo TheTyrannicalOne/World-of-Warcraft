@@ -85,10 +85,9 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163874::::::::120:71::28:5:5125:6516:6513:1637:4786:::|h[Honorbound Decapitator]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 179488,
-			["Level"] = 220,
-			["AlsoFitsIn"] = 16,
-			["Link"] = "|cffa335ee|Hitem:179488::::::::60:71::28:4:6652:1495:5917:6646:1:28:1707:::::|h[Cloudtail's Paw]|h|r",
+			["ID"] = 188039,
+			["Level"] = 229,
+			["Link"] = "|cff1eff00|Hitem:188039::::::::60:71::26:2:6652:1475:1:28:2057:::::|h[Harmonic Actuator]|h|r",
 		}, -- [17]
 	},
 	["LastKeybindingsSet"] = 1,

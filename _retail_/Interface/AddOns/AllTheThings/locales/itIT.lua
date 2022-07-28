@@ -353,6 +353,7 @@ local L = app.L;
 		--TODO: L.DYNAMIC_CATEGORY_NESTED = "Nested";
 		--TODO: L.DYNAMIC_CATEGORY_NESTED_TOOLTIP = "Generate Dynamic Categories based on their exact Source. This will lead to duplicates of Things that are also Sourced in multiple places.";
 		--TODO: L.DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000Requires Reload|r";
+		--TODO: L.CLICK_TO_CREATE_FORMAT = "Click to Create %s";
 
 	-- Account Wide Checkboxes
 		--TODO: L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nAchievement tracking is usually account wide, but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";
@@ -931,6 +932,8 @@ for key,value in pairs({
 	[261] = "Cassa Danneggiata",	-- Damaged Crate
 	[269] = "Barile Custodito di Birra del Tuono",	-- Guarded Thunder Ale Barrel
 	[270] = "Unguarded Thunder Ale Barrel",	-- Unguarded Thunder Ale Barrel	--TODO: This was taken from classic Wowhead
+	[287] = "Bookie Herod's Records",	-- Bookie Herod's Records	--TODO: This was taken from classic Wowhead
+	[288] = "Bookie Herod's Strongbox",	-- Bookie Herod's Strongbox	--TODO: This was taken from classic Wowhead
 	[711] = "Wanted!",	-- Wanted!	--TODO: This was taken from classic Wowhead
 	[1557] = "Tavolo da Pranzo di Lillith",	-- Lillith's Dinner Table
 	[1561] = "Cassa Sigillata",	-- Sealed Crate
@@ -940,10 +943,16 @@ for key,value in pairs({
 	[1599] = "Shallow Grave",	-- Shallow Grave	--TODO: This was taken from classic Wowhead
 	[1609] = "Catapulta delle Fauci di Drago",	-- Dragonmaw Catapult
 	[1627] = "Cassa di Dalaran",	-- Dalaran Crate
+	[1738] = "Syndicate Documents",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
+	[1739] = "Syndicate Documents",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
+	[1740] = "Documenti della Lega dei Tagliagole",	-- Syndicate Documents
 	[1763] = "WANTED",	-- WANTED	--TODO: This was taken from classic Wowhead
+	[1765] = "Cassa di Legno Consumata",	-- Worn Wooden Chest
+	[2008] = "Dangerous!",	-- Dangerous!	--TODO: This was taken from classic Wowhead
 	[2059] = "Cadavere di un Nano",	-- A Dwarven Corpse
 	[2076] = "Calderone Ribollente",	-- Bubbling Cauldron
 	[2083] = "Corrispondenza dei Velerosse",	-- Bloodsail Correspondence
+	[2289] = "Scialuppa di Salvataggio Rovinata",	-- Ruined Lifeboat
 	[2553] = "Pergamena Zuppa",	-- A Soggy Scroll
 	[2555] = "Pergamena Ammuffita",	-- Musty Scroll
 	[2652] = "Cadavere di Ebenezer Rustlocke",	-- Ebenezer Rustlocke's Corpse
@@ -2678,6 +2687,8 @@ for key,value in pairs({
 	[327592] = "Lucchetto Incantato",	-- Enchanted Lock
 	[327596] = "Focus Abissale Rotto",	-- Broken Abyssal Focus
 	[327597] = "Vecchia Cassa Arrugginita",	-- Old Rusty Chest
+	[327650] = "Cassa di Rifornimenti da Guerra",	-- War Supply Chest
+	[327652] = "Cassa di Rifornimenti da Guerra",	-- War Supply Chest
 	--TODO: [327669] = "Contained Alemental",	-- Contained Alemental
 	--TODO: [328343] = "Direbrew Cog",	-- Direbrew Cog
 	--TODO: [328413] = "Hozen Totem",	-- Hozen Totem
@@ -2868,6 +2879,9 @@ for key,value in pairs({
 	[354856] = "Cassa Coperta di Poltiglia",	-- Slime-Coated Crate
 	[354911] = "Seme dell'Animum Rigonfio",	-- Swollen Anima Seed
 	[355000] = "Scrigno della Notte",	-- Cache of the Night
+	[355019] = "Seta Onirica Grezza",	-- Raw Dream Silk
+	[355020] = "Ramo Incantato",	-- Enchanted Bough
+	[355021] = "Ornamento dei Silfi",	-- Fae Ornament
 	[355035] = "Scrigno Runico Prescelto",	-- Treasure: House of the Chosen
 	[355037] = "Scrigno Runico",	-- Runebound Coffer
 	[355038] = "Scrigno Runico",	-- Runebound Coffer
@@ -2889,6 +2903,8 @@ for key,value in pairs({
 	[355880] = "Necronom-i-nom",	-- The Necronom-i-nom
 	[355886] = "Cassa del Caduto della Piaga",	-- Plaguefallen Chest
 	[355947] = "Cassa di Glutharn",	-- Glutharn's Stash
+	[355980] = "Scrigno del Ritualista",	-- Ritualist's Cache
+	[356535] = "Collezione dell'Oratore Runico",	-- Runespeaker's Trove
 	[356555] = "La Collana di Eurydea",	-- Eurydea's Necklace
 	--TODO: [356693] = "Baroness Vashj's Extravagant Tribute",	-- Baroness Vashj's Extravagant Tribute
 	[356697] = "Tributo Smodato di Alexandros Mograine",	-- Alexandros Mograine's Extravagant Tribute

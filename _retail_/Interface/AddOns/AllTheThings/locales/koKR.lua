@@ -353,6 +353,7 @@ local L = app.L;
 		--TODO: L.DYNAMIC_CATEGORY_NESTED = "Nested";
 		--TODO: L.DYNAMIC_CATEGORY_NESTED_TOOLTIP = "Generate Dynamic Categories based on their exact Source. This will lead to duplicates of Things that are also Sourced in multiple places.";
 		--TODO: L.DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000Requires Reload|r";
+		--TODO: L.CLICK_TO_CREATE_FORMAT = "Click to Create %s";
 
 	-- Account Wide Checkboxes
 		--TODO: L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nAchievement tracking is usually account wide, but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";
@@ -936,6 +937,8 @@ for key,value in pairs({
 	[261] = "부서진 상자",	-- Damaged Crate
 	[269] = "야벤이 지키고 있는 썬더브루 맥주통",	-- Guarded Thunder Ale Barrel
 	[270] = "아무도 지키지 않는 썬더브루 맥주통",	-- Unguarded Thunder Ale Barrel	--TODO: This was taken from classic Wowhead
+	[287] = "사서 헤로드의 기록",	-- Bookie Herod's Records	--TODO: This was taken from classic Wowhead
+	[288] = "사서 헤로드의 금고",	-- Bookie Herod's Strongbox	--TODO: This was taken from classic Wowhead
 	[711] = "현상 수배!",	-- Wanted!
 	[1557] = "릴리스의 제단",	-- Lillith's Dinner Table
 	[1561] = "봉인된 함",	-- Sealed Crate
@@ -945,10 +948,16 @@ for key,value in pairs({
 	[1599] = "얕은 무덤",	-- Shallow Grave	--TODO: This was taken from classic Wowhead
 	[1609] = "용아귀 투석기",	-- Dragonmaw Catapult
 	[1627] = "달라란 상자",	-- Dalaran Crate
+	[1738] = "비밀결사대 문서",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
+	[1739] = "비밀결사대 문서",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
+	[1740] = "비밀결사대 문서",	-- Syndicate Documents
 	[1763] = "현상수배!",	-- WANTED	--TODO: This was taken from classic Wowhead
+	[1765] = "낡은 나무 궤짝",	-- Worn Wooden Chest
+	[2008] = "위험!",	-- Dangerous!	--TODO: This was taken from classic Wowhead
 	[2059] = "드워프 시체",	-- A Dwarven Corpse
 	[2076] = "끓고 있는 가마솥",	-- Bubbling Cauldron
 	[2083] = "붉은해적단 통신문",	-- Bloodsail Correspondence
+	[2289] = "난파된 구명정",	-- Ruined Lifeboat
 	[2553] = "젖은 두루마리",	-- A Soggy Scroll
 	[2555] = "곰팡이 슨 두루마리",	-- Musty Scroll
 	[2652] = "에벤에셀 러스트로크의 시체",	-- Ebenezer Rustlocke's Corpse
@@ -2683,6 +2692,8 @@ for key,value in pairs({
 	[327592] = "마법 자물쇠",	-- Enchanted Lock
 	[327596] = "부서진 심연 집중",	-- Broken Abyssal Focus
 	[327597] = "낡고 녹슨 상자",	-- Old Rusty Chest
+	[327650] = "전쟁 보급품 상자",	-- War Supply Chest
+	[327652] = "전쟁 보급품 상자",	-- War Supply Chest
 	--TODO: [327669] = "Contained Alemental",	-- Contained Alemental
 	--TODO: [328343] = "Direbrew Cog",	-- Direbrew Cog
 	--TODO: [328413] = "Hozen Totem",	-- Hozen Totem
@@ -2873,6 +2884,9 @@ for key,value in pairs({
 	[354856] = "점액으로 뒤덮인 상자",	-- Slime-Coated Crate
 	[354911] = "부풀어 오른 령 씨앗",	-- Swollen Anima Seed
 	[355000] = "밤의 보관함",	-- Cache of the Night
+	[355019] = "생 꿈결 명주",	-- Raw Dream Silk
+	[355020] = "마력 깃든 나뭇가지",	-- Enchanted Bough
+	[355021] = "페이 장식품",	-- Fae Ornament
 	[355035] = "선택받은 룬궤짝",	-- Treasure: House of the Chosen
 	[355037] = "룬결속 함",	-- Runebound Coffer
 	[355038] = "룬결속 함",	-- Runebound Coffer
@@ -2894,6 +2908,8 @@ for key,value in pairs({
 	[355880] = "수리수리마싯수리의 서",	-- The Necronom-i-nom
 	[355886] = "역병 몰락자 상자",	-- Plaguefallen Chest
 	[355947] = "글루사른의 보관함",	-- Glutharn's Stash
+	[355980] = "의식술사의 보관함",	-- Ritualist's Cache
+	[356535] = "룬예언자의 보물",	-- Runespeaker's Trove
 	[356555] = "유리디아의 목걸이",	-- Eurydea's Necklace
 	--TODO: [356693] = "Baroness Vashj's Extravagant Tribute",	-- Baroness Vashj's Extravagant Tribute
 	[356697] = "알렉산드로스 모그레인의 호화로운 공물",	-- Alexandros Mograine's Extravagant Tribute

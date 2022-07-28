@@ -354,6 +354,9 @@ L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 		L.DYNAMIC_CATEGORY_NESTED = "Вложенные";
 		L.DYNAMIC_CATEGORY_NESTED_TOOLTIP = "Генерировать Динамические Категории на основе точного Источника. Это приводит к повторам Штучек, которые имеют несколько Источников.";
 		L.DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000Требует Перезагрузки интерфейса|r";
+		L.CLICK_TO_CREATE_FORMAT = "Нажмите, чтобы создать %s";
+		L.LOADING_FORMAT = "%s загружаются...";
+		L.READY_FORMAT = "%s загрузились";
 
 	-- Account Wide Checkboxes
 		L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "|cff00AB00Отслеживать на весь аккаунт|R\n\nДостижения обычно отслеживаются на всю учётную запись, но есть некоторые эксклюзивные для определённых классов или рас достижения, которые Вы не сможете получить на основном персонаже.";
@@ -923,6 +926,8 @@ for key,value in pairs({
 	[261] = "Поврежденный ящик",	-- Damaged Crate
 	[269] = "Охраняемая бочка Громового эля",	-- Guarded Thunder Ale Barrel
 	[270] = "Неохраняемая бочка Громового эля",	-- Unguarded Thunder Ale Barrel
+	[287] = "Записи букмекера Ирода",	-- Bookie Herod's Records
+	[288] = "Сейф букмекера Ирода",	-- Bookie Herod's Strongbox
 	[711] = "Розыск!",	-- Wanted!
 	[1557] = "Обеденный стол Лилит",	-- Lillith's Dinner Table
 	[1561] = "Запечатанный ящик",	-- Sealed Crate
@@ -932,10 +937,16 @@ for key,value in pairs({
 	[1599] = "Неглубокая могила",	-- Shallow Grave
 	[1609] = "Катапульта клана Драконьей Пасти",	-- Dragonmaw Catapult
 	[1627] = "Ящик из Даларана",	-- Dalaran Crate
+	[1738] = "Документы Синдиката",	-- Syndicate Documents
+	[1739] = "Документы Синдиката",	-- Syndicate Documents
+	[1740] = "Документы Синдиката",	-- Syndicate Documents
 	[1763] = "РАЗЫСКИВАЕТСЯ",	-- WANTED
+	[1765] = "Подержанный деревянный сундук",	-- Worn Wooden Chest
+	[2008] = "ОПАСНО!",	-- Dangerous!
 	[2059] = "Труп дворфа",	-- A Dwarven Corpse
 	[2076] = "Бурлящий котел",	-- Bubbling Cauldron
 	[2083] = "Переписка Кровавого Паруса",	-- Bloodsail Correspondence
+	[2289] = "Разбитая спасательная шлюпка",	-- Ruined Lifeboat
 	[2553] = "Промокший свиток",	-- A Soggy Scroll
 	[2555] = "Заплесневелый свиток",	-- Musty Scroll
 	[2652] = "Труп Эбенезера Ржавый Засов",	-- Ebenezer Rustlocke's Corpse
@@ -2670,6 +2681,8 @@ for key,value in pairs({
 	[327592] = "Зачарованный замок",	-- Enchanted Lock
 	[327596] = "Расколотый глубинный кристалл",	-- Broken Abyssal Focus
 	[327597] = "Старый ржавый сундук",	-- Old Rusty Chest
+	[327650] = "Сундук с военными припасами",	-- War Supply Chest
+	[327652] = "Сундук с военными припасами",	-- War Supply Chest
 	[327669] = "Заключенный хмелементаль",	-- Contained Alemental
 	[328343] = "Шестеренка Худовара",	-- Direbrew Cog
 	[328413] = "Тотем хозенов",	-- Hozen Totem
@@ -2860,6 +2873,9 @@ for key,value in pairs({
 	[354856] = "Покрытый слизью ящик",	-- Slime-Coated Crate
 	[354911] = "Набухшее анимасемя",	-- Swollen Anima Seed
 	[355000] = "Тайник ночи",	-- Cache of the Night
+	[355019] = "Необработанный шелк грез",	-- Raw Dream Silk
+	[355020] = "Зачарованная ветвь",	-- Enchanted Bough
+	[355021] = "Украшение ночного народца",	-- Fae Ornament
 	[355035] = "Рунический сундук дома Избранных",	-- Treasure: House of the Chosen
 	[355037] = "Зачарованный рунами ящик",	-- Runebound Coffer
 	[355038] = "Зачарованный рунами ящик",	-- Runebound Coffer
@@ -2881,6 +2897,8 @@ for key,value in pairs({
 	[355880] = "\"Некроном-и-ном\"",	-- The Necronom-i-nom
 	[355886] = "Сундук чумных трупов",	-- Plaguefallen Chest
 	[355947] = "Тайник Глутарна",	-- Glutharn's Stash
+	[355980] = "Тайник ритуалиста",	-- Ritualist's Cache
+	[356535] = "Клад заклинателя рун",	-- Runespeaker's Trove
 	[356555] = "Ожерелье Эвридии",	-- Eurydea's Necklace
 	[356693] = "Экстравагантные дары баронессы Вайш",	-- Baroness Vashj's Extravagant Tribute
 	[356697] = "Экстравагантные дары Александроса Могрейна",	-- Alexandros Mograine's Extravagant Tribute

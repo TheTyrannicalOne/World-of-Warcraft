@@ -1,88 +1,91 @@
 
 MasterPlanAG = {
-	["Zul'jin"] = {
-		["Valmagus"] = {
-			["class"] = "PALADIN",
+	["Argent Dawn"] = {
+		["Shanyt"] = {
+			["class"] = "WARRIOR",
+			["summary"] = {
+				["lastOilTime"] = 1658157670,
+				["inProgress"] = {
+					[745] = 1658222470,
+					[184] = 1658191798,
+					[473] = 1658197170,
+					[572] = 1658204476,
+					[663] = 1658204410,
+					[620] = 1658222468,
+					[667] = 1658204424,
+					[570] = 1658204478,
+					[712] = 1658204473,
+					[495] = 1658218792,
+					[391] = 1658218787,
+					[189] = 1658192696,
+					[310] = 1658211636,
+					[482] = 1658211655,
+					[204] = 1658192681,
+				},
+				["ti3"] = 127855,
+				["ti2"] = 122486,
+				["tt1"] = 1657471748,
+				["ti1"] = 118531,
+				["tt3"] = 1658107934,
+				["tt2"] = 1657471748,
+			},
+			["curOil"] = 93850,
+			["cacheSize"] = 1000,
+			["lastCacheTime"] = 1658072574,
+			["curRes"] = 7692,
 			["faction"] = "Horde",
-		},
-		["Zulbathal"] = {
-			["faction"] = "Horde",
-			["class"] = "DRUID",
-		},
-		["Alatra"] = {
-			["faction"] = "Horde",
-			["class"] = "HUNTER",
 		},
 	},
 	["Dalaran"] = {
 		["Illingrath"] = {
-			["faction"] = "Alliance",
 			["class"] = "DEMONHUNTER",
+			["faction"] = "Alliance",
 		},
 		["Tendralas"] = {
-			["faction"] = "Alliance",
 			["class"] = "PRIEST",
+			["faction"] = "Alliance",
 		},
 		["Avisar"] = {
-			["class"] = "PALADIN",
 			["faction"] = "Alliance",
+			["class"] = "PALADIN",
 		},
 		["Thorinbane"] = {
-			["class"] = "WARRIOR",
 			["faction"] = "Alliance",
+			["class"] = "WARRIOR",
 		},
 		["Rotclaugh"] = {
-			["class"] = "DEATHKNIGHT",
 			["faction"] = "Alliance",
+			["class"] = "DEATHKNIGHT",
 		},
 		["Varlouris"] = {
-			["faction"] = "Alliance",
 			["class"] = "SHAMAN",
+			["faction"] = "Alliance",
 		},
 		["Darnastris"] = {
-			["faction"] = "Alliance",
 			["class"] = "MAGE",
+			["faction"] = "Alliance",
 		},
 	},
 	["Black Dragonflight"] = {
 		["Durlok"] = {
-			["faction"] = "Horde",
 			["class"] = "DRUID",
+			["faction"] = "Horde",
 		},
 	},
-	["Argent Dawn"] = {
-		["Shanyt"] = {
+	["Zul'jin"] = {
+		["Alatra"] = {
+			["class"] = "HUNTER",
 			["faction"] = "Horde",
-			["summary"] = {
-				["lastOilTime"] = 1657468947,
-				["ti2"] = 122486,
-				["inProgress"] = {
-					[685] = 1657512059,
-					[214] = 1657476095,
-					[192] = 1657472498,
-					[399] = 1657504938,
-					[186] = 1657472505,
-					[327] = 1657497734,
-					[519] = 1657469854,
-					[733] = 1657469857,
-					[360] = 1657486871,
-					[174] = 1657472503,
-					[189] = 1657470251,
-					[503] = 1657490483,
-					[454] = 1657497718,
-					[727] = 1657469851,
-				},
-				["ti3"] = 127855,
-				["tt1"] = 1657471748,
-				["ti1"] = 118531,
-				["tt3"] = true,
-				["tt2"] = 1657471748,
-			},
-			["curOil"] = 95130,
-			["cacheSize"] = 1000,
-			["class"] = "WARRIOR",
-			["curRes"] = 4830,
-			["lastCacheTime"] = 1656564581,
 		},
+		["Zulbathal"] = {
+			["class"] = "DRUID",
+			["faction"] = "Horde",
+		},
+		["Valmagus"] = {
+			["faction"] = "Horde",
+			["class"] = "PALADIN",
+		},
+	},
+	["IgnoreRewards"] = {
 	},
 }

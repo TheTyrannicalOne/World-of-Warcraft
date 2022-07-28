@@ -355,6 +355,7 @@ local L = app.L;
 		L.DYNAMIC_CATEGORY_NESTED = "嵌套";
 		L.DYNAMIC_CATEGORY_NESTED_TOOLTIP = "根据它们的确切来源生成动态类别。这将导致在多个地方也有来源的事物重复。";
 		L.DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000需要重新加载|r";
+		L.CLICK_TO_CREATE_FORMAT = "点击创建 %s";
 
 	-- Account Wide Checkboxes
 		L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "|cff00AB00追踪帐号通用|R\n\n成就追踪通常是在整个账号通用内进行的，但有一些特定职业和种族的专属成就，你无法在你的主账号上获得。";
@@ -772,7 +773,7 @@ for key,value in pairs({
 		[-576] = "星际争霸II：虚空之遗",										-- StarCraft II: Legacy of the Void
 		[-577] = "魔兽电影",											-- Warcraft Movie
 		[-579] = "穿过黑暗之门",											-- Dark Portal Pass
-		--TODO: [-580] = "Shadowlands Seasonal Promotions",			-- Shadowlands Seasonal Promotions
+		[-580] = "暗影国度季节性促销",										-- Shadowlands Seasonal Promotions
 		[-581] = "极限冲层：第二季",										-- The Great Push: Season 2
 	-- PvP Header
 		-- PvP Set Names
@@ -936,6 +937,8 @@ for key, value in pairs({
 	[261] = "破损的箱子",	-- Damaged Crate
 	[269] = "被看守着的酒桶",	-- Guarded Thunder Ale Barrel
 	[270] = "无人守卫的雷酒桶",	-- Unguarded Thunder Ale Barrel	--TODO: This was taken from classic Wowhead
+	[287] = "书呆子赫罗德的档案",	-- Bookie Herod's Records	--TODO: This was taken from classic Wowhead
+	[288] = "书呆子赫罗德的保险箱",	-- Bookie Herod's Strongbox	--TODO: This was taken from classic Wowhead
 	[711] = "通缉！",	-- Wanted!	--TODO: This was taken from classic Wowhead
 	[1557] = "莉莉丝的餐桌",	-- Lillith's Dinner Table
 	[1561] = "密封的箱子",	-- Sealed Crate
@@ -945,10 +948,16 @@ for key, value in pairs({
 	--TODO: [1599] = "Shallow Grave",	-- Shallow Grave
 	[1609] = "龙喉投石车",	-- Dragonmaw Catapult
 	[1627] = "达拉然板条箱",	-- Dalaran Crate
+	[1738] = "辛迪加文档",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
+	[1739] = "辛迪加文档",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
+	[1740] = "辛迪加文档",	-- Syndicate Documents
 	[1763] = "通缉",	-- WANTED	--TODO: This was taken from classic Wowhead
+	[1765] = "旧木箱",	-- Worn Wooden Chest	--TODO: This was taken from classic Wowhead
+	[2008] = "危险！",	-- Dangerous!	--TODO: This was taken from classic Wowhead
 	[2059] = "矮人的尸体",	-- A Dwarven Corpse
 	[2076] = "冒泡的大锅",	-- Bubbling Cauldron
 	[2083] = "血帆海盗的信件",	-- Bloodsail Correspondence
+	[2289] = "破损的救生艇",	-- Ruined Lifeboat
 	[2553] = "浸水的卷轴",	-- A Soggy Scroll
 	[2555] = "发霉的卷轴",	-- Musty Scroll
 	[2652] = "伊贝尼瑟的尸体",	-- Ebenezer Rustlocke's Corpse
@@ -2683,6 +2692,8 @@ for key, value in pairs({
 	[327592] = "魔力之锁",	-- Enchanted Lock
 	[327596] = "毁坏的深渊法器",	-- Broken Abyssal Focus
 	[327597] = "生锈的旧箱子",	-- Old Rusty Chest
+	[327650] = "战争补给箱",	-- War Supply Chest
+	[327652] = "战争补给箱",	-- War Supply Chest	--TODO: This was manually translated
 	--TODO: [327669] = "Contained Alemental",	-- Contained Alemental
 	--TODO: [328343] = "Direbrew Cog",	-- Direbrew Cog
 	--TODO: [328413] = "Hozen Totem",	-- Hozen Totem
@@ -2873,6 +2884,9 @@ for key, value in pairs({
 	[354856] = "软泥覆盖的箱子",	-- Slime-Coated Crate
 	[354911] = "鼓胀的心能之种",	-- Swollen Anima Seed
 	[355000] = "魅夜宝箱",	-- Cache of the Night	--TODO: This was manually translated
+	[355019] = "梦境原料纤丝",	-- Raw Dream Silk
+	[355020] = "魔化虬枝",	-- Enchanted Bough
+	[355021] = "法夜装饰品",	-- Fae Ornament
 	[355035] = "魂选符文宝匣",	-- Treasure: House of the Chosen
 	[355037] = "符文之缚宝匣",	-- Runebound Coffer
 	[355038] = "符文之缚宝匣",	-- Runebound Coffer
@@ -2894,6 +2908,8 @@ for key, value in pairs({
 	[355880] = "通灵馍典",	-- The Necronom-i-nom
 	[355886] = "凋殇者宝箱",	-- Plaguefallen Chest
 	[355947] = "格拉萨恩的宝箱",	-- Glutharn's Stash
+	[355980] = "祭师的箱子",	-- Ritualist's Cache
+	[356535] = "符语者的宝藏",	-- Runespeaker's Trove
 	[356555] = "欧律迪亚的项链",	-- Eurydea's Necklace
 	[356693] = "瓦丝琪女男爵的奢华礼品",	-- Baroness Vashj's Extravagant Tribute
 	[356697] = "亚历山德罗斯·莫格莱尼的奢华礼品",	-- Alexandros Mograine's Extravagant Tribute
@@ -3239,7 +3255,6 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
---TODO:
 local a = L.UNOBTAINABLE_ITEM_REASONS;
 for key,value in pairs({
 	-- Arbitrary Filters
