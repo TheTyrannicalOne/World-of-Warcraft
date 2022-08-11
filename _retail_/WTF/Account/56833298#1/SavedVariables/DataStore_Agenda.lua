@@ -18,7 +18,7 @@ DataStore_AgendaDB = {
 		["Options"] = {
 			["WeeklyResetHour"] = 6,
 			["WeeklyResetDay"] = 2,
-			["NextWeeklyReset"] = "2022-07-26",
+			["NextWeeklyReset"] = "2022-08-09",
 		},
 		["Characters"] = {
 			["Default.Dalaran.Avisar"] = {
@@ -45,17 +45,17 @@ DataStore_AgendaDB = {
 			["Default.Dalaran.Illingrath"] = {
 				["lastUpdate"] = 1650157094,
 			},
-			["Default.Zul'jin.Zulbathal"] = {
-				["lastUpdate"] = 1658018491,
-			},
 			["Default.Dalaran.Thorinbane"] = {
 				["lastUpdate"] = 1648345057,
+			},
+			["Default.Zul'jin.Zulbathal"] = {
+				["lastUpdate"] = 1658018491,
 			},
 			["Default.Dalaran.Varlouris"] = {
 				["lastUpdate"] = 1653803722,
 			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["lastUpdate"] = 1658271519,
+				["lastUpdate"] = 1659888302,
 			},
 		},
 	},

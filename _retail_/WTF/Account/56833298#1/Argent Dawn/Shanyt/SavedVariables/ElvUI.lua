@@ -1,6 +1,30 @@
 
 ElvCharacterDB = {
+	["CliqueDatatext"] = {
+	},
 	["ConvertKeybindings"] = true,
+	["ChatEditHistory"] = {
+		"/s two druids just went to get some", -- [1]
+		"/hekili", -- [2]
+		"/hug", -- [3]
+		"/p that would be great", -- [4]
+		"/pet", -- [5]
+		"/p lets go", -- [6]
+		"/bow", -- [7]
+		"/p well looks like its slow right now good luck will try again later", -- [8]
+		"/invite lillys-blackhand", -- [9]
+		"/cw Xugaaz-WyrmrestAccord TY!", -- [10]
+		"/p np", -- [11]
+		"/kneel", -- [12]
+		"/npcscan add 66932 Akkalou", -- [13]
+		"/dance", -- [14]
+		"/p all good", -- [15]
+		"/cw Peroyjenkins-Mal'Ganis TY", -- [16]
+		"/opie", -- [17]
+		"/s launch fireworks out the launchers he raises out the water and we kill him", -- [18]
+		"/love", -- [19]
+		"/p TY!", -- [20]
+	},
 	["ChatHistoryLog"] = {
 		{
 			"Towering Exterminator 100.00% ~(54.14, 34.86) |cffffff00|Hworldmap:1961:5414:3486|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
@@ -2180,29 +2204,5 @@ ElvCharacterDB = {
 			[51] = 1658190486,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
-	},
-	["ChatEditHistory"] = {
-		"/s two druids just went to get some", -- [1]
-		"/hekili", -- [2]
-		"/hug", -- [3]
-		"/p that would be great", -- [4]
-		"/pet", -- [5]
-		"/p lets go", -- [6]
-		"/bow", -- [7]
-		"/p well looks like its slow right now good luck will try again later", -- [8]
-		"/invite lillys-blackhand", -- [9]
-		"/cw Xugaaz-WyrmrestAccord TY!", -- [10]
-		"/p np", -- [11]
-		"/kneel", -- [12]
-		"/npcscan add 66932 Akkalou", -- [13]
-		"/dance", -- [14]
-		"/p all good", -- [15]
-		"/cw Peroyjenkins-Mal'Ganis TY", -- [16]
-		"/opie", -- [17]
-		"/s launch fireworks out the launchers he raises out the water and we kill him", -- [18]
-		"/love", -- [19]
-		"/p TY!", -- [20]
-	},
-	["CliqueDatatext"] = {
 	},
 }

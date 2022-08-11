@@ -9,6 +9,59 @@
 	-- Create soundtable
 	local muteTable = {
 
+		-- Arena
+		["MuteArena"] = {
+
+			-- Mugambala: Je'stry the Untamed (sound/creature/zulien_the_untamed/)
+			"vo_801_zulien_the_untamed_01_m.ogg#1990668",
+			"vo_801_zulien_the_untamed_02_m.ogg#1990669",
+			"vo_801_zulien_the_untamed_03_m.ogg#1990670",
+			"vo_801_zulien_the_untamed_04_m.ogg#1990671",
+			"vo_801_zulien_the_untamed_05_m.ogg#1990672",
+			"vo_801_zulien_the_untamed_06_m.ogg#1990673",
+			"vo_801_zulien_the_untamed_07_m.ogg#1990674",
+
+			-- Hook Point: Daniel Poole (sound/creature/daniel_poole/)
+			"vo_801_daniel_poole_01_m.ogg#1990632",
+			"vo_801_daniel_poole_02_m.ogg#1990633",
+			"vo_801_daniel_poole_03_m.ogg#1990634",
+			"vo_801_daniel_poole_04_m.ogg#1990635",
+			"vo_801_daniel_poole_05_m.ogg#1990636",
+			"vo_801_daniel_poole_06_m.ogg#1990637",
+			"vo_801_daniel_poole_07_m.ogg#1990638",
+			"vo_801_daniel_poole_08_m.ogg#1990639",
+			"vo_801_daniel_poole_09_m.ogg#1990640",
+			"vo_801_daniel_poole_10_m.ogg#1990641",
+			"vo_801_daniel_poole_11_m.ogg#1990642",
+			"vo_801_daniel_poole_12_m.ogg#1990643",
+
+			-- Blade's Edge Arena: High King Maulgar (sound/creature/high_king_maulgar/)
+			"vo_71_high_king_maulgar_01_m.ogg#1522911",
+			"vo_71_high_king_maulgar_02_m.ogg#1522913",
+			"vo_71_high_king_maulgar_03_m.ogg#1522915",
+			"vo_71_high_king_maulgar_04_m.ogg#1522917",
+			"vo_71_high_king_maulgar_05_m.ogg#1522919",
+			"vo_71_high_king_maulgar_06_m.ogg#1522921",
+			"vo_71_high_king_maulgar_07_m.ogg#1522923",
+			"vo_71_high_king_maulgar_08_m.ogg#1522926",
+			"vo_71_high_king_maulgar_09_m.ogg#1522928",
+			"vo_71_high_king_maulgar_10_m.ogg#1522931",
+			"vo_71_high_king_maulgar_11_m.ogg#1522933",
+
+			-- Enigma Crucible: Zo'Sorg (sound/creature/?/)
+			-- Sound files are encrypted and filenames are not mapped.
+			"vo_91_unknown#3601278", -- SKIT:158683:No matter who wins, we will profit
+			"vo_92_unknown#4291841", -- SKIT:188954:Do not let the cartel down, we expect a return on our investment
+			"vo_92_unknown#4291842", -- SKIT:188955:Victory is clear, our bargain is upheld
+			"vo_92_unknown#4291843", -- SKIT:188956:No matter who wins, we profit
+			"vo_92_unknown#4291844", -- SKIT:188957:Mortals, I present a lucrative opportunity for those who prove themselves worthy of the task
+			"vo_92_unknown#4291845", -- SKIT:188958:Many in the cartel are wagering on who are the greater combatants. Care to influence the outcome?
+
+			-- Drums (sound/doodad/) (used in Nagrand Arena)
+			"fx_arena_wardrums_mono_loop.ogg#1531445",
+
+		},
+
 		-- Fizzle (sound/spells/fizzle/)
 		["MuteFizzle"] = {
 

@@ -764,6 +764,7 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 			-- load the object if it matches the load field and not yet loaded
 			if not o and key == loadField then
 				o = objFunc(unpack(params));
+				rawset(t, "__o", o);
 			end
 
 			-- override for the object
@@ -783,12 +784,12 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 		-- transfer field sets to the underlying object
 		__newindex = function(t, key, val)
 			if o then
-				o[key] = val;
+				rawset(o, key, val);
 			end
 		end,
 	};
 	-- data is just an empty table with a loader metatable
-	local dlo = setmetatable({}, loader);
+	local dlo = setmetatable({__dlo=true}, loader);
 	return dlo;
 end
 app.SetDataMember = SetDataMember;
@@ -1836,7 +1837,7 @@ app.SourceSpecificFields = {
 };
 -- Merges the properties of the t group into the g group, making sure not to alter the filterability of the group.
 -- Additionally can specify that the object is being cloned so as to skip special merge restrictions
-local MergeProperties = function(g, t, noReplace, clone)
+local function MergeProperties(g, t, noReplace, clone)
 	if g and t then
 		local skips = app.MergeSkipFields;
 		if noReplace then
@@ -1910,9 +1911,7 @@ local MergeProperties = function(g, t, noReplace, clone)
 end
 -- The base logic for turning a Table of data into an 'object' that provides dynamic information concerning the type of object which was identified
 -- based on the priority of possible key values
--- CreateObject(t, rootOnly)
-local CreateObject;
-CreateObject = function(t, rootOnly)
+local function CreateObject(t, rootOnly)
 	if not t then return {}; end
 
 	-- already an object, so need to create a new instance of the same data
@@ -1923,7 +1922,7 @@ CreateObject = function(t, rootOnly)
 		-- include the raw g since it will be replaced at the end with new objects
 		s.g = t.g;
 		t = s;
-		-- if app.DEBUG_PRINT then print("Merge done",s.key,s[s.key], t, s); end
+		-- app.PrintDebug("Merge done",s.key,s[s.key], t, s);
 	-- is it an array of raw datas which needs to be turned into ana rray of usable objects
 	elseif t[1] then
 		local s = {};
@@ -1999,13 +1998,14 @@ CreateObject = function(t, rootOnly)
 			-- if app.DEBUG_PRINT then print("CreateObject by value, no specific object type"); app.PrintTable(t); end
 			if rootOnly then
 				-- shallow copy the root table only, since using t as a metatable will allow .g to exist still on the table
-				-- print("rootOnly copy of",t.text)
+				-- app.PrintDebug("rootOnly copy of",t.text)
 				local s = {};
 				for k,v in pairs(t) do
 					s[k] = v;
 				end
 				t = s;
 			else
+				-- app.PrintDebug("metatable copy of",t.text)
 				t = setmetatable({}, { __index = t });
 			end
 		end
@@ -2029,14 +2029,6 @@ CreateObject = function(t, rootOnly)
 
 	return t;
 end
--- Clones the data within the group without any sub-groups
--- local function CloneDataShallow(data)
--- 	local clone = {};
--- 	if data then
--- 		clone = setmetatable(clone, getmetatable(data));
--- 	end
--- 	return clone;
--- end
 -- Clones the data and attempts to create all sub-groups into cloned objects as well
 local function CloneData(data)
 	return CreateObject(data);
@@ -3925,6 +3917,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 	-- Clean results which are cached under 'Source Ignored' content since they've been copied from another Source and we don't care about them in search results
 	group = app.CleanSourceIgnoredGroups(group);
+	-- app.PrintDebug("Removed Source Ignored",#group)
 
 	-- For Creatures and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
 	if paramA == "creatureID" or paramA == "encounterID" then
@@ -3956,7 +3949,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			end
 		end
-
 		group = regroup;
 	elseif paramA == "azeriteEssenceID" then
 		local regroup = {};
@@ -4565,13 +4557,13 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		group.sourceParent = nil;
 		group.parent = nil;
 
-		-- print(group.g and #group.g,"Merge total");
-		-- print("Final Group",group.key,group[group.key],group.collectible,group.collected,group.parent,group.sourceParent,rawget(group, "parent"),rawget(group, "sourceParent"));
-		-- print("Group Type",group.__type)
+		-- app.PrintDebug(group.g and #group.g,"Merge total");
+		-- app.PrintDebug("Final Group",group.key,group[group.key],group.collectible,group.collected,group.parent,group.sourceParent,rawget(group, "parent"),rawget(group, "sourceParent"));
+		-- app.PrintDebug("Group Type",group.__type)
 
 		-- Special cases
-		-- Don't show nested criteria of achievements
-		if group.g and group.key == "achievementID" then
+		-- Don't show nested criteria of achievements (unless loading popout/row content)
+		if group.g and group.key == "achievementID" and app.SetSkipPurchases() < 2 then
 			local noCrits = {};
 			-- print("achieve group",#group.g)
 			for i=1,#group.g do
@@ -4777,24 +4769,45 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 	end
 
-	-- If the item is a recipe, then show which characters know this recipe.
-	-- app.PrintDebug(topLevelSearch,group.spellID,group.filterID,group.collectible)
-	if topLevelSearch and group.spellID and group.filterID ~= 100 and group.collectible and app.Settings:GetTooltipSetting("KnownBy") then
-		local knownBy = {};
-		for guid,character in pairs(ATTCharacterData) do
-			if character.Spells and character.Spells[group.spellID] then
-				tinsert(knownBy, character);
-			end
-		end
-		if #knownBy > 0 then
-			app.Sort(knownBy, function(a, b) return (a.name or "") < (b.name or ""); end);
-			local desc = L["KNOWN_BY"] .. app.TableConcat(knownBy, "text", "??", ", ");
-			tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
-		end
-	end
-
 	-- Check if finally leaving the top-level search
 	if topLevelSearch then
+
+		-- If the item is a recipe, then show which characters know this recipe.
+		-- app.PrintDebug(topLevelSearch,group.spellID,group.filterID,group.collectible)
+		local groupSpellID = group.spellID;
+		if groupSpellID and group.filterID ~= 100 and group.collectible and app.Settings:GetTooltipSetting("KnownBy") then
+			local knownBy = {};
+			for guid,character in pairs(ATTCharacterData) do
+				if character.Spells and character.Spells[groupSpellID] then
+					tinsert(knownBy, character);
+				end
+			end
+			if #knownBy > 0 then
+				app.Sort(knownBy, app.SortDefaults.Name);
+				local desc = L["KNOWN_BY"] .. app.TableConcat(knownBy, "text", "??", ", ");
+				tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
+			end
+		end
+
+		-- If the result has a QuestID, then show which characters have this QuestID.
+		-- app.PrintDebug(topLevelSearch,group.spellID,group.filterID,group.collectible)
+		local groupQuestID = group.questID;
+		if groupQuestID and app.Settings:GetTooltipSetting("CompletedBy") then
+			local knownBy = {};
+			local charQuests;
+			for guid,character in pairs(ATTCharacterData) do
+				charQuests = character.Quests;
+				if charQuests and charQuests[groupQuestID] then
+					tinsert(knownBy, character);
+				end
+			end
+			if #knownBy > 0 then
+				app.Sort(knownBy, app.SortDefaults.Name);
+				local desc = sformat(L["QUEST_ONCE_PER_ACCOUNT_FORMAT"],app.TableConcat(knownBy, "text", "??", ", "));
+				tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
+			end
+		end
+
 		group.isBaseSearchResult = true;
 		app.InitialCachedSearch = nil;
 
@@ -4856,10 +4869,14 @@ app.SkipPurchases = {
 	[23247] = 1,	-- Burning Blossom
 	[49927] = 1,	-- Love Token
 }
--- Allows for toggling whether the SkipPurchases should be used or not
+-- Allows for toggling whether the SkipPurchases should be used or not; call with no value to return the current value
 app.SetSkipPurchases = function(level)
-	-- print("SkipPurchases exclusion",level)
-	app.SkipPurchases[-1] = level;
+	if level then
+		-- print("SkipPurchases exclusion",level)
+		app.SkipPurchases[-1] = level;
+	else
+		return app.SkipPurchases[-1];
+	end
 end
 -- Determines searches required for costs using this group
 local function DeterminePurchaseGroups(group, depth)
@@ -5130,7 +5147,7 @@ app.BuildSourceParent = function(group)
 	local things = specificSource and { group } or app.SearchForLink(groupKey .. ":" .. keyValue);
 	if things then
 		local groupHash = group.hash;
-		-- app.PrintDebug("Found Source things",#things)
+		-- app.PrintDebug("Found Source things",#things,groupHash)
 		local parents, parentKey, parent;
 		-- collect all possible parent groups for all instances of this Thing
 		for _,thing in pairs(things) do
@@ -8330,49 +8347,68 @@ local fields = RawCloneData(questFields, {
 });
 app.BaseQuestWithReputation = app.BaseObjectFields(fields, "BaseQuestWithReputation");
 app.CreateQuest = function(id, t)
-	if t and rawget(t, "maxReputation") then
-		return setmetatable(constructor(id, t, "questID"), app.BaseQuestWithReputation);
+	if t then
+		-- extract specific faction data
+		local aqd = rawget(t, "aqd");
+		if aqd then
+			-- Apply the faction specific quest data to this object.
+			if app.FactionID == Enum.FlightPathFaction.Horde then
+				for key,value in pairs(t.hqd) do t[key] = value; end
+			else
+				for key,value in pairs(aqd) do t[key] = value; end
+			end
+		end
+		if rawget(t, "maxReputation") then
+			return setmetatable(constructor(id, t, "questID"), app.BaseQuestWithReputation);
+		end
 	end
 	return setmetatable(constructor(id, t, "questID"), app.BaseQuest);
 end
+--[[ Not used in Retail anymore
 app.CreateQuestWithFactionData = function(t)
-	local questData, otherQuestData;
+	local questData, otherQuestData, otherFaction;
 	if app.FactionID == Enum.FlightPathFaction.Horde then
 		questData = t.hqd;
 		otherQuestData = t.aqd;
-		otherQuestData.r = Enum.FlightPathFaction.Alliance;
+		otherFaction = Enum.FlightPathFaction.Alliance;
 	else
 		questData = t.aqd;
 		otherQuestData = t.hqd;
-		otherQuestData.r = Enum.FlightPathFaction.Horde;
+		otherFaction = Enum.FlightPathFaction.Horde;
 	end
-
-	-- Apply this quest's current data into the other faction's quest. (this is for tooltip caching and source quest resolution)
 
 	-- Apply the faction specific quest data to this object.
 	for key,value in pairs(questData) do t[key] = value; end
-	rawset(t, "r", app.FactionID);
 	local original = setmetatable(t, app.BaseQuest);
 	if not otherQuestData.questID or otherQuestData.questID == original.questID then
+		-- Situations where a single quest has faction-specific data
 		setmetatable(otherQuestData, { __index = t });
 		rawset(t, "otherQuestData", otherQuestData);
 		return original;
 	else
+		-- Situations where for some reason two different quests have been merged together as one quest and need to be split apart to be useful
 		setmetatable(otherQuestData, app.BaseQuest);
 		for key,value in pairs(t) do
 			if not rawget(otherQuestData, key) then
 				rawset(otherQuestData, key, value);
 			end
 		end
+		rawset(t, "r", app.FactionID);
+		rawset(otherQuestData, "r", otherFaction);
 		local oldOnUpdate = original.OnUpdate;
 		original.OnUpdate = function(t)
-			otherQuestData.parent = t.parent;
 			CacheFields(otherQuestData);
-			local index = indexOf(t.parent.g, t);
-			if index then
-				tinsert(t.parent.g, index + 1, otherQuestData);
-			else
-				tinsert(t.parent.g, otherQuestData);
+			local parent = t.parent;
+			-- not sure why the parent might not exist sometimes when the group does an OnUpdate...
+			if parent then
+				otherQuestData.parent = parent;
+				local index = indexOf(parent.g, t);
+				if index then
+					tinsert(parent.g, index + 1, otherQuestData);
+				else
+					tinsert(parent.g, otherQuestData);
+				end
+			else app.PrintDebug("OnUpdate: No parent",t.hash)
 			end
 			if oldOnUpdate then
 				t.OnUpdate = oldOnUpdate;
@@ -8384,6 +8420,7 @@ app.CreateQuestWithFactionData = function(t)
 		return original;
 	end
 end
+--]]
 -- Causes a group to remain visible if it is replayable, regardless of collection status
 app.ShowIfReplayableQuest = function(data)
 	data.visible = C_QuestLog_IsQuestReplayable(data.questID) or app.CollectedItemVisibilityFilter(data);
@@ -14796,8 +14833,8 @@ function app:CreateMiniListForGroup(group)
 	-- app.PrintDebug("Popout for",suffix,"showing?",showing)
 	if not popout then
 		popout = app:GetWindow(suffix);
-		-- make a search for this group if it is an item/currency and not already a container for things
-		if not group.g and (group.itemID or group.currencyID) then
+		-- make a search for this group if it is an item/currency/achievement and not already a container for things
+		if not group.g and (group.itemID or group.currencyID or group.achievementID) then
 			local cmd = group.link or group.key .. ":" .. group[group.key];
 			app.SetSkipPurchases(2);
 			group = GetCachedSearchResults(cmd, SearchForLink, cmd);
@@ -15529,7 +15566,7 @@ local StoreWindowPosition = function(self)
 			-- print("removing stored window",self.Suffix)
 			local key = app.Settings:GetProfile();
 			local profile = AllTheThingsProfiles.Profiles[key];
-			if profile.Windows then
+			if profile and profile.Windows then
 				profile.Windows[self.Suffix] = nil;
 			end
 		end
@@ -15588,6 +15625,11 @@ local function RowOnClick(self, button)
 				end
 			else
 				if self.index > 0 then
+					if reference.__dlo then
+						-- clone the underlying object of the DLO and create a popout of that instead of the DLO itself
+						app:CreateMiniListForGroup(reference.__o);
+						return;
+					end
 					app:CreateMiniListForGroup(reference);
 				else
 					app.Settings:Open();

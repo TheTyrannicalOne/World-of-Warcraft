@@ -3,9 +3,9 @@
 ------------------------------------------------------------------------------
 -- Options.lua - Hook for Rematch
 --
--- Author: Expelliarm5s / June 2022 / All Rights Reserved
+-- Author: Expelliarm5s / August 2022 / All Rights Reserved
 --
--- Version 1.1.24
+-- Version 1.1.25
 ------------------------------------------------------------------------------
 -- luacheck: ignore 212 globals DLAPI
 -- luacheck: globals AceGUIWidgetLSMlists, max line length 320, ignore 212
@@ -117,19 +117,19 @@ function Options.GetOptions(uiType, uiName, appName)
 	if appName == addonName then
 
 		local wowV, wowP = GetBuildInfo()
-		local wowVersion = "|nGame: WoW, Flavor: " .. (addon.isClassic and "Classic" or "Retail") .. ", Version: " .. wowV .. ", Build: " .. wowP
+		local wowVersion = "|nGame: WoW, Flavor: " .. (addon.isClassic and "Vanilla/TBC/Wrath" or "Mainline") .. ", Version: " .. wowV .. ", Build: " .. wowP
 
 		local options = {
 			type = "group",
 			name = addon.METADATA.NAME .. " (" .. addon.METADATA.VERSION .. ")",
 			args = {
-				desc1a = {
+				desc0 = {
 					type = "description",
 					order = 0,
 					name = "|cff99ccff-: by " .. GetAddOnMetadata(addonName, "Author") .. " :-|r|n|n" .. GetAddOnMetadata(addonName, "Notes"),
 					fontSize = "medium",
 				},
-				desc1b = {
+				desc001 = {
 					type = "description",
 					order = 0.01,
 					name = wowVersion,

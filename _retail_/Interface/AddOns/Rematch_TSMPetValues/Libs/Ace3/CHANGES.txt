@@ -1,4 +1,41 @@
 ------------------------------------------------------------------------
+r1270 | nevcairiel | 2022-07-24 15:29:03 +0000 (Sun, 24 Jul 2022) | 1 line
+Changed paths:
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-MultiLineEditBox.lua
+
+AceGUI-3.0: MultiLineEditBox: Ensure the HitRect is consistent in all sizes
+------------------------------------------------------------------------
+r1269 | nevcairiel | 2022-07-24 14:44:51 +0000 (Sun, 24 Jul 2022) | 1 line
+Changed paths:
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-MultiLineEditBox.lua
+
+AceGUI-3.0: MultiLineEditBox: Remove redundant override
+------------------------------------------------------------------------
+r1268 | nevcairiel | 2022-07-24 14:41:04 +0000 (Sun, 24 Jul 2022) | 1 line
+Changed paths:
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-MultiLineEditBox.lua
+
+AceGUI-3.0: MultiLineEditBox: Improve HitRect handling to update dynamically on size changes
+------------------------------------------------------------------------
+r1267 | nevcairiel | 2022-07-24 09:20:39 +0000 (Sun, 24 Jul 2022) | 1 line
+Changed paths:
+   M /trunk/changelog.txt
+
+Add missing changelog entry
+------------------------------------------------------------------------
+r1266 | nevcairiel | 2022-07-24 09:18:44 +0000 (Sun, 24 Jul 2022) | 1 line
+Changed paths:
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-MultiLineEditBox.lua
+   M /trunk/changelog.txt
+
+AceGUI-3.0: MultiLineEditBox: Fixed an issue with mouse interactivity on re-cycled editboxes in certain circumstances.
+------------------------------------------------------------------------
+r1265 | funkehdude | 2022-06-01 04:18:46 +0000 (Wed, 01 Jun 2022) | 1 line
+Changed paths:
+   M /trunk/Ace3.toc
+
+bump toc
+------------------------------------------------------------------------
 r1264 | funkehdude | 2022-04-22 00:25:11 +0000 (Fri, 22 Apr 2022) | 1 line
 Changed paths:
    M /trunk/Ace3_Vanilla.toc

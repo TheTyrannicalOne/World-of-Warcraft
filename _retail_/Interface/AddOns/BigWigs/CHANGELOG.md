@@ -1,6 +1,10 @@
 # BigWigs
 
-## [v243.2](https://github.com/BigWigsMods/BigWigs/tree/v243.2) (2022-07-07)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v243.1...v243.2) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
+## [v244.1](https://github.com/BigWigsMods/BigWigs/tree/v244.1) (2022-08-10)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v244...v244.1) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
 
-- Sepulcher/AnduinWrynn: Fix AceTimer error  
+- Update zhCN (#1252)  
+- CastleNathria/Affixes: Updates  
+- SanctumOfDomination/Affixes: Encounter specific updates  
+- SanctumOfDomination: Add Affixes  
+- CastleNathria/Affixes: Cleanup Denathrius timer  

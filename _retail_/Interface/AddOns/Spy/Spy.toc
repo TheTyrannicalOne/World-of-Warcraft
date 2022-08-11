@@ -1,6 +1,6 @@
-﻿## Interface: 90200
+﻿## Interface: 90205
 ## Title: Spy
-## Version: 3.8.5
+## Version: 3.8.6
 ## Notes: Detects and alerts you to the presence of nearby enemy players.
 ## Notes-deDE: Detektiert und warnt Sie vor, in der Nähe befindlichen, Gegnern.
 ## Notes-esES: Detects and alerts you to the presence of nearby enemy players.

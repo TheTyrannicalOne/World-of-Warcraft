@@ -19,7 +19,7 @@ SET sunShafts "2"
 SET lodObjectCullSize "14"
 SET graphicsGroundClutter "10"
 SET shadowMode "4"
-SET gxWindowedResolution "2176x1224"
+SET gxWindowedResolution "2560x1440"
 SET groundEffectDensity "256"
 SET waterDetail "3"
 SET projectedTextures "1"
@@ -88,14 +88,19 @@ SET shadowRt "3"
 
 SET gxFullscreenResolution "2560x1440"
 SET doodadLodScale "150"
+
+
+
+
+
+
+
+
+
+
+
+
+
 SET graphicsTextureResolution "2"
-
-
-
-
-
-
-
-
 
 

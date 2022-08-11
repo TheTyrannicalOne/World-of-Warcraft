@@ -2,17 +2,11 @@
 RematchSaved = {
 }
 RematchSettings = {
-	["PetCardYPos"] = 1232,
+	["NotesFont"] = "GameFontHighlight",
 	["JournalUsed"] = true,
-	["XPos"] = 995.0079345703125,
-	["SpecialSlots"] = {
-	},
-	["CustomScaleValue"] = 100,
 	["DialogYPos"] = 667.0057983398438,
-	["UseTypeBar"] = true,
-	["JournalPanel"] = 1,
 	["HidePetToast"] = true,
-	["LevelingQueue"] = {
+	["QueueSanctuary"] = {
 	},
 	["Sort"] = {
 		["Order"] = 2,
@@ -20,12 +14,13 @@ RematchSettings = {
 	},
 	["AllowHiddenPetsDefaulted"] = true,
 	["BackupCount"] = 0,
-	["TeamGroups"] = {
-		{
-			"General", -- [1]
-			"Interface\\Icons\\PetJournalPortrait", -- [2]
-		}, -- [1]
+	["PetCardXPos"] = 401,
+	["PreferredMode"] = 1,
+	["ActivePanel"] = 1,
+	["Sanctuary"] = {
 	},
+	["YPos"] = 418.0044860839844,
+	["SelectedTab"] = 1,
 	["ScriptFilters"] = {
 		{
 			"Unnamed Pets", -- [1]
@@ -48,6 +43,17 @@ RematchSettings = {
 			"-- Pets with three or more attack types different than their pet type.\n\nlocal count = 0\nfor _,abilityID in ipairs(abilityList) do\n  local abilityType,noHints = select(7, C_PetBattles.GetAbilityInfoByID(abilityID) )\n  if not noHints and abilityType~=petType then\n    count = count + 1\n  end\nend\n\nreturn count>=3\n", -- [2]
 		}, -- [5]
 	},
+	["QueueSortOrder"] = 1,
+	["XPos"] = 995.0079345703125,
+	["FavoriteFilters"] = {
+	},
+	["DialogXPos"] = 1343.008666992188,
+	["TeamGroups"] = {
+		{
+			"General", -- [1]
+			"Interface\\Icons\\PetJournalPortrait", -- [2]
+		}, -- [1]
+	},
 	["Filters"] = {
 		["Other"] = {
 		},
@@ -55,13 +61,13 @@ RematchSettings = {
 		},
 		["Script"] = {
 		},
-		["Types"] = {
+		["Moveset"] = {
 		},
-		["Favorite"] = {
+		["Tough"] = {
 		},
-		["Collected"] = {
+		["Level"] = {
 		},
-		["Strong"] = {
+		["Sources"] = {
 		},
 		["Similar"] = {
 		},
@@ -69,36 +75,31 @@ RematchSettings = {
 		},
 		["Rarity"] = {
 		},
-		["Sources"] = {
+		["Strong"] = {
 		},
-		["Level"] = {
+		["Collected"] = {
 		},
-		["Tough"] = {
+		["Favorite"] = {
 		},
-		["Moveset"] = {
+		["Types"] = {
 		},
 	},
 	["ExpandedOptHeaders"] = {
 	},
-	["FavoriteFilters"] = {
-	},
-	["PetCardXPos"] = 401,
-	["ElvUIToastDefaulted"] = true,
 	["CollapsedOptHeaders"] = {
 	},
 	["ExpandedTargetHeaders"] = {
 	},
-	["PreferredMode"] = 1,
-	["ActivePanel"] = 1,
-	["Sanctuary"] = {
+	["PetCardYPos"] = 1232,
+	["SpecialSlots"] = {
 	},
-	["QueueSortOrder"] = 1,
+	["LevelingQueue"] = {
+	},
 	["CornerPos"] = "BOTTOMLEFT",
-	["DialogXPos"] = 1343.008666992188,
-	["QueueSanctuary"] = {
-	},
-	["YPos"] = 418.0044860839844,
-	["SelectedTab"] = 1,
+	["JournalPanel"] = 1,
+	["ElvUIToastDefaulted"] = true,
+	["UseTypeBar"] = true,
+	["CustomScaleValue"] = 100,
 	["PetNotes"] = {
 	},
 }

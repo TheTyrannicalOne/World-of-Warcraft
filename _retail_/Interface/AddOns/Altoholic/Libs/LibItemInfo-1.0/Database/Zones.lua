@@ -54,6 +54,7 @@ lib:RegisterItems({
 	-- 4.0 Cataclysm
 	
 	-- 5.0 Mists of Pandaria
+	[79104] = SetZoneItem(4, VALE_OF_ETERNAL_BLOSSOM, 524, 472), 		-- Rusty Watering Can
 	[87779] = SetZoneItem(4, VALE_OF_ETERNAL_BLOSSOM, 214, 169), 		-- Ancient Guo-Lai Cache Key
 	
 	-- 6.0 Warlords of Draenor
@@ -69,9 +70,6 @@ lib:RegisterItems({
 	-- [122273] = SetZoneItem(5, LUNARFALL), 		-- scouting missives, to do   https://www.wowhead.com/npc=78564/sergeant-crowler#sells;0+1-2
 	
 	-- same for horde : https://www.wowhead.com/npc=79774/sergeant-grimjaw#sells;0+1-2
-	-- [122307] = SetZoneItem(5, FROSTWALL), 		-- Rush Order: Barn		Same for A & H
-	-- [122487] = SetZoneItem(5, FROSTWALL), 		-- Rush Order: Gladiator's Sanctum
-	-- [128373] = SetZoneItem(5, FROSTWALL), 		-- Rush Order: Shipyard
 	-- SEE BELOW !!
 	[122496] = SetZoneItem(5, FROSTWALL), 		-- Rush Order: Garden Shipment
 	[122501] = SetZoneItem(5, FROSTWALL), 		-- Rush Order: Goblin Workshop
@@ -96,6 +94,7 @@ lib:RegisterItems({
 	[186727] = SetZoneItem(8, THE_MAW), 		-- Seal Breaker Key
 	[186718] = SetZoneItem(8, KORTHIA), 		-- Teleporter Repair Kit
 	
+	-- 9.2 Shadowlands / Zereth Mortis
 	[188957] = SetZoneItem(8, ZERETH_MORTIS), -- Genesis Mote
 	[189863] = SetZoneItem(8, ZERETH_MORTIS), -- Spatial Opener
 	[189704] = SetZoneItem(8, ZERETH_MORTIS, 600, 178), -- Dominance Key
@@ -104,6 +103,8 @@ lib:RegisterItems({
 	[190198] = SetZoneItem(8, ZERETH_MORTIS), -- Sandworn Chest Key Fragment
 	[190739] = SetZoneItem(8, ZERETH_MORTIS), -- Provis Wax
 	[190740] = SetZoneItem(8, ZERETH_MORTIS), -- Automa Integration
+	
+
 })
 
 

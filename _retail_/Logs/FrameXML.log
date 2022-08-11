@@ -1,19 +1,16 @@
-7/19 18:58:03.813  Loading add-on AngryWorldQuests
-7/19 18:58:03.813  ** Loading table of contents Interface\AddOns\AngryWorldQuests\AngryWorldQuests.toc
-7/19 18:58:03.813  (null)
-7/19 18:58:03.813  Loading add-on NPCScan
-7/19 18:58:03.813  Interface\AddOns\NPCScan\Bindings.xml(1): error: not well-formed (invalid token)
-7/19 18:58:03.813  Loading add-on Overachiever
-7/19 18:58:03.813  ** Loading table of contents Interface\AddOns\Overachiever\Overachiever.toc
-7/19 18:58:03.813  (null)
-7/19 18:58:03.813  Loading add-on PetEmote
-7/19 18:58:03.813  Interface\AddOns\PetEmote\Bindings.xml(1): error: not well-formed (invalid token)
-7/19 18:58:16.343  Loading add-on Overachiever_Trade
-7/19 18:58:16.343  ** Loading table of contents Interface\AddOns\Overachiever_Trade\Overachiever_Trade.toc
-7/19 18:58:16.343  (null)
-7/19 18:58:28.741  Loading add-on Overachiever_Tabs
-7/19 18:58:28.741  ** Loading table of contents Interface\AddOns\Overachiever_Tabs\Overachiever_Tabs.toc
-7/19 18:58:28.741  (null)
-7/19 19:02:53.578  Loading add-on MasterPlan
-7/19 19:02:53.578  ** Loading table of contents Interface\AddOns\MasterPlan\MasterPlan.toc
-7/19 19:02:53.578  (null)
+8/7 12:04:24.498  Loading add-on AngryWorldQuests
+8/7 12:04:24.498  ** Loading table of contents Interface\AddOns\AngryWorldQuests\AngryWorldQuests.toc
+8/7 12:04:24.498  (null)
+8/7 12:04:24.498  Loading add-on NPCScan
+8/7 12:04:24.498  Interface\AddOns\NPCScan\Bindings.xml(1): error: not well-formed (invalid token)
+8/7 12:04:24.498  Loading add-on Overachiever
+8/7 12:04:24.498  ** Loading table of contents Interface\AddOns\Overachiever\Overachiever.toc
+8/7 12:04:24.498  (null)
+8/7 12:04:24.498  Loading add-on PetEmote
+8/7 12:04:24.498  Interface\AddOns\PetEmote\Bindings.xml(1): error: not well-formed (invalid token)
+8/7 12:04:37.235  Loading add-on Overachiever_Trade
+8/7 12:04:37.235  ** Loading table of contents Interface\AddOns\Overachiever_Trade\Overachiever_Trade.toc
+8/7 12:04:37.235  (null)
+8/7 12:04:50.818  Loading add-on Overachiever_Tabs
+8/7 12:04:50.818  ** Loading table of contents Interface\AddOns\Overachiever_Tabs\Overachiever_Tabs.toc
+8/7 12:04:50.818  (null)

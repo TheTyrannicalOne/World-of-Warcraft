@@ -1,5 +1,6 @@
 
 ElvCharacterDB = {
+	["ConvertKeybindings"] = true,
 	["ChatHistoryLog"] = {
 		{
 			"Towering Exterminator 100.00% ~(54.14, 34.86) |cffffff00|Hworldmap:1961:5414:3486|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
@@ -2180,8 +2181,6 @@ ElvCharacterDB = {
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},
-	["CliqueDatatext"] = {
-	},
 	["ChatEditHistory"] = {
 		"/s two druids just went to get some", -- [1]
 		"/hekili", -- [2]
@@ -2204,5 +2203,6 @@ ElvCharacterDB = {
 		"/love", -- [19]
 		"/p TY!", -- [20]
 	},
-	["ConvertKeybindings"] = true,
+	["CliqueDatatext"] = {
+	},
 }

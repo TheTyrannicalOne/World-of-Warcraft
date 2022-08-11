@@ -3,8 +3,8 @@
 ------------------------------------------------------------------------------
 -- PriceSource_UJ.lua - UJ Price Source
 --
--- Author: Expelliarm5s / June 2022 / All Rights Reserved
+-- Author: Expelliarm5s / August 2022 / All Rights Reserved
 --
--- Version 1.1.24
+-- Version 1.1.25
 ------------------------------------------------------------------------------
 -- luacheck: ignore 212 globals DLAPI

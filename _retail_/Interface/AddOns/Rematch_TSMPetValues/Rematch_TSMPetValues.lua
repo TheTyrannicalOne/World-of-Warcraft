@@ -3,9 +3,9 @@
 ------------------------------------------------------------------------------
 -- Rematch_TSMPetValues.lua - Main addon file
 --
--- Author: Expelliarm5s / June 2022 / All Rights Reserved
+-- Author: Expelliarm5s / August 2022 / All Rights Reserved
 --
--- Version 1.1.24
+-- Version 1.1.25
 ------------------------------------------------------------------------------
 -- luacheck: ignore 212 globals DLAPI
 
@@ -77,7 +77,7 @@ function addon:OnInitialize()
 	-- addon state flags
 	addon.isEnabled = false
 	addon.isInfight = false
-	addon.isClassic = (WOW_PROJECT_ID == WOW_PROJECT_CLASSIC)
+	addon.isClassic = (WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE)
 
 	-- loads data and options
 	addon.db = AceDB:New(addonName .. "DB", addon.Options.defaults, true)
