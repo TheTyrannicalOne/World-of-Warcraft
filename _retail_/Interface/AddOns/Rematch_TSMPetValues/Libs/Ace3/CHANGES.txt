@@ -1,4 +1,17 @@
 ------------------------------------------------------------------------
+r1272 | nevcairiel | 2022-08-29 15:56:35 +0000 (Mon, 29 Aug 2022) | 1 line
+Changed paths:
+   M /trunk/AceGUI-3.0/widgets/AceGUIWidget-DropDown-Items.lua
+
+AceGUI-3.0: DropDown: Fix leaked globals and texture draw layers of item sub-textures
+------------------------------------------------------------------------
+r1271 | nevcairiel | 2022-08-19 10:33:06 +0000 (Fri, 19 Aug 2022) | 1 line
+Changed paths:
+   M /trunk/Ace3.toc
+   A /trunk/Ace3_Wrath.toc
+
+Update Retail TOC and add Wrath
+------------------------------------------------------------------------
 r1270 | nevcairiel | 2022-07-24 15:29:03 +0000 (Sun, 24 Jul 2022) | 1 line
 Changed paths:
    M /trunk/AceGUI-3.0/widgets/AceGUIWidget-MultiLineEditBox.lua

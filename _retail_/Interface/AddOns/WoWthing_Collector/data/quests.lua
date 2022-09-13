@@ -19,6 +19,11 @@ ns.emissaries = {
 ns.otherQuests = {
     -- Zereth Mortis
     65282, -- Improved Cypher Analysis Tool
+    65753, -- Cosmic Gladiator's Devouring Malediction
+    65754, -- Cosmic Gladiator's Eternal Aegis
+    65755, -- Cosmic Gladiator's Resonator
+    65756, -- Cosmic Gladiator's Echoing Resolve
+    65757, -- Cosmic Gladiator's Fastidious Resolve
 
     -- Korthia
     64027, -- Treatise: The Study of Anima and Harnessing Every Drop
@@ -49,8 +54,8 @@ ns.otherQuests = {
     -- Soulshapes
     64982, -- Cat (Well Fed)
     64938, -- Corgi
-
-    -- Artifact Hidden Appearances
+    
+    -- Legion: Artifact Hidden Appearances
     43646,
     43647,
     43648,
@@ -98,6 +103,7 @@ ns.progressQuests = {
         62634, -- "A Shattered Path Through Time", Cata Timewalking
         62635, -- "A Shattered Path Through Time", MoP Timewalking
         62636, -- "A Savage Path Through Time", WoD Timewalking
+        64709, -- "A Fel Path Through Time", Legion Timewalking
         62637, -- "A Call to Battle", Battlegrounds
         62638, -- "Emissary of War", Mythic Dungeons
         62639, -- "The Very Best", PvP Pet Battles
@@ -114,6 +120,19 @@ ns.progressQuests = {
         --64527, -- Observing the Chase
         65773, -- Solo Mission
         65775, -- Soloing Strategy
+    }},
+
+    -- PvP Brawl
+    ["somethingDifferent"] = {"weekly", {47148}},
+
+    -- Timewalking turn-ins
+    ["timewalking"] = {"weekly", {
+        40168, -- The Swirling Vial, TBC
+        40173, -- The Unstable Prism, Wrath
+        40786, -- The Smoldering Ember, Cata
+        45563, -- The Shrouded Coin, MoP
+        55498, -- The Shimmering Crystal, WoD
+        64710, -- Whispering Fel Crystal, Legion
     }},
 
     -- Warlords of Draenor
@@ -134,6 +153,9 @@ ns.progressQuests = {
     ["legHellfire2Heroic"] = {"once", {39504}},
     ["legHellfire1Mythic"] = {"once", {39501}},
     ["legHellfire2Mythic"] = {"once", {39505}},
+
+    -- Legion: Misc
+    ["legionWitheredTraining"] = {"wq", {43943}},
 
     -- Legion: Raids
     ["legEmerald1Normal"] = {"once", {44283}},
@@ -175,8 +197,16 @@ ns.progressQuests = {
 
     -- Shadowlands: 9.1
     ["shapingFate"] = {"weekly", {63949}},
+    ["slTormentors"] = {"weekly", {63854}},
+    ["slMawAssault"] = {"biweekly", {
+        63543, -- Necrolord
+        63822, -- Venthyr
+        63823, -- Night Fae
+        63824, -- Kyrian
+    }},
 
     -- Shadowlands: 9.2
+    ["newDeal"] = {"weekly", {65649}},
     ["patterns"] = {"weekly", {66042}},
 
     -- Shadowlands: Raids
@@ -191,4 +221,10 @@ ns.progressQuests = {
     ["slSepulcher1Normal"] = {"once", {65764}},
     ["slSepulcher1Heroic"] = {"once", {65763}},
     ["slSepulcher1Mythic"] = {"once", {65762}},
+
+    -- Shadowlands: Fated
+    ["slFatedDinar1"] = {"once", {66648}},
+    ["slFatedDinar2"] = {"once", {66649}},
+    ["slFatedDinar3"] = {"once", {66650}},
+    ["slFatedWorldQuest"] = {"weekly", {66693, 66694, 66695}},
 }

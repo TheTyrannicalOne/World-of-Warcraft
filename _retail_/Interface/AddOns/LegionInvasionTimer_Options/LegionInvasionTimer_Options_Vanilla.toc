@@ -12,7 +12,7 @@
 ## Notes-koKR: LegionInvasionTimer|1을;를; 설정하는 옵션입니다.
 ## Notes-ptBR: LegionInvasionTimer Opções de Configuração.
 ## Notes-ruRU: LegionInvasionTimer параметры настроек.
-## Version: v9.2.4
+## Version: v9.2.6
 ## LoadOnDemand: 1
 ## DefaultState: disabled
 ## Dependencies: LegionInvasionTimer
@@ -22,4 +22,5 @@
 ## X-License: All Rights Reserved: You are free to fork and modify on GitHub, please ask us about anything else.
 ## X-Curse-Project-ID: 101625
 ## X-WoWI-ID: 24128
+## X-Wago-ID: WYK9aeKL
 

@@ -9,16 +9,16 @@ local charClassID, charData, charName, guildName, playedLevel, playedLevelUpdate
 local hookedCollections, loggingOut = false, false
 local bankOpen, guildBankOpen, reagentBankUpdated, transmogOpen = false, false, false, false
 local maxScannedToys = 0
-local oldScannedTransmog = 0
-local dirtyBags, dirtyCovenant, dirtyCurrencies, dirtyGarrisons, dirtyHeirlooms, dirtyLocation, dirtyLockouts, dirtyMounts, dirtyMythicPlus, dirtyPets, dirtyQuests, dirtyReputations, dirtyToys, dirtyTransmog, dirtyVault =
-    {}, false, false, false, false, false, false, false, false, false, false, false, false, false, false
+local dirtyAchievements, dirtyBag, dirtyBags, dirtyCovenant, dirtyCurrencies, dirtyGarrisonTrees, dirtyHeirlooms, dirtyLocation, dirtyLockouts, dirtyMounts, dirtyMythicPlus, dirtyPets, dirtyQuests, dirtyReputations, dirtyToys, dirtyTransmog, dirtyVault =
+    false, {}, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false
 local dirtyCallings, callingData = false, nil
 local dirtyGuildBank, guildBankQueried, requestingPlayedTime = false, false, true
 
 local transmogLocation = TransmogUtil.GetTransmogLocation("HEADSLOT", Enum.TransmogType.Appearance, Enum.TransmogModification.Main)
+local transmogSlots = {}
 
 -- Local globals
-local C_CurrencyInfo_GetCurrencyInfo, C_TransmogCollection_GetAppearanceSources, C_TransmogCollection_GetCategoryAppearances, C_QuestLog_IsQuestFlaggedCompleted, CollectionWardrobeUtil_GetSlotFromCategoryID = C_CurrencyInfo.GetCurrencyInfo, C_TransmogCollection.GetAppearanceSources, C_TransmogCollection.GetCategoryAppearances, C_QuestLog.IsQuestFlaggedCompleted, CollectionWardrobeUtil.GetSlotFromCategoryID
+local C_CurrencyInfo_GetCurrencyInfo, C_TransmogCollection_GetAppearanceSources, C_TransmogCollection_GetCategoryAppearances, C_QuestLog_IsQuestFlaggedCompleted = C_CurrencyInfo.GetCurrencyInfo, C_TransmogCollection.GetAppearanceSources, C_TransmogCollection.GetCategoryAppearances, C_QuestLog.IsQuestFlaggedCompleted
 
 
 -- Libs
@@ -72,15 +72,15 @@ do
 end
 
 -- Need a frame for events
-local frame, events = CreateFrame("FRAME"), {}
+local frame, events = CreateFrame("FRAME", "WoWthing_Collector"), {}
 
 -- Fires when the addon has finished loading
-function events:ADDON_LOADED(name)
-    -- Damn Pet Journal!
-    if name == "Blizzard_Collections" then
-        wwtc:HookCollections()
-    end
-end
+-- function events:ADDON_LOADED(name)
+--     -- Damn Pet Journal!
+--     if name == "Blizzard_Collections" then
+--         wwtc:HookCollections()
+--     end
+-- end
 
 -- Fires when the player logs in, surprisingly
 function events:PLAYER_LOGIN()
@@ -96,7 +96,7 @@ function events:PLAYER_ENTERING_WORLD()
     
     dirtyCovenant = true
     dirtyCurrencies = true
-    dirtyGarrisons = true
+    dirtyGarrisonTrees = true
     dirtyHeirlooms = true
     dirtyLocation = true
     dirtyTransmog = true
@@ -134,6 +134,10 @@ end
 function events:UPDATE_INSTANCE_INFO()
     dirtyLockouts = true
 end
+-- Fires when achievement criteria updates
+function events:CRITERIA_UPDATE()
+    dirtyAchievements = true
+end
 -- Fires when currency changes
 function events:CURRENCY_DISPLAY_UPDATE(currencyType)
     -- Redeemed Soul, Reservoir Anima
@@ -150,16 +154,19 @@ function events:PLAYER_MONEY()
 end
 -- Fires when the contents of a bag changes
 function events:BAG_UPDATE(bagID)
-    dirtyBags[bagID] = true
+    dirtyBag[bagID] = true
+end
+function events:BAG_UPDATE_DELAYED()
+    dirtyBags = true
 end
 -- Fires when the bank is opened
 function events:BANKFRAME_OPENED()
     -- Force a bag scan of the bank now that it's open
     bankOpen = true
-    dirtyBags[-1] = true
-    dirtyBags[-3] = true
+    dirtyBag[-1] = true
+    dirtyBag[-3] = true
     for i = 5, 11 do
-        dirtyBags[i] = true
+        dirtyBag[i] = true
     end
 end
 -- Fires when the bank is closed
@@ -168,7 +175,7 @@ function events:BANKFRAME_CLOSED()
 end
 -- Fires when something changes in the reagent bank
 function events:PLAYERREAGENTBANKSLOTS_CHANGED()
-    dirtyBags[-3] = true
+    dirtyBag[-3] = true
     reagentBankUpdated = true
 end
 -- Fires when the guild bank opens
@@ -186,23 +193,23 @@ function events:GUILDBANKBAGSLOTS_CHANGED()
     dirtyGuildBank = true
 end
 -- Fires ??
-function events:COMPANION_UPDATE()
-    dirtyMounts = true
-    dirtyPets = true
-end
--- Fires when a new companion is learned
-function events:COMPANION_LEARNED()
-    dirtyMounts = true
-    dirtyPets = true
-end
--- Fires when the mount journal usability list changes (move between inside/outside/water/etc)
-function events:MOUNT_JOURNAL_USABILITY_CHANGED()
-    dirtyMounts = true
-end
--- Fires when the pet journal list updates
-function events:PET_JOURNAL_LIST_UPDATE()
-    dirtyPets = true
-end
+-- function events:COMPANION_UPDATE()
+--     dirtyMounts = true
+--     dirtyPets = true
+-- end
+-- -- Fires when a new companion is learned
+-- function events:COMPANION_LEARNED()
+--     dirtyMounts = true
+--     dirtyPets = true
+-- end
+-- -- Fires when the mount journal usability list changes (move between inside/outside/water/etc)
+-- function events:MOUNT_JOURNAL_USABILITY_CHANGED()
+--     dirtyMounts = true
+-- end
+-- -- Fires when the pet journal list updates
+-- function events:PET_JOURNAL_LIST_UPDATE()
+--     dirtyPets = true
+-- end
 -- Fires when the contents of the reputation listing change or become available
 function events:UPDATE_FACTION()
     dirtyReputations = true
@@ -255,13 +262,13 @@ function events:PLAYER_FLAGS_CHANGED(unitId)
 end
 -- Garrisons
 function events:GARRISON_TALENT_COMPLETE()
-    dirtyGarrisons = true
+    dirtyGarrisonTrees = true
 end
 function events:GARRISON_TALENT_RESEARCH_STARTED()
-    dirtyGarrisons = true
+    dirtyGarrisonTrees = true
 end
 function events:GARRISON_TALENT_UPDATE()
-    dirtyGarrisons = true
+    dirtyGarrisonTrees = true
 end
 -- Quests
 function events:COVENANT_CALLINGS_UPDATED(callings)
@@ -320,6 +327,7 @@ end
 -------------------------------------------------------------------------------
 -- Call functions in the events table for events
 frame:SetScript("OnEvent", function(self, event, ...)
+    --print(event)
     events[event](self, ...)
 end)
 
@@ -331,9 +339,14 @@ end
 -------------------------------------------------------------------------------
 -- Timer to do spammy things
 function wwtc:Timer()
-    for bagID, dirty in pairs(dirtyBags) do
-        dirtyBags[bagID] = nil
-        wwtc:ScanBag(bagID)
+    if dirtyAchievements then
+        dirtyAchievements = false
+        wwtc:ScanAchievements()
+    end
+
+    if dirtyBags then
+        dirtyBags = false
+        wwtc:ScanBags()
     end
 
     if dirtyCovenant then
@@ -346,9 +359,9 @@ function wwtc:Timer()
         wwtc:ScanCurrencies()
     end
 
-    if dirtyGarrisons then
-        dirtyGarrisons = false
-        wwtc:ScanGarrisons()
+    if dirtyGarrisonTrees then
+        dirtyGarrisonTrees = false
+        wwtc:ScanGarrisonTrees()
     end
 
     if dirtyGuildBank then
@@ -363,6 +376,7 @@ function wwtc:Timer()
 
     if dirtyLocation then
         dirtyLocation = false
+        wwtc:ScanGarrisons()
         wwtc:ScanLocation()
     end
 
@@ -440,6 +454,10 @@ function wwtc:Initialise()
     WWTCSaved.heirloomsV2 = WWTCSaved.heirloomsV2 or {}
     WWTCSaved.transmogSourcesV2 = WWTCSaved.transmogSourcesV2 or {}
 
+    WWTCSaved.honorLevel = 0
+    WWTCSaved.honorCurrent = 0
+    WWTCSaved.honorMax = 0
+
     -- Set up character data table
     charData = WWTCSaved.chars[charName] or {}
     WWTCSaved.chars[charName] = charData
@@ -463,7 +481,8 @@ function wwtc:Initialise()
     charData.currencies = charData.currencies or {}
     charData.dailyQuests = charData.dailyQuests or {}
     charData.emissaries = charData.emissaries or {}
-    charData.garrisonTrees = charData.garrisonTrees or nil
+    charData.garrisons = charData.garrisons or {}
+    charData.garrisonTrees = charData.garrisonTrees or {}
     charData.illusions = charData.illusions or ''
     charData.items = charData.items or {}
     charData.lockouts = charData.lockouts or {}
@@ -493,13 +512,21 @@ function wwtc:Initialise()
 
     wwtc:BuildEJData()
     wwtc:UpdateGuildData()
+
+    -- Transmog slots shouldn't change?
+    for categoryID = 1, 29 do
+        local slot = CollectionWardrobeUtil.GetSlotFromCategoryID(categoryID)
+        if slot ~= nil then
+            transmogSlots[categoryID] = slot
+        end
+    end
 end
 
 function wwtc:Login()
     wwtc:Initialise()
 
     -- Try to hook things
-    wwtc:HookCollections()
+    -- wwtc:HookCollections()
 
     RequestTimePlayed()
     C_Garrison.RequestLandingPageShipmentInfo()
@@ -585,6 +612,7 @@ function wwtc:UpdateCharacterData()
 
         wwtc:UpdateChromieTime()
         wwtc:UpdateExhausted()
+        wwtc:UpdateHonor()
         wwtc:UpdateWarMode()
 
         wwtc:ScanAchievements()
@@ -643,57 +671,98 @@ function wwtc:UpdateExhausted()
     end
 end
 
+function wwtc:UpdateHonor()
+    WWTCSaved.honorLevel = UnitHonorLevel('player')
+    WWTCSaved.honorCurrent = UnitHonor('player')
+    WWTCSaved.honorMax = UnitHonorMax('player')
+end
+
 function wwtc:UpdateWarMode()
     if charData == nil then return end
 
     charData.isWarMode = C_PvP.IsWarModeDesired()
 end
 
+local scanningBags = false
+local bagScanQueue
+function wwtc:ScanBags()
+    if scanningBags then return end
+
+    bagScanQueue = {}
+    for bagID, _ in pairs(dirtyBag) do
+        tinsert(bagScanQueue, bagID)
+        dirtyBag[bagID] = nil
+    end
+
+    C_Timer.After(0, function()
+        wwtc:ScanBagQueue()
+    end)
+
+    scanningBags = true
+end
+
 -- Scan a specific bag
-function wwtc:ScanBag(bagID)
+function wwtc:ScanBagQueue()
     if charData == nil then return end
 
-    -- Short circuit if bank isn't open
-    if (bagID == -1 or (bagID >= 5 and bagID <= 11)) and not bankOpen then
+    local bagID = tremove(bagScanQueue)
+    if bagID == nil then
+        scanningBags = false
         return
+    end
+
+    -- Short circuit if bank isn't open
+    local scan = true
+    if (bagID == -1 or (bagID >= 5 and bagID <= 11)) and not bankOpen then
+        scan = false
     end
     -- Reagent bank is weird, make sure that the bank is open or it was actually updated
     if bagID == -3 then
         if not (bankOpen or reagentBankUpdated) then
-            return
+            scan = false
         end
         reagentBankUpdated = false
     end
 
-    local now = time()
-    if bagID >= 0 and bagID <= 4 then
-        charData.scanTimes["bags"] = now
+    if scan then
+        local now = time()
+        if bagID >= 0 and bagID <= 4 then
+            charData.scanTimes["bags"] = now
 
-        -- Update mythic plus keystone since bags changed
-        charData.keystoneInstance = C_MythicPlus.GetOwnedKeystoneChallengeMapID()
-        charData.keystoneLevel = C_MythicPlus.GetOwnedKeystoneLevel()
-    else
-        charData.scanTimes["bank"] = now
-    end
+            -- Update mythic plus keystone since bags changed
+            charData.keystoneInstance = C_MythicPlus.GetOwnedKeystoneChallengeMapID()
+            charData.keystoneLevel = C_MythicPlus.GetOwnedKeystoneLevel()
+        else
+            charData.scanTimes["bank"] = now
+        end
 
-    charData.items["b"..bagID] = {}
-    local bag = charData.items["b"..bagID]
+        charData.items["b"..bagID] = {}
+        local bag = charData.items["b"..bagID]
 
-    -- Update bag ID
-    if bagID >= 1 then
-        local bagItemID, _ = GetInventoryItemID('player', ContainerIDToInventoryID(bagID))
-        charData.bags["b"..bagID] = bagItemID
-    end
+        -- Update bag ID
+        if bagID >= 1 then
+            local bagItemID, _ = GetInventoryItemID('player', ContainerIDToInventoryID(bagID))
+            charData.bags["b"..bagID] = bagItemID
+        end
 
-    local numSlots = GetContainerNumSlots(bagID)
-    if numSlots > 0 then
-        for i = 1, numSlots do
-            local _, count, _, _, _, _, link, _ = GetContainerItemInfo(bagID, i)
-            if count ~= nil and link ~= nil then
-                local parsed = wwtc:ParseItemLink(link, count)
-                bag["s"..i] = parsed
+        local numSlots = GetContainerNumSlots(bagID)
+        if numSlots > 0 then
+            for i = 1, numSlots do
+                local _, count, _, _, _, _, link, _ = GetContainerItemInfo(bagID, i)
+                if count ~= nil and link ~= nil then
+                    local parsed = wwtc:ParseItemLink(link, count)
+                    bag["s"..i] = parsed
+                end
             end
         end
+    end
+
+    if #bagScanQueue > 0 then
+        C_Timer.After(0, function()
+            wwtc:ScanBagQueue()
+        end)
+    else
+        scanningBags = false
     end
 end
 
@@ -866,20 +935,26 @@ function wwtc:ScanAchievements()
     for _, achievementId in ipairs(ns.achievements) do
         local criteria = {}
         local earnedByCharacter = select(13, GetAchievementInfo(achievementId))
-
-        if not earnedByCharacter then
-            local numCriteria = GetAchievementNumCriteria(achievementId)
-            for i = 1, numCriteria do
-                local _, _, _, quantity = GetAchievementCriteriaInfo(achievementId, i)
-                table.insert(criteria, quantity)
+        -- This is nil if the achievement doesn't exist somehow
+        if earnedByCharacter ~= nil then
+            if not earnedByCharacter then
+                local numCriteria = ns.achievementCriteria[achievementId] or GetAchievementNumCriteria(achievementId)
+                for i = 1, numCriteria do
+                    local success, _, _, _, quantity = pcall(GetAchievementCriteriaInfo, achievementId, i, true)
+                    if success == false then
+                        criteria = {}
+                        break
+                    end
+                    table.insert(criteria, quantity)
+                end
             end
-        end
 
-        charData.achievements[#charData.achievements + 1] = {
-            id = achievementId,
-            earned = earnedByCharacter,
-            criteria = criteria,
-        }
+            charData.achievements[#charData.achievements + 1] = {
+                id = achievementId,
+                earned = earnedByCharacter,
+                criteria = criteria,
+            }
+        end
     end
 end
 
@@ -1045,7 +1120,7 @@ function wwtc:ScanQuests()
     charData.progressQuests = {}
 
     local now = time()
-    charData.scanTimes["quests"] = time()
+    charData.scanTimes["quests"] = now
 
     local dailyReset = now + C_DateAndTime.GetSecondsUntilDailyReset()
     local weeklyReset = now + C_DateAndTime.GetSecondsUntilWeeklyReset()
@@ -1080,6 +1155,13 @@ function wwtc:ScanQuests()
         end
 
         for _, questId in ipairs(questData[2]) do
+            if questData[1] == 'wq' and prog.reset == 0 then
+                local timeLeft = C_TaskQuest.GetQuestTimeLeftSeconds(questId)
+                if timeLeft ~= nil then
+                    prog.reset = now + timeLeft
+                end
+            end
+
             -- Quest is completed
             if C_QuestLog_IsQuestFlaggedCompleted(questId) then
                 prog.id = questId
@@ -1097,17 +1179,26 @@ function wwtc:ScanQuests()
                     prog.id = questId
                     prog.name = QuestUtils_GetQuestName(questId)
                     prog.status = 1
-                    prog.text = obj.text
-                    prog.type = obj.type
+                    if obj ~= nil then
+                        prog.text = obj.text
+                        prog.type = obj.type
 
-                    if obj.type == 'progressbar' then
-                        prog.have = GetQuestProgressBarPercent(questId)
-                        prog.need = 100
+                        if obj.type == 'progressbar' then
+                            prog.have = GetQuestProgressBarPercent(questId)
+                            prog.need = 100
+                        else
+                            prog.have = obj.numFulfilled
+                            prog.need = obj.numRequired
+                        end
                     else
-                        prog.have = obj.numFulfilled
-                        prog.need = obj.numRequired
+                        local oldQuestId = C_QuestLog.GetSelectedQuest()
+                        C_QuestLog.SetSelectedQuest(questId)
+                        prog.text = GetQuestLogCompletionText()
+                        prog.type = 'object'
+                        prog.have = 1
+                        prog.need = 1
+                        C_QuestLog.SetSelectedQuest(oldQuestId)
                     end
-
                     break
                 end
             end
@@ -1143,7 +1234,7 @@ function wwtc:ScanQuests()
 
                 -- { questID, factionID, icon, numObjectives, turninRequirementText }[]
                 for i, bounty in ipairs(bounties) do
-                    local timeLeft = C_TaskQuest.GetQuestTimeLeftMinutes(bounty.questID)
+                    local timeLeft = C_TaskQuest.GetQuestTimeLeftMinutes(bounty.questID) or 0
 
                     local index = 3
                     if timeLeft < 1440 then
@@ -1222,11 +1313,13 @@ function wwtc:ScanMythicPlus()
 end
 
 -- Scan transmog
+local scanningTransmog = false
+local transmogScanQueue, transmogSettings, transmogTemp
 function wwtc:ScanTransmog()
+    if scanningTransmog then return end
     if charData == nil then return end
 
     charData.scanTimes["transmog"] = time()
-    local transmog = {}
 
     -- Illusions
     local illusions = {}
@@ -1241,11 +1334,12 @@ function wwtc:ScanTransmog()
     charData.illusions = table.concat(illusions, ':')
 
     -- Save this to reset later
-    local showCollected = C_TransmogCollection.GetCollectedShown()
-    local showUncollected = C_TransmogCollection.GetUncollectedShown()
-    local sourceTypes = {}
+    transmogSettings = {}
+    transmogSettings.showCollected = C_TransmogCollection.GetCollectedShown()
+    transmogSettings.showUncollected = C_TransmogCollection.GetUncollectedShown()
+    transmogSettings.sourceTypes = {}
     for index = 1, 6 do
-        sourceTypes[index] = C_TransmogCollection.IsSourceTypeFilterChecked(index)
+        transmogSettings.sourceTypes[index] = C_TransmogCollection.IsSourceTypeFilterChecked(index)
     end
     
     if transmogOpen == false then
@@ -1255,45 +1349,55 @@ function wwtc:ScanTransmog()
 
     -- Run this in a timer so that the filter changes take effect
     C_Timer.After(0, function()
-        for categoryID = 1, 29 do
-            local slot = CollectionWardrobeUtil_GetSlotFromCategoryID(categoryID)
-            if slot ~= nil then
-                local appearances = C_TransmogCollection_GetCategoryAppearances(categoryID, transmogLocation)
-                for _, appearance in pairs(appearances) do
-                    if appearance.isCollected then
-                        local visualId = appearance.visualID
-                        transmog[visualId] = true
-
-                        local sources = C_TransmogCollection_GetAppearanceSources(visualId, categoryID, transmogLocation)
-                        for _, source in ipairs(sources) do
-                            if source.isCollected then
-                                local sourceKey = string.format("%d_%d", source.itemID, source.itemModID)
-                                WWTCSaved.transmogSourcesV2[sourceKey] = true
-                            end
-                        end
-                    end
-                end
-            end
-        end
+        scanningTransmog = true
+        transmogTemp = {}
 
         -- Manual checks
         for _, manualTransmog in ipairs(ns.transmog) do
             local have = C_TransmogCollection.PlayerHasTransmog(manualTransmog.itemId, manualTransmog.modifierId)
             if have then
-                transmog[manualTransmog.appearanceId] = true
+                transmogTemp[manualTransmog.appearanceId] = true
 
                 local sourceKey = string.format("%d_%d", manualTransmog.itemId, manualTransmog.modifierId)
                 WWTCSaved.transmogSourcesV2[sourceKey] = true
             end
         end
 
-        if oldScannedTransmog ~= #transmog then
-            print("WoWthing_Collector: found", #transmog, "transmog appearances")
-            oldScannedTransmog = #transmog
+        transmogScanQueue = {}
+        for categoryID, _ in pairs(transmogSlots) do
+            table.insert(transmogScanQueue, categoryID)
         end
 
+        wwtc:ScanTransmogQueue()
+    end)
+end
+
+function wwtc:ScanTransmogQueue()
+    local categoryID = tremove(transmogScanQueue)
+
+    local appearances = C_TransmogCollection_GetCategoryAppearances(categoryID, transmogLocation)
+    for _, appearance in pairs(appearances) do
+        if appearance.isCollected then
+            local visualId = appearance.visualID
+            transmogTemp[visualId] = true
+
+            local sources = C_TransmogCollection_GetAppearanceSources(visualId, categoryID, transmogLocation)
+            for _, source in ipairs(sources) do
+                if source.isCollected then
+                    local sourceKey = string.format("%d_%d", source.itemID, source.itemModID)
+                    WWTCSaved.transmogSourcesV2[sourceKey] = true
+                end
+            end
+        end
+    end
+
+    -- Still categories to scan, schedule next
+    if #transmogScanQueue > 0 then
+        C_Timer.After(0, function() wwtc:ScanTransmogQueue() end)
+    -- All done
+    else
         local keys = {}
-        for key in pairs(transmog) do
+        for key in pairs(transmogTemp) do
             keys[#keys + 1] = key
         end
 
@@ -1302,14 +1406,15 @@ function wwtc:ScanTransmog()
 
         -- Reset settings
         if transmogOpen == false then
-            C_TransmogCollection.SetCollectedShown(showCollected)
-            C_TransmogCollection.SetUncollectedShown(showUncollected)
+            C_TransmogCollection.SetCollectedShown(transmogSettings.showCollected)
+            C_TransmogCollection.SetUncollectedShown(transmogSettings.showUncollected)
             for index = 1, 6 do
-                C_TransmogCollection.SetSourceTypeFilter(index, sourceTypes[index])
+                C_TransmogCollection.SetSourceTypeFilter(index, transmogSettings.sourceTypes[index])
             end
         end
 
-    end)
+        scanningTransmog = false
+    end
 end
 
 -- Scan dirtyVault
@@ -1520,8 +1625,8 @@ function wwtc:ScanReputations()
             local currentValue, threshold, _, hasRewardPending = C_Reputation.GetFactionParagonInfo(factionID)
             -- value:max:hasReward
             charData.paragons[factionID] = table.concat({
-                currentValue,
-                threshold,
+                currentValue or 0,
+                threshold or 0,
                 hasRewardPending and 1 or 0,
             }, ':')
         end
@@ -1573,7 +1678,56 @@ end
 function wwtc:ScanGarrisons()
     if charData == nil then return end
 
-    charData.scanTimes["garrisons"] = time()
+    for _, garrisonData in ipairs(ns.garrisons) do
+        if C_Garrison.IsPlayerInGarrison(garrisonData.type) then
+            wwtc:ScanGarrison(garrisonData)
+            break
+        end
+    end
+end
+
+function wwtc:ScanGarrison(garrisonData)
+    local garrison
+    for _, charGarrison in ipairs(charData.garrisons) do
+        if charGarrison.type == garrisonData.type then
+            garrison = charGarrison
+            break
+        end
+    end
+
+    if garrison == nil then
+        garrison = {
+            type = garrisonData.type
+        }
+        charData.garrisons[#charData.garrisons + 1] = garrison
+    end
+
+    garrison.scannedAt = time()
+
+    local level, _ = C_Garrison.GetGarrisonInfo(garrisonData.type)
+    garrison.level = level
+
+    garrison.buildings = {}
+    local buildings = C_Garrison.GetBuildings(garrisonData.type) or {}
+
+    for _, building in ipairs(buildings) do
+        -- id, name, textureKit, icon, description, rank, currencyID, currencyQty, goldQty,
+        -- buildTime, needsPlan, isPrebuilt, possSpecs, upgrades, canUpgrade, isMaxLevel, hasFollowerSlot
+        local _, name, _, _, _, rank = C_Garrison.GetBuildingInfo(building.buildingID)
+
+        tinsert(garrison.buildings, {
+            buildingId = building.buildingID,
+            plotId = building.plotID,
+            name = name,
+            rank = rank,
+        })
+    end
+end
+
+function wwtc:ScanGarrisonTrees()
+    if charData == nil then return end
+
+    charData.scanTimes["garrisonTrees"] = time()
     charData.garrisonTrees = {}
 
     for _, treeId in ipairs(ns.garrisonTrees) do
@@ -1645,7 +1799,13 @@ end
 -- Util functions
 -------------------------------------------------------------------------------
 -- Parse an item link and return useful information
+local parseItemLinkCache = {}
 function wwtc:ParseItemLink(link, count)
+    local cached = parseItemLinkCache[link]
+    if cached ~= nil then
+        return table.concat({ count, cached }, ':')
+    end
+
     local parts = { strsplit(":", link) }
 
     if string.find(parts[1], '\|Hbattlepet') then
@@ -1705,8 +1865,7 @@ function wwtc:ParseItemLink(link, count)
     item.quality = C_Item.GetItemQualityByID(link)
 
     -- count:id:context:enchant:ilvl:quality:suffix:bonusIDs:gems
-    return table.concat({
-        item.count,
+    local ret = table.concat({
         item.itemID,
         item.context or 0,
         item.enchantID or 0,
@@ -1717,7 +1876,9 @@ function wwtc:ParseItemLink(link, count)
         table.concat(item.gems, ','),
     }, ':')
 
-    --return item
+    parseItemLinkCache[link] = ret
+
+    return table.concat({ count, ret }, ':')
 end
 
 -- Returns the daily quest reset time in the local timezone

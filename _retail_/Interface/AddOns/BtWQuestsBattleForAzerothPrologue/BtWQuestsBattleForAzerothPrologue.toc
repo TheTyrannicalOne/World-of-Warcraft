@@ -1,6 +1,6 @@
-## Interface: 90205
+## Interface: 90207
 ## Title: BtWQuests: Battle for Azeroth Prologue
-## Version: 15.5
+## Version: 15.6
 ## Notes: Battle for Azeroth Prologue quest data for BtWQuests
 ## Author: Breen
 ## Dependencies: BtWQuests

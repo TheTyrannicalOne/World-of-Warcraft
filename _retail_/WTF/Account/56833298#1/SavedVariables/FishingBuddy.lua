@@ -132,7 +132,7 @@ FishingBuddy_Info = {
 		[198] = "Nordrassil",
 		[619] = "Margoss's Retreat",
 		[126] = "Cantrips & Crows",
-		[76] = "The Ruined Reaches",
+		[107] = "Nagrand",
 		[42] = "Karazhan",
 		[1462] = "Broken Point",
 		[1525] = "The Endmire",
@@ -150,8 +150,8 @@ FishingBuddy_Info = {
 		[1161] = "Proudmoore Keep",
 		[630] = "El'dranil Shallows",
 		[241] = "Loch Verrall",
-		[107] = "Nagrand",
 		[210] = "Southern Savage Coast",
+		[76] = "The Ruined Reaches",
 	},
 	["FishingHoles"] = {
 		[76002] = {
@@ -253,10 +253,10 @@ FishingBuddy_Info = {
 			[9779] = 1,
 		},
 		[534001] = {
-			[127991] = 8,
-			[127759] = 1,
-			[118391] = 1,
 			[127994] = 3,
+			[127759] = 1,
+			[127991] = 8,
+			[118391] = 1,
 		},
 		[1462001] = {
 			[168262] = 87,

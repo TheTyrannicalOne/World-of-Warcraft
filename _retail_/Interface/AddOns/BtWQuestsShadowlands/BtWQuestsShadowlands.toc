@@ -1,6 +1,6 @@
-## Interface: 90205
+## Interface: 90207
 ## Title: BtWQuests: Shadowlands
-## Version: 6.2
+## Version: 6.3
 ## Notes: Shadowlands quest data for BtWQuests
 ## Author: Breen
 ## Dependencies: BtWQuests
@@ -12,6 +12,9 @@
 ## X-BtWQuests-Expansion-Movie-ID: 936
 ## X-BtWQuests-AutoLoad: 1
 ## X-Part-Of: BtWQuests
+## X-Curse-Project-ID: 370493
+## X-WoWI-ID: 25655
+## X-Wago-ID: ME6gQOG1
 
 Defines.lua
 

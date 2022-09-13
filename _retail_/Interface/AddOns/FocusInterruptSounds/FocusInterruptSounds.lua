@@ -118,8 +118,22 @@ local DEFAULT_PVE_PURGE =
 335141; NW Dark Shroud
 341902; ToP Unholy Fervor
 344739; DoS Spectral
-355980; TSoW Refraction Shield
-355934; TSoW Hard Light Barrier
+355980; T:SoW Refraction Shield
+355934; T:SoW Hard Light Barrier
+349933; T:SoW Flagellation Protocol
+347775; T:SoW Spam Filter
+357284; T:GMBT Reinvigorate
+300514; M:JY Stoneskin
+301629; M:JY Enlarge
+299588; M:JY Overclock
+303941; M:JY Defensive Countermeasure
+293930; M:WKSP Overclock
+297133; M:WKSP Defensive Countermeasure
+164426; ID Reckless Provocation
+166335; GRD Storm Shield
+227987; KZN:L Dinner Bell
+228280; KZN:L Oath of Fealty
+228225; KZN:L Sultry Heat
 ]];
 
 ------------------------------

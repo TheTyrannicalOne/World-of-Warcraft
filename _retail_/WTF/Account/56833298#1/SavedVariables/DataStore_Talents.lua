@@ -18,7 +18,7 @@ DataStore_TalentsDB = {
 		["Characters"] = {
 			["Default.Dalaran.Avisar"] = {
 				["activeSpecRole"] = "DAMAGER",
-				["lastUpdate"] = 1658018227,
+				["lastUpdate"] = 1662280074,
 				["Specializations"] = {
 					[3] = 9562,
 				},
@@ -86,7 +86,7 @@ DataStore_TalentsDB = {
 					[1216] = "0|0|0|-1|Complete the campaign to unlock Korayn",
 					[832] = "0|0|0|2|",
 					[1215] = "0|0|0|2|Complete the campaign to unlock Korayn",
-					[1843] = "0|0|0|1|",
+					[835] = "0|0|0|0|Continue the campaign to unlock Dreamweaver",
 					[837] = "0|0|0|-1|Continue the campaign to unlock Dreamweaver",
 					[1010] = "3|178|1|0|",
 					[1848] = "0|0|0|-1|",
@@ -95,7 +95,7 @@ DataStore_TalentsDB = {
 					[829] = "0|0|0|2|",
 					[831] = "0|0|0|0|",
 					[1839] = "3|0|0|-1|",
-					[1213] = "0|0|0|2|",
+					[1843] = "0|0|0|1|",
 					[1847] = "0|0|0|0|",
 					[1851] = "0|0|0|-1|",
 					[1210] = "0|0|0|0|Complete the campaign to unlock Korayn",
@@ -114,7 +114,7 @@ DataStore_TalentsDB = {
 					[1844] = "0|0|0|-1|",
 					[995] = "3|170|1|2|",
 					[1852] = "0|0|0|2|",
-					[835] = "0|0|0|0|Continue the campaign to unlock Dreamweaver",
+					[1213] = "0|0|0|2|",
 					[1204] = "0|0|0|-1|Complete the campaign to unlock Korayn",
 					[1845] = "0|0|0|-1|",
 					[864] = "3|0|0|-1|",
@@ -178,15 +178,15 @@ DataStore_TalentsDB = {
 					[1831] = "0|0|0|1|",
 					[1835] = "0|0|0|0|",
 					[1374] = "0|0|0|2|Continue the campaign to unlock Kleia",
+					[1371] = "0|0|0|-1|",
 					[1812] = "0|0|0|-1|",
-					[1308] = "0|0|0|-1|",
 					[1410] = "0|0|0|-1|",
 					[1414] = "0|0|0|2|",
 					[1418] = "0|0|0|-1|Complete the campaign to unlock Forgelite Prime Mikanikos",
 					[1375] = "0|0|0|2|",
 					[1379] = "0|0|0|0|Complete the campaign to unlock Forgelite Prime Mikanikos",
 					[1367] = "0|0|0|-1|Continue the campaign to unlock Kleia",
-					[1371] = "0|0|0|-1|",
+					[1308] = "0|0|0|-1|",
 					[1816] = "0|0|0|-1|",
 					[1316] = "3|0|0|-1|",
 					[1765] = "3|141|1|2|",
@@ -210,7 +210,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Black Dragonflight.Durlok"] = {
 				["activeSpecRole"] = "TANK",
-				["lastUpdate"] = 1658018101,
+				["lastUpdate"] = 1662240309,
 				["Specializations"] = {
 					[3] = 5631,
 				},
@@ -250,7 +250,7 @@ DataStore_TalentsDB = {
 			},
 			["Default.Zul'jin.Zulbathal"] = {
 				["activeSpecRole"] = "DAMAGER",
-				["lastUpdate"] = 1658018480,
+				["lastUpdate"] = 1662280190,
 				["Specializations"] = {
 					9709, -- [1]
 				},
@@ -297,7 +297,7 @@ DataStore_TalentsDB = {
 					[52] = "1|181735|213|6|Fury",
 				},
 				["activeSpecRole"] = "DAMAGER",
-				["lastUpdate"] = 1659888290,
+				["lastUpdate"] = 1662280295,
 				["Specializations"] = {
 					5851, -- [1]
 				},
@@ -468,7 +468,7 @@ DataStore_TalentsRefDB = {
 					},
 				}, -- [3]
 			},
-			["Version"] = 44908,
+			["Version"] = 45114,
 		},
 		["PALADIN"] = {
 			["Locale"] = "enUS",
@@ -546,7 +546,7 @@ DataStore_TalentsRefDB = {
 					},
 				}, -- [3]
 			},
-			["Version"] = 44325,
+			["Version"] = 45114,
 		},
 		["SHAMAN"] = {
 			["Locale"] = "enUS",
@@ -686,7 +686,7 @@ DataStore_TalentsRefDB = {
 					["id"] = 105,
 				}, -- [4]
 			},
-			["Version"] = 44325,
+			["Version"] = 45114,
 		},
 		["DEMONHUNTER"] = {
 			["Locale"] = "enUS",

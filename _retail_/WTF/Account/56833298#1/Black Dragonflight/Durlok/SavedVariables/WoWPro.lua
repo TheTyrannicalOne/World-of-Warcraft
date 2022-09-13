@@ -5,21 +5,22 @@ WoWProCharDB = {
 	["AutoHideInsideInstances"] = true,
 	["EnableGrailCheckPrereq"] = false,
 	["QID2Guide"] = {
-		[47835] = "Ludo_Argus",
 		[9407] = "JamHel6063",
-		[28705] = "JamHel6063",
 		[47221] = "Ludo_Argus",
+		[28705] = "JamHel6063",
+		[47835] = "Ludo_Argus",
 	},
 	["Trades"] = {
 	},
 	["EnablePetBattles"] = true,
-	["completedQIDs"] = {
+	["EnableFlight"] = true,
+	["Rank"] = {
 	},
-	["EnableRares"] = true,
 	["EnableGrailQuestName"] = false,
 	["EnableGrailBreadcrumbs"] = false,
 	["Enabled"] = true,
-	["DebugLevel"] = 0,
+	["GuideStack"] = {
+	},
 	["Tradeskills"] = {
 		[2485] = {
 			["skillLvl"] = 1,
@@ -41,9 +42,9 @@ WoWProCharDB = {
 		},
 		[2592] = {
 			["skillLvl"] = 1,
-			["name"] = "Fishing",
-			["skillMod"] = 0,
 			["skillMax"] = 300,
+			["skillMod"] = 0,
+			["name"] = "Fishing",
 		},
 		[2556] = {
 			["skillLvl"] = 22,
@@ -57,11 +58,11 @@ WoWProCharDB = {
 			["name"] = "Battle for Azeroth Herbalism",
 			["skillMax"] = 175,
 		},
-		[185] = {
+		[794] = {
 			["skillLvl"] = 1,
 			["skillMod"] = 0,
-			["name"] = "Cooking",
-			["skillMax"] = 175,
+			["name"] = "Archaeology",
+			["skillMax"] = 950,
 		},
 		[182] = {
 			["skillLvl"] = 67,
@@ -75,11 +76,11 @@ WoWProCharDB = {
 			["name"] = "Fishing",
 			["skillMax"] = 300,
 		},
-		[794] = {
+		[185] = {
 			["skillLvl"] = 1,
 			["skillMod"] = 0,
-			["name"] = "Archaeology",
-			["skillMax"] = 950,
+			["name"] = "Cooking",
+			["skillMax"] = 175,
 		},
 	},
 	["GuideVersion"] = {
@@ -89,16 +90,15 @@ WoWProCharDB = {
 	["BuildingLocations"] = {
 	},
 	["EnableTreasures"] = true,
-	["EnableFlight"] = true,
+	["completedQIDs"] = {
+	},
 	["AutoHideInsideInstancesNotify"] = true,
 	["AutoHideInCombat"] = false,
 	["Guide"] = {
 	},
-	["GuideStack"] = {
-	},
+	["DebugLevel"] = 0,
 	["EnableGrailQuestObsolete"] = false,
 	["skippedQIDs"] = {
 	},
-	["Rank"] = {
-	},
+	["EnableRares"] = true,
 }

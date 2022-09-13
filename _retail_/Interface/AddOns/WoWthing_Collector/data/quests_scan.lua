@@ -37,6 +37,7 @@ ns.scanQuests = {
     65585, -- Iska, Outrider of Ruin
     65587, -- Reanimatrox Marzan
     65143, -- Antros
+    66619, -- Antros
     65520, -- Architect's Reserve
     65573, -- Bushel of Progenitor Produce
     64667, -- Damaged Jiro Stash
@@ -125,6 +126,7 @@ ns.scanQuests = {
     61568, -- Yero the Skittish
     64152, -- Ylva, Mate of Guarm
     64531, -- Mor'geth
+    66618, -- Mor'geth
     64256, -- Helsworn Chest
     64000, -- Infused Etherwyrm
     64008, -- Lil'Abom
@@ -134,11 +136,6 @@ ns.scanQuests = {
     64013, -- Lil'Abom
     63433, -- Hunt: Shadehounds
     63854, -- Tormentors of Torghast
-    -- Zone Maps: :covenant-kyrian: Elysian Hold
-    -- Zone Maps: :covenant-night-fae: Heart of the Forest
-    -- Zone Maps: :covenant-necrolord: Seat of the Primus
-    -- Zone Maps: :covenant-venthyr: Sinfall [Upper]
-    -- Zone Maps: :covenant-venthyr: Sinfall [Lower]
     -- Zone Maps: Ardenweald
     59226, -- Deathbinder Hroth
     59201, -- Deifir the Untamed
@@ -163,6 +160,7 @@ ns.scanQuests = {
     59140, -- Macabre
     61633, -- Star Lake: Argus
     61815, -- Oranomonos the Everbranching
+    66616, -- Oranomonos the Everbranching
     61072, -- Aerto's Body
     61074, -- Cache of the Moon
     61110, -- Cache of the Night
@@ -177,6 +175,7 @@ ns.scanQuests = {
     62187, -- Lost Satchel
     62186, -- Swollen Anima Seed
     61192, -- Tame Gladerunner
+    -- Zone Maps: :covenant-night-fae: Heart of the Forest
     -- Zone Maps: Bastion
     60977, -- The Ascended Council
     61083, -- Aspirant Eolis
@@ -202,6 +201,7 @@ ns.scanQuests = {
     61046, -- Swelling Tear
     61047, -- Swelling Tear
     61813, -- Valinor, the Light of Eons
+    66614, -- Valinor, the Light of Eons
     61052, -- Experimental Construct Part
     60892, -- Gift of Chyrus
     60894, -- Gift of Thenios
@@ -211,6 +211,7 @@ ns.scanQuests = {
     58298, -- Scroll of Aeons
     61044, -- Stolen Equipment
     61183, -- Vesper of the Silver Wind
+    -- Zone Maps: :covenant-kyrian: Elysian Hold
     -- Zone Maps: Maldraxxus
     58870, -- Bubbleblood
     58005, -- Collector Kash
@@ -237,6 +238,7 @@ ns.scanQuests = {
     59290, -- Zargox the Reborn
     62786, -- Theater of Pain
     61816, -- Mortanis
+    66617, -- Mortanis
     60368, -- Blackhound Cache
     62602, -- Giant Cache of Epic Treasure
     61470, -- Necro Tome
@@ -253,6 +255,7 @@ ns.scanQuests = {
     61724, -- Pool of Mixed Monstrosities
     61719, -- Pool of Mixed Monstrosities
     61723, -- Pool of Mixed Monstrosities
+    -- Zone Maps: :covenant-necrolord: Seat of the Primus
     -- Zone Maps: Revendreth
     59854, -- Amalgamation of Filth
     59584, -- Amalgamation of Light
@@ -289,6 +292,8 @@ ns.scanQuests = {
     62199, -- Taskmaster's Trove
     62063, -- The Count
     62164, -- Vrytha's Dredglaive
+    -- Zone Maps: :covenant-venthyr: Sinfall [Upper]
+    -- Zone Maps: :covenant-venthyr: Sinfall [Lower]
     -- Zone Maps: Oribos
     -- Zone Maps: Battle for Azeroth
     -- Zone Maps: Uldum
@@ -491,7 +496,6 @@ ns.scanQuests = {
     54895, -- Ivus the Decayed / Ivus the Forest Lord
     54896, -- Ivus the Decayed / Ivus the Forest Lord
     -- Zone Maps: Boralus
-    53720, -- Allegiance of Kul Tiras
     -- Zone Maps: Drustvar
     51470, -- Arclight
     51383, -- Arvon the Betrayed
@@ -588,7 +592,6 @@ ns.scanQuests = {
     50073, -- Twin-hearted Construct
     52163, -- Azurethos
     -- Zone Maps: Dazar'alor
-    53719, -- Allegiance of the Zandalari
     -- Zone Maps: Nazmir
     50563, -- Azerite-Infused Slag
     48439, -- Bajiatha
@@ -709,7 +712,6 @@ ns.scanQuests = {
     48628, -- Talestra the Vile
     48664, -- Tereck the Selector
     -- Zone Maps: Vindicaar, The
-    49015, -- Antorus, the Burning Throne: The Death of a Titan
     -- Zone Maps: Broken Shore, The
     -- Zone Maps: Azsuna
     42505, -- Arcanist Shal'iman
@@ -737,9 +739,6 @@ ns.scanQuests = {
     42280, -- Vorthax
     37909, -- Warbringer Mox'na
     43193, -- Calamir
-    37736, -- Dressing With Class
-    37959, -- The Hunter Returns
-    38237, -- This IS In My Contract
     -- Zone Maps: Highmountain
     39784, -- Beastmaster Pao'lek
     40405, -- Bristlemaul
@@ -901,7 +900,6 @@ ns.scanQuests = {
     34361, -- The Bone Crawler
     37384, -- Tor'goroth
     34559, -- Yaga the Scarred
-    36380, -- Diamonds Are Forever
     -- Zone Maps: Gorgrond
     37371, -- Alkali
     35335, -- Bashiok
@@ -1021,8 +1019,6 @@ ns.scanQuests = {
     35334, -- Varasha
     37359, -- Voidreaver Urnae
     37464, -- Rukhmar
-    37287, -- Cleaning House
-    37292, -- Not in Your Army
     -- Zone Maps: Talador
     37338, -- Avatar of Socrethar
     37339, -- Bombardier Gu'gok
@@ -1063,38 +1059,20 @@ ns.scanQuests = {
     32519, -- Oondasta
     -- Zone Maps: Isle of Thunder
     32518, -- Nalak
-    32599, -- Securing A Future
-    32589, -- Life Blood
     -- Zone Maps: Timeless Isle
     33210, -- Blazing Chest
     -- Zone Maps: Dread Wastes
-    31083, -- Promises of Gold
     -- Zone Maps: Jade Forest, The
     31307, -- Jade Warrior Statue
     -- Zone Maps: Krasarang Wilds
-    30675, -- Buried Hozen Treasure
-    30169, -- Raid Leader Slovan
-    30090, -- Zhu's Despair
     31410, -- Equipment Locker
     -- Zone Maps: Kun-Lai Summit
     32099, -- Sha of Anger
-    30599, -- A Monkey Idol
-    30991, -- Do a Barrel Roll!
-    30682, -- Holed Up
-    30617, -- Roadside Assistance
     31412, -- Sprite's Cloth Chest
     -- Zone Maps: Townlong Steppes
-    31032, -- Choking the Skies
-    30783, -- Hatred Becomes Us
-    30930, -- Pick a Yak
-    32681, -- The Storm Gathers
-    32680, -- The Storm Gathers
     -- Zone Maps: Vale of Eternal Blossoms
     -- Zone Maps: Valley of the Four Winds
     32098, -- Galleon
-    29944, -- Leaders Among Breeders
-    29910, -- Rampaging Rodents
-    29945, -- Yellow and Red Make Orange
     -- Zone Maps: Veiled Stair, The
     -- Zone Maps: Cataclsym
     -- Zone Maps: Motlen Front, The
@@ -1121,11 +1099,9 @@ ns.scanQuests = {
     -- Zone Maps: The Burning Crusade
     -- Zone Maps: Isle of Quel'Danas
     -- Zone Maps: Blade's Edge Mountains
-    10675, -- Show Them Gnome Mercy!
     -- Zone Maps: Hellfire Peninsula
     -- Zone Maps: Nagrand
     -- Zone Maps: Netherstorm
-    10249, -- Back to the Chief!
     -- Zone Maps: Shadowmoon Valley
     -- Zone Maps: Terokkar Forest
     -- Zone Maps: Zangarmarsh
@@ -1139,29 +1115,5 @@ ns.scanQuests = {
     -- Zone Maps: Miscellaneous
     -- Zone Maps: Darkmoon Island
     47767, -- Blight Boar Concert
-    36471, -- A New Darkmoon Challenger!
-    32175, -- Darkmoon Pet Battle!
-    64783, -- Dance Dance Darkmoon
-    36481, -- Firebird's Challenge
-    29438, -- He Shoots, He Scores!
-    28463, -- It's Hammer Time
-    29436, -- The Humanoid Cannonball
-    29455, -- Target: Turtle
-    29434, -- Tonk Commander
-    37910, -- The Real Race: Powermonger
-    37911, -- The Real Big Race: Powermonger
     -- Zone Maps: Exile's Reach
-    55988, -- Like Ogres to the Slaughter
-    59979, -- Like Ogres to the Slaughter
-    55992, -- Dungeon: Darkmaul Citadel
-    59984, -- Dungeon: Darkmaul Citadel
-    55991, -- An End to Beginngs
-    59985, -- An End to Beginngs
-    55881, -- Purge the Totems
-    59946, -- Purge the Totems
-    55882, -- Message to Base
-    59947, -- Message to Base
-    56839, -- Killclaw the Terrible
-    55639, -- Who Lurks in the Pit
-    59949, -- Who Lurks in the Pit
 }

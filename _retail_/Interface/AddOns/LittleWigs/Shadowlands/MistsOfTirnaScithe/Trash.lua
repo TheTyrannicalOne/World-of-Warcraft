@@ -227,7 +227,7 @@ function mod:SoulSplitApplied(args)
 	-- Some mobs fight each other before being engaged by players.
 	-- Only show messages when the target is a player controlled unit.
 	if self:Dispeller("magic", nil, args.spellId) and self:Player(args.destFlags) then
-		self:StackMessage(args.spellId, args.destName, args.amount, "yellow")
+		self:StackMessageOld(args.spellId, args.destName, args.amount, "yellow")
 		self:PlaySound(args.spellId, "info", nil, args.destName)
 	end
 end
@@ -325,8 +325,8 @@ do
 	function mod:PoisonousDischargeApplied(args)
 		if self:Dispeller("poison", nil, 340279) then
 			playerList[#playerList+1] = args.destName
-			self:TargetsMessage(340279, "yellow", playerList)
 			self:PlaySound(340279, "info", nil, playerList)
+			self:TargetsMessageOld(340279, "yellow", playerList)
 		end
 	end
 end

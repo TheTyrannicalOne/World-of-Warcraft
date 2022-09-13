@@ -5,7 +5,7 @@
 --
 -- Author: Expelliarm5s / August 2022 / All Rights Reserved
 --
--- Version 1.1.25
+-- Version 1.1.26
 ------------------------------------------------------------------------------
 -- luacheck: ignore 212 globals DLAPI
 -- luacheck: globals Rematch RematchSettings

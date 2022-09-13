@@ -46,18 +46,18 @@ OmniCCDB = {
 	},
 	["global"] = {
 		["dbVersion"] = 6,
-		["addonVersion"] = "9.2.0",
+		["addonVersion"] = "9.2.1",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["themes"] = {
 				["Default"] = {
 					["textStyles"] = {
+						["minutes"] = {
+						},
 						["soon"] = {
 						},
 						["seconds"] = {
-						},
-						["minutes"] = {
 						},
 					},
 					["enableText"] = false,

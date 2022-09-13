@@ -199,7 +199,6 @@
 
 			<!-- Toolbar Buttons: Heal,Bandage,PetTreat,LesserPetTreat,SafariHat,SummonRandom,Save,SaveAs,FindBattle -->
 			<Button parentArray="Buttons" parentKey="Heal" name="RematchHealButton" inherits="RematchToolbarButtonTemplate">
-				<Attribute name="spell" value="125439"/>
 				<Attributes>
 					<Attribute name="type" value="spell"/>
 					<Attribute name="spell" value="125439"/>

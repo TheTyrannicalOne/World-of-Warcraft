@@ -1,3 +1,77 @@
+v9.2.7.12
+---------
+- Fix achievement scanning error, maybe for real this time.
+- Fix bounty scanning error.
+
+v9.2.7.11
+---------
+- Fix achievement scanning error.
+- Fix reputation scanning error (#8).
+
+v9.2.7.10
+---------
+- Added honor level scanning.
+- Added more hidden Legion artifact tracking achievement scanning.
+- Added an override for achievement criteria count.
+
+v9.2.7.9
+--------
+- Added Legion - Withered Army Training to quest scanning.
+- Added Shadowlands - Maw Assault to quest scanning.
+- Added Shadowlands - Tormentors of Torghast to quest scanning.
+- Added support for World Quest reset times to quest scanning.
+
+v9.2.7.8
+--------
+- Fixed garrison/garrison tree scanning error.
+
+v9.2.7.7
+--------
+- Added basic garrison scanning (garrison level, building levels).
+- Added Something Different (weekly PvP brawl) to quest scanning.
+- Added Trap Superstar (WoD garrison barn trapping) to achievement scanning.
+
+v9.2.7.6
+--------
+- Reworked item and transmog scanning to do some work per frame, hopefully reducing
+  jank.
+- Changed item scanning to wait for all bag updates to be complete before starting.
+- Disabled Blizzard_Collections addon hooking as it shouldn't be needed any more.
+- Disabled mount/pet scanning, they trigger constantly and aren't needed right now.
+
+v9.2.7.5
+--------
+- Added A New Deal reward tracking quests to quest scanning.
+
+v9.2.7.4
+--------
+- Added Dinar quests to quest scanning.
+- Added Fated raid world quests to quest scanning.
+
+v9.2.7.3
+--------
+- Fixed quest scanning when quests have no obectives.
+
+v9.2.7.2
+--------
+- Added Legion Timewalking weekly quest to quest scanning.
+- Added Timewalking turn-in quests to quest scanning.
+
+v9.2.7.1
+--------
+- Added other Fated world bosses to quest scanning and world boss lists.
+- Added caching for item link parsing, seems to reduce bag jank.
+- Updated TOC for 9.2.7.
+
+v9.2.5.18
+---------
+- Added A New Deal to quest scanning.
+- Updated quest scanning list.
+
+v9.2.5.17
+---------
+- Added Fated Mor'geth to quest scanning and world boss lists.
+
 v9.2.5.16
 ---------
 - Changed how M+ scanning stores data, again.

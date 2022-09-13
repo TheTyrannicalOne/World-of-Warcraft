@@ -1695,7 +1695,6 @@ function NarciOutfitShowcaseMixin:Init()
 
     --Backdrop Tab
     CreateBackgroundOptions(self.ControlPanel.BackgroundTab);
-    CreateBackgroundOptions = nil;
 
     --Load User Settings
     LoadSettings();
@@ -2753,3 +2752,6 @@ function NarciShowcaseLoopToggleMixin:UpdateVisual()
         self.Icon:SetTexCoord(0, 0.5, 0, 1);
     end
 end
+
+
+--/script local m=MountJournal.MountDisplay.ModelScene:GetActorByTag("unwrapped");if m then m:SetAnimation(97) end;

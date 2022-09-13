@@ -15,9 +15,21 @@ L["Dropdown.RegionPoint.TOPRIGHT.Desc"] = "右上 - 方形的右上角"
 L["Dropdown.Texture.arrow_tip_green.Desc"] = "綠色 3D 箭頭"
 L["Dropdown.Texture.arrow_tip_red.Desc"] = "紅色 3D 箭頭"
 --[[Translation missing --]]
-L["Dropdown.Texture.Arrows_Away.Desc"] = "Arrows Away Nameplate"
+L["Dropdown.Texture.Arrows_Away.Desc"] = "Red Arrows Away From Nameplate"
 --[[Translation missing --]]
-L["Dropdown.Texture.Arrows_Towards.Desc"] = "Arrows Towards Nameplate"
+L["Dropdown.Texture.Arrows_FocusAway.Desc"] = "Yellow Arrows Away From Nameplate"
+--[[Translation missing --]]
+L["Dropdown.Texture.Arrows_FocusTowards.Desc"] = "Yellow Arrows Towards Nameplate"
+--[[Translation missing --]]
+L["Dropdown.Texture.Arrows_FriendAway.Desc"] = "Green Arrows Away From Nameplate"
+--[[Translation missing --]]
+L["Dropdown.Texture.Arrows_FriendTowards.Desc"] = "Green Arrows Towards Nameplate"
+--[[Translation missing --]]
+L["Dropdown.Texture.Arrows_SelfAway.Desc"] = "Blue Arrows Away From Nameplate"
+--[[Translation missing --]]
+L["Dropdown.Texture.Arrows_SelfTowards.Desc"] = "Blue Arrows Towards Nameplate"
+--[[Translation missing --]]
+L["Dropdown.Texture.Arrows_Towards.Desc"] = "Red Arrows Towards Nameplate"
 L["Dropdown.Texture.BlueArrow.Desc"] = "藍色向下箭頭"
 L["Dropdown.Texture.bluearrow1.Desc"] = "抽象藍色向下箭頭"
 L["Dropdown.Texture.circles_target.Desc"] = "紅色同心圓標靶"

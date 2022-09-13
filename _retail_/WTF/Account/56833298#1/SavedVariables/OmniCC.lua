@@ -2,7 +2,7 @@
 OmniCCDB = {
 	["global"] = {
 		["dbVersion"] = 6,
-		["addonVersion"] = "9.2.0",
+		["addonVersion"] = "9.2.1",
 	},
 	["profileKeys"] = {
 		["Vancard - Zul'jin"] = "Default",
@@ -53,11 +53,11 @@ OmniCCDB = {
 			["themes"] = {
 				["Default"] = {
 					["textStyles"] = {
-						["seconds"] = {
-						},
 						["soon"] = {
 						},
 						["minutes"] = {
+						},
+						["seconds"] = {
 						},
 					},
 					["enableText"] = false,

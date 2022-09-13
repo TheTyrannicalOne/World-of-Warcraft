@@ -39,6 +39,8 @@ local continentToXpac = {
     [905] = _G.LE_EXPANSION_LEGION, -- Argus
     [875] = _G.LE_EXPANSION_BATTLE_FOR_AZEROTH, -- Zuldazar
     [876] = _G.LE_EXPANSION_BATTLE_FOR_AZEROTH, -- Kul Tiras
+    [1414] = _G.LE_EXPANSION_CLASSIC, -- Kalimdor
+    [1415] = _G.LE_EXPANSION_CLASSIC, -- Eastern Kingdoms
     [1550] = _G.LE_EXPANSION_SHADOWLANDS, -- The Shadowlands
 }
 
@@ -109,7 +111,7 @@ local function GetGuides()
                 level = guide.level,
 				sortlevel = guide.sortlevel
             }
-            if WoWPro.CLASSIC or WoWPro.BC then
+            if WoWPro.CLASSIC or WoWPro.BC or WoWPro.WRATH then
                 guideInfo.Content = rangeFormat:format(guide.startlevel, guide.endlevel)
             else
                 local _, mapID = WoWPro:ValidZone(guide.zone)

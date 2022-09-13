@@ -17,7 +17,7 @@ DataStore_ReputationsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.Dalaran.Avisar"] = {
-				["lastUpdate"] = 1658018227,
+				["lastUpdate"] = 1662280076,
 				["Factions"] = {
 					10099, -- [1]
 					10099, -- [2]
@@ -193,7 +193,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Black Dragonflight.Durlok"] = {
-				["lastUpdate"] = 1658018099,
+				["lastUpdate"] = 1662240309,
 				["Factions"] = {
 					[83] = 0,
 					[85] = 0,
@@ -306,7 +306,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Zul'jin.Zulbathal"] = {
-				["lastUpdate"] = 1658018480,
+				["lastUpdate"] = 1662280190,
 				["Factions"] = {
 					[122] = 40000,
 					[38] = 4230,
@@ -398,7 +398,7 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["lastUpdate"] = 1659888290,
+				["lastUpdate"] = 1662280296,
 				["Factions"] = {
 					nil, -- [1]
 					nil, -- [2]
@@ -558,7 +558,7 @@ DataStore_ReputationsDB = {
 					[164] = 46350,
 					[168] = 36792,
 					[172] = 0,
-					[176] = 1630,
+					[176] = 2880,
 					[157] = 47206,
 					[165] = 48411,
 					[169] = 44075,

@@ -43,6 +43,25 @@ if WoWPro.CLASSIC then   --  Gets Profs to work in Classic doing this, not sure 
 		[633] = { name = 'Lockpicking' },
 	}
 
+	elseif WoWPro.WRATH then
+	WoWPro.ProfessionSkillLines = {
+		[164] = { name = 'Blacksmithing' },
+		[165] = { name = 'Leatherworking' },
+		[171] = { name = 'Alchemy' },
+		[182] = { name = 'Herbalism' },
+		[186] = { name = 'Mining' },
+		[197] = { name = 'Tailoring' },
+		[202] = { name = 'Engineering' },
+		[333] = { name = 'Enchanting' },
+		[393] = { name = 'Skinning' },
+		[129] = { name = 'First Aid'},
+		[755] = { name = 'Jewelcrafting' },
+		[773] = { name = 'Inscription' },
+	  --  Not included in GetTradeSkillLineInfoByID()
+		[185] = { name = 'Cooking' },
+		[356] = { name = 'Fishing' },
+		[633] = { name = 'Lockpicking' },
+	}
 	else
 	WoWPro.ProfessionSkillLines = {
 		[164] = { name = 'Blacksmithing' },
@@ -229,8 +248,8 @@ for skill, data in pairs(WoWPro.ProfessionSkillLines) do
     end
 end
 
--- special handling for Classic because of the reduced addon API
-if WoWPro.CLASSIC or WoWPro.BC then
+-- special handling for Classics because of the reduced addon API
+if not WoWPro.RETAIL then
 
     -- list of all available professions and SpellIDs with their names
     WoWPro.ProfessionSpellIDs = {
@@ -353,7 +372,7 @@ function WoWPro.UpdateTradeSkillsTable(tradeskills)
     for trade in pairs(WoWProCharDB.Tradeskills) do
         local skillLine = WoWPro.ProfessionSkillLines[trade]
         if not skillLine then
-            WoWPro:dbp("UpdateTradeSkillsTable(): Deleted unavailable %d/%s", trade, trade.name)
+            WoWPro:dbp("UpdateTradeSkillsTable(): Deleted unavailable %d", trade)
             WoWProCharDB.Tradeskills[trade] = nil
         elseif tradeskills[trade] == nil and trade ~= 185 and skillLine.parent ~= 185 and trade ~= 356 and skillLine.parent ~= 356 then
             WoWPro:dbp("UpdateTradeSkillsTable(): Deleted unlearned %d/%s", trade, skillLine.name)
@@ -369,8 +388,8 @@ function WoWPro.UpdateTradeSkillsTable(tradeskills)
 end
 
 
--- special handling for Classic because of the reduced addon API
-if WoWPro.CLASSIC or WoWPro.BC then
+-- special handling for Classics because of the reduced addon API
+if not WoWPro.RETAIL then
     -- scan Tradeskill information and recipes on Classic
     function WoWPro.ScanTrade()
         WoWPro:dbp("ScanTrade() for Classic")

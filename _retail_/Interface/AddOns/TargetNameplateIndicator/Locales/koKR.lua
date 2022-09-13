@@ -24,9 +24,21 @@ L["Dropdown.RegionPoint.TOPRIGHT.Desc"] = "Top Right - The top right corner of t
 L["Dropdown.Texture.arrow_tip_green.Desc"] = "녹색 3D 화살표"
 L["Dropdown.Texture.arrow_tip_red.Desc"] = "빨간색 3D 화살표"
 --[[Translation missing --]]
-L["Dropdown.Texture.Arrows_Away.Desc"] = "Arrows Away Nameplate"
+L["Dropdown.Texture.Arrows_Away.Desc"] = "Red Arrows Away From Nameplate"
 --[[Translation missing --]]
-L["Dropdown.Texture.Arrows_Towards.Desc"] = "Arrows Towards Nameplate"
+L["Dropdown.Texture.Arrows_FocusAway.Desc"] = "Yellow Arrows Away From Nameplate"
+--[[Translation missing --]]
+L["Dropdown.Texture.Arrows_FocusTowards.Desc"] = "Yellow Arrows Towards Nameplate"
+--[[Translation missing --]]
+L["Dropdown.Texture.Arrows_FriendAway.Desc"] = "Green Arrows Away From Nameplate"
+--[[Translation missing --]]
+L["Dropdown.Texture.Arrows_FriendTowards.Desc"] = "Green Arrows Towards Nameplate"
+--[[Translation missing --]]
+L["Dropdown.Texture.Arrows_SelfAway.Desc"] = "Blue Arrows Away From Nameplate"
+--[[Translation missing --]]
+L["Dropdown.Texture.Arrows_SelfTowards.Desc"] = "Blue Arrows Towards Nameplate"
+--[[Translation missing --]]
+L["Dropdown.Texture.Arrows_Towards.Desc"] = "Red Arrows Towards Nameplate"
 L["Dropdown.Texture.BlueArrow.Desc"] = "아래쪽을 가리키는 파란색 화살표"
 L["Dropdown.Texture.bluearrow1.Desc"] = "아래쪽을 가리키는 추상 스타일 파란색 화살표"
 --[[Translation missing --]]

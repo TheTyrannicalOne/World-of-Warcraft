@@ -1,4 +1,4 @@
-## Interface: 90205
+## Interface: 90207
 ## Title: WeakAuras Companion
 ## Author: The WeakAuras Team
 ## Version: 1.2.0

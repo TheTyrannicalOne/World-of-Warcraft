@@ -4,9 +4,8 @@
 local addon, ns = ...
 local Hekili = _G[ addon ]
 
-local format = string.format
-local gsub = string.gsub
-local lower = string.lower
+local format, gsub, lower = string.format, string.gsub, string.lower
+local insert, remove = table.insert, table.remove
 
 local class = Hekili.Class
 local state = Hekili.State
@@ -15,9 +14,10 @@ local state = Hekili.State
 local errors = {}
 local eIndex = {}
 
-ns.Error = function( ... )
-    local output = format( ... )
-    output = output .. "\n\n" .. debugstack(3)
+ns.Error = function( output, ... )
+    if ... then
+        output = format( output, ... )
+    end
 
     if not errors[ output ] then
         errors[ output ] = {
@@ -649,4 +649,52 @@ do
         cache[ str ] = { func, warn }
         return func, warn
     end
+end
+
+
+do
+    local marked = {}
+    local supermarked = {}
+    local pool = {}
+
+    function ns.Mark( table, key )
+        local data = remove( pool ) or {}
+        data.t = table
+        data.k = key
+        insert( marked, data )
+    end
+
+    function ns.SuperMark( table, keys )
+        supermarked[ table ] = keys
+    end
+
+    function ns.AddToSuperMark( table, key )
+        local sm = supermarked[ table ]
+        if sm then
+            insert( sm, key )
+        end
+    end
+
+    function ns.ClearMarks( super )
+        if super then
+            for t, keys in pairs( supermarked ) do
+                for key in pairs( keys ) do
+                    rawset( t, key, nil )
+                end
+            end
+            return
+        end
+
+        local data = remove( marked )
+        while( data ) do
+            rawset( data.t, data.k, nil )
+            insert( pool, data )
+            data = remove( marked )
+        end
+    end
+
+    Hekili.Maintenance = {
+        Dirty = marked,
+        Cleaned = pool
+    }
 end

@@ -17,7 +17,7 @@ DataStore_PetsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.Dalaran.Avisar"] = {
-				["lastUpdate"] = 1658018229,
+				["lastUpdate"] = 1662280077,
 			},
 			["Default.Dalaran.Darnastris"] = {
 				["lastUpdate"] = 1656301022,
@@ -32,7 +32,7 @@ DataStore_PetsDB = {
 				["lastUpdate"] = 1658018867,
 			},
 			["Default.Black Dragonflight.Durlok"] = {
-				["lastUpdate"] = 1658018102,
+				["lastUpdate"] = 1662240312,
 			},
 			["Default.Dalaran.Rotclaugh"] = {
 				["lastUpdate"] = 1648343710,
@@ -44,13 +44,13 @@ DataStore_PetsDB = {
 				["lastUpdate"] = 1648345048,
 			},
 			["Default.Zul'jin.Zulbathal"] = {
-				["lastUpdate"] = 1658018481,
+				["lastUpdate"] = 1662280194,
 			},
 			["Default.Dalaran.Varlouris"] = {
 				["lastUpdate"] = 1653803714,
 			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["lastUpdate"] = 1659888302,
+				["lastUpdate"] = 1662280296,
 			},
 		},
 		["Reference"] = {
@@ -72,6 +72,7 @@ DataStore_PetsDB = {
 				[135265] = 68663,
 				[179830] = 90201,
 				[279224] = 143200,
+				[135258] = 68665,
 				[195368] = 99394,
 				[193368] = 98077,
 				[179831] = 90202,

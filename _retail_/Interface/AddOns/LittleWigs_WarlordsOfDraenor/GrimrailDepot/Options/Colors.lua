@@ -11,10 +11,13 @@ BigWigs:AddColors("Rocketspark and Borka", {
 })
 
 BigWigs:AddColors("Nitrogg Thundertower", {
+	[156357] = {"blue","green","orange"},
 	[160681] = {"blue","red"},
 	[160965] = {"blue","green","orange"},
 	[161073] = {"blue","green","yellow"},
-	[166570] = "blue",
+	[163550] = "yellow",
+	[166570] = {"blue","orange"},
+	["adds"] = "yellow",
 	["stages"] = "cyan",
 })
 
@@ -22,6 +25,20 @@ BigWigs:AddColors("Skylord Tovra", {
 	[161588] = "blue",
 	[161801] = "red",
 	[162058] = "yellow",
-	[162066] = {"blue","orange"},
+	[162066] = {"blue","orange","yellow"},
 	[163447] = {"blue","orange"},
+})
+
+BigWigs:AddColors("Grimrail Depot Trash", {
+	[156301] = "yellow",
+	[163966] = "red",
+	[164168] = "purple",
+	[164192] = "yellow",
+	[166335] = "red",
+	[166341] = "yellow",
+	[166380] = "orange",
+	[166397] = "yellow",
+	[166675] = {"blue","red"},
+	[176032] = {"blue","orange"},
+	[176127] = "orange",
 })

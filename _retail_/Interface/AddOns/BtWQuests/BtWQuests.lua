@@ -319,7 +319,7 @@ function BtWQuestsMixin:SelectExpansion(id, scrollTo, noHistory)
 
     local expansion = self:GetExpansion()
     if expansion and BtWQuestsDatabase:HasExpansion(expansion) then
-        self.ExpansionDropDown:SetText(BtWQuestsDatabase:GetExpansionByID(expansion));
+        self.ExpansionDropDown:SetText(BtWQuestsDatabase:GetExpansionByID(expansion):GetName());
     end
 
     if expansion == nil then
@@ -799,17 +799,26 @@ function BtWQuestsMixin:OnLoad()
     self:RegisterEvent("MODIFIER_STATE_CHANGED")
 
 	self.TitleText:SetText(L["BTWQUESTS_QUEST_JOURNAL"]);
-    SetPortraitToTexture(self.portrait, "Interface\\QuestFrame\\UI-QuestLog-BookIcon");
+    SetPortraitToTexture(self.portrait or self.PortraitContainer.portrait, "Interface\\QuestFrame\\UI-QuestLog-BookIcon");
 
     if self.NineSlice then
-        -- Updated the NineSlice frame for our extra buttons
-        self.NineSlice.TopLeftCorner:SetTexture("Interface\\Addons\\BtWQuests\\UI-Frame-Metal")
-        self.NineSlice.TopLeftCorner:SetWidth(196)
-        self.NineSlice.TopLeftCorner:SetTexCoord(0, 0.3828125, 0, 0.2578125)
-
-        self.NineSlice.TopRightCorner:SetTexture("Interface\\Addons\\BtWQuests\\UI-Frame-Metal")
-        self.NineSlice.TopRightCorner:SetTexCoord(0, 0.51171875, 0.2578125, 0.515625)
-        self.NineSlice.TopRightCorner:SetWidth(262)
+        if select(4, GetBuildInfo()) >= 100000 then
+            -- Temp fix for Dragonflight changes
+            self.NavBack:SetFrameLevel(510)
+            self.NavForward:SetFrameLevel(510)
+            self.NavHere:SetFrameLevel(510)
+            self.OptionsButton:SetFrameLevel(510)
+            self.CharacterDropDown:SetFrameLevel(510)
+        else
+            -- Updated the NineSlice frame for our extra buttons
+            self.NineSlice.TopLeftCorner:SetTexture("Interface\\Addons\\BtWQuests\\UI-Frame-Metal")
+            self.NineSlice.TopLeftCorner:SetWidth(196)
+            self.NineSlice.TopLeftCorner:SetTexCoord(0, 0.3828125, 0, 0.2578125)
+    
+            self.NineSlice.TopRightCorner:SetTexture("Interface\\Addons\\BtWQuests\\UI-Frame-Metal")
+            self.NineSlice.TopRightCorner:SetTexCoord(0, 0.51171875, 0.2578125, 0.515625)
+            self.NineSlice.TopRightCorner:SetWidth(262)
+        end
     end
 
     self.categoryItemPool = CreateFramePoolCollection()--CreateFramePool("BUTTON", self.Category.Scroll.Child, "BtWQuestsCategoryButtonTemplate");
@@ -913,7 +922,12 @@ function BtWQuestsMixin:OnEvent(event, ...)
             end
 
             if not BtWQuestsDatabase:HasMultipleExpansion() then
-                BtWQuestsDatabase:GetFirstExpansion():Load()
+                local expansion = BtWQuestsDatabase:GetFirstExpansion()
+                if expansion then
+                    expansion:Load()
+                else
+                    print(L["BTWQUESTS_NO_EXPANSION_ERROR"])
+                end
             end
 
             -- hooksecurefunc("QuestObjectiveTracker_OnOpenDropDown", function (self)
@@ -1014,12 +1028,8 @@ function BtWQuestsMixin:Refresh()
         self:SelectChain(self:GetChain(), nil, true)
     elseif self:GetCategory() ~= nil then
         self:SelectCategory(self:GetCategory(), nil, true)
-        -- self.navBar:SetCategory(self:GetCategory())
-        -- self:DisplayCurrentCategory(false)
     elseif self:GetExpansion() ~= nil then
         self:SelectExpansion(self:GetExpansion(), nil, true)
-        -- self.navBar:SetExpansion(self:GetExpansion())
-        -- self:DisplayCurrentExpansion(false)
     else
         self.navBar:Reset()
         self:DisplayExpansionList(false)
@@ -1040,7 +1050,12 @@ function BtWQuestsMixin:OnShow()
             if expansion then
                 self:SelectExpansion(expansion:GetID(), nil, true)
             elseif not BtWQuestsDatabase:HasMultipleExpansion() then
-                self:SelectExpansion(BtWQuestsDatabase:GetFirstExpansion():GetID(), nil, true)
+                local expansion = BtWQuestsDatabase:GetFirstExpansion()
+                if expansion then
+                    self:SelectExpansion(BtWQuestsDatabase:GetFirstExpansion():GetID(), nil, true)
+                else
+                    print(L["BTWQUESTS_NO_EXPANSION_ERROR"])
+                end
             end
         end
 

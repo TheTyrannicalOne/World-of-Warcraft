@@ -45,8 +45,8 @@ Rematch_TSMPetValuesDB = {
 		["Mandles - Zul'jin"] = "Default",
 	},
 	["global"] = {
-		["Rematch_Sorting"] = true,
 		["Rematch_PetList1"] = true,
 		["Rematch_PetList2"] = true,
+		["Rematch_Sorting"] = true,
 	},
 }

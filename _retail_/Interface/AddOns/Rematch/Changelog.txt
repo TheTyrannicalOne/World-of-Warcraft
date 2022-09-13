@@ -1,3 +1,11 @@
+09/11/2022 version 4.13.0
+- Added initial support for 10.x (Dragonflight) PTR/Beta clients.
+- PTR/Beta clients will still need to load out of date addons for this version.
+- Numerous XML issues cleared up.
+
+08/16/2022 version 4.12.1
+- toc update for 9.2.7 patch
+
 07/23/2022 version 4.12.0
 - Added Pet Card & Notes Option 'Notes Font Size' with options Small, Normal, Large to change the relative size of text in pet and team notes.
 - If a pet has notes saved, a note button will appear beside its icon/portrait the top of the default Battle UI. As with elsewhere in the addon, mouseover of the button will display the notes and clicking the button will lock the notes in place.

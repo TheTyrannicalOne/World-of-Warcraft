@@ -26,9 +26,21 @@ L["Dropdown.Texture.arrow_tip_green.Desc"] = "Green 3D arrow"
 --[[Translation missing --]]
 L["Dropdown.Texture.arrow_tip_red.Desc"] = "Red 3D arrow"
 --[[Translation missing --]]
-L["Dropdown.Texture.Arrows_Away.Desc"] = "Arrows Away Nameplate"
+L["Dropdown.Texture.Arrows_Away.Desc"] = "Red Arrows Away From Nameplate"
 --[[Translation missing --]]
-L["Dropdown.Texture.Arrows_Towards.Desc"] = "Arrows Towards Nameplate"
+L["Dropdown.Texture.Arrows_FocusAway.Desc"] = "Yellow Arrows Away From Nameplate"
+--[[Translation missing --]]
+L["Dropdown.Texture.Arrows_FocusTowards.Desc"] = "Yellow Arrows Towards Nameplate"
+--[[Translation missing --]]
+L["Dropdown.Texture.Arrows_FriendAway.Desc"] = "Green Arrows Away From Nameplate"
+--[[Translation missing --]]
+L["Dropdown.Texture.Arrows_FriendTowards.Desc"] = "Green Arrows Towards Nameplate"
+--[[Translation missing --]]
+L["Dropdown.Texture.Arrows_SelfAway.Desc"] = "Blue Arrows Away From Nameplate"
+--[[Translation missing --]]
+L["Dropdown.Texture.Arrows_SelfTowards.Desc"] = "Blue Arrows Towards Nameplate"
+--[[Translation missing --]]
+L["Dropdown.Texture.Arrows_Towards.Desc"] = "Red Arrows Towards Nameplate"
 --[[Translation missing --]]
 L["Dropdown.Texture.BlueArrow.Desc"] = "Blue arrow pointing downwards"
 --[[Translation missing --]]

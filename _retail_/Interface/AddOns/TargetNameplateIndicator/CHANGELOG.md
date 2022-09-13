@@ -1,3 +1,11 @@
+## 1.45
+- Bump TOC Interface version 9.2.7
+- Add support for WotLK Classic
+	- This is untested, please report any errors
+
+## 1.44
+- Add more textures from Inokis of Curse
+
 ## 1.43
 - Add textures from Inokis of Curse
 - Add support for Classic/BC Classic

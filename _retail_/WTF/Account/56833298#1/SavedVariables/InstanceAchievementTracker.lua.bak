@@ -3826,6 +3826,242 @@ AchievementTrackerDebug = {
 	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3807]
 	"19/7/2022 18:58 [DEBUG] Showing Minimap Icon", -- [3808]
 	"19/7/2022 18:58 [DEBUG] NPC cache generated", -- [3809]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3810]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [3811]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3812]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3813]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3814]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3815]
+	"7/8/2022 12:4 [DEBUG] Showing Minimap Icon", -- [3816]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3817]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.41.0", -- [3818]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3819]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3820]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3821]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3822]
+	"13/8/2022 20:27 [DEBUG] Showing Minimap Icon", -- [3823]
+	"13/8/2022 20:28 [DEBUG] NPC cache generated", -- [3824]
+	"13/8/2022 20:43 [DEBUG] ---IAT Runtime---", -- [3825]
+	"13/8/2022 20:43 [DEBUG] Version: 3.41.0", -- [3826]
+	"13/8/2022 20:43 [DEBUG] Attempting to load from local NPC Cache", -- [3827]
+	"13/8/2022 20:43 [DEBUG] Generating NPC Cache...", -- [3828]
+	"13/8/2022 20:43 [DEBUG] Enabling Addon", -- [3829]
+	"13/8/2022 20:43 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3830]
+	"13/8/2022 20:44 [DEBUG] Showing Minimap Icon", -- [3831]
+	"13/8/2022 20:45 [DEBUG] NPC cache generated", -- [3832]
+	"13/8/2022 20:48 [DEBUG] ---IAT Runtime---", -- [3833]
+	"13/8/2022 20:48 [DEBUG] Version: 3.41.0", -- [3834]
+	"13/8/2022 20:48 [DEBUG] Attempting to load from local NPC Cache", -- [3835]
+	"13/8/2022 20:48 [DEBUG] Generating NPC Cache...", -- [3836]
+	"13/8/2022 20:48 [DEBUG] Enabling Addon", -- [3837]
+	"13/8/2022 20:48 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3838]
+	"13/8/2022 20:50 [DEBUG] Showing Minimap Icon", -- [3839]
+	"13/8/2022 20:52 [DEBUG] NPC cache generated", -- [3840]
+	"13/8/2022 20:53 [DEBUG] ---IAT Runtime---", -- [3841]
+	"13/8/2022 20:53 [DEBUG] Version: 3.41.0", -- [3842]
+	"13/8/2022 20:53 [DEBUG] Attempting to load from local NPC Cache", -- [3843]
+	"13/8/2022 20:53 [DEBUG] Generating NPC Cache...", -- [3844]
+	"13/8/2022 20:53 [DEBUG] Enabling Addon", -- [3845]
+	"13/8/2022 20:53 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3846]
+	"13/8/2022 20:54 [DEBUG] Showing Minimap Icon", -- [3847]
+	"13/8/2022 20:55 [DEBUG] NPC cache generated", -- [3848]
+	"13/8/2022 20:55 [DEBUG] ---IAT Runtime---", -- [3849]
+	"13/8/2022 20:55 [DEBUG] Version: 3.41.0", -- [3850]
+	"13/8/2022 20:55 [DEBUG] Attempting to load from local NPC Cache", -- [3851]
+	"13/8/2022 20:55 [DEBUG] Generating NPC Cache...", -- [3852]
+	"13/8/2022 20:55 [DEBUG] Enabling Addon", -- [3853]
+	"13/8/2022 20:55 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3854]
+	"13/8/2022 20:58 [DEBUG] Showing Minimap Icon", -- [3855]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3856]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.43.0", -- [3857]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3858]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3859]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3860]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3861]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3862]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.43.0", -- [3863]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3864]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3865]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3866]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3867]
+	"27/8/2022 18:46 [DEBUG] Showing Minimap Icon", -- [3868]
+	"27/8/2022 18:47 [DEBUG] NPC cache generated", -- [3869]
+	"27/8/2022 19:18 [DEBUG] ---IAT Runtime---", -- [3870]
+	"27/8/2022 19:18 [DEBUG] Version: 3.43.0", -- [3871]
+	"27/8/2022 19:18 [DEBUG] Attempting to load from local NPC Cache", -- [3872]
+	"27/8/2022 19:18 [DEBUG] Generating NPC Cache...", -- [3873]
+	"27/8/2022 19:18 [DEBUG] Enabling Addon", -- [3874]
+	"27/8/2022 19:18 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3875]
+	"27/8/2022 19:20 [DEBUG] Showing Minimap Icon", -- [3876]
+	"27/8/2022 19:21 [DEBUG] NPC cache generated", -- [3877]
+	"27/8/2022 19:21 [DEBUG] ---IAT Runtime---", -- [3878]
+	"27/8/2022 19:21 [DEBUG] Version: 3.43.0", -- [3879]
+	"27/8/2022 19:21 [DEBUG] Attempting to load from local NPC Cache", -- [3880]
+	"27/8/2022 19:21 [DEBUG] Generating NPC Cache...", -- [3881]
+	"27/8/2022 19:21 [DEBUG] Enabling Addon", -- [3882]
+	"27/8/2022 19:21 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3883]
+	"27/8/2022 19:25 [DEBUG] Showing Minimap Icon", -- [3884]
+	"27/8/2022 19:26 [DEBUG] NPC cache generated", -- [3885]
+	"27/8/2022 20:1 [DEBUG] ---IAT Runtime---", -- [3886]
+	"27/8/2022 20:1 [DEBUG] Version: 3.43.0", -- [3887]
+	"27/8/2022 20:1 [DEBUG] Attempting to load from local NPC Cache", -- [3888]
+	"27/8/2022 20:1 [DEBUG] Generating NPC Cache...", -- [3889]
+	"27/8/2022 20:1 [DEBUG] Enabling Addon", -- [3890]
+	"27/8/2022 20:1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3891]
+	"27/8/2022 20:2 [DEBUG] Showing Minimap Icon", -- [3892]
+	"27/8/2022 20:3 [DEBUG] NPC cache generated", -- [3893]
+	"27/8/2022 20:7 [DEBUG] ---IAT Runtime---", -- [3894]
+	"27/8/2022 20:7 [DEBUG] Version: 3.43.0", -- [3895]
+	"27/8/2022 20:7 [DEBUG] Attempting to load from local NPC Cache", -- [3896]
+	"27/8/2022 20:7 [DEBUG] Generating NPC Cache...", -- [3897]
+	"27/8/2022 20:7 [DEBUG] Enabling Addon", -- [3898]
+	"27/8/2022 20:7 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3899]
+	"27/8/2022 20:9 [DEBUG] Showing Minimap Icon", -- [3900]
+	"27/8/2022 20:10 [DEBUG] NPC cache generated", -- [3901]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3902]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.43.0", -- [3903]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3904]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3905]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3906]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3907]
+	"28/8/2022 11:27 [DEBUG] Showing Minimap Icon", -- [3908]
+	"28/8/2022 11:28 [DEBUG] NPC cache generated", -- [3909]
+	"28/8/2022 11:31 [DEBUG] ---IAT Runtime---", -- [3910]
+	"28/8/2022 11:31 [DEBUG] Version: 3.43.0", -- [3911]
+	"28/8/2022 11:31 [DEBUG] Attempting to load from local NPC Cache", -- [3912]
+	"28/8/2022 11:31 [DEBUG] Generating NPC Cache...", -- [3913]
+	"28/8/2022 11:31 [DEBUG] Enabling Addon", -- [3914]
+	"28/8/2022 11:31 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3915]
+	"28/8/2022 11:32 [DEBUG] Showing Minimap Icon", -- [3916]
+	"28/8/2022 11:32 [DEBUG] ---IAT Runtime---", -- [3917]
+	"28/8/2022 11:32 [DEBUG] Version: 3.43.0", -- [3918]
+	"28/8/2022 11:32 [DEBUG] Attempting to load from local NPC Cache", -- [3919]
+	"28/8/2022 11:32 [DEBUG] Generating NPC Cache...", -- [3920]
+	"28/8/2022 11:32 [DEBUG] Enabling Addon", -- [3921]
+	"28/8/2022 11:32 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3922]
+	"28/8/2022 11:34 [DEBUG] Showing Minimap Icon", -- [3923]
+	"28/8/2022 11:35 [DEBUG] ---IAT Runtime---", -- [3924]
+	"28/8/2022 11:35 [DEBUG] Version: 3.43.0", -- [3925]
+	"28/8/2022 11:35 [DEBUG] Attempting to load from local NPC Cache", -- [3926]
+	"28/8/2022 11:35 [DEBUG] Generating NPC Cache...", -- [3927]
+	"28/8/2022 11:35 [DEBUG] Enabling Addon", -- [3928]
+	"28/8/2022 11:35 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3929]
+	"28/8/2022 11:36 [DEBUG] Showing Minimap Icon", -- [3930]
+	"28/8/2022 11:37 [DEBUG] NPC cache generated", -- [3931]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3932]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.43.0", -- [3933]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3934]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3935]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3936]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3937]
+	"28/8/2022 12:46 [DEBUG] Showing Minimap Icon", -- [3938]
+	"28/8/2022 12:46 [DEBUG] NPC cache generated", -- [3939]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3940]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.43.0", -- [3941]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3942]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3943]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3944]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3945]
+	"28/8/2022 18:0 [DEBUG] Showing Minimap Icon", -- [3946]
+	"28/8/2022 18:0 [DEBUG] NPC cache generated", -- [3947]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3948]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.43.0", -- [3949]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3950]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3951]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3952]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3953]
+	"3/9/2022 14:38 [DEBUG] Showing Minimap Icon", -- [3954]
+	"3/9/2022 14:38 [DEBUG] NPC cache generated", -- [3955]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3956]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.43.0", -- [3957]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3958]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3959]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3960]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3961]
+	"3/9/2022 15:24 [DEBUG] Showing Minimap Icon", -- [3962]
+	"3/9/2022 15:24 [DEBUG] NPC cache generated", -- [3963]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3964]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.43.0", -- [3965]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3966]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3967]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3968]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3969]
+	"3/9/2022 17:24 [DEBUG] Showing Minimap Icon", -- [3970]
+	"3/9/2022 17:24 [DEBUG] NPC cache generated", -- [3971]
+	"3/9/2022 17:24 [DEBUG] ---IAT Runtime---", -- [3972]
+	"3/9/2022 17:24 [DEBUG] Version: 3.43.0", -- [3973]
+	"3/9/2022 17:24 [DEBUG] Attempting to load from local NPC Cache", -- [3974]
+	"3/9/2022 17:24 [DEBUG] Generating NPC Cache...", -- [3975]
+	"3/9/2022 17:24 [DEBUG] Enabling Addon", -- [3976]
+	"3/9/2022 17:24 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3977]
+	"3/9/2022 17:27 [DEBUG] Showing Minimap Icon", -- [3978]
+	"3/9/2022 17:28 [DEBUG] NPC cache generated", -- [3979]
+	"3/9/2022 17:34 [DEBUG] ---IAT Runtime---", -- [3980]
+	"3/9/2022 17:34 [DEBUG] Version: 3.43.0", -- [3981]
+	"3/9/2022 17:34 [DEBUG] Attempting to load from local NPC Cache", -- [3982]
+	"3/9/2022 17:34 [DEBUG] Generating NPC Cache...", -- [3983]
+	"3/9/2022 17:34 [DEBUG] Enabling Addon", -- [3984]
+	"3/9/2022 17:34 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3985]
+	"3/9/2022 17:39 [DEBUG] Showing Minimap Icon", -- [3986]
+	"3/9/2022 17:40 [DEBUG] NPC cache generated", -- [3987]
+	"3/9/2022 17:43 [DEBUG] ---IAT Runtime---", -- [3988]
+	"3/9/2022 17:43 [DEBUG] Version: 3.43.0", -- [3989]
+	"3/9/2022 17:43 [DEBUG] Attempting to load from local NPC Cache", -- [3990]
+	"3/9/2022 17:43 [DEBUG] Generating NPC Cache...", -- [3991]
+	"3/9/2022 17:43 [DEBUG] Enabling Addon", -- [3992]
+	"3/9/2022 17:43 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3993]
+	"3/9/2022 17:47 [DEBUG] Showing Minimap Icon", -- [3994]
+	"3/9/2022 17:47 [DEBUG] NPC cache generated", -- [3995]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3996]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.43.0", -- [3997]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3998]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3999]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [4000]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [4001]
+	"3/9/2022 18:6 [DEBUG] Showing Minimap Icon", -- [4002]
+	"3/9/2022 18:6 [DEBUG] NPC cache generated", -- [4003]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [4004]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.43.0", -- [4005]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [4006]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [4007]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [4008]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [4009]
+	"4/9/2022 2:1 [DEBUG] Showing Minimap Icon", -- [4010]
+	"4/9/2022 2:1 [DEBUG] NPC cache generated", -- [4011]
+	"4/9/2022 3:18 [DEBUG] Player has entered instance", -- [4012]
+	"4/9/2022 3:18 [DEBUG] 409", -- [4013]
+	"4/9/2022 3:18 [DEBUG] Offical Instance Name: 409 _409", -- [4014]
+	"4/9/2022 3:18 [DEBUG] DifficultyID: 9", -- [4015]
+	"4/9/2022 3:18 [DEBUG] Achievements cannot be earned for the following difficulty 9", -- [4016]
+	"4/9/2022 3:18 [DEBUG] Player has entered instance", -- [4017]
+	"4/9/2022 3:18 [DEBUG] 409", -- [4018]
+	"4/9/2022 3:18 [DEBUG] Offical Instance Name: 409 _409", -- [4019]
+	"4/9/2022 3:18 [DEBUG] DifficultyID: 9", -- [4020]
+	"4/9/2022 3:18 [DEBUG] Achievements cannot be earned for the following difficulty 9", -- [4021]
+	"4/9/2022 3:55 [DEBUG] Player has entered instance", -- [4022]
+	"4/9/2022 3:55 [DEBUG] 469", -- [4023]
+	"4/9/2022 3:55 [DEBUG] Offical Instance Name: 469 _469", -- [4024]
+	"4/9/2022 3:55 [DEBUG] DifficultyID: 9", -- [4025]
+	"4/9/2022 3:55 [DEBUG] Achievements cannot be earned for the following difficulty 9", -- [4026]
+	"4/9/2022 3:55 [DEBUG] Player has entered instance", -- [4027]
+	"4/9/2022 3:55 [DEBUG] 469", -- [4028]
+	"4/9/2022 3:55 [DEBUG] Offical Instance Name: 469 _469", -- [4029]
+	"4/9/2022 3:55 [DEBUG] DifficultyID: 9", -- [4030]
+	"4/9/2022 3:55 [DEBUG] Achievements cannot be earned for the following difficulty 9", -- [4031]
+	"4/9/2022 4:23 [DEBUG] ---IAT Runtime---", -- [4032]
+	"4/9/2022 4:23 [DEBUG] Version: 3.43.0", -- [4033]
+	"4/9/2022 4:23 [DEBUG] Attempting to load from local NPC Cache", -- [4034]
+	"4/9/2022 4:23 [DEBUG] Generating NPC Cache...", -- [4035]
+	"4/9/2022 4:23 [DEBUG] Enabling Addon", -- [4036]
+	"4/9/2022 4:23 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [4037]
+	"4/9/2022 4:28 [DEBUG] Showing Minimap Icon", -- [4038]
+	"4/9/2022 4:28 [DEBUG] ---IAT Runtime---", -- [4039]
+	"4/9/2022 4:28 [DEBUG] Version: 3.43.0", -- [4040]
+	"4/9/2022 4:28 [DEBUG] Attempting to load from local NPC Cache", -- [4041]
+	"4/9/2022 4:28 [DEBUG] Generating NPC Cache...", -- [4042]
+	"4/9/2022 4:28 [DEBUG] Enabling Addon", -- [4043]
+	"4/9/2022 4:28 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [4044]
+	"4/9/2022 4:29 [DEBUG] Showing Minimap Icon", -- [4045]
 }
 AchievementTrackerNPCCache = {
 	[75829] = "Nhallish",
@@ -4201,9 +4437,9 @@ AchievementTrackerNPCCache = {
 	[41440] = "Aberration",
 	[91349] = "Mannoroth",
 	[156575] = "Dark Inquisitor Xanesh",
-	[108996] = "Specter of Vengeance",
 	[153415] = "Sha of Violence",
 	[185128] = "Memorial Pylon",
+	[108996] = "Specter of Vengeance",
 	[135129] = "Projection of Yogg-Saron",
 	[70250] = "Frozen Head",
 	[56843] = "Lorewalker Stonestep",
@@ -4239,12 +4475,12 @@ AchievementTrackerNPCCache = {
 	[94996] = "Fragment of the Crone",
 	[70252] = "Arcane Head",
 	[144596] = "Chest o' Booty",
-	[61442] = "Kuai the Brute",
+	[62465] = "Captain Ook",
 	[72490] = "Overseer Mojka",
 	[61884] = "Xin the Weaponmaster",
 	[185005] = "Anduin's Grief",
 	[180658] = "Focusing Prism",
-	[62465] = "Captain Ook",
+	[53258] = "Lord Rhyolith",
 	[56897] = "Raigonn",
 	[99664] = "Restless Soul",
 	[169554] = "Disused Anima Container",
@@ -4311,8 +4547,8 @@ AchievementTrackerNPCCache = {
 	[123531] = "Manifestation of Taeshalach",
 	[71983] = "Farseer Wolf Rider",
 	[115844] = "Goroth",
+	[78121] = "Gorian Warmage",
 	[36535] = "Corrupted Soul Fragment",
-	[141792] = "Liz Vilepot",
 	[81834] = "Priceless Paraphernalia",
 	[80551] = "Shard of Tectus",
 	[173770] = "Blazing Brazier",
@@ -4326,9 +4562,9 @@ AchievementTrackerNPCCache = {
 	[129208] = "Dread Captain Lockwood",
 	[174018] = "Volatile Plague Bomb",
 	[100436] = "Illysanna Ravencrest",
-	[105743] = "Whipsnap",
+	[52392] = "Gurubashi Master Chef",
 	[61567] = "Vizier Jin'bak",
-	[71984] = "Siege Engineer",
+	[105743] = "Whipsnap",
 	[138967] = "Zul",
 	[172094] = "Dissectible Dessert",
 	[34826] = "Mistress of Pain",
@@ -4382,7 +4618,7 @@ AchievementTrackerNPCCache = {
 	[150995] = "Mimiron",
 	[33136] = "Guardian of Yogg-Saron",
 	[172386] = "Anima Conduit",
-	[52392] = "Gurubashi Master Chef",
+	[71984] = "Siege Engineer",
 	[158041] = "N'Zoth the Corruptor",
 	[176583] = "Energy Core",
 	[105299] = "Recursive Elemental",
@@ -4391,7 +4627,7 @@ AchievementTrackerNPCCache = {
 	[73033] = "Corrupted Skullsplitter",
 	[105742] = "Turbax",
 	[50284] = "Twilight Zealot",
-	[78121] = "Gorian Warmage",
+	[141792] = "Liz Vilepot",
 	[154741] = "Squirt Bot",
 	[53494] = "Baleroc",
 	[76585] = "Ragewing the Untamed",
@@ -4419,7 +4655,7 @@ AchievementTrackerNPCCache = {
 	[141805] = "Threshanator 3000",
 	[105301] = "Expedient Elemental",
 	[64479] = "Gatecrusher",
-	[53258] = "Lord Rhyolith",
+	[61442] = "Kuai the Brute",
 	[78948] = "Tectus",
 	[160859] = "Haunting Memory",
 	[38009] = "Reanimated Fanatic",

@@ -1,5 +1,5 @@
-## Interface: 90205
-## Version: v9.2.4
+## Interface: 90207
+## Version: v9.2.6
 ## Title: BFAInvasionTimer
 ## Author: Funkydude
 ## Notes: Shows the Battle for Azeroth assault/invasion timer.
@@ -20,6 +20,7 @@
 ## X-License: All Rights Reserved: You are free to fork and modify on GitHub, please ask us about anything else.
 ## X-Curse-Project-ID: 309055
 ## X-WoWI-ID: 24870
+## X-Wago-ID: BO67BXN3
 ## OptionalDeps: Ace3, LibSharedMedia-3.0, LibCandyBar-3.0, LibDDI-1.0
 ## X-Embeds: Ace3, LibSharedMedia-3.0, LibCandyBar-3.0, LibDDI-1.0
 

@@ -1,4 +1,4 @@
--- luacheck: globals tostring tonumber string
+-- luacheck: globals tostring tonumber string hooksecurefunc
 -- luacheck: globals select foreach ipairs pairs next tinsert
 
 --------------------------
@@ -102,10 +102,10 @@ function WoWPro.TakeTaxiRetail(destination)
 end
 
 function WoWPro.TakeTaxi(destination)
-    if WoWPro.CLASSIC or WoWPro.BC then
-        WoWPro.TakeTaxiClassic(destination)
-    else
+    if WoWPro.RETAIL then
         WoWPro.TakeTaxiRetail(destination)
+    else
+        WoWPro.TakeTaxiClassic(destination)
     end
 end
 
@@ -285,7 +285,7 @@ local LUNARFALL_MAPID
 local FROSTWALL_MAPID
 
 function WoWPro.InGarrison()
-    if WoWPro.CLASSIC or WoWPro.BC then return false; end
+    if not WoWPro.RETAIL then return false; end
     if not LUNARFALL_MAPID then
         local zone, zm = WoWPro:ValidZone("Lunarfall!Instance")
         WoWPro:dbp("InGarrison: zone [%s] mapped to %d", zone, zm)
@@ -510,7 +510,7 @@ function WoWPro.RegisterEventHandler(event, handler)
 end
 
 function WoWPro.RegisterModernEventHandler(event, handler)
-    if WoWPro.CLASSIC or WoWPro.BC then return end
+    if not WoWPro.RETAIL then return end
     WoWPro.EventTable[event] = true
     WoWPro[event] = handler
 end
@@ -899,7 +899,7 @@ WoWPro.RegisterEventHandler("GOSSIP_CLOSED" ,function(event, ...)
     end)
 
 if WoWPro.RETAIL then
-	WoWPro.RegisterEventHandler("CHROMIE_TIME_CLOSE" ,function(event, ...)
+	hooksecurefunc(_G.C_ChromieTime,"CloseUI",function(...)
 		WoWPro.GuidelistReset = true
     end)
 end
@@ -1101,8 +1101,12 @@ end)
 WoWPro.RegisterEventHandler("TAXIMAP_OPENED", function(event, ...)
     WoWPro:RecordTaxiLocations(...)
     local qidx = WoWPro.rows[WoWPro.ActiveStickyCount+1].index
-    if (WoWPro.action[qidx] == "F" or WoWPro.action[qidx] == "b") and WoWProCharDB.AutoSelect == true then
-        WoWPro.TakeTaxi(WoWPro.step[qidx])
+    if (WoWPro.action[qidx] == "F" or WoWPro.action[qidx] == "b") then
+        if WoWProCharDB.AutoSelect == true then
+            WoWPro.TakeTaxi(WoWPro.step[qidx])
+        else
+            WoWPro:print("TAXIMAP_OPENED: Not trying to travel as AutoSelect is not active.")
+        end
     end
 end)
 
