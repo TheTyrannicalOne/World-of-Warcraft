@@ -70,7 +70,7 @@ T Galen's Escape|QID|1393|M|47.82,39.76|Z|1435|N|To the strongbox at Galen's bur
 R The Harborage|ACTIVE|1389|M|26.91,33.47|Z|1435|
 T Draenethyst Crystals|QID|1389|M|25.97,31.40|Z|1435|N|To Magtoor.|
 R Pool of Tears|ACTIVE|1424|M|62.55,46.13|Z|1435|N|Ride South-east|
-C Pool of Tears|QID|1424|M|69.66,46.41|Z|1435|L|6175 10|N|You'll find the Atal'ai Artifacts all around Pool of Tears. Some may be easier to see than others.\n[color=FF0000]NOTE: [/color]Underwater breathing is your best friend right now.\n\nIf you're having trouble finding them, decreasing [color=FFFF00]Ground Clutter[/color] to 1 (in [color=FFFF00]Graphics[/color] under [color=FFFF00]System[/color] in the [color=FFFF00]Option[/color] window) may help.|
+C Pool of Tears|QID|1424|M|69.66,46.41|Z|1435|L|6175 5|N|You'll find the Atal'ai Artifacts all around Pool of Tears. Some may be easier to see than others.\n[color=FF0000]NOTE: [/color]Underwater breathing is your best friend right now.\n\nIf you're having trouble finding them, decreasing [color=FFFF00]Ground Clutter[/color] to 1 (in [color=FFFF00]Graphics[/color] under [color=FFFF00]System[/color] in the [color=FFFF00]Option[/color] window) may help.|
 R Misty Reed Post|ACTIVE|698|M|81.18,78.57|Z|1435|N|Work way in this direction.|S|
 C Lack of Surplus|QID|698|M|84.53,34.73|Z|1435|L|6169 8|ITEM|6169|N|Sawtooth Crocolisk|US|
 R Misty Reed Post|ACTIVE|698|M|81.18,78.57|Z|1435|N|Keep an eye out for the Scalebane dragonkin, they may not appreciate you cutting through their area.|US|
@@ -172,7 +172,7 @@ R Grom'gol Base Camp|AVAILABLE|571|M|32.16,28.76|Z|1434|
 T Mok'thardin's Enchantment|QID|572|M|32.12,29.24|Z|1434|N|To Far Seer Mok'thardin.|
 A Mok'thardin's Enchantment|QID|571|M|32.12,29.24|Z|1434|N|From Far Seer Mok'thardin.|PRE|572|
 F Booty Bay|AVAILABLE|2864|M|32.54,29.35|Z|1434|
-A Tran'rek|QID|2864|M|26.94,77.21|Z|1434|N|From Krazek on the top floor of the Tavern.|
+A Tran'rek|QID|2864|M|26.94,77.21|Z|1434|N|From Krazek on the top floor of the Tavern.|LEAD|2865|
 h Booty Bay|AVAILABLE|617|M|27.04,77.31|Z|1434|N|Set your hearthstone to Booty Bay.|
 T Venture Company Mining|QID|600|M|27.12,77.21|Z|1434|N|To Crank Fizzlebub.|
 A Zanzil's Secret|QID|621|M|27.12,77.21|Z|1434|N|From Crank Fizzlebub.|
@@ -447,13 +447,8 @@ h Camp Mojache|ACTIVE|3121|M|74.81,45.19|Z|1444|N|Set your hearthstone with Innk
 A The Ogres of Feralas|QID|2975|M|73.53,45.12;75.96,42.85|CC|Z|1444|N|From Rok Orthan.\n[color=FF0000]NOTE: [/color]She roams between the Mill by the west entrance and the Mill by the east entrance. She makes a pit stop at the Inn going both ways.|
 L Level 46|ACTIVE|3121|M|81.90,44.90|Z|1444|N|Head into Lower Wilds and grind until you're lv 46.|LVL|46|
 R Camp Mojache|ACTIVE|3121|M|78.22,42.54|Z|1444|N|Return to Camp Mojache.|IZ|-Camp Mojache&1444|
-= Level 46 Training|ACTIVE|3121|M|75.99,42.28|Z|1444|N|Train your lv 46 skills/spells with Jannos Lighthoof.\n[color=FF0000]NOTE: [/color]Manually check this step off to continue.|C|Druid|
-F Orgrimmar|ACTIVE|3121|M|75.45,44.35|Z|1444|
-= Level 46 Training|ACTIVE|3121|N|Train your lv 46 skills/spells.\n[color=FF0000]NOTE: [/color]Manually check this step off to continue.|C|-Druid|
-r Repair, Restock, Sell Junk|AVAILABLE|3122|N|Do whatever housekeeping you to do.\n[color=FF0000]NOTE: [/color]Manually check this step off to continue.|
-T A Strange Request|QID|3121|M|49.48,50.58|Z|1454|N|To Neeru Fireblade in the Cleft of Shadows|
-A Return to Witch Doctor Uzer'i|QID|3122|M|49.48,50.58|Z|1454|N|From Neeru Fireblade.|PRE|3121|
-F Camp Mojache|ACTIVE|3122|M|45.13,63.90|Z|1454|
+T A Strange Request|QID|3121|M|76.8,37.2|Z|1444|N|To Xerash Fireblade.|
+A Return to Witch Doctor Uzer'i|QID|3122|M|76.8,37.2|Z|1444|N|From Xerash Fireblade.|PRE|3121|
 T Return to Witch Doctor Uzer'i|QID|3122|M|74.42,43.36|Z|1444|N|To Witch Doctor Uzer'i.|
 A Testing the Vessel|QID|3123|M|74.42,43.36|Z|1444|N|From Witch Doctor Uzer'i.\n[color=FF0000]NOTE: [/color]There is a brief interlude before he offers this quest.|PRE|3122|
 A Natural Materials|QID|3128|M|74.42,43.36|Z|1444|N|From Witch Doctor Uzer'i.|PRE|3122|

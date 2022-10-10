@@ -20,7 +20,7 @@ BINDING_NAME_OMENTOGGLEFOCUS = L["Toggle Focus"]
 
 -----------------------------------------------------------------------------
 -- Register some media
-if WoWClassic then
+if WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE then
 -- most of these sounds are nto actually in classic
 --LSM:Register("sound", "Rubber Ducky", [[Sound\Doodad\Goblin_Lottery_Open01.ogg]])
 --LSM:Register("sound", "Cartoon FX", [[Sound\Doodad\Goblin_Lottery_Open03.ogg]])
@@ -619,7 +619,7 @@ function Omen:OnEnable()
 	self:RegisterEvent("PLAYER_ENTERING_WORLD")
 	self:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 
-	if not WoWClassic then
+	if C_PetBattles then
 		self:RegisterEvent("PET_BATTLE_OPENING_START", "UpdateVisible")
 		self:RegisterEvent("PET_BATTLE_CLOSE", "UpdateVisible")
 	end
@@ -774,7 +774,7 @@ function Omen:UpdateVisible(event)
 	if event == "PET_BATTLE_OPENING_START" then
 		self:_toggle(false)
 		return
-	elseif not WoWClassic and C_PetBattles.IsInBattle() then
+	elseif C_PetBattles and C_PetBattles.IsInBattle() then
 		return
 	end
 
@@ -2045,7 +2045,7 @@ function Omen:UpdateBarsReal()
 		end
 		local t = db.Warnings
 		if lastWarn.mobGUID == mobGUID and myThreatPercent >= t.Threshold and t.Threshold > lastWarn.threatpercent then
-			if not WoWClassic and (not t.DisableWhileTanking or not (GetSpecialization() and select(5, GetSpecializationInfo(GetSpecialization())) == "TANK")) then
+			if GetSpecialization and (not t.DisableWhileTanking or not (GetSpecialization() and select(5, GetSpecializationInfo(GetSpecialization())) == "TANK")) then
 				self:Warn(t.Sound, t.Flash, t.Shake, t.Message and L["Passed %s%% of %s's threat!"]:format(t.Threshold, guidNameLookup[lastWarn.tankGUID]))
 			end
 		end
@@ -3378,7 +3378,7 @@ Omen.Options = {
 					order = 10,
 					name = L["Disable while tanking"],
 					desc = L["DISABLE_WHILE_TANKING_DESC"],
-					hidden = WoWClassic,
+					hidden = not GetSpecialization,
 				},
 				test = {
 					type = "execute",

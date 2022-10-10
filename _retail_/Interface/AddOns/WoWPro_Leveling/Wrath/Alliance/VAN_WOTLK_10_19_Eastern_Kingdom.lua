@@ -35,8 +35,9 @@ T Rat Catching|QID|416|M|34.8,47.1|Z|Loch Modan|N|To Mountaineer Kadrell.|
 T Thelsamar Blood Sausages|QID|418|M|34.8,49.3|Z|Loch Modan|N|To Vidra Hearthstove inside Stoutlager Inn.|
 F Ironforge|AVAILABLE|3681|M|33.94,50.95|Z|Loch Modan|C|Paladin|R|Human|
 A Tome of Divinity|QID|3681|M|23.11,6.15|Z|Ironforge|N|From Brandur Ironhammer in the Mystic Ward.|LEAD|3682|C|Paladin|R|Human|
+F Stormwind|AVAILABLE|399|M|33.94,50.95|Z|Loch Modan|TZ|Stormwind City|N|Fly to Stormwind from Thelsamar.|C|-Paladin|R|Gnome,Dwarf|
 F Stormwind|ACTIVE|3681|M|55.54,47.75|Z|Ironforge|TZ|Stormwind City|N|Fly to Stormwind.|C|Paladin|
-F Stormwind|ACTIVE|6261|M|33.94,50.95|Z|Loch Modan|TZ|Stormwind City|N|Fly to Stormwind from Thelsamar.|C|-Paladin|
+F Stormwind|ACTIVE|6261|M|33.94,50.95|Z|Loch Modan|TZ|Stormwind City|N|Fly to Stormwind from Thelsamar.|C|-Paladin|R|-Gnome,Dwarf|
 T Dungar Longdrink|QID|6261|M|66.28,62.09|Z|Stormwind City|N|To Dungar Longdrink.|
 A Return to Lewis|QID|6285|PRE|6261|M|66.28,62.09|Z|Stormwind City|N|From Dungar Longdrink.|
 A Humble Beginnings|QID|399|Z|Stormwind City|M|57.67,47.95|N|From Baros Alexston, in Cathedral Square.|
@@ -240,7 +241,7 @@ A Vyrin's Revenge|QID|271|M|81.72,64.16|ELITE|Z|Loch Modan|N|[color=FF8000]Elite
 R Mo'grosh Stronghold|M|74,35|ACTIVE|255|Z|Loch Modan|N|I recommend a group for this even at level 20, you still will really benefit from at least 2 of you.|
 C Mercenaries|QID|255|M|73.06,27.18|QO|1;3|S|Z|Loch Modan|N|Mo'grosh Ogres and Enforcers are found outside the cave.|
 C Mercenaries|QID|255|M|76.75,14.38|QO|2|S|Z|Loch Modan|N|Mo'grosh Brutes are found inside the cave.|
-C Mercenaries|QID|255|M|76.75,14.38|QO|2|US|Z|Loch Modan|N|Mo'grosh Brutea are found inside the cave.|
+C Mercenaries|QID|255|M|76.75,14.38|QO|2|US|Z|Loch Modan|N|Mo'grosh Brutes are found inside the cave.|
 C Mercenaries|QID|255|M|73.06,27.18|QO|1;3|US|Z|Loch Modan|N|Mo'grosh Ogres and Enforcers are found outside the cave.|
 R Stonewrought Dam|AVAILABLE|250|M|55.47,15.14|Z|Loch Modan|N|Run over to the ramp up on to the top of the dam.|
 A A Dark Threat Looms|QID|250|M|46.04,13.61|Z|Loch Modan|N|From Chief Engineer Hinderweir VII.|

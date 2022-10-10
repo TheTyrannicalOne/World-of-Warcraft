@@ -1,6 +1,6 @@
-9/11 21:06:07.300  vendor: GenuineIntel
-9/11 21:06:07.300  branding:        Intel(R) Core(TM) i7-4930K CPU @ 3.40GHz
-9/11 21:06:07.300  features: lahf64 cmpxchg16b sse sse2 sse3 ssse3 sse41 sse42 avx aesni clmul rdrand 
-9/11 21:06:07.300  sockets: 1
-9/11 21:06:07.300  cores: 6
-9/11 21:06:07.300  threads: 12
+9/17 01:16:53.192  vendor: GenuineIntel
+9/17 01:16:53.192  branding:        Intel(R) Core(TM) i7-4930K CPU @ 3.40GHz
+9/17 01:16:53.192  features: lahf64 cmpxchg16b sse sse2 sse3 ssse3 sse41 sse42 avx aesni clmul rdrand 
+9/17 01:16:53.192  sockets: 1
+9/17 01:16:53.192  cores: 6
+9/17 01:16:53.192  threads: 12

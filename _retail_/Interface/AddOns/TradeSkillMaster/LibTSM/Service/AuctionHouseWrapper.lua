@@ -30,6 +30,8 @@ local private = {
 	lastAuctionCanceledAuctionId = nil,
 	lastAuctionCanceledTime = 0,
 	auctionIdUpdateCallbacks = {},
+	canSendAuctionQueryValue = true,
+	canSendAuctionQueryCallbacks = {},
 }
 local API_TIMEOUT = 5
 local GET_ALL_TIMEOUT = 30
@@ -208,7 +210,9 @@ AuctionHouseWrapper:OnModuleLoad(function()
 		private.wrappers[apiName] = APIWrapper(apiName)
 	end
 
-	if not TSM.IsWowClassic() then
+	if TSM.IsWowClassic() then
+		Delay.AfterTime("CHECK_CAN_SEND_AUCTION_QUERY", 0.1, private.CheckCanSendAuctionQuery, 0.1)
+	else
 		-- extra hooks to track search query calls since they are limited
 		hooksecurefunc(C_AuctionHouse, "SendSearchQuery", function()
 			tinsert(private.searchQueryAPITimes, GetTime())
@@ -245,6 +249,10 @@ end
 
 function AuctionHouseWrapper.IsOpen()
 	return private.isAHOpen
+end
+
+function AuctionHouseWrapper.RegisterCanSendAuctionQueryCallback(callback)
+	tinsert(private.canSendAuctionQueryCallbacks, callback)
 end
 
 function AuctionHouseWrapper.GetAndResetTotalHookedTime()
@@ -711,7 +719,6 @@ end
 
 function private.EventHandler(eventName, ...)
 	-- reduce the log spam of generic events by combining the message with the name and discarding arguments
-	local genericEventArg = nil
 	if eventName == "UI_ERROR_MESSAGE" and select(1, ...) == ERR_AUCTION_DATABASE_ERROR then
 		-- log an analytics event for "Internal Auction Error" messages
 		for apiName, wrapper in pairs(private.wrappers) do
@@ -722,8 +729,9 @@ function private.EventHandler(eventName, ...)
 		end
 	end
 	if GENERIC_EVENTS[eventName] then
-		genericEventArg = select(GENERIC_EVENTS[eventName], ...)
+		local genericEventArg = select(GENERIC_EVENTS[eventName], ...)
 		assert(genericEventArg)
+		genericEventArg = tostring(genericEventArg)
 		if not private.events[eventName][genericEventArg] then
 			return
 		end
@@ -790,4 +798,15 @@ end
 
 function private.GetAnalyticsRegionRealm()
 	return TSM.GetRegion().."-"..gsub(GetRealmName(), "\226", "'")
+end
+
+function private.CheckCanSendAuctionQuery()
+	assert(TSM.IsWowClassic())
+	local value = CanSendAuctionQuery() and true or false
+	if value ~= private.canSendAuctionQueryValue then
+		private.canSendAuctionQueryValue = value
+		for _, callback in ipairs(private.canSendAuctionQueryCallbacks) do
+			callback(value)
+		end
+	end
 end

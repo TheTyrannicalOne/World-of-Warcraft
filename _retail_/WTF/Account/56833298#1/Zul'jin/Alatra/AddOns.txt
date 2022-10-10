@@ -35,3 +35,4 @@ LittleWigs_BattleForAzeroth: enabled
 LittleWigs_Cataclysm: enabled
 LittleWigs: enabled
 BigWigs_Shadowlands: enabled
+Leatrix_Plus: enabled

@@ -1,5 +1,10 @@
 
 SpyPerCharDB = {
+	["version"] = "1.1",
+	["IgnoreData"] = {
+	},
+	["KOSData"] = {
+	},
 	["PlayerData"] = {
 		["Pierunea-Gilneas"] = {
 			["mapID"] = 49,
@@ -207,21 +212,6 @@ SpyPerCharDB = {
 			["subZone"] = "",
 			["loses"] = 1,
 		},
-		["Pickpockpal-Fizzcrank"] = {
-			["mapID"] = 84,
-			["guild"] = "Justabank",
-			["zone"] = "Stormwind City",
-			["mapY"] = 0.7,
-			["class"] = "ROGUE",
-			["isEnemy"] = true,
-			["race"] = "Undead",
-			["isGuess"] = false,
-			["name"] = "Pickpockpal-Fizzcrank",
-			["time"] = 1655657931,
-			["level"] = 60,
-			["mapX"] = 0.6,
-			["subZone"] = "",
-		},
 		["Coroak-AeriePeak"] = {
 			["mapID"] = 863,
 			["guild"] = "Hordecorp",
@@ -317,10 +307,5 @@ SpyPerCharDB = {
 			["subZone"] = "Farshire",
 			["loses"] = 1,
 		},
-	},
-	["IgnoreData"] = {
-	},
-	["version"] = "1.1",
-	["KOSData"] = {
 	},
 }

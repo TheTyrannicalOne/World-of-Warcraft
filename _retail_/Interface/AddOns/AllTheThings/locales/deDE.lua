@@ -769,7 +769,9 @@ for key,value in pairs({
 		--TODO: [-543] = "Legion Invasions",						-- Legion Invasions
 		[-579] = "Pass zum Dunklen Portal",							-- Dark Portal Pass
 		--TODO: [-580] = "Shadowlands Seasonal Promotions",			-- Shadowlands Seasonal Promotions
-		[-581] = "The Great Push: Saison 2",						-- The Great Push: Season 2
+		--TODO: [-581] = "TBC Classic Deluxe Edition",				-- TBC Classic Deluxe Edition
+		--TODO: [-582] = "WotLK Classic Northrend Heroic Upgrade",	-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
+		--TODO: [-583] = "WotLK Classic Northrend Epic Upgrade",	-- WotLK Classic Northrend Epic Upgrade
 	-- PvP Header
 		-- PvP Set Names
 			--TODO: [-659] = "Aspirant Gear",						-- Aspirant PvP Gear (WoD, BfA)
@@ -1260,8 +1262,14 @@ for key,value in pairs({
 	[191766] = "Drakurus Befehle",	-- Orders From Drakuru
 	[192049] = "Ein Schwarm Fangzahnheringe",	-- Fangtooth Herring School
 	[192060] = "Fjorns Amboss",	-- Fjorn's Anvil
+	[192071] = "Fjorns Amboss",	-- Fjorn's Anvil
 	[192072] = "Harpunenkiste",	-- Harpoon Crate
+	[192078] = "Hodirs Horn",	-- Hodir's Horn
+	[192079] = "Hodirs Speer",	-- Hodir's Spear
+	[192080] = "Hodirs Helm",	-- Hodir's Helm
+	[192524] = "Arngrimm der Unersättliche",	-- Arngrim the Insatiable
 	[192833] = "Bridenbrads Hab und Gut",	-- Bridenbrad's Possessions
+	[193051] = "Ei der Geißelneruber",	-- Nerubian Scourge Egg
 	[193195] = "Gefrorenes Herz",	-- Pulsing Crystal
 	[193400] = "Saronitbombenstapel",	-- Saronite Bomb Stack
 	[194032] = "Freudenfeuer der Allianz",	-- Alliance Bonfire
@@ -1288,6 +1296,7 @@ for key,value in pairs({
 	[194389] = "Gestohlenes Dokument der Forscherliga",	-- Stolen Explorers' League Document
 	[194390] = "Gestohlenes Dokument der Forscherliga",	-- Stolen Explorers' League Document
 	[194391] = "Gestohlenes Dokument der Forscherliga",	-- Stolen Explorers' League Document
+	[194555] = "Archivumkonsole",	-- Archivum Console
 	[194714] = "Widerliche Werkbank",	-- Disgusting Workbench
 	[195134] = "Die Bombe",	-- The Bomb
 	[195431] = "Hauptquartierfunkgerät",	-- Headquarters Radio
@@ -2622,6 +2631,7 @@ for key,value in pairs({
 	[303016] = "|cFFFFFFFFSchritt 14:|r Gewöhnlicher Kieselstein XIII",	-- |cFFFFFFFFStep 14:|r Ordinary Pebble XIII
 	[303017] = "|cFFFFFFFFSchritt 13:|r Gewöhnlicher Kieselstein XII",	-- |cFFFFFFFFStep 13:|r Ordinary Pebble XII
 	[303018] = "|cFFFFFFFFSchritt 12:|r Gewöhnlicher Kieselstein XI",	-- |cFFFFFFFFStep 12:|r Ordinary Pebble XI
+	[303039] = "Seltsamer Getreidesack",	-- Curious Grain Sack
 	[307265] = "Steckbrief",	-- Wanted Poster
 	[307277] = "Alter Henkelkrug",	-- Old Jug
 	[307307] = "Zerbrochenes Fass",	-- Broken Barrel
@@ -2828,6 +2838,7 @@ for key,value in pairs({
 	[353686] = "Mondlichtkapsel",	-- Lunarlight Pod
 	[353687] = "Zerbrochene Glocke",	-- Broken Bell
 	[353688] = "Zerbrochene Glocke",	-- Broken Bell
+	[353689] = "Zerbrochene Glocke",	-- Broken Bell
 	[353691] = "Himmelsglocke",	-- Skyward Bell
 	[353791] = "Schlosschließkassette",	-- Castle Strongbox
 	[353792] = "Dorfschließkassette",	-- Village Strongbox

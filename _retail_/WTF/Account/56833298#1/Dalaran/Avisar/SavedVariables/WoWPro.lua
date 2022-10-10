@@ -5,10 +5,12 @@ WoWProCharDB = {
 	["AutoHideInsideInstances"] = true,
 	["EnableGrailCheckPrereq"] = false,
 	["QID2Guide"] = {
-		[10119] = "JamHel6062",
 		[47221] = "Ludo_Argus",
 		[28708] = "JamHel6062",
+		[40519] = "EmmLegionIntro_A",
+		[10119] = "JamHel6062",
 		[47835] = "Ludo_Argus",
+		[60096] = "wotlkintro",
 	},
 	["Trades"] = {
 	},
@@ -17,8 +19,8 @@ WoWProCharDB = {
 	},
 	["EnableRares"] = true,
 	["EnableGrailQuestName"] = false,
-	["Enabled"] = true,
 	["EnableGrailQuestObsolete"] = false,
+	["EnableGrailBreadcrumbs"] = false,
 	["DebugLevel"] = 0,
 	["Tradeskills"] = {
 		[2551] = {
@@ -118,21 +120,21 @@ WoWProCharDB = {
 			["skillMax"] = 100,
 		},
 	},
-	["BuildingLocations"] = {
+	["Guide"] = {
 	},
 	["Taxi"] = {
 	},
-	["Guide"] = {
+	["GuideVersion"] = {
 	},
 	["EnableTreasures"] = true,
 	["EnableFlight"] = true,
 	["AutoHideInsideInstancesNotify"] = true,
 	["AutoHideInCombat"] = false,
-	["GuideVersion"] = {
+	["BuildingLocations"] = {
 	},
 	["GuideStack"] = {
 	},
-	["EnableGrailBreadcrumbs"] = false,
+	["Enabled"] = true,
 	["skippedQIDs"] = {
 	},
 	["Rank"] = {

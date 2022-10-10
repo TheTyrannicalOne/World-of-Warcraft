@@ -410,7 +410,7 @@ end
 
 -- this makes the loadout pets and leveling slot glow when a pet is picked up onto the cursor
 -- it's initially called by hooksecurefunc of C_PetJournal.PickupPet
-function rematch:CURSOR_UPDATE()
+function rematch:CURSOR_CHANGED()
 	local petID = rematch:GetCursorPet()
 	if petID then -- if pet picked up, then show drop buttons and start glow animations
 		rematch:HideWidgets()
@@ -423,7 +423,7 @@ function rematch:CURSOR_UPDATE()
 			rematch.QueuePanel.DropButton.Glow:Play()
 		end
 		rematch.MiniPanel.Glow:Show()
-		rematch:RegisterEvent("CURSOR_UPDATE") -- this is the only place this event is registered
+		rematch:RegisterEvent("CURSOR_CHANGED") -- this is the only place this event is registered
 	else -- if pet dropped, hide drop buttons and stop glow animations
 		for i=1,3 do
 			rematch.LoadoutPanel.Loadouts[i].DropButton:Hide()
@@ -432,7 +432,7 @@ function rematch:CURSOR_UPDATE()
 		rematch.QueuePanel.DropButton:Hide()
 		rematch.QueuePanel.DropButton.Glow:Stop()
 		rematch.MiniPanel.Glow:Hide()
-		rematch:UnregisterEvent("CURSOR_UPDATE") -- cursor clear, stop watching cursor changes
+		rematch:UnregisterEvent("CURSOR_CHANGED") -- cursor clear, stop watching cursor changes
 	end
 	if rematch.QueuePanel.List:IsVisible() then
 		rematch.QueuePanel.List:Update()
@@ -932,7 +932,7 @@ end
 
 -- converts the default BasicFrameTemplate CloseButton to Rematch's icon decal overlaid over a blank red button
 function rematch:ConvertTitlebarCloseButton(button)
-	if not button.Icon then
+	if not button.Icon and select(4,GetBuildInfo())<100000 then
 		button:SetNormalTexture("Interface\\AddOns\\Rematch\\Textures\\TitlebarButtons")
 		button:GetNormalTexture():SetTexCoord(0,0.25,0,0.25)
 		button:SetPushedTexture("Interface\\AddOns\\Rematch\\Textures\\TitlebarButtons")
@@ -945,6 +945,8 @@ function rematch:ConvertTitlebarCloseButton(button)
 		button:SetScript("OnMouseDown",rematch.TitlebarButtonOnMouseDown)
 		button:SetScript("OnMouseUp",rematch.TitlebarButtonOnMouseUp)
 		button:SetScript("OnShow",rematch.TitlebarButtonOnMouseUp)
+	else
+		button:SetPoint("TOPRIGHT",0,1)
 	end
 end
 

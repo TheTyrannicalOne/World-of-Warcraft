@@ -8,6 +8,8 @@ local InfoFrame
 -- Purpose:         Stores all the frames for each tab in the GUI.
 local Config = core.Config
 local IATInfoFrame = core.IATInfoFrame
+local DragonflightContent
+local DragonflightContentButtons = {}
 local ShadowlandsContent
 local ShadowlandsContentButtons = {}
 local BattleForAzerothContent
@@ -45,23 +47,44 @@ AchievementTrackerNPCCache = {}
 
 -- Purpose:         Information about the current release. This is mianly used to detect which addon should output messages to chat to avoid spam
 Config.majorVersion = 3						--Addon with a higher major version change have priority over a lower major version
-Config.minorVersion = 43    				--Addon with a minor version change have prioirty over a lower minor version
+Config.minorVersion = 47    				--Addon with a minor version change have prioirty over a lower minor version
 Config.revisionVersion = 0					--Addon with a revision change have the same priorty as a lower revision verison
 Config.releaseType = ""                     --Release type (Alpha, Beta, Release)
+Config.classicPhase = 1                     --What phase classic realms are currently running
 
+------------------------------------------------------
+---- Game Versions
+------------------------------------------------------
 -- Purpose:         Used to detect which version of the game the user is running. This is used so we can add features for different versions of the game.
 core.gameVersion, core.gameBuild, core.gameDate, core.tocVersion = GetBuildInfo()
+
+function getGameBuild()
+    core.gameVersionMajor, core.gameVersionMinor, core.gameVersionRevision = strsplit(".", core.gameVersion, 3)
+
+    core.gameVersionMajor = tonumber(core.gameVersionMajor)
+    core.gameVersionMinor = tonumber(core.gameVersionMinor)
+    core.gameVersionRevision = tonumber(core.gameVersionRevision)
+end
 
 ------------------------------------------------------
 ---- Localisation
 ------------------------------------------------------
 
 function Config:getLocalisedInstanceName(instanceID)
-    return EJ_GetInstanceInfo(instanceID)
+    if core.gameVersionMajor > 3 then
+        return EJ_GetInstanceInfo(instanceID)
+    else
+        return ""
+    end
 end
 
 function Config:getLocalisedScenarioName(dungeonID)
-    return C_LFGInfo.GetDungeonInfo(dungeonID).name
+    --Scenario were introduced in patch 5 (MoP)
+    if core.gameVersionMajor >= 5 then
+        return C_LFGInfo.GetDungeonInfo(dungeonID).name
+    else
+        return ""
+    end
 end
 
 function Config:getLocalisedEncouterName(encounterID,instanceType)
@@ -155,14 +178,14 @@ end
 -- What it Does:    Create a new frame of type fontstring
 -- Purpose:         This is used to put text on the GUI
 function Config:CreateText(point, relativeFrame, relativePoint, xOffset, yOffset, textString)
-    local text = relativeFrame:CreateFontString(nil, relativeFrame, "GameFontHighlightSmall")
+    local text = relativeFrame:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
     text:SetPoint(point, relativeFrame, relativePoint, xOffset, yOffset)
     text:SetText(textString)
     return text
 end
 
 function Config:CreateText2(point, relativeFrame, relativePoint, xOffset, yOffset, textString, size)
-    local text = UIConfig:CreateFontString(nil, relativeFrame, size)
+    local text = UIConfig:CreateFontString(nil, "OVERLAY", size)
     text:SetPoint(point, relativeFrame, relativePoint, xOffset, yOffset)
     text:SetText(textString)
     return text
@@ -173,7 +196,34 @@ end
 -- Purpose:         This is used to load the correct frames when clicking on each of the tabs
 function Tab_OnClick(self)
     Config.currentTab = self:GetID();                           --Get the ID of the tab the user has selected.
-    PanelTemplates_SetTab(self:GetParent(), self:GetID())       --Changed the selected tab to the tab the user has just clicked on
+
+    if Config.currentTab == 10 then
+        --Dragonflight
+        PanelTemplates_SetTab(self:GetParent(), 2)       --Changed the selected tab to the tab the user has just clicked on
+    elseif Config.currentTab == 9 then
+        --Shadowlands
+        PanelTemplates_SetTab(self:GetParent(), 3)       --Changed the selected tab to the tab the user has just clicked on
+    elseif Config.currentTab == 8 then
+        --BFA
+        PanelTemplates_SetTab(self:GetParent(), 4)       --Changed the selected tab to the tab the user has just clicked on
+    elseif Config.currentTab == 7 then
+        --Legion
+        PanelTemplates_SetTab(self:GetParent(), 5)       --Changed the selected tab to the tab the user has just clicked on
+    elseif Config.currentTab == 6 then
+        --WoD
+        PanelTemplates_SetTab(self:GetParent(), 6)       --Changed the selected tab to the tab the user has just clicked on
+    elseif Config.currentTab == 5 then
+        --Panda
+        PanelTemplates_SetTab(self:GetParent(), 7)       --Changed the selected tab to the tab the user has just clicked on
+    elseif Config.currentTab == 4 then
+        --Cata
+        PanelTemplates_SetTab(self:GetParent(), 8)       --Changed the selected tab to the tab the user has just clicked on
+    elseif Config.currentTab == 3 then
+        --WoTLK
+        PanelTemplates_SetTab(self:GetParent(), 9)
+    else
+        PanelTemplates_SetTab(self:GetParent(), self:GetID())       --Changed the selected tab to the tab the user has just clicked on
+    end
 
     --This scrollframe holds the button for each instances shown on the expansion tabs
     --If this scrollframe is currently being shown then hide it and shown the correct frame for the tab that has just been clicked
@@ -189,7 +239,9 @@ function Tab_OnClick(self)
     if scrollChild2 then
         scrollChild2:Hide()
     end
-    UIConfig.ScrollFrame2:SetScrollChild(self.contenta)
+    if Config.currentTab > 1 then
+        UIConfig.ScrollFrame2:SetScrollChild(self.contenta)
+    end
 
     --Show the content for the selected instances
     self.content:Show()
@@ -304,7 +356,7 @@ function Tab_OnClick(self)
                 for instanceType, _ in pairs(core.Instances[expansion]) do
                     for instance, _ in pairs(core.Instances[expansion][instanceType]) do
                         for boss, _ in pairs(core.Instances[expansion][instanceType][instance]) do
-                            if boss ~= "name" then
+                            if string.match(boss, "boss") then
                                 if core.Instances[expansion][instanceType][instance][boss].track ~= nil then
                                     achievementsTracked = achievementsTracked + 1
                                 end
@@ -994,7 +1046,7 @@ function Config:SetupAchievementTracking(mode)
         for instanceType,_ in pairs(core.Instances[expansion]) do
             for instance,_ in pairs(core.Instances[expansion][instanceType]) do
                 for boss,_ in pairs(core.Instances[expansion][instanceType][instance]) do
-                    if boss ~= "name" then
+                    if string.match(boss, "boss") then
                         if mode == false then
                             core.Instances[expansion][instanceType][instance][boss].players = {}
                             table.insert(core.Instances[expansion][instanceType][instance][boss].players, L["GUI_TrackingDisabled"])
@@ -1023,12 +1075,38 @@ local function SetTabs(frame, numTabs, ...)
 
 	local contents = {} --Stores the frames for each of the tabs
 	local frameName = frame:GetName()
+    local lastTabAdded = 1
 
     --IAT Expansions Tabs
 	for i = 1, numTabs do
-		local tab = CreateFrame("Button", frameName.."Tab"..i, frame, "CharacterFrameTabButtonTemplate")
-		tab:SetID(i)                                --This is used when clicking on the tab to load the correct frames
-		tab:SetText(select(i, ...))                 --This select the variables arguments passed into the function. Needs updating each expansion
+        local tab
+        if core.gameVersionMajor > 9 then
+            tab = CreateFrame("Button", frameName.."Tab"..i, frame, "PanelTabButtonTemplate")
+        else
+            tab = CreateFrame("Button", frameName.."Tab"..i, frame, "CharacterFrameTabButtonTemplate")
+        end
+
+        if i == 1 then
+            tab:SetID(i)                                --This is used when clicking on the tab to load the correct frames
+        elseif i == 2 then
+            tab:SetID(10)                                --This is used when clicking on the tab to load the correct frames
+        elseif i == 3 then
+            tab:SetID(9)                                --This is used when clicking on the tab to load the correct frames
+        elseif i == 4 then
+            tab:SetID(8)                                --This is used when clicking on the tab to load the correct frames
+        elseif i == 5 then
+            tab:SetID(7)                                --This is used when clicking on the tab to load the correct frames
+        elseif i == 6 then
+            tab:SetID(6)                                --This is used when clicking on the tab to load the correct frames
+        elseif i == 7 then
+            tab:SetID(5)                                --This is used when clicking on the tab to load the correct frames
+        elseif i == 8 then
+            tab:SetID(4)                                --This is used when clicking on the tab to load the correct frames
+        elseif i == 9 then
+            tab:SetID(3)                                --This is used when clicking on the tab to load the correct frames
+        end
+
+        tab:SetText(select(i, ...))                 --This select the variables arguments passed into the function. Needs updating each expansion
 		tab:SetScript("OnClick", Tab_OnClick)       --This will run the Tab_OnClick() function once the user has selected a tab so we can load the correct frames into the GUI
 
         if (i == 1) then
@@ -1049,14 +1127,25 @@ local function SetTabs(frame, numTabs, ...)
             tab.content:Hide();
 
             tab.contenta = CreateFrame("Frame", nil, UIConfig.ScrollFrame2)
-            tab.contenta:SetSize(558, 460)
+            tab.contenta:SetSize(658, 460)
             tab.contenta:Hide()
 
             table.insert(contents, tab.content)
             table.insert(contents, tab.contenta)
 
-			tab:SetPoint("TOPLEFT", _G[frameName.."Tab"..(i - 1)], "TOPRIGHT", -14, 0)
+            if core.gameVersionMajor > 9 then
+                tab:SetPoint("TOPLEFT", _G[frameName.."Tab"..(lastTabAdded)], "TOPRIGHT", 0, 0)
+            else
+                tab:SetPoint("TOPLEFT", _G[frameName.."Tab"..(lastTabAdded)], "TOPRIGHT", -14, 0)
+            end
 		end
+
+        --Disable buttons higher than the game version being played
+        if ((i + tab:GetID()) - i) > core.gameVersionMajor then
+            tab:Hide()
+        else
+            lastTabAdded = i
+        end
     end
 
     --Tabs for other addons
@@ -1073,6 +1162,13 @@ local function SetTabs(frame, numTabs, ...)
     -- tab:SetScript("OnClick", EAT_OnClick)       --This will run the Tab_OnClick() function once the user has selected a tab so we can load the correct frames into the GUI
     -- tab:SetPoint("TOPLEFT")
     -- tab:SetPoint("TOPLEFT", _G["InstanceAchievementTrackerTab"], "TOPLEFT", 120, 0)
+
+    -- local tab = CreateFrame("Button", "WorldEventsAchievementTab", _G["InstanceAchievementTrackerTab"], "OptionsFrameTabButtonTemplate")
+    -- tab:SetID(100)                                 --This is used when clicking on the tab to load the correct frames
+    -- tab:SetText("World Events")  --This select the variables arguments passed into the function. Needs updating each expansion
+    -- tab:SetScript("OnClick", EAT_OnClick)       --This will run the Tab_OnClick() function once the user has selected a tab so we can load the correct frames into the GUI
+    -- tab:SetPoint("TOPLEFT")
+    -- tab:SetPoint("TOPLEFT", _G["ExplorationAchievementTrackerTab"], "TOPLEFT", 85, 0)
 
 	Tab_OnClick(_G[frameName.."Tab1"]) --Load in the main frame to begin with
 
@@ -1121,9 +1217,12 @@ end
 -- What it Does:    Create the IAT main GUI tab
 -- Purpose:         This create the main GUI tab for IAT
 function Config:CreateGUI()
+    --Get Game Version
+    getGameBuild()
+
     --Main Frame
     UIConfig = CreateFrame("Frame", "AchievementTracker", UIParent, "UIPanelDialogTemplate", "AchievementTemplate")
-    UIConfig:SetSize(800, 500)
+    UIConfig:SetSize(900, 500)
     UIConfig:SetPoint("CENTER")
     UIConfig:SetMovable(true)
     UIConfig:EnableMouse(true)
@@ -1156,7 +1255,7 @@ function Config:CreateGUI()
     --Scroll Frame For Content
      UIConfig.ScrollFrame2 = CreateFrame("ScrollFrame", nil, UIConfig, "UIPanelScrollFrameTemplate")
      UIConfig.ScrollFrame2:SetPoint("TOPRIGHT", AchievementTrackerDialogBG, "TOPRIGHT", 0, -8)
-     UIConfig.ScrollFrame2:SetWidth(558)
+     UIConfig.ScrollFrame2:SetWidth(658)
      UIConfig.ScrollFrame2:SetHeight(460)
 
      --Scroll Bar For Content
@@ -1165,7 +1264,7 @@ function Config:CreateGUI()
      UIConfig.ScrollFrame2.ScrollBar:SetPoint("BOTTOMRIGHT", UIConfig.ScrollFrame2, "BOTTOMRIGHT", -7, 18)
 
     --Tabs
-    content1, ShadowlandsNav, ShadowlandsContent, BattleForAzerothNav, BattleForAzerothContent, LegionNav, LegionContent, WarlordsOfDraenorNav, WarlordsOfDraenorContent, MistsOfPandariaNav, MistsOfPandariaContent, CataclysmNav, CataclysmContent, WrathOfTheLichKingNav, WrathOfTheLichKingContent = SetTabs(UIConfig, 8, L["GUI_Options"], L["GUI_Shadowlands"], L["GUI_BattleForAzeroth"], L["GUI_Legion"], L["GUI_WarlordsOfDraenor"], L["GUI_MistsOfPandaria"], L["GUI_Cataclysm"], L["GUI_WrathOfTheLichKing"])
+    content1, DragonflightNav, DragonflightContent, ShadowlandsNav, ShadowlandsContent, BattleForAzerothNav, BattleForAzerothContent, LegionNav, LegionContent, WarlordsOfDraenorNav, WarlordsOfDraenorContent, MistsOfPandariaNav, MistsOfPandariaContent, CataclysmNav, CataclysmContent, WrathOfTheLichKingNav, WrathOfTheLichKingContent = SetTabs(UIConfig, 9, L["GUI_Options"], L["GUI_Dragonflight"], L["GUI_Shadowlands"], L["GUI_BattleForAzeroth"], L["GUI_Legion"], L["GUI_WarlordsOfDraenor"], L["GUI_MistsOfPandaria"], L["GUI_Cataclysm"], L["GUI_WrathOfTheLichKing"])
 
     --Tabs (Top)
     --Addon_InstanceAchievementTracker, Addon_ExplorationAchievementTracker = SetTabs(UIConfig, 8, L["GUI_Options"], L["GUI_Shadowlands"], L["GUI_BattleForAzeroth"], L["Legion"], L["GUI_WarlordsOfDraenor"], L["GUI_MistsOfPandaria"], L["GUI_Cataclysm"], L["GUI_WrathOfTheLichKing"])
@@ -1176,9 +1275,9 @@ function Config:CreateGUI()
     --content1.title:SetText("Welcome to Achievement Tracker V1.0");
 
     --Create the navigation buttons for each expansion
-    local expansions = 7
+    local expansions = 8
 
-    for i = 2, 8 do
+    for i = 3, 10 do
         --Raids
         local firstRaid = false
         local previousInstance
@@ -1190,20 +1289,42 @@ function Config:CreateGUI()
         --Lets get all localised names of the instances and place in a table, this can then be sorted alphabetically before we create the buttons
         --We need to save the original ID aswell so key value pairs
         for instance,v in pairs(core.Instances[i].Raids) do
-            local instanceName = Config:getLocalisedInstanceName(core.Instances[i].Raids[instance].name)
+            local instanceName
+
+            if core.gameVersionMajor == 3 and i == 3 then
+                --For wrath we must fetch the localisaed names as the encounter journal is not avaliable
+                if core.Instances[i].Raids[instance].classicPhase == Config.classicPhase then
+                    instanceName = core.Instances[i].Raids[instance].nameLocalised
+                end
+            else
+                --All other expansions have the encounter journal so pass the ID to fetch from API
+                instanceName = Config:getLocalisedInstanceName(core.Instances[i].Raids[instance].name)
+            end
+
             if instanceName ~= nil then
                 table.insert(localisedRaidNames, {name = instanceName, id = instance});
             end
         end
         for instance,v in pairs(core.Instances[i].Dungeons) do
-            local instanceName = Config:getLocalisedInstanceName(core.Instances[i].Dungeons[instance].name)
+            local instanceName
+
+            if core.gameVersionMajor == 3 and i == 3 then
+                --For wrath we must fetch the localisaed names as the encounter journal is not avaliable
+                if core.Instances[i].Dungeons[instance].classicPhase == Config.classicPhase then
+                    instanceName = core.Instances[i].Dungeons[instance].nameLocalised
+                end
+            else
+                --All other expansions have the encounter journal so pass the ID to fetch from API
+                instanceName = Config:getLocalisedInstanceName(core.Instances[i].Dungeons[instance].name)
+            end
+
             if instanceName ~= nil then
                 table.insert(localisedDungeonNames, {name = instanceName, id = instance});
             end
         end
 
         --Scenarios only happen for MOP expansion. Needs updating each expansion
-        if i == 6 then
+        if i == 5 then
             for instance,v in pairs(core.Instances[i].Scenarios) do
                 if instance == 1103 or instance == 1000 then
                     --Alliance only scenarios
@@ -1230,50 +1351,56 @@ function Config:CreateGUI()
 
         for instance,instanceTable in pairs(localisedRaidNames) do
             if firstRaid == false then
-                if i == 2 then
+                if i == 10 then
+                    DragonflightNav[instanceTable.id] = self:CreateButton("TOPLEFT", DragonflightNav, "TOPLEFT", 0, instanceTable.name, instanceTable.id);
+                    DragonflightNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
+                elseif i == 9 then
                     ShadowlandsNav[instanceTable.id] = self:CreateButton("TOPLEFT", ShadowlandsNav, "TOPLEFT", 0, instanceTable.name, instanceTable.id);
                     ShadowlandsNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
-                elseif i == 3 then
+                elseif i == 8 then
                     BattleForAzerothNav[instanceTable.id] = self:CreateButton("TOPLEFT", BattleForAzerothNav, "TOPLEFT", 0, instanceTable.name, instanceTable.id);
                     BattleForAzerothNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
-                elseif i == 4 then
+                elseif i == 7 then
                     LegionNav[instanceTable.id] = self:CreateButton("TOPLEFT", LegionNav, "TOPLEFT", 0, instanceTable.name, instanceTable.id);
                     LegionNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
-                elseif i == 5 then
+                elseif i == 6 then
                     WarlordsOfDraenorNav[instanceTable.id] = self:CreateButton("TOPLEFT", WarlordsOfDraenorNav, "TOPLEFT", 0, instanceTable.name, instanceTable.id);
                     WarlordsOfDraenorNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
-                elseif i == 6 then
+                elseif i == 5 then
                     MistsOfPandariaNav[instanceTable.id] = self:CreateButton("TOPLEFT", MistsOfPandariaNav, "TOPLEFT", 0, instanceTable.name, instanceTable.id);
                     MistsOfPandariaNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
-                elseif i == 7 then
+                elseif i == 4 then
                     CataclysmNav[instanceTable.id] = self:CreateButton("TOPLEFT", CataclysmNav, "TOPLEFT", 0, instanceTable.name, instanceTable.id);
                     CataclysmNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
-                elseif i == 8 then
+                elseif i == 3 then
                     WrathOfTheLichKingNav[instanceTable.id] = self:CreateButton("TOPLEFT", WrathOfTheLichKingNav, "TOPLEFT", 0, instanceTable.name, instanceTable.id);
                     WrathOfTheLichKingNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
                 end
                 firstRaid = true
                 previousInstance = instanceTable.id
             else
-                if i == 2 then
+                if i == 10 then
+                    DragonflightNav[instanceTable.id] = self:CreateButton("TOPLEFT", DragonflightNav[previousInstance], "TOPLEFT", -32, instanceTable.name, instanceTable.id);
+                    DragonflightNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
+                elseif i == 9 then
                     ShadowlandsNav[instanceTable.id] = self:CreateButton("TOPLEFT", ShadowlandsNav[previousInstance], "TOPLEFT", -32, instanceTable.name, instanceTable.id);
                     ShadowlandsNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
-                elseif i == 3 then
+                elseif i == 8 then
                     BattleForAzerothNav[instanceTable.id] = self:CreateButton("TOPLEFT", BattleForAzerothNav[previousInstance], "TOPLEFT", -32, instanceTable.name, instanceTable.id);
                     BattleForAzerothNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
-                elseif i == 4 then
+                elseif i == 7 then
                     LegionNav[instanceTable.id] = self:CreateButton("TOPLEFT", LegionNav[previousInstance], "TOPLEFT", -32, instanceTable.name, instanceTable.id);
                     LegionNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
-                elseif i == 5 then
+                elseif i == 6 then
                     WarlordsOfDraenorNav[instanceTable.id] = self:CreateButton("TOPLEFT", WarlordsOfDraenorNav[previousInstance], "TOPLEFT", -32, instanceTable.name, instanceTable.id);
                     WarlordsOfDraenorNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
-                elseif i == 6 then
+                elseif i == 5 then
                     MistsOfPandariaNav[instanceTable.id] = self:CreateButton("TOPLEFT", MistsOfPandariaNav[previousInstance], "TOPLEFT", -32, instanceTable.name, instanceTable.id);
                     MistsOfPandariaNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
-                elseif i == 7 then
+                elseif i == 4 then
                     CataclysmNav[instanceTable.id] = self:CreateButton("TOPLEFT", CataclysmNav[previousInstance], "TOPLEFT", -32, instanceTable.name, instanceTable.id);
                     CataclysmNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
-                elseif i == 8 then
+                elseif i == 3 then
                     WrathOfTheLichKingNav[instanceTable.id] = self:CreateButton("TOPLEFT", WrathOfTheLichKingNav[previousInstance], "TOPLEFT", -32, instanceTable.name, instanceTable.id);
                     WrathOfTheLichKingNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
                 end
@@ -1285,50 +1412,56 @@ function Config:CreateGUI()
         local firstDungeon = false
         for instance,instanceTable in pairs(localisedDungeonNames) do
             if firstDungeon == false then
-                if i == 2 then
+                if i == 10 then
+                    DragonflightNav[instanceTable.id] = self:CreateButton("TOPLEFT", DragonflightNav[previousInstance], "TOPLEFT", -40, instanceTable.name, instanceTable.id);
+                    DragonflightNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
+                elseif i == 9 then
                     ShadowlandsNav[instanceTable.id] = self:CreateButton("TOPLEFT", ShadowlandsNav[previousInstance], "TOPLEFT", -40, instanceTable.name, instanceTable.id);
                     ShadowlandsNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
-                elseif i == 3 then
+                elseif i == 8 then
                     BattleForAzerothNav[instanceTable.id] = self:CreateButton("TOPLEFT", BattleForAzerothNav[previousInstance], "TOPLEFT", -40, instanceTable.name, instanceTable.id);
                     BattleForAzerothNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
-                elseif i == 4 then
+                elseif i == 7 then
                     LegionNav[instanceTable.id] = self:CreateButton("TOPLEFT", LegionNav[previousInstance], "TOPLEFT", -40, instanceTable.name, instanceTable.id);
                     LegionNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
-                elseif i == 5 then
+                elseif i == 6 then
                     WarlordsOfDraenorNav[instanceTable.id] = self:CreateButton("TOPLEFT", WarlordsOfDraenorNav[previousInstance], "TOPLEFT", -40, instanceTable.name, instanceTable.id);
                     WarlordsOfDraenorNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
-                elseif i == 6 then
+                elseif i == 5 then
                     MistsOfPandariaNav[instanceTable.id] = self:CreateButton("TOPLEFT", MistsOfPandariaNav[previousInstance], "TOPLEFT", -40, instanceTable.name, instanceTable.id);
                     MistsOfPandariaNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
-                elseif i == 7 then
+                elseif i == 4 then
                     CataclysmNav[instanceTable.id] = self:CreateButton("TOPLEFT", CataclysmNav[previousInstance], "TOPLEFT", -40, instanceTable.name, instanceTable.id);
                     CataclysmNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
-                elseif i == 8 then
+                elseif i == 3 then
                     WrathOfTheLichKingNav[instanceTable.id] = self:CreateButton("TOPLEFT", WrathOfTheLichKingNav[previousInstance], "TOPLEFT", -40, instanceTable.name, instanceTable.id);
                     WrathOfTheLichKingNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
                 end
                 firstDungeon = true
                 previousInstance = instanceTable.id
             else
-                if i == 2 then
+                if i == 10 then
+                    DragonflightNav[instanceTable.id] = self:CreateButton("TOPLEFT", DragonflightNav[previousInstance], "TOPLEFT", -32, instanceTable.name, instanceTable.id);
+                    DragonflightNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
+                elseif i == 9 then
                     ShadowlandsNav[instanceTable.id] = self:CreateButton("TOPLEFT", ShadowlandsNav[previousInstance], "TOPLEFT", -32, instanceTable.name, instanceTable.id);
                     ShadowlandsNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
-                elseif i == 3 then
+                elseif i == 8 then
                     BattleForAzerothNav[instanceTable.id] = self:CreateButton("TOPLEFT", BattleForAzerothNav[previousInstance], "TOPLEFT", -32, instanceTable.name, instanceTable.id);
                     BattleForAzerothNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
-                elseif i == 4 then
+                elseif i == 7 then
                     LegionNav[instanceTable.id] = self:CreateButton("TOPLEFT", LegionNav[previousInstance], "TOPLEFT", -32, instanceTable.name, instanceTable.id);
                     LegionNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
-                elseif i == 5 then
+                elseif i == 6 then
                     WarlordsOfDraenorNav[instanceTable.id] = self:CreateButton("TOPLEFT", WarlordsOfDraenorNav[previousInstance], "TOPLEFT", -32, instanceTable.name, instanceTable.id);
                     WarlordsOfDraenorNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
-                elseif i == 6 then
+                elseif i == 5 then
                     MistsOfPandariaNav[instanceTable.id] = self:CreateButton("TOPLEFT", MistsOfPandariaNav[previousInstance], "TOPLEFT", -32, instanceTable.name, instanceTable.id);
                     MistsOfPandariaNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
-                elseif i == 7 then
+                elseif i == 4 then
                     CataclysmNav[instanceTable.id] = self:CreateButton("TOPLEFT", CataclysmNav[previousInstance], "TOPLEFT", -32, instanceTable.name, instanceTable.id);
                     CataclysmNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
-                elseif i == 8 then
+                elseif i == 3 then
                     WrathOfTheLichKingNav[instanceTable.id] = self:CreateButton("TOPLEFT", WrathOfTheLichKingNav[previousInstance], "TOPLEFT", -32, instanceTable.name, instanceTable.id);
                     WrathOfTheLichKingNav[instanceTable.id]:SetScript("OnClick", Instance_OnClick);
                 end
@@ -1357,10 +1490,20 @@ function Config:CreateGUI()
     local numButtons = 200 --Total number of button we need for any instance. We can hide excess button for raids/dungeons with less bosses
     local idCounter = 0
     local button
-    for j = 2, 8 do
+    for j = 3, 10 do
         local globalCounter = 1
         for i = 1, numButtons do
-            if j == 2 then
+            if j == 10 then
+                DragonflightContentButtons[i] = CreateFrame("Button","IAT_Achievement_"..j.."_"..globalCounter,DragonflightContent)
+                button = DragonflightContentButtons[i]
+                button:SetSize(DragonflightContent:GetWidth()-18,buttonHeight)
+                button:SetID(idCounter)
+                if i == 1 then
+                    button:SetPoint("TOPLEFT",0,0-(i-1)*buttonHeight)
+                else
+                    button:SetPoint("TOPLEFT",DragonflightContentButtons[i-1],"BOTTOMLEFT",0,0)
+                end
+            elseif j == 9 then
                 ShadowlandsContentButtons[i] = CreateFrame("Button","IAT_Achievement_"..j.."_"..globalCounter,ShadowlandsContent)
                 button = ShadowlandsContentButtons[i]
                 button:SetSize(ShadowlandsContent:GetWidth()-18,buttonHeight)
@@ -1370,7 +1513,7 @@ function Config:CreateGUI()
                 else
                     button:SetPoint("TOPLEFT",ShadowlandsContentButtons[i-1],"BOTTOMLEFT",0,0)
                 end
-            elseif j == 3 then
+            elseif j == 8 then
                 BattleForAzerothContentButtons[i] = CreateFrame("Button","IAT_Achievement_"..j.."_"..globalCounter,BattleForAzerothContent)
                 button = BattleForAzerothContentButtons[i]
                 button:SetSize(BattleForAzerothContent:GetWidth()-18,buttonHeight)
@@ -1380,7 +1523,7 @@ function Config:CreateGUI()
                 else
                     button:SetPoint("TOPLEFT",BattleForAzerothContentButtons[i-1],"BOTTOMLEFT",0,0)
                 end
-            elseif j == 4 then
+            elseif j == 7 then
                 LegionContentButtons[i] = CreateFrame("Button","IAT_Achievement_"..j.."_"..globalCounter,LegionContent)
                 button = LegionContentButtons[i]
                 button:SetSize(LegionContent:GetWidth()-18,buttonHeight)
@@ -1390,7 +1533,7 @@ function Config:CreateGUI()
                 else
                     button:SetPoint("TOPLEFT",LegionContentButtons[i-1],"BOTTOMLEFT",0,0)
                 end
-            elseif j == 5 then
+            elseif j == 6 then
                 WarlordsOfDraenorContentButtons[i] = CreateFrame("Button","IAT_Achievement_"..j.."_"..globalCounter,WarlordsOfDraenorContent)
                 button = WarlordsOfDraenorContentButtons[i]
                 button:SetSize(WarlordsOfDraenorContent:GetWidth()-18,buttonHeight)
@@ -1400,7 +1543,7 @@ function Config:CreateGUI()
                 else
                     button:SetPoint("TOPLEFT",WarlordsOfDraenorContentButtons[i-1],"BOTTOMLEFT",0,0)
                 end
-            elseif j == 6 then
+            elseif j == 5 then
                 MistsOfPandariaContentButtons[i] = CreateFrame("Button","IAT_Achievement_"..j.."_"..globalCounter,MistsOfPandariaContent)
                 button = MistsOfPandariaContentButtons[i]
                 button:SetSize(MistsOfPandariaContent:GetWidth()-18,buttonHeight)
@@ -1410,7 +1553,7 @@ function Config:CreateGUI()
                 else
                     button:SetPoint("TOPLEFT",MistsOfPandariaContentButtons[i-1],"BOTTOMLEFT",0,0)
                 end
-            elseif j == 7 then
+            elseif j == 4 then
                 CataclysmContentButtons[i] = CreateFrame("Button","IAT_Achievement_"..j.."_"..globalCounter,CataclysmContent)
                 button = CataclysmContentButtons[i]
                 button:SetSize(CataclysmContent:GetWidth()-18,buttonHeight)
@@ -1420,7 +1563,7 @@ function Config:CreateGUI()
                 else
                     button:SetPoint("TOPLEFT",CataclysmContentButtons[i-1],"BOTTOMLEFT",0,0)
                 end
-            elseif j == 8 then
+            elseif j == 3 then
                 WrathOfTheLichKingContentButtons[i] = CreateFrame("Button","IAT_Achievement_"..j.."_"..globalCounter,WrathOfTheLichKingContent)
                 button = WrathOfTheLichKingContentButtons[i]
                 button:SetSize(WrathOfTheLichKingContent:GetWidth()-18,buttonHeight)
@@ -1451,7 +1594,8 @@ function Config:CreateGUI()
             end)
             button.contentText:SetParent(button)
             button.contentText:SetPoint("TOPLEFT",16,0)
-            button.contentText:SetJustifyH("LEFT")
+            button.contentText:SetJustifyH("p","LEFT")
+
             --button.contentText:SetIndentedWordWrap(true)
 
             --Tactics
@@ -1481,7 +1625,7 @@ function Config:CreateGUI()
 		for instanceType,_ in pairs(core.Instances[expansion]) do
 			for instance,_ in pairs(core.Instances[expansion][instanceType]) do
                 for boss,_ in pairs(core.Instances[expansion][instanceType][instance]) do
-                    if boss ~= "name" then
+                    if string.match(boss, "boss") then
                         core.Instances[expansion][instanceType][instance][boss].generatedID = generatedIDCounter
                         generatedIDCounter = generatedIDCounter + 1
                         --print("Setting ID " .. generatedIDCounter .. " for " .. boss)
@@ -1510,360 +1654,420 @@ end
 -- What it Does:    Updates frame text for current instance clicked
 -- Purpose:         This is used when clicking on an instance to update the contents with current instance
 function Instance_OnClick(self)
-    local instanceLocation
-    local currentTabCompressed
-    local str
-    local numButtons = 200
-    local counter = 1
-    local counter2 = 1
-    local heightDifference = 30
-    local instanceType
+    if Config.currentTab > 1 then
+        local instanceLocation
+        local currentTabCompressed
+        local str
+        local numButtons = 200
+        local counter = 1
+        local counter2 = 1
+        local heightDifference = 30
+        local instanceType
 
-    if type(self) == "table" then
-        --Button has been pressed by the user
-        local InstanceID = self:GetID()     --Get the ID of the button that was pressed
+        if type(self) == "table" then
+            --Button has been pressed by the user
+            local InstanceID = self:GetID()     --Get the ID of the button that was pressed
 
-        --If raid is wrath of the lich king as is not Ulduar then we need to re-add the '-' so the button can find the correct raid
-        if Config.currentTab == 8 then --Current position of WOTLK expansion. Needs updating each expansion
-            local numberToNotConvert = {603,574,576,595,601,619,600,608,604,599,602,578,575,650,632,658,668}
-            if core:has_value(numberToNotConvert, InstanceID) == false then
-                InstanceID = tostring(InstanceID)
-                InstanceID = InstanceID:sub(1, -3) .. "-" .. InstanceID:sub(-2)
-            end
-        end
-
-        if core.Instances[Config.currentTab].Raids[InstanceID] ~= nil then
-            instanceLocation = core.Instances[Config.currentTab].Raids[InstanceID]
-            instanceType = "Raids"
-        elseif core.Instances[Config.currentTab].Dungeons[InstanceID] ~= nil then
-            instanceLocation = core.Instances[Config.currentTab].Dungeons[InstanceID]
-            instanceType = "Dungeons"
-        elseif core.Instances[Config.currentTab].Scenarios[InstanceID] ~= nil then
-            instanceLocation = core.Instances[Config.currentTab].Scenarios[InstanceID]
-            instanceType = "Scenarios"
-        end
-    elseif self == "API" then
-        --Button needs updating for current instance. Automatically clicked by addon
-        if IAT_InstanceType == "Raids" then
-            instanceLocation = core.Instances[IAT_CurrentTab].Raids[IAT_InstanceLocation]
-            instanceType = "Raids"
-        elseif IAT_InstanceType == "Dungeons" then
-            instanceLocation = core.Instances[IAT_CurrentTab].Dungeons[IAT_InstanceLocation]
-            instanceType = "Dungeons"
-        elseif IAT_InstanceType == "Scenarios" then
-            instanceLocation = core.Instances[IAT_CurrentTab].Scenarios[IAT_InstanceLocation]
-            instanceType = "Scenarios"
-        end
-
-        --Set the current tab to the expansion of the current instance
-        Config.currentTab = IAT_CurrentTab
-
-        if Config.currentTab == 2 then
-            Tab_OnClick(_G["AchievementTrackerTab2"])
-        elseif Config.currentTab == 3 then
-            Tab_OnClick(_G["AchievementTrackerTab3"])
-        elseif Config.currentTab == 4 then
-            Tab_OnClick(_G["AchievementTrackerTab4"])
-        elseif Config.currentTab == 5 then
-            Tab_OnClick(_G["AchievementTrackerTab5"])
-        elseif Config.currentTab == 6 then
-            Tab_OnClick(_G["AchievementTrackerTab6"])
-        elseif Config.currentTab == 7 then
-            Tab_OnClick(_G["AchievementTrackerTab7"])
-        elseif Config.currentTab == 8 then
-            Tab_OnClick(_G["AchievementTrackerTab8"])
-        end
-    else
-        --Button needs updating for current instance. Automatically clicked by addon
-        if core.instanceType == "Raids" then
-            instanceLocation = core.Instances[core.expansion].Raids[core.instance]
-            instanceType = "Raids"
-        elseif core.instanceType == "Dungeons" then
-            instanceLocation = core.Instances[core.expansion].Dungeons[core.instance]
-            instanceType = "Dungeons"
-        elseif core.instanceType == "Scenarios" then
-            instanceType = "Scenarios"
-            instanceLocation = core.Instances[core.expansion].Scenarios[core.instance]
-        end
-
-        --Set the current tab to the expansion of the current instance
-        Config.currentTab = core.expansion
-
-        --Set the current instance
-        Config.currentInstance = core.instance
-    end
-
-    local achievementFound = false --This is so we can display "All Achievements completed for this instance" if needed
-    if UIConfig.achievementsCompleted ~= nil then
-        UIConfig.achievementsCompleted:Hide()
-    end
-
-    --Hide all buttons initially
-    for i = 1, numButtons do
-        local button
-        if Config.currentTab == 2 then
-            button = ShadowlandsContentButtons[i]
-        elseif Config.currentTab == 3 then
-            button = BattleForAzerothContentButtons[i]
-        elseif Config.currentTab == 4 then
-            button = LegionContentButtons[i]
-        elseif Config.currentTab == 5 then
-            button = WarlordsOfDraenorContentButtons[i]
-        elseif Config.currentTab == 6 then
-            button = MistsOfPandariaContentButtons[i]
-        elseif Config.currentTab == 7 then
-            button = CataclysmContentButtons[i]
-        elseif Config.currentTab == 8 then
-            button = WrathOfTheLichKingContentButtons[i]
-        end
-        button:Hide()
-    end
-
-    for bossName,v in pairs(instanceLocation) do
-        if bossName ~= "name" then --Don't fetch the name of the instance that has been clicked
-            --Check if any players in the group need the achievement
-            local playersFound = false
-
-            --Check if any players in the group need the current achievement for the current instance they are inside off
-            if core:has_value(instanceLocation["boss" .. counter2].players, L["GUI_NoPlayersNeedAchievement"]) == false and #instanceLocation["boss" .. counter2].players ~= 0 then
-                playersFound = true
+            --If raid is wrath of the lich king as is not Ulduar then we need to re-add the '-' so the button can find the correct raid
+            if Config.currentTab == 3 then --Current position of WOTLK expansion. Needs updating each expansion
+                local numberToNotConvert = {603,574,576,595,601,619,600,608,604,599,602,578,575,650,632,658,668}
+                if core:has_value(numberToNotConvert, InstanceID) == false then
+                    InstanceID = tostring(InstanceID)
+                    InstanceID = InstanceID:sub(1, -3) .. "-" .. InstanceID:sub(-2)
+                end
             end
 
-            --If we are currently not tracking achievements for the current player then scan the achievements on current tab so we can honor hide/grey achievements option
-            if core.achievementTrackingEnabled == false then
-                local _, _, _, completed = GetAchievementInfo(instanceLocation["boss" .. counter2].achievement)
-                if completed == false then
+            if core.Instances[Config.currentTab].Raids[InstanceID] ~= nil then
+                instanceLocation = core.Instances[Config.currentTab].Raids[InstanceID]
+                instanceType = "Raids"
+            elseif core.Instances[Config.currentTab].Dungeons[InstanceID] ~= nil then
+                instanceLocation = core.Instances[Config.currentTab].Dungeons[InstanceID]
+                instanceType = "Dungeons"
+            elseif core.Instances[Config.currentTab].Scenarios[InstanceID] ~= nil then
+                instanceLocation = core.Instances[Config.currentTab].Scenarios[InstanceID]
+                instanceType = "Scenarios"
+            end
+        elseif self == "API" then
+            --Button needs updating for current instance. Automatically clicked by addon
+            if IAT_InstanceType == "Raids" then
+                instanceLocation = core.Instances[IAT_CurrentTab].Raids[IAT_InstanceLocation]
+                instanceType = "Raids"
+            elseif IAT_InstanceType == "Dungeons" then
+                instanceLocation = core.Instances[IAT_CurrentTab].Dungeons[IAT_InstanceLocation]
+                instanceType = "Dungeons"
+            elseif IAT_InstanceType == "Scenarios" then
+                instanceLocation = core.Instances[IAT_CurrentTab].Scenarios[IAT_InstanceLocation]
+                instanceType = "Scenarios"
+            end
+
+            --Set the current tab to the expansion of the current instance
+            Config.currentTab = IAT_CurrentTab
+
+            if Config.currentTab == 3 then
+                Tab_OnClick(_G["AchievementTrackerTab2"])
+            elseif Config.currentTab == 4 then
+                Tab_OnClick(_G["AchievementTrackerTab3"])
+            elseif Config.currentTab == 5 then
+                Tab_OnClick(_G["AchievementTrackerTab4"])
+            elseif Config.currentTab == 6 then
+                Tab_OnClick(_G["AchievementTrackerTab5"])
+            elseif Config.currentTab == 7 then
+                Tab_OnClick(_G["AchievementTrackerTab6"])
+            elseif Config.currentTab == 8 then
+                Tab_OnClick(_G["AchievementTrackerTab7"])
+            elseif Config.currentTab == 9 then
+                Tab_OnClick(_G["AchievementTrackerTab8"])
+            elseif Config.currentTab == 10 then
+                Tab_OnClick(_G["AchievementTrackerTab9"])
+            end
+        else
+            --Button needs updating for current instance. Automatically clicked by addon
+            if core.instanceType == "Raids" then
+                instanceLocation = core.Instances[core.expansion].Raids[core.instance]
+                instanceType = "Raids"
+            elseif core.instanceType == "Dungeons" then
+                instanceLocation = core.Instances[core.expansion].Dungeons[core.instance]
+                instanceType = "Dungeons"
+            elseif core.instanceType == "Scenarios" then
+                instanceType = "Scenarios"
+                instanceLocation = core.Instances[core.expansion].Scenarios[core.instance]
+            end
+
+            --Set the current tab to the expansion of the current instance
+            -- if core.expansion == 3 then
+            --     Config.currentTab = 9
+            -- elseif core.expansion == 4 then
+            --     Config.currentTab = 8
+            -- elseif core.expansion == 5 then
+            --     Config.currentTab = 7
+            -- elseif core.expansion == 6 then
+            --     Config.currentTab = 6
+            -- elseif core.expansion == 7 then
+            --     Config.currentTab = 5
+            -- elseif core.expansion == 8 then
+            --     Config.currentTab = 4
+            -- elseif core.expansion == 9 then
+            --     Config.currentTab = 3
+            -- elseif core.expansion == 10 then
+            --     Config.currentTab = 2
+            -- end
+
+            --Set the current instance
+            Config.currentInstance = core.instance
+        end
+
+        local achievementFound = false --This is so we can display "All Achievements completed for this instance" if needed
+        if UIConfig.achievementsCompleted ~= nil then
+            UIConfig.achievementsCompleted:Hide()
+        end
+
+        --Hide all buttons initially
+        for i = 1, numButtons do
+            local button
+
+            if Config.currentTab == 10 then
+                button = DragonflightContentButtons[i]
+            elseif Config.currentTab == 9 then
+                button = ShadowlandsContentButtons[i]
+            elseif Config.currentTab == 8 then
+                button = BattleForAzerothContentButtons[i]
+            elseif Config.currentTab == 7 then
+                button = LegionContentButtons[i]
+            elseif Config.currentTab == 6 then
+                button = WarlordsOfDraenorContentButtons[i]
+            elseif Config.currentTab == 5 then
+                button = MistsOfPandariaContentButtons[i]
+            elseif Config.currentTab == 4 then
+                button = CataclysmContentButtons[i]
+            elseif Config.currentTab == 3 then
+                button = WrathOfTheLichKingContentButtons[i]
+            end
+            button:Hide()
+        end
+
+        for bossName,v in pairs(instanceLocation) do
+            if string.match(bossName, "boss") then --Don't fetch the name of the instance that has been clicked
+                --Check if any players in the group need the achievement
+                local playersFound = false
+
+                --Check if any players in the group need the current achievement for the current instance they are inside off
+                if core:has_value(instanceLocation["boss" .. counter2].players, L["GUI_NoPlayersNeedAchievement"]) == false and #instanceLocation["boss" .. counter2].players ~= 0 then
                     playersFound = true
                 end
-            end
 
-            --Check whether or not to display the current achievements. This is done incase user wants to hide completed achievements
-            if playersFound == true or core.achievementDisplayStatus == "show" or core.achievementDisplayStatus == "grey" then
-                achievementFound = true
-
-                --We need to display the current achievement
-                local button
-
-                --Header
-                --Get the set of buttons for the current selected tab
-                if Config.currentTab == 2 then
-                    button = ShadowlandsContentButtons[counter]
-                elseif Config.currentTab == 3 then
-                    button = BattleForAzerothContentButtons[counter]
-                elseif Config.currentTab == 4 then
-                    button = LegionContentButtons[counter]
-                elseif Config.currentTab == 5 then
-                    button = WarlordsOfDraenorContentButtons[counter]
-                elseif Config.currentTab == 6 then
-                    button = MistsOfPandariaContentButtons[counter]
-                elseif Config.currentTab == 7 then
-                    button = CataclysmContentButtons[counter]
-                elseif Config.currentTab == 8 then
-                    button = WrathOfTheLichKingContentButtons[counter]
-                end
-
-                button:Show()
-
-                if counter > 1 then
-                    button:ClearAllPoints()
-                    if Config.currentTab == 2 then
-                        button:SetPoint("TOPLEFT",ShadowlandsContentButtons[counter-1],"BOTTOMLEFT",0,30-heightDifference)
-                    elseif Config.currentTab == 3 then
-                        button:SetPoint("TOPLEFT",BattleForAzerothContentButtons[counter-1],"BOTTOMLEFT",0,30-heightDifference)
-                    elseif Config.currentTab == 4 then
-                        button:SetPoint("TOPLEFT",LegionContentButtons[counter-1],"BOTTOMLEFT",0,30-heightDifference)
-                    elseif Config.currentTab == 5 then
-                        button:SetPoint("TOPLEFT",WarlordsOfDraenorContentButtons[counter-1],"BOTTOMLEFT",0,30-heightDifference)
-                    elseif Config.currentTab == 6 then
-                        button:SetPoint("TOPLEFT",MistsOfPandariaContentButtons[counter-1],"BOTTOMLEFT",0,30-heightDifference)
-                    elseif Config.currentTab == 7 then
-                        button:SetPoint("TOPLEFT",CataclysmContentButtons[counter-1],"BOTTOMLEFT",0,30-heightDifference)
-                    elseif Config.currentTab == 8 then
-                        button:SetPoint("TOPLEFT",WrathOfTheLichKingContentButtons[counter-1],"BOTTOMLEFT",0,30-heightDifference)
-                    end
-                end
-                button.headerText:SetText(Config:getLocalisedEncouterName(instanceLocation["boss" .. counter2].name,instanceType))
-                button.contentText:SetID(instanceLocation["boss" .. counter2].achievement)
-                button.headerText:Show()
-                button.contentText:Hide()
-                button:SetNormalTexture("Interface\\Common\\Dark-GoldFrame-Button")
-
-                button.tactics:Show()
-                button.tactics:SetSize(120, 15)
-                button.tactics:SetScript("OnClick", Tactics_OnClick);
-                button.players:Show()
-                button.players:SetSize(120, 15)
-                button.players:SetScript("OnClick", Player_OnClick);
-                button.enabled:Show()
-                button.enabled:SetSize(20, 15)
-                button.enabled:SetChecked(instanceLocation["boss" .. counter2].enabled)
-                button.enabled:SetScript("OnClick", Enabled_OnClick);
-                if instanceLocation["boss" .. counter2].track ~= nil then
-                    button.enabledText:Show()
-                    button.enabledText:SetSize(30, 15)
-                else
-                    button.enabledText:Hide()
-                    button.enabled:Hide()
-                end
-
-                --print(instanceLocation["boss" .. counter2].generatedID)
-
-                --We need to set the ID of the tactics/players/track buttons to the id of the current boss so when clicked we know which boss we need to fetch info for
-                button.tactics:SetID(instanceLocation["boss" .. counter2].generatedID)
-                button.players:SetID(instanceLocation["boss" .. counter2].generatedID)
-                button.enabled:SetID(instanceLocation["boss" .. counter2].generatedID)
-
-                counter = counter + 1
-
-                if playersFound == false and core.achievementDisplayStatus == "grey" then
-                    --Grey Out/Hide achievements
-                    button.headerText:SetTextColor(0.827, 0.811, 0.811, 0.3)
-                else
-                    --Show/Un-grey achievements
-                    button.headerText:SetTextColor(1, 0.854, 0.039)
-                end
-
-                --Content
-                if Config.currentTab == 2 then
-                    button = ShadowlandsContentButtons[counter]
-                elseif Config.currentTab == 3 then
-                    button = BattleForAzerothContentButtons[counter]
-                elseif Config.currentTab == 4 then
-                    button = LegionContentButtons[counter]
-                elseif Config.currentTab == 5 then
-                    button = WarlordsOfDraenorContentButtons[counter]
-                elseif Config.currentTab == 6 then
-                    button = MistsOfPandariaContentButtons[counter]
-                elseif Config.currentTab == 7 then
-                    button = CataclysmContentButtons[counter]
-                elseif Config.currentTab == 8 then
-                    button = WrathOfTheLichKingContentButtons[counter]
-                end
-
-                local players = L["GUI_Players"] .. ": "
-                for i = 1, #instanceLocation["boss" .. counter2].players do
-                    players = players .. instanceLocation["boss" .. counter2].players[i] .. ", "
-                end
-
-                --If tactics are in a table then we need to show diferent tactics for each faction
-                local tactics
-                if type(instanceLocation["boss" .. counter2].tactics) == "table" then
-                    if UnitFactionGroup("player") == "Alliance" then
-                        tactics = instanceLocation["boss" .. counter2].tactics[1]
-                    else
-                        tactics = instanceLocation["boss" .. counter2].tactics[2]
-                    end
-                else
-                    tactics = instanceLocation["boss" .. counter2].tactics
-                end
-
-                tactics = tactics:gsub("%\n", "<br />")
-                local tacticsStr = tactics == '' and '' or L["GUI_Tactic"] .. ": " .. tactics
-
-                --Only show players if user has enabled achievement tracking
-                button.contentText:SetWidth(500)
-                if (GetLocale() == 'koKR') then
-                    button.contentText:SetFont("Fonts\\2002.TTF", 12);
-                elseif (GetLocale() == 'zhCN') then
-                    button.contentText:SetFont("Fonts\\ARKai_T.ttf", 16);
-                elseif (GetLocale() == 'zhTW') then
-                    button.contentText:SetFont("Fonts\\blei00d.TTF", 16);
-                elseif (GetLocale() == 'ruRU') then
-                    button.contentText:SetFont("Fonts\\FRIZQT___CYR.TTF", 12);
-                else
-                    button.contentText:SetFont("Fonts\\FRIZQT__.TTF", 12);
-                end
-                local achievementLink = GetAchievementLink(instanceLocation["boss" .. counter2].achievement)
-		        achievementLink = achievementLink:gsub("&", "&amp;"); -- & in the achievement name would resolve the html syntax wrong
+                --If we are currently not tracking achievements for the current player then scan the achievements on current tab so we can honor hide/grey achievements option
                 if core.achievementTrackingEnabled == false then
-                    if instanceLocation["boss" .. counter2].image ~= nil then
-                        local imageTable = instanceLocation["boss" .. counter2].image
-                        button.contentText:SetText("<html><body><p>" .. L["GUI_Achievement"] .. ": " .. achievementLink .. "<br /><br />" .. tacticsStr .. "</p><img src='Interface\\AddOns\\InstanceAchievementTracker\\Images\\" .. imageTable[1] .. "' width='" .. imageTable[2] .. "' height='" .. imageTable[3] .. "' align='center'/></body></html>")
-                    else
-                        button.contentText:SetText("<html><body><p>" .. L["GUI_Achievement"] .. ": " .. achievementLink .. "<br /><br />" .. tacticsStr .. "</p></body></html>")
+                    local _, _, _, completed = GetAchievementInfo(instanceLocation["boss" .. counter2].achievement)
+                    if completed == false then
+                        playersFound = true
                     end
-                else
-                    if instanceLocation["boss" .. counter2].image ~= nil then
-                        local imageTable = instanceLocation["boss" .. counter2].image
-                        button.contentText:SetText("<html><body><p>" .. L["GUI_Achievement"] .. ": " .. achievementLink .. "<br /><br />" .. players .. "<br /><br />" .. tacticsStr .. "</p><img src='Interface\\AddOns\\InstanceAchievementTracker\\Images\\" .. imageTable[1] .. "' width='" .. imageTable[2] .. "' height='" .. imageTable[3] .. "' align='center'/></body></html>")
-                    else
-                        button.contentText:SetText("<html><body><p>" .. L["GUI_Achievement"] .. ": " .. achievementLink .. "<br /><br />" .. players .. "<br /><br />" .. tacticsStr .. "</p></body></html>")
-                    end
-
                 end
 
-                if playersFound == false and core.achievementDisplayStatus == "grey" then
-                    --Grey Out/Hide achievements
-                    button.contentText:SetTextColor(0.827, 0.811, 0.811, 0.3)
-                else
-                    --Show/Un-grey achievements
-                    button.contentText:SetTextColor(1, 1, 1)
+                --Check whether or not to display the current achievements. This is done incase user wants to hide completed achievements
+                if playersFound == true or core.achievementDisplayStatus == "show" or core.achievementDisplayStatus == "grey" then
+                    achievementFound = true
+
+                    --We need to display the current achievement
+                    local button
+
+                    --Header
+                    --Get the set of buttons for the current selected tab
+                    if Config.currentTab == 10 then
+                        button = DragonflightContentButtons[counter]
+                    elseif Config.currentTab == 9 then
+                        button = ShadowlandsContentButtons[counter]
+                    elseif Config.currentTab == 8 then
+                        button = BattleForAzerothContentButtons[counter]
+                    elseif Config.currentTab == 7 then
+                        button = LegionContentButtons[counter]
+                    elseif Config.currentTab == 6 then
+                        button = WarlordsOfDraenorContentButtons[counter]
+                    elseif Config.currentTab == 5 then
+                        button = MistsOfPandariaContentButtons[counter]
+                    elseif Config.currentTab == 4 then
+                        button = CataclysmContentButtons[counter]
+                    elseif Config.currentTab == 3 then
+                        button = WrathOfTheLichKingContentButtons[counter]
+                    end
+
+                    button:Show()
+
+                    if counter > 1 then
+                        button:ClearAllPoints()
+                        if Config.currentTab == 10 then
+                            button:SetPoint("TOPLEFT",DragonflightContentButtons[counter-1],"BOTTOMLEFT",0,30-heightDifference)
+                        elseif Config.currentTab == 9 then
+                            button:SetPoint("TOPLEFT",ShadowlandsContentButtons[counter-1],"BOTTOMLEFT",0,30-heightDifference)
+                        elseif Config.currentTab == 8 then
+                            button:SetPoint("TOPLEFT",BattleForAzerothContentButtons[counter-1],"BOTTOMLEFT",0,30-heightDifference)
+                        elseif Config.currentTab == 7 then
+                            button:SetPoint("TOPLEFT",LegionContentButtons[counter-1],"BOTTOMLEFT",0,30-heightDifference)
+                        elseif Config.currentTab == 6 then
+                            button:SetPoint("TOPLEFT",WarlordsOfDraenorContentButtons[counter-1],"BOTTOMLEFT",0,30-heightDifference)
+                        elseif Config.currentTab == 5 then
+                            button:SetPoint("TOPLEFT",MistsOfPandariaContentButtons[counter-1],"BOTTOMLEFT",0,30-heightDifference)
+                        elseif Config.currentTab == 4 then
+                            button:SetPoint("TOPLEFT",CataclysmContentButtons[counter-1],"BOTTOMLEFT",0,30-heightDifference)
+                        elseif Config.currentTab == 3 then
+                            button:SetPoint("TOPLEFT",WrathOfTheLichKingContentButtons[counter-1],"BOTTOMLEFT",0,30-heightDifference)
+                        end
+                    end
+
+                    if core.gameVersionMajor == 3 and Config.currentTab == 3 then
+                        --Wrath classic requires us to use localised names as the encounter journal is not avaliable
+                        button.headerText:SetText(instanceLocation["boss" .. counter2].nameWrath)
+                    else
+                        button.headerText:SetText(Config:getLocalisedEncouterName(instanceLocation["boss" .. counter2].name,instanceType))
+                    end
+
+                    button.contentText:SetID(instanceLocation["boss" .. counter2].achievement)
+                    button.headerText:Show()
+                    button.contentText:Hide()
+                    button:SetNormalTexture("Interface\\Common\\Dark-GoldFrame-Button")
+
+                    button.tactics:Show()
+                    button.tactics:SetSize(120, 15)
+                    button.tactics:SetScript("OnClick", Tactics_OnClick);
+                    button.players:Show()
+                    button.players:SetSize(120, 15)
+                    button.players:SetScript("OnClick", Player_OnClick);
+                    button.enabled:Show()
+                    button.enabled:SetSize(20, 15)
+                    button.enabled:SetChecked(instanceLocation["boss" .. counter2].enabled)
+                    button.enabled:SetScript("OnClick", Enabled_OnClick);
+                    if instanceLocation["boss" .. counter2].track ~= nil then
+                        button.enabledText:Show()
+                        button.enabledText:SetSize(30, 15)
+                    else
+                        button.enabledText:Hide()
+                        button.enabled:Hide()
+                    end
+
+                    --print(instanceLocation["boss" .. counter2].generatedID)
+
+                    --We need to set the ID of the tactics/players/track buttons to the id of the current boss so when clicked we know which boss we need to fetch info for
+                    button.tactics:SetID(instanceLocation["boss" .. counter2].generatedID)
+                    button.players:SetID(instanceLocation["boss" .. counter2].generatedID)
+                    button.enabled:SetID(instanceLocation["boss" .. counter2].generatedID)
+
+                    counter = counter + 1
+
+                    if playersFound == false and core.achievementDisplayStatus == "grey" then
+                        --Grey Out/Hide achievements
+                        button.headerText:SetTextColor(0.827, 0.811, 0.811, 0.3)
+                    else
+                        --Show/Un-grey achievements
+                        button.headerText:SetTextColor(1, 0.854, 0.039)
+                    end
+
+                    --Content
+                    if Config.currentTab == 10 then
+                        button = DragonflightContentButtons[counter]
+                    elseif Config.currentTab == 9 then
+                        button = ShadowlandsContentButtons[counter]
+                    elseif Config.currentTab == 8 then
+                        button = BattleForAzerothContentButtons[counter]
+                    elseif Config.currentTab == 7 then
+                        button = LegionContentButtons[counter]
+                    elseif Config.currentTab == 6 then
+                        button = WarlordsOfDraenorContentButtons[counter]
+                    elseif Config.currentTab == 5 then
+                        button = MistsOfPandariaContentButtons[counter]
+                    elseif Config.currentTab == 4 then
+                        button = CataclysmContentButtons[counter]
+                    elseif Config.currentTab == 3 then
+                        button = WrathOfTheLichKingContentButtons[counter]
+                    end
+
+                    local players = L["GUI_Players"] .. ": "
+                    for i = 1, #instanceLocation["boss" .. counter2].players do
+                        players = players .. instanceLocation["boss" .. counter2].players[i] .. ", "
+                    end
+
+                    --If tactics are in a table then we need to show diferent tactics for each faction
+                    local tactics
+                    if type(instanceLocation["boss" .. counter2].tactics) == "table" then
+                        if UnitFactionGroup("player") == "Alliance" then
+                            if core.gameVersionMajor > 3 then
+                                tactics = instanceLocation["boss" .. counter2].tactics[1]
+                            else
+                                tactics = instanceLocation["boss" .. counter2].tacticsClassic[1]
+                            end
+                        else
+                            if core.gameVersionMajor > 3 then
+                                tactics = instanceLocation["boss" .. counter2].tactics[2]
+                            else
+                                tactics = instanceLocation["boss" .. counter2].tacticsClassic[2]
+                            end
+                        end
+                    else
+                        if core.gameVersionMajor > 3 then
+                            tactics = instanceLocation["boss" .. counter2].tactics
+                        else
+                            tactics = instanceLocation["boss" .. counter2].tacticsClassic
+                        end
+                    end
+
+                    tactics = tactics:gsub("%\n", "<br />")
+                    local tacticsStr = tactics == '' and '' or L["GUI_Tactic"] .. ": " .. tactics
+
+                    --Only show players if user has enabled achievement tracking
+                    button.contentText:SetWidth(600)
+                    if (GetLocale() == 'koKR') then
+                        button.contentText:SetFont("Fonts\\2002.TTF", 12);
+                    elseif (GetLocale() == 'zhCN') then
+                        button.contentText:SetFont("Fonts\\ARKai_T.ttf", 16);
+                    elseif (GetLocale() == 'zhTW') then
+                        button.contentText:SetFont("Fonts\\blei00d.TTF", 16);
+                    elseif (GetLocale() == 'ruRU') then
+                        button.contentText:SetFont("Fonts\\FRIZQT___CYR.TTF", 12);
+                    else
+                        if core.gameVersionMajor > 9 then
+                            button.contentText:SetFont("p","Fonts\\FRIZQT__.TTF", 12, "OUTLINE, MONOCHROME");
+                        else
+                            button.contentText:SetFont("Fonts\\FRIZQT__.TTF", 12);
+                        end
+                    end
+                    local achievementLink = GetAchievementLink(instanceLocation["boss" .. counter2].achievement)
+                    achievementLink = achievementLink:gsub("&", "&amp;"); -- & in the achievement name would resolve the html syntax wrong
+                    if core.achievementTrackingEnabled == false then
+                        if instanceLocation["boss" .. counter2].image ~= nil then
+                            local imageTable = instanceLocation["boss" .. counter2].image
+                            button.contentText:SetText("<html><body><p>" .. L["GUI_Achievement"] .. ": " .. achievementLink .. "<br /><br />" .. tacticsStr .. "</p><img src='Interface\\AddOns\\InstanceAchievementTracker\\Images\\" .. imageTable[1] .. "' width='" .. imageTable[2] .. "' height='" .. imageTable[3] .. "' align='center'/></body></html>")
+                        else
+                            button.contentText:SetText("<html><body><p>" .. L["GUI_Achievement"] .. ": " .. achievementLink .. "<br /><br />" .. tacticsStr .. "</p></body></html>")
+                        end
+                    else
+                        if instanceLocation["boss" .. counter2].image ~= nil then
+                            local imageTable = instanceLocation["boss" .. counter2].image
+                            button.contentText:SetText("<html><body><p>" .. L["GUI_Achievement"] .. ": " .. achievementLink .. "<br /><br />" .. players .. "<br /><br />" .. tacticsStr .. "</p><img src='Interface\\AddOns\\InstanceAchievementTracker\\Images\\" .. imageTable[1] .. "' width='" .. imageTable[2] .. "' height='" .. imageTable[3] .. "' align='center'/></body></html>")
+                        else
+                            button.contentText:SetText("<html><body><p>" .. L["GUI_Achievement"] .. ": " .. achievementLink .. "<br /><br />" .. players .. "<br /><br />" .. tacticsStr .. "</p></body></html>")
+                        end
+
+                    end
+
+                    if playersFound == false and core.achievementDisplayStatus == "grey" then
+                        --Grey Out/Hide achievements
+                        button.contentText:SetTextColor("p", 0.827, 0.811, 0.811, 0.3)
+                    else
+                        --Show/Un-grey achievements
+                        button.contentText:SetTextColor("p", 1, 1, 1)
+                    end
+
+                    button.contentText:Show()
+                    button.headerText:Hide()
+                    --button:SetNormalTexture(nil)
+                    button.contentText:SetHeight(button.contentText:GetContentHeight())
+                    button:SetHeight(button.contentText:GetContentHeight())
+
+                    button.tactics:Hide()
+                    button.players:Hide()
+                    button.enabled:Hide()
+                    button.enabledText:Hide()
+
+                    button.achievementID = instanceLocation["boss" .. counter2].achievement
+                    button:SetScript("OnEnter", Achievement_OnEnter)
+                    button:SetScript("OnLeave", Achievement_OnLeave)
+                    button:SetScript("OnHide", Achievement_OnHide)
+
+                    button:Show()
+                    counter = counter + 1
                 end
-
-                button.contentText:Show()
-                button.headerText:Hide()
-                button:SetNormalTexture(nil)
-                button.contentText:SetHeight(button.contentText:GetContentHeight())
-                button:SetHeight(button.contentText:GetContentHeight())
-
-                button.tactics:Hide()
-                button.players:Hide()
-                button.enabled:Hide()
-                button.enabledText:Hide()
-
-                button.achievementID = instanceLocation["boss" .. counter2].achievement
-                button:SetScript("OnEnter", Achievement_OnEnter)
-                button:SetScript("OnLeave", Achievement_OnLeave)
-                button:SetScript("OnHide", Achievement_OnHide)
-
-                button:Show()
-                counter = counter + 1
+                counter2 = counter2 + 1
             end
-            counter2 = counter2 + 1
-        end
-    end
-
-    if achievementFound == false then
-        if UIConfig.achievementsCompleted == nil then
-            UIConfig.achievementsCompleted = UIConfig:CreateFontString(nil, "OVERLAY", "GameFontHighlightLarge")
-            UIConfig.achievementsCompleted:SetPoint("CENTER", UIConfig.ScrollFrame2, "CENTER", -20, 0);
-            UIConfig.achievementsCompleted:SetWordWrap(true)
-            UIConfig.achievementsCompleted:SetWidth(500)
         end
 
-        if instanceType == "Scenarios" then
-            UIConfig.achievementsCompleted:SetText(L["GUI_AchievementsCompletedForInstance"] .. " " .. Config:getLocalisedScenarioName(instanceLocation.name));
-        else
-            UIConfig.achievementsCompleted:SetText(L["GUI_AchievementsCompletedForInstance"] .. " " .. Config:getLocalisedInstanceName(instanceLocation.name));
-        end
-        UIConfig.achievementsCompleted:Show()
-    end
+        if achievementFound == false then
+            if UIConfig.achievementsCompleted == nil then
+                UIConfig.achievementsCompleted = UIConfig:CreateFontString(nil, "OVERLAY", "GameFontHighlightLarge")
+                UIConfig.achievementsCompleted:SetPoint("CENTER", UIConfig.ScrollFrame2, "CENTER", -20, 0);
+                UIConfig.achievementsCompleted:SetWordWrap(true)
+                UIConfig.achievementsCompleted:SetWidth(600)
+            end
 
-    --Hide the remaining buttons
-    for i = counter, numButtons do
-        local button
-        if Config.currentTab == 2 then
-            button = ShadowlandsContentButtons[i]
-        elseif Config.currentTab == 3 then
-            button = BattleForAzerothContentButtons[i]
-        elseif Config.currentTab == 4 then
-            button = LegionContentButtons[i]
-        elseif Config.currentTab == 5 then
-            button = WarlordsOfDraenorContentButtons[i]
-        elseif Config.currentTab == 6 then
-            button = MistsOfPandariaContentButtons[i]
-        elseif Config.currentTab == 7 then
-            button = CataclysmContentButtons[i]
-        elseif Config.currentTab == 8 then
-            button = WrathOfTheLichKingContentButtons[i]
+            if instanceType == "Scenarios" then
+                UIConfig.achievementsCompleted:SetText(L["GUI_AchievementsCompletedForInstance"] .. " " .. Config:getLocalisedScenarioName(instanceLocation.name));
+            else
+                if core.gameVersionMajor == 3 and Config.currentTab == 3 then
+                    UIConfig.achievementsCompleted:SetText(L["GUI_AchievementsCompletedForInstance"] .. " " .. instanceLocation.nameWrath);
+                else
+                    UIConfig.achievementsCompleted:SetText(L["GUI_AchievementsCompletedForInstance"] .. " " .. Config:getLocalisedInstanceName(instanceLocation.name));
+                end
+            end
+            UIConfig.achievementsCompleted:Show()
         end
-        button:Hide()
+
+        --Hide the remaining buttons
+        for i = counter, numButtons do
+            local button
+            if Config.currentTab == 10 then
+                button = DragonflightContentButtons[i]
+            elseif Config.currentTab == 9 then
+                button = ShadowlandsContentButtons[i]
+            elseif Config.currentTab == 8 then
+                button = BattleForAzerothContentButtons[i]
+            elseif Config.currentTab == 7 then
+                button = LegionContentButtons[i]
+            elseif Config.currentTab == 6 then
+                button = WarlordsOfDraenorContentButtons[i]
+            elseif Config.currentTab == 5 then
+                button = MistsOfPandariaContentButtons[i]
+            elseif Config.currentTab == 4 then
+                button = CataclysmContentButtons[i]
+            elseif Config.currentTab == 3 then
+                button = WrathOfTheLichKingContentButtons[i]
+            end
+            button:Hide()
+        end
     end
 end
 
 function ClearGUITabs()
     for i = 1, 200 do
         local button
+        button = DragonflightContentButtons[i]
+        button:Hide()
         button = ShadowlandsContentButtons[i]
         button:Hide()
         button = BattleForAzerothContentButtons[i]
@@ -1891,7 +2095,16 @@ end
 
 function Achievement_OnEnter(self)
     local foundAchievement = false
-    if Config.currentTab == 2 then
+    if Config.currentTab == 10 then
+        for i = 1, #DragonflightContentButtons do
+            if MouseIsOver(DragonflightContentButtons[i]) then
+                AltGameTooltip:SetOwner(UIConfig, "ANCHOR_TOPRIGHT")
+                AltGameTooltip:SetHyperlink(GetAchievementLink(DragonflightContentButtons[i].achievementID))
+                AltGameTooltip:Show()
+                foundAchievement = true
+            end
+        end
+    elseif Config.currentTab == 9 then
         for i = 1, #ShadowlandsContentButtons do
             if MouseIsOver(ShadowlandsContentButtons[i]) then
                 AltGameTooltip:SetOwner(UIConfig, "ANCHOR_TOPRIGHT")
@@ -1900,7 +2113,7 @@ function Achievement_OnEnter(self)
                 foundAchievement = true
             end
         end
-    elseif Config.currentTab == 3 then
+    elseif Config.currentTab == 8 then
         for i = 1, #BattleForAzerothContentButtons do
             if MouseIsOver(BattleForAzerothContentButtons[i]) then
                 AltGameTooltip:SetOwner(UIConfig, "ANCHOR_TOPRIGHT")
@@ -1909,7 +2122,7 @@ function Achievement_OnEnter(self)
                 foundAchievement = true
             end
         end
-    elseif Config.currentTab == 4 then
+    elseif Config.currentTab == 7 then
         for i = 1, #LegionContentButtons do
             if MouseIsOver(LegionContentButtons[i]) then
                 AltGameTooltip:SetOwner(UIConfig, "ANCHOR_TOPRIGHT")
@@ -1918,7 +2131,7 @@ function Achievement_OnEnter(self)
                 foundAchievement = true
             end
         end
-    elseif Config.currentTab == 5 then
+    elseif Config.currentTab == 6 then
         for i = 1, #WarlordsOfDraenorContentButtons do
             if MouseIsOver(WarlordsOfDraenorContentButtons[i]) then
                 AltGameTooltip:SetOwner(UIConfig, "ANCHOR_TOPRIGHT")
@@ -1927,7 +2140,7 @@ function Achievement_OnEnter(self)
                 foundAchievement = true
             end
         end
-    elseif Config.currentTab == 6 then
+    elseif Config.currentTab == 5 then
         for i = 1, #MistsOfPandariaContentButtons do
             if MouseIsOver(MistsOfPandariaContentButtons[i]) then
                 AltGameTooltip:SetOwner(UIConfig, "ANCHOR_TOPRIGHT")
@@ -1936,7 +2149,7 @@ function Achievement_OnEnter(self)
                 foundAchievement = true
             end
         end
-    elseif Config.currentTab == 7 then
+    elseif Config.currentTab == 4 then
         for i = 1, #CataclysmContentButtons do
             if MouseIsOver(CataclysmContentButtons[i]) then
                 AltGameTooltip:SetOwner(UIConfig, "ANCHOR_TOPRIGHT")
@@ -1945,7 +2158,7 @@ function Achievement_OnEnter(self)
                 foundAchievement = true
             end
         end
-    elseif Config.currentTab == 8 then
+    elseif Config.currentTab == 3 then
         for i = 1, #WrathOfTheLichKingContentButtons do
             if MouseIsOver(WrathOfTheLichKingContentButtons[i]) then
                 AltGameTooltip:SetOwner(UIConfig, "ANCHOR_TOPRIGHT")
@@ -1967,7 +2180,7 @@ function Player_OnClick(self)
 		for instanceType,_ in pairs(core.Instances[expansion]) do
 			for instance,_ in pairs(core.Instances[expansion][instanceType]) do
                 for boss,_ in pairs(core.Instances[expansion][instanceType][instance]) do
-                    if boss ~= "name" then
+                    if string.match(boss, "boss") then
                         if core.Instances[expansion][instanceType][instance][boss].generatedID == self:GetID() then
                             local players
                             if core.inInstance == true then
@@ -2010,7 +2223,7 @@ function Tactics_OnClick(self)
 		for instanceType,_ in pairs(core.Instances[expansion]) do
 			for instance,_ in pairs(core.Instances[expansion][instanceType]) do
                 for boss,_ in pairs(core.Instances[expansion][instanceType][instance]) do
-                    if boss ~= "name" then
+                    if string.match(boss, "boss") then
                         if core.Instances[expansion][instanceType][instance][boss].generatedID == self:GetID() then
                             if type(core.Instances[expansion][instanceType][instance][boss].tactics) == "table" then
                                 if UnitFactionGroup("player") == "Alliance" then
@@ -2035,7 +2248,7 @@ function Enabled_OnClick(self)
 		for instanceType,_ in pairs(core.Instances[expansion]) do
 			for instance,_ in pairs(core.Instances[expansion][instanceType]) do
                 for boss,_ in pairs(core.Instances[expansion][instanceType][instance]) do
-                    if boss ~= "name" then
+                    if string.match(boss, "boss") then
                         if core.Instances[expansion][instanceType][instance][boss].generatedID == self:GetID() then
                             core.Instances[expansion][instanceType][instance][boss].enabled = self:GetChecked()
                             --Print to chat
@@ -2288,7 +2501,7 @@ function GetNameFromNpcIDCache(npcID)
 			for instanceType, _ in pairs(core.Instances[expansion]) do
 				for instance, _ in pairs(core.Instances[expansion][instanceType]) do
 					for boss, _ in pairs(core.Instances[expansion][instanceType][instance]) do
-                        if boss ~= "name" then
+                        if string.match(boss, "boss") then
                             if type(core.Instances[expansion][instanceType][instance][boss].tactics) == "table" then
                                 if UnitFactionGroup("player") == "Alliance" then
                                     if string.find(core.Instances[expansion][instanceType][instance][boss].tactics[1], ("IAT_" .. npcID)) then
@@ -2322,7 +2535,7 @@ function GetNameFromNpcIDCache(npcID)
                     for instanceType, _ in pairs(core.Instances[expansion]) do
                         for instance, _ in pairs(core.Instances[expansion][instanceType]) do
                             for boss, _ in pairs(core.Instances[expansion][instanceType][instance]) do
-                                if boss ~= "name" then
+                                if string.match(boss, "boss") then
                                     if string.find(core.Instances[expansion][instanceType][instance][boss].tactics, ("IAT_" .. npcID)) then
                                         core.Instances[expansion][instanceType][instance][boss].tactics = string.gsub(core.Instances[expansion][instanceType][instance][boss].tactics, ("IAT_" .. npcID), name)
                                     end
@@ -2355,7 +2568,7 @@ function GetNameFromLocalNpcIDCache()
                     for instanceType, _ in pairs(core.Instances[expansion]) do
                         for instance, _ in pairs(core.Instances[expansion][instanceType]) do
                             for boss, _ in pairs(core.Instances[expansion][instanceType][instance]) do
-                                if boss ~= "name" then
+                                if string.match(boss, "boss") then
                                     if type(core.Instances[expansion][instanceType][instance][boss].tactics) == "table" then
                                         if UnitFactionGroup("player") == "Alliance" then
                                             if string.find(core.Instances[expansion][instanceType][instance][boss].tactics[1], ("IAT_" .. npcID)) then
@@ -2391,7 +2604,7 @@ function IAT_HasAchievement(achievementID)
         for instanceType, _ in pairs(core.Instances[expansion]) do
             for instance, _ in pairs(core.Instances[expansion][instanceType]) do
                 for boss, _ in pairs(core.Instances[expansion][instanceType][instance]) do
-                    if boss ~= "name" then
+                    if string.match(boss, "boss") then
                         if core.Instances[expansion][instanceType][instance][boss].achievement == achievementID then
                             -- Achievement found
                             lastExpansion, lastInstanceType, lastInstance = expansion, instanceType, instance

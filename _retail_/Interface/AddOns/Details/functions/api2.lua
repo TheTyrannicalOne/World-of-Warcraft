@@ -8,7 +8,7 @@ This is a high level API for Details! Damage Meter
 --]=]
 
 --local helpers
-local getCombatObject = function (segmentNumber)
+local getCombatObject = function(segmentNumber)
 	local combatObject
 	
 	--select which segment to use, use low level variables for performance
@@ -23,12 +23,12 @@ local getCombatObject = function (segmentNumber)
 	return combatObject
 end
 
-local getActorObjectFromCombat = function (combatObject, containerID, actorName)
+local getActorObjectFromCombat = function(combatObject, containerID, actorName)
 	local index = combatObject [containerID]._NameIndexTable [actorName]
 	return combatObject [containerID]._ActorTable [index]
 end
 
-local getUnitName = function (unitId)
+local getUnitName = function(unitId)
 	local unitName, serverName = UnitName (unitId)
 	if (unitName) then
 		if (serverName and serverName ~= "") then
@@ -42,7 +42,7 @@ local getUnitName = function (unitId)
 end
 
 --return the spell object and the spellId
-local getSpellObject = function (playerObject, spellId, isLiteral)
+local getSpellObject = function(playerObject, spellId, isLiteral)
 	local parameterType = type (spellId)
 	
 	if (parameterType == "number" and isLiteral) then
@@ -57,7 +57,7 @@ local getSpellObject = function (playerObject, spellId, isLiteral)
 			
 		elseif (parameterType == "number") then
 			--passed a number but with literal off, transform the spellId into a spell name
-			local spellName = GetSpellInfo (spellid)
+			local spellName = GetSpellInfo(spellid)
 			if (spellName) then
 				passedSpellName = spellName:lower()
 			end
@@ -65,7 +65,7 @@ local getSpellObject = function (playerObject, spellId, isLiteral)
 		
 		if (passedSpellName) then
 			for thisSpellId, spellObject in pairs (playerObject.spells._ActorTable) do
-				local spellName = Details.GetSpellInfo (thisSpellId)
+				local spellName = Details.GetSpellInfo(thisSpellId)
 				if (spellName) then
 					if (spellName:lower() == passedSpellName) then
 						return spellObject, thisSpellId
@@ -89,7 +89,7 @@ Details.API_Description = {
 }
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
---> ~segments
+--~segments
 
 --[=[
 	Details.SegmentInfo (segment)
@@ -211,7 +211,7 @@ tinsert (Details.API_Description.namespaces[1].api, {
 
 function Details.SegmentDamagingUnits (includePlayerUnits, includeEnemyUnits, includeFriendlyPetUnits, segment)
 	segment = segment or 0
-	if (type (includePlayerUnits) ~= "boolean") then
+	if (type(includePlayerUnits) ~= "boolean") then
 		includePlayerUnits = true
 	end
 	
@@ -290,7 +290,7 @@ tinsert (Details.API_Description.namespaces[1].api, {
 
 function Details.SegmentHealingUnits (includePlayerUnits, includeEnemyUnits, includeFriendlyPetUnits, segment)
 	segment = segment or 0
-	if (type (includePlayerUnits) ~= "boolean") then
+	if (type(includePlayerUnits) ~= "boolean") then
 		includePlayerUnits = true
 	end
 	
@@ -434,7 +434,7 @@ function Details.SegmentPhases (segment)
 	
 	local phaseData = combatObject.PhaseData
 	
-	for phaseChangeId, phaseTable in ipairs (phaseData) do
+	for phaseChangeId, phaseTable in ipairs(phaseData) do
 		local phaseNumber = phaseTable [1]
 		DetailsFramework.table.addunique (phases, phaseNumber)
 	end
@@ -443,7 +443,7 @@ function Details.SegmentPhases (segment)
 end
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
---> unit ~information
+--unit ~information
 --[=[
 	Details.UnitInfo (unitId, segment)
 --=]=]
@@ -607,7 +607,7 @@ function Details.UnitTexture (unitId, segment)
 end
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
---> ~damage
+--~damage
 
 --[=[
 	Details.UnitDamage (unitId, segment)
@@ -827,7 +827,7 @@ tinsert (Details.API_Description.namespaces[1].api, {
 })
 
 function Details.UnitDamageBySpell (unitId, spellId, isLiteral, segment)
-	if (type (isLiteral) ~= "boolean") then
+	if (type(isLiteral) ~= "boolean") then
 		isLiteral = true
 	end
 	segment = segment or 0
@@ -897,7 +897,7 @@ tinsert (Details.API_Description.namespaces[1].api, {
 })
 
 function Details.UnitDamageSpellInfo (unitId, spellId, isLiteral, segment)
-	if (type (isLiteral) ~= "boolean") then
+	if (type(isLiteral) ~= "boolean") then
 		isLiteral = true
 	end
 	segment = segment or 0
@@ -938,14 +938,14 @@ function Details.UnitDamageSpellInfo (unitId, spellId, isLiteral, segment)
 
 	local miscPlayerObject = getActorObjectFromCombat (combatObject, 4, unitName)
 	if (miscPlayerObject) then
-		local spellName = GetSpellInfo (spellId)
+		local spellName = GetSpellInfo(spellId)
 		local castedAmount = miscPlayerObject.spell_cast and miscPlayerObject.spell_cast [spellId]
 		
 		if (castedAmount) then
 			spellInfo.casted = castedAmount
 		else
 			for castedSpellId, castedAmount in pairs (miscPlayerObject.spell_cast) do
-				local castedSpellName = GetSpellInfo (castedSpellId)
+				local castedSpellName = GetSpellInfo(castedSpellId)
 				if (castedSpellName == spellName) then
 					spellInfo.casted = castedAmount
 					break
@@ -1021,7 +1021,7 @@ tinsert (Details.API_Description.namespaces[1].api, {
 })
 
 function Details.UnitDamageSpellOnUnit (unitId, spellId, targetUnitId, isLiteral, segment)
-	if (type (isLiteral) ~= "boolean") then
+	if (type(isLiteral) ~= "boolean") then
 		isLiteral = true
 	end
 	segment = segment or 0
@@ -1188,7 +1188,7 @@ tinsert (Details.API_Description.namespaces[1].api, {
 
 function Details.UnitDamageTakenFromSpell (unitId, spellId, isLiteral, segment)
 	segment = segment or 0
-	if (type (isLiteral) ~= "boolean") then
+	if (type(isLiteral) ~= "boolean") then
 		isLiteral = true
 	end
 	
@@ -1211,10 +1211,10 @@ function Details.UnitDamageTakenFromSpell (unitId, spellId, isLiteral, segment)
 			end
 		end
 	else
-		local spellName = GetSpellInfo (spellId) or spellId
+		local spellName = GetSpellInfo(spellId) or spellId
 		for i = 1, #damageContainer._ActorTable do
 			for thisSpellId, spellObject in pairs (damageContainer._ActorTable [i].spells._ActorTable) do
-				local thisSpellName = GetSpellInfo (thisSpellId)
+				local thisSpellName = GetSpellInfo(thisSpellId)
 				if (thisSpellName == spellName) then
 					totalDamageTaken = totalDamageTaken + (spellObject.targets [unitName] or 0)
 				end
@@ -1389,7 +1389,7 @@ end
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
---> ~healing
+--~healing
 
 
 --[=[
@@ -1556,7 +1556,7 @@ tinsert (Details.API_Description.namespaces[1].api, {
 })
 
 function Details.UnitHealingBySpell (unitId, spellId, isLiteral, segment)
-	if (type (isLiteral) ~= "boolean") then
+	if (type(isLiteral) ~= "boolean") then
 		isLiteral = true
 	end
 	segment = segment or 0
@@ -1628,7 +1628,7 @@ tinsert (Details.API_Description.namespaces[1].api, {
 })
 
 function Details.UnitHealingSpellInfo (unitId, spellId, isLiteral, segment)
-	if (type (isLiteral) ~= "boolean") then
+	if (type(isLiteral) ~= "boolean") then
 		isLiteral = true
 	end
 	segment = segment or 0
@@ -1669,14 +1669,14 @@ function Details.UnitHealingSpellInfo (unitId, spellId, isLiteral, segment)
 
 	local miscPlayerObject = getActorObjectFromCombat (combatObject, 4, unitName)
 	if (miscPlayerObject) then
-		local spellName = GetSpellInfo (spellId)
+		local spellName = GetSpellInfo(spellId)
 		local castedAmount = miscPlayerObject.spell_cast and miscPlayerObject.spell_cast [spellId]
 		
 		if (castedAmount) then
 			spellInfo.casted = castedAmount
 		else
 			for castedSpellId, castedAmount in pairs (miscPlayerObject.spell_cast) do
-				local castedSpellName = GetSpellInfo (castedSpellId)
+				local castedSpellName = GetSpellInfo(castedSpellId)
 				if (castedSpellName == spellName) then
 					spellInfo.casted = castedAmount
 					break
@@ -1753,7 +1753,7 @@ tinsert (Details.API_Description.namespaces[1].api, {
 })
 
 function Details.UnitHealingSpellOnUnit (unitId, spellId, targetUnitId, isLiteral, segment)
-	if (type (isLiteral) ~= "boolean") then
+	if (type(isLiteral) ~= "boolean") then
 		isLiteral = true
 	end
 	segment = segment or 0
@@ -1927,7 +1927,7 @@ tinsert (Details.API_Description.namespaces[1].api, {
 
 function Details.UnitHealingTakenFromSpell (unitId, spellId, isLiteral, segment)
 	segment = segment or 0
-	if (type (isLiteral) ~= "boolean") then
+	if (type(isLiteral) ~= "boolean") then
 		isLiteral = true
 	end
 	
@@ -1950,10 +1950,10 @@ function Details.UnitHealingTakenFromSpell (unitId, spellId, isLiteral, segment)
 			end
 		end
 	else
-		local spellName = GetSpellInfo (spellId) or spellId
+		local spellName = GetSpellInfo(spellId) or spellId
 		for i = 1, #healingContainer._ActorTable do
 			for thisSpellId, spellObject in pairs (healingContainer._ActorTable [i].spells._ActorTable) do
-				local thisSpellName = GetSpellInfo (thisSpellId)
+				local thisSpellName = GetSpellInfo(thisSpellId)
 				if (thisSpellName == spellName) then
 					totalHealingTaken = totalHealingTaken + (spellObject.targets [unitName] or 0)
 				end

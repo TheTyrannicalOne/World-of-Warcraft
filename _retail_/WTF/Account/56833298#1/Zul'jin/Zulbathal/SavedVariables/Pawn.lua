@@ -1,8 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0602,
-	["LastPlayerFullName"] = "Zulbathal-Zul'jin",
-	["AutoSelectScales"] = true,
+	["LastVersion"] = 2.0703,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173441,
@@ -70,9 +68,9 @@ PawnOptions = {
 		}, -- [13]
 		{
 			["ID"] = 122362,
-			["Level"] = 98,
+			["Level"] = 146,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122362::::::::51:102:::1:5805::::::|h[Discerning Eye of the Beast]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122362::::::::59:102:::1:7920::::::|h[Discerning Eye of the Beast]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 122262,
@@ -85,7 +83,8 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:159118::::::::120:102:512:11:1:4813:118:::|h[Rootway Safari Magestaff]|h|r",
 		}, -- [16]
 	},
-	["LastKeybindingsSet"] = 1,
+	["AutoSelectScales"] = true,
+	["LastPlayerFullName"] = "Zulbathal-Zul'jin",
 	["Artifacts"] = {
 		[128821] = {
 			["Relics"] = {
@@ -127,6 +126,7 @@ PawnOptions = {
 			["Name"] = "Scythe of Elune",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "DRUID",

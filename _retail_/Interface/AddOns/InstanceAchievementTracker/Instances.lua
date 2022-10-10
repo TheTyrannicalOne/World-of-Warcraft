@@ -1,13 +1,22 @@
 --------------------------------------
--- Last Auto Generated: 18/04/2022 16:08:18
+-- Last Auto Generated: 25/09/2022 20:59:30
 --------------------------------------
 local _, core = ...
 local L = core.L
 local instances = {}
 
 core.Instances = {
+	--Dragonflight
+	[10] = {
+		Raids = {
+		},
+
+		Dungeons = {
+		},
+	},
+
 	--Shadowlands
-	[2] = {
+	[9] = {
 		Raids = {
 			[2450] = { --Sanctum of Domination
 				name = 1193,
@@ -736,7 +745,7 @@ core.Instances = {
 	},
 
 	--Battle for Azeroth
-	[3] = {
+	[8] = {
 		Raids = {
 			[1861] = { --Uldir
 				name = 1031,
@@ -1614,7 +1623,7 @@ core.Instances = {
 	},
 
 	--Legion
-	[4] = {
+	[7] = {
 		Raids = {
 			[1520] = { --The Emerald Nightmare
 				name = 768,
@@ -2545,7 +2554,7 @@ core.Instances = {
 	},
 
 	--Warlords of Dranor
-	[5] = {
+	[6] = {
 		Raids = {
 			[1228] = { --Highmaul
 				name = 477,
@@ -3199,7 +3208,7 @@ core.Instances = {
 	},
 
 	--Mists of Pandaria
-	[6] = {
+	[5] = {
 		Raids = {
 			[996] = { --Terrace of Endless Spring
 				name = 320,
@@ -3552,7 +3561,7 @@ core.Instances = {
 					bossIDs = {62980},
 					achievement = 6937,
 					players = {},
-					tactics = format(L["HeartOfFear_ImperialVizierZorlok"], GetSpellInfo(125785), GetSpellLink(125785), GetSpellInfo(125785), GetSpellInfo(125785), GetSpellLink(125785), GetSpellInfo(125785)),
+					tactics = format(L["HeartOfFear_ImperialVizierZorlok"], GetSpellLink(125785), GetSpellLink(125785), GetSpellLink(125785), GetSpellLink(125785), GetSpellLink(125785), GetSpellLink(125785)),
 					enabled = true,
 					track = function() core._1009:ImperialVizierZorlok() end,
 					partial = false,
@@ -3858,7 +3867,7 @@ core.Instances = {
 					bossIDs = {},
 					achievement = 6715,
 					players = {},
-					tactics = format(L["Scholomance_Other3"], "IAT_59080", GetSpellLink(114800), GetSpellLink(114800), "IAT_67231", EJ_GetInstanceInfo(321), "IAT_56636", EJ_GetInstanceInfo(303), "IAT_61567", EJ_GetInstanceInfo(324), "IAT_56747", EJ_GetInstanceInfo(312), "IAT_59479", EJ_GetInstanceInfo(302), "IAT_56732", EJ_GetInstanceInfo(313)),
+					tactics = format(L["Scholomance_Other3"], "IAT_59080", GetSpellLink(114800), GetSpellLink(114800), "IAT_67231", "EJ_GetInstanceInfo(321)", "IAT_56636", "EJ_GetInstanceInfo(303)", "IAT_61567", "EJ_GetInstanceInfo(324)", "IAT_56747", "EJ_GetInstanceInfo(312)", "IAT_59479", "EJ_GetInstanceInfo(302)", "IAT_56732", "EJ_GetInstanceInfo(313)"),
 					enabled = false,
 					track = nil,
 					partial = false,
@@ -4500,7 +4509,7 @@ core.Instances = {
 	},
 
 	--Cataclysm
-	[7] = {
+	[4] = {
 		Raids = {
 			[967] = { --Dragon Soul
 				name = 187,
@@ -5328,10 +5337,12 @@ core.Instances = {
 	},
 
 	--Wrath of the Lich King
-	[8] = {
+	[3] = {
 		Raids = {
 			["615-10"] = { --Obsidian Sanctum 10 Man
 				name = 755,
+				nameLocalised = L["Instance_TheObsidianSanctum"],
+				classicPhase = 1,
 				boss1 = {
 					name = 1616, --Sartharion the Onyx Guardian
 					bossIDs = {},
@@ -5342,6 +5353,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1090,
+					nameWrath = L["Boss_Sartharion"],
+					tacticsClassic = "",
 				},
 				boss2 = {
 					name = 1616, --Sartharion the Onyx Guardian
@@ -5353,6 +5366,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1090,
+					nameWrath = L["Boss_Sartharion"],
+					tacticsClassic = "",
 				},
 				boss3 = {
 					name = 1616, --Sartharion the Onyx Guardian
@@ -5364,6 +5379,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1090,
+					nameWrath = L["Boss_Sartharion"],
+					tacticsClassic = "",
 				},
 				boss4 = {
 					name = 1616, --Sartharion the Onyx Guardian
@@ -5375,6 +5392,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1090,
+					nameWrath = L["Boss_Sartharion"],
+					tacticsClassic = "",
 				},
 				boss5 = {
 					name = 1616, --Sartharion the Onyx Guardian
@@ -5386,11 +5405,15 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1090,
+					nameWrath = L["Boss_Sartharion"],
+					tacticsClassic = "",
 				},
 			},
 
 			["615-25"] = { --Obsidian Sanctum 25 Man
 				name = 755,
+				nameLocalised = L["Instance_TheObsidianSanctum"],
+				classicPhase = 1,
 				boss1 = {
 					name = 1616, --Sartharion the Onyx Guardian
 					bossIDs = {},
@@ -5401,6 +5424,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1090,
+					nameWrath = L["Boss_Sartharion"],
+					tacticsClassic = "",
 				},
 				boss2 = {
 					name = 1616, --Sartharion the Onyx Guardian
@@ -5412,6 +5437,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1090,
+					nameWrath = L["Boss_Sartharion"],
+					tacticsClassic = "",
 				},
 				boss3 = {
 					name = 1616, --Sartharion the Onyx Guardian
@@ -5423,6 +5450,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1090,
+					nameWrath = L["Boss_Sartharion"],
+					tacticsClassic = "",
 				},
 				boss4 = {
 					name = 1616, --Sartharion the Onyx Guardian
@@ -5434,6 +5463,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1090,
+					nameWrath = L["Boss_Sartharion"],
+					tacticsClassic = "",
 				},
 				boss5 = {
 					name = 1616, --Sartharion the Onyx Guardian
@@ -5445,11 +5476,15 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1090,
+					nameWrath = L["Boss_Sartharion"],
+					tacticsClassic = "",
 				},
 			},
 
 			["616-10"] = { --Eye of Eternity 10 Man
 				name = 756,
+				nameLocalised = L["Instance_TheEyeOfEternity"],
+				classicPhase = 1,
 				boss1 = {
 					name = 1617, --Malygos
 					bossIDs = {28859},
@@ -5460,6 +5495,8 @@ core.Instances = {
 					track = function() core._616:YouDontHaveAnEternity() end,
 					partial = false,
 					encounterID = 1094,
+					nameWrath = L["Boss_Malygos"],
+					tacticsClassic = "",
 				},
 				boss2 = {
 					name = 1617, --Malygos
@@ -5471,6 +5508,8 @@ core.Instances = {
 					track = function() core._616:APokeInTheEye() end,
 					partial = false,
 					encounterID = 1094,
+					nameWrath = L["Boss_Malygos"],
+					tacticsClassic = "",
 				},
 				boss3 = {
 					name = 1617, --Malygos
@@ -5482,11 +5521,15 @@ core.Instances = {
 					track = function() core._616:DenyinTheScion() end,
 					partial = false,
 					encounterID = 1094,
+					nameWrath = L["Boss_Malygos"],
+					tacticsClassic = "",
 				},
 			},
 
 			["616-25"] = { --Eye of Eternity 25 Man
 				name = 756,
+				nameLocalised = L["Instance_TheEyeOfEternity"],
+				classicPhase = 1,
 				boss1 = {
 					name = 1617, --Malygos
 					bossIDs = {28859},
@@ -5497,6 +5540,8 @@ core.Instances = {
 					track = function() core._616:YouDontHaveAnEternity() end,
 					partial = false,
 					encounterID = 1094,
+					nameWrath = L["Boss_Malygos"],
+					tacticsClassic = "",
 				},
 				boss2 = {
 					name = 1617, --Malygos
@@ -5508,6 +5553,8 @@ core.Instances = {
 					track = function() core._616:APokeInTheEye() end,
 					partial = false,
 					encounterID = 1094,
+					nameWrath = L["Boss_Malygos"],
+					tacticsClassic = "",
 				},
 				boss3 = {
 					name = 1617, --Malygos
@@ -5519,11 +5566,15 @@ core.Instances = {
 					track = function() core._616:DenyinTheScion() end,
 					partial = false,
 					encounterID = 1094,
+					nameWrath = L["Boss_Malygos"],
+					tacticsClassic = "",
 				},
 			},
 
 			["249-10"] = { --Onyxia's Lair 10 Man
 				name = 760,
+				nameLocalised = L["Instance_OnyxiasLair"],
+				classicPhase = 3,
 				boss1 = {
 					name = 1651, --Onyxia
 					bossIDs = {10184},
@@ -5534,6 +5585,8 @@ core.Instances = {
 					track = function() core._249:Onyxia2() end,
 					partial = false,
 					encounterID = 1084,
+					nameWrath = L["Boss_Onyxia"],
+					tacticsClassic = "",
 				},
 				boss2 = {
 					name = 1651, --Onyxia
@@ -5545,6 +5598,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1084,
+					nameWrath = L["Boss_Onyxia"],
+					tacticsClassic = "",
 				},
 				boss3 = {
 					name = 1651, --Onyxia
@@ -5556,11 +5611,15 @@ core.Instances = {
 					track = function() core._249:Onyxia1() end,
 					partial = false,
 					encounterID = 1084,
+					nameWrath = L["Boss_Onyxia"],
+					tacticsClassic = "",
 				},
 			},
 
 			["249-25"] = { --Onyxia's Lair 25 Man
 				name = 760,
+				nameLocalised = L["Instance_OnyxiasLair"],
+				classicPhase = 3,
 				boss1 = {
 					name = 1651, --Onyxia
 					bossIDs = {10184},
@@ -5571,6 +5630,8 @@ core.Instances = {
 					track = function() core._249:Onyxia2() end,
 					partial = false,
 					encounterID = 1084,
+					nameWrath = L["Boss_Onyxia"],
+					tacticsClassic = "",
 				},
 				boss2 = {
 					name = 1651, --Onyxia
@@ -5582,6 +5643,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1084,
+					nameWrath = L["Boss_Onyxia"],
+					tacticsClassic = "",
 				},
 				boss3 = {
 					name = 1651, --Onyxia
@@ -5593,11 +5656,15 @@ core.Instances = {
 					track = function() core._249:Onyxia1() end,
 					partial = false,
 					encounterID = 1084,
+					nameWrath = L["Boss_Onyxia"],
+					tacticsClassic = "",
 				},
 			},
 
 			["649-10"] = { --Trial of the Crusader 10 Man
 				name = 757,
+				nameLocalised = L["Instance_TrialOfTheCrusader"],
+				classicPhase = 3,
 				boss1 = {
 					name = 1618, --Icehowl
 					bossIDs = {34796},
@@ -5608,6 +5675,8 @@ core.Instances = {
 					track = function() core._649:UpperBackPain() end,
 					partial = false,
 					encounterID = 1088,
+					nameWrath = L["Boss_Icehowl"],
+					tacticsClassic = "",
 				},
 				boss2 = {
 					name = 1618, --Acidmaw and Dreadscale
@@ -5619,6 +5688,8 @@ core.Instances = {
 					track = function() core._649:NotOneButTwoJormungars() end,
 					partial = false,
 					encounterID = 1088,
+					nameWrath = L["Boss_AcidmawandDreadscale"],
+					tacticsClassic = "",
 				},
 				boss3 = {
 					name = 1619, --Lord Jaraxxus
@@ -5630,6 +5701,8 @@ core.Instances = {
 					track = function() core._649:ThreeSixtyPainSpike() end,
 					partial = false,
 					encounterID = 1087,
+					nameWrath = L["Boss_LordJaraxxus"],
+					tacticsClassic = "",
 				},
 				boss4 = {
 					name = 1621, --Faction Champions
@@ -5641,6 +5714,8 @@ core.Instances = {
 					track = function() core._649:FactionChampions() end,
 					partial = false,
 					encounterID = 1086,
+					nameWrath = L["Boss_FactionChampions"],
+					tacticsClassic = "",
 				},
 				boss5 = {
 					name = 1622, --Twin Val'kyr
@@ -5652,6 +5727,8 @@ core.Instances = {
 					track = function() core._649:TwinValkyr() end,
 					partial = false,
 					encounterID = 1089,
+					nameWrath = L["Boss_TwinValkyr"],
+					tacticsClassic = "",
 				},
 				boss6 = {
 					name = 1623, --Anub'arak
@@ -5664,11 +5741,15 @@ core.Instances = {
 					partial = false,
 					encounterID = 1085,
 					displayInfoFrame = true,
+					nameWrath = L["Boss_Anubarak"],
+					tacticsClassic = "",
 				},
 			},
 
 			["649-25"] = { --Trial of the Crusader 25 Man
 				name = 757,
+				nameLocalised = L["Instance_TrialOfTheCrusader"],
+				classicPhase = 3,
 				boss1 = {
 					name = 1618, --Icehowl
 					bossIDs = {34796},
@@ -5679,6 +5760,8 @@ core.Instances = {
 					track = function() core._649:UpperBackPain() end,
 					partial = false,
 					encounterID = 1088,
+					nameWrath = L["Boss_Icehowl"],
+					tacticsClassic = "",
 				},
 				boss2 = {
 					name = 1618, --Acidmaw and Dreadscale
@@ -5690,6 +5773,8 @@ core.Instances = {
 					track = function() core._649:NotOneButTwoJormungars() end,
 					partial = false,
 					encounterID = 1088,
+					nameWrath = L["Boss_AcidmawandDreadscale"],
+					tacticsClassic = "",
 				},
 				boss3 = {
 					name = 1619, --Lord Jaraxxus
@@ -5701,6 +5786,8 @@ core.Instances = {
 					track = function() core._649:ThreeSixtyPainSpike() end,
 					partial = false,
 					encounterID = 1087,
+					nameWrath = L["Boss_LordJaraxxus"],
+					tacticsClassic = "",
 				},
 				boss4 = {
 					name = 1622, --Twin Val'kyr
@@ -5712,6 +5799,8 @@ core.Instances = {
 					track = function() core._649:TwinValkyr() end,
 					partial = false,
 					encounterID = 1089,
+					nameWrath = L["Boss_TwinValkyr"],
+					tacticsClassic = "",
 				},
 				boss5 = {
 					name = 1623, --Anub'arak
@@ -5724,11 +5813,15 @@ core.Instances = {
 					partial = false,
 					encounterID = 1085,
 					displayInfoFrame = true,
+					nameWrath = L["Boss_Anubarak"],
+					tacticsClassic = "",
 				},
 			},
 
 			["624-10"] = { --Vault of Archavon 10 Man
 				name = 753,
+				nameLocalised = L["Instance_VaultOfArchavon"],
+				classicPhase = 1,
 				boss1 = {
 					name = 1597, --Archavon & Emalon & Koralon
 					bossIDs = {},
@@ -5739,11 +5832,15 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1126,
+					nameWrath = L["Boss_ArchavonTheStoneWatcher"],
+					tacticsClassic = "",
 				},
 			},
 
 			["624-25"] = { --Vault of Archavon 25 Man
 				name = 753,
+				nameLocalised = L["Instance_VaultOfArchavon"],
+				classicPhase = 1,
 				boss1 = {
 					name = 1597, --Archavon & Emalon & Koralon
 					bossIDs = {},
@@ -5754,11 +5851,15 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1126,
+					nameWrath = L["Boss_ArchavonTheStoneWatcher"],
+					tacticsClassic = "",
 				},
 			},
 
 			[603] = { --Ulduar
 				name = 759,
+				nameLocalised = L["Instance_Ulduar"],
+				classicPhase = 2,
 				boss1 = {
 					name = L["Instances_Other"], --MISSINGNAME67
 					bossIDs = {33572},
@@ -5768,6 +5869,8 @@ core.Instances = {
 					enabled = true,
 					track = function() core._603:Dwarfageddon() end,
 					partial = true,
+					nameWrath = L["Boss_MISSINGNAME67"],
+					tacticsClassic = "",
 				},
 				boss2 = {
 					name = L["Instances_Other"], --MISSINGNAME68
@@ -5778,6 +5881,8 @@ core.Instances = {
 					enabled = true,
 					track = function() end,
 					partial = false,
+					nameWrath = L["Boss_MISSINGNAME68"],
+					tacticsClassic = "",
 				},
 				boss3 = {
 					name = 1637, --Flame Leviathan
@@ -5789,6 +5894,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1132,
+					nameWrath = L["Boss_FlameLeviathan"],
+					tacticsClassic = "",
 				},
 				boss4 = {
 					name = 1637, --Flame Leviathan
@@ -5800,6 +5907,8 @@ core.Instances = {
 					track = function() core._603:FlameLeviathanTakeOutThoseTurrets() end,
 					partial = false,
 					encounterID = 1132,
+					nameWrath = L["Boss_FlameLeviathan"],
+					tacticsClassic = "",
 				},
 				boss5 = {
 					name = 1637, --Flame Leviathan
@@ -5811,6 +5920,8 @@ core.Instances = {
 					track = function() core._603:FlameLeviathanShutout() end,
 					partial = false,
 					encounterID = 1132,
+					nameWrath = L["Boss_FlameLeviathan"],
+					tacticsClassic = "",
 				},
 				boss6 = {
 					name = 1637, --Flame Leviathan
@@ -5822,6 +5933,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1132,
+					nameWrath = L["Boss_FlameLeviathan"],
+					tacticsClassic = "",
 				},
 				boss7 = {
 					name = 1637, --Flame Leviathan
@@ -5833,6 +5946,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1132,
+					nameWrath = L["Boss_FlameLeviathan"],
+					tacticsClassic = "",
 				},
 				boss8 = {
 					name = 1637, --Flame Leviathan
@@ -5844,6 +5959,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1132,
+					nameWrath = L["Boss_FlameLeviathan"],
+					tacticsClassic = "",
 				},
 				boss9 = {
 					name = 1637, --Flame Leviathan
@@ -5855,6 +5972,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1132,
+					nameWrath = L["Boss_FlameLeviathan"],
+					tacticsClassic = "",
 				},
 				boss10 = {
 					name = 1639, --Razorscale
@@ -5866,6 +5985,8 @@ core.Instances = {
 					track = function() core._603:RazorscaleAQuickShave() end,
 					partial = false,
 					encounterID = 1139,
+					nameWrath = L["Boss_Razorscale"],
+					tacticsClassic = "",
 				},
 				boss11 = {
 					name = 1639, --Razorscale
@@ -5877,6 +5998,8 @@ core.Instances = {
 					track = function() core._603:RazorscaleIronDwarfMediumRare() end,
 					partial = false,
 					encounterID = 1139,
+					nameWrath = L["Boss_Razorscale"],
+					tacticsClassic = "",
 				},
 				boss12 = {
 					name = 1638, --Ignis the Furnace Master
@@ -5888,6 +6011,8 @@ core.Instances = {
 					track = function() core._603:IgnisTheFurnaceMasterShattered() end,
 					partial = false,
 					encounterID = 1136,
+					nameWrath = L["Boss_IgnisTheFurnaceMaster"],
+					tacticsClassic = "",
 				},
 				boss13 = {
 					name = 1638, --Ignis the Furnace Master
@@ -5899,6 +6024,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1136,
+					nameWrath = L["Boss_IgnisTheFurnaceMaster"],
+					tacticsClassic = "",
 				},
 				boss14 = {
 					name = 1638, --Ignis the Furnace Master
@@ -5910,6 +6037,8 @@ core.Instances = {
 					track = function() core._603:IgnisTheFurnaceMasterStokinTheFurnace() end,
 					partial = false,
 					encounterID = 1136,
+					nameWrath = L["Boss_IgnisTheFurnaceMaster"],
+					tacticsClassic = "",
 				},
 				boss15 = {
 					name = 1640, --XT-002 Deconstructor
@@ -5921,6 +6050,8 @@ core.Instances = {
 					track = function() core._603:XT002DeconstructorNerfEngineering() end,
 					partial = false,
 					encounterID = 1142,
+					nameWrath = L["Boss_XT-002Deconstructor"],
+					tacticsClassic = "",
 				},
 				boss16 = {
 					name = 1640, --XT-002 Deconstructor
@@ -5932,6 +6063,8 @@ core.Instances = {
 					track = function() core._603:XT002DeconstructorNerfScrapbots() end,
 					partial = false,
 					encounterID = 1142,
+					nameWrath = L["Boss_XT-002Deconstructor"],
+					tacticsClassic = "",
 				},
 				boss17 = {
 					name = 1640, --XT-002 Deconstructor
@@ -5943,6 +6076,8 @@ core.Instances = {
 					track = function() core._603:XT002DeconstructorNerfGravityBombs() end,
 					partial = false,
 					encounterID = 1142,
+					nameWrath = L["Boss_XT-002Deconstructor"],
+					tacticsClassic = "",
 				},
 				boss18 = {
 					name = 1640, --XT-002 Deconstructor
@@ -5954,6 +6089,8 @@ core.Instances = {
 					track = function() core._603:XT002DeconstructorMustDeconstructFaster() end,
 					partial = false,
 					encounterID = 1142,
+					nameWrath = L["Boss_XT-002Deconstructor"],
+					tacticsClassic = "",
 				},
 				boss19 = {
 					name = 1640, --XT-002 Deconstructor
@@ -5965,6 +6102,8 @@ core.Instances = {
 					track = function() core._603:XT002DeconstructorHeartbreaker() end,
 					partial = false,
 					encounterID = 1142,
+					nameWrath = L["Boss_XT-002Deconstructor"],
+					tacticsClassic = "",
 				},
 				boss20 = {
 					name = 1641, --Assembly of Iron
@@ -5976,6 +6115,8 @@ core.Instances = {
 					track = function() core._603:AssemblyOfIronIChooseYouRunemasterMolgeim() end,
 					partial = false,
 					encounterID = 1140,
+					nameWrath = L["Boss_AssemblyOfIron"],
+					tacticsClassic = "",
 				},
 				boss21 = {
 					name = 1641, --Assembly of Iron
@@ -5987,6 +6128,8 @@ core.Instances = {
 					track = function() core._603:AssemblyOfIronIChooseYouStormcallerBrundir() end,
 					partial = false,
 					encounterID = 1140,
+					nameWrath = L["Boss_AssemblyOfIron"],
+					tacticsClassic = "",
 				},
 				boss22 = {
 					name = 1641, --Assembly of Iron
@@ -5998,6 +6141,8 @@ core.Instances = {
 					track = function() core._603:AssemblyOfIronIChooseYouSteelbreaker() end,
 					partial = false,
 					encounterID = 1140,
+					nameWrath = L["Boss_AssemblyOfIron"],
+					tacticsClassic = "",
 				},
 				boss23 = {
 					name = 1641, --Assembly of Iron
@@ -6009,6 +6154,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1140,
+					nameWrath = L["Boss_AssemblyOfIron"],
+					tacticsClassic = "",
 				},
 				boss24 = {
 					name = 1641, --Assembly of Iron
@@ -6020,6 +6167,8 @@ core.Instances = {
 					track = function() core._603:AssemblyOfIronCantDoThatWhileStunned() end,
 					partial = false,
 					encounterID = 1140,
+					nameWrath = L["Boss_AssemblyOfIron"],
+					tacticsClassic = "",
 				},
 				boss25 = {
 					name = 1642, --Kologarn
@@ -6031,6 +6180,8 @@ core.Instances = {
 					track = function() core._603:KologarnWithOpenArms() end,
 					partial = false,
 					encounterID = 1137,
+					nameWrath = L["Boss_Kologarn"],
+					tacticsClassic = "",
 				},
 				boss26 = {
 					name = 1642, --Kologarn
@@ -6042,6 +6193,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1137,
+					nameWrath = L["Boss_Kologarn"],
+					tacticsClassic = "",
 				},
 				boss27 = {
 					name = 1642, --Kologarn
@@ -6053,6 +6206,8 @@ core.Instances = {
 					track = function() core._603:KologarnIfLooksCouldKill() end,
 					partial = false,
 					encounterID = 1137,
+					nameWrath = L["Boss_Kologarn"],
+					tacticsClassic = "",
 				},
 				boss28 = {
 					name = 1642, --Kologarn
@@ -6064,6 +6219,8 @@ core.Instances = {
 					track = function() core._603:KologarnRubbleAndRoll() end,
 					partial = false,
 					encounterID = 1137,
+					nameWrath = L["Boss_Kologarn"],
+					tacticsClassic = "",
 				},
 				boss29 = {
 					name = 1643, --Auriaya
@@ -6075,6 +6232,8 @@ core.Instances = {
 					track = function() core._603:AuriayaCrazyCatLady() end,
 					partial = false,
 					encounterID = 1131,
+					nameWrath = L["Boss_Auriaya"],
+					tacticsClassic = "",
 				},
 				boss30 = {
 					name = 1643, --Auriaya
@@ -6086,6 +6245,8 @@ core.Instances = {
 					track = function() core._603:AuriayaNineLives() end,
 					partial = false,
 					encounterID = 1131,
+					nameWrath = L["Boss_Auriaya"],
+					tacticsClassic = "",
 				},
 				boss31 = {
 					name = 1644, --Hodir
@@ -6097,6 +6258,8 @@ core.Instances = {
 					track = function() core._603:HodirCheeseTheFreeze() end,
 					partial = false,
 					encounterID = 1135,
+					nameWrath = L["Boss_Hodir"],
+					tacticsClassic = "",
 				},
 				boss32 = {
 					name = 1644, --Hodir
@@ -6108,6 +6271,8 @@ core.Instances = {
 					track = function() core._603:HodirIHaveTheCoolestFriends() end,
 					partial = false,
 					encounterID = 1135,
+					nameWrath = L["Boss_Hodir"],
+					tacticsClassic = "",
 				},
 				boss33 = {
 					name = 1644, --Hodir
@@ -6119,6 +6284,8 @@ core.Instances = {
 					track = function() core._603:HodirGettingColdInHere() end,
 					partial = false,
 					encounterID = 1135,
+					nameWrath = L["Boss_Hodir"],
+					tacticsClassic = "",
 				},
 				boss34 = {
 					name = 1644, --Hodir
@@ -6130,6 +6297,8 @@ core.Instances = {
 					track = function() core._603:HodirICouldSayThatThisCacheWasRare() end,
 					partial = false,
 					encounterID = 1135,
+					nameWrath = L["Boss_Hodir"],
+					tacticsClassic = "",
 				},
 				boss35 = {
 					name = 1644, --Hodir
@@ -6141,6 +6310,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1135,
+					nameWrath = L["Boss_Hodir"],
+					tacticsClassic = "",
 				},
 				boss36 = {
 					name = 1645, --Thorim
@@ -6152,6 +6323,8 @@ core.Instances = {
 					track = function() core._603:ThorimDontStandInTheLightning() end,
 					partial = false,
 					encounterID = 1141,
+					nameWrath = L["Boss_Thorim"],
+					tacticsClassic = "",
 				},
 				boss37 = {
 					name = 1645, --Thorim
@@ -6163,6 +6336,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1141,
+					nameWrath = L["Boss_Thorim"],
+					tacticsClassic = "",
 				},
 				boss38 = {
 					name = 1645, --Thorim
@@ -6174,6 +6349,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1141,
+					nameWrath = L["Boss_Thorim"],
+					tacticsClassic = "",
 				},
 				boss39 = {
 					name = 1645, --Thorim
@@ -6185,6 +6362,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1141,
+					nameWrath = L["Boss_Thorim"],
+					tacticsClassic = "",
 				},
 				boss40 = {
 					name = 1645, --Thorim
@@ -6196,6 +6375,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1141,
+					nameWrath = L["Boss_Thorim"],
+					tacticsClassic = "",
 				},
 				boss41 = {
 					name = L["Instances_Other"], --Lumberjacked
@@ -6206,6 +6387,8 @@ core.Instances = {
 					enabled = true,
 					track = function() core._603:FreyaLumberjacked() end,
 					partial = false,
+					nameWrath = L["Boss_Lumberjacked"],
+					tacticsClassic = "",
 				},
 				boss42 = {
 					name = 1646, --Freya
@@ -6217,6 +6400,8 @@ core.Instances = {
 					track = function() core._603:FreyaConSpeedAtory() end,
 					partial = false,
 					encounterID = 1133,
+					nameWrath = L["Boss_Freya"],
+					tacticsClassic = "",
 				},
 				boss43 = {
 					name = 1646, --Freya
@@ -6228,6 +6413,8 @@ core.Instances = {
 					track = function() core._603:FreyaDeforestation() end,
 					partial = false,
 					encounterID = 1133,
+					nameWrath = L["Boss_Freya"],
+					tacticsClassic = "",
 				},
 				boss44 = {
 					name = 1646, --Freya
@@ -6239,6 +6426,8 @@ core.Instances = {
 					track = function() core._603:FreyaGettingBackToNature() end,
 					partial = false,
 					encounterID = 1133,
+					nameWrath = L["Boss_Freya"],
+					tacticsClassic = "",
 				},
 				boss45 = {
 					name = 1646, --Freya
@@ -6250,6 +6439,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1133,
+					nameWrath = L["Boss_Freya"],
+					tacticsClassic = "",
 				},
 				boss46 = {
 					name = 1646, --Freya
@@ -6261,6 +6452,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1133,
+					nameWrath = L["Boss_Freya"],
+					tacticsClassic = "",
 				},
 				boss47 = {
 					name = 1646, --Freya
@@ -6272,6 +6465,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1133,
+					nameWrath = L["Boss_Freya"],
+					tacticsClassic = "",
 				},
 				boss48 = {
 					name = 1647, --Mimiron
@@ -6283,6 +6478,8 @@ core.Instances = {
 					track = function() core._603:MimironSetUpUsTheBomb() end,
 					partial = false,
 					encounterID = 1138,
+					nameWrath = L["Boss_Mimiron"],
+					tacticsClassic = "",
 				},
 				boss49 = {
 					name = 1647, --Mimiron
@@ -6294,6 +6491,8 @@ core.Instances = {
 					track = function() core._603:MimironNotSoFriendlyFire() end,
 					partial = false,
 					encounterID = 1138,
+					nameWrath = L["Boss_Mimiron"],
+					tacticsClassic = "",
 				},
 				boss50 = {
 					name = 1647, --Mimiron
@@ -6305,6 +6504,8 @@ core.Instances = {
 					track = function() end,
 					partial = false,
 					encounterID = 1138,
+					nameWrath = L["Boss_Mimiron"],
+					tacticsClassic = "",
 				},
 				boss51 = {
 					name = 1648, --General Vezax
@@ -6316,6 +6517,8 @@ core.Instances = {
 					track = function() core._603:Shadowdodger() end,
 					partial = false,
 					encounterID = 1134,
+					nameWrath = L["Boss_GeneralVezax"],
+					tacticsClassic = "",
 				},
 				boss52 = {
 					name = 1648, --General Vezax
@@ -6327,6 +6530,8 @@ core.Instances = {
 					track = function() core._603:ILoveTheSmellOfSaroniteInTheMorning() end,
 					partial = false,
 					encounterID = 1134,
+					nameWrath = L["Boss_GeneralVezax"],
+					tacticsClassic = "",
 				},
 				boss53 = {
 					name = 1649, --Yogg-Saron 1
@@ -6338,6 +6543,8 @@ core.Instances = {
 					track = function() core._603:KissAndMakeUp() end,
 					partial = false,
 					encounterID = 1143,
+					nameWrath = L["Boss_Yogg-Saron1"],
+					tacticsClassic = "",
 				},
 				boss54 = {
 					name = 1649, --Yogg-Saron 2
@@ -6349,6 +6556,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1143,
+					nameWrath = L["Boss_Yogg-Saron2"],
+					tacticsClassic = "",
 				},
 				boss55 = {
 					name = 1649, --Yogg-Saron 3
@@ -6360,6 +6569,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1143,
+					nameWrath = L["Boss_Yogg-Saron3"],
+					tacticsClassic = "",
 				},
 				boss56 = {
 					name = 1649, --Yogg-Saron 4
@@ -6371,6 +6582,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1143,
+					nameWrath = L["Boss_Yogg-Saron4"],
+					tacticsClassic = "",
 				},
 				boss57 = {
 					name = 1649, --Yogg-Saron 5
@@ -6382,6 +6595,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1143,
+					nameWrath = L["Boss_Yogg-Saron5"],
+					tacticsClassic = "",
 				},
 				boss58 = {
 					name = 1649, --Yogg-Saron 6
@@ -6393,6 +6608,8 @@ core.Instances = {
 					track = function() core._603:DriveMeCrazy() end,
 					partial = false,
 					encounterID = 1143,
+					nameWrath = L["Boss_Yogg-Saron6"],
+					tacticsClassic = "",
 				},
 				boss59 = {
 					name = 1649, --Yogg-Saron 7
@@ -6404,6 +6621,8 @@ core.Instances = {
 					track = function() core._603:HesNotGettingAnyOlder() end,
 					partial = false,
 					encounterID = 1143,
+					nameWrath = L["Boss_Yogg-Saron7"],
+					tacticsClassic = "",
 				},
 				boss60 = {
 					name = 1649, --Yogg-Saron 8
@@ -6415,6 +6634,8 @@ core.Instances = {
 					track = function() core._603:TheyreComingOutOfTheWalls() end,
 					partial = false,
 					encounterID = 1143,
+					nameWrath = L["Boss_Yogg-Saron8"],
+					tacticsClassic = "",
 				},
 				boss61 = {
 					name = 1649, --Yogg-Saron 9
@@ -6426,6 +6647,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1143,
+					nameWrath = L["Boss_Yogg-Saron9"],
+					tacticsClassic = "",
 				},
 				boss62 = {
 					name = 1650, --Algalon the Observer
@@ -6437,11 +6660,15 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1130,
+					nameWrath = L["Boss_AlgalonTheObserver"],
+					tacticsClassic = "",
 				},
 			},
 
 			["533-10"] = { --Naxxramas 10 Man
 				name = 754,
+				nameLocalised = L["Instance_Naxxramas"],
+				classicPhase = 1,
 				boss1 = {
 					name = L["Instances_Other"], --MISSINGNAME70
 					bossIDs = {},
@@ -6451,6 +6678,8 @@ core.Instances = {
 					enabled = false,
 					track = nil,
 					partial = false,
+					nameWrath = L["Instances_Other"],
+					tacticsClassic = "",
 				},
 				boss2 = {
 					name = 1603, --Maexxna
@@ -6462,6 +6691,8 @@ core.Instances = {
 					track = function() core._533:Arachnophobia() end,
 					partial = false,
 					encounterID = 1116,
+					nameWrath = L["Boss_Maexxna"],
+					tacticsClassic = "",
 				},
 				boss3 = {
 					name = 1610, --Patchwerk
@@ -6473,6 +6704,8 @@ core.Instances = {
 					track = function() core._533:Patchwerk() end,
 					partial = false,
 					encounterID = 1118,
+					nameWrath = L["Boss_Patchwerk"],
+					tacticsClassic = "",
 				},
 				boss4 = {
 					name = 1605, --Heigan the Unclean
@@ -6484,6 +6717,8 @@ core.Instances = {
 					track = function() core._533:HeiganTheUnclean() end,
 					partial = false,
 					encounterID = 1112,
+					nameWrath = L["Boss_HeiganTheUnclean"],
+					tacticsClassic = "",
 				},
 				boss5 = {
 					name = 1602, --Grand Widow Faerlina
@@ -6495,6 +6730,8 @@ core.Instances = {
 					track = function() core._533:GrandWidowFaerlina() end,
 					partial = false,
 					encounterID = 1110,
+					nameWrath = L["Boss_GrandWidowFaerlina"],
+					tacticsClassic = "",
 				},
 				boss6 = {
 					name = 1613, --Thaddius
@@ -6506,6 +6743,8 @@ core.Instances = {
 					track = function() core._533:Shocking() end,
 					partial = false,
 					encounterID = 1120,
+					nameWrath = L["Boss_Thaddius"],
+					tacticsClassic = "",
 				},
 				boss7 = {
 					name = 1613, --Thaddius
@@ -6517,6 +6756,8 @@ core.Instances = {
 					track = function() core._533:Subtraction() end,
 					partial = false,
 					encounterID = 1120,
+					nameWrath = L["Boss_Thaddius"],
+					tacticsClassic = "",
 				},
 				boss8 = {
 					name = 1606, --Loatheb
@@ -6528,6 +6769,8 @@ core.Instances = {
 					track = function() core._533:Loatheb() end,
 					partial = false,
 					encounterID = 1115,
+					nameWrath = L["Boss_Loatheb"],
+					tacticsClassic = "",
 				},
 				boss9 = {
 					name = 1609, --Four Horsemen
@@ -6539,6 +6782,8 @@ core.Instances = {
 					track = function() core._533:FourHorsemen() end,
 					partial = false,
 					encounterID = 1121,
+					nameWrath = L["Boss_TheFourHorsemen"],
+					tacticsClassic = "",
 				},
 				boss10 = {
 					name = 1614, --Sapphiron
@@ -6550,6 +6795,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1119,
+					nameWrath = L["Boss_Sapphiron"],
+					tacticsClassic = "",
 				},
 				boss11 = {
 					name = 1615, --Kel'Thuzad
@@ -6561,11 +6808,15 @@ core.Instances = {
 					track = function() core._533:KelThuzad() end,
 					partial = false,
 					encounterID = 1114,
+					nameWrath = L["Boss_KelThuzad"],
+					tacticsClassic = "",
 				},
 			},
 
 			["533-25"] = { --Naxxramas 25 Man
 				name = 754,
+				nameLocalised = L["Instance_Naxxramas"],
+				classicPhase = 1,
 				boss1 = {
 					name = L["Instances_Other"], --MISSINGNAME71
 					bossIDs = {},
@@ -6575,6 +6826,8 @@ core.Instances = {
 					enabled = false,
 					track = nil,
 					partial = false,
+					nameWrath = L["Instances_Other"],
+					tacticsClassic = "",
 				},
 				boss2 = {
 					name = 1603, --Maexxna
@@ -6586,6 +6839,8 @@ core.Instances = {
 					track = function() core._533:Arachnophobia() end,
 					partial = false,
 					encounterID = 1116,
+					nameWrath = L["Boss_Maexxna"],
+					tacticsClassic = "",
 				},
 				boss3 = {
 					name = 1610, --Patchwerk
@@ -6597,6 +6852,8 @@ core.Instances = {
 					track = function() core._533:Patchwerk() end,
 					partial = false,
 					encounterID = 1118,
+					nameWrath = L["Boss_Patchwerk"],
+					tacticsClassic = "",
 				},
 				boss4 = {
 					name = 1605, --Heigan the Unclean
@@ -6608,6 +6865,8 @@ core.Instances = {
 					track = function() core._533:HeiganTheUnclean() end,
 					partial = false,
 					encounterID = 1112,
+					nameWrath = L["Boss_HeiganTheUnclean"],
+					tacticsClassic = "",
 				},
 				boss5 = {
 					name = 1602, --Grand Widow Faerlina
@@ -6619,6 +6878,8 @@ core.Instances = {
 					track = function() core._533:GrandWidowFaerlina() end,
 					partial = false,
 					encounterID = 1110,
+					nameWrath = L["Boss_GrandWidowFaerlina"],
+					tacticsClassic = "",
 				},
 				boss6 = {
 					name = 1613, --Thaddius
@@ -6630,6 +6891,8 @@ core.Instances = {
 					track = function() core._533:Shocking() end,
 					partial = false,
 					encounterID = 1120,
+					nameWrath = L["Boss_Thaddius"],
+					tacticsClassic = "",
 				},
 				boss7 = {
 					name = 1613, --Thaddius
@@ -6641,6 +6904,8 @@ core.Instances = {
 					track = function() core._533:Subtraction() end,
 					partial = false,
 					encounterID = 1120,
+					nameWrath = L["Boss_Thaddius"],
+					tacticsClassic = "",
 				},
 				boss8 = {
 					name = 1606, --Loatheb
@@ -6652,6 +6917,8 @@ core.Instances = {
 					track = function() core._533:Loatheb() end,
 					partial = false,
 					encounterID = 1115,
+					nameWrath = L["Boss_Loatheb"],
+					tacticsClassic = "",
 				},
 				boss9 = {
 					name = 1609, --Four Horsemen
@@ -6663,6 +6930,8 @@ core.Instances = {
 					track = function() core._533:FourHorsemen() end,
 					partial = false,
 					encounterID = 1121,
+					nameWrath = L["Boss_TheFourHorsemen"],
+					tacticsClassic = "",
 				},
 				boss10 = {
 					name = 1614, --Sapphiron
@@ -6674,6 +6943,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1119,
+					nameWrath = L["Boss_Sapphiron"],
+					tacticsClassic = "",
 				},
 				boss11 = {
 					name = 1615, --Kel'Thuzad
@@ -6685,11 +6956,15 @@ core.Instances = {
 					track = function() core._533:KelThuzad() end,
 					partial = false,
 					encounterID = 1114,
+					nameWrath = L["Boss_KelThuzad"],
+					tacticsClassic = "",
 				},
 			},
 
 			["631-10"] = { --Icecrown Citadel 10 Man
 				name = 758,
+				nameLocalised = L["Instance_IcecrownCitadel"],
+				classicPhase = 4,
 				boss1 = {
 					name = 1624, --Lord Marrowgar
 					bossIDs = {36612},
@@ -6700,6 +6975,8 @@ core.Instances = {
 					track = function() core._631:LordMarrowgar() end,
 					partial = false,
 					encounterID = 1101,
+					nameWrath = L["Boss_LordMarrowgar"],
+					tacticsClassic = "",
 				},
 				boss2 = {
 					name = 1625, --Lady Deathwhisper
@@ -6711,6 +6988,8 @@ core.Instances = {
 					track = function() core._631:LadyDeathwhisper() end,
 					partial = false,
 					encounterID = 1100,
+					nameWrath = L["Boss_LadyDeathwhisper"],
+					tacticsClassic = "",
 				},
 				boss3 = {
 					name = 1626, --Gunship Battle
@@ -6722,6 +7001,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1099,
+					nameWrath = L["Boss_GunshipBattle"],
+					tacticsClassic = "",
 				},
 				boss4 = {
 					name = 1628, --Deathbringer Saurfang
@@ -6733,6 +7014,8 @@ core.Instances = {
 					track = function() core._631:DeathbringerSaurfang() end,
 					partial = false,
 					encounterID = 1096,
+					nameWrath = L["Boss_DeathbringerSaurfang"],
+					tacticsClassic = "",
 				},
 				boss5 = {
 					name = 1629, --Festergut
@@ -6744,6 +7027,8 @@ core.Instances = {
 					track = function() core._631:Festergut() end,
 					partial = false,
 					encounterID = 1097,
+					nameWrath = L["Boss_Festergut"],
+					tacticsClassic = "",
 				},
 				boss6 = {
 					name = 1630, --Rotface
@@ -6755,6 +7040,8 @@ core.Instances = {
 					track = function() core._631:Rotface() end,
 					partial = false,
 					encounterID = 1104,
+					nameWrath = L["Boss_Rotface"],
+					tacticsClassic = "",
 				},
 				boss7 = {
 					name = 1631, --Professor Putricide
@@ -6766,6 +7053,8 @@ core.Instances = {
 					track = function() core._631:ProfessorPutricide() end,
 					partial = false,
 					encounterID = 1102,
+					nameWrath = L["Boss_PrOfessorPutricide"],
+					tacticsClassic = "",
 				},
 				boss8 = {
 					name = 1634, --Valithria Dreamwalker
@@ -6777,6 +7066,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1098,
+					nameWrath = L["Boss_ValithriaDreamwalker"],
+					tacticsClassic = "",
 				},
 				boss9 = {
 					name = 1635, --Sindragosa
@@ -6788,6 +7079,8 @@ core.Instances = {
 					track = function() core._631:Sindragosa() end,
 					partial = false,
 					encounterID = 1105,
+					nameWrath = L["Boss_Sindragosa"],
+					tacticsClassic = "",
 				},
 				boss10 = {
 					name = 1632, --Blood Prince Council
@@ -6799,6 +7092,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1095,
+					nameWrath = L["Boss_BloodPrinceCouncil"],
+					tacticsClassic = "",
 				},
 				boss11 = {
 					name = 1633, --Blood-Queen Lana'thel
@@ -6810,6 +7105,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1103,
+					nameWrath = L["Boss_Blood-QueenLanaThel"],
+					tacticsClassic = "",
 				},
 				boss12 = {
 					name = 1636, --The Lich King
@@ -6821,6 +7118,8 @@ core.Instances = {
 					track = function() core._631:LichKing() end,
 					partial = false,
 					encounterID = 1106,
+					nameWrath = L["Boss_TheLichKing"],
+					tacticsClassic = "",
 				},
 				boss13 = {
 					name = 1636, --The Lich King
@@ -6832,11 +7131,15 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1106,
+					nameWrath = L["Boss_TheLichKing"],
+					tacticsClassic = "",
 				},
 			},
 
 			["631-25"] = { --Icecrown Citadel 25 Man
 				name = 758,
+				nameLocalised = L["Instance_IcecrownCitadel"],
+				classicPhase = 4,
 				boss1 = {
 					name = 1624, --Lord Marrowgar
 					bossIDs = {36612},
@@ -6847,6 +7150,8 @@ core.Instances = {
 					track = function() core._631:LordMarrowgar() end,
 					partial = false,
 					encounterID = 1101,
+					nameWrath = L["Boss_LordMarrowgar"],
+					tacticsClassic = "",
 				},
 				boss2 = {
 					name = 1625, --Lady Deathwhisper
@@ -6858,6 +7163,8 @@ core.Instances = {
 					track = function() core._631:LadyDeathwhisper() end,
 					partial = false,
 					encounterID = 1100,
+					nameWrath = L["Boss_LadyDeathwhisper"],
+					tacticsClassic = "",
 				},
 				boss3 = {
 					name = 1626, --Gunship Battle
@@ -6869,6 +7176,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1099,
+					nameWrath = L["Boss_GunshipBattle"],
+					tacticsClassic = "",
 				},
 				boss4 = {
 					name = 1628, --Deathbringer Saurfang
@@ -6880,6 +7189,8 @@ core.Instances = {
 					track = function() core._631:DeathbringerSaurfang() end,
 					partial = false,
 					encounterID = 1096,
+					nameWrath = L["Boss_DeathbringerSaurfang"],
+					tacticsClassic = "",
 				},
 				boss5 = {
 					name = 1629, --Festergut
@@ -6891,6 +7202,8 @@ core.Instances = {
 					track = function() core._631:Festergut() end,
 					partial = false,
 					encounterID = 1097,
+					nameWrath = L["Boss_Festergut"],
+					tacticsClassic = "",
 				},
 				boss6 = {
 					name = 1630, --Rotface
@@ -6902,6 +7215,8 @@ core.Instances = {
 					track = function() core._631:Rotface() end,
 					partial = false,
 					encounterID = 1104,
+					nameWrath = L["Boss_Rotface"],
+					tacticsClassic = "",
 				},
 				boss7 = {
 					name = 1631, --Professor Putricide
@@ -6913,6 +7228,8 @@ core.Instances = {
 					track = function() core._631:ProfessorPutricide() end,
 					partial = false,
 					encounterID = 1102,
+					nameWrath = L["Boss_PrOfessorPutricide"],
+					tacticsClassic = "",
 				},
 				boss8 = {
 					name = 1634, --Valithria Dreamwalker
@@ -6924,6 +7241,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1098,
+					nameWrath = L["Boss_ValithriaDreamwalker"],
+					tacticsClassic = "",
 				},
 				boss9 = {
 					name = 1635, --Sindragosa
@@ -6935,6 +7254,8 @@ core.Instances = {
 					track = function() core._631:Sindragosa() end,
 					partial = false,
 					encounterID = 1105,
+					nameWrath = L["Boss_Sindragosa"],
+					tacticsClassic = "",
 				},
 				boss10 = {
 					name = 1632, --Blood Prince Council
@@ -6946,6 +7267,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1095,
+					nameWrath = L["Boss_BloodPrinceCouncil"],
+					tacticsClassic = "",
 				},
 				boss11 = {
 					name = 1633, --Blood-Queen Lana'thel
@@ -6957,6 +7280,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1103,
+					nameWrath = L["Boss_Blood-QueenLanaThel"],
+					tacticsClassic = "",
 				},
 				boss12 = {
 					name = 1636, --The Lich King
@@ -6968,6 +7293,8 @@ core.Instances = {
 					track = function() core._631:LichKing() end,
 					partial = false,
 					encounterID = 1106,
+					nameWrath = L["Boss_TheLichKing"],
+					tacticsClassic = "",
 				},
 				boss13 = {
 					name = 1636, --The Lich King
@@ -6979,6 +7306,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1106,
+					nameWrath = L["Boss_TheLichKing"],
+					tacticsClassic = "",
 				},
 			},
 		},
@@ -6986,6 +7315,8 @@ core.Instances = {
 		Dungeons = {
 			[574] = { --Utgarde Keep
 				name = 285,
+				nameLocalised = L["Instance_UtgardeKeep"],
+				classicPhase = 1,
 				boss1 = {
 					name = 638, --Prince Keleseth
 					bossIDs = {23953},
@@ -6996,11 +7327,15 @@ core.Instances = {
 					track = function() core._574:PrinceKeleseth() end,
 					partial = false,
 					encounterID = 2026,
+					nameWrath = L["Boss_PrinceKeleseth"],
+					tacticsClassic = "",
 				},
 			},
 
 			[576] = { --The Nexus
 				name = 281,
+				nameLocalised = L["Instance_TheNexus"],
+				classicPhase = 1,
 				boss1 = {
 					name = 618, --Grand Magus Telestra
 					bossIDs = {26731},
@@ -7010,6 +7345,8 @@ core.Instances = {
 					enabled = true,
 					track = function() core._576:GrandMagusTelestra() end,
 					partial = false,
+					nameWrath = L["Boss_GrandMagusTelestra"],
+					tacticsClassic = "",
 				},
 				boss2 = {
 					name = 619, --Anomalus
@@ -7020,6 +7357,8 @@ core.Instances = {
 					enabled = true,
 					track = function() core._576:Anomalus() end,
 					partial = false,
+					nameWrath = L["Boss_Anomalus"],
+					tacticsClassic = "",
 				},
 				boss3 = {
 					name = 621, --Keristrasza
@@ -7030,11 +7369,15 @@ core.Instances = {
 					enabled = true,
 					track = function() core._576:Keristrasza() end,
 					partial = false,
+					nameWrath = L["Boss_Keristasza"],
+					tacticsClassic = "",
 				},
 			},
 
 			[595] = { --The Culling of Stratholme
 				name = 279,
+				nameLocalised = L["Instance_TheCullingOfStratholme"],
+				classicPhase = 1,
 				boss1 = {
 					name = L["Instances_Other"], --MISSINGNAME72
 					bossIDs = {27737},
@@ -7044,6 +7387,8 @@ core.Instances = {
 					enabled = true,
 					track = function() core._595:ZombieFest() end,
 					partial = false,
+					nameWrath = L["Instances_Other"],
+					tacticsClassic = "",
 				},
 				boss2 = {
 					name = L["Instances_Other"], --MISSINGNAME73
@@ -7054,11 +7399,15 @@ core.Instances = {
 					enabled = false,
 					track = nil,
 					partial = false,
+					nameWrath = L["Instances_Other"],
+					tacticsClassic = "",
 				},
 			},
 
 			[601] = { --Azjol Nerub
 				name = 272,
+				nameLocalised = L["Instance_AzjolNerub"],
+				classicPhase = 3,
 				boss1 = {
 					name = 585, --Krik'thir the Gatewatcher
 					bossIDs = {},
@@ -7069,6 +7418,8 @@ core.Instances = {
 					track = function() end,
 					partial = false,
 					encounterID = 1971,
+					nameWrath = L["Boss_KrikthirTheGatewatcher"],
+					tacticsClassic = "",
 				},
 				boss2 = {
 					name = 586, --Hadronox
@@ -7080,6 +7431,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1972,
+					nameWrath = L["Boss_Hadronox"],
+					tacticsClassic = "",
 				},
 				boss3 = {
 					name = 587, --Anub'arak
@@ -7091,11 +7444,15 @@ core.Instances = {
 					track = function() core._601:Anubarak() end,
 					partial = false,
 					encounterID = 1973,
+					nameWrath = L["Boss_Anubarak"],
+					tacticsClassic = "",
 				},
 			},
 
 			[619] = { --Ahn'Kahet The Old Kingdom
 				name = 271,
+				nameLocalised = L["Instance_AhnkahetTheOldKingdom"],
+				classicPhase = 1,
 				boss1 = {
 					name = 580, --Elder Nadox
 					bossIDs = {29309},
@@ -7106,6 +7463,8 @@ core.Instances = {
 					track = function() core._619:ElderNadox() end,
 					partial = false,
 					encounterID = 1969,
+					nameWrath = L["Boss_ElderNadox"],
+					tacticsClassic = "",
 				},
 				boss2 = {
 					name = 582, --Jedoga Shadowseeker
@@ -7117,6 +7476,8 @@ core.Instances = {
 					track = function() core._619:JedogaShadowseeker() end,
 					partial = false,
 					encounterID = 1967,
+					nameWrath = L["Boss_JedogaShadowseeker"],
+					tacticsClassic = "",
 				},
 				boss3 = {
 					name = 584, --Herald Volazj
@@ -7128,11 +7489,15 @@ core.Instances = {
 					track = function() core._619:HeraldVolazj() end,
 					partial = false,
 					encounterID = 1968,
+					nameWrath = L["Boss_HeraldVolazj"],
+					tacticsClassic = "",
 				},
 			},
 
 			[600] = { --Dark Tharon Keep
 				name = 273,
+				nameLocalised = L["Instance_DrakTharonKeep"],
+				classicPhase = 1,
 				boss1 = {
 					name = 588, --Trollgore
 					bossIDs = {26630},
@@ -7143,6 +7508,8 @@ core.Instances = {
 					track = function() core._600:Trollgore() end,
 					partial = false,
 					encounterID = 1974,
+					nameWrath = L["Boss_Trollgore"],
+					tacticsClassic = "",
 				},
 				boss2 = {
 					name = 589, --Novos the Summoner
@@ -7154,6 +7521,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1976,
+					nameWrath = L["Boss_NovosTheSummoner"],
+					tacticsClassic = "",
 				},
 				boss3 = {
 					name = 590, --King Dred
@@ -7165,11 +7534,15 @@ core.Instances = {
 					track = function() core._600:KingDred() end,
 					partial = false,
 					encounterID = 1977,
+					nameWrath = L["Boss_KingDred"],
+					tacticsClassic = "",
 				},
 			},
 
 			[608] = { --Violet Hold
 				name = 283,
+				nameLocalised = L["Instance_TheVioletHold"],
+				classicPhase = 1,
 				boss1 = {
 					name = 632, --Cyanigosa
 					bossIDs = {},
@@ -7180,6 +7553,8 @@ core.Instances = {
 					track = function() end,
 					partial = false,
 					encounterID = 2020,
+					nameWrath = L["Boss_Cyanigosa"],
+					tacticsClassic = "",
 				},
 				boss2 = {
 					name = L["Instances_Other"], --MISSINGNAME74
@@ -7190,6 +7565,8 @@ core.Instances = {
 					enabled = false,
 					track = nil,
 					partial = false,
+					nameWrath = L["Instances_Other"],
+					tacticsClassic = "",
 				},
 				boss3 = {
 					name = 628, --Ichoron
@@ -7200,6 +7577,8 @@ core.Instances = {
 					enabled = false,
 					track = nil,
 					partial = false,
+					nameWrath = L["Boss_Ichoron"],
+					tacticsClassic = "",
 				},
 				boss4 = {
 					name = 631, --Zuramat the Obliterator
@@ -7210,11 +7589,15 @@ core.Instances = {
 					enabled = true,
 					track = function() core._608:ZuramatTheObliterator() end,
 					partial = false,
+					nameWrath = L["Boss_ZuramatTheObliterator"],
+					tacticsClassic = "",
 				},
 			},
 
 			[604] = { --Gundrak
 				name = 274,
+				nameLocalised = L["Instance_Gundrak"],
+				classicPhase = 1,
 				boss1 = {
 					name = 592, --Slad'ran
 					bossIDs = {29304},
@@ -7225,6 +7608,8 @@ core.Instances = {
 					track = function() core._604:Sladran() end,
 					partial = false,
 					encounterID = 1978,
+					nameWrath = L["Boss_Sladran"],
+					tacticsClassic = "",
 				},
 				boss2 = {
 					name = 594, --Moorabi
@@ -7236,6 +7621,8 @@ core.Instances = {
 					track = function() core._604:Moorabi() end,
 					partial = false,
 					encounterID = 1980,
+					nameWrath = L["Boss_Moorabi"],
+					tacticsClassic = "",
 				},
 				boss3 = {
 					name = 596, --Gal'darah
@@ -7247,6 +7634,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 1981,
+					nameWrath = L["Boss_Galdarah"],
+					tacticsClassic = "",
 				},
 				boss4 = {
 					name = 596, --Gal'darah
@@ -7258,11 +7647,15 @@ core.Instances = {
 					track = function() core._604:Galdarah() end,
 					partial = false,
 					encounterID = 1981,
+					nameWrath = L["Boss_Galdarah"],
+					tacticsClassic = "",
 				},
 			},
 
 			[599] = { --Halls of Stone
 				name = 277,
+				nameLocalised = L["Instance_HallsOfStone"],
+				classicPhase = 1,
 				boss1 = {
 					name = 605, --Maiden of Grief
 					bossIDs = {27975},
@@ -7273,6 +7666,8 @@ core.Instances = {
 					track = function() core._599:MaidenOfGrief() end,
 					partial = false,
 					encounterID = 1996,
+					nameWrath = L["Boss_MaidenOfGrief"],
+					tacticsClassic = "",
 				},
 				boss2 = {
 					name = 606, --Tribunal of Ages
@@ -7284,6 +7679,8 @@ core.Instances = {
 					track = function() core._599:TribunalOfAges() end,
 					partial = false,
 					encounterID = 1995,
+					nameWrath = L["Boss_TribunalOfAges"],
+					tacticsClassic = "",
 				},
 				boss3 = {
 					name = 607, --Sjonnir The Ironshaper
@@ -7295,11 +7692,15 @@ core.Instances = {
 					track = function() core._599:SjonnirTheIronshaper() end,
 					partial = false,
 					encounterID = 1998,
+					nameWrath = L["Boss_SjonnirTheIronshaper"],
+					tacticsClassic = "",
 				},
 			},
 
 			[602] = { --Halls of Lightning
 				name = 275,
+				nameLocalised = L["Instance_HallsOfLightning"],
+				classicPhase = 1,
 				boss1 = {
 					name = 597, --General Bjarngrim
 					bossIDs = {28586},
@@ -7310,6 +7711,8 @@ core.Instances = {
 					track = function() core._602:GeneralBjarngrim() end,
 					partial = false,
 					encounterID = 1987,
+					nameWrath = L["Boss_GeneralBjarngrim"],
+					tacticsClassic = "",
 				},
 				boss2 = {
 					name = 598, --Volkhan
@@ -7321,6 +7724,8 @@ core.Instances = {
 					track = function() core._602:Volkhan() end,
 					partial = false,
 					encounterID = 1985,
+					nameWrath = L["Boss_Volkhan"],
+					tacticsClassic = "",
 				},
 				boss3 = {
 					name = 600, --Loken
@@ -7332,11 +7737,15 @@ core.Instances = {
 					track = function() core._602:Loken() end,
 					partial = false,
 					encounterID = 1986,
+					nameWrath = L["Boss_Loken"],
+					tacticsClassic = "",
 				},
 			},
 
 			[578] = { --The Oculus
 				name = 282,
+				nameLocalised = L["Instance_TheOculus"],
+				classicPhase = 1,
 				boss1 = {
 					name = 625, --Ley-Guardian Eregos
 					bossIDs = {},
@@ -7347,6 +7756,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 2013,
+					nameWrath = L["Boss_Ley-GuardianEregos"],
+					tacticsClassic = "",
 				},
 				boss2 = {
 					name = 625, --Ley-Guardian Eregos
@@ -7358,6 +7769,8 @@ core.Instances = {
 					track = function() end,
 					partial = false,
 					encounterID = 2013,
+					nameWrath = L["Boss_Ley-GuardianEregos"],
+					tacticsClassic = "",
 				},
 				boss3 = {
 					name = 625, --Ley-Guardian Eregos
@@ -7369,6 +7782,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 2013,
+					nameWrath = L["Boss_Ley-GuardianEregos"],
+					tacticsClassic = "",
 				},
 				boss4 = {
 					name = 625, --Ley-Guardian Eregos
@@ -7380,6 +7795,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 2013,
+					nameWrath = L["Boss_Ley-GuardianEregos"],
+					tacticsClassic = "",
 				},
 				boss5 = {
 					name = 625, --Ley-Guardian Eregos
@@ -7391,11 +7808,15 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 2013,
+					nameWrath = L["Boss_Ley-GuardianEregos"],
+					tacticsClassic = "",
 				},
 			},
 
 			[575] = { --Utgarde Pinnacle
 				name = 286,
+				nameLocalised = L["Instance_UtgardePinnacle"],
+				classicPhase = 1,
 				boss1 = {
 					name = 641, --Svala Sorrowgrave
 					bossIDs = {},
@@ -7406,6 +7827,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 2030,
+					nameWrath = L["Boss_SvalaSorrowgrave"],
+					tacticsClassic = "",
 				},
 				boss2 = {
 					name = 643, --Skadi the Ruthless
@@ -7417,6 +7840,8 @@ core.Instances = {
 					track = function() core._575:SkadiTheRuthless() end,
 					partial = false,
 					encounterID = 2029,
+					nameWrath = L["Boss_SkadiTheRuthless"],
+					tacticsClassic = "",
 				},
 				boss3 = {
 					name = 643, --Skadi the Ruthless
@@ -7428,6 +7853,8 @@ core.Instances = {
 					track = nil,
 					partial = false,
 					encounterID = 2029,
+					nameWrath = L["Boss_SkadiTheRuthless"],
+					tacticsClassic = "",
 				},
 				boss4 = {
 					name = 644, --King Ymiron
@@ -7439,11 +7866,15 @@ core.Instances = {
 					track = function() core._575:KingYmiron() end,
 					partial = false,
 					encounterID = 2028,
+					nameWrath = L["Boss_KingYmiron"],
+					tacticsClassic = "",
 				},
 			},
 
 			[650] = { --Trial of the Champion
 				name = 284,
+				nameLocalised = L["Instance_TrialOfTheChampion"],
+				classicPhase = 3,
 				boss1 = {
 					name = 636, --Argent Confessor Paletress
 					bossIDs = {},
@@ -7453,6 +7884,8 @@ core.Instances = {
 					enabled = false,
 					track = nil,
 					partial = false,
+					nameWrath = L["Boss_ArgentConfessorPaletress"],
+					tacticsClassic = "",
 				},
 				boss2 = {
 					name = 635, --Eadric the Pure
@@ -7463,6 +7896,8 @@ core.Instances = {
 					enabled = false,
 					track = nil,
 					partial = false,
+					nameWrath = L["Boss_EadricThePure"],
+					tacticsClassic = "",
 				},
 				boss3 = {
 					name = 637, --The Black Knight
@@ -7474,11 +7909,15 @@ core.Instances = {
 					track = function() core._650:TheBlackKnight() end,
 					partial = false,
 					encounterID = 2021,
+					nameWrath = L["Boss_TheBlackKnight"],
+					tacticsClassic = "",
 				},
 			},
 
 			[632] = { --The Forge of Souls
 				name = 280,
+				nameLocalised = L["Instance_TheForgeOfSouls"],
+				classicPhase = 4,
 				boss1 = {
 					name = 615, --Bronjahm
 					bossIDs = {36497},
@@ -7489,6 +7928,8 @@ core.Instances = {
 					track = function() core._632:Bronjahm() end,
 					partial = false,
 					encounterID = 2006,
+					nameWrath = L["Boss_Bronjahm"],
+					tacticsClassic = "",
 				},
 				boss2 = {
 					name = 616, --Devourer of Souls
@@ -7500,11 +7941,15 @@ core.Instances = {
 					track = function() core._632:DevourerOfSouls() end,
 					partial = false,
 					encounterID = 2007,
+					nameWrath = L["Boss_DevourerOfSouls"],
+					tacticsClassic = "",
 				},
 			},
 
 			[658] = { --Pit of Saron
 				name = 278,
+				nameLocalised = L["Instance_PitOfSaron"],
+				classicPhase = 4,
 				boss1 = {
 					name = 608, --Forgemaster Garfrost
 					bossIDs = {36494},
@@ -7515,6 +7960,8 @@ core.Instances = {
 					track = function() core._658:ForgemasterGarfrost() end,
 					partial = false,
 					encounterID = 1999,
+					nameWrath = L["Boss_ForgemasterGarfrost"],
+					tacticsClassic = "",
 				},
 				boss2 = {
 					name = L["Instances_Other"], --MISSINGNAME75
@@ -7525,11 +7972,15 @@ core.Instances = {
 					enabled = true,
 					track = function() end,
 					partial = false,
+					nameWrath = L["Boss_MISSINGNAME75"],
+					tacticsClassic = "",
 				},
 			},
 
 			[668] = { --Halls of Reflection
 				name = 276,
+				nameLocalised = L["Instance_HallsOfReflection"],
+				classicPhase = 4,
 				boss1 = {
 					name = 603, --MISSINGNAME76
 					bossIDs = {},
@@ -7539,6 +7990,8 @@ core.Instances = {
 					enabled = false,
 					track = nil,
 					partial = false,
+					nameWrath = L["Boss_MISSINGNAME76"],
+					tacticsClassic = "",
 				},
 			},
 		},

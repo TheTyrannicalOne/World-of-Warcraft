@@ -2,7 +2,7 @@
 ## Title: HandyNotes_LegionTreasures
 ## Notes: Where are the hidden treasures in Legion?
 ## Author: Kemayo
-## Version: v28
+## Version: v29
 ## DefaultState: enabled
 ## X-Category: Map
 ## X-eMail: kemayo @ gmail DOT com
@@ -10,6 +10,9 @@
 ## X-Wago-ID: 0mKOnY6x
 ## SavedVariables: HandyNotes_LegionTreasuresDB
 ## RequiredDeps: HandyNotes
+## OptionalDeps: !LibUIDropDownMenu
+
+lib\LibUIDropDownMenu\LibUIDropDownMenu.xml
 
 handler\handler.xml
 

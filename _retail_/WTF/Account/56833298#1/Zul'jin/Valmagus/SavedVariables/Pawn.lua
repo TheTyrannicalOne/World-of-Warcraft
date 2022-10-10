@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0538,
+	["LastVersion"] = 2.0703,
 	["LastPlayerFullName"] = "Valmagus-Zul'jin",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {

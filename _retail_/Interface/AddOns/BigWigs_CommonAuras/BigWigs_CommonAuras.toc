@@ -25,7 +25,7 @@
 ## Notes-zhTW: Notifies you about common raid cooldowns.
 
 ## Author: Funkydude, Nebula169
-## Version: v9.2.1
+## Version: v9.2.1-2-g8cd8d5a
 ## X-Category: Raid
 ## X-License: All Rights Reserved: You are free to fork and modify on GitHub, please ask us about anything else.
 ## X-Curse-Project-ID: 13530

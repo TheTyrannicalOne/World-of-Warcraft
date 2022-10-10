@@ -17,9 +17,9 @@ SLE.Title = format('|cff9482c9%s|r', 'Shadow & Light')
 
 _G.ElvDB = ElvDB or {}
 _G.ElvDB.ShadowLightAlpha = false
---[=[@alpha@
+--@alpha@
 _G.ElvDB.ShadowLightAlpha = true
---@end-alpha@]=]
+--@end-alpha@
 
 BINDING_HEADER_SLE = '|cff9482c9Shadow & Light|r'
 

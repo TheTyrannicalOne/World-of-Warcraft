@@ -2,11 +2,14 @@
 FocusInterruptSoundsDB = {
 	["profileKeys"] = {
 		["Avisar - Dalaran"] = "PALADIN",
+		["Jingojaggot - Argent Dawn"] = "PRIEST",
+		["Brotus - Argent Dawn"] = "SHAMAN",
+		["Darnastris - Dalaran"] = "MAGE",
 		["Zulbathal - Zul'jin"] = "DRUID",
 		["Shanyt - Argent Dawn"] = "WARRIOR",
-		["Valmagus - Zul'jin"] = "PALADIN",
-		["Darnastris - Dalaran"] = "MAGE",
 		["Durlok - Black Dragonflight"] = "DRUID",
+		["Okona - Zul'jin"] = "PRIEST",
+		["Valmagus - Zul'jin"] = "PALADIN",
 		["Alatra - Zul'jin"] = "HUNTER",
 	},
 	["profiles"] = {
@@ -19,6 +22,10 @@ FocusInterruptSoundsDB = {
 		["MAGE"] = {
 		},
 		["DRUID"] = {
+		},
+		["SHAMAN"] = {
+		},
+		["PRIEST"] = {
 		},
 	},
 }

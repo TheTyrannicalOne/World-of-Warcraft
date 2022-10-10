@@ -18,7 +18,7 @@ C At Your Command|QID|34558|NC|M|69.79,20.70|N|Use the table and make your selec
 T At Your Command|QID|34558|M|69.88,20.81|N|To Foreman Eksos|
 ;Wrynn Arsenal: quest is The Quarry Quandary [QID 34563]
 ;Arcane Sanctum: quest is An Audience With The Archmage [QID 34631]
-A Next Quest|QID|34563^34631|PRE|34561&34560&34558|N|From Foreman Eksos.\n\nIf you built Wrynn Arsenal, accept The Quarry Quandary.\nIf you built Arcane Sanctum, accept An Audience With The Archmage.|M|69.88,20.81|
+A Next Quest|QID|34563^34631|PRE|34558|N|From Foreman Eksos.\n\nIf you built Wrynn Arsenal, accept The Quarry Quandary.\nIf you built Arcane Sanctum, accept An Audience With The Archmage.|M|69.88,20.81|
 h Fort Wrynn|QID|34563^34631|M|69.73,21.77|Z|Talador|N|With Olivia Abbington.|
 ; Artillery Tower
 C The Quarry Quandary|QID|34563|M|69.26,19.29|N|Head to Apprentice Mial, just outside the fort to the north.|NC|
@@ -150,7 +150,7 @@ T Joining the Ranks|QID|34993|M|9.74,20.78|N|To Magister Serena|
 ; These quests NOT part of having the Arcane Sanctum.
 ; (Use PREs???)
 R Gordal Foothills|ACTIVE|34578|M|63.41,63.12;62.47,65.40;62.41,67.42|CS|N|Now on to the Gordunni|
-T Going to the Gordunni|QID|34578|PRE|34624|M|69.57,67.87|N|To Miall|
+T Going to the Gordunni|QID|34578|PRE|34624|M|62.54,67.82|N|To Miall|
 A Dropping Bombs|QID|34976|M|62.57,67.87|N|From Miall|PRE|34578|
 C Dropping Bombs|QID|34976|M|63.46,68.99|QO|1|U|112091|N|Base Catapult Destroyed|PRE|34578|
 C Dropping Bombs|QID|34976|M|65.51,68.91|QO|2|U|112091|N|Central Catapult Destroyed|PRE|34578|
@@ -374,7 +374,7 @@ C Gul'rok Demons|QID|35254|M|33.6,74.4|US|QO|1|N|Kill demons in the area.|
 C Book Burning|QID|34164|US|QO|1|T|Shadowborne Dementor|N|Kill Dementors and loot their books.  Then burn them by Kor'thos.  They hide in the buildings and on the 2nd level.|
 T Book Burning|QID|34164|M|34.01,73.97|N|To Kor'thos Dawnfury|
 ; Not sure but for flow, this one below, MIGHT be able to be turned in before getting the Come Together quest - didn't test as I'd already turned in 35254
-T Retribution for the Light|QID|35254|M|42.91,76.11|N|To Exarch Maladaar|
+T Retribution for the Light|QID|35254|M|45.64,74.05|N|To Exarch Maladaar|
 T Into the Heart of Madness|QID|34157|M|31.21,73.60|N|To Soulbinder Nyami|
 A Destination: Unknown|QID|34154|PRE|34157|M|31.2,73.6|N|From Soulbinder Nyami|
 C Portal there|QID|34154|M|30.92,73.16|QO|1|N|Right click on the portal.|

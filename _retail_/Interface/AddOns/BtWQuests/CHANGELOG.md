@@ -1,3 +1,7 @@
+# v2.20.0
+
+- Fixed error setting title text on Dragonflight Beta 
+
 # v2.19.0
 
 - Updated for Dragonflight frame design changes

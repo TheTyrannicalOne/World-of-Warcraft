@@ -66,6 +66,8 @@ L["option_empty_slots"] = "Slots Vazios"
 L["option_macros"] = "Macros"
 L["option_pet_actions"] = "Ações de Ajudantes"
 --[[Translation missing --]]
+--[[ L["option_pvp_talents"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["option_talents"] = ""--]] 
 L["tooltip_list"] = "Perfis Disponíveis"
 --[[Translation missing --]]

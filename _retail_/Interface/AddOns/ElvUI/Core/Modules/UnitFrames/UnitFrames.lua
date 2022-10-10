@@ -381,13 +381,6 @@ function UF:GetAuraAnchorFrame(frame, attachTo)
 	end
 end
 
-function UF:ClearChildPoints(...)
-	for i=1, select('#', ...) do
-		local child = select(i, ...)
-		child:ClearAllPoints()
-	end
-end
-
 function UF:UpdateColors()
 	local db = self.db.colors
 
@@ -1386,7 +1379,7 @@ local Blacklist = {
 }
 
 for i = 1, 3 do
-	Blacklist['raid'..i] = { enable = true, fader = true, visibility = true }
+	Blacklist['raid'..i] = { customName = true, enable = true, fader = true, visibility = true }
 end
 
 function UF:MergeUnitSettings(from, to)

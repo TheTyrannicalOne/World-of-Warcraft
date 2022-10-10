@@ -4,25 +4,27 @@ DataStore_AgendaDB = {
 		["Avisar - Dalaran"] = "Avisar - Dalaran",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
+		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
+		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
-		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
 		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
 	},
 	["global"] = {
 		["Options"] = {
 			["WeeklyResetHour"] = 6,
 			["WeeklyResetDay"] = 2,
-			["NextWeeklyReset"] = "2022-09-06",
+			["NextWeeklyReset"] = "2022-10-04",
 		},
 		["Characters"] = {
 			["Default.Dalaran.Avisar"] = {
-				["lastUpdate"] = 1662280086,
+				["lastUpdate"] = 1664637320,
 			},
 			["Default.Dalaran.Darnastris"] = {
 				["lastUpdate"] = 1656301032,
@@ -37,7 +39,7 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1658018877,
 			},
 			["Default.Black Dragonflight.Durlok"] = {
-				["lastUpdate"] = 1662240320,
+				["lastUpdate"] = 1664637571,
 			},
 			["Default.Dalaran.Rotclaugh"] = {
 				["lastUpdate"] = 1648343686,
@@ -45,21 +47,28 @@ DataStore_AgendaDB = {
 			["Default.Dalaran.Illingrath"] = {
 				["lastUpdate"] = 1650157094,
 			},
-			["Default.Dalaran.Thorinbane"] = {
-				["lastUpdate"] = 1648345057,
-			},
-			["Default.Zul'jin.Zulbathal"] = {
-				["lastUpdate"] = 1662280203,
-			},
 			["Default.Dalaran.Varlouris"] = {
 				["lastUpdate"] = 1653803722,
 			},
+			["Default.Argent Dawn.Jingojaggot"] = {
+				["lastUpdate"] = 1664126376,
+			},
+			["Default.Zul'jin.Zulbathal"] = {
+				["lastUpdate"] = 1664636798,
+			},
+			["Default.Dalaran.Thorinbane"] = {
+				["lastUpdate"] = 1648345057,
+			},
+			["Default.Argent Dawn.Brotus"] = {
+				["lastUpdate"] = 1664633234,
+			},
 			["Default.Argent Dawn.Shanyt"] = {
 				["DungeonIDs"] = {
-					["Molten Core 40 Player|803084893"] = "196103|1662280298|0|1",
-					["Blackwing Lair 40 Player|803085095"] = "196103|1662280298|0|1",
+					["Ahn'Qiraj Temple 40 Player|804282279"] = "226991|1664668609|0|1",
+					["Ruins of Ahn'Qiraj 10 Player|804281875"] = "54191|1664668609|0|1",
+					["Molten Core 40 Player|804291580"] = "226991|1664668609|0|1",
 				},
-				["lastUpdate"] = 1662280317,
+				["lastUpdate"] = 1664668609,
 			},
 		},
 	},

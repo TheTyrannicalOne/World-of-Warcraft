@@ -1,19 +1,5 @@
 
 ElvCharacterDB = {
-	["CliqueDatatext"] = {
-	},
-	["ConvertKeybindings"] = true,
-	["ChatEditHistory"] = {
-		"/cw Ichikoro-Area52 can you come play the drum?", -- [1]
-		"/salute", -- [2]
-		"/kneel", -- [3]
-		"/flex", -- [4]
-		"/sneak", -- [5]
-		"/bleed", -- [6]
-		"/cw Ichikoro-Area52 all good there was one right below you to open a chest but someone came along and helped", -- [7]
-		"/opie", -- [8]
-		"/ltp", -- [9]
-	},
 	["ChatHistoryLog"] = {
 		{
 			"|cffffff00Hibernal Hollow is under attack!|r", -- [1]
@@ -2194,4 +2180,18 @@ ElvCharacterDB = {
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},
+	["CliqueDatatext"] = {
+	},
+	["ChatEditHistory"] = {
+		"/cw Ichikoro-Area52 can you come play the drum?", -- [1]
+		"/salute", -- [2]
+		"/kneel", -- [3]
+		"/flex", -- [4]
+		"/sneak", -- [5]
+		"/bleed", -- [6]
+		"/cw Ichikoro-Area52 all good there was one right below you to open a chest but someone came along and helped", -- [7]
+		"/opie", -- [8]
+		"/ltp", -- [9]
+	},
+	["ConvertKeybindings"] = true,
 }

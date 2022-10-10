@@ -58,11 +58,12 @@ function Config.GetScaling()
 end
 
 function Config.GetDataSource()
-    if WITDB.Settings.DataSource == 2 and core.TUJHelper.IsAPIAvailable() then
-        return 2
-    end
+    return 1
+    --if WITDB.Settings.DataSource == 2 and core.TUJHelper.IsAPIAvailable() then
+    --    return 2
+    --end
 
-    return not core.TSMHelper.IsAPIAvailable() and core.TUJHelper.IsAPIAvailable() and 2 or 1
+    --return not core.TSMHelper.IsAPIAvailable() and core.TUJHelper.IsAPIAvailable() and 2 or 1
 end
 
 function Config.SetDataSource(dataSource)

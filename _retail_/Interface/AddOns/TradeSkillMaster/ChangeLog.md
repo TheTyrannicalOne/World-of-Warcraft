@@ -1,6 +1,5 @@
-## v4.11.48 Changes
+## v4.11.56 Changes
 
-* [Retail] Fixed missing quantity input for enchants
-* [Classic] Fixed vellum issue with shield enchants
+* [Classic] Fix various issues while buying in the Browse tab of the AH
 
 [Known Issues](https://support.tradeskillmaster.com/en_US/known_issues)

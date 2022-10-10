@@ -777,7 +777,9 @@ for key,value in pairs({
 		[-577] = "魔兽电影",											-- Warcraft Movie
 		[-579] = "穿过黑暗之门",											-- Dark Portal Pass
 		[-580] = "暗影国度季节性促销",										-- Shadowlands Seasonal Promotions
-		[-581] = "极限冲层：第二季",										-- The Great Push: Season 2
+		[-581] = "燃烧的远征经典怀旧服典藏包",				-- TBC Classic Deluxe Edition
+		[-582] = "巫妖王之怒经典怀旧服诺森德英雄礼包",			-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
+		[-583] = "巫妖王之怒经典怀旧服诺森德史诗礼包",			-- WotLK Classic Northrend Epic Upgrade
 	-- PvP Header
 		-- PvP Set Names
 			[-659] = "候选者套装",									-- Aspirant PvP Gear (WoD, BfA)
@@ -1110,7 +1112,7 @@ for key, value in pairs({
 	[180503] = "盖满沙子的烹饪书",	-- Sandy Cookbook
 	[180570] = "小桶",	-- Keg
 	[180633] = "水晶之泪",	-- Crystalline Tear
-	--TODO: [180642] = "Inconspicuous Crate",	-- Inconspicuous Crate
+	[180642] = "不起眼的箱子",	-- Inconspicuous Crate	--TODO: This was taken from wotlk Wowhead
 	--TODO: [180652] = "Freshly Dug Dirt",	-- Freshly Dug Dirt
 	[180690] = "大型圣甲虫箱",	-- Large Scarab Coffer
 	[180691] = "圣甲虫箱",	-- Scarab Coffer
@@ -1122,19 +1124,19 @@ for key, value in pairs({
 	[180793] = "节日礼物",	-- Festive Gift
 	[180794] = "詹迪斯·巴罗夫的日记",	-- Journal of Jandice Barov	--TODO: This was taken from classic Wowhead
 	[180918] = "通缉：饥饿者泰里斯",	-- Wanted: Thaelis the Hungerer
-	[181011] = "魔导师达斯维瑟的日记",	-- Magister Duskwither's Journal	--TODO: This was taken from tbc Wowhead
-	[181073] = "薰炉",	-- Fragrant Cauldron	--TODO: This was taken from tbc Wowhead
+	[181011] = "魔导师达斯维瑟的日记",	-- Magister Duskwither's Journal	--TODO: This was taken from wotlk Wowhead
+	[181073] = "薰炉",	-- Fragrant Cauldron	--TODO: This was taken from wotlk Wowhead
 	[181074] = "竞技场的泥土",	-- Arena Spoils	--TODO: This was taken from classic Wowhead
 	--TODO: [181083] = "Sothos and Jarien's Heirlooms",	-- Sothos and Jarien's Heirlooms
 	[181147] = "通缉布告",	-- Wanted Poster
 	[181150] = "布满灰尘的日记",	-- Dusty Journal
 	[181153] = "通缉布告：邪恶的克尔加什",	-- Wanted Poster: Kel'gash the Wicked
 	[181638] = "通缉布告",	-- Wanted Poster
-	--TODO: [181643] = "Featherbeard's Remains",	-- Featherbeard's Remains
+	[181643] = "羽须的遗骸",	-- Featherbeard's Remains	--TODO: This was taken from wotlk Wowhead
 	[181649] = "羽须的日记",	-- Featherbeard's Journal
-	[181672] = "稻草人",	-- Wickerman Effigy	--TODO: This was taken from tbc Wowhead
-	[181698] = "虚空石",	-- Voidstone	--TODO: This was taken from tbc Wowhead
-	[181748] = "血水晶",	-- Blood Crystal	--TODO: This was taken from tbc Wowhead
+	[181672] = "稻草人",	-- Wickerman Effigy	--TODO: This was taken from wotlk Wowhead
+	[181698] = "虚空石",	-- Voidstone	--TODO: This was taken from wotlk Wowhead
+	[181748] = "血水晶",	-- Blood Crystal	--TODO: This was taken from wotlk Wowhead
 	--TODO: [181756] = "Battered Ancient Book",	-- Battered Ancient Book
 	[181889] = "通缉布告",	-- Wanted Poster
 	[182011] = "铁锭箱",	-- Crate of Ingots
@@ -1150,7 +1152,7 @@ for key, value in pairs({
 	[182947] = "鲜血法典",	-- The Codex of Blood
 	[182952] = "蒸汽泵废料",	-- Steam Pump Flotsam
 	[183284] = "通缉布告",	-- Wanted Poster
-	[183770] = "布纳尔控制台",	-- B'naar Control Console	--TODO: This was taken from tbc Wowhead
+	[183770] = "布纳尔控制台",	-- B'naar Control Console	--TODO: This was taken from wotlk Wowhead
 	[183811] = "通缉布告",	-- Wanted Poster
 	[184300] = "Necromantic Focus",	-- Necromantic Focus
 	[184465] = "军团宝箱",	-- Cache of the Legion
@@ -1160,7 +1162,7 @@ for key, value in pairs({
 	[184945] = "通缉布告",	-- Wanted Poster
 	[184946] = "通缉布告",	-- Wanted Poster
 	[185035] = "通缉布告",	-- Wanted Poster
-	[185126] = "水晶监牢",	-- Crystal Prison	--TODO: This was taken from tbc Wowhead
+	[185126] = "水晶监牢",	-- Crystal Prison	--TODO: This was taken from wotlk Wowhead
 	[185165] = "军团联络器",	-- Legion Communicator
 	[185166] = "通缉布告",	-- Wanted Poster
 	[185168] = "强化魔铁箱",	-- Reinforced Fel Iron Chest
@@ -1262,8 +1264,14 @@ for key, value in pairs({
 	[191766] = "达库鲁的命令",	-- Orders From Drakuru
 	[192049] = "利齿青鱼群",	-- Fangtooth Herring School
 	[192060] = "弗约恩之砧",	-- Fjorn's Anvil	--TODO: This was manually translated
+	[192071] = "弗约恩之砧",	-- Fjorn's Anvil
 	[192072] = "鱼叉箱",	-- Harpoon Crate
+	[192078] = "霍迪尔的号角",	-- Hodir's Horn
+	[192079] = "霍迪尔之矛",	-- Hodir's Spear
+	[192080] = "霍迪尔之盔",	-- Hodir's Helm
+	[192524] = "贪婪的安格里姆",	-- Arngrim the Insatiable
 	[192833] = "布雷登布莱德的物品",	-- Bridenbrad's Possessions
+	[193051] = "天灾蛛魔之卵",	-- Nerubian Scourge Egg
 	[193195] = "脉动的水晶",	-- Pulsing Crystal
 	[193400] = "萨隆邪铁炸弹堆",	-- Saronite Bomb Stack
 	[194032] = "联盟篝火",	-- Alliance Bonfire
@@ -1290,6 +1298,7 @@ for key, value in pairs({
 	[194389] = "被盗的探险者协会文件",	-- Stolen Explorers' League Document
 	[194390] = "被盗的探险者协会文件",	-- Stolen Explorers' League Document
 	[194391] = "被盗的探险者协会文件",	-- Stolen Explorers' League Document
+	[194555] = "档案馆控制台",	-- Archivum Console
 	[194714] = "恶心的工作台",	-- Disgusting Workbench
 	[195134] = "大炸弹",	-- The Bomb	--TODO: This was manually translated
 	[195431] = "总部无线电",	-- Headquarters Radio
@@ -2624,6 +2633,7 @@ for key, value in pairs({
 	[303016] = "|cFFFFFFFF第14步:|r 普通的卵石 XIII",	-- |cFFFFFFFFStep 14:|r Ordinary Pebble XIII
 	[303017] = "|cFFFFFFFF第13步:|r 普通的卵石 XII",	-- |cFFFFFFFFStep 13:|r Ordinary Pebble XII
 	[303018] = "|cFFFFFFFF第12步:|r 普通的卵石 XI",	-- |cFFFFFFFFStep 12:|r Ordinary Pebble XI
+	[303039] = "奇怪的谷物袋",	-- Curious Grain Sack
 	[307265] = "通缉布告",	-- Wanted Poster
 	[307277] = "旧酒壶",	-- Old Jug	--TODO: This was manually translated
 	[307307] = "破损的桶",	-- Broken Barrel
@@ -2830,6 +2840,7 @@ for key, value in pairs({
 	[353686] = "月光之荚",	-- Lunarlight Pod
 	[353687] = "破损之钟",	-- Broken Bell
 	[353688] = "破损之钟",	-- Broken Bell
+	[353689] = "破损之钟",	-- Broken Bell
 	[353691] = "天空之钟",	-- Skyward Bell
 	[353791] = "城堡保险箱",	-- Castle Strongbox
 	[353792] = "村庄保险箱",	-- Village Strongbox

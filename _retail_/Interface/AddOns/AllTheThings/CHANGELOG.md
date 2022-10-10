@@ -1,26 +1,22 @@
 # AllTheThings
 
-## [SL-2.9.6](https://github.com/DFortun81/AllTheThings/tree/SL-2.9.6) (2022-09-11)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.9.5...SL-2.9.6) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [SL-2.9.11](https://github.com/DFortun81/AllTheThings/tree/SL-2.9.11) (2022-10-09)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.9.10...SL-2.9.11) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 
 ### Functional changes
 
-- Modified Quests slightly such that any normally uncollectible Quests marked as providing reputation up to a certain threshold with a faction will now show as a 'Cost' for the respective Faction instead of showing as Uncollected. Example: repeatable Sporeggar quests that you can do for rep.
-
-
-### Logic fixes
-
-- Removed accidentally left debug print.
-- We will no longer consider all Shadowlands legendary craftable ranks collected when you craft the first rank. This bug was present the whole expansion!
+- Adjusted 'Lore' tooltip text to be a slightly darker blue to make it distinct from custom Descriptions (will probably be adjusted in future). Just a reminder that you can disable Lore text but still have helpful descriptions enabled, check it in Settings!
+- Automatic expansion of groups will no longer expand Difficulty headers (doesn't affect when clicking the groups manually).
+- Reverted logic that moves Common Boss Drops and Zone Drops in minilists. This is compensated by those respective headers no longer being automatically expanded inside instances due to the 'Expand Current Difficulty' option.
 
 
 ### Data fixes
 
-- Fixes for PvP: Wrath of the Lich King, Battle for Azeroth, Shadowlands. While it is better than before we still have some missing data, please report on our Discord server.
-- Burning Crusade, Wrath of the Lich King achievements adjustments.
-- Brewfest, Hallow's End achievements adjustments.
-- Moved a bunch of mount achievements out of Feats of Strength and into where they belong.
-- Updated all of the meta exploration achievements.
-- Updated all Northrend Rares.
+- You can get the Shrouded Banner of the Opportune toy again if you missed it during The Great Push SL Season 4. Check out [Raider.IO's Break the Meta](https://raider.io/news/403-break-the-meta-s4-arrives-october-4th) event!
+- **Professions updates** (most of these are only updates of content from Classic up to WotLK): gathering professions (+Mining/Skinning BfA Quests), Alchemy, Tailoring (up to Cataclysm), Cooking, Engineering, Enchanting, Leatherworking, Blacksmithing.
+- Ongoing adjustments to Achievements, this time around in the Exploration category.
+- Updated Wintergrasp.
+- Fixed a bunch of Northrend vendors.
+- Fixed lots of duplicate quests.
 - Other fixes.

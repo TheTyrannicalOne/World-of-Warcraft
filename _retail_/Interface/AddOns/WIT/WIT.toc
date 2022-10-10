@@ -1,7 +1,7 @@
-## Interface: 90205
+## Interface: 90207
 ## Title: |c00ffff00WorthIt|r
 ## Author: DALAGG
-## Version: v4.0.10
+## Version: v4.0.11
 ## DefaultState: enabled
 ## SavedVariables: WITDB
 ## OptionalDeps: TradeSkillMaster, TheUndermineJournal, Routes, TomTom, Scrap

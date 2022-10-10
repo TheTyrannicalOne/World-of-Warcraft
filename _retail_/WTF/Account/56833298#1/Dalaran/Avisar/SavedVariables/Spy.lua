@@ -1,9 +1,5 @@
 
 SpyPerCharDB = {
-	["KOSData"] = {
-	},
-	["IgnoreData"] = {
-	},
 	["PlayerData"] = {
 		["Pierunea-Gilneas"] = {
 			["mapID"] = 49,
@@ -211,20 +207,21 @@ SpyPerCharDB = {
 			["isGuess"] = false,
 			["name"] = "Faalgrim-Malfurion",
 		},
-		["Pickpockpal-Fizzcrank"] = {
-			["mapID"] = 84,
-			["guild"] = "Justabank",
-			["zone"] = "Stormwind City",
-			["mapY"] = 0.7,
-			["class"] = "ROGUE",
+		["Coroak-AeriePeak"] = {
+			["mapID"] = 863,
+			["guild"] = "Hordecorp",
+			["zone"] = "Nazmir",
+			["mapY"] = 0.16,
+			["class"] = "DEATHKNIGHT",
 			["isEnemy"] = true,
-			["race"] = "Undead",
+			["loses"] = 1,
+			["mapX"] = 0.8,
 			["isGuess"] = false,
-			["subZone"] = "",
-			["mapX"] = 0.6,
-			["level"] = 60,
-			["time"] = 1655657931,
-			["name"] = "Pickpockpal-Fizzcrank",
+			["time"] = 1593401153,
+			["subZone"] = "The Sundered Span",
+			["level"] = 120,
+			["race"] = "Vulpera",
+			["name"] = "Coroak-AeriePeak",
 		},
 		["Arkkanis-Thrall"] = {
 			["mapID"] = 1527,
@@ -241,22 +238,6 @@ SpyPerCharDB = {
 			["level"] = 120,
 			["subZone"] = "Ruins of Ammon",
 			["loses"] = 1,
-		},
-		["Eladarmri-Zul'jin"] = {
-			["mapID"] = 1527,
-			["guild"] = "Vox Nihil",
-			["zone"] = "Uldum",
-			["mapY"] = 0.58,
-			["class"] = "ROGUE",
-			["isEnemy"] = true,
-			["loses"] = 1,
-			["race"] = "Zandalari Troll",
-			["time"] = 1592589500,
-			["subZone"] = "Ankhaten Harbor",
-			["mapX"] = 0.21,
-			["level"] = 120,
-			["isGuess"] = false,
-			["name"] = "Eladarmri-Zul'jin",
 		},
 		["Domageddon-Kel'Thuzad"] = {
 			["mapID"] = 114,
@@ -289,21 +270,21 @@ SpyPerCharDB = {
 			["time"] = 1605218674,
 			["loses"] = 1,
 		},
-		["Coroak-AeriePeak"] = {
-			["mapID"] = 863,
-			["guild"] = "Hordecorp",
-			["zone"] = "Nazmir",
-			["mapY"] = 0.16,
-			["class"] = "DEATHKNIGHT",
+		["Eladarmri-Zul'jin"] = {
+			["mapID"] = 1527,
+			["guild"] = "Vox Nihil",
+			["zone"] = "Uldum",
+			["mapY"] = 0.58,
+			["class"] = "ROGUE",
 			["isEnemy"] = true,
 			["loses"] = 1,
-			["mapX"] = 0.8,
-			["isGuess"] = false,
-			["time"] = 1593401153,
-			["subZone"] = "The Sundered Span",
+			["race"] = "Zandalari Troll",
+			["time"] = 1592589500,
+			["subZone"] = "Ankhaten Harbor",
+			["mapX"] = 0.21,
 			["level"] = 120,
-			["race"] = "Vulpera",
-			["name"] = "Coroak-AeriePeak",
+			["isGuess"] = false,
+			["name"] = "Eladarmri-Zul'jin",
 		},
 		["Arasune-Stormreaver"] = {
 			["mapID"] = 114,
@@ -322,5 +303,9 @@ SpyPerCharDB = {
 			["name"] = "Arasune-Stormreaver",
 		},
 	},
+	["IgnoreData"] = {
+	},
 	["version"] = "1.1",
+	["KOSData"] = {
+	},
 }

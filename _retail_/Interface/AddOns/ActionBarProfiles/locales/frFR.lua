@@ -80,6 +80,8 @@ if not L then return end
 --[[Translation missing --]]
 --[[ L["option_pet_actions"] = ""--]] 
 --[[Translation missing --]]
+--[[ L["option_pvp_talents"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["option_talents"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["tooltip_list"] = ""--]] 

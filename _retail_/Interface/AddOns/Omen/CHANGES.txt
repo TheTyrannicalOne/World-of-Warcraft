@@ -1,12 +1,8 @@
-tag 14ae5ab387345b138dd57c16ca9bc253a946712e v3.2.4
-Author:	Hendrik Leppkes <h.leppkes@gmail.com>
-Date:	Thu Nov 19 12:32:29 2020 +0100
+Changes since tag v3.2.4
 
-Tag as v3.2.4
-
-commit f5cc63d1d93209bf4000dcf2b5c298e7f4b6363a
+commit 4840968fbd4025f2d6ebea4a1f1753c1f318e38e
 Author: Hendrik Leppkes <h.leppkes@gmail.com>
-Date:   Thu Nov 19 12:32:07 2020 +0100
+Date:   Thu Sep 1 11:05:48 2022 +0200
 
-    Update for 9.0.2
+    Improve classic support
 

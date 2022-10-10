@@ -89,16 +89,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["last_dps"] = 0,
-							["classe"] = "UNKNOW",
+							["end_time"] = 1652476588,
 							["friendlyfire_total"] = 0,
+							["aID"] = "44011",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.001246,
 							["monster"] = true,
 							["fight_component"] = true,
 							["total"] = 0.001246,
-							["damage_taken"] = 239166.001246,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Muddied Water Elemental",
 							["spells"] = {
@@ -106,16 +107,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["end_time"] = 1652476588,
+							["damage_taken"] = 239166.001246,
 							["dps_started"] = false,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["on_hold"] = false,
+							["last_dps"] = 0,
 							["start_time"] = 1652476588,
 							["serial"] = "Creature-0-4220-0-27389-44011-0001FEC967",
-							["aID"] = "44011",
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -125,43 +125,70 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorb"] = 0.005442,
-							["last_hps"] = 0,
 							["healing_from"] = {
 							},
-							["targets"] = {
-							},
-							["healing_taken"] = 0.005442,
 							["pets"] = {
 							},
-							["totalover_without_pet"] = 0.005442,
-							["targets_overheal"] = {
-							},
+							["iniciar_hps"] = true,
 							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.005442,
+							["totalover"] = 1702.005442,
 							["total_without_pet"] = 0.005442,
-							["iniciar_hps"] = false,
-							["totaldenied"] = 0.005442,
-							["aID"] = "3683-0BE4455C",
 							["total"] = 0.005442,
-							["classe"] = "PALADIN",
-							["last_event"] = 0,
-							["nome"] = "Avisar",
 							["spec"] = 70,
-							["grupo"] = true,
-							["delay"] = 0,
 							["heal_enemy"] = {
 							},
+							["on_hold"] = true,
+							["serial"] = "Player-3683-0BE4455C",
+							["totalabsorb"] = 0.005442,
+							["last_hps"] = 0,
+							["targets"] = {
+							},
+							["totalover_without_pet"] = 0.005442,
+							["healing_taken"] = 0.005442,
+							["timeMachine"] = 15,
+							["totaldenied"] = 0.005442,
+							["targets_overheal"] = {
+								["Auctioneer Chilton"] = 1702,
+							},
+							["nome"] = "Avisar",
 							["spells"] = {
 								["_ActorTable"] = {
+									[19750] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Auctioneer Chilton"] = 1702,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Auctioneer Chilton"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 1,
+										["overheal"] = 1702,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 19750,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["absorbed"] = 0,
+									},
 								},
 								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["classe"] = "PALADIN",
+							["last_event"] = 1665360913,
 							["custom"] = 0,
 							["tipo"] = 2,
-							["on_hold"] = false,
-							["start_time"] = 0,
-							["serial"] = "Player-3683-0BE4455C",
+							["aID"] = "3683-0BE4455C",
+							["start_time"] = 1665360913,
+							["delay"] = 1665360913,
 							["targets_absorbs"] = {
 							},
 						}, -- [1]
@@ -255,13 +282,13 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					239165.740032, -- [1]
-					-1.481134000000592, -- [2]
+					239165.676119, -- [1]
+					-1.771756000000823, -- [2]
 					{
-						-0.09310400000002289, -- [1]
-						[0] = -0.005275000000015629,
+						-0.1025910000000181, -- [1]
+						[0] = -0.01370700000001563,
 						["alternatepower"] = 0,
-						[6] = -0.02863899999999831,
+						[6] = -0.05206099999999836,
 						[3] = -0.007362,
 					}, -- [3]
 					{
@@ -271,7 +298,7 @@ _detalhes_database = {
 						["cc_break"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
+						["dispell"] = -0.004388000000000059,
 						["cooldowns_defensive"] = 0,
 					}, -- [4]
 					["voidzone_damage"] = 0,
@@ -623,14 +650,38 @@ _detalhes_database = {
 							0, -- [8]
 						}, -- [28]
 						{
+							false, -- [1]
+							302674, -- [2]
+							2472, -- [3]
+							1665360382.54, -- [4]
+							17860, -- [5]
+							"Eiznel", -- [6]
+							nil, -- [7]
+							0, -- [8]
 						}, -- [29]
 						{
+							false, -- [1]
+							77489, -- [2]
+							183, -- [3]
+							1665360385.581, -- [4]
+							17860, -- [5]
+							"Eiznel", -- [6]
+							nil, -- [7]
+							0, -- [8]
 						}, -- [30]
 						{
+							false, -- [1]
+							77489, -- [2]
+							182, -- [3]
+							1665360388.648, -- [4]
+							17860, -- [5]
+							"Eiznel", -- [6]
+							nil, -- [7]
+							0, -- [8]
 						}, -- [31]
 						{
 						}, -- [32]
-						["n"] = 29,
+						["n"] = 32,
 					},
 				},
 				["start_time"] = 7663.271,
@@ -724,16 +775,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "44011",
+							["damage_taken"] = 271260.003103,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.003103,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.003103,
-							["damage_taken"] = 271260.003103,
+							["end_time"] = 1652476568,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Muddied Water Elemental",
 							["spells"] = {
@@ -741,16 +793,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.003103,
 							["dps_started"] = false,
-							["end_time"] = 1652476568,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652476568,
 							["serial"] = "Creature-0-4220-0-27389-44011-00037EC99F",
-							["friendlyfire_total"] = 0,
+							["aID"] = "44011",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -1099,16 +1150,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "44011",
+							["damage_taken"] = 120095.002241,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.002241,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.002241,
-							["damage_taken"] = 120095.002241,
+							["end_time"] = 1652476559,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Muddied Water Elemental",
 							["spells"] = {
@@ -1145,16 +1197,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.002241,
 							["dps_started"] = false,
-							["end_time"] = 1652476559,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1652476567,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652476559,
 							["serial"] = "Creature-0-4220-0-27389-44011-00017EC967",
-							["friendlyfire_total"] = 0,
+							["aID"] = "44011",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -1441,16 +1492,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "44011",
+							["damage_taken"] = 116302.005691,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.005691,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.005691,
-							["damage_taken"] = 116302.005691,
+							["end_time"] = 1652476548,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Muddied Water Elemental",
 							["spells"] = {
@@ -1458,16 +1510,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.005691,
 							["dps_started"] = false,
-							["end_time"] = 1652476548,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652476548,
 							["serial"] = "Creature-0-4220-0-27389-44011-00047EC99F",
-							["friendlyfire_total"] = 0,
+							["aID"] = "44011",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -1772,16 +1823,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "44011",
+							["damage_taken"] = 60778.006497,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.006497,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.006497,
-							["damage_taken"] = 60778.006497,
+							["end_time"] = 1652476537,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Muddied Water Elemental",
 							["spells"] = {
@@ -1818,16 +1870,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.006497,
 							["dps_started"] = false,
-							["end_time"] = 1652476537,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1652476535,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652476537,
 							["serial"] = "Creature-0-4220-0-27389-44011-0000FEC911",
-							["friendlyfire_total"] = 0,
+							["aID"] = "44011",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -2132,16 +2183,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "44011",
+							["damage_taken"] = 917064.006043,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.006043,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.006043,
-							["damage_taken"] = 917064.006043,
+							["end_time"] = 1652476527,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Muddied Water Elemental",
 							["spells"] = {
@@ -2149,16 +2201,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.006043,
 							["dps_started"] = false,
-							["end_time"] = 1652476527,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652476527,
 							["serial"] = "Creature-0-4220-0-27389-44011-0001FEC911",
-							["friendlyfire_total"] = 0,
+							["aID"] = "44011",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -2435,16 +2486,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "44011",
+							["damage_taken"] = 60942.00388,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.00388,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.00388,
-							["damage_taken"] = 60942.00388,
+							["end_time"] = 1652476521,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Muddied Water Elemental",
 							["spells"] = {
@@ -2481,16 +2533,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.00388,
 							["dps_started"] = false,
-							["end_time"] = 1652476521,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1652476520,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652476521,
 							["serial"] = "Creature-0-4220-0-27389-44011-00027EC967",
-							["friendlyfire_total"] = 0,
+							["aID"] = "44011",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -2795,16 +2846,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45185",
+							["damage_taken"] = 61305.002536,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.002536,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.002536,
-							["damage_taken"] = 61305.002536,
+							["end_time"] = 1652476058,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Diamond-Blade Shredder",
 							["spells"] = {
@@ -2841,16 +2893,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.002536,
 							["dps_started"] = false,
-							["end_time"] = 1652476058,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1652476057,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652476058,
 							["serial"] = "Creature-0-4220-0-27389-45185-00007EBAE7",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45185",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -3166,16 +3217,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45187",
+							["damage_taken"] = 61590.005706,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.005706,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.005706,
-							["damage_taken"] = 61590.005706,
+							["end_time"] = 1652475921,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Axebite Grunt",
 							["spells"] = {
@@ -3183,16 +3235,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.005706,
 							["dps_started"] = false,
-							["end_time"] = 1652475921,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475921,
 							["serial"] = "Creature-0-4220-0-27389-45187-00007EC80E",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45187",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -3491,16 +3542,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45187",
+							["damage_taken"] = 66240.008632,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.008632,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.008632,
-							["damage_taken"] = 66240.008632,
+							["end_time"] = 1652475905,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Axebite Grunt",
 							["spells"] = {
@@ -3508,16 +3560,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.008632,
 							["dps_started"] = false,
-							["end_time"] = 1652475905,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475905,
 							["serial"] = "Creature-0-4220-0-27389-45187-00007EC7FE",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45187",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -3827,16 +3878,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45187",
+							["damage_taken"] = 120885.007646,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.007646,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.007646,
-							["damage_taken"] = 120885.007646,
+							["end_time"] = 1652475889,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Axebite Grunt",
 							["spells"] = {
@@ -3844,16 +3896,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.007646,
 							["dps_started"] = false,
-							["end_time"] = 1652475889,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475889,
 							["serial"] = "Creature-0-4220-0-27389-45187-00007EC7ED",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45187",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -4179,16 +4230,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45187",
+							["damage_taken"] = 978414.003044,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.003044,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.003044,
-							["damage_taken"] = 978414.003044,
+							["end_time"] = 1652475877,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Axebite Grunt",
 							["spells"] = {
@@ -4196,16 +4248,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.003044,
 							["dps_started"] = false,
-							["end_time"] = 1652475877,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475877,
 							["serial"] = "Creature-0-4220-0-27389-45187-00007EC7E2",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45187",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -4260,12 +4311,12 @@ _detalhes_database = {
 							["nome"] = "Avisar",
 							["spec"] = 70,
 							["grupo"] = true,
+							["buff_uptime"] = 4,
 							["pets"] = {
 							},
 							["spell_cast"] = {
 								[255937] = 1,
 							},
-							["buff_uptime"] = 4,
 							["aID"] = "3683-0BE4455C",
 							["last_event"] = 1652475877,
 							["tipo"] = 4,
@@ -4524,16 +4575,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45185",
+							["damage_taken"] = 65323.001419,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.001419,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.001419,
-							["damage_taken"] = 65323.001419,
+							["end_time"] = 1652475733,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Diamond-Blade Shredder",
 							["spells"] = {
@@ -4541,16 +4593,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.001419,
 							["dps_started"] = false,
-							["end_time"] = 1652475733,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475733,
 							["serial"] = "Creature-0-4220-0-27389-45185-00007EB7AD",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45185",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -4838,16 +4889,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45185",
+							["damage_taken"] = 237663.007038,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.007038,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.007038,
-							["damage_taken"] = 237663.007038,
+							["end_time"] = 1652475726,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Diamond-Blade Shredder",
 							["spells"] = {
@@ -4855,16 +4907,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.007038,
 							["dps_started"] = false,
-							["end_time"] = 1652475726,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475726,
 							["serial"] = "Creature-0-4220-0-27389-45185-00007EA836",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45185",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -5162,16 +5213,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45185",
+							["damage_taken"] = 192966.002044,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.002044,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.002044,
-							["damage_taken"] = 192966.002044,
+							["end_time"] = 1652475716,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Diamond-Blade Shredder",
 							["spells"] = {
@@ -5208,16 +5260,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.002044,
 							["dps_started"] = false,
-							["end_time"] = 1652475716,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1652475725,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475716,
 							["serial"] = "Creature-0-4220-0-27389-45185-00007EBA6A",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45185",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -5572,16 +5623,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45185",
+							["damage_taken"] = 570015.006115,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.006115,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.006115,
-							["damage_taken"] = 570015.006115,
+							["end_time"] = 1652475712,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Diamond-Blade Shredder",
 							["spells"] = {
@@ -5618,16 +5670,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.006115,
 							["dps_started"] = false,
-							["end_time"] = 1652475712,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1652475715,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475712,
 							["serial"] = "Creature-0-4220-0-27389-45185-00007EB985",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45185",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -5682,12 +5733,12 @@ _detalhes_database = {
 							["nome"] = "Avisar",
 							["spec"] = 70,
 							["grupo"] = true,
+							["buff_uptime"] = 6,
 							["pets"] = {
 							},
 							["spell_cast"] = {
 								[255937] = 1,
 							},
-							["buff_uptime"] = 6,
 							["aID"] = "3683-0BE4455C",
 							["last_event"] = 1652475712,
 							["tipo"] = 4,
@@ -5995,16 +6046,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45185",
+							["damage_taken"] = 313585.003751,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.003751,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.003751,
-							["damage_taken"] = 313585.003751,
+							["end_time"] = 1652475703,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Diamond-Blade Shredder",
 							["spells"] = {
@@ -6041,16 +6093,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.003751,
 							["dps_started"] = false,
-							["end_time"] = 1652475703,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1652475701,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475703,
 							["serial"] = "Creature-0-4220-0-27389-45185-00007E8EE3",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45185",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -6399,16 +6450,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45185",
+							["damage_taken"] = 115766.008022,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.008022,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.008022,
-							["damage_taken"] = 115766.008022,
+							["end_time"] = 1652475693,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Diamond-Blade Shredder",
 							["spells"] = {
@@ -6416,16 +6468,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.008022,
 							["dps_started"] = false,
-							["end_time"] = 1652475693,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475693,
 							["serial"] = "Creature-0-4220-0-27389-45185-00007E2AA6",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45185",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -6713,16 +6764,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45185",
+							["damage_taken"] = 114343.003035,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.003035,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.003035,
-							["damage_taken"] = 114343.003035,
+							["end_time"] = 1652475681,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Diamond-Blade Shredder",
 							["spells"] = {
@@ -6730,16 +6782,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.003035,
 							["dps_started"] = false,
-							["end_time"] = 1652475681,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475681,
 							["serial"] = "Creature-0-4220-0-27389-45185-00007EC6F4",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45185",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -7054,16 +7105,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45185",
+							["damage_taken"] = 240975.001925,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.001925,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.001925,
-							["damage_taken"] = 240975.001925,
+							["end_time"] = 1652475674,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Diamond-Blade Shredder",
 							["spells"] = {
@@ -7071,16 +7123,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.001925,
 							["dps_started"] = false,
-							["end_time"] = 1652475674,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475674,
 							["serial"] = "Creature-0-4220-0-27389-45185-00007EC6DC",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45185",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -7396,16 +7447,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45175",
+							["damage_taken"] = 390397.002964,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.002964,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.002964,
-							["damage_taken"] = 390397.002964,
+							["end_time"] = 1652475649,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Axebite Marine",
 							["spells"] = {
@@ -7413,16 +7465,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.002964,
 							["dps_started"] = false,
-							["end_time"] = 1652475649,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475649,
 							["serial"] = "Creature-0-4220-0-27389-45175-00007EA78F",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45175",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -7771,16 +7822,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45175",
+							["damage_taken"] = 236818.00784,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.00784,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.00784,
-							["damage_taken"] = 236818.00784,
+							["end_time"] = 1652475644,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Axebite Marine",
 							["spells"] = {
@@ -7788,16 +7840,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.00784,
 							["dps_started"] = false,
-							["end_time"] = 1652475644,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475644,
 							["serial"] = "Creature-0-4220-0-27389-45175-00007EC665",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45175",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -8107,16 +8158,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45175",
+							["damage_taken"] = 66162.006213,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.006213,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.006213,
-							["damage_taken"] = 66162.006213,
+							["end_time"] = 1652475640,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Axebite Marine",
 							["spells"] = {
@@ -8124,16 +8176,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.006213,
 							["dps_started"] = false,
-							["end_time"] = 1652475640,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475640,
 							["serial"] = "Creature-0-4220-0-27389-45175-00007EC5CB",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45175",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -8483,16 +8534,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45175",
+							["damage_taken"] = 115760.002303,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.002303,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.002303,
-							["damage_taken"] = 115760.002303,
+							["end_time"] = 1652475639,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Axebite Marine",
 							["spells"] = {
@@ -8500,16 +8552,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.002303,
 							["dps_started"] = false,
-							["end_time"] = 1652475639,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475639,
 							["serial"] = "Creature-0-4220-0-27389-45175-00007EC42B",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45175",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -8807,16 +8858,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45175",
+							["damage_taken"] = 232849.006551,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.006551,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.006551,
-							["damage_taken"] = 232849.006551,
+							["end_time"] = 1652475633,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Axebite Marine",
 							["spells"] = {
@@ -8824,16 +8876,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.006551,
 							["dps_started"] = false,
-							["end_time"] = 1652475633,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475633,
 							["serial"] = "Creature-0-4220-0-27389-45175-00007EC5A9",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45175",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -9160,16 +9211,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45175",
+							["damage_taken"] = 568472.004646,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.004646,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.004646,
-							["damage_taken"] = 568472.004646,
+							["end_time"] = 1652475629,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Axebite Marine",
 							["spells"] = {
@@ -9177,16 +9229,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.004646,
 							["dps_started"] = false,
-							["end_time"] = 1652475629,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475629,
 							["serial"] = "Creature-0-4220-0-27389-45175-00007EC562",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45175",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -9513,16 +9564,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45175",
+							["damage_taken"] = 129857.007556,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.007556,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.007556,
-							["damage_taken"] = 129857.007556,
+							["end_time"] = 1652475618,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Axebite Marine",
 							["spells"] = {
@@ -9530,16 +9582,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.007556,
 							["dps_started"] = false,
-							["end_time"] = 1652475618,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475618,
 							["serial"] = "Creature-0-4220-0-27389-45175-00007EC529",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45175",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -9838,16 +9889,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45175",
+							["damage_taken"] = 124184.007412,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.007412,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.007412,
-							["damage_taken"] = 124184.007412,
+							["end_time"] = 1652475612,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Axebite Marine",
 							["spells"] = {
@@ -9855,16 +9907,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.007412,
 							["dps_started"] = false,
-							["end_time"] = 1652475612,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475612,
 							["serial"] = "Creature-0-4220-0-27389-45175-00007EC473",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45175",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -10270,16 +10321,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45175",
+							["damage_taken"] = 954773.005543,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.005543,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.005543,
-							["damage_taken"] = 954773.005543,
+							["end_time"] = 1652475609,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Axebite Marine",
 							["spells"] = {
@@ -10287,16 +10339,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.005543,
 							["dps_started"] = false,
-							["end_time"] = 1652475609,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475609,
 							["serial"] = "Creature-0-4220-0-27389-45175-00007EC4C8",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45175",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -10623,16 +10674,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45175",
+							["damage_taken"] = 118270.001283,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.001283,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.001283,
-							["damage_taken"] = 118270.001283,
+							["end_time"] = 1652475606,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Axebite Marine",
 							["spells"] = {
@@ -10640,16 +10692,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.001283,
 							["dps_started"] = false,
-							["end_time"] = 1652475606,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475606,
 							["serial"] = "Creature-0-4220-0-27389-45175-0000FEC4C8",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45175",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -11003,16 +11054,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45183",
+							["damage_taken"] = 235915.007825,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.007825,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.007825,
-							["damage_taken"] = 235915.007825,
+							["end_time"] = 1652475582,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Ophelia",
 							["spells"] = {
@@ -11020,16 +11072,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.007825,
 							["dps_started"] = false,
-							["end_time"] = 1652475582,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475582,
 							["serial"] = "Creature-0-4220-0-27389-45183-00007EC69B",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45183",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -11374,16 +11425,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45182",
+							["damage_taken"] = 115639.00365,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.00365,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.00365,
-							["damage_taken"] = 115639.00365,
+							["end_time"] = 1652475455,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Blackscale Seacaller",
 							["spells"] = {
@@ -11391,16 +11443,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.00365,
 							["dps_started"] = false,
-							["end_time"] = 1652475455,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475455,
 							["serial"] = "Creature-0-4220-0-27389-45182-00007EAB6B",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45182",
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
@@ -11413,16 +11464,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45179",
+							["damage_taken"] = 61121.003099,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.003099,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.003099,
-							["damage_taken"] = 61121.003099,
+							["end_time"] = 1652475455,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Blackscale Myrmidon",
 							["spells"] = {
@@ -11456,16 +11508,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.003099,
 							["dps_started"] = false,
-							["end_time"] = 1652475455,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475455,
 							["serial"] = "Creature-0-4220-0-27389-45179-00007EAB3F",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45179",
 						}, -- [3]
 					},
 				}, -- [1]
@@ -11787,16 +11838,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45179",
+							["damage_taken"] = 120164.00661,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.00661,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.00661,
-							["damage_taken"] = 120164.00661,
+							["end_time"] = 1652475449,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Blackscale Myrmidon",
 							["spells"] = {
@@ -11804,16 +11856,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.00661,
 							["dps_started"] = false,
-							["end_time"] = 1652475449,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475449,
 							["serial"] = "Creature-0-4220-0-27389-45179-00007EAB83",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45179",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -12117,16 +12168,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45182",
+							["damage_taken"] = 116602.008757,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.008757,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.008757,
-							["damage_taken"] = 116602.008757,
+							["end_time"] = 1652475429,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Blackscale Seacaller",
 							["spells"] = {
@@ -12134,16 +12186,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.008757,
 							["dps_started"] = false,
-							["end_time"] = 1652475429,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475429,
 							["serial"] = "Creature-0-4220-0-27389-45182-00007EAB6A",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45182",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -12448,16 +12499,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45179",
+							["damage_taken"] = 114110.006406,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.006406,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.006406,
-							["damage_taken"] = 114110.006406,
+							["end_time"] = 1652475404,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Blackscale Myrmidon",
 							["spells"] = {
@@ -12465,16 +12517,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.006406,
 							["dps_started"] = false,
-							["end_time"] = 1652475404,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475404,
 							["serial"] = "Creature-0-4220-0-27389-45179-00007EAAE4",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45179",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -12779,16 +12830,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45182",
+							["damage_taken"] = 64367.005482,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.005482,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.005482,
-							["damage_taken"] = 64367.005482,
+							["end_time"] = 1652475397,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Blackscale Seacaller",
 							["spells"] = {
@@ -12796,16 +12848,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.005482,
 							["dps_started"] = false,
-							["end_time"] = 1652475397,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475397,
 							["serial"] = "Creature-0-4220-0-27389-45182-00007D1F4B",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45182",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -13110,16 +13161,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45182",
+							["damage_taken"] = 124782.001703,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.001703,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.001703,
-							["damage_taken"] = 124782.001703,
+							["end_time"] = 1652475381,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Blackscale Seacaller",
 							["spells"] = {
@@ -13127,16 +13179,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.001703,
 							["dps_started"] = false,
-							["end_time"] = 1652475381,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475381,
 							["serial"] = "Creature-0-4220-0-27389-45182-00007EAB28",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45182",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -13163,12 +13214,12 @@ _detalhes_database = {
 							["nome"] = "Avisar",
 							["spec"] = 70,
 							["grupo"] = true,
+							["buff_uptime"] = 6,
 							["pets"] = {
 							},
 							["spell_cast"] = {
 								[85256] = 1,
 							},
-							["buff_uptime"] = 6,
 							["aID"] = "3683-0BE4455C",
 							["last_event"] = 1652475381,
 							["tipo"] = 4,
@@ -13449,16 +13500,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45179",
+							["damage_taken"] = 118184.004409,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.004409,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.004409,
-							["damage_taken"] = 118184.004409,
+							["end_time"] = 1652475365,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Blackscale Myrmidon",
 							["spells"] = {
@@ -13466,16 +13518,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.004409,
 							["dps_started"] = false,
-							["end_time"] = 1652475365,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475365,
 							["serial"] = "Creature-0-4220-0-27389-45179-00007DCF94",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45179",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -13751,16 +13802,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45179",
+							["damage_taken"] = 122379.001871,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.001871,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.001871,
-							["damage_taken"] = 122379.001871,
+							["end_time"] = 1652475350,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Blackscale Myrmidon",
 							["spells"] = {
@@ -13768,16 +13820,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.001871,
 							["dps_started"] = false,
-							["end_time"] = 1652475350,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475350,
 							["serial"] = "Creature-0-4220-0-27389-45179-00007EA23B",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45179",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -14093,16 +14144,17 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["aID"] = "45179",
+							["damage_taken"] = 120557.004475,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.004475,
 							["fight_component"] = true,
 							["monster"] = true,
-							["total"] = 0.004475,
-							["damage_taken"] = 120557.004475,
+							["end_time"] = 1652475339,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Blackscale Myrmidon",
 							["spells"] = {
@@ -14110,16 +14162,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
+							["total"] = 0.004475,
 							["dps_started"] = false,
-							["end_time"] = 1652475339,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652475339,
 							["serial"] = "Creature-0-4220-0-27389-45179-00007DA540",
-							["friendlyfire_total"] = 0,
+							["aID"] = "45179",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -14378,7 +14429,7 @@ _detalhes_database = {
 			["defensive-personal"] = false,
 		},
 	},
-	["last_version"] = "9.2.710018",
+	["last_version"] = "9.2.7 10129",
 	["SoloTablesSaved"] = {
 		["Mode"] = 1,
 	},
@@ -14390,7 +14441,7 @@ _detalhes_database = {
 		},
 		["last_coach_name"] = false,
 	},
-	["on_death_menu"] = true,
+	["on_death_menu"] = false,
 	["cached_talents"] = {
 	},
 	["last_instance_id"] = 469,
@@ -14405,7 +14456,10 @@ _detalhes_database = {
 	["active_profile"] = "Shanyt-Argent Dawn",
 	["last_realversion"] = 146,
 	["ignore_nicktag"] = false,
-	["last_encounter"] = "Nefarian",
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["enabled"] = true,
@@ -14491,20 +14545,18 @@ _detalhes_database = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["main_frame_size"] = {
-				299.9999694824219, -- [1]
-				500.0000915527344, -- [2]
-			},
+			["scale"] = 1,
+			["arrow_anchor_y"] = 0,
 			["minimap"] = {
 				["minimapPos"] = 160,
 				["radius"] = 160,
 				["hide"] = false,
 			},
-			["scale"] = 1,
-			["arrow_anchor_x"] = 0,
 			["row_height"] = 20,
-			["row_texture"] = "Details Serenity",
+			["arrow_anchor_x"] = 0,
 			["point"] = "CENTER",
+			["row_texture"] = "Details Serenity",
+			["square_grow_direction"] = "right",
 			["row_color"] = {
 				0.1, -- [1]
 				0.1, -- [2]
@@ -14541,19 +14593,23 @@ _detalhes_database = {
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
 			["y"] = 1.52587890625e-05,
-			["arrow_anchor_y"] = 0,
-			["main_frame_locked"] = false,
 			["use_square_mode"] = false,
+			["main_frame_locked"] = false,
+			["main_frame_size"] = {
+				299.9999694824219, -- [1]
+				500.0000915527344, -- [2]
+			},
 		},
+	},
+	["last_encounter"] = "Nefarian",
+	["announce_damagerecord"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
 	["announce_prepots"] = {
 		["enabled"] = false,
 		["channel"] = "SELF",
 		["reverse"] = false,
-	},
-	["announce_damagerecord"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
 	},
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "",
@@ -14566,14 +14622,20 @@ _detalhes_database = {
 		["dungeon_zone_id"] = 0,
 		["previous_boss_killed_at"] = 0,
 	},
-	["benchmark_db"] = {
-		["frame"] = {
+	["cd_tracker"] = {
+		["enabled"] = false,
+		["cds_enabled"] = {
+		},
+		["show_conditions"] = {
+			["only_inside_instance"] = true,
+			["only_in_group"] = true,
+		},
+		["pos"] = {
 		},
 	},
-	["last_day"] = "04",
-	["combat_counter"] = 842,
+	["combat_counter"] = 850,
 	["character_data"] = {
-		["logons"] = 135,
+		["logons"] = 143,
 	},
 	["combat_id"] = 241,
 	["savedStyles"] = {
@@ -14671,7 +14733,8 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["monster"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
@@ -14680,10 +14743,9 @@ _detalhes_database = {
 					["total"] = 19.015475,
 					["dps_started"] = false,
 					["end_time"] = 1652474393,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["tipo"] = 1,
-					["nome"] = "Lord Victor Nefarius",
+					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
 							[22666] = {
@@ -14820,12 +14882,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.015475,
+					["nome"] = "Lord Victor Nefarius",
 					["friendlyfire_total"] = 0,
-					["boss_fight_component"] = true,
+					["damage_taken"] = 0.015475,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1652474329,
 					["serial"] = "Creature-0-3778-469-18067-10162-00007EBF7A",
 					["aID"] = "10162",
@@ -14845,13 +14907,13 @@ _detalhes_database = {
 					},
 					["targets"] = {
 						["Grit"] = 51033,
+						["Skyshredder Crewmember"] = 184670,
 						["Bilgewater Gunman"] = 1426608,
-						["Black Drakonid"] = 104234,
 						["Chromatic Drakonid"] = 12830,
 						["Muddied Water Elemental"] = 1785607,
 						["Axebite Infantry"] = 2482357,
 						["Blackscale Myrmidon"] = 656515,
-						["Skyshredder Crewmember"] = 184670,
+						["Black Drakonid"] = 104234,
 						["Axebite Marine"] = 2937542,
 						["Ophelia"] = 235915,
 						["Diamond-Blade Shredder"] = 1911941,
@@ -14872,12 +14934,12 @@ _detalhes_database = {
 								["n_max"] = 66240,
 								["targets"] = {
 									["Grit"] = 51033,
+									["Skyshredder Crewmember"] = 122770,
 									["Bilgewater Gunman"] = 140649,
-									["Black Drakonid"] = 16036,
 									["Muddied Water Elemental"] = 121720,
 									["Axebite Infantry"] = 382487,
 									["Blackscale Myrmidon"] = 61121,
-									["Skyshredder Crewmember"] = 122770,
+									["Black Drakonid"] = 16036,
 									["Axebite Marine"] = 66162,
 									["Ophelia"] = 122618,
 									["Diamond-Blade Shredder"] = 187080,
@@ -15133,7 +15195,8 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["monster"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
@@ -15142,10 +15205,9 @@ _detalhes_database = {
 					["total"] = 1.01403,
 					["dps_started"] = false,
 					["end_time"] = 1652474393,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["tipo"] = 1,
-					["nome"] = "Chromatic Drakonid",
+					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
 							{
@@ -15209,12 +15271,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 12830.01403,
+					["nome"] = "Chromatic Drakonid",
 					["friendlyfire_total"] = 0,
-					["boss_fight_component"] = true,
+					["damage_taken"] = 12830.01403,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1652474365,
 					["serial"] = "Creature-0-3778-469-18067-14302-0000FEC1D3",
 					["aID"] = "14302",
@@ -15231,7 +15293,8 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["monster"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
@@ -15240,10 +15303,9 @@ _detalhes_database = {
 					["total"] = 4.008655,
 					["dps_started"] = false,
 					["end_time"] = 1652474393,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["tipo"] = 1,
-					["nome"] = "Black Drakonid",
+					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
 							{
@@ -15307,12 +15369,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 104234.008655,
+					["nome"] = "Black Drakonid",
 					["friendlyfire_total"] = 0,
-					["boss_fight_component"] = true,
+					["damage_taken"] = 104234.008655,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1652474336,
 					["serial"] = "Creature-0-3778-469-18067-14265-00007EC1D4",
 					["aID"] = "14265",
@@ -15329,7 +15391,8 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["monster"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
@@ -15338,10 +15401,9 @@ _detalhes_database = {
 					["total"] = 4.0062,
 					["dps_started"] = false,
 					["end_time"] = 1652474393,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["tipo"] = 1,
-					["nome"] = "Green Drakonid",
+					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
 							{
@@ -15405,12 +15467,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 108243.0062,
+					["nome"] = "Green Drakonid",
 					["friendlyfire_total"] = 0,
-					["boss_fight_component"] = true,
+					["damage_taken"] = 108243.0062,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1652474341,
 					["serial"] = "Creature-0-3778-469-18067-14262-00007EC1D4",
 					["aID"] = "14262",
@@ -15559,7 +15621,8 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["monster"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
@@ -15567,9 +15630,8 @@ _detalhes_database = {
 					["total_without_pet"] = 1.06091,
 					["fight_component"] = true,
 					["dps_started"] = false,
-					["total"] = 1.06091,
-					["friendlyfire"] = {
-					},
+					["end_time"] = 1652474924,
+					["on_hold"] = false,
 					["tipo"] = 1,
 					["nome"] = "Axebite Infantry",
 					["spells"] = {
@@ -15604,12 +15666,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 2482357.06091,
+					["total"] = 1.06091,
 					["friendlyfire_total"] = 0,
-					["end_time"] = 1652474924,
+					["damage_taken"] = 2482357.06091,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1652474921,
 					["serial"] = "Creature-0-4220-0-27389-49008-00017EB94B",
 					["aID"] = "49008",
@@ -15625,7 +15687,8 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["aID"] = "49009",
 					["raid_targets"] = {
@@ -15633,9 +15696,8 @@ _detalhes_database = {
 					["total_without_pet"] = 0.014617,
 					["monster"] = true,
 					["fight_component"] = true,
-					["total"] = 0.014617,
-					["friendlyfire"] = {
-					},
+					["end_time"] = 1652474932,
+					["on_hold"] = false,
 					["tipo"] = 1,
 					["nome"] = "Bilgewater Gunman",
 					["spells"] = {
@@ -15672,12 +15734,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 1426608.014617,
+					["total"] = 0.014617,
 					["friendlyfire_total"] = 0,
-					["end_time"] = 1652474932,
+					["damage_taken"] = 1426608.014617,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1652474929,
 					["serial"] = "Creature-0-4220-0-27389-49009-00007EBA3F",
 					["dps_started"] = false,
@@ -15693,7 +15755,8 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["aID"] = "49005",
 					["raid_targets"] = {
@@ -15701,9 +15764,8 @@ _detalhes_database = {
 					["total_without_pet"] = 0.011997,
 					["monster"] = true,
 					["fight_component"] = true,
-					["total"] = 0.011997,
-					["friendlyfire"] = {
-					},
+					["end_time"] = 1652474949,
+					["on_hold"] = false,
 					["tipo"] = 1,
 					["nome"] = "Grit",
 					["spells"] = {
@@ -15737,12 +15799,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 51033.011997,
+					["total"] = 0.011997,
 					["friendlyfire_total"] = 0,
-					["end_time"] = 1652474949,
+					["damage_taken"] = 51033.011997,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1652474946,
 					["serial"] = "Creature-0-4220-0-27389-49005-00007EA49D",
 					["dps_started"] = false,
@@ -15759,7 +15821,8 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["aID"] = "49006",
 					["raid_targets"] = {
@@ -15767,9 +15830,8 @@ _detalhes_database = {
 					["total_without_pet"] = 1.014464,
 					["monster"] = true,
 					["fight_component"] = true,
-					["total"] = 1.014464,
-					["friendlyfire"] = {
-					},
+					["end_time"] = 1652475128,
+					["on_hold"] = false,
 					["tipo"] = 1,
 					["nome"] = "Skyshredder Crewmember",
 					["spells"] = {
@@ -15805,12 +15867,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 184670.014464,
+					["total"] = 1.014464,
 					["friendlyfire_total"] = 0,
-					["end_time"] = 1652475128,
+					["damage_taken"] = 184670.014464,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1652475125,
 					["serial"] = "Creature-0-4220-0-27389-49006-00007EC164",
 					["dps_started"] = false,
@@ -15826,7 +15888,8 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["aID"] = "45182",
 					["raid_targets"] = {
@@ -15834,9 +15897,8 @@ _detalhes_database = {
 					["total_without_pet"] = 0.028782,
 					["monster"] = true,
 					["fight_component"] = true,
-					["total"] = 0.028782,
-					["friendlyfire"] = {
-					},
+					["end_time"] = 1652475330,
+					["on_hold"] = false,
 					["tipo"] = 1,
 					["nome"] = "Blackscale Seacaller",
 					["spells"] = {
@@ -15844,12 +15906,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 662664.028782,
+					["total"] = 0.028782,
 					["friendlyfire_total"] = 0,
-					["end_time"] = 1652475330,
+					["damage_taken"] = 662664.028782,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1652475327,
 					["serial"] = "Creature-0-4220-0-27389-45182-00007EA38D",
 					["dps_started"] = false,
@@ -15865,7 +15927,8 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["aID"] = "45179",
 					["raid_targets"] = {
@@ -15873,9 +15936,8 @@ _detalhes_database = {
 					["total_without_pet"] = 0.035591,
 					["monster"] = true,
 					["fight_component"] = true,
-					["total"] = 0.035591,
-					["friendlyfire"] = {
-					},
+					["end_time"] = 1652475340,
+					["on_hold"] = false,
 					["tipo"] = 1,
 					["nome"] = "Blackscale Myrmidon",
 					["spells"] = {
@@ -15909,12 +15971,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 656515.035591,
+					["total"] = 0.035591,
 					["friendlyfire_total"] = 0,
-					["end_time"] = 1652475340,
+					["damage_taken"] = 656515.035591,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1652475337,
 					["serial"] = "Creature-0-4220-0-27389-45179-00007DA540",
 					["dps_started"] = false,
@@ -15930,7 +15992,8 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["aID"] = "45183",
 					["raid_targets"] = {
@@ -15938,9 +16001,8 @@ _detalhes_database = {
 					["total_without_pet"] = 0.015147,
 					["monster"] = true,
 					["fight_component"] = true,
-					["total"] = 0.015147,
-					["friendlyfire"] = {
-					},
+					["end_time"] = 1652475582,
+					["on_hold"] = false,
 					["tipo"] = 1,
 					["nome"] = "Ophelia",
 					["spells"] = {
@@ -15948,12 +16010,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 235915.015147,
+					["total"] = 0.015147,
 					["friendlyfire_total"] = 0,
-					["end_time"] = 1652475582,
+					["damage_taken"] = 235915.015147,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1652475579,
 					["serial"] = "Creature-0-4220-0-27389-45183-00007EC69B",
 					["dps_started"] = false,
@@ -15969,7 +16031,8 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["monster"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
@@ -15977,9 +16040,8 @@ _detalhes_database = {
 					["total_without_pet"] = 0.056299,
 					["fight_component"] = true,
 					["dps_started"] = false,
-					["total"] = 0.056299,
-					["friendlyfire"] = {
-					},
+					["end_time"] = 1652475606,
+					["on_hold"] = false,
 					["tipo"] = 1,
 					["nome"] = "Axebite Marine",
 					["spells"] = {
@@ -15987,12 +16049,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 2937542.056299,
+					["total"] = 0.056299,
 					["friendlyfire_total"] = 0,
-					["end_time"] = 1652475606,
+					["damage_taken"] = 2937542.056299,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1652475603,
 					["serial"] = "Creature-0-4220-0-27389-45175-0000FEC4C8",
 					["aID"] = "45175",
@@ -16008,7 +16070,8 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["monster"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
@@ -16016,9 +16079,8 @@ _detalhes_database = {
 					["total_without_pet"] = 0.04084699999999999,
 					["fight_component"] = true,
 					["dps_started"] = false,
-					["total"] = 0.04084699999999999,
-					["friendlyfire"] = {
-					},
+					["end_time"] = 1652475674,
+					["on_hold"] = false,
 					["tipo"] = 1,
 					["nome"] = "Diamond-Blade Shredder",
 					["spells"] = {
@@ -16054,12 +16116,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 1911941.040847,
+					["total"] = 0.04084699999999999,
 					["friendlyfire_total"] = 0,
-					["end_time"] = 1652475674,
+					["damage_taken"] = 1911941.040847,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1652475671,
 					["serial"] = "Creature-0-4220-0-27389-45185-00007EC6DC",
 					["aID"] = "45185",
@@ -16075,7 +16137,8 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["aID"] = "45187",
 					["raid_targets"] = {
@@ -16083,9 +16146,8 @@ _detalhes_database = {
 					["total_without_pet"] = 0.02916,
 					["monster"] = true,
 					["fight_component"] = true,
-					["total"] = 0.02916,
-					["friendlyfire"] = {
-					},
+					["end_time"] = 1652475877,
+					["on_hold"] = false,
 					["tipo"] = 1,
 					["nome"] = "Axebite Grunt",
 					["spells"] = {
@@ -16093,12 +16155,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 1227129.02916,
+					["total"] = 0.02916,
 					["friendlyfire_total"] = 0,
-					["end_time"] = 1652475877,
+					["damage_taken"] = 1227129.02916,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1652475874,
 					["serial"] = "Creature-0-4220-0-27389-45187-00007EC7E2",
 					["dps_started"] = false,
@@ -16114,7 +16176,8 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["monster"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
@@ -16122,9 +16185,8 @@ _detalhes_database = {
 					["total_without_pet"] = 0.035551,
 					["fight_component"] = true,
 					["dps_started"] = false,
-					["total"] = 0.035551,
-					["friendlyfire"] = {
-					},
+					["end_time"] = 1652476521,
+					["on_hold"] = false,
 					["tipo"] = 1,
 					["nome"] = "Muddied Water Elemental",
 					["spells"] = {
@@ -16161,12 +16223,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 1785607.035551,
+					["total"] = 0.035551,
 					["friendlyfire_total"] = 0,
-					["end_time"] = 1652476521,
+					["damage_taken"] = 1785607.035551,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1652476518,
 					["serial"] = "Creature-0-4220-0-27389-44011-00027EC967",
 					["aID"] = "44011",
@@ -16229,9 +16291,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
-								["totaldenied"] = 0,
 								["n_amt"] = 7,
 								["n_curado"] = 28,
+								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[303380] = {
@@ -16254,9 +16316,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
-								["totaldenied"] = 0,
 								["n_amt"] = 8,
 								["n_curado"] = 1,
+								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -16281,7 +16343,7 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["received"] = 0.030546,
-					["resource"] = 1573.022689000005,
+					["resource"] = 1838.212841000005,
 					["targets"] = {
 					},
 					["pets"] = {
@@ -16290,8 +16352,8 @@ _detalhes_database = {
 					["classe"] = "PALADIN",
 					["passiveover"] = 0.005109,
 					["resource_type"] = 9,
+					["aID"] = "3683-0BE4455C",
 					["totalover"] = 0.005109,
-					["total"] = 0.030546,
 					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16306,7 +16368,7 @@ _detalhes_database = {
 					["spec"] = 70,
 					["nome"] = "Avisar",
 					["serial"] = "Player-3683-0BE4455C",
-					["aID"] = "3683-0BE4455C",
+					["total"] = 0.030546,
 				}, -- [1]
 			},
 		}, -- [3]
@@ -17047,22 +17109,12 @@ _detalhes_database = {
 		},
 	},
 	["nick_tag_cache"] = {
-		["nextreset"] = 1663537137,
-		["last_version"] = 14,
+		["nextreset"] = 1665429336,
+		["last_version"] = 15,
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
-	["cd_tracker"] = {
-		["enabled"] = false,
-		["cds_enabled"] = {
-		},
-		["show_conditions"] = {
-			["only_inside_instance"] = true,
-			["only_in_group"] = true,
-		},
-		["pos"] = {
+	["last_day"] = "09",
+	["benchmark_db"] = {
+		["frame"] = {
 		},
 	},
 	["announce_cooldowns"] = {

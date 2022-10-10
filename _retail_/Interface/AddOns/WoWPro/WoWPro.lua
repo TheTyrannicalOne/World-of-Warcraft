@@ -1,7 +1,7 @@
 -- luacheck: globals _NPCScan
 -- luacheck: globals select pairs ipairs tinsert tremove sort
 -- luacheck: globals tostring tonumber
--- luacheck: globals date type max min coroutine
+-- luacheck: globals date type max min floor coroutine
 -- luacheck: globals debugstack debuglocals geterrorhandler seterrorhandler
 
 --------------------------
@@ -104,11 +104,18 @@ function WoWPro:Error(message, ...)
 end
 WoWPro:Export("Error")
 
+local function ends_with(str, ending)
+    return ending == "" or str:sub(-#ending) == ending
+ end
+
 -- WoWPro Event function, only log --
 function WoWPro:LogEvent(event, ...)
     local msg = ("|cffff7d0a%s|r: %s("):format(self.name or "Wow-Pro", tostring(event))
     local arg = {...}
     local argn = #arg
+    if ends_with(event, "CHAT_MSG_ADDON") then
+        arg[2] = "Censored"
+    end
     for i=1,argn do
         if type(arg[i]) == "string" then
             msg = msg .. '"' .. arg[i] .. '"'
@@ -197,7 +204,7 @@ local function LogGrow(frame, elapsed)
         if coroutine.resume(LogCo) then return end
         -- false return implies we are done
         LogFrame:SetScript("OnUpdate",nil)
-        _G.DEFAULT_CHAT_FRAME:AddMessage("WoWPro:LogDump(): Generating window")
+        _G.DEFAULT_CHAT_FRAME:AddMessage("WoWPro:LogGrow(): Populating window")
         LogCall(Log)
         Log = nil
     end
@@ -237,8 +244,10 @@ function WoWPro:LogShow()
     LogBox.Box:SetText("")
     WoWPro:LogDump( function(text)
         LogBox.Box:SetText(text)
+        WoWPro.LogText = text
         LogBox.Scroll:UpdateScrollChildRect()
         LogBox:Show()
+        _G.DEFAULT_CHAT_FRAME:AddMessage("WoWPro:LogShow(): Showing window")
     end)
 end
 
@@ -385,8 +394,8 @@ function WoWPro:OnInitialize()
     WoWPro.DebugClasses = (WoWPro.DebugLevel > 0) and WoWProCharDB.DebugClasses
     WoWPro.GossipText = nil
     WoWPro.GuideLoaded = false
-    WoWProDB.profile.Selector = WoWProDB.profile.Selector or {}
-    WoWProDB.profile.Selector.QuestHard = WoWProDB.profile.Selector.QuestHard or 0
+    -- Selector is Deprecated
+    WoWProDB.profile.Selector = nil
     if type(WoWProDB.profile.checksoundfile) == "string" then
         WoWProDB.profile.checksoundfile = 567416 -- MapPing
     end
@@ -431,9 +440,6 @@ function WoWPro:OnInitialize()
 			0.4156862745098039, -- [2]
 		},
 		["steptextsize"] = 16,
-		["Selector"] = {
-			["QuestHard"] = 0,
-		},
 		["pad"] = 14,
 		["steptextcolor"] = {
 			nil, -- [1]
@@ -493,10 +499,6 @@ function WoWPro:OnEnable()
     if not _G.GetBindingKey("CLICK WoWPro_FauxTargetButton:LeftButton") then
         _G.SetBinding("CTRL-SHIFT-T", "CLICK WoWPro_FauxTargetButton:LeftButton")
     end
-    if _G.GetBindingKey("WOWPRO_SELECTOR") then
-        -- Do NOT release with this binding until it works!
-        _G.SetBinding("ALT-G", "WOWPRO_SELECTOR")
-    end
 
     -- Event Setup --
     WoWPro:dbp("Registering Events: Core Addon")
@@ -534,6 +536,8 @@ function WoWPro:OnEnable()
         local nickname = guide['nickname']
         if nickname then
             WoWPro.Nickname2Guide[nickname] = guidID
+        elseif not guide.zone then
+            WoWPro:dbp("Warning: Guide %q does not have a valid zone.", guidID)
         elseif guide.guidetype == 'Leveling' then
             if WoWPro.Nickname2Guide[guide.zone] then
                 -- Collision, mark
@@ -743,6 +747,15 @@ function WoWPro:RegisterGuide(GIDvalue, gtype, zonename, authorname, faction, re
         zonename = trueZone -- the real zone name is the unparenthesized portion
     end
 
+    -- Set a default release, if not specified
+    if not release then
+        if WoWPro.DF then
+            release = 10
+        else
+            release = 9  -- No release, make it the current one.
+        end
+    end
+
     local guide = {
         guidetype = gtype,
         zone = select(1, (";"):split(zonename)),
@@ -752,7 +765,7 @@ function WoWPro:RegisterGuide(GIDvalue, gtype, zonename, authorname, faction, re
         GID = GIDvalue
     }
     if not WoWPro:ValidZone(guide.zone, true) then
-        WoWPro:print("RegisterGuide(): Zone %q is not valid, using as guide name.", guide.zone)
+        -- WoWPro:print("RegisterGuide(): Zone %q is not valid, using as guide name.", guide.zone)
         guide.name = guide.name or guide.zone
         guide.zone = nil
     end
@@ -763,14 +776,11 @@ function WoWPro:RegisterGuide(GIDvalue, gtype, zonename, authorname, faction, re
 
     if faction and faction ~= WoWPro.Faction and faction ~= "Neutral" then
         -- If the guide is not of the correct side, don't register it
-        WoWPro:print("RegisterGuide(): Guide %q rejected, Wrong faction %s", GIDvalue, tostring(faction))
+        -- WoWPro:print("RegisterGuide(): Guide %q rejected, Wrong faction %s", GIDvalue, tostring(faction))
         return guide
     end
 
-    if (WoWPro.RETAIL and release) or
-       (WoWPro.CLASSIC and (release ~= 1)) or
-       (WoWPro.BC and (release ~= 2)) or
-       (WoWPro.WRATH and (release ~= 3)) then
+    if (WoWPro.Client ~= release) then
         -- Wrong Release guide rejected
         -- WoWPro:dbp("RegisterGuide(): Guide %q rejected, release is %s", GIDvalue, tostring(release))
         return guide
@@ -1149,7 +1159,6 @@ function WoWPro.LevelColor(guide)
 
     if type(guide) == "table" then
         -- WoWPro:dbp("WoWPro.LevelColor(%s)",guide.GID)
-        playerLevel = playerLevel + WoWProDB.profile.Selector.QuestHard
         if (playerLevel < guide['startlevel']) then
             return {WoWPro:QuestColor(guide['level'] or guide['endlevel'])}
         end
@@ -1394,14 +1403,14 @@ end
 
 
 --- Release Function Compatability Section
-repeat
-    local _, _, _, toc = _G.GetBuildInfo()
-    WoWPro.TocVersion = toc
-until WoWPro.TocVersion > 0
+WoWPro.TocVersion =  select(4, _G.GetBuildInfo())
+WoWPro.Client = floor(WoWPro.TocVersion / 10000)
 
-WoWPro.CLASSIC = ((WoWPro.TocVersion > 10000) and (WoWPro.TocVersion < 20000))
-WoWPro.BC = ((WoWPro.TocVersion > 20000) and (WoWPro.TocVersion < 30000))
-WoWPro.WRATH = ((WoWPro.TocVersion > 30000) and (WoWPro.TocVersion < 40000))
+WoWPro.CLASSIC = ((WoWPro.TocVersion >= 10000) and (WoWPro.TocVersion < 20000))
+WoWPro.BC = ((WoWPro.TocVersion >= 20000) and (WoWPro.TocVersion < 30000))
+WoWPro.WRATH = ((WoWPro.TocVersion >= 30000) and (WoWPro.TocVersion < 40000))
+-- Both DF and RETAIL are true for DF for now.
+WoWPro.DF = (WoWPro.TocVersion >= 100000)
 WoWPro.RETAIL = (WoWPro.TocVersion > 90000)
 
 -- Change this to fake out a classic load on retail

@@ -13,16 +13,17 @@ MJEPersonalSettings = {
 			0, -- [2]
 		},
 		["showPersonalCount"] = true,
-		["moveEquipmentSlot"] = true,
+		["showStatistics"] = true,
 		["previewButton"] = true,
 		["showShopButton"] = false,
-		["showUsageStatistics"] = true,
+		["moveEquipmentSlot"] = true,
 		["unlockDisplayCamera"] = true,
 		["debugMode"] = false,
 	},
 	["hiddenMounts"] = {
 	},
 	["personalUi"] = false,
+	["searchInDescription"] = true,
 	["favoredMounts"] = {
 	},
 	["sort"] = {
@@ -45,13 +46,13 @@ MJEPersonalSettings = {
 			[0] = true,
 		},
 		["source"] = {
-			["World Event"] = true,
+			["Promotion"] = true,
 			["Black Market"] = true,
 			["PVP"] = true,
-			["Promotion"] = true,
+			["Vendor"] = true,
 			["Reputation"] = true,
 			["Class"] = true,
-			["Vendor"] = true,
+			["World Event"] = true,
 			["Garrison"] = true,
 			["Achievement"] = true,
 			["Shop"] = true,
@@ -66,12 +67,15 @@ MJEPersonalSettings = {
 		["color"] = {
 		},
 		["notCollected"] = true,
-		["onlyUsable"] = false,
-		["faction"] = {
-			["horde"] = true,
-			["alliance"] = true,
-			["noFaction"] = true,
+		["mountType"] = {
+			["repair"] = true,
+			["flying"] = true,
+			["underwater"] = true,
+			["transform"] = true,
+			["ground"] = true,
+			["passenger"] = true,
 		},
+		["onlyUsable"] = false,
 		["onlyFavorites"] = false,
 		["family"] = {
 			["Arachnids"] = {
@@ -160,10 +164,10 @@ MJEPersonalSettings = {
 				["Hyenas"] = true,
 			},
 			["Rays"] = {
-				["Stingrays"] = true,
 				["Fathom Rays"] = true,
-				["Mana Rays"] = true,
 				["Nether Rays"] = true,
+				["Mana Rays"] = true,
+				["Stingrays"] = true,
 			},
 			["Dinosaurs"] = {
 				["Pterrordaxes"] = true,
@@ -275,13 +279,10 @@ MJEPersonalSettings = {
 			},
 			["Snail"] = true,
 		},
-		["mountType"] = {
-			["repair"] = true,
-			["flying"] = true,
-			["underwater"] = true,
-			["transform"] = true,
-			["ground"] = true,
-			["passenger"] = true,
+		["faction"] = {
+			["horde"] = true,
+			["alliance"] = true,
+			["noFaction"] = true,
 		},
 		["onlyTradable"] = false,
 		["collected"] = true,
@@ -289,6 +290,8 @@ MJEPersonalSettings = {
 		["hidden"] = false,
 	},
 	["personalHiddenMounts"] = false,
-	["searchInDescription"] = true,
+	["searchInNotes"] = true,
+	["notes"] = {
+	},
 	["autoFavor"] = false,
 }

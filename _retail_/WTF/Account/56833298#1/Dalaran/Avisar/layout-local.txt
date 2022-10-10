@@ -1,11 +1,4 @@
 Version: 1
-Frame: AllTheThings-Window-CurrentInstance
-FrameLevel: 1
-Anchor: LEFT
-X: 0
-Y: -34
-W: 300
-H: 298
 Frame: BagItemTooltipMover
 FrameLevel: 3
 Anchor: TOP
@@ -13,6 +6,13 @@ X: 0
 Y: 0
 W: 150
 H: 80
+Frame: AllTheThings-Window-CurrentInstance
+FrameLevel: 1
+Anchor: LEFT
+X: 0
+Y: -113
+W: 300
+H: 298
 Frame: ScriptErrorsFrame
 FrameLevel: 1
 Anchor: RIGHT

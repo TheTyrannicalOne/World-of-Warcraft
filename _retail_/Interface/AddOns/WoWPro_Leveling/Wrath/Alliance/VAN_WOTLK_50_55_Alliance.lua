@@ -97,12 +97,12 @@ C Expedition Salvation|QID|3881|M|68.55,36.54|Z|Un'Goro Crater|NC|QO|1|N|Loot th
 C The Eastern Pylon|QID|4287|M|77.20,49.98|Z|Un'Goro Crater|CHAT|N|Click on the Pylon to examine it.|
 T The Apes of Un'Goro|QID|4289|M|71.63,75.96|Z|Un'Goro Crater|N|To Torwa Pathefinder. Skip Follow-up.|
 R Alien Ecology|QID|3883|M|50.50,78.70;49.47,83.13|Z|Un'Goro Crater|CS|N|Run into the tunnel and get your sample.|
-C Alien Ecology|QID|3883|M|48.7,85.3|Z|Un'Goro Crater|N|USe the Scraping Vial and get a Hive Wall Sample.|U|11132|
+C Alien Ecology|QID|3883|M|48.7,85.3|Z|Un'Goro Crater|N|Use the Scraping Vial and get a Hive Wall Sample.|U|11132|
 C Bungle in the Jungle|QID|4496|M|50.50,78.70|Z|Un'Goro Crater|QO|1|N|Kill bugs until you get the gland.|
 C Roll the Bones|QID|3882|M|34.75,72.40|Z|Un'Goro Crater|S|N|You can pick the bones off the ground for this quest. But you will most likely get all you need from the diametradons.|
 C Expedition Salvation|QID|3881|M|38.00,66.00|Z|Un'Goro Crater|NC|QO|2|N|Loot the Research Equipment.\n\n[color=FF0000]Warning:[/color] There are lots of reds around.|
 C The Western Pylon|QID|4288|M|23.83,59.20|Z|Un'Goro Crater|CHAT|N|Click on the Pylon to examine it.|
-C Beware of Pterrordax|QID|4501|M|22.20,59.36|Z|Un'Goro Crater|QO|2|N|Kill the Frenized Pterrodax around.|
+C Beware of Pterrordax|QID|4501|M|22.20,59.36|Z|Un'Goro Crater|QO|1|N|Kill the Frenized Pterrodax around.|
 C Shizzle's Flyer|QID|4503|M|67.3,32.6|Z|Un'Goro Crater|US|N|Kill Diemetradons and Pterrordaxes for their scales.|
 C Roll the Bones|QID|3882|M|34.75,72.40|Z|Un'Goro Crater|US|N|You can pick the bones off the ground for this quest. But you will most likely get all you need from the diametradons.|
 C Muigin and Larion|QID|4141|M|65.00,27.00|Z|Un'Goro Crater|US|N|Kill and loot Bloodpetals.|
@@ -141,8 +141,8 @@ F Ironforge|QID|3461|M|9.49,59.69|Z|Wetlands|N|Fly to Ironforge.|
 T Return to Tymor|QID|3461|M|31.02,4.81|Z|Ironforge|N|To Tymor.|
 A A Little Slime Goes a Long Way|QID|4512|M|75.74,23.38|Z|Ironforge|N|From Laris Geardawdle.|
 
-F Menethil Harbor|QID|3764|M|55.54,47.75|Z|Ironforge|N|Fly back to the Wetlands.|
-b Darkshore|QID|3764|M|4.59,57.13|Z|Wetlands|N|Sail to Darkshore.|
+F Stormwind|QID|3764|M|55.54,47.75|Z|Ironforge|N|Fly back to Stormwind City.|
+b Darkshore|QID|3764|M|22.69,56.03|Z|Stormwind City|N|Sail to Darkshore.|
 F Rut'theran Village|QID|3764|M|36.34,45.58|Z|Darkshore|N|Fly to  Rut'theran Village and head to Darnassus.|
 R Darnassus|QID|3764|M|55.89,89.60|Z|Teldrassil|N|Run into the portal.|
 h Craftsmen's Terrace|QID|3764|M|67.41,15.66|Z|Darnassus|N|Set your Hearthstone at the Inn here. Seriously, unless you enjoy 15 minute long flights back from Gadgetzan.|
@@ -154,7 +154,8 @@ l Evergreen Herb Casing|QID|3785|M|PLAYER|Z|Darnassus|N|Using the Evergreen Pouc
 
 R Rut'theran Village|QID|8460|M|30.04,41.32|Z|Darnassus|N|Run back in the portal to Rut'theran Village.|
 F Astranaar|QID|8460|M|58.39,94.01|Z|Teldrassil|N|Head to Ashenvale.|
-R Felwood|QID|8460|M|38.6,57.6;49.5,56.4;57.8,55.7;61.0,48.6;60.9,43.9;57.4,32.3;55.8,28.7|CS|Z|Ashenvale|N|Make your way up to Felwood.|
+R Felwood|QID|8460|M|59.67,62.94;55.81,28.84|CS|Z|Ashenvale|N|Make your way up to Felwood.|
+f Emerald Sanctuary|QID|8460|M|51.46,82.22|Z|Felwood|N|Get the flight path.|
 A Cleansing Felwood|QID|4101|M|54.19,86.80|Z|Felwood|N|From Arathandris Silversky.|
 A Timbermaw Ally|QID|8460|M|50.93,85.00|Z|Felwood|N|From Grazle.|
 C Timbermaw Ally|QID|8460|M|48.12,92.92|Z|Felwood|N|Kill the Furbolgs needed for the quest.|
@@ -210,6 +211,7 @@ A Flute of Xavaric|QID|939|M|39.1,22.3|Z|Felwood|N|Right-click the flute and acc
 C Flute of Xavaric|QID|939|M|39.3,21.4|Z|Felwood|N|Kill Jadefire mobs until you get the felbinds.|
 C Further Corruption|QID|4906|M|39.3,21.4|Z|Felwood|US|N|Kill Jadefire mobs until this quest is completed.|
 
+F Emerald Sanctuary|QID|5157|M|62.47,24.18|Z|Felwood|N|Fly back to Emerald Sanctuary.|
 T Collection of the Corrupt Water|QID|5157|M|51.21,82.15|Z|Felwood|N|To Greta Mosshoof.|
 A Seeking Spiritual Aid|QID|5158|M|51.21,82.15|Z|Felwood|N|From Greta Mosshoof.|PRE|5157|
 T Verifying the Corruption|QID|5156|M|50.89,81.63|Z|Felwood|N|To Taronn Redfeather.|
@@ -218,16 +220,14 @@ T Flute of Xavaric|QID|939|M|51.35,81.51|Z|Felwood|N|To Eridan Bluewind.|
 A Felbound Ancients|QID|4441|M|51.35,81.51|Z|Felwood|N|From Eridan Bluewind.|PRE|939|
 T Cleansing Felwood|QID|4101|M|54.19,86.80|Z|Felwood|N|To Arathandris Silversky.|
 
-R Ashenvale|QID|4512|M|54.89,93.04|Z|Felwood|N|Make your way back to Astranaar.|
-R Astranaar|QID|4512|M|57.8,40.5;60.9,48.4;60.3,52.4;57.3,55.8;52.5,55.0;49.4,56.4;34.4,47.9|Z|Ashenvale|CS|N|Head back to Astranaar.|
-F Feathermoon|QID|4512|M|34.41,47.99|Z|Ashenvale|N|Fly to Feralas.|
+F Feathermoon|QID|4512|M|51.48,82.17|Z|Felwood|N|Fly to Feralas.|
 A Jonespyre's Request|QID|3788|M|30.97,43.49|Z|Feralas|N|From Inkeeper Shyria.|PRE|3781|
 T Jonespyre's Request|QID|3788|M|32.45,43.79|Z|Feralas|N|To Quintis Jonespyre. At the top of the tower.|
 A The Mystery of Morrowgrain|QID|3791|M|32.45,43.79|Z|Feralas|N|From Quintis Jonespyre. At the top of the tower.|PRE|3788|
 T The Mystery of Morrowgrain|QID|3791|M|32.45,43.79|Z|Feralas|N|To Quintis Jonespyre. At the top of the tower.\n\nHopefully you have enough Morrowgrain, you've been remembering to use the Evergreen pouch right? If not just manually skip this quest.\n\nJust an FYI, this should be your 2nd quest for Morrowgrain, you need a total of 20 to complete this and the one in Darnassus. Don't do the the repeatable unless you plan on farming this or you have 25 or more morrowgrain. Leave 10 for Darnassus.|
 
-T A Visit to Gregan|QID|4142|M|45.12,25.56|Z|Feralas|N|To Gregan Brewspewer. Skip follow-up unless you intend on going to Sunken Temple soon.|
-l Evoroot|QID|3909|M|44.51,9.82|Z|Feralas|N|Get exactly to the waypoint, get up on the ledge at the back of (North facing) the building. Get a running start and jump toward the break in the wall where the pillar collapsed onto the tree is. If can be done without speed buffs or mount, but if you got them it makes it easy.\n\nIf you really have trouble with this, Gregan sells bait to get Miblon to move. Once inside, loot te Evoroot.|L|11242|
+T A Visit to Gregan|QID|4142|M|46.24,37.55;45.12,25.56|CS|Z|Feralas|N|To Gregan Brewspewer. Skip follow-up unless you intend on going to Sunken Temple soon.|
+l Evoroot|QID|3909|M|44.51,9.82|Z|Feralas|N|Get exactly to the waypoint, get up on the ledge at the back of (North facing) the building. Get a running start and jump toward the break in the wall where the pillar collapsed onto the tree is. If can be done without speed buffs or mount, but if you got them it makes it easy.\n\nIf you really have trouble with this, Gregan sells bait to get Miblon to move. Once inside, loot the Evoroot.|L|11242|
 C The Videre Elixir|QID|3909|M|45.12,25.56|Z|Feralas|NC|N|Go back to Gregan Brewspewer and do his 'Videre Elixir' turn-in quest.|
 
 H Darnassus|QID|4512|M|PLAYER|Z|Feralas|N|Hearth or otherwise make your way back to Darnassus.|
@@ -236,8 +236,8 @@ C Felbound Ancients|QID|4441|M|39.23,84.93|Z|Darnassus|NC|N|Use the Vial in the 
 
 R Rut'theran Village|QID|4512|M|30.04,41.32|Z|Darnassus|N|Run through the portal into Rut'theran Village.|
 F Auberdine|QID|4512|M|58.39,94.01|Z|Teldrassil|N|Fly To Auberdine.|
-b Menethil Harbor|QID|4512|M|32.39,43.82|Z|Darkshore|N|Take the boat to Menethil Harbor.|
-F Ironforge|QID|4512|M|9.49,59.69|Z|Wetlands|N|Fly to Ironforge|
+b Stormwind City|QID|4512|M|32.39,43.82|Z|Darkshore|N|Take the boat to Stormwind City.|
+F Ironforge|QID|4512|M|71.01,72.63|Z|Stormwind City|N|Fly to Ironforge|
 h Ironforge|QID|4512|M|18.12,51.42|Z|Ironforge|N|Set your hearthstone to Ironforge.|
 A A Call to Arms: The Plaguelands!|QID|5090|M|47.11,50.29|Z|Ironforge|N|From Courier Hammerfall. He wanders around Ironforge, he can be pretty much anywhere.|
 T A Little Slime Goes a Long Way|QID|4512|M|75.74,23.38|Z|Ironforge|N|To Laris Geardawdle. Don't get follow-up for now.|
@@ -285,21 +285,19 @@ A The Smoldering Ruins of Thaurissan|QID|3702|M|38.37,55.32|Z|Ironforge|N|From R
 C The Smoldering Ruins of Thaurissan|QID|3702|M|38.37,55.32|Z|Ironforge|CHAT|N|Chat with Royal Historian Archesonus.|
 T The Smoldering Ruins of Thaurissan|QID|3702|M|38.37,55.32|Z|Ironforge|N|To Royal Historian Archesonus.|
 A The Smoldering Ruins of Thaurissan|QID|3701|M|38.37,55.32|Z|Ironforge|N|From Royal Historian Archesonus.|PRE|3702|
-R Deeprun Tram|QID|5022|M|76.83,51.28|Z|Ironforge|N|Goto Tinker Town and zone into the Deeprun Tram.|
-R Stormwind City|QID|5022|N|Take the tram ride and then run into Stormwind.|
-T Better Late Than Never|QID|5022|M|48.47,30.56|Z|Stormwind City|N|To Royal Factor Bathrilor. Top floor of the building.|
-A Good Natured Emma|QID|5048|M|48.47,30.56|Z|Stormwind City|N|To Royal Factor Bathrilor. Top floor of the building.|PRE|5022|
-T Good Natured Emma|QID|5048|M|52.40,42.10|Z|Stormwind City|N|To Ol' Emma. She can be found wandering around the Trade District, Cathedral Square or inside her home.|
-A Good Luck Charm|QID|5050|M|60.2,57.0|Z|Stormwind City|N|From Ol' Emma.|PRE|5048|
+F Stormwind|QID|5022|M|55.57,47.97|Z|Ironforge|N|Take the flightpath to Stormwind.|
+T Better Late Than Never|QID|5022|M|57.28,48.33|Z|Stormwind City|N|To Royal Factor Bathrilor. Top floor of the building.|
+A Good Natured Emma|QID|5048|M|57.28,48.33|Z|Stormwind City|N|To Royal Factor Bathrilor. Top floor of the building.|PRE|5022|
+T Good Natured Emma|QID|5048|M|60.15,56.39|Z|Stormwind City|N|To Ol' Emma. She can be found wandering around the Trade District, Cathedral Square or inside her home.|
+A Good Luck Charm|QID|5050|M|60.15,56.39|Z|Stormwind City|N|From Ol' Emma.|PRE|5048|
 r Sell junk, repair, restock|QID|5220|N|Sell junk, repair, restock|
 
-F Lakeshire|QID|3823|M|66.29,62.13|Z|Stormwind City|N|Fly to Lakeshire in Redridge.|
+F Lakeshire|QID|3823|M|71.03,72.65|Z|Stormwind City|N|Fly to Lakeshire in Redridge.|
 R Burning Steppes|QID|3823|M|46.43,6.34|Z|Redridge Mountains|N|Make your way to the Burning Steppes.|
 f Morgan's Vigil|QID|3823|M|84.33,68.32|Z|Burning Steppes|N|Get the Flightpath from Borgus Stoutarm.|
 
 A Extinguish the Firegut|QID|3823|M|84.55,68.68|Z|Burning Steppes|N|From Oralius.|
 A FIFTY! YEP!|QID|4283|M|84.55,68.68|Z|Burning Steppes|N|From Oralius.|
-A Dragonkin Menace|QID|4182|M|85.80,68.94|Z|Burning Steppes|N|From Helendis Riverhorn.\n\nThis is the start of Onyxia Lair Attunement. It's important get this started. Shouldn't be hard to get guild help or other people working on attunement in the area.|
 
 C Extinguish the Firegut|QID|3823|M|81,41|Z|Burning Steppes|S|N|Kill the Ogres around here.|
 A Broodling Essence|QID|4726|M|65.26,23.99|Z|Burning Steppes|N|From Tinkee Steamboil.|
@@ -316,7 +314,7 @@ A Gor'tesh the Brute Lord|QID|3824|M|84.55,68.68|Z|Burning Steppes|N|From Oraliu
 T Tablet of the Seven|QID|4296|M|65.18,23.9|Z|Burning Steppes|N|To Maxwort Uberglint.|
 T Broodling Essence|QID|4726|M|65.26,23.99|Z|Burning Steppes|N|To Tinkee Steamboil.|
 A Felnok Steelspring|QID|4808|M|65.26,23.99|Z|Burning Steppes|N|From Tinkee Steamboil.|PRE|4726|
-C Gor'tesh the Brute Lord|QID|3824|M|39.33,55.30|Z|Burning Steppes|N|Kill Gor'tesh who wanders around this area.|
+C Gor'tesh the Brute Lord|QID|3824|M|39.33,55.30|Z|Burning Steppes|N|Kill Gor'tesh who wanders around this area.|T|Gor'tesh|
 C FIFTY! YEP!|QID|4283|M|41.89,52.55|Z|Burning Steppes|US|N|You can go back to the eastern side to farm worgs, or to the orc camps to the west.|
 T Gor'tesh the Brute Lord|QID|3824|M|84.55,68.68|Z|Burning Steppes|N|To Oralius.|
 A Ogre Head On A Stick = Party|QID|3825|M|84.55,68.68|Z|Burning Steppes|N|From Oralius.|PRE|3824|
@@ -340,13 +338,13 @@ T Prayer to Elune|QID|3377|M|29.51,26.35|Z|Searing Gorge|N|To Zamael Lunthistle.
 A Prayer to Elune|QID|3378|M|29.51,26.35|Z|Searing Gorge|N|From Zamael Lunthistle.|PRE|3377|
 C Prayer to Elune|QID|3378|M|29.51,26.35|Z|Searing Gorge|N|Kill the twilight mobs around here until you get the Prayer to Elune.|
 C The Flame's Casing|QID|3452|M|29.1,25.9|Z|Searing Gorge|US|N|Kill the twilight mobs around here until you get the Symbol of Ragnaros.|
-T The Flame's Casing|QID|3452|M|39.05,38.99|Z|Searing Gorge|N|To Kalaran Windblade.|
-A The Torch of Retribution|QID|3453|M|39.05,38.99|Z|Searing Gorge|N|From Kalaran Windblade.|PRE|3452|
-T The Torch of Retribution|QID|3453|M|39.05,38.99|Z|Searing Gorge|N|To Kalaran Windblade.|
-A The Torch of Retribution|QID|3454|M|39.05,38.99|Z|Searing Gorge|N|From Kalaran Windblade.|PRE|3453|
+T The Flame's Casing|QID|3452|M|39.05,38.99|Z|Searing Gorge|N|To Velarok Windblade.|
+A The Torch of Retribution|QID|3453|M|39.05,38.99|Z|Searing Gorge|N|From Velarok Windblade.|PRE|3452|
+T The Torch of Retribution|QID|3453|M|39.05,38.99|Z|Searing Gorge|N|To Velarok Windblade.|
+A The Torch of Retribution|QID|3454|M|39.05,38.99|Z|Searing Gorge|N|From Velarok Windblade.|PRE|3453|
 C The Torch of Retribution|QID|3454|M|39.05,38.99|Z|Searing Gorge|NC|N|Click on the glowing green torch in front of Kalaran.|
-T The Torch of Retribution|QID|3454|M|39.05,38.99|Z|Searing Gorge|N|To Kalaran Windblade.|
-A Squire Maltrake|QID|3462|M|39.05,38.99|Z|Searing Gorge|N|From Kalaran Windblade.|PRE|3454|
+T The Torch of Retribution|QID|3454|M|39.05,38.99|Z|Searing Gorge|N|To Velarok Windblade.|
+A Squire Maltrake|QID|3462|M|39.05,38.99|Z|Searing Gorge|N|From Velarok Windblade.|PRE|3454|
 T Squire Maltrake|QID|3462|M|39.17,38.97|Z|Searing Gorge|N|To Squire Maltrake.|
 A Set Them Ablaze!|QID|3463|M|39.17,38.97|Z|Searing Gorge|N|From Squire Maltrake.|PRE|3462|
 C Northern Watch Tower|QID|3463|M|33.31,54.47|Z|Searing Gorge|QO|4|N|Light the first tower here by equipping the Torch of Retribution and clicking on the Brazier up the tower here.|U|10515|
@@ -359,33 +357,12 @@ T Trinkets...|QID|3481|M|38.85,39.00|Z|Searing Gorge|N|To Hoard of the Black Dra
 l Black Dragonflight Molt|QID|4022|M|38.85,39.00|Z|Searing Gorge|N|Loot the Hoard of the Black Dragonflight to get the molt.|L|10575|U|10569|
 
 F Morgan's Vigil|QID|3825|M|37.94,30.85|Z|Searing Gorge|N|Fly back to Burning Steppes.|
-C Dragonkin Menace|QID|4182|M|92.09,53.32|Z|Burning Steppes|S|N|The Drake flys around the entire area, the Dragonspawn and Wyrmkin are in camps along the eastern and north-eastern borders. They can all be single pulled and soloable for most classes.|
 C Ogre Head On A Stick = Party|QID|3825|M|81.00,46.78|Z|Burning Steppes|N|Click on the Dirt Mound to place head.|
 A A Taste of Flame|QID|4022|M|95.09,31.55|Z|Burning Steppes|N|From Cyrus Therepentous.|PRE|3481|
 C A Taste of Flame|QID|4022|M|95.09,31.55|Z|Burning Steppes|CHAT|N|Talk with Cyrus Therepentous.|
 T A Taste of Flame|QID|4022|M|95.09,31.55|Z|Burning Steppes|N|To Cyrus Therepentous. Skip follow-up|
-C Dragonkin Menace|QID|4182|M|92.09,53.32|Z|Burning Steppes|US|N|The Drake flys around the entire area, the Dragonspawn and Wyrmkin are in camps along the eastern and north-eastern borders. They can all be single pulled and soloable for most classes.|
 T Ogre Head On A Stick = Party|QID|3825|M|84.55,68.68|Z|Burning Steppes|N|To Oralius.|
-T Dragonkin Menace|QID|4182|M|85.80,68.94|Z|Burning Steppes|N|To Helendis Riverhorn.|
 A The True Masters|QID|4183|M|85.80,68.94|Z|Burning Steppes|N|From Helendis Riverhorn.|PRE|4182|
-
-F Lakeshire|QID|4183|M|84.33,68.32|Z|Burning Steppes|N|Fly to Lakeshire in Redridge.|
-T The True Masters|QID|4183|M|29.98,44.46|Z|Redridge Mountains|N|To Magistrate Solomon.|
-A The True Masters|QID|4184|M|29.98,44.46|Z|Redridge Mountains|N|From Magistrate Solomon.|PRE|4183|
-F Stormwind|QID|4184|M|30.59,59.41|Z|Redridge Mountains|N|Fly to Stormwind.|
-T The True Masters|QID|4184|M|78.22,17.97|Z|Stormwind City|N|To Highlord Bolvar Fordragon.|
-A The True Masters|QID|4185|M|78.22,17.97|Z|Stormwind City|N|From Highlord Bolvar Fordragon.|PRE|4184|
-C The True Masters|QID|4185|M|78.12,17.76|Z|Stormwind City|CHAT|N|Speak with Lady Prestor.|
-T The True Masters|QID|4185|M|78.22,17.97|Z|Stormwind City|N|To Highlord Bolvar Fordragon.|
-A The True Masters|QID|4186|M|78.22,17.97|Z|Stormwind City|N|From Highlord Bolvar Fordragon.|PRE|4185|
-F Lakeshire|QID|4186|M|66.29,62.13|Z|Stormwind City|N|Fly to Lakeshire in Redridge.|
-T The True Masters|QID|4186|M|29.98,44.46|Z|Redridge Mountains|N|To Magistrate Solomon.|
-A The True Masters|QID|4223|M|29.98,44.46|Z|Redridge Mountains|N|From Magistrate Solomon.|PRE|4186|
-F Morgan's Vigil|QID|4223|M|30.59,59.41|Z|Redridge Mountains|N|Fly to Burning Steppes.|
-T The True Masters|QID|4223|M|84.74,69.01|Z|Burning Steppes|N|To Marshal Maxwell. Don't get follow-up.|
-A The True Masters|QID|4224|M|84.74,69.01|Z|Burning Steppes|N|From Marshal Maxwell.|PRE|4223|
-C The True Masters|QID|4224|M|65.02,23.74|Z|Burning Steppes|CHAT|N|Talk with Ragged John.|
-T The True Masters|QID|4224|M|84.74,69.01|Z|Burning Steppes|N|To Marshal Maxwell. Skip follow-up.|
 
 H Ironforge|QID|3701|M|PLAYER|Z|Burning Steppes|N|Hearth back to Ironforge. You could fly since you're right next to the flightmaster but we won't need a hearth in the next hour so save yourself some money.|
 T The Smoldering Ruins of Thaurissan|QID|3701|M|38.37,55.32|Z|Ironforge|N|To Royal Historian Archesonus.|
@@ -407,7 +384,7 @@ C Tower Three|QID|5097|M|44.25,63.11|Z|Western Plaguelands|QO|3|N|Use the Beacon
 C Tower Two|QID|5097|M|42.44,66.24|Z|Western Plaguelands|QO|2|N|Use the Beacon's Torch on the edge of the doorway, out of line of site from the elite.|U|12815|
 T A Matter of Time|QID|4971|M|39.45,66.77|Z|Western Plaguelands|N|To Chromie. In the building upstairs.|
 A Counting Out Time|QID|4972|M|39.45,66.77|Z|Western Plaguelands|N|From Chromie. In the building upstairs.|PRE|4971|
-C Counting Out Time|QID|4972|M|41.15,67.65|Z|Western Plaguelands|NC|N|Look for little grey Small Lockboxes on the ground in broken building around Andorhal.|
+l Andorhal Watch|QID|4972|L|12638 5|M|41.15,67.65|Z|Western Plaguelands|N|Look for little grey Small Lockboxes on the ground in broken building around Andorhal.|
 T Counting Out Time|QID|4972|M|39.45,66.77|Z|Western Plaguelands|N|To Chromie. In the building upstairs. Skip follow-up, it's a repeatable in case you lose the reward, which you need for the boss here in Andorhol.|
 T Good Luck Charm|QID|5050|M|38.40,54.06|Z|Western Plaguelands|N|To Janice Felstone.|
 A Two Halves Become One|QID|5051|M|38.40,54.06|Z|Western Plaguelands|N|From Janice Felstone. Upstairs in the back room of the building.|PRE|5050|

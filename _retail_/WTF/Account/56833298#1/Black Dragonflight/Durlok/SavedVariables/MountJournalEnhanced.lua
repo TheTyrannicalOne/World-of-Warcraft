@@ -13,16 +13,17 @@ MJEPersonalSettings = {
 			0, -- [2]
 		},
 		["showPersonalCount"] = true,
-		["moveEquipmentSlot"] = true,
+		["showStatistics"] = true,
 		["previewButton"] = true,
 		["showShopButton"] = false,
-		["showUsageStatistics"] = true,
+		["moveEquipmentSlot"] = true,
 		["unlockDisplayCamera"] = true,
 		["debugMode"] = false,
 	},
 	["hiddenMounts"] = {
 	},
 	["personalUi"] = false,
+	["searchInDescription"] = true,
 	["favoredMounts"] = {
 	},
 	["sort"] = {
@@ -51,20 +52,28 @@ MJEPersonalSettings = {
 			["Achievement"] = true,
 			["Instance"] = true,
 			["PVP"] = true,
-			["Vendor"] = true,
+			["Promotion"] = true,
 			["Profession"] = true,
 			["Island Expedition"] = true,
 			["Shop"] = true,
 			["Covenants"] = true,
 			["Drop"] = true,
 			["Garrison"] = true,
-			["Promotion"] = true,
-			["Quest"] = true,
 			["World Event"] = true,
+			["Quest"] = true,
+			["Vendor"] = true,
 		},
 		["hiddenIngame"] = false,
 		["hidden"] = false,
 		["notCollected"] = true,
+		["onlyUsable"] = false,
+		["faction"] = {
+			["horde"] = true,
+			["alliance"] = true,
+			["noFaction"] = true,
+		},
+		["onlyFavorites"] = false,
+		["onlyTradable"] = false,
 		["mountType"] = {
 			["repair"] = true,
 			["flying"] = true,
@@ -72,14 +81,6 @@ MJEPersonalSettings = {
 			["passenger"] = true,
 			["ground"] = true,
 			["transform"] = true,
-		},
-		["onlyUsable"] = false,
-		["onlyFavorites"] = false,
-		["onlyTradable"] = false,
-		["faction"] = {
-			["horde"] = true,
-			["alliance"] = true,
-			["noFaction"] = true,
 		},
 		["family"] = {
 			["Arachnids"] = {
@@ -182,10 +183,10 @@ MJEPersonalSettings = {
 				["Pterrordaxes"] = true,
 			},
 			["Rays"] = {
-				["Stingrays"] = true,
-				["Fathom Rays"] = true,
-				["Mana Rays"] = true,
 				["Nether Rays"] = true,
+				["Stingrays"] = true,
+				["Mana Rays"] = true,
+				["Fathom Rays"] = true,
 			},
 			["Drakes"] = {
 				["Drakes"] = true,
@@ -289,6 +290,8 @@ MJEPersonalSettings = {
 		},
 	},
 	["personalHiddenMounts"] = false,
-	["searchInDescription"] = true,
+	["searchInNotes"] = true,
+	["notes"] = {
+	},
 	["autoFavor"] = false,
 }

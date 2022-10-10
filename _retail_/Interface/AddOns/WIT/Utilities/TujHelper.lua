@@ -89,7 +89,7 @@ local function calculateCustomPrice(customPriceString, itemId)
         itemId = gsub(itemId,'i:','item:')
     end
     
-    local itemPrice = TUJMarketInfo(itemId)
+    local itemPrice = TUJMarketInfo(itemId, {})
 
     if itemPrice == nil then
         core.UI.MainWindow.QueueRefresh()
@@ -109,7 +109,7 @@ local function calculateCustomPrice(customPriceString, itemId)
             if (number ~= nil) then
                 number = gsub(number,'p:','battlepet:')
                 number = gsub(number,'i:','item:')
-                customPrice = gsub(customPrice, pattern, tostring(TUJMarketInfo(number)[f] or 0), 1)
+                customPrice = gsub(customPrice, pattern, tostring(TUJMarketInfo(number, {})[f] or 0), 1)
             end
         until (number == nil)
 
@@ -453,10 +453,10 @@ function TUJHelper.DefaultPriceSource()
 end
 
 function TUJHelper.IsAPIAvailable()
-    return TUJMarketInfo ~= nil
+    return false--TUJMarketInfo ~= nil
 end
 
 function TUJHelper.IsDBAvailable()
     -- checks if historical price for copper ore or current content ore is available
-    return TUJHelper.IsAPIAvailable() and (TUJMarketInfo(2770)['globalMean'] or TUJMarketInfo(152512)['globalMean']) ~= nil
+    return TUJHelper.IsAPIAvailable()
 end

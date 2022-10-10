@@ -27,138 +27,6 @@ ElvCharacterDB = {
 	},
 	["ChatHistoryLog"] = {
 		{
-			"|cff0070dd|Hitem:178793::::::::60:72::2:5:8134:6806:6652:1537:4785:1:28:748:::::|h[Abdominal Securing Chestguard]|h|r", -- [1]
-			"Rahahaha-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Rahahaha-BlackDragonflight", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			446, -- [11]
-			"Player-96-0DCD0E8F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cRahahaha-BlackDragonflight|r",
-			[51] = 1651449704,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [1]
-		{
-			"anyone need?", -- [1]
-			"Rahahaha-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Rahahaha-BlackDragonflight", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			448, -- [11]
-			"Player-96-0DCD0E8F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cRahahaha-BlackDragonflight|r",
-			[51] = 1651449710,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [2]
-		{
-			"nope", -- [1]
-			"Mokkar-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Mokkar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			449, -- [11]
-			"Player-3683-0CBBAE72", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cMokkar-Dalaran|r",
-			[51] = 1651449719,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [3]
-		{
-			"los", -- [1]
-			"Mokkar-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Mokkar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			450, -- [11]
-			"Player-3683-0CBBAE72", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cMokkar-Dalaran|r",
-			[51] = 1651449732,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [4]
-		{
-			"bye", -- [1]
-			"Mokkar-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Mokkar-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			455, -- [11]
-			"Player-3683-0CBBAE72", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cMokkar-Dalaran|r",
-			[51] = 1651449923,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [5]
-		{
-			"that was dumb", -- [1]
-			"Rahahaha-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Rahahaha-BlackDragonflight", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			457, -- [11]
-			"Player-96-0DCD0E8F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cRahahaha-BlackDragonflight|r",
-			[51] = 1651449933,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [6]
-		{
 			":P", -- [1]
 			"Mokkar-Dalaran", -- [2]
 			"", -- [3]
@@ -179,7 +47,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cMokkar-Dalaran|r",
 			[51] = 1651449936,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [7]
+		}, -- [1]
 		{
 			"how do u have 100k health???", -- [1]
 			"Rahahaha-BlackDragonflight", -- [2]
@@ -201,7 +69,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cRahahaha-BlackDragonflight|r",
 			[51] = 1651449967,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [8]
+		}, -- [2]
 		{
 			"nothing impressive, im 246 ilvl", -- [1]
 			"Mokkar-Dalaran", -- [2]
@@ -223,7 +91,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cMokkar-Dalaran|r",
 			[51] = 1651449982,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [9]
+		}, -- [3]
 		{
 			"peopel are much higher atm", -- [1]
 			"Mokkar-Dalaran", -- [2]
@@ -245,7 +113,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cMokkar-Dalaran|r",
 			[51] = 1651449991,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [10]
+		}, -- [4]
 		{
 			"im 238 and 54k", -- [1]
 			"Rahahaha-BlackDragonflight", -- [2]
@@ -267,7 +135,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cRahahaha-BlackDragonflight|r",
 			[51] = 1651449992,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [11]
+		}, -- [5]
 		{
 			"well im protection that gives like 30k", -- [1]
 			"Mokkar-Dalaran", -- [2]
@@ -289,7 +157,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cMokkar-Dalaran|r",
 			[51] = 1651450001,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [12]
+		}, -- [6]
 		{
 			"ahhh", -- [1]
 			"Rahahaha-BlackDragonflight", -- [2]
@@ -311,7 +179,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cRahahaha-BlackDragonflight|r",
 			[51] = 1651450005,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [13]
+		}, -- [7]
 		{
 			"fury here", -- [1]
 			"Rahahaha-BlackDragonflight", -- [2]
@@ -333,7 +201,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cRahahaha-BlackDragonflight|r",
 			[51] = 1651450009,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [14]
+		}, -- [8]
 		{
 			"if anyone need anything i get, say so", -- [1]
 			"Mokkar-Dalaran", -- [2]
@@ -355,7 +223,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cMokkar-Dalaran|r",
 			[51] = 1651450066,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [15]
+		}, -- [9]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14416:Player-75-058380E2:1:5:1:22:4294967295:4294967295:4294967295:4294967295|h[Heroic: Theater of Pain]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -377,7 +245,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1651450173,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [16]
+		}, -- [10]
 		{
 			"gg bois", -- [1]
 			"Mokkar-Dalaran", -- [2]
@@ -399,7 +267,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cMokkar-Dalaran|r",
 			[51] = 1651450176,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [17]
+		}, -- [11]
 		{
 			"gg", -- [1]
 			"Kelzir-Chromaggus", -- [2]
@@ -421,7 +289,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcKelzir-Chromaggus|r",
 			[51] = 1651450178,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [18]
+		}, -- [12]
 		{
 			"Deadsoul Hatcher 0.48% ~(58.93, 51.24) |cffffff00|Hworldmap:1961:5893:5123|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -443,7 +311,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1651455680,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
+		}, -- [13]
 		{
 			"did it get killed like RIGHT after you pinned?", -- [1]
 			"Vorastrix-Ravenholdt", -- [2]
@@ -465,7 +333,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaVorastrix-Ravenholdt|r",
 			[51] = 1651455775,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
+		}, -- [14]
 		{
 			"because couldn't see anything", -- [1]
 			"Vorastrix-Ravenholdt", -- [2]
@@ -487,7 +355,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaVorastrix-Ravenholdt|r",
 			[51] = 1651455779,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
+		}, -- [15]
 		{
 			"Xyraxz the Unknowable 55.90% ~(55.13, 28.98) |cffffff00|Hworldmap:1961:5513:2898|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -509,7 +377,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1651456078,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
+		}, -- [16]
 		{
 			"why do you even have that addon announcing these things? we rush over the moment it goes off and then we get here and they're dead", -- [1]
 			"Vorastrix-Ravenholdt", -- [2]
@@ -531,7 +399,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaVorastrix-Ravenholdt|r",
 			[51] = 1651456154,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
+		}, -- [17]
 		{
 			"hey, Consumption is up, but maybe it'll only say so when it's at 1% health", -- [1]
 			"Vorastrix-Ravenholdt", -- [2]
@@ -553,7 +421,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaVorastrix-Ravenholdt|r",
 			[51] = 1651456202,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
+		}, -- [18]
 		{
 			"10% now, though", -- [1]
 			"Vorastrix-Ravenholdt", -- [2]
@@ -575,7 +443,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaVorastrix-Ravenholdt|r",
 			[51] = 1651456221,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
+		}, -- [19]
 		{
 			"Screaming Shade 100.00% ~(43.56, 44.68) |cffffff00|Hworldmap:1961:4356:4468|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -597,7 +465,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1651456510,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
+		}, -- [20]
 		{
 			"nah, it's already dead 10 seconds after you announce it so why even try?", -- [1]
 			"Vorastrix-Ravenholdt", -- [2]
@@ -619,7 +487,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaVorastrix-Ravenholdt|r",
 			[51] = 1651456529,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
+		}, -- [21]
 		{
 			"fucking assholes", -- [1]
 			"Vorastrix-Ravenholdt", -- [2]
@@ -641,7 +509,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaVorastrix-Ravenholdt|r",
 			[51] = 1651456535,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
+		}, -- [22]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:15099:Player-75-058380E2:1:5:1:22:4294967295:4294967295:4294967295:4294967295|h[Treasures of Korthia]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -663,7 +531,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1651457058,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [29]
+		}, -- [23]
 		{
 			"Wild Worldcracker 95.83% ~(47, 35.52) |cffffff00|Hworldmap:1961:4700:3552|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -685,7 +553,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1651457367,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
+		}, -- [24]
 		{
 			"Konthrogz the Obliterator 99.31% ~(47.31, 35.56) |cffffff00|Hworldmap:1961:4731:3556|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -707,7 +575,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1651457486,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
+		}, -- [25]
 		{
 			"Kroke the Tormented 100.00% ~(56.75, 32.24) |cffffff00|Hworldmap:1961:5675:3224|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -729,7 +597,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1651457566,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
+		}, -- [26]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14636:Player-75-058380E2:1:5:1:22:4294967295:4294967295:4294967295:4294967295|h[Adventurer in Chief]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -751,7 +619,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1651465644,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [33]
+		}, -- [27]
 		{
 			"Kroke the Tormented 96.88% ~(60.4, 34.45) |cffffff00|Hworldmap:1961:6039:3445|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -773,7 +641,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1651546780,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
+		}, -- [28]
 		{
 			"Fleshwing 91.64% ~(59.98, 43.61) |cffffff00|Hworldmap:1961:5998:4361|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -795,7 +663,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1651543382,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
+		}, -- [29]
 		{
 			"Stygian Stonecrusher 100.00% ~(45.46, 79.9) |cffffff00|Hworldmap:1961:4546:7990|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -817,7 +685,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1651544303,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
+		}, -- [30]
 		{
 			"Wild Worldcracker 97.89% ~(47.15, 35.36) |cffffff00|Hworldmap:1961:4715:3536|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Grizje-EarthenRing", -- [2]
@@ -839,7 +707,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Grizje-EarthenRing|r",
 			[51] = 1651544493,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
+		}, -- [31]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14894:Player-75-058380E2:1:5:2:22:4294967295:4294967295:4294967295:4294967295|h[To 'Ghast, Two Curios]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -861,7 +729,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1651544888,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [38]
+		}, -- [32]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14747:Player-75-058380E2:1:5:2:22:4294967295:4294967295:4294967295:4294967295|h[Make it Double!]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -883,7 +751,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1651548222,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [39]
+		}, -- [33]
 		{
 			"Ha-Li 71.67% ~(31.82, 41.8) |cffffff00|Hworldmap:1530:3182:4180|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -905,7 +773,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1651554373,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
+		}, -- [34]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14639:Player-75-058380E2:1:5:8:22:4294967295:4294967295:4294967295:4294967295|h[Dedication to the Restoration]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -927,7 +795,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1652078988,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [41]
+		}, -- [35]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:14233:Player-75-058380E2:1:5:18:22:4294967295:4294967295:4294967295:4294967295|h[Tea Tales]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -949,7 +817,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1652926614,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [42]
+		}, -- [36]
 		{
 			"Kyrian Corpse |cffffff00|Hworldmap:1536:3274:2127|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Majai-Ravenholdt", -- [2]
@@ -971,7 +839,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Majai-Ravenholdt|r",
 			[51] = 1653003930,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [37]
 		{
 			"oops. disregard", -- [1]
 			"Majai-Ravenholdt", -- [2]
@@ -993,7 +861,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Majai-Ravenholdt|r",
 			[51] = 1653003937,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [38]
 		{
 			"np", -- [1]
 			"Sandina-Sentinels", -- [2]
@@ -1015,7 +883,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaSandina-Sentinels|r",
 			[51] = 1653003950,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [39]
 		{
 			"report him", -- [1]
 			"Nightfal-EmeraldDream", -- [2]
@@ -1037,7 +905,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Nightfal-EmeraldDream|r",
 			[51] = 1653003965,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [40]
 		{
 			"no, i didn't kill him. was like that when i found him. i swear.", -- [1]
 			"Majai-Ravenholdt", -- [2]
@@ -1059,7 +927,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Majai-Ravenholdt|r",
 			[51] = 1653003989,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [41]
 		{
 			"lol", -- [1]
 			"Sandina-Sentinels", -- [2]
@@ -1081,7 +949,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaSandina-Sentinels|r",
 			[51] = 1653003996,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [42]
 		{
 			"Mr epstien didnt kill himself sir", -- [1]
 			"Nightfal-EmeraldDream", -- [2]
@@ -1103,7 +971,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Nightfal-EmeraldDream|r",
 			[51] = 1653004035,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [43]
 		{
 			"neither did maxwell. yet.", -- [1]
 			"Majai-Ravenholdt", -- [2]
@@ -1125,7 +993,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Majai-Ravenholdt|r",
 			[51] = 1653004054,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [44]
 		{
 			"Rip", -- [1]
 			"Nightfal-EmeraldDream", -- [2]
@@ -1147,7 +1015,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Nightfal-EmeraldDream|r",
 			[51] = 1653004061,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [45]
 		{
 			"BTC", -- [1]
 			"Elxtronic-EmeraldDream", -- [2]
@@ -1169,7 +1037,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Elxtronic-EmeraldDream|r",
 			[51] = 1654061814,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [46]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:15579:Player-75-058380E2:1:6:5:22:4294967295:4294967295:4294967295:4294967295|h[Return to Lordaeron]|h|r!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1191,7 +1059,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1654472147,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [53]
+		}, -- [47]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:648:Player-75-09FDA5A8:1:6:29:22:4294967295:4294967295:4294967295:4294967295|h[The Blood Furnace]|h|r!", -- [1]
 			"Igotherbs-ArgentDawn", -- [2]
@@ -1213,7 +1081,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Igotherbs|r",
 			[51] = 1656564075,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [54]
+		}, -- [48]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:668:Player-75-09FDA5A8:1:6:29:22:4294967295:4294967295:4294967295:4294967295|h[Heroic: The Blood Furnace]|h|r!", -- [1]
 			"Igotherbs-ArgentDawn", -- [2]
@@ -1235,7 +1103,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Igotherbs|r",
 			[51] = 1656564075,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [55]
+		}, -- [49]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:693:Player-75-09FDA5A8:1:6:29:22:4294967295:4294967295:4294967295:4294967295|h[Magtheridon's Lair]|h|r!", -- [1]
 			"Igotherbs-ArgentDawn", -- [2]
@@ -1257,7 +1125,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Igotherbs|r",
 			[51] = 1656564337,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [56]
+		}, -- [50]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:679:Player-75-09FDA5A8:1:6:29:22:4294967295:4294967295:4294967295:4294967295|h[Heroic: The Mechanar]|h|r!", -- [1]
 			"Igotherbs-ArgentDawn", -- [2]
@@ -1279,7 +1147,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Igotherbs|r",
 			[51] = 1656565879,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [57]
+		}, -- [51]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:658:Player-75-09FDA5A8:1:6:29:22:4294967295:4294967295:4294967295:4294967295|h[The Mechanar]|h|r!", -- [1]
 			"Igotherbs-ArgentDawn", -- [2]
@@ -1301,7 +1169,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Igotherbs|r",
 			[51] = 1656565879,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [58]
+		}, -- [52]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:4957:Player-75-09FDA5A8:1:6:29:22:4294967295:4294967295:4294967295:4294967295|h[20 Dungeon Quests Completed]|h|r!", -- [1]
 			"Igotherbs-ArgentDawn", -- [2]
@@ -1323,7 +1191,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Igotherbs|r",
 			[51] = 1656566283,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [59]
+		}, -- [53]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:680:Player-75-09FDA5A8:1:6:29:22:4294967295:4294967295:4294967295:4294967295|h[Heroic: The Botanica]|h|r!", -- [1]
 			"Igotherbs-ArgentDawn", -- [2]
@@ -1345,7 +1213,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Igotherbs|r",
 			[51] = 1656566341,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [60]
+		}, -- [54]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:659:Player-75-09FDA5A8:1:6:29:22:4294967295:4294967295:4294967295:4294967295|h[The Botanica]|h|r!", -- [1]
 			"Igotherbs-ArgentDawn", -- [2]
@@ -1367,7 +1235,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Igotherbs|r",
 			[51] = 1656566341,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [61]
+		}, -- [55]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:660:Player-75-09FDA5A8:1:6:29:22:4294967295:4294967295:4294967295:4294967295|h[The Arcatraz]|h|r!", -- [1]
 			"Igotherbs-ArgentDawn", -- [2]
@@ -1389,7 +1257,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Igotherbs|r",
 			[51] = 1656566972,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [62]
+		}, -- [56]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:681:Player-75-09FDA5A8:1:6:29:22:4294967295:4294967295:4294967295:4294967295|h[Heroic: The Arcatraz]|h|r!", -- [1]
 			"Igotherbs-ArgentDawn", -- [2]
@@ -1411,7 +1279,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Igotherbs|r",
 			[51] = 1656566972,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [63]
+		}, -- [57]
 		{
 			"time in queue: 42 min", -- [1]
 			"Ziniax-ArgentDawn", -- [2]
@@ -1433,7 +1301,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edZiniax|r",
 			[51] = 1658190269,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [58]
 		{
 			"that mean your in now/", -- [1]
 			"Kicat-TheScryers", -- [2]
@@ -1455,7 +1323,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Kicat-TheScryers|r",
 			[51] = 1658190422,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [59]
 		{
 			"haha nope still waiting :')", -- [1]
 			"Ziniax-ArgentDawn", -- [2]
@@ -1477,7 +1345,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edZiniax|r",
 			[51] = 1658190526,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [60]
 		{
 			"hopefully soon then", -- [1]
 			"Kicat-TheScryers", -- [2]
@@ -1499,7 +1367,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Kicat-TheScryers|r",
 			[51] = 1658190486,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [61]
 		{
 			"[FIS] Interrupted Custos's |cff71d5ff|Hspell:359734:0|h[Cratering Blast]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1521,7 +1389,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1661707909,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [68]
+		}, -- [62]
 		{
 			"[FIS] Interrupted Custos's |cff71d5ff|Hspell:359734:0|h[Cratering Blast]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1543,7 +1411,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1661707867,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [69]
+		}, -- [63]
 		{
 			"[FIS] Interrupted Custos's |cff71d5ff|Hspell:360876:0|h[Imminent Destruction]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1565,7 +1433,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1661707954,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [70]
+		}, -- [64]
 		{
 			"[FIS] Interrupted Custos's |cff71d5ff|Hspell:359734:0|h[Cratering Blast]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1587,7 +1455,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1661707974,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [71]
+		}, -- [65]
 		{
 			"Star gorger is up", -- [1]
 			"Zaknaton-EarthenRing", -- [2]
@@ -1609,7 +1477,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaZaknaton-EarthenRing|r",
 			[51] = 1661707981,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [66]
 		{
 			"Shifting Stargorger 100.00% ~(42.37, 21.83) |cffffff00|Hworldmap:1970:4237:2183|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Ausum-EarthenRing", -- [2]
@@ -1631,7 +1499,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Ausum-EarthenRing|r",
 			[51] = 1661708076,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [67]
 		{
 			"core", -- [1]
 			"Ferlin-ArgentDawn", -- [2]
@@ -1653,7 +1521,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Ferlin|r",
 			[51] = 1661708296,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [68]
 		{
 			"anyone out here want to group up to knock some of these quests out?", -- [1]
 			"Withers-SteamwheedleCartel", -- [2]
@@ -1675,7 +1543,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edWithers-SteamwheedleCartel|r",
 			[51] = 1661708616,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [69]
 		{
 			"[FIS] Interrupted Reality Breacher's |cff71d5ff|Hspell:355349:0|h[Essence Rift]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1697,7 +1565,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1661724522,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [76]
+		}, -- [70]
 		{
 			"Garudeon 100.00% ~(68.23, 37.79) |cffffff00|Hworldmap:1970:6822:3779|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Doulton-EarthenRing", -- [2]
@@ -1719,7 +1587,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Doulton-EarthenRing|r",
 			[51] = 1661724897,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [71]
 		{
 			"[FIS] Interrupted Xarenak the Soulstealer's |cff71d5ff|Hspell:365847:0|h[Artifact Blast]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1741,7 +1609,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1661725308,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [78]
+		}, -- [72]
 		{
 			"Feasting 83.20% ~(62.41, 51.84) |cffffff00|Hworldmap:1970:6241:5184|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Doulton-EarthenRing", -- [2]
@@ -1763,7 +1631,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Doulton-EarthenRing|r",
 			[51] = 1661725612,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [73]
 		{
 			"[FIS] Interrupted Dreadlord Saboteur's |cff71d5ff|Hspell:365477:0|h[Carrion Swarm]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1785,7 +1653,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1661725801,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [80]
+		}, -- [74]
 		{
 			"[FIS] Interrupted Converted Guardian's |cff71d5ff|Hspell:360876:0|h[Imminent Destruction]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1807,7 +1675,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1661725914,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [81]
+		}, -- [75]
 		{
 			"[FIS] Interrupted Dreadlord Saboteur's |cff71d5ff|Hspell:365477:0|h[Carrion Swarm]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1829,7 +1697,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1661726272,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [82]
+		}, -- [76]
 		{
 			"[FIS] Interrupted Dreadlord Saboteur's |cff71d5ff|Hspell:365477:0|h[Carrion Swarm]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1851,7 +1719,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1661726261,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [83]
+		}, -- [77]
 		{
 			"[FIS] Interrupted Dreadlord Saboteur's |cff71d5ff|Hspell:365477:0|h[Carrion Swarm]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1873,7 +1741,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1661726298,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [84]
+		}, -- [78]
 		{
 			"[FIS] Interrupted The Culler's |cff71d5ff|Hspell:364319:0|h[Harvest]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1895,7 +1763,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1661727363,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [85]
+		}, -- [79]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:12931:Player-75-0B7555D2:1:8:28:22:4294967295:4294967295:4294967295:4294967295|h[No Stable Big Enough]|h|r!", -- [1]
 			"Elzera-TheScryers", -- [2]
@@ -1917,7 +1785,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Elzera-TheScryers|r",
 			[51] = 1661727766,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [86]
+		}, -- [80]
 		{
 			"Tethos (100%) |cffffff00|Hworldmap:1970:5450:7345|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Weifei-ArgentDawn", -- [2]
@@ -1939,7 +1807,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cWeifei|r",
 			[51] = 1661728038,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [81]
 		{
 			"Shifting Stargorger (100%) |cffffff00|Hworldmap:1970:4230:2100|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Weifei-ArgentDawn", -- [2]
@@ -1961,7 +1829,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cWeifei|r",
 			[51] = 1661728395,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [82]
 		{
 			"Otaris the Provoked (100%) |cffffff00|Hworldmap:1970:5865:4040|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Weifei-ArgentDawn", -- [2]
@@ -1983,7 +1851,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cWeifei|r",
 			[51] = 1661728743,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [83]
 		{
 			"Garudeon (100%) |cffffff00|Hworldmap:1970:6905:3660|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Weifei-ArgentDawn", -- [2]
@@ -2005,7 +1873,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cWeifei|r",
 			[51] = 1661728812,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [84]
 		{
 			"[FIS] Interrupted Maw-Frenzied Lupine's |cff71d5ff|Hspell:362413:0|h[Deadly Bite]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2027,7 +1895,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1661728930,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [91]
+		}, -- [85]
 		{
 			"[FIS] Interrupted Maw-Frenzied Lupine's |cff71d5ff|Hspell:362413:0|h[Deadly Bite]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2049,7 +1917,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1661728951,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [92]
+		}, -- [86]
 		{
 			"Euv'ouk |cffffff00|Hworldmap:1970:4748:4514|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Cowfly-EarthenRing", -- [2]
@@ -2071,7 +1939,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Cowfly-EarthenRing|r",
 			[51] = 1661729043,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [87]
 		{
 			"[FIS] Interrupted Custos's |cff71d5ff|Hspell:359734:0|h[Cratering Blast]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2093,7 +1961,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1661729218,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [94]
+		}, -- [88]
 		{
 			"Chitali the Eldest |cffffff00|Hworldmap:1970:5020:6799|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Cowfly-EarthenRing", -- [2]
@@ -2115,7 +1983,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Cowfly-EarthenRing|r",
 			[51] = 1661729219,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [89]
 		{
 			"[FIS] Interrupted Custos's |cff71d5ff|Hspell:359734:0|h[Cratering Blast]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2137,7 +2005,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1661729201,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [96]
+		}, -- [90]
 		{
 			"Tahkwitz 100.00% ~(48.52, 39.63) |cffffff00|Hworldmap:1970:4852:3963|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2159,7 +2027,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1661729358,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [91]
 		{
 			"Furidian up |cffffff00|Hworldmap:1970:6443:5880|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
 			"Pharmacyst-KirinTor", -- [2]
@@ -2181,7 +2049,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaPharmacyst-KirinTor|r",
 			[51] = 1661729596,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [92]
 		{
 			"hello", -- [1]
 			"Bluey-TheScryers", -- [2]
@@ -2203,6 +2071,138 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Bluey-TheScryers|r",
 			[51] = 1662250536,
 			[50] = "CHAT_MSG_WHISPER",
+		}, -- [93]
+		{
+			"Fated Heroic and Fated Normal Raids 3 in bundle|cffa335ee|Hitem:190170::::::::1:1449:::::::::|h[Jigglesworth, Sr.]|h|r, and Mythic+15s for|cffa335ee|Hitem:192557::::::::1:1449:::::::::|h[Restoration Deathwalker]|h|r ; also do Mythic Sylvanas for|cffa335ee|Hitem:186642::::::::1:1449:::::::::|h[Vengeance's Reins]|h|r}!,PST", -- [1]
+			"Smileri-TheScryers", -- [2]
+			"", -- [3]
+			"5. Trade (Services) - City", -- [4]
+			"Smileri-TheScryers", -- [5]
+			"", -- [6]
+			42, -- [7]
+			5, -- [8]
+			"Trade (Services) - City", -- [9]
+			0, -- [10]
+			2025, -- [11]
+			"Player-75-0ECDB921", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaSmileri-TheScryers|r",
+			[51] = 1663474292,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [94]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:429:Player-75-058380E2:1:9:18:22:4294967295:4294967295:4294967295:4294967295|h[Sulfuras, Hand of Ragnaros]|h|r!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			268, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1663518056,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [95]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:15513:Player-75-05B2CD35:1:9:18:22:4294967295:4294967295:4294967295:4294967295|h[Curious Collections]|h|r!", -- [1]
+			"Apollinariya-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Apollinariya-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			190, -- [11]
+			"Player-75-05B2CD35", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffef367Apollinariya|r",
+			[51] = 1663546305,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [96]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:14328:Player-75-05B2CD35:1:9:18:22:4294967295:4294967295:4294967295:4294967295|h[Professional Shadowlands Master]|h|r!", -- [1]
+			"Apollinariya-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Apollinariya-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			503, -- [11]
+			"Player-75-05B2CD35", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffef367Apollinariya|r",
+			[51] = 1663548816,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [97]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:7934:Player-75-058380E2:1:10:8:22:4294967295:4294967295:4294967295:4294967295|h[Raiding with Leashes]|h|r!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			184, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1665272749,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [98]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:8397:Player-75-058380E2:1:10:8:22:4294967295:4294967295:4294967295:4294967295|h[Crazy for Cats]|h|r!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			186, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1665272749,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [99]
 	},
 }

@@ -798,7 +798,11 @@ function BtWQuestsMixin:OnLoad()
     
     self:RegisterEvent("MODIFIER_STATE_CHANGED")
 
-	self.TitleText:SetText(L["BTWQUESTS_QUEST_JOURNAL"]);
+    if self.TitleContainer then
+        self.TitleContainer.TitleText:SetText(L["BTWQUESTS_QUEST_JOURNAL"]);
+    else
+        self.TitleText:SetText(L["BTWQUESTS_QUEST_JOURNAL"]);
+    end
     SetPortraitToTexture(self.portrait or self.PortraitContainer.portrait, "Interface\\QuestFrame\\UI-QuestLog-BookIcon");
 
     if self.NineSlice then

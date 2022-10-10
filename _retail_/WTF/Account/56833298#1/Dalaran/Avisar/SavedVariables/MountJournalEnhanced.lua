@@ -13,16 +13,17 @@ MJEPersonalSettings = {
 			0, -- [2]
 		},
 		["showPersonalCount"] = true,
-		["moveEquipmentSlot"] = true,
+		["unlockDisplayCamera"] = true,
 		["previewButton"] = true,
 		["showShopButton"] = false,
-		["showUsageStatistics"] = true,
-		["unlockDisplayCamera"] = true,
+		["moveEquipmentSlot"] = true,
+		["showStatistics"] = true,
 		["debugMode"] = false,
 	},
 	["hiddenMounts"] = {
 	},
 	["personalUi"] = false,
+	["autoFavor"] = false,
 	["favoredMounts"] = {
 	},
 	["sort"] = {
@@ -51,25 +52,28 @@ MJEPersonalSettings = {
 			["Island Expedition"] = true,
 			["Reputation"] = true,
 			["PVP"] = true,
-			["World Event"] = true,
+			["Promotion"] = true,
 			["Drop"] = true,
 			["Achievement"] = true,
 			["Shop"] = true,
 			["Covenants"] = true,
 			["Profession"] = true,
 			["Garrison"] = true,
-			["Vendor"] = true,
+			["World Event"] = true,
 			["Quest"] = true,
-			["Promotion"] = true,
+			["Vendor"] = true,
 		},
 		["hiddenIngame"] = false,
 		["hidden"] = false,
 		["notCollected"] = true,
+		["onlyUsable"] = false,
 		["faction"] = {
 			["horde"] = true,
 			["alliance"] = true,
 			["noFaction"] = true,
 		},
+		["onlyFavorites"] = false,
+		["onlyTradable"] = false,
 		["mountType"] = {
 			["repair"] = true,
 			["flying"] = true,
@@ -78,9 +82,6 @@ MJEPersonalSettings = {
 			["ground"] = true,
 			["transform"] = true,
 		},
-		["onlyFavorites"] = false,
-		["onlyTradable"] = false,
-		["onlyUsable"] = false,
 		["family"] = {
 			["Arachnids"] = {
 				["Scorpions"] = true,
@@ -268,10 +269,10 @@ MJEPersonalSettings = {
 			},
 			["Vombata"] = true,
 			["Rays"] = {
-				["Nether Rays"] = true,
 				["Stingrays"] = true,
-				["Mana Rays"] = true,
 				["Fathom Rays"] = true,
+				["Mana Rays"] = true,
+				["Nether Rays"] = true,
 			},
 			["Demons"] = {
 				["Felsabers"] = true,
@@ -289,6 +290,8 @@ MJEPersonalSettings = {
 		},
 	},
 	["personalHiddenMounts"] = false,
-	["autoFavor"] = false,
+	["notes"] = {
+	},
+	["searchInNotes"] = true,
 	["searchInDescription"] = true,
 }

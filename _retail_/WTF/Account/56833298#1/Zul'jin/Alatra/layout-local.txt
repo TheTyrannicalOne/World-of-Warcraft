@@ -3,7 +3,7 @@ Frame: AllTheThings-Window-CurrentInstance
 FrameLevel: 1
 Anchor: LEFT
 X: 0
-Y: -34
+Y: -113
 W: 300
 H: 298
 Frame: BagItemTooltipMover
@@ -146,13 +146,13 @@ X: 0
 Y: 0
 W: 300
 H: 300
-Frame: CovenantSanctumFrame
+Frame: SplashFrame
 FrameLevel: 1
 Anchor: CENTER
 X: 0
-Y: 0
-W: 980
-H: 637
+Y: 60
+W: 882
+H: 584
 Frame: CovenantMissionFrame
 FrameLevel: 1
 Anchor: CENTER

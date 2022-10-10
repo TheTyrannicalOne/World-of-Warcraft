@@ -1,16 +1,19 @@
-9/4 04:31:12.325  Loading add-on AngryWorldQuests
-9/4 04:31:12.325  ** Loading table of contents Interface\AddOns\AngryWorldQuests\AngryWorldQuests.toc
-9/4 04:31:12.325  (null)
-9/4 04:31:12.325  Loading add-on NPCScan
-9/4 04:31:12.325  Interface\AddOns\NPCScan\Bindings.xml(1): error: not well-formed (invalid token)
-9/4 04:31:12.325  Loading add-on Overachiever
-9/4 04:31:12.325  ** Loading table of contents Interface\AddOns\Overachiever\Overachiever.toc
-9/4 04:31:12.325  (null)
-9/4 04:31:12.325  Loading add-on PetEmote
-9/4 04:31:12.325  Interface\AddOns\PetEmote\Bindings.xml(1): error: not well-formed (invalid token)
-9/4 04:31:21.118  Loading add-on Overachiever_Trade
-9/4 04:31:21.118  ** Loading table of contents Interface\AddOns\Overachiever_Trade\Overachiever_Trade.toc
-9/4 04:31:21.118  (null)
-9/4 04:31:35.316  Loading add-on Overachiever_Tabs
-9/4 04:31:35.316  ** Loading table of contents Interface\AddOns\Overachiever_Tabs\Overachiever_Tabs.toc
-9/4 04:31:35.316  (null)
+10/9 20:34:28.700  Loading add-on AngryWorldQuests
+10/9 20:34:28.700  ** Loading table of contents Interface\AddOns\AngryWorldQuests\AngryWorldQuests.toc
+10/9 20:34:28.700  (null)
+10/9 20:34:28.700  Loading add-on DejaCharacterStats
+10/9 20:34:28.700  ** Loading table of contents Interface\AddOns\DejaCharacterStats\DejaCharacterStats.toc
+10/9 20:34:28.700  (null)
+10/9 20:34:28.700  Loading add-on NPCScan
+10/9 20:34:28.700  Interface\AddOns\NPCScan\Bindings.xml(1): error: not well-formed (invalid token)
+10/9 20:34:28.700  Loading add-on Overachiever
+10/9 20:34:28.700  ** Loading table of contents Interface\AddOns\Overachiever\Overachiever.toc
+10/9 20:34:28.700  (null)
+10/9 20:34:28.700  Loading add-on PetEmote
+10/9 20:34:28.700  Interface\AddOns\PetEmote\Bindings.xml(1): error: not well-formed (invalid token)
+10/9 20:34:40.621  Loading add-on Overachiever_Trade
+10/9 20:34:40.621  ** Loading table of contents Interface\AddOns\Overachiever_Trade\Overachiever_Trade.toc
+10/9 20:34:40.621  (null)
+10/9 20:34:52.259  Loading add-on Overachiever_Tabs
+10/9 20:34:52.259  ** Loading table of contents Interface\AddOns\Overachiever_Tabs\Overachiever_Tabs.toc
+10/9 20:34:52.259  (null)

@@ -1,8 +1,10 @@
 # HandyNotes_SummerFestival
 
-## [v1.7.1](https://github.com/Ravendwyr/HandyNotes_SummerFestival/tree/v1.7.1) (2021-07-03)
-[Full Changelog](https://github.com/Ravendwyr/HandyNotes_SummerFestival/commits/v1.7.1) [Previous Releases](https://github.com/Ravendwyr/HandyNotes_SummerFestival/releases)
+## [76ef719](https://github.com/Ravendwyr/HandyNotes_SummerFestival/tree/76ef719bad108e5c38fbaace74672fc73144fa67) (2021-07-04)
+[Full Changelog](https://github.com/Ravendwyr/HandyNotes_SummerFestival/commits/76ef719bad108e5c38fbaace74672fc73144fa67) [Previous Releases](https://github.com/Ravendwyr/HandyNotes_SummerFestival/releases)
 
+- Updated the Krasarang bonfire. Again.  
+    Reverts #9 and fixes #11  
 - Bump Interface number to 90100.  
 - Commit VSCode settings file.  
 - Update issue config.  
@@ -59,4 +61,3 @@
 - Don't create waypoints to bonfires you've already visited. Fixes #6.  
 - Updated several bonfire locations. Closes GitHub ticket #4.  
 - Updated calendar texture IDs.  
-- Bump Interface number to 70200.  

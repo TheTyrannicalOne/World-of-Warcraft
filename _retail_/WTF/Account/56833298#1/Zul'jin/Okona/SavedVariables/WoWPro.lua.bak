@@ -1,0 +1,92 @@
+
+WoWProCharDB = {
+	["EnableGrailQuestline"] = false,
+	["EnableGrailQuestLevel"] = false,
+	["AutoHideInsideInstances"] = true,
+	["EnableGrailCheckPrereq"] = false,
+	["QID2Guide"] = {
+		[9407] = "JamHel6063",
+		[47221] = "Ludo_Argus",
+		[28705] = "JamHel6063",
+		[47835] = "Ludo_Argus",
+	},
+	["Trades"] = {
+	},
+	["EnableGrailQuestObsolete"] = false,
+	["completedQIDs"] = {
+	},
+	["Rank"] = {
+	},
+	["EnableGrailQuestName"] = false,
+	["GuideStack"] = {
+	},
+	["Enabled"] = true,
+	["Guide"] = {
+	},
+	["Tradeskills"] = {
+		[182] = {
+			["skillLvl"] = 124,
+			["skillMod"] = 0,
+			["name"] = "Herbalism",
+			["skillMax"] = 300,
+		},
+		[186] = {
+			["skillLvl"] = 23,
+			["skillMod"] = 0,
+			["name"] = "Mining",
+			["skillMax"] = 300,
+		},
+		[356] = {
+			["skillLvl"] = 1,
+			["skillMod"] = 0,
+			["name"] = "Fishing",
+			["skillMax"] = 300,
+		},
+		[2556] = {
+			["skillLvl"] = 124,
+			["skillMod"] = 0,
+			["name"] = "Herbalism",
+			["skillMax"] = 300,
+		},
+		[2592] = {
+			["skillLvl"] = 1,
+			["skillMax"] = 300,
+			["skillMod"] = 0,
+			["name"] = "Fishing",
+		},
+		[2572] = {
+			["skillLvl"] = 23,
+			["skillMod"] = 0,
+			["name"] = "Mining",
+			["skillMax"] = 300,
+		},
+		[185] = {
+			["skillLvl"] = 1,
+			["skillMod"] = 0,
+			["name"] = "Cooking",
+			["skillMax"] = 300,
+		},
+		[794] = {
+			["skillLvl"] = 1,
+			["skillMod"] = 0,
+			["name"] = "Archaeology",
+			["skillMax"] = 225,
+		},
+	},
+	["BuildingLocations"] = {
+	},
+	["Taxi"] = {
+	},
+	["GuideVersion"] = {
+	},
+	["EnableTreasures"] = true,
+	["EnableFlight"] = true,
+	["AutoHideInsideInstancesNotify"] = true,
+	["AutoHideInCombat"] = false,
+	["DebugLevel"] = 0,
+	["EnableGrailBreadcrumbs"] = false,
+	["EnablePetBattles"] = true,
+	["skippedQIDs"] = {
+	},
+	["EnableRares"] = true,
+}

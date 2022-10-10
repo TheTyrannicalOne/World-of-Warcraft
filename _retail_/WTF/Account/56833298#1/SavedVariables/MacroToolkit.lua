@@ -1,11 +1,5 @@
 
 MacroToolkitDB = {
-	["global"] = {
-		["backups"] = {
-		},
-		["ebackups"] = {
-		},
-	},
 	["profileKeys"] = {
 		["Vancard - Zul'jin"] = "profile",
 		["Armaguth - Zul'jin"] = "profile",
@@ -21,34 +15,41 @@ MacroToolkitDB = {
 		["Malivant - Dalaran"] = "profile",
 		["Durlok - Black Dragonflight"] = "profile",
 		["Dachas - Zul'jin"] = "profile",
+		["Jingojaggot - Argent Dawn"] = "profile",
 		["Tyranasticus - Zul'jin"] = "profile",
 		["Tendralas - Dalaran"] = "profile",
 		["Illingrath - Dalaran"] = "profile",
-		["Banesmuncy - Zul'jin"] = "profile",
+		["Brotus - Argent Dawn"] = "profile",
 		["Tyrannithal - Argent Dawn"] = "profile",
 		["Zulbathal - Zul'jin"] = "profile",
 		["Kelvalatar - Dalaran"] = "profile",
-		["Varlouris - Dalaran"] = "profile",
-		["Guufnah - Zul'jin"] = "profile",
 		["Shimzo - Zul'jin"] = "profile",
+		["Okona - Zul'jin"] = "profile",
+		["Varlouris - Dalaran"] = "profile",
 		["Alatra - Zul'jin"] = "profile",
 		["Tinkster - Dalaran"] = "profile",
-		["Jingojaggot - Zul'jin"] = "profile",
+		["Fantastiburo - Zul'jin"] = "profile",
 		["Kotalkhan - Zul'jin"] = "profile",
-		["Shanyt - Argent Dawn"] = "profile",
+		["Datgore - Zul'jin"] = "profile",
 		["Laymonan - Zul'jin"] = "profile",
-		["Tyran - Argent Dawn"] = "profile",
+		["Shanyt - Argent Dawn"] = "profile",
 		["Vadder - Argent Dawn"] = "profile",
 		["Serbitechna - Dalaran"] = "profile",
-		["Datgore - Zul'jin"] = "profile",
+		["Tyran - Argent Dawn"] = "profile",
 		["Darnastris - Dalaran"] = "profile",
 		["Rotclaugh - Dalaran"] = "profile",
-		["Fantastiburo - Zul'jin"] = "profile",
+		["Guufnah - Zul'jin"] = "profile",
 		["Abyronterner - Zul'jin"] = "profile",
-		["Okona - Zul'jin"] = "profile",
+		["Jingojaggot - Zul'jin"] = "profile",
 		["Jasmoney - Zul'jin"] = "profile",
-		["Brotus - Argent Dawn"] = "profile",
+		["Banesmuncy - Zul'jin"] = "profile",
 		["Mandles - Zul'jin"] = "profile",
+	},
+	["global"] = {
+		["ebackups"] = {
+		},
+		["backups"] = {
+		},
 	},
 	["profiles"] = {
 		["profile"] = {

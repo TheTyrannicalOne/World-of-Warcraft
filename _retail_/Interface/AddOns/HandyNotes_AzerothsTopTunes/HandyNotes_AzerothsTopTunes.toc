@@ -1,8 +1,8 @@
-## Interface: 90000
+## Interface: 90005
 ## Title: HandyNotes_AzerothsTopTunes
 ## Notes: Displays the locations of Garrison music scrolls.
 ## Author: Ravendwyr
-## Version: v1.3.1
+## Version: v1.3.1-9-gea344a9
 ## X-Category: Map & Minimap
 ## SavedVariables: HandyNotes_AzerothsTopTunesDB
 ## RequiredDeps: HandyNotes

@@ -1,3 +1,36 @@
+9.2.41 - 5th October 2022
+- Maintenance update.
+
+9.2.40 - 2nd October 2022
+- Dragonflight: Added a temporary fix for the vendoring bug with game version 10.0.2.45779.  This bug is nothing to do with Leatrix Plus but it's difficult to play without being able to vendor anything.  This fix will only run with game version 10.0.2.45779 (since Blizzard will likely fix it anyway in the next update).
+
+9.2.39 - 1st October 2022
+- Dragonflight: Fixed the Lua error with 'Sell junk automatically' ('Automation').
+
+9.2.38 - 29th September 2022
+- Dragonflight: Updated for 10.0.2.45779 (Sep 25 2022) (100002).
+- Dragonflight: Fixed 'Show wowhead links' not showing in the world map frame.
+- Dragonflight: Fixed the Lua error caused by changes to Dragonflight code.
+
+9.2.37 - 28th September 2022
+- Added a new option 'Block shared quests' ('Social').  If enabled, shared quests will be automatically declined unless the player sharing the quest is a friend.
+- Dragonflight: The 'Show player chain' option ('Interface') is now available.
+- Dragonflight: The 'Enhance dressup' zoom speed setting now affects the character frame model as well as the dressing room model.
+
+9.2.36 - 22nd September 2022
+- Dragonflight: Updated for game version 10.0.2.45698 (Sep 20 2022) (100002).
+- Dragonflight: Updated 'Class cololored frames' ('Frames').
+- Dragonflight: Fixed Lua errors due to game code changes.
+
+9.2.35 - 21st September 2022
+- Added a new option 'Restore chat messages' ('Chat').  If enabled, you can reload your UI without losing your recent chat messages.
+- For 'Show ready timer' ('Interface'), Dungeon Finder timer bars from other addons which use the standard status bar frame type (such as BigWigs) will now be hidden so they don't conflict.
+- Dragonflight: For 'Enhance tooltip' ('Interface'), there is no longer an overlay anchor.  Use Edit Mode to position the tooltip.
+- Dragonflight: Leatrix Plus is now listed in the minimap addon menu and the game options panel.
+
+9.2.34 - 14 September 2022
+- Dragonflight: Added a new option 'Set chat font size' ('Chat').  If enabled, you will be able to set the chat font size.  This also applies to the guild and communities chat frame and the GM chat frame.  Enabling this option will prevent you from using the default UI to set the chat font size.  This is a Dragonflight compatible replacement for the 'More font sizes' option from Shadowlands.
+
 9.2.33 - 11th September 2022
 - For 'Enhance tooltip' ('Interface'), if you use the setting to hide tooltips for world units during combat, you can now specify whether holding shift should override that setting or not.  Also updated locale code.
 

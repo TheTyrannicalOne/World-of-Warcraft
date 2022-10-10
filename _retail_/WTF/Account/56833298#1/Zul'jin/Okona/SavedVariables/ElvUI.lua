@@ -2,741 +2,7 @@
 ElvCharacterDB = {
 	["CliqueDatatext"] = {
 	},
-	["ChatEditHistory"] = {
-		"/opie", -- [1]
-		"/invite azaru-blackhand", -- [2]
-		"/omen show", -- [3]
-		"/skada toggle", -- [4]
-		"/p do you want to kill the big one outside", -- [5]
-		"/p thanks for the help later", -- [6]
-	},
 	["ChatHistoryLog"] = {
-		{
-			"9/20 Wildlife killed with Zen'Kiki", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2094, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566102,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [1]
-		{
-			"10/20 Wildlife killed with Zen'Kiki", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2100, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566113,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [2]
-		{
-			"3/4 Diseased Wolf Sample", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2101, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566113,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [3]
-		{
-			"11/20 Wildlife killed with Zen'Kiki", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2111, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566140,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [4]
-		{
-			"4/4 Diseased Wolf Sample", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2115, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566141,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [5]
-		{
-			"12/20 Wildlife killed with Zen'Kiki", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2126, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566158,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [6]
-		{
-			"1/4 Plague Lurker Sample", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2142, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566199,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [7]
-		{
-			"13/20 Wildlife killed with Zen'Kiki", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2144, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566204,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [8]
-		{
-			"1/4 Venom Mist Lurker Sample", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2154, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566211,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [9]
-		{
-			"14/20 Wildlife killed with Zen'Kiki", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2156, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566218,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [10]
-		{
-			"2/4 Venom Mist Lurker Sample", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2163, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566219,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [11]
-		{
-			"15/20 Wildlife killed with Zen'Kiki", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2171, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566234,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [12]
-		{
-			"16/20 Wildlife killed with Zen'Kiki", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2177, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566239,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [13]
-		{
-			"2/4 Plague Lurker Sample", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2181, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566240,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [14]
-		{
-			"3/4 Venom Mist Lurker Sample", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2187, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566247,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [15]
-		{
-			"17/20 Wildlife killed with Zen'Kiki", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2192, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566254,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [16]
-		{
-			"4/4 Venom Mist Lurker Sample", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2199, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566261,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [17]
-		{
-			"18/20 Wildlife killed with Zen'Kiki", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2207, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566273,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [18]
-		{
-			"3/4 Plague Lurker Sample", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2214, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566275,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [19]
-		{
-			"19/20 Wildlife killed with Zen'Kiki", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2216, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566293,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [20]
-		{
-			"4/4 Plague Lurker Sample", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2219, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566294,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [21]
-		{
-			"20/20 Wildlife killed with Zen'Kiki", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2228, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566339,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [22]
-		{
-			"Picked Up: Northridge Lumber Mill", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2249, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566389,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [23]
-		{
-			"Completed: A New Era for the Plaguelands", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2250, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566389,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [24]
-		{
-			"Picked Up: A Different Approach", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2258, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566399,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [25]
-		{
-			"Completed: Zen'Kiki, the Druid", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2259, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566400,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [26]
-		{
-			"1/4 Rotten Apple Removed", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2264, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566417,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [27]
-		{
-			"2/4 Rotten Apple Removed", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2289, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566433,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [28]
-		{
-			"3/4 Rotten Apple Removed", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2294, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566443,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [29]
-		{
-			"4/4 Rotten Apple Removed", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2299, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566457,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [30]
-		{
-			"1/3 Unhealthy-Looking Pumpkin Removed", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2301, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566462,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [31]
-		{
-			"2/3 Unhealthy-Looking Pumpkin Removed", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2314, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566477,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [32]
-		{
-			"3/3 Unhealthy-Looking Pumpkin Removed", -- [1]
-			"Okona-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Okona-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2320, -- [11]
-			"Player-61-0DE12200", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeOkona|r",
-			[51] = 1602566490,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [33]
 		{
 			"1/6 Bad Corn Removed", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -758,7 +24,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602566515,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [34]
+		}, -- [1]
 		{
 			"2/6 Bad Corn Removed", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -780,7 +46,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602566530,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [35]
+		}, -- [2]
 		{
 			"3/6 Bad Corn Removed", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -802,7 +68,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602566549,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [36]
+		}, -- [3]
 		{
 			"4/6 Bad Corn Removed", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -824,7 +90,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602566566,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [37]
+		}, -- [4]
 		{
 			"5/6 Bad Corn Removed", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -846,7 +112,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602566569,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [38]
+		}, -- [5]
 		{
 			"6/6 Bad Corn Removed", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -868,7 +134,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602566587,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [39]
+		}, -- [6]
 		{
 			"Completed: I Ain't Sayin' You a Gourd-Digger...", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -890,7 +156,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602566659,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [40]
+		}, -- [7]
 		{
 			"1/7 Diseased Hawk slain", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -912,7 +178,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602566706,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [41]
+		}, -- [8]
 		{
 			"2/7 Diseased Hawk slain", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -934,7 +200,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602566721,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [42]
+		}, -- [9]
 		{
 			"3/7 Diseased Hawk slain", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -956,7 +222,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602566740,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [43]
+		}, -- [10]
 		{
 			"4/7 Diseased Hawk slain", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -978,7 +244,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602566926,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [44]
+		}, -- [11]
 		{
 			"5/7 Diseased Hawk slain", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1000,7 +266,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602566938,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [45]
+		}, -- [12]
 		{
 			"6/7 Diseased Hawk slain", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1022,7 +288,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602566950,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [46]
+		}, -- [13]
 		{
 			"7/7 Diseased Hawk slain", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1044,7 +310,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602566969,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [47]
+		}, -- [14]
 		{
 			"Completed: A Different Approach", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1066,7 +332,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602566996,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [48]
+		}, -- [15]
 		{
 			"Picked Up: I Believe You Can Fly", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1088,7 +354,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567128,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [49]
+		}, -- [16]
 		{
 			"Picked Up: Adventure Calls", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1110,7 +376,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567128,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [50]
+		}, -- [17]
 		{
 			"Completed: The Battle Resumes!", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1132,7 +398,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567128,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [51]
+		}, -- [18]
 		{
 			"Picked Up: The Farmers' Militia", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1154,7 +420,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567128,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [52]
+		}, -- [19]
 		{
 			"Picked Up: Ashes to Ashes", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1176,7 +442,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567129,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [53]
+		}, -- [20]
 		{
 			"Picked Up: Supporting the Troops", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1198,7 +464,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567132,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [54]
+		}, -- [21]
 		{
 			"1/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1220,7 +486,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567149,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [55]
+		}, -- [22]
 		{
 			"2/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1242,7 +508,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567157,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [56]
+		}, -- [23]
 		{
 			"3/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1264,7 +530,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567169,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [57]
+		}, -- [24]
 		{
 			"1/3 Andorhal Force-Commander slain", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1286,7 +552,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567181,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [58]
+		}, -- [25]
 		{
 			"4/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1308,7 +574,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567194,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [59]
+		}, -- [26]
 		{
 			"5/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1330,7 +596,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567207,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [60]
+		}, -- [27]
 		{
 			"6/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1352,7 +618,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567226,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [61]
+		}, -- [28]
 		{
 			"7/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1374,7 +640,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567236,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [62]
+		}, -- [29]
 		{
 			"8/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1396,7 +662,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567247,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [63]
+		}, -- [30]
 		{
 			"9/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1418,7 +684,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567255,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [64]
+		}, -- [31]
 		{
 			"10/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1440,7 +706,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567269,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [65]
+		}, -- [32]
 		{
 			"2/3 Andorhal Force-Commander slain", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1462,7 +728,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567281,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [66]
+		}, -- [33]
 		{
 			"11/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1484,7 +750,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567294,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [67]
+		}, -- [34]
 		{
 			"3/3 Andorhal Force-Commander slain", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1506,7 +772,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567304,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [68]
+		}, -- [35]
 		{
 			"12/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1528,7 +794,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567321,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [69]
+		}, -- [36]
 		{
 			"13/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1550,7 +816,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567332,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [70]
+		}, -- [37]
 		{
 			"14/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1572,7 +838,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567336,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [71]
+		}, -- [38]
 		{
 			"15/15 Andorhal Defender slain", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1594,7 +860,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567336,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [72]
+		}, -- [39]
 		{
 			"1/6 Ebon Gargoyle released", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1616,7 +882,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567353,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [73]
+		}, -- [40]
 		{
 			"2/6 Ebon Gargoyle released", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1638,7 +904,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567358,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [74]
+		}, -- [41]
 		{
 			"3/6 Ebon Gargoyle released", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1660,7 +926,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567363,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [75]
+		}, -- [42]
 		{
 			"4/6 Ebon Gargoyle released", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1682,7 +948,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567368,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [76]
+		}, -- [43]
 		{
 			"5/6 Ebon Gargoyle released", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1704,7 +970,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567375,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [77]
+		}, -- [44]
 		{
 			"6/6 Ebon Gargoyle released", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1726,7 +992,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567380,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [78]
+		}, -- [45]
 		{
 			"Completed: The Farmers' Militia", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1748,7 +1014,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567407,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [79]
+		}, -- [46]
 		{
 			"Completed: Ashes to Ashes", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1770,7 +1036,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567407,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [80]
+		}, -- [47]
 		{
 			"Completed: Supporting the Troops", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1792,7 +1058,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567418,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [81]
+		}, -- [48]
 		{
 			"Picked Up: Lindsay Ravensun, Revealed", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1814,7 +1080,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567460,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [82]
+		}, -- [49]
 		{
 			"Completed: Lindsay Ravensun, Revealed", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1836,7 +1102,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567476,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [83]
+		}, -- [50]
 		{
 			"Picked Up: Ace in the Hole", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1858,7 +1124,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567477,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [84]
+		}, -- [51]
 		{
 			"1/5 Frightened Provincial Minuteman slain and converted", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1880,7 +1146,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567548,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [85]
+		}, -- [52]
 		{
 			"1/5 Forsaken Trooper mobilized", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1902,7 +1168,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567551,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [86]
+		}, -- [53]
 		{
 			"2/5 Frightened Provincial Minuteman slain and converted", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1924,7 +1190,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567554,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [87]
+		}, -- [54]
 		{
 			"2/5 Forsaken Trooper mobilized", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1946,7 +1212,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567556,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [88]
+		}, -- [55]
 		{
 			"3/5 Frightened Provincial Minuteman slain and converted", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1968,7 +1234,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567562,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [89]
+		}, -- [56]
 		{
 			"3/5 Forsaken Trooper mobilized", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -1990,7 +1256,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567565,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [90]
+		}, -- [57]
 		{
 			"4/5 Frightened Provincial Minuteman slain and converted", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -2012,7 +1278,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567569,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [91]
+		}, -- [58]
 		{
 			"4/5 Forsaken Trooper mobilized", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -2034,7 +1300,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567572,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [92]
+		}, -- [59]
 		{
 			"5/5 Frightened Provincial Minuteman slain and converted", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -2056,7 +1322,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567576,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [93]
+		}, -- [60]
 		{
 			"5/5 Forsaken Trooper mobilized", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -2078,7 +1344,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567578,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [94]
+		}, -- [61]
 		{
 			"1/1 Hunt Thassarian", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -2100,7 +1366,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567877,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [95]
+		}, -- [62]
 		{
 			"Picked Up: Andorhal, Once and For All", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -2122,7 +1388,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567880,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [96]
+		}, -- [63]
 		{
 			"Completed: Ace in the Hole", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -2144,7 +1410,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567881,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [97]
+		}, -- [64]
 		{
 			"Completed: Andorhal, Once and For All", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -2166,7 +1432,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567937,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [98]
+		}, -- [65]
 		{
 			"Picked Up: The Reckoning", -- [1]
 			"Okona-Zul'jin", -- [2]
@@ -2188,6 +1454,742 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOkona|r",
 			[51] = 1602567937,
 			[50] = "CHAT_MSG_PARTY_LEADER",
+		}, -- [66]
+		{
+			"!!(WTS M+10-24 Timed)!! / Deals on 2+ Runs / Armor Stack / Specific Key / Get your weekly 304 / Gold Only  > Pst", -- [1]
+			"Jesstella-Zul'jin", -- [2]
+			"", -- [3]
+			"5. Trade (Services) - City", -- [4]
+			"Jesstella-Zul'jin", -- [5]
+			"", -- [6]
+			42, -- [7]
+			5, -- [8]
+			"Trade (Services) - City", -- [9]
+			0, -- [10]
+			5, -- [11]
+			"Player-61-0E4BBEA7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Jesstella|r",
+			[51] = 1665186555,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [67]
+		{
+			"[Homicidal Rage]: looking for players for current and future content. Come fight alongside our Guild Master and veteran raid leaders. We're aiming for DF AotC and enjoy all PvE content. Looking for a guild to invest your time into? Pst for more info.", -- [1]
+			"Rhed-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Rhed-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			10, -- [11]
+			"Player-61-0ECBC36A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Rhed|r",
+			[51] = 1665186566,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [68]
+		{
+			"i buy stick purple", -- [1]
+			"Magiya-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Magiya-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			163, -- [11]
+			"Player-61-0C5A9661", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaMagiya|r",
+			[51] = 1665186690,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [69]
+		{
+			"I sell pink circle", -- [1]
+			"Tallac-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Tallac-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			167, -- [11]
+			"Player-61-0DEA2019", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Tallac|r",
+			[51] = 1665186758,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [70]
+		{
+			"Team ready  to go WTS M  +15   + 20 + 24 timed  - Trade all loot >  SPECIAL  DEALS IF BUY 2 OR MORE , the best price you can get, just DM me /ONLY GOLD ", -- [1]
+			"Roanlee-Zul'jin", -- [2]
+			"", -- [3]
+			"5. Trade (Services) - City", -- [4]
+			"Roanlee-Zul'jin", -- [5]
+			"AFK", -- [6]
+			42, -- [7]
+			5, -- [8]
+			"Trade (Services) - City", -- [9]
+			0, -- [10]
+			244, -- [11]
+			"Player-61-0EB74C11", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Roanlee|r",
+			[51] = 1665186815,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [71]
+		{
+			"someone have stick for sell ?", -- [1]
+			"Magiya-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Magiya-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			298, -- [11]
+			"Player-61-0C5A9661", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaMagiya|r",
+			[51] = 1665186787,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [72]
+		{
+			"???", -- [1]
+			"Likailzan-Zul'jin", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Likailzan-Zul'jin", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			1, -- [10]
+			314, -- [11]
+			"Player-61-0ECA4DB5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Likailzan|r",
+			[51] = 1665186791,
+			[50] = "CHAT_MSG_YELL",
+		}, -- [73]
+		{
+			"<Local Guild Offering> Full HEROIC FATED RUN|cff66bbff|Hjournal:0:1190:15|h[Castle Nathria]|h|r/ <Gold Only>  Start 9.00pm EST time./w me for more info ", -- [1]
+			"Quomplak-Zul'jin", -- [2]
+			"", -- [3]
+			"5. Trade (Services) - City", -- [4]
+			"Quomplak-Zul'jin", -- [5]
+			"", -- [6]
+			42, -- [7]
+			5, -- [8]
+			"Trade (Services) - City", -- [9]
+			0, -- [10]
+			439, -- [11]
+			"Player-61-0EC07807", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Quomplak|r",
+			[51] = 1665186840,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [74]
+		{
+			"!!(WTS M+10-24 Timed)!! / Deals on 2+ Runs / Armor Stack / Specific Key / Get your weekly 304 / Gold Only  > Pst", -- [1]
+			"Jesstella-Zul'jin", -- [2]
+			"", -- [3]
+			"5. Trade (Services) - City", -- [4]
+			"Jesstella-Zul'jin", -- [5]
+			"", -- [6]
+			42, -- [7]
+			5, -- [8]
+			"Trade (Services) - City", -- [9]
+			0, -- [10]
+			485, -- [11]
+			"Player-61-0E4BBEA7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Jesstella|r",
+			[51] = 1665186856,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [75]
+		{
+			"2.6-2.8k io team offering < keys 15 to 23 - / KSM deals > - Gold Only. Pst for more info :)", -- [1]
+			"Leenda-Zul'jin", -- [2]
+			"", -- [3]
+			"5. Trade (Services) - City", -- [4]
+			"Leenda-Zul'jin", -- [5]
+			"", -- [6]
+			42, -- [7]
+			5, -- [8]
+			"Trade (Services) - City", -- [9]
+			0, -- [10]
+			529, -- [11]
+			"Player-61-0EBF4D03", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Leenda|r",
+			[51] = 1665186949,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [76]
+		{
+			"WTS M+10-22 team ready M +15 TIMED KSM//M+20 TIMED ( armor stack free)  (2 keys o more discount)  ( I accept gold in any realm ) timed or no pay wisp more info", -- [1]
+			"Rambillø-Zul'jin", -- [2]
+			"", -- [3]
+			"5. Trade (Services) - City", -- [4]
+			"Rambillø-Zul'jin", -- [5]
+			"", -- [6]
+			42, -- [7]
+			5, -- [8]
+			"Trade (Services) - City", -- [9]
+			0, -- [10]
+			607, -- [11]
+			"Player-61-0EB0158D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Rambillø|r",
+			[51] = 1665187010,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [77]
+		{
+			"i buy your better weapon for mage ", -- [1]
+			"Magiya-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Magiya-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			820, -- [11]
+			"Player-61-0C5A9661", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaMagiya|r",
+			[51] = 1665187132,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [78]
+		{
+			"!!(WTS M+10-24 Timed)!! / Deals on 2+ Runs / Armor Stack / Specific Key / Get your weekly 304 / Gold Only  > Pst", -- [1]
+			"Jesstella-Zul'jin", -- [2]
+			"", -- [3]
+			"5. Trade (Services) - City", -- [4]
+			"Jesstella-Zul'jin", -- [5]
+			"", -- [6]
+			42, -- [7]
+			5, -- [8]
+			"Trade (Services) - City", -- [9]
+			0, -- [10]
+			961, -- [11]
+			"Player-61-0E4BBEA7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Jesstella|r",
+			[51] = 1665187157,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [79]
+		{
+			"WTS |cffa335ee|Hitem:23629::::::::1:1446::1:::::::|h[Plans: Felsteel Longblade]|h|r 350k |cff0070dd|Hbattlepet:242:1:3:149:12:12:0000000000000000:30409|h[Spectral Tiger Cub]|h|r 640k", -- [1]
+			"Gyozomikoron-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Gyozomikoron-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			980, -- [11]
+			"Player-61-0E9526C2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cGyozomikoron|r",
+			[51] = 1665187169,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [80]
+		{
+			"2.6-2.8k io team offering < keys 15 to 23 - / KSM deals > - Gold Only. Pst for more info :)", -- [1]
+			"Leenda-Zul'jin", -- [2]
+			"", -- [3]
+			"5. Trade (Services) - City", -- [4]
+			"Leenda-Zul'jin", -- [5]
+			"", -- [6]
+			42, -- [7]
+			5, -- [8]
+			"Trade (Services) - City", -- [9]
+			0, -- [10]
+			998, -- [11]
+			"Player-61-0EBF4D03", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Leenda|r",
+			[51] = 1665187247,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [81]
+		{
+			"<Local Guild Offering> Full HEROIC FATED RUN|cff66bbff|Hjournal:0:1190:15|h[Castle Nathria]|h|r/ <Gold Only>  Start 9.00pm EST time./w me for more info ", -- [1]
+			"Quomplak-Zul'jin", -- [2]
+			"", -- [3]
+			"5. Trade (Services) - City", -- [4]
+			"Quomplak-Zul'jin", -- [5]
+			"", -- [6]
+			42, -- [7]
+			5, -- [8]
+			"Trade (Services) - City", -- [9]
+			0, -- [10]
+			1014, -- [11]
+			"Player-61-0EC07807", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Quomplak|r",
+			[51] = 1665187293,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [82]
+		{
+			"WTS M+10-22 team ready M +15 TIMED KSM//M+20 TIMED ( armor stack free)  (2 keys o more discount)  ( I accept gold in any realm ) timed or no pay wisp more info", -- [1]
+			"Rambillø-Zul'jin", -- [2]
+			"", -- [3]
+			"5. Trade (Services) - City", -- [4]
+			"Rambillø-Zul'jin", -- [5]
+			"", -- [6]
+			42, -- [7]
+			5, -- [8]
+			"Trade (Services) - City", -- [9]
+			0, -- [10]
+			1052, -- [11]
+			"Player-61-0EB0158D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Rambillø|r",
+			[51] = 1665187384,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [83]
+		{
+			"WTS |cff0070dd|Hitem:128319::::::::25:72::31::1:28:176:::::|h[Void-Shrouded Satchel]|h|r ", -- [1]
+			"Omniwu-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Omniwu-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1083, -- [11]
+			"Player-61-0C6A91E8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cOmniwu|r",
+			[51] = 1665187714,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [84]
+		{
+			"WTS |cffa335ee|Hitem:153594::::::::5:1446::13::1:28:872:::::|h[Xiwyllag ATV]|h|r FLYING MOUNT 20K AT AH!", -- [1]
+			"Virginisland-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Virginisland-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1103, -- [11]
+			"Player-61-0EBC92FA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cVirginisland|r",
+			[51] = 1665187730,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [85]
+		{
+			"!>WTS M +15 100k!!</+20 180k / Wts +21+26!! Timed <KSM DEALS><>\"Special Deals\"<Loot Funnels  And Key Specific>><Get Your Portal +20!!<<Only Gold>", -- [1]
+			"Korito-Zul'jin", -- [2]
+			"", -- [3]
+			"5. Trade (Services) - City", -- [4]
+			"Korito-Zul'jin", -- [5]
+			"", -- [6]
+			42, -- [7]
+			5, -- [8]
+			"Trade (Services) - City", -- [9]
+			0, -- [10]
+			1105, -- [11]
+			"Player-61-0ECE2259", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcKorito|r",
+			[51] = 1665187682,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [86]
+		{
+			"WTS |cffa335ee|Hitem:54068::::::::25:72::15:::::::|h[Wooly White Rhino]|h|r", -- [1]
+			"Omniwu-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Omniwu-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1124, -- [11]
+			"Player-61-0C6A91E8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cOmniwu|r",
+			[51] = 1665187752,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [87]
+		{
+			"WTS |cffa335ee|Hitem:67151::::::::25:72:::::::::|h[Reins of Poseidus]|h|r", -- [1]
+			"Omniwu-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Omniwu-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1131, -- [11]
+			"Player-61-0C6A91E8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cOmniwu|r",
+			[51] = 1665187756,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [88]
+		{
+			"i uh.... i will", -- [1]
+			"Deadshi-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Deadshi-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1152, -- [11]
+			"Player-61-0EC5320C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe97Deadshi|r",
+			[51] = 1665187927,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [89]
+		{
+			"pay me 1k and ill let a maldraxxis guard lady sit on my face", -- [1]
+			"Kottbulle-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Kottbulle-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1159, -- [11]
+			"Player-61-0EC7BBCC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cKottbulle|r",
+			[51] = 1665188014,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [90]
+		{
+			"20 bucks is 20 bucks", -- [1]
+			"Deadshi-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Deadshi-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1160, -- [11]
+			"Player-61-0EC5320C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe97Deadshi|r",
+			[51] = 1665188014,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [91]
+		{
+			"Mans gotta eat", -- [1]
+			"Kusanâgi-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Kusanâgi-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1161, -- [11]
+			"Player-61-0EA58CEB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cKusanâgi|r",
+			[51] = 1665188030,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [92]
+		{
+			"WTS M+15 M+18 M+20 M+22 M+24-25 TIMED/KSM/specific key/ Cheap / Secure your 304 in the vault/ONLY GOLD!  WTS CARRY PVP 2V2 0-1400/ 0-1600 ", -- [1]
+			"Bianchii-Zul'jin", -- [2]
+			"", -- [3]
+			"5. Trade (Services) - City", -- [4]
+			"Bianchii-Zul'jin", -- [5]
+			"", -- [6]
+			42, -- [7]
+			5, -- [8]
+			"Trade (Services) - City", -- [9]
+			0, -- [10]
+			1162, -- [11]
+			"Player-61-0EBF9836", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe97Bianchii|r",
+			[51] = 1665188032,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [93]
+		{
+			"WTS |cffa335ee|Hitem:54068::::::::25:72::15:::::::|h[Wooly White Rhino]|h|r", -- [1]
+			"Omniwu-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Omniwu-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1163, -- [11]
+			"Player-61-0C6A91E8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cOmniwu|r",
+			[51] = 1665187980,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [94]
+		{
+			"WTS |cff0070dd|Hbattlepet:333:1:3:155:11:12:0000000000000000:38919|h[Gregarious Grell]|h|r ", -- [1]
+			"Omniwu-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Omniwu-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1164, -- [11]
+			"Player-61-0C6A91E8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cOmniwu|r",
+			[51] = 1665187989,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [95]
+		{
+			">>WTS New Price<< M+ 15=100K || M+20 || M+25 Timed || Buy 2 and Get Free ARMOR STACK ||  Special Deal in Bundle 4 Runs (400K) || Deal KSM Mount || Get ur weekly chest || Only Gold!!! Good Service!!!!", -- [1]
+			"Archërkurä-Zul'jin", -- [2]
+			"", -- [3]
+			"5. Trade (Services) - City", -- [4]
+			"Archërkurä-Zul'jin", -- [5]
+			"", -- [6]
+			42, -- [7]
+			5, -- [8]
+			"Trade (Services) - City", -- [9]
+			0, -- [10]
+			8, -- [11]
+			"Player-61-0EBF54EE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Archërkurä|r",
+			[51] = 1665328115,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			"offering Castle Nathria Fated 10/10 Heroic for gold join me and take ur Items+Achive  whisper me for more ", -- [1]
+			"Pazermonk-Zul'jin", -- [2]
+			"", -- [3]
+			"5. Trade (Services) - City", -- [4]
+			"Pazermonk-Zul'jin", -- [5]
+			"", -- [6]
+			42, -- [7]
+			5, -- [8]
+			"Trade (Services) - City", -- [9]
+			0, -- [10]
+			96, -- [11]
+			"Player-61-0CA790FE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe97Pazermonk|r",
+			[51] = 1665328769,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"WTS |cffa335ee|Hitem:182982::::::::60:577::92:7:8759:41:7578:8132:8138:1576:6646:1:28:2422:::::|h[Brazales de arbalestero atento]|h|r 3 STACK", -- [1]
+			"Dárkghost-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Dárkghost-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			104, -- [11]
+			"Player-61-0EB35177", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Dárkghost|r",
+			[51] = 1665328780,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			">>WTS New Price<< M+ 15=100K || M+20 || M+25 Timed || Buy 2 and Get Free ARMOR STACK ||  Special Deal in Bundle 4 Runs (400K) || Deal KSM Mount || Get ur weekly chest || Only Gold!!! Good Service!!!!", -- [1]
+			"Archërkurä-Zul'jin", -- [2]
+			"", -- [3]
+			"5. Trade (Services) - City", -- [4]
+			"Archërkurä-Zul'jin", -- [5]
+			"", -- [6]
+			42, -- [7]
+			5, -- [8]
+			"Trade (Services) - City", -- [9]
+			0, -- [10]
+			258, -- [11]
+			"Player-61-0EBF54EE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Archërkurä|r",
+			[51] = 1665329636,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},
+	["ChatEditHistory"] = {
+		"/opie", -- [1]
+		"/invite azaru-blackhand", -- [2]
+		"/omen show", -- [3]
+		"/skada toggle", -- [4]
+		"/p do you want to kill the big one outside", -- [5]
+		"/p thanks for the help later", -- [6]
+		"/invite kadrus-blackhand", -- [7]
+	},
+	["ConvertKeybindings"] = true,
 }

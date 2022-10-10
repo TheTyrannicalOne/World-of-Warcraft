@@ -11,7 +11,7 @@ function PriceSourceHelper.Initialize()
 end
 
 function PriceSourceHelper.GetCurrentPriceSource()
-    return core.Config.GetDataSource() == 2 and core.TUJHelper or core.TSMHelper
+    return core.TSMHelper --core.Config.GetDataSource() == 2 and core.TUJHelper or core.TSMHelper
 end
 
 function PriceSourceHelper.IsValidCustomPrice(customPrice)

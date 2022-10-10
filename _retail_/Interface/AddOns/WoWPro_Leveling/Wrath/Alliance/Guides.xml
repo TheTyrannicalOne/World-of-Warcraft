@@ -5,7 +5,6 @@
   <Script file="BC_WOTLK_Shadowmoon.lua"/>
   <Script file="BC_WOTLK_Terokkar.lua"/>
   <Script file="BC_WOTLK_Zangarmarsh.lua"/>
-  <Script file="INTRO_DK.lua"/>
   <Script file="INTRO_Draenai.lua"/>
   <Script file="INTRO_DwarfGnome.lua"/>
   <Script file="INTRO_Human.lua"/>
@@ -31,4 +30,6 @@
   <Script file="49_50_Dungeon_Zul_Farrak.lua"/>
   <Script file="50_51_Dungeon_Maraudon.lua"/>
   <Script file="53_60_Dungeon_Blackrock_Depths.lua"/>
+  <Script file="59_62_Dungeon_Hellfire_Ramparts.lua"/>
+  <Script file="70_72_Dungeon_Utgarde_Keep.lua"/>
  </Ui>

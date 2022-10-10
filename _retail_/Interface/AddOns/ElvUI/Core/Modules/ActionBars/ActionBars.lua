@@ -111,7 +111,7 @@ AB.barDefaults = {
 }
 
 do
-	local fullConditions = (E.Retail or E.Wrath) and format('[overridebar] %d; [vehicleui] %d; [possessbar] %d;', GetOverrideBarIndex(), GetVehicleBarIndex(), GetVehicleBarIndex()) or ''
+	local fullConditions = (E.Retail or E.Wrath) and format('[overridebar] %d; [vehicleui][possessbar] %d;', GetOverrideBarIndex(), GetVehicleBarIndex()) or ''
 	AB.barDefaults.bar1.conditions = fullConditions..'[bonusbar:5] 11; [shapeshift] 13; [bar:2] 2; [bar:3] 3; [bar:4] 4; [bar:5] 5; [bar:6] 6;'
 end
 
@@ -272,7 +272,6 @@ function AB:PositionAndSizeBar(barName)
 	local buttonsPerRow = db.buttonsPerRow
 	local numButtons = db.buttons
 	local point = db.point
-	local visibility = db.visibility
 
 	bar.db = db
 	bar.mouseover = db.mouseover
@@ -330,15 +329,16 @@ function AB:PositionAndSizeBar(barName)
 	bar:SetAttribute('page', page)
 
 	if db.enabled then
-		visibility = gsub(visibility, '[\n\r]', '')
-
 		E:EnableMover(bar.mover:GetName())
-		RegisterStateDriver(bar, 'visibility', visibility)
 		bar:Show()
+
+		local visibility = gsub(db.visibility, '[\n\r]', '')
+		RegisterStateDriver(bar, 'visibility', visibility)
 	else
 		E:DisableMover(bar.mover:GetName())
-		UnregisterStateDriver(bar, 'visibility')
 		bar:Hide()
+
+		UnregisterStateDriver(bar, 'visibility')
 	end
 
 	E:SetMoverSnapOffset('ElvAB_'..bar.id, db.buttonSpacing * 0.5)
@@ -629,18 +629,12 @@ function AB:UpdateButtonSettings(specific)
 end
 
 function AB:GetPage(bar, defaultPage, condition)
-	local page = AB.db[bar].paging[E.myclass]
 	if not condition then condition = '' end
 
-	if page then
-		page = gsub(page, '[\n\r]', '')
+	local page = AB.db[bar].paging[E.myclass]
+	if page then condition = condition..' '..gsub(page, '[\n\r]', '') end
 
-		condition = condition..' '..page
-	end
-
-	condition = condition..' '..defaultPage
-
-	return condition
+	return condition..' '..defaultPage
 end
 
 function AB:StyleButton(button, noBackdrop, useMasque, ignoreNormal)
@@ -1404,7 +1398,8 @@ function AB:SetAuraCooldownDuration(value)
 end
 
 function AB:SetAuraCooldowns(enabled)
-	LAB:SetAuraCooldowns(enabled)
+	local enable, reverse = E.db.cooldown.enable, E.db.actionbar.cooldown.reverse
+	LAB:SetAuraCooldowns(enabled and (enable and not reverse) or (not enable and reverse))
 end
 
 function AB:ToggleCooldownOptions()
@@ -1495,7 +1490,7 @@ end
 function AB:PLAYER_ENTERING_WORLD(event, initLogin, isReload)
 	AB:AdjustMaxStanceButtons(event)
 
-	if (initLogin or isReload) and (E.Wrath and E.myclass == 'SHAMAN') and E.private.general.totemBar then
+	if (initLogin or isReload) and (E.Wrath and E.myclass == 'SHAMAN') and AB.db.totemBar.enable then
 		AB:SecureHook('ShowMultiCastActionBar', 'PositionAndSizeTotemBar')
 		AB:PositionAndSizeTotemBar()
 	end
@@ -1572,7 +1567,6 @@ function AB:Initialize()
 	AB:RegisterEvent('UPDATE_BINDINGS', 'ReassignBindings')
 	AB:RegisterEvent('SPELL_UPDATE_COOLDOWN', 'UpdateSpellBookTooltip')
 
-	AB:SetAuraCooldowns(E.db.cooldown.targetAura)
 	AB:SetAuraCooldownDuration(E.db.cooldown.targetAuraDuration)
 
 	if E.Retail then
@@ -1582,7 +1576,7 @@ function AB:Initialize()
 		AB:RegisterEvent('PET_BATTLE_OPENING_DONE', 'RemoveBindings')
 	end
 
-	if (E.Wrath and E.myclass == 'SHAMAN') and E.private.general.totemBar then
+	if (E.Wrath and E.myclass == 'SHAMAN') and AB.db.totemBar.enable then
 		AB:CreateTotemBar()
 	end
 
