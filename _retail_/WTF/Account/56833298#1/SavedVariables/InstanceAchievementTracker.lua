@@ -2,19 +2,19 @@
 AchievementTrackerOptions = {
 	["toggleSoundFailed"] = false,
 	["showMinimap"] = true,
-	["toggleSound"] = false,
+	["onlyTrackMissingAchievements"] = false,
 	["displayInfoFrame"] = true,
 	["enableAutomaticCombatLogging"] = false,
 	["greyOutCompletedAchievements"] = false,
 	["announceTrackedAchievements"] = false,
 	["announceToRaidWarning"] = true,
 	["trackAchievementsAutomatically"] = false,
-	["trackCharacterAchievements"] = false,
+	["hideCompletedAchievements"] = false,
 	["changeMinimapIcon"] = false,
 	["enableAddon"] = true,
-	["hideCompletedAchievements"] = false,
+	["trackCharacterAchievements"] = false,
 	["trackAchievementsInBlizzardUI"] = false,
-	["onlyTrackMissingAchievements"] = false,
+	["toggleSound"] = false,
 }
 AchievementTrackerDebug = {
 	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [1]
@@ -5025,6 +5025,157 @@ AchievementTrackerDebug = {
 	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [5006]
 	"9/10/2022 20:34 [DEBUG] Showing Minimap Icon", -- [5007]
 	"9/10/2022 20:35 [DEBUG] NPC cache generated", -- [5008]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [5009]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.47.0", -- [5010]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [5011]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [5012]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [5013]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [5014]
+	"9/10/2022 22:52 [DEBUG] Showing Minimap Icon", -- [5015]
+	"9/10/2022 22:53 [DEBUG] NPC cache generated", -- [5016]
+	"9/10/2022 23:4 [DEBUG] ---IAT Runtime---", -- [5017]
+	"9/10/2022 23:4 [DEBUG] Version: 3.47.0", -- [5018]
+	"9/10/2022 23:4 [DEBUG] Attempting to load from local NPC Cache", -- [5019]
+	"9/10/2022 23:4 [DEBUG] Generating NPC Cache...", -- [5020]
+	"9/10/2022 23:4 [DEBUG] Enabling Addon", -- [5021]
+	"9/10/2022 23:4 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [5022]
+	"9/10/2022 23:5 [DEBUG] Showing Minimap Icon", -- [5023]
+	"9/10/2022 23:5 [DEBUG] NPC cache generated", -- [5024]
+	"9/10/2022 23:6 [DEBUG] ---IAT Runtime---", -- [5025]
+	"9/10/2022 23:6 [DEBUG] Version: 3.47.0", -- [5026]
+	"9/10/2022 23:6 [DEBUG] Attempting to load from local NPC Cache", -- [5027]
+	"9/10/2022 23:6 [DEBUG] Generating NPC Cache...", -- [5028]
+	"9/10/2022 23:6 [DEBUG] Enabling Addon", -- [5029]
+	"9/10/2022 23:6 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [5030]
+	"9/10/2022 23:9 [DEBUG] Showing Minimap Icon", -- [5031]
+	"9/10/2022 23:9 [DEBUG] NPC cache generated", -- [5032]
+	"9/10/2022 23:25 [DEBUG] ---IAT Runtime---", -- [5033]
+	"9/10/2022 23:25 [DEBUG] Version: 3.47.0", -- [5034]
+	"9/10/2022 23:25 [DEBUG] Attempting to load from local NPC Cache", -- [5035]
+	"9/10/2022 23:25 [DEBUG] Generating NPC Cache...", -- [5036]
+	"9/10/2022 23:25 [DEBUG] Enabling Addon", -- [5037]
+	"9/10/2022 23:25 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [5038]
+	"9/10/2022 23:24 [DEBUG] Showing Minimap Icon", -- [5039]
+	"9/10/2022 23:24 [DEBUG] NPC cache generated", -- [5040]
+	"9/10/2022 23:28 [DEBUG] ---IAT Runtime---", -- [5041]
+	"9/10/2022 23:28 [DEBUG] Version: 3.47.0", -- [5042]
+	"9/10/2022 23:28 [DEBUG] Attempting to load from local NPC Cache", -- [5043]
+	"9/10/2022 23:28 [DEBUG] Generating NPC Cache...", -- [5044]
+	"9/10/2022 23:28 [DEBUG] Enabling Addon", -- [5045]
+	"9/10/2022 23:28 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [5046]
+	"9/10/2022 23:30 [DEBUG] Showing Minimap Icon", -- [5047]
+	"9/10/2022 23:30 [DEBUG] NPC cache generated", -- [5048]
+	"10/10/2022 0:23 [DEBUG] ---IAT Runtime---", -- [5049]
+	"10/10/2022 0:23 [DEBUG] Version: 3.47.0", -- [5050]
+	"10/10/2022 0:23 [DEBUG] Attempting to load from local NPC Cache", -- [5051]
+	"10/10/2022 0:23 [DEBUG] Generating NPC Cache...", -- [5052]
+	"10/10/2022 0:23 [DEBUG] Enabling Addon", -- [5053]
+	"10/10/2022 0:23 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [5054]
+	"10/10/2022 0:25 [DEBUG] Showing Minimap Icon", -- [5055]
+	"10/10/2022 0:26 [DEBUG] NPC cache generated", -- [5056]
+	"10/10/2022 0:27 [DEBUG] ---IAT Runtime---", -- [5057]
+	"10/10/2022 0:27 [DEBUG] Version: 3.47.0", -- [5058]
+	"10/10/2022 0:27 [DEBUG] Attempting to load from local NPC Cache", -- [5059]
+	"10/10/2022 0:27 [DEBUG] Generating NPC Cache...", -- [5060]
+	"10/10/2022 0:27 [DEBUG] Enabling Addon", -- [5061]
+	"10/10/2022 0:27 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [5062]
+	"10/10/2022 0:29 [DEBUG] Showing Minimap Icon", -- [5063]
+	"10/10/2022 0:29 [DEBUG] NPC cache generated", -- [5064]
+	"10/10/2022 0:30 [DEBUG] ---IAT Runtime---", -- [5065]
+	"10/10/2022 0:30 [DEBUG] Version: 3.47.0", -- [5066]
+	"10/10/2022 0:30 [DEBUG] Attempting to load from local NPC Cache", -- [5067]
+	"10/10/2022 0:30 [DEBUG] Generating NPC Cache...", -- [5068]
+	"10/10/2022 0:30 [DEBUG] Enabling Addon", -- [5069]
+	"10/10/2022 0:30 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [5070]
+	"10/10/2022 0:30 [DEBUG] Showing Minimap Icon", -- [5071]
+	"10/10/2022 0:31 [DEBUG] NPC cache generated", -- [5072]
+	"10/10/2022 0:31 [DEBUG] ---IAT Runtime---", -- [5073]
+	"10/10/2022 0:31 [DEBUG] Version: 3.47.0", -- [5074]
+	"10/10/2022 0:31 [DEBUG] Attempting to load from local NPC Cache", -- [5075]
+	"10/10/2022 0:31 [DEBUG] Generating NPC Cache...", -- [5076]
+	"10/10/2022 0:31 [DEBUG] Enabling Addon", -- [5077]
+	"10/10/2022 0:31 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [5078]
+	"10/10/2022 0:34 [DEBUG] Showing Minimap Icon", -- [5079]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [5080]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.47.0", -- [5081]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [5082]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [5083]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [5084]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [5085]
+	"10/10/2022 19:28 [DEBUG] Showing Minimap Icon", -- [5086]
+	"10/10/2022 19:29 [DEBUG] NPC cache generated", -- [5087]
+	"10/10/2022 19:35 [DEBUG] ---IAT Runtime---", -- [5088]
+	"10/10/2022 19:35 [DEBUG] Version: 3.47.0", -- [5089]
+	"10/10/2022 19:35 [DEBUG] Attempting to load from local NPC Cache", -- [5090]
+	"10/10/2022 19:35 [DEBUG] Generating NPC Cache...", -- [5091]
+	"10/10/2022 19:35 [DEBUG] Enabling Addon", -- [5092]
+	"10/10/2022 19:35 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [5093]
+	"10/10/2022 19:39 [DEBUG] Showing Minimap Icon", -- [5094]
+	"10/10/2022 19:40 [DEBUG] NPC cache generated", -- [5095]
+	"10/10/2022 19:41 [DEBUG] ---IAT Runtime---", -- [5096]
+	"10/10/2022 19:41 [DEBUG] Version: 3.47.0", -- [5097]
+	"10/10/2022 19:41 [DEBUG] Attempting to load from local NPC Cache", -- [5098]
+	"10/10/2022 19:41 [DEBUG] Generating NPC Cache...", -- [5099]
+	"10/10/2022 19:41 [DEBUG] Enabling Addon", -- [5100]
+	"10/10/2022 19:41 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [5101]
+	"10/10/2022 19:40 [DEBUG] Showing Minimap Icon", -- [5102]
+	"10/10/2022 19:40 [DEBUG] NPC cache generated", -- [5103]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [5104]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.47.0", -- [5105]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [5106]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [5107]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [5108]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [5109]
+	"10/10/2022 22:4 [DEBUG] Showing Minimap Icon", -- [5110]
+	"10/10/2022 22:4 [DEBUG] NPC cache generated", -- [5111]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [5112]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.47.0", -- [5113]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [5114]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [5115]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [5116]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [5117]
+	"11/10/2022 7:54 [DEBUG] Showing Minimap Icon", -- [5118]
+	"11/10/2022 7:54 [DEBUG] NPC cache generated", -- [5119]
+	"11/10/2022 7:58 [DEBUG] ---IAT Runtime---", -- [5120]
+	"11/10/2022 7:58 [DEBUG] Version: 3.47.0", -- [5121]
+	"11/10/2022 7:58 [DEBUG] Attempting to load from local NPC Cache", -- [5122]
+	"11/10/2022 7:58 [DEBUG] Generating NPC Cache...", -- [5123]
+	"11/10/2022 7:58 [DEBUG] Enabling Addon", -- [5124]
+	"11/10/2022 7:58 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [5125]
+	"11/10/2022 8:0 [DEBUG] Showing Minimap Icon", -- [5126]
+	"11/10/2022 8:2 [DEBUG] NPC cache generated", -- [5127]
+	"11/10/2022 8:47 [DEBUG] ---IAT Runtime---", -- [5128]
+	"11/10/2022 8:47 [DEBUG] Version: 3.47.0", -- [5129]
+	"11/10/2022 8:47 [DEBUG] Attempting to load from local NPC Cache", -- [5130]
+	"11/10/2022 8:47 [DEBUG] Generating NPC Cache...", -- [5131]
+	"11/10/2022 8:47 [DEBUG] Enabling Addon", -- [5132]
+	"11/10/2022 8:47 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [5133]
+	"11/10/2022 8:47 [DEBUG] Showing Minimap Icon", -- [5134]
+	"11/10/2022 8:47 [DEBUG] NPC cache generated", -- [5135]
+	"11/10/2022 8:56 [DEBUG] ---IAT Runtime---", -- [5136]
+	"11/10/2022 8:56 [DEBUG] Version: 3.47.0", -- [5137]
+	"11/10/2022 8:56 [DEBUG] Attempting to load from local NPC Cache", -- [5138]
+	"11/10/2022 8:56 [DEBUG] Generating NPC Cache...", -- [5139]
+	"11/10/2022 8:56 [DEBUG] Enabling Addon", -- [5140]
+	"11/10/2022 8:56 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [5141]
+	"11/10/2022 9:4 [DEBUG] Showing Minimap Icon", -- [5142]
+	"11/10/2022 9:5 [DEBUG] NPC cache generated", -- [5143]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [5144]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.47.0", -- [5145]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [5146]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [5147]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [5148]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [5149]
+	"11/10/2022 10:48 [DEBUG] Showing Minimap Icon", -- [5150]
+	"11/10/2022 10:48 [DEBUG] NPC cache generated", -- [5151]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [5152]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.47.0", -- [5153]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [5154]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [5155]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [5156]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [5157]
+	"11/10/2022 15:0 [DEBUG] Showing Minimap Icon", -- [5158]
+	"11/10/2022 15:0 [DEBUG] NPC cache generated", -- [5159]
 }
 AchievementTrackerNPCCache = {
 	[75829] = "Nhallish",
@@ -5354,9 +5505,9 @@ AchievementTrackerNPCCache = {
 	[154431] = "Khaz'goroth",
 	[68904] = "Suen",
 	[59100] = "Expired Test Subject",
-	[53695] = "Rageface",
-	[178783] = "Moriaz the Red",
-	[131853] = "Huntmaster Grath",
+	[108600] = "Sister of the Moon",
+	[127503] = "Overseer Korgus",
+	[162719] = "Void Ascendant",
 	[95886] = "Ash'Golm",
 	[102088] = "Murkwater Myrmidon",
 	[45993] = "Theralion",
@@ -5364,192 +5515,192 @@ AchievementTrackerNPCCache = {
 	[64471] = "Tenwu of the Red Smoke",
 	[26641] = "Drakkari Gutripper",
 	[74787] = "Slave Watcher Crushto",
-	[149995] = "High Priestess Azil",
+	[145903] = "Darkforged Crusader",
 	[154817] = "King Mechagon",
-	[153202] = "Piston Smasher",
+	[155144] = "Abyssal Commander Sivara",
 	[138705] = "Gourmet Parrot Chow",
 	[77153] = "Iron Star",
-	[111864] = "Sticky",
+	[74570] = "Ruination",
 	[155245] = "Depth Skulker",
-	[155243] = "Scavenging Crab",
+	[107699] = "Spellblade Aluriel",
 	[98696] = "Illysanna Ravencrest",
-	[59080] = "Darkmaster Gandling",
+	[162933] = "Thought Harvester",
 	[43404] = "Maloriak",
-	[51405] = "Angered Earth",
+	[161375] = "Promising Specimen",
 	[52675] = "Beth'tilac",
-	[149043] = "Heavy Barrel",
-	[181579] = "Lihuvim",
+	[144246] = "K.U.-J.0.",
+	[32927] = "Runemaster Molgeim",
 	[166246] = "Buttons",
-	[53501] = "Living Meteor",
-	[155056] = "Robo-Waste",
-	[72889] = "Superheated Crawler Mine",
+	[83775] = "Ogron Laborer",
+	[88938] = "Ragnaros",
+	[147896] = "Zandalari Crusader",
 	[67883] = "Rosey Axlerod",
-	[155760] = "Tank Buster MK2",
+	[53694] = "Riplimb",
 	[104217] = "Talixae Flamewreath",
 	[78736] = "Warlord Zaela",
 	[60913] = "Energy Charge",
 	[61243] = "Gekkan",
 	[95888] = "Cordana Felsong",
 	[33686] = "Lore Keeper of Norgannon",
-	[77814] = "Teron'gor",
+	[158190] = "Medivh",
 	[184823] = "Strange Artifact",
 	[73638] = "Tears of the Vale",
 	[101823] = "Mushroom Merchant",
 	[39984] = "Malignant Trogg",
-	[181546] = "Prototype of Renewal",
-	[41440] = "Aberration",
+	[114895] = "Nightbane",
+	[68905] = "Lu'lin",
 	[91349] = "Mannoroth",
-	[156575] = "Dark Inquisitor Xanesh",
-	[153415] = "Sha of Violence",
+	[58605] = "Scarlet Judicator",
 	[185128] = "Memorial Pylon",
 	[108996] = "Specter of Vengeance",
+	[153415] = "Sha of Violence",
 	[135129] = "Projection of Yogg-Saron",
 	[70250] = "Frozen Head",
-	[56843] = "Lorewalker Stonestep",
+	[160271] = "Forbidden Manifestation",
 	[135513] = "Ancient Tome",
 	[177584] = "Burning Gibbet",
 	[71529] = "Thok the Bloodthirsty",
 	[185439] = "Tainted Progenitor Relic",
 	[185129] = "Memorial Pylon",
-	[155645] = "Walkie Shockie X2",
+	[69820] = "Son of Animus",
 	[90199] = "Gorefiend",
-	[56839] = "Anduin Wrynn",
+	[96223] = "Gamon",
 	[115902] = "Razorjaw Waverunner",
 	[67231] = "Trial of the King",
 	[150081] = "Wise Mari",
 	[39665] = "Rom'ogg Bonecrusher",
 	[185130] = "Memorial Pylon",
-	[171474] = "Finger Food",
+	[102169] = "Black Bile",
 	[70251] = "Venomous Head",
 	[105097] = "Glow Bug",
-	[69181] = "Saurid",
+	[59822] = "Auntie Stormstout",
 	[71466] = "Iron Juggernaut",
-	[165512] = "Cocoon of Lakali",
+	[118924] = "Engine of Souls",
 	[169594] = "Filled Anima Container",
 	[185131] = "Memorial Pylon",
-	[120564] = "Titanic Anomaly",
-	[132609] = "The Hivemind",
-	[178095] = "Eye of the Jailer",
-	[61709] = "Spawn of Anger",
+	[61431] = "Glintrok Scout",
+	[185427] = "Unstable Progenitor Relic",
+	[67966] = "Whirl Turtle",
+	[166644] = "Artificer Xy'mox",
 	[36330] = "Lord Godfrey",
 	[99663] = "Frustrated Soul",
 	[87451] = "Fleshrender Nok'gar",
-	[43468] = "Lady Naz'jar",
-	[94996] = "Fragment of the Crone",
+	[29023] = "Jan'alai",
+	[72490] = "Overseer Mojka",
 	[70252] = "Arcane Head",
 	[144596] = "Chest o' Booty",
-	[62465] = "Captain Ook",
-	[72490] = "Overseer Mojka",
+	[53258] = "Lord Rhyolith",
+	[94996] = "Fragment of the Crone",
 	[61884] = "Xin the Weaponmaster",
 	[185005] = "Anduin's Grief",
-	[71979] = "Kor'kron Warbringer",
-	[53258] = "Lord Rhyolith",
 	[78948] = "Tectus",
-	[99664] = "Restless Soul",
-	[169554] = "Disused Anima Container",
-	[180658] = "Focusing Prism",
+	[61442] = "Kuai the Brute",
+	[56897] = "Raigonn",
 	[49864] = "Twilight Fiend",
-	[91938] = "Haunting Soul",
-	[155595] = "Sacred Gear",
+	[105301] = "Expedient Elemental",
+	[180658] = "Focusing Prism",
+	[99664] = "Restless Soul",
+	[141805] = "Threshanator 3000",
+	[32919] = "Storm Lasher",
 	[61213] = "Krik'thik Conscript",
 	[52442] = "Florawing Hive Queen",
 	[64346] = "Parasitoid Sha",
 	[152910] = "Queen Azshara",
 	[64556] = "Captain Ook",
-	[114462] = "The Curator",
+	[40634] = "Naz'jar Tempest Witch",
 	[135903] = "Manifestation of the Deep",
-	[76283] = "Malefic Defender",
+	[56637] = "Ook-Ook",
 	[68655] = "Mr. Bigglesworth",
 	[32857] = "Stormcaller Brundir",
-	[175474] = "Belligerent Waiter",
-	[111941] = "Hodir",
-	[33113] = "Flame Leviathan",
+	[33768] = "Rubble",
+	[162102] = "Grand Proctor Beryllia",
+	[34035] = "Feral Defender",
 	[50376] = "Angered Earth",
 	[15687] = "Moroes",
 	[73195] = "Kor'kron Jailer",
 	[136160] = "King Dazar",
 	[172093] = "Hearty Haunch",
-	[166266] = "Spare Parts",
+	[33552] = "Yogg-Saron",
 	[68336] = "Garrosh Hellscream",
 	[138718] = "Sharkbait's Empty Dish",
 	[33241] = "Freya",
 	[33202] = "Ancient Water Spirit",
 	[67569] = "Elder Adler",
-	[139737] = "Lord Stormsong",
+	[52422] = "Kaulema the Mover",
 	[77927] = "Son of the Beast",
 	[56930] = "Krik'thik Swarm Bringer",
-	[147430] = "Virmen",
+	[102423] = "Mug of Mead",
 	[138719] = "Serve Sharkbait's Meal",
 	[103758] = "Star Augur Etraeus",
-	[52414] = "Tor-Tun",
-	[104341] = "Torment",
-	[52438] = "Mortaxx",
+	[129440] = "Harlan Sweete",
+	[44530] = "Naz'jar Honor Guard",
+	[164218] = "Lord Chamberlain",
 	[164934] = "Manastorm",
-	[93145] = "Soul of the Crone",
-	[74475] = "Magmolatus",
 	[171456] = "Shattered Devastator",
-	[72436] = "Immerseus",
+	[74475] = "Magmolatus",
+	[126712] = "Training Dummy",
+	[59779] = "Thunderpaw Guardian",
 	[26627] = "Crystal Handler",
 	[23574] = "Akil'zon",
 	[39987] = "Evolved Twilight Zealot",
 	[116802] = "Rodent of Usual Size",
 	[108682] = "Amber Drake",
-	[110758] = "High Inquisitor Whitemane",
+	[162317] = "Gorechop",
 	[164967] = "Doctor Ickus",
 	[165408] = "Halkias",
-	[33134] = "Sara",
-	[67779] = "Mature Saurok Egg",
+	[52440] = "Gub",
+	[76585] = "Ragewing the Untamed",
 	[172992] = "Overgrown Hydra",
 	[94808] = "Hellfire Guardian",
-	[185423] = "Reaving Automa: Neo",
+	[53494] = "Baleroc",
 	[175422] = "Coalesced Anima",
-	[69086] = "Flaming Head",
+	[154741] = "Squirt Bot",
 	[153172] = "Stolen Scrapbot",
 	[109450] = "Saronite Vapors",
 	[67571] = "Millhouse Manastorm",
-	[123531] = "Manifestation of Taeshalach",
-	[105742] = "Turbax",
-	[115844] = "Goroth",
+	[141792] = "Liz Vilepot",
 	[78121] = "Gorian Warmage",
-	[36535] = "Corrupted Soul Fragment",
-	[173770] = "Blazing Brazier",
-	[80551] = "Shard of Tectus",
-	[81834] = "Priceless Paraphernalia",
-	[122366] = "Varimathras",
-	[172995] = "Hydra Seed",
+	[115844] = "Goroth",
+	[105742] = "Turbax",
+	[71983] = "Farseer Wolf Rider",
+	[73033] = "Corrupted Skullsplitter",
 	[165066] = "Huntsman Altimor",
+	[90018] = "Hellfire Cannon",
+	[122366] = "Varimathras",
+	[174018] = "Volatile Plague Bomb",
+	[80551] = "Shard of Tectus",
 	[153941] = "Zoatroid",
 	[184759] = "Depleted Automa",
-	[104528] = "High Botanist Tel'arn",
-	[36855] = "Lady Deathwhisper",
-	[129208] = "Dread Captain Lockwood",
-	[174018] = "Volatile Plague Bomb",
 	[100436] = "Illysanna Ravencrest",
-	[52392] = "Gurubashi Master Chef",
+	[36855] = "Lady Deathwhisper",
 	[61567] = "Vizier Jin'bak",
-	[105743] = "Whipsnap",
-	[138967] = "Zul",
-	[172094] = "Dissectible Dessert",
-	[34826] = "Mistress of Pain",
+	[172995] = "Hydra Seed",
+	[104528] = "High Botanist Tel'arn",
+	[71984] = "Siege Engineer",
+	[129208] = "Dread Captain Lockwood",
+	[52392] = "Gurubashi Master Chef",
+	[172386] = "Anima Conduit",
+	[33136] = "Guardian of Yogg-Saron",
+	[150995] = "Mimiron",
 	[86928] = "Empowered Construct",
 	[95833] = "Hyrja",
 	[156884] = "Essence of Vita",
-	[69427] = "Dark Animus",
+	[55308] = "Warlord Zon'ozz",
 	[72496] = "Overseer Thathung",
 	[55312] = "Yor'sahj the Unsleeping",
 	[164557] = "Shard of Halkias",
-	[55419] = "Captain Varo'then",
-	[105744] = "Blaze",
+	[27654] = "Drakos the Interrogator",
+	[111882] = "Sparky",
 	[64061] = "Mogu'shan Warden",
 	[119938] = "Reanimated Templar",
-	[52936] = "Druid of the Flame",
-	[111882] = "Sparky",
+	[105744] = "Blaze",
+	[28514] = "Nalorakk",
 	[146016] = "Leeroy Jenkins",
-	[29305] = "Moorabi",
+	[86918] = "Uncharged Construct",
 	[115143] = "Snaplasher",
-	[86250] = "Kyrak",
-	[173768] = "Fiery Brazier",
 	[179392] = "Kin'tessa",
+	[71603] = "Sha Puddle",
+	[56165] = "Crystal Conductor",
 	[99031] = "Artifact",
 	[122135] = "Shatug",
 	[164363] = "Undying Stonefiend",
@@ -5558,113 +5709,113 @@ AchievementTrackerNPCCache = {
 	[55334] = "Void of the Unmaking",
 	[59458] = "Hopling",
 	[110732] = "Creature of Madness",
-	[173767] = "Embered Brazier",
 	[136683] = "Trade Prince Gallywix",
+	[154074] = "Void Orb",
 	[142949] = "Theramore Citizen",
 	[38135] = "Deformed Fanatic",
-	[32273] = "Infinite Corruptor",
-	[73265] = "Corrupted Amalgamation",
 	[170851] = "Volatile Plague Bomb",
-	[154074] = "Void Orb",
+	[73265] = "Corrupted Amalgamation",
+	[32273] = "Infinite Corruptor",
+	[173767] = "Embered Brazier",
 	[129722] = "Mote of Titanic Power",
 	[58787] = "Big Bessa",
 	[33244] = "Mimiron",
-	[71603] = "Sha Puddle",
-	[56165] = "Crystal Conductor",
-	[86918] = "Uncharged Construct",
-	[28514] = "Nalorakk",
+	[173768] = "Fiery Brazier",
+	[86250] = "Kyrak",
+	[29305] = "Moorabi",
+	[52936] = "Druid of the Flame",
 	[165073] = "Forlorn Captive",
-	[27654] = "Drakos the Interrogator",
+	[55419] = "Captain Varo'then",
 	[141800] = "Brutik Blackanvil",
-	[55308] = "Warlord Zon'ozz",
+	[69427] = "Dark Animus",
 	[173769] = "Smoldering Brazier",
-	[150995] = "Mimiron",
-	[33136] = "Guardian of Yogg-Saron",
-	[172386] = "Anima Conduit",
-	[71984] = "Siege Engineer",
+	[34826] = "Mistress of Pain",
+	[172094] = "Dissectible Dessert",
+	[138967] = "Zul",
+	[105743] = "Whipsnap",
 	[158041] = "N'Zoth the Corruptor",
 	[176583] = "Energy Core",
 	[105299] = "Recursive Elemental",
-	[90018] = "Hellfire Cannon",
+	[81834] = "Priceless Paraphernalia",
 	[68599] = "Ferra Pearl",
-	[73033] = "Corrupted Skullsplitter",
-	[71983] = "Farseer Wolf Rider",
+	[173770] = "Blazing Brazier",
+	[36535] = "Corrupted Soul Fragment",
 	[50284] = "Twilight Zealot",
-	[141792] = "Liz Vilepot",
-	[154741] = "Squirt Bot",
-	[53494] = "Baleroc",
-	[76585] = "Ragewing the Untamed",
-	[52440] = "Gub",
+	[123531] = "Manifestation of Taeshalach",
+	[69086] = "Flaming Head",
+	[185423] = "Reaving Automa: Neo",
+	[67779] = "Mature Saurok Egg",
+	[33134] = "Sara",
 	[84520] = "Pitwarden Gwarnok",
 	[49485] = "Aberration",
-	[162317] = "Gorechop",
-	[59779] = "Thunderpaw Guardian",
-	[126712] = "Training Dummy",
-	[164218] = "Lord Chamberlain",
-	[44530] = "Naz'jar Honor Guard",
-	[129440] = "Harlan Sweete",
-	[102423] = "Mug of Mead",
-	[52422] = "Kaulema the Mover",
+	[110758] = "High Inquisitor Whitemane",
+	[72436] = "Immerseus",
+	[93145] = "Soul of the Crone",
+	[52438] = "Mortaxx",
+	[104341] = "Torment",
+	[52414] = "Tor-Tun",
+	[147430] = "Virmen",
+	[139737] = "Lord Stormsong",
 	[131318] = "Elder Leaxa",
-	[33552] = "Yogg-Saron",
-	[34035] = "Feral Defender",
-	[162102] = "Grand Proctor Beryllia",
-	[33768] = "Rubble",
-	[56637] = "Ook-Ook",
-	[40634] = "Naz'jar Tempest Witch",
+	[166266] = "Spare Parts",
+	[33113] = "Flame Leviathan",
+	[111941] = "Hodir",
+	[175474] = "Belligerent Waiter",
+	[76283] = "Malefic Defender",
+	[114462] = "The Curator",
 	[101976] = "Millificent Manastorm",
 	[80557] = "Mote of Tectus",
-	[32919] = "Storm Lasher",
-	[141805] = "Threshanator 3000",
-	[105301] = "Expedient Elemental",
+	[155595] = "Sacred Gear",
+	[91938] = "Haunting Soul",
+	[169554] = "Disused Anima Container",
 	[64479] = "Gatecrusher",
-	[61442] = "Kuai the Brute",
-	[56897] = "Raigonn",
+	[62465] = "Captain Ook",
+	[71979] = "Kor'kron Warbringer",
 	[160859] = "Haunting Memory",
 	[38009] = "Reanimated Fanatic",
-	[29023] = "Jan'alai",
+	[43468] = "Lady Naz'jar",
 	[145898] = "Anointed Disciple",
-	[166644] = "Artificer Xy'mox",
-	[67966] = "Whirl Turtle",
-	[185427] = "Unstable Progenitor Relic",
-	[61431] = "Glintrok Scout",
+	[61709] = "Spawn of Anger",
+	[178095] = "Eye of the Jailer",
+	[132609] = "The Hivemind",
+	[120564] = "Titanic Anomaly",
 	[33118] = "Ignis the Furnace Master",
-	[118924] = "Engine of Souls",
-	[59822] = "Auntie Stormstout",
-	[102169] = "Black Bile",
+	[165512] = "Cocoon of Lakali",
+	[69181] = "Saurid",
+	[171474] = "Finger Food",
 	[178763] = "Buttons",
 	[148201] = "Crawler Mine",
-	[96223] = "Gamon",
-	[69820] = "Son of Animus",
+	[56839] = "Anduin Wrynn",
+	[155645] = "Walkie Shockie X2",
 	[151654] = "Deuce Mecha-Buffer",
-	[160271] = "Forbidden Manifestation",
+	[56843] = "Lorewalker Stonestep",
 	[137588] = "Gasping Flounder",
 	[124164] = "Torment of Golganneth",
-	[58605] = "Scarlet Judicator",
-	[68905] = "Lu'lin",
-	[114895] = "Nightbane",
+	[156575] = "Dark Inquisitor Xanesh",
+	[41440] = "Aberration",
+	[181546] = "Prototype of Renewal",
 	[99868] = "Fenryr",
 	[45906] = "Camel",
-	[158190] = "Medivh",
+	[77814] = "Teron'gor",
 	[65407] = "Shado-Pan Novice",
 	[138740] = "Musashitake",
 	[127809] = "Reorigination Module",
-	[53694] = "Riplimb",
-	[147896] = "Zandalari Crusader",
-	[88938] = "Ragnaros",
-	[83775] = "Ogron Laborer",
+	[155760] = "Tank Buster MK2",
+	[72889] = "Superheated Crawler Mine",
+	[155056] = "Robo-Waste",
+	[53501] = "Living Meteor",
 	[38010] = "Reanimated Adherent",
-	[32927] = "Runemaster Molgeim",
-	[144246] = "K.U.-J.0.",
-	[161375] = "Promising Specimen",
-	[162933] = "Thought Harvester",
+	[181579] = "Lihuvim",
+	[149043] = "Heavy Barrel",
+	[51405] = "Angered Earth",
+	[59080] = "Darkmaster Gandling",
 	[61699] = "Sik'thik Amberwing",
-	[107699] = "Spellblade Aluriel",
+	[155243] = "Scavenging Crab",
 	[171094] = "Grisly Curio",
-	[74570] = "Ruination",
-	[155144] = "Abyssal Commander Sivara",
-	[145903] = "Darkforged Crusader",
-	[162719] = "Void Ascendant",
-	[127503] = "Overseer Korgus",
-	[108600] = "Sister of the Moon",
+	[111864] = "Sticky",
+	[153202] = "Piston Smasher",
+	[149995] = "High Priestess Azil",
+	[131853] = "Huntmaster Grath",
+	[178783] = "Moriaz the Red",
+	[53695] = "Rageface",
 }

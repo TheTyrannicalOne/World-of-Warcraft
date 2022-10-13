@@ -8,15 +8,15 @@ BronCenaDB = {
 		["Zulbathal - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
-		["Alatra - Zul'jin"] = "Default",
-		["Valmagus - Zul'jin"] = "Default",
 		["Okona - Zul'jin"] = "Default",
+		["Valmagus - Zul'jin"] = "Default",
+		["Alatra - Zul'jin"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["companions"] = {
 				["333961"] = {
-					["handle"] = 232853,
+					["handle"] = 61892,
 				},
 			},
 		},

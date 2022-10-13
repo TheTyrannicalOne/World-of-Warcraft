@@ -1,8 +1,9 @@
 
 SpyPerCharDB = {
-	["KOSData"] = {
-	},
+	["version"] = "1.1",
 	["IgnoreData"] = {
+	},
+	["KOSData"] = {
 	},
 	["PlayerData"] = {
 		["Iskandaar"] = {
@@ -2255,5 +2256,4 @@ SpyPerCharDB = {
 			["subZone"] = "Haven",
 		},
 	},
-	["version"] = "1.1",
 }

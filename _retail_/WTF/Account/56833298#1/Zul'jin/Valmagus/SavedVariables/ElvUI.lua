@@ -1,5 +1,6 @@
 
 ElvCharacterDB = {
+	["ConvertKeybindings"] = true,
 	["ChatHistoryLog"] = {
 		{
 			"WTS  M+15 and  M+20 - Armor stack  and specific key -  Only Gold,  good  price  , Group ready  - PST !!", -- [1]
@@ -2180,8 +2181,6 @@ ElvCharacterDB = {
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},
-	["CliqueDatatext"] = {
-	},
 	["ChatEditHistory"] = {
 		"/opie", -- [1]
 		"/i Thansk for the run", -- [2]
@@ -2192,5 +2191,6 @@ ElvCharacterDB = {
 		"/dance", -- [7]
 		"/ltp", -- [8]
 	},
-	["ConvertKeybindings"] = true,
+	["CliqueDatatext"] = {
+	},
 }

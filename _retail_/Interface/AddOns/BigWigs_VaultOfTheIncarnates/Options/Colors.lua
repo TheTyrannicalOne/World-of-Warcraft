@@ -14,10 +14,11 @@ BigWigs:AddColors("Terros", {
 	[377166] = "red",
 	[377505] = "red",
 	[380487] = {"blue","orange"},
+	[381315] = "blue",
 	[382458] = "blue",
 	[383073] = "yellow",
 	[388393] = "yellow",
-	[391306] = {"blue","orange"},
+	[391306] = "blue",
 })
 
 BigWigs:AddColors("The Primal Council", {
@@ -35,17 +36,20 @@ BigWigs:AddColors("The Primal Council", {
 })
 
 BigWigs:AddColors("Sennarth, The Cold Breath", {
+	[-24899] = "cyan",
 	[371976] = "orange",
 	[371983] = "red",
 	[372030] = "blue",
 	[372044] = "blue",
-	[372051] = "yellow",
 	[372082] = {"blue","yellow"},
-	[372539] = {"green","red"},
+	[372238] = "cyan",
+	[372539] = "green",
 	[373048] = {"blue","yellow"},
 	[373405] = "red",
 	[374112] = "yellow",
 	[385083] = {"blue","purple"},
+	["ascend"] = "yellow",
+	["stages"] = "red",
 })
 
 BigWigs:AddColors("Dathea, Ascended", {

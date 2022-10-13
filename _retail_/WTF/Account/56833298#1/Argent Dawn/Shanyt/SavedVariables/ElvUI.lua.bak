@@ -1,6 +1,30 @@
 
 ElvCharacterDB = {
+	["CliqueDatatext"] = {
+	},
 	["ConvertKeybindings"] = true,
+	["ChatEditHistory"] = {
+		"/s two druids just went to get some", -- [1]
+		"/hekili", -- [2]
+		"/hug", -- [3]
+		"/p that would be great", -- [4]
+		"/pet", -- [5]
+		"/p lets go", -- [6]
+		"/bow", -- [7]
+		"/p well looks like its slow right now good luck will try again later", -- [8]
+		"/cw Xugaaz-WyrmrestAccord TY!", -- [9]
+		"/p np", -- [10]
+		"/kneel", -- [11]
+		"/npcscan add 66932 Akkalou", -- [12]
+		"/dance", -- [13]
+		"/p all good", -- [14]
+		"/cw Peroyjenkins-Mal'Ganis TY", -- [15]
+		"/opie", -- [16]
+		"/s launch fireworks out the launchers he raises out the water and we kill him", -- [17]
+		"/love", -- [18]
+		"/p TY!", -- [19]
+		"/invite lillys-blackhand", -- [20]
+	},
 	["ChatHistoryLog"] = {
 		{
 			":P", -- [1]
@@ -2180,29 +2204,5 @@ ElvCharacterDB = {
 			[51] = 1665272749,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [99]
-	},
-	["ChatEditHistory"] = {
-		"/s two druids just went to get some", -- [1]
-		"/hekili", -- [2]
-		"/hug", -- [3]
-		"/p that would be great", -- [4]
-		"/pet", -- [5]
-		"/p lets go", -- [6]
-		"/bow", -- [7]
-		"/p well looks like its slow right now good luck will try again later", -- [8]
-		"/cw Xugaaz-WyrmrestAccord TY!", -- [9]
-		"/p np", -- [10]
-		"/kneel", -- [11]
-		"/npcscan add 66932 Akkalou", -- [12]
-		"/dance", -- [13]
-		"/p all good", -- [14]
-		"/cw Peroyjenkins-Mal'Ganis TY", -- [15]
-		"/opie", -- [16]
-		"/s launch fireworks out the launchers he raises out the water and we kill him", -- [17]
-		"/love", -- [18]
-		"/p TY!", -- [19]
-		"/invite lillys-blackhand", -- [20]
-	},
-	["CliqueDatatext"] = {
 	},
 }

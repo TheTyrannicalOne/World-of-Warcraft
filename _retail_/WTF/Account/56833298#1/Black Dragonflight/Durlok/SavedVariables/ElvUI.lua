@@ -1,21 +1,5 @@
 
 ElvCharacterDB = {
-	["ConvertKeybindings"] = true,
-	["CliqueDatatext"] = {
-	},
-	["ChatEditHistory"] = {
-		"/1 ok", -- [1]
-		"/cw Agaymar-BlackDragonflight top wall above portal room", -- [2]
-		"/1 how long before patchwork is attackable?", -- [3]
-		"/1 ok ty omw", -- [4]
-		"/allthethings", -- [5]
-		"/invite Lilanda-blackhand", -- [6]
-		"/sleep", -- [7]
-		"/train", -- [8]
-		"/skada toggle", -- [9]
-		"/dance", -- [10]
-		"/tsm", -- [11]
-	},
 	["ChatHistoryLog"] = {
 		{
 			"dnt think", -- [1]
@@ -2195,5 +2179,21 @@ ElvCharacterDB = {
 			[51] = 1656053359,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
+	},
+	["ConvertKeybindings"] = true,
+	["ChatEditHistory"] = {
+		"/1 ok", -- [1]
+		"/cw Agaymar-BlackDragonflight top wall above portal room", -- [2]
+		"/1 how long before patchwork is attackable?", -- [3]
+		"/1 ok ty omw", -- [4]
+		"/allthethings", -- [5]
+		"/invite Lilanda-blackhand", -- [6]
+		"/sleep", -- [7]
+		"/train", -- [8]
+		"/skada toggle", -- [9]
+		"/dance", -- [10]
+		"/tsm", -- [11]
+	},
+	["CliqueDatatext"] = {
 	},
 }

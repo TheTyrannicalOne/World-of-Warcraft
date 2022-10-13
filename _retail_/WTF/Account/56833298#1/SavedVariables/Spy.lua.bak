@@ -1,21 +1,57 @@
 
 SpyDB = {
 	["kosData"] = {
-		["Argent Dawn"] = {
+		["Zul'jin"] = {
 			["Horde"] = {
-				["Shanyt"] = {
+				["Laymonan"] = {
 				},
-				["Vadder"] = {
+				["Dachas"] = {
 				},
-				["Tyran"] = {
+				["Abyronterner"] = {
 				},
-				["Brotus"] = {
+				["Okona"] = {
+				},
+				["Zulbathal"] = {
 				},
 				["Jingojaggot"] = {
 				},
+				["Alatra"] = {
+				},
+				["Vancard"] = {
+				},
+				["Valmagus"] = {
+				},
+				["Charbeatic"] = {
+				},
+				["Jasmoney"] = {
+				},
+				["Banuumine"] = {
+				},
+				["Mandles"] = {
+				},
+				["Guufnah"] = {
+				},
+				["Banesmuncy"] = {
+				},
+				["Shimzo"] = {
+				},
+				["Datgore"] = {
+				},
+				["Kotalkhan"] = {
+				},
+				["Shanyt"] = {
+				},
+				["Armaguth"] = {
+				},
+				["Tyranasticus"] = {
+				},
+				["Fantastiburo"] = {
+				},
+			},
+			["Neutral"] = {
 				["Shaekhan"] = {
 				},
-				["Tyrannithal"] = {
+				["Kotalkhan"] = {
 				},
 			},
 		},
@@ -39,78 +75,44 @@ SpyDB = {
 				},
 				["Malivant"] = {
 				},
-				["Tendralas"] = {
-				},
 				["Avisar"] = {
-				},
-				["Thorinbane"] = {
-				},
-				["Illingrath"] = {
-				},
-				["Kelvalatar"] = {
 				},
 				["Varlouris"] = {
 				},
+				["Thorinbane"] = {
+				},
+				["Kelvalatar"] = {
+				},
+				["Illingrath"] = {
+				},
+				["Tendralas"] = {
+				},
 			},
 		},
-		["Zul'jin"] = {
+		["Argent Dawn"] = {
 			["Horde"] = {
-				["Laymonan"] = {
+				["Shanyt"] = {
 				},
-				["Dachas"] = {
+				["Vadder"] = {
 				},
-				["Abyronterner"] = {
+				["Tyran"] = {
 				},
-				["Okona"] = {
-				},
-				["Zulbathal"] = {
+				["Brotus"] = {
 				},
 				["Jingojaggot"] = {
 				},
-				["Alatra"] = {
-				},
-				["Vancard"] = {
-				},
-				["Fantastiburo"] = {
-				},
-				["Tyranasticus"] = {
-				},
-				["Jasmoney"] = {
-				},
-				["Armaguth"] = {
-				},
-				["Mandles"] = {
-				},
-				["Shanyt"] = {
-				},
-				["Kotalkhan"] = {
-				},
-				["Datgore"] = {
-				},
-				["Shimzo"] = {
-				},
-				["Banesmuncy"] = {
-				},
-				["Guufnah"] = {
-				},
-				["Banuumine"] = {
-				},
-				["Charbeatic"] = {
-				},
-				["Valmagus"] = {
-				},
-			},
-			["Neutral"] = {
 				["Shaekhan"] = {
 				},
-				["Kotalkhan"] = {
+				["Tyrannithal"] = {
 				},
 			},
 		},
 	},
 	["removeKOSData"] = {
-		["Argent Dawn"] = {
+		["Zul'jin"] = {
 			["Horde"] = {
+			},
+			["Neutral"] = {
 			},
 		},
 		["Black Dragonflight"] = {
@@ -121,10 +123,8 @@ SpyDB = {
 			["Alliance"] = {
 			},
 		},
-		["Zul'jin"] = {
+		["Argent Dawn"] = {
 			["Horde"] = {
-			},
-			["Neutral"] = {
 			},
 		},
 	},
@@ -145,32 +145,32 @@ SpyDB = {
 		["Dachas - Zul'jin"] = "Dachas - Zul'jin",
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
 		["Tyranasticus - Zul'jin"] = "Tyranasticus - Zul'jin",
-		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
+		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
 		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
-		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
-		["Okona - Zul'jin"] = "Okona - Zul'jin",
-		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
+		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
-		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
-		["Laymonan - Zul'jin"] = "Laymonan - Zul'jin",
-		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
-		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Laymonan - Zul'jin"] = "Laymonan - Zul'jin",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
+		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
+		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
-		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
+		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Abyronterner - Zul'jin"] = "Abyronterner - Zul'jin",
-		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Jasmoney - Zul'jin"] = "Jasmoney - Zul'jin",
-		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
+		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
 		["Mandles - Zul'jin"] = "Mandles - Zul'jin",
 	},
 	["profiles"] = {
@@ -262,7 +262,6 @@ SpyDB = {
 			["AppendUnitKoSCheck"] = true,
 		},
 		["Avisar - Dalaran"] = {
-			["AppendUnitNameCheck"] = true,
 			["MainWindow"] = {
 				["Position"] = {
 					["y"] = 740.0001831054688,
@@ -288,8 +287,9 @@ SpyDB = {
 					["x"] = 4,
 				},
 			},
-			["AppendUnitKoSCheck"] = true,
+			["AppendUnitNameCheck"] = true,
 			["MainWindowVis"] = false,
+			["AppendUnitKoSCheck"] = true,
 		},
 		["Banuumine - Zul'jin"] = {
 			["AppendUnitNameCheck"] = true,
@@ -396,7 +396,7 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Banesmuncy - Zul'jin"] = {
+		["Tendralas - Dalaran"] = {
 			["AppendUnitNameCheck"] = true,
 			["MainWindowVis"] = false,
 			["Colors"] = {
@@ -498,6 +498,29 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 		},
+		["Shimzo - Zul'jin"] = {
+			["AppendUnitNameCheck"] = true,
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitKoSCheck"] = true,
+		},
+		["Guufnah - Zul'jin"] = {
+			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitKoSCheck"] = true,
+		},
 		["Varlouris - Dalaran"] = {
 			["AppendUnitNameCheck"] = true,
 			["MainWindow"] = {
@@ -536,28 +559,8 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Jingojaggot - Zul'jin"] = {
+		["Alatra - Zul'jin"] = {
 			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
-			["Colors"] = {
-				["Bar"] = {
-					["Bar Text"] = {
-						["a"] = 1,
-					},
-				},
-			},
-			["AppendUnitKoSCheck"] = true,
-		},
-		["Okona - Zul'jin"] = {
-			["AppendUnitNameCheck"] = true,
-			["MainWindow"] = {
-				["Position"] = {
-					["y"] = 753.0001220703125,
-					["x"] = 2400,
-					["w"] = 159.9999694824219,
-					["h"] = 34.99999618530273,
-				},
-			},
 			["Colors"] = {
 				["Alert"] = {
 					["Stealth Text"] = {
@@ -567,19 +570,6 @@ SpyDB = {
 						["a"] = 1,
 					},
 				},
-				["Bar"] = {
-					["Bar Text"] = {
-						["a"] = 1,
-					},
-				},
-			},
-			["AppendUnitKoSCheck"] = true,
-			["MainWindowVis"] = false,
-		},
-		["Guufnah - Zul'jin"] = {
-			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
-			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
 						["a"] = 1,
@@ -628,9 +618,8 @@ SpyDB = {
 			["AppendUnitKoSCheck"] = true,
 			["MainWindowVis"] = false,
 		},
-		["Tyran - Argent Dawn"] = {
+		["Datgore - Zul'jin"] = {
 			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -652,31 +641,8 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Serbitechna - Dalaran"] = {
-			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
-			["Colors"] = {
-				["Bar"] = {
-					["Bar Text"] = {
-						["a"] = 1,
-					},
-				},
-			},
-			["AppendUnitKoSCheck"] = true,
-		},
-		["Vadder - Argent Dawn"] = {
-			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
-			["Colors"] = {
-				["Bar"] = {
-					["Bar Text"] = {
-						["a"] = 1,
-					},
-				},
-			},
-			["AppendUnitKoSCheck"] = true,
-		},
 		["Shanyt - Argent Dawn"] = {
+			["AppendUnitNameCheck"] = true,
 			["MainWindow"] = {
 				["Position"] = {
 					["y"] = 968.4998168945312,
@@ -700,12 +666,35 @@ SpyDB = {
 					},
 				},
 			},
-			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Datgore - Zul'jin"] = {
+		["Vadder - Argent Dawn"] = {
 			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitKoSCheck"] = true,
+		},
+		["Serbitechna - Dalaran"] = {
+			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitKoSCheck"] = true,
+		},
+		["Tyran - Argent Dawn"] = {
+			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -739,9 +728,16 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Alatra - Zul'jin"] = {
+		["Okona - Zul'jin"] = {
 			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
+			["MainWindow"] = {
+				["Position"] = {
+					["y"] = 753.0001220703125,
+					["x"] = 2400,
+					["w"] = 159.9999694824219,
+					["h"] = 34.99999618530273,
+				},
+			},
 			["Colors"] = {
 				["Alert"] = {
 					["Stealth Text"] = {
@@ -758,6 +754,7 @@ SpyDB = {
 				},
 			},
 			["AppendUnitKoSCheck"] = true,
+			["MainWindowVis"] = false,
 		},
 		["Abyronterner - Zul'jin"] = {
 			["AppendUnitNameCheck"] = true,
@@ -771,8 +768,9 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Shimzo - Zul'jin"] = {
+		["Jingojaggot - Zul'jin"] = {
 			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -794,7 +792,7 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Tendralas - Dalaran"] = {
+		["Banesmuncy - Zul'jin"] = {
 			["AppendUnitNameCheck"] = true,
 			["MainWindowVis"] = false,
 			["Colors"] = {

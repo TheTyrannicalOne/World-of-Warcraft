@@ -2,21 +2,21 @@
 TomTomDB = {
 	["profileKeys"] = {
 		["Avisar - Dalaran"] = "Default",
-		["Okona - Zul'jin"] = "Default",
+		["Alatra - Zul'jin"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
 		["Jingojaggot - Argent Dawn"] = "Default",
-		["Shaekhan - Argent Dawn"] = "Default",
-		["Brotus - Argent Dawn"] = "Default",
+		["Tendralas - Dalaran"] = "Default",
 		["Illingrath - Dalaran"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
-		["Darnastris - Dalaran"] = "Default",
+		["Brotus - Argent Dawn"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
+		["Darnastris - Dalaran"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Valmagus - Zul'jin"] = "Default",
-		["Zulbathal - Zul'jin"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
 		["Varlouris - Dalaran"] = "Default",
-		["Tendralas - Dalaran"] = "Default",
-		["Alatra - Zul'jin"] = "Default",
+		["Shaekhan - Argent Dawn"] = "Default",
+		["Okona - Zul'jin"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -49,54 +49,54 @@ TomTomWaypoints = nil
 TomTomWaypointsM = {
 	["profileKeys"] = {
 		["Avisar - Dalaran"] = "Avisar - Dalaran",
-		["Okona - Zul'jin"] = "Okona - Zul'jin",
+		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
-		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
-		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
+		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
+		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
+		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
+		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
-		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
-		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
-		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
+		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
+		["Okona - Zul'jin"] = "Okona - Zul'jin",
 	},
 	["profiles"] = {
 		["Avisar - Dalaran"] = {
 		},
-		["Okona - Zul'jin"] = {
+		["Alatra - Zul'jin"] = {
 		},
 		["Thorinbane - Dalaran"] = {
 		},
 		["Jingojaggot - Argent Dawn"] = {
 		},
-		["Shaekhan - Argent Dawn"] = {
-		},
-		["Brotus - Argent Dawn"] = {
+		["Tendralas - Dalaran"] = {
 		},
 		["Illingrath - Dalaran"] = {
 		},
-		["Durlok - Black Dragonflight"] = {
+		["Brotus - Argent Dawn"] = {
+		},
+		["Rotclaugh - Dalaran"] = {
 		},
 		["Darnastris - Dalaran"] = {
 		},
-		["Rotclaugh - Dalaran"] = {
+		["Zulbathal - Zul'jin"] = {
 		},
 		["Shanyt - Argent Dawn"] = {
 		},
 		["Valmagus - Zul'jin"] = {
 		},
-		["Zulbathal - Zul'jin"] = {
+		["Durlok - Black Dragonflight"] = {
 		},
 		["Varlouris - Dalaran"] = {
 		},
-		["Tendralas - Dalaran"] = {
+		["Shaekhan - Argent Dawn"] = {
 		},
-		["Alatra - Zul'jin"] = {
+		["Okona - Zul'jin"] = {
 		},
 	},
 }

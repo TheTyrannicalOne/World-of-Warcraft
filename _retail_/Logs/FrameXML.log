@@ -1,19 +1,19 @@
-10/9 20:34:28.700  Loading add-on AngryWorldQuests
-10/9 20:34:28.700  ** Loading table of contents Interface\AddOns\AngryWorldQuests\AngryWorldQuests.toc
-10/9 20:34:28.700  (null)
-10/9 20:34:28.700  Loading add-on DejaCharacterStats
-10/9 20:34:28.700  ** Loading table of contents Interface\AddOns\DejaCharacterStats\DejaCharacterStats.toc
-10/9 20:34:28.700  (null)
-10/9 20:34:28.700  Loading add-on NPCScan
-10/9 20:34:28.700  Interface\AddOns\NPCScan\Bindings.xml(1): error: not well-formed (invalid token)
-10/9 20:34:28.700  Loading add-on Overachiever
-10/9 20:34:28.700  ** Loading table of contents Interface\AddOns\Overachiever\Overachiever.toc
-10/9 20:34:28.700  (null)
-10/9 20:34:28.700  Loading add-on PetEmote
-10/9 20:34:28.700  Interface\AddOns\PetEmote\Bindings.xml(1): error: not well-formed (invalid token)
-10/9 20:34:40.621  Loading add-on Overachiever_Trade
-10/9 20:34:40.621  ** Loading table of contents Interface\AddOns\Overachiever_Trade\Overachiever_Trade.toc
-10/9 20:34:40.621  (null)
-10/9 20:34:52.259  Loading add-on Overachiever_Tabs
-10/9 20:34:52.259  ** Loading table of contents Interface\AddOns\Overachiever_Tabs\Overachiever_Tabs.toc
-10/9 20:34:52.259  (null)
+10/11 15:00:57.107  Loading add-on AngryWorldQuests
+10/11 15:00:57.107  ** Loading table of contents Interface\AddOns\AngryWorldQuests\AngryWorldQuests.toc
+10/11 15:00:57.107  (null)
+10/11 15:00:57.107  Loading add-on DejaCharacterStats
+10/11 15:00:57.107  ** Loading table of contents Interface\AddOns\DejaCharacterStats\DejaCharacterStats.toc
+10/11 15:00:57.107  (null)
+10/11 15:00:57.107  Loading add-on NPCScan
+10/11 15:00:57.107  Interface\AddOns\NPCScan\Bindings.xml(1): error: not well-formed (invalid token)
+10/11 15:00:57.107  Loading add-on Overachiever
+10/11 15:00:57.107  ** Loading table of contents Interface\AddOns\Overachiever\Overachiever.toc
+10/11 15:00:57.107  (null)
+10/11 15:00:57.107  Loading add-on PetEmote
+10/11 15:00:57.107  Interface\AddOns\PetEmote\Bindings.xml(1): error: not well-formed (invalid token)
+10/11 15:01:08.931  Loading add-on Overachiever_Trade
+10/11 15:01:08.931  ** Loading table of contents Interface\AddOns\Overachiever_Trade\Overachiever_Trade.toc
+10/11 15:01:08.931  (null)
+10/11 15:01:21.346  Loading add-on Overachiever_Tabs
+10/11 15:01:21.346  ** Loading table of contents Interface\AddOns\Overachiever_Tabs\Overachiever_Tabs.toc
+10/11 15:01:21.346  (null)

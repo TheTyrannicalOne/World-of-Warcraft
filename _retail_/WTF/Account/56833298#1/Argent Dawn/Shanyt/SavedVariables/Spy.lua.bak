@@ -1,5 +1,9 @@
 
 SpyPerCharDB = {
+	["KOSData"] = {
+	},
+	["IgnoreData"] = {
+	},
 	["PlayerData"] = {
 		["Iskandaar"] = {
 			["mapID"] = 74,
@@ -2251,9 +2255,5 @@ SpyPerCharDB = {
 			["name"] = "Welkes",
 		},
 	},
-	["IgnoreData"] = {
-	},
 	["version"] = "1.1",
-	["KOSData"] = {
-	},
 }

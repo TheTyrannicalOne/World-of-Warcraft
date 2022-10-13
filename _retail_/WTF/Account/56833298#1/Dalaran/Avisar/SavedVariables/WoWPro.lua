@@ -19,13 +19,13 @@ WoWProCharDB = {
 	},
 	["EnableRares"] = true,
 	["EnableGrailQuestName"] = false,
+	["Enabled"] = true,
 	["EnableGrailQuestObsolete"] = false,
-	["EnableGrailBreadcrumbs"] = false,
 	["DebugLevel"] = 0,
 	["Tradeskills"] = {
 		[2551] = {
 			["skillLvl"] = 12,
-			["skillMod"] = 0,
+			["skillMod"] = 10,
 			["name"] = "Draenor Herbalism",
 			["skillMax"] = 100,
 		},
@@ -37,7 +37,7 @@ WoWProCharDB = {
 		},
 		[2567] = {
 			["skillLvl"] = 5,
-			["skillMod"] = 0,
+			["skillMod"] = 10,
 			["name"] = "Draenor Mining",
 			["skillMax"] = 100,
 		},
@@ -49,7 +49,7 @@ WoWProCharDB = {
 		},
 		[2568] = {
 			["skillLvl"] = 17,
-			["skillMod"] = 0,
+			["skillMod"] = 10,
 			["name"] = "Pandaria Mining",
 			["skillMax"] = 75,
 		},
@@ -61,13 +61,13 @@ WoWProCharDB = {
 		},
 		[2569] = {
 			["skillLvl"] = 1,
-			["skillMod"] = 0,
+			["skillMod"] = 10,
 			["name"] = "Cataclysm Mining",
 			["skillMax"] = 75,
 		},
 		[182] = {
 			["skillLvl"] = 175,
-			["skillMod"] = 0,
+			["skillMod"] = 10,
 			["name"] = "Herbalism",
 			["skillMax"] = 175,
 		},
@@ -79,62 +79,62 @@ WoWProCharDB = {
 		},
 		[186] = {
 			["skillLvl"] = 147,
-			["skillMod"] = 0,
+			["skillMod"] = 10,
 			["name"] = "Mining",
 			["skillMax"] = 175,
 		},
 		[2556] = {
 			["skillLvl"] = 117,
-			["skillMod"] = 0,
+			["skillMod"] = 10,
 			["name"] = "Herbalism",
 			["skillMax"] = 300,
 		},
 		[2549] = {
 			["skillLvl"] = 175,
-			["skillMod"] = 0,
+			["skillMod"] = 10,
 			["name"] = "Battle for Azeroth Herbalism",
 			["skillMax"] = 175,
 		},
 		[2572] = {
 			["skillLvl"] = 74,
-			["skillMod"] = 0,
+			["skillMod"] = 10,
 			["name"] = "Mining",
 			["skillMax"] = 300,
 		},
 		[2550] = {
 			["skillLvl"] = 23,
-			["skillMod"] = 0,
+			["skillMod"] = 10,
 			["name"] = "Legion Herbalism",
 			["skillMax"] = 100,
 		},
 		[2565] = {
 			["skillLvl"] = 147,
-			["skillMod"] = 0,
+			["skillMod"] = 10,
 			["name"] = "Battle for Azeroth Mining",
 			["skillMax"] = 175,
 		},
 		[2566] = {
 			["skillLvl"] = 21,
-			["skillMod"] = 0,
+			["skillMod"] = 10,
 			["name"] = "Legion Mining",
 			["skillMax"] = 100,
 		},
 	},
-	["Guide"] = {
+	["BuildingLocations"] = {
 	},
 	["Taxi"] = {
 	},
-	["GuideVersion"] = {
+	["Guide"] = {
 	},
 	["EnableTreasures"] = true,
 	["EnableFlight"] = true,
 	["AutoHideInsideInstancesNotify"] = true,
 	["AutoHideInCombat"] = false,
-	["BuildingLocations"] = {
+	["GuideVersion"] = {
 	},
 	["GuideStack"] = {
 	},
-	["Enabled"] = true,
+	["EnableGrailBreadcrumbs"] = false,
 	["skippedQIDs"] = {
 	},
 	["Rank"] = {

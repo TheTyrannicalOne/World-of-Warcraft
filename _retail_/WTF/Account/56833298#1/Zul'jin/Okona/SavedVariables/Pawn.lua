@@ -70,9 +70,9 @@ PawnOptions = {
 		}, -- [13]
 		{
 			["ID"] = 122362,
-			["Level"] = 37,
+			["Level"] = 38,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122362::::::::32:257:::1:7920::::::|h[Discerning Eye of the Beast]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122362::::::::33:256:::1:7920::::::|h[Discerning Eye of the Beast]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 122262,

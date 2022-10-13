@@ -1,16 +1,10 @@
-tag 9929bc476d6e9fa55d1dcf0779b3f2258c4d912b Details.DF.SL.Wrath.10135.146
+tag 3810854f1e0505c3cea465d67536650ef91e7e95 Details.DF.SL.Wrath.10136.146
 Author:	Tercio Jose <terciob19@hotmail.com>
-Date:	Sun Oct 9 19:48:22 2022 -0300
+Date:	Sun Oct 9 20:49:31 2022 -0300
 
-commit 944178f76f6ca74fc1466b53817e59abcbe6957c
+commit b588d5e30cec44d78125022adcfdf76c760f825b
 Author: Tercio Jose <terciob19@hotmail.com>
-Date:   Sun Oct 9 19:47:56 2022 -0300
+Date:   Sun Oct 9 20:48:47 2022 -0300
 
-    Updated LibOpenRaid and DetailsFramework
-
-commit 9974a87119e8f0efcac8e743132d7a0bd7b6789a
-Author: Tercio Jose <terciob19@hotmail.com>
-Date:   Sun Oct 9 17:12:13 2022 -0300
-
-    Format the text in the breakdown player list using the same font, size and outline of the damage window
+    Fixed an error while trying to move the window by clicking and holding on a window line
 
