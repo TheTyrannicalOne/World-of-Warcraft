@@ -5,8 +5,12 @@ BigWigs:AddSounds("Eranog", {
 	[370615] = "alarm",
 	[370649] = "underyou",
 	[390715] = "warning",
-	[394904] = "info",
+	[393780] = "alert",
+	[394906] = "info",
 	[394917] = "alert",
+	[396022] = "alert",
+	[396023] = "alert",
+	[396094] = "warning",
 })
 
 BigWigs:AddSounds("Terros", {
@@ -18,7 +22,7 @@ BigWigs:AddSounds("Terros", {
 	[382458] = "underyou",
 	[383073] = "alarm",
 	[388393] = "alarm",
-	[391306] = "warning",
+	[391592] = {"alert","warning"},
 })
 
 BigWigs:AddSounds("The Primal Council", {
@@ -34,7 +38,7 @@ BigWigs:AddSounds("The Primal Council", {
 
 BigWigs:AddSounds("Sennarth, The Cold Breath", {
 	[-24899] = "info",
-	[371976] = "alarm",
+	[371976] = {"alarm","info"},
 	[371983] = "warning",
 	[372030] = "info",
 	[372044] = "info",
@@ -52,7 +56,6 @@ BigWigs:AddSounds("Dathea, Ascended", {
 	[375580] = {"alarm","alert"},
 	[376851] = "info",
 	[376943] = "alarm",
-	[381688] = "info",
 	[384273] = "alert",
 	[385812] = "alarm",
 	[387849] = "long",
@@ -61,6 +64,7 @@ BigWigs:AddSounds("Dathea, Ascended", {
 	[388410] = "alert",
 	[390450] = "alarm",
 	[391686] = "warning",
+	[395501] = "warning",
 })
 
 BigWigs:AddSounds("Kurog Grimtotem", {

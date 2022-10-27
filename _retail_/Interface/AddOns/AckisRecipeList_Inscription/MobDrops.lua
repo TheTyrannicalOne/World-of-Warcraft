@@ -55,6 +55,8 @@ function module:InitializeMobDrops()
 	AddMob(140853,	BN.MOTHER,				Z.ULDIR,			0.0, 0.0)
 	AddMob(149684,	BN.LADY_JAINA_PROUDMOORE,		Z.BATTLE_OF_DAZARALOR,		0.0, 0.0)
 	AddMob(158041,	BN.NZOTH_THE_CORRUPTOR,			Z.NYALOTHA,			0.0, 0.0)
+	AddMob(158976,	L["Shrieking Evedweller"],		Z.REVENDRETH,			29.6, 28.6)
+	AddMob(159178,	L["Dire Evedweller"],			Z.REVENDRETH,			33.8, 17.4)
 
 	self.InitializeMobDrops = nil
 end

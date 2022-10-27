@@ -27,20 +27,11 @@ MADB = {
 				},
 				["ExtraAbilityContainer"] = {
 					["orgPos"] = {
-						{
-							"CENTER", -- [1]
-							"UIParent", -- [2]
-							"CENTER", -- [3]
-							0, -- [4]
-							0, -- [5]
-						}, -- [1]
-						{
-							"BOTTOM", -- [1]
-							"UIParent", -- [2]
-							"BOTTOM", -- [3]
-							0, -- [4]
-							110, -- [5]
-						}, -- [2]
+						"TOP", -- [1]
+						"UIParent", -- [2]
+						"TOP", -- [3]
+						0, -- [4]
+						-135, -- [5]
 					},
 					["name"] = "ExtraAbilityContainer",
 					["pos"] = {
@@ -53,11 +44,10 @@ MADB = {
 				},
 				["TooltipMover"] = {
 					["orgPos"] = {
-						"BOTTOMRIGHT", -- [1]
-						"RightChatToggleButton", -- [2]
-						"BOTTOMRIGHT", -- [3]
+						"TOP", -- [1]
+						"UIParent", -- [2]
+						0, -- [3]
 						0, -- [4]
-						0, -- [5]
 					},
 					["name"] = "TooltipMover",
 					["pos"] = {
@@ -71,8 +61,8 @@ MADB = {
 			},
 		},
 	},
-	["frameListRows"] = 18,
-	["noBags"] = false,
-	["playSound"] = false,
 	["closeGUIOnEscape"] = false,
+	["playSound"] = false,
+	["noBags"] = false,
+	["frameListRows"] = 18,
 }

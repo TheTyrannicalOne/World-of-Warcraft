@@ -3,9 +3,9 @@
 ------------------------------------------------------------------------------
 -- GUI_Rematch_Sorting.lua - Sorting Pets
 --
--- Author: Expelliarm5s / August 2022 / All Rights Reserved
+-- Author: Expelliarm5s / November 2022 / All Rights Reserved
 --
--- Version 1.1.26
+-- Version 1.1.28
 ------------------------------------------------------------------------------
 -- luacheck: ignore 212 globals DLAPI
 -- luacheck: globals Rematch RematchSettings

@@ -48,8 +48,8 @@ local OverlayFrameUpdate, OverlayFrameHide, GetModulesOptionsTable, MoveModule, 
 local defaults = {
 	profile = {
 		anchorPoint = "TOPRIGHT",
-		xOffset = -85,
-		yOffset = -200,
+		xOffset = -115,
+		yOffset = -280,
 		maxHeight = 400,
 		frameScrollbar = true,
 		frameStrata = "LOW",
@@ -988,6 +988,7 @@ local options = {
 								return not db.qiActiveButton
 							end,
 							func = function()
+								HideUIPanel(SettingsPanel)
 								KTF.ActiveFrame.overlay:Show()
 								StaticPopup_Show(addonName.."_LockUI", nil, "Addon UI elements unlocked.\nMove them and click Lock when you are done.\n\n"..cBold.."Right Click|r on mover restore the default position.")
 							end,
@@ -1457,9 +1458,7 @@ function KT:CheckAddOn(addon, version, isUI)
 end
 
 function KT:OpenOptions()
-	InterfaceOptionsFrame_OpenToCategory(self.optionsFrame.profiles)
-	InterfaceOptionsFrame_OpenToCategory(self.optionsFrame.profiles)
-	InterfaceOptionsFrame_OpenToCategory(self.optionsFrame.general)
+	Settings.OpenToCategory(self.optionsFrame.general.name, true)
 end
 
 function KT:InitProfile(event, database, profile)
@@ -1542,21 +1541,7 @@ function KT:SetupOptions()
 	end
 end
 
-KT.settings = {}
-InterfaceOptionsFrame:HookScript("OnHide", function(self)
-	for k, v in pairs(KT.settings) do
-		if strfind(k, "Save") then
-			KT.settings[k] = false
-		else
-			db[k] = v
-		end
-	end
-	ACR:NotifyChange(addonName)
-
-	OverlayFrameHide()
-end)
-
-hooksecurefunc("OptionsList_SelectButton", function(listFrame, button)
+SettingsPanel:HookScript("OnHide", function(self)
 	OverlayFrameHide()
 end)
 

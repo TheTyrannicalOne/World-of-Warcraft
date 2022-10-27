@@ -4,17 +4,25 @@
 --      WoWPro_Widgets.lua      --
 ----------------------------------
 
+local texture_prefix = "Interface\\AddOns\\WoWPro\\Textures\\"
+WoWPro.UI_CheckBox_Up = texture_prefix .. "UI-CheckBox-Up" -- 130755 ?
+WoWPro.UI_CheckBox_Down = texture_prefix .. "UI-CheckBox-Down" -- 130752
+WoWPro.UI_CheckBox_Highlight = texture_prefix .. "UI-CheckBox-Highlight" -- 130753 ?
+WoWPro.UI_CheckBox_Check_Disabled = texture_prefix .. "UI-CheckBox-Check-Disabled" -- 130750 ?
+WoWPro.UI_CheckBox_Check = texture_prefix .. "UI-CheckBox-Check" -- 130751?
+
+
 function WoWPro:CreateCheck(parent)
     local check = _G.CreateFrame("CheckButton", nil, parent)
-    check:RegisterForClicks("AnyUp")
+    check:RegisterForClicks("anyDown")
     check:SetPoint("TOPLEFT")
     check:SetWidth(15)
     check:SetHeight(15)
-    check:SetNormalTexture("Interface\\Buttons\\UI-CheckBox-Up")
-    check:SetPushedTexture("Interface\\Buttons\\UI-CheckBox-Down")
-    check:SetHighlightTexture("Interface\\Buttons\\UI-CheckBox-Highlight")
-    check:SetDisabledCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check-Disabled")
-    check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check")
+    check:SetNormalTexture(WoWPro.UI_CheckBox_Up)
+    check:SetPushedTexture(WoWPro.UI_CheckBox_Down)
+    check:SetHighlightTexture(WoWPro.UI_CheckBox_Highlight)
+    check:SetDisabledCheckedTexture(WoWPro.UI_CheckBox_Check_Disabled)
+    check:SetCheckedTexture(WoWPro.UI_CheckBox_Check)
     check:Hide()
 
     return check
@@ -119,7 +127,7 @@ function WoWPro:CreateItemButton(parent, id)
     itemicon:SetTexture("Interface\\Icons\\INV_Misc_Bag_08")
     itemicon:SetAllPoints(itembutton)
 
-    itembutton:RegisterForClicks("anyUp")
+    itembutton:RegisterForClicks("anyDown")
     itembutton:Hide()
 
     return itembutton, itemicon, itemcooldown
@@ -140,9 +148,13 @@ function WoWPro:CreateJumpButton(parent, id)
     local jumpicon = jumpbutton:CreateTexture(nil, "ARTWORK")
     jumpicon:SetWidth(24)
     jumpicon:SetHeight(24)
-    jumpicon:SetTexture("Interface\\Icons\\Inv_7xp_inscription_talenttome02")
+	if WoWPro.RETAIL then
+		jumpicon:SetTexture("Interface\\Icons\\Inv_7xp_inscription_talenttome02")
+	else
+		jumpicon:SetTexture("Interface\\Icons\\inv_misc_book_12")
+	end
     jumpicon:SetAllPoints(jumpbutton)
-    jumpbutton:RegisterForClicks("anyUp")
+    jumpbutton:RegisterForClicks("anyDown")
     jumpbutton:Hide()
 
     return jumpbutton, jumpicon
@@ -183,7 +195,7 @@ function WoWPro:CreateTargetButton(parent, id)
     targeticon:SetTexture("Interface\\Icons\\Ability_Marksmanship")
     targeticon:SetAllPoints(targetbutton)
 
-    targetbutton:RegisterForClicks("anyUp")
+    targetbutton:RegisterForClicks("anyDown")
     targetbutton.SetTarget = function () targetbutton:SetTexture("Interface\\Icons\\Ability_Marksmanship"); end
     targetbutton.SetMacro = function () targetbutton:SetTexture("Interface\\Icons\\INV_Misc_Book_11"); end
     targetbutton.SetEmote = function () targetbutton:SetTexture("Interface\\Icons\\INV_Misc_Toy_07"); end
@@ -212,7 +224,7 @@ function WoWPro:CreateEAButton(parent, id)
     eaicon:SetHeight(36)
     eaicon:SetTexture("Interface\\Icons\\INV_Misc_Bag_08")
     eaicon:SetAllPoints(eabutton)
-    eabutton:RegisterForClicks("anyUp")
+    eabutton:RegisterForClicks("anyDown")
     eabutton:Hide()
 
     return eabutton, eaicon, cooldown
@@ -225,6 +237,7 @@ function WoWPro:CreateEAButtonSecured(id)
     eabutton:SetHeight(32)
     eabutton:SetWidth(32)
     eabutton:Hide()
+    eabutton:RegisterForClicks("anyDown")
     return eabutton
 end
 
@@ -235,6 +248,7 @@ function WoWPro:CreateTargetButtonSecured(id)
     targetbutton:SetHeight(32)
     targetbutton:SetWidth(32)
     targetbutton:Hide()
+	targetbutton:RegisterForClicks("anyDown")
     return targetbutton
 end
 
@@ -245,6 +259,7 @@ function WoWPro:CreateItemButtonSecured(id)
     itembutton:SetHeight(32)
     itembutton:SetWidth(32)
     itembutton:Hide()
+	itembutton:RegisterForClicks("anyDown")
     return itembutton
 end
 
@@ -341,12 +356,12 @@ end
 
 function WoWPro:CreateTab(name, parent)
     local tab
-    if WoWPro.DF then
+    if WoWPro.RETAIL then
         tab = _G.CreateFrame('Button', nil, parent, "PanelTabButtonTemplate")
     else
         tab = _G.CreateFrame('Button', nil, parent, "TabButtonTemplate")
     end
-    tab:RegisterForClicks("anyUp")
+    tab:RegisterForClicks("anyDown")
     tab.Text:SetJustifyH("CENTER")
     tab.Text:SetText(name)
     _G.PanelTemplates_TabResize(tab)

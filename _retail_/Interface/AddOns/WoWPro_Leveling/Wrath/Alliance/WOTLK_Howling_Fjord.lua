@@ -1,7 +1,7 @@
-local guide = WoWPro:RegisterGuide("JamHow7274", "Leveling", "Howling Fjord", "WoWPro Team", "Alliance", 3)
+local guide = WoWPro:RegisterGuide("WOTLK_Howling_Fjord", "Leveling", "Howling Fjord", "WoWPro Team", "Alliance", 3)
 WoWPro:GuideNickname(guide, "Howling Fjord")
 WoWPro:GuideName(guide, "Howling Fjord")
-WoWPro:GuideNextGuide(guide, "Dragonblight")
+WoWPro:GuideNextGuide(guide, "WOTLK_Dragonblight")
 WoWPro:GuideLevels(guide, 68, 72)
 WoWPro:GuideSteps(guide, function()
 return [[
@@ -331,7 +331,7 @@ l Tough Ram Meat|QID|11284|L|33352 4|N|Loot 4 Tough Ram Meat from Frosthorn Rams
 U Tough Ram Meat|QID|11284|U|33352|L|33477|N|Combine the 4 Tough Ram Meat to get a Giant Yeti Meal.|M|71.57,13.76|
 T The Book of Runes|QID|11346|M|62.3,17.2|N|To Prospector Belvar.|
 A Mastering the Runes|QID|11349|PRE|11346|M|62.3,17.2|N|From Prospector Belvar.|
-T March of the Giants|QID|11355|N|To Researcher Aderan.|
+T March of the Giants|QID|11355|M|62.56,16.57|N|To Researcher Aderan.|
 A The Lodestone|QID|11358|PRE|11355|N|From Researcher Aderan.|
 C The Lodestone|QID|11358|U|33819|N|Use the Rune Sample at the Broken Tablet here and wait for the quest complete message.|M|71.63,17.61|
 C Mastering the Runes|QID|11349|N|Look for Iron Rune Carving Tools under the canopies in this area and loot them.|M|67.51,23.29|
@@ -390,20 +390,20 @@ T Operation: Skornful Wrath|QID|11248|U|33311|N|Use the Westguard Command Insign
 A Towers of Certain Doom|QID|11245|PRE|11248|M|44.4,26.4|N|From Westguard Sergeant.|
 A Gruesome, But Necessary|QID|11246|PRE|11248|M|44.4,26.4|N|From Westguard Sergeant.|
 A Burn Skorn, Burn!|QID|11247|PRE|11248|M|44.4,26.4|N|From Westguard Sergeant.|
-A Stop the Ascension!|QID|11249|U|33314|N|From UI Alert.|M|45.3,27.0|O|
+A Stop the Ascension!|QID|11249|U|33314|N|Right click the Vrykul Scroll of Ascension.|M|45.3,27.0|O|
 C Gruesome, But Necessary|S|QID|11246|U|33310|N|Dismember Vrykul corpses by using The Sergeant's Machete on them.|M|44.92,34.36|
 U Northwest Longhouse|QID|11247|QO|1|U|33321|N|Go inside the longhouse here and use the Sergeant's Torch.|M|43.62,28.69|
 U Northwest Tower|QID|11245|QO|1|U|33323|N|Get within 90 yards of the tower here and use the Sergeant's Flare.|M|43.61,29.91|
 U Northeast Longhouse|QID|11247|QO|2|U|33321|N|Go inside the longhouse here and use the Sergeant's Torch.|M|46.38,28.16|
 C Burn Skorn, Burn!|QID|11247|QO|3|U|33321|N|Go inside the Barracks here and use the Sergeant's Torch.|M|45.80,30.45|
 U East Tower|QID|11245|QO|2|U|33323|N|Get within 90 yards of the tower here and use the Sergeant's Flare.|M|46.70,32.85|
-U Southeast Tower|QID|11245|QO|3|U|33323|N|Get within 90 yards of the tower here and use the Sergeant's Flare.|M|47.10,36.87|
+U Southeast Tower|QID|11245|QO|4|U|33323|N|Get within 90 yards of the tower here and use the Sergeant's Flare.|M|47.10,36.87|
 ;removed next step, because likely now a 100% drop rate and item id changes after accepting the quest
 ;l Vrykul Scroll of Ascension|QID|11249|L|33314|N|Kill Vrykul mobs until you have the Vrykul Scroll of Ascension.|M|44.92,34.36|
 C Stop the Ascension!|QID|11249|U|33339|N|Use the Vrykul Scroll of Ascension at Thane's Pyre to summon Halfdan the Ice-Hearted, then kill him.|M|44.83,34.93|
-C Towers of Certain Doom|QID|11245|QO|4|U|33323|N|Get within 90 yards of the tower here and use the Sergeant's Flare.|M|43.18,36.11|
+C Towers of Certain Doom|QID|11245|QO|3|U|33323|N|Get within 90 yards of the tower here and use the Sergeant's Flare.|M|43.18,36.11|
 C Gruesome, But Necessary|US|QID|11246|U|33310|N|Finish dismembering Vrykul corpses by using The Sergeant's Machete on them.|M|44.92,34.36|
-T Towers of Certain Doom|QID|11245|U|33311|N|Use the Westguard Command Insignia to summon Westguard Sergeant again if he's not still around.|
+T Towers of Certain Doom|QID|11245|U|33311|M|PLAYER|N|Use the Westguard Command Insignia to summon Westguard Sergeant again if he's not still around.|
 T Gruesome, But Necessary|QID|11246|N|To Westguard Sergeant.|
 T Burn Skorn, Burn!|QID|11247|N|To Westguard Sergeant.|
 A All Hail the Conqueror of Skorn!|QID|11250|PRE|11245&11246&11247|N|From Westguard Sergeant.|
@@ -420,7 +420,7 @@ T It's a Scourge Device|QID|11395|M|24.2,32.5|N|To Explorer Jaren.|
 A Bring Down Those Shields|QID|11396|PRE|11395|M|24.2,32.5|N|From Explorer Jaren.|
 C Bring Down Those Shields|QID|11396|U|33960|N|Find the 3 Scourging Crystals and use the Scourging Crystal Controller on them, then kill them. Pet kills do not count.|M|22.69,31.14;21.92,28.75;21.52,24.60|CN|
 A Trident of the Son|QID|11422|M|19.8,22.2|N|From Old Icefin.|
-C Trident of the Son|QID|11422|N|Find Rotgill patrolling the coast here and kill him for Rotgill's Trident.|M|24.24,35.67|
+C Trident of the Son|QID|11422|N|Find Rotgill patrolling the coast here and kill him for Rotgill's Trident.|M|24.24,35.67|T|Rotgill|
 C And You Thought Murlocs Smelled Bad!|US|QID|11394|N|Kill any remaining Scourge mobs you need for this quest.|M|22.78,31.13|
 T And You Thought Murlocs Smelled Bad!|QID|11394|M|24.2,32.5|N|To Explorer Jaren.|
 T Bring Down Those Shields|QID|11396|M|24.2,32.5|N|To Explorer Jaren.|
@@ -432,7 +432,6 @@ A Leader of the Deranged|QID|11240|PRE|11218|M|29.1,41.8|N|From Sapper Steelring
 T Stop the Ascension!|QID|11249|M|28.9,44.0|N|To Father Levariol.|
 T All Hail the Conqueror of Skorn!|QID|11250|M|28.8,44.1|N|To Captain Adams.|
 A Dealing With Gjalerbron|QID|11235|PRE|11250|M|28.8,44.1|N|From Captain Adams.|
-A Of Traitors and Treason|QID|12297|PRE|11250|N|From Captain Adams.|
 A Of Keys and Cages|QID|11231|PRE|11250|M|28.9,44.0|N|From Father Levariol.|
 r Sell junk, repair, re-stock food/drink.|QID|11416|M|29.83,42.60|
 C Dealing With Gjalerbron|S|QID|11235|N|Kill the Vrykul you need for this quest.|M|34.68,15.28|
@@ -452,7 +451,7 @@ A In Service to the Light|QID|11239|PRE|11231|M|28.9,44.0|N|From Father Levariol
 T Dealing With Gjalerbron|QID|11235|M|28.8,44.1|N|To Captain Adams.|
 A Necro Overlord Mezhen|QID|11236|PRE|11235|M|28.8,44.1|N|From Captain Adams.|
 T Gjalerbron Attack Plans|QID|11237|M|28.9,44.2|N|To Mage-Lieutenant Malister.|
-A The Frost Wyrm and its Master|QID|11238|PRE|11237|N|From Mage-Lieutenant Malister.|
+A The Frost Wyrm and its Master|QID|11238|PRE|11237|M|28.9,44.2|N|From Mage-Lieutenant Malister.|
 A Sleeping Giants|QID|11432|PRE|11231|M|28.9,44.2|N|From Mage-Lieutenant Malister.|
 r Sell junk, repair, re-stock food/drink.|QID|11239|M|29.83,42.60|
 K Deathless Watchers|S|QID|11239|QO|1|N|Kill the Deathless Watchers you need for this quest.|M|33.91,9.91|
@@ -475,7 +474,6 @@ T The Slumbering King|QID|11452|M|28.8,44.1|N|To Captain Adams.|
 T Sleeping Giants|QID|11432|M|28.9,44.2|N|To Mage-Lieutenant Malister.|
 T The Frost Wyrm and its Master|QID|11238|N|To Mage-Lieutenant Malister.|
 r Sell junk, repair, re-stock food/drink.|QID|12297|M|29.83,42.60|
-T Of Traitors and Treason|QID|12297|N|To Greer Orehammer.|
 A High Commander Halford Wyrmbane|QID|12298|PRE|12297|N|From Greer Orehammer, this quest leads into Dragonblight.|
 F Wintergarde Keep|QID|12298|N|Talk to Greer Orehammer and choose to fly to Wintergarde Keep.|
 ]]

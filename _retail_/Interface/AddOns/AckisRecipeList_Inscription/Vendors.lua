@@ -45,7 +45,10 @@ function module:InitializeVendors()
 	AddVendor(128702,	L["Roko"],				Z.TIRAGARDE_SOUND,		79.6,	81.8,	"Neutral")
 	AddVendor(160711,	L["Zhang Ku"],				Z.VALE_OF_ETERNAL_BLOSSOMS,	44.4,	75.4,	"Neutral")
 	AddVendor(160714,	L["Provisioner Qorra"],			Z.ULDUM,			55.1,	32.9,	"Neutral")
+	AddVendor(162447,	L["Spindlenose"],			Z.ARDEMWEALD,			59.6,	52.8,	"Neutral")
+	AddVendor(171808,	L["Ta'tru"],				Z.REVENDRETH,			51.0,	78.8,	"Neutral")
 	AddVendor(172634,	L["Brightgleam"],			Z.ARDENWEALD,			33.2,	51.6,	"Neutral")
+
 
 	self.InitializeVendors = nil
 end

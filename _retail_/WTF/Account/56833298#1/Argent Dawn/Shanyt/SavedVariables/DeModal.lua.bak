@@ -1,0 +1,2 @@
+
+DEMODAL_CHAR_DB = nil

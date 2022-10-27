@@ -1,9 +1,8 @@
 
 SpyPerCharDB = {
-	["version"] = "1.1",
-	["IgnoreData"] = {
-	},
 	["KOSData"] = {
+	},
+	["IgnoreData"] = {
 	},
 	["PlayerData"] = {
 		["Vascoes-Alleria"] = {
@@ -381,4 +380,5 @@ SpyPerCharDB = {
 			["name"] = "Demobursts-Norgannon",
 		},
 	},
+	["version"] = "1.1",
 }

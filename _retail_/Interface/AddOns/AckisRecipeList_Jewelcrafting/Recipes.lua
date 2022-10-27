@@ -8875,7 +8875,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(183099, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(173125, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("JEWELCRAFTING_GEM_RED")
-	recipe:AddRepVendor(FAC.COURT_OF_HARVESTERS, REP.HONORED, 156822)
+	recipe:AddRepVendor(FAC.COURT_OF_HARVESTERS, REP.HONORED, 156822, 176066)
 
 	-- Quick Jewel Doublet -- 311871
 	recipe = AddRecipe(311871, V.SHA, Q.COMMON)
@@ -9160,6 +9160,55 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(186982, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("JEWELCRAFTING_CREATED_ITEM")
 	recipe:AddCustom("RIFTBOUND_CACHE")
+
+-- 9.2 Recipes
+
+	-- Mass Prospect Progenium -- 359492
+	recipe = AddRecipe(359492, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(40, 40, 50, 55, 60)
+	recipe:SetCraftedItem(187700, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("JEWELCRAFTING_MATERIALS")
+	recipe:AddTrainer(156670)
+
+	-- Crafter's Mark IV -- 359663
+	recipe = AddRecipe(359663, V.SHA, Q.EPIC)
+	recipe:SetSkillLevels(201, 201, 201, 201, 201)
+	recipe:SetRecipeItem(187750, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187741, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("JEWELCRAFTING_CREATED_ITEM")
+	recipe:AddRepVendor(FAC.THE_ENLIGHTENED, REP.HONORED, 182257)
+
+	-- Crafter's Mark of the First Ones -- 359672
+	recipe = AddRecipe(359672, V.SHA, Q.EPIC)
+	recipe:SetSkillLevels(201, 201, 201, 201, 201)
+	recipe:SetRecipeItem(187749, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187742, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("JEWELCRAFTING_CREATED_ITEM")
+	recipe:AddRepVendor(FAC.THE_ENLIGHTENED, REP.HONORED, 182257)
+
+	-- Vestige of the Eternal -- 359701
+	recipe = AddRecipe(359701, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 203, 203, 203)
+	recipe:SetRecipeItem(187785, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187784, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("JEWELCRAFTING_CREATED_ITEM")
+	recipe:AddRepVendor(FAC.THE_ENLIGHTENED, REP.HONORED, 182257)
+
+	-- Aealic Harmonizing Stone -- 360016
+	recipe = AddRecipe(360016, V.SHA, Q.RARE)
+	recipe:SetSkillLevels(100, 100, 100, 110, 120)
+	recipe:SetRecipeItem(187830, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187829, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("JEWELCRAFTING_CREATED_ITEM")
+	recipe:AddMobDrop(181249)
+
+	-- Devourer Essence Stone -- 360317
+	recipe = AddRecipe(360317, V.SHA, Q.RARE)
+	recipe:SetSkillLevels(100, 100, 100, 110, 120)
+	recipe:SetRecipeItem(187847, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187849, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("JEWELCRAFTING_CREATED_ITEM")
+	recipe:AddMobDrop(183516, 184413)
 
 	self.InitializeRecipes = nil
 end

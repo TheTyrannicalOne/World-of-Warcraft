@@ -27,11 +27,12 @@ L["SORT_BY_TRAVEL_DISTANCE"] = "Travelled distance"
 L["SORT_BY_TRAVEL_DURATION"] = "Travelled duration"
 L["SORT_BY_USAGE_COUNT"] = "Count of usage"
 L["SORT_FAVORITES_FIRST"] = "Favorites First"
+L["SORT_DRAGONRIDING_TOP"] = "Dragonriding mounts at the top"
 L["SORT_REVERSE"] = "Reverse Sort"
 L["SORT_UNOWNED_BOTTOM"] = "Unowned at Bottom"
 L["SORT_UNUSABLE_BOTTOM"] = "Unusable after Usable"
 L["STATS_TIP_LEARNED_DATE_HEAD"] = "Possession date"
-L["STATS_TIP_RARITY_HEAD"] = "Rarity"
+L["STATS_TIP_RARITY_HEAD"] = RARITY
 L["STATS_TIP_RARITY_TEXT"] = "% of characters who own this mount\nData is kindly provided by {RR}."
 L["STATS_TIP_TRAVEL_DISTANCE_HEAD"] = "Travel distance"
 L["STATS_TIP_TRAVEL_TIME_HEAD"] = "Travel time"
@@ -213,6 +214,7 @@ L["RESET_WINDOW_SIZE"] = "Reset journal size"
 L["SETTING_ABOUT_AUTHOR"] = "Author"
 L["SETTING_ACHIEVEMENT_POINTS"] = "Show achievement points"
 L["SETTING_AUTO_FAVOR"] = "Automatically set new mounts as favorite"
+L["SETTING_COLOR_NAMES"] = "Colorize names in list based on rarity"
 L["SETTING_COMPACT_LIST"] = "Compact mount list"
 L["SETTING_CURSOR_KEYS"] = "Enable Up&Down keys to browse mounts"
 L["SETTING_FAVORITE_PER_CHAR"] = "Favorite mounts per character"
@@ -252,6 +254,7 @@ L["SORT_BY_LEARNED_DATE"] = "Datum des Erhalts"
 L["SORT_BY_TRAVEL_DISTANCE"] = "Gereiste Entfernung"
 L["SORT_BY_TRAVEL_DURATION"] = "Reisedauer"
 L["SORT_BY_USAGE_COUNT"] = "Nutzungshäufigkeit"
+L["SORT_DRAGONRIDING_TOP"] = "Reitdrachen an den Anfang"
 L["SORT_FAVORITES_FIRST"] = "Favoriten zuerst"
 L["SORT_REVERSE"] = "Sortierung umkehren"
 L["SORT_UNOWNED_BOTTOM"] = "Nicht gesammelt nach unten"
@@ -276,6 +279,7 @@ L[ [=[RESET_WINDOW_SIZE
 L["SETTING_ABOUT_AUTHOR"] = "Autor"
 L["SETTING_ACHIEVEMENT_POINTS"] = "Zeige Erfolgspunkte"
 L["SETTING_AUTO_FAVOR"] = "Setze neue Reittiere automatisch als Favoriten"
+L["SETTING_COLOR_NAMES"] = "Namen in der Liste nach Seltenheit einfärben"
 L["SETTING_COMPACT_LIST"] = "Kompakte Mount-Liste"
 L["SETTING_CURSOR_KEYS"] = "Aktiviere Aufwärts- und Abwärtspfeiltaste zum Durchblättern"
 L["SETTING_FAVORITE_PER_CHAR"] = "Speichere Favoriten pro Charakter"
@@ -339,6 +343,7 @@ L["Discs"] = "Flugscheiben"
 L["Dragonhawks"] = "Drachenfalken"
 L["Drakes"] = "Drachen"
 L["Dread Ravens"] = "Schreckensraben"
+L["Eagle"] = "Adler"
 L["Elekks"] = "Elekks"
 L["Elementals"] = "Elementare"
 L["Falcosaurs"] = "Falkosaurier"
@@ -387,6 +392,7 @@ L["Mechanical Cats"] = "Mechanische Katzen"
 L["Mechanical Steeds"] = "Mechanische Pferde"
 L["Mechanostriders"] = "Roboschreiter"
 L["Mecha-suits"] = "Mecha"
+L["Mollusc"] = "Weichtiere"
 L["Moose"] = "Elche"
 L["Moth"] = "Motte"
 L["Motorcycles"] = "Motorräder"
@@ -396,6 +402,7 @@ L["Nether Drakes"] = "Netherdrachen"
 L["Nether Rays"] = "Netherrochen"
 L["N'Zoth Serpents"] = "N'Zoth-Schlangen"
 L["Others"] = "Andere"
+L["Ottuk"] = "Ottuk"
 L["Ox"] = "Ochse"
 L["Pandaren Phoenixes"] = "Pandarenphönixe"
 L["Parrots"] = "Papageien"
@@ -424,6 +431,7 @@ L["Sea Serpents"] = "Seeschlangen"
 L["Seahorses"] = "Seepferde"
 L["Seat"] = "Wiege"
 L["Silithids"] = "Qirajipanzerdrohnen"
+L["Slug"] = "Nacktschnecke"
 L["Snail"] = "Schnecke"
 L["Snapdragons"] = "Schnappdrachen"
 L["Spider Tanks"] = "Mechaspinnen"
@@ -481,6 +489,7 @@ L["SORT_BY_LEARNED_DATE"] = "Fecha de aprendizaje"
 L["SORT_BY_TRAVEL_DISTANCE"] = "Distancia recorrida"
 L["SORT_BY_TRAVEL_DURATION"] = "Duración de los viajes"
 L["SORT_BY_USAGE_COUNT"] = "Recuento de uso"
+L["SORT_DRAGONRIDING_TOP"] = "Las monturas dragón al principio"
 L["SORT_FAVORITES_FIRST"] = "Favoritas primero"
 L["SORT_REVERSE"] = "Ordenación inversa"
 L["SORT_UNOWNED_BOTTOM"] = "Faltantes al final"
@@ -504,6 +513,7 @@ L[ [=[RESET_WINDOW_SIZE
 L["SETTING_ABOUT_AUTHOR"] = "Autor"
 L["SETTING_ACHIEVEMENT_POINTS"] = "Mostrar los puntos de logros"
 L["SETTING_AUTO_FAVOR"] = "Selecciona automáticamente las nuevas monturas como favoritas"
+L["SETTING_COLOR_NAMES"] = "Colorear los nombres de la lista según la rareza"
 L["SETTING_COMPACT_LIST"] = "Compactar la lista de monturas"
 L["SETTING_CURSOR_KEYS"] = "Habilitar las teclas Arriba y Abajo para explorar las monturas"
 L["SETTING_FAVORITE_PER_CHAR"] = "Monturas favoritas por personaje"
@@ -538,7 +548,7 @@ L["Bees"] = "Abejas"
 L["Birds"] = "Pájaros"
 L["Blood Ticks"] = "Garrapatas de Sangre"
 L["Boars"] = "Jabalies"
-L["Book"] = "Libro"
+L["Book"] = "Libros"
 L["Bovids"] = "Bóvidos"
 L["Brutosaurs"] = "Brutosaurios"
 L["Camels"] = "Camellos"
@@ -567,6 +577,7 @@ L["Discs"] = "Discos"
 L["Dragonhawks"] = "Dracohalcones"
 L["Drakes"] = "Dracos"
 L["Dread Ravens"] = "Cuervos Aterradores"
+L["Eagle"] = "Águilas"
 L["Elekks"] = "Elekks"
 L["Elementals"] = "Elementales"
 L["Falcosaurs"] = "Falcosaurios"
@@ -615,6 +626,7 @@ L["Mechanical Cats"] = "Gatos Mecánicos"
 L["Mechanical Steeds"] = "Corceles Mecánicos"
 L["Mechanostriders"] = "Mecazancudos"
 L["Mecha-suits"] = "Trajes Mecánicos"
+L["Mollusc"] = "Moluscos"
 L["Moose"] = "Alces"
 L["Moth"] = "Polillas"
 L["Motorcycles"] = "Motos"
@@ -624,6 +636,7 @@ L["Nether Drakes"] = "Dracos Abisales"
 L["Nether Rays"] = "Rayas Abisales"
 L["N'Zoth Serpents"] = "Serpientes de N'Zoth"
 L["Others"] = "Otros"
+L["Ottuk"] = "Nutriones"
 L["Ox"] = "Ox"
 L["Pandaren Phoenixes"] = "Fénix Pandaren"
 L["Parrots"] = "Loros"
@@ -637,7 +650,7 @@ L["Raptors"] = "Raptores"
 L["Rats"] = "Ratas"
 L["Ravagers"] = "Atracadores"
 L["Rays"] = "Rayas"
-L["Razorwing"] = "Alafilada"
+L["Razorwing"] = "Alafiladas"
 L["Reptiles"] = "Reptiles"
 L["Rhinos"] = "Rinocerontes"
 L["Riverbeasts"] = "Bestias Fluviales"
@@ -652,6 +665,7 @@ L["Sea Serpents"] = "Serpientes de Mar"
 L["Seahorses"] = "Caballitos de Mar"
 L["Seat"] = "Asientos"
 L["Silithids"] = "Silítidos"
+L["Slug"] = "Limacos"
 L["Snail"] = "Caracoles"
 L["Snapdragons"] = "Bocadragones"
 L["Spider Tanks"] = "Arañas Mecánicas"
@@ -724,6 +738,8 @@ L["Reset filters"] = "Réinitialiser les filtres"
 --[[Translation missing --]]
 --[[ L["SORT_BY_USAGE_COUNT"] = "Count of usage"--]] 
 --[[Translation missing --]]
+--[[ L["SORT_DRAGONRIDING_TOP"] = "Dragonriding mounts at the top"--]] 
+--[[Translation missing --]]
 --[[ L["SORT_FAVORITES_FIRST"] = "Favorites First"--]] 
 --[[Translation missing --]]
 --[[ L["SORT_REVERSE"] = "Reverse Sort"--]] 
@@ -766,6 +782,8 @@ L["Transform"] = "Transformation"
 --[[ L["SETTING_ACHIEVEMENT_POINTS"] = "Show achievement points"--]] 
 --[[Translation missing --]]
 --[[ L["SETTING_AUTO_FAVOR"] = "Automatically set new mounts as favorite"--]] 
+--[[Translation missing --]]
+--[[ L["SETTING_COLOR_NAMES"] = "Colorize names in list based on rarity"--]] 
 --[[Translation missing --]]
 --[[ L["SETTING_COMPACT_LIST"] = "Compact mount list"--]] 
 --[[Translation missing --]]
@@ -875,6 +893,8 @@ L["Dragonhawks"] = "Faucon-Dragons"
 L["Drakes"] = "Drakes"
 --[[Translation missing --]]
 --[[ L["Dread Ravens"] = "Dread Ravens"--]] 
+--[[Translation missing --]]
+--[[ L["Eagle"] = "Eagle"--]] 
 L["Elekks"] = "Elekks"
 L["Elementals"] = "Élémentaires"
 --[[Translation missing --]]
@@ -954,6 +974,8 @@ L["Mammoths"] = "Mammouths"
 L["Mechanostriders"] = "Mécanotrotteurs"
 --[[Translation missing --]]
 --[[ L["Mecha-suits"] = "Mecha-suits"--]] 
+--[[Translation missing --]]
+--[[ L["Mollusc"] = "Mollusc"--]] 
 L["Moose"] = "Élans"
 --[[Translation missing --]]
 --[[ L["Moth"] = "Moth"--]] 
@@ -970,6 +992,8 @@ L["Mushan"] = "Mushans"
 --[[ L["N'Zoth Serpents"] = "N'Zoth Serpents"--]] 
 --[[Translation missing --]]
 --[[ L["Others"] = "Others"--]] 
+--[[Translation missing --]]
+--[[ L["Ottuk"] = "Ottuk"--]] 
 --[[Translation missing --]]
 --[[ L["Ox"] = "Ox"--]] 
 --[[Translation missing --]]
@@ -1013,6 +1037,8 @@ L["Seahorses"] = "Hippocampes"
 --[[Translation missing --]]
 --[[ L["Seat"] = "Seat"--]] 
 L["Silithids"] = "Silithides"
+--[[Translation missing --]]
+--[[ L["Slug"] = "Slug"--]] 
 --[[Translation missing --]]
 --[[ L["Snail"] = "Snail"--]] 
 --[[Translation missing --]]
@@ -1106,6 +1132,8 @@ L["Reset filters"] = "필터 초기화"
 --[[Translation missing --]]
 --[[ L["SORT_BY_USAGE_COUNT"] = "Count of usage"--]] 
 --[[Translation missing --]]
+--[[ L["SORT_DRAGONRIDING_TOP"] = "Dragonriding mounts at the top"--]] 
+--[[Translation missing --]]
 --[[ L["SORT_FAVORITES_FIRST"] = "Favorites First"--]] 
 --[[Translation missing --]]
 --[[ L["SORT_REVERSE"] = "Reverse Sort"--]] 
@@ -1146,6 +1174,8 @@ L["Transform"] = "변환"
 --[[ L["SETTING_ACHIEVEMENT_POINTS"] = "Show achievement points"--]] 
 --[[Translation missing --]]
 --[[ L["SETTING_AUTO_FAVOR"] = "Automatically set new mounts as favorite"--]] 
+--[[Translation missing --]]
+--[[ L["SETTING_COLOR_NAMES"] = "Colorize names in list based on rarity"--]] 
 L["SETTING_COMPACT_LIST"] = "간소한 목록"
 L["SETTING_CURSOR_KEYS"] = "위 아래 화살표 키로 목록 탐색하기"
 L["SETTING_FAVORITE_PER_CHAR"] = "캐릭터별 즐겨찾기"
@@ -1224,6 +1254,8 @@ L["Discs"] = "원반"
 L["Dragonhawks"] = "용매"
 L["Drakes"] = "비룡"
 L["Dread Ravens"] = "지옥까마귀"
+--[[Translation missing --]]
+--[[ L["Eagle"] = "Eagle"--]] 
 L["Elekks"] = "엘레크"
 L["Elementals"] = "정령"
 L["Falcosaurs"] = "팔코사우루스"
@@ -1281,6 +1313,8 @@ L["Mechanical Cats"] = "기계형 고양이"
 L["Mechanical Steeds"] = "기계형 군마"
 L["Mechanostriders"] = "기계타조"
 L["Mecha-suits"] = "메카수트"
+--[[Translation missing --]]
+--[[ L["Mollusc"] = "Mollusc"--]] 
 L["Moose"] = "엘크"
 --[[Translation missing --]]
 --[[ L["Moth"] = "Moth"--]] 
@@ -1291,6 +1325,8 @@ L["Nether Drakes"] = "황천의 비룡"
 L["Nether Rays"] = "황천 가오리"
 L["N'Zoth Serpents"] = "느조스 뱀"
 L["Others"] = "기타"
+--[[Translation missing --]]
+--[[ L["Ottuk"] = "Ottuk"--]] 
 --[[Translation missing --]]
 --[[ L["Ox"] = "Ox"--]] 
 L["Pandaren Phoenixes"] = "판다렌 불사조"
@@ -1325,6 +1361,8 @@ L["Seahorses"] = "해마"
 --[[Translation missing --]]
 --[[ L["Seat"] = "Seat"--]] 
 L["Silithids"] = "실리시드"
+--[[Translation missing --]]
+--[[ L["Slug"] = "Slug"--]] 
 --[[Translation missing --]]
 --[[ L["Snail"] = "Snail"--]] 
 L["Snapdragons"] = "치악룡"
@@ -1389,6 +1427,8 @@ L["SORT_BY_LEARNED_DATE"] = "Data da recebimento"
 L["SORT_BY_TRAVEL_DISTANCE"] = "Distância percorrida"
 L["SORT_BY_TRAVEL_DURATION"] = "Duração de viagem"
 L["SORT_BY_USAGE_COUNT"] = "Contagem de uso"
+--[[Translation missing --]]
+--[[ L["SORT_DRAGONRIDING_TOP"] = "Dragonriding mounts at the top"--]] 
 L["SORT_FAVORITES_FIRST"] = "Favoritos Primeiro"
 L["SORT_REVERSE"] = "Ordem Inversa"
 L["SORT_UNOWNED_BOTTOM"] = "Não aprendidos por último"
@@ -1421,6 +1461,8 @@ L[ [=[RESET_WINDOW_SIZE
 --[[ L["SETTING_ABOUT_AUTHOR"] = "Author"--]] 
 L["SETTING_ACHIEVEMENT_POINTS"] = "Mostrar Pontos de Conquista"
 L["SETTING_AUTO_FAVOR"] = "Definir automaticamente novas montagens como favoritas"
+--[[Translation missing --]]
+--[[ L["SETTING_COLOR_NAMES"] = "Colorize names in list based on rarity"--]] 
 L["SETTING_COMPACT_LIST"] = "Lista de Montarias Compacta"
 L["SETTING_CURSOR_KEYS"] = "Ativar as teclas para cima e para baixo para navegar pelas montarias"
 L["SETTING_FAVORITE_PER_CHAR"] = "Montarias favoritas por personagem"
@@ -1487,6 +1529,8 @@ L["Discs"] = "Discos"
 L["Dragonhawks"] = "Falcodragos"
 L["Drakes"] = "Dracos"
 L["Dread Ravens"] = "Corvos Medonhos"
+--[[Translation missing --]]
+--[[ L["Eagle"] = "Eagle"--]] 
 L["Elekks"] = "Elekks"
 L["Elementals"] = "Elementais"
 L["Falcosaurs"] = "Falcossauros"
@@ -1535,6 +1579,8 @@ L["Mechanical Cats"] = "Gatos Mecânicos"
 L["Mechanical Steeds"] = "Corcéis Mecânicos"
 L["Mechanostriders"] = "Mecanostruzes"
 L["Mecha-suits"] = "Mecatrajes"
+--[[Translation missing --]]
+--[[ L["Mollusc"] = "Mollusc"--]] 
 L["Moose"] = "Alce"
 L["Moth"] = "Mariposa"
 L["Motorcycles"] = "Motocicletas"
@@ -1544,6 +1590,8 @@ L["Nether Drakes"] = "Dracos Etéreos"
 L["Nether Rays"] = "Arraias Etéreas "
 L["N'Zoth Serpents"] = "Serpentes de N'Zoth"
 L["Others"] = "Outros"
+--[[Translation missing --]]
+--[[ L["Ottuk"] = "Ottuk"--]] 
 L["Ox"] = "Boi"
 L["Pandaren Phoenixes"] = "Fênix Pandarênicas"
 L["Parrots"] = "Papagaios"
@@ -1572,6 +1620,8 @@ L["Sea Serpents"] = "Serpente Marinha"
 L["Seahorses"] = "Cavalos-marinhos"
 L["Seat"] = "Assento"
 L["Silithids"] = "Silitídeos"
+--[[Translation missing --]]
+--[[ L["Slug"] = "Slug"--]] 
 L["Snail"] = "Caracol"
 L["Snapdragons"] = "Dracoliscos"
 L["Spider Tanks"] = "Tanques Aranha"
@@ -1629,25 +1679,19 @@ L["SORT_BY_LEARNED_DATE"] = "Дата получения"
 L["SORT_BY_TRAVEL_DISTANCE"] = "Преодоленное расстояние"
 L["SORT_BY_TRAVEL_DURATION"] = "Продолжительность поездки"
 L["SORT_BY_USAGE_COUNT"] = "Количество использований"
+--[[Translation missing --]]
+--[[ L["SORT_DRAGONRIDING_TOP"] = "Dragonriding mounts at the top"--]] 
 L["SORT_FAVORITES_FIRST"] = "Избранные первыми"
 L["SORT_REVERSE"] = "Обратная сортировка"
 L["SORT_UNOWNED_BOTTOM"] = "Не полученные в конце списка"
 L["SORT_UNUSABLE_BOTTOM"] = "Не используемые после используемых"
---[[Translation missing --]]
---[[ L["STATS_TIP_LEARNED_DATE_HEAD"] = "Possession date"--]] 
---[[Translation missing --]]
---[[ L["STATS_TIP_RARITY_HEAD"] = "Rarity"--]] 
---[[Translation missing --]]
---[[ L["STATS_TIP_RARITY_TEXT"] = [=[% of characters who own this mount
-Data is kindly provided by {RR}.]=]--]] 
---[[Translation missing --]]
---[[ L["STATS_TIP_TRAVEL_DISTANCE_HEAD"] = "Travel distance"--]] 
---[[Translation missing --]]
---[[ L["STATS_TIP_TRAVEL_TIME_HEAD"] = "Travel time"--]] 
---[[Translation missing --]]
---[[ L["STATS_TIP_TRAVEL_TIME_TEXT"] = "in hours:minutes:seconds"--]] 
---[[Translation missing --]]
---[[ L["STATS_TIP_USAGE_COUNT_HEAD"] = "Usage count"--]] 
+L["STATS_TIP_LEARNED_DATE_HEAD"] = "Дата получения"
+L["STATS_TIP_RARITY_HEAD"] = "Редкость"
+L["STATS_TIP_RARITY_TEXT"] = "% персонажей, владеющих этим средством передвижения. Данные любезно предоставлены {RR}."
+L["STATS_TIP_TRAVEL_DISTANCE_HEAD"] = "Преодоленное расстояние"
+L["STATS_TIP_TRAVEL_TIME_HEAD"] = "Продолжительность поездки"
+L["STATS_TIP_TRAVEL_TIME_TEXT"] = "В часах:минутах:секундах"
+L["STATS_TIP_USAGE_COUNT_HEAD"] = "Количество использований"
 L["TASK_END"] = "[MJE] Фух! Все готово."
 L["TASK_FAVOR_START"] = "[MJE] Применяю звездочки для всего вашего транспорта. Пожалуйста подождите пару секунд  для завершения."
 L["TOGGLE_COLOR"] = "Показать следующую вариацию цвета"
@@ -1657,15 +1701,15 @@ L["Transform"] = "Трансформация"
 L["DISPLAY_ALL_SETTINGS"] = "Показать все настройки"
 L[ [=[RESET_WINDOW_SIZE
 ]=] ] = "Сбросить настройки журнала"
---[[Translation missing --]]
---[[ L["SETTING_ABOUT_AUTHOR"] = "Author"--]] 
+L["SETTING_ABOUT_AUTHOR"] = "Автор"
 L["SETTING_ACHIEVEMENT_POINTS"] = "Показать достижения"
 L["SETTING_AUTO_FAVOR"] = "Автоматически добавлять новый транспорт в избранное"
+--[[Translation missing --]]
+--[[ L["SETTING_COLOR_NAMES"] = "Colorize names in list based on rarity"--]] 
 L["SETTING_COMPACT_LIST"] = "Компактный список транспорта"
 L["SETTING_CURSOR_KEYS"] = "Включить Клавиши \"Вверх\" и \"Вниз\" для навигации по списку транспорта"
 L["SETTING_FAVORITE_PER_CHAR"] = "Избранный транспорт для персонажа"
---[[Translation missing --]]
---[[ L["SETTING_HEAD_ABOUT"] = "About"--]] 
+L["SETTING_HEAD_ABOUT"] = "О моде"
 L["SETTING_HEAD_BEHAVIOUR"] = "Поведение"
 L["SETTING_MOUNT_COUNT"] = "Показать персональный счетчик транспорта"
 L["SETTING_MOVE_EQUIPMENT"] = "Переместить слот экипировки на экран обзора"
@@ -1674,11 +1718,9 @@ L["SETTING_PERSONAL_HIDDEN_MOUNTS"] = "Применить скрытый тра�
 L["SETTING_PERSONAL_UI"] = "Применить настройки интерфейса только для этого персонажа"
 L["SETTING_PREVIEW_LINK"] = "Показать кнопку коллекции на экрана обзора транспорта"
 L["SETTING_SEARCH_MORE"] = "Искать также в описании транспорта"
---[[Translation missing --]]
---[[ L["SETTING_SEARCH_NOTES"] = "Search also in own notes"--]] 
+L["SETTING_SEARCH_NOTES"] = "Искать также в собственных заметках"
 L["SETTING_SHOP_BUTTON"] = "Показать кнопку магазина на неизученном транспорте из магазина"
---[[Translation missing --]]
---[[ L["SETTING_SHOW_STATISTICS"] = "Show mount statistics in display"--]] 
+L["SETTING_SHOW_STATISTICS"] = "Показывать статистику транспорта"
 L["SETTING_TRACK_USAGE"] = "Отслеживание использования транспорта для всех персонажей"
 L["SETTING_YCAMERA"] = "Разблокировать вертикальное вращение транспорта с помощью мыши"
 
@@ -1709,7 +1751,7 @@ L["Cervid"] = "Сервиды"
 L["Chargers"] = "Скакуны"
 L["Chickens"] = "Курицы"
 L["Clefthooves"] = "Копытни"
-L["Cloud Serpents"] = "Облачные змеи"
+L["Cloud Serpents"] = "Облачные Змеи"
 L["Core Hounds"] = "Гончие Недр"
 L["Crabs"] = "Крабы"
 L["Cranes"] = "Журавли"
@@ -1727,6 +1769,8 @@ L["Discs"] = "Диски"
 L["Dragonhawks"] = "Дракондоры"
 L["Drakes"] = "Драконы"
 L["Dread Ravens"] = "Грозные вороны"
+--[[Translation missing --]]
+--[[ L["Eagle"] = "Eagle"--]] 
 L["Elekks"] = "Элекки"
 L["Elementals"] = "Элементали"
 L["Falcosaurs"] = "Грифозавры"
@@ -1775,6 +1819,8 @@ L["Mechanical Cats"] = "Механические Кошки"
 L["Mechanical Steeds"] = "Механические Скакуны"
 L["Mechanostriders"] = "Механодолгоноги"
 L["Mecha-suits"] = "Мехакостюмы"
+--[[Translation missing --]]
+--[[ L["Mollusc"] = "Mollusc"--]] 
 L["Moose"] = "Лоси"
 L["Moth"] = "Мотыльки"
 L["Motorcycles"] = "Мотоциклы"
@@ -1784,6 +1830,8 @@ L["Nether Drakes"] = "Драконы Пустоты"
 L["Nether Rays"] = "Скаты Пустоты"
 L["N'Zoth Serpents"] = "Черви Н'Зота"
 L["Others"] = "Прочие"
+--[[Translation missing --]]
+--[[ L["Ottuk"] = "Ottuk"--]] 
 L["Ox"] = "Волы"
 L["Pandaren Phoenixes"] = "Пандаренские Фениксы"
 L["Parrots"] = "Попугаи"
@@ -1804,7 +1852,7 @@ L["Riverbeasts"] = "Речные чудовища"
 L["Roc"] = "Рухи"
 L["Rockets"] = "Ракеты"
 L["Ruinstriders"] = "Скитальцы"
-L["Runestag"] = "Рунический Олень"
+L["Runestag"] = "Рунические Олени"
 L["Rylaks"] = "Рилаки"
 L["Sabers"] = "Саблезубы"
 L["Scorpions"] = "Скорпионы"
@@ -1812,6 +1860,8 @@ L["Sea Serpents"] = "Морские Змеи"
 L["Seahorses"] = "Морские коньки"
 L["Seat"] = "Повозки"
 L["Silithids"] = "Силитиды"
+--[[Translation missing --]]
+--[[ L["Slug"] = "Slug"--]] 
 L["Snail"] = "Улитки"
 L["Snapdragons"] = "Вараны"
 L["Spider Tanks"] = "Механопауки"
@@ -1878,6 +1928,8 @@ L["ROTATE_UP"] = "向上旋转"
 --[[ L["SORT_BY_TRAVEL_DURATION"] = "Travelled duration"--]] 
 --[[Translation missing --]]
 --[[ L["SORT_BY_USAGE_COUNT"] = "Count of usage"--]] 
+--[[Translation missing --]]
+--[[ L["SORT_DRAGONRIDING_TOP"] = "Dragonriding mounts at the top"--]] 
 L["SORT_FAVORITES_FIRST"] = "收藏优先"
 L["SORT_REVERSE"] = "反向排序"
 L["SORT_UNOWNED_BOTTOM"] = "未收集在底部"
@@ -1915,6 +1967,8 @@ L["Transform"] = "变形"
 L["SETTING_ACHIEVEMENT_POINTS"] = "显示成就点"
 --[[Translation missing --]]
 --[[ L["SETTING_AUTO_FAVOR"] = "Automatically set new mounts as favorite"--]] 
+--[[Translation missing --]]
+--[[ L["SETTING_COLOR_NAMES"] = "Colorize names in list based on rarity"--]] 
 L["SETTING_COMPACT_LIST"] = "紧凑坐骑列表"
 L["SETTING_CURSOR_KEYS"] = "启用上下键浏览坐骑"
 L["SETTING_FAVORITE_PER_CHAR"] = "每角色坐骑收藏"
@@ -1985,6 +2039,8 @@ L["Discs"] = "飞碟"
 L["Dragonhawks"] = "龙鹰"
 L["Drakes"] = "龙"
 L["Dread Ravens"] = "恐鸦"
+--[[Translation missing --]]
+--[[ L["Eagle"] = "Eagle"--]] 
 L["Elekks"] = "雷象"
 L["Elementals"] = "元素"
 L["Falcosaurs"] = "猎龙"
@@ -2038,6 +2094,8 @@ L["Mechanical Cats"] = "机械猫"
 L["Mechanical Steeds"] = "机械马"
 L["Mechanostriders"] = "机械陆行鸟"
 L["Mecha-suits"] = "机甲"
+--[[Translation missing --]]
+--[[ L["Mollusc"] = "Mollusc"--]] 
 L["Moose"] = "驼鹿"
 L["Moth"] = "蛾"
 L["Motorcycles"] = "摩托车"
@@ -2047,6 +2105,8 @@ L["Nether Drakes"] = "灵翼幼龙"
 L["Nether Rays"] = "虚空鳐"
 L["N'Zoth Serpents"] = "恩佐斯蛇"
 L["Others"] = "其他"
+--[[Translation missing --]]
+--[[ L["Ottuk"] = "Ottuk"--]] 
 --[[Translation missing --]]
 --[[ L["Ox"] = "Ox"--]] 
 L["Pandaren Phoenixes"] = "熊猫人凤凰"
@@ -2078,6 +2138,8 @@ L["Sea Serpents"] = "海蛇"
 L["Seahorses"] = "海马"
 L["Seat"] = "摇篮"
 L["Silithids"] = "异种蝎"
+--[[Translation missing --]]
+--[[ L["Slug"] = "Slug"--]] 
 --[[Translation missing --]]
 --[[ L["Snail"] = "Snail"--]] 
 L["Snapdragons"] = "毒鳍龙"

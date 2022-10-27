@@ -1,0 +1,62 @@
+
+WoWProCharDB = {
+	["EnableGrailQuestline"] = false,
+	["EnableGrailQuestLevel"] = false,
+	["AutoHideInsideInstances"] = true,
+	["EnableGrailCheckPrereq"] = false,
+	["QID2Guide"] = {
+		[47221] = "Ludo_Argus",
+		[60096] = "wotlkintro",
+		[40519] = "EmmLegionIntro_A",
+		[10119] = "JamHel6062",
+		[47835] = "Ludo_Argus",
+		[28708] = "JamHel6062",
+	},
+	["Trades"] = {
+	},
+	["GuideStack"] = {
+		"KulTiran", -- [1]
+	},
+	["completedQIDs"] = {
+		[55142] = false,
+		[55146] = false,
+		[62567] = false,
+	},
+	["Rank"] = {
+	},
+	["EnableGrailQuestName"] = false,
+	["Enabled"] = true,
+	["EnableGrailQuestObsolete"] = false,
+	["BuildingLocations"] = {
+	},
+	["Tradeskills"] = {
+	},
+	["GuideVersion"] = {
+	},
+	["Taxi"] = {
+	},
+	["Guide"] = {
+		["KulTiran"] = {
+			["total"] = 9,
+			["Version"] = "2020.09.29.A",
+			["skipped"] = {
+			},
+			["done"] = false,
+			["completion"] = {
+				"Player level exceeds step limit", -- [1]
+				[9] = false,
+			},
+			["progress"] = 1,
+		},
+	},
+	["EnableTreasures"] = true,
+	["EnableFlight"] = true,
+	["AutoHideInsideInstancesNotify"] = true,
+	["AutoHideInCombat"] = false,
+	["DebugLevel"] = 0,
+	["EnableGrailBreadcrumbs"] = false,
+	["EnablePetBattles"] = true,
+	["skippedQIDs"] = {
+	},
+	["EnableRares"] = true,
+}

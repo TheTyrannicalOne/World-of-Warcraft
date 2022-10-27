@@ -1,3 +1,18 @@
+v10.0.0.1
+---------
+- Initial fixes for 10.0 release.
+- Added Adventure Campaign Progress to currency scanning.
+
+v9.2.7.17
+---------
+- Added the Alliance Cataclysm Timewalking item turn-in to quest tracking.
+
+v9.2.7.16
+---------
+- Added Ember Court unlocks to quest scanning.
+- Added Trial of Style to currency scanning.
+- Updated quest scanning list.
+
 v9.2.7.15
 ---------
 - Added Path of Ascension fights to quest scanning.

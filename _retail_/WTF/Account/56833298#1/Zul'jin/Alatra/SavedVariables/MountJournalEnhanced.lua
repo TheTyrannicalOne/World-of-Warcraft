@@ -8,6 +8,7 @@ MJEPersonalSettings = {
 		["showAchievementPoints"] = true,
 		["compactMountList"] = true,
 		["enableCursorKeys"] = true,
+		["colorizeNameByRarity"] = true,
 		["windowSize"] = {
 			0, -- [1]
 			0, -- [2]
@@ -31,6 +32,7 @@ MJEPersonalSettings = {
 		["descending"] = false,
 		["by"] = "name",
 		["favoritesOnTop"] = true,
+		["dragonridingOnTop"] = true,
 		["unusableToBottom"] = false,
 	},
 	["filter"] = {
@@ -43,6 +45,7 @@ MJEPersonalSettings = {
 			true, -- [6]
 			true, -- [7]
 			true, -- [8]
+			true, -- [9]
 			[0] = true,
 		},
 		["source"] = {
@@ -63,17 +66,20 @@ MJEPersonalSettings = {
 			["Quest"] = true,
 			["Garrison"] = true,
 		},
-		["hiddenIngame"] = false,
 		["color"] = {
 		},
+		["hiddenIngame"] = false,
+		["notCollected"] = true,
 		["hidden"] = false,
-		["faction"] = {
-			["horde"] = true,
-			["alliance"] = true,
-			["noFaction"] = true,
+		["mountType"] = {
+			["repair"] = true,
+			["flying"] = true,
+			["underwater"] = true,
+			["dragonriding"] = true,
+			["passenger"] = true,
+			["ground"] = true,
+			["transform"] = true,
 		},
-		["onlyUsable"] = false,
-		["onlyFavorites"] = false,
 		["family"] = {
 			["Arachnids"] = {
 				["Scorpions"] = true,
@@ -108,7 +114,24 @@ MJEPersonalSettings = {
 				["Wyverns"] = true,
 			},
 			["Gargoyle"] = true,
-			["Bats"] = true,
+			["Birds"] = {
+				["Cranes"] = true,
+				["Chickens"] = true,
+				["Raptora"] = true,
+				["Phoenixes"] = true,
+				["Crows"] = true,
+				["Dread Ravens"] = true,
+				["Roc"] = true,
+				["Parrots"] = true,
+				["Pandaren Phoenixes"] = true,
+				["Talonbirds"] = true,
+				["Hawkstriders"] = true,
+				["Tallstriders"] = true,
+				["Mechanical Birds"] = true,
+				["Eagle"] = true,
+				["Albatross"] = true,
+				["Vultures"] = true,
+			},
 			["Cats"] = {
 				["Sabers"] = true,
 				["Stone Cats"] = true,
@@ -124,22 +147,9 @@ MJEPersonalSettings = {
 				["Seahorses"] = true,
 				["Stingrays"] = true,
 			},
-			["Birds"] = {
-				["Cranes"] = true,
-				["Chickens"] = true,
-				["Raptora"] = true,
-				["Phoenixes"] = true,
-				["Crows"] = true,
-				["Roc"] = true,
-				["Dread Ravens"] = true,
-				["Mechanical Birds"] = true,
-				["Talonbirds"] = true,
-				["Hawkstriders"] = true,
-				["Tallstriders"] = true,
-				["Pandaren Phoenixes"] = true,
-				["Parrots"] = true,
-				["Albatross"] = true,
-				["Vultures"] = true,
+			["Mollusc"] = {
+				["Slug"] = true,
+				["Snail"] = true,
 			},
 			["Razorwing"] = true,
 			["Horses"] = {
@@ -170,11 +180,12 @@ MJEPersonalSettings = {
 			},
 			["Carnivorans"] = {
 				["Bears"] = true,
+				["Hyenas"] = true,
 				["Foxes"] = true,
 				["Hounds"] = true,
-				["Hyenas"] = true,
 				["Gargon"] = true,
 				["Vulpin"] = true,
+				["Ottuk"] = true,
 				["Quilen"] = true,
 			},
 			["Rats"] = true,
@@ -253,10 +264,10 @@ MJEPersonalSettings = {
 				["Others"] = true,
 			},
 			["Rays"] = {
-				["Fathom Rays"] = true,
 				["Nether Rays"] = true,
-				["Mana Rays"] = true,
 				["Stingrays"] = true,
+				["Mana Rays"] = true,
+				["Fathom Rays"] = true,
 			},
 			["Vombata"] = true,
 			["Dinosaurs"] = {
@@ -274,20 +285,25 @@ MJEPersonalSettings = {
 				["Infernals"] = true,
 			},
 			["Rylaks"] = true,
-			["Snail"] = true,
+			["Bats"] = true,
 		},
-		["mountType"] = {
-			["repair"] = true,
-			["flying"] = true,
-			["underwater"] = true,
-			["passenger"] = true,
-			["ground"] = true,
-			["transform"] = true,
+		["onlyFavorites"] = false,
+		["faction"] = {
+			["horde"] = true,
+			["alliance"] = true,
+			["noFaction"] = true,
 		},
+		["onlyUsable"] = false,
 		["onlyTradable"] = false,
 		["collected"] = true,
 		["onlyRecent"] = false,
-		["notCollected"] = true,
+		["rarity"] = {
+			true, -- [1]
+			true, -- [2]
+			true, -- [3]
+			true, -- [4]
+			true, -- [5]
+		},
 	},
 	["personalHiddenMounts"] = false,
 	["notes"] = {

@@ -1,13 +1,13 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0703,
+	["LastVersion"] = 2.0704,
 	["LastPlayerFullName"] = "Valmagus-Zul'jin",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
 		{
-			["ID"] = 188027,
-			["Level"] = 229,
-			["Link"] = "|cff1eff00|Hitem:188027::::::::60:70::26:3:6652:7578:1475:1:28:2169:::::|h[Harmonium Helm]|h|r",
+			["ID"] = 117355,
+			["Level"] = 236,
+			["Link"] = "|cff0070dd|Hitem:117355::::::::60:70::22:1:8760:2:28:181:9:60:::::|h[The Horseman's Horrific Hood]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 173147,
@@ -47,9 +47,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:171443::::::::60:70::13:2:6893:7880:4:9:60:28:391:29:40:30:32:::::|h[Shadowsteel Sabatons]|h|r",
 		},
 		[16] = {
-			["ID"] = 188043,
-			["Level"] = 229,
-			["Link"] = "|cff1eff00|Hitem:188043::::::::60:70::26:2:6652:1475:1:28:2170:::::|h[Eradicator of the Eternal Guard]|h|r",
+			["ID"] = 117356,
+			["Level"] = 236,
+			["AlsoFitsIn"] = 17,
+			["Link"] = "|cff0070dd|Hitem:117356::::::::60:70::22:1:8760:2:28:181:9:60:::::|h[The Horseman's Sinister Slicer]|h|r",
 		},
 		[17] = {
 			["ID"] = 122392,
@@ -67,10 +68,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:171444::::::::60:70::13:2:6893:7880:4:9:60:28:391:29:32:30:36:::::|h[Shadowsteel Gauntlets]|h|r",
 		},
 		[11] = {
-			["ID"] = 173134,
-			["Level"] = 233,
+			["ID"] = 143901,
+			["Level"] = 236,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cffa335ee|Hitem:173134::::::::60:70::13:1:7880:3:9:60:28:2142:29:36:::::|h[Deadly Sinvyr Ring]|h|r",
+			["Link"] = "|cff0070dd|Hitem:143901::::::::60:70::22:1:8760:2:28:181:9:60:::::|h[Band of the Petrified Pumpkin]|h|r",
 		},
 		[6] = {
 			["ID"] = 188033,
@@ -78,10 +79,10 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:188033::::::::60:70::26:3:6652:7579:1475:1:28:2057:::::|h[Harmonium Girdle]|h|r",
 		},
 		[12] = {
-			["ID"] = 181218,
-			["Level"] = 207,
+			["ID"] = 143901,
+			["Level"] = 236,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cffa335ee|Hitem:181218::::::::60:70::25:5:40:7578:1472:5904:6646::::::|h[Chalice Noble's Signet]|h|r",
+			["Link"] = "|cff0070dd|Hitem:143901::::::::60:70::22:1:8760:2:9:60:28:181:::::|h[Band of the Petrified Pumpkin]|h|r",
 		},
 		[9] = {
 			["ID"] = 188034,

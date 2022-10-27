@@ -33,3 +33,4 @@ LittleWigs_Classic: enabled
 LittleWigs_Legion: enabled
 LittleWigs_BattleForAzeroth: enabled
 LittleWigs: enabled
+LittleWigs_MistsOfPandaria: enabled

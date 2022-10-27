@@ -1,6 +1,6 @@
 # BFAInvasionTimer
 
-## [v9.2.6](https://github.com/funkydude/BFAInvasionTimer/tree/v9.2.6) (2022-09-11)
-[Full Changelog](https://github.com/funkydude/BFAInvasionTimer/compare/v9.2.5...v9.2.6) [Previous Releases](https://github.com/funkydude/BFAInvasionTimer/releases)
+## [v10.0.0](https://github.com/funkydude/BFAInvasionTimer/tree/v10.0.0) (2022-10-26)
+[Full Changelog](https://github.com/funkydude/BFAInvasionTimer/compare/v9.2.6...v10.0.0) [Previous Releases](https://github.com/funkydude/BFAInvasionTimer/releases)
 
-- Fix bad usage of CreateTexture  
+- bump toc  

@@ -296,7 +296,7 @@ h:SetPoint("TOP", 0, 12)
 ff:SetMovable(true)
 ff:SetResizable(true)
 ff:EnableMouse(true)
-ff:SetMinResize(315,165)
+-- ff:SetMinResize(315,165) // Removed in 10.0.0
 ff:SetClampedToScreen(true)
 ff:RegisterForDrag("LeftButton")
 ff:SetScript("OnDragStart", ff.StartMoving)

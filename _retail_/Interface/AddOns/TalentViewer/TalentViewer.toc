@@ -1,0 +1,14 @@
+## Interface: 90207
+## Title: Talent Viewer
+## Notes: View any spec's talent trees from any character
+## Author: Numy
+## Version: v1.0.2
+## SavedVariables: TalentViewerDB
+## X-Curse-Project-ID: 631740
+
+libs\load_libs.xml
+
+data.lua
+
+TalentViewer.lua
+TalentViewerUI.xml

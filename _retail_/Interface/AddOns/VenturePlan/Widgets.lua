@@ -620,9 +620,9 @@ local function FollowerButton_SetInfo(self, info)
 		s.AbilitiesB[i]:Hide()
 	end
 	if onMission then
-		s.HealthBG:SetGradient("VERTICAL", 0.1,0.1,0.1, 0.2,0.2, 0.2)
+		s.HealthBG:SetGradient("VERTICAL", {r=0.1,g=0.1,b=0.1,a=1}, {r=0.2,g=0.2,b=0.2,a=1})
 	else
-		s.HealthBG:SetGradient("VERTICAL", 0.07,0.07,0.07, 0.14,0.14,0.14)
+		s.HealthBG:SetGradient("VERTICAL", {r=0.07,g=0.07,b=0.07,a=1}, {r=0.14,g=0.14,b=0.14,a=1})
 	end
 end
 local SortFollowerList, CompareFollowerXP do
@@ -1237,6 +1237,25 @@ local function GroupList_OnUpdate(self)
 		GameTooltip:Hide()
 		selfs.tipOwner = nil
 	end
+	if now >= (selfs.timerRefreshAt or now) then
+		local offerEndTime, minTL = selfs.offerEndTime, math.huge
+		for i=1, selfs.numGroups do
+			local gs = selfs.groups[i]
+			local readyAt = gs.readyAt
+			if readyAt then
+				local tl = readyAt >= now and readyAt-now or 0
+				local nt = (offerEndTime and readyAt >= offerEndTime and "|cffe00000" or "") .. U.GetTimeStringFromSeconds(tl, true, true)
+				if gs.TimeLeft:GetText() ~= nt then
+					gs.TimeLeft:SetText(nt)
+				end
+				if selfs.tipOwner == gs.host and GameTooltip:IsOwned(gs.host) then
+					gs.host:GetScript("OnEnter")(gs.host, "up")
+				end
+				minTL = tl < minTL and tl > 0 and tl or minTL
+			end
+		end
+		selfs.timerRefreshAt = now + (minTL > 120 and 60 or minTL > 99 and (minTL-99) or 0.5)
+	end
 end
 local function GroupList_SetPredictionIcon(gs, sres, maxMTL, isCurrent)
 	local ptex = "Interface/RaidFrame/ReadyCheck-Waiting"
@@ -1255,8 +1274,9 @@ local function GroupList_SetPredictionIcon(gs, sres, maxMTL, isCurrent)
 	gs.StateIcon2:SetShown(not not maxMTL)
 	gs.WarnIcon:SetShown(not isCurrent)
 end
-local function GroupList_SetGroupInfo(selfs, idx, fgid, g, gi, mid, offerEndTime)
+local function GroupList_SetGroupInfo(selfs, idx, fgid, g, gi, mid)
 	local now, gs, ns, ss = GetTime(), selfs.groups[idx], 1
+	local offerEndTime = selfs.offerEndTime
 	local cost, hasTentativeBusy = selfs.baseCost, false
 	gs.fgid = fgid
 	for b=0,4 do
@@ -1289,7 +1309,7 @@ local function GroupList_SetGroupInfo(selfs, idx, fgid, g, gi, mid, offerEndTime
 	local maxMTL = gi.readyAt and math.max(0, gi.readyAt-now)
 	local sres, _, isCurrent = U.GetMissionPrediction(mid, g, fgid)
 	hasTentativeBusy = not maxMTL and hasTentativeBusy
-	gs.maxMTL, gs.isSaved, gs.cost = maxMTL, gi.saved, cost
+	gs.maxMTL, gs.isSaved, gs.cost, gs.readyAt = maxMTL, gi.saved, cost, gi.readyAt
 	gs.TimeLeft:SetText(gi.readyAt and offerEndTime and (gi.readyAt >= offerEndTime and "|cffe00000" or "") .. U.GetTimeStringFromSeconds(maxMTL, true, true) or "")
 	gs.StateIcon:SetPoint("RIGHT", hasTentativeBusy and -10 or -6, maxMTL and 6 or 0)
 	gs.TentIcon:SetShown(hasTentativeBusy)
@@ -1315,12 +1335,13 @@ local function GroupList_OnEnterGroup(self, motion)
 	GameTooltip:SetPoint(l and "LEFT" or "RIGHT", self, l and "RIGHT" or "LEFT", l and 6 or -6, 0)
 	GameTooltip:AddDoubleLine(gs.isSaved and L"Accomplished Party" or L"Unproven Party", cost)
 	local mid, hadMTL = ms.missionID, false
+	local maxDelay = ms.offerEndTime and (ms.offerEndTime-GetTime()-5) or math.huge
 	local c1,c2,c3,c4,c5 = U.GetSavedGroupCompanions(fgid)
 	c1,c2,c3,c4,c5 = c3,c1,c4,c2,c5
 	for i=1,5 do
 		if c1 then
 			local mtl = C_Garrison.GetFollowerMissionTimeLeftSeconds(c1)
-			local rt = mtl and (NORMAL_FONT_COLOR_CODE .. U.GetTimeStringFromSeconds(mtl, false, true, true))
+			local rt = mtl and ((maxDelay < mtl and RED_FONT_COLOR_CODE or NORMAL_FONT_COLOR_CODE) .. U.GetTimeStringFromSeconds(mtl, false, true, true))
 			if not mtl then
 				local tmid = U.FollowerHasTentativeGroup(c1)
 				if tmid and tmid ~= mid then
@@ -1414,10 +1435,10 @@ local function GroupList_SetGroups(selfs, mid, offerEndTime, baseCost, ga)
 	if selfs.tipOwner and GameTooltip:IsShown() and GameTooltip:IsOwned(selfs.tipOwner) then
 		GameTooltip:Hide()
 	end
-	selfs.tipOwner = nil
+	selfs.tipOwner, selfs.timerRefreshAt = nil, nil
 	for i=1, selfs.numGroups do
 		local fgid = ga.ord[i]
-		GroupList_SetGroupInfo(selfs, i, fgid, ga.groups[fgid], ga.info[fgid], mid, offerEndTime)
+		GroupList_SetGroupInfo(selfs, i, fgid, ga.groups[fgid], ga.info[fgid], mid)
 	end
 	for i=selfs.numGroups+1, #selfs.groups do
 		selfs.groups[i].host:Hide()
@@ -2170,12 +2191,12 @@ function Factory.AdventurerListButton(parent)
 	t:SetTexture(1605024)
 	t, s.Portrait = f2:CreateTexture(nil, "ARTWORK", nil, -1), t
 	t:SetColorTexture(1,1,1)
-	t:SetGradient("VERTICAL", 0.15,0.15,0.15, 0.2,0.2, 0.2)
+	t:SetGradient("VERTICAL", {r=0.15,g=0.15,b=0.15,a=1}, {r=0.2,g=0.2,b=0.2,a=1})
 	t:SetSize(39, 12)
 	t:SetPoint("BOTTOMRIGHT", -9, 10)
 	t, s.HealthBG = f2:CreateTexture(nil, "ARTWORK"), t
 	t:SetColorTexture(1,1,1)
-	t:SetGradient("VERTICAL", 0.10,0.25,0.10, 0.05,0.5,0.05)
+	t:SetGradient("VERTICAL", {r=0.10,g=0.25,b=0.10,a=1}, {r=0.05,g=0.5,b=0.05,a=1})
 	t:SetAlpha(0.85)
 	t:SetSize(24, s.HealthBG:GetHeight())
 	t:SetPoint("BOTTOMLEFT", s.HealthBG, "BOTTOMLEFT")
@@ -2452,7 +2473,7 @@ function Factory.IconButton(parent, sz, tex)
 	mb:GetHighlightTexture():SetBlendMode("ADD")
 	mb:SetPushedTexture("Interface/Buttons/UI-Quickslot-Depress")
 	mb:GetPushedTexture():SetDrawLayer("OVERLAY")
-	mb:SetNormalTexture(nil)
+	mb:GetNormalTexture():SetTexture(nil)
 	local t = mb:CreateTexture(nil, "ARTWORK")
 	t:SetAllPoints()
 	t:SetTexture(tex or "Interface/Icons/Temp")
@@ -2689,8 +2710,8 @@ function Factory.FlareAnim(h, f)
 		a:SetFromAlpha(0)
 		a:SetToAlpha(1)
 		a = CreateTargetAnimation("Scale", ag, t, i == 1 and 0.24 or 0.5)
-		a:SetFromScale(0.85, 0.85)
-		a:SetToScale(i < 2 and 25 or 55, i < 2 and 25 or 55)
+		a:SetScaleFrom(0.85, 0.85)
+		a:SetScaleTo(i < 2 and 25 or 55, i < 2 and 25 or 55)
 		a:SetSmoothing(i == 1 and "IN_OUT" or "IN")
 		a = CreateTargetAnimation("Alpha", ag, t, 0.35, 0.15)
 		a:SetFromAlpha(1)
@@ -2701,8 +2722,8 @@ function Factory.FlareAnim(h, f)
 			a:SetDegrees(-180)
 			a = CreateTargetAnimation("Scale", ag, t, 0.25, 0.25)
 			a:SetSmoothing("IN")
-			a:SetFromScale(1, 1)
-			a:SetToScale(0.1, 0.1)
+			a:SetScaleFrom(1, 1)
+			a:SetScaleTo(0.1, 0.1)
 		end
 	end
 	return ag
@@ -2722,7 +2743,7 @@ function Factory.DoomAnim(h, f)
 		t:SetPoint("CENTER", f, "CENTER", 0, 0)
 		t:SetAlpha(0)
 		a = CreateTargetAnimation("Path", ag, t, 0.6)
-		a:SetCurve("Smooth")
+		a:SetCurveType("Smooth")
 		a:SetStartDelay(kd)
 		local ap = {}
 		for i=0,10 do
@@ -2749,12 +2770,12 @@ function Factory.DoomAnim(h, f)
 		a:SetToAlpha(0)
 		a:SetSmoothing("IN")
 		a = CreateTargetAnimation("Scale", ag, t, 0.35, kd)
-		a:SetFromScale(1.5,1.5)
-		a:SetToScale(6,6)
+		a:SetScaleFrom(1.5,1.5)
+		a:SetScaleTo(6,6)
 		a:SetEndDelay(0.15)
 		a:SetScript("OnPlay", function(a)
 			local es = 2.5 + 3.5*math.random()
-			a:SetToScale(es, es)
+			a:SetScaleTo(es, es)
 		end)
 	end
 	local t = h:CreateTexture()
@@ -2774,11 +2795,11 @@ function Factory.DoomAnim(h, f)
 	a:SetToAlpha(0)
 	a:SetSmoothing("IN")
 	a = CreateTargetAnimation("Scale", ag, t, 0.25)
-	a:SetFromScale(1,1)
-	a:SetToScale(1.15, 1.15)
+	a:SetScaleFrom(1,1)
+	a:SetScaleTo(1.15, 1.15)
 	a = CreateTargetAnimation("Scale", ag, t, 0.25, 0.25 + nc*cd)
-	a:SetFromScale(1,1)
-	a:SetToScale(0.85, 0.85)
+	a:SetScaleFrom(1,1)
+	a:SetScaleTo(0.85, 0.85)
 	if f and f.Icon then
 		local t = h:CreateTexture()
 		t:SetTexture(f.Icon:GetTexture())

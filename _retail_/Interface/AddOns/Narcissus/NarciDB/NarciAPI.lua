@@ -3172,10 +3172,35 @@ local function AddPixelPerfectTexture(frame, texture, pixelWidth, pixelHeight)
     end
     texture.w = pixelWidth;
     texture.h = pixelHeight;
+
+    --[[
+    for i, obj in ipairs(frame.pixelDriver.textures) do
+        if obj == texture then
+            return
+        end
+    end
+    --]]
     tinsert(frame.pixelDriver.textures, texture);
 end
 
 NarciAPI.AddPixelPerfectTexture = AddPixelPerfectTexture;
+
+
+local function IsPlayerAtMaxLevel()
+    local playerLevel = UnitLevel("player") or 0;
+
+    local maxPlayerLevel;
+    if GetMaxLevelForLatestExpansion then
+        maxPlayerLevel = GetMaxLevelForLatestExpansion();
+    else
+        local expansionLevel = GetExpansionLevel() or 0;
+        maxPlayerLevel = GetMaxLevelForExpansionLevel(expansionLevel);
+    end
+
+    return playerLevel >= maxPlayerLevel;
+end
+
+NarciAPI.IsPlayerAtMaxLevel = IsPlayerAtMaxLevel;
 
 
 --[[

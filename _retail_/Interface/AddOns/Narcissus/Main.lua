@@ -1,6 +1,8 @@
 local _, addon = ...
+
 local MsgAlertContainer = addon.MsgAlertContainer;
 local TransitionAPI = addon.TransitionAPI;
+local SlotButtonOverlayUtil = addon.SlotButtonOverlayUtil;
 
 local Narci = Narci;
 
@@ -13,6 +15,7 @@ local L = Narci.L;
 local VIGNETTE_ALPHA = 0.5;
 local IS_OPENED = false;									--Addon was opened by clicking
 local MOG_MODE = false;
+local SHOW_MISSING_ENCHANT_ALERT = true;
 
 local NarciAPI = NarciAPI;
 local GetItemEnchantID = NarciAPI.GetItemEnchantID;
@@ -24,9 +27,6 @@ local SmartFontType = NarciAPI.SmartFontType;
 local IsItemSocketable = NarciAPI.IsItemSocketable;
 local SetBorderTexture = NarciAPI.SetBorderTexture;
 local GetBorderArtByItemID = NarciAPI.GetBorderArtByItemID;
-local DoesItemHaveDomationSocket = NarciAPI.DoesItemHaveDomationSocket;
-local GetDominationBorderTexture = NarciAPI.GetDominationBorderTexture;
-local GetItemDominationGem = NarciAPI.GetItemDominationGem;
 local GetVerticalRunicLetters = NarciAPI.GetVerticalRunicLetters;
 local FadeFrame = NarciFadeUI.Fade;
 
@@ -47,9 +47,10 @@ local After = C_Timer.After;
 local ItemLocation = ItemLocation;
 local IsPlayerInAlteredForm = TransitionAPI.IsPlayerInAlteredForm;
 local InCombatLockdown = InCombatLockdown;
+local GetItemInfoInstant = GetItemInfoInstant;
+local GetInventoryItemTexture = GetInventoryItemTexture;
+
 local floor = math.floor;
-local sin = math.sin;
-local cos = math.cos;
 local max = math.max;
 
 local UIParent = _G.UIParent;
@@ -319,8 +320,8 @@ local ZoomValuebyRaceID = {
 	["Mounted"] = {[2] = {8, 1.2495, -4, 5.5},
 				   [3] = {8, 1.2495, -4, 5.5}},
 	
-	[52] = {[2] = {2.1, 0.361, -0.1654, 4},		--Dracthyr Visage (elf)
-		    [3] = {2.1, 0.3177, 0.0683, 3.8}},
+	[52] = {[2] = {2.1, 0.361, -0.1654, 4},		--Dracthyr Visage (Male elf)
+		    [3] = {2.0, 0.38, 0.0311, 3.6}},	--Dracthyr Visage (Female human)
 
 	["Dracthyr"] = {[2] = {2.6, 0.1704, 0.0749, 5},		--Dracthyr Dragon Form
 					[3] = {2.6, 0.1704, 0.0749, 5}},
@@ -1109,7 +1110,7 @@ function NarciItemButtonSharedMixin:ShowAlphaChannel()
 end
 
 -----------------------------------------------------------------------
-local validForTempEnchant = {
+local ValidForTempEnchant = {
 	[16] = true,
 	[17] = true,
 	[5] = true,
@@ -1313,13 +1314,13 @@ function NarciEquipmentSlotMixin:Refresh(forceRefresh)
 	local borderTexKey;
 	local isAzeriteEmpoweredItem = false;		--3 Pieces	**likely to be changed in patch 8.2
 	local isAzeriteItem = false;				--Heart of Azeroth
-	local isDominationItem;
 	--local isCorruptedItem = false;
 	local bR, bG, bB;		--Item Name Color
 	if C_Item.DoesItemExist(itemLocation) then
 		if MOG_MODE then
 			self:UntrackCooldown();
 			self:UntrackTempEnchant();
+			self:ClearOverlay();
 			self:HideVFX();
 			self.isSlotHidden = false;	--Undress an item from player model
 			self.RuneSlot:Hide();
@@ -1395,9 +1396,10 @@ function NarciEquipmentSlotMixin:Refresh(forceRefresh)
 				self.durability = (current / maximum);
 			end
 			--]]
+
 			itemLink = C_Item.GetItemLink(itemLocation);
-			
-			if validForTempEnchant[slotID] then
+
+			if ValidForTempEnchant[slotID] then
 				local hasTempEnchant = NarciTempEnchantIndicatorController:InitFromSlotButton(self);
 				if hasTempEnchant ~= self.hasTempEnchant then
 					self.hasTempEnchant = hasTempEnchant;
@@ -1411,7 +1413,7 @@ function NarciEquipmentSlotMixin:Refresh(forceRefresh)
 					return
 				end
 			end
-			
+
 			local itemVFX;
 			local itemID = GetItemInfoInstant(itemLink);
 			borderTexKey, itemVFX, bR, bG, bB = GetBorderArtByItemID(itemID);
@@ -1426,7 +1428,7 @@ function NarciEquipmentSlotMixin:Refresh(forceRefresh)
 			--if effectiveLvl and effectiveLvl > 1 then
 			--	NarciDebug:CalculateAverage(effectiveLvl);
 			--end
-			isDominationItem = DoesItemHaveDomationSocket(itemID);
+
 			if slotID == 13 or slotID == 14 then
 				if itemID == 167555 then	--Pocket-Sized Computation Device
 					gemName, gemLink = IsItemSocketable(itemLink, 2);
@@ -1434,10 +1436,9 @@ function NarciEquipmentSlotMixin:Refresh(forceRefresh)
 					gemName, gemLink = IsItemSocketable(itemLink);
 				end
 			else
-				if isDominationItem then
-					gemName, gemID = GetItemDominationGem(itemLink);
-				else
-					gemName, gemLink = IsItemSocketable(itemLink);
+				gemName, gemLink = IsItemSocketable(itemLink);
+				if slotID == 11 then
+					GN = gemName;
 				end
 			end
 			
@@ -1459,7 +1460,7 @@ function NarciEquipmentSlotMixin:Refresh(forceRefresh)
 			if slotID == 15 then
 				--Backslot
 				if itemID == 169223 then 	--Ashjra'kamas, Shroud of Resolve Legendary Cloak
-					local rank, corruptionResistance = NarciAPI.GetItemRank(itemLink, "ITEM_MOD_CORRUPTION_RESISTANCE");
+					local rank, corruptionResistance = NarciAPI.GetItemRankText(itemLink, "ITEM_MOD_CORRUPTION_RESISTANCE");
 					effectiveLvl = effectiveLvl.."  "..rank.."  |cFFFFD100"..corruptionResistance.."|r";
 					borderTexKey = "BlackDragon";
 					itemVFX = "DragonFire";
@@ -1476,12 +1477,22 @@ function NarciEquipmentSlotMixin:Refresh(forceRefresh)
 			end
 	
 
-			local enchantText = GetItemEnchantText(itemLink, true);
+			local enchantText = GetItemEnchantText(itemLink, true, self.isRight);
 			if enchantText then
 				if self.isRight then
 					effectiveLvl = enchantText.."  "..effectiveLvl;
 				else
 					effectiveLvl = effectiveLvl.."  "..enchantText;
+				end
+				self:ClearOverlay();
+			else
+				if SHOW_MISSING_ENCHANT_ALERT and SlotButtonOverlayUtil:IsSlotValidForEnchant(slotID, itemID) then
+					SlotButtonOverlayUtil:ShowEnchantAlert(self, slotID, itemID);
+					if self.isRight then
+						effectiveLvl = effectiveLvl .. "  ".. L["Missing Enchant"];
+					else
+						effectiveLvl = L["Missing Enchant"].."  "..effectiveLvl;
+					end
 				end
 			end
 
@@ -1507,6 +1518,7 @@ function NarciEquipmentSlotMixin:Refresh(forceRefresh)
 	else
 		self:UntrackCooldown();
 		self:UntrackTempEnchant();
+		self:ClearOverlay();
 		self:HideVFX();
 		self:DisplayDirectionMark(false);
 		self.GradientBackground:Hide();
@@ -1522,7 +1534,7 @@ function NarciEquipmentSlotMixin:Refresh(forceRefresh)
 		effectiveLvl = "";
 		DisplayRuneSlot(self, slotID, 0);
 	end
-	self.isDominationItem = isDominationItem;
+
 	self.itemQuality = itemQuality;
 	
 	if itemQuality and not bR then --itemQuality sometimes return nil. This is a temporary solution
@@ -1605,23 +1617,15 @@ function NarciEquipmentSlotMixin:Refresh(forceRefresh)
 	--Gem Slot--
 	if gemName ~= nil then
 		local gemBorder, gemIcon, itemSubClassID;
-		if isDominationItem then
-			if gemID then
-				_, _, _, _, gemIcon = GetItemInfoInstant(gemID);
-				gemBorder = GetDominationBorderTexture(gemID);
-			else
-				gemBorder = GetDominationBorderTexture(nil);
-			end
-			self.GemSlot.GemBorder:SetTexture(gemBorder);
+
+		--regular gems
+		if gemLink then
+			gemID, _, _, _, gemIcon, _, itemSubClassID = GetItemInfoInstant(gemLink);
+			gemBorder = GetGemBorderTexture(itemSubClassID, gemID);
 		else
-			--regular gems
-			if gemLink then
-				gemID, _, _, _, gemIcon, _, itemSubClassID = GetItemInfoInstant(gemLink);
-				gemBorder = GetGemBorderTexture(itemSubClassID, gemID);
-			else
-				gemBorder = GetGemBorderTexture(nil);
-			end
+			gemBorder = GetGemBorderTexture(nil);
 		end
+
 		self.GemSlot.GemBorder:SetTexture(gemBorder);
 		self.GemSlot.GemIcon:SetTexture(gemIcon);
 		self.GemSlot.GemIcon:Show();
@@ -1631,7 +1635,6 @@ function NarciEquipmentSlotMixin:Refresh(forceRefresh)
 		else
 			self.GemSlot:ShowSlot();
 		end
-		self.GemSlot.isDomiationSocket = isDominationItem;
 	else
 		if self:IsVisible() then
 			self.GemSlot:FadeOut();
@@ -1749,6 +1752,13 @@ function NarciEquipmentSlotMixin:UntrackCooldown()
 	if self.CooldownFrame then
 		self.CooldownFrame:Clear();
 		self.CooldownFrame = nil;
+	end
+end
+
+function NarciEquipmentSlotMixin:ClearOverlay()
+	if SHOW_MISSING_ENCHANT_ALERT and self.slotOverlay then
+		SlotButtonOverlayUtil:ClearOverlay(self);
+		self.slotOverlay = nil;
 	end
 end
 
@@ -2069,7 +2079,7 @@ SlotController.refreshSequence = {
 
 SlotController.tempEnchantSequence = {};
 
-for slotID in pairs(validForTempEnchant) do
+for slotID in pairs(ValidForTempEnchant) do
 	tinsert(SlotController.tempEnchantSequence, slotID);
 end
 
@@ -2080,9 +2090,9 @@ function SlotController:Refresh(slotID, forceRefresh)
 	end
 end
 
-function SlotController:RefreshAll()
+function SlotController:RefreshAll(forceRefresh)
 	for slotID, slotButton in pairs(SLOT_TABLE) do
-		slotButton:Refresh();
+		slotButton:Refresh(forceRefresh);
 	end
 end
 
@@ -2105,6 +2115,12 @@ function SlotController:LazyRefresh(sequenceName)
 		f.forceRefresh = false;
 	end
 	f:Show();
+end
+
+function SlotController:ClearCache()
+	for slotID, slotButton in pairs(SLOT_TABLE) do
+		slotButton.itemLink = nil;
+	end
 end
 
 function SlotController:PlayAnimOut()
@@ -2255,6 +2271,8 @@ function NarciEquipmentFlyoutFrameMixin:OnLoad()
 	end
 	self:SetScript("OnLoad", nil);
 	self.OnLoad = nil;
+	self:SetFixedFrameStrata(true);
+	self:SetFrameStrata("HIGH");
 end
 
 function NarciEquipmentFlyoutFrameMixin:OnHide()
@@ -2329,7 +2347,7 @@ function NarciEquipmentFlyoutFrameMixin:SetItemSlot(slotButton, showArrow)
 
 	Narci_FlyoutBlack:In();
 	slotButton:SetFrameLevel(Narci_FlyoutBlack:GetFrameLevel() + 1)
-	self:SetFrameLevel(20);
+	self:SetFrameLevel(50);
 
 	NarciEquipmentTooltip:HideTooltip();
 	ShowLessItemInfo(slotButton, true)
@@ -2343,7 +2361,7 @@ function NarciEquipmentFlyoutFrameMixin:SetItemSlot(slotButton, showArrow)
     	Tooltip:SetPoint("TOPLEFT", self, "BOTTOMLEFT", 8, -12);
 	end
 	Narci_Comparison_SetComparison(self.BaseItem, slotButton);
-	Tooltip:Show();
+	Narci_ShowComparisonTooltip(Tooltip);
 end
 
 function NarciEquipmentFlyoutFrameMixin:CreateItemButton()
@@ -3075,6 +3093,7 @@ function Narci_Open()
 			FadeFrame(Vignette, 0.5, 1);
 			Vignette.VignetteRight.animIn:Play();
 			Vignette.VignetteLeft.animIn:Play();
+			SlotButtonOverlayUtil:UpdateData();
 			After(0, function()
 				SlotController:LazyRefresh();
 				StatsUpdator:Gradual();
@@ -3549,7 +3568,7 @@ SlashCmdList["NARCI"] = function(msg)
 	elseif msg == "itemlist" then
 		DressUpFrame_Show(DressUpFrame);
 		if NarciDressingRoomOverlay then
-			NarciDressingRoomOverlay:ShowItemList()
+			NarciDressingRoomOverlay:ShowItemList();
 		end
 	elseif msg == "parser" then
 		NDT_ItemParser:ShowFrame();
@@ -3646,7 +3665,7 @@ ASC2:SetScript("OnHide", AnimationContainer_OnHide);
 
 
 
-local raceList = {	--For 3D Portait on the top-left
+local RACE_PORTRAIT_CAMERA = {	--For 3D Portait on the top-left
   --[RaceID] = {[GenderID] = {offsetX, offsetY, distance, angle, CameraIndex, {animation} }}
 	[1]  = {[2] = {10, -10, 0.75, false, 0},	--Human Male √
 		    [3] = {12, -10, 0.71, false, 1, 2},	-- 	    Female	 √
@@ -3728,8 +3747,12 @@ local raceList = {	--For 3D Portait on the top-left
 		    [3] = {18, -8, 0.7, false, 1, 2},	-- 	    Female 	 √
 		},
 
-    [52] = {[2] = {18, -18, 1.4, false, 1},
+    [52] = {[2] = {18, -18, 1.4, false, 1},		--Dracthyr
         	[3] = {18, -18, 1.4, false, 1},
+	},
+
+	[520] = {[2] = {8, -5, 0.75, 1.2, 0},		--Dracthyr Visage Male
+			[3] = {12, -10, 0.71, false, 1, 2},	-- 	    Female	 √
 	},
 }
 
@@ -3764,30 +3787,30 @@ function Narci_PortraitPieces_OnLoad(self)
 		if not inVisageForm	then
 			raceID = 52;
 		else
-			raceID = 10;
+			raceID = 520;
 		end
 	end
 
 	local model;
-	if raceList[raceID] and raceList[raceID][GenderID] then
+	if RACE_PORTRAIT_CAMERA[raceID] and RACE_PORTRAIT_CAMERA[raceID][GenderID] then
 		if Narci_FigureModelReference then
-			Narci_FigureModelReference:SetPoint("CENTER", raceList[raceID][GenderID][1], raceList[raceID][GenderID][2])
+			Narci_FigureModelReference:SetPoint("CENTER", RACE_PORTRAIT_CAMERA[raceID][GenderID][1], RACE_PORTRAIT_CAMERA[raceID][GenderID][2])
 		end
 
 		for i = 1, #ModelPieces do
 			model = ModelPieces[i];
 			TransitionAPI.SetModelByUnit(model, "player");
-			model:SetCamera(raceList[raceID][GenderID][5]);
+			model:SetCamera(RACE_PORTRAIT_CAMERA[raceID][GenderID][5]);
 			model:MakeCurrentCameraCustom();
-			if raceList[raceID][GenderID][3] then
-				model:SetCameraDistance(raceList[raceID][GenderID][3])
+			if RACE_PORTRAIT_CAMERA[raceID][GenderID][3] then
+				model:SetCameraDistance(RACE_PORTRAIT_CAMERA[raceID][GenderID][3])
 			end
-			if raceList[raceID][GenderID][4] then
+			if RACE_PORTRAIT_CAMERA[raceID][GenderID][4] then
 				a1, a2, a3 = model:GetCameraPosition();
-				model:SetCameraPosition(a1, a2, raceList[raceID][GenderID][4])
+				model:SetCameraPosition(a1, a2, RACE_PORTRAIT_CAMERA[raceID][GenderID][4])
 			end
-			if raceList[raceID][GenderID][6] then
-				model:SetAnimation(2, raceList[raceID][GenderID][6])
+			if RACE_PORTRAIT_CAMERA[raceID][GenderID][6] then
+				model:SetAnimation(2, RACE_PORTRAIT_CAMERA[raceID][GenderID][6])
 			end
 		end
 	else
@@ -3958,6 +3981,7 @@ EL:SetScript("OnEvent",function(self, event, ...)
 	elseif event == "ACTIVE_TALENT_GROUP_CHANGED" then
 		UpdateCharacterInfoFrame();
 		UpdateXmogName(true);
+		SlotButtonOverlayUtil:UpdateData();
 
 	elseif event == "PLAYER_LEVEL_CHANGED" then
 		local oldLevel, newLevel = ...;
@@ -4274,9 +4298,6 @@ do
 				FadeFrame(RadarChart, 0.5, 0);
 				FadeFrame(Narci_ConciseStatFrame, 0.5, 1);
 			end
-			Narci_ItemLevelFrame:ToggleExtraInfo(state);
-			Narci_ItemLevelFrame.showExtraInfo = state;
-			Narci_NavBar:SetMaximizedMode(state);
 		else
 			if state then
 				FadeFrame(Narci_DetailedStatFrame, 0, 1);
@@ -4288,6 +4309,9 @@ do
 				FadeFrame(Narci_ConciseStatFrame, 0, 1);
 			end
 		end
+		Narci_ItemLevelFrame:ToggleExtraInfo(state);
+		Narci_ItemLevelFrame.showExtraInfo = state;
+		Narci_NavBar:SetMaximizedMode(state);
 	end
 
 	function SettingFunctions.SetCharacterUIScale(scale, db)
@@ -4379,6 +4403,25 @@ do
 			CAM_DISTANCE_INDEX = 1;
 		else
 			CAM_DISTANCE_INDEX = 4;
+		end
+	end
+
+	function SettingFunctions.EnableMissingEnchantAlert(state, db)
+		if state == nil then
+			state = db["MissingEnchantAlert"];
+		end
+
+		--only enabled when player reach max level
+		if not NarciAPI.IsPlayerAtMaxLevel() then
+			state = false;
+		end
+
+		SHOW_MISSING_ENCHANT_ALERT = state;
+		SlotButtonOverlayUtil:SetEnabled(state);
+
+		SlotController:ClearCache();
+		if Narci_Character and Narci_Character:IsShown() then
+			SlotController:LazyRefresh();
 		end
 	end
 end

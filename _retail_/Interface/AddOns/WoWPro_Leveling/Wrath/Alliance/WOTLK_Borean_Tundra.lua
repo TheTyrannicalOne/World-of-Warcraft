@@ -1,7 +1,7 @@
-local guide = WoWPro:RegisterGuide("JamBor6872", "Leveling", "Borean Tundra", "WoWPro Team", "Alliance", 3)
+local guide = WoWPro:RegisterGuide("WOTLK_Borean_Tundra", "Leveling", "Borean Tundra", "WoWPro Team", "Alliance", 3)
 WoWPro:GuideName(guide,"Borean Tundra")
 WoWPro:GuideLevels(guide,70, 72)
-WoWPro:GuideNextGuide(guide, "Howling Fjord")
+WoWPro:GuideNextGuide(guide, "WOTLK_Dragonblight")
 WoWPro:GuideSteps(guide, function()
 return [[
 B Overcharged Capacitor|QID|11650|M|60.80,71.38|Z|Stormwind City|N|The quest Just a Few More Things... in Borean Tundra will require an Overcharged Capacitor.  The quest leads to two further quests, so worth while looking for this item now in Auction House if you can't find an Engineer with 4 Cobalt Bars and 1 Crystallized Earth. You can leave it in your delivery box to save space, as the questgiver above is near a mailbox.|L|39682|
@@ -463,6 +463,8 @@ b Moa'ki Harbor|QID|12117|N|Take the turtle to Moa'ki Harbor in Dragonblight.|M|
 T Travel to Moa'ki Harbor|QID|12117|N|To Ko'nani|Z|Dragonblight|M|48.01,74.88|
 b Kamagua|QID|11228|N|Use the pier on your left-hand side to travel to Kamagua.|Z|Dragonblight|M|49.63,78.42|
 R Valgarde|QID|11228|N|Take the Ancient Lift, then follow the waypoint arrows.|Z|Howling Fjord|M|24.70,62.27;44.3,59.1;46,50;51,44.67;52.3,47.8;59.6,61.0|CC|
+A High Commander Halford Wyrmbane|QID|12298|PRE|12297|N|From Greer Orehammer, this quest leads into Dragonblight.|
+F Wintergarde Keep|QID|12298|N|Talk to Greer Orehammer and choose to fly to Wintergarde Keep.|
 N Done with Borean Tundra, but...|N|That concludes Borean Tundra.|
 ; Level 80 quests need alot of work.
 A Corastrasza|QID|13412|PRE|11919|N|From Librarian Serra|M|33.48,34.38|LVL|80|

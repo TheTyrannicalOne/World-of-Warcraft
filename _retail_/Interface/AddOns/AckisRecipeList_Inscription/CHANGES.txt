@@ -1,30 +1,18 @@
-tag 170ce0a0d08f4bf968f8a20579f90ec37c5060d9 9.1.0.1
+tag 2d61e12391e574b9854cb95a3d8a03c3d2058b4f 9.2.0
 Author:	Ressy <resa1983@hotmail.com>
-Date:	Tue Sep 7 22:04:16 2021 -0400
+Date:	Sat Oct 22 13:22:28 2022 -0400
 
-9.1 update
+9.2.0 update
 
-commit 47688789a45d14c4c06a91c5bf458fbb0873cf53
+commit 62ef17c66d67bfc74ace4bf75df633e2c7da7bba
 Author: Ressy <resa1983@hotmail.com>
-Date:   Tue Sep 7 21:43:49 2021 -0400
+Date:   Sat Oct 22 13:16:48 2022 -0400
 
     Bump TOC
 
-commit c51d59a21a97330740bd4fd9b51b735da030feba
+commit 4308ab71c721222b77bbde114c888e1c1aa0b19d
 Author: Ressy <resa1983@hotmail.com>
-Date:   Tue Sep 7 21:43:45 2021 -0400
+Date:   Sat Oct 22 13:16:42 2022 -0400
 
-    Add 9.1 items
-
-commit cc75d257549f8b2d8eee39946e37e17378a865b9
-Author: Ressy <resa1983@hotmail.com>
-Date:   Tue Sep 7 21:43:37 2021 -0400
-
-    Fix vendors
-
-commit c8811ea885242eee31e2bf4a495cae49229818b7
-Author: Ressy <resa1983@hotmail.com>
-Date:   Tue Sep 7 21:43:15 2021 -0400
-
-    Remove use of AddTradeSkill, as it doesn't work.
+    Add 9.2 Recipes
 

@@ -1,7 +1,7 @@
-local guide = WoWPro:RegisterGuide("JamDra7475", "Leveling", "Dragonblight", "WoWPro Team", "Alliance", 3)
+local guide = WoWPro:RegisterGuide("WOTLK_Dragonblight", "Leveling", "Dragonblight", "WoWPro Team", "Alliance", 3)
 WoWPro:GuideNickname(guide, "Dragonblight")
 WoWPro:GuideName(guide, "Dragonblight")
-WoWPro:GuideNextGuide(guide, "Grizzly Hills")
+WoWPro:GuideNextGuide(guide, "WOTLK_Grizzly_Hills")
 WoWPro:GuideLevels(guide, 71, 75)
 WoWPro:GuideSteps(guide, function()
 return [[
@@ -24,9 +24,9 @@ T The Demo-gnome|QID|12275|N|Go south to Siege Engineer Quarterflash.|M|77.84,50
 A The Search for Slinkin|QID|12276|PRE|12275|M|77.84,50.28|N|From Siege Engineer Quarterflash.|
 A The Bleeding Ore|QID|12272|PRE|12275|M|77.84,50.28|N|From Siege Engineer Quarterflash.|
 A Not In Our Mine|QID|12269|PRE|12275|N|From Highlord Leoric Von Zeldig.|M|77.80,50.30|
-A WANTED: Kreug Oathbreaker|QID|12438|PRE|12251|N|From the Wanted Poster inside the Inn.|M|77.34,51.43|
-A WANTED: High Shaman Bloodpaw|QID|12441|PRE|12251|N|From the Wanted Poster inside the Inn.|M|77.34,51.43|
-A WANTED: Onslaught Commander Iustus|QID|12442|PRE|12251|N|From the Wanted Poster inside the Inn.|M|77.34,51.43|
+A Wanted: Kreug Oathbreaker|QID|12438|PRE|12251|N|From the Wanted Poster inside the Inn.|M|77.34,51.43|
+A Wanted: High Shaman Bloodpaw|QID|12441|PRE|12251|N|From the Wanted Poster inside the Inn.|M|77.34,51.43|
+A Wanted: Onslaught Commander Iustus|QID|12442|PRE|12251|N|From the Wanted Poster inside the Inn.|M|77.34,51.43|
 h Wintergarde Keep|QID|12253|N|Make this inn your home location with Illusia Lune.|M|77.50,51.50|
 K Vengeful Geists|ACTIVE|12258|QO|1|M|79.9,49.7|S|N|Kill any Vengeful Geist you see.|
 C Rescue from Town Square|QID|12253|S|N|Kill Vengeful Geists to free the Trapped Wintergarde Villagers.|
@@ -56,7 +56,7 @@ T Not In Our Mine|QID|12269|M|77.8,50.3|N|From Highlord Leoric Von Zeldig.|
 T Understanding the Scourge War Machine|QID|12281|N|To High Commander Halford Wyrmbane.|M|78.58,48.26|
 T Find Durkon!|QID|12309|N|From the gate, go down, take a right-turn, past the tall building we went in earlier for the Scrying Orb. A little further south you'll find Cavalier Durkon.|M|79.00,53.00|
 A The Noble's Crypt|QID|12311|PRE|12309|M|79.1,53.2|N|From Cavalier Durkon.|
-K Necrolord Amarion|QID|12311|QO|1|N|Enter the crypt, go to the bottom of it, kill Necrolord Amarion.|
+K Necrolord Amarion|QID|12311|QO|1|M|78.60,52.46|N|Enter the crypt, go to the bottom of it, kill Necrolord Amarion.|
 A Secrets of the Scourge|QID|12312|PRE|12309|N|Right-click the Flesh Bound Tome which should be on the floor behind where you found Necrolord Amarion. Get the quest and get out of the crypt as fast as you can to stop those annoying ghouls from spawning.|M|78.6,52.4|
 T The Noble's Crypt|QID|12311|M|79.1,53.2|N|To Cavalier Durkon.|
 T Secrets of the Scourge|QID|12312|M|79.1,53.2|N|To Cavalier Durkon.|
@@ -72,7 +72,7 @@ T A Righteous Sermon|QID|12321|N|Go back to High Commander Halford Wyrmbane.|M|7
 A Into Hostile Territory|QID|12325|PRE|12281|M|78.52,48.28|N|From High Commander Halford Wyrmbane.|
 T A Disturbance In The West|QID|12439|N|To Rodney Wells.|M|77.00,49.80|
 A To Stars' Rest!|QID|12440|LEAD|12000|PRE|12439|N|Dismount, then accept this quest from Rodney Wells. This will fly you to Stars' Rest.|M|77,49.8|
-f Stars' Rest|QID|12440|N|Get the new flight path.|
+f Stars' Rest|QID|12440|N|Get the new flight path.|M|29.16,55.34|
 T To Stars' Rest!|QID|12440|N|To the Image of Archmage Modera.|M|29.00,55.50|
 A Rifle the Bodies|QID|12000|M|29.0,55.5|N|From the Image of Archmage Modera.|
 A The Liquid Fire of Elune|QID|12166|N|From Warden Jodi Moonsong.|M|29.20,55.60|
@@ -266,7 +266,7 @@ F Wyrmrest Temple|QID|12146|M|39.5,25.9|N|Get the flight point and fly to Wyrmre
 T Disturbing Implications|QID|12146|N|Turn in to Aurastrasza, who resides at the bottom floor of Wyrmrest Temple.|M|60.0,55.1|
 A One of a Kind|QID|12148|PRE|12146^12147|M|60.0,55.1|N|From Aurastrasza.|
 T Mystery of the Infinite|QID|12470|N|Go to Tariolastrasz and ask him to fly you to the top floor. Turn the quest into Chromie.|M|60.0,54.49|
-A Mystery of the Infinite, Redux |QID|13343|N|From Chromie.|M|60.0,54.49|
+A Mystery of the Infinite, Redux |QID|13343|N|From Chromie.|M|60.0,54.49|LVL|80|
 T Audience With The Dragon Queen|QID|12495|M|59.8,54.7|N|To Alexstrasza the Life-Binder.|
 A Galakrond and the Scourge|QID|12497|PRE|12495^12496|M|59.8,54.7|N|From Alexstrasza the Life-Binder.|
 T Galakrond and the Scourge|QID|12497|N|To Torastrasza.|M|59.5,53.3|
@@ -413,8 +413,8 @@ T What Secrets Men Hide|QID|12475|M|79.1,47.2|N|To Zelig the Visionary.|
 A Frostmourne Cavern|QID|12478|PRE|12475|M|79.1,47.2|N|From Zelig the Visionary.|
 T Wanted: High Shaman Bloodpaw|QID|12441|N|To Highlord Leoric Von Zeldig.|M|77.8,50.2|
 T Wanted: Onslaught Commander Iustus|QID|12442|N|To Highlord Leoric Von Zeldig.|M|77.8,50.2|
-R Bronze Dragonshrine|ACTIVE|13343|M|71.7,38.9|N|Up the hill to the Bronze Dragonshrine for a fun trip thru memory lane with Chromie.|
-C Mystery of the Infinite, Redux |QID|13343|U|37923|N|Right-click the Hourglass of Eternity from your inventory to start the event.|M|71.7,38.9|
+R Bronze Dragonshrine|ACTIVE|13343|M|71.7,38.9|N|Up the hill to the Bronze Dragonshrine for a fun trip thru memory lane with Chromie.|LVL|80|
+C Mystery of the Infinite, Redux |QID|13343|U|37923|N|Right-click the Hourglass of Eternity from your inventory to start the event.|M|71.7,38.9|LVL|80|
 R Frostmourne Cavern|QID|12478|N|Head to Frostmourne Cavern.|M|74.00,23.00|
 C Frostmourne Cavern|QID|12478|U|37933|N|At the end of the cavern you'll find the Altar of Frostmourne. Use Zelig's Scrying Orb. Enjoy the script, then you'll get a quest complete message.|M|75.1,20.2|
 T Frostmourne Cavern|QID|12478|M|79.1,47.2|N|To Zelig the Visionary.|
@@ -422,7 +422,7 @@ F Wyrmrest Temple|QID|12768|M|77.03,49.79|N|Fly to Wyrmrest Temple.|
 T The Steward of Wyrmrest Temple|QID|12768|N|Go to Tariolstrasz on the western side of the temple.|M|57.9,54.2|
 A Informing the Queen|QID|12123|PRE|12768|M|57.9,54.2|N|From Tariolstrasz.|
 T That Which Creates Can Also Destroy|QID|12459|N|Ask Tariolstrasz to take you to the top floor. Turn the quest into Lord Itharius.|M|59.6,54.4|
-T Mystery of the Infinite, Redux |QID|13343|N|To Chromie.|M|60.0,54.49|
+T Mystery of the Infinite, Redux |QID|13343|N|To Chromie.|M|60.0,54.49|LVL|80|
 T Tales of Destruction|QID|12266|M|60.1,54.2|N|To Nalice.|
 T The Fate of the Ruby Dragonshrine|QID|12419|M|59.8,54.7|N|To Krasus.|
 T Informing the Queen|QID|12123|M|59.8,54.7|N|To Alexstrasza the Life-Binder.|

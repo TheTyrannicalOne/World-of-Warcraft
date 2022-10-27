@@ -787,11 +787,11 @@ function WoWPro:CheckFunction(row, button, down)
             WoWPro:SkipStepDialogCall(row.index, steplist, row.check)
         else
             WoWPro.SkipStep(row.index, false)
-            row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check-Disabled")
+            row.check:SetCheckedTexture(WoWPro.UI_CheckBox_Check_Disabled)
             WoWPro:UpdateGuide("CheckFunction:Skip1Step")
         end
     elseif button == "RightButton" and row.check:GetChecked() then
-        row.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check")
+        row.check:SetCheckedTexture(WoWPro.UI_CheckBox_Check)
         WoWPro:dbp("WoWPro:CheckFunction: User marked step %d as complete.", row.index)
         if WoWProDB.profile.checksound then
             _G.PlaySoundFile(WoWProDB.profile.checksoundfile)
@@ -990,13 +990,13 @@ function WoWPro:RowUpdate(offset)
         if completion[k] or WoWProCharDB.Guide[GID].skipped[k] or WoWPro:QIDsInTable(WoWPro.QID[k],WoWProCharDB.skippedQIDs) then
             currentRow.check:SetChecked(true)
             if WoWProCharDB.Guide[GID].skipped[k] or WoWPro:QIDsInTable(WoWPro.QID[k],WoWProCharDB.skippedQIDs) then
-                currentRow.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check-Disabled")
+                currentRow.check:SetCheckedTexture(WoWPro.UI_CheckBox_Check_Disabled)
             else
-                currentRow.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check")
+                currentRow.check:SetCheckedTexture(WoWPro.UI_CheckBox_Check)
             end
         else
             currentRow.check:SetChecked(false)
-            currentRow.check:SetCheckedTexture("Interface\\Buttons\\UI-CheckBox-Check")
+            currentRow.check:SetCheckedTexture(WoWPro.UI_CheckBox_Check)
         end
 
         if note then
@@ -1279,7 +1279,7 @@ function WoWPro:RowUpdate(offset)
 
 		-- EA Button --
 		if eab then
-            local mtext = "/click ExtraActionButton1"
+            local mtext = "/click ExtraActionButton1 MouseButton Down"
             currentRow.eabutton:Show()
             currentRow.eabutton:SetAttribute("macrotext", mtext)
 			currentRow.eaicon.EAB1_IsVisible = nil
@@ -2702,7 +2702,7 @@ function WoWPro.NextStep(guideIndex, rowIndex)
                 end
             end
 
-            if WoWPro.fly and WoWPro.fly[guideIndex] and WoWPro.RETAIL then
+            if WoWPro.fly and WoWPro.fly[guideIndex] and WoWPro.Client >= 3 then
                 if WoWProCharDB.EnableFlight or stepAction == "R" or stepAction == "N" then
                     local expansion = WoWPro.fly[guideIndex]
                     local spellName
@@ -2714,31 +2714,45 @@ function WoWPro.NextStep(guideIndex, rowIndex)
                         flyFlip = true
                     end
 					local eSkill = _G.GetSpellInfo(34090)
-                    local mSkill = _G.GetSpellInfo(90265)
-					if _G.GetSpellInfo(eSkill) then
-                        canFly = true
-						spellName = eSkill
-                    elseif _G.GetSpellInfo(mSkill) then
-                        canFly = true
-						spellName = mSkill
-                    end
+					if WoWPro.WRATH then
+						if WoWProCharDB.Tradeskills[762].skillLvl >= 225 then
+							canFly = true
+						end
+						if expansion == "BC" and canFly then
+							spellKnown = true
+							spellName = "Flying"
+						elseif expansion == "WOTLK" and canFly then
+							spellName = _G.GetSpellInfo(54197)
+							spellKnown = _G.GetSpellInfo(spellName)
+						end
+					else
+						local mSkill = _G.GetSpellInfo(90265)
+						if _G.GetSpellInfo(eSkill) then
+							canFly = true
+							spellName = eSkill
+						elseif _G.GetSpellInfo(mSkill) then
+							canFly = true
+							spellName = mSkill
+						end
 
-                    if expansion == "BFA" and canFly then
-                        spellName = _G.GetSpellInfo(278833)
-						spellKnown = _G.GetSpellInfo(spellName)
-					elseif expansion == "SHADOWLANDS" and canFly then
-						spellName = _G.GetSpellInfo(352177)
-						spellKnown = _G.C_QuestLog.IsQuestFlaggedCompleted(63893)
-					elseif expansion == "SHADOWLANDS9.2" and canFly then
-						spellName = _G.GetSpellInfo(366736)
-						spellKnown = _G.C_QuestLog.IsQuestFlaggedCompleted(65539)
-                    elseif expansion == "LEGION" and canFly then
-                        spellKnown = true
-                    elseif expansion == "WOD" and canFly then
-						spellKnown = true
-                    elseif expansion == "OLD" and canFly then
-                        spellKnown = true
-                    end
+						if expansion == "BFA" and canFly then
+							spellName = _G.GetSpellInfo(278833)
+							spellKnown = _G.GetSpellInfo(spellName)
+						elseif expansion == "SHADOWLANDS" and canFly then
+							spellName = _G.GetSpellInfo(352177)
+							spellKnown = _G.C_QuestLog.IsQuestFlaggedCompleted(63893)
+						elseif expansion == "SHADOWLANDS9.2" and canFly then
+							spellName = _G.GetSpellInfo(366736)
+							spellKnown = _G.C_QuestLog.IsQuestFlaggedCompleted(65539)
+						elseif expansion == "LEGION" and canFly then
+							spellKnown = true
+						elseif expansion == "WOD" and canFly then
+							spellKnown = true
+						elseif expansion == "OLD" and canFly then
+							spellKnown = true
+						end
+					end
+
                     if flyFlip then spellKnown = not spellKnown end
                     WoWPro:dbp("Checking fly step %s [%s] for %s: Nomen %s, Known %s",stepAction,step,WoWPro.fly[guideIndex],tostring(spellName),tostring(spellKnown))
                     if spellKnown then

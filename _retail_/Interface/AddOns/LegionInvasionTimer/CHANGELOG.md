@@ -1,6 +1,6 @@
 # LegionInvasionTimer
 
-## [v9.2.6](https://github.com/funkydude/LegionInvasionTimer/tree/v9.2.6) (2022-09-11)
-[Full Changelog](https://github.com/funkydude/LegionInvasionTimer/compare/v9.2.5...v9.2.6) [Previous Releases](https://github.com/funkydude/LegionInvasionTimer/releases)
+## [v10.0.0](https://github.com/funkydude/LegionInvasionTimer/tree/v10.0.0) (2022-10-26)
+[Full Changelog](https://github.com/funkydude/LegionInvasionTimer/compare/v9.2.6...v10.0.0) [Previous Releases](https://github.com/funkydude/LegionInvasionTimer/releases)
 
-- Fix bad usage of CreateTexture  
+- bump toc  

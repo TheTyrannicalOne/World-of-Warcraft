@@ -1,7 +1,8 @@
 # BigWigs +Common Auras
 
-## [v9.2.1-2-g8cd8d5a](https://github.com/BigWigsMods/BigWigs_CommonAuras/tree/8cd8d5a67adf73b7834eefa02e89ce04fc2d5a00) (2022-09-08)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs_CommonAuras/compare/v9.2.1...8cd8d5a67adf73b7834eefa02e89ce04fc2d5a00) [Previous Releases](https://github.com/BigWigsMods/BigWigs_CommonAuras/releases)
+## [v10.0.0](https://github.com/BigWigsMods/BigWigs_CommonAuras/tree/v10.0.0) (2022-10-26)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs_CommonAuras/compare/v9.2.1...v10.0.0) [Previous Releases](https://github.com/BigWigsMods/BigWigs_CommonAuras/releases)
 
+- bump toc  
 - Unify line endings  
 - Add attributes file  

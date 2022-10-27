@@ -3,9 +3,9 @@
 ------------------------------------------------------------------------------
 -- Options.lua - Hook for Rematch
 --
--- Author: Expelliarm5s / August 2022 / All Rights Reserved
+-- Author: Expelliarm5s / November 2022 / All Rights Reserved
 --
--- Version 1.1.26
+-- Version 1.1.28
 ------------------------------------------------------------------------------
 -- luacheck: ignore 212 globals DLAPI
 -- luacheck: globals AceGUIWidgetLSMlists, max line length 320, ignore 212
@@ -15,8 +15,6 @@
 local addonName, addon = ...
 local Options = addon:NewModule("Options", "AceConsole-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale(addonName)
-local LSM = LibStub("LibSharedMedia-3.0")
--- local WidgetLists = AceGUIWidgetLSMlists
 --------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------
@@ -50,74 +48,13 @@ end
 function Options:Login()
 	Options:DebugPrintf("Options:Login()")
 
-	-- see https://wow.tools/files/#search=&page=1&sort=0&desc=asc
-	if LSM then
-		if not addon.isClassic then
-			LSM:Register("sound", "Default", 567482)
-			LSM:Register("sound", "Small Chain", 567577)
-			LSM:Register("sound", "Bell Toll Alliance", 566564)
-			LSM:Register("sound", "Bell Toll Horde", 565853)
-			LSM:Register("sound", "Auction Window Close", 567499)
-			LSM:Register("sound", "Quest Failed", 567459)
-			LSM:Register("sound", "Fel Nova", 568582)
-			LSM:Register("sound", "Simon Large Blue", 566076)
-			LSM:Register("sound", "Simon Small Blue", 567002)
-			LSM:Register("sound", "Portcullis Close", 566240)
-			LSM:Register("sound", "PvP Flag Taken", 569200)
-			LSM:Register("sound", "Cannon", 566101)
-			LSM:Register("sound", "Alarm 2", 567399)
-		else
-			LSM:Register("sound", "Default", SOUNDKIT.AUCTION_WINDOW_OPEN)
-			LSM:Register("sound", "Small Chain", SOUNDKIT.PUT_DOWN_SMALL_CHAIN)
-			LSM:Register("sound", "AH Bell", SOUNDKIT.AUCTION_WINDOW_CLOSE)
-			LSM:Register("sound", "Simon Small Blue", SOUNDKIT.AUCTION_WINDOW_OPEN)
-		end
-	end
-end
-
-function Options.PlaySound(key)
-	if LSM and key and LSM:Fetch("sound", key) then
-		local sound = LSM:Fetch("sound", key)
-		if sound == "Interface\\Quiet.ogg" then
-			-- nix
-			Options:DebugPrintf("Playing/1: silence")
-		else
-			-- Options:Printf("Sound %s=%s", key, LSM:Fetch("sound", key))
-			-- 8.2: no more sound file paths, check against external LSM registered sounds
-			if type(sound) == "string" then
-				if sound:match("^Sound") then
-					Options:DebugPrintf("PlaySound/2: std sound")
-					PlaySound(SOUNDKIT.AUCTION_WINDOW_OPEN, "master")
-				else
-					Options:DebugPrintf("PlaySoundFile/2: %s", sound)
-					PlaySoundFile(sound, "master")
-				end
-			else
-				if type(sound) == "number" then
-					if addon.isClassic then
-						Options:DebugPrintf("PlaySound/4: %s", tostring(sound))
-						PlaySound(sound, "master")
-					else
-						Options:DebugPrintf("PlaySoundFile/4: %s", tostring(sound))
-						PlaySoundFile(sound, "master")
-					end
-				else
-					Options:DebugPrintf("PlaySound/5: std sound")
-					PlaySound(SOUNDKIT.AUCTION_WINDOW_OPEN, "master")
-				end
-			end
-		end
-	else
-		Options:DebugPrintf("PlaySound/6: std sound")
-		PlaySound(SOUNDKIT.AUCTION_WINDOW_OPEN, "master")
-	end
 end
 
 function Options.GetOptions(uiType, uiName, appName)
 	if appName == addonName then
 
 		local wowV, wowP = GetBuildInfo()
-		local wowVersion = "|nGame: WoW, Flavor: " .. (addon.isClassic and "Vanilla/TBC/Wrath" or "Mainline") .. ", Version: " .. wowV .. ", Build: " .. wowP
+		local wowVersion = "|nGame: WoW (ID " .. WOW_PROJECT_ID .. "), Version: " .. wowV .. ", Build: " .. wowP
 
 		local options = {
 			type = "group",

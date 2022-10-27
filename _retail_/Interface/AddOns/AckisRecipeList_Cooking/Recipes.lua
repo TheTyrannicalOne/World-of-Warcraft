@@ -3201,7 +3201,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(100, 100, 110, 115, 120)
 	recipe:SetRecipeItem(182668, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(172043, "BIND_ON_EQUIP")
-	recipe:AddRepVendor(FAC.COURT_OF_HARVESTERS, REP.REVERED, 156822)
+	recipe:AddRepVendor(FAC.COURT_OF_HARVESTERS, REP.REVERED, 156822, 176066)
 
 	-- Cinnamon Bonefish Stew -- 308404
 	recipe = AddRecipe(308404, V.SHA, Q.COMMON)
@@ -3322,6 +3322,16 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(187008, "BIND_ON_EQUIP")
 	recipe:SetCraftedItem(186726, "BIND_ON_EQUIP")
 	recipe:AddCustom("KORTHIA_TREASURES")
+
+-- 9.2 Recipes
+
+	-- Empty Kettle of Stone Soup -- 359333
+	recipe = AddRecipe(359333, V.SHA, Q.UNCOMMON)
+	recipe:SetSkillLevels(75, 75, 75, 75, 75)
+	recipe:SetRecipeItem(187804, "BIND_ON_EQUIP")
+	recipe:SetCraftedItem(187648, "BIND_ON_EQUIP")
+	recipe:AddVendor(183962)
+
 
 	self.InitializeRecipes = nil
 end

@@ -9069,7 +9069,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(183094, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(171445, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_HEAD")
-	recipe:AddRepVendor(FAC.THE_ASCENDED, REP.HONORED, 160470)
+	recipe:AddRepVendor(FAC.THE_ASCENDED, REP.HONORED, 160470, 176064)
 
 	-- Shadowsteel Greaves -- 322591
 	recipe = AddRecipe(322591, V.SHA, Q.COMMON)
@@ -9084,7 +9084,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(183095, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(171447, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("BLACKSMITHING_SHOULDER")
-	recipe:AddRepVendor(FAC.THE_UNDYING_ARMY, REP.HONORED, 173003)
+	recipe:AddRepVendor(FAC.THE_UNDYING_ARMY, REP.HONORED, 173003, 176067)
 
 	-- Shadowsteel Waistguard -- 322594
 	recipe = AddRecipe(322594, V.SHA, Q.COMMON)
@@ -9312,6 +9312,33 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(185960, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("BLACKSMITHING_CREATED_ITEM")
 	recipe:AddRepVendor(FAC.DEATHS_ADVANCE, REP.HONORED, 179321)
+
+
+	-- 9.2 Recipes
+
+	-- Crafter's Mark IV -- 359665
+	recipe = AddRecipe(359665, V.SHA, Q.EPIC)
+	recipe:SetSkillLevels(201, 201, 201, 201, 201)
+	recipe:SetRecipeItem(187750, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187741, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_CREATED_ITEM")
+	recipe:AddRepVendor(FAC.THE_ENLIGHTENED, REP.HONORED, 182257)
+
+	-- Crafter's Mark of the First Ones -- 359671
+	recipe = AddRecipe(359671, V.SHA, Q.EPIC)
+	recipe:SetSkillLevels(201, 201, 201, 201, 201)
+	recipe:SetRecipeItem(187749, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187742, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_CREATED_ITEM")
+	recipe:AddRepVendor(FAC.THE_ENLIGHTENED, REP.HONORED, 182257)
+
+	-- Vestige of the Eternal -- 359700
+	recipe = AddRecipe(359700, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 203, 203, 203)
+	recipe:SetRecipeItem(187785, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187784, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("BLACKSMITHING_CREATED_ITEM")
+	recipe:AddRepVendor(FAC.THE_ENLIGHTENED, REP.HONORED, 182257)
 
 	self.InitializeRecipes = nil
 end

@@ -1,30 +1,18 @@
-tag 336f4f7ce2c488402d48e35526581e369303f930 9.1.0.1
+tag 3dc1f9cf095cfbe7dbf577b3b47e95ff1b9f66b0 9.2.0
 Author:	Ressy <resa1983@hotmail.com>
-Date:	Tue Sep 7 22:03:27 2021 -0400
+Date:	Sat Oct 22 13:22:03 2022 -0400
 
-9.1 update
+9.2.0 update
 
-commit ecc5b7efb8b8135d9b64923d6cf98baa59467b8d
+commit 2436fd7e0fbe78205338b603cd71be3381c0230a
 Author: Ressy <resa1983@hotmail.com>
-Date:   Tue Sep 7 21:42:30 2021 -0400
+Date:   Sat Oct 22 13:16:26 2022 -0400
 
     Bump TOC
 
-commit 63cc233e4e0fec0a341749735995678e468d245b
+commit 6a640ae971ce9b0f72509e7adbfa273754c9afcd
 Author: Ressy <resa1983@hotmail.com>
-Date:   Tue Sep 7 21:42:22 2021 -0400
+Date:   Sat Oct 22 13:16:21 2022 -0400
 
-    Add discovery
-
-commit 9e4e94a9a1893c4c7ad25cc69824108446b05543
-Author: Ressy <resa1983@hotmail.com>
-Date:   Tue Sep 7 21:42:14 2021 -0400
-
-    Fix and add 9.1 items
-
-commit 00c9546ac1aa9b242265d2689126ab9b890cb7d2
-Author: Ressy <resa1983@hotmail.com>
-Date:   Tue Sep 7 21:42:00 2021 -0400
-
-    Fix Blizz reorg of engineering & rescan
+    Add 9.2 Recipes
 

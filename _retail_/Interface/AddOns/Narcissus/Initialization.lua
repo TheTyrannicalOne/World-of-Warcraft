@@ -1,7 +1,7 @@
-NARCI_VERSION_INFO = "1.2.7";
+NARCI_VERSION_INFO = "1.3.0";
 
-local VERSION_DATE = 1665241619;
-local CURRENT_VERSION = 10207;
+local VERSION_DATE = 1666757524;
+local CURRENT_VERSION = 10209;
 local PREVIOUS_VERSION = CURRENT_VERSION;
 local TIME_SINCE_LAST_UPDATE = 0;
 
@@ -70,6 +70,11 @@ local DefaultValues = {
     ["ShowItemID"] = false,                         --Show itemID on equipment tooltip
     ["OutfitSortMethod"] = "name",                  --Filter for sorting outfits: (name alphabet/recently visited)
     ["HideTextsWithUI"] = true,                     --Hide all texts when UI is hidden
+
+    ["MissingEnchantAlert"] = false,                --Show alert if the item isn't enchanted
+    ["TalentTreeForInspection"] = true,
+    ["TalentTreeForPaperDoll"] = false,              --True on Beta for testing
+    ["TalentTreeUseClassBackground"] = false,
 
     --# NPC
     ["SearchRelatives"] = false,                    --Search for NPCs with the same last name
@@ -236,6 +241,7 @@ Initialization:SetScript("OnEvent",function(self,event,...)
         self:UnregisterEvent(event);
         LoadSettings();
         self:SetScript("OnEvent", nil);
+        collectgarbage("collect");
     end
 end);
 

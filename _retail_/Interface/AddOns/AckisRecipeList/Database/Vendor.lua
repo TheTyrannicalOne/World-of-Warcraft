@@ -173,8 +173,15 @@ function addon:InitVendor()
 	AddVendor(173003,	L["Nalcorn Talsen"],			Z.MALDRAXXUS,			50.6,	53.4,	"Neutral") --Undying Army Quartermaster
 	AddVendor(173705,	L["Archivist Janeera"],			Z.REVENDRETH,			73.0,	52.0,	"Neutral") --Avowed Quartermaster
 	AddVendor(174914,	L["Elwyn"],				Z.ARDENWEALD,			59.4,	33.0,	"Neutral") --Renown Quartermaster in Ardenweald
+	AddVendor(176064,	L["Adjutant Mikaros"],			Z.ORIBOS,			47.6,	77.6,	"Neutral") -- Ascended Quartermaster
+	AddVendor(176065,	L["Liawyn"],				Z.ORIBOS,			47.0,	76.8,	"Neutral") -- Wild Hunt Quartermaster
+	AddVendor(176066,	L["Darvel the Frugal"],			Z.ORBIOS,			46.6,	77.6,	"Neutral") -- Court of Harvesters Quartermaster
+	AddVendor(176067,	L["Dar Vattish"],			Z.ORBIOS,			47.6,	77.6,	"Neutral") -- Undying Army Quartermaster
+	AddVendor(176368,	L["Archivist Leonara"],			Z.ORBIOS,			46.6,	77.6,	"Neutral") -- Avowed Quartermaster
 	AddVendor(178257,	L["Archivist Roh-Suir"],		Z.KORTHIA,			62.8,	22.6,	"Neutral")
-	AddVendor(179321,	L["Duchess Mynx"],			Z.KORTHIA,			63.4,	23.4,	"Neutral")
+	AddVendor(179321,	L["Duchess Mynx"],			Z.KORTHIA,			63.4,	23.4,	"Neutral")  -- Death's Advance Quartermaster
+	AddVendor(182257,	L["Vilo"],				Z.ZERETH_MORTIS,		34.8,	64.2,	"Neutral")  --Enlightened Quartermaster
+	AddVendor(183962,	L["Olea Manu"],				Z.ZERETH_MORTIS,		37.0,	44.6,	"Neutral")
 
 	self.InitVendor = nil
 end

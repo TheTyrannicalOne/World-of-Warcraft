@@ -1,7 +1,6 @@
 # BigWigs [Burning Crusade]
 
-## [v9.2.6](https://github.com/BigWigsMods/BigWigs_BurningCrusade/tree/v9.2.6) (2022-09-11)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs_BurningCrusade/compare/v9.2.5...v9.2.6) [Previous Releases](https://github.com/BigWigsMods/BigWigs_BurningCrusade/releases)
+## [v10.0.0](https://github.com/BigWigsMods/BigWigs_BurningCrusade/tree/v10.0.0) (2022-10-26)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs_BurningCrusade/compare/v9.2.6...v10.0.0) [Previous Releases](https://github.com/BigWigsMods/BigWigs_BurningCrusade/releases)
 
-- BlackTemple/Illidan: Add a Caged id  
-- Add attributes file  
+- bump toc  

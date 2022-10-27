@@ -1,9 +1,5 @@
 
 OmniCCDB = {
-	["global"] = {
-		["dbVersion"] = 6,
-		["addonVersion"] = "9.2.1",
-	},
 	["profileKeys"] = {
 		["Vancard - Zul'jin"] = "Default",
 		["Armaguth - Zul'jin"] = "Default",
@@ -20,43 +16,48 @@ OmniCCDB = {
 		["Durlok - Black Dragonflight"] = "Default",
 		["Dachas - Zul'jin"] = "Default",
 		["Jingojaggot - Argent Dawn"] = "Default",
+		["Tendralas - Dalaran"] = "Default",
 		["Tyranasticus - Zul'jin"] = "Default",
-		["Banesmuncy - Zul'jin"] = "Default",
 		["Illingrath - Dalaran"] = "Default",
 		["Brotus - Argent Dawn"] = "Default",
+		["Galvarton - Dalaran"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
 		["Kelvalatar - Dalaran"] = "Default",
-		["Jingojaggot - Zul'jin"] = "Default",
-		["Tinkster - Dalaran"] = "Default",
-		["Shimzo - Zul'jin"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
 		["Okona - Zul'jin"] = "Default",
-		["Guufnah - Zul'jin"] = "Default",
+		["Jingojaggot - Zul'jin"] = "Default",
+		["Alatra - Zul'jin"] = "Default",
+		["Tinkster - Dalaran"] = "Default",
 		["Fantastiburo - Zul'jin"] = "Default",
-		["Kotalkhan - Zul'jin"] = "Default",
-		["Tyran - Argent Dawn"] = "Default",
-		["Laymonan - Zul'jin"] = "Default",
-		["Serbitechna - Dalaran"] = "Default",
-		["Vadder - Argent Dawn"] = "Default",
-		["Shanyt - Argent Dawn"] = "Default",
 		["Datgore - Zul'jin"] = "Default",
+		["Kotalkhan - Zul'jin"] = "Default",
+		["Laymonan - Zul'jin"] = "Default",
+		["Shanyt - Argent Dawn"] = "Default",
+		["Vadder - Argent Dawn"] = "Default",
+		["Serbitechna - Dalaran"] = "Default",
+		["Tyran - Argent Dawn"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
-		["Alatra - Zul'jin"] = "Default",
+		["Guufnah - Zul'jin"] = "Default",
 		["Abyronterner - Zul'jin"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
+		["Shimzo - Zul'jin"] = "Default",
 		["Jasmoney - Zul'jin"] = "Default",
-		["Tendralas - Dalaran"] = "Default",
+		["Banesmuncy - Zul'jin"] = "Default",
 		["Mandles - Zul'jin"] = "Default",
+	},
+	["global"] = {
+		["dbVersion"] = 6,
+		["addonVersion"] = "9.2.1",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["themes"] = {
 				["Default"] = {
 					["textStyles"] = {
-						["soon"] = {
-						},
 						["minutes"] = {
+						},
+						["soon"] = {
 						},
 						["seconds"] = {
 						},

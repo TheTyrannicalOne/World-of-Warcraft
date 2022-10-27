@@ -43,11 +43,6 @@ T Seeking Solvent|QID|12433|O|N|To Gurtor, you've got 3 minutes. Try not to figh
 T Smoke 'Em Out|QID|12324|O|M|11.3,76.7|N|To Stone Guard Ragetotem.|
 T Keep Them at Bay|QID|12317|O|M|10.1,77.3|N|To Centurion Kaggrum.|
 T Crush Captain Brightwater!|QID|12315|O|M|10.1,77.2|N|To General Khazgar.|
-A Riding the Red Rocket|QID|12432|M|14.82,86.54|N|From General Gorlok. This quest requires the Horde to fully control Venture Bay. If the Horde doesn't, just stand by the lighthouse until they do. This is one needed for an achievment.|
-l Element 115|QID|12432|O|M|16.4,80.3|N|Grab some Element 115, same as before kill everything as you get the debuff.|
-R Run here|QID|12432|O|M|13.7,88.95|CC|N|And hop on a Rocket Propelled Warhead. You can mount and fly over the water if you wish.|
-C Riding the Red Rocket|QID|12432|O|M|21.47,84.59|N|Carefully work your way to this waypoint. If you fail, just get another Element 115 and try again.|
-T Riding the Red Rocket|QID|12432|O|M|14.82,86.54|N|To General Gorlok.|
 H Conquest Hold|QID|12259|O|U|6948|N|Hearth to Conquest Hold.|
 N READ THIS|QID|12259|N|Time to engage a vrykul from dragonback, grab the dragon (Flamebringer) where the waypoint is. When you take control of the drake, you get 3 abilities. When you engage the Thane, move in really close on his right (doesn't necessarily matter, just orientation purposes) and open with ability 3. Then use ability 2. Then spam ability 1 until 2 or 3 come off cooldown and then use them. When he volleys, move to his other side and continue.|M|26,80|
 C The Thane of Voldrune|QID|12259|N|Kill Thane Torvald Eriksson.|M|27.1,73.0|
@@ -94,13 +89,13 @@ A Seared Scourge|QID|12029|PRE|12484|M|16.7,48.3|N|From Mack Fearson, after his 
 A Shimmercap Stew|QID|12483|PRE|12484|M|15.7,46.7|N|From Prigmon.|
 l Ice Serpent Eyes|QID|12483|QO|1|N|Drop from Ice Serpent or Serpent Defender, you need five eyes.|S|
 l Get 5 Shimmering Snowcaps|QID|12483|QO|2|N|From the Shimmering Snowcaps, to the west, near the river.|S|
-l Frozen Mojos|QID|11991|L|35799 5|N|Drop from Krakkari Warriors and Shamans, you need 5 mojos.|M|12.9,59.2|
+l Frozen Mojos|QID|11991|L|35799 5|N|Drop from Drakkari Warriors and Shamans, you need 5 mojos.|M|12.9,59.2|
 T Subject to Interpretation|QID|11991|M|13.2,60.9|U|35797|N|Use the [Drakuru's Elixir] near the Drakuru's Brazier. Turn the quest into the Image of Drakuru.|
 A Sacrifices Must be Made|QID|12007|PRE|11991|M|13.2,60.9|N|From the Image of Drakuru.|
 l Get 5 Shimmering Snowcaps|QID|12483|QO|2|N|From the Shimmering Snowcaps, to the west, near the river.|US|
 l Ice Serpent Eyes|QID|12483|QO|1|N|Drop from Ice Serpent or Serpent Defender, you need five eyes.|US|
 C Shimmercap Stew|QID|12483|N|Loot Sweetroots from the ground.|M|16.1,34.8|S|
-K Warlord Zim'bo|L|35836|QID|12007|N|Kill and loot Warlord Zim'bo.|M|15,37|
+K Warlord Zim'bo|L|35836|QID|12007|N|Kill and loot Warlord Zim'bo.|M|14.50,38.05|
 C Sacrifices Must be Made|QID|12007|N|Get the "Eye of the Prophets" from the Seer of Zeb'Halak (statue), up the stairs.|M|17.92,36.51|
 T Sacrifices Must be Made|QID|12007|U|35797|N|Use the Drakuru's Elixir near the Drakuru's Brazier. Then turn the quest into the Image of Drakuru.|M|17.46,36.42|
 A Heart of the Ancients|QID|12042|PRE|12007|M|17.4,36.4|N|From the Image of Drakuru.|
@@ -311,7 +306,7 @@ A ... Or Maybe We Don't|QID|12198|PRE|12197|M|65.1,47.3|N|From Prospector Rokar.
 C ... Or Maybe We Don't|QID|12198|U|36936|N|Head to the hills around Dun'Argol. Use the Golem Control unit. Kill 10 Lightning Sentries. Ranged, you need to be within about 10 yards for the Golem to do it's thing.|M|73,55|
 T ... Or Maybe We Don't|QID|12198|N|To Prospector Rokar.|M|65.1,47.3|
 A Bringing Down the Iron Thane|QID|12199|PRE|12198|M|65.1,47.3|N|From Prospector Rokar.|
-R Dun Argol|QID|12099|M|75,55|N|Head back to Dun Argol.|
+R Dun Argol|ACTIVE|12199|M|75,55|QO|1|N|Head back to Dun Argol.|
 U Use the disguise|QID|12199|U|37071|N|Equip your disguise, I said it would come in handy. Head to the top of Dun'Argol, go inside the large building. Take one of the elevators down.|M|76.6,63.7|CC|
 C Bringing Down the Iron Thane|QID|12199|U|36865|M|76.6,63.7|N|AFTER you are off the elevator, use the Golem Control Unit and engage the Thane. Use ability 2, then cancel the disguise buff. Then target the Thane and use ability 1 when it's up, and 2 when the Anvil recovers from the EMP. Once the Thane dies, stay in the suit and run away; note that the suit doesn't take fall damage.|
 T Bringing Down the Iron Thane|QID|12199|M|65.2,47.5|N|To Tormak the Scarred.|

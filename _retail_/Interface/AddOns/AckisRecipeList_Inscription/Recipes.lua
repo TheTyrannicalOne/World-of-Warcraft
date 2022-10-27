@@ -3938,7 +3938,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(183103, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(173051, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("INSCRIPTION_CREATED_ITEM")
-	recipe:AddRepVendor(FAC.THE_ASCENDED, REP.REVERED, 160470)
+	recipe:AddRepVendor(FAC.THE_ASCENDED, REP.REVERED, 160470, 176064)
 
 	-- Contract: The Wild Hunt -- 311410
 	recipe = AddRecipe(311410, V.SHA, Q.UNCOMMON)
@@ -3946,7 +3946,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(183093, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(173053, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("INSCRIPTION_CREATED_ITEM")
-	recipe:AddRepVendor(FAC.THE_WILD_HUNT, REP.REVERED, 158556)
+	recipe:AddRepVendor(FAC.THE_WILD_HUNT, REP.REVERED, 158556, 176065)
 
 	-- Contract: The Undying Army -- 311411
 	recipe = AddRecipe(311411, V.SHA, Q.UNCOMMON)
@@ -3954,7 +3954,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(183104, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(175924, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("INSCRIPTION_CREATED_ITEM")
-	recipe:AddRepVendor(FAC.THE_UNDYING_ARMY, REP.REVERED, 173003)
+	recipe:AddRepVendor(FAC.THE_UNDYING_ARMY, REP.REVERED, 173003, 176067)
 
 	-- Contract: Court of Harvesters -- 311412
 	recipe = AddRecipe(311412, V.SHA, Q.UNCOMMON)
@@ -3962,7 +3962,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(183102, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(173062, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("INSCRIPTION_CREATED_ITEM")
-	recipe:AddRepVendor(FAC.COURT_OF_HARVESTERS, REP.REVERED, 156822)
+	recipe:AddRepVendor(FAC.COURT_OF_HARVESTERS, REP.REVERED, 156822, 176066)
 
 	-- Mass Mill Deathblossom -- 311413
 	recipe = AddRecipe(311413, V.SHA, Q.COMMON)
@@ -4019,7 +4019,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(183098, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(173048, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("INSCRIPTION_CREATED_ITEM")
-	recipe:AddRepVendor(FAC.THE_ASCENDED, REP.FRIENDLY, 160470)
+	recipe:AddRepVendor(FAC.THE_ASCENDED, REP.FRIENDLY, 160470, 176064)
 
 	-- Tome of the Still Mind -- 311425
 	recipe = AddRecipe(311425, V.SHA, Q.COMMON)
@@ -4191,6 +4191,119 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(186671, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("INSCRIPTION_VANTUS_RUNE")
 	recipe:AddWorldDrop(Z.SANCTUM_OF_DOMINATION)
+
+-- 9.2 Recipes
+
+	-- Mass Mill First Flower -- 359490
+	recipe = AddRecipe(359490, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(30, 30, 40, 45, 50)
+	recipe:SetCraftedItem(187699, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("INSCRIPTION_MATERIALS")
+	recipe:AddTrainer(156685)
+
+	-- Contract: Enlightened Brokers -- 359786
+	recipe = AddRecipe(359786, V.SHA, Q.UNCOMMON)
+	recipe:SetSkillLevels(101, 101, 101, 101, 101)
+	recipe:SetRecipeItem(187797, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187796, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("INSCRIPTION_CREATED_ITEM")
+	recipe:AddRepVendor(FAC.THE_ENLIGHTENED, REP.REVERED, 182257)
+
+	-- Vantus Rune: Sepulcher of the First Ones -- 359890
+	recipe = AddRecipe(359890, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 130, 130, 101)
+	recipe:SetRecipeItem(187806, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187805, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("INSCRIPTION_VANTUS_RUNE")
+	recipe:AddWorldDrop(Z.SEPULCHER_OF_THE_FIRST_ONES)
+
+	-- Mark of the Twilight Runestag -- 360539
+	recipe = AddRecipe(360539, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetRecipeItem(187883, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187884, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("INSCRIPTION_CREATED_ITEM")
+	recipe:AddFilters(F.DRUID)
+	recipe:AddRepVendor(FAC.THE_WILD_HUNT, REP.REVERED, 158556, 176065)
+
+	-- Mark of the Gloomstalker Dredbat -- 360542
+	recipe = AddRecipe(360542, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetRecipeItem(187886, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187887, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("INSCRIPTION_CREATED_ITEM")
+	recipe:AddFilters(F.DRUID)
+	recipe:AddVendor(171808)
+
+	-- Mark of the Shimmering Ardenmoth -- 360545
+	recipe = AddRecipe(360545, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetCraftedItem(187888, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("INSCRIPTION_CREATED_ITEM")
+	recipe:AddFilters(F.DRUID)
+	recipe:AddCustom("DROMAN")
+
+	-- Mark of the Regal Dredbat -- 360880
+	recipe = AddRecipe(360880, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetRecipeItem(187930, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187931, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("INSCRIPTION_CREATED_ITEM")
+	recipe:AddFilters(F.DRUID)
+	recipe:AddMobDrop(158976, 159178)
+
+	-- Mark of the Duskwing Raven -- 360882
+	recipe = AddRecipe(360882, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(20, 20, 20, 45, 70)
+	recipe:SetRecipeItem(187932, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187933, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("INSCRIPTION_CREATED_ITEM")
+	recipe:AddFilters(F.DRUID)
+	recipe:AddRepVendor(FAC.DREAMWEAVERS, REP.HONORED, 106901)
+
+	-- Mark of the Midnight Runestag -- 360885
+	recipe = AddRecipe(360885, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetRecipeItem(187935, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187934, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("INSCRIPTION_CREATED_ITEM")
+	recipe:AddFilters(F.DRUID)
+	recipe:AddWorldDrop(Z.ARDENWEALD)
+
+	-- Mark of the Sable Ardenmoth -- 360899
+	recipe = AddRecipe(360899, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetRecipeItem(187937, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187936, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("INSCRIPTION_CREATED_ITEM")
+	recipe:AddFilters(F.DRUID)
+	recipe:AddRepVendor(FAC.COURT_OF_NIGHT, REP.HONORED, 162447)
+
+	-- Glyph of the Wild Mushroom -- 362412
+	recipe = AddRecipe(362412, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(188164, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("INSCRIPTION_MINOR_GLYPH")
+	recipe:AddFilters(F.DRUID)
+	recipe:AddTrainer(156685)
+
+	-- Glyph of the Spectral Lupine -- 367389
+	recipe = AddRecipe(367389, V.SHA, Q.RARE)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetRecipeItem(190379, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(190378, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("INSCRIPTION_MINOR_GLYPH")
+	recipe:AddFilters(F.SHAMAN)
+	recipe:AddRepVendor(FAC.THE_ENLIGHTENED, REP.REVERED, 182257)
+
+	-- Glyph of the Spectral Vulpine -- 367393
+	recipe = AddRecipe(367393, V.SHA, Q.RARE)
+	recipe:SetSkillLevels(100, 100, 100, 100, 100)
+	recipe:SetRecipeItem(190381, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(190380, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("INSCRIPTION_MINOR_GLYPH")
+	recipe:AddFilters(F.SHAMAN)
+	recipe:AddQuest(60439)
 
 	self.InitializeRecipes = nil
 end

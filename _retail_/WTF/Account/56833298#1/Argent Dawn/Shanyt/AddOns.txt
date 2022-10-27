@@ -388,3 +388,11 @@ InstanceAchievementTracker: enabled
 MillButton: enabled
 ProtoformSynthesisFieldJournal: enabled
 WoWthing_Collector: enabled
+BigWigs_DragonIsles: enabled
+BigWigs_VaultOfTheIncarnates: enabled
+BlizzMove: enabled
+BlizzMove_Debug: enabled
+DeModal: enabled
+TalentTreeTweaks: enabled
+TalentViewer: enabled
+TransmogRoulette: enabled

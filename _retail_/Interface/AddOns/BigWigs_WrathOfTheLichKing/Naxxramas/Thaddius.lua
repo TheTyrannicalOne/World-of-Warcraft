@@ -13,11 +13,8 @@ mod:SetRespawnTime(32) -- p1 resets, p2 respawns
 --
 
 local deaths = 0
-local prevExpirationTime = 0
-local lastCharge = nil
-local shiftTime = nil
+local firstCharge = true
 local throwHandle = nil
-local strategy = {}
 
 local EXTRAS_PATH = "Interface\\AddOns\\BigWigs_WrathOfTheLichKing\\Naxxramas\\Extras"
 
@@ -190,35 +187,16 @@ function mod:OnBossEnable()
 	self:Emote("PrePhase2", L.overload_trigger)
 	self:BossYell("Phase2", L.phase2_trigger1, L.phase2_trigger2, L.phase2_trigger3)
 	self:RegisterEvent("PLAYER_REGEN_ENABLED", "CheckForWipe")
+
+	self:Log("SPELL_AURA_APPLIED", "NegativeCharge", 28084)
+	self:Log("SPELL_AURA_REFRESH", "NegativeChargeRefresh", 28084)
+	self:Log("SPELL_AURA_APPLIED", "PositiveCharge", 28059)
+	self:Log("SPELL_AURA_REFRESH", "PositiveChargeRefresh", 28059)
 end
 
 function mod:OnEngage()
 	deaths = 0
-	prevExpirationTime = 0
-	lastCharge = nil
-	shiftTime = nil
-
-	strategy = {}
-	local opt = self:GetOption("custom_off_select_charge_position")
-	strategy.first = INITIAL_DIRECTION[opt]
-
-	opt = self:GetOption("custom_off_select_charge_movement")
-	if opt == 1 then -- through
-		strategy.change = "swap"
-		strategy.nochange = "stay"
-	elseif opt == 2 then -- cw
-		strategy.change = "left"
-		strategy.nochange = "stay"
-	elseif opt == 3 then -- ccw
-		strategy.change = "right"
-		strategy.nochange = "stay"
-	elseif opt == 4 then -- 4r
-		strategy.change = "right"
-		strategy.nochange = "left"
-	elseif opt == 5 then -- 4l
-		strategy.change = "left"
-		strategy.nochange = "right"
-	end
+	firstCharge = true
 
 	self:Message("stages", "yellow", CL.phase:format(1), false) -- L.engage_message
 	self:Throw()
@@ -285,8 +263,6 @@ end
 function mod:PolarityShiftCast(args)
 	self:Message(28089, "orange", CL.casting:format(args.spellName))
 	self:PlaySound(28089, "long")
-	shiftTime = GetTime()
-	self:RegisterUnitEvent("UNIT_AURA", nil, "player")
 end
 
 function mod:PolarityShift(args)
@@ -294,74 +270,146 @@ function mod:PolarityShift(args)
 	self:DelayedMessage(28089, 25, "yellow", CL.soon:format(args.spellName), false, "info")
 end
 
-do
-	local blacklist = {[28084] = true, [28059] = true} -- Negative, Postive
-	local negativeCharge = mod:SpellName(28084)
-	local positiveCharge = mod:SpellName(28059)
-
-	function mod:UNIT_AURA(event, unit)
-		if not shiftTime or (GetTime() - shiftTime) < 2.9 then return end
-
-		for i = 1, 100 do
-			local name, _, stack, _, _, expirationTime, _, _, _, spellId, _, _, _, _, _, value = UnitAura(unit, i, "HARMFUL")
-			if not name then break end
-
-			if (name == negativeCharge or name == positiveCharge) and
-			   (not stack or stack == 0) and (not value or value == 0) and -- classic uses the value for the stack
-				 expirationTime and expirationTime > 0 and expirationTime ~= prevExpirationTime
-			then
-				if not blacklist[spellId] then
-					blacklist[spellId] = true
-					BigWigs:Error(format("Found spell '%s' using id %d on %d, tell the authors!", name, spellId, self:Difficulty()))
-				end
-
-				self:PolarityShiftAura(lastCharge, name)
-
-				lastCharge = name
-				prevExpirationTime = expirationTime
-				break
-			end
+function mod:NegativeCharge(args)
+	if self:Me(args.destGUID) then
+		local opt = self:GetOption("custom_off_select_charge_position")
+		local strategy_first = INITIAL_DIRECTION[opt]
+		local strategy_change, direction
+		opt = self:GetOption("custom_off_select_charge_movement")
+		if opt == 1 then -- through
+			strategy_change = "swap"
+		elseif opt == 2 then -- cw
+			strategy_change = "left"
+		elseif opt == 3 then -- ccw
+			strategy_change = "right"
+		elseif opt == 4 then -- 4r
+			strategy_change = "right"
+		elseif opt == 5 then -- 4l
+			strategy_change = "left"
 		end
 
-		shiftTime = nil
-		self:UnregisterUnitEvent(event, unit)
-	end
-
-	function mod:PolarityShiftAura(prevCharge, newCharge)
-		local direction, color, text
-		local icon = newCharge == positiveCharge and ICON_POSITIVE or ICON_NEGATIVE
-		if newCharge == prevCharge then
-			-- No change
-			direction = strategy.nochange
-			color = "yellow"
-			text = L.polarity_nochange
+		if firstCharge then -- First charge
+			firstCharge = false
+			direction = strategy_first[ICON_NEGATIVE]
+			self:Message(28089, "red", L.polarity_first_negative, ICON_NEGATIVE)
 		else
-			-- Change
-			color = newCharge == positiveCharge and "blue" or "red"
-			if not prevCharge then
-				-- First charge
-				direction = strategy.first[icon]
-				text = newCharge == positiveCharge and L.polarity_first_positive or L.polarity_first_negative
-			else
-				direction = strategy.change
-				text = L.polarity_changed
-			end
-			if not direction or not self:GetOption("custom_off_charge_voice") then
-				self:PlaySound(28089, "warning")
-			end
-			self:Flash(28089, icon)
+			direction = strategy_change
+			self:Message(28089, "red", L.polarity_changed, ICON_NEGATIVE)
 		end
-		if direction then
-			if self:GetOption("custom_off_charge_graphic") then
-				DIRECTION_ARROW[direction]()
-			end
-			if self:GetOption("custom_off_charge_text") then
-				self:Message(28089, color, L[direction], false) -- SetOption::blue,red,yellow::
-			end
-			if self:GetOption("custom_off_charge_voice") then
-				PlaySoundFile(DIRECTION_SOUND[direction], "Master")
-			end
+		if not self:GetOption("custom_off_charge_voice") then
+			self:PlaySound(28089, "warning")
 		end
-		self:Message(28089, color, text, icon) -- SetOption::blue,red,yellow::
+		self:Flash(28089, ICON_NEGATIVE)
+		if self:GetOption("custom_off_charge_graphic") then
+			DIRECTION_ARROW[direction]()
+		end
+		if self:GetOption("custom_off_charge_text") then
+			self:Message(28089, "red", L[direction], false)
+		end
+		if self:GetOption("custom_off_charge_voice") then
+			PlaySoundFile(DIRECTION_SOUND[direction], "Master")
+		end
+	end
+end
+
+function mod:NegativeChargeRefresh(args)
+	if self:Me(args.destGUID) then
+		local strategy_nochange, direction
+		local opt = self:GetOption("custom_off_select_charge_movement")
+		if opt == 1 then -- through
+			strategy_nochange = "stay"
+		elseif opt == 2 then -- cw
+			strategy_nochange = "stay"
+		elseif opt == 3 then -- ccw
+			strategy_nochange = "stay"
+		elseif opt == 4 then -- 4r
+			strategy_nochange = "left"
+		elseif opt == 5 then -- 4l
+			strategy_nochange = "right"
+		end
+
+		local direction = strategy_nochange
+		self:Message(28089, "yellow", L.polarity_nochange, ICON_NEGATIVE)
+		if self:GetOption("custom_off_charge_graphic") then
+			DIRECTION_ARROW[direction]()
+		end
+		if self:GetOption("custom_off_charge_text") then
+			self:Message(28089, "yellow", L[direction], false)
+		end
+		if self:GetOption("custom_off_charge_voice") then
+			PlaySoundFile(DIRECTION_SOUND[direction], "Master")
+		end
+	end
+end
+
+function mod:PositiveCharge(args)
+	if self:Me(args.destGUID) then
+		local opt = self:GetOption("custom_off_select_charge_position")
+		local strategy_first = INITIAL_DIRECTION[opt]
+		local strategy_change, direction
+		opt = self:GetOption("custom_off_select_charge_movement")
+		if opt == 1 then -- through
+			strategy_change = "swap"
+		elseif opt == 2 then -- cw
+			strategy_change = "left"
+		elseif opt == 3 then -- ccw
+			strategy_change = "right"
+		elseif opt == 4 then -- 4r
+			strategy_change = "right"
+		elseif opt == 5 then -- 4l
+			strategy_change = "left"
+		end
+
+		if firstCharge then -- First charge
+			firstCharge = false
+			direction = strategy_first[ICON_POSITIVE]
+			self:Message(28089, "blue", L.polarity_first_positive, ICON_POSITIVE)
+		else
+			direction = strategy_change
+			self:Message(28089, "blue", L.polarity_changed, ICON_POSITIVE)
+		end
+		if not self:GetOption("custom_off_charge_voice") then
+			self:PlaySound(28089, "warning")
+		end
+		self:Flash(28089, ICON_POSITIVE)
+		if self:GetOption("custom_off_charge_graphic") then
+			DIRECTION_ARROW[direction]()
+		end
+		if self:GetOption("custom_off_charge_text") then
+			self:Message(28089, "blue", L[direction], false)
+		end
+		if self:GetOption("custom_off_charge_voice") then
+			PlaySoundFile(DIRECTION_SOUND[direction], "Master")
+		end
+	end
+end
+
+function mod:PositiveChargeRefresh(args)
+	if self:Me(args.destGUID) then
+		local strategy_nochange, direction
+		local opt = self:GetOption("custom_off_select_charge_movement")
+		if opt == 1 then -- through
+			strategy_nochange = "stay"
+		elseif opt == 2 then -- cw
+			strategy_nochange = "stay"
+		elseif opt == 3 then -- ccw
+			strategy_nochange = "stay"
+		elseif opt == 4 then -- 4r
+			strategy_nochange = "left"
+		elseif opt == 5 then -- 4l
+			strategy_nochange = "right"
+		end
+
+		local direction = strategy_nochange
+		self:Message(28089, "yellow", L.polarity_nochange, ICON_POSITIVE)
+		if self:GetOption("custom_off_charge_graphic") then
+			DIRECTION_ARROW[direction]()
+		end
+		if self:GetOption("custom_off_charge_text") then
+			self:Message(28089, "yellow", L[direction], false)
+		end
+		if self:GetOption("custom_off_charge_voice") then
+			PlaySoundFile(DIRECTION_SOUND[direction], "Master")
+		end
 	end
 end

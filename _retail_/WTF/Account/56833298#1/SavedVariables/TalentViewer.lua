@@ -1,0 +1,6 @@
+
+TalentViewerDB = {
+	["ldbOptions"] = {
+		["hide"] = false,
+	},
+}

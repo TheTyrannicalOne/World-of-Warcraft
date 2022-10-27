@@ -1,6 +1,6 @@
-## Interface:  90205
+## Interface:  100000
 ## Title: mOnAr's WardrobeHelper
-## Version: 1.22
+## Version: 1.23
 ## Author: mOnAr
 ## Notes:
 ## SavedVariables: mOnWDSave

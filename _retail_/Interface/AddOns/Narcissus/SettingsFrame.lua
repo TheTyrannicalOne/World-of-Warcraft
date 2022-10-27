@@ -16,6 +16,12 @@ local BUTTON_LEVEL_OFFSET = 12;
 local CATE_OFFSET = 64;
 local WIDGET_GAP = 16;
 
+local IS_DRAGONFLIGHT = addon.IsDragonflight();
+
+local function IsDragonflightFeature()
+    return IS_DRAGONFLIGHT
+end
+
 
 local L = Narci.L;
 local BIND_ACTION_NARCISSUS = "CLICK Narci_MinimapButton:LeftButton";
@@ -285,6 +291,7 @@ local function SetCategory(id)
     end
 end
 
+local CREDIT_TAB_ID = 10;
 
 local function FindCurrentCategory(offset)
     offset = offset + 135;   --is height/3 a proper position?
@@ -300,7 +307,7 @@ local function FindCurrentCategory(offset)
     if matchID ~= CURRENT_CATE_ID then
         CURRENT_CATE_ID = matchID;
         SetCategory(matchID);
-        CreditList:OnFocused(matchID == 10);
+        CreditList:OnFocused(matchID == CREDIT_TAB_ID);
     end
 
     UpdateRenderArea(offset);
@@ -321,15 +328,18 @@ local function CategoryButton_SetLabel(self, text)
     end
 end
 
-local function CategoryButton_OnClick(self)
-    SetCategory(self.id);
-
-    if true then
-        MainFrame.ScrollFrame:ScrollToOffset(CategoryOffsets[self.id]);
-        UpdateRenderArea(CategoryOffsets[self.id]);
+local function SetScrollByCategoryID(id, smoothScroll)
+    SetCategory(id);
+    if smoothScroll then
+        MainFrame.ScrollFrame:ScrollToOffset(CategoryOffsets[id]);
     else
-        MainFrame.ScrollFrame:SetOffset(CategoryOffsets[self.id]);
+        MainFrame.ScrollFrame:SetOffset(CategoryOffsets[id]);
     end
+    UpdateRenderArea(CategoryOffsets[id]);
+end
+
+local function CategoryButton_OnClick(self)
+    SetScrollByCategoryID(self.id, true);
 end
 
 local function CategoryButton_OnEnter(self)
@@ -513,6 +523,10 @@ local function DoubleTap_OnValueChanged(self, state)
 
 end
 
+local function UseEscapeKey_OnValueChanged(self, state)
+    SettingFunctions.UseEscapeKeyForExit(state);
+end
+
 
 local function ItemTooltipStyle_OnEnter(self)
     self.slotID = 16;
@@ -578,6 +592,14 @@ end
 
 local function UltraWideOffset_OnValueChanged(self, value)
     SettingFunctions.SetUltraWideFrameOffset(value);
+end
+
+local function ShowMisingEnchantAlert_OnValueChanged(self, state)
+    SettingFunctions.EnableMissingEnchantAlert(state);
+end
+
+local function ShowMisingEnchantAlert_IsValid()
+    return NarciAPI.IsPlayerAtMaxLevel();
 end
 
 local function ShowDetailedStats_OnValueChanged(self, state)
@@ -1752,6 +1774,12 @@ local function CreateWidget(parent, anchorTo, offsetX, offsetY, widgetData)
         height = height + extraOffset;
     end
 
+    if widgetData.isNew then
+        if widgetData.text then
+            widgetData.text = NARCI_NEW_ENTRY_PREFIX..widgetData.text.."|r"
+        end
+    end
+
     if isTextObject then
         obj = parent:CreateFontString(nil, "OVERLAY", "NarciFontMedium13");
     
@@ -1805,7 +1833,9 @@ local function CreateWidget(parent, anchorTo, offsetX, offsetY, widgetData)
             SetTextColorByID(obj.Label, 2);
             WidgetGroups[groupID][i] = obj;
             obj.onValueChangedFunc = widgetData.onValueChangedFunc;
-            AddObjectAsChild(obj);
+            if widgetData.isChild then
+                AddObjectAsChild(obj);
+            end
             obj.onEnterFunc = widgetData.onEnterFunc;
             obj.onLeaveFunc = widgetData.onLeaveFunc;
 
@@ -1921,11 +1951,12 @@ end
 
 local Categories = {
     --{ CategoryName }
-    {name = L["Character Panel"], level = 0,
+    {name = L["Character Panel"], level = 0, key = "characterPanel",
         widgets = {
             {type = "header", level = 0, text = L["Character Panel"]},
             {type = "slider", level = 1, key = "GlobalScale", text = UI_SCALE, onValueChangedFunc = CharacterUIScale_OnValueChanged, minValue = 0.7, maxValue = 1, valueStep = 0.1, },
             {type = "slider", level = 1, key = "BaseLineOffset", text = L["Baseline Offset"], validityCheckFunc = IsUsingUltraWideMonitor, onValueChangedFunc = UltraWideOffset_OnValueChanged, minValue = 0, maxValue = ULTRAWIDE_MAX_OFFSET, valueStep = ULTRAWIDE_STEP, },
+            {type = "checkbox", level = 1, key = "MissingEnchantAlert", text = L["Missing Enchant Alert"], onValueChangedFunc = ShowMisingEnchantAlert_OnValueChanged, validityCheckFunc = ShowMisingEnchantAlert_IsValid, isNew = true},
             {type = "checkbox", level = 1, key = "DetailedIlvlInfo", text = L["Show Detailed Stats"], onValueChangedFunc = ShowDetailedStats_OnValueChanged},
             {type = "checkbox", level = 1, key = "AFKScreen", text = L["AFK Screen Description"], onValueChangedFunc = AFKToggle_OnValueChanged, },
                 {type = "checkbox", level = 3, key = "AKFScreenDelay", text = L["AFK Screen Delay"], onValueChangedFunc = nil, isChild = true},
@@ -1936,16 +1967,16 @@ local Categories = {
         },
     },
 
-    {name = L["Hotkey"], level = 1,
+    {name = L["Hotkey"], level = 1, key = "hotkey",
         widgets = {
             {type = "header", level = 0, text = L["Hotkey"]},
             {type = "keybinding", level = 1, text = L["Open Narcissus"], externalAction = BIND_ACTION_NARCISSUS},
             {type = "checkbox", level = 1, key = "EnableDoubleTap", extraTopPadding = 1, text = L["Double Tap"], description = L["Double Tap Description"], onValueChangedFunc = DoubleTap_OnValueChanged, setupFunc = DoubleTap_Setup},
-            {type = "checkbox", level = 1, key = "UseEscapeButton", text = L["Use Escape Button"], description = L["Use Escape Button Description"], },
+            {type = "checkbox", level = 1, key = "UseEscapeButton", text = L["Use Escape Button"], description = L["Use Escape Button Description"], onValueChangedFunc = UseEscapeKey_OnValueChanged},
         },
     },
 
-    {name = L["Item Tooltip"], level = 1,
+    {name = L["Item Tooltip"], level = 1, key = "itemTooltip",
         widgets = {
             {type = "header", level = 0, text = L["Item Tooltip"]},
             {type = "subheader", level = 1, text= L["Style"]},
@@ -1955,7 +1986,7 @@ local Categories = {
         },
     },
 
-    {name = L["Screen Effects"], level = 1,
+    {name = L["Screen Effects"], level = 1, key = "screenEffects",
         widgets = {
             {type = "header", level = 0, text = L["Screen Effects"]},
             {type = "slider", level = 1, key = "VignetteStrength", text =  L["Vignette Strength"], valueFormatFunc = Round1, convertionFunc = Round1, onValueChangedFunc = VignetteStrength_OnValueChanged, minValue = 0, maxValue = 1, valueStep = nil, },
@@ -1965,7 +1996,7 @@ local Categories = {
         },
     },
 
-    {name = L["Camera"], level = 1,
+    {name = L["Camera"], level = 1, key = "camera",
         widgets = {
             {type = "header", level = 0, text = L["Camera"]},
             {type = "checkbox", level = 1, key = "CameraTransition", text = L["Camera Transition"], onValueChangedFunc = CameraTransition_OnValueChanged, description = L["Camera Transition Description Off"], setupFunc = CameraTransition_SetupDescription},
@@ -1975,7 +2006,7 @@ local Categories = {
         },
     },
 
-    {name = L["Minimap Button"], level = 0,    --#6
+    {name = L["Minimap Button"], level = 0, key = "minimapButton",
         widgets = {
             {type = "header", level = 0, text = L["Minimap Button"]},
             {type = "checkbox", level = 1, key = "ShowMinimapButton", text = ENABLE, onValueChangedFunc = MinimapButtonToggle_OnValueChanged},
@@ -1987,7 +2018,7 @@ local Categories = {
         },
     },
 
-    {name = L["Photo Mode"], level = 0,
+    {name = L["Photo Mode"], level = 0, key = "photoMode",
         widgets = {
             {type = "header", level = 0, text = L["Photo Mode"]},
             {type = "slider", level = 1, key = "screenshotQuality", text = L["Sceenshot Quality"], onValueChangedFunc = ScreenshotQuality_OnValueChanged, minValue = 3, maxValue = 10, getValueFunc = ScreenshotQuality_GetValue, valueFormatFunc = Round0, convertionFunc = Round0},
@@ -1997,7 +2028,7 @@ local Categories = {
         },
     },
 
-    {name = "NPC", level = 0,
+    {name = "NPC", level = 0,  key = "npc",
         widgets = {
             {type = "header", level = 0, text = L["Creature Tooltip"]},
             {type = "checkbox", level = 1, key = "SearchRelatives", text = L["Find Relatives"], onValueChangedFunc = SearchRelativesToggle_OnValueChanged, },
@@ -2009,7 +2040,7 @@ local Categories = {
         },
     },
 
-    {name = L["Extensions"], level = 0,
+    {name = L["Extensions"], level = 0, key = "extensions",
         widgets = {
             {type = "header", level = 0, text = "Extensions"},
             {type = "checkbox", level = 1, key = "GemManager", text = L["Gem Manager"], onValueChangedFunc = GemManagerToggle_OnValueChanged, description = L["Gemma Description"]},
@@ -2020,13 +2051,44 @@ local Categories = {
         },
     },
 
-    {name = L["Credits"], level = 0, },
-    {name = L["About"], level = 0,
+
+
+    {name = L["Credits"], level = 0, key = "credits",},
+    {name = L["About"], level = 0, key = "about",
         widgets = {
             {type = "header", level = 0, text = L["About"]},
         },
     },
 };
+
+
+if IS_DRAGONFLIGHT then
+    local function ShowTreeCase1(self, state)
+        SettingFunctions.ShowMiniTalentTreeForPaperDoll(state);
+    end
+
+    local function ShowTreeCase2(self, state)
+        SettingFunctions.ShowMiniTalentTreeForInspection(state);
+    end
+
+    local function TalentTreeUseClassBackground(self, state)
+        SettingFunctions.SetUseClassBackground(state);
+    end
+
+    local talentCategory = {name = TALENTS or "Talents", level = 1, key = "talents",
+    widgets = {
+        {type = "header", level = 0, text = L["Mini Talent Tree"]},
+        {type = "subheader", level = 1, text = L["Show Talent Tree When"]},
+        {type = "checkbox", level = 1, key = "TalentTreeForPaperDoll",text = L["Show Talent Tree Paperdoll"], onValueChangedFunc = ShowTreeCase1},
+        {type = "checkbox", level = 1, key = "TalentTreeForInspection", text = L["Show Talent Tree Inspection"],  onValueChangedFunc = ShowTreeCase2},
+        {type = "subheader", level = 1, text = L["Appearance"], extraTopPadding = 1},
+        {type = "checkbox", level = 1, key = "TalentTreeUseClassBackground", text = L["Use Class Background"],  onValueChangedFunc = TalentTreeUseClassBackground},
+    }};
+
+    table.insert(Categories, #Categories -1, talentCategory);
+end
+
+CREDIT_TAB_ID = #Categories - 1;
 
 local function SetupFrame()
     if CategoryButtons then return end;
@@ -2074,7 +2136,7 @@ local function SetupFrame()
 
         obj.id = i;
         obj.level = cateData.level;
-
+        obj.key = cateData.key;
 
         obj:SetScript("OnClick", CategoryButton_OnClick);
         obj:SetScript("OnEnter", CategoryButton_OnEnter);
@@ -2200,7 +2262,14 @@ function NarciSettingsFrameMixin:OnLoad()
         MainFrame:CloseUI();
     end);
 
-    if addon.IsDragonflight() and SettingsPanel then
+    if IS_DRAGONFLIGHT and SettingsPanel then
+        if false then
+            --don't create our tab on the SettingsPanel until the tain issue being resolved.
+            self.Background = self:CreateTexture(nil, "BACKGROUND", nil, -1);
+            self.Background:Hide();
+            return
+        end
+    
         self.Background = CreateFrame("Frame", nil, SettingsPanel);
         self.Background:SetFrameStrata("LOW");
         self.Background:SetFixedFrameStrata(true);
@@ -2234,7 +2303,7 @@ end
 
 
 
-function NarciSettingsFrameMixin:ShowUI(mode)
+function NarciSettingsFrameMixin:ShowUI(mode, alignToCenter, navigateTo)
     SetupFrame();
 
     mode = mode or "default";
@@ -2243,24 +2312,30 @@ function NarciSettingsFrameMixin:ShowUI(mode)
         if mode == "blizzard" then
             self:AnchorToInterfaceOptions();
         else
-            self:AnchorToDefault();
+            self:AnchorToDefault(alignToCenter);
         end
     end
 
     CreditList:StopAnimation();
 
-    if mode == "default" then
-        self.FlyIn:Play();
-        self:SetFrameStrata("HIGH");
-        self.Background:Hide();
-    else
+    if mode == "blizzard" then
         self.FlyIn:Stop();
         self.Background:Show();
+    else
+        self.FlyIn:Play();
+        self:SetFrameStrata("DIALOG");
+        self.Background:Hide();
     end
 
     RENDER_RANGE = Round0(self.ScrollFrame:GetHeight() + 4 + CATE_OFFSET);
 
     self:Show();
+
+    if navigateTo then
+        C_Timer.After(0, function()
+            self:NavigateToCategory(navigateTo);
+        end)
+    end
 end
 
 function NarciSettingsFrameMixin:CloseUI()
@@ -2288,6 +2363,16 @@ function NarciSettingsFrameMixin:OnEvent(event, ...)
         self.mode = nil;    --to recalculate scale
     end
 end
+
+function NarciSettingsFrameMixin:NavigateToCategory(categoryKey)
+    for i, b in ipairs(CategoryButtons) do
+        if b.key == categoryKey then
+            SetScrollByCategoryID(b.id, false);
+            return
+        end
+    end
+end
+
 
 local CollapsibleCategory = {
     onUpdate = function(self, elapsed)
@@ -2397,12 +2482,17 @@ function NarciSettingsFrameMixin:AnchorToInterfaceOptions()
     UpdateAlignment();
 end
 
-function NarciSettingsFrameMixin:AnchorToDefault()
+function NarciSettingsFrameMixin:AnchorToDefault(alignToCenter)
     self:ClearAllPoints();
     self:SetParent(nil);
     local x, y = Narci_VirtualLineCenter:GetCenter();
     local scale = self:GetEffectiveScale();
-    self:SetPoint("CENTER", UIParent, "LEFT", x/scale, 0);
+    if alignToCenter then
+        self:SetPoint("CENTER", UIParent, "CENTER", 0, 0);
+    else
+        self:SetPoint("CENTER", UIParent, "LEFT", x/scale, 0);
+    end
+
     self:SetSize(DEFAULT_FRAME_WIDTH, DEFAULT_FRAME_HEIGHT);
     self.CategoryFrame:SetWidth(DEFAULT_LEFT_WIDTH);
     self.ScrollFrame.ScrollChild:SetWidth(DEFAULT_FRAME_WIDTH - DEFAULT_LEFT_WIDTH);

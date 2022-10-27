@@ -67,6 +67,7 @@ function module:InitializeQuests()
 	AddQuest(54454,	Z.BORALUS,			69.2,	25.0,	"Alliance")
 	AddQuest(54455,	Z.ZULDAZAR,			58.0,	62.6,	"Horde")
 	AddQuest(54457,	Z.STORMSONG_VALLEY,		59.2,	69.4,	"Alliance")
+	AddQuest(60439,	Z.ARDENWEALD,			0.0,	0.0,	"Neutral")
 
 	self.InitializeQuests = nil
 end

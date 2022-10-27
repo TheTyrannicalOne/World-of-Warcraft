@@ -6,7 +6,7 @@ function Addon:InitUI()
     
     local CheckBoxID = 1
     function self:CreateCheckBox(Data)
-        local CheckBox = CreateFrame("CheckButton", "RareShare_CheckBox_"..CheckBoxID.."_", Data.Parent, "OptionsCheckButtonTemplate")
+        local CheckBox = CreateFrame("CheckButton", "RareShare_CheckBox_"..CheckBoxID.."_", Data.Parent, "InterfaceOptionsCheckButtonTemplate")
         CheckBox:SetPoint("TOPLEFT", Data.X, Data.Y)
         CheckBox.tooltipText      = Data.Tooltip
         CheckBox.defaultValue     = Data.Default

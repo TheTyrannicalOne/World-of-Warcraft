@@ -1,0 +1,2 @@
+
+DEMODAL_DB = nil

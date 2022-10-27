@@ -1,19 +1,321 @@
-10/11 15:00:57.107  Loading add-on AngryWorldQuests
-10/11 15:00:57.107  ** Loading table of contents Interface\AddOns\AngryWorldQuests\AngryWorldQuests.toc
-10/11 15:00:57.107  (null)
-10/11 15:00:57.107  Loading add-on DejaCharacterStats
-10/11 15:00:57.107  ** Loading table of contents Interface\AddOns\DejaCharacterStats\DejaCharacterStats.toc
-10/11 15:00:57.107  (null)
-10/11 15:00:57.107  Loading add-on NPCScan
-10/11 15:00:57.107  Interface\AddOns\NPCScan\Bindings.xml(1): error: not well-formed (invalid token)
-10/11 15:00:57.107  Loading add-on Overachiever
-10/11 15:00:57.107  ** Loading table of contents Interface\AddOns\Overachiever\Overachiever.toc
-10/11 15:00:57.107  (null)
-10/11 15:00:57.107  Loading add-on PetEmote
-10/11 15:00:57.107  Interface\AddOns\PetEmote\Bindings.xml(1): error: not well-formed (invalid token)
-10/11 15:01:08.931  Loading add-on Overachiever_Trade
-10/11 15:01:08.931  ** Loading table of contents Interface\AddOns\Overachiever_Trade\Overachiever_Trade.toc
-10/11 15:01:08.931  (null)
-10/11 15:01:21.346  Loading add-on Overachiever_Tabs
-10/11 15:01:21.346  ** Loading table of contents Interface\AddOns\Overachiever_Tabs\Overachiever_Tabs.toc
-10/11 15:01:21.346  (null)
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Loading add-on AAP-Core
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AAP-Core/Bindings.xml:2 Unrecognized XML: Binding
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AAP-Core/Bindings.xml:2 Unrecognized XML attribute: name
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AAP-Core/Bindings.xml:2 Unrecognized XML attribute: header
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AAP-Core/Bindings.xml:2 Unrecognized XML attribute: category
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AAP-Core/Core.lua:1 (null)
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AAP-Core/OptionsPanel.lua:1 (null)
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AAP-Core/QuestHandler.lua:1 (null)
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Loading add-on AchievementsReminder
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:66 Unrecognized XML: Backdrop
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:66 Unrecognized XML attribute: bgFile
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:66 Unrecognized XML attribute: edgeFile
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:66 Unrecognized XML attribute: tile
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:67 Unrecognized XML: TileSize
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:68 Unrecognized XML: AbsValue
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:68 Unrecognized XML attribute: val
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:70 Unrecognized XML: EdgeSize
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:71 Unrecognized XML: AbsValue
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:71 Unrecognized XML attribute: val
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:73 Unrecognized XML: BackgroundInsets
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:74 Unrecognized XML: AbsInset
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:74 Unrecognized XML attribute: left
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:74 Unrecognized XML attribute: right
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:74 Unrecognized XML attribute: top
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:74 Unrecognized XML attribute: bottom
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:121 Unrecognized XML: Backdrop
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:121 Unrecognized XML attribute: bgFile
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:121 Unrecognized XML attribute: edgeFile
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:121 Unrecognized XML attribute: tile
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:122 Unrecognized XML: TileSize
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:123 Unrecognized XML: AbsValue
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:123 Unrecognized XML attribute: val
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:125 Unrecognized XML: EdgeSize
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:126 Unrecognized XML: AbsValue
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:126 Unrecognized XML attribute: val
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:128 Unrecognized XML: BackgroundInsets
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:129 Unrecognized XML: AbsInset
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:129 Unrecognized XML attribute: left
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:129 Unrecognized XML attribute: right
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:129 Unrecognized XML attribute: top
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:129 Unrecognized XML attribute: bottom
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:180 Unrecognized XML: Backdrop
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:180 Unrecognized XML attribute: bgFile
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:180 Unrecognized XML attribute: edgeFile
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:180 Unrecognized XML attribute: tile
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:181 Unrecognized XML: TileSize
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:182 Unrecognized XML: AbsValue
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:182 Unrecognized XML attribute: val
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:184 Unrecognized XML: EdgeSize
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:185 Unrecognized XML: AbsValue
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:185 Unrecognized XML attribute: val
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:187 Unrecognized XML: BackgroundInsets
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:188 Unrecognized XML: AbsInset
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:188 Unrecognized XML attribute: left
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:188 Unrecognized XML attribute: right
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:188 Unrecognized XML attribute: top
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AchievementsReminder/AchievementsReminder.xml:188 Unrecognized XML attribute: bottom
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Loading add-on ACP
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/ACP/ACP.xml:178 Unrecognized XML attribute: moveable
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Loading add-on AngryWorldQuests
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AngryWorldQuests/QuestFrame.lua:1 (null)
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Loading add-on BonusRollPreview
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/BonusRollPreview/BonusRollPreview.xml:172 Unrecognized XML attribute: layer
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/BonusRollPreview/BonusRollPreview.xml:183 Unrecognized XML attribute: layer
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Loading add-on BuyEmAll
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/BuyEmAll/BuyEmAll.xml:187 Unrecognized XML: Backdrop
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/BuyEmAll/BuyEmAll.xml:187 Unrecognized XML attribute: bgFile
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/BuyEmAll/BuyEmAll.xml:187 Unrecognized XML attribute: edgeFile
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/BuyEmAll/BuyEmAll.xml:188 Unrecognized XML: BackgroundInsets
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/BuyEmAll/BuyEmAll.xml:189 Unrecognized XML: AbsInset
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/BuyEmAll/BuyEmAll.xml:189 Unrecognized XML attribute: left
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/BuyEmAll/BuyEmAll.xml:189 Unrecognized XML attribute: right
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/BuyEmAll/BuyEmAll.xml:189 Unrecognized XML attribute: top
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/BuyEmAll/BuyEmAll.xml:189 Unrecognized XML attribute: bottom
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Loading add-on ElvUI
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/ElvUI/Libraries/LibActionButton-1.0/LibActionButton-1.0.lua:1 (null)
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/ElvUI/Modules/DataTexts/Friends.lua:1 (null)
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/ElvUI/Modules/Bags/Bags.lua:1 (null)
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Loading add-on EasyScrap
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/EasyScrap/Frames/EasyScrapItemFrame.lua:1 (null)
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/EasyScrap/Bindings.xml:2 Unrecognized XML: Binding
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/EasyScrap/Bindings.xml:2 Unrecognized XML attribute: name
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/EasyScrap/Bindings.xml:2 Unrecognized XML attribute: header
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/EasyScrap/Bindings.xml:2 Unrecognized XML attribute: category
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Loading add-on ElvUI_SLE
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/ElvUI_SLE/modules/armory/armory.lua:1 (null)
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/ElvUI_SLE/modules/armory/character.lua:1 (null)
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/ElvUI_SLE/modules/bags/baginfo.lua:1 (null)
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/ElvUI_SLE/modules/professions/deconstruct.lua:1 (null)
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Loading add-on FishingBuddy
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:152 Unrecognized XML: Backdrop
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:152 Unrecognized XML attribute: bgFile
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:152 Unrecognized XML attribute: edgeFile
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:152 Unrecognized XML attribute: tile
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:153 Unrecognized XML: BackgroundInsets
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:154 Unrecognized XML: AbsInset
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:154 Unrecognized XML attribute: left
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:154 Unrecognized XML attribute: right
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:154 Unrecognized XML attribute: top
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:154 Unrecognized XML attribute: bottom
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:156 Unrecognized XML: TileSize
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:157 Unrecognized XML: AbsValue
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:157 Unrecognized XML attribute: val
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:159 Unrecognized XML: EdgeSize
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:160 Unrecognized XML: AbsValue
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:160 Unrecognized XML attribute: val
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingLocationsFrame.xml:178 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:15 Unrecognized XML: Backdrop
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:15 Unrecognized XML attribute: bgFile
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:15 Unrecognized XML attribute: edgeFile
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:15 Unrecognized XML attribute: tile
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:16 Unrecognized XML: EdgeSize
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:17 Unrecognized XML: AbsValue
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:17 Unrecognized XML attribute: val
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:19 Unrecognized XML: TileSize
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:20 Unrecognized XML: AbsValue
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:20 Unrecognized XML attribute: val
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:22 Unrecognized XML: BackgroundInsets
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:23 Unrecognized XML: AbsInset
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:23 Unrecognized XML attribute: left
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:23 Unrecognized XML attribute: right
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:23 Unrecognized XML attribute: top
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:23 Unrecognized XML attribute: bottom
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingRaid.xml:33 Couldn't find inherited node: ActionBarFlyoutButton-ArrowUp
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Loading add-on FB_TrackingFrame
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Loading add-on MasterPlanA
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/MasterPlan/PlanA/PlanA.lua:1 (null)
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Loading add-on MBB
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/MBB/MBB.xml:223 Unrecognized XML attribute: relativeFrom
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/MBB/MBB.xml:624 Unrecognized XML attribute: relativeFrom
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/MBB/MBB.xml:664 Unrecognized XML attribute: relativeFrom
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Loading add-on MoveAnything
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/MoveAnything/MoveAnything.xml:532 Unrecognized XML: TitleRegion
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/MoveAnything/MoveAnything.xml:532 Unrecognized XML attribute: setAllPoints
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Loading add-on NomiCakes
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/NomiCakes/NomiCakes.lua:1 (null)
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Loading add-on NPCScan
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/NPCScan/Bindings.xml:1 Interface/AddOns/NPCScan/Bindings.xml(1): error: not well-formed (invalid token)
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Loading add-on OPie
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/OPie/Meta/StanceBar.lua:1 (null)
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Loading add-on Overachiever
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Overachiever/GameTip.lua:1 (null)
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Loading add-on PetEmote
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/PetEmote/Bindings.xml:1 Interface/AddOns/PetEmote/Bindings.xml(1): error: not well-formed (invalid token)
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Loading add-on RCLootCouncil
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/RCLootCouncil/core.lua:1 (null)
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/RCLootCouncil/Utils/ItemStorage.lua:1 (null)
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Loading add-on Spy
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Spy/MainWindow.lua:1 (null)
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Spy/SpyStats.xml:386 Unrecognized XML: Backdrop
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Spy/SpyStats.xml:386 Unrecognized XML attribute: bgFile
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Spy/SpyStats.xml:386 Unrecognized XML attribute: edgeFile
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Spy/SpyStats.xml:386 Unrecognized XML attribute: tile
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Spy/SpyStats.xml:387 Unrecognized XML: EdgeSize
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Spy/SpyStats.xml:388 Unrecognized XML: AbsValue
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Spy/SpyStats.xml:388 Unrecognized XML attribute: val
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Spy/SpyStats.xml:390 Unrecognized XML: TileSize
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Spy/SpyStats.xml:391 Unrecognized XML: AbsValue
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Spy/SpyStats.xml:391 Unrecognized XML attribute: val
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Spy/SpyStats.xml:393 Unrecognized XML: BackgroundInsets
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Spy/SpyStats.xml:394 Unrecognized XML: AbsInset
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Spy/SpyStats.xml:394 Unrecognized XML attribute: left
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Spy/SpyStats.xml:394 Unrecognized XML attribute: right
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Spy/SpyStats.xml:394 Unrecognized XML attribute: top
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Spy/SpyStats.xml:394 Unrecognized XML attribute: bottom
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Spy/SpyStats.xml:360 Couldn't find inherited node: OptionsButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Spy/SpyStats.xml:743 Couldn't find inherited node: OptionsCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Spy/SpyStats.xml:762 Couldn't find inherited node: OptionsCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Spy/SpyStats.xml:767 SpyStatsRealmCheckbox: Couldn't find relative frame: SpyStatsKosCheckboxText
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Spy/SpyStats.xml:781 Couldn't find inherited node: OptionsCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Spy/SpyStats.xml:786 SpyStatsWinsLosesCheckbox: Couldn't find relative frame: SpyStatsRealmCheckboxText
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Spy/SpyStats.xml:800 Couldn't find inherited node: OptionsCheckButtonTemplate
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Spy/SpyStats.xml:805 SpyStatsReasonCheckbox: Couldn't find relative frame: SpyStatsWinsLosesCheckboxText
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Loading add-on TalentViewer
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:252 Frame TalentViewer_PlayerTalentFrameTalents: Unknown function TalentViewer_PlayerTalentFrameTalents_OnLoad in element OnLoad
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:37 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow1Talent1: Unknown function TalentViewer_PlayerTalentButton_OnLoad in element OnLoad
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:38 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow1Talent1: Unknown function TalentViewer_PlayerTalentButton_OnClick in element OnClick
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:39 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow1Talent1: Unknown function TalentViewer_PlayerTalentFrameTalent_OnEnter in element OnEnter
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:40 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow1Talent1: Unknown function TalentViewer_PlayerTalentFrameTalent_OnLeave in element OnLeave
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:37 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow1Talent2: Unknown function TalentViewer_PlayerTalentButton_OnLoad in element OnLoad
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:38 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow1Talent2: Unknown function TalentViewer_PlayerTalentButton_OnClick in element OnClick
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:39 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow1Talent2: Unknown function TalentViewer_PlayerTalentFrameTalent_OnEnter in element OnEnter
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:40 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow1Talent2: Unknown function TalentViewer_PlayerTalentFrameTalent_OnLeave in element OnLeave
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:37 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow1Talent3: Unknown function TalentViewer_PlayerTalentButton_OnLoad in element OnLoad
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:38 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow1Talent3: Unknown function TalentViewer_PlayerTalentButton_OnClick in element OnClick
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:39 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow1Talent3: Unknown function TalentViewer_PlayerTalentFrameTalent_OnEnter in element OnEnter
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:40 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow1Talent3: Unknown function TalentViewer_PlayerTalentFrameTalent_OnLeave in element OnLeave
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:37 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow2Talent1: Unknown function TalentViewer_PlayerTalentButton_OnLoad in element OnLoad
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:38 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow2Talent1: Unknown function TalentViewer_PlayerTalentButton_OnClick in element OnClick
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:39 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow2Talent1: Unknown function TalentViewer_PlayerTalentFrameTalent_OnEnter in element OnEnter
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:40 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow2Talent1: Unknown function TalentViewer_PlayerTalentFrameTalent_OnLeave in element OnLeave
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:37 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow2Talent2: Unknown function TalentViewer_PlayerTalentButton_OnLoad in element OnLoad
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:38 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow2Talent2: Unknown function TalentViewer_PlayerTalentButton_OnClick in element OnClick
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:39 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow2Talent2: Unknown function TalentViewer_PlayerTalentFrameTalent_OnEnter in element OnEnter
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:40 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow2Talent2: Unknown function TalentViewer_PlayerTalentFrameTalent_OnLeave in element OnLeave
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:37 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow2Talent3: Unknown function TalentViewer_PlayerTalentButton_OnLoad in element OnLoad
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:38 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow2Talent3: Unknown function TalentViewer_PlayerTalentButton_OnClick in element OnClick
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:39 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow2Talent3: Unknown function TalentViewer_PlayerTalentFrameTalent_OnEnter in element OnEnter
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:40 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow2Talent3: Unknown function TalentViewer_PlayerTalentFrameTalent_OnLeave in element OnLeave
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:37 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow3Talent1: Unknown function TalentViewer_PlayerTalentButton_OnLoad in element OnLoad
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:38 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow3Talent1: Unknown function TalentViewer_PlayerTalentButton_OnClick in element OnClick
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:39 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow3Talent1: Unknown function TalentViewer_PlayerTalentFrameTalent_OnEnter in element OnEnter
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:40 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow3Talent1: Unknown function TalentViewer_PlayerTalentFrameTalent_OnLeave in element OnLeave
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:37 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow3Talent2: Unknown function TalentViewer_PlayerTalentButton_OnLoad in element OnLoad
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:38 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow3Talent2: Unknown function TalentViewer_PlayerTalentButton_OnClick in element OnClick
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:39 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow3Talent2: Unknown function TalentViewer_PlayerTalentFrameTalent_OnEnter in element OnEnter
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:40 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow3Talent2: Unknown function TalentViewer_PlayerTalentFrameTalent_OnLeave in element OnLeave
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:37 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow3Talent3: Unknown function TalentViewer_PlayerTalentButton_OnLoad in element OnLoad
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:38 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow3Talent3: Unknown function TalentViewer_PlayerTalentButton_OnClick in element OnClick
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:39 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow3Talent3: Unknown function TalentViewer_PlayerTalentFrameTalent_OnEnter in element OnEnter
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:40 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow3Talent3: Unknown function TalentViewer_PlayerTalentFrameTalent_OnLeave in element OnLeave
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:37 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow4Talent1: Unknown function TalentViewer_PlayerTalentButton_OnLoad in element OnLoad
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:38 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow4Talent1: Unknown function TalentViewer_PlayerTalentButton_OnClick in element OnClick
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:39 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow4Talent1: Unknown function TalentViewer_PlayerTalentFrameTalent_OnEnter in element OnEnter
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:40 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow4Talent1: Unknown function TalentViewer_PlayerTalentFrameTalent_OnLeave in element OnLeave
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:37 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow4Talent2: Unknown function TalentViewer_PlayerTalentButton_OnLoad in element OnLoad
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:38 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow4Talent2: Unknown function TalentViewer_PlayerTalentButton_OnClick in element OnClick
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:39 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow4Talent2: Unknown function TalentViewer_PlayerTalentFrameTalent_OnEnter in element OnEnter
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:40 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow4Talent2: Unknown function TalentViewer_PlayerTalentFrameTalent_OnLeave in element OnLeave
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:37 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow4Talent3: Unknown function TalentViewer_PlayerTalentButton_OnLoad in element OnLoad
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:38 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow4Talent3: Unknown function TalentViewer_PlayerTalentButton_OnClick in element OnClick
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:39 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow4Talent3: Unknown function TalentViewer_PlayerTalentFrameTalent_OnEnter in element OnEnter
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:40 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow4Talent3: Unknown function TalentViewer_PlayerTalentFrameTalent_OnLeave in element OnLeave
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:37 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow5Talent1: Unknown function TalentViewer_PlayerTalentButton_OnLoad in element OnLoad
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:38 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow5Talent1: Unknown function TalentViewer_PlayerTalentButton_OnClick in element OnClick
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:39 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow5Talent1: Unknown function TalentViewer_PlayerTalentFrameTalent_OnEnter in element OnEnter
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:40 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow5Talent1: Unknown function TalentViewer_PlayerTalentFrameTalent_OnLeave in element OnLeave
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:37 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow5Talent2: Unknown function TalentViewer_PlayerTalentButton_OnLoad in element OnLoad
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:38 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow5Talent2: Unknown function TalentViewer_PlayerTalentButton_OnClick in element OnClick
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:39 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow5Talent2: Unknown function TalentViewer_PlayerTalentFrameTalent_OnEnter in element OnEnter
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:40 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow5Talent2: Unknown function TalentViewer_PlayerTalentFrameTalent_OnLeave in element OnLeave
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:37 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow5Talent3: Unknown function TalentViewer_PlayerTalentButton_OnLoad in element OnLoad
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:38 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow5Talent3: Unknown function TalentViewer_PlayerTalentButton_OnClick in element OnClick
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:39 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow5Talent3: Unknown function TalentViewer_PlayerTalentFrameTalent_OnEnter in element OnEnter
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:40 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow5Talent3: Unknown function TalentViewer_PlayerTalentFrameTalent_OnLeave in element OnLeave
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:37 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow6Talent1: Unknown function TalentViewer_PlayerTalentButton_OnLoad in element OnLoad
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:38 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow6Talent1: Unknown function TalentViewer_PlayerTalentButton_OnClick in element OnClick
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:39 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow6Talent1: Unknown function TalentViewer_PlayerTalentFrameTalent_OnEnter in element OnEnter
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:40 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow6Talent1: Unknown function TalentViewer_PlayerTalentFrameTalent_OnLeave in element OnLeave
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:37 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow6Talent2: Unknown function TalentViewer_PlayerTalentButton_OnLoad in element OnLoad
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:38 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow6Talent2: Unknown function TalentViewer_PlayerTalentButton_OnClick in element OnClick
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:39 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow6Talent2: Unknown function TalentViewer_PlayerTalentFrameTalent_OnEnter in element OnEnter
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:40 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow6Talent2: Unknown function TalentViewer_PlayerTalentFrameTalent_OnLeave in element OnLeave
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:37 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow6Talent3: Unknown function TalentViewer_PlayerTalentButton_OnLoad in element OnLoad
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:38 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow6Talent3: Unknown function TalentViewer_PlayerTalentButton_OnClick in element OnClick
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:39 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow6Talent3: Unknown function TalentViewer_PlayerTalentFrameTalent_OnEnter in element OnEnter
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:40 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow6Talent3: Unknown function TalentViewer_PlayerTalentFrameTalent_OnLeave in element OnLeave
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:37 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow7Talent1: Unknown function TalentViewer_PlayerTalentButton_OnLoad in element OnLoad
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:38 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow7Talent1: Unknown function TalentViewer_PlayerTalentButton_OnClick in element OnClick
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:39 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow7Talent1: Unknown function TalentViewer_PlayerTalentFrameTalent_OnEnter in element OnEnter
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:40 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow7Talent1: Unknown function TalentViewer_PlayerTalentFrameTalent_OnLeave in element OnLeave
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:37 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow7Talent2: Unknown function TalentViewer_PlayerTalentButton_OnLoad in element OnLoad
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:38 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow7Talent2: Unknown function TalentViewer_PlayerTalentButton_OnClick in element OnClick
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:39 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow7Talent2: Unknown function TalentViewer_PlayerTalentFrameTalent_OnEnter in element OnEnter
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:40 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow7Talent2: Unknown function TalentViewer_PlayerTalentFrameTalent_OnLeave in element OnLeave
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:37 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow7Talent3: Unknown function TalentViewer_PlayerTalentButton_OnLoad in element OnLoad
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:38 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow7Talent3: Unknown function TalentViewer_PlayerTalentButton_OnClick in element OnClick
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:39 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow7Talent3: Unknown function TalentViewer_PlayerTalentFrameTalent_OnEnter in element OnEnter
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TalentViewer/TalentViewerUI.xml:40 Frame TalentViewer_PlayerTalentFrameTalentsTalentRow7Talent3: Unknown function TalentViewer_PlayerTalentFrameTalent_OnLeave in element OnLeave
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Loading add-on Wholly
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Wholly/Wholly.xml:545 Couldn't find frame parent: InterfaceOptionsFramePanelContainer
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Wholly/Wholly.xml:553 Couldn't find frame parent: InterfaceOptionsFramePanelContainer
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Wholly/Wholly.xml:561 Couldn't find frame parent: InterfaceOptionsFramePanelContainer
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Wholly/Wholly.xml:569 Couldn't find frame parent: InterfaceOptionsFramePanelContainer
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Wholly/Wholly.xml:577 Couldn't find frame parent: InterfaceOptionsFramePanelContainer
+10/26 19:38:41.422  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Wholly/Wholly.xml:585 Couldn't find frame parent: InterfaceOptionsFramePanelContainer
+10/26 19:38:54.525  Loading add-on Overachiever_Tabs
+10/26 19:38:54.525  Interface/AddOns/Overachiever_Tabs/build.lua:1 (null)
+10/26 19:38:54.525  Interface/AddOns/Overachiever_Tabs/Search.lua:1 (null)
+10/26 19:38:54.525  Interface/AddOns/Overachiever_Tabs/Suggestions.lua:1 (null)
+10/26 19:38:54.525  Interface/AddOns/Overachiever_Tabs/Watch.lua:1 (null)
+10/26 19:39:19.369  Loading add-on ElvUI_OptionsUI
+10/26 19:39:19.369  Interface/AddOns/ElvUI_OptionsUI/Core.lua:1 (null)
+10/26 19:39:19.369  Interface/AddOns/ElvUI_OptionsUI/General.lua:1 (null)
+10/26 19:39:19.369  Interface/AddOns/ElvUI_OptionsUI/ActionBars.lua:1 (null)
+10/26 19:39:19.369  Interface/AddOns/ElvUI_OptionsUI/Auras.lua:1 (null)
+10/26 19:39:19.369  Interface/AddOns/ElvUI_OptionsUI/Bags.lua:1 (null)
+10/26 19:39:19.369  Interface/AddOns/ElvUI_OptionsUI/Chat.lua:1 (null)
+10/26 19:39:19.369  Interface/AddOns/ElvUI_OptionsUI/Cooldown.lua:1 (null)
+10/26 19:39:19.369  Interface/AddOns/ElvUI_OptionsUI/DataTexts.lua:1 (null)
+10/26 19:39:19.369  Interface/AddOns/ElvUI_OptionsUI/DataBars.lua:1 (null)
+10/26 19:39:19.369  Interface/AddOns/ElvUI_OptionsUI/Filters.lua:1 (null)
+10/26 19:39:19.369  Interface/AddOns/ElvUI_OptionsUI/Skins.lua:1 (null)
+10/26 19:39:19.369  Interface/AddOns/ElvUI_OptionsUI/Tooltip.lua:1 (null)
+10/26 19:39:19.369  Interface/AddOns/ElvUI_OptionsUI/UnitFrames.lua:1 (null)
+10/26 19:39:19.369  Interface/AddOns/ElvUI_OptionsUI/Nameplates.lua:1 (null)
+10/26 19:39:19.369  Interface/AddOns/ElvUI_OptionsUI/Maps.lua:1 (null)
+10/26 19:39:19.369  Interface/AddOns/ElvUI_OptionsUI/ModuleControl.lua:1 (null)
+10/26 19:39:19.369  Interface/AddOns/ElvUI_OptionsUI/Tags.lua:1 (null)

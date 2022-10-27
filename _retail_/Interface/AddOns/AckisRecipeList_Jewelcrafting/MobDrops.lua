@@ -61,6 +61,9 @@ function module:InitializeMobDrops()
 	AddMob(95067,	BN.SHADOW_LORD_ISKAR,				Z.HELLFIRE_CITADEL)
 	AddMob(109331,	BN.CALAMIR,					Z.SURAMAR,					 0.0,  0.0)
 	AddMob(126915,	BN.FELHOUNDS_OF_SARGERAS,			Z.ANTORUS__THE_BURNING_THRONE)
+	AddMob(181249,	L["Tethos"],					Z.ZERETH_MORTIS,				54.6,	73.6)
+	AddMob(183516,	L["The Engulfer"],				Z.ZERETH_MORTIS,				44.0,	75.2)
+	AddMob(184413,	L["Shifting Stargorger"],			Z.ZERETH_MORTIS,				42.2,	21.6)
 
 	self.InitializeMobDrops = nil
 end

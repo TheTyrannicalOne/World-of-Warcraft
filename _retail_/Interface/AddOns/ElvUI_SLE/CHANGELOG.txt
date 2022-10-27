@@ -1,5 +1,7 @@
-v4.41 9/11/22
+v4.45 10/26/22
 
-• fix a transmog issue showing transmog info for a different slot
-• add a couple items to the location panel and fixed one not showing
-• keep up with elvui raid/raid40 -> raid1-3 changes
+• fix raid markers not being able to be clicked
+• fix location bar not being able to be clicked
+• fix mailframe icon issues
+• fix talking head frame issue
+• fix armory font issue

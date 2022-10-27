@@ -1,10 +1,10 @@
-## Interface: 90100
+## Interface: 90200
 ## Title: Ackis Recipe List: Tailoring
 ## Notes: Tailoring data for Ackis Recipe List.
 ## Author: Ackis, Pompy, Ressy, Torhal
-## Version: 9.1.0.1
-## X-Revision: d84303b
-## X-Date: 2021-09-08T1:45:44Z
+## Version: 9.2.0
+## X-Revision: 31569a7
+## X-Date: 2022-10-22T17:17:40Z
 ## Dependencies: AckisRecipeList
 ## LoadOnDemand: 1
 

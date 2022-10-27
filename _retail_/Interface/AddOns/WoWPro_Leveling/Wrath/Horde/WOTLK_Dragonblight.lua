@@ -73,7 +73,7 @@ C Scourge Armaments|QID|12048|M|26.9,43.3|N|Kill and loot Anub'ar to get the arm
 C Avenge this Atrocity! |QID|12006|S|N|Kill any Blue Dragonflight Force mob you see.|M|19,58|
 K Wind Trader Mu'fah |QID|12005|L|35800|N|Clear the way to the other side of the crater. Find and kill Wind Trader Mu'fah . He's standing infront of the door of that big stone building. Loot Wind Trader Mu'fah's Remains.|M|18.44,58.88|
 K Goramosh |QID|12005|L|35801|N|Go inside the building, take the slope going up left. Kill Goramosh, loot The Scales of Goramosh and Goramosh's Strange Device. |M|19.50,58.16|
-A A Strange Device |QID|12059|PRE|12055|U|36746|N|Right-click A Strange Device to start the quest.|M|19.4,58.1|
+A A Strange Device |QID|12059|U|36746|N|Right-click A Strange Device to start the quest.|M|19.4,58.1|
 C WANTED: Magister Keldonus |QID|12089|N|Kill Magister Keldonus.|M|21,63.4|
 C Avenge this Atrocity! |QID|12006|US|N|Finish killing the needed mobs.|M|19,58|
 T Avenge this Atrocity! |QID|12006|N|To Ethenial Moonshadow.|M|24.00,60.00|
@@ -172,7 +172,7 @@ T The End of the Line |QID|12110|M|38.1,46.2|N|To the Image of Archmage Aethas S
 A Gaining an Audience |QID|12122|M|38.1,46.2|PRE|12110|N|From the Image of Archmage Aethas Sunreaver.|
 A Imbeciles Abound! |QID|12189|PRE|12182|M|36.1,48.8|N|From Doctor Sintar Malefious.|
 T In Service of Blood |QID|12125|M|37.1,46.5|N|To Koltira Deathweaver.|
-F Wrymrest Temple|QID|12122|M|37.51,45.76|N|Fly to Wrymrest Temple.|
+f Wrymrest Temple|QID|12122|M|60.30,51.47|N|Grab the Wrymrest Temple flightpath.|
 T Gaining an Audience |QID|12122|N|Tariolstrasz, the dragon you want to see, is on the west side of Wyrmrest Temple.|M|58,54|
 A Speak with your Ambassador |QID|12767|M|57.9,54.2|PRE|12122|N|From Tariolstrasz.|
 A Seeds of the Lashers |QID|12458|N|Ask Tariolstrasz to send you to the top of the temple. From Lord Itharius.|M|59.6,54.4|
@@ -459,7 +459,7 @@ A Informing the Queen |QID|12124|M|57.9,54.2|PRE|12769|N|From Tariolstrasz.|
 T That Which Creates Can Also Destroy |QID|12459|N|Ask Tariolstrasz to take you to the top floor. Turn the quest into Lord Itharius.|M|59.6,54.4|
 T Tales of Destruction |QID|12266|M|60.1,54.2|N|To Nalice.|
 T Mystery of the Infinite |QID|12470|N|To Chromie.|M|60.0,54.49|
-A Mystery of the Infinite, Redux |QID|13343|N|From Chromie.|M|60.0,54.49|
+A Mystery of the Infinite, Redux |QID|13343|N|From Chromie.|M|60.0,54.49|LVL|80|
 T The Fate of the Ruby Dragonshrine |QID|12419|M|59.8,54.7|N|To Krasus.|
 T Informing the Queen |QID|12124|M|59.8,54.7|N|To Alexstrasza the Life-Binder.|
 A Report to Lord Devrestrasz |QID|12435|PRE|12123^12124|M|59.8,54.7|N|From Alexstrasza the Life-Binder.|

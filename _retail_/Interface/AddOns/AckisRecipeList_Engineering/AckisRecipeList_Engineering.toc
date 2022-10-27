@@ -1,10 +1,10 @@
-## Interface: 90100
+## Interface: 90200
 ## Title: Ackis Recipe List: Engineering
 ## Notes: Engineering data for Ackis Recipe List.
 ## Author: Ackis, Pompy, Ressy, Torhal
-## Version: 9.1.0.1
-## X-Revision: ecc5b7e
-## X-Date: 2021-09-08T1:42:30Z
+## Version: 9.2.0
+## X-Revision: 2436fd7
+## X-Date: 2022-10-22T17:16:26Z
 ## Dependencies: AckisRecipeList
 ## LoadOnDemand: 1
 

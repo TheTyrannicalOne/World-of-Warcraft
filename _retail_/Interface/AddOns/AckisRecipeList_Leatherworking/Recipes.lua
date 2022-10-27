@@ -10802,7 +10802,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(183100, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(172264, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_ITEM_ENHANCEMENT")
-	recipe:AddRepVendor(FAC.THE_WILD_HUNT, REP.HONORED, 158556)
+	recipe:AddRepVendor(FAC.THE_WILD_HUNT, REP.HONORED, 158556, 176065)
 
 	-- Comfortable Rider's Barding -- 324735
 	recipe = AddRecipe(324735, V.SHA, Q.COMMON)
@@ -11495,6 +11495,32 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(186985, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("LEATHERWORKING_TOY")
 	recipe:AddQuest(64016, 64065)
+
+-- 9.2 Recipes
+
+	-- Crafter's Mark IV -- 359662
+	recipe = AddRecipe(359662, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(201, 201, 201, 201, 201)
+	recipe:SetRecipeItem(187750, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187741, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("LEATHERWORKING_CREATED_ITEM")
+	recipe:AddRepVendor(FAC.THE_ENLIGHTENED, REP.HONORED, 182257)
+
+	-- Crafter's Mark of the First Ones -- 359669
+	recipe = AddRecipe(359669, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(201, 201, 201, 201, 201)
+	recipe:SetRecipeItem(187749, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187742, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("LEATHERWORKING_CREATED_ITEM")
+	recipe:AddRepVendor(FAC.THE_ENLIGHTENED, REP.HONORED, 182257)
+
+	-- Vestige of the Eternal -- 359702
+	recipe = AddRecipe(359702, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 203, 203, 203)
+	recipe:SetRecipeItem(187785, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187784, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("LEATHERWORKING_CREATED_ITEM")
+	recipe:AddRepVendor(FAC.THE_ENLIGHTENED, REP.HONORED, 182257)
 
 	self.InitializeRecipes = nil
 end

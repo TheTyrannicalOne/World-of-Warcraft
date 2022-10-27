@@ -4859,7 +4859,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(183858, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(172924, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENGINEERING_TOY")
-	recipe:AddRepVendor(FAC.THE_UNDYING_ARMY, REP.HONORED, 173003)
+	recipe:AddRepVendor(FAC.THE_UNDYING_ARMY, REP.HONORED, 173003, 176067)
 
 	-- Precision Lifeforce Inverter -- 310536
 	recipe = AddRecipe(310536, V.SHA, Q.COMMON)
@@ -4874,7 +4874,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(183097, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(180208, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENGINEERING_PET")
-	recipe:AddRepVendor(FAC.THE_ASCENDED, REP.EXALTED, 160470)
+	recipe:AddRepVendor(FAC.THE_ASCENDED, REP.EXALTED, 160470, 176064)
 
 	-- Crafter's Mark I -- 343099
 	recipe = AddRecipe(343099, V.SHA, Q.COMMON)
@@ -4920,6 +4920,41 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(184308, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENGINEERING_CREATED_ITEM")
 	recipe:AddTrainer(156691)
+
+-- 9.2 Recipes
+
+	-- Crafter's Mark IV -- 359664
+	recipe = AddRecipe(359664, V.SHA, Q.EPIC)
+	recipe:SetSkillLevels(201, 201, 201, 201, 201)
+	recipe:SetRecipeItem(187750, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187741, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENGINEERING_CREATED_ITEM")
+	recipe:AddRepVendor(FAC.THE_ENLIGHTENED, REP.HONORED, 182257)
+
+	-- Crafter's Mark of the First Ones -- 359674
+	recipe = AddRecipe(359674, V.SHA, Q.EPIC)
+	recipe:SetSkillLevels(201, 201, 201, 201, 201)
+	recipe:SetRecipeItem(187749, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187742, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENGINEERING_CREATED_ITEM")
+	recipe:AddRepVendor(FAC.THE_ENLIGHTENED, REP.HONORED, 182257)
+
+	-- Pure-Air Sail Extensions -- 360088
+	recipe = AddRecipe(360088, V.SHA, Q.RARE)
+	recipe:SetSkillLevels(100, 100, 100, 110, 120)
+	recipe:SetRecipeItem(187832, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187831, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENGINEERING_CREATED_ITEM")
+	recipe:AddMobDrop(180924, 183925)
+
+	-- Erratic Genesis Matrix -- 360126
+	recipe = AddRecipe(360126, V.SHA, Q.RARE)
+	recipe:SetSkillLevels(100, 100, 100, 110, 120)
+	recipe:SetRecipeItem(187837, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187836, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENGINEERING_CREATED_ITEM")
+	recipe:AddMobDrop(180917)
+
 
 	self.InitializeRecipes = nil
 end

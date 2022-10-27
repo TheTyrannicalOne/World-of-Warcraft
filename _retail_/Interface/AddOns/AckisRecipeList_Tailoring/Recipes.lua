@@ -7404,7 +7404,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(183101, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(173215, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_BACK")
-	recipe:AddRepVendor(FAC.THE_UNDYING_ARMY, REP.HONORED, 173003)
+	recipe:AddRepVendor(FAC.THE_UNDYING_ARMY, REP.HONORED, 173003, 176067)
 
 	-- Shadowlace Handwraps -- 310899
 	recipe = AddRecipe(310899, V.SHA, Q.COMMON)
@@ -7760,6 +7760,32 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(186975, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("TAILORING_MISC")
 	recipe:AddWorldDrop(Z.THE_SHADOWLANDS)
+
+-- 9.2 Recipes
+
+	-- Crafter's Mark IV -- 359661
+	recipe = AddRecipe(359661, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(201, 201, 201, 201, 201)
+	recipe:SetRecipeItem(187750, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187741, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("TAILORING_MISC")
+	recipe:AddRepVendor(FAC.THE_ENLIGHTENED, REP.HONORED, 182257)
+
+	-- Crafter's Mark of the First Ones -- 359670
+	recipe = AddRecipe(359670, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(201, 201, 201, 201, 201)
+	recipe:SetRecipeItem(187749, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187742, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("TAILORING_MISC")
+	recipe:AddRepVendor(FAC.THE_ENLIGHTENED, REP.HONORED, 182257)
+
+	-- Vestige of the Eternal -- 359703
+	recipe = AddRecipe(359703, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 203, 203, 203)
+	recipe:SetRecipeItem(187785, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187784, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("TAILORING_MISC")
+	recipe:AddRepVendor(FAC.THE_ENLIGHTENED, REP.HONORED, 182257)
 
 	self.InitializeRecipes = nil
 end

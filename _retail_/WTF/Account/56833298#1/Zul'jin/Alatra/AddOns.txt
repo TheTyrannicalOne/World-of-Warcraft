@@ -36,3 +36,4 @@ LittleWigs_Cataclysm: enabled
 LittleWigs: enabled
 BigWigs_Shadowlands: enabled
 Leatrix_Plus: enabled
+LittleWigs_MistsOfPandaria: enabled

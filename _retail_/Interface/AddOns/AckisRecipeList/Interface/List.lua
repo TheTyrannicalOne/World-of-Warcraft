@@ -905,12 +905,13 @@ do
             end
 
             -- Set the spell tooltip's scale, and copy its other values from GameTooltip so AddOns which modify it will work.
-            SpellTooltip:SetBackdrop(_G.GameTooltip:GetBackdrop() or nil)
-            SpellTooltip:SetBackdropColor(_G.GameTooltip:GetBackdropColor() or nil)
-            SpellTooltip:SetBackdropBorderColor(_G.GameTooltip:GetBackdropBorderColor() or nil)
-            SpellTooltip:SetScale(addon.db.profile.tooltip.scale)
-            SpellTooltip:SetClampedToScreen(true)
-            SpellTooltip:SetHyperlink(spellHyperlink)
+--            SpellTooltip:SetBackdrop(nil)
+--            SpellTooltip:SetBackdrop(_G.GameTooltip:GetBackdrop() or nil)
+--            SpellTooltip:SetBackdropColor(_G.GameTooltip:GetBackdropColor() or nil)
+--            SpellTooltip:SetBackdropBorderColor(_G.GameTooltip:GetBackdropBorderColor() or nil)
+--            SpellTooltip:SetScale(addon.db.profile.tooltip.scale)
+ --           SpellTooltip:SetClampedToScreen(true)
+ --           SpellTooltip:SetHyperlink(spellHyperlink)
             SpellTooltip:Show()
 		end
 	end

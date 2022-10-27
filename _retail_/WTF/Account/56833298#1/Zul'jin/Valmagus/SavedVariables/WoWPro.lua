@@ -382,10 +382,10 @@ WoWProCharDB = {
 		[45864] = true,
 		[46200] = true,
 		[63850] = false,
-		[62279] = true,
-		[57245] = true,
 		[45523] = true,
+		[57245] = true,
 		[62882] = true,
+		[62279] = true,
 		[27152] = true,
 		[8477] = true,
 		[29230] = true,
@@ -404,9 +404,9 @@ WoWProCharDB = {
 		[27392] = true,
 		[65625] = true,
 		[9148] = true,
-		[57549] = true,
-		[27456] = true,
 		[27157] = true,
+		[27456] = true,
+		[57549] = true,
 		[27488] = true,
 		[63522] = true,
 		[60123] = false,
@@ -423,11 +423,11 @@ WoWProCharDB = {
 		[9169] = true,
 		[63576] = true,
 		[57927] = true,
-		[29765] = false,
 		[27988] = true,
-		[58039] = true,
-		[871] = false,
+		[29765] = false,
 		[57926] = true,
+		[871] = false,
+		[58039] = true,
 		[57934] = true,
 		[57936] = true,
 		[8480] = true,
@@ -455,11 +455,11 @@ WoWProCharDB = {
 		[27185] = true,
 		[59718] = true,
 		[57471] = true,
-		[27450] = true,
-		[59581] = true,
 		[9758] = true,
-		[62714] = true,
+		[59581] = true,
 		[42005] = true,
+		[62714] = true,
+		[27450] = true,
 		[62778] = true,
 		[27055] = true,
 		[9212] = true,
@@ -478,9 +478,9 @@ WoWProCharDB = {
 		[32668] = true,
 		[44153] = true,
 		[27585] = true,
-		[35563] = true,
-		[27617] = true,
 		[27524] = true,
+		[27617] = true,
+		[35563] = true,
 		[42844] = true,
 		[26642] = true,
 		[31773] = true,
@@ -495,8 +495,8 @@ WoWProCharDB = {
 		[59710] = true,
 		[29238] = true,
 		[40519] = false,
-		[50769] = true,
 		[8326] = true,
+		[64953] = true,
 		[8334] = true,
 		[57920] = true,
 		[8350] = true,
@@ -504,10 +504,10 @@ WoWProCharDB = {
 		[9138] = true,
 		[43488] = true,
 		[26978] = true,
-		[45863] = true,
+		[44370] = true,
 		[60126] = true,
 		[39698] = true,
-		[44370] = true,
+		[45863] = true,
 		[27489] = true,
 		[57932] = true,
 		[27090] = true,
@@ -520,12 +520,12 @@ WoWProCharDB = {
 		[27589] = true,
 		[27579] = true,
 		[27086] = true,
-		[63208] = true,
 		[8479] = true,
+		[27156] = true,
 		[62716] = true,
 		[27298] = true,
 		[62780] = true,
-		[27156] = true,
+		[63208] = true,
 		[9130] = true,
 		[26550] = false,
 		[4295] = true,
@@ -541,54 +541,54 @@ WoWProCharDB = {
 		[25056] = true,
 		[28577] = true,
 		[9175] = true,
-		[47514] = true,
-		[60287] = true,
 		[43951] = false,
+		[60287] = true,
+		[27618] = true,
 		[47052] = true,
 		[8488] = true,
 		[51803] = false,
 		[39987] = false,
-		[57538] = true,
-		[62653] = true,
+		[42881] = true,
+		[27762] = true,
 		[57474] = true,
 		[46253] = false,
-		[27762] = true,
+		[62653] = true,
 		[62784] = true,
-		[9163] = true,
 		[8335] = true,
-		[59712] = true,
 		[64957] = true,
+		[59712] = true,
+		[9163] = true,
 		[29231] = true,
 		[45486] = true,
 		[42846] = true,
-		[9135] = true,
 		[62783] = true,
+		[9135] = true,
 		[61982] = true,
 		[57922] = true,
 		[35305] = true,
 		[8886] = true,
-		[46765] = true,
+		[26979] = true,
 		[44751] = false,
 		[27011] = true,
 		[62568] = true,
 		[9171] = true,
 		[25013] = true,
 		[46957] = true,
-		[63485] = true,
-		[42002] = true,
-		[41938] = false,
 		[38933] = true,
 		[27155] = true,
+		[41938] = false,
+		[42002] = true,
+		[64508] = true,
 		[60480] = true,
 		[29233] = true,
 		[9626] = true,
 		[59585] = true,
 		[47022] = true,
 		[46286] = false,
-		[59713] = true,
+		[9062] = true,
 		[51465] = true,
 		[27619] = true,
-		[9062] = true,
+		[62782] = true,
 		[44400] = true,
 		[27603] = true,
 		[9134] = true,
@@ -609,46 +609,46 @@ WoWProCharDB = {
 		[60289] = true,
 		[9214] = true,
 		[27539] = true,
-		[62782] = true,
+		[59713] = true,
 		[63486] = true,
 		[42017] = true,
 		[9254] = true,
 		[57444] = true,
-		[64508] = true,
+		[63485] = true,
 		[59554] = true,
 		[27763] = true,
 		[26924] = true,
 		[60128] = true,
-		[8894] = true,
+		[46765] = true,
 		[59714] = true,
 		[26931] = true,
-		[26979] = true,
+		[8894] = true,
 		[8892] = true,
 		[8327] = true,
 		[9358] = true,
 		[99999] = false,
-		[42881] = true,
+		[57538] = true,
 		[57924] = true,
 		[31774] = true,
 		[9143] = true,
 		[44721] = false,
-		[27618] = true,
+		[47514] = true,
 		[27012] = true,
 		[42771] = true,
 		[44782] = true,
 		[46927] = false,
 		[42867] = true,
 		[9172] = true,
-		[10166] = true,
 		[35287] = true,
+		[10166] = true,
 		[8463] = true,
 		[63487] = true,
 		[63519] = true,
 		[8487] = true,
 		[29250] = true,
 		[57477] = true,
-		[9199] = true,
 		[42000] = true,
+		[9199] = true,
 		[47445] = true,
 		[9394] = true,
 		[31765] = true,
@@ -657,7 +657,7 @@ WoWProCharDB = {
 		[31440] = true,
 		[42420] = false,
 		[38360] = false,
-		[64953] = true,
+		[50769] = true,
 		[52746] = false,
 		[44063] = true,
 		[57925] = true,
@@ -709,8 +709,8 @@ WoWProCharDB = {
 		[63489] = true,
 		[29219] = true,
 		[29235] = true,
-		[64945] = true,
 		[64950] = true,
+		[64945] = true,
 		[60057] = true,
 		[62658] = true,
 		[61863] = true,
@@ -729,190 +729,44 @@ WoWProCharDB = {
 	["EnableGrailQuestName"] = false,
 	["Enabled"] = true,
 	["EnableGrailQuestObsolete"] = false,
-	["Guide"] = {
-		["KraSunIsle"] = {
-			["total"] = 195,
-			["Version"] = "9.2.0-A5",
-			["skipped"] = {
-			},
-			["done"] = false,
-			["completion"] = {
-				"Player level exceeds step limit", -- [1]
-				nil, -- [2]
-				8325, -- [3]
-				"AutoCompleteQuestUpdate: complete", -- [4]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [5]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [6]
-				"AutoCompleteQuestUpdate: complete", -- [7]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [8]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [9]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [10]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [11]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [12]
-				"NextStep(): Skipping step, available quest is currently complete or active", -- [13]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [14]
-				"NextStep(): Skipping step, available quest is currently complete or active", -- [15]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [16]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [17]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [18]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [19]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [20]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [21]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [22]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [23]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [24]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [25]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [26]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [27]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [28]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [29]
-				nil, -- [30]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [31]
-				nil, -- [32]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [33]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [34]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [35]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [36]
-				"AutoCompleteQuestUpdate: complete", -- [37]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [38]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [39]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [40]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [41]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [42]
-				"AutoCompleteZoneBroker", -- [43]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [44]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [45]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [46]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [47]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [48]
-				8350, -- [49]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [50]
-				"AutoCompleteSetHearth", -- [51]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [52]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [53]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [54]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [55]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [56]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [57]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [58]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [59]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [60]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [61]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [62]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [63]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [64]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [65]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [66]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [67]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [68]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [69]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [70]
-				"AutoCompleteLoot", -- [71]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [72]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [73]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [74]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [75]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [76]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [77]
-				"NextStep(): completed cause you have enough loot in bags.", -- [78]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [79]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [80]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [81]
-				"AutoCompleteZone:Falconwing Square", -- [82]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [83]
-				"AutoCompleteQuestUpdate: Accept", -- [84]
-				"AutoCompleteQuestUpdate: via QuestLog", -- [85]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [86]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [87]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [88]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [89]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [90]
-				"AutoCompleteQuestUpdate: Accept", -- [91]
-				[138] = "AutoCompleteQuestUpdate: AutoComplete",
-				[131] = "AutoCompleteQuestUpdate: AutoComplete",
-				[139] = "AutoCompleteQuestUpdate: AutoComplete",
-				[132] = "AutoCompleteQuestUpdate: complete",
-				[140] = "AutoCompleteQuestUpdate: complete",
-				[133] = "AutoCompleteQuestUpdate: AutoComplete",
-				[134] = "AutoCompleteQuestUpdate: AutoComplete",
-				[142] = "AutoCompleteQuestUpdate: AutoComplete",
-				[128] = "AutoCompleteQuestUpdate: AutoComplete",
-				[136] = "AutoCompleteQuestUpdate: AutoComplete",
-				[129] = "AutoCompleteQuestUpdate: AutoComplete",
-				[137] = "AutoCompleteQuestUpdate: AutoComplete",
-				[130] = "AutoCompleteQuestUpdate: AutoComplete",
-				[211] = false,
-			},
-			["progress"] = 93,
-		},
-		["ChromieTimeH"] = {
-			["total"] = 7,
-			["Version"] = "2020.09.29.A",
-			["skipped"] = {
-				[6] = true,
-				[8] = true,
-				[9] = true,
-				[4] = true,
-				[5] = true,
-				[11] = true,
-			},
-			["done"] = false,
-			["completion"] = {
-				"Player level exceeds step limit", -- [1]
-				62568, -- [2]
-				62568, -- [3]
-				false, -- [4]
-				false, -- [5]
-				false, -- [6]
-				60126, -- [7]
-				false, -- [8]
-				false, -- [9]
-				51443, -- [10]
-				false, -- [11]
-				"NextStep(): Skipping step, available quest is currently complete or active", -- [12]
-				nil, -- [13]
-				false, -- [14]
-			},
-			["progress"] = 5,
-		},
-		["hearth"] = "Silvermoon City",
+	["BuildingLocations"] = {
 	},
 	["Tradeskills"] = {
 		[2566] = {
 			["skillLvl"] = 11,
-			["skillMod"] = 0,
-			["name"] = "Legion Mining",
 			["skillMax"] = 100,
+			["skillMod"] = 10,
+			["name"] = "Legion Mining",
 		},
 		[185] = {
 			["skillLvl"] = 1,
+			["skillMax"] = 75,
 			["skillMod"] = 0,
 			["name"] = "Cooking",
-			["skillMax"] = 75,
 		},
 		[2561] = {
 			["skillLvl"] = 13,
-			["skillMod"] = 0,
-			["name"] = "Cataclysm Skinning",
 			["skillMax"] = 75,
+			["skillMod"] = 10,
+			["name"] = "Cataclysm Skinning",
 		},
 		[186] = {
 			["skillLvl"] = 1,
-			["skillMod"] = 0,
-			["name"] = "Mining",
 			["skillMax"] = 175,
+			["skillMod"] = 10,
+			["name"] = "Mining",
 		},
 		[356] = {
 			["skillLvl"] = 1,
+			["skillMax"] = 100,
 			["skillMod"] = 0,
 			["name"] = "Fishing",
-			["skillMax"] = 100,
 		},
 		[393] = {
 			["skillLvl"] = 2,
-			["skillMod"] = 0,
-			["name"] = "Skinning",
 			["skillMax"] = 100,
+			["skillMod"] = 10,
+			["name"] = "Skinning",
 		},
 		[2586] = {
 			["skillLvl"] = 1,
@@ -922,36 +776,36 @@ WoWProCharDB = {
 		},
 		[2564] = {
 			["skillLvl"] = 174,
-			["skillMod"] = 0,
-			["name"] = "Skinning",
 			["skillMax"] = 300,
+			["skillMod"] = 10,
+			["name"] = "Skinning",
 		},
 		[2572] = {
 			["skillLvl"] = 99,
-			["skillMod"] = 0,
-			["name"] = "Mining",
 			["skillMax"] = 300,
+			["skillMod"] = 10,
+			["name"] = "Mining",
 		},
 		[2565] = {
 			["skillLvl"] = 1,
-			["skillMod"] = 0,
-			["name"] = "Battle for Azeroth Mining",
 			["skillMax"] = 175,
+			["skillMod"] = 10,
+			["name"] = "Battle for Azeroth Mining",
 		},
 		[2558] = {
 			["skillLvl"] = 2,
-			["skillMod"] = 0,
-			["name"] = "Legion Skinning",
 			["skillMax"] = 100,
+			["skillMod"] = 10,
+			["name"] = "Legion Skinning",
 		},
 		[2569] = {
 			["skillLvl"] = 1,
-			["skillMod"] = 0,
-			["name"] = "Cataclysm Mining",
 			["skillMax"] = 75,
+			["skillMod"] = 10,
+			["name"] = "Cataclysm Mining",
 		},
 	},
-	["BuildingLocations"] = {
+	["GuideVersion"] = {
 	},
 	["Taxi"] = {
 		["Bloodgulch"] = true,
@@ -1145,7 +999,153 @@ WoWProCharDB = {
 		["Tirna Vaal"] = true,
 		["Tazavesh"] = true,
 	},
-	["GuideVersion"] = {
+	["Guide"] = {
+		["KraSunIsle"] = {
+			["total"] = 195,
+			["Version"] = "9.2.0-A5",
+			["skipped"] = {
+			},
+			["done"] = false,
+			["completion"] = {
+				"Player level exceeds step limit", -- [1]
+				nil, -- [2]
+				8325, -- [3]
+				"AutoCompleteQuestUpdate: complete", -- [4]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [5]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [6]
+				"AutoCompleteQuestUpdate: complete", -- [7]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [8]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [9]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [10]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [11]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [12]
+				"NextStep(): Skipping step, available quest is currently complete or active", -- [13]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [14]
+				"NextStep(): Skipping step, available quest is currently complete or active", -- [15]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [16]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [17]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [18]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [19]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [20]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [21]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [22]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [23]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [24]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [25]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [26]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [27]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [28]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [29]
+				nil, -- [30]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [31]
+				nil, -- [32]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [33]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [34]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [35]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [36]
+				"AutoCompleteQuestUpdate: complete", -- [37]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [38]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [39]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [40]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [41]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [42]
+				"AutoCompleteZoneBroker", -- [43]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [44]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [45]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [46]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [47]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [48]
+				8350, -- [49]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [50]
+				"AutoCompleteSetHearth", -- [51]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [52]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [53]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [54]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [55]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [56]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [57]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [58]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [59]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [60]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [61]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [62]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [63]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [64]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [65]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [66]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [67]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [68]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [69]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [70]
+				"AutoCompleteLoot", -- [71]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [72]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [73]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [74]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [75]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [76]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [77]
+				"NextStep(): completed cause you have enough loot in bags.", -- [78]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [79]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [80]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [81]
+				"AutoCompleteZone:Falconwing Square", -- [82]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [83]
+				"AutoCompleteQuestUpdate: Accept", -- [84]
+				"AutoCompleteQuestUpdate: via QuestLog", -- [85]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [86]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [87]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [88]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [89]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [90]
+				"AutoCompleteQuestUpdate: Accept", -- [91]
+				[138] = "AutoCompleteQuestUpdate: AutoComplete",
+				[131] = "AutoCompleteQuestUpdate: AutoComplete",
+				[139] = "AutoCompleteQuestUpdate: AutoComplete",
+				[132] = "AutoCompleteQuestUpdate: complete",
+				[140] = "AutoCompleteQuestUpdate: complete",
+				[133] = "AutoCompleteQuestUpdate: AutoComplete",
+				[134] = "AutoCompleteQuestUpdate: AutoComplete",
+				[142] = "AutoCompleteQuestUpdate: AutoComplete",
+				[128] = "AutoCompleteQuestUpdate: AutoComplete",
+				[136] = "AutoCompleteQuestUpdate: AutoComplete",
+				[129] = "AutoCompleteQuestUpdate: AutoComplete",
+				[137] = "AutoCompleteQuestUpdate: AutoComplete",
+				[130] = "AutoCompleteQuestUpdate: AutoComplete",
+				[211] = false,
+			},
+			["progress"] = 93,
+		},
+		["ChromieTimeH"] = {
+			["total"] = 7,
+			["Version"] = "2020.09.29.A",
+			["skipped"] = {
+				[6] = true,
+				[8] = true,
+				[9] = true,
+				[4] = true,
+				[5] = true,
+				[11] = true,
+			},
+			["done"] = false,
+			["completion"] = {
+				"Player level exceeds step limit", -- [1]
+				62568, -- [2]
+				62568, -- [3]
+				false, -- [4]
+				false, -- [5]
+				false, -- [6]
+				60126, -- [7]
+				false, -- [8]
+				false, -- [9]
+				51443, -- [10]
+				false, -- [11]
+				"NextStep(): Skipping step, available quest is currently complete or active", -- [12]
+				nil, -- [13]
+				false, -- [14]
+			},
+			["progress"] = 5,
+		},
+		["hearth"] = "Silvermoon City",
 	},
 	["EnableTreasures"] = true,
 	["EnableFlight"] = true,

@@ -4846,7 +4846,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(183106, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(171284, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ALCHEMY_CAULDRON")
-	recipe:AddRepVendor(FAC.THE_WILD_HUNT, REP.REVERED, 158556)
+	recipe:AddRepVendor(FAC.THE_WILD_HUNT, REP.REVERED, 158556, 176065)
 
 	-- Potion of Spectral Agility -- 307093
 	recipe = AddRecipe(307093, V.SHA, Q.COMMON)
@@ -4980,7 +4980,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(182660, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(180457, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ALCHEMY_MISC")
-	recipe:AddRepVendor(FAC.THE_AVOWED, REP.HONORED, 173705)
+	recipe:AddRepVendor(FAC.THE_AVOWED, REP.HONORED, 173705, 176368)
 
 	-- Stones to Ore -- 307144
 	recipe = AddRecipe(307144, V.SHA, Q.COMMON)
@@ -5130,6 +5130,47 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(186990, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ALCHEMY_MISC")
 	recipe:AddCustom("INVASIVE_MAWSHROOM")
+
+-- 9.2 Recipes
+
+	-- Crafter's Mark IV -- 359666
+	recipe = AddRecipe(359666, V.SHA, Q.EPIC)
+	recipe:SetSkillLevels(201, 201, 201, 201, 201)
+	recipe:SetRecipeItem(187750, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187741, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ALCHEMY_MISC")
+	recipe:AddRepVendor(FAC.THE_ENLIGHTENED, REP.HONORED, 182257)
+
+	-- Crafter's Mark of the First Ones -- 359673
+	recipe = AddRecipe(359673, V.SHA, Q.EPIC)
+	recipe:SetSkillLevels(201, 201, 201, 201, 201)
+	recipe:SetRecipeItem(187749, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187742, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ALCHEMY_MISC")
+	recipe:AddRepVendor(FAC.THE_ENLIGHTENED, REP.HONORED, 182257)
+
+	-- Cosmic Healing Potion -- 359870
+	recipe = AddRecipe(359870, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(160, 160, 170, 175, 180)
+	recipe:SetCraftedItem(187802, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ALCHEMY_POTION")
+	recipe:AddTrainer(156687)
+
+	-- Infusion: Corpse Purification -- 360014
+	recipe = AddRecipe(360014, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 100, 110, 120)
+	recipe:SetRecipeItem(187828, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187827, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ALCHEMY_MISC")
+	recipe:AddMobDrop(183737)
+
+	-- Sustaining Armor Polish -- 360318
+	recipe = AddRecipe(360318, V.SHA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 100, 110, 120)
+	recipe:SetRecipeItem(187848, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(187850, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ALCHEMY_MISC")
+	recipe:AddMobDrop(178229, 183764)
 
 	self.InitializeRecipes = nil
 end

@@ -1,2011 +1,2055 @@
 
 RCLootCouncilDB = {
+	["profileKeys"] = {
+		["Vancard - Zul'jin"] = "Default",
+		["Armaguth - Zul'jin"] = "Default",
+		["Charbeatic - Zul'jin"] = "Default",
+		["Valmagus - Zul'jin"] = "Default",
+		["Shaekhan - Zul'jin"] = "Default",
+		["Shanyt - Zul'jin"] = "Default",
+		["Avisar - Dalaran"] = "Default",
+		["Banuumine - Zul'jin"] = "Default",
+		["Thorinbane - Dalaran"] = "Default",
+		["Shaekhan - Argent Dawn"] = "Default",
+		["Ruffinton - Dalaran"] = "Default",
+		["Malivant - Dalaran"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
+		["Dachas - Zul'jin"] = "Default",
+		["Jingojaggot - Argent Dawn"] = "Default",
+		["Tendralas - Dalaran"] = "Default",
+		["Tyranasticus - Zul'jin"] = "Default",
+		["Illingrath - Dalaran"] = "Default",
+		["Brotus - Argent Dawn"] = "Default",
+		["Galvarton - Dalaran"] = "Default",
+		["Tyrannithal - Argent Dawn"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
+		["Kelvalatar - Dalaran"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
+		["Okona - Zul'jin"] = "Default",
+		["Jingojaggot - Zul'jin"] = "Default",
+		["Alatra - Zul'jin"] = "Default",
+		["Tinkster - Dalaran"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Default",
+		["Datgore - Zul'jin"] = "Default",
+		["Kotalkhan - Zul'jin"] = "Default",
+		["Laymonan - Zul'jin"] = "Default",
+		["Shanyt - Argent Dawn"] = "Default",
+		["Vadder - Argent Dawn"] = "Default",
+		["Serbitechna - Dalaran"] = "Default",
+		["Tyran - Argent Dawn"] = "Default",
+		["Darnastris - Dalaran"] = "Default",
+		["Rotclaugh - Dalaran"] = "Default",
+		["Guufnah - Zul'jin"] = "Default",
+		["Abyronterner - Zul'jin"] = "Default",
+		["Shimzo - Zul'jin"] = "Default",
+		["Jasmoney - Zul'jin"] = "Default",
+		["Banesmuncy - Zul'jin"] = "Default",
+		["Mandles - Zul'jin"] = "Default",
+	},
 	["global"] = {
-		["log"] = {
-			"<11:48:19> [ML]<INFO>		Init", -- [1]
-			"<11:48:19> <INFO>		RCLootCouncil	TradeUI enabled", -- [2]
-			"<11:48:34> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Zulbathal-Zul'jin	Player-61-0CA8EB69", -- [3]
-			"<11:48:34> <INFO>		Zulbathal-Zul'jin	3.4.0	nil", -- [4]
-			"<11:48:34> <DEBUG>		ActivateSkin	bfa", -- [5]
-			"<11:48:46> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [6]
-			"<11:48:46> <INFO>		UpdatePlayersData()", -- [7]
-			"<11:48:46> <INFO>		Player relog...", -- [8]
-			"<11:48:52> <DEBUG>		GetML()", -- [9]
-			"<11:50:59> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [10]
-			"<11:50:59> <INFO>		UpdatePlayersData()", -- [11]
-			"<11:51:01> <DEBUG>		GetML()", -- [12]
-			"10/09/22", -- [13]
-			"<11:55:02> <INFO>		Logged In", -- [14]
-			"<11:55:02> [ML]<INFO>		Init", -- [15]
-			"<11:55:02> <INFO>		RCLootCouncil	TradeUI enabled", -- [16]
-			"<11:55:18> <INFO>		Zulbathal-Zul'jin	3.4.0	nil", -- [17]
-			"<11:55:18> <DEBUG>		ActivateSkin	bfa", -- [18]
-			"<11:55:30> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [19]
-			"<11:55:30> <INFO>		UpdatePlayersData()", -- [20]
-			"<11:55:30> <INFO>		Player relog...", -- [21]
-			"<11:55:35> <DEBUG>		GetML()", -- [22]
-			"10/09/22", -- [23]
-			"<11:56:07> <INFO>		Logged In", -- [24]
-			"<11:56:07> [ML]<INFO>		Init", -- [25]
-			"<11:56:07> <INFO>		RCLootCouncil	TradeUI enabled", -- [26]
-			"<11:56:25> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Alatra-Zul'jin	Player-61-0EBAD280", -- [27]
-			"<11:56:25> <INFO>		Alatra-Zul'jin	3.4.0	nil", -- [28]
-			"<11:56:25> <DEBUG>		ActivateSkin	bfa", -- [29]
-			"<11:56:36> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [30]
-			"<11:56:36> <INFO>		UpdatePlayersData()", -- [31]
-			"<11:56:36> <INFO>		Player relog...", -- [32]
-			"<11:56:43> <DEBUG>		GetML()", -- [33]
-			"10/09/22", -- [34]
-			"<11:58:25> <INFO>		Logged In", -- [35]
-			"<11:58:25> [ML]<INFO>		Init", -- [36]
-			"<11:58:25> <INFO>		RCLootCouncil	TradeUI enabled", -- [37]
-			"<11:58:42> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Valmagus-Zul'jin	Player-61-0EB84EA0", -- [38]
-			"<11:58:42> <INFO>		Valmagus-Zul'jin	3.4.0	nil", -- [39]
-			"<11:58:42> <DEBUG>		ActivateSkin	bfa", -- [40]
-			"<11:58:53> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [41]
-			"<11:58:53> <INFO>		UpdatePlayersData()", -- [42]
-			"<11:58:53> <INFO>		Player relog...", -- [43]
-			"<11:58:59> <DEBUG>		GetML()", -- [44]
-			"10/09/22", -- [45]
-			"<12:00:01> <INFO>		Logged In", -- [46]
-			"<12:00:01> [ML]<INFO>		Init", -- [47]
-			"<12:00:01> <INFO>		RCLootCouncil	TradeUI enabled", -- [48]
-			"<12:00:18> <INFO>		Zulbathal-Zul'jin	3.4.0	nil", -- [49]
-			"<12:00:18> <DEBUG>		ActivateSkin	bfa", -- [50]
-			"<12:00:30> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [51]
-			"<12:00:30> <INFO>		UpdatePlayersData()", -- [52]
-			"<12:00:30> <INFO>		Player relog...", -- [53]
-			"<12:00:37> <DEBUG>		GetML()", -- [54]
-			"<12:07:56> <DEBUG>		Event:	LOOT_READY	true", -- [55]
-			"<12:07:57> <DEBUG>		Event:	LOOT_READY	true", -- [56]
-			"<12:07:57> <DEBUG>		Event:	LOOT_READY	true", -- [57]
-			"<12:08:14> <DEBUG>		Event:	LOOT_READY	true", -- [58]
-			"<12:08:14> <DEBUG>		Event:	LOOT_READY	true", -- [59]
-			"<12:09:06> <DEBUG>		Event:	LOOT_READY	true", -- [60]
-			"<12:09:06> <DEBUG>		Event:	LOOT_READY	true", -- [61]
-			"<12:09:24> <DEBUG>		Event:	LOOT_READY	true", -- [62]
-			"<12:09:24> <DEBUG>		Event:	LOOT_READY	true", -- [63]
-			"<12:09:35> <DEBUG>		Event:	LOOT_READY	true", -- [64]
-			"<12:09:36> <DEBUG>		Event:	LOOT_READY	true", -- [65]
-			"<12:09:53> <DEBUG>		Event:	LOOT_READY	true", -- [66]
-			"<12:09:54> <DEBUG>		Event:	LOOT_READY	true", -- [67]
-			"<12:10:21> <DEBUG>		Event:	LOOT_READY	true", -- [68]
-			"<12:10:22> <DEBUG>		Event:	LOOT_READY	true", -- [69]
-			"<12:10:42> <DEBUG>		Event:	LOOT_READY	true", -- [70]
-			"<12:10:43> <DEBUG>		Event:	LOOT_READY	true", -- [71]
-			"<12:11:04> <DEBUG>		Event:	LOOT_READY	true", -- [72]
-			"<12:11:04> <DEBUG>		Event:	LOOT_READY	true", -- [73]
-			"<12:11:38> <DEBUG>		Event:	LOOT_READY	true", -- [74]
-			"<12:11:38> <DEBUG>		Event:	LOOT_READY	true", -- [75]
-			"<12:11:39> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	186727	|cff0070dd|Hitem:186727::::::::51:102:::::::::|h[Seal Breaker Key]|h|r	1	Zulbathal	DRUID", -- [76]
-			"<12:12:06> <DEBUG>		Event:	LOOT_READY	true", -- [77]
-			"<12:12:06> <DEBUG>		Event:	LOOT_READY	true", -- [78]
-			"<12:12:21> <DEBUG>		Event:	LOOT_READY	true", -- [79]
-			"<12:12:21> <DEBUG>		Event:	LOOT_READY	true", -- [80]
-			"<12:15:10> <DEBUG>		Event:	LOOT_READY	true", -- [81]
-			"<12:15:11> <DEBUG>		Event:	LOOT_READY	true", -- [82]
-			"<12:15:40> <DEBUG>		Event:	LOOT_READY	true", -- [83]
-			"<12:15:41> <DEBUG>		Event:	LOOT_READY	true", -- [84]
-			"<12:15:59> <DEBUG>		Event:	LOOT_READY	true", -- [85]
-			"<12:16:00> <DEBUG>		Event:	LOOT_READY	true", -- [86]
-			"<12:16:16> <DEBUG>		Event:	LOOT_READY	true", -- [87]
-			"<12:16:17> <DEBUG>		Event:	LOOT_READY	true", -- [88]
-			"<12:23:01> <DEBUG>		Event:	LOOT_READY	true", -- [89]
-			"<12:23:01> <DEBUG>		Event:	LOOT_READY	true", -- [90]
-			"<12:23:32> <DEBUG>		Event:	LOOT_READY	true", -- [91]
-			"<12:23:32> <DEBUG>		Event:	LOOT_READY	true", -- [92]
-			"<12:24:08> <DEBUG>		Event:	LOOT_READY	true", -- [93]
-			"<12:24:08> <DEBUG>		Event:	LOOT_READY	true", -- [94]
-			"<12:24:30> <DEBUG>		Event:	LOOT_READY	true", -- [95]
-			"<12:24:30> <DEBUG>		Event:	LOOT_READY	true", -- [96]
-			"<12:24:56> <DEBUG>		Event:	LOOT_READY	true", -- [97]
-			"<12:24:56> <DEBUG>		Event:	LOOT_READY	true", -- [98]
-			"<12:25:17> <DEBUG>		Event:	LOOT_READY	true", -- [99]
-			"<12:25:17> <DEBUG>		Event:	LOOT_READY	true", -- [100]
-			"<12:25:21> <DEBUG>		Event:	LOOT_READY	true", -- [101]
-			"<12:25:21> <DEBUG>		Event:	LOOT_READY	true", -- [102]
-			"<12:25:47> <DEBUG>		Event:	LOOT_READY	true", -- [103]
-			"<12:25:48> <DEBUG>		Event:	LOOT_READY	true", -- [104]
-			"<12:26:23> <DEBUG>		Event:	LOOT_READY	true", -- [105]
-			"<12:26:23> <DEBUG>		Event:	LOOT_READY	true", -- [106]
-			"<12:26:27> <DEBUG>		Event:	LOOT_READY	true", -- [107]
-			"<12:26:27> <DEBUG>		Event:	LOOT_READY	true", -- [108]
-			"<12:26:55> <DEBUG>		Event:	LOOT_READY	true", -- [109]
-			"<12:26:55> <DEBUG>		Event:	LOOT_READY	true", -- [110]
-			"<12:27:21> <DEBUG>		Event:	LOOT_READY	true", -- [111]
-			"<12:27:21> <DEBUG>		Event:	LOOT_READY	true", -- [112]
-			"<12:28:07> <DEBUG>		Event:	LOOT_READY	true", -- [113]
-			"<12:28:07> <DEBUG>		Event:	LOOT_READY	true", -- [114]
-			"<12:31:21> <DEBUG>		Event:	LOOT_READY	true", -- [115]
-			"<12:31:21> <DEBUG>		Event:	LOOT_READY	true", -- [116]
-			"<12:33:38> <DEBUG>		Event:	LOOT_READY	true", -- [117]
-			"<12:33:38> <DEBUG>		Event:	LOOT_READY	true", -- [118]
-			"<12:33:38> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	184774	|cff0070dd|Hitem:184774::::::::52:102:::::::::|h[Juvenile Sporespindle]|h|r	1	Zulbathal	DRUID", -- [119]
-			"<12:33:55> <DEBUG>		Event:	LOOT_READY	true", -- [120]
-			"<12:33:55> <DEBUG>		Event:	LOOT_READY	true", -- [121]
-			"<12:34:16> <DEBUG>		Event:	LOOT_READY	true", -- [122]
-			"<12:34:16> <DEBUG>		Event:	LOOT_READY	true", -- [123]
-			"<12:34:23> <DEBUG>		Event:	LOOT_READY	true", -- [124]
-			"<12:34:23> <DEBUG>		Event:	LOOT_READY	true", -- [125]
-			"<12:36:01> <DEBUG>		Event:	LOOT_READY	true", -- [126]
-			"<12:36:01> <DEBUG>		Event:	LOOT_READY	true", -- [127]
-			"<12:36:25> <DEBUG>		Event:	LOOT_READY	true", -- [128]
-			"<12:36:25> <DEBUG>		Event:	LOOT_READY	true", -- [129]
-			"<12:38:56> <DEBUG>		Event:	LOOT_READY	true", -- [130]
-			"<12:38:56> <DEBUG>		Event:	LOOT_READY	true", -- [131]
-			"<12:39:05> <DEBUG>		Event:	LOOT_READY	true", -- [132]
-			"<12:39:05> <DEBUG>		Event:	LOOT_READY	true", -- [133]
-			"<12:39:24> <DEBUG>		Event:	LOOT_READY	true", -- [134]
-			"<12:39:24> <DEBUG>		Event:	LOOT_READY	true", -- [135]
-			"<12:39:30> <DEBUG>		Event:	LOOT_READY	true", -- [136]
-			"<12:39:31> <DEBUG>		Event:	LOOT_READY	true", -- [137]
-			"<12:39:37> <DEBUG>		Event:	LOOT_READY	true", -- [138]
-			"<12:39:37> <DEBUG>		Event:	LOOT_READY	true", -- [139]
-			"<12:39:44> <DEBUG>		Event:	LOOT_READY	true", -- [140]
-			"<12:39:44> <DEBUG>		Event:	LOOT_READY	true", -- [141]
-			"<12:40:16> <DEBUG>		Event:	LOOT_READY	true", -- [142]
-			"<12:40:16> <DEBUG>		Event:	LOOT_READY	true", -- [143]
-			"<12:40:20> <DEBUG>		Event:	LOOT_READY	true", -- [144]
-			"<12:40:20> <DEBUG>		Event:	LOOT_READY	true", -- [145]
-			"<12:41:03> <DEBUG>		Event:	LOOT_READY	true", -- [146]
-			"<12:41:03> <DEBUG>		Event:	LOOT_READY	true", -- [147]
-			"<13:13:49> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [148]
-			"<13:13:49> <INFO>		UpdatePlayersData()", -- [149]
-			"<13:13:52> <DEBUG>		GetML()", -- [150]
-			"<13:14:13> <DEBUG>		Event:	LOOT_READY	true", -- [151]
-			"<13:14:13> <DEBUG>		Event:	LOOT_READY	true", -- [152]
-			"<13:14:13> <DEBUG>		Event:	LOOT_READY	true", -- [153]
-			"<13:14:38> <DEBUG>		Event:	LOOT_READY	true", -- [154]
-			"<13:14:38> <DEBUG>		Event:	LOOT_READY	true", -- [155]
-			"<13:14:49> <DEBUG>		Event:	LOOT_READY	true", -- [156]
-			"<13:14:49> <DEBUG>		Event:	LOOT_READY	true", -- [157]
-			"<13:15:04> <DEBUG>		Event:	LOOT_READY	true", -- [158]
-			"<13:15:04> <DEBUG>		Event:	LOOT_READY	true", -- [159]
-			"<13:15:24> <DEBUG>		Event:	LOOT_READY	true", -- [160]
-			"<13:15:24> <DEBUG>		Event:	LOOT_READY	true", -- [161]
-			"<13:15:38> <DEBUG>		Event:	LOOT_READY	true", -- [162]
-			"<13:15:39> <DEBUG>		Event:	LOOT_READY	true", -- [163]
-			"<13:16:15> <DEBUG>		Event:	LOOT_READY	true", -- [164]
-			"<13:16:16> <DEBUG>		Event:	LOOT_READY	true", -- [165]
-			"<13:18:49> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [166]
-			"<13:18:49> <INFO>		UpdatePlayersData()", -- [167]
-			"<13:18:52> <DEBUG>		GetML()", -- [168]
-			"<13:26:55> <DEBUG>		Event:	LOOT_READY	true", -- [169]
-			"<13:26:55> <DEBUG>		Event:	LOOT_READY	true", -- [170]
-			"<13:28:37> <DEBUG>		Event:	LOOT_READY	true", -- [171]
-			"<13:28:37> <DEBUG>		Event:	LOOT_READY	true", -- [172]
-			"<13:29:55> <DEBUG>		Event:	LOOT_READY	true", -- [173]
-			"<13:29:56> <DEBUG>		Event:	LOOT_READY	true", -- [174]
-			"<13:30:08> <DEBUG>		Event:	LOOT_READY	true", -- [175]
-			"<13:30:08> <DEBUG>		Event:	LOOT_READY	true", -- [176]
-			"<13:30:48> <DEBUG>		Event:	LOOT_READY	true", -- [177]
-			"<13:30:48> <DEBUG>		Event:	LOOT_READY	true", -- [178]
-			"<13:31:02> <DEBUG>		Event:	LOOT_READY	true", -- [179]
-			"<13:31:02> <DEBUG>		Event:	LOOT_READY	true", -- [180]
-			"<13:31:06> <DEBUG>		Event:	LOOT_READY	true", -- [181]
-			"<13:31:07> <DEBUG>		Event:	LOOT_READY	true", -- [182]
-			"<13:31:33> <DEBUG>		Event:	LOOT_READY	true", -- [183]
-			"<13:31:34> <DEBUG>		Event:	LOOT_READY	true", -- [184]
-			"<13:32:23> <DEBUG>		Event:	LOOT_READY	true", -- [185]
-			"<13:32:24> <DEBUG>		Event:	LOOT_READY	true", -- [186]
-			"10/09/22", -- [187]
-			"<14:33:32> <INFO>		Logged In", -- [188]
-			"<14:33:32> [ML]<INFO>		Init", -- [189]
-			"<14:33:32> <INFO>		RCLootCouncil	TradeUI enabled", -- [190]
-			"<14:33:52> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Zulbathal-Zul'jin	Player-61-0CA8EB69", -- [191]
-			"<14:33:52> <INFO>		Zulbathal-Zul'jin	3.4.0	nil", -- [192]
-			"<14:33:52> <DEBUG>		ActivateSkin	bfa", -- [193]
-			"<14:34:03> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [194]
-			"<14:34:03> <INFO>		UpdatePlayersData()", -- [195]
-			"<14:34:03> <INFO>		Player relog...", -- [196]
-			"<14:34:09> <DEBUG>		GetML()", -- [197]
-			"<14:34:40> <DEBUG>		Event:	LOOT_READY	true", -- [198]
-			"<14:34:40> <DEBUG>		Event:	LOOT_READY	true", -- [199]
-			"<14:35:19> <DEBUG>		Event:	LOOT_READY	true", -- [200]
-			"<14:35:19> <DEBUG>		Event:	LOOT_READY	true", -- [201]
-			"<14:35:29> <DEBUG>		Event:	LOOT_READY	true", -- [202]
-			"<14:35:29> <DEBUG>		Event:	LOOT_READY	true", -- [203]
-			"<14:36:44> <DEBUG>		Event:	LOOT_READY	true", -- [204]
-			"<14:36:45> <DEBUG>		Event:	LOOT_READY	true", -- [205]
-			"<14:37:20> <DEBUG>		Event:	LOOT_READY	true", -- [206]
-			"<14:37:20> <DEBUG>		Event:	LOOT_READY	true", -- [207]
-			"<14:38:04> <DEBUG>		Event:	LOOT_READY	true", -- [208]
-			"<14:38:05> <DEBUG>		Event:	LOOT_READY	true", -- [209]
-			"<14:40:15> <DEBUG>		Event:	LOOT_READY	true", -- [210]
-			"<14:40:16> <DEBUG>		Event:	LOOT_READY	true", -- [211]
-			"<14:42:29> <DEBUG>		Event:	LOOT_READY	true", -- [212]
-			"<14:42:29> <DEBUG>		Event:	LOOT_READY	true", -- [213]
-			"<14:43:19> <DEBUG>		Event:	LOOT_READY	true", -- [214]
-			"<14:43:19> <DEBUG>		Event:	LOOT_READY	true", -- [215]
-			"<14:44:24> <DEBUG>		Event:	LOOT_READY	true", -- [216]
-			"<14:44:25> <DEBUG>		Event:	LOOT_READY	true", -- [217]
-			"<14:46:09> <DEBUG>		Event:	LOOT_READY	true", -- [218]
-			"<14:46:09> <DEBUG>		Event:	LOOT_READY	true", -- [219]
-			"<14:46:26> <DEBUG>		Event:	LOOT_READY	true", -- [220]
-			"<14:46:27> <DEBUG>		Event:	LOOT_READY	true", -- [221]
-			"<14:46:53> <DEBUG>		Event:	LOOT_READY	true", -- [222]
-			"<14:46:54> <DEBUG>		Event:	LOOT_READY	true", -- [223]
-			"<14:47:53> <DEBUG>		Event:	LOOT_READY	true", -- [224]
-			"<14:47:53> <DEBUG>		Event:	LOOT_READY	true", -- [225]
-			"<14:48:28> <DEBUG>		Event:	LOOT_READY	true", -- [226]
-			"<14:48:28> <DEBUG>		Event:	LOOT_READY	true", -- [227]
-			"<14:48:59> <DEBUG>		Event:	LOOT_READY	true", -- [228]
-			"<14:48:59> <DEBUG>		Event:	LOOT_READY	true", -- [229]
-			"<14:49:28> <DEBUG>		Event:	LOOT_READY	true", -- [230]
-			"<14:49:28> <DEBUG>		Event:	LOOT_READY	true", -- [231]
-			"<14:49:28> <DEBUG>		Event:	LOOT_READY	true", -- [232]
-			"<14:50:52> <DEBUG>		Event:	LOOT_READY	true", -- [233]
-			"<14:50:52> <DEBUG>		Event:	LOOT_READY	true", -- [234]
-			"<14:51:59> <DEBUG>		Event:	LOOT_READY	true", -- [235]
-			"<14:51:59> <DEBUG>		Event:	LOOT_READY	true", -- [236]
-			"<14:52:36> <DEBUG>		Event:	LOOT_READY	true", -- [237]
-			"<14:52:36> <DEBUG>		Event:	LOOT_READY	true", -- [238]
-			"<14:53:18> <DEBUG>		Event:	LOOT_READY	true", -- [239]
-			"<14:53:19> <DEBUG>		Event:	LOOT_READY	true", -- [240]
-			"<14:53:39> <DEBUG>		Event:	LOOT_READY	true", -- [241]
-			"<14:53:39> <DEBUG>		Event:	LOOT_READY	true", -- [242]
-			"<14:54:09> <DEBUG>		Event:	LOOT_READY	true", -- [243]
-			"<14:54:09> <DEBUG>		Event:	LOOT_READY	true", -- [244]
-			"<14:55:24> <DEBUG>		Event:	LOOT_READY	true", -- [245]
-			"<14:55:25> <DEBUG>		Event:	LOOT_READY	true", -- [246]
-			"<14:58:36> <DEBUG>		Event:	LOOT_READY	true", -- [247]
-			"<14:58:36> <DEBUG>		Event:	LOOT_READY	true", -- [248]
-			"<15:00:06> <DEBUG>		Event:	LOOT_READY	true", -- [249]
-			"<15:00:06> <DEBUG>		Event:	LOOT_READY	true", -- [250]
-			"<15:00:14> <DEBUG>		Event:	LOOT_READY	true", -- [251]
-			"<15:00:15> <DEBUG>		Event:	LOOT_READY	true", -- [252]
-			"<15:00:15> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	180749	|cff0070dd|Hitem:180749::::::::53:102::11:2:6706:6652:2:28:1325:9:53:::::|h[Hauk's Battle-Scarred Bulwark]|h|r	1	Zulbathal	DRUID", -- [253]
-			"<15:01:12> <DEBUG>		Event:	LOOT_READY	true", -- [254]
-			"<15:01:12> <DEBUG>		Event:	LOOT_READY	true", -- [255]
-			"<15:01:32> <DEBUG>		Event:	LOOT_READY	true", -- [256]
-			"<15:01:32> <DEBUG>		Event:	LOOT_READY	true", -- [257]
-			"<15:01:49> <DEBUG>		Event:	LOOT_READY	true", -- [258]
-			"<15:01:49> <DEBUG>		Event:	LOOT_READY	true", -- [259]
-			"<15:01:52> <DEBUG>		Event:	LOOT_READY	true", -- [260]
-			"<15:01:53> <DEBUG>		Event:	LOOT_READY	true", -- [261]
-			"<15:02:12> <DEBUG>		Event:	LOOT_READY	true", -- [262]
-			"<15:02:13> <DEBUG>		Event:	LOOT_READY	true", -- [263]
-			"<15:02:37> <DEBUG>		Event:	LOOT_READY	true", -- [264]
-			"<15:02:37> <DEBUG>		Event:	LOOT_READY	true", -- [265]
-			"<15:03:16> <DEBUG>		Event:	LOOT_READY	true", -- [266]
-			"<15:03:16> <DEBUG>		Event:	LOOT_READY	true", -- [267]
-			"<15:03:45> <DEBUG>		Event:	LOOT_READY	true", -- [268]
-			"<15:03:45> <DEBUG>		Event:	LOOT_READY	true", -- [269]
-			"<15:04:37> <DEBUG>		Event:	LOOT_READY	true", -- [270]
-			"<15:04:38> <DEBUG>		Event:	LOOT_READY	true", -- [271]
-			"<15:04:53> <DEBUG>		Event:	LOOT_READY	true", -- [272]
-			"<15:04:54> <DEBUG>		Event:	LOOT_READY	true", -- [273]
-			"<15:05:07> <DEBUG>		Event:	LOOT_READY	true", -- [274]
-			"<15:05:08> <DEBUG>		Event:	LOOT_READY	true", -- [275]
-			"<15:05:38> <DEBUG>		Event:	LOOT_READY	true", -- [276]
-			"<15:05:38> <DEBUG>		Event:	LOOT_READY	true", -- [277]
-			"<15:05:44> <DEBUG>		Event:	LOOT_READY	true", -- [278]
-			"<15:05:45> <DEBUG>		Event:	LOOT_READY	true", -- [279]
-			"<15:06:14> <DEBUG>		Event:	LOOT_READY	true", -- [280]
-			"<15:06:14> <DEBUG>		Event:	LOOT_READY	true", -- [281]
-			"<15:06:39> <DEBUG>		Event:	LOOT_READY	true", -- [282]
-			"<15:06:39> <DEBUG>		Event:	LOOT_READY	true", -- [283]
-			"<15:06:49> <DEBUG>		Event:	LOOT_READY	true", -- [284]
-			"<15:06:49> <DEBUG>		Event:	LOOT_READY	true", -- [285]
-			"<15:07:09> <DEBUG>		Event:	LOOT_READY	true", -- [286]
-			"<15:07:09> <DEBUG>		Event:	LOOT_READY	true", -- [287]
-			"<15:07:26> <DEBUG>		Event:	LOOT_READY	true", -- [288]
-			"<15:07:26> <DEBUG>		Event:	LOOT_READY	true", -- [289]
-			"<15:07:44> <DEBUG>		Event:	LOOT_READY	true", -- [290]
-			"<15:07:44> <DEBUG>		Event:	LOOT_READY	true", -- [291]
-			"<15:08:24> <DEBUG>		Event:	LOOT_READY	true", -- [292]
-			"<15:08:25> <DEBUG>		Event:	LOOT_READY	true", -- [293]
-			"<15:08:41> <DEBUG>		Event:	LOOT_READY	true", -- [294]
-			"<15:08:41> <DEBUG>		Event:	LOOT_READY	true", -- [295]
-			"<15:08:53> <DEBUG>		Event:	LOOT_READY	true", -- [296]
-			"<15:08:53> <DEBUG>		Event:	LOOT_READY	true", -- [297]
-			"<15:08:53> <DEBUG>		Event:	LOOT_READY	true", -- [298]
-			"<15:09:11> <DEBUG>		Event:	LOOT_READY	true", -- [299]
-			"<15:09:11> <DEBUG>		Event:	LOOT_READY	true", -- [300]
-			"<15:09:26> <DEBUG>		Event:	LOOT_READY	true", -- [301]
-			"<15:09:26> <DEBUG>		Event:	LOOT_READY	true", -- [302]
-			"<15:09:44> <DEBUG>		Event:	LOOT_READY	true", -- [303]
-			"<15:09:45> <DEBUG>		Event:	LOOT_READY	true", -- [304]
-			"<15:10:20> <DEBUG>		Event:	LOOT_READY	true", -- [305]
-			"<15:10:20> <DEBUG>		Event:	LOOT_READY	true", -- [306]
-			"<15:10:32> <DEBUG>		Event:	LOOT_READY	true", -- [307]
-			"<15:10:32> <DEBUG>		Event:	LOOT_READY	true", -- [308]
-			"<15:11:04> <DEBUG>		Event:	LOOT_READY	true", -- [309]
-			"<15:11:04> <DEBUG>		Event:	LOOT_READY	true", -- [310]
-			"<15:11:33> <DEBUG>		Event:	LOOT_READY	true", -- [311]
-			"<15:11:33> <DEBUG>		Event:	LOOT_READY	true", -- [312]
-			"<15:12:28> <DEBUG>		Event:	LOOT_READY	true", -- [313]
-			"<15:12:29> <DEBUG>		Event:	LOOT_READY	true", -- [314]
-			"<15:12:57> <DEBUG>		Event:	LOOT_READY	true", -- [315]
-			"<15:12:57> <DEBUG>		Event:	LOOT_READY	true", -- [316]
-			"<15:13:18> <DEBUG>		Event:	LOOT_READY	true", -- [317]
-			"<15:13:18> <DEBUG>		Event:	LOOT_READY	true", -- [318]
-			"<15:13:26> <DEBUG>		Event:	LOOT_READY	true", -- [319]
-			"<15:13:26> <DEBUG>		Event:	LOOT_READY	true", -- [320]
-			"<15:15:06> <DEBUG>		Event:	LOOT_READY	true", -- [321]
-			"<15:15:06> <DEBUG>		Event:	LOOT_READY	true", -- [322]
-			"<15:16:38> <DEBUG>		Event:	LOOT_READY	true", -- [323]
-			"<15:16:38> <DEBUG>		Event:	LOOT_READY	true", -- [324]
-			"<15:19:15> <DEBUG>		Event:	LOOT_READY	true", -- [325]
-			"<15:19:15> <DEBUG>		Event:	LOOT_READY	true", -- [326]
-			"<15:19:36> <DEBUG>		Event:	LOOT_READY	true", -- [327]
-			"<15:19:36> <DEBUG>		Event:	LOOT_READY	true", -- [328]
-			"<15:20:11> <DEBUG>		Event:	LOOT_READY	true", -- [329]
-			"<15:20:11> <DEBUG>		Event:	LOOT_READY	true", -- [330]
-			"<15:20:41> <DEBUG>		Event:	LOOT_READY	true", -- [331]
-			"<15:20:42> <DEBUG>		Event:	LOOT_READY	true", -- [332]
-			"<15:21:30> <DEBUG>		Event:	LOOT_READY	true", -- [333]
-			"<15:21:31> <DEBUG>		Event:	LOOT_READY	true", -- [334]
-			"<15:21:52> <DEBUG>		Event:	LOOT_READY	true", -- [335]
-			"<15:21:52> <DEBUG>		Event:	LOOT_READY	true", -- [336]
-			"<15:22:17> <DEBUG>		Event:	LOOT_READY	true", -- [337]
-			"<15:22:18> <DEBUG>		Event:	LOOT_READY	true", -- [338]
-			"<15:22:39> <DEBUG>		Event:	LOOT_READY	true", -- [339]
-			"<15:22:40> <DEBUG>		Event:	LOOT_READY	true", -- [340]
-			"<15:24:23> <DEBUG>		Event:	LOOT_READY	true", -- [341]
-			"<15:24:23> <DEBUG>		Event:	LOOT_READY	true", -- [342]
-			"<15:24:37> <DEBUG>		Event:	LOOT_READY	true", -- [343]
-			"<15:24:38> <DEBUG>		Event:	LOOT_READY	true", -- [344]
-			"<15:24:45> <DEBUG>		Event:	LOOT_READY	true", -- [345]
-			"<15:24:46> <DEBUG>		Event:	LOOT_READY	true", -- [346]
-			"<15:25:25> <DEBUG>		Event:	LOOT_READY	true", -- [347]
-			"<15:25:25> <DEBUG>		Event:	LOOT_READY	true", -- [348]
-			"<15:25:39> <DEBUG>		Event:	LOOT_READY	true", -- [349]
-			"<15:25:40> <DEBUG>		Event:	LOOT_READY	true", -- [350]
-			"<15:26:19> <DEBUG>		Event:	LOOT_READY	true", -- [351]
-			"<15:26:19> <DEBUG>		Event:	LOOT_READY	true", -- [352]
-			"<15:26:57> <DEBUG>		Event:	LOOT_READY	true", -- [353]
-			"<15:26:57> <DEBUG>		Event:	LOOT_READY	true", -- [354]
-			"<15:27:18> <DEBUG>		Event:	LOOT_READY	true", -- [355]
-			"<15:27:19> <DEBUG>		Event:	LOOT_READY	true", -- [356]
-			"<15:27:59> <DEBUG>		Event:	LOOT_READY	true", -- [357]
-			"<15:28:00> <DEBUG>		Event:	LOOT_READY	true", -- [358]
-			"<15:28:58> <DEBUG>		Event:	LOOT_READY	true", -- [359]
-			"<15:28:58> <DEBUG>		Event:	LOOT_READY	true", -- [360]
-			"<15:28:59> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	183120	|cff0070dd|Hitem:183120::::::::54:102:::1:6652:1:28:1332:::::|h[Partially Digested Encyclopedia]|h|r	1	Zulbathal	DRUID", -- [361]
-			"<15:32:01> <DEBUG>		Event:	LOOT_READY	true", -- [362]
-			"<15:32:01> <DEBUG>		Event:	LOOT_READY	true", -- [363]
-			"<15:32:01> <DEBUG>		Event:	LOOT_READY	true", -- [364]
-			"<15:33:06> <DEBUG>		Event:	LOOT_READY	true", -- [365]
-			"<15:33:06> <DEBUG>		Event:	LOOT_READY	true", -- [366]
-			"<15:34:05> <DEBUG>		Event:	LOOT_READY	true", -- [367]
-			"<15:34:05> <DEBUG>		Event:	LOOT_READY	true", -- [368]
-			"<15:35:40> <DEBUG>		Event:	LOOT_READY	true", -- [369]
-			"<15:35:40> <DEBUG>		Event:	LOOT_READY	true", -- [370]
-			"<15:37:07> <DEBUG>		Event:	LOOT_READY	true", -- [371]
-			"<15:37:07> <DEBUG>		Event:	LOOT_READY	true", -- [372]
-			"<15:38:31> <DEBUG>		Event:	LOOT_READY	true", -- [373]
-			"<15:38:31> <DEBUG>		Event:	LOOT_READY	true", -- [374]
-			"<15:38:49> <DEBUG>		Event:	LOOT_READY	true", -- [375]
-			"<15:38:50> <DEBUG>		Event:	LOOT_READY	true", -- [376]
-			"<15:39:12> <DEBUG>		Event:	LOOT_READY	true", -- [377]
-			"<15:39:12> <DEBUG>		Event:	LOOT_READY	true", -- [378]
-			"<15:39:41> <DEBUG>		Event:	LOOT_READY	true", -- [379]
-			"<15:39:41> <DEBUG>		Event:	LOOT_READY	true", -- [380]
-			"<15:40:02> <DEBUG>		Event:	LOOT_READY	true", -- [381]
-			"<15:40:02> <DEBUG>		Event:	LOOT_READY	true", -- [382]
-			"<15:40:14> <DEBUG>		Event:	LOOT_READY	true", -- [383]
-			"<15:40:14> <DEBUG>		Event:	LOOT_READY	true", -- [384]
-			"<15:40:24> <DEBUG>		Event:	LOOT_READY	true", -- [385]
-			"<15:40:25> <DEBUG>		Event:	LOOT_READY	true", -- [386]
-			"<15:40:56> <DEBUG>		Event:	LOOT_READY	true", -- [387]
-			"<15:40:56> <DEBUG>		Event:	LOOT_READY	true", -- [388]
-			"<15:41:34> <DEBUG>		Event:	LOOT_READY	true", -- [389]
-			"<15:41:34> <DEBUG>		Event:	LOOT_READY	true", -- [390]
-			"<15:42:33> <DEBUG>		Event:	LOOT_READY	true", -- [391]
-			"<15:42:33> <DEBUG>		Event:	LOOT_READY	true", -- [392]
-			"<15:42:42> <DEBUG>		Event:	LOOT_READY	true", -- [393]
-			"<15:42:43> <DEBUG>		Event:	LOOT_READY	true", -- [394]
-			"<15:43:25> <DEBUG>		Event:	LOOT_READY	true", -- [395]
-			"<15:43:25> <DEBUG>		Event:	LOOT_READY	true", -- [396]
-			"<15:43:28> <DEBUG>		Event:	LOOT_READY	true", -- [397]
-			"<15:43:28> <DEBUG>		Event:	LOOT_READY	true", -- [398]
-			"<15:44:12> <DEBUG>		Event:	LOOT_READY	true", -- [399]
-			"<15:44:12> <DEBUG>		Event:	LOOT_READY	true", -- [400]
-			"<15:45:35> <DEBUG>		Event:	LOOT_READY	true", -- [401]
-			"<15:45:35> <DEBUG>		Event:	LOOT_READY	true", -- [402]
-			"<15:46:08> <DEBUG>		Event:	LOOT_READY	true", -- [403]
-			"<15:46:09> <DEBUG>		Event:	LOOT_READY	true", -- [404]
-			"<15:46:25> <DEBUG>		Event:	LOOT_READY	true", -- [405]
-			"<15:46:25> <DEBUG>		Event:	LOOT_READY	true", -- [406]
-			"<15:46:53> <DEBUG>		Event:	LOOT_READY	true", -- [407]
-			"<15:46:54> <DEBUG>		Event:	LOOT_READY	true", -- [408]
-			"<15:47:17> <DEBUG>		Event:	LOOT_READY	true", -- [409]
-			"<15:47:18> <DEBUG>		Event:	LOOT_READY	true", -- [410]
-			"<15:47:46> <DEBUG>		Event:	LOOT_READY	true", -- [411]
-			"<15:47:47> <DEBUG>		Event:	LOOT_READY	true", -- [412]
-			"<15:49:18> <DEBUG>		Event:	LOOT_READY	true", -- [413]
-			"<15:49:18> <DEBUG>		Event:	LOOT_READY	true", -- [414]
-			"<15:49:52> <DEBUG>		Event:	LOOT_READY	true", -- [415]
-			"<15:49:52> <DEBUG>		Event:	LOOT_READY	true", -- [416]
-			"<15:50:41> <DEBUG>		Event:	LOOT_READY	true", -- [417]
-			"<15:50:42> <DEBUG>		Event:	LOOT_READY	true", -- [418]
-			"<15:51:28> <DEBUG>		Event:	LOOT_READY	true", -- [419]
-			"<15:51:28> <DEBUG>		Event:	LOOT_READY	true", -- [420]
-			"<15:52:03> <DEBUG>		Event:	LOOT_READY	true", -- [421]
-			"<15:52:03> <DEBUG>		Event:	LOOT_READY	true", -- [422]
-			"<15:52:26> <DEBUG>		Event:	LOOT_READY	true", -- [423]
-			"<15:52:26> <DEBUG>		Event:	LOOT_READY	true", -- [424]
-			"<15:52:38> <DEBUG>		Event:	LOOT_READY	true", -- [425]
-			"<15:52:38> <DEBUG>		Event:	LOOT_READY	true", -- [426]
-			"<15:53:12> <DEBUG>		Event:	LOOT_READY	true", -- [427]
-			"<15:53:13> <DEBUG>		Event:	LOOT_READY	true", -- [428]
-			"<15:53:58> <DEBUG>		Event:	LOOT_READY	true", -- [429]
-			"<15:53:58> <DEBUG>		Event:	LOOT_READY	true", -- [430]
-			"<15:57:39> <DEBUG>		Event:	LOOT_READY	true", -- [431]
-			"<15:57:39> <DEBUG>		Event:	LOOT_READY	true", -- [432]
-			"<15:57:40> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	182205	|cff0070dd|Hitem:182205::::::::55:102::11:3:6706:6652:7579:2:28:1707:9:55:::::|h[Scarab-Shell Faceguard]|h|r	1	Zulbathal	DRUID", -- [433]
-			"<16:10:18> <DEBUG>		Event:	LOOT_READY	true", -- [434]
-			"<16:10:18> <DEBUG>		Event:	LOOT_READY	true", -- [435]
-			"<16:12:50> <DEBUG>		Event:	LOOT_READY	true", -- [436]
-			"<16:12:50> <DEBUG>		Event:	LOOT_READY	true", -- [437]
-			"<16:13:13> <DEBUG>		Event:	LOOT_READY	true", -- [438]
-			"<16:13:13> <DEBUG>		Event:	LOOT_READY	true", -- [439]
-			"<16:13:33> <DEBUG>		Event:	LOOT_READY	true", -- [440]
-			"<16:13:33> <DEBUG>		Event:	LOOT_READY	true", -- [441]
-			"<16:13:54> <DEBUG>		Event:	LOOT_READY	true", -- [442]
-			"<16:13:55> <DEBUG>		Event:	LOOT_READY	true", -- [443]
-			"<16:15:04> <DEBUG>		Event:	LOOT_READY	true", -- [444]
-			"<16:15:04> <DEBUG>		Event:	LOOT_READY	true", -- [445]
-			"<16:15:05> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	179565	|cff0070dd|Hitem:179565::::::::55:102::11:2:6706:6652:2:28:1229:9:55:::::|h[Songwood Stem]|h|r	1	Zulbathal	DRUID", -- [446]
-			"<16:15:20> <DEBUG>		Event:	LOOT_READY	true", -- [447]
-			"<16:15:21> <DEBUG>		Event:	LOOT_READY	true", -- [448]
-			"<16:17:08> <DEBUG>		Event:	LOOT_READY	true", -- [449]
-			"<16:17:08> <DEBUG>		Event:	LOOT_READY	true", -- [450]
-			"<16:19:34> <DEBUG>		Event:	LOOT_READY	true", -- [451]
-			"<16:19:34> <DEBUG>		Event:	LOOT_READY	true", -- [452]
-			"<16:19:34> <DEBUG>		Event:	LOOT_READY	true", -- [453]
-			"<16:19:59> <DEBUG>		Event:	LOOT_READY	true", -- [454]
-			"<16:19:59> <DEBUG>		Event:	LOOT_READY	true", -- [455]
-			"<16:20:42> <DEBUG>		Event:	LOOT_READY	true", -- [456]
-			"<16:20:42> <DEBUG>		Event:	LOOT_READY	true", -- [457]
-			"<16:21:13> <DEBUG>		Event:	LOOT_READY	true", -- [458]
-			"<16:21:13> <DEBUG>		Event:	LOOT_READY	true", -- [459]
-			"<16:22:05> <DEBUG>		Event:	LOOT_READY	true", -- [460]
-			"<16:22:06> <DEBUG>		Event:	LOOT_READY	true", -- [461]
-			"<16:22:55> <DEBUG>		Event:	LOOT_READY	true", -- [462]
-			"<16:22:55> <DEBUG>		Event:	LOOT_READY	true", -- [463]
-			"<16:23:34> <DEBUG>		Event:	LOOT_READY	true", -- [464]
-			"<16:23:34> <DEBUG>		Event:	LOOT_READY	true", -- [465]
-			"<16:23:34> <DEBUG>		Event:	LOOT_READY	true", -- [466]
-			"<16:23:34> <DEBUG>		Event:	LOOT_READY	true", -- [467]
-			"<16:23:59> <DEBUG>		Event:	LOOT_READY	true", -- [468]
-			"<16:24:00> <DEBUG>		Event:	LOOT_READY	true", -- [469]
-			"<16:24:33> <DEBUG>		Event:	LOOT_READY	true", -- [470]
-			"<16:24:33> <DEBUG>		Event:	LOOT_READY	true", -- [471]
-			"<16:25:08> <DEBUG>		Event:	LOOT_READY	true", -- [472]
-			"<16:25:08> <DEBUG>		Event:	LOOT_READY	true", -- [473]
-			"<16:25:36> <DEBUG>		Event:	LOOT_READY	true", -- [474]
-			"<16:25:37> <DEBUG>		Event:	LOOT_READY	true", -- [475]
-			"<16:25:40> <DEBUG>		Event:	LOOT_READY	true", -- [476]
-			"<16:25:40> <DEBUG>		Event:	LOOT_READY	true", -- [477]
-			"<16:25:58> <DEBUG>		Event:	LOOT_READY	true", -- [478]
-			"<16:25:58> <DEBUG>		Event:	LOOT_READY	true", -- [479]
-			"<16:26:19> <DEBUG>		Event:	LOOT_READY	true", -- [480]
-			"<16:26:19> <DEBUG>		Event:	LOOT_READY	true", -- [481]
-			"<16:27:16> <DEBUG>		Event:	LOOT_READY	true", -- [482]
-			"<16:27:16> <DEBUG>		Event:	LOOT_READY	true", -- [483]
-			"<16:27:32> <DEBUG>		Event:	LOOT_READY	true", -- [484]
-			"<16:27:33> <DEBUG>		Event:	LOOT_READY	true", -- [485]
-			"<16:27:49> <DEBUG>		Event:	LOOT_READY	true", -- [486]
-			"<16:27:50> <DEBUG>		Event:	LOOT_READY	true", -- [487]
-			"<16:28:08> <DEBUG>		Event:	LOOT_READY	true", -- [488]
-			"<16:28:08> <DEBUG>		Event:	LOOT_READY	true", -- [489]
-			"<16:28:41> <DEBUG>		Event:	LOOT_READY	true", -- [490]
-			"<16:28:41> <DEBUG>		Event:	LOOT_READY	true", -- [491]
-			"<16:28:59> <DEBUG>		Event:	LOOT_READY	true", -- [492]
-			"<16:28:59> <DEBUG>		Event:	LOOT_READY	true", -- [493]
-			"<16:29:09> <DEBUG>		Event:	LOOT_READY	true", -- [494]
-			"<16:29:09> <DEBUG>		Event:	LOOT_READY	true", -- [495]
-			"<16:29:32> <DEBUG>		Event:	LOOT_READY	true", -- [496]
-			"<16:29:32> <DEBUG>		Event:	LOOT_READY	true", -- [497]
-			"<16:30:41> <DEBUG>		Event:	LOOT_READY	true", -- [498]
-			"<16:30:41> <DEBUG>		Event:	LOOT_READY	true", -- [499]
-			"<16:30:45> <DEBUG>		Event:	LOOT_READY	true", -- [500]
-			"<16:30:45> <DEBUG>		Event:	LOOT_READY	true", -- [501]
-			"<16:31:02> <DEBUG>		Event:	LOOT_READY	true", -- [502]
-			"<16:31:02> <DEBUG>		Event:	LOOT_READY	true", -- [503]
-			"<16:31:03> <DEBUG>		Event:	LOOT_READY	true", -- [504]
-			"<16:31:06> <DEBUG>		Event:	LOOT_READY	true", -- [505]
-			"<16:31:07> <DEBUG>		Event:	LOOT_READY	true", -- [506]
-			"<16:31:20> <DEBUG>		Event:	LOOT_READY	true", -- [507]
-			"<16:31:20> <DEBUG>		Event:	LOOT_READY	true", -- [508]
-			"<16:31:40> <DEBUG>		Event:	LOOT_READY	true", -- [509]
-			"<16:31:40> <DEBUG>		Event:	LOOT_READY	true", -- [510]
-			"<16:31:41> <DEBUG>		Event:	LOOT_READY	true", -- [511]
-			"<16:31:47> <DEBUG>		Event:	LOOT_READY	true", -- [512]
-			"<16:31:47> <DEBUG>		Event:	LOOT_READY	true", -- [513]
-			"<16:32:00> <DEBUG>		Event:	LOOT_READY	true", -- [514]
-			"<16:32:01> <DEBUG>		Event:	LOOT_READY	true", -- [515]
-			"<16:32:16> <DEBUG>		Event:	LOOT_READY	true", -- [516]
-			"<16:32:16> <DEBUG>		Event:	LOOT_READY	true", -- [517]
-			"<16:32:21> <DEBUG>		Event:	LOOT_READY	true", -- [518]
-			"<16:32:21> <DEBUG>		Event:	LOOT_READY	true", -- [519]
-			"<16:32:23> <DEBUG>		Event:	LOOT_READY	true", -- [520]
-			"<16:32:24> <DEBUG>		Event:	LOOT_READY	true", -- [521]
-			"<16:32:33> <DEBUG>		Event:	LOOT_READY	true", -- [522]
-			"<16:32:33> <DEBUG>		Event:	LOOT_READY	true", -- [523]
-			"<16:32:50> <DEBUG>		Event:	LOOT_READY	true", -- [524]
-			"<16:32:50> <DEBUG>		Event:	LOOT_READY	true", -- [525]
-			"<16:33:05> <DEBUG>		Event:	LOOT_READY	true", -- [526]
-			"<16:33:05> <DEBUG>		Event:	LOOT_READY	true", -- [527]
-			"<16:33:11> <DEBUG>		Event:	LOOT_READY	true", -- [528]
-			"<16:33:11> <DEBUG>		Event:	LOOT_READY	true", -- [529]
-			"<16:34:27> <DEBUG>		Event:	LOOT_READY	true", -- [530]
-			"<16:34:27> <DEBUG>		Event:	LOOT_READY	true", -- [531]
-			"<16:34:51> <DEBUG>		Event:	LOOT_READY	true", -- [532]
-			"<16:34:52> <DEBUG>		Event:	LOOT_READY	true", -- [533]
-			"<16:35:02> <DEBUG>		Event:	LOOT_READY	true", -- [534]
-			"<16:35:02> <DEBUG>		Event:	LOOT_READY	true", -- [535]
-			"<16:35:13> <DEBUG>		Event:	LOOT_READY	true", -- [536]
-			"<16:35:14> <DEBUG>		Event:	LOOT_READY	true", -- [537]
-			"<16:35:32> <DEBUG>		Event:	LOOT_READY	true", -- [538]
-			"<16:35:32> <DEBUG>		Event:	LOOT_READY	true", -- [539]
-			"<16:35:42> <DEBUG>		Event:	LOOT_READY	true", -- [540]
-			"<16:35:43> <DEBUG>		Event:	LOOT_READY	true", -- [541]
-			"<16:35:45> <DEBUG>		Event:	LOOT_READY	true", -- [542]
-			"<16:35:45> <DEBUG>		Event:	LOOT_READY	true", -- [543]
-			"<16:36:00> <DEBUG>		Event:	LOOT_READY	true", -- [544]
-			"<16:36:00> <DEBUG>		Event:	LOOT_READY	true", -- [545]
-			"<16:36:09> <DEBUG>		Event:	LOOT_READY	true", -- [546]
-			"<16:36:09> <DEBUG>		Event:	LOOT_READY	true", -- [547]
-			"<16:36:20> <DEBUG>		Event:	LOOT_READY	true", -- [548]
-			"<16:36:20> <DEBUG>		Event:	LOOT_READY	true", -- [549]
-			"<16:36:23> <DEBUG>		Event:	LOOT_READY	true", -- [550]
-			"<16:36:23> <DEBUG>		Event:	LOOT_READY	true", -- [551]
-			"<16:36:44> <DEBUG>		Event:	LOOT_READY	true", -- [552]
-			"<16:36:45> <DEBUG>		Event:	LOOT_READY	true", -- [553]
-			"<16:36:45> <DEBUG>		Event:	LOOT_READY	true", -- [554]
-			"<16:38:47> <DEBUG>		Event:	LOOT_READY	true", -- [555]
-			"<16:38:47> <DEBUG>		Event:	LOOT_READY	true", -- [556]
-			"<16:38:58> <DEBUG>		Event:	LOOT_READY	true", -- [557]
-			"<16:38:58> <DEBUG>		Event:	LOOT_READY	true", -- [558]
-			"<16:39:21> <DEBUG>		Event:	LOOT_READY	true", -- [559]
-			"<16:39:21> <DEBUG>		Event:	LOOT_READY	true", -- [560]
-			"<16:39:36> <DEBUG>		Event:	LOOT_READY	true", -- [561]
-			"<16:39:36> <DEBUG>		Event:	LOOT_READY	true", -- [562]
-			"<16:39:49> <DEBUG>		Event:	LOOT_READY	true", -- [563]
-			"<16:39:49> <DEBUG>		Event:	LOOT_READY	true", -- [564]
-			"<16:40:16> <DEBUG>		Event:	LOOT_READY	true", -- [565]
-			"<16:40:17> <DEBUG>		Event:	LOOT_READY	true", -- [566]
-			"<16:40:29> <DEBUG>		Event:	LOOT_READY	true", -- [567]
-			"<16:40:29> <DEBUG>		Event:	LOOT_READY	true", -- [568]
-			"<16:40:56> <DEBUG>		Event:	LOOT_READY	true", -- [569]
-			"<16:40:56> <DEBUG>		Event:	LOOT_READY	true", -- [570]
-			"<16:41:10> <DEBUG>		Event:	LOOT_READY	true", -- [571]
-			"<16:41:10> <DEBUG>		Event:	LOOT_READY	true", -- [572]
-			"<16:41:10> <DEBUG>		Event:	LOOT_READY	true", -- [573]
-			"<16:41:32> <DEBUG>		Event:	LOOT_READY	true", -- [574]
-			"<16:41:32> <DEBUG>		Event:	LOOT_READY	true", -- [575]
-			"<16:42:18> <DEBUG>		Event:	LOOT_READY	true", -- [576]
-			"<16:42:18> <DEBUG>		Event:	LOOT_READY	true", -- [577]
-			"<16:42:43> <DEBUG>		Event:	LOOT_READY	true", -- [578]
-			"<16:42:43> <DEBUG>		Event:	LOOT_READY	true", -- [579]
-			"<16:43:20> <DEBUG>		Event:	LOOT_READY	true", -- [580]
-			"<16:43:20> <DEBUG>		Event:	LOOT_READY	true", -- [581]
-			"<16:43:46> <DEBUG>		Event:	LOOT_READY	true", -- [582]
-			"<16:43:46> <DEBUG>		Event:	LOOT_READY	true", -- [583]
-			"<16:44:02> <DEBUG>		Event:	LOOT_READY	true", -- [584]
-			"<16:44:03> <DEBUG>		Event:	LOOT_READY	true", -- [585]
-			"<16:44:09> <DEBUG>		Event:	LOOT_READY	true", -- [586]
-			"<16:44:10> <DEBUG>		Event:	LOOT_READY	true", -- [587]
-			"<16:45:49> <DEBUG>		Event:	LOOT_READY	true", -- [588]
-			"<16:45:50> <DEBUG>		Event:	LOOT_READY	true", -- [589]
-			"<16:45:53> <DEBUG>		Event:	LOOT_READY	true", -- [590]
-			"<16:45:54> <DEBUG>		Event:	LOOT_READY	true", -- [591]
-			"<16:46:00> <DEBUG>		Event:	LOOT_READY	true", -- [592]
-			"<16:46:00> <DEBUG>		Event:	LOOT_READY	true", -- [593]
-			"<16:46:03> <DEBUG>		Event:	LOOT_READY	true", -- [594]
-			"<16:46:03> <DEBUG>		Event:	LOOT_READY	true", -- [595]
-			"<16:46:06> <DEBUG>		Event:	LOOT_READY	true", -- [596]
-			"<16:46:07> <DEBUG>		Event:	LOOT_READY	true", -- [597]
-			"<16:46:53> <DEBUG>		Event:	LOOT_READY	true", -- [598]
-			"<16:46:53> <DEBUG>		Event:	LOOT_READY	true", -- [599]
-			"<16:49:15> <DEBUG>		Event:	LOOT_READY	true", -- [600]
-			"<16:49:16> <DEBUG>		Event:	LOOT_READY	true", -- [601]
-			"<16:49:16> <DEBUG>		Event:	LOOT_READY	true", -- [602]
-			"<16:49:16> <DEBUG>		Event:	LOOT_READY	true", -- [603]
-			"<16:49:16> <DEBUG>		Event:	LOOT_READY	true", -- [604]
-			"<16:49:28> <DEBUG>		Event:	LOOT_READY	true", -- [605]
-			"<16:49:28> <DEBUG>		Event:	LOOT_READY	true", -- [606]
-			"<16:50:51> <DEBUG>		Event:	LOOT_READY	true", -- [607]
-			"<16:50:52> <DEBUG>		Event:	LOOT_READY	true", -- [608]
-			"<16:50:52> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	181396	|cff0070dd|Hitem:181396::::::::56:102::11:2:6706:6652:2:28:1707:9:56:::::|h[Thornsweeper Scythe]|h|r	1	Zulbathal	DRUID", -- [609]
-			"<16:52:39> <DEBUG>		Event:	LOOT_READY	true", -- [610]
-			"<16:52:39> <DEBUG>		Event:	LOOT_READY	true", -- [611]
-			"<16:53:14> <DEBUG>		Event:	LOOT_READY	true", -- [612]
-			"<16:53:14> <DEBUG>		Event:	LOOT_READY	true", -- [613]
-			"<16:53:32> <DEBUG>		Event:	LOOT_READY	true", -- [614]
-			"<16:53:32> <DEBUG>		Event:	LOOT_READY	true", -- [615]
-			"<16:53:57> <DEBUG>		Event:	LOOT_READY	true", -- [616]
-			"<16:53:58> <DEBUG>		Event:	LOOT_READY	true", -- [617]
-			"<16:54:31> <DEBUG>		Event:	LOOT_READY	true", -- [618]
-			"<16:54:31> <DEBUG>		Event:	LOOT_READY	true", -- [619]
-			"<16:54:51> <DEBUG>		Event:	LOOT_READY	true", -- [620]
-			"<16:54:51> <DEBUG>		Event:	LOOT_READY	true", -- [621]
-			"<16:55:23> <DEBUG>		Event:	LOOT_READY	true", -- [622]
-			"<16:55:23> <DEBUG>		Event:	LOOT_READY	true", -- [623]
-			"<16:55:56> <DEBUG>		Event:	LOOT_READY	true", -- [624]
-			"<16:55:57> <DEBUG>		Event:	LOOT_READY	true", -- [625]
-			"<16:56:07> <DEBUG>		Event:	LOOT_READY	true", -- [626]
-			"<16:56:07> <DEBUG>		Event:	LOOT_READY	true", -- [627]
-			"<16:56:20> <DEBUG>		Event:	LOOT_READY	true", -- [628]
-			"<16:56:20> <DEBUG>		Event:	LOOT_READY	true", -- [629]
-			"<16:56:48> <DEBUG>		Event:	LOOT_READY	true", -- [630]
-			"<16:56:48> <DEBUG>		Event:	LOOT_READY	true", -- [631]
-			"<16:57:11> <DEBUG>		Event:	LOOT_READY	true", -- [632]
-			"<16:57:11> <DEBUG>		Event:	LOOT_READY	true", -- [633]
-			"<16:58:14> <DEBUG>		Event:	LOOT_READY	true", -- [634]
-			"<16:58:14> <DEBUG>		Event:	LOOT_READY	true", -- [635]
-			"<16:58:23> <DEBUG>		Event:	LOOT_READY	true", -- [636]
-			"<16:58:23> <DEBUG>		Event:	LOOT_READY	true", -- [637]
-			"<16:58:55> <DEBUG>		Event:	LOOT_READY	true", -- [638]
-			"<16:58:56> <DEBUG>		Event:	LOOT_READY	true", -- [639]
-			"<16:59:04> <DEBUG>		Event:	LOOT_READY	true", -- [640]
-			"<16:59:04> <DEBUG>		Event:	LOOT_READY	true", -- [641]
-			"<16:59:34> <DEBUG>		Event:	LOOT_READY	true", -- [642]
-			"<16:59:34> <DEBUG>		Event:	LOOT_READY	true", -- [643]
-			"<17:01:04> <DEBUG>		Event:	LOOT_READY	true", -- [644]
-			"<17:01:04> <DEBUG>		Event:	LOOT_READY	true", -- [645]
-			"<17:01:07> <DEBUG>		Event:	LOOT_READY	true", -- [646]
-			"<17:01:07> <DEBUG>		Event:	LOOT_READY	true", -- [647]
-			"<17:01:10> <DEBUG>		Event:	LOOT_READY	true", -- [648]
-			"<17:01:10> <DEBUG>		Event:	LOOT_READY	true", -- [649]
-			"<17:01:22> <DEBUG>		Event:	LOOT_READY	true", -- [650]
-			"<17:01:22> <DEBUG>		Event:	LOOT_READY	true", -- [651]
-			"<17:01:54> <DEBUG>		Event:	LOOT_READY	true", -- [652]
-			"<17:01:55> <DEBUG>		Event:	LOOT_READY	true", -- [653]
-			"<17:02:04> <DEBUG>		Event:	LOOT_READY	true", -- [654]
-			"<17:02:04> <DEBUG>		Event:	LOOT_READY	true", -- [655]
-			"<17:02:07> <DEBUG>		Event:	LOOT_READY	true", -- [656]
-			"<17:02:07> <DEBUG>		Event:	LOOT_READY	true", -- [657]
-			"<17:02:16> <DEBUG>		Event:	LOOT_READY	true", -- [658]
-			"<17:02:17> <DEBUG>		Event:	LOOT_READY	true", -- [659]
-			"<17:02:22> <DEBUG>		Event:	LOOT_READY	true", -- [660]
-			"<17:02:22> <DEBUG>		Event:	LOOT_READY	true", -- [661]
-			"<17:02:53> <DEBUG>		Event:	LOOT_READY	true", -- [662]
-			"<17:02:53> <DEBUG>		Event:	LOOT_READY	true", -- [663]
-			"<17:02:57> <DEBUG>		Event:	LOOT_READY	true", -- [664]
-			"<17:02:57> <DEBUG>		Event:	LOOT_READY	true", -- [665]
-			"<17:03:03> <DEBUG>		Event:	LOOT_READY	true", -- [666]
-			"<17:03:03> <DEBUG>		Event:	LOOT_READY	true", -- [667]
-			"<17:03:33> <DEBUG>		Event:	LOOT_READY	true", -- [668]
-			"<17:03:33> <DEBUG>		Event:	LOOT_READY	true", -- [669]
-			"<17:03:39> <DEBUG>		Event:	LOOT_READY	true", -- [670]
-			"<17:03:39> <DEBUG>		Event:	LOOT_READY	true", -- [671]
-			"<17:04:17> <DEBUG>		Event:	LOOT_READY	true", -- [672]
-			"<17:04:17> <DEBUG>		Event:	LOOT_READY	true", -- [673]
-			"<17:04:45> <DEBUG>		Event:	LOOT_READY	true", -- [674]
-			"<17:04:46> <DEBUG>		Event:	LOOT_READY	true", -- [675]
-			"<17:04:58> <DEBUG>		Event:	LOOT_READY	true", -- [676]
-			"<17:04:58> <DEBUG>		Event:	LOOT_READY	true", -- [677]
-			"<17:05:54> <DEBUG>		Event:	LOOT_READY	true", -- [678]
-			"<17:05:54> <DEBUG>		Event:	LOOT_READY	true", -- [679]
-			"<17:06:14> <DEBUG>		Event:	LOOT_READY	true", -- [680]
-			"<17:06:14> <DEBUG>		Event:	LOOT_READY	true", -- [681]
-			"<17:06:18> <DEBUG>		Event:	LOOT_READY	true", -- [682]
-			"<17:06:18> <DEBUG>		Event:	LOOT_READY	true", -- [683]
-			"<17:07:36> <DEBUG>		Event:	LOOT_READY	true", -- [684]
-			"<17:07:36> <DEBUG>		Event:	LOOT_READY	true", -- [685]
-			"<17:08:51> <DEBUG>		Event:	LOOT_READY	true", -- [686]
-			"<17:08:51> <DEBUG>		Event:	LOOT_READY	true", -- [687]
-			"<17:09:04> <DEBUG>		Event:	LOOT_READY	true", -- [688]
-			"<17:09:04> <DEBUG>		Event:	LOOT_READY	true", -- [689]
-			"<17:15:43> <DEBUG>		Event:	LOOT_READY	true", -- [690]
-			"<17:15:44> <DEBUG>		Event:	LOOT_READY	true", -- [691]
-			"<17:15:51> <DEBUG>		Event:	LOOT_READY	true", -- [692]
-			"<17:15:52> <DEBUG>		Event:	LOOT_READY	true", -- [693]
-			"<17:16:16> <DEBUG>		Event:	LOOT_READY	true", -- [694]
-			"<17:16:16> <DEBUG>		Event:	LOOT_READY	true", -- [695]
-			"<17:16:51> <DEBUG>		Event:	LOOT_READY	true", -- [696]
-			"<17:16:52> <DEBUG>		Event:	LOOT_READY	true", -- [697]
-			"<17:17:22> <DEBUG>		Event:	LOOT_READY	true", -- [698]
-			"<17:17:22> <DEBUG>		Event:	LOOT_READY	true", -- [699]
-			"<17:17:30> <DEBUG>		Event:	LOOT_READY	true", -- [700]
-			"<17:17:31> <DEBUG>		Event:	LOOT_READY	true", -- [701]
-			"<17:17:53> <DEBUG>		Event:	LOOT_READY	true", -- [702]
-			"<17:17:53> <DEBUG>		Event:	LOOT_READY	true", -- [703]
-			"<17:18:15> <DEBUG>		Event:	LOOT_READY	true", -- [704]
-			"<17:18:15> <DEBUG>		Event:	LOOT_READY	true", -- [705]
-			"<17:18:31> <DEBUG>		Event:	LOOT_READY	true", -- [706]
-			"<17:18:31> <DEBUG>		Event:	LOOT_READY	true", -- [707]
-			"<17:18:45> <DEBUG>		Event:	LOOT_READY	true", -- [708]
-			"<17:18:45> <DEBUG>		Event:	LOOT_READY	true", -- [709]
-			"<17:19:10> <DEBUG>		Event:	LOOT_READY	true", -- [710]
-			"<17:19:10> <DEBUG>		Event:	LOOT_READY	true", -- [711]
-			"<17:19:35> <DEBUG>		Event:	LOOT_READY	true", -- [712]
-			"<17:19:35> <DEBUG>		Event:	LOOT_READY	true", -- [713]
-			"<17:20:28> <DEBUG>		Event:	LOOT_READY	true", -- [714]
-			"<17:20:28> <DEBUG>		Event:	LOOT_READY	true", -- [715]
-			"<17:20:32> <DEBUG>		Event:	LOOT_READY	true", -- [716]
-			"<17:20:33> <DEBUG>		Event:	LOOT_READY	true", -- [717]
-			"<17:21:38> <DEBUG>		Event:	LOOT_READY	true", -- [718]
-			"<17:21:38> <DEBUG>		Event:	LOOT_READY	true", -- [719]
-			"<17:22:02> <DEBUG>		Event:	LOOT_READY	true", -- [720]
-			"<17:22:02> <DEBUG>		Event:	LOOT_READY	true", -- [721]
-			"<17:24:59> <DEBUG>		Event:	LOOT_READY	true", -- [722]
-			"<17:24:59> <DEBUG>		Event:	LOOT_READY	true", -- [723]
-			"<17:28:40> <DEBUG>		Event:	LOOT_READY	true", -- [724]
-			"<17:28:40> <DEBUG>		Event:	LOOT_READY	true", -- [725]
-			"<17:28:45> <DEBUG>		Event:	LOOT_READY	true", -- [726]
-			"<17:28:45> <DEBUG>		Event:	LOOT_READY	true", -- [727]
-			"<17:29:05> <DEBUG>		Event:	LOOT_READY	true", -- [728]
-			"<17:29:06> <DEBUG>		Event:	LOOT_READY	true", -- [729]
-			"<17:30:21> <DEBUG>		Event:	LOOT_READY	true", -- [730]
-			"<17:30:22> <DEBUG>		Event:	LOOT_READY	true", -- [731]
-			"<17:30:39> <DEBUG>		Event:	LOOT_READY	true", -- [732]
-			"<17:30:39> <DEBUG>		Event:	LOOT_READY	true", -- [733]
-			"<17:31:35> <DEBUG>		Event:	LOOT_READY	true", -- [734]
-			"<17:31:35> <DEBUG>		Event:	LOOT_READY	true", -- [735]
-			"<17:31:55> <DEBUG>		Event:	LOOT_READY	true", -- [736]
-			"<17:31:56> <DEBUG>		Event:	LOOT_READY	true", -- [737]
-			"<17:32:07> <DEBUG>		Event:	LOOT_READY	true", -- [738]
-			"<17:32:07> <DEBUG>		Event:	LOOT_READY	true", -- [739]
-			"<17:32:20> <DEBUG>		Event:	LOOT_READY	true", -- [740]
-			"<17:32:20> <DEBUG>		Event:	LOOT_READY	true", -- [741]
-			"<17:32:46> <DEBUG>		Event:	LOOT_READY	true", -- [742]
-			"<17:32:46> <DEBUG>		Event:	LOOT_READY	true", -- [743]
-			"<17:33:47> <DEBUG>		Event:	LOOT_READY	true", -- [744]
-			"<17:33:47> <DEBUG>		Event:	LOOT_READY	true", -- [745]
-			"<17:34:26> <DEBUG>		Event:	LOOT_READY	true", -- [746]
-			"<17:34:26> <DEBUG>		Event:	LOOT_READY	true", -- [747]
-			"<17:34:34> <DEBUG>		Event:	LOOT_READY	true", -- [748]
-			"<17:34:34> <DEBUG>		Event:	LOOT_READY	true", -- [749]
-			"<17:35:00> <DEBUG>		Event:	LOOT_READY	true", -- [750]
-			"<17:35:00> <DEBUG>		Event:	LOOT_READY	true", -- [751]
-			"<17:35:35> <DEBUG>		Event:	LOOT_READY	true", -- [752]
-			"<17:35:36> <DEBUG>		Event:	LOOT_READY	true", -- [753]
-			"<17:35:48> <DEBUG>		Event:	LOOT_READY	true", -- [754]
-			"<17:35:48> <DEBUG>		Event:	LOOT_READY	true", -- [755]
-			"<17:36:11> <DEBUG>		Event:	LOOT_READY	true", -- [756]
-			"<17:36:11> <DEBUG>		Event:	LOOT_READY	true", -- [757]
-			"<17:36:28> <DEBUG>		Event:	LOOT_READY	true", -- [758]
-			"<17:36:28> <DEBUG>		Event:	LOOT_READY	true", -- [759]
-			"<17:38:12> <DEBUG>		Event:	LOOT_READY	true", -- [760]
-			"<17:38:13> <DEBUG>		Event:	LOOT_READY	true", -- [761]
-			"<17:38:24> <DEBUG>		Event:	LOOT_READY	true", -- [762]
-			"<17:38:24> <DEBUG>		Event:	LOOT_READY	true", -- [763]
-			"<17:38:42> <DEBUG>		Event:	LOOT_READY	true", -- [764]
-			"<17:38:43> <DEBUG>		Event:	LOOT_READY	true", -- [765]
-			"<17:39:27> <DEBUG>		Event:	LOOT_READY	true", -- [766]
-			"<17:39:27> <DEBUG>		Event:	LOOT_READY	true", -- [767]
-			"<17:39:33> <DEBUG>		Event:	LOOT_READY	true", -- [768]
-			"<17:39:33> <DEBUG>		Event:	LOOT_READY	true", -- [769]
-			"<17:40:09> <DEBUG>		Event:	LOOT_READY	true", -- [770]
-			"<17:40:10> <DEBUG>		Event:	LOOT_READY	true", -- [771]
-			"<17:40:24> <DEBUG>		Event:	LOOT_READY	true", -- [772]
-			"<17:40:24> <DEBUG>		Event:	LOOT_READY	true", -- [773]
-			"<17:40:46> <DEBUG>		Event:	LOOT_READY	true", -- [774]
-			"<17:40:46> <DEBUG>		Event:	LOOT_READY	true", -- [775]
-			"<17:41:07> <DEBUG>		Event:	LOOT_READY	true", -- [776]
-			"<17:41:07> <DEBUG>		Event:	LOOT_READY	true", -- [777]
-			"<17:41:17> <DEBUG>		Event:	LOOT_READY	true", -- [778]
-			"<17:41:17> <DEBUG>		Event:	LOOT_READY	true", -- [779]
-			"<17:41:37> <DEBUG>		Event:	LOOT_READY	true", -- [780]
-			"<17:41:37> <DEBUG>		Event:	LOOT_READY	true", -- [781]
-			"<17:42:10> <DEBUG>		Event:	LOOT_READY	true", -- [782]
-			"<17:42:10> <DEBUG>		Event:	LOOT_READY	true", -- [783]
-			"<17:42:12> <DEBUG>		Event:	LOOT_READY	true", -- [784]
-			"<17:42:13> <DEBUG>		Event:	LOOT_READY	true", -- [785]
-			"<17:42:20> <DEBUG>		Event:	LOOT_READY	true", -- [786]
-			"<17:42:20> <DEBUG>		Event:	LOOT_READY	true", -- [787]
-			"<17:42:42> <DEBUG>		Event:	LOOT_READY	true", -- [788]
-			"<17:42:42> <DEBUG>		Event:	LOOT_READY	true", -- [789]
-			"<17:42:45> <DEBUG>		Event:	LOOT_READY	true", -- [790]
-			"<17:42:45> <DEBUG>		Event:	LOOT_READY	true", -- [791]
-			"<17:43:01> <DEBUG>		Event:	LOOT_READY	true", -- [792]
-			"<17:43:01> <DEBUG>		Event:	LOOT_READY	true", -- [793]
-			"<17:43:16> <DEBUG>		Event:	LOOT_READY	true", -- [794]
-			"<17:43:17> <DEBUG>		Event:	LOOT_READY	true", -- [795]
-			"<17:43:36> <DEBUG>		Event:	LOOT_READY	true", -- [796]
-			"<17:43:36> <DEBUG>		Event:	LOOT_READY	true", -- [797]
-			"<17:44:06> <DEBUG>		Event:	LOOT_READY	true", -- [798]
-			"<17:44:06> <DEBUG>		Event:	LOOT_READY	true", -- [799]
-			"<17:44:33> <DEBUG>		Event:	LOOT_READY	true", -- [800]
-			"<17:44:33> <DEBUG>		Event:	LOOT_READY	true", -- [801]
-			"<17:45:49> <DEBUG>		Event:	LOOT_READY	true", -- [802]
-			"<17:45:50> <DEBUG>		Event:	LOOT_READY	true", -- [803]
-			"<17:46:36> <DEBUG>		Event:	LOOT_READY	true", -- [804]
-			"<17:46:36> <DEBUG>		Event:	LOOT_READY	true", -- [805]
-			"<17:47:31> <DEBUG>		Event:	LOOT_READY	true", -- [806]
-			"<17:47:31> <DEBUG>		Event:	LOOT_READY	true", -- [807]
-			"<17:47:40> <DEBUG>		Event:	LOOT_READY	true", -- [808]
-			"<17:47:40> <DEBUG>		Event:	LOOT_READY	true", -- [809]
-			"<17:50:27> <DEBUG>		Event:	LOOT_READY	true", -- [810]
-			"<17:50:27> <DEBUG>		Event:	LOOT_READY	true", -- [811]
-			"<17:50:56> <DEBUG>		Event:	LOOT_READY	true", -- [812]
-			"<17:50:57> <DEBUG>		Event:	LOOT_READY	true", -- [813]
-			"<17:51:17> <DEBUG>		Event:	LOOT_READY	true", -- [814]
-			"<17:51:17> <DEBUG>		Event:	LOOT_READY	true", -- [815]
-			"<17:53:54> <DEBUG>		Event:	LOOT_READY	true", -- [816]
-			"<17:53:54> <DEBUG>		Event:	LOOT_READY	true", -- [817]
-			"<17:54:13> <DEBUG>		Event:	LOOT_READY	true", -- [818]
-			"<17:54:13> <DEBUG>		Event:	LOOT_READY	true", -- [819]
-			"<17:54:22> <DEBUG>		Event:	LOOT_READY	true", -- [820]
-			"<17:54:22> <DEBUG>		Event:	LOOT_READY	true", -- [821]
-			"<17:55:08> <DEBUG>		Event:	LOOT_READY	true", -- [822]
-			"<17:55:09> <DEBUG>		Event:	LOOT_READY	true", -- [823]
-			"<17:55:52> <DEBUG>		Event:	LOOT_READY	true", -- [824]
-			"<17:55:53> <DEBUG>		Event:	LOOT_READY	true", -- [825]
-			"<17:55:55> <DEBUG>		Event:	LOOT_READY	true", -- [826]
-			"<17:55:55> <DEBUG>		Event:	LOOT_READY	true", -- [827]
-			"<17:56:36> <DEBUG>		Event:	LOOT_READY	true", -- [828]
-			"<17:56:37> <DEBUG>		Event:	LOOT_READY	true", -- [829]
-			"<17:56:42> <DEBUG>		Event:	LOOT_READY	true", -- [830]
-			"<17:56:43> <DEBUG>		Event:	LOOT_READY	true", -- [831]
-			"<17:57:08> <DEBUG>		Event:	LOOT_READY	true", -- [832]
-			"<17:57:08> <DEBUG>		Event:	LOOT_READY	true", -- [833]
-			"<17:57:11> <DEBUG>		Event:	LOOT_READY	true", -- [834]
-			"<17:57:12> <DEBUG>		Event:	LOOT_READY	true", -- [835]
-			"<17:58:11> <DEBUG>		Event:	LOOT_READY	true", -- [836]
-			"<17:58:11> <DEBUG>		Event:	LOOT_READY	true", -- [837]
-			"<17:58:17> <DEBUG>		Event:	LOOT_READY	true", -- [838]
-			"<17:58:17> <DEBUG>		Event:	LOOT_READY	true", -- [839]
-			"<17:58:46> <DEBUG>		Event:	LOOT_READY	true", -- [840]
-			"<17:58:47> <DEBUG>		Event:	LOOT_READY	true", -- [841]
-			"<17:58:57> <DEBUG>		Event:	LOOT_READY	true", -- [842]
-			"<17:58:57> <DEBUG>		Event:	LOOT_READY	true", -- [843]
-			"<17:59:03> <DEBUG>		Event:	LOOT_READY	true", -- [844]
-			"<17:59:04> <DEBUG>		Event:	LOOT_READY	true", -- [845]
-			"<17:59:10> <DEBUG>		Event:	LOOT_READY	true", -- [846]
-			"<17:59:10> <DEBUG>		Event:	LOOT_READY	true", -- [847]
-			"<17:59:16> <DEBUG>		Event:	LOOT_READY	true", -- [848]
-			"<17:59:16> <DEBUG>		Event:	LOOT_READY	true", -- [849]
-			"<17:59:24> <DEBUG>		Event:	LOOT_READY	true", -- [850]
-			"<17:59:25> <DEBUG>		Event:	LOOT_READY	true", -- [851]
-			"<17:59:37> <DEBUG>		Event:	LOOT_READY	true", -- [852]
-			"<17:59:37> <DEBUG>		Event:	LOOT_READY	true", -- [853]
-			"<17:59:37> <DEBUG>		Event:	LOOT_READY	true", -- [854]
-			"<17:59:44> <DEBUG>		Event:	LOOT_READY	true", -- [855]
-			"<17:59:45> <DEBUG>		Event:	LOOT_READY	true", -- [856]
-			"<17:59:56> <DEBUG>		Event:	LOOT_READY	true", -- [857]
-			"<17:59:57> <DEBUG>		Event:	LOOT_READY	true", -- [858]
-			"<18:00:02> <DEBUG>		Event:	LOOT_READY	true", -- [859]
-			"<18:00:02> <DEBUG>		Event:	LOOT_READY	true", -- [860]
-			"<18:00:07> <DEBUG>		Event:	LOOT_READY	true", -- [861]
-			"<18:00:08> <DEBUG>		Event:	LOOT_READY	true", -- [862]
-			"<18:00:20> <DEBUG>		Event:	LOOT_READY	true", -- [863]
-			"<18:00:21> <DEBUG>		Event:	LOOT_READY	true", -- [864]
-			"<18:00:29> <DEBUG>		Event:	LOOT_READY	true", -- [865]
-			"<18:00:29> <DEBUG>		Event:	LOOT_READY	true", -- [866]
-			"<18:01:04> <DEBUG>		Event:	LOOT_READY	true", -- [867]
-			"<18:01:04> <DEBUG>		Event:	LOOT_READY	true", -- [868]
-			"<18:01:11> <DEBUG>		Event:	LOOT_READY	true", -- [869]
-			"<18:01:11> <DEBUG>		Event:	LOOT_READY	true", -- [870]
-			"<18:01:23> <DEBUG>		Event:	LOOT_READY	true", -- [871]
-			"<18:01:23> <DEBUG>		Event:	LOOT_READY	true", -- [872]
-			"<18:01:55> <DEBUG>		Event:	LOOT_READY	true", -- [873]
-			"<18:01:55> <DEBUG>		Event:	LOOT_READY	true", -- [874]
-			"<18:03:19> <DEBUG>		Event:	LOOT_READY	true", -- [875]
-			"<18:03:19> <DEBUG>		Event:	LOOT_READY	true", -- [876]
-			"<18:03:28> <DEBUG>		Event:	LOOT_READY	true", -- [877]
-			"<18:03:28> <DEBUG>		Event:	LOOT_READY	true", -- [878]
-			"<18:03:42> <DEBUG>		Event:	LOOT_READY	true", -- [879]
-			"<18:03:43> <DEBUG>		Event:	LOOT_READY	true", -- [880]
-			"<18:03:58> <DEBUG>		Event:	LOOT_READY	true", -- [881]
-			"<18:03:59> <DEBUG>		Event:	LOOT_READY	true", -- [882]
-			"<18:11:32> <DEBUG>		Event:	LOOT_READY	true", -- [883]
-			"<18:11:33> <DEBUG>		Event:	LOOT_READY	true", -- [884]
-			"<18:11:48> <DEBUG>		Event:	LOOT_READY	true", -- [885]
-			"<18:11:48> <DEBUG>		Event:	LOOT_READY	true", -- [886]
-			"<18:11:48> <DEBUG>		Event:	LOOT_READY	true", -- [887]
-			"<18:12:20> <DEBUG>		Event:	LOOT_READY	true", -- [888]
-			"<18:12:20> <DEBUG>		Event:	LOOT_READY	true", -- [889]
-			"<18:14:21> <DEBUG>		Event:	LOOT_READY	true", -- [890]
-			"<18:14:21> <DEBUG>		Event:	LOOT_READY	true", -- [891]
-			"<18:14:47> <DEBUG>		Event:	LOOT_READY	true", -- [892]
-			"<18:14:48> <DEBUG>		Event:	LOOT_READY	true", -- [893]
-			"<18:21:50> <DEBUG>		Event:	LOOT_READY	true", -- [894]
-			"<18:21:51> <DEBUG>		Event:	LOOT_READY	true", -- [895]
-			"<18:23:27> <DEBUG>		Event:	LOOT_READY	true", -- [896]
-			"<18:23:27> <DEBUG>		Event:	LOOT_READY	true", -- [897]
-			"<18:23:43> <DEBUG>		Event:	LOOT_READY	true", -- [898]
-			"<18:23:43> <DEBUG>		Event:	LOOT_READY	true", -- [899]
-			"<18:27:59> <DEBUG>		Event:	LOOT_READY	true", -- [900]
-			"<18:27:59> <DEBUG>		Event:	LOOT_READY	true", -- [901]
-			"<18:28:31> <DEBUG>		Event:	LOOT_READY	true", -- [902]
-			"<18:28:32> <DEBUG>		Event:	LOOT_READY	true", -- [903]
-			"<18:29:01> <DEBUG>		Event:	LOOT_READY	true", -- [904]
-			"<18:29:02> <DEBUG>		Event:	LOOT_READY	true", -- [905]
-			"<18:29:30> <DEBUG>		Event:	LOOT_READY	true", -- [906]
-			"<18:29:30> <DEBUG>		Event:	LOOT_READY	true", -- [907]
-			"<18:29:40> <DEBUG>		Event:	LOOT_READY	true", -- [908]
-			"<18:29:40> <DEBUG>		Event:	LOOT_READY	true", -- [909]
-			"<18:30:09> <DEBUG>		Event:	LOOT_READY	true", -- [910]
-			"<18:30:09> <DEBUG>		Event:	LOOT_READY	true", -- [911]
-			"<18:30:27> <DEBUG>		Event:	LOOT_READY	true", -- [912]
-			"<18:30:27> <DEBUG>		Event:	LOOT_READY	true", -- [913]
-			"<18:30:35> <DEBUG>		Event:	LOOT_READY	true", -- [914]
-			"<18:30:35> <DEBUG>		Event:	LOOT_READY	true", -- [915]
-			"<18:30:42> <DEBUG>		Event:	LOOT_READY	true", -- [916]
-			"<18:30:42> <DEBUG>		Event:	LOOT_READY	true", -- [917]
-			"<18:30:58> <DEBUG>		Event:	LOOT_READY	true", -- [918]
-			"<18:30:58> <DEBUG>		Event:	LOOT_READY	true", -- [919]
-			"<18:31:06> <DEBUG>		Event:	LOOT_READY	true", -- [920]
-			"<18:31:06> <DEBUG>		Event:	LOOT_READY	true", -- [921]
-			"<18:31:16> <DEBUG>		Event:	LOOT_READY	true", -- [922]
-			"<18:31:17> <DEBUG>		Event:	LOOT_READY	true", -- [923]
-			"<18:31:31> <DEBUG>		Event:	LOOT_READY	true", -- [924]
-			"<18:31:31> <DEBUG>		Event:	LOOT_READY	true", -- [925]
-			"<18:31:59> <DEBUG>		Event:	LOOT_READY	true", -- [926]
-			"<18:31:59> <DEBUG>		Event:	LOOT_READY	true", -- [927]
-			"<18:32:46> <DEBUG>		Event:	LOOT_READY	true", -- [928]
-			"<18:32:47> <DEBUG>		Event:	LOOT_READY	true", -- [929]
-			"<18:32:54> <DEBUG>		Event:	LOOT_READY	true", -- [930]
-			"<18:32:54> <DEBUG>		Event:	LOOT_READY	true", -- [931]
-			"<18:33:20> <DEBUG>		Event:	LOOT_READY	true", -- [932]
-			"<18:33:20> <DEBUG>		Event:	LOOT_READY	true", -- [933]
-			"<18:33:26> <DEBUG>		Event:	LOOT_READY	true", -- [934]
-			"<18:33:26> <DEBUG>		Event:	LOOT_READY	true", -- [935]
-			"<18:33:40> <DEBUG>		Event:	LOOT_READY	true", -- [936]
-			"<18:33:40> <DEBUG>		Event:	LOOT_READY	true", -- [937]
-			"<18:33:58> <DEBUG>		Event:	LOOT_READY	true", -- [938]
-			"<18:33:58> <DEBUG>		Event:	LOOT_READY	true", -- [939]
-			"<18:34:10> <DEBUG>		Event:	LOOT_READY	true", -- [940]
-			"<18:34:10> <DEBUG>		Event:	LOOT_READY	true", -- [941]
-			"<18:34:15> <DEBUG>		Event:	LOOT_READY	true", -- [942]
-			"<18:34:15> <DEBUG>		Event:	LOOT_READY	true", -- [943]
-			"<18:34:28> <DEBUG>		Event:	LOOT_READY	true", -- [944]
-			"<18:34:29> <DEBUG>		Event:	LOOT_READY	true", -- [945]
-			"<18:34:34> <DEBUG>		Event:	LOOT_READY	true", -- [946]
-			"<18:34:34> <DEBUG>		Event:	LOOT_READY	true", -- [947]
-			"<18:35:06> <DEBUG>		Event:	LOOT_READY	true", -- [948]
-			"<18:35:06> <DEBUG>		Event:	LOOT_READY	true", -- [949]
-			"<18:35:13> <DEBUG>		Event:	LOOT_READY	true", -- [950]
-			"<18:35:13> <DEBUG>		Event:	LOOT_READY	true", -- [951]
-			"<18:35:18> <DEBUG>		Event:	LOOT_READY	true", -- [952]
-			"<18:35:18> <DEBUG>		Event:	LOOT_READY	true", -- [953]
-			"<18:35:42> <DEBUG>		Event:	LOOT_READY	true", -- [954]
-			"<18:35:43> <DEBUG>		Event:	LOOT_READY	true", -- [955]
-			"<18:35:55> <DEBUG>		Event:	LOOT_READY	true", -- [956]
-			"<18:35:55> <DEBUG>		Event:	LOOT_READY	true", -- [957]
-			"<18:36:05> <DEBUG>		Event:	LOOT_READY	true", -- [958]
-			"<18:36:06> <DEBUG>		Event:	LOOT_READY	true", -- [959]
-			"<18:36:35> <DEBUG>		Event:	LOOT_READY	true", -- [960]
-			"<18:36:36> <DEBUG>		Event:	LOOT_READY	true", -- [961]
-			"<18:36:57> <DEBUG>		Event:	LOOT_READY	true", -- [962]
-			"<18:36:57> <DEBUG>		Event:	LOOT_READY	true", -- [963]
-			"<18:37:57> <DEBUG>		Event:	LOOT_READY	true", -- [964]
-			"<18:37:57> <DEBUG>		Event:	LOOT_READY	true", -- [965]
-			"<18:38:26> <DEBUG>		Event:	LOOT_READY	true", -- [966]
-			"<18:38:26> <DEBUG>		Event:	LOOT_READY	true", -- [967]
-			"<18:38:43> <DEBUG>		Event:	LOOT_READY	true", -- [968]
-			"<18:38:44> <DEBUG>		Event:	LOOT_READY	true", -- [969]
-			"<18:39:12> <DEBUG>		Event:	LOOT_READY	true", -- [970]
-			"<18:39:12> <DEBUG>		Event:	LOOT_READY	true", -- [971]
-			"<18:39:28> <DEBUG>		Event:	LOOT_READY	true", -- [972]
-			"<18:39:29> <DEBUG>		Event:	LOOT_READY	true", -- [973]
-			"<18:40:10> <DEBUG>		Event:	LOOT_READY	true", -- [974]
-			"<18:40:11> <DEBUG>		Event:	LOOT_READY	true", -- [975]
-			"<18:40:36> <DEBUG>		Event:	LOOT_READY	true", -- [976]
-			"<18:40:36> <DEBUG>		Event:	LOOT_READY	true", -- [977]
-			"<18:40:58> <DEBUG>		Event:	LOOT_READY	true", -- [978]
-			"<18:40:58> <DEBUG>		Event:	LOOT_READY	true", -- [979]
-			"<18:41:36> <DEBUG>		Event:	LOOT_READY	true", -- [980]
-			"<18:41:36> <DEBUG>		Event:	LOOT_READY	true", -- [981]
-			"<18:41:46> <DEBUG>		Event:	LOOT_READY	true", -- [982]
-			"<18:41:46> <DEBUG>		Event:	LOOT_READY	true", -- [983]
-			"<18:42:13> <DEBUG>		Event:	LOOT_READY	true", -- [984]
-			"<18:42:13> <DEBUG>		Event:	LOOT_READY	true", -- [985]
-			"<18:43:14> <DEBUG>		Event:	LOOT_READY	true", -- [986]
-			"<18:43:15> <DEBUG>		Event:	LOOT_READY	true", -- [987]
-			"<18:43:29> <DEBUG>		Event:	LOOT_READY	true", -- [988]
-			"<18:43:30> <DEBUG>		Event:	LOOT_READY	true", -- [989]
-			"<18:44:15> <DEBUG>		Event:	LOOT_READY	true", -- [990]
-			"<18:44:15> <DEBUG>		Event:	LOOT_READY	true", -- [991]
-			"<18:44:39> <DEBUG>		Event:	LOOT_READY	true", -- [992]
-			"<18:44:39> <DEBUG>		Event:	LOOT_READY	true", -- [993]
-			"<18:44:57> <DEBUG>		Event:	LOOT_READY	true", -- [994]
-			"<18:44:57> <DEBUG>		Event:	LOOT_READY	true", -- [995]
-			"<18:45:13> <DEBUG>		Event:	LOOT_READY	true", -- [996]
-			"<18:45:13> <DEBUG>		Event:	LOOT_READY	true", -- [997]
-			"<18:45:43> <DEBUG>		Event:	LOOT_READY	true", -- [998]
-			"<18:45:43> <DEBUG>		Event:	LOOT_READY	true", -- [999]
-			"<18:45:47> <DEBUG>		Event:	LOOT_READY	true", -- [1000]
-			"<18:45:47> <DEBUG>		Event:	LOOT_READY	true", -- [1001]
-			"<18:45:57> <DEBUG>		Event:	LOOT_READY	true", -- [1002]
-			"<18:45:57> <DEBUG>		Event:	LOOT_READY	true", -- [1003]
-			"<18:46:47> <DEBUG>		Event:	LOOT_READY	true", -- [1004]
-			"<18:46:47> <DEBUG>		Event:	LOOT_READY	true", -- [1005]
-			"<18:47:52> <DEBUG>		Event:	LOOT_READY	true", -- [1006]
-			"<18:47:53> <DEBUG>		Event:	LOOT_READY	true", -- [1007]
-			"<18:50:37> <DEBUG>		Event:	LOOT_READY	true", -- [1008]
-			"<18:50:37> <DEBUG>		Event:	LOOT_READY	true", -- [1009]
-			"<18:51:47> <DEBUG>		Event:	LOOT_READY	true", -- [1010]
-			"<18:51:47> <DEBUG>		Event:	LOOT_READY	true", -- [1011]
-			"<18:52:12> <DEBUG>		Event:	LOOT_READY	true", -- [1012]
-			"<18:52:12> <DEBUG>		Event:	LOOT_READY	true", -- [1013]
-			"<18:52:38> <DEBUG>		Event:	LOOT_READY	true", -- [1014]
-			"<18:52:38> <DEBUG>		Event:	LOOT_READY	true", -- [1015]
-			"<18:52:59> <DEBUG>		Event:	LOOT_READY	true", -- [1016]
-			"<18:52:59> <DEBUG>		Event:	LOOT_READY	true", -- [1017]
-			"<18:58:42> <DEBUG>		Event:	LOOT_READY	true", -- [1018]
-			"<18:58:42> <DEBUG>		Event:	LOOT_READY	true", -- [1019]
-			"<18:59:06> <DEBUG>		Event:	LOOT_READY	true", -- [1020]
-			"<18:59:06> <DEBUG>		Event:	LOOT_READY	true", -- [1021]
-			"<18:59:36> <DEBUG>		Event:	LOOT_READY	true", -- [1022]
-			"<18:59:36> <DEBUG>		Event:	LOOT_READY	true", -- [1023]
-			"<19:00:00> <DEBUG>		Event:	LOOT_READY	true", -- [1024]
-			"<19:00:01> <DEBUG>		Event:	LOOT_READY	true", -- [1025]
-			"<19:01:20> <DEBUG>		Event:	LOOT_READY	true", -- [1026]
-			"<19:01:20> <DEBUG>		Event:	LOOT_READY	true", -- [1027]
-			"<19:02:51> <DEBUG>		Event:	LOOT_READY	true", -- [1028]
-			"<19:02:51> <DEBUG>		Event:	LOOT_READY	true", -- [1029]
-			"<19:02:51> <DEBUG>		Event:	LOOT_READY	true", -- [1030]
-			"<19:02:51> <DEBUG>		Event:	LOOT_READY	true", -- [1031]
-			"<19:02:52> <DEBUG>		Event:	LOOT_READY	true", -- [1032]
-			"<19:03:37> <DEBUG>		Event:	LOOT_READY	true", -- [1033]
-			"<19:03:38> <DEBUG>		Event:	LOOT_READY	true", -- [1034]
-			"<19:04:16> <DEBUG>		Event:	LOOT_READY	true", -- [1035]
-			"<19:04:17> <DEBUG>		Event:	LOOT_READY	true", -- [1036]
-			"<19:04:42> <DEBUG>		Event:	LOOT_READY	true", -- [1037]
-			"<19:04:42> <DEBUG>		Event:	LOOT_READY	true", -- [1038]
-			"<19:05:08> <DEBUG>		Event:	LOOT_READY	true", -- [1039]
-			"<19:05:08> <DEBUG>		Event:	LOOT_READY	true", -- [1040]
-			"<19:05:18> <DEBUG>		Event:	LOOT_READY	true", -- [1041]
-			"<19:05:18> <DEBUG>		Event:	LOOT_READY	true", -- [1042]
-			"<19:05:33> <DEBUG>		Event:	LOOT_READY	true", -- [1043]
-			"<19:05:34> <DEBUG>		Event:	LOOT_READY	true", -- [1044]
-			"<19:05:56> <DEBUG>		Event:	LOOT_READY	true", -- [1045]
-			"<19:05:57> <DEBUG>		Event:	LOOT_READY	true", -- [1046]
-			"<19:12:24> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1047]
-			"<19:12:26> <DEBUG>		GetML()", -- [1048]
-			"<19:12:26> <Data.Player>		CreatePlayer	Player-69-0E72851F", -- [1049]
-			"<19:12:26> <DEBUG>		Resetting council as we have a new ML!", -- [1050]
-			"<19:12:26> <INFO>		MasterLooter = 	Schopenhauer-Arthas", -- [1051]
-			"<19:12:41> <DEBUG>		Timer MLdb_check passed", -- [1052]
-			"<19:12:42> <Comm>		^1^Sxrealm^T^N1^SSchopenhauer-Arthas^N2^SMLdb_request^t^^	RAID	Zulbathal-Zul'jin", -- [1053]
-			"<19:12:42> <Comm>		^1^Sxrealm^T^N1^SSchopenhauer-Arthas^N2^Scouncil_request^t^^	RAID	Zulbathal-Zul'jin", -- [1054]
-			"<19:14:07> <DEBUG>		Event:	LOOT_READY	true", -- [1055]
-			"<19:14:07> <DEBUG>		Event:	LOOT_READY	true", -- [1056]
-			"<19:14:18> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1057]
-			"<19:14:19> <DEBUG>		GetML()", -- [1058]
-			"<19:14:19> <Data.Player>		CreatePlayer	Player-3676-0DE7FF34", -- [1059]
-			"<19:14:19> <DEBUG>		Resetting council as we have a new ML!", -- [1060]
-			"<19:14:19> <INFO>		MasterLooter = 	Pocketglock-Area52", -- [1061]
-			"<19:14:30> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1062]
-			"<19:14:32> <DEBUG>		GetML()", -- [1063]
-			"<19:14:32> <Data.Player>		CreatePlayer	Player-154-027B2A1C", -- [1064]
-			"<19:14:32> <DEBUG>		Resetting council as we have a new ML!", -- [1065]
-			"<19:14:32> <INFO>		MasterLooter = 	Landrice-Detheroc", -- [1066]
-			"<19:14:33> <DEBUG>		Event:	GROUP_LEFT	1	Party-69-1-00004127693E", -- [1067]
-			"<19:14:33> <DEBUG>		GetML()", -- [1068]
-			"<19:14:34> <DEBUG>		Timer MLdb_check passed", -- [1069]
-			"<19:14:47> <DEBUG>		Timer MLdb_check passed", -- [1070]
-			"<19:16:02> <DEBUG>		Event:	LOOT_READY	true", -- [1071]
-			"<19:16:02> <DEBUG>		Event:	LOOT_READY	true", -- [1072]
-			"<19:16:14> <DEBUG>		Event:	LOOT_READY	true", -- [1073]
-			"<19:16:14> <DEBUG>		Event:	LOOT_READY	true", -- [1074]
-			"<19:16:14> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	182561	|cff0070dd|Hitem:182561::::::::60:102::11:2:6706:6652:2:28:1324:9:60:::::|h[Fallen Disciple's Cloak]|h|r	1	Zulbathal	DRUID", -- [1075]
-			"<19:16:55> <DEBUG>		Event:	LOOT_READY	true", -- [1076]
-			"<19:16:55> <DEBUG>		Event:	LOOT_READY	true", -- [1077]
-			"<19:18:05> <DEBUG>		Event:	LOOT_READY	true", -- [1078]
-			"<19:18:05> <DEBUG>		Event:	LOOT_READY	true", -- [1079]
-			"<19:18:05> <DEBUG>		Event:	LOOT_READY	true", -- [1080]
-			"<19:18:09> <DEBUG>		Event:	LOOT_READY	true", -- [1081]
-			"<19:18:09> <DEBUG>		Event:	LOOT_READY	true", -- [1082]
-			"<19:19:04> <DEBUG>		Event:	LOOT_READY	true", -- [1083]
-			"<19:19:04> <DEBUG>		Event:	LOOT_READY	true", -- [1084]
-			"<19:19:42> <DEBUG>		Event:	LOOT_READY	true", -- [1085]
-			"<19:19:43> <DEBUG>		Event:	LOOT_READY	true", -- [1086]
-			"<19:21:51> <DEBUG>		Event:	LOOT_READY	true", -- [1087]
-			"<19:21:51> <DEBUG>		Event:	LOOT_READY	true", -- [1088]
-			"<19:22:35> <DEBUG>		Event:	LOOT_READY	true", -- [1089]
-			"<19:22:36> <DEBUG>		Event:	LOOT_READY	true", -- [1090]
-			"<19:22:36> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	179982	|cff0070dd|Hitem:179982::::::::60:102::::1:28:1318:::::|h[Kyrian Bell]|h|r	1	Zulbathal	DRUID", -- [1091]
-			"<19:24:40> <DEBUG>		Event:	LOOT_READY	true", -- [1092]
-			"<19:24:40> <DEBUG>		Event:	LOOT_READY	true", -- [1093]
-			"<19:25:05> <DEBUG>		Event:	LOOT_READY	true", -- [1094]
-			"<19:25:05> <DEBUG>		Event:	LOOT_READY	true", -- [1095]
-			"<19:25:58> <DEBUG>		Event:	LOOT_READY	true", -- [1096]
-			"<19:25:58> <DEBUG>		Event:	LOOT_READY	true", -- [1097]
-			"<19:27:59> <DEBUG>		Event:	LOOT_READY	true", -- [1098]
-			"<19:27:59> <DEBUG>		Event:	LOOT_READY	true", -- [1099]
-			"<19:28:48> <DEBUG>		Event:	LOOT_READY	true", -- [1100]
-			"<19:28:48> <DEBUG>		Event:	LOOT_READY	true", -- [1101]
-			"<19:29:04> <DEBUG>		Event:	LOOT_READY	true", -- [1102]
-			"<19:29:04> <DEBUG>		Event:	LOOT_READY	true", -- [1103]
-			"<19:38:33> <DEBUG>		Event:	LOOT_READY	true", -- [1104]
-			"<19:38:34> <DEBUG>		Event:	LOOT_READY	true", -- [1105]
-			"<19:41:36> <DEBUG>		Event:	LOOT_READY	true", -- [1106]
-			"<19:41:36> <DEBUG>		Event:	LOOT_READY	true", -- [1107]
-			"<19:41:42> <DEBUG>		Event:	LOOT_READY	true", -- [1108]
-			"<19:41:42> <DEBUG>		Event:	LOOT_READY	true", -- [1109]
-			"10/09/22", -- [1110]
-			"<20:03:35> <INFO>		Logged In", -- [1111]
-			"<20:03:35> [ML]<INFO>		Init", -- [1112]
-			"<20:03:35> <INFO>		RCLootCouncil	TradeUI enabled", -- [1113]
-			"<20:03:54> <INFO>		Avisar-Dalaran	3.4.0	nil", -- [1114]
-			"<20:03:54> <DEBUG>		ActivateSkin	bfa", -- [1115]
-			"<20:04:09> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1116]
-			"<20:04:09> <INFO>		UpdatePlayersData()", -- [1117]
-			"<20:04:09> <INFO>		Player relog...", -- [1118]
-			"<20:04:17> <DEBUG>		GetML()", -- [1119]
-			"10/09/22", -- [1120]
-			"<20:17:35> <INFO>		Logged In", -- [1121]
-			"<20:17:35> [ML]<INFO>		Init", -- [1122]
-			"<20:17:35> <INFO>		RCLootCouncil	TradeUI enabled", -- [1123]
-			"<20:17:58> <INFO>		Shanyt-ArgentDawn	3.4.0	nil", -- [1124]
-			"<20:17:58> <DEBUG>		ActivateSkin	bfa", -- [1125]
-			"<20:18:10> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1126]
-			"<20:18:10> <INFO>		UpdatePlayersData()", -- [1127]
-			"<20:18:10> <INFO>		Player relog...", -- [1128]
-			"<20:18:19> <DEBUG>		GetPlayersGuildRank()", -- [1129]
-			"<20:18:19> <DEBUG>		GetPlayersGuildRank()", -- [1130]
-			"<20:18:19> <DEBUG>		Found Guild Rank: Thuerge", -- [1131]
-			"<20:18:33> <DEBUG>		GetML()", -- [1132]
-			"10/09/22", -- [1133]
-			"<20:34:18> <INFO>		Logged In", -- [1134]
-			"<20:34:18> [ML]<INFO>		Init", -- [1135]
-			"<20:34:18> <INFO>		RCLootCouncil	TradeUI enabled", -- [1136]
-			"<20:34:40> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Shanyt-ArgentDawn	Player-75-058380E2", -- [1137]
-			"<20:34:40> <INFO>		Shanyt-ArgentDawn	3.4.0	nil", -- [1138]
-			"<20:34:40> <DEBUG>		ActivateSkin	bfa", -- [1139]
-			"<20:34:51> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1140]
-			"<20:34:51> <INFO>		UpdatePlayersData()", -- [1141]
-			"<20:34:51> <INFO>		Player relog...", -- [1142]
-			"<20:35:00> <DEBUG>		GetPlayersGuildRank()", -- [1143]
-			"<20:35:00> <DEBUG>		Found Guild Rank: Thuerge", -- [1144]
-			"<20:35:15> <DEBUG>		GetML()", -- [1145]
-			"10/09/22", -- [1146]
-			"<22:52:20> <INFO>		Logged In", -- [1147]
-			"<22:52:20> [ML]<INFO>		Init", -- [1148]
-			"<22:52:20> <INFO>		RCLootCouncil	TradeUI enabled", -- [1149]
-			"<22:52:41> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Shanyt-ArgentDawn	Player-75-058380E2", -- [1150]
-			"<22:52:41> <INFO>		Shanyt-ArgentDawn	3.4.0	nil", -- [1151]
-			"<22:52:41> <DEBUG>		ActivateSkin	bfa", -- [1152]
-			"<22:52:52> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1153]
-			"<22:52:52> <INFO>		UpdatePlayersData()", -- [1154]
-			"<22:52:52> <INFO>		Player relog...", -- [1155]
-			"<22:53:01> <DEBUG>		GetPlayersGuildRank()", -- [1156]
-			"<22:53:01> <DEBUG>		Found Guild Rank: Thuerge", -- [1157]
-			"<22:53:10> <DEBUG>		GetML()", -- [1158]
-			"10/09/22", -- [1159]
-			"<23:05:52> <INFO>		Logged In", -- [1160]
-			"<23:05:52> [ML]<INFO>		Init", -- [1161]
-			"<23:05:52> <INFO>		RCLootCouncil	TradeUI enabled", -- [1162]
-			"<23:06:09> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Durlok-BlackDragonflight	Player-96-0CBEA15E", -- [1163]
-			"<23:06:09> <INFO>		Durlok-BlackDragonflight	3.4.0	nil", -- [1164]
-			"<23:06:09> <DEBUG>		ActivateSkin	bfa", -- [1165]
-			"<23:06:20> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1166]
-			"<23:06:20> <INFO>		UpdatePlayersData()", -- [1167]
-			"<23:06:20> <INFO>		Player relog...", -- [1168]
-			"<23:06:26> <DEBUG>		GetML()", -- [1169]
-			"10/09/22", -- [1170]
-			"<23:08:39> <INFO>		Logged In", -- [1171]
-			"<23:08:39> [ML]<INFO>		Init", -- [1172]
-			"<23:08:39> <INFO>		RCLootCouncil	TradeUI enabled", -- [1173]
-			"<23:08:59> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Zulbathal-Zul'jin	Player-61-0CA8EB69", -- [1174]
-			"<23:08:59> <INFO>		Zulbathal-Zul'jin	3.4.0	nil", -- [1175]
-			"<23:08:59> <DEBUG>		ActivateSkin	bfa", -- [1176]
-			"<23:09:11> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1177]
-			"<23:09:11> <INFO>		UpdatePlayersData()", -- [1178]
-			"<23:09:11> <INFO>		Player relog...", -- [1179]
-			"<23:09:17> <DEBUG>		GetML()", -- [1180]
-			"<23:16:27> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1181]
-			"<23:16:27> <INFO>		UpdatePlayersData()", -- [1182]
-			"<23:16:30> <DEBUG>		GetML()", -- [1183]
-			"<23:16:53> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1184]
-			"<23:16:53> <INFO>		UpdatePlayersData()", -- [1185]
-			"<23:16:56> <DEBUG>		GetML()", -- [1186]
-			"10/09/22", -- [1187]
-			"<23:23:33> <INFO>		Logged In", -- [1188]
-			"<23:23:33> [ML]<INFO>		Init", -- [1189]
-			"<23:23:33> <INFO>		RCLootCouncil	TradeUI enabled", -- [1190]
-			"<23:23:50> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Valmagus-Zul'jin	Player-61-0EB84EA0", -- [1191]
-			"<23:23:50> <INFO>		Valmagus-Zul'jin	3.4.0	nil", -- [1192]
-			"<23:23:50> <DEBUG>		ActivateSkin	bfa", -- [1193]
-			"<23:24:02> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1194]
-			"<23:24:02> <INFO>		UpdatePlayersData()", -- [1195]
-			"<23:24:02> <INFO>		Player relog...", -- [1196]
-			"<23:24:07> <DEBUG>		GetML()", -- [1197]
-			"10/09/22", -- [1198]
-			"<23:29:15> <INFO>		Logged In", -- [1199]
-			"<23:29:15> [ML]<INFO>		Init", -- [1200]
-			"<23:29:15> <INFO>		RCLootCouncil	TradeUI enabled", -- [1201]
-			"<23:29:32> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Alatra-Zul'jin	Player-61-0EBAD280", -- [1202]
-			"<23:29:32> <INFO>		Alatra-Zul'jin	3.4.0	nil", -- [1203]
-			"<23:29:32> <DEBUG>		ActivateSkin	bfa", -- [1204]
-			"<23:29:44> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1205]
-			"<23:29:44> <INFO>		UpdatePlayersData()", -- [1206]
-			"<23:29:44> <INFO>		Player relog...", -- [1207]
-			"<23:29:50> <DEBUG>		GetML()", -- [1208]
-			"<23:33:45> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1209]
-			"<23:33:45> <INFO>		UpdatePlayersData()", -- [1210]
-			"<23:33:47> <DEBUG>		GetML()", -- [1211]
-			"<23:34:42> <DEBUG>		Event:	LOOT_READY	true", -- [1212]
-			"<23:34:58> <DEBUG>		Event:	LOOT_READY	true", -- [1213]
-			"<23:34:58> <DEBUG>		Event:	LOOT_READY	true", -- [1214]
-			"<23:35:32> <DEBUG>		Event:	LOOT_READY	true", -- [1215]
-			"<23:36:22> <DEBUG>		Event:	LOOT_READY	true", -- [1216]
-			"<23:37:39> <DEBUG>		Event:	LOOT_READY	true", -- [1217]
-			"<23:37:51> <DEBUG>		Event:	LOOT_READY	true", -- [1218]
-			"<23:38:46> <DEBUG>		Event:	LOOT_READY	true", -- [1219]
-			"<23:38:50> <DEBUG>		Event:	LOOT_READY	true", -- [1220]
-			"<23:44:59> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1221]
-			"<23:44:59> <INFO>		UpdatePlayersData()", -- [1222]
-			"<23:45:01> <DEBUG>		GetML()", -- [1223]
-			"<23:45:52> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1224]
-			"<23:45:52> <INFO>		UpdatePlayersData()", -- [1225]
-			"<23:45:54> <DEBUG>		GetML()", -- [1226]
-			"<23:49:04> <DEBUG>		Event:	LOOT_READY	true", -- [1227]
-			"<23:55:18> <DEBUG>		Event:	LOOT_READY	true", -- [1228]
-			"<23:55:41> <DEBUG>		Event:	LOOT_READY	true", -- [1229]
-			"<23:56:05> <DEBUG>		Event:	LOOT_READY	true", -- [1230]
-			"<23:58:15> <DEBUG>		Event:	LOOT_READY	true", -- [1231]
-			"<23:59:28> <DEBUG>		Event:	LOOT_READY	true", -- [1232]
-			"<00:00:25> <DEBUG>		Event:	LOOT_READY	true", -- [1233]
-			"<00:01:19> <DEBUG>		Event:	LOOT_READY	true", -- [1234]
-			"<00:01:38> <DEBUG>		Event:	LOOT_READY	true", -- [1235]
-			"<00:02:01> <DEBUG>		Event:	LOOT_READY	true", -- [1236]
-			"<00:02:25> <DEBUG>		Event:	LOOT_READY	true", -- [1237]
-			"<00:04:29> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1238]
-			"<00:04:29> <INFO>		UpdatePlayersData()", -- [1239]
-			"<00:04:30> <DEBUG>		GetML()", -- [1240]
-			"<00:15:11> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1241]
-			"<00:15:11> <INFO>		UpdatePlayersData()", -- [1242]
-			"<00:15:13> <DEBUG>		GetML()", -- [1243]
-			"<00:16:06> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1244]
-			"<00:16:06> <INFO>		UpdatePlayersData()", -- [1245]
-			"<00:16:07> <DEBUG>		GetML()", -- [1246]
-			"<00:24:18> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1247]
-			"<00:24:18> <INFO>		UpdatePlayersData()", -- [1248]
-			"<00:24:20> <DEBUG>		GetML()", -- [1249]
-			"<00:24:46> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1250]
-			"<00:24:46> <INFO>		UpdatePlayersData()", -- [1251]
-			"<00:24:48> <DEBUG>		GetML()", -- [1252]
-			"10/10/22", -- [1253]
-			"<00:25:43> <INFO>		Logged In", -- [1254]
-			"<00:25:43> [ML]<INFO>		Init", -- [1255]
-			"<00:25:43> <INFO>		RCLootCouncil	TradeUI enabled", -- [1256]
-			"<00:25:58> <INFO>		Zulbathal-Zul'jin	3.4.0	nil", -- [1257]
-			"<00:25:58> <DEBUG>		ActivateSkin	bfa", -- [1258]
-			"<00:26:10> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1259]
-			"<00:26:10> <INFO>		UpdatePlayersData()", -- [1260]
-			"<00:26:10> <INFO>		Player relog...", -- [1261]
-			"<00:26:16> <DEBUG>		GetML()", -- [1262]
-			"10/10/22", -- [1263]
-			"<00:28:11> <INFO>		Logged In", -- [1264]
-			"<00:28:11> [ML]<INFO>		Init", -- [1265]
-			"<00:28:11> <INFO>		RCLootCouncil	TradeUI enabled", -- [1266]
-			"<00:28:22> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Okona-Zul'jin	Player-61-0DE12200", -- [1267]
-			"<00:28:22> <INFO>		Okona-Zul'jin	3.4.0	nil", -- [1268]
-			"<00:28:22> <DEBUG>		ActivateSkin	bfa", -- [1269]
-			"<00:28:34> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1270]
-			"<00:28:34> <INFO>		UpdatePlayersData()", -- [1271]
-			"<00:28:34> <INFO>		Player relog...", -- [1272]
-			"<00:28:39> <DEBUG>		GetML()", -- [1273]
-			"10/10/22", -- [1274]
-			"<00:31:00> <INFO>		Logged In", -- [1275]
-			"<00:31:00> [ML]<INFO>		Init", -- [1276]
-			"<00:31:00> <INFO>		RCLootCouncil	TradeUI enabled", -- [1277]
-			"<00:31:15> <INFO>		Zulbathal-Zul'jin	3.4.0	nil", -- [1278]
-			"<00:31:15> <DEBUG>		ActivateSkin	bfa", -- [1279]
-			"<00:31:26> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1280]
-			"<00:31:26> <INFO>		UpdatePlayersData()", -- [1281]
-			"<00:31:26> <INFO>		Player relog...", -- [1282]
-			"<00:31:32> <DEBUG>		GetML()", -- [1283]
-			"10/10/22", -- [1284]
-			"<00:33:56> <INFO>		Logged In", -- [1285]
-			"<00:33:56> [ML]<INFO>		Init", -- [1286]
-			"<00:33:56> <INFO>		RCLootCouncil	TradeUI enabled", -- [1287]
-			"<00:34:18> <INFO>		Shanyt-ArgentDawn	3.4.0	nil", -- [1288]
-			"<00:34:18> <DEBUG>		ActivateSkin	bfa", -- [1289]
-			"<00:34:29> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1290]
-			"<00:34:29> <INFO>		UpdatePlayersData()", -- [1291]
-			"<00:34:29> <INFO>		Player relog...", -- [1292]
-			"<00:34:37> <DEBUG>		GetPlayersGuildRank()", -- [1293]
-			"<00:34:37> <DEBUG>		Found Guild Rank: Thuerge", -- [1294]
-			"<00:34:45> <DEBUG>		GetML()", -- [1295]
-			"10/10/22", -- [1296]
-			"<19:28:22> <INFO>		Logged In", -- [1297]
-			"<19:28:22> [ML]<INFO>		Init", -- [1298]
-			"<19:28:22> <INFO>		RCLootCouncil	TradeUI enabled", -- [1299]
-			"<19:28:45> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Shanyt-ArgentDawn	Player-75-058380E2", -- [1300]
-			"<19:28:45> <INFO>		Shanyt-ArgentDawn	3.4.0	nil", -- [1301]
-			"<19:28:45> <DEBUG>		ActivateSkin	bfa", -- [1302]
-			"<19:28:57> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1303]
-			"<19:28:57> <INFO>		UpdatePlayersData()", -- [1304]
-			"<19:28:57> <INFO>		Player relog...", -- [1305]
-			"<19:29:05> <DEBUG>		GetPlayersGuildRank()", -- [1306]
-			"<19:29:05> <DEBUG>		Found Guild Rank: Thuerge", -- [1307]
-			"<19:29:12> <DEBUG>		GetML()", -- [1308]
-			"10/10/22", -- [1309]
-			"<19:38:04> <INFO>		Logged In", -- [1310]
-			"<19:38:04> [ML]<INFO>		Init", -- [1311]
-			"<19:38:04> <INFO>		RCLootCouncil	TradeUI enabled", -- [1312]
-			"<19:38:22> <INFO>		Avisar-Dalaran	3.4.0	nil", -- [1313]
-			"<19:38:22> <DEBUG>		ActivateSkin	bfa", -- [1314]
-			"<19:38:34> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1315]
-			"<19:38:34> <INFO>		UpdatePlayersData()", -- [1316]
-			"<19:38:34> <INFO>		Player relog...", -- [1317]
-			"<19:38:40> <DEBUG>		GetML()", -- [1318]
-			"10/10/22", -- [1319]
-			"<19:41:03> <INFO>		Logged In", -- [1320]
-			"<19:41:03> [ML]<INFO>		Init", -- [1321]
-			"<19:41:03> <INFO>		RCLootCouncil	TradeUI enabled", -- [1322]
-			"<19:41:19> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Zulbathal-Zul'jin	Player-61-0CA8EB69", -- [1323]
-			"<19:41:19> <INFO>		Zulbathal-Zul'jin	3.4.0	nil", -- [1324]
-			"<19:41:19> <DEBUG>		ActivateSkin	bfa", -- [1325]
-			"<19:41:30> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1326]
-			"<19:41:30> <INFO>		UpdatePlayersData()", -- [1327]
-			"<19:41:30> <INFO>		Player relog...", -- [1328]
-			"<19:41:36> <DEBUG>		GetML()", -- [1329]
-			"10/10/22", -- [1330]
-			"<22:04:49> <INFO>		Logged In", -- [1331]
-			"<22:04:49> [ML]<INFO>		Init", -- [1332]
-			"<22:04:49> <INFO>		RCLootCouncil	TradeUI enabled", -- [1333]
-			"<22:05:05> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Zulbathal-Zul'jin	Player-61-0CA8EB69", -- [1334]
-			"<22:05:05> <INFO>		Zulbathal-Zul'jin	3.4.0	nil", -- [1335]
-			"<22:05:05> <DEBUG>		ActivateSkin	bfa", -- [1336]
-			"<22:05:17> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1337]
-			"<22:05:17> <INFO>		UpdatePlayersData()", -- [1338]
-			"<22:05:17> <INFO>		Player relog...", -- [1339]
-			"<22:05:23> <DEBUG>		GetML()", -- [1340]
-			"10/11/22", -- [1341]
-			"<07:54:14> <INFO>		Logged In", -- [1342]
-			"<07:54:14> [ML]<INFO>		Init", -- [1343]
-			"<07:54:14> <INFO>		RCLootCouncil	TradeUI enabled", -- [1344]
-			"<07:54:30> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Zulbathal-Zul'jin	Player-61-0CA8EB69", -- [1345]
-			"<07:54:30> <INFO>		Zulbathal-Zul'jin	3.4.0	nil", -- [1346]
-			"<07:54:30> <DEBUG>		ActivateSkin	bfa", -- [1347]
-			"<07:54:41> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1348]
-			"<07:54:41> <INFO>		UpdatePlayersData()", -- [1349]
-			"<07:54:41> <INFO>		Player relog...", -- [1350]
-			"<07:54:47> <DEBUG>		GetML()", -- [1351]
-			"10/11/22", -- [1352]
-			"<08:00:21> <INFO>		Logged In", -- [1353]
-			"<08:00:21> [ML]<INFO>		Init", -- [1354]
-			"<08:00:21> <INFO>		RCLootCouncil	TradeUI enabled", -- [1355]
-			"<08:00:43> <INFO>		Shanyt-ArgentDawn	3.4.0	nil", -- [1356]
-			"<08:00:43> <DEBUG>		ActivateSkin	bfa", -- [1357]
-			"<08:00:54> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1358]
-			"<08:00:54> <INFO>		UpdatePlayersData()", -- [1359]
-			"<08:00:54> <INFO>		Player relog...", -- [1360]
-			"<08:01:02> <DEBUG>		GetPlayersGuildRank()", -- [1361]
-			"<08:01:02> <DEBUG>		Found Guild Rank: Thuerge", -- [1362]
-			"<08:01:19> <DEBUG>		GetML()", -- [1363]
-			"<08:31:06> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1364]
-			"<08:31:06> <INFO>		UpdatePlayersData()", -- [1365]
-			"<08:31:10> <DEBUG>		GetML()", -- [1366]
-			"<08:32:59> <DEBUG>		Event:	LOOT_READY	true", -- [1367]
-			"<08:35:31> <DEBUG>		Event:	LOOT_READY	true", -- [1368]
-			"<08:38:00> <DEBUG>		Event:	LOOT_READY	true", -- [1369]
-			"<08:42:18> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1370]
-			"<08:42:18> <INFO>		UpdatePlayersData()", -- [1371]
-			"<08:42:25> <DEBUG>		GetML()", -- [1372]
-			"10/11/22", -- [1373]
-			"<08:48:14> <INFO>		Logged In", -- [1374]
-			"<08:48:14> [ML]<INFO>		Init", -- [1375]
-			"<08:48:14> <INFO>		RCLootCouncil	TradeUI enabled", -- [1376]
-			"<08:48:29> <INFO>		Zulbathal-Zul'jin	3.4.0	nil", -- [1377]
-			"<08:48:29> <DEBUG>		ActivateSkin	bfa", -- [1378]
-			"<08:48:40> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1379]
-			"<08:48:40> <INFO>		UpdatePlayersData()", -- [1380]
-			"<08:48:40> <INFO>		Player relog...", -- [1381]
-			"<08:48:47> <DEBUG>		GetML()", -- [1382]
-			"<08:50:05> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1383]
-			"<08:50:05> <INFO>		UpdatePlayersData()", -- [1384]
-			"<08:50:08> <DEBUG>		GetML()", -- [1385]
-			"10/11/22", -- [1386]
-			"<09:04:40> <INFO>		Logged In", -- [1387]
-			"<09:04:40> [ML]<INFO>		Init", -- [1388]
-			"<09:04:40> <INFO>		RCLootCouncil	TradeUI enabled", -- [1389]
-			"<09:04:58> <INFO>		Avisar-Dalaran	3.4.0	nil", -- [1390]
-			"<09:04:58> <DEBUG>		ActivateSkin	bfa", -- [1391]
-			"<09:05:10> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1392]
-			"<09:05:10> <INFO>		UpdatePlayersData()", -- [1393]
-			"<09:05:10> <INFO>		Player relog...", -- [1394]
-			"<09:05:16> <DEBUG>		GetML()", -- [1395]
-			"<09:07:15> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1396]
-			"<09:07:15> <INFO>		UpdatePlayersData()", -- [1397]
-			"<09:07:17> <DEBUG>		GetML()", -- [1398]
-			"<09:34:50> <DEBUG>		Event:	LOOT_READY	true", -- [1399]
-			"<09:35:09> <DEBUG>		Event:	LOOT_READY	true", -- [1400]
-			"<09:35:09> <DEBUG>		Event:	LOOT_READY	true", -- [1401]
-			"<09:35:16> <DEBUG>		Event:	LOOT_READY	true", -- [1402]
-			"<09:35:22> <DEBUG>		Event:	LOOT_READY	true", -- [1403]
-			"<09:35:22> <DEBUG>		Event:	LOOT_READY	true", -- [1404]
-			"<09:35:23> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	179393	|cff0070dd|Hitem:179393::::::::52:70::::1:28:746:::::|h[Mirror of Envious Dreams]|h|r	1	Avisar	PALADIN", -- [1405]
-			"<09:35:33> <DEBUG>		Event:	LOOT_READY	true", -- [1406]
-			"<09:35:44> <DEBUG>		Event:	LOOT_READY	true", -- [1407]
-			"10/11/22", -- [1408]
-			"<10:48:13> <INFO>		Logged In", -- [1409]
-			"<10:48:13> [ML]<INFO>		Init", -- [1410]
-			"<10:48:13> <INFO>		RCLootCouncil	TradeUI enabled", -- [1411]
-			"<10:48:31> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Avisar-Dalaran	Player-3683-0BE4455C", -- [1412]
-			"<10:48:31> <INFO>		Avisar-Dalaran	3.4.0	nil", -- [1413]
-			"<10:48:31> <DEBUG>		ActivateSkin	bfa", -- [1414]
-			"<10:48:43> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1415]
-			"<10:48:43> <INFO>		UpdatePlayersData()", -- [1416]
-			"<10:48:43> <INFO>		Player relog...", -- [1417]
-			"<10:48:49> <DEBUG>		GetML()", -- [1418]
-			"<11:04:54> <DEBUG>		Event:	LOOT_READY	true", -- [1419]
-			"<11:05:01> <DEBUG>		Event:	LOOT_READY	true", -- [1420]
-			"<11:05:15> <DEBUG>		Event:	LOOT_READY	true", -- [1421]
-			"<11:05:15> <DEBUG>		Event:	LOOT_READY	true", -- [1422]
-			"<11:05:50> <DEBUG>		Event:	LOOT_READY	true", -- [1423]
-			"<11:05:50> <DEBUG>		Event:	LOOT_READY	true", -- [1424]
-			"<11:06:09> <DEBUG>		Event:	LOOT_READY	true", -- [1425]
-			"<11:06:15> <DEBUG>		Event:	LOOT_READY	true", -- [1426]
-			"<11:06:27> <DEBUG>		Event:	LOOT_READY	true", -- [1427]
-			"<11:06:45> <DEBUG>		Event:	LOOT_READY	true", -- [1428]
-			"<11:07:01> <DEBUG>		Event:	LOOT_READY	true", -- [1429]
-			"<11:07:10> <DEBUG>		Event:	LOOT_READY	true", -- [1430]
-			"<11:07:22> <DEBUG>		Event:	LOOT_READY	true", -- [1431]
-			"<11:07:33> <DEBUG>		Event:	LOOT_READY	true", -- [1432]
-			"<11:07:33> <DEBUG>		Event:	LOOT_READY	true", -- [1433]
-			"<11:07:54> <DEBUG>		Event:	LOOT_READY	true", -- [1434]
-			"<11:07:58> <DEBUG>		Event:	LOOT_READY	true", -- [1435]
-			"<11:08:28> <DEBUG>		Event:	LOOT_READY	true", -- [1436]
-			"<11:09:29> <DEBUG>		Event:	LOOT_READY	true", -- [1437]
-			"<11:09:29> <DEBUG>		Event:	LOOT_READY	true", -- [1438]
-			"<11:09:40> <DEBUG>		Event:	LOOT_READY	true", -- [1439]
-			"<11:09:47> <DEBUG>		Event:	LOOT_READY	true", -- [1440]
-			"<11:09:47> <DEBUG>		Event:	LOOT_READY	true", -- [1441]
-			"<11:09:57> <DEBUG>		Event:	LOOT_READY	true", -- [1442]
-			"<11:10:38> <DEBUG>		Event:	LOOT_READY	true", -- [1443]
-			"<11:10:47> <DEBUG>		Event:	LOOT_READY	true", -- [1444]
-			"<11:11:46> <DEBUG>		Event:	LOOT_READY	true", -- [1445]
-			"<11:11:57> <DEBUG>		Event:	LOOT_READY	true", -- [1446]
-			"<11:12:02> <DEBUG>		Event:	LOOT_READY	true", -- [1447]
-			"<11:12:14> <DEBUG>		Event:	LOOT_READY	true", -- [1448]
-			"<11:12:26> <DEBUG>		Event:	LOOT_READY	true", -- [1449]
-			"<11:12:42> <DEBUG>		Event:	LOOT_READY	true", -- [1450]
-			"<11:13:02> <DEBUG>		Event:	LOOT_READY	true", -- [1451]
-			"<11:14:07> <DEBUG>		Event:	LOOT_READY	true", -- [1452]
-			"<11:14:07> <DEBUG>		Event:	LOOT_READY	true", -- [1453]
-			"<11:14:20> <DEBUG>		Event:	LOOT_READY	true", -- [1454]
-			"<11:14:21> <DEBUG>		Event:	LOOT_READY	true", -- [1455]
-			"<11:14:46> <DEBUG>		Event:	LOOT_READY	true", -- [1456]
-			"<11:15:02> <DEBUG>		Event:	LOOT_READY	true", -- [1457]
-			"<11:15:19> <DEBUG>		Event:	LOOT_READY	true", -- [1458]
-			"<11:15:19> <DEBUG>		Event:	LOOT_READY	true", -- [1459]
-			"<11:15:36> <DEBUG>		Event:	LOOT_READY	true", -- [1460]
-			"<11:15:45> <DEBUG>		Event:	LOOT_READY	true", -- [1461]
-			"<11:16:09> <DEBUG>		Event:	LOOT_READY	true", -- [1462]
-			"<11:16:17> <DEBUG>		Event:	LOOT_READY	true", -- [1463]
-			"<11:17:31> <DEBUG>		Event:	LOOT_READY	true", -- [1464]
-			"<11:17:40> <DEBUG>		Event:	LOOT_READY	true", -- [1465]
-			"<11:17:55> <DEBUG>		Event:	LOOT_READY	true", -- [1466]
-			"<11:18:40> <DEBUG>		Event:	LOOT_READY	true", -- [1467]
-			"<11:18:54> <DEBUG>		Event:	LOOT_READY	true", -- [1468]
-			"<11:19:09> <DEBUG>		Event:	LOOT_READY	true", -- [1469]
-			"<11:19:23> <DEBUG>		Event:	LOOT_READY	true", -- [1470]
-			"<11:19:23> <DEBUG>		Event:	LOOT_READY	true", -- [1471]
-			"<11:19:32> <DEBUG>		Event:	LOOT_READY	true", -- [1472]
-			"<11:19:32> <DEBUG>		Event:	LOOT_READY	true", -- [1473]
-			"<11:24:53> <DEBUG>		Event:	LOOT_READY	true", -- [1474]
-			"<11:25:09> <DEBUG>		Event:	LOOT_READY	true", -- [1475]
-			"<11:25:09> <DEBUG>		Event:	LOOT_READY	true", -- [1476]
-			"<11:25:17> <DEBUG>		Event:	LOOT_READY	true", -- [1477]
-			"<11:25:17> <DEBUG>		Event:	LOOT_READY	true", -- [1478]
-			"<11:25:37> <DEBUG>		Event:	LOOT_READY	true", -- [1479]
-			"<11:25:47> <DEBUG>		Event:	LOOT_READY	true", -- [1480]
-			"<11:26:06> <DEBUG>		Event:	LOOT_READY	true", -- [1481]
-			"<11:26:07> <DEBUG>		Event:	LOOT_READY	true", -- [1482]
-			"<11:26:16> <DEBUG>		Event:	LOOT_READY	true", -- [1483]
-			"<11:26:16> <DEBUG>		Event:	LOOT_READY	true", -- [1484]
-			"<11:26:26> <DEBUG>		Event:	LOOT_READY	true", -- [1485]
-			"<11:26:48> <DEBUG>		Event:	LOOT_READY	true", -- [1486]
-			"<11:26:48> <DEBUG>		Event:	LOOT_READY	true", -- [1487]
-			"<11:26:57> <DEBUG>		Event:	LOOT_READY	true", -- [1488]
-			"<11:27:18> <DEBUG>		Event:	LOOT_READY	true", -- [1489]
-			"<11:27:18> <DEBUG>		Event:	LOOT_READY	true", -- [1490]
-			"<11:27:28> <DEBUG>		Event:	LOOT_READY	true", -- [1491]
-			"<11:27:29> <DEBUG>		Event:	LOOT_READY	true", -- [1492]
-			"<11:27:40> <DEBUG>		Event:	LOOT_READY	true", -- [1493]
-			"<11:27:40> <DEBUG>		Event:	LOOT_READY	true", -- [1494]
-			"<11:27:48> <DEBUG>		Event:	LOOT_READY	true", -- [1495]
-			"<11:27:57> <DEBUG>		Event:	LOOT_READY	true", -- [1496]
-			"<11:28:17> <DEBUG>		Event:	LOOT_READY	true", -- [1497]
-			"<11:28:17> <DEBUG>		Event:	LOOT_READY	true", -- [1498]
-			"<11:28:55> <DEBUG>		Event:	LOOT_READY	true", -- [1499]
-			"<11:28:55> <DEBUG>		Event:	LOOT_READY	true", -- [1500]
-			"<11:29:21> <DEBUG>		Event:	LOOT_READY	true", -- [1501]
-			"<11:30:17> <DEBUG>		Event:	LOOT_READY	true", -- [1502]
-			"<11:30:17> <DEBUG>		Event:	LOOT_READY	true", -- [1503]
-			"<11:30:23> <DEBUG>		Event:	LOOT_READY	true", -- [1504]
-			"<11:30:38> <DEBUG>		Event:	LOOT_READY	true", -- [1505]
-			"<11:30:38> <DEBUG>		Event:	LOOT_READY	true", -- [1506]
-			"<11:31:33> <DEBUG>		Event:	LOOT_READY	true", -- [1507]
-			"<11:32:29> <DEBUG>		Event:	LOOT_READY	true", -- [1508]
-			"<11:32:29> <DEBUG>		Event:	LOOT_READY	true", -- [1509]
-			"<11:32:29> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	175736	|cff0070dd|Hitem:175736::::::::54:70:::1:6706:2:28:1707:9:54:::::|h[Hopebreaker Pendant]|h|r	1	Avisar	PALADIN", -- [1510]
-			"<11:32:53> <DEBUG>		Event:	LOOT_READY	true", -- [1511]
-			"<11:32:53> <DEBUG>		Event:	LOOT_READY	true", -- [1512]
-			"<11:32:56> <DEBUG>		Event:	LOOT_READY	true", -- [1513]
-			"<11:34:10> <DEBUG>		Event:	LOOT_READY	true", -- [1514]
-			"<11:34:10> <DEBUG>		Event:	LOOT_READY	true", -- [1515]
-			"<11:34:38> <DEBUG>		Event:	LOOT_READY	true", -- [1516]
-			"<11:34:49> <DEBUG>		Event:	LOOT_READY	true", -- [1517]
-			"<11:34:52> <DEBUG>		Event:	LOOT_READY	true", -- [1518]
-			"<11:34:52> <DEBUG>		Event:	LOOT_READY	true", -- [1519]
-			"<11:35:19> <DEBUG>		Event:	LOOT_READY	true", -- [1520]
-			"<11:35:19> <DEBUG>		Event:	LOOT_READY	true", -- [1521]
-			"<11:35:20> <DEBUG>		Event:	LOOT_READY	true", -- [1522]
-			"<11:35:45> <DEBUG>		Event:	LOOT_READY	true", -- [1523]
-			"<11:35:48> <DEBUG>		Event:	LOOT_READY	true", -- [1524]
-			"<11:35:48> <DEBUG>		Event:	LOOT_READY	true", -- [1525]
-			"<11:36:00> <DEBUG>		Event:	LOOT_READY	true", -- [1526]
-			"<11:36:13> <DEBUG>		Event:	LOOT_READY	true", -- [1527]
-			"<11:36:13> <DEBUG>		Event:	LOOT_READY	true", -- [1528]
-			"<11:36:30> <DEBUG>		Event:	LOOT_READY	true", -- [1529]
-			"<11:36:30> <DEBUG>		Event:	LOOT_READY	true", -- [1530]
-			"<11:37:07> <DEBUG>		Event:	LOOT_READY	true", -- [1531]
-			"<11:37:07> <DEBUG>		Event:	LOOT_READY	true", -- [1532]
-			"<11:37:20> <DEBUG>		Event:	LOOT_READY	true", -- [1533]
-			"<11:37:20> <DEBUG>		Event:	LOOT_READY	true", -- [1534]
-			"<11:37:36> <DEBUG>		Event:	LOOT_READY	true", -- [1535]
-			"<11:37:51> <DEBUG>		Event:	LOOT_READY	true", -- [1536]
-			"<11:37:51> <DEBUG>		Event:	LOOT_READY	true", -- [1537]
-			"<11:39:05> <DEBUG>		Event:	LOOT_READY	true", -- [1538]
-			"<11:39:05> <DEBUG>		Event:	LOOT_READY	true", -- [1539]
-			"<11:40:27> <DEBUG>		Event:	LOOT_READY	true", -- [1540]
-			"<11:40:27> <DEBUG>		Event:	LOOT_READY	true", -- [1541]
-			"<11:40:27> <DEBUG>		Event:	LOOT_READY	true", -- [1542]
-			"<11:40:27> <DEBUG>		Event:	LOOT_READY	true", -- [1543]
-			"<11:40:27> <DEBUG>		Event:	LOOT_READY	true", -- [1544]
-			"<11:40:46> <DEBUG>		Event:	LOOT_READY	true", -- [1545]
-			"<11:41:17> <DEBUG>		Event:	LOOT_READY	true", -- [1546]
-			"<11:41:58> <DEBUG>		Event:	LOOT_READY	true", -- [1547]
-			"<11:42:20> <DEBUG>		Event:	LOOT_READY	true", -- [1548]
-			"<11:42:23> <DEBUG>		Event:	LOOT_READY	true", -- [1549]
-			"<11:42:23> <DEBUG>		Event:	LOOT_READY	true", -- [1550]
-			"<11:42:57> <DEBUG>		Event:	LOOT_READY	true", -- [1551]
-			"<11:42:58> <DEBUG>		Event:	LOOT_READY	true", -- [1552]
-			"<11:43:40> <DEBUG>		Event:	LOOT_READY	true", -- [1553]
-			"<11:43:40> <DEBUG>		Event:	LOOT_READY	true", -- [1554]
-			"<11:43:58> <DEBUG>		Event:	LOOT_READY	true", -- [1555]
-			"<11:44:12> <DEBUG>		Event:	LOOT_READY	true", -- [1556]
-			"<11:44:12> <DEBUG>		Event:	LOOT_READY	true", -- [1557]
-			"<11:44:42> <DEBUG>		Event:	LOOT_READY	true", -- [1558]
-			"<11:45:05> <DEBUG>		Event:	LOOT_READY	true", -- [1559]
-			"<11:45:05> <DEBUG>		Event:	LOOT_READY	true", -- [1560]
-			"<11:45:27> <DEBUG>		Event:	LOOT_READY	true", -- [1561]
-			"<11:45:27> <DEBUG>		Event:	LOOT_READY	true", -- [1562]
-			"<11:45:27> <DEBUG>		Event:	LOOT_READY	true", -- [1563]
-			"<11:45:28> <DEBUG>		Event:	LOOT_READY	true", -- [1564]
-			"<11:45:33> <DEBUG>		Event:	LOOT_READY	true", -- [1565]
-			"<11:45:51> <DEBUG>		Event:	LOOT_READY	true", -- [1566]
-			"<11:45:56> <DEBUG>		Event:	LOOT_READY	true", -- [1567]
-			"<11:46:13> <DEBUG>		Event:	LOOT_READY	true", -- [1568]
-			"<11:46:25> <DEBUG>		Event:	LOOT_READY	true", -- [1569]
-			"<11:46:25> <DEBUG>		Event:	LOOT_READY	true", -- [1570]
-			"<11:47:49> <DEBUG>		Event:	LOOT_READY	true", -- [1571]
-			"<11:47:49> <DEBUG>		Event:	LOOT_READY	true", -- [1572]
-			"<11:47:59> <DEBUG>		Event:	LOOT_READY	true", -- [1573]
-			"<11:48:09> <DEBUG>		Event:	LOOT_READY	true", -- [1574]
-			"<11:48:17> <DEBUG>		Event:	LOOT_READY	true", -- [1575]
-			"<11:48:17> <DEBUG>		Event:	LOOT_READY	true", -- [1576]
-			"<11:48:44> <DEBUG>		Event:	LOOT_READY	true", -- [1577]
-			"<11:49:07> <DEBUG>		Event:	LOOT_READY	true", -- [1578]
-			"<11:49:39> <DEBUG>		Event:	LOOT_READY	true", -- [1579]
-			"<11:49:39> <DEBUG>		Event:	LOOT_READY	true", -- [1580]
-			"<11:50:07> <DEBUG>		Event:	LOOT_READY	true", -- [1581]
-			"<11:50:07> <DEBUG>		Event:	LOOT_READY	true", -- [1582]
-			"<11:50:37> <DEBUG>		Event:	LOOT_READY	true", -- [1583]
-			"<11:50:58> <DEBUG>		Event:	LOOT_READY	true", -- [1584]
-			"<11:50:59> <DEBUG>		Event:	LOOT_READY	true", -- [1585]
-			"<11:51:21> <DEBUG>		Event:	LOOT_READY	true", -- [1586]
-			"<11:51:42> <DEBUG>		Event:	LOOT_READY	true", -- [1587]
-			"<11:51:42> <DEBUG>		Event:	LOOT_READY	true", -- [1588]
-			"<11:51:54> <DEBUG>		Event:	LOOT_READY	true", -- [1589]
-			"<11:51:55> <DEBUG>		Event:	LOOT_READY	true", -- [1590]
-			"<11:52:02> <DEBUG>		Event:	LOOT_READY	true", -- [1591]
-			"<11:52:02> <DEBUG>		Event:	LOOT_READY	true", -- [1592]
-			"<11:52:31> <DEBUG>		Event:	LOOT_READY	true", -- [1593]
-			"<11:52:31> <DEBUG>		Event:	LOOT_READY	true", -- [1594]
-			"<11:53:11> <DEBUG>		Event:	LOOT_READY	true", -- [1595]
-			"<11:53:11> <DEBUG>		Event:	LOOT_READY	true", -- [1596]
-			"<11:53:33> <DEBUG>		Event:	LOOT_READY	true", -- [1597]
-			"<11:53:33> <DEBUG>		Event:	LOOT_READY	true", -- [1598]
-			"<11:53:44> <DEBUG>		Event:	LOOT_READY	true", -- [1599]
-			"<11:54:07> <DEBUG>		Event:	LOOT_READY	true", -- [1600]
-			"<11:54:31> <DEBUG>		Event:	LOOT_READY	true", -- [1601]
-			"<11:54:55> <DEBUG>		Event:	LOOT_READY	true", -- [1602]
-			"<11:54:55> <DEBUG>		Event:	LOOT_READY	true", -- [1603]
-			"<11:55:01> <DEBUG>		Event:	LOOT_READY	true", -- [1604]
-			"<11:55:01> <DEBUG>		Event:	LOOT_READY	true", -- [1605]
-			"<11:56:05> <DEBUG>		Event:	LOOT_READY	true", -- [1606]
-			"<11:56:19> <DEBUG>		Event:	LOOT_READY	true", -- [1607]
-			"<11:56:19> <DEBUG>		Event:	LOOT_READY	true", -- [1608]
-			"<11:56:30> <DEBUG>		Event:	LOOT_READY	true", -- [1609]
-			"<11:56:31> <DEBUG>		Event:	LOOT_READY	true", -- [1610]
-			"<11:56:47> <DEBUG>		Event:	LOOT_READY	true", -- [1611]
-			"<11:57:02> <DEBUG>		Event:	LOOT_READY	true", -- [1612]
-			"<11:57:25> <DEBUG>		Event:	LOOT_READY	true", -- [1613]
-			"<11:57:27> <DEBUG>		Event:	LOOT_READY	true", -- [1614]
-			"<11:58:14> <DEBUG>		Event:	LOOT_READY	true", -- [1615]
-			"<11:58:14> <DEBUG>		Event:	LOOT_READY	true", -- [1616]
-			"<11:58:26> <DEBUG>		Event:	LOOT_READY	true", -- [1617]
-			"<11:58:56> <DEBUG>		Event:	LOOT_READY	true", -- [1618]
-			"<11:58:56> <DEBUG>		Event:	LOOT_READY	true", -- [1619]
-			"<11:59:21> <DEBUG>		Event:	LOOT_READY	true", -- [1620]
-			"<11:59:44> <DEBUG>		Event:	LOOT_READY	true", -- [1621]
-			"<11:59:44> <DEBUG>		Event:	LOOT_READY	true", -- [1622]
-			"<11:59:55> <DEBUG>		Event:	LOOT_READY	true", -- [1623]
-			"<12:00:48> <DEBUG>		Event:	LOOT_READY	true", -- [1624]
-			"<12:03:25> <DEBUG>		Event:	LOOT_READY	true", -- [1625]
-			"<12:04:06> <DEBUG>		Event:	LOOT_READY	true", -- [1626]
-			"<12:04:06> <DEBUG>		Event:	LOOT_READY	true", -- [1627]
-			"<12:04:25> <DEBUG>		Event:	LOOT_READY	true", -- [1628]
-			"<12:04:44> <DEBUG>		Event:	LOOT_READY	true", -- [1629]
-			"<12:05:01> <DEBUG>		Event:	LOOT_READY	true", -- [1630]
-			"<12:05:02> <DEBUG>		Event:	LOOT_READY	true", -- [1631]
-			"<12:05:27> <DEBUG>		Event:	LOOT_READY	true", -- [1632]
-			"<12:05:30> <DEBUG>		Event:	LOOT_READY	true", -- [1633]
-			"<12:05:38> <DEBUG>		Event:	LOOT_READY	true", -- [1634]
-			"<12:05:39> <DEBUG>		Event:	LOOT_READY	true", -- [1635]
-			"<12:05:47> <DEBUG>		Event:	LOOT_READY	true", -- [1636]
-			"<12:05:57> <DEBUG>		Event:	LOOT_READY	true", -- [1637]
-			"<12:06:15> <DEBUG>		Event:	LOOT_READY	true", -- [1638]
-			"<12:06:15> <DEBUG>		Event:	LOOT_READY	true", -- [1639]
-			"<12:06:27> <DEBUG>		Event:	LOOT_READY	true", -- [1640]
-			"<12:06:29> <DEBUG>		Event:	LOOT_READY	true", -- [1641]
-			"<12:06:48> <DEBUG>		Event:	LOOT_READY	true", -- [1642]
-			"<12:07:05> <DEBUG>		Event:	LOOT_READY	true", -- [1643]
-			"<12:07:08> <DEBUG>		Event:	LOOT_READY	true", -- [1644]
-			"<12:07:23> <DEBUG>		Event:	LOOT_READY	true", -- [1645]
-			"<12:07:38> <DEBUG>		Event:	LOOT_READY	true", -- [1646]
-			"<12:08:02> <DEBUG>		Event:	LOOT_READY	true", -- [1647]
-			"<12:08:02> <DEBUG>		Event:	LOOT_READY	true", -- [1648]
-			"<12:08:05> <DEBUG>		Event:	LOOT_READY	true", -- [1649]
-			"<12:08:17> <DEBUG>		Event:	LOOT_READY	true", -- [1650]
-			"<12:08:31> <DEBUG>		Event:	LOOT_READY	true", -- [1651]
-			"<12:09:20> <DEBUG>		Event:	LOOT_READY	true", -- [1652]
-			"<12:09:25> <DEBUG>		Event:	LOOT_READY	true", -- [1653]
-			"<12:09:34> <DEBUG>		Event:	LOOT_READY	true", -- [1654]
-			"<12:09:34> <DEBUG>		Event:	LOOT_READY	true", -- [1655]
-			"<12:09:35> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	177807	|cff0070dd|Hitem:177807::::::::55:70:::1:6706:2:28:746:9:55:::::|h[Vyrtha's Dredglaive]|h|r	1	Avisar	PALADIN", -- [1656]
-			"<12:10:21> <DEBUG>		Event:	LOOT_READY	true", -- [1657]
-			"<12:10:21> <DEBUG>		Event:	LOOT_READY	true", -- [1658]
-			"<12:10:34> <DEBUG>		Event:	LOOT_READY	true", -- [1659]
-			"<12:10:47> <DEBUG>		Event:	LOOT_READY	true", -- [1660]
-			"<12:10:57> <DEBUG>		Event:	LOOT_READY	true", -- [1661]
-			"<12:11:21> <DEBUG>		Event:	LOOT_READY	true", -- [1662]
-			"<12:11:30> <DEBUG>		Event:	LOOT_READY	true", -- [1663]
-			"<12:11:35> <DEBUG>		Event:	LOOT_READY	true", -- [1664]
-			"<12:11:49> <DEBUG>		Event:	LOOT_READY	true", -- [1665]
-			"<12:12:18> <DEBUG>		Event:	LOOT_READY	true", -- [1666]
-			"<12:12:19> <DEBUG>		Event:	LOOT_READY	true", -- [1667]
-			"<12:12:23> <DEBUG>		Event:	LOOT_READY	true", -- [1668]
-			"<12:12:43> <DEBUG>		Event:	LOOT_READY	true", -- [1669]
-			"<12:13:04> <DEBUG>		Event:	LOOT_READY	true", -- [1670]
-			"<12:13:10> <DEBUG>		Event:	LOOT_READY	true", -- [1671]
-			"<12:14:38> <DEBUG>		Event:	LOOT_READY	true", -- [1672]
-			"<12:14:43> <DEBUG>		Event:	LOOT_READY	true", -- [1673]
-			"<12:15:04> <DEBUG>		Event:	LOOT_READY	true", -- [1674]
-			"<12:15:17> <DEBUG>		Event:	LOOT_READY	true", -- [1675]
-			"<12:15:18> <DEBUG>		Event:	LOOT_READY	true", -- [1676]
-			"<12:15:31> <DEBUG>		Event:	LOOT_READY	true", -- [1677]
-			"<12:15:47> <DEBUG>		Event:	LOOT_READY	true", -- [1678]
-			"<12:15:47> <DEBUG>		Event:	LOOT_READY	true", -- [1679]
-			"<12:16:29> <DEBUG>		Event:	LOOT_READY	true", -- [1680]
-			"<12:16:51> <DEBUG>		Event:	LOOT_READY	true", -- [1681]
-			"<12:17:05> <DEBUG>		Event:	LOOT_READY	true", -- [1682]
-			"<12:17:05> <DEBUG>		Event:	LOOT_READY	true", -- [1683]
-			"<12:17:18> <DEBUG>		Event:	LOOT_READY	true", -- [1684]
-			"<12:17:32> <DEBUG>		Event:	LOOT_READY	true", -- [1685]
-			"<12:17:51> <DEBUG>		Event:	LOOT_READY	true", -- [1686]
-			"<12:18:02> <DEBUG>		Event:	LOOT_READY	true", -- [1687]
-			"<12:18:02> <DEBUG>		Event:	LOOT_READY	true", -- [1688]
-			"<12:18:18> <DEBUG>		Event:	LOOT_READY	true", -- [1689]
-			"<12:18:22> <DEBUG>		Event:	LOOT_READY	true", -- [1690]
-			"<12:18:22> <DEBUG>		Event:	LOOT_READY	true", -- [1691]
-			"<12:18:35> <DEBUG>		Event:	LOOT_READY	true", -- [1692]
-			"<12:18:44> <DEBUG>		Event:	LOOT_READY	true", -- [1693]
-			"<12:19:28> <DEBUG>		Event:	LOOT_READY	true", -- [1694]
-			"<12:19:48> <DEBUG>		Event:	LOOT_READY	true", -- [1695]
-			"<12:20:04> <DEBUG>		Event:	LOOT_READY	true", -- [1696]
-			"<12:20:07> <DEBUG>		Event:	LOOT_READY	true", -- [1697]
-			"<12:20:12> <DEBUG>		Event:	LOOT_READY	true", -- [1698]
-			"<12:20:12> <DEBUG>		Event:	LOOT_READY	true", -- [1699]
-			"<12:20:21> <DEBUG>		Event:	LOOT_READY	true", -- [1700]
-			"<12:24:08> <DEBUG>		Event:	LOOT_READY	true", -- [1701]
-			"<12:24:12> <DEBUG>		Event:	LOOT_READY	true", -- [1702]
-			"<12:27:34> <DEBUG>		Event:	LOOT_READY	true", -- [1703]
-			"<12:27:44> <DEBUG>		Event:	LOOT_READY	true", -- [1704]
-			"<12:27:57> <DEBUG>		Event:	LOOT_READY	true", -- [1705]
-			"<12:28:24> <DEBUG>		Event:	LOOT_READY	true", -- [1706]
-			"<12:28:45> <DEBUG>		Event:	LOOT_READY	true", -- [1707]
-			"<12:28:46> <DEBUG>		Event:	LOOT_READY	true", -- [1708]
-			"<12:28:48> <DEBUG>		Event:	LOOT_READY	true", -- [1709]
-			"<12:28:55> <DEBUG>		Event:	LOOT_READY	true", -- [1710]
-			"<12:29:00> <DEBUG>		Event:	LOOT_READY	true", -- [1711]
-			"<12:29:07> <DEBUG>		Event:	LOOT_READY	true", -- [1712]
-			"<12:29:15> <DEBUG>		Event:	LOOT_READY	true", -- [1713]
-			"<12:29:15> <DEBUG>		Event:	LOOT_READY	true", -- [1714]
-			"<12:29:20> <DEBUG>		Event:	LOOT_READY	true", -- [1715]
-			"<12:29:28> <DEBUG>		Event:	LOOT_READY	true", -- [1716]
-			"<12:29:33> <DEBUG>		Event:	LOOT_READY	true", -- [1717]
-			"<12:29:34> <DEBUG>		Event:	LOOT_READY	true", -- [1718]
-			"<12:29:42> <DEBUG>		Event:	LOOT_READY	true", -- [1719]
-			"<12:29:47> <DEBUG>		Event:	LOOT_READY	true", -- [1720]
-			"<12:29:51> <DEBUG>		Event:	LOOT_READY	true", -- [1721]
-			"<12:29:59> <DEBUG>		Event:	LOOT_READY	true", -- [1722]
-			"<12:29:59> <DEBUG>		Event:	LOOT_READY	true", -- [1723]
-			"<12:30:21> <DEBUG>		Event:	LOOT_READY	true", -- [1724]
-			"<12:30:24> <DEBUG>		Event:	LOOT_READY	true", -- [1725]
-			"<12:30:24> <DEBUG>		Event:	LOOT_READY	true", -- [1726]
-			"<12:30:43> <DEBUG>		Event:	LOOT_READY	true", -- [1727]
-			"<12:30:47> <DEBUG>		Event:	LOOT_READY	true", -- [1728]
-			"<12:31:08> <DEBUG>		Event:	LOOT_READY	true", -- [1729]
-			"<12:31:08> <DEBUG>		Event:	LOOT_READY	true", -- [1730]
-			"<12:31:18> <DEBUG>		Event:	LOOT_READY	true", -- [1731]
-			"<12:31:38> <DEBUG>		Event:	LOOT_READY	true", -- [1732]
-			"<12:32:02> <DEBUG>		Event:	LOOT_READY	true", -- [1733]
-			"<12:32:02> <DEBUG>		Event:	LOOT_READY	true", -- [1734]
-			"<12:34:26> <DEBUG>		Event:	LOOT_READY	true", -- [1735]
-			"<12:35:19> <DEBUG>		Event:	LOOT_READY	true", -- [1736]
-			"<12:39:26> <DEBUG>		Event:	LOOT_READY	true", -- [1737]
-			"<12:39:26> <DEBUG>		Event:	LOOT_READY	true", -- [1738]
-			"<12:39:46> <DEBUG>		Event:	LOOT_READY	true", -- [1739]
-			"<12:39:56> <DEBUG>		Event:	LOOT_READY	true", -- [1740]
-			"<12:39:56> <DEBUG>		Event:	LOOT_READY	true", -- [1741]
-			"<12:40:30> <DEBUG>		Event:	LOOT_READY	true", -- [1742]
-			"<12:40:30> <DEBUG>		Event:	LOOT_READY	true", -- [1743]
-			"<12:40:36> <DEBUG>		Event:	LOOT_READY	true", -- [1744]
-			"<12:40:36> <DEBUG>		Event:	LOOT_READY	true", -- [1745]
-			"<12:40:54> <DEBUG>		Event:	LOOT_READY	true", -- [1746]
-			"<12:41:31> <DEBUG>		Event:	LOOT_READY	true", -- [1747]
-			"<12:41:41> <DEBUG>		Event:	LOOT_READY	true", -- [1748]
-			"<12:41:53> <DEBUG>		Event:	LOOT_READY	true", -- [1749]
-			"<12:42:01> <DEBUG>		Event:	LOOT_READY	true", -- [1750]
-			"<12:42:08> <DEBUG>		Event:	LOOT_READY	true", -- [1751]
-			"<12:42:18> <DEBUG>		Event:	LOOT_READY	true", -- [1752]
-			"<12:43:06> <DEBUG>		Event:	LOOT_READY	true", -- [1753]
-			"<12:43:17> <DEBUG>		Event:	LOOT_READY	true", -- [1754]
-			"<12:43:18> <DEBUG>		Event:	LOOT_READY	true", -- [1755]
-			"<12:43:20> <DEBUG>		Event:	LOOT_READY	true", -- [1756]
-			"<12:43:51> <DEBUG>		Event:	LOOT_READY	true", -- [1757]
-			"<12:43:54> <DEBUG>		Event:	LOOT_READY	true", -- [1758]
-			"<12:43:56> <DEBUG>		Event:	LOOT_READY	true", -- [1759]
-			"<12:43:59> <DEBUG>		Event:	LOOT_READY	true", -- [1760]
-			"<12:44:04> <DEBUG>		Event:	LOOT_READY	true", -- [1761]
-			"<12:44:06> <DEBUG>		Event:	LOOT_READY	true", -- [1762]
-			"<12:44:07> <DEBUG>		Event:	LOOT_READY	true", -- [1763]
-			"<12:44:21> <DEBUG>		Event:	LOOT_READY	true", -- [1764]
-			"<12:44:23> <DEBUG>		Event:	LOOT_READY	true", -- [1765]
-			"<12:44:24> <DEBUG>		Event:	LOOT_READY	true", -- [1766]
-			"<12:44:38> <DEBUG>		Event:	LOOT_READY	true", -- [1767]
-			"<12:45:02> <DEBUG>		Event:	LOOT_READY	true", -- [1768]
-			"<12:45:26> <DEBUG>		Event:	LOOT_READY	true", -- [1769]
-			"<12:45:26> <DEBUG>		Event:	LOOT_READY	true", -- [1770]
-			"<12:45:27> <DEBUG>		Event:	LOOT_READY	true", -- [1771]
-			"<12:45:29> <DEBUG>		Event:	LOOT_READY	true", -- [1772]
-			"<12:45:29> <DEBUG>		Event:	LOOT_READY	true", -- [1773]
-			"<12:46:03> <DEBUG>		Event:	LOOT_READY	true", -- [1774]
-			"<12:46:03> <DEBUG>		Event:	LOOT_READY	true", -- [1775]
-			"<12:46:03> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	179392	|cff0070dd|Hitem:179392::::::::56:70::::1:28:746:::::|h[Orb of Burgeoning Ambition]|h|r	1	Avisar	PALADIN", -- [1776]
-			"<12:46:39> <DEBUG>		Event:	LOOT_READY	true", -- [1777]
-			"<12:48:10> <DEBUG>		Event:	LOOT_READY	true", -- [1778]
-			"<12:48:13> <DEBUG>		Event:	LOOT_READY	true", -- [1779]
-			"<12:49:50> <DEBUG>		Event:	LOOT_READY	true", -- [1780]
-			"<12:49:50> <DEBUG>		Event:	LOOT_READY	true", -- [1781]
-			"<12:53:20> <DEBUG>		Event:	LOOT_READY	true", -- [1782]
-			"<12:54:41> <DEBUG>		Event:	LOOT_READY	true", -- [1783]
-			"<12:54:59> <DEBUG>		Event:	LOOT_READY	true", -- [1784]
-			"<12:55:30> <DEBUG>		Event:	LOOT_READY	true", -- [1785]
-			"<12:55:30> <DEBUG>		Event:	LOOT_READY	true", -- [1786]
-			"<12:56:05> <DEBUG>		Event:	LOOT_READY	true", -- [1787]
-			"<12:56:38> <DEBUG>		Event:	LOOT_READY	true", -- [1788]
-			"<12:56:49> <DEBUG>		Event:	LOOT_READY	true", -- [1789]
-			"<12:57:01> <DEBUG>		Event:	LOOT_READY	true", -- [1790]
-			"<12:57:15> <DEBUG>		Event:	LOOT_READY	true", -- [1791]
-			"<12:57:35> <DEBUG>		Event:	LOOT_READY	true", -- [1792]
-			"<12:58:18> <DEBUG>		Event:	LOOT_READY	true", -- [1793]
-			"<13:00:12> <DEBUG>		Event:	LOOT_READY	true", -- [1794]
-			"<13:00:13> <DEBUG>		Event:	LOOT_READY	true", -- [1795]
-			"10/11/22", -- [1796]
-			"<15:00:49> <INFO>		Logged In", -- [1797]
-			"<15:00:49> [ML]<INFO>		Init", -- [1798]
-			"<15:00:49> <INFO>		RCLootCouncil	TradeUI enabled", -- [1799]
-			"<15:01:08> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Avisar-Dalaran	Player-3683-0BE4455C", -- [1800]
-			"<15:01:08> <INFO>		Avisar-Dalaran	3.4.0	nil", -- [1801]
-			"<15:01:08> <DEBUG>		ActivateSkin	bfa", -- [1802]
-			"<15:01:21> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1803]
-			"<15:01:21> <INFO>		UpdatePlayersData()", -- [1804]
-			"<15:01:21> <INFO>		Player relog...", -- [1805]
-			"<15:01:27> <DEBUG>		GetML()", -- [1806]
-			"<15:13:01> <DEBUG>		Event:	LOOT_READY	true", -- [1807]
-			"<15:13:02> <DEBUG>		Event:	LOOT_READY	true", -- [1808]
-			"<15:13:05> <DEBUG>		Event:	LOOT_READY	true", -- [1809]
-			"<15:13:31> <DEBUG>		Event:	LOOT_READY	true", -- [1810]
-			"<15:13:32> <DEBUG>		Event:	LOOT_READY	true", -- [1811]
-			"<15:13:59> <DEBUG>		Event:	LOOT_READY	true", -- [1812]
-			"<15:13:59> <DEBUG>		Event:	LOOT_READY	true", -- [1813]
-			"<15:14:02> <DEBUG>		Event:	LOOT_READY	true", -- [1814]
-			"<15:14:16> <DEBUG>		Event:	LOOT_READY	true", -- [1815]
-			"<15:15:04> <DEBUG>		Event:	LOOT_READY	true", -- [1816]
-			"<15:15:04> <DEBUG>		Event:	LOOT_READY	true", -- [1817]
-			"<15:16:13> <DEBUG>		Event:	LOOT_READY	true", -- [1818]
-			"<15:16:41> <DEBUG>		Event:	LOOT_READY	true", -- [1819]
-			"<15:17:05> <DEBUG>		Event:	LOOT_READY	true", -- [1820]
-			"<15:17:53> <DEBUG>		Event:	LOOT_READY	true", -- [1821]
-			"<15:18:20> <DEBUG>		Event:	LOOT_READY	true", -- [1822]
-			"<15:18:43> <DEBUG>		Event:	LOOT_READY	true", -- [1823]
-			"<15:18:46> <DEBUG>		Event:	LOOT_READY	true", -- [1824]
-			"<15:18:46> <DEBUG>		Event:	LOOT_READY	true", -- [1825]
-			"<15:19:18> <DEBUG>		Event:	LOOT_READY	true", -- [1826]
-			"<15:19:36> <DEBUG>		Event:	LOOT_READY	true", -- [1827]
-			"<15:20:14> <DEBUG>		Event:	LOOT_READY	true", -- [1828]
-			"<15:20:15> <DEBUG>		Event:	LOOT_READY	true", -- [1829]
-			"<15:20:44> <DEBUG>		Event:	LOOT_READY	true", -- [1830]
-			"<15:20:56> <DEBUG>		Event:	LOOT_READY	true", -- [1831]
-			"<15:21:05> <DEBUG>		Event:	LOOT_READY	true", -- [1832]
-			"<15:21:39> <DEBUG>		Event:	LOOT_READY	true", -- [1833]
-			"<15:21:40> <DEBUG>		Event:	LOOT_READY	true", -- [1834]
-			"<15:21:57> <DEBUG>		Event:	LOOT_READY	true", -- [1835]
-			"<15:22:28> <DEBUG>		Event:	LOOT_READY	true", -- [1836]
-			"<15:23:00> <DEBUG>		Event:	LOOT_READY	true", -- [1837]
-			"<15:23:00> <DEBUG>		Event:	LOOT_READY	true", -- [1838]
-			"<15:24:01> <DEBUG>		Event:	LOOT_READY	true", -- [1839]
-			"<15:24:11> <DEBUG>		Event:	LOOT_READY	true", -- [1840]
-			"<15:28:47> <DEBUG>		Event:	LOOT_READY	true", -- [1841]
-			"<15:28:47> <DEBUG>		Event:	LOOT_READY	true", -- [1842]
-			"<15:30:45> <DEBUG>		Event:	LOOT_READY	true", -- [1843]
-			"<15:31:53> <DEBUG>		Event:	LOOT_READY	true", -- [1844]
-			"<15:32:00> <DEBUG>		Event:	LOOT_READY	true", -- [1845]
-			"<15:32:17> <DEBUG>		Event:	LOOT_READY	true", -- [1846]
-			"<15:32:30> <DEBUG>		Event:	LOOT_READY	true", -- [1847]
-			"<15:32:30> <DEBUG>		Event:	LOOT_READY	true", -- [1848]
-			"<15:32:50> <DEBUG>		Event:	LOOT_READY	true", -- [1849]
-			"<15:36:48> <DEBUG>		Event:	LOOT_READY	true", -- [1850]
-			"<15:36:59> <DEBUG>		Event:	LOOT_READY	true", -- [1851]
-			"<15:36:59> <DEBUG>		Event:	LOOT_READY	true", -- [1852]
-			"<15:37:11> <DEBUG>		Event:	LOOT_READY	true", -- [1853]
-			"<15:37:11> <DEBUG>		Event:	LOOT_READY	true", -- [1854]
-			"<15:37:38> <DEBUG>		Event:	LOOT_READY	true", -- [1855]
-			"<15:38:08> <DEBUG>		Event:	LOOT_READY	true", -- [1856]
-			"<15:38:32> <DEBUG>		Event:	LOOT_READY	true", -- [1857]
-			"<15:38:47> <DEBUG>		Event:	LOOT_READY	true", -- [1858]
-			"<15:38:51> <DEBUG>		Event:	LOOT_READY	true", -- [1859]
-			"<15:39:17> <DEBUG>		Event:	LOOT_READY	true", -- [1860]
-			"<15:40:46> <DEBUG>		Event:	LOOT_READY	true", -- [1861]
-			"<15:40:47> <DEBUG>		Event:	LOOT_READY	true", -- [1862]
-			"<15:40:47> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	182196	|cff0070dd|Hitem:182196::::::::58:70::11:2:6706:6652:2:28:1707:9:58:::::|h[Arbalest of the Colossal Predator]|h|r	1	Avisar	PALADIN", -- [1863]
-			"<15:41:32> <DEBUG>		Event:	LOOT_READY	true", -- [1864]
-			"<15:41:32> <DEBUG>		Event:	LOOT_READY	true", -- [1865]
-			"<15:41:41> <DEBUG>		Event:	LOOT_READY	true", -- [1866]
-			"<15:41:52> <DEBUG>		Event:	LOOT_READY	true", -- [1867]
-			"<15:41:52> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	180749	|cff0070dd|Hitem:180749::::::::58:70::11:2:6706:6652:2:28:1325:9:58:::::|h[Hauk's Battle-Scarred Bulwark]|h|r	1	Avisar	PALADIN", -- [1868]
-			"<15:42:04> <DEBUG>		Event:	LOOT_READY	true", -- [1869]
-			"<15:43:08> <DEBUG>		Event:	LOOT_READY	true", -- [1870]
-			"<15:43:26> <DEBUG>		Event:	LOOT_READY	true", -- [1871]
-			"<15:43:47> <DEBUG>		Event:	LOOT_READY	true", -- [1872]
-			"<15:44:22> <DEBUG>		Event:	LOOT_READY	true", -- [1873]
-			"<15:45:04> <DEBUG>		Event:	LOOT_READY	true", -- [1874]
-			"<15:45:56> <DEBUG>		Event:	LOOT_READY	true", -- [1875]
-			"<15:45:57> <DEBUG>		Event:	LOOT_READY	true", -- [1876]
-			"<15:46:55> <DEBUG>		Event:	LOOT_READY	true", -- [1877]
-			"<15:47:13> <DEBUG>		Event:	LOOT_READY	true", -- [1878]
-			"<15:47:28> <DEBUG>		Event:	LOOT_READY	true", -- [1879]
-			"<15:48:14> <DEBUG>		Event:	LOOT_READY	true", -- [1880]
-			"<15:53:47> <DEBUG>		Event:	LOOT_READY	true", -- [1881]
-			"<15:53:53> <DEBUG>		Event:	LOOT_READY	true", -- [1882]
-			"<15:54:16> <DEBUG>		Event:	LOOT_READY	true", -- [1883]
-			"<15:54:24> <DEBUG>		Event:	LOOT_READY	true", -- [1884]
-			"<15:54:42> <DEBUG>		Event:	LOOT_READY	true", -- [1885]
-			"<15:54:42> <DEBUG>		Event:	LOOT_READY	true", -- [1886]
-			"<15:54:54> <DEBUG>		Event:	LOOT_READY	true", -- [1887]
-			"<15:55:11> <DEBUG>		Event:	LOOT_READY	true", -- [1888]
-			"<15:57:01> <DEBUG>		Event:	LOOT_READY	true", -- [1889]
-			"<15:57:30> <DEBUG>		Event:	LOOT_READY	true", -- [1890]
-			"<15:57:38> <DEBUG>		Event:	LOOT_READY	true", -- [1891]
-			"<15:57:58> <DEBUG>		Event:	LOOT_READY	true", -- [1892]
-			"<15:57:58> <DEBUG>		Event:	LOOT_READY	true", -- [1893]
-			"<15:58:18> <DEBUG>		Event:	LOOT_READY	true", -- [1894]
-			"<15:58:35> <DEBUG>		Event:	LOOT_READY	true", -- [1895]
-			"<15:58:36> <DEBUG>		Event:	LOOT_READY	true", -- [1896]
-			"<15:58:53> <DEBUG>		Event:	LOOT_READY	true", -- [1897]
-			"<15:59:09> <DEBUG>		Event:	LOOT_READY	true", -- [1898]
-			"<15:59:28> <DEBUG>		Event:	LOOT_READY	true", -- [1899]
-			"<16:00:49> <DEBUG>		Event:	LOOT_READY	true", -- [1900]
-			"<16:00:49> <DEBUG>		Event:	LOOT_READY	true", -- [1901]
-			"<16:00:49> <DEBUG>		Event:	LOOT_READY	true", -- [1902]
-			"<16:00:49> <DEBUG>		Event:	LOOT_READY	true", -- [1903]
-			"<16:01:07> <DEBUG>		Event:	LOOT_READY	true", -- [1904]
-			"<16:01:07> <DEBUG>		Event:	LOOT_READY	true", -- [1905]
-			"<16:01:34> <DEBUG>		Event:	LOOT_READY	true", -- [1906]
-			"<16:02:01> <DEBUG>		Event:	LOOT_READY	true", -- [1907]
-			"<16:02:25> <DEBUG>		Event:	LOOT_READY	true", -- [1908]
-			"<16:02:58> <DEBUG>		Event:	LOOT_READY	true", -- [1909]
-			"<16:02:58> <DEBUG>		Event:	LOOT_READY	true", -- [1910]
-			"<16:03:23> <DEBUG>		Event:	LOOT_READY	true", -- [1911]
-			"<16:03:41> <DEBUG>		Event:	LOOT_READY	true", -- [1912]
-			"<16:03:41> <DEBUG>		Event:	LOOT_READY	true", -- [1913]
-			"<16:03:58> <DEBUG>		Event:	LOOT_READY	true", -- [1914]
-			"<16:03:58> <DEBUG>		Event:	LOOT_READY	true", -- [1915]
-			"<16:05:28> <DEBUG>		Event:	LOOT_READY	true", -- [1916]
-			"<16:05:29> <DEBUG>		Event:	LOOT_READY	true", -- [1917]
-			"<16:05:43> <DEBUG>		Event:	LOOT_READY	true", -- [1918]
-			"<16:05:54> <DEBUG>		Event:	LOOT_READY	true", -- [1919]
-			"<16:05:54> <DEBUG>		Event:	LOOT_READY	true", -- [1920]
-			"<16:05:54> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	184775	|cff0070dd|Hitem:184775::::::::58:70:::::::::|h[Necromancy for the Practical Ritualist]|h|r	1	Avisar	PALADIN", -- [1921]
-			"<16:06:02> <DEBUG>		Event:	LOOT_READY	true", -- [1922]
-			"<16:06:12> <DEBUG>		Event:	LOOT_READY	true", -- [1923]
-			"<16:06:12> <DEBUG>		Event:	LOOT_READY	true", -- [1924]
-			"<16:06:12> <DEBUG>		Event:	LOOT_READY	true", -- [1925]
-			"<16:06:41> <DEBUG>		Event:	LOOT_READY	true", -- [1926]
-			"<16:06:55> <DEBUG>		Event:	LOOT_READY	true", -- [1927]
-			"<16:07:07> <DEBUG>		Event:	LOOT_READY	true", -- [1928]
-			"<16:07:08> <DEBUG>		Event:	LOOT_READY	true", -- [1929]
-			"<16:08:03> <DEBUG>		Event:	LOOT_READY	true", -- [1930]
-			"<16:08:03> <DEBUG>		Event:	LOOT_READY	true", -- [1931]
-			"<16:08:20> <DEBUG>		Event:	LOOT_READY	true", -- [1932]
-			"<16:08:20> <DEBUG>		Event:	LOOT_READY	true", -- [1933]
-			"<16:08:20> <DEBUG>		Event:	LOOT_READY	true", -- [1934]
-			"<16:08:29> <DEBUG>		Event:	LOOT_READY	true", -- [1935]
-			"<16:08:37> <DEBUG>		Event:	LOOT_READY	true", -- [1936]
-			"<16:08:48> <DEBUG>		Event:	LOOT_READY	true", -- [1937]
-			"<16:09:36> <DEBUG>		Event:	LOOT_READY	true", -- [1938]
-			"<16:09:36> <DEBUG>		Event:	LOOT_READY	true", -- [1939]
-			"<16:10:02> <DEBUG>		Event:	LOOT_READY	true", -- [1940]
-			"<16:10:24> <DEBUG>		Event:	LOOT_READY	true", -- [1941]
-			"<16:10:24> <DEBUG>		Event:	LOOT_READY	true", -- [1942]
-			"<16:11:24> <DEBUG>		Event:	LOOT_READY	true", -- [1943]
-			"<16:11:24> <DEBUG>		Event:	LOOT_READY	true", -- [1944]
-			"<16:12:19> <DEBUG>		Event:	LOOT_READY	true", -- [1945]
-			"<16:13:13> <DEBUG>		Event:	LOOT_READY	true", -- [1946]
-			"<16:13:37> <DEBUG>		Event:	LOOT_READY	true", -- [1947]
-			"<16:14:09> <DEBUG>		Event:	LOOT_READY	true", -- [1948]
-			"<16:16:01> <DEBUG>		Event:	LOOT_READY	true", -- [1949]
-			"<16:18:06> <DEBUG>		Event:	LOOT_READY	true", -- [1950]
-			"<16:18:20> <DEBUG>		Event:	LOOT_READY	true", -- [1951]
-			"<16:18:20> <DEBUG>		Event:	LOOT_READY	true", -- [1952]
-			"<16:18:27> <DEBUG>		Event:	LOOT_READY	true", -- [1953]
-			"<16:18:42> <DEBUG>		Event:	LOOT_READY	true", -- [1954]
-			"<16:19:05> <DEBUG>		Event:	LOOT_READY	true", -- [1955]
-			"<16:19:07> <DEBUG>		Event:	LOOT_READY	true", -- [1956]
-			"<16:19:16> <DEBUG>		Event:	LOOT_READY	true", -- [1957]
-			"<16:19:44> <DEBUG>		Event:	LOOT_READY	true", -- [1958]
-			"<16:19:50> <DEBUG>		Event:	LOOT_READY	true", -- [1959]
-			"<16:20:21> <DEBUG>		Event:	LOOT_READY	true", -- [1960]
-			"<16:21:33> <DEBUG>		Event:	LOOT_READY	true", -- [1961]
-			"<16:21:33> <DEBUG>		Event:	LOOT_READY	true", -- [1962]
-			"<16:21:33> <DEBUG>		Event:	LOOT_READY	true", -- [1963]
-			"<16:21:41> <DEBUG>		Event:	LOOT_READY	true", -- [1964]
-			"<16:21:59> <DEBUG>		Event:	LOOT_READY	true", -- [1965]
-			"<16:22:04> <DEBUG>		Event:	LOOT_READY	true", -- [1966]
-			"<16:22:12> <DEBUG>		Event:	LOOT_READY	true", -- [1967]
-			"<16:22:26> <DEBUG>		Event:	LOOT_READY	true", -- [1968]
-			"<16:22:45> <DEBUG>		Event:	LOOT_READY	true", -- [1969]
-			"<16:22:51> <DEBUG>		Event:	LOOT_READY	true", -- [1970]
-			"<16:23:01> <DEBUG>		Event:	LOOT_READY	true", -- [1971]
-			"<16:23:01> <DEBUG>		Event:	LOOT_READY	true", -- [1972]
-			"<16:23:02> <DEBUG>		Event:	LOOT_READY	true", -- [1973]
-			"<16:23:09> <DEBUG>		Event:	LOOT_READY	true", -- [1974]
-			"<16:23:21> <DEBUG>		Event:	LOOT_READY	true", -- [1975]
-			"<16:23:45> <DEBUG>		Event:	LOOT_READY	true", -- [1976]
-			"<16:27:00> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1977]
-			"<16:27:00> <INFO>		UpdatePlayersData()", -- [1978]
-			"<16:27:03> <DEBUG>		GetML()", -- [1979]
-			"<16:27:39> <DEBUG>		Event:	LOOT_READY	true", -- [1980]
-			"<16:27:39> <DEBUG>		Event:	LOOT_READY	true", -- [1981]
-			"<16:27:39> <DEBUG>		Event:	LOOT_READY	true", -- [1982]
-			"<16:28:02> <DEBUG>		Event:	LOOT_READY	true", -- [1983]
-			"<16:28:03> <DEBUG>		Event:	LOOT_READY	true", -- [1984]
-			"<16:28:22> <DEBUG>		Event:	LOOT_READY	true", -- [1985]
-			"<16:28:39> <DEBUG>		Event:	LOOT_READY	true", -- [1986]
-			"<16:28:54> <DEBUG>		Event:	LOOT_READY	true", -- [1987]
-			"<16:29:22> <DEBUG>		Event:	LOOT_READY	true", -- [1988]
-			"<16:29:22> <DEBUG>		Event:	LOOT_READY	true", -- [1989]
-			"<16:31:02> <DEBUG>		Event:	LOOT_READY	true", -- [1990]
-			"<16:31:35> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1991]
-			"<16:31:35> <INFO>		UpdatePlayersData()", -- [1992]
-			"<16:31:37> <DEBUG>		GetML()", -- [1993]
-			"<16:32:42> <DEBUG>		Event:	LOOT_READY	true", -- [1994]
-			"<16:32:42> <DEBUG>		Event:	LOOT_READY	true", -- [1995]
-			"<16:33:02> <DEBUG>		Event:	LOOT_READY	true", -- [1996]
-			"<16:33:02> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	181647	|cff0070dd|Hitem:181647::::::::59:70:::::::::|h[Stabilized Plague Strain]|h|r	1	Avisar	PALADIN", -- [1997]
-			"<16:34:03> <DEBUG>		Event:	LOOT_READY	true", -- [1998]
-			"<16:34:03> <DEBUG>		Event:	LOOT_READY	true", -- [1999]
-			"<16:35:19> <DEBUG>		Event:	LOOT_READY	true", -- [2000]
-		},
-		["locale"] = "enUS",
-		["version"] = "3.4.0",
 		["oldVersion"] = "3.3.0",
+		["log"] = {
+			"<00:44:55> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1]
+			"<00:44:55> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [2]
+			"<00:44:55> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [3]
+			"<00:44:55> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [4]
+			"<00:44:55> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [5]
+			"<00:44:55> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [6]
+			"<00:44:55> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [7]
+			"<00:44:55> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [8]
+			"<00:44:55> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [9]
+			"<00:44:55> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [10]
+			"<00:44:55> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [11]
+			"<00:44:55> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [12]
+			"<00:44:56> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [13]
+			"<00:44:56> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [14]
+			"<00:44:56> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [15]
+			"<00:44:56> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [16]
+			"<00:44:56> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [17]
+			"<00:44:56> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [18]
+			"<00:44:56> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [19]
+			"<00:44:56> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [20]
+			"<00:44:56> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [21]
+			"<00:44:56> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [22]
+			"<00:44:56> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [23]
+			"<00:44:56> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [24]
+			"<00:44:56> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [25]
+			"<00:44:57> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [26]
+			"<00:44:57> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [27]
+			"<00:44:57> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [28]
+			"<00:44:57> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [29]
+			"<00:44:57> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [30]
+			"<00:44:57> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [31]
+			"<00:44:57> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [32]
+			"<00:44:57> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [33]
+			"<00:44:57> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [34]
+			"<00:44:57> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [35]
+			"<00:44:57> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [36]
+			"<00:44:57> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [37]
+			"<00:44:57> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [38]
+			"<00:44:58> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [39]
+			"<00:44:58> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [40]
+			"<00:44:58> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [41]
+			"<00:44:58> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [42]
+			"<00:44:58> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [43]
+			"<00:44:58> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [44]
+			"<00:44:58> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [45]
+			"<00:44:58> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [46]
+			"<00:44:58> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [47]
+			"<00:44:58> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [48]
+			"<00:44:58> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [49]
+			"<00:44:58> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [50]
+			"<00:44:58> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [51]
+			"<00:44:59> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [52]
+			"<00:44:59> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [53]
+			"<00:44:59> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [54]
+			"<00:44:59> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [55]
+			"<00:44:59> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [56]
+			"<00:44:59> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [57]
+			"<00:44:59> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [58]
+			"<00:44:59> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [59]
+			"<00:44:59> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [60]
+			"<00:44:59> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [61]
+			"<00:44:59> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [62]
+			"<00:44:59> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [63]
+			"<00:44:59> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [64]
+			"<00:45:00> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [65]
+			"<00:45:00> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [66]
+			"<00:45:00> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [67]
+			"<00:45:00> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [68]
+			"<00:45:00> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [69]
+			"<00:45:00> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [70]
+			"<00:45:00> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [71]
+			"<00:45:00> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [72]
+			"<00:45:00> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [73]
+			"<00:45:00> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [74]
+			"<00:45:00> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [75]
+			"<00:45:00> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [76]
+			"<00:45:00> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [77]
+			"<00:45:01> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [78]
+			"<00:45:01> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [79]
+			"<00:45:01> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [80]
+			"<00:45:01> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [81]
+			"<00:45:01> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [82]
+			"<00:45:01> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [83]
+			"<00:45:01> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [84]
+			"<00:45:01> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [85]
+			"<00:45:01> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [86]
+			"<00:45:01> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [87]
+			"<00:45:01> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [88]
+			"<00:45:01> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [89]
+			"<00:45:01> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [90]
+			"<00:45:02> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [91]
+			"<00:45:02> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [92]
+			"<00:45:02> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [93]
+			"<00:45:02> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [94]
+			"<00:45:02> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [95]
+			"<00:45:02> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [96]
+			"<00:45:02> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [97]
+			"<00:45:02> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [98]
+			"<00:45:02> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [99]
+			"<00:45:02> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [100]
+			"<00:45:02> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [101]
+			"<00:45:02> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [102]
+			"<00:45:02> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [103]
+			"<00:45:03> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [104]
+			"<00:45:03> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [105]
+			"<00:45:03> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [106]
+			"<00:45:03> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [107]
+			"<00:45:03> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [108]
+			"<00:45:03> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [109]
+			"<00:45:03> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [110]
+			"<00:45:03> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [111]
+			"<00:45:03> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [112]
+			"<00:45:03> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [113]
+			"<00:45:03> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [114]
+			"<00:45:03> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [115]
+			"<00:45:03> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [116]
+			"<00:45:04> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [117]
+			"<00:45:04> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [118]
+			"<00:45:04> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [119]
+			"<00:45:04> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [120]
+			"<00:45:04> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [121]
+			"<00:45:04> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [122]
+			"<00:45:04> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [123]
+			"<00:45:04> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [124]
+			"<00:45:04> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [125]
+			"<00:45:04> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [126]
+			"<00:45:04> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [127]
+			"<00:45:04> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [128]
+			"<00:45:04> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [129]
+			"<00:45:05> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [130]
+			"<00:45:05> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [131]
+			"<00:45:05> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [132]
+			"<00:45:05> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [133]
+			"<00:45:05> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [134]
+			"<00:45:05> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [135]
+			"<00:45:05> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [136]
+			"<00:45:05> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [137]
+			"<00:45:05> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [138]
+			"<00:45:05> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [139]
+			"<00:45:05> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [140]
+			"<00:45:05> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [141]
+			"<00:45:05> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [142]
+			"<00:45:06> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [143]
+			"<00:45:06> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [144]
+			"<00:45:06> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [145]
+			"<00:45:06> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [146]
+			"<00:45:06> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [147]
+			"<00:45:06> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [148]
+			"<00:45:06> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [149]
+			"<00:45:06> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [150]
+			"<00:45:06> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [151]
+			"<00:45:06> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [152]
+			"<00:45:06> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [153]
+			"<00:45:06> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [154]
+			"<00:45:06> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [155]
+			"<00:45:07> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [156]
+			"<00:45:07> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [157]
+			"<00:45:07> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [158]
+			"<00:45:07> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [159]
+			"<00:45:07> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [160]
+			"<00:45:07> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [161]
+			"<00:45:07> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [162]
+			"<00:45:07> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [163]
+			"<00:45:07> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [164]
+			"<00:45:07> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [165]
+			"<00:45:07> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [166]
+			"<00:45:07> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [167]
+			"<00:45:07> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [168]
+			"<00:45:08> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [169]
+			"<00:45:08> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [170]
+			"<00:45:08> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [171]
+			"<00:45:08> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [172]
+			"<00:45:08> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [173]
+			"<00:45:08> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [174]
+			"<00:45:08> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [175]
+			"<00:45:08> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [176]
+			"<00:45:08> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [177]
+			"<00:45:08> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [178]
+			"<00:45:08> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [179]
+			"<00:45:08> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [180]
+			"<00:45:08> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [181]
+			"<00:45:09> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [182]
+			"<00:45:09> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [183]
+			"<00:45:09> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [184]
+			"<00:45:09> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [185]
+			"<00:45:09> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [186]
+			"<00:45:09> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [187]
+			"<00:45:09> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [188]
+			"<00:45:09> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [189]
+			"<00:45:09> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [190]
+			"<00:45:09> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [191]
+			"<00:45:09> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [192]
+			"<00:45:09> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [193]
+			"<00:45:09> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [194]
+			"<00:45:10> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [195]
+			"<00:45:10> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [196]
+			"<00:45:10> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [197]
+			"<00:45:10> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [198]
+			"<00:45:10> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [199]
+			"<00:45:10> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [200]
+			"<00:45:10> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [201]
+			"<00:45:10> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [202]
+			"<00:45:10> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [203]
+			"<00:45:10> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [204]
+			"<00:45:10> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [205]
+			"<00:45:10> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [206]
+			"<00:45:10> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [207]
+			"<00:45:11> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [208]
+			"<00:45:11> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [209]
+			"<00:45:11> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [210]
+			"<00:45:11> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [211]
+			"<00:45:11> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [212]
+			"<00:45:11> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [213]
+			"<00:45:11> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [214]
+			"<00:45:11> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [215]
+			"<00:45:11> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [216]
+			"<00:45:11> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [217]
+			"<00:45:11> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [218]
+			"<00:45:11> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [219]
+			"<00:45:11> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [220]
+			"<00:45:12> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [221]
+			"<00:45:12> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [222]
+			"<00:45:12> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [223]
+			"<00:45:12> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [224]
+			"<00:45:12> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [225]
+			"<00:45:12> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [226]
+			"<00:45:12> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [227]
+			"<00:45:12> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [228]
+			"<00:45:12> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [229]
+			"<00:45:12> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [230]
+			"<00:45:12> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [231]
+			"<00:45:12> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [232]
+			"<00:45:12> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [233]
+			"<00:45:13> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [234]
+			"<00:45:13> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [235]
+			"<00:45:13> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [236]
+			"<00:45:13> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [237]
+			"<00:45:13> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [238]
+			"<00:45:13> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [239]
+			"<00:45:13> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [240]
+			"<00:45:13> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [241]
+			"<00:45:13> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [242]
+			"<00:45:13> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [243]
+			"<00:45:13> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [244]
+			"<00:45:13> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [245]
+			"<00:45:13> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [246]
+			"<00:45:14> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [247]
+			"<00:45:14> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [248]
+			"<00:45:14> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [249]
+			"<00:45:14> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [250]
+			"<00:45:14> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [251]
+			"<00:45:14> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [252]
+			"<00:45:14> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [253]
+			"<00:45:14> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [254]
+			"<00:45:14> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [255]
+			"<00:45:14> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [256]
+			"<00:45:14> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [257]
+			"<00:45:14> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [258]
+			"<00:45:14> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [259]
+			"<00:45:15> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [260]
+			"<00:45:15> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [261]
+			"<00:45:15> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [262]
+			"<00:45:15> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [263]
+			"<00:45:15> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [264]
+			"<00:45:15> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [265]
+			"<00:45:15> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [266]
+			"<00:45:15> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [267]
+			"<00:45:15> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [268]
+			"<00:45:15> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [269]
+			"<00:45:15> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [270]
+			"<00:45:15> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [271]
+			"<00:45:15> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [272]
+			"<00:45:16> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [273]
+			"<00:45:16> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [274]
+			"<00:45:16> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [275]
+			"<00:45:16> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [276]
+			"<00:45:16> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [277]
+			"<00:45:16> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [278]
+			"<00:45:16> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [279]
+			"<00:45:16> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [280]
+			"<00:45:16> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [281]
+			"<00:45:16> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [282]
+			"<00:45:16> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [283]
+			"<00:45:16> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [284]
+			"<00:45:16> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [285]
+			"<00:45:17> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [286]
+			"<00:45:17> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [287]
+			"<00:45:17> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [288]
+			"<00:45:17> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [289]
+			"<00:45:17> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [290]
+			"<00:45:17> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [291]
+			"<00:45:17> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [292]
+			"<00:45:17> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [293]
+			"<00:45:17> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [294]
+			"<00:45:17> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [295]
+			"<00:45:17> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [296]
+			"<00:45:17> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [297]
+			"<00:45:17> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [298]
+			"<00:45:18> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [299]
+			"<00:45:18> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [300]
+			"<00:45:18> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [301]
+			"<00:45:18> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [302]
+			"<00:45:18> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [303]
+			"<00:45:18> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [304]
+			"<00:45:18> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [305]
+			"<00:45:18> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [306]
+			"<00:45:18> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [307]
+			"<00:45:18> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [308]
+			"<00:45:18> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [309]
+			"<00:45:18> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [310]
+			"<00:45:18> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [311]
+			"<00:45:19> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [312]
+			"<00:45:19> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [313]
+			"<00:45:19> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [314]
+			"<00:45:19> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [315]
+			"<00:45:19> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [316]
+			"<00:45:19> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [317]
+			"<00:45:19> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [318]
+			"<00:45:19> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [319]
+			"<00:45:19> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [320]
+			"<00:45:19> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [321]
+			"<00:45:19> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [322]
+			"<00:45:19> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [323]
+			"<00:45:19> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [324]
+			"<00:45:20> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [325]
+			"<00:45:20> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [326]
+			"<00:45:20> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [327]
+			"<00:45:20> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [328]
+			"<00:45:20> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [329]
+			"<00:45:20> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [330]
+			"<00:45:20> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [331]
+			"<00:45:20> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [332]
+			"<00:45:20> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [333]
+			"<00:45:20> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [334]
+			"<00:45:20> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [335]
+			"<00:45:20> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [336]
+			"<00:45:20> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [337]
+			"<00:45:21> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [338]
+			"<00:45:21> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [339]
+			"<00:45:21> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [340]
+			"<00:45:21> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [341]
+			"<00:45:21> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [342]
+			"<00:45:21> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [343]
+			"<00:45:21> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [344]
+			"<00:45:21> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [345]
+			"<00:45:21> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [346]
+			"<00:45:21> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [347]
+			"<00:45:21> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [348]
+			"<00:45:21> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [349]
+			"<00:45:21> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [350]
+			"<00:45:22> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [351]
+			"<00:45:22> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [352]
+			"<00:45:22> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [353]
+			"<00:45:22> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [354]
+			"<00:45:22> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [355]
+			"<00:45:22> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [356]
+			"<00:45:22> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [357]
+			"<00:45:22> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [358]
+			"<00:45:22> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [359]
+			"<00:45:22> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [360]
+			"<00:45:22> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [361]
+			"<00:45:22> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [362]
+			"<00:45:22> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [363]
+			"<00:45:23> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [364]
+			"<00:45:23> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [365]
+			"<00:45:23> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [366]
+			"<00:45:23> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [367]
+			"<00:45:23> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [368]
+			"<00:45:23> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [369]
+			"<00:45:23> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [370]
+			"<00:45:23> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [371]
+			"<00:45:23> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [372]
+			"<00:45:23> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [373]
+			"<00:45:23> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [374]
+			"<00:45:23> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [375]
+			"<00:45:23> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [376]
+			"<00:45:24> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [377]
+			"<00:45:24> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [378]
+			"<00:45:24> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [379]
+			"<00:45:24> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [380]
+			"<00:45:24> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [381]
+			"<00:45:24> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [382]
+			"<00:45:24> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [383]
+			"<00:45:24> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [384]
+			"<00:45:24> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [385]
+			"<00:45:24> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [386]
+			"<00:45:24> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [387]
+			"<00:45:24> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [388]
+			"<00:45:24> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [389]
+			"<00:45:25> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [390]
+			"<00:45:25> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [391]
+			"<00:45:25> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [392]
+			"<00:45:25> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [393]
+			"<00:45:25> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [394]
+			"<00:45:25> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [395]
+			"<00:45:25> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [396]
+			"<00:45:25> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [397]
+			"<00:45:25> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [398]
+			"<00:45:25> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [399]
+			"<00:45:25> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [400]
+			"<00:45:25> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [401]
+			"<00:45:25> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [402]
+			"<00:45:26> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [403]
+			"<00:45:26> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [404]
+			"<00:45:26> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [405]
+			"<00:45:26> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [406]
+			"<00:45:26> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [407]
+			"<00:45:26> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [408]
+			"<00:45:26> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [409]
+			"<00:45:26> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [410]
+			"<00:45:26> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [411]
+			"<00:45:26> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [412]
+			"<00:45:26> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [413]
+			"<00:45:26> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [414]
+			"<00:45:26> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [415]
+			"<00:45:27> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [416]
+			"<00:45:27> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [417]
+			"<00:45:27> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [418]
+			"<00:45:27> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [419]
+			"<00:45:27> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [420]
+			"<00:45:27> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [421]
+			"<00:45:27> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [422]
+			"<00:45:27> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [423]
+			"<00:45:27> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [424]
+			"<00:45:27> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [425]
+			"<00:45:27> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [426]
+			"<00:45:27> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [427]
+			"<00:45:27> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [428]
+			"<00:45:28> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [429]
+			"<00:45:28> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [430]
+			"<00:45:28> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [431]
+			"<00:45:28> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [432]
+			"<00:45:28> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [433]
+			"<00:45:28> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [434]
+			"<00:45:28> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [435]
+			"<00:45:28> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [436]
+			"<00:45:28> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [437]
+			"<00:45:28> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [438]
+			"<00:45:28> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [439]
+			"<00:45:28> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [440]
+			"<00:45:28> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [441]
+			"<00:45:29> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [442]
+			"<00:45:29> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [443]
+			"<00:45:29> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [444]
+			"<00:45:29> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [445]
+			"<00:45:29> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [446]
+			"<00:45:29> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [447]
+			"<00:45:29> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [448]
+			"<00:45:29> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [449]
+			"<00:45:29> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [450]
+			"<00:45:29> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [451]
+			"<00:45:29> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [452]
+			"<00:45:29> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [453]
+			"<00:45:29> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [454]
+			"<00:45:30> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [455]
+			"<00:45:30> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [456]
+			"<00:45:30> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [457]
+			"<00:45:30> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [458]
+			"<00:45:30> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [459]
+			"<00:45:30> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [460]
+			"<00:45:30> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [461]
+			"<00:45:30> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [462]
+			"<00:45:30> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [463]
+			"<00:45:30> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [464]
+			"<00:45:30> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [465]
+			"<00:45:30> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [466]
+			"<00:45:31> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [467]
+			"<00:45:31> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [468]
+			"<00:45:31> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [469]
+			"<00:45:31> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [470]
+			"<00:45:31> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [471]
+			"<00:45:31> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [472]
+			"<00:45:31> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [473]
+			"<00:45:31> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [474]
+			"<00:45:31> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [475]
+			"<00:45:31> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [476]
+			"<00:45:31> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [477]
+			"<00:45:31> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [478]
+			"<00:45:31> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [479]
+			"<00:45:32> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [480]
+			"<00:45:32> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [481]
+			"<00:45:32> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [482]
+			"<00:45:32> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [483]
+			"<00:45:32> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [484]
+			"<00:45:32> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [485]
+			"<00:45:32> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [486]
+			"<00:45:32> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [487]
+			"<00:45:32> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [488]
+			"<00:45:32> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [489]
+			"<00:45:32> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [490]
+			"<00:45:32> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [491]
+			"<00:45:32> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [492]
+			"<00:45:33> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [493]
+			"<00:45:33> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [494]
+			"<00:45:33> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [495]
+			"<00:45:33> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [496]
+			"<00:45:33> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [497]
+			"<00:45:33> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [498]
+			"<00:45:33> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [499]
+			"<00:45:33> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [500]
+			"<00:45:33> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [501]
+			"<00:45:33> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [502]
+			"<00:45:33> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [503]
+			"<00:45:33> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [504]
+			"<00:45:33> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [505]
+			"<00:45:34> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [506]
+			"<00:45:34> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [507]
+			"<00:45:34> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [508]
+			"<00:45:34> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [509]
+			"<00:45:34> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [510]
+			"<00:45:34> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [511]
+			"<00:45:34> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [512]
+			"<00:45:34> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [513]
+			"<00:45:34> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [514]
+			"<00:45:34> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [515]
+			"<00:45:34> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [516]
+			"<00:45:34> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [517]
+			"<00:45:34> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [518]
+			"<00:45:35> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [519]
+			"<00:45:35> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [520]
+			"<00:45:35> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [521]
+			"<00:45:35> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [522]
+			"<00:45:35> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [523]
+			"<00:45:35> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [524]
+			"<00:45:35> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [525]
+			"<00:45:35> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [526]
+			"<00:45:35> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [527]
+			"<00:45:35> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [528]
+			"<00:45:35> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [529]
+			"<00:45:35> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [530]
+			"<00:45:35> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [531]
+			"<00:45:36> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [532]
+			"<00:45:36> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [533]
+			"<00:45:36> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [534]
+			"<00:45:36> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [535]
+			"<00:45:36> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [536]
+			"<00:45:36> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [537]
+			"<00:45:36> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [538]
+			"<00:45:36> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [539]
+			"<00:45:36> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [540]
+			"<00:45:36> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [541]
+			"<00:45:36> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [542]
+			"<00:45:36> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [543]
+			"<00:45:36> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [544]
+			"<00:45:37> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [545]
+			"<00:45:37> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [546]
+			"<00:45:37> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [547]
+			"<00:45:37> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [548]
+			"<00:45:37> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [549]
+			"<00:45:37> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [550]
+			"<00:45:37> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [551]
+			"<00:45:37> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [552]
+			"<00:45:37> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [553]
+			"<00:45:37> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [554]
+			"<00:45:37> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [555]
+			"<00:45:37> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [556]
+			"<00:45:37> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [557]
+			"<00:45:38> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [558]
+			"<00:45:38> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [559]
+			"<00:45:38> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [560]
+			"<00:45:38> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [561]
+			"<00:45:38> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [562]
+			"<00:45:38> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [563]
+			"<00:45:38> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [564]
+			"<00:45:38> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [565]
+			"<00:45:38> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [566]
+			"<00:45:38> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [567]
+			"<00:45:38> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [568]
+			"<00:45:38> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [569]
+			"<00:45:38> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [570]
+			"<00:45:39> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [571]
+			"<00:45:39> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [572]
+			"<00:45:39> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [573]
+			"<00:45:39> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [574]
+			"<00:45:39> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [575]
+			"<00:45:39> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [576]
+			"<00:45:39> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [577]
+			"<00:45:39> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [578]
+			"<00:45:39> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [579]
+			"<00:45:39> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [580]
+			"<00:45:39> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [581]
+			"<00:45:39> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [582]
+			"<00:45:39> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [583]
+			"<00:45:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [584]
+			"<00:45:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [585]
+			"<00:45:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [586]
+			"<00:45:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [587]
+			"<00:45:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [588]
+			"<00:45:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [589]
+			"<00:45:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [590]
+			"<00:45:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [591]
+			"<00:45:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [592]
+			"<00:45:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [593]
+			"<00:45:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [594]
+			"<00:45:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [595]
+			"<00:45:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [596]
+			"<00:45:41> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [597]
+			"<00:45:41> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [598]
+			"<00:45:41> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [599]
+			"<00:45:41> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [600]
+			"<00:45:41> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [601]
+			"<00:45:41> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [602]
+			"<00:45:41> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [603]
+			"<00:45:41> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [604]
+			"<00:45:41> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [605]
+			"<00:45:41> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [606]
+			"<00:45:41> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [607]
+			"<00:45:41> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [608]
+			"<00:45:41> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [609]
+			"<00:45:42> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [610]
+			"<00:45:42> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [611]
+			"<00:45:42> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [612]
+			"<00:45:42> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [613]
+			"<00:45:42> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [614]
+			"<00:45:42> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [615]
+			"<00:45:42> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [616]
+			"<00:45:42> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [617]
+			"<00:45:42> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [618]
+			"<00:45:42> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [619]
+			"<00:45:42> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [620]
+			"<00:45:42> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [621]
+			"<00:45:42> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [622]
+			"<00:45:43> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [623]
+			"<00:45:43> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [624]
+			"<00:45:43> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [625]
+			"<00:45:43> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [626]
+			"<00:45:43> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [627]
+			"<00:45:43> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [628]
+			"<00:45:43> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [629]
+			"<00:45:43> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [630]
+			"<00:45:43> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [631]
+			"<00:45:43> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [632]
+			"<00:45:43> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [633]
+			"<00:45:43> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [634]
+			"<00:45:43> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [635]
+			"<00:45:44> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [636]
+			"<00:45:44> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [637]
+			"<00:45:44> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [638]
+			"<00:45:44> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [639]
+			"<00:45:44> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [640]
+			"<00:45:44> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [641]
+			"<00:45:44> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [642]
+			"<00:45:44> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [643]
+			"<00:45:44> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [644]
+			"<00:45:44> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [645]
+			"<00:45:44> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [646]
+			"<00:45:44> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [647]
+			"<00:45:44> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [648]
+			"<00:45:45> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [649]
+			"<00:45:45> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [650]
+			"<00:45:45> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [651]
+			"<00:45:45> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [652]
+			"<00:45:45> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [653]
+			"<00:45:45> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [654]
+			"<00:45:45> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [655]
+			"<00:45:45> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [656]
+			"<00:45:45> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [657]
+			"<00:45:45> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [658]
+			"<00:45:45> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [659]
+			"<00:45:45> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [660]
+			"<00:45:45> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [661]
+			"<00:45:46> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [662]
+			"<00:45:46> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [663]
+			"<00:45:46> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [664]
+			"<00:45:46> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [665]
+			"<00:45:46> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [666]
+			"<00:45:46> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [667]
+			"<00:45:46> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [668]
+			"<00:45:46> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [669]
+			"<00:45:46> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [670]
+			"<00:45:46> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [671]
+			"<00:45:46> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [672]
+			"<00:45:46> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [673]
+			"<00:45:46> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [674]
+			"<00:45:47> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [675]
+			"<00:45:47> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [676]
+			"<00:45:47> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [677]
+			"<00:45:47> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [678]
+			"<00:45:47> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [679]
+			"<00:45:47> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [680]
+			"<00:45:47> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [681]
+			"<00:45:47> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [682]
+			"<00:45:47> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [683]
+			"<00:45:47> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [684]
+			"<00:45:47> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [685]
+			"<00:45:47> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [686]
+			"<00:45:47> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [687]
+			"<00:45:48> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [688]
+			"<00:45:48> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [689]
+			"<00:45:48> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [690]
+			"<00:45:48> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [691]
+			"<00:45:48> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [692]
+			"<00:45:48> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [693]
+			"<00:45:48> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [694]
+			"<00:45:48> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [695]
+			"<00:45:48> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [696]
+			"<00:45:48> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [697]
+			"<00:45:48> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [698]
+			"<00:45:48> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [699]
+			"<00:45:48> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [700]
+			"<00:45:49> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [701]
+			"<00:45:49> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [702]
+			"<00:45:49> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [703]
+			"<00:45:49> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [704]
+			"<00:45:49> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [705]
+			"<00:45:49> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [706]
+			"<00:45:49> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [707]
+			"<00:45:49> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [708]
+			"<00:45:49> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [709]
+			"<00:45:49> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [710]
+			"<00:45:49> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [711]
+			"<00:45:49> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [712]
+			"<00:45:49> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [713]
+			"<00:45:50> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [714]
+			"<00:45:50> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [715]
+			"<00:45:50> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [716]
+			"<00:45:50> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [717]
+			"<00:45:50> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [718]
+			"<00:45:50> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [719]
+			"<00:45:51> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [720]
+			"<00:45:51> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [721]
+			"<00:45:51> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [722]
+			"<00:45:51> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [723]
+			"<00:45:51> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [724]
+			"<00:45:51> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [725]
+			"<00:45:51> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [726]
+			"<00:45:51> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [727]
+			"<00:45:51> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [728]
+			"<00:45:51> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [729]
+			"<00:45:51> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [730]
+			"<00:45:51> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [731]
+			"<00:45:51> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [732]
+			"<00:45:52> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [733]
+			"<00:45:52> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [734]
+			"<00:45:52> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [735]
+			"<00:45:52> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [736]
+			"<00:45:52> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [737]
+			"<00:45:52> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [738]
+			"<00:45:52> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [739]
+			"<00:45:52> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [740]
+			"<00:45:52> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [741]
+			"<00:45:52> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [742]
+			"<00:45:52> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [743]
+			"<00:45:52> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [744]
+			"<00:45:52> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [745]
+			"<00:45:53> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [746]
+			"<00:45:53> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [747]
+			"<00:45:53> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [748]
+			"<00:45:53> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [749]
+			"<00:45:53> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [750]
+			"<00:45:53> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [751]
+			"<00:45:53> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [752]
+			"<00:45:53> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [753]
+			"<00:45:53> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [754]
+			"<00:45:53> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [755]
+			"<00:45:53> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [756]
+			"<00:45:53> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [757]
+			"<00:45:53> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [758]
+			"<00:45:54> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [759]
+			"<00:45:54> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [760]
+			"<00:45:54> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [761]
+			"<00:45:54> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [762]
+			"<00:45:54> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [763]
+			"<00:45:54> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [764]
+			"<00:45:54> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [765]
+			"<00:45:54> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [766]
+			"<00:45:54> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [767]
+			"<00:45:54> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [768]
+			"<00:45:54> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [769]
+			"<00:45:54> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [770]
+			"<00:45:54> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [771]
+			"<00:45:55> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [772]
+			"<00:45:55> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [773]
+			"<00:45:55> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [774]
+			"<00:45:55> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [775]
+			"<00:45:55> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [776]
+			"<00:45:55> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [777]
+			"<00:45:55> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [778]
+			"<00:45:55> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [779]
+			"<00:45:55> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [780]
+			"<00:45:55> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [781]
+			"<00:45:55> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [782]
+			"<00:45:55> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [783]
+			"<00:45:55> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [784]
+			"<00:45:56> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [785]
+			"<00:45:56> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [786]
+			"<00:45:56> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [787]
+			"<00:45:56> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [788]
+			"<00:45:56> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [789]
+			"<00:45:56> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [790]
+			"<00:45:56> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [791]
+			"<00:45:56> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [792]
+			"<00:45:56> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [793]
+			"<00:45:56> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [794]
+			"<00:45:56> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [795]
+			"<00:45:56> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [796]
+			"<00:45:56> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [797]
+			"<00:45:57> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [798]
+			"<00:45:57> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [799]
+			"<00:45:57> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [800]
+			"<00:45:57> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [801]
+			"<00:45:57> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [802]
+			"<00:45:57> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [803]
+			"<00:45:57> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [804]
+			"<00:45:57> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [805]
+			"<00:45:57> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [806]
+			"<00:45:57> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [807]
+			"<00:45:57> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [808]
+			"<00:45:57> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [809]
+			"<00:45:57> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [810]
+			"<00:45:58> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [811]
+			"<00:45:58> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [812]
+			"<00:45:58> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [813]
+			"<00:45:58> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [814]
+			"<00:45:58> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [815]
+			"<00:45:58> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [816]
+			"<00:45:58> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [817]
+			"<00:45:58> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [818]
+			"<00:45:58> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [819]
+			"<00:45:58> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [820]
+			"<00:45:58> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [821]
+			"<00:45:58> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [822]
+			"<00:45:58> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [823]
+			"<00:45:59> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [824]
+			"<00:45:59> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [825]
+			"<00:45:59> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [826]
+			"<00:45:59> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [827]
+			"<00:45:59> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [828]
+			"<00:45:59> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [829]
+			"<00:45:59> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [830]
+			"<00:45:59> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [831]
+			"<00:45:59> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [832]
+			"<00:45:59> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [833]
+			"<00:45:59> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [834]
+			"<00:45:59> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [835]
+			"<00:45:59> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [836]
+			"<00:46:00> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [837]
+			"<00:46:00> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [838]
+			"<00:46:00> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [839]
+			"<00:46:00> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [840]
+			"<00:46:00> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [841]
+			"<00:46:00> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [842]
+			"<00:46:00> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [843]
+			"<00:46:00> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [844]
+			"<00:46:00> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [845]
+			"<00:46:00> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [846]
+			"<00:46:00> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [847]
+			"<00:46:00> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [848]
+			"<00:46:00> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [849]
+			"<00:46:01> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [850]
+			"<00:46:01> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [851]
+			"<00:46:01> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [852]
+			"<00:46:01> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [853]
+			"<00:46:01> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [854]
+			"<00:46:01> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [855]
+			"<00:46:01> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [856]
+			"<00:46:01> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [857]
+			"<00:46:01> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [858]
+			"<00:46:01> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [859]
+			"<00:46:01> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [860]
+			"<00:46:01> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [861]
+			"<00:46:01> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [862]
+			"<00:46:02> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [863]
+			"<00:46:02> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [864]
+			"<00:46:02> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [865]
+			"<00:46:02> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [866]
+			"<00:46:02> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [867]
+			"<00:46:02> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [868]
+			"<00:46:02> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [869]
+			"<00:46:02> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [870]
+			"<00:46:02> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [871]
+			"<00:46:02> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [872]
+			"<00:46:02> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [873]
+			"<00:46:02> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [874]
+			"<00:46:02> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [875]
+			"<00:46:03> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [876]
+			"<00:46:03> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [877]
+			"<00:46:03> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [878]
+			"<00:46:03> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [879]
+			"<00:46:03> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [880]
+			"<00:46:03> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [881]
+			"<00:46:03> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [882]
+			"<00:46:03> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [883]
+			"<00:46:03> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [884]
+			"<00:46:03> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [885]
+			"<00:46:03> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [886]
+			"<00:46:03> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [887]
+			"<00:46:03> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [888]
+			"<00:46:04> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [889]
+			"<00:46:04> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [890]
+			"<00:46:04> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [891]
+			"<00:46:04> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [892]
+			"<00:46:04> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [893]
+			"<00:46:04> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [894]
+			"<00:46:04> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [895]
+			"<00:46:04> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [896]
+			"<00:46:04> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [897]
+			"<00:46:04> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [898]
+			"<00:46:04> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [899]
+			"<00:46:04> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [900]
+			"<00:46:04> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [901]
+			"<00:46:05> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [902]
+			"<00:46:05> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [903]
+			"<00:46:05> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [904]
+			"<00:46:05> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [905]
+			"<00:46:05> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [906]
+			"<00:46:05> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [907]
+			"<00:46:05> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [908]
+			"<00:46:05> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [909]
+			"<00:46:05> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [910]
+			"<00:46:05> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [911]
+			"<00:46:05> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [912]
+			"<00:46:05> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [913]
+			"<00:46:05> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [914]
+			"<00:46:06> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [915]
+			"<00:46:06> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [916]
+			"<00:46:06> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [917]
+			"<00:46:06> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [918]
+			"<00:46:06> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [919]
+			"<00:46:06> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [920]
+			"<00:46:06> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [921]
+			"<00:46:06> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [922]
+			"<00:46:06> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [923]
+			"<00:46:06> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [924]
+			"<00:46:06> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [925]
+			"<00:46:06> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [926]
+			"<00:46:06> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [927]
+			"<00:46:07> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [928]
+			"<00:46:07> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [929]
+			"<00:46:07> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [930]
+			"<00:46:07> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [931]
+			"<00:46:07> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [932]
+			"<00:46:07> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [933]
+			"<00:46:07> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [934]
+			"<00:46:07> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [935]
+			"<00:46:07> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [936]
+			"<00:46:07> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [937]
+			"<00:46:07> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [938]
+			"<00:46:07> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [939]
+			"<00:46:07> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [940]
+			"<00:46:08> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [941]
+			"<00:46:08> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [942]
+			"<00:46:08> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [943]
+			"<00:46:08> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [944]
+			"<00:46:08> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [945]
+			"<00:46:08> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [946]
+			"<00:46:08> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [947]
+			"<00:46:08> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [948]
+			"<00:46:08> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [949]
+			"<00:46:08> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [950]
+			"<00:46:08> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [951]
+			"<00:46:08> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [952]
+			"<00:46:08> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [953]
+			"<00:46:09> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [954]
+			"<00:46:09> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [955]
+			"<00:46:09> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [956]
+			"<00:46:09> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [957]
+			"<00:46:09> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [958]
+			"<00:46:09> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [959]
+			"<00:46:09> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [960]
+			"<00:46:09> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [961]
+			"<00:46:09> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [962]
+			"<00:46:09> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [963]
+			"<00:46:09> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [964]
+			"<00:46:09> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [965]
+			"<00:46:09> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [966]
+			"<00:46:10> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [967]
+			"<00:46:10> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [968]
+			"<00:46:10> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [969]
+			"<00:46:10> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [970]
+			"<00:46:10> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [971]
+			"<00:46:10> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [972]
+			"<00:46:10> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [973]
+			"<00:46:10> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [974]
+			"<00:46:10> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [975]
+			"<00:46:10> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [976]
+			"<00:46:10> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [977]
+			"<00:46:10> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [978]
+			"<00:46:10> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [979]
+			"<00:46:11> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [980]
+			"<00:46:11> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [981]
+			"<00:46:11> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [982]
+			"<00:46:11> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [983]
+			"<00:46:11> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [984]
+			"<00:46:11> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [985]
+			"<00:46:11> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [986]
+			"<00:46:11> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [987]
+			"<00:46:11> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [988]
+			"<00:46:11> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [989]
+			"<00:46:11> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [990]
+			"<00:46:11> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [991]
+			"<00:46:11> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [992]
+			"<00:46:12> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [993]
+			"<00:46:12> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [994]
+			"<00:46:12> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [995]
+			"<00:46:12> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [996]
+			"<00:46:12> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [997]
+			"<00:46:12> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [998]
+			"<00:46:12> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [999]
+			"<00:46:12> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1000]
+			"<00:46:12> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1001]
+			"<00:46:12> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1002]
+			"<00:46:12> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1003]
+			"<00:46:12> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1004]
+			"<00:46:12> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1005]
+			"<00:46:13> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1006]
+			"<00:46:13> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1007]
+			"<00:46:13> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1008]
+			"<00:46:13> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1009]
+			"<00:46:13> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1010]
+			"<00:46:13> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1011]
+			"<00:46:13> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1012]
+			"<00:46:13> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1013]
+			"<00:46:13> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1014]
+			"<00:46:13> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1015]
+			"<00:46:13> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1016]
+			"<00:46:13> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1017]
+			"<00:46:13> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1018]
+			"<00:46:14> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1019]
+			"<00:46:14> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1020]
+			"<00:46:14> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1021]
+			"<00:46:14> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1022]
+			"<00:46:14> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1023]
+			"<00:46:14> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1024]
+			"<00:46:14> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1025]
+			"<00:46:14> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1026]
+			"<00:46:14> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1027]
+			"<00:46:14> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1028]
+			"<00:46:14> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1029]
+			"<00:46:14> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1030]
+			"<00:46:14> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1031]
+			"<00:46:15> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1032]
+			"<00:46:15> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1033]
+			"<00:46:15> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1034]
+			"<00:46:15> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1035]
+			"<00:46:15> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1036]
+			"<00:46:15> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1037]
+			"<00:46:15> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1038]
+			"<00:46:15> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1039]
+			"<00:46:15> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1040]
+			"<00:46:15> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1041]
+			"<00:46:15> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1042]
+			"<00:46:15> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1043]
+			"<00:46:15> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1044]
+			"<00:46:16> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1045]
+			"<00:46:16> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1046]
+			"<00:46:16> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1047]
+			"<00:46:16> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1048]
+			"<00:46:16> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1049]
+			"<00:46:16> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1050]
+			"<00:46:16> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1051]
+			"<00:46:16> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1052]
+			"<00:46:16> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1053]
+			"<00:46:16> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1054]
+			"<00:46:16> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1055]
+			"<00:46:16> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1056]
+			"<00:46:16> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1057]
+			"<00:46:17> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1058]
+			"<00:46:17> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1059]
+			"<00:46:17> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1060]
+			"<00:46:17> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1061]
+			"<00:46:17> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1062]
+			"<00:46:17> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1063]
+			"<00:46:17> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1064]
+			"<00:46:17> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1065]
+			"<00:46:17> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1066]
+			"<00:46:17> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1067]
+			"<00:46:17> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1068]
+			"<00:46:17> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1069]
+			"<00:46:17> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1070]
+			"<00:46:18> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1071]
+			"<00:46:18> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1072]
+			"<00:46:18> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1073]
+			"<00:46:18> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1074]
+			"<00:46:18> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1075]
+			"<00:46:18> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1076]
+			"<00:46:18> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1077]
+			"<00:46:18> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1078]
+			"<00:46:18> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1079]
+			"<00:46:18> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1080]
+			"<00:46:18> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1081]
+			"<00:46:18> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1082]
+			"<00:46:18> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1083]
+			"<00:46:19> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1084]
+			"<00:46:19> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1085]
+			"<00:46:19> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1086]
+			"<00:46:19> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1087]
+			"<00:46:19> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1088]
+			"<00:46:19> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1089]
+			"<00:46:19> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1090]
+			"<00:46:19> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1091]
+			"<00:46:20> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1092]
+			"<00:46:20> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1093]
+			"<00:46:20> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1094]
+			"<00:46:20> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1095]
+			"<00:46:20> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1096]
+			"<00:46:20> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1097]
+			"<00:46:20> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1098]
+			"<00:46:20> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1099]
+			"<00:46:20> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1100]
+			"<00:46:20> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1101]
+			"<00:46:20> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1102]
+			"<00:46:20> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1103]
+			"<00:46:20> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1104]
+			"<00:46:21> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1105]
+			"<00:46:21> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1106]
+			"<00:46:21> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1107]
+			"<00:46:21> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1108]
+			"<00:46:21> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1109]
+			"<00:46:21> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1110]
+			"<00:46:21> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1111]
+			"<00:46:21> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1112]
+			"<00:46:21> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1113]
+			"<00:46:21> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1114]
+			"<00:46:21> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1115]
+			"<00:46:21> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1116]
+			"<00:46:21> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1117]
+			"<00:46:22> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1118]
+			"<00:46:22> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1119]
+			"<00:46:22> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1120]
+			"<00:46:22> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1121]
+			"<00:46:22> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1122]
+			"<00:46:22> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1123]
+			"<00:46:22> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1124]
+			"<00:46:22> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1125]
+			"<00:46:22> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1126]
+			"<00:46:22> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1127]
+			"<00:46:22> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1128]
+			"<00:46:22> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1129]
+			"<00:46:22> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1130]
+			"<00:46:23> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1131]
+			"<00:46:23> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1132]
+			"<00:46:23> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1133]
+			"<00:46:23> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1134]
+			"<00:46:23> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1135]
+			"<00:46:23> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1136]
+			"<00:46:23> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1137]
+			"<00:46:23> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1138]
+			"<00:46:23> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1139]
+			"<00:46:23> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1140]
+			"<00:46:23> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1141]
+			"<00:46:23> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1142]
+			"<00:46:23> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1143]
+			"<00:46:24> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1144]
+			"<00:46:24> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1145]
+			"<00:46:24> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1146]
+			"<00:46:24> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1147]
+			"<00:46:24> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1148]
+			"<00:46:24> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1149]
+			"<00:46:24> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1150]
+			"<00:46:24> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1151]
+			"<00:46:24> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1152]
+			"<00:46:24> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1153]
+			"<00:46:24> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1154]
+			"<00:46:24> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1155]
+			"<00:46:24> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1156]
+			"<00:46:25> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1157]
+			"<00:46:25> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1158]
+			"<00:46:25> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1159]
+			"<00:46:25> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1160]
+			"<00:46:25> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1161]
+			"<00:46:25> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1162]
+			"<00:46:25> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1163]
+			"<00:46:25> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1164]
+			"<00:46:25> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1165]
+			"<00:46:25> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1166]
+			"<00:46:25> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1167]
+			"<00:46:25> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1168]
+			"<00:46:25> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1169]
+			"<00:46:26> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1170]
+			"<00:46:26> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1171]
+			"<00:46:26> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1172]
+			"<00:46:26> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1173]
+			"<00:46:26> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1174]
+			"<00:46:26> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1175]
+			"<00:46:26> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1176]
+			"<00:46:26> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1177]
+			"<00:46:26> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1178]
+			"<00:46:26> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1179]
+			"<00:46:26> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1180]
+			"<00:46:26> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1181]
+			"<00:46:26> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1182]
+			"<00:46:27> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1183]
+			"<00:46:27> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1184]
+			"<00:46:27> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1185]
+			"<00:46:27> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1186]
+			"<00:46:27> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1187]
+			"<00:46:27> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1188]
+			"<00:46:27> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1189]
+			"<00:46:27> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1190]
+			"<00:46:27> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1191]
+			"<00:46:27> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1192]
+			"<00:46:27> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1193]
+			"<00:46:27> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1194]
+			"<00:46:27> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1195]
+			"<00:46:28> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1196]
+			"<00:46:28> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1197]
+			"<00:46:28> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1198]
+			"<00:46:28> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1199]
+			"<00:46:28> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1200]
+			"<00:46:28> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1201]
+			"<00:46:28> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1202]
+			"<00:46:28> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1203]
+			"<00:46:28> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1204]
+			"<00:46:28> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1205]
+			"<00:46:28> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1206]
+			"<00:46:28> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1207]
+			"<00:46:28> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1208]
+			"<00:46:29> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1209]
+			"<00:46:29> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1210]
+			"<00:46:29> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1211]
+			"<00:46:29> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1212]
+			"<00:46:29> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1213]
+			"<00:46:29> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1214]
+			"<00:46:29> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1215]
+			"<00:46:29> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1216]
+			"<00:46:29> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1217]
+			"<00:46:29> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1218]
+			"<00:46:29> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1219]
+			"<00:46:29> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1220]
+			"<00:46:29> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1221]
+			"<00:46:30> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1222]
+			"<00:46:30> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1223]
+			"<00:46:30> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1224]
+			"<00:46:30> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1225]
+			"<00:46:30> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1226]
+			"<00:46:30> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1227]
+			"<00:46:30> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1228]
+			"<00:46:30> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1229]
+			"<00:46:30> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1230]
+			"<00:46:30> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1231]
+			"<00:46:30> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1232]
+			"<00:46:30> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1233]
+			"<00:46:30> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1234]
+			"<00:46:31> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1235]
+			"<00:46:31> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1236]
+			"<00:46:31> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1237]
+			"<00:46:31> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1238]
+			"<00:46:31> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1239]
+			"<00:46:31> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1240]
+			"<00:46:31> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1241]
+			"<00:46:31> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1242]
+			"<00:46:31> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1243]
+			"<00:46:31> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1244]
+			"<00:46:31> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1245]
+			"<00:46:31> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1246]
+			"<00:46:31> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1247]
+			"<00:46:32> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1248]
+			"<00:46:32> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1249]
+			"<00:46:32> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1250]
+			"<00:46:32> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1251]
+			"<00:46:32> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1252]
+			"<00:46:32> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1253]
+			"<00:46:32> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1254]
+			"<00:46:32> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1255]
+			"<00:46:32> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1256]
+			"<00:46:32> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1257]
+			"<00:46:32> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1258]
+			"<00:46:32> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1259]
+			"<00:46:32> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1260]
+			"<00:46:33> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1261]
+			"<00:46:33> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1262]
+			"<00:46:33> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1263]
+			"<00:46:33> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1264]
+			"<00:46:33> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1265]
+			"<00:46:33> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1266]
+			"<00:46:33> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1267]
+			"<00:46:33> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1268]
+			"<00:46:33> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1269]
+			"<00:46:33> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1270]
+			"<00:46:33> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1271]
+			"<00:46:33> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1272]
+			"<00:46:33> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1273]
+			"<00:46:34> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1274]
+			"<00:46:34> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1275]
+			"<00:46:34> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1276]
+			"<00:46:34> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1277]
+			"<00:46:34> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1278]
+			"<00:46:34> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1279]
+			"<00:46:34> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1280]
+			"<00:46:34> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1281]
+			"<00:46:34> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1282]
+			"<00:46:34> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1283]
+			"<00:46:34> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1284]
+			"<00:46:34> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1285]
+			"<00:46:34> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1286]
+			"<00:46:35> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1287]
+			"<00:46:35> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1288]
+			"<00:46:35> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1289]
+			"<00:46:35> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1290]
+			"<00:46:35> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1291]
+			"<00:46:35> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1292]
+			"<00:46:35> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1293]
+			"<00:46:35> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1294]
+			"<00:46:35> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1295]
+			"<00:46:35> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1296]
+			"<00:46:35> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1297]
+			"<00:46:35> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1298]
+			"<00:46:35> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1299]
+			"<00:46:36> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1300]
+			"<00:46:36> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1301]
+			"<00:46:36> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1302]
+			"<00:46:36> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1303]
+			"<00:46:36> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1304]
+			"<00:46:36> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1305]
+			"<00:46:36> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1306]
+			"<00:46:36> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1307]
+			"<00:46:36> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1308]
+			"<00:46:36> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1309]
+			"<00:46:36> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1310]
+			"<00:46:36> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1311]
+			"<00:46:36> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1312]
+			"<00:46:37> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1313]
+			"<00:46:37> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1314]
+			"<00:46:37> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1315]
+			"<00:46:37> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1316]
+			"<00:46:37> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1317]
+			"<00:46:37> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1318]
+			"<00:46:37> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1319]
+			"<00:46:37> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1320]
+			"<00:46:37> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1321]
+			"<00:46:37> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1322]
+			"<00:46:37> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1323]
+			"<00:46:37> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1324]
+			"<00:46:37> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1325]
+			"<00:46:38> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1326]
+			"<00:46:38> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1327]
+			"<00:46:38> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1328]
+			"<00:46:38> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1329]
+			"<00:46:38> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1330]
+			"<00:46:38> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1331]
+			"<00:46:38> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1332]
+			"<00:46:38> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1333]
+			"<00:46:38> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1334]
+			"<00:46:38> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1335]
+			"<00:46:38> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1336]
+			"<00:46:38> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1337]
+			"<00:46:38> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1338]
+			"<00:46:39> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1339]
+			"<00:46:39> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1340]
+			"<00:46:39> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1341]
+			"<00:46:39> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1342]
+			"<00:46:39> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1343]
+			"<00:46:39> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1344]
+			"<00:46:39> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1345]
+			"<00:46:39> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1346]
+			"<00:46:39> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1347]
+			"<00:46:39> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1348]
+			"<00:46:39> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1349]
+			"<00:46:39> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1350]
+			"<00:46:39> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1351]
+			"<00:46:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1352]
+			"<00:46:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1353]
+			"<00:46:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1354]
+			"<00:46:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1355]
+			"<00:46:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1356]
+			"<00:46:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1357]
+			"<00:46:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1358]
+			"<00:46:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1359]
+			"<00:46:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1360]
+			"<00:46:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1361]
+			"<00:46:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1362]
+			"<00:46:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1363]
+			"<00:46:40> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1364]
+			"<00:46:41> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1365]
+			"<00:46:41> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1366]
+			"<00:46:41> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1367]
+			"<00:46:41> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1368]
+			"<00:46:41> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1369]
+			"<00:46:41> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1370]
+			"<00:46:41> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1371]
+			"<00:46:41> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1372]
+			"<00:46:41> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1373]
+			"<00:46:41> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1374]
+			"<00:46:41> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1375]
+			"<00:46:41> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1376]
+			"<00:46:41> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1377]
+			"<00:46:42> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1378]
+			"<00:46:42> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1379]
+			"<00:46:42> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1380]
+			"<00:46:42> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1381]
+			"<00:46:42> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1382]
+			"<00:46:42> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1383]
+			"<00:46:42> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1384]
+			"<00:46:42> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1385]
+			"<00:46:42> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1386]
+			"<00:46:42> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1387]
+			"<00:46:42> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1388]
+			"<00:46:42> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1389]
+			"<00:46:42> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1390]
+			"<00:46:43> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1391]
+			"<00:46:43> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1392]
+			"<00:46:43> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1393]
+			"<00:46:43> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1394]
+			"<00:46:43> <DEBUG>		GetRaidRosterInfo returned nil in UpdateCandidatesInGroup", -- [1395]
+			"<00:46:43> <DEBUG>		Event:	GROUP_LEFT	1	Party-3209-1-00002DCAC8FE", -- [1396]
+			"<00:46:43> <DEBUG>		GetML()", -- [1397]
+			"<00:47:24> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1398]
+			"<00:47:24> <INFO>		UpdatePlayersData()", -- [1399]
+			"<00:47:31> <DEBUG>		GetML()", -- [1400]
+			"10/24/22", -- [1401]
+			"<21:44:00> <INFO>		Logged In", -- [1402]
+			"<21:44:00> [ML]<INFO>		Init", -- [1403]
+			"<21:44:00> <INFO>		RCLootCouncil	TradeUI enabled", -- [1404]
+			"<21:44:23> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Shanyt-ArgentDawn	Player-75-058380E2", -- [1405]
+			"<21:44:23> <INFO>		Shanyt-ArgentDawn	3.4.0	nil", -- [1406]
+			"<21:44:23> <DEBUG>		ActivateSkin	bfa", -- [1407]
+			"<21:44:34> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1408]
+			"<21:44:34> <INFO>		UpdatePlayersData()", -- [1409]
+			"<21:44:34> <INFO>		Player relog...", -- [1410]
+			"<21:44:35> <DEBUG>		GetPlayersGuildRank()", -- [1411]
+			"<21:44:35> <DEBUG>		GetPlayersGuildRank()", -- [1412]
+			"<21:44:35> <DEBUG>		Found Guild Rank: Thuerge", -- [1413]
+			"<21:44:42> <DEBUG>		GetML()", -- [1414]
+			"<21:50:33> <DEBUG>		Event:	LOOT_READY	true", -- [1415]
+			"<21:50:33> <DEBUG>		Event:	LOOT_READY	true", -- [1416]
+			"<21:56:46> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1417]
+			"<21:56:46> <INFO>		UpdatePlayersData()", -- [1418]
+			"<21:56:54> <DEBUG>		GetML()", -- [1419]
+			"<22:08:26> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1420]
+			"<22:08:26> <INFO>		UpdatePlayersData()", -- [1421]
+			"<22:08:33> <DEBUG>		GetML()", -- [1422]
+			"<22:14:06> <DEBUG>		Event:	LOOT_READY	true", -- [1423]
+			"<22:14:06> <DEBUG>		Event:	LOOT_READY	true", -- [1424]
+			"<22:14:07> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	171833	|cff0070dd|Hitem:171833::::::::60:71:::::::::|h[Elethium Ore]|h|r	2	Shanyt	WARRIOR", -- [1425]
+			"<22:14:16> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1426]
+			"<22:14:18> <DEBUG>		GetML()", -- [1427]
+			"<22:14:21> <DEBUG>		Event:	RAID_INSTANCE_WELCOME	Sepulcher of the First Ones (Looking For Raid)	45938	0	0", -- [1428]
+			"<22:14:22> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1429]
+			"<22:14:22> <INFO>		UpdatePlayersData()", -- [1430]
+			"<22:14:31> <DEBUG>		GetML()", -- [1431]
+			"<22:16:28> <DEBUG>		Event:	LOOT_READY	true", -- [1432]
+			"<22:16:28> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:187842::::::::60:71:::::::::|h[Inert Progenium Ore]|h|r	0	2	Creature-0-4214-2481-6462-181011-00005745FF	2", -- [1433]
+			"<22:16:28> <DEBUG>		Event:	LOOT_READY	true", -- [1434]
+			"<22:16:28> <DEBUG>		Adding to self.lootSlotInfo	1	|cff9d9d9d|Hitem:187842::::::::60:71:::::::::|h[Inert Progenium Ore]|h|r	0	2	Creature-0-4214-2481-6462-181011-00005745FF	2", -- [1435]
+			"<22:16:28> <DEBUG>		OnLootSlotCleared()	1	|cff9d9d9d|Hitem:187842::::::::60:71:::::::::|h[Inert Progenium Ore]|h|r	0", -- [1436]
+			"<22:16:28> <DEBUG>		Event:	LOOT_CLOSED", -- [1437]
+			"<22:16:28> <DEBUG>		Event:	LOOT_CLOSED", -- [1438]
+			"<22:16:28> <Comm>		^1^Sl^T^N1^S181011^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [1439]
+			"<22:16:28> <Comm>		^1^Sl^T^N1^S181011^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [1440]
+			"<22:17:00> <DEBUG>		Event:	ENCOUNTER_START	2529	Halondrus the Reclaimer	17	23", -- [1441]
+			"<22:17:00> <INFO>		UpdatePlayersData()", -- [1442]
+			"<22:23:00> <DEBUG>		Event:	ENCOUNTER_END	2529	Halondrus the Reclaimer	17	23	0", -- [1443]
+			"<22:23:36> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1444]
+			"<22:23:38> <DEBUG>		GetML()", -- [1445]
+			"<22:28:16> <DEBUG>		Event:	ENCOUNTER_START	2529	Halondrus the Reclaimer	17	25", -- [1446]
+			"<22:28:16> <INFO>		UpdatePlayersData()", -- [1447]
+			"<22:35:51> <DEBUG>		Event:	ENCOUNTER_END	2529	Halondrus the Reclaimer	17	25	1", -- [1448]
+			"<22:36:02> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2529	181712	|cffa335ee|Hitem:181712::::::::60:71::91:2:1592:7245:2:28:2167:37:10:::::|h[Depths of Insanity]|h|r	1	Bikus-Illidan	WARRIOR", -- [1449]
+			"<22:36:05> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2529	191020	|cffa335ee|Hitem:191020::::::::60:71::90:4:8756:8155:1511:6646:1:28:2167:::::|h[Venerated Leg Module]|h|r	1	Durgrimmll-Ragnaros	SHAMAN", -- [1450]
+			"<22:36:05> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2529	189833	|cffa335ee|Hitem:189833::::::::60:71::90:5:42:7579:8756:1511:6646:1:28:2167:::::|h[Taciturn Keeper's Lapis]|h|r	1	Sákûrá-Drakkari	HUNTER", -- [1451]
+			"<22:36:05> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2529	181511	|cffa335ee|Hitem:181511::::::::60:71::91:2:1592:7245:2:28:2167:37:10:::::|h[Nether Precision]|h|r	1	Zgodoffire-Illidan	MAGE", -- [1452]
+			"<22:36:06> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2529	182187	|cffa335ee|Hitem:182187::::::::60:71::91:2:1592:7245:2:28:2167:37:10:::::|h[Meat Shield]|h|r	1	Vulpain-Sentinels	DEATHKNIGHT", -- [1453]
+			"<22:36:10> <DEBUG>		Event:	LOOT_READY	true", -- [1454]
+			"<22:36:10> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	GameObject-0-4214-2481-6462-375886-0000574B87	743226", -- [1455]
+			"<22:36:10> <DEBUG>		Ignoring	|cffff8000|Hcurrency:2009:200|h[Cosmic Flux]|h|r	as it's a currency", -- [1456]
+			"<22:36:10> <DEBUG>		Ignoring	|cff0070dd|Hcurrency:1982:5000|h[Commendation of the Enlightened]|h|r	as it's a currency", -- [1457]
+			"<22:36:10> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2529	182325	|cffa335ee|Hitem:182325::::::::60:71::91:2:1592:7245:2:28:2167:37:10:::::|h[Ravenous Consumption]|h|r	1	Purrella-Area52	DEMONHUNTER", -- [1458]
+			"<22:36:10> <DEBUG>		Event:	LOOT_READY	true", -- [1459]
+			"<22:36:10> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	GameObject-0-4214-2481-6462-375886-0000574B87	743226", -- [1460]
+			"<22:36:10> <DEBUG>		Ignoring	|cffff8000|Hcurrency:2009:200|h[Cosmic Flux]|h|r	as it's a currency", -- [1461]
+			"<22:36:10> <DEBUG>		Ignoring	|cff0070dd|Hcurrency:1982:5000|h[Commendation of the Enlightened]|h|r	as it's a currency", -- [1462]
+			"<22:36:10> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2529	191018	|cffa335ee|Hitem:191018::::::::60:71::90:4:8756:8155:1511:6646:1:28:2167:::::|h[Dreadful Leg Module]|h|r	1	Purrella-Area52	DEMONHUNTER", -- [1463]
+			"<22:36:10> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1464]
+			"<22:36:11> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2529	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	3	Shanyt	WARRIOR", -- [1465]
+			"<22:36:11> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2529	182748	|cffa335ee|Hitem:182748::::::::60:71::91:2:1592:7245:2:28:2167:37:10:::::|h[Borne of Blood]|h|r	1	Venao-Stormscale	WARLOCK", -- [1466]
+			"<22:36:11> <DEBUG>		Event:	LOOT_CLOSED", -- [1467]
+			"<22:36:11> <DEBUG>		Event:	LOOT_CLOSED", -- [1468]
+			"<22:36:11> <Comm>		^1^Sl^T^N1^S375886^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [1469]
+			"<22:36:11> <Comm>		^1^Sl^T^N1^S375886^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [1470]
+			"<22:36:16> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2529	191019	|cffa335ee|Hitem:191019::::::::60:71::90:4:8756:8155:1511:6646:1:28:2167:::::|h[Mystic Leg Module]|h|r	1	Easytarget-Uldaman	HUNTER", -- [1471]
+			"<22:36:17> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	2529	188263	|cffa335ee|Hitem:188263::::::::60:71::90:4:8756:6652:1511:6646:1:28:2167:::::|h[Reclaimer's Intensity Core]|h|r	1	Celante-MoonGuard	PRIEST", -- [1472]
+			"<22:37:02> <DEBUG>		Event:	GROUP_LEFT	2	Party-3017-1-00004A13E084", -- [1473]
+			"<22:37:02> <DEBUG>		GetML()", -- [1474]
+			"<22:37:10> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1475]
+			"<22:37:10> <INFO>		UpdatePlayersData()", -- [1476]
+			"<22:37:17> <DEBUG>		GetML()", -- [1477]
+			"<22:42:37> <DEBUG>		Event:	LOOT_READY	true", -- [1478]
+			"<22:42:38> <DEBUG>		Event:	LOOT_READY	true", -- [1479]
+			"<22:45:11> <DEBUG>		Event:	LOOT_READY	true", -- [1480]
+			"<22:45:11> <DEBUG>		Event:	LOOT_READY	true", -- [1481]
+			"<22:46:08> <DEBUG>		Event:	LOOT_READY	true", -- [1482]
+			"<22:46:08> <DEBUG>		Event:	LOOT_READY	true", -- [1483]
+			"<22:46:19> <DEBUG>		Event:	LOOT_READY	true", -- [1484]
+			"<22:46:19> <DEBUG>		Event:	LOOT_READY	true", -- [1485]
+			"<22:46:38> <DEBUG>		Event:	LOOT_READY	true", -- [1486]
+			"<22:46:38> <DEBUG>		Event:	LOOT_READY	true", -- [1487]
+			"<22:46:43> <DEBUG>		Event:	LOOT_READY	true", -- [1488]
+			"<22:46:43> <DEBUG>		Event:	LOOT_READY	true", -- [1489]
+			"<22:48:16> <DEBUG>		Event:	LOOT_READY	true", -- [1490]
+			"<22:48:16> <DEBUG>		Event:	LOOT_READY	true", -- [1491]
+			"<22:48:17> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	171833	|cff0070dd|Hitem:171833::::::::60:71:::::::::|h[Elethium Ore]|h|r	5	Shanyt	WARRIOR", -- [1492]
+			"<22:49:37> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1493]
+			"<22:49:39> <DEBUG>		GetML()", -- [1494]
+			"<22:49:45> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1495]
+			"<22:49:45> <INFO>		UpdatePlayersData()", -- [1496]
+			"<22:49:52> <DEBUG>		GetML()", -- [1497]
+			"<22:51:45> <DEBUG>		Event:	LOOT_READY	true", -- [1498]
+			"<22:51:45> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3766-1004-31409-23682-0000574EDE	145353", -- [1499]
+			"<22:51:45> <DEBUG>		Adding to self.lootSlotInfo	2	|cffffffff|Hitem:37606::::::::60:71:::::::::|h[Penny Pouch]|h|r	1	1	Creature-0-3766-1004-31409-23682-0000574EDE	1", -- [1500]
+			"<22:51:45> <DEBUG>		Event:	LOOT_READY	true", -- [1501]
+			"<22:51:45> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3766-1004-31409-23682-0000574EDE	145353", -- [1502]
+			"<22:51:45> <DEBUG>		Adding to self.lootSlotInfo	2	|cffffffff|Hitem:37606::::::::60:71:::::::::|h[Penny Pouch]|h|r	1	1	Creature-0-3766-1004-31409-23682-0000574EDE	1", -- [1503]
+			"<22:51:46> <DEBUG>		OnLootSlotCleared()	2	|cffffffff|Hitem:37606::::::::60:71:::::::::|h[Penny Pouch]|h|r	1", -- [1504]
+			"<22:51:46> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1505]
+			"<22:51:47> <DEBUG>		Event:	LOOT_CLOSED", -- [1506]
+			"<22:51:47> <Comm>		^1^Sl^T^N1^S23682^t^^	INSTANCE_CHAT	Shanyt-ArgentDawn", -- [1507]
+			"<22:51:48> <DEBUG>		Event:	LOOT_READY	true", -- [1508]
+			"<22:51:49> <DEBUG>		Event:	LOOT_READY	true", -- [1509]
+			"<22:51:51> <DEBUG>		Event:	LOOT_CLOSED", -- [1510]
+			"<22:51:51> <DEBUG>		Event:	LOOT_CLOSED", -- [1511]
+			"<22:51:52> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	143902	|cff0070dd|Hitem:143902::::::::60:71::22:1:8760:2:28:181:9:52:::::|h[Wicked Witch's Signet]|h|r	1	Jeds-Gilneas	HUNTER", -- [1512]
+			"<22:51:57> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1513]
+			"<22:51:59> <DEBUG>		GetML()", -- [1514]
+			"<22:52:14> <DEBUG>		Event:	GROUP_LEFT	2	Party-3017-1-00004A144842", -- [1515]
+			"<22:52:14> <DEBUG>		GetML()", -- [1516]
+			"<22:52:21> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1517]
+			"<22:52:21> <INFO>		UpdatePlayersData()", -- [1518]
+			"<22:52:29> <DEBUG>		GetML()", -- [1519]
+			"<22:52:40> <DEBUG>		Event:	LOOT_READY	true", -- [1520]
+			"<22:52:40> <DEBUG>		Event:	LOOT_READY	true", -- [1521]
+			"<22:53:13> <DEBUG>		Event:	LOOT_READY	true", -- [1522]
+			"<22:53:13> <DEBUG>		Event:	LOOT_READY	true", -- [1523]
+			"<22:53:17> <DEBUG>		Event:	LOOT_READY	true", -- [1524]
+			"<22:53:17> <DEBUG>		Event:	LOOT_READY	true", -- [1525]
+			"<22:53:20> <DEBUG>		Event:	LOOT_READY	true", -- [1526]
+			"<22:53:20> <DEBUG>		Event:	LOOT_READY	true", -- [1527]
+			"<22:54:51> <DEBUG>		Event:	LOOT_READY	true", -- [1528]
+			"<22:54:52> <DEBUG>		Event:	LOOT_READY	true", -- [1529]
+			"<22:54:52> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	2	Shanyt	WARRIOR", -- [1530]
+			"<22:55:08> <DEBUG>		Event:	LOOT_READY	true", -- [1531]
+			"<22:55:09> <DEBUG>		Event:	LOOT_READY	true", -- [1532]
+			"<22:55:09> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187703	|cff0070dd|Hitem:187703::::::::60:71:::::::::|h[Silken Protofiber]|h|r	1	Shanyt	WARRIOR", -- [1533]
+			"<22:55:09> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187704	|cff0070dd|Hitem:187704::::::::60:71:::::::::|h[Protoflesh]|h|r	1	Shanyt	WARRIOR", -- [1534]
+			"<22:56:20> <DEBUG>		Event:	LOOT_READY	true", -- [1535]
+			"<22:56:20> <DEBUG>		Event:	LOOT_READY	true", -- [1536]
+			"<22:56:20> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189163	|cff0070dd|Hitem:189163::::::::60:71:::::::::|h[Glimmer of Motion]|h|r	1	Shanyt	WARRIOR", -- [1537]
+			"<22:57:07> <DEBUG>		Event:	LOOT_READY	true", -- [1538]
+			"<22:57:08> <DEBUG>		Event:	LOOT_READY	true", -- [1539]
+			"<22:57:08> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187704	|cff0070dd|Hitem:187704::::::::60:71:::::::::|h[Protoflesh]|h|r	4	Shanyt	WARRIOR", -- [1540]
+			"<22:57:09> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	5	Shanyt	WARRIOR", -- [1541]
+			"<22:57:34> <DEBUG>		Event:	LOOT_READY	true", -- [1542]
+			"<22:57:34> <DEBUG>		Event:	LOOT_READY	true", -- [1543]
+			"<22:57:35> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	2	Shanyt	WARRIOR", -- [1544]
+			"<22:58:19> <DEBUG>		Event:	LOOT_READY	true", -- [1545]
+			"<22:58:19> <DEBUG>		Event:	LOOT_READY	true", -- [1546]
+			"<22:59:27> <DEBUG>		Event:	LOOT_READY	true", -- [1547]
+			"<22:59:28> <DEBUG>		Event:	LOOT_READY	true", -- [1548]
+			"<23:01:50> <DEBUG>		Event:	LOOT_READY	true", -- [1549]
+			"<23:01:50> <DEBUG>		Event:	LOOT_READY	true", -- [1550]
+			"<23:01:51> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	2	Shanyt	WARRIOR", -- [1551]
+			"<23:02:09> <DEBUG>		Event:	LOOT_READY	true", -- [1552]
+			"<23:02:09> <DEBUG>		Event:	LOOT_READY	true", -- [1553]
+			"<23:02:10> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	190740	|cff0070dd|Hitem:190740::::::::60:71:::::::::|h[Automa Integration]|h|r	1	Shanyt	WARRIOR", -- [1554]
+			"<23:02:29> <DEBUG>		Event:	LOOT_READY	true", -- [1555]
+			"<23:02:29> <DEBUG>		Event:	LOOT_READY	true", -- [1556]
+			"<23:02:29> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	1	Shanyt	WARRIOR", -- [1557]
+			"<23:02:49> <DEBUG>		Event:	LOOT_READY	true", -- [1558]
+			"<23:02:49> <DEBUG>		Event:	LOOT_READY	true", -- [1559]
+			"<23:02:50> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	2	Shanyt	WARRIOR", -- [1560]
+			"<23:03:11> <DEBUG>		Event:	LOOT_READY	true", -- [1561]
+			"<23:03:11> <DEBUG>		Event:	LOOT_READY	true", -- [1562]
+			"<23:03:12> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187704	|cff0070dd|Hitem:187704::::::::60:71:::::::::|h[Protoflesh]|h|r	1	Shanyt	WARRIOR", -- [1563]
+			"<23:04:08> <DEBUG>		Event:	LOOT_READY	true", -- [1564]
+			"<23:04:08> <DEBUG>		Event:	LOOT_READY	true", -- [1565]
+			"<23:04:49> <DEBUG>		Event:	LOOT_READY	true", -- [1566]
+			"<23:04:49> <DEBUG>		Event:	LOOT_READY	true", -- [1567]
+			"<23:05:14> <DEBUG>		Event:	LOOT_READY	true", -- [1568]
+			"<23:05:15> <DEBUG>		Event:	LOOT_READY	true", -- [1569]
+			"<23:05:38> <DEBUG>		Event:	LOOT_READY	true", -- [1570]
+			"<23:05:38> <DEBUG>		Event:	LOOT_READY	true", -- [1571]
+			"<23:06:22> <DEBUG>		Event:	LOOT_READY	true", -- [1572]
+			"<23:06:23> <DEBUG>		Event:	LOOT_READY	true", -- [1573]
+			"<23:06:44> <DEBUG>		Event:	LOOT_READY	true", -- [1574]
+			"<23:06:45> <DEBUG>		Event:	LOOT_READY	true", -- [1575]
+			"<23:07:42> <DEBUG>		Event:	LOOT_READY	true", -- [1576]
+			"<23:07:42> <DEBUG>		Event:	LOOT_READY	true", -- [1577]
+			"<23:08:23> <DEBUG>		Event:	LOOT_READY	true", -- [1578]
+			"<23:08:24> <DEBUG>		Event:	LOOT_READY	true", -- [1579]
+			"<23:08:35> <DEBUG>		Event:	LOOT_READY	true", -- [1580]
+			"<23:08:35> <DEBUG>		Event:	LOOT_READY	true", -- [1581]
+			"<23:08:36> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187700	|cff0070dd|Hitem:187700::::::::60:71:::::::::|h[Progenium Ore]|h|r	2	Shanyt	WARRIOR", -- [1582]
+			"<23:11:08> <DEBUG>		Event:	LOOT_READY	true", -- [1583]
+			"<23:11:08> <DEBUG>		Event:	LOOT_READY	true", -- [1584]
+			"<23:11:25> <DEBUG>		Event:	LOOT_READY	true", -- [1585]
+			"<23:11:25> <DEBUG>		Event:	LOOT_READY	true", -- [1586]
+			"<23:11:26> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187700	|cff0070dd|Hitem:187700::::::::60:71:::::::::|h[Progenium Ore]|h|r	3	Shanyt	WARRIOR", -- [1587]
+			"<23:11:41> <DEBUG>		Event:	LOOT_READY	true", -- [1588]
+			"<23:11:41> <DEBUG>		Event:	LOOT_READY	true", -- [1589]
+			"<23:11:46> <DEBUG>		Event:	LOOT_READY	true", -- [1590]
+			"<23:11:47> <DEBUG>		Event:	LOOT_READY	true", -- [1591]
+			"<23:11:47> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187700	|cff0070dd|Hitem:187700::::::::60:71:::::::::|h[Progenium Ore]|h|r	2	Shanyt	WARRIOR", -- [1592]
+			"<23:12:06> <DEBUG>		Event:	LOOT_READY	true", -- [1593]
+			"<23:12:06> <DEBUG>		Event:	LOOT_READY	true", -- [1594]
+			"<23:12:31> <DEBUG>		Event:	LOOT_READY	true", -- [1595]
+			"<23:12:32> <DEBUG>		Event:	LOOT_READY	true", -- [1596]
+			"<23:12:32> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189157	|cff0070dd|Hitem:189157::::::::60:71:::::::::|h[Glimmer of Animation]|h|r	1	Shanyt	WARRIOR", -- [1597]
+			"<23:13:39> <DEBUG>		Event:	LOOT_READY	true", -- [1598]
+			"<23:13:39> <DEBUG>		Event:	LOOT_READY	true", -- [1599]
+			"<23:14:10> <DEBUG>		Event:	LOOT_READY	true", -- [1600]
+			"<23:14:10> <DEBUG>		Event:	LOOT_READY	true", -- [1601]
+			"<23:14:54> <DEBUG>		Event:	LOOT_READY	true", -- [1602]
+			"<23:14:54> <DEBUG>		Event:	LOOT_READY	true", -- [1603]
+			"<23:14:56> <DEBUG>		Event:	LOOT_READY	true", -- [1604]
+			"<23:14:57> <DEBUG>		Event:	LOOT_READY	true", -- [1605]
+			"<23:15:21> <DEBUG>		Event:	LOOT_READY	true", -- [1606]
+			"<23:15:21> <DEBUG>		Event:	LOOT_READY	true", -- [1607]
+			"<23:16:58> <DEBUG>		Event:	LOOT_READY	true", -- [1608]
+			"<23:16:58> <DEBUG>		Event:	LOOT_READY	true", -- [1609]
+			"<23:16:59> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	7	Shanyt	WARRIOR", -- [1610]
+			"<23:18:04> <DEBUG>		Event:	LOOT_READY	true", -- [1611]
+			"<23:18:04> <DEBUG>		Event:	LOOT_READY	true", -- [1612]
+			"<23:18:05> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	5	Shanyt	WARRIOR", -- [1613]
+			"<23:18:31> <DEBUG>		Event:	LOOT_READY	true", -- [1614]
+			"<23:18:31> <DEBUG>		Event:	LOOT_READY	true", -- [1615]
+			"<23:18:35> <DEBUG>		Event:	LOOT_READY	true", -- [1616]
+			"<23:18:35> <DEBUG>		Event:	LOOT_READY	true", -- [1617]
+			"<23:20:41> <DEBUG>		Event:	LOOT_READY	true", -- [1618]
+			"<23:20:41> <DEBUG>		Event:	LOOT_READY	true", -- [1619]
+			"<23:20:42> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	7	Shanyt	WARRIOR", -- [1620]
+			"<23:21:15> <DEBUG>		Event:	LOOT_READY	true", -- [1621]
+			"<23:21:15> <DEBUG>		Event:	LOOT_READY	true", -- [1622]
+			"<23:23:42> <DEBUG>		Event:	LOOT_READY	true", -- [1623]
+			"<23:23:42> <DEBUG>		Event:	LOOT_READY	true", -- [1624]
+			"<23:23:43> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	4	Shanyt	WARRIOR", -- [1625]
+			"<23:24:02> <DEBUG>		Event:	LOOT_READY	true", -- [1626]
+			"<23:24:02> <DEBUG>		Event:	LOOT_READY	true", -- [1627]
+			"<23:24:02> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187704	|cff0070dd|Hitem:187704::::::::60:71:::::::::|h[Protoflesh]|h|r	8	Shanyt	WARRIOR", -- [1628]
+			"<23:24:03> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	4	Shanyt	WARRIOR", -- [1629]
+			"<23:25:05> <DEBUG>		Event:	LOOT_READY	true", -- [1630]
+			"<23:25:05> <DEBUG>		Event:	LOOT_READY	true", -- [1631]
+			"<23:27:48> <DEBUG>		Event:	LOOT_READY	true", -- [1632]
+			"<23:27:48> <DEBUG>		Event:	LOOT_READY	true", -- [1633]
+			"<23:27:48> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187703	|cff0070dd|Hitem:187703::::::::60:71:::::::::|h[Silken Protofiber]|h|r	6	Shanyt	WARRIOR", -- [1634]
+			"<23:27:49> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187704	|cff0070dd|Hitem:187704::::::::60:71:::::::::|h[Protoflesh]|h|r	5	Shanyt	WARRIOR", -- [1635]
+			"<23:27:49> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	190189	|cffa335ee|Hitem:190189::::::::60:71:::::::::|h[Sandworn Relic]|h|r	8	Shanyt	WARRIOR", -- [1636]
+			"<23:27:49> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	7	Shanyt	WARRIOR", -- [1637]
+			"<23:28:58> <DEBUG>		Event:	LOOT_READY	true", -- [1638]
+			"<23:28:58> <DEBUG>		Event:	LOOT_READY	true", -- [1639]
+			"<23:30:28> <DEBUG>		Event:	LOOT_READY	true", -- [1640]
+			"<23:30:28> <DEBUG>		Event:	LOOT_READY	true", -- [1641]
+			"<23:30:29> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	7	Shanyt	WARRIOR", -- [1642]
+			"<23:31:06> <DEBUG>		Event:	LOOT_READY	true", -- [1643]
+			"<23:31:06> <DEBUG>		Event:	LOOT_READY	true", -- [1644]
+			"<23:31:06> <DEBUG>		Event:	LOOT_READY	true", -- [1645]
+			"<23:31:34> <DEBUG>		Event:	LOOT_READY	true", -- [1646]
+			"<23:31:35> <DEBUG>		Event:	LOOT_READY	true", -- [1647]
+			"<23:32:03> <DEBUG>		Event:	LOOT_READY	true", -- [1648]
+			"<23:32:03> <DEBUG>		Event:	LOOT_READY	true", -- [1649]
+			"<23:32:28> <DEBUG>		Event:	LOOT_READY	true", -- [1650]
+			"<23:32:29> <DEBUG>		Event:	LOOT_READY	true", -- [1651]
+			"<23:34:47> <DEBUG>		Event:	LOOT_READY	true", -- [1652]
+			"<23:34:48> <DEBUG>		Event:	LOOT_READY	true", -- [1653]
+			"<23:35:10> <DEBUG>		Event:	LOOT_READY	true", -- [1654]
+			"<23:35:10> <DEBUG>		Event:	LOOT_READY	true", -- [1655]
+			"<23:35:10> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187704	|cff0070dd|Hitem:187704::::::::60:71:::::::::|h[Protoflesh]|h|r	2	Shanyt	WARRIOR", -- [1656]
+			"<23:35:11> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189936	|cff0070dd|Hitem:189936::::::::60:71::27:3:6652:8108:1466:1:28:2169:::::|h[Feasting's Feeding Cloak]|h|r	1	Shanyt	WARRIOR", -- [1657]
+			"<23:35:11> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	4	Shanyt	WARRIOR", -- [1658]
+			"<23:37:34> <DEBUG>		Event:	LOOT_READY	true", -- [1659]
+			"<23:37:34> <DEBUG>		Event:	LOOT_READY	true", -- [1660]
+			"<23:37:36> <DEBUG>		Event:	LOOT_READY	true", -- [1661]
+			"<23:37:37> <DEBUG>		Event:	LOOT_READY	true", -- [1662]
+			"<23:37:37> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	190098	|cff0070dd|Hitem:190098::::::::60:71:::::::::|h[Pepepec]|h|r	1	Shanyt	WARRIOR", -- [1663]
+			"<23:37:37> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	1	Shanyt	WARRIOR", -- [1664]
+			"<23:40:04> <DEBUG>		Event:	LOOT_READY	true", -- [1665]
+			"<23:40:04> <DEBUG>		Event:	LOOT_READY	true", -- [1666]
+			"<23:41:45> <DEBUG>		Event:	LOOT_READY	true", -- [1667]
+			"<23:41:45> <DEBUG>		Event:	LOOT_READY	true", -- [1668]
+			"<23:41:45> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	2	Shanyt	WARRIOR", -- [1669]
+			"<23:42:32> <DEBUG>		Event:	LOOT_READY	true", -- [1670]
+			"<23:42:32> <DEBUG>		Event:	LOOT_READY	true", -- [1671]
+			"<23:42:33> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	190189	|cffa335ee|Hitem:190189::::::::60:71:::::::::|h[Sandworn Relic]|h|r	7	Shanyt	WARRIOR", -- [1672]
+			"<23:42:33> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187704	|cff0070dd|Hitem:187704::::::::60:71:::::::::|h[Protoflesh]|h|r	5	Shanyt	WARRIOR", -- [1673]
+			"<23:42:33> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	7	Shanyt	WARRIOR", -- [1674]
+			"<23:44:49> <DEBUG>		Event:	LOOT_READY	true", -- [1675]
+			"<23:44:49> <DEBUG>		Event:	LOOT_READY	true", -- [1676]
+			"<23:44:50> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	1	Shanyt	WARRIOR", -- [1677]
+			"<23:46:04> <DEBUG>		Event:	LOOT_READY	true", -- [1678]
+			"<23:46:04> <DEBUG>		Event:	LOOT_READY	true", -- [1679]
+			"<23:46:05> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	1	Shanyt	WARRIOR", -- [1680]
+			"<23:49:12> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1681]
+			"<23:49:12> <INFO>		UpdatePlayersData()", -- [1682]
+			"<23:49:18> <DEBUG>		GetML()", -- [1683]
+			"10/24/22", -- [1684]
+			"<23:54:54> <INFO>		Logged In", -- [1685]
+			"<23:54:54> [ML]<INFO>		Init", -- [1686]
+			"<23:54:54> <INFO>		RCLootCouncil	TradeUI enabled", -- [1687]
+			"<23:55:13> <INFO>		Zulbathal-Zul'jin	3.4.0	nil", -- [1688]
+			"<23:55:13> <DEBUG>		ActivateSkin	bfa", -- [1689]
+			"<23:55:26> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1690]
+			"<23:55:26> <INFO>		UpdatePlayersData()", -- [1691]
+			"<23:55:26> <INFO>		Player relog...", -- [1692]
+			"<23:55:33> <DEBUG>		GetML()", -- [1693]
+			"<00:00:21> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1694]
+			"<00:00:24> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1695]
+			"<00:00:24> <INFO>		UpdatePlayersData()", -- [1696]
+			"<00:00:26> <DEBUG>		GetML()", -- [1697]
+			"<00:00:27> <DEBUG>		GetML()", -- [1698]
+			"<00:02:05> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	143902	|cff0070dd|Hitem:143902::::::::60:102::22:1:8760:2:28:181:9:60:::::|h[Wicked Witch's Signet]|h|r	1	Gribes-EmeraldDream	MAGE", -- [1699]
+			"<00:02:45> <DEBUG>		Event:	LOOT_READY	true", -- [1700]
+			"<00:02:45> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3882-1004-2204-23682-0000575F68	144834", -- [1701]
+			"<00:02:45> <DEBUG>		Adding to self.lootSlotInfo	3	|cffffffff|Hitem:37606::::::::60:102:::::::::|h[Penny Pouch]|h|r	1	1	Creature-0-3882-1004-2204-23682-0000575F68	1", -- [1702]
+			"<00:02:45> <DEBUG>		Event:	LOOT_READY	true", -- [1703]
+			"<00:02:45> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3882-1004-2204-23682-0000575F68	144834", -- [1704]
+			"<00:02:45> <DEBUG>		Adding to self.lootSlotInfo	3	|cffffffff|Hitem:37606::::::::60:102:::::::::|h[Penny Pouch]|h|r	1	1	Creature-0-3882-1004-2204-23682-0000575F68	1", -- [1705]
+			"<00:02:45> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1706]
+			"<00:02:45> <DEBUG>		OnLootSlotCleared()	3	|cffffffff|Hitem:37606::::::::60:102:::::::::|h[Penny Pouch]|h|r	1", -- [1707]
+			"<00:02:45> <DEBUG>		Event:	LOOT_CLOSED", -- [1708]
+			"<00:02:45> <DEBUG>		Event:	LOOT_CLOSED", -- [1709]
+			"<00:02:46> <Comm>		^1^Sl^T^N1^S23682^t^^	INSTANCE_CHAT	Zulbathal-Zul'jin", -- [1710]
+			"<00:02:46> <Comm>		^1^Sl^T^N1^S23682^t^^	INSTANCE_CHAT	Zulbathal-Zul'jin", -- [1711]
+			"<00:02:47> <DEBUG>		Event:	LOOT_READY	true", -- [1712]
+			"<00:02:47> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:33292::::::::60:102::22::1:28:181:::::|h[Hallowed Helm]|h|r	3	1	Item-61-0-4000000B737C4A98	1", -- [1713]
+			"<00:02:47> <DEBUG>		Event:	LOOT_READY	true", -- [1714]
+			"<00:02:47> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:33292::::::::60:102::22::1:28:181:::::|h[Hallowed Helm]|h|r	3	1	Item-61-0-4000000B737C4A98	1", -- [1715]
+			"<00:02:48> <DEBUG>		OnLootSlotCleared()	2	|cff0070dd|Hitem:33292::::::::60:102::22::1:28:181:::::|h[Hallowed Helm]|h|r	3", -- [1716]
+			"<00:02:48> <DEBUG>		Event:	LOOT_CLOSED", -- [1717]
+			"<00:02:48> <DEBUG>		Event:	LOOT_CLOSED", -- [1718]
+			"<00:02:48> <Comm>		^1^Sl^T^N1^S0^t^^	INSTANCE_CHAT	Zulbathal-Zul'jin", -- [1719]
+			"<00:02:48> <Comm>		^1^Sl^T^N1^S0^t^^	INSTANCE_CHAT	Zulbathal-Zul'jin", -- [1720]
+			"<00:02:50> <DEBUG>		Storage:New	|cff0070dd|Hitem:33292::::::::60:102::22::1:28:181:::::|h[Hallowed Helm]|h|r	temp", -- [1721]
+			"<00:02:50> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:33292::::::::60:102::22::1:28:181:::::||h[Hallowed Helm]||h||r	5", -- [1722]
+			"<00:02:50> <DEBUG>		Found item at	0	19", -- [1723]
+			"<00:02:50> <DEBUG>		Found:	0	19	0", -- [1724]
+			"<00:02:51> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:33292::::::::60:102::22::1:28:181:::::||h[Hallowed Helm]||h||r	5", -- [1725]
+			"<00:02:51> <DEBUG>		Found item at	0	19", -- [1726]
+			"<00:02:51> <DEBUG>		Found:	0	19	0", -- [1727]
+			"<00:02:51> <Comm>		^1^Sn_t^T^N1^S|cff0070dd|Hitem:33292::::::::60:102::22::1:28:181:::::|h[Hallowed~`Helm]|h|r^N2^S0^t^^	INSTANCE_CHAT	Zulbathal-Zul'jin", -- [1728]
+			"<00:04:58> <DEBUG>		Event:	GROUP_LEFT	2	Party-3017-1-00004A1494C6", -- [1729]
+			"<00:04:58> <DEBUG>		GetML()", -- [1730]
+			"<00:05:05> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1731]
+			"<00:05:05> <INFO>		UpdatePlayersData()", -- [1732]
+			"<00:05:08> <DEBUG>		GetML()", -- [1733]
+			"10/25/22", -- [1734]
+			"<00:10:32> <INFO>		Logged In", -- [1735]
+			"<00:10:32> [ML]<INFO>		Init", -- [1736]
+			"<00:10:32> <INFO>		RCLootCouncil	TradeUI enabled", -- [1737]
+			"<00:10:51> <INFO>		Valmagus-Zul'jin	3.4.0	nil", -- [1738]
+			"<00:10:51> <DEBUG>		ActivateSkin	bfa", -- [1739]
+			"<00:11:03> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1740]
+			"<00:11:03> <INFO>		UpdatePlayersData()", -- [1741]
+			"<00:11:03> <INFO>		Player relog...", -- [1742]
+			"<00:11:10> <DEBUG>		GetML()", -- [1743]
+			"<00:21:48> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1744]
+			"<00:21:50> <DEBUG>		GetML()", -- [1745]
+			"<00:21:51> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1746]
+			"<00:21:51> <INFO>		UpdatePlayersData()", -- [1747]
+			"<00:21:52> <DEBUG>		GetML()", -- [1748]
+			"<00:23:22> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	143902	|cff0070dd|Hitem:143902::::::::60:70::22:1:8760:2:28:181:9:51:::::|h[Wicked Witch's Signet]|h|r	1	Echidra	SHAMAN", -- [1749]
+			"<00:23:24> <DEBUG>		Event:	LOOT_READY	true", -- [1750]
+			"<00:23:24> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4209-1004-8729-23682-000057646F	130012", -- [1751]
+			"<00:23:24> <DEBUG>		Event:	LOOT_READY	true", -- [1752]
+			"<00:23:24> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4209-1004-8729-23682-000057646F	130012", -- [1753]
+			"<00:23:25> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1754]
+			"<00:23:25> <DEBUG>		Event:	LOOT_CLOSED", -- [1755]
+			"<00:23:25> <DEBUG>		Event:	LOOT_CLOSED", -- [1756]
+			"<00:23:25> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	143901	|cff0070dd|Hitem:143901::::::::60:70::22:1:8760:2:28:181:9:60:::::|h[Band of the Petrified Pumpkin]|h|r	1	Wooloo	MONK", -- [1757]
+			"<00:23:26> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1758]
+			"<00:23:26> <Comm>		^1^Sl^T^N1^S23682^t^^	INSTANCE_CHAT	Valmagus-Zul'jin", -- [1759]
+			"<00:23:26> <Comm>		^1^Sl^T^N1^S23682^t^^	INSTANCE_CHAT	Valmagus-Zul'jin", -- [1760]
+			"<00:23:28> <DEBUG>		GetML()", -- [1761]
+			"<00:23:30> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1762]
+			"<00:23:31> <DEBUG>		Event:	LOOT_READY	true", -- [1763]
+			"<00:23:31> <DEBUG>		Adding to self.lootSlotInfo	1	|cff0070dd|Hitem:37011::::::::60:70::22::1:28:872:::::|h[Magic Broom]|h|r	3	1	Item-61-0-4000000B737E17AE	1", -- [1764]
+			"<00:23:31> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:33292::::::::60:70::22::1:28:181:::::|h[Hallowed Helm]|h|r	3	1	Item-61-0-4000000B737E17AE	1", -- [1765]
+			"<00:23:31> <DEBUG>		Event:	LOOT_READY	true", -- [1766]
+			"<00:23:31> <DEBUG>		Adding to self.lootSlotInfo	1	|cff0070dd|Hitem:37011::::::::60:70::22::1:28:872:::::|h[Magic Broom]|h|r	3	1	Item-61-0-4000000B737E17AE	1", -- [1767]
+			"<00:23:31> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:33292::::::::60:70::22::1:28:181:::::|h[Hallowed Helm]|h|r	3	1	Item-61-0-4000000B737E17AE	1", -- [1768]
+			"<00:23:32> <DEBUG>		OnLootSlotCleared()	1	|cff0070dd|Hitem:37011::::::::60:70::22::1:28:872:::::|h[Magic Broom]|h|r	3", -- [1769]
+			"<00:23:32> <DEBUG>		GetML()", -- [1770]
+			"<00:23:33> <DEBUG>		OnLootSlotCleared()	3	|cff0070dd|Hitem:33292::::::::60:70::22::1:28:181:::::|h[Hallowed Helm]|h|r	3", -- [1771]
+			"<00:23:33> <DEBUG>		Event:	LOOT_CLOSED", -- [1772]
+			"<00:23:33> <DEBUG>		Event:	LOOT_CLOSED", -- [1773]
+			"<00:23:33> <Comm>		^1^Sl^T^N1^S0^t^^	INSTANCE_CHAT	Valmagus-Zul'jin", -- [1774]
+			"<00:23:33> <Comm>		^1^Sl^T^N1^S0^t^^	INSTANCE_CHAT	Valmagus-Zul'jin", -- [1775]
+			"<00:23:34> <DEBUG>		Storage:New	|cff0070dd|Hitem:37011::::::::60:70::22::1:28:872:::::|h[Magic Broom]|h|r	temp", -- [1776]
+			"<00:23:34> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:37011::::::::60:70::22::1:28:872:::::||h[Magic Broom]||h||r	5", -- [1777]
+			"<00:23:34> <DEBUG>		Found item at	0	12", -- [1778]
+			"<00:23:34> <DEBUG>		Found item at	0	16", -- [1779]
+			"<00:23:34> <DEBUG>		Found:	0	16	0", -- [1780]
+			"<00:23:35> <DEBUG>		Storage:New	|cff0070dd|Hitem:33292::::::::60:70::22::1:28:181:::::|h[Hallowed Helm]|h|r	temp", -- [1781]
+			"<00:23:35> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:33292::::::::60:70::22::1:28:181:::::||h[Hallowed Helm]||h||r	5", -- [1782]
+			"<00:23:35> <DEBUG>		Found item at	0	17", -- [1783]
+			"<00:23:35> <DEBUG>		Found:	0	17	0", -- [1784]
+			"<00:23:35> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:37011::::::::60:70::22::1:28:872:::::||h[Magic Broom]||h||r	5", -- [1785]
+			"<00:23:35> <DEBUG>		Found item at	0	12", -- [1786]
+			"<00:23:35> <DEBUG>		Found item at	0	16", -- [1787]
+			"<00:23:35> <DEBUG>		Found:	0	16	0", -- [1788]
+			"<00:23:35> <Comm>		^1^Sn_t^T^N1^S|cff0070dd|Hitem:37011::::::::60:70::22::1:28:872:::::|h[Magic~`Broom]|h|r^N2^S0^t^^	INSTANCE_CHAT	Valmagus-Zul'jin", -- [1789]
+			"<00:23:36> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:33292::::::::60:70::22::1:28:181:::::||h[Hallowed Helm]||h||r	5", -- [1790]
+			"<00:23:36> <DEBUG>		Found item at	0	17", -- [1791]
+			"<00:23:36> <DEBUG>		Found:	0	17	0", -- [1792]
+			"<00:23:36> <Comm>		^1^Sn_t^T^N1^S|cff0070dd|Hitem:33292::::::::60:70::22::1:28:181:::::|h[Hallowed~`Helm]|h|r^N2^S0^t^^	INSTANCE_CHAT	Valmagus-Zul'jin", -- [1793]
+			"<00:23:54> <DEBUG>		Event:	GROUP_LEFT	2	Party-3017-1-00004A14ACF7", -- [1794]
+			"<00:23:54> <DEBUG>		GetML()", -- [1795]
+			"<00:24:03> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1796]
+			"<00:24:03> <INFO>		UpdatePlayersData()", -- [1797]
+			"<00:24:05> <DEBUG>		GetML()", -- [1798]
+			"10/25/22", -- [1799]
+			"<00:24:43> <INFO>		Logged In", -- [1800]
+			"<00:24:43> [ML]<INFO>		Init", -- [1801]
+			"<00:24:43> <INFO>		RCLootCouncil	TradeUI enabled", -- [1802]
+			"<00:25:00> <INFO>		Alatra-Zul'jin	3.4.0	nil", -- [1803]
+			"<00:25:00> <DEBUG>		ActivateSkin	bfa", -- [1804]
+			"<00:25:12> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1805]
+			"<00:25:12> <INFO>		UpdatePlayersData()", -- [1806]
+			"<00:25:12> <INFO>		Player relog...", -- [1807]
+			"<00:25:20> <DEBUG>		GetML()", -- [1808]
+			"<00:30:07> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1809]
+			"<00:30:09> <DEBUG>		GetML()", -- [1810]
+			"<00:30:10> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1811]
+			"<00:30:10> <INFO>		UpdatePlayersData()", -- [1812]
+			"<00:30:11> <DEBUG>		GetML()", -- [1813]
+			"<00:31:21> <DEBUG>		Event:	LOOT_READY	true", -- [1814]
+			"<00:31:21> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4209-1004-8870-23682-0000576666	131970", -- [1815]
+			"<00:31:21> <DEBUG>		Adding to self.lootSlotInfo	2	|cffffffff|Hitem:37606::::::::60:254:::::::::|h[Penny Pouch]|h|r	1	1	Creature-0-4209-1004-8870-23682-0000576666	1", -- [1816]
+			"<00:31:22> <DEBUG>		Event:	LOOT_READY	true", -- [1817]
+			"<00:31:22> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-4209-1004-8870-23682-0000576666	131970", -- [1818]
+			"<00:31:22> <DEBUG>		Adding to self.lootSlotInfo	2	|cffffffff|Hitem:37606::::::::60:254:::::::::|h[Penny Pouch]|h|r	1	1	Creature-0-4209-1004-8870-23682-0000576666	1", -- [1819]
+			"<00:31:22> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1820]
+			"<00:31:22> <DEBUG>		OnLootSlotCleared()	2	|cffffffff|Hitem:37606::::::::60:254:::::::::|h[Penny Pouch]|h|r	1", -- [1821]
+			"<00:31:22> <DEBUG>		Event:	LOOT_CLOSED", -- [1822]
+			"<00:31:22> <DEBUG>		Event:	LOOT_CLOSED", -- [1823]
+			"<00:31:23> <Comm>		^1^Sl^T^N1^S23682^t^^	INSTANCE_CHAT	Alatra-Zul'jin", -- [1824]
+			"<00:31:23> <Comm>		^1^Sl^T^N1^S23682^t^^	INSTANCE_CHAT	Alatra-Zul'jin", -- [1825]
+			"<00:31:24> <DEBUG>		Event:	LOOT_READY	true", -- [1826]
+			"<00:31:24> <DEBUG>		Event:	LOOT_READY	true", -- [1827]
+			"<00:31:25> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	143903	|cff0070dd|Hitem:143903::::::::60:254::22:1:8760:2:28:181:9:60:::::|h[The Horseman's Ring]|h|r	1	Zearanei-AzjolNerub	HUNTER", -- [1828]
+			"<00:31:25> <DEBUG>		Event:	LOOT_CLOSED", -- [1829]
+			"<00:31:25> <DEBUG>		Event:	LOOT_CLOSED", -- [1830]
+			"<00:31:28> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	143903	|cff0070dd|Hitem:143903::::::::60:254::22:1:8760:2:28:181:9:60:::::|h[The Horseman's Ring]|h|r	1	Mekoto	WARRIOR", -- [1831]
+			"<00:31:36> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1832]
+			"<00:31:38> <DEBUG>		GetML()", -- [1833]
+			"<00:31:47> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1834]
+			"<00:31:47> <INFO>		UpdatePlayersData()", -- [1835]
+			"<00:31:48> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1836]
+			"<00:31:49> <DEBUG>		GetML()", -- [1837]
+			"<00:31:50> <DEBUG>		GetML()", -- [1838]
+			"<00:31:53> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1839]
+			"<00:31:54> <DEBUG>		Event:	GROUP_LEFT	2	Party-3017-1-00004A14B30F", -- [1840]
+			"<00:31:54> <DEBUG>		GetML()", -- [1841]
+			"<00:31:55> <DEBUG>		GetML()", -- [1842]
+			"10/25/22", -- [1843]
+			"<00:33:17> <INFO>		Logged In", -- [1844]
+			"<00:33:17> [ML]<INFO>		Init", -- [1845]
+			"<00:33:17> <INFO>		RCLootCouncil	TradeUI enabled", -- [1846]
+			"<00:33:35> <INFO>		Avisar-Dalaran	3.4.0	nil", -- [1847]
+			"<00:33:35> <DEBUG>		ActivateSkin	bfa", -- [1848]
+			"<00:33:47> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1849]
+			"<00:33:47> <INFO>		UpdatePlayersData()", -- [1850]
+			"<00:33:47> <INFO>		Player relog...", -- [1851]
+			"<00:33:54> <DEBUG>		GetML()", -- [1852]
+			"<00:38:58> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1853]
+			"<00:38:59> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1854]
+			"<00:38:59> <INFO>		UpdatePlayersData()", -- [1855]
+			"<00:39:01> <DEBUG>		GetML()", -- [1856]
+			"<00:39:02> <DEBUG>		GetML()", -- [1857]
+			"<00:40:37> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	143904	|cff0070dd|Hitem:143904::::::::60:70::22:1:8760:2:28:181:9:60:::::|h[Seal of Ghoulish Glee]|h|r	1	Anubyia-Kel'Thuzad	DEMONHUNTER", -- [1858]
+			"<00:40:38> <DEBUG>		Event:	LOOT_READY	true", -- [1859]
+			"<00:40:38> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3882-1004-3892-23682-0000576873	145530", -- [1860]
+			"<00:40:38> <DEBUG>		Event:	LOOT_READY	true", -- [1861]
+			"<00:40:38> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3882-1004-3892-23682-0000576873	145530", -- [1862]
+			"<00:40:38> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1863]
+			"<00:40:39> <DEBUG>		Event:	LOOT_CLOSED", -- [1864]
+			"<00:40:39> <DEBUG>		Event:	LOOT_CLOSED", -- [1865]
+			"<00:40:39> <Comm>		^1^Sl^T^N1^S23682^t^^	INSTANCE_CHAT	Avisar-Dalaran", -- [1866]
+			"<00:40:39> <Comm>		^1^Sl^T^N1^S23682^t^^	INSTANCE_CHAT	Avisar-Dalaran", -- [1867]
+			"<00:40:40> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	143902	|cff0070dd|Hitem:143902::::::::60:70::22:1:8760:2:28:181:9:60:::::|h[Wicked Witch's Signet]|h|r	1	Blackfangs	DRUID", -- [1868]
+			"<00:40:40> <DEBUG>		Event:	LOOT_READY	true", -- [1869]
+			"<00:40:40> <DEBUG>		Event:	LOOT_READY	true", -- [1870]
+			"<00:40:41> <DEBUG>		Event:	LOOT_CLOSED", -- [1871]
+			"<00:40:41> <DEBUG>		Event:	LOOT_CLOSED", -- [1872]
+			"<00:40:54> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1873]
+			"<00:40:56> <DEBUG>		GetML()", -- [1874]
+			"<00:41:12> <DEBUG>		Event:	GROUP_LEFT	2	Party-3017-1-00004A14B985", -- [1875]
+			"<00:41:12> <DEBUG>		GetML()", -- [1876]
+			"<00:41:19> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1877]
+			"<00:41:19> <INFO>		UpdatePlayersData()", -- [1878]
+			"<00:41:21> <DEBUG>		GetML()", -- [1879]
+			"10/25/22", -- [1880]
+			"<00:42:14> <INFO>		Logged In", -- [1881]
+			"<00:42:14> [ML]<INFO>		Init", -- [1882]
+			"<00:42:14> <INFO>		RCLootCouncil	TradeUI enabled", -- [1883]
+			"<00:42:30> <INFO>		Varlouris-Dalaran	3.4.0	nil", -- [1884]
+			"<00:42:30> <DEBUG>		ActivateSkin	bfa", -- [1885]
+			"<00:42:42> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1886]
+			"<00:42:42> <INFO>		UpdatePlayersData()", -- [1887]
+			"<00:42:42> <INFO>		Player relog...", -- [1888]
+			"<00:42:48> <DEBUG>		GetML()", -- [1889]
+			"<01:00:14> <DEBUG>		Event:	PARTY_LEADER_CHANGED", -- [1890]
+			"<01:00:16> <DEBUG>		GetML()", -- [1891]
+			"<01:00:16> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1892]
+			"<01:00:16> <INFO>		UpdatePlayersData()", -- [1893]
+			"<01:00:18> <DEBUG>		GetML()", -- [1894]
+			"<01:01:45> <DEBUG>		Event:	LOOT_READY	true", -- [1895]
+			"<01:01:45> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3882-1004-4736-23682-0000576D70	80867", -- [1896]
+			"<01:01:45> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:143903::::::::60:263::22:1:8760:1:28:181:::::|h[The Horseman's Ring]|h|r	3	1	Creature-0-3882-1004-4736-23682-0000576D70	1", -- [1897]
+			"<01:01:45> <DEBUG>		Event:	LOOT_READY	true", -- [1898]
+			"<01:01:45> <DEBUG>		Adding to self.lootSlotInfo	1	nil	1	0	Creature-0-3882-1004-4736-23682-0000576D70	80867", -- [1899]
+			"<01:01:45> <DEBUG>		Adding to self.lootSlotInfo	3	|cff0070dd|Hitem:143903::::::::60:263::22:1:8760:1:28:181:::::|h[The Horseman's Ring]|h|r	3	1	Creature-0-3882-1004-4736-23682-0000576D70	1", -- [1900]
+			"<01:01:45> <DEBUG>		OnLootSlotCleared()	1	nil	1", -- [1901]
+			"<01:01:46> <DEBUG>		OnLootSlotCleared()	3	|cff0070dd|Hitem:143903::::::::60:263::22:1:8760:1:28:181:::::|h[The Horseman's Ring]|h|r	3", -- [1902]
+			"<01:01:46> <DEBUG>		Event:	LOOT_CLOSED", -- [1903]
+			"<01:01:46> <DEBUG>		Event:	LOOT_CLOSED", -- [1904]
+			"<01:01:46> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	143903	|cff0070dd|Hitem:143903::::::::60:263::22:1:8760:2:28:181:9:60:::::|h[The Horseman's Ring]|h|r	1	Varlouris	SHAMAN", -- [1905]
+			"<01:01:46> <Comm>		^1^Sl^T^N1^S23682^t^^	INSTANCE_CHAT	Varlouris-Dalaran", -- [1906]
+			"<01:01:46> <Comm>		^1^Sl^T^N1^S23682^t^^	INSTANCE_CHAT	Varlouris-Dalaran", -- [1907]
+			"<01:01:48> <DEBUG>		Storage:New	|cff0070dd|Hitem:143903::::::::60:263::22:1:8760:1:28:181:::::|h[The Horseman's Ring]|h|r	temp", -- [1908]
+			"<01:01:48> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:143903::::::::60:263::22:1:8760:1:28:181:::::||h[The Horseman's Ring]||h||r	5", -- [1909]
+			"<01:01:48> <DEBUG>		Found:	nil	nil	nil", -- [1910]
+			"<01:01:48> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	143902	|cff0070dd|Hitem:143902::::::::60:263::22:1:8760:2:28:181:9:50:::::|h[Wicked Witch's Signet]|h|r	1	Shothoof	HUNTER", -- [1911]
+			"<01:01:49> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:143903::::::::60:263::22:1:8760:1:28:181:::::||h[The Horseman's Ring]||h||r	5", -- [1912]
+			"<01:01:49> <DEBUG>		Found:	nil	nil	nil", -- [1913]
+			"<01:01:50> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:143903::::::::60:263::22:1:8760:1:28:181:::::||h[The Horseman's Ring]||h||r	5", -- [1914]
+			"<01:01:50> <DEBUG>		Found:	nil	nil	nil", -- [1915]
+			"<01:01:51> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:143903::::::::60:263::22:1:8760:1:28:181:::::||h[The Horseman's Ring]||h||r	5", -- [1916]
+			"<01:01:51> <DEBUG>		Found:	nil	nil	nil", -- [1917]
+			"<01:01:51> <ERROR>		UpdateAndSendRecentTradableItem: |cff0070dd|Hitem:143903::::::::60:263::22:1:8760:1:28:181:::::|h[The Horseman's Ring]|h|r not found in bags", -- [1918]
+			"<01:02:00> <DEBUG>		Event:	LOOT_READY	true", -- [1919]
+			"<01:02:00> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:33292::::::::60:263::22::1:28:181:::::|h[Hallowed Helm]|h|r	3	1	Item-3683-0-4000000AC451305D	1", -- [1920]
+			"<01:02:00> <DEBUG>		Event:	LOOT_READY	true", -- [1921]
+			"<01:02:00> <DEBUG>		Adding to self.lootSlotInfo	2	|cff0070dd|Hitem:33292::::::::60:263::22::1:28:181:::::|h[Hallowed Helm]|h|r	3	1	Item-3683-0-4000000AC451305D	1", -- [1922]
+			"<01:02:01> <DEBUG>		OnLootSlotCleared()	2	|cff0070dd|Hitem:33292::::::::60:263::22::1:28:181:::::|h[Hallowed Helm]|h|r	3", -- [1923]
+			"<01:02:01> <DEBUG>		Event:	LOOT_CLOSED", -- [1924]
+			"<01:02:01> <DEBUG>		Event:	LOOT_CLOSED", -- [1925]
+			"<01:02:01> <Comm>		^1^Sl^T^N1^S0^t^^	INSTANCE_CHAT	Varlouris-Dalaran", -- [1926]
+			"<01:02:01> <Comm>		^1^Sl^T^N1^S0^t^^	INSTANCE_CHAT	Varlouris-Dalaran", -- [1927]
+			"<01:02:03> <DEBUG>		Storage:New	|cff0070dd|Hitem:33292::::::::60:263::22::1:28:181:::::|h[Hallowed Helm]|h|r	temp", -- [1928]
+			"<01:02:03> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:33292::::::::60:263::22::1:28:181:::::||h[Hallowed Helm]||h||r	5", -- [1929]
+			"<01:02:03> <DEBUG>		Found item at	0	12", -- [1930]
+			"<01:02:03> <DEBUG>		Found:	0	12	0", -- [1931]
+			"<01:02:04> <DEBUG>		Storage: searching for item:	||cff0070dd||Hitem:33292::::::::60:263::22::1:28:181:::::||h[Hallowed Helm]||h||r	5", -- [1932]
+			"<01:02:04> <DEBUG>		Found item at	0	12", -- [1933]
+			"<01:02:04> <DEBUG>		Found:	0	12	0", -- [1934]
+			"<01:02:04> <Comm>		^1^Sn_t^T^N1^S|cff0070dd|Hitem:33292::::::::60:263::22::1:28:181:::::|h[Hallowed~`Helm]|h|r^N2^S0^t^^	INSTANCE_CHAT	Varlouris-Dalaran", -- [1935]
+			"<01:02:22> <DEBUG>		Event:	GROUP_LEFT	2	Party-3017-2-00004A14CB90", -- [1936]
+			"<01:02:22> <DEBUG>		GetML()", -- [1937]
+			"<01:02:30> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1938]
+			"<01:02:30> <INFO>		UpdatePlayersData()", -- [1939]
+			"<01:02:32> <DEBUG>		GetML()", -- [1940]
+			"10/25/22", -- [1941]
+			"<01:07:26> <INFO>		Logged In", -- [1942]
+			"<01:07:26> [ML]<INFO>		Init", -- [1943]
+			"<01:07:26> <INFO>		RCLootCouncil	TradeUI enabled", -- [1944]
+			"<01:07:49> <INFO>		Shanyt-ArgentDawn	3.4.0	nil", -- [1945]
+			"<01:07:49> <DEBUG>		ActivateSkin	bfa", -- [1946]
+			"<01:08:00> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1947]
+			"<01:08:00> <INFO>		UpdatePlayersData()", -- [1948]
+			"<01:08:00> <INFO>		Player relog...", -- [1949]
+			"<01:08:01> <DEBUG>		GetPlayersGuildRank()", -- [1950]
+			"<01:08:01> <DEBUG>		Found Guild Rank: Thuerge", -- [1951]
+			"<01:08:08> <DEBUG>		GetML()", -- [1952]
+			"<01:09:17> <DEBUG>		Event:	LOOT_READY	true", -- [1953]
+			"<01:09:17> <DEBUG>		Event:	LOOT_READY	true", -- [1954]
+			"10/25/22", -- [1955]
+			"<08:22:27> <INFO>		Logged In", -- [1956]
+			"<08:22:27> [ML]<INFO>		Init", -- [1957]
+			"<08:22:27> <INFO>		RCLootCouncil	TradeUI enabled", -- [1958]
+			"<08:22:52> <Data.Player>		UpdateCachedPlayer - couldn't get PlayerInfoByGUID	Shanyt-ArgentDawn	Player-75-058380E2", -- [1959]
+			"<08:22:52> <INFO>		Shanyt-ArgentDawn	3.4.0	nil", -- [1960]
+			"<08:22:52> <DEBUG>		ActivateSkin	bfa", -- [1961]
+			"<08:23:05> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	true	false", -- [1962]
+			"<08:23:05> <INFO>		UpdatePlayersData()", -- [1963]
+			"<08:23:05> <INFO>		Player relog...", -- [1964]
+			"<08:23:06> <DEBUG>		GetPlayersGuildRank()", -- [1965]
+			"<08:23:06> <DEBUG>		Found Guild Rank: Thuerge", -- [1966]
+			"<08:23:14> <DEBUG>		GetML()", -- [1967]
+			"<08:24:45> <DEBUG>		Event:	LOOT_READY	true", -- [1968]
+			"<08:24:45> <DEBUG>		Event:	LOOT_READY	true", -- [1969]
+			"<08:27:02> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1970]
+			"<08:27:02> <INFO>		UpdatePlayersData()", -- [1971]
+			"<08:27:09> <DEBUG>		GetML()", -- [1972]
+			"<08:27:55> <DEBUG>		Event:	PLAYER_ENTERING_WORLD	false	false", -- [1973]
+			"<08:27:55> <INFO>		UpdatePlayersData()", -- [1974]
+			"<08:28:02> <DEBUG>		GetML()", -- [1975]
+			"<08:30:16> <DEBUG>		Event:	LOOT_READY	true", -- [1976]
+			"<08:30:16> <DEBUG>		Event:	LOOT_READY	true", -- [1977]
+			"<08:34:38> <DEBUG>		Event:	LOOT_READY	true", -- [1978]
+			"<08:34:38> <DEBUG>		Event:	LOOT_READY	true", -- [1979]
+			"<08:34:38> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	187700	|cff0070dd|Hitem:187700::::::::60:71:::::::::|h[Progenium Ore]|h|r	3	Shanyt	WARRIOR", -- [1980]
+			"<08:34:54> <DEBUG>		Event:	LOOT_READY	true", -- [1981]
+			"<08:34:55> <DEBUG>		Event:	LOOT_READY	true", -- [1982]
+			"<08:35:16> <DEBUG>		Event:	LOOT_READY	true", -- [1983]
+			"<08:35:16> <DEBUG>		Event:	LOOT_READY	true", -- [1984]
+			"<08:35:17> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	190189	|cffa335ee|Hitem:190189::::::::60:71:::::::::|h[Sandworn Relic]|h|r	27	Shanyt	WARRIOR", -- [1985]
+			"<08:35:17> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	4	Shanyt	WARRIOR", -- [1986]
+			"<08:36:01> <DEBUG>		Event:	LOOT_READY	true", -- [1987]
+			"<08:36:02> <DEBUG>		Event:	LOOT_READY	true", -- [1988]
+			"<08:36:04> <DEBUG>		Event:	LOOT_READY	true", -- [1989]
+			"<08:36:05> <DEBUG>		Event:	LOOT_READY	true", -- [1990]
+			"<08:36:22> <DEBUG>		Event:	LOOT_READY	true", -- [1991]
+			"<08:36:22> <DEBUG>		Event:	LOOT_READY	true", -- [1992]
+			"<08:37:04> <DEBUG>		Event:	LOOT_READY	true", -- [1993]
+			"<08:37:04> <DEBUG>		Event:	LOOT_READY	true", -- [1994]
+			"<08:37:05> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	1	Shanyt	WARRIOR", -- [1995]
+			"<08:37:17> <DEBUG>		Event:	LOOT_READY	true", -- [1996]
+			"<08:37:18> <DEBUG>		Event:	LOOT_READY	true", -- [1997]
+			"<08:37:18> <DEBUG>		Event:	ENCOUNTER_LOOT_RECEIVED	0	189544	|cff0070dd|Hitem:189544::::::::60:71:::::::::|h[Anima Webbing]|h|r	1	Shanyt	WARRIOR", -- [1998]
+			"<08:37:46> <DEBUG>		Event:	LOOT_READY	true", -- [1999]
+			"<08:37:46> <DEBUG>		Event:	LOOT_READY	true", -- [2000]
+		},
 		["regionID"] = 1,
 		["cache"] = {
 			["player"] = {
@@ -2029,6 +2073,13 @@ RCLootCouncilDB = {
 					["class"] = "MAGE",
 					["cache_time"] = 1656301007,
 					["realm"] = "Dalaran",
+				},
+				["Player-3209-0B5D9416"] = {
+					["name"] = "Korakov-Azralon",
+					["guid"] = "Player-3209-0B5D9416",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1665720596,
+					["realm"] = "Azralon",
 				},
 				["Player-3676-06EE14C6"] = {
 					["name"] = "Elvìra-Area52",
@@ -2132,7 +2183,7 @@ RCLootCouncilDB = {
 					["name"] = "Avisar-Dalaran",
 					["guid"] = "Player-3683-0BE4455C",
 					["class"] = "PALADIN",
-					["cache_time"] = 1665493496,
+					["cache_time"] = 1666672415,
 					["realm"] = "Dalaran",
 				},
 				["Player-1425-0ADD9236"] = {
@@ -2183,6 +2234,13 @@ RCLootCouncilDB = {
 					["class"] = "ROGUE",
 					["cache_time"] = 1605417007,
 					["realm"] = "Azralon",
+				},
+				["Player-3683-0C1345B8"] = {
+					["name"] = "Galvarton-Dalaran",
+					["guid"] = "Player-3683-0C1345B8",
+					["class"] = "DRUID",
+					["cache_time"] = 1666566328,
+					["realm"] = "Dalaran",
 				},
 				["Player-104-0C7696FF"] = {
 					["name"] = "Lasesca-BurningBlade",
@@ -2351,11 +2409,11 @@ RCLootCouncilDB = {
 					["class"] = "PRIEST",
 					["role"] = "HEALER",
 					["cache_time"] = 1665189812,
-					["rank"] = "Unguilded",
+					["realm"] = "Zul'jin",
 					["name"] = "Okona-Zul'jin",
 					["specID"] = 256,
 					["enchantingLvl"] = 0,
-					["realm"] = "Zul'jin",
+					["rank"] = "Unguilded",
 				},
 				["Player-61-0E7E5EC1"] = {
 					["name"] = "Armaguth-Zul'jin",
@@ -2413,12 +2471,52 @@ RCLootCouncilDB = {
 					["cache_time"] = 1637396569,
 					["realm"] = "Thrall",
 				},
+				["Player-3678-0A2EC148"] = {
+					["name"] = "Achillees-Thrall",
+					["guid"] = "Player-3678-0A2EC148",
+					["class"] = "PALADIN",
+					["cache_time"] = 1656201982,
+					["realm"] = "Thrall",
+				},
+				["Player-3683-0CB6231E"] = {
+					["ilvl"] = 128.4375,
+					["guid"] = "Player-3683-0CB6231E",
+					["class"] = "SHAMAN",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1666672950,
+					["realm"] = "Dalaran",
+					["name"] = "Varlouris-Dalaran",
+					["specID"] = 263,
+					["enchantingLvl"] = 0,
+					["rank"] = "Unguilded",
+				},
+				["Player-162-06AEDAF0"] = {
+					["name"] = "Vage-EmeraldDream",
+					["guid"] = "Player-162-06AEDAF0",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1605290630,
+					["realm"] = "EmeraldDream",
+				},
+				["Player-61-0EB84EA0"] = {
+					["name"] = "Valmagus-Zul'jin",
+					["guid"] = "Player-61-0EB84EA0",
+					["class"] = "PALADIN",
+					["cache_time"] = 1666671051,
+					["realm"] = "Zul'jin",
+				},
 				["Player-61-0E7E95C9"] = {
 					["name"] = "Banesmuncy-Zul'jin",
 					["guid"] = "Player-61-0E7E95C9",
 					["class"] = "ROGUE",
 					["cache_time"] = 1623079042,
 					["realm"] = "",
+				},
+				["Player-3694-08E46D5F"] = {
+					["name"] = "Behinursistr-Lightbringer",
+					["guid"] = "Player-3694-08E46D5F",
+					["class"] = "PALADIN",
+					["cache_time"] = 1666582201,
+					["realm"] = "Lightbringer",
 				},
 				["Player-3661-0800BDD3"] = {
 					["name"] = "Magikluetus-Hyjal",
@@ -2434,12 +2532,40 @@ RCLootCouncilDB = {
 					["cache_time"] = 1653007271,
 					["realm"] = "Zul'jin",
 				},
+				["Player-1427-099E8EA1"] = {
+					["name"] = "Tenkuu-Ragnaros",
+					["guid"] = "Player-1427-099E8EA1",
+					["class"] = "DRUID",
+					["cache_time"] = 1665853360,
+					["realm"] = "Ragnaros",
+				},
+				["Player-1427-09C99D05"] = {
+					["name"] = "Mímún-Ragnaros",
+					["guid"] = "Player-1427-09C99D05",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1665977291,
+					["realm"] = "Ragnaros",
+				},
 				["Player-5-0C33F05D"] = {
 					["name"] = "Knuggs-Proudmoore",
 					["guid"] = "Player-5-0C33F05D",
 					["class"] = "SHAMAN",
 					["cache_time"] = 1605290594,
 					["realm"] = "Proudmoore",
+				},
+				["Player-75-0A31081D"] = {
+					["name"] = "Jingojaggot-ArgentDawn",
+					["guid"] = "Player-75-0A31081D",
+					["class"] = "PRIEST",
+					["cache_time"] = 1664126357,
+					["realm"] = "Argent Dawn",
+				},
+				["Player-3661-08494A3F"] = {
+					["name"] = "Bubbafreeze-Hyjal",
+					["guid"] = "Player-3661-08494A3F",
+					["class"] = "MAGE",
+					["cache_time"] = 1666582266,
+					["realm"] = "Hyjal",
 				},
 				["Player-1185-0D68AAE3"] = {
 					["name"] = "Aradiâ-Boulderfist",
@@ -2455,12 +2581,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605085324,
 					["realm"] = "Stormreaver",
 				},
+				["Player-3209-0A7AABB3"] = {
+					["name"] = "Daremyth-Azralon",
+					["guid"] = "Player-3209-0A7AABB3",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1666584102,
+					["realm"] = "Azralon",
+				},
 				["Player-61-0E2C464F"] = {
 					["name"] = "Brokzun-Zul'jin",
 					["guid"] = "Player-61-0E2C464F",
 					["class"] = "SHAMAN",
 					["cache_time"] = 1651547749,
 					["realm"] = "Zul'jin",
+				},
+				["Player-114-08D301B8"] = {
+					["name"] = "Beaujob-Dragonblight",
+					["guid"] = "Player-114-08D301B8",
+					["class"] = "HUNTER",
+					["cache_time"] = 1604700190,
+					["realm"] = "Dragonblight",
 				},
 				["Player-3209-098E57A8"] = {
 					["name"] = "Selareyn-Azralon",
@@ -2469,26 +2609,52 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605085431,
 					["realm"] = "Azralon",
 				},
-				["Player-57-0D347122"] = {
-					["name"] = "Bonegamble-Illidan",
-					["guid"] = "Player-57-0D347122",
-					["class"] = "ROGUE",
-					["cache_time"] = 1644648584,
-					["realm"] = "Illidan",
+				["Player-3676-0DEEFE93"] = {
+					["name"] = "Tendyy-Area52",
+					["guid"] = "Player-3676-0DEEFE93",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1665977441,
+					["realm"] = "Area52",
 				},
-				["Player-61-0E7E94CD"] = {
-					["name"] = "Dachas-Zul'jin",
-					["guid"] = "Player-61-0E7E94CD",
+				["Player-61-0EBAD280"] = {
+					["ilvl"] = 161.1875,
+					["guid"] = "Player-61-0EBAD280",
 					["class"] = "HUNTER",
-					["cache_time"] = 1623071709,
-					["realm"] = "",
+					["role"] = "DAMAGER",
+					["cache_time"] = 1666671900,
+					["realm"] = "Zul'jin",
+					["name"] = "Alatra-Zul'jin",
+					["specID"] = 254,
+					["enchantingLvl"] = 0,
+					["rank"] = "Unguilded",
 				},
-				["Player-151-08E7289A"] = {
-					["name"] = "Palmeroelia-Uther",
-					["guid"] = "Player-151-08E7289A",
+				["Player-3678-099FCF5E"] = {
+					["name"] = "Darquis-Thrall",
+					["guid"] = "Player-3678-099FCF5E",
+					["class"] = "HUNTER",
+					["cache_time"] = 1637137182,
+					["realm"] = "Thrall",
+				},
+				["Player-1428-0A2D5217"] = {
+					["name"] = "Lightcors-Quel'Thalas",
+					["guid"] = "Player-1428-0A2D5217",
+					["class"] = "PALADIN",
+					["cache_time"] = 1604874907,
+					["realm"] = "Quel'Thalas",
+				},
+				["Player-61-0B1B8B19"] = {
+					["name"] = "Vitapally-Zul'jin",
+					["guid"] = "Player-61-0B1B8B19",
+					["class"] = "PALADIN",
+					["cache_time"] = 1651270935,
+					["realm"] = "Zul'jin",
+				},
+				["Player-71-0E37B010"] = {
+					["name"] = "Naufrago-Undermine",
+					["guid"] = "Player-71-0E37B010",
 					["class"] = "DRUID",
-					["cache_time"] = 1646479721,
-					["realm"] = "Uther",
+					["cache_time"] = 1653007252,
+					["realm"] = "Undermine",
 				},
 				["Player-127-0928AAB7"] = {
 					["name"] = "Angelsfire-Frostwolf",
@@ -2522,7 +2688,7 @@ RCLootCouncilDB = {
 					["name"] = "Zulbathal-Zul'jin",
 					["guid"] = "Player-61-0CA8EB69",
 					["class"] = "DRUID",
-					["cache_time"] = 1665492508,
+					["cache_time"] = 1666670113,
 					["realm"] = "Zul'jin",
 				},
 				["Player-96-0CC10407"] = {
@@ -2539,12 +2705,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1651455328,
 					["realm"] = "EmeraldDream",
 				},
-				["Player-3678-0A2EC148"] = {
-					["name"] = "Achillees-Thrall",
-					["guid"] = "Player-3678-0A2EC148",
-					["class"] = "PALADIN",
-					["cache_time"] = 1656201982,
-					["realm"] = "Thrall",
+				["Player-69-0E72851F"] = {
+					["name"] = "Schopenhauer-Arthas",
+					["guid"] = "Player-69-0E72851F",
+					["class"] = "DRUID",
+					["cache_time"] = 1665357146,
+					["realm"] = "Arthas",
 				},
 				["Player-3209-08CE0CF5"] = {
 					["name"] = "Camuflada-Azralon",
@@ -2553,6 +2719,15 @@ RCLootCouncilDB = {
 					["cache_time"] = 1652493287,
 					["realm"] = "Azralon",
 				},
+				["Player-118-062E1619"] = {
+					["role"] = "DAMAGER",
+					["name"] = "Namphir-ScarletCrusade",
+					["guid"] = "Player-118-062E1619",
+					["realm"] = "ScarletCrusade",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1637137719,
+					["rank"] = "Unguilded",
+				},
 				["Player-3678-0B65E4F4"] = {
 					["name"] = "Rekithekami-Thrall",
 					["guid"] = "Player-3678-0B65E4F4",
@@ -2560,26 +2735,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1651546773,
 					["realm"] = "Thrall",
 				},
-				["Player-69-0E72851F"] = {
-					["name"] = "Schopenhauer-Arthas",
-					["guid"] = "Player-69-0E72851F",
-					["class"] = "DRUID",
-					["cache_time"] = 1665357146,
-					["realm"] = "Arthas",
+				["Player-1168-069744DF"] = {
+					["name"] = "Bluecoder-Cenarius",
+					["guid"] = "Player-1168-069744DF",
+					["class"] = "PRIEST",
+					["cache_time"] = 1605285204,
+					["realm"] = "Cenarius",
 				},
-				["Player-61-0EB84EA0"] = {
-					["name"] = "Valmagus-Zul'jin",
-					["guid"] = "Player-61-0EB84EA0",
-					["class"] = "PALADIN",
-					["cache_time"] = 1658018853,
-					["realm"] = "Zul'jin",
+				["Player-1171-07B982FB"] = {
+					["name"] = "Aryatha-WyrmrestAccord",
+					["guid"] = "Player-1171-07B982FB",
+					["class"] = "PRIEST",
+					["cache_time"] = 1652493102,
+					["realm"] = "WyrmrestAccord",
 				},
-				["Player-3675-079E7C51"] = {
-					["name"] = "Xhilvanas-MoonGuard",
-					["guid"] = "Player-3675-079E7C51",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1637137074,
-					["realm"] = "MoonGuard",
+				["Player-1427-0A4C7ECD"] = {
+					["name"] = "Estëlar-Ragnaros",
+					["guid"] = "Player-1427-0A4C7ECD",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1665977429,
+					["realm"] = "Ragnaros",
 				},
 				["Player-1427-076E7426"] = {
 					["name"] = "Requiemm-Ragnaros",
@@ -2588,26 +2763,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1645168417,
 					["realm"] = "Ragnaros",
 				},
-				["Player-1175-0CB5A0D6"] = {
-					["name"] = "Furyfortwo-Malfurion",
-					["guid"] = "Player-1175-0CB5A0D6",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1651547807,
-					["realm"] = "Malfurion",
-				},
-				["Player-1428-0915848B"] = {
-					["name"] = "Andarin-Quel'Thalas",
-					["guid"] = "Player-1428-0915848B",
-					["class"] = "MONK",
-					["cache_time"] = 1650503063,
-					["realm"] = "Quel'Thalas",
-				},
 				["Player-57-0CCA8BA0"] = {
 					["name"] = "Felpenny-Illidan",
 					["guid"] = "Player-57-0CCA8BA0",
 					["class"] = "DEMONHUNTER",
 					["cache_time"] = 1604700902,
 					["realm"] = "Illidan",
+				},
+				["Player-67-0DBC2E9B"] = {
+					["name"] = "Frankyice-Cho'gall",
+					["guid"] = "Player-67-0DBC2E9B",
+					["class"] = "PRIEST",
+					["cache_time"] = 1650500249,
+					["realm"] = "Cho'gall",
 				},
 				["Player-96-0AEAF37A"] = {
 					["name"] = "Grassy-Velen",
@@ -2623,33 +2791,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605058753,
 					["realm"] = "Ravencrest",
 				},
-				["Player-61-0B1B8B19"] = {
-					["name"] = "Vitapally-Zul'jin",
-					["guid"] = "Player-61-0B1B8B19",
-					["class"] = "PALADIN",
-					["cache_time"] = 1651270935,
-					["realm"] = "Zul'jin",
-				},
-				["Player-163-0AA06887"] = {
-					["name"] = "Bountyhunter-TwistingNether",
-					["guid"] = "Player-163-0AA06887",
-					["class"] = "HUNTER",
-					["cache_time"] = 1637292012,
-					["realm"] = "TwistingNether",
-				},
 				["Player-3678-0BB440F6"] = {
 					["name"] = "Chaddacus-Thrall",
 					["guid"] = "Player-3678-0BB440F6",
 					["class"] = "WARRIOR",
 					["cache_time"] = 1605671604,
 					["realm"] = "Thrall",
-				},
-				["Player-77-0985EB15"] = {
-					["name"] = "Kura-Destromath",
-					["guid"] = "Player-77-0985EB15",
-					["class"] = "PRIEST",
-					["cache_time"] = 1604698885,
-					["realm"] = "Destromath",
 				},
 				["Player-96-0CC11717"] = {
 					["name"] = "Afktornado-Skullcrusher",
@@ -2658,6 +2805,27 @@ RCLootCouncilDB = {
 					["cache_time"] = 1652493109,
 					["realm"] = "Skullcrusher",
 				},
+				["Player-100-016B5029"] = {
+					["name"] = "Rhodaria-EarthenRing",
+					["guid"] = "Player-100-016B5029",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1637293108,
+					["realm"] = "EarthenRing",
+				},
+				["Player-77-0985EB15"] = {
+					["name"] = "Kura-Destromath",
+					["guid"] = "Player-77-0985EB15",
+					["class"] = "PRIEST",
+					["cache_time"] = 1604698885,
+					["realm"] = "Destromath",
+				},
+				["Player-1175-0D89818C"] = {
+					["name"] = "Slanken-Gnomeregan",
+					["guid"] = "Player-1175-0D89818C",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1604700988,
+					["realm"] = "Gnomeregan",
+				},
 				["Player-154-027B2A1C"] = {
 					["name"] = "Landrice-Detheroc",
 					["guid"] = "Player-154-027B2A1C",
@@ -2665,40 +2833,40 @@ RCLootCouncilDB = {
 					["cache_time"] = 1665357272,
 					["realm"] = "Detheroc",
 				},
-				["Player-163-0B1A7ED5"] = {
-					["name"] = "Foexonexfoe-Lightninghoof",
-					["guid"] = "Player-163-0B1A7ED5",
-					["class"] = "ROGUE",
-					["cache_time"] = 1637460321,
-					["realm"] = "Lightninghoof",
+				["Player-1175-0E10C601"] = {
+					["name"] = "Sinpie-Moonrunner",
+					["guid"] = "Player-1175-0E10C601",
+					["class"] = "MAGE",
+					["cache_time"] = 1605292309,
+					["realm"] = "Moonrunner",
 				},
-				["Player-1428-0A2D5217"] = {
-					["name"] = "Lightcors-Quel'Thalas",
-					["guid"] = "Player-1428-0A2D5217",
-					["class"] = "PALADIN",
-					["cache_time"] = 1604874907,
-					["realm"] = "Quel'Thalas",
+				["Player-76-0A40D7E1"] = {
+					["name"] = "Kittywfleas-Sargeras",
+					["guid"] = "Player-76-0A40D7E1",
+					["class"] = "DRUID",
+					["cache_time"] = 1605291587,
+					["realm"] = "Sargeras",
 				},
-				["Player-73-0CC81FDC"] = {
-					["name"] = "Saxen-BleedingHollow",
-					["guid"] = "Player-73-0CC81FDC",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1605478962,
-					["realm"] = "BleedingHollow",
+				["Player-3209-0978F945"] = {
+					["name"] = "Abdumorramed-Azralon",
+					["guid"] = "Player-3209-0978F945",
+					["class"] = "DRUID",
+					["cache_time"] = 1666152129,
+					["realm"] = "Azralon",
 				},
-				["Player-67-0DBC2E9B"] = {
-					["name"] = "Frankyice-Cho'gall",
-					["guid"] = "Player-67-0DBC2E9B",
-					["class"] = "PRIEST",
-					["cache_time"] = 1650500249,
-					["realm"] = "Cho'gall",
+				["Player-75-0A33732A"] = {
+					["name"] = "Tyran-ArgentDawn",
+					["guid"] = "Player-75-0A33732A",
+					["class"] = "MAGE",
+					["cache_time"] = 1623596411,
+					["realm"] = "",
 				},
-				["Player-100-016B5029"] = {
-					["name"] = "Rhodaria-EarthenRing",
-					["guid"] = "Player-100-016B5029",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1637293108,
-					["realm"] = "EarthenRing",
+				["Player-75-0B7FB5EB"] = {
+					["name"] = "Lisperwind-TheScryers",
+					["guid"] = "Player-75-0B7FB5EB",
+					["class"] = "MAGE",
+					["cache_time"] = 1605660567,
+					["realm"] = "TheScryers",
 				},
 				["Player-69-0D1E083E"] = {
 					["name"] = "Quesadiazy-Arthas",
@@ -2711,31 +2879,31 @@ RCLootCouncilDB = {
 					["role"] = "DAMAGER",
 					["name"] = "Joseishi-Ragnaros",
 					["guid"] = "Player-1427-0D9EAC58",
-					["rank"] = "Member",
+					["realm"] = "Ragnaros",
 					["class"] = "MONK",
 					["cache_time"] = 1645168619,
-					["realm"] = "Ragnaros",
+					["rank"] = "Member",
 				},
-				["Player-11-0DF20FF0"] = {
-					["name"] = "Barnardo-Tichondrius",
-					["guid"] = "Player-11-0DF20FF0",
-					["class"] = "PALADIN",
-					["cache_time"] = 1644801415,
-					["realm"] = "Tichondrius",
+				["Player-1168-09FCF163"] = {
+					["name"] = "Crazycam-Frostmane",
+					["guid"] = "Player-1168-09FCF163",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1638111681,
+					["realm"] = "Frostmane",
 				},
-				["Player-75-0A33732A"] = {
-					["name"] = "Tyran-ArgentDawn",
-					["guid"] = "Player-75-0A33732A",
+				["Player-163-07EE0763"] = {
+					["name"] = "Drinkycrow-Lightninghoof",
+					["guid"] = "Player-163-07EE0763",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1605015590,
+					["realm"] = "Lightninghoof",
+				},
+				["Player-3676-0DA0924F"] = {
+					["name"] = "Varose-Area52",
+					["guid"] = "Player-3676-0DA0924F",
 					["class"] = "MAGE",
-					["cache_time"] = 1623596411,
-					["realm"] = "",
-				},
-				["Player-118-00DC8ECC"] = {
-					["name"] = "Drayk-Feathermoon",
-					["guid"] = "Player-118-00DC8ECC",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1637283490,
-					["realm"] = "Feathermoon",
+					["cache_time"] = 1650500431,
+					["realm"] = "Area52",
 				},
 				["Player-3676-0AD53F73"] = {
 					["name"] = "Tozal-Area52",
@@ -2758,19 +2926,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1604700787,
 					["realm"] = "Vek'nilash",
 				},
-				["Player-160-0B17AED5"] = {
-					["name"] = "Lodkavalier-Azuremyst",
-					["guid"] = "Player-160-0B17AED5",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1605660343,
-					["realm"] = "Azuremyst",
+				["Player-73-0DF508EF"] = {
+					["name"] = "Ineloras-BleedingHollow",
+					["guid"] = "Player-73-0DF508EF",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1604874543,
+					["realm"] = "BleedingHollow",
 				},
-				["Player-1070-08CBE548"] = {
-					["name"] = "Sapper-Terokkar",
-					["guid"] = "Player-1070-08CBE548",
-					["class"] = "HUNTER",
-					["cache_time"] = 1650503226,
-					["realm"] = "Terokkar",
+				["Player-3678-07B7087C"] = {
+					["name"] = "Cwaerslainte-Thrall",
+					["guid"] = "Player-3678-07B7087C",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1646479492,
+					["realm"] = "Thrall",
 				},
 				["Player-4-09D6EABB"] = {
 					["name"] = "Salsrath-Kilrogg",
@@ -2793,26 +2961,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605676860,
 					["realm"] = "Medivh",
 				},
-				["Player-73-0DF508EF"] = {
-					["name"] = "Ineloras-BleedingHollow",
-					["guid"] = "Player-73-0DF508EF",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1604874543,
-					["realm"] = "BleedingHollow",
+				["Player-160-0B17AED5"] = {
+					["name"] = "Lodkavalier-Azuremyst",
+					["guid"] = "Player-160-0B17AED5",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1605660343,
+					["realm"] = "Azuremyst",
 				},
-				["Player-3661-084E3FCA"] = {
-					["name"] = "Badazzme-Hyjal",
-					["guid"] = "Player-3661-084E3FCA",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1637282866,
-					["realm"] = "Hyjal",
+				["Player-1426-0AE01960"] = {
+					["name"] = "Lyssanoria-AeriePeak",
+					["guid"] = "Player-1426-0AE01960",
+					["class"] = "DRUID",
+					["cache_time"] = 1605285527,
+					["realm"] = "AeriePeak",
 				},
-				["Player-1185-087ADE86"] = {
-					["name"] = "Gulf-Quel'dorei",
-					["guid"] = "Player-1185-087ADE86",
-					["class"] = "PRIEST",
-					["cache_time"] = 1644648309,
-					["realm"] = "Quel'dorei",
+				["Player-1427-04360738"] = {
+					["name"] = "Afkautoshot-Ragnaros",
+					["guid"] = "Player-1427-04360738",
+					["class"] = "HUNTER",
+					["cache_time"] = 1637396416,
+					["realm"] = "Ragnaros",
 				},
 				["Player-3683-0C12FF2D"] = {
 					["name"] = "Noäh-Dalaran",
@@ -2821,40 +2989,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1604875537,
 					["realm"] = "Dalaran",
 				},
-				["Player-9-0DCC3930"] = {
-					["name"] = "Dominija-Kil'jaeden",
-					["guid"] = "Player-9-0DCC3930",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1605923326,
-					["realm"] = "Kil'jaeden",
+				["Player-3661-084E3FCA"] = {
+					["name"] = "Badazzme-Hyjal",
+					["guid"] = "Player-3661-084E3FCA",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1637282866,
+					["realm"] = "Hyjal",
 				},
-				["Player-1428-08F15DA5"] = {
-					["name"] = "Genjha-Quel'Thalas",
-					["guid"] = "Player-1428-08F15DA5",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1656201465,
-					["realm"] = "Quel'Thalas",
+				["Player-104-0CFDBC3A"] = {
+					["name"] = "Holygems-BurningBlade",
+					["guid"] = "Player-104-0CFDBC3A",
+					["class"] = "PALADIN",
+					["cache_time"] = 1665977438,
+					["realm"] = "BurningBlade",
 				},
-				["Player-84-001F04E3"] = {
-					["name"] = "Hownow-Dragonmaw",
-					["guid"] = "Player-84-001F04E3",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1604700977,
-					["realm"] = "Dragonmaw",
-				},
-				["Player-3208-0A438E6C"] = {
-					["name"] = "Starlightt-TolBarad",
-					["guid"] = "Player-3208-0A438E6C",
-					["class"] = "DRUID",
-					["cache_time"] = 1604877041,
-					["realm"] = "TolBarad",
-				},
-				["Player-57-0D11D4AD"] = {
-					["name"] = "Pantaloon-Illidan",
-					["guid"] = "Player-57-0D11D4AD",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1651270818,
-					["realm"] = "Illidan",
+				["Player-11-0D995E85"] = {
+					["name"] = "Huker-Tichondrius",
+					["guid"] = "Player-11-0D995E85",
+					["class"] = "HUNTER",
+					["cache_time"] = 1651033194,
+					["realm"] = "Tichondrius",
 				},
 				["Player-75-0A3EC0ED"] = {
 					["name"] = "Shaekhan-ArgentDawn",
@@ -2863,6 +3017,20 @@ RCLootCouncilDB = {
 					["cache_time"] = 1606106807,
 					["realm"] = "ArgentDawn",
 				},
+				["Player-57-0D11D4AD"] = {
+					["name"] = "Pantaloon-Illidan",
+					["guid"] = "Player-57-0D11D4AD",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1651270818,
+					["realm"] = "Illidan",
+				},
+				["Player-1136-08908D6E"] = {
+					["name"] = "Kashta-Garrosh",
+					["guid"] = "Player-1136-08908D6E",
+					["class"] = "ROGUE",
+					["cache_time"] = 1605213336,
+					["realm"] = "Garrosh",
+				},
 				["Player-84-0A47099D"] = {
 					["name"] = "Fissure-Dragonmaw",
 					["guid"] = "Player-84-0A47099D",
@@ -2870,12 +3038,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1644648586,
 					["realm"] = "Dragonmaw",
 				},
-				["Player-11-0BB8771F"] = {
-					["name"] = "Koepphunt-Tichondrius",
-					["guid"] = "Player-11-0BB8771F",
-					["class"] = "HUNTER",
-					["cache_time"] = 1604699132,
-					["realm"] = "Tichondrius",
+				["Player-61-0E7E9705"] = {
+					["name"] = "Abyronterner-Zul'jin",
+					["guid"] = "Player-61-0E7E9705",
+					["class"] = "MONK",
+					["cache_time"] = 1623090360,
+					["realm"] = "",
 				},
 				["Player-1175-0D8CD76A"] = {
 					["name"] = "Engel-Gnomeregan",
@@ -2896,12 +3064,12 @@ RCLootCouncilDB = {
 					["guid"] = "Player-75-058380E2",
 					["class"] = "WARRIOR",
 					["role"] = "DAMAGER",
-					["cache_time"] = 1665489642,
-					["rank"] = "Thuerge",
+					["cache_time"] = 1666674469,
+					["realm"] = "Argent Dawn",
 					["name"] = "Shanyt-ArgentDawn",
 					["specID"] = 71,
 					["enchantingLvl"] = 0,
-					["realm"] = "Argent Dawn",
+					["rank"] = "Thuerge",
 				},
 				["Player-3721-0BEE5730"] = {
 					["name"] = "Amonthree-Nagrand",
@@ -2917,12 +3085,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1637291844,
 					["realm"] = "Feathermoon",
 				},
-				["Player-1171-0A347FCC"] = {
-					["name"] = "Cassy-WyrmrestAccord",
-					["guid"] = "Player-1171-0A347FCC",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1605059571,
-					["realm"] = "WyrmrestAccord",
+				["Player-11-0BB8771F"] = {
+					["name"] = "Koepphunt-Tichondrius",
+					["guid"] = "Player-11-0BB8771F",
+					["class"] = "HUNTER",
+					["cache_time"] = 1604699132,
+					["realm"] = "Tichondrius",
 				},
 				["Player-3683-0C0E386E"] = {
 					["name"] = "Illingrath-Dalaran",
@@ -2938,40 +3106,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605290247,
 					["realm"] = "Alexstrasza",
 				},
-				["Player-61-0E7E9705"] = {
-					["name"] = "Abyronterner-Zul'jin",
-					["guid"] = "Player-61-0E7E9705",
-					["class"] = "MONK",
-					["cache_time"] = 1623090360,
-					["realm"] = "",
-				},
-				["Player-3693-0CEED0C4"] = {
-					["name"] = "Talonius-Kel'Thuzad",
-					["guid"] = "Player-3693-0CEED0C4",
-					["class"] = "PALADIN",
-					["cache_time"] = 1605292516,
-					["realm"] = "Kel'Thuzad",
-				},
-				["Player-1136-08908D6E"] = {
-					["name"] = "Kashta-Garrosh",
-					["guid"] = "Player-1136-08908D6E",
-					["class"] = "ROGUE",
-					["cache_time"] = 1605213336,
-					["realm"] = "Garrosh",
-				},
-				["Player-3661-075DC3EB"] = {
-					["name"] = "Zoli-Hyjal",
-					["guid"] = "Player-3661-075DC3EB",
-					["class"] = "MAGE",
-					["cache_time"] = 1605059252,
-					["realm"] = "Hyjal",
-				},
-				["Player-12-062BA247"] = {
-					["name"] = "Serenefyre-SilverHand",
-					["guid"] = "Player-12-062BA247",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1637206618,
-					["realm"] = "SilverHand",
+				["Player-60-0DF162C1"] = {
+					["name"] = "Fhaita-Stormrage",
+					["guid"] = "Player-60-0DF162C1",
+					["class"] = "PRIEST",
+					["cache_time"] = 1605291376,
+					["realm"] = "Stormrage",
 				},
 				["Player-1175-0B424A2A"] = {
 					["name"] = "Slaygore-Trollbane",
@@ -2980,6 +3120,34 @@ RCLootCouncilDB = {
 					["cache_time"] = 1644991472,
 					["realm"] = "Trollbane",
 				},
+				["Player-61-0E7EA216"] = {
+					["name"] = "Charbeatic-Zul'jin",
+					["guid"] = "Player-61-0E7EA216",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1633817191,
+					["realm"] = "Zul'jin",
+				},
+				["Player-3661-075DC3EB"] = {
+					["name"] = "Zoli-Hyjal",
+					["guid"] = "Player-3661-075DC3EB",
+					["class"] = "MAGE",
+					["cache_time"] = 1605059252,
+					["realm"] = "Hyjal",
+				},
+				["Player-1427-0DA4A1A1"] = {
+					["name"] = "Medalas-Ragnaros",
+					["guid"] = "Player-1427-0DA4A1A1",
+					["class"] = "MAGE",
+					["cache_time"] = 1650503038,
+					["realm"] = "Ragnaros",
+				},
+				["Player-3693-0CEED0C4"] = {
+					["name"] = "Talonius-Kel'Thuzad",
+					["guid"] = "Player-3693-0CEED0C4",
+					["class"] = "PALADIN",
+					["cache_time"] = 1605292516,
+					["realm"] = "Kel'Thuzad",
+				},
 				["Player-61-0E7EA0A9"] = {
 					["name"] = "Banuumine-Zul'jin",
 					["guid"] = "Player-61-0E7EA0A9",
@@ -2987,11 +3155,11 @@ RCLootCouncilDB = {
 					["cache_time"] = 1623093728,
 					["realm"] = "",
 				},
-				["Player-3683-0B9BC2E8"] = {
-					["name"] = "Rotclaugh-Dalaran",
-					["guid"] = "Player-3683-0B9BC2E8",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1648343669,
+				["Player-3683-0BD93453"] = {
+					["name"] = "Scarletglove-Dalaran",
+					["guid"] = "Player-3683-0BD93453",
+					["class"] = "MAGE",
+					["cache_time"] = 1606323520,
 					["realm"] = "Dalaran",
 				},
 				["Player-1185-0D69EB5E"] = {
@@ -3029,19 +3197,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1644991449,
 					["realm"] = "CenarionCircle",
 				},
-				["Player-1427-0DA4A1A1"] = {
-					["name"] = "Medalas-Ragnaros",
-					["guid"] = "Player-1427-0DA4A1A1",
-					["class"] = "MAGE",
-					["cache_time"] = 1650503038,
-					["realm"] = "Ragnaros",
-				},
-				["Player-3209-08503025"] = {
-					["name"] = "Kadrorg-Azralon",
-					["guid"] = "Player-3209-08503025",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1651271045,
-					["realm"] = "Azralon",
+				["Player-12-062BA247"] = {
+					["name"] = "Serenefyre-SilverHand",
+					["guid"] = "Player-12-062BA247",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1637206618,
+					["realm"] = "SilverHand",
 				},
 				["Player-3683-0B9BAB24"] = {
 					["name"] = "Thorinbane-Dalaran",
@@ -3049,6 +3210,13 @@ RCLootCouncilDB = {
 					["class"] = "WARRIOR",
 					["cache_time"] = 1648345032,
 					["realm"] = "Dalaran",
+				},
+				["Player-3209-08503025"] = {
+					["name"] = "Kadrorg-Azralon",
+					["guid"] = "Player-3209-08503025",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1651271045,
+					["realm"] = "Azralon",
 				},
 				["Player-61-0E7EA163"] = {
 					["name"] = "Guufnah-Zul'jin",
@@ -3064,12 +3232,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1665357259,
 					["realm"] = "Area52",
 				},
-				["Player-96-0CBEA15E"] = {
-					["name"] = "Durlok-BlackDragonflight",
-					["guid"] = "Player-96-0CBEA15E",
-					["class"] = "DRUID",
-					["cache_time"] = 1660438540,
-					["realm"] = "Black Dragonflight",
+				["Player-3209-0B3F2285"] = {
+					["name"] = "Archmage-Azralon",
+					["guid"] = "Player-3209-0B3F2285",
+					["class"] = "MAGE",
+					["cache_time"] = 1666586588,
+					["realm"] = "Azralon",
 				},
 				["Player-115-03E8863F"] = {
 					["name"] = "Bahummbug-Draenor",
@@ -3099,12 +3267,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605212276,
 					["realm"] = "Illidan",
 				},
-				["Player-3683-0BD93453"] = {
-					["name"] = "Scarletglove-Dalaran",
-					["guid"] = "Player-3683-0BD93453",
-					["class"] = "MAGE",
-					["cache_time"] = 1606323520,
-					["realm"] = "Dalaran",
+				["Player-61-0E7E1DFE"] = {
+					["name"] = "Laymonan-Zul'jin",
+					["guid"] = "Player-61-0E7E1DFE",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1622996535,
+					["realm"] = "",
 				},
 				["Player-61-0C01CBBE"] = {
 					["name"] = "Shoesalesman-Zul'jin",
@@ -3113,19 +3281,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1644903523,
 					["realm"] = "Zul'jin",
 				},
-				["Player-11-0D995E85"] = {
-					["name"] = "Huker-Tichondrius",
-					["guid"] = "Player-11-0D995E85",
-					["class"] = "HUNTER",
-					["cache_time"] = 1651033194,
-					["realm"] = "Tichondrius",
+				["Player-1171-0A347FCC"] = {
+					["name"] = "Cassy-WyrmrestAccord",
+					["guid"] = "Player-1171-0A347FCC",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1605059571,
+					["realm"] = "WyrmrestAccord",
 				},
-				["Player-1427-04360738"] = {
-					["name"] = "Afkautoshot-Ragnaros",
-					["guid"] = "Player-1427-04360738",
-					["class"] = "HUNTER",
-					["cache_time"] = 1637396416,
-					["realm"] = "Ragnaros",
+				["Player-96-0CBEA15E"] = {
+					["name"] = "Durlok-BlackDragonflight",
+					["guid"] = "Player-96-0CBEA15E",
+					["class"] = "DRUID",
+					["cache_time"] = 1660438540,
+					["realm"] = "Black Dragonflight",
 				},
 				["Player-61-0E7E9545"] = {
 					["name"] = "Jasmoney-Zul'jin",
@@ -3141,12 +3309,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1648402087,
 					["realm"] = "Dalaran",
 				},
-				["Player-3678-07B7087C"] = {
-					["name"] = "Cwaerslainte-Thrall",
-					["guid"] = "Player-3678-07B7087C",
-					["class"] = "SHAMAN",
-					["cache_time"] = 1646479492,
-					["realm"] = "Thrall",
+				["Player-3683-0B9BC2E8"] = {
+					["name"] = "Rotclaugh-Dalaran",
+					["guid"] = "Player-3683-0B9BC2E8",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1648343669,
+					["realm"] = "Dalaran",
 				},
 				["Player-155-067CCD01"] = {
 					["name"] = "Hoovehearted-Executus",
@@ -3169,47 +3337,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605290739,
 					["realm"] = "Proudmoore",
 				},
-				["Player-61-0E7EA216"] = {
-					["name"] = "Charbeatic-Zul'jin",
-					["guid"] = "Player-61-0E7EA216",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1633817191,
-					["realm"] = "Zul'jin",
-				},
-				["Player-60-0DF162C1"] = {
-					["name"] = "Fhaita-Stormrage",
-					["guid"] = "Player-60-0DF162C1",
-					["class"] = "PRIEST",
-					["cache_time"] = 1605291376,
-					["realm"] = "Stormrage",
-				},
-				["Player-61-0E7E1DFE"] = {
-					["name"] = "Laymonan-Zul'jin",
-					["guid"] = "Player-61-0E7E1DFE",
-					["class"] = "WARLOCK",
-					["cache_time"] = 1622996535,
-					["realm"] = "",
-				},
-				["Player-3684-0D9AC65F"] = {
-					["name"] = "Wizzytest-Mal'Ganis",
-					["guid"] = "Player-3684-0D9AC65F",
-					["class"] = "MAGE",
-					["cache_time"] = 1646443722,
-					["realm"] = "Mal'Ganis",
-				},
-				["Player-76-0A40D7E1"] = {
-					["name"] = "Kittywfleas-Sargeras",
-					["guid"] = "Player-76-0A40D7E1",
+				["Player-3208-0A438E6C"] = {
+					["name"] = "Starlightt-TolBarad",
+					["guid"] = "Player-3208-0A438E6C",
 					["class"] = "DRUID",
-					["cache_time"] = 1605291587,
-					["realm"] = "Sargeras",
-				},
-				["Player-1175-0E10C601"] = {
-					["name"] = "Sinpie-Moonrunner",
-					["guid"] = "Player-1175-0E10C601",
-					["class"] = "MAGE",
-					["cache_time"] = 1605292309,
-					["realm"] = "Moonrunner",
+					["cache_time"] = 1604877041,
+					["realm"] = "TolBarad",
 				},
 				["Player-118-0A78A279"] = {
 					["name"] = "Phaliias-Feathermoon",
@@ -3218,12 +3351,47 @@ RCLootCouncilDB = {
 					["cache_time"] = 1637292007,
 					["realm"] = "Feathermoon",
 				},
-				["Player-162-06AEDAF0"] = {
-					["name"] = "Vage-EmeraldDream",
-					["guid"] = "Player-162-06AEDAF0",
+				["Player-9-0DCC3930"] = {
+					["name"] = "Dominija-Kil'jaeden",
+					["guid"] = "Player-9-0DCC3930",
 					["class"] = "WARRIOR",
-					["cache_time"] = 1605290630,
-					["realm"] = "EmeraldDream",
+					["cache_time"] = 1605923326,
+					["realm"] = "Kil'jaeden",
+				},
+				["Player-3684-0D9AC65F"] = {
+					["name"] = "Wizzytest-Mal'Ganis",
+					["guid"] = "Player-3684-0D9AC65F",
+					["class"] = "MAGE",
+					["cache_time"] = 1646443722,
+					["realm"] = "Mal'Ganis",
+				},
+				["Player-84-001F04E3"] = {
+					["name"] = "Hownow-Dragonmaw",
+					["guid"] = "Player-84-001F04E3",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1604700977,
+					["realm"] = "Dragonmaw",
+				},
+				["Player-1428-08F15DA5"] = {
+					["name"] = "Genjha-Quel'Thalas",
+					["guid"] = "Player-1428-08F15DA5",
+					["class"] = "SHAMAN",
+					["cache_time"] = 1656201465,
+					["realm"] = "Quel'Thalas",
+				},
+				["Player-1185-087ADE86"] = {
+					["name"] = "Gulf-Quel'dorei",
+					["guid"] = "Player-1185-087ADE86",
+					["class"] = "PRIEST",
+					["cache_time"] = 1644648309,
+					["realm"] = "Quel'dorei",
+				},
+				["Player-163-0B1A7ED5"] = {
+					["name"] = "Foexonexfoe-Lightninghoof",
+					["guid"] = "Player-163-0B1A7ED5",
+					["class"] = "ROGUE",
+					["cache_time"] = 1637460321,
+					["realm"] = "Lightninghoof",
 				},
 				["Player-162-08013801"] = {
 					["name"] = "Mushmoo-EmeraldDream",
@@ -3239,12 +3407,12 @@ RCLootCouncilDB = {
 					["cache_time"] = 1606246434,
 					["realm"] = "Area52",
 				},
-				["Player-75-0B7FB5EB"] = {
-					["name"] = "Lisperwind-TheScryers",
-					["guid"] = "Player-75-0B7FB5EB",
-					["class"] = "MAGE",
-					["cache_time"] = 1605660567,
-					["realm"] = "TheScryers",
+				["Player-1070-08CBE548"] = {
+					["name"] = "Sapper-Terokkar",
+					["guid"] = "Player-1070-08CBE548",
+					["class"] = "HUNTER",
+					["cache_time"] = 1650503226,
+					["realm"] = "Terokkar",
 				},
 				["Player-1129-0AEB7F97"] = {
 					["name"] = "Baridan-Kargath",
@@ -3253,49 +3421,47 @@ RCLootCouncilDB = {
 					["cache_time"] = 1637460435,
 					["realm"] = "Kargath",
 				},
-				["Player-1168-069744DF"] = {
-					["name"] = "Bluecoder-Cenarius",
-					["guid"] = "Player-1168-069744DF",
-					["class"] = "PRIEST",
-					["cache_time"] = 1605285204,
-					["realm"] = "Cenarius",
-				},
-				["Player-118-062E1619"] = {
-					["role"] = "DAMAGER",
-					["name"] = "Namphir-ScarletCrusade",
-					["guid"] = "Player-118-062E1619",
-					["rank"] = "Unguilded",
+				["Player-118-00DC8ECC"] = {
+					["name"] = "Drayk-Feathermoon",
+					["guid"] = "Player-118-00DC8ECC",
 					["class"] = "WARRIOR",
-					["cache_time"] = 1637137719,
-					["realm"] = "ScarletCrusade",
+					["cache_time"] = 1637283490,
+					["realm"] = "Feathermoon",
 				},
-				["Player-1426-0AE01960"] = {
-					["name"] = "Lyssanoria-AeriePeak",
-					["guid"] = "Player-1426-0AE01960",
-					["class"] = "DRUID",
-					["cache_time"] = 1605285527,
-					["realm"] = "AeriePeak",
-				},
-				["Player-3676-0DA0924F"] = {
-					["name"] = "Varose-Area52",
-					["guid"] = "Player-3676-0DA0924F",
+				["Player-96-0CE1F32A"] = {
+					["name"] = "Kazmagus-Zuluhed",
+					["guid"] = "Player-96-0CE1F32A",
 					["class"] = "MAGE",
-					["cache_time"] = 1650500431,
-					["realm"] = "Area52",
+					["cache_time"] = 1666421006,
+					["realm"] = "Zuluhed",
 				},
-				["Player-163-07EE0763"] = {
-					["name"] = "Drinkycrow-Lightninghoof",
-					["guid"] = "Player-163-07EE0763",
-					["class"] = "DEATHKNIGHT",
-					["cache_time"] = 1605015590,
-					["realm"] = "Lightninghoof",
+				["Player-1428-0915848B"] = {
+					["name"] = "Andarin-Quel'Thalas",
+					["guid"] = "Player-1428-0915848B",
+					["class"] = "MONK",
+					["cache_time"] = 1650503063,
+					["realm"] = "Quel'Thalas",
 				},
-				["Player-3678-099FCF5E"] = {
-					["name"] = "Darquis-Thrall",
-					["guid"] = "Player-3678-099FCF5E",
+				["Player-3684-0D251455"] = {
+					["name"] = "Geiwen-Mal'Ganis",
+					["guid"] = "Player-3684-0D251455",
+					["class"] = "MONK",
+					["cache_time"] = 1665853450,
+					["realm"] = "Mal'Ganis",
+				},
+				["Player-61-0E7E94CD"] = {
+					["name"] = "Dachas-Zul'jin",
+					["guid"] = "Player-61-0E7E94CD",
 					["class"] = "HUNTER",
-					["cache_time"] = 1637137182,
-					["realm"] = "Thrall",
+					["cache_time"] = 1623071709,
+					["realm"] = "",
+				},
+				["Player-73-0CC81FDC"] = {
+					["name"] = "Saxen-BleedingHollow",
+					["guid"] = "Player-73-0CC81FDC",
+					["class"] = "DEATHKNIGHT",
+					["cache_time"] = 1605478962,
+					["realm"] = "BleedingHollow",
 				},
 				["Player-163-07ECB002"] = {
 					["name"] = "Aggrivation-Lightninghoof",
@@ -3311,19 +3477,19 @@ RCLootCouncilDB = {
 					["cache_time"] = 1650219579,
 					["realm"] = "Azuremyst",
 				},
-				["Player-114-08D301B8"] = {
-					["name"] = "Beaujob-Dragonblight",
-					["guid"] = "Player-114-08D301B8",
+				["Player-163-0AA06887"] = {
+					["name"] = "Bountyhunter-TwistingNether",
+					["guid"] = "Player-163-0AA06887",
 					["class"] = "HUNTER",
-					["cache_time"] = 1604700190,
-					["realm"] = "Dragonblight",
+					["cache_time"] = 1637292012,
+					["realm"] = "TwistingNether",
 				},
-				["Player-1175-0D89818C"] = {
-					["name"] = "Slanken-Gnomeregan",
-					["guid"] = "Player-1175-0D89818C",
-					["class"] = "WARRIOR",
-					["cache_time"] = 1604700988,
-					["realm"] = "Gnomeregan",
+				["Player-11-0DF20FF0"] = {
+					["name"] = "Barnardo-Tichondrius",
+					["guid"] = "Player-11-0DF20FF0",
+					["class"] = "PALADIN",
+					["cache_time"] = 1644801415,
+					["realm"] = "Tichondrius",
 				},
 				["Player-47-001F075B"] = {
 					["name"] = "Murgle-Eitrigg",
@@ -3332,20 +3498,6 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605058082,
 					["realm"] = "Eitrigg",
 				},
-				["Player-1171-07B982FB"] = {
-					["name"] = "Aryatha-WyrmrestAccord",
-					["guid"] = "Player-1171-07B982FB",
-					["class"] = "PRIEST",
-					["cache_time"] = 1652493102,
-					["realm"] = "WyrmrestAccord",
-				},
-				["Player-1168-09FCF163"] = {
-					["name"] = "Crazycam-Frostmane",
-					["guid"] = "Player-1168-09FCF163",
-					["class"] = "DEMONHUNTER",
-					["cache_time"] = 1638111681,
-					["realm"] = "Frostmane",
-				},
 				["Player-3726-0BDFB652"] = {
 					["name"] = "Shelah-Khaz'goroth",
 					["guid"] = "Player-3726-0BDFB652",
@@ -3353,12 +3505,26 @@ RCLootCouncilDB = {
 					["cache_time"] = 1605424192,
 					["realm"] = "Khaz'goroth",
 				},
-				["Player-71-0E37B010"] = {
-					["name"] = "Naufrago-Undermine",
-					["guid"] = "Player-71-0E37B010",
-					["class"] = "DRUID",
-					["cache_time"] = 1653007252,
-					["realm"] = "Undermine",
+				["Player-1136-0922EBD1"] = {
+					["name"] = "Dgnstar-Garrosh",
+					["guid"] = "Player-1136-0922EBD1",
+					["class"] = "WARLOCK",
+					["cache_time"] = 1666582329,
+					["realm"] = "Garrosh",
+				},
+				["Player-1175-0CB5A0D6"] = {
+					["name"] = "Furyfortwo-Malfurion",
+					["guid"] = "Player-1175-0CB5A0D6",
+					["class"] = "WARRIOR",
+					["cache_time"] = 1651547807,
+					["realm"] = "Malfurion",
+				},
+				["Player-3675-079E7C51"] = {
+					["name"] = "Xhilvanas-MoonGuard",
+					["guid"] = "Player-3675-079E7C51",
+					["class"] = "DEMONHUNTER",
+					["cache_time"] = 1637137074,
+					["realm"] = "MoonGuard",
 				},
 				["Player-3683-0A9B9254"] = {
 					["name"] = "Allostery-Dalaran",
@@ -3367,84 +3533,31 @@ RCLootCouncilDB = {
 					["cache_time"] = 1644991417,
 					["realm"] = "Dalaran",
 				},
-				["Player-61-0EBAD280"] = {
-					["ilvl"] = 161.1875,
-					["guid"] = "Player-61-0EBAD280",
-					["class"] = "HUNTER",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1658019079,
-					["rank"] = "Unguilded",
-					["name"] = "Alatra-Zul'jin",
-					["specID"] = 254,
-					["enchantingLvl"] = 0,
-					["realm"] = "Zul'jin",
-				},
-				["Player-3683-0CB6231E"] = {
-					["ilvl"] = 128.4375,
-					["guid"] = "Player-3683-0CB6231E",
-					["class"] = "SHAMAN",
-					["role"] = "DAMAGER",
-					["cache_time"] = 1653803900,
-					["rank"] = "Unguilded",
-					["name"] = "Varlouris-Dalaran",
-					["specID"] = 263,
-					["enchantingLvl"] = 0,
-					["realm"] = "Dalaran",
-				},
-				["Player-75-0A31081D"] = {
-					["name"] = "Jingojaggot-ArgentDawn",
-					["guid"] = "Player-75-0A31081D",
+				["Player-157-0B88B9EB"] = {
+					["name"] = "Geron-DarkIron",
+					["guid"] = "Player-157-0B88B9EB",
 					["class"] = "PRIEST",
-					["cache_time"] = 1664126357,
-					["realm"] = "Argent Dawn",
+					["cache_time"] = 1666582151,
+					["realm"] = "DarkIron",
+				},
+				["Player-151-08E7289A"] = {
+					["name"] = "Palmeroelia-Uther",
+					["guid"] = "Player-151-08E7289A",
+					["class"] = "DRUID",
+					["cache_time"] = 1646479721,
+					["realm"] = "Uther",
+				},
+				["Player-57-0D347122"] = {
+					["name"] = "Bonegamble-Illidan",
+					["guid"] = "Player-57-0D347122",
+					["class"] = "ROGUE",
+					["cache_time"] = 1644648584,
+					["realm"] = "Illidan",
 				},
 			},
 		},
-	},
-	["profileKeys"] = {
-		["Vancard - Zul'jin"] = "Default",
-		["Armaguth - Zul'jin"] = "Default",
-		["Charbeatic - Zul'jin"] = "Default",
-		["Valmagus - Zul'jin"] = "Default",
-		["Shaekhan - Zul'jin"] = "Default",
-		["Shanyt - Zul'jin"] = "Default",
-		["Avisar - Dalaran"] = "Default",
-		["Banuumine - Zul'jin"] = "Default",
-		["Thorinbane - Dalaran"] = "Default",
-		["Shaekhan - Argent Dawn"] = "Default",
-		["Ruffinton - Dalaran"] = "Default",
-		["Malivant - Dalaran"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
-		["Dachas - Zul'jin"] = "Default",
-		["Jingojaggot - Argent Dawn"] = "Default",
-		["Tyranasticus - Zul'jin"] = "Default",
-		["Banesmuncy - Zul'jin"] = "Default",
-		["Illingrath - Dalaran"] = "Default",
-		["Brotus - Argent Dawn"] = "Default",
-		["Tyrannithal - Argent Dawn"] = "Default",
-		["Zulbathal - Zul'jin"] = "Default",
-		["Kelvalatar - Dalaran"] = "Default",
-		["Jingojaggot - Zul'jin"] = "Default",
-		["Tinkster - Dalaran"] = "Default",
-		["Shimzo - Zul'jin"] = "Default",
-		["Okona - Zul'jin"] = "Default",
-		["Guufnah - Zul'jin"] = "Default",
-		["Fantastiburo - Zul'jin"] = "Default",
-		["Kotalkhan - Zul'jin"] = "Default",
-		["Tyran - Argent Dawn"] = "Default",
-		["Laymonan - Zul'jin"] = "Default",
-		["Serbitechna - Dalaran"] = "Default",
-		["Vadder - Argent Dawn"] = "Default",
-		["Shanyt - Argent Dawn"] = "Default",
-		["Datgore - Zul'jin"] = "Default",
-		["Darnastris - Dalaran"] = "Default",
-		["Rotclaugh - Dalaran"] = "Default",
-		["Alatra - Zul'jin"] = "Default",
-		["Abyronterner - Zul'jin"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
-		["Jasmoney - Zul'jin"] = "Default",
-		["Tendralas - Dalaran"] = "Default",
-		["Mandles - Zul'jin"] = "Default",
+		["locale"] = "enUS",
+		["version"] = "3.4.0",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -3455,14 +3568,14 @@ RCLootCouncilDB = {
 						0.84, -- [2]
 						1, -- [3]
 					},
+					["background"] = "Blizzard Garrison Background 3",
+					["border"] = "Blizzard Dialog",
 					["borderColor"] = {
 						0.62, -- [1]
 						0.86, -- [2]
 						0.87, -- [3]
 						0.85, -- [4]
 					},
-					["background"] = "Blizzard Garrison Background 3",
-					["border"] = "Blizzard Dialog",
 				},
 				["lootframe"] = {
 					["bgColor"] = {
@@ -3470,14 +3583,14 @@ RCLootCouncilDB = {
 						0.84, -- [2]
 						1, -- [3]
 					},
+					["background"] = "Blizzard Garrison Background 3",
+					["border"] = "Blizzard Dialog",
 					["borderColor"] = {
 						0.62, -- [1]
 						0.86, -- [2]
 						0.87, -- [3]
 						0.85, -- [4]
 					},
-					["background"] = "Blizzard Garrison Background 3",
-					["border"] = "Blizzard Dialog",
 				},
 				["default"] = {
 					["bgColor"] = {
@@ -3485,14 +3598,14 @@ RCLootCouncilDB = {
 						0.84, -- [2]
 						1, -- [3]
 					},
+					["background"] = "Blizzard Garrison Background 3",
+					["border"] = "Blizzard Dialog",
 					["borderColor"] = {
 						0.62, -- [1]
 						0.86, -- [2]
 						0.87, -- [3]
 						0.85, -- [4]
 					},
-					["background"] = "Blizzard Garrison Background 3",
-					["border"] = "Blizzard Dialog",
 				},
 			},
 		},
@@ -3515,63 +3628,38 @@ RCLootCouncilLootDB = {
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Dachas - Zul'jin"] = "Dachas - Zul'jin",
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
+		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
 		["Tyranasticus - Zul'jin"] = "Tyranasticus - Zul'jin",
-		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
 		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
+		["Galvarton - Dalaran"] = "Galvarton - Dalaran",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
-		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
-		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
-		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
-		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
+		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
+		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
-		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
-		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
-		["Laymonan - Zul'jin"] = "Laymonan - Zul'jin",
-		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
-		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
+		["Laymonan - Zul'jin"] = "Laymonan - Zul'jin",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
+		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
+		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
-		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
+		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
 		["Abyronterner - Zul'jin"] = "Abyronterner - Zul'jin",
-		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Jasmoney - Zul'jin"] = "Jasmoney - Zul'jin",
-		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
+		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
 		["Mandles - Zul'jin"] = "Mandles - Zul'jin",
 	},
 	["factionrealm"] = {
 		["Horde - Argent Dawn"] = {
-			["Marcí-Area52"] = {
-				{
-					["mapID"] = 1718,
-					["date"] = "22/09/20",
-					["class"] = "SHAMAN",
-					["iSubClass"] = 3,
-					["groupSize"] = 0,
-					["isAwardReason"] = false,
-					["time"] = "12:17:48",
-					["iClass"] = 4,
-					["id"] = "1600816668-0",
-					["owner"] = "Marcí-Area52",
-					["response"] = "Bonus Loot",
-					["difficultyID"] = 0,
-					["lootWon"] = "|cffa335ee|Hitem:169927::::::::120:263::3:3:4798:1487:4786:::|h[Deepcaller's Clasp]|h|r",
-					["color"] = {
-						1, -- [1]
-						0.8, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["responseID"] = "BONUSROLL",
-					["instance"] = "Nazjatar-",
-					["boss"] = "Unknown",
-				}, -- [1]
-			},
 			["Gënërícnamë-Thrall"] = {
 				{
 					["mapID"] = 1642,
@@ -3587,15 +3675,41 @@ RCLootCouncilLootDB = {
 					["response"] = "Bonus Loot",
 					["difficultyID"] = 0,
 					["lootWon"] = "|cffa335ee|Hitem:164385::::::::120:267::3:5:4798:40:1477:5870:4784:::|h[Desert Nomad's Wrap]|h|r",
+					["boss"] = "Blackhand",
+					["responseID"] = "BONUSROLL",
+					["instance"] = "Zandalar-",
 					["color"] = {
 						1, -- [1]
 						0.8, -- [2]
 						0, -- [3]
 						1, -- [4]
 					},
+				}, -- [1]
+			},
+			["Marcí-Area52"] = {
+				{
+					["mapID"] = 1718,
+					["date"] = "22/09/20",
+					["class"] = "SHAMAN",
+					["iSubClass"] = 3,
+					["groupSize"] = 0,
+					["isAwardReason"] = false,
+					["time"] = "12:17:48",
+					["iClass"] = 4,
+					["id"] = "1600816668-0",
+					["owner"] = "Marcí-Area52",
+					["response"] = "Bonus Loot",
+					["difficultyID"] = 0,
+					["lootWon"] = "|cffa335ee|Hitem:169927::::::::120:263::3:3:4798:1487:4786:::|h[Deepcaller's Clasp]|h|r",
+					["boss"] = "Unknown",
 					["responseID"] = "BONUSROLL",
-					["instance"] = "Zandalar-",
-					["boss"] = "Blackhand",
+					["instance"] = "Nazjatar-",
+					["color"] = {
+						1, -- [1]
+						0.8, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
 				}, -- [1]
 			},
 		},

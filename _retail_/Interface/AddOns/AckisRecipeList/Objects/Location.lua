@@ -311,7 +311,9 @@ local ZONE_MAP_IDS = {
 	DE_OTHER_SIDE = 1680,
 	CASTLE_NATHRIA = 1735,
 	KORTHIA = 1961,
+	ZERETH_MORTIS = 1970,
 	SANCTUM_OF_DOMINATION = 1998,
+	SEPULCHER_OF_THE_FIRST_ONES = 2047,
 }
 
 -- Hard code this because I so don't want to change up the coding that much

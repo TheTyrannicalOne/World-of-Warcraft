@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.6.5
+
+* Fixing bugs for 10.0
+
+## 1.6.4
+
+* Booping version to support 10.0.0
+
 ## 1.6.3
 
 * Booping version to support 9.2.7

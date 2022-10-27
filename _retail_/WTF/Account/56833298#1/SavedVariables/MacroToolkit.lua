@@ -1,11 +1,5 @@
 
 MacroToolkitDB = {
-	["global"] = {
-		["backups"] = {
-		},
-		["ebackups"] = {
-		},
-	},
 	["profileKeys"] = {
 		["Vancard - Zul'jin"] = "profile",
 		["Armaguth - Zul'jin"] = "profile",
@@ -22,34 +16,41 @@ MacroToolkitDB = {
 		["Durlok - Black Dragonflight"] = "profile",
 		["Dachas - Zul'jin"] = "profile",
 		["Jingojaggot - Argent Dawn"] = "profile",
+		["Tendralas - Dalaran"] = "profile",
 		["Tyranasticus - Zul'jin"] = "profile",
-		["Banesmuncy - Zul'jin"] = "profile",
 		["Illingrath - Dalaran"] = "profile",
 		["Brotus - Argent Dawn"] = "profile",
+		["Galvarton - Dalaran"] = "profile",
 		["Tyrannithal - Argent Dawn"] = "profile",
 		["Zulbathal - Zul'jin"] = "profile",
 		["Kelvalatar - Dalaran"] = "profile",
-		["Jingojaggot - Zul'jin"] = "profile",
-		["Tinkster - Dalaran"] = "profile",
-		["Shimzo - Zul'jin"] = "profile",
+		["Varlouris - Dalaran"] = "profile",
 		["Okona - Zul'jin"] = "profile",
-		["Guufnah - Zul'jin"] = "profile",
+		["Jingojaggot - Zul'jin"] = "profile",
+		["Alatra - Zul'jin"] = "profile",
+		["Tinkster - Dalaran"] = "profile",
 		["Fantastiburo - Zul'jin"] = "profile",
-		["Kotalkhan - Zul'jin"] = "profile",
-		["Tyran - Argent Dawn"] = "profile",
-		["Laymonan - Zul'jin"] = "profile",
-		["Serbitechna - Dalaran"] = "profile",
-		["Vadder - Argent Dawn"] = "profile",
-		["Shanyt - Argent Dawn"] = "profile",
 		["Datgore - Zul'jin"] = "profile",
+		["Kotalkhan - Zul'jin"] = "profile",
+		["Laymonan - Zul'jin"] = "profile",
+		["Shanyt - Argent Dawn"] = "profile",
+		["Vadder - Argent Dawn"] = "profile",
+		["Serbitechna - Dalaran"] = "profile",
+		["Tyran - Argent Dawn"] = "profile",
 		["Darnastris - Dalaran"] = "profile",
 		["Rotclaugh - Dalaran"] = "profile",
-		["Alatra - Zul'jin"] = "profile",
+		["Guufnah - Zul'jin"] = "profile",
 		["Abyronterner - Zul'jin"] = "profile",
-		["Varlouris - Dalaran"] = "profile",
+		["Shimzo - Zul'jin"] = "profile",
 		["Jasmoney - Zul'jin"] = "profile",
-		["Tendralas - Dalaran"] = "profile",
+		["Banesmuncy - Zul'jin"] = "profile",
 		["Mandles - Zul'jin"] = "profile",
+	},
+	["global"] = {
+		["ebackups"] = {
+		},
+		["backups"] = {
+		},
 	},
 	["profiles"] = {
 		["profile"] = {

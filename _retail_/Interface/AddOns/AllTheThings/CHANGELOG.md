@@ -1,22 +1,52 @@
 # AllTheThings
 
-## [SL-2.9.11](https://github.com/DFortun81/AllTheThings/tree/SL-2.9.11) (2022-10-09)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.9.10...SL-2.9.11) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [DF-3.0.0](https://github.com/DFortun81/AllTheThings/tree/DF-3.0.0) (2022-10-26)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.9.13...DF-3.0.0) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
+
+### Dragonflight is (almost) here! 🐉
+
+Patch 10.0 is here and with it a new and shiny AllTheThings 3.0 🎉
+
+Huge thanks goes to @gbrage/Braghe who almost singlehandedly did all the work on beta/PTR. Especially helpful to him were @AlexSoft and @nooh with all the error reports they sent in #beta-chat.
+
+### What's included in this update (and what's missing)
+
+While we tried our best to add all the new content new expansion offers we only had so much time on our hands. We have added the usual assortment of Achievements, Factions, Illusions,  Mounts, Pets, Quests, Titles, Toys, Transmog. Below is the (not comprehensive) list of missing things that will be fixed in the following releases:
+
+- Pre-patch event (starting November 15) is missing
+- Much of the new Transmog will not display and count correctly
+- Dungeons & Raids are incomplete, including whole difficulties and some Achievements
+- Flight Paths are completly missing
+- Battle Pets are half done
+- Achievements are almost done but need some sources and more information on how to get them. But they will not display in the main list.
+- World Quests are half done
+- All Questlines exist except for two (one in Azure Span and one in Thaldraszus)
+- Treasures are missing
+- Rares are missing
+- Expansion features:
+  - Cobalt Assembly is missing (including all Achievements)
+  - Faction Questlines are only up to Renown 8
+  - Climbing is incomplete
+  - Waywards are missing
+  - Grand Hunts are incomplete
+  - The Siege on Dragonbane Keep is incomplete
+  - Iskaara fishing is mostly missing. Iskaara cooking is incomplete
+ - Only Alchemy and Tailoring  are updated
+ - A bug with displaying PvP DF Season 1. But still need to fix lots of Transmog
+ - New Class Trial sets are not displaying due to a bug
 
 ### Functional changes
 
-- Adjusted 'Lore' tooltip text to be a slightly darker blue to make it distinct from custom Descriptions (will probably be adjusted in future). Just a reminder that you can disable Lore text but still have helpful descriptions enabled, check it in Settings!
-- Automatic expansion of groups will no longer expand Difficulty headers (doesn't affect when clicking the groups manually).
-- Reverted logic that moves Common Boss Drops and Zone Drops in minilists. This is compensated by those respective headers no longer being automatically expanded inside instances due to the 'Expand Current Difficulty' option.
+- Initial support for Dragonflight changes
+- Added a 'Future Unobtainable' category to the Dynamic groups to help show what things are known/expected to become unavailable in a predicted future patch. You can use this to hunt the content that's known to become unobtainable with expansion release next month.
 
 
-### Data fixes
+### Logic fixes
 
-- You can get the Shrouded Banner of the Opportune toy again if you missed it during The Great Push SL Season 4. Check out [Raider.IO's Break the Meta](https://raider.io/news/403-break-the-meta-s4-arrives-october-4th) event!
-- **Professions updates** (most of these are only updates of content from Classic up to WotLK): gathering professions (+Mining/Skinning BfA Quests), Alchemy, Tailoring (up to Cataclysm), Cooking, Engineering, Enchanting, Leatherworking, Blacksmithing.
-- Ongoing adjustments to Achievements, this time around in the Exploration category.
-- Updated Wintergrasp.
-- Fixed a bunch of Northrend vendors.
-- Fixed lots of duplicate quests.
-- Other fixes.
+- Adjusted Nested Quest logic to ignore treating Locked Quests as an incomplete part of the Quest chain if the current Profile is set to not track Locked Quests (this should help not show some random breadcrumb 50 quests down in the chain on your alt that doesn't care and isn't tracking it).
+
+As this is a new expansion we have some unresolved bugs that will be fixed in future versions:
+- AllTheThings map icon is inside the minimap
+- You can't change profile because the switch button is not functional
+- ATT tooltips (or parts of them) disappear after a few milliseconds

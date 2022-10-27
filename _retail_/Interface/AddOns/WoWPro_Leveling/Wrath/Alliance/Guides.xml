@@ -18,6 +18,7 @@
   <Script file="VAN_WOTLK_42_50_Alliance.lua"/>
   <Script file="VAN_WOTLK_50_55_Alliance.lua"/>
   <Script file="VAN_WOTLK_55_60_Alliance.lua"/>
+  <Script file="WOTLK_Intro.lua"/>
   <Script file="WOTLK_Borean_Tundra.lua"/>
   <Script file="WOTLK_Dragonblight.lua"/>
   <Script file="WOTLK_Grizzly_Hills.lua"/>
@@ -31,5 +32,5 @@
   <Script file="50_51_Dungeon_Maraudon.lua"/>
   <Script file="53_60_Dungeon_Blackrock_Depths.lua"/>
   <Script file="59_62_Dungeon_Hellfire_Ramparts.lua"/>
-  <Script file="70_72_Dungeon_Utgarde_Keep.lua"/>
+  <Script file="68_72_Dungeon_Utgarde_Keep.lua"/>
  </Ui>

@@ -5,8 +5,12 @@ BigWigs:AddColors("Eranog", {
 	[370615] = "orange",
 	[370649] = "blue",
 	[390715] = {"blue","red"},
-	[394904] = {"blue","purple"},
+	[393780] = "red",
+	[394906] = {"blue","purple"},
 	[394917] = "yellow",
+	[396022] = "yellow",
+	[396023] = "yellow",
+	[396094] = "blue",
 })
 
 BigWigs:AddColors("Terros", {
@@ -18,7 +22,7 @@ BigWigs:AddColors("Terros", {
 	[382458] = "blue",
 	[383073] = "yellow",
 	[388393] = "yellow",
-	[391306] = "blue",
+	[391592] = {"blue","yellow"},
 })
 
 BigWigs:AddColors("The Primal Council", {
@@ -37,7 +41,7 @@ BigWigs:AddColors("The Primal Council", {
 
 BigWigs:AddColors("Sennarth, The Cold Breath", {
 	[-24899] = "cyan",
-	[371976] = "orange",
+	[371976] = {"blue","orange"},
 	[371983] = "red",
 	[372030] = "blue",
 	[372044] = "blue",
@@ -56,15 +60,15 @@ BigWigs:AddColors("Dathea, Ascended", {
 	[375580] = {"blue","purple"},
 	[376851] = "purple",
 	[376943] = "orange",
-	[381688] = "cyan",
 	[384273] = "yellow",
-	[385812] = "purple",
+	[385812] = "blue",
 	[387849] = "orange",
 	[387943] = "yellow",
 	[388302] = "yellow",
 	[388410] = "yellow",
 	[390450] = "blue",
 	[391686] = "blue",
+	[395501] = "yellow",
 })
 
 BigWigs:AddColors("Kurog Grimtotem", {

@@ -42,12 +42,13 @@ local continentToXpac = {
     [1414] = _G.LE_EXPANSION_CLASSIC, -- Kalimdor
     [1415] = _G.LE_EXPANSION_CLASSIC, -- Eastern Kingdoms
     [1550] = _G.LE_EXPANSION_SHADOWLANDS, -- The Shadowlands
+	[1978] = _G.LE_EXPANSION_DRAGONFLIGHT, -- Dragonflight
 }
 
 -- /dump C_Map.GetMapInfo(1355)
 local function GetGuideContent(guide, mapID)
     if not mapID then
-        Leveling:dbp("Invalid data for zone %s", guide.zone)
+        Leveling:dbp("Invalid zone %s in guide %s", tostring(guide.zone), guide.GID)
         return defaultXpac
     end
 

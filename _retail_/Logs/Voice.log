@@ -1,12 +1,11 @@
-10/11 15:01:06.074  Voice Log Initialize.
-10/11 15:01:06.074  WowConnectionNet: Initialize
-10/11 15:01:06.074  AttemptMakeSocketPair: bound to 1 / WoW Loopback.360.53093462
-10/11 15:01:06.074  MakeSocketPair attempt: 1, 0, 0, 0
-10/11 15:01:06.179  VoiceProxy attempting to listen on 127.0.0.1:6724
-10/11 15:01:23.353  WowConnection::CheckAccept (on 127.0.0.1:6724) -- Connection from 127.0.0.1:57647 accepted
-10/11 15:01:23.353  WoW client has connected to proxy
-10/11 16:46:48.226  VoiceProxy CloseProxy request from client.
-10/11 16:46:48.226  VoiceProxy shutdown requested.
-10/11 16:46:48.226  Transport disconnected.  Error [7], Reason [connection disconnected unexpectedly]
-10/11 16:46:48.259  WowConnectionNet: Shutdown
-10/11 16:46:48.259  Voice Log Destroy.
+10/26 19:38:47.051  Voice Log Initialize.
+10/26 19:38:47.051  WowConnectionNet: Initialize
+10/26 19:38:47.051  MakeSocketPair attempt: 0, 1, 0, -1, 0
+10/26 19:38:47.051  MakeSocketPair attempt: 0, 23, 0, 0, 0
+10/26 19:38:47.157  VoiceProxy attempting to listen on 127.0.0.1:6724
+10/26 19:38:55.997  WowConnection::CheckAccept (on 127.0.0.1:6724) -- Connection from 127.0.0.1:58542 accepted
+10/26 19:38:55.997  WoW client has connected to proxy
+10/26 19:41:14.744  Transport disconnected.  Error [7], Reason [connection disconnected unexpectedly]
+10/26 19:41:14.744  Last client closed, stopping proxy.
+10/26 19:41:14.796  WowConnectionNet: Shutdown
+10/26 19:41:14.796  Voice Log Destroy.

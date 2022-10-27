@@ -72,6 +72,7 @@ function addon:InitCustom()
 	AddCustom("PROF_ARCH_HIGH",		Z.HIGHMOUNTAIN)
 	AddCustom("PROF_FISH_AZSU",		Z.AZSUNA)
 	AddCustom("PROF_FISH_SURA",		Z.SURAMAR)
+	AddCustom("DROMAN",			Z.ARDENWEALD,			38.0, 36.8)
 
 	self.InitCustom = nil
 end

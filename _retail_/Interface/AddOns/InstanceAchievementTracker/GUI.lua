@@ -44,10 +44,11 @@ AchievementTrackerOptions = {}
 
 -- Purpose:         Stores NPC names
 AchievementTrackerNPCCache = {}
+AchievementTrackerNPCCacheClassic = {}
 
 -- Purpose:         Information about the current release. This is mianly used to detect which addon should output messages to chat to avoid spam
-Config.majorVersion = 3						--Addon with a higher major version change have priority over a lower major version
-Config.minorVersion = 47    				--Addon with a minor version change have prioirty over a lower minor version
+Config.majorVersion = 4						--Addon with a higher major version change have priority over a lower major version
+Config.minorVersion = 0    				--Addon with a minor version change have prioirty over a lower minor version
 Config.revisionVersion = 0					--Addon with a revision change have the same priorty as a lower revision verison
 Config.releaseType = ""                     --Release type (Alpha, Beta, Release)
 Config.classicPhase = 1                     --What phase classic realms are currently running
@@ -1963,7 +1964,7 @@ function Instance_OnClick(self)
                         button.contentText:SetFont("Fonts\\FRIZQT___CYR.TTF", 12);
                     else
                         if core.gameVersionMajor > 9 then
-                            button.contentText:SetFont("p","Fonts\\FRIZQT__.TTF", 12, "OUTLINE, MONOCHROME");
+                            button.contentText:SetFont("p","Fonts\\FRIZQT__.TTF", 13, "OUTLINE");
                         else
                             button.contentText:SetFont("Fonts\\FRIZQT__.TTF", 12);
                         end
@@ -2030,7 +2031,7 @@ function Instance_OnClick(self)
                 UIConfig.achievementsCompleted:SetText(L["GUI_AchievementsCompletedForInstance"] .. " " .. Config:getLocalisedScenarioName(instanceLocation.name));
             else
                 if core.gameVersionMajor == 3 and Config.currentTab == 3 then
-                    UIConfig.achievementsCompleted:SetText(L["GUI_AchievementsCompletedForInstance"] .. " " .. instanceLocation.nameWrath);
+                    UIConfig.achievementsCompleted:SetText(L["GUI_AchievementsCompletedForInstance"] .. " " .. instanceLocation.nameLocalised);
                 else
                     UIConfig.achievementsCompleted:SetText(L["GUI_AchievementsCompletedForInstance"] .. " " .. Config:getLocalisedInstanceName(instanceLocation.name));
                 end
@@ -2225,14 +2226,18 @@ function Tactics_OnClick(self)
                 for boss,_ in pairs(core.Instances[expansion][instanceType][instance]) do
                     if string.match(boss, "boss") then
                         if core.Instances[expansion][instanceType][instance][boss].generatedID == self:GetID() then
-                            if type(core.Instances[expansion][instanceType][instance][boss].tactics) == "table" then
-                                if UnitFactionGroup("player") == "Alliance" then
-                                    core:sendMessageSafe(GetAchievementLink(core.Instances[expansion][instanceType][instance][boss].achievement) .. " " .. core.Instances[expansion][instanceType][instance][boss].tactics[1])
+                            if core.gameVersionMajor > 3 then
+                                if type(core.Instances[expansion][instanceType][instance][boss].tactics) == "table" then
+                                    if UnitFactionGroup("player") == "Alliance" then
+                                        core:sendMessageSafe(GetAchievementLink(core.Instances[expansion][instanceType][instance][boss].achievement) .. " " .. core.Instances[expansion][instanceType][instance][boss].tactics[1])
+                                    else
+                                        core:sendMessageSafe(GetAchievementLink(core.Instances[expansion][instanceType][instance][boss].achievement) .. " " .. core.Instances[expansion][instanceType][instance][boss].tactics[2])
+                                    end
                                 else
-                                    core:sendMessageSafe(GetAchievementLink(core.Instances[expansion][instanceType][instance][boss].achievement) .. " " .. core.Instances[expansion][instanceType][instance][boss].tactics[2])
+                                    core:sendMessageSafe(GetAchievementLink(core.Instances[expansion][instanceType][instance][boss].achievement) .. " " .. core.Instances[expansion][instanceType][instance][boss].tactics)
                                 end
                             else
-                                core:sendMessageSafe(GetAchievementLink(core.Instances[expansion][instanceType][instance][boss].achievement) .. " " .. core.Instances[expansion][instanceType][instance][boss].tactics)
+                                core:sendMessageSafe(GetAchievementLink(core.Instances[expansion][instanceType][instance][boss].achievement) .. " " .. core.Instances[expansion][instanceType][instance][boss].tacticsClassic)
                             end
                         end
                     end
@@ -2495,7 +2500,12 @@ function GetNameFromNpcIDCache(npcID)
     if tip:NumLines()>0 then
         local name = myTooltipFromTemplateTextLeft1:GetText()
         tip:Hide()
-        core.NPCCache[npcID] = name
+        if core.gameVersionMajor > 3 then
+            core.NPCCache[npcID] = name
+        else
+            core.NPCCacheClassic[npcID] = name
+        end
+
         --print(name)
 		for expansion, _ in pairs(core.Instances) do
 			for instanceType, _ in pairs(core.Instances[expansion]) do
@@ -2524,13 +2534,21 @@ function GetNameFromNpcIDCache(npcID)
         end
 
         --Add NPC to NPCCache
-        AchievementTrackerNPCCache[npcID] = name
+        if core.gameVersionMajor > 3 then
+            AchievementTrackerNPCCache[npcID] = name
+        else
+            AchievementTrackerNPCCacheClassic[npcID] = name
+        end
     else
         C_Timer.After(0.1, function()
             if tip:NumLines()>0 then
                 local name = myTooltipFromTemplateTextLeft1:GetText()
                 tip:Hide()
-                core.NPCCache[npcID] = name
+                if core.gameVersionMajor > 3 then
+                    core.NPCCache[npcID] = name
+                else
+                    core.NPCCacheClassic[npcID] = name
+                end
                 for expansion, _ in pairs(core.Instances) do
                     for instanceType, _ in pairs(core.Instances[expansion]) do
                         for instance, _ in pairs(core.Instances[expansion][instanceType]) do
@@ -2546,7 +2564,11 @@ function GetNameFromNpcIDCache(npcID)
                 end
 
                 --Add NPC to NPCCache
-                AchievementTrackerNPCCache[npcID] = name
+                if core.gameVersionMajor > 3 then
+                    AchievementTrackerNPCCache[npcID] = name
+                else
+                    AchievementTrackerNPCCacheClassic[npcID] = name
+                end
             else
                 GetNameFromNpcIDCache(npcID)
             end
@@ -2556,32 +2578,73 @@ end
 
 function GetNameFromLocalNpcIDCache()
     --Attempt to fetch NPC name from local cache if it exists
-    if AchievementTrackerNPCCache ~= nil then
-        tmpSortedTable = {}
-        for k in pairs(AchievementTrackerNPCCache) do table.insert(tmpSortedTable, k) end
-        table.sort(tmpSortedTable)
+    if core.gameVersionMajor > 3 then
+        if AchievementTrackerNPCCache ~= nil then
+            tmpSortedTable = {}
+            for k in pairs(AchievementTrackerNPCCache) do table.insert(tmpSortedTable, k) end
+            table.sort(tmpSortedTable)
 
-        for i = #tmpSortedTable, 1, -1 do
-            if tmpSortedTable[i] ~= nil then
-                npcID = tmpSortedTable[i]
-                for expansion, _ in pairs(core.Instances) do
-                    for instanceType, _ in pairs(core.Instances[expansion]) do
-                        for instance, _ in pairs(core.Instances[expansion][instanceType]) do
-                            for boss, _ in pairs(core.Instances[expansion][instanceType][instance]) do
-                                if string.match(boss, "boss") then
-                                    if type(core.Instances[expansion][instanceType][instance][boss].tactics) == "table" then
-                                        if UnitFactionGroup("player") == "Alliance" then
-                                            if string.find(core.Instances[expansion][instanceType][instance][boss].tactics[1], ("IAT_" .. npcID)) then
-                                                core.Instances[expansion][instanceType][instance][boss].tactics[1] = string.gsub(core.Instances[expansion][instanceType][instance][boss].tactics[1], ("IAT_" .. npcID), AchievementTrackerNPCCache[npcID])
+            for i = #tmpSortedTable, 1, -1 do
+                if tmpSortedTable[i] ~= nil then
+                    npcID = tmpSortedTable[i]
+                    for expansion, _ in pairs(core.Instances) do
+                        for instanceType, _ in pairs(core.Instances[expansion]) do
+                            for instance, _ in pairs(core.Instances[expansion][instanceType]) do
+                                for boss, _ in pairs(core.Instances[expansion][instanceType][instance]) do
+                                    if string.match(boss, "boss") then
+                                        if type(core.Instances[expansion][instanceType][instance][boss].tactics) == "table" then
+                                            if UnitFactionGroup("player") == "Alliance" then
+                                                if string.find(core.Instances[expansion][instanceType][instance][boss].tactics[1], ("IAT_" .. npcID)) then
+                                                    core.Instances[expansion][instanceType][instance][boss].tactics[1] = string.gsub(core.Instances[expansion][instanceType][instance][boss].tactics[1], ("IAT_" .. npcID), AchievementTrackerNPCCache[npcID])
+                                                end
+                                            else
+                                                if string.find(core.Instances[expansion][instanceType][instance][boss].tactics[2], ("IAT_" .. npcID)) then
+                                                    core.Instances[expansion][instanceType][instance][boss].tactics[2] = string.gsub(core.Instances[expansion][instanceType][instance][boss].tactics[2], ("IAT_" .. npcID), AchievementTrackerNPCCache[npcID])
+                                                end
                                             end
                                         else
-                                            if string.find(core.Instances[expansion][instanceType][instance][boss].tactics[2], ("IAT_" .. npcID)) then
-                                                core.Instances[expansion][instanceType][instance][boss].tactics[2] = string.gsub(core.Instances[expansion][instanceType][instance][boss].tactics[2], ("IAT_" .. npcID), AchievementTrackerNPCCache[npcID])
+                                            if string.find(core.Instances[expansion][instanceType][instance][boss].tactics, ("IAT_" .. npcID)) then
+                                                core.Instances[expansion][instanceType][instance][boss].tactics = string.gsub(core.Instances[expansion][instanceType][instance][boss].tactics, ("IAT_" .. npcID), AchievementTrackerNPCCache[npcID])
                                             end
                                         end
-                                    else
-                                        if string.find(core.Instances[expansion][instanceType][instance][boss].tactics, ("IAT_" .. npcID)) then
-                                            core.Instances[expansion][instanceType][instance][boss].tactics = string.gsub(core.Instances[expansion][instanceType][instance][boss].tactics, ("IAT_" .. npcID), AchievementTrackerNPCCache[npcID])
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    else
+        if AchievementTrackerNPCCacheClassic ~= nil then
+            tmpSortedTable = {}
+            for k in pairs(AchievementTrackerNPCCacheClassic) do table.insert(tmpSortedTable, k) end
+            table.sort(tmpSortedTable)
+
+            for i = #tmpSortedTable, 1, -1 do
+                if tmpSortedTable[i] ~= nil then
+                    npcID = tmpSortedTable[i]
+                    for expansion, _ in pairs(core.Instances) do
+                        if expansion == 3 then
+                            for instanceType, _ in pairs(core.Instances[expansion]) do
+                                for instance, _ in pairs(core.Instances[expansion][instanceType]) do
+                                    for boss, _ in pairs(core.Instances[expansion][instanceType][instance]) do
+                                        if string.match(boss, "boss") then
+                                            if type(core.Instances[expansion][instanceType][instance][boss].tacticsClassic) == "table" then
+                                                if UnitFactionGroup("player") == "Alliance" then
+                                                    if string.find(core.Instances[expansion][instanceType][instance][boss].tacticsClassic[1], ("IAT_" .. npcID)) then
+                                                        core.Instances[expansion][instanceType][instance][boss].tacticsClassic[1] = string.gsub(core.Instances[expansion][instanceType][instance][boss].tacticsClassic[1], ("IAT_" .. npcID), AchievementTrackerNPCCacheClassic[npcID])
+                                                    end
+                                                else
+                                                    if string.find(core.Instances[expansion][instanceType][instance][boss].tacticsClassic[2], ("IAT_" .. npcID)) then
+                                                        core.Instances[expansion][instanceType][instance][boss].tacticsClassic[2] = string.gsub(core.Instances[expansion][instanceType][instance][boss].tacticsClassic[2], ("IAT_" .. npcID), AchievementTrackerNPCCacheClassic[npcID])
+                                                    end
+                                                end
+                                            else
+                                                if string.find(core.Instances[expansion][instanceType][instance][boss].tacticsClassic, ("IAT_" .. npcID)) then
+                                                    core.Instances[expansion][instanceType][instance][boss].tacticsClassic = string.gsub(core.Instances[expansion][instanceType][instance][boss].tacticsClassic, ("IAT_" .. npcID), AchievementTrackerNPCCacheClassic[npcID])
+                                                end
+                                            end
                                         end
                                     end
                                 end

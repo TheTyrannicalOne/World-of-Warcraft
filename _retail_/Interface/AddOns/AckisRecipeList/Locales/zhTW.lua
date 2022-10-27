@@ -5,8 +5,8 @@ zhTW localization strings for Ackis Recipe List
 ************************************************************************
 File date: 2012-08-18T4:52:05Z 
 File revision: 4d6b8e446c1381fe41575a671a6c54702932e4db 
-Project revision: 4b46d7a850f4ee4873208a2b7720256a7b9993f6
-Project version: 9.1.0.1
+Project revision: 4f5caac38198e582918a38f4cb70092600288cb7
+Project version: 9.2.0
 ************************************************************************
 Original translated by: iCat, apa1102, zhucc
 Currently maintained by:

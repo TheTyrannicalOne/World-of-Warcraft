@@ -45,6 +45,9 @@ function module:InitializeMobDrops()
 	AddMob(23386,	L["Gan'arg Analyzer"],			Z.BLADES_EDGE_MOUNTAINS,	33.0, 52.5)
 	AddMob(138122,	BN.DOOMS_HOWL,				Z.ARATHI_HIGHLANDS,		38.6, 40.2)
 	AddMob(144838,	BN.HIGH_TINKER_MEKKATORQUE,		Z.BATTLE_OF_DAZARALOR,		0.0, 0.0)
+	AddMob(180917,	L["Destabilized Core"],			Z.ZERETH_MORTIS,		53.6, 44.6)
+	AddMob(180924,	L["Garudeon"],				Z.ZERETH_MORTIS,		68.6, 37.0)
+	AddMob(183925,	L["Tahkwitz"],				Z.ZERETH_MORTIS,		49.6, 39.8)
 
 	self.InitializeMobDrops = nil
 end

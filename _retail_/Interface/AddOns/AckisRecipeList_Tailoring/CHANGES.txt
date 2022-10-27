@@ -1,30 +1,18 @@
-tag a208514a27604269f08da8ac97bb1389b2e1b476 9.1.0.1
+tag 44c9d9326d0be6124f37b851ca1a67039c8ef4a8 9.2.0
 Author:	Ressy <resa1983@hotmail.com>
-Date:	Tue Sep 7 22:06:06 2021 -0400
+Date:	Sat Oct 22 13:23:40 2022 -0400
 
-9.1 update
+9.2.0 update
 
-commit d84303b7be013bea728ac4c0335cbe214c0a530b
+commit 31569a7f69e08795156d5f9433e95ee73c0530f8
 Author: Ressy <resa1983@hotmail.com>
-Date:   Tue Sep 7 21:45:44 2021 -0400
+Date:   Sat Oct 22 13:17:40 2022 -0400
 
     Bump TOC
 
-commit b022b33b5871de414063996567252476c5f3a3f2
+commit 635efc8d60a8eec86e6cf6038de5703172122434
 Author: Ressy <resa1983@hotmail.com>
-Date:   Tue Sep 7 21:45:36 2021 -0400
+Date:   Sat Oct 22 13:17:35 2022 -0400
 
-    Rescan of vendor
-
-commit fc89f6130668bdc192255b5f416f53a2d322f580
-Author: Ressy <resa1983@hotmail.com>
-Date:   Tue Sep 7 21:45:21 2021 -0400
-
-    Fix 9.1 items
-
-commit 6ba85808d59944e232f5b6c018e605c06736aa99
-Author: Ressy <resa1983@hotmail.com>
-Date:   Tue Sep 7 21:44:57 2021 -0400
-
-    Fix Relic of the Past
+    Add 9.2 Recipes
 

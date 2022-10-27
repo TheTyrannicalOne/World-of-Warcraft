@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0703,
+	["LastVersion"] = 2.0704,
 	["LastPlayerFullName"] = "Alatra-Zul'jin",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
@@ -80,9 +80,10 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:178755::::::::60:254::1:5:8140:6805:6652:1524:4785:1:28:747:::::|h[Blighted Margrave's Cloak]|h|r",
 		}, -- [15]
 		{
-			["ID"] = 178735,
-			["Level"] = 210,
-			["Link"] = "|cff0070dd|Hitem:178735::::::::60:254::1:4:6805:6652:1524:4785:1:28:747:::::|h[Blight Belcher]|h|r",
+			["ID"] = 117356,
+			["Level"] = 236,
+			["AlsoFitsIn"] = 17,
+			["Link"] = "|cff0070dd|Hitem:117356::::::::60:254::22:1:8760:2:28:181:9:60:::::|h[The Horseman's Sinister Slicer]|h|r",
 		}, -- [16]
 		{
 			["ID"] = 3420,
