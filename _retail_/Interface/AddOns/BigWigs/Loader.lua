@@ -37,7 +37,7 @@ do
 	local RELEASE = "RELEASE"
 
 	local releaseType = RELEASE
-	local myGitHash = "2c6afc5" -- The ZIP packager will replace this with the Git hash.
+	local myGitHash = "b5529c9" -- The ZIP packager will replace this with the Git hash.
 	local releaseString = ""
 	--[=[@alpha@
 	-- The following code will only be present in alpha ZIPs.
@@ -801,8 +801,6 @@ function mod:ADDON_LOADED(addon)
 				end
 			end
 		end
-		BigWigs3DB.wipe80 = nil -- XXX temp boss DB wipe for 8.0.1 // removed in 9.0.2
-		BigWigs3DB.discord = nil -- XXX 9.0.2
 	end
 	self:BigWigs_CoreOptionToggled(nil, "fakeDBMVersion", self.isFakingDBM)
 
@@ -817,7 +815,6 @@ function mod:ADDON_LOADED(addon)
 
 	--bwFrame:UnregisterEvent("ADDON_LOADED")
 	--self.ADDON_LOADED = nil
-	bwFrame.UnregisterEvent(UIParent, "TALKINGHEAD_REQUESTED") -- Prevent the event order re-shuffling mid-instance
 end
 
 function mod:GLOBAL_MOUSE_DOWN(button)

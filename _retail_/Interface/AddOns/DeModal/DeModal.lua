@@ -4,8 +4,8 @@ local Debug = PKG.Debug
 
 -- global API for this addon
 DEMODAL_ADDON = {}
-DEMODAL_ADDON.VERSION_STRING = "DeModal 0.6.3"
-DEMODAL_ADDON.VERSION = "0.6.3"
+DEMODAL_ADDON.VERSION_STRING = "DeModal 0.6.4"
+DEMODAL_ADDON.VERSION = "0.6.4"
 
 -- version ID stuff
 PKG.gameVersion = "retail"

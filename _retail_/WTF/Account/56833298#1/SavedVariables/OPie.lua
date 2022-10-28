@@ -171,10 +171,10 @@ OneRing_Config = {
 					"BattlePet-0-0000064BC55A", -- [2]
 					["sliceToken"] = "ABuede=1Srtr",
 				}, -- [6]
-				["name"] = "Utility",
+				["limit"] = "Shanyt-ArgentDawn",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["limit"] = "Shanyt-ArgentDawn",
+				["name"] = "Utility",
 			},
 			["Utility9"] = {
 				{
@@ -235,40 +235,16 @@ OneRing_Config = {
 				["hotkey"] = "ALT-E",
 				["name"] = "Utility",
 			},
-			["Mounts1"] = {
+			["Utility4"] = {
 				{
-					["id"] = 150544,
-					["sliceToken"] = "ABue4OjoZGr",
+					"macro", -- [1]
+					" ", -- [2]
+					["sliceToken"] = "ABuekqRrJip",
 				}, -- [1]
-				{
-					"mount", -- [1]
-					449, -- [2]
-					["sliceToken"] = "ABue4OjoZGy",
-				}, -- [2]
-				{
-					"mount", -- [1]
-					460, -- [2]
-					["sliceToken"] = "ABue4OjoZGt",
-				}, -- [3]
-				{
-					"mount", -- [1]
-					125, -- [2]
-					["sliceToken"] = "ABue4OkZHE1",
-				}, -- [4]
-				{
-					"mount", -- [1]
-					312, -- [2]
-					["sliceToken"] = "ABue4OkZHEr",
-				}, -- [5]
-				{
-					"mount", -- [1]
-					382, -- [2]
-					["sliceToken"] = "ABue4Ov/OTe",
-				}, -- [6]
-				["name"] = "Mounts",
+				["name"] = "Utility",
 				["save"] = true,
-				["hotkey"] = "ALT-Q",
-				["limit"] = "Thorinbane-Dalaran",
+				["hotkey"] = "ALT-E",
+				["limit"] = "Tyranasticus-Zul'jin",
 			},
 			["Mounts14"] = {
 				{
@@ -346,16 +322,40 @@ OneRing_Config = {
 				["hotkey"] = "ALT-V",
 				["limit"] = "Shanyt-ArgentDawn",
 			},
-			["Utility4"] = {
+			["Mounts1"] = {
 				{
-					"macro", -- [1]
-					" ", -- [2]
-					["sliceToken"] = "ABuekqRrJip",
+					["id"] = 150544,
+					["sliceToken"] = "ABue4OjoZGr",
 				}, -- [1]
-				["name"] = "Utility",
+				{
+					"mount", -- [1]
+					449, -- [2]
+					["sliceToken"] = "ABue4OjoZGy",
+				}, -- [2]
+				{
+					"mount", -- [1]
+					460, -- [2]
+					["sliceToken"] = "ABue4OjoZGt",
+				}, -- [3]
+				{
+					"mount", -- [1]
+					125, -- [2]
+					["sliceToken"] = "ABue4OkZHE1",
+				}, -- [4]
+				{
+					"mount", -- [1]
+					312, -- [2]
+					["sliceToken"] = "ABue4OkZHEr",
+				}, -- [5]
+				{
+					"mount", -- [1]
+					382, -- [2]
+					["sliceToken"] = "ABue4Ov/OTe",
+				}, -- [6]
+				["name"] = "Mounts",
 				["save"] = true,
-				["hotkey"] = "ALT-E",
-				["limit"] = "Tyranasticus-Zul'jin",
+				["hotkey"] = "ALT-Q",
+				["limit"] = "Thorinbane-Dalaran",
 			},
 			["Tools3"] = {
 				{
@@ -543,8 +543,8 @@ OneRing_Config = {
 			},
 			["Mounts15"] = {
 				{
-					["sliceToken"] = "ABuejtRGNKu",
 					["id"] = 150544,
+					["sliceToken"] = "ABuejtRGNKu",
 				}, -- [1]
 				{
 					"mount", -- [1]
@@ -744,69 +744,69 @@ OneRing_Config = {
 			},
 			["Mounts"] = {
 				{
-					["id"] = 150544,
 					["sliceToken"] = "ABuede=1Sr19",
+					["id"] = 150544,
 				}, -- [1]
 				{
-					["id"] = 64731,
 					["sliceToken"] = "ABuede=1Sr1A",
+					["id"] = 64731,
 				}, -- [2]
 				{
-					["id"] = 118089,
 					["sliceToken"] = "ABuede=1Sr1P",
+					["id"] = 118089,
 				}, -- [3]
 				{
-					["id"] = 223018,
 					["sliceToken"] = "ABuede=1Sr1O",
+					["id"] = 223018,
 				}, -- [4]
 				{
-					["id"] = 98718,
 					["sliceToken"] = "ABuede=1Sr1I",
+					["id"] = 98718,
 				}, -- [5]
 				{
-					["id"] = 228919,
 					["sliceToken"] = "ABuede=1Sr18",
+					["id"] = 228919,
 				}, -- [6]
 				{
-					["id"] = 122708,
 					["sliceToken"] = "ABuede=1Sr1U",
+					["id"] = 122708,
 				}, -- [7]
 				{
-					["id"] = 17481,
 					["sliceToken"] = "ABuede=1Sr1Y",
+					["id"] = 17481,
 				}, -- [8]
 				{
-					["id"] = 272472,
 					["sliceToken"] = "ABuede=1Sr1T",
+					["id"] = 272472,
 				}, -- [9]
 				{
-					["id"] = 139595,
 					["sliceToken"] = "ABuede=1Sr1R",
+					["id"] = 139595,
 				}, -- [10]
 				{
-					["id"] = 213115,
 					["sliceToken"] = "ABuede=1Sr17",
+					["id"] = 213115,
 				}, -- [11]
 				{
-					["id"] = 72286,
 					["sliceToken"] = "ABuede=1Sr1E",
+					["id"] = 72286,
 				}, -- [12]
 				{
-					["id"] = 229388,
 					["sliceToken"] = "ABuede=1Sr1W",
+					["id"] = 229388,
 				}, -- [13]
 				{
-					["id"] = 245725,
 					["sliceToken"] = "ABuede=1Sr1Q",
+					["id"] = 245725,
 				}, -- [14]
 				{
-					["id"] = 75973,
 					["sliceToken"] = "ABuede=1Sr1m",
+					["id"] = 75973,
 				}, -- [15]
-				["name"] = "Mounts",
+				["limit"] = "Shanyt-ArgentDawn",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["limit"] = "Shanyt-ArgentDawn",
+				["name"] = "Mounts",
 			},
 			["Utility1"] = {
 				{

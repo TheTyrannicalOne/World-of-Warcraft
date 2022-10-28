@@ -1,5 +1,5 @@
 ﻿----------------------------------------------------------------------
--- 	Leatrix Plus 10.0.00 (24th October 2022)
+-- 	Leatrix Plus 10.0.02 (28th October 2022)
 ----------------------------------------------------------------------
 
 --	01:Functns, 02:Locks, 03:Restart, 20:Live, 30:Isolated, 40:Player
@@ -18,7 +18,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "10.0.00"
+	LeaPlusLC["AddonVer"] = "10.0.02"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -621,7 +621,7 @@
 		-- Interface
 		or	(LeaPlusLC["MinimapModder"]			~= LeaPlusDB["MinimapModder"])			-- Enhance minimap
 		or	(LeaPlusLC["SquareMinimap"]			~= LeaPlusDB["SquareMinimap"])			-- Square minimap
-		or	(LeaPlusLC["NewCovenantButton"]		~= LeaPlusDB["NewCovenantButton"])		-- New covenant button
+		or	(LeaPlusLC["HideMiniAddonMenu"]		~= LeaPlusDB["HideMiniAddonMenu"])		-- Hide addon menu
 		or	(LeaPlusLC["CombineAddonButtons"]	~= LeaPlusDB["CombineAddonButtons"])	-- Combine addon buttons
 		or	(LeaPlusLC["MiniExcludeList"]		~= LeaPlusDB["MiniExcludeList"])		-- Minimap exclude list
 		or	(LeaPlusLC["TipModEnable"]			~= LeaPlusDB["TipModEnable"])			-- Enhance tooltip
@@ -655,6 +655,7 @@
 		or	(LeaPlusLC["HideEventToasts"]		~= LeaPlusDB["HideEventToasts"])		-- Hide event toasts
 		or	(LeaPlusLC["NoClassBar"]			~= LeaPlusDB["NoClassBar"])				-- Hide stance bar
 		or	(LeaPlusLC["NoCommandBar"]			~= LeaPlusDB["NoCommandBar"])			-- Hide order hall bar
+		or	(LeaPlusLC["NoRestedSleep"]			~= LeaPlusDB["NoRestedSleep"])			-- Hide rested sleep
 
 		-- System
 		or	(LeaPlusLC["NoRestedEmotes"]		~= LeaPlusDB["NoRestedEmotes"])			-- Silence rested emotes
@@ -1959,8 +1960,8 @@
 		do
 
 			-- Function to skip gossip
-			local function SkipGossip()
-				if not IsAltKeyDown() then return end
+			local function SkipGossip(skipAltKeyRequirement)
+				if not skipAltKeyRequirement and not IsAltKeyDown() then return end
 				local gossipInfoTable = C_GossipInfo.GetOptions()
 				if gossipInfoTable[1] and gossipInfoTable[1].gossipOptionID then
 					C_GossipInfo.SelectOption(gossipInfoTable[1].gossipOptionID)
@@ -1991,11 +1992,18 @@
 					local void, void, void, void, void, npcID = strsplit("-", npcGuid)
 					if npcID then
 						-- Open rogue doors in Dalaran (Broken Isles) automatically
-						if npcID == "96782"	-- Lucian Trias
-						or npcID == "93188"	-- Mongar
-						or npcID == "97004"	-- "Red" Jack Findle
+						if npcID == "96782"		-- Lucian Trias
+						or npcID == "93188"		-- Mongar
+						or npcID == "97004"		-- "Red" Jack Findle
 						then
 							SkipGossip()
+							return
+						end
+						-- Skip gossip with no alt key requirement
+						if npcID == "132969"	-- Katy Stampwhistle (toy)
+						or npcID == "104201"	-- Katy Stampwhistle (npc)
+						then
+							SkipGossip(true) 	-- true means skip alt key requirement
 							return
 						end
 					end
@@ -2197,6 +2205,42 @@
 		----------------------------------------------------------------------
 
 		if LeaPlusLC["FasterLooting"] == "On" then
+
+			-- Hopefully this is temporary but then again how long does it take for Blizzard to comment out two print statements
+			-- (that's assuming that they actually want to fix this)
+			-- https://github.com/leatrix/leatrix-plus/issues/113
+
+			LootFrame:UnregisterEvent("LOOT_OPENED")
+			local abc = CreateFrame("FRAME")
+			abc:RegisterEvent("LOOT_OPENED")
+			abc:SetScript("OnEvent", function(self)
+
+				local dataProvider = CreateDataProvider()
+				for slotIndex = 1, GetNumLootItems() do
+					local texture, item, quantity, currencyID, itemQuality, locked, isQuestItem, questID, isActive, isCoin = GetLootSlotInfo(slotIndex)
+					local quality = itemQuality or Enum.ItemQuality.Common
+					local group = isCoin and 1 or 0
+					dataProvider:Insert({slotIndex = slotIndex, group = group, quality = quality})
+				end
+
+				-- Sort loot list to put quality items first
+				dataProvider:SetSortComparator(function(a, b)
+					if a.group ~= b.group then
+						return a.group > b.group
+					end
+					if a.quality ~= b.quality then
+						return a.quality > b.quality
+					end
+					return a.slotIndex < b.slotIndex
+				end)
+
+				-- Show the loot frame in the Edit Mode position
+				LootFrame.ScrollBox:SetDataProvider(dataProvider)
+				LootFrame:Show()
+				LootFrame:Resize()
+				LootFrame:PlayOpenAnimation()
+
+			end)
 
 			-- Time delay
 			local tDelay = 0
@@ -3953,6 +3997,15 @@
 
 	function LeaPlusLC:Player()
 
+
+		----------------------------------------------------------------------
+		-- Hide rested sleep
+		----------------------------------------------------------------------
+
+		if LeaPlusLC["NoRestedSleep"] == "On" and not LeaLockList["NoRestedSleep"] then
+			PlayerFrame.PlayerFrameContent.PlayerFrameContentContextual.PlayerRestLoop.RestTexture:SetTexture("")
+		end
+
 		----------------------------------------------------------------------
 		-- Manage vehicle
 		----------------------------------------------------------------------
@@ -4426,6 +4479,7 @@
 			LeaPlusLC:MakeCB(SideMinimap, "CombineAddonButtons", "Combine addon buttons", 16, -112, true, "If checked, addon buttons will be combined into a single button frame which you can toggle by right-clicking the minimap.|n|nNote that enabling this option will lock out the 'Hide addon buttons' setting.")
 			LeaPlusLC:MakeCB(SideMinimap, "SquareMinimap", "Square minimap", 16, -132, true, "If checked, the minimap shape will be square.")
 			LeaPlusLC:MakeCB(SideMinimap, "ShowWhoPinged", "Show who pinged", 16, -152, false, "If checked, when someone pings the minimap, their name will be shown.  This does not apply to your pings.")
+			LeaPlusLC:MakeCB(SideMinimap, "HideMiniAddonMenu", "Hide addon menu", 16, -172, true, "If checked, the addon menu will be hidden.|n|nThe addon menu appears as a number in the corner of the minimap if you have any addons installed which make use of it.")
 
 			-- Add excluded button
 			local MiniExcludedButton = LeaPlusLC:CreateButton("MiniExcludedButton", SideMinimap, "Buttons", "TOPLEFT", 16, -72, 0, 25, true, "Click to toggle the addon buttons editor.")
@@ -4444,7 +4498,20 @@
 			SetExcludeButtonsFunc()
 
 			LeaPlusLC:MakeTx(SideMinimap, "Cluster scale", 356, -72)
-			LeaPlusLC:MakeSL(SideMinimap, "MiniClusterScale", "Drag to set the cluster scale.", 1, 2, 0.1, 356, -92, "%.2f")
+			LeaPlusLC:MakeSL(SideMinimap, "MiniClusterScale", "Drag to set the cluster scale.", 0.5, 2, 0.1, 356, -92, "%.2f")
+
+
+			----------------------------------------------------------------------
+			-- Hide addon menu
+			----------------------------------------------------------------------
+
+			if LeaPlusLC["HideMiniAddonMenu"] == "On" then
+
+				-- Hide compartment menu when it is shown and on startup
+				AddonCompartmentFrame:HookScript("OnShow", AddonCompartmentFrame.Hide)
+				AddonCompartmentFrame:Hide()
+
+			end
 
 			----------------------------------------------------------------------
 			-- Addon buttons editor
@@ -4852,23 +4919,31 @@
 				AddonCompartmentFrame:ClearAllPoints()
 				AddonCompartmentFrame:SetPoint("TOPRIGHT", Minimap, "TOPRIGHT", -2, -2)
 
-				-- Toggle button visibility when pointer enters and leaves minimap and on startup
-				Minimap:HookScript("OnEnter", function()
-					AddonCompartmentFrame:Show()
-				end)
+				-- Show compartment menu on hover if hide addon menu is unchecked
+				if LeaPlusLC["HideMiniAddonMenu"] == "Off" then
 
-				Minimap:HookScript("OnLeave", function()
-					if not MouseIsOver(AddonCompartmentFrame) then
-						AddonCompartmentFrame:Hide()
-					end
-				end)
+					-- Toggle button visibility when pointer enters and leaves minimap and on startup
+					Minimap:HookScript("OnEnter", function()
+						AddonCompartmentFrame:Show()
+					end)
 
-				if not MouseIsOver(AddonCompartmentFrame) then
-					AddonCompartmentFrame:Hide()
+					Minimap:HookScript("OnLeave", function()
+						if not MouseIsOver(AddonCompartmentFrame) then
+							AddonCompartmentFrame:Hide()
+						end
+					end)
+
+					-- Hide compartment menu on startup
+					C_Timer.After(0.1, function()
+						if not MouseIsOver(AddonCompartmentFrame) and not MouseIsOver(Minimap) then
+							AddonCompartmentFrame:Hide()
+						end
+					end)
+
 				end
 
 				-- Debug
-				AddonCompartmentFrame:SetText("56")
+				-- AddonCompartmentFrame:SetText("56")
 
 				-- Create black border around map
 				local miniBorder = CreateFrame("Frame", nil, Minimap, "BackdropTemplate")
@@ -5146,6 +5221,7 @@
 						-- Preset profile
 						LeaPlusLC["HideMiniAddonButtons"] = "On"; if LeaPlusLC.SetHideButtons then LeaPlusLC:SetHideButtons() end
 						LeaPlusLC["ShowWhoPinged"] = "On"; LeaPlusLC:SetPingFunc()
+						LeaPlusLC["HideMiniAddonMenu"] = "On"
 						LeaPlusLC["MiniClusterScale"] = 1; LeaPlusLC["MinimapNoScale"] = "Off"; SetClusterScale()
 						LeaPlusLC:ReloadCheck() -- Special reload check
 					else
@@ -6496,6 +6572,9 @@
 				_G["MultiBarBottomLeftButton"..i.."HotKey"]:SetAlpha(0) -- Bottom left bar
 				_G["MultiBarRightButton"..i.."HotKey"]:SetAlpha(0) -- Right bar
 				_G["MultiBarLeftButton"..i.."HotKey"]:SetAlpha(0) -- Left bar
+				_G["MultiBar5Button" .. i .. "HotKey"]:SetAlpha(0) -- Dragonflight new bars
+				_G["MultiBar6Button" .. i .. "HotKey"]:SetAlpha(0) -- Dragonflight new bars
+				_G["MultiBar7Button" .. i .. "HotKey"]:SetAlpha(0) -- Dragonflight new bars
 			end
 
 		end
@@ -6513,6 +6592,9 @@
 				_G["MultiBarBottomLeftButton"..i.."Name"]:SetAlpha(0) -- Bottom left bar
 				_G["MultiBarRightButton"..i.."Name"]:SetAlpha(0) -- Right bar
 				_G["MultiBarLeftButton"..i.."Name"]:SetAlpha(0) -- Left bar
+				_G["MultiBar5Button" .. i .. "Name"]:SetAlpha(0) -- Dragonflight new bars
+				_G["MultiBar6Button" .. i .. "Name"]:SetAlpha(0) -- Dragonflight new bars
+				_G["MultiBar7Button" .. i .. "Name"]:SetAlpha(0) -- Dragonflight new bars
 			end
 
 		end
@@ -7017,14 +7099,14 @@
 			LeaPlusCB["ShowMinimapIcon"]:HookScript("OnClick", SetLibDBIconFunc)
 			SetLibDBIconFunc()
 
-			-- Add Leatrix Plus to addon compartment frame
-			AddonCompartmentFrame:RegisterAddon({
+			-- Add Leatrix Plus to addon compartment frame (not used for the moment)
+			--[[AddonCompartmentFrame:RegisterAddon({
 				text = L["Leatrix Plus"],
 				icon = "Interface\\HELPFRAME\\ReportLagIcon-Movement",
 				func = function(self, void, void, void, btn)
 					MiniBtnClickFunc(btn)
 				end,
-			})
+			})]]
 
 		end
 
@@ -10648,7 +10730,6 @@
 				UpdateVars("MuteR21X", "MuteAerials")						-- 9.0.22 (27th March 2021)
 				UpdateVars("MuteGolem", "MuteMechsuits")					-- 9.0.22 (27th March 2021)
 				UpdateVars("HideLevelUpDisplay", "HideEventToasts")			-- 9.1.24 (19th November 2021)
-				UpdateVars("HideZoneTextBar", "HideMiniZoneText")			-- 9.1.28 (8th December 2021)
 				UpdateVars("ManageWidget", "ManageWidgetTop")				-- 9.2.03 (16th March 2022)
 				UpdateVars("WidgetA", "WidgetTopA")							-- 9.2.03 (16th March 2022)
 				UpdateVars("WidgetR", "WidgetTopR")							-- 9.2.03 (16th March 2022)
@@ -10764,17 +10845,12 @@
 				-- Interface
 				LeaPlusLC:LoadVarChk("MinimapModder", "Off")				-- Enhance minimap
 				LeaPlusLC:LoadVarChk("SquareMinimap", "On")					-- Square minimap
-				LeaPlusLC:LoadVarChk("NewCovenantButton", "Off")			-- New covenant button
 				LeaPlusLC:LoadVarChk("ShowWhoPinged", "On")					-- Show who pinged
+				LeaPlusLC:LoadVarChk("HideMiniAddonMenu", "On")				-- Hide addon menu
 				LeaPlusLC:LoadVarChk("CombineAddonButtons", "Off")			-- Combine addon buttons
 				LeaPlusLC:LoadVarStr("MiniExcludeList", "")					-- Minimap exclude list
-				LeaPlusLC:LoadVarChk("HideMiniZoomBtns", "Off")				-- Hide zoom buttons
-				LeaPlusLC:LoadVarChk("HideMiniClock", "Off")				-- Hide the clock
-				LeaPlusLC:LoadVarChk("HideMiniZoneText", "Off")				-- Hide the zone text bar
 				LeaPlusLC:LoadVarChk("HideMiniAddonButtons", "On")			-- Hide addon buttons
-				LeaPlusLC:LoadVarNum("MinimapScale", 1, 1, 4)				-- Minimap scale slider
-				LeaPlusLC:LoadVarNum("MinimapSize", 140, 140, 560)			-- Minimap size slider
-				LeaPlusLC:LoadVarNum("MiniClusterScale", 1, 1, 2)			-- Minimap cluster scale
+				LeaPlusLC:LoadVarNum("MiniClusterScale", 1, 0.5, 2)			-- Minimap cluster scale
 				LeaPlusLC:LoadVarChk("MinimapNoScale", "Off")				-- Minimap not minimap
 				LeaPlusLC:LoadVarAnc("MinimapA", "TOPRIGHT")				-- Minimap anchor
 				LeaPlusLC:LoadVarAnc("MinimapR", "TOPRIGHT")				-- Minimap relative
@@ -10876,6 +10952,7 @@
 				LeaPlusLC:LoadVarChk("HideEventToasts", "Off")				-- Hide event toasts
 				LeaPlusLC:LoadVarChk("NoClassBar", "Off")					-- Hide stance bar
 				LeaPlusLC:LoadVarChk("NoCommandBar", "Off")					-- Hide order hall bar
+				LeaPlusLC:LoadVarChk("NoRestedSleep", "Off")				-- Hide rested sleep
 
 				-- System
 				LeaPlusLC:LoadVarChk("NoScreenGlow", "Off")					-- Disable screen glow
@@ -10976,6 +11053,7 @@
 						if E.private.unitframe.disabledBlizzardFrames.player then
 							LockOption("ShowPlayerChain", "UnitFrames (Disabled Blizzard Frames Player)") -- Show player chain
 							LockOption("NoHitIndicators", "UnitFrames (Disabled Blizzard Frames Player)") -- Hide portrait numbers
+							LockOption("NoRestedSleep", "UnitFrames (Disabled Blizzard Frames Player)") -- Hide rested sleep
 						end
 
 						-- UnitFrames: Disabled Blizzard: Player, Target or Focus
@@ -11115,16 +11193,11 @@
 			-- Interface
 			LeaPlusDB["MinimapModder"]			= LeaPlusLC["MinimapModder"]
 			LeaPlusDB["SquareMinimap"]			= LeaPlusLC["SquareMinimap"]
-			LeaPlusDB["NewCovenantButton"]		= LeaPlusLC["NewCovenantButton"]
 			LeaPlusDB["ShowWhoPinged"]			= LeaPlusLC["ShowWhoPinged"]
+			LeaPlusDB["HideMiniAddonMenu"]		= LeaPlusLC["HideMiniAddonMenu"]
 			LeaPlusDB["CombineAddonButtons"]	= LeaPlusLC["CombineAddonButtons"]
 			LeaPlusDB["MiniExcludeList"] 		= LeaPlusLC["MiniExcludeList"]
-			LeaPlusDB["HideMiniZoomBtns"]		= LeaPlusLC["HideMiniZoomBtns"]
-			LeaPlusDB["HideMiniClock"]			= LeaPlusLC["HideMiniClock"]
-			LeaPlusDB["HideMiniZoneText"]		= LeaPlusLC["HideMiniZoneText"]
 			LeaPlusDB["HideMiniAddonButtons"]	= LeaPlusLC["HideMiniAddonButtons"]
-			LeaPlusDB["MinimapScale"]			= LeaPlusLC["MinimapScale"]
-			LeaPlusDB["MinimapSize"]			= LeaPlusLC["MinimapSize"]
 			LeaPlusDB["MiniClusterScale"]		= LeaPlusLC["MiniClusterScale"]
 			LeaPlusDB["MinimapNoScale"]			= LeaPlusLC["MinimapNoScale"]
 			LeaPlusDB["MinimapA"]				= LeaPlusLC["MinimapA"]
@@ -11228,6 +11301,7 @@
 			LeaPlusDB["HideEventToasts"]		= LeaPlusLC["HideEventToasts"]
 			LeaPlusDB["NoClassBar"]				= LeaPlusLC["NoClassBar"]
 			LeaPlusDB["NoCommandBar"]			= LeaPlusLC["NoCommandBar"]
+			LeaPlusDB["NoRestedSleep"]			= LeaPlusLC["NoRestedSleep"]
 
 			-- System
 			LeaPlusDB["NoScreenGlow"] 			= LeaPlusLC["NoScreenGlow"]
@@ -13785,12 +13859,10 @@
 				-- Interface
 				LeaPlusDB["MinimapModder"] = "On"				-- Enhance minimap
 				LeaPlusDB["SquareMinimap"] = "On"				-- Square minimap
-				LeaPlusDB["NewCovenantButton"] = "On"			-- New covenant button
 				LeaPlusDB["ShowWhoPinged"] = "On"				-- Show who pinged
+				LeaPlusDB["HideMiniAddonMenu"] = "On"			-- Hide addon menu
 				LeaPlusDB["CombineAddonButtons"] = "On"			-- Combine addon buttons
 				LeaPlusDB["MiniExcludeList"] = "BugSack, Leatrix_Plus" -- Excluded addon list
-				LeaPlusDB["MinimapScale"] = 1.40				-- Minimap scale slider
-				LeaPlusDB["MinimapSize"] = 180					-- Minimap size slider
 				LeaPlusDB["MiniClusterScale"] = 1				-- Minimap cluster scale
 				LeaPlusDB["MinimapNoScale"] = "Off"				-- Minimap not minimap
 				LeaPlusDB["MinimapA"] = "TOPRIGHT"				-- Minimap anchor
@@ -13872,6 +13944,7 @@
 				LeaPlusDB["HideEventToasts"] = "On"				-- Hide event toasts
 				LeaPlusDB["NoClassBar"] = "On"					-- Hide stance bar
 				LeaPlusDB["NoCommandBar"] = "On"				-- Hide order hall bar
+				LeaPlusDB["NoRestedSleep"] = "On"				-- Hide rested sleep
 
 				-- System
 				LeaPlusDB["NoScreenGlow"] = "On"				-- Disable screen glow
@@ -14284,6 +14357,7 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "HideEventToasts"			, 	"Hide event toasts"				, 	340, -192, 	true,	"If checked, event toasts will not be shown.|n|nEvent toasts are used for encounter objectives, level-ups, pet battle rewards, etc.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoClassBar"				,	"Hide stance bar"				, 	340, -212, 	true,	"If checked, the stance bar will not be shown.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoCommandBar"				,	"Hide order hall bar"			, 	340, -232, 	true,	"If checked, the order hall command bar will not be shown.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoRestedSleep"				,	"Hide rested sleep"				, 	340, -252, 	true,	"If checked, the player frame rested sleep animation will not be shown.")
 
 	LeaPlusLC:CfgBtn("ManageWidgetTopButton", LeaPlusCB["ManageWidgetTop"])
 	LeaPlusLC:CfgBtn("ManageWidgetPowerButton", LeaPlusCB["ManageWidgetPower"])

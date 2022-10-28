@@ -21,35 +21,35 @@ WoWProCharDB = {
 	["Rank"] = {
 	},
 	["EnableGrailQuestName"] = false,
-	["EnableGrailQuestObsolete"] = false,
 	["Enabled"] = true,
-	["GuideVersion"] = {
+	["EnableGrailQuestObsolete"] = false,
+	["Guide"] = {
 	},
 	["Tradeskills"] = {
 		[356] = {
 			["skillLvl"] = 1,
 			["skillMax"] = 200,
-			["skillMod"] = 0,
 			["name"] = "Fishing",
+			["skillMod"] = 0,
 		},
 		[185] = {
 			["skillLvl"] = 1,
 			["skillMax"] = 75,
-			["skillMod"] = 0,
 			["name"] = "Cooking",
+			["skillMod"] = 0,
 		},
 		[2754] = {
 			["skillLvl"] = 1,
 			["skillMax"] = 200,
-			["name"] = "Shadowlands Fishing",
 			["skillMod"] = 0,
+			["name"] = "Shadowlands Fishing",
 		},
 	},
-	["Guide"] = {
+	["BuildingLocations"] = {
 	},
 	["Taxi"] = {
 	},
-	["BuildingLocations"] = {
+	["GuideVersion"] = {
 	},
 	["EnableTreasures"] = true,
 	["EnableFlight"] = true,

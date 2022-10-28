@@ -19,11 +19,11 @@ LegionInvasionTimerDB = {
 		["Tyranasticus - Zul'jin"] = "Default",
 		["Brotus - Argent Dawn"] = "Default",
 		["Illingrath - Dalaran"] = "Default",
-		["Shimzo - Zul'jin"] = "Default",
+		["Jingojaggot - Zul'jin"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Default",
 		["Kotalkhan - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
-		["Jingojaggot - Zul'jin"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
 		["Alatra - Zul'jin"] = "Default",
 		["Galvarton - Dalaran"] = "Default",
 		["Tinkster - Dalaran"] = "Default",
@@ -38,7 +38,7 @@ LegionInvasionTimerDB = {
 		["Datgore - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
+		["Shimzo - Zul'jin"] = "Default",
 		["Abyronterner - Zul'jin"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
 		["Jasmoney - Zul'jin"] = "Default",
@@ -56,4 +56,4 @@ LegionInvasionTimerDB = {
 		},
 	},
 }
-LegionInvasionTime = 1666695635
+LegionInvasionTime = 1666895433

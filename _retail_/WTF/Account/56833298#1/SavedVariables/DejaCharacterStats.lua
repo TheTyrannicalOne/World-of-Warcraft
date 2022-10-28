@@ -1453,67 +1453,40 @@ DCS_ClassSpecDB = {
 			},
 		}, -- [49]
 		{
-			["statKey"] = "BLACK_GIRLS_CODE",
+			["statKey"] = "RAINN",
 			["hidden"] = true,
 		}, -- [50]
 		{
-			["statKey"] = "FUTURES",
-			["hidden"] = true,
-		}, -- [51]
-		{
-			["statKey"] = "GIRLS_WHO_CODE",
-			["hidden"] = true,
-		}, -- [52]
-		{
-			["statKey"] = "RAINN",
-			["hidden"] = true,
-		}, -- [53]
-		{
-			["statKey"] = "WOMEN_IN__ANIMATION",
-			["hidden"] = true,
-		}, -- [54]
-		{
-			["statKey"] = "WOMEN_IN_GAMES_INTL",
-			["hidden"] = true,
-		}, -- [55]
-		{
 			["statKey"] = "HonorCategory",
-		}, -- [56]
+		}, -- [51]
 		{
 			["statKey"] = "HONOR_PROGRESS",
 			["hideAt"] = 0,
-		}, -- [57]
+		}, -- [52]
 		{
 			["statKey"] = "HONOR_LEVEL",
 			["hideAt"] = 0,
-		}, -- [58]
-		{
-			["statKey"] = "ConquestCategory",
-			["hidden"] = true,
-		}, -- [59]
-		{
-			["statKey"] = "RATING_2V2",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [60]
-		{
-			["statKey"] = "RATING_3V3",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [61]
+		}, -- [53]
 		{
 			["statKey"] = "RATING_RBG",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [62]
+		}, -- [54]
 		{
-			["statKey"] = "CONQUEST_PROGRESS",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [63]
+			["statKey"] = "UserCat4",
+		}, -- [55]
 		{
-			["statKey"] = "Diversity",
-		}, -- [64]
+			["statKey"] = "UserCat5",
+		}, -- [56]
+		{
+			["statKey"] = "UserCat3",
+		}, -- [57]
+		{
+			["statKey"] = "UserCat2",
+		}, -- [58]
+		{
+			["statKey"] = "UserCat1",
+		}, -- [59]
 		["uniqueKey"] = "Alatra:Zul'jin:2",
 	},
 	["Dachas:Zul'jin:5"] = {
@@ -6966,56 +6939,31 @@ DCS_ClassSpecDB = {
 			["hidden"] = true,
 		}, -- [49]
 		{
-			["statKey"] = "RATING_2V2",
+			["statKey"] = "HONOR_PROGRESS",
 			["hideAt"] = 0,
 		}, -- [50]
 		{
-			["statKey"] = "HONOR_PROGRESS",
+			["statKey"] = "HONOR_LEVEL",
 			["hideAt"] = 0,
 		}, -- [51]
 		{
-			["statKey"] = "CONQUEST_PROGRESS",
-			["hideAt"] = 0,
+			["statKey"] = "HonorCategory",
 		}, -- [52]
 		{
-			["statKey"] = "RATING_RBG",
-			["hideAt"] = 0,
+			["statKey"] = "UserCat4",
 		}, -- [53]
 		{
-			["statKey"] = "RATING_3V3",
-			["hideAt"] = 0,
+			["statKey"] = "UserCat5",
 		}, -- [54]
 		{
-			["statKey"] = "HONOR_LEVEL",
-			["hideAt"] = 0,
+			["statKey"] = "UserCat3",
 		}, -- [55]
 		{
-			["statKey"] = "HonorCategory",
+			["statKey"] = "UserCat2",
 		}, -- [56]
 		{
-			["statKey"] = "ConquestCategory",
+			["statKey"] = "UserCat1",
 		}, -- [57]
-		{
-			["statKey"] = "WOMEN_IN__ANIMATION",
-		}, -- [58]
-		{
-			["statKey"] = "WOMEN_IN_GAMES_INTL",
-		}, -- [59]
-		{
-			["statKey"] = "RAINN",
-		}, -- [60]
-		{
-			["statKey"] = "GIRLS_WHO_CODE",
-		}, -- [61]
-		{
-			["statKey"] = "FUTURES",
-		}, -- [62]
-		{
-			["statKey"] = "BLACK_GIRLS_CODE",
-		}, -- [63]
-		{
-			["statKey"] = "Diversity",
-		}, -- [64]
 		["uniqueKey"] = "Zulbathal:Zul'jin:1",
 	},
 	["Alatra:Zul'jin:3"] = {
@@ -8735,56 +8683,31 @@ DCS_ClassSpecDB = {
 			},
 		}, -- [49]
 		{
-			["statKey"] = "RATING_2V2",
+			["statKey"] = "HONOR_PROGRESS",
 			["hideAt"] = 0,
 		}, -- [50]
 		{
-			["statKey"] = "HONOR_PROGRESS",
+			["statKey"] = "HONOR_LEVEL",
 			["hideAt"] = 0,
 		}, -- [51]
 		{
-			["statKey"] = "CONQUEST_PROGRESS",
-			["hideAt"] = 0,
+			["statKey"] = "HonorCategory",
 		}, -- [52]
 		{
-			["statKey"] = "RATING_RBG",
-			["hideAt"] = 0,
+			["statKey"] = "UserCat4",
 		}, -- [53]
 		{
-			["statKey"] = "RATING_3V3",
-			["hideAt"] = 0,
+			["statKey"] = "UserCat5",
 		}, -- [54]
 		{
-			["statKey"] = "HONOR_LEVEL",
-			["hideAt"] = 0,
+			["statKey"] = "UserCat3",
 		}, -- [55]
 		{
-			["statKey"] = "HonorCategory",
+			["statKey"] = "UserCat2",
 		}, -- [56]
 		{
-			["statKey"] = "ConquestCategory",
+			["statKey"] = "UserCat1",
 		}, -- [57]
-		{
-			["statKey"] = "WOMEN_IN__ANIMATION",
-		}, -- [58]
-		{
-			["statKey"] = "WOMEN_IN_GAMES_INTL",
-		}, -- [59]
-		{
-			["statKey"] = "RAINN",
-		}, -- [60]
-		{
-			["statKey"] = "GIRLS_WHO_CODE",
-		}, -- [61]
-		{
-			["statKey"] = "FUTURES",
-		}, -- [62]
-		{
-			["statKey"] = "BLACK_GIRLS_CODE",
-		}, -- [63]
-		{
-			["statKey"] = "Diversity",
-		}, -- [64]
 		["uniqueKey"] = "Shanyt:Argent Dawn:1",
 	},
 	["Alatra:Zul'jin:1"] = {
@@ -10028,750 +9951,6 @@ DCS_ClassSpecDB = {
 		}, -- [61]
 		["uniqueKey"] = "Rotclaugh:Dalaran:3",
 	},
-	["Valmagus:Zul'jin:1"] = {
-		{
-			["statKey"] = "ItemLevelFrame",
-		}, -- [1]
-		{
-			["statKey"] = "GeneralCategory",
-		}, -- [2]
-		{
-			["statKey"] = "HEALTH",
-		}, -- [3]
-		{
-			["statKey"] = "DCS_POWER",
-		}, -- [4]
-		{
-			["statKey"] = "DCS_ALTERNATEMANA",
-		}, -- [5]
-		{
-			["statKey"] = "ITEMLEVEL",
-			["hidden"] = true,
-		}, -- [6]
-		{
-			["statKey"] = "MOVESPEED",
-		}, -- [7]
-		{
-			["statKey"] = "DURABILITY_STAT",
-		}, -- [8]
-		{
-			["statKey"] = "REPAIR_COST",
-		}, -- [9]
-		{
-			["statKey"] = "AttributesCategory",
-		}, -- [10]
-		{
-			["statKey"] = "STRENGTH",
-			["hidden"] = true,
-		}, -- [11]
-		{
-			["statKey"] = "AGILITY",
-			["hidden"] = true,
-		}, -- [12]
-		{
-			["statKey"] = "INTELLECT",
-		}, -- [13]
-		{
-			["statKey"] = "STAMINA",
-		}, -- [14]
-		{
-			["statKey"] = "ARMOR",
-		}, -- [15]
-		{
-			["statKey"] = "OffenseCategory",
-		}, -- [16]
-		{
-			["statKey"] = "ATTACK_DAMAGE",
-			["hidden"] = true,
-		}, -- [17]
-		{
-			["statKey"] = "ATTACK_AP",
-			["hidden"] = true,
-		}, -- [18]
-		{
-			["statKey"] = "DCS_ATTACK_ATTACKSPEED",
-			["hidden"] = true,
-		}, -- [19]
-		{
-			["statKey"] = "WEAPON_DPS",
-			["hidden"] = true,
-		}, -- [20]
-		{
-			["statKey"] = "SPELLPOWER",
-		}, -- [21]
-		{
-			["statKey"] = "MANAREGEN",
-		}, -- [22]
-		{
-			["statKey"] = "ENERGY_REGEN",
-		}, -- [23]
-		{
-			["statKey"] = "DCS_RUNEREGEN",
-			["hidden"] = true,
-		}, -- [24]
-		{
-			["statKey"] = "FOCUS_REGEN",
-		}, -- [25]
-		{
-			["statKey"] = "GCD",
-		}, -- [26]
-		{
-			["statKey"] = "EnhancementsCategory",
-		}, -- [27]
-		{
-			["statKey"] = "CRITCHANCE",
-			["hideAt"] = 0,
-		}, -- [28]
-		{
-			["statKey"] = "HASTE",
-			["hideAt"] = 0,
-		}, -- [29]
-		{
-			["statKey"] = "VERSATILITY",
-			["hideAt"] = 0,
-		}, -- [30]
-		{
-			["statKey"] = "MASTERY",
-			["hideAt"] = 0,
-		}, -- [31]
-		{
-			["statKey"] = "LIFESTEAL",
-			["hideAt"] = 0,
-		}, -- [32]
-		{
-			["statKey"] = "AVOIDANCE",
-			["hideAt"] = 0,
-		}, -- [33]
-		{
-			["statKey"] = "DefenseCategory",
-			["hidden"] = true,
-		}, -- [34]
-		{
-			["statKey"] = "DODGE",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [35]
-		{
-			["statKey"] = "PARRY",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [36]
-		{
-			["statKey"] = "BLOCK",
-			["hidden"] = true,
-			["hideAt"] = 0,
-		}, -- [37]
-		{
-			["statKey"] = "RatingCategory",
-			["hidden"] = true,
-		}, -- [38]
-		{
-			["statKey"] = "CRITCHANCE_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [39]
-		{
-			["statKey"] = "HASTE_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [40]
-		{
-			["statKey"] = "VERSATILITY_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [41]
-		{
-			["statKey"] = "MASTERY_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [42]
-		{
-			["statKey"] = "LIFESTEAL_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [43]
-		{
-			["statKey"] = "AVOIDANCE_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [44]
-		{
-			["statKey"] = "DODGE_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [45]
-		{
-			["statKey"] = "PARRY_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [46]
-		{
-			["statKey"] = "SPEED_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [47]
-		{
-			["statKey"] = "SPEED",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [48]
-		{
-			["statKey"] = "STAGGER",
-			["roles"] = {
-				"TANK", -- [1]
-			},
-			["hidden"] = true,
-			["hideAt"] = 0,
-		}, -- [49]
-		{
-			["statKey"] = "ActiBlizzWalkout",
-			["hidden"] = true,
-		}, -- [50]
-		{
-			["statKey"] = "BLACK_GIRLS_CODE",
-			["hidden"] = true,
-		}, -- [51]
-		{
-			["statKey"] = "FUTURES",
-			["hidden"] = true,
-		}, -- [52]
-		{
-			["statKey"] = "GIRLS_WHO_CODE",
-			["hidden"] = true,
-		}, -- [53]
-		{
-			["statKey"] = "RAINN",
-			["hidden"] = true,
-		}, -- [54]
-		{
-			["statKey"] = "WOMEN_IN__ANIMATION",
-			["hidden"] = true,
-		}, -- [55]
-		{
-			["statKey"] = "WOMEN_IN_GAMES_INTL",
-			["hidden"] = true,
-		}, -- [56]
-		{
-			["statKey"] = "CorruptionCategory",
-			["hidden"] = true,
-		}, -- [57]
-		{
-			["statKey"] = "CR_CORRUPTION",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [58]
-		{
-			["statKey"] = "CR_CORRUPTION_RESISTANCE",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [59]
-		{
-			["statKey"] = "CR_TOTAL_CORRUPTION",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [60]
-		{
-			["statKey"] = "HonorCategory",
-		}, -- [61]
-		{
-			["statKey"] = "HONOR_PROGRESS",
-			["hideAt"] = 0,
-		}, -- [62]
-		{
-			["statKey"] = "HONOR_LEVEL",
-			["hideAt"] = 0,
-		}, -- [63]
-		{
-			["statKey"] = "ConquestCategory",
-			["hidden"] = true,
-		}, -- [64]
-		{
-			["statKey"] = "RATING_2V2",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [65]
-		{
-			["statKey"] = "RATING_3V3",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [66]
-		{
-			["statKey"] = "RATING_RBG",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [67]
-		{
-			["statKey"] = "CONQUEST_PROGRESS",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [68]
-		["uniqueKey"] = "Valmagus:Zul'jin:1",
-	},
-	["Varlouris:Dalaran:2"] = {
-		{
-			["statKey"] = "ItemLevelFrame",
-		}, -- [1]
-		{
-			["statKey"] = "HonorCategory",
-		}, -- [2]
-		{
-			["statKey"] = "HONOR_PROGRESS",
-			["hideAt"] = 0,
-		}, -- [3]
-		{
-			["statKey"] = "HONOR_LEVEL",
-			["hideAt"] = 0,
-		}, -- [4]
-		{
-			["statKey"] = "ConquestCategory",
-			["hidden"] = true,
-		}, -- [5]
-		{
-			["statKey"] = "RATING_2V2",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [6]
-		{
-			["statKey"] = "RATING_3V3",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [7]
-		{
-			["statKey"] = "RATING_RBG",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [8]
-		{
-			["statKey"] = "CONQUEST_PROGRESS",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [9]
-		{
-			["statKey"] = "GeneralCategory",
-		}, -- [10]
-		{
-			["statKey"] = "HEALTH",
-		}, -- [11]
-		{
-			["statKey"] = "DCS_POWER",
-		}, -- [12]
-		{
-			["statKey"] = "DCS_ALTERNATEMANA",
-		}, -- [13]
-		{
-			["statKey"] = "ITEMLEVEL",
-			["hidden"] = true,
-		}, -- [14]
-		{
-			["statKey"] = "MOVESPEED",
-		}, -- [15]
-		{
-			["statKey"] = "DURABILITY_STAT",
-		}, -- [16]
-		{
-			["statKey"] = "REPAIR_COST",
-		}, -- [17]
-		{
-			["statKey"] = "AttributesCategory",
-		}, -- [18]
-		{
-			["statKey"] = "STRENGTH",
-			["hidden"] = true,
-		}, -- [19]
-		{
-			["statKey"] = "AGILITY",
-		}, -- [20]
-		{
-			["statKey"] = "INTELLECT",
-			["hidden"] = true,
-		}, -- [21]
-		{
-			["statKey"] = "STAMINA",
-		}, -- [22]
-		{
-			["statKey"] = "ARMOR",
-		}, -- [23]
-		{
-			["statKey"] = "OffenseCategory",
-		}, -- [24]
-		{
-			["statKey"] = "ATTACK_DAMAGE",
-		}, -- [25]
-		{
-			["statKey"] = "ATTACK_AP",
-		}, -- [26]
-		{
-			["statKey"] = "DCS_ATTACK_ATTACKSPEED",
-		}, -- [27]
-		{
-			["statKey"] = "WEAPON_DPS",
-		}, -- [28]
-		{
-			["statKey"] = "SPELLPOWER",
-			["hidden"] = true,
-		}, -- [29]
-		{
-			["statKey"] = "MANAREGEN",
-			["hidden"] = true,
-		}, -- [30]
-		{
-			["statKey"] = "ENERGY_REGEN",
-		}, -- [31]
-		{
-			["statKey"] = "DCS_RUNEREGEN",
-			["hidden"] = true,
-		}, -- [32]
-		{
-			["statKey"] = "FOCUS_REGEN",
-		}, -- [33]
-		{
-			["statKey"] = "GCD",
-		}, -- [34]
-		{
-			["statKey"] = "EnhancementsCategory",
-		}, -- [35]
-		{
-			["statKey"] = "CRITCHANCE",
-			["hideAt"] = 0,
-		}, -- [36]
-		{
-			["statKey"] = "HASTE",
-			["hideAt"] = 0,
-		}, -- [37]
-		{
-			["statKey"] = "VERSATILITY",
-			["hideAt"] = 0,
-		}, -- [38]
-		{
-			["statKey"] = "MASTERY",
-			["hideAt"] = 0,
-		}, -- [39]
-		{
-			["statKey"] = "LIFESTEAL",
-			["hideAt"] = 0,
-		}, -- [40]
-		{
-			["statKey"] = "AVOIDANCE",
-			["hideAt"] = 0,
-		}, -- [41]
-		{
-			["statKey"] = "DefenseCategory",
-			["hidden"] = true,
-		}, -- [42]
-		{
-			["statKey"] = "DODGE",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [43]
-		{
-			["statKey"] = "PARRY",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [44]
-		{
-			["statKey"] = "BLOCK",
-			["hidden"] = true,
-			["hideAt"] = 0,
-		}, -- [45]
-		{
-			["statKey"] = "RatingCategory",
-			["hidden"] = true,
-		}, -- [46]
-		{
-			["statKey"] = "CRITCHANCE_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [47]
-		{
-			["statKey"] = "HASTE_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [48]
-		{
-			["statKey"] = "VERSATILITY_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [49]
-		{
-			["statKey"] = "MASTERY_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [50]
-		{
-			["statKey"] = "LIFESTEAL_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [51]
-		{
-			["statKey"] = "AVOIDANCE_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [52]
-		{
-			["statKey"] = "DODGE_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [53]
-		{
-			["statKey"] = "PARRY_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [54]
-		{
-			["statKey"] = "SPEED_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [55]
-		{
-			["statKey"] = "SPEED",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [56]
-		{
-			["statKey"] = "STAGGER",
-			["hidden"] = true,
-			["hideAt"] = 0,
-			["roles"] = {
-				"TANK", -- [1]
-			},
-		}, -- [57]
-		{
-			["statKey"] = "WOMEN_IN__ANIMATION",
-		}, -- [58]
-		{
-			["statKey"] = "WOMEN_IN_GAMES_INTL",
-		}, -- [59]
-		{
-			["statKey"] = "RAINN",
-		}, -- [60]
-		{
-			["statKey"] = "GIRLS_WHO_CODE",
-		}, -- [61]
-		{
-			["statKey"] = "FUTURES",
-		}, -- [62]
-		{
-			["statKey"] = "BLACK_GIRLS_CODE",
-		}, -- [63]
-		{
-			["statKey"] = "Diversity",
-		}, -- [64]
-		["uniqueKey"] = "Varlouris:Dalaran:2",
-	},
-	["Zulbathal:Zul'jin:2"] = {
-		{
-			["statKey"] = "ItemLevelFrame",
-		}, -- [1]
-		{
-			["statKey"] = "CorruptionCategory",
-			["hidden"] = true,
-		}, -- [2]
-		{
-			["statKey"] = "CR_CORRUPTION",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [3]
-		{
-			["statKey"] = "CR_CORRUPTION_RESISTANCE",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [4]
-		{
-			["statKey"] = "CR_TOTAL_CORRUPTION",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [5]
-		{
-			["statKey"] = "GeneralCategory",
-		}, -- [6]
-		{
-			["statKey"] = "HEALTH",
-		}, -- [7]
-		{
-			["statKey"] = "DCS_POWER",
-		}, -- [8]
-		{
-			["statKey"] = "DCS_ALTERNATEMANA",
-		}, -- [9]
-		{
-			["statKey"] = "ITEMLEVEL",
-			["hidden"] = true,
-		}, -- [10]
-		{
-			["statKey"] = "MOVESPEED",
-		}, -- [11]
-		{
-			["statKey"] = "DURABILITY_STAT",
-		}, -- [12]
-		{
-			["statKey"] = "REPAIR_COST",
-		}, -- [13]
-		{
-			["statKey"] = "AttributesCategory",
-		}, -- [14]
-		{
-			["statKey"] = "STRENGTH",
-			["hidden"] = true,
-		}, -- [15]
-		{
-			["statKey"] = "AGILITY",
-		}, -- [16]
-		{
-			["statKey"] = "INTELLECT",
-			["hidden"] = true,
-		}, -- [17]
-		{
-			["statKey"] = "STAMINA",
-		}, -- [18]
-		{
-			["statKey"] = "ARMOR",
-		}, -- [19]
-		{
-			["statKey"] = "OffenseCategory",
-		}, -- [20]
-		{
-			["statKey"] = "ATTACK_DAMAGE",
-		}, -- [21]
-		{
-			["statKey"] = "ATTACK_AP",
-		}, -- [22]
-		{
-			["statKey"] = "DCS_ATTACK_ATTACKSPEED",
-		}, -- [23]
-		{
-			["statKey"] = "WEAPON_DPS",
-		}, -- [24]
-		{
-			["statKey"] = "SPELLPOWER",
-			["hidden"] = true,
-		}, -- [25]
-		{
-			["statKey"] = "MANAREGEN",
-			["hidden"] = true,
-		}, -- [26]
-		{
-			["statKey"] = "ENERGY_REGEN",
-		}, -- [27]
-		{
-			["statKey"] = "DCS_RUNEREGEN",
-			["hidden"] = true,
-		}, -- [28]
-		{
-			["statKey"] = "FOCUS_REGEN",
-		}, -- [29]
-		{
-			["statKey"] = "GCD",
-		}, -- [30]
-		{
-			["statKey"] = "EnhancementsCategory",
-		}, -- [31]
-		{
-			["statKey"] = "CRITCHANCE",
-			["hideAt"] = 0,
-		}, -- [32]
-		{
-			["statKey"] = "HASTE",
-			["hideAt"] = 0,
-		}, -- [33]
-		{
-			["statKey"] = "VERSATILITY",
-			["hideAt"] = 0,
-		}, -- [34]
-		{
-			["statKey"] = "MASTERY",
-			["hideAt"] = 0,
-		}, -- [35]
-		{
-			["statKey"] = "LIFESTEAL",
-			["hideAt"] = 0,
-		}, -- [36]
-		{
-			["statKey"] = "AVOIDANCE",
-			["hideAt"] = 0,
-		}, -- [37]
-		{
-			["statKey"] = "DefenseCategory",
-			["hidden"] = true,
-		}, -- [38]
-		{
-			["statKey"] = "DODGE",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [39]
-		{
-			["statKey"] = "PARRY",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [40]
-		{
-			["statKey"] = "BLOCK",
-			["hidden"] = true,
-			["hideAt"] = 0,
-		}, -- [41]
-		{
-			["statKey"] = "RatingCategory",
-			["hidden"] = true,
-		}, -- [42]
-		{
-			["statKey"] = "CRITCHANCE_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [43]
-		{
-			["statKey"] = "HASTE_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [44]
-		{
-			["statKey"] = "VERSATILITY_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [45]
-		{
-			["statKey"] = "MASTERY_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [46]
-		{
-			["statKey"] = "LIFESTEAL_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [47]
-		{
-			["statKey"] = "AVOIDANCE_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [48]
-		{
-			["statKey"] = "DODGE_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [49]
-		{
-			["statKey"] = "PARRY_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [50]
-		{
-			["statKey"] = "SPEED_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [51]
-		{
-			["statKey"] = "SPEED",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [52]
-		{
-			["statKey"] = "STAGGER",
-			["roles"] = {
-				"TANK", -- [1]
-			},
-			["hidden"] = true,
-			["hideAt"] = 0,
-		}, -- [53]
-		["uniqueKey"] = "Zulbathal:Zul'jin:2",
-	},
 	["Jingojaggot:Argent Dawn:2"] = {
 		{
 			["statKey"] = "ItemLevelFrame",
@@ -11031,6 +10210,698 @@ DCS_ClassSpecDB = {
 			["hidden"] = true,
 		}, -- [64]
 		["uniqueKey"] = "Jingojaggot:Argent Dawn:2",
+	},
+	["Varlouris:Dalaran:2"] = {
+		{
+			["statKey"] = "ItemLevelFrame",
+		}, -- [1]
+		{
+			["statKey"] = "HonorCategory",
+		}, -- [2]
+		{
+			["statKey"] = "HONOR_PROGRESS",
+			["hideAt"] = 0,
+		}, -- [3]
+		{
+			["statKey"] = "HONOR_LEVEL",
+			["hideAt"] = 0,
+		}, -- [4]
+		{
+			["statKey"] = "RATING_RBG",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [5]
+		{
+			["statKey"] = "GeneralCategory",
+		}, -- [6]
+		{
+			["statKey"] = "HEALTH",
+		}, -- [7]
+		{
+			["statKey"] = "DCS_POWER",
+		}, -- [8]
+		{
+			["statKey"] = "DCS_ALTERNATEMANA",
+		}, -- [9]
+		{
+			["statKey"] = "ITEMLEVEL",
+			["hidden"] = true,
+		}, -- [10]
+		{
+			["statKey"] = "MOVESPEED",
+		}, -- [11]
+		{
+			["statKey"] = "DURABILITY_STAT",
+		}, -- [12]
+		{
+			["statKey"] = "REPAIR_COST",
+		}, -- [13]
+		{
+			["statKey"] = "AttributesCategory",
+		}, -- [14]
+		{
+			["statKey"] = "STRENGTH",
+			["hidden"] = true,
+		}, -- [15]
+		{
+			["statKey"] = "AGILITY",
+		}, -- [16]
+		{
+			["statKey"] = "INTELLECT",
+			["hidden"] = true,
+		}, -- [17]
+		{
+			["statKey"] = "STAMINA",
+		}, -- [18]
+		{
+			["statKey"] = "ARMOR",
+		}, -- [19]
+		{
+			["statKey"] = "OffenseCategory",
+		}, -- [20]
+		{
+			["statKey"] = "ATTACK_DAMAGE",
+		}, -- [21]
+		{
+			["statKey"] = "ATTACK_AP",
+		}, -- [22]
+		{
+			["statKey"] = "DCS_ATTACK_ATTACKSPEED",
+		}, -- [23]
+		{
+			["statKey"] = "WEAPON_DPS",
+		}, -- [24]
+		{
+			["statKey"] = "SPELLPOWER",
+			["hidden"] = true,
+		}, -- [25]
+		{
+			["statKey"] = "MANAREGEN",
+			["hidden"] = true,
+		}, -- [26]
+		{
+			["statKey"] = "ENERGY_REGEN",
+		}, -- [27]
+		{
+			["statKey"] = "DCS_RUNEREGEN",
+			["hidden"] = true,
+		}, -- [28]
+		{
+			["statKey"] = "FOCUS_REGEN",
+		}, -- [29]
+		{
+			["statKey"] = "GCD",
+		}, -- [30]
+		{
+			["statKey"] = "EnhancementsCategory",
+		}, -- [31]
+		{
+			["statKey"] = "CRITCHANCE",
+			["hideAt"] = 0,
+		}, -- [32]
+		{
+			["statKey"] = "HASTE",
+			["hideAt"] = 0,
+		}, -- [33]
+		{
+			["statKey"] = "VERSATILITY",
+			["hideAt"] = 0,
+		}, -- [34]
+		{
+			["statKey"] = "MASTERY",
+			["hideAt"] = 0,
+		}, -- [35]
+		{
+			["statKey"] = "LIFESTEAL",
+			["hideAt"] = 0,
+		}, -- [36]
+		{
+			["statKey"] = "AVOIDANCE",
+			["hideAt"] = 0,
+		}, -- [37]
+		{
+			["statKey"] = "DefenseCategory",
+			["hidden"] = true,
+		}, -- [38]
+		{
+			["statKey"] = "DODGE",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [39]
+		{
+			["statKey"] = "PARRY",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [40]
+		{
+			["statKey"] = "BLOCK",
+			["hidden"] = true,
+			["hideAt"] = 0,
+		}, -- [41]
+		{
+			["statKey"] = "RatingCategory",
+			["hidden"] = true,
+		}, -- [42]
+		{
+			["statKey"] = "CRITCHANCE_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [43]
+		{
+			["statKey"] = "HASTE_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [44]
+		{
+			["statKey"] = "VERSATILITY_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [45]
+		{
+			["statKey"] = "MASTERY_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [46]
+		{
+			["statKey"] = "LIFESTEAL_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [47]
+		{
+			["statKey"] = "AVOIDANCE_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [48]
+		{
+			["statKey"] = "DODGE_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [49]
+		{
+			["statKey"] = "PARRY_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [50]
+		{
+			["statKey"] = "SPEED_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [51]
+		{
+			["statKey"] = "SPEED",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [52]
+		{
+			["statKey"] = "STAGGER",
+			["hidden"] = true,
+			["hideAt"] = 0,
+			["roles"] = {
+				"TANK", -- [1]
+			},
+		}, -- [53]
+		{
+			["statKey"] = "GIRLS_WHO_CODE",
+		}, -- [54]
+		{
+			["statKey"] = "UserCat4",
+		}, -- [55]
+		{
+			["statKey"] = "UserCat5",
+		}, -- [56]
+		{
+			["statKey"] = "UserCat3",
+		}, -- [57]
+		{
+			["statKey"] = "UserCat2",
+		}, -- [58]
+		{
+			["statKey"] = "UserCat1",
+		}, -- [59]
+		["uniqueKey"] = "Varlouris:Dalaran:2",
+	},
+	["Zulbathal:Zul'jin:2"] = {
+		{
+			["statKey"] = "ItemLevelFrame",
+		}, -- [1]
+		{
+			["statKey"] = "CorruptionCategory",
+			["hidden"] = true,
+		}, -- [2]
+		{
+			["statKey"] = "CR_CORRUPTION",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [3]
+		{
+			["statKey"] = "CR_CORRUPTION_RESISTANCE",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [4]
+		{
+			["statKey"] = "CR_TOTAL_CORRUPTION",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [5]
+		{
+			["statKey"] = "GeneralCategory",
+		}, -- [6]
+		{
+			["statKey"] = "HEALTH",
+		}, -- [7]
+		{
+			["statKey"] = "DCS_POWER",
+		}, -- [8]
+		{
+			["statKey"] = "DCS_ALTERNATEMANA",
+		}, -- [9]
+		{
+			["statKey"] = "ITEMLEVEL",
+			["hidden"] = true,
+		}, -- [10]
+		{
+			["statKey"] = "MOVESPEED",
+		}, -- [11]
+		{
+			["statKey"] = "DURABILITY_STAT",
+		}, -- [12]
+		{
+			["statKey"] = "REPAIR_COST",
+		}, -- [13]
+		{
+			["statKey"] = "AttributesCategory",
+		}, -- [14]
+		{
+			["statKey"] = "STRENGTH",
+			["hidden"] = true,
+		}, -- [15]
+		{
+			["statKey"] = "AGILITY",
+		}, -- [16]
+		{
+			["statKey"] = "INTELLECT",
+			["hidden"] = true,
+		}, -- [17]
+		{
+			["statKey"] = "STAMINA",
+		}, -- [18]
+		{
+			["statKey"] = "ARMOR",
+		}, -- [19]
+		{
+			["statKey"] = "OffenseCategory",
+		}, -- [20]
+		{
+			["statKey"] = "ATTACK_DAMAGE",
+		}, -- [21]
+		{
+			["statKey"] = "ATTACK_AP",
+		}, -- [22]
+		{
+			["statKey"] = "DCS_ATTACK_ATTACKSPEED",
+		}, -- [23]
+		{
+			["statKey"] = "WEAPON_DPS",
+		}, -- [24]
+		{
+			["statKey"] = "SPELLPOWER",
+			["hidden"] = true,
+		}, -- [25]
+		{
+			["statKey"] = "MANAREGEN",
+			["hidden"] = true,
+		}, -- [26]
+		{
+			["statKey"] = "ENERGY_REGEN",
+		}, -- [27]
+		{
+			["statKey"] = "DCS_RUNEREGEN",
+			["hidden"] = true,
+		}, -- [28]
+		{
+			["statKey"] = "FOCUS_REGEN",
+		}, -- [29]
+		{
+			["statKey"] = "GCD",
+		}, -- [30]
+		{
+			["statKey"] = "EnhancementsCategory",
+		}, -- [31]
+		{
+			["statKey"] = "CRITCHANCE",
+			["hideAt"] = 0,
+		}, -- [32]
+		{
+			["statKey"] = "HASTE",
+			["hideAt"] = 0,
+		}, -- [33]
+		{
+			["statKey"] = "VERSATILITY",
+			["hideAt"] = 0,
+		}, -- [34]
+		{
+			["statKey"] = "MASTERY",
+			["hideAt"] = 0,
+		}, -- [35]
+		{
+			["statKey"] = "LIFESTEAL",
+			["hideAt"] = 0,
+		}, -- [36]
+		{
+			["statKey"] = "AVOIDANCE",
+			["hideAt"] = 0,
+		}, -- [37]
+		{
+			["statKey"] = "DefenseCategory",
+			["hidden"] = true,
+		}, -- [38]
+		{
+			["statKey"] = "DODGE",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [39]
+		{
+			["statKey"] = "PARRY",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [40]
+		{
+			["statKey"] = "BLOCK",
+			["hidden"] = true,
+			["hideAt"] = 0,
+		}, -- [41]
+		{
+			["statKey"] = "RatingCategory",
+			["hidden"] = true,
+		}, -- [42]
+		{
+			["statKey"] = "CRITCHANCE_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [43]
+		{
+			["statKey"] = "HASTE_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [44]
+		{
+			["statKey"] = "VERSATILITY_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [45]
+		{
+			["statKey"] = "MASTERY_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [46]
+		{
+			["statKey"] = "LIFESTEAL_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [47]
+		{
+			["statKey"] = "AVOIDANCE_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [48]
+		{
+			["statKey"] = "DODGE_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [49]
+		{
+			["statKey"] = "PARRY_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [50]
+		{
+			["statKey"] = "SPEED_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [51]
+		{
+			["statKey"] = "SPEED",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [52]
+		{
+			["statKey"] = "STAGGER",
+			["roles"] = {
+				"TANK", -- [1]
+			},
+			["hidden"] = true,
+			["hideAt"] = 0,
+		}, -- [53]
+		["uniqueKey"] = "Zulbathal:Zul'jin:2",
+	},
+	["Illingrath:Dalaran:1"] = {
+		{
+			["statKey"] = "ItemLevelFrame",
+		}, -- [1]
+		{
+			["statKey"] = "CorruptionCategory",
+			["hidden"] = true,
+		}, -- [2]
+		{
+			["statKey"] = "CR_CORRUPTION",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [3]
+		{
+			["statKey"] = "CR_CORRUPTION_RESISTANCE",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [4]
+		{
+			["statKey"] = "CR_TOTAL_CORRUPTION",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [5]
+		{
+			["statKey"] = "HonorCategory",
+		}, -- [6]
+		{
+			["statKey"] = "HONOR_PROGRESS",
+			["hideAt"] = 0,
+		}, -- [7]
+		{
+			["statKey"] = "HONOR_LEVEL",
+			["hideAt"] = 0,
+		}, -- [8]
+		{
+			["statKey"] = "ConquestCategory",
+			["hidden"] = true,
+		}, -- [9]
+		{
+			["statKey"] = "RATING_2V2",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [10]
+		{
+			["statKey"] = "RATING_3V3",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [11]
+		{
+			["statKey"] = "RATING_RBG",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [12]
+		{
+			["statKey"] = "CONQUEST_PROGRESS",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [13]
+		{
+			["statKey"] = "GeneralCategory",
+		}, -- [14]
+		{
+			["statKey"] = "HEALTH",
+		}, -- [15]
+		{
+			["statKey"] = "DCS_POWER",
+		}, -- [16]
+		{
+			["statKey"] = "DCS_ALTERNATEMANA",
+		}, -- [17]
+		{
+			["statKey"] = "ITEMLEVEL",
+			["hidden"] = true,
+		}, -- [18]
+		{
+			["statKey"] = "MOVESPEED",
+		}, -- [19]
+		{
+			["statKey"] = "DURABILITY_STAT",
+		}, -- [20]
+		{
+			["statKey"] = "REPAIR_COST",
+		}, -- [21]
+		{
+			["statKey"] = "AttributesCategory",
+		}, -- [22]
+		{
+			["statKey"] = "STRENGTH",
+			["hidden"] = true,
+		}, -- [23]
+		{
+			["statKey"] = "AGILITY",
+		}, -- [24]
+		{
+			["statKey"] = "INTELLECT",
+			["hidden"] = true,
+		}, -- [25]
+		{
+			["statKey"] = "STAMINA",
+		}, -- [26]
+		{
+			["statKey"] = "ARMOR",
+		}, -- [27]
+		{
+			["statKey"] = "OffenseCategory",
+		}, -- [28]
+		{
+			["statKey"] = "ATTACK_DAMAGE",
+		}, -- [29]
+		{
+			["statKey"] = "ATTACK_AP",
+		}, -- [30]
+		{
+			["statKey"] = "DCS_ATTACK_ATTACKSPEED",
+		}, -- [31]
+		{
+			["statKey"] = "WEAPON_DPS",
+		}, -- [32]
+		{
+			["statKey"] = "SPELLPOWER",
+			["hidden"] = true,
+		}, -- [33]
+		{
+			["statKey"] = "MANAREGEN",
+			["hidden"] = true,
+		}, -- [34]
+		{
+			["statKey"] = "ENERGY_REGEN",
+		}, -- [35]
+		{
+			["statKey"] = "DCS_RUNEREGEN",
+			["hidden"] = true,
+		}, -- [36]
+		{
+			["statKey"] = "FOCUS_REGEN",
+		}, -- [37]
+		{
+			["statKey"] = "GCD",
+		}, -- [38]
+		{
+			["statKey"] = "EnhancementsCategory",
+		}, -- [39]
+		{
+			["statKey"] = "CRITCHANCE",
+			["hideAt"] = 0,
+		}, -- [40]
+		{
+			["statKey"] = "HASTE",
+			["hideAt"] = 0,
+		}, -- [41]
+		{
+			["statKey"] = "VERSATILITY",
+			["hideAt"] = 0,
+		}, -- [42]
+		{
+			["statKey"] = "MASTERY",
+			["hideAt"] = 0,
+		}, -- [43]
+		{
+			["statKey"] = "LIFESTEAL",
+			["hideAt"] = 0,
+		}, -- [44]
+		{
+			["statKey"] = "AVOIDANCE",
+			["hideAt"] = 0,
+		}, -- [45]
+		{
+			["statKey"] = "DefenseCategory",
+			["hidden"] = true,
+		}, -- [46]
+		{
+			["statKey"] = "DODGE",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [47]
+		{
+			["statKey"] = "PARRY",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [48]
+		{
+			["statKey"] = "BLOCK",
+			["hidden"] = true,
+			["hideAt"] = 0,
+		}, -- [49]
+		{
+			["statKey"] = "RatingCategory",
+			["hidden"] = true,
+		}, -- [50]
+		{
+			["statKey"] = "CRITCHANCE_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [51]
+		{
+			["statKey"] = "HASTE_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [52]
+		{
+			["statKey"] = "VERSATILITY_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [53]
+		{
+			["statKey"] = "MASTERY_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [54]
+		{
+			["statKey"] = "LIFESTEAL_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [55]
+		{
+			["statKey"] = "AVOIDANCE_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [56]
+		{
+			["statKey"] = "DODGE_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [57]
+		{
+			["statKey"] = "PARRY_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [58]
+		{
+			["statKey"] = "SPEED_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [59]
+		{
+			["statKey"] = "SPEED",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [60]
+		{
+			["statKey"] = "STAGGER",
+			["roles"] = {
+				"TANK", -- [1]
+			},
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [61]
+		["uniqueKey"] = "Illingrath:Dalaran:1",
 	},
 	["Alatra:Zul'jin:5"] = {
 		{
@@ -11309,254 +11180,284 @@ DCS_ClassSpecDB = {
 		}, -- [68]
 		["uniqueKey"] = "Alatra:Zul'jin:5",
 	},
-	["Illingrath:Dalaran:1"] = {
+	["Valmagus:Zul'jin:1"] = {
 		{
 			["statKey"] = "ItemLevelFrame",
 		}, -- [1]
 		{
-			["statKey"] = "CorruptionCategory",
-			["hidden"] = true,
+			["statKey"] = "GeneralCategory",
 		}, -- [2]
 		{
-			["statKey"] = "CR_CORRUPTION",
-			["hideAt"] = 0,
-			["hidden"] = true,
+			["statKey"] = "HEALTH",
 		}, -- [3]
 		{
-			["statKey"] = "CR_CORRUPTION_RESISTANCE",
-			["hideAt"] = 0,
-			["hidden"] = true,
+			["statKey"] = "DCS_POWER",
 		}, -- [4]
 		{
-			["statKey"] = "CR_TOTAL_CORRUPTION",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [5]
-		{
-			["statKey"] = "HonorCategory",
-		}, -- [6]
-		{
-			["statKey"] = "HONOR_PROGRESS",
-			["hideAt"] = 0,
-		}, -- [7]
-		{
-			["statKey"] = "HONOR_LEVEL",
-			["hideAt"] = 0,
-		}, -- [8]
-		{
-			["statKey"] = "ConquestCategory",
-			["hidden"] = true,
-		}, -- [9]
-		{
-			["statKey"] = "RATING_2V2",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [10]
-		{
-			["statKey"] = "RATING_3V3",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [11]
-		{
-			["statKey"] = "RATING_RBG",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [12]
-		{
-			["statKey"] = "CONQUEST_PROGRESS",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [13]
-		{
-			["statKey"] = "GeneralCategory",
-		}, -- [14]
-		{
-			["statKey"] = "HEALTH",
-		}, -- [15]
-		{
-			["statKey"] = "DCS_POWER",
-		}, -- [16]
-		{
 			["statKey"] = "DCS_ALTERNATEMANA",
-		}, -- [17]
+		}, -- [5]
 		{
 			["statKey"] = "ITEMLEVEL",
 			["hidden"] = true,
-		}, -- [18]
+		}, -- [6]
 		{
 			["statKey"] = "MOVESPEED",
-		}, -- [19]
+		}, -- [7]
 		{
 			["statKey"] = "DURABILITY_STAT",
-		}, -- [20]
+		}, -- [8]
 		{
 			["statKey"] = "REPAIR_COST",
-		}, -- [21]
+		}, -- [9]
 		{
 			["statKey"] = "AttributesCategory",
-		}, -- [22]
+		}, -- [10]
 		{
 			["statKey"] = "STRENGTH",
 			["hidden"] = true,
-		}, -- [23]
+		}, -- [11]
 		{
 			["statKey"] = "AGILITY",
-		}, -- [24]
+			["hidden"] = true,
+		}, -- [12]
 		{
 			["statKey"] = "INTELLECT",
-			["hidden"] = true,
-		}, -- [25]
+		}, -- [13]
 		{
 			["statKey"] = "STAMINA",
-		}, -- [26]
+		}, -- [14]
 		{
 			["statKey"] = "ARMOR",
-		}, -- [27]
+		}, -- [15]
 		{
 			["statKey"] = "OffenseCategory",
-		}, -- [28]
+		}, -- [16]
 		{
 			["statKey"] = "ATTACK_DAMAGE",
-		}, -- [29]
+			["hidden"] = true,
+		}, -- [17]
 		{
 			["statKey"] = "ATTACK_AP",
-		}, -- [30]
+			["hidden"] = true,
+		}, -- [18]
 		{
 			["statKey"] = "DCS_ATTACK_ATTACKSPEED",
-		}, -- [31]
+			["hidden"] = true,
+		}, -- [19]
 		{
 			["statKey"] = "WEAPON_DPS",
-		}, -- [32]
+			["hidden"] = true,
+		}, -- [20]
 		{
 			["statKey"] = "SPELLPOWER",
-			["hidden"] = true,
-		}, -- [33]
+		}, -- [21]
 		{
 			["statKey"] = "MANAREGEN",
-			["hidden"] = true,
-		}, -- [34]
+		}, -- [22]
 		{
 			["statKey"] = "ENERGY_REGEN",
-		}, -- [35]
+		}, -- [23]
 		{
 			["statKey"] = "DCS_RUNEREGEN",
 			["hidden"] = true,
-		}, -- [36]
+		}, -- [24]
 		{
 			["statKey"] = "FOCUS_REGEN",
-		}, -- [37]
+		}, -- [25]
 		{
 			["statKey"] = "GCD",
-		}, -- [38]
+		}, -- [26]
 		{
 			["statKey"] = "EnhancementsCategory",
-		}, -- [39]
+		}, -- [27]
 		{
 			["statKey"] = "CRITCHANCE",
 			["hideAt"] = 0,
-		}, -- [40]
+		}, -- [28]
 		{
 			["statKey"] = "HASTE",
 			["hideAt"] = 0,
-		}, -- [41]
+		}, -- [29]
 		{
 			["statKey"] = "VERSATILITY",
 			["hideAt"] = 0,
-		}, -- [42]
+		}, -- [30]
 		{
 			["statKey"] = "MASTERY",
 			["hideAt"] = 0,
-		}, -- [43]
+		}, -- [31]
 		{
 			["statKey"] = "LIFESTEAL",
 			["hideAt"] = 0,
-		}, -- [44]
+		}, -- [32]
 		{
 			["statKey"] = "AVOIDANCE",
 			["hideAt"] = 0,
-		}, -- [45]
+		}, -- [33]
 		{
 			["statKey"] = "DefenseCategory",
 			["hidden"] = true,
-		}, -- [46]
+		}, -- [34]
 		{
 			["statKey"] = "DODGE",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [47]
+		}, -- [35]
 		{
 			["statKey"] = "PARRY",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [48]
+		}, -- [36]
 		{
 			["statKey"] = "BLOCK",
 			["hidden"] = true,
 			["hideAt"] = 0,
-		}, -- [49]
+		}, -- [37]
 		{
 			["statKey"] = "RatingCategory",
 			["hidden"] = true,
-		}, -- [50]
+		}, -- [38]
 		{
 			["statKey"] = "CRITCHANCE_RATING",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [51]
+		}, -- [39]
 		{
 			["statKey"] = "HASTE_RATING",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [52]
+		}, -- [40]
 		{
 			["statKey"] = "VERSATILITY_RATING",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [53]
+		}, -- [41]
 		{
 			["statKey"] = "MASTERY_RATING",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [54]
+		}, -- [42]
 		{
 			["statKey"] = "LIFESTEAL_RATING",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [55]
+		}, -- [43]
 		{
 			["statKey"] = "AVOIDANCE_RATING",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [56]
+		}, -- [44]
 		{
 			["statKey"] = "DODGE_RATING",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [57]
+		}, -- [45]
 		{
 			["statKey"] = "PARRY_RATING",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [58]
+		}, -- [46]
 		{
 			["statKey"] = "SPEED_RATING",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [59]
+		}, -- [47]
 		{
 			["statKey"] = "SPEED",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [60]
+		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
 			["roles"] = {
 				"TANK", -- [1]
 			},
+			["hidden"] = true,
+			["hideAt"] = 0,
+		}, -- [49]
+		{
+			["statKey"] = "ActiBlizzWalkout",
+			["hidden"] = true,
+		}, -- [50]
+		{
+			["statKey"] = "BLACK_GIRLS_CODE",
+			["hidden"] = true,
+		}, -- [51]
+		{
+			["statKey"] = "FUTURES",
+			["hidden"] = true,
+		}, -- [52]
+		{
+			["statKey"] = "GIRLS_WHO_CODE",
+			["hidden"] = true,
+		}, -- [53]
+		{
+			["statKey"] = "RAINN",
+			["hidden"] = true,
+		}, -- [54]
+		{
+			["statKey"] = "WOMEN_IN__ANIMATION",
+			["hidden"] = true,
+		}, -- [55]
+		{
+			["statKey"] = "WOMEN_IN_GAMES_INTL",
+			["hidden"] = true,
+		}, -- [56]
+		{
+			["statKey"] = "CorruptionCategory",
+			["hidden"] = true,
+		}, -- [57]
+		{
+			["statKey"] = "CR_CORRUPTION",
 			["hideAt"] = 0,
 			["hidden"] = true,
+		}, -- [58]
+		{
+			["statKey"] = "CR_CORRUPTION_RESISTANCE",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [59]
+		{
+			["statKey"] = "CR_TOTAL_CORRUPTION",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [60]
+		{
+			["statKey"] = "HonorCategory",
 		}, -- [61]
-		["uniqueKey"] = "Illingrath:Dalaran:1",
+		{
+			["statKey"] = "HONOR_PROGRESS",
+			["hideAt"] = 0,
+		}, -- [62]
+		{
+			["statKey"] = "HONOR_LEVEL",
+			["hideAt"] = 0,
+		}, -- [63]
+		{
+			["statKey"] = "ConquestCategory",
+			["hidden"] = true,
+		}, -- [64]
+		{
+			["statKey"] = "RATING_2V2",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [65]
+		{
+			["statKey"] = "RATING_3V3",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [66]
+		{
+			["statKey"] = "RATING_RBG",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [67]
+		{
+			["statKey"] = "CONQUEST_PROGRESS",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [68]
+		["uniqueKey"] = "Valmagus:Zul'jin:1",
 	},
 	["Tyran:Argent Dawn:3"] = {
 		{
@@ -13222,67 +13123,40 @@ DCS_ClassSpecDB = {
 			["hideAt"] = 0,
 		}, -- [49]
 		{
-			["statKey"] = "BLACK_GIRLS_CODE",
+			["statKey"] = "RAINN",
 			["hidden"] = true,
 		}, -- [50]
 		{
-			["statKey"] = "FUTURES",
-			["hidden"] = true,
-		}, -- [51]
-		{
-			["statKey"] = "GIRLS_WHO_CODE",
-			["hidden"] = true,
-		}, -- [52]
-		{
-			["statKey"] = "RAINN",
-			["hidden"] = true,
-		}, -- [53]
-		{
-			["statKey"] = "WOMEN_IN__ANIMATION",
-			["hidden"] = true,
-		}, -- [54]
-		{
-			["statKey"] = "WOMEN_IN_GAMES_INTL",
-			["hidden"] = true,
-		}, -- [55]
-		{
 			["statKey"] = "HonorCategory",
-		}, -- [56]
+		}, -- [51]
 		{
 			["statKey"] = "HONOR_PROGRESS",
 			["hideAt"] = 0,
-		}, -- [57]
+		}, -- [52]
 		{
 			["statKey"] = "HONOR_LEVEL",
 			["hideAt"] = 0,
-		}, -- [58]
-		{
-			["statKey"] = "ConquestCategory",
-			["hidden"] = true,
-		}, -- [59]
-		{
-			["statKey"] = "RATING_2V2",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [60]
-		{
-			["statKey"] = "RATING_3V3",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [61]
+		}, -- [53]
 		{
 			["statKey"] = "RATING_RBG",
 			["hideAt"] = 0,
 			["hidden"] = true,
-		}, -- [62]
+		}, -- [54]
 		{
-			["statKey"] = "CONQUEST_PROGRESS",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [63]
+			["statKey"] = "UserCat4",
+		}, -- [55]
 		{
-			["statKey"] = "Diversity",
-		}, -- [64]
+			["statKey"] = "UserCat5",
+		}, -- [56]
+		{
+			["statKey"] = "UserCat3",
+		}, -- [57]
+		{
+			["statKey"] = "UserCat2",
+		}, -- [58]
+		{
+			["statKey"] = "UserCat1",
+		}, -- [59]
 		["uniqueKey"] = "Valmagus:Zul'jin:3",
 	},
 	["Laymonan:Zul'jin:5"] = {
@@ -13729,56 +13603,37 @@ DCS_ClassSpecDB = {
 			},
 		}, -- [49]
 		{
-			["statKey"] = "RATING_2V2",
+			["statKey"] = "HONOR_PROGRESS",
 			["hideAt"] = 0,
 		}, -- [50]
 		{
-			["statKey"] = "HONOR_PROGRESS",
+			["statKey"] = "HONOR_LEVEL",
 			["hideAt"] = 0,
 		}, -- [51]
 		{
-			["statKey"] = "CONQUEST_PROGRESS",
-			["hideAt"] = 0,
+			["statKey"] = "HonorCategory",
 		}, -- [52]
 		{
-			["statKey"] = "RATING_RBG",
-			["hideAt"] = 0,
+			["statKey"] = "RAINN",
 		}, -- [53]
 		{
-			["statKey"] = "RATING_3V3",
-			["hideAt"] = 0,
+			["statKey"] = "Diversity",
 		}, -- [54]
 		{
-			["statKey"] = "HONOR_LEVEL",
-			["hideAt"] = 0,
+			["statKey"] = "UserCat4",
 		}, -- [55]
 		{
-			["statKey"] = "HonorCategory",
+			["statKey"] = "UserCat5",
 		}, -- [56]
 		{
-			["statKey"] = "ConquestCategory",
+			["statKey"] = "UserCat3",
 		}, -- [57]
 		{
-			["statKey"] = "WOMEN_IN__ANIMATION",
+			["statKey"] = "UserCat2",
 		}, -- [58]
 		{
-			["statKey"] = "WOMEN_IN_GAMES_INTL",
+			["statKey"] = "UserCat1",
 		}, -- [59]
-		{
-			["statKey"] = "RAINN",
-		}, -- [60]
-		{
-			["statKey"] = "GIRLS_WHO_CODE",
-		}, -- [61]
-		{
-			["statKey"] = "FUTURES",
-		}, -- [62]
-		{
-			["statKey"] = "BLACK_GIRLS_CODE",
-		}, -- [63]
-		{
-			["statKey"] = "Diversity",
-		}, -- [64]
 		["uniqueKey"] = "Avisar:Dalaran:3",
 	},
 	["Abyronterner:Zul'jin:5"] = {

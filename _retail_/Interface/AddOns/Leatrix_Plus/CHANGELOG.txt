@@ -1,3 +1,13 @@
+10.0.02 - 28th October 2022
+- Added a temporary fix for 'Faster auto loot' ('System') to prevent the game from spamming you with NO QUALITY LOOT messages.  This spamming issue is caused by the game code and is not caused by addons.  This fix will be removed if Blizzard removes the two lines of unnecessary game code that are the cause of the spamming.  As this fix is only temporary, open loot window at mouse is not supported.  Usually, faster looting is so quick that you won't even see a loot window.  But when you do, it will be anchored to the Edit Mode position.  You can change the position with Edit Mode if you wish.
+- Added a new option 'Hide rested sleep' ('Frames') which will allow you to hide the player frame rested sleep animation so your character no longer looks to be sleeping while banking, chatting, dancing, jumping, fishing, trading, crafting and using the auction house.
+- For 'Automate gossip' ('Automation'), gossip from Katy Stampwhistle (the toy and the npc) will now be skipped automatically.
+
+10.0.01 - 27th October 2022
+- For 'Enhance minimap' ('Interface'), there is a new setting to hide the addon menu (the compartment menu).  It's enabled by default.  The minimum cluster scale is now 50% (was 100%).
+- For the time being, the addon will not register with the minimap compartment menu.
+- Fixed an issue with 'Hide keybind text' and 'Hide macro text' ('Text') which caused them to not apply to bars 6, 7 and 8.
+
 10.0.00 - 24th October 2022
 - Welcome to Dragonflight!
 - Added a new option 'Manage vehicle' ('Frames') which will allow you to move and scale the vehicle seat indicator frame.
@@ -7,7 +17,7 @@
 - The 'More font sizes' option ('Chat') has been replaced by 'Set chat font size'.
 - The 'Manage frames', 'Manage buffs', 'Manage power bar', 'Manage focus', 'Hide gryphons', 'Hide bags and micro', 'Set field of view' and 'Save profession filters' options have all been removed as they are now included in the game.
 - The 'Show character addons' option ('System') has been removed due to issues with the game code.
-- Having ElvUI installed will no longer uncheck conficting option checkboxes.  Conflicting option checkboxes will still be locked but they won't be unchecked.  So if a conflicting option checkbox was checked before installing ElvUI or before enabling a conflicting ElvUI module, it will still be checked after disabling ElvUI or disabling the conflicting ElvUI module.
+- Having ElvUI installed will no longer uncheck conflicting option checkboxes.  Conflicting option checkboxes will still be locked but they won't be unchecked.  So if a conflicting option checkbox was checked before installing ElvUI or before enabling a conflicting ElvUI module, it will still be checked after disabling ElvUI or disabling the conflicting ElvUI module.
 - Removed Shadowlands legacy code.  This release is not compatible with Shadowlands.
 
 9.2.45 - 19th October 2022

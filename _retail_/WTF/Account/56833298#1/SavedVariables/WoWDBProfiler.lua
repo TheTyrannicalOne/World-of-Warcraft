@@ -12,8 +12,8 @@ WoWDBProfilerData = {
 		["Valmagus - Zul'jin"] = "Default",
 		["Galvarton - Dalaran"] = "Default",
 		["Varlouris - Dalaran"] = "Default",
-		["Guufnah - Zul'jin"] = "Default",
 		["Okona - Zul'jin"] = "Default",
+		["Alatra - Zul'jin"] = "Default",
 		["Avisar - Dalaran"] = "Default",
 		["Banuumine - Zul'jin"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
@@ -26,12 +26,53 @@ WoWDBProfilerData = {
 		["Rotclaugh - Dalaran"] = "Default",
 		["Kotalkhan - Zul'jin"] = "Default",
 		["Abyronterner - Zul'jin"] = "Default",
-		["Alatra - Zul'jin"] = "Default",
+		["Guufnah - Zul'jin"] = "Default",
 		["Jasmoney - Zul'jin"] = "Default",
 		["Dachas - Zul'jin"] = "Default",
 		["Mandles - Zul'jin"] = "Default",
 	},
 	["region"] = "US",
 	["version"] = 19,
-	["build_num"] = 46313,
+	["build_num"] = 46340,
+	["global"] = {
+		["items"] = {
+			[10260] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1681:6654"] = true,
+					["1679:6654"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[33154] = {
+				["instance_difficulty_id"] = 22,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[180629] = {
+				["instance_difficulty_id"] = 31,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[117392] = {
+				["instance_difficulty_id"] = 22,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+		},
+	},
 }

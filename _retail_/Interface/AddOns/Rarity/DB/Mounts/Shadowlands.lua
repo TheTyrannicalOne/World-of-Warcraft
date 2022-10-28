@@ -439,14 +439,17 @@ local shadowlandsMounts = {
 		spellId = 353263,
 		itemId = 186638,
 		npcs = { 180863 },
-		chance = 100,
+		chance = 50,
 		groupSize = 5,
 		equalOdds = true,
 		statisticId = { 15168 },
 		instanceDifficulties = { [CONSTANTS.INSTANCE_DIFFICULTIES.MYTHIC_DUNGEON] = true },
 		lockoutDetails = {
 			mode = CONSTANTS.DEFEAT_DETECTION.MODE_AND,
-			{ encounterName = "So'leah", instanceDifficulties = { [CONSTANTS.INSTANCE_DIFFICULTIES.MYTHIC_DUNGEON] = true } },
+			{
+				encounterName = "So'leah",
+				instanceDifficulties = { [CONSTANTS.INSTANCE_DIFFICULTIES.MYTHIC_DUNGEON] = true },
+			},
 		},
 		coords = { { m = CONSTANTS.UIMAPIDS.TAZAVESH_THE_VEILED_MARKET, i = true } },
 	},
@@ -465,9 +468,18 @@ local shadowlandsMounts = {
 		statisticId = { 15145, 15144, 15147, 15146 },
 		lockoutDetails = {
 			mode = CONSTANTS.DEFEAT_DETECTION.MODE_AND,
-			{ encounterName = "The Nine", instanceDifficulties = { [CONSTANTS.INSTANCE_DIFFICULTIES.NORMAL_RAID] = true } },
-			{ encounterName = "The Nine", instanceDifficulties = { [CONSTANTS.INSTANCE_DIFFICULTIES.HEROIC_RAID] = true } },
-			{ encounterName = "The Nine", instanceDifficulties = { [CONSTANTS.INSTANCE_DIFFICULTIES.MYTHIC_RAID] = true } },
+			{
+				encounterName = "The Nine",
+				instanceDifficulties = { [CONSTANTS.INSTANCE_DIFFICULTIES.NORMAL_RAID] = true },
+			},
+			{
+				encounterName = "The Nine",
+				instanceDifficulties = { [CONSTANTS.INSTANCE_DIFFICULTIES.HEROIC_RAID] = true },
+			},
+			{
+				encounterName = "The Nine",
+				instanceDifficulties = { [CONSTANTS.INSTANCE_DIFFICULTIES.MYTHIC_RAID] = true },
+			},
 			{ encounterName = "The Nine", instanceDifficulties = { [CONSTANTS.INSTANCE_DIFFICULTIES.LFR] = true } },
 		},
 		instanceDifficulties = {
@@ -556,7 +568,7 @@ local shadowlandsMounts = {
 		name = L["Spectral Mawrat's Tail"],
 		itemId = 190766,
 		spellId = 368128,
-		chance = 100, -- Blind guess
+		chance = 200,
 		coords = { { m = CONSTANTS.UIMAPIDS.ZERETH_MORTIS } },
 	},
 	["Sturdy Silver Mawrat Harness"] = {
@@ -605,7 +617,10 @@ local shadowlandsMounts = {
 		spellId = 342680,
 		npcs = { 180978 },
 		chance = 100, -- Blind guess
-		sourceText = format(L["This item appears to be a guaranteed drop for the player who summoned %s"], L["Hirukon"]),
+		sourceText = format(
+			L["This item appears to be a guaranteed drop for the player who summoned %s"],
+			L["Hirukon"]
+		),
 		coords = { { x = 52, 2, y = 75, 3, m = CONSTANTS.UIMAPIDS.ZERETH_MORTIS, n = L["Hirukon"] } },
 	},
 }

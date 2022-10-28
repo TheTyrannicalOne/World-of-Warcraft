@@ -1,18 +1,6 @@
 
 ElvCharacterDB = {
-	["CliqueDatatext"] = {
-	},
 	["ConvertKeybindings"] = true,
-	["ChatEditHistory"] = {
-		"/opie", -- [1]
-		"/i Thansk for the run", -- [2]
-		"/i nope", -- [3]
-		"/i worth the try later", -- [4]
-		"/i it should be here", -- [5]
-		"/i yeah guess either someone did it or its glitched out", -- [6]
-		"/dance", -- [7]
-		"/ltp", -- [8]
-	},
 	["ChatHistoryLog"] = {
 		{
 			"|| WTS Slot to: |cffffff00|Hachievement:14146:Player-61-0EB5671A:1:3:1:20:4294967295:4294967295:4294967295:4294967295|h[Glória do Aventureiro de Ny'alotha]|h|r Get your |cff71d5ff|Hspell:316343:0|h[Parasita Contorcido]|h|r TODAY AT 7PM EST !! For this glory you need the legendary cloak from BFA  !! DM for more info! Gold only!! ", -- [1]
@@ -2192,5 +2180,17 @@ ElvCharacterDB = {
 			[51] = 1666142074,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [99]
+	},
+	["ChatEditHistory"] = {
+		"/opie", -- [1]
+		"/i Thansk for the run", -- [2]
+		"/i nope", -- [3]
+		"/i worth the try later", -- [4]
+		"/i it should be here", -- [5]
+		"/i yeah guess either someone did it or its glitched out", -- [6]
+		"/dance", -- [7]
+		"/ltp", -- [8]
+	},
+	["CliqueDatatext"] = {
 	},
 }

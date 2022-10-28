@@ -341,10 +341,10 @@ PawnCommon = {
 		["\"MrRobot\":PALADIN3"] = {
 			["IconTexturePath"] = 135873,
 			["PerCharacterOptions"] = {
-				["Valmagus-Zul'jin"] = {
+				["Avisar-Dalaran"] = {
 					["Visible"] = true,
 				},
-				["Avisar-Dalaran"] = {
+				["Valmagus-Zul'jin"] = {
 					["Visible"] = true,
 				},
 			},

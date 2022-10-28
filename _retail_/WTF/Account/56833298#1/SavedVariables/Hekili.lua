@@ -534,9 +534,9 @@ HekiliDB = {
 							}, -- [11]
 							{
 								["enabled"] = true,
-								["action"] = "tidestorm_codex",
 								["criteria"] = "buff.icy_veins.down & buff.rune_of_power.down",
 								["name"] = "tidestorm_codex",
+								["action"] = "tidestorm_codex",
 							}, -- [12]
 							{
 								["enabled"] = true,
@@ -589,9 +589,9 @@ HekiliDB = {
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["action"] = "balefire_branch",
 								["criteria"] = "! talent.glacial_spike.enabled || buff.brain_freeze.react & prev_gcd.1.glacial_spike",
 								["name"] = "balefire_branch",
+								["action"] = "balefire_branch",
 							}, -- [7]
 							{
 								["action"] = "use_items",
@@ -682,9 +682,9 @@ HekiliDB = {
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["action"] = "tidestorm_codex",
 								["criteria"] = "buff.icy_veins.down & buff.rune_of_power.down",
 								["name"] = "tidestorm_codex",
+								["action"] = "tidestorm_codex",
 							}, -- [6]
 							{
 								["enabled"] = true,
@@ -722,9 +722,9 @@ HekiliDB = {
 						["items_low_priority"] = {
 							{
 								["enabled"] = true,
-								["name"] = "tidestorm_codex",
 								["action"] = "tidestorm_codex",
 								["criteria"] = "variable.time_to_combustion > variable.on_use_cutoff",
+								["name"] = "tidestorm_codex",
 							}, -- [1]
 							{
 								["enabled"] = true,
@@ -881,39 +881,39 @@ HekiliDB = {
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["name"] = "manifesto_of_madness",
 								["action"] = "manifesto_of_madness",
 								["criteria"] = "! equipped.azsharas_font_of_power & variable.time_to_combustion < 8",
+								["name"] = "manifesto_of_madness",
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["name"] = "azsharas_font_of_power",
 								["action"] = "azsharas_font_of_power",
 								["criteria"] = "variable.time_to_combustion <= 5 + 15 * variable.font_double_on_use",
+								["name"] = "azsharas_font_of_power",
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["name"] = "rotcrusted_voodoo_doll",
 								["action"] = "rotcrusted_voodoo_doll",
 								["criteria"] = "variable.time_to_combustion > variable.on_use_cutoff",
+								["name"] = "rotcrusted_voodoo_doll",
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["name"] = "aquipotent_nautilus",
 								["action"] = "aquipotent_nautilus",
 								["criteria"] = "variable.time_to_combustion > variable.on_use_cutoff",
+								["name"] = "aquipotent_nautilus",
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["name"] = "shiver_venom_relic",
 								["action"] = "shiver_venom_relic",
 								["criteria"] = "variable.time_to_combustion > variable.on_use_cutoff",
+								["name"] = "shiver_venom_relic",
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["name"] = "forbidden_obsidian_claw",
 								["action"] = "forbidden_obsidian_claw",
 								["criteria"] = "variable.time_to_combustion > variable.on_use_cutoff",
+								["name"] = "forbidden_obsidian_claw",
 							}, -- [8]
 							{
 								["enabled"] = true,
@@ -922,21 +922,21 @@ HekiliDB = {
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["name"] = "malformed_heralds_legwraps",
 								["action"] = "malformed_heralds_legwraps",
 								["criteria"] = "variable.time_to_combustion >= 55 & buff.combustion.down & variable.time_to_combustion > variable.on_use_cutoff",
+								["name"] = "malformed_heralds_legwraps",
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["name"] = "ancient_knot_of_wisdom",
 								["action"] = "ancient_knot_of_wisdom",
 								["criteria"] = "variable.time_to_combustion >= 55 & buff.combustion.down & variable.time_to_combustion > variable.on_use_cutoff",
+								["name"] = "ancient_knot_of_wisdom",
 							}, -- [11]
 							{
 								["enabled"] = true,
-								["name"] = "neural_synapse_enhancer",
 								["action"] = "neural_synapse_enhancer",
 								["criteria"] = "variable.time_to_combustion >= 45 & buff.combustion.down & variable.time_to_combustion > variable.on_use_cutoff",
+								["name"] = "neural_synapse_enhancer",
 							}, -- [12]
 						},
 						["default"] = {
@@ -1073,9 +1073,9 @@ HekiliDB = {
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["name"] = "hyperthread_wristwraps",
 								["action"] = "hyperthread_wristwraps",
 								["criteria"] = "buff.combustion.up & action.fire_blast.charges = 0 & action.fire_blast.recharge_time > gcd.max",
+								["name"] = "hyperthread_wristwraps",
 							}, -- [2]
 							{
 								["enabled"] = true,
@@ -1432,9 +1432,9 @@ HekiliDB = {
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["action"] = "hyperthread_wristwraps",
 								["criteria"] = "buff.combustion.up & action.fire_blast.charges = 0 & action.fire_blast.recharge_time > gcd.max",
 								["name"] = "hyperthread_wristwraps",
+								["action"] = "hyperthread_wristwraps",
 							}, -- [7]
 							{
 								["enabled"] = true,
@@ -1574,9 +1574,9 @@ HekiliDB = {
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["action"] = "tidestorm_codex",
 								["criteria"] = "buff.rune_of_power.down & ! buff.arcane_power.react & cooldown.arcane_power.remains > 20",
 								["name"] = "tidestorm_codex",
+								["action"] = "tidestorm_codex",
 							}, -- [6]
 							{
 								["enabled"] = true,
@@ -1591,9 +1591,9 @@ HekiliDB = {
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["action"] = "arcane_missiles",
 								["chain"] = "1",
 								["criteria"] = "mana.pct <= 95 & buff.clearcasting.react & active_enemies < 3",
+								["action"] = "arcane_missiles",
 							}, -- [9]
 							{
 								["enabled"] = true,
@@ -1639,9 +1639,9 @@ HekiliDB = {
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["action"] = "azsharas_font_of_power",
 								["criteria"] = "buff.rune_of_power.down & buff.arcane_power.down & ( cooldown.arcane_power.remains <= 4 + 10 * variable.font_double_on_use & cooldown.evocation.remains <= variable.average_burn_length + 4 + 10 * variable.font_double_on_use || time_to_die < cooldown.arcane_power.remains )",
 								["name"] = "azsharas_font_of_power",
+								["action"] = "azsharas_font_of_power",
 							}, -- [5]
 							{
 								["enabled"] = true,
@@ -1803,9 +1803,9 @@ HekiliDB = {
 							}, -- [18]
 							{
 								["enabled"] = true,
-								["action"] = "arcane_missiles",
 								["chain"] = "1",
 								["criteria"] = "buff.clearcasting.react & active_enemies < 3 & ( talent.amplification.enabled || ( ! talent.overpowered.enabled & azerite.arcane_pummeling.rank >= 2 ) || buff.arcane_power.down )",
+								["action"] = "arcane_missiles",
 							}, -- [19]
 							{
 								["enabled"] = true,
@@ -2280,9 +2280,9 @@ HekiliDB = {
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["action"] = "galecallers_boon",
 								["criteria"] = "! talent.fel_barrage.enabled || cooldown.fel_barrage.ready",
 								["name"] = "galecallers_boon",
+								["action"] = "galecallers_boon",
 							}, -- [6]
 							{
 								["enabled"] = true,
@@ -2292,15 +2292,15 @@ HekiliDB = {
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["action"] = "ashvanes_razor_coral",
 								["criteria"] = "debuff.razor_coral_debuff.down || ( debuff.conductive_ink_debuff.up || buff.metamorphosis.remains > 20 ) & target.health.pct < 31 || time_to_die < 20",
 								["name"] = "ashvanes_razor_coral",
+								["action"] = "ashvanes_razor_coral",
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["action"] = "azsharas_font_of_power",
 								["criteria"] = "cooldown.metamorphosis.remains < 10 || cooldown.metamorphosis.remains > 60",
 								["name"] = "azsharas_font_of_power",
+								["action"] = "azsharas_font_of_power",
 							}, -- [9]
 							{
 								["enabled"] = true,
@@ -2513,9 +2513,9 @@ HekiliDB = {
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["name"] = "ashvanes_razor_coral",
 								["action"] = "ashvanes_razor_coral",
 								["criteria"] = "debuff.razor_coral_debuff.down || debuff.conductive_ink_debuff.up & target.health.pct < 31 || time_to_die < 20",
+								["name"] = "ashvanes_razor_coral",
 							}, -- [7]
 							{
 								["action"] = "use_items",
@@ -2989,9 +2989,9 @@ HekiliDB = {
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["action"] = "metamorphosis",
 								["description"] = "Cast Metamorphosis if we will get a full Eye Beam refresh and won't overwrite Sinful Brand duration or if the encounter is almost over",
 								["criteria"] = "! talent.demonic.enabled & ( cooldown.eye_beam.remains > 20 & ( ! covenant.venthyr || dot.sinful_brand.remains <= 8 || spell_targets.metamorphosis_impact > 1 ) || boss & fight_remains < 25 )",
+								["action"] = "metamorphosis",
 							}, -- [3]
 							{
 								["enabled"] = true,
@@ -3005,15 +3005,15 @@ HekiliDB = {
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["action"] = "cache_of_acquired_treasures",
 								["criteria"] = "buff.acquired_axe.up & ( active_enemies = desired_targets & raid_event.adds.in > 60 || active_enemies > desired_targets || boss & fight_remains < 25 )",
 								["name"] = "cache_of_acquired_treasures",
+								["action"] = "cache_of_acquired_treasures",
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["action"] = "trinket1",
 								["description"] = "Default use item logic",
 								["criteria"] = "variable.trinket_sync_slot = 1 & ( buff.metamorphosis.up || ( ! talent.demonic.enabled & boss & cooldown.metamorphosis.remains > ( fight_remains <? trinket.t1.cooldown.duration / 2 ) ) || boss & fight_remains <= 20 ) || ( variable.trinket_sync_slot = 2 & ! trinket.t2.cooldown.ready ) || ! variable.trinket_sync_slot",
+								["action"] = "trinket1",
 							}, -- [7]
 							{
 								["enabled"] = true,
@@ -3190,9 +3190,9 @@ HekiliDB = {
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["action"] = "reaping_flames",
 								["description"] = "Hold Reaping Flames for execute range or kill buffs, if possible. Always try to get the lowest cooldown based on available enemies.",
 								["criteria"] = "target.time_to_die < 1.5 || ( ( target.health.pct > 80 || target.health.pct <= 20 ) & ( active_enemies = 1 || fight_remains > 29 ) ) || ( target.time_to_pct_20 > 30 & ( active_enemies = 1 || fight_remains > 44 ) )",
+								["action"] = "reaping_flames",
 							}, -- [5]
 							{
 								["enabled"] = true,
@@ -3207,9 +3207,9 @@ HekiliDB = {
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["action"] = "ashvanes_razor_coral",
 								["criteria"] = "debuff.razor_coral_debuff.down || debuff.conductive_ink_debuff.up & target.health.pct < 31 || target.time_to_die < 20",
 								["name"] = "ashvanes_razor_coral",
+								["action"] = "ashvanes_razor_coral",
 							}, -- [8]
 							{
 								["enabled"] = true,
@@ -3233,9 +3233,9 @@ HekiliDB = {
 						["defensives"] = {
 							{
 								["enabled"] = true,
-								["action"] = "demon_spikes",
 								["description"] = "Defensives",
 								["criteria"] = "tanking & ( ( full_recharge_time < 1 & incoming_damage_3s ) || ( active_enemies > 3 & incoming_damage_3s & buff.demon_spikes.down ) || ( incoming_damage_5s > 0.25 * health.max ) )",
+								["action"] = "demon_spikes",
 							}, -- [1]
 							{
 								["enabled"] = true,
@@ -3260,9 +3260,9 @@ HekiliDB = {
 						["normal"] = {
 							{
 								["enabled"] = true,
-								["action"] = "infernal_strike",
 								["description"] = "Normal Rotation",
 								["criteria"] = "full_recharge_time < 1 & ( ! talent.flame_crash.enabled || ( dot.sigil_of_flame.remains < 3 & ! action.infernal_strike.sigil_placed ) )",
+								["action"] = "infernal_strike",
 							}, -- [1]
 							{
 								["action"] = "bulk_extraction",
@@ -3737,9 +3737,9 @@ HekiliDB = {
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["name"] = "galecallers_boon",
 								["action"] = "galecallers_boon",
 								["criteria"] = "! talent.fel_barrage.enabled || cooldown.fel_barrage.ready",
+								["name"] = "galecallers_boon",
 							}, -- [6]
 							{
 								["enabled"] = true,
@@ -3749,15 +3749,15 @@ HekiliDB = {
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["name"] = "ashvanes_razor_coral",
 								["action"] = "ashvanes_razor_coral",
 								["criteria"] = "debuff.razor_coral_debuff.down || ( debuff.conductive_ink_debuff.up || buff.metamorphosis.remains > 20 ) & target.health.pct < 31 || time_to_die < 20",
+								["name"] = "ashvanes_razor_coral",
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["name"] = "azsharas_font_of_power",
 								["action"] = "azsharas_font_of_power",
 								["criteria"] = "cooldown.metamorphosis.remains < 10 || cooldown.metamorphosis.remains > 60",
+								["name"] = "azsharas_font_of_power",
 							}, -- [9]
 							{
 								["enabled"] = true,
@@ -3918,9 +3918,9 @@ HekiliDB = {
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["criteria"] = "debuff.razor_coral_debuff.down || debuff.conductive_ink_debuff.up & target.health.pct < 31 || time_to_die < 20",
 								["name"] = "ashvanes_razor_coral",
 								["action"] = "ashvanes_razor_coral",
+								["criteria"] = "debuff.razor_coral_debuff.down || debuff.conductive_ink_debuff.up & target.health.pct < 31 || time_to_die < 20",
 							}, -- [7]
 							{
 								["action"] = "use_items",
@@ -4058,9 +4058,9 @@ HekiliDB = {
 					["package"] = "Brewmaster",
 					["damagePets"] = false,
 					["settings"] = {
+						["bof_percent"] = 50,
 						["purify_stagger_maxhp"] = 6,
 						["purify_stagger"] = 33,
-						["bof_percent"] = 50,
 						["isb_overlap"] = 1,
 						["brew_charges"] = 2,
 						["purify_for_celestial"] = true,
@@ -4100,9 +4100,9 @@ HekiliDB = {
 						["opener"] = {
 							{
 								["enabled"] = true,
-								["cycle_tarrgets"] = "1",
 								["action"] = "fist_of_the_white_tiger",
 								["criteria"] = "chi.max - chi >= 3",
+								["cycle_tarrgets"] = "1",
 							}, -- [1]
 							{
 								["enabled"] = true,
@@ -4830,9 +4830,9 @@ HekiliDB = {
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["name"] = "ashvanes_razor_coral",
 								["action"] = "ashvanes_razor_coral",
 								["criteria"] = "debuff.razor_coral_debuff.down || debuff.conductive_ink_debuff.up & target.health.pct < 31 || time_to_die < 20",
+								["name"] = "ashvanes_razor_coral",
 							}, -- [6]
 							{
 								["action"] = "use_items",
@@ -4890,45 +4890,45 @@ HekiliDB = {
 							}, -- [19]
 							{
 								["enabled"] = true,
-								["criteria"] = "settings.purify_stagger_currhp > 0 & group & stagger.pct >= settings.purify_stagger_currhp",
 								["action"] = "purifying_brew",
 								["description"] = "Use configured purify_stagger_currhp from Brewmaster options.",
+								["criteria"] = "settings.purify_stagger_currhp > 0 & group & stagger.pct >= settings.purify_stagger_currhp",
 							}, -- [20]
 							{
 								["enabled"] = true,
-								["criteria"] = "settings.purify_stagger_currhp > 0 & solo & stagger.pct >= settings.purify_stagger_currhp * 0.5",
 								["action"] = "purifying_brew",
 								["description"] = "Use configured purify_stagger_currhp from Brewmaster options.",
+								["criteria"] = "settings.purify_stagger_currhp > 0 & solo & stagger.pct >= settings.purify_stagger_currhp * 0.5",
 							}, -- [21]
 							{
 								["enabled"] = true,
-								["criteria"] = "settings.purify_stagger_maxhp > 0 & group & stagger.pct >= settings.purify_stagger_maxhp",
 								["action"] = "purifying_brew",
 								["description"] = "Use configured purify_stagger_maxhp from Brewmaster options.",
+								["criteria"] = "settings.purify_stagger_maxhp > 0 & group & stagger.pct >= settings.purify_stagger_maxhp",
 							}, -- [22]
 							{
 								["enabled"] = true,
-								["criteria"] = "settings.purify_stagger_maxhp > 0 & solo & stagger.pct >= settings.purify_stagger_maxhp * 0.5",
 								["action"] = "purifying_brew",
 								["description"] = "Use configured purify_stagger_maxhp from Brewmaster options.",
+								["criteria"] = "settings.purify_stagger_maxhp > 0 & solo & stagger.pct >= settings.purify_stagger_maxhp * 0.5",
 							}, -- [23]
 							{
 								["enabled"] = true,
-								["criteria"] = "settings.purify_stagger_currhp = 0 & settings.purify_stagger_maxhp = 0 & group & stagger.pct > 20",
 								["action"] = "purifying_brew",
 								["description"] = "Stagger % of 20 will kill you in 2.5 seconds without healing or purifying.  Used when purify_stagger_currhp and maxhp are disabled.",
+								["criteria"] = "settings.purify_stagger_currhp = 0 & settings.purify_stagger_maxhp = 0 & group & stagger.pct > 20",
 							}, -- [24]
 							{
 								["enabled"] = true,
-								["criteria"] = "settings.purify_stagger_currhp = 0 & settings.purify_stagger_maxhp = 0 & solo & stagger.pct > 10",
 								["action"] = "purifying_brew",
 								["description"] = "Stagger % of 10 will kill you in 5 seconds without healing or purifying.  Used when purify_stagger_currhp and maxhp are disabled.",
+								["criteria"] = "settings.purify_stagger_currhp = 0 & settings.purify_stagger_maxhp = 0 & solo & stagger.pct > 10",
 							}, -- [25]
 							{
 								["enabled"] = true,
-								["criteria"] = "cooldown.purifying_brew.charges_fractional < 0.5",
 								["action"] = "black_ox_brew",
 								["description"] = "Black Ox Brew is currently used to either replenish brews based on less than half a brew charge available, or low energy to enable Keg Smash",
+								["criteria"] = "cooldown.purifying_brew.charges_fractional < 0.5",
 							}, -- [26]
 							{
 								["enabled"] = true,
@@ -4937,9 +4937,9 @@ HekiliDB = {
 							}, -- [27]
 							{
 								["enabled"] = true,
-								["criteria"] = "health.pct < 5 * healing_sphere.count || ( healing_sphere.count >= 3 & health.pct < 50 )",
 								["action"] = "expel_harm",
 								["description"] = "Healing Elixir",
+								["criteria"] = "health.pct < 5 * healing_sphere.count || ( healing_sphere.count >= 3 & health.pct < 50 )",
 							}, -- [28]
 							{
 								["enabled"] = true,
@@ -4948,9 +4948,9 @@ HekiliDB = {
 							}, -- [29]
 							{
 								["enabled"] = true,
-								["criteria"] = "spell_targets >= 2",
 								["action"] = "keg_smash",
 								["description"] = "Offensively, the APL prioritizes KS on cleave, BoS else, with energy spenders and cds sorted below",
+								["criteria"] = "spell_targets >= 2",
 							}, -- [30]
 							{
 								["enabled"] = true,
@@ -4959,15 +4959,15 @@ HekiliDB = {
 							}, -- [31]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.weapons_of_order.up",
 								["action"] = "keg_smash",
 								["description"] = "Cast KS at top prio during WoO buff.",
+								["criteria"] = "buff.weapons_of_order.up",
 							}, -- [32]
 							{
 								["enabled"] = true,
-								["criteria"] = "tanking & buff.blackout_combo.down & incoming_damage_2999ms > ( health.max * 0.05 + stagger.last_tick_damage_4 ) & buff.elusive_brawler.stack < 2",
 								["action"] = "celestial_brew",
 								["description"] = "Celestial Brew priority whenever it took significant damage and ironskin brew buff is missing (adjust the health.max coefficient according to intensity of damage taken), and to dump excess charges before BoB.",
+								["criteria"] = "tanking & buff.blackout_combo.down & incoming_damage_2999ms > ( health.max * 0.05 + stagger.last_tick_damage_4 ) & buff.elusive_brawler.stack < 2",
 							}, -- [33]
 							{
 								["enabled"] = true,
@@ -5053,9 +5053,9 @@ HekiliDB = {
 							}, -- [51]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.gift_of_the_ox.stack >= 2",
 								["action"] = "expel_harm",
 								["description"] = "Expel Harm has higher DPET than TP when you have at least 2 orbs.",
+								["criteria"] = "buff.gift_of_the_ox.stack >= 2",
 							}, -- [52]
 							{
 								["enabled"] = true,
@@ -5104,6 +5104,34 @@ HekiliDB = {
 			},
 		},
 		["Shanyt - Argent Dawn"] = {
+			["displays"] = {
+				["Interrupts"] = {
+					["rel"] = "CENTER",
+					["y"] = -252.9999237060547,
+					["x"] = -108.9999923706055,
+				},
+				["Cooldowns"] = {
+					["rel"] = "CENTER",
+					["y"] = -307.0001831054688,
+					["elvuiCooldown"] = true,
+					["x"] = -3.0001220703125,
+				},
+				["Primary"] = {
+					["y"] = -253.0003204345703,
+					["x"] = -55.99999618530273,
+					["rel"] = "CENTER",
+				},
+				["Defensives"] = {
+					["rel"] = "CENTER",
+					["y"] = -252.9999237060547,
+					["x"] = -162.9998931884766,
+				},
+				["AOE"] = {
+					["rel"] = "CENTER",
+					["y"] = -253.999755859375,
+					["x"] = -55.99999618530273,
+				},
+			},
 			["runOnce"] = {
 				["autoconvertGlowsForCustomGlow_20190326"] = true,
 				["forceReloadClassDefaultOptions_20220306_71"] = true,
@@ -5150,34 +5178,6 @@ HekiliDB = {
 				},
 				[102] = {
 					["enhancedRecheck"] = true,
-				},
-			},
-			["displays"] = {
-				["Interrupts"] = {
-					["rel"] = "CENTER",
-					["x"] = -108.9999923706055,
-					["y"] = -252.9999237060547,
-				},
-				["Cooldowns"] = {
-					["rel"] = "CENTER",
-					["elvuiCooldown"] = true,
-					["x"] = -3.0001220703125,
-					["y"] = -307.0001831054688,
-				},
-				["Primary"] = {
-					["y"] = -253.0003204345703,
-					["x"] = -55.99999618530273,
-					["rel"] = "CENTER",
-				},
-				["Defensives"] = {
-					["rel"] = "CENTER",
-					["x"] = -162.9998931884766,
-					["y"] = -252.9999237060547,
-				},
-				["AOE"] = {
-					["rel"] = "CENTER",
-					["x"] = -55.99999618530273,
-					["y"] = -253.999755859375,
 				},
 			},
 			["packs"] = {
@@ -5354,9 +5354,9 @@ HekiliDB = {
 						["default"] = {
 							{
 								["enabled"] = true,
-								["action"] = "charge",
 								["description"] = "Charge if we're long past our opener, or we don't need the opener combo for Signet (non-Venthyr).",
 								["criteria"] = "time > 8 || talent.double_time.enabled || active_enemies > 1 || covenant.venthyr || ! runeforge.signet_of_tormented_kings.equipped || cooldown.recklessness.remains > gcd",
+								["action"] = "charge",
 							}, -- [1]
 							{
 								["action"] = "pummel",
@@ -5456,45 +5456,45 @@ HekiliDB = {
 							}, -- [18]
 							{
 								["enabled"] = true,
-								["action"] = "inscrutable_quantum_device",
 								["criteria"] = "cooldown.recklessness.remains > 10 & ( buff.recklessness.up || boss & fight_remains < 21 || boss & fight_remains > 190 || buff.bloodlust.up )",
 								["name"] = "inscrutable_quantum_device",
+								["action"] = "inscrutable_quantum_device",
 							}, -- [19]
 							{
 								["enabled"] = true,
-								["action"] = "wakeners_frond",
 								["criteria"] = "cooldown.recklessness.remains > 10 & ( buff.recklessness.up || boss & fight_remains < 13 || boss & fight_remains > 130 )",
 								["name"] = "wakeners_frond",
+								["action"] = "wakeners_frond",
 							}, -- [20]
 							{
 								["enabled"] = true,
-								["action"] = "macabre_sheet_music",
 								["criteria"] = "cooldown.recklessness.remains > 10 & ( buff.recklessness.up || boss & fight_remains < 25 || boss & fight_remains > 110 )",
 								["name"] = "macabre_sheet_music",
+								["action"] = "macabre_sheet_music",
 							}, -- [21]
 							{
 								["enabled"] = true,
-								["action"] = "overwhelming_power_crystal",
 								["criteria"] = "cooldown.recklessness.remains > 10 & ( buff.recklessness.up || boss & fight_remains < 16 || boss & fight_remains > 100 )",
 								["name"] = "overwhelming_power_crystal",
+								["action"] = "overwhelming_power_crystal",
 							}, -- [22]
 							{
 								["enabled"] = true,
-								["action"] = "instructors_divine_bell",
 								["criteria"] = "cooldown.recklessness.remains > 10 & ( buff.recklessness.up || boss & fight_remains < 10 || boss & fight_remains > 95 )",
 								["name"] = "instructors_divine_bell",
+								["action"] = "instructors_divine_bell",
 							}, -- [23]
 							{
 								["enabled"] = true,
-								["action"] = "flame_of_battle",
 								["criteria"] = "cooldown.recklessness.remains > 10 & ( buff.recklessness.up || boss & fight_remains < 11 || boss & fight_remains > 100 )",
 								["name"] = "flame_of_battle",
+								["action"] = "flame_of_battle",
 							}, -- [24]
 							{
 								["enabled"] = true,
-								["action"] = "gladiators_badge",
 								["criteria"] = "cooldown.recklessness.remains > 10 & ( buff.recklessness.up || boss & fight_remains < 11 || boss & fight_remains > 65 )",
 								["name"] = "gladiators_badge",
+								["action"] = "gladiators_badge",
 							}, -- [25]
 							{
 								["enabled"] = true,
@@ -5648,9 +5648,9 @@ HekiliDB = {
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["description"] = "Default APL's Heroic Charge is a Heroic Leap followed by Charge to do some damage and generate Rage.",
 								["criteria"] = "settings.heroic_charge & runeforge.reprisal.enabled & cooldown.charge.remains < gcd",
 								["action"] = "heroic_leap",
+								["description"] = "Default APL's Heroic Charge is a Heroic Leap followed by Charge to do some damage and generate Rage.",
 							}, -- [2]
 							{
 								["enabled"] = true,
@@ -6247,1337 +6247,6 @@ HekiliDB = {
 				},
 			},
 		},
-		["Varlouris - Dalaran"] = {
-			["runOnce"] = {
-				["forceReloadAllDefaultPriorities_20220228"] = true,
-				["resetPotionsToDefaults_20190717"] = true,
-				["autoconvertDisplayToggle_20190621_1"] = true,
-				["updateMaxRefreshToNewSpecOptions_20220222"] = true,
-				["forceReloadClassDefaultOptions_20220306_262"] = true,
-				["forceEnableEnhancedRecheckBoomkin_20210712"] = true,
-				["autoconvertDelaySweepToExtend_20190729"] = true,
-				["autoconvertGlowsForCustomGlow_20190326"] = true,
-				["resetRogueMfDOption_20200226"] = true,
-				["resetAllPotions_20201209"] = true,
-				["enableAllOfTheThings_20180820"] = true,
-				["resetGlobalCooldownSync_20210403"] = true,
-				["forceReloadClassDefaultOptions_20220306_263"] = true,
-				["forceEnableAllClassesOnceDueToBug_20220225"] = true,
-				["resetAberrantPackageDates_20190728_1"] = true,
-			},
-			["specs"] = {
-				[263] = {
-					["settings"] = {
-						["pad_lava_lash"] = true,
-						["pad_windstrike"] = true,
-						["filler_shock"] = true,
-					},
-					["potionsReset"] = 20180919.1,
-				},
-				[262] = {
-					["settings"] = {
-						["funnel_damage"] = false,
-						["stack_buffer"] = 1.1,
-					},
-					["potionsReset"] = 20180919.1,
-				},
-				[102] = {
-					["enhancedRecheck"] = true,
-				},
-			},
-			["displays"] = {
-				["AOE"] = {
-					["rel"] = "CENTER",
-				},
-				["Primary"] = {
-					["y"] = -170,
-					["x"] = -344.9999084472656,
-					["rel"] = "CENTER",
-				},
-				["Defensives"] = {
-					["rel"] = "CENTER",
-					["x"] = -451.9997253417969,
-					["y"] = -170.0001220703125,
-				},
-				["Interrupts"] = {
-					["rel"] = "CENTER",
-					["x"] = -398.9998474121094,
-					["y"] = -170.0001220703125,
-				},
-			},
-			["packs"] = {
-				["Enhancement"] = {
-					["source"] = "SimC",
-					["builtIn"] = true,
-					["date"] = 20220828,
-					["spec"] = 263,
-					["desc"] = "Enhancement Shaman\nAugust 23, 2022",
-					["lists"] = {
-						["aoe"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.maelstrom_weapon.stack >= 5",
-								["action"] = "chain_harvest",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "runeforge.doom_winds.equipped & buff.doom_winds.up",
-								["action"] = "crash_lightning",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "runeforge.doom_winds.equipped & buff.doom_winds.up",
-								["action"] = "sundering",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "runeforge.raging_vesper_vortex.equipped & talent.earth_shield.enabled & vesper_totem_heal_charges > 0",
-								["action"] = "healing_stream_totem",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "runeforge.raging_vesper_vortex.equipped & talent.earth_shield.enabled & vesper_totem_heal_charges > 0",
-								["action"] = "earth_shield",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "active_dot.flame_shock >= 6 || ( active_dot.flame_shock >= 4 & active_dot.flame_shock >= cycle_enemies )",
-								["action"] = "fire_nova",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "! buff.primordial_wave.up",
-								["action"] = "primordial_wave",
-								["cycle_targets"] = 1,
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["criteria"] = "runeforge.deeply_rooted_elements.equipped & buff.crash_lightning.up",
-								["action"] = "windstrike",
-							}, -- [8]
-							{
-								["enabled"] = true,
-								["criteria"] = "runeforge.deeply_rooted_elements.equipped & buff.crash_lightning.up",
-								["action"] = "stormstrike",
-							}, -- [9]
-							{
-								["enabled"] = true,
-								["criteria"] = "dot.flame_shock.ticking & ( active_dot.flame_shock < cycle_enemies & active_dot.flame_shock < 6 )",
-								["action"] = "lava_lash",
-								["cycle_targets"] = 1,
-							}, -- [10]
-							{
-								["enabled"] = true,
-								["criteria"] = "! ticking",
-								["action"] = "flame_shock",
-							}, -- [11]
-							{
-								["enabled"] = true,
-								["criteria"] = "! talent.hailstorm.enabled & active_dot.flame_shock < cycle_enemies & active_dot.flame_shock < 6",
-								["action"] = "flame_shock",
-								["cycle_targets"] = 1,
-							}, -- [12]
-							{
-								["enabled"] = true,
-								["criteria"] = "( active_dot.flame_shock >= active_enemies || active_dot.flame_shock >= 4 ) & buff.primordial_wave.up & buff.maelstrom_weapon.stack >= 5 & ( ! buff.splintered_elements.up || fight_remains <= 12 || raid_event.adds.remains <= gcd )",
-								["action"] = "lightning_bolt",
-							}, -- [13]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.hailstorm.up",
-								["action"] = "frost_shock",
-							}, -- [14]
-							{
-								["enabled"] = true,
-								["criteria"] = "soulbind.grove_invigoration.enabled || soulbind.field_of_blossoms.enabled || runeforge.seeds_of_rampant_growth.equipped",
-								["action"] = "fae_transfusion",
-							}, -- [15]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.crash_lightning.down & buff.primordial_wave.up & buff.maelstrom_weapon.stack < 5",
-								["action"] = "crash_lightning",
-							}, -- [16]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.primordial_wave.up & buff.maelstrom_weapon.stack < 5",
-								["action"] = "sundering",
-							}, -- [17]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.primordial_wave.up & buff.maelstrom_weapon.stack < 5",
-								["action"] = "stormstrike",
-							}, -- [18]
-							{
-								["action"] = "sundering",
-								["enabled"] = true,
-							}, -- [19]
-							{
-								["enabled"] = true,
-								["criteria"] = "active_dot.flame_shock >= 4",
-								["action"] = "fire_nova",
-							}, -- [20]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.crashing_storm.enabled || buff.crash_lightning.down",
-								["action"] = "crash_lightning",
-							}, -- [21]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.lashing_flames.enabled",
-								["action"] = "lava_lash",
-								["cycle_targets"] = 1,
-							}, -- [22]
-							{
-								["enabled"] = true,
-								["criteria"] = "active_dot.flame_shock >= 3",
-								["action"] = "fire_nova",
-							}, -- [23]
-							{
-								["action"] = "vesper_totem",
-								["enabled"] = true,
-							}, -- [24]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.stormkeeper.up",
-								["action"] = "chain_lightning",
-							}, -- [25]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.crash_lightning.up",
-								["action"] = "lava_lash",
-							}, -- [26]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.maelstrom_weapon.stack >= 5",
-								["action"] = "elemental_blast",
-							}, -- [27]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.maelstrom_weapon.stack >= 5",
-								["action"] = "stormkeeper",
-							}, -- [28]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.maelstrom_weapon.stack = 10",
-								["action"] = "chain_lightning",
-							}, -- [29]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.crash_lightning.up",
-								["action"] = "stormstrike",
-							}, -- [30]
-							{
-								["enabled"] = true,
-								["criteria"] = "active_dot.flame_shock >= 2",
-								["action"] = "fire_nova",
-							}, -- [31]
-							{
-								["action"] = "crash_lightning",
-								["enabled"] = true,
-							}, -- [32]
-							{
-								["action"] = "windstrike",
-								["enabled"] = true,
-							}, -- [33]
-							{
-								["action"] = "stormstrike",
-								["enabled"] = true,
-							}, -- [34]
-							{
-								["enabled"] = true,
-								["interrupt"] = "1",
-								["action"] = "fleshcraft",
-								["criteria"] = "soulbind.volatile_solvent.enabled",
-							}, -- [35]
-							{
-								["enabled"] = true,
-								["criteria"] = "refreshable",
-								["action"] = "flame_shock",
-								["cycle_targets"] = 1,
-							}, -- [36]
-							{
-								["action"] = "fae_transfusion",
-								["enabled"] = true,
-							}, -- [37]
-							{
-								["action"] = "frost_shock",
-								["enabled"] = true,
-							}, -- [38]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.maelstrom_weapon.stack >= 5",
-								["action"] = "chain_lightning",
-							}, -- [39]
-							{
-								["action"] = "earthen_spike",
-								["enabled"] = true,
-							}, -- [40]
-							{
-								["action"] = "earth_elemental",
-								["enabled"] = true,
-							}, -- [41]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.windfury_totem.remains < 30",
-								["action"] = "windfury_totem",
-							}, -- [42]
-						},
-						["single"] = {
-							{
-								["action"] = "windstrike",
-								["enabled"] = true,
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.hot_hand.up || ( runeforge.primal_lava_actuators.equipped & buff.primal_lava_actuators.stack > 6 )",
-								["action"] = "lava_lash",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "! buff.windfury_totem.up",
-								["action"] = "windfury_totem",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "runeforge.doom_winds.equipped & buff.doom_winds.up",
-								["action"] = "stormstrike",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "runeforge.doom_winds.equipped & buff.doom_winds.up",
-								["action"] = "crash_lightning",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "runeforge.doom_winds.equipped & buff.doom_winds.up",
-								["action"] = "ice_strike",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "runeforge.doom_winds.equipped & buff.doom_winds.up",
-								["action"] = "sundering",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.primordial_wave.down & ( raid_event.adds.in > 42 || raid_event.adds.in < 6 )",
-								["action"] = "primordial_wave",
-							}, -- [8]
-							{
-								["enabled"] = true,
-								["criteria"] = "! ticking",
-								["action"] = "flame_shock",
-							}, -- [9]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.maelstrom_weapon.stack >= 5 & buff.primordial_wave.up & raid_event.adds.in > buff.primordial_wave.remains & ( ! buff.splintered_elements.up || fight_remains <= 12 )",
-								["action"] = "lightning_bolt",
-							}, -- [10]
-							{
-								["enabled"] = true,
-								["criteria"] = "raid_event.adds.in > 40",
-								["action"] = "vesper_totem",
-							}, -- [11]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.hailstorm.up",
-								["action"] = "frost_shock",
-							}, -- [12]
-							{
-								["action"] = "earthen_spike",
-								["enabled"] = true,
-							}, -- [13]
-							{
-								["enabled"] = true,
-								["criteria"] = "dot.flame_shock.refreshable",
-								["action"] = "lava_lash",
-							}, -- [14]
-							{
-								["enabled"] = true,
-								["criteria"] = "! runeforge.seeds_of_rampant_growth.equipped || cooldown.feral_spirit.remains > 30",
-								["action"] = "fae_transfusion",
-							}, -- [15]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.stormflurry.enabled & buff.stormbringer.up",
-								["action"] = "stormstrike",
-							}, -- [16]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.stormkeeper.up",
-								["action"] = "chain_lightning",
-							}, -- [17]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.maelstrom_weapon.stack >= 5",
-								["action"] = "elemental_blast",
-							}, -- [18]
-							{
-								["enabled"] = true,
-								["criteria"] = "runeforge.raging_vesper_vortex.equipped & talent.earth_shield.enabled & ( vesper_totem_heal_charges > 1 || ( vesper_totem_heal_charges > 0 & raid_event.adds.in > ( buff.vesper_totem.remains - 3 ) ) )",
-								["action"] = "healing_stream_totem",
-							}, -- [19]
-							{
-								["enabled"] = true,
-								["criteria"] = "runeforge.raging_vesper_vortex.equipped & talent.earth_shield.enabled & ( vesper_totem_heal_charges > 1 || ( vesper_totem_heal_charges > 0 & raid_event.adds.in > ( buff.vesper_totem.remains - 3 ) ) )",
-								["action"] = "earth_shield",
-							}, -- [20]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.maelstrom_weapon.stack >= 5 & raid_event.adds.in >= 90",
-								["action"] = "chain_harvest",
-							}, -- [21]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.maelstrom_weapon.stack = 10 & buff.primordial_wave.down",
-								["action"] = "lightning_bolt",
-							}, -- [22]
-							{
-								["action"] = "stormstrike",
-								["enabled"] = true,
-							}, -- [23]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.maelstrom_weapon.stack >= 5",
-								["action"] = "stormkeeper",
-							}, -- [24]
-							{
-								["enabled"] = true,
-								["interrupt"] = "1",
-								["action"] = "fleshcraft",
-								["criteria"] = "soulbind.volatile_solvent.enabled",
-							}, -- [25]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.windfury_totem.remains < 10",
-								["action"] = "windfury_totem",
-							}, -- [26]
-							{
-								["action"] = "lava_lash",
-								["enabled"] = true,
-							}, -- [27]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.maelstrom_weapon.stack >= 5 & buff.primordial_wave.down",
-								["action"] = "lightning_bolt",
-							}, -- [28]
-							{
-								["enabled"] = true,
-								["criteria"] = "raid_event.adds.in >= 40",
-								["action"] = "sundering",
-							}, -- [29]
-							{
-								["action"] = "frost_shock",
-								["enabled"] = true,
-							}, -- [30]
-							{
-								["action"] = "crash_lightning",
-								["enabled"] = true,
-							}, -- [31]
-							{
-								["action"] = "ice_strike",
-								["enabled"] = true,
-							}, -- [32]
-							{
-								["enabled"] = true,
-								["criteria"] = "active_dot.flame_shock",
-								["action"] = "fire_nova",
-							}, -- [33]
-							{
-								["enabled"] = true,
-								["criteria"] = "soulbind.pustule_eruption.enabled",
-								["action"] = "fleshcraft",
-							}, -- [34]
-							{
-								["action"] = "earth_elemental",
-								["enabled"] = true,
-							}, -- [35]
-							{
-								["enabled"] = true,
-								["criteria"] = "settings.filler_shock",
-								["action"] = "flame_shock",
-							}, -- [36]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.windfury_totem.remains < 30",
-								["action"] = "windfury_totem",
-							}, -- [37]
-						},
-						["default"] = {
-							{
-								["action"] = "bloodlust",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["description"] = "In-combat potion is before combat ends.",
-								["action"] = "potion",
-								["criteria"] = "( talent.ascendance.enabled & raid_event.adds.in >= 90 & cooldown.ascendance.remains < 10 ) || ( talent.hot_hand.enabled & buff.molten_weapon.up ) || buff.icy_edge.up || ( talent.stormflurry.enabled & buff.crackling_surge.up ) || debuff.earthen_spike.up || active_enemies > 1 || boss & fight_remains < 30",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["description"] = "Interrupt",
-								["action"] = "wind_shear",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "( talent.ascendance.enabled & raid_event.adds.in >= 90 & cooldown.ascendance.remains < 10 ) || ( talent.hot_hand.enabled & buff.molten_weapon.up ) || buff.icy_edge.up || ( talent.stormflurry.enabled & buff.crackling_surge.up ) || debuff.earthen_spike.up || active_enemies > 1 || fight_remains < 30",
-								["name"] = "the_first_sigil",
-								["action"] = "the_first_sigil",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.acquired_sword.up || fight_remains < 25",
-								["name"] = "cache_of_acquired_treasures",
-								["action"] = "cache_of_acquired_treasures",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "! buff.scars_of_fraternal_strife_4.up || fight_remains < 31 || raid_event.adds.in < 16 || active_enemies > 1",
-								["name"] = "scars_of_fraternal_strife",
-								["action"] = "scars_of_fraternal_strife",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "! variable.trinket1_is_weird",
-								["action"] = "trinket1",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["criteria"] = "! variable.trinket2_is_weird",
-								["action"] = "trinket2",
-							}, -- [8]
-							{
-								["action"] = "use_items",
-								["enabled"] = true,
-							}, -- [9]
-							{
-								["enabled"] = true,
-								["criteria"] = "! talent.ascendance.enabled || buff.ascendance.up || cooldown.ascendance.remains > 50",
-								["action"] = "blood_fury",
-							}, -- [10]
-							{
-								["enabled"] = true,
-								["criteria"] = "! talent.ascendance.enabled || buff.ascendance.up",
-								["action"] = "berserking",
-							}, -- [11]
-							{
-								["enabled"] = true,
-								["criteria"] = "! talent.ascendance.enabled || buff.ascendance.up || cooldown.ascendance.remains > 50",
-								["action"] = "fireblood",
-							}, -- [12]
-							{
-								["enabled"] = true,
-								["criteria"] = "! talent.ascendance.enabled || buff.ascendance.up || cooldown.ascendance.remains > 50",
-								["action"] = "ancestral_call",
-							}, -- [13]
-							{
-								["enabled"] = true,
-								["criteria"] = "! talent.ascendance.enabled || ! buff.ascendance.up",
-								["action"] = "bag_of_tricks",
-							}, -- [14]
-							{
-								["action"] = "feral_spirit",
-								["enabled"] = true,
-							}, -- [15]
-							{
-								["enabled"] = true,
-								["criteria"] = "( talent.ascendance.enabled || runeforge.doom_winds.equipped ) & ( soulbind.grove_invigoration.enabled || soulbind.field_of_blossoms.enabled || active_enemies = 1 )",
-								["action"] = "fae_transfusion",
-							}, -- [16]
-							{
-								["enabled"] = true,
-								["criteria"] = "raid_event.adds.in >= 90 || active_enemies > 1",
-								["action"] = "ascendance",
-							}, -- [17]
-							{
-								["enabled"] = true,
-								["criteria"] = "runeforge.doom_winds.equipped & buff.doom_winds_debuff.down & ( raid_event.adds.in >= 60 || active_enemies > 1 ) || buff.windfury_totem.down & ( ! runeforge.doom_winds.equipped || buff.doom_winds_debuff.up )",
-								["action"] = "windfury_totem",
-								["line_cd"] = "15",
-							}, -- [18]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["description"] = "If only one enemy, priority follows the 'single' action list.",
-								["strict"] = 1,
-								["criteria"] = "active_enemies = 1",
-								["list_name"] = "single",
-							}, -- [19]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["description"] = "On multiple enemies, the priority follows the 'aoe' action list.",
-								["strict"] = 1,
-								["criteria"] = "active_enemies > 1",
-								["list_name"] = "aoe",
-							}, -- [20]
-							{
-								["action"] = "counterstrike_totem",
-								["enabled"] = true,
-							}, -- [21]
-							{
-								["action"] = "skyfury_totem",
-								["enabled"] = true,
-							}, -- [22]
-							{
-								["action"] = "primal_strike",
-								["enabled"] = true,
-							}, -- [23]
-						},
-						["precombat"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.windfury_weapon.remains < 300",
-								["action"] = "windfury_weapon",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.flametongue_weapon.remains < 300",
-								["action"] = "flametongue_weapon",
-							}, -- [2]
-							{
-								["action"] = "bottled_flayedwing_toxin",
-								["enabled"] = true,
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.lightning_shield.remains < 300",
-								["action"] = "lightning_shield",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.stormkeeper.enabled",
-								["action"] = "stormkeeper",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "! runeforge.doom_winds.equipped & buff.windfury_totem.down",
-								["action"] = "windfury_totem",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "soulbind.pustule_eruption.enabled || soulbind.volatile_solvent.enabled",
-								["action"] = "fleshcraft",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "trinket.t1.is.the_first_sigil || trinket.t1.is.scars_of_fraternal_strife || trinket.t1.is.cache_of_acquired_treasures",
-								["var_name"] = "trinket1_is_weird",
-							}, -- [8]
-							{
-								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "trinket.t2.is.the_first_sigil || trinket.t2.is.scars_of_fraternal_strife || trinket.t2.is.cache_of_acquired_treasures",
-								["var_name"] = "trinket2_is_weird",
-							}, -- [9]
-						},
-					},
-					["version"] = 20220828,
-					["warnings"] = "WARNING:  The import for 'aoe' required some automated changes.\nLine 15: Converted 'soulbind.X' to 'soulbind.X.enabled' (2x).\nLine 35: Converted 'soulbind.X' to 'soulbind.X.enabled' at EOL (1x).\n\nWARNING:  The import for 'single' required some automated changes.\nLine 25: Converted 'soulbind.X' to 'soulbind.X.enabled' at EOL (1x).\nLine 34: Converted 'soulbind.X' to 'soulbind.X.enabled' at EOL (1x).\n\nWARNING:  The import for 'default' required some automated changes.\nLine 16: Converted 'soulbind.X' to 'soulbind.X.enabled' (2x).\n\nWARNING:  The import for 'precombat' required some automated changes.\nLine 7: Converted 'soulbind.X' to 'soulbind.X.enabled' (1x).\nLine 7: Converted 'soulbind.X' to 'soulbind.X.enabled' at EOL (1x).\nLine 8: Converted 'trinket.1.X' to 'trinket.t1.X' (3x).\nLine 9: Converted 'trinket.2.X' to 'trinket.t2.X' (3x).\n\nImported 4 action lists.\n",
-					["profile"] = "## Enhancement Shaman\n## August 23, 2022\n\nactions.precombat=windfury_weapon,if=buff.windfury_weapon.remains<300\nactions.precombat+=/flametongue_weapon,if=buff.flametongue_weapon.remains<300\nactions.precombat+=/bottled_flayedwing_toxin\nactions.precombat+=/lightning_shield,if=buff.lightning_shield.remains<300\nactions.precombat+=/stormkeeper,if=talent.stormkeeper.enabled\nactions.precombat+=/windfury_totem,if=!runeforge.doom_winds.equipped&buff.windfury_totem.down\nactions.precombat+=/fleshcraft,if=soulbind.pustule_eruption||soulbind.volatile_solvent\nactions.precombat+=/variable,name=trinket1_is_weird,value=trinket.1.is.the_first_sigil||trinket.1.is.scars_of_fraternal_strife||trinket.1.is.cache_of_acquired_treasures\nactions.precombat+=/variable,name=trinket2_is_weird,value=trinket.2.is.the_first_sigil||trinket.2.is.scars_of_fraternal_strife||trinket.2.is.cache_of_acquired_treasures\n\n## Executed every time the actor is available.\nactions=bloodlust\n# In-combat potion is before combat ends.\nactions+=/potion,if=(talent.ascendance.enabled&raid_event.adds.in>=90&cooldown.ascendance.remains<10)||(talent.hot_hand.enabled&buff.molten_weapon.up)||buff.icy_edge.up||(talent.stormflurry.enabled&buff.crackling_surge.up)||debuff.earthen_spike.up||active_enemies>1||boss&fight_remains<30\n# Interrupt\nactions+=/wind_shear\nactions+=/use_item,name=the_first_sigil,if=(talent.ascendance.enabled&raid_event.adds.in>=90&cooldown.ascendance.remains<10)||(talent.hot_hand.enabled&buff.molten_weapon.up)||buff.icy_edge.up||(talent.stormflurry.enabled&buff.crackling_surge.up)||debuff.earthen_spike.up||active_enemies>1||fight_remains<30\nactions+=/use_item,name=cache_of_acquired_treasures,if=buff.acquired_sword.up||fight_remains<25\nactions+=/use_item,name=scars_of_fraternal_strife,if=!buff.scars_of_fraternal_strife_4.up||fight_remains<31||raid_event.adds.in<16||active_enemies>1\nactions+=/trinket1,if=!variable.trinket1_is_weird\nactions+=/trinket2,if=!variable.trinket2_is_weird\nactions+=/use_items\nactions+=/blood_fury,if=!talent.ascendance.enabled||buff.ascendance.up||cooldown.ascendance.remains>50\nactions+=/berserking,if=!talent.ascendance.enabled||buff.ascendance.up\nactions+=/fireblood,if=!talent.ascendance.enabled||buff.ascendance.up||cooldown.ascendance.remains>50\nactions+=/ancestral_call,if=!talent.ascendance.enabled||buff.ascendance.up||cooldown.ascendance.remains>50\nactions+=/bag_of_tricks,if=!talent.ascendance.enabled||!buff.ascendance.up\nactions+=/feral_spirit\nactions+=/fae_transfusion,if=(talent.ascendance.enabled||runeforge.doom_winds.equipped)&(soulbind.grove_invigoration||soulbind.field_of_blossoms||active_enemies=1)\nactions+=/ascendance,if=raid_event.adds.in>=90||active_enemies>1\nactions+=/windfury_totem,line_cd=15,if=runeforge.doom_winds.equipped&buff.doom_winds_debuff.down&(raid_event.adds.in>=60||active_enemies>1)||buff.windfury_totem.down&(!runeforge.doom_winds.equipped||buff.doom_winds_debuff.up)\n# If only one enemy, priority follows the 'single' action list.\nactions+=/call_action_list,name=single,strict=1,if=active_enemies=1\n# On multiple enemies, the priority follows the 'aoe' action list.\nactions+=/call_action_list,name=aoe,strict=1,if=active_enemies>1\nactions+=/counterstrike_totem\nactions+=/skyfury_totem\nactions+=/primal_strike\n\n## Multi target action priority list\nactions.aoe=chain_harvest,if=buff.maelstrom_weapon.stack>=5\nactions.aoe+=/crash_lightning,if=runeforge.doom_winds.equipped&buff.doom_winds.up\nactions.aoe+=/sundering,if=runeforge.doom_winds.equipped&buff.doom_winds.up\nactions.aoe+=/healing_stream_totem,if=runeforge.raging_vesper_vortex.equipped&talent.earth_shield.enabled&vesper_totem_heal_charges>0\nactions.aoe+=/earth_shield,if=runeforge.raging_vesper_vortex.equipped&talent.earth_shield.enabled&vesper_totem_heal_charges>0\nactions.aoe+=/fire_nova,if=active_dot.flame_shock>=6||(active_dot.flame_shock>=4&active_dot.flame_shock>=cycle_enemies)\nactions.aoe+=/primordial_wave,cycle_targets=1,if=!buff.primordial_wave.up\nactions.aoe+=/windstrike,if=runeforge.deeply_rooted_elements.equipped&buff.crash_lightning.up\nactions.aoe+=/stormstrike,if=runeforge.deeply_rooted_elements.equipped&buff.crash_lightning.up\nactions.aoe+=/lava_lash,cycle_targets=1,if=dot.flame_shock.ticking&(active_dot.flame_shock<cycle_enemies&active_dot.flame_shock<6)\nactions.aoe+=/flame_shock,if=!ticking\nactions.aoe+=/flame_shock,cycle_targets=1,if=!talent.hailstorm.enabled&active_dot.flame_shock<cycle_enemies&active_dot.flame_shock<6\nactions.aoe+=/lightning_bolt,if=(active_dot.flame_shock>=active_enemies||active_dot.flame_shock>=4)&buff.primordial_wave.up&buff.maelstrom_weapon.stack>=5&(!buff.splintered_elements.up||fight_remains<=12||raid_event.adds.remains<=gcd)\nactions.aoe+=/frost_shock,if=buff.hailstorm.up\nactions.aoe+=/fae_transfusion,if=soulbind.grove_invigoration||soulbind.field_of_blossoms||runeforge.seeds_of_rampant_growth.equipped\nactions.aoe+=/crash_lightning,if=buff.crash_lightning.down&buff.primordial_wave.up&buff.maelstrom_weapon.stack<5\nactions.aoe+=/sundering,if=buff.primordial_wave.up&buff.maelstrom_weapon.stack<5\nactions.aoe+=/stormstrike,if=buff.primordial_wave.up&buff.maelstrom_weapon.stack<5\nactions.aoe+=/sundering\nactions.aoe+=/fire_nova,if=active_dot.flame_shock>=4\nactions.aoe+=/crash_lightning,if=talent.crashing_storm.enabled||buff.crash_lightning.down\nactions.aoe+=/lava_lash,cycle_targets=1,if=talent.lashing_flames.enabled\nactions.aoe+=/fire_nova,if=active_dot.flame_shock>=3\nactions.aoe+=/vesper_totem\nactions.aoe+=/chain_lightning,if=buff.stormkeeper.up\nactions.aoe+=/lava_lash,if=buff.crash_lightning.up\nactions.aoe+=/elemental_blast,if=buff.maelstrom_weapon.stack>=5\nactions.aoe+=/stormkeeper,if=buff.maelstrom_weapon.stack>=5\nactions.aoe+=/chain_lightning,if=buff.maelstrom_weapon.stack=10\nactions.aoe+=/stormstrike,if=buff.crash_lightning.up\nactions.aoe+=/fire_nova,if=active_dot.flame_shock>=2\nactions.aoe+=/crash_lightning\nactions.aoe+=/windstrike\nactions.aoe+=/stormstrike\nactions.aoe+=/fleshcraft,interrupt=1,if=soulbind.volatile_solvent\nactions.aoe+=/flame_shock,cycle_targets=1,if=refreshable\nactions.aoe+=/fae_transfusion\nactions.aoe+=/frost_shock\nactions.aoe+=/chain_lightning,if=buff.maelstrom_weapon.stack>=5\nactions.aoe+=/earthen_spike\nactions.aoe+=/earth_elemental\nactions.aoe+=/windfury_totem,if=buff.windfury_totem.remains<30\n\n## Single target action priority list\nactions.single=windstrike\nactions.single+=/lava_lash,if=buff.hot_hand.up||(runeforge.primal_lava_actuators.equipped&buff.primal_lava_actuators.stack>6)\nactions.single+=/windfury_totem,if=!buff.windfury_totem.up\nactions.single+=/stormstrike,if=runeforge.doom_winds.equipped&buff.doom_winds.up\nactions.single+=/crash_lightning,if=runeforge.doom_winds.equipped&buff.doom_winds.up\nactions.single+=/ice_strike,if=runeforge.doom_winds.equipped&buff.doom_winds.up\nactions.single+=/sundering,if=runeforge.doom_winds.equipped&buff.doom_winds.up\nactions.single+=/primordial_wave,if=buff.primordial_wave.down&(raid_event.adds.in>42||raid_event.adds.in<6)\nactions.single+=/flame_shock,if=!ticking\nactions.single+=/lightning_bolt,if=buff.maelstrom_weapon.stack>=5&buff.primordial_wave.up&raid_event.adds.in>buff.primordial_wave.remains&(!buff.splintered_elements.up||fight_remains<=12)\nactions.single+=/vesper_totem,if=raid_event.adds.in>40\nactions.single+=/frost_shock,if=buff.hailstorm.up\nactions.single+=/earthen_spike\nactions.single+=/lava_lash,if=dot.flame_shock.refreshable\nactions.single+=/fae_transfusion,if=!runeforge.seeds_of_rampant_growth.equipped||cooldown.feral_spirit.remains>30\nactions.single+=/stormstrike,if=talent.stormflurry.enabled&buff.stormbringer.up\nactions.single+=/chain_lightning,if=buff.stormkeeper.up\nactions.single+=/elemental_blast,if=buff.maelstrom_weapon.stack>=5\nactions.single+=/healing_stream_totem,if=runeforge.raging_vesper_vortex.equipped&talent.earth_shield.enabled&(vesper_totem_heal_charges>1||(vesper_totem_heal_charges>0&raid_event.adds.in>(buff.vesper_totem.remains-3)))\nactions.single+=/earth_shield,if=runeforge.raging_vesper_vortex.equipped&talent.earth_shield.enabled&(vesper_totem_heal_charges>1||(vesper_totem_heal_charges>0&raid_event.adds.in>(buff.vesper_totem.remains-3)))\nactions.single+=/chain_harvest,if=buff.maelstrom_weapon.stack>=5&raid_event.adds.in>=90\nactions.single+=/lightning_bolt,if=buff.maelstrom_weapon.stack=10&buff.primordial_wave.down\nactions.single+=/stormstrike\nactions.single+=/stormkeeper,if=buff.maelstrom_weapon.stack>=5\nactions.single+=/fleshcraft,interrupt=1,if=soulbind.volatile_solvent\nactions.single+=/windfury_totem,if=buff.windfury_totem.remains<10\nactions.single+=/lava_lash\nactions.single+=/lightning_bolt,if=buff.maelstrom_weapon.stack>=5&buff.primordial_wave.down\nactions.single+=/sundering,if=raid_event.adds.in>=40\nactions.single+=/frost_shock\nactions.single+=/crash_lightning\nactions.single+=/ice_strike\nactions.single+=/fire_nova,if=active_dot.flame_shock\nactions.single+=/fleshcraft,if=soulbind.pustule_eruption\nactions.single+=/earth_elemental\nactions.single+=/flame_shock,if=settings.filler_shock\nactions.single+=/windfury_totem,if=buff.windfury_totem.remains<30",
-					["author"] = "SimC",
-				},
-				["Elemental"] = {
-					["source"] = "https://github.com/simulationcraft/simc/",
-					["builtIn"] = true,
-					["date"] = 20220801,
-					["spec"] = 262,
-					["desc"] = "Elemental Shaman\nAugust 1, 2022\n\nChanges:\n- Incorporate settings.stack_buffer for Icefury, Stormkeeper.\n- Add Meteor and Eye of the Storm again.",
-					["profile"] = "## Elemental Shaman\n## August 1, 2022\n\n## Changes:\n## - Incorporate settings.stack_buffer for Icefury, Stormkeeper.\n## - Add Meteor and Eye of the Storm again.\n\n# Executed every time the actor is available.\nactions.precombat=earth_elemental,if=!talent.primal_elementalist.enabled\n# Use Stormkeeper precombat unless some adds will spawn soon.\nactions.precombat+=/fleshcraft,if=soulbind.pustule_eruption||soulbind.volatile_solvent\nactions.precombat+=/stormkeeper,if=talent.stormkeeper.enabled&(raid_event.adds.count<3||raid_event.adds.in>50)\nactions.precombat+=/fire_elemental\nactions.precombat+=/elemental_blast,if=talent.elemental_blast.enabled&spell_targets.chain_lightning<3\n# Because LvB has a travel time, the addon places *this entry* on CD for 3 seconds to avoid double-LvB on pull.\nactions.precombat+=/lava_burst,line_cd=3,if=!talent.elemental_blast.enabled&spell_targets.chain_lightning<3||buff.stormkeeper.up\nactions.precombat+=/chain_lightning,if=!talent.elemental_blast.enabled&spell_targets.chain_lightning>=3&!buff.stormkeeper.up\nactions.precombat+=/potion\n\n# Interrupt of casts.\nactions+=/wind_shear\nactions+=/spiritwalkers_grace,moving=1\nactions+=/potion\nactions+=/use_items\nactions+=/flame_shock,if=(!talent.elemental_blast.enabled)&!ticking&!pet.storm_elemental.active&(spell_targets.chain_lightning<3||talent.master_of_the_elements.enabled||runeforge.skybreakers_fiery_demise.equipped)\nactions+=/primordial_wave,cycle_targets=1,if=!buff.primordial_wave.up&(!pet.storm_elemental.active||spell_targets.chain_lightning<3&buff.wind_gust.stack<20||soulbind.lead_by_example.enabled||runeforge.splintered_elements.equipped)&(spell_targets.chain_lightning<5||talent.master_of_the_elements.enabled||runeforge.skybreakers_fiery_demise.equipped||soulbind.lead_by_example.enabled||runeforge.splintered_elements.equipped)&!buff.splintered_elements.up\nactions+=/flame_shock,if=!ticking&(!pet.storm_elemental.active||spell_targets.chain_lightning<3&buff.wind_gust.stack<20)&(spell_targets.chain_lightning<3||talent.master_of_the_elements.enabled||runeforge.skybreakers_fiery_demise.equipped)\nactions+=/fire_elemental\nactions+=/meteor\nactions+=/blood_fury,if=!talent.ascendance.enabled||buff.ascendance.up||cooldown.ascendance.remains>50\nactions+=/berserking,if=!talent.ascendance.enabled||buff.ascendance.up\nactions+=/fireblood,if=!talent.ascendance.enabled||buff.ascendance.up||cooldown.ascendance.remains>50\nactions+=/ancestral_call,if=!talent.ascendance.enabled||buff.ascendance.up||cooldown.ascendance.remains>50\nactions+=/vesper_totem\nactions+=/fae_transfusion,if=covenant.night_fae&!runeforge.seeds_of_rampant_growth.equipped&(!talent.master_of_the_elements.enabled||buff.master_of_the_elements.up)&spell_targets.chain_lightning<3\nactions+=/fae_transfusion,if=covenant.night_fae&runeforge.seeds_of_rampant_growth.equipped&(!talent.master_of_the_elements.enabled||buff.master_of_the_elements.up||spell_targets.chain_lightning>=3)&(cooldown.fire_elemental.remains>20||cooldown.storm_elemental.remains>20)\nactions+=/run_action_list,name=aoe,strict=1,if=active_enemies>2&(spell_targets.chain_lightning>2||spell_targets.lava_beam>2)\nactions+=/run_action_list,name=single_target,strict=1,if=!talent.storm_elemental.enabled&active_enemies<=2\nactions+=/run_action_list,name=se_single_target,strict=1,if=talent.storm_elemental.enabled&active_enemies<=2\n\nactions.aoe=storm_elemental,if=!pet.storm_elemental.active\nactions.aoe+=/eye_of_the_storm,if=buff.call_lightning.remains>=10\nactions.aoe+=/earthquake,if=buff.echoing_shock.up\nactions.aoe+=/chain_harvest\nactions.aoe+=/stormkeeper,if=talent.stormkeeper.enabled\nactions.aoe+=/flame_shock,cycle_targets=1,if=refreshable&((active_dot.flame_shock<2&active_enemies<=3&cooldown.primordial_wave.remains<16&covenant.necrolord&!pet.storm_elemental.active||active_dot.flame_shock<1&active_enemies>=4&!pet.storm_elemental.active&talent.master_of_the_elements.enabled)||(runeforge.skybreakers_fiery_demise.equipped&!pet.storm_elemental.active)||(runeforge.splintered_elements.equipped&(active_dot.flame_shock<3&!runeforge.echoes_of_great_sundering.equipped||active_dot.flame_shock<4)&(cooldown.primordial_wave.remains<16||buff.primordial_wave.up)))\nactions.aoe+=/flame_shock,if=!active_dot.flame_shock&!pet.storm_elemental.active&(talent.master_of_the_elements.enabled||runeforge.skybreakers_fiery_demise.equipped)||(runeforge.splintered_elements.equipped&!ticking&buff.primordial_wave.up)\nactions.aoe+=/echoing_shock,if=talent.echoing_shock.enabled&maelstrom>=60&(runeforge.echoes_of_great_sundering.equipped&buff.echoes_of_great_sundering.up||!runeforge.echoes_of_great_sundering.equipped)\nactions.aoe+=/ascendance,if=talent.ascendance.enabled&(!pet.storm_elemental.active)&(!talent.icefury.enabled||!buff.icefury.up&!cooldown.icefury.up)\nactions.aoe+=/liquid_magma_totem,if=talent.liquid_magma_totem.enabled\nactions.aoe+=/chain_lightning,if=spell_targets.chain_lightning<4&buff.master_of_the_elements.up&maelstrom<50\nactions.aoe+=/earth_shock,if=runeforge.echoes_of_great_sundering.equipped&!buff.echoes_of_great_sundering.up\nactions.aoe+=/lava_burst,if=dot.flame_shock.remains&spell_targets.chain_lightning<4&(!pet.storm_elemental.active)&(buff.lava_surge.up&!buff.master_of_the_elements.up&talent.master_of_the_elements.enabled)\nactions.aoe+=/earthquake,if=spell_targets.chain_lightning>=2&!runeforge.echoes_of_great_sundering.equipped&(talent.master_of_the_elements.enabled&maelstrom>=50&!buff.master_of_the_elements.up)\nactions.aoe+=/lava_burst,cycle_targets=1,if=covenant.necrolord&runeforge.echoes_of_great_sundering.equipped&set_bonus.tier28_4pc&buff.lava_surge.up&!buff.primordial_wave.up\nactions.aoe+=/lava_burst,cycle_targets=1,if=buff.lava_surge.up&buff.primordial_wave.up&(buff.primordial_wave.remains<3*gcd||active_dot.flame_shock=spell_targets.chain_lightning||active_dot.flame_shock=3&!runeforge.echoes_of_great_sundering.equipped||active_dot.flame_shock=4)\nactions.aoe+=/lava_burst,if=dot.flame_shock.remains&spell_targets.chain_lightning<4&runeforge.skybreakers_fiery_demise.equipped&buff.lava_surge.up&talent.master_of_the_elements.enabled&!buff.master_of_the_elements.up&maelstrom>=50\nactions.aoe+=/lava_burst,if=dot.flame_shock.remains&((spell_targets.chain_lightning<4&runeforge.skybreakers_fiery_demise.equipped&talent.master_of_the_elements.enabled)||(talent.master_of_the_elements.enabled&maelstrom>=50&!buff.master_of_the_elements.up&(!runeforge.echoes_of_great_sundering.equipped||buff.echoes_of_great_sundering.up)&!runeforge.skybreakers_fiery_demise.equipped))\nactions.aoe+=/lava_burst,if=dot.flame_shock.remains&spell_targets.chain_lightning=4&runeforge.skybreakers_fiery_demise.equipped&buff.lava_surge.up&talent.master_of_the_elements.enabled&!buff.master_of_the_elements.up&maelstrom>=50\nactions.aoe+=/earthquake,if=spell_targets.chain_lightning>=2\nactions.aoe+=/chain_lightning,if=buff.stormkeeper.remains<3*gcd*buff.stormkeeper.stack\nactions.aoe+=/lava_burst,cycle_targets=1,if=set_bonus.tier28_4pc&buff.lava_surge.up&!buff.primordial_wave.up\nactions.aoe+=/lava_burst,if=set_bonus.tier28_4pc&buff.lava_surge.up&!buff.primordial_wave.up\nactions.aoe+=/lava_burst,if=buff.lava_surge.up&spell_targets.chain_lightning<4&(!pet.storm_elemental.active)&dot.flame_shock.ticking\nactions.aoe+=/elemental_blast,if=talent.elemental_blast.enabled&spell_targets.chain_lightning<5&(!pet.storm_elemental.active)\nactions.aoe+=/lava_beam,if=talent.ascendance.enabled\nactions.aoe+=/chain_lightning\nactions.aoe+=/lava_burst,moving=1,if=buff.lava_surge.up&cooldown_react\nactions.aoe+=/flame_shock,moving=1,cycle_targets=1,if=refreshable\nactions.aoe+=/frost_shock,moving=1\n\nactions.se_single_target=storm_elemental,if=!pet.storm_elemental.active\nactions.se_single_target+=/lightning_bolt,if=buff.surge_of_power.up\nactions.se_single_target+=/primordial_wave,cycle_targets=1,if=covenant.necrolord&!buff.primordial_wave.up&!buff.splintered_elements.up\nactions.se_single_target+=/eye_of_the_storm,if=buff.call_lightning.remains>=10\nactions.se_single_target+=/frost_shock,if=talent.icefury.enabled&buff.icefury.up&buff.icefury.remains<settings.stack_buffer*gcd*buff.icefury.stack&buff.wind_gust.stack<18\nactions.se_single_target+=/flame_shock,cycle_targets=1,if=refreshable\nactions.se_single_target+=/frost_shock,if=talent.icefury.enabled&buff.icefury.up&buff.icefury.remains<1.1*gcd*buff.icefury.stack\nactions.se_single_target+=/elemental_blast,if=talent.elemental_blast.enabled\nactions.se_single_target+=/stormkeeper,if=talent.stormkeeper.enabled\nactions.se_single_target+=/echoing_shock,if=talent.echoing_shock.enabled&cooldown.lava_burst.remains<=gcd&spell_targets.chain_lightning<2||maelstrom>=60&spell_targets.chain_lightning>=2&(!runeforge.echoes_of_great_sundering.equipped||buff.echoes_of_great_sundering.up)\nactions.se_single_target+=/lava_burst,if=(buff.wind_gust.stack<18&!buff.bloodlust.up)||buff.lava_surge.up\nactions.se_single_target+=/lava_burst,if=talent.echoing_shock.enabled&buff.echoing_shock.up&spell_targets.chain_lightning<2\nactions.se_single_target+=/earthquake,if=talent.echoing_shock.enabled&buff.echoing_shock.up&spell_targets.chain_lightning>=2\nactions.se_single_target+=/lightning_bolt,if=buff.stormkeeper.up\nactions.se_single_target+=/earthquake,if=buff.echoes_of_great_sundering.up\nactions.se_single_target+=/earth_shock,if=spell_targets.chain_lightning<2&maelstrom>=60&(buff.wind_gust.stack<20||maelstrom>90)||(runeforge.echoes_of_great_sundering.equipped&!buff.echoes_of_great_sundering.up)||runeforge.windspeakers_lava_resurgence.equipped\nactions.se_single_target+=/earthquake,if=(spell_targets.chain_lightning>1)&(!dot.flame_shock.refreshable)\nactions.se_single_target+=/lightning_bolt,if=pet.storm_elemental.active&buff.bloodlust.up\nactions.se_single_target+=/lava_burst,if=buff.ascendance.up\nactions.se_single_target+=/lava_burst,if=cooldown_react\nactions.se_single_target+=/lava_burst,if=cooldown_react&charges>talent.echo_of_the_elements.enabled\nactions.se_single_target+=/frost_shock,if=talent.icefury.enabled&buff.icefury.up\nactions.se_single_target+=/chain_harvest\nactions.se_single_target+=/fleshcraft,if=soulbind.volatile_solvent&!buff.volatile_solvent_humanoid.up,interrupt_immediate=1,interrupt_global=1,interrupt_if=soulbind.volatile_solvent\nactions.se_single_target+=/static_discharge,if=talent.static_discharge.enabled\nactions.se_single_target+=/earth_elemental,if=!talent.primal_elementalist.enabled||talent.primal_elementalist.enabled&(!pet.storm_elemental.active)\nactions.se_single_target+=/chain_lightning,if=active_enemies>1&(spell_targets.chain_lightning>1||spell_targets.lava_beam>1)\nactions.se_single_target+=/lightning_bolt\nactions.se_single_target+=/bag_of_tricks\nactions.se_single_target+=/flame_shock,moving=1,cycle_targets=1,if=refreshable\nactions.se_single_target+=/flame_shock,moving=1,if=movement.distance>6\nactions.se_single_target+=/frost_shock,moving=1\n\nactions.single_target=lightning_bolt,if=(buff.stormkeeper.remains<settings.stack_buffer*gcd*buff.stormkeeper.stack)\nactions.single_target+=/frost_shock,if=talent.icefury.enabled&buff.icefury.up&buff.icefury.remains<settings.stack_buffer*gcd*buff.icefury.stack\nactions.single_target+=/flame_shock,cycle_targets=1,if=(!ticking||dot.flame_shock.remains<=gcd||talent.ascendance.enabled&dot.flame_shock.remains<(cooldown.ascendance.remains+buff.ascendance.duration)&cooldown.ascendance.remains<4)&(buff.lava_surge.up||!buff.bloodlust.up)\nactions.single_target+=/flame_shock,cycle_targets=1,if=buff.primordial_wave.up&refreshable\nactions.single_target+=/ascendance,if=talent.ascendance.enabled&(time>=60||buff.bloodlust.up)&(cooldown.lava_burst.remains>0)&(!talent.icefury.enabled||!buff.icefury.up&!cooldown.icefury.up)\nactions.single_target+=/lava_burst,if=buff.lava_surge.up&(runeforge.windspeakers_lava_resurgence.equipped||!buff.master_of_the_elements.up&talent.master_of_the_elements.enabled)\nactions.single_target+=/elemental_blast,if=talent.elemental_blast.enabled&(maelstrom<70)&!buff.ascendance.up\nactions.single_target+=/stormkeeper,if=talent.stormkeeper.enabled&(raid_event.adds.count<3||raid_event.adds.in>50)&(maelstrom<44)\nactions.single_target+=/echoing_shock,if=talent.echoing_shock.enabled&cooldown.lava_burst.remains<=gcd\nactions.single_target+=/lava_burst,if=talent.echoing_shock.enabled&buff.echoing_shock.up\nactions.single_target+=/liquid_magma_totem,if=talent.liquid_magma_totem.enabled\nactions.single_target+=/earthquake,if=buff.echoes_of_great_sundering.up&talent.master_of_the_elements.enabled&buff.master_of_the_elements.up\nactions.single_target+=/lightning_bolt,if=buff.stormkeeper.up&buff.master_of_the_elements.up&maelstrom<60\nactions.single_target+=/earthquake,if=buff.echoes_of_great_sundering.up&(talent.master_of_the_elements.enabled&(buff.master_of_the_elements.up||cooldown.lava_burst.remains>0&maelstrom>=92||spell_targets.chain_lightning<2&buff.stormkeeper.up&cooldown.lava_burst.remains<=gcd)||!talent.master_of_the_elements.enabled||cooldown.elemental_blast.remains<=settings.stack_buffer*gcd*2)\nactions.single_target+=/earthquake,if=spell_targets.chain_lightning>1&!dot.flame_shock.refreshable&!runeforge.echoes_of_great_sundering.equipped&(!talent.master_of_the_elements.enabled||buff.master_of_the_elements.up||cooldown.lava_burst.remains>0&maelstrom>=92)\nactions.single_target+=/earth_shock,if=runeforge.windspeakers_lava_resurgence.equipped&buff.ascendance.up\nactions.single_target+=/lava_burst,if=cooldown_react&(!buff.master_of_the_elements.up&buff.icefury.up)\nactions.single_target+=/lava_burst,if=cooldown_react&charges>talent.echo_of_the_elements.enabled&!buff.icefury.up\nactions.single_target+=/lava_burst,if=talent.echo_of_the_elements.enabled&!buff.master_of_the_elements.up&maelstrom>=50&!buff.echoes_of_great_sundering.up\nactions.single_target+=/earth_shock,if=(runeforge.echoes_of_great_sundering.equipped||spell_targets.chain_lightning<2)&(talent.master_of_the_elements.enabled&!buff.echoes_of_great_sundering.up&(buff.master_of_the_elements.up||maelstrom>=92||spell_targets.chain_lightning<2&buff.stormkeeper.up&cooldown.lava_burst.remains<=gcd)||!talent.master_of_the_elements.enabled||cooldown.elemental_blast.remains<=settings.stack_buffer*gcd*2)\nactions.single_target+=/frost_shock,if=talent.icefury.enabled&talent.master_of_the_elements.enabled&buff.icefury.up&buff.master_of_the_elements.up\nactions.single_target+=/lava_burst,if=buff.ascendance.up\nactions.single_target+=/lava_burst,if=cooldown_react&!talent.master_of_the_elements.enabled\nactions.single_target+=/icefury,if=talent.icefury.enabled&!(maelstrom>35&cooldown.lava_burst.remains<=0)\nactions.single_target+=/frost_shock,if=talent.icefury.enabled&buff.icefury.up&(buff.icefury.remains<gcd*4*buff.icefury.stack||buff.stormkeeper.up||!talent.master_of_the_elements.enabled)\nactions.single_target+=/lava_burst\nactions.single_target+=/bag_of_tricks\nactions.single_target+=/flame_shock,cycle_targets=1,if=refreshable\nactions.single_target+=/frost_shock,if=runeforge.elemental_equilibrium.equipped&!buff.elemental_equilibrium_debuff.up&!talent.elemental_blast.enabled&!talent.echoing_shock.enabled\nactions.single_target+=/fleshcraft,if=soulbind.volatile_solvent&!buff.volatile_solvent_humanoid.up,interrupt_immediate=1,interrupt_global=1,interrupt_if=soulbind.volatile_solvent\nactions.single_target+=/chain_harvest\nactions.single_target+=/frost_shock,if=talent.icefury.enabled&buff.icefury.up\nactions.single_target+=/static_discharge,if=talent.static_discharge.enabled\nactions.single_target+=/earth_elemental,if=!talent.primal_elementalist.enabled||!pet.fire_elemental.active\nactions.single_target+=/chain_lightning,if=spell_targets.chain_lightning>1\nactions.single_target+=/lightning_bolt\nactions.single_target+=/flame_shock,moving=1,cycle_targets=1,if=refreshable\nactions.single_target+=/flame_shock,moving=1,if=movement.distance>6\nactions.single_target+=/frost_shock,moving=1\nactions.single_target+=/frost_shock,if=talent.icefury.enabled&buff.icefury.up&buff.icefury.remains<settings.stack_buffer*gcd*buff.icefury.stack",
-					["version"] = 20220801,
-					["warnings"] = "WARNING:  The import for 'single_target' required some automated changes.\nLine 30: Converted 'soulbind.X' to 'soulbind.X.enabled' (1x).\n\nWARNING:  The import for 'precombat' required some automated changes.\nLine 2: Converted 'soulbind.X' to 'soulbind.X.enabled' (1x).\nLine 2: Converted 'soulbind.X' to 'soulbind.X.enabled' at EOL (1x).\n\nWARNING:  The import for 'se_single_target' required some automated changes.\nLine 24: Converted 'soulbind.X' to 'soulbind.X.enabled' (1x).\n\nImported 5 action lists.\n",
-					["lists"] = {
-						["single_target"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "( buff.stormkeeper.remains < settings.stack_buffer * gcd * buff.stormkeeper.stack )",
-								["action"] = "lightning_bolt",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.icefury.enabled & buff.icefury.up & buff.icefury.remains < settings.stack_buffer * gcd * buff.icefury.stack",
-								["action"] = "frost_shock",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "( ! ticking || dot.flame_shock.remains <= gcd || talent.ascendance.enabled & dot.flame_shock.remains < ( cooldown.ascendance.remains + buff.ascendance.duration ) & cooldown.ascendance.remains < 4 ) & ( buff.lava_surge.up || ! buff.bloodlust.up )",
-								["action"] = "flame_shock",
-								["cycle_targets"] = 1,
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.primordial_wave.up & refreshable",
-								["action"] = "flame_shock",
-								["cycle_targets"] = 1,
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.ascendance.enabled & ( time >= 60 || buff.bloodlust.up ) & ( cooldown.lava_burst.remains > 0 ) & ( ! talent.icefury.enabled || ! buff.icefury.up & ! cooldown.icefury.up )",
-								["action"] = "ascendance",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.lava_surge.up & ( runeforge.windspeakers_lava_resurgence.equipped || ! buff.master_of_the_elements.up & talent.master_of_the_elements.enabled )",
-								["action"] = "lava_burst",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.elemental_blast.enabled & ( maelstrom < 70 ) & ! buff.ascendance.up",
-								["action"] = "elemental_blast",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.stormkeeper.enabled & ( raid_event.adds.count < 3 || raid_event.adds.in > 50 ) & ( maelstrom < 44 )",
-								["action"] = "stormkeeper",
-							}, -- [8]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.echoing_shock.enabled & cooldown.lava_burst.remains <= gcd",
-								["action"] = "echoing_shock",
-							}, -- [9]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.echoing_shock.enabled & buff.echoing_shock.up",
-								["action"] = "lava_burst",
-							}, -- [10]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.liquid_magma_totem.enabled",
-								["action"] = "liquid_magma_totem",
-							}, -- [11]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.echoes_of_great_sundering.up & talent.master_of_the_elements.enabled & buff.master_of_the_elements.up",
-								["action"] = "earthquake",
-							}, -- [12]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.stormkeeper.up & buff.master_of_the_elements.up & maelstrom < 60",
-								["action"] = "lightning_bolt",
-							}, -- [13]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.echoes_of_great_sundering.up & ( talent.master_of_the_elements.enabled & ( buff.master_of_the_elements.up || cooldown.lava_burst.remains > 0 & maelstrom >= 92 || spell_targets.chain_lightning < 2 & buff.stormkeeper.up & cooldown.lava_burst.remains <= gcd ) || ! talent.master_of_the_elements.enabled || cooldown.elemental_blast.remains <= settings.stack_buffer * gcd * 2 )",
-								["action"] = "earthquake",
-							}, -- [14]
-							{
-								["enabled"] = true,
-								["criteria"] = "spell_targets.chain_lightning > 1 & ! dot.flame_shock.refreshable & ! runeforge.echoes_of_great_sundering.equipped & ( ! talent.master_of_the_elements.enabled || buff.master_of_the_elements.up || cooldown.lava_burst.remains > 0 & maelstrom >= 92 )",
-								["action"] = "earthquake",
-							}, -- [15]
-							{
-								["enabled"] = true,
-								["criteria"] = "runeforge.windspeakers_lava_resurgence.equipped & buff.ascendance.up",
-								["action"] = "earth_shock",
-							}, -- [16]
-							{
-								["enabled"] = true,
-								["criteria"] = "cooldown_react & ( ! buff.master_of_the_elements.up & buff.icefury.up )",
-								["action"] = "lava_burst",
-							}, -- [17]
-							{
-								["enabled"] = true,
-								["criteria"] = "cooldown_react & charges > talent.echo_of_the_elements.enabled & ! buff.icefury.up",
-								["action"] = "lava_burst",
-							}, -- [18]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.echo_of_the_elements.enabled & ! buff.master_of_the_elements.up & maelstrom >= 50 & ! buff.echoes_of_great_sundering.up",
-								["action"] = "lava_burst",
-							}, -- [19]
-							{
-								["enabled"] = true,
-								["criteria"] = "( runeforge.echoes_of_great_sundering.equipped || spell_targets.chain_lightning < 2 ) & ( talent.master_of_the_elements.enabled & ! buff.echoes_of_great_sundering.up & ( buff.master_of_the_elements.up || maelstrom >= 92 || spell_targets.chain_lightning < 2 & buff.stormkeeper.up & cooldown.lava_burst.remains <= gcd ) || ! talent.master_of_the_elements.enabled || cooldown.elemental_blast.remains <= settings.stack_buffer * gcd * 2 )",
-								["action"] = "earth_shock",
-							}, -- [20]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.icefury.enabled & talent.master_of_the_elements.enabled & buff.icefury.up & buff.master_of_the_elements.up",
-								["action"] = "frost_shock",
-							}, -- [21]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.ascendance.up",
-								["action"] = "lava_burst",
-							}, -- [22]
-							{
-								["enabled"] = true,
-								["criteria"] = "cooldown_react & ! talent.master_of_the_elements.enabled",
-								["action"] = "lava_burst",
-							}, -- [23]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.icefury.enabled & ! ( maelstrom > 35 & cooldown.lava_burst.remains <= 0 )",
-								["action"] = "icefury",
-							}, -- [24]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.icefury.enabled & buff.icefury.up & ( buff.icefury.remains < gcd * 4 * buff.icefury.stack || buff.stormkeeper.up || ! talent.master_of_the_elements.enabled )",
-								["action"] = "frost_shock",
-							}, -- [25]
-							{
-								["action"] = "lava_burst",
-								["enabled"] = true,
-							}, -- [26]
-							{
-								["action"] = "bag_of_tricks",
-								["enabled"] = true,
-							}, -- [27]
-							{
-								["enabled"] = true,
-								["criteria"] = "refreshable",
-								["action"] = "flame_shock",
-								["cycle_targets"] = 1,
-							}, -- [28]
-							{
-								["enabled"] = true,
-								["criteria"] = "runeforge.elemental_equilibrium.equipped & ! buff.elemental_equilibrium_debuff.up & ! talent.elemental_blast.enabled & ! talent.echoing_shock.enabled",
-								["action"] = "frost_shock",
-							}, -- [29]
-							{
-								["enabled"] = true,
-								["criteria"] = "soulbind.volatile_solvent.enabled & ! buff.volatile_solvent_humanoid.up",
-								["interrupt_if"] = "soulbind.volatile_solvent",
-								["interrupt_immediate"] = "1",
-								["action"] = "fleshcraft",
-								["interrupt_global"] = "1",
-							}, -- [30]
-							{
-								["action"] = "chain_harvest",
-								["enabled"] = true,
-							}, -- [31]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.icefury.enabled & buff.icefury.up",
-								["action"] = "frost_shock",
-							}, -- [32]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.static_discharge.enabled",
-								["action"] = "static_discharge",
-							}, -- [33]
-							{
-								["enabled"] = true,
-								["criteria"] = "! talent.primal_elementalist.enabled || ! pet.fire_elemental.active",
-								["action"] = "earth_elemental",
-							}, -- [34]
-							{
-								["enabled"] = true,
-								["criteria"] = "spell_targets.chain_lightning > 1",
-								["action"] = "chain_lightning",
-							}, -- [35]
-							{
-								["action"] = "lightning_bolt",
-								["enabled"] = true,
-							}, -- [36]
-							{
-								["moving"] = 1,
-								["enable_moving"] = true,
-								["action"] = "flame_shock",
-								["cycle_targets"] = 1,
-								["enabled"] = true,
-								["criteria"] = "refreshable",
-							}, -- [37]
-							{
-								["enabled"] = true,
-								["enable_moving"] = true,
-								["action"] = "flame_shock",
-								["moving"] = 1,
-								["criteria"] = "movement.distance > 6",
-							}, -- [38]
-							{
-								["moving"] = 1,
-								["enable_moving"] = true,
-								["action"] = "frost_shock",
-								["enabled"] = true,
-							}, -- [39]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.icefury.enabled & buff.icefury.up & buff.icefury.remains < settings.stack_buffer * gcd * buff.icefury.stack",
-								["action"] = "frost_shock",
-							}, -- [40]
-						},
-						["default"] = {
-							{
-								["enabled"] = true,
-								["description"] = "Interrupt of casts.",
-								["action"] = "wind_shear",
-							}, -- [1]
-							{
-								["moving"] = 1,
-								["enable_moving"] = true,
-								["action"] = "spiritwalkers_grace",
-								["enabled"] = true,
-							}, -- [2]
-							{
-								["action"] = "potion",
-								["enabled"] = true,
-							}, -- [3]
-							{
-								["action"] = "use_items",
-								["enabled"] = true,
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "( ! talent.elemental_blast.enabled ) & ! ticking & ! pet.storm_elemental.active & ( spell_targets.chain_lightning < 3 || talent.master_of_the_elements.enabled || runeforge.skybreakers_fiery_demise.equipped )",
-								["action"] = "flame_shock",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "! buff.primordial_wave.up & ( ! pet.storm_elemental.active || spell_targets.chain_lightning < 3 & buff.wind_gust.stack < 20 || soulbind.lead_by_example.enabled || runeforge.splintered_elements.equipped ) & ( spell_targets.chain_lightning < 5 || talent.master_of_the_elements.enabled || runeforge.skybreakers_fiery_demise.equipped || soulbind.lead_by_example.enabled || runeforge.splintered_elements.equipped ) & ! buff.splintered_elements.up",
-								["action"] = "primordial_wave",
-								["cycle_targets"] = 1,
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "! ticking & ( ! pet.storm_elemental.active || spell_targets.chain_lightning < 3 & buff.wind_gust.stack < 20 ) & ( spell_targets.chain_lightning < 3 || talent.master_of_the_elements.enabled || runeforge.skybreakers_fiery_demise.equipped )",
-								["action"] = "flame_shock",
-							}, -- [7]
-							{
-								["action"] = "fire_elemental",
-								["enabled"] = true,
-							}, -- [8]
-							{
-								["action"] = "meteor",
-								["enabled"] = true,
-							}, -- [9]
-							{
-								["enabled"] = true,
-								["criteria"] = "! talent.ascendance.enabled || buff.ascendance.up || cooldown.ascendance.remains > 50",
-								["action"] = "blood_fury",
-							}, -- [10]
-							{
-								["enabled"] = true,
-								["criteria"] = "! talent.ascendance.enabled || buff.ascendance.up",
-								["action"] = "berserking",
-							}, -- [11]
-							{
-								["enabled"] = true,
-								["criteria"] = "! talent.ascendance.enabled || buff.ascendance.up || cooldown.ascendance.remains > 50",
-								["action"] = "fireblood",
-							}, -- [12]
-							{
-								["enabled"] = true,
-								["criteria"] = "! talent.ascendance.enabled || buff.ascendance.up || cooldown.ascendance.remains > 50",
-								["action"] = "ancestral_call",
-							}, -- [13]
-							{
-								["action"] = "vesper_totem",
-								["enabled"] = true,
-							}, -- [14]
-							{
-								["enabled"] = true,
-								["criteria"] = "covenant.night_fae & ! runeforge.seeds_of_rampant_growth.equipped & ( ! talent.master_of_the_elements.enabled || buff.master_of_the_elements.up ) & spell_targets.chain_lightning < 3",
-								["action"] = "fae_transfusion",
-							}, -- [15]
-							{
-								["enabled"] = true,
-								["criteria"] = "covenant.night_fae & runeforge.seeds_of_rampant_growth.equipped & ( ! talent.master_of_the_elements.enabled || buff.master_of_the_elements.up || spell_targets.chain_lightning >= 3 ) & ( cooldown.fire_elemental.remains > 20 || cooldown.storm_elemental.remains > 20 )",
-								["action"] = "fae_transfusion",
-							}, -- [16]
-							{
-								["enabled"] = true,
-								["action"] = "run_action_list",
-								["strict"] = 1,
-								["criteria"] = "active_enemies > 2 & ( spell_targets.chain_lightning > 2 || spell_targets.lava_beam > 2 )",
-								["list_name"] = "aoe",
-							}, -- [17]
-							{
-								["enabled"] = true,
-								["action"] = "run_action_list",
-								["strict"] = 1,
-								["criteria"] = "! talent.storm_elemental.enabled & active_enemies <= 2",
-								["list_name"] = "single_target",
-							}, -- [18]
-							{
-								["enabled"] = true,
-								["action"] = "run_action_list",
-								["strict"] = 1,
-								["criteria"] = "talent.storm_elemental.enabled & active_enemies <= 2",
-								["list_name"] = "se_single_target",
-							}, -- [19]
-						},
-						["precombat"] = {
-							{
-								["enabled"] = true,
-								["description"] = "Executed every time the actor is available.",
-								["criteria"] = "! talent.primal_elementalist.enabled",
-								["action"] = "earth_elemental",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["description"] = "Use Stormkeeper precombat unless some adds will spawn soon.",
-								["criteria"] = "soulbind.pustule_eruption.enabled || soulbind.volatile_solvent.enabled",
-								["action"] = "fleshcraft",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.stormkeeper.enabled & ( raid_event.adds.count < 3 || raid_event.adds.in > 50 )",
-								["action"] = "stormkeeper",
-							}, -- [3]
-							{
-								["action"] = "fire_elemental",
-								["enabled"] = true,
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.elemental_blast.enabled & spell_targets.chain_lightning < 3",
-								["action"] = "elemental_blast",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["action"] = "lava_burst",
-								["line_cd"] = "3",
-								["description"] = "Because LvB has a travel time, the addon places *this entry* on CD for 3 seconds to avoid double-LvB on pull.",
-								["criteria"] = "! talent.elemental_blast.enabled & spell_targets.chain_lightning < 3 || buff.stormkeeper.up",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "! talent.elemental_blast.enabled & spell_targets.chain_lightning >= 3 & ! buff.stormkeeper.up",
-								["action"] = "chain_lightning",
-							}, -- [7]
-							{
-								["action"] = "potion",
-								["enabled"] = true,
-							}, -- [8]
-						},
-						["aoe"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "! pet.storm_elemental.active",
-								["action"] = "storm_elemental",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.call_lightning.remains >= 10",
-								["action"] = "eye_of_the_storm",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.echoing_shock.up",
-								["action"] = "earthquake",
-							}, -- [3]
-							{
-								["action"] = "chain_harvest",
-								["enabled"] = true,
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.stormkeeper.enabled",
-								["action"] = "stormkeeper",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "refreshable & ( ( active_dot.flame_shock < 2 & active_enemies <= 3 & cooldown.primordial_wave.remains < 16 & covenant.necrolord & ! pet.storm_elemental.active || active_dot.flame_shock < 1 & active_enemies >= 4 & ! pet.storm_elemental.active & talent.master_of_the_elements.enabled ) || ( runeforge.skybreakers_fiery_demise.equipped & ! pet.storm_elemental.active ) || ( runeforge.splintered_elements.equipped & ( active_dot.flame_shock < 3 & ! runeforge.echoes_of_great_sundering.equipped || active_dot.flame_shock < 4 ) & ( cooldown.primordial_wave.remains < 16 || buff.primordial_wave.up ) ) )",
-								["action"] = "flame_shock",
-								["cycle_targets"] = 1,
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "! active_dot.flame_shock & ! pet.storm_elemental.active & ( talent.master_of_the_elements.enabled || runeforge.skybreakers_fiery_demise.equipped ) || ( runeforge.splintered_elements.equipped & ! ticking & buff.primordial_wave.up )",
-								["action"] = "flame_shock",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.echoing_shock.enabled & maelstrom >= 60 & ( runeforge.echoes_of_great_sundering.equipped & buff.echoes_of_great_sundering.up || ! runeforge.echoes_of_great_sundering.equipped )",
-								["action"] = "echoing_shock",
-							}, -- [8]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.ascendance.enabled & ( ! pet.storm_elemental.active ) & ( ! talent.icefury.enabled || ! buff.icefury.up & ! cooldown.icefury.up )",
-								["action"] = "ascendance",
-							}, -- [9]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.liquid_magma_totem.enabled",
-								["action"] = "liquid_magma_totem",
-							}, -- [10]
-							{
-								["enabled"] = true,
-								["criteria"] = "spell_targets.chain_lightning < 4 & buff.master_of_the_elements.up & maelstrom < 50",
-								["action"] = "chain_lightning",
-							}, -- [11]
-							{
-								["enabled"] = true,
-								["criteria"] = "runeforge.echoes_of_great_sundering.equipped & ! buff.echoes_of_great_sundering.up",
-								["action"] = "earth_shock",
-							}, -- [12]
-							{
-								["enabled"] = true,
-								["criteria"] = "dot.flame_shock.remains & spell_targets.chain_lightning < 4 & ( ! pet.storm_elemental.active ) & ( buff.lava_surge.up & ! buff.master_of_the_elements.up & talent.master_of_the_elements.enabled )",
-								["action"] = "lava_burst",
-							}, -- [13]
-							{
-								["enabled"] = true,
-								["criteria"] = "spell_targets.chain_lightning >= 2 & ! runeforge.echoes_of_great_sundering.equipped & ( talent.master_of_the_elements.enabled & maelstrom >= 50 & ! buff.master_of_the_elements.up )",
-								["action"] = "earthquake",
-							}, -- [14]
-							{
-								["enabled"] = true,
-								["criteria"] = "covenant.necrolord & runeforge.echoes_of_great_sundering.equipped & set_bonus.tier28_4pc & buff.lava_surge.up & ! buff.primordial_wave.up",
-								["action"] = "lava_burst",
-								["cycle_targets"] = 1,
-							}, -- [15]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.lava_surge.up & buff.primordial_wave.up & ( buff.primordial_wave.remains < 3 * gcd || active_dot.flame_shock = spell_targets.chain_lightning || active_dot.flame_shock = 3 & ! runeforge.echoes_of_great_sundering.equipped || active_dot.flame_shock = 4 )",
-								["action"] = "lava_burst",
-								["cycle_targets"] = 1,
-							}, -- [16]
-							{
-								["enabled"] = true,
-								["criteria"] = "dot.flame_shock.remains & spell_targets.chain_lightning < 4 & runeforge.skybreakers_fiery_demise.equipped & buff.lava_surge.up & talent.master_of_the_elements.enabled & ! buff.master_of_the_elements.up & maelstrom >= 50",
-								["action"] = "lava_burst",
-							}, -- [17]
-							{
-								["enabled"] = true,
-								["criteria"] = "dot.flame_shock.remains & ( ( spell_targets.chain_lightning < 4 & runeforge.skybreakers_fiery_demise.equipped & talent.master_of_the_elements.enabled ) || ( talent.master_of_the_elements.enabled & maelstrom >= 50 & ! buff.master_of_the_elements.up & ( ! runeforge.echoes_of_great_sundering.equipped || buff.echoes_of_great_sundering.up ) & ! runeforge.skybreakers_fiery_demise.equipped ) )",
-								["action"] = "lava_burst",
-							}, -- [18]
-							{
-								["enabled"] = true,
-								["criteria"] = "dot.flame_shock.remains & spell_targets.chain_lightning = 4 & runeforge.skybreakers_fiery_demise.equipped & buff.lava_surge.up & talent.master_of_the_elements.enabled & ! buff.master_of_the_elements.up & maelstrom >= 50",
-								["action"] = "lava_burst",
-							}, -- [19]
-							{
-								["enabled"] = true,
-								["criteria"] = "spell_targets.chain_lightning >= 2",
-								["action"] = "earthquake",
-							}, -- [20]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.stormkeeper.remains < 3 * gcd * buff.stormkeeper.stack",
-								["action"] = "chain_lightning",
-							}, -- [21]
-							{
-								["enabled"] = true,
-								["criteria"] = "set_bonus.tier28_4pc & buff.lava_surge.up & ! buff.primordial_wave.up",
-								["action"] = "lava_burst",
-								["cycle_targets"] = 1,
-							}, -- [22]
-							{
-								["enabled"] = true,
-								["criteria"] = "set_bonus.tier28_4pc & buff.lava_surge.up & ! buff.primordial_wave.up",
-								["action"] = "lava_burst",
-							}, -- [23]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.lava_surge.up & spell_targets.chain_lightning < 4 & ( ! pet.storm_elemental.active ) & dot.flame_shock.ticking",
-								["action"] = "lava_burst",
-							}, -- [24]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.elemental_blast.enabled & spell_targets.chain_lightning < 5 & ( ! pet.storm_elemental.active )",
-								["action"] = "elemental_blast",
-							}, -- [25]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.ascendance.enabled",
-								["action"] = "lava_beam",
-							}, -- [26]
-							{
-								["action"] = "chain_lightning",
-								["enabled"] = true,
-							}, -- [27]
-							{
-								["enabled"] = true,
-								["enable_moving"] = true,
-								["action"] = "lava_burst",
-								["moving"] = 1,
-								["criteria"] = "buff.lava_surge.up & cooldown_react",
-							}, -- [28]
-							{
-								["moving"] = 1,
-								["enable_moving"] = true,
-								["action"] = "flame_shock",
-								["cycle_targets"] = 1,
-								["enabled"] = true,
-								["criteria"] = "refreshable",
-							}, -- [29]
-							{
-								["moving"] = 1,
-								["enable_moving"] = true,
-								["action"] = "frost_shock",
-								["enabled"] = true,
-							}, -- [30]
-						},
-						["se_single_target"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "! pet.storm_elemental.active",
-								["action"] = "storm_elemental",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.surge_of_power.up",
-								["action"] = "lightning_bolt",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "covenant.necrolord & ! buff.primordial_wave.up & ! buff.splintered_elements.up",
-								["action"] = "primordial_wave",
-								["cycle_targets"] = 1,
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.call_lightning.remains >= 10",
-								["action"] = "eye_of_the_storm",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.icefury.enabled & buff.icefury.up & buff.icefury.remains < settings.stack_buffer * gcd * buff.icefury.stack & buff.wind_gust.stack < 18",
-								["action"] = "frost_shock",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "refreshable",
-								["action"] = "flame_shock",
-								["cycle_targets"] = 1,
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.icefury.enabled & buff.icefury.up & buff.icefury.remains < 1.1 * gcd * buff.icefury.stack",
-								["action"] = "frost_shock",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.elemental_blast.enabled",
-								["action"] = "elemental_blast",
-							}, -- [8]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.stormkeeper.enabled",
-								["action"] = "stormkeeper",
-							}, -- [9]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.echoing_shock.enabled & cooldown.lava_burst.remains <= gcd & spell_targets.chain_lightning < 2 || maelstrom >= 60 & spell_targets.chain_lightning >= 2 & ( ! runeforge.echoes_of_great_sundering.equipped || buff.echoes_of_great_sundering.up )",
-								["action"] = "echoing_shock",
-							}, -- [10]
-							{
-								["enabled"] = true,
-								["criteria"] = "( buff.wind_gust.stack < 18 & ! buff.bloodlust.up ) || buff.lava_surge.up",
-								["action"] = "lava_burst",
-							}, -- [11]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.echoing_shock.enabled & buff.echoing_shock.up & spell_targets.chain_lightning < 2",
-								["action"] = "lava_burst",
-							}, -- [12]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.echoing_shock.enabled & buff.echoing_shock.up & spell_targets.chain_lightning >= 2",
-								["action"] = "earthquake",
-							}, -- [13]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.stormkeeper.up",
-								["action"] = "lightning_bolt",
-							}, -- [14]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.echoes_of_great_sundering.up",
-								["action"] = "earthquake",
-							}, -- [15]
-							{
-								["enabled"] = true,
-								["criteria"] = "spell_targets.chain_lightning < 2 & maelstrom >= 60 & ( buff.wind_gust.stack < 20 || maelstrom > 90 ) || ( runeforge.echoes_of_great_sundering.equipped & ! buff.echoes_of_great_sundering.up ) || runeforge.windspeakers_lava_resurgence.equipped",
-								["action"] = "earth_shock",
-							}, -- [16]
-							{
-								["enabled"] = true,
-								["criteria"] = "( spell_targets.chain_lightning > 1 ) & ( ! dot.flame_shock.refreshable )",
-								["action"] = "earthquake",
-							}, -- [17]
-							{
-								["enabled"] = true,
-								["criteria"] = "pet.storm_elemental.active & buff.bloodlust.up",
-								["action"] = "lightning_bolt",
-							}, -- [18]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.ascendance.up",
-								["action"] = "lava_burst",
-							}, -- [19]
-							{
-								["enabled"] = true,
-								["criteria"] = "cooldown_react",
-								["action"] = "lava_burst",
-							}, -- [20]
-							{
-								["enabled"] = true,
-								["criteria"] = "cooldown_react & charges > talent.echo_of_the_elements.enabled",
-								["action"] = "lava_burst",
-							}, -- [21]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.icefury.enabled & buff.icefury.up",
-								["action"] = "frost_shock",
-							}, -- [22]
-							{
-								["action"] = "chain_harvest",
-								["enabled"] = true,
-							}, -- [23]
-							{
-								["enabled"] = true,
-								["criteria"] = "soulbind.volatile_solvent.enabled & ! buff.volatile_solvent_humanoid.up",
-								["interrupt_if"] = "soulbind.volatile_solvent",
-								["interrupt_immediate"] = "1",
-								["action"] = "fleshcraft",
-								["interrupt_global"] = "1",
-							}, -- [24]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.static_discharge.enabled",
-								["action"] = "static_discharge",
-							}, -- [25]
-							{
-								["enabled"] = true,
-								["criteria"] = "! talent.primal_elementalist.enabled || talent.primal_elementalist.enabled & ( ! pet.storm_elemental.active )",
-								["action"] = "earth_elemental",
-							}, -- [26]
-							{
-								["enabled"] = true,
-								["criteria"] = "active_enemies > 1 & ( spell_targets.chain_lightning > 1 || spell_targets.lava_beam > 1 )",
-								["action"] = "chain_lightning",
-							}, -- [27]
-							{
-								["action"] = "lightning_bolt",
-								["enabled"] = true,
-							}, -- [28]
-							{
-								["action"] = "bag_of_tricks",
-								["enabled"] = true,
-							}, -- [29]
-							{
-								["moving"] = 1,
-								["enable_moving"] = true,
-								["action"] = "flame_shock",
-								["cycle_targets"] = 1,
-								["enabled"] = true,
-								["criteria"] = "refreshable",
-							}, -- [30]
-							{
-								["enabled"] = true,
-								["enable_moving"] = true,
-								["action"] = "flame_shock",
-								["moving"] = 1,
-								["criteria"] = "movement.distance > 6",
-							}, -- [31]
-							{
-								["moving"] = 1,
-								["enable_moving"] = true,
-								["action"] = "frost_shock",
-								["enabled"] = true,
-							}, -- [32]
-						},
-					},
-					["author"] = "SimulationCraft",
-				},
-			},
-		},
 		["Jingojaggot - Zul'jin"] = {
 			["runOnce"] = {
 				["autoconvertDisplayToggle_20190621_1"] = true,
@@ -7804,81 +6473,81 @@ HekiliDB = {
 							}, -- [11]
 							{
 								["enabled"] = true,
-								["criteria"] = "( essence.vision_of_perfection.enabled & ! talent.unholy_frenzy.enabled ) || ( ! essence.condensed_lifeforce.major & ! essence.vision_of_perfection.enabled )",
 								["name"] = "azsharas_font_of_power",
 								["action"] = "azsharas_font_of_power",
+								["criteria"] = "( essence.vision_of_perfection.enabled & ! talent.unholy_frenzy.enabled ) || ( ! essence.condensed_lifeforce.major & ! essence.vision_of_perfection.enabled )",
 							}, -- [12]
 							{
 								["enabled"] = true,
-								["criteria"] = "cooldown.apocalypse.remains < 14 & ( essence.condensed_lifeforce.major || essence.vision_of_perfection.enabled & talent.unholy_frenzy.enabled )",
 								["name"] = "azsharas_font_of_power",
 								["action"] = "azsharas_font_of_power",
+								["criteria"] = "cooldown.apocalypse.remains < 14 & ( essence.condensed_lifeforce.major || essence.vision_of_perfection.enabled & talent.unholy_frenzy.enabled )",
 							}, -- [13]
 							{
 								["enabled"] = true,
-								["criteria"] = "time_to_die < cooldown.apocalypse.remains + 34",
 								["name"] = "azsharas_font_of_power",
 								["action"] = "azsharas_font_of_power",
+								["criteria"] = "time_to_die < cooldown.apocalypse.remains + 34",
 							}, -- [14]
 							{
 								["enabled"] = true,
-								["criteria"] = "debuff.razor_coral_debuff.stack < 1",
 								["name"] = "ashvanes_razor_coral",
 								["action"] = "ashvanes_razor_coral",
+								["criteria"] = "debuff.razor_coral_debuff.stack < 1",
 							}, -- [15]
 							{
 								["enabled"] = true,
-								["criteria"] = "pet.guardian_of_azeroth.active & pet.apoc_ghoul.active",
 								["name"] = "ashvanes_razor_coral",
 								["action"] = "ashvanes_razor_coral",
+								["criteria"] = "pet.guardian_of_azeroth.active & pet.apoc_ghoul.active",
 							}, -- [16]
 							{
 								["enabled"] = true,
-								["criteria"] = "cooldown.apocalypse.ready & ( essence.condensed_lifeforce.major & time_to_die < cooldown.condensed_lifeforce.remains + 20 || ! essence.condensed_lifeforce.major )",
 								["name"] = "ashvanes_razor_coral",
 								["action"] = "ashvanes_razor_coral",
+								["criteria"] = "cooldown.apocalypse.ready & ( essence.condensed_lifeforce.major & time_to_die < cooldown.condensed_lifeforce.remains + 20 || ! essence.condensed_lifeforce.major )",
 							}, -- [17]
 							{
 								["enabled"] = true,
-								["criteria"] = "time_to_die < cooldown.apocalypse.remains + 20",
 								["name"] = "ashvanes_razor_coral",
 								["action"] = "ashvanes_razor_coral",
+								["criteria"] = "time_to_die < cooldown.apocalypse.remains + 20",
 							}, -- [18]
 							{
 								["enabled"] = true,
-								["criteria"] = "( cooldown.apocalypse.ready & debuff.festering_wound.stack >= 4 & essence.vision_of_perfection.enabled ) || buff.unholy_frenzy.up || pet.gargoyle.active",
 								["name"] = "vision_of_demise",
 								["action"] = "vision_of_demise",
+								["criteria"] = "( cooldown.apocalypse.ready & debuff.festering_wound.stack >= 4 & essence.vision_of_perfection.enabled ) || buff.unholy_frenzy.up || pet.gargoyle.active",
 							}, -- [19]
 							{
 								["enabled"] = true,
-								["criteria"] = "cooldown.apocalypse.remains < 2 || talent.army_of_the_damned.enabled || raid_event.adds.in < 5",
 								["name"] = "ramping_amplitude_gigavolt_engine",
 								["action"] = "ramping_amplitude_gigavolt_engine",
+								["criteria"] = "cooldown.apocalypse.remains < 2 || talent.army_of_the_damned.enabled || raid_event.adds.in < 5",
 							}, -- [20]
 							{
 								["enabled"] = true,
-								["criteria"] = "cooldown.summon_gargoyle.remains > 60 || ! talent.summon_gargoyle.enabled & time > 20 || ! equipped.ramping_amplitude_gigavolt_engine",
 								["name"] = "bygone_bee_almanac",
 								["action"] = "bygone_bee_almanac",
+								["criteria"] = "cooldown.summon_gargoyle.remains > 60 || ! talent.summon_gargoyle.enabled & time > 20 || ! equipped.ramping_amplitude_gigavolt_engine",
 							}, -- [21]
 							{
 								["enabled"] = true,
-								["criteria"] = "pet.gargoyle.active || ! talent.summon_gargoyle.enabled & time > 20 || ! equipped.ramping_amplitude_gigavolt_engine",
 								["name"] = "jes_howler",
 								["action"] = "jes_howler",
+								["criteria"] = "pet.gargoyle.active || ! talent.summon_gargoyle.enabled & time > 20 || ! equipped.ramping_amplitude_gigavolt_engine",
 							}, -- [22]
 							{
 								["enabled"] = true,
-								["criteria"] = "pet.gargoyle.active || ! talent.summon_gargoyle.enabled & time > 20 || ! equipped.ramping_amplitude_gigavolt_engine",
 								["name"] = "galecallers_beak",
 								["action"] = "galecallers_beak",
+								["criteria"] = "pet.gargoyle.active || ! talent.summon_gargoyle.enabled & time > 20 || ! equipped.ramping_amplitude_gigavolt_engine",
 							}, -- [23]
 							{
 								["enabled"] = true,
-								["criteria"] = "rune <= 3 & ( time > 20 || ! equipped.ramping_amplitude_gigavolt_engine )",
 								["name"] = "grongs_primal_rage",
 								["action"] = "grongs_primal_rage",
+								["criteria"] = "rune <= 3 & ( time > 20 || ! equipped.ramping_amplitude_gigavolt_engine )",
 							}, -- [24]
 							{
 								["enabled"] = true,
@@ -8460,21 +7129,21 @@ HekiliDB = {
 						["cooldowns"] = {
 							{
 								["enabled"] = true,
-								["criteria"] = "( cooldown.empower_rune_weapon.ready & ! variable.other_on_use_equipped ) || ( cooldown.pillar_of_frost.remains <= 10 & variable.other_on_use_equipped )",
 								["name"] = "azsharas_font_of_power",
 								["action"] = "azsharas_font_of_power",
+								["criteria"] = "( cooldown.empower_rune_weapon.ready & ! variable.other_on_use_equipped ) || ( cooldown.pillar_of_frost.remains <= 10 & variable.other_on_use_equipped )",
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["criteria"] = "talent.breath_of_sindragosa.enabled & ( ( cooldown.pillar_of_frost.remains <= 10 & variable.other_on_use_equipped ) || ( buff.pillar_of_frost.up & ! variable.other_on_use_equipped ) ) || ( buff.pillar_of_frost.up & ! talent.breath_of_sindragosa.enabled )",
 								["name"] = "lurkers_insidious_gift",
 								["action"] = "lurkers_insidious_gift",
+								["criteria"] = "talent.breath_of_sindragosa.enabled & ( ( cooldown.pillar_of_frost.remains <= 10 & variable.other_on_use_equipped ) || ( buff.pillar_of_frost.up & ! variable.other_on_use_equipped ) ) || ( buff.pillar_of_frost.up & ! talent.breath_of_sindragosa.enabled )",
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["criteria"] = "! buff.pillar_of_frost.up",
 								["name"] = "cyclotronic_blast",
 								["action"] = "cyclotronic_blast",
+								["criteria"] = "! buff.pillar_of_frost.up",
 							}, -- [3]
 							{
 								["enabled"] = true,
@@ -8483,33 +7152,33 @@ HekiliDB = {
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["criteria"] = "debuff.razor_coral_debuff.down",
 								["name"] = "ashvanes_razor_coral",
 								["action"] = "ashvanes_razor_coral",
+								["criteria"] = "debuff.razor_coral_debuff.down",
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["criteria"] = "cooldown.empower_rune_weapon.remains > 90 & debuff.razor_coral_debuff.up & variable.other_on_use_equipped || buff.breath_of_sindragosa.up & debuff.razor_coral_debuff.up & ! variable.other_on_use_equipped || buff.empower_rune_weapon.up & debuff.razor_coral_debuff.up & ! talent.breath_of_sindragosa.enabled || time_to_die < 21",
 								["name"] = "ashvanes_razor_coral",
 								["action"] = "ashvanes_razor_coral",
+								["criteria"] = "cooldown.empower_rune_weapon.remains > 90 & debuff.razor_coral_debuff.up & variable.other_on_use_equipped || buff.breath_of_sindragosa.up & debuff.razor_coral_debuff.up & ! variable.other_on_use_equipped || buff.empower_rune_weapon.up & debuff.razor_coral_debuff.up & ! talent.breath_of_sindragosa.enabled || time_to_die < 21",
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["criteria"] = "( equipped.lurkers_insidious_gift & buff.pillar_of_frost.remains ) || ( ! equipped.lurkers_insidious_gift & buff.pillar_of_frost.remains < 12 & buff.pillar_of_frost.up )",
 								["name"] = "jes_howler",
 								["action"] = "jes_howler",
+								["criteria"] = "( equipped.lurkers_insidious_gift & buff.pillar_of_frost.remains ) || ( ! equipped.lurkers_insidious_gift & buff.pillar_of_frost.remains < 12 & buff.pillar_of_frost.up )",
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["criteria"] = "cooldown.empower_rune_weapon.remains > 40",
 								["name"] = "knot_of_ancient_fury",
 								["action"] = "knot_of_ancient_fury",
+								["criteria"] = "cooldown.empower_rune_weapon.remains > 40",
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["criteria"] = "rune <= 3 & ! buff.pillar_of_frost.up & ( ! buff.breath_of_sindragosa.up || ! talent.breath_of_sindragosa.enabled )",
 								["name"] = "grongs_primal_rage",
 								["action"] = "grongs_primal_rage",
+								["criteria"] = "rune <= 3 & ! buff.pillar_of_frost.up & ( ! buff.breath_of_sindragosa.up || ! talent.breath_of_sindragosa.enabled )",
 							}, -- [9]
 							{
 								["enabled"] = true,
@@ -8518,9 +7187,9 @@ HekiliDB = {
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["criteria"] = "! buff.breath_of_sindragosa.up & ! buff.pillar_of_frost.up",
 								["name"] = "merekthas_fang",
 								["action"] = "merekthas_fang",
+								["criteria"] = "! buff.breath_of_sindragosa.up & ! buff.pillar_of_frost.up",
 							}, -- [11]
 							{
 								["enabled"] = true,
@@ -8900,39 +7569,39 @@ HekiliDB = {
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["criteria"] = "cooldown.dancing_rune_weapon.remains & ! buff.dancing_rune_weapon.up & rune.time_to_4 > cast_time",
 								["name"] = "cyclotronic_blast",
 								["action"] = "cyclotronic_blast",
+								["criteria"] = "cooldown.dancing_rune_weapon.remains & ! buff.dancing_rune_weapon.up & rune.time_to_4 > cast_time",
 							}, -- [11]
 							{
 								["enabled"] = true,
-								["criteria"] = "( cooldown.dancing_rune_weapon.remains < 5 & target.time_to_die > 15 ) || ( time_to_die < 34 )",
 								["name"] = "azsharas_font_of_power",
 								["action"] = "azsharas_font_of_power",
+								["criteria"] = "( cooldown.dancing_rune_weapon.remains < 5 & target.time_to_die > 15 ) || ( time_to_die < 34 )",
 							}, -- [12]
 							{
 								["enabled"] = true,
-								["criteria"] = "( cooldown.dancing_rune_weapon.remains & ! buff.dancing_rune_weapon.up & rune.time_to_4 > 3 )",
 								["name"] = "merekthas_fang",
 								["action"] = "merekthas_fang",
+								["criteria"] = "( cooldown.dancing_rune_weapon.remains & ! buff.dancing_rune_weapon.up & rune.time_to_4 > 3 )",
 							}, -- [13]
 							{
 								["enabled"] = true,
-								["criteria"] = "debuff.razor_coral_debuff.down",
 								["name"] = "ashvanes_razor_coral",
 								["action"] = "ashvanes_razor_coral",
+								["criteria"] = "debuff.razor_coral_debuff.down",
 							}, -- [14]
 							{
 								["enabled"] = true,
-								["criteria"] = "target.health.pct < 31 & equipped.dribbling_inkpod",
 								["name"] = "ashvanes_razor_coral",
 								["action"] = "ashvanes_razor_coral",
+								["criteria"] = "target.health.pct < 31 & equipped.dribbling_inkpod",
 							}, -- [15]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.dancing_rune_weapon.up & debuff.razor_coral_debuff.up & ! equipped.dribbling_inkpod",
 								["name"] = "ashvanes_razor_coral",
 								["action"] = "ashvanes_razor_coral",
+								["criteria"] = "buff.dancing_rune_weapon.up & debuff.razor_coral_debuff.up & ! equipped.dribbling_inkpod",
 							}, -- [16]
 							{
 								["enabled"] = true,
@@ -9108,6 +7777,1446 @@ HekiliDB = {
 				},
 			},
 		},
+		["Shimzo - Zul'jin"] = {
+			["runOnce"] = {
+				["resetPotionsToDefaults_20190717"] = true,
+				["autoconvertDisplayToggle_20190621_1"] = true,
+				["enableAllOfTheThings_20180820"] = true,
+				["autoconvertDelaySweepToExtend_20190729"] = true,
+				["resetRogueMfDOption_20200226"] = true,
+				["autoconvertGlowsForCustomGlow_20190326"] = true,
+				["resetAberrantPackageDates_20190728_1"] = true,
+			},
+			["specs"] = {
+				[260] = {
+					["maxRefresh"] = 10,
+					["custom2Name"] = "Custom 2",
+					["throttleRefresh"] = false,
+					["settings"] = {
+						["mfd_waste"] = true,
+					},
+					["aoe"] = 3,
+					["gcdSync"] = true,
+					["damageDots"] = false,
+					["damage"] = true,
+					["enabled"] = true,
+					["debuffPadding"] = 0,
+					["maxTime"] = 33,
+					["custom1Name"] = "Custom 1",
+					["package"] = "Outlaw",
+					["buffPadding"] = 0,
+					["nameplateRange"] = 8,
+					["cycle_min"] = 6,
+					["cycle"] = false,
+					["potion"] = "potion_of_unbridled_fury",
+					["nameplates"] = true,
+					["potionsReset"] = 20180919.1,
+					["damageExpiration"] = 6,
+					["throttleTime"] = false,
+					["damageRange"] = 0,
+				},
+				[261] = {
+					["maxRefresh"] = 10,
+					["custom2Name"] = "Custom 2",
+					["throttleRefresh"] = false,
+					["settings"] = {
+						["mfd_waste"] = true,
+					},
+					["aoe"] = 2,
+					["gcdSync"] = true,
+					["damageDots"] = false,
+					["damage"] = true,
+					["enabled"] = true,
+					["debuffPadding"] = 0,
+					["maxTime"] = 33,
+					["custom1Name"] = "Custom 1",
+					["package"] = "Subtlety",
+					["buffPadding"] = 0,
+					["nameplateRange"] = 8,
+					["cycle_min"] = 6,
+					["cycle"] = false,
+					["potion"] = "potion_of_unbridled_fury",
+					["nameplates"] = true,
+					["potionsReset"] = 20180919.1,
+					["damageExpiration"] = 6,
+					["throttleTime"] = false,
+					["damageRange"] = 0,
+				},
+				[259] = {
+					["maxRefresh"] = 10,
+					["custom2Name"] = "Custom 2",
+					["throttleRefresh"] = false,
+					["settings"] = {
+						["mfd_waste"] = true,
+						["priority_rotation"] = false,
+						["envenom_pool_pct"] = 50,
+					},
+					["aoe"] = 3,
+					["gcdSync"] = true,
+					["damageDots"] = false,
+					["damage"] = true,
+					["enabled"] = true,
+					["debuffPadding"] = 0,
+					["maxTime"] = 33,
+					["custom1Name"] = "Custom 1",
+					["package"] = "Assassination",
+					["buffPadding"] = 0,
+					["nameplateRange"] = 8,
+					["cycle_min"] = 6,
+					["cycle"] = false,
+					["potion"] = "potion_of_unbridled_fury",
+					["nameplates"] = true,
+					["potionsReset"] = 20180919.1,
+					["damageExpiration"] = 6,
+					["throttleTime"] = false,
+					["damageRange"] = 0,
+				},
+			},
+			["displays"] = {
+				["Interrupts"] = {
+				},
+			},
+			["packs"] = {
+				["Outlaw"] = {
+					["source"] = "https://github.com/simulationcraft/simc/",
+					["builtIn"] = true,
+					["date"] = 20200410,
+					["spec"] = 260,
+					["desc"] = "# Outlaw Rogue\n# https://github.com/simulationcraft/simc/\n# April 10, 2020\n\n# Changes:\n# - Added Kick to default action list.\n# - Added precombat Blade Flurry (doesn't break Stealth).\n# - Don't use trinkets in stealth.\n# - Don't use min:X for Marked for Death (it's not supported).\n# - Avoid rerolling RtB during Blade Flurry (unless we only have 1 target).\n# - Relax Killing Spree.\n# - Use time_to_die for encounter ending rather than target.time_to_die.\n# - Use RtB reroll logic and SnD refresh logic in the precombat action list.",
+					["profile"] = "# Outlaw Rogue\n# https://github.com/simulationcraft/simc/\n# April 10, 2020\n\n# Changes:\n# - Added Kick to default action list.\n# - Added precombat Blade Flurry (doesn't break Stealth).\n# - Don't use trinkets in stealth.\n# - Don't use min:X for Marked for Death (it's not supported).\n# - Avoid rerolling RtB during Blade Flurry (unless we only have 1 target).\n# - Relax Killing Spree.\n# - Use time_to_die for encounter ending rather than target.time_to_die.\n# - Use RtB reroll logic and SnD refresh logic in the precombat action list.\n\n# Executed before combat begins. Accepts non-harmful actions only.\n# actions.precombat=flask\n# actions.precombat+=/augmentation\n# actions.precombat+=/food\n# Snapshot raid buffed stats before combat begins and pre-potting is done.\n# actions.precombat+=/snapshot_stats\nactions.precombat+=/marked_for_death,precombat_seconds=5,if=raid_event.adds.in>40\nactions.precombat+=/stealth,if=(!equipped.pocketsized_computation_device||!cooldown.cyclotronic_blast.duration||raid_event.invulnerable.exists)\n# Reroll for 2+ or Grand Melee or Ruthless Precision.\nactions+=/variable,name=rtb_reroll,value=rtb_buffs<2&!buff.grand_melee.up&!buff.ruthless_precision.up\n# Reroll for 2+ buffs or Broadside with Deadshot.\nactions+=/variable,name=rtb_reroll,op=set,if=azerite.deadshot.enabled,value=rtb_buffs<2&(buff.loaded_dice.up||!buff.broadside.up)\n# Reroll for 2+ buffs or Ruthless Precision with Ace up your Sleeve, unless there are more Deadshot ranks.\nactions+=/variable,name=rtb_reroll,op=set,if=azerite.ace_up_your_sleeve.enabled&azerite.ace_up_your_sleeve.rank>=azerite.deadshot.rank,value=rtb_buffs<2&(buff.loaded_dice.up||buff.ruthless_precision.remains<=cooldown.between_the_eyes.remains)\n# 2+ Snake Eyes: Always reroll for 2+ buffs.\nactions+=/variable,name=rtb_reroll,op=set,if=azerite.snake_eyes.rank>=2,value=rtb_buffs<2\n# 2+ Snake Eyes: Do not reroll with 2+ stacks of the Snake Eyes buff (1+ stack with Broadside up).\nactions+=/variable,name=rtb_reroll,op=reset,if=azerite.snake_eyes.rank>=2&buff.snake_eyes.stack>=2-buff.broadside.up\n# With Blade Flurry up, ignore rules above and take everything that is 2+ (not counting SaC) or single BS, GM, RP\nactions+=/variable,name=rtb_reroll,op=set,if=buff.blade_flurry.up,value=rtb_buffs-buff.skull_and_crossbones.up<2&(buff.loaded_dice.up||!buff.grand_melee.up&!buff.ruthless_precision.up&!buff.broadside.up)\n# With Loaded Dice up, reroll any single buff, any 2 buff with Buried Treasure, or in pandemic.\nactions+=/variable,name=rtb_reroll,op=set,if=buff.loaded_dice.up,value=(rtb_buffs-buff.buried_treasure.up)<2||buff.roll_the_bones.remains<10.8+(1.8*talent.deeper_stratagem.enabled)\nactions.precombat+=/roll_the_bones,precombat_seconds=2,if=buff.roll_the_bones.remains<=3||variable.rtb_reroll\nactions.precombat+=/slice_and_dice,precombat_seconds=2,if=buff.slice_and_dice.remains<time_to_die&buff.slice_and_dice.remains<(1+combo_points)*1.8\nactions.precombat+=/adrenaline_rush,precombat_seconds=1,if=(!equipped.pocketsized_computation_device||!cooldown.cyclotronic_blast.duration||raid_event.invulnerable.exists)\nactions.precombat+=/use_item,name=azsharas_font_of_power\nactions.precombat+=/use_item,effect_name=cyclotronic_blast,if=!raid_event.invulnerable.exists\nactions.precombat+=/potion\n\n# Executed every time the actor is available.\n# Restealth if possible (no vulnerable enemies in combat)\nactions=kick,if=!stealthed.rogue\nactions=stealth\nactions+=/variable,name=ambush_condition,value=combo_points.deficit>=2+2*(talent.ghostly_strike.enabled&cooldown.ghostly_strike.remains<1)+buff.broadside.up&energy>60&!buff.skull_and_crossbones.up&!buff.keep_your_wits_about_you.up\nactions+=/variable,name=bte_condition,value=buff.ruthless_precision.up||(azerite.deadshot.enabled||azerite.ace_up_your_sleeve.enabled)&buff.roll_the_bones.up\n# With multiple targets, this variable is checked to decide whether some CDs should be synced with Blade Flurry\nactions+=/variable,name=blade_flurry_sync,value=spell_targets.blade_flurry<2&raid_event.adds.in>20||buff.blade_flurry.up\nactions+=/call_action_list,name=stealth,if=stealthed.all\nactions+=/call_action_list,name=cds\n# Finish at maximum CP. Substract one for each Broadside and Opportunity when Quick Draw is selected and MfD is not ready after the next second. Always max BtE with 2+ Ace.\nactions+=/run_action_list,name=finish,if=combo_points>=cp_max_spend-(buff.broadside.up+buff.opportunity.up)*(talent.quick_draw.enabled&(!talent.marked_for_death.enabled||cooldown.marked_for_death.remains>1))*(azerite.ace_up_your_sleeve.rank<2||!cooldown.between_the_eyes.up||!buff.roll_the_bones.up)\nactions+=/call_action_list,name=build\nactions+=/arcane_torrent,if=energy.deficit>=15+energy.regen\nactions+=/arcane_pulse\nactions+=/lights_judgment\nactions+=/bag_of_tricks\n\n# Builders\n# Use Pistol Shot if it won't cap combo points and the Opportunity buff is up. Avoid using when Keep Your Wits stacks are high or when using Weaponmaster, unless the Deadshot buff is up.\nactions.build=pistol_shot,if=(talent.quick_draw.enabled||azerite.keep_your_wits_about_you.rank<2)&buff.opportunity.up&(buff.keep_your_wits_about_you.stack<14||energy<45)\nactions.build+=/pistol_shot,if=buff.opportunity.up&buff.deadshot.up\nactions.build+=/sinister_strike\n\n# Cooldowns\nactions.cds=call_action_list,name=essences,if=!stealthed.all\nactions.cds+=/adrenaline_rush,if=!buff.adrenaline_rush.up&(!equipped.azsharas_font_of_power||cooldown.latent_arcana.remains>20)\n# If adds are up, snipe the one with lowest TTD. Use when dying faster than CP deficit or without any CP.\nactions.cds+=/marked_for_death,cycle_targets=1,if=raid_event.adds.up&(target.time_to_die<combo_points.deficit||!stealthed.rogue&combo_points.deficit>=cp_max_spend-1)\n# If no adds will die within the next 30s, use MfD on boss without any CP.\nactions.cds+=/marked_for_death,if=raid_event.adds.in>30-raid_event.adds.duration&!stealthed.rogue&combo_points.deficit>=cp_max_spend-1\n# Blade Flurry on 2+ enemies. With adds: Use if they stay for 8+ seconds or if your next charge will be ready in time for the next wave.\nactions.cds+=/blade_flurry,if=spell_targets>=2&!buff.blade_flurry.up&(!raid_event.adds.exists||raid_event.adds.remains>8||raid_event.adds.in>(2-cooldown.blade_flurry.charges_fractional)*25)\nactions.cds+=/ghostly_strike,if=combo_points.deficit>=1+buff.broadside.up\nactions.cds+=/killing_spree,if=variable.blade_flurry_sync&spell_targets.blade_flurry>1&energy.time_to_max>2\nactions.cds+=/blade_rush,if=variable.blade_flurry_sync&energy.time_to_max>2\n# Using Vanish/Ambush is only a very tiny increase, so in reality, you're absolutely fine to use it as a utility spell.\nactions.cds+=/vanish,if=!stealthed.all&variable.ambush_condition\nactions.cds+=/shadowmeld,if=!stealthed.all&variable.ambush_condition\nactions.cds+=/potion,if=buff.bloodlust.react||buff.adrenaline_rush.up\n# Falling back to default item usage\nactions.cds+=/use_item,name=variable_intensity_gigavolt_oscillating_reactor,if=buff.bloodlust.react||time_to_die<=20||combo_points.deficit<=2\nactions.cds+=/use_items,if=buff.bloodlust.react||time_to_die<=20||combo_points.deficit<=2\nactions.cds+=/blood_fury\nactions.cds+=/berserking\nactions.cds+=/fireblood\nactions.cds+=/ancestral_call\nactions.cds+=/use_item,effect_name=cyclotronic_blast,if=!stealthed.all&buff.adrenaline_rush.down&buff.memory_of_lucid_dreams.down&energy.time_to_max>4&rtb_buffs<5\nactions.cds+=/use_item,name=azsharas_font_of_power,if=!buff.adrenaline_rush.up&!buff.blade_flurry.up&cooldown.adrenaline_rush.remains<15\n# Very roughly rule of thumbified maths below: Use for Inkpod crit, otherwise with AR at 20+ stacks or 10+ with also Blood up.\nactions.cds+=/use_item,name=ashvanes_razor_coral,if=debuff.razor_coral_debuff.down||debuff.conductive_ink_debuff.up&target.health.pct<32&target.health.pct>=30||!debuff.conductive_ink_debuff.up&(debuff.razor_coral_debuff.stack>=20-10*debuff.blood_of_the_enemy.up||target.time_to_die<60)&buff.adrenaline_rush.remains>18\n# Default fallback for usable items.\nactions.cds+=/use_items,if=buff.bloodlust.react||time_to_die<=20||combo_points.deficit<=2\n\n# Essences\nactions.essences=concentrated_flame,if=energy.time_to_max>1&!buff.blade_flurry.up&(!dot.concentrated_flame_burn.ticking&!action.concentrated_flame.in_flight||full_recharge_time<gcd.max)\nactions.essences+=/blood_of_the_enemy,if=variable.blade_flurry_sync&cooldown.between_the_eyes.up&variable.bte_condition&(spell_targets.blade_flurry>=2||raid_event.adds.in>45)\nactions.essences+=/guardian_of_azeroth\nactions.essences+=/focused_azerite_beam,if=spell_targets.blade_flurry>=2||raid_event.adds.in>60&!buff.adrenaline_rush.up\nactions.essences+=/purifying_blast,if=spell_targets.blade_flurry>=2||raid_event.adds.in>60\nactions.essences+=/the_unbound_force,if=buff.reckless_force.up||buff.reckless_force_counter.stack<10\nactions.essences+=/ripple_in_space\nactions.essences+=/worldvein_resonance\nactions.essences+=/memory_of_lucid_dreams,if=energy<45\n# Hold Reaping Flames for execute range or kill buffs, if possible. Always try to get the lowest cooldown based on available enemies.\nactions.essences+=/reaping_flames,cycle_targets=1,if=target.time_to_die<1.5||((target.health.pct>80||target.health.pct<=20)&(active_enemies=1||target.time_to_die>29))||(target.time_to_pct_20>30&(active_enemies=1||target.time_to_die>44))\n\n# Finishers\n# BtE over RtB rerolls with Deadshot/Ace traits or Ruthless Precision.\nactions.finish=between_the_eyes,if=variable.bte_condition\nactions.finish+=/slice_and_dice,if=buff.slice_and_dice.remains<time_to_die&buff.slice_and_dice.remains<(1+combo_points)*1.8\nactions.finish+=/roll_the_bones,if=buff.roll_the_bones.remains<=3||variable.rtb_reroll\n# BtE with the Ace Up Your Sleeve or Deadshot traits.\nactions.finish+=/between_the_eyes,if=azerite.ace_up_your_sleeve.enabled||azerite.deadshot.enabled\nactions.finish+=/dispatch\n\n# Stealth\nactions.stealth=cheap_shot,cycle_targets=1,if=talent.prey_on_the_weak.enabled&!target.is_boss\nactions.stealth+=/ambush",
+					["version"] = 20200410,
+					["warnings"] = "Imported 7 action lists.\n",
+					["author"] = "SimC",
+					["lists"] = {
+						["essences"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "energy.time_to_max > 1 & ! buff.blade_flurry.up & ( ! dot.concentrated_flame_burn.ticking & ! action.concentrated_flame.in_flight || full_recharge_time < gcd.max )",
+								["action"] = "concentrated_flame",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.blade_flurry_sync & cooldown.between_the_eyes.up & variable.bte_condition & ( spell_targets.blade_flurry >= 2 || raid_event.adds.in > 45 )",
+								["action"] = "blood_of_the_enemy",
+							}, -- [2]
+							{
+								["action"] = "guardian_of_azeroth",
+								["enabled"] = true,
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "spell_targets.blade_flurry >= 2 || raid_event.adds.in > 60 & ! buff.adrenaline_rush.up",
+								["action"] = "focused_azerite_beam",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "spell_targets.blade_flurry >= 2 || raid_event.adds.in > 60",
+								["action"] = "purifying_blast",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.reckless_force.up || buff.reckless_force_counter.stack < 10",
+								["action"] = "the_unbound_force",
+							}, -- [6]
+							{
+								["action"] = "ripple_in_space",
+								["enabled"] = true,
+							}, -- [7]
+							{
+								["action"] = "worldvein_resonance",
+								["enabled"] = true,
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["criteria"] = "energy < 45",
+								["action"] = "memory_of_lucid_dreams",
+							}, -- [9]
+							{
+								["enabled"] = true,
+								["criteria"] = "target.time_to_die < 1.5 || ( ( target.health.pct > 80 || target.health.pct <= 20 ) & ( active_enemies = 1 || target.time_to_die > 29 ) ) || ( target.time_to_pct_20 > 30 & ( active_enemies = 1 || target.time_to_die > 44 ) )",
+								["action"] = "reaping_flames",
+								["cycle_targets"] = 1,
+							}, -- [10]
+						},
+						["default"] = {
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "rtb_buffs < 2 & ! buff.grand_melee.up & ! buff.ruthless_precision.up",
+								["var_name"] = "rtb_reroll",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "rtb_buffs < 2 & ( buff.loaded_dice.up || ! buff.broadside.up )",
+								["var_name"] = "rtb_reroll",
+								["criteria"] = "azerite.deadshot.enabled",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "rtb_buffs < 2 & ( buff.loaded_dice.up || buff.ruthless_precision.remains <= cooldown.between_the_eyes.remains )",
+								["var_name"] = "rtb_reroll",
+								["criteria"] = "azerite.ace_up_your_sleeve.enabled & azerite.ace_up_your_sleeve.rank >= azerite.deadshot.rank",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "rtb_buffs < 2",
+								["var_name"] = "rtb_reroll",
+								["criteria"] = "azerite.snake_eyes.rank >= 2",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["op"] = "reset",
+								["action"] = "variable",
+								["var_name"] = "rtb_reroll",
+								["criteria"] = "azerite.snake_eyes.rank >= 2 & buff.snake_eyes.stack >= 2 - buff.broadside.up",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "rtb_buffs - buff.skull_and_crossbones.up < 2 & ( buff.loaded_dice.up || ! buff.grand_melee.up & ! buff.ruthless_precision.up & ! buff.broadside.up )",
+								["var_name"] = "rtb_reroll",
+								["criteria"] = "buff.blade_flurry.up",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "( rtb_buffs - buff.buried_treasure.up ) < 2 || buff.roll_the_bones.remains < 10.8 + ( 1.8 * talent.deeper_stratagem.enabled )",
+								["var_name"] = "rtb_reroll",
+								["criteria"] = "buff.loaded_dice.up",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["criteria"] = "! stealthed.rogue",
+								["action"] = "kick",
+							}, -- [8]
+							{
+								["action"] = "stealth",
+								["enabled"] = true,
+							}, -- [9]
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "combo_points.deficit >= 2 + 2 * ( talent.ghostly_strike.enabled & cooldown.ghostly_strike.remains < 1 ) + buff.broadside.up & energy > 60 & ! buff.skull_and_crossbones.up & ! buff.keep_your_wits_about_you.up",
+								["var_name"] = "ambush_condition",
+							}, -- [10]
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "buff.ruthless_precision.up || ( azerite.deadshot.enabled || azerite.ace_up_your_sleeve.enabled ) & buff.roll_the_bones.up",
+								["var_name"] = "bte_condition",
+							}, -- [11]
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "spell_targets.blade_flurry < 2 & raid_event.adds.in > 20 || buff.blade_flurry.up",
+								["var_name"] = "blade_flurry_sync",
+							}, -- [12]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["criteria"] = "stealthed.all",
+								["list_name"] = "stealth",
+							}, -- [13]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["list_name"] = "cds",
+							}, -- [14]
+							{
+								["enabled"] = true,
+								["action"] = "run_action_list",
+								["criteria"] = "combo_points >= cp_max_spend - ( buff.broadside.up + buff.opportunity.up ) * ( talent.quick_draw.enabled & ( ! talent.marked_for_death.enabled || cooldown.marked_for_death.remains > 1 ) ) * ( azerite.ace_up_your_sleeve.rank < 2 || ! cooldown.between_the_eyes.up || ! buff.roll_the_bones.up )",
+								["list_name"] = "finish",
+							}, -- [15]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["list_name"] = "build",
+							}, -- [16]
+							{
+								["enabled"] = true,
+								["criteria"] = "energy.deficit >= 15 + energy.regen",
+								["action"] = "arcane_torrent",
+							}, -- [17]
+							{
+								["action"] = "arcane_pulse",
+								["enabled"] = true,
+							}, -- [18]
+							{
+								["action"] = "lights_judgment",
+								["enabled"] = true,
+							}, -- [19]
+							{
+								["action"] = "bag_of_tricks",
+								["enabled"] = true,
+							}, -- [20]
+						},
+						["precombat"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "raid_event.adds.in > 40",
+								["action"] = "marked_for_death",
+								["precombat_seconds"] = "5",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "( ! equipped.pocketsized_computation_device || ! cooldown.cyclotronic_blast.duration || raid_event.invulnerable.exists )",
+								["action"] = "stealth",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.roll_the_bones.remains <= 3 || variable.rtb_reroll",
+								["action"] = "roll_the_bones",
+								["precombat_seconds"] = "2",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.slice_and_dice.remains < time_to_die & buff.slice_and_dice.remains < ( 1 + combo_points ) * 1.8",
+								["action"] = "slice_and_dice",
+								["precombat_seconds"] = "2",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "( ! equipped.pocketsized_computation_device || ! cooldown.cyclotronic_blast.duration || raid_event.invulnerable.exists )",
+								["action"] = "adrenaline_rush",
+								["precombat_seconds"] = "1",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["name"] = "azsharas_font_of_power",
+								["action"] = "azsharas_font_of_power",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "! raid_event.invulnerable.exists",
+								["action"] = "cyclotronic_blast",
+								["effect_name"] = "cyclotronic_blast",
+							}, -- [7]
+							{
+								["action"] = "potion",
+								["enabled"] = true,
+							}, -- [8]
+						},
+						["finish"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.bte_condition",
+								["action"] = "between_the_eyes",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.slice_and_dice.remains < time_to_die & buff.slice_and_dice.remains < ( 1 + combo_points ) * 1.8",
+								["action"] = "slice_and_dice",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.roll_the_bones.remains <= 3 || variable.rtb_reroll",
+								["action"] = "roll_the_bones",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "azerite.ace_up_your_sleeve.enabled || azerite.deadshot.enabled",
+								["action"] = "between_the_eyes",
+							}, -- [4]
+							{
+								["action"] = "dispatch",
+								["enabled"] = true,
+							}, -- [5]
+						},
+						["stealth"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.prey_on_the_weak.enabled & ! target.is_boss",
+								["action"] = "cheap_shot",
+								["cycle_targets"] = 1,
+							}, -- [1]
+							{
+								["action"] = "ambush",
+								["enabled"] = true,
+							}, -- [2]
+						},
+						["cds"] = {
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["criteria"] = "! stealthed.all",
+								["list_name"] = "essences",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "! buff.adrenaline_rush.up & ( ! equipped.azsharas_font_of_power || cooldown.latent_arcana.remains > 20 )",
+								["action"] = "adrenaline_rush",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "raid_event.adds.up & ( target.time_to_die < combo_points.deficit || ! stealthed.rogue & combo_points.deficit >= cp_max_spend - 1 )",
+								["action"] = "marked_for_death",
+								["cycle_targets"] = 1,
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "raid_event.adds.in > 30 - raid_event.adds.duration & ! stealthed.rogue & combo_points.deficit >= cp_max_spend - 1",
+								["action"] = "marked_for_death",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "spell_targets >= 2 & ! buff.blade_flurry.up & ( ! raid_event.adds.exists || raid_event.adds.remains > 8 || raid_event.adds.in > ( 2 - cooldown.blade_flurry.charges_fractional ) * 25 )",
+								["action"] = "blade_flurry",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "combo_points.deficit >= 1 + buff.broadside.up",
+								["action"] = "ghostly_strike",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.blade_flurry_sync & spell_targets.blade_flurry > 1 & energy.time_to_max > 2",
+								["action"] = "killing_spree",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.blade_flurry_sync & energy.time_to_max > 2",
+								["action"] = "blade_rush",
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["criteria"] = "! stealthed.all & variable.ambush_condition",
+								["action"] = "vanish",
+							}, -- [9]
+							{
+								["enabled"] = true,
+								["criteria"] = "! stealthed.all & variable.ambush_condition",
+								["action"] = "shadowmeld",
+							}, -- [10]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.bloodlust.react || buff.adrenaline_rush.up",
+								["action"] = "potion",
+							}, -- [11]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.bloodlust.react || time_to_die <= 20 || combo_points.deficit <= 2",
+								["name"] = "variable_intensity_gigavolt_oscillating_reactor",
+								["action"] = "variable_intensity_gigavolt_oscillating_reactor",
+							}, -- [12]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.bloodlust.react || time_to_die <= 20 || combo_points.deficit <= 2",
+								["action"] = "use_items",
+							}, -- [13]
+							{
+								["action"] = "blood_fury",
+								["enabled"] = true,
+							}, -- [14]
+							{
+								["action"] = "berserking",
+								["enabled"] = true,
+							}, -- [15]
+							{
+								["action"] = "fireblood",
+								["enabled"] = true,
+							}, -- [16]
+							{
+								["action"] = "ancestral_call",
+								["enabled"] = true,
+							}, -- [17]
+							{
+								["enabled"] = true,
+								["criteria"] = "! stealthed.all & buff.adrenaline_rush.down & buff.memory_of_lucid_dreams.down & energy.time_to_max > 4 & rtb_buffs < 5",
+								["action"] = "cyclotronic_blast",
+								["effect_name"] = "cyclotronic_blast",
+							}, -- [18]
+							{
+								["enabled"] = true,
+								["criteria"] = "! buff.adrenaline_rush.up & ! buff.blade_flurry.up & cooldown.adrenaline_rush.remains < 15",
+								["name"] = "azsharas_font_of_power",
+								["action"] = "azsharas_font_of_power",
+							}, -- [19]
+							{
+								["enabled"] = true,
+								["criteria"] = "debuff.razor_coral_debuff.down || debuff.conductive_ink_debuff.up & target.health.pct < 32 & target.health.pct >= 30 || ! debuff.conductive_ink_debuff.up & ( debuff.razor_coral_debuff.stack >= 20 - 10 * debuff.blood_of_the_enemy.up || target.time_to_die < 60 ) & buff.adrenaline_rush.remains > 18",
+								["name"] = "ashvanes_razor_coral",
+								["action"] = "ashvanes_razor_coral",
+							}, -- [20]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.bloodlust.react || time_to_die <= 20 || combo_points.deficit <= 2",
+								["action"] = "use_items",
+							}, -- [21]
+						},
+						["build"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "( talent.quick_draw.enabled || azerite.keep_your_wits_about_you.rank < 2 ) & buff.opportunity.up & ( buff.keep_your_wits_about_you.stack < 14 || energy < 45 )",
+								["action"] = "pistol_shot",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.opportunity.up & buff.deadshot.up",
+								["action"] = "pistol_shot",
+							}, -- [2]
+							{
+								["action"] = "sinister_strike",
+								["enabled"] = true,
+							}, -- [3]
+						},
+					},
+				},
+				["Subtlety"] = {
+					["source"] = "https://github.com/simulationcraft/simc/",
+					["builtIn"] = true,
+					["date"] = 20200330,
+					["author"] = "SimC",
+					["desc"] = "# Subtlety Rogue\n# https://github.com/simulationcraft/simc/\n# March 30, 2020\n\n# Changes:\n# - Added Kick to default action list.\n# - Removed target_if condition on Marked for Death.\n# - Added Use Items.",
+					["lists"] = {
+						["stealthed"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "( talent.find_weakness.enabled || spell_targets.shuriken_storm < 3 ) & ( buff.stealth.up || buff.vanish.up )",
+								["action"] = "shadowstrike",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["criteria"] = "buff.shuriken_tornado.up & combo_points.deficit <= 2",
+								["list_name"] = "finish",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["criteria"] = "spell_targets.shuriken_storm = 4 & combo_points >= 4",
+								["list_name"] = "finish",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["criteria"] = "combo_points.deficit <= 1 - ( talent.deeper_stratagem.enabled & ( buff.vanish.up || azerite.the_first_dance.enabled & ! talent.dark_shadow.enabled & ! talent.subterfuge.enabled & spell_targets.shuriken_storm < 3 ) )",
+								["list_name"] = "finish",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "azerite.perforate.rank >= 2 & spell_targets.shuriken_storm <= 2",
+								["action"] = "gloomblade",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.secret_technique.enabled & talent.find_weakness.enabled & debuff.find_weakness.remains < 1 & spell_targets.shuriken_storm = 2 & time_to_die - remains > 6",
+								["action"] = "shadowstrike",
+								["cycle_targets"] = 1,
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "! talent.deeper_stratagem.enabled & azerite.blade_in_the_shadows.rank = 3 & spell_targets.shuriken_storm = 3",
+								["action"] = "shadowstrike",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.use_priority_rotation & ( talent.find_weakness.enabled & debuff.find_weakness.remains < 1 || talent.weaponmaster.enabled & spell_targets.shuriken_storm <= 4 || azerite.inevitability.enabled & buff.symbols_of_death.up & spell_targets.shuriken_storm <= 3 + azerite.blade_in_the_shadows.enabled )",
+								["action"] = "shadowstrike",
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["criteria"] = "spell_targets >= 3",
+								["action"] = "shuriken_storm",
+							}, -- [9]
+							{
+								["action"] = "shadowstrike",
+								["enabled"] = true,
+							}, -- [10]
+						},
+						["essences"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "energy.time_to_max > 1 & ! buff.symbols_of_death.up & ( ! dot.concentrated_flame_burn.ticking & ! action.concentrated_flame.in_flight || full_recharge_time < gcd.max )",
+								["action"] = "concentrated_flame",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "! cooldown.shadow_blades.up & cooldown.symbols_of_death.up || time_to_die <= 10",
+								["action"] = "blood_of_the_enemy",
+							}, -- [2]
+							{
+								["action"] = "guardian_of_azeroth",
+								["enabled"] = true,
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "( spell_targets.shuriken_storm >= 2 || raid_event.adds.in > 60 ) & ! cooldown.symbols_of_death.up & ! buff.symbols_of_death.up & energy.deficit >= 30",
+								["action"] = "focused_azerite_beam",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "spell_targets.shuriken_storm >= 2 || raid_event.adds.in > 60",
+								["action"] = "purifying_blast",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.reckless_force.up || buff.reckless_force_counter.stack < 10",
+								["action"] = "the_unbound_force",
+							}, -- [6]
+							{
+								["action"] = "ripple_in_space",
+								["enabled"] = true,
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["criteria"] = "cooldown.symbols_of_death.remains < 5 || time_to_die < 18",
+								["action"] = "worldvein_resonance",
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["criteria"] = "energy < 40 & buff.symbols_of_death.up",
+								["action"] = "memory_of_lucid_dreams",
+							}, -- [9]
+							{
+								["enabled"] = true,
+								["criteria"] = "target.time_to_die < 1.5 || ( ( target.health.pct > 80 || target.health.pct <= 20 ) & ( active_enemies = 1 || target.time_to_die > 29 ) ) || ( target.time_to_pct_20 > 30 & ( active_enemies = 1 || target.time_to_die > 44 ) )",
+								["action"] = "reaping_flames",
+								["cycle_targets"] = 1,
+							}, -- [10]
+						},
+						["default"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "! stealthed.rogue",
+								["action"] = "kick",
+							}, -- [1]
+							{
+								["action"] = "stealth",
+								["enabled"] = true,
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["list_name"] = "cds",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["action"] = "run_action_list",
+								["criteria"] = "stealthed.all",
+								["list_name"] = "stealthed",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "time_to_die > 6 & remains < gcd.max & combo_points >= 4 - ( time < 10 ) * 2",
+								["action"] = "nightblade",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "priority_rotation & spell_targets.shuriken_storm >= 2",
+								["var_name"] = "use_priority_rotation",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["criteria"] = "variable.use_priority_rotation",
+								["list_name"] = "stealth_cds",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "25 + talent.vigor.enabled * 35 + talent.master_of_shadows.enabled * 25 + talent.shadow_focus.enabled * 20 + talent.alacrity.enabled * 10 + 15 * ( spell_targets.shuriken_storm >= 3 )",
+								["var_name"] = "stealth_threshold",
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["criteria"] = "energy.deficit <= variable.stealth_threshold",
+								["list_name"] = "stealth_cds",
+							}, -- [9]
+							{
+								["enabled"] = true,
+								["criteria"] = "azerite.nights_vengeance.enabled & ! buff.nights_vengeance.up & combo_points.deficit > 1 & ( spell_targets.shuriken_storm < 2 || variable.use_priority_rotation ) & ( cooldown.symbols_of_death.remains <= 3 || ( azerite.nights_vengeance.rank >= 2 & buff.symbols_of_death.remains > 3 & ! stealthed.all & cooldown.shadow_dance.charges_fractional >= 0.9 ) )",
+								["action"] = "nightblade",
+							}, -- [10]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["criteria"] = "combo_points.deficit <= 1 || time_to_die <= 1 & combo_points >= 3",
+								["list_name"] = "finish",
+							}, -- [11]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["criteria"] = "spell_targets.shuriken_storm = 4 & combo_points >= 4",
+								["list_name"] = "finish",
+							}, -- [12]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["criteria"] = "energy.deficit <= variable.stealth_threshold",
+								["list_name"] = "build",
+							}, -- [13]
+							{
+								["enabled"] = true,
+								["criteria"] = "energy.deficit >= 15 + energy.regen",
+								["action"] = "arcane_torrent",
+							}, -- [14]
+							{
+								["action"] = "arcane_pulse",
+								["enabled"] = true,
+							}, -- [15]
+							{
+								["action"] = "lights_judgment",
+								["enabled"] = true,
+							}, -- [16]
+							{
+								["action"] = "bag_of_tricks",
+								["enabled"] = true,
+							}, -- [17]
+						},
+						["precombat"] = {
+							{
+								["action"] = "stealth",
+								["enabled"] = true,
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["action"] = "marked_for_death",
+								["precombat_seconds"] = "15",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["name"] = "azsharas_font_of_power",
+								["action"] = "azsharas_font_of_power",
+							}, -- [3]
+							{
+								["action"] = "potion",
+								["enabled"] = true,
+							}, -- [4]
+						},
+						["build"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "spell_targets >= 2 + ( talent.gloomblade.enabled & azerite.perforate.rank >= 2 )",
+								["action"] = "shuriken_storm",
+							}, -- [1]
+							{
+								["action"] = "gloomblade",
+								["enabled"] = true,
+							}, -- [2]
+							{
+								["action"] = "backstab",
+								["enabled"] = true,
+							}, -- [3]
+						},
+						["cds"] = {
+							{
+								["enabled"] = true,
+								["use_off_gcd"] = 1,
+								["criteria"] = "! buff.shadow_dance.up & buff.shuriken_tornado.up & buff.shuriken_tornado.remains <= 3.5",
+								["action"] = "shadow_dance",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["use_off_gcd"] = 1,
+								["criteria"] = "buff.shuriken_tornado.up & buff.shuriken_tornado.remains <= 3.5",
+								["action"] = "symbols_of_death",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["criteria"] = "! stealthed.all & dot.nightblade.ticking",
+								["list_name"] = "essences",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "! talent.shadow_focus.enabled",
+								["for_next"] = 1,
+								["action"] = "pool_resource",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "energy >= 60 & dot.nightblade.ticking & cooldown.symbols_of_death.up & cooldown.shadow_dance.charges >= 1",
+								["action"] = "shuriken_tornado",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "dot.nightblade.ticking & ! cooldown.shadow_blades.up & ( ! talent.shuriken_tornado.enabled || talent.shadow_focus.enabled || cooldown.shuriken_tornado.remains > 2 ) & ( ! essence.blood_of_the_enemy.major || cooldown.blood_of_the_enemy.remains > 2 ) & ( azerite.nights_vengeance.rank < 2 || buff.nights_vengeance.up )",
+								["action"] = "symbols_of_death",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "raid_event.adds.up & ( target.time_to_die < combo_points.deficit || ! stealthed.all & combo_points.deficit >= cp_max_spend )",
+								["action"] = "marked_for_death",
+								["cycle_targets"] = 1,
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["criteria"] = "raid_event.adds.in > 30 - raid_event.adds.duration & ! stealthed.all & combo_points.deficit >= cp_max_spend",
+								["action"] = "marked_for_death",
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["criteria"] = "! stealthed.all & dot.nightblade.ticking & combo_points.deficit >= 2",
+								["action"] = "shadow_blades",
+							}, -- [9]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.shadow_focus.enabled & dot.nightblade.ticking & buff.symbols_of_death.up",
+								["action"] = "shuriken_tornado",
+							}, -- [10]
+							{
+								["enabled"] = true,
+								["criteria"] = "! buff.shadow_dance.up & time_to_die <= 5 + talent.subterfuge.enabled & ! raid_event.adds.up",
+								["action"] = "shadow_dance",
+							}, -- [11]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.bloodlust.react || buff.symbols_of_death.up & ( buff.shadow_blades.up || cooldown.shadow_blades.remains <= 10 )",
+								["action"] = "potion",
+							}, -- [12]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.symbols_of_death.up",
+								["action"] = "blood_fury",
+							}, -- [13]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.symbols_of_death.up",
+								["action"] = "berserking",
+							}, -- [14]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.symbols_of_death.up",
+								["action"] = "fireblood",
+							}, -- [15]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.symbols_of_death.up",
+								["action"] = "ancestral_call",
+							}, -- [16]
+							{
+								["enabled"] = true,
+								["criteria"] = "! stealthed.all & dot.nightblade.ticking & ! buff.symbols_of_death.up & energy.deficit >= 30",
+								["action"] = "cyclotronic_blast",
+								["effect_name"] = "cyclotronic_blast",
+							}, -- [17]
+							{
+								["enabled"] = true,
+								["criteria"] = "! buff.shadow_dance.up & cooldown.symbols_of_death.remains < 10",
+								["name"] = "azsharas_font_of_power",
+								["action"] = "azsharas_font_of_power",
+							}, -- [18]
+							{
+								["enabled"] = true,
+								["criteria"] = "debuff.razor_coral_debuff.down || debuff.conductive_ink_debuff.up & target.time_to_pct_30 < 5 || ! debuff.conductive_ink_debuff.up & ( debuff.razor_coral_debuff.stack >= 25 - 10 * debuff.blood_of_the_enemy.up || time_to_die < 40 ) & buff.symbols_of_death.remains > 8",
+								["name"] = "ashvanes_razor_coral",
+								["action"] = "ashvanes_razor_coral",
+							}, -- [19]
+							{
+								["enabled"] = true,
+								["name"] = "mydas_talisman",
+								["action"] = "mydas_talisman",
+							}, -- [20]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.symbols_of_death.up || time_to_die < 20",
+								["action"] = "use_items",
+							}, -- [21]
+						},
+						["stealth_cds"] = {
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "cooldown.shadow_dance.charges_fractional >= 1.75",
+								["var_name"] = "shd_threshold",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "! variable.shd_threshold & combo_points.deficit > 1 & debuff.find_weakness.remains < 1 & cooldown.symbols_of_death.remains >= 3",
+								["action"] = "vanish",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["extra_amount"] = "40",
+								["for_next"] = 1,
+								["action"] = "pool_resource",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "energy >= 40 & energy.deficit >= 10 & ! variable.shd_threshold & combo_points.deficit > 1 & debuff.find_weakness.remains < 1",
+								["action"] = "shadowmeld",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "combo_points.deficit >= 4 - ( talent.deeper_stratagem.enabled & ( azerite.the_first_dance.enabled & ! talent.dark_shadow.enabled & ! talent.subterfuge.enabled & spell_targets.shuriken_storm < 3 ) )",
+								["var_name"] = "shd_combo_points",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "combo_points.deficit <= 1 + 2 * azerite.the_first_dance.enabled",
+								["var_name"] = "shd_combo_points",
+								["criteria"] = "variable.use_priority_rotation & ( talent.nightstalker.enabled || talent.dark_shadow.enabled )",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.shd_combo_points & ( ! talent.dark_shadow.enabled || dot.nightblade.remains >= 5 + talent.subterfuge.enabled ) & ( variable.shd_threshold || buff.symbols_of_death.remains >= 1.2 || spell_targets.shuriken_storm >= 4 & cooldown.symbols_of_death.remains > 10 ) & ( azerite.nights_vengeance.rank < 2 || buff.nights_vengeance.up )",
+								["action"] = "shadow_dance",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.shd_combo_points & time_to_die < cooldown.symbols_of_death.remains & ! raid_event.adds.up",
+								["action"] = "shadow_dance",
+							}, -- [8]
+						},
+						["finish"] = {
+							{
+								["enabled"] = true,
+								["for_next"] = 1,
+								["action"] = "pool_resource",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.nights_vengeance.up & ( spell_targets.shuriken_storm < 2 || variable.use_priority_rotation || ! talent.secret_technique.enabled || ! cooldown.secret_technique.up )",
+								["action"] = "eviscerate",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "( ! talent.dark_shadow.enabled || ! buff.shadow_dance.up ) & time_to_die - remains > 6 & remains < tick_time * 2",
+								["action"] = "nightblade",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "! variable.use_priority_rotation & spell_targets.shuriken_storm >= 2 & ( azerite.nights_vengeance.enabled || ! azerite.replicating_shadows.enabled || spell_targets.shuriken_storm - active_dot.nightblade >= 2 ) & ! buff.shadow_dance.up & time_to_die >= ( 5 + ( 2 * combo_points ) ) & refreshable",
+								["action"] = "nightblade",
+								["cycle_targets"] = 1,
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "remains < cooldown.symbols_of_death.remains + 10 & cooldown.symbols_of_death.remains <= 5 & time_to_die - remains > cooldown.symbols_of_death.remains + 5",
+								["action"] = "nightblade",
+							}, -- [5]
+							{
+								["action"] = "secret_technique",
+								["enabled"] = true,
+							}, -- [6]
+							{
+								["action"] = "eviscerate",
+								["enabled"] = true,
+							}, -- [7]
+						},
+					},
+					["version"] = 20200330,
+					["warnings"] = "Imported 8 action lists.\n",
+					["profile"] = "# Subtlety Rogue\n# https://github.com/simulationcraft/simc/\n# March 30, 2020\n\n# Changes:\n# - Added Kick to default action list.\n# - Removed target_if condition on Marked for Death.\n# - Added Use Items.\n\n# Executed before combat begins. Accepts non-harmful actions only.\n# actions.precombat=flask\n# actions.precombat+=/augmentation\n# actions.precombat+=/food\n# Snapshot raid buffed stats before combat begins and pre-potting is done.\n# actions.precombat+=/snapshot_stats\nactions.precombat+=/stealth\nactions.precombat+=/marked_for_death,precombat_seconds=15\nactions.precombat+=/use_item,name=azsharas_font_of_power\nactions.precombat+=/potion\n\n# Executed every time the actor is available.\n# Restealth if possible (no vulnerable enemies in combat)\nactions=kick,if=!stealthed.rogue\nactions+=/stealth\n# Check CDs at first\nactions+=/call_action_list,name=cds\n# Run fully switches to the Stealthed Rotation (by doing so, it forces pooling if nothing is available).\nactions+=/run_action_list,name=stealthed,if=stealthed.all\n# Apply Nightblade at 2+ CP during the first 10 seconds, after that 4+ CP if it expires within the next GCD or is not up\nactions+=/nightblade,if=time_to_die>6&remains<gcd.max&combo_points>=4-(time<10)*2\n# Only change rotation if we have priority_rotation set and multiple targets up.\nactions+=/variable,name=use_priority_rotation,value=priority_rotation&spell_targets.shuriken_storm>=2\n# Priority Rotation? Let's give a crap about energy for the stealth CDs (builder still respect it). Yup, it can be that simple.\nactions+=/call_action_list,name=stealth_cds,if=variable.use_priority_rotation\n# Used to define when to use stealth CDs or builders\nactions+=/variable,name=stealth_threshold,value=25+talent.vigor.enabled*35+talent.master_of_shadows.enabled*25+talent.shadow_focus.enabled*20+talent.alacrity.enabled*10+15*(spell_targets.shuriken_storm>=3)\n# Consider using a Stealth CD when reaching the energy threshold\nactions+=/call_action_list,name=stealth_cds,if=energy.deficit<=variable.stealth_threshold\n# Night's Vengeance: Nightblade before Symbols at low CP to combine early refresh with getting the buff up. Also low CP during Symbols between Dances with 2+ NV.\nactions+=/nightblade,if=azerite.nights_vengeance.enabled&!buff.nights_vengeance.up&combo_points.deficit>1&(spell_targets.shuriken_storm<2||variable.use_priority_rotation)&(cooldown.symbols_of_death.remains<=3||(azerite.nights_vengeance.rank>=2&buff.symbols_of_death.remains>3&!stealthed.all&cooldown.shadow_dance.charges_fractional>=0.9))\n# Finish at 4+ without DS, 5+ with DS (outside stealth)\nactions+=/call_action_list,name=finish,if=combo_points.deficit<=1||time_to_die<=1&combo_points>=3\n# With DS also finish at 4+ against exactly 4 targets (outside stealth)\nactions+=/call_action_list,name=finish,if=spell_targets.shuriken_storm=4&combo_points>=4\n# Use a builder when reaching the energy threshold\nactions+=/call_action_list,name=build,if=energy.deficit<=variable.stealth_threshold\n# Lowest priority in all of the APL because it causes a GCD\nactions+=/arcane_torrent,if=energy.deficit>=15+energy.regen\nactions+=/arcane_pulse\nactions+=/lights_judgment\nactions+=/bag_of_tricks\n\n# Builders\nactions.build=shuriken_storm,if=spell_targets>=2+(talent.gloomblade.enabled&azerite.perforate.rank>=2)\nactions.build+=/gloomblade\nactions.build+=/backstab\n\n# Cooldowns\n# Use Dance off-gcd before the first Shuriken Storm from Tornado comes in.\nactions.cds=shadow_dance,use_off_gcd=1,if=!buff.shadow_dance.up&buff.shuriken_tornado.up&buff.shuriken_tornado.remains<=3.5\n# (Unless already up because we took Shadow Focus) use Symbols off-gcd before the first Shuriken Storm from Tornado comes in.\nactions.cds+=/symbols_of_death,use_off_gcd=1,if=buff.shuriken_tornado.up&buff.shuriken_tornado.remains<=3.5\nactions.cds+=/call_action_list,name=essences,if=!stealthed.all&dot.nightblade.ticking\n# Pool for Tornado pre-SoD with ShD ready when not running SF.\nactions.cds+=/pool_resource,for_next=1,if=!talent.shadow_focus.enabled\n# Use Tornado pre SoD when we have the energy whether from pooling without SF or just generally.\nactions.cds+=/shuriken_tornado,if=energy>=60&dot.nightblade.ticking&cooldown.symbols_of_death.up&cooldown.shadow_dance.charges>=1\n# Use Symbols on cooldown (after first Nightblade) unless we are going to pop Tornado and do not have Shadow Focus.\nactions.cds+=/symbols_of_death,if=dot.nightblade.ticking&!cooldown.shadow_blades.up&(!talent.shuriken_tornado.enabled||talent.shadow_focus.enabled||cooldown.shuriken_tornado.remains>2)&(!essence.blood_of_the_enemy.major||cooldown.blood_of_the_enemy.remains>2)&(azerite.nights_vengeance.rank<2||buff.nights_vengeance.up)\n# If adds are up, snipe the one with lowest TTD. Use when dying faster than CP deficit or not stealthed without any CP.\nactions.cds+=/marked_for_death,cycle_targets=1,if=raid_event.adds.up&(target.time_to_die<combo_points.deficit||!stealthed.all&combo_points.deficit>=cp_max_spend)\n# If no adds will die within the next 30s, use MfD on boss without any CP and no stealth.\nactions.cds+=/marked_for_death,if=raid_event.adds.in>30-raid_event.adds.duration&!stealthed.all&combo_points.deficit>=cp_max_spend\nactions.cds+=/shadow_blades,if=!stealthed.all&dot.nightblade.ticking&combo_points.deficit>=2\n# With SF, if not already done, use Tornado with SoD up.\nactions.cds+=/shuriken_tornado,if=talent.shadow_focus.enabled&dot.nightblade.ticking&buff.symbols_of_death.up\nactions.cds+=/shadow_dance,if=!buff.shadow_dance.up&time_to_die<=5+talent.subterfuge.enabled&!raid_event.adds.up\nactions.cds+=/potion,if=buff.bloodlust.react||buff.symbols_of_death.up&(buff.shadow_blades.up||cooldown.shadow_blades.remains<=10)\nactions.cds+=/blood_fury,if=buff.symbols_of_death.up\nactions.cds+=/berserking,if=buff.symbols_of_death.up\nactions.cds+=/fireblood,if=buff.symbols_of_death.up\nactions.cds+=/ancestral_call,if=buff.symbols_of_death.up\nactions.cds+=/use_item,effect_name=cyclotronic_blast,if=!stealthed.all&dot.nightblade.ticking&!buff.symbols_of_death.up&energy.deficit>=30\nactions.cds+=/use_item,name=azsharas_font_of_power,if=!buff.shadow_dance.up&cooldown.symbols_of_death.remains<10\n# Very roughly rule of thumbified maths below: Use for Inkpod crit, otherwise with SoD at 25+ stacks or 15+ with also Blood up.\nactions.cds+=/use_item,name=ashvanes_razor_coral,if=debuff.razor_coral_debuff.down||debuff.conductive_ink_debuff.up&target.time_to_pct_30<5||!debuff.conductive_ink_debuff.up&(debuff.razor_coral_debuff.stack>=25-10*debuff.blood_of_the_enemy.up||time_to_die<40)&buff.symbols_of_death.remains>8\nactions.cds+=/use_item,name=mydas_talisman\n# Default fallback for usable items: Use with Symbols of Death.\nactions.cds+=/use_items,if=buff.symbols_of_death.up||time_to_die<20\n\n# Essences\nactions.essences=concentrated_flame,if=energy.time_to_max>1&!buff.symbols_of_death.up&(!dot.concentrated_flame_burn.ticking&!action.concentrated_flame.in_flight||full_recharge_time<gcd.max)\nactions.essences+=/blood_of_the_enemy,if=!cooldown.shadow_blades.up&cooldown.symbols_of_death.up||time_to_die<=10\nactions.essences+=/guardian_of_azeroth\nactions.essences+=/focused_azerite_beam,if=(spell_targets.shuriken_storm>=2||raid_event.adds.in>60)&!cooldown.symbols_of_death.up&!buff.symbols_of_death.up&energy.deficit>=30\nactions.essences+=/purifying_blast,if=spell_targets.shuriken_storm>=2||raid_event.adds.in>60\nactions.essences+=/the_unbound_force,if=buff.reckless_force.up||buff.reckless_force_counter.stack<10\nactions.essences+=/ripple_in_space\nactions.essences+=/worldvein_resonance,if=cooldown.symbols_of_death.remains<5||time_to_die<18\nactions.essences+=/memory_of_lucid_dreams,if=energy<40&buff.symbols_of_death.up\n# Hold Reaping Flames for execute range or kill buffs, if possible. Always try to get the lowest cooldown based on available enemies.\nactions.essences+=/reaping_flames,cycle_targets=1,if=target.time_to_die<1.5||((target.health.pct>80||target.health.pct<=20)&(active_enemies=1||target.time_to_die>29))||(target.time_to_pct_20>30&(active_enemies=1||target.time_to_die>44))\n\n# Finishers\nactions.finish=pool_resource,for_next=1\n# Eviscerate has highest priority with Night's Vengeance up.  Exception is AoE damage when SecTec is ready.\nactions.finish+=/eviscerate,if=buff.nights_vengeance.up&(spell_targets.shuriken_storm<2||variable.use_priority_rotation||!talent.secret_technique.enabled||!cooldown.secret_technique.up)\n# Keep up Nightblade if it is about to run out. Do not use NB during Dance, if talented into Dark Shadow.\nactions.finish+=/nightblade,if=(!talent.dark_shadow.enabled||!buff.shadow_dance.up)&time_to_die-remains>6&remains<tick_time*2\n# Multidotting outside Dance on targets that will live for the duration of Nightblade, refresh during pandemic. Multidot as long as 2+ targets do not have Nightblade up with Replicating Shadows (unless you have Night's Vengeance too).\nactions.finish+=/nightblade,cycle_targets=1,if=!variable.use_priority_rotation&spell_targets.shuriken_storm>=2&(azerite.nights_vengeance.enabled||!azerite.replicating_shadows.enabled||spell_targets.shuriken_storm-active_dot.nightblade>=2)&!buff.shadow_dance.up&time_to_die>=(5+(2*combo_points))&refreshable\n# Refresh Nightblade early if it will expire during Symbols. Do that refresh if SoD gets ready in the next 5s.\nactions.finish+=/nightblade,if=remains<cooldown.symbols_of_death.remains+10&cooldown.symbols_of_death.remains<=5&time_to_die-remains>cooldown.symbols_of_death.remains+5\nactions.finish+=/secret_technique\nactions.finish+=/eviscerate\n\n# Stealth Cooldowns\n# Helper Variable\nactions.stealth_cds=variable,name=shd_threshold,value=cooldown.shadow_dance.charges_fractional>=1.75\n# Vanish unless we are about to cap on Dance charges. Only when Find Weakness is about to run out.\nactions.stealth_cds+=/vanish,if=!variable.shd_threshold&combo_points.deficit>1&debuff.find_weakness.remains<1&cooldown.symbols_of_death.remains>=3\n# Pool for Shadowmeld + Shadowstrike unless we are about to cap on Dance charges. Only when Find Weakness is about to run out.\nactions.stealth_cds+=/pool_resource,for_next=1,extra_amount=40\nactions.stealth_cds+=/shadowmeld,if=energy>=40&energy.deficit>=10&!variable.shd_threshold&combo_points.deficit>1&debuff.find_weakness.remains<1\n# CP requirement: Dance at low CP by default. (Subtraction is a copy from the stealhed finisher call for TFD handling.)\nactions.stealth_cds+=/variable,name=shd_combo_points,value=combo_points.deficit>=4-(talent.deeper_stratagem.enabled&(azerite.the_first_dance.enabled&!talent.dark_shadow.enabled&!talent.subterfuge.enabled&spell_targets.shuriken_storm<3))\n# CP requirement: Dance only before finishers if we have amp talents and priority rotation.\nactions.stealth_cds+=/variable,name=shd_combo_points,value=combo_points.deficit<=1+2*azerite.the_first_dance.enabled,if=variable.use_priority_rotation&(talent.nightstalker.enabled||talent.dark_shadow.enabled)\n# With Dark Shadow only Dance when Nightblade will stay up. Use during Symbols or above threshold. Wait for NV buff with 2+NV.\nactions.stealth_cds+=/shadow_dance,if=variable.shd_combo_points&(!talent.dark_shadow.enabled||dot.nightblade.remains>=5+talent.subterfuge.enabled)&(variable.shd_threshold||buff.symbols_of_death.remains>=1.2||spell_targets.shuriken_storm>=4&cooldown.symbols_of_death.remains>10)&(azerite.nights_vengeance.rank<2||buff.nights_vengeance.up)\n# Burn remaining Dances before the target dies if SoD won't be ready in time.\nactions.stealth_cds+=/shadow_dance,if=variable.shd_combo_points&time_to_die<cooldown.symbols_of_death.remains&!raid_event.adds.up\n\n# Stealthed Rotation\n# If Stealth/vanish are up, use Shadowstrike to benefit from the passive bonus and Find Weakness, even if we are at max CP (from the precombat MfD).\nactions.stealthed=shadowstrike,if=(talent.find_weakness.enabled||spell_targets.shuriken_storm<3)&(buff.stealth.up||buff.vanish.up)\n# Finish at 3+ CP without DS / 4+ with DS with Shuriken Tornado buff up to avoid some CP waste situations.\nactions.stealthed+=/call_action_list,name=finish,if=buff.shuriken_tornado.up&combo_points.deficit<=2\n# Also safe to finish at 4+ CP with exactly 4 targets. (Same as outside stealth.)\nactions.stealthed+=/call_action_list,name=finish,if=spell_targets.shuriken_storm=4&combo_points>=4\n# Finish at 4+ CP without DS, 5+ with DS, and 6 with DS after Vanish or The First Dance and no Dark Shadow + no Subterfuge\nactions.stealthed+=/call_action_list,name=finish,if=combo_points.deficit<=1-(talent.deeper_stratagem.enabled&(buff.vanish.up||azerite.the_first_dance.enabled&!talent.dark_shadow.enabled&!talent.subterfuge.enabled&spell_targets.shuriken_storm<3))\n# Use Gloomblade over Shadowstrike and Storm with 2+ Perforate at 2 or less targets.\nactions.stealthed+=/gloomblade,if=azerite.perforate.rank>=2&spell_targets.shuriken_storm<=2\n# At 2 targets with Secret Technique keep up Find Weakness by cycling Shadowstrike.\nactions.stealthed+=/shadowstrike,cycle_targets=1,if=talent.secret_technique.enabled&talent.find_weakness.enabled&debuff.find_weakness.remains<1&spell_targets.shuriken_storm=2&time_to_die-remains>6\n# Without Deeper Stratagem and 3 Ranks of Blade in the Shadows it is worth using Shadowstrike on 3 targets.\nactions.stealthed+=/shadowstrike,if=!talent.deeper_stratagem.enabled&azerite.blade_in_the_shadows.rank=3&spell_targets.shuriken_storm=3\n# For priority rotation, use Shadowstrike over Storm 1) with WM against up to 4 targets, 2) if FW is running off (on any amount of targets), or 3) to maximize SoD extension with Inevitability on 3 targets (4 with BitS).\nactions.stealthed+=/shadowstrike,if=variable.use_priority_rotation&(talent.find_weakness.enabled&debuff.find_weakness.remains<1||talent.weaponmaster.enabled&spell_targets.shuriken_storm<=4||azerite.inevitability.enabled&buff.symbols_of_death.up&spell_targets.shuriken_storm<=3+azerite.blade_in_the_shadows.enabled)\nactions.stealthed+=/shuriken_storm,if=spell_targets>=3\nactions.stealthed+=/shadowstrike",
+					["spec"] = 261,
+				},
+				["Assassination"] = {
+					["source"] = "https://github.com/simulationcraft/simc/",
+					["builtIn"] = true,
+					["date"] = 20200330,
+					["author"] = "SimC",
+					["desc"] = "# Assassination Rogue\n# https://github.com/simulationcraft/simc/\n# March 30, 2020\n\n# Changes:\n# - Added Kick to default action list.\n# - Remove target_if.\n# - Added Use Items (outside of stealth).",
+					["lists"] = {
+						["stealthed"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.nightstalker.enabled & combo_points >= 4 & target.time_to_die - remains > 6",
+								["action"] = "rupture",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["for_next"] = 1,
+								["action"] = "pool_resource",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "azerite.shrouded_suffocation.enabled & buff.subterfuge.up & buff.subterfuge.remains < 1.3 & ! ss_buffed",
+								["action"] = "garrote",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["for_next"] = 1,
+								["action"] = "pool_resource",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["action"] = "garrote",
+								["criteria"] = "talent.subterfuge.enabled & ( remains < 12 || pmultiplier <= 1 ) & target.time_to_die - remains > 2",
+								["cycle_targets"] = 1,
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.subterfuge.enabled & azerite.shrouded_suffocation.enabled & ! dot.rupture.ticking & variable.single_target",
+								["action"] = "rupture",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["for_next"] = 1,
+								["action"] = "pool_resource",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["action"] = "garrote",
+								["criteria"] = "talent.subterfuge.enabled & azerite.shrouded_suffocation.enabled & ( active_enemies > 1 || ! talent.exsanguinate.enabled ) & target.time_to_die > remains & ( remains < 18 || ! ss_buffed )",
+								["cycle_targets"] = 1,
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["for_next"] = 1,
+								["action"] = "pool_resource",
+							}, -- [9]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.subterfuge.enabled & talent.exsanguinate.enabled & active_enemies = 1 & buff.subterfuge.remains < 1.3",
+								["action"] = "garrote",
+							}, -- [10]
+						},
+						["essences"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "energy.time_to_max > 1 & ! debuff.vendetta.up & ( ! dot.concentrated_flame_burn.ticking & ! action.concentrated_flame.in_flight || full_recharge_time < gcd.max )",
+								["action"] = "concentrated_flame",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "debuff.vendetta.up & ( debuff.garrote.exsanguinated || debuff.toxic_blade.up & combo_points.deficit <= 1 || debuff.vendetta.remains <= 10 ) || time_to_die <= 10",
+								["action"] = "blood_of_the_enemy",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "cooldown.vendetta.remains < 3 || debuff.vendetta.up || target.time_to_die < 30",
+								["action"] = "guardian_of_azeroth",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "floor ( ( target.time_to_die - 30 ) % action_cooldown ) > floor ( ( target.time_to_die - 30 - cooldown.vendetta.remains ) % action_cooldown )",
+								["action"] = "guardian_of_azeroth",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "spell_targets.fan_of_knives >= 2 || raid_event.adds.in > 60 & energy < 70",
+								["action"] = "focused_azerite_beam",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "spell_targets.fan_of_knives >= 2 || raid_event.adds.in > 60",
+								["action"] = "purifying_blast",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.reckless_force.up || buff.reckless_force_counter.stack < 10",
+								["action"] = "the_unbound_force",
+							}, -- [7]
+							{
+								["action"] = "ripple_in_space",
+								["enabled"] = true,
+							}, -- [8]
+							{
+								["action"] = "worldvein_resonance",
+								["enabled"] = true,
+							}, -- [9]
+							{
+								["enabled"] = true,
+								["criteria"] = "energy < 50 & ! cooldown.vendetta.up",
+								["action"] = "memory_of_lucid_dreams",
+							}, -- [10]
+							{
+								["enabled"] = true,
+								["action"] = "reaping_flames",
+								["criteria"] = "target.time_to_die < 1.5 || ( ( target.health.pct > 80 || target.health.pct <= 20 ) & ( active_enemies = 1 || target.time_to_die > 29 ) ) || ( target.time_to_pct_20 > 30 & ( active_enemies = 1 || target.time_to_die > 44 ) )",
+								["cycle_targets"] = 1,
+							}, -- [11]
+						},
+						["default"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "! stealthed.all",
+								["action"] = "kick",
+							}, -- [1]
+							{
+								["action"] = "stealth",
+								["enabled"] = true,
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "energy.regen + poisoned_bleeds * 7 % ( 2 * spell_haste )",
+								["var_name"] = "energy_regen_combined",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "spell_targets.fan_of_knives < 2",
+								["var_name"] = "single_target",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "stealthed.rogue",
+								["action"] = "call_action_list",
+								["list_name"] = "stealthed",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "( ! talent.master_assassin.enabled || dot.garrote.ticking )",
+								["action"] = "call_action_list",
+								["list_name"] = "cds",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["list_name"] = "dot",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["list_name"] = "direct",
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["criteria"] = "energy.deficit >= 15 + variable.energy_regen_combined",
+								["action"] = "arcane_torrent",
+							}, -- [9]
+							{
+								["action"] = "arcane_pulse",
+								["enabled"] = true,
+							}, -- [10]
+							{
+								["action"] = "lights_judgment",
+								["enabled"] = true,
+							}, -- [11]
+							{
+								["action"] = "bag_of_tricks",
+								["enabled"] = true,
+							}, -- [12]
+						},
+						["precombat"] = {
+							{
+								["action"] = "apply_poison",
+								["enabled"] = true,
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["action"] = "marked_for_death",
+								["criteria"] = "raid_event.adds.in > 15",
+								["precombat_seconds"] = "5",
+							}, -- [2]
+							{
+								["action"] = "stealth",
+								["enabled"] = true,
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["name"] = "azsharas_font_of_power",
+								["action"] = "azsharas_font_of_power",
+							}, -- [4]
+							{
+								["action"] = "potion",
+								["enabled"] = true,
+							}, -- [5]
+						},
+						["direct"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "combo_points >= 4 + talent.deeper_stratagem.enabled & ( debuff.vendetta.up || debuff.toxic_blade.up || energy.deficit <= ( envenom_pool_deficit >? ( 25 + variable.energy_regen_combined ) ) || ! variable.single_target ) & ( ! talent.exsanguinate.enabled || cooldown.exsanguinate.remains > 2 )",
+								["action"] = "envenom",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "combo_points.deficit > 1 || energy.deficit <= 25 + variable.energy_regen_combined || ! variable.single_target",
+								["var_name"] = "use_filler",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.use_filler & azerite.echoing_blades.enabled & spell_targets.fan_of_knives >= 2 + ( debuff.vendetta.up * ( 1 + ( azerite.echoing_blades.rank = 1 ) ) )",
+								["action"] = "fan_of_knives",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.use_filler & ( buff.hidden_blades.stack >= 19 || ( ! priority_rotation & spell_targets.fan_of_knives >= 4 + ( azerite.double_dose.rank > 2 ) + stealthed.rogue ) )",
+								["action"] = "fan_of_knives",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["action"] = "fan_of_knives",
+								["criteria"] = "variable.use_filler & spell_targets.fan_of_knives >= 3",
+								["cycle_targets"] = 1,
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.use_filler & ( buff.blindside.up || ! talent.venom_rush.enabled & ! azerite.double_dose.enabled )",
+								["action"] = "blindside",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["action"] = "mutilate",
+								["criteria"] = "variable.use_filler & spell_targets.fan_of_knives = 2",
+								["cycle_targets"] = 1,
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.use_filler",
+								["action"] = "mutilate",
+							}, -- [8]
+						},
+						["cds"] = {
+							{
+								["enabled"] = true,
+								["action"] = "azsharas_font_of_power",
+								["criteria"] = "! stealthed.all & master_assassin_remains = 0 & ( cooldown.vendetta.remains <? ( cooldown.toxic_blade.remains * equipped.ashvanes_razor_coral ) ) < 10 + 10 * equipped.ashvanes_razor_coral & ! debuff.vendetta.up & ! debuff.toxic_blade.up",
+								["name"] = "azsharas_font_of_power",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "! stealthed.all & dot.rupture.ticking & master_assassin_remains = 0",
+								["action"] = "call_action_list",
+								["list_name"] = "essences",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["action"] = "marked_for_death",
+								["criteria"] = "raid_event.adds.up & ( target.time_to_die < combo_points.deficit * 1.5 || combo_points.deficit >= cp_max_spend )",
+								["cycle_targets"] = 1,
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "raid_event.adds.in > 30 - raid_event.adds.duration & combo_points.deficit >= cp_max_spend",
+								["action"] = "marked_for_death",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "! talent.subterfuge.enabled || ! azerite.shrouded_suffocation.enabled || dot.garrote.pmultiplier > 1 & ( spell_targets.fan_of_knives < 6 || ! cooldown.vanish.up )",
+								["var_name"] = "vendetta_subterfuge_condition",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "! talent.nightstalker.enabled || ! talent.exsanguinate.enabled || cooldown.exsanguinate.remains < 5 - 2 * talent.deeper_stratagem.enabled",
+								["var_name"] = "vendetta_nightstalker_condition",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "! equipped.azsharas_font_of_power || azerite.shrouded_suffocation.enabled || debuff.razor_coral_debuff.down || cooldown.ashvanes_razor_coral.remains < 10 & ( cooldown.toxic_blade.remains < 1 || debuff.toxic_blade.up )",
+								["var_name"] = "vendetta_font_condition",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["criteria"] = "! stealthed.rogue & dot.rupture.ticking & ! debuff.vendetta.up & variable.vendetta_subterfuge_condition & variable.vendetta_nightstalker_condition & variable.vendetta_font_condition",
+								["action"] = "vendetta",
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.exsanguinate.enabled & talent.nightstalker.enabled & combo_points >= cp_max_spend & cooldown.exsanguinate.remains < 1",
+								["action"] = "vanish",
+							}, -- [9]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.nightstalker.enabled & ! talent.exsanguinate.enabled & combo_points >= cp_max_spend & ( debuff.vendetta.up || essence.vision_of_perfection.enabled )",
+								["action"] = "vanish",
+							}, -- [10]
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "azerite.shrouded_suffocation.enabled & ( non_ss_buffed_targets >= 1 || spell_targets.fan_of_knives = 3 ) & ( ss_buffed_targets_above_pandemic = 0 || spell_targets.fan_of_knives >= 6 )",
+								["var_name"] = "ss_vanish_condition",
+							}, -- [11]
+							{
+								["enabled"] = true,
+								["action"] = "pool_resource",
+								["extra_amount"] = "45",
+								["for_next"] = 1,
+							}, -- [12]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.subterfuge.enabled & ! stealthed.rogue & cooldown.garrote.up & ( variable.ss_vanish_condition || ! azerite.shrouded_suffocation.enabled & ( dot.garrote.refreshable || debuff.vendetta.up & dot.garrote.pmultiplier <= 1 ) ) & combo_points.deficit >= ( ( 1 + 2 * azerite.shrouded_suffocation.enabled ) * spell_targets.fan_of_knives ) >? 4 & raid_event.adds.in > 12",
+								["action"] = "vanish",
+							}, -- [13]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.master_assassin.enabled & ! stealthed.all & master_assassin_remains <= 0 & ! dot.rupture.refreshable & dot.garrote.remains > 3 & ( debuff.vendetta.up & ( ! talent.toxic_blade.enabled || debuff.toxic_blade.up ) & ( ! essence.blood_of_the_enemy.major || debuff.blood_of_the_enemy.up ) || essence.vision_of_perfection.enabled )",
+								["action"] = "vanish",
+							}, -- [14]
+							{
+								["enabled"] = true,
+								["criteria"] = "! stealthed.all & azerite.shrouded_suffocation.enabled & dot.garrote.refreshable & dot.garrote.pmultiplier <= 1 & combo_points.deficit >= 1",
+								["action"] = "shadowmeld",
+							}, -- [15]
+							{
+								["enabled"] = true,
+								["criteria"] = "! stealthed.rogue & ! dot.garrote.refreshable & dot.rupture.remains > 4 + 4 * cp_max_spend",
+								["action"] = "exsanguinate",
+							}, -- [16]
+							{
+								["enabled"] = true,
+								["criteria"] = "dot.rupture.ticking & ( ! equipped.azsharas_font_of_power || cooldown.vendetta.remains > 10 )",
+								["action"] = "toxic_blade",
+							}, -- [17]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.bloodlust.react || debuff.vendetta.up",
+								["action"] = "potion",
+							}, -- [18]
+							{
+								["enabled"] = true,
+								["criteria"] = "debuff.vendetta.up",
+								["action"] = "blood_fury",
+							}, -- [19]
+							{
+								["enabled"] = true,
+								["criteria"] = "debuff.vendetta.up",
+								["action"] = "berserking",
+							}, -- [20]
+							{
+								["enabled"] = true,
+								["criteria"] = "debuff.vendetta.up",
+								["action"] = "fireblood",
+							}, -- [21]
+							{
+								["enabled"] = true,
+								["criteria"] = "debuff.vendetta.up",
+								["action"] = "ancestral_call",
+							}, -- [22]
+							{
+								["enabled"] = true,
+								["action"] = "galecallers_boon",
+								["criteria"] = "cooldown.vendetta.remains > 45",
+								["name"] = "galecallers_boon",
+							}, -- [23]
+							{
+								["enabled"] = true,
+								["action"] = "ashvanes_razor_coral",
+								["criteria"] = "debuff.razor_coral_debuff.down || debuff.vendetta.remains > 10 - 4 * equipped.azsharas_font_of_power || target.time_to_die < 20",
+								["name"] = "ashvanes_razor_coral",
+							}, -- [24]
+							{
+								["enabled"] = true,
+								["action"] = "cyclotronic_blast",
+								["criteria"] = "master_assassin_remains = 0 & ! debuff.vendetta.up & ! debuff.toxic_blade.up & buff.memory_of_lucid_dreams.down & energy < 80 & dot.rupture.remains > 4",
+								["effect_name"] = "cyclotronic_blast",
+							}, -- [25]
+							{
+								["enabled"] = true,
+								["action"] = "lurkers_insidious_gift",
+								["criteria"] = "debuff.vendetta.up",
+								["name"] = "lurkers_insidious_gift",
+							}, -- [26]
+							{
+								["enabled"] = true,
+								["action"] = "lustrous_golden_plumage",
+								["criteria"] = "debuff.vendetta.up",
+								["name"] = "lustrous_golden_plumage",
+							}, -- [27]
+							{
+								["enabled"] = true,
+								["action"] = "gladiators_medallion",
+								["criteria"] = "debuff.vendetta.up",
+								["effect_name"] = "gladiators_medallion",
+							}, -- [28]
+							{
+								["enabled"] = true,
+								["action"] = "gladiators_badge",
+								["criteria"] = "debuff.vendetta.up",
+								["effect_name"] = "gladiators_badge",
+							}, -- [29]
+							{
+								["action"] = "use_items",
+								["enabled"] = true,
+							}, -- [30]
+						},
+						["dot"] = {
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "priority_rotation & spell_targets.fan_of_knives > 3 & ( dot.garrote.remains < cooldown.garrote.duration || poisoned_bleeds > 5 )",
+								["var_name"] = "skip_cycle_garrote",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "priority_rotation & spell_targets.fan_of_knives > 3 & ( debuff.toxic_blade.up || ( poisoned_bleeds > 5 & ! azerite.scent_of_blood.enabled ) )",
+								["var_name"] = "skip_cycle_rupture",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "debuff.vendetta.up & ( debuff.toxic_blade.up || master_assassin_remains > 0 ) & dot.rupture.remains > 2",
+								["var_name"] = "skip_rupture",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.exsanguinate.enabled & ( ( combo_points >= cp_max_spend & cooldown.exsanguinate.remains < 1 ) || ( ! ticking & ( time > 10 || combo_points >= 2 ) ) )",
+								["action"] = "rupture",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["for_next"] = 1,
+								["action"] = "pool_resource",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "( ! talent.subterfuge.enabled || ! ( cooldown.vanish.up & cooldown.vendetta.remains <= 4 ) ) & combo_points.deficit >= 1 + 3 * ( azerite.shrouded_suffocation.enabled & cooldown.vanish.up ) & refreshable & ( pmultiplier <= 1 || remains <= tick_time & spell_targets.fan_of_knives >= 3 + azerite.shrouded_suffocation.enabled ) & ( ! exsanguinated || remains <= tick_time * 2 & spell_targets.fan_of_knives >= 3 + azerite.shrouded_suffocation.enabled ) & ! ss_buffed & ( target.time_to_die - remains ) > 4 & ( master_assassin_remains = 0 || ! ticking & azerite.shrouded_suffocation.enabled )",
+								["action"] = "garrote",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["for_next"] = 1,
+								["action"] = "pool_resource",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["action"] = "garrote",
+								["criteria"] = "! variable.skip_cycle_garrote & ( ! talent.subterfuge.enabled || ! ( cooldown.vanish.up & cooldown.vendetta.remains <= 4 ) ) & combo_points.deficit >= 1 + 3 * ( azerite.shrouded_suffocation.enabled & cooldown.vanish.up ) & refreshable & ( pmultiplier <= 1 || remains <= tick_time & spell_targets.fan_of_knives >= 3 + azerite.shrouded_suffocation.enabled ) & ( ! exsanguinated || remains <= tick_time * 2 & spell_targets.fan_of_knives >= 3 + azerite.shrouded_suffocation.enabled ) & ! ss_buffed & ( target.time_to_die - remains ) > 12 & ( master_assassin_remains = 0 || ! ticking & azerite.shrouded_suffocation.enabled )",
+								["cycle_targets"] = 1,
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["criteria"] = "spell_targets >= 2 & remains < 2 + ( spell_targets >= 5 ) & combo_points >= 4",
+								["action"] = "crimson_tempest",
+							}, -- [9]
+							{
+								["enabled"] = true,
+								["criteria"] = "! variable.skip_rupture & combo_points >= 4 & refreshable & ( pmultiplier <= 1 || remains <= tick_time & spell_targets.fan_of_knives >= 3 + azerite.shrouded_suffocation.enabled ) & ( ! exsanguinated || remains <= tick_time * 2 & spell_targets.fan_of_knives >= 3 + azerite.shrouded_suffocation.enabled ) & target.time_to_die - remains > 4",
+								["action"] = "rupture",
+							}, -- [10]
+							{
+								["enabled"] = true,
+								["action"] = "rupture",
+								["criteria"] = "! variable.skip_cycle_rupture & ! variable.skip_rupture & combo_points >= 4 & refreshable & ( pmultiplier <= 1 || remains <= tick_time & spell_targets.fan_of_knives >= 3 + azerite.shrouded_suffocation.enabled ) & ( ! exsanguinated || remains <= tick_time * 2 & spell_targets.fan_of_knives >= 3 + azerite.shrouded_suffocation.enabled ) & target.time_to_die - remains > 4",
+								["cycle_targets"] = 1,
+							}, -- [11]
+						},
+					},
+					["version"] = 20200330,
+					["warnings"] = "WARNING:  The import for 'essences' required some automated changes.\nLine 2: Converted 'exsanguinated.X' to 'debuff.X.exsanguinated' (1x).\n\nImported 7 action lists.\n",
+					["spec"] = 259,
+					["profile"] = "# Assassination Rogue\n# https://github.com/simulationcraft/simc/\n# March 30, 2020\n\n# Changes:\n# - Added Kick to default action list.\n# - Remove target_if.\n# - Added Use Items (outside of stealth).\n\n# Executed before combat begins. Accepts non-harmful actions only.\n# actions.precombat=flask\n# actions.precombat+=/augmentation\n# actions.precombat+=/food\n# Snapshot raid buffed stats before combat begins and pre-potting is done.\n# actions.precombat+=/snapshot_stats\nactions.precombat+=/apply_poison\nactions.precombat+=/marked_for_death,precombat_seconds=5,if=raid_event.adds.in>15\nactions.precombat+=/stealth\nactions.precombat+=/use_item,name=azsharas_font_of_power\nactions.precombat+=/potion\n\n# Executed every time the actor is available.\n# Restealth if possible (no vulnerable enemies in combat)\nactions=kick,if=!stealthed.all\nactions+=/stealth\nactions+=/variable,name=energy_regen_combined,value=energy.regen+poisoned_bleeds*7%(2*spell_haste)\nactions+=/variable,name=single_target,value=spell_targets.fan_of_knives<2\nactions+=/call_action_list,name=stealthed,if=stealthed.rogue\nactions+=/call_action_list,name=cds,if=(!talent.master_assassin.enabled||dot.garrote.ticking)\nactions+=/call_action_list,name=dot\nactions+=/call_action_list,name=direct\nactions+=/arcane_torrent,if=energy.deficit>=15+variable.energy_regen_combined\nactions+=/arcane_pulse\nactions+=/lights_judgment\nactions+=/bag_of_tricks\n\n# Cooldowns\nactions.cds=use_item,name=azsharas_font_of_power,if=!stealthed.all&master_assassin_remains=0&(cooldown.vendetta.remains<?(cooldown.toxic_blade.remains*equipped.ashvanes_razor_coral))<10+10*equipped.ashvanes_razor_coral&!debuff.vendetta.up&!debuff.toxic_blade.up\nactions.cds+=/call_action_list,name=essences,if=!stealthed.all&dot.rupture.ticking&master_assassin_remains=0\n# If adds are up, snipe the one with lowest TTD. Use when dying faster than CP deficit or without any CP.\nactions.cds+=/marked_for_death,cycle_targets=1,if=raid_event.adds.up&(target.time_to_die<combo_points.deficit*1.5||combo_points.deficit>=cp_max_spend)\n# If no adds will die within the next 30s, use MfD on boss without any CP.\nactions.cds+=/marked_for_death,if=raid_event.adds.in>30-raid_event.adds.duration&combo_points.deficit>=cp_max_spend\n# Vendetta logical conditionals based on current spec\nactions.cds+=/variable,name=vendetta_subterfuge_condition,value=!talent.subterfuge.enabled||!azerite.shrouded_suffocation.enabled||dot.garrote.pmultiplier>1&(spell_targets.fan_of_knives<6||!cooldown.vanish.up)\nactions.cds+=/variable,name=vendetta_nightstalker_condition,value=!talent.nightstalker.enabled||!talent.exsanguinate.enabled||cooldown.exsanguinate.remains<5-2*talent.deeper_stratagem.enabled\nactions.cds+=/variable,name=variable,name=vendetta_font_condition,value=!equipped.azsharas_font_of_power||azerite.shrouded_suffocation.enabled||debuff.razor_coral_debuff.down||cooldown.ashvanes_razor_coral.remains<10&(cooldown.toxic_blade.remains<1||debuff.toxic_blade.up)\nactions.cds+=/vendetta,if=!stealthed.rogue&dot.rupture.ticking&!debuff.vendetta.up&variable.vendetta_subterfuge_condition&variable.vendetta_nightstalker_condition&variable.vendetta_font_condition\n# Vanish with Exsg + Nightstalker: Maximum CP and Exsg ready for next GCD\nactions.cds+=/vanish,if=talent.exsanguinate.enabled&talent.nightstalker.enabled&combo_points>=cp_max_spend&cooldown.exsanguinate.remains<1\n# Vanish with Nightstalker + No Exsg: Maximum CP and Vendetta up (unless using VoP)\nactions.cds+=/vanish,if=talent.nightstalker.enabled&!talent.exsanguinate.enabled&combo_points>=cp_max_spend&(debuff.vendetta.up||essence.vision_of_perfection.enabled)\n# See full comment on https://github.com/Ravenholdt-TC/Rogue/wiki/Assassination-APL-Research.\nactions.cds+=/variable,name=ss_vanish_condition,value=azerite.shrouded_suffocation.enabled&(non_ss_buffed_targets>=1||spell_targets.fan_of_knives=3)&(ss_buffed_targets_above_pandemic=0||spell_targets.fan_of_knives>=6)\nactions.cds+=/pool_resource,for_next=1,extra_amount=45\nactions.cds+=/vanish,if=talent.subterfuge.enabled&!stealthed.rogue&cooldown.garrote.up&(variable.ss_vanish_condition||!azerite.shrouded_suffocation.enabled&(dot.garrote.refreshable||debuff.vendetta.up&dot.garrote.pmultiplier<=1))&combo_points.deficit>=((1+2*azerite.shrouded_suffocation.enabled)*spell_targets.fan_of_knives)>?4&raid_event.adds.in>12\n# Vanish with Master Assasin: No stealth and no active MA buff, Rupture not in refresh range, during Vendetta+TB+BotE (unless using VoP)\nactions.cds+=/vanish,if=talent.master_assassin.enabled&!stealthed.all&master_assassin_remains<=0&!dot.rupture.refreshable&dot.garrote.remains>3&(debuff.vendetta.up&(!talent.toxic_blade.enabled||debuff.toxic_blade.up)&(!essence.blood_of_the_enemy.major||debuff.blood_of_the_enemy.up)||essence.vision_of_perfection.enabled)\n# Shadowmeld for Shrouded Suffocation\nactions.cds+=/shadowmeld,if=!stealthed.all&azerite.shrouded_suffocation.enabled&dot.garrote.refreshable&dot.garrote.pmultiplier<=1&combo_points.deficit>=1\n# Exsanguinate when not stealthed and both Rupture and Garrote are up for long enough.\nactions.cds+=/exsanguinate,if=!stealthed.rogue&!dot.garrote.refreshable&dot.rupture.remains>4+4*cp_max_spend\nactions.cds+=/toxic_blade,if=dot.rupture.ticking&(!equipped.azsharas_font_of_power||cooldown.vendetta.remains>10)\nactions.cds+=/potion,if=buff.bloodlust.react||debuff.vendetta.up\nactions.cds+=/blood_fury,if=debuff.vendetta.up\nactions.cds+=/berserking,if=debuff.vendetta.up\nactions.cds+=/fireblood,if=debuff.vendetta.up\nactions.cds+=/ancestral_call,if=debuff.vendetta.up\nactions.cds+=/use_item,name=galecallers_boon,if=cooldown.vendetta.remains>45\nactions.cds+=/use_item,name=ashvanes_razor_coral,if=debuff.razor_coral_debuff.down||debuff.vendetta.remains>10-4*equipped.azsharas_font_of_power||target.time_to_die<20\nactions.cds+=/use_item,effect_name=cyclotronic_blast,if=master_assassin_remains=0&!debuff.vendetta.up&!debuff.toxic_blade.up&buff.memory_of_lucid_dreams.down&energy<80&dot.rupture.remains>4\nactions.cds+=/use_item,name=lurkers_insidious_gift,if=debuff.vendetta.up\nactions.cds+=/use_item,name=lustrous_golden_plumage,if=debuff.vendetta.up\nactions.cds+=/use_item,effect_name=gladiators_medallion,if=debuff.vendetta.up\nactions.cds+=/use_item,effect_name=gladiators_badge,if=debuff.vendetta.up\n# Default fallback for usable items: Use on cooldown.\nactions.cds+=/use_items\n\n# Direct damage abilities\n# Envenom at 4+ (5+ with DS) CP. Immediately on 2+ targets, with Vendetta, or with TB; otherwise wait for some energy. Also wait if Exsg combo is coming up.\nactions.direct=envenom,if=combo_points>=4+talent.deeper_stratagem.enabled&(debuff.vendetta.up||debuff.toxic_blade.up||energy.deficit<=(envenom_pool_deficit>?(25+variable.energy_regen_combined))||!variable.single_target)&(!talent.exsanguinate.enabled||cooldown.exsanguinate.remains>2)\nactions.direct+=/variable,name=use_filler,value=combo_points.deficit>1||energy.deficit<=25+variable.energy_regen_combined||!variable.single_target\n# With Echoing Blades, Fan of Knives at 2+ targets, or 3-4+ targets when Vendetta is up\nactions.direct+=/fan_of_knives,if=variable.use_filler&azerite.echoing_blades.enabled&spell_targets.fan_of_knives>=2+(debuff.vendetta.up*(1+(azerite.echoing_blades.rank=1)))\n# Fan of Knives at 19+ stacks of Hidden Blades or against 4+ (5+ with Double Dose) targets.\nactions.direct+=/fan_of_knives,if=variable.use_filler&(buff.hidden_blades.stack>=19||(!priority_rotation&spell_targets.fan_of_knives>=4+(azerite.double_dose.rank>2)+stealthed.rogue))\n# Fan of Knives to apply Deadly Poison if inactive on any target at 3 targets.\nactions.direct+=/fan_of_knives,cycle_targets=1,if=variable.use_filler&spell_targets.fan_of_knives>=3\nactions.direct+=/blindside,if=variable.use_filler&(buff.blindside.up||!talent.venom_rush.enabled&!azerite.double_dose.enabled)\n# Tab-Mutilate to apply Deadly Poison at 2 targets\nactions.direct+=/mutilate,cycle_targets=1,if=variable.use_filler&spell_targets.fan_of_knives=2\nactions.direct+=/mutilate,if=variable.use_filler\n\n# Damage over time abilities\n# Limit Garrotes on non-primrary targets for the priority rotation if 5+ bleeds are already up\nactions.dot=variable,name=skip_cycle_garrote,value=priority_rotation&spell_targets.fan_of_knives>3&(dot.garrote.remains<cooldown.garrote.duration||poisoned_bleeds>5)\n# Limit Ruptures on non-primrary targets for the priority rotation if 5+ bleeds are already up\nactions.dot+=/variable,name=skip_cycle_rupture,value=priority_rotation&spell_targets.fan_of_knives>3&(debuff.toxic_blade.up||(poisoned_bleeds>5&!azerite.scent_of_blood.enabled))\n# Limit Ruptures if Vendetta+Toxic Blade/Master Assassin is up and we have 2+ seconds left on the Rupture DoT\nactions.dot+=/variable,name=skip_rupture,value=debuff.vendetta.up&(debuff.toxic_blade.up||master_assassin_remains>0)&dot.rupture.remains>2\n# Special Rupture setup for Exsg\nactions.dot+=/rupture,if=talent.exsanguinate.enabled&((combo_points>=cp_max_spend&cooldown.exsanguinate.remains<1)||(!ticking&(time>10||combo_points>=2)))\n# Garrote upkeep, also tries to use it as a special generator for the last CP before a finisher\nactions.dot+=/pool_resource,for_next=1\nactions.dot+=/garrote,if=(!talent.subterfuge.enabled||!(cooldown.vanish.up&cooldown.vendetta.remains<=4))&combo_points.deficit>=1+3*(azerite.shrouded_suffocation.enabled&cooldown.vanish.up)&refreshable&(pmultiplier<=1||remains<=tick_time&spell_targets.fan_of_knives>=3+azerite.shrouded_suffocation.enabled)&(!exsanguinated||remains<=tick_time*2&spell_targets.fan_of_knives>=3+azerite.shrouded_suffocation.enabled)&!ss_buffed&(target.time_to_die-remains)>4&(master_assassin_remains=0||!ticking&azerite.shrouded_suffocation.enabled)\nactions.dot+=/pool_resource,for_next=1\nactions.dot+=/garrote,cycle_targets=1,if=!variable.skip_cycle_garrote&(!talent.subterfuge.enabled||!(cooldown.vanish.up&cooldown.vendetta.remains<=4))&combo_points.deficit>=1+3*(azerite.shrouded_suffocation.enabled&cooldown.vanish.up)&refreshable&(pmultiplier<=1||remains<=tick_time&spell_targets.fan_of_knives>=3+azerite.shrouded_suffocation.enabled)&(!exsanguinated||remains<=tick_time*2&spell_targets.fan_of_knives>=3+azerite.shrouded_suffocation.enabled)&!ss_buffed&(target.time_to_die-remains)>12&(master_assassin_remains=0||!ticking&azerite.shrouded_suffocation.enabled)\n# Crimson Tempest only on multiple targets at 4+ CP when running out in 2s (up to 4 targets) or 3s (5+ targets)\nactions.dot+=/crimson_tempest,if=spell_targets>=2&remains<2+(spell_targets>=5)&combo_points>=4\n# Keep up Rupture at 4+ on all targets (when living long enough and not snapshot)\nactions.dot+=/rupture,if=!variable.skip_rupture&combo_points>=4&refreshable&(pmultiplier<=1||remains<=tick_time&spell_targets.fan_of_knives>=3+azerite.shrouded_suffocation.enabled)&(!exsanguinated||remains<=tick_time*2&spell_targets.fan_of_knives>=3+azerite.shrouded_suffocation.enabled)&target.time_to_die-remains>4\nactions.dot+=/rupture,cycle_targets=1,if=!variable.skip_cycle_rupture&!variable.skip_rupture&combo_points>=4&refreshable&(pmultiplier<=1||remains<=tick_time&spell_targets.fan_of_knives>=3+azerite.shrouded_suffocation.enabled)&(!exsanguinated||remains<=tick_time*2&spell_targets.fan_of_knives>=3+azerite.shrouded_suffocation.enabled)&target.time_to_die-remains>4\n\n# Essences\nactions.essences=concentrated_flame,if=energy.time_to_max>1&!debuff.vendetta.up&(!dot.concentrated_flame_burn.ticking&!action.concentrated_flame.in_flight||full_recharge_time<gcd.max)\n# Always use Blood with Vendetta up. Hold for Exsanguinate. Use with TB up before a finisher as long as it runs for 10s during Vendetta.\nactions.essences+=/blood_of_the_enemy,if=debuff.vendetta.up&(exsanguinated.garrote||debuff.toxic_blade.up&combo_points.deficit<=1||debuff.vendetta.remains<=10)||time_to_die<=10\n# Attempt to align Guardian with Vendetta as long as it won't result in losing a full-value cast over the remaining duration of the fight\nactions.essences+=/guardian_of_azeroth,if=cooldown.vendetta.remains<3||debuff.vendetta.up||target.time_to_die<30\nactions.essences+=/guardian_of_azeroth,if=floor((target.time_to_die-30)%cooldown)>floor((target.time_to_die-30-cooldown.vendetta.remains)%cooldown)\nactions.essences+=/focused_azerite_beam,if=spell_targets.fan_of_knives>=2||raid_event.adds.in>60&energy<70\nactions.essences+=/purifying_blast,if=spell_targets.fan_of_knives>=2||raid_event.adds.in>60\nactions.essences+=/the_unbound_force,if=buff.reckless_force.up||buff.reckless_force_counter.stack<10\nactions.essences+=/ripple_in_space\nactions.essences+=/worldvein_resonance\nactions.essences+=/memory_of_lucid_dreams,if=energy<50&!cooldown.vendetta.up\n# Hold Reaping Flames for execute range or kill buffs, if possible. Always try to get the lowest cooldown based on available enemies.\nactions.essences+=/reaping_flames,cycle_targets=1,if=target.time_to_die<1.5||((target.health.pct>80||target.health.pct<=20)&(active_enemies=1||target.time_to_die>29))||(target.time_to_pct_20>30&(active_enemies=1||target.time_to_die>44))\n\n# Stealthed Actions\n# Nighstalker on 1T: Snapshot Rupture\nactions.stealthed=rupture,if=talent.nightstalker.enabled&combo_points>=4&target.time_to_die-remains>6\n# Subterfuge + Shrouded Suffocation: Ensure we use one global to apply Garrote to the main target if it is not snapshot yet, so all other main target abilities profit.\nactions.stealthed+=/pool_resource,for_next=1\nactions.stealthed+=/garrote,if=azerite.shrouded_suffocation.enabled&buff.subterfuge.up&buff.subterfuge.remains<1.3&!ss_buffed\n# Subterfuge: Apply or Refresh with buffed Garrotes\nactions.stealthed+=/pool_resource,for_next=1\nactions.stealthed+=/garrote,cycle_targets=1,if=talent.subterfuge.enabled&(remains<12||pmultiplier<=1)&target.time_to_die-remains>2\n# Subterfuge + Shrouded Suffocation in ST: Apply early Rupture that will be refreshed for pandemic\nactions.stealthed+=/rupture,if=talent.subterfuge.enabled&azerite.shrouded_suffocation.enabled&!dot.rupture.ticking&variable.single_target\n# Subterfuge w/ Shrouded Suffocation: Reapply for bonus CP and/or extended snapshot duration.\nactions.stealthed+=/pool_resource,for_next=1\nactions.stealthed+=/garrote,cycle_targets=1,if=talent.subterfuge.enabled&azerite.shrouded_suffocation.enabled&(active_enemies>1||!talent.exsanguinate.enabled)&target.time_to_die>remains&(remains<18||!ss_buffed)\n# Subterfuge + Exsg on 1T: Refresh Garrote at the end of stealth to get max duration before Exsanguinate\nactions.stealthed+=/pool_resource,for_next=1\nactions.stealthed+=/garrote,if=talent.subterfuge.enabled&talent.exsanguinate.enabled&active_enemies=1&buff.subterfuge.remains<1.3",
+				},
+			},
+		},
 		["Shaekhan - Zul'jin"] = {
 			["runOnce"] = {
 				["autoconvertDisplayToggle_20190621_1"] = true,
@@ -9263,15 +9372,15 @@ HekiliDB = {
 							}, -- [14]
 							{
 								["enabled"] = true,
-								["action"] = "ashvanes_razor_coral",
 								["criteria"] = "variable.tod_on_use_trinket & ( cooldown.touch_of_death.remains > 21 || variable.hold_tod ) & ( debuff.razor_coral_debuff.down || buff.storm_earth_and_fire.remains > 13 || time_to_die - cooldown.touch_of_death.remains < 40 & cooldown.touch_of_death.remains < 25 || time_to_die < 25 )",
 								["name"] = "ashvanes_razor_coral",
+								["action"] = "ashvanes_razor_coral",
 							}, -- [15]
 							{
 								["enabled"] = true,
-								["action"] = "ashvanes_razor_coral",
 								["criteria"] = "! variable.tod_on_use_trinket & ( debuff.razor_coral_debuff.down || ( ! equipped.dribbling_inkpod || target.time_to_pct_30 < 8 ) & ( dot.touch_of_death.remains || cooldown.touch_of_death.remains + 9 > time_to_die ) & buff.storm_earth_and_fire.up || time_to_die < 25 )",
 								["name"] = "ashvanes_razor_coral",
+								["action"] = "ashvanes_razor_coral",
 							}, -- [16]
 							{
 								["action"] = "the_unbound_force",
@@ -9557,9 +9666,9 @@ HekiliDB = {
 							}, -- [11]
 							{
 								["enabled"] = true,
-								["action"] = "ashvanes_razor_coral",
 								["criteria"] = "debuff.razor_coral_debuff.down || buff.serenity.remains > 9 || time_to_die < 25",
 								["name"] = "ashvanes_razor_coral",
+								["action"] = "ashvanes_razor_coral",
 							}, -- [12]
 							{
 								["enabled"] = true,
@@ -9777,9 +9886,9 @@ HekiliDB = {
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["action"] = "ashvanes_razor_coral",
 								["criteria"] = "debuff.razor_coral_debuff.down || debuff.conductive_ink_debuff.up & target.health.pct < 31 || time_to_die < 20",
 								["name"] = "ashvanes_razor_coral",
+								["action"] = "ashvanes_razor_coral",
 							}, -- [5]
 							{
 								["action"] = "use_items",
@@ -10148,10 +10257,11 @@ HekiliDB = {
 								["list_name"] = "build_a_shard",
 							}, -- [16]
 						},
-						["nether_portal_active"] = {
+						["implosion"] = {
 							{
-								["action"] = "bilescourge_bombers",
 								["enabled"] = true,
+								["criteria"] = "( buff.wild_imps.stack >= 6 & ( soul_shard < 3 || prev_gcd.1.call_dreadstalkers || buff.wild_imps.stack >= 9 || prev_gcd.1.bilescourge_bombers || ( ! prev_gcd.1.hand_of_guldan & ! prev_gcd.2.hand_of_guldan ) ) & ! prev_gcd.1.hand_of_guldan & ! prev_gcd.2.hand_of_guldan & buff.demonic_power.down ) || ( time_to_die < 3 & buff.wild_imps.stack > 0 ) || ( prev_gcd.2.call_dreadstalkers & buff.wild_imps.stack > 2 & ! talent.demonic_calling.enabled )",
+								["action"] = "implosion",
 							}, -- [1]
 							{
 								["enabled"] = true,
@@ -10160,45 +10270,77 @@ HekiliDB = {
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["criteria"] = "cooldown.summon_demonic_tyrant.remains > 40 || cooldown.summon_demonic_tyrant.remains < 12",
-								["action"] = "summon_vilefiend",
-							}, -- [3]
-							{
-								["enabled"] = true,
 								["criteria"] = "( cooldown.summon_demonic_tyrant.remains < 9 & buff.demonic_calling.remains ) || ( cooldown.summon_demonic_tyrant.remains < 11 & ! buff.demonic_calling.remains ) || cooldown.summon_demonic_tyrant.remains > 14",
 								["action"] = "call_dreadstalkers",
+							}, -- [3]
+							{
+								["action"] = "summon_demonic_tyrant",
+								["enabled"] = true,
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["action"] = "call_action_list",
-								["criteria"] = "soul_shard = 1 & ( cooldown.call_dreadstalkers.remains < action.shadow_bolt.cast_time || ( talent.bilescourge_bombers.enabled & cooldown.bilescourge_bombers.remains < action.shadow_bolt.cast_time ) )",
-								["list_name"] = "build_a_shard",
+								["criteria"] = "soul_shard >= 5",
+								["action"] = "hand_of_guldan",
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["criteria"] = "( ( cooldown.call_dreadstalkers.remains > action.demonbolt.cast_time ) & ( cooldown.call_dreadstalkers.remains > action.shadow_bolt.cast_time ) ) & cooldown.nether_portal.remains > ( 165 + action.hand_of_guldan.cast_time )",
+								["criteria"] = "soul_shard >= 3 & ( ( ( prev_gcd.2.hand_of_guldan || buff.wild_imps.stack >= 3 ) & buff.wild_imps.stack < 9 ) || cooldown.summon_demonic_tyrant.remains <= gcd * 2 || buff.demonic_power.remains > gcd * 2 )",
 								["action"] = "hand_of_guldan",
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.nether_portal.remains < 5 & soul_shard = 0",
-								["action"] = "summon_demonic_tyrant",
+								["criteria"] = "prev_gcd.1.hand_of_guldan & soul_shard >= 1 & ( buff.wild_imps.stack <= 3 || prev_gcd.3.hand_of_guldan ) & soul_shard < 4 & buff.demonic_core.up",
+								["action"] = "demonbolt",
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.nether_portal.remains < action.summon_demonic_tyrant.cast_time + 0.5",
-								["action"] = "summon_demonic_tyrant",
+								["criteria"] = "( cooldown.summon_demonic_tyrant.remains > 40 & spell_targets.implosion <= 2 ) || cooldown.summon_demonic_tyrant.remains < 12",
+								["action"] = "summon_vilefiend",
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.demonic_core.up & soul_shard <= 3",
-								["action"] = "demonbolt",
+								["criteria"] = "cooldown.summon_demonic_tyrant.remains > 9",
+								["action"] = "bilescourge_bombers",
 							}, -- [9]
+							{
+								["action"] = "focused_azerite_beam",
+								["enabled"] = true,
+							}, -- [10]
+							{
+								["action"] = "purifying_blast",
+								["enabled"] = true,
+							}, -- [11]
+							{
+								["action"] = "blood_of_the_enemy",
+								["enabled"] = true,
+							}, -- [12]
+							{
+								["enabled"] = true,
+								["criteria"] = "! dot.concentrated_flame_burn.remains & ! action.concentrated_flame.in_flight & spell_targets.implosion < 5",
+								["action"] = "concentrated_flame",
+							}, -- [13]
+							{
+								["enabled"] = true,
+								["criteria"] = "soul_shard < 5 & buff.demonic_core.stack <= 2",
+								["action"] = "soul_strike",
+							}, -- [14]
+							{
+								["enabled"] = true,
+								["criteria"] = "soul_shard <= 3 & buff.demonic_core.up & ( buff.demonic_core.stack >= 3 || buff.demonic_core.remains <= gcd * 5.7 )",
+								["action"] = "demonbolt",
+							}, -- [15]
+							{
+								["enabled"] = true,
+								["action"] = "doom",
+								["cycle_targets"] = 1,
+								["max_cycle_targets"] = "7",
+								["criteria"] = "refreshable",
+							}, -- [16]
 							{
 								["enabled"] = true,
 								["action"] = "call_action_list",
 								["list_name"] = "build_a_shard",
-							}, -- [10]
+							}, -- [17]
 						},
 						["default"] = {
 							{
@@ -10212,9 +10354,9 @@ HekiliDB = {
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["action"] = "azsharas_font_of_power",
 								["criteria"] = "cooldown.summon_demonic_tyrant.remains <= 20 & ! talent.nether_portal.enabled",
 								["name"] = "azsharas_font_of_power",
+								["action"] = "azsharas_font_of_power",
 							}, -- [3]
 							{
 								["enabled"] = true,
@@ -10253,39 +10395,39 @@ HekiliDB = {
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["action"] = "cyclotronic_blast",
 								["criteria"] = "cooldown.summon_demonic_tyrant.remains >= 20 & cooldown.summon_demonic_tyrant.remains <= cooldown.summon_demonic_tyrant.duration - 15 || time_to_die <= 30",
 								["name"] = "pocketsized_computation_device",
+								["action"] = "cyclotronic_blast",
 							}, -- [11]
 							{
 								["enabled"] = true,
-								["action"] = "rotcrusted_voodoo_doll",
 								["criteria"] = "( cooldown.summon_demonic_tyrant.remains >= 25 || time_to_die <= 30 )",
 								["name"] = "rotcrusted_voodoo_doll",
+								["action"] = "rotcrusted_voodoo_doll",
 							}, -- [12]
 							{
 								["enabled"] = true,
-								["action"] = "shiver_venom_relic",
 								["criteria"] = "( cooldown.summon_demonic_tyrant.remains >= 25 || time_to_die <= 30 )",
 								["name"] = "shiver_venom_relic",
+								["action"] = "shiver_venom_relic",
 							}, -- [13]
 							{
 								["enabled"] = true,
-								["action"] = "aquipotent_nautilus",
 								["criteria"] = "( cooldown.summon_demonic_tyrant.remains >= 25 || time_to_die <= 30 )",
 								["name"] = "aquipotent_nautilus",
+								["action"] = "aquipotent_nautilus",
 							}, -- [14]
 							{
 								["enabled"] = true,
-								["action"] = "tidestorm_codex",
 								["criteria"] = "( cooldown.summon_demonic_tyrant.remains >= 25 || time_to_die <= 30 )",
 								["name"] = "tidestorm_codex",
+								["action"] = "tidestorm_codex",
 							}, -- [15]
 							{
 								["enabled"] = true,
-								["action"] = "vial_of_storms",
 								["criteria"] = "( cooldown.summon_demonic_tyrant.remains >= 25 || time_to_die <= 30 )",
 								["name"] = "vial_of_storms",
+								["action"] = "vial_of_storms",
 							}, -- [16]
 							{
 								["enabled"] = true,
@@ -10295,9 +10437,9 @@ HekiliDB = {
 							}, -- [17]
 							{
 								["enabled"] = true,
-								["action"] = "azsharas_font_of_power",
 								["criteria"] = "( time > 30 || ! talent.nether_portal.enabled ) & talent.grimoire_felguard.enabled & ( time_to_die > 120 || time_to_die < cooldown.summon_demonic_tyrant.remains + 15 ) || time_to_die <= 35",
 								["name"] = "azsharas_font_of_power",
+								["action"] = "azsharas_font_of_power",
 							}, -- [18]
 							{
 								["enabled"] = true,
@@ -10458,97 +10600,26 @@ HekiliDB = {
 								["enabled"] = true,
 							}, -- [5]
 						},
-						["implosion"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "( buff.wild_imps.stack >= 6 & ( soul_shard < 3 || prev_gcd.1.call_dreadstalkers || buff.wild_imps.stack >= 9 || prev_gcd.1.bilescourge_bombers || ( ! prev_gcd.1.hand_of_guldan & ! prev_gcd.2.hand_of_guldan ) ) & ! prev_gcd.1.hand_of_guldan & ! prev_gcd.2.hand_of_guldan & buff.demonic_power.down ) || ( time_to_die < 3 & buff.wild_imps.stack > 0 ) || ( prev_gcd.2.call_dreadstalkers & buff.wild_imps.stack > 2 & ! talent.demonic_calling.enabled )",
-								["action"] = "implosion",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "cooldown.summon_demonic_tyrant.remains < 13 || ! equipped.wilfreds_sigil_of_superior_summoning",
-								["action"] = "grimoire_felguard",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "( cooldown.summon_demonic_tyrant.remains < 9 & buff.demonic_calling.remains ) || ( cooldown.summon_demonic_tyrant.remains < 11 & ! buff.demonic_calling.remains ) || cooldown.summon_demonic_tyrant.remains > 14",
-								["action"] = "call_dreadstalkers",
-							}, -- [3]
-							{
-								["action"] = "summon_demonic_tyrant",
-								["enabled"] = true,
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "soul_shard >= 5",
-								["action"] = "hand_of_guldan",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "soul_shard >= 3 & ( ( ( prev_gcd.2.hand_of_guldan || buff.wild_imps.stack >= 3 ) & buff.wild_imps.stack < 9 ) || cooldown.summon_demonic_tyrant.remains <= gcd * 2 || buff.demonic_power.remains > gcd * 2 )",
-								["action"] = "hand_of_guldan",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "prev_gcd.1.hand_of_guldan & soul_shard >= 1 & ( buff.wild_imps.stack <= 3 || prev_gcd.3.hand_of_guldan ) & soul_shard < 4 & buff.demonic_core.up",
-								["action"] = "demonbolt",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["criteria"] = "( cooldown.summon_demonic_tyrant.remains > 40 & spell_targets.implosion <= 2 ) || cooldown.summon_demonic_tyrant.remains < 12",
-								["action"] = "summon_vilefiend",
-							}, -- [8]
-							{
-								["enabled"] = true,
-								["criteria"] = "cooldown.summon_demonic_tyrant.remains > 9",
-								["action"] = "bilescourge_bombers",
-							}, -- [9]
-							{
-								["action"] = "focused_azerite_beam",
-								["enabled"] = true,
-							}, -- [10]
-							{
-								["action"] = "purifying_blast",
-								["enabled"] = true,
-							}, -- [11]
-							{
-								["action"] = "blood_of_the_enemy",
-								["enabled"] = true,
-							}, -- [12]
-							{
-								["enabled"] = true,
-								["criteria"] = "! dot.concentrated_flame_burn.remains & ! action.concentrated_flame.in_flight & spell_targets.implosion < 5",
-								["action"] = "concentrated_flame",
-							}, -- [13]
-							{
-								["enabled"] = true,
-								["criteria"] = "soul_shard < 5 & buff.demonic_core.stack <= 2",
-								["action"] = "soul_strike",
-							}, -- [14]
-							{
-								["enabled"] = true,
-								["criteria"] = "soul_shard <= 3 & buff.demonic_core.up & ( buff.demonic_core.stack >= 3 || buff.demonic_core.remains <= gcd * 5.7 )",
-								["action"] = "demonbolt",
-							}, -- [15]
-							{
-								["enabled"] = true,
-								["action"] = "doom",
-								["cycle_targets"] = 1,
-								["max_cycle_targets"] = "7",
-								["criteria"] = "refreshable",
-							}, -- [16]
+						["nether_portal"] = {
 							{
 								["enabled"] = true,
 								["action"] = "call_action_list",
-								["list_name"] = "build_a_shard",
-							}, -- [17]
+								["criteria"] = "cooldown.nether_portal.remains < 20",
+								["list_name"] = "nether_portal_building",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["criteria"] = "buff.nether_portal.up",
+								["list_name"] = "nether_portal_active",
+							}, -- [2]
 						},
 						["nether_portal_building"] = {
 							{
 								["enabled"] = true,
-								["action"] = "azsharas_font_of_power",
 								["criteria"] = "cooldown.nether_portal.remains <= 5 * spell_haste",
 								["name"] = "azsharas_font_of_power",
+								["action"] = "azsharas_font_of_power",
 							}, -- [1]
 							{
 								["enabled"] = true,
@@ -10602,19 +10673,57 @@ HekiliDB = {
 								["enabled"] = true,
 							}, -- [3]
 						},
-						["nether_portal"] = {
+						["nether_portal_active"] = {
 							{
+								["action"] = "bilescourge_bombers",
 								["enabled"] = true,
-								["action"] = "call_action_list",
-								["criteria"] = "cooldown.nether_portal.remains < 20",
-								["list_name"] = "nether_portal_building",
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["action"] = "call_action_list",
-								["criteria"] = "buff.nether_portal.up",
-								["list_name"] = "nether_portal_active",
+								["criteria"] = "cooldown.summon_demonic_tyrant.remains < 13 || ! equipped.wilfreds_sigil_of_superior_summoning",
+								["action"] = "grimoire_felguard",
 							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "cooldown.summon_demonic_tyrant.remains > 40 || cooldown.summon_demonic_tyrant.remains < 12",
+								["action"] = "summon_vilefiend",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "( cooldown.summon_demonic_tyrant.remains < 9 & buff.demonic_calling.remains ) || ( cooldown.summon_demonic_tyrant.remains < 11 & ! buff.demonic_calling.remains ) || cooldown.summon_demonic_tyrant.remains > 14",
+								["action"] = "call_dreadstalkers",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["criteria"] = "soul_shard = 1 & ( cooldown.call_dreadstalkers.remains < action.shadow_bolt.cast_time || ( talent.bilescourge_bombers.enabled & cooldown.bilescourge_bombers.remains < action.shadow_bolt.cast_time ) )",
+								["list_name"] = "build_a_shard",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "( ( cooldown.call_dreadstalkers.remains > action.demonbolt.cast_time ) & ( cooldown.call_dreadstalkers.remains > action.shadow_bolt.cast_time ) ) & cooldown.nether_portal.remains > ( 165 + action.hand_of_guldan.cast_time )",
+								["action"] = "hand_of_guldan",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.nether_portal.remains < 5 & soul_shard = 0",
+								["action"] = "summon_demonic_tyrant",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.nether_portal.remains < action.summon_demonic_tyrant.cast_time + 0.5",
+								["action"] = "summon_demonic_tyrant",
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.demonic_core.up & soul_shard <= 3",
+								["action"] = "demonbolt",
+							}, -- [9]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["list_name"] = "build_a_shard",
+							}, -- [10]
 						},
 					},
 				},
@@ -10832,9 +10941,9 @@ HekiliDB = {
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["action"] = "azsharas_font_of_power",
 								["criteria"] = "cooldown.summon_infernal.up || cooldown.summon_infernal.remains <= 4",
 								["name"] = "azsharas_font_of_power",
+								["action"] = "azsharas_font_of_power",
 							}, -- [3]
 							{
 								["action"] = "summon_infernal",
@@ -10960,39 +11069,39 @@ HekiliDB = {
 							}, -- [28]
 							{
 								["enabled"] = true,
-								["action"] = "cyclotronic_blast",
 								["criteria"] = "dot.immolate.remains >= 5 & ( cooldown.summon_infernal.remains >= 20 || time_to_die < 30 )",
 								["name"] = "pocketsized_computation_device",
+								["action"] = "cyclotronic_blast",
 							}, -- [29]
 							{
 								["enabled"] = true,
-								["action"] = "rotcrusted_voodoo_doll",
 								["criteria"] = "dot.immolate.remains >= 5 & ( cooldown.summon_infernal.remains >= 20 || time_to_die < 30 )",
 								["name"] = "rotcrusted_voodoo_doll",
+								["action"] = "rotcrusted_voodoo_doll",
 							}, -- [30]
 							{
 								["enabled"] = true,
-								["action"] = "shiver_venom_relic",
 								["criteria"] = "dot.immolate.remains >= 5 & ( cooldown.summon_infernal.remains >= 20 || time_to_die < 30 )",
 								["name"] = "shiver_venom_relic",
+								["action"] = "shiver_venom_relic",
 							}, -- [31]
 							{
 								["enabled"] = true,
-								["action"] = "aquipotent_nautilus",
 								["criteria"] = "dot.immolate.remains >= 5 & ( cooldown.summon_infernal.remains >= 20 || time_to_die < 30 )",
 								["name"] = "aquipotent_nautilus",
+								["action"] = "aquipotent_nautilus",
 							}, -- [32]
 							{
 								["enabled"] = true,
-								["action"] = "tidestorm_codex",
 								["criteria"] = "dot.immolate.remains >= 5 & ( cooldown.summon_infernal.remains >= 20 || time_to_die < 30 )",
 								["name"] = "tidestorm_codex",
+								["action"] = "tidestorm_codex",
 							}, -- [33]
 							{
 								["enabled"] = true,
-								["action"] = "vial_of_storms",
 								["criteria"] = "dot.immolate.remains >= 5 & ( cooldown.summon_infernal.remains >= 20 || time_to_die < 30 )",
 								["name"] = "vial_of_storms",
+								["action"] = "vial_of_storms",
 							}, -- [34]
 						},
 						["default"] = {
@@ -11319,9 +11428,9 @@ HekiliDB = {
 							}, -- [26]
 							{
 								["enabled"] = true,
-								["action"] = "azsharas_font_of_power",
 								["criteria"] = "time <= 3",
 								["name"] = "azsharas_font_of_power",
+								["action"] = "azsharas_font_of_power",
 							}, -- [27]
 							{
 								["enabled"] = true,
@@ -11399,9 +11508,9 @@ HekiliDB = {
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["action"] = "azsharas_font_of_power",
 								["criteria"] = "( ! talent.phantom_singularity.enabled || cooldown.phantom_singularity.remains < 4 * spell_haste || ! cooldown.phantom_singularity.remains ) & cooldown.summon_darkglare.remains < 19 * spell_haste + soul_shard * azerite.dreadful_calling.rank & dot.agony.remains & dot.corruption.remains & ( dot.siphon_life.remains || ! talent.siphon_life.enabled )",
 								["name"] = "azsharas_font_of_power",
+								["action"] = "azsharas_font_of_power",
 							}, -- [2]
 							{
 								["enabled"] = true,
@@ -11440,39 +11549,39 @@ HekiliDB = {
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["action"] = "cyclotronic_blast",
 								["criteria"] = "( cooldown.summon_darkglare.remains >= 25 || time_to_die <= 30 ) & ( cooldown.deathbolt.remains || ! talent.deathbolt.enabled )",
 								["name"] = "pocketsized_computation_device",
+								["action"] = "cyclotronic_blast",
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["action"] = "rotcrusted_voodoo_doll",
 								["criteria"] = "( cooldown.summon_darkglare.remains >= 25 || time_to_die <= 30 ) & ( cooldown.deathbolt.remains || ! talent.deathbolt.enabled )",
 								["name"] = "rotcrusted_voodoo_doll",
+								["action"] = "rotcrusted_voodoo_doll",
 							}, -- [11]
 							{
 								["enabled"] = true,
-								["action"] = "shiver_venom_relic",
 								["criteria"] = "( cooldown.summon_darkglare.remains >= 25 || time_to_die <= 30 ) & ( cooldown.deathbolt.remains || ! talent.deathbolt.enabled )",
 								["name"] = "shiver_venom_relic",
+								["action"] = "shiver_venom_relic",
 							}, -- [12]
 							{
 								["enabled"] = true,
-								["action"] = "aquipotent_nautilus",
 								["criteria"] = "( cooldown.summon_darkglare.remains >= 25 || time_to_die <= 30 ) & ( cooldown.deathbolt.remains || ! talent.deathbolt.enabled )",
 								["name"] = "aquipotent_nautilus",
+								["action"] = "aquipotent_nautilus",
 							}, -- [13]
 							{
 								["enabled"] = true,
-								["action"] = "tidestorm_codex",
 								["criteria"] = "( cooldown.summon_darkglare.remains >= 25 || time_to_die <= 30 ) & ( cooldown.deathbolt.remains || ! talent.deathbolt.enabled )",
 								["name"] = "tidestorm_codex",
+								["action"] = "tidestorm_codex",
 							}, -- [14]
 							{
 								["enabled"] = true,
-								["action"] = "vial_of_storms",
 								["criteria"] = "( cooldown.summon_darkglare.remains >= 25 || time_to_die <= 30 ) & ( cooldown.deathbolt.remains || ! talent.deathbolt.enabled )",
 								["name"] = "vial_of_storms",
+								["action"] = "vial_of_storms",
 							}, -- [15]
 							{
 								["action"] = "ripple_in_space",
@@ -11682,28 +11791,6 @@ HekiliDB = {
 			},
 		},
 		["Avisar - Dalaran"] = {
-			["displays"] = {
-				["Interrupts"] = {
-					["rel"] = "CENTER",
-					["y"] = -234.9996795654297,
-					["x"] = -109.9997482299805,
-				},
-				["Primary"] = {
-					["y"] = -235.0000915527344,
-					["x"] = -55,
-					["rel"] = "CENTER",
-				},
-				["Defensives"] = {
-					["rel"] = "CENTER",
-					["y"] = -235.0000457763672,
-					["x"] = -163.9998931884766,
-				},
-				["AOE"] = {
-					["rel"] = "CENTER",
-					["y"] = -149.0003662109375,
-					["x"] = -54.99961853027344,
-				},
-			},
 			["runOnce"] = {
 				["autoconvertDisplayToggle_20190621_1"] = true,
 				["forceReloadClassDefaultOptions_20220306_70"] = true,
@@ -11736,6 +11823,28 @@ HekiliDB = {
 				},
 				[102] = {
 					["enhancedRecheck"] = true,
+				},
+			},
+			["displays"] = {
+				["Defensives"] = {
+					["rel"] = "CENTER",
+					["x"] = -163.9998931884766,
+					["y"] = -235.0000457763672,
+				},
+				["Primary"] = {
+					["y"] = -235.0000915527344,
+					["x"] = -55,
+					["rel"] = "CENTER",
+				},
+				["AOE"] = {
+					["rel"] = "CENTER",
+					["x"] = -54.99961853027344,
+					["y"] = -149.0003662109375,
+				},
+				["Interrupts"] = {
+					["rel"] = "CENTER",
+					["x"] = -109.9997482299805,
+					["y"] = -234.9996795654297,
 				},
 			},
 			["packs"] = {
@@ -11981,9 +12090,9 @@ HekiliDB = {
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["name"] = "ring_of_collapsing_futures",
 								["action"] = "ring_of_collapsing_futures",
 								["criteria"] = "! buff.temptation.up || fight_remains < 15",
+								["name"] = "ring_of_collapsing_futures",
 							}, -- [11]
 							{
 								["enabled"] = true,
@@ -11991,45 +12100,45 @@ HekiliDB = {
 							}, -- [12]
 							{
 								["enabled"] = true,
-								["name"] = "the_first_sigil",
 								["action"] = "the_first_sigil",
 								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || fight_remains < 20",
+								["name"] = "the_first_sigil",
 							}, -- [13]
 							{
 								["enabled"] = true,
-								["name"] = "enforcers_stun_grenade",
 								["action"] = "enforcers_stun_grenade",
 								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || fight_remains < 20",
+								["name"] = "enforcers_stun_grenade",
 							}, -- [14]
 							{
 								["enabled"] = true,
-								["name"] = "inscrutable_quantum_device",
 								["action"] = "inscrutable_quantum_device",
 								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || boss & fight_remains < 30",
+								["name"] = "inscrutable_quantum_device",
 							}, -- [15]
 							{
 								["enabled"] = true,
-								["name"] = "overwhelming_power_crystal",
 								["action"] = "overwhelming_power_crystal",
 								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || boss & fight_remains < 15",
+								["name"] = "overwhelming_power_crystal",
 							}, -- [16]
 							{
 								["enabled"] = true,
-								["name"] = "darkmoon_deck_voracity",
 								["action"] = "darkmoon_deck_voracity",
 								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || boss & fight_remains < 20",
+								["name"] = "darkmoon_deck_voracity",
 							}, -- [17]
 							{
 								["enabled"] = true,
-								["name"] = "macabre_sheet_music",
 								["action"] = "macabre_sheet_music",
 								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || boss & fight_remains < 20",
+								["name"] = "macabre_sheet_music",
 							}, -- [18]
 							{
 								["enabled"] = true,
-								["name"] = "faulty_countermeasure",
 								["action"] = "faulty_countermeasure",
 								["criteria"] = "! talent.crusade.enabled || buff.crusade.up || boss & fight_remains < 30",
+								["name"] = "faulty_countermeasure",
 							}, -- [19]
 							{
 								["enabled"] = true,
@@ -12089,9 +12198,9 @@ HekiliDB = {
 							}, -- [30]
 							{
 								["enabled"] = true,
-								["name"] = "scars_of_fraternal_strife",
 								["action"] = "scars_of_fraternal_strife",
 								["criteria"] = "! buff.scars_of_fraternal_strife_4.up || boss & fight_remains < 35",
+								["name"] = "scars_of_fraternal_strife",
 							}, -- [31]
 							{
 								["enabled"] = true,
@@ -12105,21 +12214,21 @@ HekiliDB = {
 							}, -- [33]
 							{
 								["enabled"] = true,
-								["name"] = "heart_of_the_swarm",
 								["action"] = "heart_of_the_swarm",
 								["criteria"] = "! buff.avenging_wrath.up & ! buff.crusade.up",
+								["name"] = "heart_of_the_swarm",
 							}, -- [34]
 							{
 								["enabled"] = true,
-								["name"] = "gladiators_badge",
 								["action"] = "gladiators_badge",
 								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack >= 10 || cooldown.avenging_wrath.remains > 45 || cooldown.crusade.remains > 45",
+								["name"] = "gladiators_badge",
 							}, -- [35]
 							{
 								["enabled"] = true,
-								["name"] = "gavel_of_the_first_arbiter",
 								["action"] = "gavel_of_the_first_arbiter",
 								["criteria"] = "( buff.avenging_wrath.up || buff.crusade.up )",
+								["name"] = "gavel_of_the_first_arbiter",
 							}, -- [36]
 							{
 								["enabled"] = true,
@@ -12488,15 +12597,15 @@ HekiliDB = {
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["action"] = "grongs_primal_rage",
 								["criteria"] = "( ( cooldown.judgment.full_recharge_time > 4 || ( ! talent.crusaders_judgment.enabled & prev_gcd.1.judgment ) ) & cooldown.avengers_shield.remains > 4 & buff.seraphim.remains > 4 ) || ( buff.seraphim.remains < 4 )",
 								["name"] = "grongs_primal_rage",
+								["action"] = "grongs_primal_rage",
 							}, -- [11]
 							{
 								["enabled"] = true,
-								["action"] = "merekthas_fang",
 								["criteria"] = "! buff.avenging_wrath.up & ( buff.seraphim.up || ! talent.seraphim.enabled )",
 								["name"] = "merekthas_fang",
+								["action"] = "merekthas_fang",
 							}, -- [12]
 							{
 								["enabled"] = true,
@@ -12547,9 +12656,9 @@ HekiliDB = {
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["action"] = "guardian_of_ancient_kings",
 								["description"] = "actions.mitigation+=/shield_of_the_righteous,if=buff.shield_of_the_righteous.down&(holy_power>2||buff.divine_purpose.up)",
 								["criteria"] = "incoming_damage_2500ms > health.max * 0.4 & ! ( buff.ardent_defender.up || buff.guardian_of_ancient_kings.up || buff.divine_shield.up || buff.potion.up )",
+								["action"] = "guardian_of_ancient_kings",
 							}, -- [9]
 							{
 								["enabled"] = true,
@@ -12770,36 +12879,6 @@ HekiliDB = {
 								["action"] = "frostbrand",
 							}, -- [2]
 						},
-						["asc"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "! buff.crash_lightning.up & active_enemies > 1 & variable.furyCheck_CL",
-								["action"] = "crash_lightning",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.landslide.enabled & ! buff.landslide.up & charges_fractional > 1.7",
-								["action"] = "rockbiter",
-							}, -- [2]
-							{
-								["action"] = "windstrike",
-								["enabled"] = true,
-							}, -- [3]
-						},
-						["precombat"] = {
-							{
-								["action"] = "totem_mastery",
-								["enabled"] = true,
-							}, -- [1]
-							{
-								["action"] = "lightning_shield",
-								["enabled"] = true,
-							}, -- [2]
-							{
-								["action"] = "potion",
-								["enabled"] = true,
-							}, -- [3]
-						},
 						["freezerburn_core"] = {
 							{
 								["enabled"] = true,
@@ -12849,206 +12928,19 @@ HekiliDB = {
 								["action"] = "lava_lash",
 							}, -- [9]
 						},
-						["default_core"] = {
+						["precombat"] = {
 							{
-								["enabled"] = true,
-								["criteria"] = "variable.furyCheck_ES",
-								["action"] = "earthen_spike",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "active_enemies > 1 & azerite.lightning_conduit.enabled & ! debuff.lightning_conduit.up & variable.furyCheck_SS",
-								["action"] = "stormstrike",
-								["cycle_targets"] = 1,
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.stormbringer.up || ( active_enemies > 1 & buff.gathering_storms.up & variable.furyCheck_SS )",
-								["action"] = "stormstrike",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "active_enemies >= 3 & variable.furyCheck_CL",
-								["action"] = "crash_lightning",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.overcharge.enabled & active_enemies = 1 & variable.furyCheck_LB & maelstrom >= 40",
-								["action"] = "lightning_bolt",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.OCPool_SS & variable.furyCheck_SS",
-								["action"] = "stormstrike",
-							}, -- [6]
-						},
-						["cds"] = {
-							{
-								["enabled"] = false,
-								["criteria"] = "azerite.ancestral_resonance.enabled",
-								["action"] = "bloodlust",
-							}, -- [1]
-							{
-								["action"] = "worldvein_resonance",
-								["enabled"] = true,
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.cooldown_sync",
-								["action"] = "berserking",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["name"] = "azsharas_font_of_power",
-								["action"] = "azsharas_font_of_power",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.cooldown_sync",
-								["action"] = "blood_fury",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.cooldown_sync",
-								["action"] = "fireblood",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.cooldown_sync",
-								["action"] = "ancestral_call",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.ascendance.up || ! talent.ascendance.enabled & feral_spirit.remains > 5 || target.time_to_die <= 60",
-								["action"] = "potion",
-							}, -- [8]
-							{
-								["action"] = "guardian_of_azeroth",
-								["enabled"] = true,
-							}, -- [9]
-							{
-								["action"] = "feral_spirit",
-								["enabled"] = true,
-							}, -- [10]
-							{
-								["enabled"] = true,
-								["criteria"] = "raid_event.adds.in > 90 || active_enemies > 1",
-								["action"] = "blood_of_the_enemy",
-							}, -- [11]
-							{
-								["enabled"] = true,
-								["criteria"] = "cooldown.strike.remains > 0",
-								["action"] = "ascendance",
-							}, -- [12]
-							{
-								["enabled"] = true,
-								["name"] = "ashvanes_razor_coral",
-								["action"] = "ashvanes_razor_coral",
-								["criteria"] = "debuff.razor_coral_debuff.down || ( target.time_to_die < 20 & debuff.razor_coral_debuff.stack > 2 )",
-							}, -- [13]
-							{
-								["enabled"] = true,
-								["name"] = "ashvanes_razor_coral",
-								["action"] = "ashvanes_razor_coral",
-								["criteria"] = "debuff.razor_coral_debuff.stack > 2 & debuff.conductive_ink_debuff.down & ( buff.ascendance.remains > 10 || buff.molten_weapon.remains > 10 || buff.crackling_surge.remains > 10 || buff.icy_edge.remains > 10 || debuff.earthen_spike.remains > 6 )",
-							}, -- [14]
-							{
-								["enabled"] = true,
-								["name"] = "ashvanes_razor_coral",
-								["action"] = "ashvanes_razor_coral",
-								["criteria"] = "( debuff.conductive_ink_debuff.up || buff.ascendance.remains > 10 || buff.molten_weapon.remains > 10 || buff.crackling_surge.remains > 10 || buff.icy_edge.remains > 10 || debuff.earthen_spike.remains > 6 ) & target.health.pct < 31",
-							}, -- [15]
-							{
-								["action"] = "use_items",
-								["enabled"] = true,
-							}, -- [16]
-						},
-						["priority"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "active_enemies >= ( 8 - ( talent.forceful_winds.enabled * 3 ) ) & variable.freezerburn_enabled & variable.furyCheck_CL",
-								["action"] = "crash_lightning",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.reckless_force.up || time < 5",
-								["action"] = "the_unbound_force",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "azerite.primal_primer.rank >= 2 & debuff.primal_primer.stack = 10 & active_enemies = 1 & variable.freezerburn_enabled & variable.furyCheck_LL",
-								["action"] = "lava_lash",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.freezerburn_enabled & buff.flametongue.remains < gcd & active_enemies > 1",
-								["action"] = "flametongue",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.freezerburn_enabled & buff.frostbrand.remains < gcd & active_enemies > 1",
-								["action"] = "frostbrand",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "! buff.crash_lightning.up & active_enemies > 1 & variable.furyCheck_CL",
-								["action"] = "crash_lightning",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "! buff.fury_of_air.up & maelstrom >= 20 & spell_targets.fury_of_air_damage >= ( 1 + variable.freezerburn_enabled )",
-								["action"] = "fury_of_air",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.fury_of_air.up & spell_targets.fury_of_air_damage < ( 1 + variable.freezerburn_enabled )",
-								["action"] = "fury_of_air",
-							}, -- [8]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.resonance_totem.remains <= 2 * gcd",
 								["action"] = "totem_mastery",
-							}, -- [9]
-							{
 								["enabled"] = true,
-								["criteria"] = "active_enemies >= 3 & ( ! essence.blood_of_the_enemy.major || ( essence.blood_of_the_enemy.major & ( buff.seething_rage.up || cooldown.blood_of_the_enemy.remains > 40 ) ) )",
-								["action"] = "sundering",
-							}, -- [10]
+							}, -- [1]
 							{
+								["action"] = "lightning_shield",
 								["enabled"] = true,
-								["criteria"] = "active_enemies > 1",
-								["action"] = "focused_azerite_beam",
-							}, -- [11]
+							}, -- [2]
 							{
+								["action"] = "potion",
 								["enabled"] = true,
-								["criteria"] = "active_enemies > 1",
-								["action"] = "purifying_blast",
-							}, -- [12]
-							{
-								["enabled"] = true,
-								["criteria"] = "active_enemies > 1",
-								["action"] = "ripple_in_space",
-							}, -- [13]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.landslide.enabled & ! buff.landslide.up & charges_fractional > 1.7",
-								["action"] = "rockbiter",
-							}, -- [14]
-							{
-								["enabled"] = true,
-								["criteria"] = "( azerite.natural_harmony.enabled & buff.natural_harmony_frost.remains <= 2 * gcd ) & talent.hailstorm.enabled & variable.furyCheck_FB",
-								["action"] = "frostbrand",
-							}, -- [15]
-							{
-								["enabled"] = true,
-								["criteria"] = "( azerite.natural_harmony.enabled & buff.natural_harmony_fire.remains <= 2 * gcd )",
-								["action"] = "flametongue",
-							}, -- [16]
-							{
-								["enabled"] = true,
-								["criteria"] = "( azerite.natural_harmony.enabled & buff.natural_harmony_nature.remains <= 2 * gcd ) & maelstrom < 70",
-								["action"] = "rockbiter",
-							}, -- [17]
+							}, -- [3]
 						},
 						["default"] = {
 							{
@@ -13217,6 +13109,223 @@ HekiliDB = {
 								["action"] = "call_action_list",
 								["list_name"] = "filler",
 							}, -- [26]
+						},
+						["default_core"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.furyCheck_ES",
+								["action"] = "earthen_spike",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "active_enemies > 1 & azerite.lightning_conduit.enabled & ! debuff.lightning_conduit.up & variable.furyCheck_SS",
+								["action"] = "stormstrike",
+								["cycle_targets"] = 1,
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.stormbringer.up || ( active_enemies > 1 & buff.gathering_storms.up & variable.furyCheck_SS )",
+								["action"] = "stormstrike",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "active_enemies >= 3 & variable.furyCheck_CL",
+								["action"] = "crash_lightning",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.overcharge.enabled & active_enemies = 1 & variable.furyCheck_LB & maelstrom >= 40",
+								["action"] = "lightning_bolt",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.OCPool_SS & variable.furyCheck_SS",
+								["action"] = "stormstrike",
+							}, -- [6]
+						},
+						["cds"] = {
+							{
+								["enabled"] = false,
+								["criteria"] = "azerite.ancestral_resonance.enabled",
+								["action"] = "bloodlust",
+							}, -- [1]
+							{
+								["action"] = "worldvein_resonance",
+								["enabled"] = true,
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.cooldown_sync",
+								["action"] = "berserking",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["name"] = "azsharas_font_of_power",
+								["action"] = "azsharas_font_of_power",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.cooldown_sync",
+								["action"] = "blood_fury",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.cooldown_sync",
+								["action"] = "fireblood",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.cooldown_sync",
+								["action"] = "ancestral_call",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.ascendance.up || ! talent.ascendance.enabled & feral_spirit.remains > 5 || target.time_to_die <= 60",
+								["action"] = "potion",
+							}, -- [8]
+							{
+								["action"] = "guardian_of_azeroth",
+								["enabled"] = true,
+							}, -- [9]
+							{
+								["action"] = "feral_spirit",
+								["enabled"] = true,
+							}, -- [10]
+							{
+								["enabled"] = true,
+								["criteria"] = "raid_event.adds.in > 90 || active_enemies > 1",
+								["action"] = "blood_of_the_enemy",
+							}, -- [11]
+							{
+								["enabled"] = true,
+								["criteria"] = "cooldown.strike.remains > 0",
+								["action"] = "ascendance",
+							}, -- [12]
+							{
+								["enabled"] = true,
+								["action"] = "ashvanes_razor_coral",
+								["criteria"] = "debuff.razor_coral_debuff.down || ( target.time_to_die < 20 & debuff.razor_coral_debuff.stack > 2 )",
+								["name"] = "ashvanes_razor_coral",
+							}, -- [13]
+							{
+								["enabled"] = true,
+								["action"] = "ashvanes_razor_coral",
+								["criteria"] = "debuff.razor_coral_debuff.stack > 2 & debuff.conductive_ink_debuff.down & ( buff.ascendance.remains > 10 || buff.molten_weapon.remains > 10 || buff.crackling_surge.remains > 10 || buff.icy_edge.remains > 10 || debuff.earthen_spike.remains > 6 )",
+								["name"] = "ashvanes_razor_coral",
+							}, -- [14]
+							{
+								["enabled"] = true,
+								["action"] = "ashvanes_razor_coral",
+								["criteria"] = "( debuff.conductive_ink_debuff.up || buff.ascendance.remains > 10 || buff.molten_weapon.remains > 10 || buff.crackling_surge.remains > 10 || buff.icy_edge.remains > 10 || debuff.earthen_spike.remains > 6 ) & target.health.pct < 31",
+								["name"] = "ashvanes_razor_coral",
+							}, -- [15]
+							{
+								["action"] = "use_items",
+								["enabled"] = true,
+							}, -- [16]
+						},
+						["priority"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "active_enemies >= ( 8 - ( talent.forceful_winds.enabled * 3 ) ) & variable.freezerburn_enabled & variable.furyCheck_CL",
+								["action"] = "crash_lightning",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.reckless_force.up || time < 5",
+								["action"] = "the_unbound_force",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "azerite.primal_primer.rank >= 2 & debuff.primal_primer.stack = 10 & active_enemies = 1 & variable.freezerburn_enabled & variable.furyCheck_LL",
+								["action"] = "lava_lash",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.freezerburn_enabled & buff.flametongue.remains < gcd & active_enemies > 1",
+								["action"] = "flametongue",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.freezerburn_enabled & buff.frostbrand.remains < gcd & active_enemies > 1",
+								["action"] = "frostbrand",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "! buff.crash_lightning.up & active_enemies > 1 & variable.furyCheck_CL",
+								["action"] = "crash_lightning",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "! buff.fury_of_air.up & maelstrom >= 20 & spell_targets.fury_of_air_damage >= ( 1 + variable.freezerburn_enabled )",
+								["action"] = "fury_of_air",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.fury_of_air.up & spell_targets.fury_of_air_damage < ( 1 + variable.freezerburn_enabled )",
+								["action"] = "fury_of_air",
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.resonance_totem.remains <= 2 * gcd",
+								["action"] = "totem_mastery",
+							}, -- [9]
+							{
+								["enabled"] = true,
+								["criteria"] = "active_enemies >= 3 & ( ! essence.blood_of_the_enemy.major || ( essence.blood_of_the_enemy.major & ( buff.seething_rage.up || cooldown.blood_of_the_enemy.remains > 40 ) ) )",
+								["action"] = "sundering",
+							}, -- [10]
+							{
+								["enabled"] = true,
+								["criteria"] = "active_enemies > 1",
+								["action"] = "focused_azerite_beam",
+							}, -- [11]
+							{
+								["enabled"] = true,
+								["criteria"] = "active_enemies > 1",
+								["action"] = "purifying_blast",
+							}, -- [12]
+							{
+								["enabled"] = true,
+								["criteria"] = "active_enemies > 1",
+								["action"] = "ripple_in_space",
+							}, -- [13]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.landslide.enabled & ! buff.landslide.up & charges_fractional > 1.7",
+								["action"] = "rockbiter",
+							}, -- [14]
+							{
+								["enabled"] = true,
+								["criteria"] = "( azerite.natural_harmony.enabled & buff.natural_harmony_frost.remains <= 2 * gcd ) & talent.hailstorm.enabled & variable.furyCheck_FB",
+								["action"] = "frostbrand",
+							}, -- [15]
+							{
+								["enabled"] = true,
+								["criteria"] = "( azerite.natural_harmony.enabled & buff.natural_harmony_fire.remains <= 2 * gcd )",
+								["action"] = "flametongue",
+							}, -- [16]
+							{
+								["enabled"] = true,
+								["criteria"] = "( azerite.natural_harmony.enabled & buff.natural_harmony_nature.remains <= 2 * gcd ) & maelstrom < 70",
+								["action"] = "rockbiter",
+							}, -- [17]
+						},
+						["asc"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "! buff.crash_lightning.up & active_enemies > 1 & variable.furyCheck_CL",
+								["action"] = "crash_lightning",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.landslide.enabled & ! buff.landslide.up & charges_fractional > 1.7",
+								["action"] = "rockbiter",
+							}, -- [2]
+							{
+								["action"] = "windstrike",
+								["enabled"] = true,
+							}, -- [3]
 						},
 						["filler"] = {
 							{
@@ -14289,9 +14398,9 @@ HekiliDB = {
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["criteria"] = "settings.heroic_charge & runeforge.reprisal.enabled & cooldown.charge.remains < gcd",
 								["action"] = "heroic_leap",
 								["description"] = "Default APL's Heroic Charge is a Heroic Leap followed by Charge to do some damage and generate Rage.",
+								["criteria"] = "settings.heroic_charge & runeforge.reprisal.enabled & cooldown.charge.remains < gcd",
 							}, -- [2]
 							{
 								["enabled"] = true,
@@ -14627,9 +14736,9 @@ HekiliDB = {
 						["default"] = {
 							{
 								["enabled"] = true,
-								["criteria"] = "time > 8 || talent.double_time.enabled || active_enemies > 1 || covenant.venthyr || ! runeforge.signet_of_tormented_kings.equipped || cooldown.recklessness.remains > gcd",
 								["action"] = "charge",
 								["description"] = "Charge if we're long past our opener, or we don't need the opener combo for Signet (non-Venthyr).",
+								["criteria"] = "time > 8 || talent.double_time.enabled || active_enemies > 1 || covenant.venthyr || ! runeforge.signet_of_tormented_kings.equipped || cooldown.recklessness.remains > gcd",
 							}, -- [1]
 							{
 								["action"] = "pummel",
@@ -14729,45 +14838,45 @@ HekiliDB = {
 							}, -- [18]
 							{
 								["enabled"] = true,
-								["name"] = "inscrutable_quantum_device",
 								["action"] = "inscrutable_quantum_device",
 								["criteria"] = "cooldown.recklessness.remains > 10 & ( buff.recklessness.up || boss & fight_remains < 21 || boss & fight_remains > 190 || buff.bloodlust.up )",
+								["name"] = "inscrutable_quantum_device",
 							}, -- [19]
 							{
 								["enabled"] = true,
-								["name"] = "wakeners_frond",
 								["action"] = "wakeners_frond",
 								["criteria"] = "cooldown.recklessness.remains > 10 & ( buff.recklessness.up || boss & fight_remains < 13 || boss & fight_remains > 130 )",
+								["name"] = "wakeners_frond",
 							}, -- [20]
 							{
 								["enabled"] = true,
-								["name"] = "macabre_sheet_music",
 								["action"] = "macabre_sheet_music",
 								["criteria"] = "cooldown.recklessness.remains > 10 & ( buff.recklessness.up || boss & fight_remains < 25 || boss & fight_remains > 110 )",
+								["name"] = "macabre_sheet_music",
 							}, -- [21]
 							{
 								["enabled"] = true,
-								["name"] = "overwhelming_power_crystal",
 								["action"] = "overwhelming_power_crystal",
 								["criteria"] = "cooldown.recklessness.remains > 10 & ( buff.recklessness.up || boss & fight_remains < 16 || boss & fight_remains > 100 )",
+								["name"] = "overwhelming_power_crystal",
 							}, -- [22]
 							{
 								["enabled"] = true,
-								["name"] = "instructors_divine_bell",
 								["action"] = "instructors_divine_bell",
 								["criteria"] = "cooldown.recklessness.remains > 10 & ( buff.recklessness.up || boss & fight_remains < 10 || boss & fight_remains > 95 )",
+								["name"] = "instructors_divine_bell",
 							}, -- [23]
 							{
 								["enabled"] = true,
-								["name"] = "flame_of_battle",
 								["action"] = "flame_of_battle",
 								["criteria"] = "cooldown.recklessness.remains > 10 & ( buff.recklessness.up || boss & fight_remains < 11 || boss & fight_remains > 100 )",
+								["name"] = "flame_of_battle",
 							}, -- [24]
 							{
 								["enabled"] = true,
-								["name"] = "gladiators_badge",
 								["action"] = "gladiators_badge",
 								["criteria"] = "cooldown.recklessness.remains > 10 & ( buff.recklessness.up || boss & fight_remains < 11 || boss & fight_remains > 65 )",
+								["name"] = "gladiators_badge",
 							}, -- [25]
 							{
 								["enabled"] = true,
@@ -15108,9 +15217,9 @@ HekiliDB = {
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["action"] = "rip",
 								["description"] = "Necrolord: Cast 3 or 4 combo point rips on single target outside of berserk or during berserk if feral frenzy is up OR apply a 5cp Rip when TF is up and will soon fall off.",
 								["criteria"] = "covenant.necrolord & ( ! talent.bloodtalons.enabled || buff.bloodtalons.up ) & spell_targets.thrash_cat = 1 & ( combo_points > 2 & refreshable & druid.rip.ticks_gained_on_refresh > variable.rip_ticks & ( ! buff.bs_inc.up || cooldown.bs_inc.up || ( buff.bs_inc.up & cooldown.feral_frenzy.up ) ) || combo_points = 5 & buff.tigers_fury.up & buff.tigers_fury.remains < 4 & druid.rip.ticks_gained_on_refresh > 5 )",
+								["action"] = "rip",
 							}, -- [10]
 							{
 								["enabled"] = true,
@@ -15372,9 +15481,9 @@ HekiliDB = {
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["action"] = "brutal_slash",
 								["description"] = "Brutal Slash is better than stealth Shred at 3 targets",
 								["criteria"] = "spell_targets.brutal_slash > 2",
+								["action"] = "brutal_slash",
 							}, -- [5]
 							{
 								["enabled"] = true,
@@ -15432,9 +15541,9 @@ HekiliDB = {
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["action"] = "berserk",
 								["description"] = "TODO: Need to sync with with ravenous frenzy when we run frenzyband, or atleast check if its worth it",
 								["criteria"] = "variable.ripped & ( cooldown.convoke_the_spirits.up || cooldown.convoke_the_spirits.remains > 32 || boss & fight_remains < 20 )",
+								["action"] = "berserk",
 							}, -- [8]
 							{
 								["enabled"] = true,
@@ -15443,15 +15552,15 @@ HekiliDB = {
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["action"] = "tigers_fury",
 								["description"] = "Try and not waste TF energy, but also just use it for zerk and incarns",
 								["criteria"] = "energy.deficit > 40 || buff.bs_inc.up || ( talent.predator.enabled & shortest_ttd < 3 ) || ( active_dot.rip = 0 & buff.bloodtalons.up )",
+								["action"] = "tigers_fury",
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["action"] = "shadowmeld",
 								["description"] = "Might be wrong to use Smeld on Rake in very very niche situations, but very rarely",
 								["criteria"] = "buff.tigers_fury.up & buff.bs_inc.down & combo_points < 4 & buff.sudden_ambush.down & dot.rake.pmultiplier < 1.6 & energy > 40 & druid.rake.ticks_gained_on_refresh > spell_targets.swipe_cat * 2 - 2 & target.time_to_die > 5",
+								["action"] = "shadowmeld",
 							}, -- [11]
 							{
 								["enabled"] = true,
@@ -15470,21 +15579,21 @@ HekiliDB = {
 							}, -- [14]
 							{
 								["enabled"] = true,
-								["action"] = "convoke_the_spirits",
 								["description"] = "TODO: Check moonkin hotw and stuff like this, and maybe better combat remain resync",
 								["criteria"] = "( dot.rip.remains > 4 & combo_points < 5 & ( dot.rake.ticking || spell_targets.thrash_cat > 1 ) & energy.deficit >= 20 & cooldown.bs_inc.remains > 10 ) || boss & fight_remains < 5 || ( buff.bs_inc.up & buff.bs_inc.remains > 12 )",
+								["action"] = "convoke_the_spirits",
 							}, -- [15]
 							{
 								["enabled"] = true,
-								["action"] = "empower_bond",
 								["description"] = "Maybe there should be more conditions on the conduit",
 								["criteria"] = "buff.tigers_fury.up || ( conduit.deep_allegiance.enabled )",
+								["action"] = "empower_bond",
 							}, -- [16]
 							{
 								["enabled"] = true,
-								["action"] = "jotungeirr_destinys_call",
 								["description"] = "Give priority to on-use weapon",
 								["name"] = "jotungeirr_destinys_call",
+								["action"] = "jotungeirr_destinys_call",
 							}, -- [17]
 							{
 								["action"] = "use_items",
@@ -15535,9 +15644,9 @@ HekiliDB = {
 						["opener"] = {
 							{
 								["enabled"] = true,
-								["description"] = "Precast 2 Wrath and a Starsurge on ST with Night Fae and BoAT or Starfire otherwise",
 								["criteria"] = "( eclipse.lunar_next || eclipse.in_solar || eclipse.in_both || eclipse.any_next ) & prev.1.wrath & ! prev.2.wrath",
 								["action"] = "wrath",
+								["description"] = "Precast 2 Wrath and a Starsurge on ST with Night Fae and BoAT or Starfire otherwise",
 							}, -- [1]
 							{
 								["enabled"] = true,
@@ -15590,15 +15699,15 @@ HekiliDB = {
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["description"] = "Use Berserking at the end of Frenzy when haste is above 60%, after Convoke with BoaT and otherwise with CA/Inc",
 								["criteria"] = "( ( ! covenant.night_fae || ! cooldown.convoke_the_spirits.up || ! runeforge.balance_of_all_things.enabled ) & buff.ca_inc.remains > 15 & ! covenant.venthyr || covenant.venthyr & buff.ca_inc.up & buff.ravenous_frenzy.up & ( buff.ravenous_frenzy.remains <= 12 - 4 * runeforge.sinful_hysteria.enabled || buff.ca_inc.remains < 11 || 1 / spell_haste < ( 1.9 - talent.stellar_flare.enabled * 0.1 - druid.delay_berserking * 0.3 ) ) ) & variable.in_gcd",
 								["action"] = "berserking",
+								["description"] = "Use Berserking at the end of Frenzy when haste is above 60%, after Convoke with BoaT and otherwise with CA/Inc",
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["description"] = "Pot with a CA/Inc that isn't a Pulsar proc or when the fight is about to end",
 								["action"] = "potion",
 								["criteria"] = "( buff.ca_inc.remains > 15 & ( ! runeforge.sinful_hysteria.enabled || buff.ravenous_frenzy.remains < 19 & buff.ravenous_frenzy.up ) || boss & fight_remains < 25 ) & variable.in_gcd",
+								["description"] = "Pot with a CA/Inc that isn't a Pulsar proc or when the fight is about to end",
 							}, -- [7]
 							{
 								["enabled"] = true,
@@ -15640,9 +15749,9 @@ HekiliDB = {
 							}, -- [12]
 							{
 								["enabled"] = true,
-								["criteria"] = "( ! buff.scars_of_fraternal_strife_4.up || buff.scars_of_fraternal_strife_4.up & buff.ca_inc.remains > 20 ) & ( cooldown.inscrutable_quantum_device.remains > 20 || ! equipped.inscrutable_quantum_device ) || boss & fight_remains < 33",
 								["name"] = "scars_of_fraternal_strife",
 								["action"] = "scars_of_fraternal_strife",
+								["criteria"] = "( ! buff.scars_of_fraternal_strife_4.up || buff.scars_of_fraternal_strife_4.up & buff.ca_inc.remains > 20 ) & ( cooldown.inscrutable_quantum_device.remains > 20 || ! equipped.inscrutable_quantum_device ) || boss & fight_remains < 33",
 							}, -- [13]
 							{
 								["enabled"] = true,
@@ -15654,9 +15763,9 @@ HekiliDB = {
 							}, -- [14]
 							{
 								["enabled"] = true,
-								["criteria"] = "variable.iqd_condition & variable.in_gcd",
 								["name"] = "inscrutable_quantum_device",
 								["action"] = "inscrutable_quantum_device",
+								["criteria"] = "variable.iqd_condition & variable.in_gcd",
 							}, -- [15]
 							{
 								["enabled"] = true,
@@ -15667,9 +15776,9 @@ HekiliDB = {
 							}, -- [16]
 							{
 								["enabled"] = true,
-								["description"] = "This is a rather elaborate way to make all on use stat trinkets to be lined up with CA/Inc and Convoke and use the 2nd slot on cd if both trinkets are on use stat trinkets",
 								["criteria"] = "variable.on_use_trinket != 1 & ! trinket.t2.ready_cooldown || ( variable.on_use_trinket = 1 || variable.on_use_trinket = 3 ) & ( covenant.venthyr & buff.ca_inc.up & ( buff.ravenous_frenzy.remains + ( 4.5 * runeforge.sinful_hysteria.enabled ) <= trinket.t1.has_buff.duration & buff.ravenous_frenzy.up || buff.ravenous_frenzy_sinful_hysteria.up ) || ( cooldown.ca_inc.remains + 15 > trinket.t1.cooldown.duration || ( ! runeforge.primordial_arcanic_pulsar.enabled || buff.ca_inc.remains > 6 ) ) & ( ! covenant.venthyr || ! buff.ravenous_frenzy.up & cooldown.ravenous_frenzy.remains ) & ( ! covenant.night_fae || trinket.t1.cooldown.duration > cooldown.convoke_the_spirits.remains || variable.convoke_desync & trinket.t1.cooldown.duration > cooldown.ca_inc.remains ) & ! covenant.kyrian || covenant.night_fae & variable.convoke_desync & cooldown.convoke_the_spirits.up & ! cooldown.ca_inc.up & ( buff.eclipse_lunar.remains > 5 || buff.eclipse_solar.remains > 5 ) || buff.kindred_empowerment_energize.up ) || boss & fight_remains < 20 || variable.on_use_trinket = 0",
 								["action"] = "trinket1",
+								["description"] = "This is a rather elaborate way to make all on use stat trinkets to be lined up with CA/Inc and Convoke and use the 2nd slot on cd if both trinkets are on use stat trinkets",
 							}, -- [17]
 							{
 								["enabled"] = true,
@@ -15791,9 +15900,9 @@ HekiliDB = {
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["description"] = "Use Convoke when at less than 50 AsP and line up with CA/Inc",
 								["criteria"] = "( ( variable.convoke_desync & ! cooldown.ca_inc.ready & ! runeforge.primordial_arcanic_pulsar.enabled || buff.ca_inc.up & ( ! runeforge.primordial_arcanic_pulsar.enabled || runeforge.celestial_spirits.enabled || fight_remains > 127 || boss & fight_remains < cooldown.ca_inc.remains + 10 || buff.ca_inc.remains > 12 ) ) & ( ( ( astral_power <= variable.convoke_asp || spell_targets.starfire > 3 ) & ( buff.eclipse_lunar.remains > 10 || buff.eclipse_solar.remains > 10 ) || buff.ca_inc.remains > 5 & buff.ca_inc.remains <= 12 ) & ( ! talent.stellar_drift.enabled || buff.starfall.remains < 1.5 - 0.5 * runeforge.celestial_spirits.enabled || buff.ca_inc.remains < buff.starfall.remains + 5 & buff.ca_inc.up ) & ( ! runeforge.timeworn_dreambinder.enabled || ! runeforge.celestial_spirits.enabled || buff.timeworn_dreambinder.remains > execute_time ) || runeforge.balance_of_all_things.enabled ) & ( ! runeforge.balance_of_all_things.enabled || ( buff.balance_of_all_things_nature.stack = 8 || buff.balance_of_all_things_arcane.stack = 8 ) ) || boss & fight_remains < 10 & ! cooldown.ca_inc.ready )",
 								["action"] = "convoke_the_spirits",
+								["description"] = "Use Convoke when at less than 50 AsP and line up with CA/Inc",
 							}, -- [3]
 							{
 								["enabled"] = true,
@@ -15804,9 +15913,9 @@ HekiliDB = {
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["description"] = "Use Sunfire to have a global to use IQD",
 								["criteria"] = "variable.iqd_condition & cooldown.inscrutable_quantum_device.ready & equipped.inscrutable_quantum_device & ap_check",
 								["action"] = "sunfire",
+								["description"] = "Use Sunfire to have a global to use IQD",
 							}, -- [5]
 							{
 								["enabled"] = true,
@@ -15817,21 +15926,21 @@ HekiliDB = {
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["description"] = "Keep up Starfall at all times unless using Lycaras and it is about to proc or let the special action line below handle Dreambinder on 2 targets",
 								["criteria"] = "! talent.stellar_drift.enabled & ( ! set_bonus.tier28_4pc || eclipse.in_any || spell_targets.starfall > 3 ) & ( buff.starfall.refreshable & ( spell_targets.starfall < 3 || ! runeforge.timeworn_dreambinder.enabled ) || talent.soul_of_the_forest.enabled & buff.eclipse_solar.remains < 3 & eclipse.in_solar & buff.starfall.remains < 7 & spell_targets.starfall >= 4 ) & ( ! runeforge.lycaras_fleeting_glimpse.enabled || time % 45 > buff.starfall.remains + 2 ) & target.time_to_die > 5",
 								["action"] = "starfall",
+								["description"] = "Keep up Starfall at all times unless using Lycaras and it is about to proc or let the special action line below handle Dreambinder on 2 targets",
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["description"] = "With Stellar Drift use on cd when refreshable but still wait for Lycaras proc and don't use before CDs. Still use before Convoke since that will proc another Starfall",
 								["criteria"] = "talent.stellar_drift.enabled & buff.starfall.refreshable & ( ! set_bonus.tier28_4pc || eclipse.in_any || spell_targets.starfall > 3 ) & ( ! runeforge.lycaras_fleeting_glimpse.enabled || time % 45 > 4 ) & fight_remains > 3",
 								["action"] = "starfall",
+								["description"] = "With Stellar Drift use on cd when refreshable but still wait for Lycaras proc and don't use before CDs. Still use before Convoke since that will proc another Starfall",
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["description"] = "With Dreambinder use Starfall to keep up the buff by also using Starfall on 5 seconds or less remaining",
 								["criteria"] = "runeforge.timeworn_dreambinder.enabled & spell_targets.starfall >= 3 & ( ! buff.timeworn_dreambinder.up & buff.starfall.refreshable || ( variable.dream_will_fall_off & ( buff.starfall.remains < 3 || spell_targets.starfall > 2 & talent.stellar_drift.enabled & buff.starfall.remains < 5 ) ) )",
 								["action"] = "starfall",
+								["description"] = "With Dreambinder use Starfall to keep up the buff by also using Starfall on 5 seconds or less remaining",
 							}, -- [9]
 							{
 								["enabled"] = true,
@@ -15843,9 +15952,9 @@ HekiliDB = {
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["description"] = "Use Starsurge with Dreambinder to keep up the buff without losing Starfall uptime and use Starsurge on 4+ BoAT stacks until 4 targets",
 								["criteria"] = "variable.dream_will_fall_off & variable.starfall_wont_fall_off & ! variable.ignore_starsurge || ( buff.balance_of_all_things_nature.stack > 3 || buff.balance_of_all_things_arcane.stack > 3 ) & spell_targets.starfall < 4 & variable.starfall_wont_fall_off",
 								["action"] = "starsurge",
+								["description"] = "Use Starsurge with Dreambinder to keep up the buff without losing Starfall uptime and use Starsurge on 4+ BoAT stacks until 4 targets",
 							}, -- [11]
 							{
 								["enabled"] = true,
@@ -15863,9 +15972,9 @@ HekiliDB = {
 							}, -- [13]
 							{
 								["enabled"] = true,
-								["description"] = "Use FoN on cd without capping",
 								["criteria"] = "ap_check || variable.ignore_starsurge",
 								["action"] = "force_of_nature",
+								["description"] = "Use FoN on cd without capping",
 							}, -- [14]
 							{
 								["enabled"] = true,
@@ -15876,15 +15985,15 @@ HekiliDB = {
 							}, -- [15]
 							{
 								["enabled"] = true,
-								["description"] = "Use Frenzy with CA/Inc",
 								["criteria"] = "buff.ca_inc.remains > 15 || buff.ca_inc.duration + 12 * runeforge.primordial_arcanic_pulsar.enabled < 26 & variable.cd_condition_aoe",
 								["action"] = "ravenous_frenzy",
+								["description"] = "Use Frenzy with CA/Inc",
 							}, -- [16]
 							{
 								["enabled"] = true,
-								["description"] = "Use CA/Inc on cd unless and line it up with Convoke",
 								["criteria"] = "variable.cd_condition_aoe & ( ! covenant.venthyr || ! runeforge.sinful_hysteria.enabled || runeforge.primordial_arcanic_pulsar.enabled || buff.ca_inc.duration >= 26 ) || buff.ravenous_frenzy.up & buff.ravenous_frenzy.remains < 15.5",
 								["action"] = "celestial_alignment",
+								["description"] = "Use CA/Inc on cd unless and line it up with Convoke",
 							}, -- [17]
 							{
 								["enabled"] = true,
@@ -15893,9 +16002,9 @@ HekiliDB = {
 							}, -- [18]
 							{
 								["enabled"] = true,
-								["description"] = "Use Empower Bond on cd with Starfall up and save for Pulsar and CA/Inc",
 								["criteria"] = "( cooldown.ca_inc.remains + buff.ca_inc.duration + runeforge.primordial_arcanic_pulsar.enabled * 12 > cooldown.empower_bond.duration + 10 ) || buff.ca_inc.remains > 8",
 								["action"] = "empower_bond",
+								["description"] = "Use Empower Bond on cd with Starfall up and save for Pulsar and CA/Inc",
 							}, -- [19]
 							{
 								["enabled"] = true,
@@ -15906,21 +16015,21 @@ HekiliDB = {
 							}, -- [20]
 							{
 								["enabled"] = true,
-								["description"] = "Use FoE if inside an Eclipse and line it up with a Pulsar proc and Adaptive Swarm",
 								["criteria"] = "eclipse.in_any & ( ap_check || ! runeforge.primordial_arcanic_pulsar.enabled ) & ( buff.primordial_arcanic_pulsar.value < 250 || buff.ca_inc.remains > 8 ) & ( dot.adaptive_swarm_damage.ticking || ! covenant.necrolord || spell_targets > 2 ) & ( buff.ravenous_frenzy.remains < 9 - ( 4 * runeforge.sinful_hysteria.enabled ) & buff.ravenous_frenzy.up || ! buff.ravenous_frenzy.up ) & ( ! cooldown.ca_inc.up || buff.thrill_seeker.stack < 15 & fight_remains < 200 & fight_remains > 100 || ! soulbind.thrill_seeker.enabled ) & ( soulbind.thrill_seeker.enabled || cooldown.ca_inc.remains > 30 ) & target.time_to_die > 5 || boss & fight_remains < 10",
 								["action"] = "fury_of_elune",
+								["description"] = "Use FoE if inside an Eclipse and line it up with a Pulsar proc and Adaptive Swarm",
 							}, -- [21]
 							{
 								["enabled"] = true,
-								["description"] = "Use a Starfall Oneth proc unless Starfall is already up or you are about to overcap AsP",
 								["criteria"] = "buff.oneths_perception.up & ( buff.starfall.refreshable || astral_power > 90 )",
 								["action"] = "starfall",
+								["description"] = "Use a Starfall Oneth proc unless Starfall is already up or you are about to overcap AsP",
 							}, -- [22]
 							{
 								["enabled"] = true,
-								["description"] = "Dump AsP before Convoke with Starfall and then Starsurge",
 								["criteria"] = "covenant.night_fae & ! talent.stellar_drift.enabled & ( variable.convoke_desync || cooldown.ca_inc.up || buff.ca_inc.up ) & cooldown.convoke_the_spirits.remains < gcd.max * ceil ( astral_power / variable.sf_cost ) & buff.starfall.remains < 4",
 								["action"] = "starfall",
+								["description"] = "Dump AsP before Convoke with Starfall and then Starsurge",
 							}, -- [23]
 							{
 								["enabled"] = true,
@@ -15929,15 +16038,15 @@ HekiliDB = {
 							}, -- [24]
 							{
 								["enabled"] = true,
-								["description"] = "Use Starsurge with an Oneth proc or if you'd overcap AsP with your next cast. Also dump AsP at the end of the Venthyr buff if Starfall wouldn't fall off or you are on 2 targets",
 								["criteria"] = "buff.oneths_clear_vision.up || ( ! starfire.ap_check & ! variable.ignore_starsurge || ( buff.ca_inc.remains < 5 & buff.ca_inc.up || ( ( buff.ca_inc.remains < gcd.max * ceil ( astral_power / variable.ss_cost ) & buff.ca_inc.up || buff.ravenous_frenzy_sinful_hysteria.remains < gcd.max * ceil ( astral_power / variable.ss_cost ) & buff.ravenous_frenzy_sinful_hysteria.up ) & covenant.venthyr ) ) & ( spell_targets.starfall < 3 || variable.starfall_wont_fall_off ) ) & ! variable.ignore_starsurge & ( ! runeforge.timeworn_dreambinder.enabled || spell_targets.starfall < 3 )",
 								["action"] = "starsurge",
+								["description"] = "Use Starsurge with an Oneth proc or if you'd overcap AsP with your next cast. Also dump AsP at the end of the Venthyr buff if Starfall wouldn't fall off or you are on 2 targets",
 							}, -- [25]
 							{
 								["enabled"] = true,
-								["description"] = "Use Moons in Solar Eclipse and save Full Moon for CA/Inc",
 								["criteria"] = "( buff.eclipse_solar.remains > execute_time || ( charges = 2 & recharge_time < 5 ) || charges = 3 ) & ap_check",
 								["action"] = "new_moon",
+								["description"] = "Use Moons in Solar Eclipse and save Full Moon for CA/Inc",
 							}, -- [26]
 							{
 								["enabled"] = true,
@@ -15964,9 +16073,9 @@ HekiliDB = {
 							}, -- [30]
 							{
 								["enabled"] = true,
-								["description"] = "On 2 targets without Soul of the Forest you should fill with Wrath during Inc",
 								["criteria"] = "! buff.ravenous_frenzy.up & ! buff.ravenous_frenzy_sinful_hysteria.up & ! talent.soul_of_the_forest.enabled & spell_targets.starfire < 3 & buff.eclipse_solar.remains > execute_time & fight_remains > buff.ca_inc.remains + 12 * runeforge.primordial_arcanic_pulsar.enabled",
 								["action"] = "wrath",
+								["description"] = "On 2 targets without Soul of the Forest you should fill with Wrath during Inc",
 							}, -- [31]
 							{
 								["enabled"] = true,
@@ -15978,9 +16087,9 @@ HekiliDB = {
 							}, -- [32]
 							{
 								["enabled"] = true,
-								["description"] = "Use Wrath in Solar Eclipse or if no Starfire will fit into CA/Inc anymore",
 								["criteria"] = "( eclipse.lunar_next || eclipse.any_next & variable.is_cleave ) & ( target.time_to_die > 4 || eclipse.lunar_in_2 || boss & fight_remains < 10 ) || buff.eclipse_solar.remains < action.starfire.execute_time & buff.eclipse_solar.up || eclipse.in_solar & ! variable.starfire_in_solar || buff.ca_inc.remains < action.starfire.execute_time & ! variable.is_cleave & buff.ca_inc.remains < execute_time & buff.ca_inc.up || buff.ravenous_frenzy.up & variable.wrath_in_frenzy || ! variable.is_cleave & buff.ca_inc.remains > execute_time",
 								["action"] = "wrath",
+								["description"] = "Use Wrath in Solar Eclipse or if no Starfire will fit into CA/Inc anymore",
 							}, -- [33]
 							{
 								["enabled"] = true,
@@ -15997,9 +16106,9 @@ HekiliDB = {
 						["fallthru"] = {
 							{
 								["enabled"] = true,
-								["description"] = "Starsurge for movement unless using BoAT",
 								["criteria"] = "! runeforge.balance_of_all_things.equipped",
 								["action"] = "starsurge",
+								["description"] = "Starsurge for movement unless using BoAT",
 							}, -- [1]
 							{
 								["enabled"] = true,
@@ -16023,21 +16132,21 @@ HekiliDB = {
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["description"] = "Uses Convoke if CA/Inc is up or you are desyncing CA/Inc with Convoke and you are below 40/30(Celestial Spirits) AsP in a 10+ sec Eclipse. Also don't let Dreambinder expire, always use in CA/Inc with Pulsar and at the start of a BoAT window.",
 								["criteria"] = "! druid.no_cds & ( ( variable.convoke_desync & ! cooldown.ca_inc.ready & ! runeforge.primordial_arcanic_pulsar.enabled || buff.ca_inc.up & ( ! runeforge.primordial_arcanic_pulsar.enabled || runeforge.celestial_spirits.enabled || fight_remains > 127 || fight_remains < cooldown.ca_inc.remains + 10 || buff.ca_inc.remains > 12 ) ) & ( ( astral_power <= variable.convoke_asp & ( buff.eclipse_lunar.remains > 10 || buff.eclipse_solar.remains > 10 ) || buff.ca_inc.remains + 2 * 12 * runeforge.primordial_arcanic_pulsar.enabled > 63 || buff.ca_inc.remains > 3 & buff.ca_inc.remains <= 12 ) & ( ! runeforge.timeworn_dreambinder.enabled || ! runeforge.celestial_spirits.enabled || buff.timeworn_dreambinder.remains > execute_time ) || runeforge.balance_of_all_things.enabled ) & ( ! runeforge.balance_of_all_things.enabled || ( buff.balance_of_all_things_nature.stack = 8 || buff.balance_of_all_things_arcane.stack = 8 ) ) || boss & fight_remains < 10 & ! cooldown.ca_inc.ready )",
 								["action"] = "convoke_the_spirits",
+								["description"] = "Uses Convoke if CA/Inc is up or you are desyncing CA/Inc with Convoke and you are below 40/30(Celestial Spirits) AsP in a 10+ sec Eclipse. Also don't let Dreambinder expire, always use in CA/Inc with Pulsar and at the start of a BoAT window.",
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["description"] = "Use Starsurge to keep up the Dreambinder buff if it would expire before finishing the next cast or to dump before Convoke",
 								["criteria"] = "runeforge.timeworn_dreambinder.enabled & ( ! ( ( buff.timeworn_dreambinder.remains > action.wrath.execute_time + 0.1 & ( eclipse.in_both || eclipse.in_solar || eclipse.lunar_next ) || buff.timeworn_dreambinder.remains > action.starfire.execute_time + 0.1 & ( eclipse.in_lunar || eclipse.solar_next || eclipse.any_next ) ) || ! buff.timeworn_dreambinder.up ) || ( buff.ca_inc.up || variable.convoke_desync ) & cooldown.convoke_the_spirits.ready & covenant.night_fae & ( buff.eclipse_lunar.remains > 10 || buff.eclipse_solar.remains > 10 ) ) & ( ! covenant.kyrian || cooldown.empower_bond.remains > 8 )",
 								["action"] = "starsurge",
+								["description"] = "Use Starsurge to keep up the Dreambinder buff if it would expire before finishing the next cast or to dump before Convoke",
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["description"] = "Dump Starsurges with Balance of All Things or to prepare for Convoke with BoAT",
 								["criteria"] = "runeforge.balance_of_all_things.enabled & ( ( buff.balance_of_all_things_nature.stack > 2 || buff.balance_of_all_things_arcane.stack > 2 ) & cooldown.ca_inc.remains > 7 & ! cooldown.convoke_the_spirits.up || ( covenant.night_fae & cooldown.convoke_the_spirits.remains < 10 & eclipse.in_any & astral_power > 20 + 30 * cooldown.ca_inc.ready ) )",
 								["action"] = "starsurge",
+								["description"] = "Dump Starsurges with Balance of All Things or to prepare for Convoke with BoAT",
 							}, -- [4]
 							{
 								["enabled"] = true,
@@ -16076,15 +16185,15 @@ HekiliDB = {
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["description"] = "Use FoN on cd without capping",
 								["criteria"] = "ap_check",
 								["action"] = "force_of_nature",
+								["description"] = "Use FoN on cd without capping",
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["description"] = "Use Empower Bond with any long enough lasting Eclipse and try to line it up with Pulsar and CA/Inc",
 								["criteria"] = "( cooldown.ca_inc.remains + buff.ca_inc.duration + runeforge.primordial_arcanic_pulsar.enabled * 12 > cooldown.empower_bond.duration + 10 ) || buff.ca_inc.remains > 8",
 								["action"] = "empower_bond",
+								["description"] = "Use Empower Bond with any long enough lasting Eclipse and try to line it up with Pulsar and CA/Inc",
 							}, -- [11]
 							{
 								["enabled"] = true,
@@ -16104,9 +16213,9 @@ HekiliDB = {
 							}, -- [13]
 							{
 								["enabled"] = true,
-								["description"] = "Use Frenzy with CA/Inc unless Frenzy would last longer than CA/Inc, then use before",
 								["criteria"] = "buff.ca_inc.remains > 15 || buff.ca_inc.duration < 27 + runeforge.primordial_arcanic_pulsar.enabled * 12 & variable.cd_condition_st",
 								["action"] = "ravenous_frenzy",
+								["description"] = "Use Frenzy with CA/Inc unless Frenzy would last longer than CA/Inc, then use before",
 							}, -- [14]
 							{
 								["enabled"] = true,
@@ -16128,9 +16237,9 @@ HekiliDB = {
 							}, -- [17]
 							{
 								["enabled"] = true,
-								["description"] = "Uses FoE if in an Eclipse and tries to line it up with Pulsar, CA/Inc, Empower Bond and Adaptive Swarm",
 								["criteria"] = "eclipse.in_any & ( astral_power < 92 - buff.fury_of_elune.stack * 5 || buff.ravenous_frenzy.up ) & ( buff.primordial_arcanic_pulsar.value < 240 || buff.ca_inc.remains > 8 ) & variable.save_for_ca_inc & ( ! covenant.necrolord || dot.adaptive_swarm_damage.ticking ) & ( ! covenant.venthyr || buff.ravenous_frenzy.remains < 9 - ( 4 * runeforge.sinful_hysteria.enabled ) & buff.ravenous_frenzy.up || ! buff.ravenous_frenzy.up ) & ( ! covenant.kyrian || cooldown.empower_bond.remains > 20 ) & target.time_to_die > 5 || boss & fight_remains < 10",
 								["action"] = "fury_of_elune",
+								["description"] = "Uses FoE if in an Eclipse and tries to line it up with Pulsar, CA/Inc, Empower Bond and Adaptive Swarm",
 							}, -- [18]
 							{
 								["enabled"] = true,
@@ -16141,9 +16250,9 @@ HekiliDB = {
 							}, -- [19]
 							{
 								["enabled"] = true,
-								["description"] = "Use Oneth Starfall procs if Starfall isn't up",
 								["criteria"] = "buff.oneths_perception.up & buff.starfall.refreshable",
 								["action"] = "starfall",
+								["description"] = "Use Oneth Starfall procs if Starfall isn't up",
 							}, -- [20]
 							{
 								["buff_name"] = "starlord",
@@ -16162,21 +16271,21 @@ HekiliDB = {
 							}, -- [22]
 							{
 								["enabled"] = true,
-								["description"] = "Use Starfall with Stellar Drift or t28 4pc and no Starlord, when no Starfall is up or to proc Pulsar when above 90 AsP(or the early Pulsar proc variable is true) or adpative swarm has 8+secs remaining or is in flight",
 								["criteria"] = "( talent.stellar_drift.enabled || set_bonus.tier28_4pc ) & ! talent.starlord.enabled & buff.starfall.refreshable & ! runeforge.timeworn_dreambinder.enabled & ( buff.primordial_arcanic_pulsar.value >= 250 & ! buff.ca_inc.up & ( variable.asp_dump || buff.kindred_empowerment_energize.up || variable.proc_pulsar_early ) || ( covenant.necrolord & talent.stellar_drift.enabled & ( dot.adaptive_swarm_damage.remains > 8 || action.adaptive_swarm_damage.in_flight ) ) ) & ( cooldown.ca_inc.remains > 10 || cooldown.convoke_the_spirits.remains > 10 )",
 								["action"] = "starfall",
+								["description"] = "Use Starfall with Stellar Drift or t28 4pc and no Starlord, when no Starfall is up or to proc Pulsar when above 90 AsP(or the early Pulsar proc variable is true) or adpative swarm has 8+secs remaining or is in flight",
 							}, -- [23]
 							{
 								["enabled"] = true,
-								["description"] = "Dumps AsP before Convoke using the Convoke condition to check if Convoke is actually about to be cast",
 								["criteria"] = "variable.proc_pulsar_early",
 								["action"] = "starsurge",
+								["description"] = "Dumps AsP before Convoke using the Convoke condition to check if Convoke is actually about to be cast",
 							}, -- [24]
 							{
 								["enabled"] = true,
-								["description"] = "Use Moons when you are about to/are capping charges and make sure they are in an Eclipse still for HM/FM",
 								["criteria"] = "ap_check & ( charges = 2 & recharge_time < 5 || charges = 3 )",
 								["action"] = "new_moon",
+								["description"] = "Use Moons when you are about to/are capping charges and make sure they are in an Eclipse still for HM/FM",
 							}, -- [25]
 							{
 								["enabled"] = true,
@@ -16190,15 +16299,15 @@ HekiliDB = {
 							}, -- [27]
 							{
 								["enabled"] = true,
-								["description"] = "Use Starsurge Oneth procs and dump AsP when CA/Inc, Empower Bond, the Venthyr buff is about to fall off or you'd cap AsP",
 								["criteria"] = "eclipse.in_any & ( buff.oneths_clear_vision.up || buff.kindred_empowerment_energize.up || buff.ca_inc.up & ( ! covenant.kyrian || cooldown.empower_bond.remains > 5 || buff.ca_inc.remains < gcd.max * floor ( astral_power / variable.ss_cost ) ) & ( ! covenant.venthyr || buff.ravenous_frenzy.remains < gcd.max * ceil ( ( astral_power + 40 * talent.fury_of_elune.enabled ) / variable.ss_cost ) + 3 * talent.new_moon.enabled & ! runeforge.sinful_hysteria.enabled & buff.ravenous_frenzy.up || buff.ravenous_frenzy_sinful_hysteria.up || ( buff.ravenous_frenzy.remains < action.starfire.execute_time & spell_haste < 0.4 || buff.ravenous_frenzy.remains < action.wrath.execute_time || buff.primordial_arcanic_pulsar.value >= 210 & ( astral_power > variable.ss_cost * 2 - 5 || buff.ravenous_frenzy.remains > 2 ) & buff.ravenous_frenzy.remains < 6 || variable.iqd_condition & cooldown.inscrutable_quantum_device.ready & equipped.inscrutable_quantum_device ) & buff.ravenous_frenzy.up || ! buff.ravenous_frenzy.up & ! cooldown.ravenous_frenzy.ready ) || variable.asp_dump || boss & fight_remains < gcd.max * ceil ( astral_power / variable.ss_cost ) )",
 								["action"] = "starsurge",
+								["description"] = "Use Starsurge Oneth procs and dump AsP when CA/Inc, Empower Bond, the Venthyr buff is about to fall off or you'd cap AsP",
 							}, -- [28]
 							{
 								["enabled"] = true,
-								["description"] = "Try to make the best of Starlord by stacking it up quickly in any Eclipse but Pulsar isn't about to be procced",
 								["criteria"] = "talent.starlord.enabled & ! runeforge.timeworn_dreambinder.enabled & ( buff.starlord.up || astral_power > 90 ) & buff.starlord.stack < 3 & ( buff.eclipse_solar.up || buff.eclipse_lunar.up ) & buff.primordial_arcanic_pulsar.value < 270 & ( cooldown.ca_inc.remains > 10 || ! variable.convoke_desync & covenant.night_fae )",
 								["action"] = "starsurge",
+								["description"] = "Try to make the best of Starlord by stacking it up quickly in any Eclipse but Pulsar isn't about to be procced",
 							}, -- [29]
 							{
 								["enabled"] = true,
@@ -16210,15 +16319,15 @@ HekiliDB = {
 							}, -- [30]
 							{
 								["enabled"] = true,
-								["description"] = "Dump Starsurge in an Eclipse as soon as possible as long as you will end up with 80+ when entering the next Eclipse, don't let it proc Pulsar, don't overwrite an Oneth proc and pool before CA/Inc and Empower Bond",
 								["criteria"] = "! runeforge.timeworn_dreambinder.enabled & ( buff.primordial_arcanic_pulsar.value < 270 || buff.primordial_arcanic_pulsar.value < 250 & talent.stellar_drift.enabled ) & ( eclipse.in_solar & astral_power + variable.aspPerSec * buff.eclipse_solar.remains + dot.fury_of_elune.ticks_remain * 2.5 > 80 || eclipse.in_lunar & astral_power + variable.aspPerSec * buff.eclipse_lunar.remains + dot.fury_of_elune.ticks_remain * 2.5 > 90 ) & ! buff.oneths_perception.up & ! talent.starlord.enabled & ( cooldown.ca_inc.remains > 7 || soulbind.thrill_seeker.enabled & buff.thrill_seeker.stack < 33 - ( runeforge.sinful_hysteria.enabled * 2 ) & fight_remains > 100 & fight_remains < 200 ) & ( ! covenant.kyrian || cooldown.empower_bond.remains > 2 )",
 								["action"] = "starsurge",
+								["description"] = "Dump Starsurge in an Eclipse as soon as possible as long as you will end up with 80+ when entering the next Eclipse, don't let it proc Pulsar, don't overwrite an Oneth proc and pool before CA/Inc and Empower Bond",
 							}, -- [31]
 							{
 								["enabled"] = true,
-								["description"] = "Use Moons in any Eclipse and save Half+Full Moon for CA/Inc and Kindred Empowerment. Also use NM and FM at the end of Frenzy and don't let Dreambinder fall off",
 								["criteria"] = "ap_check & variable.save_for_ca_inc & ( buff.eclipse_lunar.remains > execute_time || buff.eclipse_solar.remains > execute_time )",
 								["action"] = "new_moon",
+								["description"] = "Use Moons in any Eclipse and save Half+Full Moon for CA/Inc and Kindred Empowerment. Also use NM and FM at the end of Frenzy and don't let Dreambinder fall off",
 							}, -- [32]
 							{
 								["enabled"] = true,
@@ -16237,9 +16346,9 @@ HekiliDB = {
 							}, -- [35]
 							{
 								["enabled"] = true,
-								["description"] = "Use Starfire to proc Solar Eclipse, CA/Inc has less time than a Wrath execute left or only Lunar Eclipse is up. With T28 2pc enter a Solar Eclipse if Pulsar still has less than 210 stacks and CA/Inc and Convoke have more than 17s CD remaining. Use above 250% haste during Frenzy and 222% haste without Frenzy",
 								["criteria"] = "eclipse.in_lunar & ! buff.ravenous_frenzy.up || eclipse.solar_next || ( eclipse.any_next || buff.ca_inc.remains < action.wrath.execute_time & buff.ca_inc.up ) & ( ! set_bonus.tier28_2pc || runeforge.primordial_arcanic_pulsar.enabled & buff.primordial_arcanic_pulsar.value < 210 & cooldown.ca_inc.remains > 17 & ( ! covenant.night_fae || cooldown.convoke_the_spirits.remains > 17 ) & ( ! race.troll || cooldown.berserking.remains > 17 ) ) || eclipse.in_any & ( buff.warrior_of_elune.up || spell_haste < 0.45 & ( ! covenant.venthyr || ! buff.ravenous_frenzy.up ) || covenant.venthyr & spell_haste < 0.4 )",
 								["action"] = "starfire",
+								["description"] = "Use Starfire to proc Solar Eclipse, CA/Inc has less time than a Wrath execute left or only Lunar Eclipse is up. With T28 2pc enter a Solar Eclipse if Pulsar still has less than 210 stacks and CA/Inc and Convoke have more than 17s CD remaining. Use above 250% haste during Frenzy and 222% haste without Frenzy",
 							}, -- [36]
 							{
 								["enabled"] = true,
@@ -16331,9 +16440,9 @@ HekiliDB = {
 							}, -- [12]
 							{
 								["enabled"] = true,
-								["criteria"] = "covenant.venthyr",
 								["name"] = "jotungeirr_destinys_call",
 								["action"] = "jotungeirr_destinys_call",
+								["criteria"] = "covenant.venthyr",
 							}, -- [13]
 							{
 								["enabled"] = true,
@@ -16497,9 +16606,9 @@ HekiliDB = {
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["criteria"] = "! buff.prowl.up & ! covenant.venthyr",
 								["name"] = "jotungeirr_destinys_call",
 								["action"] = "jotungeirr_destinys_call",
+								["criteria"] = "! buff.prowl.up & ! covenant.venthyr",
 							}, -- [2]
 							{
 								["enabled"] = true,
@@ -17060,55 +17169,6 @@ HekiliDB = {
 								["enabled"] = true,
 							}, -- [19]
 						},
-						["freezerburn_core"] = {
-							{
-								["enabled"] = true,
-								["action"] = "lava_lash",
-								["criteria"] = "azerite.primal_primer.rank >= 2 & debuff.primal_primer.stack = 10 & variable.furyCheck_LL & variable.CLPool_LL",
-								["cycle_targets"] = 1,
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.furyCheck_ES",
-								["action"] = "earthen_spike",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["action"] = "stormstrike",
-								["criteria"] = "active_enemies > 1 & azerite.lightning_conduit.enabled & ! debuff.lightning_conduit.up & variable.furyCheck_SS",
-								["cycle_targets"] = 1,
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.stormbringer.up || ( active_enemies > 1 & buff.gathering_storms.up & variable.furyCheck_SS )",
-								["action"] = "stormstrike",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "active_enemies >= 3 & variable.furyCheck_CL",
-								["action"] = "crash_lightning",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.overcharge.enabled & active_enemies = 1 & variable.furyCheck_LB & maelstrom >= 40",
-								["action"] = "lightning_bolt",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "azerite.primal_primer.rank >= 2 & debuff.primal_primer.stack > 7 & variable.furyCheck_LL & variable.CLPool_LL",
-								["action"] = "lava_lash",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.OCPool_SS & variable.furyCheck_SS & variable.CLPool_SS",
-								["action"] = "stormstrike",
-							}, -- [8]
-							{
-								["enabled"] = true,
-								["criteria"] = "debuff.primal_primer.stack = 10 & variable.furyCheck_LL",
-								["action"] = "lava_lash",
-							}, -- [9]
-						},
 						["default"] = {
 							{
 								["action"] = "wind_shear",
@@ -17276,6 +17336,22 @@ HekiliDB = {
 								["action"] = "call_action_list",
 								["list_name"] = "filler",
 							}, -- [26]
+						},
+						["asc"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "! buff.crash_lightning.up & active_enemies > 1 & variable.furyCheck_CL",
+								["action"] = "crash_lightning",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.landslide.enabled & ! buff.landslide.up & charges_fractional > 1.7",
+								["action"] = "rockbiter",
+							}, -- [2]
+							{
+								["action"] = "windstrike",
+								["enabled"] = true,
+							}, -- [3]
 						},
 						["default_core"] = {
 							{
@@ -17457,21 +17533,21 @@ HekiliDB = {
 							}, -- [12]
 							{
 								["enabled"] = true,
-								["action"] = "ashvanes_razor_coral",
 								["criteria"] = "debuff.razor_coral_debuff.down || ( target.time_to_die < 20 & debuff.razor_coral_debuff.stack > 2 )",
 								["name"] = "ashvanes_razor_coral",
+								["action"] = "ashvanes_razor_coral",
 							}, -- [13]
 							{
 								["enabled"] = true,
-								["action"] = "ashvanes_razor_coral",
 								["criteria"] = "debuff.razor_coral_debuff.stack > 2 & debuff.conductive_ink_debuff.down & ( buff.ascendance.remains > 10 || buff.molten_weapon.remains > 10 || buff.crackling_surge.remains > 10 || buff.icy_edge.remains > 10 || debuff.earthen_spike.remains > 6 )",
 								["name"] = "ashvanes_razor_coral",
+								["action"] = "ashvanes_razor_coral",
 							}, -- [14]
 							{
 								["enabled"] = true,
-								["action"] = "ashvanes_razor_coral",
 								["criteria"] = "( debuff.conductive_ink_debuff.up || buff.ascendance.remains > 10 || buff.molten_weapon.remains > 10 || buff.crackling_surge.remains > 10 || buff.icy_edge.remains > 10 || debuff.earthen_spike.remains > 6 ) & target.health.pct < 31",
 								["name"] = "ashvanes_razor_coral",
+								["action"] = "ashvanes_razor_coral",
 							}, -- [15]
 							{
 								["action"] = "use_items",
@@ -17492,21 +17568,54 @@ HekiliDB = {
 								["enabled"] = true,
 							}, -- [3]
 						},
-						["asc"] = {
+						["freezerburn_core"] = {
 							{
 								["enabled"] = true,
-								["criteria"] = "! buff.crash_lightning.up & active_enemies > 1 & variable.furyCheck_CL",
-								["action"] = "crash_lightning",
+								["action"] = "lava_lash",
+								["criteria"] = "azerite.primal_primer.rank >= 2 & debuff.primal_primer.stack = 10 & variable.furyCheck_LL & variable.CLPool_LL",
+								["cycle_targets"] = 1,
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["criteria"] = "talent.landslide.enabled & ! buff.landslide.up & charges_fractional > 1.7",
-								["action"] = "rockbiter",
+								["criteria"] = "variable.furyCheck_ES",
+								["action"] = "earthen_spike",
 							}, -- [2]
 							{
-								["action"] = "windstrike",
 								["enabled"] = true,
+								["action"] = "stormstrike",
+								["criteria"] = "active_enemies > 1 & azerite.lightning_conduit.enabled & ! debuff.lightning_conduit.up & variable.furyCheck_SS",
+								["cycle_targets"] = 1,
 							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.stormbringer.up || ( active_enemies > 1 & buff.gathering_storms.up & variable.furyCheck_SS )",
+								["action"] = "stormstrike",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "active_enemies >= 3 & variable.furyCheck_CL",
+								["action"] = "crash_lightning",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.overcharge.enabled & active_enemies = 1 & variable.furyCheck_LB & maelstrom >= 40",
+								["action"] = "lightning_bolt",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "azerite.primal_primer.rank >= 2 & debuff.primal_primer.stack > 7 & variable.furyCheck_LL & variable.CLPool_LL",
+								["action"] = "lava_lash",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.OCPool_SS & variable.furyCheck_SS & variable.CLPool_SS",
+								["action"] = "stormstrike",
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["criteria"] = "debuff.primal_primer.stack = 10 & variable.furyCheck_LL",
+								["action"] = "lava_lash",
+							}, -- [9]
 						},
 					},
 					["version"] = 20200124,
@@ -18388,9 +18497,9 @@ HekiliDB = {
 							}, -- [11]
 							{
 								["enabled"] = true,
-								["action"] = "variable_intensity_gigavolt_oscillating_reactor",
 								["criteria"] = "buff.bloodlust.react || time_to_die <= 20 || combo_points.deficit <= 2",
 								["name"] = "variable_intensity_gigavolt_oscillating_reactor",
+								["action"] = "variable_intensity_gigavolt_oscillating_reactor",
 							}, -- [12]
 							{
 								["enabled"] = true,
@@ -18421,15 +18530,15 @@ HekiliDB = {
 							}, -- [18]
 							{
 								["enabled"] = true,
-								["action"] = "azsharas_font_of_power",
 								["criteria"] = "! buff.adrenaline_rush.up & ! buff.blade_flurry.up & cooldown.adrenaline_rush.remains < 15",
 								["name"] = "azsharas_font_of_power",
+								["action"] = "azsharas_font_of_power",
 							}, -- [19]
 							{
 								["enabled"] = true,
-								["action"] = "ashvanes_razor_coral",
 								["criteria"] = "debuff.razor_coral_debuff.down || debuff.conductive_ink_debuff.up & target.health.pct < 32 & target.health.pct >= 30 || ! debuff.conductive_ink_debuff.up & ( debuff.razor_coral_debuff.stack >= 20 - 10 * debuff.blood_of_the_enemy.up || fight_remains < 60 ) & buff.adrenaline_rush.remains > 18",
 								["name"] = "ashvanes_razor_coral",
+								["action"] = "ashvanes_razor_coral",
 							}, -- [20]
 							{
 								["enabled"] = true,
@@ -18727,9 +18836,9 @@ HekiliDB = {
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["action"] = "pool_resource",
 								["criteria"] = "! talent.shadow_focus.enabled",
 								["for_next"] = 1,
+								["action"] = "pool_resource",
 							}, -- [4]
 							{
 								["enabled"] = true,
@@ -18800,15 +18909,15 @@ HekiliDB = {
 							}, -- [17]
 							{
 								["enabled"] = true,
-								["action"] = "azsharas_font_of_power",
 								["criteria"] = "! buff.shadow_dance.up & cooldown.symbols_of_death.remains < 10",
 								["name"] = "azsharas_font_of_power",
+								["action"] = "azsharas_font_of_power",
 							}, -- [18]
 							{
 								["enabled"] = true,
-								["action"] = "ashvanes_razor_coral",
 								["criteria"] = "debuff.razor_coral_debuff.down || debuff.conductive_ink_debuff.up & target.health.pct < 32 & target.health.pct >= 30 || ! debuff.conductive_ink_debuff.up & ( debuff.razor_coral_debuff.stack >= 25 - 10 * debuff.blood_of_the_enemy.up || fight_remains < 40 ) & buff.symbols_of_death.remains > 8",
 								["name"] = "ashvanes_razor_coral",
+								["action"] = "ashvanes_razor_coral",
 							}, -- [19]
 							{
 								["enabled"] = true,
@@ -18836,9 +18945,9 @@ HekiliDB = {
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["action"] = "pool_resource",
 								["extra_amount"] = "40",
 								["for_next"] = 1,
+								["action"] = "pool_resource",
 							}, -- [3]
 							{
 								["enabled"] = true,
@@ -19168,9 +19277,9 @@ HekiliDB = {
 						["cds"] = {
 							{
 								["enabled"] = true,
-								["action"] = "azsharas_font_of_power",
 								["criteria"] = "! stealthed.all & master_assassin_remains = 0 & ( cooldown.vendetta.remains <? ( cooldown.toxic_blade.remains * equipped.ashvanes_razor_coral ) ) < 10 + 10 * equipped.ashvanes_razor_coral & ! debuff.vendetta.up & ! debuff.toxic_blade.up",
 								["name"] = "azsharas_font_of_power",
+								["action"] = "azsharas_font_of_power",
 							}, -- [1]
 							{
 								["enabled"] = true,
@@ -19234,9 +19343,9 @@ HekiliDB = {
 							}, -- [11]
 							{
 								["enabled"] = true,
-								["action"] = "pool_resource",
 								["extra_amount"] = "45",
 								["for_next"] = 1,
+								["action"] = "pool_resource",
 							}, -- [12]
 							{
 								["enabled"] = true,
@@ -19290,27 +19399,27 @@ HekiliDB = {
 							}, -- [22]
 							{
 								["enabled"] = true,
-								["action"] = "galecallers_boon",
 								["criteria"] = "( debuff.vendetta.up || ( ! talent.exsanguinate.enabled & cooldown.vendetta.remains > 45 || talent.exsanguinate.enabled & ( cooldown.exsanguinate.remains < 6 || cooldown.exsanguinate.remains > 20 & fight_remains > 65 ) ) ) & ( ! debuff.rupture.exsanguinated || ! debuff.garrote.exsanguinated & dot.garrote.pmultiplier > 1 )",
 								["name"] = "galecallers_boon",
+								["action"] = "galecallers_boon",
 							}, -- [23]
 							{
 								["enabled"] = true,
-								["action"] = "ashvanes_razor_coral",
 								["criteria"] = "debuff.razor_coral_debuff.down || fight_remains < 20",
 								["name"] = "ashvanes_razor_coral",
+								["action"] = "ashvanes_razor_coral",
 							}, -- [24]
 							{
 								["enabled"] = true,
-								["action"] = "ashvanes_razor_coral",
 								["criteria"] = "( ! talent.exsanguinate.enabled || ! talent.subterfuge.enabled ) & debuff.vendetta.remains > 10 - 4 * equipped.azsharas_font_of_power",
 								["name"] = "ashvanes_razor_coral",
+								["action"] = "ashvanes_razor_coral",
 							}, -- [25]
 							{
 								["enabled"] = true,
-								["action"] = "ashvanes_razor_coral",
 								["criteria"] = "( talent.exsanguinate.enabled & talent.subterfuge.enabled ) & debuff.vendetta.up & ( dot.garrote.exsanguinated || azerite.shrouded_suffocation.enabled & dot.garrote.pmultiplier > 1 )",
 								["name"] = "ashvanes_razor_coral",
+								["action"] = "ashvanes_razor_coral",
 							}, -- [26]
 							{
 								["enabled"] = true,
@@ -19320,15 +19429,15 @@ HekiliDB = {
 							}, -- [27]
 							{
 								["enabled"] = true,
-								["action"] = "lurkers_insidious_gift",
 								["criteria"] = "debuff.vendetta.up",
 								["name"] = "lurkers_insidious_gift",
+								["action"] = "lurkers_insidious_gift",
 							}, -- [28]
 							{
 								["enabled"] = true,
-								["action"] = "lustrous_golden_plumage",
 								["criteria"] = "debuff.vendetta.up",
 								["name"] = "lustrous_golden_plumage",
+								["action"] = "lustrous_golden_plumage",
 							}, -- [29]
 							{
 								["enabled"] = true,
@@ -19631,39 +19740,39 @@ HekiliDB = {
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["name"] = "lurkers_insidious_gift",
 								["action"] = "lurkers_insidious_gift",
 								["criteria"] = "cooldown.trueshot.remains_guess < 15 || time_to_die < 30",
+								["name"] = "lurkers_insidious_gift",
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["name"] = "azsharas_font_of_power",
 								["action"] = "azsharas_font_of_power",
 								["criteria"] = "( time_to_die > action_cooldown + 34 || target.health.pct < 20 || target.time_to_pct_20 < 15 ) & cooldown.trueshot.remains_guess < 15 || time_to_die < 35",
+								["name"] = "azsharas_font_of_power",
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["name"] = "lustrous_golden_plumage",
 								["action"] = "lustrous_golden_plumage",
 								["criteria"] = "cooldown.trueshot.remains_guess < 5 || time_to_die < 20",
+								["name"] = "lustrous_golden_plumage",
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["name"] = "galecallers_boon",
 								["action"] = "galecallers_boon",
 								["criteria"] = "prev_gcd.1.trueshot || ! talent.calling_the_shots.enabled || time_to_die < 10",
+								["name"] = "galecallers_boon",
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["name"] = "ashvanes_razor_coral",
 								["action"] = "ashvanes_razor_coral",
 								["criteria"] = "prev_gcd.1.trueshot & ( buff.guardian_of_azeroth.up || ! essence.condensed_lifeforce.major & ca_execute ) || debuff.razor_coral_debuff.down || time_to_die < 20",
+								["name"] = "ashvanes_razor_coral",
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["name"] = "pocketsized_computation_device",
 								["action"] = "cyclotronic_blast",
 								["criteria"] = "! buff.trueshot.up & ! essence.blood_of_the_enemy.major || debuff.blood_of_the_enemy.up || time_to_die < 5",
+								["name"] = "pocketsized_computation_device",
 							}, -- [7]
 							{
 								["enabled"] = true,
@@ -19951,21 +20060,21 @@ HekiliDB = {
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["name"] = "azsharas_font_of_power",
 								["action"] = "azsharas_font_of_power",
 								["criteria"] = "cooldown.aspect_of_the_wild.remains_guess < 15 & time_to_die > 10",
+								["name"] = "azsharas_font_of_power",
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["name"] = "ashvanes_razor_coral",
 								["action"] = "ashvanes_razor_coral",
 								["criteria"] = "debuff.razor_coral_debuff.up & ( ! equipped.azsharas_font_of_power || cooldown.azsharas_font_of_power.remains > 86 || essence.blood_of_the_enemy.major ) & ( prev_gcd.1.aspect_of_the_wild || ! equipped.cyclotronic_blast & buff.aspect_of_the_wild.remains > 9 ) & ( ! essence.condensed_lifeforce.major || buff.guardian_of_azeroth.up ) & ( target.health.pct < 35 || ! essence.condensed_lifeforce.major || ! talent.killer_instinct.enabled ) || ( debuff.razor_coral_debuff.down || time_to_die < 26 ) & time_to_die > ( 24 * ( cooldown.cyclotronic_blast.remains + 4 < time_to_die ) )",
+								["name"] = "ashvanes_razor_coral",
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["name"] = "galecallers_boon",
 								["action"] = "galecallers_boon",
 								["criteria"] = "buff.aspect_of_the_wild.remains > 10 || cooldown.aspect_of_the_wild.remains > 45 || time_to_die < 11",
+								["name"] = "galecallers_boon",
 							}, -- [5]
 							{
 								["enabled"] = true,
@@ -20860,15 +20969,15 @@ HekiliDB = {
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["name"] = "ashvanes_razor_coral",
 								["action"] = "ashvanes_razor_coral",
 								["criteria"] = "buff.memory_of_lucid_dreams.up & target.time_to_die < cooldown.memory_of_lucid_dreams.remains + 15 || buff.guardian_of_azeroth.stack = 5 & target.time_to_die < cooldown.guardian_of_azeroth.remains + 20 || debuff.razor_coral_debuff.down || target.time_to_die < 21 || buff.worldvein_resonance.remains & target.time_to_die < cooldown.worldvein_resonance.remains + 18 || ! talent.birds_of_prey.enabled & target.time_to_die < cooldown.coordinated_assault.remains + 20 & buff.coordinated_assault.remains",
+								["name"] = "ashvanes_razor_coral",
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["name"] = "galecallers_boon",
 								["action"] = "galecallers_boon",
 								["criteria"] = "cooldown.memory_of_lucid_dreams.remains || talent.wildfire_infusion.enabled & cooldown.coordinated_assault.remains || ! essence.memory_of_lucid_dreams.major & cooldown.coordinated_assault.remains",
+								["name"] = "galecallers_boon",
 							}, -- [9]
 							{
 								["enabled"] = true,
@@ -21316,9 +21425,9 @@ HekiliDB = {
 						["cds"] = {
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.rune_of_power.down",
 								["name"] = "shadowed_orb_of_torment",
 								["action"] = "shadowed_orb_of_torment",
+								["criteria"] = "buff.rune_of_power.down",
 							}, -- [1]
 							{
 								["enabled"] = true,
@@ -21555,9 +21664,9 @@ HekiliDB = {
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.scars_of_fraternal_strife_4.up",
 								["name"] = "scars_of_fraternal_strife",
 								["action"] = "scars_of_fraternal_strife",
+								["criteria"] = "buff.scars_of_fraternal_strife_4.up",
 							}, -- [7]
 							{
 								["enabled"] = true,
@@ -21602,33 +21711,33 @@ HekiliDB = {
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["description"] = "Variable that estimates whether Shifting Power will be used before Combustion is ready.",
 								["criteria"] = "buff.combustion.down & action.fire_blast.charges <= 1 & ! ( buff.infernal_cascade.up & buff.hot_streak.react ) & variable.shifting_power_before_combustion",
 								["action"] = "shifting_power",
+								["description"] = "Variable that estimates whether Shifting Power will be used before Combustion is ready.",
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["description"] = "Save Radiant Spark for Combustion, but otherwise use it on cooldown.",
 								["criteria"] = "buff.combustion.down & ( variable.time_to_combustion > action_cooldown - 5 )",
 								["action"] = "radiant_spark",
+								["description"] = "Save Radiant Spark for Combustion, but otherwise use it on cooldown.",
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["description"] = "Deathborne should always be used with Combustion. With Death's Fathom, it should be used early so that Deathborne will have more stacks during Combustion.",
 								["criteria"] = "buff.combustion.down & buff.rune_of_power.down & variable.time_to_combustion < variable.combustion_precast_time + execute_time + ( buff.deathborne.duration - buff.combustion.duration ) * runeforge.deaths_fathom.enabled",
 								["action"] = "deathborne",
+								["description"] = "Deathborne should always be used with Combustion. With Death's Fathom, it should be used early so that Deathborne will have more stacks during Combustion.",
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["description"] = "Use Mirrors of Torment with Combustion.",
 								["criteria"] = "variable.time_to_combustion < variable.combustion_precast_time + execute_time & buff.combustion.down",
 								["action"] = "mirrors_of_torment",
+								["description"] = "Use Mirrors of Torment with Combustion.",
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["description"] = "Also use Mirrors of Torment in between Combustions as long as Combustion will not have to be delayed much for it.",
 								["criteria"] = "variable.time_to_combustion > action_cooldown - 30 * runeforge.sinful_delight.enabled",
 								["action"] = "mirrors_of_torment",
+								["description"] = "Also use Mirrors of Torment in between Combustions as long as Combustion will not have to be delayed much for it.",
 							}, -- [6]
 							{
 								["enabled"] = true,
@@ -21645,39 +21754,39 @@ HekiliDB = {
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["criteria"] = "variable.time_to_combustion <= variable.empyreal_ordnance_delay & variable.time_to_combustion > variable.empyreal_ordnance_delay - 5",
 								["name"] = "empyreal_ordnance",
 								["action"] = "empyreal_ordnance",
+								["criteria"] = "variable.time_to_combustion <= variable.empyreal_ordnance_delay & variable.time_to_combustion > variable.empyreal_ordnance_delay - 5",
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["criteria"] = "( variable.time_to_combustion <= variable.combustion_precast_time + 2 || fight_remains < variable.time_to_combustion ) & buff.combustion.down",
 								["name"] = "shadowed_orb_of_torment",
 								["action"] = "shadowed_orb_of_torment",
+								["criteria"] = "( variable.time_to_combustion <= variable.combustion_precast_time + 2 || fight_remains < variable.time_to_combustion ) & buff.combustion.down",
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["criteria"] = "variable.time_to_combustion <= 8 || fight_remains < variable.time_to_combustion",
 								["name"] = "grim_eclipse",
 								["action"] = "grim_eclipse",
+								["criteria"] = "variable.time_to_combustion <= 8 || fight_remains < variable.time_to_combustion",
 							}, -- [11]
 							{
 								["enabled"] = true,
-								["criteria"] = "variable.time_to_combustion <= 5 || fight_remains < variable.time_to_combustion",
 								["name"] = "moonlit_prism",
 								["action"] = "moonlit_prism",
+								["criteria"] = "variable.time_to_combustion <= 5 || fight_remains < variable.time_to_combustion",
 							}, -- [12]
 							{
 								["enabled"] = true,
-								["criteria"] = "( buff.combustion.down & variable.time_to_combustion >= variable.on_use_cutoff || variable.on_use_cutoff = 0 )",
 								["name"] = "glyph_of_assimilation",
 								["action"] = "glyph_of_assimilation",
+								["criteria"] = "( buff.combustion.down & variable.time_to_combustion >= variable.on_use_cutoff || variable.on_use_cutoff = 0 )",
 							}, -- [13]
 							{
 								["enabled"] = true,
-								["criteria"] = "variable.time_to_combustion <= 5",
 								["name"] = "macabre_sheet_music",
 								["action"] = "macabre_sheet_music",
+								["criteria"] = "variable.time_to_combustion <= 5",
 							}, -- [14]
 							{
 								["enabled"] = true,
@@ -21688,9 +21797,9 @@ HekiliDB = {
 							}, -- [15]
 							{
 								["enabled"] = true,
-								["criteria"] = "( variable.time_to_combustion >= 30 * ( variable.on_use_cutoff > 0 ) || ( ! trinket.t1.is.soul_igniter & trinket.t1.usable & trinket.t1.cooldown.remains || ! trinket.t2.is.soul_igniter & trinket.t2.usable & trinket.t2.cooldown.remains ) ) & ( ! equipped.dreadfire_vessel || cooldown.dreadfire_vessel.remains > 5 )",
 								["name"] = "soul_igniter",
 								["action"] = "soul_igniter",
+								["criteria"] = "( variable.time_to_combustion >= 30 * ( variable.on_use_cutoff > 0 ) || ( ! trinket.t1.is.soul_igniter & trinket.t1.usable & trinket.t1.cooldown.remains || ! trinket.t2.is.soul_igniter & trinket.t2.usable & trinket.t2.cooldown.remains ) ) & ( ! equipped.dreadfire_vessel || cooldown.dreadfire_vessel.remains > 5 )",
 							}, -- [16]
 							{
 								["buff_name"] = "soul_ignition",
@@ -21708,33 +21817,33 @@ HekiliDB = {
 							}, -- [18]
 							{
 								["enabled"] = true,
-								["criteria"] = "equipped.gladiators_badge & ( buff.combustion.down & variable.time_to_combustion >= variable.on_use_cutoff || variable.on_use_cutoff = 0 )",
 								["name"] = "flame_of_battle",
 								["action"] = "flame_of_battle",
+								["criteria"] = "equipped.gladiators_badge & ( buff.combustion.down & variable.time_to_combustion >= variable.on_use_cutoff || variable.on_use_cutoff = 0 )",
 							}, -- [19]
 							{
 								["enabled"] = true,
-								["criteria"] = "equipped.gladiators_badge & ( buff.combustion.down & variable.time_to_combustion >= variable.on_use_cutoff || variable.on_use_cutoff = 0 )",
 								["name"] = "wakeners_frond",
 								["action"] = "wakeners_frond",
+								["criteria"] = "equipped.gladiators_badge & ( buff.combustion.down & variable.time_to_combustion >= variable.on_use_cutoff || variable.on_use_cutoff = 0 )",
 							}, -- [20]
 							{
 								["enabled"] = true,
-								["criteria"] = "equipped.gladiators_badge & ( buff.combustion.down & variable.time_to_combustion >= variable.on_use_cutoff || variable.on_use_cutoff = 0 )",
 								["name"] = "instructors_divine_bell",
 								["action"] = "instructors_divine_bell",
+								["criteria"] = "equipped.gladiators_badge & ( buff.combustion.down & variable.time_to_combustion >= variable.on_use_cutoff || variable.on_use_cutoff = 0 )",
 							}, -- [21]
 							{
 								["enabled"] = true,
-								["criteria"] = "equipped.gladiators_badge & ( buff.combustion.down & variable.time_to_combustion >= variable.on_use_cutoff || variable.on_use_cutoff = 0 )",
 								["name"] = "sunblood_amethyst",
 								["action"] = "sunblood_amethyst",
+								["criteria"] = "equipped.gladiators_badge & ( buff.combustion.down & variable.time_to_combustion >= variable.on_use_cutoff || variable.on_use_cutoff = 0 )",
 							}, -- [22]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.scars_of_fraternal_strife_4.down",
 								["name"] = "scars_of_fraternal_strife",
 								["action"] = "scars_of_fraternal_strife",
+								["criteria"] = "buff.scars_of_fraternal_strife_4.down",
 							}, -- [23]
 							{
 								["enabled"] = true,
@@ -21743,15 +21852,15 @@ HekiliDB = {
 							}, -- [24]
 							{
 								["enabled"] = true,
-								["description"] = "Use Frost Nova to trigger Grisly Icicle.",
 								["criteria"] = "runeforge.grisly_icicle.enabled & buff.combustion.down & ( variable.time_to_combustion > action_cooldown || variable.time_to_combustion < variable.combustion_precast_time + execute_time )",
 								["action"] = "frost_nova",
+								["description"] = "Use Frost Nova to trigger Grisly Icicle.",
 							}, -- [25]
 							{
 								["enabled"] = true,
-								["description"] = "Get the Disciplinary Command buff up, unless combustion is soon.",
 								["criteria"] = "runeforge.disciplinary_command.enabled & cooldown.buff_disciplinary_command.ready & buff.disciplinary_command_arcane.down & ! buff.disciplinary_command.up & ( variable.time_to_combustion + action.frostbolt.cast_time > cooldown.buff_disciplinary_command.duration || variable.time_to_combustion < 5 )",
 								["action"] = "counterspell",
+								["description"] = "Get the Disciplinary Command buff up, unless combustion is soon.",
 							}, -- [26]
 							{
 								["enabled"] = true,
@@ -21856,9 +21965,9 @@ HekiliDB = {
 						["rop_phase"] = {
 							{
 								["enabled"] = true,
-								["description"] = "Delay Combustion for Mirrors of Torment.",
 								["criteria"] = "active_enemies >= variable.hot_streak_flamestrike & ( buff.hot_streak.up || buff.firestorm.up )",
 								["action"] = "flamestrike",
+								["description"] = "Delay Combustion for Mirrors of Torment.",
 							}, -- [1]
 							{
 								["enabled"] = true,
@@ -21938,9 +22047,9 @@ HekiliDB = {
 							}, -- [15]
 							{
 								["enabled"] = true,
-								["description"] = "With enough targets, it is a gain to cast Flamestrike as filler instead of Fireball.",
 								["criteria"] = "active_enemies >= variable.hard_cast_flamestrike",
 								["action"] = "flamestrike",
+								["description"] = "With enough targets, it is a gain to cast Flamestrike as filler instead of Fireball.",
 							}, -- [16]
 							{
 								["action"] = "fireball",
@@ -21991,9 +22100,9 @@ HekiliDB = {
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["description"] = "If Combustion is down, precast something before activating it.",
 								["criteria"] = "buff.combustion.down & cooldown.combustion.remains < cast_time & active_enemies >= variable.combustion_flamestrike",
 								["action"] = "flamestrike",
+								["description"] = "If Combustion is down, precast something before activating it.",
 							}, -- [6]
 							{
 								["enabled"] = true,
@@ -22025,9 +22134,9 @@ HekiliDB = {
 							}, -- [11]
 							{
 								["enabled"] = true,
-								["description"] = "Rune of Power can be used in Combustion if it is down, but this should only be done if there is more Combustion time to benefit from than there would be from an SKB Combustion later.",
 								["criteria"] = "buff.rune_of_power.down & variable.extended_combustion_remains > variable.skb_duration",
 								["action"] = "rune_of_power",
+								["description"] = "Rune of Power can be used in Combustion if it is down, but this should only be done if there is more Combustion time to benefit from than there would be from an SKB Combustion later.",
 							}, -- [12]
 							{
 								["enabled"] = true,
@@ -22057,15 +22166,15 @@ HekiliDB = {
 							}, -- [15]
 							{
 								["enabled"] = true,
-								["description"] = "Spend Hot Streaks during Combustion at high priority.",
 								["criteria"] = "( buff.hot_streak.up & active_enemies >= variable.combustion_flamestrike ) || ( buff.firestorm.up & active_enemies >= variable.combustion_flamestrike - runeforge.firestorm.enabled )",
 								["action"] = "flamestrike",
+								["description"] = "Spend Hot Streaks during Combustion at high priority.",
 							}, -- [16]
 							{
 								["enabled"] = true,
-								["description"] = "Radiant Spark should be used with a Hot Streak ready to use immediately after the cast finishes. This will naturally set up a Hot Streak spent for the final stack of Radiant Spark.",
 								["criteria"] = "buff.combustion.up & 2 * buff.hot_streak.react + buff.heating_up.react + hot_streak_spells_in_flight = 2",
 								["action"] = "radiant_spark",
+								["description"] = "Radiant Spark should be used with a Hot Streak ready to use immediately after the cast finishes. This will naturally set up a Hot Streak spent for the final stack of Radiant Spark.",
 							}, -- [17]
 							{
 								["enabled"] = true,
@@ -22084,15 +22193,15 @@ HekiliDB = {
 							}, -- [20]
 							{
 								["enabled"] = true,
-								["description"] = "Using Shifting Power during Combustion to restore Fire Blast and Phoenix Flame charges can be beneficial, but usually only on AoE.",
 								["criteria"] = "variable.use_shifting_power & buff.combustion.up & ! action.fire_blast.charges & action.phoenix_flames.charges < action.phoenix_flames.max_charges",
 								["action"] = "shifting_power",
+								["description"] = "Using Shifting Power during Combustion to restore Fire Blast and Phoenix Flame charges can be beneficial, but usually only on AoE.",
 							}, -- [21]
 							{
 								["enabled"] = true,
-								["description"] = "If a Sun King's Blessing proc would be used, Rune of Power should be used first if the existing Rune of Power will expire during the cast.",
 								["criteria"] = "buff.sun_kings_blessing_ready.up & buff.sun_kings_blessing_ready.remains > execute_time + action.flamestrike.cast_time & buff.rune_of_power.remains < action.flamestrike.cast_time & active_enemies >= variable.combustion_flamestrike",
 								["action"] = "rune_of_power",
+								["description"] = "If a Sun King's Blessing proc would be used, Rune of Power should be used first if the existing Rune of Power will expire during the cast.",
 							}, -- [22]
 							{
 								["enabled"] = true,
@@ -22111,15 +22220,15 @@ HekiliDB = {
 							}, -- [25]
 							{
 								["enabled"] = true,
-								["description"] = "Pyroclasm procs should be used in Combustion at higher priority than Phoenix Flames and Scorch.",
 								["criteria"] = "buff.pyroclasm.react & buff.pyroclasm.remains > cast_time & buff.combustion.remains > cast_time & active_enemies < variable.combustion_flamestrike & ( ! conduit.infernal_cascade.enabled || buff.infernal_cascade.remains > execute_time || buff.heating_up.react + hot_streak_spells_in_flight < 2 )",
 								["action"] = "pyroblast",
+								["description"] = "Pyroclasm procs should be used in Combustion at higher priority than Phoenix Flames and Scorch.",
 							}, -- [26]
 							{
 								["enabled"] = true,
-								["description"] = "Use Phoenix Flames and Scorch in Combustion to help generate Hot Streaks when Fire Blasts are not available or need to be conserved.",
 								["criteria"] = "buff.combustion.up & travel_time < buff.combustion.remains & buff.heating_up.react + hot_streak_spells_in_flight < 2",
 								["action"] = "phoenix_flames",
+								["description"] = "Use Phoenix Flames and Scorch in Combustion to help generate Hot Streaks when Fire Blasts are not available or need to be conserved.",
 							}, -- [27]
 							{
 								["enabled"] = true,
@@ -22128,9 +22237,9 @@ HekiliDB = {
 							}, -- [28]
 							{
 								["enabled"] = true,
-								["description"] = "If there isn't enough time left in Combustion for a Phoenix Flames or Scorch to hit inside of Combustion, use something else.",
 								["criteria"] = "buff.combustion.remains < gcd.max & active_enemies > 1",
 								["action"] = "living_bomb",
+								["description"] = "If there isn't enough time left in Combustion for a Phoenix Flames or Scorch to hit inside of Combustion, use something else.",
 							}, -- [29]
 							{
 								["enabled"] = true,
@@ -22183,9 +22292,9 @@ HekiliDB = {
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["description"] = "Try to get SKB procs inside RoP phases or Combustion phases when possible.",
 								["criteria"] = "active_enemies >= variable.hard_cast_flamestrike & buff.sun_kings_blessing_ready.up & ( cooldown.rune_of_power.remains + action.rune_of_power.execute_time + cast_time > buff.sun_kings_blessing_ready.remains || ! talent.rune_of_power.enabled ) & variable.time_to_combustion + cast_time > buff.sun_kings_blessing_ready.remains & buff.sun_kings_blessing_ready.expiration_delay_remains = 0",
 								["action"] = "flamestrike",
+								["description"] = "Try to get SKB procs inside RoP phases or Combustion phases when possible.",
 							}, -- [6]
 							{
 								["enabled"] = true,
@@ -22242,9 +22351,9 @@ HekiliDB = {
 							}, -- [16]
 							{
 								["enabled"] = true,
-								["description"] = "With enough targets, it is a gain to cast Flamestrike as filler instead of Fireball.",
 								["criteria"] = "active_enemies >= variable.hard_cast_flamestrike",
 								["action"] = "flamestrike",
+								["description"] = "With enough targets, it is a gain to cast Flamestrike as filler instead of Fireball.",
 							}, -- [17]
 							{
 								["action"] = "fireball",
@@ -22263,9 +22372,9 @@ HekiliDB = {
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["criteria"] = "! variable.combustion_on_use & ! equipped.dreadfire_vessel & ! talent.firestarter.enabled",
 								["name"] = "soul_igniter",
 								["action"] = "soul_igniter",
+								["criteria"] = "! variable.combustion_on_use & ! equipped.dreadfire_vessel & ! talent.firestarter.enabled",
 							}, -- [3]
 							{
 								["enabled"] = true,
@@ -22298,9 +22407,9 @@ HekiliDB = {
 						["harmony"] = {
 							{
 								["enabled"] = true,
-								["description"] = "If low on mana and cooldowns are coming up, go ahead and evo",
 								["criteria"] = "mana.pct <= 30 & variable.outside_of_cooldowns & ( talent.rune_of_power.enabled & cooldown.rune_of_power.remains < 10 )",
 								["action"] = "evocation",
+								["description"] = "If low on mana and cooldowns are coming up, go ahead and evo",
 							}, -- [1]
 							{
 								["enabled"] = true,
@@ -22311,21 +22420,21 @@ HekiliDB = {
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["description"] = "When using Empyreal Ordnance, cast a few extra missiles while waiting for the buff at the start of the fight",
 								["criteria"] = "equipped.empyreal_ordnance & time < 30 & cooldown.empyreal_ordnance.remains > 168 & ! action.empyreal_ordnance.disabled",
 								["action"] = "arcane_missiles",
+								["description"] = "When using Empyreal Ordnance, cast a few extra missiles while waiting for the buff at the start of the fight",
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.arcane_power.up & target.distance <= 10",
 								["name"] = "soulletting_ruby",
 								["action"] = "soulletting_ruby",
+								["criteria"] = "buff.arcane_power.up & target.distance <= 10",
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["criteria"] = "variable.empowered_barrage & cooldown.touch_of_the_magi.remains <= execute_time & cooldown.arcane_power.remains <= ( execute_time * 2 ) & target.distance > 10",
 								["name"] = "soulletting_ruby",
 								["action"] = "soulletting_ruby",
+								["criteria"] = "variable.empowered_barrage & cooldown.touch_of_the_magi.remains <= execute_time & cooldown.arcane_power.remains <= ( execute_time * 2 ) & target.distance > 10",
 							}, -- [5]
 							{
 								["enabled"] = true,
@@ -22359,15 +22468,15 @@ HekiliDB = {
 							}, -- [11]
 							{
 								["enabled"] = true,
-								["description"] = "Use 2nd arcane barrage in AP+ROP only if Bloodlust and at least 2 CCs procced",
 								["criteria"] = "buff.arcane_charge.stack = buff.arcane_charge.max_stack & buff.rune_of_power.up & buff.arcane_power.up & buff.arcane_harmony.stack >= 16 & buff.arcane_power.remains <= action.arcane_barrage.execute_time & buff.bloodlust.up",
 								["action"] = "arcane_barrage",
+								["description"] = "Use 2nd arcane barrage in AP+ROP only if Bloodlust and at least 2 CCs procced",
 							}, -- [12]
 							{
 								["enabled"] = true,
-								["description"] = "Use 2nd RoP in AP only if Bloodlust and 2 CCs proc",
 								["criteria"] = "buff.rune_of_power.down & buff.bloodlust.up & ( variable.time_until_ap > 30 || cooldown.radiant_spark.remains > 12 ) & ( buff.arcane_harmony.stack >= 15 || buff.clearcasting.stack >= 1 ) & ( ! conduit.arcane_prodigy.enabled || ! variable.always_sync_cooldowns )",
 								["action"] = "rune_of_power",
+								["description"] = "Use 2nd RoP in AP only if Bloodlust and 2 CCs proc",
 							}, -- [13]
 							{
 								["enabled"] = true,
@@ -22381,9 +22490,9 @@ HekiliDB = {
 							}, -- [15]
 							{
 								["enabled"] = true,
-								["description"] = "When running prodigy, use totm by itself in order to align it with ap",
 								["criteria"] = "variable.time_until_ap < 50 & variable.time_until_ap > 30 & ( ! equipped.soulletting_ruby || conduit.arcane_prodigy.rank >= 5 )",
 								["action"] = "touch_of_the_magi",
+								["description"] = "When running prodigy, use totm by itself in order to align it with ap",
 							}, -- [16]
 							{
 								["enabled"] = true,
@@ -22397,15 +22506,15 @@ HekiliDB = {
 							}, -- [18]
 							{
 								["enabled"] = true,
-								["description"] = "When doing the AoE spark sequence, you will use harmony stacks on the second spark stack to get a second barrage on the fourth",
 								["criteria"] = "debuff.radiant_spark_vulnerability.stack = 2 & active_enemies >= variable.aoe_spark_target_count",
 								["action"] = "arcane_barrage",
+								["description"] = "When doing the AoE spark sequence, you will use harmony stacks on the second spark stack to get a second barrage on the fourth",
 							}, -- [19]
 							{
 								["enabled"] = true,
-								["description"] = "When using Harmonic Echo, Arcane Blast should be used instead of Arcane Explosion for the first spark stack when doing the AoE spark sequence",
 								["criteria"] = "debuff.radiant_spark_vulnerability.stack = 1 & runeforge.harmonic_echo.enabled & active_enemies >= variable.aoe_spark_target_count",
 								["action"] = "arcane_blast",
+								["description"] = "When using Harmonic Echo, Arcane Blast should be used instead of Arcane Explosion for the first spark stack when doing the AoE spark sequence",
 							}, -- [20]
 							{
 								["enabled"] = true,
@@ -22429,39 +22538,39 @@ HekiliDB = {
 							}, -- [24]
 							{
 								["enabled"] = true,
-								["description"] = "Use mini Barrage between radiant sparks if under BL without delaying Radiant Spark ideally",
 								["criteria"] = "buff.rune_of_power.up & buff.arcane_power.down & buff.bloodlust.up & cooldown.radiant_spark.remains <= 10 & buff.arcane_harmony.stack >= 16",
 								["action"] = "arcane_barrage",
+								["description"] = "Use mini Barrage between radiant sparks if under BL without delaying Radiant Spark ideally",
 							}, -- [25]
 							{
 								["enabled"] = true,
-								["description"] = "Use orb on cd unless ap is coming up soon",
 								["criteria"] = "buff.arcane_charge.stack < 3 & variable.time_until_ap > 10 & ( cooldown.touch_of_the_magi.remains > 5 || ! conduit.arcane_prodigy.enabled )",
 								["action"] = "arcane_orb",
+								["description"] = "Use orb on cd unless ap is coming up soon",
 							}, -- [26]
 							{
 								["enabled"] = true,
-								["chain"] = "1",
 								["criteria"] = "buff.clearcasting.react & buff.arcane_power.up",
 								["action"] = "arcane_missiles",
+								["chain"] = "1",
 							}, -- [27]
 							{
 								["enabled"] = true,
-								["description"] = "If we get power infusion during lust we'll have enough haste to get off a strong barrage during the rop/ap window",
 								["criteria"] = "buff.rune_of_power.up & buff.rune_of_power.remains <= action.arcane_missiles.execute_time & buff.arcane_power.up & buff.arcane_charge.stack = buff.arcane_charge.max_stack & buff.arcane_harmony.stack & buff.power_infusion.up & buff.bloodlust.up",
 								["action"] = "arcane_barrage",
+								["description"] = "If we get power infusion during lust we'll have enough haste to get off a strong barrage during the rop/ap window",
 							}, -- [28]
 							{
 								["enabled"] = true,
-								["description"] = "If we get power infusion during lust we'll have enough haste to get off a strong barrage during the rop/ap window, so we'll only use enough blasts initially to get to four charges",
 								["criteria"] = "buff.presence_of_mind.up & ( buff.arcane_charge.stack < buff.arcane_charge.max_stack || ! ( buff.power_infusion.up & buff.bloodlust.up ) ) & ! ( buff.arcane_charge.stack = 0 & buff.presence_of_mind.stack = 1 )",
 								["action"] = "arcane_blast",
+								["description"] = "If we get power infusion during lust we'll have enough haste to get off a strong barrage during the rop/ap window, so we'll only use enough blasts initially to get to four charges",
 							}, -- [29]
 							{
 								["enabled"] = true,
-								["description"] = "The best use of pom is to use it to quickly build charges during ap after they get dumped by the harmony barrage",
 								["criteria"] = "buff.arcane_charge.stack < buff.arcane_charge.max_stack & buff.arcane_power.up & active_enemies < variable.aoe_target_count",
 								["action"] = "presence_of_mind",
+								["description"] = "The best use of pom is to use it to quickly build charges during ap after they get dumped by the harmony barrage",
 							}, -- [30]
 							{
 								["enabled"] = true,
@@ -22472,15 +22581,15 @@ HekiliDB = {
 							}, -- [31]
 							{
 								["enabled"] = true,
-								["description"] = "In AoE situations, barrage at four charges regardless of harmony stacks",
 								["criteria"] = "buff.arcane_charge.stack = buff.arcane_charge.max_stack & active_enemies >= variable.aoe_target_count",
 								["action"] = "arcane_barrage",
+								["description"] = "In AoE situations, barrage at four charges regardless of harmony stacks",
 							}, -- [32]
 							{
 								["enabled"] = true,
-								["description"] = "Use Arcane Explosion as the filler in AoE situations instead of building harmony stacks with Missiles",
 								["criteria"] = "buff.arcane_charge.stack < buff.arcane_charge.max_stack & active_enemies >= variable.aoe_target_count",
 								["action"] = "arcane_explosion",
+								["description"] = "Use Arcane Explosion as the filler in AoE situations instead of building harmony stacks with Missiles",
 							}, -- [33]
 							{
 								["enabled"] = true,
@@ -22503,9 +22612,9 @@ HekiliDB = {
 							}, -- [36]
 							{
 								["enabled"] = true,
-								["description"] = "Only use blast to build charges if we already have some from orb",
 								["criteria"] = "buff.arcane_charge.stack & buff.arcane_charge.stack < buff.arcane_charge.max_stack",
 								["action"] = "arcane_blast",
+								["description"] = "Only use blast to build charges if we already have some from orb",
 							}, -- [37]
 							{
 								["enabled"] = true,
@@ -22529,15 +22638,15 @@ HekiliDB = {
 						["fishing_opener"] = {
 							{
 								["enabled"] = true,
-								["description"] = "When running either the SS or TW legendaries, we want to Evo before the TotM/AP window. Use it as soon as RoP has finished our we've spent our charges",
 								["criteria"] = "( runeforge.temporal_warp.enabled || ( runeforge.siphon_storm.enabled & ! variable.prepull_evo = 1 ) ) & ( buff.rune_of_power.down || prev_gcd.1.arcane_barrage ) & cooldown.rune_of_power.remains",
 								["action"] = "evocation",
+								["description"] = "When running either the SS or TW legendaries, we want to Evo before the TotM/AP window. Use it as soon as RoP has finished our we've spent our charges",
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["description"] = "If we've finished our cooldown windows and spent our charges, prioritize Evo over everything else",
 								["criteria"] = "talent.rune_of_power.enabled & cooldown.rune_of_power.remains & cooldown.arcane_power.remains & buff.arcane_power.down & buff.rune_of_power.down & prev_gcd.1.arcane_barrage",
 								["action"] = "evocation",
+								["description"] = "If we've finished our cooldown windows and spent our charges, prioritize Evo over everything else",
 							}, -- [2]
 							{
 								["enabled"] = true,
@@ -22551,9 +22660,9 @@ HekiliDB = {
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["chain"] = "1",
 								["criteria"] = "runeforge.arcane_harmony.enabled & buff.arcane_harmony.stack < buff.arcane_harmony.max_stack & ( ( buff.arcane_power.down & cooldown.arcane_power.ready ) || debuff.touch_of_the_magi.up )",
 								["action"] = "arcane_missiles",
+								["chain"] = "1",
 							}, -- [5]
 							{
 								["enabled"] = true,
@@ -22582,9 +22691,9 @@ HekiliDB = {
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["criteria"] = "time > 6 & ( ! equipped.the_first_sigil || cooldown.the_first_sigil.remains )",
 								["name"] = "moonlit_prism",
 								["action"] = "moonlit_prism",
+								["criteria"] = "time > 6 & ( ! equipped.the_first_sigil || cooldown.the_first_sigil.remains )",
 							}, -- [11]
 							{
 								["action"] = "rune_of_power",
@@ -22592,15 +22701,15 @@ HekiliDB = {
 							}, -- [12]
 							{
 								["enabled"] = true,
-								["description"] = "If we're at max stacks of CC and we haven't used MoT yet, use a stack to prevent munching unless running the Harmony legendary",
 								["criteria"] = "buff.clearcasting.react & buff.clearcasting.stack = buff.clearcasting.max_stack & covenant.venthyr & cooldown.mirrors_of_torment.ready & ! variable.empowered_barrage & cooldown.arcane_power.ready",
 								["action"] = "arcane_missiles",
+								["description"] = "If we're at max stacks of CC and we haven't used MoT yet, use a stack to prevent munching unless running the Harmony legendary",
 							}, -- [13]
 							{
 								["enabled"] = true,
-								["description"] = "Normally we pair potion use with AP, but it will last long enough for both the RoP and AP windows unless running the SS or TW legendaries",
 								["action"] = "potion",
 								["criteria"] = "! runeforge.temporal_warp.enabled & ( ! runeforge.siphon_storm.enabled || ( variable.prepull_evo = 1 & buff.arcane_charge.stack = buff.arcane_charge.max_stack ) )",
+								["description"] = "Normally we pair potion use with AP, but it will last long enough for both the RoP and AP windows unless running the SS or TW legendaries",
 							}, -- [14]
 							{
 								["enabled"] = true,
@@ -22619,9 +22728,9 @@ HekiliDB = {
 							}, -- [17]
 							{
 								["enabled"] = true,
-								["description"] = "When running the Harmony legendary, use AP before TotM to dump a fully stacked barrage",
 								["criteria"] = "variable.empowered_barrage & buff.rune_of_power.up & ( mana.pct < ( 25 + ( 10 * covenant.kyrian ) ) || buff.clearcasting.stack = buff.clearcasting.max_stack )",
 								["action"] = "arcane_power",
+								["description"] = "When running the Harmony legendary, use AP before TotM to dump a fully stacked barrage",
 							}, -- [18]
 							{
 								["enabled"] = true,
@@ -22630,9 +22739,9 @@ HekiliDB = {
 							}, -- [19]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.rune_of_power.down || prev_gcd.1.arcane_barrage || prev_gcd.1.radiant_spark || ( prev_gcd.1.deathborne & ! runeforge.siphon_storm.enabled )",
 								["name"] = "soulletting_ruby",
 								["action"] = "soulletting_ruby",
+								["criteria"] = "buff.rune_of_power.down || prev_gcd.1.arcane_barrage || prev_gcd.1.radiant_spark || ( prev_gcd.1.deathborne & ! runeforge.siphon_storm.enabled )",
 							}, -- [20]
 							{
 								["enabled"] = true,
@@ -22646,15 +22755,15 @@ HekiliDB = {
 							}, -- [22]
 							{
 								["enabled"] = true,
-								["description"] = "Use PoM to squeeze an extra Arcane Blast during the TotM/AP window unless running Arcane Echo. If Arcane Echo is talented, we can't use PoM within the TotM/AP window unless we interrupt the AM channel, so we'll save it.",
 								["criteria"] = "! talent.arcane_echo.enabled & debuff.touch_of_the_magi.up & debuff.touch_of_the_magi.remains <= ( action.arcane_blast.execute_time * buff.presence_of_mind.max_stack )",
 								["action"] = "presence_of_mind",
+								["description"] = "Use PoM to squeeze an extra Arcane Blast during the TotM/AP window unless running Arcane Echo. If Arcane Echo is talented, we can't use PoM within the TotM/AP window unless we interrupt the AM channel, so we'll save it.",
 							}, -- [23]
 							{
 								["enabled"] = true,
-								["description"] = "If PoM hasn't been used during the TotM window, we'll use it to squeeze an extra Arcane Blast in the RoP/AP window.",
 								["criteria"] = "buff.arcane_power.up & buff.rune_of_power.remains <= ( action.arcane_blast.execute_time * buff.presence_of_mind.max_stack )",
 								["action"] = "presence_of_mind",
+								["description"] = "If PoM hasn't been used during the TotM window, we'll use it to squeeze an extra Arcane Blast in the RoP/AP window.",
 							}, -- [24]
 							{
 								["enabled"] = true,
@@ -22663,21 +22772,21 @@ HekiliDB = {
 							}, -- [25]
 							{
 								["enabled"] = true,
-								["description"] = "We want to make sure we have enough mana for the entire AP window, even if there's still time remaining on RoP. It's only better to burn to zero and Evo if running the SS or TW legendaries.",
 								["criteria"] = "cooldown.arcane_power.ready & mana.pct < ( 40 + ( 10 * covenant.kyrian ) ) & buff.arcane_charge.stack = buff.arcane_charge.max_stack & ( ! runeforge.siphon_storm.enabled || variable.prepull_evo = 1 ) & ! runeforge.temporal_warp.enabled & ! runeforge.arcane_harmony.enabled",
 								["action"] = "arcane_barrage",
+								["description"] = "We want to make sure we have enough mana for the entire AP window, even if there's still time remaining on RoP. It's only better to burn to zero and Evo if running the SS or TW legendaries.",
 							}, -- [26]
 							{
 								["enabled"] = true,
-								["description"] = "Barrage should not be used at the end of AP if Evocation is ready as dropping charges will make it take longer to burn through remaining mana",
 								["criteria"] = "buff.arcane_power.up & buff.arcane_power.remains <= gcd & cooldown.evocation.remains",
 								["action"] = "arcane_barrage",
+								["description"] = "Barrage should not be used at the end of AP if Evocation is ready as dropping charges will make it take longer to burn through remaining mana",
 							}, -- [27]
 							{
 								["enabled"] = true,
-								["description"] = "Barrage should always be the last cast in the RoP window as TotM will restore the charges spent",
 								["criteria"] = "buff.rune_of_power.up & buff.arcane_power.down & buff.rune_of_power.remains <= gcd & ! runeforge.arcane_harmony.enabled",
 								["action"] = "arcane_barrage",
+								["description"] = "Barrage should always be the last cast in the RoP window as TotM will restore the charges spent",
 							}, -- [28]
 							{
 								["enabled"] = true,
@@ -22688,9 +22797,9 @@ HekiliDB = {
 							}, -- [29]
 							{
 								["enabled"] = true,
-								["description"] = "If we're venthyr, immediately use CC when capped to not waste procs from MoT",
 								["criteria"] = "covenant.venthyr & buff.clearcasting.stack = buff.clearcasting.max_stack",
 								["action"] = "arcane_missiles",
+								["description"] = "If we're venthyr, immediately use CC when capped to not waste procs from MoT",
 							}, -- [30]
 							{
 								["enabled"] = true,
@@ -22724,9 +22833,9 @@ HekiliDB = {
 						["rotation"] = {
 							{
 								["enabled"] = true,
-								["description"] = "Use evo if we're low on mana and cooldowns are about to be up",
 								["criteria"] = "set_bonus.tier28_2pc & covenant.venthyr & cooldown.rune_of_power.remains <= execute_time & cooldown.touch_of_the_magi.remains < 3 & ( buff.arcane_charge.stack > variable.totm_max_charges & talent.rune_of_power.enabled & variable.time_until_ap > variable.totm_max_delay_for_ap )",
 								["action"] = "arcane_barrage",
+								["description"] = "Use evo if we're low on mana and cooldowns are about to be up",
 							}, -- [1]
 							{
 								["enabled"] = true,
@@ -22767,21 +22876,21 @@ HekiliDB = {
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["description"] = "Consume the expanded potential buff asap to not lose potential procs",
 								["criteria"] = "buff.clearcasting.react & buff.expanded_potential.up",
 								["action"] = "arcane_missiles",
+								["description"] = "Consume the expanded potential buff asap to not lose potential procs",
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["chain"] = "1",
 								["criteria"] = "buff.clearcasting.react & ( buff.arcane_power.up || buff.rune_of_power.up || debuff.touch_of_the_magi.remains > action.arcane_missiles.execute_time )",
 								["action"] = "arcane_missiles",
+								["chain"] = "1",
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["chain"] = "1",
 								["criteria"] = "buff.clearcasting.react & buff.clearcasting.stack = buff.clearcasting.max_stack",
 								["action"] = "arcane_missiles",
+								["chain"] = "1",
 							}, -- [11]
 							{
 								["enabled"] = true,
@@ -22812,9 +22921,9 @@ HekiliDB = {
 							}, -- [16]
 							{
 								["enabled"] = true,
-								["description"] = "Dump charges if we fall below the conserve mana threshold and evocation is still on cooldown",
 								["criteria"] = "! runeforge.siphon_storm.enabled & variable.outside_of_cooldowns & buff.arcane_charge.stack = buff.arcane_charge.max_stack & talent.arcane_orb.enabled & cooldown.arcane_orb.remains <= gcd & mana.pct <= 90 & cooldown.evocation.remains",
 								["action"] = "arcane_barrage",
+								["description"] = "Dump charges if we fall below the conserve mana threshold and evocation is still on cooldown",
 							}, -- [17]
 							{
 								["enabled"] = true,
@@ -22823,33 +22932,33 @@ HekiliDB = {
 							}, -- [18]
 							{
 								["enabled"] = true,
-								["description"] = "Dump charges if orb is ready",
 								["criteria"] = "variable.outside_of_cooldowns & buff.arcane_charge.stack = buff.arcane_charge.max_stack & talent.arcane_orb.enabled & cooldown.arcane_orb.remains <= gcd & mana.pct <= 90 & cooldown.evocation.remains & ( ! runeforge.siphon_storm.enabled || buff.siphon_storm.remains <= 18 )",
 								["action"] = "arcane_barrage",
+								["description"] = "Dump charges if orb is ready",
 							}, -- [19]
 							{
 								["enabled"] = true,
-								["description"] = "Arcane Barrage should generally be the last cast of the AP window",
 								["criteria"] = "buff.arcane_power.up & buff.arcane_power.remains <= gcd & buff.arcane_charge.stack = buff.arcane_charge.max_stack & ( cooldown.evocation.remains || runeforge.arcane_harmony.enabled )",
 								["action"] = "arcane_barrage",
+								["description"] = "Arcane Barrage should generally be the last cast of the AP window",
 							}, -- [20]
 							{
 								["enabled"] = true,
-								["description"] = "Arcane Barrage should generally be the last cast of the RoP window",
 								["criteria"] = "buff.rune_of_power.up & buff.arcane_power.down & buff.rune_of_power.remains <= gcd & buff.arcane_charge.stack = buff.arcane_charge.max_stack & ( cooldown.evocation.remains || runeforge.arcane_harmony.enabled )",
 								["action"] = "arcane_barrage",
+								["description"] = "Arcane Barrage should generally be the last cast of the RoP window",
 							}, -- [21]
 							{
 								["enabled"] = true,
-								["description"] = "Arcane Barrage should be the last cast of the TotM window if it is not used with RoP or AP",
 								["criteria"] = "buff.arcane_power.down & buff.rune_of_power.down & debuff.touch_of_the_magi.up & debuff.touch_of_the_magi.remains <= gcd & buff.arcane_charge.stack = buff.arcane_charge.max_stack",
 								["action"] = "arcane_barrage",
+								["description"] = "Arcane Barrage should be the last cast of the TotM window if it is not used with RoP or AP",
 							}, -- [22]
 							{
 								["enabled"] = true,
-								["description"] = "When the target is in execute range and there is more than one enemy, use barrage as soon as you have enough charges to hit all enemies if the Arcane Bombardment legendary is equipped",
 								["criteria"] = "variable.empowered_barrage & buff.arcane_charge.stack >= ( active_enemies - 1 ) & active_enemies > 1 & buff.deathborne.down",
 								["action"] = "arcane_barrage",
+								["description"] = "When the target is in execute range and there is more than one enemy, use barrage as soon as you have enough charges to hit all enemies if the Arcane Bombardment legendary is equipped",
 							}, -- [23]
 							{
 								["enabled"] = true,
@@ -22873,9 +22982,9 @@ HekiliDB = {
 						["cooldowns"] = {
 							{
 								["enabled"] = true,
-								["description"] = "Prioritize using grisly icicle with ap. Use it with totm otherwise.",
 								["criteria"] = "runeforge.grisly_icicle.enabled & cooldown.arcane_power.remains > 30 & cooldown.touch_of_the_magi.ready & ( buff.arcane_charge.stack <= variable.totm_max_charges & ( ( talent.rune_of_power.enabled & cooldown.rune_of_power.remains <= gcd & cooldown.arcane_power.remains > variable.totm_max_delay_for_ap ) || ( ! talent.rune_of_power.enabled & cooldown.arcane_power.remains > variable.totm_max_delay_for_ap ) || cooldown.arcane_power.remains <= gcd ) )",
 								["action"] = "frost_nova",
+								["description"] = "Prioritize using grisly icicle with ap. Use it with totm otherwise.",
 							}, -- [1]
 							{
 								["enabled"] = true,
@@ -22894,9 +23003,9 @@ HekiliDB = {
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["description"] = "Pair MoT with AP if it's coming up soon. If it will be used with TotM, cast it slightly before",
 								["criteria"] = "! runeforge.siphon_storm.enabled & cooldown.touch_of_the_magi.remains <= 9 - ( 3 * set_bonus.tier28_4pc ) & cooldown.arcane_power.remains <= 10 - ( 3 * set_bonus.tier28_4pc )",
 								["action"] = "mirrors_of_torment",
+								["description"] = "Pair MoT with AP if it's coming up soon. If it will be used with TotM, cast it slightly before",
 							}, -- [5]
 							{
 								["enabled"] = true,
@@ -22910,9 +23019,9 @@ HekiliDB = {
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["description"] = "Always use deathborne with ap. If totm is ready as well, make sure to cast it before totm.",
 								["criteria"] = "! runeforge.siphon_storm.enabled & cooldown.touch_of_the_magi.remains <= 15 & cooldown.arcane_power.remains <= 16",
 								["action"] = "deathborne",
+								["description"] = "Always use deathborne with ap. If totm is ready as well, make sure to cast it before totm.",
 							}, -- [8]
 							{
 								["enabled"] = true,
@@ -22926,15 +23035,15 @@ HekiliDB = {
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["description"] = "Use spark if totm and ap are on cd and won't be up for longer than the max delay, making sure we have at least two arcane charges and that totm wasn't just used.",
 								["criteria"] = "cooldown.touch_of_the_magi.remains > variable.rs_max_delay_for_totm & cooldown.arcane_power.remains > variable.rs_max_delay_for_ap & ( talent.rune_of_power.enabled & ( cooldown.rune_of_power.remains < execute_time || cooldown.rune_of_power.remains > variable.rs_max_delay_for_rop ) || ! talent.rune_of_power.enabled ) & buff.arcane_charge.stack > 2 & debuff.touch_of_the_magi.down & buff.rune_of_power.down & buff.arcane_power.down",
 								["action"] = "radiant_spark",
+								["description"] = "Use spark if totm and ap are on cd and won't be up for longer than the max delay, making sure we have at least two arcane charges and that totm wasn't just used.",
 							}, -- [11]
 							{
 								["enabled"] = true,
-								["description"] = "Use spark with ap when possible. If totm is ready as well, make sure to cast it before totm.",
 								["criteria"] = "cooldown.touch_of_the_magi.remains < execute_time & buff.arcane_charge.stack <= variable.totm_max_charges & cooldown.arcane_power.remains < ( execute_time + action.touch_of_the_magi.execute_time )",
 								["action"] = "radiant_spark",
+								["description"] = "Use spark with ap when possible. If totm is ready as well, make sure to cast it before totm.",
 							}, -- [12]
 							{
 								["enabled"] = true,
@@ -22943,9 +23052,9 @@ HekiliDB = {
 							}, -- [13]
 							{
 								["enabled"] = true,
-								["criteria"] = "( ! runeforge.siphon_storm.enabled || buff.siphon_storm.up ) & buff.arcane_charge.stack <= variable.totm_max_charges & cooldown.arcane_power.remains <= execute_time & mana.pct > variable.ap_minimum_mana_pct & buff.rune_of_power.down",
 								["name"] = "soulletting_ruby",
 								["action"] = "soulletting_ruby",
+								["criteria"] = "( ! runeforge.siphon_storm.enabled || buff.siphon_storm.up ) & buff.arcane_charge.stack <= variable.totm_max_charges & cooldown.arcane_power.remains <= execute_time & mana.pct > variable.ap_minimum_mana_pct & buff.rune_of_power.down",
 							}, -- [14]
 							{
 								["enabled"] = true,
@@ -22999,9 +23108,9 @@ HekiliDB = {
 							}, -- [24]
 							{
 								["enabled"] = true,
-								["description"] = "Use pom to squeeze an extra ab in the next cooldown window, unless kyrian then only during arcane power due to how mana hungry radiant spark is",
 								["criteria"] = "talent.rune_of_power.enabled & buff.arcane_power.up & buff.rune_of_power.remains < gcd.max",
 								["action"] = "presence_of_mind",
+								["description"] = "Use pom to squeeze an extra ab in the next cooldown window, unless kyrian then only during arcane power due to how mana hungry radiant spark is",
 							}, -- [25]
 							{
 								["enabled"] = true,
@@ -23082,57 +23191,57 @@ HekiliDB = {
 							}, -- [13]
 							{
 								["enabled"] = true,
-								["criteria"] = "covenant.kyrian & cooldown.arcane_power.remains <= 10 & cooldown.touch_of_the_magi.remains <= 10 & ( ! equipped.the_first_sigil || cooldown.the_first_sigil.remains )",
 								["name"] = "moonlit_prism",
 								["action"] = "moonlit_prism",
+								["criteria"] = "covenant.kyrian & cooldown.arcane_power.remains <= 10 & cooldown.touch_of_the_magi.remains <= 10 & ( ! equipped.the_first_sigil || cooldown.the_first_sigil.remains )",
 							}, -- [14]
 							{
 								["enabled"] = true,
-								["criteria"] = "! covenant.kyrian & cooldown.arcane_power.remains <= 6 & cooldown.touch_of_the_magi.remains <= 6 & time > 30 & ( ! covenant.venthyr || active_enemies < variable.aoe_target_count ) & ( ! equipped.the_first_sigil || cooldown.the_first_sigil.remains )",
 								["name"] = "moonlit_prism",
 								["action"] = "moonlit_prism",
+								["criteria"] = "! covenant.kyrian & cooldown.arcane_power.remains <= 6 & cooldown.touch_of_the_magi.remains <= 6 & time > 30 & ( ! covenant.venthyr || active_enemies < variable.aoe_target_count ) & ( ! equipped.the_first_sigil || cooldown.the_first_sigil.remains )",
 							}, -- [15]
 							{
 								["enabled"] = true,
-								["criteria"] = "cooldown.arcane_power.remains <= 15 & cooldown.touch_of_the_magi.remains <= 15",
 								["name"] = "empyreal_ordnance",
 								["action"] = "empyreal_ordnance",
+								["criteria"] = "cooldown.arcane_power.remains <= 15 & cooldown.touch_of_the_magi.remains <= 15",
 							}, -- [16]
 							{
 								["enabled"] = true,
-								["criteria"] = "cooldown.arcane_power.remains >= 20 || ! variable.ap_on_use = 1 || ( time = 0 & variable.fishing_opener = 1 & runeforge.siphon_storm.enabled )",
 								["name"] = "dreadfire_vessel",
 								["action"] = "dreadfire_vessel",
+								["criteria"] = "cooldown.arcane_power.remains >= 20 || ! variable.ap_on_use = 1 || ( time = 0 & variable.fishing_opener = 1 & runeforge.siphon_storm.enabled )",
 							}, -- [17]
 							{
 								["enabled"] = true,
-								["criteria"] = "cooldown.arcane_power.remains >= 30 || ! variable.ap_on_use = 1",
 								["name"] = "soul_igniter",
 								["action"] = "soul_igniter",
+								["criteria"] = "cooldown.arcane_power.remains >= 30 || ! variable.ap_on_use = 1",
 							}, -- [18]
 							{
 								["enabled"] = true,
-								["criteria"] = "cooldown.arcane_power.remains >= 20 || ! variable.ap_on_use = 1 || ( time = 0 & variable.fishing_opener = 1 & runeforge.siphon_storm.enabled )",
 								["name"] = "glyph_of_assimilation",
 								["action"] = "glyph_of_assimilation",
+								["criteria"] = "cooldown.arcane_power.remains >= 20 || ! variable.ap_on_use = 1 || ( time = 0 & variable.fishing_opener = 1 & runeforge.siphon_storm.enabled )",
 							}, -- [19]
 							{
 								["enabled"] = true,
-								["criteria"] = "cooldown.arcane_power.remains <= 5 & ( ! variable.fishing_opener = 1 || time > 30 )",
 								["name"] = "macabre_sheet_music",
 								["action"] = "macabre_sheet_music",
+								["criteria"] = "cooldown.arcane_power.remains <= 5 & ( ! variable.fishing_opener = 1 || time > 30 )",
 							}, -- [20]
 							{
 								["enabled"] = true,
-								["criteria"] = "cooldown.arcane_power.remains <= 5 & variable.fishing_opener = 1 & buff.rune_of_power.up & buff.rune_of_power.remains <= ( 10 - 5 * runeforge.siphon_storm.enabled ) & time < 30",
 								["name"] = "macabre_sheet_music",
 								["action"] = "macabre_sheet_music",
+								["criteria"] = "cooldown.arcane_power.remains <= 5 & variable.fishing_opener = 1 & buff.rune_of_power.up & buff.rune_of_power.remains <= ( 10 - 5 * runeforge.siphon_storm.enabled ) & time < 30",
 							}, -- [21]
 							{
 								["enabled"] = true,
-								["criteria"] = "time = 0 || ( variable.outside_of_cooldowns & ( ( covenant.kyrian & cooldown.radiant_spark.remains <= 2 & cooldown.arcane_power.remains <= 5 & cooldown.touch_of_the_magi.remains <= 5 ) || cooldown.arcane_power.remains <= 2 || fight_remains < cooldown.arcane_power.remains ) )",
 								["name"] = "shadowed_orb_of_torment",
 								["action"] = "shadowed_orb_of_torment",
+								["criteria"] = "time = 0 || ( variable.outside_of_cooldowns & ( ( covenant.kyrian & cooldown.radiant_spark.remains <= 2 & cooldown.arcane_power.remains <= 5 & cooldown.touch_of_the_magi.remains <= 5 ) || cooldown.arcane_power.remains <= 2 || fight_remains < cooldown.arcane_power.remains ) )",
 							}, -- [22]
 							{
 								["enabled"] = true,
@@ -23269,9 +23378,9 @@ HekiliDB = {
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["chain"] = "1",
 								["criteria"] = "covenant.venthyr & runeforge.arcane_infinity.enabled & buff.arcane_harmony.stack < 15 & cooldown.touch_of_the_magi.remains <= variable.harmony_stack_time + execute_time & cooldown.arcane_power.remains <= variable.harmony_stack_time + execute_time + action.touch_of_the_magi.execute_time",
 								["action"] = "arcane_missiles",
+								["chain"] = "1",
 							}, -- [5]
 							{
 								["enabled"] = true,
@@ -23280,9 +23389,9 @@ HekiliDB = {
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["criteria"] = "runeforge.siphon_storm.enabled & prev_gcd.1.evocation",
 								["name"] = "soulletting_ruby",
 								["action"] = "soulletting_ruby",
+								["criteria"] = "runeforge.siphon_storm.enabled & prev_gcd.1.evocation",
 							}, -- [7]
 							{
 								["enabled"] = true,
@@ -23323,9 +23432,9 @@ HekiliDB = {
 							}, -- [14]
 							{
 								["enabled"] = true,
-								["criteria"] = "cooldown.radiant_spark.ready & cooldown.touch_of_the_magi.remains <= gcd.max & cooldown.arcane_power.remains <= gcd.max",
 								["name"] = "soulletting_ruby",
 								["action"] = "soulletting_ruby",
+								["criteria"] = "cooldown.radiant_spark.ready & cooldown.touch_of_the_magi.remains <= gcd.max & cooldown.arcane_power.remains <= gcd.max",
 							}, -- [15]
 							{
 								["enabled"] = true,
@@ -23344,9 +23453,9 @@ HekiliDB = {
 							}, -- [18]
 							{
 								["enabled"] = true,
-								["criteria"] = "( buff.arcane_charge.stack <= variable.aoe_totm_max_charges || prev_gcd.1.radiant_spark ) & ( ( talent.rune_of_power.enabled & cooldown.rune_of_power.remains <= gcd & cooldown.arcane_power.remains > variable.totm_max_delay_for_ap ) || ( ! talent.rune_of_power.enabled & cooldown.arcane_power.remains > variable.totm_max_delay_for_ap ) || cooldown.arcane_power.remains <= gcd ) & ! ( soulbind.effusive_anima_accelerator.enabled & runeforge.harmonic_echo.enabled )",
 								["name"] = "soulletting_ruby",
 								["action"] = "soulletting_ruby",
+								["criteria"] = "( buff.arcane_charge.stack <= variable.aoe_totm_max_charges || prev_gcd.1.radiant_spark ) & ( ( talent.rune_of_power.enabled & cooldown.rune_of_power.remains <= gcd & cooldown.arcane_power.remains > variable.totm_max_delay_for_ap ) || ( ! talent.rune_of_power.enabled & cooldown.arcane_power.remains > variable.totm_max_delay_for_ap ) || cooldown.arcane_power.remains <= gcd ) & ! ( soulbind.effusive_anima_accelerator.enabled & runeforge.harmonic_echo.enabled )",
 							}, -- [19]
 							{
 								["enabled"] = true,
@@ -23491,9 +23600,9 @@ HekiliDB = {
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["criteria"] = "prev_gcd.1.mirrors_of_torment & ( ! equipped.the_first_sigil || cooldown.the_first_sigil.remains )",
 								["name"] = "moonlit_prism",
 								["action"] = "moonlit_prism",
+								["criteria"] = "prev_gcd.1.mirrors_of_torment & ( ! equipped.the_first_sigil || cooldown.the_first_sigil.remains )",
 							}, -- [4]
 							{
 								["enabled"] = true,
@@ -23647,15 +23756,15 @@ HekiliDB = {
 							}, -- [13]
 							{
 								["enabled"] = true,
-								["description"] = "Use PoM to squeeze an extra Arcane Blast during the TotM/AP window unless running Arcane Echo. If Arcane Echo is talented, we can't use PoM within the TotM/AP window unless we interrupt the AM channel, so we'll save it.",
 								["criteria"] = "! talent.arcane_echo.enabled & debuff.touch_of_the_magi.up & debuff.touch_of_the_magi.remains <= ( action.arcane_blast.execute_time * buff.presence_of_mind.max_stack )",
 								["action"] = "presence_of_mind",
+								["description"] = "Use PoM to squeeze an extra Arcane Blast during the TotM/AP window unless running Arcane Echo. If Arcane Echo is talented, we can't use PoM within the TotM/AP window unless we interrupt the AM channel, so we'll save it.",
 							}, -- [14]
 							{
 								["enabled"] = true,
-								["description"] = "If PoM hasn't been used during the TotM window, we'll use it to squeeze an extra Arcane Blast in the RoP/AP window.",
 								["criteria"] = "buff.arcane_power.up & buff.rune_of_power.remains <= ( action.arcane_blast.execute_time * buff.presence_of_mind.max_stack )",
 								["action"] = "presence_of_mind",
+								["description"] = "If PoM hasn't been used during the TotM window, we'll use it to squeeze an extra Arcane Blast in the RoP/AP window.",
 							}, -- [15]
 							{
 								["enabled"] = true,
@@ -23664,15 +23773,15 @@ HekiliDB = {
 							}, -- [16]
 							{
 								["enabled"] = true,
-								["description"] = "Always Barrage at the end of AP when running the Arcane Harmony legendary",
 								["criteria"] = "buff.arcane_power.up & buff.arcane_power.remains < gcd & runeforge.arcane_harmony.enabled",
 								["action"] = "arcane_barrage",
+								["description"] = "Always Barrage at the end of AP when running the Arcane Harmony legendary",
 							}, -- [17]
 							{
 								["enabled"] = true,
-								["description"] = "Always Barrage at the end of the RoP window when running the Arcane Harmony legendary",
 								["criteria"] = "buff.rune_of_power.up & buff.arcane_power.down & buff.rune_of_power.remains <= gcd & runeforge.arcane_harmony.enabled",
 								["action"] = "arcane_barrage",
+								["description"] = "Always Barrage at the end of the RoP window when running the Arcane Harmony legendary",
 							}, -- [18]
 							{
 								["enabled"] = true,
@@ -23688,9 +23797,9 @@ HekiliDB = {
 							}, -- [20]
 							{
 								["enabled"] = true,
-								["chain"] = "1",
 								["criteria"] = "buff.clearcasting.react & cooldown.arcane_power.remains & ( buff.rune_of_power.up || buff.arcane_power.up )",
 								["action"] = "arcane_missiles",
+								["chain"] = "1",
 							}, -- [21]
 							{
 								["enabled"] = true,
@@ -23717,9 +23826,9 @@ HekiliDB = {
 						["final_burn"] = {
 							{
 								["enabled"] = true,
-								["chain"] = "1",
 								["criteria"] = "buff.clearcasting.react",
 								["action"] = "arcane_missiles",
+								["chain"] = "1",
 							}, -- [1]
 							{
 								["action"] = "arcane_blast",
@@ -23828,9 +23937,9 @@ HekiliDB = {
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["action"] = "wound_spender",
 								["description"] = "When target swaps are disabled, this will let you spend runes/wounds instead of waiting for DnD/Defile/Death's Due.",
 								["criteria"] = "( ! settings.cycle || death_knight.fwounded_targets >= cycle_enemies ) & debuff.festering_wound.stack > 3 & rune.time_to_3 < cooldown.any_dnd.remains",
+								["action"] = "wound_spender",
 							}, -- [7]
 						},
 						["aoe_burst"] = {
@@ -23882,9 +23991,9 @@ HekiliDB = {
 						["racials"] = {
 							{
 								["enabled"] = true,
-								["action"] = "arcane_torrent",
 								["description"] = "Racials",
 								["criteria"] = "runic_power.deficit > 65 & ( pet.gargoyle.active || ! talent.summon_gargoyle.enabled ) & rune.deficit >= 5",
+								["action"] = "arcane_torrent",
 							}, -- [1]
 							{
 								["enabled"] = true,
@@ -23903,9 +24012,9 @@ HekiliDB = {
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["action"] = "ancestral_call",
 								["description"] = "Ancestral Call can trigger 4 potential buffs, each lasting 15 seconds. Utilized hard coded time as a trigger to keep it readable.",
 								["criteria"] = "variable.major_cooldowns_active || pet.gargoyle.active & pet.gargoyle.remains <= 15 || boss & fight_remains <= 15",
+								["action"] = "ancestral_call",
 							}, -- [5]
 							{
 								["enabled"] = true,
@@ -23973,9 +24082,9 @@ HekiliDB = {
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["action"] = "swarming_mist",
 								["description"] = "Set to use after apoc is on CD as to prevent overcapping RP while setting up CD's",
 								["criteria"] = "cooldown.apocalypse.remains & ( active_enemies >= 2 & active_enemies <= 5 & runic_power.deficit > 10 + ( active_enemies * 6 ) & variable.adds_remain || active_enemies > 5 & runic_power.deficit > 40 )",
+								["action"] = "swarming_mist",
 							}, -- [2]
 							{
 								["enabled"] = true,
@@ -24099,9 +24208,9 @@ HekiliDB = {
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["action"] = "unholy_blight",
 								["description"] = "Holds Blight for up to 5 seconds to sync with Apocalypse, Otherwise, use with Dark Transformation.",
 								["criteria"] = "variable.st_planning & ( cooldown.apocalypse.remains_expected < 5 || cooldown.apocalypse.remains_expected > 10 ) & ( cooldown.dark_transformation.remains < gcd || buff.dark_transformation.up )",
+								["action"] = "unholy_blight",
 							}, -- [4]
 							{
 								["enabled"] = true,
@@ -24196,9 +24305,9 @@ HekiliDB = {
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["action"] = "festering_strike",
 								["description"] = "This is effectively filler which sims DPS neutral, but should prevent a scenario where the addon has nothing to recommend.",
 								["criteria"] = "active_dot.festering_wound >= cycle_enemies & debuff.festering_wound.stack < 4",
+								["action"] = "festering_strike",
 							}, -- [8]
 						},
 						["default"] = {
@@ -24258,9 +24367,9 @@ HekiliDB = {
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["action"] = "outbreak",
 								["description"] = "Maintaining Virulent Plague is a priority",
 								["criteria"] = "dot.virulent_plague.refreshable & ! talent.unholy_blight.enabled & ! raid_event.adds.exists",
+								["action"] = "outbreak",
 							}, -- [9]
 							{
 								["enabled"] = true,
@@ -24282,9 +24391,9 @@ HekiliDB = {
 							}, -- [12]
 							{
 								["enabled"] = true,
-								["action"] = "wound_spender",
 								["description"] = "Refreshes Deaths Due's buff just before deaths due ends",
 								["criteria"] = "covenant.night_fae & death_and_decay.ticking & ( death_and_decay.active_remains < ( gcd * 1.5 ) || buff.deaths_due.remains < gcd )",
+								["action"] = "wound_spender",
 							}, -- [13]
 							{
 								["enabled"] = true,
@@ -24355,9 +24464,9 @@ HekiliDB = {
 						["trinkets"] = {
 							{
 								["enabled"] = true,
-								["action"] = "inscrutable_quantum_device",
 								["criteria"] = "( cooldown.unholy_blight.remains > 20 || cooldown.dark_transformation.remains_expected > 20 ) & ( active_enemies >= 2 || pet.army_ghoul.active || pet.apoc_ghoul.active & ( talent.unholy_assault.enabled || death_knight.disable_aotd ) || pet.gargoyle.active ) || boss & fight_remains < 21 || death_knight.disable_iqd_execute = 0 & target.time_to_pct_20 < 5",
 								["name"] = "inscrutable_quantum_device",
+								["action"] = "inscrutable_quantum_device",
 							}, -- [1]
 							{
 								["enabled"] = true,
@@ -24371,21 +24480,21 @@ HekiliDB = {
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["action"] = "the_first_sigil",
 								["criteria"] = "variable.major_cooldowns_active & ( time > 30 || ! equipped.inscrutable_quantum_device )",
 								["name"] = "the_first_sigil",
+								["action"] = "the_first_sigil",
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["action"] = "overwhelming_power_crystal",
 								["criteria"] = "variable.major_cooldowns_active & ( time > 30 || ! equipped.inscrutable_quantum_device & ! equipped.the_first_sigil )",
 								["name"] = "overwhelming_power_crystal",
+								["action"] = "overwhelming_power_crystal",
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["action"] = "trinket1",
 								["description"] = "The trinket with the highest estimated value, will be used first and paired with Apocalypse (if buff is 15 seconds or less) or Blight/DT (if greater than 15 seconds)",
 								["criteria"] = "! variable.specified_trinket & ( ( trinket.t1.buff_duration <= 15 & cooldown.apocalypse.remains > 20 || trinket.t1.buff_duration > 15 & ( cooldown.unholy_blight.remains > 20 || cooldown.dark_transformation.remains_expected > 20 ) || active_enemies >= 2 & buff.dark_transformation.up ) & ( ! trinket.t2.has_cooldown || trinket.t2.cooldown.remains || variable.trinket_priority = 1 ) ) || boss & trinket.t1.buff_duration >= fight_remains",
+								["action"] = "trinket1",
 							}, -- [6]
 							{
 								["enabled"] = true,
@@ -24422,9 +24531,9 @@ HekiliDB = {
 						["obliteration_pooling"] = {
 							{
 								["enabled"] = true,
-								["action"] = "remorseless_winter",
 								["description"] = "Pooling For Obliteration: Starts 10 seconds before Pillar of Frost comes off CD",
 								["criteria"] = "variable.rw_buffs || active_enemies >= 2",
+								["action"] = "remorseless_winter",
 							}, -- [1]
 							{
 								["enabled"] = true,
@@ -24489,15 +24598,15 @@ HekiliDB = {
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["action"] = "chains_of_ice",
 								["description"] = "Use during Pillar with Icecap/Breath",
 								["criteria"] = "! talent.obliteration.enabled & buff.pillar_of_frost.up & buff.cold_heart.stack >= 10 & ( buff.pillar_of_frost.remains < gcd * ( 1 + cooldown.frostwyrms_fury.ready ) || buff.unholy_strength.remains < gcd || buff.chaos_bane.remains < gcd )",
+								["action"] = "chains_of_ice",
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["action"] = "chains_of_ice",
 								["description"] = "Outside of Pillar useage with Icecap/Breath",
 								["criteria"] = "! talent.obliteration.enabled & death_knight.runeforge.fallen_crusader & ! buff.pillar_of_frost.up & cooldown.pillar_of_frost.remains > 15 & ( buff.cold_heart.stack >= 10 & ( buff.unholy_strength.up || buff.chaos_bane.up ) || buff.cold_heart.stack >= 13 )",
+								["action"] = "chains_of_ice",
 							}, -- [3]
 							{
 								["enabled"] = true,
@@ -24506,17 +24615,17 @@ HekiliDB = {
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["action"] = "chains_of_ice",
 								["description"] = "Prevent Cold Heart overcapping during pillar",
 								["criteria"] = "talent.obliteration.enabled & ! buff.pillar_of_frost.up & ( buff.cold_heart.stack >= 14 & ( buff.unholy_strength.up || buff.chaos_bane.up ) || buff.cold_heart.stack >= 19 || cooldown.pillar_of_frost.remains < 3 & buff.cold_heart.stack >= 14 )",
+								["action"] = "chains_of_ice",
 							}, -- [5]
 						},
 						["obliteration"] = {
 							{
 								["enabled"] = true,
-								["action"] = "remorseless_winter",
 								["description"] = "Obliteration rotation",
 								["criteria"] = "active_enemies >= 3 & variable.rw_buffs",
+								["action"] = "remorseless_winter",
 							}, -- [1]
 							{
 								["enabled"] = true,
@@ -24579,9 +24688,9 @@ HekiliDB = {
 						["standard"] = {
 							{
 								["enabled"] = true,
-								["action"] = "remorseless_winter",
 								["description"] = "Standard single-target rotation",
 								["criteria"] = "variable.rw_buffs",
+								["action"] = "remorseless_winter",
 							}, -- [1]
 							{
 								["enabled"] = true,
@@ -24697,6 +24806,322 @@ HekiliDB = {
 								["action"] = "arcane_torrent",
 							}, -- [11]
 						},
+						["covenants"] = {
+							{
+								["enabled"] = true,
+								["description"] = "Covenant Abilities",
+								["criteria"] = "( ! talent.obliteration.enabled || talent.obliteration.enabled & active_enemies >= 2 & cooldown.pillar_of_frost.remains || active_enemies = 1 ) & ( variable.st_planning || variable.adds_remain )",
+								["action"] = "deaths_due",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "runic_power.deficit > 13 & cooldown.pillar_of_frost.remains < 3 & ! talent.breath_of_sindragosa.enabled & variable.st_planning",
+								["action"] = "swarming_mist",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "! talent.breath_of_sindragosa.enabled & variable.adds_remain",
+								["action"] = "swarming_mist",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.breath_of_sindragosa.enabled & ( buff.breath_of_sindragosa.up & ( variable.st_planning & runic_power.deficit > 40 || variable.adds_remain & runic_power.deficit > 60 || variable.adds_remain & raid_event.adds.remains < 9 & raid_event.adds.exists ) || ! buff.breath_of_sindragosa.up & cooldown.breath_of_sindragosa.remains )",
+								["action"] = "swarming_mist",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "cooldown.pillar_of_frost.remains < gcd * 2 & variable.st_planning & ( talent.breath_of_sindragosa.enabled & runic_power > 65 & cooldown.breath_of_sindragosa.remains < 2 || ! talent.breath_of_sindragosa.enabled )",
+								["action"] = "abomination_limb",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.adds_remain",
+								["action"] = "abomination_limb",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.st_planning & ( cooldown.pillar_of_frost.remains < 3 || talent.icecap.enabled )",
+								["action"] = "shackle_the_unworthy",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.adds_remain",
+								["action"] = "shackle_the_unworthy",
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["criteria"] = "! buff.pillar_of_frost.up & ( soulbind.pustule_eruption.enabled || soulbind.volatile_solvent.enabled & ! buff.volatile_solvent.up )",
+								["interrupt_if"] = "soulbind.volatile_solvent",
+								["interrupt_immediate"] = "1",
+								["action"] = "fleshcraft",
+								["interrupt_global"] = "1",
+							}, -- [9]
+						},
+						["cooldowns"] = {
+							{
+								["enabled"] = true,
+								["description"] = "Potion",
+								["action"] = "potion",
+								["criteria"] = "buff.pillar_of_frost.up",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["description"] = "Cooldowns",
+								["criteria"] = "talent.obliteration.enabled & rune < 6 & ( variable.st_planning || variable.adds_remain ) & ( cooldown.pillar_of_frost.remains < 5 & ( cooldown.fleshcraft.remains > 5 & soulbind.pustule_eruption.enabled || ! soulbind.pustule_eruption.enabled ) || buff.pillar_of_frost.up ) || boss & fight_remains < 20",
+								["action"] = "empower_rune_weapon",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.breath_of_sindragosa.enabled & rune < 5 & runic_power < ( 60 - death_knight.runeforge.hysteria * 5 - runeforge.rampant_transference.enabled * 5 ) & ( buff.breath_of_sindragosa.up || fight_remains < 20 )",
+								["action"] = "empower_rune_weapon",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.icecap.enabled",
+								["action"] = "empower_rune_weapon",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.breath_of_sindragosa.enabled & ( variable.st_planning || variable.adds_remain ) & ( cooldown.breath_of_sindragosa.remains || cooldown.breath_of_sindragosa.ready & runic_power > 65 )",
+								["action"] = "pillar_of_frost",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.icecap.enabled & ! buff.pillar_of_frost.up",
+								["action"] = "pillar_of_frost",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.obliteration.enabled & ( runic_power >= 35 & ! buff.abomination_limb.up || buff.abomination_limb.up || runeforge.rage_of_the_frozen_champion.enabled ) & ( variable.st_planning || variable.adds_remain ) & ( talent.gathering_storm.enabled & buff.remorseless_winter.up || ! talent.gathering_storm.enabled )",
+								["action"] = "pillar_of_frost",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.pillar_of_frost.up",
+								["action"] = "breath_of_sindragosa",
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["criteria"] = "active_enemies = 1 & buff.pillar_of_frost.remains < gcd & buff.pillar_of_frost.up & ! talent.obliteration.enabled & ( ! raid_event.adds.exists || raid_event.adds.in > 30 ) || fight_remains < 3",
+								["action"] = "frostwyrms_fury",
+							}, -- [9]
+							{
+								["enabled"] = true,
+								["criteria"] = "active_enemies >= 2 & ( buff.pillar_of_frost.up || raid_event.adds.exists & raid_event.adds.in > cooldown.pillar_of_frost.remains + 7 ) & ( buff.pillar_of_frost.remains < gcd || raid_event.adds.exists & raid_event.adds.remains < gcd )",
+								["action"] = "frostwyrms_fury",
+							}, -- [10]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.obliteration.enabled & ( buff.pillar_of_frost.up & ! main_hand.2h || ! buff.pillar_of_frost.up & main_hand.2h & cooldown.pillar_of_frost.remains ) & ( ( buff.pillar_of_frost.remains < gcd || buff.unholy_strength.up & buff.unholy_strength.remains < gcd ) & ( debuff.razorice.stack = 5 || ! death_knight.runeforge.razorice ) )",
+								["action"] = "frostwyrms_fury",
+							}, -- [11]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.breath_of_sindragosa.enabled & runic_power < 60 & rune <= 3 & ( buff.breath_of_sindragosa.up || cooldown.breath_of_sindragosa.remains > 40 ) || ! talent.breath_of_sindragosa.enabled & runic_power <= 75",
+								["action"] = "hypothermic_presence",
+							}, -- [12]
+							{
+								["enabled"] = true,
+								["criteria"] = "cooldown.pillar_of_frost.remains <= 5",
+								["action"] = "raise_dead",
+							}, -- [13]
+							{
+								["enabled"] = true,
+								["criteria"] = "active_enemies >= 2 & ( fight_remains < 3 || ! buff.breath_of_sindragosa.up & ( pet.ghoul.remains < gcd || raid_event.adds.exists & raid_event.adds.remains < 3 & raid_event.adds.in > pet.ghoul.remains ) )",
+								["action"] = "sacrificial_pact",
+							}, -- [14]
+							{
+								["enabled"] = true,
+								["criteria"] = "active_enemies > 5 || runeforge.phearomones.enabled",
+								["action"] = "death_and_decay",
+							}, -- [15]
+						},
+						["bos_pooling"] = {
+							{
+								["enabled"] = true,
+								["description"] = "Breath of Sindragosa pooling rotation : starts 10s before BoS is available",
+								["criteria"] = "active_enemies >= 2 || variable.rw_buffs",
+								["action"] = "remorseless_winter",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["action"] = "obliterate",
+								["criteria"] = "buff.killing_machine.react & cooldown.pillar_of_frost.remains > 3",
+								["cycle_targets"] = 1,
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.rotfc_rime",
+								["action"] = "howling_blast",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.killing_machine.react & runic_power.deficit > ( 15 + talent.runic_attenuation.enabled * 5 ) & spell_targets.frostscythe > 2 & ! variable.deaths_due_active",
+								["action"] = "frostscythe",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "runic_power.deficit >= ( 35 + talent.runic_attenuation.enabled * 5 ) & spell_targets.frostscythe > 2 & ! variable.deaths_due_active",
+								["action"] = "frostscythe",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["action"] = "obliterate",
+								["criteria"] = "runic_power.deficit >= 25",
+								["cycle_targets"] = 1,
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "runic_power.deficit < 20 & spell_targets.glacial_advance >= 2 & cooldown.pillar_of_frost.remains > 5",
+								["action"] = "glacial_advance",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["action"] = "frost_strike",
+								["criteria"] = "runic_power.deficit < 20 & cooldown.pillar_of_frost.remains > 5",
+								["cycle_targets"] = 1,
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["criteria"] = "cooldown.pillar_of_frost.remains > rune.time_to_4 & runic_power.deficit < 40 & spell_targets.glacial_advance >= 2",
+								["action"] = "glacial_advance",
+							}, -- [9]
+							{
+								["enabled"] = true,
+								["action"] = "frost_strike",
+								["criteria"] = "cooldown.pillar_of_frost.remains > rune.time_to_4 & runic_power.deficit < 40",
+								["cycle_targets"] = 1,
+							}, -- [10]
+						},
+						["precombat"] = {
+							{
+								["enabled"] = true,
+								["op"] = "setif",
+								["description"] = "Evaluates a trinkets cooldown, divided by pillar of frost or breath of sindragosa's cooldown. If it's value has no remainder return 1, else return 0.5.",
+								["criteria"] = "trinket.t1.has_use_buff & ( ! talent.breath_of_sindragosa.enabled & ( trinket.t1.cooldown.duration % cooldown.pillar_of_frost.duration = 0 ) || talent.breath_of_sindragosa.enabled & ( cooldown.breath_of_sindragosa.duration % trinket.t1.cooldown.duration = 0 ) || talent.icecap.enabled )",
+								["var_name"] = "trinket_1_sync",
+								["action"] = "variable",
+								["value_else"] = "0.5",
+								["value"] = "1",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["op"] = "setif",
+								["action"] = "variable",
+								["var_name"] = "trinket_2_sync",
+								["criteria"] = "trinket.t2.has_use_buff & ( ! talent.breath_of_sindragosa.enabled & ( trinket.t2.cooldown.duration % cooldown.pillar_of_frost.duration = 0 ) || talent.breath_of_sindragosa.enabled & ( cooldown.breath_of_sindragosa.duration % trinket.t2.cooldown.duration = 0 ) || talent.icecap.enabled )",
+								["value_else"] = "0.5",
+								["value"] = "1",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["op"] = "setif",
+								["description"] = "Estimates a trinkets value by comparing the cooldown of the trinket, divided by the duration of the buff it provides. Has a strength modifier to give a higher priority to strength trinkets, as well as a modifier for if a trinket will or will not sync with cooldowns.",
+								["criteria"] = "! trinket.t1.has_use_buff & trinket.t2.has_use_buff || trinket.t2.has_use_buff & ( ( trinket.t2.cooldown.duration / trinket.t2.buff_duration ) * ( 1.5 + trinket.t2.has_buff.strength ) * ( variable.trinket_2_sync ) ) > ( ( trinket.t1.cooldown.duration / trinket.t1.buff_duration ) * ( 1.5 + trinket.t1.has_buff.strength ) * ( variable.trinket_1_sync ) )",
+								["var_name"] = "trinket_priority",
+								["action"] = "variable",
+								["value_else"] = "1",
+								["value"] = "2",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "talent.gathering_storm.enabled || conduit.everfrost.enabled || runeforge.biting_cold.enabled",
+								["var_name"] = "rw_buffs",
+							}, -- [4]
+							{
+								["action"] = "fleshcraft",
+								["enabled"] = true,
+							}, -- [5]
+						},
+						["racials"] = {
+							{
+								["enabled"] = true,
+								["description"] = "Racial Abilities",
+								["criteria"] = "buff.pillar_of_frost.up",
+								["action"] = "blood_fury",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.pillar_of_frost.up",
+								["action"] = "berserking",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "( ! buff.pillar_of_frost.up & active_enemies >= 2 ) || ! buff.pillar_of_frost.up & ( rune.deficit >= 5 & runic_power.deficit >= 60 )",
+								["action"] = "arcane_pulse",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.pillar_of_frost.up",
+								["action"] = "lights_judgment",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.pillar_of_frost.up & buff.empower_rune_weapon.up",
+								["action"] = "ancestral_call",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.pillar_of_frost.remains <= 8 & buff.pillar_of_frost.up & buff.empower_rune_weapon.up",
+								["action"] = "fireblood",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.pillar_of_frost.up & active_enemies = 1 & ( buff.pillar_of_frost.remains < 5 & talent.cold_heart.enabled || ! talent.cold_heart.enabled & buff.pillar_of_frost.remains < 3 )",
+								["action"] = "bag_of_tricks",
+							}, -- [7]
+						},
+						["trinkets"] = {
+							{
+								["enabled"] = true,
+								["name"] = "inscrutable_quantum_device",
+								["description"] = "Trinkets",
+								["criteria"] = "! talent.breath_of_sindragosa.enabled & buff.pillar_of_frost.up & buff.empower_rune_weapon.up || talent.breath_of_sindragosa.enabled & ( ( buff.pillar_of_frost.up & cooldown.breath_of_sindragosa.ready ) || ( buff.pillar_of_frost.up & ( ( fight_remains - cooldown.breath_of_sindragosa.remains ) < 21 ) ) ) || boss & fight_remains < 21 || death_knight.disable_iqd_execute = 0 & target.time_to_pct_20 < 5",
+								["action"] = "inscrutable_quantum_device",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["name"] = "gavel_of_the_first_arbiter",
+								["action"] = "gavel_of_the_first_arbiter",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["name"] = "scars_of_fraternal_strife",
+								["action"] = "scars_of_fraternal_strife",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.pillar_of_frost.up & buff.empower_rune_weapon.up",
+								["name"] = "the_first_sigil",
+								["action"] = "the_first_sigil",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["description"] = "The trinket with the highest estimated value, will be used first and paired with Pillar of Frost.",
+								["criteria"] = "! variable.specified_trinket & buff.pillar_of_frost.up & ( ! talent.icecap.enabled || talent.icecap.enabled & buff.pillar_of_frost.remains >= 10 ) & ( ! trinket.t2.has_cooldown || trinket.t2.cooldown.remains || variable.trinket_priority = 1 ) || trinket.t1.buff_duration >= fight_remains",
+								["action"] = "trinket1",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "! variable.specified_trinket & buff.pillar_of_frost.up & ( ! talent.icecap.enabled || talent.icecap.enabled & buff.pillar_of_frost.remains >= 10 ) & ( ! trinket.t1.has_cooldown || trinket.t1.cooldown.remains || variable.trinket_priority = 2 ) || trinket.t2.buff_duration >= fight_remains",
+								["action"] = "trinket2",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["action"] = "trinket1",
+								["slot"] = "trinket1",
+								["criteria"] = "! variable.specified_trinket & ( ! trinket.t1.has_use_buff & ( trinket.t2.cooldown.remains || ! trinket.t2.has_use_buff ) || cooldown.pillar_of_frost.remains > 20 )",
+								["description"] = "If only one on use trinket provides a buff, use the other on cooldown. Or if neither trinket provides a buff, use both on cooldown.",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["action"] = "trinket2",
+								["criteria"] = "! variable.specified_trinket & ( ! trinket.t2.has_use_buff & ( trinket.t1.cooldown.remains || ! trinket.t1.has_use_buff ) || cooldown.pillar_of_frost.remains > 20 )",
+								["slot"] = "trinket2",
+							}, -- [8]
+						},
 						["default"] = {
 							{
 								["action"] = "mind_freeze",
@@ -24747,9 +25172,9 @@ HekiliDB = {
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["action"] = "remorseless_winter",
 								["description"] = "Apply Frost Fever, maintain Icy Talons and keep Remorseless Winter rolling",
 								["criteria"] = "conduit.everfrost & talent.gathering_storm.enabled & ( ! talent.obliteration.enabled & cooldown.pillar_of_frost.remains || set_bonus.tier28_4pc & talent.obliteration.enabled & ! buff.pillar_of_frost.up )",
+								["action"] = "remorseless_winter",
 							}, -- [8]
 							{
 								["enabled"] = true,
@@ -24838,322 +25263,6 @@ HekiliDB = {
 								["action"] = "call_action_list",
 								["list_name"] = "standard",
 							}, -- [23]
-						},
-						["cooldowns"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.pillar_of_frost.up",
-								["description"] = "Potion",
-								["action"] = "potion",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["action"] = "empower_rune_weapon",
-								["description"] = "Cooldowns",
-								["criteria"] = "talent.obliteration.enabled & rune < 6 & ( variable.st_planning || variable.adds_remain ) & ( cooldown.pillar_of_frost.remains < 5 & ( cooldown.fleshcraft.remains > 5 & soulbind.pustule_eruption.enabled || ! soulbind.pustule_eruption.enabled ) || buff.pillar_of_frost.up ) || boss & fight_remains < 20",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.breath_of_sindragosa.enabled & rune < 5 & runic_power < ( 60 - death_knight.runeforge.hysteria * 5 - runeforge.rampant_transference.enabled * 5 ) & ( buff.breath_of_sindragosa.up || fight_remains < 20 )",
-								["action"] = "empower_rune_weapon",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.icecap.enabled",
-								["action"] = "empower_rune_weapon",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.breath_of_sindragosa.enabled & ( variable.st_planning || variable.adds_remain ) & ( cooldown.breath_of_sindragosa.remains || cooldown.breath_of_sindragosa.ready & runic_power > 65 )",
-								["action"] = "pillar_of_frost",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.icecap.enabled & ! buff.pillar_of_frost.up",
-								["action"] = "pillar_of_frost",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.obliteration.enabled & ( runic_power >= 35 & ! buff.abomination_limb.up || buff.abomination_limb.up || runeforge.rage_of_the_frozen_champion.enabled ) & ( variable.st_planning || variable.adds_remain ) & ( talent.gathering_storm.enabled & buff.remorseless_winter.up || ! talent.gathering_storm.enabled )",
-								["action"] = "pillar_of_frost",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.pillar_of_frost.up",
-								["action"] = "breath_of_sindragosa",
-							}, -- [8]
-							{
-								["enabled"] = true,
-								["criteria"] = "active_enemies = 1 & buff.pillar_of_frost.remains < gcd & buff.pillar_of_frost.up & ! talent.obliteration.enabled & ( ! raid_event.adds.exists || raid_event.adds.in > 30 ) || fight_remains < 3",
-								["action"] = "frostwyrms_fury",
-							}, -- [9]
-							{
-								["enabled"] = true,
-								["criteria"] = "active_enemies >= 2 & ( buff.pillar_of_frost.up || raid_event.adds.exists & raid_event.adds.in > cooldown.pillar_of_frost.remains + 7 ) & ( buff.pillar_of_frost.remains < gcd || raid_event.adds.exists & raid_event.adds.remains < gcd )",
-								["action"] = "frostwyrms_fury",
-							}, -- [10]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.obliteration.enabled & ( buff.pillar_of_frost.up & ! main_hand.2h || ! buff.pillar_of_frost.up & main_hand.2h & cooldown.pillar_of_frost.remains ) & ( ( buff.pillar_of_frost.remains < gcd || buff.unholy_strength.up & buff.unholy_strength.remains < gcd ) & ( debuff.razorice.stack = 5 || ! death_knight.runeforge.razorice ) )",
-								["action"] = "frostwyrms_fury",
-							}, -- [11]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.breath_of_sindragosa.enabled & runic_power < 60 & rune <= 3 & ( buff.breath_of_sindragosa.up || cooldown.breath_of_sindragosa.remains > 40 ) || ! talent.breath_of_sindragosa.enabled & runic_power <= 75",
-								["action"] = "hypothermic_presence",
-							}, -- [12]
-							{
-								["enabled"] = true,
-								["criteria"] = "cooldown.pillar_of_frost.remains <= 5",
-								["action"] = "raise_dead",
-							}, -- [13]
-							{
-								["enabled"] = true,
-								["criteria"] = "active_enemies >= 2 & ( fight_remains < 3 || ! buff.breath_of_sindragosa.up & ( pet.ghoul.remains < gcd || raid_event.adds.exists & raid_event.adds.remains < 3 & raid_event.adds.in > pet.ghoul.remains ) )",
-								["action"] = "sacrificial_pact",
-							}, -- [14]
-							{
-								["enabled"] = true,
-								["criteria"] = "active_enemies > 5 || runeforge.phearomones.enabled",
-								["action"] = "death_and_decay",
-							}, -- [15]
-						},
-						["covenants"] = {
-							{
-								["enabled"] = true,
-								["action"] = "deaths_due",
-								["description"] = "Covenant Abilities",
-								["criteria"] = "( ! talent.obliteration.enabled || talent.obliteration.enabled & active_enemies >= 2 & cooldown.pillar_of_frost.remains || active_enemies = 1 ) & ( variable.st_planning || variable.adds_remain )",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "runic_power.deficit > 13 & cooldown.pillar_of_frost.remains < 3 & ! talent.breath_of_sindragosa.enabled & variable.st_planning",
-								["action"] = "swarming_mist",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "! talent.breath_of_sindragosa.enabled & variable.adds_remain",
-								["action"] = "swarming_mist",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.breath_of_sindragosa.enabled & ( buff.breath_of_sindragosa.up & ( variable.st_planning & runic_power.deficit > 40 || variable.adds_remain & runic_power.deficit > 60 || variable.adds_remain & raid_event.adds.remains < 9 & raid_event.adds.exists ) || ! buff.breath_of_sindragosa.up & cooldown.breath_of_sindragosa.remains )",
-								["action"] = "swarming_mist",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "cooldown.pillar_of_frost.remains < gcd * 2 & variable.st_planning & ( talent.breath_of_sindragosa.enabled & runic_power > 65 & cooldown.breath_of_sindragosa.remains < 2 || ! talent.breath_of_sindragosa.enabled )",
-								["action"] = "abomination_limb",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.adds_remain",
-								["action"] = "abomination_limb",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.st_planning & ( cooldown.pillar_of_frost.remains < 3 || talent.icecap.enabled )",
-								["action"] = "shackle_the_unworthy",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.adds_remain",
-								["action"] = "shackle_the_unworthy",
-							}, -- [8]
-							{
-								["enabled"] = true,
-								["criteria"] = "! buff.pillar_of_frost.up & ( soulbind.pustule_eruption.enabled || soulbind.volatile_solvent.enabled & ! buff.volatile_solvent.up )",
-								["interrupt_if"] = "soulbind.volatile_solvent",
-								["interrupt_immediate"] = "1",
-								["action"] = "fleshcraft",
-								["interrupt_global"] = "1",
-							}, -- [9]
-						},
-						["precombat"] = {
-							{
-								["enabled"] = true,
-								["op"] = "setif",
-								["description"] = "Evaluates a trinkets cooldown, divided by pillar of frost or breath of sindragosa's cooldown. If it's value has no remainder return 1, else return 0.5.",
-								["criteria"] = "trinket.t1.has_use_buff & ( ! talent.breath_of_sindragosa.enabled & ( trinket.t1.cooldown.duration % cooldown.pillar_of_frost.duration = 0 ) || talent.breath_of_sindragosa.enabled & ( cooldown.breath_of_sindragosa.duration % trinket.t1.cooldown.duration = 0 ) || talent.icecap.enabled )",
-								["var_name"] = "trinket_1_sync",
-								["action"] = "variable",
-								["value_else"] = "0.5",
-								["value"] = "1",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["op"] = "setif",
-								["action"] = "variable",
-								["var_name"] = "trinket_2_sync",
-								["criteria"] = "trinket.t2.has_use_buff & ( ! talent.breath_of_sindragosa.enabled & ( trinket.t2.cooldown.duration % cooldown.pillar_of_frost.duration = 0 ) || talent.breath_of_sindragosa.enabled & ( cooldown.breath_of_sindragosa.duration % trinket.t2.cooldown.duration = 0 ) || talent.icecap.enabled )",
-								["value_else"] = "0.5",
-								["value"] = "1",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["op"] = "setif",
-								["description"] = "Estimates a trinkets value by comparing the cooldown of the trinket, divided by the duration of the buff it provides. Has a strength modifier to give a higher priority to strength trinkets, as well as a modifier for if a trinket will or will not sync with cooldowns.",
-								["criteria"] = "! trinket.t1.has_use_buff & trinket.t2.has_use_buff || trinket.t2.has_use_buff & ( ( trinket.t2.cooldown.duration / trinket.t2.buff_duration ) * ( 1.5 + trinket.t2.has_buff.strength ) * ( variable.trinket_2_sync ) ) > ( ( trinket.t1.cooldown.duration / trinket.t1.buff_duration ) * ( 1.5 + trinket.t1.has_buff.strength ) * ( variable.trinket_1_sync ) )",
-								["var_name"] = "trinket_priority",
-								["action"] = "variable",
-								["value_else"] = "1",
-								["value"] = "2",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "talent.gathering_storm.enabled || conduit.everfrost.enabled || runeforge.biting_cold.enabled",
-								["var_name"] = "rw_buffs",
-							}, -- [4]
-							{
-								["action"] = "fleshcraft",
-								["enabled"] = true,
-							}, -- [5]
-						},
-						["racials"] = {
-							{
-								["enabled"] = true,
-								["action"] = "blood_fury",
-								["description"] = "Racial Abilities",
-								["criteria"] = "buff.pillar_of_frost.up",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.pillar_of_frost.up",
-								["action"] = "berserking",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "( ! buff.pillar_of_frost.up & active_enemies >= 2 ) || ! buff.pillar_of_frost.up & ( rune.deficit >= 5 & runic_power.deficit >= 60 )",
-								["action"] = "arcane_pulse",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.pillar_of_frost.up",
-								["action"] = "lights_judgment",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.pillar_of_frost.up & buff.empower_rune_weapon.up",
-								["action"] = "ancestral_call",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.pillar_of_frost.remains <= 8 & buff.pillar_of_frost.up & buff.empower_rune_weapon.up",
-								["action"] = "fireblood",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.pillar_of_frost.up & active_enemies = 1 & ( buff.pillar_of_frost.remains < 5 & talent.cold_heart.enabled || ! talent.cold_heart.enabled & buff.pillar_of_frost.remains < 3 )",
-								["action"] = "bag_of_tricks",
-							}, -- [7]
-						},
-						["trinkets"] = {
-							{
-								["enabled"] = true,
-								["name"] = "inscrutable_quantum_device",
-								["description"] = "Trinkets",
-								["criteria"] = "! talent.breath_of_sindragosa.enabled & buff.pillar_of_frost.up & buff.empower_rune_weapon.up || talent.breath_of_sindragosa.enabled & ( ( buff.pillar_of_frost.up & cooldown.breath_of_sindragosa.ready ) || ( buff.pillar_of_frost.up & ( ( fight_remains - cooldown.breath_of_sindragosa.remains ) < 21 ) ) ) || boss & fight_remains < 21 || death_knight.disable_iqd_execute = 0 & target.time_to_pct_20 < 5",
-								["action"] = "inscrutable_quantum_device",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["name"] = "gavel_of_the_first_arbiter",
-								["action"] = "gavel_of_the_first_arbiter",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["name"] = "scars_of_fraternal_strife",
-								["action"] = "scars_of_fraternal_strife",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["action"] = "the_first_sigil",
-								["criteria"] = "buff.pillar_of_frost.up & buff.empower_rune_weapon.up",
-								["name"] = "the_first_sigil",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["action"] = "trinket1",
-								["description"] = "The trinket with the highest estimated value, will be used first and paired with Pillar of Frost.",
-								["criteria"] = "! variable.specified_trinket & buff.pillar_of_frost.up & ( ! talent.icecap.enabled || talent.icecap.enabled & buff.pillar_of_frost.remains >= 10 ) & ( ! trinket.t2.has_cooldown || trinket.t2.cooldown.remains || variable.trinket_priority = 1 ) || trinket.t1.buff_duration >= fight_remains",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "! variable.specified_trinket & buff.pillar_of_frost.up & ( ! talent.icecap.enabled || talent.icecap.enabled & buff.pillar_of_frost.remains >= 10 ) & ( ! trinket.t1.has_cooldown || trinket.t1.cooldown.remains || variable.trinket_priority = 2 ) || trinket.t2.buff_duration >= fight_remains",
-								["action"] = "trinket2",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["action"] = "trinket1",
-								["slot"] = "trinket1",
-								["criteria"] = "! variable.specified_trinket & ( ! trinket.t1.has_use_buff & ( trinket.t2.cooldown.remains || ! trinket.t2.has_use_buff ) || cooldown.pillar_of_frost.remains > 20 )",
-								["description"] = "If only one on use trinket provides a buff, use the other on cooldown. Or if neither trinket provides a buff, use both on cooldown.",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["action"] = "trinket2",
-								["criteria"] = "! variable.specified_trinket & ( ! trinket.t2.has_use_buff & ( trinket.t1.cooldown.remains || ! trinket.t1.has_use_buff ) || cooldown.pillar_of_frost.remains > 20 )",
-								["slot"] = "trinket2",
-							}, -- [8]
-						},
-						["bos_pooling"] = {
-							{
-								["enabled"] = true,
-								["action"] = "remorseless_winter",
-								["description"] = "Breath of Sindragosa pooling rotation : starts 10s before BoS is available",
-								["criteria"] = "active_enemies >= 2 || variable.rw_buffs",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["action"] = "obliterate",
-								["criteria"] = "buff.killing_machine.react & cooldown.pillar_of_frost.remains > 3",
-								["cycle_targets"] = 1,
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.rotfc_rime",
-								["action"] = "howling_blast",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.killing_machine.react & runic_power.deficit > ( 15 + talent.runic_attenuation.enabled * 5 ) & spell_targets.frostscythe > 2 & ! variable.deaths_due_active",
-								["action"] = "frostscythe",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "runic_power.deficit >= ( 35 + talent.runic_attenuation.enabled * 5 ) & spell_targets.frostscythe > 2 & ! variable.deaths_due_active",
-								["action"] = "frostscythe",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["action"] = "obliterate",
-								["criteria"] = "runic_power.deficit >= 25",
-								["cycle_targets"] = 1,
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "runic_power.deficit < 20 & spell_targets.glacial_advance >= 2 & cooldown.pillar_of_frost.remains > 5",
-								["action"] = "glacial_advance",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["action"] = "frost_strike",
-								["criteria"] = "runic_power.deficit < 20 & cooldown.pillar_of_frost.remains > 5",
-								["cycle_targets"] = 1,
-							}, -- [8]
-							{
-								["enabled"] = true,
-								["criteria"] = "cooldown.pillar_of_frost.remains > rune.time_to_4 & runic_power.deficit < 40 & spell_targets.glacial_advance >= 2",
-								["action"] = "glacial_advance",
-							}, -- [9]
-							{
-								["enabled"] = true,
-								["action"] = "frost_strike",
-								["criteria"] = "cooldown.pillar_of_frost.remains > rune.time_to_4 & runic_power.deficit < 40",
-								["cycle_targets"] = 1,
-							}, -- [10]
 						},
 						["aoe"] = {
 							{
@@ -25263,15 +25372,15 @@ HekiliDB = {
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["action"] = "death_strike",
 								["description"] = "Incoming damage requirement is 25% of max health solo, 50% of max health in a group.",
 								["criteria"] = "incoming_damage_3s >= health.current",
+								["action"] = "death_strike",
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["action"] = "death_strike",
 								["description"] = "Don't let an existing Blood Shield drop.",
 								["criteria"] = "save_blood_shield & incoming_damage_5s > 0 & buff.blood_shield.up & buff.blood_shield.remains < 1.5 * gcd",
+								["action"] = "death_strike",
 							}, -- [3]
 							{
 								["enabled"] = true,
@@ -25402,9 +25511,9 @@ HekiliDB = {
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["action"] = "mark_of_blood",
 								["description"] = "Mark of Blood does not pandemic-extend.",
 								["criteria"] = "debuff.mark_of_blood.down & fight_remains > 7.5",
+								["action"] = "mark_of_blood",
 							}, -- [8]
 							{
 								["enabled"] = true,
@@ -25581,9 +25690,9 @@ HekiliDB = {
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.dancing_rune_weapon.up",
 								["description"] = "Since the potion cooldown has changed, we'll sync with DRW",
 								["action"] = "potion",
+								["criteria"] = "buff.dancing_rune_weapon.up",
 							}, -- [5]
 							{
 								["action"] = "use_items",
@@ -25605,9 +25714,9 @@ HekiliDB = {
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["action"] = "marrowrend",
 								["description"] = "Marrowrend on pull if Necrolord in order to guarantee ossuary during the first DRW with AL",
 								["criteria"] = "covenant.necrolord & buff.bone_shield.stack <= 0",
+								["action"] = "marrowrend",
 							}, -- [10]
 							{
 								["enabled"] = true,
@@ -25616,9 +25725,9 @@ HekiliDB = {
 							}, -- [11]
 							{
 								["enabled"] = true,
-								["action"] = "sacrificial_pact",
 								["description"] = "Attempt to sacrifice the ghoul if we predictably will not do much in the near future",
 								["criteria"] = "( ! covenant.night_fae || buff.deaths_due.remains > 6 ) & ! buff.dancing_rune_weapon.up & ( pet.ghoul.remains < 2 || target.time_to_die < gcd )",
+								["action"] = "sacrificial_pact",
 							}, -- [12]
 							{
 								["enabled"] = true,
@@ -25714,16 +25823,16 @@ HekiliDB = {
 					["maxTime"] = 33,
 				},
 				[62] = {
-					["maxTime"] = 33,
-					["maxRefresh"] = 10,
 					["settings"] = {
 						["am_spam"] = 0,
 					},
-					["potionsReset"] = 20180919.1,
-					["package"] = "Arcane",
-					["damageExpiration"] = 6,
-					["aoe"] = 3,
+					["maxRefresh"] = 10,
 					["potion"] = "spectral_intellect",
+					["package"] = "Arcane",
+					["aoe"] = 3,
+					["damageExpiration"] = 6,
+					["potionsReset"] = 20180919.1,
+					["maxTime"] = 33,
 				},
 				[263] = {
 					["potionsReset"] = 20180919.1,
@@ -25742,11 +25851,11 @@ HekiliDB = {
 					["settings"] = {
 						["ignore_freezing_rain_st"] = true,
 					},
-					["potionsReset"] = 20180919.1,
 					["aoe"] = 3,
+					["nameplates"] = false,
 					["damageExpiration"] = 6,
 					["potion"] = "phantom_fire",
-					["nameplates"] = false,
+					["potionsReset"] = 20180919.1,
 				},
 				[66] = {
 					["potionsReset"] = 20180919.1,
@@ -25767,9 +25876,9 @@ HekiliDB = {
 						["check_ww_range"] = false,
 					},
 					["package"] = "Fury",
-					["maxTime"] = 33,
-					["potion"] = "potion_of_phantom_fire",
 					["potionsReset"] = 20180919.1,
+					["potion"] = "potion_of_phantom_fire",
+					["maxTime"] = 33,
 				},
 				[265] = {
 					["maxRefresh"] = 10,
@@ -25778,11 +25887,11 @@ HekiliDB = {
 					["settings"] = {
 						["manage_ds_ticks"] = false,
 					},
-					["potionsReset"] = 20180919.1,
 					["aoe"] = 3,
+					["nameplates"] = false,
 					["damageExpiration"] = 6,
 					["potion"] = "spectral_intellect",
-					["nameplates"] = false,
+					["potionsReset"] = 20180919.1,
 				},
 				[253] = {
 					["potionsReset"] = 20180919.1,
@@ -25814,11 +25923,11 @@ HekiliDB = {
 					["settings"] = {
 						["implosion_imps"] = 4,
 					},
-					["nameplates"] = false,
 					["aoe"] = 3,
+					["potionsReset"] = 20180919.1,
 					["damageExpiration"] = 6,
 					["potion"] = "spectral_intellect",
-					["potionsReset"] = 20180919.1,
+					["nameplates"] = false,
 				},
 				[103] = {
 					["settings"] = {
@@ -25828,19 +25937,19 @@ HekiliDB = {
 					},
 				},
 				[259] = {
-					["maxTime"] = 33,
-					["maxRefresh"] = 10,
 					["settings"] = {
 						["solo_vanish"] = true,
 						["mfd_points"] = 3,
 						["priority_rotation"] = false,
 						["envenom_pool_pct"] = 50,
 					},
-					["potionsReset"] = 20180919.1,
-					["package"] = "Assassination",
-					["damageExpiration"] = 6,
-					["aoe"] = 3,
+					["maxRefresh"] = 10,
 					["potion"] = "phantom_fire",
+					["package"] = "Assassination",
+					["aoe"] = 3,
+					["damageExpiration"] = 6,
+					["potionsReset"] = 20180919.1,
+					["maxTime"] = 33,
 				},
 				[267] = {
 					["maxRefresh"] = 10,
@@ -25853,11 +25962,12 @@ HekiliDB = {
 					["nameplates"] = false,
 					["potionsReset"] = 20180919.1,
 				},
-				[102] = {
-					["settings"] = {
-						["starlord_cancel"] = false,
-						["delay_berserking"] = false,
-					},
+				[71] = {
+					["maxRefresh"] = 10,
+					["maxTime"] = 33,
+					["package"] = "Arms",
+					["potionsReset"] = 20180919.1,
+					["potion"] = "spectral_strength",
 				},
 				[254] = {
 					["potionsReset"] = 20180919.1,
@@ -25869,25 +25979,32 @@ HekiliDB = {
 					["maxTime"] = 33,
 				},
 				[260] = {
-					["maxTime"] = 33,
-					["maxRefresh"] = 10,
 					["settings"] = {
 						["solo_vanish"] = true,
 						["dirty_gouge"] = false,
 						["mfd_points"] = 3,
 					},
-					["potionsReset"] = 20180919.1,
-					["package"] = "Outlaw",
-					["damageExpiration"] = 6,
-					["aoe"] = 3,
-					["potion"] = "phantom_fire",
-				},
-				[71] = {
 					["maxRefresh"] = 10,
-					["maxTime"] = 33,
-					["package"] = "Arms",
-					["potion"] = "spectral_strength",
+					["potion"] = "phantom_fire",
+					["package"] = "Outlaw",
+					["aoe"] = 3,
+					["damageExpiration"] = 6,
 					["potionsReset"] = 20180919.1,
+					["maxTime"] = 33,
+				},
+				[268] = {
+					["maxRefresh"] = 10,
+					["settings"] = {
+						["purify_stagger_maxhp"] = 6,
+						["purify_for_celestial"] = true,
+						["bof_percent"] = 50,
+						["eh_percent"] = 65,
+						["purify_stagger_currhp"] = 12,
+					},
+					["package"] = "Brewmaster",
+					["potionsReset"] = 20180919.1,
+					["potion"] = "phantom_fire",
+					["maxTime"] = 33,
 				},
 				[73] = {
 					["maxRefresh"] = 10,
@@ -25896,9 +26013,9 @@ HekiliDB = {
 						["shockwave_interrupt"] = true,
 					},
 					["package"] = "Protection Warrior",
-					["maxTime"] = 33,
-					["potion"] = "potion_of_phantom_fire",
 					["potionsReset"] = 20180919.1,
+					["potion"] = "potion_of_phantom_fire",
+					["maxTime"] = 33,
 				},
 				[104] = {
 					["settings"] = {
@@ -25917,13 +26034,20 @@ HekiliDB = {
 						["priority_rotation"] = false,
 						["mfd_points"] = 3,
 					},
-					["maxTime"] = 33,
 					["package"] = "Subtlety",
+					["potionsReset"] = 20180919.1,
 					["damageExpiration"] = 6,
 					["potion"] = "phantom_fire",
-					["potionsReset"] = 20180919.1,
+					["maxTime"] = 33,
 				},
 				[269] = {
+					["potion"] = "potion_of_spectral_agility",
+					["cycle"] = true,
+					["maxTime"] = 33,
+					["package"] = "Windwalker",
+					["potionsReset"] = 20180919.1,
+					["strict"] = false,
+					["maxRefresh"] = 10,
 					["settings"] = {
 						["sef_one_charge"] = false,
 						["tok_damage"] = 1,
@@ -25931,42 +26055,27 @@ HekiliDB = {
 						["allow_fsk"] = false,
 						["optimize_reverse_harm"] = false,
 					},
-					["cycle"] = true,
-					["potion"] = "potion_of_spectral_agility",
-					["maxRefresh"] = 10,
-					["package"] = "Windwalker",
-					["strict"] = false,
-					["potionsReset"] = 20180919.1,
-					["maxTime"] = 33,
 				},
-				[268] = {
-					["maxRefresh"] = 10,
+				[102] = {
 					["settings"] = {
-						["purify_stagger_maxhp"] = 6,
-						["purify_for_celestial"] = true,
-						["bof_percent"] = 50,
-						["eh_percent"] = 65,
-						["purify_stagger_currhp"] = 12,
+						["starlord_cancel"] = false,
+						["delay_berserking"] = false,
 					},
-					["package"] = "Brewmaster",
-					["maxTime"] = 33,
-					["potion"] = "phantom_fire",
-					["potionsReset"] = 20180919.1,
 				},
 				[63] = {
 					["maxRefresh"] = 10,
 					["maxTime"] = 33,
 					["package"] = "Fire",
-					["potion"] = "spectral_intellect",
+					["aoe"] = 3,
 					["settings"] = {
 						["pyroblast_pull"] = false,
 						["prevent_hardcasts"] = false,
 					},
-					["potionsReset"] = 20180919.1,
-					["aoe"] = 3,
 					["gcdSync"] = false,
-					["damageExpiration"] = 6,
 					["nameplates"] = false,
+					["damageExpiration"] = 6,
+					["potionsReset"] = 20180919.1,
+					["potion"] = "spectral_intellect",
 				},
 			},
 			["packs"] = {
@@ -25977,12 +26086,31 @@ HekiliDB = {
 					["author"] = "SimC",
 					["desc"] = "Beast Mastery Hunter\nAugust 20, 2022\n\nChanges:\n- Re-enable Barbed Shot Grace Period.\n- Wailing Shot updates.",
 					["lists"] = {
-						["other_on_use"] = {
+						["precombat"] = {
+							{
+								["action"] = "summon_pet",
+								["enabled"] = true,
+							}, -- [1]
+							{
+								["action"] = "bottled_flayedwing_toxin",
+								["enabled"] = true,
+							}, -- [2]
+							{
+								["action"] = "fleshcraft",
+								["enabled"] = true,
+							}, -- [3]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.bestial_wrath.up",
-								["action"] = "use_items",
-							}, -- [1]
+								["precast_time"] = "1.5",
+								["action"] = "tar_trap",
+								["criteria"] = "runeforge.soulforge_embers.enabled || runeforge.nessingwarys_trapping_apparatus.enabled",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["precast_time"] = "1.5",
+								["action"] = "bestial_wrath",
+								["criteria"] = "! talent.scent_of_blood.enabled & ! runeforge.soulforge_embers.enabled",
+							}, -- [5]
 						},
 						["default"] = {
 							{
@@ -25991,9 +26119,9 @@ HekiliDB = {
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["action"] = "tranquilizing_shot",
 								["description"] = "Go ahead and Tranquilize NPC enemies, we don't do this for players because it'd be too spammy and we can't readily Tranq specific buffs.",
 								["criteria"] = "! target.is_player",
+								["action"] = "tranquilizing_shot",
 							}, -- [2]
 							{
 								["enabled"] = true,
@@ -26027,31 +26155,144 @@ HekiliDB = {
 								["list_name"] = "cleave",
 							}, -- [7]
 						},
-						["precombat"] = {
+						["cleave"] = {
 							{
-								["action"] = "summon_pet",
 								["enabled"] = true,
+								["criteria"] = "! raid_event.adds.exists || raid_event.adds.remains >= 10 || active_enemies >= raid_event.adds.count * 2",
+								["action"] = "aspect_of_the_wild",
 							}, -- [1]
 							{
-								["action"] = "bottled_flayedwing_toxin",
 								["enabled"] = true,
+								["criteria"] = "buff.frenzy.up & buff.frenzy.remains <= gcd + barbed_shot_grace_period || buff.wild_spirits.up & charges_fractional > 1.4 & runeforge.fragments_of_the_elder_antlers.enabled",
+								["action"] = "barbed_shot",
+								["cycle_targets"] = 1,
 							}, -- [2]
 							{
-								["action"] = "fleshcraft",
 								["enabled"] = true,
+								["criteria"] = "gcd - buff.beast_cleave.remains > 0.25 || buff.killing_frenzy.up & buff.beast_cleave.remains < 2",
+								["action"] = "multishot",
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["precast_time"] = "1.5",
-								["action"] = "tar_trap",
-								["criteria"] = "runeforge.soulforge_embers.enabled || runeforge.nessingwarys_trapping_apparatus.enabled",
+								["criteria"] = "runeforge.pouch_of_razor_fragments.enabled & buff.flayers_mark.up",
+								["action"] = "kill_shot",
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["precast_time"] = "1.5",
-								["action"] = "bestial_wrath",
-								["criteria"] = "! talent.scent_of_blood.enabled & ! runeforge.soulforge_embers.enabled",
+								["criteria"] = "runeforge.pouch_of_razor_fragments.enabled",
+								["action"] = "flayed_shot",
 							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "runeforge.soulforge_embers.enabled & tar_trap.remains < gcd & cooldown.flare.remains < gcd",
+								["action"] = "tar_trap",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "tar_trap.up & runeforge.soulforge_embers.enabled",
+								["action"] = "flare",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["criteria"] = "focus + cast_regen < focus.max",
+								["action"] = "death_chakram",
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["criteria"] = "! raid_event.adds.exists || raid_event.adds.remains >= 10 || active_enemies >= raid_event.adds.count * 2",
+								["action"] = "wild_spirits",
+							}, -- [9]
+							{
+								["enabled"] = true,
+								["criteria"] = "full_recharge_time < gcd & cooldown.bestial_wrath.remains || cooldown.bestial_wrath.remains < 12 + gcd & talent.scent_of_blood.enabled",
+								["action"] = "barbed_shot",
+								["cycle_targets"] = 1,
+							}, -- [10]
+							{
+								["enabled"] = true,
+								["criteria"] = "! raid_event.adds.exists || raid_event.adds.remains >= 5 || active_enemies >= raid_event.adds.count * 2",
+								["action"] = "bestial_wrath",
+							}, -- [11]
+							{
+								["enabled"] = true,
+								["criteria"] = "! raid_event.adds.exists || raid_event.adds.remains >= 5 || active_enemies >= raid_event.adds.count * 2",
+								["action"] = "resonating_arrow",
+							}, -- [12]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.aspect_of_the_wild.up || boss & fight_remains < 15",
+								["action"] = "stampede",
+							}, -- [13]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.frenzy.remains > execute_time",
+								["action"] = "wailing_arrow",
+							}, -- [14]
+							{
+								["action"] = "flayed_shot",
+								["enabled"] = true,
+							}, -- [15]
+							{
+								["action"] = "kill_shot",
+								["enabled"] = true,
+							}, -- [16]
+							{
+								["action"] = "chimaera_shot",
+								["enabled"] = true,
+							}, -- [17]
+							{
+								["action"] = "bloodshed",
+								["enabled"] = true,
+							}, -- [18]
+							{
+								["action"] = "a_murder_of_crows",
+								["enabled"] = true,
+							}, -- [19]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.frenzy.remains > execute_time",
+								["action"] = "barrage",
+							}, -- [20]
+							{
+								["enabled"] = true,
+								["criteria"] = "focus > cost + action.multishot.cost",
+								["action"] = "kill_command",
+							}, -- [21]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.bestial_wrath.down || boss & fight_remains < 5",
+								["action"] = "bag_of_tricks",
+							}, -- [22]
+							{
+								["action"] = "dire_beast",
+								["enabled"] = true,
+							}, -- [23]
+							{
+								["enabled"] = true,
+								["criteria"] = "target.time_to_die < 9 || charges_fractional > 1.2 & conduit.bloodletting.enabled",
+								["action"] = "barbed_shot",
+								["cycle_targets"] = 1,
+							}, -- [24]
+							{
+								["enabled"] = true,
+								["criteria"] = "focus.time_to_max < gcd * 2",
+								["action"] = "cobra_shot",
+							}, -- [25]
+							{
+								["enabled"] = true,
+								["criteria"] = "runeforge.soulforge_embers.enabled || runeforge.nessingwarys_trapping_apparatus.enabled",
+								["action"] = "tar_trap",
+							}, -- [26]
+							{
+								["enabled"] = true,
+								["criteria"] = "runeforge.nessingwarys_trapping_apparatus.enabled",
+								["action"] = "freezing_trap",
+							}, -- [27]
+							{
+								["enabled"] = true,
+								["criteria"] = "( focus + focus.regen + 30 ) < focus.max",
+								["action"] = "arcane_torrent",
+							}, -- [28]
 						},
 						["trinkets"] = {
 							{
@@ -26263,144 +26504,12 @@ HekiliDB = {
 								["action"] = "arcane_torrent",
 							}, -- [25]
 						},
-						["cleave"] = {
+						["other_on_use"] = {
 							{
 								["enabled"] = true,
-								["criteria"] = "! raid_event.adds.exists || raid_event.adds.remains >= 10 || active_enemies >= raid_event.adds.count * 2",
-								["action"] = "aspect_of_the_wild",
+								["criteria"] = "buff.bestial_wrath.up",
+								["action"] = "use_items",
 							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.frenzy.up & buff.frenzy.remains <= gcd + barbed_shot_grace_period || buff.wild_spirits.up & charges_fractional > 1.4 & runeforge.fragments_of_the_elder_antlers.enabled",
-								["action"] = "barbed_shot",
-								["cycle_targets"] = 1,
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "gcd - buff.beast_cleave.remains > 0.25 || buff.killing_frenzy.up & buff.beast_cleave.remains < 2",
-								["action"] = "multishot",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "runeforge.pouch_of_razor_fragments.enabled & buff.flayers_mark.up",
-								["action"] = "kill_shot",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "runeforge.pouch_of_razor_fragments.enabled",
-								["action"] = "flayed_shot",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "runeforge.soulforge_embers.enabled & tar_trap.remains < gcd & cooldown.flare.remains < gcd",
-								["action"] = "tar_trap",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "tar_trap.up & runeforge.soulforge_embers.enabled",
-								["action"] = "flare",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["criteria"] = "focus + cast_regen < focus.max",
-								["action"] = "death_chakram",
-							}, -- [8]
-							{
-								["enabled"] = true,
-								["criteria"] = "! raid_event.adds.exists || raid_event.adds.remains >= 10 || active_enemies >= raid_event.adds.count * 2",
-								["action"] = "wild_spirits",
-							}, -- [9]
-							{
-								["enabled"] = true,
-								["criteria"] = "full_recharge_time < gcd & cooldown.bestial_wrath.remains || cooldown.bestial_wrath.remains < 12 + gcd & talent.scent_of_blood.enabled",
-								["action"] = "barbed_shot",
-								["cycle_targets"] = 1,
-							}, -- [10]
-							{
-								["enabled"] = true,
-								["criteria"] = "! raid_event.adds.exists || raid_event.adds.remains >= 5 || active_enemies >= raid_event.adds.count * 2",
-								["action"] = "bestial_wrath",
-							}, -- [11]
-							{
-								["enabled"] = true,
-								["criteria"] = "! raid_event.adds.exists || raid_event.adds.remains >= 5 || active_enemies >= raid_event.adds.count * 2",
-								["action"] = "resonating_arrow",
-							}, -- [12]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.aspect_of_the_wild.up || boss & fight_remains < 15",
-								["action"] = "stampede",
-							}, -- [13]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.frenzy.remains > execute_time",
-								["action"] = "wailing_arrow",
-							}, -- [14]
-							{
-								["action"] = "flayed_shot",
-								["enabled"] = true,
-							}, -- [15]
-							{
-								["action"] = "kill_shot",
-								["enabled"] = true,
-							}, -- [16]
-							{
-								["action"] = "chimaera_shot",
-								["enabled"] = true,
-							}, -- [17]
-							{
-								["action"] = "bloodshed",
-								["enabled"] = true,
-							}, -- [18]
-							{
-								["action"] = "a_murder_of_crows",
-								["enabled"] = true,
-							}, -- [19]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.frenzy.remains > execute_time",
-								["action"] = "barrage",
-							}, -- [20]
-							{
-								["enabled"] = true,
-								["criteria"] = "focus > cost + action.multishot.cost",
-								["action"] = "kill_command",
-							}, -- [21]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.bestial_wrath.down || boss & fight_remains < 5",
-								["action"] = "bag_of_tricks",
-							}, -- [22]
-							{
-								["action"] = "dire_beast",
-								["enabled"] = true,
-							}, -- [23]
-							{
-								["enabled"] = true,
-								["criteria"] = "target.time_to_die < 9 || charges_fractional > 1.2 & conduit.bloodletting.enabled",
-								["action"] = "barbed_shot",
-								["cycle_targets"] = 1,
-							}, -- [24]
-							{
-								["enabled"] = true,
-								["criteria"] = "focus.time_to_max < gcd * 2",
-								["action"] = "cobra_shot",
-							}, -- [25]
-							{
-								["enabled"] = true,
-								["criteria"] = "runeforge.soulforge_embers.enabled || runeforge.nessingwarys_trapping_apparatus.enabled",
-								["action"] = "tar_trap",
-							}, -- [26]
-							{
-								["enabled"] = true,
-								["criteria"] = "runeforge.nessingwarys_trapping_apparatus.enabled",
-								["action"] = "freezing_trap",
-							}, -- [27]
-							{
-								["enabled"] = true,
-								["criteria"] = "( focus + focus.regen + 30 ) < focus.max",
-								["action"] = "arcane_torrent",
-							}, -- [28]
 						},
 					},
 					["version"] = 20220821,
@@ -26732,15 +26841,15 @@ HekiliDB = {
 						["precombat"] = {
 							{
 								["enabled"] = true,
-								["description"] = "Executed every time the actor is available.",
 								["criteria"] = "! talent.primal_elementalist.enabled",
 								["action"] = "earth_elemental",
+								["description"] = "Executed every time the actor is available.",
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["description"] = "Use Stormkeeper precombat unless some adds will spawn soon.",
 								["criteria"] = "soulbind.pustule_eruption.enabled || soulbind.volatile_solvent.enabled",
 								["action"] = "fleshcraft",
+								["description"] = "Use Stormkeeper precombat unless some adds will spawn soon.",
 							}, -- [2]
 							{
 								["enabled"] = true,
@@ -27269,9 +27378,9 @@ HekiliDB = {
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["action"] = "tranquilizing_shot",
 								["description"] = "Go ahead and Tranquilize NPC enemies, we don't do this for players because it'd be too spammy and we can't readily Tranq specific buffs.",
 								["criteria"] = "! target.is_player",
+								["action"] = "tranquilizing_shot",
 							}, -- [3]
 							{
 								["enabled"] = true,
@@ -27983,9 +28092,9 @@ HekiliDB = {
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["description"] = "In-combat potion is before combat ends.",
 								["action"] = "potion",
 								["criteria"] = "( talent.ascendance.enabled & raid_event.adds.in >= 90 & cooldown.ascendance.remains < 10 ) || ( talent.hot_hand.enabled & buff.molten_weapon.up ) || buff.icy_edge.up || ( talent.stormflurry.enabled & buff.crackling_surge.up ) || debuff.earthen_spike.up || active_enemies > 1 || boss & fight_remains < 30",
+								["description"] = "In-combat potion is before combat ends.",
 							}, -- [2]
 							{
 								["enabled"] = true,
@@ -27994,21 +28103,21 @@ HekiliDB = {
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["criteria"] = "( talent.ascendance.enabled & raid_event.adds.in >= 90 & cooldown.ascendance.remains < 10 ) || ( talent.hot_hand.enabled & buff.molten_weapon.up ) || buff.icy_edge.up || ( talent.stormflurry.enabled & buff.crackling_surge.up ) || debuff.earthen_spike.up || active_enemies > 1 || fight_remains < 30",
 								["name"] = "the_first_sigil",
 								["action"] = "the_first_sigil",
+								["criteria"] = "( talent.ascendance.enabled & raid_event.adds.in >= 90 & cooldown.ascendance.remains < 10 ) || ( talent.hot_hand.enabled & buff.molten_weapon.up ) || buff.icy_edge.up || ( talent.stormflurry.enabled & buff.crackling_surge.up ) || debuff.earthen_spike.up || active_enemies > 1 || fight_remains < 30",
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.acquired_sword.up || fight_remains < 25",
 								["name"] = "cache_of_acquired_treasures",
 								["action"] = "cache_of_acquired_treasures",
+								["criteria"] = "buff.acquired_sword.up || fight_remains < 25",
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["criteria"] = "! buff.scars_of_fraternal_strife_4.up || fight_remains < 31 || raid_event.adds.in < 16 || active_enemies > 1",
 								["name"] = "scars_of_fraternal_strife",
 								["action"] = "scars_of_fraternal_strife",
+								["criteria"] = "! buff.scars_of_fraternal_strife_4.up || fight_remains < 31 || raid_event.adds.in < 16 || active_enemies > 1",
 							}, -- [6]
 							{
 								["enabled"] = true,
@@ -28164,9 +28273,9 @@ HekiliDB = {
 						["opener"] = {
 							{
 								["enabled"] = true,
-								["criteria"] = "( eclipse.lunar_next || eclipse.in_solar || eclipse.in_both || eclipse.any_next ) & prev.1.wrath & ! prev.2.wrath",
 								["action"] = "wrath",
 								["description"] = "Precast 2 Wrath and a Starsurge on ST with Night Fae and BoAT or Starfire otherwise",
+								["criteria"] = "( eclipse.lunar_next || eclipse.in_solar || eclipse.in_both || eclipse.any_next ) & prev.1.wrath & ! prev.2.wrath",
 							}, -- [1]
 							{
 								["enabled"] = true,
@@ -28219,15 +28328,15 @@ HekiliDB = {
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["criteria"] = "( ( ! covenant.night_fae || ! cooldown.convoke_the_spirits.up || ! runeforge.balance_of_all_things.enabled ) & buff.ca_inc.remains > 15 & ! covenant.venthyr || covenant.venthyr & buff.ca_inc.up & buff.ravenous_frenzy.up & ( buff.ravenous_frenzy.remains <= 12 - 4 * runeforge.sinful_hysteria.enabled || buff.ca_inc.remains < 11 || 1 / spell_haste < ( 1.9 - talent.stellar_flare.enabled * 0.1 - druid.delay_berserking * 0.3 ) ) ) & variable.in_gcd",
 								["action"] = "berserking",
 								["description"] = "Use Berserking at the end of Frenzy when haste is above 60%, after Convoke with BoaT and otherwise with CA/Inc",
+								["criteria"] = "( ( ! covenant.night_fae || ! cooldown.convoke_the_spirits.up || ! runeforge.balance_of_all_things.enabled ) & buff.ca_inc.remains > 15 & ! covenant.venthyr || covenant.venthyr & buff.ca_inc.up & buff.ravenous_frenzy.up & ( buff.ravenous_frenzy.remains <= 12 - 4 * runeforge.sinful_hysteria.enabled || buff.ca_inc.remains < 11 || 1 / spell_haste < ( 1.9 - talent.stellar_flare.enabled * 0.1 - druid.delay_berserking * 0.3 ) ) ) & variable.in_gcd",
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["action"] = "potion",
 								["criteria"] = "( buff.ca_inc.remains > 15 & ( ! runeforge.sinful_hysteria.enabled || buff.ravenous_frenzy.remains < 19 & buff.ravenous_frenzy.up ) || boss & fight_remains < 25 ) & variable.in_gcd",
 								["description"] = "Pot with a CA/Inc that isn't a Pulsar proc or when the fight is about to end",
+								["action"] = "potion",
 							}, -- [7]
 							{
 								["enabled"] = true,
@@ -28269,9 +28378,9 @@ HekiliDB = {
 							}, -- [12]
 							{
 								["enabled"] = true,
-								["name"] = "scars_of_fraternal_strife",
 								["action"] = "scars_of_fraternal_strife",
 								["criteria"] = "( ! buff.scars_of_fraternal_strife_4.up || buff.scars_of_fraternal_strife_4.up & buff.ca_inc.remains > 20 ) & ( cooldown.inscrutable_quantum_device.remains > 20 || ! equipped.inscrutable_quantum_device ) || boss & fight_remains < 33",
+								["name"] = "scars_of_fraternal_strife",
 							}, -- [13]
 							{
 								["enabled"] = true,
@@ -28283,9 +28392,9 @@ HekiliDB = {
 							}, -- [14]
 							{
 								["enabled"] = true,
-								["name"] = "inscrutable_quantum_device",
 								["action"] = "inscrutable_quantum_device",
 								["criteria"] = "variable.iqd_condition & variable.in_gcd",
+								["name"] = "inscrutable_quantum_device",
 							}, -- [15]
 							{
 								["enabled"] = true,
@@ -28296,9 +28405,9 @@ HekiliDB = {
 							}, -- [16]
 							{
 								["enabled"] = true,
-								["criteria"] = "variable.on_use_trinket != 1 & ! trinket.t2.ready_cooldown || ( variable.on_use_trinket = 1 || variable.on_use_trinket = 3 ) & ( covenant.venthyr & buff.ca_inc.up & ( buff.ravenous_frenzy.remains + ( 4.5 * runeforge.sinful_hysteria.enabled ) <= trinket.t1.has_buff.duration & buff.ravenous_frenzy.up || buff.ravenous_frenzy_sinful_hysteria.up ) || ( cooldown.ca_inc.remains + 15 > trinket.t1.cooldown.duration || ( ! runeforge.primordial_arcanic_pulsar.enabled || buff.ca_inc.remains > 6 ) ) & ( ! covenant.venthyr || ! buff.ravenous_frenzy.up & cooldown.ravenous_frenzy.remains ) & ( ! covenant.night_fae || trinket.t1.cooldown.duration > cooldown.convoke_the_spirits.remains || variable.convoke_desync & trinket.t1.cooldown.duration > cooldown.ca_inc.remains ) & ! covenant.kyrian || covenant.night_fae & variable.convoke_desync & cooldown.convoke_the_spirits.up & ! cooldown.ca_inc.up & ( buff.eclipse_lunar.remains > 5 || buff.eclipse_solar.remains > 5 ) || buff.kindred_empowerment_energize.up ) || boss & fight_remains < 20 || variable.on_use_trinket = 0",
 								["action"] = "trinket1",
 								["description"] = "This is a rather elaborate way to make all on use stat trinkets to be lined up with CA/Inc and Convoke and use the 2nd slot on cd if both trinkets are on use stat trinkets",
+								["criteria"] = "variable.on_use_trinket != 1 & ! trinket.t2.ready_cooldown || ( variable.on_use_trinket = 1 || variable.on_use_trinket = 3 ) & ( covenant.venthyr & buff.ca_inc.up & ( buff.ravenous_frenzy.remains + ( 4.5 * runeforge.sinful_hysteria.enabled ) <= trinket.t1.has_buff.duration & buff.ravenous_frenzy.up || buff.ravenous_frenzy_sinful_hysteria.up ) || ( cooldown.ca_inc.remains + 15 > trinket.t1.cooldown.duration || ( ! runeforge.primordial_arcanic_pulsar.enabled || buff.ca_inc.remains > 6 ) ) & ( ! covenant.venthyr || ! buff.ravenous_frenzy.up & cooldown.ravenous_frenzy.remains ) & ( ! covenant.night_fae || trinket.t1.cooldown.duration > cooldown.convoke_the_spirits.remains || variable.convoke_desync & trinket.t1.cooldown.duration > cooldown.ca_inc.remains ) & ! covenant.kyrian || covenant.night_fae & variable.convoke_desync & cooldown.convoke_the_spirits.up & ! cooldown.ca_inc.up & ( buff.eclipse_lunar.remains > 5 || buff.eclipse_solar.remains > 5 ) || buff.kindred_empowerment_energize.up ) || boss & fight_remains < 20 || variable.on_use_trinket = 0",
 							}, -- [17]
 							{
 								["enabled"] = true,
@@ -28420,9 +28529,9 @@ HekiliDB = {
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["criteria"] = "( ( variable.convoke_desync & ! cooldown.ca_inc.ready & ! runeforge.primordial_arcanic_pulsar.enabled || buff.ca_inc.up & ( ! runeforge.primordial_arcanic_pulsar.enabled || runeforge.celestial_spirits.enabled || fight_remains > 127 || boss & fight_remains < cooldown.ca_inc.remains + 10 || buff.ca_inc.remains > 12 ) ) & ( ( ( astral_power <= variable.convoke_asp || spell_targets.starfire > 3 ) & ( buff.eclipse_lunar.remains > 10 || buff.eclipse_solar.remains > 10 ) || buff.ca_inc.remains > 5 & buff.ca_inc.remains <= 12 ) & ( ! talent.stellar_drift.enabled || buff.starfall.remains < 1.5 - 0.5 * runeforge.celestial_spirits.enabled || buff.ca_inc.remains < buff.starfall.remains + 5 & buff.ca_inc.up ) & ( ! runeforge.timeworn_dreambinder.enabled || ! runeforge.celestial_spirits.enabled || buff.timeworn_dreambinder.remains > execute_time ) || runeforge.balance_of_all_things.enabled ) & ( ! runeforge.balance_of_all_things.enabled || ( buff.balance_of_all_things_nature.stack = 8 || buff.balance_of_all_things_arcane.stack = 8 ) ) || boss & fight_remains < 10 & ! cooldown.ca_inc.ready )",
 								["action"] = "convoke_the_spirits",
 								["description"] = "Use Convoke when at less than 50 AsP and line up with CA/Inc",
+								["criteria"] = "( ( variable.convoke_desync & ! cooldown.ca_inc.ready & ! runeforge.primordial_arcanic_pulsar.enabled || buff.ca_inc.up & ( ! runeforge.primordial_arcanic_pulsar.enabled || runeforge.celestial_spirits.enabled || fight_remains > 127 || boss & fight_remains < cooldown.ca_inc.remains + 10 || buff.ca_inc.remains > 12 ) ) & ( ( ( astral_power <= variable.convoke_asp || spell_targets.starfire > 3 ) & ( buff.eclipse_lunar.remains > 10 || buff.eclipse_solar.remains > 10 ) || buff.ca_inc.remains > 5 & buff.ca_inc.remains <= 12 ) & ( ! talent.stellar_drift.enabled || buff.starfall.remains < 1.5 - 0.5 * runeforge.celestial_spirits.enabled || buff.ca_inc.remains < buff.starfall.remains + 5 & buff.ca_inc.up ) & ( ! runeforge.timeworn_dreambinder.enabled || ! runeforge.celestial_spirits.enabled || buff.timeworn_dreambinder.remains > execute_time ) || runeforge.balance_of_all_things.enabled ) & ( ! runeforge.balance_of_all_things.enabled || ( buff.balance_of_all_things_nature.stack = 8 || buff.balance_of_all_things_arcane.stack = 8 ) ) || boss & fight_remains < 10 & ! cooldown.ca_inc.ready )",
 							}, -- [3]
 							{
 								["enabled"] = true,
@@ -28433,9 +28542,9 @@ HekiliDB = {
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["criteria"] = "variable.iqd_condition & cooldown.inscrutable_quantum_device.ready & equipped.inscrutable_quantum_device & ap_check",
 								["action"] = "sunfire",
 								["description"] = "Use Sunfire to have a global to use IQD",
+								["criteria"] = "variable.iqd_condition & cooldown.inscrutable_quantum_device.ready & equipped.inscrutable_quantum_device & ap_check",
 							}, -- [5]
 							{
 								["enabled"] = true,
@@ -28446,21 +28555,21 @@ HekiliDB = {
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["criteria"] = "! talent.stellar_drift.enabled & ( ! set_bonus.tier28_4pc || eclipse.in_any || spell_targets.starfall > 3 ) & ( buff.starfall.refreshable & ( spell_targets.starfall < 3 || ! runeforge.timeworn_dreambinder.enabled ) || talent.soul_of_the_forest.enabled & buff.eclipse_solar.remains < 3 & eclipse.in_solar & buff.starfall.remains < 7 & spell_targets.starfall >= 4 ) & ( ! runeforge.lycaras_fleeting_glimpse.enabled || time % 45 > buff.starfall.remains + 2 ) & target.time_to_die > 5",
 								["action"] = "starfall",
 								["description"] = "Keep up Starfall at all times unless using Lycaras and it is about to proc or let the special action line below handle Dreambinder on 2 targets",
+								["criteria"] = "! talent.stellar_drift.enabled & ( ! set_bonus.tier28_4pc || eclipse.in_any || spell_targets.starfall > 3 ) & ( buff.starfall.refreshable & ( spell_targets.starfall < 3 || ! runeforge.timeworn_dreambinder.enabled ) || talent.soul_of_the_forest.enabled & buff.eclipse_solar.remains < 3 & eclipse.in_solar & buff.starfall.remains < 7 & spell_targets.starfall >= 4 ) & ( ! runeforge.lycaras_fleeting_glimpse.enabled || time % 45 > buff.starfall.remains + 2 ) & target.time_to_die > 5",
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["criteria"] = "talent.stellar_drift.enabled & buff.starfall.refreshable & ( ! set_bonus.tier28_4pc || eclipse.in_any || spell_targets.starfall > 3 ) & ( ! runeforge.lycaras_fleeting_glimpse.enabled || time % 45 > 4 ) & fight_remains > 3",
 								["action"] = "starfall",
 								["description"] = "With Stellar Drift use on cd when refreshable but still wait for Lycaras proc and don't use before CDs. Still use before Convoke since that will proc another Starfall",
+								["criteria"] = "talent.stellar_drift.enabled & buff.starfall.refreshable & ( ! set_bonus.tier28_4pc || eclipse.in_any || spell_targets.starfall > 3 ) & ( ! runeforge.lycaras_fleeting_glimpse.enabled || time % 45 > 4 ) & fight_remains > 3",
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["criteria"] = "runeforge.timeworn_dreambinder.enabled & spell_targets.starfall >= 3 & ( ! buff.timeworn_dreambinder.up & buff.starfall.refreshable || ( variable.dream_will_fall_off & ( buff.starfall.remains < 3 || spell_targets.starfall > 2 & talent.stellar_drift.enabled & buff.starfall.remains < 5 ) ) )",
 								["action"] = "starfall",
 								["description"] = "With Dreambinder use Starfall to keep up the buff by also using Starfall on 5 seconds or less remaining",
+								["criteria"] = "runeforge.timeworn_dreambinder.enabled & spell_targets.starfall >= 3 & ( ! buff.timeworn_dreambinder.up & buff.starfall.refreshable || ( variable.dream_will_fall_off & ( buff.starfall.remains < 3 || spell_targets.starfall > 2 & talent.stellar_drift.enabled & buff.starfall.remains < 5 ) ) )",
 							}, -- [9]
 							{
 								["enabled"] = true,
@@ -28472,9 +28581,9 @@ HekiliDB = {
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["criteria"] = "variable.dream_will_fall_off & variable.starfall_wont_fall_off & ! variable.ignore_starsurge || ( buff.balance_of_all_things_nature.stack > 3 || buff.balance_of_all_things_arcane.stack > 3 ) & spell_targets.starfall < 4 & variable.starfall_wont_fall_off",
 								["action"] = "starsurge",
 								["description"] = "Use Starsurge with Dreambinder to keep up the buff without losing Starfall uptime and use Starsurge on 4+ BoAT stacks until 4 targets",
+								["criteria"] = "variable.dream_will_fall_off & variable.starfall_wont_fall_off & ! variable.ignore_starsurge || ( buff.balance_of_all_things_nature.stack > 3 || buff.balance_of_all_things_arcane.stack > 3 ) & spell_targets.starfall < 4 & variable.starfall_wont_fall_off",
 							}, -- [11]
 							{
 								["enabled"] = true,
@@ -28492,9 +28601,9 @@ HekiliDB = {
 							}, -- [13]
 							{
 								["enabled"] = true,
-								["criteria"] = "ap_check || variable.ignore_starsurge",
 								["action"] = "force_of_nature",
 								["description"] = "Use FoN on cd without capping",
+								["criteria"] = "ap_check || variable.ignore_starsurge",
 							}, -- [14]
 							{
 								["enabled"] = true,
@@ -28505,15 +28614,15 @@ HekiliDB = {
 							}, -- [15]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.ca_inc.remains > 15 || buff.ca_inc.duration + 12 * runeforge.primordial_arcanic_pulsar.enabled < 26 & variable.cd_condition_aoe",
 								["action"] = "ravenous_frenzy",
 								["description"] = "Use Frenzy with CA/Inc",
+								["criteria"] = "buff.ca_inc.remains > 15 || buff.ca_inc.duration + 12 * runeforge.primordial_arcanic_pulsar.enabled < 26 & variable.cd_condition_aoe",
 							}, -- [16]
 							{
 								["enabled"] = true,
-								["criteria"] = "variable.cd_condition_aoe & ( ! covenant.venthyr || ! runeforge.sinful_hysteria.enabled || runeforge.primordial_arcanic_pulsar.enabled || buff.ca_inc.duration >= 26 ) || buff.ravenous_frenzy.up & buff.ravenous_frenzy.remains < 15.5",
 								["action"] = "celestial_alignment",
 								["description"] = "Use CA/Inc on cd unless and line it up with Convoke",
+								["criteria"] = "variable.cd_condition_aoe & ( ! covenant.venthyr || ! runeforge.sinful_hysteria.enabled || runeforge.primordial_arcanic_pulsar.enabled || buff.ca_inc.duration >= 26 ) || buff.ravenous_frenzy.up & buff.ravenous_frenzy.remains < 15.5",
 							}, -- [17]
 							{
 								["enabled"] = true,
@@ -28522,9 +28631,9 @@ HekiliDB = {
 							}, -- [18]
 							{
 								["enabled"] = true,
-								["criteria"] = "( cooldown.ca_inc.remains + buff.ca_inc.duration + runeforge.primordial_arcanic_pulsar.enabled * 12 > cooldown.empower_bond.duration + 10 ) || buff.ca_inc.remains > 8",
 								["action"] = "empower_bond",
 								["description"] = "Use Empower Bond on cd with Starfall up and save for Pulsar and CA/Inc",
+								["criteria"] = "( cooldown.ca_inc.remains + buff.ca_inc.duration + runeforge.primordial_arcanic_pulsar.enabled * 12 > cooldown.empower_bond.duration + 10 ) || buff.ca_inc.remains > 8",
 							}, -- [19]
 							{
 								["enabled"] = true,
@@ -28535,21 +28644,21 @@ HekiliDB = {
 							}, -- [20]
 							{
 								["enabled"] = true,
-								["criteria"] = "eclipse.in_any & ( ap_check || ! runeforge.primordial_arcanic_pulsar.enabled ) & ( buff.primordial_arcanic_pulsar.value < 250 || buff.ca_inc.remains > 8 ) & ( dot.adaptive_swarm_damage.ticking || ! covenant.necrolord || spell_targets > 2 ) & ( buff.ravenous_frenzy.remains < 9 - ( 4 * runeforge.sinful_hysteria.enabled ) & buff.ravenous_frenzy.up || ! buff.ravenous_frenzy.up ) & ( ! cooldown.ca_inc.up || buff.thrill_seeker.stack < 15 & fight_remains < 200 & fight_remains > 100 || ! soulbind.thrill_seeker.enabled ) & ( soulbind.thrill_seeker.enabled || cooldown.ca_inc.remains > 30 ) & target.time_to_die > 5 || boss & fight_remains < 10",
 								["action"] = "fury_of_elune",
 								["description"] = "Use FoE if inside an Eclipse and line it up with a Pulsar proc and Adaptive Swarm",
+								["criteria"] = "eclipse.in_any & ( ap_check || ! runeforge.primordial_arcanic_pulsar.enabled ) & ( buff.primordial_arcanic_pulsar.value < 250 || buff.ca_inc.remains > 8 ) & ( dot.adaptive_swarm_damage.ticking || ! covenant.necrolord || spell_targets > 2 ) & ( buff.ravenous_frenzy.remains < 9 - ( 4 * runeforge.sinful_hysteria.enabled ) & buff.ravenous_frenzy.up || ! buff.ravenous_frenzy.up ) & ( ! cooldown.ca_inc.up || buff.thrill_seeker.stack < 15 & fight_remains < 200 & fight_remains > 100 || ! soulbind.thrill_seeker.enabled ) & ( soulbind.thrill_seeker.enabled || cooldown.ca_inc.remains > 30 ) & target.time_to_die > 5 || boss & fight_remains < 10",
 							}, -- [21]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.oneths_perception.up & ( buff.starfall.refreshable || astral_power > 90 )",
 								["action"] = "starfall",
 								["description"] = "Use a Starfall Oneth proc unless Starfall is already up or you are about to overcap AsP",
+								["criteria"] = "buff.oneths_perception.up & ( buff.starfall.refreshable || astral_power > 90 )",
 							}, -- [22]
 							{
 								["enabled"] = true,
-								["criteria"] = "covenant.night_fae & ! talent.stellar_drift.enabled & ( variable.convoke_desync || cooldown.ca_inc.up || buff.ca_inc.up ) & cooldown.convoke_the_spirits.remains < gcd.max * ceil ( astral_power / variable.sf_cost ) & buff.starfall.remains < 4",
 								["action"] = "starfall",
 								["description"] = "Dump AsP before Convoke with Starfall and then Starsurge",
+								["criteria"] = "covenant.night_fae & ! talent.stellar_drift.enabled & ( variable.convoke_desync || cooldown.ca_inc.up || buff.ca_inc.up ) & cooldown.convoke_the_spirits.remains < gcd.max * ceil ( astral_power / variable.sf_cost ) & buff.starfall.remains < 4",
 							}, -- [23]
 							{
 								["enabled"] = true,
@@ -28558,15 +28667,15 @@ HekiliDB = {
 							}, -- [24]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.oneths_clear_vision.up || ( ! starfire.ap_check & ! variable.ignore_starsurge || ( buff.ca_inc.remains < 5 & buff.ca_inc.up || ( ( buff.ca_inc.remains < gcd.max * ceil ( astral_power / variable.ss_cost ) & buff.ca_inc.up || buff.ravenous_frenzy_sinful_hysteria.remains < gcd.max * ceil ( astral_power / variable.ss_cost ) & buff.ravenous_frenzy_sinful_hysteria.up ) & covenant.venthyr ) ) & ( spell_targets.starfall < 3 || variable.starfall_wont_fall_off ) ) & ! variable.ignore_starsurge & ( ! runeforge.timeworn_dreambinder.enabled || spell_targets.starfall < 3 )",
 								["action"] = "starsurge",
 								["description"] = "Use Starsurge with an Oneth proc or if you'd overcap AsP with your next cast. Also dump AsP at the end of the Venthyr buff if Starfall wouldn't fall off or you are on 2 targets",
+								["criteria"] = "buff.oneths_clear_vision.up || ( ! starfire.ap_check & ! variable.ignore_starsurge || ( buff.ca_inc.remains < 5 & buff.ca_inc.up || ( ( buff.ca_inc.remains < gcd.max * ceil ( astral_power / variable.ss_cost ) & buff.ca_inc.up || buff.ravenous_frenzy_sinful_hysteria.remains < gcd.max * ceil ( astral_power / variable.ss_cost ) & buff.ravenous_frenzy_sinful_hysteria.up ) & covenant.venthyr ) ) & ( spell_targets.starfall < 3 || variable.starfall_wont_fall_off ) ) & ! variable.ignore_starsurge & ( ! runeforge.timeworn_dreambinder.enabled || spell_targets.starfall < 3 )",
 							}, -- [25]
 							{
 								["enabled"] = true,
-								["criteria"] = "( buff.eclipse_solar.remains > execute_time || ( charges = 2 & recharge_time < 5 ) || charges = 3 ) & ap_check",
 								["action"] = "new_moon",
 								["description"] = "Use Moons in Solar Eclipse and save Full Moon for CA/Inc",
+								["criteria"] = "( buff.eclipse_solar.remains > execute_time || ( charges = 2 & recharge_time < 5 ) || charges = 3 ) & ap_check",
 							}, -- [26]
 							{
 								["enabled"] = true,
@@ -28593,9 +28702,9 @@ HekiliDB = {
 							}, -- [30]
 							{
 								["enabled"] = true,
-								["criteria"] = "! buff.ravenous_frenzy.up & ! buff.ravenous_frenzy_sinful_hysteria.up & ! talent.soul_of_the_forest.enabled & spell_targets.starfire < 3 & buff.eclipse_solar.remains > execute_time & fight_remains > buff.ca_inc.remains + 12 * runeforge.primordial_arcanic_pulsar.enabled",
 								["action"] = "wrath",
 								["description"] = "On 2 targets without Soul of the Forest you should fill with Wrath during Inc",
+								["criteria"] = "! buff.ravenous_frenzy.up & ! buff.ravenous_frenzy_sinful_hysteria.up & ! talent.soul_of_the_forest.enabled & spell_targets.starfire < 3 & buff.eclipse_solar.remains > execute_time & fight_remains > buff.ca_inc.remains + 12 * runeforge.primordial_arcanic_pulsar.enabled",
 							}, -- [31]
 							{
 								["enabled"] = true,
@@ -28607,9 +28716,9 @@ HekiliDB = {
 							}, -- [32]
 							{
 								["enabled"] = true,
-								["criteria"] = "( eclipse.lunar_next || eclipse.any_next & variable.is_cleave ) & ( target.time_to_die > 4 || eclipse.lunar_in_2 || boss & fight_remains < 10 ) || buff.eclipse_solar.remains < action.starfire.execute_time & buff.eclipse_solar.up || eclipse.in_solar & ! variable.starfire_in_solar || buff.ca_inc.remains < action.starfire.execute_time & ! variable.is_cleave & buff.ca_inc.remains < execute_time & buff.ca_inc.up || buff.ravenous_frenzy.up & variable.wrath_in_frenzy || ! variable.is_cleave & buff.ca_inc.remains > execute_time",
 								["action"] = "wrath",
 								["description"] = "Use Wrath in Solar Eclipse or if no Starfire will fit into CA/Inc anymore",
+								["criteria"] = "( eclipse.lunar_next || eclipse.any_next & variable.is_cleave ) & ( target.time_to_die > 4 || eclipse.lunar_in_2 || boss & fight_remains < 10 ) || buff.eclipse_solar.remains < action.starfire.execute_time & buff.eclipse_solar.up || eclipse.in_solar & ! variable.starfire_in_solar || buff.ca_inc.remains < action.starfire.execute_time & ! variable.is_cleave & buff.ca_inc.remains < execute_time & buff.ca_inc.up || buff.ravenous_frenzy.up & variable.wrath_in_frenzy || ! variable.is_cleave & buff.ca_inc.remains > execute_time",
 							}, -- [33]
 							{
 								["enabled"] = true,
@@ -28626,9 +28735,9 @@ HekiliDB = {
 						["fallthru"] = {
 							{
 								["enabled"] = true,
-								["criteria"] = "! runeforge.balance_of_all_things.equipped",
 								["action"] = "starsurge",
 								["description"] = "Starsurge for movement unless using BoAT",
+								["criteria"] = "! runeforge.balance_of_all_things.equipped",
 							}, -- [1]
 							{
 								["enabled"] = true,
@@ -28652,21 +28761,21 @@ HekiliDB = {
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["criteria"] = "! druid.no_cds & ( ( variable.convoke_desync & ! cooldown.ca_inc.ready & ! runeforge.primordial_arcanic_pulsar.enabled || buff.ca_inc.up & ( ! runeforge.primordial_arcanic_pulsar.enabled || runeforge.celestial_spirits.enabled || fight_remains > 127 || fight_remains < cooldown.ca_inc.remains + 10 || buff.ca_inc.remains > 12 ) ) & ( ( astral_power <= variable.convoke_asp & ( buff.eclipse_lunar.remains > 10 || buff.eclipse_solar.remains > 10 ) || buff.ca_inc.remains + 2 * 12 * runeforge.primordial_arcanic_pulsar.enabled > 63 || buff.ca_inc.remains > 3 & buff.ca_inc.remains <= 12 ) & ( ! runeforge.timeworn_dreambinder.enabled || ! runeforge.celestial_spirits.enabled || buff.timeworn_dreambinder.remains > execute_time ) || runeforge.balance_of_all_things.enabled ) & ( ! runeforge.balance_of_all_things.enabled || ( buff.balance_of_all_things_nature.stack = 8 || buff.balance_of_all_things_arcane.stack = 8 ) ) || boss & fight_remains < 10 & ! cooldown.ca_inc.ready )",
 								["action"] = "convoke_the_spirits",
 								["description"] = "Uses Convoke if CA/Inc is up or you are desyncing CA/Inc with Convoke and you are below 40/30(Celestial Spirits) AsP in a 10+ sec Eclipse. Also don't let Dreambinder expire, always use in CA/Inc with Pulsar and at the start of a BoAT window.",
+								["criteria"] = "! druid.no_cds & ( ( variable.convoke_desync & ! cooldown.ca_inc.ready & ! runeforge.primordial_arcanic_pulsar.enabled || buff.ca_inc.up & ( ! runeforge.primordial_arcanic_pulsar.enabled || runeforge.celestial_spirits.enabled || fight_remains > 127 || fight_remains < cooldown.ca_inc.remains + 10 || buff.ca_inc.remains > 12 ) ) & ( ( astral_power <= variable.convoke_asp & ( buff.eclipse_lunar.remains > 10 || buff.eclipse_solar.remains > 10 ) || buff.ca_inc.remains + 2 * 12 * runeforge.primordial_arcanic_pulsar.enabled > 63 || buff.ca_inc.remains > 3 & buff.ca_inc.remains <= 12 ) & ( ! runeforge.timeworn_dreambinder.enabled || ! runeforge.celestial_spirits.enabled || buff.timeworn_dreambinder.remains > execute_time ) || runeforge.balance_of_all_things.enabled ) & ( ! runeforge.balance_of_all_things.enabled || ( buff.balance_of_all_things_nature.stack = 8 || buff.balance_of_all_things_arcane.stack = 8 ) ) || boss & fight_remains < 10 & ! cooldown.ca_inc.ready )",
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["criteria"] = "runeforge.timeworn_dreambinder.enabled & ( ! ( ( buff.timeworn_dreambinder.remains > action.wrath.execute_time + 0.1 & ( eclipse.in_both || eclipse.in_solar || eclipse.lunar_next ) || buff.timeworn_dreambinder.remains > action.starfire.execute_time + 0.1 & ( eclipse.in_lunar || eclipse.solar_next || eclipse.any_next ) ) || ! buff.timeworn_dreambinder.up ) || ( buff.ca_inc.up || variable.convoke_desync ) & cooldown.convoke_the_spirits.ready & covenant.night_fae & ( buff.eclipse_lunar.remains > 10 || buff.eclipse_solar.remains > 10 ) ) & ( ! covenant.kyrian || cooldown.empower_bond.remains > 8 )",
 								["action"] = "starsurge",
 								["description"] = "Use Starsurge to keep up the Dreambinder buff if it would expire before finishing the next cast or to dump before Convoke",
+								["criteria"] = "runeforge.timeworn_dreambinder.enabled & ( ! ( ( buff.timeworn_dreambinder.remains > action.wrath.execute_time + 0.1 & ( eclipse.in_both || eclipse.in_solar || eclipse.lunar_next ) || buff.timeworn_dreambinder.remains > action.starfire.execute_time + 0.1 & ( eclipse.in_lunar || eclipse.solar_next || eclipse.any_next ) ) || ! buff.timeworn_dreambinder.up ) || ( buff.ca_inc.up || variable.convoke_desync ) & cooldown.convoke_the_spirits.ready & covenant.night_fae & ( buff.eclipse_lunar.remains > 10 || buff.eclipse_solar.remains > 10 ) ) & ( ! covenant.kyrian || cooldown.empower_bond.remains > 8 )",
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["criteria"] = "runeforge.balance_of_all_things.enabled & ( ( buff.balance_of_all_things_nature.stack > 2 || buff.balance_of_all_things_arcane.stack > 2 ) & cooldown.ca_inc.remains > 7 & ! cooldown.convoke_the_spirits.up || ( covenant.night_fae & cooldown.convoke_the_spirits.remains < 10 & eclipse.in_any & astral_power > 20 + 30 * cooldown.ca_inc.ready ) )",
 								["action"] = "starsurge",
 								["description"] = "Dump Starsurges with Balance of All Things or to prepare for Convoke with BoAT",
+								["criteria"] = "runeforge.balance_of_all_things.enabled & ( ( buff.balance_of_all_things_nature.stack > 2 || buff.balance_of_all_things_arcane.stack > 2 ) & cooldown.ca_inc.remains > 7 & ! cooldown.convoke_the_spirits.up || ( covenant.night_fae & cooldown.convoke_the_spirits.remains < 10 & eclipse.in_any & astral_power > 20 + 30 * cooldown.ca_inc.ready ) )",
 							}, -- [4]
 							{
 								["enabled"] = true,
@@ -28705,15 +28814,15 @@ HekiliDB = {
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["criteria"] = "ap_check",
 								["action"] = "force_of_nature",
 								["description"] = "Use FoN on cd without capping",
+								["criteria"] = "ap_check",
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["criteria"] = "( cooldown.ca_inc.remains + buff.ca_inc.duration + runeforge.primordial_arcanic_pulsar.enabled * 12 > cooldown.empower_bond.duration + 10 ) || buff.ca_inc.remains > 8",
 								["action"] = "empower_bond",
 								["description"] = "Use Empower Bond with any long enough lasting Eclipse and try to line it up with Pulsar and CA/Inc",
+								["criteria"] = "( cooldown.ca_inc.remains + buff.ca_inc.duration + runeforge.primordial_arcanic_pulsar.enabled * 12 > cooldown.empower_bond.duration + 10 ) || buff.ca_inc.remains > 8",
 							}, -- [11]
 							{
 								["enabled"] = true,
@@ -28733,9 +28842,9 @@ HekiliDB = {
 							}, -- [13]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.ca_inc.remains > 15 || buff.ca_inc.duration < 27 + runeforge.primordial_arcanic_pulsar.enabled * 12 & variable.cd_condition_st",
 								["action"] = "ravenous_frenzy",
 								["description"] = "Use Frenzy with CA/Inc unless Frenzy would last longer than CA/Inc, then use before",
+								["criteria"] = "buff.ca_inc.remains > 15 || buff.ca_inc.duration < 27 + runeforge.primordial_arcanic_pulsar.enabled * 12 & variable.cd_condition_st",
 							}, -- [14]
 							{
 								["enabled"] = true,
@@ -28757,9 +28866,9 @@ HekiliDB = {
 							}, -- [17]
 							{
 								["enabled"] = true,
-								["criteria"] = "eclipse.in_any & ( astral_power < 92 - buff.fury_of_elune.stack * 5 || buff.ravenous_frenzy.up ) & ( buff.primordial_arcanic_pulsar.value < 240 || buff.ca_inc.remains > 8 ) & variable.save_for_ca_inc & ( ! covenant.necrolord || dot.adaptive_swarm_damage.ticking ) & ( ! covenant.venthyr || buff.ravenous_frenzy.remains < 9 - ( 4 * runeforge.sinful_hysteria.enabled ) & buff.ravenous_frenzy.up || ! buff.ravenous_frenzy.up ) & ( ! covenant.kyrian || cooldown.empower_bond.remains > 20 ) & target.time_to_die > 5 || boss & fight_remains < 10",
 								["action"] = "fury_of_elune",
 								["description"] = "Uses FoE if in an Eclipse and tries to line it up with Pulsar, CA/Inc, Empower Bond and Adaptive Swarm",
+								["criteria"] = "eclipse.in_any & ( astral_power < 92 - buff.fury_of_elune.stack * 5 || buff.ravenous_frenzy.up ) & ( buff.primordial_arcanic_pulsar.value < 240 || buff.ca_inc.remains > 8 ) & variable.save_for_ca_inc & ( ! covenant.necrolord || dot.adaptive_swarm_damage.ticking ) & ( ! covenant.venthyr || buff.ravenous_frenzy.remains < 9 - ( 4 * runeforge.sinful_hysteria.enabled ) & buff.ravenous_frenzy.up || ! buff.ravenous_frenzy.up ) & ( ! covenant.kyrian || cooldown.empower_bond.remains > 20 ) & target.time_to_die > 5 || boss & fight_remains < 10",
 							}, -- [18]
 							{
 								["enabled"] = true,
@@ -28770,9 +28879,9 @@ HekiliDB = {
 							}, -- [19]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.oneths_perception.up & buff.starfall.refreshable",
 								["action"] = "starfall",
 								["description"] = "Use Oneth Starfall procs if Starfall isn't up",
+								["criteria"] = "buff.oneths_perception.up & buff.starfall.refreshable",
 							}, -- [20]
 							{
 								["buff_name"] = "starlord",
@@ -28791,21 +28900,21 @@ HekiliDB = {
 							}, -- [22]
 							{
 								["enabled"] = true,
-								["criteria"] = "( talent.stellar_drift.enabled || set_bonus.tier28_4pc ) & ! talent.starlord.enabled & buff.starfall.refreshable & ! runeforge.timeworn_dreambinder.enabled & ( buff.primordial_arcanic_pulsar.value >= 250 & ! buff.ca_inc.up & ( variable.asp_dump || buff.kindred_empowerment_energize.up || variable.proc_pulsar_early ) || ( covenant.necrolord & talent.stellar_drift.enabled & ( dot.adaptive_swarm_damage.remains > 8 || action.adaptive_swarm_damage.in_flight ) ) ) & ( cooldown.ca_inc.remains > 10 || cooldown.convoke_the_spirits.remains > 10 )",
 								["action"] = "starfall",
 								["description"] = "Use Starfall with Stellar Drift or t28 4pc and no Starlord, when no Starfall is up or to proc Pulsar when above 90 AsP(or the early Pulsar proc variable is true) or adpative swarm has 8+secs remaining or is in flight",
+								["criteria"] = "( talent.stellar_drift.enabled || set_bonus.tier28_4pc ) & ! talent.starlord.enabled & buff.starfall.refreshable & ! runeforge.timeworn_dreambinder.enabled & ( buff.primordial_arcanic_pulsar.value >= 250 & ! buff.ca_inc.up & ( variable.asp_dump || buff.kindred_empowerment_energize.up || variable.proc_pulsar_early ) || ( covenant.necrolord & talent.stellar_drift.enabled & ( dot.adaptive_swarm_damage.remains > 8 || action.adaptive_swarm_damage.in_flight ) ) ) & ( cooldown.ca_inc.remains > 10 || cooldown.convoke_the_spirits.remains > 10 )",
 							}, -- [23]
 							{
 								["enabled"] = true,
-								["criteria"] = "variable.proc_pulsar_early",
 								["action"] = "starsurge",
 								["description"] = "Dumps AsP before Convoke using the Convoke condition to check if Convoke is actually about to be cast",
+								["criteria"] = "variable.proc_pulsar_early",
 							}, -- [24]
 							{
 								["enabled"] = true,
-								["criteria"] = "ap_check & ( charges = 2 & recharge_time < 5 || charges = 3 )",
 								["action"] = "new_moon",
 								["description"] = "Use Moons when you are about to/are capping charges and make sure they are in an Eclipse still for HM/FM",
+								["criteria"] = "ap_check & ( charges = 2 & recharge_time < 5 || charges = 3 )",
 							}, -- [25]
 							{
 								["enabled"] = true,
@@ -28819,15 +28928,15 @@ HekiliDB = {
 							}, -- [27]
 							{
 								["enabled"] = true,
-								["criteria"] = "eclipse.in_any & ( buff.oneths_clear_vision.up || buff.kindred_empowerment_energize.up || buff.ca_inc.up & ( ! covenant.kyrian || cooldown.empower_bond.remains > 5 || buff.ca_inc.remains < gcd.max * floor ( astral_power / variable.ss_cost ) ) & ( ! covenant.venthyr || buff.ravenous_frenzy.remains < gcd.max * ceil ( ( astral_power + 40 * talent.fury_of_elune.enabled ) / variable.ss_cost ) + 3 * talent.new_moon.enabled & ! runeforge.sinful_hysteria.enabled & buff.ravenous_frenzy.up || buff.ravenous_frenzy_sinful_hysteria.up || ( buff.ravenous_frenzy.remains < action.starfire.execute_time & spell_haste < 0.4 || buff.ravenous_frenzy.remains < action.wrath.execute_time || buff.primordial_arcanic_pulsar.value >= 210 & ( astral_power > variable.ss_cost * 2 - 5 || buff.ravenous_frenzy.remains > 2 ) & buff.ravenous_frenzy.remains < 6 || variable.iqd_condition & cooldown.inscrutable_quantum_device.ready & equipped.inscrutable_quantum_device ) & buff.ravenous_frenzy.up || ! buff.ravenous_frenzy.up & ! cooldown.ravenous_frenzy.ready ) || variable.asp_dump || boss & fight_remains < gcd.max * ceil ( astral_power / variable.ss_cost ) )",
 								["action"] = "starsurge",
 								["description"] = "Use Starsurge Oneth procs and dump AsP when CA/Inc, Empower Bond, the Venthyr buff is about to fall off or you'd cap AsP",
+								["criteria"] = "eclipse.in_any & ( buff.oneths_clear_vision.up || buff.kindred_empowerment_energize.up || buff.ca_inc.up & ( ! covenant.kyrian || cooldown.empower_bond.remains > 5 || buff.ca_inc.remains < gcd.max * floor ( astral_power / variable.ss_cost ) ) & ( ! covenant.venthyr || buff.ravenous_frenzy.remains < gcd.max * ceil ( ( astral_power + 40 * talent.fury_of_elune.enabled ) / variable.ss_cost ) + 3 * talent.new_moon.enabled & ! runeforge.sinful_hysteria.enabled & buff.ravenous_frenzy.up || buff.ravenous_frenzy_sinful_hysteria.up || ( buff.ravenous_frenzy.remains < action.starfire.execute_time & spell_haste < 0.4 || buff.ravenous_frenzy.remains < action.wrath.execute_time || buff.primordial_arcanic_pulsar.value >= 210 & ( astral_power > variable.ss_cost * 2 - 5 || buff.ravenous_frenzy.remains > 2 ) & buff.ravenous_frenzy.remains < 6 || variable.iqd_condition & cooldown.inscrutable_quantum_device.ready & equipped.inscrutable_quantum_device ) & buff.ravenous_frenzy.up || ! buff.ravenous_frenzy.up & ! cooldown.ravenous_frenzy.ready ) || variable.asp_dump || boss & fight_remains < gcd.max * ceil ( astral_power / variable.ss_cost ) )",
 							}, -- [28]
 							{
 								["enabled"] = true,
-								["criteria"] = "talent.starlord.enabled & ! runeforge.timeworn_dreambinder.enabled & ( buff.starlord.up || astral_power > 90 ) & buff.starlord.stack < 3 & ( buff.eclipse_solar.up || buff.eclipse_lunar.up ) & buff.primordial_arcanic_pulsar.value < 270 & ( cooldown.ca_inc.remains > 10 || ! variable.convoke_desync & covenant.night_fae )",
 								["action"] = "starsurge",
 								["description"] = "Try to make the best of Starlord by stacking it up quickly in any Eclipse but Pulsar isn't about to be procced",
+								["criteria"] = "talent.starlord.enabled & ! runeforge.timeworn_dreambinder.enabled & ( buff.starlord.up || astral_power > 90 ) & buff.starlord.stack < 3 & ( buff.eclipse_solar.up || buff.eclipse_lunar.up ) & buff.primordial_arcanic_pulsar.value < 270 & ( cooldown.ca_inc.remains > 10 || ! variable.convoke_desync & covenant.night_fae )",
 							}, -- [29]
 							{
 								["enabled"] = true,
@@ -28839,15 +28948,15 @@ HekiliDB = {
 							}, -- [30]
 							{
 								["enabled"] = true,
-								["criteria"] = "! runeforge.timeworn_dreambinder.enabled & ( buff.primordial_arcanic_pulsar.value < 270 || buff.primordial_arcanic_pulsar.value < 250 & talent.stellar_drift.enabled ) & ( eclipse.in_solar & astral_power + variable.aspPerSec * buff.eclipse_solar.remains + dot.fury_of_elune.ticks_remain * 2.5 > 80 || eclipse.in_lunar & astral_power + variable.aspPerSec * buff.eclipse_lunar.remains + dot.fury_of_elune.ticks_remain * 2.5 > 90 ) & ! buff.oneths_perception.up & ! talent.starlord.enabled & ( cooldown.ca_inc.remains > 7 || soulbind.thrill_seeker.enabled & buff.thrill_seeker.stack < 33 - ( runeforge.sinful_hysteria.enabled * 2 ) & fight_remains > 100 & fight_remains < 200 ) & ( ! covenant.kyrian || cooldown.empower_bond.remains > 2 )",
 								["action"] = "starsurge",
 								["description"] = "Dump Starsurge in an Eclipse as soon as possible as long as you will end up with 80+ when entering the next Eclipse, don't let it proc Pulsar, don't overwrite an Oneth proc and pool before CA/Inc and Empower Bond",
+								["criteria"] = "! runeforge.timeworn_dreambinder.enabled & ( buff.primordial_arcanic_pulsar.value < 270 || buff.primordial_arcanic_pulsar.value < 250 & talent.stellar_drift.enabled ) & ( eclipse.in_solar & astral_power + variable.aspPerSec * buff.eclipse_solar.remains + dot.fury_of_elune.ticks_remain * 2.5 > 80 || eclipse.in_lunar & astral_power + variable.aspPerSec * buff.eclipse_lunar.remains + dot.fury_of_elune.ticks_remain * 2.5 > 90 ) & ! buff.oneths_perception.up & ! talent.starlord.enabled & ( cooldown.ca_inc.remains > 7 || soulbind.thrill_seeker.enabled & buff.thrill_seeker.stack < 33 - ( runeforge.sinful_hysteria.enabled * 2 ) & fight_remains > 100 & fight_remains < 200 ) & ( ! covenant.kyrian || cooldown.empower_bond.remains > 2 )",
 							}, -- [31]
 							{
 								["enabled"] = true,
-								["criteria"] = "ap_check & variable.save_for_ca_inc & ( buff.eclipse_lunar.remains > execute_time || buff.eclipse_solar.remains > execute_time )",
 								["action"] = "new_moon",
 								["description"] = "Use Moons in any Eclipse and save Half+Full Moon for CA/Inc and Kindred Empowerment. Also use NM and FM at the end of Frenzy and don't let Dreambinder fall off",
+								["criteria"] = "ap_check & variable.save_for_ca_inc & ( buff.eclipse_lunar.remains > execute_time || buff.eclipse_solar.remains > execute_time )",
 							}, -- [32]
 							{
 								["enabled"] = true,
@@ -28866,9 +28975,9 @@ HekiliDB = {
 							}, -- [35]
 							{
 								["enabled"] = true,
-								["criteria"] = "eclipse.in_lunar & ! buff.ravenous_frenzy.up || eclipse.solar_next || ( eclipse.any_next || buff.ca_inc.remains < action.wrath.execute_time & buff.ca_inc.up ) & ( ! set_bonus.tier28_2pc || runeforge.primordial_arcanic_pulsar.enabled & buff.primordial_arcanic_pulsar.value < 210 & cooldown.ca_inc.remains > 17 & ( ! covenant.night_fae || cooldown.convoke_the_spirits.remains > 17 ) & ( ! race.troll || cooldown.berserking.remains > 17 ) ) || eclipse.in_any & ( buff.warrior_of_elune.up || spell_haste < 0.45 & ( ! covenant.venthyr || ! buff.ravenous_frenzy.up ) || covenant.venthyr & spell_haste < 0.4 )",
 								["action"] = "starfire",
 								["description"] = "Use Starfire to proc Solar Eclipse, CA/Inc has less time than a Wrath execute left or only Lunar Eclipse is up. With T28 2pc enter a Solar Eclipse if Pulsar still has less than 210 stacks and CA/Inc and Convoke have more than 17s CD remaining. Use above 250% haste during Frenzy and 222% haste without Frenzy",
+								["criteria"] = "eclipse.in_lunar & ! buff.ravenous_frenzy.up || eclipse.solar_next || ( eclipse.any_next || buff.ca_inc.remains < action.wrath.execute_time & buff.ca_inc.up ) & ( ! set_bonus.tier28_2pc || runeforge.primordial_arcanic_pulsar.enabled & buff.primordial_arcanic_pulsar.value < 210 & cooldown.ca_inc.remains > 17 & ( ! covenant.night_fae || cooldown.convoke_the_spirits.remains > 17 ) & ( ! race.troll || cooldown.berserking.remains > 17 ) ) || eclipse.in_any & ( buff.warrior_of_elune.up || spell_haste < 0.45 & ( ! covenant.venthyr || ! buff.ravenous_frenzy.up ) || covenant.venthyr & spell_haste < 0.4 )",
 							}, -- [36]
 							{
 								["enabled"] = true,
@@ -28960,9 +29069,9 @@ HekiliDB = {
 							}, -- [12]
 							{
 								["enabled"] = true,
-								["name"] = "jotungeirr_destinys_call",
 								["action"] = "jotungeirr_destinys_call",
 								["criteria"] = "covenant.venthyr",
+								["name"] = "jotungeirr_destinys_call",
 							}, -- [13]
 							{
 								["enabled"] = true,
@@ -29126,9 +29235,9 @@ HekiliDB = {
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["name"] = "jotungeirr_destinys_call",
 								["action"] = "jotungeirr_destinys_call",
 								["criteria"] = "! buff.prowl.up & ! covenant.venthyr",
+								["name"] = "jotungeirr_destinys_call",
 							}, -- [2]
 							{
 								["enabled"] = true,
@@ -29835,15 +29944,15 @@ HekiliDB = {
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["action"] = "tranquilizing_shot",
 								["description"] = "Go ahead and Tranquilize NPC enemies, we don't do this for players because it'd be too spammy and we can't readily Tranq specific buffs.",
 								["criteria"] = "! target.is_player",
+								["action"] = "tranquilizing_shot",
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["action"] = "jotungeirr_destinys_call",
 								["criteria"] = "active_enemies = 1 & ( buff.coordinated_assault.up || ! cooldown.coordinated_assault.remains || boss & time_to_die < 30 ) || ( active_enemies > 1 & buff.resonating_arrow.up || buff.coordinated_assault.up )",
 								["name"] = "jotungeirr_destinys_call",
+								["action"] = "jotungeirr_destinys_call",
 							}, -- [4]
 							{
 								["action"] = "use_items",
@@ -29898,9 +30007,9 @@ HekiliDB = {
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["action"] = "jotungeirr_destinys_call",
 								["criteria"] = "cooldown.coordinated_assault.remains > 75 || boss & time_to_die < 30",
 								["name"] = "jotungeirr_destinys_call",
+								["action"] = "jotungeirr_destinys_call",
 							}, -- [2]
 						},
 						["trinkets"] = {
@@ -30389,15 +30498,15 @@ HekiliDB = {
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["criteria"] = "( ( cooldown.judgment.full_recharge_time > 4 || ( ! talent.crusaders_judgment.enabled & prev_gcd.1.judgment ) ) & cooldown.avengers_shield.remains > 4 & buff.seraphim.remains > 4 ) || ( buff.seraphim.remains < 4 )",
 								["name"] = "grongs_primal_rage",
 								["action"] = "grongs_primal_rage",
+								["criteria"] = "( ( cooldown.judgment.full_recharge_time > 4 || ( ! talent.crusaders_judgment.enabled & prev_gcd.1.judgment ) ) & cooldown.avengers_shield.remains > 4 & buff.seraphim.remains > 4 ) || ( buff.seraphim.remains < 4 )",
 							}, -- [11]
 							{
 								["enabled"] = true,
-								["criteria"] = "! buff.avenging_wrath.up & ( buff.seraphim.up || ! talent.seraphim.enabled )",
 								["name"] = "merekthas_fang",
 								["action"] = "merekthas_fang",
+								["criteria"] = "! buff.avenging_wrath.up & ( buff.seraphim.up || ! talent.seraphim.enabled )",
 							}, -- [12]
 							{
 								["enabled"] = true,
@@ -30544,9 +30653,9 @@ HekiliDB = {
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["description"] = "actions.mitigation+=/shield_of_the_righteous,if=buff.shield_of_the_righteous.down&(holy_power>2||buff.divine_purpose.up)",
 								["criteria"] = "incoming_damage_2500ms > health.max * 0.4 & ! ( buff.ardent_defender.up || buff.guardian_of_ancient_kings.up || buff.divine_shield.up || buff.potion.up )",
 								["action"] = "guardian_of_ancient_kings",
+								["description"] = "actions.mitigation+=/shield_of_the_righteous,if=buff.shield_of_the_righteous.down&(holy_power>2||buff.divine_purpose.up)",
 							}, -- [9]
 							{
 								["enabled"] = true,
@@ -30779,9 +30888,9 @@ HekiliDB = {
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["criteria"] = "covenant.necrolord & ( ! talent.bloodtalons.enabled || buff.bloodtalons.up ) & spell_targets.thrash_cat = 1 & ( combo_points > 2 & refreshable & druid.rip.ticks_gained_on_refresh > variable.rip_ticks & ( ! buff.bs_inc.up || cooldown.bs_inc.up || ( buff.bs_inc.up & cooldown.feral_frenzy.up ) ) || combo_points = 5 & buff.tigers_fury.up & buff.tigers_fury.remains < 4 & druid.rip.ticks_gained_on_refresh > 5 )",
 								["action"] = "rip",
 								["description"] = "Necrolord: Cast 3 or 4 combo point rips on single target outside of berserk or during berserk if feral frenzy is up OR apply a 5cp Rip when TF is up and will soon fall off.",
+								["criteria"] = "covenant.necrolord & ( ! talent.bloodtalons.enabled || buff.bloodtalons.up ) & spell_targets.thrash_cat = 1 & ( combo_points > 2 & refreshable & druid.rip.ticks_gained_on_refresh > variable.rip_ticks & ( ! buff.bs_inc.up || cooldown.bs_inc.up || ( buff.bs_inc.up & cooldown.feral_frenzy.up ) ) || combo_points = 5 & buff.tigers_fury.up & buff.tigers_fury.remains < 4 & druid.rip.ticks_gained_on_refresh > 5 )",
 							}, -- [10]
 							{
 								["enabled"] = true,
@@ -31043,9 +31152,9 @@ HekiliDB = {
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["criteria"] = "spell_targets.brutal_slash > 2",
 								["action"] = "brutal_slash",
 								["description"] = "Brutal Slash is better than stealth Shred at 3 targets",
+								["criteria"] = "spell_targets.brutal_slash > 2",
 							}, -- [5]
 							{
 								["enabled"] = true,
@@ -31103,9 +31212,9 @@ HekiliDB = {
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["criteria"] = "variable.ripped & ( cooldown.convoke_the_spirits.up || cooldown.convoke_the_spirits.remains > 32 || boss & fight_remains < 20 )",
 								["action"] = "berserk",
 								["description"] = "TODO: Need to sync with with ravenous frenzy when we run frenzyband, or atleast check if its worth it",
+								["criteria"] = "variable.ripped & ( cooldown.convoke_the_spirits.up || cooldown.convoke_the_spirits.remains > 32 || boss & fight_remains < 20 )",
 							}, -- [8]
 							{
 								["enabled"] = true,
@@ -31114,15 +31223,15 @@ HekiliDB = {
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["criteria"] = "energy.deficit > 40 || buff.bs_inc.up || ( talent.predator.enabled & shortest_ttd < 3 ) || ( active_dot.rip = 0 & buff.bloodtalons.up )",
 								["action"] = "tigers_fury",
 								["description"] = "Try and not waste TF energy, but also just use it for zerk and incarns",
+								["criteria"] = "energy.deficit > 40 || buff.bs_inc.up || ( talent.predator.enabled & shortest_ttd < 3 ) || ( active_dot.rip = 0 & buff.bloodtalons.up )",
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.tigers_fury.up & buff.bs_inc.down & combo_points < 4 & buff.sudden_ambush.down & dot.rake.pmultiplier < 1.6 & energy > 40 & druid.rake.ticks_gained_on_refresh > spell_targets.swipe_cat * 2 - 2 & target.time_to_die > 5",
 								["action"] = "shadowmeld",
 								["description"] = "Might be wrong to use Smeld on Rake in very very niche situations, but very rarely",
+								["criteria"] = "buff.tigers_fury.up & buff.bs_inc.down & combo_points < 4 & buff.sudden_ambush.down & dot.rake.pmultiplier < 1.6 & energy > 40 & druid.rake.ticks_gained_on_refresh > spell_targets.swipe_cat * 2 - 2 & target.time_to_die > 5",
 							}, -- [11]
 							{
 								["enabled"] = true,
@@ -31141,21 +31250,21 @@ HekiliDB = {
 							}, -- [14]
 							{
 								["enabled"] = true,
-								["criteria"] = "( dot.rip.remains > 4 & combo_points < 5 & ( dot.rake.ticking || spell_targets.thrash_cat > 1 ) & energy.deficit >= 20 & cooldown.bs_inc.remains > 10 ) || boss & fight_remains < 5 || ( buff.bs_inc.up & buff.bs_inc.remains > 12 )",
 								["action"] = "convoke_the_spirits",
 								["description"] = "TODO: Check moonkin hotw and stuff like this, and maybe better combat remain resync",
+								["criteria"] = "( dot.rip.remains > 4 & combo_points < 5 & ( dot.rake.ticking || spell_targets.thrash_cat > 1 ) & energy.deficit >= 20 & cooldown.bs_inc.remains > 10 ) || boss & fight_remains < 5 || ( buff.bs_inc.up & buff.bs_inc.remains > 12 )",
 							}, -- [15]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.tigers_fury.up || ( conduit.deep_allegiance.enabled )",
 								["action"] = "empower_bond",
 								["description"] = "Maybe there should be more conditions on the conduit",
+								["criteria"] = "buff.tigers_fury.up || ( conduit.deep_allegiance.enabled )",
 							}, -- [16]
 							{
 								["enabled"] = true,
-								["name"] = "jotungeirr_destinys_call",
 								["action"] = "jotungeirr_destinys_call",
 								["description"] = "Give priority to on-use weapon",
+								["name"] = "jotungeirr_destinys_call",
 							}, -- [17]
 							{
 								["action"] = "use_items",
@@ -31438,9 +31547,9 @@ HekiliDB = {
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["criteria"] = "! buff.temptation.up || fight_remains < 15",
 								["name"] = "ring_of_collapsing_futures",
 								["action"] = "ring_of_collapsing_futures",
+								["criteria"] = "! buff.temptation.up || fight_remains < 15",
 							}, -- [11]
 							{
 								["enabled"] = true,
@@ -31448,45 +31557,45 @@ HekiliDB = {
 							}, -- [12]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || fight_remains < 20",
 								["name"] = "the_first_sigil",
 								["action"] = "the_first_sigil",
+								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || fight_remains < 20",
 							}, -- [13]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || fight_remains < 20",
 								["name"] = "enforcers_stun_grenade",
 								["action"] = "enforcers_stun_grenade",
+								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || fight_remains < 20",
 							}, -- [14]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || boss & fight_remains < 30",
 								["name"] = "inscrutable_quantum_device",
 								["action"] = "inscrutable_quantum_device",
+								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || boss & fight_remains < 30",
 							}, -- [15]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || boss & fight_remains < 15",
 								["name"] = "overwhelming_power_crystal",
 								["action"] = "overwhelming_power_crystal",
+								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || boss & fight_remains < 15",
 							}, -- [16]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || boss & fight_remains < 20",
 								["name"] = "darkmoon_deck_voracity",
 								["action"] = "darkmoon_deck_voracity",
+								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || boss & fight_remains < 20",
 							}, -- [17]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || boss & fight_remains < 20",
 								["name"] = "macabre_sheet_music",
 								["action"] = "macabre_sheet_music",
+								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack = 10 || boss & fight_remains < 20",
 							}, -- [18]
 							{
 								["enabled"] = true,
-								["criteria"] = "! talent.crusade.enabled || buff.crusade.up || boss & fight_remains < 30",
 								["name"] = "faulty_countermeasure",
 								["action"] = "faulty_countermeasure",
+								["criteria"] = "! talent.crusade.enabled || buff.crusade.up || boss & fight_remains < 30",
 							}, -- [19]
 							{
 								["enabled"] = true,
@@ -31546,9 +31655,9 @@ HekiliDB = {
 							}, -- [30]
 							{
 								["enabled"] = true,
-								["criteria"] = "! buff.scars_of_fraternal_strife_4.up || boss & fight_remains < 35",
 								["name"] = "scars_of_fraternal_strife",
 								["action"] = "scars_of_fraternal_strife",
+								["criteria"] = "! buff.scars_of_fraternal_strife_4.up || boss & fight_remains < 35",
 							}, -- [31]
 							{
 								["enabled"] = true,
@@ -31562,21 +31671,21 @@ HekiliDB = {
 							}, -- [33]
 							{
 								["enabled"] = true,
-								["criteria"] = "! buff.avenging_wrath.up & ! buff.crusade.up",
 								["name"] = "heart_of_the_swarm",
 								["action"] = "heart_of_the_swarm",
+								["criteria"] = "! buff.avenging_wrath.up & ! buff.crusade.up",
 							}, -- [34]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack >= 10 || cooldown.avenging_wrath.remains > 45 || cooldown.crusade.remains > 45",
 								["name"] = "gladiators_badge",
 								["action"] = "gladiators_badge",
+								["criteria"] = "buff.avenging_wrath.up || buff.crusade.up & buff.crusade.stack >= 10 || cooldown.avenging_wrath.remains > 45 || cooldown.crusade.remains > 45",
 							}, -- [35]
 							{
 								["enabled"] = true,
-								["criteria"] = "( buff.avenging_wrath.up || buff.crusade.up )",
 								["name"] = "gavel_of_the_first_arbiter",
 								["action"] = "gavel_of_the_first_arbiter",
+								["criteria"] = "( buff.avenging_wrath.up || buff.crusade.up )",
 							}, -- [36]
 							{
 								["enabled"] = true,
@@ -31918,9 +32027,9 @@ HekiliDB = {
 							}, -- [18]
 							{
 								["enabled"] = true,
-								["action"] = "lights_judgment",
 								["description"] = "Use Light's Judgment if there are 2 or more targets, or adds aren't spawning for more than 75s.",
 								["criteria"] = "spell_targets.lights_judgment >= 2 || ( ! raid_event.adds.exists || raid_event.adds.in > 75 )",
+								["action"] = "lights_judgment",
 							}, -- [19]
 							{
 								["enabled"] = true,
@@ -31967,15 +32076,15 @@ HekiliDB = {
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["action"] = "void_eruption",
 								["description"] = "Use Void Eruption on cooldown pooling at least 25 insanity (or 40 for Blood Elf on opener) but not if you will overcap insanity in VF. Make sure Shadowfiend/Mindbender and Mind Blast is on cooldown before VE if Shadowflame is equipped. Ignore pooling restrictions if using Shadowflame Prism and Bender is out.",
 								["criteria"] = "variable.pool_for_cds & ( insanity >= 25 + ( 15 * ( race.blood_elf & time < 30 ) ) || pet.fiend.active & runeforge.shadowflame_prism.equipped & ! cooldown.mind_blast.up & ! cooldown.shadow_word_death.up ) & ( insanity <= 85 || talent.searing_nightmare.enabled & variable.searing_nightmare_cutoff ) & ! cooldown.fiend.up & ( ! soulbind.volatile_solvent.enabled || buff.volatile_solvent.up || settings.ignore_solvent )",
+								["action"] = "void_eruption",
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["action"] = "shadow_word_pain",
 								["description"] = "Make sure you put up SW:P ASAP on the target if Wrathful Faerie isn't active when fighting 1-3 targets.",
 								["criteria"] = "buff.fae_guardians.up & ! debuff.wrathful_faerie.up & spell_targets.mind_sear < 4",
+								["action"] = "shadow_word_pain",
 							}, -- [4]
 							{
 								["enabled"] = true,
@@ -32004,39 +32113,39 @@ HekiliDB = {
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["action"] = "shadow_word_death",
 								["description"] = "Use Shadow Word Death if using Shadowflame Prism and bender will expire during the next gcd.",
 								["criteria"] = "pet.fiend.active & runeforge.shadowflame_prism.equipped & pet.fiend.remains <= gcd & spell_targets.mind_sear <= 7",
+								["action"] = "shadow_word_death",
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["action"] = "mind_blast",
 								["description"] = "Always use mindblasts if capped and hungering void is up and using Shadowflame Prism and bender is up.  Additionally, cast mindblast if you would be unable to get the rift by waiting a gcd.",
 								["criteria"] = "( cooldown.mind_blast.charges > 1 & ( debuff.hungering_void.up || ! talent.hungering_void.enabled ) || pet.fiend.remains <= cast_time + gcd ) & pet.fiend.active & runeforge.shadowflame_prism.equipped & pet.fiend.remains > cast_time & spell_targets.mind_sear <= 7 || buff.dark_thought.up & buff.voidform.up & ! cooldown.void_bolt.up & ( ! runeforge.shadowflame_prism.equipped || ! pet.fiend.active ) & set_bonus.tier28_4pc",
+								["action"] = "mind_blast",
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["action"] = "void_bolt",
 								["description"] = "Use Void Bolt at higher priority with Hungering Void up to 4 targets, or other talents on ST.",
 								["criteria"] = "insanity <= 85 & talent.hungering_void.enabled & talent.searing_nightmare.enabled & spell_targets.mind_sear <= 6 || ( ( talent.hungering_void.enabled & ! talent.searing_nightmare.enabled ) || spell_targets.mind_sear = 1 )",
+								["action"] = "void_bolt",
 							}, -- [11]
 							{
 								["enabled"] = true,
-								["action"] = "devouring_plague",
 								["description"] = "Special Devouring Plague with Searing Nightmare when usage during Cooldowns",
 								["criteria"] = "( set_bonus.tier28_4pc || talent.hungering_void.enabled ) & talent.searing_nightmare.enabled & pet.fiend.active & runeforge.shadowflame_prism.equipped & buff.voidform.up & spell_targets.mind_sear <= 6",
+								["action"] = "devouring_plague",
 							}, -- [12]
 							{
 								["enabled"] = true,
-								["action"] = "devouring_plague",
 								["description"] = "Don't use Devouring Plague if you can get into Voidform instead, or if Searing Nightmare is talented and will hit enough targets.",
 								["criteria"] = "( refreshable || insanity > 75 || talent.void_torrent.enabled & cooldown.void_torrent.remains <= 3 * gcd ) & ( ! variable.pool_for_cds || insanity >= 85 ) & ( ! talent.searing_nightmare.enabled || ( talent.searing_nightmare.enabled & ! variable.searing_nightmare_cutoff ) )",
+								["action"] = "devouring_plague",
 							}, -- [13]
 							{
 								["enabled"] = true,
-								["action"] = "void_bolt",
 								["description"] = "Use VB on CD if you don't need to cast Devouring Plague, and there are less than 4 targets out (5 with conduit).",
 								["criteria"] = "spell_targets.mind_sear < ( 4 + conduit.dissonant_echoes.enabled ) & insanity <= 85 & talent.searing_nightmare.enabled || ! talent.searing_nightmare.enabled",
+								["action"] = "void_bolt",
 							}, -- [14]
 							{
 								["enabled"] = true,
@@ -32066,25 +32175,25 @@ HekiliDB = {
 							}, -- [18]
 							{
 								["enabled"] = true,
-								["action"] = "shadow_word_death",
 								["description"] = "Use SW:D with Painbreaker Psalm unless the target will be below 20% before the cooldown comes back.",
 								["criteria"] = "runeforge.painbreaker_psalm.equipped & variable.dots_up & target.time_to_pct_20 > ( cooldown.shadow_word_death.duration + gcd )",
+								["action"] = "shadow_word_death",
 							}, -- [19]
 							{
 								["enabled"] = true,
-								["action"] = "shadow_crash",
 								["description"] = "Use Shadow Crash on CD unless there are adds incoming.",
 								["criteria"] = "raid_event.adds.in > 10",
+								["action"] = "shadow_crash",
 							}, -- [20]
 							{
 								["enabled"] = true,
-								["criteria"] = "spell_targets.mind_sear > variable.mind_sear_cutoff & buff.dark_thought.up",
 								["description"] = "Use Mind Sear to consume Dark Thoughts procs on AOE. TODO Confirm is this is a higher priority than redotting on AOE unless dark thoughts is about to time out",
+								["action"] = "mind_sear",
 								["cycle_targets"] = 1,
 								["interrupt_if"] = "ticks>=4",
 								["interrupt_immediate"] = "1",
 								["chain"] = "1",
-								["action"] = "mind_sear",
+								["criteria"] = "spell_targets.mind_sear > variable.mind_sear_cutoff & buff.dark_thought.up",
 							}, -- [21]
 							{
 								["enabled"] = true,
@@ -32097,9 +32206,9 @@ HekiliDB = {
 							}, -- [22]
 							{
 								["enabled"] = true,
-								["action"] = "mind_blast",
 								["description"] = "Use Mind Blast if you don't need to refresh DoTs. Stop casting at 4 or more targets with Searing Nightmare talented and you are not using Shadowflame Prism or Psychic Link.spell_targets.mind_sear>?5 gets the minimum of 5 and the number of targets. Also, do not press mindblast until all targets are dotted with VT when using shadowflame prism if bender is available.",
 								["criteria"] = "variable.dots_up & raid_event.movement.in > cast_time + 0.5 & spell_targets.mind_sear < ( 4 + 2 * talent.misery.enabled + active_dot.vampiric_touch * talent.psychic_link.enabled + ( spell_targets.mind_sear >? 5 ) * ( pet.fiend.active & runeforge.shadowflame_prism.equipped ) ) & ( ! runeforge.shadowflame_prism.equipped || ! cooldown.fiend.up & runeforge.shadowflame_prism.equipped || variable.vts_applied )",
+								["action"] = "mind_blast",
 							}, -- [23]
 							{
 								["enabled"] = true,
@@ -32110,9 +32219,9 @@ HekiliDB = {
 							}, -- [24]
 							{
 								["enabled"] = true,
-								["action"] = "shadow_word_pain",
 								["description"] = "Special condition to stop casting SW:P on off-targets when fighting 3 or more stacked mobs and using Psychic Link and NOT Misery.",
 								["criteria"] = "refreshable & target.time_to_die > 4 & ! talent.misery.enabled & talent.psychic_link.enabled & spell_targets.mind_sear > 2",
+								["action"] = "shadow_word_pain",
 							}, -- [25]
 							{
 								["enabled"] = true,
@@ -32203,9 +32312,9 @@ HekiliDB = {
 						["cds"] = {
 							{
 								["enabled"] = true,
-								["action"] = "power_infusion",
 								["description"] = "Use Power Infusion with Voidform. Hold for Voidform comes off cooldown in the next 10 seconds otherwise use on cd unless the player is part of the kyrian covenant, or if there will not be another Void Eruption this fight. Attempt to sync the last power infusion of the fight to void eruption for non Kyrians.",
 								["criteria"] = "priest.self_power_infusion & ( buff.voidform.up || ! covenant.kyrian & ! covenant.necrolord & cooldown.void_eruption.remains >= 10 || fight_remains < cooldown.void_eruption.remains ) & ( fight_remains >= cooldown.void_eruption.remains + 15 & cooldown.void_eruption.remains <= gcd * 4 || fight_remains > cooldown.power_infusion.duration || boss & fight_remains < cooldown.void_eruption.remains + 15 || covenant.kyrian || buff.bloodlust.up )",
+								["action"] = "power_infusion",
 							}, -- [1]
 							{
 								["enabled"] = true,
@@ -32216,9 +32325,9 @@ HekiliDB = {
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["action"] = "fae_guardians",
 								["description"] = "Use Fae Guardians on CD outside of Voidform. Use Fae Guardiands in Voidform if you have either Grove Invigoration or Field of Blossoms. Wait for dots to be up before activating Fae Guardians to maximise the buff.",
 								["criteria"] = "! buff.voidform.up & ( ! cooldown.void_torrent.up || ! talent.void_torrent.enabled ) & ( variable.dots_up & spell_targets.vampiric_touch = 1 || variable.vts_applied & spell_targets.vampiric_touch > 1 ) || buff.voidform.up & ( soulbind.grove_invigoration.enabled || soulbind.field_of_blossoms.enabled )",
+								["action"] = "fae_guardians",
 							}, -- [3]
 							{
 								["enabled"] = true,
@@ -32229,15 +32338,15 @@ HekiliDB = {
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["action"] = "unholy_nova",
 								["description"] = "Use Unholy Nova on CD, holding briefly to wait for power infusion or add spawns.",
 								["criteria"] = "! talent.hungering_void.enabled & variable.dots_up || debuff.hungering_void.up & buff.voidform.up || ( cooldown.void_eruption.remains > 10 || ! variable.pool_for_cds ) & ! buff.voidform.up",
+								["action"] = "unholy_nova",
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["action"] = "boon_of_the_ascended",
 								["description"] = "Use on CD but prioritise using Void Eruption first, if used inside of VF on ST use after a voidbolt for cooldown efficiency and for hungering void uptime if talented.",
 								["criteria"] = "! buff.voidform.up & ! cooldown.void_eruption.up & spell_targets.mind_sear > 1 & ! talent.searing_nightmare.enabled || ( buff.voidform.up & spell_targets.mind_sear < 2 & ! talent.searing_nightmare.enabled & ( prev_gcd.1.void_bolt & ( ! equipped.empyreal_ordnance || ! talent.hungering_void.enabled ) || equipped.empyreal_ordnance & cooldown.empyreal_ordnance.remains <= 162 & debuff.hungering_void.up ) ) || ( buff.voidform.up & talent.searing_nightmare.enabled )",
+								["action"] = "boon_of_the_ascended",
 							}, -- [6]
 							{
 								["enabled"] = true,
@@ -32310,15 +32419,15 @@ HekiliDB = {
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["action"] = "architects_ingenuity_core",
 								["description"] = "Use this on CD for max CDR",
 								["name"] = "architects_ingenuity_core",
+								["action"] = "architects_ingenuity_core",
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["action"] = "use_items",
 								["description"] = "Default fallback for usable items: Use on cooldown in order by trinket slot.",
 								["criteria"] = "buff.voidform.up || buff.power_infusion.up || cooldown.void_eruption.remains > 10",
+								["action"] = "use_items",
 							}, -- [10]
 						},
 						["boon"] = {
@@ -32329,9 +32438,9 @@ HekiliDB = {
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["action"] = "ascended_nova",
 								["description"] = "Only use Ascended Nova when not talented into Searing Nightmare on 2+ targets.",
 								["criteria"] = "spell_targets.ascended_nova > 1 & spell_targets.mind_sear > 1 & ! talent.searing_nightmare.enabled",
+								["action"] = "ascended_nova",
 							}, -- [2]
 						},
 						["cwc"] = {
@@ -32635,9 +32744,9 @@ HekiliDB = {
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["criteria"] = "covenant.necrolord & ( ! talent.bloodtalons.enabled || buff.bloodtalons.up ) & spell_targets.thrash_cat = 1 & ( combo_points > 2 & refreshable & druid.rip.ticks_gained_on_refresh > variable.rip_ticks & ( ! buff.bs_inc.up || cooldown.bs_inc.up || ( buff.bs_inc.up & cooldown.feral_frenzy.up ) ) || combo_points = 5 & buff.tigers_fury.up & buff.tigers_fury.remains < 4 & druid.rip.ticks_gained_on_refresh > 5 )",
 								["action"] = "rip",
 								["description"] = "Necrolord: Cast 3 or 4 combo point rips on single target outside of berserk or during berserk if feral frenzy is up OR apply a 5cp Rip when TF is up and will soon fall off.",
+								["criteria"] = "covenant.necrolord & ( ! talent.bloodtalons.enabled || buff.bloodtalons.up ) & spell_targets.thrash_cat = 1 & ( combo_points > 2 & refreshable & druid.rip.ticks_gained_on_refresh > variable.rip_ticks & ( ! buff.bs_inc.up || cooldown.bs_inc.up || ( buff.bs_inc.up & cooldown.feral_frenzy.up ) ) || combo_points = 5 & buff.tigers_fury.up & buff.tigers_fury.remains < 4 & druid.rip.ticks_gained_on_refresh > 5 )",
 							}, -- [10]
 							{
 								["enabled"] = true,
@@ -32899,9 +33008,9 @@ HekiliDB = {
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["criteria"] = "spell_targets.brutal_slash > 2",
 								["action"] = "brutal_slash",
 								["description"] = "Brutal Slash is better than stealth Shred at 3 targets",
+								["criteria"] = "spell_targets.brutal_slash > 2",
 							}, -- [5]
 							{
 								["enabled"] = true,
@@ -32959,9 +33068,9 @@ HekiliDB = {
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["criteria"] = "variable.ripped & ( cooldown.convoke_the_spirits.up || cooldown.convoke_the_spirits.remains > 32 || boss & fight_remains < 20 )",
 								["action"] = "berserk",
 								["description"] = "TODO: Need to sync with with ravenous frenzy when we run frenzyband, or atleast check if its worth it",
+								["criteria"] = "variable.ripped & ( cooldown.convoke_the_spirits.up || cooldown.convoke_the_spirits.remains > 32 || boss & fight_remains < 20 )",
 							}, -- [8]
 							{
 								["enabled"] = true,
@@ -32970,15 +33079,15 @@ HekiliDB = {
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["criteria"] = "energy.deficit > 40 || buff.bs_inc.up || ( talent.predator.enabled & shortest_ttd < 3 ) || ( active_dot.rip = 0 & buff.bloodtalons.up )",
 								["action"] = "tigers_fury",
 								["description"] = "Try and not waste TF energy, but also just use it for zerk and incarns",
+								["criteria"] = "energy.deficit > 40 || buff.bs_inc.up || ( talent.predator.enabled & shortest_ttd < 3 ) || ( active_dot.rip = 0 & buff.bloodtalons.up )",
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.tigers_fury.up & buff.bs_inc.down & combo_points < 4 & buff.sudden_ambush.down & dot.rake.pmultiplier < 1.6 & energy > 40 & druid.rake.ticks_gained_on_refresh > spell_targets.swipe_cat * 2 - 2 & target.time_to_die > 5",
 								["action"] = "shadowmeld",
 								["description"] = "Might be wrong to use Smeld on Rake in very very niche situations, but very rarely",
+								["criteria"] = "buff.tigers_fury.up & buff.bs_inc.down & combo_points < 4 & buff.sudden_ambush.down & dot.rake.pmultiplier < 1.6 & energy > 40 & druid.rake.ticks_gained_on_refresh > spell_targets.swipe_cat * 2 - 2 & target.time_to_die > 5",
 							}, -- [11]
 							{
 								["enabled"] = true,
@@ -32997,21 +33106,21 @@ HekiliDB = {
 							}, -- [14]
 							{
 								["enabled"] = true,
-								["criteria"] = "( dot.rip.remains > 4 & combo_points < 5 & ( dot.rake.ticking || spell_targets.thrash_cat > 1 ) & energy.deficit >= 20 & cooldown.bs_inc.remains > 10 ) || boss & fight_remains < 5 || ( buff.bs_inc.up & buff.bs_inc.remains > 12 )",
 								["action"] = "convoke_the_spirits",
 								["description"] = "TODO: Check moonkin hotw and stuff like this, and maybe better combat remain resync",
+								["criteria"] = "( dot.rip.remains > 4 & combo_points < 5 & ( dot.rake.ticking || spell_targets.thrash_cat > 1 ) & energy.deficit >= 20 & cooldown.bs_inc.remains > 10 ) || boss & fight_remains < 5 || ( buff.bs_inc.up & buff.bs_inc.remains > 12 )",
 							}, -- [15]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.tigers_fury.up || ( conduit.deep_allegiance.enabled )",
 								["action"] = "empower_bond",
 								["description"] = "Maybe there should be more conditions on the conduit",
+								["criteria"] = "buff.tigers_fury.up || ( conduit.deep_allegiance.enabled )",
 							}, -- [16]
 							{
 								["enabled"] = true,
-								["name"] = "jotungeirr_destinys_call",
 								["action"] = "jotungeirr_destinys_call",
 								["description"] = "Give priority to on-use weapon",
+								["name"] = "jotungeirr_destinys_call",
 							}, -- [17]
 							{
 								["action"] = "use_items",
@@ -33062,9 +33171,9 @@ HekiliDB = {
 						["opener"] = {
 							{
 								["enabled"] = true,
-								["action"] = "wrath",
 								["description"] = "Precast 2 Wrath and a Starsurge on ST with Night Fae and BoAT or Starfire otherwise",
 								["criteria"] = "( eclipse.lunar_next || eclipse.in_solar || eclipse.in_both || eclipse.any_next ) & prev.1.wrath & ! prev.2.wrath",
+								["action"] = "wrath",
 							}, -- [1]
 							{
 								["enabled"] = true,
@@ -33117,15 +33226,15 @@ HekiliDB = {
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["action"] = "berserking",
 								["description"] = "Use Berserking at the end of Frenzy when haste is above 60%, after Convoke with BoaT and otherwise with CA/Inc",
 								["criteria"] = "( ( ! covenant.night_fae || ! cooldown.convoke_the_spirits.up || ! runeforge.balance_of_all_things.enabled ) & buff.ca_inc.remains > 15 & ! covenant.venthyr || covenant.venthyr & buff.ca_inc.up & buff.ravenous_frenzy.up & ( buff.ravenous_frenzy.remains <= 12 - 4 * runeforge.sinful_hysteria.enabled || buff.ca_inc.remains < 11 || 1 / spell_haste < ( 1.9 - talent.stellar_flare.enabled * 0.1 - druid.delay_berserking * 0.3 ) ) ) & variable.in_gcd",
+								["action"] = "berserking",
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["criteria"] = "( buff.ca_inc.remains > 15 & ( ! runeforge.sinful_hysteria.enabled || buff.ravenous_frenzy.remains < 19 & buff.ravenous_frenzy.up ) || boss & fight_remains < 25 ) & variable.in_gcd",
 								["description"] = "Pot with a CA/Inc that isn't a Pulsar proc or when the fight is about to end",
 								["action"] = "potion",
+								["criteria"] = "( buff.ca_inc.remains > 15 & ( ! runeforge.sinful_hysteria.enabled || buff.ravenous_frenzy.remains < 19 & buff.ravenous_frenzy.up ) || boss & fight_remains < 25 ) & variable.in_gcd",
 							}, -- [7]
 							{
 								["enabled"] = true,
@@ -33167,9 +33276,9 @@ HekiliDB = {
 							}, -- [12]
 							{
 								["enabled"] = true,
-								["action"] = "scars_of_fraternal_strife",
 								["criteria"] = "( ! buff.scars_of_fraternal_strife_4.up || buff.scars_of_fraternal_strife_4.up & buff.ca_inc.remains > 20 ) & ( cooldown.inscrutable_quantum_device.remains > 20 || ! equipped.inscrutable_quantum_device ) || boss & fight_remains < 33",
 								["name"] = "scars_of_fraternal_strife",
+								["action"] = "scars_of_fraternal_strife",
 							}, -- [13]
 							{
 								["enabled"] = true,
@@ -33181,9 +33290,9 @@ HekiliDB = {
 							}, -- [14]
 							{
 								["enabled"] = true,
-								["action"] = "inscrutable_quantum_device",
 								["criteria"] = "variable.iqd_condition & variable.in_gcd",
 								["name"] = "inscrutable_quantum_device",
+								["action"] = "inscrutable_quantum_device",
 							}, -- [15]
 							{
 								["enabled"] = true,
@@ -33194,9 +33303,9 @@ HekiliDB = {
 							}, -- [16]
 							{
 								["enabled"] = true,
-								["action"] = "trinket1",
 								["description"] = "This is a rather elaborate way to make all on use stat trinkets to be lined up with CA/Inc and Convoke and use the 2nd slot on cd if both trinkets are on use stat trinkets",
 								["criteria"] = "variable.on_use_trinket != 1 & ! trinket.t2.ready_cooldown || ( variable.on_use_trinket = 1 || variable.on_use_trinket = 3 ) & ( covenant.venthyr & buff.ca_inc.up & ( buff.ravenous_frenzy.remains + ( 4.5 * runeforge.sinful_hysteria.enabled ) <= trinket.t1.has_buff.duration & buff.ravenous_frenzy.up || buff.ravenous_frenzy_sinful_hysteria.up ) || ( cooldown.ca_inc.remains + 15 > trinket.t1.cooldown.duration || ( ! runeforge.primordial_arcanic_pulsar.enabled || buff.ca_inc.remains > 6 ) ) & ( ! covenant.venthyr || ! buff.ravenous_frenzy.up & cooldown.ravenous_frenzy.remains ) & ( ! covenant.night_fae || trinket.t1.cooldown.duration > cooldown.convoke_the_spirits.remains || variable.convoke_desync & trinket.t1.cooldown.duration > cooldown.ca_inc.remains ) & ! covenant.kyrian || covenant.night_fae & variable.convoke_desync & cooldown.convoke_the_spirits.up & ! cooldown.ca_inc.up & ( buff.eclipse_lunar.remains > 5 || buff.eclipse_solar.remains > 5 ) || buff.kindred_empowerment_energize.up ) || boss & fight_remains < 20 || variable.on_use_trinket = 0",
+								["action"] = "trinket1",
 							}, -- [17]
 							{
 								["enabled"] = true,
@@ -33318,9 +33427,9 @@ HekiliDB = {
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["action"] = "convoke_the_spirits",
 								["description"] = "Use Convoke when at less than 50 AsP and line up with CA/Inc",
 								["criteria"] = "( ( variable.convoke_desync & ! cooldown.ca_inc.ready & ! runeforge.primordial_arcanic_pulsar.enabled || buff.ca_inc.up & ( ! runeforge.primordial_arcanic_pulsar.enabled || runeforge.celestial_spirits.enabled || fight_remains > 127 || boss & fight_remains < cooldown.ca_inc.remains + 10 || buff.ca_inc.remains > 12 ) ) & ( ( ( astral_power <= variable.convoke_asp || spell_targets.starfire > 3 ) & ( buff.eclipse_lunar.remains > 10 || buff.eclipse_solar.remains > 10 ) || buff.ca_inc.remains > 5 & buff.ca_inc.remains <= 12 ) & ( ! talent.stellar_drift.enabled || buff.starfall.remains < 1.5 - 0.5 * runeforge.celestial_spirits.enabled || buff.ca_inc.remains < buff.starfall.remains + 5 & buff.ca_inc.up ) & ( ! runeforge.timeworn_dreambinder.enabled || ! runeforge.celestial_spirits.enabled || buff.timeworn_dreambinder.remains > execute_time ) || runeforge.balance_of_all_things.enabled ) & ( ! runeforge.balance_of_all_things.enabled || ( buff.balance_of_all_things_nature.stack = 8 || buff.balance_of_all_things_arcane.stack = 8 ) ) || boss & fight_remains < 10 & ! cooldown.ca_inc.ready )",
+								["action"] = "convoke_the_spirits",
 							}, -- [3]
 							{
 								["enabled"] = true,
@@ -33331,9 +33440,9 @@ HekiliDB = {
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["action"] = "sunfire",
 								["description"] = "Use Sunfire to have a global to use IQD",
 								["criteria"] = "variable.iqd_condition & cooldown.inscrutable_quantum_device.ready & equipped.inscrutable_quantum_device & ap_check",
+								["action"] = "sunfire",
 							}, -- [5]
 							{
 								["enabled"] = true,
@@ -33344,21 +33453,21 @@ HekiliDB = {
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["action"] = "starfall",
 								["description"] = "Keep up Starfall at all times unless using Lycaras and it is about to proc or let the special action line below handle Dreambinder on 2 targets",
 								["criteria"] = "! talent.stellar_drift.enabled & ( ! set_bonus.tier28_4pc || eclipse.in_any || spell_targets.starfall > 3 ) & ( buff.starfall.refreshable & ( spell_targets.starfall < 3 || ! runeforge.timeworn_dreambinder.enabled ) || talent.soul_of_the_forest.enabled & buff.eclipse_solar.remains < 3 & eclipse.in_solar & buff.starfall.remains < 7 & spell_targets.starfall >= 4 ) & ( ! runeforge.lycaras_fleeting_glimpse.enabled || time % 45 > buff.starfall.remains + 2 ) & target.time_to_die > 5",
+								["action"] = "starfall",
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["action"] = "starfall",
 								["description"] = "With Stellar Drift use on cd when refreshable but still wait for Lycaras proc and don't use before CDs. Still use before Convoke since that will proc another Starfall",
 								["criteria"] = "talent.stellar_drift.enabled & buff.starfall.refreshable & ( ! set_bonus.tier28_4pc || eclipse.in_any || spell_targets.starfall > 3 ) & ( ! runeforge.lycaras_fleeting_glimpse.enabled || time % 45 > 4 ) & fight_remains > 3",
+								["action"] = "starfall",
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["action"] = "starfall",
 								["description"] = "With Dreambinder use Starfall to keep up the buff by also using Starfall on 5 seconds or less remaining",
 								["criteria"] = "runeforge.timeworn_dreambinder.enabled & spell_targets.starfall >= 3 & ( ! buff.timeworn_dreambinder.up & buff.starfall.refreshable || ( variable.dream_will_fall_off & ( buff.starfall.remains < 3 || spell_targets.starfall > 2 & talent.stellar_drift.enabled & buff.starfall.remains < 5 ) ) )",
+								["action"] = "starfall",
 							}, -- [9]
 							{
 								["enabled"] = true,
@@ -33370,9 +33479,9 @@ HekiliDB = {
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["action"] = "starsurge",
 								["description"] = "Use Starsurge with Dreambinder to keep up the buff without losing Starfall uptime and use Starsurge on 4+ BoAT stacks until 4 targets",
 								["criteria"] = "variable.dream_will_fall_off & variable.starfall_wont_fall_off & ! variable.ignore_starsurge || ( buff.balance_of_all_things_nature.stack > 3 || buff.balance_of_all_things_arcane.stack > 3 ) & spell_targets.starfall < 4 & variable.starfall_wont_fall_off",
+								["action"] = "starsurge",
 							}, -- [11]
 							{
 								["enabled"] = true,
@@ -33390,9 +33499,9 @@ HekiliDB = {
 							}, -- [13]
 							{
 								["enabled"] = true,
-								["action"] = "force_of_nature",
 								["description"] = "Use FoN on cd without capping",
 								["criteria"] = "ap_check || variable.ignore_starsurge",
+								["action"] = "force_of_nature",
 							}, -- [14]
 							{
 								["enabled"] = true,
@@ -33403,15 +33512,15 @@ HekiliDB = {
 							}, -- [15]
 							{
 								["enabled"] = true,
-								["action"] = "ravenous_frenzy",
 								["description"] = "Use Frenzy with CA/Inc",
 								["criteria"] = "buff.ca_inc.remains > 15 || buff.ca_inc.duration + 12 * runeforge.primordial_arcanic_pulsar.enabled < 26 & variable.cd_condition_aoe",
+								["action"] = "ravenous_frenzy",
 							}, -- [16]
 							{
 								["enabled"] = true,
-								["action"] = "celestial_alignment",
 								["description"] = "Use CA/Inc on cd unless and line it up with Convoke",
 								["criteria"] = "variable.cd_condition_aoe & ( ! covenant.venthyr || ! runeforge.sinful_hysteria.enabled || runeforge.primordial_arcanic_pulsar.enabled || buff.ca_inc.duration >= 26 ) || buff.ravenous_frenzy.up & buff.ravenous_frenzy.remains < 15.5",
+								["action"] = "celestial_alignment",
 							}, -- [17]
 							{
 								["enabled"] = true,
@@ -33420,9 +33529,9 @@ HekiliDB = {
 							}, -- [18]
 							{
 								["enabled"] = true,
-								["action"] = "empower_bond",
 								["description"] = "Use Empower Bond on cd with Starfall up and save for Pulsar and CA/Inc",
 								["criteria"] = "( cooldown.ca_inc.remains + buff.ca_inc.duration + runeforge.primordial_arcanic_pulsar.enabled * 12 > cooldown.empower_bond.duration + 10 ) || buff.ca_inc.remains > 8",
+								["action"] = "empower_bond",
 							}, -- [19]
 							{
 								["enabled"] = true,
@@ -33433,21 +33542,21 @@ HekiliDB = {
 							}, -- [20]
 							{
 								["enabled"] = true,
-								["action"] = "fury_of_elune",
 								["description"] = "Use FoE if inside an Eclipse and line it up with a Pulsar proc and Adaptive Swarm",
 								["criteria"] = "eclipse.in_any & ( ap_check || ! runeforge.primordial_arcanic_pulsar.enabled ) & ( buff.primordial_arcanic_pulsar.value < 250 || buff.ca_inc.remains > 8 ) & ( dot.adaptive_swarm_damage.ticking || ! covenant.necrolord || spell_targets > 2 ) & ( buff.ravenous_frenzy.remains < 9 - ( 4 * runeforge.sinful_hysteria.enabled ) & buff.ravenous_frenzy.up || ! buff.ravenous_frenzy.up ) & ( ! cooldown.ca_inc.up || buff.thrill_seeker.stack < 15 & fight_remains < 200 & fight_remains > 100 || ! soulbind.thrill_seeker.enabled ) & ( soulbind.thrill_seeker.enabled || cooldown.ca_inc.remains > 30 ) & target.time_to_die > 5 || boss & fight_remains < 10",
+								["action"] = "fury_of_elune",
 							}, -- [21]
 							{
 								["enabled"] = true,
-								["action"] = "starfall",
 								["description"] = "Use a Starfall Oneth proc unless Starfall is already up or you are about to overcap AsP",
 								["criteria"] = "buff.oneths_perception.up & ( buff.starfall.refreshable || astral_power > 90 )",
+								["action"] = "starfall",
 							}, -- [22]
 							{
 								["enabled"] = true,
-								["action"] = "starfall",
 								["description"] = "Dump AsP before Convoke with Starfall and then Starsurge",
 								["criteria"] = "covenant.night_fae & ! talent.stellar_drift.enabled & ( variable.convoke_desync || cooldown.ca_inc.up || buff.ca_inc.up ) & cooldown.convoke_the_spirits.remains < gcd.max * ceil ( astral_power / variable.sf_cost ) & buff.starfall.remains < 4",
+								["action"] = "starfall",
 							}, -- [23]
 							{
 								["enabled"] = true,
@@ -33456,15 +33565,15 @@ HekiliDB = {
 							}, -- [24]
 							{
 								["enabled"] = true,
-								["action"] = "starsurge",
 								["description"] = "Use Starsurge with an Oneth proc or if you'd overcap AsP with your next cast. Also dump AsP at the end of the Venthyr buff if Starfall wouldn't fall off or you are on 2 targets",
 								["criteria"] = "buff.oneths_clear_vision.up || ( ! starfire.ap_check & ! variable.ignore_starsurge || ( buff.ca_inc.remains < 5 & buff.ca_inc.up || ( ( buff.ca_inc.remains < gcd.max * ceil ( astral_power / variable.ss_cost ) & buff.ca_inc.up || buff.ravenous_frenzy_sinful_hysteria.remains < gcd.max * ceil ( astral_power / variable.ss_cost ) & buff.ravenous_frenzy_sinful_hysteria.up ) & covenant.venthyr ) ) & ( spell_targets.starfall < 3 || variable.starfall_wont_fall_off ) ) & ! variable.ignore_starsurge & ( ! runeforge.timeworn_dreambinder.enabled || spell_targets.starfall < 3 )",
+								["action"] = "starsurge",
 							}, -- [25]
 							{
 								["enabled"] = true,
-								["action"] = "new_moon",
 								["description"] = "Use Moons in Solar Eclipse and save Full Moon for CA/Inc",
 								["criteria"] = "( buff.eclipse_solar.remains > execute_time || ( charges = 2 & recharge_time < 5 ) || charges = 3 ) & ap_check",
+								["action"] = "new_moon",
 							}, -- [26]
 							{
 								["enabled"] = true,
@@ -33491,9 +33600,9 @@ HekiliDB = {
 							}, -- [30]
 							{
 								["enabled"] = true,
-								["action"] = "wrath",
 								["description"] = "On 2 targets without Soul of the Forest you should fill with Wrath during Inc",
 								["criteria"] = "! buff.ravenous_frenzy.up & ! buff.ravenous_frenzy_sinful_hysteria.up & ! talent.soul_of_the_forest.enabled & spell_targets.starfire < 3 & buff.eclipse_solar.remains > execute_time & fight_remains > buff.ca_inc.remains + 12 * runeforge.primordial_arcanic_pulsar.enabled",
+								["action"] = "wrath",
 							}, -- [31]
 							{
 								["enabled"] = true,
@@ -33505,9 +33614,9 @@ HekiliDB = {
 							}, -- [32]
 							{
 								["enabled"] = true,
-								["action"] = "wrath",
 								["description"] = "Use Wrath in Solar Eclipse or if no Starfire will fit into CA/Inc anymore",
 								["criteria"] = "( eclipse.lunar_next || eclipse.any_next & variable.is_cleave ) & ( target.time_to_die > 4 || eclipse.lunar_in_2 || boss & fight_remains < 10 ) || buff.eclipse_solar.remains < action.starfire.execute_time & buff.eclipse_solar.up || eclipse.in_solar & ! variable.starfire_in_solar || buff.ca_inc.remains < action.starfire.execute_time & ! variable.is_cleave & buff.ca_inc.remains < execute_time & buff.ca_inc.up || buff.ravenous_frenzy.up & variable.wrath_in_frenzy || ! variable.is_cleave & buff.ca_inc.remains > execute_time",
+								["action"] = "wrath",
 							}, -- [33]
 							{
 								["enabled"] = true,
@@ -33524,9 +33633,9 @@ HekiliDB = {
 						["fallthru"] = {
 							{
 								["enabled"] = true,
-								["action"] = "starsurge",
 								["description"] = "Starsurge for movement unless using BoAT",
 								["criteria"] = "! runeforge.balance_of_all_things.equipped",
+								["action"] = "starsurge",
 							}, -- [1]
 							{
 								["enabled"] = true,
@@ -33550,21 +33659,21 @@ HekiliDB = {
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["action"] = "convoke_the_spirits",
 								["description"] = "Uses Convoke if CA/Inc is up or you are desyncing CA/Inc with Convoke and you are below 40/30(Celestial Spirits) AsP in a 10+ sec Eclipse. Also don't let Dreambinder expire, always use in CA/Inc with Pulsar and at the start of a BoAT window.",
 								["criteria"] = "! druid.no_cds & ( ( variable.convoke_desync & ! cooldown.ca_inc.ready & ! runeforge.primordial_arcanic_pulsar.enabled || buff.ca_inc.up & ( ! runeforge.primordial_arcanic_pulsar.enabled || runeforge.celestial_spirits.enabled || fight_remains > 127 || fight_remains < cooldown.ca_inc.remains + 10 || buff.ca_inc.remains > 12 ) ) & ( ( astral_power <= variable.convoke_asp & ( buff.eclipse_lunar.remains > 10 || buff.eclipse_solar.remains > 10 ) || buff.ca_inc.remains + 2 * 12 * runeforge.primordial_arcanic_pulsar.enabled > 63 || buff.ca_inc.remains > 3 & buff.ca_inc.remains <= 12 ) & ( ! runeforge.timeworn_dreambinder.enabled || ! runeforge.celestial_spirits.enabled || buff.timeworn_dreambinder.remains > execute_time ) || runeforge.balance_of_all_things.enabled ) & ( ! runeforge.balance_of_all_things.enabled || ( buff.balance_of_all_things_nature.stack = 8 || buff.balance_of_all_things_arcane.stack = 8 ) ) || boss & fight_remains < 10 & ! cooldown.ca_inc.ready )",
+								["action"] = "convoke_the_spirits",
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["action"] = "starsurge",
 								["description"] = "Use Starsurge to keep up the Dreambinder buff if it would expire before finishing the next cast or to dump before Convoke",
 								["criteria"] = "runeforge.timeworn_dreambinder.enabled & ( ! ( ( buff.timeworn_dreambinder.remains > action.wrath.execute_time + 0.1 & ( eclipse.in_both || eclipse.in_solar || eclipse.lunar_next ) || buff.timeworn_dreambinder.remains > action.starfire.execute_time + 0.1 & ( eclipse.in_lunar || eclipse.solar_next || eclipse.any_next ) ) || ! buff.timeworn_dreambinder.up ) || ( buff.ca_inc.up || variable.convoke_desync ) & cooldown.convoke_the_spirits.ready & covenant.night_fae & ( buff.eclipse_lunar.remains > 10 || buff.eclipse_solar.remains > 10 ) ) & ( ! covenant.kyrian || cooldown.empower_bond.remains > 8 )",
+								["action"] = "starsurge",
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["action"] = "starsurge",
 								["description"] = "Dump Starsurges with Balance of All Things or to prepare for Convoke with BoAT",
 								["criteria"] = "runeforge.balance_of_all_things.enabled & ( ( buff.balance_of_all_things_nature.stack > 2 || buff.balance_of_all_things_arcane.stack > 2 ) & cooldown.ca_inc.remains > 7 & ! cooldown.convoke_the_spirits.up || ( covenant.night_fae & cooldown.convoke_the_spirits.remains < 10 & eclipse.in_any & astral_power > 20 + 30 * cooldown.ca_inc.ready ) )",
+								["action"] = "starsurge",
 							}, -- [4]
 							{
 								["enabled"] = true,
@@ -33603,15 +33712,15 @@ HekiliDB = {
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["action"] = "force_of_nature",
 								["description"] = "Use FoN on cd without capping",
 								["criteria"] = "ap_check",
+								["action"] = "force_of_nature",
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["action"] = "empower_bond",
 								["description"] = "Use Empower Bond with any long enough lasting Eclipse and try to line it up with Pulsar and CA/Inc",
 								["criteria"] = "( cooldown.ca_inc.remains + buff.ca_inc.duration + runeforge.primordial_arcanic_pulsar.enabled * 12 > cooldown.empower_bond.duration + 10 ) || buff.ca_inc.remains > 8",
+								["action"] = "empower_bond",
 							}, -- [11]
 							{
 								["enabled"] = true,
@@ -33631,9 +33740,9 @@ HekiliDB = {
 							}, -- [13]
 							{
 								["enabled"] = true,
-								["action"] = "ravenous_frenzy",
 								["description"] = "Use Frenzy with CA/Inc unless Frenzy would last longer than CA/Inc, then use before",
 								["criteria"] = "buff.ca_inc.remains > 15 || buff.ca_inc.duration < 27 + runeforge.primordial_arcanic_pulsar.enabled * 12 & variable.cd_condition_st",
+								["action"] = "ravenous_frenzy",
 							}, -- [14]
 							{
 								["enabled"] = true,
@@ -33655,9 +33764,9 @@ HekiliDB = {
 							}, -- [17]
 							{
 								["enabled"] = true,
-								["action"] = "fury_of_elune",
 								["description"] = "Uses FoE if in an Eclipse and tries to line it up with Pulsar, CA/Inc, Empower Bond and Adaptive Swarm",
 								["criteria"] = "eclipse.in_any & ( astral_power < 92 - buff.fury_of_elune.stack * 5 || buff.ravenous_frenzy.up ) & ( buff.primordial_arcanic_pulsar.value < 240 || buff.ca_inc.remains > 8 ) & variable.save_for_ca_inc & ( ! covenant.necrolord || dot.adaptive_swarm_damage.ticking ) & ( ! covenant.venthyr || buff.ravenous_frenzy.remains < 9 - ( 4 * runeforge.sinful_hysteria.enabled ) & buff.ravenous_frenzy.up || ! buff.ravenous_frenzy.up ) & ( ! covenant.kyrian || cooldown.empower_bond.remains > 20 ) & target.time_to_die > 5 || boss & fight_remains < 10",
+								["action"] = "fury_of_elune",
 							}, -- [18]
 							{
 								["enabled"] = true,
@@ -33668,9 +33777,9 @@ HekiliDB = {
 							}, -- [19]
 							{
 								["enabled"] = true,
-								["action"] = "starfall",
 								["description"] = "Use Oneth Starfall procs if Starfall isn't up",
 								["criteria"] = "buff.oneths_perception.up & buff.starfall.refreshable",
+								["action"] = "starfall",
 							}, -- [20]
 							{
 								["buff_name"] = "starlord",
@@ -33689,21 +33798,21 @@ HekiliDB = {
 							}, -- [22]
 							{
 								["enabled"] = true,
-								["action"] = "starfall",
 								["description"] = "Use Starfall with Stellar Drift or t28 4pc and no Starlord, when no Starfall is up or to proc Pulsar when above 90 AsP(or the early Pulsar proc variable is true) or adpative swarm has 8+secs remaining or is in flight",
 								["criteria"] = "( talent.stellar_drift.enabled || set_bonus.tier28_4pc ) & ! talent.starlord.enabled & buff.starfall.refreshable & ! runeforge.timeworn_dreambinder.enabled & ( buff.primordial_arcanic_pulsar.value >= 250 & ! buff.ca_inc.up & ( variable.asp_dump || buff.kindred_empowerment_energize.up || variable.proc_pulsar_early ) || ( covenant.necrolord & talent.stellar_drift.enabled & ( dot.adaptive_swarm_damage.remains > 8 || action.adaptive_swarm_damage.in_flight ) ) ) & ( cooldown.ca_inc.remains > 10 || cooldown.convoke_the_spirits.remains > 10 )",
+								["action"] = "starfall",
 							}, -- [23]
 							{
 								["enabled"] = true,
-								["action"] = "starsurge",
 								["description"] = "Dumps AsP before Convoke using the Convoke condition to check if Convoke is actually about to be cast",
 								["criteria"] = "variable.proc_pulsar_early",
+								["action"] = "starsurge",
 							}, -- [24]
 							{
 								["enabled"] = true,
-								["action"] = "new_moon",
 								["description"] = "Use Moons when you are about to/are capping charges and make sure they are in an Eclipse still for HM/FM",
 								["criteria"] = "ap_check & ( charges = 2 & recharge_time < 5 || charges = 3 )",
+								["action"] = "new_moon",
 							}, -- [25]
 							{
 								["enabled"] = true,
@@ -33717,15 +33826,15 @@ HekiliDB = {
 							}, -- [27]
 							{
 								["enabled"] = true,
-								["action"] = "starsurge",
 								["description"] = "Use Starsurge Oneth procs and dump AsP when CA/Inc, Empower Bond, the Venthyr buff is about to fall off or you'd cap AsP",
 								["criteria"] = "eclipse.in_any & ( buff.oneths_clear_vision.up || buff.kindred_empowerment_energize.up || buff.ca_inc.up & ( ! covenant.kyrian || cooldown.empower_bond.remains > 5 || buff.ca_inc.remains < gcd.max * floor ( astral_power / variable.ss_cost ) ) & ( ! covenant.venthyr || buff.ravenous_frenzy.remains < gcd.max * ceil ( ( astral_power + 40 * talent.fury_of_elune.enabled ) / variable.ss_cost ) + 3 * talent.new_moon.enabled & ! runeforge.sinful_hysteria.enabled & buff.ravenous_frenzy.up || buff.ravenous_frenzy_sinful_hysteria.up || ( buff.ravenous_frenzy.remains < action.starfire.execute_time & spell_haste < 0.4 || buff.ravenous_frenzy.remains < action.wrath.execute_time || buff.primordial_arcanic_pulsar.value >= 210 & ( astral_power > variable.ss_cost * 2 - 5 || buff.ravenous_frenzy.remains > 2 ) & buff.ravenous_frenzy.remains < 6 || variable.iqd_condition & cooldown.inscrutable_quantum_device.ready & equipped.inscrutable_quantum_device ) & buff.ravenous_frenzy.up || ! buff.ravenous_frenzy.up & ! cooldown.ravenous_frenzy.ready ) || variable.asp_dump || boss & fight_remains < gcd.max * ceil ( astral_power / variable.ss_cost ) )",
+								["action"] = "starsurge",
 							}, -- [28]
 							{
 								["enabled"] = true,
-								["action"] = "starsurge",
 								["description"] = "Try to make the best of Starlord by stacking it up quickly in any Eclipse but Pulsar isn't about to be procced",
 								["criteria"] = "talent.starlord.enabled & ! runeforge.timeworn_dreambinder.enabled & ( buff.starlord.up || astral_power > 90 ) & buff.starlord.stack < 3 & ( buff.eclipse_solar.up || buff.eclipse_lunar.up ) & buff.primordial_arcanic_pulsar.value < 270 & ( cooldown.ca_inc.remains > 10 || ! variable.convoke_desync & covenant.night_fae )",
+								["action"] = "starsurge",
 							}, -- [29]
 							{
 								["enabled"] = true,
@@ -33737,15 +33846,15 @@ HekiliDB = {
 							}, -- [30]
 							{
 								["enabled"] = true,
-								["action"] = "starsurge",
 								["description"] = "Dump Starsurge in an Eclipse as soon as possible as long as you will end up with 80+ when entering the next Eclipse, don't let it proc Pulsar, don't overwrite an Oneth proc and pool before CA/Inc and Empower Bond",
 								["criteria"] = "! runeforge.timeworn_dreambinder.enabled & ( buff.primordial_arcanic_pulsar.value < 270 || buff.primordial_arcanic_pulsar.value < 250 & talent.stellar_drift.enabled ) & ( eclipse.in_solar & astral_power + variable.aspPerSec * buff.eclipse_solar.remains + dot.fury_of_elune.ticks_remain * 2.5 > 80 || eclipse.in_lunar & astral_power + variable.aspPerSec * buff.eclipse_lunar.remains + dot.fury_of_elune.ticks_remain * 2.5 > 90 ) & ! buff.oneths_perception.up & ! talent.starlord.enabled & ( cooldown.ca_inc.remains > 7 || soulbind.thrill_seeker.enabled & buff.thrill_seeker.stack < 33 - ( runeforge.sinful_hysteria.enabled * 2 ) & fight_remains > 100 & fight_remains < 200 ) & ( ! covenant.kyrian || cooldown.empower_bond.remains > 2 )",
+								["action"] = "starsurge",
 							}, -- [31]
 							{
 								["enabled"] = true,
-								["action"] = "new_moon",
 								["description"] = "Use Moons in any Eclipse and save Half+Full Moon for CA/Inc and Kindred Empowerment. Also use NM and FM at the end of Frenzy and don't let Dreambinder fall off",
 								["criteria"] = "ap_check & variable.save_for_ca_inc & ( buff.eclipse_lunar.remains > execute_time || buff.eclipse_solar.remains > execute_time )",
+								["action"] = "new_moon",
 							}, -- [32]
 							{
 								["enabled"] = true,
@@ -33764,9 +33873,9 @@ HekiliDB = {
 							}, -- [35]
 							{
 								["enabled"] = true,
-								["action"] = "starfire",
 								["description"] = "Use Starfire to proc Solar Eclipse, CA/Inc has less time than a Wrath execute left or only Lunar Eclipse is up. With T28 2pc enter a Solar Eclipse if Pulsar still has less than 210 stacks and CA/Inc and Convoke have more than 17s CD remaining. Use above 250% haste during Frenzy and 222% haste without Frenzy",
 								["criteria"] = "eclipse.in_lunar & ! buff.ravenous_frenzy.up || eclipse.solar_next || ( eclipse.any_next || buff.ca_inc.remains < action.wrath.execute_time & buff.ca_inc.up ) & ( ! set_bonus.tier28_2pc || runeforge.primordial_arcanic_pulsar.enabled & buff.primordial_arcanic_pulsar.value < 210 & cooldown.ca_inc.remains > 17 & ( ! covenant.night_fae || cooldown.convoke_the_spirits.remains > 17 ) & ( ! race.troll || cooldown.berserking.remains > 17 ) ) || eclipse.in_any & ( buff.warrior_of_elune.up || spell_haste < 0.45 & ( ! covenant.venthyr || ! buff.ravenous_frenzy.up ) || covenant.venthyr & spell_haste < 0.4 )",
+								["action"] = "starfire",
 							}, -- [36]
 							{
 								["enabled"] = true,
@@ -33858,9 +33967,9 @@ HekiliDB = {
 							}, -- [12]
 							{
 								["enabled"] = true,
-								["action"] = "jotungeirr_destinys_call",
 								["criteria"] = "covenant.venthyr",
 								["name"] = "jotungeirr_destinys_call",
+								["action"] = "jotungeirr_destinys_call",
 							}, -- [13]
 							{
 								["enabled"] = true,
@@ -34024,9 +34133,9 @@ HekiliDB = {
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["action"] = "jotungeirr_destinys_call",
 								["criteria"] = "! buff.prowl.up & ! covenant.venthyr",
 								["name"] = "jotungeirr_destinys_call",
+								["action"] = "jotungeirr_destinys_call",
 							}, -- [2]
 							{
 								["enabled"] = true,
@@ -34590,39 +34699,39 @@ HekiliDB = {
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["action"] = "lurkers_insidious_gift",
 								["criteria"] = "cooldown.trueshot.remains_guess < 15 || time_to_die < 30",
 								["name"] = "lurkers_insidious_gift",
+								["action"] = "lurkers_insidious_gift",
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["action"] = "azsharas_font_of_power",
 								["criteria"] = "( time_to_die > action_cooldown + 34 || target.health.pct < 20 || target.time_to_pct_20 < 15 ) & cooldown.trueshot.remains_guess < 15 || time_to_die < 35",
 								["name"] = "azsharas_font_of_power",
+								["action"] = "azsharas_font_of_power",
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["action"] = "lustrous_golden_plumage",
 								["criteria"] = "cooldown.trueshot.remains_guess < 5 || time_to_die < 20",
 								["name"] = "lustrous_golden_plumage",
+								["action"] = "lustrous_golden_plumage",
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["action"] = "galecallers_boon",
 								["criteria"] = "prev_gcd.1.trueshot || ! talent.calling_the_shots.enabled || time_to_die < 10",
 								["name"] = "galecallers_boon",
+								["action"] = "galecallers_boon",
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["action"] = "ashvanes_razor_coral",
 								["criteria"] = "prev_gcd.1.trueshot & ( buff.guardian_of_azeroth.up || ! essence.condensed_lifeforce.major & ca_execute ) || debuff.razor_coral_debuff.down || time_to_die < 20",
 								["name"] = "ashvanes_razor_coral",
+								["action"] = "ashvanes_razor_coral",
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["action"] = "cyclotronic_blast",
 								["criteria"] = "! buff.trueshot.up & ! essence.blood_of_the_enemy.major || debuff.blood_of_the_enemy.up || time_to_die < 5",
 								["name"] = "pocketsized_computation_device",
+								["action"] = "cyclotronic_blast",
 							}, -- [7]
 							{
 								["enabled"] = true,
@@ -34910,15 +35019,15 @@ HekiliDB = {
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["action"] = "azsharas_font_of_power",
 								["criteria"] = "cooldown.aspect_of_the_wild.remains_guess < 15 & time_to_die > 10",
 								["name"] = "azsharas_font_of_power",
+								["action"] = "azsharas_font_of_power",
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["action"] = "ashvanes_razor_coral",
 								["criteria"] = "debuff.razor_coral_debuff.up & ( ! equipped.azsharas_font_of_power || cooldown.azsharas_font_of_power.remains > 86 || essence.blood_of_the_enemy.major ) & ( prev_gcd.1.aspect_of_the_wild || ! equipped.cyclotronic_blast & buff.aspect_of_the_wild.remains > 9 ) & ( ! essence.condensed_lifeforce.major || buff.guardian_of_azeroth.up ) & ( target.health.pct < 35 || ! essence.condensed_lifeforce.major || ! talent.killer_instinct.enabled ) || ( debuff.razor_coral_debuff.down || time_to_die < 26 ) & time_to_die > ( 24 * ( cooldown.cyclotronic_blast.remains + 4 < time_to_die ) )",
 								["name"] = "ashvanes_razor_coral",
+								["action"] = "ashvanes_razor_coral",
 							}, -- [4]
 							{
 								["enabled"] = true,
@@ -35800,15 +35909,15 @@ HekiliDB = {
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["action"] = "ashvanes_razor_coral",
 								["criteria"] = "equipped.dribbling_inkpod & ( debuff.razor_coral_debuff.down || time_to_pct_30 < 1 || ( health.pct < 30 & buff.guardian_of_azeroth.up || buff.memory_of_lucid_dreams.up ) ) || ( ! equipped.dribbling_inkpod & ( buff.memory_of_lucid_dreams.up || buff.guardian_of_azeroth.up & cooldown.guardian_of_azeroth.remains > 175 ) || debuff.razor_coral_debuff.down ) || time_to_die < 20",
 								["name"] = "ashvanes_razor_coral",
+								["action"] = "ashvanes_razor_coral",
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["action"] = "galecallers_boon",
 								["criteria"] = "cooldown.memory_of_lucid_dreams.remains || talent.wildfire_infusion.enabled & cooldown.coordinated_assault.remains || ! essence.memory_of_lucid_dreams.major & cooldown.coordinated_assault.remains",
 								["name"] = "galecallers_boon",
+								["action"] = "galecallers_boon",
 							}, -- [9]
 							{
 								["enabled"] = true,
@@ -36266,9 +36375,9 @@ HekiliDB = {
 							}, -- [17]
 							{
 								["enabled"] = true,
-								["criteria"] = "time_to_die < 20 || ! debuff.razor_coral_debuff.up || ( target.time_to_pct_30 < 5 & debuff.conductive_ink_debuff.up ) || ( ! debuff.conductive_ink_debuff.up & buff.memory_of_lucid_dreams.up || prev_gcd.2.guardian_of_azeroth || prev_gcd.2.recklessness & ( ! essence.memory_of_lucid_dreams.major & ! essence.condensed_lifeforce.major ) )",
 								["name"] = "ashvanes_razor_coral",
 								["action"] = "ashvanes_razor_coral",
+								["criteria"] = "time_to_die < 20 || ! debuff.razor_coral_debuff.up || ( target.time_to_pct_30 < 5 & debuff.conductive_ink_debuff.up ) || ( ! debuff.conductive_ink_debuff.up & buff.memory_of_lucid_dreams.up || prev_gcd.2.guardian_of_azeroth || prev_gcd.2.recklessness & ( ! essence.memory_of_lucid_dreams.major & ! essence.condensed_lifeforce.major ) )",
 							}, -- [18]
 							{
 								["enabled"] = true,
@@ -36548,15 +36657,15 @@ HekiliDB = {
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["criteria"] = "debuff.razor_coral_debuff.stack = 0",
 								["name"] = "ashvanes_razor_coral",
 								["action"] = "ashvanes_razor_coral",
+								["criteria"] = "debuff.razor_coral_debuff.stack = 0",
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["criteria"] = "debuff.razor_coral_debuff.stack > 7 & ( cooldown.avatar.remains < 5 || buff.avatar.up )",
 								["name"] = "ashvanes_razor_coral",
 								["action"] = "ashvanes_razor_coral",
+								["criteria"] = "debuff.razor_coral_debuff.stack > 7 & ( cooldown.avatar.remains < 5 || buff.avatar.up )",
 							}, -- [7]
 							{
 								["action"] = "dragon_roar",
@@ -36573,9 +36682,9 @@ HekiliDB = {
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.avatar.down || cooldown.shield_slam.remains >= 4",
 								["name"] = "grongs_primal_rage",
 								["action"] = "grongs_primal_rage",
+								["criteria"] = "buff.avatar.down || cooldown.shield_slam.remains >= 4",
 							}, -- [11]
 							{
 								["action"] = "ravager",
@@ -36625,9 +36734,9 @@ HekiliDB = {
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.avatar.down || cooldown.thunder_clap.remains >= 4",
 								["name"] = "grongs_primal_rage",
 								["action"] = "grongs_primal_rage",
+								["criteria"] = "buff.avatar.down || cooldown.thunder_clap.remains >= 4",
 							}, -- [7]
 							{
 								["action"] = "ravager",
@@ -36802,15 +36911,15 @@ HekiliDB = {
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["criteria"] = "! debuff.razor_coral_debuff.up || ( ( target.health.pct < 20.1 || talent.massacre.enabled & target.health.pct < 35.1 ) & ( buff.memory_of_lucid_dreams.up & ( cooldown.memory_of_lucid_dreams.remains < 106 || cooldown.memory_of_lucid_dreams.remains < 117 & fight_remains < 20 & ! talent.massacre.enabled ) || buff.guardian_of_azeroth.up & debuff.colossus_smash.up ) ) || essence.condensed_lifeforce.major & target.health.pct < 20 || ( target.health.pct < 30.1 & debuff.conductive_ink_debuff.up & ! essence.memory_of_lucid_dreams.major & ! essence.condensed_lifeforce.major ) || ( ! debuff.conductive_ink_debuff.up & ! essence.memory_of_lucid_dreams.major & ! essence.condensed_lifeforce.major & debuff.colossus_smash.up )",
 								["name"] = "ashvanes_razor_coral",
 								["action"] = "ashvanes_razor_coral",
+								["criteria"] = "! debuff.razor_coral_debuff.up || ( ( target.health.pct < 20.1 || talent.massacre.enabled & target.health.pct < 35.1 ) & ( buff.memory_of_lucid_dreams.up & ( cooldown.memory_of_lucid_dreams.remains < 106 || cooldown.memory_of_lucid_dreams.remains < 117 & fight_remains < 20 & ! talent.massacre.enabled ) || buff.guardian_of_azeroth.up & debuff.colossus_smash.up ) ) || essence.condensed_lifeforce.major & target.health.pct < 20 || ( target.health.pct < 30.1 & debuff.conductive_ink_debuff.up & ! essence.memory_of_lucid_dreams.major & ! essence.condensed_lifeforce.major ) || ( ! debuff.conductive_ink_debuff.up & ! essence.memory_of_lucid_dreams.major & ! essence.condensed_lifeforce.major & debuff.colossus_smash.up )",
 							}, -- [11]
 							{
 								["enabled"] = true,
-								["criteria"] = "time_to_die < 70 & ( cooldown.colossus_smash.remains < 12 || ( talent.warbreaker.enabled & cooldown.warbreaker.remains < 12 ) ) || ! debuff.colossus_smash.up & ! buff.test_of_might.up & ! buff.memory_of_lucid_dreams.up & time_to_die > 150",
 								["name"] = "azsharas_font_of_power",
 								["action"] = "azsharas_font_of_power",
+								["criteria"] = "time_to_die < 70 & ( cooldown.colossus_smash.remains < 12 || ( talent.warbreaker.enabled & cooldown.warbreaker.remains < 12 ) ) || ! debuff.colossus_smash.up & ! buff.test_of_might.up & ! buff.memory_of_lucid_dreams.up & time_to_die > 150",
 							}, -- [12]
 							{
 								["enabled"] = true,
@@ -36927,15 +37036,15 @@ HekiliDB = {
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["potion"] = "potion_of_unbridled_fury",
 								["action"] = "potion",
 								["criteria"] = "essence.condensed_lifeforce.major",
+								["potion"] = "potion_of_unbridled_fury",
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["potion"] = "potion_of_focused_resolve",
 								["action"] = "potion",
 								["criteria"] = "essence.memory_of_lucid_dreams.major",
+								["potion"] = "potion_of_focused_resolve",
 							}, -- [6]
 							{
 								["action"] = "potion",
@@ -37185,15 +37294,15 @@ HekiliDB = {
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["action"] = "void_eruption",
 								["description"] = "Use Void Eruption on cooldown pooling at least 25 insanity (or 40 for Blood Elf on opener) but not if you will overcap insanity in VF. Make sure Shadowfiend/Mindbender and Mind Blast is on cooldown before VE if Shadowflame is equipped. Ignore pooling restrictions if using Shadowflame Prism and Bender is out.",
 								["criteria"] = "variable.pool_for_cds & ( insanity >= 25 + ( 15 * ( race.blood_elf & time < 30 ) ) || pet.fiend.active & runeforge.shadowflame_prism.equipped & ! cooldown.mind_blast.up & ! cooldown.shadow_word_death.up ) & ( insanity <= 85 || talent.searing_nightmare.enabled & variable.searing_nightmare_cutoff ) & ! cooldown.fiend.up & ( ! soulbind.volatile_solvent.enabled || buff.volatile_solvent.up || settings.ignore_solvent )",
+								["action"] = "void_eruption",
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["action"] = "shadow_word_pain",
 								["description"] = "Make sure you put up SW:P ASAP on the target if Wrathful Faerie isn't active when fighting 1-3 targets.",
 								["criteria"] = "buff.fae_guardians.up & ! debuff.wrathful_faerie.up & spell_targets.mind_sear < 4",
+								["action"] = "shadow_word_pain",
 							}, -- [4]
 							{
 								["enabled"] = true,
@@ -37222,39 +37331,39 @@ HekiliDB = {
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["action"] = "shadow_word_death",
 								["description"] = "Use Shadow Word Death if using Shadowflame Prism and bender will expire during the next gcd.",
 								["criteria"] = "pet.fiend.active & runeforge.shadowflame_prism.equipped & pet.fiend.remains <= gcd & spell_targets.mind_sear <= 7",
+								["action"] = "shadow_word_death",
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["action"] = "mind_blast",
 								["description"] = "Always use mindblasts if capped and hungering void is up and using Shadowflame Prism and bender is up.  Additionally, cast mindblast if you would be unable to get the rift by waiting a gcd.",
 								["criteria"] = "( cooldown.mind_blast.charges > 1 & ( debuff.hungering_void.up || ! talent.hungering_void.enabled ) || pet.fiend.remains <= cast_time + gcd ) & pet.fiend.active & runeforge.shadowflame_prism.equipped & pet.fiend.remains > cast_time & spell_targets.mind_sear <= 7 || buff.dark_thought.up & buff.voidform.up & ! cooldown.void_bolt.up & ( ! runeforge.shadowflame_prism.equipped || ! pet.fiend.active ) & set_bonus.tier28_4pc",
+								["action"] = "mind_blast",
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["action"] = "void_bolt",
 								["description"] = "Use Void Bolt at higher priority with Hungering Void up to 4 targets, or other talents on ST.",
 								["criteria"] = "insanity <= 85 & talent.hungering_void.enabled & talent.searing_nightmare.enabled & spell_targets.mind_sear <= 6 || ( ( talent.hungering_void.enabled & ! talent.searing_nightmare.enabled ) || spell_targets.mind_sear = 1 )",
+								["action"] = "void_bolt",
 							}, -- [11]
 							{
 								["enabled"] = true,
-								["action"] = "devouring_plague",
 								["description"] = "Special Devouring Plague with Searing Nightmare when usage during Cooldowns",
 								["criteria"] = "( set_bonus.tier28_4pc || talent.hungering_void.enabled ) & talent.searing_nightmare.enabled & pet.fiend.active & runeforge.shadowflame_prism.equipped & buff.voidform.up & spell_targets.mind_sear <= 6",
+								["action"] = "devouring_plague",
 							}, -- [12]
 							{
 								["enabled"] = true,
-								["action"] = "devouring_plague",
 								["description"] = "Don't use Devouring Plague if you can get into Voidform instead, or if Searing Nightmare is talented and will hit enough targets.",
 								["criteria"] = "( refreshable || insanity > 75 || talent.void_torrent.enabled & cooldown.void_torrent.remains <= 3 * gcd ) & ( ! variable.pool_for_cds || insanity >= 85 ) & ( ! talent.searing_nightmare.enabled || ( talent.searing_nightmare.enabled & ! variable.searing_nightmare_cutoff ) )",
+								["action"] = "devouring_plague",
 							}, -- [13]
 							{
 								["enabled"] = true,
-								["action"] = "void_bolt",
 								["description"] = "Use VB on CD if you don't need to cast Devouring Plague, and there are less than 4 targets out (5 with conduit).",
 								["criteria"] = "spell_targets.mind_sear < ( 4 + conduit.dissonant_echoes.enabled ) & insanity <= 85 & talent.searing_nightmare.enabled || ! talent.searing_nightmare.enabled",
+								["action"] = "void_bolt",
 							}, -- [14]
 							{
 								["enabled"] = true,
@@ -37284,25 +37393,25 @@ HekiliDB = {
 							}, -- [18]
 							{
 								["enabled"] = true,
-								["action"] = "shadow_word_death",
 								["description"] = "Use SW:D with Painbreaker Psalm unless the target will be below 20% before the cooldown comes back.",
 								["criteria"] = "runeforge.painbreaker_psalm.equipped & variable.dots_up & target.time_to_pct_20 > ( cooldown.shadow_word_death.duration + gcd )",
+								["action"] = "shadow_word_death",
 							}, -- [19]
 							{
 								["enabled"] = true,
-								["action"] = "shadow_crash",
 								["description"] = "Use Shadow Crash on CD unless there are adds incoming.",
 								["criteria"] = "raid_event.adds.in > 10",
+								["action"] = "shadow_crash",
 							}, -- [20]
 							{
 								["enabled"] = true,
-								["criteria"] = "spell_targets.mind_sear > variable.mind_sear_cutoff & buff.dark_thought.up",
 								["description"] = "Use Mind Sear to consume Dark Thoughts procs on AOE. TODO Confirm is this is a higher priority than redotting on AOE unless dark thoughts is about to time out",
+								["action"] = "mind_sear",
 								["cycle_targets"] = 1,
 								["interrupt_if"] = "ticks>=4",
 								["interrupt_immediate"] = "1",
 								["chain"] = "1",
-								["action"] = "mind_sear",
+								["criteria"] = "spell_targets.mind_sear > variable.mind_sear_cutoff & buff.dark_thought.up",
 							}, -- [21]
 							{
 								["enabled"] = true,
@@ -37315,9 +37424,9 @@ HekiliDB = {
 							}, -- [22]
 							{
 								["enabled"] = true,
-								["action"] = "mind_blast",
 								["description"] = "Use Mind Blast if you don't need to refresh DoTs. Stop casting at 4 or more targets with Searing Nightmare talented and you are not using Shadowflame Prism or Psychic Link.spell_targets.mind_sear>?5 gets the minimum of 5 and the number of targets. Also, do not press mindblast until all targets are dotted with VT when using shadowflame prism if bender is available.",
 								["criteria"] = "variable.dots_up & raid_event.movement.in > cast_time + 0.5 & spell_targets.mind_sear < ( 4 + 2 * talent.misery.enabled + active_dot.vampiric_touch * talent.psychic_link.enabled + ( spell_targets.mind_sear >? 5 ) * ( pet.fiend.active & runeforge.shadowflame_prism.equipped ) ) & ( ! runeforge.shadowflame_prism.equipped || ! cooldown.fiend.up & runeforge.shadowflame_prism.equipped || variable.vts_applied )",
+								["action"] = "mind_blast",
 							}, -- [23]
 							{
 								["enabled"] = true,
@@ -37328,9 +37437,9 @@ HekiliDB = {
 							}, -- [24]
 							{
 								["enabled"] = true,
-								["action"] = "shadow_word_pain",
 								["description"] = "Special condition to stop casting SW:P on off-targets when fighting 3 or more stacked mobs and using Psychic Link and NOT Misery.",
 								["criteria"] = "refreshable & target.time_to_die > 4 & ! talent.misery.enabled & talent.psychic_link.enabled & spell_targets.mind_sear > 2",
+								["action"] = "shadow_word_pain",
 							}, -- [25]
 							{
 								["enabled"] = true,
@@ -37465,23 +37574,23 @@ HekiliDB = {
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["action"] = "architects_ingenuity_core",
 								["description"] = "Use this on CD for max CDR",
 								["name"] = "architects_ingenuity_core",
+								["action"] = "architects_ingenuity_core",
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["action"] = "use_items",
 								["description"] = "Default fallback for usable items: Use on cooldown in order by trinket slot.",
 								["criteria"] = "buff.voidform.up || buff.power_infusion.up || cooldown.void_eruption.remains > 10",
+								["action"] = "use_items",
 							}, -- [10]
 						},
 						["cds"] = {
 							{
 								["enabled"] = true,
-								["action"] = "power_infusion",
 								["description"] = "Use Power Infusion with Voidform. Hold for Voidform comes off cooldown in the next 10 seconds otherwise use on cd unless the player is part of the kyrian covenant, or if there will not be another Void Eruption this fight. Attempt to sync the last power infusion of the fight to void eruption for non Kyrians.",
 								["criteria"] = "priest.self_power_infusion & ( buff.voidform.up || ! covenant.kyrian & ! covenant.necrolord & cooldown.void_eruption.remains >= 10 || fight_remains < cooldown.void_eruption.remains ) & ( fight_remains >= cooldown.void_eruption.remains + 15 & cooldown.void_eruption.remains <= gcd * 4 || fight_remains > cooldown.power_infusion.duration || boss & fight_remains < cooldown.void_eruption.remains + 15 || covenant.kyrian || buff.bloodlust.up )",
+								["action"] = "power_infusion",
 							}, -- [1]
 							{
 								["enabled"] = true,
@@ -37492,9 +37601,9 @@ HekiliDB = {
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["action"] = "fae_guardians",
 								["description"] = "Use Fae Guardians on CD outside of Voidform. Use Fae Guardiands in Voidform if you have either Grove Invigoration or Field of Blossoms. Wait for dots to be up before activating Fae Guardians to maximise the buff.",
 								["criteria"] = "! buff.voidform.up & ( ! cooldown.void_torrent.up || ! talent.void_torrent.enabled ) & ( variable.dots_up & spell_targets.vampiric_touch = 1 || variable.vts_applied & spell_targets.vampiric_touch > 1 ) || buff.voidform.up & ( soulbind.grove_invigoration.enabled || soulbind.field_of_blossoms.enabled )",
+								["action"] = "fae_guardians",
 							}, -- [3]
 							{
 								["enabled"] = true,
@@ -37505,15 +37614,15 @@ HekiliDB = {
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["action"] = "unholy_nova",
 								["description"] = "Use Unholy Nova on CD, holding briefly to wait for power infusion or add spawns.",
 								["criteria"] = "! talent.hungering_void.enabled & variable.dots_up || debuff.hungering_void.up & buff.voidform.up || ( cooldown.void_eruption.remains > 10 || ! variable.pool_for_cds ) & ! buff.voidform.up",
+								["action"] = "unholy_nova",
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["action"] = "boon_of_the_ascended",
 								["description"] = "Use on CD but prioritise using Void Eruption first, if used inside of VF on ST use after a voidbolt for cooldown efficiency and for hungering void uptime if talented.",
 								["criteria"] = "! buff.voidform.up & ! cooldown.void_eruption.up & spell_targets.mind_sear > 1 & ! talent.searing_nightmare.enabled || ( buff.voidform.up & spell_targets.mind_sear < 2 & ! talent.searing_nightmare.enabled & ( prev_gcd.1.void_bolt & ( ! equipped.empyreal_ordnance || ! talent.hungering_void.enabled ) || equipped.empyreal_ordnance & cooldown.empyreal_ordnance.remains <= 162 & debuff.hungering_void.up ) ) || ( buff.voidform.up & talent.searing_nightmare.enabled )",
+								["action"] = "boon_of_the_ascended",
 							}, -- [6]
 							{
 								["enabled"] = true,
@@ -37534,9 +37643,9 @@ HekiliDB = {
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["action"] = "ascended_nova",
 								["description"] = "Only use Ascended Nova when not talented into Searing Nightmare on 2+ targets.",
 								["criteria"] = "spell_targets.ascended_nova > 1 & spell_targets.mind_sear > 1 & ! talent.searing_nightmare.enabled",
+								["action"] = "ascended_nova",
 							}, -- [2]
 						},
 						["default"] = {
@@ -37665,9 +37774,9 @@ HekiliDB = {
 							}, -- [18]
 							{
 								["enabled"] = true,
-								["action"] = "lights_judgment",
 								["description"] = "Use Light's Judgment if there are 2 or more targets, or adds aren't spawning for more than 75s.",
 								["criteria"] = "spell_targets.lights_judgment >= 2 || ( ! raid_event.adds.exists || raid_event.adds.in > 75 )",
+								["action"] = "lights_judgment",
 							}, -- [19]
 							{
 								["enabled"] = true,
@@ -37707,1443 +37816,1334 @@ HekiliDB = {
 				},
 			},
 		},
-		["Shimzo - Zul'jin"] = {
+		["Varlouris - Dalaran"] = {
 			["runOnce"] = {
+				["forceReloadAllDefaultPriorities_20220228"] = true,
 				["resetPotionsToDefaults_20190717"] = true,
-				["autoconvertDisplayToggle_20190621_1"] = true,
-				["enableAllOfTheThings_20180820"] = true,
-				["autoconvertDelaySweepToExtend_20190729"] = true,
-				["resetRogueMfDOption_20200226"] = true,
 				["autoconvertGlowsForCustomGlow_20190326"] = true,
+				["updateMaxRefreshToNewSpecOptions_20220222"] = true,
+				["forceReloadClassDefaultOptions_20220306_262"] = true,
+				["resetRogueMfDOption_20200226"] = true,
+				["autoconvertDelaySweepToExtend_20190729"] = true,
+				["forceEnableEnhancedRecheckBoomkin_20210712"] = true,
+				["forceEnableAllClassesOnceDueToBug_20220225"] = true,
+				["resetAllPotions_20201209"] = true,
+				["enableAllOfTheThings_20180820"] = true,
+				["resetGlobalCooldownSync_20210403"] = true,
+				["forceReloadClassDefaultOptions_20220306_263"] = true,
+				["autoconvertDisplayToggle_20190621_1"] = true,
 				["resetAberrantPackageDates_20190728_1"] = true,
 			},
 			["specs"] = {
-				[260] = {
-					["maxRefresh"] = 10,
-					["custom2Name"] = "Custom 2",
-					["throttleRefresh"] = false,
+				[263] = {
 					["settings"] = {
-						["mfd_waste"] = true,
+						["pad_lava_lash"] = true,
+						["pad_windstrike"] = true,
+						["filler_shock"] = true,
 					},
-					["aoe"] = 3,
-					["gcdSync"] = true,
-					["damageDots"] = false,
-					["damage"] = true,
-					["enabled"] = true,
-					["debuffPadding"] = 0,
-					["maxTime"] = 33,
-					["custom1Name"] = "Custom 1",
-					["package"] = "Outlaw",
-					["buffPadding"] = 0,
-					["nameplateRange"] = 8,
-					["cycle_min"] = 6,
-					["cycle"] = false,
-					["potion"] = "potion_of_unbridled_fury",
-					["nameplates"] = true,
 					["potionsReset"] = 20180919.1,
-					["damageExpiration"] = 6,
-					["throttleTime"] = false,
-					["damageRange"] = 0,
 				},
-				[261] = {
-					["maxRefresh"] = 10,
-					["custom2Name"] = "Custom 2",
-					["throttleRefresh"] = false,
+				[262] = {
 					["settings"] = {
-						["mfd_waste"] = true,
+						["funnel_damage"] = false,
+						["stack_buffer"] = 1.1,
 					},
-					["aoe"] = 2,
-					["gcdSync"] = true,
-					["damageDots"] = false,
-					["damage"] = true,
-					["enabled"] = true,
-					["debuffPadding"] = 0,
-					["maxTime"] = 33,
-					["custom1Name"] = "Custom 1",
-					["package"] = "Subtlety",
-					["buffPadding"] = 0,
-					["nameplateRange"] = 8,
-					["cycle_min"] = 6,
-					["cycle"] = false,
-					["potion"] = "potion_of_unbridled_fury",
-					["nameplates"] = true,
 					["potionsReset"] = 20180919.1,
-					["damageExpiration"] = 6,
-					["throttleTime"] = false,
-					["damageRange"] = 0,
 				},
-				[259] = {
-					["maxRefresh"] = 10,
-					["custom2Name"] = "Custom 2",
-					["throttleRefresh"] = false,
-					["settings"] = {
-						["mfd_waste"] = true,
-						["priority_rotation"] = false,
-						["envenom_pool_pct"] = 50,
-					},
-					["aoe"] = 3,
-					["gcdSync"] = true,
-					["damageDots"] = false,
-					["damage"] = true,
-					["enabled"] = true,
-					["debuffPadding"] = 0,
-					["maxTime"] = 33,
-					["custom1Name"] = "Custom 1",
-					["package"] = "Assassination",
-					["buffPadding"] = 0,
-					["nameplateRange"] = 8,
-					["cycle_min"] = 6,
-					["cycle"] = false,
-					["potion"] = "potion_of_unbridled_fury",
-					["nameplates"] = true,
-					["potionsReset"] = 20180919.1,
-					["damageExpiration"] = 6,
-					["throttleTime"] = false,
-					["damageRange"] = 0,
+				[102] = {
+					["enhancedRecheck"] = true,
 				},
 			},
 			["displays"] = {
+				["AOE"] = {
+					["rel"] = "CENTER",
+				},
+				["Primary"] = {
+					["y"] = -170,
+					["x"] = -344.9999084472656,
+					["rel"] = "CENTER",
+				},
+				["Defensives"] = {
+					["rel"] = "CENTER",
+					["x"] = -451.9997253417969,
+					["y"] = -170.0001220703125,
+				},
 				["Interrupts"] = {
+					["rel"] = "CENTER",
+					["x"] = -398.9998474121094,
+					["y"] = -170.0001220703125,
 				},
 			},
 			["packs"] = {
-				["Outlaw"] = {
-					["source"] = "https://github.com/simulationcraft/simc/",
+				["Enhancement"] = {
+					["source"] = "SimC",
 					["builtIn"] = true,
-					["date"] = 20200410,
-					["spec"] = 260,
-					["desc"] = "# Outlaw Rogue\n# https://github.com/simulationcraft/simc/\n# April 10, 2020\n\n# Changes:\n# - Added Kick to default action list.\n# - Added precombat Blade Flurry (doesn't break Stealth).\n# - Don't use trinkets in stealth.\n# - Don't use min:X for Marked for Death (it's not supported).\n# - Avoid rerolling RtB during Blade Flurry (unless we only have 1 target).\n# - Relax Killing Spree.\n# - Use time_to_die for encounter ending rather than target.time_to_die.\n# - Use RtB reroll logic and SnD refresh logic in the precombat action list.",
-					["profile"] = "# Outlaw Rogue\n# https://github.com/simulationcraft/simc/\n# April 10, 2020\n\n# Changes:\n# - Added Kick to default action list.\n# - Added precombat Blade Flurry (doesn't break Stealth).\n# - Don't use trinkets in stealth.\n# - Don't use min:X for Marked for Death (it's not supported).\n# - Avoid rerolling RtB during Blade Flurry (unless we only have 1 target).\n# - Relax Killing Spree.\n# - Use time_to_die for encounter ending rather than target.time_to_die.\n# - Use RtB reroll logic and SnD refresh logic in the precombat action list.\n\n# Executed before combat begins. Accepts non-harmful actions only.\n# actions.precombat=flask\n# actions.precombat+=/augmentation\n# actions.precombat+=/food\n# Snapshot raid buffed stats before combat begins and pre-potting is done.\n# actions.precombat+=/snapshot_stats\nactions.precombat+=/marked_for_death,precombat_seconds=5,if=raid_event.adds.in>40\nactions.precombat+=/stealth,if=(!equipped.pocketsized_computation_device||!cooldown.cyclotronic_blast.duration||raid_event.invulnerable.exists)\n# Reroll for 2+ or Grand Melee or Ruthless Precision.\nactions+=/variable,name=rtb_reroll,value=rtb_buffs<2&!buff.grand_melee.up&!buff.ruthless_precision.up\n# Reroll for 2+ buffs or Broadside with Deadshot.\nactions+=/variable,name=rtb_reroll,op=set,if=azerite.deadshot.enabled,value=rtb_buffs<2&(buff.loaded_dice.up||!buff.broadside.up)\n# Reroll for 2+ buffs or Ruthless Precision with Ace up your Sleeve, unless there are more Deadshot ranks.\nactions+=/variable,name=rtb_reroll,op=set,if=azerite.ace_up_your_sleeve.enabled&azerite.ace_up_your_sleeve.rank>=azerite.deadshot.rank,value=rtb_buffs<2&(buff.loaded_dice.up||buff.ruthless_precision.remains<=cooldown.between_the_eyes.remains)\n# 2+ Snake Eyes: Always reroll for 2+ buffs.\nactions+=/variable,name=rtb_reroll,op=set,if=azerite.snake_eyes.rank>=2,value=rtb_buffs<2\n# 2+ Snake Eyes: Do not reroll with 2+ stacks of the Snake Eyes buff (1+ stack with Broadside up).\nactions+=/variable,name=rtb_reroll,op=reset,if=azerite.snake_eyes.rank>=2&buff.snake_eyes.stack>=2-buff.broadside.up\n# With Blade Flurry up, ignore rules above and take everything that is 2+ (not counting SaC) or single BS, GM, RP\nactions+=/variable,name=rtb_reroll,op=set,if=buff.blade_flurry.up,value=rtb_buffs-buff.skull_and_crossbones.up<2&(buff.loaded_dice.up||!buff.grand_melee.up&!buff.ruthless_precision.up&!buff.broadside.up)\n# With Loaded Dice up, reroll any single buff, any 2 buff with Buried Treasure, or in pandemic.\nactions+=/variable,name=rtb_reroll,op=set,if=buff.loaded_dice.up,value=(rtb_buffs-buff.buried_treasure.up)<2||buff.roll_the_bones.remains<10.8+(1.8*talent.deeper_stratagem.enabled)\nactions.precombat+=/roll_the_bones,precombat_seconds=2,if=buff.roll_the_bones.remains<=3||variable.rtb_reroll\nactions.precombat+=/slice_and_dice,precombat_seconds=2,if=buff.slice_and_dice.remains<time_to_die&buff.slice_and_dice.remains<(1+combo_points)*1.8\nactions.precombat+=/adrenaline_rush,precombat_seconds=1,if=(!equipped.pocketsized_computation_device||!cooldown.cyclotronic_blast.duration||raid_event.invulnerable.exists)\nactions.precombat+=/use_item,name=azsharas_font_of_power\nactions.precombat+=/use_item,effect_name=cyclotronic_blast,if=!raid_event.invulnerable.exists\nactions.precombat+=/potion\n\n# Executed every time the actor is available.\n# Restealth if possible (no vulnerable enemies in combat)\nactions=kick,if=!stealthed.rogue\nactions=stealth\nactions+=/variable,name=ambush_condition,value=combo_points.deficit>=2+2*(talent.ghostly_strike.enabled&cooldown.ghostly_strike.remains<1)+buff.broadside.up&energy>60&!buff.skull_and_crossbones.up&!buff.keep_your_wits_about_you.up\nactions+=/variable,name=bte_condition,value=buff.ruthless_precision.up||(azerite.deadshot.enabled||azerite.ace_up_your_sleeve.enabled)&buff.roll_the_bones.up\n# With multiple targets, this variable is checked to decide whether some CDs should be synced with Blade Flurry\nactions+=/variable,name=blade_flurry_sync,value=spell_targets.blade_flurry<2&raid_event.adds.in>20||buff.blade_flurry.up\nactions+=/call_action_list,name=stealth,if=stealthed.all\nactions+=/call_action_list,name=cds\n# Finish at maximum CP. Substract one for each Broadside and Opportunity when Quick Draw is selected and MfD is not ready after the next second. Always max BtE with 2+ Ace.\nactions+=/run_action_list,name=finish,if=combo_points>=cp_max_spend-(buff.broadside.up+buff.opportunity.up)*(talent.quick_draw.enabled&(!talent.marked_for_death.enabled||cooldown.marked_for_death.remains>1))*(azerite.ace_up_your_sleeve.rank<2||!cooldown.between_the_eyes.up||!buff.roll_the_bones.up)\nactions+=/call_action_list,name=build\nactions+=/arcane_torrent,if=energy.deficit>=15+energy.regen\nactions+=/arcane_pulse\nactions+=/lights_judgment\nactions+=/bag_of_tricks\n\n# Builders\n# Use Pistol Shot if it won't cap combo points and the Opportunity buff is up. Avoid using when Keep Your Wits stacks are high or when using Weaponmaster, unless the Deadshot buff is up.\nactions.build=pistol_shot,if=(talent.quick_draw.enabled||azerite.keep_your_wits_about_you.rank<2)&buff.opportunity.up&(buff.keep_your_wits_about_you.stack<14||energy<45)\nactions.build+=/pistol_shot,if=buff.opportunity.up&buff.deadshot.up\nactions.build+=/sinister_strike\n\n# Cooldowns\nactions.cds=call_action_list,name=essences,if=!stealthed.all\nactions.cds+=/adrenaline_rush,if=!buff.adrenaline_rush.up&(!equipped.azsharas_font_of_power||cooldown.latent_arcana.remains>20)\n# If adds are up, snipe the one with lowest TTD. Use when dying faster than CP deficit or without any CP.\nactions.cds+=/marked_for_death,cycle_targets=1,if=raid_event.adds.up&(target.time_to_die<combo_points.deficit||!stealthed.rogue&combo_points.deficit>=cp_max_spend-1)\n# If no adds will die within the next 30s, use MfD on boss without any CP.\nactions.cds+=/marked_for_death,if=raid_event.adds.in>30-raid_event.adds.duration&!stealthed.rogue&combo_points.deficit>=cp_max_spend-1\n# Blade Flurry on 2+ enemies. With adds: Use if they stay for 8+ seconds or if your next charge will be ready in time for the next wave.\nactions.cds+=/blade_flurry,if=spell_targets>=2&!buff.blade_flurry.up&(!raid_event.adds.exists||raid_event.adds.remains>8||raid_event.adds.in>(2-cooldown.blade_flurry.charges_fractional)*25)\nactions.cds+=/ghostly_strike,if=combo_points.deficit>=1+buff.broadside.up\nactions.cds+=/killing_spree,if=variable.blade_flurry_sync&spell_targets.blade_flurry>1&energy.time_to_max>2\nactions.cds+=/blade_rush,if=variable.blade_flurry_sync&energy.time_to_max>2\n# Using Vanish/Ambush is only a very tiny increase, so in reality, you're absolutely fine to use it as a utility spell.\nactions.cds+=/vanish,if=!stealthed.all&variable.ambush_condition\nactions.cds+=/shadowmeld,if=!stealthed.all&variable.ambush_condition\nactions.cds+=/potion,if=buff.bloodlust.react||buff.adrenaline_rush.up\n# Falling back to default item usage\nactions.cds+=/use_item,name=variable_intensity_gigavolt_oscillating_reactor,if=buff.bloodlust.react||time_to_die<=20||combo_points.deficit<=2\nactions.cds+=/use_items,if=buff.bloodlust.react||time_to_die<=20||combo_points.deficit<=2\nactions.cds+=/blood_fury\nactions.cds+=/berserking\nactions.cds+=/fireblood\nactions.cds+=/ancestral_call\nactions.cds+=/use_item,effect_name=cyclotronic_blast,if=!stealthed.all&buff.adrenaline_rush.down&buff.memory_of_lucid_dreams.down&energy.time_to_max>4&rtb_buffs<5\nactions.cds+=/use_item,name=azsharas_font_of_power,if=!buff.adrenaline_rush.up&!buff.blade_flurry.up&cooldown.adrenaline_rush.remains<15\n# Very roughly rule of thumbified maths below: Use for Inkpod crit, otherwise with AR at 20+ stacks or 10+ with also Blood up.\nactions.cds+=/use_item,name=ashvanes_razor_coral,if=debuff.razor_coral_debuff.down||debuff.conductive_ink_debuff.up&target.health.pct<32&target.health.pct>=30||!debuff.conductive_ink_debuff.up&(debuff.razor_coral_debuff.stack>=20-10*debuff.blood_of_the_enemy.up||target.time_to_die<60)&buff.adrenaline_rush.remains>18\n# Default fallback for usable items.\nactions.cds+=/use_items,if=buff.bloodlust.react||time_to_die<=20||combo_points.deficit<=2\n\n# Essences\nactions.essences=concentrated_flame,if=energy.time_to_max>1&!buff.blade_flurry.up&(!dot.concentrated_flame_burn.ticking&!action.concentrated_flame.in_flight||full_recharge_time<gcd.max)\nactions.essences+=/blood_of_the_enemy,if=variable.blade_flurry_sync&cooldown.between_the_eyes.up&variable.bte_condition&(spell_targets.blade_flurry>=2||raid_event.adds.in>45)\nactions.essences+=/guardian_of_azeroth\nactions.essences+=/focused_azerite_beam,if=spell_targets.blade_flurry>=2||raid_event.adds.in>60&!buff.adrenaline_rush.up\nactions.essences+=/purifying_blast,if=spell_targets.blade_flurry>=2||raid_event.adds.in>60\nactions.essences+=/the_unbound_force,if=buff.reckless_force.up||buff.reckless_force_counter.stack<10\nactions.essences+=/ripple_in_space\nactions.essences+=/worldvein_resonance\nactions.essences+=/memory_of_lucid_dreams,if=energy<45\n# Hold Reaping Flames for execute range or kill buffs, if possible. Always try to get the lowest cooldown based on available enemies.\nactions.essences+=/reaping_flames,cycle_targets=1,if=target.time_to_die<1.5||((target.health.pct>80||target.health.pct<=20)&(active_enemies=1||target.time_to_die>29))||(target.time_to_pct_20>30&(active_enemies=1||target.time_to_die>44))\n\n# Finishers\n# BtE over RtB rerolls with Deadshot/Ace traits or Ruthless Precision.\nactions.finish=between_the_eyes,if=variable.bte_condition\nactions.finish+=/slice_and_dice,if=buff.slice_and_dice.remains<time_to_die&buff.slice_and_dice.remains<(1+combo_points)*1.8\nactions.finish+=/roll_the_bones,if=buff.roll_the_bones.remains<=3||variable.rtb_reroll\n# BtE with the Ace Up Your Sleeve or Deadshot traits.\nactions.finish+=/between_the_eyes,if=azerite.ace_up_your_sleeve.enabled||azerite.deadshot.enabled\nactions.finish+=/dispatch\n\n# Stealth\nactions.stealth=cheap_shot,cycle_targets=1,if=talent.prey_on_the_weak.enabled&!target.is_boss\nactions.stealth+=/ambush",
-					["version"] = 20200410,
-					["warnings"] = "Imported 7 action lists.\n",
-					["author"] = "SimC",
+					["date"] = 20220828,
+					["spec"] = 263,
+					["desc"] = "Enhancement Shaman\nAugust 23, 2022",
 					["lists"] = {
-						["essences"] = {
+						["aoe"] = {
 							{
 								["enabled"] = true,
-								["criteria"] = "energy.time_to_max > 1 & ! buff.blade_flurry.up & ( ! dot.concentrated_flame_burn.ticking & ! action.concentrated_flame.in_flight || full_recharge_time < gcd.max )",
-								["action"] = "concentrated_flame",
+								["criteria"] = "buff.maelstrom_weapon.stack >= 5",
+								["action"] = "chain_harvest",
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["criteria"] = "variable.blade_flurry_sync & cooldown.between_the_eyes.up & variable.bte_condition & ( spell_targets.blade_flurry >= 2 || raid_event.adds.in > 45 )",
-								["action"] = "blood_of_the_enemy",
+								["criteria"] = "runeforge.doom_winds.equipped & buff.doom_winds.up",
+								["action"] = "crash_lightning",
 							}, -- [2]
 							{
-								["action"] = "guardian_of_azeroth",
 								["enabled"] = true,
+								["criteria"] = "runeforge.doom_winds.equipped & buff.doom_winds.up",
+								["action"] = "sundering",
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["criteria"] = "spell_targets.blade_flurry >= 2 || raid_event.adds.in > 60 & ! buff.adrenaline_rush.up",
-								["action"] = "focused_azerite_beam",
+								["criteria"] = "runeforge.raging_vesper_vortex.equipped & talent.earth_shield.enabled & vesper_totem_heal_charges > 0",
+								["action"] = "healing_stream_totem",
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["criteria"] = "spell_targets.blade_flurry >= 2 || raid_event.adds.in > 60",
-								["action"] = "purifying_blast",
+								["criteria"] = "runeforge.raging_vesper_vortex.equipped & talent.earth_shield.enabled & vesper_totem_heal_charges > 0",
+								["action"] = "earth_shield",
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.reckless_force.up || buff.reckless_force_counter.stack < 10",
-								["action"] = "the_unbound_force",
+								["criteria"] = "active_dot.flame_shock >= 6 || ( active_dot.flame_shock >= 4 & active_dot.flame_shock >= cycle_enemies )",
+								["action"] = "fire_nova",
 							}, -- [6]
 							{
-								["action"] = "ripple_in_space",
 								["enabled"] = true,
+								["criteria"] = "! buff.primordial_wave.up",
+								["action"] = "primordial_wave",
+								["cycle_targets"] = 1,
 							}, -- [7]
 							{
-								["action"] = "worldvein_resonance",
 								["enabled"] = true,
+								["criteria"] = "runeforge.deeply_rooted_elements.equipped & buff.crash_lightning.up",
+								["action"] = "windstrike",
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["criteria"] = "energy < 45",
-								["action"] = "memory_of_lucid_dreams",
+								["criteria"] = "runeforge.deeply_rooted_elements.equipped & buff.crash_lightning.up",
+								["action"] = "stormstrike",
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["criteria"] = "target.time_to_die < 1.5 || ( ( target.health.pct > 80 || target.health.pct <= 20 ) & ( active_enemies = 1 || target.time_to_die > 29 ) ) || ( target.time_to_pct_20 > 30 & ( active_enemies = 1 || target.time_to_die > 44 ) )",
-								["action"] = "reaping_flames",
+								["criteria"] = "dot.flame_shock.ticking & ( active_dot.flame_shock < cycle_enemies & active_dot.flame_shock < 6 )",
+								["action"] = "lava_lash",
 								["cycle_targets"] = 1,
 							}, -- [10]
-						},
-						["default"] = {
 							{
 								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "rtb_buffs < 2 & ! buff.grand_melee.up & ! buff.ruthless_precision.up",
-								["var_name"] = "rtb_reroll",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "rtb_buffs < 2 & ( buff.loaded_dice.up || ! buff.broadside.up )",
-								["var_name"] = "rtb_reroll",
-								["criteria"] = "azerite.deadshot.enabled",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "rtb_buffs < 2 & ( buff.loaded_dice.up || buff.ruthless_precision.remains <= cooldown.between_the_eyes.remains )",
-								["var_name"] = "rtb_reroll",
-								["criteria"] = "azerite.ace_up_your_sleeve.enabled & azerite.ace_up_your_sleeve.rank >= azerite.deadshot.rank",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "rtb_buffs < 2",
-								["var_name"] = "rtb_reroll",
-								["criteria"] = "azerite.snake_eyes.rank >= 2",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["op"] = "reset",
-								["action"] = "variable",
-								["var_name"] = "rtb_reroll",
-								["criteria"] = "azerite.snake_eyes.rank >= 2 & buff.snake_eyes.stack >= 2 - buff.broadside.up",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "rtb_buffs - buff.skull_and_crossbones.up < 2 & ( buff.loaded_dice.up || ! buff.grand_melee.up & ! buff.ruthless_precision.up & ! buff.broadside.up )",
-								["var_name"] = "rtb_reroll",
-								["criteria"] = "buff.blade_flurry.up",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "( rtb_buffs - buff.buried_treasure.up ) < 2 || buff.roll_the_bones.remains < 10.8 + ( 1.8 * talent.deeper_stratagem.enabled )",
-								["var_name"] = "rtb_reroll",
-								["criteria"] = "buff.loaded_dice.up",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["criteria"] = "! stealthed.rogue",
-								["action"] = "kick",
-							}, -- [8]
-							{
-								["action"] = "stealth",
-								["enabled"] = true,
-							}, -- [9]
-							{
-								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "combo_points.deficit >= 2 + 2 * ( talent.ghostly_strike.enabled & cooldown.ghostly_strike.remains < 1 ) + buff.broadside.up & energy > 60 & ! buff.skull_and_crossbones.up & ! buff.keep_your_wits_about_you.up",
-								["var_name"] = "ambush_condition",
-							}, -- [10]
-							{
-								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "buff.ruthless_precision.up || ( azerite.deadshot.enabled || azerite.ace_up_your_sleeve.enabled ) & buff.roll_the_bones.up",
-								["var_name"] = "bte_condition",
+								["criteria"] = "! ticking",
+								["action"] = "flame_shock",
 							}, -- [11]
 							{
 								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "spell_targets.blade_flurry < 2 & raid_event.adds.in > 20 || buff.blade_flurry.up",
-								["var_name"] = "blade_flurry_sync",
+								["criteria"] = "! talent.hailstorm.enabled & active_dot.flame_shock < cycle_enemies & active_dot.flame_shock < 6",
+								["action"] = "flame_shock",
+								["cycle_targets"] = 1,
 							}, -- [12]
 							{
 								["enabled"] = true,
-								["action"] = "call_action_list",
-								["criteria"] = "stealthed.all",
-								["list_name"] = "stealth",
+								["criteria"] = "( active_dot.flame_shock >= active_enemies || active_dot.flame_shock >= 4 ) & buff.primordial_wave.up & buff.maelstrom_weapon.stack >= 5 & ( ! buff.splintered_elements.up || fight_remains <= 12 || raid_event.adds.remains <= gcd )",
+								["action"] = "lightning_bolt",
 							}, -- [13]
 							{
 								["enabled"] = true,
-								["action"] = "call_action_list",
-								["list_name"] = "cds",
+								["criteria"] = "buff.hailstorm.up",
+								["action"] = "frost_shock",
 							}, -- [14]
 							{
 								["enabled"] = true,
-								["action"] = "run_action_list",
-								["criteria"] = "combo_points >= cp_max_spend - ( buff.broadside.up + buff.opportunity.up ) * ( talent.quick_draw.enabled & ( ! talent.marked_for_death.enabled || cooldown.marked_for_death.remains > 1 ) ) * ( azerite.ace_up_your_sleeve.rank < 2 || ! cooldown.between_the_eyes.up || ! buff.roll_the_bones.up )",
-								["list_name"] = "finish",
+								["criteria"] = "soulbind.grove_invigoration.enabled || soulbind.field_of_blossoms.enabled || runeforge.seeds_of_rampant_growth.equipped",
+								["action"] = "fae_transfusion",
 							}, -- [15]
 							{
 								["enabled"] = true,
-								["action"] = "call_action_list",
-								["list_name"] = "build",
+								["criteria"] = "buff.crash_lightning.down & buff.primordial_wave.up & buff.maelstrom_weapon.stack < 5",
+								["action"] = "crash_lightning",
 							}, -- [16]
 							{
 								["enabled"] = true,
-								["criteria"] = "energy.deficit >= 15 + energy.regen",
-								["action"] = "arcane_torrent",
+								["criteria"] = "buff.primordial_wave.up & buff.maelstrom_weapon.stack < 5",
+								["action"] = "sundering",
 							}, -- [17]
 							{
-								["action"] = "arcane_pulse",
 								["enabled"] = true,
+								["criteria"] = "buff.primordial_wave.up & buff.maelstrom_weapon.stack < 5",
+								["action"] = "stormstrike",
 							}, -- [18]
 							{
-								["action"] = "lights_judgment",
+								["action"] = "sundering",
 								["enabled"] = true,
 							}, -- [19]
 							{
-								["action"] = "bag_of_tricks",
 								["enabled"] = true,
-							}, -- [20]
-						},
-						["precombat"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "raid_event.adds.in > 40",
-								["action"] = "marked_for_death",
-								["precombat_seconds"] = "5",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "( ! equipped.pocketsized_computation_device || ! cooldown.cyclotronic_blast.duration || raid_event.invulnerable.exists )",
-								["action"] = "stealth",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.roll_the_bones.remains <= 3 || variable.rtb_reroll",
-								["action"] = "roll_the_bones",
-								["precombat_seconds"] = "2",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.slice_and_dice.remains < time_to_die & buff.slice_and_dice.remains < ( 1 + combo_points ) * 1.8",
-								["action"] = "slice_and_dice",
-								["precombat_seconds"] = "2",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "( ! equipped.pocketsized_computation_device || ! cooldown.cyclotronic_blast.duration || raid_event.invulnerable.exists )",
-								["action"] = "adrenaline_rush",
-								["precombat_seconds"] = "1",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["name"] = "azsharas_font_of_power",
-								["action"] = "azsharas_font_of_power",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "! raid_event.invulnerable.exists",
-								["action"] = "cyclotronic_blast",
-								["effect_name"] = "cyclotronic_blast",
-							}, -- [7]
-							{
-								["action"] = "potion",
-								["enabled"] = true,
-							}, -- [8]
-						},
-						["finish"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.bte_condition",
-								["action"] = "between_the_eyes",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.slice_and_dice.remains < time_to_die & buff.slice_and_dice.remains < ( 1 + combo_points ) * 1.8",
-								["action"] = "slice_and_dice",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.roll_the_bones.remains <= 3 || variable.rtb_reroll",
-								["action"] = "roll_the_bones",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "azerite.ace_up_your_sleeve.enabled || azerite.deadshot.enabled",
-								["action"] = "between_the_eyes",
-							}, -- [4]
-							{
-								["action"] = "dispatch",
-								["enabled"] = true,
-							}, -- [5]
-						},
-						["stealth"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.prey_on_the_weak.enabled & ! target.is_boss",
-								["action"] = "cheap_shot",
-								["cycle_targets"] = 1,
-							}, -- [1]
-							{
-								["action"] = "ambush",
-								["enabled"] = true,
-							}, -- [2]
-						},
-						["cds"] = {
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["criteria"] = "! stealthed.all",
-								["list_name"] = "essences",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "! buff.adrenaline_rush.up & ( ! equipped.azsharas_font_of_power || cooldown.latent_arcana.remains > 20 )",
-								["action"] = "adrenaline_rush",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "raid_event.adds.up & ( target.time_to_die < combo_points.deficit || ! stealthed.rogue & combo_points.deficit >= cp_max_spend - 1 )",
-								["action"] = "marked_for_death",
-								["cycle_targets"] = 1,
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "raid_event.adds.in > 30 - raid_event.adds.duration & ! stealthed.rogue & combo_points.deficit >= cp_max_spend - 1",
-								["action"] = "marked_for_death",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "spell_targets >= 2 & ! buff.blade_flurry.up & ( ! raid_event.adds.exists || raid_event.adds.remains > 8 || raid_event.adds.in > ( 2 - cooldown.blade_flurry.charges_fractional ) * 25 )",
-								["action"] = "blade_flurry",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "combo_points.deficit >= 1 + buff.broadside.up",
-								["action"] = "ghostly_strike",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.blade_flurry_sync & spell_targets.blade_flurry > 1 & energy.time_to_max > 2",
-								["action"] = "killing_spree",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.blade_flurry_sync & energy.time_to_max > 2",
-								["action"] = "blade_rush",
-							}, -- [8]
-							{
-								["enabled"] = true,
-								["criteria"] = "! stealthed.all & variable.ambush_condition",
-								["action"] = "vanish",
-							}, -- [9]
-							{
-								["enabled"] = true,
-								["criteria"] = "! stealthed.all & variable.ambush_condition",
-								["action"] = "shadowmeld",
-							}, -- [10]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.bloodlust.react || buff.adrenaline_rush.up",
-								["action"] = "potion",
-							}, -- [11]
-							{
-								["enabled"] = true,
-								["action"] = "variable_intensity_gigavolt_oscillating_reactor",
-								["criteria"] = "buff.bloodlust.react || time_to_die <= 20 || combo_points.deficit <= 2",
-								["name"] = "variable_intensity_gigavolt_oscillating_reactor",
-							}, -- [12]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.bloodlust.react || time_to_die <= 20 || combo_points.deficit <= 2",
-								["action"] = "use_items",
-							}, -- [13]
-							{
-								["action"] = "blood_fury",
-								["enabled"] = true,
-							}, -- [14]
-							{
-								["action"] = "berserking",
-								["enabled"] = true,
-							}, -- [15]
-							{
-								["action"] = "fireblood",
-								["enabled"] = true,
-							}, -- [16]
-							{
-								["action"] = "ancestral_call",
-								["enabled"] = true,
-							}, -- [17]
-							{
-								["enabled"] = true,
-								["criteria"] = "! stealthed.all & buff.adrenaline_rush.down & buff.memory_of_lucid_dreams.down & energy.time_to_max > 4 & rtb_buffs < 5",
-								["action"] = "cyclotronic_blast",
-								["effect_name"] = "cyclotronic_blast",
-							}, -- [18]
-							{
-								["enabled"] = true,
-								["action"] = "azsharas_font_of_power",
-								["criteria"] = "! buff.adrenaline_rush.up & ! buff.blade_flurry.up & cooldown.adrenaline_rush.remains < 15",
-								["name"] = "azsharas_font_of_power",
-							}, -- [19]
-							{
-								["enabled"] = true,
-								["action"] = "ashvanes_razor_coral",
-								["criteria"] = "debuff.razor_coral_debuff.down || debuff.conductive_ink_debuff.up & target.health.pct < 32 & target.health.pct >= 30 || ! debuff.conductive_ink_debuff.up & ( debuff.razor_coral_debuff.stack >= 20 - 10 * debuff.blood_of_the_enemy.up || target.time_to_die < 60 ) & buff.adrenaline_rush.remains > 18",
-								["name"] = "ashvanes_razor_coral",
+								["criteria"] = "active_dot.flame_shock >= 4",
+								["action"] = "fire_nova",
 							}, -- [20]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.bloodlust.react || time_to_die <= 20 || combo_points.deficit <= 2",
-								["action"] = "use_items",
-							}, -- [21]
-						},
-						["build"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "( talent.quick_draw.enabled || azerite.keep_your_wits_about_you.rank < 2 ) & buff.opportunity.up & ( buff.keep_your_wits_about_you.stack < 14 || energy < 45 )",
-								["action"] = "pistol_shot",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.opportunity.up & buff.deadshot.up",
-								["action"] = "pistol_shot",
-							}, -- [2]
-							{
-								["action"] = "sinister_strike",
-								["enabled"] = true,
-							}, -- [3]
-						},
-					},
-				},
-				["Subtlety"] = {
-					["source"] = "https://github.com/simulationcraft/simc/",
-					["builtIn"] = true,
-					["date"] = 20200330,
-					["author"] = "SimC",
-					["desc"] = "# Subtlety Rogue\n# https://github.com/simulationcraft/simc/\n# March 30, 2020\n\n# Changes:\n# - Added Kick to default action list.\n# - Removed target_if condition on Marked for Death.\n# - Added Use Items.",
-					["lists"] = {
-						["stealthed"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "( talent.find_weakness.enabled || spell_targets.shuriken_storm < 3 ) & ( buff.stealth.up || buff.vanish.up )",
-								["action"] = "shadowstrike",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["criteria"] = "buff.shuriken_tornado.up & combo_points.deficit <= 2",
-								["list_name"] = "finish",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["criteria"] = "spell_targets.shuriken_storm = 4 & combo_points >= 4",
-								["list_name"] = "finish",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["criteria"] = "combo_points.deficit <= 1 - ( talent.deeper_stratagem.enabled & ( buff.vanish.up || azerite.the_first_dance.enabled & ! talent.dark_shadow.enabled & ! talent.subterfuge.enabled & spell_targets.shuriken_storm < 3 ) )",
-								["list_name"] = "finish",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "azerite.perforate.rank >= 2 & spell_targets.shuriken_storm <= 2",
-								["action"] = "gloomblade",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.secret_technique.enabled & talent.find_weakness.enabled & debuff.find_weakness.remains < 1 & spell_targets.shuriken_storm = 2 & time_to_die - remains > 6",
-								["action"] = "shadowstrike",
-								["cycle_targets"] = 1,
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "! talent.deeper_stratagem.enabled & azerite.blade_in_the_shadows.rank = 3 & spell_targets.shuriken_storm = 3",
-								["action"] = "shadowstrike",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.use_priority_rotation & ( talent.find_weakness.enabled & debuff.find_weakness.remains < 1 || talent.weaponmaster.enabled & spell_targets.shuriken_storm <= 4 || azerite.inevitability.enabled & buff.symbols_of_death.up & spell_targets.shuriken_storm <= 3 + azerite.blade_in_the_shadows.enabled )",
-								["action"] = "shadowstrike",
-							}, -- [8]
-							{
-								["enabled"] = true,
-								["criteria"] = "spell_targets >= 3",
-								["action"] = "shuriken_storm",
-							}, -- [9]
-							{
-								["action"] = "shadowstrike",
-								["enabled"] = true,
-							}, -- [10]
-						},
-						["essences"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "energy.time_to_max > 1 & ! buff.symbols_of_death.up & ( ! dot.concentrated_flame_burn.ticking & ! action.concentrated_flame.in_flight || full_recharge_time < gcd.max )",
-								["action"] = "concentrated_flame",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "! cooldown.shadow_blades.up & cooldown.symbols_of_death.up || time_to_die <= 10",
-								["action"] = "blood_of_the_enemy",
-							}, -- [2]
-							{
-								["action"] = "guardian_of_azeroth",
-								["enabled"] = true,
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "( spell_targets.shuriken_storm >= 2 || raid_event.adds.in > 60 ) & ! cooldown.symbols_of_death.up & ! buff.symbols_of_death.up & energy.deficit >= 30",
-								["action"] = "focused_azerite_beam",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "spell_targets.shuriken_storm >= 2 || raid_event.adds.in > 60",
-								["action"] = "purifying_blast",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.reckless_force.up || buff.reckless_force_counter.stack < 10",
-								["action"] = "the_unbound_force",
-							}, -- [6]
-							{
-								["action"] = "ripple_in_space",
-								["enabled"] = true,
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["criteria"] = "cooldown.symbols_of_death.remains < 5 || time_to_die < 18",
-								["action"] = "worldvein_resonance",
-							}, -- [8]
-							{
-								["enabled"] = true,
-								["criteria"] = "energy < 40 & buff.symbols_of_death.up",
-								["action"] = "memory_of_lucid_dreams",
-							}, -- [9]
-							{
-								["enabled"] = true,
-								["criteria"] = "target.time_to_die < 1.5 || ( ( target.health.pct > 80 || target.health.pct <= 20 ) & ( active_enemies = 1 || target.time_to_die > 29 ) ) || ( target.time_to_pct_20 > 30 & ( active_enemies = 1 || target.time_to_die > 44 ) )",
-								["action"] = "reaping_flames",
-								["cycle_targets"] = 1,
-							}, -- [10]
-						},
-						["default"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "! stealthed.rogue",
-								["action"] = "kick",
-							}, -- [1]
-							{
-								["action"] = "stealth",
-								["enabled"] = true,
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["list_name"] = "cds",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["action"] = "run_action_list",
-								["criteria"] = "stealthed.all",
-								["list_name"] = "stealthed",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "time_to_die > 6 & remains < gcd.max & combo_points >= 4 - ( time < 10 ) * 2",
-								["action"] = "nightblade",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "priority_rotation & spell_targets.shuriken_storm >= 2",
-								["var_name"] = "use_priority_rotation",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["criteria"] = "variable.use_priority_rotation",
-								["list_name"] = "stealth_cds",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "25 + talent.vigor.enabled * 35 + talent.master_of_shadows.enabled * 25 + talent.shadow_focus.enabled * 20 + talent.alacrity.enabled * 10 + 15 * ( spell_targets.shuriken_storm >= 3 )",
-								["var_name"] = "stealth_threshold",
-							}, -- [8]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["criteria"] = "energy.deficit <= variable.stealth_threshold",
-								["list_name"] = "stealth_cds",
-							}, -- [9]
-							{
-								["enabled"] = true,
-								["criteria"] = "azerite.nights_vengeance.enabled & ! buff.nights_vengeance.up & combo_points.deficit > 1 & ( spell_targets.shuriken_storm < 2 || variable.use_priority_rotation ) & ( cooldown.symbols_of_death.remains <= 3 || ( azerite.nights_vengeance.rank >= 2 & buff.symbols_of_death.remains > 3 & ! stealthed.all & cooldown.shadow_dance.charges_fractional >= 0.9 ) )",
-								["action"] = "nightblade",
-							}, -- [10]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["criteria"] = "combo_points.deficit <= 1 || time_to_die <= 1 & combo_points >= 3",
-								["list_name"] = "finish",
-							}, -- [11]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["criteria"] = "spell_targets.shuriken_storm = 4 & combo_points >= 4",
-								["list_name"] = "finish",
-							}, -- [12]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["criteria"] = "energy.deficit <= variable.stealth_threshold",
-								["list_name"] = "build",
-							}, -- [13]
-							{
-								["enabled"] = true,
-								["criteria"] = "energy.deficit >= 15 + energy.regen",
-								["action"] = "arcane_torrent",
-							}, -- [14]
-							{
-								["action"] = "arcane_pulse",
-								["enabled"] = true,
-							}, -- [15]
-							{
-								["action"] = "lights_judgment",
-								["enabled"] = true,
-							}, -- [16]
-							{
-								["action"] = "bag_of_tricks",
-								["enabled"] = true,
-							}, -- [17]
-						},
-						["precombat"] = {
-							{
-								["action"] = "stealth",
-								["enabled"] = true,
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["action"] = "marked_for_death",
-								["precombat_seconds"] = "15",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["name"] = "azsharas_font_of_power",
-								["action"] = "azsharas_font_of_power",
-							}, -- [3]
-							{
-								["action"] = "potion",
-								["enabled"] = true,
-							}, -- [4]
-						},
-						["build"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "spell_targets >= 2 + ( talent.gloomblade.enabled & azerite.perforate.rank >= 2 )",
-								["action"] = "shuriken_storm",
-							}, -- [1]
-							{
-								["action"] = "gloomblade",
-								["enabled"] = true,
-							}, -- [2]
-							{
-								["action"] = "backstab",
-								["enabled"] = true,
-							}, -- [3]
-						},
-						["cds"] = {
-							{
-								["enabled"] = true,
-								["use_off_gcd"] = 1,
-								["criteria"] = "! buff.shadow_dance.up & buff.shuriken_tornado.up & buff.shuriken_tornado.remains <= 3.5",
-								["action"] = "shadow_dance",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["use_off_gcd"] = 1,
-								["criteria"] = "buff.shuriken_tornado.up & buff.shuriken_tornado.remains <= 3.5",
-								["action"] = "symbols_of_death",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["criteria"] = "! stealthed.all & dot.nightblade.ticking",
-								["list_name"] = "essences",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["action"] = "pool_resource",
-								["criteria"] = "! talent.shadow_focus.enabled",
-								["for_next"] = 1,
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "energy >= 60 & dot.nightblade.ticking & cooldown.symbols_of_death.up & cooldown.shadow_dance.charges >= 1",
-								["action"] = "shuriken_tornado",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "dot.nightblade.ticking & ! cooldown.shadow_blades.up & ( ! talent.shuriken_tornado.enabled || talent.shadow_focus.enabled || cooldown.shuriken_tornado.remains > 2 ) & ( ! essence.blood_of_the_enemy.major || cooldown.blood_of_the_enemy.remains > 2 ) & ( azerite.nights_vengeance.rank < 2 || buff.nights_vengeance.up )",
-								["action"] = "symbols_of_death",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "raid_event.adds.up & ( target.time_to_die < combo_points.deficit || ! stealthed.all & combo_points.deficit >= cp_max_spend )",
-								["action"] = "marked_for_death",
-								["cycle_targets"] = 1,
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["criteria"] = "raid_event.adds.in > 30 - raid_event.adds.duration & ! stealthed.all & combo_points.deficit >= cp_max_spend",
-								["action"] = "marked_for_death",
-							}, -- [8]
-							{
-								["enabled"] = true,
-								["criteria"] = "! stealthed.all & dot.nightblade.ticking & combo_points.deficit >= 2",
-								["action"] = "shadow_blades",
-							}, -- [9]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.shadow_focus.enabled & dot.nightblade.ticking & buff.symbols_of_death.up",
-								["action"] = "shuriken_tornado",
-							}, -- [10]
-							{
-								["enabled"] = true,
-								["criteria"] = "! buff.shadow_dance.up & time_to_die <= 5 + talent.subterfuge.enabled & ! raid_event.adds.up",
-								["action"] = "shadow_dance",
-							}, -- [11]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.bloodlust.react || buff.symbols_of_death.up & ( buff.shadow_blades.up || cooldown.shadow_blades.remains <= 10 )",
-								["action"] = "potion",
-							}, -- [12]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.symbols_of_death.up",
-								["action"] = "blood_fury",
-							}, -- [13]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.symbols_of_death.up",
-								["action"] = "berserking",
-							}, -- [14]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.symbols_of_death.up",
-								["action"] = "fireblood",
-							}, -- [15]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.symbols_of_death.up",
-								["action"] = "ancestral_call",
-							}, -- [16]
-							{
-								["enabled"] = true,
-								["criteria"] = "! stealthed.all & dot.nightblade.ticking & ! buff.symbols_of_death.up & energy.deficit >= 30",
-								["action"] = "cyclotronic_blast",
-								["effect_name"] = "cyclotronic_blast",
-							}, -- [17]
-							{
-								["enabled"] = true,
-								["action"] = "azsharas_font_of_power",
-								["criteria"] = "! buff.shadow_dance.up & cooldown.symbols_of_death.remains < 10",
-								["name"] = "azsharas_font_of_power",
-							}, -- [18]
-							{
-								["enabled"] = true,
-								["action"] = "ashvanes_razor_coral",
-								["criteria"] = "debuff.razor_coral_debuff.down || debuff.conductive_ink_debuff.up & target.time_to_pct_30 < 5 || ! debuff.conductive_ink_debuff.up & ( debuff.razor_coral_debuff.stack >= 25 - 10 * debuff.blood_of_the_enemy.up || time_to_die < 40 ) & buff.symbols_of_death.remains > 8",
-								["name"] = "ashvanes_razor_coral",
-							}, -- [19]
-							{
-								["enabled"] = true,
-								["name"] = "mydas_talisman",
-								["action"] = "mydas_talisman",
-							}, -- [20]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.symbols_of_death.up || time_to_die < 20",
-								["action"] = "use_items",
-							}, -- [21]
-						},
-						["stealth_cds"] = {
-							{
-								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "cooldown.shadow_dance.charges_fractional >= 1.75",
-								["var_name"] = "shd_threshold",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "! variable.shd_threshold & combo_points.deficit > 1 & debuff.find_weakness.remains < 1 & cooldown.symbols_of_death.remains >= 3",
-								["action"] = "vanish",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["action"] = "pool_resource",
-								["extra_amount"] = "40",
-								["for_next"] = 1,
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "energy >= 40 & energy.deficit >= 10 & ! variable.shd_threshold & combo_points.deficit > 1 & debuff.find_weakness.remains < 1",
-								["action"] = "shadowmeld",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "combo_points.deficit >= 4 - ( talent.deeper_stratagem.enabled & ( azerite.the_first_dance.enabled & ! talent.dark_shadow.enabled & ! talent.subterfuge.enabled & spell_targets.shuriken_storm < 3 ) )",
-								["var_name"] = "shd_combo_points",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "combo_points.deficit <= 1 + 2 * azerite.the_first_dance.enabled",
-								["var_name"] = "shd_combo_points",
-								["criteria"] = "variable.use_priority_rotation & ( talent.nightstalker.enabled || talent.dark_shadow.enabled )",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.shd_combo_points & ( ! talent.dark_shadow.enabled || dot.nightblade.remains >= 5 + talent.subterfuge.enabled ) & ( variable.shd_threshold || buff.symbols_of_death.remains >= 1.2 || spell_targets.shuriken_storm >= 4 & cooldown.symbols_of_death.remains > 10 ) & ( azerite.nights_vengeance.rank < 2 || buff.nights_vengeance.up )",
-								["action"] = "shadow_dance",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.shd_combo_points & time_to_die < cooldown.symbols_of_death.remains & ! raid_event.adds.up",
-								["action"] = "shadow_dance",
-							}, -- [8]
-						},
-						["finish"] = {
-							{
-								["enabled"] = true,
-								["for_next"] = 1,
-								["action"] = "pool_resource",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.nights_vengeance.up & ( spell_targets.shuriken_storm < 2 || variable.use_priority_rotation || ! talent.secret_technique.enabled || ! cooldown.secret_technique.up )",
-								["action"] = "eviscerate",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "( ! talent.dark_shadow.enabled || ! buff.shadow_dance.up ) & time_to_die - remains > 6 & remains < tick_time * 2",
-								["action"] = "nightblade",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "! variable.use_priority_rotation & spell_targets.shuriken_storm >= 2 & ( azerite.nights_vengeance.enabled || ! azerite.replicating_shadows.enabled || spell_targets.shuriken_storm - active_dot.nightblade >= 2 ) & ! buff.shadow_dance.up & time_to_die >= ( 5 + ( 2 * combo_points ) ) & refreshable",
-								["action"] = "nightblade",
-								["cycle_targets"] = 1,
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "remains < cooldown.symbols_of_death.remains + 10 & cooldown.symbols_of_death.remains <= 5 & time_to_die - remains > cooldown.symbols_of_death.remains + 5",
-								["action"] = "nightblade",
-							}, -- [5]
-							{
-								["action"] = "secret_technique",
-								["enabled"] = true,
-							}, -- [6]
-							{
-								["action"] = "eviscerate",
-								["enabled"] = true,
-							}, -- [7]
-						},
-					},
-					["version"] = 20200330,
-					["warnings"] = "Imported 8 action lists.\n",
-					["profile"] = "# Subtlety Rogue\n# https://github.com/simulationcraft/simc/\n# March 30, 2020\n\n# Changes:\n# - Added Kick to default action list.\n# - Removed target_if condition on Marked for Death.\n# - Added Use Items.\n\n# Executed before combat begins. Accepts non-harmful actions only.\n# actions.precombat=flask\n# actions.precombat+=/augmentation\n# actions.precombat+=/food\n# Snapshot raid buffed stats before combat begins and pre-potting is done.\n# actions.precombat+=/snapshot_stats\nactions.precombat+=/stealth\nactions.precombat+=/marked_for_death,precombat_seconds=15\nactions.precombat+=/use_item,name=azsharas_font_of_power\nactions.precombat+=/potion\n\n# Executed every time the actor is available.\n# Restealth if possible (no vulnerable enemies in combat)\nactions=kick,if=!stealthed.rogue\nactions+=/stealth\n# Check CDs at first\nactions+=/call_action_list,name=cds\n# Run fully switches to the Stealthed Rotation (by doing so, it forces pooling if nothing is available).\nactions+=/run_action_list,name=stealthed,if=stealthed.all\n# Apply Nightblade at 2+ CP during the first 10 seconds, after that 4+ CP if it expires within the next GCD or is not up\nactions+=/nightblade,if=time_to_die>6&remains<gcd.max&combo_points>=4-(time<10)*2\n# Only change rotation if we have priority_rotation set and multiple targets up.\nactions+=/variable,name=use_priority_rotation,value=priority_rotation&spell_targets.shuriken_storm>=2\n# Priority Rotation? Let's give a crap about energy for the stealth CDs (builder still respect it). Yup, it can be that simple.\nactions+=/call_action_list,name=stealth_cds,if=variable.use_priority_rotation\n# Used to define when to use stealth CDs or builders\nactions+=/variable,name=stealth_threshold,value=25+talent.vigor.enabled*35+talent.master_of_shadows.enabled*25+talent.shadow_focus.enabled*20+talent.alacrity.enabled*10+15*(spell_targets.shuriken_storm>=3)\n# Consider using a Stealth CD when reaching the energy threshold\nactions+=/call_action_list,name=stealth_cds,if=energy.deficit<=variable.stealth_threshold\n# Night's Vengeance: Nightblade before Symbols at low CP to combine early refresh with getting the buff up. Also low CP during Symbols between Dances with 2+ NV.\nactions+=/nightblade,if=azerite.nights_vengeance.enabled&!buff.nights_vengeance.up&combo_points.deficit>1&(spell_targets.shuriken_storm<2||variable.use_priority_rotation)&(cooldown.symbols_of_death.remains<=3||(azerite.nights_vengeance.rank>=2&buff.symbols_of_death.remains>3&!stealthed.all&cooldown.shadow_dance.charges_fractional>=0.9))\n# Finish at 4+ without DS, 5+ with DS (outside stealth)\nactions+=/call_action_list,name=finish,if=combo_points.deficit<=1||time_to_die<=1&combo_points>=3\n# With DS also finish at 4+ against exactly 4 targets (outside stealth)\nactions+=/call_action_list,name=finish,if=spell_targets.shuriken_storm=4&combo_points>=4\n# Use a builder when reaching the energy threshold\nactions+=/call_action_list,name=build,if=energy.deficit<=variable.stealth_threshold\n# Lowest priority in all of the APL because it causes a GCD\nactions+=/arcane_torrent,if=energy.deficit>=15+energy.regen\nactions+=/arcane_pulse\nactions+=/lights_judgment\nactions+=/bag_of_tricks\n\n# Builders\nactions.build=shuriken_storm,if=spell_targets>=2+(talent.gloomblade.enabled&azerite.perforate.rank>=2)\nactions.build+=/gloomblade\nactions.build+=/backstab\n\n# Cooldowns\n# Use Dance off-gcd before the first Shuriken Storm from Tornado comes in.\nactions.cds=shadow_dance,use_off_gcd=1,if=!buff.shadow_dance.up&buff.shuriken_tornado.up&buff.shuriken_tornado.remains<=3.5\n# (Unless already up because we took Shadow Focus) use Symbols off-gcd before the first Shuriken Storm from Tornado comes in.\nactions.cds+=/symbols_of_death,use_off_gcd=1,if=buff.shuriken_tornado.up&buff.shuriken_tornado.remains<=3.5\nactions.cds+=/call_action_list,name=essences,if=!stealthed.all&dot.nightblade.ticking\n# Pool for Tornado pre-SoD with ShD ready when not running SF.\nactions.cds+=/pool_resource,for_next=1,if=!talent.shadow_focus.enabled\n# Use Tornado pre SoD when we have the energy whether from pooling without SF or just generally.\nactions.cds+=/shuriken_tornado,if=energy>=60&dot.nightblade.ticking&cooldown.symbols_of_death.up&cooldown.shadow_dance.charges>=1\n# Use Symbols on cooldown (after first Nightblade) unless we are going to pop Tornado and do not have Shadow Focus.\nactions.cds+=/symbols_of_death,if=dot.nightblade.ticking&!cooldown.shadow_blades.up&(!talent.shuriken_tornado.enabled||talent.shadow_focus.enabled||cooldown.shuriken_tornado.remains>2)&(!essence.blood_of_the_enemy.major||cooldown.blood_of_the_enemy.remains>2)&(azerite.nights_vengeance.rank<2||buff.nights_vengeance.up)\n# If adds are up, snipe the one with lowest TTD. Use when dying faster than CP deficit or not stealthed without any CP.\nactions.cds+=/marked_for_death,cycle_targets=1,if=raid_event.adds.up&(target.time_to_die<combo_points.deficit||!stealthed.all&combo_points.deficit>=cp_max_spend)\n# If no adds will die within the next 30s, use MfD on boss without any CP and no stealth.\nactions.cds+=/marked_for_death,if=raid_event.adds.in>30-raid_event.adds.duration&!stealthed.all&combo_points.deficit>=cp_max_spend\nactions.cds+=/shadow_blades,if=!stealthed.all&dot.nightblade.ticking&combo_points.deficit>=2\n# With SF, if not already done, use Tornado with SoD up.\nactions.cds+=/shuriken_tornado,if=talent.shadow_focus.enabled&dot.nightblade.ticking&buff.symbols_of_death.up\nactions.cds+=/shadow_dance,if=!buff.shadow_dance.up&time_to_die<=5+talent.subterfuge.enabled&!raid_event.adds.up\nactions.cds+=/potion,if=buff.bloodlust.react||buff.symbols_of_death.up&(buff.shadow_blades.up||cooldown.shadow_blades.remains<=10)\nactions.cds+=/blood_fury,if=buff.symbols_of_death.up\nactions.cds+=/berserking,if=buff.symbols_of_death.up\nactions.cds+=/fireblood,if=buff.symbols_of_death.up\nactions.cds+=/ancestral_call,if=buff.symbols_of_death.up\nactions.cds+=/use_item,effect_name=cyclotronic_blast,if=!stealthed.all&dot.nightblade.ticking&!buff.symbols_of_death.up&energy.deficit>=30\nactions.cds+=/use_item,name=azsharas_font_of_power,if=!buff.shadow_dance.up&cooldown.symbols_of_death.remains<10\n# Very roughly rule of thumbified maths below: Use for Inkpod crit, otherwise with SoD at 25+ stacks or 15+ with also Blood up.\nactions.cds+=/use_item,name=ashvanes_razor_coral,if=debuff.razor_coral_debuff.down||debuff.conductive_ink_debuff.up&target.time_to_pct_30<5||!debuff.conductive_ink_debuff.up&(debuff.razor_coral_debuff.stack>=25-10*debuff.blood_of_the_enemy.up||time_to_die<40)&buff.symbols_of_death.remains>8\nactions.cds+=/use_item,name=mydas_talisman\n# Default fallback for usable items: Use with Symbols of Death.\nactions.cds+=/use_items,if=buff.symbols_of_death.up||time_to_die<20\n\n# Essences\nactions.essences=concentrated_flame,if=energy.time_to_max>1&!buff.symbols_of_death.up&(!dot.concentrated_flame_burn.ticking&!action.concentrated_flame.in_flight||full_recharge_time<gcd.max)\nactions.essences+=/blood_of_the_enemy,if=!cooldown.shadow_blades.up&cooldown.symbols_of_death.up||time_to_die<=10\nactions.essences+=/guardian_of_azeroth\nactions.essences+=/focused_azerite_beam,if=(spell_targets.shuriken_storm>=2||raid_event.adds.in>60)&!cooldown.symbols_of_death.up&!buff.symbols_of_death.up&energy.deficit>=30\nactions.essences+=/purifying_blast,if=spell_targets.shuriken_storm>=2||raid_event.adds.in>60\nactions.essences+=/the_unbound_force,if=buff.reckless_force.up||buff.reckless_force_counter.stack<10\nactions.essences+=/ripple_in_space\nactions.essences+=/worldvein_resonance,if=cooldown.symbols_of_death.remains<5||time_to_die<18\nactions.essences+=/memory_of_lucid_dreams,if=energy<40&buff.symbols_of_death.up\n# Hold Reaping Flames for execute range or kill buffs, if possible. Always try to get the lowest cooldown based on available enemies.\nactions.essences+=/reaping_flames,cycle_targets=1,if=target.time_to_die<1.5||((target.health.pct>80||target.health.pct<=20)&(active_enemies=1||target.time_to_die>29))||(target.time_to_pct_20>30&(active_enemies=1||target.time_to_die>44))\n\n# Finishers\nactions.finish=pool_resource,for_next=1\n# Eviscerate has highest priority with Night's Vengeance up.  Exception is AoE damage when SecTec is ready.\nactions.finish+=/eviscerate,if=buff.nights_vengeance.up&(spell_targets.shuriken_storm<2||variable.use_priority_rotation||!talent.secret_technique.enabled||!cooldown.secret_technique.up)\n# Keep up Nightblade if it is about to run out. Do not use NB during Dance, if talented into Dark Shadow.\nactions.finish+=/nightblade,if=(!talent.dark_shadow.enabled||!buff.shadow_dance.up)&time_to_die-remains>6&remains<tick_time*2\n# Multidotting outside Dance on targets that will live for the duration of Nightblade, refresh during pandemic. Multidot as long as 2+ targets do not have Nightblade up with Replicating Shadows (unless you have Night's Vengeance too).\nactions.finish+=/nightblade,cycle_targets=1,if=!variable.use_priority_rotation&spell_targets.shuriken_storm>=2&(azerite.nights_vengeance.enabled||!azerite.replicating_shadows.enabled||spell_targets.shuriken_storm-active_dot.nightblade>=2)&!buff.shadow_dance.up&time_to_die>=(5+(2*combo_points))&refreshable\n# Refresh Nightblade early if it will expire during Symbols. Do that refresh if SoD gets ready in the next 5s.\nactions.finish+=/nightblade,if=remains<cooldown.symbols_of_death.remains+10&cooldown.symbols_of_death.remains<=5&time_to_die-remains>cooldown.symbols_of_death.remains+5\nactions.finish+=/secret_technique\nactions.finish+=/eviscerate\n\n# Stealth Cooldowns\n# Helper Variable\nactions.stealth_cds=variable,name=shd_threshold,value=cooldown.shadow_dance.charges_fractional>=1.75\n# Vanish unless we are about to cap on Dance charges. Only when Find Weakness is about to run out.\nactions.stealth_cds+=/vanish,if=!variable.shd_threshold&combo_points.deficit>1&debuff.find_weakness.remains<1&cooldown.symbols_of_death.remains>=3\n# Pool for Shadowmeld + Shadowstrike unless we are about to cap on Dance charges. Only when Find Weakness is about to run out.\nactions.stealth_cds+=/pool_resource,for_next=1,extra_amount=40\nactions.stealth_cds+=/shadowmeld,if=energy>=40&energy.deficit>=10&!variable.shd_threshold&combo_points.deficit>1&debuff.find_weakness.remains<1\n# CP requirement: Dance at low CP by default. (Subtraction is a copy from the stealhed finisher call for TFD handling.)\nactions.stealth_cds+=/variable,name=shd_combo_points,value=combo_points.deficit>=4-(talent.deeper_stratagem.enabled&(azerite.the_first_dance.enabled&!talent.dark_shadow.enabled&!talent.subterfuge.enabled&spell_targets.shuriken_storm<3))\n# CP requirement: Dance only before finishers if we have amp talents and priority rotation.\nactions.stealth_cds+=/variable,name=shd_combo_points,value=combo_points.deficit<=1+2*azerite.the_first_dance.enabled,if=variable.use_priority_rotation&(talent.nightstalker.enabled||talent.dark_shadow.enabled)\n# With Dark Shadow only Dance when Nightblade will stay up. Use during Symbols or above threshold. Wait for NV buff with 2+NV.\nactions.stealth_cds+=/shadow_dance,if=variable.shd_combo_points&(!talent.dark_shadow.enabled||dot.nightblade.remains>=5+talent.subterfuge.enabled)&(variable.shd_threshold||buff.symbols_of_death.remains>=1.2||spell_targets.shuriken_storm>=4&cooldown.symbols_of_death.remains>10)&(azerite.nights_vengeance.rank<2||buff.nights_vengeance.up)\n# Burn remaining Dances before the target dies if SoD won't be ready in time.\nactions.stealth_cds+=/shadow_dance,if=variable.shd_combo_points&time_to_die<cooldown.symbols_of_death.remains&!raid_event.adds.up\n\n# Stealthed Rotation\n# If Stealth/vanish are up, use Shadowstrike to benefit from the passive bonus and Find Weakness, even if we are at max CP (from the precombat MfD).\nactions.stealthed=shadowstrike,if=(talent.find_weakness.enabled||spell_targets.shuriken_storm<3)&(buff.stealth.up||buff.vanish.up)\n# Finish at 3+ CP without DS / 4+ with DS with Shuriken Tornado buff up to avoid some CP waste situations.\nactions.stealthed+=/call_action_list,name=finish,if=buff.shuriken_tornado.up&combo_points.deficit<=2\n# Also safe to finish at 4+ CP with exactly 4 targets. (Same as outside stealth.)\nactions.stealthed+=/call_action_list,name=finish,if=spell_targets.shuriken_storm=4&combo_points>=4\n# Finish at 4+ CP without DS, 5+ with DS, and 6 with DS after Vanish or The First Dance and no Dark Shadow + no Subterfuge\nactions.stealthed+=/call_action_list,name=finish,if=combo_points.deficit<=1-(talent.deeper_stratagem.enabled&(buff.vanish.up||azerite.the_first_dance.enabled&!talent.dark_shadow.enabled&!talent.subterfuge.enabled&spell_targets.shuriken_storm<3))\n# Use Gloomblade over Shadowstrike and Storm with 2+ Perforate at 2 or less targets.\nactions.stealthed+=/gloomblade,if=azerite.perforate.rank>=2&spell_targets.shuriken_storm<=2\n# At 2 targets with Secret Technique keep up Find Weakness by cycling Shadowstrike.\nactions.stealthed+=/shadowstrike,cycle_targets=1,if=talent.secret_technique.enabled&talent.find_weakness.enabled&debuff.find_weakness.remains<1&spell_targets.shuriken_storm=2&time_to_die-remains>6\n# Without Deeper Stratagem and 3 Ranks of Blade in the Shadows it is worth using Shadowstrike on 3 targets.\nactions.stealthed+=/shadowstrike,if=!talent.deeper_stratagem.enabled&azerite.blade_in_the_shadows.rank=3&spell_targets.shuriken_storm=3\n# For priority rotation, use Shadowstrike over Storm 1) with WM against up to 4 targets, 2) if FW is running off (on any amount of targets), or 3) to maximize SoD extension with Inevitability on 3 targets (4 with BitS).\nactions.stealthed+=/shadowstrike,if=variable.use_priority_rotation&(talent.find_weakness.enabled&debuff.find_weakness.remains<1||talent.weaponmaster.enabled&spell_targets.shuriken_storm<=4||azerite.inevitability.enabled&buff.symbols_of_death.up&spell_targets.shuriken_storm<=3+azerite.blade_in_the_shadows.enabled)\nactions.stealthed+=/shuriken_storm,if=spell_targets>=3\nactions.stealthed+=/shadowstrike",
-					["spec"] = 261,
-				},
-				["Assassination"] = {
-					["source"] = "https://github.com/simulationcraft/simc/",
-					["builtIn"] = true,
-					["date"] = 20200330,
-					["author"] = "SimC",
-					["desc"] = "# Assassination Rogue\n# https://github.com/simulationcraft/simc/\n# March 30, 2020\n\n# Changes:\n# - Added Kick to default action list.\n# - Remove target_if.\n# - Added Use Items (outside of stealth).",
-					["lists"] = {
-						["stealthed"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.nightstalker.enabled & combo_points >= 4 & target.time_to_die - remains > 6",
-								["action"] = "rupture",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["for_next"] = 1,
-								["action"] = "pool_resource",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "azerite.shrouded_suffocation.enabled & buff.subterfuge.up & buff.subterfuge.remains < 1.3 & ! ss_buffed",
-								["action"] = "garrote",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["for_next"] = 1,
-								["action"] = "pool_resource",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["action"] = "garrote",
-								["criteria"] = "talent.subterfuge.enabled & ( remains < 12 || pmultiplier <= 1 ) & target.time_to_die - remains > 2",
-								["cycle_targets"] = 1,
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.subterfuge.enabled & azerite.shrouded_suffocation.enabled & ! dot.rupture.ticking & variable.single_target",
-								["action"] = "rupture",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["for_next"] = 1,
-								["action"] = "pool_resource",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["action"] = "garrote",
-								["criteria"] = "talent.subterfuge.enabled & azerite.shrouded_suffocation.enabled & ( active_enemies > 1 || ! talent.exsanguinate.enabled ) & target.time_to_die > remains & ( remains < 18 || ! ss_buffed )",
-								["cycle_targets"] = 1,
-							}, -- [8]
-							{
-								["enabled"] = true,
-								["for_next"] = 1,
-								["action"] = "pool_resource",
-							}, -- [9]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.subterfuge.enabled & talent.exsanguinate.enabled & active_enemies = 1 & buff.subterfuge.remains < 1.3",
-								["action"] = "garrote",
-							}, -- [10]
-						},
-						["essences"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "energy.time_to_max > 1 & ! debuff.vendetta.up & ( ! dot.concentrated_flame_burn.ticking & ! action.concentrated_flame.in_flight || full_recharge_time < gcd.max )",
-								["action"] = "concentrated_flame",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "debuff.vendetta.up & ( debuff.garrote.exsanguinated || debuff.toxic_blade.up & combo_points.deficit <= 1 || debuff.vendetta.remains <= 10 ) || time_to_die <= 10",
-								["action"] = "blood_of_the_enemy",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "cooldown.vendetta.remains < 3 || debuff.vendetta.up || target.time_to_die < 30",
-								["action"] = "guardian_of_azeroth",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "floor ( ( target.time_to_die - 30 ) % action_cooldown ) > floor ( ( target.time_to_die - 30 - cooldown.vendetta.remains ) % action_cooldown )",
-								["action"] = "guardian_of_azeroth",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "spell_targets.fan_of_knives >= 2 || raid_event.adds.in > 60 & energy < 70",
-								["action"] = "focused_azerite_beam",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "spell_targets.fan_of_knives >= 2 || raid_event.adds.in > 60",
-								["action"] = "purifying_blast",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.reckless_force.up || buff.reckless_force_counter.stack < 10",
-								["action"] = "the_unbound_force",
-							}, -- [7]
-							{
-								["action"] = "ripple_in_space",
-								["enabled"] = true,
-							}, -- [8]
-							{
-								["action"] = "worldvein_resonance",
-								["enabled"] = true,
-							}, -- [9]
-							{
-								["enabled"] = true,
-								["criteria"] = "energy < 50 & ! cooldown.vendetta.up",
-								["action"] = "memory_of_lucid_dreams",
-							}, -- [10]
-							{
-								["enabled"] = true,
-								["action"] = "reaping_flames",
-								["criteria"] = "target.time_to_die < 1.5 || ( ( target.health.pct > 80 || target.health.pct <= 20 ) & ( active_enemies = 1 || target.time_to_die > 29 ) ) || ( target.time_to_pct_20 > 30 & ( active_enemies = 1 || target.time_to_die > 44 ) )",
-								["cycle_targets"] = 1,
-							}, -- [11]
-						},
-						["default"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "! stealthed.all",
-								["action"] = "kick",
-							}, -- [1]
-							{
-								["action"] = "stealth",
-								["enabled"] = true,
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "energy.regen + poisoned_bleeds * 7 % ( 2 * spell_haste )",
-								["var_name"] = "energy_regen_combined",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "spell_targets.fan_of_knives < 2",
-								["var_name"] = "single_target",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "stealthed.rogue",
-								["action"] = "call_action_list",
-								["list_name"] = "stealthed",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "( ! talent.master_assassin.enabled || dot.garrote.ticking )",
-								["action"] = "call_action_list",
-								["list_name"] = "cds",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["list_name"] = "dot",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["list_name"] = "direct",
-							}, -- [8]
-							{
-								["enabled"] = true,
-								["criteria"] = "energy.deficit >= 15 + variable.energy_regen_combined",
-								["action"] = "arcane_torrent",
-							}, -- [9]
-							{
-								["action"] = "arcane_pulse",
-								["enabled"] = true,
-							}, -- [10]
-							{
-								["action"] = "lights_judgment",
-								["enabled"] = true,
-							}, -- [11]
-							{
-								["action"] = "bag_of_tricks",
-								["enabled"] = true,
-							}, -- [12]
-						},
-						["precombat"] = {
-							{
-								["action"] = "apply_poison",
-								["enabled"] = true,
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["action"] = "marked_for_death",
-								["criteria"] = "raid_event.adds.in > 15",
-								["precombat_seconds"] = "5",
-							}, -- [2]
-							{
-								["action"] = "stealth",
-								["enabled"] = true,
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["name"] = "azsharas_font_of_power",
-								["action"] = "azsharas_font_of_power",
-							}, -- [4]
-							{
-								["action"] = "potion",
-								["enabled"] = true,
-							}, -- [5]
-						},
-						["direct"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "combo_points >= 4 + talent.deeper_stratagem.enabled & ( debuff.vendetta.up || debuff.toxic_blade.up || energy.deficit <= ( envenom_pool_deficit >? ( 25 + variable.energy_regen_combined ) ) || ! variable.single_target ) & ( ! talent.exsanguinate.enabled || cooldown.exsanguinate.remains > 2 )",
-								["action"] = "envenom",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "combo_points.deficit > 1 || energy.deficit <= 25 + variable.energy_regen_combined || ! variable.single_target",
-								["var_name"] = "use_filler",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.use_filler & azerite.echoing_blades.enabled & spell_targets.fan_of_knives >= 2 + ( debuff.vendetta.up * ( 1 + ( azerite.echoing_blades.rank = 1 ) ) )",
-								["action"] = "fan_of_knives",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.use_filler & ( buff.hidden_blades.stack >= 19 || ( ! priority_rotation & spell_targets.fan_of_knives >= 4 + ( azerite.double_dose.rank > 2 ) + stealthed.rogue ) )",
-								["action"] = "fan_of_knives",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["action"] = "fan_of_knives",
-								["criteria"] = "variable.use_filler & spell_targets.fan_of_knives >= 3",
-								["cycle_targets"] = 1,
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.use_filler & ( buff.blindside.up || ! talent.venom_rush.enabled & ! azerite.double_dose.enabled )",
-								["action"] = "blindside",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["action"] = "mutilate",
-								["criteria"] = "variable.use_filler & spell_targets.fan_of_knives = 2",
-								["cycle_targets"] = 1,
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.use_filler",
-								["action"] = "mutilate",
-							}, -- [8]
-						},
-						["cds"] = {
-							{
-								["enabled"] = true,
-								["name"] = "azsharas_font_of_power",
-								["action"] = "azsharas_font_of_power",
-								["criteria"] = "! stealthed.all & master_assassin_remains = 0 & ( cooldown.vendetta.remains <? ( cooldown.toxic_blade.remains * equipped.ashvanes_razor_coral ) ) < 10 + 10 * equipped.ashvanes_razor_coral & ! debuff.vendetta.up & ! debuff.toxic_blade.up",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "! stealthed.all & dot.rupture.ticking & master_assassin_remains = 0",
-								["action"] = "call_action_list",
-								["list_name"] = "essences",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["action"] = "marked_for_death",
-								["criteria"] = "raid_event.adds.up & ( target.time_to_die < combo_points.deficit * 1.5 || combo_points.deficit >= cp_max_spend )",
-								["cycle_targets"] = 1,
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "raid_event.adds.in > 30 - raid_event.adds.duration & combo_points.deficit >= cp_max_spend",
-								["action"] = "marked_for_death",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "! talent.subterfuge.enabled || ! azerite.shrouded_suffocation.enabled || dot.garrote.pmultiplier > 1 & ( spell_targets.fan_of_knives < 6 || ! cooldown.vanish.up )",
-								["var_name"] = "vendetta_subterfuge_condition",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "! talent.nightstalker.enabled || ! talent.exsanguinate.enabled || cooldown.exsanguinate.remains < 5 - 2 * talent.deeper_stratagem.enabled",
-								["var_name"] = "vendetta_nightstalker_condition",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "! equipped.azsharas_font_of_power || azerite.shrouded_suffocation.enabled || debuff.razor_coral_debuff.down || cooldown.ashvanes_razor_coral.remains < 10 & ( cooldown.toxic_blade.remains < 1 || debuff.toxic_blade.up )",
-								["var_name"] = "vendetta_font_condition",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["criteria"] = "! stealthed.rogue & dot.rupture.ticking & ! debuff.vendetta.up & variable.vendetta_subterfuge_condition & variable.vendetta_nightstalker_condition & variable.vendetta_font_condition",
-								["action"] = "vendetta",
-							}, -- [8]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.exsanguinate.enabled & talent.nightstalker.enabled & combo_points >= cp_max_spend & cooldown.exsanguinate.remains < 1",
-								["action"] = "vanish",
-							}, -- [9]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.nightstalker.enabled & ! talent.exsanguinate.enabled & combo_points >= cp_max_spend & ( debuff.vendetta.up || essence.vision_of_perfection.enabled )",
-								["action"] = "vanish",
-							}, -- [10]
-							{
-								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "azerite.shrouded_suffocation.enabled & ( non_ss_buffed_targets >= 1 || spell_targets.fan_of_knives = 3 ) & ( ss_buffed_targets_above_pandemic = 0 || spell_targets.fan_of_knives >= 6 )",
-								["var_name"] = "ss_vanish_condition",
-							}, -- [11]
-							{
-								["enabled"] = true,
-								["for_next"] = 1,
-								["action"] = "pool_resource",
-								["extra_amount"] = "45",
-							}, -- [12]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.subterfuge.enabled & ! stealthed.rogue & cooldown.garrote.up & ( variable.ss_vanish_condition || ! azerite.shrouded_suffocation.enabled & ( dot.garrote.refreshable || debuff.vendetta.up & dot.garrote.pmultiplier <= 1 ) ) & combo_points.deficit >= ( ( 1 + 2 * azerite.shrouded_suffocation.enabled ) * spell_targets.fan_of_knives ) >? 4 & raid_event.adds.in > 12",
-								["action"] = "vanish",
-							}, -- [13]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.master_assassin.enabled & ! stealthed.all & master_assassin_remains <= 0 & ! dot.rupture.refreshable & dot.garrote.remains > 3 & ( debuff.vendetta.up & ( ! talent.toxic_blade.enabled || debuff.toxic_blade.up ) & ( ! essence.blood_of_the_enemy.major || debuff.blood_of_the_enemy.up ) || essence.vision_of_perfection.enabled )",
-								["action"] = "vanish",
-							}, -- [14]
-							{
-								["enabled"] = true,
-								["criteria"] = "! stealthed.all & azerite.shrouded_suffocation.enabled & dot.garrote.refreshable & dot.garrote.pmultiplier <= 1 & combo_points.deficit >= 1",
-								["action"] = "shadowmeld",
-							}, -- [15]
-							{
-								["enabled"] = true,
-								["criteria"] = "! stealthed.rogue & ! dot.garrote.refreshable & dot.rupture.remains > 4 + 4 * cp_max_spend",
-								["action"] = "exsanguinate",
-							}, -- [16]
-							{
-								["enabled"] = true,
-								["criteria"] = "dot.rupture.ticking & ( ! equipped.azsharas_font_of_power || cooldown.vendetta.remains > 10 )",
-								["action"] = "toxic_blade",
-							}, -- [17]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.bloodlust.react || debuff.vendetta.up",
-								["action"] = "potion",
-							}, -- [18]
-							{
-								["enabled"] = true,
-								["criteria"] = "debuff.vendetta.up",
-								["action"] = "blood_fury",
-							}, -- [19]
-							{
-								["enabled"] = true,
-								["criteria"] = "debuff.vendetta.up",
-								["action"] = "berserking",
-							}, -- [20]
-							{
-								["enabled"] = true,
-								["criteria"] = "debuff.vendetta.up",
-								["action"] = "fireblood",
+								["criteria"] = "talent.crashing_storm.enabled || buff.crash_lightning.down",
+								["action"] = "crash_lightning",
 							}, -- [21]
 							{
 								["enabled"] = true,
-								["criteria"] = "debuff.vendetta.up",
-								["action"] = "ancestral_call",
+								["criteria"] = "talent.lashing_flames.enabled",
+								["action"] = "lava_lash",
+								["cycle_targets"] = 1,
 							}, -- [22]
 							{
 								["enabled"] = true,
-								["name"] = "galecallers_boon",
-								["action"] = "galecallers_boon",
-								["criteria"] = "cooldown.vendetta.remains > 45",
+								["criteria"] = "active_dot.flame_shock >= 3",
+								["action"] = "fire_nova",
 							}, -- [23]
 							{
+								["action"] = "vesper_totem",
 								["enabled"] = true,
-								["name"] = "ashvanes_razor_coral",
-								["action"] = "ashvanes_razor_coral",
-								["criteria"] = "debuff.razor_coral_debuff.down || debuff.vendetta.remains > 10 - 4 * equipped.azsharas_font_of_power || target.time_to_die < 20",
 							}, -- [24]
 							{
 								["enabled"] = true,
-								["action"] = "cyclotronic_blast",
-								["criteria"] = "master_assassin_remains = 0 & ! debuff.vendetta.up & ! debuff.toxic_blade.up & buff.memory_of_lucid_dreams.down & energy < 80 & dot.rupture.remains > 4",
-								["effect_name"] = "cyclotronic_blast",
+								["criteria"] = "buff.stormkeeper.up",
+								["action"] = "chain_lightning",
 							}, -- [25]
 							{
 								["enabled"] = true,
-								["name"] = "lurkers_insidious_gift",
-								["action"] = "lurkers_insidious_gift",
-								["criteria"] = "debuff.vendetta.up",
+								["criteria"] = "buff.crash_lightning.up",
+								["action"] = "lava_lash",
 							}, -- [26]
 							{
 								["enabled"] = true,
-								["name"] = "lustrous_golden_plumage",
-								["action"] = "lustrous_golden_plumage",
-								["criteria"] = "debuff.vendetta.up",
+								["criteria"] = "buff.maelstrom_weapon.stack >= 5",
+								["action"] = "elemental_blast",
 							}, -- [27]
 							{
 								["enabled"] = true,
-								["action"] = "gladiators_medallion",
-								["criteria"] = "debuff.vendetta.up",
-								["effect_name"] = "gladiators_medallion",
+								["criteria"] = "buff.maelstrom_weapon.stack >= 5",
+								["action"] = "stormkeeper",
 							}, -- [28]
 							{
 								["enabled"] = true,
-								["action"] = "gladiators_badge",
-								["criteria"] = "debuff.vendetta.up",
-								["effect_name"] = "gladiators_badge",
+								["criteria"] = "buff.maelstrom_weapon.stack = 10",
+								["action"] = "chain_lightning",
 							}, -- [29]
 							{
-								["action"] = "use_items",
 								["enabled"] = true,
+								["criteria"] = "buff.crash_lightning.up",
+								["action"] = "stormstrike",
 							}, -- [30]
-						},
-						["dot"] = {
 							{
 								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "priority_rotation & spell_targets.fan_of_knives > 3 & ( dot.garrote.remains < cooldown.garrote.duration || poisoned_bleeds > 5 )",
-								["var_name"] = "skip_cycle_garrote",
+								["criteria"] = "active_dot.flame_shock >= 2",
+								["action"] = "fire_nova",
+							}, -- [31]
+							{
+								["action"] = "crash_lightning",
+								["enabled"] = true,
+							}, -- [32]
+							{
+								["action"] = "windstrike",
+								["enabled"] = true,
+							}, -- [33]
+							{
+								["action"] = "stormstrike",
+								["enabled"] = true,
+							}, -- [34]
+							{
+								["enabled"] = true,
+								["interrupt"] = "1",
+								["action"] = "fleshcraft",
+								["criteria"] = "soulbind.volatile_solvent.enabled",
+							}, -- [35]
+							{
+								["enabled"] = true,
+								["criteria"] = "refreshable",
+								["action"] = "flame_shock",
+								["cycle_targets"] = 1,
+							}, -- [36]
+							{
+								["action"] = "fae_transfusion",
+								["enabled"] = true,
+							}, -- [37]
+							{
+								["action"] = "frost_shock",
+								["enabled"] = true,
+							}, -- [38]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.maelstrom_weapon.stack >= 5",
+								["action"] = "chain_lightning",
+							}, -- [39]
+							{
+								["action"] = "earthen_spike",
+								["enabled"] = true,
+							}, -- [40]
+							{
+								["action"] = "earth_elemental",
+								["enabled"] = true,
+							}, -- [41]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.windfury_totem.remains < 30",
+								["action"] = "windfury_totem",
+							}, -- [42]
+						},
+						["single"] = {
+							{
+								["action"] = "windstrike",
+								["enabled"] = true,
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "priority_rotation & spell_targets.fan_of_knives > 3 & ( debuff.toxic_blade.up || ( poisoned_bleeds > 5 & ! azerite.scent_of_blood.enabled ) )",
-								["var_name"] = "skip_cycle_rupture",
+								["criteria"] = "buff.hot_hand.up || ( runeforge.primal_lava_actuators.equipped & buff.primal_lava_actuators.stack > 6 )",
+								["action"] = "lava_lash",
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "debuff.vendetta.up & ( debuff.toxic_blade.up || master_assassin_remains > 0 ) & dot.rupture.remains > 2",
-								["var_name"] = "skip_rupture",
+								["criteria"] = "! buff.windfury_totem.up",
+								["action"] = "windfury_totem",
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["criteria"] = "talent.exsanguinate.enabled & ( ( combo_points >= cp_max_spend & cooldown.exsanguinate.remains < 1 ) || ( ! ticking & ( time > 10 || combo_points >= 2 ) ) )",
-								["action"] = "rupture",
+								["criteria"] = "runeforge.doom_winds.equipped & buff.doom_winds.up",
+								["action"] = "stormstrike",
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["for_next"] = 1,
-								["action"] = "pool_resource",
+								["criteria"] = "runeforge.doom_winds.equipped & buff.doom_winds.up",
+								["action"] = "crash_lightning",
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["criteria"] = "( ! talent.subterfuge.enabled || ! ( cooldown.vanish.up & cooldown.vendetta.remains <= 4 ) ) & combo_points.deficit >= 1 + 3 * ( azerite.shrouded_suffocation.enabled & cooldown.vanish.up ) & refreshable & ( pmultiplier <= 1 || remains <= tick_time & spell_targets.fan_of_knives >= 3 + azerite.shrouded_suffocation.enabled ) & ( ! exsanguinated || remains <= tick_time * 2 & spell_targets.fan_of_knives >= 3 + azerite.shrouded_suffocation.enabled ) & ! ss_buffed & ( target.time_to_die - remains ) > 4 & ( master_assassin_remains = 0 || ! ticking & azerite.shrouded_suffocation.enabled )",
-								["action"] = "garrote",
+								["criteria"] = "runeforge.doom_winds.equipped & buff.doom_winds.up",
+								["action"] = "ice_strike",
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["for_next"] = 1,
-								["action"] = "pool_resource",
+								["criteria"] = "runeforge.doom_winds.equipped & buff.doom_winds.up",
+								["action"] = "sundering",
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["action"] = "garrote",
-								["criteria"] = "! variable.skip_cycle_garrote & ( ! talent.subterfuge.enabled || ! ( cooldown.vanish.up & cooldown.vendetta.remains <= 4 ) ) & combo_points.deficit >= 1 + 3 * ( azerite.shrouded_suffocation.enabled & cooldown.vanish.up ) & refreshable & ( pmultiplier <= 1 || remains <= tick_time & spell_targets.fan_of_knives >= 3 + azerite.shrouded_suffocation.enabled ) & ( ! exsanguinated || remains <= tick_time * 2 & spell_targets.fan_of_knives >= 3 + azerite.shrouded_suffocation.enabled ) & ! ss_buffed & ( target.time_to_die - remains ) > 12 & ( master_assassin_remains = 0 || ! ticking & azerite.shrouded_suffocation.enabled )",
-								["cycle_targets"] = 1,
+								["criteria"] = "buff.primordial_wave.down & ( raid_event.adds.in > 42 || raid_event.adds.in < 6 )",
+								["action"] = "primordial_wave",
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["criteria"] = "spell_targets >= 2 & remains < 2 + ( spell_targets >= 5 ) & combo_points >= 4",
-								["action"] = "crimson_tempest",
+								["criteria"] = "! ticking",
+								["action"] = "flame_shock",
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["criteria"] = "! variable.skip_rupture & combo_points >= 4 & refreshable & ( pmultiplier <= 1 || remains <= tick_time & spell_targets.fan_of_knives >= 3 + azerite.shrouded_suffocation.enabled ) & ( ! exsanguinated || remains <= tick_time * 2 & spell_targets.fan_of_knives >= 3 + azerite.shrouded_suffocation.enabled ) & target.time_to_die - remains > 4",
-								["action"] = "rupture",
+								["criteria"] = "buff.maelstrom_weapon.stack >= 5 & buff.primordial_wave.up & raid_event.adds.in > buff.primordial_wave.remains & ( ! buff.splintered_elements.up || fight_remains <= 12 )",
+								["action"] = "lightning_bolt",
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["action"] = "rupture",
-								["criteria"] = "! variable.skip_cycle_rupture & ! variable.skip_rupture & combo_points >= 4 & refreshable & ( pmultiplier <= 1 || remains <= tick_time & spell_targets.fan_of_knives >= 3 + azerite.shrouded_suffocation.enabled ) & ( ! exsanguinated || remains <= tick_time * 2 & spell_targets.fan_of_knives >= 3 + azerite.shrouded_suffocation.enabled ) & target.time_to_die - remains > 4",
-								["cycle_targets"] = 1,
+								["criteria"] = "raid_event.adds.in > 40",
+								["action"] = "vesper_totem",
 							}, -- [11]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.hailstorm.up",
+								["action"] = "frost_shock",
+							}, -- [12]
+							{
+								["action"] = "earthen_spike",
+								["enabled"] = true,
+							}, -- [13]
+							{
+								["enabled"] = true,
+								["criteria"] = "dot.flame_shock.refreshable",
+								["action"] = "lava_lash",
+							}, -- [14]
+							{
+								["enabled"] = true,
+								["criteria"] = "! runeforge.seeds_of_rampant_growth.equipped || cooldown.feral_spirit.remains > 30",
+								["action"] = "fae_transfusion",
+							}, -- [15]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.stormflurry.enabled & buff.stormbringer.up",
+								["action"] = "stormstrike",
+							}, -- [16]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.stormkeeper.up",
+								["action"] = "chain_lightning",
+							}, -- [17]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.maelstrom_weapon.stack >= 5",
+								["action"] = "elemental_blast",
+							}, -- [18]
+							{
+								["enabled"] = true,
+								["criteria"] = "runeforge.raging_vesper_vortex.equipped & talent.earth_shield.enabled & ( vesper_totem_heal_charges > 1 || ( vesper_totem_heal_charges > 0 & raid_event.adds.in > ( buff.vesper_totem.remains - 3 ) ) )",
+								["action"] = "healing_stream_totem",
+							}, -- [19]
+							{
+								["enabled"] = true,
+								["criteria"] = "runeforge.raging_vesper_vortex.equipped & talent.earth_shield.enabled & ( vesper_totem_heal_charges > 1 || ( vesper_totem_heal_charges > 0 & raid_event.adds.in > ( buff.vesper_totem.remains - 3 ) ) )",
+								["action"] = "earth_shield",
+							}, -- [20]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.maelstrom_weapon.stack >= 5 & raid_event.adds.in >= 90",
+								["action"] = "chain_harvest",
+							}, -- [21]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.maelstrom_weapon.stack = 10 & buff.primordial_wave.down",
+								["action"] = "lightning_bolt",
+							}, -- [22]
+							{
+								["action"] = "stormstrike",
+								["enabled"] = true,
+							}, -- [23]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.maelstrom_weapon.stack >= 5",
+								["action"] = "stormkeeper",
+							}, -- [24]
+							{
+								["enabled"] = true,
+								["interrupt"] = "1",
+								["action"] = "fleshcraft",
+								["criteria"] = "soulbind.volatile_solvent.enabled",
+							}, -- [25]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.windfury_totem.remains < 10",
+								["action"] = "windfury_totem",
+							}, -- [26]
+							{
+								["action"] = "lava_lash",
+								["enabled"] = true,
+							}, -- [27]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.maelstrom_weapon.stack >= 5 & buff.primordial_wave.down",
+								["action"] = "lightning_bolt",
+							}, -- [28]
+							{
+								["enabled"] = true,
+								["criteria"] = "raid_event.adds.in >= 40",
+								["action"] = "sundering",
+							}, -- [29]
+							{
+								["action"] = "frost_shock",
+								["enabled"] = true,
+							}, -- [30]
+							{
+								["action"] = "crash_lightning",
+								["enabled"] = true,
+							}, -- [31]
+							{
+								["action"] = "ice_strike",
+								["enabled"] = true,
+							}, -- [32]
+							{
+								["enabled"] = true,
+								["criteria"] = "active_dot.flame_shock",
+								["action"] = "fire_nova",
+							}, -- [33]
+							{
+								["enabled"] = true,
+								["criteria"] = "soulbind.pustule_eruption.enabled",
+								["action"] = "fleshcraft",
+							}, -- [34]
+							{
+								["action"] = "earth_elemental",
+								["enabled"] = true,
+							}, -- [35]
+							{
+								["enabled"] = true,
+								["criteria"] = "settings.filler_shock",
+								["action"] = "flame_shock",
+							}, -- [36]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.windfury_totem.remains < 30",
+								["action"] = "windfury_totem",
+							}, -- [37]
+						},
+						["default"] = {
+							{
+								["action"] = "bloodlust",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["action"] = "potion",
+								["criteria"] = "( talent.ascendance.enabled & raid_event.adds.in >= 90 & cooldown.ascendance.remains < 10 ) || ( talent.hot_hand.enabled & buff.molten_weapon.up ) || buff.icy_edge.up || ( talent.stormflurry.enabled & buff.crackling_surge.up ) || debuff.earthen_spike.up || active_enemies > 1 || boss & fight_remains < 30",
+								["description"] = "In-combat potion is before combat ends.",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["description"] = "Interrupt",
+								["action"] = "wind_shear",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["name"] = "the_first_sigil",
+								["action"] = "the_first_sigil",
+								["criteria"] = "( talent.ascendance.enabled & raid_event.adds.in >= 90 & cooldown.ascendance.remains < 10 ) || ( talent.hot_hand.enabled & buff.molten_weapon.up ) || buff.icy_edge.up || ( talent.stormflurry.enabled & buff.crackling_surge.up ) || debuff.earthen_spike.up || active_enemies > 1 || fight_remains < 30",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["name"] = "cache_of_acquired_treasures",
+								["action"] = "cache_of_acquired_treasures",
+								["criteria"] = "buff.acquired_sword.up || fight_remains < 25",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["name"] = "scars_of_fraternal_strife",
+								["action"] = "scars_of_fraternal_strife",
+								["criteria"] = "! buff.scars_of_fraternal_strife_4.up || fight_remains < 31 || raid_event.adds.in < 16 || active_enemies > 1",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "! variable.trinket1_is_weird",
+								["action"] = "trinket1",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["criteria"] = "! variable.trinket2_is_weird",
+								["action"] = "trinket2",
+							}, -- [8]
+							{
+								["action"] = "use_items",
+								["enabled"] = true,
+							}, -- [9]
+							{
+								["enabled"] = true,
+								["criteria"] = "! talent.ascendance.enabled || buff.ascendance.up || cooldown.ascendance.remains > 50",
+								["action"] = "blood_fury",
+							}, -- [10]
+							{
+								["enabled"] = true,
+								["criteria"] = "! talent.ascendance.enabled || buff.ascendance.up",
+								["action"] = "berserking",
+							}, -- [11]
+							{
+								["enabled"] = true,
+								["criteria"] = "! talent.ascendance.enabled || buff.ascendance.up || cooldown.ascendance.remains > 50",
+								["action"] = "fireblood",
+							}, -- [12]
+							{
+								["enabled"] = true,
+								["criteria"] = "! talent.ascendance.enabled || buff.ascendance.up || cooldown.ascendance.remains > 50",
+								["action"] = "ancestral_call",
+							}, -- [13]
+							{
+								["enabled"] = true,
+								["criteria"] = "! talent.ascendance.enabled || ! buff.ascendance.up",
+								["action"] = "bag_of_tricks",
+							}, -- [14]
+							{
+								["action"] = "feral_spirit",
+								["enabled"] = true,
+							}, -- [15]
+							{
+								["enabled"] = true,
+								["criteria"] = "( talent.ascendance.enabled || runeforge.doom_winds.equipped ) & ( soulbind.grove_invigoration.enabled || soulbind.field_of_blossoms.enabled || active_enemies = 1 )",
+								["action"] = "fae_transfusion",
+							}, -- [16]
+							{
+								["enabled"] = true,
+								["criteria"] = "raid_event.adds.in >= 90 || active_enemies > 1",
+								["action"] = "ascendance",
+							}, -- [17]
+							{
+								["enabled"] = true,
+								["criteria"] = "runeforge.doom_winds.equipped & buff.doom_winds_debuff.down & ( raid_event.adds.in >= 60 || active_enemies > 1 ) || buff.windfury_totem.down & ( ! runeforge.doom_winds.equipped || buff.doom_winds_debuff.up )",
+								["action"] = "windfury_totem",
+								["line_cd"] = "15",
+							}, -- [18]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["description"] = "If only one enemy, priority follows the 'single' action list.",
+								["strict"] = 1,
+								["criteria"] = "active_enemies = 1",
+								["list_name"] = "single",
+							}, -- [19]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["description"] = "On multiple enemies, the priority follows the 'aoe' action list.",
+								["strict"] = 1,
+								["criteria"] = "active_enemies > 1",
+								["list_name"] = "aoe",
+							}, -- [20]
+							{
+								["action"] = "counterstrike_totem",
+								["enabled"] = true,
+							}, -- [21]
+							{
+								["action"] = "skyfury_totem",
+								["enabled"] = true,
+							}, -- [22]
+							{
+								["action"] = "primal_strike",
+								["enabled"] = true,
+							}, -- [23]
+						},
+						["precombat"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.windfury_weapon.remains < 300",
+								["action"] = "windfury_weapon",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.flametongue_weapon.remains < 300",
+								["action"] = "flametongue_weapon",
+							}, -- [2]
+							{
+								["action"] = "bottled_flayedwing_toxin",
+								["enabled"] = true,
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.lightning_shield.remains < 300",
+								["action"] = "lightning_shield",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.stormkeeper.enabled",
+								["action"] = "stormkeeper",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "! runeforge.doom_winds.equipped & buff.windfury_totem.down",
+								["action"] = "windfury_totem",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "soulbind.pustule_eruption.enabled || soulbind.volatile_solvent.enabled",
+								["action"] = "fleshcraft",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "trinket.t1.is.the_first_sigil || trinket.t1.is.scars_of_fraternal_strife || trinket.t1.is.cache_of_acquired_treasures",
+								["var_name"] = "trinket1_is_weird",
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "trinket.t2.is.the_first_sigil || trinket.t2.is.scars_of_fraternal_strife || trinket.t2.is.cache_of_acquired_treasures",
+								["var_name"] = "trinket2_is_weird",
+							}, -- [9]
 						},
 					},
-					["version"] = 20200330,
-					["warnings"] = "WARNING:  The import for 'essences' required some automated changes.\nLine 2: Converted 'exsanguinated.X' to 'debuff.X.exsanguinated' (1x).\n\nImported 7 action lists.\n",
-					["spec"] = 259,
-					["profile"] = "# Assassination Rogue\n# https://github.com/simulationcraft/simc/\n# March 30, 2020\n\n# Changes:\n# - Added Kick to default action list.\n# - Remove target_if.\n# - Added Use Items (outside of stealth).\n\n# Executed before combat begins. Accepts non-harmful actions only.\n# actions.precombat=flask\n# actions.precombat+=/augmentation\n# actions.precombat+=/food\n# Snapshot raid buffed stats before combat begins and pre-potting is done.\n# actions.precombat+=/snapshot_stats\nactions.precombat+=/apply_poison\nactions.precombat+=/marked_for_death,precombat_seconds=5,if=raid_event.adds.in>15\nactions.precombat+=/stealth\nactions.precombat+=/use_item,name=azsharas_font_of_power\nactions.precombat+=/potion\n\n# Executed every time the actor is available.\n# Restealth if possible (no vulnerable enemies in combat)\nactions=kick,if=!stealthed.all\nactions+=/stealth\nactions+=/variable,name=energy_regen_combined,value=energy.regen+poisoned_bleeds*7%(2*spell_haste)\nactions+=/variable,name=single_target,value=spell_targets.fan_of_knives<2\nactions+=/call_action_list,name=stealthed,if=stealthed.rogue\nactions+=/call_action_list,name=cds,if=(!talent.master_assassin.enabled||dot.garrote.ticking)\nactions+=/call_action_list,name=dot\nactions+=/call_action_list,name=direct\nactions+=/arcane_torrent,if=energy.deficit>=15+variable.energy_regen_combined\nactions+=/arcane_pulse\nactions+=/lights_judgment\nactions+=/bag_of_tricks\n\n# Cooldowns\nactions.cds=use_item,name=azsharas_font_of_power,if=!stealthed.all&master_assassin_remains=0&(cooldown.vendetta.remains<?(cooldown.toxic_blade.remains*equipped.ashvanes_razor_coral))<10+10*equipped.ashvanes_razor_coral&!debuff.vendetta.up&!debuff.toxic_blade.up\nactions.cds+=/call_action_list,name=essences,if=!stealthed.all&dot.rupture.ticking&master_assassin_remains=0\n# If adds are up, snipe the one with lowest TTD. Use when dying faster than CP deficit or without any CP.\nactions.cds+=/marked_for_death,cycle_targets=1,if=raid_event.adds.up&(target.time_to_die<combo_points.deficit*1.5||combo_points.deficit>=cp_max_spend)\n# If no adds will die within the next 30s, use MfD on boss without any CP.\nactions.cds+=/marked_for_death,if=raid_event.adds.in>30-raid_event.adds.duration&combo_points.deficit>=cp_max_spend\n# Vendetta logical conditionals based on current spec\nactions.cds+=/variable,name=vendetta_subterfuge_condition,value=!talent.subterfuge.enabled||!azerite.shrouded_suffocation.enabled||dot.garrote.pmultiplier>1&(spell_targets.fan_of_knives<6||!cooldown.vanish.up)\nactions.cds+=/variable,name=vendetta_nightstalker_condition,value=!talent.nightstalker.enabled||!talent.exsanguinate.enabled||cooldown.exsanguinate.remains<5-2*talent.deeper_stratagem.enabled\nactions.cds+=/variable,name=variable,name=vendetta_font_condition,value=!equipped.azsharas_font_of_power||azerite.shrouded_suffocation.enabled||debuff.razor_coral_debuff.down||cooldown.ashvanes_razor_coral.remains<10&(cooldown.toxic_blade.remains<1||debuff.toxic_blade.up)\nactions.cds+=/vendetta,if=!stealthed.rogue&dot.rupture.ticking&!debuff.vendetta.up&variable.vendetta_subterfuge_condition&variable.vendetta_nightstalker_condition&variable.vendetta_font_condition\n# Vanish with Exsg + Nightstalker: Maximum CP and Exsg ready for next GCD\nactions.cds+=/vanish,if=talent.exsanguinate.enabled&talent.nightstalker.enabled&combo_points>=cp_max_spend&cooldown.exsanguinate.remains<1\n# Vanish with Nightstalker + No Exsg: Maximum CP and Vendetta up (unless using VoP)\nactions.cds+=/vanish,if=talent.nightstalker.enabled&!talent.exsanguinate.enabled&combo_points>=cp_max_spend&(debuff.vendetta.up||essence.vision_of_perfection.enabled)\n# See full comment on https://github.com/Ravenholdt-TC/Rogue/wiki/Assassination-APL-Research.\nactions.cds+=/variable,name=ss_vanish_condition,value=azerite.shrouded_suffocation.enabled&(non_ss_buffed_targets>=1||spell_targets.fan_of_knives=3)&(ss_buffed_targets_above_pandemic=0||spell_targets.fan_of_knives>=6)\nactions.cds+=/pool_resource,for_next=1,extra_amount=45\nactions.cds+=/vanish,if=talent.subterfuge.enabled&!stealthed.rogue&cooldown.garrote.up&(variable.ss_vanish_condition||!azerite.shrouded_suffocation.enabled&(dot.garrote.refreshable||debuff.vendetta.up&dot.garrote.pmultiplier<=1))&combo_points.deficit>=((1+2*azerite.shrouded_suffocation.enabled)*spell_targets.fan_of_knives)>?4&raid_event.adds.in>12\n# Vanish with Master Assasin: No stealth and no active MA buff, Rupture not in refresh range, during Vendetta+TB+BotE (unless using VoP)\nactions.cds+=/vanish,if=talent.master_assassin.enabled&!stealthed.all&master_assassin_remains<=0&!dot.rupture.refreshable&dot.garrote.remains>3&(debuff.vendetta.up&(!talent.toxic_blade.enabled||debuff.toxic_blade.up)&(!essence.blood_of_the_enemy.major||debuff.blood_of_the_enemy.up)||essence.vision_of_perfection.enabled)\n# Shadowmeld for Shrouded Suffocation\nactions.cds+=/shadowmeld,if=!stealthed.all&azerite.shrouded_suffocation.enabled&dot.garrote.refreshable&dot.garrote.pmultiplier<=1&combo_points.deficit>=1\n# Exsanguinate when not stealthed and both Rupture and Garrote are up for long enough.\nactions.cds+=/exsanguinate,if=!stealthed.rogue&!dot.garrote.refreshable&dot.rupture.remains>4+4*cp_max_spend\nactions.cds+=/toxic_blade,if=dot.rupture.ticking&(!equipped.azsharas_font_of_power||cooldown.vendetta.remains>10)\nactions.cds+=/potion,if=buff.bloodlust.react||debuff.vendetta.up\nactions.cds+=/blood_fury,if=debuff.vendetta.up\nactions.cds+=/berserking,if=debuff.vendetta.up\nactions.cds+=/fireblood,if=debuff.vendetta.up\nactions.cds+=/ancestral_call,if=debuff.vendetta.up\nactions.cds+=/use_item,name=galecallers_boon,if=cooldown.vendetta.remains>45\nactions.cds+=/use_item,name=ashvanes_razor_coral,if=debuff.razor_coral_debuff.down||debuff.vendetta.remains>10-4*equipped.azsharas_font_of_power||target.time_to_die<20\nactions.cds+=/use_item,effect_name=cyclotronic_blast,if=master_assassin_remains=0&!debuff.vendetta.up&!debuff.toxic_blade.up&buff.memory_of_lucid_dreams.down&energy<80&dot.rupture.remains>4\nactions.cds+=/use_item,name=lurkers_insidious_gift,if=debuff.vendetta.up\nactions.cds+=/use_item,name=lustrous_golden_plumage,if=debuff.vendetta.up\nactions.cds+=/use_item,effect_name=gladiators_medallion,if=debuff.vendetta.up\nactions.cds+=/use_item,effect_name=gladiators_badge,if=debuff.vendetta.up\n# Default fallback for usable items: Use on cooldown.\nactions.cds+=/use_items\n\n# Direct damage abilities\n# Envenom at 4+ (5+ with DS) CP. Immediately on 2+ targets, with Vendetta, or with TB; otherwise wait for some energy. Also wait if Exsg combo is coming up.\nactions.direct=envenom,if=combo_points>=4+talent.deeper_stratagem.enabled&(debuff.vendetta.up||debuff.toxic_blade.up||energy.deficit<=(envenom_pool_deficit>?(25+variable.energy_regen_combined))||!variable.single_target)&(!talent.exsanguinate.enabled||cooldown.exsanguinate.remains>2)\nactions.direct+=/variable,name=use_filler,value=combo_points.deficit>1||energy.deficit<=25+variable.energy_regen_combined||!variable.single_target\n# With Echoing Blades, Fan of Knives at 2+ targets, or 3-4+ targets when Vendetta is up\nactions.direct+=/fan_of_knives,if=variable.use_filler&azerite.echoing_blades.enabled&spell_targets.fan_of_knives>=2+(debuff.vendetta.up*(1+(azerite.echoing_blades.rank=1)))\n# Fan of Knives at 19+ stacks of Hidden Blades or against 4+ (5+ with Double Dose) targets.\nactions.direct+=/fan_of_knives,if=variable.use_filler&(buff.hidden_blades.stack>=19||(!priority_rotation&spell_targets.fan_of_knives>=4+(azerite.double_dose.rank>2)+stealthed.rogue))\n# Fan of Knives to apply Deadly Poison if inactive on any target at 3 targets.\nactions.direct+=/fan_of_knives,cycle_targets=1,if=variable.use_filler&spell_targets.fan_of_knives>=3\nactions.direct+=/blindside,if=variable.use_filler&(buff.blindside.up||!talent.venom_rush.enabled&!azerite.double_dose.enabled)\n# Tab-Mutilate to apply Deadly Poison at 2 targets\nactions.direct+=/mutilate,cycle_targets=1,if=variable.use_filler&spell_targets.fan_of_knives=2\nactions.direct+=/mutilate,if=variable.use_filler\n\n# Damage over time abilities\n# Limit Garrotes on non-primrary targets for the priority rotation if 5+ bleeds are already up\nactions.dot=variable,name=skip_cycle_garrote,value=priority_rotation&spell_targets.fan_of_knives>3&(dot.garrote.remains<cooldown.garrote.duration||poisoned_bleeds>5)\n# Limit Ruptures on non-primrary targets for the priority rotation if 5+ bleeds are already up\nactions.dot+=/variable,name=skip_cycle_rupture,value=priority_rotation&spell_targets.fan_of_knives>3&(debuff.toxic_blade.up||(poisoned_bleeds>5&!azerite.scent_of_blood.enabled))\n# Limit Ruptures if Vendetta+Toxic Blade/Master Assassin is up and we have 2+ seconds left on the Rupture DoT\nactions.dot+=/variable,name=skip_rupture,value=debuff.vendetta.up&(debuff.toxic_blade.up||master_assassin_remains>0)&dot.rupture.remains>2\n# Special Rupture setup for Exsg\nactions.dot+=/rupture,if=talent.exsanguinate.enabled&((combo_points>=cp_max_spend&cooldown.exsanguinate.remains<1)||(!ticking&(time>10||combo_points>=2)))\n# Garrote upkeep, also tries to use it as a special generator for the last CP before a finisher\nactions.dot+=/pool_resource,for_next=1\nactions.dot+=/garrote,if=(!talent.subterfuge.enabled||!(cooldown.vanish.up&cooldown.vendetta.remains<=4))&combo_points.deficit>=1+3*(azerite.shrouded_suffocation.enabled&cooldown.vanish.up)&refreshable&(pmultiplier<=1||remains<=tick_time&spell_targets.fan_of_knives>=3+azerite.shrouded_suffocation.enabled)&(!exsanguinated||remains<=tick_time*2&spell_targets.fan_of_knives>=3+azerite.shrouded_suffocation.enabled)&!ss_buffed&(target.time_to_die-remains)>4&(master_assassin_remains=0||!ticking&azerite.shrouded_suffocation.enabled)\nactions.dot+=/pool_resource,for_next=1\nactions.dot+=/garrote,cycle_targets=1,if=!variable.skip_cycle_garrote&(!talent.subterfuge.enabled||!(cooldown.vanish.up&cooldown.vendetta.remains<=4))&combo_points.deficit>=1+3*(azerite.shrouded_suffocation.enabled&cooldown.vanish.up)&refreshable&(pmultiplier<=1||remains<=tick_time&spell_targets.fan_of_knives>=3+azerite.shrouded_suffocation.enabled)&(!exsanguinated||remains<=tick_time*2&spell_targets.fan_of_knives>=3+azerite.shrouded_suffocation.enabled)&!ss_buffed&(target.time_to_die-remains)>12&(master_assassin_remains=0||!ticking&azerite.shrouded_suffocation.enabled)\n# Crimson Tempest only on multiple targets at 4+ CP when running out in 2s (up to 4 targets) or 3s (5+ targets)\nactions.dot+=/crimson_tempest,if=spell_targets>=2&remains<2+(spell_targets>=5)&combo_points>=4\n# Keep up Rupture at 4+ on all targets (when living long enough and not snapshot)\nactions.dot+=/rupture,if=!variable.skip_rupture&combo_points>=4&refreshable&(pmultiplier<=1||remains<=tick_time&spell_targets.fan_of_knives>=3+azerite.shrouded_suffocation.enabled)&(!exsanguinated||remains<=tick_time*2&spell_targets.fan_of_knives>=3+azerite.shrouded_suffocation.enabled)&target.time_to_die-remains>4\nactions.dot+=/rupture,cycle_targets=1,if=!variable.skip_cycle_rupture&!variable.skip_rupture&combo_points>=4&refreshable&(pmultiplier<=1||remains<=tick_time&spell_targets.fan_of_knives>=3+azerite.shrouded_suffocation.enabled)&(!exsanguinated||remains<=tick_time*2&spell_targets.fan_of_knives>=3+azerite.shrouded_suffocation.enabled)&target.time_to_die-remains>4\n\n# Essences\nactions.essences=concentrated_flame,if=energy.time_to_max>1&!debuff.vendetta.up&(!dot.concentrated_flame_burn.ticking&!action.concentrated_flame.in_flight||full_recharge_time<gcd.max)\n# Always use Blood with Vendetta up. Hold for Exsanguinate. Use with TB up before a finisher as long as it runs for 10s during Vendetta.\nactions.essences+=/blood_of_the_enemy,if=debuff.vendetta.up&(exsanguinated.garrote||debuff.toxic_blade.up&combo_points.deficit<=1||debuff.vendetta.remains<=10)||time_to_die<=10\n# Attempt to align Guardian with Vendetta as long as it won't result in losing a full-value cast over the remaining duration of the fight\nactions.essences+=/guardian_of_azeroth,if=cooldown.vendetta.remains<3||debuff.vendetta.up||target.time_to_die<30\nactions.essences+=/guardian_of_azeroth,if=floor((target.time_to_die-30)%cooldown)>floor((target.time_to_die-30-cooldown.vendetta.remains)%cooldown)\nactions.essences+=/focused_azerite_beam,if=spell_targets.fan_of_knives>=2||raid_event.adds.in>60&energy<70\nactions.essences+=/purifying_blast,if=spell_targets.fan_of_knives>=2||raid_event.adds.in>60\nactions.essences+=/the_unbound_force,if=buff.reckless_force.up||buff.reckless_force_counter.stack<10\nactions.essences+=/ripple_in_space\nactions.essences+=/worldvein_resonance\nactions.essences+=/memory_of_lucid_dreams,if=energy<50&!cooldown.vendetta.up\n# Hold Reaping Flames for execute range or kill buffs, if possible. Always try to get the lowest cooldown based on available enemies.\nactions.essences+=/reaping_flames,cycle_targets=1,if=target.time_to_die<1.5||((target.health.pct>80||target.health.pct<=20)&(active_enemies=1||target.time_to_die>29))||(target.time_to_pct_20>30&(active_enemies=1||target.time_to_die>44))\n\n# Stealthed Actions\n# Nighstalker on 1T: Snapshot Rupture\nactions.stealthed=rupture,if=talent.nightstalker.enabled&combo_points>=4&target.time_to_die-remains>6\n# Subterfuge + Shrouded Suffocation: Ensure we use one global to apply Garrote to the main target if it is not snapshot yet, so all other main target abilities profit.\nactions.stealthed+=/pool_resource,for_next=1\nactions.stealthed+=/garrote,if=azerite.shrouded_suffocation.enabled&buff.subterfuge.up&buff.subterfuge.remains<1.3&!ss_buffed\n# Subterfuge: Apply or Refresh with buffed Garrotes\nactions.stealthed+=/pool_resource,for_next=1\nactions.stealthed+=/garrote,cycle_targets=1,if=talent.subterfuge.enabled&(remains<12||pmultiplier<=1)&target.time_to_die-remains>2\n# Subterfuge + Shrouded Suffocation in ST: Apply early Rupture that will be refreshed for pandemic\nactions.stealthed+=/rupture,if=talent.subterfuge.enabled&azerite.shrouded_suffocation.enabled&!dot.rupture.ticking&variable.single_target\n# Subterfuge w/ Shrouded Suffocation: Reapply for bonus CP and/or extended snapshot duration.\nactions.stealthed+=/pool_resource,for_next=1\nactions.stealthed+=/garrote,cycle_targets=1,if=talent.subterfuge.enabled&azerite.shrouded_suffocation.enabled&(active_enemies>1||!talent.exsanguinate.enabled)&target.time_to_die>remains&(remains<18||!ss_buffed)\n# Subterfuge + Exsg on 1T: Refresh Garrote at the end of stealth to get max duration before Exsanguinate\nactions.stealthed+=/pool_resource,for_next=1\nactions.stealthed+=/garrote,if=talent.subterfuge.enabled&talent.exsanguinate.enabled&active_enemies=1&buff.subterfuge.remains<1.3",
+					["version"] = 20220828,
+					["warnings"] = "WARNING:  The import for 'aoe' required some automated changes.\nLine 15: Converted 'soulbind.X' to 'soulbind.X.enabled' (2x).\nLine 35: Converted 'soulbind.X' to 'soulbind.X.enabled' at EOL (1x).\n\nWARNING:  The import for 'single' required some automated changes.\nLine 25: Converted 'soulbind.X' to 'soulbind.X.enabled' at EOL (1x).\nLine 34: Converted 'soulbind.X' to 'soulbind.X.enabled' at EOL (1x).\n\nWARNING:  The import for 'default' required some automated changes.\nLine 16: Converted 'soulbind.X' to 'soulbind.X.enabled' (2x).\n\nWARNING:  The import for 'precombat' required some automated changes.\nLine 7: Converted 'soulbind.X' to 'soulbind.X.enabled' (1x).\nLine 7: Converted 'soulbind.X' to 'soulbind.X.enabled' at EOL (1x).\nLine 8: Converted 'trinket.1.X' to 'trinket.t1.X' (3x).\nLine 9: Converted 'trinket.2.X' to 'trinket.t2.X' (3x).\n\nImported 4 action lists.\n",
+					["profile"] = "## Enhancement Shaman\n## August 23, 2022\n\nactions.precombat=windfury_weapon,if=buff.windfury_weapon.remains<300\nactions.precombat+=/flametongue_weapon,if=buff.flametongue_weapon.remains<300\nactions.precombat+=/bottled_flayedwing_toxin\nactions.precombat+=/lightning_shield,if=buff.lightning_shield.remains<300\nactions.precombat+=/stormkeeper,if=talent.stormkeeper.enabled\nactions.precombat+=/windfury_totem,if=!runeforge.doom_winds.equipped&buff.windfury_totem.down\nactions.precombat+=/fleshcraft,if=soulbind.pustule_eruption||soulbind.volatile_solvent\nactions.precombat+=/variable,name=trinket1_is_weird,value=trinket.1.is.the_first_sigil||trinket.1.is.scars_of_fraternal_strife||trinket.1.is.cache_of_acquired_treasures\nactions.precombat+=/variable,name=trinket2_is_weird,value=trinket.2.is.the_first_sigil||trinket.2.is.scars_of_fraternal_strife||trinket.2.is.cache_of_acquired_treasures\n\n## Executed every time the actor is available.\nactions=bloodlust\n# In-combat potion is before combat ends.\nactions+=/potion,if=(talent.ascendance.enabled&raid_event.adds.in>=90&cooldown.ascendance.remains<10)||(talent.hot_hand.enabled&buff.molten_weapon.up)||buff.icy_edge.up||(talent.stormflurry.enabled&buff.crackling_surge.up)||debuff.earthen_spike.up||active_enemies>1||boss&fight_remains<30\n# Interrupt\nactions+=/wind_shear\nactions+=/use_item,name=the_first_sigil,if=(talent.ascendance.enabled&raid_event.adds.in>=90&cooldown.ascendance.remains<10)||(talent.hot_hand.enabled&buff.molten_weapon.up)||buff.icy_edge.up||(talent.stormflurry.enabled&buff.crackling_surge.up)||debuff.earthen_spike.up||active_enemies>1||fight_remains<30\nactions+=/use_item,name=cache_of_acquired_treasures,if=buff.acquired_sword.up||fight_remains<25\nactions+=/use_item,name=scars_of_fraternal_strife,if=!buff.scars_of_fraternal_strife_4.up||fight_remains<31||raid_event.adds.in<16||active_enemies>1\nactions+=/trinket1,if=!variable.trinket1_is_weird\nactions+=/trinket2,if=!variable.trinket2_is_weird\nactions+=/use_items\nactions+=/blood_fury,if=!talent.ascendance.enabled||buff.ascendance.up||cooldown.ascendance.remains>50\nactions+=/berserking,if=!talent.ascendance.enabled||buff.ascendance.up\nactions+=/fireblood,if=!talent.ascendance.enabled||buff.ascendance.up||cooldown.ascendance.remains>50\nactions+=/ancestral_call,if=!talent.ascendance.enabled||buff.ascendance.up||cooldown.ascendance.remains>50\nactions+=/bag_of_tricks,if=!talent.ascendance.enabled||!buff.ascendance.up\nactions+=/feral_spirit\nactions+=/fae_transfusion,if=(talent.ascendance.enabled||runeforge.doom_winds.equipped)&(soulbind.grove_invigoration||soulbind.field_of_blossoms||active_enemies=1)\nactions+=/ascendance,if=raid_event.adds.in>=90||active_enemies>1\nactions+=/windfury_totem,line_cd=15,if=runeforge.doom_winds.equipped&buff.doom_winds_debuff.down&(raid_event.adds.in>=60||active_enemies>1)||buff.windfury_totem.down&(!runeforge.doom_winds.equipped||buff.doom_winds_debuff.up)\n# If only one enemy, priority follows the 'single' action list.\nactions+=/call_action_list,name=single,strict=1,if=active_enemies=1\n# On multiple enemies, the priority follows the 'aoe' action list.\nactions+=/call_action_list,name=aoe,strict=1,if=active_enemies>1\nactions+=/counterstrike_totem\nactions+=/skyfury_totem\nactions+=/primal_strike\n\n## Multi target action priority list\nactions.aoe=chain_harvest,if=buff.maelstrom_weapon.stack>=5\nactions.aoe+=/crash_lightning,if=runeforge.doom_winds.equipped&buff.doom_winds.up\nactions.aoe+=/sundering,if=runeforge.doom_winds.equipped&buff.doom_winds.up\nactions.aoe+=/healing_stream_totem,if=runeforge.raging_vesper_vortex.equipped&talent.earth_shield.enabled&vesper_totem_heal_charges>0\nactions.aoe+=/earth_shield,if=runeforge.raging_vesper_vortex.equipped&talent.earth_shield.enabled&vesper_totem_heal_charges>0\nactions.aoe+=/fire_nova,if=active_dot.flame_shock>=6||(active_dot.flame_shock>=4&active_dot.flame_shock>=cycle_enemies)\nactions.aoe+=/primordial_wave,cycle_targets=1,if=!buff.primordial_wave.up\nactions.aoe+=/windstrike,if=runeforge.deeply_rooted_elements.equipped&buff.crash_lightning.up\nactions.aoe+=/stormstrike,if=runeforge.deeply_rooted_elements.equipped&buff.crash_lightning.up\nactions.aoe+=/lava_lash,cycle_targets=1,if=dot.flame_shock.ticking&(active_dot.flame_shock<cycle_enemies&active_dot.flame_shock<6)\nactions.aoe+=/flame_shock,if=!ticking\nactions.aoe+=/flame_shock,cycle_targets=1,if=!talent.hailstorm.enabled&active_dot.flame_shock<cycle_enemies&active_dot.flame_shock<6\nactions.aoe+=/lightning_bolt,if=(active_dot.flame_shock>=active_enemies||active_dot.flame_shock>=4)&buff.primordial_wave.up&buff.maelstrom_weapon.stack>=5&(!buff.splintered_elements.up||fight_remains<=12||raid_event.adds.remains<=gcd)\nactions.aoe+=/frost_shock,if=buff.hailstorm.up\nactions.aoe+=/fae_transfusion,if=soulbind.grove_invigoration||soulbind.field_of_blossoms||runeforge.seeds_of_rampant_growth.equipped\nactions.aoe+=/crash_lightning,if=buff.crash_lightning.down&buff.primordial_wave.up&buff.maelstrom_weapon.stack<5\nactions.aoe+=/sundering,if=buff.primordial_wave.up&buff.maelstrom_weapon.stack<5\nactions.aoe+=/stormstrike,if=buff.primordial_wave.up&buff.maelstrom_weapon.stack<5\nactions.aoe+=/sundering\nactions.aoe+=/fire_nova,if=active_dot.flame_shock>=4\nactions.aoe+=/crash_lightning,if=talent.crashing_storm.enabled||buff.crash_lightning.down\nactions.aoe+=/lava_lash,cycle_targets=1,if=talent.lashing_flames.enabled\nactions.aoe+=/fire_nova,if=active_dot.flame_shock>=3\nactions.aoe+=/vesper_totem\nactions.aoe+=/chain_lightning,if=buff.stormkeeper.up\nactions.aoe+=/lava_lash,if=buff.crash_lightning.up\nactions.aoe+=/elemental_blast,if=buff.maelstrom_weapon.stack>=5\nactions.aoe+=/stormkeeper,if=buff.maelstrom_weapon.stack>=5\nactions.aoe+=/chain_lightning,if=buff.maelstrom_weapon.stack=10\nactions.aoe+=/stormstrike,if=buff.crash_lightning.up\nactions.aoe+=/fire_nova,if=active_dot.flame_shock>=2\nactions.aoe+=/crash_lightning\nactions.aoe+=/windstrike\nactions.aoe+=/stormstrike\nactions.aoe+=/fleshcraft,interrupt=1,if=soulbind.volatile_solvent\nactions.aoe+=/flame_shock,cycle_targets=1,if=refreshable\nactions.aoe+=/fae_transfusion\nactions.aoe+=/frost_shock\nactions.aoe+=/chain_lightning,if=buff.maelstrom_weapon.stack>=5\nactions.aoe+=/earthen_spike\nactions.aoe+=/earth_elemental\nactions.aoe+=/windfury_totem,if=buff.windfury_totem.remains<30\n\n## Single target action priority list\nactions.single=windstrike\nactions.single+=/lava_lash,if=buff.hot_hand.up||(runeforge.primal_lava_actuators.equipped&buff.primal_lava_actuators.stack>6)\nactions.single+=/windfury_totem,if=!buff.windfury_totem.up\nactions.single+=/stormstrike,if=runeforge.doom_winds.equipped&buff.doom_winds.up\nactions.single+=/crash_lightning,if=runeforge.doom_winds.equipped&buff.doom_winds.up\nactions.single+=/ice_strike,if=runeforge.doom_winds.equipped&buff.doom_winds.up\nactions.single+=/sundering,if=runeforge.doom_winds.equipped&buff.doom_winds.up\nactions.single+=/primordial_wave,if=buff.primordial_wave.down&(raid_event.adds.in>42||raid_event.adds.in<6)\nactions.single+=/flame_shock,if=!ticking\nactions.single+=/lightning_bolt,if=buff.maelstrom_weapon.stack>=5&buff.primordial_wave.up&raid_event.adds.in>buff.primordial_wave.remains&(!buff.splintered_elements.up||fight_remains<=12)\nactions.single+=/vesper_totem,if=raid_event.adds.in>40\nactions.single+=/frost_shock,if=buff.hailstorm.up\nactions.single+=/earthen_spike\nactions.single+=/lava_lash,if=dot.flame_shock.refreshable\nactions.single+=/fae_transfusion,if=!runeforge.seeds_of_rampant_growth.equipped||cooldown.feral_spirit.remains>30\nactions.single+=/stormstrike,if=talent.stormflurry.enabled&buff.stormbringer.up\nactions.single+=/chain_lightning,if=buff.stormkeeper.up\nactions.single+=/elemental_blast,if=buff.maelstrom_weapon.stack>=5\nactions.single+=/healing_stream_totem,if=runeforge.raging_vesper_vortex.equipped&talent.earth_shield.enabled&(vesper_totem_heal_charges>1||(vesper_totem_heal_charges>0&raid_event.adds.in>(buff.vesper_totem.remains-3)))\nactions.single+=/earth_shield,if=runeforge.raging_vesper_vortex.equipped&talent.earth_shield.enabled&(vesper_totem_heal_charges>1||(vesper_totem_heal_charges>0&raid_event.adds.in>(buff.vesper_totem.remains-3)))\nactions.single+=/chain_harvest,if=buff.maelstrom_weapon.stack>=5&raid_event.adds.in>=90\nactions.single+=/lightning_bolt,if=buff.maelstrom_weapon.stack=10&buff.primordial_wave.down\nactions.single+=/stormstrike\nactions.single+=/stormkeeper,if=buff.maelstrom_weapon.stack>=5\nactions.single+=/fleshcraft,interrupt=1,if=soulbind.volatile_solvent\nactions.single+=/windfury_totem,if=buff.windfury_totem.remains<10\nactions.single+=/lava_lash\nactions.single+=/lightning_bolt,if=buff.maelstrom_weapon.stack>=5&buff.primordial_wave.down\nactions.single+=/sundering,if=raid_event.adds.in>=40\nactions.single+=/frost_shock\nactions.single+=/crash_lightning\nactions.single+=/ice_strike\nactions.single+=/fire_nova,if=active_dot.flame_shock\nactions.single+=/fleshcraft,if=soulbind.pustule_eruption\nactions.single+=/earth_elemental\nactions.single+=/flame_shock,if=settings.filler_shock\nactions.single+=/windfury_totem,if=buff.windfury_totem.remains<30",
+					["author"] = "SimC",
+				},
+				["Elemental"] = {
+					["source"] = "https://github.com/simulationcraft/simc/",
+					["builtIn"] = true,
+					["date"] = 20220801,
+					["spec"] = 262,
+					["desc"] = "Elemental Shaman\nAugust 1, 2022\n\nChanges:\n- Incorporate settings.stack_buffer for Icefury, Stormkeeper.\n- Add Meteor and Eye of the Storm again.",
+					["profile"] = "## Elemental Shaman\n## August 1, 2022\n\n## Changes:\n## - Incorporate settings.stack_buffer for Icefury, Stormkeeper.\n## - Add Meteor and Eye of the Storm again.\n\n# Executed every time the actor is available.\nactions.precombat=earth_elemental,if=!talent.primal_elementalist.enabled\n# Use Stormkeeper precombat unless some adds will spawn soon.\nactions.precombat+=/fleshcraft,if=soulbind.pustule_eruption||soulbind.volatile_solvent\nactions.precombat+=/stormkeeper,if=talent.stormkeeper.enabled&(raid_event.adds.count<3||raid_event.adds.in>50)\nactions.precombat+=/fire_elemental\nactions.precombat+=/elemental_blast,if=talent.elemental_blast.enabled&spell_targets.chain_lightning<3\n# Because LvB has a travel time, the addon places *this entry* on CD for 3 seconds to avoid double-LvB on pull.\nactions.precombat+=/lava_burst,line_cd=3,if=!talent.elemental_blast.enabled&spell_targets.chain_lightning<3||buff.stormkeeper.up\nactions.precombat+=/chain_lightning,if=!talent.elemental_blast.enabled&spell_targets.chain_lightning>=3&!buff.stormkeeper.up\nactions.precombat+=/potion\n\n# Interrupt of casts.\nactions+=/wind_shear\nactions+=/spiritwalkers_grace,moving=1\nactions+=/potion\nactions+=/use_items\nactions+=/flame_shock,if=(!talent.elemental_blast.enabled)&!ticking&!pet.storm_elemental.active&(spell_targets.chain_lightning<3||talent.master_of_the_elements.enabled||runeforge.skybreakers_fiery_demise.equipped)\nactions+=/primordial_wave,cycle_targets=1,if=!buff.primordial_wave.up&(!pet.storm_elemental.active||spell_targets.chain_lightning<3&buff.wind_gust.stack<20||soulbind.lead_by_example.enabled||runeforge.splintered_elements.equipped)&(spell_targets.chain_lightning<5||talent.master_of_the_elements.enabled||runeforge.skybreakers_fiery_demise.equipped||soulbind.lead_by_example.enabled||runeforge.splintered_elements.equipped)&!buff.splintered_elements.up\nactions+=/flame_shock,if=!ticking&(!pet.storm_elemental.active||spell_targets.chain_lightning<3&buff.wind_gust.stack<20)&(spell_targets.chain_lightning<3||talent.master_of_the_elements.enabled||runeforge.skybreakers_fiery_demise.equipped)\nactions+=/fire_elemental\nactions+=/meteor\nactions+=/blood_fury,if=!talent.ascendance.enabled||buff.ascendance.up||cooldown.ascendance.remains>50\nactions+=/berserking,if=!talent.ascendance.enabled||buff.ascendance.up\nactions+=/fireblood,if=!talent.ascendance.enabled||buff.ascendance.up||cooldown.ascendance.remains>50\nactions+=/ancestral_call,if=!talent.ascendance.enabled||buff.ascendance.up||cooldown.ascendance.remains>50\nactions+=/vesper_totem\nactions+=/fae_transfusion,if=covenant.night_fae&!runeforge.seeds_of_rampant_growth.equipped&(!talent.master_of_the_elements.enabled||buff.master_of_the_elements.up)&spell_targets.chain_lightning<3\nactions+=/fae_transfusion,if=covenant.night_fae&runeforge.seeds_of_rampant_growth.equipped&(!talent.master_of_the_elements.enabled||buff.master_of_the_elements.up||spell_targets.chain_lightning>=3)&(cooldown.fire_elemental.remains>20||cooldown.storm_elemental.remains>20)\nactions+=/run_action_list,name=aoe,strict=1,if=active_enemies>2&(spell_targets.chain_lightning>2||spell_targets.lava_beam>2)\nactions+=/run_action_list,name=single_target,strict=1,if=!talent.storm_elemental.enabled&active_enemies<=2\nactions+=/run_action_list,name=se_single_target,strict=1,if=talent.storm_elemental.enabled&active_enemies<=2\n\nactions.aoe=storm_elemental,if=!pet.storm_elemental.active\nactions.aoe+=/eye_of_the_storm,if=buff.call_lightning.remains>=10\nactions.aoe+=/earthquake,if=buff.echoing_shock.up\nactions.aoe+=/chain_harvest\nactions.aoe+=/stormkeeper,if=talent.stormkeeper.enabled\nactions.aoe+=/flame_shock,cycle_targets=1,if=refreshable&((active_dot.flame_shock<2&active_enemies<=3&cooldown.primordial_wave.remains<16&covenant.necrolord&!pet.storm_elemental.active||active_dot.flame_shock<1&active_enemies>=4&!pet.storm_elemental.active&talent.master_of_the_elements.enabled)||(runeforge.skybreakers_fiery_demise.equipped&!pet.storm_elemental.active)||(runeforge.splintered_elements.equipped&(active_dot.flame_shock<3&!runeforge.echoes_of_great_sundering.equipped||active_dot.flame_shock<4)&(cooldown.primordial_wave.remains<16||buff.primordial_wave.up)))\nactions.aoe+=/flame_shock,if=!active_dot.flame_shock&!pet.storm_elemental.active&(talent.master_of_the_elements.enabled||runeforge.skybreakers_fiery_demise.equipped)||(runeforge.splintered_elements.equipped&!ticking&buff.primordial_wave.up)\nactions.aoe+=/echoing_shock,if=talent.echoing_shock.enabled&maelstrom>=60&(runeforge.echoes_of_great_sundering.equipped&buff.echoes_of_great_sundering.up||!runeforge.echoes_of_great_sundering.equipped)\nactions.aoe+=/ascendance,if=talent.ascendance.enabled&(!pet.storm_elemental.active)&(!talent.icefury.enabled||!buff.icefury.up&!cooldown.icefury.up)\nactions.aoe+=/liquid_magma_totem,if=talent.liquid_magma_totem.enabled\nactions.aoe+=/chain_lightning,if=spell_targets.chain_lightning<4&buff.master_of_the_elements.up&maelstrom<50\nactions.aoe+=/earth_shock,if=runeforge.echoes_of_great_sundering.equipped&!buff.echoes_of_great_sundering.up\nactions.aoe+=/lava_burst,if=dot.flame_shock.remains&spell_targets.chain_lightning<4&(!pet.storm_elemental.active)&(buff.lava_surge.up&!buff.master_of_the_elements.up&talent.master_of_the_elements.enabled)\nactions.aoe+=/earthquake,if=spell_targets.chain_lightning>=2&!runeforge.echoes_of_great_sundering.equipped&(talent.master_of_the_elements.enabled&maelstrom>=50&!buff.master_of_the_elements.up)\nactions.aoe+=/lava_burst,cycle_targets=1,if=covenant.necrolord&runeforge.echoes_of_great_sundering.equipped&set_bonus.tier28_4pc&buff.lava_surge.up&!buff.primordial_wave.up\nactions.aoe+=/lava_burst,cycle_targets=1,if=buff.lava_surge.up&buff.primordial_wave.up&(buff.primordial_wave.remains<3*gcd||active_dot.flame_shock=spell_targets.chain_lightning||active_dot.flame_shock=3&!runeforge.echoes_of_great_sundering.equipped||active_dot.flame_shock=4)\nactions.aoe+=/lava_burst,if=dot.flame_shock.remains&spell_targets.chain_lightning<4&runeforge.skybreakers_fiery_demise.equipped&buff.lava_surge.up&talent.master_of_the_elements.enabled&!buff.master_of_the_elements.up&maelstrom>=50\nactions.aoe+=/lava_burst,if=dot.flame_shock.remains&((spell_targets.chain_lightning<4&runeforge.skybreakers_fiery_demise.equipped&talent.master_of_the_elements.enabled)||(talent.master_of_the_elements.enabled&maelstrom>=50&!buff.master_of_the_elements.up&(!runeforge.echoes_of_great_sundering.equipped||buff.echoes_of_great_sundering.up)&!runeforge.skybreakers_fiery_demise.equipped))\nactions.aoe+=/lava_burst,if=dot.flame_shock.remains&spell_targets.chain_lightning=4&runeforge.skybreakers_fiery_demise.equipped&buff.lava_surge.up&talent.master_of_the_elements.enabled&!buff.master_of_the_elements.up&maelstrom>=50\nactions.aoe+=/earthquake,if=spell_targets.chain_lightning>=2\nactions.aoe+=/chain_lightning,if=buff.stormkeeper.remains<3*gcd*buff.stormkeeper.stack\nactions.aoe+=/lava_burst,cycle_targets=1,if=set_bonus.tier28_4pc&buff.lava_surge.up&!buff.primordial_wave.up\nactions.aoe+=/lava_burst,if=set_bonus.tier28_4pc&buff.lava_surge.up&!buff.primordial_wave.up\nactions.aoe+=/lava_burst,if=buff.lava_surge.up&spell_targets.chain_lightning<4&(!pet.storm_elemental.active)&dot.flame_shock.ticking\nactions.aoe+=/elemental_blast,if=talent.elemental_blast.enabled&spell_targets.chain_lightning<5&(!pet.storm_elemental.active)\nactions.aoe+=/lava_beam,if=talent.ascendance.enabled\nactions.aoe+=/chain_lightning\nactions.aoe+=/lava_burst,moving=1,if=buff.lava_surge.up&cooldown_react\nactions.aoe+=/flame_shock,moving=1,cycle_targets=1,if=refreshable\nactions.aoe+=/frost_shock,moving=1\n\nactions.se_single_target=storm_elemental,if=!pet.storm_elemental.active\nactions.se_single_target+=/lightning_bolt,if=buff.surge_of_power.up\nactions.se_single_target+=/primordial_wave,cycle_targets=1,if=covenant.necrolord&!buff.primordial_wave.up&!buff.splintered_elements.up\nactions.se_single_target+=/eye_of_the_storm,if=buff.call_lightning.remains>=10\nactions.se_single_target+=/frost_shock,if=talent.icefury.enabled&buff.icefury.up&buff.icefury.remains<settings.stack_buffer*gcd*buff.icefury.stack&buff.wind_gust.stack<18\nactions.se_single_target+=/flame_shock,cycle_targets=1,if=refreshable\nactions.se_single_target+=/frost_shock,if=talent.icefury.enabled&buff.icefury.up&buff.icefury.remains<1.1*gcd*buff.icefury.stack\nactions.se_single_target+=/elemental_blast,if=talent.elemental_blast.enabled\nactions.se_single_target+=/stormkeeper,if=talent.stormkeeper.enabled\nactions.se_single_target+=/echoing_shock,if=talent.echoing_shock.enabled&cooldown.lava_burst.remains<=gcd&spell_targets.chain_lightning<2||maelstrom>=60&spell_targets.chain_lightning>=2&(!runeforge.echoes_of_great_sundering.equipped||buff.echoes_of_great_sundering.up)\nactions.se_single_target+=/lava_burst,if=(buff.wind_gust.stack<18&!buff.bloodlust.up)||buff.lava_surge.up\nactions.se_single_target+=/lava_burst,if=talent.echoing_shock.enabled&buff.echoing_shock.up&spell_targets.chain_lightning<2\nactions.se_single_target+=/earthquake,if=talent.echoing_shock.enabled&buff.echoing_shock.up&spell_targets.chain_lightning>=2\nactions.se_single_target+=/lightning_bolt,if=buff.stormkeeper.up\nactions.se_single_target+=/earthquake,if=buff.echoes_of_great_sundering.up\nactions.se_single_target+=/earth_shock,if=spell_targets.chain_lightning<2&maelstrom>=60&(buff.wind_gust.stack<20||maelstrom>90)||(runeforge.echoes_of_great_sundering.equipped&!buff.echoes_of_great_sundering.up)||runeforge.windspeakers_lava_resurgence.equipped\nactions.se_single_target+=/earthquake,if=(spell_targets.chain_lightning>1)&(!dot.flame_shock.refreshable)\nactions.se_single_target+=/lightning_bolt,if=pet.storm_elemental.active&buff.bloodlust.up\nactions.se_single_target+=/lava_burst,if=buff.ascendance.up\nactions.se_single_target+=/lava_burst,if=cooldown_react\nactions.se_single_target+=/lava_burst,if=cooldown_react&charges>talent.echo_of_the_elements.enabled\nactions.se_single_target+=/frost_shock,if=talent.icefury.enabled&buff.icefury.up\nactions.se_single_target+=/chain_harvest\nactions.se_single_target+=/fleshcraft,if=soulbind.volatile_solvent&!buff.volatile_solvent_humanoid.up,interrupt_immediate=1,interrupt_global=1,interrupt_if=soulbind.volatile_solvent\nactions.se_single_target+=/static_discharge,if=talent.static_discharge.enabled\nactions.se_single_target+=/earth_elemental,if=!talent.primal_elementalist.enabled||talent.primal_elementalist.enabled&(!pet.storm_elemental.active)\nactions.se_single_target+=/chain_lightning,if=active_enemies>1&(spell_targets.chain_lightning>1||spell_targets.lava_beam>1)\nactions.se_single_target+=/lightning_bolt\nactions.se_single_target+=/bag_of_tricks\nactions.se_single_target+=/flame_shock,moving=1,cycle_targets=1,if=refreshable\nactions.se_single_target+=/flame_shock,moving=1,if=movement.distance>6\nactions.se_single_target+=/frost_shock,moving=1\n\nactions.single_target=lightning_bolt,if=(buff.stormkeeper.remains<settings.stack_buffer*gcd*buff.stormkeeper.stack)\nactions.single_target+=/frost_shock,if=talent.icefury.enabled&buff.icefury.up&buff.icefury.remains<settings.stack_buffer*gcd*buff.icefury.stack\nactions.single_target+=/flame_shock,cycle_targets=1,if=(!ticking||dot.flame_shock.remains<=gcd||talent.ascendance.enabled&dot.flame_shock.remains<(cooldown.ascendance.remains+buff.ascendance.duration)&cooldown.ascendance.remains<4)&(buff.lava_surge.up||!buff.bloodlust.up)\nactions.single_target+=/flame_shock,cycle_targets=1,if=buff.primordial_wave.up&refreshable\nactions.single_target+=/ascendance,if=talent.ascendance.enabled&(time>=60||buff.bloodlust.up)&(cooldown.lava_burst.remains>0)&(!talent.icefury.enabled||!buff.icefury.up&!cooldown.icefury.up)\nactions.single_target+=/lava_burst,if=buff.lava_surge.up&(runeforge.windspeakers_lava_resurgence.equipped||!buff.master_of_the_elements.up&talent.master_of_the_elements.enabled)\nactions.single_target+=/elemental_blast,if=talent.elemental_blast.enabled&(maelstrom<70)&!buff.ascendance.up\nactions.single_target+=/stormkeeper,if=talent.stormkeeper.enabled&(raid_event.adds.count<3||raid_event.adds.in>50)&(maelstrom<44)\nactions.single_target+=/echoing_shock,if=talent.echoing_shock.enabled&cooldown.lava_burst.remains<=gcd\nactions.single_target+=/lava_burst,if=talent.echoing_shock.enabled&buff.echoing_shock.up\nactions.single_target+=/liquid_magma_totem,if=talent.liquid_magma_totem.enabled\nactions.single_target+=/earthquake,if=buff.echoes_of_great_sundering.up&talent.master_of_the_elements.enabled&buff.master_of_the_elements.up\nactions.single_target+=/lightning_bolt,if=buff.stormkeeper.up&buff.master_of_the_elements.up&maelstrom<60\nactions.single_target+=/earthquake,if=buff.echoes_of_great_sundering.up&(talent.master_of_the_elements.enabled&(buff.master_of_the_elements.up||cooldown.lava_burst.remains>0&maelstrom>=92||spell_targets.chain_lightning<2&buff.stormkeeper.up&cooldown.lava_burst.remains<=gcd)||!talent.master_of_the_elements.enabled||cooldown.elemental_blast.remains<=settings.stack_buffer*gcd*2)\nactions.single_target+=/earthquake,if=spell_targets.chain_lightning>1&!dot.flame_shock.refreshable&!runeforge.echoes_of_great_sundering.equipped&(!talent.master_of_the_elements.enabled||buff.master_of_the_elements.up||cooldown.lava_burst.remains>0&maelstrom>=92)\nactions.single_target+=/earth_shock,if=runeforge.windspeakers_lava_resurgence.equipped&buff.ascendance.up\nactions.single_target+=/lava_burst,if=cooldown_react&(!buff.master_of_the_elements.up&buff.icefury.up)\nactions.single_target+=/lava_burst,if=cooldown_react&charges>talent.echo_of_the_elements.enabled&!buff.icefury.up\nactions.single_target+=/lava_burst,if=talent.echo_of_the_elements.enabled&!buff.master_of_the_elements.up&maelstrom>=50&!buff.echoes_of_great_sundering.up\nactions.single_target+=/earth_shock,if=(runeforge.echoes_of_great_sundering.equipped||spell_targets.chain_lightning<2)&(talent.master_of_the_elements.enabled&!buff.echoes_of_great_sundering.up&(buff.master_of_the_elements.up||maelstrom>=92||spell_targets.chain_lightning<2&buff.stormkeeper.up&cooldown.lava_burst.remains<=gcd)||!talent.master_of_the_elements.enabled||cooldown.elemental_blast.remains<=settings.stack_buffer*gcd*2)\nactions.single_target+=/frost_shock,if=talent.icefury.enabled&talent.master_of_the_elements.enabled&buff.icefury.up&buff.master_of_the_elements.up\nactions.single_target+=/lava_burst,if=buff.ascendance.up\nactions.single_target+=/lava_burst,if=cooldown_react&!talent.master_of_the_elements.enabled\nactions.single_target+=/icefury,if=talent.icefury.enabled&!(maelstrom>35&cooldown.lava_burst.remains<=0)\nactions.single_target+=/frost_shock,if=talent.icefury.enabled&buff.icefury.up&(buff.icefury.remains<gcd*4*buff.icefury.stack||buff.stormkeeper.up||!talent.master_of_the_elements.enabled)\nactions.single_target+=/lava_burst\nactions.single_target+=/bag_of_tricks\nactions.single_target+=/flame_shock,cycle_targets=1,if=refreshable\nactions.single_target+=/frost_shock,if=runeforge.elemental_equilibrium.equipped&!buff.elemental_equilibrium_debuff.up&!talent.elemental_blast.enabled&!talent.echoing_shock.enabled\nactions.single_target+=/fleshcraft,if=soulbind.volatile_solvent&!buff.volatile_solvent_humanoid.up,interrupt_immediate=1,interrupt_global=1,interrupt_if=soulbind.volatile_solvent\nactions.single_target+=/chain_harvest\nactions.single_target+=/frost_shock,if=talent.icefury.enabled&buff.icefury.up\nactions.single_target+=/static_discharge,if=talent.static_discharge.enabled\nactions.single_target+=/earth_elemental,if=!talent.primal_elementalist.enabled||!pet.fire_elemental.active\nactions.single_target+=/chain_lightning,if=spell_targets.chain_lightning>1\nactions.single_target+=/lightning_bolt\nactions.single_target+=/flame_shock,moving=1,cycle_targets=1,if=refreshable\nactions.single_target+=/flame_shock,moving=1,if=movement.distance>6\nactions.single_target+=/frost_shock,moving=1\nactions.single_target+=/frost_shock,if=talent.icefury.enabled&buff.icefury.up&buff.icefury.remains<settings.stack_buffer*gcd*buff.icefury.stack",
+					["version"] = 20220801,
+					["warnings"] = "WARNING:  The import for 'single_target' required some automated changes.\nLine 30: Converted 'soulbind.X' to 'soulbind.X.enabled' (1x).\n\nWARNING:  The import for 'precombat' required some automated changes.\nLine 2: Converted 'soulbind.X' to 'soulbind.X.enabled' (1x).\nLine 2: Converted 'soulbind.X' to 'soulbind.X.enabled' at EOL (1x).\n\nWARNING:  The import for 'se_single_target' required some automated changes.\nLine 24: Converted 'soulbind.X' to 'soulbind.X.enabled' (1x).\n\nImported 5 action lists.\n",
+					["lists"] = {
+						["single_target"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "( buff.stormkeeper.remains < settings.stack_buffer * gcd * buff.stormkeeper.stack )",
+								["action"] = "lightning_bolt",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.icefury.enabled & buff.icefury.up & buff.icefury.remains < settings.stack_buffer * gcd * buff.icefury.stack",
+								["action"] = "frost_shock",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "( ! ticking || dot.flame_shock.remains <= gcd || talent.ascendance.enabled & dot.flame_shock.remains < ( cooldown.ascendance.remains + buff.ascendance.duration ) & cooldown.ascendance.remains < 4 ) & ( buff.lava_surge.up || ! buff.bloodlust.up )",
+								["action"] = "flame_shock",
+								["cycle_targets"] = 1,
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.primordial_wave.up & refreshable",
+								["action"] = "flame_shock",
+								["cycle_targets"] = 1,
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.ascendance.enabled & ( time >= 60 || buff.bloodlust.up ) & ( cooldown.lava_burst.remains > 0 ) & ( ! talent.icefury.enabled || ! buff.icefury.up & ! cooldown.icefury.up )",
+								["action"] = "ascendance",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.lava_surge.up & ( runeforge.windspeakers_lava_resurgence.equipped || ! buff.master_of_the_elements.up & talent.master_of_the_elements.enabled )",
+								["action"] = "lava_burst",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.elemental_blast.enabled & ( maelstrom < 70 ) & ! buff.ascendance.up",
+								["action"] = "elemental_blast",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.stormkeeper.enabled & ( raid_event.adds.count < 3 || raid_event.adds.in > 50 ) & ( maelstrom < 44 )",
+								["action"] = "stormkeeper",
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.echoing_shock.enabled & cooldown.lava_burst.remains <= gcd",
+								["action"] = "echoing_shock",
+							}, -- [9]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.echoing_shock.enabled & buff.echoing_shock.up",
+								["action"] = "lava_burst",
+							}, -- [10]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.liquid_magma_totem.enabled",
+								["action"] = "liquid_magma_totem",
+							}, -- [11]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.echoes_of_great_sundering.up & talent.master_of_the_elements.enabled & buff.master_of_the_elements.up",
+								["action"] = "earthquake",
+							}, -- [12]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.stormkeeper.up & buff.master_of_the_elements.up & maelstrom < 60",
+								["action"] = "lightning_bolt",
+							}, -- [13]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.echoes_of_great_sundering.up & ( talent.master_of_the_elements.enabled & ( buff.master_of_the_elements.up || cooldown.lava_burst.remains > 0 & maelstrom >= 92 || spell_targets.chain_lightning < 2 & buff.stormkeeper.up & cooldown.lava_burst.remains <= gcd ) || ! talent.master_of_the_elements.enabled || cooldown.elemental_blast.remains <= settings.stack_buffer * gcd * 2 )",
+								["action"] = "earthquake",
+							}, -- [14]
+							{
+								["enabled"] = true,
+								["criteria"] = "spell_targets.chain_lightning > 1 & ! dot.flame_shock.refreshable & ! runeforge.echoes_of_great_sundering.equipped & ( ! talent.master_of_the_elements.enabled || buff.master_of_the_elements.up || cooldown.lava_burst.remains > 0 & maelstrom >= 92 )",
+								["action"] = "earthquake",
+							}, -- [15]
+							{
+								["enabled"] = true,
+								["criteria"] = "runeforge.windspeakers_lava_resurgence.equipped & buff.ascendance.up",
+								["action"] = "earth_shock",
+							}, -- [16]
+							{
+								["enabled"] = true,
+								["criteria"] = "cooldown_react & ( ! buff.master_of_the_elements.up & buff.icefury.up )",
+								["action"] = "lava_burst",
+							}, -- [17]
+							{
+								["enabled"] = true,
+								["criteria"] = "cooldown_react & charges > talent.echo_of_the_elements.enabled & ! buff.icefury.up",
+								["action"] = "lava_burst",
+							}, -- [18]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.echo_of_the_elements.enabled & ! buff.master_of_the_elements.up & maelstrom >= 50 & ! buff.echoes_of_great_sundering.up",
+								["action"] = "lava_burst",
+							}, -- [19]
+							{
+								["enabled"] = true,
+								["criteria"] = "( runeforge.echoes_of_great_sundering.equipped || spell_targets.chain_lightning < 2 ) & ( talent.master_of_the_elements.enabled & ! buff.echoes_of_great_sundering.up & ( buff.master_of_the_elements.up || maelstrom >= 92 || spell_targets.chain_lightning < 2 & buff.stormkeeper.up & cooldown.lava_burst.remains <= gcd ) || ! talent.master_of_the_elements.enabled || cooldown.elemental_blast.remains <= settings.stack_buffer * gcd * 2 )",
+								["action"] = "earth_shock",
+							}, -- [20]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.icefury.enabled & talent.master_of_the_elements.enabled & buff.icefury.up & buff.master_of_the_elements.up",
+								["action"] = "frost_shock",
+							}, -- [21]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.ascendance.up",
+								["action"] = "lava_burst",
+							}, -- [22]
+							{
+								["enabled"] = true,
+								["criteria"] = "cooldown_react & ! talent.master_of_the_elements.enabled",
+								["action"] = "lava_burst",
+							}, -- [23]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.icefury.enabled & ! ( maelstrom > 35 & cooldown.lava_burst.remains <= 0 )",
+								["action"] = "icefury",
+							}, -- [24]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.icefury.enabled & buff.icefury.up & ( buff.icefury.remains < gcd * 4 * buff.icefury.stack || buff.stormkeeper.up || ! talent.master_of_the_elements.enabled )",
+								["action"] = "frost_shock",
+							}, -- [25]
+							{
+								["action"] = "lava_burst",
+								["enabled"] = true,
+							}, -- [26]
+							{
+								["action"] = "bag_of_tricks",
+								["enabled"] = true,
+							}, -- [27]
+							{
+								["enabled"] = true,
+								["criteria"] = "refreshable",
+								["action"] = "flame_shock",
+								["cycle_targets"] = 1,
+							}, -- [28]
+							{
+								["enabled"] = true,
+								["criteria"] = "runeforge.elemental_equilibrium.equipped & ! buff.elemental_equilibrium_debuff.up & ! talent.elemental_blast.enabled & ! talent.echoing_shock.enabled",
+								["action"] = "frost_shock",
+							}, -- [29]
+							{
+								["enabled"] = true,
+								["criteria"] = "soulbind.volatile_solvent.enabled & ! buff.volatile_solvent_humanoid.up",
+								["interrupt_if"] = "soulbind.volatile_solvent",
+								["interrupt_immediate"] = "1",
+								["action"] = "fleshcraft",
+								["interrupt_global"] = "1",
+							}, -- [30]
+							{
+								["action"] = "chain_harvest",
+								["enabled"] = true,
+							}, -- [31]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.icefury.enabled & buff.icefury.up",
+								["action"] = "frost_shock",
+							}, -- [32]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.static_discharge.enabled",
+								["action"] = "static_discharge",
+							}, -- [33]
+							{
+								["enabled"] = true,
+								["criteria"] = "! talent.primal_elementalist.enabled || ! pet.fire_elemental.active",
+								["action"] = "earth_elemental",
+							}, -- [34]
+							{
+								["enabled"] = true,
+								["criteria"] = "spell_targets.chain_lightning > 1",
+								["action"] = "chain_lightning",
+							}, -- [35]
+							{
+								["action"] = "lightning_bolt",
+								["enabled"] = true,
+							}, -- [36]
+							{
+								["moving"] = 1,
+								["enable_moving"] = true,
+								["action"] = "flame_shock",
+								["cycle_targets"] = 1,
+								["enabled"] = true,
+								["criteria"] = "refreshable",
+							}, -- [37]
+							{
+								["enabled"] = true,
+								["enable_moving"] = true,
+								["action"] = "flame_shock",
+								["moving"] = 1,
+								["criteria"] = "movement.distance > 6",
+							}, -- [38]
+							{
+								["moving"] = 1,
+								["enable_moving"] = true,
+								["action"] = "frost_shock",
+								["enabled"] = true,
+							}, -- [39]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.icefury.enabled & buff.icefury.up & buff.icefury.remains < settings.stack_buffer * gcd * buff.icefury.stack",
+								["action"] = "frost_shock",
+							}, -- [40]
+						},
+						["default"] = {
+							{
+								["enabled"] = true,
+								["description"] = "Interrupt of casts.",
+								["action"] = "wind_shear",
+							}, -- [1]
+							{
+								["moving"] = 1,
+								["enable_moving"] = true,
+								["action"] = "spiritwalkers_grace",
+								["enabled"] = true,
+							}, -- [2]
+							{
+								["action"] = "potion",
+								["enabled"] = true,
+							}, -- [3]
+							{
+								["action"] = "use_items",
+								["enabled"] = true,
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "( ! talent.elemental_blast.enabled ) & ! ticking & ! pet.storm_elemental.active & ( spell_targets.chain_lightning < 3 || talent.master_of_the_elements.enabled || runeforge.skybreakers_fiery_demise.equipped )",
+								["action"] = "flame_shock",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "! buff.primordial_wave.up & ( ! pet.storm_elemental.active || spell_targets.chain_lightning < 3 & buff.wind_gust.stack < 20 || soulbind.lead_by_example.enabled || runeforge.splintered_elements.equipped ) & ( spell_targets.chain_lightning < 5 || talent.master_of_the_elements.enabled || runeforge.skybreakers_fiery_demise.equipped || soulbind.lead_by_example.enabled || runeforge.splintered_elements.equipped ) & ! buff.splintered_elements.up",
+								["action"] = "primordial_wave",
+								["cycle_targets"] = 1,
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "! ticking & ( ! pet.storm_elemental.active || spell_targets.chain_lightning < 3 & buff.wind_gust.stack < 20 ) & ( spell_targets.chain_lightning < 3 || talent.master_of_the_elements.enabled || runeforge.skybreakers_fiery_demise.equipped )",
+								["action"] = "flame_shock",
+							}, -- [7]
+							{
+								["action"] = "fire_elemental",
+								["enabled"] = true,
+							}, -- [8]
+							{
+								["action"] = "meteor",
+								["enabled"] = true,
+							}, -- [9]
+							{
+								["enabled"] = true,
+								["criteria"] = "! talent.ascendance.enabled || buff.ascendance.up || cooldown.ascendance.remains > 50",
+								["action"] = "blood_fury",
+							}, -- [10]
+							{
+								["enabled"] = true,
+								["criteria"] = "! talent.ascendance.enabled || buff.ascendance.up",
+								["action"] = "berserking",
+							}, -- [11]
+							{
+								["enabled"] = true,
+								["criteria"] = "! talent.ascendance.enabled || buff.ascendance.up || cooldown.ascendance.remains > 50",
+								["action"] = "fireblood",
+							}, -- [12]
+							{
+								["enabled"] = true,
+								["criteria"] = "! talent.ascendance.enabled || buff.ascendance.up || cooldown.ascendance.remains > 50",
+								["action"] = "ancestral_call",
+							}, -- [13]
+							{
+								["action"] = "vesper_totem",
+								["enabled"] = true,
+							}, -- [14]
+							{
+								["enabled"] = true,
+								["criteria"] = "covenant.night_fae & ! runeforge.seeds_of_rampant_growth.equipped & ( ! talent.master_of_the_elements.enabled || buff.master_of_the_elements.up ) & spell_targets.chain_lightning < 3",
+								["action"] = "fae_transfusion",
+							}, -- [15]
+							{
+								["enabled"] = true,
+								["criteria"] = "covenant.night_fae & runeforge.seeds_of_rampant_growth.equipped & ( ! talent.master_of_the_elements.enabled || buff.master_of_the_elements.up || spell_targets.chain_lightning >= 3 ) & ( cooldown.fire_elemental.remains > 20 || cooldown.storm_elemental.remains > 20 )",
+								["action"] = "fae_transfusion",
+							}, -- [16]
+							{
+								["enabled"] = true,
+								["action"] = "run_action_list",
+								["strict"] = 1,
+								["criteria"] = "active_enemies > 2 & ( spell_targets.chain_lightning > 2 || spell_targets.lava_beam > 2 )",
+								["list_name"] = "aoe",
+							}, -- [17]
+							{
+								["enabled"] = true,
+								["action"] = "run_action_list",
+								["strict"] = 1,
+								["criteria"] = "! talent.storm_elemental.enabled & active_enemies <= 2",
+								["list_name"] = "single_target",
+							}, -- [18]
+							{
+								["enabled"] = true,
+								["action"] = "run_action_list",
+								["strict"] = 1,
+								["criteria"] = "talent.storm_elemental.enabled & active_enemies <= 2",
+								["list_name"] = "se_single_target",
+							}, -- [19]
+						},
+						["precombat"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "! talent.primal_elementalist.enabled",
+								["action"] = "earth_elemental",
+								["description"] = "Executed every time the actor is available.",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "soulbind.pustule_eruption.enabled || soulbind.volatile_solvent.enabled",
+								["action"] = "fleshcraft",
+								["description"] = "Use Stormkeeper precombat unless some adds will spawn soon.",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.stormkeeper.enabled & ( raid_event.adds.count < 3 || raid_event.adds.in > 50 )",
+								["action"] = "stormkeeper",
+							}, -- [3]
+							{
+								["action"] = "fire_elemental",
+								["enabled"] = true,
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.elemental_blast.enabled & spell_targets.chain_lightning < 3",
+								["action"] = "elemental_blast",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["action"] = "lava_burst",
+								["line_cd"] = "3",
+								["description"] = "Because LvB has a travel time, the addon places *this entry* on CD for 3 seconds to avoid double-LvB on pull.",
+								["criteria"] = "! talent.elemental_blast.enabled & spell_targets.chain_lightning < 3 || buff.stormkeeper.up",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "! talent.elemental_blast.enabled & spell_targets.chain_lightning >= 3 & ! buff.stormkeeper.up",
+								["action"] = "chain_lightning",
+							}, -- [7]
+							{
+								["action"] = "potion",
+								["enabled"] = true,
+							}, -- [8]
+						},
+						["aoe"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "! pet.storm_elemental.active",
+								["action"] = "storm_elemental",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.call_lightning.remains >= 10",
+								["action"] = "eye_of_the_storm",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.echoing_shock.up",
+								["action"] = "earthquake",
+							}, -- [3]
+							{
+								["action"] = "chain_harvest",
+								["enabled"] = true,
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.stormkeeper.enabled",
+								["action"] = "stormkeeper",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "refreshable & ( ( active_dot.flame_shock < 2 & active_enemies <= 3 & cooldown.primordial_wave.remains < 16 & covenant.necrolord & ! pet.storm_elemental.active || active_dot.flame_shock < 1 & active_enemies >= 4 & ! pet.storm_elemental.active & talent.master_of_the_elements.enabled ) || ( runeforge.skybreakers_fiery_demise.equipped & ! pet.storm_elemental.active ) || ( runeforge.splintered_elements.equipped & ( active_dot.flame_shock < 3 & ! runeforge.echoes_of_great_sundering.equipped || active_dot.flame_shock < 4 ) & ( cooldown.primordial_wave.remains < 16 || buff.primordial_wave.up ) ) )",
+								["action"] = "flame_shock",
+								["cycle_targets"] = 1,
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "! active_dot.flame_shock & ! pet.storm_elemental.active & ( talent.master_of_the_elements.enabled || runeforge.skybreakers_fiery_demise.equipped ) || ( runeforge.splintered_elements.equipped & ! ticking & buff.primordial_wave.up )",
+								["action"] = "flame_shock",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.echoing_shock.enabled & maelstrom >= 60 & ( runeforge.echoes_of_great_sundering.equipped & buff.echoes_of_great_sundering.up || ! runeforge.echoes_of_great_sundering.equipped )",
+								["action"] = "echoing_shock",
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.ascendance.enabled & ( ! pet.storm_elemental.active ) & ( ! talent.icefury.enabled || ! buff.icefury.up & ! cooldown.icefury.up )",
+								["action"] = "ascendance",
+							}, -- [9]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.liquid_magma_totem.enabled",
+								["action"] = "liquid_magma_totem",
+							}, -- [10]
+							{
+								["enabled"] = true,
+								["criteria"] = "spell_targets.chain_lightning < 4 & buff.master_of_the_elements.up & maelstrom < 50",
+								["action"] = "chain_lightning",
+							}, -- [11]
+							{
+								["enabled"] = true,
+								["criteria"] = "runeforge.echoes_of_great_sundering.equipped & ! buff.echoes_of_great_sundering.up",
+								["action"] = "earth_shock",
+							}, -- [12]
+							{
+								["enabled"] = true,
+								["criteria"] = "dot.flame_shock.remains & spell_targets.chain_lightning < 4 & ( ! pet.storm_elemental.active ) & ( buff.lava_surge.up & ! buff.master_of_the_elements.up & talent.master_of_the_elements.enabled )",
+								["action"] = "lava_burst",
+							}, -- [13]
+							{
+								["enabled"] = true,
+								["criteria"] = "spell_targets.chain_lightning >= 2 & ! runeforge.echoes_of_great_sundering.equipped & ( talent.master_of_the_elements.enabled & maelstrom >= 50 & ! buff.master_of_the_elements.up )",
+								["action"] = "earthquake",
+							}, -- [14]
+							{
+								["enabled"] = true,
+								["criteria"] = "covenant.necrolord & runeforge.echoes_of_great_sundering.equipped & set_bonus.tier28_4pc & buff.lava_surge.up & ! buff.primordial_wave.up",
+								["action"] = "lava_burst",
+								["cycle_targets"] = 1,
+							}, -- [15]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.lava_surge.up & buff.primordial_wave.up & ( buff.primordial_wave.remains < 3 * gcd || active_dot.flame_shock = spell_targets.chain_lightning || active_dot.flame_shock = 3 & ! runeforge.echoes_of_great_sundering.equipped || active_dot.flame_shock = 4 )",
+								["action"] = "lava_burst",
+								["cycle_targets"] = 1,
+							}, -- [16]
+							{
+								["enabled"] = true,
+								["criteria"] = "dot.flame_shock.remains & spell_targets.chain_lightning < 4 & runeforge.skybreakers_fiery_demise.equipped & buff.lava_surge.up & talent.master_of_the_elements.enabled & ! buff.master_of_the_elements.up & maelstrom >= 50",
+								["action"] = "lava_burst",
+							}, -- [17]
+							{
+								["enabled"] = true,
+								["criteria"] = "dot.flame_shock.remains & ( ( spell_targets.chain_lightning < 4 & runeforge.skybreakers_fiery_demise.equipped & talent.master_of_the_elements.enabled ) || ( talent.master_of_the_elements.enabled & maelstrom >= 50 & ! buff.master_of_the_elements.up & ( ! runeforge.echoes_of_great_sundering.equipped || buff.echoes_of_great_sundering.up ) & ! runeforge.skybreakers_fiery_demise.equipped ) )",
+								["action"] = "lava_burst",
+							}, -- [18]
+							{
+								["enabled"] = true,
+								["criteria"] = "dot.flame_shock.remains & spell_targets.chain_lightning = 4 & runeforge.skybreakers_fiery_demise.equipped & buff.lava_surge.up & talent.master_of_the_elements.enabled & ! buff.master_of_the_elements.up & maelstrom >= 50",
+								["action"] = "lava_burst",
+							}, -- [19]
+							{
+								["enabled"] = true,
+								["criteria"] = "spell_targets.chain_lightning >= 2",
+								["action"] = "earthquake",
+							}, -- [20]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.stormkeeper.remains < 3 * gcd * buff.stormkeeper.stack",
+								["action"] = "chain_lightning",
+							}, -- [21]
+							{
+								["enabled"] = true,
+								["criteria"] = "set_bonus.tier28_4pc & buff.lava_surge.up & ! buff.primordial_wave.up",
+								["action"] = "lava_burst",
+								["cycle_targets"] = 1,
+							}, -- [22]
+							{
+								["enabled"] = true,
+								["criteria"] = "set_bonus.tier28_4pc & buff.lava_surge.up & ! buff.primordial_wave.up",
+								["action"] = "lava_burst",
+							}, -- [23]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.lava_surge.up & spell_targets.chain_lightning < 4 & ( ! pet.storm_elemental.active ) & dot.flame_shock.ticking",
+								["action"] = "lava_burst",
+							}, -- [24]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.elemental_blast.enabled & spell_targets.chain_lightning < 5 & ( ! pet.storm_elemental.active )",
+								["action"] = "elemental_blast",
+							}, -- [25]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.ascendance.enabled",
+								["action"] = "lava_beam",
+							}, -- [26]
+							{
+								["action"] = "chain_lightning",
+								["enabled"] = true,
+							}, -- [27]
+							{
+								["enabled"] = true,
+								["enable_moving"] = true,
+								["action"] = "lava_burst",
+								["moving"] = 1,
+								["criteria"] = "buff.lava_surge.up & cooldown_react",
+							}, -- [28]
+							{
+								["moving"] = 1,
+								["enable_moving"] = true,
+								["action"] = "flame_shock",
+								["cycle_targets"] = 1,
+								["enabled"] = true,
+								["criteria"] = "refreshable",
+							}, -- [29]
+							{
+								["moving"] = 1,
+								["enable_moving"] = true,
+								["action"] = "frost_shock",
+								["enabled"] = true,
+							}, -- [30]
+						},
+						["se_single_target"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "! pet.storm_elemental.active",
+								["action"] = "storm_elemental",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.surge_of_power.up",
+								["action"] = "lightning_bolt",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "covenant.necrolord & ! buff.primordial_wave.up & ! buff.splintered_elements.up",
+								["action"] = "primordial_wave",
+								["cycle_targets"] = 1,
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.call_lightning.remains >= 10",
+								["action"] = "eye_of_the_storm",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.icefury.enabled & buff.icefury.up & buff.icefury.remains < settings.stack_buffer * gcd * buff.icefury.stack & buff.wind_gust.stack < 18",
+								["action"] = "frost_shock",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "refreshable",
+								["action"] = "flame_shock",
+								["cycle_targets"] = 1,
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.icefury.enabled & buff.icefury.up & buff.icefury.remains < 1.1 * gcd * buff.icefury.stack",
+								["action"] = "frost_shock",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.elemental_blast.enabled",
+								["action"] = "elemental_blast",
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.stormkeeper.enabled",
+								["action"] = "stormkeeper",
+							}, -- [9]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.echoing_shock.enabled & cooldown.lava_burst.remains <= gcd & spell_targets.chain_lightning < 2 || maelstrom >= 60 & spell_targets.chain_lightning >= 2 & ( ! runeforge.echoes_of_great_sundering.equipped || buff.echoes_of_great_sundering.up )",
+								["action"] = "echoing_shock",
+							}, -- [10]
+							{
+								["enabled"] = true,
+								["criteria"] = "( buff.wind_gust.stack < 18 & ! buff.bloodlust.up ) || buff.lava_surge.up",
+								["action"] = "lava_burst",
+							}, -- [11]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.echoing_shock.enabled & buff.echoing_shock.up & spell_targets.chain_lightning < 2",
+								["action"] = "lava_burst",
+							}, -- [12]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.echoing_shock.enabled & buff.echoing_shock.up & spell_targets.chain_lightning >= 2",
+								["action"] = "earthquake",
+							}, -- [13]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.stormkeeper.up",
+								["action"] = "lightning_bolt",
+							}, -- [14]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.echoes_of_great_sundering.up",
+								["action"] = "earthquake",
+							}, -- [15]
+							{
+								["enabled"] = true,
+								["criteria"] = "spell_targets.chain_lightning < 2 & maelstrom >= 60 & ( buff.wind_gust.stack < 20 || maelstrom > 90 ) || ( runeforge.echoes_of_great_sundering.equipped & ! buff.echoes_of_great_sundering.up ) || runeforge.windspeakers_lava_resurgence.equipped",
+								["action"] = "earth_shock",
+							}, -- [16]
+							{
+								["enabled"] = true,
+								["criteria"] = "( spell_targets.chain_lightning > 1 ) & ( ! dot.flame_shock.refreshable )",
+								["action"] = "earthquake",
+							}, -- [17]
+							{
+								["enabled"] = true,
+								["criteria"] = "pet.storm_elemental.active & buff.bloodlust.up",
+								["action"] = "lightning_bolt",
+							}, -- [18]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.ascendance.up",
+								["action"] = "lava_burst",
+							}, -- [19]
+							{
+								["enabled"] = true,
+								["criteria"] = "cooldown_react",
+								["action"] = "lava_burst",
+							}, -- [20]
+							{
+								["enabled"] = true,
+								["criteria"] = "cooldown_react & charges > talent.echo_of_the_elements.enabled",
+								["action"] = "lava_burst",
+							}, -- [21]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.icefury.enabled & buff.icefury.up",
+								["action"] = "frost_shock",
+							}, -- [22]
+							{
+								["action"] = "chain_harvest",
+								["enabled"] = true,
+							}, -- [23]
+							{
+								["enabled"] = true,
+								["criteria"] = "soulbind.volatile_solvent.enabled & ! buff.volatile_solvent_humanoid.up",
+								["interrupt_if"] = "soulbind.volatile_solvent",
+								["interrupt_immediate"] = "1",
+								["action"] = "fleshcraft",
+								["interrupt_global"] = "1",
+							}, -- [24]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.static_discharge.enabled",
+								["action"] = "static_discharge",
+							}, -- [25]
+							{
+								["enabled"] = true,
+								["criteria"] = "! talent.primal_elementalist.enabled || talent.primal_elementalist.enabled & ( ! pet.storm_elemental.active )",
+								["action"] = "earth_elemental",
+							}, -- [26]
+							{
+								["enabled"] = true,
+								["criteria"] = "active_enemies > 1 & ( spell_targets.chain_lightning > 1 || spell_targets.lava_beam > 1 )",
+								["action"] = "chain_lightning",
+							}, -- [27]
+							{
+								["action"] = "lightning_bolt",
+								["enabled"] = true,
+							}, -- [28]
+							{
+								["action"] = "bag_of_tricks",
+								["enabled"] = true,
+							}, -- [29]
+							{
+								["moving"] = 1,
+								["enable_moving"] = true,
+								["action"] = "flame_shock",
+								["cycle_targets"] = 1,
+								["enabled"] = true,
+								["criteria"] = "refreshable",
+							}, -- [30]
+							{
+								["enabled"] = true,
+								["enable_moving"] = true,
+								["action"] = "flame_shock",
+								["moving"] = 1,
+								["criteria"] = "movement.distance > 6",
+							}, -- [31]
+							{
+								["moving"] = 1,
+								["enable_moving"] = true,
+								["action"] = "frost_shock",
+								["enabled"] = true,
+							}, -- [32]
+						},
+					},
+					["author"] = "SimulationCraft",
 				},
 			},
 		},

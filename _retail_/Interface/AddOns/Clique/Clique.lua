@@ -242,15 +242,21 @@ function addon:RegisterFrame(button)
         return
     end
 
-    -- Limit the types of frames we can accept
+    -- Never allow forbidden frames, we can't do anything with those!
+    local forbidden = button.IsForbidden and button:IsForbidden()
+    if forbidden then
+        return
+    end
+
+    -- Make sure we're protected and don't look like a nameplate
     local protected = button.IsProtected and button:IsProtected()
     local nameplateish = button.IsAnchoringRestricted and button:IsAnchoringRestricted()
-    local forbidden = button.IsForbidden and button:IsForbidden()
-    if not protected or nameplateish or forbidden then
+    if not protected or nameplateish then
         -- addon:Printf("Skipping frame registration for " .. tostring(button:GetName()))
         -- addon:Printf("  - protected: %s", tostring(protected))
         -- addon:Printf("  - nameplateish: %s", tostring(nameplateish))
         -- addon:Printf("  - forbidden: %s", tostring(forbidden))
+        return
     end
 
     self.ccframes[button] = true
@@ -887,6 +893,11 @@ end
 
 function addon:CheckSelfCastIssue()
     if addon.db.profile.disableWarningSelfcast then
+        return
+    end
+
+    -- Issue only seems present on Dragonflight at the moment
+    if not addon:IsDragonflight() then
         return
     end
 

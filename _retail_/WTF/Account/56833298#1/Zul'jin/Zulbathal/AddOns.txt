@@ -266,3 +266,4 @@ LittleWigs_Classic: enabled
 kExtraBossFrames: disabled
 Prat-3.0: disabled
 BigWigs_Shadowlands: enabled
+ElvUI_UnitFramePlugin: disabled

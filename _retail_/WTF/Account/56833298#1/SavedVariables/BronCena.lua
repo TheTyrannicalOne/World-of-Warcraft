@@ -18,7 +18,7 @@ BronCenaDB = {
 		["Default"] = {
 			["companions"] = {
 				["333961"] = {
-					["handle"] = 139045,
+					["handle"] = 39899,
 				},
 			},
 		},

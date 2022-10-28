@@ -1,8 +1,8 @@
 ## Author: Allara
-## Interface: 90200
-## X-Min-Interface: 90200
+## Interface: 100000
+## X-Min-Interface: 100000
 ## Title: Rarity
-## Version: 1.0 (r716-alpha)
+## Version: 1.0 (r717-alpha)
 ## X-Curse-Project-ID: 30801
 
 ## Notes: Tracks rare drops, including companions and mounts

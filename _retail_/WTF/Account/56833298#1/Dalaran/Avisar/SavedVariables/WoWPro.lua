@@ -19,44 +19,44 @@ WoWProCharDB = {
 	},
 	["EnableRares"] = true,
 	["EnableGrailQuestName"] = false,
-	["EnableGrailQuestObsolete"] = false,
 	["EnableGrailBreadcrumbs"] = false,
+	["Enabled"] = true,
 	["DebugLevel"] = 0,
 	["Tradeskills"] = {
-		[185] = {
-			["skillLvl"] = 1,
-			["name"] = "Cooking",
-			["skillMod"] = 0,
-			["skillMax"] = 175,
-		},
 		[356] = {
 			["skillLvl"] = 13,
-			["name"] = "Fishing",
 			["skillMod"] = 0,
+			["name"] = "Fishing",
+			["skillMax"] = 175,
+		},
+		[185] = {
+			["skillLvl"] = 1,
+			["skillMod"] = 0,
+			["name"] = "Cooking",
 			["skillMax"] = 175,
 		},
 		[2585] = {
 			["skillLvl"] = 13,
-			["skillMod"] = 0,
 			["name"] = "Battle for Azeroth Fishing",
+			["skillMod"] = 0,
 			["skillMax"] = 175,
 		},
 	},
-	["Guide"] = {
+	["GuideVersion"] = {
 	},
 	["Taxi"] = {
 	},
-	["GuideVersion"] = {
+	["BuildingLocations"] = {
 	},
 	["EnableTreasures"] = true,
 	["EnableFlight"] = true,
 	["AutoHideInsideInstancesNotify"] = true,
 	["AutoHideInCombat"] = false,
-	["BuildingLocations"] = {
+	["Guide"] = {
 	},
 	["GuideStack"] = {
 	},
-	["Enabled"] = true,
+	["EnableGrailQuestObsolete"] = false,
 	["skippedQIDs"] = {
 	},
 	["Rank"] = {

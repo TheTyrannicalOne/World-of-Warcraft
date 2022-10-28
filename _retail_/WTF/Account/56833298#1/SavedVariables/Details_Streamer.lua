@@ -11,10 +11,10 @@ Details_StreamerDB = {
 		["Zulbathal - Zul'jin"] = "Shanyt - Argent Dawn",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Valmagus - Zul'jin"] = "Shanyt - Argent Dawn",
-		["Guufnah - Zul'jin"] = "Shanyt - Argent Dawn",
+		["Okona - Zul'jin"] = "Shanyt - Argent Dawn",
 		["Varlouris - Dalaran"] = "Shanyt - Argent Dawn",
 		["Durlok - Black Dragonflight"] = "Shanyt - Argent Dawn",
-		["Okona - Zul'jin"] = "Shanyt - Argent Dawn",
+		["Alatra - Zul'jin"] = "Shanyt - Argent Dawn",
 		["Avisar - Dalaran"] = "Shanyt - Argent Dawn",
 		["Banuumine - Zul'jin"] = "Shanyt - Argent Dawn",
 		["Thorinbane - Dalaran"] = "Shanyt - Argent Dawn",
@@ -27,7 +27,7 @@ Details_StreamerDB = {
 		["Rotclaugh - Dalaran"] = "Shanyt - Argent Dawn",
 		["Kotalkhan - Zul'jin"] = "Shanyt - Argent Dawn",
 		["Abyronterner - Zul'jin"] = "Shanyt - Argent Dawn",
-		["Alatra - Zul'jin"] = "Shanyt - Argent Dawn",
+		["Guufnah - Zul'jin"] = "Shanyt - Argent Dawn",
 		["Jasmoney - Zul'jin"] = "Shanyt - Argent Dawn",
 		["Banesmuncy - Zul'jin"] = "Shanyt - Argent Dawn",
 		["Mandles - Zul'jin"] = "Shanyt - Argent Dawn",
@@ -49,10 +49,7 @@ Details_StreamerDB = {
 				0.5, -- [4]
 			},
 			["scale"] = 1,
-			["main_frame_size"] = {
-				299.9999694824219, -- [1]
-				500.0000915527344, -- [2]
-			},
+			["arrow_anchor_y"] = 0,
 			["minimap"] = {
 				["minimapPos"] = 160,
 				["radius"] = 160,
@@ -63,17 +60,17 @@ Details_StreamerDB = {
 			["point"] = "CENTER",
 			["row_texture"] = "Details Serenity",
 			["square_grow_direction"] = "right",
-			["main_frame_strata"] = "LOW",
 			["row_color"] = {
 				0.1, -- [1]
 				0.1, -- [2]
 				0.1, -- [3]
 				0.4, -- [4]
 			},
+			["author"] = "Details! Team",
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["font_size"] = 10,
+			["y"] = 1.52587890625e-05,
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -81,13 +78,8 @@ Details_StreamerDB = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["use_spark"] = true,
-			["y"] = 1.52587890625e-05,
-			["x"] = 0,
-			["font_face"] = "Friz Quadrata TT",
-			["square_size"] = 32,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -99,9 +91,17 @@ Details_StreamerDB = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
+			["font_size"] = 10,
+			["x"] = 0,
+			["font_face"] = "Friz Quadrata TT",
+			["square_size"] = 32,
+			["use_spark"] = true,
 			["use_square_mode"] = false,
 			["main_frame_locked"] = false,
-			["arrow_anchor_y"] = 0,
+			["main_frame_size"] = {
+				299.9999694824219, -- [1]
+				500.0000915527344, -- [2]
+			},
 		},
 	},
 }

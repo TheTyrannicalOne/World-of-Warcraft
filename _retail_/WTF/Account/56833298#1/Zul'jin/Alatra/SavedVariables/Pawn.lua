@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0704,
+	["LastVersion"] = 2.0706,
 	["LastPlayerFullName"] = "Alatra-Zul'jin",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {

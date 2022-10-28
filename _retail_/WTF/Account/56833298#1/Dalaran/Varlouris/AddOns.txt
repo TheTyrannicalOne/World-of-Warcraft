@@ -274,3 +274,4 @@ Narcissus_Barbershop: enabled
 WoWPro: enabled
 WoWPro_Leveling: enabled
 DejaCharacterStats: enabled
+ElvUI_UnitFramePlugin: disabled

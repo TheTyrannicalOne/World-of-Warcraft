@@ -75,11 +75,11 @@ SpyDB = {
 				},
 				["Malivant"] = {
 				},
-				["Galvarton"] = {
-				},
 				["Varlouris"] = {
 				},
 				["Avisar"] = {
+				},
+				["Galvarton"] = {
 				},
 				["Thorinbane"] = {
 				},
@@ -265,6 +265,7 @@ SpyDB = {
 			["AppendUnitKoSCheck"] = true,
 		},
 		["Avisar - Dalaran"] = {
+			["AppendUnitNameCheck"] = true,
 			["MainWindow"] = {
 				["Position"] = {
 					["y"] = 740.0001831054688,
@@ -290,7 +291,6 @@ SpyDB = {
 					["x"] = 4,
 				},
 			},
-			["AppendUnitNameCheck"] = true,
 			["MainWindowVis"] = false,
 			["AppendUnitKoSCheck"] = true,
 		},
@@ -675,7 +675,6 @@ SpyDB = {
 			["AppendUnitKoSCheck"] = true,
 		},
 		["Shanyt - Argent Dawn"] = {
-			["AppendUnitNameCheck"] = true,
 			["MainWindow"] = {
 				["Position"] = {
 					["y"] = 968.4998779296875,
@@ -699,8 +698,9 @@ SpyDB = {
 					},
 				},
 			},
-			["AppendUnitKoSCheck"] = true,
+			["AppendUnitNameCheck"] = true,
 			["MainWindowVis"] = false,
+			["AppendUnitKoSCheck"] = true,
 		},
 		["Vadder - Argent Dawn"] = {
 			["AppendUnitNameCheck"] = true,

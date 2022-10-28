@@ -49,22 +49,22 @@ MJEPersonalSettings = {
 			[0] = true,
 		},
 		["source"] = {
-			["Reputation"] = true,
+			["Instance"] = true,
 			["Black Market"] = true,
 			["Class"] = true,
-			["Achievement"] = true,
-			["Instance"] = true,
-			["PVP"] = true,
-			["World Event"] = true,
-			["Profession"] = true,
 			["Island Expedition"] = true,
+			["Reputation"] = true,
+			["PVP"] = true,
+			["Promotion"] = true,
+			["Drop"] = true,
+			["Achievement"] = true,
 			["Shop"] = true,
 			["Covenants"] = true,
-			["Drop"] = true,
+			["Profession"] = true,
 			["Garrison"] = true,
-			["Vendor"] = true,
+			["World Event"] = true,
 			["Quest"] = true,
-			["Promotion"] = true,
+			["Vendor"] = true,
 		},
 		["rarity"] = {
 			true, -- [1]
@@ -73,10 +73,12 @@ MJEPersonalSettings = {
 			true, -- [4]
 			true, -- [5]
 		},
-		["color"] = {
-		},
+		["hiddenIngame"] = false,
 		["notCollected"] = true,
 		["hidden"] = false,
+		["onlyUsable"] = false,
+		["onlyTradable"] = false,
+		["onlyFavorites"] = false,
 		["mountType"] = {
 			["repair"] = true,
 			["flying"] = true,
@@ -86,14 +88,11 @@ MJEPersonalSettings = {
 			["ground"] = true,
 			["transform"] = true,
 		},
-		["onlyTradable"] = false,
-		["onlyFavorites"] = false,
 		["faction"] = {
 			["horde"] = true,
 			["alliance"] = true,
 			["noFaction"] = true,
 		},
-		["onlyUsable"] = false,
 		["family"] = {
 			["Arachnids"] = {
 				["Scorpions"] = true,
@@ -156,8 +155,8 @@ MJEPersonalSettings = {
 				["Cranes"] = true,
 				["Roc"] = true,
 				["Eagle"] = true,
-				["Talonbirds"] = true,
 				["Mechanical Birds"] = true,
+				["Talonbirds"] = true,
 				["Hawkstriders"] = true,
 				["Tallstriders"] = true,
 				["Pandaren Phoenixes"] = true,
@@ -181,7 +180,13 @@ MJEPersonalSettings = {
 				["Gorger"] = true,
 				["Animite"] = true,
 			},
-			["Rats"] = true,
+			["Dinosaurs"] = {
+				["Direhorns"] = true,
+				["Brutosaurs"] = true,
+				["Raptors"] = true,
+				["Falcosaurs"] = true,
+				["Pterrordaxes"] = true,
+			},
 			["Carnivorans"] = {
 				["Bears"] = true,
 				["Hyenas"] = true,
@@ -192,18 +197,14 @@ MJEPersonalSettings = {
 				["Vulpin"] = true,
 				["Quilen"] = true,
 			},
-			["Dinosaurs"] = {
-				["Direhorns"] = true,
-				["Brutosaurs"] = true,
-				["Raptors"] = true,
-				["Falcosaurs"] = true,
-				["Pterrordaxes"] = true,
-			},
-			["Rays"] = {
-				["Stingrays"] = true,
-				["Fathom Rays"] = true,
-				["Mana Rays"] = true,
-				["Nether Rays"] = true,
+			["Rats"] = true,
+			["Wolves"] = {
+				["Wolves"] = true,
+				["Lupine"] = true,
+				["Wilderlings"] = true,
+				["War Wolves"] = true,
+				["Dire Wolves"] = true,
+				["Undead Wolves"] = true,
 			},
 			["Drakes"] = {
 				["Drakes"] = true,
@@ -254,6 +255,8 @@ MJEPersonalSettings = {
 				["Sea Serpents"] = true,
 				["Turtles"] = true,
 			},
+			["Crabs"] = true,
+			["Jellyfish"] = true,
 			["Ungulates"] = {
 				["Mammoths"] = true,
 				["Riverbeasts"] = true,
@@ -267,8 +270,6 @@ MJEPersonalSettings = {
 				["Camels"] = true,
 				["Runestag"] = true,
 			},
-			["Jellyfish"] = true,
-			["Crabs"] = true,
 			["Elementals"] = {
 				["Sabers"] = true,
 				["Wind Drakes"] = true,
@@ -283,13 +284,11 @@ MJEPersonalSettings = {
 				["Yetis"] = true,
 			},
 			["Vombata"] = true,
-			["Wolves"] = {
-				["Wolves"] = true,
-				["Lupine"] = true,
-				["Wilderlings"] = true,
-				["War Wolves"] = true,
-				["Dire Wolves"] = true,
-				["Undead Wolves"] = true,
+			["Rays"] = {
+				["Fathom Rays"] = true,
+				["Nether Rays"] = true,
+				["Mana Rays"] = true,
+				["Stingrays"] = true,
 			},
 			["Demons"] = {
 				["Felsabers"] = true,
@@ -303,7 +302,8 @@ MJEPersonalSettings = {
 		},
 		["collected"] = true,
 		["onlyRecent"] = false,
-		["hiddenIngame"] = false,
+		["color"] = {
+		},
 	},
 	["personalHiddenMounts"] = false,
 	["notes"] = {

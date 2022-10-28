@@ -44,10 +44,11 @@ MADB = {
 				},
 				["TooltipMover"] = {
 					["orgPos"] = {
-						"TOP", -- [1]
-						"UIParent", -- [2]
-						0, -- [3]
+						"BOTTOMRIGHT", -- [1]
+						"RightChatToggleButton", -- [2]
+						"BOTTOMRIGHT", -- [3]
 						0, -- [4]
+						0, -- [5]
 					},
 					["name"] = "TooltipMover",
 					["pos"] = {

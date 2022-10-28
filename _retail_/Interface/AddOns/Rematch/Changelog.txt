@@ -1,3 +1,7 @@
+10/28/2022 version 4.14.3
+- Fix for potential lua errors due to C_Timer calls.
+- Names in the keybindings interface changed for Rematch keybinds.
+
 10/26/2022 version 4.14.2
 - Fix for tab textures not appearing.
 

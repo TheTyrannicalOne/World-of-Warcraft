@@ -5,16 +5,16 @@ WoWProCharDB = {
 	["AutoHideInsideInstances"] = true,
 	["EnableGrailCheckPrereq"] = false,
 	["QID2Guide"] = {
-		[28705] = "JamHel6063",
-		[47221] = "Ludo_Argus",
 		[47835] = "Ludo_Argus",
 		[9407] = "JamHel6063",
+		[28705] = "JamHel6063",
+		[47221] = "Ludo_Argus",
 	},
 	["Trades"] = {
 		[2540] = true,
 		[88015] = true,
-		[8604] = true,
 		[88006] = true,
+		[8604] = true,
 		[2538] = true,
 		[37836] = true,
 	},
@@ -26,38 +26,32 @@ WoWProCharDB = {
 	["EnableRares"] = true,
 	["EnableGrailQuestName"] = false,
 	["EnablePetBattles"] = true,
-	["Enabled"] = true,
+	["EnableGrailQuestObsolete"] = false,
 	["EnableGrailBreadcrumbs"] = false,
 	["Tradeskills"] = {
 		[356] = {
 			["skillLvl"] = 1,
 			["skillMax"] = 100,
-			["skillMod"] = 0,
 			["name"] = "Fishing",
-		},
-		[2545] = {
-			["skillLvl"] = 1,
-			["skillMax"] = 75,
-			["name"] = "Cataclysm Cooking",
 			["skillMod"] = 0,
-		},
-		[2586] = {
-			["skillLvl"] = 1,
-			["name"] = "Legion Fishing",
-			["skillMod"] = 0,
-			["skillMax"] = 100,
-		},
-		[794] = {
-			["skillLvl"] = 1,
-			["skillMax"] = 800,
-			["skillMod"] = 0,
-			["name"] = "Archaeology",
 		},
 		[185] = {
 			["skillLvl"] = 1,
 			["skillMax"] = 75,
-			["skillMod"] = 0,
 			["name"] = "Cooking",
+			["skillMod"] = 0,
+		},
+		[2545] = {
+			["skillLvl"] = 1,
+			["skillMax"] = 75,
+			["skillMod"] = 0,
+			["name"] = "Cataclysm Cooking",
+		},
+		[2586] = {
+			["skillLvl"] = 1,
+			["skillMod"] = 0,
+			["name"] = "Legion Fishing",
+			["skillMax"] = 100,
 		},
 	},
 	["DebugLevel"] = 0,
@@ -140,15 +134,15 @@ WoWProCharDB = {
 		["Skyhorn"] = true,
 		["Shackle's Den"] = true,
 		["Hardwrench Hideaway"] = true,
-		["Vorrik's Sanctum"] = true,
 		["Mudsprocket"] = true,
+		["Vorrik's Sanctum"] = true,
 		["Forsaken Rear Guard"] = true,
 		["Felblaze Ingress"] = true,
 		["Ratchet"] = true,
 		["Illidari Perch"] = true,
 		["Irontree Clearing"] = true,
 		["Revantusk Village"] = true,
-		["Plague Watch"] = true,
+		["Hammerfall"] = true,
 		["Destiny Point"] = true,
 		["Silvermoon City"] = true,
 		["Temple of Akunda"] = true,
@@ -177,34 +171,34 @@ WoWProCharDB = {
 		["Ve'nari's Refuge"] = true,
 		["Thorium Point"] = true,
 		["Gloom Hollow"] = true,
-		["The Sludgewerks"] = true,
+		["The Great Seal"] = true,
 		["Hope's Landing"] = true,
 		["Malaka'jin"] = true,
-		["The Great Seal"] = true,
+		["The Sludgewerks"] = true,
 		["Galen's Fall"] = true,
 		["Hero's Rest"] = true,
 		["Southwind Village"] = true,
 		["Atal'Gral"] = true,
-		["Nesingwary's Gameland"] = true,
+		["Bleak Redoubt"] = true,
 		["Thondroril River"] = true,
 		["Vengeance Point"] = true,
 		["Xibala"] = true,
 		["The Witchwood"] = true,
-		["Bleak Redoubt"] = true,
+		["Nesingwary's Gameland"] = true,
 		["Forsaken High Command"] = true,
 		["Stonemaul Hold"] = true,
-		["Stormtorn Foothills"] = true,
+		["The Mor'Shan Ramparts"] = true,
 		["Deliverance Point"] = true,
 		["Stonehoof Watch"] = true,
 		["Tranquillien"] = true,
 		["Sagehaven"] = true,
 		["Thunder Bluff"] = true,
 		["Port of Zandalar"] = true,
-		["The Sliver"] = true,
 		["Camp Mojache"] = true,
+		["The Sliver"] = true,
 		["Refugee Camp"] = true,
-		["Eastwall Tower"] = true,
 		["Garden of the Loa"] = true,
+		["Eastwall Tower"] = true,
 		["Moonglade"] = true,
 		["Aalgen Point"] = true,
 		["Fairbreeze Village"] = true,
@@ -215,8 +209,8 @@ WoWProCharDB = {
 		["Eastpoint Tower"] = true,
 		["Karnum's Glade"] = true,
 		["Nozzlepot's Outpost"] = true,
-		["Flame Crest"] = true,
 		["Atal'Dazar"] = true,
+		["Flame Crest"] = true,
 		["Iron Summit"] = true,
 		["Bambala"] = true,
 		["Prepfoot"] = true,
@@ -235,12 +229,12 @@ WoWProCharDB = {
 		["Splintertree Post"] = true,
 		["Razor Hill"] = true,
 		["Terrace of the Collectors"] = true,
+		["Shattered Landing"] = true,
 		["Shipwreck Cove"] = true,
 		["The Menders' Stead"] = true,
-		["Shattered Landing"] = true,
 		["Shadowprey Village"] = true,
 		["Bilgewater Harbor"] = true,
-		["The Mor'Shan Ramparts"] = true,
+		["Stormtorn Foothills"] = true,
 		["Vendetta Point"] = true,
 		["Old Gate"] = true,
 		["Sanctuary of the Mad"] = true,
@@ -261,13 +255,257 @@ WoWProCharDB = {
 		["Shattered Fields"] = true,
 		["Keeper's Respite"] = true,
 		["Oribos"] = true,
-		["Hammerfall"] = true,
+		["Plague Watch"] = true,
 		["Plaguewood Tower"] = true,
 		["Hiri'watha Research Station"] = true,
 		["Glitterfall Basin"] = true,
 		["Tirna Vaal"] = true,
 	},
-	["GuideVersion"] = {
+	["Guide"] = {
+		["KraSunIsle"] = {
+			["total"] = 195,
+			["Version"] = "9.2.5-A0",
+			["skipped"] = {
+			},
+			["done"] = false,
+			["progress"] = 193,
+			["completion"] = {
+				"Player level exceeds step limit", -- [1]
+				nil, -- [2]
+				8325, -- [3]
+				8325, -- [4]
+				8325, -- [5]
+				8326, -- [6]
+				8326, -- [7]
+				8326, -- [8]
+				8327, -- [9]
+				37443, -- [10]
+				37442, -- [11]
+				37440, -- [12]
+				"NextStep(): Skipping step, available quest is currently complete or active", -- [13]
+				37439, -- [14]
+				"NextStep(): Skipping step, available quest is currently complete or active", -- [15]
+				37440, -- [16]
+				37439, -- [17]
+				37440, -- [18]
+				37442, -- [19]
+				37443, -- [20]
+				8327, -- [21]
+				8334, -- [22]
+				8334, -- [23]
+				37443, -- [24]
+				8334, -- [25]
+				37443, -- [26]
+				37442, -- [27]
+				37443, -- [28]
+				37440, -- [29]
+				nil, -- [30]
+				37439, -- [31]
+				nil, -- [32]
+				8334, -- [33]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [34]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [35]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [36]
+				"AutoCompleteQuestUpdate: complete", -- [37]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [38]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [39]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [40]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [41]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [42]
+				"AutoCompleteZoneBroker", -- [43]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [44]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [45]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [46]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [47]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [48]
+				8350, -- [49]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [50]
+				"AutoCompleteSetHearth", -- [51]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [52]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [53]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [54]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [55]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [56]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [57]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [58]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [59]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [60]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [61]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [62]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [63]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [64]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [65]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [66]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [67]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [68]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [69]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [70]
+				"NextStep(): completed cause you have enough loot in bags.", -- [71]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [72]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [73]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [74]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [75]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [76]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [77]
+				"NextStep(): completed cause you have enough loot in bags.", -- [78]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [79]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [80]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [81]
+				8482, -- [82]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [83]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [84]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [85]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [86]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [87]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [88]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [89]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [90]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [91]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [92]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [93]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [94]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [95]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [96]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [97]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [98]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [99]
+				8483, -- [100]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [101]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [102]
+				9256, -- [103]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [104]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [105]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [106]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [107]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [108]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [109]
+				9395, -- [110]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [111]
+				9395, -- [112]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [113]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [114]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [115]
+				"AutoCompleteQuestUpdate: complete", -- [116]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [117]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [118]
+				9133, -- [119]
+				9133, -- [120]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [121]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [122]
+				"AutoCompleteQuestUpdate: complete", -- [123]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [124]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [125]
+				9135, -- [126]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [127]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [128]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [129]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [130]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [131]
+				"AutoCompleteQuestUpdate: complete", -- [132]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [133]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [134]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [135]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [136]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [137]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [138]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [139]
+				"AutoCompleteQuestUpdate: complete", -- [140]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [141]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [142]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [143]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [144]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [145]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [146]
+				9358, -- [147]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [148]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [149]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [150]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [151]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [152]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [153]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [154]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [155]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [156]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [157]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [158]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [159]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [160]
+				"AutoCompleteQuestUpdate: complete", -- [161]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [162]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [163]
+				8888, -- [164]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [165]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [166]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [167]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [168]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [169]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [170]
+				8894, -- [171]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [172]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [173]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [174]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [175]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [176]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [177]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [178]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [179]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [180]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [181]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [182]
+				"AutoCompleteQuestUpdate: complete", -- [183]
+				8479, -- [184]
+				"AutoCompleteLoot", -- [185]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [186]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [187]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [188]
+				9360, -- [189]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [190]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [191]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [192]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [193]
+				9255, -- [194]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [195]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [196]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [197]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [198]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [199]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [200]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [201]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [202]
+				8474, -- [203]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [204]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [205]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [206]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [207]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [208]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [209]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [210]
+				false, -- [211]
+			},
+		},
+		["ChromieTimeH"] = {
+			["total"] = 7,
+			["Version"] = "2022.10.26.A",
+			["skipped"] = {
+			},
+			["done"] = false,
+			["completion"] = {
+				"Player level exceeds step limit", -- [1]
+				nil, -- [2]
+				nil, -- [3]
+				false, -- [4]
+				false, -- [5]
+				false, -- [6]
+				false, -- [7]
+				false, -- [8]
+				false, -- [9]
+				51443, -- [10]
+				false, -- [11]
+				[14] = false,
+			},
+			["progress"] = 1,
+		},
+		["hearth"] = "The Broken Tusk",
 	},
 	["EnableTreasures"] = true,
 	["completedQIDs"] = {
@@ -1009,9 +1247,9 @@ WoWProCharDB = {
 		[60508] = true,
 		[9327] = true,
 		[60251] = true,
-		[42119] = false,
-		[58431] = true,
 		[40072] = true,
+		[58431] = true,
+		[42119] = false,
 		[58037] = true,
 		[58623] = true,
 		[48452] = true,
@@ -1042,7 +1280,7 @@ WoWProCharDB = {
 		[60287] = true,
 		[37538] = true,
 		[41992] = true,
-		[65657] = true,
+		[40009] = true,
 		[8491] = false,
 		[44784] = true,
 		[61553] = true,
@@ -1136,9 +1374,9 @@ WoWProCharDB = {
 		[54021] = true,
 		[39804] = true,
 		[49810] = true,
-		[65663] = true,
-		[41995] = true,
 		[40012] = true,
+		[41995] = true,
+		[65663] = true,
 		[51532] = true,
 		[59656] = true,
 		[62721] = true,
@@ -1168,9 +1406,9 @@ WoWProCharDB = {
 		[9352] = true,
 		[42088] = true,
 		[37440] = true,
-		[65665] = true,
-		[44043] = true,
 		[8476] = false,
+		[44043] = true,
+		[65665] = true,
 		[57932] = true,
 		[8473] = true,
 		[50252] = true,
@@ -1377,7 +1615,7 @@ WoWProCharDB = {
 		[46928] = true,
 		[8334] = true,
 		[46336] = true,
-		[40009] = true,
+		[65657] = true,
 		[46783] = true,
 		[46337] = true,
 		[39124] = true,
@@ -1409,255 +1647,11 @@ WoWProCharDB = {
 	},
 	["AutoHideInsideInstancesNotify"] = true,
 	["AutoHideInCombat"] = false,
+	["GuideVersion"] = {
+	},
 	["BuildingLocations"] = {
 	},
-	["Guide"] = {
-		["KraSunIsle"] = {
-			["total"] = 195,
-			["Version"] = "9.2.5-A0",
-			["skipped"] = {
-			},
-			["done"] = false,
-			["progress"] = 193,
-			["completion"] = {
-				"Player level exceeds step limit", -- [1]
-				nil, -- [2]
-				8325, -- [3]
-				8325, -- [4]
-				8325, -- [5]
-				8326, -- [6]
-				8326, -- [7]
-				8326, -- [8]
-				8327, -- [9]
-				37443, -- [10]
-				37442, -- [11]
-				37440, -- [12]
-				"NextStep(): Skipping step, available quest is currently complete or active", -- [13]
-				37439, -- [14]
-				"NextStep(): Skipping step, available quest is currently complete or active", -- [15]
-				37440, -- [16]
-				37439, -- [17]
-				37440, -- [18]
-				37442, -- [19]
-				37443, -- [20]
-				8327, -- [21]
-				8334, -- [22]
-				8334, -- [23]
-				37443, -- [24]
-				8334, -- [25]
-				37443, -- [26]
-				37442, -- [27]
-				37443, -- [28]
-				37440, -- [29]
-				nil, -- [30]
-				37439, -- [31]
-				nil, -- [32]
-				8334, -- [33]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [34]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [35]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [36]
-				"AutoCompleteQuestUpdate: complete", -- [37]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [38]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [39]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [40]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [41]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [42]
-				"AutoCompleteZoneBroker", -- [43]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [44]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [45]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [46]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [47]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [48]
-				8350, -- [49]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [50]
-				"AutoCompleteSetHearth", -- [51]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [52]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [53]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [54]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [55]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [56]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [57]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [58]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [59]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [60]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [61]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [62]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [63]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [64]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [65]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [66]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [67]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [68]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [69]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [70]
-				"NextStep(): completed cause you have enough loot in bags.", -- [71]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [72]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [73]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [74]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [75]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [76]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [77]
-				"NextStep(): completed cause you have enough loot in bags.", -- [78]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [79]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [80]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [81]
-				8482, -- [82]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [83]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [84]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [85]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [86]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [87]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [88]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [89]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [90]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [91]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [92]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [93]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [94]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [95]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [96]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [97]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [98]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [99]
-				8483, -- [100]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [101]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [102]
-				9256, -- [103]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [104]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [105]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [106]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [107]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [108]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [109]
-				9395, -- [110]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [111]
-				9395, -- [112]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [113]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [114]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [115]
-				"AutoCompleteQuestUpdate: complete", -- [116]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [117]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [118]
-				9133, -- [119]
-				9133, -- [120]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [121]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [122]
-				"AutoCompleteQuestUpdate: complete", -- [123]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [124]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [125]
-				9135, -- [126]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [127]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [128]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [129]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [130]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [131]
-				"AutoCompleteQuestUpdate: complete", -- [132]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [133]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [134]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [135]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [136]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [137]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [138]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [139]
-				"AutoCompleteQuestUpdate: complete", -- [140]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [141]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [142]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [143]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [144]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [145]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [146]
-				9358, -- [147]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [148]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [149]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [150]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [151]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [152]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [153]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [154]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [155]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [156]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [157]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [158]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [159]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [160]
-				"AutoCompleteQuestUpdate: complete", -- [161]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [162]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [163]
-				8888, -- [164]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [165]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [166]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [167]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [168]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [169]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [170]
-				8894, -- [171]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [172]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [173]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [174]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [175]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [176]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [177]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [178]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [179]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [180]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [181]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [182]
-				"AutoCompleteQuestUpdate: complete", -- [183]
-				8479, -- [184]
-				"AutoCompleteLoot", -- [185]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [186]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [187]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [188]
-				9360, -- [189]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [190]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [191]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [192]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [193]
-				9255, -- [194]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [195]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [196]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [197]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [198]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [199]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [200]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [201]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [202]
-				8474, -- [203]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [204]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [205]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [206]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [207]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [208]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [209]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [210]
-				false, -- [211]
-			},
-		},
-		["ChromieTimeH"] = {
-			["total"] = 7,
-			["Version"] = "2020.09.29.A",
-			["skipped"] = {
-			},
-			["done"] = false,
-			["completion"] = {
-				"Player level exceeds step limit", -- [1]
-				nil, -- [2]
-				nil, -- [3]
-				false, -- [4]
-				false, -- [5]
-				false, -- [6]
-				false, -- [7]
-				false, -- [8]
-				false, -- [9]
-				51443, -- [10]
-				false, -- [11]
-				[14] = false,
-			},
-			["progress"] = 1,
-		},
-		["hearth"] = "The Broken Tusk",
-	},
-	["EnableGrailQuestObsolete"] = false,
+	["Enabled"] = true,
 	["skippedQIDs"] = {
 	},
 	["Rank"] = {

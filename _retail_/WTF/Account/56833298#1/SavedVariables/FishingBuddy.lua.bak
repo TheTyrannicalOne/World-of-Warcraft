@@ -144,7 +144,7 @@ FishingBuddy_Info = {
 		[198] = "Nordrassil",
 		[126] = "Cantrips & Crows",
 		[42] = "Karazhan",
-		[107] = "Nagrand",
+		[241] = "Loch Verrall",
 		[627] = "The Eventide",
 		[1462] = "Broken Point",
 		[1525] = "Dredgewood",
@@ -161,9 +161,9 @@ FishingBuddy_Info = {
 		[1970] = "Circle of Thought",
 		[1161] = "Proudmoore Keep",
 		[630] = "El'dranil Shallows",
-		[210] = "Southern Savage Coast",
-		[241] = "Loch Verrall",
 		[76] = "The Ruined Reaches",
+		[107] = "Nagrand",
+		[210] = "Southern Savage Coast",
 	},
 	["FishingHoles"] = {
 		[76002] = {
@@ -275,10 +275,10 @@ FishingBuddy_Info = {
 			[9779] = 1,
 		},
 		[534001] = {
-			[127994] = 3,
-			[127759] = 1,
 			[127991] = 8,
+			[127759] = 1,
 			[118391] = 1,
+			[127994] = 3,
 		},
 		[1462001] = {
 			[168262] = 87,

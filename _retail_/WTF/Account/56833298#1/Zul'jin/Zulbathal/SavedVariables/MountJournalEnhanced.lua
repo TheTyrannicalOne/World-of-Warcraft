@@ -55,25 +55,22 @@ MJEPersonalSettings = {
 			["Achievement"] = true,
 			["Instance"] = true,
 			["Class"] = true,
-			["World Event"] = true,
+			["Vendor"] = true,
 			["Profession"] = true,
 			["Island Expedition"] = true,
 			["Shop"] = true,
 			["Covenants"] = true,
 			["Drop"] = true,
 			["Garrison"] = true,
-			["Vendor"] = true,
-			["Quest"] = true,
 			["Promotion"] = true,
+			["Quest"] = true,
+			["World Event"] = true,
 		},
 		["color"] = {
 		},
 		["hiddenIngame"] = false,
 		["notCollected"] = true,
 		["hidden"] = false,
-		["onlyUsable"] = false,
-		["onlyTradable"] = false,
-		["onlyFavorites"] = false,
 		["mountType"] = {
 			["repair"] = true,
 			["flying"] = true,
@@ -83,11 +80,14 @@ MJEPersonalSettings = {
 			["ground"] = true,
 			["transform"] = true,
 		},
+		["onlyTradable"] = false,
+		["onlyFavorites"] = false,
 		["faction"] = {
 			["horde"] = true,
 			["alliance"] = true,
 			["noFaction"] = true,
 		},
+		["onlyUsable"] = false,
 		["family"] = {
 			["Arachnids"] = {
 				["Scorpions"] = true,
@@ -122,6 +122,11 @@ MJEPersonalSettings = {
 				["Wyverns"] = true,
 			},
 			["Gargoyle"] = true,
+			["Devourer"] = {
+				["Mauler"] = true,
+				["Gorger"] = true,
+				["Animite"] = true,
+			},
 			["Cats"] = {
 				["Sabers"] = true,
 				["Stone Cats"] = true,
@@ -130,11 +135,6 @@ MJEPersonalSettings = {
 				["Lions"] = true,
 				["Mechanical Cats"] = true,
 				["Manasabers"] = true,
-			},
-			["Devourer"] = {
-				["Mauler"] = true,
-				["Gorger"] = true,
-				["Animite"] = true,
 			},
 			["Dragonhawks"] = true,
 			["Fish"] = {
@@ -157,15 +157,6 @@ MJEPersonalSettings = {
 				["Horned Steeds"] = true,
 				["Undead Steeds"] = true,
 			},
-			["Rats"] = true,
-			["Wolves"] = {
-				["Wolves"] = true,
-				["Lupine"] = true,
-				["Wilderlings"] = true,
-				["War Wolves"] = true,
-				["Dire Wolves"] = true,
-				["Undead Wolves"] = true,
-			},
 			["Drakes"] = {
 				["Drakes"] = true,
 				["Wind Drakes"] = true,
@@ -177,6 +168,15 @@ MJEPersonalSettings = {
 				["Nether Drakes"] = true,
 				["Others"] = true,
 			},
+			["Rats"] = true,
+			["Wolves"] = {
+				["Wolves"] = true,
+				["Lupine"] = true,
+				["Wilderlings"] = true,
+				["War Wolves"] = true,
+				["Dire Wolves"] = true,
+				["Undead Wolves"] = true,
+			},
 			["Dinosaurs"] = {
 				["Direhorns"] = true,
 				["Brutosaurs"] = true,
@@ -185,14 +185,10 @@ MJEPersonalSettings = {
 				["Pterrordaxes"] = true,
 			},
 			["Rays"] = {
-				["Stingrays"] = true,
-				["Fathom Rays"] = true,
-				["Mana Rays"] = true,
 				["Nether Rays"] = true,
-			},
-			["Amphibian"] = {
-				["Crawgs"] = true,
-				["Toads"] = true,
+				["Stingrays"] = true,
+				["Mana Rays"] = true,
+				["Fathom Rays"] = true,
 			},
 			["Insects"] = {
 				["Water Striders"] = true,
@@ -206,6 +202,10 @@ MJEPersonalSettings = {
 				["Aqir Flyers"] = true,
 				["Animite"] = true,
 				["Moth"] = true,
+			},
+			["Amphibian"] = {
+				["Crawgs"] = true,
+				["Toads"] = true,
 			},
 			["Bovids"] = {
 				["Yaks"] = true,

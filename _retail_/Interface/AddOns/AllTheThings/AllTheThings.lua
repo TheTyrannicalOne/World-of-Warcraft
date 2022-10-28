@@ -1351,11 +1351,12 @@ GameTooltipModel.TrySetModel = function(self, reference)
 			end
 		end
 
-		if reference.model then
+		local modelID = tonumber(reference.model);
+		if modelID and modelID > 0 then
 			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
 			self.Model:SetCamDistanceScale(reference.modelScale or 1);
 			self.Model:SetUnit("none");
-			self.Model:SetModel(reference.model);
+			self.Model:SetModel(modelID);
 			self.Model:Show();
 			self:Show();
 			return true;
@@ -22878,22 +22879,22 @@ hooksecurefunc(GameTooltip, "SetRecipeReagentItem", function(self, recipeID, rea
 end)
 -- GameTooltip:HookScript("OnUpdate", CheckAttachTooltip);
 GameTooltip:HookScript("OnShow", AttachTooltip);
---GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
---GameTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
---GameTooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
---GameTooltip:HookScript("OnTooltipCleared", ClearTooltip);
+GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
+GameTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
+GameTooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
+GameTooltip:HookScript("OnTooltipCleared", ClearTooltip);
 ItemRefTooltip:HookScript("OnShow", AttachTooltip);
---ItemRefTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
---ItemRefTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
---ItemRefTooltip:HookScript("OnTooltipCleared", ClearTooltip);
+ItemRefTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
+ItemRefTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
+ItemRefTooltip:HookScript("OnTooltipCleared", ClearTooltip);
 ItemRefShoppingTooltip1:HookScript("OnShow", AttachTooltip);
---ItemRefShoppingTooltip1:HookScript("OnTooltipSetQuest", AttachTooltip);
---ItemRefShoppingTooltip1:HookScript("OnTooltipSetItem", AttachTooltip);
---ItemRefShoppingTooltip1:HookScript("OnTooltipCleared", ClearTooltip);
+ItemRefShoppingTooltip1:HookScript("OnTooltipSetQuest", AttachTooltip);
+ItemRefShoppingTooltip1:HookScript("OnTooltipSetItem", AttachTooltip);
+ItemRefShoppingTooltip1:HookScript("OnTooltipCleared", ClearTooltip);
 ItemRefShoppingTooltip2:HookScript("OnShow", AttachTooltip);
---ItemRefShoppingTooltip2:HookScript("OnTooltipSetQuest", AttachTooltip);
---ItemRefShoppingTooltip2:HookScript("OnTooltipSetItem", AttachTooltip);
---ItemRefShoppingTooltip2:HookScript("OnTooltipCleared", ClearTooltip);
+ItemRefShoppingTooltip2:HookScript("OnTooltipSetQuest", AttachTooltip);
+ItemRefShoppingTooltip2:HookScript("OnTooltipSetItem", AttachTooltip);
+ItemRefShoppingTooltip2:HookScript("OnTooltipCleared", ClearTooltip);
 
 --[[
 hooksecurefunc("EmbeddedItemTooltip_SetCurrencyByID", function(self, id, ...)

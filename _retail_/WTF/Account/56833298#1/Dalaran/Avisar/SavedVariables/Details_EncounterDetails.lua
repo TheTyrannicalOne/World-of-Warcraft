@@ -191,21 +191,20 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Nefarian",
 		},
-		[19712] = {
-			["school"] = 64,
+		[19460] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Shazzrah",
+			["source"] = "Lucifron",
 		},
-		[19272] = {
-			["school"] = 4,
+		[19776] = {
+			["school"] = 32,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Ancient Core Hound",
+			["source"] = "Flamewaker Priest",
 		},
 		[22666] = {
 			["school"] = 8,
@@ -347,20 +346,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Gehennas",
 		},
-		[19776] = {
-			["school"] = 32,
+		[19272] = {
+			["school"] = 4,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Flamewaker Priest",
+			["source"] = "Ancient Core Hound",
 		},
-		[19460] = {
-			["school"] = 32,
+		[19712] = {
+			["school"] = 64,
 			["token"] = {
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Lucifron",
+			["source"] = "Shazzrah",
 		},
 		[22979] = {
 			["school"] = 4,

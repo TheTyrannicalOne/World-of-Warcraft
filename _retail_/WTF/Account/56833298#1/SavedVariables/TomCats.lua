@@ -1,12 +1,14 @@
 
 TomCats_Account = {
 	["hallowsend"] = {
+		["autoEnabled"] = true,
 		["iconScale"] = 1,
 		["preferences"] = {
 		},
 		["iconsEnabled"] = true,
 		["discovered"] = true,
-		["autoEnabled"] = true,
+		["arrowsEnabled"] = false,
+		["arrowEnabled"] = true,
 	},
 	["lastExpirationWarning"] = 0,
 	["discoveriesResetCount"] = 0,
@@ -16,20 +18,6 @@ TomCats_Account = {
 	},
 	["loveisintheair"] = {
 		["characters"] = {
-			["Player-3683-0B9BB303"] = {
-				["bracelets"] = 0,
-				["class"] = "MAGE",
-				["boxes"] = 0,
-				["charms"] = 0,
-				["name"] = "Darnastris",
-				["timestamp"] = 1645403068,
-				["tokens"] = 102,
-				["faction"] = "Alliance",
-				["completedDungeon"] = true,
-				["level"] = 51,
-				["canLootMount"] = true,
-				["realm"] = "Dalaran",
-			},
 			["Player-75-058380E2"] = {
 				["bracelets"] = 0,
 				["class"] = "WARRIOR",
@@ -43,6 +31,20 @@ TomCats_Account = {
 				["timestamp"] = 1645406972,
 				["canLootMount"] = true,
 				["realm"] = "ArgentDawn",
+			},
+			["Player-96-0CBEA15E"] = {
+				["bracelets"] = 0,
+				["class"] = "DRUID",
+				["boxes"] = 0,
+				["charms"] = 0,
+				["name"] = "Durlok",
+				["timestamp"] = 1645398493,
+				["tokens"] = 97,
+				["faction"] = "Horde",
+				["completedDungeon"] = true,
+				["level"] = 51,
+				["canLootMount"] = true,
+				["realm"] = "BlackDragonflight",
 			},
 			["Player-3683-0C0E386E"] = {
 				["bracelets"] = 0,
@@ -100,26 +102,26 @@ TomCats_Account = {
 				["canLootMount"] = true,
 				["realm"] = "Dalaran",
 			},
-			["Player-96-0CBEA15E"] = {
+			["Player-3683-0B9BB303"] = {
 				["bracelets"] = 0,
-				["class"] = "DRUID",
+				["class"] = "MAGE",
 				["boxes"] = 0,
 				["charms"] = 0,
-				["name"] = "Durlok",
-				["timestamp"] = 1645398493,
-				["tokens"] = 97,
-				["faction"] = "Horde",
+				["name"] = "Darnastris",
+				["timestamp"] = 1645403068,
+				["tokens"] = 102,
+				["faction"] = "Alliance",
 				["completedDungeon"] = true,
 				["level"] = 51,
 				["canLootMount"] = true,
-				["realm"] = "BlackDragonflight",
+				["realm"] = "Dalaran",
 			},
 		},
 		["preferences"] = {
 		},
 	},
-	["discoveriesVersion"] = "2.4.20",
-	["lastVersionSeen"] = "2.4.20",
+	["discoveriesVersion"] = "2.4.21",
+	["lastVersionSeen"] = "2.4.21",
 	["preferences"] = {
 		["TomCats-HallowsEndMinimapButton"] = {
 			["hidden"] = false,

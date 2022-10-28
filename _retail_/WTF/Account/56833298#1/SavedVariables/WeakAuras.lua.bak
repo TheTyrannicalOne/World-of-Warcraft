@@ -46,7 +46,7 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["columnSpace"] = 1,
-			["internalVersion"] = 58,
+			["internalVersion"] = 59,
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -96,18 +96,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["rotation"] = 0,
+			["radius"] = 200,
 			["animate"] = false,
-			["rowSpace"] = 1,
+			["fullCircle"] = true,
 			["scale"] = 1,
-			["xOffset"] = 0,
+			["rowSpace"] = 1,
 			["border"] = false,
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
-			["gridType"] = "RD",
-			["fullCircle"] = true,
+			["xOffset"] = 0,
+			["arcLength"] = 360,
 			["constantFactor"] = "RADIUS",
 			["limit"] = 5,
 			["borderOffset"] = 4,
@@ -121,14 +121,14 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["selfPoint"] = "TOP",
-			["arcLength"] = 360,
+			["rotation"] = 0,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["radius"] = 200,
+			["gridType"] = "RD",
 		},
 		["Details! Aura Group"] = {
 			["grow"] = "DOWN",
@@ -173,7 +173,7 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["columnSpace"] = 1,
-			["internalVersion"] = 58,
+			["internalVersion"] = 59,
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -223,18 +223,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["rotation"] = 0,
+			["radius"] = 200,
 			["animate"] = false,
-			["rowSpace"] = 1,
+			["fullCircle"] = true,
 			["scale"] = 1,
-			["xOffset"] = 0,
+			["rowSpace"] = 1,
 			["border"] = false,
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
-			["gridType"] = "RD",
-			["fullCircle"] = true,
+			["xOffset"] = 0,
+			["arcLength"] = 360,
 			["constantFactor"] = "RADIUS",
 			["limit"] = 5,
 			["borderOffset"] = 4,
@@ -248,22 +248,22 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["selfPoint"] = "TOP",
-			["arcLength"] = 360,
+			["rotation"] = 0,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["radius"] = 200,
+			["gridType"] = "RD",
 		},
 	},
 	["lastArchiveClear"] = 1608349427,
 	["minimap"] = {
 		["hide"] = false,
 	},
-	["lastUpgrade"] = 1666751579,
-	["dbVersion"] = 58,
+	["lastUpgrade"] = 1666827529,
+	["dbVersion"] = 59,
 	["registered"] = {
 	},
 	["login_squelch_time"] = 10,

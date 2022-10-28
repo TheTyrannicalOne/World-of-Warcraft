@@ -1,11 +1,11 @@
-## Interface: 90207
+## Interface: 100000
 
 ## Title: World Quest Tracker
 ## Notes: An addon by Terciob. Make more easy to see world quests
 ## SavedVariables: WQTrackerDB
 ## SavedVariablesPerCharacter: WQTrackerDBChr
 
-## Version: v9.2.7.448-Retail
+## Version: v10.0.0.450-Retail
 
 ## X-Curse-Project-ID: 100610
 ## X-Wago-ID: lQNlrEKe

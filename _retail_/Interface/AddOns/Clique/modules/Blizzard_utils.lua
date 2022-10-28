@@ -32,15 +32,19 @@ function addon:RegisterBlizzardFrame(frame)
         return
     end
 
-    -- Some checks to ensure we don't register frames that aren't compatible
+    -- Never allow forbidden frames, we can't do anything with those!
+    local forbidden = frame.IsForbidden and frame:IsForbidden()
+    if forbidden then
+        return
+    end
+
     local buttonish = frame and frame.RegisterForClicks
     local protected = frame.IsProtected and frame:IsProtected()
     local nameplateish = frame and frame.GetName and frame:GetName() and frame:GetName():match("^NamePlate")
     local anchorRestricted = frame.IsAnchoringRestricted and frame:IsAnchoringRestricted()
-    local forbidden = frame.IsForbidden and frame:IsForbidden()
 
-    -- A frame must be a button, and must be protected, and must not be a nameplate, anchor restricted or forbidden
-    local valid = buttonish and protected and (not nameplateish) and (not anchorRestricted) and (not forbidden)
+    -- A frame must be a button, and must be protected, and must not be a nameplate, anchor restricted
+    local valid = buttonish and protected and (not nameplateish) and (not anchorRestricted)
     if valid then
         ClickCastFrames[frame] = true
     end

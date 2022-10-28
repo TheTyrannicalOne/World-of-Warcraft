@@ -43,15 +43,15 @@ SpyDB = {
 				},
 				["Illingrath"] = {
 				},
-				["Avisar"] = {
+				["Galvarton"] = {
 				},
 				["Thorinbane"] = {
 				},
 				["Kelvalatar"] = {
 				},
-				["Varlouris"] = {
+				["Avisar"] = {
 				},
-				["Galvarton"] = {
+				["Varlouris"] = {
 				},
 			},
 		},
@@ -291,8 +291,8 @@ SpyDB = {
 					["x"] = 4,
 				},
 			},
-			["MainWindowVis"] = false,
 			["AppendUnitKoSCheck"] = true,
+			["MainWindowVis"] = false,
 		},
 		["Banuumine - Zul'jin"] = {
 			["AppendUnitNameCheck"] = true,

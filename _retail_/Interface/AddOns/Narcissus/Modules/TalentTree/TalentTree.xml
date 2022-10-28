@@ -77,7 +77,7 @@
                         <Anchor point="CENTER" relativeKey="$parent" relativePoint="CENTER"/>
                     </Anchors>
                 </FontString>
-                <FontString parentKey="Description" inherits="NarciFontNormal9" justifyH="LEFT" justifyV="TOP" spacing="1" maxLines="2">
+                <FontString parentKey="Description" inherits="NarciFontNormal9" justifyH="LEFT" justifyV="TOP" spacing="1" maxLines="0">
                     <Color r="1" g="0.82" b="0"/>
                     <Size x="160"/>
                     <Anchors>

@@ -396,3 +396,17 @@ DeModal: enabled
 TalentTreeTweaks: enabled
 TalentViewer: enabled
 TransmogRoulette: enabled
+Blizzard_PetJournal: enabled
+SharedMedia: enabled
+Tukui: enabled
+LibDBIcon-1.0: enabled
+LibDualSpec-1.0: enabled
+AddonSkins: enabled
+LibCandyBar-3.0: enabled
+LibDDI-1.0: enabled
+LibSpecialization: enabled
+LibChatAnims: enabled
+Blizzard_TalkingHeadUI: enabled
+Hermes: enabled
+xCT+: enabled
+ElvUI_UnitFramePlugin: disabled
