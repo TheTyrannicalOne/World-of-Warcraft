@@ -5,7 +5,7 @@ WoWPro:GuideName(guide,"The Jade Forest")
 WoWPro:GuideNextGuide(guide, 'Valley of the Four Winds')
 WoWPro:GuideSteps(guide, function()
 return [[
-N It's Chromie Time!|AVAILABLE|62567|M|62.25,29.93|Z|Stormwind City|JUMP|Chromie Time|S!US|N|You can now accept Chromie's Call at the Hero's Call board in Stormwind. This will allow you to choose which expansion you want to level in and scale the content to your level.\n\nYou're free to continue your current guide by skipping this and continuing on, but it won't continue to scale. If you want to enable Chromie Time, click the guide button next to this frame to direct you to Chromie in Stormwind!|LVL|-50|CT|
+N It's Chromie Time!|AVAILABLE|62567|M|62.25,29.93|Z|Stormwind City|JUMP|Chromie Time|S!US|N|You can now accept Chromie's Call at the Hero's Call board in Stormwind. This will allow you to choose which expansion you want to level in and scale the content to your level.\n\nYou're free to continue your current guide by skipping this and continuing on, but it won't continue to scale. If you want to enable Chromie Time, click the guide button next to this frame to direct you to Chromie in Stormwind!|LVL|-60|CT|
 A Mists of Pandaria: To Pandaria!|QID|60125|M|56.26,17.31|N|From Chromie after activating Mists of Pandaria timeline.|
 R Stormwind Keep|QID|60125|M|81.03,37.38|Z|Stormwind City|N|Run into the keep to trigger the cinematic.|
 T Mists of Pandaria: To Pandaria!|QID|60125|M|78.95,39.83|Z|Stormwind City|N|To Rell Nightwind.|
@@ -109,7 +109,7 @@ T The Path of War|QID|29558|M|54.15,82.42|N|To Bold Karasshi.|
 T Freeing Our Brothers|QID|29559|M|54.15,82.42|N|To Bold Karasshi.|
 T Ancient Power|QID|29560|M|54.15,82.42|N|To Bold Karasshi.|
 A Kung Din|QID|29759|PRE|29558&29559&29560|M|54.15,82.42|N|From Bold Karasshi.|
-K Kung Din|QID|29759|T|Kung Din|M|54.56,79.99|N|Two phase fight, switches between normal fighting and Vehicle UI where you need to press 1 to "hang on for life".  Remember the Key!|L|79753|
+K Kung Din|ACTIVE|29759|QO|1|T|Kung Din|M|54.56,79.99|N|Two phase fight, switches between normal fighting and Vehicle UI where you need to press 1 to "hang on for life".  Remember the Key!|L|79753|
 T Kung Din|QID|29759|M|54.15,82.42|N|To Bold Karasshi.|
 A Jailbreak|QID|29562|PRE|29759|M|54.15,82.42|N|From Bold Karasshi.|
 C Jailbreak|QID|29562|M|56.18,81.41|
@@ -153,7 +153,7 @@ C Inspect Suspicious Jade Statue|QID|29726|QO|3|M|38.95,46.36|
 C Speak with Widow Greenpaw|QID|29726|QO|4|CHAT|M|39.25,46.22|N|Talk to Widow Greenpaw and then walk away before she turns you to stone.|
 T SI:7 Report: Hostile Natives|QID|29726|M|59.04,81.90|N|To Little Lu.|
 A SI:7 Report: Take No Prisoners|QID|29727|PRE|29726|M|58.93,81.93|N|From Amber Kearnen. "See" her report as soon as you accept.|
-C SI:7 Report: Take No Prisoners|QID|29727|M|28.6,54.4|N|It's shooting time! Target the Hozen that have a yellow triangle over their head first.  Don't let anybody shoot at Amber when he runs off to the orcs! Only kill orcs, when all the Hozen are gone.|
+C SI:7 Report: Take No Prisoners|QID|29727|M|28.6,54.4|N|It's shooting time! Target the Hozen that have a yellow triangle over their head first.  Don't let anybody shoot at Sully when he runs off to the orcs! Only kill orcs, when all the Hozen are gone.|
 T SI:7 Report: Take No Prisoners|QID|29727|M|58.93,81.93|N|To Amber Kearnen.|
 A A Perfect Match|QID|29903|PRE|29727|M|58.87,81.68|N|From Admiral Taylor.|
 A Seek Out the Lorewalker|QID|29888|PRE|29727|M|58.96,81.68|N|From Bold Karasshi.|
@@ -214,12 +214,11 @@ T An Ancient Legend|QID|29900|M|65.94,79.22|N|To Ren Whitepaw.|
 A Anduin's Decision|QID|29901|PRE|29898&29899&29900|M|65.94,79.22|N|From Ren Whitepaw.|
 C Anduin's Decision|QID|29901|M|65.91,79.24|CHAT|N|Talk to Anduin and learn of his decision in case you didn't guess it already.|
 T Anduin's Decision|QID|29901|M|58.87,81.68|N|To Admiral Taylor, back in *Pearlfin Village*.|
-A In Search of Wisdom|QID|29922|PRE|29901|M|58.1,80.6|N|From Elder Lusshan.|
+A In Search of Wisdom|QID|29922|PRE|29901|M|58.87,81.49|N|From Elder Lusshan.|
 C In Search of Wisdom|QID|29922|CHAT|M|57.95,82.52|N|Speak to Kitemaster Ut-Nam and have him send you to Dawn's Blossom|
 f Dawn's Blossom|QID|29922|M|47.05,46.24|N|At Keg Runner Lee.|
 T In Search of Wisdom|QID|29922|M|46.81,46.14|N|To Lorewalker Cho.|
-; [aldavor] added rank 3 since it's achiev not quest.
-R The Emperor's Burden - Part 1|QID|968550001|M|47.08, 45.14|ACH|6855;1|N|Exploration>The Seven Burdens of Shaohao.|RANK|3|
+$ The Emperor's Burden - Part 1|QID|968550001|M|47.08,45.14|ACH|6855;1|N|Exploration>The Seven Burdens of Shaohao.|
 A Welcome to Dawn's Blossom|QID|31230|PRE|29922^30015|M|47.16,46.17|N|From Toya.|
 C Welcome to Dawn's Blossom|QID|31230|M|47.04,46.02|N|Wanderbrew wanders about near here.|QO|3|CHAT|
 C Welcome to Dawn's Blossom|QID|31230|M|45.77,43.67|QO|2|N|Speak with Peiji Goldendraft.|CHAT|
@@ -233,11 +232,11 @@ C The Silkwood Road|QID|29865|S|M|43.26,49.23|N|Kill silkwood stalkers until you
 A Down Kitty!|QID|29717|M|39.82,48.05|N|Little An followed you to Forest Heart and has a new quest for you, once you get there.|
 C Down Kitty!|QID|29717|S|M|37.11,47.72|N|Kill eight Jade Guardians|
 C The Double Hozen Dare|QID|29716|M|37.31,48.19|N|Talk to the frightened cubs found around the trees|CHAT|
-T The Double Hozen Dare|QID|29716|N|To An Windfur. (she should be following you)|
-A The Jade Witch|QID|29723|PRE|29716|N|From An Windfur.|
+T The Double Hozen Dare|QID|29716|M|PLAYER|N|To An Windfur. (she should be following you)|
+A The Jade Witch|QID|29723|PRE|29716|M|PLAYER|N|From An Windfur.|
 C The Jade Witch|QID|29723|M|39.23,46.17|N|Before you talk to the widow, look around for a 'Jade Warrior Statue' in her front yard, if it is there talk to it for a BoA treasure. Talk to Widow Greenpaw, she'll bring you to Shin and then become attackable, kill her.|CHAT|
 C Down Kitty!|QID|29717|US|M|37.11,47.72|N|Kill eight Jade Guardians|
-T Down Kitty!|QID|29717|N|To An Windfur.|
+T Down Kitty!|QID|29717|M|PLAYER|N|To An Windfur.|
 C The Silkwood Road|QID|29865|US|M|43.26,49.23|N|Keep killing silkwood stalkers until you have slain eight of them.|
 C The Threads that Stick|NC|QID|29866|US|M|43.68,48.32|N|Keep looting the eggs to get Pristine Silk Strands|
 T The Silkwood Road|QID|29865|M|46.46,45.81|N|To Tzu the Ironbelly.|
@@ -249,7 +248,7 @@ A An Air of Worry|QID|29576|LEAD|29578|M|48.33,46.06|N|From Old Man Misteyes.|
 A Tian Monastery|QID|29617|LEAD|29618|M|49.65,45.83|N|From Apprentice Yufi.|
 R The Arboretum|QID|29993|M|49.02,46.27;49.14,47.32;50.43,46.41|CC|N|The path is just down the stairs you passed to get the last quest.|
 A The Perfect Color|QID|29881|M|54.89,45.31|N|From Inkmaster Glenzu.|
-T Find the Boy|QID|29993|M|54.92,44.83|N|To Inkmaster Wei.|
+T Find the Boy|QID|29993|M|54.92,45.11;54.67,44.11|CN|N|To Inkmaster Wei.|
 A Shrine of the Dawn|QID|29995|PRE|29993|M|54.92,45.11;54.67,44.11|CN|N|From Inkmaster Wei, who walks around between these two chairs.|
 = Learn [spell=264502/Pandaria Inscription]|QID|773264502|M|54.91,44.95|Z|371|IZ|5785|P|Inscription;773;*;0;0|SPELL|Pandaria Inscription;264502|T|Inkmaster Wei|N|Learn from Inkmaster Wei, The Arboretum, Jade Forest. Also, BUY all Recipes available.|
 A Quill of Stingers|QID|29882|M|55.40,45.29|N|From Inkmaster Jo Po, who wanders a bit.|
@@ -262,9 +261,9 @@ T Quill of Stingers|QID|29882|M|55.28,45.20|N|To Inkmaster Jo Po.|
 R Shrine of the Dawn|QID|29995|M|54.93,45.81;54.48,47.14;51.34,45.45;51.14,39.46; 52.54,38.30|CC|N|Mount up!|
 T Shrine of the Dawn|QID|29995|M|52.57,38.12|N|To Syra Goldendraft.|
 A Getting Permission|QID|29920|PRE|29995|M|52.57,38.12|N|From Syra Goldendraft.|
-K Defeat Pandriarch Bramblestaff|QID|29920|T|Pandriarch Bramblestaff|QO|2|M|54.09,38.46|; Shrine of the Dawn
-K Defeat Pandriarch Goldendraft|QID|29920|T|Pandriarch Goldendraft|QO|3|M|53.59,36.73|; Shrine of the Dawn
-K Defeat Pandriarch Windfur|QID|29920|T|Pandriarch Windfur|QO|1|M|52.54,35.57|; Shrine of the Dawn
+K Defeat Pandriarch Bramblestaff|ACTIVE|29920|T|Pandriarch Bramblestaff|QO|2|M|54.09,38.46|; Shrine of the Dawn
+K Defeat Pandriarch Goldendraft|ACTIVE|29920|T|Pandriarch Goldendraft|QO|3|M|53.59,36.73|; Shrine of the Dawn
+K Defeat Pandriarch Windfur|ACTIVE|29920|T|Pandriarch Windfur|QO|1|M|52.54,35.57|; Shrine of the Dawn
 T Getting Permission|QID|29920|M|52.59,38.13|N|To Lo Wanderbrew.|
 R Dawn's Blossom|QID|29925|M|51.17,39.47;51.28,45.45;47.90,47.30;46.68,46.58|CC|N|Mount up and head back to Toya at Dawn's Blossom.|
 R Emperor's Omen|QID|29925|M|47.15,46.17|N|Ask Toya for a ride.|
@@ -311,7 +310,7 @@ C Vessels of the Spirit|QID|29750|S|M|40.69,14.85|N|Kill Shan'ze Spiritclaws for
 C Ritual Artifacts|QID|29751|QO|2|M|41.62,14.27|NC|N|Get the Chipped Ritual Bowl|
 C Ritual Artifacts|QID|29751|QO|1|M|42.63,15.74|NC|N|Get the Jade Cong|
 ; [aldavor] added rank 3 since it's achiev not quest.
-R Spirit Binders|QID|967540003|M|42.26, 17.47|ACH|6754;3|N|Exploration>The Dark Heart of the Mogu.|RANK|3|
+$ Spirit Binders|QID|967540003|M|42.26, 17.47|ACH|6754;3|N|Exploration>The Dark Heart of the Mogu.|RANK|3|
 C Ritual Artifacts|QID|29751|QO|3|M|42.3,17.09|NC|N|Get the Pungent Ritual Candle|
 C Vessels of the Spirit|QID|29750|US|M|40.69,14.85|N|Kill Shan'ze Spiritclaws for Spirit Bottles.|
 C The Wayward Dead|QID|29752|US|U|74771|M|40.38,14.76|N|Use Pei-Zhi's staff to release the Wandering Spirits.|
@@ -366,7 +365,7 @@ A Burning Bright|QID|29631|PRE|29627|M|38.02,23.80|N|From Guard Shan Long, outsi
 C Burning Bright|QID|29631|S|M|36,21|N|Kill six Waxwood Hunters.|
 C A Steady Hand|QID|29629|NC|S|M|34.92,22.53|N|Any movement (including panning the camera angle) will end the gathering.|
 R Owen's Wishing Well|QID|29628|M|39.4,7.3|N|Inside Owen's wishing well a BoA lost treasure item 'Wodin's Mantid Shanker' can be rarely found.|RANK|3|
-C A Steady Hand|QID|29629|US|NC|L|73193 80|M|34.92,22.53|N|Any movement (including panning the camera angle) will end the gathering.|
+C A Steady Hand|QID|29629|US|NC|M|34.92,22.53|N|Any movement (including panning the camera angle) will end the gathering.|
 C Burning Bright|QID|29631|US|M|36,21|N|Kill six Waxwood Hunters.|
 C And a Heavy Fist|QID|29630|S|M|37,17|N|Kill Greenwood Tricksters as you approach the next objective|
 C A Strong Back|QID|29628|NC|QO|1|M|37.8,17.6|N|Obtain the Boiling Cauldron.|

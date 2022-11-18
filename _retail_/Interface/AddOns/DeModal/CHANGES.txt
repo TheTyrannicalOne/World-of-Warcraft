@@ -1,10 +1,10 @@
-lightweight tag 2d1037cad57e0cbced730d6c6e3bd9ae73180e36 0.6.4
+lightweight tag a769e04aaa065bcc93bf0068d2f40e28a190de40 0.7.0
 Author:	nezroy <nezroy@gmail.com>
-Date:	Wed Oct 26 18:03:52 2022 -0600
+Date:	Sat Oct 29 05:04:35 2022 -0600
 
-commit 2d1037cad57e0cbced730d6c6e3bd9ae73180e36
+commit a769e04aaa065bcc93bf0068d2f40e28a190de40
 Author: nezroy <nezroy@gmail.com>
-Date:   Wed Oct 26 18:03:52 2022 -0600
+Date:   Sat Oct 29 05:04:35 2022 -0600
 
-    Support new professions frame
+    Add several missing movable frames
 

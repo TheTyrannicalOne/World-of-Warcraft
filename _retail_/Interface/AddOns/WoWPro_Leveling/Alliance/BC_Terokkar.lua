@@ -5,7 +5,7 @@ WoWPro:GuideName(guide,"Terokkar Forest")
 WoWPro:GuideNextGuide(guide, "Nagrand BC")
 WoWPro:GuideSteps(guide, function()
 return [[
-N It's Chromie Time!|AVAILABLE|62567|M|62.25,29.93|Z|Stormwind City|JUMP|Chromie Time|S!US|N|You can now accept Chromie's Call at the Hero's Call board in Stormwind. This will allow you to choose which expansion you want to level in and scale the content to your level.\n\nYou're free to continue your current guide by skipping this and continuing on, but it won't continue to scale. If you want to enable Chromie Time, click the guide button next to this frame to direct you to Chromie in Stormwind!|LVL|-50|CT|
+N It's Chromie Time!|AVAILABLE|62567|M|62.25,29.93|Z|Stormwind City|JUMP|Chromie Time|S!US|N|You can now accept Chromie's Call at the Hero's Call board in Stormwind. This will allow you to choose which expansion you want to level in and scale the content to your level.\n\nYou're free to continue your current guide by skipping this and continuing on, but it won't continue to scale. If you want to enable Chromie Time, click the guide button next to this frame to direct you to Chromie in Stormwind!|LVL|-60|CT|
 F Shattrath|QID|10211|M|41.28,28.98|Z|Zangarmarsh|N|Fly to Shattrath City.|
 A A'dal|Z|Shattrath City|QID|10210|M|59.70,41.45|N|From Haggard War Veteran.|
 T A'dal|Z|Shattrath City|QID|10210|M|54.0,44.8|N|To A'dal.|
@@ -108,7 +108,7 @@ A The Tomb of Lights|QID|10840|PRE|10852|M|37.5,50.8|N|From High Priest Orglum.|
 A Vengeful Souls|QID|10842|PRE|10852|N|From Hight Priest Orglum.|
 C WANTED: Bonelashers Dead!|QID|10033|M|42,51|N|Kill Bonelashers until you finish this quest.|S|
 C Before Darkness Falls|QID|10878|M|40.00,56.00|N|Kill Orcs until you finish this quest.|
-l Mark of Kil'jaeden|QID|10325|M|40.00,56.00|N|Kill orcs until you have 10 marks.|L|29425 10|REP|Aldor;932|
+;l Mark of Kil'jaeden|QID|10325|M|40.00,56.00|N|Kill orcs until you have 10 marks.|L|29425 10|REP|Aldor;932|
 l Cabal Orders|QID|10880|M|40.00,56.00|N|Kill Orcs until you get the Cabal Orders.|L|31707|
 A Cabal Orders|QID|10880|M|32.2,52.8|N|Right-click the orders to start the quest.|U|31707|
 C The Tomb of Lights|QID|10840|N|Kill the Ethereal Nethermancers and Plunderers needed for this quest.|S|
@@ -125,8 +125,8 @@ H Shattrath City|QID|10112|M|28.09,48.88|Z|Shattrath City|N|Hearth to Shattrath 
 r Sell junk, Repair, restock|QID|10112|M|28.11,47.65|Z|Shattrath City|REP|Aldor;932|
 H Shattrath City|QID|10112|M|56.35,81.55|Z|Shattrath City|N|Hearth to Shattrath City.|REP|Scryers;934|
 r Sell junk, Repair, restock, train skills|QID|10112|M|54.6,82.4|Z|Shattrath City|REP|Scryers;934|
-A Marks of Kil'jaeden|QID|10325|M|30.7,34.6|Z|Shattrath City|N|From Adyen the Lightwarden.|REP|Aldor;932|
-T Marks of Kil'jaeden|QID|10325|M|30.7,34.6|Z|Shattrath City|N|To Adyen the Lightwarden.|REP|Aldor;932|
+;A Marks of Kil'jaeden|QID|10325|M|30.7,34.6|Z|Shattrath City|N|From Adyen the Lightwarden.|REP|Aldor;932|
+;t Marks of Kil'jaeden|QID|10325|M|30.7,34.6|Z|Shattrath City|N|To Adyen the Lightwarden.|REP|Aldor;932|
 T A Personal Favor|QID|10112|M|72.2,30.7|Z|Shattrath City|N|To Wind Trader Lathrai.|
 A Investigate Tuurem|QID|9990|PRE|10112|M|72.2,30.7|Z|Shattrath City|N|From Wind Trader Lathrai.|
 F Allerian Stronghold|QID|9986|M|64.00,41.10|Z|Shattrath City|N|Fly to Allerian Stronghold.|

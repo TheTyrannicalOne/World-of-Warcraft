@@ -362,3 +362,5 @@ Narcissus_Barbershop: enabled
 WoWPro: enabled
 WoWPro_Leveling: enabled
 ElvUI_UnitFramePlugin: disabled
+Blizzard_ObjectiveTracker: enabled
+Blizzard_CompactRaidFrames: enabled

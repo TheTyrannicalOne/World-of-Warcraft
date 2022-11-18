@@ -1,5 +1,16 @@
 
 EncounterDetailsDB = {
+	["emotes"] = {
+		{
+			["boss"] = "Hogger",
+		}, -- [1]
+		{
+			["boss"] = "Lord Overheat",
+		}, -- [2]
+		{
+			["boss"] = "Randolph Moloch",
+		}, -- [3]
+	},
 	["encounter_spells"] = {
 		[12167] = {
 			["school"] = 8,
@@ -27,16 +38,5 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lord Overheat",
 		},
-	},
-	["emotes"] = {
-		{
-			["boss"] = "Hogger",
-		}, -- [1]
-		{
-			["boss"] = "Lord Overheat",
-		}, -- [2]
-		{
-			["boss"] = "Randolph Moloch",
-		}, -- [3]
 	},
 }

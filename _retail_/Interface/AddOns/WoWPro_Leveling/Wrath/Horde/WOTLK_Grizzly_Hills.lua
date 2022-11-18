@@ -1,7 +1,7 @@
 local guide = WoWPro:RegisterGuide("JamGri7577", "Leveling", "Grizzly Hills", "WowPro Team", "Horde", 3)
 WoWPro:GuideNickname(guide, "Grizzly Hills")
 WoWPro:GuideName(guide, "Grizzly Hills")
-WoWPro:GuideNextGuide(guide, "ScoZul7778")
+WoWPro:GuideNextGuide(guide, "Zul'Drak")
 WoWPro:GuideLevels(guide, 75, 77)
 WoWPro:GuideSteps(guide, function()
 return [[
@@ -15,7 +15,7 @@ A The Flamebinders' Secrets|QID|12256|M|21.0,64.1|N|From Sergeant Nazgrim.|
 A Gray Worg Hides|QID|12175|M|22.0,65.1|N|From Hidetrader Jun'ik.|
 A Supplemental Income|QID|12436|M|22.6,66.1|N|From Provisioner Lorkran.|
 C Gray Worg Hides|QID|12175|N|Kill and loot Graymist Hunters.|S|
-A Blackriver Brawl|QID|12170|N|Optional PvP Daily quest. Part of the Grizzled Veteran achievement. From Raider Captain Kronn.|M|26.5,65.7|
+A Blackriver Brawl|QID|12170|N|Optional PvP quest. Part of the Grizzled Veteran achievement.\n\nFrom Raider Captain Kronn.\n\n(Repeatable)|M|26.5,65.7|
 C Blackriver Brawl|QID|12170|O|N|Kill 10 Alliance NPCs or players.|M|28,63|
 T Blackriver Brawl|QID|12170|O|M|26.5,65.7|N|To Raider Captain Kronn.|
 C Supplemental Income|QID|12436|N|Kill and loot Tallhorn Stags.|M|34,65|
@@ -31,9 +31,9 @@ T The Flamebinders' Secrets|QID|12256|M|21.0,64.1|N|To Sergeant Nazgrim.|
 A The Thane of Voldrune|QID|12259|M|21.0,64.1|N|From Sergeant Nazgrim.|
 N READ THIS|QID|12433|N|The following circuit involves PvP quests. You can skip them if you really must. But they're quick and they give a lot of XP, and one counts toward the zone quest achievement. If you must skip, go down to the next "READ THIS" note.|
 A Seeking Solvent|QID|12433|N|From Gurtor.|M|11.2,76.6|
-A Smoke 'Em Out|QID|12324|M|11.3,76.7|N|From Stone Guard Ragetotem.|
-A Keep Them at Bay|QID|12317|M|10.1,77.3|N|From Centurion Kaggrum.|
-A Crush Captain Brightwater!|QID|12315|M|10.1,77.2|N|From General Khazgar.|
+A Smoke 'Em Out|QID|12324|M|11.3,76.7|N|From Stone Guard Ragetotem.\n\n(Repeatable)|
+A Keep Them at Bay|QID|12317|M|10.1,77.3|N|From Centurion Kaggrum.\n\n(Repeatable)|
+A Crush Captain Brightwater!|QID|12315|M|10.1,77.2|N|From General Khazgar.\n\n(Repeatable)|
 C Keep Them at Bay|QID|12317|O|N|Kill any Alliance NPCs or players you see.|S|
 C Smoke 'Em Out|QID|12324|O|N|Gather everything and then use the Smoke Bomb on them. Repeat in the next two buildings.|U|37621|M|14,77|
 C Crush Captain Brightwater!|QID|12315|O|N|Elite but easily soloable as long as you pull him solo.|M|17.0,81.9|
@@ -104,8 +104,8 @@ C Seared Scourge|QID|12029|N|Go north to Drak'Tharon Keep. Go to the area west o
 T Tactical Clemency |QID|12422|N|To Captured Trapper.|M|21.9,30.0|
 C Attack on Silverbrook|QID|12413|N|Ride east to Silverbrook Hills. Kill 8 Silverbrook Defenders.|M|26,31|
 N Warning|QID|12284|N|There might be some PvP action involved in the following circuit. So if you want to avoid PvP at all costs, skip it. They don't count for the zone quest achievement, but they do give nice XP and are quickly done and count for a different achievment.|M|34,33|
-A Keep 'Em on Their Heels|QID|12284|M|34.5,32.9|N|From Commander Bargok.|
-A Overwhelmed!|QID|12288|M|33.9,32.8|N|From Aumana.|
+A Keep 'Em on Their Heels|QID|12284|M|34.5,32.9|N|From Commander Bargok.\n\n(Repeatable)|
+A Overwhelmed!|QID|12288|M|33.9,32.8|N|From Aumana.\n\n(Repeatable)|
 A Making Repairs|QID|12280|M|34.5,32.6|N|From Lurz.|
 A Shred the Alliance|QID|12270|M|34.5,32.6|N|From Grekk.|
 C Keep 'Em on Their Heels|QID|12284|O|N|Kill 15 Alliance Units.|S|
@@ -183,8 +183,8 @@ A Vordrassil's Seeds|QID|12242|M|22.5,63.0|N|From Windseer Grayhorn.|
 F Camp Oneqwah|QID|12054|M|22.0,64.5|N|Fly to Camp Oneqwah.|
 T Deciphering the Journal|QID|12054|M|65.2,47.8|N|To Sage Paluna.|
 A Pounding the Iron|QID|12073|M|65.1,47.7|N|From Scout Vor'takh.|
-A The Runic Prophecies|QID|12058|M|65.2,47.8|N|From Sage Paluna.|
-T An Expedient Ally|QID|12074|N|To Kurun.|M|65.7,17.8|
+A The Runic Prophecies|QID|12058|M|65.2,47.8|N|From Sage Paluna. Wait for her to finish talking about the Journal.|
+T An Expedient Ally|QID|12074|N|To Kurun. Take the path on the north side of Thor Modan and come up behind the quest objective.|M|65.7,17.8|
 A Raining Down Destruction |QID|11982|M|65.8,17.8|N|From Kurun.|
 C Raining Down Destruction|QID|11982|N|Northeast of Kurun you should see Giants throwing boulders down into the trench below. Loot a boulder, go to the edge of the trench, and use it on a dwarf. Repeat.|U|35734|M|71.1,15.4;71.6,11.8|CN|
 T Raining Down Destruction |QID|11982|N|To Kurun.|M|65.65,17.79|
@@ -256,7 +256,7 @@ A Drak'aguul's Mallet |QID|12120|PRE|12116|M|73.9,34.1|N|From Kraz.|
 N READ THIS|QID|12164|O|N|We're about to attempt a 3 man quest, Hour of the Worg. Some classes, ranged especially (and Death Knights) will be able to solo it, nevertheless if you can get a group it becomes much quicker and less time consuming.|
 R Bloodmoon Isle|QID|12164|O|N|Swim northeast to Bloodmoon Isle.|M|83,28|
 K Selas|QID|12164|O|QO|2|N|Head up the path and to the right, Selas is a worgen in the camp.|M|85.8,27.7|; Selas slain: 1/1
-K Varlam|QID|12164|O|QO|1|N|A wolf rider, gead back to the path and further up on the left there's another camp, Varlam is here.|M|85.1,23.4|; Varlam slain: 1/1
+K Varlam|QID|12164|O|QO|1|N|A wolf rider, head back to the path and further up on the left there's another camp, Varlam is here.|M|85.1,23.4|; Varlam slain: 1/1
 K Goremaw|QID|12164|O|QO|3|N|A large wolf; he's on the southern side of the tower.|M|86.9,26.8|; Goremaw slain: 1/1
 C Hour of the Worg|QID|12164|O|N|Arugal is on top of the tower. He has 4 phases. Phase one he shadowbolts for ~1500 damage. At 75% HP, he goes into P2, summoning 3 adds. Kill them to return to P1, which lasts until 50%. Then he'll MC someone, who you bring down to 35%, then he goes back to P1. At 25%, he repeats P2, except with 9 adds. Sasha helps in the final phase. If you're ranged, you can probably kill him by LoSing his shadowbolts, if you're far enough down the adds won't aggro on you, but will despawn instead. Good luck!|M|87.5,26.5|
 T Hour of the Worg|QID|12164|O|M|64.9,43.5;87.2,25.6|CS|N|To Sasha. If she despawns before you can turn the quest in, you can find her back where you accepted the quest at.|
@@ -296,8 +296,8 @@ T Cultivating an Image|QID|12202|N|To Scout Vor'takh.|M|65.1,47.7|
 A Loken's Orders|QID|12203|PRE|12202|M|65.1,47.7|N|From Scout Vor'takh.|
 T From the Ground Up|QID|12196|M|65.1,47.3|N|To Prospector Rokar.|
 A We Have the Power |QID|12197|PRE|12196|M|65.1,47.3|N|From Prospector Rokar.|
-R Dun Argol|QID|12198|U|37071|N|Mount up and ride back to Dun'Argol. Use the disguise (can not be used while mounted anymore).|M|75,55|
-l Durar's Power Cell|QID|12197|QO|1|U|37071|N|Head up to the next tier, it has two buildings. Go to the building on your left, Durar is inside. Drop the buff and kill him. Loot the power cell off his body.|M|75.0,57.1|
+R Dun Argol|QID|12198|U|37071|N|Mount up and ride back to Dun'Argol. Use the disguise. Can be used while mounted.|M|75,55|
+l Durar's Power Cell|QID|12197|QO|1|U|37071|N|Head up to the next tier, it has two buildings. Go to the building on your right, Durar is inside. Drop the buff and kill him. Loot the power cell off his body.|M|75.0,57.1|
 l Kathorn's Power Cell|QID|12197|QO|2|U|37071|N|He's inside the next building.|M|76.8,59.1|
 C Loken's Orders|QID|12203|U|37071|N|Head north and take the path east. Follow it to the building. Go inside and right click the Loken's Pedestal, wait till you get a quest update.|M|81.6,60.5|
 N READ THIS|QID|12197|U|37071|N|Do NOT turn in Loken's Orders, the disguise comes in handy shortly.|M|65.1,47.3|
@@ -317,6 +317,5 @@ C Free at Last|QID|12099|N|Head southwest to the plains area. Look for Runed Gia
 C Nice to Meat You |QID|12113|N|If you are not done already, kill Longhoof Grazers and Duskhowl Prowlers to finishing this quest.|M|72.7,37.6|US|
 T Nice to Meat You |QID|12113|N|To Harkor.|M|73.70,34.06|
 T Free at Last |QID|12099|N|To Gavrock.|M|79.70,33.59|
-N Thus ends Grizzly Hills|N|Close this step to go to the next guide.|QID|99999|
 ]]
 end)

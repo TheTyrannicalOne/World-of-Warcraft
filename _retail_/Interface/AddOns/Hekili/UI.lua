@@ -21,6 +21,7 @@ local round = ns.round
 local format, insert = string.format, table.insert
 
 local HasVehicleActionBar, HasOverrideActionBar, IsInPetBattle, UnitHasVehicleUI, UnitOnTaxi = HasVehicleActionBar, HasOverrideActionBar, C_PetBattles.IsInBattle, UnitHasVehicleUI, UnitOnTaxi
+local Tooltip = ns.Tooltip
 
 local Masque, MasqueGroup
 local _
@@ -179,16 +180,16 @@ function ns.StartConfiguration( external )
         local H = Hekili
 
         if H.Config then
-            GameTooltip:SetOwner( self, "ANCHOR_TOPRIGHT" )
+            Tooltip:SetOwner( self, "ANCHOR_TOPRIGHT" )
 
-            GameTooltip:SetText( "Hekili: Notifications" )
-            GameTooltip:AddLine( "Left-click and hold to move.", 1, 1, 1 )
-            GameTooltip:AddLine( "Right-click to open Notification panel settings.", 1, 1, 1 )
-            GameTooltip:Show()
+            Tooltip:SetText( "Hekili: Notifications" )
+            Tooltip:AddLine( "Left-click and hold to move.", 1, 1, 1 )
+            Tooltip:AddLine( "Right-click to open Notification panel settings.", 1, 1, 1 )
+            Tooltip:Show()
         end
     end )
     HekiliNotification:SetScript( "OnLeave", function(self)
-        GameTooltip:Hide()
+        Tooltip:Hide()
     end )
 
     Hekili:ProfileFrame( "NotificationFrame", HekiliNotification )
@@ -259,17 +260,17 @@ function ns.StartConfiguration( external )
                 local H = Hekili
 
                 if H.Config then
-                    GameTooltip:SetOwner( self, "ANCHOR_TOPRIGHT" )
+                    Tooltip:SetOwner( self, "ANCHOR_TOPRIGHT" )
 
-                    GameTooltip:SetText( "Hekili: " .. i )
-                    GameTooltip:AddLine( "Left-click and hold to move.", 1, 1, 1 )
-                    GameTooltip:AddLine( "Right-click to open " .. i .. " display settings.", 1, 1, 1 )
-                    if not H:IsDisplayActive( i, true ) then GameTooltip:AddLine( "This display is not currently active.", 0.5, 0.5, 0.5 ) end
-                    GameTooltip:Show()
+                    Tooltip:SetText( "Hekili: " .. i )
+                    Tooltip:AddLine( "Left-click and hold to move.", 1, 1, 1 )
+                    Tooltip:AddLine( "Right-click to open " .. i .. " display settings.", 1, 1, 1 )
+                    if not H:IsDisplayActive( i, true ) then Tooltip:AddLine( "This display is not currently active.", 0.5, 0.5, 0.5 ) end
+                    Tooltip:Show()
                 end
             end )
             v.Backdrop:SetScript( "OnLeave", function( self )
-                GameTooltip:Hide()
+                Tooltip:Hide()
             end )
             v:Show()
 
@@ -308,6 +309,7 @@ function ns.StartConfiguration( external )
         ns.OnHideFrame:SetScript( "OnHide", function(self)
             ns.StopConfiguration()
             self:SetScript( "OnHide", nil )
+            self:SetParent( nil )
             collectgarbage()
             Hekili:UpdateDisplayVisibility()
         end )
@@ -530,7 +532,7 @@ do
                                     if Hekili.DB.profile.notifications.enabled then
                                         Hekili:Notify( "Recommend Target Swaps: " .. ( spec.cycle and "ON" or "OFF" ) )
                                     else
-                                        self:Print( "Recommend Target Swaps: " .. ( spec.cycle and " |cFF00FF00ENABLED|r." or " |cFFFF0000DISABLED|r." ) )
+                                        Hekili:Print( "Recommend Target Swaps: " .. ( spec.cycle and " |cFF00FF00ENABLED|r." or " |cFFFF0000DISABLED|r." ) )
                                     end
                                 end
                             end,
@@ -555,7 +557,7 @@ do
                                             if Hekili.DB.profile.notifications.enabled then
                                                 Hekili:Notify( setting.info.name .. ": " .. ( setting.info.get( menu.args ) and "ON" or "OFF" ) )
                                             else
-                                                self:Print( setting.info.name .. ": " .. ( setting.info.get( menu.args ) and " |cFF00FF00ENABLED|r." or " |cFFFF0000DISABLED|r." ) )
+                                                Hekili:Print( setting.info.name .. ": " .. ( setting.info.get( menu.args ) and " |cFF00FF00ENABLED|r." or " |cFFFF0000DISABLED|r." ) )
                                             end
                                         end,
                                         checked = function ()
@@ -752,24 +754,6 @@ do
         hooksecurefunc( LSF, "FlashFrame", function( frame )
             local flash = frame and frame.SpellFlashCoreAddonFlashFrame
 
-            if flash and not flash.HekiliHooked then
-                flash.FlashTexture:SetTexture( Hekili.DB.profile.flashTexture or "Interface\\Cooldown\\star4" )
-
-                flash:HookScript( "OnUpdate", function( self )
-                    flash.FlashTexture:SetTexture( Hekili.DB.profile.flashTexture or "Interface\\Cooldown\\star4" )
-                    if Hekili.DB.profile.fixedSize then
-                        flash.FlashTexture:SetHeight( flash:GetHeight() * flash.FlashSize )
-                        flash.FlashTexture:SetWidth( flash:GetWidth() * flash.FlashSize )
-                    end
-
-                    if Hekili.DB.profile.fixedBrightness then
-                        flash.FlashTexture:SetAlpha( flash.FlashBrightness )
-                    end
-                end )
-
-                flash.HekiliHooked = true
-            end
-
             -- We need to know what flashed so we can force it to stop flashing when the recommendation changes.
             if catchFlash and flash then
                 lastFramesFlashed[ flash ] = 1
@@ -862,18 +846,8 @@ do
         d:SetScale( UIParent:GetScale() ) ]]
         d:ClearAllPoints()
 
-        local frame
-
-        --[[ if conf.relativeTo == "CUSTOM" then
-            frame = _G[ conf.customFrame ]
-        elseif conf.relativeTo == "PERSONAL" then
-            frame = C_NamePlate.GetNamePlateForUnit( "player" )
-        end ]]
-
-        if not frame then frame = UIParent end
-
-        d:SetPoint( "CENTER", frame, "CENTER", conf.x or 0, conf.y or -225 )
-        d:SetParent( frame )
+        d:SetPoint( "CENTER", UIParent, "CENTER", conf.x or 0, conf.y or -225 )
+        d:SetParent( UIParent )
 
         d:SetFrameStrata( conf.frameStrata or "MEDIUM" )
         d:SetFrameLevel( conf.frameLevel or ( 10 * d.index ) )
@@ -913,6 +887,15 @@ do
         function d:SetThreadLocked( locked )
             self.threadLocked = locked
         end
+
+
+        local RomanNumerals = {
+            "I",
+            "II",
+            "III",
+            "IV"
+        }
+
 
         function d:OnUpdate( elapsed )
             if not self.Recommendations or not Hekili.PLAYER_ENTERING_WORLD then
@@ -993,15 +976,26 @@ do
                             b.Texture:Show()
 
                             if i == 1 then
-                                -- local ability = b.Ability
-                                local id = ability.item or ability.id
-                                local isItem = ability.item ~= nil
+                                if conf.glow.highlight then
+                                    local id = ability.item or ability.id
+                                    local isItem = ability.item ~= nil
 
-                                if id and ( isItem and IsCurrentItem( id ) or IsCurrentSpell( id ) ) and exact_time > GetTime() then
-                                    b.Highlight:Show()
-                                else
+                                    if id and ( isItem and IsCurrentItem( id ) or IsCurrentSpell( id ) ) and exact_time > GetTime() then
+                                        b.Highlight:Show()
+                                    else
+                                        b.Highlight:Hide()
+                                    end
+
+                                elseif b.Highlight:IsShown() then
                                     b.Highlight:Hide()
                                 end
+                            end
+
+
+                            if ability.empowered then
+                                b.EmpowerLevel:SetText( RomanNumerals[ b.Recommendation.empower_to or state.max_empower ] )
+                            else
+                                b.EmpowerLevel:SetText( nil )
                             end
 
                             if conf.indicators.enabled and indicator then
@@ -1217,19 +1211,15 @@ do
 
                 local postRange = debugprofilestop()
 
-                if conf.flash.enabled and LSF then
+                if self.flashReady and conf.flash.enabled and LSF and ( InCombatLockdown() or not conf.flash.combat ) then
                     self.flashTimer = self.flashTimer - elapsed
                     self.flashWarnings = self.flashWarnings or {}
 
                     local a = self.Buttons[ 1 ].Action
                     local changed = self.lastFlash ~= a
 
-                    if a and ( now > self.flashTimer ) and self.flashReady then
-                        if now % 1 < 0.5 then
-                            self.flashTimer = floor( now ) + 0.5 + flashOffset[ self.id ]
-                        else
-                            self.flashTimer = ceil( now ) + flashOffset[ self.id ]
-                        end
+                    if a and ( changed or self.flashTimer < 0 ) then
+                        self.flashTimer = conf.flash.speed or 0.4
 
                         local ability = class.abilities[ a ]
 
@@ -1243,7 +1233,7 @@ do
                         if ability.item then
                             local iname = LSF.ItemName( ability.item )
                             if LSF.Flashable( iname ) then
-                                LSF.FlashItem( iname, self.flashColor, conf.flash.size, conf.flash.brightness, conf.flash.blink, nil, conf.flash.texture )
+                                LSF.FlashItem( iname, self.flashColor, conf.flash.size, conf.flash.brightness, conf.flash.blink, nil, profile.flashTexture, conf.flash.fixedSize, conf.flash.fixedBrightness )
                             elseif conf.flash.suppress and not self.flashWarnings[ iname ] then
                                 self.flashWarnings[ iname ] = true
                                 -- Hekili:Error( "|cffff0000WARNING|r - Could not flash recommended item '" .. iname .. "' (" .. self.id .. ")." )
@@ -1268,7 +1258,7 @@ do
                                 end
 
                                 if flashable then
-                                    LSF.FlashAction( aFlash, self.flashColor, conf.flash.size, conf.flash.brightness, conf.flash.blink, nil, conf.flash.texture )
+                                    LSF.FlashAction( aFlash, self.flashColor, conf.flash.size, conf.flash.brightness, conf.flash.blink, nil, profile.flashTexture, conf.flash.fixedSize, conf.flash.fixedBrightness )
                                 elseif conf.flash.suppress and not self.flashWarnings[ aFlash ] then
                                     self.flashWarnings[ aFlash ] = true
                                     -- Hekili:Error( "|cffff0000WARNING|r - Could not flash recommended action '" .. aFlash .. "' (" .. self.id .. ")." )
@@ -1284,7 +1274,7 @@ do
 
                                 if sname then
                                     if LSF.Flashable( sname ) then
-                                        LSF.FlashAction( sname, self.flashColor, conf.flash.size, conf.flash.brightness, conf.flash.blink, nil, conf.flash.texture )
+                                        LSF.FlashAction( sname, self.flashColor, conf.flash.size, conf.flash.brightness, conf.flash.blink, nil, profile.flashTexture, conf.flash.fixedSize, conf.flash.fixedBrightness )
                                     elseif not self.flashWarnings[ sname ] then
                                         self.flashWarnings[ sname ] = true
                                         -- Hekili:Error( "|cffff0000WARNING|r - Could not flash recommended ability '" .. sname .. "' (" .. self.id .. ")." )
@@ -1526,21 +1516,32 @@ do
 
                     if ability.item then
                         start, duration, enabled, modRate = GetItemCooldown( ability.item )
-                    else
+                    elseif ability.key ~= state.empowerment.spell then
                         start, duration, enabled, modRate = GetSpellCooldown( ability.id )
                     end
 
-                    if i == 1 and conf.delays.extend and rec.delay and rec.delay > 0 and rec.exact_time > max( now, start + duration ) then
-                        start = ( start > 0 and start ) or ( cStart > 0 and cStart ) or ( gStart > 0 and gStart ) or max( state.gcd.lastStart, state.combat )
-                        duration = rec.exact_time - start
+                    if i == 1 then
+                        if conf.delays.extend and rec.delay and rec.delay > 0 and rec.exact_time > max( now, start + duration ) then
+                            start = ( start > 0 and start ) or ( cStart > 0 and cStart ) or ( gStart > 0 and gStart ) or max( state.gcd.lastStart, state.combat )
+                            duration = rec.exact_time - start
+                        end
                     end
 
                     if enabled and enabled == 0 then
                         cd:SetCooldown( 0, 0, 1 )
+
                     elseif cd.lastStart ~= start or cd.lastDuration ~= duration then
                         cd:SetCooldown( start, duration, modRate )
                         cd.lastStart = start
                         cd.lastDuration = duration
+                    end
+
+                    if i == 1 then
+                        if ability.empowered and state.empowerment.spell == ability.key and duration == 0 then
+                            button.Empowerment:Show()
+                        else
+                            button.Empowerment:Hide()
+                        end
                     end
                 end
             end
@@ -1638,19 +1639,23 @@ do
             if event == "CURRENT_SPELL_CAST_CHANGED" then
                 local b = self.Buttons[ 1 ]
 
-                local ability = b.Ability
-                local isItem, id = false, ability and ability.id
+                if conf.glow.highlight then
+                    local ability = b.Ability
+                    local isItem, id = false, ability and ability.id
 
-                if id and id < 0 then
-                    isItem = true
-                    id = ability.item
-                end
+                    if id and id < 0 then
+                        isItem = true
+                        id = ability.item
+                    end
 
-                local spellID = select( 9, UnitCastingInfo( "player" ) ) or select( 9, UnitChannelInfo( "player" ) )
+                    local spellID = select( 9, UnitCastingInfo( "player" ) ) or select( 9, UnitChannelInfo( "player" ) )
 
-                if id and ( isItem and IsCurrentItem( id ) or IsCurrentSpell( id ) ) then --  and b.ExactTime > GetTime() then
-                    b.Highlight:Show()
-                else
+                    if id and ( isItem and IsCurrentItem( id ) or IsCurrentSpell( id ) ) then --  and b.ExactTime > GetTime() then
+                        b.Highlight:Show()
+                    else
+                        b.Highlight:Hide()
+                    end
+                elseif b.Highlight:IsShown() then
                     b.Highlight:Hide()
                 end
             end
@@ -2166,7 +2171,7 @@ do
                 if coroutine.status( thread ) == "dead" or err then
 
                     if Hekili.ActiveDebug then
-                        Hekili:Debug( format( "Recommendation thread for %s terminated due to error: %s", self.id, err and err:gsub( "%%", "%%%%" ) or "Unknown" ) )
+                        Hekili:Debug( format( "Recommendation thread terminated due to error: %s", err and err:gsub( "%%", "%%%%" ) or "Unknown" ) )
                         Hekili:SaveDebugSnapshot( self.id )
                         Hekili.ActiveDebug = nil
                     end
@@ -2377,7 +2382,17 @@ do
 
 
         -- Cooldown Wheel
-        b.Cooldown = b.Cooldown or CreateFrame( "Cooldown", bName .. "_Cooldown", b, "CooldownFrameTemplate" )
+        if not b.Cooldown then
+            b.Cooldown = CreateFrame( "Cooldown", bName .. "_Cooldown", b, "CooldownFrameTemplate" )
+            if id == 1 then b.Cooldown:HookScript( "OnCooldownDone", function( self )
+                    if b.Ability and b.Ability.empowered and state.empowerment.spell == b.Ability.key then
+                        b.Empowerment:Show()
+                    else
+                        b.Empowerment:Hide()
+                    end
+                end )
+            end
+        end
         b.Cooldown:ClearAllPoints()
         b.Cooldown:SetAllPoints( b )
         b.Cooldown:SetFrameStrata( b:GetFrameStrata() )
@@ -2525,6 +2540,16 @@ do
             b.DelayIcon:SetPoint( delayAnchor, b, delayAnchor, conf.delays.x or 0, conf.delays.y or 0 )
             b.DelayIcon:Hide()
 
+            -- Empowerment
+            b.Empowerment = b.Empowerment or b:CreateTexture( bName .. "_Empower", "OVERLAY" )
+            b.Empowerment:SetAtlas( "bags-glow-artifact" )
+            b.Empowerment:SetVertexColor( 1, 1, 1, 1 )
+
+            b.Empowerment:ClearAllPoints()
+            b.Empowerment:SetPoint( "TOPLEFT", b, "TOPLEFT", -1, 1 )
+            b.Empowerment:SetPoint( "BOTTOMRIGHT", b, "BOTTOMRIGHT", 1, -1 )
+            b.Empowerment:Hide()
+
             -- Overlay (for Pause)
             b.Overlay = b.Overlay or b:CreateTexture( nil, "OVERLAY" )
             b.Overlay:SetAllPoints( b )
@@ -2571,6 +2596,26 @@ do
             end
         end
 
+
+        -- Caption Text.
+        b.EmpowerLevel = b.EmpowerLevel or b:CreateFontString( bName .. "_EmpowerLevel", "OVERLAY" )
+
+        local empowerFont = conf.empowerment.font or conf.font
+        b.EmpowerLevel:SetFont( LSM:Fetch("font", empowerFont), conf.empowerment.fontSize or 12, conf.empowerment.fontStyle or "OUTLINE" )
+
+        local empAnchor = conf.empowerment.anchor or "CENTER"
+        b.EmpowerLevel:ClearAllPoints()
+        b.EmpowerLevel:SetPoint( empAnchor, b, empAnchor, conf.empowerment.x or 0, conf.empowerment.y or 0 )
+        -- b.EmpowerLevel:SetHeight( b:GetHeight() * 0.6 )
+        b.EmpowerLevel:SetJustifyV( empAnchor:match("RIGHT") and "RIGHT" or ( empAnchor:match( "LEFT" ) and "LEFT" or "CENTER" ) )
+        b.EmpowerLevel:SetJustifyH( conf.empowerment.align or "CENTER" )
+        b.EmpowerLevel:SetTextColor( unpack( conf.empowerment.color ) )
+        b.EmpowerLevel:SetWordWrap( false )
+
+        local empText = b.EmpowerLevel:GetText()
+        b.EmpowerLevel:SetText( nil )
+        b.EmpowerLevel:SetText( empText )
+
         -- Mover Stuff.
         b:SetScript("OnMouseDown", Button_OnMouseDown)
         b:SetScript("OnMouseUp", Button_OnMouseUp)
@@ -2579,12 +2624,12 @@ do
             local H = Hekili
 
             --[[ if H.Config then
-                GameTooltip:SetOwner( self, "ANCHOR_TOPRIGHT" )
-                GameTooltip:SetBackdropColor( 0, 0, 0, 0.8 )
+                Tooltip:SetOwner( self, "ANCHOR_TOPRIGHT" )
+                Tooltip:SetBackdropColor( 0, 0, 0, 0.8 )
 
-                GameTooltip:SetText( "Hekili: " .. dispID  )
-                GameTooltip:AddLine( "Left-click and hold to move.", 1, 1, 1 )
-                GameTooltip:Show()
+                Tooltip:SetText( "Hekili: " .. dispID  )
+                Tooltip:AddLine( "Left-click and hold to move.", 1, 1, 1 )
+                Tooltip:Show()
                 self:SetMovable( true )
 
             else ]]

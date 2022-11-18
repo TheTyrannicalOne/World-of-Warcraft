@@ -121,6 +121,7 @@ local function SetupExtras(button)
         button:SetScript("OnClick", function(self, clickButton)
             if clickButton ~= "LeftButton" then
                 -- right click is handled in MountListDropDown.lua
+                ADDON.UI:HandleListDropDown(self, self)
             elseif IsModifiedClick("CHATLINK") then
                 -- No MacroFrame exception :>
                 local mountLink = C_MountJournal.GetMountLink(self.spellID);
@@ -132,6 +133,7 @@ local function SetupExtras(button)
         button.DragButton:SetScript("OnClick", function(self, clickButton)
             local parent = self:GetParent();
             if clickButton ~= "LeftButton" then
+                ADDON.UI:HandleListDropDown(self:GetParent(), self)
             elseif IsModifiedClick("CHATLINK") then
                 local mountLink = C_MountJournal.GetMountLink(parent.spellID);
                 ChatEdit_InsertLink(mountLink);
@@ -216,11 +218,17 @@ end
 
 ADDON.Events:RegisterCallback("preloadUI", function()
     MountJournal.ScrollBox:ForEachFrame(SetupExtras)
-    ScrollUtil.AddAcquiredFrameCallback(MountJournal.ScrollBox, function(button, _, new)
+    local owner = ADDON_NAME .. 'enhanced'
+    ScrollUtil.AddAcquiredFrameCallback(MountJournal.ScrollBox, function(a, b, c, d)
+        local button, new = b,d
+        if a ~= owner then -- TODO: remove after 10.0 launch
+            button = a
+            new = c
+        end
         if new then
             SetupExtras(button)
         end
-    end, ADDON_NAME .. 'enhanced')
+    end, owner)
 
     MountJournal_InitMountButton = function(button, elementData)
         InitMountButton(button, elementData)
@@ -228,14 +236,7 @@ ADDON.Events:RegisterCallback("preloadUI", function()
     end
 
     -- inject fixed data provider
-    local dataProvider = CreateDataProvider()
-    dataProvider:SetSortComparator(function(a, b)
-        return ADDON:SortHandler(a, b)
-    end)
-    dataProvider:RegisterCallback("OnSizeChanged", function()
-        ADDON.Events:TriggerEvent("OnFilterUpdate")
-    end, ADDON_NAME)
-    MountJournal.ScrollBox:SetDataProvider(dataProvider, ScrollBoxConstants.RetainScrollPosition)
+    MountJournal.ScrollBox:SetDataProvider(ADDON.Api:GetDataProvider(), ScrollBoxConstants.RetainScrollPosition)
     MountJournal.ScrollBox.SetDataProvider = function(self)
         -- called from MountJournal_UpdateMountList. we just repaint the list instead
         self:ForEachFrame(function(button, elementData)

@@ -15,7 +15,7 @@ local checkButtons = {}
 
 checkButtons[1] = CreateFrame('CheckButton', nil, optionsFrame, 'EasyScrapCheckButtonTemplate')
 checkButtons[1]:SetPoint('TOPLEFT', 16, -48)
-checkButtons[1].text:SetText('Display "|cff87a9fe'..ITEM_SCRAPABLE..'|r" in tooltips.')
+checkButtons[1].text:SetText('Display "|cff87a9fe'..ITEM_SCRAPABLE..'|r" in tooltips. (REMOVED)')
 checkButtons[1].subText = checkButtons[1]:CreateFontString()
 checkButtons[1].subText:SetFontObject("GameFontNormalSmall")
 checkButtons[1].subText:SetText('Adds |cff87a9fe'..ITEM_SCRAPABLE..'|r to tooltips when not at the scrapper.\n(Experimental)')

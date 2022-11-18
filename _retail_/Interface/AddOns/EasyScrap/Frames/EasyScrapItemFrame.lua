@@ -75,7 +75,19 @@ local tabText = {'Queue (%d)', 'Eligible (%d)', 'Hidden (%d)'}
 
 for i = 1, 3 do
     local button = CreateFrame('Button', 'EasyScrapItemFrameTabButton'..i, itemFrame, 'EasyScrapFrameTabButtonTemplate')
-    
+    --local button = CreateFrame('Button', 'EasyScrapItemFrameTabButton'..i, itemFrame, "PanelTabButtonTemplate")
+    --Ugly DRAGONFLIGHT quick fix
+    --[[
+    button.Left = CreateFrame('Frame', nil, button)
+    button.LeftActive = CreateFrame('Frame', nil, button)
+    button.Middle = CreateFrame('Frame', nil, button)
+    button.MiddleActive = CreateFrame('Frame', nil, button)
+    button.Right = CreateFrame('Frame', nil, button)
+    button.RightActive = CreateFrame('Frame', nil, button)
+    button.Text = CreateFrame('Frame', nil, button)
+    button.Text.GetStringWidth = function() return 24 end
+    --]]
+
     if i > 1 then
         button:SetPoint('LEFT', itemFrame.tabButtons[i-1], 'RIGHT', -18, 0)
     else

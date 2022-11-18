@@ -4,510 +4,21 @@ WoWProCharDB = {
 	["EnableGrailQuestLevel"] = false,
 	["AutoHideInsideInstances"] = true,
 	["EnableGrailCheckPrereq"] = false,
+	["SetWaypoint"] = true,
 	["QID2Guide"] = {
-		[47835] = "Ludo_Argus",
-		[9407] = "JamHel6063",
-		[28705] = "JamHel6063",
 		[47221] = "Ludo_Argus",
+		[9407] = "JamHel6063",
+		[47835] = "Ludo_Argus",
+		[28705] = "JamHel6063",
 	},
 	["Trades"] = {
 		[2540] = true,
 		[88015] = true,
-		[88006] = true,
-		[8604] = true,
-		[2538] = true,
 		[37836] = true,
+		[88006] = true,
+		[2538] = true,
+		[8604] = true,
 	},
-	["GuideStack"] = {
-		"KraSunIsle", -- [1]
-		"ChromieTimeH", -- [2]
-	},
-	["EnableFlight"] = true,
-	["EnableRares"] = true,
-	["EnableGrailQuestName"] = false,
-	["EnablePetBattles"] = true,
-	["EnableGrailQuestObsolete"] = false,
-	["EnableGrailBreadcrumbs"] = false,
-	["Tradeskills"] = {
-		[356] = {
-			["skillLvl"] = 1,
-			["skillMax"] = 100,
-			["name"] = "Fishing",
-			["skillMod"] = 0,
-		},
-		[185] = {
-			["skillLvl"] = 1,
-			["skillMax"] = 75,
-			["name"] = "Cooking",
-			["skillMod"] = 0,
-		},
-		[2545] = {
-			["skillLvl"] = 1,
-			["skillMax"] = 75,
-			["skillMod"] = 0,
-			["name"] = "Cataclysm Cooking",
-		},
-		[2586] = {
-			["skillLvl"] = 1,
-			["skillMod"] = 0,
-			["name"] = "Legion Fishing",
-			["skillMax"] = 100,
-		},
-	},
-	["DebugLevel"] = 0,
-	["Taxi"] = {
-		["Hearthglen"] = true,
-		["The Forsaken Front"] = true,
-		["Thunk's Abode"] = true,
-		["Hafr Fjall"] = true,
-		["Orgrimmar"] = true,
-		["Hibernal Hollow"] = true,
-		["Undercity"] = true,
-		["Zul'Aman"] = true,
-		["Brill"] = true,
-		["Stonard"] = true,
-		["Westreach Summit"] = true,
-		["Felbane Camp"] = true,
-		["Cliffwalker Post"] = true,
-		["Illidari Stand"] = true,
-		["City Center"] = true,
-		["Warbeast Kraal"] = true,
-		["Crimson Thicket"] = true,
-		["Renounced Bastille"] = true,
-		["Fuselight"] = true,
-		["Northpass Tower"] = true,
-		["Marshal's Stand"] = true,
-		["Fizzle & Pozzik's Speedbarge"] = true,
-		["Krom'gar Fortress"] = true,
-		["Flamestar Post"] = true,
-		["Everlook"] = true,
-		["Dalaran"] = true,
-		["Azurewing Repose"] = true,
-		["Scaletrader Post"] = true,
-		["Heart of the Forest"] = true,
-		["The Mugambala"] = true,
-		["Warport Rastari"] = true,
-		["Zeb'ahari"] = true,
-		["Whisperwind Grove"] = true,
-		["Dominance Keep"] = true,
-		["Shadowguard Incursion"] = true,
-		["Strahnbrad"] = true,
-		["Trueshot Lodge"] = true,
-		["Light's Shield Tower"] = true,
-		["Triumvirate's End"] = true,
-		["Southern Rocketway"] = true,
-		["Northern Rocketway"] = true,
-		["Ruins of Southshore"] = true,
-		["Watchers' Aerie"] = true,
-		["Irongrove Retreat"] = true,
-		["Zo'bal Ruins"] = true,
-		["The Spearhead"] = true,
-		["Gadgetzan"] = true,
-		["Zul'jan"] = true,
-		["Tortaka Refuge"] = true,
-		["Conservatory of the Arcane"] = true,
-		["Obsidian Overlook"] = true,
-		["Silverwind Refuge"] = true,
-		["Aspirant's Rest"] = true,
-		["Cullen's Post"] = true,
-		["Falconwing Square"] = true,
-		["Sun Rock Retreat"] = true,
-		["Krokul Hovel"] = true,
-		["Lorlathil"] = true,
-		["Brackenwall Village"] = true,
-		["Southpoint Gate"] = true,
-		["Scorched Sands Outpost"] = true,
-		["Dreadwake's Landing"] = true,
-		["Tazavesh"] = true,
-		["Ironhorn Enclave"] = true,
-		["Shattered Sun Staging Area"] = true,
-		["Thunder Totem"] = true,
-		["Menagerie of the Master"] = true,
-		["Halls of Atonement"] = true,
-		["Nesingwary"] = true,
-		["Isle of Fangs"] = true,
-		["Tusk Isle"] = true,
-		["Camp Ataya"] = true,
-		["Valormok"] = true,
-		["Wardens' Redoubt"] = true,
-		["Forsaken Foothold"] = true,
-		["Skyhorn"] = true,
-		["Shackle's Den"] = true,
-		["Hardwrench Hideaway"] = true,
-		["Mudsprocket"] = true,
-		["Vorrik's Sanctum"] = true,
-		["Forsaken Rear Guard"] = true,
-		["Felblaze Ingress"] = true,
-		["Ratchet"] = true,
-		["Illidari Perch"] = true,
-		["Irontree Clearing"] = true,
-		["Revantusk Village"] = true,
-		["Hammerfall"] = true,
-		["Destiny Point"] = true,
-		["Silvermoon City"] = true,
-		["Temple of Akunda"] = true,
-		["Meredil"] = true,
-		["Wanecrypt Hill"] = true,
-		["Eye of Azshara"] = true,
-		["Keres' Rest"] = true,
-		["The Crossroads"] = true,
-		["Bloodwatcher Point"] = true,
-		["Garden of the Moon"] = true,
-		["Starsong Refuge"] = true,
-		["Hellscream's Watch"] = true,
-		["Darkhaven"] = true,
-		["Seeker's Outpost"] = true,
-		["Valdisdall"] = true,
-		["Temple of the Prophet"] = true,
-		["Mossy Pile"] = true,
-		["Pridefall Hamlet"] = true,
-		["Vindicaar"] = true,
-		["Vulpera Hideaway"] = true,
-		["Sanctuary of the Devoted"] = true,
-		["Desolation Hold"] = true,
-		["Charred Ramparts"] = true,
-		["Wildheart Point"] = true,
-		["Light's Hope Chapel"] = true,
-		["Ve'nari's Refuge"] = true,
-		["Thorium Point"] = true,
-		["Gloom Hollow"] = true,
-		["The Great Seal"] = true,
-		["Hope's Landing"] = true,
-		["Malaka'jin"] = true,
-		["The Sludgewerks"] = true,
-		["Galen's Fall"] = true,
-		["Hero's Rest"] = true,
-		["Southwind Village"] = true,
-		["Atal'Gral"] = true,
-		["Bleak Redoubt"] = true,
-		["Thondroril River"] = true,
-		["Vengeance Point"] = true,
-		["Xibala"] = true,
-		["The Witchwood"] = true,
-		["Nesingwary's Gameland"] = true,
-		["Forsaken High Command"] = true,
-		["Stonemaul Hold"] = true,
-		["The Mor'Shan Ramparts"] = true,
-		["Deliverance Point"] = true,
-		["Stonehoof Watch"] = true,
-		["Tranquillien"] = true,
-		["Sagehaven"] = true,
-		["Thunder Bluff"] = true,
-		["Port of Zandalar"] = true,
-		["Camp Mojache"] = true,
-		["The Sliver"] = true,
-		["Refugee Camp"] = true,
-		["Garden of the Loa"] = true,
-		["Eastwall Tower"] = true,
-		["Moonglade"] = true,
-		["Aalgen Point"] = true,
-		["Fairbreeze Village"] = true,
-		["Furien's Post"] = true,
-		["Shield's Rest"] = true,
-		["Andorhal"] = true,
-		["Dawnrise Expedition"] = true,
-		["Eastpoint Tower"] = true,
-		["Karnum's Glade"] = true,
-		["Nozzlepot's Outpost"] = true,
-		["Atal'Dazar"] = true,
-		["Flame Crest"] = true,
-		["Iron Summit"] = true,
-		["Bambala"] = true,
-		["Prepfoot"] = true,
-		["Challiane's Terrace"] = true,
-		["Zoram'gar Outpost"] = true,
-		["Bradensbrook"] = true,
-		["Hunter's Hill"] = true,
-		["Tarren Mill"] = true,
-		["The Bulwark"] = true,
-		["New Kargath"] = true,
-		["Sylvan Falls"] = true,
-		["The Veiled Den"] = true,
-		["Ethel Rethor"] = true,
-		["Crown Guard Tower"] = true,
-		["Grom'gol"] = true,
-		["Splintertree Post"] = true,
-		["Razor Hill"] = true,
-		["Terrace of the Collectors"] = true,
-		["Shattered Landing"] = true,
-		["Shipwreck Cove"] = true,
-		["The Menders' Stead"] = true,
-		["Shadowprey Village"] = true,
-		["Bilgewater Harbor"] = true,
-		["Stormtorn Foothills"] = true,
-		["Vendetta Point"] = true,
-		["Old Gate"] = true,
-		["Sanctuary of the Mad"] = true,
-		["Sen'jin Village"] = true,
-		["Theater of Pain"] = true,
-		["Booty Bay"] = true,
-		["The Sepulcher"] = true,
-		["Emerald Sanctuary"] = true,
-		["Bogpaddle"] = true,
-		["Root-Home"] = true,
-		["Bootlegger Outpost"] = true,
-		["Prophet's Reflection"] = true,
-		["Claw's Edge"] = true,
-		["Spider's Watch"] = true,
-		["Bloodhoof Village"] = true,
-		["Gloaming Reef"] = true,
-		["Chiselgrip"] = true,
-		["Shattered Fields"] = true,
-		["Keeper's Respite"] = true,
-		["Oribos"] = true,
-		["Plague Watch"] = true,
-		["Plaguewood Tower"] = true,
-		["Hiri'watha Research Station"] = true,
-		["Glitterfall Basin"] = true,
-		["Tirna Vaal"] = true,
-	},
-	["Guide"] = {
-		["KraSunIsle"] = {
-			["total"] = 195,
-			["Version"] = "9.2.5-A0",
-			["skipped"] = {
-			},
-			["done"] = false,
-			["progress"] = 193,
-			["completion"] = {
-				"Player level exceeds step limit", -- [1]
-				nil, -- [2]
-				8325, -- [3]
-				8325, -- [4]
-				8325, -- [5]
-				8326, -- [6]
-				8326, -- [7]
-				8326, -- [8]
-				8327, -- [9]
-				37443, -- [10]
-				37442, -- [11]
-				37440, -- [12]
-				"NextStep(): Skipping step, available quest is currently complete or active", -- [13]
-				37439, -- [14]
-				"NextStep(): Skipping step, available quest is currently complete or active", -- [15]
-				37440, -- [16]
-				37439, -- [17]
-				37440, -- [18]
-				37442, -- [19]
-				37443, -- [20]
-				8327, -- [21]
-				8334, -- [22]
-				8334, -- [23]
-				37443, -- [24]
-				8334, -- [25]
-				37443, -- [26]
-				37442, -- [27]
-				37443, -- [28]
-				37440, -- [29]
-				nil, -- [30]
-				37439, -- [31]
-				nil, -- [32]
-				8334, -- [33]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [34]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [35]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [36]
-				"AutoCompleteQuestUpdate: complete", -- [37]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [38]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [39]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [40]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [41]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [42]
-				"AutoCompleteZoneBroker", -- [43]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [44]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [45]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [46]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [47]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [48]
-				8350, -- [49]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [50]
-				"AutoCompleteSetHearth", -- [51]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [52]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [53]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [54]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [55]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [56]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [57]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [58]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [59]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [60]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [61]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [62]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [63]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [64]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [65]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [66]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [67]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [68]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [69]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [70]
-				"NextStep(): completed cause you have enough loot in bags.", -- [71]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [72]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [73]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [74]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [75]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [76]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [77]
-				"NextStep(): completed cause you have enough loot in bags.", -- [78]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [79]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [80]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [81]
-				8482, -- [82]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [83]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [84]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [85]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [86]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [87]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [88]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [89]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [90]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [91]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [92]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [93]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [94]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [95]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [96]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [97]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [98]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [99]
-				8483, -- [100]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [101]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [102]
-				9256, -- [103]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [104]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [105]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [106]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [107]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [108]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [109]
-				9395, -- [110]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [111]
-				9395, -- [112]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [113]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [114]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [115]
-				"AutoCompleteQuestUpdate: complete", -- [116]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [117]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [118]
-				9133, -- [119]
-				9133, -- [120]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [121]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [122]
-				"AutoCompleteQuestUpdate: complete", -- [123]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [124]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [125]
-				9135, -- [126]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [127]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [128]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [129]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [130]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [131]
-				"AutoCompleteQuestUpdate: complete", -- [132]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [133]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [134]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [135]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [136]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [137]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [138]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [139]
-				"AutoCompleteQuestUpdate: complete", -- [140]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [141]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [142]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [143]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [144]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [145]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [146]
-				9358, -- [147]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [148]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [149]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [150]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [151]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [152]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [153]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [154]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [155]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [156]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [157]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [158]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [159]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [160]
-				"AutoCompleteQuestUpdate: complete", -- [161]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [162]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [163]
-				8888, -- [164]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [165]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [166]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [167]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [168]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [169]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [170]
-				8894, -- [171]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [172]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [173]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [174]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [175]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [176]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [177]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [178]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [179]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [180]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [181]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [182]
-				"AutoCompleteQuestUpdate: complete", -- [183]
-				8479, -- [184]
-				"AutoCompleteLoot", -- [185]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [186]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [187]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [188]
-				9360, -- [189]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [190]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [191]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [192]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [193]
-				9255, -- [194]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [195]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [196]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [197]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [198]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [199]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [200]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [201]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [202]
-				8474, -- [203]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [204]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [205]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [206]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [207]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [208]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [209]
-				"AutoCompleteQuestUpdate: AutoComplete", -- [210]
-				false, -- [211]
-			},
-		},
-		["ChromieTimeH"] = {
-			["total"] = 7,
-			["Version"] = "2022.10.26.A",
-			["skipped"] = {
-			},
-			["done"] = false,
-			["completion"] = {
-				"Player level exceeds step limit", -- [1]
-				nil, -- [2]
-				nil, -- [3]
-				false, -- [4]
-				false, -- [5]
-				false, -- [6]
-				false, -- [7]
-				false, -- [8]
-				false, -- [9]
-				51443, -- [10]
-				false, -- [11]
-				[14] = false,
-			},
-			["progress"] = 1,
-		},
-		["hearth"] = "The Broken Tusk",
-	},
-	["EnableTreasures"] = true,
 	["completedQIDs"] = {
 		[55053] = true,
 		[46929] = true,
@@ -672,6 +183,7 @@ WoWProCharDB = {
 		[47963] = true,
 		[50074] = true,
 		[37856] = true,
+		[69923] = true,
 		[42398] = true,
 		[42526] = true,
 		[42590] = true,
@@ -686,6 +198,7 @@ WoWProCharDB = {
 		[39776] = true,
 		[37857] = true,
 		[46109] = true,
+		[69925] = true,
 		[62741] = true,
 		[42399] = true,
 		[42655] = true,
@@ -796,6 +309,7 @@ WoWProCharDB = {
 		[40167] = true,
 		[62748] = true,
 		[42406] = true,
+		[65435] = true,
 		[39272] = true,
 		[60062] = true,
 		[60126] = false,
@@ -819,6 +333,7 @@ WoWProCharDB = {
 		[38442] = false,
 		[53027] = false,
 		[61343] = true,
+		[69944] = true,
 		[39274] = true,
 		[57825] = true,
 		[60064] = true,
@@ -842,6 +357,7 @@ WoWProCharDB = {
 		[63136] = true,
 		[40747] = true,
 		[59234] = true,
+		[65439] = true,
 		[59554] = true,
 		[47528] = true,
 		[60066] = true,
@@ -872,6 +388,7 @@ WoWProCharDB = {
 		[8884] = true,
 		[62371] = true,
 		[46251] = true,
+		[72256] = true,
 		[62883] = true,
 		[60900] = true,
 		[9252] = false,
@@ -888,6 +405,7 @@ WoWProCharDB = {
 		[62884] = true,
 		[38384] = true,
 		[53097] = true,
+		[65443] = true,
 		[59430] = true,
 		[61541] = true,
 		[43182] = true,
@@ -1141,6 +659,7 @@ WoWProCharDB = {
 		[46846] = true,
 		[61303] = true,
 		[49149] = true,
+		[69992] = true,
 		[57657] = true,
 		[45439] = false,
 		[39426] = true,
@@ -1231,39 +750,40 @@ WoWProCharDB = {
 		[63036] = true,
 		[42630] = true,
 		[42694] = true,
-		[42750] = true,
+		[65437] = true,
+		[61984] = true,
 		[38143] = true,
-		[41622] = false,
-		[44281] = false,
-		[40954] = true,
+		[59743] = true,
+		[42244] = true,
+		[59804] = false,
 		[55094] = true,
 		[37257] = true,
 		[41415] = true,
 		[9255] = true,
 		[39496] = true,
-		[45786] = true,
+		[60837] = true,
 		[59189] = true,
-		[63051] = true,
-		[60508] = true,
-		[9327] = true,
-		[60251] = true,
-		[40072] = true,
+		[61552] = true,
+		[51691] = true,
+		[46179] = true,
+		[40244] = true,
+		[37730] = true,
 		[58431] = true,
-		[42119] = false,
-		[58037] = true,
+		[40072] = true,
+		[37729] = true,
 		[58623] = true,
 		[48452] = true,
-		[59007] = true,
+		[37653] = true,
 		[40392] = true,
-		[45841] = true,
+		[59007] = true,
 		[40520] = true,
 		[54913] = true,
-		[60855] = false,
+		[60063] = true,
 		[60899] = false,
-		[44788] = true,
-		[49679] = true,
+		[57867] = true,
+		[49615] = true,
 		[38857] = true,
-		[63944] = true,
+		[44788] = true,
 		[65656] = true,
 		[45190] = true,
 		[37678] = true,
@@ -1271,389 +791,886 @@ WoWProCharDB = {
 		[43335] = true,
 		[51587] = true,
 		[41416] = true,
-		[37528] = true,
+		[39124] = true,
 		[8347] = true,
-		[57547] = true,
-		[37530] = true,
+		[37528] = true,
+		[46337] = true,
 		[54018] = true,
-		[37467] = true,
+		[46783] = true,
 		[60287] = true,
-		[37538] = true,
+		[65657] = true,
 		[41992] = true,
 		[40009] = true,
 		[8491] = false,
-		[44784] = true,
-		[61553] = true,
+		[46336] = true,
+		[8334] = true,
 		[50606] = false,
-		[37486] = true,
+		[39025] = true,
 		[48581] = true,
 		[49488] = true,
-		[46060] = true,
-		[59800] = true,
+		[58621] = true,
+		[42159] = false,
 		[37728] = true,
+		[42386] = true,
 		[37727] = true,
-		[40339] = true,
-		[39592] = true,
+		[60123] = false,
 		[36811] = true,
 		[38922] = true,
 		[65658] = true,
 		[59520] = true,
 		[37654] = true,
 		[39178] = true,
-		[42756] = true,
-		[42567] = true,
-		[38015] = true,
+		[38331] = true,
+		[48527] = true,
+		[37449] = true,
 		[45575] = true,
 		[39498] = true,
-		[38014] = true,
+		[47445] = true,
 		[8891] = true,
-		[47312] = true,
-		[58023] = true,
-		[37733] = true,
-		[37957] = true,
+		[58620] = true,
+		[8888] = true,
+		[38644] = true,
+		[44009] = true,
 		[40010] = false,
 		[65659] = true,
-		[38641] = true,
+		[49905] = true,
 		[42185] = true,
 		[9035] = false,
 		[48454] = true,
 		[9067] = true,
 		[38347] = true,
-		[47272] = true,
-		[57866] = true,
+		[49678] = true,
+		[64085] = true,
 		[54915] = true,
 		[44744] = false,
-		[45557] = true,
-		[47442] = true,
-		[42104] = true,
+		[44680] = true,
+		[47589] = false,
+		[59801] = true,
 		[47047] = true,
-		[45192] = true,
+		[39123] = true,
 		[65660] = true,
 		[65788] = true,
 		[57538] = true,
-		[47311] = true,
-		[59623] = true,
-		[49489] = true,
+		[45192] = true,
+		[40219] = true,
+		[58605] = false,
 		[39371] = false,
-		[39419] = true,
-		[49681] = true,
-		[40920] = true,
+		[42645] = true,
+		[50466] = true,
+		[46931] = true,
 		[60097] = false,
+		[38675] = true,
 		[58794] = true,
-		[44816] = false,
 		[60289] = true,
+		[42641] = true,
 		[39579] = true,
-		[9133] = true,
 		[65661] = true,
 		[46216] = true,
 		[44233] = true,
 		[62720] = false,
-		[45694] = false,
-		[37450] = true,
+		[53079] = true,
+		[45878] = true,
 		[45556] = true,
 		[50417] = true,
-		[45555] = true,
+		[46501] = true,
 		[54916] = true,
-		[9076] = true,
+		[45379] = false,
 		[45174] = true,
-		[49490] = true,
-		[40011] = true,
-		[62259] = true,
-		[51770] = true,
+		[37507] = true,
+		[60840] = true,
+		[58622] = true,
+		[51771] = true,
 		[65662] = true,
 		[45193] = true,
-		[45553] = true,
+		[38323] = true,
 		[41227] = false,
 		[47432] = true,
-		[58026] = true,
+		[39698] = true,
 		[39372] = true,
-		[45839] = true,
-		[40594] = true,
-		[51249] = true,
-		[40220] = true,
+		[32674] = true,
+		[38909] = true,
+		[51679] = true,
+		[51555] = true,
 		[54021] = true,
 		[39804] = true,
-		[49810] = true,
-		[40012] = true,
+		[8468] = true,
+		[47438] = true,
 		[41995] = true,
-		[65663] = true,
-		[51532] = true,
-		[59656] = true,
+		[40012] = true,
+		[49421] = true,
+		[47310] = true,
 		[62721] = true,
 		[62785] = true,
-		[57545] = true,
-		[38878] = true,
+		[57818] = true,
+		[9395] = true,
 		[38413] = true,
 		[58947] = true,
 		[42635] = true,
-		[58266] = true,
-		[39381] = true,
+		[57868] = true,
+		[45796] = true,
 		[59203] = true,
-		[38910] = true,
-		[62567] = false,
+		[44464] = true,
+		[51980] = true,
 		[38911] = true,
 		[65664] = true,
-		[40221] = true,
+		[39594] = true,
 		[39117] = true,
-		[51526] = true,
+		[42640] = true,
 		[47433] = true,
-		[59016] = false,
+		[42631] = false,
 		[39373] = true,
 		[39437] = true,
-		[54917] = true,
+		[9147] = true,
 		[37518] = true,
 		[9360] = true,
-		[9352] = true,
+		[47585] = true,
 		[42088] = true,
-		[37440] = true,
-		[8476] = false,
-		[44043] = true,
+		[40830] = true,
 		[65665] = true,
+		[44043] = true,
+		[8476] = false,
 		[57932] = true,
-		[8473] = true,
-		[50252] = true,
-		[60842] = false,
+		[8477] = true,
+		[46734] = true,
+		[59917] = true,
 		[38286] = true,
 		[42444] = true,
 		[38414] = true,
 		[46666] = true,
 		[46730] = true,
-		[8325] = true,
-		[51998] = true,
+		[49918] = true,
+		[62761] = true,
 		[38624] = true,
 		[38912] = true,
 		[38862] = true,
-		[56429] = true,
+		[8889] = true,
 		[65666] = true,
-		[54918] = true,
-		[51680] = true,
-		[39305] = true,
+		[42405] = true,
+		[54012] = true,
+		[41094] = true,
 		[47434] = true,
-		[42268] = true,
+		[42884] = true,
 		[39374] = true,
 		[39438] = true,
-		[37442] = true,
+		[45390] = false,
 		[49801] = true,
 		[8892] = true,
-		[47437] = true,
+		[45564] = true,
 		[62275] = true,
-		[40385] = true,
-		[42389] = true,
-		[64322] = true,
+		[40959] = true,
+		[39595] = true,
+		[57869] = true,
 		[65667] = true,
 		[40078] = true,
-		[58025] = true,
+		[58900] = true,
 		[62723] = true,
 		[40519] = false,
-		[47584] = true,
+		[64846] = true,
 		[42445] = true,
-		[40000] = true,
-		[47418] = true,
+		[40958] = true,
+		[8475] = true,
 		[54919] = true,
 		[9148] = true,
 		[38671] = true,
-		[39392] = true,
-		[63977] = true,
+		[39321] = true,
+		[42883] = true,
 		[37657] = true,
-		[42654] = true,
+		[9394] = true,
 		[65668] = true,
 		[37443] = true,
 		[59717] = true,
 		[51465] = true,
 		[47435] = true,
 		[59781] = true,
-		[49144] = true,
+		[44366] = true,
 		[39439] = true,
-		[38225] = true,
-		[42271] = true,
-		[40326] = true,
-		[38339] = true,
-		[47706] = true,
-		[38595] = true,
-		[39591] = true,
-		[42751] = true,
+		[47422] = true,
+		[47583] = true,
+		[9258] = true,
+		[49148] = true,
+		[8326] = true,
+		[58160] = true,
+		[39670] = true,
+		[8474] = true,
 		[51286] = true,
-		[41090] = true,
+		[39656] = true,
 		[42431] = false,
 		[38307] = false,
-		[42392] = true,
+		[62159] = true,
 		[44545] = true,
 		[42446] = true,
-		[47509] = true,
-		[44414] = true,
-		[54920] = true,
-		[57870] = true,
-		[61189] = false,
-		[38360] = true,
-		[63208] = true,
-		[38724] = true,
-		[42401] = true,
-		[8490] = true,
-		[63209] = true,
-		[55195] = true,
-		[47520] = true,
-		[9066] = true,
-		[49922] = true,
 		[42402] = false,
+		[49922] = true,
+		[54920] = true,
+		[9066] = true,
+		[61189] = false,
+		[47520] = true,
+		[55195] = true,
+		[63209] = true,
+		[8490] = true,
+		[42401] = true,
+		[38724] = true,
+		[63208] = true,
+		[38360] = true,
+		[57870] = true,
+		[44414] = true,
+		[47509] = true,
 		[39440] = true,
-		[62159] = true,
+		[42392] = true,
 		[62085] = true,
 		[64196] = true,
-		[39656] = true,
+		[41090] = true,
 		[62277] = true,
-		[8474] = true,
-		[39670] = true,
-		[58160] = true,
-		[8326] = true,
-		[49148] = true,
-		[9258] = true,
-		[47583] = true,
-		[44366] = true,
-		[47422] = true,
+		[42751] = true,
+		[39591] = true,
+		[38595] = true,
+		[47706] = true,
+		[38339] = true,
+		[40326] = true,
+		[42271] = true,
+		[38225] = true,
+		[49144] = true,
 		[42447] = true,
 		[52746] = true,
-		[9394] = true,
+		[42654] = true,
 		[42639] = true,
-		[42883] = true,
-		[39321] = true,
-		[8475] = true,
-		[40958] = true,
-		[64846] = true,
+		[63977] = true,
+		[39392] = true,
+		[47418] = true,
+		[40000] = true,
+		[47584] = true,
 		[51211] = true,
-		[58900] = true,
-		[57869] = true,
-		[39595] = true,
-		[40959] = true,
-		[45390] = false,
-		[45564] = true,
-		[42884] = true,
-		[41094] = true,
-		[54012] = true,
-		[42405] = true,
-		[8889] = true,
+		[58025] = true,
+		[64322] = true,
+		[42389] = true,
+		[40385] = true,
+		[47437] = true,
+		[37442] = true,
+		[42268] = true,
+		[39305] = true,
+		[51680] = true,
+		[54918] = true,
+		[56429] = true,
 		[51979] = true,
 		[62278] = true,
-		[62761] = true,
-		[49918] = true,
-		[59917] = true,
-		[8477] = true,
-		[46734] = true,
+		[51998] = true,
+		[8325] = true,
+		[60842] = false,
+		[50252] = true,
+		[8473] = true,
 		[46286] = true,
 		[40008] = true,
-		[40830] = true,
+		[37440] = true,
 		[42384] = true,
-		[47585] = true,
+		[9352] = true,
 		[42512] = true,
-		[9147] = true,
-		[42640] = true,
-		[42631] = false,
-		[39594] = true,
+		[54917] = true,
+		[59016] = false,
+		[51526] = true,
+		[40221] = true,
 		[46926] = true,
-		[51980] = true,
-		[44464] = true,
-		[45796] = true,
-		[57868] = true,
-		[9395] = true,
-		[47310] = true,
-		[49421] = true,
-		[47438] = true,
-		[57818] = true,
-		[8468] = true,
+		[62567] = false,
+		[38910] = true,
+		[39381] = true,
+		[58266] = true,
+		[38878] = true,
+		[57545] = true,
+		[59656] = true,
+		[51532] = true,
+		[65663] = true,
+		[49810] = true,
 		[57865] = true,
-		[51555] = true,
-		[51679] = true,
-		[38909] = true,
-		[39698] = true,
-		[32674] = true,
-		[38323] = true,
-		[51771] = true,
-		[58622] = true,
-		[60840] = true,
-		[37507] = true,
+		[40220] = true,
+		[51249] = true,
+		[40594] = true,
+		[45839] = true,
+		[58026] = true,
+		[45553] = true,
+		[51770] = true,
+		[62259] = true,
+		[40011] = true,
+		[49490] = true,
 		[52428] = true,
-		[45379] = false,
-		[46501] = true,
+		[9076] = true,
+		[45555] = true,
 		[42385] = true,
 		[44496] = true,
-		[45878] = true,
-		[53079] = true,
-		[42641] = true,
+		[37450] = true,
+		[45694] = false,
+		[9133] = true,
 		[38611] = true,
-		[38675] = true,
+		[44816] = false,
 		[46927] = true,
-		[46931] = true,
-		[50466] = true,
-		[42645] = true,
-		[58605] = false,
-		[40219] = true,
-		[39123] = true,
+		[40920] = true,
+		[49681] = true,
+		[39419] = true,
+		[49489] = true,
+		[59623] = true,
+		[47311] = true,
 		[49422] = true,
-		[59801] = true,
-		[47589] = false,
-		[44680] = true,
-		[49678] = true,
-		[64085] = true,
-		[49905] = true,
+		[42104] = true,
+		[47442] = true,
+		[45557] = true,
+		[57866] = true,
+		[47272] = true,
+		[38641] = true,
 		[49870] = true,
-		[44009] = true,
-		[38644] = true,
-		[8888] = true,
-		[58620] = true,
-		[47445] = true,
-		[37449] = true,
-		[48527] = true,
-		[38331] = true,
+		[37957] = true,
+		[37733] = true,
+		[58023] = true,
+		[47312] = true,
+		[38014] = true,
+		[38015] = true,
+		[42567] = true,
+		[42756] = true,
 		[27278] = true,
-		[60123] = false,
-		[42386] = true,
+		[39592] = true,
+		[40339] = true,
 		[40403] = true,
 		[52749] = true,
-		[42159] = false,
-		[58621] = true,
+		[59800] = true,
+		[46060] = true,
 		[38612] = true,
-		[39025] = true,
+		[37486] = true,
 		[46928] = true,
-		[8334] = true,
-		[46336] = true,
-		[65657] = true,
-		[46783] = true,
-		[46337] = true,
-		[39124] = true,
+		[61553] = true,
+		[44784] = true,
+		[37538] = true,
+		[37467] = true,
+		[37530] = true,
+		[57547] = true,
 		[59658] = false,
 		[47440] = true,
 		[39316] = true,
-		[49615] = true,
-		[57867] = true,
+		[63944] = true,
+		[49679] = true,
 		[57931] = true,
 		[39572] = true,
-		[60063] = true,
-		[37653] = true,
+		[60855] = false,
+		[45841] = true,
 		[39764] = true,
-		[37729] = true,
-		[37730] = true,
-		[40244] = true,
-		[46179] = true,
-		[51691] = true,
-		[61552] = true,
+		[42119] = false,
+		[58037] = true,
+		[60251] = true,
+		[9327] = true,
+		[60508] = true,
+		[63051] = true,
 		[62729] = true,
-		[60837] = true,
+		[45786] = true,
 		[42387] = true,
 		[38357] = true,
-		[59804] = false,
-		[42244] = true,
-		[59743] = true,
+		[40954] = true,
+		[44281] = false,
+		[41622] = false,
 		[38613] = true,
-		[61984] = true,
-	},
-	["AutoHideInsideInstancesNotify"] = true,
-	["AutoHideInCombat"] = false,
-	["GuideVersion"] = {
-	},
-	["BuildingLocations"] = {
-	},
-	["Enabled"] = true,
-	["skippedQIDs"] = {
+		[42750] = true,
 	},
 	["Rank"] = {
 	},
+	["EnablePetBattles"] = true,
+	["EnableGrailQuestName"] = false,
+	["Guide"] = {
+		["KraSunIsle"] = {
+			["total"] = 195,
+			["Version"] = "9.2.5-A0",
+			["skipped"] = {
+			},
+			["done"] = false,
+			["completion"] = {
+				"Player level exceeds step limit", -- [1]
+				nil, -- [2]
+				8325, -- [3]
+				8325, -- [4]
+				8325, -- [5]
+				8326, -- [6]
+				8326, -- [7]
+				8326, -- [8]
+				8327, -- [9]
+				37443, -- [10]
+				37442, -- [11]
+				37440, -- [12]
+				"NextStep(): Skipping step, available quest is currently complete or active", -- [13]
+				37439, -- [14]
+				"NextStep(): Skipping step, available quest is currently complete or active", -- [15]
+				37440, -- [16]
+				37439, -- [17]
+				37440, -- [18]
+				37442, -- [19]
+				37443, -- [20]
+				8327, -- [21]
+				8334, -- [22]
+				8334, -- [23]
+				37443, -- [24]
+				8334, -- [25]
+				37443, -- [26]
+				37442, -- [27]
+				37443, -- [28]
+				37440, -- [29]
+				nil, -- [30]
+				37439, -- [31]
+				nil, -- [32]
+				8334, -- [33]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [34]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [35]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [36]
+				"AutoCompleteQuestUpdate: complete", -- [37]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [38]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [39]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [40]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [41]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [42]
+				"AutoCompleteZoneBroker", -- [43]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [44]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [45]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [46]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [47]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [48]
+				8350, -- [49]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [50]
+				"AutoCompleteSetHearth", -- [51]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [52]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [53]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [54]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [55]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [56]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [57]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [58]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [59]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [60]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [61]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [62]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [63]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [64]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [65]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [66]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [67]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [68]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [69]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [70]
+				"NextStep(): completed cause you have enough loot in bags.", -- [71]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [72]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [73]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [74]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [75]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [76]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [77]
+				"NextStep(): completed cause you have enough loot in bags.", -- [78]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [79]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [80]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [81]
+				8482, -- [82]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [83]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [84]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [85]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [86]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [87]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [88]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [89]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [90]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [91]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [92]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [93]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [94]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [95]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [96]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [97]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [98]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [99]
+				8483, -- [100]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [101]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [102]
+				9256, -- [103]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [104]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [105]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [106]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [107]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [108]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [109]
+				9395, -- [110]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [111]
+				9395, -- [112]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [113]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [114]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [115]
+				"AutoCompleteQuestUpdate: complete", -- [116]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [117]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [118]
+				9133, -- [119]
+				9133, -- [120]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [121]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [122]
+				"AutoCompleteQuestUpdate: complete", -- [123]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [124]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [125]
+				9135, -- [126]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [127]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [128]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [129]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [130]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [131]
+				"AutoCompleteQuestUpdate: complete", -- [132]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [133]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [134]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [135]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [136]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [137]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [138]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [139]
+				"AutoCompleteQuestUpdate: complete", -- [140]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [141]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [142]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [143]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [144]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [145]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [146]
+				9358, -- [147]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [148]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [149]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [150]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [151]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [152]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [153]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [154]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [155]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [156]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [157]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [158]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [159]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [160]
+				"AutoCompleteQuestUpdate: complete", -- [161]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [162]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [163]
+				8888, -- [164]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [165]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [166]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [167]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [168]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [169]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [170]
+				8894, -- [171]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [172]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [173]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [174]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [175]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [176]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [177]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [178]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [179]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [180]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [181]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [182]
+				"AutoCompleteQuestUpdate: complete", -- [183]
+				8479, -- [184]
+				"AutoCompleteLoot", -- [185]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [186]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [187]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [188]
+				9360, -- [189]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [190]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [191]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [192]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [193]
+				9255, -- [194]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [195]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [196]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [197]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [198]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [199]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [200]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [201]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [202]
+				8474, -- [203]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [204]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [205]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [206]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [207]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [208]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [209]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [210]
+				false, -- [211]
+			},
+			["progress"] = 193,
+		},
+		["ChromieTimeH"] = {
+			["total"] = 7,
+			["Version"] = "2022.11.16.A",
+			["skipped"] = {
+			},
+			["done"] = false,
+			["progress"] = 1,
+			["completion"] = {
+				"Player level exceeds step limit", -- [1]
+				nil, -- [2]
+				nil, -- [3]
+				false, -- [4]
+				false, -- [5]
+				false, -- [6]
+				false, -- [7]
+				false, -- [8]
+				false, -- [9]
+				51443, -- [10]
+				false, -- [11]
+				false, -- [12]
+				[15] = false,
+			},
+		},
+		["hearth"] = "The Broken Tusk",
+	},
+	["Enabled"] = true,
+	["DebugLevel"] = 0,
+	["Tradeskills"] = {
+		[356] = {
+			["skillLvl"] = 1,
+			["skillMod"] = 0,
+			["name"] = "Fishing",
+			["skillMax"] = 100,
+		},
+		[794] = {
+			["skillLvl"] = 1,
+			["skillMod"] = 0,
+			["name"] = "Archaeology",
+			["skillMax"] = 800,
+		},
+		[2586] = {
+			["skillLvl"] = 1,
+			["skillMax"] = 100,
+			["skillMod"] = 0,
+			["name"] = "Legion Fishing",
+		},
+		[2545] = {
+			["skillLvl"] = 1,
+			["name"] = "Cataclysm Cooking",
+			["skillMod"] = 0,
+			["skillMax"] = 75,
+		},
+		[185] = {
+			["skillLvl"] = 1,
+			["skillMod"] = 0,
+			["name"] = "Cooking",
+			["skillMax"] = 75,
+		},
+	},
+	["GuideVersion"] = {
+	},
+	["Taxi"] = {
+		["Hearthglen"] = true,
+		["The Forsaken Front"] = true,
+		["Thunk's Abode"] = true,
+		["Hafr Fjall"] = true,
+		["Orgrimmar"] = true,
+		["Hibernal Hollow"] = true,
+		["Undercity"] = true,
+		["Zul'Aman"] = true,
+		["Brill"] = true,
+		["Stonard"] = true,
+		["Westreach Summit"] = true,
+		["Felbane Camp"] = true,
+		["Cliffwalker Post"] = true,
+		["Illidari Stand"] = true,
+		["City Center"] = true,
+		["Warbeast Kraal"] = true,
+		["Crimson Thicket"] = true,
+		["Renounced Bastille"] = true,
+		["Fuselight"] = true,
+		["Northpass Tower"] = true,
+		["Marshal's Stand"] = true,
+		["Fizzle & Pozzik's Speedbarge"] = true,
+		["Krom'gar Fortress"] = true,
+		["Flamestar Post"] = true,
+		["Everlook"] = true,
+		["Dalaran"] = true,
+		["Azurewing Repose"] = true,
+		["Scaletrader Post"] = true,
+		["Heart of the Forest"] = true,
+		["The Mugambala"] = true,
+		["Warport Rastari"] = true,
+		["Zeb'ahari"] = true,
+		["Whisperwind Grove"] = true,
+		["Dominance Keep"] = true,
+		["Shadowguard Incursion"] = true,
+		["Strahnbrad"] = true,
+		["Trueshot Lodge"] = true,
+		["Light's Shield Tower"] = true,
+		["Triumvirate's End"] = true,
+		["Southern Rocketway"] = true,
+		["Northern Rocketway"] = true,
+		["Ruins of Southshore"] = true,
+		["Watchers' Aerie"] = true,
+		["Irongrove Retreat"] = true,
+		["Zo'bal Ruins"] = true,
+		["The Spearhead"] = true,
+		["Gadgetzan"] = true,
+		["Zul'jan"] = true,
+		["Tortaka Refuge"] = true,
+		["Conservatory of the Arcane"] = true,
+		["Obsidian Overlook"] = true,
+		["Silverwind Refuge"] = true,
+		["Aspirant's Rest"] = true,
+		["Cullen's Post"] = true,
+		["Falconwing Square"] = true,
+		["Sun Rock Retreat"] = true,
+		["Krokul Hovel"] = true,
+		["Lorlathil"] = true,
+		["Brackenwall Village"] = true,
+		["Southpoint Gate"] = true,
+		["Scorched Sands Outpost"] = true,
+		["Dreadwake's Landing"] = true,
+		["Tazavesh"] = true,
+		["Ironhorn Enclave"] = true,
+		["Shattered Sun Staging Area"] = true,
+		["Thunder Totem"] = true,
+		["Tirna Vaal"] = true,
+		["Glitterfall Basin"] = true,
+		["Nesingwary"] = true,
+		["Isle of Fangs"] = true,
+		["Hiri'watha Research Station"] = true,
+		["Camp Ataya"] = true,
+		["Valormok"] = true,
+		["Wardens' Redoubt"] = true,
+		["Forsaken Foothold"] = true,
+		["Plaguewood Tower"] = true,
+		["Shackle's Den"] = true,
+		["Hardwrench Hideaway"] = true,
+		["Plague Watch"] = true,
+		["Mudsprocket"] = true,
+		["Forsaken Rear Guard"] = true,
+		["Felblaze Ingress"] = true,
+		["Ratchet"] = true,
+		["Oribos"] = true,
+		["Irontree Clearing"] = true,
+		["Revantusk Village"] = true,
+		["Hammerfall"] = true,
+		["Destiny Point"] = true,
+		["Silvermoon City"] = true,
+		["Temple of Akunda"] = true,
+		["Meredil"] = true,
+		["Wanecrypt Hill"] = true,
+		["Eye of Azshara"] = true,
+		["The Crossroads"] = true,
+		["Keres' Rest"] = true,
+		["Bloodhoof Village"] = true,
+		["Garden of the Moon"] = true,
+		["Starsong Refuge"] = true,
+		["Hellscream's Watch"] = true,
+		["Darkhaven"] = true,
+		["Spider's Watch"] = true,
+		["Claw's Edge"] = true,
+		["Prophet's Reflection"] = true,
+		["Mossy Pile"] = true,
+		["Bootlegger Outpost"] = true,
+		["Vindicaar"] = true,
+		["Vulpera Hideaway"] = true,
+		["Bogpaddle"] = true,
+		["Emerald Sanctuary"] = true,
+		["Charred Ramparts"] = true,
+		["Wildheart Point"] = true,
+		["Light's Hope Chapel"] = true,
+		["Ve'nari's Refuge"] = true,
+		["Thorium Point"] = true,
+		["Gloom Hollow"] = true,
+		["Sen'jin Village"] = true,
+		["Hope's Landing"] = true,
+		["Malaka'jin"] = true,
+		["The Great Seal"] = true,
+		["Galen's Fall"] = true,
+		["Thondroril River"] = true,
+		["Vengeance Point"] = true,
+		["Vendetta Point"] = true,
+		["Stormtorn Foothills"] = true,
+		["Hero's Rest"] = true,
+		["Southwind Village"] = true,
+		["Bilgewater Harbor"] = true,
+		["The Witchwood"] = true,
+		["Bleak Redoubt"] = true,
+		["Forsaken High Command"] = true,
+		["Stonemaul Hold"] = true,
+		["The Mor'Shan Ramparts"] = true,
+		["Deliverance Point"] = true,
+		["Stonehoof Watch"] = true,
+		["Tranquillien"] = true,
+		["Sagehaven"] = true,
+		["Thunder Bluff"] = true,
+		["Port of Zandalar"] = true,
+		["Shattered Landing"] = true,
+		["Camp Mojache"] = true,
+		["Refugee Camp"] = true,
+		["The Menders' Stead"] = true,
+		["Garden of the Loa"] = true,
+		["Moonglade"] = true,
+		["Shipwreck Cove"] = true,
+		["Fairbreeze Village"] = true,
+		["Furien's Post"] = true,
+		["Shield's Rest"] = true,
+		["Andorhal"] = true,
+		["Dawnrise Expedition"] = true,
+		["Eastpoint Tower"] = true,
+		["Grom'gol"] = true,
+		["Nozzlepot's Outpost"] = true,
+		["Ethel Rethor"] = true,
+		["Atal'Dazar"] = true,
+		["Iron Summit"] = true,
+		["The Veiled Den"] = true,
+		["Prepfoot"] = true,
+		["Challiane's Terrace"] = true,
+		["The Bulwark"] = true,
+		["Bradensbrook"] = true,
+		["Hunter's Hill"] = true,
+		["Tarren Mill"] = true,
+		["Zoram'gar Outpost"] = true,
+		["New Kargath"] = true,
+		["Sylvan Falls"] = true,
+		["Bambala"] = true,
+		["Flame Crest"] = true,
+		["Crown Guard Tower"] = true,
+		["Karnum's Glade"] = true,
+		["Splintertree Post"] = true,
+		["Razor Hill"] = true,
+		["Terrace of the Collectors"] = true,
+		["Aalgen Point"] = true,
+		["Eastwall Tower"] = true,
+		["The Sliver"] = true,
+		["Shadowprey Village"] = true,
+		["Xibala"] = true,
+		["Nesingwary's Gameland"] = true,
+		["Atal'Gral"] = true,
+		["Old Gate"] = true,
+		["Sanctuary of the Mad"] = true,
+		["The Sludgewerks"] = true,
+		["Theater of Pain"] = true,
+		["Booty Bay"] = true,
+		["The Sepulcher"] = true,
+		["Desolation Hold"] = true,
+		["Sanctuary of the Devoted"] = true,
+		["Root-Home"] = true,
+		["Pridefall Hamlet"] = true,
+		["Temple of the Prophet"] = true,
+		["Valdisdall"] = true,
+		["Seeker's Outpost"] = true,
+		["Bloodwatcher Point"] = true,
+		["Gloaming Reef"] = true,
+		["Chiselgrip"] = true,
+		["Shattered Fields"] = true,
+		["Keeper's Respite"] = true,
+		["Illidari Perch"] = true,
+		["Vorrik's Sanctum"] = true,
+		["Skyhorn"] = true,
+		["Tusk Isle"] = true,
+		["Halls of Atonement"] = true,
+		["Menagerie of the Master"] = true,
+	},
+	["BuildingLocations"] = {
+	},
+	["EnableTreasures"] = true,
+	["EnableFlight"] = true,
+	["AutoHideInsideInstancesNotify"] = true,
+	["AutoHideInCombat"] = false,
+	["EnableGrailBreadcrumbs"] = false,
+	["EnableGrailQuestObsolete"] = false,
+	["GuideStack"] = {
+		"KraSunIsle", -- [1]
+		"ChromieTimeH", -- [2]
+	},
+	["skippedQIDs"] = {
+	},
+	["EnableRares"] = true,
 }

@@ -1,9 +1,8 @@
 # TomTom
 
-## [v3.3.0-release](https://github.com/jnwhiteh/TomTom/tree/v3.3.0-release) (2022-10-27)
-[Full Changelog](https://github.com/jnwhiteh/TomTom/compare/v3.2.2-release...v3.3.0-release) [Previous Releases](https://github.com/jnwhiteh/TomTom/releases)
+## [3.3.5-release](https://github.com/jnwhiteh/TomTom/tree/3.3.5-release) (2022-11-16)
+[Full Changelog](https://github.com/jnwhiteh/TomTom/compare/v3.3.4-release...3.3.5-release) [Previous Releases](https://github.com/jnwhiteh/TomTom/releases)
 
-- Fix an issue with duplicate waypoint registration  
-- Replace UIDropdown with LibDropdown  
-- Include LibDropDown  
-- Update libraries  
+- Update TOC for 10.0.2  
+- Remove throttle for click-grabber enable/disable  
+- Reduce the throttle timer  

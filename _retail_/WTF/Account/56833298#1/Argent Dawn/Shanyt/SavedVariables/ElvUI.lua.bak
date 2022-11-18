@@ -1,2208 +1,2208 @@
 
 ElvCharacterDB = {
+	["CliqueDatatext"] = {
+	},
+	["ConvertKeybindings"] = true,
+	["ChatEditHistory"] = {
+		"/way 47.7 9.5", -- [1]
+		"/way 50.3 27.2", -- [2]
+		"/way 78.1 53.1", -- [3]
+		"/way 61.2 42.6", -- [4]
+		"/way 58.4 74.5", -- [5]
+		"/way 28.1 50.0", -- [6]
+		"/way 53.8 72.5", -- [7]
+		"/way 50.5 27.6", -- [8]
+		"/way 52.2 75.3", -- [9]
+		"/way 53.4 75.3", -- [10]
+		"/way 77.6 59.0", -- [11]
+		"/way 59.2 81.6", -- [12]
+		"/way 68.7 30.1", -- [13]
+		"/way 74.6 51.6", -- [14]
+		"/s 55.75 53.53", -- [15]
+		"/way 55.75 53.53", -- [16]
+		"/way 59.1 81.8", -- [17]
+		"/1 on the way", -- [18]
+		"/raid np", -- [19]
+		"/kalielstracker", -- [20]
+	},
 	["ChatHistoryLog"] = {
 		{
-			"nope", -- [1]
-			"Csypher-Stormreaver", -- [2]
+			"Boss despawned in the middle of our k,illing him", -- [1]
+			"Addynikala-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Csypher-Stormreaver", -- [5]
+			"1. General - Northern Barrens", -- [4]
+			"Addynikala-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			1, -- [8]
+			"General - Northern Barrens", -- [9]
 			0, -- [10]
-			93, -- [11]
-			"Player-58-0C89EDC8", -- [12]
+			649, -- [11]
+			"Player-75-0E1490E9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeCsypher-Stormreaver|r",
-			[51] = 1666664219,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			true, -- [17]
+			[52] = "|cffff7c0aAddynikala|r",
+			[51] = 1668696926,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [1]
 		{
-			"but ill try real hard", -- [1]
-			"Csypher-Stormreaver", -- [2]
+			"....cool. But like...they'll be back, right?", -- [1]
+			"Margraves-EarthenRing", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Csypher-Stormreaver", -- [5]
+			"1. General - Northern Barrens", -- [4]
+			"Margraves-EarthenRing", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			1, -- [8]
+			"General - Northern Barrens", -- [9]
 			0, -- [10]
-			98, -- [11]
-			"Player-58-0C89EDC8", -- [12]
+			650, -- [11]
+			"Player-100-08294FAD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeCsypher-Stormreaver|r",
-			[51] = 1666664181,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			true, -- [17]
+			[52] = "|cffaad372Margraves-EarthenRing|r",
+			[51] = 1668696998,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [2]
 		{
-			"kick that afk dead guy", -- [1]
-			"Gooßy-Barthilas", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:16431:Player-75-058380E2:1:11:17:22:4294967295:4294967295:4294967295:4294967295|h[Against the Elements]|h|r!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Gooßy-Barthilas", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			99, -- [11]
-			"Player-3723-0BE8AF54", -- [12]
+			741, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe97Gooßy-Barthilas|r",
-			[51] = 1666664181,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1668698071,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [3]
 		{
-			"and lets go", -- [1]
-			"Gooßy-Barthilas", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:16431:Player-75-09F9F1F6:1:11:17:22:4294967295:4294967295:4294967295:4294967295|h[Against the Elements]|h|r!", -- [1]
+			"Gremlyk-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Gooßy-Barthilas", -- [5]
+			"Gremlyk-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			102, -- [11]
-			"Player-3723-0BE8AF54", -- [12]
+			742, -- [11]
+			"Player-75-09F9F1F6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe97Gooßy-Barthilas|r",
-			[51] = 1666664183,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			[52] = "|cffc69b6dGremlyk|r",
+			[51] = 1668698071,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [4]
 		{
-			"{rt1} Zgodoffire has prepared a |cff71d5ff|Hspell:190336:0|h[Conjure Refreshment]|h|r. {rt1}", -- [1]
-			"Gooßy-Barthilas", -- [2]
+			"how long until the air primalist spawns", -- [1]
+			"Herabay-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Gooßy-Barthilas", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Herabay-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			1, -- [8]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			103, -- [11]
-			"Player-3723-0BE8AF54", -- [12]
+			766, -- [11]
+			"Player-75-0ED3DF69", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00fe97Gooßy-Barthilas|r",
-			[51] = 1666664183,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			true, -- [17]
+			[52] = "|cffaad372Herabay|r",
+			[51] = 1668698885,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [5]
 		{
-			"stand between him and balls. dont let balls touch him. when he moves, keep up with him. spread out for missiles", -- [1]
-			"Vulpain-Sentinels", -- [2]
+			"if anyone gets a Dimmed storm they dont need can we please trade?", -- [1]
+			"Kelzaan-KirinTor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Vulpain-Sentinels", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Kelzaan-KirinTor", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			1, -- [8]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			110, -- [11]
-			"Player-1071-0769724F", -- [12]
+			809, -- [11]
+			"Player-1071-04962698", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Vulpain-Sentinels|r",
-			[51] = 1666664259,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			true, -- [17]
+			[52] = "|cfff48cbaKelzaan-KirinTor|r",
+			[51] = 1668699578,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [6]
 		{
-			"basically don't let orbs get to him and stay in front of him when he moves", -- [1]
-			"Cudlave-Velen", -- [2]
+			"aren't they boa", -- [1]
+			"Sicari-KirinTor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Cudlave-Velen", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Sicari-KirinTor", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			1, -- [8]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			111, -- [11]
-			"Player-96-088A2F57", -- [12]
+			812, -- [11]
+			"Player-1071-0B35C55A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Cudlave-Velen|r",
-			[51] = 1666664269,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			true, -- [17]
+			[52] = "|cffaad372Sicari-KirinTor|r",
+			[51] = 1668699542,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [7]
 		{
-			"keep orbs away from boss, and boss will move stay in front of him if possible, dont get locked out ", -- [1]
-			"Purrella-Area52", -- [2]
+			"no if we both fought the boss it allows trade", -- [1]
+			"Kelzaan-KirinTor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Purrella-Area52", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Kelzaan-KirinTor", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			1, -- [8]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			112, -- [11]
-			"Player-3676-08D036D5", -- [12]
+			814, -- [11]
+			"Player-1071-04962698", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Purrella-Area52|r",
-			[51] = 1666664275,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			true, -- [17]
+			[52] = "|cfff48cbaKelzaan-KirinTor|r",
+			[51] = 1668699560,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [8]
 		{
-			"brez a dps", -- [1]
-			"Purrella-Area52", -- [2]
+			"i need to be eligible to have looted the same enemy its from, i trade my earths a few times", -- [1]
+			"Kelzaan-KirinTor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Purrella-Area52", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Kelzaan-KirinTor", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			1, -- [8]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			162, -- [11]
-			"Player-3676-08D036D5", -- [12]
+			816, -- [11]
+			"Player-1071-04962698", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Purrella-Area52|r",
-			[51] = 1666664394,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			true, -- [17]
+			[52] = "|cfff48cbaKelzaan-KirinTor|r",
+			[51] = 1668699636,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [9]
 		{
-			"Cudlave cast |cff71d5ff|Hspell:20484:0|h[Rebirth]|h|r -> Kryzalid", -- [1]
-			"Gooßy-Barthilas", -- [2]
+			"xD help,.. im stuck.. like legit stuck", -- [1]
+			"Gumar-ArgentDawn", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Gooßy-Barthilas", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Gumar-ArgentDawn", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			1, -- [8]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			164, -- [11]
-			"Player-3723-0BE8AF54", -- [12]
+			820, -- [11]
+			"Player-75-0EDC8E36", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00fe97Gooßy-Barthilas|r",
-			[51] = 1666664397,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			true, -- [17]
+			[52] = "|cff33937fGumar|r",
+			[51] = 1668699818,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [10]
 		{
-			"ugh...wall smashed me :(", -- [1]
-			"Remmy-Detheroc", -- [2]
+			"they can be traded i just  did a tread in the barrens to some one    and", -- [1]
+			"Jáni-EarthenRing", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Remmy-Detheroc", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Jáni-EarthenRing", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			1, -- [8]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			165, -- [11]
-			"Player-154-0B15F250", -- [12]
+			832, -- [11]
+			"Player-100-053C9B30", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa9d271Remmy-Detheroc|r",
-			[51] = 1666664340,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			true, -- [17]
+			[52] = "|cffaad372Jáni-EarthenRing|r",
+			[51] = 1668699822,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [11]
 		{
-			"Vulpain cast |cff71d5ff|Hspell:61999:0|h[Raise Ally]|h|r -> Grimtheone", -- [1]
-			"Gooßy-Barthilas", -- [2]
+			"are aslo account bound  ", -- [1]
+			"Jáni-EarthenRing", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Gooßy-Barthilas", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Jáni-EarthenRing", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			1, -- [8]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			167, -- [11]
-			"Player-3723-0BE8AF54", -- [12]
+			836, -- [11]
+			"Player-100-053C9B30", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00fe97Gooßy-Barthilas|r",
-			[51] = 1666664343,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			true, -- [17]
+			[52] = "|cffaad372Jáni-EarthenRing|r",
+			[51] = 1668699783,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [12]
 		{
-			"Shiruu cast |cff71d5ff|Hspell:20484:0|h[Rebirth]|h|r -> Csypher", -- [1]
-			"Gooßy-Barthilas", -- [2]
+			"by chance did someone get a dimmed storm?", -- [1]
+			"Kelzaan-KirinTor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Gooßy-Barthilas", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Kelzaan-KirinTor", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			1, -- [8]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			187, -- [11]
-			"Player-3723-0BE8AF54", -- [12]
+			837, -- [11]
+			"Player-1071-04962698", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00fe97Gooßy-Barthilas|r",
-			[51] = 1666664369,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			true, -- [17]
+			[52] = "|cfff48cbaKelzaan-KirinTor|r",
+			[51] = 1668699784,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [13]
 		{
-			"wipe", -- [1]
-			"Kariol-Azralon", -- [2]
+			"its trade-able trust me", -- [1]
+			"Kelzaan-KirinTor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Kariol-Azralon", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Kelzaan-KirinTor", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			1, -- [8]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			188, -- [11]
-			"Player-3209-0B466B43", -- [12]
+			838, -- [11]
+			"Player-1071-04962698", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff006fdcKariol-Azralon|r",
-			[51] = 1666664369,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			true, -- [17]
+			[52] = "|cfff48cbaKelzaan-KirinTor|r",
+			[51] = 1668699793,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [14]
 		{
-			"a lot dps down", -- [1]
-			"Kariol-Azralon", -- [2]
+			"Yes they are ", -- [1]
+			"Jáni-EarthenRing", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Kariol-Azralon", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Jáni-EarthenRing", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			1, -- [8]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			190, -- [11]
-			"Player-3209-0B466B43", -- [12]
+			839, -- [11]
+			"Player-100-053C9B30", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff006fdcKariol-Azralon|r",
-			[51] = 1666664373,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			true, -- [17]
+			[52] = "|cffaad372Jáni-EarthenRing|r",
+			[51] = 1668699801,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [15]
 		{
-			"wipe it up", -- [1]
-			"Purrella-Area52", -- [2]
+			"its drop rate sucks lol", -- [1]
+			"Kelzaan-KirinTor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Purrella-Area52", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Kelzaan-KirinTor", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			1, -- [8]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			208, -- [11]
-			"Player-3676-08D036D5", -- [12]
+			841, -- [11]
+			"Player-1071-04962698", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Purrella-Area52|r",
-			[51] = 1666664428,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			true, -- [17]
+			[52] = "|cfff48cbaKelzaan-KirinTor|r",
+			[51] = 1668699883,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [16]
 		{
-			"some dps proposal dying", -- [1]
-			"Kariol-Azralon", -- [2]
+			"i gave one to  someone in the barrens ..its  bad drop rate lo", -- [1]
+			"Jáni-EarthenRing", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Kariol-Azralon", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Jáni-EarthenRing", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			1, -- [8]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			209, -- [11]
-			"Player-3209-0B466B43", -- [12]
+			842, -- [11]
+			"Player-100-053C9B30", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff006fdcKariol-Azralon|r",
-			[51] = 1666664429,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			true, -- [17]
+			[52] = "|cffaad372Jáni-EarthenRing|r",
+			[51] = 1668699891,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [17]
 		{
-			"now everyone has seen it", -- [1]
-			"Purrella-Area52", -- [2]
+			"Ty all", -- [1]
+			"Tahrann-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Purrella-Area52", -- [5]
+			"Tahrann-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			220, -- [11]
-			"Player-3676-08D036D5", -- [12]
+			1104, -- [11]
+			"Player-61-06D9570F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa22fc8Purrella-Area52|r",
-			[51] = 1666664466,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cffff7c0aTahrann-Zul'jin|r",
+			[51] = 1668701814,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [18]
 		{
-			"xd ", -- [1]
-			"Gooßy-Barthilas", -- [2]
+			"omw", -- [1]
+			"Chubnus-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Gooßy-Barthilas", -- [5]
+			"Chubnus-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			227, -- [11]
-			"Player-3723-0BE8AF54", -- [12]
+			1183, -- [11]
+			"Player-61-0E14FD5F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe97Gooßy-Barthilas|r",
-			[51] = 1666664473,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			[52] = "|cffaad372Chubnus-Zul'jin|r",
+			[51] = 1668701894,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [19]
 		{
-			"are you for real rn", -- [1]
-			"Felbat-MoonGuard", -- [2]
+			"Anyone wont need ?  I really need it", -- [1]
+			"Amenna-Tichondrius", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Felbat-MoonGuard", -- [5]
+			"Amenna-Tichondrius", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			237, -- [11]
-			"Player-3675-0897C802", -- [12]
+			1474, -- [11]
+			"Player-11-0E3F2DFA", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa22fc8Felbat-MoonGuard|r",
-			[51] = 1666664525,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cff33937fAmenna-Tichondrius|r",
+			[51] = 1668702073,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [20]
 		{
-			"eat", -- [1]
-			"Easytarget-Uldaman", -- [2]
+			"anyone not need the dim?", -- [1]
+			"Toltita-Blade'sEdge", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Easytarget-Uldaman", -- [5]
+			"Toltita-Blade'sEdge", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			239, -- [11]
-			"Player-1072-06F85F71", -- [12]
+			1483, -- [11]
+			"Player-1129-0B8E99FA", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Easytarget-Uldaman|r",
-			[51] = 1666664539,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cff33937fToltita-Blade'sEdge|r",
+			[51] = 1668702074,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [21]
 		{
-			"lol", -- [1]
-			"Purrella-Area52", -- [2]
+			"yes", -- [1]
+			"Exordiun-Azralon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Purrella-Area52", -- [5]
+			"Exordiun-Azralon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			240, -- [11]
-			"Player-3676-08D036D5", -- [12]
+			1490, -- [11]
+			"Player-3209-05141588", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa22fc8Purrella-Area52|r",
-			[51] = 1666664540,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cfff48cbaExordiun-Azralon|r",
+			[51] = 1668702078,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [22]
 		{
-			"lock candy?", -- [1]
-			"Celenti-MoonGuard", -- [2]
+			"FINALLY ", -- [1]
+			"Vespixette-Zul'jin", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Celenti-MoonGuard", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Vespixette-Zul'jin", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			1, -- [8]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			251, -- [11]
-			"Player-3675-06C1B35D", -- [12]
+			1511, -- [11]
+			"Player-61-0EDD7B7C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Celenti-MoonGuard|r",
-			[51] = 1666664657,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			true, -- [17]
+			[52] = "|cff33937fVespixette-Zul'jin|r",
+			[51] = 1668702093,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [23]
 		{
-			"ty", -- [1]
-			"Celenti-MoonGuard", -- [2]
+			"Interrupted Air Revenant's |cff71d5ff|Hspell:397109:0|h[Hurricane Blast]|h|r!", -- [1]
+			"Zsofi-Rivendare", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Celenti-MoonGuard", -- [5]
+			"Zsofi-Rivendare", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			252, -- [11]
-			"Player-3675-06C1B35D", -- [12]
+			1571, -- [11]
+			"Player-127-0797F9BE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Celenti-MoonGuard|r",
-			[51] = 1666664671,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cffffffffZsofi-Rivendare|r",
+			[51] = 1668702211,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [24]
 		{
-			"Got that tasty crusader", -- [1]
-			"Celante-MoonGuard", -- [2]
+			"hes not up???", -- [1]
+			"Rachoof-Daggerspine", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Celante-MoonGuard", -- [5]
+			"Rachoof-Daggerspine", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			253, -- [11]
-			"Player-3675-06C1B460", -- [12]
+			1732, -- [11]
+			"Player-1136-091363AD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffefefeCelante-MoonGuard|r",
-			[51] = 1666664738,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cffc41e3aRachoof-Daggerspine|r",
+			[51] = 1668702365,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [25]
 		{
-			"gotta go fast", -- [1]
-			"Celenti-MoonGuard", -- [2]
+			"as far as i know, we must kill 100 ads to reset boss", -- [1]
+			"Rykhup-Nemesis", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Celenti-MoonGuard", -- [5]
+			"Rykhup-Nemesis", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			254, -- [11]
-			"Player-3675-06C1B35D", -- [12]
+			1789, -- [11]
+			"Player-3208-0D601CB4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Celenti-MoonGuard|r",
-			[51] = 1666664750,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cff33937fRykhup-Nemesis|r",
+			[51] = 1668702426,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [26]
 		{
-			"Anyone wanna take out Tojek?", -- [1]
-			"Raale-ArgentDawn", -- [2]
+			"then another 100 di broken armor", -- [1]
+			"Rykhup-Nemesis", -- [2]
 			"", -- [3]
-			"4. LookingForGroup", -- [4]
-			"Raale-ArgentDawn", -- [5]
+			"", -- [4]
+			"Rykhup-Nemesis", -- [5]
 			"", -- [6]
-			26, -- [7]
-			4, -- [8]
-			"LookingForGroup", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			256, -- [11]
-			"Player-75-0ED01BA3", -- [12]
+			1799, -- [11]
+			"Player-3208-0D601CB4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Raale|r",
-			[51] = 1666664712,
-			[50] = "CHAT_MSG_CHANNEL",
+			[52] = "|cff33937fRykhup-Nemesis|r",
+			[51] = 1668702435,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [27]
 		{
-			"|cffffff00|Hquest:51089:190|h[WANTED: Tojek]|h|r", -- [1]
-			"Raale-ArgentDawn", -- [2]
+			"yo", -- [1]
+			"Gorebane-Antonidas", -- [2]
 			"", -- [3]
-			"4. LookingForGroup", -- [4]
-			"Raale-ArgentDawn", -- [5]
+			"", -- [4]
+			"Gorebane-Antonidas", -- [5]
 			"", -- [6]
-			26, -- [7]
-			4, -- [8]
-			"LookingForGroup", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			259, -- [11]
-			"Player-75-0ED01BA3", -- [12]
+			1970, -- [11]
+			"Player-84-0A37520F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Raale|r",
-			[51] = 1666664727,
-			[50] = "CHAT_MSG_CHANNEL",
+			[52] = "|cffc69b6dGorebane-Antonidas|r",
+			[51] = 1668703290,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [28]
 		{
-			"spread out around the boss", -- [1]
-			"Ðíablo-Illidan", -- [2]
+			"Thanks lol", -- [1]
+			"Maelyn-Drak'Tharon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Ðíablo", -- [5]
+			"Maelyn-Drak'Tharon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			268, -- [11]
-			"Player-57-0977500E", -- [12]
+			1976, -- [11]
+			"Player-127-0550518A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa22fc8Ðíablo-Illidan|r",
-			[51] = 1666664812,
-			[50] = "CHAT_MSG_RAID_WARNING",
+			[52] = "|cff3fc7ebMaelyn-Drak'Tharon|r",
+			[51] = 1668703293,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [29]
 		{
-			"overlap them", -- [1]
-			"Daxnil-Tichondrius", -- [2]
+			"will literally pay someone for one of these damn things lol", -- [1]
+			"Keyadrollan-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Daxnil-Tichondrius", -- [5]
+			"Keyadrollan-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			318, -- [11]
-			"Player-11-0E1EFD6E", -- [12]
+			1979, -- [11]
+			"Player-61-0E661BA2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffefefeDaxnil-Tichondrius|r",
-			[51] = 1666664957,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cff3fc7ebKeyadrollan-Zul'jin|r",
+			[51] = 1668703360,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [30]
 		{
-			"LUST", -- [1]
-			"Ðíablo-Illidan", -- [2]
+			"anyone have a group going?", -- [1]
+			"Broxigâr-Thrall", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Ðíablo", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Broxigâr-Thrall", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			1, -- [8]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			349, -- [11]
-			"Player-57-0977500E", -- [12]
+			2040, -- [11]
+			"Player-3678-0A4C80D3", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Ðíablo-Illidan|r",
-			[51] = 1666665169,
-			[50] = "CHAT_MSG_RAID_WARNING",
+			true, -- [17]
+			[52] = "|cffc69b6dBroxigâr-Thrall|r",
+			[51] = 1668703438,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [31]
 		{
-			"brez?", -- [1]
-			"Purrella-Area52", -- [2]
+			"[FIS] Interrupted Primalist Stormchanter's |cff71d5ff|Hspell:377765:0|h[Charged Gust]|h|r", -- [1]
+			"Wickedsfury-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Purrella-Area52", -- [5]
+			"Wickedsfury-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			356, -- [11]
-			"Player-3676-08D036D5", -- [12]
+			2074, -- [11]
+			"Player-3676-0A364372", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa22fc8Purrella-Area52|r",
-			[51] = 1666665148,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cffa330c9Wickedsfury-Area52|r",
+			[51] = 1668703409,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [32]
 		{
-			"Good Job", -- [1]
-			"Ðíablo-Illidan", -- [2]
+			"timer?", -- [1]
+			"Jaboris-Thrall", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Ðíablo", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Jaboris-Thrall", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			1, -- [8]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			375, -- [11]
-			"Player-57-0977500E", -- [12]
+			2077, -- [11]
+			"Player-3678-0CBEFE49", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Ðíablo-Illidan|r",
-			[51] = 1666665298,
-			[50] = "CHAT_MSG_RAID_WARNING",
+			true, -- [17]
+			[52] = "|cffff7c0aJaboris-Thrall|r",
+			[51] = 1668703413,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [33]
 		{
-			"gg everyone", -- [1]
-			"Cudlave-Velen", -- [2]
+			"how long ago was last boss?", -- [1]
+			"Farrah-BurningBlade", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Cudlave-Velen", -- [5]
+			"Farrah-BurningBlade", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			376, -- [11]
-			"Player-96-088A2F57", -- [12]
+			2082, -- [11]
+			"Player-104-0C754AC4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Cudlave-Velen|r",
-			[51] = 1666665298,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cff8788eeFarrah-BurningBlade|r",
+			[51] = 1668703478,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [34]
 		{
-			"anyone not need plate gear?", -- [1]
-			"Haastile-Zul'jin", -- [2]
+			"about 15-20 mins boss just went down", -- [1]
+			"Wrarrick-Thrall", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Haastile-Zul'jin", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Wrarrick-Thrall", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			1, -- [8]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			394, -- [11]
-			"Player-61-0E3DF692", -- [12]
+			2093, -- [11]
+			"Player-3678-0CE99C90", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Haastile-Zul'jin|r",
-			[51] = 1666665256,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			true, -- [17]
+			[52] = "|cffffffffWrarrick-Thrall|r",
+			[51] = 1668703496,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [35]
 		{
-			"tyg", -- [1]
-			"Daxnil-Tichondrius", -- [2]
+			"wa", -- [1]
+			"Jaboris-Thrall", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Daxnil-Tichondrius", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Jaboris-Thrall", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			1, -- [8]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			400, -- [11]
-			"Player-11-0E1EFD6E", -- [12]
+			2110, -- [11]
+			"Player-3678-0CBEFE49", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeDaxnil-Tichondrius|r",
-			[51] = 1666665262,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			true, -- [17]
+			[52] = "|cffff7c0aJaboris-Thrall|r",
+			[51] = 1668703456,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [36]
 		{
-			"sure if you dont need it", -- [1]
-			"Haastile-Zul'jin", -- [2]
-			"Orcish", -- [3]
+			"my day off", -- [1]
+			"Farrah-BurningBlade", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Haastile-Zul'jin", -- [5]
+			"Farrah-BurningBlade", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
-			1, -- [10]
-			406, -- [11]
-			"Player-61-0E3DF692", -- [12]
+			0, -- [10]
+			2134, -- [11]
+			"Player-104-0C754AC4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Haastile-Zul'jin|r",
-			[51] = 1666665270,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cff8788eeFarrah-BurningBlade|r",
+			[51] = 1668703472,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [37]
 		{
-			"i'll take any cloth", -- [1]
-			"Cudlave-Velen", -- [2]
+			"or at work", -- [1]
+			"Jaboris-Thrall", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Cudlave-Velen", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Jaboris-Thrall", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			1, -- [7]
+			1, -- [8]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			407, -- [11]
-			"Player-96-088A2F57", -- [12]
+			2136, -- [11]
+			"Player-3678-0CBEFE49", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Cudlave-Velen|r",
-			[51] = 1666665270,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			true, -- [17]
+			[52] = "|cffff7c0aJaboris-Thrall|r",
+			[51] = 1668703474,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [38]
 		{
-			"any rez?", -- [1]
-			"Remmy-Detheroc", -- [2]
+			"does being in the raid mess up the loot drops?", -- [1]
+			"Gorebane-Antonidas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Remmy-Detheroc", -- [5]
+			"Gorebane-Antonidas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			410, -- [11]
-			"Player-154-0B15F250", -- [12]
+			2193, -- [11]
+			"Player-84-0A37520F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Remmy-Detheroc|r",
-			[51] = 1666665272,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cffc69b6dGorebane-Antonidas|r",
+			[51] = 1668703603,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [39]
 		{
-			"I was looking for gear ", -- [1]
-			"Haastile-Zul'jin", -- [2]
+			"[FIS] Interrupted Primalist Stormslinger's |cff71d5ff|Hspell:389274:0|h[Lightning Surge]|h|r", -- [1]
+			"Wickedsfury-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Haastile-Zul'jin", -- [5]
+			"Wickedsfury-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			413, -- [11]
-			"Player-61-0E3DF692", -- [12]
+			2313, -- [11]
+			"Player-3676-0A364372", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Haastile-Zul'jin|r",
-			[51] = 1666665345,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cffa330c9Wickedsfury-Area52|r",
+			[51] = 1668703683,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [40]
 		{
-			"aww...tyvvm", -- [1]
-			"Remmy-Detheroc", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:15218:Player-75-08BCA765:1:11:17:22:4294967295:4294967295:4294967295:4294967295|h[WoW's 18th Anniversary]|h|r!", -- [1]
+			"Jeltheleez-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Remmy-Detheroc", -- [5]
+			"Jeltheleez-TheScryers", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			414, -- [11]
-			"Player-154-0B15F250", -- [12]
+			2328, -- [11]
+			"Player-75-08BCA765", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Remmy-Detheroc|r",
-			[51] = 1666665347,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cff8788eeJeltheleez-TheScryers|r",
+			[51] = 1668703704,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [41]
 		{
-			"don't have anything", -- [1]
-			"Haastile-Zul'jin", -- [2]
+			"[FIS] Interrupted Primalist Stormslinger's |cff71d5ff|Hspell:389274:0|h[Lightning Surge]|h|r", -- [1]
+			"Wickedsfury-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Haastile-Zul'jin", -- [5]
+			"Wickedsfury-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			415, -- [11]
-			"Player-61-0E3DF692", -- [12]
+			2360, -- [11]
+			"Player-3676-0A364372", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Haastile-Zul'jin|r",
-			[51] = 1666665350,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cffa330c9Wickedsfury-Area52|r",
+			[51] = 1668703799,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [42]
 		{
-			"ahh lol", -- [1]
-			"Haastile-Zul'jin", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Haastile-Zul'jin", -- [5]
+			"t - 10 min", -- [1]
+			"Nofacegirl-Thrall", -- [2]
+			"", -- [3]
+			"1. General - Un'Goro Crater", -- [4]
+			"Nofacegirl-Thrall", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			1, -- [10]
-			418, -- [11]
-			"Player-61-0E3DF692", -- [12]
+			1, -- [7]
+			1, -- [8]
+			"General - Un'Goro Crater", -- [9]
+			0, -- [10]
+			2376, -- [11]
+			"Player-3678-0D39B8CB", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Haastile-Zul'jin|r",
-			[51] = 1666665355,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			true, -- [17]
+			[52] = "|cfffff468Nofacegirl-Thrall|r",
+			[51] = 1668703762,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [43]
 		{
-			"yw", -- [1]
-			"Cudlave-Velen", -- [2]
+			"[FIS] Interrupted Air Revenant's |cff71d5ff|Hspell:397109:0|h[Hurricane Blast]|h|r", -- [1]
+			"Wickedsfury-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Cudlave-Velen", -- [5]
+			"Wickedsfury-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			419, -- [11]
-			"Player-96-088A2F57", -- [12]
+			2404, -- [11]
+			"Player-3676-0A364372", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Cudlave-Velen|r",
-			[51] = 1666665355,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cffa330c9Wickedsfury-Area52|r",
+			[51] = 1668703850,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [44]
 		{
-			"come help with otaris if you can, pleae", -- [1]
-			"Hazarôd-ArgentDawn", -- [2]
+			"|cffff80ff|Houtfit:)=6&wQ0ME'sl&&&1;O&wO'a[&wP<P?1bJ5_A5_A&E-&E-&&&&&&|h[|T1598183:13:13:-1:0|tOutfit]|h|r", -- [1]
+			"Shãmwhoã-Thrall", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Hazarôd-ArgentDawn", -- [5]
+			"", -- [4]
+			"Shãmwhoã-Thrall", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			431, -- [11]
-			"Player-75-0E6EC1CD", -- [12]
+			2425, -- [11]
+			"Player-3678-0D55ED5D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Hazarôd|r",
-			[51] = 1666665702,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cff0070ddShãmwhoã-Thrall|r",
+			[51] = 1668703815,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [45]
 		{
-			"omw", -- [1]
-			"Nätasha-TheScryers", -- [2]
+			"[FIS] Interrupted Primalist Galewarden's |cff71d5ff|Hspell:386745:0|h[Imprison]|h|r", -- [1]
+			"Wickedsfury-Area52", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Nätasha-TheScryers", -- [5]
+			"", -- [4]
+			"Wickedsfury-Area52", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			433, -- [11]
-			"Player-75-0EC5915D", -- [12]
+			2466, -- [11]
+			"Player-3676-0A364372", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Nätasha-TheScryers|r",
-			[51] = 1666665690,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffa330c9Wickedsfury-Area52|r",
+			[51] = 1668703866,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [46]
 		{
-			"plenty of time,still working on fred and barney", -- [1]
-			"Hazarôd-ArgentDawn", -- [2]
+			"[FIS] Interrupted Primalist Stormslinger's |cff71d5ff|Hspell:389274:0|h[Lightning Surge]|h|r", -- [1]
+			"Wickedsfury-Area52", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Hazarôd-ArgentDawn", -- [5]
+			"", -- [4]
+			"Wickedsfury-Area52", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			434, -- [11]
-			"Player-75-0E6EC1CD", -- [12]
+			2469, -- [11]
+			"Player-3676-0A364372", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Hazarôd|r",
-			[51] = 1666665771,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffa330c9Wickedsfury-Area52|r",
+			[51] = 1668703883,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [47]
 		{
-			"you know, no matter how hard life gets, as long as I can blow up some chickens on a regular basis, everything is good", -- [1]
-			"Hazarôd-ArgentDawn", -- [2]
+			"so is the leveling exp for this legion good or just eh?", -- [1]
+			"Thexal-Thrall", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Hazarôd-ArgentDawn", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Thexal-Thrall", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			456, -- [11]
-			"Player-75-0E6EC1CD", -- [12]
+			2474, -- [11]
+			"Player-3678-0D5F6A51", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffa9d271Hazarôd|r",
-			[51] = 1666665933,
+			[52] = "|cff33937fThexal-Thrall|r",
+			[51] = 1668703894,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [48]
 		{
-			"Chitali the Eldest 100.00% ~(49.53, 69.42) |cffffff00|Hworldmap:1970:4953:6942|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"I leveled yesterday from 52 - 60 in under 90 minutes so I think it was decent.", -- [1]
+			"Faelaestra-Thrall", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Faelaestra-Thrall", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			531, -- [11]
-			"Player-75-058380E2", -- [12]
+			2504, -- [11]
+			"Player-3678-0BDB541D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1666666484,
+			[52] = "|cfffff468Faelaestra-Thrall|r",
+			[51] = 1668703930,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [49]
 		{
-			"Tethos 54 72", -- [1]
-			"Cudgel-KirinTor", -- [2]
+			"just grinding these events?", -- [1]
+			"Jaboris-Thrall", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Cudgel-KirinTor", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Jaboris-Thrall", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			627, -- [11]
-			"Player-1071-00EEC01D", -- [12]
+			2534, -- [11]
+			"Player-3678-0CBEFE49", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cfffe7b09Cudgel-KirinTor|r",
-			[51] = 1666667357,
+			[52] = "|cffff7c0aJaboris-Thrall|r",
+			[51] = 1668704020,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [50]
 		{
-			"protectors up", -- [1]
-			"Kalinin-EarthenRing", -- [2]
+			"when's the boss coming?", -- [1]
+			"Keyadrollan-Zul'jin", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Kalinin-EarthenRing", -- [5]
+			"", -- [4]
+			"Keyadrollan-Zul'jin", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			646, -- [11]
-			"Player-100-08D69379", -- [12]
+			2539, -- [11]
+			"Player-61-0E661BA2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Kalinin-EarthenRing|r",
-			[51] = 1666667504,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cff3fc7ebKeyadrollan-Zul'jin|r",
+			[51] = 1668704022,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [51]
 		{
-			"Protector of the First Ones 80.82% ~(39.29, 26.97) |cffffff00|Hworldmap:1970:3929:2697|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"kinda figured, i know legion prepatch was nuts but someone was asking about it earlier and i havent heard", -- [1]
+			"Thexal-Thrall", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Thexal-Thrall", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			661, -- [11]
-			"Player-75-058380E2", -- [12]
+			2540, -- [11]
+			"Player-3678-0D5F6A51", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1666667651,
+			[52] = "|cff33937fThexal-Thrall|r",
+			[51] = 1668704023,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [52]
 		{
-			"Shifting Stargorger 99.95% ~(41.93, 21.62) |cffffff00|Hworldmap:1970:4193:2162|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"yep, events and only by tagging the elites", -- [1]
+			"Faelaestra-Thrall", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Faelaestra-Thrall", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			668, -- [11]
-			"Player-75-058380E2", -- [12]
+			2565, -- [11]
+			"Player-3678-0BDB541D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1666667726,
+			[52] = "|cfffff468Faelaestra-Thrall|r",
+			[51] = 1668703987,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [53]
 		{
-			"Tahkwitz 100.00% ~(47.82, 36.6) |cffffff00|Hworldmap:1970:4782:3660|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"hes coooming", -- [1]
+			"Shãmwhoã-Thrall", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [4]
+			"Shãmwhoã-Thrall", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			680, -- [11]
-			"Player-75-058380E2", -- [12]
+			2590, -- [11]
+			"Player-3678-0D55ED5D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1666667827,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cff0070ddShãmwhoã-Thrall|r",
+			[51] = 1668703999,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [54]
 		{
-			"Corrupted Architect 100.00% ~(47.99, 62.17) |cffffff00|Hworldmap:1970:4799:6217|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"6 min", -- [1]
+			"Nofacegirl-Thrall", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Nofacegirl-Thrall", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			681, -- [11]
-			"Player-75-058380E2", -- [12]
+			2596, -- [11]
+			"Player-3678-0D39B8CB", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1666667920,
+			[52] = "|cfffff468Nofacegirl-Thrall|r",
+			[51] = 1668704005,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [55]
 		{
-			"Destabilized Core 97.99% ~(53.6, 44.41) |cffffff00|Hworldmap:1970:5360:4441|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"[FIS] Interrupted Air Revenant's |cff71d5ff|Hspell:397109:0|h[Hurricane Blast]|h|r", -- [1]
+			"Wickedsfury-Area52", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [4]
+			"Wickedsfury-Area52", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			694, -- [11]
-			"Player-75-058380E2", -- [12]
+			2597, -- [11]
+			"Player-3676-0A364372", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1666667971,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffa330c9Wickedsfury-Area52|r",
+			[51] = 1668704006,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [56]
 		{
-			"Tahkwitz 5.27% ~(49.78, 40.54) |cffffff00|Hworldmap:1970:4978:4054|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"the fire one glitched and spawned twice lol", -- [1]
+			"Magfed-Thrall", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Magfed-Thrall", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			702, -- [11]
-			"Player-75-058380E2", -- [12]
+			2613, -- [11]
+			"Player-3678-0D5C5B5D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1666668356,
+			[52] = "|cffc69b6dMagfed-Thrall|r",
+			[51] = 1668704016,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [57]
 		{
-			"Mother Phestis 100.00% ~(54.58, 36.79) |cffffff00|Hworldmap:1970:5457:3679|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"[FIS] Interrupted Primalist Stormchanter's |cff71d5ff|Hspell:377765:0|h[Charged Gust]|h|r", -- [1]
+			"Wickedsfury-Area52", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [4]
+			"Wickedsfury-Area52", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			712, -- [11]
-			"Player-75-058380E2", -- [12]
+			2622, -- [11]
+			"Player-3676-0A364372", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1666668331,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffa330c9Wickedsfury-Area52|r",
+			[51] = 1668704090,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [58]
 		{
-			"Otaris the Provoked 4.00% ~(58.57, 39.34) |cffffff00|Hworldmap:1970:5856:3934|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"oh shit, i just realized i have no idea what the evoker dance emote looks like", -- [1]
+			"Thexal-Thrall", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Thexal-Thrall", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			726, -- [11]
-			"Player-75-058380E2", -- [12]
+			2646, -- [11]
+			"Player-3678-0D5F6A51", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1666668640,
+			[52] = "|cff33937fThexal-Thrall|r",
+			[51] = 1668704047,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [59]
 		{
-			"Feasting 100.00% ~(61.11, 50.89) |cffffff00|Hworldmap:1970:6111:5089|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"Interrupted Primalist Galewarden's |cff71d5ff|Hspell:391939:0|h[Shocking Touch]|h|r!", -- [1]
+			"Vyspera-WyrmrestAccord", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [4]
+			"Vyspera-WyrmrestAccord", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			750, -- [11]
-			"Player-75-058380E2", -- [12]
+			2661, -- [11]
+			"Player-1171-0A840CDD", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1666668867,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffaad372Vyspera-WyrmrestAccord|r",
+			[51] = 1668704060,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [60]
 		{
-			"Zatojin (1.31m/1.31m 100.00%) 43.12 32.94 |cffffff00|Hworldmap:1970:4311:3293|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Lárx-EarthenRing", -- [2]
+			"oh shit", -- [1]
+			"Nofacegirl-Thrall", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Lárx-EarthenRing", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Nofacegirl-Thrall", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			767, -- [11]
-			"Player-100-08CF4159", -- [12]
+			2664, -- [11]
+			"Player-3678-0D39B8CB", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffa22fc8Lárx-EarthenRing|r",
-			[51] = 1666669066,
+			[52] = "|cfffff468Nofacegirl-Thrall|r",
+			[51] = 1668704061,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [61]
 		{
-			"Garudeon (1.31m/1.31m 100.00%) 68.12 38.09 |cffffff00|Hworldmap:1970:6811:3808|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Lárx-EarthenRing", -- [2]
+			"oh shit", -- [1]
+			"Edrockss-Thrall", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Lárx-EarthenRing", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Edrockss-Thrall", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			788, -- [11]
-			"Player-100-08CF4159", -- [12]
+			2671, -- [11]
+			"Player-3678-0D5F88AF", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffa22fc8Lárx-EarthenRing|r",
-			[51] = 1666669379,
+			[52] = "|cff33937fEdrockss-Thrall|r",
+			[51] = 1668704072,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [62]
 		{
-			"Garudeon 100.00% ~(68.03, 37.48) |cffffff00|Hworldmap:1970:6803:3748|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"[FIS] Interrupted Primalist Stormslinger's |cff71d5ff|Hspell:390361:0|h[Lightning Crash]|h|r", -- [1]
+			"Wickedsfury-Area52", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [4]
+			"Wickedsfury-Area52", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			789, -- [11]
-			"Player-75-058380E2", -- [12]
+			2673, -- [11]
+			"Player-3676-0A364372", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1666669338,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffa330c9Wickedsfury-Area52|r",
+			[51] = 1668704075,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [63]
 		{
-			"Zatojin 100.00% ~(43.8, 31.7) |cffffff00|Hworldmap:1970:4380:3170|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"oh shit", -- [1]
+			"Magfed-Thrall", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Magfed-Thrall", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			49, -- [11]
-			"Player-75-058380E2", -- [12]
+			2678, -- [11]
+			"Player-3678-0D5C5B5D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1666701606,
+			[52] = "|cffc69b6dMagfed-Thrall|r",
+			[51] = 1668704138,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [64]
 		{
-			"Zatojin 100.00% ~(43.89, 33.01) |cffffff00|Hworldmap:1970:4389:3301|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"right?", -- [1]
+			"Thexal-Thrall", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Thexal-Thrall", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			52, -- [11]
-			"Player-75-058380E2", -- [12]
+			2682, -- [11]
+			"Player-3678-0D5F6A51", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1666702067,
+			[52] = "|cff33937fThexal-Thrall|r",
+			[51] = 1668704140,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [65]
 		{
-			"about rready to pull Mother Phestis", -- [1]
-			"Antimatter-EarthenRing", -- [2]
+			"crank dat soulja boy", -- [1]
+			"Jukebõx-Thrall", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Antimatter-EarthenRing", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Jukebõx-Thrall", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			1, -- [11]
-			"Player-100-08CF8F2E", -- [12]
+			2687, -- [11]
+			"Player-3678-09DD5B8D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffa330c9Antimatter-EarthenRing|r",
-			[51] = 1666835423,
+			[52] = "|cfffff468Jukebõx-Thrall|r",
+			[51] = 1668704145,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [66]
 		{
-			"one sec bio", -- [1]
-			"Serato-Illidan", -- [2]
+			"[FIS] Interrupted Primalist Galewarden's |cff71d5ff|Hspell:386745:0|h[Imprison]|h|r", -- [1]
+			"Wickedsfury-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Serato-Illidan", -- [5]
+			"Wickedsfury-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			31, -- [11]
-			"Player-57-0D58B1D0", -- [12]
+			2709, -- [11]
+			"Player-3676-0A364372", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaSerato-Illidan|r",
-			[51] = 1666836458,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cffa330c9Wickedsfury-Area52|r",
+			[51] = 1668704105,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [67]
 		{
-			"ok coming", -- [1]
-			"Serato-Illidan", -- [2]
+			"[FIS] Interrupted Air Revenant's |cff71d5ff|Hspell:397109:0|h[Hurricane Blast]|h|r", -- [1]
+			"Wickedsfury-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Serato-Illidan", -- [5]
+			"Wickedsfury-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			43, -- [11]
-			"Player-57-0D58B1D0", -- [12]
+			2740, -- [11]
+			"Player-3676-0A364372", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaSerato-Illidan|r",
-			[51] = 1666836532,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cffa330c9Wickedsfury-Area52|r",
+			[51] = 1668704202,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [68]
 		{
-			"Corrupted Architect 100.00% ~(47.47, 63.05) |cffffff00|Hworldmap:1970:4747:6305|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"[FIS] Interrupted Primalist Stormslinger's |cff71d5ff|Hspell:389274:0|h[Lightning Surge]|h|r", -- [1]
+			"Wickedsfury-Area52", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [4]
+			"Wickedsfury-Area52", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			1290, -- [11]
-			"Player-75-058380E2", -- [12]
+			2776, -- [11]
+			"Player-3676-0A364372", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1666843351,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffa330c9Wickedsfury-Area52|r",
+			[51] = 1668704183,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [69]
 		{
-			"pull hirukon come kill", -- [1]
-			"Tirnz-TheScryers", -- [2]
+			"is there a raid group?", -- [1]
+			"Magfed-Thrall", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Tirnz-TheScryers", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Magfed-Thrall", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			1517, -- [11]
-			"Player-75-08C9A0C8", -- [12]
+			2803, -- [11]
+			"Player-3678-0D5C5B5D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffc41e3aTirnz-TheScryers|r",
-			[51] = 1666845393,
+			[52] = "|cffc69b6dMagfed-Thrall|r",
+			[51] = 1668704261,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [70]
 		{
-			"Otaris the Provoked 1.00% ~(58.67, 38.13) |cffffff00|Hworldmap:1970:5867:3813|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"gotta love this instance server, i only see 1 aliance here", -- [1]
+			"Nofacegirl-Thrall", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Nofacegirl-Thrall", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			1542, -- [11]
-			"Player-75-058380E2", -- [12]
+			2810, -- [11]
+			"Player-3678-0D39B8CB", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1666845516,
+			[52] = "|cfffff468Nofacegirl-Thrall|r",
+			[51] = 1668704271,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [71]
 		{
-			"protector of the first ones up |cffffff00|Hworldmap:1970:3988:2675|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Fangarang-ArgentDawn", -- [2]
+			"boss popping soon", -- [1]
+			"Wrarrick-Thrall", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Fangarang-ArgentDawn", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Wrarrick-Thrall", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			1609, -- [11]
-			"Player-75-0BA86331", -- [12]
+			2812, -- [11]
+			"Player-3678-0CE99C90", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffaad372Fangarang|r",
-			[51] = 1666846098,
+			[52] = "|cffffffffWrarrick-Thrall|r",
+			[51] = 1668704275,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [72]
 		{
-			"Akkaris 100.00% ~(63.22, 33.18) |cffffff00|Hworldmap:1970:6322:3318|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"your name is classic", -- [1]
+			"Shãmwhoã-Thrall", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Shãmwhoã-Thrall", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			1635, -- [11]
-			"Player-75-058380E2", -- [12]
+			2820, -- [11]
+			"Player-3678-0D55ED5D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1666846270,
+			[52] = "|cff0070ddShãmwhoã-Thrall|r",
+			[51] = 1668704223,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [73]
 		{
-			"Akkaris 34.41% ~(64.68, 33.58) |cffffff00|Hworldmap:1970:6468:3358|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"2 min", -- [1]
+			"Nofacegirl-Thrall", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Nofacegirl-Thrall", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			1650, -- [11]
-			"Player-75-058380E2", -- [12]
+			2825, -- [11]
+			"Player-3678-0D39B8CB", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1666846553,
+			[52] = "|cfffff468Nofacegirl-Thrall|r",
+			[51] = 1668704228,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [74]
 		{
-			"Garudeon 100.00% ~(67.89, 37.56) |cffffff00|Hworldmap:1970:6789:3756|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"nao", -- [1]
+			"Nofacegirl-Thrall", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Nofacegirl-Thrall", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			1674, -- [11]
-			"Player-75-058380E2", -- [12]
+			2946, -- [11]
+			"Player-3678-0D39B8CB", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1666846799,
+			[52] = "|cfffff468Nofacegirl-Thrall|r",
+			[51] = 1668704349,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [75]
 		{
-			"destabilized core up |cffffff00|Hworldmap:1970:5298:4375|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Fangarang-ArgentDawn", -- [2]
+			"boss up", -- [1]
+			"Wrarrick-Thrall", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Fangarang-ArgentDawn", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Wrarrick-Thrall", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			1694, -- [11]
-			"Player-75-0BA86331", -- [12]
+			2960, -- [11]
+			"Player-3678-0CE99C90", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffaad372Fangarang|r",
-			[51] = 1666846955,
+			[52] = "|cffffffffWrarrick-Thrall|r",
+			[51] = 1668704377,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [76]
 		{
-			"Shifting Stargorger up at |cffffff00|Hworldmap:1970:4237:2144|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Fangarang-ArgentDawn", -- [2]
-			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Fangarang-ArgentDawn", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Zereth Mortis", -- [9]
-			0, -- [10]
-			1714, -- [11]
-			"Player-75-0BA86331", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffaad372Fangarang|r",
-			[51] = 1666847197,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:15406:Player-75-058380E2:1:10:26:22:4294967295:4294967295:4294967295:4294967295|h[Synthesized!]|h|r!", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"[FIS] Interrupted Primalist Stormslinger's |cff71d5ff|Hspell:390361:0|h[Lightning Crash]|h|r", -- [1]
+			"Wickedsfury-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Wickedsfury-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1806, -- [11]
-			"Player-75-058380E2", -- [12]
+			3114, -- [11]
+			"Player-3676-0A364372", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1666848172,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[52] = "|cffa330c9Wickedsfury-Area52|r",
+			[51] = 1668704568,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [77]
+		{
+			"any extra???", -- [1]
+			"Keyadrollan-Zul'jin", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Keyadrollan-Zul'jin", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			3284, -- [11]
+			"Player-61-0E661BA2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc7ebKeyadrollan-Zul'jin|r",
+			[51] = 1668704604,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [78]
 		{
-			"Mother Phestis 100.00% ~(54.92, 33.87) |cffffff00|Hworldmap:1970:5492:3387|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Rieed-KirinTor", -- [2]
+			"anyone need the trinket part", -- [1]
+			"Hiragana-Thrall", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Rieed-KirinTor", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Hiragana-Thrall", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			5, -- [11]
-			"Player-1071-04157C15", -- [12]
+			3313, -- [11]
+			"Player-3678-0D012868", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cff8788eeRieed-KirinTor|r",
-			[51] = 1666899259,
+			[52] = "|cff3fc7ebHiragana-Thrall|r",
+			[51] = 1668704610,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [79]
 		{
-			"Hadeon the Stonebreaker 100.00% ~(52.59, 26.1) |cffffff00|Hworldmap:1970:5259:2610|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Rieed-KirinTor", -- [2]
+			"5 times in a row no item ", -- [1]
+			"Broxigâr-Thrall", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Rieed-KirinTor", -- [5]
+			"1. General - Un'Goro Crater", -- [4]
+			"Broxigâr-Thrall", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			"General - Un'Goro Crater", -- [9]
 			0, -- [10]
-			34, -- [11]
-			"Player-1071-04157C15", -- [12]
+			3314, -- [11]
+			"Player-3678-0A4C80D3", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cff8788eeRieed-KirinTor|r",
-			[51] = 1666899661,
+			[52] = "|cffc69b6dBroxigâr-Thrall|r",
+			[51] = 1668704611,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [80]
 		{
-			"Feasting up at |cffffff00|Hworldmap:1970:6188:6255|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Fangarang-ArgentDawn", -- [2]
+			"wtf", -- [1]
+			"Broxigâr-Thrall", -- [2]
+			"", -- [3]
+			"1. General - Un'Goro Crater", -- [4]
+			"Broxigâr-Thrall", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Un'Goro Crater", -- [9]
+			0, -- [10]
+			3316, -- [11]
+			"Player-3678-0A4C80D3", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc69b6dBroxigâr-Thrall|r",
+			[51] = 1668704612,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [81]
+		{
+			"i need one", -- [1]
+			"Keyadrollan-Zul'jin", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Keyadrollan-Zul'jin", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			3317, -- [11]
+			"Player-61-0E661BA2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc7ebKeyadrollan-Zul'jin|r",
+			[51] = 1668704612,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [82]
+		{
+			"|cff0070dd|Hitem:199838::::::::60:1467::::1:28:2425:::::|h[Dimmed Primeval Storm]|h|r anyone need?", -- [1]
+			"Stratisfiedd-Thrall", -- [2]
+			"", -- [3]
+			"1. General - Un'Goro Crater", -- [4]
+			"Stratisfiedd-Thrall", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Un'Goro Crater", -- [9]
+			0, -- [10]
+			3319, -- [11]
+			"Player-3678-0D5E5298", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff33937fStratisfiedd-Thrall|r",
+			[51] = 1668704613,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [83]
+		{
+			"would love it", -- [1]
+			"Lightntusk-Thrall", -- [2]
+			"", -- [3]
+			"1. General - Un'Goro Crater", -- [4]
+			"Lightntusk-Thrall", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Un'Goro Crater", -- [9]
+			0, -- [10]
+			3343, -- [11]
+			"Player-3678-0BA4A20B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff0070ddLightntusk-Thrall|r",
+			[51] = 1668704682,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [84]
+		{
+			"i need", -- [1]
+			"Zolto-Thrall", -- [2]
+			"", -- [3]
+			"1. General - Un'Goro Crater", -- [4]
+			"Zolto-Thrall", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Un'Goro Crater", -- [9]
+			0, -- [10]
+			3345, -- [11]
+			"Player-3678-0B59862F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffaad372Zolto-Thrall|r",
+			[51] = 1668704683,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [85]
+		{
+			"ae", -- [1]
+			"Llevatelo-Sargeras", -- [2]
 			"", -- [3]
 			"1. General - Zereth Mortis", -- [4]
-			"Fangarang-ArgentDawn", -- [5]
+			"Llevatelo-Sargeras", -- [5]
 			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Zereth Mortis", -- [9]
+			0, -- [10]
+			10, -- [11]
+			"Player-76-0B73F855", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffff7c0aLlevatelo-Sargeras|r",
+			[51] = 1668731262,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [86]
+		{
+			"Hirukon in like 2 mins", -- [1]
+			"Tizaria-ArgentDawn", -- [2]
+			"", -- [3]
+			"1. General - Zereth Mortis", -- [4]
+			"Tizaria-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Zereth Mortis", -- [9]
+			0, -- [10]
+			15, -- [11]
+			"Player-75-0080811A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffffffffTizaria|r",
+			[51] = 1668731819,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [87]
+		{
+			"come get your new dragon a yellow sward", -- [1]
+			"Tizaria-ArgentDawn", -- [2]
+			"", -- [3]
+			"1. General - Zereth Mortis", -- [4]
+			"Tizaria-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Zereth Mortis", -- [9]
+			0, -- [10]
+			16, -- [11]
+			"Player-75-0080811A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffffffffTizaria|r",
+			[51] = 1668731908,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [88]
+		{
+			"ae", -- [1]
+			"Llevatelo-Sargeras", -- [2]
+			"", -- [3]
+			"1. General - Zereth Mortis", -- [4]
+			"Llevatelo-Sargeras", -- [5]
+			"AFK", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Zereth Mortis", -- [9]
+			0, -- [10]
+			103, -- [11]
+			"Player-76-0B73F855", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffff7c0aLlevatelo-Sargeras|r",
+			[51] = 1668732873,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [89]
+		{
+			"Corrupted Architect 13.20% ~(47.49, 62.41) |cffffff00|Hworldmap:1970:4749:6241|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"1. General - Zereth Mortis", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Zereth Mortis", -- [9]
+			0, -- [10]
+			149, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1668733226,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [90]
+		{
+			"ae", -- [1]
+			"Llevatelo-Sargeras", -- [2]
+			"", -- [3]
+			"1. General - Zereth Mortis", -- [4]
+			"Llevatelo-Sargeras", -- [5]
+			"AFK", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Zereth Mortis", -- [9]
+			0, -- [10]
+			165, -- [11]
+			"Player-76-0B73F855", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffff7c0aLlevatelo-Sargeras|r",
+			[51] = 1668733376,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [91]
+		{
+			"♥", -- [1]
+			"Llevatelo-Sargeras", -- [2]
+			"", -- [3]
+			"1. General - Zereth Mortis", -- [4]
+			"Llevatelo-Sargeras", -- [5]
+			"AFK", -- [6]
 			1, -- [7]
 			1, -- [8]
 			"General - Zereth Mortis", -- [9]
 			0, -- [10]
 			166, -- [11]
-			"Player-75-0BA86331", -- [12]
+			"Player-76-0B73F855", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffaad372Fangarang|r",
-			[51] = 1666900848,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
-		{
-			"Akkaris 100.00% ~(64.34, 34.65) |cffffff00|Hworldmap:1970:6434:3465|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Rieed-KirinTor", -- [2]
-			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Rieed-KirinTor", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Zereth Mortis", -- [9]
-			0, -- [10]
-			172, -- [11]
-			"Player-1071-04157C15", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8788eeRieed-KirinTor|r",
-			[51] = 1666900909,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
-		{
-			"Garudeon 100.00% ~(68.54, 38.08) |cffffff00|Hworldmap:1970:6854:3808|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Rieed-KirinTor", -- [2]
-			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Rieed-KirinTor", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Zereth Mortis", -- [9]
-			0, -- [10]
-			178, -- [11]
-			"Player-1071-04157C15", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8788eeRieed-KirinTor|r",
-			[51] = 1666900976,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
-		{
-			"Zatojin 100.00% ~(43.06, 32.99) |cffffff00|Hworldmap:1970:4306:3299|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Kilektor-Hyjal", -- [2]
-			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Kilektor-Hyjal", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Zereth Mortis", -- [9]
-			0, -- [10]
-			194, -- [11]
-			"Player-3661-072ADD3B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc69b6dKilektor-Hyjal|r",
-			[51] = 1666901096,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
-		{
-			"Zatojin (1.50m/1.50m 100.00%) 43.06 32.99 |cffffff00|Hworldmap:1970:4305:3298|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Kilektor-Hyjal", -- [2]
-			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Kilektor-Hyjal", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Zereth Mortis", -- [9]
-			0, -- [10]
-			199, -- [11]
-			"Player-3661-072ADD3B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc69b6dKilektor-Hyjal|r",
-			[51] = 1666901049,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
-		{
-			"Tahkwitz 100.00% ~(49.58, 40.22) |cffffff00|Hworldmap:1970:4958:4022|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Kilektor-Hyjal", -- [2]
-			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Kilektor-Hyjal", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Zereth Mortis", -- [9]
-			0, -- [10]
-			227, -- [11]
-			"Player-3661-072ADD3B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc69b6dKilektor-Hyjal|r",
-			[51] = 1666901231,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
-		{
-			"Otaris the Provoked 100.00% ~(58.65, 39.15) |cffffff00|Hworldmap:1970:5865:3915|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Rieed-KirinTor", -- [2]
-			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Rieed-KirinTor", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Zereth Mortis", -- [9]
-			0, -- [10]
-			300, -- [11]
-			"Player-1071-04157C15", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8788eeRieed-KirinTor|r",
-			[51] = 1666901369,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
-		{
-			"Otiosen 100.00% ~(43.65, 87.97) |cffffff00|Hworldmap:1970:4365:8797|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Zereth Mortis", -- [9]
-			0, -- [10]
-			303, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1666901443,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
-		{
-			"Corrupted Architect 100.00% ~(47.42, 63.89) |cffffff00|Hworldmap:1970:4742:6389|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Wiggles-TheScryers", -- [2]
-			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Wiggles-TheScryers", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Zereth Mortis", -- [9]
-			0, -- [10]
-			346, -- [11]
-			"Player-75-0ED46F87", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa330c9Wiggles-TheScryers|r",
-			[51] = 1666901825,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
-		{
-			"Corrupted Architect 98.35% ~(47.42, 62.29) |cffffff00|Hworldmap:1970:4742:6229|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Zereth Mortis", -- [9]
-			0, -- [10]
-			380, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1666902114,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
-		{
-			"Furidian up", -- [1]
-			"Krymsyn-EarthenRing", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Zereth Mortis", -- [4]
-			"Krymsyn-EarthenRing", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Zereth Mortis", -- [9]
-			0, -- [10]
-			451, -- [11]
-			"Player-100-0DEC255C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffff468Krymsyn-EarthenRing|r",
-			[51] = 1666902838,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
-		{
-			"|cffffff00|Hworldmap:1970:6453:5841|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Krymsyn-EarthenRing", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Zereth Mortis", -- [4]
-			"Krymsyn-EarthenRing", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Zereth Mortis", -- [9]
-			0, -- [10]
-			453, -- [11]
-			"Player-100-0DEC255C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffff468Krymsyn-EarthenRing|r",
-			[51] = 1666902805,
+			[52] = "|cffff7c0aLlevatelo-Sargeras|r",
+			[51] = 1668733378,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [92]
 		{
-			"Gluttonous Overgrowth 99.95% ~(53.31, 92.84) |cffffff00|Hworldmap:1970:5331:9284|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Rieed-KirinTor", -- [2]
+			"gracias", -- [1]
+			"Hectorceron-Quel'Thalas", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Rieed-KirinTor", -- [5]
+			"", -- [4]
+			"Hectorceron-Quel'Thalas", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			472, -- [11]
-			"Player-1071-04157C15", -- [12]
+			281, -- [11]
+			"Player-1428-053E1F04", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8788eeRieed-KirinTor|r",
-			[51] = 1666903134,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cff0070ddHectorceron-Quel'Thalas|r",
+			[51] = 1668733551,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [93]
 		{
-			"Feasting 100.00% ~(62.98, 59.97) |cffffff00|Hworldmap:1970:6298:5996|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Wiggles-TheScryers", -- [2]
+			"ty", -- [1]
+			"Chaotica-Sentinels", -- [2]
 			"", -- [3]
-			"1. General - Zereth Mortis", -- [4]
-			"Wiggles-TheScryers", -- [5]
+			"", -- [4]
+			"Chaotica-Sentinels", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Zereth Mortis", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			473, -- [11]
-			"Player-75-0ED46F87", -- [12]
+			293, -- [11]
+			"Player-1071-095EBF3D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa330c9Wiggles-TheScryers|r",
-			[51] = 1666903191,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffa330c9Chaotica-Sentinels|r",
+			[51] = 1668733557,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [94]
 		{
-			"otiosen also up for anyone at overgrowth now", -- [1]
-			"Fangarang-ArgentDawn", -- [2]
+			"Chitali the Eldest 100.00% ~(49.6, 68.16) |cffffff00|Hworldmap:1970:4960:6815|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"1. General - Zereth Mortis", -- [4]
-			"Fangarang-ArgentDawn", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
 			"General - Zereth Mortis", -- [9]
 			0, -- [10]
-			474, -- [11]
-			"Player-75-0BA86331", -- [12]
+			319, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffaad372Fangarang|r",
-			[51] = 1666903199,
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1668733745,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [95]
 		{
-			"Otiosen 100.00% ~(43.74, 87.92) |cffffff00|Hworldmap:1970:4374:8792|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Mekahna-KirinTor", -- [2]
+			"Vexis 99.22% ~(39.56, 57.31) |cffffff00|Hworldmap:1970:3956:5730|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"1. General - Zereth Mortis", -- [4]
-			"Mekahna-KirinTor", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
 			"General - Zereth Mortis", -- [9]
 			0, -- [10]
-			475, -- [11]
-			"Player-1071-0D212F1D", -- [12]
+			338, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffc69b6dMekahna-KirinTor|r",
-			[51] = 1666903311,
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1668733928,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [96]
 		{
-			"Otiosen |cffffff00|Hworldmap:1970:4399:8895|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Fangarang-ArgentDawn", -- [2]
+			"otaris is up", -- [1]
+			"Tyrgosa-KirinTor", -- [2]
 			"", -- [3]
 			"1. General - Zereth Mortis", -- [4]
-			"Fangarang-ArgentDawn", -- [5]
+			"Tyrgosa-KirinTor", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
 			"General - Zereth Mortis", -- [9]
 			0, -- [10]
-			476, -- [11]
-			"Player-75-0BA86331", -- [12]
+			6, -- [11]
+			"Player-1071-0D5FEABB", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffaad372Fangarang|r",
-			[51] = 1666903316,
+			[52] = "|cff33937fTyrgosa-KirinTor|r",
+			[51] = 1668737997,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [97]
 		{
-			"Vitiane 100.00% ~(45.9, 47.74) |cffffff00|Hworldmap:1970:4590:4774|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Rieed-KirinTor", -- [2]
+			"|cffffff00|Hworldmap:1970:5875:3767|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
+			"Tyrgosa-KirinTor", -- [2]
 			"", -- [3]
 			"1. General - Zereth Mortis", -- [4]
-			"Rieed-KirinTor", -- [5]
+			"Tyrgosa-KirinTor", -- [5]
 			"", -- [6]
 			1, -- [7]
 			1, -- [8]
 			"General - Zereth Mortis", -- [9]
 			0, -- [10]
-			482, -- [11]
-			"Player-1071-04157C15", -- [12]
+			7, -- [11]
+			"Player-1071-0D5FEABB", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cff8788eeRieed-KirinTor|r",
-			[51] = 1666903490,
+			[52] = "|cff33937fTyrgosa-KirinTor|r",
+			[51] = 1668737997,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [98]
 		{
-			"Vitiane up |cffffff00|Hworldmap:1970:4707:4794|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r", -- [1]
-			"Krymsyn-EarthenRing", -- [2]
+			"if theres even anyone here anymore lol", -- [1]
+			"Tyrgosa-KirinTor", -- [2]
 			"", -- [3]
-			"3. LocalDefense - Zereth Mortis", -- [4]
-			"Krymsyn-EarthenRing", -- [5]
+			"1. General - Zereth Mortis", -- [4]
+			"Tyrgosa-KirinTor", -- [5]
 			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Zereth Mortis", -- [9]
+			1, -- [7]
+			1, -- [8]
+			"General - Zereth Mortis", -- [9]
 			0, -- [10]
-			483, -- [11]
-			"Player-100-0DEC255C", -- [12]
+			8, -- [11]
+			"Player-1071-0D5FEABB", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cfffff468Krymsyn-EarthenRing|r",
-			[51] = 1666903459,
+			[52] = "|cff33937fTyrgosa-KirinTor|r",
+			[51] = 1668737942,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},
-	["CliqueDatatext"] = {
-	},
-	["ChatEditHistory"] = {
-		"/bow", -- [1]
-		"/p well looks like its slow right now good luck will try again later", -- [2]
-		"/cw Xugaaz-WyrmrestAccord TY!", -- [3]
-		"/p np", -- [4]
-		"/kneel", -- [5]
-		"/npcscan add 66932 Akkalou", -- [6]
-		"/dance", -- [7]
-		"/p all good", -- [8]
-		"/cw Peroyjenkins-Mal'Ganis TY", -- [9]
-		"/opie", -- [10]
-		"/s launch fireworks out the launchers he raises out the water and we kill him", -- [11]
-		"/love", -- [12]
-		"/p TY!", -- [13]
-		"/invite lillys-blackhand", -- [14]
-		"/i if you doint need i will rtake it", -- [15]
-		"/i thanks", -- [16]
-		"/i ooopppsss lol", -- [17]
-		"/cw Haastile-Zul'jin sure if you dont need it", -- [18]
-		"/cw Haastile-Zul'jin ahh lol", -- [19]
-		"/elvui", -- [20]
-	},
-	["ConvertKeybindings"] = true,
 }

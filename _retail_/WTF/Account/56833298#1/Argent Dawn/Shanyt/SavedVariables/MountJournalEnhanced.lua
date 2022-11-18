@@ -55,16 +55,16 @@ MJEPersonalSettings = {
 			["Achievement"] = true,
 			["Instance"] = true,
 			["Class"] = true,
-			["Vendor"] = true,
+			["World Event"] = true,
 			["Profession"] = true,
 			["Island Expedition"] = true,
 			["Shop"] = true,
 			["Covenants"] = true,
 			["Drop"] = true,
 			["Garrison"] = true,
-			["Promotion"] = true,
+			["Vendor"] = true,
 			["Quest"] = true,
-			["World Event"] = true,
+			["Promotion"] = true,
 		},
 		["rarity"] = {
 			true, -- [1]
@@ -76,6 +76,13 @@ MJEPersonalSettings = {
 		["hiddenIngame"] = false,
 		["hidden"] = false,
 		["notCollected"] = true,
+		["faction"] = {
+			["horde"] = true,
+			["alliance"] = true,
+			["noFaction"] = true,
+		},
+		["onlyTradable"] = false,
+		["onlyFavorites"] = false,
 		["mountType"] = {
 			["repair"] = true,
 			["flying"] = true,
@@ -85,14 +92,7 @@ MJEPersonalSettings = {
 			["ground"] = true,
 			["transform"] = true,
 		},
-		["onlyTradable"] = false,
-		["onlyFavorites"] = false,
 		["onlyUsable"] = false,
-		["faction"] = {
-			["horde"] = true,
-			["alliance"] = true,
-			["noFaction"] = true,
-		},
 		["family"] = {
 			["Arachnids"] = {
 				["Scorpions"] = true,
@@ -157,10 +157,9 @@ MJEPersonalSettings = {
 				["Gorm"] = true,
 				["Silithids"] = true,
 				["Wasp"] = true,
-				["Ravagers"] = true,
 				["Flies"] = true,
 				["Krolusks"] = true,
-				["Bees"] = true,
+				["Others"] = true,
 				["Aqir Flyers"] = true,
 				["Animite"] = true,
 				["Moth"] = true,
@@ -219,10 +218,10 @@ MJEPersonalSettings = {
 				["Quilen"] = true,
 			},
 			["Rays"] = {
-				["Fathom Rays"] = true,
 				["Nether Rays"] = true,
-				["Mana Rays"] = true,
 				["Stingrays"] = true,
+				["Mana Rays"] = true,
+				["Fathom Rays"] = true,
 			},
 			["Elementals"] = {
 				["Sabers"] = true,
@@ -285,6 +284,7 @@ MJEPersonalSettings = {
 			["Humanoids"] = {
 				["Gronnlings"] = true,
 				["Gorger"] = true,
+				["Others"] = true,
 				["Yetis"] = true,
 			},
 			["Horses"] = {

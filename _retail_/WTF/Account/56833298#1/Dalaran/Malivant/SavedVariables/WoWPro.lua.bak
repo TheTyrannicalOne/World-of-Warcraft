@@ -1,0 +1,63 @@
+
+WoWProCharDB = {
+	["EnableGrailQuestline"] = false,
+	["EnableGrailQuestLevel"] = false,
+	["AutoHideInsideInstances"] = true,
+	["EnableGrailCheckPrereq"] = false,
+	["EnableGrailQuestObsolete"] = false,
+	["QID2Guide"] = {
+		[47221] = "Ludo_Argus",
+		[60096] = "wotlkintro",
+		[40519] = "EmmLegionIntro_A",
+		[10119] = "JamHel6062",
+		[47835] = "Ludo_Argus",
+		[28708] = "JamHel6062",
+	},
+	["Trades"] = {
+	},
+	["EnableFlight"] = true,
+	["EnableRares"] = true,
+	["GuideStack"] = {
+		"LudoLightforged", -- [1]
+	},
+	["EnableGrailQuestName"] = false,
+	["EnablePetBattles"] = true,
+	["Enabled"] = true,
+	["EnableGrailBreadcrumbs"] = false,
+	["Tradeskills"] = {
+	},
+	["GuideVersion"] = {
+	},
+	["Taxi"] = {
+	},
+	["Guide"] = {
+		["LudoLightforged"] = {
+			["total"] = 9,
+			["Version"] = "2022.11.03.A",
+			["skipped"] = {
+			},
+			["done"] = false,
+			["progress"] = 1,
+			["completion"] = {
+				"Player level exceeds step limit", -- [1]
+				[9] = false,
+			},
+		},
+	},
+	["EnableTreasures"] = true,
+	["completedQIDs"] = {
+		[49772] = false,
+		[50313] = false,
+		[62567] = false,
+	},
+	["AutoHideInsideInstancesNotify"] = true,
+	["AutoHideInCombat"] = false,
+	["DebugLevel"] = 0,
+	["BuildingLocations"] = {
+	},
+	["SetWaypoint"] = true,
+	["skippedQIDs"] = {
+	},
+	["Rank"] = {
+	},
+}

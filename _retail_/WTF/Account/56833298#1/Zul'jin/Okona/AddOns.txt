@@ -32,3 +32,9 @@ TomCats-HallowsEnd: disabled
 TomCats-LoveIsInTheAir: disabled
 TomCats-LunarFestival: disabled
 TomCats-Noblegarden: disabled
+Blizzard_ObjectiveTracker: enabled
+Blizzard_CompactRaidFrames: enabled
+ElvUI_UnitFramePlugin: disabled
+XLoot_Options: enabled
+Blizzard_CombatText: enabled
+ElvUI_Options: enabled

@@ -5,30 +5,47 @@ WoWProCharDB = {
 	["AutoHideInsideInstances"] = true,
 	["EnableGrailCheckPrereq"] = false,
 	["QID2Guide"] = {
-		[10119] = "JamHel6062",
 		[47221] = "Ludo_Argus",
 		[28708] = "JamHel6062",
+		[40519] = "EmmLegionIntro_A",
+		[10119] = "JamHel6062",
 		[47835] = "Ludo_Argus",
+		[60096] = "wotlkintro",
 	},
 	["Trades"] = {
 	},
 	["GuideStack"] = {
 	},
-	["completedQIDs"] = {
-	},
-	["Rank"] = {
-	},
+	["EnableFlight"] = true,
+	["EnableRares"] = true,
 	["EnableGrailQuestName"] = false,
-	["Enabled"] = true,
+	["EnablePetBattles"] = true,
 	["EnableGrailQuestObsolete"] = false,
-	["BuildingLocations"] = {
-	},
+	["EnableGrailBreadcrumbs"] = false,
 	["Tradeskills"] = {
-		[2522] = {
+		[186] = {
+			["skillLvl"] = 3,
+			["skillMod"] = 0,
+			["name"] = "Mining",
+			["skillMax"] = 100,
+		},
+		[356] = {
 			["skillLvl"] = 1,
 			["skillMod"] = 0,
-			["name"] = "Northrend Jewelcrafting",
+			["name"] = "Fishing",
+			["skillMax"] = 100,
+		},
+		[755] = {
+			["skillLvl"] = 1,
+			["skillMod"] = 0,
+			["name"] = "Jewelcrafting",
 			["skillMax"] = 75,
+		},
+		[2586] = {
+			["skillLvl"] = 1,
+			["name"] = "Legion Fishing",
+			["skillMod"] = 0,
+			["skillMax"] = 100,
 		},
 		[794] = {
 			["skillLvl"] = 1,
@@ -42,69 +59,24 @@ WoWProCharDB = {
 			["name"] = "Cooking",
 			["skillMax"] = 100,
 		},
-		[755] = {
-			["skillLvl"] = 1,
-			["skillMod"] = 0,
-			["name"] = "Jewelcrafting",
-			["skillMax"] = 75,
-		},
-		[2570] = {
-			["skillLvl"] = 1,
-			["skillMod"] = 0,
-			["name"] = "Northrend Mining",
-			["skillMax"] = 75,
-		},
-		[2586] = {
-			["skillLvl"] = 1,
-			["skillMax"] = 100,
-			["name"] = "Legion Fishing",
-			["skillMod"] = 0,
-		},
-		[2524] = {
-			["skillLvl"] = 57,
-			["skillMod"] = 0,
-			["name"] = "Jewelcrafting",
-			["skillMax"] = 300,
-		},
-		[2572] = {
-			["skillLvl"] = 107,
-			["skillMod"] = 0,
-			["name"] = "Mining",
-			["skillMax"] = 300,
-		},
-		[186] = {
-			["skillLvl"] = 3,
-			["skillMod"] = 0,
-			["name"] = "Mining",
-			["skillMax"] = 100,
-		},
-		[2567] = {
-			["skillLvl"] = 3,
-			["skillMod"] = 0,
-			["name"] = "Draenor Mining",
-			["skillMax"] = 100,
-		},
-		[356] = {
-			["skillLvl"] = 1,
-			["skillMod"] = 0,
-			["name"] = "Fishing",
-			["skillMax"] = 100,
-		},
+	},
+	["DebugLevel"] = 0,
+	["Taxi"] = {
 	},
 	["GuideVersion"] = {
 	},
-	["Taxi"] = {
+	["EnableTreasures"] = true,
+	["completedQIDs"] = {
+	},
+	["AutoHideInsideInstancesNotify"] = true,
+	["AutoHideInCombat"] = false,
+	["BuildingLocations"] = {
 	},
 	["Guide"] = {
 	},
-	["EnableTreasures"] = true,
-	["EnableFlight"] = true,
-	["AutoHideInsideInstancesNotify"] = true,
-	["AutoHideInCombat"] = false,
-	["DebugLevel"] = 0,
-	["EnableGrailBreadcrumbs"] = false,
-	["EnablePetBattles"] = true,
+	["Enabled"] = true,
 	["skippedQIDs"] = {
 	},
-	["EnableRares"] = true,
+	["Rank"] = {
+	},
 }

@@ -3,13 +3,29 @@ TalentTreeTweaksDB = {
 	["modules"] = {
 	},
 	["moduleDb"] = {
-		["ExportInspectedBuild"] = {
+		["HighlightCascadeRepurchable"] = {
+			["color"] = {
+				["a"] = 0.5,
+				["b"] = 1,
+				["g"] = 0,
+				["r"] = 0,
+			},
+		},
+		["SearchForIds"] = {
+		},
+		["ClickableExportStringsInChat"] = {
 		},
 		["DebugNodeInfo"] = {
 			["slashDump"] = false,
 			["viragDevTool"] = true,
 			["luaBrowser"] = true,
 			["tinspect"] = true,
+		},
+		["RespecButtons"] = {
+		},
+		["ExportInspectedBuild"] = {
+		},
+		["ScaleTalentFrame"] = {
 		},
 		["TooltipIds"] = {
 			["professionTooltip"] = {

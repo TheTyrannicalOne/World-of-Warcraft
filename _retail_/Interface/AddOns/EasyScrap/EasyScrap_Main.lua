@@ -3,7 +3,7 @@ local EasyScrap = EasyScrap
 
 EasyScrap.parentFrame:SetScript('OnShow', function()
     EasyScrap.parentFrame:RegisterEvent('BAG_UPDATE_DELAYED')
-	EasyScrap.parentFrame:RegisterEvent("SCRAPPING_MACHINE_CLOSE")
+	--EasyScrap.parentFrame:RegisterEvent("SCRAPPING_MACHINE_CLOSE") removed in dragonflight
 	EasyScrap.parentFrame:RegisterEvent("SCRAPPING_MACHINE_PENDING_ITEM_CHANGED")
 	EasyScrap.parentFrame:RegisterEvent("SCRAPPING_MACHINE_SCRAPPING_FINISHED")
 	EasyScrap.parentFrame:RegisterUnitEvent("UNIT_SPELLCAST_START", "player")

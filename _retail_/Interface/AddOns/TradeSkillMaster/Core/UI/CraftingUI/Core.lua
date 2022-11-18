@@ -194,6 +194,7 @@ function private.FSMCreate()
 
 	local fsmContext = {
 		frame = nil,
+		craftingPage = nil,
 	}
 	local function UpdateDefaultCraftButton()
 		if CraftFrame and CraftCreateButton and private.craftOpen then
@@ -266,13 +267,6 @@ function private.FSMCreate()
 				else
 					ScriptWrapper.Set(defaultFrame, "OnHide", DefaultFrameOnHide)
 				end
-				if not TSM.IsWowClassic() then
-					local linked, linkedName = TSM.Crafting.ProfessionUtil.IsLinkedProfession()
-					if TSM.Crafting.ProfessionUtil.IsDataStable() and not TSM.Crafting.ProfessionUtil.IsGuildProfession() and (not linked or (linked and linkedName == UnitName("player"))) then
-						defaultFrame:OnEvent("TRADE_SKILL_DATA_SOURCE_CHANGED")
-						defaultFrame:OnEvent("TRADE_SKILL_LIST_UPDATE")
-					end
-				end
 			end)
 			:SetOnExit(function(context)
 				local defaultFrame = TSM.IsWowClassic() and TradeSkillFrame or ProfessionsFrame
@@ -313,6 +307,18 @@ function private.FSMCreate()
 		:AddState(FSM.NewState("ST_FRAME_OPEN")
 			:SetOnEnter(function(context)
 				assert(not context.frame)
+				if not TSM.IsWowClassic() and not context.craftingPage then
+					-- Workaround to allow multi-crafting
+					local craftingPage = CreateFrame("Frame", nil, nil, "ProfessionsCraftingPageTemplate")
+					craftingPage:Hide()
+					craftingPage:SetParent(nil)
+					EventRegistry:UnregisterCallback("ProfessionsRecipeListMixin.Event.OnRecipeSelected", craftingPage)
+					EventRegistry:UnregisterCallback("Professions.ProfessionSelected", craftingPage)
+					EventRegistry:UnregisterCallback("Professions.ReagentClicked", craftingPage)
+					EventRegistry:UnregisterCallback("Professions.TransactionUpdated", craftingPage)
+					craftingPage:RegisterEvent("UPDATE_TRADESKILL_CAST_COMPLETE")
+					context.craftingPage = craftingPage
+				end
 				context.frame = private.CreateMainFrame()
 				context.frame:Show()
 				if TSM.Crafting.ProfessionUtil.GetCurrentProfessionInfo() then

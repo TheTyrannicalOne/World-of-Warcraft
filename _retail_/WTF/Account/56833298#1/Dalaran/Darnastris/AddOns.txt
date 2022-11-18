@@ -275,3 +275,8 @@ TomCats-Nzoth: disabled
 ElvUI_CustomTags: disabled
 LittleWigs_Classic: enabled
 kExtraBossFrames: disabled
+Blizzard_ObjectiveTracker: enabled
+Blizzard_CompactRaidFrames: enabled
+Blizzard_CombatText: enabled
+ElvUI_UnitFramePlugin: disabled
+ElvUI_Options: enabled

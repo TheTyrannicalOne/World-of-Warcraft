@@ -1,4 +1,4 @@
-if not IsTestBuild() then return end
+
 --------------------------------------------------------------------------------
 -- Module Declaration
 --
@@ -8,6 +8,7 @@ if not mod then return end
 mod:RegisterEnableMob(187967) -- Sennarth, The Cold Breath
 mod:SetEncounterID(2592)
 mod:SetRespawnTime(30)
+mod:SetStage(1)
 
 --------------------------------------------------------------------------------
 -- Locals

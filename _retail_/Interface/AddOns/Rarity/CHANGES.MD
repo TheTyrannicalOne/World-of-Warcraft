@@ -1,3 +1,35 @@
+**r718:**
+
+Fixes:
+> Fixed script errors caused by API changes in patch 10.0.2
+
+-----
+
+**r717:**
+
+Changes:
+> Tooltip additions should now also work for items in the quest log
+
+Fixes:
+> Fixed script errors caused by API changes in patch 10.0
+
+Contributors (in alphabetical order):
+> Patrick Borgogno
+<br>Tommy Godejord
+<br>teelolws
+
+-----
+
+**r716:**
+
+Additions:
+> Added defeat detection data for Mythic-difficulty Legion raids
+
+Fixes:
+> Added several missing Torghast bosses to the list of NPCs counting for Sturdy Silver Mawrat Harness
+
+-----
+
 **r715:**
 
 Additions:
@@ -30,50 +62,3 @@ Fixes:
 Contributors (in alphabetical order):
 > ithappenedagain
 <br>Tommy Godejord
-
------
-
-**r713:**
-
-Additions:
-> Attempts for Reins of the Infinite Timereaver should now also accumulate in Legion Timewalking dungeons
-<br>REVERTED: Added tracking for Illidari Doomhawk and Doomwalker Trophy Stand (17th anniversary)
-<br>Added tracking for the convenant-specific toys added in patch 9.1.5 (obtained from Callings)
-
-Fixes:
-> Fixed an error in the spell detection that caused attempts for custom items using Pick Pocket to not be detected
-
-Developer Notes:
-> Blizzard hotfixed the anniversary drops to be guaranteed. As such they've been removed from Rarity again.
-
-Contributors (in alphabetical order):
-> Tommy Godejord
-
------
-
-**r712:**
-
-Additions:
-> Added tracking for Gilded Darknight
-
-Fixes:
-> The main window should again be rendered properly (previously broken by patch 9.1.5 API changes)
-
-Contributors (in alphabetical order):
-> Tommy Godejord
-
------
-
-**r711:**
-
-Additions:
-> Added tracking for Adamant Vaults Cell
-
-Changes:
-> The mini map button is now displayed by default, to hopefully improve the experience for first-time users
-
-Fixes:
-> Fixed an issue that prevented item information being displayed in the game tooltip for items using the ZONE (zonewide) detection method
-
-Contributors (in alphabetical order):
-> Tommy Godejord

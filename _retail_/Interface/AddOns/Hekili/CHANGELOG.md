@@ -1,10 +1,8 @@
 # Hekili
 
-## [v10.0.0-02](https://github.com/Hekili/hekili/tree/v10.0.0-02) (2022-10-28)
-[Full Changelog](https://github.com/Hekili/hekili/compare/v10.0.0-01...v10.0.0-02) [Previous Releases](https://github.com/Hekili/hekili/releases)
+## [v10.0.2-1.4](https://github.com/Hekili/hekili/tree/v10.0.2-1.4) (2022-11-17)
+[Full Changelog](https://github.com/Hekili/hekili/compare/v10.0.2-1.3...v10.0.2-1.4) [Previous Releases](https://github.com/Hekili/hekili/releases)
 
-- Fury APL from Discord / ticket.  
-- Possible fix for #1753  
-- Quickfix for #1756  
-- Fix typo in Aspiration of Divinity.  
-- Quickfix for #1761  
+- Aff: Apply Siphon Life to target, not player (#1954).  
+- Gift of the Naaru spell ID changes per class (#1977).  
+- Nature's Swiftness CD starts when removed (#1978)  

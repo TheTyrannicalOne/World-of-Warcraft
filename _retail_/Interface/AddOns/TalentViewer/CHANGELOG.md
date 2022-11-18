@@ -1,6 +1,6 @@
 # Talent Viewer
 
-## [v1.0.2](https://github.com/Numynum/TalentViewer/tree/v1.0.2) (2022-06-17)
-[Full Changelog](https://github.com/Numynum/TalentViewer/compare/v1.0.0...v1.0.2) [Previous Releases](https://github.com/Numynum/TalentViewer/releases)
+## [v1.1.0](https://github.com/Numynum/TalentViewer/tree/v1.1.0) (2022-10-31)
+[Full Changelog](https://github.com/Numynum/TalentViewer/compare/v1.0.2...v1.1.0) [Previous Releases](https://github.com/Numynum/TalentViewer/releases)
 
-- properly select the current spec as initial view on login/reload  
+- remove errors on load, and show a "this addon is dead an replaced" message in chat  

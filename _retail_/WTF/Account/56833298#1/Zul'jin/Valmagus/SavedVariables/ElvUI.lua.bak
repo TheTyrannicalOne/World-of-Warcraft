@@ -1,6 +1,5 @@
 
 ElvCharacterDB = {
-	["ConvertKeybindings"] = true,
 	["ChatHistoryLog"] = {
 		{
 			"|| WTS Slot to: |cffffff00|Hachievement:14146:Player-61-0EB5671A:1:3:1:20:4294967295:4294967295:4294967295:4294967295|h[Glória do Aventureiro de Ny'alotha]|h|r Get your |cff71d5ff|Hspell:316343:0|h[Parasita Contorcido]|h|r TODAY AT 7PM EST !! For this glory you need the legendary cloak from BFA  !! DM for more info! Gold only!! ", -- [1]
@@ -2181,6 +2180,8 @@ ElvCharacterDB = {
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [99]
 	},
+	["CliqueDatatext"] = {
+	},
 	["ChatEditHistory"] = {
 		"/opie", -- [1]
 		"/i Thansk for the run", -- [2]
@@ -2191,6 +2192,5 @@ ElvCharacterDB = {
 		"/dance", -- [7]
 		"/ltp", -- [8]
 	},
-	["CliqueDatatext"] = {
-	},
+	["ConvertKeybindings"] = true,
 }

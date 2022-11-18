@@ -152,6 +152,15 @@ function getNPCName(npcID)
 	end
 end
 
+function getNPCNameClassic(npcID)
+	if not tonumber(core.NPCCacheClassic[npcID]) then
+		return core.NPCCacheClassic[npcID]
+	else
+		GetNameFromNpcIDCache(npcID)
+		return ""
+	end
+end
+
 events:SetScript("OnEvent", function(self, event, ...)
     return self[event] and self[event](self, event, ...) 	--Allow event arguments to be called from seperate functions
 end)
@@ -453,7 +462,7 @@ end
 function getInstanceAchievements()
 	ClearAchievementComparisonUnit()
 	--Make sure the player we are about to scan is still in the group
-	if UnitName(playersToScan[1]) ~= nil then
+	if UnitExists(playersToScan[1]) then
 		playerCurrentlyScanning = playersToScan[1]
 		--core:sendDebugMessage("Setting Comparison Unit to: " .. UnitName(playersToScan[1]))
 		core.currentComparisonUnit = UnitName(playersToScan[1])
@@ -597,17 +606,17 @@ function getInstanceInfomation()
 				core:sendDebugMessage("DifficultyID: " .. core.difficultyID)
 				if core.difficultyID == 2 then
 					--WOTLK/Cata/Mop/Wod heroic dungeons
-					if core.expansion == 3 or core.expansion == 3 or core.expansion == 4 or core.expansion == 5 then
+					if core.expansion == 3 or core.expansion == 4 or core.expansion == 5 or core.expansion == 6 then
 						instanceCompatible = true
 					end
 				elseif core.difficultyID == 23 then
 					--Mythics from legion onwards
-					if core.expansion >= 7 then
+					if core.expansion >= 6 then
 						instanceCompatible = true
 					end
 
 					--Mythic WoD don't work for most achievements
-					if core.difficultyID == 23 and core.expansion == 5 then
+					if core.difficultyID == 23 and core.expansion == 6 then
 						core.warnCompatible = true
 					end
 				elseif core.difficultyID == 3 or core.difficultyID == 5 then
@@ -642,12 +651,12 @@ function getInstanceInfomation()
 					instanceCompatible = true
 
 					--Set instance we want to debug
-					-- core.instanceNameSpaces = "Halls of Lightning"
-					-- core.instanceName = "HallsOfLightning"
-					-- core.instance = 602
-					-- core.instanceClear = "_602"
+					-- core.instanceNameSpaces = "Naxxramas"
+					-- core.instanceName = "Naxxramas"
+					-- core.instance = "533-10"
+					-- core.instanceClear = "_533"
 					-- core.expansion = 3
-					-- core.instanceType = "Dungeons"
+					-- core.instanceType = "Raids"
 				end
 
 				if instanceCompatible == true and core.expansion ~= nil then
@@ -1742,7 +1751,7 @@ function events:INSPECT_ACHIEVEMENT_READY(self, GUID)
 	--Check if the Inspect_Achievement_Ready was from a request that we made and not from another addon. Really important.
 	if core.currentComparisonUnit == name then
 		--Make sure the player is still online since achievement scanning may happen some time after scanning players
-		if UnitName(playerCurrentlyScanning) ~= nil then
+		if UnitExists(playerCurrentlyScanning) then
 			local name2, realm2 = UnitName(playerCurrentlyScanning)
 			--Find all bosses for the current instance the player is in.
 			for expansion,_ in pairs(core.Instances) do
@@ -3297,13 +3306,23 @@ end
 ------------------------------------------------------
 
 --Display the failed achievement message for achievements
-function core:getAchievementFailed(index)
+function core:getAchievementFailed(index, achievementID)
 	local value = index
+	local achievementValue = index
 	if index == nil then
 		value = 1
+		achievementValue = 1
+	end
+
+	if achievementID ~= nil then
+		for i=1, #core.achievementIDs do
+			if core.achievementIDs[i] == achievementID then
+				achievementValue = i
+			end
+		end
 	end
 	if core.achievementsFailed[value] == false then
-		core:sendMessage(GetAchievementLink(core.achievementIDs[value]) .. " " .. L["Core_Failed"],true,"failed")
+		core:sendMessage(GetAchievementLink(core.achievementIDs[achievementValue]) .. " " .. L["Core_Failed"],true,"failed")
 		core.achievementsFailed[value] = true
 	end
 end
@@ -3322,13 +3341,24 @@ function core:getAchievementFailedWithMessageBefore(message, index)
 end
 
 --Display the failed achievement message for achievements with message after
-function core:getAchievementFailedWithMessageAfter(message, index)
+function core:getAchievementFailedWithMessageAfter(message, index, achievementID)
 	local value = index
+	local achievementValue = index
 	if index == nil then
 		value = 1
+		achievementValue = 1
 	end
+
+	if achievementID ~= nil then
+		for i=1, #core.achievementIDs do
+			if core.achievementIDs[i] == achievementID then
+				achievementValue = i
+			end
+		end
+	end
+
 	if core.achievementsFailed[value] == false then
-		core:sendMessage(GetAchievementLink(core.achievementIDs[value]) .. " " .. L["Core_Failed"] .. " " .. message,true,"failed")
+		core:sendMessage(GetAchievementLink(core.achievementIDs[achievementValue]) .. " " .. L["Core_Failed"] .. " " .. message,true,"failed")
 		core.achievementsFailed[value] = true
 	end
 end

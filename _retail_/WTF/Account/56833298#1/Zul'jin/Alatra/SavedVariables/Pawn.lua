@@ -1,66 +1,64 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0706,
-	["LastPlayerFullName"] = "Alatra-Zul'jin",
-	["AutoSelectScales"] = true,
+	["LastVersion"] = 2.0708,
 	["ItemLevels"] = {
 		{
-			["ID"] = 122246,
-			["Level"] = 146,
-			["Link"] = "|cff00ccff|Hitem:122246::::::::59:254:::1:7920::::::|h[Tarnished Raging Berserker's Helm]|h|r",
+			["ID"] = 199367,
+			["Level"] = 252,
+			["Link"] = "|cff0070dd|Hitem:199367::::::::60:254::26:3:6652:7578:8936:2:28:2172:9:60:::::|h[Cyclonic Cowl]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 122663,
-			["Level"] = 146,
-			["Link"] = "|cff00ccff|Hitem:122663::::::::59:254:::1:7920::::::|h[Eternal Amulet of the Redeemed]|h|r",
+			["Level"] = 187,
+			["Link"] = "|cff00ccff|Hitem:122663::::::::60:254:::1:7920::::::|h[Eternal Amulet of the Redeemed]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 122356,
-			["Level"] = 146,
-			["Link"] = "|cff00ccff|Hitem:122356::::::::59:254:::1:7920::::::|h[Champion Herod's Shoulder]|h|r",
+			["ID"] = 199369,
+			["Level"] = 252,
+			["Link"] = "|cff0070dd|Hitem:199369::::::::60:254::26:2:6652:8936:2:28:2172:9:60:::::|h[Cyclonic Spaulders]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
-			["ID"] = 122379,
-			["Level"] = 146,
-			["Link"] = "|cff00ccff|Hitem:122379::::::::59:254:::1:7920::::::|h[Champion's Deathdealer Breastplate]|h|r",
+			["ID"] = 199364,
+			["Level"] = 252,
+			["Link"] = "|cff0070dd|Hitem:199364::::::::60:254::26:2:6652:8936:2:28:2172:9:60:::::|h[Cyclonic Chainmail]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 181603,
-			["Level"] = 138,
-			["Link"] = "|cff0070dd|Hitem:181603::::::::59:254::53:3:7192:6652:7578:2:28:807:9:59:::::|h[Forgehand's Chain]|h|r",
+			["ID"] = 199370,
+			["Level"] = 252,
+			["Link"] = "|cff0070dd|Hitem:199370::::::::60:254::26:3:6652:7578:8936:2:28:2172:9:60:::::|h[Cyclonic Cinch]|h|r",
 		}, -- [6]
 		{
-			["ID"] = 122252,
-			["Level"] = 146,
-			["Link"] = "|cff00ccff|Hitem:122252::::::::59:254:::1:7920::::::|h[Tarnished Leggings of Destruction]|h|r",
+			["ID"] = 199368,
+			["Level"] = 252,
+			["Link"] = "|cff0070dd|Hitem:199368::::::::60:254::26:2:6652:8936:2:28:2172:9:60:::::|h[Cyclonic Kilt]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 184517,
-			["Level"] = 140,
-			["Link"] = "|cff0070dd|Hitem:184517::::::::58:254::11:1:6706:2:28:747:9:58:::::|h[Gladechewer Footguards]|h|r",
+			["ID"] = 199365,
+			["Level"] = 252,
+			["Link"] = "|cff0070dd|Hitem:199365::::::::60:254::26:2:6652:8936:2:28:2172:9:60:::::|h[Cyclonic Striders]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 173347,
-			["Level"] = 140,
-			["Link"] = "|cff0070dd|Hitem:173347::::::::58:254::11:2:6707:6901:2:28:1707:9:58:::::|h[Down-Lined Wristguards]|h|r",
+			["ID"] = 199371,
+			["Level"] = 252,
+			["Link"] = "|cff0070dd|Hitem:199371::::::::60:254::26:3:6652:7578:8936:2:28:2172:9:60:::::|h[Cyclonic Bracers]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 181596,
-			["Level"] = 151,
-			["Link"] = "|cff0070dd|Hitem:181596::::::::60:254::27:4:6652:1472:5848:6616:1:28:1707:::::|h[Forgehand's Handguards]|h|r",
+			["ID"] = 199366,
+			["Level"] = 252,
+			["Link"] = "|cff0070dd|Hitem:199366::::::::60:254::26:2:6652:8936:2:28:2172:9:60:::::|h[Cyclonic Gauntlets]|h|r",
 		}, -- [10]
 		{
-			["ID"] = 122529,
-			["Level"] = 146,
+			["ID"] = 199381,
+			["Level"] = 252,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff00ccff|Hitem:122529::::::::59:254:::1:7920::::::|h[Dread Pirate Ring]|h|r",
+			["Link"] = "|cff0070dd|Hitem:199381::::::::60:254::26:3:6652:7578:8936:2:28:2425:9:60:::::|h[Seal of Elemental Disasters]|h|r",
 		}, -- [11]
 		{
-			["ID"] = 128173,
-			["Level"] = 146,
+			["ID"] = 199381,
+			["Level"] = 252,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff00ccff|Hitem:128173::::::::59:254:::1:7920::::::|h[Admiral Taylor's Loyalty Ring]|h|r",
+			["Link"] = "|cff0070dd|Hitem:199381::::::::60:254::26:3:6652:7578:8936:2:9:60:28:2425:::::|h[Seal of Elemental Disasters]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 178742,
@@ -75,9 +73,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:181457::::::::60:254::25:3:40:1472:6616:1:28:1707:::::|h[Wakener's Frond]|h|r",
 		}, -- [14]
 		{
-			["ID"] = 178755,
-			["Level"] = 210,
-			["Link"] = "|cff0070dd|Hitem:178755::::::::60:254::1:5:8140:6805:6652:1524:4785:1:28:747:::::|h[Blighted Margrave's Cloak]|h|r",
+			["ID"] = 199384,
+			["Level"] = 252,
+			["Link"] = "|cff0070dd|Hitem:199384::::::::60:254::26:2:40:8936:2:28:2425:9:60:::::|h[Cloudburst Wrap]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 117356,
@@ -91,7 +89,8 @@ PawnOptions = {
 			["Link"] = "|cffffffff|Hitem:3420::::::::31:254::14::1:28:633:::::|h[Black Rose]|h|r",
 		}, -- [17]
 	},
-	["LastKeybindingsSet"] = 1,
+	["AutoSelectScales"] = true,
+	["LastPlayerFullName"] = "Alatra-Zul'jin",
 	["Artifacts"] = {
 		[128826] = {
 			["Relics"] = {
@@ -105,6 +104,7 @@ PawnOptions = {
 			["Name"] = "Thas'dorah, Legacy of the Windrunners",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "HUNTER",

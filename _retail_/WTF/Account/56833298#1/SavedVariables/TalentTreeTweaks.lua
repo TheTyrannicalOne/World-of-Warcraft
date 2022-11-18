@@ -3,7 +3,29 @@ TalentTreeTweaksDB = {
 	["modules"] = {
 	},
 	["moduleDb"] = {
+		["HighlightCascadeRepurchable"] = {
+			["color"] = {
+				["a"] = 0.5,
+				["r"] = 0,
+				["g"] = 0,
+				["b"] = 1,
+			},
+		},
+		["DebugNodeInfo"] = {
+			["slashDump"] = false,
+			["viragDevTool"] = true,
+			["luaBrowser"] = true,
+			["tinspect"] = true,
+		},
+		["ClickableExportStringsInChat"] = {
+		},
+		["SearchForIds"] = {
+		},
+		["RespecButtons"] = {
+		},
 		["ExportInspectedBuild"] = {
+		},
+		["ScaleTalentFrame"] = {
 		},
 		["TooltipIds"] = {
 			["professionTooltip"] = {
@@ -20,12 +42,6 @@ TalentTreeTweaksDB = {
 				["definitionId"] = false,
 				["entryId"] = true,
 			},
-		},
-		["DebugNodeInfo"] = {
-			["slashDump"] = false,
-			["viragDevTool"] = true,
-			["luaBrowser"] = true,
-			["tinspect"] = true,
 		},
 	},
 }

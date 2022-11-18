@@ -1,5 +1,5 @@
 ﻿----------------------------------------------------------------------
--- 	Leatrix Plus 10.0.02 (28th October 2022)
+-- 	Leatrix Plus 10.0.12 (18th November 2022)
 ----------------------------------------------------------------------
 
 --	01:Functns, 02:Locks, 03:Restart, 20:Live, 30:Isolated, 40:Player
@@ -18,7 +18,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "10.0.02"
+	LeaPlusLC["AddonVer"] = "10.0.12"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -36,8 +36,9 @@
 		end
 	end
 
-	-- Check for ElvUI
+	-- Check for addons
 	if IsAddOnLoaded("ElvUI") then LeaPlusLC.ElvUI = unpack(ElvUI) end
+	if IsAddOnLoaded("Glass") then LeaPlusLC.Glass = true end
 
 ----------------------------------------------------------------------
 --	L00: Leatrix Plus
@@ -54,17 +55,32 @@
 	LpEvt:RegisterEvent("PLAYER_LOGIN")
 
 	-- Set bindings translations
-	-- LeaPlusLC.DF: Block taint when closing the keybindings game options panel (10.0.2)
 	_G.BINDING_NAME_LEATRIX_PLUS_GLOBAL_TOGGLE = L["Toggle panel"]
 	_G.BINDING_NAME_LEATRIX_PLUS_GLOBAL_WEBLINK = L["Show web link"]
 	_G.BINDING_NAME_LEATRIX_PLUS_GLOBAL_RARE = L["Announce rare"]
 	_G.BINDING_NAME_LEATRIX_PLUS_GLOBAL_MOUNTSPECIAL = L["Mount special"]
 
-	-- LeaPlusLC.DF: New functions added in 10.0.2
-	local GetContainerNumSlots = C_Container and C_Container.GetContainerNumSlots or GetContainerNumSlots
-	local GetContainerItemLink = C_Container and C_Container.GetContainerItemLink or GetContainerItemLink
-	local GetContainerItemInfo = C_Container and C_Container.GetContainerItemInfo or GetContainerItemInfo
-	local UseContainerItem = C_Container and C_Container.UseContainerItem or UseContainerItem
+	-- Faster auto loot
+	-- Prints NO QUALITY LOOT in chat frequently but it does this with or without addons (just less frequent without addons)
+	-- Currently employing a fix to replace the loot function.
+
+	-- Minimap compartment button
+	-- LibDBIcon will be updated in future with a better replacement for Blizzard's compartment menu
+	-- Using stuff that Blizzard make like this is always prone to breaking addons so better to use LibDBIcon
+
+	-- Disable bag automation
+	-- Open vendor and close vendor again.
+	-- Open vendor again.
+	-- Click the bag icon to switch bag mode (either from single to combined or combined to single).
+	-- Buy alcohol if you don't have it already (if you do, skip this step) (tested with Bottle of Dalaran Noir).
+	-- Drink alcohol from bags.
+
+	-- Disable sticky editbox
+	-- Open 2 chat windows
+	-- Press enter in general chat to open editbox, type anything but don't press enter
+	-- Undock the second chat window and dock it again
+	-- Press enter in general chat to open editbox, type anything but don't press enter
+	-- Right-click General chat tab and enter Edit Mode
 
 ----------------------------------------------------------------------
 --	L01: Functions
@@ -600,7 +616,6 @@
 		or	(LeaPlusLC["MoveChatEditBoxToTop"]	~= LeaPlusDB["MoveChatEditBoxToTop"])	-- Move editbox to top
 		or	(LeaPlusLC["SetChatFontSize"]		~= LeaPlusDB["SetChatFontSize"])		-- Set chat font size
 		or	(LeaPlusLC["NoStickyChat"]			~= LeaPlusDB["NoStickyChat"])			-- Disable sticky chat
-		or	(LeaPlusLC["NoStickyEditbox"]		~= LeaPlusDB["NoStickyEditbox"])		-- Disable sticky editbox
 		or	(LeaPlusLC["UseArrowKeysInChat"]	~= LeaPlusDB["UseArrowKeysInChat"])		-- Use arrow keys in chat
 		or	(LeaPlusLC["NoChatFade"]			~= LeaPlusDB["NoChatFade"])				-- Disable chat fade
 		or	(LeaPlusLC["RecentChatWindow"]		~= LeaPlusDB["RecentChatWindow"])		-- Recent chat window
@@ -659,7 +674,6 @@
 
 		-- System
 		or	(LeaPlusLC["NoRestedEmotes"]		~= LeaPlusDB["NoRestedEmotes"])			-- Silence rested emotes
-		or	(LeaPlusLC["NoBagAutomation"]		~= LeaPlusDB["NoBagAutomation"])		-- Disable bag automation
 		or	(LeaPlusLC["NoPetAutomation"]		~= LeaPlusDB["NoPetAutomation"])		-- Disable pet automation
 		or	(LeaPlusLC["FasterLooting"]			~= LeaPlusDB["FasterLooting"])			-- Faster auto loot
 		or	(LeaPlusLC["FasterMovieSkip"]		~= LeaPlusDB["FasterMovieSkip"])		-- Faster movie skip
@@ -898,16 +912,15 @@
 			LeaPlusLC:MakeCB(SoundPanel, "MuteBrooms", "Brooms", 284, -232, false, "If checked, broom mounts will be muted.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteBanLu", "Ban-Lu", 284, -252, false, "If checked, Ban-Lu will no longer talk to you.")
 
-			LeaPlusLC:MakeTx(SoundPanel, "Pets", 418, -72)
+			LeaPlusLC:MakeTx(SoundPanel, "Misc", 418, -72)
 			LeaPlusLC:MakeCB(SoundPanel, "MuteSunflower", "Sunflower", 418, -92, false, "If checked, the Singing Sunflower pet will be muted.")
 			LeaPlusLC:MakeCB(SoundPanel, "MutePierre", "Pierre", 418, -112, false, "If checked, Pierre will be quieter.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteAnima", "Anima", 418, -132, false, "If checked, the Experimental Anima Cell toy will be quieter.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteHarp", "Harp", 418, -152, false, "If checked, the Fae Harp toy will be muted.")
 
-			LeaPlusLC:MakeTx(SoundPanel, "Toys", 418, -152)
-			LeaPlusLC:MakeCB(SoundPanel, "MuteAnima", "Anima", 418, -172, false, "If checked, the Experimental Anima Cell toy will be quieter.")
-
-			LeaPlusLC:MakeTx(SoundPanel, "Combat", 418, -212)
-			LeaPlusLC:MakeCB(SoundPanel, "MuteBattleShouts", "Shouts", 418, -232, false, "If checked, your character will not shout and wail during combat.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteArena", "Arena", 418, -252, false, "If checked, arena announcers will be muted.")
+			LeaPlusLC:MakeTx(SoundPanel, "Combat", 418, -192)
+			LeaPlusLC:MakeCB(SoundPanel, "MuteBattleShouts", "Shouts", 418, -212, false, "If checked, your character will not shout and wail during combat.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteArena", "Arena", 418, -232, false, "If checked, arena announcers will be muted.")
 
 			-- Set click width for sounds checkboxes
 			for k, v in pairs(muteTable) do
@@ -2206,42 +2219,6 @@
 
 		if LeaPlusLC["FasterLooting"] == "On" then
 
-			-- Hopefully this is temporary but then again how long does it take for Blizzard to comment out two print statements
-			-- (that's assuming that they actually want to fix this)
-			-- https://github.com/leatrix/leatrix-plus/issues/113
-
-			LootFrame:UnregisterEvent("LOOT_OPENED")
-			local abc = CreateFrame("FRAME")
-			abc:RegisterEvent("LOOT_OPENED")
-			abc:SetScript("OnEvent", function(self)
-
-				local dataProvider = CreateDataProvider()
-				for slotIndex = 1, GetNumLootItems() do
-					local texture, item, quantity, currencyID, itemQuality, locked, isQuestItem, questID, isActive, isCoin = GetLootSlotInfo(slotIndex)
-					local quality = itemQuality or Enum.ItemQuality.Common
-					local group = isCoin and 1 or 0
-					dataProvider:Insert({slotIndex = slotIndex, group = group, quality = quality})
-				end
-
-				-- Sort loot list to put quality items first
-				dataProvider:SetSortComparator(function(a, b)
-					if a.group ~= b.group then
-						return a.group > b.group
-					end
-					if a.quality ~= b.quality then
-						return a.quality > b.quality
-					end
-					return a.slotIndex < b.slotIndex
-				end)
-
-				-- Show the loot frame in the Edit Mode position
-				LootFrame.ScrollBox:SetDataProvider(dataProvider)
-				LootFrame:Show()
-				LootFrame:Resize()
-				LootFrame:PlayOpenAnimation()
-
-			end)
-
 			-- Time delay
 			local tDelay = 0
 
@@ -2264,15 +2241,6 @@
 			faster:RegisterEvent("LOOT_READY")
 			faster:SetScript("OnEvent", FastLoot)
 
-		end
-
-		----------------------------------------------------------------------
-		--	Disable bag automation
-		----------------------------------------------------------------------
-
-		if LeaPlusLC["NoBagAutomation"] == "On" and not LeaLockList["NoBagAutomation"] then
-			hooksecurefunc('OpenAllBags', CloseAllBags)
-			hooksecurefunc('OpenAllBagsMatchingContext', CloseAllBags)
 		end
 
 		----------------------------------------------------------------------
@@ -3125,18 +3093,8 @@
 			eb.Text:SetScript("OnLeave", GameTooltip_Hide)
 
 			-- Show item ID in item tooltips while configuration panel is showing
-			if TooltipDataProcessor then -- LeaPlusLC.DF - added in 10.0.2
+			if TooltipDataProcessor then
 				TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, function(self)
-					if SellJunkFrame:IsShown() then
-						local void, itemLink = self:GetItem()
-						if itemLink then
-							local itemID = GetItemInfoFromHyperlink(itemLink)
-							if itemID then self:AddLine(L["Item ID"] .. ": " .. itemID) end
-						end
-					end
-				end)
-			else
-				GameTooltip:HookScript("OnTooltipSetItem", function(self)
 					if SellJunkFrame:IsShown() then
 						local void, itemLink = self:GetItem()
 						if itemLink then
@@ -3156,8 +3114,8 @@
 
 				-- Traverse bags and sell grey items
 				for BagID = 0, 4 do
-					for BagSlot = 1, GetContainerNumSlots(BagID) do
-						CurrentItemLink = GetContainerItemLink(BagID, BagSlot)
+					for BagSlot = 1, C_Container.GetContainerNumSlots(BagID) do
+						CurrentItemLink = C_Container.GetContainerItemLink(BagID, BagSlot)
 						if CurrentItemLink then
 							void, void, Rarity, void, void, void, void, void, void, void, ItemPrice = GetItemInfo(CurrentItemLink)
 							-- Don't sell whitelisted items
@@ -3173,12 +3131,12 @@
 								end
 							end
 							-- Continue
-							local void, itemCount = GetContainerItemInfo(BagID, BagSlot)
+							local void, itemCount = C_Container.GetContainerItemInfo(BagID, BagSlot)
 							if Rarity == 0 and ItemPrice ~= 0 then
 								SoldCount = SoldCount + 1
 								if MerchantFrame:IsShown() then
 									-- If merchant frame is open, vendor the item
-									UseContainerItem(BagID, BagSlot)
+									C_Container.UseContainerItem(BagID, BagSlot)
 									-- Perform actions on first iteration
 									if SellJunkTicker._remainingIterations == IterationCount then
 										-- Calculate total price
@@ -3243,7 +3201,7 @@
 					SellJunkFrame:UnregisterEvent("ITEM_UNLOCKED")
 					-- Check whether vendor refuses to buy items
 					if mBagID and mBagSlot and mBagID ~= -1 and mBagSlot ~= -1 then
-						local texture, count, locked = GetContainerItemInfo(mBagID, mBagSlot)
+						local texture, count, locked = C_Container.GetContainerItemInfo(mBagID, mBagSlot)
 						if count and not locked then
 							-- Item has been unlocked but still not sold so stop selling
 							StopSelling()
@@ -3394,22 +3352,27 @@
 			local ChainPanel = LeaPlusLC:CreatePanel("Show player chain", "ChainPanel")
 
 			-- Add dropdown menu
-			LeaPlusLC:CreateDropDown("PlayerChainMenu", "Chain style", ChainPanel, 146, "TOPLEFT", 16, -112, {L["ELITE"], L["BOSS"]}, "")
+			LeaPlusLC:CreateDropDown("PlayerChainMenu", "Chain style", ChainPanel, 146, "TOPLEFT", 16, -112, {L["ELITE"], L["BOSS"], L["RARE"]}, "")
 
 			-- Set chain style
 			local function SetChainStyle()
 				-- Get dropdown menu value
 				local chain = LeaPlusLC["PlayerChainMenu"] -- Numeric value
 				-- Set chain style according to value
-				if chain == 1 then -- Gold
+				if chain == 1 then -- Elite (Gold)
 					playerChain:SetAtlas("UI-HUD-UnitFrame-Target-PortraitOn-Boss-Gold", true)
 					playerChain:ClearAllPoints()
 					playerChain:SetPoint("TOPLEFT", 8, -9)
 					playerChain:SetVertexColor(1, 1, 1, 1)
-				elseif chain == 2 then -- Gold Winged
+				elseif chain == 2 then -- Boss (Gold Winged)
 					playerChain:SetAtlas("UI-HUD-UnitFrame-Target-PortraitOn-Boss-Gold-Winged", true)
 					playerChain:ClearAllPoints()
 					playerChain:SetPoint("TOPLEFT", -11, -8)
+					playerChain:SetVertexColor(1, 1, 1, 1)
+				elseif chain == 3 then -- Rare (Silver)
+					playerChain:SetAtlas("UI-HUD-UnitFrame-Target-PortraitOn-Boss-Rare-Silver", true)
+					playerChain:ClearAllPoints()
+					playerChain:SetPoint("TOPLEFT", 8, -9)
 					playerChain:SetVertexColor(1, 1, 1, 1)
 				end
 			end
@@ -3525,14 +3488,6 @@
 
 			-- Refresh color if focus frame size changes
 			if FocusFrame_SetSmallSize then
-				-- Game client prior to 10.0.2.45779 (can be deleted once game client is updated)
-				hooksecurefunc("FocusFrame_SetSmallSize", function()
-					if LeaPlusLC["ClassColTarget"] == "On" then
-						TargetFrameCol()
-					end
-				end)
-			else
-				-- Game client 10.0.2.45779 and later (can be kept)
 				hooksecurefunc(FocusFrame, "SetSmallSize", function()
 					if LeaPlusLC["ClassColTarget"] == "On" then
 						TargetFrameCol()
@@ -3914,7 +3869,9 @@
 		if LeaPlusLC["UseEasyChatResizing"] == "On" and not LeaLockList["UseEasyChatResizing"] then
 			ChatFrame1Tab:HookScript("OnMouseDown", function(self,arg1)
 				if arg1 == "LeftButton" then
-					ChatFrame1:StartSizing("TOP")
+					if select(8, GetChatWindowInfo(1)) then
+						ChatFrame1:StartSizing("TOP")
+					end
 				end
 			end)
 			ChatFrame1Tab:SetScript("OnMouseUp", function(self,arg1)
@@ -4243,24 +4200,27 @@
 			historyFrame:SetScript("OnEvent", function(self, event)
 				if event == "PLAYER_LOGOUT" then
 					local name, realm = UnitFullName("player")
-					LeaPlusDB["ChatHistoryName"] = name .. "-" .. realm
-					LeaPlusDB["ChatHistoryTime"] = GetServerTime()
-					for i = 1, 50 do
-						if i ~= 2 and _G["ChatFrame" .. i] then
-							if FCF_IsChatWindowIndexActive(i) then
-								LeaPlusDB["ChatHistory" .. i] = {}
-								local chtfrm = _G["ChatFrame" .. i]
-								local NumMsg = chtfrm:GetNumMessages()
-								local StartMsg = 1
-								if NumMsg > 128 then StartMsg = NumMsg - 127 end
-								for iMsg = StartMsg, NumMsg do
-									local chatMessage, r, g, b, chatTypeID = chtfrm:GetMessageInfo(iMsg)
-									if chatMessage then
-										if r and g and b then
-											local colorCode = RGBToColorCode(r, g, b)
-											chatMessage = colorCode .. chatMessage
+					if not realm then realm = GetNormalizedRealmName() end
+					if name and realm then
+						LeaPlusDB["ChatHistoryName"] = name .. "-" .. realm
+						LeaPlusDB["ChatHistoryTime"] = GetServerTime()
+						for i = 1, 50 do
+							if i ~= 2 and _G["ChatFrame" .. i] then
+								if FCF_IsChatWindowIndexActive(i) then
+									LeaPlusDB["ChatHistory" .. i] = {}
+									local chtfrm = _G["ChatFrame" .. i]
+									local NumMsg = chtfrm:GetNumMessages()
+									local StartMsg = 1
+									if NumMsg > 128 then StartMsg = NumMsg - 127 end
+									for iMsg = StartMsg, NumMsg do
+										local chatMessage, r, g, b, chatTypeID = chtfrm:GetMessageInfo(iMsg)
+										if chatMessage then
+											if r and g and b then
+												local colorCode = RGBToColorCode(r, g, b)
+												chatMessage = colorCode .. chatMessage
+											end
+											tinsert(LeaPlusDB["ChatHistory" .. i], chatMessage)
 										end
-										tinsert(LeaPlusDB["ChatHistory" .. i], chatMessage)
 									end
 								end
 							end
@@ -4271,62 +4231,65 @@
 
 			-- Restore chat messages on login
 			local name, realm = UnitFullName("player")
-			if LeaPlusDB["ChatHistoryName"] and LeaPlusDB["ChatHistoryTime"] then
-				local timeDiff = GetServerTime() - LeaPlusDB["ChatHistoryTime"]
-				if LeaPlusDB["ChatHistoryName"] == name .. "-" .. realm and timeDiff and timeDiff < 10 then -- reload must be done within 15 seconds
+			if not realm then realm = GetNormalizedRealmName() end
+			if name and realm then
+				if LeaPlusDB["ChatHistoryName"] and LeaPlusDB["ChatHistoryTime"] then
+					local timeDiff = GetServerTime() - LeaPlusDB["ChatHistoryTime"]
+					if LeaPlusDB["ChatHistoryName"] == name .. "-" .. realm and timeDiff and timeDiff < 10 then -- reload must be done within 15 seconds
 
-					-- Store chat messages from current session and clear chat
-					for i = 1, 50 do
-						if i ~= 2 and _G["ChatFrame" .. i] and FCF_IsChatWindowIndexActive(i) then
-							LeaPlusDB["ChatTemp" .. i] = {}
-							local chtfrm = _G["ChatFrame" .. i]
-							local NumMsg = chtfrm:GetNumMessages()
-							for iMsg = 1, NumMsg do
-								local chatMessage, r, g, b, chatTypeID = chtfrm:GetMessageInfo(iMsg)
-								if chatMessage then
-									if r and g and b then
-										local colorCode = RGBToColorCode(r, g, b)
-										chatMessage = colorCode .. chatMessage
+						-- Store chat messages from current session and clear chat
+						for i = 1, 50 do
+							if i ~= 2 and _G["ChatFrame" .. i] and FCF_IsChatWindowIndexActive(i) then
+								LeaPlusDB["ChatTemp" .. i] = {}
+								local chtfrm = _G["ChatFrame" .. i]
+								local NumMsg = chtfrm:GetNumMessages()
+								for iMsg = 1, NumMsg do
+									local chatMessage, r, g, b, chatTypeID = chtfrm:GetMessageInfo(iMsg)
+									if chatMessage then
+										if r and g and b then
+											local colorCode = RGBToColorCode(r, g, b)
+											chatMessage = colorCode .. chatMessage
+										end
+										tinsert(LeaPlusDB["ChatTemp" .. i], chatMessage)
 									end
-									tinsert(LeaPlusDB["ChatTemp" .. i], chatMessage)
 								end
+								chtfrm:Clear()
 							end
-							chtfrm:Clear()
 						end
-					end
 
-					-- Restore chat messages from previous session
-					for i = 1, 50 do
-						if i ~= 2 and _G["ChatFrame" .. i] and LeaPlusDB["ChatHistory" .. i] and FCF_IsChatWindowIndexActive(i) then
-							LeaPlusDB["ChatHistory" .. i .. "Count"] = 0
-							-- Add previous session messages to chat
-							for k = 1, #LeaPlusDB["ChatHistory" .. i] do
-								if LeaPlusDB["ChatHistory" .. i][k] ~= string.match(LeaPlusDB["ChatHistory" .. i][k], "|cffffd800" .. L["Restored"] .. " " .. ".*" .. " " .. L["message"] .. ".*.|r") then
-									_G["ChatFrame" .. i]:AddMessage(LeaPlusDB["ChatHistory" .. i][k])
-									LeaPlusDB["ChatHistory" .. i .. "Count"] = LeaPlusDB["ChatHistory" .. i .. "Count"] + 1
+						-- Restore chat messages from previous session
+						for i = 1, 50 do
+							if i ~= 2 and _G["ChatFrame" .. i] and LeaPlusDB["ChatHistory" .. i] and FCF_IsChatWindowIndexActive(i) then
+								LeaPlusDB["ChatHistory" .. i .. "Count"] = 0
+								-- Add previous session messages to chat
+								for k = 1, #LeaPlusDB["ChatHistory" .. i] do
+									if LeaPlusDB["ChatHistory" .. i][k] ~= string.match(LeaPlusDB["ChatHistory" .. i][k], "|cffffd800" .. L["Restored"] .. " " .. ".*" .. " " .. L["message"] .. ".*.|r") then
+										_G["ChatFrame" .. i]:AddMessage(LeaPlusDB["ChatHistory" .. i][k])
+										LeaPlusDB["ChatHistory" .. i .. "Count"] = LeaPlusDB["ChatHistory" .. i .. "Count"] + 1
+									end
 								end
-							end
-							-- Show how many messages were restored
-							if LeaPlusDB["ChatHistory" .. i .. "Count"] == 1 then
-								_G["ChatFrame" .. i]:AddMessage("|cffffd800" .. L["Restored"] .. " " .. LeaPlusDB["ChatHistory" .. i .. "Count"] .. " " .. L["message from previous session"] .. ".|r")
+								-- Show how many messages were restored
+								if LeaPlusDB["ChatHistory" .. i .. "Count"] == 1 then
+									_G["ChatFrame" .. i]:AddMessage("|cffffd800" .. L["Restored"] .. " " .. LeaPlusDB["ChatHistory" .. i .. "Count"] .. " " .. L["message from previous session"] .. ".|r")
+								else
+									_G["ChatFrame" .. i]:AddMessage("|cffffd800" .. L["Restored"] .. " " .. LeaPlusDB["ChatHistory" .. i .. "Count"] .. " " .. L["messages from previous session"] .. ".|r")
+								end
 							else
-								_G["ChatFrame" .. i]:AddMessage("|cffffd800" .. L["Restored"] .. " " .. LeaPlusDB["ChatHistory" .. i .. "Count"] .. " " .. L["messages from previous session"] .. ".|r")
-							end
-						else
-							-- No messages to restore
-							LeaPlusDB["ChatHistory" .. i] = nil
-						end
-					end
-
-					-- Restore chat messages from this session
-					for i = 1, 50 do
-						if i ~= 2 and _G["ChatFrame" .. i] and LeaPlusDB["ChatTemp" .. i] and FCF_IsChatWindowIndexActive(i) then
-							for k = 1, #LeaPlusDB["ChatTemp" .. i] do
-								_G["ChatFrame" .. i]:AddMessage(LeaPlusDB["ChatTemp" .. i][k])
+								-- No messages to restore
+								LeaPlusDB["ChatHistory" .. i] = nil
 							end
 						end
-					end
 
+						-- Restore chat messages from this session
+						for i = 1, 50 do
+							if i ~= 2 and _G["ChatFrame" .. i] and LeaPlusDB["ChatTemp" .. i] and FCF_IsChatWindowIndexActive(i) then
+								for k = 1, #LeaPlusDB["ChatTemp" .. i] do
+									_G["ChatFrame" .. i]:AddMessage(LeaPlusDB["ChatTemp" .. i][k])
+								end
+							end
+						end
+
+					end
 				end
 			end
 
@@ -4464,7 +4427,6 @@
 			else
 				LibDBIconStub:SetButtonRadius(1)
 			end
-			MinimapCluster:SetClampedToScreen(false)
 
 			----------------------------------------------------------------------
 			-- Configuration panel
@@ -4775,6 +4737,7 @@
 				bFrame:SetFrameLevel(8)
 
 				LeaPlusLC.bFrame = bFrame -- Used in LibDBIcon callback
+				_G["LeaPlusGlobalMinimapCombinedButtonFrame"] = bFrame -- For third party addons
 
 				-- Hide button frame automatically
 				local ButtonFrameTicker
@@ -5022,6 +4985,10 @@
 				ExpansionLandingPageMinimapButton.AlertText:ClearAllPoints()
 				ExpansionLandingPageMinimapButton.AlertText:SetPoint("RIGHT", ExpansionLandingPageMinimapButton, "LEFT", -8, 0)
 				ExpansionLandingPageMinimapButton:SetHitRectInsets(0, 0, 0, 0)
+
+				-- Set instance difficulty layout
+				MinimapCluster.InstanceDifficulty:ClearAllPoints()
+				MinimapCluster.InstanceDifficulty:SetPoint("TOPRIGHT", MinimapCluster, "TOPRIGHT", -10, -22)
 
 				-- Setup hybrid minimap when available
 				local function SetHybridMap()
@@ -5780,6 +5747,14 @@
 				-- Single spell IDs
 				["TransLantern"] = {44212}, -- Weighted Jack-o'-Lantern
 				["TransWitch"] = {279509}, -- Lucille's Sewing Needle (witch)
+				["TransTurkey"] = {61781}, -- Turkey (Pilgrim's Bounty)
+
+				-- Spraybots
+				["TransSpraybots"] = {
+					--[[Paintbot Orange]] 301892,
+					--[[Paintbot Blue]] 301893,
+					--[[Paintbot Green]] 301894,
+				},
 
 				-- Hallowed Wand costumes
 				["TransHallowed"] = {
@@ -5831,11 +5806,17 @@
 			-- transTable["CancelStealth"] = {1784} -- Debug
 			-- LeaPlusLC["CancelStealth"] = "On"
 
+			-- LeaPlusLC:MakeCB(transPanel, "CancelIntel", "Intel", 16, -352, false, "If checked, Arcane Intellect will be removed when applied.|n|nTHIS IS A TEST.")
+			-- transTable["CancelIntel"] = {1459} -- Debug
+			-- LeaPlusLC["CancelIntel"] = "On"
+
 			-- Add checkboxes
 			LeaPlusLC:MakeTx(transPanel, "General", 16, -72)
 			LeaPlusLC:MakeCB(transPanel, "TransLantern", "Lantern", 16, -92, false, "If checked, the Weighted Jack-o'-Lantern transform will be removed when applied.")
 			LeaPlusLC:MakeCB(transPanel, "TransHallowed", "Hallowed", 16, -112, false, "If checked, the Hallowed Wand transforms will be removed when applied.")
 			LeaPlusLC:MakeCB(transPanel, "TransWitch", "Witch", 16, -132, false, "If checked, the Lucille's Sewing Needle transform (witch) will be removed when applied.")
+			LeaPlusLC:MakeCB(transPanel, "TransTurkey", "Turkey", 16, -152, false, "If checked, the Turkey transform (Pilgrim's Bounty) will be removed when applied.")
+			LeaPlusLC:MakeCB(transPanel, "TransSpraybots", "Spraybots", 16, -172, false, "If checked, the Spraybot transforms will be removed when applied.")
 
 			-- Function to populate cTable with spell IDs for settings that are enabled
 			local function UpdateList()
@@ -6731,17 +6712,6 @@
 
 			end)
 
-		end
-
-		----------------------------------------------------------------------
-		--	Disable sticky editbox
-		----------------------------------------------------------------------
-
-		if LeaPlusLC["NoStickyEditbox"] == "On" then
-			hooksecurefunc("ChatEdit_OnEditFocusLost", function(self)
-				ChatEdit_DeactivateChat(self)
-				ChatEdit_ClearChat(self)
-			end)
 		end
 
 		----------------------------------------------------------------------
@@ -7651,31 +7621,9 @@
 
 			-- Function to highlight chat tabs and click to scroll to bottom
 			local function HighlightTabs(chtfrm)
-				-- Set position of bottom button
-				_G[chtfrm].ScrollToBottomButton.Flash:SetTexture("Interface/BUTTONS/GRADBLUE.png")
-				_G[chtfrm].ScrollToBottomButton:ClearAllPoints()
-				_G[chtfrm].ScrollToBottomButton:SetPoint("BOTTOM",_G[chtfrm .. "Tab"],0,-4)
-				_G[chtfrm].ScrollToBottomButton:Show()
-				_G[chtfrm].ScrollToBottomButton:SetWidth(_G[chtfrm .. "Tab"]:GetWidth() - 12)
-				_G[chtfrm].ScrollToBottomButton:SetHeight(2)
-				_G[chtfrm].ScrollToBottomButton:EnableMouse(false)
 
-				-- Resize bottom button according to tab size
-				_G[chtfrm .. "Tab"]:SetScript("OnSizeChanged", function()
-					for j = 1, 50 do
-						-- Resize bottom button to tab width
-						if _G["ChatFrame" .. j] and _G["ChatFrame" .. j].ScrollToBottomButton then
-							_G["ChatFrame" .. j].ScrollToBottomButton:SetWidth(_G["ChatFrame" .. j .. "Tab"]:GetWidth() - 12)
-						end
-					end
-					-- If combat log is hidden, resize it's bottom button
-					if LeaPlusLC["NoCombatLogTab"] == "On" and not LeaLockList["NoCombatLogTab"] then
-						if _G["ChatFrame2"].ScrollToBottomButton then
-							-- Resize combat log bottom button
-							_G["ChatFrame2"].ScrollToBottomButton:SetWidth(0.1);
-						end
-					end
-				end)
+				-- Hide bottom button
+				_G[chtfrm].ScrollToBottomButton:SetSize(0.1, 0.1) -- Positions it away
 
 				-- Remove click from the bottom button
 				_G[chtfrm].ScrollToBottomButton:SetScript("OnClick", nil)
@@ -7684,12 +7632,36 @@
 				_G[chtfrm].ScrollToBottomButton:SetNormalTexture("")
 				_G[chtfrm].ScrollToBottomButton:SetHighlightTexture("")
 				_G[chtfrm].ScrollToBottomButton:SetPushedTexture("")
+				_G[chtfrm].ScrollToBottomButton:SetDisabledTexture("")
 
 				-- Always scroll to bottom when clicking a tab
 				_G[chtfrm .. "Tab"]:HookScript("OnClick", function(self,arg1)
 					if arg1 == "LeftButton" then
-						_G[chtfrm]:ScrollToBottom();
+						_G[chtfrm]:ScrollToBottom()
 					end
+				end)
+
+				-- Create new bottom button under tab
+				_G[chtfrm .. "Tab"].newglow = _G[chtfrm .. "Tab"]:CreateTexture(nil, "BACKGROUND")
+				_G[chtfrm .. "Tab"].newglow:ClearAllPoints()
+				_G[chtfrm .. "Tab"].newglow:SetPoint("BOTTOMLEFT", _G[chtfrm .. "Tab"], "BOTTOMLEFT", 0, 0)
+				_G[chtfrm .. "Tab"].newglow:SetTexture("Interface\\ChatFrame\\ChatFrameTab-NewMessage")
+				_G[chtfrm .. "Tab"].newglow:SetWidth(_G[chtfrm .. "Tab"]:GetWidth())
+				_G[chtfrm .. "Tab"].newglow:SetVertexColor(0.6, 0.6, 1, 1)
+				_G[chtfrm .. "Tab"].newglow:Hide()
+
+				-- Show new bottom button when old one glows
+				_G[chtfrm].ScrollToBottomButton.Flash:HookScript("OnShow", function(self,arg1)
+					_G[chtfrm .. "Tab"].newglow:Show()
+				end)
+
+				_G[chtfrm].ScrollToBottomButton.Flash:HookScript("OnHide", function(self,arg1)
+					_G[chtfrm .. "Tab"].newglow:Hide()
+				end)
+
+				-- Match new bottom button size to tab
+				_G[chtfrm .. "Tab"]:HookScript("OnSizeChanged", function()
+					_G[chtfrm .. "Tab"].newglow:SetWidth(_G[chtfrm .. "Tab"]:GetWidth())
 				end)
 
 			end
@@ -7707,14 +7679,35 @@
 			hooksecurefunc("FCF_OpenTemporaryWindow", function(chatType)
 				local cf = FCF_GetCurrentChatFrame():GetName() or nil
 				if cf then
+
 					-- Set options for temporary frame
 					AddMouseScroll(cf)
 					HideButtons(cf)
 					HighlightTabs(cf)
-					-- Resize flashing alert to match tab width
-					_G[cf .. "Tab"]:SetScript("OnSizeChanged", function()
-						_G[cf].ScrollToBottomButton:SetWidth(_G[cf .. "Tab"]:GetWidth()-10)
+
+					-- Create new bottom button under tab
+					_G[cf .. "Tab"].newglow = _G[cf .. "Tab"]:CreateTexture(nil, "BACKGROUND")
+					_G[cf .. "Tab"].newglow:ClearAllPoints()
+					_G[cf .. "Tab"].newglow:SetPoint("BOTTOMLEFT", _G[cf .. "Tab"], "BOTTOMLEFT", 0, 0)
+					_G[cf .. "Tab"].newglow:SetTexture("Interface\\ChatFrame\\ChatFrameTab-NewMessage")
+					_G[cf .. "Tab"].newglow:SetWidth(_G[cf .. "Tab"]:GetWidth())
+					_G[cf .. "Tab"].newglow:SetVertexColor(0.6, 0.6, 1, 1)
+					_G[cf .. "Tab"].newglow:Hide()
+
+					-- Show new bottom button when old one glows
+					_G[cf].ScrollToBottomButton.Flash:HookScript("OnShow", function(self,arg1)
+						_G[cf .. "Tab"].newglow:Show()
 					end)
+
+					_G[cf].ScrollToBottomButton.Flash:HookScript("OnHide", function(self,arg1)
+						_G[cf .. "Tab"].newglow:Hide()
+					end)
+
+					-- Match new bottom button size to tab
+					_G[cf .. "Tab"]:HookScript("OnSizeChanged", function()
+						_G[cf .. "Tab"].newglow:SetWidth(_G[cf .. "Tab"]:GetWidth())
+					end)
+
 				end
 			end)
 
@@ -7814,7 +7807,7 @@
 		-- Recent chat window
 		----------------------------------------------------------------------
 
-		if LeaPlusLC["RecentChatWindow"] == "On" then
+		if LeaPlusLC["RecentChatWindow"] == "On" and not LeaLockList["RecentChatWindow"] then
 
 			-- Create recent chat frame (LeaPlusLC.DF: Using custom template)
 			local editFrame = CreateFrame("ScrollFrame", nil, UIParent, "LeaPlusInputScrollFrameTemplate")
@@ -9334,19 +9327,14 @@
 
 					end
 
-					-- Add target line (LeaPlusLC.DF: Causes taint in 10.0.2 - Combat, hover tooltip, open spell book, hover spells)
+					-- Add target line
 					GameTooltip:AddLine(ttTarget .. ": " .. LT["Target"])
 
 				end
 
 			end
 
-			if TooltipDataProcessor then -- 10.0.2
-				-- This causes block taint - enter combat, open spell book, hover over spell
-				TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Unit, ShowTip)
-			else
-				GameTooltip:HookScript("OnTooltipSetUnit", ShowTip)
-			end
+			TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Unit, ShowTip)
 
 		end
 
@@ -9354,7 +9342,7 @@
 		--	Move chat editbox to top
 		----------------------------------------------------------------------
 
-		if LeaPlusLC["MoveChatEditBoxToTop"] == "On" then
+		if LeaPlusLC["MoveChatEditBoxToTop"] == "On" and not LeaLockList["MoveChatEditBoxToTop"] then
 
 			-- Set options for normal chat frames
 			for i = 1, 50 do
@@ -9572,7 +9560,7 @@
 		-- Show first run message
 		if not LeaPlusDB["FirstRunMessageSeen"] then
 			C_Timer.After(1, function()
-				LeaPlusLC:Print(L["Enter"] .. " |cff00ff00" .. "/ltp" .. "|r " .. L["or click the minimap button to open Leatrix Plus."])
+				LeaPlusLC:Print(L["Enter"] .. " |cff00ff00" .. "/run leaplus()" .. "|r " .. L["or click the minimap button to open Leatrix Plus."])
 				LeaPlusDB["FirstRunMessageSeen"] = true
 			end)
 		end
@@ -9595,7 +9583,6 @@
 		-- Flares (world markers)
 		----------------------------------------------------------------------
 
-		-- LeaPlusLC.DF: Block taint when closing the keybindings game settings panel in 10.0.2
 		do
 			local raidTable = {L["Flare: Square"], L["Flare: Triangle"], L["Flare: Diamond"], L["Flare: Cross"], L["Flare: Star"], L["Flare: Circle"], L["Flare: Moon"], L["Flare: Skull"], L["Flare: Clear all"]}
 			for i = 1, 9 do
@@ -9607,7 +9594,8 @@
 				else
 					btn:SetAttribute("macrotext", "/clearworldmarker " .. i .. "\n/worldmarker " .. i)
 				end
-				btn:RegisterForClicks("AnyDown")
+				-- btn:RegisterForClicks("AnyDown") -- Shadowlands
+				btn:RegisterForClicks("AnyUp", "AnyDown") -- Currently needed in Dragonflight
 			end
 		end
 
@@ -10513,7 +10501,7 @@
 			subTitle:ClearAllPoints()
 			subTitle:SetPoint("BOTTOM", 0, 72)
 
-			local slashTitle = LeaPlusLC:MakeTx(interPanel, "/ltp", 0, 0)
+			local slashTitle = LeaPlusLC:MakeTx(interPanel, "/run leaplus()", 0, 0)
 			slashTitle:SetFont(slashTitle:GetFont(), 72)
 			slashTitle:ClearAllPoints()
 			slashTitle:SetPoint("BOTTOM", subTitle, "TOP", 0, 40)
@@ -10524,7 +10512,6 @@
 			pTex:SetAlpha(0.2)
 			pTex:SetTexCoord(0, 1, 1, 0)
 
-			-- LeaPlusLC.DF - Block taint when opening keybindings menu and closing settings panel in 10.0.2
 			expTitle:SetText(L["Dragonflight"])
 			local category = Settings.RegisterCanvasLayoutCategory(interPanel, L["Leatrix Plus"])
 			Settings.RegisterAddOnCategory(category)
@@ -10816,7 +10803,6 @@
 				LeaPlusLC:LoadVarNum("LeaPlusChatFontSize", 20, 12, 48)		-- Chat font size value
 
 				LeaPlusLC:LoadVarChk("NoStickyChat", "Off")					-- Disable sticky chat
-				LeaPlusLC:LoadVarChk("NoStickyEditbox", "Off")				-- Disable sticky editbox
 				LeaPlusLC:LoadVarChk("UseArrowKeysInChat", "Off")			-- Use arrow keys in chat
 				LeaPlusLC:LoadVarChk("NoChatFade", "Off")					-- Disable chat fade
 				LeaPlusLC:LoadVarChk("UnivGroupColor", "Off")				-- Universal group color
@@ -10892,7 +10878,7 @@
 				LeaPlusLC:LoadVarNum("BordersRight", 0, 0, 300)				-- Right border
 				LeaPlusLC:LoadVarNum("BordersAlpha", 0, 0, 0.9)				-- Border alpha
 				LeaPlusLC:LoadVarChk("ShowPlayerChain", "Off")				-- Show player chain
-				LeaPlusLC:LoadVarNum("PlayerChainMenu", 1, 1, 2)			-- Player chain dropdown value
+				LeaPlusLC:LoadVarNum("PlayerChainMenu", 1, 1, 3)			-- Player chain dropdown value
 				LeaPlusLC:LoadVarChk("ShowReadyTimer", "Off")				-- Show ready timer
 				LeaPlusLC:LoadVarChk("ShowWowheadLinks", "Off")				-- Show Wowhead links
 				LeaPlusLC:LoadVarChk("WowheadLinkComments", "Off")			-- Show Wowhead links to comments
@@ -10964,7 +10950,6 @@
 				LeaPlusLC:LoadVarChk("NoRestedEmotes", "Off")				-- Silence rested emotes
 				LeaPlusLC:LoadVarChk("MuteGameSounds", "Off")				-- Mute game sounds
 
-				LeaPlusLC:LoadVarChk("NoBagAutomation", "Off")				-- Disable bag automation
 				LeaPlusLC:LoadVarChk("NoPetAutomation", "Off")				-- Disable pet automation
 				LeaPlusLC:LoadVarChk("NoRaidRestrictions", "Off")			-- Remove raid restrictions
 				LeaPlusLC:LoadVarChk("NoConfirmLoot", "Off")				-- Disable loot warnings
@@ -10990,6 +10975,35 @@
 				-- Start page
 				LeaPlusLC:LoadVarNum("LeaStartPage", 0, 0, LeaPlusLC["NumberOfPages"])
 
+
+				-- Disable items that conflict with Glass
+				if LeaPlusLC.Glass then
+
+					-- Function to disable and lock an option and add a note to the tooltip
+					local function LockOption(option)
+						LeaLockList[option] = LeaPlusLC[option]
+						LeaPlusLC:LockItem(LeaPlusCB[option], true)
+						LeaPlusCB[option].tiptext = LeaPlusCB[option].tiptext .. "|n|n|cff00AAFF" .. L["Cannot be used with Glass."]
+						-- Remove hover from configuration button if there is one
+						local temp = {LeaPlusCB[option]:GetChildren()}
+						if temp and temp[1] and temp[1].t and temp[1].t:GetTexture() == 311225 then
+							temp[1]:SetHighlightTexture(0)
+							temp[1]:SetScript("OnEnter", nil)
+						end
+					end
+
+					LockOption("UseEasyChatResizing") -- Use easy resizing
+					LockOption("NoCombatLogTab") -- Hide the combat log
+					LockOption("NoChatButtons") -- Hide chat buttons
+					LockOption("NoSocialButton") -- Hide social button
+					LockOption("UnclampChat") -- Unclamp chat frame
+					LockOption("MoveChatEditBoxToTop") -- Move editbox to top
+					LockOption("SetChatFontSize") -- Set chat font size
+					LockOption("NoChatFade") --  Disable chat fade
+					LockOption("RecentChatWindow") -- Recent chat window
+
+				end
+
 				-- Disable items that conflict with ElvUI
 				if LeaPlusLC.ElvUI then
 					local E = LeaPlusLC.ElvUI
@@ -11003,6 +11017,12 @@
 								LeaPlusCB[option].tiptext = LeaPlusCB[option].tiptext .. "|n|n|cff00AAFF" .. L["Cannot be used with ElvUI."]
 							else
 								LeaPlusCB[option].tiptext = LeaPlusCB[option].tiptext .. "|n|n|cff00AAFF" .. L["Cannot be used with ElvUI"] .. " " .. L[emodule] .. " " .. L["module"] .. "."
+							end
+							-- Remove hover from configuration button if there is one
+							local temp = {LeaPlusCB[option]:GetChildren()}
+							if temp and temp[1] and temp[1].t and temp[1].t:GetTexture() == 311225 then
+								temp[1]:SetHighlightTexture(0)
+								temp[1]:SetScript("OnEnter", nil)
 							end
 						end
 
@@ -11040,7 +11060,6 @@
 
 						-- Bags
 						if E.private.bags.enable then
-							LockOption("NoBagAutomation", "Bags") -- Disable bag automation
 							LockOption("HideCleanupBtns", "Bags") -- Hide clean-up buttons
 						end
 
@@ -11164,7 +11183,6 @@
 			LeaPlusDB["LeaPlusChatFontSize"]	= LeaPlusLC["LeaPlusChatFontSize"]
 
 			LeaPlusDB["NoStickyChat"] 			= LeaPlusLC["NoStickyChat"]
-			LeaPlusDB["NoStickyEditbox"] 		= LeaPlusLC["NoStickyEditbox"]
 			LeaPlusDB["UseArrowKeysInChat"]		= LeaPlusLC["UseArrowKeysInChat"]
 			LeaPlusDB["NoChatFade"]				= LeaPlusLC["NoChatFade"]
 			LeaPlusDB["UnivGroupColor"]			= LeaPlusLC["UnivGroupColor"]
@@ -11313,7 +11331,6 @@
 			LeaPlusDB["NoRestedEmotes"]			= LeaPlusLC["NoRestedEmotes"]
 			LeaPlusDB["MuteGameSounds"]			= LeaPlusLC["MuteGameSounds"]
 
-			LeaPlusDB["NoBagAutomation"]		= LeaPlusLC["NoBagAutomation"]
 			LeaPlusDB["NoPetAutomation"]		= LeaPlusLC["NoPetAutomation"]
 			LeaPlusDB["NoRaidRestrictions"]		= LeaPlusLC["NoRaidRestrictions"]
 			LeaPlusDB["NoConfirmLoot"] 			= LeaPlusLC["NoConfirmLoot"]
@@ -13052,8 +13069,8 @@
 			elseif str == "deletelooms" then
 				-- Delete heirlooms from bags
 				for bag = 0, 4 do
-					for slot = 1, GetContainerNumSlots(bag) do
-						local name = GetContainerItemLink(bag, slot)
+					for slot = 1, C_Container.GetContainerNumSlots(bag) do
+						local name = C_Container.GetContainerItemLink(bag, slot)
 						if name and string.find(name, "00ccff") then
 							print(name)
 							PickupContainerItem(bag, slot)
@@ -13832,7 +13849,6 @@
 				LeaPlusDB["LeaPlusChatFontSize"] = 20			-- Chat font size value
 
 				LeaPlusDB["NoStickyChat"] = "On"				-- Disable sticky chat
-				LeaPlusDB["NoStickyEditbox"] = "On"				-- Disable sticky editbox
 				LeaPlusDB["UseArrowKeysInChat"] = "On"			-- Use arrow keys in chat
 				LeaPlusDB["NoChatFade"] = "On"					-- Disable chat fade
 				LeaPlusDB["UnivGroupColor"] = "On"				-- Universal group color
@@ -13955,7 +13971,6 @@
 				LeaPlusDB["NoRestedEmotes"] = "On"				-- Silence rested emotes
 				LeaPlusDB["MuteGameSounds"] = "On"				-- Mute game sounds
 
-				LeaPlusDB["NoBagAutomation"] = "On"				-- Disable bag automation
 				LeaPlusDB["NoPetAutomation"] = "On"				-- Disable pet automation
 				LeaPlusDB["NoRaidRestrictions"] = "On"			-- Remove raid restrictions
 				LeaPlusDB["NoConfirmLoot"] = "On"				-- Disable loot warnings
@@ -14077,8 +14092,8 @@
 	end
 
 	-- Slash command for global function
-	_G.SLASH_Leatrix_Plus1 = "/ltp"
-	_G.SLASH_Leatrix_Plus2 = "/leaplus"
+	--_G.SLASH_Leatrix_Plus1 = "/ltp"
+	--_G.SLASH_Leatrix_Plus2 = "/leaplus"
 	SlashCmdList["Leatrix_Plus"] = function(self)
 		-- Run slash command function
 		LeaPlusLC:SlashFunc(self)
@@ -14088,6 +14103,11 @@
 	_G.SLASH_LEATRIX_PLUS_RL1 = "/rl"
 	SlashCmdList["LEATRIX_PLUS_RL"] = function()
 		ReloadUI()
+	end
+
+	-- Replacement for broken slash command system
+	function leaplus(self)
+		LeaPlusLC:SlashFunc(self)
 	end
 
 ----------------------------------------------------------------------
@@ -14269,14 +14289,13 @@
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Mechanics"					, 	340, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoStickyChat"				, 	"Disable sticky chat"			,	340, -92,	true,	"If checked, sticky chat will be disabled.|n|nNote that this does not apply to temporary chat windows.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoStickyEditbox"			, 	"Disable sticky editbox"		,	340, -112,	true,	"If checked, the editbox will close when it loses focus.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "UseArrowKeysInChat"		, 	"Use arrow keys in chat"		, 	340, -132, 	true,	"If checked, you can press the arrow keys to move the insertion point left and right in the chat frame.|n|nIf unchecked, the arrow keys will use the default keybind setting.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoChatFade"				, 	"Disable chat fade"				, 	340, -152, 	true,	"If checked, chat text will not fade out after a time period.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "UnivGroupColor"			,	"Universal group color"			,	340, -172,	false,	"If checked, raid chat and instance chat will both be colored blue (to match the default party chat color).")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "RecentChatWindow"			,	"Recent chat window"			, 	340, -192, 	true,	"If checked, you can hold down the control key and click a chat tab to view recent chat in a copy-friendly window.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MaxChatHstory"				,	"Increase chat history"			, 	340, -212, 	true,	"If checked, your chat history will increase to 4096 lines.  If unchecked, the default will be used (128 lines).|n|nEnabling this option may prevent some chat text from showing during login.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "FilterChatMessages"		, 	"Filter chat messages"			,	340, -232, 	true,	"If checked, you can block spell links, drunken spam and duel spam.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "RestoreChatMessages"		, 	"Restore chat messages"			,	340, -252, 	true,	"If checked, recent chat will be restored when you reload your interface.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "UseArrowKeysInChat"		, 	"Use arrow keys in chat"		, 	340, -112, 	true,	"If checked, you can press the arrow keys to move the insertion point left and right in the chat frame.|n|nIf unchecked, the arrow keys will use the default keybind setting.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoChatFade"				, 	"Disable chat fade"				, 	340, -132, 	true,	"If checked, chat text will not fade out after a time period.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "UnivGroupColor"			,	"Universal group color"			,	340, -152,	false,	"If checked, raid chat and instance chat will both be colored blue (to match the default party chat color).")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "RecentChatWindow"			,	"Recent chat window"			, 	340, -172, 	true,	"If checked, you can hold down the control key and click a chat tab to view recent chat in a copy-friendly window.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MaxChatHstory"				,	"Increase chat history"			, 	340, -192, 	true,	"If checked, your chat history will increase to 4096 lines.  If unchecked, the default will be used (128 lines).|n|nEnabling this option may prevent some chat text from showing during login.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "FilterChatMessages"		, 	"Filter chat messages"			,	340, -212, 	true,	"If checked, you can block spell links, drunken spam and duel spam.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "RestoreChatMessages"		, 	"Restore chat messages"			,	340, -232, 	true,	"If checked, recent chat will be restored when you reload your interface.")
 
 	LeaPlusLC:CfgBtn("NoChatButtonsBtn", LeaPlusCB["NoChatButtons"])
 	LeaPlusLC:CfgBtn("SetChatFontSizeBtn", LeaPlusCB["SetChatFontSize"])
@@ -14381,19 +14400,16 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoRestedEmotes"			, 	"Silence rested emotes"			,	146, -172, 	true,	"If checked, emote sounds will be silenced while your character is:|n|n- resting|n- in a pet battle|n- at the Halfhill Market|n- at the Grim Guzzler|n|nEmote sounds will be enabled when none of the above apply.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MuteGameSounds"			, 	"Mute game sounds"				,	146, -192, 	false,	"If checked, you will be able to mute a selection of game sounds.")
 
-	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Game Options"				, 	146, -232)
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoBagAutomation"			, 	"Disable bag automation"		, 	146, -252, 	true,	"If checked, your bags will not be opened or closed automatically when you interact with a merchant, bank or mailbox.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoPetAutomation"			, 	"Disable pet automation"		, 	146, -272, 	true, 	"If checked, battle pets which are automatically summoned will be dismissed within a few seconds.|n|nThis includes dragging a pet onto the first team slot in the pet journal and entering a battle pet team save command.|n|nNote that pets which are automatically summoned during combat will be dismissed when combat ends.")
-
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Game Options"				, 	340, -72)
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoRaidRestrictions"		, 	"Remove raid restrictions"		,	340, -92, 	false,	"If checked, converting a party group to a raid group will succeed even if there are low level characters in the group.|n|nEveryone in the group needs to have Leatrix Plus installed with this option enabled.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoConfirmLoot"				, 	"Disable loot warnings"			,	340, -112, 	false,	"If checked, confirmations will no longer appear when you choose a loot roll option or attempt to sell or mail a tradable item.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "FasterLooting"				, 	"Faster auto loot"				,	340, -132, 	true,	"If checked, the amount of time it takes to auto loot creatures will be significantly reduced.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "FasterMovieSkip"			, 	"Faster movie skip"				,	340, -152, 	true,	"If checked, you will be able to cancel cinematics without being prompted for confirmation.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "CombatPlates"				, 	"Combat plates"					,	340, -172, 	true,	"If checked, enemy nameplates will be shown during combat and hidden when combat ends.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "EasyItemDestroy"			, 	"Easy item destroy"				,	340, -192, 	true,	"If checked, you will no longer need to type delete when destroying a superior quality item.|n|nIn addition, item links will be shown in all item destroy confirmation windows.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "LockoutSharing"			, 	"Lockout sharing"				, 	340, -212, 	true, 	"If checked, the 'Display only character achievements to others' setting in the game options panel ('Social' menu) will be permanently checked and locked.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoTransforms"				, 	"Remove transforms"				, 	340, -232, 	false, 	"If checked, you will be able to have certain transforms removed automatically when they are applied to your character.|n|nYou can choose the transforms in the configuration panel.|n|nExamples include Weighted Jack-o'-Lantern and Hallowed Wand.|n|nTransforms applied during combat will be removed when combat ends.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoPetAutomation"			, 	"Disable pet automation"		, 	340, -92, 	true, 	"If checked, battle pets which are automatically summoned will be dismissed within a few seconds.|n|nThis includes dragging a pet onto the first team slot in the pet journal and entering a battle pet team save command.|n|nNote that pets which are automatically summoned during combat will be dismissed when combat ends.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoRaidRestrictions"		, 	"Remove raid restrictions"		,	340, -112, 	false,	"If checked, converting a party group to a raid group will succeed even if there are low level characters in the group.|n|nEveryone in the group needs to have Leatrix Plus installed with this option enabled.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoConfirmLoot"				, 	"Disable loot warnings"			,	340, -132, 	false,	"If checked, confirmations will no longer appear when you choose a loot roll option or attempt to sell or mail a tradable item.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "FasterLooting"				, 	"Faster auto loot"				,	340, -152, 	true,	"If checked, the amount of time it takes to auto loot creatures will be significantly reduced.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "FasterMovieSkip"			, 	"Faster movie skip"				,	340, -172, 	true,	"If checked, you will be able to cancel cinematics without being prompted for confirmation.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "CombatPlates"				, 	"Combat plates"					,	340, -192, 	true,	"If checked, enemy nameplates will be shown during combat and hidden when combat ends.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "EasyItemDestroy"			, 	"Easy item destroy"				,	340, -212, 	true,	"If checked, you will no longer need to type delete when destroying a superior quality item.|n|nIn addition, item links will be shown in all item destroy confirmation windows.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "LockoutSharing"			, 	"Lockout sharing"				, 	340, -232, 	true, 	"If checked, the 'Display only character achievements to others' setting in the game options panel ('Social' menu) will be permanently checked and locked.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoTransforms"				, 	"Remove transforms"				, 	340, -252, 	false, 	"If checked, you will be able to have certain transforms removed automatically when they are applied to your character.|n|nYou can choose the transforms in the configuration panel.|n|nExamples include Weighted Jack-o'-Lantern and Hallowed Wand.|n|nTransforms applied during combat will be removed when combat ends.")
 
 	LeaPlusLC:CfgBtn("SetWeatherDensityBtn", LeaPlusCB["SetWeatherDensity"])
 	LeaPlusLC:CfgBtn("MuteGameSoundsBtn", LeaPlusCB["MuteGameSounds"])

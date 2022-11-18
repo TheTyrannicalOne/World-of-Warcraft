@@ -16,7 +16,9 @@ local lower = string.lower
 local insert, remove, sort, wipe = table.insert, table.remove, table.sort, table.wipe
 
 local GetPlayerAuraBySpellID = C_UnitAuras.GetPlayerAuraBySpellID
-local FindPlayerAuraByID = ns.FindPlayerAuraByID
+local FindPlayerAuraByID, FindStringInInventoryItemTooltip = ns.FindPlayerAuraByID, ns.FindStringInInventoryItemTooltip
+local FlagDisabledSpells = ns.FlagDisabledSpells
+local WipeCovenantCache = ns.WipeCovenantCache
 
 local CGetItemInfo = ns.CachedGetItemInfo
 local RC = LibStub( "LibRangeCheck-2.0" )
@@ -360,25 +362,25 @@ end
 
 RegisterEvent( "PLAYER_ENTERING_WORLD", function( event, login, reload )
     if login or reload then
-    Hekili.PLAYER_ENTERING_WORLD = true
-    Hekili:SpecializationChanged()
-    Hekili:RestoreDefaults()
+        Hekili.PLAYER_ENTERING_WORLD = true
+        Hekili:SpecializationChanged()
+        Hekili:RestoreDefaults()
 
-    ns.checkImports()
-    ns.updateGear()
+        ns.checkImports()
+        ns.updateGear()
 
-    if state.combat == 0 and InCombatLockdown() then
-        state.combat = GetTime() - 0.01
-        Hekili:UpdateDisplayVisibility()
+        if state.combat == 0 and InCombatLockdown() then
+            state.combat = GetTime() - 0.01
+            Hekili:UpdateDisplayVisibility()
+        end
+
+        local _, zone = GetInstanceInfo()
+        state.bg = zone == "pvp"
+        state.arena = zone == "arena"
+        state.torghast = IsInJailersTower()
+
+        Hekili:BuildUI()
     end
-
-    local _, zone = GetInstanceInfo()
-    state.bg = zone == "pvp"
-    state.arena = zone == "arena"
-    state.torghast = IsInJailersTower()
-
-    Hekili:BuildUI()
-end
 end )
 
 
@@ -475,6 +477,8 @@ function ns.updateTalents()
         end
     end
 
+    WipeCovenantCache()
+    FlagDisabledSpells()
 end
 
 
@@ -783,31 +787,20 @@ do
 
                 if spellID and SpellIsSelfBuff( spellID ) then
                     state.trinket.t1.__has_use_buff = not ( class.auras[ spellID ] and class.auras[ spellID ].ignore_buff )
-                    state.trinket.t1.__use_buff_duration = ( class.auras[ spellID ] and class.auras[ spellID ].duration )
+                    state.trinket.t1.__use_buff_duration = class.auras[ spellID ] and class.auras[ spellID ].duration or 0.01
                 elseif class.abilities[ tSpell ].self_buff then
                     state.trinket.t1.__has_use_buff = true
-                    state.trinket.t1.__use_buff_duration = class.auras[ class.abilities[ tSpell ].self_buff ].duration
+                    state.trinket.t1.__use_buff_duration = class.auras[ class.abilities[ tSpell ].self_buff ].duration or 0.01
                 end
             end
 
-            ns.Tooltip:SetOwner( UIParent )
-            ns.Tooltip:SetInventoryItem( "player", 13 )
-
-            local i = 0
-            while( true ) do
-                i = i + 1
-                local ttLine = _G[ "HekiliTooltipTextLeft" .. i ]
-
-                if not ttLine then break end
-
-                local line = ttLine:GetText()
-
-                if line and line:match( "^" .. ITEM_SPELL_TRIGGER_ONEQUIP ) then
-                    state.trinket.t1.__proc = true
-                end
+            if not isUsable then
+                state.trinket.t1.cooldown = state.cooldown.null_cooldown
+            else
+                state.trinket.t1.cooldown = nil
             end
 
-            ns.Tooltip:Hide()
+            state.trinket.t1.__proc = FindStringInInventoryItemTooltip( "^" .. ITEM_SPELL_TRIGGER_ONEQUIP, 13, true, true )
         end
 
         local T2 = GetInventoryItemID( "player", 14 )
@@ -831,31 +824,20 @@ do
 
                 if spellID and SpellIsSelfBuff( spellID ) then
                     state.trinket.t2.__has_use_buff = not ( class.auras[ spellID ] and class.auras[ spellID ].ignore_buff )
-                    state.trinket.t2.__use_buff_duration = ( class.auras[ spellID ] and class.auras[ spellID ].duration )
+                    state.trinket.t2.__use_buff_duration = class.auras[ spellID ] and class.auras[ spellID ].duration or 0.01
                 elseif tSpell and class.abilities[ tSpell ].self_buff then
                     state.trinket.t2.__has_use_buff = true
-                    state.trinket.t2.__use_buff_duration = class.auras[ class.abilities[ tSpell ].self_buff ].duration
+                    state.trinket.t2.__use_buff_duration = class.auras[ class.abilities[ tSpell ].self_buff ].duration or 0.01
                 end
             end
 
-            ns.Tooltip:SetOwner( UIParent )
-            ns.Tooltip:SetInventoryItem( "player", 14 )
-
-            local i = 0
-            while( true ) do
-                i = i + 1
-                local ttLine = _G[ "HekiliTooltipTextLeft" .. i ]
-
-                if not ttLine then break end
-
-                local line = ttLine:GetText()
-
-                if line and line:match( "^" .. ITEM_SPELL_TRIGGER_ONEQUIP ) then
-                    state.trinket.t2.__proc = true
-                end
+            if not isUsable then
+                state.trinket.t2.cooldown = state.cooldown.null_cooldown
+            else
+                state.trinket.t2.cooldown = nil
             end
 
-            ns.Tooltip:Hide()
+            state.trinket.t2.__proc = FindStringInInventoryItemTooltip( "^" .. ITEM_SPELL_TRIGGER_ONEQUIP, 14, true, true )
         end
 
         state.main_hand.size = 0
@@ -978,8 +960,6 @@ do
     local talentEvents = {
         "TRAIT_CONFIG_CREATED",
         "ACTIVE_COMBAT_CONFIG_CHANGED",
-        "PLAYER_REGEN_ENABLED",
-        "PLAYER_REGEN_DISABLED",
         "STARTER_BUILD_ACTIVATION_FAILED",
         "TRAIT_CONFIG_DELETED",
         "TRAIT_CONFIG_UPDATED",
@@ -1167,10 +1147,12 @@ RegisterUnitEvent( "UNIT_SPELLCAST_SUCCEEDED", "player", "target", function( eve
         lowLevelWarned = true
     end
 
-    local ability = class.abilities[ spellID ]
+    if unit == "player" then
+        local ability = class.abilities[ spellID ]
 
-    if ability and state.holds[ ability.key ] then
-        Hekili:RemoveHold( ability.key, true )
+        if ability and state.holds[ ability.key ] then
+            Hekili:RemoveHold( ability.key, true )
+        end
     end
 
     Hekili:ForceUpdate( event, true )
@@ -1188,6 +1170,46 @@ RegisterUnitEvent( "UNIT_SPELLCAST_START", "player", "target", function( event, 
 
     Hekili:ForceUpdate( event )
 end )
+
+
+do
+    local empowerment = state.empowerment
+    local stages = empowerment.stages
+
+    RegisterUnitEvent( "UNIT_SPELLCAST_EMPOWER_START", "player", nil, function( event, unit, cast, spellID )
+        local ability = class.abilities[ spellID ]
+        if not ability then return end
+
+        wipe( stages )
+        local start = GetTime()
+
+        empowerment.spell = ability.key
+        empowerment.start = start
+
+        for i = 1, 4 do
+            n = GetUnitEmpowerStageDuration( "player", i - 1 )
+            if n == 0 then break end
+
+            if i == 1 then insert( stages, start + n * 0.001 )
+            else insert( stages, stages[ i - 1 ] + n * 0.001 ) end
+        end
+
+        empowerment.finish = stages[ #stages ]
+        empowerment.hold = empowerment.finish + GetUnitEmpowerHoldAtMaxTime( "player" ) * 0.001
+
+        Hekili:ForceUpdate( event, true )
+    end )
+
+    RegisterUnitEvent( "UNIT_SPELLCAST_EMPOWER_STOP", "player", nil, function( event, unit, cast, spellID )
+        empowerment.spell = nil
+
+        empowerment.start = 0
+        empowerment.finish = 0
+        empowerment.hold = 0
+
+        Hekili:ForceUpdate( event, true )
+    end )
+end
 
 
 RegisterUnitEvent( "UNIT_SPELLCAST_CHANNEL_START", "player", nil, function( event, unit, cast, spellID )
@@ -2070,9 +2092,9 @@ do
             wipe( v.lower )
         end
 
-        -- Bartender4 support (Original from tanichan, rewritten for action bar paging by konstantinkoeppe).
+        --[[ Bartender4 support (Original from tanichan, rewritten for action bar paging by konstantinkoeppe).
         if _G["Bartender4"] then
-            for actionBarNumber = 1, 10 do
+            for actionBarNumber = 1, 15 do
                 local bar = _G["BT4Bar" .. actionBarNumber]
                 for keyNumber = 1, 12 do
                     local actionBarButtonId = (actionBarNumber - 1) * 12 + keyNumber
@@ -2080,42 +2102,44 @@ do
 
                     -- If bar is disabled assume paging / stance switching on bar 1
                     if actionBarNumber > 1 and bar and not bar.disabled then
-                        bindingKeyName = "CLICK BT4Button" .. actionBarButtonId .. ":LeftButton"
+                        bindingKeyName = "CLICK BT4Button" .. actionBarButtonId .. ":Click"
                     end
 
                     StoreKeybindInfo( actionBarNumber, GetBindingKey( bindingKeyName ), GetActionInfo( actionBarButtonId ) )
                 end
             end
 
-            done = true
+            done = true ]]
 
         -- Use ElvUI's actionbars only if they are actually enabled.
-        elseif _G["ElvUI"] and _G[ "ElvUI_Bar1Button1" ] then
+        if _G["ElvUI"] and _G[ "ElvUI_Bar1Button1" ] then
             table.wipe( slotsUsed )
 
-            for i = 1, 10 do
+            for i = 1, 15 do
                 for b = 1, 12 do
                     local btn = _G["ElvUI_Bar" .. i .. "Button" .. b]
 
-                    local binding = btn.bindstring or btn.keyBoundTarget or ( "CLICK " .. btn:GetName() .. ":LeftButton" )
+                    if btn then
+                        local binding = btn.bindstring or btn.keyBoundTarget or ( "CLICK " .. btn:GetName() .. ":LeftButton" )
 
-                    if i > 6 then
-                        -- Checking whether bar is active.
-                        local bar = _G["ElvUI_Bar" .. i]
+                        if i > 6 then
+                            -- Checking whether bar is active.
+                            local bar = _G["ElvUI_Bar" .. i]
 
-                        if not bar or not bar.db.enabled then
-                            binding = "ACTIONBUTTON" .. b
+                            if not bar or not bar.db.enabled then
+                                binding = "ACTIONBUTTON" .. b
+                            end
                         end
-                    end
 
-                    local action, aType = btn._state_action, "spell"
+                        local action, aType = btn._state_action, "spell"
 
-                    if action and type( action ) == "number" then
-                        slotsUsed[ action ] = true
+                        if action and type( action ) == "number" then
+                            slotsUsed[ action ] = true
 
-                        binding = GetBindingKey( binding )
-                        action, aType = GetActionInfo( action )
-                        if binding then StoreKeybindInfo( i, binding, action, aType ) end
+                            binding = GetBindingKey( binding )
+                            action, aType = GetActionInfo( action )
+                            if binding then StoreKeybindInfo( i, binding, action, aType ) end
+                        end
                     end
                 end
             end
@@ -2158,15 +2182,34 @@ do
                 end
             end
 
-            for i = 72, 119 do
+            for i = 72, 143 do
                 if not slotsUsed[ i ] then
                     StoreKeybindInfo( 7 + floor( ( i - 72 ) / 12 ), GetBindingKey( "ACTIONBUTTON" .. 1 + ( i - 72 ) % 12 ), GetActionInfo( i + 1 ) )
                 end
             end
+
+            for i = 144, 155 do
+                if not slotsUsed[ i ] then
+                    StoreKeybindInfo( 13, GetBindingKey( "MULTIACTIONBAR5BUTTON" .. i - 143 ), GetActionInfo( i ) )
+                end
+            end
+
+            for i = 156, 167 do
+                if not slotsUsed[ i ] then
+                    StoreKeybindInfo( 14, GetBindingKey( "MULTIACTIONBAR6BUTTON" .. i - 155 ), GetActionInfo( i ) )
+                end
+            end
+
+            for i = 168, 179 do
+                if not slotsUsed[ i ] then
+                    StoreKeybindInfo( 15, GetBindingKey( "MULTIACTIONBAR7BUTTON" .. i - 167 ), GetActionInfo( i ) )
+                end
+            end
+
         end
 
         if _G.ConsolePort then
-            for i = 1, 120 do
+            for i = 1, 180 do
                 local action, id = GetActionInfo( i )
 
                 if action and id then
@@ -2228,22 +2271,23 @@ local function ReadOneKeybinding( event, slot )
     local ability
     local completed = false
 
-    -- Bartender4 support (Original from tanichan, rewritten for action bar paging by konstantinkoeppe).
+    --[[ Bartender4 support (Original from tanichan, rewritten for action bar paging by konstantinkoeppe).
     if _G["Bartender4"] then
         local bar = _G["BT4Bar" .. actionBarNumber]
         local bindingKeyName = "ACTIONBUTTON" .. keyNumber
 
         -- If bar is disabled assume paging / stance switching on bar 1
         if actionBarNumber > 1 and bar and not bar.disabled then
-            bindingKeyName = "CLICK BT4Button" .. slot .. ":LeftButton"
+            bindingKeyName = "CLICK BT4Button" .. slot .. ":Keybind"
         end
 
         ability = StoreKeybindInfo( actionBarNumber, GetBindingKey( bindingKeyName ), GetActionInfo( slot ) )
 
         if ability then completed = true end
 
-        -- Use ElvUI's actionbars only if they are actually enabled.
-    elseif _G["ElvUI"] and _G["ElvUI_Bar1Button1"] then
+        -- Use ElvUI's actionbars only if they are actually enabled. ]]
+
+    if _G["ElvUI"] and _G["ElvUI_Bar1Button1"] then
         local btn = _G[ "ElvUI_Bar" .. actionBarNumber .. "Button" .. keyNumber ]
 
         if btn then
@@ -2270,7 +2314,7 @@ local function ReadOneKeybinding( event, slot )
     end
 
     if not completed then
-        if actionBarNumber == 1 or actionBarNumber == 2 or actionBarNumber > 6 then
+        if actionBarNumber == 1 or actionBarNumber == 2 or ( actionBarNumber > 6  and actionBarNumber < 13 ) then
             ability = StoreKeybindInfo( keyNumber, GetBindingKey( "ACTIONBUTTON" .. keyNumber ), GetActionInfo( slot ) )
 
         elseif actionBarNumber > 2 and actionBarNumber < 5 then
@@ -2281,6 +2325,15 @@ local function ReadOneKeybinding( event, slot )
 
         elseif actionBarNumber == 6 then
             ability = StoreKeybindInfo( actionBarNumber, GetBindingKey( "MULTIACTIONBAR1BUTTON" .. keyNumber ), GetActionInfo( slot ) )
+
+        elseif actionBarNumber == 13 then
+            ability = StoreKeybindInfo( actionBarNumber, GetBindingKey( "MULTIACTIONBAR5BUTTON" .. keyNumber ), GetActionInfo( slot ) )
+
+        elseif actionBarNumber == 14 then
+            ability = StoreKeybindInfo( actionBarNumber, GetBindingKey( "MULTIACTIONBAR6BUTTON" .. keyNumber ), GetActionInfo( slot ) )
+
+        elseif actionBarNumber == 15 then
+            ability = StoreKeybindInfo( actionBarNumber, GetBindingKey( "MULTIACTIONBAR7BUTTON" .. keyNumber ), GetActionInfo( slot ) )
 
         end
     end

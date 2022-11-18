@@ -12,16 +12,16 @@ local Event = TSM.Include("Util.Event")
 local TempTable = TSM.Include("Util.TempTable")
 local Log = TSM.Include("Util.Log")
 local ItemString = TSM.Include("Util.ItemString")
+local DefaultUI = TSM.Include("Service.DefaultUI")
 local ItemInfo = TSM.Include("Service.ItemInfo")
 local Settings = TSM.Include("Service.Settings")
 local AuctionTracking = TSM.Include("Service.AuctionTracking")
+local TooltipScanning = TSM.Include("Service.TooltipScanning")
 local private = {
 	settings = nil,
 	mailDB = nil,
 	itemDB = nil,
 	quantityDB = nil,
-	isOpen = false,
-	tooltip = nil,
 	callbacks = {},
 	expiresCallbacks = {},
 	cancelAuctionQuery = nil,
@@ -91,8 +91,6 @@ MailTracking:OnSettingsLoad(function()
 		:Commit()
 
 	private.settings.pendingMail[PLAYER_NAME] = private.settings.pendingMail[PLAYER_NAME] or {}
-	Event.Register("MAIL_SHOW", private.MailShowHandler)
-	Event.Register("MAIL_CLOSED", private.MailClosedHandler)
 	Event.Register("MAIL_INBOX_UPDATE", private.MailInboxUpdateHandler)
 
 	if TSM.IsWowClassic() then
@@ -232,16 +230,8 @@ end
 -- Event Handlers
 -- ============================================================================
 
-function private.MailShowHandler()
-	private.isOpen = true
-end
-
-function private.MailClosedHandler()
-	private.isOpen = false
-end
-
 function private.MailInboxUpdateHandler()
-	if not private.isOpen then
+	if not DefaultUI.IsMailVisible() then
 		return
 	end
 
@@ -249,7 +239,7 @@ function private.MailInboxUpdateHandler()
 end
 
 function private.MailInboxUpdateDelayed()
-	if not private.isOpen then
+	if not DefaultUI.IsMailVisible() then
 		return
 	end
 
@@ -359,20 +349,13 @@ function private.ValidateCharacter(character)
 	return result
 end
 
-function private.GetInboxItemLink(index, num)
-	local link = GetInboxItemLink(index, num)
+function private.GetInboxItemLink(index, attachIndex)
+	local link = GetInboxItemLink(index, attachIndex)
 	if ItemString.GetBase(link) ~= ItemString.GetPetCage() then
 		return link
 	end
-
-	-- need to do tooltip scanning to get battlepet links
-	private.tooltip = private.tooltip or CreateFrame("GameTooltip", "TSM4MailingInboxTooltip", UIParent, "GameTooltipTemplate")
-	private.tooltip:SetOwner(UIParent, "ANCHOR_NONE")
-	private.tooltip:ClearLines()
-
-	local _, speciesId, level, breedQuality = private.tooltip:SetInboxItem(index, num)
+	local speciesId, level, breedQuality = TooltipScanning.GetInboxBattlePetInfo(index, attachIndex)
 	assert(speciesId and speciesId > 0)
-	private.tooltip:Hide()
 	return ItemInfo.GetLink(strjoin(":", "p", speciesId, level, breedQuality))
 end
 

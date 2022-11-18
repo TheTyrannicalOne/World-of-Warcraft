@@ -38,3 +38,8 @@ BigWigs_Shadowlands: enabled
 Leatrix_Plus: enabled
 LittleWigs_MistsOfPandaria: enabled
 ElvUI_UnitFramePlugin: disabled
+Blizzard_ObjectiveTracker: enabled
+Blizzard_CompactRaidFrames: enabled
+Blizzard_CombatText: enabled
+XLoot_Options: enabled
+ElvUI_Options: enabled

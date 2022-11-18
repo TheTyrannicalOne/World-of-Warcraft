@@ -1,50 +1,8 @@
 
 ElvCharacterDB = {
+	["CliqueDatatext"] = {
+	},
 	["ChatHistoryLog"] = {
-		{
-			"So basically, legendaries will be useless again, because talents taking over.", -- [1]
-			"Jpierce-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Jpierce-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			195, -- [11]
-			"Player-3683-07BFAD94", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Jpierce|r",
-			[51] = 1666409868,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
-		{
-			"seems they are taking stuff liek that and shaman CB and nerfing it just enough so that tis an option but not a requirement", -- [1]
-			"Healsforyou-Dalaran", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Healsforyou-Dalaran", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			196, -- [11]
-			"Player-3683-0B7EA2C5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Healsforyou|r",
-			[51] = 1666409873,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
 		{
 			"the new version sounds better, though I haven't tried it", -- [1]
 			"Rielda-Dalaran", -- [2]
@@ -66,7 +24,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Rielda|r",
 			[51] = 1666409823,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
+		}, -- [1]
 		{
 			"i just wanna knw so i cant dumo my crafting matts xD", -- [1]
 			"Nackleiscute-Dalaran", -- [2]
@@ -88,7 +46,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Nackleiscute|r",
 			[51] = 1666409900,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
+		}, -- [2]
 		{
 			"i knoew knew flash con is like 20% i think?", -- [1]
 			"Healsforyou-Dalaran", -- [2]
@@ -110,7 +68,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Healsforyou|r",
 			[51] = 1666409902,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
+		}, -- [3]
 		{
 			"is Blizzard getting nerfed??", -- [1]
 			"Goraaka-Dalaran", -- [2]
@@ -132,7 +90,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Goraaka|r",
 			[51] = 1666409908,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
+		}, -- [4]
 		{
 			"No. just sued.", -- [1]
 			"Jpierce-Dalaran", -- [2]
@@ -154,7 +112,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Jpierce|r",
 			[51] = 1666409916,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
+		}, -- [5]
 		{
 			"yes", -- [1]
 			"Faeriyn-Dalaran", -- [2]
@@ -176,7 +134,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeFaeriyn|r",
 			[51] = 1666409916,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
+		}, -- [6]
 		{
 			"pizza time", -- [1]
 			"Faeriyn-Dalaran", -- [2]
@@ -198,7 +156,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeFaeriyn|r",
 			[51] = 1666409923,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
+		}, -- [7]
 		{
 			"congrats", -- [1]
 			"Jpierce-Dalaran", -- [2]
@@ -220,7 +178,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Jpierce|r",
 			[51] = 1666409931,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
+		}, -- [8]
 		{
 			"thanks, ill share the crazy bread", -- [1]
 			"Faeriyn-Dalaran", -- [2]
@@ -242,7 +200,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeFaeriyn|r",
 			[51] = 1666409890,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
+		}, -- [9]
 		{
 			"bro is it bad im legit waiting for this like Xmas so i can actually be a dmg dealer as a healer with new cat stuff", -- [1]
 			"Healsforyou-Dalaran", -- [2]
@@ -264,7 +222,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Healsforyou|r",
 			[51] = 1666409891,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
+		}, -- [10]
 		{
 			"congrats on the pizza", -- [1]
 			"Goraaka-Dalaran", -- [2]
@@ -286,7 +244,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Goraaka|r",
 			[51] = 1666409961,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
+		}, -- [11]
 		{
 			"I've placed Blings 5 and 7 in Stormwind's Trade District. Talk to one if you want a gift, once per day. As for the other thing, new free content was added 10/17/22. Whisper me for more info, and have a great day!", -- [1]
 			"Dahunnarian-Dalaran", -- [2]
@@ -308,7 +266,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Dahunnarian|r",
 			[51] = 1666409969,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
+		}, -- [12]
 		{
 			"i get pizza atleast 1-2 times a weekz :)", -- [1]
 			"Nackleiscute-Dalaran", -- [2]
@@ -330,7 +288,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Nackleiscute|r",
 			[51] = 1666409972,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
+		}, -- [13]
 		{
 			"thanks all <3 ", -- [1]
 			"Faeriyn-Dalaran", -- [2]
@@ -352,7 +310,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeFaeriyn|r",
 			[51] = 1666409977,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
+		}, -- [14]
 		{
 			"so can i still keep getting loot from a raid i didnt finish or shouild i move onto the next one?", -- [1]
 			"Healsforyou-Dalaran", -- [2]
@@ -374,7 +332,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Healsforyou|r",
 			[51] = 1666410054,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
+		}, -- [15]
 		{
 			"Funky Chillwave music. Eagle Eyed Tiger. I'm impressed. ", -- [1]
 			"Jpierce-Dalaran", -- [2]
@@ -396,7 +354,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Jpierce|r",
 			[51] = 1666410002,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
+		}, -- [16]
 		{
 			"time for bed and sweet sleep", -- [1]
 			"Goraaka-Dalaran", -- [2]
@@ -418,7 +376,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Goraaka|r",
 			[51] = 1666410009,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
+		}, -- [17]
 		{
 			"on bosses you havent killed, yes", -- [1]
 			"Yuetuila-Dalaran", -- [2]
@@ -440,7 +398,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcYuetuila|r",
 			[51] = 1666410082,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
+		}, -- [18]
 		{
 			"You're locked out of the section you've finished... except for the boss you didn't kill, from loot. ", -- [1]
 			"Jpierce-Dalaran", -- [2]
@@ -462,7 +420,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Jpierce|r",
 			[51] = 1666410087,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
+		}, -- [19]
 		{
 			"darn i guess ill go next one", -- [1]
 			"Healsforyou-Dalaran", -- [2]
@@ -484,7 +442,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Healsforyou|r",
 			[51] = 1666410095,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
+		}, -- [20]
 		{
 			"more productive seeing that people leave a bunch", -- [1]
 			"Healsforyou-Dalaran", -- [2]
@@ -506,7 +464,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Healsforyou|r",
 			[51] = 1666410107,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
+		}, -- [21]
 		{
 			"If it was LFR then that's common", -- [1]
 			"Jpierce-Dalaran", -- [2]
@@ -528,7 +486,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Jpierce|r",
 			[51] = 1666410063,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
+		}, -- [22]
 		{
 			"is spammng good?", -- [1]
 			"Goraaka-Dalaran", -- [2]
@@ -550,7 +508,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Goraaka|r",
 			[51] = 1666410068,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
+		}, -- [23]
 		{
 			"someone whispered me a split second before I logged off. I missed their name. Could you whisper again?", -- [1]
 			"Dahunnarian-Dalaran", -- [2]
@@ -572,7 +530,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Dahunnarian|r",
 			[51] = 1666410068,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
+		}, -- [24]
 		{
 			"That's daring. ", -- [1]
 			"Jpierce-Dalaran", -- [2]
@@ -594,7 +552,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Jpierce|r",
 			[51] = 1666410142,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
+		}, -- [25]
 		{
 			"thats your schizophrenia", -- [1]
 			"Tradejade-Dalaran", -- [2]
@@ -616,7 +574,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeTradejade|r",
 			[51] = 1666410150,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
+		}, -- [26]
 		{
 			"lol", -- [1]
 			"Synaslian-Dalaran", -- [2]
@@ -638,7 +596,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Synaslian|r",
 			[51] = 1666410158,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
+		}, -- [27]
 		{
 			"it was about my new content post", -- [1]
 			"Dahunnarian-Dalaran", -- [2]
@@ -660,7 +618,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Dahunnarian|r",
 			[51] = 1666410158,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
+		}, -- [28]
 		{
 			"whose crazy???", -- [1]
 			"Goraaka-Dalaran", -- [2]
@@ -682,7 +640,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Goraaka|r",
 			[51] = 1666410160,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
+		}, -- [29]
 		{
 			"i wanna find a guild thats consistant for raiding but i think thats gonna be hard with xpac so close", -- [1]
 			"Healsforyou-Dalaran", -- [2]
@@ -704,7 +662,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Healsforyou|r",
 			[51] = 1666410171,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
+		}, -- [30]
 		{
 			"Yeah wait till DF drops", -- [1]
 			"Jpierce-Dalaran", -- [2]
@@ -726,7 +684,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Jpierce|r",
 			[51] = 1666410129,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
+		}, -- [31]
 		{
 			"raiddosnt come out till nov 15ish doesnt it?", -- [1]
 			"Nackleiscute-Dalaran", -- [2]
@@ -748,7 +706,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Nackleiscute|r",
 			[51] = 1666410132,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
+		}, -- [32]
 		{
 			"o", -- [1]
 			"Wllbanx-Dalaran", -- [2]
@@ -770,7 +728,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeWllbanx|r",
 			[51] = 1666410207,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
+		}, -- [33]
 		{
 			"I've placed Blings 5 and 7 in Stormwind's Trade District. Talk to one if you want a gift, once per day. As for the other thing, new free content was added 10/17/22. Whisper me for more info, and have a great day!", -- [1]
 			"Dahunnarian-Dalaran", -- [2]
@@ -792,7 +750,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Dahunnarian|r",
 			[51] = 1666410210,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
+		}, -- [34]
 		{
 			"Raids not out till DEC 15th. ", -- [1]
 			"Jpierce-Dalaran", -- [2]
@@ -814,7 +772,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Jpierce|r",
 			[51] = 1666410211,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
+		}, -- [35]
 		{
 			"why am i still in a guild..i haven't played this character for over a year", -- [1]
 			"Goraaka-Dalaran", -- [2]
@@ -836,7 +794,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Goraaka|r",
 			[51] = 1666410219,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
+		}, -- [36]
 		{
 			"so even longer i menas :)", -- [1]
 			"Nackleiscute-Dalaran", -- [2]
@@ -858,7 +816,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Nackleiscute|r",
 			[51] = 1666410225,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
+		}, -- [37]
 		{
 			"dead guild, perhaps", -- [1]
 			"Faeriyn-Dalaran", -- [2]
@@ -880,7 +838,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeFaeriyn|r",
 			[51] = 1666410237,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
+		}, -- [38]
 		{
 			"Part of the guild, part of the game... Part of the guild... Part of the game..", -- [1]
 			"Jpierce-Dalaran", -- [2]
@@ -902,7 +860,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Jpierce|r",
 			[51] = 1666410182,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
+		}, -- [39]
 		{
 			"i guess this gives me time to decide what dps i wanna play as my secondary", -- [1]
 			"Healsforyou-Dalaran", -- [2]
@@ -924,7 +882,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Healsforyou|r",
 			[51] = 1666410260,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
+		}, -- [40]
 		{
 			"boys tank and girls heal or play mages", -- [1]
 			"Goraaka-Dalaran", -- [2]
@@ -946,7 +904,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Goraaka|r",
 			[51] = 1666410266,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [41]
 		{
 			"sexist", -- [1]
 			"Dogium-Dalaran", -- [2]
@@ -968,7 +926,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cDogium|r",
 			[51] = 1666410284,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [42]
 		{
 			"boys go to jupiter ", -- [1]
 			"Tradejade-Dalaran", -- [2]
@@ -990,7 +948,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeTradejade|r",
 			[51] = 1666410285,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [43]
 		{
 			"i heal and play a mage and i've never tanked", -- [1]
 			"Faeriyn-Dalaran", -- [2]
@@ -1012,7 +970,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeFaeriyn|r",
 			[51] = 1666410286,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [44]
 		{
 			"affliction lock seems really neat with changes coming", -- [1]
 			"Healsforyou-Dalaran", -- [2]
@@ -1034,7 +992,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Healsforyou|r",
 			[51] = 1666410287,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [45]
 		{
 			"a whole new mechanic about collecting tormented souls :D", -- [1]
 			"Healsforyou-Dalaran", -- [2]
@@ -1056,7 +1014,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Healsforyou|r",
 			[51] = 1666410250,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [46]
 		{
 			"There's two kinds of players... those that stand in the fire... and those that tank. ", -- [1]
 			"Jpierce-Dalaran", -- [2]
@@ -1078,7 +1036,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Jpierce|r",
 			[51] = 1666410257,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [47]
 		{
 			"they  nerfd destro HARRRRD so ima go aff again :D  its one my fav lock mains", -- [1]
 			"Nackleiscute-Dalaran", -- [2]
@@ -1100,7 +1058,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Nackleiscute|r",
 			[51] = 1666410322,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [48]
 		{
 			"[Guild: Golgatha] Looking for members and Raiders for Progression raiding in Dragonflight. From laid back socialites to min/maxing mythic GigaChad raiders we want it all! Come hang out and become apart of the fun with friends! Pst for inv or info.", -- [1]
 			"Tillan-Dalaran", -- [2]
@@ -1122,7 +1080,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cTillan|r",
 			[51] = 1666474911,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [49]
 		{
 			"whats the shadowlands experience to choose, threads of fate or replay storyline guys?", -- [1]
 			"Zandeya-Dalaran", -- [2]
@@ -1144,7 +1102,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaZandeya|r",
 			[51] = 1666475039,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [50]
 		{
 			"Probly threads of fate", -- [1]
 			"Ninmenka-Dalaran", -- [2]
@@ -1166,7 +1124,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Ninmenka|r",
 			[51] = 1666475060,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [51]
 		{
 			"i only did threads after the first story playthrough", -- [1]
 			"Imdruidurnot-Dalaran", -- [2]
@@ -1188,7 +1146,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Imdruidurnot|r",
 			[51] = 1666475066,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [52]
 		{
 			"with 50% exp you lvl lightning fast", -- [1]
 			"Imdruidurnot-Dalaran", -- [2]
@@ -1210,7 +1168,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Imdruidurnot|r",
 			[51] = 1666475076,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [53]
 		{
 			"It does have a reletivly cool story..", -- [1]
 			"Ninmenka-Dalaran", -- [2]
@@ -1232,7 +1190,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Ninmenka|r",
 			[51] = 1666475082,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [54]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-421356-3683-108306933|h[Guild: Golgatha]|h|r is looking for members and Raiders for Progression raiding in Dragonflight. From laid back socialites to min/maxing mythic raiders we want it all! Come hang out and get LOOT", -- [1]
 			"Tillan-Dalaran", -- [2]
@@ -1254,7 +1212,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cTillan|r",
 			[51] = 1666475093,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [55]
 		{
 			"ok so what do i choose?", -- [1]
 			"Zandeya-Dalaran", -- [2]
@@ -1276,7 +1234,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaZandeya|r",
 			[51] = 1666475095,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
+		}, -- [56]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-406415-3683-108176882|h[Guild: Last Cohort]|h|r is recruiting!!! We Heroic Raid and push Mythic+ keys and looking to bolster our ranks going into Dragonflight. We do KSMs and AOTC. Apply or Whisper me for invite.", -- [1]
 			"Rabidfury-Dalaran", -- [2]
@@ -1298,7 +1256,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cRabidfury|r",
 			[51] = 1666475048,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [57]
 		{
 			"compared to legion story zones shadowlands gets stale quick. I cant stand revendreth anymore", -- [1]
 			"Lidrelyn-Dalaran", -- [2]
@@ -1320,7 +1278,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edLidrelyn|r",
 			[51] = 1666475053,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [58]
 		{
 			"Mmm true, i enjoy ardenwelds trees ^.^", -- [1]
 			"Ninmenka-Dalaran", -- [2]
@@ -1342,7 +1300,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Ninmenka|r",
 			[51] = 1666475133,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [59]
 		{
 			"ardenweald is very pretty", -- [1]
 			"Szylexia-Dalaran", -- [2]
@@ -1364,7 +1322,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Szylexia|r",
 			[51] = 1666475143,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [60]
 		{
 			"little help please?", -- [1]
 			"Zandeya-Dalaran", -- [2]
@@ -1386,7 +1344,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaZandeya|r",
 			[51] = 1666475106,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [61]
 		{
 			"ardenweald aged the best. I hate bastion but the place looks beautiful too", -- [1]
 			"Lidrelyn-Dalaran", -- [2]
@@ -1408,7 +1366,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edLidrelyn|r",
 			[51] = 1666475183,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [62]
 		{
 			"i like to halp", -- [1]
 			"Kaedaric-Dalaran", -- [2]
@@ -1430,7 +1388,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Kaedaric|r",
 			[51] = 1666475184,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [63]
 		{
 			"if your interested in the story, choose that one, you still have", -- [1]
 			"Ninmenka-Dalaran", -- [2]
@@ -1452,7 +1410,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Ninmenka|r",
 			[51] = 1666475188,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [64]
 		{
 			"like a month until", -- [1]
 			"Ninmenka-Dalaran", -- [2]
@@ -1474,7 +1432,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Ninmenka|r",
 			[51] = 1666475193,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [65]
 		{
 			"anyone have an auction mount they can jump on real quick?", -- [1]
 			"Veshex-Dalaran", -- [2]
@@ -1496,7 +1454,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Veshex|r",
 			[51] = 1666475201,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [66]
 		{
 			"buy the 60 boost and no need to worry about that my mage friend", -- [1]
 			"Kaedaric-Dalaran", -- [2]
@@ -1518,7 +1476,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Kaedaric|r",
 			[51] = 1666475242,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [67]
 		{
 			"Trying to finish KSM? Unable to finish that last instance and slowly going insane?  WTS M+ carries for gold.   Stop wasting time when we could already be started.  ", -- [1]
 			"Fireandfur-Dalaran", -- [2]
@@ -1540,7 +1498,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Fireandfur|r",
 			[51] = 1666475301,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [68]
 		{
 			"the new talent system comes out this tuesday ", -- [1]
 			"Bajablasted-Dalaran", -- [2]
@@ -1562,7 +1520,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Bajablasted|r",
 			[51] = 1666475312,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [69]
 		{
 			"MAGA SA Trump rally live now from texas on Rumble \"RSBN\"", -- [1]
 			"Flagrantmaga-Dalaran", -- [2]
@@ -1584,7 +1542,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaFlagrantmaga|r",
 			[51] = 1666475312,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [70]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-421356-3683-108306933|h[Guild: Golgatha]|h|r is looking for members and Raiders for Progression raiding in Dragonflight. From laid back socialites to min/maxing mythic raiders we want it all! Come hang out and get LOOT", -- [1]
 			"Tillan-Dalaran", -- [2]
@@ -1606,7 +1564,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cTillan|r",
 			[51] = 1666475323,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [71]
 		{
 			"Tired of groups declining you? Want to max your vault and guarantee a ilvl 304 next week? We sell M+ carries for gold. Stop waiting for a dps queue that will never come.  #RoguesRPeopleToo", -- [1]
 			"Fireandfur-Dalaran", -- [2]
@@ -1628,7 +1586,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Fireandfur|r",
 			[51] = 1666475592,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [72]
 		{
 			"<Is a Living Legend>BAM! 30+ socially active gaming community. We focus on fun, dungeons runs included! Are you looking for excitement? Do you wanna lay low? Either way works for us!  www.isalivinglegend.com", -- [1]
 			"Itsmevajt-Dalaran", -- [2]
@@ -1650,7 +1608,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Itsmevajt|r",
 			[51] = 1666475856,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [75]
+		}, -- [73]
 		{
 			"< Guild GRP > WTS |cff66bbff|Hjournal:1:2464:16|h[The Jailer]|h|r HEROIC come get ur +298 loot on chance  and MOUNT 100 % start soon /w me for more info > GOLD ONLY <", -- [1]
 			"Bufoo-Dalaran", -- [2]
@@ -1672,7 +1630,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Bufoo|r",
 			[51] = 1666673096,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [74]
 		{
 			"sup", -- [1]
 			"Vakcine-Dalaran", -- [2]
@@ -1694,7 +1652,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcVakcine|r",
 			[51] = 1666673516,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [75]
 		{
 			"Time to fire up a pre-roll :)", -- [1]
 			"Vakcine-Dalaran", -- [2]
@@ -1716,7 +1674,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcVakcine|r",
 			[51] = 1666673467,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [76]
 		{
 			"5 cops just buzzed my apartment", -- [1]
 			"Virjinfresh-Dalaran", -- [2]
@@ -1738,7 +1696,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeVirjinfresh|r",
 			[51] = 1666673490,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [77]
 		{
 			"weird stuff always happens when im drinkin lol", -- [1]
 			"Virjinfresh-Dalaran", -- [2]
@@ -1760,7 +1718,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeVirjinfresh|r",
 			[51] = 1666673641,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [78]
 		{
 			"that sppoked me lol", -- [1]
 			"Virjinfresh-Dalaran", -- [2]
@@ -1782,7 +1740,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeVirjinfresh|r",
 			[51] = 1666673649,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [79]
 		{
 			"Any tanks or heals for a quick Timewalking dungeon? Been in queue for over 20 mins and just need one more Dx", -- [1]
 			"Rownan-Dalaran", -- [2]
@@ -1804,7 +1762,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Rownan|r",
 			[51] = 1666673675,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [80]
 		{
 			"spooked*", -- [1]
 			"Virjinfresh-Dalaran", -- [2]
@@ -1826,7 +1784,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeVirjinfresh|r",
 			[51] = 1666673681,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [81]
 		{
 			"does it give upgrades?", -- [1]
 			"Healknight-Dalaran", -- [2]
@@ -1848,7 +1806,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Healknight|r",
 			[51] = 1666673879,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [82]
 		{
 			"i just saw a mount i hadnt seen be4 and was about to ask that eprson where they got it", -- [1]
 			"Virjinfresh-Dalaran", -- [2]
@@ -1870,7 +1828,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeVirjinfresh|r",
 			[51] = 1666674117,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [83]
 		{
 			"man i really like this DK tank its super fun", -- [1]
 			"Healknight-Dalaran", -- [2]
@@ -1892,7 +1850,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Healknight|r",
 			[51] = 1666674212,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [84]
 		{
 			"if blizz was smart they would put in alot of work on sum really badass mounts for being sub'd for X amount of consecutive months or years", -- [1]
 			"Virjinfresh-Dalaran", -- [2]
@@ -1914,7 +1872,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeVirjinfresh|r",
 			[51] = 1666674286,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [85]
 		{
 			"but i can not stand people constantly pulling and attackign stuff i havnt touched", -- [1]
 			"Healknight-Dalaran", -- [2]
@@ -1936,7 +1894,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Healknight|r",
 			[51] = 1666674289,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [86]
 		{
 			"heck yeah", -- [1]
 			"Sysele-Dalaran", -- [2]
@@ -1958,7 +1916,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Sysele|r",
 			[51] = 1666674290,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [87]
 		{
 			"they spank it thye tnak it but that's not a good thing in m+", -- [1]
 			"Sysele-Dalaran", -- [2]
@@ -1980,7 +1938,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Sysele|r",
 			[51] = 1666674248,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [88]
 		{
 			"< Guild Grp > WTS |cff66bbff|Hjournal:0:1195:16|h[Sepulcher of the First Ones]|h|r 11/11 Heroic  Start soon /w me for more info > GOLD ONLY <", -- [1]
 			"Bufoo-Dalaran", -- [2]
@@ -2002,7 +1960,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff98Bufoo|r",
 			[51] = 1666842728,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [89]
 		{
 			"anyone wanna give me 75k so I can get |cffa335ee|Hitem:65891::::::::60:72:::::::::|h[Vial of the Sands]|h|r?", -- [1]
 			"Kranak-Dalaran", -- [2]
@@ -2024,7 +1982,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dKranak|r",
 			[51] = 1666842914,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [90]
 		{
 			"no", -- [1]
 			"Lizl-Dalaran", -- [2]
@@ -2046,7 +2004,7 @@ ElvCharacterDB = {
 			[52] = "|cff8788eeLizl|r",
 			[51] = 1666842922,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [91]
 		{
 			"damn", -- [1]
 			"Kranak-Dalaran", -- [2]
@@ -2068,7 +2026,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dKranak|r",
 			[51] = 1666842932,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [92]
 		{
 			"LF GUild", -- [1]
 			"Miellee-Dalaran", -- [2]
@@ -2090,7 +2048,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aMiellee|r",
 			[51] = 1666842938,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [93]
 		{
 			"is link vers still alive?", -- [1]
 			"Tendermeat-Dalaran", -- [2]
@@ -2112,7 +2070,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Tendermeat|r",
 			[51] = 1666843121,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [94]
 		{
 			"Great for low lvl pvp alts!@", -- [1]
 			"Xerials-Dalaran", -- [2]
@@ -2134,7 +2092,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaXerials|r",
 			[51] = 1666843123,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [95]
 		{
 			"dont want much down time with bladestorm as fury", -- [1]
 			"Cøffeebeans-Dalaran", -- [2]
@@ -2156,7 +2114,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffCøffeebeans|r",
 			[51] = 1666924383,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [96]
 		{
 			"|cffffff00Mage Quarter is under attack!|r", -- [1]
 			"", -- [2]
@@ -2178,9 +2136,52 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1666925098,
 			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"LF guild with dark phonix unlocked", -- [1]
+			"Envymi-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Envymi-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1361, -- [11]
+			"Player-3683-0D3D2EA6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3fc7ebEnvymi|r",
+			[51] = 1667019904,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"I've placed Blings 5 and 7 in Stormwind's Trade District. Talk to one if you want a gift, once per day. As for the other thing, new free content was added 10/24/22. Whisper me for more info, and have a great day!", -- [1]
+			"Dahunnarian-Dalaran", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Dahunnarian-Dalaran", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1379, -- [11]
+			"Player-3683-0D3D3444", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffff7c0aDahunnarian|r",
+			[51] = 1667020003,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},
-	["ConvertKeybindings"] = true,
 	["ChatEditHistory"] = {
 		"/omen toggle", -- [1]
 		"/lfd", -- [2]
@@ -2198,6 +2199,5 @@ ElvCharacterDB = {
 		"/azeritetooltip", -- [14]
 		"/ltp", -- [15]
 	},
-	["CliqueDatatext"] = {
-	},
+	["ConvertKeybindings"] = true,
 }

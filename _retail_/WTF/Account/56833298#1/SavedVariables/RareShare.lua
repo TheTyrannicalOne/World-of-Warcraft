@@ -11,8 +11,8 @@ RareShareDB = {
 			["Duplicates"] = true,
 		},
 		["CChannel"] = {
-			["CID"] = 1,
 			["CName"] = "General - Zereth Mortis",
+			["CID"] = 1,
 		},
 		["OnDeath"] = false,
 		["Sound"] = {
@@ -23,7 +23,7 @@ RareShareDB = {
 		["Duplicates"] = true,
 	},
 	["LastAnnounce"] = {
-		["Time"] = 1666902173,
-		["ID"] = 183953,
+		["Time"] = 1668733868,
+		["ID"] = 181360,
 	},
 }

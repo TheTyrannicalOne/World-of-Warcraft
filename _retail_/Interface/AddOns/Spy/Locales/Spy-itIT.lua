@@ -471,6 +471,7 @@ L["WARRIOR"] = "Guerriero"
 L["DEATHKNIGHT"] = "Cavaliere della Morte"
 L["MONK"] = "Monk"
 L["DEMONHUNTER"] = "Cacciatore di Demoni"
+L["EVOKER"] = "Evocatore"
 
 -- Race descriptions
 L["Human"] = "Umano"
@@ -496,6 +497,7 @@ L["Kul Tiran"] = "Kul Tirano"
 L["Zandalari Troll"] = "Troll Zandalari"
 L["Mechagnome"] = "Meccagnomo"
 L["Vulpera"] = "Vulpera"
+L["Dracthyr"] = "Dracthyr"
  
 --Abilità stealth
 L["Stealth"] = "Furtività"
@@ -516,6 +518,7 @@ L["MinimapClassTextWARRIOR"] = "|cffc69b6d"
 L["MinimapClassTextDEATHKNIGHT"] = "|cffc41e3a"
 L["MinimapClassTextMONK"] = "|cff00ff96"
 L["MinimapClassTextDEMONHUNTER"] = "|cffa330c9"
+L["MinimapClassTextEVOKER"] = "|cff33937f"
 
 Spy_IgnoreList = {
 

@@ -20,100 +20,103 @@ spec:RegisterResource( Enum.PowerType.Mana )
 
 -- Talents
 spec:RegisterTalents( {
-    adaptive_swarm                 = { 82112, 391888, 1 }, -- Command a swarm that heals 693 or deals 660 Shadow damage over 12 sec to a target, and increases the effectiveness of your periodic effects on them by 25%. Upon expiration, finds a new target, preferring to alternate between friend and foe up to 3 times.
+    -- Druid
+    astral_influence               = { 82210, 197524, 2 }, -- Increases the range of all of your abilities by 1 yards.
+    cyclone                        = { 82213, 33786 , 1 }, -- Tosses the enemy target into the air, disorienting them but making them invulnerable for up to 6 sec. Only one target can be affected by your Cyclone at a time.
+    feline_swiftness               = { 82239, 131768, 2 }, -- Increases your movement speed by 15%.
+    heart_of_the_wild              = { 82231, 319454, 1 }, -- Abilities not associated with your specialization are substantially empowered for 45 sec. Balance: Magical damage increased by 30%, and Starsurge is instant. Guardian: Bear Form gives an additional 20% Stamina, multiple uses of Ironfur may overlap, and Frenzied Regeneration has 2 charges. Restoration: Healing increased by 30%, and mana costs reduced by 50%.
+    hibernate                      = { 82211, 2637  , 1 }, -- Forces the enemy target to sleep for up to 40 sec. Any damage will awaken the target. Only one target can be forced to hibernate at a time. Only works on Beasts and Dragonkin.
+    improved_barkskin              = { 82219, 327993, 1 }, -- Duration increased by 4 sec.
+    improved_rejuvenation          = { 82240, 231040, 1 }, -- Rejuvenation's duration is increased by 3 sec.
+    improved_stampeding_roar       = { 82230, 288826, 1 }, -- Cooldown reduced by 60 sec.
+    improved_sunfire               = { 82207, 231050, 1 }, -- Sunfire now applies its damage over time effect to all enemies within 8 yards.
+    incapacitating_roar            = { 82237, 99    , 1 }, -- Shift into Bear Form and invoke the spirit of Ursol to let loose a deafening roar, incapacitating all enemies within 13 yards for 3 sec. Damage will cancel the effect.
+    innervate                      = { 82243, 29166 , 1 }, -- Infuse a friendly healer with energy, allowing them to cast spells without spending mana for 10 sec.
+    ironfur                        = { 82227, 192081, 1 }, -- Increases armor by 2,104 for 7 sec.
+    killer_instinct                = { 82225, 108299, 3 }, -- Physical damage and Armor increased by 2%.
+    lycaras_teachings              = { 82233, 378988, 3 }, -- You gain 2% of a stat while in each form: No Form: Haste Cat Form: Critical Strike Bear Form: Versatility Moonkin Form: Mastery
+    maim                           = { 82221, 22570 , 1 }, -- Finishing move that causes Physical damage and stuns the target. Damage and duration increased per combo point: 1 point : 670 damage, 1 sec 2 points: 1,340 damage, 2 sec 3 points: 2,010 damage, 3 sec 4 points: 2,681 damage, 4 sec 5 points: 3,351 damage, 5 sec
+    mass_entanglement              = { 82242, 102359, 1 }, -- Roots the target and all enemies within 15 yards in place for 30 sec. Damage may interrupt the effect. Usable in all shapeshift forms.
+    matted_fur                     = { 82236, 385786, 1 }, -- When you use Barkskin or Survival Instincts, absorb 7,796 damage for 8 sec.
+    mighty_bash                    = { 82237, 5211  , 1 }, -- Invokes the spirit of Ursoc to stun the target for 4 sec. Usable in all shapeshift forms.
+    natural_recovery               = { 82206, 377796, 2 }, -- Healing done and healing taken increased by 3%.
+    natures_vigil                  = { 82244, 124974, 1 }, -- For 30 sec, all single-target damage also heals a nearby friendly target for 20% of the damage done.
+    nurturing_instinct             = { 82214, 33873 , 3 }, -- Magical damage and healing increased by 2%.
+    primal_fury                    = { 82238, 159286, 1 }, -- When you critically strike with an attack that generates a combo point, you gain an additional combo point. Damage over time cannot trigger this effect.
+    protector_of_the_pack          = { 82245, 378986, 1 }, -- Store 10% of your damage, up to 3,153. Your next Regrowth consumes all stored damage to increase its healing.
+    renewal                        = { 82232, 108238, 1 }, -- Instantly heals you for 30% of maximum health. Usable in all shapeshift forms.
+    rip                            = { 82222, 1079  , 1 }, -- Finishing move that causes Bleed damage over time. Lasts longer per combo point. 1 point : 5,825 over 8 sec 2 points: 8,738 over 12 sec 3 points: 11,651 over 16 sec 4 points: 14,564 over 20 sec 5 points: 17,476 over 24 sec
+    skull_bash                     = { 82224, 106839, 1 }, -- You charge and bash the target's skull, interrupting spellcasting and preventing any spell in that school from being cast for 4 sec.
+    soothe                         = { 82229, 2908  , 1 }, -- Soothes the target, dispelling all enrage effects.
+    stampeding_roar                = { 82234, 106898, 1 }, -- Shift into Bear Form and let loose a wild roar, increasing the movement speed of all friendly players within 18 yards by 60% for 8 sec.
+    sunfire                        = { 82208, 93402 , 1 }, -- A quick beam of solar light burns the enemy for 598 Nature damage and then an additional 5,632 Nature damage over 18 sec.
+    swipe                          = { 82226, 213764, 1 }, -- Swipe nearby enemies, inflicting Physical damage. Damage varies by shapeshift form. Awards 1 combo point.
+    thick_hide                     = { 82228, 16931 , 2 }, -- Reduces all damage taken by 6%.
+    tiger_dash                     = { 82198, 252216, 1 }, -- Shift into Cat Form and increase your movement speed by 200%, reducing gradually over 5 sec.
+    tireless_pursuit               = { 82197, 377801, 1 }, -- For 3 sec after leaving Cat Form or Travel Form, you retain up to 40% movement speed.
+    typhoon                        = { 82209, 132469, 1 }, -- Blasts targets within 18 yards in front of you with a violent Typhoon, knocking them back and dazing them for 6 sec. Usable in all shapeshift forms.
+    ursine_vigor                   = { 82235, 377842, 2 }, -- For 4 sec after shifting into Bear Form, your health and armor are increased by 10%.
+    ursols_vortex                  = { 82242, 102793, 1 }, -- Conjures a vortex of wind for 10 sec at the destination, reducing the movement speed of all enemies within 8 yards by 50%. The first time an enemy attempts to leave the vortex, winds will pull that enemy back to its center. Usable in all shapeshift forms.
+    verdant_heart                  = { 82218, 301768, 1 }, -- Frenzied Regeneration and Barkskin increase all healing received by 20%.
+    wellhoned_instincts            = { 82246, 377847, 2 }, -- When you fall below 40% health, you cast Frenzied Regeneration, up to once every 120 sec.
+    wild_charge                    = { 82198, 102401, 1 }, -- Fly to a nearby ally's position.
+    wild_growth                    = { 82241, 48438 , 1 }, -- Heals up to 5 injured allies within 30 yards of the target for 3,522 over 7 sec. Healing starts high and declines over the duration.
+
+    -- Feral
+    adaptive_swarm                 = { 82112, 391888, 1 }, -- Command a swarm that heals 5,664 or deals 5,395 Shadow damage over 12 sec to a target, and increases the effectiveness of your periodic effects on them by 25%. Upon expiration, finds a new target, preferring to alternate between friend and foe up to 3 times.
     apex_predators_craving         = { 82092, 391881, 1 }, -- Rip damage has a 4% chance to make your next Ferocious Bite free and deal the maximum damage.
     ashamanes_guidance             = { 82113, 391548, 1 }, -- Your melee attacks have a chance to activate Incarnation: Avatar of Ashamane for 6 sec, without the ability to enter stealth in combat. Convoke the Spirits' cooldown is reduced by 50% and its duration and number of spells cast is reduced by 25%. Convoke the Spirits has an increased chance to use an exceptional spell or ability.
-    astral_influence               = { 82210, 197524, 2 }, -- Increases the range of all of your abilities by -1 yards.
-    berserk                        = { 82101, 106951, 1 }, -- Go Berserk for 20 sec. While Berserk: Finishing moves have a 20% chance per combo point spent to refund 2 combo points. Swipe generates 1 additional combo point. Rake and Shred deal damage as though you were stealthed.
+    berserk                        = { 82101, 106951, 1 }, -- Go Berserk for 20 sec. While Berserk: Finishing moves have a 20% chance per combo point spent to refund 2 combo points. Swipe generates 1 additional combo point. Rake and Shred deal damage as though you were stealthed. Combo point-generating abilities bleed the target for an additonal 125% of their damage over 8 sec.
     berserk_frenzy                 = { 82090, 384668, 1 }, -- During Berserk your combo point-generating abilities bleed the target for an additonal 125% of their damage over 8 sec.
     berserk_heart_of_the_lion      = { 82105, 391174, 1 }, -- Each combo point spent reduces the cooldown of Berserk by 0.5 sec.
     bloodtalons                    = { 82109, 319439, 1 }, -- When you use 3 different combo point-generating abilities within 4 sec, the damage of your next 2 Rips or Ferocious Bites is increased by 25%.
-    brutal_slash                   = { 82091, 202028, 1 }, -- Strikes all nearby enemies with a massive slash, inflicting 451 Physical damage. Deals reduced damage beyond 5 targets. Awards 1 combo point.
+    brutal_slash                   = { 82091, 202028, 1 }, -- Strikes all nearby enemies with a massive slash, inflicting 3,251 Physical damage. Deals 10% increased damage against bleeding targets. Deals reduced damage beyond 5 targets. Awards 1 combo point.
     carnivorous_instinct           = { 82110, 390902, 2 }, -- Tiger's Fury's damage bonus is increased by 6%.
     cats_curiosity                 = { 82094, 386318, 2 }, -- Clearcast abilities generate 25% of their Energy cost.
     circle_of_life_and_death       = { 82095, 391969, 1 }, -- Your damage over time effects deal their damage in 25% less time, and your healing over time effects in 15% less time.
     convoke_the_spirits            = { 82114, 391528, 1 }, -- Call upon the Night Fae for an eruption of energy, channeling a rapid flurry of 16 Druid spells and abilities over 4 sec. You will cast Ferocious Bite, Shred, Moonfire, Wrath, Regrowth, Rejuvenation, Rake, and Thrash on appropriate nearby targets, favoring your current shapeshift form.
-    cyclone                        = { 82213, 33786 , 1 }, -- Tosses the enemy target into the air, disorienting them but making them invulnerable for up to 6 sec. Only one target can be affected by your Cyclone at a time.
     doubleclawed_rake              = { 82086, 391700, 1 }, -- Rake also applies Rake to 1 additional nearby target.
     dreadful_bleeding              = { 82117, 391045, 1 }, -- Rip damage increased by 20%.
-    feline_swiftness               = { 82239, 131768, 2 }, -- Increases your movement speed by 15%.
-    feral_frenzy                   = { 82108, 274837, 1 }, -- Unleash a furious frenzy, clawing your target 5 times for 263 Physical damage and an additional 1,579 Bleed damage over 6 sec. Awards 5 combo points.
+    feral_frenzy                   = { 82108, 274837, 1 }, -- Unleash a furious frenzy, clawing your target 5 times for 2,733 Physical damage and an additional 19,697 Bleed damage over 6 sec. Awards 5 combo points.
     frantic_momentum               = { 82115, 391875, 2 }, -- Finishing moves have a 3% chance per combo point spent to grant 10% Haste for 6 sec.
     frenzied_regeneration          = { 82220, 22842 , 1 }, -- Heals you for 32% health over 3 sec.
-    heart_of_the_wild              = { 82231, 319454, 1 }, -- Abilities not associated with your specialization are substantially empowered for 45 sec. Balance: Magical damage increased by 30%. Guardian: Bear Form gives an additional 20% Stamina, multiple uses of Ironfur may overlap, and Frenzied Regeneration has 2 charges. Restoration: Healing increased by 30%, and mana costs reduced by 50%.
-    hibernate                      = { 82211, 2637  , 1 }, -- Forces the enemy target to sleep for up to 40 sec. Any damage will awaken the target. Only one target can be forced to hibernate at a time. Only works on Beasts and Dragonkin.
-    improved_barkskin              = { 82219, 327993, 1 }, -- Barkskin's duration is increased by 4 sec.
-    improved_rejuvenation          = { 82240, 231040, 1 }, -- Rejuvenation's duration is increased by 3 sec.
-    improved_stampeding_roar       = { 82230, 288826, 1 }, -- Cooldown reduced by 60 sec.
-    improved_sunfire               = { 82207, 231050, 1 }, -- Sunfire now applies its damage over time effect to all enemies within 8 yards.
-    incapacitating_roar            = { 82237, 99    , 1 }, -- Shift into Bear Form and invoke the spirit of Ursol to let loose a deafening roar, incapacitating all enemies within 10 yards for 3 sec. Damage will cancel the effect.
-    incarnation_avatar_of_ashamane = { 82114, 102543, 1 }, -- An improved Cat Form that grants all of your known Berserk effects and lasts 30 sec. You may shapeshift in and out of this improved Cat Form for its duration. During Incarnation: Energy cost of all Cat Form abilities is reduced by 20%, and Prowl can be used once while in combat.
-    incarnation                    = { 82114, 102543, 1 }, -- An improved Cat Form that grants all of your known Berserk effects and lasts 30 sec. You may shapeshift in and out of this improved Cat Form for its duration. During Incarnation: Energy cost of all Cat Form abilities is reduced by 20%, and Prowl can be used once while in combat.
+    incarnation_avatar_of_ashamane = { 82114, 102543, 1 }, -- An improved Cat Form that grants all of your known Berserk effects and lasts 30 sec. You may shapeshift in and out of this improved Cat Form for its duration. During Incarnation: Energy cost of all Cat Form abilities is reduced by 20%, and Prowl can be used once while in combat. Finishing moves have a 20% chance per combo point spent to refund 2 combo points. Rake and Shred deal damage as though you were stealthed. Combo point-generating abilities bleed the target for an additonal 125% of their damage over 8 sec.
+    incarnation                    = { 82114, 102543, 1 }, -- An improved Cat Form that grants all of your known Berserk effects and lasts 30 sec. You may shapeshift in and out of this improved Cat Form for its duration. During Incarnation: Energy cost of all Cat Form abilities is reduced by 20%, and Prowl can be used once while in combat. Finishing moves have a 20% chance per combo point spent to refund 2 combo points. Rake and Shred deal damage as though you were stealthed. Combo point-generating abilities bleed the target for an additonal 125% of their damage over 8 sec.
     infected_wounds                = { 82103, 48484 , 1 }, -- Rake damage increased by 30%, and Rake causes an Infected Wound in the target, reducing the target's movement speed by 20% for 12 sec.
-    innervate                      = { 82243, 29166 , 1 }, -- Infuse a friendly healer with energy, allowing them to cast spells without spending mana for 10 sec.
-    ironfur                        = { 82227, 192081, 1 }, -- Increases armor by 448 for 7 sec.
-    killer_instinct                = { 82225, 108299, 3 }, -- Physical damage and Armor increased by 2%.
     lions_strength                 = { 82109, 391972, 1 }, -- Ferocious Bite and Rip deal 15% increased damage.
     lunar_inspiration              = { 82087, 155580, 1 }, -- Moonfire is usable in Cat Form, costs 30 energy, and generates 1 combo point.
-    lycaras_teachings              = { 82233, 378988, 3 }, -- You gain 2% of a stat while in each form: No Form: Haste Cat Form: Critical Strike Bear Form: Versatility Moonkin Form: Mastery
-    maim                           = { 82221, 22570 , 1 }, -- Finishing move that causes Physical damage and stuns the target. Damage and duration increased per combo point: 1 point : 65 damage, 1 sec 2 points: 129 damage, 2 sec 3 points: 194 damage, 3 sec 4 points: 258 damage, 4 sec 5 points: 323 damage, 5 sec
-    mass_entanglement              = { 82242, 102359, 1 }, -- Roots the target and all enemies within 15 yards in place for 30 sec. Damage may interrupt the effect. Usable in all shapeshift forms.
-    matted_fur                     = { 82236, 385786, 1 }, -- When you use Barkskin or Survival Instincts, absorb 1,146 damage for 8 sec.
-    merciless_claws                = { 82098, 231063, 1 }, -- Shred deals 20% increased damage and Swipe deals 10% increased damage against bleeding targets.
-    mighty_bash                    = { 82237, 5211  , 1 }, -- Invokes the spirit of Ursoc to stun the target for 4 sec. Usable in all shapeshift forms.
-    moment_of_clarity              = { 82100, 236068, 1 }, -- Omen of Clarity now triggers 50% more often, can accumulate up to 2 charges, and increases the damage of your next Shred, Thrash, or Swipe by 15%.
+    merciless_strikes              = { 82098, 231063, 1 }, -- Shred deals 20% increased damage and Brutal Slash deals 10% increased damage against bleeding targets.
+    moment_of_clarity              = { 82100, 236068, 1 }, -- Omen of Clarity now triggers 50% more often, can accumulate up to 2 charges, and increases the damage of your next Shred, Thrash, or Brutal Slash by 15%.
     moonkin_form                   = { 91045, 197625, 1 }, -- Shapeshift into Moonkin Form, increasing your armor by 125%, and granting protection from Polymorph effects. The act of shapeshifting frees you from movement impairing effects.
-    natural_recovery               = { 82206, 377796, 2 }, -- Healing done and healing taken increased by 3%.
-    natures_vigil                  = { 82244, 124974, 1 }, -- For 30 sec, all single-target damage also heals a nearby friendly target for 20% of the damage done.
-    nurturing_instinct             = { 82214, 33873 , 3 }, -- Magical damage and healing increased by 2%.
-    omen_of_clarity                = { 82123, 16864 , 1 }, -- Your auto attacks have a chance to cause a Clearcasting state, making your next Shred, Thrash, or Swipe cost no Energy.
+    omen_of_clarity                = { 82123, 16864 , 1 }, -- Your auto attacks have a high chance to cause a Clearcasting state, making your next Shred, Thrash, or Brutal Slash cost no Energy and deal 15% more damage. Clearcasting can accumulate up to 1 charges.
     pouncing_strikes               = { 82119, 390772, 1 }, -- While stealthed, Rake will also stun the target for 4 sec, and deal 60% increased damage. While stealthed, Shred deals 60% increased damage, has double the chance to critically strike, and generates 1 additional combo point.
     predator                       = { 82122, 202021, 1 }, -- The cooldown on Tiger's Fury resets when a target dies with one of your Bleed effects active, and Tiger's Fury lasts 5 additional seconds.
     predatory_swiftness            = { 82106, 16974 , 1 }, -- Your finishing moves have a 20% chance per combo point to make your next Regrowth or Entangling Roots instant, free, and castable in all forms.
     primal_claws                   = { 82085, 391037, 2 }, -- Your combo point generating abilities have a 10% chance to generate 1 extra combo point.
-    primal_fury                    = { 82238, 159286, 1 }, -- When you critically strike with an attack that generates a combo point, you gain an additional combo point. Damage over time cannot trigger this effect.
-    primal_wrath                   = { 82120, 285381, 1 }, -- Finishing move that deals instant damage and applies Rip to all enemies within 8 yards. Lasts longer per combo point. 1 point : 70 plus Rip for 4 sec 2 points: 104 plus Rip for 6 sec 3 points: 139 plus Rip for 8 sec 4 points: 174 plus Rip for 10 sec 5 points: 209 plus Rip for 12 sec
+    primal_wrath                   = { 82120, 285381, 1 }, -- Finishing move that deals instant damage and applies Rip to all enemies within 14 yards. Lasts longer per combo point. 1 point : 722 plus Rip for 4 sec 2 points: 1,083 plus Rip for 6 sec 3 points: 1,444 plus Rip for 8 sec 4 points: 1,805 plus Rip for 10 sec 5 points: 2,166 plus Rip for 12 sec
     protective_growth              = { 82097, 391947, 1 }, -- Your Regrowth protects you, reducing all damage you take by 5% while your Regrowth is on you.
-    protector_of_the_pack          = { 82245, 378986, 1 }, -- Store 10% of your damage, up to 523. Your next Regrowth consumes all stored damage to increase its healing.
     raging_fury                    = { 82107, 391078, 1 }, -- Finishing moves extend the duration of Tiger's Fury by 0.4 sec per combo point spent.
-    rake                           = { 82199, 1822  , 1 }, -- Rake the target for 85 Bleed damage and an additional 614 Bleed damage over 15 sec. While stealthed, Rake will also stun the target for 4 sec and deal 60% increased damage. Awards 1 combo point.
+    rake                           = { 82199, 1822  , 1 }, -- Rake the target for 1,148 Bleed damage and an additional 9,960 Bleed damage over 15 sec. Reduces the target's movement speed by 20% for 12 sec. While stealthed, Rake will also stun the target for 4 sec and deal 60% increased damage. Awards 1 combo point.
     rampant_ferocity               = { 82099, 391709, 1 }, -- Ferocious Bite hits all nearby enemies affected by your Rip for 25% of the damage dealt. Damage reduced beyond 5 targets.
-    rejuvenation                   = { 82217, 774   , 1 }, -- Heals the target for 542 over 12 sec.
+    rejuvenation                   = { 82217, 774   , 1 }, -- Heals the target for 4,283 over 12 sec.
     relentless_predator            = { 82088, 393771, 1 }, -- Energy cost of Ferocious Bite reduced by 20%.
     remove_corruption              = { 82204, 2782  , 1 }, -- Nullifies corrupting effects on the friendly target, removing all Curse and Poison effects.
-    renewal                        = { 82232, 108238, 1 }, -- Instantly heals you for 30% of maximum health. Usable in all shapeshift forms.
-    rip                            = { 82222, 1079  , 1 }, -- Finishing move that causes Bleed damage over time. Lasts longer per combo point. 1 point : 389 over 8 sec 2 points: 584 over 12 sec 3 points: 779 over 16 sec 4 points: 973 over 20 sec 5 points: 1,168 over 24 sec
     rip_and_tear                   = { 82093, 391347, 1 }, -- Applying Rip to a target also applies a Tear that deals 12% of the new Rip's damage over 8 sec.
     sabertooth                     = { 82102, 202031, 1 }, -- Ferocious Bite deals 15% increased damage and increases all damage dealt by Rip by 5% per Combo Point spent for 4 sec.
-    skull_bash                     = { 82224, 106839, 1 }, -- You charge and bash the target's skull, interrupting spellcasting and preventing any spell in that school from being cast for 4 sec.
-    soothe                         = { 82229, 2908  , 1 }, -- Soothes the target, dispelling all enrage effects.
     soul_of_the_forest             = { 82096, 158476, 1 }, -- Your finishing moves grant 3 Energy per combo point spent and deal 5% increased damage.
-    stampeding_roar                = { 82234, 106898, 1 }, -- Shift into Bear Form and let loose a wild roar, increasing the movement speed of all friendly players within 15 yards by 60% for 8 sec.
-    starfire                       = { 91044, 197628, 1 }, -- Call down a burst of energy, causing 385 Arcane damage to the target, and 131 Arcane damage to all other enemies within 5 yards.
-    starsurge                      = { 82200, 197626, 1 }, -- Launch a surge of stellar energies at the target, dealing 713 Astral damage.
+    starfire                       = { 91044, 197628, 1 }, -- Call down a burst of energy, causing 2,620 Arcane damage to the target, and 894 Arcane damage to all other enemies within 5 yards.
+    starsurge                      = { 82200, 197626, 1 }, -- Launch a surge of stellar energies at the target, dealing 4,850 Astral damage.
     sudden_ambush                  = { 82104, 384667, 2 }, -- Finishing moves have a 5% chance per combo point spent to make your next Rake or Shred deal damage as though you were stealthed.
-    sunfire                        = { 82208, 93402 , 1 }, -- A quick beam of solar light burns the enemy for 88 Nature damage and then an additional 689 Nature damage over 18 sec.
     survival_instincts             = { 82116, 61336 , 1 }, -- Reduces all damage you take by 50% for 6 sec.
-    swiftmend                      = { 82216, 18562 , 1 }, -- Consumes a Regrowth, Wild Growth, or Rejuvenation effect to instantly heal an ally for 1,518.
-    swipe                          = { 82226, 213764, 1 }, -- Swipe nearby enemies, inflicting Physical damage. Damage varies by shapeshift form. Awards 1 combo point.
+    swiftmend                      = { 82216, 18562 , 1 }, -- Consumes a Regrowth, Wild Growth, or Rejuvenation effect to instantly heal an ally for 10,329.
     taste_for_blood                = { 82118, 384665, 2 }, -- Ferocious Bite deals 3% increased damage for each of your Bleeds on the target.
     tear_open_wounds               = { 82089, 391785, 1 }, -- Primal Wrath consumes up to 4 sec of Rip damage on targets it hits and deals 60% of it instantly.
-    thick_hide                     = { 82228, 16931 , 2 }, -- Reduces all damage taken by 6%.
     thrash                         = { 82223, 106832, 1 }, -- Thrash all nearby enemies, dealing immediate physical damage and periodic bleed damage. Damage varies by shapeshift form.
-    tiger_dash                     = { 82198, 252216, 1 }, -- Shift into Cat Form and increase your movement speed by 200%, reducing gradually over 5 sec.
-    tigers_fury                    = { 82124, 5217  , 1 }, -- Instantly restores 50 Energy, and increases the damage of all your attacks by 15% for their full duration. Lasts 10 sec.
+    tigers_fury                    = { 82124, 5217  , 1 }, -- Instantly restores 50 Energy, and increases the damage of all your attacks by 27% for their full duration. Lasts 15 sec. Finishing moves increase duration by 0.4 sec per combo point spent.
     tigers_tenacity                = { 82107, 391872, 1 }, -- Tiger's Fury causes your next 3 finishing moves to restore 1 combo point.
     tireless_energy                = { 82121, 383352, 2 }, -- Maximum Energy increased by 30 and Energy regeneration increased by 10%.
-    tireless_pursuit               = { 82197, 377801, 1 }, -- For 3 sec after leaving Cat Form or Travel Form, you retain up to 40% movement speed.
-    typhoon                        = { 82209, 132469, 1 }, -- Blasts targets within 15 yards in front of you with a violent Typhoon, knocking them back and dazing them for 6 sec. Usable in all shapeshift forms.
     unbridled_swarm                = { 82111, 391951, 1 }, -- Adaptive Swarm has a 60% chance to split into two Swarms each time it jumps.
-    ursine_vigor                   = { 82235, 377842, 2 }, -- For 4 sec after shifting into Bear Form, your health and armor are increased by 10%.
-    ursols_vortex                  = { 82242, 102793, 1 }, -- Conjures a vortex of wind for 10 sec at the destination, reducing the movement speed of all enemies within 8 yards by 50%. The first time an enemy attempts to leave the vortex, winds will pull that enemy back to its center. Usable in all shapeshift forms.
     veinripper                     = { 82093, 391978, 1 }, -- Rip, Rake, and Thrash last 25% longer.
-    verdant_heart                  = { 82218, 301768, 1 }, -- Frenzied Regeneration and Barkskin increase all healing received by 20%.
-    wellhoned_instincts            = { 82246, 377847, 2 }, -- When you fall below 40% health, you cast Frenzied Regeneration, up to once every 120 sec.
-    wild_charge                    = { 82198, 102401, 1 }, -- Fly to a nearby ally's position.
-    wild_growth                    = { 82241, 48438 , 1 }, -- Heals up to 5 injured allies within 30 yards of the target for 431 over 7 sec. Healing starts high and declines over the duration.
     wild_slashes                   = { 82091, 390864, 1 }, -- Swipe and Thrash damage is increased by 20%.
 } )
 
@@ -283,11 +286,12 @@ spec:RegisterAuras( {
     },
     -- Heals $w1 damage every $t1 seconds.
     -- https://wowhead.com/beta/spell=102352
-    cenarion_ward = {
+    cenarion_ward_hot = {
         id = 102352,
         duration = 8,
         type = "Magic",
-        max_stack = 1
+        max_stack = 1,
+        dot = "buff"
     },
     -- Your next Shred, Thrash, or $?s202028[Brutal Slash][Swipe] costs no Energy$?s236068[ and deals $s3% increased damage][].
     -- https://wowhead.com/beta/spell=135700
@@ -415,7 +419,6 @@ spec:RegisterAuras( {
     infected_wounds = {
         id = 58180,
         duration = 12,
-        max_stack = 1,
         type = "Disease",
         max_stack = function () return pvptalent.wicked_claws.enabled and 2 or 1 end,
     },
@@ -435,13 +438,10 @@ spec:RegisterAuras( {
         type = "Magic",
         max_stack = 1
     },
-    -- Versatility increased by $w1%.
-    -- https://wowhead.com/beta/spell=1126
-    mark_of_the_wild = {
-        id = 1126,
-        duration = 3600,
-        type = "Magic",
-        max_stack = 1
+    maim = {
+        id = 22570,
+        duration = function() return 1 + combo_points.current end,
+        max_stack = 1,
     },
     -- Talent: Rooted.
     -- https://wowhead.com/beta/spell=102359
@@ -787,12 +787,6 @@ spec:RegisterAuras( {
         duration = 3600,
         max_stack = 1,
     },
-    thorns = {
-        id = 305497,
-        duration = 12,
-        type = "Magic",
-        max_stack = 1,
-    },
 
     -- Azerite Powers
     iron_jaws = {
@@ -1122,12 +1116,6 @@ spec:RegisterHook( "gain", function( amt, resource )
 end )
 
 
--- Tier 28
-spec:RegisterSetBonuses( "tier28_2pc", 364416, "tier28_4pc", 363498 )
--- 2-Set - Heart of the Lion - Each combo point spent reduces the cooldown of Incarnation: King of the Jungle / Berserk by 0.5 sec.
--- 4-Set - Sickle of the Lion - Entering Berserk causes you to strike all nearby enemies, dealing (320.2% of Attack power) Bleed damage over 10 sec. Deals reduced damage beyond 8 targets.
-
-
 local function comboSpender( a, r )
     if r == "combo_points" and a > 0 then
         if talent.soul_of_the_forest.enabled then
@@ -1144,10 +1132,6 @@ local function comboSpender( a, r )
 
         if talent.berserk_heart_of_the_lion.enabled and buff.bs_inc.up then
             reduceCooldown( talent.incarnation.enabled and "incarnation" or "berserk", 0.5 )
-        end
-
-        if set_bonus.tier28_2pc > 0 then
-            reduceCooldown( talent.incarnation.enabled and "incarnation" or "berserk", a * 0.7 )
         end
 
         if talent.raging_fury.enabled and buff.tigers_fury.up then
@@ -1354,10 +1338,6 @@ spec:RegisterAbilities( {
         handler = function ()
             if buff.cat_form.down then shift( "cat_form" ) end
             applyBuff( "berserk" )
-            if set_bonus.tier28_4pc > 0 then
-                applyDebuff( "target", "sickle_of_the_lion" )
-                active_dot.sickle_of_the_lion = max( 1, active_enemies )
-            end
         end,
 
         copy = { "berserk_cat", "bs_inc" }
@@ -1454,24 +1434,6 @@ spec:RegisterAbilities( {
         handler = function ()
             shift( "cat_form" )
             applyBuff( "dash" )
-        end,
-    },
-
-    -- Roots the target in place for $d. Damage may cancel the effect.$?s33891[    |C0033AA11Tree of Life: Instant cast.|R][]
-    entangling_roots = {
-        id = 339,
-        cast = 1.7,
-        cooldown = 0,
-        gcd = "spell",
-        school = "nature",
-
-        spend = 0.06,
-        spendType = "mana",
-
-        startsCombat = false,
-
-        handler = function ()
-            applyDebuff( "target", "entangling_roots" )
         end,
     },
 
@@ -1766,24 +1728,6 @@ spec:RegisterAbilities( {
         end,
     },
 
-    -- Infuse a friendly target with the power of the wild, increasing their Versatility by $s1% for 60 minutes.    If target is in your party or raid, all party and raid members will be affected.
-    mark_of_the_wild = {
-        id = 1126,
-        cast = 0,
-        cooldown = 0,
-        gcd = "spell",
-        school = "nature",
-
-        spend = 0.2,
-        spendType = "mana",
-
-        startsCombat = false,
-
-        handler = function ()
-            applyBuff( "mark_of_the_wild" )
-        end,
-    },
-
     -- Talent: Roots the target and all enemies within $A1 yards in place for $d. Damage may interrupt the effect. Usable in all shapeshift forms.
     mass_entanglement = {
         id = 102359,
@@ -2034,6 +1978,8 @@ spec:RegisterAbilities( {
         handler = function ()
             applyDebuff( "target", "rake" )
             debuff.rake.pmultiplier = persistent_multiplier
+            removeBuff( "sudden_ambush" )
+
             if talent.doubleclawed_rake.enabled and active_dot.rake < true_active_enemies then active_dot.rake = active_dot.rake + 1 end
             if talent.infected_wounds.enabled then applyDebuff( "target", "infected_wounds" ) end
 
@@ -2562,4 +2508,4 @@ spec:RegisterOptions( {
 } )
 
 
-spec:RegisterPack( "Feral", 20221027, [[Hekili:nR1wVnoUv4FlglGHDwpk2k2ZMPiYfykqb28WIf1lW(MOPLOTjIUbjQ4jfg63(EiLOePe1L2Mh6ltYqDUXdpx(oKXDJ7F4EWhZiU)M9AB7nRT)fRnFB7tp9K7b2hje3djyV3WxGFjchc)7)KKId4R(rqm2NZDwCEQh8LRmws2F7XhpHdWrEKVKrd9SUqzxZpzrJF87vlFGg(pEm036klm4VFMgqCQyWI9dM7Ht50a2Vg5EYSzz7EaNZUgN6EGliqRuFFsj5Kmp3dUhcOzSmUHDkio2NHdIJ4)3FtSvjr4tbeF3VdYXJrJJCpKIFdSEVp8ciigo9cb4gi(GxkLrsPy3dlkooR4iJ69gn6sXX73loclTXYU44dfhtiPzGkjrmuyEaJMeqjPfh37uC0pMzXfVvI6xwwlcUj8obDIHyP0lxabvCeydK78IJPKZPKSRC7vWZsXQNYpF2cyqiw)4BrLB8uAs5UPCxLzfFl4gb)oyW)SZJHXXrNPPKvb0icYZ3z7dx88DzG3TLtPztRPEfflLvLYLEXG8iCkIgLLqtXILaP)upUC21uC2vKhMnfnwsDL(6CobQzBVBcPioLMdbcOSGgbjTf1pXf2Urfw2nAs7TVynXgceXxhxextj(TfbFno7)Y4SpMf88OIqZPA4CbeY3gvi1bHIZlV4WtXOKyAedIJ3xCCBRKmUupCMgrZUsshkLmjLgcNj3GiPRTIV)JR8yK4aFi7HvC82vQ3vi3mU4ywcoS44V)NQgAwcjiqgTyPkwHb(ogOcuUvYn07OZNmLry2MgQCr744rmInT2H)(FwC8CmuNaNKe8HOIZ)IMmu6eWAp6FA5lG2qreO6lFFuVFJJdqGCkRUpyIXmzUAguaWZkpPrkNjPXE048m0jGA3dH4FGirK0lFuzl9NRSOTufotixfQ0AbMvak(megtqG5tYywvcbku2R6fbGG)aN6HZyGRDOGWrlsz252Ffv94G68v9iXYLFVScrpz3I4a9YgkAuEaBSaNgDvTB9jPiXoXK3OvsVQZZkLa6qjmmpcv(7iEp4YoXOsydAo9bYYQAgBoxI31uyfz58M(iC4PCOggpEZ0jrFPlDBv9FY57NtYZ)JbzFDAhWd0k5tly85rcgHnwdwK6iSAgalilpLJVuZW7l(ilxa(GhBjqY4EqcLHXlJEgd4S6OKKuWcmPGAP(wo4mo11)PNPfhdLBmLQz0dxwMZcmkQhT0XUDTsqSHQLmkhdi6CE6htRIlCgWl)fkRowQtHU2TUrUsYmvWTHgWf0B6leplGkyiMskaSporaNn7gguLEL8si0C8W6KH8XHW0fwAGR7NSusigsClo(IaLCjK4fdXbeG59MG(NkfUzZ4kbhiPL3twk7zLG0JJmYancDoGE5kByARmLPrTkzlRA5Xtsbxuiugig5tjLhWL7hUqaEHt(qkPe3LTubtWFRe0W9r7guJMlgncytCc5hOeOUaMfdb3EPIkbdHsyqSN6Om5XbAYbkec1oJ(3IeOnRNOyCeBUjLkuJFLl)r6wQmbAlK2dQc1bx5APFifDCg7KzeTHo1078kgmLqsGV(6IIKILwovZeQvrsFdvHHO0wB30DiBDQ6rdJcxjJnWx52UEWeLa8NxprLQ0ZQeOu7n743OW0BN))bygzkf5B3)SAVpuhuWFJtJeOPq43XGbZrNdnuHYnrT7z2FmI44tPlOSVwNyNQI5N51jrQDfudQIJEp(nIygbowpklZTd44YTg)yw3gh5AamyJgd96y4BBOvhfBnlMV0Ox4x40xB3KNdOGZsAo1VKjEH9m0fWFq8rWHrvSNG6EdMEq0Z4lYoh9x(VjasweXeKcZPJYQnDpZKbEskR)MzYT3Pc0w8tjSe5Y5zeeydHzDcYHgr8ZemZucCm0tkJOmsJmfJ)Bb5WpSfRvvJqpVZqECL8ONnlrPCK3(GIJRAmxgHNiLarj3IZJ8ZAgYTzuyy6FeoYhXPv(9k7frcYa5VT28x3Puqn0qdWARDYDXpl8LVZV5tGG67O19aGXicsMa)(VgMeNY4M63KiDkokUBwRIxfYKF5VsLWVxKQdMF25rPtAf3)4O5Mxj2jo2fVooJv(1vXjoItHkExVcQm4t5C7mIFE(a(4vnUyNTMnhPZ18xfU1IxR)yZsnl0mzI2QIjruxrPE0k6zh9zp2VD997Tsfv4vALCgN1ESI5LIA)U1fV(t)K8KKZgohQnGzCmZnCkrrmFMbWgA6uV3B5bMSqGkL64xxP1(0zdxZlwmBuGU3Vp6qfVyVC(IrgK4LNUF3KYAgFy)MLZNvA9dpYqFu1EyHEORHGLZ7wVE)U735S1myWE75J7LQoSF5PDgLP6XIoKD(XWWG9BXBnmDoNQnjFXE8Weje8286SBCEvWwxB0THPpbP0cnyNDXU5l0t4Qsa1siQwtMZSCc6vfkCxLoUaAG12S7BGSip)FETszjR2BwhoqdtjIQxwxVCZlFjrEWzQhqj7nJUDy5wsbuOQUo1uEhmfz2ei07MCXS6skl2yz)GXN)BVJjuClbwQYkvEYph75koULlN391vmzGW2PZfz26qOwsAVzxFsR5Qih5SDUH3qQpHQE3KnrCgEqU(eGwSIK7M3)Qx2eyfuzP(f3(K1KIBtHVj4AebykSuFCpxnPE)wTur18FNwx4EvpuLBAVw8DV2(EKP0UgocqwmR11W3VmLbGti6QFHODP6RK37UZM(5yYH09lc1a1(P6ZPIwBHklNjjq9u05)I9Mk)FwgDBzo4x1DMkKvH7t2xT7xaMvUIbJF3W4(1X)6JRRLGXH0PnJPsBuvX3Ctbg)CtJ9(uANMTAwX259CNaZn1j5LnwFvImF765Jp))(EoFFW(l2dJ1tDtwoTDBKdCGm6EWEgOVnz2M1s9W7vTYh)j)BeJeAOJ6ZS3n(w9R7B)xbGqPMFf(UkI7vuv1iTohWm2yu4WKNto)w1MgTwPcXTWY38g9L6AwpJooGi44K05A(OpC)s1kcnW2CQFIqtFLN5LB6VTj(nN6XFbGNe3vH7F9d]] )
+spec:RegisterPack( "Feral", 20221115, [[Hekili:nRX2UnUn2VLGfWiEQRQTJD6mar(HUalWKh6wu3fZBsIwIoMi6g0L4jlm03EpKuuIKIus72aS7lt8qDUF)qjVnE)H3Xiuf27x3UE72nB2S3z9xw)4d)S3XQ3ZXEhZrHVIEb(rkkb(3)bUaftp994muef7YS6Iq4jEhpvtIR(AQ3jJKClqsuD1LScVJhjj)DVJxirryo44YqkfIjLvLuIEkollQcfNLs)V)ktmXPOtX4iVFbOtyfjl17yb6vGZHVhgJ9RqfVGbSbGpgwqQWfeK3X7BcURjOIe(kj9LMGB3AcGJ24STj4tnb54IsGL40k)K64ksEmbx0eCWTjikRYHsENC5NSSJeur4nS)Pk)QcYlVaeQjaqdO7IMGc85cC5fQ8YWzj70t1Np7aiWiBu21uUIxqY5AdxRkDYUgFfJEde4FW9NsYYsptkWRIjPy)Wi3DF6LWiVkW6Qzu6vAf2lXybTAzUWkgxNIk8jPL5Kce7iG6pyXKxDPavEXpevnhoYHULFd8taB2zvjeK4urnei4xg3tiHSi)ikX2pjXkVsY1vF2zmfciXJttIlf4iDsqpJI(ppn6tjbFEssOyun4xaI8LjjsxqiZFfMLCkZppJKwbXXhAc2PLKrP6XZKus5fCXyPK5fKeWNCfIKUOfF)VkHGJFJ98MGVrbOj4kH(V)ojhYOsJAc(dmcsZ(bXp(N5yqa)wwDAuPJSAuMJJJfXsoYmLj(VHaOarZj)Q)B(NpzkFXSepwXe9O8jeInA6)V9TMGZzGwHYZJFNvpcuCNXY2aCTiaZlDcyNFk(7vmfPtHZYI9b6WlCBiVjb9DFCkU4L3vW7mUilKKvx6FceiZcGE(JvC1cilH6pHo15m7kKudLKDabm2p7meVJ9bfbxw5iOSjEtlifdrnHOYkW4owq6KfXmRC2R4Qgj0LpRglYp(nEfelz)Sab1YksCu4HnwaubUkE74iCHpttmzn08bYgpNcmWdP4W6uF(V9P9O5DQ95JeOy0hjpRTzT5SjAxvMuuwthkWhLCQgQXvNB2tylFzyRS)t8VFmzp)fdYECEo4rA18Hfm(5jcgbfRFwLUiSoeajOSUGo7OIGBl(OSMnCcn2InPJ3rXOov0cPNrWCydysEbibMyqhvFTgmgNgA)uZ0YYGQmMs1mAH5fhDaHIes4g2DRLcI7kNjfnqOZi6FUU49XcA4jjdBB(7W5q3JISeAluqNBBLeHsGPZb2MLwxUQjOongxcTWVcNfIGEN)cWvCXR)0xtdrfPSCIwubfgAHbPWTy3eqssatFAv87k9AdHiE6Kcc1QaNGGumMAVMvW((w9M5nyvX7ZNVGaCtWXrSZxAQjrpRURfliaKwYpr0rGBWzCC)6ERLamt5d9Wa(FR1UAvnpddEjiakcLZM1V8kcyL6Yf89lOllOcMp3X4OS5HDW6mPpXwHyPWQAhdi7k8vg8pWjUzX4cgflGLosIG23X3Gjl1icKu)ZXKxUunoSTIY8GwgSLTT5PvOatucudmZpIG5oyU(qjcGl45tiyEW2wbdMH9wkOHAJ2pkhnxjEIHOr54V7NdffrvzqMDybRmOssV2up0gjRTsu1zW5bcdROyyC9NO7DQWuOLb0Lj9FZk1SXEFFv64YSeZkVPBtak9Tpwu7GCsBZlMGtAlrPhQUsZOsG8neqfc9jcgXUUxPMLKL1wrRUZ7RVTCUIjV8RF7WyCz1EJLHY6C5JYWEuMm1YWC1UBdqPKLpVEMmvQ5pFItDLD6RUz(Zf9)bdFxj1WqFqKwDFSrri9TG9rVHabMUDdmzcu6kvF4d7XZm3N04ewkk01y4mTMRVChg5GQS03YEfZ2XIo0mPQ0BWwgCvJ6MvLXjcXmiJgd9gi476HvDDGoumF7CprVzVh1hyyhFgLOIAsehjAtIs)xa7boYhCgTXEmOTgm9jwb5Fu0fYERK(airrKXN5XuvOH(mRdHzg8T7L3yH93r3z4oTkC9yxxI9bOsk5jaqdpQ)cvzk5wtP4etTOEcckq0Uu)vsC0GSett0RKy2n034tRNb6qjwAhwrPa6VIRH)SLDwBTm16dgcUBPh5SzkkOJ4cNg2fSctt4ZHO5R87ZsUvylmWq)(O0iFkS9x2btE9XXLa931j(878auW3O3InipT33(AyzvyKOuiFT074xtYZkQOC5lIbZAcy3ZUtZZSANH0PsEGz4ptOkdhk6fA16QPxdTMBBf5SRMpU5ztiYEU5hjCKMFQW4UIAxDvCpRywa3TZbXw)XQSCxM3Rf3nRGkFrek2Ut4FwmIVzvVRXDxZZDc0afhoOFtuLtzBEkFIuztQvwDxZd7wF7MwfJN)Bnb)pzjrzPMwyLkUwQtDy9I7vkW0QfktATuMGIOdkrVtFPWfCRYH9RvrrDyfEeGqIKHuD5HvkZBaXgalV)(7MClJB3MCJUN2UCX9tSf3tpC7MjM1V72HnlxChx6hFFnBqPVPMf46by5IHn4oS)2nkA9BLDy7IPTsT(QNEyVrAk7wu3xQRgJ1nT0WTBThEGy)ufpTvpPzHYJLkLynmsSYJoTD3pnUslRqr3(ArlmUs0myG2K3dma7Bt)6maMY)AptKIUCg8vETJHmDAc0VcrN3wA8qrOZNxlvB1rxzDz1EmKdlFdZwXMwdwmLhfjldaEW8MeJtxoeSc0cWMXl3vIM9bcwvY7VRRA09BC2(jJVt7dUMMyEjGsBcT07X2D7cjd3YLTXKYVYqtciOodU9DnNqhLuEr02Ow)9NpHVTJSsVyuBev(c17J4m8wMTraLyfb29VuxROXMBrgLUxJ8hmNKmBs4ndtJOd(a3TsTYd7usfLZ)D1ElrTTFLE9qDKF47AYcnfY14raIIzAV7i70ueaoJOl7er5nbTs8YIC3yhJzhsBNeYbQ2H6JPIMorfLZeai7fD)Vq3KX)JsO1P5Opv1ykbw7iJI(QdFcGS015y85gUALU4F1RgrDyeyAqL95LAJkt((BLX4J7BSBJPdA2Qif7wy5(xwyQtYtBCEumt(U1lM(UwoyX)(PT)42Xhtuwj53SH(Kd0bzuTGwwkrhSTM5s3nG0Vks3fb)C)2x)f(Yw6zRyktx5VMKH5dYp9G(h7ctKS8XMmKtuZOmVMOx7iYXgJehwBE2feKLPjlUkbS2Ed9F)k098v59CW3G4QT9WKFHkYvt6h5ZT7DIB6P0S2AZFSFvEE)5p]] )

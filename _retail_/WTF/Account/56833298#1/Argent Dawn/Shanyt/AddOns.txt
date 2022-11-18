@@ -410,3 +410,12 @@ Blizzard_TalkingHeadUI: enabled
 Hermes: enabled
 xCT+: enabled
 ElvUI_UnitFramePlugin: disabled
+Blizzard_ObjectiveTracker: enabled
+Blizzard_CompactRaidFrames: enabled
+Boss_shieldsmonitor: enabled
+Narcissus_BagFilter: enabled
+ElvUI_Libraries: enabled
+ElvUI_Options: enabled
+Blizzard_CombatText: enabled
+BtWQuestsDragonflightPrologue: enabled
+LittleWigs_Shadowlands: enabled

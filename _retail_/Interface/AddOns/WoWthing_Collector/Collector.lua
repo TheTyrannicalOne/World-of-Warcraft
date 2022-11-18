@@ -9,10 +9,10 @@ local charClassID, charData, charName, guildName, playedLevel, playedLevelUpdate
 local hookedCollections, loggingOut = false, false
 local bankOpen, guildBankOpen, reagentBankUpdated, transmogOpen = false, false, false, false
 local maxScannedToys = 0
-local dirtyAchievements, dirtyBag, dirtyBags, dirtyCovenant, dirtyCurrencies, dirtyGarrisonTrees, dirtyHeirlooms, dirtyLocation, dirtyLockouts, dirtyMounts, dirtyMythicPlus, dirtyPets, dirtyQuests, dirtyReputations, dirtyToys, dirtyTransmog, dirtyVault =
-    false, {}, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false
+local dirtyAchievements, dirtyAuras, dirtyBags, dirtyCovenant, dirtyCurrencies, dirtyGarrisonTrees, dirtyHeirlooms, dirtyLocation, dirtyLockouts, dirtyMounts, dirtyMythicPlus, dirtyPets, dirtyQuests, dirtyReputations, dirtySpells, dirtyToys, dirtyTransmog, dirtyVault =
+    false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false
 local dirtyCallings, callingData = false, nil
-local dirtyGuildBank, guildBankQueried, requestingPlayedTime = false, false, true
+local dirtyBag, dirtyGuildBank, guildBankQueried, requestingPlayedTime = {}, false, false, true
 
 local transmogLocation = TransmogUtil.GetTransmogLocation("HEADSLOT", Enum.TransmogType.Appearance, Enum.TransmogModification.Main)
 local transmogSlots = {}
@@ -23,10 +23,6 @@ local C_CurrencyInfo_GetCurrencyInfo, C_TransmogCollection_GetAppearanceSources,
 
 -- Libs
 local LibRealmInfo = LibStub('LibRealmInfo17janekjl')
-
--- Tooltips?
-local scanTooltip = CreateFrame('GameTooltip', 'WWTCTooltip', nil, 'SharedTooltipTemplate')
-scanTooltip:SetOwner(WorldFrame, 'ANCHOR_NONE')
 
 -- Default SavedVariables
 local defaultWWTCSaved = {
@@ -94,6 +90,7 @@ end
 function events:PLAYER_ENTERING_WORLD()
     wwtc:UpdateCharacterData()
     
+    dirtyAuras = true
     dirtyCovenant = true
     dirtyCurrencies = true
     dirtyGarrisonTrees = true
@@ -119,6 +116,16 @@ end
 -- Fires when the player's rest state or amount of rested XP changes
 function events:UPDATE_EXHAUSTION()
     wwtc:UpdateExhausted()
+end
+-- Fires when a new spell/ability is added to the spellbook
+function events:LEARNED_SPELL_IN_TAB()
+    dirtySpells = true
+end
+-- Fires when auras update
+function events:UNIT_AURA(unitTarget)
+    if unitTarget == 'player' then
+        dirtyAuras = true
+    end
 end
 -- Fires when guild stats changes
 function events:PLAYER_GUILD_UPDATE(unitID)
@@ -308,7 +315,7 @@ end
 -------------------------------------------------------------------------------
 -- Call functions in the events table for events
 frame:SetScript("OnEvent", function(self, event, ...)
-    --print(event)
+    --if event ~= "CRITERIA_UPDATE" and event ~= "UNIT_AURA" then print(event) end
     events[event](self, ...)
 end)
 
@@ -323,6 +330,11 @@ function wwtc:Timer()
     if dirtyAchievements then
         dirtyAchievements = false
         wwtc:ScanAchievements()
+    end
+
+    if dirtyAuras then
+        dirtyAuras = false
+        wwtc:ScanAuras()
     end
 
     if dirtyBags then
@@ -384,6 +396,11 @@ function wwtc:Timer()
     if dirtyReputations then
         dirtyReputations = false
         wwtc:ScanReputations()
+    end
+
+    if dirtySpells then
+        dirtySpells = false
+        wwtc:ScanSpells()
     end
 
     if dirtyToys then
@@ -456,6 +473,7 @@ function wwtc:Initialise()
     charData.restedXP = 0
 
     charData.achievements = charData.achievements or {}
+    charData.auras = charData.auras or {}
     charData.bags = charData.bags or {}
     charData.callings = charData.callings or {}
     charData.covenants = charData.covenants or {}
@@ -569,25 +587,9 @@ function wwtc:UpdateCharacterData()
         charData.playedTotal = playedTotal + (now - playedTotalUpdated)
     end
 
-    -- Master Riding
-    if IsSpellKnown(90265) then
-        charData.mountSkill = 5
-    -- Artisan Riding (DEPRECATED but still gives 280%)
-    elseif IsSpellKnown(34091) then
-        charData.mountSkill = 4
-    -- Expert Riding
-    elseif IsSpellKnown(34090) then
-        charData.mountSkill = 3
-    -- Journeyman Riding
-    elseif IsSpellKnown(33391) then
-        charData.mountSkill = 2
-    -- Apprentice Riding
-    elseif IsSpellKnown(33388) then
-        charData.mountSkill = 1
-    end
-
     if not loggingOut then
         dirtyQuests = true
+        dirtySpells = true
 
         charData.copper = GetMoney()
 
@@ -705,6 +707,7 @@ function wwtc:ScanBagQueue()
         reagentBankUpdated = false
     end
 
+    local requestedData = false
     if scan then
         local now = time()
         if bagID >= 0 and bagID <= 4 then
@@ -722,29 +725,51 @@ function wwtc:ScanBagQueue()
 
         -- Update bag ID
         if bagID >= 1 then
-            local bagItemID, _ = GetInventoryItemID('player', ContainerIDToInventoryID(bagID))
+            local bagItemID, _ = GetInventoryItemID('player', C_Container.ContainerIDToInventoryID(bagID))
             charData.bags["b"..bagID] = bagItemID
         end
 
-        local numSlots = GetContainerNumSlots(bagID)
+        local numSlots = C_Container.GetContainerNumSlots(bagID)
         if numSlots > 0 then
-            for i = 1, numSlots do
-                local _, count, _, _, _, _, link, _ = GetContainerItemInfo(bagID, i)
-                if count ~= nil and link ~= nil then
-                    local parsed = wwtc:ParseItemLink(link, count)
-                    bag["s"..i] = parsed
+            for slot = 1, numSlots do
+                -- This always works, even if the full item data isn't cached
+                local itemID = C_Container.GetContainerItemID(bagID, slot)
+                if itemID then
+                    if C_Item.IsItemDataCachedByID(itemID) then
+                        local itemInfo = C_Container.GetContainerItemInfo(bagID, slot)
+                        if itemInfo ~= nil and itemInfo.hyperlink ~= nil and itemInfo.stackCount ~= nil then
+                            local parsed = wwtc:ParseItemLink(itemInfo.hyperlink, itemInfo.stackCount)
+                            bag["s"..slot] = parsed
+                        end
+                    else
+                        C_Item.RequestLoadItemDataByID(itemID)
+                        requestedData = true
+                    end
                 end
             end
         end
     end
 
+    -- If we requested item data, come back and scan this bag again later
+    if requestedData then
+        dirtyBag[bagID] = true
+    end
+
+    -- If the scan queue still has bags, add a timer for the next one
     if #bagScanQueue > 0 then
         C_Timer.After(0, function()
             wwtc:ScanBagQueue()
         end)
     else
         scanningBags = false
+
+        -- Queue another scan if any bags are dirty
+        local bagKeys = wwtc:TableKeys(dirtyBag)
+        if #bagKeys > 0 then
+            dirtyBags = true
+        end
     end
+
 end
 
 function wwtc:UpdateGuildBank()
@@ -761,9 +786,9 @@ function wwtc:ScanGuildBankTabs()
     if charData == nil then return end
 
     -- Short circuit if guild bank isn't open
-    if not guildBankOpen then
-        return
-    end
+    -- if not guildBankOpen then
+    --     return
+    -- end
 
     local now = time()
     WWTCSaved.guilds[guildName].scanTimes['bank'] = now
@@ -786,13 +811,17 @@ function wwtc:ScanGuildBankTabs()
             local link = GetGuildBankItemLink(tabIndex, slotIndex)
             if link ~= nil then
                 if string.find(link, '\Hitem:82800:') then
-                    scanTooltip:ClearLines()
-                    local speciesId, level, breedQuality = scanTooltip:SetGuildBankItem(tabIndex, slotIndex)
+                    local tooltipData = C_TooltipInfo.GetGuildBankItem(tabIndex, slotIndex)
+                    local args = {}
+                    for _, arg in ipairs(tooltipData.args) do
+                        args[arg.field] = arg.stringVal or arg.intVal
+                    end
+
                     tab["s"..slotIndex] = table.concat({
                         'pet',
-                        speciesId,
-                        level,
-                        breedQuality,
+                        args['battlePetSpeciesID'],
+                        args['battlePetLevel'],
+                        args['battlePetBreedQuality'],
                     }, ':')
 
                 else
@@ -939,6 +968,18 @@ function wwtc:ScanAchievements()
     end
 end
 
+function wwtc:ScanAuras()
+    if charData == nil then return end
+
+    charData.auras = {}
+    
+    for _, spellID in ipairs(ns.auras) do
+        if C_UnitAuras.GetPlayerAuraBySpellID(spellID) ~= nil then
+            charData.auras[#charData.auras + 1] = spellID
+        end
+    end
+end
+
 -- Scan currencies
 function wwtc:ScanCurrencies()
     if charData == nil then return end
@@ -1065,7 +1106,7 @@ function wwtc:ScanLockouts()
 
     -- Other world bosses
     for questID, questData in pairs(ns.worldBossQuests) do
-        groupId, groupName, bossName, isDaily = unpack(questData)
+        local groupId, groupName, bossName, isDaily = unpack(questData)
         if C_QuestLog_IsQuestFlaggedCompleted(questID) then
             local resetTime
             if isDaily == true then
@@ -1377,11 +1418,7 @@ function wwtc:ScanTransmogQueue()
         C_Timer.After(0, function() wwtc:ScanTransmogQueue() end)
     -- All done
     else
-        local keys = {}
-        for key in pairs(transmogTemp) do
-            keys[#keys + 1] = key
-        end
-
+        local keys = wwtc:TableKeys(transmogTemp)
         table.sort(keys)
         charData.transmog = table.concat(keys, ':')
 
@@ -1611,6 +1648,28 @@ function wwtc:ScanReputations()
                 hasRewardPending and 1 or 0,
             }, ':')
         end
+    end
+end
+
+-- Scan spells
+function wwtc:ScanSpells()
+    if charData == nil then return end
+
+    -- Master Riding
+    if IsSpellKnown(90265) then
+        charData.mountSkill = 5
+    -- Artisan Riding (DEPRECATED but still gives 280%)
+    elseif IsSpellKnown(34091) then
+        charData.mountSkill = 4
+    -- Expert Riding
+    elseif IsSpellKnown(34090) then
+        charData.mountSkill = 3
+    -- Journeyman Riding
+    elseif IsSpellKnown(33391) then
+        charData.mountSkill = 2
+    -- Apprentice Riding
+    elseif IsSpellKnown(33388) then
+        charData.mountSkill = 1
     end
 end
 
@@ -1880,11 +1939,19 @@ function wwtc:GetItemLevel(itemLink)
     return effectiveLevel
 end
 
+function wwtc:TableKeys(tbl)
+    local keys = {}
+    for key in pairs(tbl) do
+        keys[#keys + 1] = key
+    end
+    return keys
+end
+
 -------------------------------------------------------------------------------
 
 SLASH_WWTC1 = "/wwtc"
 SlashCmdList["WWTC"] = function(msg)
-    wwtc:ScanGarrisons()
+    wwtc:ScanAuras()
 end
 
 SLASH_RL1 = "/rl"

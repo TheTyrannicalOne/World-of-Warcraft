@@ -89,7 +89,7 @@ function SpyStats:Show()
     SpyStatsWinsLosesCheckbox:SetChecked(false)
     SpyStatsReasonCheckbox:SetChecked(false)
 	local HonorKills, _, HighestRank = GetPVPLifetimeStats("player")
---	SpyStatsHonorKillsText:SetText(L["HonorKills"]..":  "..HonorKills)
+--	SpyStatsHonorKillsText:SetText(L["HonorKills"]..":  "..HonorKills) -- Classic
 	SpyStatsHonorKillsText:SetText(L["HonorKills"]..":  "..GetStatistic(588))
 	SpyStatsPvPDeathsText:SetText(L["PvPDeaths"]..":  "..GetStatistic(1501))
     SpyStatsFrame:Show()
@@ -122,8 +122,9 @@ function SpyStats:UpdateView()
 		self.view = VIEW_PLAYER_HISTORY
 
         SpyStatsWinsLosesCheckbox:ClearAllPoints()	
-        SpyStatsWinsLosesCheckbox:SetPoint("LEFT", SpyStatsKosCheckboxText, "RIGHT", 12, -1)
-
+--      SpyStatsWinsLosesCheckbox:SetPoint("LEFT", SpyStatsKosCheckboxText, "RIGHT", 12, -1) -- Patch 10.0 change
+        SpyStatsWinsLosesCheckbox:SetPoint("LEFT", SpyStatsKosCheckbox, "RIGHT", 12, -1)
+		
         if (self.sortBy == "name") or (self.sortBy == "level") or (self.sortBy == "class") then
             self.sortBy = "time"
         end 

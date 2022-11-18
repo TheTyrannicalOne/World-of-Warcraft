@@ -310,7 +310,6 @@ L["Assault Wagons"] = "Angriffswagen"
 L["Basilisks"] = "Basilisken"
 L["Bats"] = "Fledermäuse"
 L["Bears"] = "Bären"
-L["Bees"] = "Bienen"
 L["Birds"] = "Vögel"
 L["Blood Ticks"] = "Blutschwärmer"
 L["Boars"] = "Eber"
@@ -355,7 +354,7 @@ L["Flies"] = "Fliegen"
 L["Flying Steeds"] = "Fliegende Pferde"
 L["Foxes"] = "Füchse"
 L["Gargon"] = "Gargon"
-L["Gargoyle"] = "Wasserspeier"
+L["Gargoyle"] = "Gargoyle"
 L["Goats"] = "Ziegen"
 L["Gorger"] = "Verschlinger"
 L["Gorm"] = "Gorm"
@@ -414,7 +413,6 @@ L["Rams"] = "Widder"
 L["Raptora"] = "Raptora"
 L["Raptors"] = "Raptoren"
 L["Rats"] = "Ratten"
-L["Ravagers"] = "Felshetzer"
 L["Rays"] = "Rochen"
 L["Razorwing"] = "Klingenschwinge"
 L["Reptiles"] = "Reptilien"
@@ -544,7 +542,6 @@ L["Assault Wagons"] = "Catapultas de Asalto"
 L["Basilisks"] = "Basiliscos"
 L["Bats"] = "Murciélagos"
 L["Bears"] = "Osos"
-L["Bees"] = "Abejas"
 L["Birds"] = "Pájaros"
 L["Blood Ticks"] = "Garrapatas de Sangre"
 L["Boars"] = "Jabalies"
@@ -648,7 +645,6 @@ L["Rams"] = "Carneros"
 L["Raptora"] = "Accipítridos"
 L["Raptors"] = "Raptores"
 L["Rats"] = "Ratas"
-L["Ravagers"] = "Atracadores"
 L["Rays"] = "Rayas"
 L["Razorwing"] = "Alafiladas"
 L["Reptiles"] = "Reptiles"
@@ -839,8 +835,6 @@ L["Transform"] = "Transformation"
 L["Basilisks"] = "Basilics"
 L["Bats"] = "Chauve-Souris"
 L["Bears"] = "Ours"
---[[Translation missing --]]
---[[ L["Bees"] = "Bees"--]] 
 L["Birds"] = "Oiseaux"
 --[[Translation missing --]]
 --[[ L["Blood Ticks"] = "Blood Ticks"--]] 
@@ -1010,7 +1004,6 @@ L["Rams"] = "Béliers"
 --[[ L["Raptora"] = "Raptora"--]] 
 L["Raptors"] = "Raptors"
 L["Rats"] = "Rats"
-L["Ravagers"] = "Saccageurs"
 L["Rays"] = "Raies"
 --[[Translation missing --]]
 --[[ L["Razorwing"] = "Razorwing"--]] 
@@ -1117,10 +1110,8 @@ L["Hidden"] = "숨김"
 L["Only tradable"] = "교환가능"
 L["Passenger"] = "승객"
 L["Reset filters"] = "필터 초기화"
---[[Translation missing --]]
---[[ L["ROTATE_DOWN"] = "Rotate Down"--]] 
---[[Translation missing --]]
---[[ L["ROTATE_UP"] = "Rotate Up"--]] 
+L["ROTATE_DOWN"] = "아래로 회전"
+L["ROTATE_UP"] = "위로 회전"
 --[[Translation missing --]]
 --[[ L["SORT_BY_LAST_USAGE"] = "Last usage"--]] 
 --[[Translation missing --]]
@@ -1163,15 +1154,13 @@ L["TASK_FAVOR_START"] = "[MJE] 탈것 목록 즐겨찾기 재설정을 시작합
 L["Transform"] = "변환"
 
     -- Settings
---[[Translation missing --]]
---[[ L["DISPLAY_ALL_SETTINGS"] = "Display all settings"--]] 
+L["DISPLAY_ALL_SETTINGS"] = "모든 설정 표시"
 --[[Translation missing --]]
 --[[ L[ [=[RESET_WINDOW_SIZE
 ]=] ] = "Reset journal size"--]] 
 --[[Translation missing --]]
 --[[ L["SETTING_ABOUT_AUTHOR"] = "Author"--]] 
---[[Translation missing --]]
---[[ L["SETTING_ACHIEVEMENT_POINTS"] = "Show achievement points"--]] 
+L["SETTING_ACHIEVEMENT_POINTS"] = "업적 점수 표시"
 --[[Translation missing --]]
 --[[ L["SETTING_AUTO_FAVOR"] = "Automatically set new mounts as favorite"--]] 
 --[[Translation missing --]]
@@ -1179,15 +1168,13 @@ L["Transform"] = "변환"
 L["SETTING_COMPACT_LIST"] = "간소한 목록"
 L["SETTING_CURSOR_KEYS"] = "위 아래 화살표 키로 목록 탐색하기"
 L["SETTING_FAVORITE_PER_CHAR"] = "캐릭터별 즐겨찾기"
---[[Translation missing --]]
---[[ L["SETTING_HEAD_ABOUT"] = "About"--]] 
+L["SETTING_HEAD_ABOUT"] = "정보"
 --[[Translation missing --]]
 --[[ L["SETTING_HEAD_BEHAVIOUR"] = "Behavior"--]] 
 --[[Translation missing --]]
 --[[ L["SETTING_MOUNT_COUNT"] = "Show personal mount count"--]] 
 L["SETTING_MOVE_EQUIPMENT"] = "착용 장비 표시 이동"
---[[Translation missing --]]
---[[ L["SETTING_PERSONAL_FILTER"] = "Apply filters only to this character"--]] 
+L["SETTING_PERSONAL_FILTER"] = "이 캐릭터에만 필터 적용"
 --[[Translation missing --]]
 --[[ L["SETTING_PERSONAL_HIDDEN_MOUNTS"] = "Apply hidden mounts only to this character"--]] 
 --[[Translation missing --]]
@@ -1210,28 +1197,24 @@ L["Airplanes"] = "비행기"
 L["Airships"] = "비행선"
 L["Alpacas"] = "알파카"
 L["Amphibian"] = "양서류"
---[[Translation missing --]]
---[[ L["Animite"] = "Animite"--]] 
+L["Animite"] = "령진드기"
 L["Aqir Flyers"] = "아퀴르 날벌레"
 L["Arachnids"] = "거미"
 L["Assault Wagons"] = "공성차량"
 L["Basilisks"] = "바실리스크"
 L["Bats"] = "박쥐"
 L["Bears"] = "곰"
-L["Bees"] = "벌"
 L["Birds"] = "새"
 L["Blood Ticks"] = "흡혈충"
 L["Boars"] = "멧돼지"
---[[Translation missing --]]
---[[ L["Book"] = "Book"--]] 
+L["Book"] = "책"
 L["Bovids"] = "노루"
 L["Brutosaurs"] = "브루토사우루스"
 L["Camels"] = "낙타"
 L["Carnivorans"] = "육식동물"
 L["Carpets"] = "카페트"
 L["Cats"] = "고양이과"
---[[Translation missing --]]
---[[ L["Cervid"] = "Cervid"--]] 
+L["Cervid"] = "원시사슴"
 L["Chargers"] = "군마"
 L["Chickens"] = "닭"
 L["Clefthooves"] = "갈래발굽"
@@ -1245,8 +1228,7 @@ L["Crows"] = "까마귀"
 L["Demonic Hounds"] = "지옥사냥개"
 L["Demonic Steeds"] = "지옥군마"
 L["Demons"] = "악마"
---[[Translation missing --]]
---[[ L["Devourer"] = "Devourer"--]] 
+L["Devourer"] = "포식자"
 L["Dinosaurs"] = "공룡"
 L["Dire Wolves"] = "다이어울프"
 L["Direhorns"] = "다이어혼"
@@ -1254,8 +1236,7 @@ L["Discs"] = "원반"
 L["Dragonhawks"] = "용매"
 L["Drakes"] = "비룡"
 L["Dread Ravens"] = "지옥까마귀"
---[[Translation missing --]]
---[[ L["Eagle"] = "Eagle"--]] 
+L["Eagle"] = "독수리"
 L["Elekks"] = "엘레크"
 L["Elementals"] = "정령"
 L["Falcosaurs"] = "팔코사우루스"
@@ -1267,15 +1248,11 @@ L["Fish"] = "물고기"
 --[[ L["Flies"] = "Flies"--]] 
 L["Flying Steeds"] = "비행군마"
 L["Foxes"] = "여우"
---[[Translation missing --]]
---[[ L["Gargon"] = "Gargon"--]] 
---[[Translation missing --]]
---[[ L["Gargoyle"] = "Gargoyle"--]] 
+L["Gargon"] = "가르곤"
+L["Gargoyle"] = "가고일"
 L["Goats"] = "염소"
---[[Translation missing --]]
---[[ L["Gorger"] = "Gorger"--]] 
---[[Translation missing --]]
---[[ L["Gorm"] = "Gorm"--]] 
+L["Gorger"] = "먹보"
+L["Gorm"] = "게걸충"
 L["Grand Drakes"] = "거대 비룡"
 L["Gronnlings"] = "그론링"
 L["Gryphons"] = "그리폰"
@@ -1297,27 +1274,22 @@ L["Jet Aerial Units"] = "제트 비행기"
 L["Kites"] = "연"
 L["Kodos"] = "코도"
 L["Krolusks"] = "크롤러스크"
---[[Translation missing --]]
---[[ L["Larion"] = "Larion"--]] 
+L["Larion"] = "깃사자"
 L["Lions"] = "사자"
---[[Translation missing --]]
---[[ L["Lupine"] = "Lupine"--]] 
+L["Lupine"] = "원시늑대"
 L["Mammoths"] = "매머드"
 L["Mana Rays"] = "마나 가오리"
 L["Manasabers"] = "마나호랑이"
---[[Translation missing --]]
---[[ L["Mauler"] = "Mauler"--]] 
+L["Mauler"] = "싸움꾼"
 L["Mechanical Animals"] = "기계형 야수"
 L["Mechanical Birds"] = "기계형 새"
 L["Mechanical Cats"] = "기계형 고양이"
 L["Mechanical Steeds"] = "기계형 군마"
 L["Mechanostriders"] = "기계타조"
 L["Mecha-suits"] = "메카수트"
---[[Translation missing --]]
---[[ L["Mollusc"] = "Mollusc"--]] 
+L["Mollusc"] = "연체동물"
 L["Moose"] = "엘크"
---[[Translation missing --]]
---[[ L["Moth"] = "Moth"--]] 
+L["Moth"] = "나방"
 L["Motorcycles"] = "오토바이"
 L["Mountain Horses"] = "산악마"
 L["Mushan"] = "무샨"
@@ -1325,8 +1297,7 @@ L["Nether Drakes"] = "황천의 비룡"
 L["Nether Rays"] = "황천 가오리"
 L["N'Zoth Serpents"] = "느조스 뱀"
 L["Others"] = "기타"
---[[Translation missing --]]
---[[ L["Ottuk"] = "Ottuk"--]] 
+L["Ottuk"] = "오투크"
 --[[Translation missing --]]
 --[[ L["Ox"] = "Ox"--]] 
 L["Pandaren Phoenixes"] = "판다렌 불사조"
@@ -1336,23 +1307,18 @@ L["Proto-Drakes"] = "원시 비룡"
 L["Pterrordaxes"] = "테러닥스"
 L["Quilen"] = "기렌"
 L["Rams"] = "산양"
---[[Translation missing --]]
---[[ L["Raptora"] = "Raptora"--]] 
+L["Raptora"] = "육식조"
 L["Raptors"] = "랩터"
 L["Rats"] = "쥐"
-L["Ravagers"] = "칼날발톱"
 L["Rays"] = "가오리"
---[[Translation missing --]]
---[[ L["Razorwing"] = "Razorwing"--]] 
+L["Razorwing"] = "칼날날개"
 L["Reptiles"] = "파충류"
 L["Rhinos"] = "코뿔소"
 L["Riverbeasts"] = "강물하마"
---[[Translation missing --]]
---[[ L["Roc"] = "Roc"--]] 
+L["Roc"] = "로크"
 L["Rockets"] = "로켓"
 L["Ruinstriders"] = "파멸발굽"
---[[Translation missing --]]
---[[ L["Runestag"] = "Runestag"--]] 
+L["Runestag"] = "룬수사슴"
 L["Rylaks"] = "라일라크"
 L["Sabers"] = "표범"
 L["Scorpions"] = "전갈"
@@ -1361,10 +1327,8 @@ L["Seahorses"] = "해마"
 --[[Translation missing --]]
 --[[ L["Seat"] = "Seat"--]] 
 L["Silithids"] = "실리시드"
---[[Translation missing --]]
---[[ L["Slug"] = "Slug"--]] 
---[[Translation missing --]]
---[[ L["Snail"] = "Snail"--]] 
+L["Slug"] = "민달팽이"
+L["Snail"] = "달팽이"
 L["Snapdragons"] = "치악룡"
 L["Spider Tanks"] = "거미 전차"
 L["Spiders"] = "거미"
@@ -1375,8 +1339,7 @@ L["Stone Drakes"] = "비룡 석상"
 L["Talbuks"] = "탈부크"
 L["Tallstriders"] = "타조"
 L["Talonbirds"] = "탈론 버드"
---[[Translation missing --]]
---[[ L["Tauralus"] = "Tauralus"--]] 
+L["Tauralus"] = "타우랄러스"
 L["Tigers"] = "호랑이"
 L["Toads"] = "두꺼비"
 L["Turtles"] = "거북이"
@@ -1386,18 +1349,13 @@ L["Undead Wolves"] = "언데드 늑대"
 L["Ungulates"] = "유제류"
 L["Ur'zul"] = "우르줄"
 L["Vehicles"] = "차량"
---[[Translation missing --]]
---[[ L["Vombata"] = "Vombata"--]] 
---[[Translation missing --]]
---[[ L["Vulpin"] = "Vulpin"--]] 
---[[Translation missing --]]
---[[ L["Vultures"] = "Vultures"--]] 
+L["Vombata"] = "봄바타"
+L["Vulpin"] = "여우"
+L["Vultures"] = "독수리"
 L["War Wolves"] = "전투 늑대"
---[[Translation missing --]]
---[[ L["Wasp"] = "Wasp"--]] 
+L["Wasp"] = "말벌"
 L["Water Striders"] = "소금쟁이"
---[[Translation missing --]]
---[[ L["Wilderlings"] = "Wilderlings"--]] 
+L["Wilderlings"] = "야생룡"
 L["Wind Drakes"] = "바람 비룡"
 L["Wolfhawks"] = "늑대매"
 L["Wolves"] = "늑대"
@@ -1496,7 +1454,6 @@ L["Assault Wagons"] = "Carroças de Assalto"
 L["Basilisks"] = "Basiliscos"
 L["Bats"] = "Morcegos"
 L["Bears"] = "Ursos"
-L["Bees"] = "Abelhas"
 L["Birds"] = "Aves"
 L["Blood Ticks"] = "Tiques Sangrentos"
 L["Boars"] = "Javalis"
@@ -1529,8 +1486,7 @@ L["Discs"] = "Discos"
 L["Dragonhawks"] = "Falcodragos"
 L["Drakes"] = "Dracos"
 L["Dread Ravens"] = "Corvos Medonhos"
---[[Translation missing --]]
---[[ L["Eagle"] = "Eagle"--]] 
+L["Eagle"] = "Águia"
 L["Elekks"] = "Elekks"
 L["Elementals"] = "Elementais"
 L["Falcosaurs"] = "Falcossauros"
@@ -1579,8 +1535,7 @@ L["Mechanical Cats"] = "Gatos Mecânicos"
 L["Mechanical Steeds"] = "Corcéis Mecânicos"
 L["Mechanostriders"] = "Mecanostruzes"
 L["Mecha-suits"] = "Mecatrajes"
---[[Translation missing --]]
---[[ L["Mollusc"] = "Mollusc"--]] 
+L["Mollusc"] = "Molusco"
 L["Moose"] = "Alce"
 L["Moth"] = "Mariposa"
 L["Motorcycles"] = "Motocicletas"
@@ -1590,8 +1545,7 @@ L["Nether Drakes"] = "Dracos Etéreos"
 L["Nether Rays"] = "Arraias Etéreas "
 L["N'Zoth Serpents"] = "Serpentes de N'Zoth"
 L["Others"] = "Outros"
---[[Translation missing --]]
---[[ L["Ottuk"] = "Ottuk"--]] 
+L["Ottuk"] = "Lontruk"
 L["Ox"] = "Boi"
 L["Pandaren Phoenixes"] = "Fênix Pandarênicas"
 L["Parrots"] = "Papagaios"
@@ -1603,7 +1557,6 @@ L["Rams"] = "Carneiros"
 L["Raptora"] = "Raptora"
 L["Raptors"] = "Raptores"
 L["Rats"] = "Ratos"
-L["Ravagers"] = "Assoladores"
 L["Rays"] = "Arraias"
 L["Razorwing"] = "Talhasa"
 L["Reptiles"] = "Répteis"
@@ -1620,8 +1573,7 @@ L["Sea Serpents"] = "Serpente Marinha"
 L["Seahorses"] = "Cavalos-marinhos"
 L["Seat"] = "Assento"
 L["Silithids"] = "Silitídeos"
---[[Translation missing --]]
---[[ L["Slug"] = "Slug"--]] 
+L["Slug"] = "Lesma"
 L["Snail"] = "Caracol"
 L["Snapdragons"] = "Dracoliscos"
 L["Spider Tanks"] = "Tanques Aranha"
@@ -1679,8 +1631,7 @@ L["SORT_BY_LEARNED_DATE"] = "Дата получения"
 L["SORT_BY_TRAVEL_DISTANCE"] = "Преодоленное расстояние"
 L["SORT_BY_TRAVEL_DURATION"] = "Продолжительность поездки"
 L["SORT_BY_USAGE_COUNT"] = "Количество использований"
---[[Translation missing --]]
---[[ L["SORT_DRAGONRIDING_TOP"] = "Dragonriding mounts at the top"--]] 
+L["SORT_DRAGONRIDING_TOP"] = "Ездовые драконы наверху"
 L["SORT_FAVORITES_FIRST"] = "Избранные первыми"
 L["SORT_REVERSE"] = "Обратная сортировка"
 L["SORT_UNOWNED_BOTTOM"] = "Не полученные в конце списка"
@@ -1704,8 +1655,7 @@ L[ [=[RESET_WINDOW_SIZE
 L["SETTING_ABOUT_AUTHOR"] = "Автор"
 L["SETTING_ACHIEVEMENT_POINTS"] = "Показать достижения"
 L["SETTING_AUTO_FAVOR"] = "Автоматически добавлять новый транспорт в избранное"
---[[Translation missing --]]
---[[ L["SETTING_COLOR_NAMES"] = "Colorize names in list based on rarity"--]] 
+L["SETTING_COLOR_NAMES"] = "Окрасить имена в списке в зависимости от редкости"
 L["SETTING_COMPACT_LIST"] = "Компактный список транспорта"
 L["SETTING_CURSOR_KEYS"] = "Включить Клавиши \"Вверх\" и \"Вниз\" для навигации по списку транспорта"
 L["SETTING_FAVORITE_PER_CHAR"] = "Избранный транспорт для персонажа"
@@ -1736,7 +1686,6 @@ L["Assault Wagons"] = "Штурмовые Повозки"
 L["Basilisks"] = "Василиски"
 L["Bats"] = "Летучие мыши"
 L["Bears"] = "Медведи"
-L["Bees"] = "Пчелы"
 L["Birds"] = "Птицы"
 L["Blood Ticks"] = "Кровяной Клещ"
 L["Boars"] = "Кабаны"
@@ -1769,8 +1718,7 @@ L["Discs"] = "Диски"
 L["Dragonhawks"] = "Дракондоры"
 L["Drakes"] = "Драконы"
 L["Dread Ravens"] = "Грозные вороны"
---[[Translation missing --]]
---[[ L["Eagle"] = "Eagle"--]] 
+L["Eagle"] = "Орлы"
 L["Elekks"] = "Элекки"
 L["Elementals"] = "Элементали"
 L["Falcosaurs"] = "Грифозавры"
@@ -1819,8 +1767,7 @@ L["Mechanical Cats"] = "Механические Кошки"
 L["Mechanical Steeds"] = "Механические Скакуны"
 L["Mechanostriders"] = "Механодолгоноги"
 L["Mecha-suits"] = "Мехакостюмы"
---[[Translation missing --]]
---[[ L["Mollusc"] = "Mollusc"--]] 
+L["Mollusc"] = "Моллюски"
 L["Moose"] = "Лоси"
 L["Moth"] = "Мотыльки"
 L["Motorcycles"] = "Мотоциклы"
@@ -1830,8 +1777,7 @@ L["Nether Drakes"] = "Драконы Пустоты"
 L["Nether Rays"] = "Скаты Пустоты"
 L["N'Zoth Serpents"] = "Черви Н'Зота"
 L["Others"] = "Прочие"
---[[Translation missing --]]
---[[ L["Ottuk"] = "Ottuk"--]] 
+L["Ottuk"] = "Выдреки"
 L["Ox"] = "Волы"
 L["Pandaren Phoenixes"] = "Пандаренские Фениксы"
 L["Parrots"] = "Попугаи"
@@ -1843,7 +1789,6 @@ L["Rams"] = "Бараны"
 L["Raptora"] = "Рапторы"
 L["Raptors"] = "Ящеры"
 L["Rats"] = "Крысы"
-L["Ravagers"] = "Опустошители"
 L["Rays"] = "Скаты"
 L["Razorwing"] = "Острокрылы"
 L["Reptiles"] = "Рептилии"
@@ -1860,8 +1805,7 @@ L["Sea Serpents"] = "Морские Змеи"
 L["Seahorses"] = "Морские коньки"
 L["Seat"] = "Повозки"
 L["Silithids"] = "Силитиды"
---[[Translation missing --]]
---[[ L["Slug"] = "Slug"--]] 
+L["Slug"] = "Слизняки"
 L["Snail"] = "Улитки"
 L["Snapdragons"] = "Вараны"
 L["Spider Tanks"] = "Механопауки"
@@ -2003,7 +1947,6 @@ L["Assault Wagons"] = "攻城车"
 L["Basilisks"] = "蜥蜴"
 L["Bats"] = "蝙蝠"
 L["Bears"] = "熊"
-L["Bees"] = "蜜蜂"
 L["Birds"] = "鸟"
 L["Blood Ticks"] = "吮血蛛"
 L["Boars"] = "野猪"
@@ -2120,7 +2063,6 @@ L["Rams"] = "公羊"
 --[[ L["Raptora"] = "Raptora"--]] 
 L["Raptors"] = "迅猛龙"
 L["Rats"] = "鼠"
-L["Ravagers"] = "掠夺者"
 L["Rays"] = "鳐"
 --[[Translation missing --]]
 --[[ L["Razorwing"] = "Razorwing"--]] 

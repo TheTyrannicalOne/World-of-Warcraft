@@ -1,2 +1,6 @@
 
-DEMODAL_DB = nil
+DEMODAL_DB = {
+	["setting_ver"] = 1,
+	["frames"] = {
+	},
+}

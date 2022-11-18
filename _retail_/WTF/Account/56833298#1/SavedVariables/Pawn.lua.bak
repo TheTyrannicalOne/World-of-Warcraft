@@ -7,11 +7,11 @@ PawnCommon = {
 	["ShowRelicUpgrades"] = false,
 	["ShowValuesForUpgradesOnly"] = true,
 	["ShowItemLevelUpgrades"] = true,
-	["ShownGettingStarted"] = true,
 	["IgnoreGemsWhileLeveling"] = true,
+	["Debug"] = false,
 	["ColorTooltipBorder"] = true,
 	["ShowTooltipIcons"] = true,
-	["Digits"] = 1,
+	["ShowSpecIcons"] = true,
 	["ShowSocketingAdvisor"] = true,
 	["Scales"] = {
 		["\"MrRobot\":HUNTER3"] = {
@@ -50,10 +50,10 @@ PawnCommon = {
 				["Brotus-Argent Dawn"] = {
 					["Visible"] = true,
 				},
-				["Fantastiburo-Zul'jin"] = {
+				["Kelvalatar-Dalaran"] = {
 					["Visible"] = true,
 				},
-				["Kelvalatar-Dalaran"] = {
+				["Fantastiburo-Zul'jin"] = {
 					["Visible"] = true,
 				},
 			},
@@ -104,10 +104,10 @@ PawnCommon = {
 		["\"MrRobot\":MAGE3"] = {
 			["IconTexturePath"] = 135846,
 			["PerCharacterOptions"] = {
-				["Darnastris-Dalaran"] = {
+				["Tyran-Argent Dawn"] = {
 					["Visible"] = true,
 				},
-				["Tyran-Argent Dawn"] = {
+				["Darnastris-Dalaran"] = {
 					["Visible"] = true,
 				},
 			},
@@ -290,30 +290,30 @@ PawnCommon = {
 			["SpecID"] = 3,
 			["UnenchantedColor"] = "937351",
 		},
-		["\"MrRobot\":DRUID1"] = {
-			["IconTexturePath"] = 136096,
+		["\"MrRobot\":PRIEST2"] = {
+			["IconTexturePath"] = 237542,
 			["PerCharacterOptions"] = {
-				["Zulbathal-Zul'jin"] = {
-					["Visible"] = true,
-				},
-				["Galvarton-Dalaran"] = {
+				["Jingojaggot-Argent Dawn"] = {
 					["Visible"] = true,
 				},
 			},
-			["Color"] = "fe7b09",
-			["ClassID"] = 11,
-			["LocalizedName"] = "Druid: Balance",
+			["Color"] = "fefefe",
+			["ClassID"] = 5,
+			["LocalizedName"] = "Priest: Holy",
 			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "DAMAGER",
+			["Role"] = "HEALER",
 			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
-			["SpecID"] = 1,
-			["UnenchantedColor"] = "be5c06",
+			["SpecID"] = 2,
+			["UnenchantedColor"] = "bebebe",
 		},
 		["\"MrRobot\":PALADIN1"] = {
 			["IconTexturePath"] = 135920,
 			["PerCharacterOptions"] = {
+				["Malivant-Dalaran"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "f38bb9",
 			["ClassID"] = 2,
@@ -325,6 +325,21 @@ PawnCommon = {
 			["Provider"] = "MrRobot",
 			["SpecID"] = 1,
 			["UnenchantedColor"] = "b6688a",
+		},
+		["\"MrRobot\":DEATHKNIGHT1"] = {
+			["IconTexturePath"] = 135770,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "ff4d6b",
+			["ClassID"] = 6,
+			["LocalizedName"] = "Death Knight: Blood",
+			["DoNotShow1HUpgrades"] = true,
+			["Role"] = "TANK",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 1,
+			["UnenchantedColor"] = "bf3950",
 		},
 		["\"MrRobot\":PALADIN3"] = {
 			["IconTexturePath"] = 135873,
@@ -347,27 +362,6 @@ PawnCommon = {
 			["SpecID"] = 3,
 			["UnenchantedColor"] = "b6688a",
 		},
-		["\"MrRobot\":WARRIOR1"] = {
-			["IconTexturePath"] = 132355,
-			["PerCharacterOptions"] = {
-				["Shanyt-Zul'jin"] = {
-					["Visible"] = true,
-				},
-				["Shanyt-Argent Dawn"] = {
-					["Visible"] = true,
-				},
-			},
-			["Color"] = "c59a6c",
-			["ClassID"] = 1,
-			["LocalizedName"] = "Warrior: Arms",
-			["DoNotShow1HUpgrades"] = true,
-			["Role"] = "DAMAGER",
-			["DoNotShow2HUpgrades"] = false,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "MrRobot",
-			["SpecID"] = 1,
-			["UnenchantedColor"] = "937351",
-		},
 		["\"MrRobot\":WARLOCK2"] = {
 			["IconTexturePath"] = 136172,
 			["PerCharacterOptions"] = {
@@ -383,20 +377,20 @@ PawnCommon = {
 			["SpecID"] = 2,
 			["UnenchantedColor"] = "6464b1",
 		},
-		["\"MrRobot\":PALADIN2"] = {
-			["IconTexturePath"] = 236264,
+		["\"MrRobot\":SHAMAN3"] = {
+			["IconTexturePath"] = 136052,
 			["PerCharacterOptions"] = {
 			},
-			["Color"] = "f38bb9",
-			["ClassID"] = 2,
-			["LocalizedName"] = "Paladin: Protection",
+			["Color"] = "006fdc",
+			["ClassID"] = 7,
+			["LocalizedName"] = "Shaman: Restoration",
 			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "TANK",
-			["DoNotShow2HUpgrades"] = true,
+			["Role"] = "HEALER",
+			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
-			["SpecID"] = 2,
-			["UnenchantedColor"] = "b6688a",
+			["SpecID"] = 3,
+			["UnenchantedColor"] = "0053a5",
 		},
 		["\"MrRobot\":DEMONHUNTER2"] = {
 			["IconTexturePath"] = 1247265,
@@ -416,38 +410,38 @@ PawnCommon = {
 			["SpecID"] = 2,
 			["UnenchantedColor"] = "792396",
 		},
-		["\"MrRobot\":DRUID2"] = {
-			["IconTexturePath"] = 132115,
+		["\"MrRobot\":PALADIN2"] = {
+			["IconTexturePath"] = 236264,
 			["PerCharacterOptions"] = {
 			},
-			["Color"] = "fe7b09",
-			["ClassID"] = 11,
-			["LocalizedName"] = "Druid: Feral",
+			["Color"] = "f38bb9",
+			["ClassID"] = 2,
+			["LocalizedName"] = "Paladin: Protection",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "TANK",
+			["DoNotShow2HUpgrades"] = true,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 2,
+			["UnenchantedColor"] = "b6688a",
+		},
+		["\"MrRobot\":DEATHKNIGHT3"] = {
+			["IconTexturePath"] = 135775,
+			["PerCharacterOptions"] = {
+				["Jingojaggot-Zul'jin"] = {
+					["Visible"] = true,
+				},
+			},
+			["Color"] = "ff4d6b",
+			["ClassID"] = 6,
+			["LocalizedName"] = "Death Knight: Unholy",
 			["DoNotShow1HUpgrades"] = true,
 			["Role"] = "DAMAGER",
 			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
-			["SpecID"] = 2,
-			["UnenchantedColor"] = "be5c06",
-		},
-		["\"MrRobot\":MAGE1"] = {
-			["IconTexturePath"] = 135932,
-			["PerCharacterOptions"] = {
-				["Vancard-Zul'jin"] = {
-					["Visible"] = true,
-				},
-			},
-			["Color"] = "3ec5e9",
-			["ClassID"] = 8,
-			["LocalizedName"] = "Mage: Arcane",
-			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "DAMAGER",
-			["DoNotShow2HUpgrades"] = false,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "MrRobot",
-			["SpecID"] = 1,
-			["UnenchantedColor"] = "2e93ae",
+			["SpecID"] = 3,
+			["UnenchantedColor"] = "bf3950",
 		},
 		["\"MrRobot\":HUNTER1"] = {
 			["IconTexturePath"] = 461112,
@@ -554,57 +548,66 @@ PawnCommon = {
 			["SpecID"] = 2,
 			["UnenchantedColor"] = "bf3950",
 		},
-		["\"MrRobot\":DEATHKNIGHT3"] = {
-			["IconTexturePath"] = 135775,
+		["\"MrRobot\":MAGE1"] = {
+			["IconTexturePath"] = 135932,
 			["PerCharacterOptions"] = {
-				["Jingojaggot-Zul'jin"] = {
+				["Vancard-Zul'jin"] = {
 					["Visible"] = true,
 				},
 			},
-			["Color"] = "ff4d6b",
-			["ClassID"] = 6,
-			["LocalizedName"] = "Death Knight: Unholy",
+			["Color"] = "3ec5e9",
+			["ClassID"] = 8,
+			["LocalizedName"] = "Mage: Arcane",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 1,
+			["UnenchantedColor"] = "2e93ae",
+		},
+		["\"MrRobot\":DRUID2"] = {
+			["IconTexturePath"] = 132115,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "fe7b09",
+			["ClassID"] = 11,
+			["LocalizedName"] = "Druid: Feral",
 			["DoNotShow1HUpgrades"] = true,
 			["Role"] = "DAMAGER",
 			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
-			["SpecID"] = 3,
-			["UnenchantedColor"] = "bf3950",
+			["SpecID"] = 2,
+			["UnenchantedColor"] = "be5c06",
 		},
-		["\"MrRobot\":SHAMAN3"] = {
-			["IconTexturePath"] = 136052,
+		["\"MrRobot\":WARRIOR1"] = {
+			["IconTexturePath"] = 132355,
 			["PerCharacterOptions"] = {
+				["Shanyt-Zul'jin"] = {
+					["Visible"] = true,
+				},
+				["Shanyt-Argent Dawn"] = {
+					["Visible"] = true,
+				},
 			},
-			["Color"] = "006fdc",
-			["ClassID"] = 7,
-			["LocalizedName"] = "Shaman: Restoration",
-			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "HEALER",
-			["DoNotShow2HUpgrades"] = false,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "MrRobot",
-			["SpecID"] = 3,
-			["UnenchantedColor"] = "0053a5",
-		},
-		["\"MrRobot\":DEATHKNIGHT1"] = {
-			["IconTexturePath"] = 135770,
-			["PerCharacterOptions"] = {
-			},
-			["Color"] = "ff4d6b",
-			["ClassID"] = 6,
-			["LocalizedName"] = "Death Knight: Blood",
+			["Color"] = "c59a6c",
+			["ClassID"] = 1,
+			["LocalizedName"] = "Warrior: Arms",
 			["DoNotShow1HUpgrades"] = true,
-			["Role"] = "TANK",
+			["Role"] = "DAMAGER",
 			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
 			["SpecID"] = 1,
-			["UnenchantedColor"] = "bf3950",
+			["UnenchantedColor"] = "937351",
 		},
 		["\"MrRobot\":DRUID3"] = {
 			["IconTexturePath"] = 132276,
 			["PerCharacterOptions"] = {
+				["Galvarton-Dalaran"] = {
+					["Visible"] = true,
+				},
 				["Durlok-Black Dragonflight"] = {
 					["Visible"] = true,
 				},
@@ -620,23 +623,23 @@ PawnCommon = {
 			["SpecID"] = 3,
 			["UnenchantedColor"] = "be5c06",
 		},
-		["\"MrRobot\":PRIEST2"] = {
-			["IconTexturePath"] = 237542,
+		["\"MrRobot\":DRUID1"] = {
+			["IconTexturePath"] = 136096,
 			["PerCharacterOptions"] = {
-				["Jingojaggot-Argent Dawn"] = {
+				["Zulbathal-Zul'jin"] = {
 					["Visible"] = true,
 				},
 			},
-			["Color"] = "fefefe",
-			["ClassID"] = 5,
-			["LocalizedName"] = "Priest: Holy",
+			["Color"] = "fe7b09",
+			["ClassID"] = 11,
+			["LocalizedName"] = "Druid: Balance",
 			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "HEALER",
+			["Role"] = "DAMAGER",
 			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
-			["SpecID"] = 2,
-			["UnenchantedColor"] = "bebebe",
+			["SpecID"] = 1,
+			["UnenchantedColor"] = "be5c06",
 		},
 		["\"MrRobot\":SHAMAN2"] = {
 			["IconTexturePath"] = 237581,
@@ -681,10 +684,10 @@ PawnCommon = {
 			["UnenchantedColor"] = "00be6f",
 		},
 	},
-	["LastVersion"] = 2.0706,
+	["LastVersion"] = 2.0708,
 	["ButtonPosition"] = 2,
 	["ShowLootUpgradeAdvisor"] = true,
 	["ShowQuestUpgradeAdvisor"] = true,
-	["ShowSpecIcons"] = true,
-	["Debug"] = false,
+	["Digits"] = 1,
+	["ShownGettingStarted"] = true,
 }

@@ -15,7 +15,7 @@ local max = math.max
 
 --api locals
 local PixelUtil = PixelUtil or DFPixelUtil
-local version = 6
+local version = 7
 
 local CONST_MENU_TYPE_MAINMENU = "main"
 local CONST_MENU_TYPE_SUBMENU = "sub"
@@ -27,6 +27,8 @@ function DF:CreateCoolTip()
 	if (_G.GameCooltip2 and _G.GameCooltip2.version >= version) then
 		return
 	end
+
+	local maxStatusBarValue = 100000000
 
 	local defaultBackdrop = {bgFile = [[Interface\Tooltips\UI-Tooltip-Background]], edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1,
 	tile = true, tileSize = 16, insets = {left = 0, right = 0, top = 0, bottom = 0}}
@@ -62,6 +64,24 @@ function DF:CreateCoolTip()
 		end
 
 		return CONST_MENU_TYPE_MAINMENU
+	end
+
+	gameCooltip.LanguageEditBox = gameCooltip.LanguageEditBox or CreateFrame("editbox")
+	gameCooltip.LanguageEditBox:SetFontObject("GameFontNormal")
+	gameCooltip.LanguageEditBox:ClearFocus()
+	gameCooltip.LanguageEditBox:SetAutoFocus(false)
+
+	function gameCooltip.CheckNeedNewFont(text)
+		--local file = gameCooltip.LanguageEditBox:GetFont()
+		--print("1", file, text)
+		--gameCooltip.LanguageEditBox:SetText("Цены аукциона")
+		--local file2 = gameCooltip.LanguageEditBox:GetFont()
+		--print("2", file2)
+		--gameCooltip.LanguageEditBox:ClearFocus()
+
+		--if (file ~= file2) then
+		--	gameCooltip:SetOption("TextFont", file2)
+		--end
 	end
 
 	--containers
@@ -1141,7 +1161,7 @@ function DF:CreateCoolTip()
 
 	function gameCooltip:StatusBar(menuButton, statusBarSettings)
 		if (statusBarSettings) then
-			menuButton.statusbar:SetValue(statusBarSettings[1])
+			menuButton.statusbar:SetValue(Clamp(statusBarSettings[1], 0, maxStatusBarValue))
 			menuButton.statusbar:SetStatusBarColor(statusBarSettings[2], statusBarSettings[3], statusBarSettings[4], statusBarSettings[5])
 			menuButton.statusbar:SetHeight(20 + (gameCooltip.OptionsTable.StatusBarHeightMod or 0))
 
@@ -1153,7 +1173,7 @@ function DF:CreateCoolTip()
 			end
 
 			if (statusBarSettings[7]) then
-				menuButton.statusbar2:SetValue(statusBarSettings[7].value)
+				menuButton.statusbar2:SetValue(Clamp(statusBarSettings[7].value, 0, maxStatusBarValue))
 				menuButton.statusbar2.texture:SetTexture(statusBarSettings[7].texture or [[Interface\RaidFrame\Raid-Bar-Hp-Fill]])
 				if (statusBarSettings[7].specialSpark) then
 					menuButton.spark2:Show()
@@ -2735,6 +2755,8 @@ function DF:CreateCoolTip()
 			end
 		end
 
+		gameCooltip.CheckNeedNewFont(leftText)
+
 		local rightTextType = type(rightText)
 		if (rightTextType ~= "string") then
 			if (rightTextType == "number") then
@@ -2743,6 +2765,8 @@ function DF:CreateCoolTip()
 				rightText = ""
 			end
 		end
+
+		gameCooltip.CheckNeedNewFont(rightText)
 
 		if (type(ColorR1) ~= "number") then
 			ColorR2, ColorG2, ColorB2, ColorA2, fontSize, fontFace, fontFlag = ColorG1, ColorB1, ColorA1, ColorR2, ColorG2, ColorB2, ColorA2

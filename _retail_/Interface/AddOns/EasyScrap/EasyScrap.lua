@@ -3,7 +3,7 @@ LoadAddOn("Blizzard_ScrappingMachineUI")
 ScrappingMachineFrame.ScrapButton.SetEnabledBackup = ScrappingMachineFrame.ScrapButton.SetEnabled --To prevent button mashers from scrapping while adding items
 
 EasyScrap = {}
-EasyScrap.addonVersion = 31
+EasyScrap.addonVersion = 33
 EasyScrap.saveData = {}
 EasyScrap.debugMode = false
 
@@ -53,6 +53,7 @@ keybindFrame:SetAttribute('clickbutton', ScrappingMachineFrame.ScrapButton)
 
 --Interface\HelpFrame\HelpIcon-ReportAbuse
 
+--[[
 GameTooltip:HookScript('OnTooltipSetItem', function(self)
       if EasyScrap.saveData.addonSettings.canScrapTooltip and not ScrappingMachineFrame:IsVisible() then
          local _, itemLink = self:GetItem()
@@ -74,7 +75,7 @@ GameTooltip:HookScript('OnTooltipSetItem', function(self)
         end
     end      
 end)
-
+--]]
 
 EasyScrap.scrappableItemDB = {
 		[159217] = true,

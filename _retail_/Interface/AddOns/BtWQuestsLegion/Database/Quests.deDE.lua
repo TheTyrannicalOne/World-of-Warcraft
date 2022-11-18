@@ -276,9 +276,6 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [38286] = {
         name = "Das Auge Azsharas: Azsharas Zorn",
     },
-    [38305] = {
-        name = "Cenarius, Hüter des Hains",
-    },
     [38307] = {
         name = "Die Bitte des Kriegshäuptlings",
     },
@@ -1242,9 +1239,6 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [39729] = {
         name = "Das Wissen der Rabenwehr",
     },
-    [39731] = {
-        name = "Der friedvolle Forst",
-    },
     [39733] = {
         name = "Der einsame Berg",
     },
@@ -1352,9 +1346,6 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [39860] = {
         name = "Ritus des Blutes",
-    },
-    [39861] = {
-        name = "Wenn alles zusammenkommt",
     },
     [39862] = {
         name = "Der Belagerungsbrul",
@@ -2153,9 +2144,6 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [40710] = {
         name = "Klinge des Schattenhammers",
-    },
-    [40712] = {
-        name = "Die einstige Macht",
     },
     [40714] = {
         name = "In den Krieg",
@@ -2996,6 +2984,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [41878] = {
         name = "Die Gondoliera",
+    },
+    [41882] = {
+        name = "Flüstern in der Finsternis",
     },
     [41884] = {
         name = "Finstere Geschichten",
@@ -4292,9 +4283,6 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [43318] = {
         name = "Ly'leths Champion",
-    },
-    [43324] = {
-        name = "Zorn der Eulenbestien",
     },
     [43331] = {
         name = "Zahltag",

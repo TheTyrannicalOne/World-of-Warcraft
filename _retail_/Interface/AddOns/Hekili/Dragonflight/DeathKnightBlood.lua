@@ -459,13 +459,25 @@ spec:RegisterAuras( {
         type = "Magic",
         max_stack = 3
     },
+    death_and_decay = {
+        alias = { "death_and_decay_actual", "deaths_due" },
+        aliasMode = "first",
+        aliasType = "buff",
+        duration = 3600,
+    },
     -- $?s206930[Heart Strike will hit up to ${$m3+2} targets.]?s207311[Clawing Shadows will hit ${$55090s4-1} enemies near the target.]?s55090[Scourge Strike will hit ${$55090s4-1} enemies near the target.][Dealing Shadow damage to enemies inside Death and Decay.]
     -- https://wowhead.com/beta/spell=188290
-    death_and_decay = {
+    death_and_decay_actual = {
         id = 188290,
         duration = 10,
         tick_time = function() return talent.rapid_decomposition.enabled and 0.85 or 1 end,
         max_stack = 1
+    },
+    deaths_due = {
+        id = 324165,
+        duration = function () return legendary.rampant_transference.enabled and 12 or 10 end,
+        max_stack = 1,
+        copy = "deaths_due_buff"
     },
     -- Talent: The next $w2 healing received will be absorbed.
     -- https://wowhead.com/beta/spell=48743
@@ -484,18 +496,18 @@ spec:RegisterAuras( {
     },
     -- Weakened by Death's Due, damage dealt to $@auracaster reduced by $s1%.$?a333388[    Toxins accumulate, increasing Death's Due damage by $s3%.][]
     -- https://wowhead.com/beta/spell=324164
-    deaths_due = {
+    deaths_due_zone = {
         id = 324164,
         duration = 12,
         max_stack = 4
     },
     -- Strength increased by $s1%.
     -- https://wowhead.com/beta/spell=324165
-    deaths_due_buff = {
+    --[[ deaths_due = {
         id = 324165,
         duration = 12,
         max_stack = 4
-    },
+    }, ]]
     -- Talent: Haste increased by $s3%.  Generating $s1 $LRune:Runes; and ${$m2/10} Runic Power every $t1 sec.
     -- https://wowhead.com/beta/spell=47568
     empower_rune_weapon = {
@@ -554,11 +566,22 @@ spec:RegisterAuras( {
     },
     -- Talent: Movement speed reduced by $s5%.
     -- https://wowhead.com/beta/spell=206930
-    heart_strike = {
+    heart_strike_206930 = {
         id = 206930,
         duration = 8,
         max_stack = 1,
         copy = 228645
+    },
+    heart_strike_228645 = {
+        id = 228645,
+        duration = 8,
+        max_stack = 1
+    },
+    heart_strike = {
+        alias = { "heart_strike_206930", "heart_strike_228645" },
+        aliasMode = "first",
+        aliasType = "debuff",
+        duration = 8
     },
     -- Talent: Your next Death Strike deals an additional $s2% damage.
     -- https://wowhead.com/beta/spell=377656
@@ -771,24 +794,6 @@ spec:RegisterAuras( {
         type = "Magic",
         max_stack = 1
     },
-    -- Surrounded by a vile swarm of insects, infecting enemies within $115994a1 yds with Virulent Plague and an unholy disease that deals damage to enemies.
-    -- https://wowhead.com/beta/spell=115989
-    unholy_blight = {
-        id = 115989,
-        duration = 6,
-        tick_time = 1,
-        type = "Magic",
-        max_stack = 1
-    },
-    -- Suffering $s1 Shadow damage every $t1 sec.
-    -- https://wowhead.com/beta/spell=115994
-    unholy_blight = {
-        id = 115994,
-        duration = 14,
-        tick_time = 2,
-        type = "Magic",
-        max_stack = 4
-    },
     -- Deals $s1 Fire damage.
     -- https://wowhead.com/beta/spell=319245
     unholy_pact = {
@@ -852,21 +857,6 @@ spec:RegisterAuras( {
 } )
 
 
-
--- Tier 28
-spec:RegisterGear( "tier28", 188868, 188867, 188866, 188864, 188863 )
-spec:RegisterSetBonuses( "tier28_2pc", 364399, "tier28_4pc", 363590 )
--- 2-Set - Endless Rune Waltz  Heart Strike increases your Strength by 1% andWhile your Dancing Rune Weapon is active Heart Strike extends the duration of Dancing Rune Weapon by 0.5 seconds and increases your Strength by 1%, persisting for 10 seconds after Dancing Rune Weapon ends.
--- 4-Set - Endless Rune Waltz - Parrying an attack causes your weaponWhen you take damage, you have a chance equal to 100% of your Parry chance to lash out, Heart Striking your attacker. Dancing Rune Weapon now summons 2 Rune Weapons.
-
-    spec:RegisterAuras( {
-        endless_rune_waltz = {
-            id = 366008,
-            duration = 30,
-            max_stack = 1
-        }
-    } )
-
 spec:RegisterGear( "acherus_drapes", 132376 )
 spec:RegisterGear( "cold_heart", 151796 ) -- chilled_heart stacks NYI
 spec:RegisterGear( "consorts_cold_core", 144293 )
@@ -897,8 +887,6 @@ spec:RegisterGear( "uvanimor_the_unbeautiful", 137037 )
 spec:RegisterTotem( "ghoul", 1100170 ) -- Texture ID
 
 
-local any_dnd_set = false
-
 local TriggerUmbilicusEternus = setfenv( function()
     applyBuff( "umbilicus_eternus" )
 end, state )
@@ -920,24 +908,6 @@ spec:RegisterHook( "reset_precast", function ()
                 break
             end
         end
-    end
-
-    if state:IsKnown( "deaths_due" ) then
-        class.abilities.any_dnd = class.abilities.deaths_due
-        cooldown.any_dnd = cooldown.deaths_due
-        setCooldown( "death_and_decay", cooldown.deaths_due.remains )
-    elseif state:IsKnown( "defile" ) then
-        class.abilities.any_dnd = class.abilities.defile
-        cooldown.any_dnd = cooldown.defile
-        setCooldown( "death_and_decay", cooldown.defile.remains )
-    else
-        class.abilities.any_dnd = class.abilities.death_and_decay
-        cooldown.any_dnd = cooldown.death_and_decay
-    end
-
-    if not any_dnd_set then
-        class.abilityList.any_dnd = "|T136144:0|t |cff00ccff[Any]|r " .. class.abilities.death_and_decay.name
-        any_dnd_set = true
     end
 
     -- Reset CDs on any Rune abilities that do not have an actual cooldown.
@@ -976,10 +946,6 @@ spec:RegisterAbilities( {
         cooldown = 120,
         gcd = "spell",
 
-        talent = function()
-            if covenant.necrolord then return end
-            return "abomination_limb"
-        end,
         startsCombat = false,
 
         toggle = "cooldowns",
@@ -1284,14 +1250,9 @@ spec:RegisterAbilities( {
         id = 43265,
         noOverride = 324128,
         cast = 0,
-        recharge = function ()
-            if pvptalent.deaths_echo.enabled then return end
-            return 15
-        end,
-        charges = function ()
-            if pvptalent.deaths_echo.enabled then return end
-            return 2
-        end,
+        charges = function () if talent.deaths_echo.enabled then return 2 end end,
+        cooldown = 15,
+        recharge = function () if talent.deaths_echo.enabled then return 15 end end,
         gcd = "spell",
 
         spend = function () return buff.crimson_scourge.up and 0 or 1 end,
@@ -1310,7 +1271,7 @@ spec:RegisterAbilities( {
                 stat.haste = stat.haste + ( state.spec.blood and 0.1 or 0.15 )
             end
 
-            applyBuff( "death_and_decay" )
+            applyBuff( "death_and_decay_actual" )
         end,
     },
 
@@ -1368,15 +1329,9 @@ spec:RegisterAbilities( {
     death_grip = {
         id = 49576,
         cast = 0,
-        charges = function ()
-            if not pvptalent.deaths_echo.enabled then return end
-            return 2
-        end,
+        charges = function () if talent.deaths_echo.enabled then return 2 end end,
         cooldown = 15,
-        recharge = function ()
-            if not pvptalent.deaths_echo.enabled then return end
-            return 15
-        end,
+        recharge = function () if talent.deaths_echo.enabled then return 15 end end,
         gcd = "off",
 
         startsCombat = true,
@@ -1450,15 +1405,9 @@ spec:RegisterAbilities( {
     deaths_advance = {
         id = 48265,
         cast = 0,
+        charges = function () if talent.deaths_echo.enabled then return 2 end end,
         cooldown = function () return azerite.march_of_the_damned.enabled and 40 or 45 end,
-        recharge = function ()
-            if pvptalent.deaths_echo.enabled then return end
-            return azerite.march_of_the_damned.enabled and 40 or 45
-        end,
-        charges = function ()
-            if pvptalent.deaths_echo.enabled then return end
-            return 2
-        end,
+        recharge = function () if talent.deaths_echo.enabled then return ( azerite.march_of_the_damned.enabled and 40 or 45 ) end end,
         gcd = "off",
 
         startsCombat = false,
@@ -1565,12 +1514,6 @@ spec:RegisterAbilities( {
                 gainChargeTime( "vampiric_blood", 2 )
             end
 
-            if buff.dancing_rune_weapon.up and set_bonus.tier28_2pc > 0 then
-                buff.dancing_rune_weapon.expires = buff.dancing_rune_weapon.expires + ( set_bonus.tier28_4pc > 0 and 0.5 or 1 )
-                addStack( "endless_rune_waltz", nil, 1 )
-                buff.endless_rune_waltz.expires = buff.dancing_rune_weapon.expires + 10
-            end
-
             if talent.heartbreaker.enabled then
                 gain( min( action.heart_strike.max_targets, true_active_enemies ), "runic_power" )
             end
@@ -1649,7 +1592,7 @@ spec:RegisterAbilities( {
         startsCombat = true,
 
         handler = function ()
-            addStack( "bone_shield", 30, buff.bone_shield.stack + ( buff.dancing_rune_weapon.up and ( set_bonus.tier28_4pc > 0 and 9 or 6 ) or 3 ) )
+            addStack( "bone_shield", 30, buff.bone_shield.stack + ( buff.dancing_rune_weapon.up and 6 or 3 ) )
             if azerite.bones_of_the_damned.enabled then applyBuff( "bones_of_the_damned" ) end
         end,
     },
@@ -1956,13 +1899,4 @@ spec:RegisterSetting( "save_blood_shield", true, {
 } )
 
 
-spec:RegisterSetting( "blood_boil_drw", false, {
-    name = "With Tier 28, use |T237513:0|t Blood Boil in AOE during |T135277:0|t Dancing Rune Weapon (Tier)",
-    desc = "If checked, when you have Tier 28 4-piece, the addon will recommend more |T237513:0|t Blood Boil in AOE while |T135277:0|t Dancing Rune Weapon is active.\n\n" ..
-        "This can help with AOE threat and damage, but can reduce your self-healing, absorbs, and potentially your Dancing Rune Weapon uptime.",
-    type = "toggle",
-    width = "full"
-} )
-
-
-spec:RegisterPack( "Blood", 20221027, [[Hekili:TRvFpoUTr)pllcGp57fxl717MuyBGKlbT39eCbiBas)lltlrBZU6TsjTB8dm0N9odLefLejT3KRxBbkWHdRfP48cN538Bi1g3n)YMhci50nFA20zZCNo7(jU3pBX05BEi)ukDZdPe)hjhG)iMeb))3fMKeGp9uycjaF7SKcUpmYdSOIqsolj(9CY(8npSRGfM)H4n70lbx4vtP(WJxmDZdhzbb0Q5sZ8RLt52V))R8JZUVC7p5NNSJYl3IRXMhczz5zcvN)Sxrk8xFsyj0yYUqAWMVBZd(CwoLZiOESF)KDjXuVSJmAyWKSCWMk3UUC7IYTJk3YlIPWpxbREZVz(EPjpt5tcO7z(S8QHNpvo)9j8d0jGqIYsI9WN49mLKMepPrhEG4JodWpMeTllhK)MCWynQMvAXYYT3zrjavUDHPrIHvLokI5gfHt52bodonIWIZajVQYYMKZIOE5jEZl3E(C5wDVuThCzJhtmbYUKiwSicWlKfTBsrA52XI)zXEMnT1GIiCEYZCACaAh3E97Ownc5omoOBR0cOK8JzE(eonldf4c7c0pHCOimjfERtDL4b)GkFLyEm)tE5KWK4SbZQNW9YY5ShfXf3zu24B8e1JgtJyuyPqJqyu5eiemxAPP(5EZxi2uwOB8agv4WH9ZGK8jqABOhhcAG9dPA(gX7oUvnvMfQL33tl1nnfv)sAyFtRnf8pIU7FYpeElXkKHadGI)1gDV3alPyVGeh4fq9jNaP6)il(GqrCqDjKgdcLeFOGbXCh4jfX1B41JveFmj8KCKX93NLRnQlFJT8t4F(hrvpRhIut8RiFcfn6i2HOKEPHqGjTBW2m58GveWzddB8i1V0UewOcgyTq92ZR0CsyL8DN42XEAFz0uCN2ZwssHGbAE78FIawgmk(xHfuHnoBHy3QRwDKs451jeLBFT01kE(oyZ(ryZUwsIXNj0ly99QQmPUaE8upO0GqfnxyqlKe68Au6j6wtJPWUcS9Mr9H8)IO0AKAP4X5zfGURxPx4Ji7FElKBt9NmFOimupQgXf32VW6G7T3Anm11m(Bhe2zIeAjeOXINxNtvDqqlYrh5tGselQ3BPk)n1UKAu9GIkVHevw55TjkGpqzkd9MdkwaVU9Q4(jjHbjphpjGe7dGiDOgif86MDrfVvLxcIa(gGLX70K3M9mHhHlzeW(rKcmVQ(QcoS6uSZfaXq3XIdMKwKLxaaMuEHiATnjteg1mTNsqYDW8YscFctmLtdmJgNF)j5DSiIeNWce(swmiBukES9kkq)xQZeJIObmK94dkvU3hsZo6xXYSDUhct2rcXjAL8GKNLMDa4PUtviKKDe45Gftos9kIFoHdL(RIkt5uFGxhjxxujsHLZQZ9)HFJ6xKJoQDiRrq2vVi(7dq0WKYTFRVpnnhIlItIFhaehTViSQ6ycgTKehEAIwRxOkazS4acp4lhl4RKBBZK6tmSNd69GrYcq3pjiqu3vdX2YThPC6BX4mqniGxbvhOy0JzWd)(F(xl3gH4AuS(lM4tczhIRwTNOCyKz4icSMl7uqw42tFEzuqLqmgFdNAi03GHh1qiIATbCw8JcEoKGtQfg7mQAHXBL1aSzExGuEtADl)hqvHTqumE7cjb0kAdxfC3sBw)4)h)FR8))YtqTplFTmMQPhQIwI7iayapYoJ7)tQHM(CX)VMgAgW8(LqRvn4dO0eL6rIGaJ8Hj9YT0oL7BrOKdRMRpttaMcnzZ1Om3eYx3eRlYWosJsaOSmwMerRccDHG5K52D0YnUx)qZS1VJzIFg5Jps6m50qw2rpwSNyv74snHe7o1oj9(vOUQgWC)s0a2f6HWXGnBR)l5gOUSPL6CwkHDMr3VIwLMBFxWm6DNIr320QKX(D(K79xztKMXxngjQupGtszcdibOALXu59B3snF4fwobbtPtZmdI5ijK2uDWzyL9L9l9QNF799BtAytMGoZiHxOfZlq2rWpRsrV5cS4qf(MlWKBai0(c(jjnB5quEgLJSb6fGyM6QHIu1nVxNjzfu6oL8mc3NaEH0IWm6vWARMic47PXhYp2PhBGX(X8mV)ErWHiSpWgkzsrf7dvB4KqGZwyyp79o1zUNXP7QUPIotQtY1oYbVK9EquG)Jz9MO5SRR5CSR9jqHrELDKJjt7jfHxUDXp00pRcTyOlziTIs))12M1LH8VFQkoTPQ)xrdp6c8XDWowa0sUpefb9mxUnnbFwB2a0gh27gGveFGgaDU9m9vHaqr2PyF4hS8JIM5ATLQfqgy184ImQhOzr9336eVWjmyAG52pmWkz7bajAogO2EgmZvwEGug8zDsURZ(1f6jRfaX8Ev)WdV)RQBbREpTb)YgLwcOBy8kK)KcpS3U23MdUZuiwopb2oQNBZ24HJj4jsW2JByWUkNgW8ZbrCc30WnW4KCKkl0fEHpShYIRFZyaQTC7(I8co969on4OPqrEHS7ZV0cjarfHXA5iFvUY2ZB0ozvh12kBpME1I9RR1gRNV(xlz10V826ECfQkdKtsVgQO6BpU3k2THBlhm9LwszjTxw2Jf(H11gZXAcu8GCGMxjzPdzPCiHdWWGjKvnJlq2ZXupXkSJg0j94x2HDOPt)RLV41IAOz8w6JVCaCjKzrSXeJ67Axh5ZRkXsEoL1veFcOUGVvZ3fWDBE4zch3Qbu9F9B)5p9Hp9x(ZLBl3(liqcdiQYbmM9jaEYRQ0Lxb5m0)rbuSpapP6iyAKI8KiI44wRkYKnP8J)idZtDHf79jXGyfd)kU8A8)BVQc2t9rnbAWq4z1(d)0pcisU)2yy5k)4f0ojeYltbN3tbLNqUu)AFII65mRwR(GqjWx9UMtpUCR4tLagg2KkYpMWfFOgVx0)3FL(ilKHNLDYEgsx4R(QYTkF4f4ph8XxGccE(NPt1U8J1)EI8a1FZQ)u7jCxlnjPi58HzPqls9XnSFElg1TYezN3kOgT6(PI1)ZaLfvvOAjElB)kB14uEbjDg1h2sFr9PDWqrrCJgix1xqLFr78VSo1pxUYFwt0q41(cqzqvH6tG5sgZiNb0hwo785H0gwc41JVSPlZQh4DXAYO24GkWYvZg1LiWAy9hnKaW6vqX)XNp3TSpo5or5Ys0Y4jn1Hx27TgeLy7fpF(sXq9RXIR4fkqpqBAlbkCv6kcJBo6kapE01u6DGpy4uVuitN0VULcRHte1DEbz26dLAkfIWBnaGYWRvT31SI(QET2Np3)znUGBRhsZX)muqyoL6fgJs7AC0RNpsPl41RC(MPVZXYDv)65JhRx8Ta9OSnEL0NpB8YIhv5ESDXZVvZ1jVY9T9V44opsvB6V2g8KAUQy0OeqcDCylDNovDJVkMAL8Qu1MUkonR1leilRRqy6FmeRxnF6Owgm(d)2e7ltqT1CvRsT(oTszHMvPliLJrWMvDX6oFE4ufg6YzJedO5tkC8yTA1SPAuRRhfSNInQci310AwtOqUK6UAWLReqRIXhELGIr1S8k3eeU644TNv3k3rAVbQLl6)COQ2Ahd3S0Bwm(ccUZfoH5fiAVE52vbXiZ)WAIMQf3y4gqh5OVGHSqsNYl6ew7bslICDQltxNIHXaqfAtFQDqPEyuhtxNeKUQVQVRonPlVvnFKu1uwDMT4nMV5MxB5wBE9mZU72aAnzxlxz7J3sZAQCVfx3gSJ17Gz18rgQQbUFRV56v3QrbunIg0U2VNTkkrAbyT7gALunl5vThC)vuBLeCAKZnwU3aGNMLBmy8aXJH3YRhq3OQND)q0gihOIC6sxTqU3nv3A27q8LqKdp4FTAuNJ4x3mKhTVwZv9i9TyX1NmVHWDrXK23UHS2NNk0IoN(c)jpn0wqxrVARMnQL3PDbUYotguZ38mDGmV3yjb41wc)F9TJ1S016VbkdJUXXWh3011WHjlzSw)1Nr2i9x1p78rgiG)1wowrCYpPKEjNqDZPt1(gFPPmzq0)BH0KLab71XnDUyTPed(0Fgz(Z(z5mdBMDyxz4iqgv1eq)pQhaoyX7mrTAqDFfwxg0fnXXgivmY(3RJwWex9XMwj11qOZ9ZcHolHcoVioDJ1EgzgmqnE1lqiBU21XkLSBxAcCslrZFxB6smklFAm)UJX1dD33MfhF4A3roDH)x2IBpKVX9JhlUnLn)Zd]] )
+spec:RegisterPack( "Blood", 20221105, [[Hekili:DVv3UnoUv4NLGc4rojRRLDCYmf2gO70BMbf7f1lqVZY0s02Sr)vkPK1fg(zVhsjrrrrslNKD6IcmiirKI88h)oFNd1S2D9VUEvakhV(xMmEYex3XZgn(ltNnE26v5htXRxLI8FgTh(Lyue8ZFomjjG90JHjOa2BNLuq9HrwrIkcr5KK4Vsr7YxVABbjm)BXR3QFhMcVAk2hE8SXRxDGeeGlNloZF9Q1Rcjz5zCXJ(Qxrk8B)cxAXXOTH4G1)86v(usoMsqS9A3UrBtIXEzhi4WGrz5GCFEZYZBMDEZGZBOfXy4pxCEZK6)M47LM8kMokaVJ4tYlhE6yX83Lq3JhbBsuwsSh7jEVIrPjXJQLHviFMcd2QKOTz5W(VohuiJIzPum)8MhTieGi3SW4i(WY7oBlMAClCoVPJXGIJqK4myNxuQzJYjryV8eVPN3C605n6EPkl48AlgFcOTjrKyUx2lKeTDur65nd5)ZI(mzCJcfHO0KxP44aME8q)9OwvcHhMnOBZUfGr5hY88ruCwgBdNzFd9tq7lctsH36y7DCVFWOi0VvAV4ZL4F0lhfMeNPDMkcHxwoL8mp(4rJYa7nEb7HJXremSCmLHRC5iiumxOXP(5EtNXDoZ0nEabZn8GFnijFeCen0JcbpGFriQ3XF3HnIP0Sys5tksPUPjj6xscvvTMJIVhz3)OFi8w8viJbqac(NnAEVbwsUVafh4fG9rhHD1)zs8(ormbfCx1xEdRfxPCy6vioguau8(ccehVNMuehuJDugivnNI4djHh7mJHQXqI9IjBUJTbca)Z)aZUKPa7vFiHFOLjdmR8wgSUxAie9JBhnprmpyfba7WWAZD1lTnHekb0wTPE7OLIokSC)Dh52sHAEzUUOcTNKcrA48M5)cc0myu2VfcohMoozgpuOTuDaJO5vN2oV5wHnM)8TqK0ZqKKWeFBPgYxFVYuCYlGhn1dY)WfrRW6DX9ygVAHEKU10i(GlhDVEuFaGPikTkDGy7zZZm65LJo74nvMFjWDdYFDAWmFiFpKwSc4NfyCP1bmepCXGzZaZTW6NWHuAbgBmvE)S(Ydcssot82HkcZ1X4GroHsQCgFlgKqArQuukKCmac9X4)tdtabWzoLbfeY4c12rQMn)Yb)pnwoIvoacqUIs9qrassEpYWgGI9HOIwSBaYwTv0vKyF4Su(b4hPjSNbNZtscdsEf(TdOm(X(494G7pV5v8NcHZ8zhJ9H)GKF48M)2)4F2OlLlGixC9JlYWEGKfLPyBEuEsuebMgOUbkZsnzvRtcDOsWuqJmeSM(WQnRf0waLe)CzMu1KiIt2i4yt5F4Xy7wY5TYNcWNeuyMwGErefceowapk0d4PNR42(R5G9mfomKNa(JQ5w7h3FasSEEdzhZJbUvkoG4NdBXrMxJ5bJtYzjhoVjQWhCIK4Q3mgoWCEZUI8ckU)MNACNuivpFVLsZWbAyhL3r2Fi3tEaXj9HAtt0ltPFYlWReNNDbyCh58Jn5lfyppWXefsK1KDFwGoQsvDPggILjdZrPnW)xlPynRABQ2wYw0NLTuzU6ttwW1RYlNZ854yweZEkklTBXv7tOaSoOgzLZGVUMjrF9S8CTcF0pAEgOWjrYZirWYINQbu1E(XQFwx603pkMMX5RSzkX9AzHNB8GAvL(SeNMG8SEqhkznoardktJdqA(qz5OMe51lYUqC2b)YUuiNgjxAj(H1UHgXYAteQNKAf4ky(FfylscWaankiGhLQPdcqoBmfFplqaedw6BM4ayqpNDppBnG5ZyUbh5oVHbDJcj7JlxTxWuyKjSr40OUSrH1UdDSC6f(JHgwy)nCKqTUt6KLCIz4nqbhLlqO1OyPceEqGLBtfVqhq4dFJmIbiUGBKTnEBdrb4M98AqdmBjgAktWBkrW))20LRpFXhq6IF36kGzGFPyZkwkJLaFyEDa8HgPJXQ)Fi7qLzEX)rVfvD4XEn9sWu1EDrye(u9qlndRqfVteMuVjmtF2kz4bnnz(aokbWnZizc4ZsmBWE9t26XK22nO0eQj2AYK5mqx4CRXoGmqyRPyGiYbpsShFtBzXnLvWDSDsCQa1xUVaGv09hrtXUa1Ehd6STEIj8VDlcSRDskG8TaSZ9k9OTvtT7FmNhqTUrD02vA8ufNDbrxZT9790uAJrYs5DOOuc)1taQJzeMi03SpD4T3h4bxthyNygMuuR(Y6eqoDjOOw9QfA7pvEnwg9o5RLAJG1AdUSpqubMGuHWdO(C5tbpinfDEqvpJGUIfi7EXYemptvXXk9DGY8LXCu7oTto7venITKrq9zCiLPQM4wtXEfcSuSBjalO0IS8ciFkM131wbM8ud1t7Le2vrdZllj8fwmTmCCT9xDsEhkIqXjKYwAqQ7URhzNKaO(sTMyueoGW7VRR(QnBM7(WKTOq2eTYiNwFJXA8aZvOWLDaIMzCnoG9kIFnHc8PldDRBMO1a3lemWRwseaBTMQQofzTUQozP3vqpkIwfdHPzyAjx8wGGMdvmWIRUvCLMnRPLFuYMIO(iWkKweMH7rTtvu2bydC8(8dT68rilVwM3)QiyFeUS58T6aoy1XS7ii0J1Kdf9TvBW3rO4TLFigTM0tTmDO9Ej78aam)NvBQEVksW4v4xztaMJ0s9GhJ9c4Qydx)zEmD0K1RGt4S(ga7)VYADmbsOqHfCxce((PY298jWrG)3fGkfWoahbtdvKNebhJcQVxHSrN)(FNWCEU)LZB(AsmSz8H)e123PXNkB9T9jvhsct2X93gk2PVOSt6lCRElSxwxpx7wf8PSYAlgSzDp)DDg4YlY6kTWp9HlC2x43PfvRMx3gVRt1NQxavBuJIeAQpoQ6)VpQV11(D4Z0AwfuGEF2vJzZRfXlMUxv)nUdQPR7SdMykiBj(g3iWw4hl7saRfQ8VpnyywJMt2ryfHvou2irNNVBXFUj7pBL(tN3iU14ZFVA(WSKU3y5hlDLXYpUUeQ7z1MTWu)aUNxt4INgZ32pG7WvwekxI7j7wy7o)KEbX97k)WM7Zv(PT6FiBlUrZDoj)cYmmAM)LLj1ltO0EwrwIB1(bCfQT83kxO7LuMboDUo15toDQvf0ZHsGgEzTwC0UJHLDVKmbXHT3Zxmzq7IBxcR)GUf3TCH7Opp80P21KXMCR4ErJPfHsAA)8CL3QtaITx80Plf(OE)ISv8cxoPgPbk2I7Umv8N6B0mfBV2ahDW1NoPp9WWb9PIUoMZUt9sbEToe3(g9QaL4C7Uc8b9rL15XzyN1ORIi1f9ZYpW5MULBF6KHsTN)q1qDlXEOgzGDOvUmwMG0hFWYPdKOAVCHZxg)towQG(2PdnS9njyy7TXmNNozmL3GBUy5W3RPi3fU3RwoBRhjlnQRTblPMcyzkfh4PLbBou4RCmrz42cXnOQfuG3TNLZ44xllXXuR1z5IPJhyTCb19eeBn3WQqQFu7UmtZQ0gk0XiK2I2iQNo1DQCfD(Kb8b08jBpCOwPAYynIv)XAveSbLPlCnTMvmwelPUBbC(coaUHB(JpQMLx6(yyRoB8MgcSWDG27bA(m1NhqWlDmC)o3nB4f24wx7d7CblNI(9TTaYImF3ss)qgn6AUUutkjHejNALYsNu20TxEiVtflIQZMSGhGaHPppzGjcmQJPBdcoNRNuIRojPnJAnFVOvKPDMm7oZ3SYTwUvLBNy0pjDsqZXY5lS9DSQznLU5G3Rd2X6DKSScHrtMsiBJ13CXd6SgY6xncQ4qWKsYCAbTTBHA2PkQ9lA64ypYxJcocuiS0WtGHPLwDoSZ2ZI8f91u3OYnDSlcgC8OKw9CxTW4pow3AQ09rbSB3owQvIA1BsDZq0tsTQRCViTOXvTu0WjbEcQM3UMB4htwFE5E)G)6P6QlmtHs(AZk18h1Ua9SMQo8impth4K3DwoaCRLW)BFyOMLUs(nqdzWnog6Tw)QVXKMmuR96dKHJ6Q(HZXPRy37u8DKTEMd4nMKxA7eFNjkNRHSXJhR9n(rZGZWw))eoCwIHSZoWuFaBon157bAG5VfO5tm4mBXzZqFFguwtI6x6dGKm7NmryRdNbjUCgKLRjo2atLb2)8D0cq5QpO1khYA(JUFi8hTeJ4CvuihQ2Sqd621yPVaZVPA3aRu)EyUjqqTCDFJYTJHqebuNLVlM3(zf9zpunh8EVU0DGt7mqZBsD0LYZtdz3XEr(Hek))D(FLFpTR)Vd]] )

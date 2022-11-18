@@ -18,9 +18,6 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [90866] = {
         name = "Maestro manitas Sobrechispa",
     },
-    [91065] = {
-        name = "Bodeguero Voodani",
-    },
     [91109] = {
         name = "Malfurion Tempestira",
     },
@@ -162,6 +159,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [110018] = {
         name = "Gazrix Engranaje Seguro",
     },
+    [110488] = {
+        name = "Ritssyn Llamafruncida",
+    },
     [110987] = {
         name = "Ojos Nocturnos",
     },
@@ -174,6 +174,12 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [113686] = {
         name = "Archimago Khadgar",
     },
+    [119886] = {
+        name = "Excavadora Karla",
+    },
+    [120215] = {
+        name = "Archimago Khadgar",
+    },
     [121754] = {
         name = "Vereesa Brisaveloz",
     },
@@ -182,6 +188,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [130030] = {
         name = "Kelsey Chispacero",
+    },
+    [133523] = {
+        name = "Ji Zarpa Ígnea",
     },
 })
 ]])()

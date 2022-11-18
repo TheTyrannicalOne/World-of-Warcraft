@@ -608,7 +608,7 @@ end
 function WoWPro:GuideFormalName(GID)
     if WoWPro.Guides[GID] then
         -- GID is a proper guide ID
-         WoWPro:dbp("WoWPro:GuideFormalName(%s):  GID", GID)
+         WoWPro:dbp("WoWPro:GuideFormalName(%s): is GID", GID)
         return GID
     end
     if type(WoWPro.Nickname2Guide[GID]) == 'string' then
@@ -787,11 +787,11 @@ function WoWPro:CheckFunction(row, button, down)
             WoWPro:SkipStepDialogCall(row.index, steplist, row.check)
         else
             WoWPro.SkipStep(row.index, false)
-            row.check:SetCheckedTexture(WoWPro.UI_CheckBox_Check_Disabled)
+            row.check:SetSilver()
             WoWPro:UpdateGuide("CheckFunction:Skip1Step")
         end
     elseif button == "RightButton" and row.check:GetChecked() then
-        row.check:SetCheckedTexture(WoWPro.UI_CheckBox_Check)
+        row.check:SetGold()
         WoWPro:dbp("WoWPro:CheckFunction: User marked step %d as complete.", row.index)
         if WoWProDB.profile.checksound then
             _G.PlaySoundFile(WoWProDB.profile.checksoundfile)
@@ -934,9 +934,9 @@ function WoWPro:RowUpdate(offset)
         end
 
         --Loading Variables --
-        local step = WoWPro.step[k]
+        local step = (WoWPro.step[k] and WoWPro.ExpandMarkup(WoWPro.step[k])) or ""
         local action = WoWPro.action[k]
-        local note = WoWPro.note[k] or ""
+        local note = (WoWPro.note[k] and WoWPro.ExpandMarkup(WoWPro.note[k])) or ""
         local QID = tonumber(WoWPro.QID[k])
         local coord = WoWPro.map[k]
         local sticky = WoWPro.sticky[k]
@@ -948,8 +948,11 @@ function WoWPro:RowUpdate(offset)
         local item = WoWPro.item[k]
         local completion = WoWProCharDB.Guide[GID].completion
 
+        if (i == 1) and not step then
+            WoWProCharDB.Guide[GID].done = true
+        end
 
-		 if coord then
+		if coord then
 			if (coord == "PLAYER") then
 				local x, y, m  = WoWPro:GetPlayerZonePosition()
 				if (x and y) then
@@ -988,15 +991,13 @@ function WoWPro:RowUpdate(offset)
 
         if step then currentRow.check:Show() else currentRow.check:Hide() end
         if completion[k] or WoWProCharDB.Guide[GID].skipped[k] or WoWPro:QIDsInTable(WoWPro.QID[k],WoWProCharDB.skippedQIDs) then
-            currentRow.check:SetChecked(true)
             if WoWProCharDB.Guide[GID].skipped[k] or WoWPro:QIDsInTable(WoWPro.QID[k],WoWProCharDB.skippedQIDs) then
-                currentRow.check:SetCheckedTexture(WoWPro.UI_CheckBox_Check_Disabled)
+                currentRow.check:SetSilver()
             else
-                currentRow.check:SetCheckedTexture(WoWPro.UI_CheckBox_Check)
+                currentRow.check:SetGold()
             end
         else
-            currentRow.check:SetChecked(false)
-            currentRow.check:SetCheckedTexture(WoWPro.UI_CheckBox_Check)
+            currentRow.check:SetBlank()
         end
 
         if note then
@@ -1020,12 +1021,20 @@ function WoWPro:RowUpdate(offset)
             note = note.."\n(No coordinates)"
         end
 
+        local mapID = _G.C_Map.GetBestMapForUnit("player")
+        local isCampaign = _G.C_QuestLine and tonumber(QID) and mapID and _G.C_QuestLine.GetQuestLineInfo(tonumber(QID), mapID) and _G.C_QuestLine.GetQuestLineInfo(tonumber(QID), mapID).isCampaign
         currentRow.note:SetText(note)
         currentRow.action:SetTexture(WoWPro.actiontypes[action])
         currentRow.action.tooltip.text:SetText(WoWPro.actionlabels[action])
         if WoWPro.noncombat[k] and (WoWPro.action[k] == "C" or WoWPro.action[k] == "N") then
             currentRow.action:SetTexture("Interface\\AddOns\\WoWPro\\Textures\\Config.tga")
             currentRow.action.tooltip.text:SetText("No Combat")
+        elseif WoWPro.hand[k] and (WoWPro.action[k] == "C" or WoWPro.action[k] == "N") then
+            currentRow.action:SetTexture(WoWPro.actiontypes["HAND TAG"])
+            currentRow.action.tooltip.text:SetText(WoWPro.actionlabels["HAND TAG"])
+        elseif WoWPro.inspect[k] and (WoWPro.action[k] == "C" or WoWPro.action[k] == "N") then
+            currentRow.action:SetTexture(WoWPro.actiontypes["INSPECT TAG"])
+            currentRow.action.tooltip.text:SetText(WoWPro.actionlabels["INSPECT TAG"])
         elseif WoWPro.lootitem[k] and WoWPro.action[k] == "C" then
             currentRow.action:SetTexture(WoWPro.actiontypes['l'])
             currentRow.action.tooltip.text:SetText("Loot Complete")
@@ -1042,6 +1051,12 @@ function WoWPro:RowUpdate(offset)
         elseif WoWPro.elite[k] and WoWPro.action[k] == "A" then
             currentRow.action:SetTexture(WoWPro.actiontypes[action.." ELITE"])
             currentRow.action.tooltip.text:SetText("Elite Quest")
+        elseif isCampaign and WoWPro.action[k] == "A" then
+            currentRow.action:SetTexture(WoWPro.actiontypes[action.." Campaign"])
+            currentRow.action.tooltip.text:SetText("Campaign Quest")
+        elseif isCampaign and WoWPro.action[k] == "T" then
+            currentRow.action:SetTexture(WoWPro.actiontypes[action.." Campaign"])
+            currentRow.action.tooltip.text:SetText("Campaign Quest")
         end
 
         currentRow.check:SetScript("OnClick", function(this, button, down)
@@ -1203,10 +1218,10 @@ function WoWPro:RowUpdate(offset)
             if not itemkb and currentRow.itembutton:IsVisible() and not _G.InCombatLockdown() then
                 local key1, key2 = _G.GetBindingKey("CLICK WoWPro_FauxItemButton:LeftButton")
                 if key1 then
-                    _G.SetOverrideBinding(WoWPro.MainFrame, false, key1, "CLICK WoWPro_itembutton"..i..":LeftButton")
+                    _G.SetOverrideBinding(WoWPro.MainFrame, false, key1, "CLICK WoWPro_itembuttonSecure"..i..":LeftButton")
                 end
                 if key2 then
-                    _G.SetOverrideBinding(WoWPro.MainFrame, false, key2, "CLICK WoWPro_itembutton"..i..":LeftButton")
+                    _G.SetOverrideBinding(WoWPro.MainFrame, false, key2, "CLICK WoWPro_itembuttonSecure"..i..":LeftButton")
                 end
                 itemkb = true
             end
@@ -1279,7 +1294,7 @@ function WoWPro:RowUpdate(offset)
 
 		-- EA Button --
 		if eab then
-            local mtext = "/click ExtraActionButton1 MouseButton Down"
+			local mtext = "/click ExtraActionButton1"
             currentRow.eabutton:Show()
             currentRow.eabutton:SetAttribute("macrotext", mtext)
 			currentRow.eaicon.EAB1_IsVisible = nil
@@ -1339,7 +1354,7 @@ function WoWPro:RowUpdate(offset)
                 mtext = "/target "..tar.."\n/"..emote
             else
                 mtext = "/cleartarget\n/target "..tar.."\n"
-                mtext = mtext .. "/run if not GetRaidTargetIndex('target') == 8 and not UnitIsDead('target') then SetRaidTarget('target', 8) end"
+                mtext = mtext .. "/run if GetRaidTargetIndex('target') ~= 8 and not UnitIsDead('target') then SetRaidTarget('target', 8) end"
             end
             currentRow.targetbutton:SetAttribute("macrotext", mtext)
             -- Run Module specific RowUpdateTarget() to override macrotext
@@ -1363,10 +1378,10 @@ function WoWPro:RowUpdate(offset)
             if not targetkb and currentRow.targetbutton:IsVisible() and not _G.InCombatLockdown() then
                 local key1, key2 = _G.GetBindingKey("CLICK WoWPro_FauxTargetButton:LeftButton")
                 if key1 then
-                    _G.SetOverrideBinding(WoWPro.MainFrame, false, key1, "CLICK WoWPro_targetbutton"..i..":LeftButton")
+                    _G.SetOverrideBinding(WoWPro.MainFrame, false, key1, "CLICK WoWPro_targetbuttonSecure"..i..":LeftButton")
                 end
                 if key2 then
-                    _G.SetOverrideBinding(WoWPro.MainFrame, false, key2, "CLICK WoWPro_targetbutton"..i..":LeftButton")
+                    _G.SetOverrideBinding(WoWPro.MainFrame, false, key2, "CLICK WoWPro_targetbuttonSecure"..i..":LeftButton")
                 end
                 targetkb = true
             end
@@ -1526,8 +1541,7 @@ function WoWPro.UpdateGuideReal(From)
 	end
 
     -- If the guide is complete, loading the next guide --
-    if WoWProCharDB.Guide[GID].progress and tonumber(WoWProCharDB.Guide[GID].progress) > 0 and (WoWProCharDB.Guide[GID].progress == WoWProCharDB.Guide[GID].total or WoWProCharDB.Guide[GID].done)
-    and not WoWPro.Recorder and WoWPro.Leveling and not WoWPro.Leveling.Resetting then
+    if WoWProCharDB.Guide[GID].done and not WoWPro.Recorder and WoWPro.Leveling and not WoWPro.Leveling.Resetting then
         if WoWProDB.profile.autoload then
             WoWProDB.char.currentguide = WoWPro:NextGuide(GID)
             WoWPro:Print("Switching to next guide: %s",tostring(WoWProDB.char.currentguide))
@@ -2208,42 +2222,43 @@ function WoWPro.NextStep(guideIndex, rowIndex)
                 profID = tonumber(profID) or 0
                 if profLvl == '*' then
                     -- Set to the maximum level obtainable in the expansion plus 1
-                    profExp = 8
-                    profLvl = 175+1
+                    profExp = 9
+                    profLvl = 100+1
                 end
                 local proflvl = tonumber(profLvl or profExp) or 1
                 local profexp = tonumber(profLvl and profExp) or 0
                 profmaxskill = tonumber(profmaxskill) or 0
                 profflip = WoWPro.toboolean(profflip)
                 local skill = WoWPro.ProfessionExpansion2Skill[profID] and WoWPro.ProfessionExpansion2Skill[profID][profexp]
-                WoWPro:dbp("Mapped profID=%d/profExp=%d to skill=%s", profID, profexp, tostring(skill))
+                WoWPro:dbp("PROF: Mapped profID=%d/profExp=%d to skill=%s", profID, profexp, tostring(skill))
                 if type(WoWProCharDB.Tradeskills) == 'table' and skill then
                     skip = true -- Profession steps skipped by default
                     WoWPro.why[guideIndex] = "NextStep(prof): skipped by default"
                     local tradeskill = WoWProCharDB.Tradeskills[skill]
                     if tradeskill then
+                        WoWPro:dbp("PROF: tradeskill [%s] is present.", tradeskill.name)
                         if stepAction == 'M' and tradeskill.skillMod > 0 then
-                            WoWPro:dbp("NextStep(): Adjusting proflvl(%d) and profmaxskill=%d down by skillMod=%d", proflvl, profmaxskill, tradeskill.skillMod)
+                            WoWPro:dbp("PROF: NextStep(): Adjusting proflvl(%d) and profmaxskill=%d down by skillMod=%d", proflvl, profmaxskill, tradeskill.skillMod)
                             proflvl = max(proflvl - tradeskill.skillMod, 1)
                             profmaxskill = min(profmaxskill, max(profmaxskill - tradeskill.skillMod, 1))
                         end
                         if (tradeskill.skillLvl >= proflvl) then
                             WoWPro.why[guideIndex] = ("NextStep(prof): skillLvl=%d >= proflvl=%d"):format(tradeskill.skillLvl, proflvl)
-                            WoWPro:dbp(WoWPro.why[guideIndex])
+                            WoWPro:dbp("PROF: "..WoWPro.why[guideIndex])
                             skip = false
                         end
                         if (profmaxskill > 1) and (profmaxskill >= tradeskill.skillMax) then
                             WoWPro.why[guideIndex] = ("NextStep(prof): profmaxskill=%d >= skillMax=%d"):format(profmaxskill, tradeskill.skillMax)
-                            WoWPro:dbp(WoWPro.why[guideIndex])
+                            WoWPro:dbp("PROF: "..WoWPro.why[guideIndex])
                             skip = false
                         end
                         skip = skip ~= profflip
-                        WoWPro:dbp("prof skip=%s, profflip=%s", tostring(skip), tostring(profflip))
+                        WoWPro:dbp("PROF:  skip=%s, profflip=%s", tostring(skip), tostring(profflip))
 
                         -- zero proflvl special unskip logic
                     elseif proflvl == 0 then
                         WoWPro.why[guideIndex] = ("Prof unskip qid %s for no %s for provlvl == 0"):format(WoWPro.QID[guideIndex] or "NONE", profName)
-                        WoWPro:dbp(WoWPro.why[guideIndex])
+                        WoWPro:dbp("PROF: "..WoWPro.why[guideIndex])
                         skip = false
 
                         -- If they do not have the profession, mark the step and quest as skipped
@@ -2251,15 +2266,15 @@ function WoWPro.NextStep(guideIndex, rowIndex)
                         WoWPro.why[guideIndex] = "NextStep(prof): Permanently skipping step because player does not have the profession."
                         guide.skipped[guideIndex] = true
                         WoWPro:SetQIDsInTable(QID, WoWProCharDB.skippedQIDs)
-                        WoWPro:dbp("Prof permaskip qid %s for no %s", (WoWPro.QID[guideIndex] or "NONE"), profName)
+                        WoWPro:dbp("PROF: permaskip qid %s for no %s", (WoWPro.QID[guideIndex] or "NONE"), profName)
                         skip = true
                         break
                     else
                         WoWPro.why[guideIndex] = ("NextStep(prof): No %s, skip for now."):format(profName)
-                        WoWPro:dbp(WoWPro.why[guideIndex])
+                        WoWPro:dbp("PROF: "..WoWPro.why[guideIndex])
                     end
                 else
-                    WoWPro:Warning("Malformed profession tag [%s] at step %d", WoWPro.prof[guideIndex], guideIndex)
+                    WoWPro:Warning("PROF: Malformed profession tag [%s] at step %d", WoWPro.prof[guideIndex], guideIndex)
                 end
             end
 
@@ -2584,6 +2599,33 @@ function WoWPro.NextStep(guideIndex, rowIndex)
 				end
 			end
 
+			if WoWPro.dfrenown and WoWPro.dfrenown[guideIndex] and WoWPro.RETAIL then
+				local dfrenownName, dfrenownID, dfrenownLevel = (";"):split(WoWPro.dfrenown[guideIndex])
+				local dfrenownFlip = false
+                local dfrenownMatch
+                local dfrenown = _G.C_MajorFactions.GetMajorFactionData(dfrenownID).renownLevel
+				if (dfrenownLevel:sub(1, 1) == "-") then
+                    dfrenownLevel = dfrenownLevel:sub(2)
+                    dfrenownFlip = true
+                end
+                if dfrenown >= tonumber(dfrenownLevel) then
+                    dfrenownMatch = true
+                end
+                if dfrenownFlip then
+                    dfrenownMatch = not dfrenownMatch
+                end
+                if dfrenownMatch then
+						WoWPro.why[guideIndex] = "NextStep(): Renown Level ["..dfrenown.."] met condition with ["..dfrenownLevel.."] with faction ["..dfrenownName..";"..dfrenownID.."]."
+                else
+					if dfrenownFlip then
+						WoWPro.why[guideIndex] = "NextStep(): Renown Level ["..dfrenown.."] is greater than ["..dfrenownLevel.."] with faction ["..dfrenownName..";"..dfrenownID.."]."
+					else
+						WoWPro.why[guideIndex] = "NextStep(): Renown Level ["..dfrenown.."] is less than ["..dfrenownLevel.."] with faction ["..dfrenownName..";"..dfrenownID.."]."
+					end
+					skip = true
+                end
+            end
+
             if WoWPro.renown and WoWPro.renown[guideIndex] and WoWPro.RETAIL then
 				local renownID = WoWPro.renown[guideIndex]
 				local renownFlip = false
@@ -2652,8 +2694,8 @@ function WoWPro.NextStep(guideIndex, rowIndex)
 			end
 
 			if WoWPro.serverdate and WoWPro.serverdate[guideIndex] then
-				local serverdate = WoWPro.serverdate[guideIndex]
-				local epoch = _G.C_DateAndTime.GetServerTimeLocal()
+				local serverdate, _ = (";"):split(WoWPro.serverdate[guideIndex])
+				local epoch = _G.GetServerTime()
 				local dateFlip
 				local timeMet
 				if (serverdate:sub(1, 1) == "-") then
@@ -2707,7 +2749,7 @@ function WoWPro.NextStep(guideIndex, rowIndex)
                     local expansion = WoWPro.fly[guideIndex]
                     local spellName
                     local spellKnown
-					local canFly
+                    local canFly
                     local flyFlip = false
                     if (expansion:sub(1, 1) == "-") then
                         expansion = expansion:sub(2)
@@ -2715,7 +2757,7 @@ function WoWPro.NextStep(guideIndex, rowIndex)
                     end
 					local eSkill = _G.GetSpellInfo(34090)
 					if WoWPro.WRATH then
-						if WoWProCharDB.Tradeskills[762].skillLvl >= 225 then
+						if WoWProCharDB.Tradeskills[762] and WoWProCharDB.Tradeskills[762].skillLvl >= 225 then
 							canFly = true
 						end
 						if expansion == "BC" and canFly then

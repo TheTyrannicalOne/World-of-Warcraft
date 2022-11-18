@@ -64,9 +64,9 @@ GenGen.automation.args.autoAcceptInvite = ACH:Toggle(L["Accept Invites"], L["Aut
 GenGen.automation.args.autoTrackReputation = ACH:Toggle(L["Auto Track Reputation"], nil, 4)
 GenGen.automation.args.autoRepair = ACH:Select(L["Auto Repair"], L["Automatically repair using the following method when visiting a merchant."], 5, { NONE = L["None"], GUILD = not E.Classic and L["Guild"] or nil, PLAYER = L["Player"] })
 
-GenGen.totems = ACH:Group(E.NewSign..L["Totem Tracker"], nil, 70, nil, function(info) return E.db.general.totems[info[#info]] end, function(info, value) E.db.general.totems[info[#info]] = value TotemTracker:PositionAndSize() end, function() return not E.private.general.totemTracker end)
-GenGen.totems.args.enable = ACH:Toggle(L["Enable"], nil, 1, nil, nil, nil, function() return E.private.general.totemTracker end, function(_, value) E.private.general.totemTracker = value; E.ShowPopup = true end, false)
-GenGen.totems.args.size = ACH:Range(L["Button Size"], nil, 2, { min = 24, max = 60, step = 1 }, nil, nil, nil, nil, E.Wrath)
+GenGen.totems = ACH:Group(E.NewSign..L["Totem Tracker"], nil, 70, nil, function(info) return E.db.general.totems[info[#info]] end, function(info, value) E.db.general.totems[info[#info]] = value TotemTracker:PositionAndSize() end)
+GenGen.totems.args.enable = ACH:Toggle(L["Enable"], nil, 1, nil, nil, nil, function() return E.private.general.totemTracker end, function(_, value) E.private.general.totemTracker = value; E.ShowPopup = true end)
+GenGen.totems.args.size = ACH:Range(L["Button Size"], nil, 2, { min = 24, max = 60, step = 1 })
 GenGen.totems.args.spacing = ACH:Range(L["Button Spacing"], nil, 3, { min = 1, max = 10, step = 1 })
 GenGen.totems.args.sortDirection = ACH:Select(L["Sort Direction"], nil, 4, { ASCENDING = L["Ascending"], DESCENDING = L["Descending"] })
 GenGen.totems.args.growthDirection = ACH:Select(L["Bar Direction"], nil, 5, { VERTICAL = L["Vertical"], HORIZONTAL = L["Horizontal"] })
@@ -93,7 +93,7 @@ Media.fontHeader = ACH:Header(L["Fonts"], 10)
 
 Media.general = ACH:Group('', nil, 11, nil, nil, function(info, value) E.db.general[info[#info]] = value E:UpdateMedia() E:UpdateFontTemplates() end)
 Media.general.args.font = ACH:SharedMediaFont(L["Default Font"], L["The font that the core of the UI will use."], 1)
-Media.general.args.fontSize = ACH:Range(L["Font Size"], L["Set the font size for everything in UI. Note: This doesn't effect somethings that have their own seperate options (UnitFrame Font, Datatext Font, ect..)"], 2, C.Values.FontSize)
+Media.general.args.fontSize = ACH:Range(L["Font Size"], L["Set the font size for everything in UI. Note: This doesn't effect somethings that have their own separate options (UnitFrame Font, Datatext Font, ect..)"], 2, C.Values.FontSize)
 Media.general.args.fontStyle = ACH:FontFlags(L["Font Outline"], nil, 3)
 Media.general.args.applyFontToAll = ACH:Execute(L["Apply Font To All"], L["Applies the font and font size settings throughout the entire user interface. Note: Some font size settings will be skipped due to them having a smaller font size by default."], 4, function() E:StaticPopup_Show('APPLY_FONT_WARNING') end)
 Media.general.inline = true

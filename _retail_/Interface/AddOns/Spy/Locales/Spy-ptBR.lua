@@ -471,6 +471,7 @@ L["WARRIOR"] = "Guerreiro"
 L["DEATHKNIGHT"] = "Cavaleiro da Morte"
 L["MONK"] = "Monge"
 L["DEMONHUNTER"] = "Caçador de Demonios"
+L["EVOKER"] = "Conjurante"
 
 --++ Race descriptions
 L["Human"] = "Humano"
@@ -496,6 +497,7 @@ L["Kul Tiran"] = "Kultireno"
 L["Zandalari Troll"] = "Troll Zandalari"
 L["Mechagnome"] = "Gnomecânico"
 L["Vulpera"] = "Vulpera"
+L["Dracthyr"] = "Dracthyr"
 
 -- Stealth abilities
 L["Stealth"] = "Furtividade"
@@ -516,6 +518,7 @@ L["MinimapClassTextWARRIOR"] = "|cffc69b6d"
 L["MinimapClassTextDEATHKNIGHT"] = "|cffc41e3a"
 L["MinimapClassTextMONK"] = "|cff00ff96"
 L["MinimapClassTextDEMONHUNTER"] = "|cffa330c9"
+L["MinimapClassTextEVOKER"] = "|cff33937f"
 
 Spy_IgnoreList = {
 	["Caixa de Correio"]=true, ["Retalhomestre 1.0"]=true, ["Sucatomático 1000"]=true,

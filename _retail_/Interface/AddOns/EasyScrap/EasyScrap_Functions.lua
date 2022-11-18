@@ -16,13 +16,17 @@ function EasyScrap:getScrappableItems()
    local itemRef = 1
    
    for bag = 0, 4 do
-      for i = 1, GetContainerNumSlots(bag) do
-         local itemID = GetContainerItemID(bag, i)
+      for i = 1, C_Container.GetContainerNumSlots(bag) do
+         local itemID = C_Container.GetContainerItemID(bag, i)
 
          if itemID and EasyScrap:itemScrappable(itemID) then
-            local texture, itemCount, locked, quality, readable, lootable, itemLink, isFiltered = GetContainerItemInfo(bag, i)
+            local cont_info = C_Container.GetContainerItemInfo(bag, i)
+            local texture = tonumber(cont_info.iconFileID)
+            print(texture)
+            local itemCount = cont_info.stackCount
+            local quality = cont_info.quality
+            local itemLink = cont_info.hyperlink
             local itemName, _, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemIcon, itemSellPrice, itemClassID, itemSubClassID, bindType, expacID, itemSetID, isCraftingReagent = GetItemInfo(itemLink)
-            --table.insert(self.scrappableItems, {itemRef = itemRef, bag = bag, slot = i, itemLink = itemLink, itemTexture = texture, itemCount = itemCount, itemID = itemID, itemQuality = quality, itemName = string.match(itemLink, "%[(.+)%]")})
             table.insert(self.scrappableItems, {itemRef = itemRef, bag = bag, slot = i, itemLink = itemLink, itemSellPrice = itemSellPrice, itemEquipLoc = itemEquipLoc, itemClassID = itemClassID, itemSubClassID = itemSubClassID, bindType = bindType, itemTexture = texture, itemCount = itemCount, itemID = itemID, itemQuality = quality, itemName = itemName, itemLevel = itemLevel})
             itemRef = itemRef + 1
          end

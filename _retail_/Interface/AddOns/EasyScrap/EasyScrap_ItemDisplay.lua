@@ -48,7 +48,7 @@ local function selectItemForScrapping(self)
     local itemInQueue = itemInQueue(self.itemRef)
     
     if not itemInScrapper and not itemInQueue and #EasyScrap.itemsInScrapper < 9 and not EasyScrap.scrapInProgress then
-        UseContainerItem(scrappableItems[self.itemRef].bag, scrappableItems[self.itemRef].slot)
+        C_Container.UseContainerItem(scrappableItems[self.itemRef].bag, scrappableItems[self.itemRef].slot)
     elseif itemInScrapper and not itemInQueue then
         EasyScrap:removeItemFromScrapper(scrappableItems[self.itemRef].bag, scrappableItems[self.itemRef].slot)
         if #EasyScrap.itemsInScrapper == 0 and #EasyScrap.queueItems > 0 then

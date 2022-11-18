@@ -1894,14 +1894,16 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Commander Malor",
 		},
-		[26977] = {
-			["school"] = 4,
+		[9672] = {
+			["school"] = 16,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Lord Incendius",
+			["source"] = "Skeletal Guardian",
 		},
 		[320358] = {
 			["school"] = 1,
@@ -1920,12 +1922,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "High Adjudicator Aleez",
 		},
-		[319592] = {
-			["school"] = 8,
+		[320614] = {
+			["school"] = 1,
 			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Echelon",
+			["source"] = "Carrion Worm",
 		},
 		[256493] = {
 			["school"] = 1,
@@ -2123,19 +2127,21 @@ EncounterDetailsDB = {
 		[93697] = {
 			["school"] = 8,
 			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Lord Walden",
+		},
+		[263262] = {
+			["school"] = 8,
+			["token"] = {
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Lord Walden",
-		},
-		[199850] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Ungabungaa-Area52",
+			["source"] = "Shalebiter",
 		},
 		[320365] = {
 			["school"] = 40,
@@ -2177,14 +2183,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Surgeon Stitchflesh",
 		},
-		[263262] = {
+		[257593] = {
 			["school"] = 8,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Shalebiter",
+			["source"] = "Azerokk",
 		},
 		[13900] = {
 			["school"] = 4,
@@ -2267,13 +2272,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Stonefury",
 		},
-		[257593] = {
-			["school"] = 8,
+		[199850] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Azerokk",
+			["source"] = "Ungabungaa-Area52",
 		},
 		[326629] = {
 			["school"] = 40,
@@ -2407,25 +2411,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Slagmaw",
 		},
-		[320614] = {
-			["school"] = 1,
+		[319592] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Carrion Worm",
+			["source"] = "Echelon",
 		},
-		[9672] = {
-			["school"] = 16,
+		[26977] = {
+			["school"] = 4,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Skeletal Guardian",
+			["source"] = "Lord Incendius",
 		},
 		[11972] = {
 			["school"] = 1,

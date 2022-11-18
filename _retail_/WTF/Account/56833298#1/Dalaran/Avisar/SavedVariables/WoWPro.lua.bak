@@ -24,23 +24,41 @@ WoWProCharDB = {
 	["GuideStack"] = {
 	},
 	["Tradeskills"] = {
+		[182] = {
+			["skillLvl"] = 175,
+			["skillMod"] = 0,
+			["name"] = "Herbalism",
+			["skillMax"] = 175,
+		},
+		[186] = {
+			["skillLvl"] = 147,
+			["skillMod"] = 0,
+			["name"] = "Mining",
+			["skillMax"] = 175,
+		},
 		[356] = {
 			["skillLvl"] = 13,
-			["skillMax"] = 175,
+			["skillMod"] = 0,
 			["name"] = "Fishing",
-			["skillMod"] = 0,
-		},
-		[185] = {
-			["skillLvl"] = 1,
 			["skillMax"] = 175,
-			["name"] = "Cooking",
-			["skillMod"] = 0,
 		},
 		[2585] = {
 			["skillLvl"] = 13,
 			["skillMax"] = 175,
-			["skillMod"] = 0,
 			["name"] = "Battle for Azeroth Fishing",
+			["skillMod"] = 0,
+		},
+		[185] = {
+			["skillLvl"] = 1,
+			["skillMod"] = 0,
+			["name"] = "Cooking",
+			["skillMax"] = 175,
+		},
+		[794] = {
+			["skillLvl"] = 1,
+			["skillMod"] = 0,
+			["name"] = "Archaeology",
+			["skillMax"] = 950,
 		},
 	},
 	["BuildingLocations"] = {

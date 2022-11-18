@@ -1,6 +1,9 @@
 
 ElvCharacterDB = {
+	["ConvertKeybindings"] = true,
 	["CliqueDatatext"] = {
+	},
+	["ChatEditHistory"] = {
 	},
 	["ChatHistoryLog"] = {
 		{
@@ -92,7 +95,4 @@ ElvCharacterDB = {
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [4]
 	},
-	["ChatEditHistory"] = {
-	},
-	["ConvertKeybindings"] = true,
 }

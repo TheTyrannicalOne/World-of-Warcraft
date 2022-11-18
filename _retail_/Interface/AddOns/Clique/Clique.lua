@@ -78,11 +78,10 @@ function addon:Initialize()
 
     -- Create a secure action button that can be used for 'hovercast' and 'global'
     self.globutton = CreateFrame("Button", addonName .. "SABButton", UIParent, "SecureActionButtonTemplate, SecureHandlerBaseTemplate")
-    self.globutton:RegisterForClicks("AnyUp", "AnyDown")
+    self:UpdateGlobalButtonClicks()
 
     -- Create a named frame that can be used as a side-car for unnamed frames
-    self.namedbutton = CreateFrame("Button", addonName .. "NamedSidecar", UIParent, "SecureActionButtonTemplate")
-    self.namedbutton:RegisterForClicks("AnyUp", "AnyDown")
+    self.namedbutton = CreateFrame("Button", addonName .. "NamedSidecar", UIParent, "SecureUnitButtonTemplate")
 
     -- Create a table within the addon header to store the frames
     -- that are registered for click-casting
@@ -259,8 +258,13 @@ function addon:RegisterFrame(button)
         return
     end
 
+    -- Make sure we don't re-register button
+    if self.ccframes[button] then
+        return
+    end
+
     self.ccframes[button] = true
-    self:UpdateRegisteredClicks(button)
+    self:UpdateRegisteredClicks(button, true)
 
     -- Wrap the OnEnter/OnLeave scripts in order to handle keybindings
     addon.header:WrapScript(button, "OnEnter", addon.header:GetAttribute("setup_onenter"))
@@ -626,8 +630,13 @@ function addon:GetBindingAttributes(global)
         set = {
             "local button = self",
             "local name = button:GetName()",
+            --"print('onenter: ' .. tostring(name and name or button))",
             "if blacklist[name] then return end",
-            "if danglingButton then control:RunFor(danglingButton, control:GetAttribute('setup_onleave')) end",
+            "if danglingButton then ",
+            --"  local dangleName = danglingButton:GetName()",
+            --"  print('clearing dangles for: ' .. tostring(dangleName and dangleName or danglingButton))",
+            "  control:RunFor(danglingButton, control:GetAttribute('setup_onleave'))",
+            "end",
             "local cliqueNamedButton = control:GetFrameRef('cliqueNamedButton')",
             "if not name then ",
             "  cliqueNamedButton:SetAttribute('unit', button:GetAttribute('unit'))",
@@ -638,6 +647,7 @@ function addon:GetBindingAttributes(global)
         clr = {
             "local button = self",
             "local name = button:GetName()",
+            -- "print('onleave: ' .. tostring(name and name or button))",
             "if blacklist[name] then return end",
             "danglingButton = nil",
         }
@@ -1041,6 +1051,15 @@ function addon:IsFrameBlacklisted(frame)
     return self.settings.blacklist[name]
 end
 
+function addon:UpdateGlobalButtonClicks()
+    if self:IsDragonflight() then
+        self.globutton:RegisterForClicks("AnyUp", "AnyDown")
+    else
+        local direction = self.settings.downclick and "AnyDown" or "AnyUp"
+        self.globutton:RegisterForClicks(direction)
+    end
+end
+
 -- Update both registered clicks, and ensure that mousewheel events are enabled
 -- on the frame.
 function addon:UpdateRegisteredClicks(button)
@@ -1053,33 +1072,27 @@ function addon:UpdateRegisteredClicks(button)
 
     -- Short version that only updates clicks for one frame
     if button and not self:IsFrameBlacklisted(button) then
-        addon:RegisterForClicks(button, direction)
+        button:RegisterForClicks(direction)
         button:EnableMouseWheel(true)
         return
     end
 
     for button in pairs(self.ccframes) do
         if not self:IsFrameBlacklisted(button) then
-            addon:RegisterForClicks(button, direction)
+            button:RegisterForClicks(direction)
             button:EnableMouseWheel(true)
         end
     end
 
     for name, button in pairs(self.hccframes) do
        if not self:IsFrameBlacklisted(button) then
-           addon:RegisterForClicks(button, direction)
+            button:RegisterForClicks(direction)
            button:EnableMouseWheel(true)
        end
     end
-end
 
--- Some weird logic to handle direction buttons
-function addon:RegisterForClicks(button, direction)
-    if button == self.namedbutton then
-        button:RegisterForClicks("AnyUp", "AnyDown")
-    else
-        button:RegisterForClicks(direction)
-    end
+    -- Update the global button in case settings have changed
+    addon:UpdateGlobalButtonClicks()
 end
 
 -- Handler function for message indicating that a change as occurred

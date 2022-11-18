@@ -1,9 +1,10 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
 ..\FrameXML\UI.xsd">
-	<Button name="EasyScrapFrameTabButtonTemplate" virtual="true" hidden="false">
+	<Button name="EasyScrapFrameTabButtonTemplate" virtual="true" hidden="false" inherits="PanelTabButtonTemplate">
         <Size>
             <AbsDimension x="10" y="32"/>
         </Size>
+        <!--
         <Layers>
         	<Layer level="BACKGROUND">
         		<Texture name="$parentLeftDisabled" file="Interface\PaperDollInfoFrame\UI-Character-ActiveTab">
@@ -66,6 +67,7 @@
         		</Texture>
         	</Layer>
         </Layers>
+    -->
 		<Frames>
 			<Frame name="$parentShine" parentKey="shineFrame" inherits="AutoCastShineTemplate">
 				<Anchors>
@@ -90,7 +92,7 @@
 			</OnClick>
 			<OnShow>
 				PanelTemplates_TabResize(self, 0, 104, 36, self:GetParent().maxTabWidth or 88);
-				CharacterFrame_TabBoundsCheck(self);
+				<!--CharacterFrame_TabBoundsCheck(self); -->
 			</OnShow>
 			<OnEnter>
 				local buttonText = _G[self:GetName().."Text"];

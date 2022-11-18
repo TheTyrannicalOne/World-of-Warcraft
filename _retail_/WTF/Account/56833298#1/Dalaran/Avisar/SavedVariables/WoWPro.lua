@@ -23,10 +23,28 @@ WoWProCharDB = {
 	["Enabled"] = true,
 	["DebugLevel"] = 0,
 	["Tradeskills"] = {
+		[182] = {
+			["skillLvl"] = 175,
+			["skillMod"] = 0,
+			["name"] = "Herbalism",
+			["skillMax"] = 175,
+		},
+		[186] = {
+			["skillLvl"] = 147,
+			["skillMod"] = 0,
+			["name"] = "Mining",
+			["skillMax"] = 175,
+		},
 		[356] = {
 			["skillLvl"] = 13,
 			["skillMod"] = 0,
 			["name"] = "Fishing",
+			["skillMax"] = 175,
+		},
+		[2585] = {
+			["skillLvl"] = 13,
+			["skillMod"] = 0,
+			["name"] = "Battle for Azeroth Fishing",
 			["skillMax"] = 175,
 		},
 		[185] = {
@@ -35,11 +53,11 @@ WoWProCharDB = {
 			["name"] = "Cooking",
 			["skillMax"] = 175,
 		},
-		[2585] = {
-			["skillLvl"] = 13,
-			["name"] = "Battle for Azeroth Fishing",
+		[794] = {
+			["skillLvl"] = 1,
 			["skillMod"] = 0,
-			["skillMax"] = 175,
+			["name"] = "Archaeology",
+			["skillMax"] = 950,
 		},
 	},
 	["GuideVersion"] = {

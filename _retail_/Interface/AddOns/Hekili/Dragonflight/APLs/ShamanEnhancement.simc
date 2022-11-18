@@ -1,6 +1,7 @@
 actions.precombat+=/windfury_weapon
 actions.precombat+=/flametongue_weapon
-actions.precombat+=/lightning_shield
+actions.precombat+=/lightning_shield,if=buff.lightning_shield.down&(buff.earth_shield.down|talent.elemental_orbit.enabled)
+actions.precombat+=/earth_shield,if=buff.lightning_shield.up&buff.earth_shield.down&talent.elemental_orbit.enabled
 actions.precombat+=/windfury_totem,if=!runeforge.doom_winds.equipped&buff.windfury_totem.down
 actions.precombat+=/fleshcraft,if=soulbind.pustule_eruption|soulbind.volatile_solvent
 actions.precombat+=/variable,name=trinket1_is_weird,value=trinket.1.is.the_first_sigil|trinket.1.is.scars_of_fraternal_strife|trinket.1.is.cache_of_acquired_treasures
@@ -24,7 +25,7 @@ actions+=/fae_transfusion,if=runeforge.seeds_of_rampant_growth.equipped|soulbind
 actions+=/vesper_totem,if=raid_event.adds.in>40|active_enemies>1
 actions+=/ascendance,if=(ti_lightning_bolt&active_enemies=1&raid_event.adds.in>=90)|(ti_chain_lightning&active_enemies>1)
 actions+=/doom_winds,if=raid_event.adds.in>=90|active_enemies>1
-actions+=/windfury_totem,if=runeforge.doom_winds.equipped&buff.doom_winds_debuff.down&(raid_event.adds.in>=60|active_enemies>1)
+actions+=/windfury_totem,if=runeforge.doom_winds.equipped&debuff.doom_winds_cd.down&(raid_event.adds.in>=60|active_enemies>1)
 # if only one enemy, priority follows the 'single' action list.
 actions+=/call_action_list,name=single,if=active_enemies=1
 # on multiple enemies, the priority follows the 'aoe' action list.
@@ -62,13 +63,13 @@ actions.single+=/crash_lightning
 actions.single+=/fire_nova,if=active_dot.flame_shock
 actions.single+=/fleshcraft,if=soulbind.pustule_eruption
 actions.single+=/earth_elemental
-actions.single+=/flame_shock
+actions.single+=/flame_shock,if=settings.filler_shock
 actions.single+=/windfury_totem,if=buff.windfury_totem.remains<30
 
 actions.aoe+=/crash_lightning,if=(talent.doom_winds|runeforge.doom_winds.equipped)&buff.doom_winds.up
 actions.aoe+=/lightning_bolt,if=(active_dot.flame_shock>=active_enemies|active_dot.flame_shock=6)&buff.primordial_wave.up&buff.maelstrom_weapon.stack>=(5+5*talent.overflowing_maelstrom.enabled)&(!buff.splintered_elements.up|fight_remains<=12|raid_event.adds.remains<=gcd)
 actions.aoe+=/chain_harvest,if=buff.maelstrom_weapon.stack>=5
-actions.aoe+=/sundering,if=(talent.doomwinds|runeforge.doom_winds.equipped)&buff.doom_winds.up
+actions.aoe+=/sundering,if=(talent.doom_winds|runeforge.doom_winds.equipped)&buff.doom_winds.up
 actions.aoe+=/fire_nova,if=active_dot.flame_shock>=6|(active_dot.flame_shock>=4&active_dot.flame_shock>=active_enemies)
 actions.aoe+=/primordial_wave,cycle_targets=1,if=!buff.primordial_wave.up
 actions.aoe+=/windstrike,if=talent.thorims_invocation.enabled&ti_chain_lightning&buff.maelstrom_weapon.stack>1
@@ -97,7 +98,7 @@ actions.aoe+=/windstrike
 actions.aoe+=/lava_lash
 actions.aoe+=/ice_strike
 actions.aoe+=/stormstrike
-actions.aoe+=/flame_shock,cycle_targets=1
+actions.aoe+=/flame_shock,cycle_targets=1,if=settings.filler_shock
 actions.aoe+=/frost_shock
 actions.aoe+=/chain_lightning,if=buff.maelstrom_weapon.stack>=5
 actions.aoe+=/earth_elemental

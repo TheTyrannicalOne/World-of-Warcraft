@@ -499,46 +499,46 @@ ARMOR TYPE
 --]]---------------------------------------------------------------------------------------------------------------------------------------
 filters['armorType'] = {}
 filters['armorType'].menuText = 'Armor Type'
-filters['armorType'].data = {[LE_ITEM_ARMOR_CLOTH] = true, [LE_ITEM_ARMOR_LEATHER] = true, [LE_ITEM_ARMOR_MAIL] = true, [LE_ITEM_ARMOR_PLATE] = true, [LE_ITEM_ARMOR_SHIELD] = true, [LE_ITEM_ARMOR_GENERIC] = true}
+filters['armorType'].data = {[Enum.ItemArmorSubclass.Cloth] = true, [Enum.ItemArmorSubclass.Leather] = true, [Enum.ItemArmorSubclass.Mail] = true, [Enum.ItemArmorSubclass.Plate] = true, [Enum.ItemArmorSubclass.Shield] = true, [Enum.ItemArmorSubclass.Generic] = true}
 filters['armorType'].filterMessage = 'Item is not one of selected armor types.'
 
 f = createFilterFrame('Armor Type', 72)
 f.checkButtons = {}
 f.checkButtons[1] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
 f.checkButtons[1]:SetPoint('TOPLEFT', 8, -8)
-f.checkButtons[1].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_ARMOR, LE_ITEM_ARMOR_CLOTH))
+f.checkButtons[1].text:SetText(GetItemSubClassInfo(Enum.ItemClass.Armor, Enum.ItemArmorSubclass.Cloth))
 f.checkButtons[2] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
 f.checkButtons[2]:SetPoint('TOPLEFT', 128, -8)
-f.checkButtons[2].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_ARMOR, LE_ITEM_ARMOR_LEATHER))
+f.checkButtons[2].text:SetText(GetItemSubClassInfo(Enum.ItemClass.Armor, Enum.ItemArmorSubclass.Leather))
 f.checkButtons[3] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
 f.checkButtons[3]:SetPoint('TOPLEFT', 8, -28)
-f.checkButtons[3].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_ARMOR, LE_ITEM_ARMOR_MAIL))
+f.checkButtons[3].text:SetText(GetItemSubClassInfo(Enum.ItemClass.Armor, Enum.ItemArmorSubclass.Mail))
 f.checkButtons[4] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
 f.checkButtons[4]:SetPoint('TOPLEFT', 128, -28)
-f.checkButtons[4].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_ARMOR, LE_ITEM_ARMOR_PLATE))
+f.checkButtons[4].text:SetText(GetItemSubClassInfo(Enum.ItemClass.Armor, Enum.ItemArmorSubclass.Plate))
 f.checkButtons[5] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
 f.checkButtons[5]:SetPoint('TOPLEFT', 8, -48)
-f.checkButtons[5].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_ARMOR, LE_ITEM_ARMOR_SHIELD))
+f.checkButtons[5].text:SetText(GetItemSubClassInfo(Enum.ItemClass.Armor, Enum.ItemArmorSubclass.Shield))
 f.checkButtons[6] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
 f.checkButtons[6]:SetPoint('TOPLEFT', 128, -48)
-f.checkButtons[6].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_ARMOR, LE_ITEM_ARMOR_GENERIC))
+f.checkButtons[6].text:SetText(GetItemSubClassInfo(Enum.ItemClass.Armor, Enum.ItemArmorSubclass.Generic))
 
 function f:populateData(data)
-    self.checkButtons[1]:SetChecked(data[LE_ITEM_ARMOR_CLOTH])
-    self.checkButtons[2]:SetChecked(data[LE_ITEM_ARMOR_LEATHER])
-    self.checkButtons[3]:SetChecked(data[LE_ITEM_ARMOR_MAIL])
-    self.checkButtons[4]:SetChecked(data[LE_ITEM_ARMOR_PLATE])
-    self.checkButtons[5]:SetChecked(data[LE_ITEM_ARMOR_SHIELD])
-    self.checkButtons[6]:SetChecked(data[LE_ITEM_ARMOR_GENERIC])
+    self.checkButtons[1]:SetChecked(data[Enum.ItemArmorSubclass.Cloth])
+    self.checkButtons[2]:SetChecked(data[Enum.ItemArmorSubclass.Leather])
+    self.checkButtons[3]:SetChecked(data[Enum.ItemArmorSubclass.Mail])
+    self.checkButtons[4]:SetChecked(data[Enum.ItemArmorSubclass.Plate])
+    self.checkButtons[5]:SetChecked(data[Enum.ItemArmorSubclass.Shield])
+    self.checkButtons[6]:SetChecked(data[Enum.ItemArmorSubclass.Generic])
 end
 
 function f:saveData(customFilterIndex)
-    EasyScrap.saveData.customFilters[customFilterIndex].rules[self.ruleIndex].data[LE_ITEM_ARMOR_CLOTH] = self.checkButtons[1]:GetChecked()
-    EasyScrap.saveData.customFilters[customFilterIndex].rules[self.ruleIndex].data[LE_ITEM_ARMOR_LEATHER] = self.checkButtons[2]:GetChecked()
-    EasyScrap.saveData.customFilters[customFilterIndex].rules[self.ruleIndex].data[LE_ITEM_ARMOR_MAIL] = self.checkButtons[3]:GetChecked()
-    EasyScrap.saveData.customFilters[customFilterIndex].rules[self.ruleIndex].data[LE_ITEM_ARMOR_PLATE] = self.checkButtons[4]:GetChecked()
-    EasyScrap.saveData.customFilters[customFilterIndex].rules[self.ruleIndex].data[LE_ITEM_ARMOR_SHIELD] = self.checkButtons[5]:GetChecked()
-    EasyScrap.saveData.customFilters[customFilterIndex].rules[self.ruleIndex].data[LE_ITEM_ARMOR_GENERIC] = self.checkButtons[6]:GetChecked()
+    EasyScrap.saveData.customFilters[customFilterIndex].rules[self.ruleIndex].data[Enum.ItemArmorSubclass.Cloth] = self.checkButtons[1]:GetChecked()
+    EasyScrap.saveData.customFilters[customFilterIndex].rules[self.ruleIndex].data[Enum.ItemArmorSubclass.Leather] = self.checkButtons[2]:GetChecked()
+    EasyScrap.saveData.customFilters[customFilterIndex].rules[self.ruleIndex].data[Enum.ItemArmorSubclass.Mail] = self.checkButtons[3]:GetChecked()
+    EasyScrap.saveData.customFilters[customFilterIndex].rules[self.ruleIndex].data[Enum.ItemArmorSubclass.Plate] = self.checkButtons[4]:GetChecked()
+    EasyScrap.saveData.customFilters[customFilterIndex].rules[self.ruleIndex].data[Enum.ItemArmorSubclass.Shield] = self.checkButtons[5]:GetChecked()
+    EasyScrap.saveData.customFilters[customFilterIndex].rules[self.ruleIndex].data[Enum.ItemArmorSubclass.Generic] = self.checkButtons[6]:GetChecked()
 end
 
 filters['armorType'].frame = f
@@ -547,12 +547,12 @@ filters['armorType'].filterFunction = function(itemIndex, filterIndex)
     local item = EasyScrap.scrappableItems[itemIndex]
     local filterData = EasyScrap.saveData.customFilters[EasyScrap.activeFilterID].rules[filterIndex].data
     
-    if item.itemClassID == LE_ITEM_CLASS_ARMOR then
+    if item.itemClassID == Enum.ItemClass.Armor then
         local isMatch = filterData[item.itemSubClassID]
         if isMatch then
             return true
         else
-            filters['armorType'].filterMessage = 'armor type is '..GetItemSubClassInfo(LE_ITEM_CLASS_ARMOR, item.itemSubClassID)       
+            filters['armorType'].filterMessage = 'armor type is '..GetItemSubClassInfo(Enum.ItemClass.Armor, item.itemSubClassID)       
         end
     else
         return true
@@ -562,108 +562,108 @@ end
 --[[---------------------------------------------------------------------------------------------------------------------------------------
 WEAPON TYPE
 [LE_ITEM_CLASS_WEAPON]
-[LE_ITEM_WEAPON_AXE1H]
-[LE_ITEM_WEAPON_AXE2H]
-[LE_ITEM_WEAPON_BOWS]
-[LE_ITEM_WEAPON_GUNS]
-[LE_ITEM_WEAPON_MACE1H]
-[LE_ITEM_WEAPON_MACE2H]
-[LE_ITEM_WEAPON_POLEARM]
-[LE_ITEM_WEAPON_SWORD1H]
-[LE_ITEM_WEAPON_SWORD2H]
-[LE_ITEM_WEAPON_WARGLAIVE]
-[LE_ITEM_WEAPON_STAFF]
+[Enum.ItemWeaponSubclass.Axe1H]
+[Enum.ItemWeaponSubclass.Axe2H]
+[Enum.ItemWeaponSubclass.Bows]
+[Enum.ItemWeaponSubclass.Guns]
+[Enum.ItemWeaponSubclass.Mace1H]
+[Enum.ItemWeaponSubclass.Mace2H]
+[Enum.ItemWeaponSubclass.Polearm]
+[Enum.ItemWeaponSubclass.Sword1H]
+[Enum.ItemWeaponSubclass.Sword2H]
+[Enum.ItemWeaponSubclass.Warglaive]
+[Enum.ItemWeaponSubclass.Staff]
 [LE_ITEM_WEAPON_BEARCLAW]
 [LE_ITEM_WEAPON_CATCLAW]
-[LE_ITEM_WEAPON_UNARMED]
+[Enum.ItemWeaponSubclass.Unarmed]
 [LE_ITEM_WEAPON_GENERIC]
-[LE_ITEM_WEAPON_DAGGER]
+[Enum.ItemWeaponSubclass.Dagger]
 [LE_ITEM_WEAPON_THROWN]
-[LE_ITEM_WEAPON_CROSSBOW]
-[LE_ITEM_WEAPON_WAND]
+[Enum.ItemWeaponSubclass.Crossbows]
+[Enum.ItemWeaponSubclass.Wand]
 [LE_ITEM_WEAPON_FISHINGPOLE]
 NUM_LE_ITEM_WEAPONS
 --]]---------------------------------------------------------------------------------------------------------------------------------------
 filters['weaponType'] = {}
 filters['weaponType'].menuText = 'Weapon Type'
 filters['weaponType'].data = {
-[LE_ITEM_WEAPON_AXE1H] = true, --
-[LE_ITEM_WEAPON_AXE2H] = true,--
-[LE_ITEM_WEAPON_BOWS] = true, --
-[LE_ITEM_WEAPON_GUNS] = true, --
-[LE_ITEM_WEAPON_MACE1H] = true, --
-[LE_ITEM_WEAPON_MACE2H] = true, --
-[LE_ITEM_WEAPON_POLEARM] = true, --
-[LE_ITEM_WEAPON_SWORD1H] = true, --
-[LE_ITEM_WEAPON_SWORD2H] = true, --
-[LE_ITEM_WEAPON_WARGLAIVE] = true,
-[LE_ITEM_WEAPON_STAFF] = true, --
+[Enum.ItemWeaponSubclass.Axe1H] = true, --
+[Enum.ItemWeaponSubclass.Axe2H] = true,--
+[Enum.ItemWeaponSubclass.Bows] = true, --
+[Enum.ItemWeaponSubclass.Guns] = true, --
+[Enum.ItemWeaponSubclass.Mace1H] = true, --
+[Enum.ItemWeaponSubclass.Mace2H] = true, --
+[Enum.ItemWeaponSubclass.Polearm] = true, --
+[Enum.ItemWeaponSubclass.Sword1H] = true, --
+[Enum.ItemWeaponSubclass.Sword2H] = true, --
+[Enum.ItemWeaponSubclass.Warglaive] = true,
+[Enum.ItemWeaponSubclass.Staff] = true, --
 --[LE_ITEM_WEAPON_BEARCLAW] = true,
 --[LE_ITEM_WEAPON_CATCLAW] = true,
-[LE_ITEM_WEAPON_UNARMED] = true, --
+[Enum.ItemWeaponSubclass.Unarmed] = true, --
 --[LE_ITEM_WEAPON_GENERIC] = true,
-[LE_ITEM_WEAPON_DAGGER] = true, --
+[Enum.ItemWeaponSubclass.Dagger] = true, --
 --[LE_ITEM_WEAPON_THROWN] = true,
-[LE_ITEM_WEAPON_CROSSBOW] = true, --
-[LE_ITEM_WEAPON_WAND] = true, --
+[Enum.ItemWeaponSubclass.Crossbow] = true, --
+[Enum.ItemWeaponSubclass.Wand] = true, --
 --[LE_ITEM_WEAPON_FISHINGPOLE] = true,
 }
 filters['weaponType'].filterMessage = 'Item is not one of selected weapon types.'
 
 f = createFilterFrame('Weapon Type', 308)
 f.checkButtons = {}
-f.checkButtons[LE_ITEM_WEAPON_AXE1H] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
-f.checkButtons[LE_ITEM_WEAPON_AXE1H]:SetPoint('TOPLEFT', 8, -8)
-f.checkButtons[LE_ITEM_WEAPON_AXE1H].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_AXE1H))
-f.checkButtons[LE_ITEM_WEAPON_AXE2H] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
-f.checkButtons[LE_ITEM_WEAPON_AXE2H]:SetPoint('TOPLEFT', 8, -28)
-f.checkButtons[LE_ITEM_WEAPON_AXE2H].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_AXE2H))
+f.checkButtons[Enum.ItemWeaponSubclass.Axe1H] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[Enum.ItemWeaponSubclass.Axe1H]:SetPoint('TOPLEFT', 8, -8)
+f.checkButtons[Enum.ItemWeaponSubclass.Axe1H].text:SetText(GetItemSubClassInfo(Enum.ItemClass.Weapon, Enum.ItemWeaponSubclass.Axe1H))
+f.checkButtons[Enum.ItemWeaponSubclass.Axe2H] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[Enum.ItemWeaponSubclass.Axe2H]:SetPoint('TOPLEFT', 8, -28)
+f.checkButtons[Enum.ItemWeaponSubclass.Axe2H].text:SetText(GetItemSubClassInfo(Enum.ItemClass.Weapon, Enum.ItemWeaponSubclass.Axe2H))
 
-f.checkButtons[LE_ITEM_WEAPON_SWORD1H] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
-f.checkButtons[LE_ITEM_WEAPON_SWORD1H]:SetPoint('TOPLEFT', 8, -48)
-f.checkButtons[LE_ITEM_WEAPON_SWORD1H].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_SWORD1H))
-f.checkButtons[LE_ITEM_WEAPON_SWORD2H] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
-f.checkButtons[LE_ITEM_WEAPON_SWORD2H]:SetPoint('TOPLEFT', 8, -68)
-f.checkButtons[LE_ITEM_WEAPON_SWORD2H].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_SWORD2H))
+f.checkButtons[Enum.ItemWeaponSubclass.Sword1H] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[Enum.ItemWeaponSubclass.Sword1H]:SetPoint('TOPLEFT', 8, -48)
+f.checkButtons[Enum.ItemWeaponSubclass.Sword1H].text:SetText(GetItemSubClassInfo(Enum.ItemClass.Weapon, Enum.ItemWeaponSubclass.Sword1H))
+f.checkButtons[Enum.ItemWeaponSubclass.Sword2H] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[Enum.ItemWeaponSubclass.Sword2H]:SetPoint('TOPLEFT', 8, -68)
+f.checkButtons[Enum.ItemWeaponSubclass.Sword2H].text:SetText(GetItemSubClassInfo(Enum.ItemClass.Weapon, Enum.ItemWeaponSubclass.Sword2H))
 
-f.checkButtons[LE_ITEM_WEAPON_MACE1H] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
-f.checkButtons[LE_ITEM_WEAPON_MACE1H]:SetPoint('TOPLEFT', 8, -88)
-f.checkButtons[LE_ITEM_WEAPON_MACE1H].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_MACE1H))
-f.checkButtons[LE_ITEM_WEAPON_MACE2H] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
-f.checkButtons[LE_ITEM_WEAPON_MACE2H]:SetPoint('TOPLEFT', 8, -108)
-f.checkButtons[LE_ITEM_WEAPON_MACE2H].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_MACE2H))
+f.checkButtons[Enum.ItemWeaponSubclass.Mace1H] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[Enum.ItemWeaponSubclass.Mace1H]:SetPoint('TOPLEFT', 8, -88)
+f.checkButtons[Enum.ItemWeaponSubclass.Mace1H].text:SetText(GetItemSubClassInfo(Enum.ItemClass.Weapon, Enum.ItemWeaponSubclass.Mace1H))
+f.checkButtons[Enum.ItemWeaponSubclass.Mace2H] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[Enum.ItemWeaponSubclass.Mace2H]:SetPoint('TOPLEFT', 8, -108)
+f.checkButtons[Enum.ItemWeaponSubclass.Mace2H].text:SetText(GetItemSubClassInfo(Enum.ItemClass.Weapon, Enum.ItemWeaponSubclass.Mace2H))
 
-f.checkButtons[LE_ITEM_WEAPON_DAGGER] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
-f.checkButtons[LE_ITEM_WEAPON_DAGGER]:SetPoint('TOPLEFT', 8, -128)
-f.checkButtons[LE_ITEM_WEAPON_DAGGER].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_DAGGER))
-f.checkButtons[LE_ITEM_WEAPON_UNARMED] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
-f.checkButtons[LE_ITEM_WEAPON_UNARMED]:SetPoint('TOPLEFT', 8, -148)
-f.checkButtons[LE_ITEM_WEAPON_UNARMED].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_UNARMED))
+f.checkButtons[Enum.ItemWeaponSubclass.Dagger] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[Enum.ItemWeaponSubclass.Dagger]:SetPoint('TOPLEFT', 8, -128)
+f.checkButtons[Enum.ItemWeaponSubclass.Dagger].text:SetText(GetItemSubClassInfo(Enum.ItemClass.Weapon, Enum.ItemWeaponSubclass.Dagger))
+f.checkButtons[Enum.ItemWeaponSubclass.Unarmed] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[Enum.ItemWeaponSubclass.Unarmed]:SetPoint('TOPLEFT', 8, -148)
+f.checkButtons[Enum.ItemWeaponSubclass.Unarmed].text:SetText(GetItemSubClassInfo(Enum.ItemClass.Weapon, Enum.ItemWeaponSubclass.Unarmed))
 
-f.checkButtons[LE_ITEM_WEAPON_POLEARM] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
-f.checkButtons[LE_ITEM_WEAPON_POLEARM]:SetPoint('TOPLEFT', 8, -168)
-f.checkButtons[LE_ITEM_WEAPON_POLEARM].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_POLEARM))
-f.checkButtons[LE_ITEM_WEAPON_STAFF] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
-f.checkButtons[LE_ITEM_WEAPON_STAFF]:SetPoint('TOPLEFT', 8, -188)
-f.checkButtons[LE_ITEM_WEAPON_STAFF].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_STAFF))
+f.checkButtons[Enum.ItemWeaponSubclass.Polearm] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[Enum.ItemWeaponSubclass.Polearm]:SetPoint('TOPLEFT', 8, -168)
+f.checkButtons[Enum.ItemWeaponSubclass.Polearm].text:SetText(GetItemSubClassInfo(Enum.ItemClass.Weapon, Enum.ItemWeaponSubclass.Polearm))
+f.checkButtons[Enum.ItemWeaponSubclass.Staff] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[Enum.ItemWeaponSubclass.Staff]:SetPoint('TOPLEFT', 8, -188)
+f.checkButtons[Enum.ItemWeaponSubclass.Staff].text:SetText(GetItemSubClassInfo(Enum.ItemClass.Weapon, Enum.ItemWeaponSubclass.Staff))
 
-f.checkButtons[LE_ITEM_WEAPON_BOWS] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
-f.checkButtons[LE_ITEM_WEAPON_BOWS]:SetPoint('TOPLEFT', 8, -208)
-f.checkButtons[LE_ITEM_WEAPON_BOWS].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_BOWS))
-f.checkButtons[LE_ITEM_WEAPON_CROSSBOW] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
-f.checkButtons[LE_ITEM_WEAPON_CROSSBOW]:SetPoint('TOPLEFT', 8, -228)
-f.checkButtons[LE_ITEM_WEAPON_CROSSBOW].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_CROSSBOW))
+f.checkButtons[Enum.ItemWeaponSubclass.Bows] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[Enum.ItemWeaponSubclass.Bows]:SetPoint('TOPLEFT', 8, -208)
+f.checkButtons[Enum.ItemWeaponSubclass.Bows].text:SetText(GetItemSubClassInfo(Enum.ItemClass.Weapon, Enum.ItemWeaponSubclass.Bows))
+f.checkButtons[Enum.ItemWeaponSubclass.Crossbow] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[Enum.ItemWeaponSubclass.Crossbow]:SetPoint('TOPLEFT', 8, -228)
+f.checkButtons[Enum.ItemWeaponSubclass.Crossbow].text:SetText(GetItemSubClassInfo(Enum.ItemClass.Weapon, Enum.ItemWeaponSubclass.Crossbow))
 
-f.checkButtons[LE_ITEM_WEAPON_GUNS] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
-f.checkButtons[LE_ITEM_WEAPON_GUNS]:SetPoint('TOPLEFT', 8, -248)
-f.checkButtons[LE_ITEM_WEAPON_GUNS].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_GUNS))
-f.checkButtons[LE_ITEM_WEAPON_WAND] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
-f.checkButtons[LE_ITEM_WEAPON_WAND]:SetPoint('TOPLEFT', 8, -268)
-f.checkButtons[LE_ITEM_WEAPON_WAND].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_WAND))
+f.checkButtons[Enum.ItemWeaponSubclass.Guns] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[Enum.ItemWeaponSubclass.Guns]:SetPoint('TOPLEFT', 8, -248)
+f.checkButtons[Enum.ItemWeaponSubclass.Guns].text:SetText(GetItemSubClassInfo(Enum.ItemClass.Weapon, Enum.ItemWeaponSubclass.Guns))
+f.checkButtons[Enum.ItemWeaponSubclass.Wand] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[Enum.ItemWeaponSubclass.Wand]:SetPoint('TOPLEFT', 8, -268)
+f.checkButtons[Enum.ItemWeaponSubclass.Wand].text:SetText(GetItemSubClassInfo(Enum.ItemClass.Weapon, Enum.ItemWeaponSubclass.Wand))
 
-f.checkButtons[LE_ITEM_WEAPON_WARGLAIVE] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
-f.checkButtons[LE_ITEM_WEAPON_WARGLAIVE]:SetPoint('TOPLEFT', 8, -288)
-f.checkButtons[LE_ITEM_WEAPON_WARGLAIVE].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_WARGLAIVE))
+f.checkButtons[Enum.ItemWeaponSubclass.Warglaive] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[Enum.ItemWeaponSubclass.Warglaive]:SetPoint('TOPLEFT', 8, -288)
+f.checkButtons[Enum.ItemWeaponSubclass.Warglaive].text:SetText(GetItemSubClassInfo(Enum.ItemClass.Weapon, Enum.ItemWeaponSubclass.Warglaive))
 
 
 function f:populateData(fData)
@@ -684,12 +684,12 @@ filters['weaponType'].filterFunction = function(itemIndex, filterIndex)
     local item = EasyScrap.scrappableItems[itemIndex]
     local filterData = EasyScrap.saveData.customFilters[EasyScrap.activeFilterID].rules[filterIndex].data
     
-    if item.itemClassID == LE_ITEM_CLASS_WEAPON then
+    if item.itemClassID == Enum.ItemClass.Weapon then
         local isMatch = filterData[item.itemSubClassID]
         if isMatch then
             return true
         else
-            filters['weaponType'].filterMessage = 'weapon type is '..GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, item.itemSubClassID)       
+            filters['weaponType'].filterMessage = 'weapon type is '..GetItemSubClassInfo(Enum.ItemClass.Weapon, item.itemSubClassID)       
         end
     else
         return true
@@ -701,7 +701,7 @@ ITEM TYPE
 --]]---------------------------------------------------------------------------------------------------------------------------------------
 filters['itemType'] = {}
 filters['itemType'].menuText = 'Item Type'
-filters['itemType'].data = {[LE_ITEM_CLASS_ARMOR] = true, [LE_ITEM_CLASS_WEAPON] = true}
+filters['itemType'].data = {[Enum.ItemClass.Armor] = true, [Enum.ItemClass.Weapon] = true}
 filters['itemType'].filterMessage = 'item type is not one of selected item types.'
 
 f = createFilterFrame('Item Type', 30)
@@ -714,13 +714,13 @@ f.checkButtons[2]:SetPoint('TOPLEFT', 128, -8)
 f.checkButtons[2].text:SetText('Weapon')
 
 function f:populateData(data)
-    self.checkButtons[1]:SetChecked(data[LE_ITEM_CLASS_ARMOR])
-    self.checkButtons[2]:SetChecked(data[LE_ITEM_CLASS_WEAPON])
+    self.checkButtons[1]:SetChecked(data[Enum.ItemClass.Armor])
+    self.checkButtons[2]:SetChecked(data[Enum.ItemClass.Weapon])
 end
 
 function f:saveData(customFilterIndex)
-    EasyScrap.saveData.customFilters[customFilterIndex].rules[self.ruleIndex].data[LE_ITEM_CLASS_ARMOR] = self.checkButtons[1]:GetChecked()
-    EasyScrap.saveData.customFilters[customFilterIndex].rules[self.ruleIndex].data[LE_ITEM_CLASS_WEAPON] = self.checkButtons[2]:GetChecked()
+    EasyScrap.saveData.customFilters[customFilterIndex].rules[self.ruleIndex].data[Enum.ItemClass.Armor] = self.checkButtons[1]:GetChecked()
+    EasyScrap.saveData.customFilters[customFilterIndex].rules[self.ruleIndex].data[Enum.ItemClass.Weapon] = self.checkButtons[2]:GetChecked()
 end
 
 filters['itemType'].frame = f
@@ -963,7 +963,7 @@ filters['transmogKnown'].filterFunction = function(itemIndex, filterIndex)
     
     local z = C_TransmogCollection.GetItemInfo(item.itemLink)
     if not z then
-        if item.itemClassID == LE_ITEM_CLASS_WEAPON or (item.itemClassID == LE_ITEM_CLASS_ARMOR and (item.itemSubClassID == LE_ITEM_ARMOR_CLOTH or item.itemSubClassID == LE_ITEM_ARMOR_LEATHER or item.itemSubClassID == LE_ITEM_ARMOR_MAIL or item.itemSubClassID == LE_ITEM_ARMOR_PLATE or item.itemSubClassID == LE_ITEM_ARMOR_SHIELD)) then 
+        if item.itemClassID == Enum.ItemClass.Weapon or (item.itemClassID == Enum.ItemClass.Armor and (item.itemSubClassID == Enum.ItemArmorSubclass.Cloth or item.itemSubClassID == Enum.ItemArmorSubclass.Leather or item.itemSubClassID == Enum.ItemArmorSubclass.Mail or item.itemSubClassID == Enum.ItemArmorSubclass.Plate or item.itemSubClassID == Enum.ItemArmorSubclass.Shield)) then 
             --DEFAULT_CHAT_FRAME:AddMessage('Easy Scrap: Failed to obtain transmog information for item '..item.itemLink..'. Item will be ignored, please check it manually.')
             filters['transmogKnown'].filterMessage = 'unable to determine if appearance is known.\nThis happens for some items, please check it manually.'
             return false

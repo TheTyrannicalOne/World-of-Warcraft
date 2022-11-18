@@ -1,5 +1,9 @@
 
 OmniCCDB = {
+	["global"] = {
+		["dbVersion"] = 6,
+		["addonVersion"] = "10.0.1",
+	},
 	["profileKeys"] = {
 		["Vancard - Zul'jin"] = "Default",
 		["Armaguth - Zul'jin"] = "Default",
@@ -16,50 +20,46 @@ OmniCCDB = {
 		["Durlok - Black Dragonflight"] = "Default",
 		["Dachas - Zul'jin"] = "Default",
 		["Jingojaggot - Argent Dawn"] = "Default",
-		["Tendralas - Dalaran"] = "Default",
+		["Banesmuncy - Zul'jin"] = "Default",
 		["Tyranasticus - Zul'jin"] = "Default",
-		["Illingrath - Dalaran"] = "Default",
 		["Brotus - Argent Dawn"] = "Default",
-		["Galvarton - Dalaran"] = "Default",
+		["Illingrath - Dalaran"] = "Default",
+		["Shimzo - Zul'jin"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
 		["Kelvalatar - Dalaran"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
-		["Okona - Zul'jin"] = "Default",
 		["Jingojaggot - Zul'jin"] = "Default",
-		["Alatra - Zul'jin"] = "Default",
+		["Guufnah - Zul'jin"] = "Default",
+		["Galvarton - Dalaran"] = "Default",
 		["Tinkster - Dalaran"] = "Default",
+		["Okona - Zul'jin"] = "Default",
 		["Fantastiburo - Zul'jin"] = "Default",
-		["Datgore - Zul'jin"] = "Default",
-		["Kotalkhan - Zul'jin"] = "Default",
+		["Tyran - Argent Dawn"] = "Default",
+		["Serbitechna - Dalaran"] = "Default",
 		["Laymonan - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Vadder - Argent Dawn"] = "Default",
-		["Serbitechna - Dalaran"] = "Default",
-		["Tyran - Argent Dawn"] = "Default",
+		["Kotalkhan - Zul'jin"] = "Default",
+		["Datgore - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
-		["Guufnah - Zul'jin"] = "Default",
+		["Alatra - Zul'jin"] = "Default",
 		["Abyronterner - Zul'jin"] = "Default",
-		["Shimzo - Zul'jin"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
 		["Jasmoney - Zul'jin"] = "Default",
-		["Banesmuncy - Zul'jin"] = "Default",
+		["Tendralas - Dalaran"] = "Default",
 		["Mandles - Zul'jin"] = "Default",
-	},
-	["global"] = {
-		["dbVersion"] = 6,
-		["addonVersion"] = "9.2.1",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["themes"] = {
 				["Default"] = {
 					["textStyles"] = {
-						["minutes"] = {
+						["seconds"] = {
 						},
 						["soon"] = {
 						},
-						["seconds"] = {
+						["minutes"] = {
 						},
 					},
 					["enableText"] = false,

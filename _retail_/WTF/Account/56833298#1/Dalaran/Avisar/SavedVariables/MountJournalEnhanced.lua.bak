@@ -53,18 +53,18 @@ MJEPersonalSettings = {
 			["Black Market"] = true,
 			["PVP"] = true,
 			["World Event"] = true,
-			["Reputation"] = true,
+			["Instance"] = true,
 			["Class"] = true,
 			["Promotion"] = true,
 			["Garrison"] = true,
-			["Achievement"] = true,
+			["Island Expedition"] = true,
 			["Shop"] = true,
 			["Covenants"] = true,
-			["Profession"] = true,
 			["Drop"] = true,
-			["Island Expedition"] = true,
+			["Profession"] = true,
+			["Achievement"] = true,
 			["Quest"] = true,
-			["Instance"] = true,
+			["Reputation"] = true,
 		},
 		["rarity"] = {
 			true, -- [1]
@@ -73,8 +73,7 @@ MJEPersonalSettings = {
 			true, -- [4]
 			true, -- [5]
 		},
-		["color"] = {
-		},
+		["hiddenIngame"] = false,
 		["notCollected"] = true,
 		["hidden"] = false,
 		["faction"] = {
@@ -152,8 +151,8 @@ MJEPersonalSettings = {
 				["Crows"] = true,
 				["Roc"] = true,
 				["Eagle"] = true,
-				["Talonbirds"] = true,
 				["Mechanical Birds"] = true,
+				["Talonbirds"] = true,
 				["Hawkstriders"] = true,
 				["Tallstriders"] = true,
 				["Pandaren Phoenixes"] = true,
@@ -221,10 +220,9 @@ MJEPersonalSettings = {
 				["Gorm"] = true,
 				["Silithids"] = true,
 				["Wasp"] = true,
-				["Ravagers"] = true,
 				["Flies"] = true,
 				["Krolusks"] = true,
-				["Bees"] = true,
+				["Others"] = true,
 				["Aqir Flyers"] = true,
 				["Animite"] = true,
 				["Moth"] = true,
@@ -241,8 +239,6 @@ MJEPersonalSettings = {
 				["Sea Serpents"] = true,
 				["Turtles"] = true,
 			},
-			["Crabs"] = true,
-			["Jellyfish"] = true,
 			["Ungulates"] = {
 				["Mammoths"] = true,
 				["Riverbeasts"] = true,
@@ -256,6 +252,8 @@ MJEPersonalSettings = {
 				["Camels"] = true,
 				["Runestag"] = true,
 			},
+			["Jellyfish"] = true,
+			["Crabs"] = true,
 			["Amphibian"] = {
 				["Crawgs"] = true,
 				["Toads"] = true,
@@ -265,6 +263,7 @@ MJEPersonalSettings = {
 			["Humanoids"] = {
 				["Gronnlings"] = true,
 				["Gorger"] = true,
+				["Others"] = true,
 				["Yetis"] = true,
 			},
 			["Drakes"] = {
@@ -303,7 +302,8 @@ MJEPersonalSettings = {
 		["onlyTradable"] = false,
 		["collected"] = true,
 		["onlyRecent"] = false,
-		["hiddenIngame"] = false,
+		["color"] = {
+		},
 	},
 	["personalHiddenMounts"] = false,
 	["searchInNotes"] = true,

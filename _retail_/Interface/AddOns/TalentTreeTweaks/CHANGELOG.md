@@ -1,6 +1,6 @@
 # Talent Tree Tweaks
 
-## [v1.0.0](https://github.com/Numynum/TalentTreeTweaks/tree/v1.0.0) (2022-10-25)
-[Full Changelog](https://github.com/Numynum/TalentTreeTweaks/compare/v0.3.3...v1.0.0) [Previous Releases](https://github.com/Numynum/TalentTreeTweaks/releases)
+## [v1.3.3](https://github.com/Numynum/TalentTreeTweaks/tree/v1.3.3) (2022-11-15)
+[Full Changelog](https://github.com/Numynum/TalentTreeTweaks/compare/v1.3.2...v1.3.3) [Previous Releases](https://github.com/Numynum/TalentTreeTweaks/releases)
 
-- Dragonflight prepatch release  
+- TOC bump  

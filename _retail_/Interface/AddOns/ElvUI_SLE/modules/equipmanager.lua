@@ -1,4 +1,4 @@
-﻿local SLE, T, E, L, V, P, G = unpack(select(2, ...))
+local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local EM = SLE.EquipManager
 
 --GLOBALS: unpack, select, CreateFrame, CharacterFrame
@@ -283,6 +283,8 @@ function EM:TagsProcess(msg)
 							local tag = command:match('^%s*(.+)%s*$')
 							if EM.TagsTable[tag] then --If tag is registered, add stuff to the table
 								tinsert(CommandsInfo, { condition = command:match('^%s*(.+)%s*$'), args = argTable })
+							elseif tag:sub(1,2) == 'no' and EM.TagsTable[tag:sub(3,-1)] then
+								tinsert(CommandsInfo, { condition =  command:match('^%s*no(.+)%s*$'), args = argTable, negate = true })
 							else
 								--We don't use that kind of tag in this neighborhood
 								SLE:Print(format(L["SLE_EM_TAG_INVALID"], tag), 'error')
@@ -317,6 +319,9 @@ function EM:TagsConditionsCheck(data)
 				--Getting arguments table and use it to call a tag check
 				local args = conditionInfo['args']
 				local result = EM.TagsTable[tagFunc](unpack(args))
+				if conditionInfo['negate'] then
+					result = not result
+				end
 				--if check returns true then we have a match
 				if result then
 					matches = matches + 1
@@ -380,15 +385,13 @@ local function Equip(event)
 	end
 end
 
-EM.Equip = Equip
-
 --Creating a lock button. Prevents gear from auto equip
 function EM:CreateLock()
 	if _G.SLE_Equip_Lock_Button or not EM.db.lockbutton then return end
 	local button = CreateFrame('Button', 'SLE_Equip_Lock_Button', _G.PaperDollFrame)
 	button:Size(20, 20)
 	button:Point('BOTTOMLEFT', _G.CharacterFrame, 'BOTTOMLEFT', 4, 4)
-	button:SetFrameLevel(_G.CharacterSceneFrame:GetFrameLevel() + 2)
+	button:SetFrameLevel(_G.CharacterModelScene:GetFrameLevel() + 2)
 	button:SetScript('OnEnter', function(self)
 		_G.GameTooltip:SetOwner(self)
 		_G.GameTooltip:AddLine(L["SLE_EM_LOCK_TOOLTIP"])

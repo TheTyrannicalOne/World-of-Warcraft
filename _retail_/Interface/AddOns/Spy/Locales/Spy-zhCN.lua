@@ -471,6 +471,7 @@ L["WARRIOR"] = "戰士"
 L["DEATHKNIGHT"] = "死亡騎士"
 L["MONK"] = "武僧"
 L["DEMONHUNTER"] = "惡魔獵人"
+L["EVOKER"] = "唤魔师"
 
 -- Race descriptions
 L["Human"] = "人类"
@@ -496,6 +497,7 @@ L["Kul Tiran"] = "库尔提拉斯人"
 L["Zandalari Troll"] = "赞达拉巨魔"
 L["Mechagnome"] = "机械侏儒"
 L["Vulpera"] = "狐人"
+L["Dracthyr"] = "龙希尔"
 
 -- Stealth abilities
 L["Stealth"] = "潜行"
@@ -516,6 +518,7 @@ L["MinimapClassTextWARRIOR"] = "|cffc69b6d"
 L["MinimapClassTextDEATHKNIGHT"] = "|cffc41e3a"
 L["MinimapClassTextMONK"] = "|cff00ff96"
 L["MinimapClassTextDEMONHUNTER"] = "|cffa330c9"
+L["MinimapClassTextEVOKER"] = "|cff33937f"
 
 Spy_IgnoreList = {
 	["邮箱"]=true, ["Shred Master Mk1"]=true, ["Scrap-O-Matic 1000"]=true,

@@ -1,44 +1,95 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0704,
+	["LastVersion"] = 2.0707,
 	["LastPlayerFullName"] = "Galvarton-Dalaran",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
-		[6] = {
-			["ID"] = 157672,
-			["Level"] = 16,
-			["Link"] = "|cff1eff00|Hitem:157672::::::::10:1447:::::::::|h[Wildshifter Belt]|h|r",
-		},
-		[7] = {
-			["ID"] = 157670,
-			["Level"] = 16,
-			["Link"] = "|cff1eff00|Hitem:157670::::::::10:1447:::::::::|h[Wildshifter Leggings]|h|r",
-		},
-		[8] = {
-			["ID"] = 157667,
-			["Level"] = 16,
-			["Link"] = "|cff1eff00|Hitem:157667::::::::10:1447:::::::::|h[Wildshifter Treads]|h|r",
-		},
-		[10] = {
-			["ID"] = 157668,
-			["Level"] = 16,
-			["Link"] = "|cff1eff00|Hitem:157668::::::::10:1447:::::::::|h[Wildshifter Grips]|h|r",
-		},
-		[16] = {
-			["ID"] = 157619,
-			["Level"] = 16,
-			["Link"] = "|cff1eff00|Hitem:157619::::::::10:1447:::::::::|h[Spire of Astral Force]|h|r",
-		},
-		[5] = {
-			["ID"] = 157666,
-			["Level"] = 16,
-			["Link"] = "|cff1eff00|Hitem:157666::::::::10:1447:::::::::|h[Wildshifter Tunic]|h|r",
-		},
-		[9] = {
-			["ID"] = 157673,
-			["Level"] = 16,
-			["Link"] = "|cff1eff00|Hitem:157673::::::::10:1447:::::::::|h[Wildshifter Bracers]|h|r",
-		},
+		{
+			["ID"] = 122249,
+			["Level"] = 49,
+			["Link"] = "|cff00ccff|Hitem:122249::::::::43:104:::1:7920::::::|h[Preened Tribal War Feathers]|h|r",
+		}, -- [1]
+		{
+			["ID"] = 122667,
+			["Level"] = 49,
+			["Link"] = "|cff00ccff|Hitem:122667::::::::43:104:::1:7920::::::|h[Eternal Emberfury Talisman]|h|r",
+		}, -- [2]
+		{
+			["ID"] = 122376,
+			["Level"] = 49,
+			["Link"] = "|cff00ccff|Hitem:122376::::::::43:104:::1:7920::::::|h[Exceptional Stormshroud Shoulders]|h|r",
+		}, -- [3]
+		nil, -- [4]
+		{
+			["ID"] = 122382,
+			["Level"] = 49,
+			["Link"] = "|cff00ccff|Hitem:122382::::::::43:104:::1:7920::::::|h[Preened Ironfeather Breastplate]|h|r",
+		}, -- [5]
+		{
+			["ID"] = 107308,
+			["Level"] = 34,
+			["Link"] = "|cff1eff00|Hitem:107308::::::::30:104::11:1:3631:2:28:1764:9:30:::::|h[Karabor Skirmisher Belt]|h|r",
+		}, -- [6]
+		{
+			["ID"] = 122254,
+			["Level"] = 49,
+			["Link"] = "|cff00ccff|Hitem:122254::::::::43:104:::1:7920::::::|h[Stained Shadowcraft Pants]|h|r",
+		}, -- [7]
+		{
+			["ID"] = 107304,
+			["Level"] = 38,
+			["Link"] = "|cff1eff00|Hitem:107304::::::::35:104::11:1:3631:2:9:34:28:1764:::::|h[Karabor Skirmisher Boots]|h|r",
+		}, -- [8]
+		{
+			["ID"] = 106513,
+			["Level"] = 45,
+			["Link"] = "|cff1eff00|Hitem:106513::::::::42:104:::2:6654:213:2:28:65:9:42:::::|h[Mandragoran Wristwraps of the Harmonious]|h|r",
+		}, -- [9]
+		{
+			["ID"] = 107305,
+			["Level"] = 46,
+			["Link"] = "|cff0070dd|Hitem:107305::::::::41:104::11:1:6691:2:28:1764:9:40:::::|h[Karabor Skirmisher Gloves]|h|r",
+		}, -- [10]
+		{
+			["ID"] = 122529,
+			["Level"] = 49,
+			["AlsoFitsIn"] = 12,
+			["Link"] = "|cff00ccff|Hitem:122529::::::::43:104:::1:7920::::::|h[Dread Pirate Ring]|h|r",
+		}, -- [11]
+		{
+			["ID"] = 128173,
+			["Level"] = 49,
+			["AlsoFitsIn"] = 11,
+			["Link"] = "|cff00ccff|Hitem:128173::::::::43:104:::1:7920::::::|h[Admiral Taylor's Loyalty Ring]|h|r",
+		}, -- [12]
+		{
+			["ID"] = 122361,
+			["Level"] = 49,
+			["AlsoFitsIn"] = 14,
+			["Link"] = "|cff00ccff|Hitem:122361::::::::43:104:::1:7920::::::|h[Swift Hand of Justice]|h|r",
+		}, -- [13]
+		{
+			["ID"] = 122361,
+			["Level"] = 48,
+			["AlsoFitsIn"] = 13,
+			["Link"] = "|cff00ccff|Hitem:122361::::::::42:104:::1:7920::::::|h[Swift Hand of Justice]|h|r",
+		}, -- [14]
+		{
+			["ID"] = 166770,
+			["Level"] = 49,
+			["Link"] = "|cff00ccff|Hitem:166770::::::::43:104:::1:7920::::::|h[Banded Gilnean Cloak]|h|r",
+		}, -- [15]
+		{
+			["ID"] = 122363,
+			["Level"] = 49,
+			["Link"] = "|cff00ccff|Hitem:122363::::::::43:104:::1:7920::::::|h[Burnished Warden Staff]|h|r",
+		}, -- [16]
+		{
+			["ID"] = 116483,
+			["Level"] = 40,
+			["AlsoFitsIn"] = 16,
+			["Link"] = "|cff1eff00|Hitem:116483::::::::38:104:::2:6655:168:2:9:36:28:1764:::::|h[Moonwhisper Scepter of the Aurora]|h|r",
+		}, -- [17]
 	},
 	["LastKeybindingsSet"] = 1,
 }

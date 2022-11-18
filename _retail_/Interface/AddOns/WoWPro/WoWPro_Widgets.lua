@@ -12,19 +12,37 @@ WoWPro.UI_CheckBox_Check_Disabled = texture_prefix .. "UI-CheckBox-Check-Disable
 WoWPro.UI_CheckBox_Check = texture_prefix .. "UI-CheckBox-Check" -- 130751?
 
 
+local function SetBlank(self)
+    self:SetChecked(false)
+    self:SetCheckedTexture(WoWPro.UI_CheckBox_Check)
+end
+
+local function SetGold(self)
+    self:SetBlank()
+    self:SetChecked(true)
+end
+
+local function SetSilver(self)
+    self:SetChecked(false)
+    self:SetCheckedTexture(WoWPro.UI_CheckBox_Check_Disabled)
+    self:SetChecked(true)
+end
+
 function WoWPro:CreateCheck(parent)
     local check = _G.CreateFrame("CheckButton", nil, parent)
     check:RegisterForClicks("anyDown")
     check:SetPoint("TOPLEFT")
-    check:SetWidth(15)
-    check:SetHeight(15)
+    check:SetWidth(16)
+    check:SetHeight(16)
     check:SetNormalTexture(WoWPro.UI_CheckBox_Up)
     check:SetPushedTexture(WoWPro.UI_CheckBox_Down)
     check:SetHighlightTexture(WoWPro.UI_CheckBox_Highlight)
     check:SetDisabledCheckedTexture(WoWPro.UI_CheckBox_Check_Disabled)
     check:SetCheckedTexture(WoWPro.UI_CheckBox_Check)
     check:Hide()
-
+    check.SetBlank = SetBlank
+    check.SetGold = SetGold
+    check.SetSilver = SetSilver
     return check
 end
 
@@ -127,7 +145,7 @@ function WoWPro:CreateItemButton(parent, id)
     itemicon:SetTexture("Interface\\Icons\\INV_Misc_Bag_08")
     itemicon:SetAllPoints(itembutton)
 
-    itembutton:RegisterForClicks("anyDown")
+    itembutton:RegisterForClicks("anyDown","anyUp")
     itembutton:Hide()
 
     return itembutton, itemicon, itemcooldown
@@ -154,7 +172,7 @@ function WoWPro:CreateJumpButton(parent, id)
 		jumpicon:SetTexture("Interface\\Icons\\inv_misc_book_12")
 	end
     jumpicon:SetAllPoints(jumpbutton)
-    jumpbutton:RegisterForClicks("anyDown")
+    jumpbutton:RegisterForClicks("anyDown","anyUp")
     jumpbutton:Hide()
 
     return jumpbutton, jumpicon
@@ -195,7 +213,7 @@ function WoWPro:CreateTargetButton(parent, id)
     targeticon:SetTexture("Interface\\Icons\\Ability_Marksmanship")
     targeticon:SetAllPoints(targetbutton)
 
-    targetbutton:RegisterForClicks("anyDown")
+    targetbutton:RegisterForClicks("anyDown","anyUp")
     targetbutton.SetTarget = function () targetbutton:SetTexture("Interface\\Icons\\Ability_Marksmanship"); end
     targetbutton.SetMacro = function () targetbutton:SetTexture("Interface\\Icons\\INV_Misc_Book_11"); end
     targetbutton.SetEmote = function () targetbutton:SetTexture("Interface\\Icons\\INV_Misc_Toy_07"); end
@@ -224,7 +242,7 @@ function WoWPro:CreateEAButton(parent, id)
     eaicon:SetHeight(36)
     eaicon:SetTexture("Interface\\Icons\\INV_Misc_Bag_08")
     eaicon:SetAllPoints(eabutton)
-    eabutton:RegisterForClicks("anyDown")
+    eabutton:RegisterForClicks("anyDown","anyUp")
     eabutton:Hide()
 
     return eabutton, eaicon, cooldown
@@ -237,7 +255,7 @@ function WoWPro:CreateEAButtonSecured(id)
     eabutton:SetHeight(32)
     eabutton:SetWidth(32)
     eabutton:Hide()
-    eabutton:RegisterForClicks("anyDown")
+	eabutton:RegisterForClicks("anyDown","anyUp")
     return eabutton
 end
 
@@ -248,7 +266,7 @@ function WoWPro:CreateTargetButtonSecured(id)
     targetbutton:SetHeight(32)
     targetbutton:SetWidth(32)
     targetbutton:Hide()
-	targetbutton:RegisterForClicks("anyDown")
+	targetbutton:RegisterForClicks("anyDown","anyUp")
     return targetbutton
 end
 
@@ -259,7 +277,7 @@ function WoWPro:CreateItemButtonSecured(id)
     itembutton:SetHeight(32)
     itembutton:SetWidth(32)
     itembutton:Hide()
-	itembutton:RegisterForClicks("anyDown")
+	itembutton:RegisterForClicks("anyDown","anyUp")
     return itembutton
 end
 

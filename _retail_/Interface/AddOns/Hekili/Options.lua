@@ -110,6 +110,14 @@ local oneTimeFixes = {
 
         p.runOnce.forceDeleteBrokenMultiDisplay_20220319 = nil
     end,
+
+    forceSpellFlashBrightness_20221030 = function( p )
+        for display, data in pairs( p.displays ) do
+            if data.flash and data.flash.brightness and data.flash.brightness > 100 then
+                data.flash.brightness = 100
+            end
+        end
+    end,
 }
 
 
@@ -222,15 +230,23 @@ local displayTemplate = {
         mode = "autocast",
         coloring = "default",
         color = { 0.95, 0.95, 0.32, 1 },
+
+        highlight = true,
     },
 
     flash = {
         enabled = false,
         color = { 255/255, 215/255, 0, 1 }, -- gold.
-        brightness = 100,
-        size = 240,
         blink = false,
         suppress = false,
+        combat = false,
+
+        size = 240,
+        brightness = 100,
+        speed = 0.4,
+
+        fixedSize = false,
+        fixedBrightness = false
     },
 
     captions = {
@@ -247,6 +263,22 @@ local displayTemplate = {
         fontStyle = "OUTLINE",
 
         color = { 1, 1, 1, 1 },
+    },
+
+    empowerment = {
+        enabled = true,
+        queued = true,
+
+        align = "CENTER",
+        anchor = "BOTTOM",
+        x = 0,
+        y = 1,
+
+        font = ElvUI and 'PT Sans Narrow' or 'Arial Narrow',
+        fontSize = 16,
+        fontStyle = "THICKOUTLINE",
+
+        color = { 1, 0.8196079, 0, 1 },
     },
 
     indicators = {
@@ -420,10 +452,7 @@ do
                 autoSnapshot = true,
                 screenshot = true,
 
-                -- SpellFlash shared.
                 flashTexture = "Interface\\Cooldown\\star4",
-                fixedSize = false,
-                fixedBrightness = false,
 
                 toggles = {
                     pause = {
@@ -502,6 +531,7 @@ do
                     font = ElvUI and "Expressway" or "Arial Narrow",
                     fontSize = 20,
                     fontStyle = "OUTLINE",
+                    color = { 1, 1, 1, 1 },
 
                     width = 600,
                     height = 40,
@@ -812,6 +842,7 @@ do
 
         local conf = Hekili.DB.profile.notifications
 
+        if option == "color" then return unpack( conf[ option ] ) end
         return conf[ option ]
     end
 
@@ -2169,7 +2200,7 @@ do
                         args = {
                             enabled = {
                                 type = "toggle",
-                                name = "Enabled",
+                                name = "Enable Overlay Glow",
                                 desc = "If enabled, when the ability for the first icon has an active glow (or overlay), it will also glow in this display.",
                                 width = 1.49,
                                 order = 1,
@@ -2228,6 +2259,21 @@ do
                                 order = 5,
                                 disabled = function() return data.glow.coloring ~= "custom" end,
                             },
+
+                            break02 = {
+                                type = "description",
+                                name = " ",
+                                order = 10,
+                                width = "full",
+                            },
+
+                            highlight = {
+                                type = "toggle",
+                                name = "Enable Action Highlight",
+                                desc = "If enabled, the addon will apply the default highlight when the first recommended item/ability is currently queued.",
+                                width = "full",
+                                order = 11
+                            }
                         },
                     },
 
@@ -2238,13 +2284,13 @@ do
                             if SF then
                                 return "If enabled, the addon can highlight abilities on your action bars when they are recommended for use."
                             end
-                            return "This feature requires the SpellFlash addon or library to function properly."
+                            return "This feature requires the SpellFlashCore addon or library to function properly."
                         end,
                         order = 8,
                         args = {
                             warning = {
                                 type = "description",
-                                name = "These settings are unavailable because the SpellFlash addon / library is not installed or is disabled.",
+                                name = "These settings are unavailable because the SpellFlashCore addon / library is not installed or is disabled.",
                                 order = 0,
                                 fontSize = "medium",
                                 width = "full",
@@ -2256,7 +2302,7 @@ do
                                 name = "Enabled",
                                 desc = "If enabled, the addon will place a colorful glow on the first recommended ability for this display.",
 
-                                width = "full",
+                                width = 1.49,
                                 order = 1,
                                 hidden = function () return SF == nil end,
                             },
@@ -2266,83 +2312,34 @@ do
                                 name = "Color",
                                 desc = "Specify a glow color for the SpellFlash highlight.",
                                 order = 2,
-
-                                width = "full",
-                                hidden = function () return SF == nil end,
-                            },
-
-                            size = {
-                                type = "range",
-                                name = "Size",
-                                desc = "Specify the size of the SpellFlash glow.  The default size is |cFFFFD100240|r.",
-                                order = 3,
-                                min = 0,
-                                max = 240 * 8,
-                                step = 1,
                                 width = 1.49,
                                 hidden = function () return SF == nil end,
                             },
 
-                            brightness = {
-                                type = "range",
-                                name = "Brightness",
-                                desc = "Specify the brightness of the SpellFlash glow.  The default brightness is |cFFFFD100100|r.",
-                                order = 4,
-                                min = 0,
-                                softMax = 100,
-                                max = 200,
-                                step = 1,
-                                width = 1.49,
-                                hidden = function () return SF == nil end,
-                            },
-
-                            break01 = {
+                            break00 = {
                                 type = "description",
                                 name = " ",
-                                order = 4.1,
+                                order = 2.1,
                                 width = "full",
                                 hidden = function () return SF == nil end,
                             },
 
-                            blink = {
-                                type = "toggle",
-                                name = "Blink",
-                                desc = "If enabled, the whole action button will fade in and out.  The default is |cFFFF0000disabled|r.",
-                                order = 5,
-                                width = 1.49,
+                            sample = {
+                                type = "description",
+                                name = "",
+                                image = function() return Hekili.DB.profile.flashTexture end,
+                                order = 3,
+                                width = 0.3,
                                 hidden = function () return SF == nil end,
                             },
 
-                            suppress = {
-                                type = "toggle",
-                                name = "Hide Display",
-                                desc = "If checked, the addon will not show this display and will make recommendations via SpellFlash only.",
-                                order = 10,
-                                width = 1.49,
-                                hidden = function () return SF == nil end,
-                            },
-
-
-                            globalHeader = {
-                                type = "header",
-                                name = "Global SpellFlash Settings",
-                                order = 20,
-                                width = "full",
-                                hidden = function () return SF == nil end,
-                            },
-
-                            texture = {
+                            flashTexture = {
                                 type = "select",
                                 name = "Texture",
-                                desc = "Your selection will override the SpellFlash texture on any frame flashed by the addon.  This setting is universal to all displays.",
-                                order = 21,
-                                width = 1,
-                                get = function()
-                                    return Hekili.DB.profile.flashTexture
-                                end,
-                                set = function( info, value )
-                                    Hekili.DB.profile.flashTexture = value
-                                end,
+                                icon =  function() return data.flash.texture or "Interface\\Cooldown\\star4" end,
+                                desc = "Your selection will override the SpellFlash texture for all displays' flashes.\n\nRequires |cFFFFD100/reload|r.",
+                                order = 3.1,
+                                width = 1.19,
                                 values = {
                                     ["Interface\\Cooldown\\star4"] = "Star (Default)",
                                     ["Interface\\Cooldown\\ping4"] = "Circle",
@@ -2350,36 +2347,117 @@ do
                                     ["Interface\\AddOns\\Hekili\\Textures\\MonoCircle2"] = "Monochrome Circle Thin",
                                     ["Interface\\AddOns\\Hekili\\Textures\\MonoCircle5"] = "Monochrome Circle Thick",
                                 },
+                                get = function()
+                                    return Hekili.DB.profile.flashTexture
+                                end,
+                                set = function( _, val )
+                                    Hekili.DB.profile.flashTexture = val
+                                end,
+                                hidden = function () return SF == nil end,
+                            },
+
+                            speed = {
+                                type = "range",
+                                name = "Speed",
+                                desc = "Specify how frequently the flash should restart.  The default is |cFFFFD1000.4s|r.",
+                                min = 0.1,
+                                max = 2,
+                                step = 0.1,
+                                order = 3.2,
+                                width = 1.49,
+                                hidden = function () return SF == nil end,
+                            },
+
+                            break01 = {
+                                type = "description",
+                                name = " ",
+                                order = 4,
+                                width = "full",
+                                hidden = function () return SF == nil end,
+                            },
+
+                            size = {
+                                type = "range",
+                                name = "Flash Size",
+                                desc = "Specify the size of the SpellFlash glow.  The default size is |cFFFFD100240|r.",
+                                order = 5,
+                                min = 0,
+                                max = 240 * 8,
+                                step = 1,
+                                width = 1.49,
                                 hidden = function () return SF == nil end,
                             },
 
                             fixedSize = {
                                 type = "toggle",
                                 name = "Fixed Size",
-                                desc = "If checked, the SpellFlash pulse (grow and shrink) animation will be suppressed for all displays.",
-                                order = 22,
-                                width = 0.99,
-                                get = function()
-                                    return Hekili.DB.profile.fixedSize
-                                end,
-                                set = function( info, value )
-                                    Hekili.DB.profile.fixedSize = value
-                                end,
+                                desc = "If checked, the SpellFlash pulse (grow and shrink) animation will be suppressed.",
+                                order = 6,
+                                width = 1.49,
+                                hidden = function () return SF == nil end,
+                            },
+
+                            break02 = {
+                                type = "description",
+                                name = " ",
+                                order = 7,
+                                width = "full",
+                                hidden = function () return SF == nil end,
+                            },
+
+                            brightness = {
+                                type = "range",
+                                name = "Flash Brightness",
+                                desc = "Specify the brightness of the SpellFlash glow.  The default brightness is |cFFFFD100100|r.",
+                                order = 8,
+                                min = 0,
+                                max = 100,
+                                step = 1,
+                                width = 1.49,
                                 hidden = function () return SF == nil end,
                             },
 
                             fixedBrightness = {
                                 type = "toggle",
                                 name = "Fixed Brightness",
-                                desc = "If checked, the SpellFlash glow will not dim and brighten for all displays.",
-                                order = 23,
-                                width = 0.99,
-                                get = function()
-                                    return Hekili.DB.profile.fixedBrightness
-                                end,
-                                set = function( info, value )
-                                    Hekili.DB.profile.fixedBrightness = value
-                                end,
+                                desc = "If checked, the SpellFlash glow will not dim/brighten.",
+                                order = 9,
+                                width = 1.49,
+                                hidden = function () return SF == nil end,
+                            },
+
+                            break03 = {
+                                type = "description",
+                                name = " ",
+                                order = 10,
+                                width = "full",
+                                hidden = function () return SF == nil end,
+                            },
+
+                            combat = {
+                                type = "toggle",
+                                name = "Combat Only",
+                                desc = "If checked, the addon will only create flashes when you are in combat.",
+                                order = 11,
+                                width = "full",
+                                hidden = function () return SF == nil end,
+                            },
+
+                            suppress = {
+                                type = "toggle",
+                                name = "Hide Display",
+                                desc = "If checked, the addon will not show this display and will make recommendations via SpellFlash only.",
+                                order = 12,
+                                width = "full",
+                                hidden = function () return SF == nil end,
+                            },
+
+                            blink = {
+                                type = "toggle",
+                                name = "Button Blink",
+                                desc = "If enabled, the whole action button will fade in and out.  The default is |cFFFF0000disabled|r.",
+                                order = 13,
+                                width = "full",
                                 hidden = function () return SF == nil end,
                             },
                         },
@@ -2406,6 +2484,93 @@ do
                                 order = 2,
                                 width = 1.49,
                                 disabled = function () return data.captions.enabled == false end,
+                            },
+
+                            position = {
+                                type = "group",
+                                inline = true,
+                                name = function( info ) rangeIcon( info ); return "Position" end,
+                                order = 3,
+                                args = {
+                                    anchor = {
+                                        type = "select",
+                                        name = 'Anchor Point',
+                                        order = 1,
+                                        width = 1,
+                                        values = {
+                                            TOP = 'Top',
+                                            BOTTOM = 'Bottom',
+                                        }
+                                    },
+
+                                    x = {
+                                        type = "range",
+                                        name = "X Offset",
+                                        order = 2,
+                                        width = 0.99,
+                                        step = 1,
+                                    },
+
+                                    y = {
+                                        type = "range",
+                                        name = "Y Offset",
+                                        order = 3,
+                                        width = 0.99,
+                                        step = 1,
+                                    },
+
+                                    break01 = {
+                                        type = "description",
+                                        name = " ",
+                                        order = 3.1,
+                                        width = "full",
+                                    },
+
+                                    align = {
+                                        type = "select",
+                                        name = "Alignment",
+                                        order = 4,
+                                        width = 1.49,
+                                        values = {
+                                            LEFT = "Left",
+                                            RIGHT = "Right",
+                                            CENTER = "Center"
+                                        },
+                                    },
+                                }
+                            },
+
+                            textStyle = {
+                                type = "group",
+                                inline = true,
+                                name = "Text",
+                                order = 4,
+                                args = tableCopy( fontElements ),
+                            },
+                        }
+                    },
+
+                    empowerment = {
+                        type = "group",
+                        name = NewFeature .. "Empowerment",
+                        desc = "Empowerment stages are shown with additional text placed on the recommendation icon.",
+                        order = 9.1,
+                        args = {
+                            enabled = {
+                                type = "toggle",
+                                name = "Enabled",
+                                desc = "If enabled, when the first ability shown is an empowered spell, the empowerment stage of the spell will be shown.",
+                                order = 1,
+                                width = 1.49,
+                            },
+
+                            queued = {
+                                type = "toggle",
+                                name = "Enabled for Queued Icons",
+                                desc = "If enabled, empowerment stage text will be shown for queued empowered abilities.",
+                                order = 2,
+                                width = 1.49,
+                                disabled = function () return data.empowerment.enabled == false end,
                             },
 
                             position = {
@@ -2859,11 +3024,10 @@ do
                     end,
                     set = function( info, val )
                         -- Set all fonts in all displays.
-                        for name, display in pairs( Hekili.DB.profile.displays ) do
-                            display.captions.font = val
-                            display.delays.font = val
-                            display.keybindings.font = val
-                            display.targets.font = val
+                        for _, display in pairs( Hekili.DB.profile.displays ) do
+                            for _, data in pairs( display ) do
+                                if type( data ) == "table" and data.font then data.font = val end
+                            end
                         end
                         QueueRebuildUI()
                     end,
@@ -2882,11 +3046,10 @@ do
                     end,
                     set = function( info, val )
                         -- Set all fonts in all displays.
-                        for name, display in pairs( Hekili.DB.profile.displays ) do
-                            display.captions.fontSize = val
-                            display.delays.fontSize = val
-                            display.keybindings.fontSize = val
-                            display.targets.fontSize = val
+                        for _, display in pairs( Hekili.DB.profile.displays ) do
+                            for _, data in pairs( display ) do
+                                if type( data ) == "table" and data.fontSize then data.fontSize = val end
+                            end
                         end
                         QueueRebuildUI()
                     end,
@@ -2911,11 +3074,10 @@ do
                     end,
                     set = function( info, val )
                         -- Set all fonts in all displays.
-                        for name, display in pairs( Hekili.DB.profile.displays ) do
-                            display.captions.fontStyle = val
-                            display.delays.fontStyle = val
-                            display.keybindings.fontStyle = val
-                            display.targets.fontStyle = val
+                        for _, display in pairs( Hekili.DB.profile.displays ) do
+                            for _, data in pairs( display ) do
+                                if type( data ) == "table" and data.fontStyle then data.fontStyle = val end
+                            end
                         end
                         QueueRebuildUI()
                     end,
@@ -2931,10 +3093,9 @@ do
                     end,
                     set = function( info, ... )
                         for name, display in pairs( Hekili.DB.profile.displays ) do
-                            display.captions.color = { ... }
-                            display.delays.color = { ... }
-                            display.keybindings.color = { ... }
-                            display.targets.color = { ... }
+                            for _, data in pairs( display ) do
+                                if type( data ) == "table" and data.color then data.color = { ... } end
+                            end
                         end
                         QueueRebuildUI()
                     end,
@@ -3464,6 +3625,9 @@ do
             end
         end
 
+        if lists.precombat:len() == 0 then lists.precombat = "actions+=/heart_essence,enabled=0" end
+        if lists.default  :len() == 0 then lists.default   = "actions+=/heart_essence,enabled=0" end
+
         local count = 0
         local output = {}
 
@@ -3471,7 +3635,7 @@ do
             local import, warnings = self:ParseActionList( list )
 
             if warnings then
-                AddWarning( "WARNING:  The import for '" .. name .. "' required some automated changes." )
+                AddWarning( "The import for '" .. name .. "' required some automated changes." )
 
                 for i, warning in ipairs( warnings ) do
                     AddWarning( warning )
@@ -3484,7 +3648,8 @@ do
                 output[ name ] = import
 
                 for i, entry in ipairs( import ) do
-                    entry.enabled = not ( entry.action == 'heroism' or entry.action == 'bloodlust' )
+                    if entry.enabled == nil then entry.enabled = not ( entry.action == 'heroism' or entry.action == 'bloodlust' )
+                    elseif entry.enabled == "0" then entry.enabled = false end
                 end
 
                 count = count + 1
@@ -3528,6 +3693,28 @@ local snapshots = {
     empty = {},
 
     selected = 0
+}
+
+
+local config = {
+    qsDisplay = 99999,
+
+    qsShowTypeGroup = false,
+    qsDisplayType = 99999,
+    qsTargetsAOE = 3,
+
+    displays = {}, -- auto-populated and recycled.
+    displayTypes = {
+        [1] = "Primary",
+        [2] = "AOE",
+        [3] = "Automatic",
+        [99999] = " "
+    },
+
+    expanded = {
+        cooldowns = true
+    },
+    adding = {},
 }
 
 
@@ -3816,7 +4003,7 @@ do
 
         for k, v in pairs( class.abilityList ) do
             local a = class.abilities[ k ]
-            if a and ( a.id > 0 or a.id < -100 ) and a.id ~= 61304 and not a.item then
+            if a and a.id and ( a.id > 0 or a.id < -100 ) and a.id ~= 61304 and not a.item then
                 abilities[ v ] = k
             end
         end
@@ -4312,7 +4499,7 @@ do
         wipe( tAbilities )
         for k, v in pairs( class.abilityList ) do
             local a = class.abilities[ k ]
-            if a and ( a.id > 0 or a.id < -100 ) and a.id ~= 61304 and not a.item then
+            if a and a.id and ( a.id > 0 or a.id < -100 ) and a.id ~= 61304 and not a.item then
                 if settings.abilities[ k ].toggle == section or a.toggle == section and settings.abilities[ k ].toggle == 'default' then
                     tAbilities[ k ] = class.abilityList[ k ] or v
                 end
@@ -4751,7 +4938,7 @@ do
                                     hidden = function()
                                         return self.DB.profile.specs[ id ].nameplates == false
                                     end,
-                                    min = 5,
+                                    min = 0,
                                     max = 100,
                                     step = 1,
                                     order = 2,
@@ -4816,17 +5003,17 @@ do
                                                 out = out .. "\nAlternative(s): "
                                             end
 
-                                            local n = 0
+                                            local n = 1
 
+                                            local name, _, tex = GetSpellInfo( spells.best )
+                                            out = format( out, UnitClass( "player" ), tex, name )
                                             for spell in pairs( spells ) do
-                                                if type( spell ) == "number" then
+                                                if type( spell ) == "number" and spell ~= spells.best then
                                                     n = n + 1
 
-                                                    local name, _, tex = GetSpellInfo( spell )
+                                                    name, _, tex = GetSpellInfo( spell )
 
-                                                    if n == 1 then
-                                                        out = string.format( out, UnitClass( "player" ), tex, name )
-                                                    elseif n == 2 and spells.count == 2 then
+                                                    if n == 2 and spells.count == 2 then
                                                         out = out .. "|T" .. tex .. ":0|t |cFFFFD100" .. name .. "|r."
                                                     elseif n ~= spells.count then
                                                         out = out .. "|T" .. tex .. ":0|t |cFFFFD100" .. name .. "|r, "
@@ -5000,12 +5187,12 @@ do
 
                         performance = {
                             type = "group",
-                            name = NewFeature .. " Performance",
+                            name = "Performance",
                             order = 10,
                             args = {
                                 throttleRefresh = {
                                     type = "toggle",
-                                    name = NewFeature .. " Throttle Updates",
+                                    name = "Throttle Updates",
                                     desc = "By default, the addon will update its recommendations immediately following |cffff0000critical|r combat events, within |cffffd1000.1|rs of routine combat events, or every |cffffd1000.5|rs.\n" ..
                                         "If |cffffd100Throttle Updates|r is checked, you can specify the |cffffd100Combat Refresh Interval|r and |cff00ff00Regular Refresh Interval|r for this specialization.",
                                     order = 1,
@@ -5021,7 +5208,7 @@ do
 
                                 regularRefresh = {
                                     type = "range",
-                                    name = NewFeature .. " Regular Refresh Interval",
+                                    name = "Regular Refresh Interval",
                                     desc = "In the absence of combat events, this addon will allow itself to update according to the specified interval.  Specifying a higher value may reduce CPU usage but will result in slower updates, though " ..
                                         "combat events will always force the addon to update more quickly.\n\nIf set to |cffffd1001.0|rs, the addon will not provide new updates until 1 second after its last update (unless forced by a combat event).\n\n" ..
                                         "Default value:  |cffffd1000.5|rs.",
@@ -5035,7 +5222,7 @@ do
 
                                 combatRefresh = {
                                     type = "range",
-                                    name = NewFeature .. " Combat Refresh Interval",
+                                    name = "Combat Refresh Interval",
                                     desc = "When routine combat events occur, the addon will update more frequently than its Regular Refresh Interval.  Specifying a higher value may reduce CPU usage but will result in slower updates, though " ..
                                         "critical combat events will always force the addon to update more quickly.\n\nIf set to |cffffd1000.2|rs, the addon will not provide new updates until 0.2 seconds after its last update (unless forced by a critical combat event).\n\n" ..
                                         "Default value:  |cffffd1000.1|rs.",
@@ -5056,7 +5243,7 @@ do
 
                                 throttleTime = {
                                     type = "toggle",
-                                    name = NewFeature .. " Throttle Time",
+                                    name = "Throttle Time",
                                     desc = "By default, when the addon needs to generate new recommendations, it will use up to |cffffd10010ms|r per frame or up to half a frame, whichever is lower.  If you get 60 FPS, that is 1 second / 60 frames, which equals equals 16.67ms.  " ..
                                         "Half of 16.67 is ~|cffffd1008ms|r, so the addon could use up to ~8ms per frame until it has successfully updated its recommendations for all visible displays.  If more time is needed, the work will be split across multiple frames.\n\n" ..
                                         "If you choose to |cffffd100Throttle Time|r, you can specify the |cffffd100Maximum Update Time|r the addon should use per frame.",
@@ -5066,7 +5253,7 @@ do
 
                                 maxTime = {
                                     type = "range",
-                                    name = NewFeature .. " Maximum Update Time (ms)",
+                                    name = "Maximum Update Time (ms)",
                                     desc = "Specify the maximum amount of time (in milliseconds) that the addon can use |cffffd100per frame|r when updating its recommendations.\n\n" ..
                                         "If set to |cffffd10010|r, then recommendations should not impact a 100 FPS system (1 second / 100 frames = 10ms).\n" ..
                                         "If set to |cffffd10016|r, then recommendations should not impact a 60 FPS system (1 second / 60 frames = 16.7ms).\n\n" ..
@@ -5150,7 +5337,7 @@ do
                         -- Test Option for Separate Cooldowns
                         noFeignedCooldown = {
                             type = "toggle",
-                            name = NewFeature .. " Cooldown: Show Separately - Use Actual Cooldowns",
+                            name = "Cooldown: Show Separately - Use Actual Cooldowns",
                             desc = "If checked, when using the Cooldown: Show Separately feature and Cooldowns are enabled, the addon will |cFFFF0000NOT|r pretend your " ..
                                 "cooldown abilities are fully on cooldown.  This may help resolve scenarios where abilities become desynchronized due to behavior differences " ..
                                 "between the Cooldowns display and your other displays.\n\n" ..
@@ -5794,6 +5981,9 @@ do
                         if p.builtIn then return '|cFF00B4FF' .. pack .. '|r' end
                         return pack
                     end,
+                    icon = function()
+                        return class.specs[ data.spec ].texture
+                    end,
                     childGroups = "tab",
                     order = 100 + count,
                     args = {
@@ -6104,14 +6294,12 @@ do
                                 },
 
                                 warnings = {
-                                    type = "description",
-                                    name = function ()
-                                        local p = rawget( Hekili.DB.profile.packs, pack )
-                                        return "|cFFFFD100Import Log|r\n" .. ( p.warnings or "" ) .. "\n\n"
-                                    end,
+                                    type = "input",
+                                    name = "Import Log",
                                     order = 5,
-                                    fontSize = "medium",
+                                    -- fontSize = "medium",
                                     width = "full",
+                                    multiline = 20,
                                     hidden = function ()
                                         local p = rawget( Hekili.DB.profile.packs, pack )
                                         return not p.warnings or p.warnings == ""
@@ -6307,6 +6495,44 @@ do
                                                         desc = desc .. ", if |cffffd100" .. entry.criteria .. "|r"
                                                     end
 
+                                                elseif entry.action == "cancel_buff" then
+                                                    if not entry.buff_name then
+                                                        desc = "|cff00ccff(not set)|r"
+                                                        warning = true
+                                                    else
+                                                        local a = class.auras[ entry.buff_name ]
+
+                                                        if a then
+                                                            desc = "|cff00ccff" .. a.name .. "|r"
+                                                        else
+                                                            desc = "|cff00ccff(not found)|r"
+                                                            warning = true
+                                                        end
+                                                    end
+
+                                                    if cLen and cLen > 0 then
+                                                        desc = desc .. ", if |cffffd100" .. entry.criteria .. "|r"
+                                                    end
+
+                                                elseif entry.action == "cancel_action" then
+                                                    if not entry.action_name then
+                                                        desc = "|cff00ccff(not set)|r"
+                                                        warning = true
+                                                    else
+                                                        local a = class.abilities[ entry.action_name ]
+
+                                                        if a then
+                                                            desc = "|cff00ccff" .. a.name .. "|r"
+                                                        else
+                                                            desc = "|cff00ccff(not found)|r"
+                                                            warning = true
+                                                        end
+                                                    end
+
+                                                    if cLen and cLen > 0 then
+                                                        desc = desc .. ", if |cffffd100" .. entry.criteria .. "|r"
+                                                    end
+
                                                 elseif cLen and cLen > 0 then
                                                     desc = "|cffffd100" .. entry.criteria .. "|r"
 
@@ -6321,6 +6547,10 @@ do
 
                                                 if not color then
                                                     color = warning and "|cFFFF0000" or "|cFFFFD100"
+                                                end
+
+                                                if entry.empower_to then
+                                                    action = action .. " (" .. entry.empower_to .. ")"
                                                 end
 
                                                 if desc then
@@ -6509,27 +6739,6 @@ do
                                                     width = 1.5,
                                                 },
 
-                                                caption = {
-                                                    type = "input",
-                                                    name = "Caption",
-                                                    desc = "Captions are |cFFFF0000very|r short descriptions that can appear on the icon of a recommended ability.\n\n" ..
-                                                        "This can be useful for understanding why an ability was recommended at a particular time.\n\n" ..
-                                                        "Requires Captions to be Enabled on each display.",
-                                                    order = 3.201,
-                                                    width = 1.5,
-                                                    validate = function( info, val )
-                                                        val = val:trim()
-                                                        if val:len() > 20 then return "Captions should be 20 characters or less." end
-                                                        return true
-                                                    end,
-                                                    hidden = function()
-                                                        local e = GetListEntry( pack )
-                                                        local ability = e.action and class.abilities[ e.action ]
-
-                                                        return not ability or ( ability.id < 0 and ability.id > -10 )
-                                                    end,
-                                                },
-
                                                 list_name = {
                                                     type = "select",
                                                     name = "Action List",
@@ -6552,7 +6761,7 @@ do
                                                         return v
                                                     end,
                                                     order = 3.2,
-                                                    width = 1.2,
+                                                    width = 1.5,
                                                     hidden = function ()
                                                         local e = GetListEntry( pack )
                                                         return not ( e.action == "call_action_list" or e.action == "run_action_list" )
@@ -6572,6 +6781,19 @@ do
                                                     end,
                                                 },
 
+                                                action_name = {
+                                                    type = "select",
+                                                    name = "Action Name",
+                                                    order = 3.2,
+                                                    width = 1.5,
+                                                    desc = "Specify the action to cancel; the result is that the addon will allow the channel to be removed immediately.",
+                                                    values = class.abilityList,
+                                                    hidden = function ()
+                                                        local e = GetListEntry( pack )
+                                                        return e.action ~= "cancel_action"
+                                                    end,
+                                                },
+
                                                 potion = {
                                                     type = "select",
                                                     name = "Potion",
@@ -6582,14 +6804,14 @@ do
                                                         local e = GetListEntry( pack )
                                                         return e.action ~= "potion"
                                                     end,
-                                                    width = 1.2,
+                                                    width = 1.5,
                                                 },
 
                                                 sec = {
                                                     type = "input",
                                                     name = "Seconds",
                                                     order = 3.2,
-                                                    width = 1.2,
+                                                    width = 1.5,
                                                     hidden = function ()
                                                         local e = GetListEntry( pack )
                                                         return e.action ~= "wait"
@@ -6600,7 +6822,7 @@ do
                                                     type = "toggle",
                                                     name = "Max Energy",
                                                     order = 3.2,
-                                                    width = 1.2,
+                                                    width = 1.5,
                                                     desc = "When checked, this entry will require that the player have enough energy to trigger Ferocious Bite's full damage bonus.",
                                                     hidden = function ()
                                                         local e = GetListEntry( pack )
@@ -6612,21 +6834,48 @@ do
                                                     type = "select",
                                                     name = "Empower To",
                                                     order = 3.2,
-                                                    width = 1.2,
+                                                    width = 1.5,
                                                     desc = "For Empowered spells, specify the empowerment level for this usage (default is max).",
                                                     values = {
                                                         [1] = "I",
                                                         [2] = "II",
                                                         [3] = "III",
                                                         [4] = "IV",
-                                                        maximum = "Max",
-                                                        minimum = "Min"
+                                                        maximum = "Max"
                                                     },
                                                     hidden = function ()
                                                         local e = GetListEntry( pack )
                                                         local action = e.action
                                                         local ability = action and class.abilities[ action ]
                                                         return not ( ability and ability.empowered )
+                                                    end,
+                                                },
+
+                                                lb00 = {
+                                                    type = "description",
+                                                    name = "",
+                                                    order = 3.201,
+                                                    width = "full",
+                                                },
+
+                                                caption = {
+                                                    type = "input",
+                                                    name = "Caption",
+                                                    desc = "Captions are |cFFFF0000very|r short descriptions that can appear on the icon of a recommended ability.\n\n" ..
+                                                        "This can be useful for understanding why an ability was recommended at a particular time.\n\n" ..
+                                                        "Requires Captions to be Enabled on each display.",
+                                                    order = 3.202,
+                                                    width = 1.5,
+                                                    validate = function( info, val )
+                                                        val = val:trim()
+                                                        if val:len() > 20 then return "Captions should be 20 characters or less." end
+                                                        return true
+                                                    end,
+                                                    hidden = function()
+                                                        local e = GetListEntry( pack )
+                                                        local ability = e.action and class.abilities[ e.action ]
+
+                                                        return not ability or ( ability.id < 0 and ability.id > -10 )
                                                     end,
                                                 },
 
@@ -7348,7 +7597,7 @@ do
 
                         separate = {
                             type = "toggle",
-                            name = NewFeature .. " Show Separately",
+                            name = "Show Separately",
                             desc = "If checked, cooldown abilities will be shown separately in your Cooldowns Display.\n\n" ..
                                 "This is an experimental feature and may not work well for some specializations.",
                             order = 3,
@@ -7765,9 +8014,7 @@ do
     local indent = ""
     local output = {}
 
-    local function key( s )
-        return ( lower( s or '' ):gsub( "[^a-z0-9_ ]", "" ):gsub( "%s", "_" ) )
-    end
+    local key = formatKey
 
     local function increaseIndent()
         indent = indent .. "    "
@@ -7889,8 +8136,7 @@ do
                 local a = abilities[ token ] or {}
 
                 -- a.key = token
-                a.desc = GetSpellDescription( spellID )
-                if a.desc then a.desc = a.desc:gsub( "\n", " " ):gsub( "\r", " " ):gsub( " ", " " ) end
+                a.desc = GetSpellDescription( spellID ):gsub( "\r", " " ):gsub( "\n", " " ):gsub( "%s%s+", " " )
                 a.id = spellID
                 a.spend = cost
                 a.spendType = resource
@@ -7980,6 +8226,13 @@ do
                 local nodes = C_Traits.GetTreeNodes( treeID )
                 for _, nodeID in ipairs( nodes ) do
                     local node = C_Traits.GetNodeInfo( configID, nodeID )
+
+                    local isSpec = false
+                    for _, cond in ipairs( node.conditionIDs ) do
+                        local c = C_Traits.GetConditionInfo( configID, cond )
+                        if c.specSetID then isSpec = true; break end
+                    end
+
                     if node.maxRanks > 0 then
                         for _, entryID in ipairs( node.entryIDs ) do
                             local entryInfo = C_Traits.GetEntryInfo( configID, entryID )
@@ -7996,7 +8249,7 @@ do
 
                             local token = key( name )
 
-                            insert( talents, { name = token, talent = nodeID, definition = entryInfo.definitionID, spell = spellID, ranks = node.maxRanks } )
+                            insert( talents, { name = token, talent = nodeID, specialization = isSpec, definition = entryInfo.definitionID, spell = spellID, ranks = node.maxRanks } )
 
                             if not IsPassiveSpell( spellID ) then
                                 EmbedSpellData( spellID, token, true )
@@ -8181,8 +8434,12 @@ do
                             append( "-- Talents" )
                             append( "spec:RegisterTalents( {" )
                             increaseIndent()
+                            append( "-- " .. playerClass )
 
-                            table.sort( talents, function( a, b ) return a.name < b.name end )
+                            table.sort( talents, function( a, b )
+                                if a.specialization ~= b.specialization then return b.specialization end
+                                return a.name < b.name
+                            end )
 
                             local max_talent_length = 10
 
@@ -8193,8 +8450,15 @@ do
 
                             local formatStr = "%-" .. max_talent_length .. "s = { %5d, %-6d, %d }, -- %s"
 
+                            local classes = true
+
                             for i, tal in ipairs( talents ) do
-                                local line = format( formatStr, tal.name, tal.talent, tal.spell, tal.ranks or 0, GetSpellDescription( tal.spell ):gsub( "\n", " " ):gsub( "\r", " " ):gsub( "%s+", " " ) )
+                                if classes and tal.specialization then
+                                    classes = false
+                                    append( "" )
+                                    append( "-- " .. playerSpec )
+                                end
+                                local line = format( formatStr, tal.name, tal.talent, tal.spell, tal.ranks or 0, GetSpellDescription( tal.spell ):gsub( "\n", " " ):gsub( "\r", " " ):gsub( "%s%s+", " " ) )
                                 append( line )
                             end
 
@@ -8214,7 +8478,7 @@ do
                             local formatPvp = "%-" .. max_pvptalent_length .. "s = %-4d, -- (%d) %s"
 
                             for i, tal in ipairs( pvptalents ) do
-                                append( format( formatPvp, tal.name, tal.talent, tal.spell, GetSpellDescription( tal.spell ):gsub( "\n", " " ):gsub( "\r", " " ):gsub( "%s+", " " ) ) )
+                                append( format( formatPvp, tal.name, tal.talent, tal.spell, GetSpellDescription( tal.spell ):gsub( "\n", " " ):gsub( "\r", " " ):gsub( "%s%s+", " " ) ) )
                             end
                             decreaseIndent()
                             append( "} )\n\n" )
@@ -8224,11 +8488,7 @@ do
                             increaseIndent()
 
                             for k, aura in orderedPairs( auras ) do
-                                local desc = aura.id and GetSpellDescription( aura.id )
-                                if desc then
-                                    desc = desc:gsub( "\n", " " ):gsub( "\r", " " ):gsub( "%s+", " " )
-                                    append( "-- " .. desc )
-                                end
+                                if aura.desc then append( "-- " .. aura.desc ) end
                                 append( k .. " = {" )
                                 increaseIndent()
                                 append( "id = " .. aura.id .. "," )
@@ -8257,8 +8517,8 @@ do
 
                             local count = 1
                             for k, a in orderedPairs( abilities ) do
-                                if count > 1 then append( "\n" ) end
                                 count = count + 1
+                                if a.desc then append( "-- " .. a.desc ) end
                                 append( k .. " = {" )
                                 increaseIndent()
                                 appendAttr( a, "id" )
@@ -8335,14 +8595,12 @@ do
                                 if not aggregate[v.name] then aggregate[v.name] = {} end
                                 aggregate[v.name].id = v.spell
                                 aggregate[v.name].pvptalent = true
-                                print( k, v.spell, v.name, v.talent )
-                                for x,y in pairs( v ) do print( x, y ) end
                             end
 
                             -- append( select( 2, GetSpecializationInfo(GetSpecialization())) .. "\nKey\tID\tIs Aura\tIs Ability\tIs Talent\tIs PvP" )
                             for k,v in orderedPairs( aggregate ) do
                                 if v.id then
-                                    append( k .. "\t" .. v.id .. "\t" .. ( v.aura and "Yes" or "No" ) .. "\t" .. ( v.ability and "Yes" or "No" ) .. "\t" .. ( v.talent and "Yes" or "No" ) .. "\t" .. ( v.pvptalent and "Yes" or "No" ) )
+                                    append( k .. "\t" .. v.id .. "\t" .. ( v.aura and "Yes" or "No" ) .. "\t" .. ( v.ability and "Yes" or "No" ) .. "\t" .. ( v.talent and "Yes" or "No" ) .. "\t" .. ( v.pvptalent and "Yes" or "No" ) .. "\t" .. ( v.desc or GetSpellDescription( v.id ) or "" ):gsub( "\r", " " ):gsub( "\n", " " ):gsub( "%s%s+", " " ) )
                                 end
                             end
                         end
@@ -8421,10 +8679,11 @@ function Hekili:GenerateProfile()
 
     local spec = s.spec.key
 
-    local talents
+    local talents = Hekili.CurrentTalentExport
+
     for k, v in orderedPairs( s.talent ) do
         if v.enabled then
-            if talents then talents = format( "%s\n    %s", talents, k )
+            if talents then talents = format( "%s\n    %s = %d/%d", talents, k, v.rank, v.max )
             else talents = k end
         end
     end
@@ -8510,10 +8769,11 @@ function Hekili:GenerateProfile()
         end
     end
 
-    local toggles = ""
+    local toggles
     for k, v in orderedPairs( self.DB.profile.toggles ) do
         if type( v ) == "table" and rawget( v, "value" ) ~= nil then
-            toggles = format( "%s%s    %s = %s %s", toggles, toggles:len() > 0 and "\n" or "", k, tostring( v.value ), ( v.separate and "[separate]" or ( k ~= "cooldowns" and v.override and self.DB.profile.toggles.cooldowns.value and "[overridden]" ) or "" ) )
+            if toggles then toggles = format( "%s\n    %s = %s %s", toggles, k, tostring( v.value ), ( v.separate and "[separate]" or ( k ~= "cooldowns" and v.override and self.DB.profile.toggles.cooldowns.value and "[overridden]" ) or "" ) )
+            else toggles = format( "%s = %s %s", k, tostring( v.value ), ( v.separate and "[separate]" or ( k ~= "cooldowns" and v.override and self.DB.profile.toggles.cooldowns.value and "[overridden]" ) or "" ) ) end
         end
     end
 
@@ -8541,6 +8801,14 @@ function Hekili:GenerateProfile()
     end
 
 
+    local warnings
+
+    for i, err in ipairs( Hekili.ErrorKeys ) do
+        if warnings then warnings = format( "%s\n[#%d] %s", warnings, i, err:gsub( "\n\n", "\n" ) )
+        else warnings = format( "[#%d] %s", i, err:gsub( "\n\n", "\n" ) ) end
+    end
+
+
     return format( "build: %s\n" ..
         "level: %d (%d)\n" ..
         "class: %s\n" ..
@@ -8556,7 +8824,8 @@ function Hekili:GenerateProfile()
         "itemIDs: %s\n\n" ..
         "settings: %s\n\n" ..
         "toggles: %s\n\n" ..
-        "keybinds: %s\n\n",
+        "keybinds: %s\n\n" ..
+        "warnings: %s\n\n",
         Hekili.Version or "no info",
         UnitLevel( 'player' ) or 0, UnitEffectiveLevel( 'player' ) or 0,
         class.file or "NONE",
@@ -8572,9 +8841,9 @@ function Hekili:GenerateProfile()
         items or "none",
         settings or "none",
         toggles or "none",
-        keybinds or "none" )
+        keybinds or "none",
+        warnings or "none" )
 end
-
 
 
 do
@@ -9641,6 +9910,96 @@ do
                 elseif ( "move" ):match( "^" .. args[1] ) and Hekili.Config then
                     ns.StopConfiguration()
                 end
+
+            elseif ("stress" ):match( "^" .. args[1] ) then
+                if InCombatLockdown() then
+                    Hekili:Print( "Unable to stress test abilities and auras while in combat." )
+                    return
+                end
+
+                local precount = 0
+                for k, v in pairs( self.ErrorDB ) do
+                    precount = precount + v.n
+                end
+
+                local results, count, specs = "", 0, {}
+                for i in ipairs( class.specs ) do
+                    if i ~= 0 then insert( specs, i ) end
+                end
+                sort( specs )
+
+                for i, specID in ipairs( specs ) do
+                    local spec = class.specs[ specID ]
+                    results = format( "%sSpecialization: %s\n", results, spec.name )
+
+                    for key, aura in ipairs( spec.auras ) do
+                        local keyNamed = false
+                        -- Avoid duplicates.
+                        if aura.key == key then
+                            for k, v in pairs( aura ) do
+                                if type( v ) == "function" then
+                                    local ok, val = pcall( v )
+                                    if not ok then
+                                        if not keyNamed then results = format( "%s - Aura: %s\n", results, k ); keyNamed = true end
+                                        results = format( "%s    - %s = %s\n", results, tostring( val ) )
+                                        count = count + 1
+                                    end
+                                end
+                            end
+                            for k, v in pairs( aura.funcs ) do
+                                if type( v ) == "function" then
+                                    local ok, val = pcall( v )
+                                    if not ok then
+                                        if not keyNamed then results = format( "%s - Aura: %s\n", results, k ); keyNamed = true end
+                                        results = format( "%s    - %s = %s\n", results, tostring( val ) )
+                                        count = count + 1
+                                    end
+                                end
+                            end
+                        end
+                    end
+
+                    for key, ability in ipairs( spec.abilities ) do
+                        local keyNamed = false
+                        -- Avoid duplicates.
+                        if ability.key == key then
+                            for k, v in pairs( ability ) do
+                                if type( v ) == "function" then
+                                    local ok, val = pcall( v )
+                                    if not ok then
+                                        if not keyNamed then results = format( "%s - Ability: %s\n", results, k ); keyNamed = true end
+                                        results = format( "%s    - %s = %s\n", results, tostring( val ) )
+                                        count = count + 1
+                                    end
+                                end
+                            end
+                            for k, v in pairs( ability.funcs ) do
+                                if type( v ) == "function" then
+                                    local ok, val = pcall( v )
+                                    if not ok then
+                                        if not keyNamed then results = format( "%s - Ability: %s\n", results, k ); keyNamed = true end
+                                        results = format( "%s    - %s = %s\n", results, tostring( val ) )
+                                        count = count + 1
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+
+                local postcount = 0
+                for k, v in pairs( self.ErrorDB ) do
+                    postcount = postcount + v.n
+                end
+
+                if count > 0 then
+                    Hekili:Print( results )
+                    Hekili:Error( results )
+                end
+
+                if postcount > precount then Hekili:Print( "New warnings were loaded in /hekili > Warnings." ) end
+                if count == 0 and postcount == precount then Hekili:Print( "Stress test completed; no issues found." ) end
+
             elseif ( "lock" ):match( "^" .. args[1] ) then
                 if Hekili.Config then
                     ns.StopConfiguration()
@@ -9874,347 +10233,201 @@ end
 -- End Import/Export Strings
 
 
+local Sanitize
+
 -- Begin APL Parsing
-
-local ignore_actions = {
-    snapshot_stats = 1,
-    flask = 1,
-    food = 1,
-    augmentation = 1
-}
-
-
-local function Sanitize( segment, i, line, warnings )
-    if i == nil then return end
-
-    local operators = {
-        [">"] = true,
-        ["<"] = true,
-        ["="] = true,
-        ["~"] = true,
-        ["+"] = true,
-        ["-"] = true,
-        ["%%"] = true,
-        ["*"] = true
+do
+    local ignore_actions = {
+        snapshot_stats = 1,
+        flask = 1,
+        food = 1,
+        augmentation = 1
     }
 
-    local maths = {
-        ['+'] = true,
-        ['-'] = true,
-        ['*'] = true,
-        ['%%'] = true
+    local expressions = {
+        { "stealthed"                                   , "stealthed.rogue"                 },
+        { "cooldown"                                    , "action_cooldown"                 },
+        { "covenant%.([%w_]+)%.enabled"                 , "covenant.%1"                     },
+        { "talent%.([%w_]+)"                            , "talent.%1.enabled"               },
+        { "legendary%.([%w_]+)"                         , "legendary.%1.enabled"            },
+        { "runeforge%.([%w_]+)"                         , "runeforge.%1.enabled"            },
+        { "rune_word%.([%w_]+)"                         , "buff.rune_word_%1.up"            },
+        { "rune_word%.([%w_]+)%.enabled"                , "buff.rune_word_%1.up"            },
+        { "conduit%.([%w_]+)"                           , "conduit.%1.enabled"              },
+        { "soulbind%.([%w_]+)"                          , "soulbind.%1.enabled"             },
+        { "pet.[%w_]+%.([%w_]+)%.([%w%._]+)"            , "%1.%2"                           },
+        { "essence%.([%w_]+).rank(%d)"                  , "essence.%1.rank>=%2"             },
+        { "target%.1%.time_to_die"                      , "time_to_die"                     },
+        { "time_to_pct_(%d+)%.remains"                  , "time_to_pct_%1"                  },
+        { "trinket%.(%d)%.([%w%._]+)"                   , "trinket.t%1.%2"                  },
+        { "trinket%.([%w_]+)%.cooldown"                 , "trinket.%1.cooldown.duration"    },
+        { "trinket%.([%w_]+)%.proc%.([%w_]+)%.duration" , "trinket.%1.buff_duration"        },
+        { "trinket%.([%w_]+)%.proc%.([%w_]+)%.[%w_]+"   , "trinket.%1.has_use_buff"         },
+        { "trinket%.([%w_]+)%.has_buff%.([%w_]+)"       , "trinket.%1.has_use_buff"         },
+        { "min:([%w_]+)"                                , "%1"                              },
+        { "position_back"                               , "true"                            },
+        { "max:(%w_]+)"                                 , "%1"                              },
+        { "incanters_flow_time_to%.(%d+)"               , "incanters_flow_time_to_%.%1.any" },
+        { "exsanguinated%.([%w_]+)"                     , "debuff.%1.exsanguinated"         },
+        { "time_to_sht%.(%d+)%.plus"                    , "time_to_sht_plus.%1"             },
+        { "target"                                      , "target.unit"                     },
+        { "player"                                      , "player.unit"                     },
+        { "gcd"                                         , "gcd.max"                         },
+
+        { "equipped%.(%d+)", nil, function( item )
+            item = tonumber( item )
+
+            if not item then return "equipped.none" end
+
+            if class.abilities[ item ] then
+                return "equipped." .. ( class.abilities[ item ].key or "none" )
+            end
+
+            return "equipped[" .. item .. "]"
+        end },
+
+        { "trinket%.([%w_]+)%.cooldown%.([%w_]+)", nil, function( trinket, token )
+            if class.abilities[ trinket ] then
+                return "cooldown." .. trinket .. "." .. token
+            end
+
+            return "trinket." .. trinket .. ".cooldown." .. token
+        end,  },
+
     }
 
-    for token in i:gmatch( "stealthed" ) do
-        while( i:find(token) ) do
-            local strpos, strend = i:find(token)
+    local operations = {
+        { "=="  , "="  },
+        { "%%"  , "/"  },
+        { "//"  , "%%" }
+    }
 
-            local pre = strpos > 1 and i:sub( strpos - 1, strpos - 1 ) or ''
-            local post = strend < i:len() and i:sub( strend + 1, strend + 1 ) or ''
-            local start = strpos > 1 and i:sub( 1, strpos - 1 ) or ''
-            local finish = strend < i:len() and i:sub( strend + 1 ) or ''
 
-            if pre ~= '.' and pre ~= '_' and not pre:match('%a') and post ~= '.' and post ~= '_' and not post:match('%a') then
-                i = start .. '\a' .. finish
-            else
-                i = start .. '\v' .. finish
-            end
-
-        end
-
-        i = i:gsub( '\v', token )
-        i = i:gsub( '\a', token..'.rogue' )
+    function Hekili:AddSanitizeExpr( from, to, func )
+        insert( expressions, { from, to, func } )
     end
 
-    for token in i:gmatch( "cooldown" ) do
-        while( i:find(token) ) do
-            local strpos, strend = i:find(token)
-
-            local pre = strpos > 1 and i:sub( strpos - 1, strpos - 1 ) or ''
-            local post = strend < i:len() and i:sub( strend + 1, strend + 1 ) or ''
-            local start = strpos > 1 and i:sub( 1, strpos - 1 ) or ''
-            local finish = strend < i:len() and i:sub( strend + 1 ) or ''
-
-            if pre ~= '.' and pre ~= '_' and not pre:match('%a') and post ~= '.' and post ~= '_' and not post:match('%a') then
-                i = start .. '\a' .. finish
-            else
-                i = start .. '\v' .. finish
-            end
-        end
-
-        i = i:gsub( '\v', token )
-        i = i:gsub( '\a', 'action_cooldown' )
+    function Hekili:AddSanitizeOper( from, to )
+        insert( operations, { from, to } )
     end
 
-    for token in i:gmatch( "equipped%.[0-9]+" ) do
-        local itemID = tonumber( token:match( "([0-9]+)" ) )
-        local itemName = GetItemInfo( itemID )
-        local itemKey = formatKey( itemName )
+    Sanitize = function( segment, i, line, warnings )
+        if i == nil then return end
 
-        if itemKey and itemKey ~= '' then
-            i = i:gsub( tostring( itemID ), itemKey )
-        end
+        local operators = {
+            [">"] = true,
+            ["<"] = true,
+            ["="] = true,
+            ["~"] = true,
+            ["+"] = true,
+            ["-"] = true,
+            ["%%"] = true,
+            ["*"] = true
+        }
 
-    end
+        local maths = {
+            ['+'] = true,
+            ['-'] = true,
+            ['*'] = true,
+            ['%%'] = true
+        }
 
-    local times = 0
+        local times = 0
+        local output, pre = "", ""
 
-    i, times = i:gsub( "==", "=" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Corrected equality check from '==' to '=' (" .. times .. "x)." )
-    end
+        for op1, token, op2 in gmatch( i, "([^%w%._ ]*)([%w%._]+)([^%w%._ ]*)" ) do
+            --[[ if op1 and op1:len() > 0 then
+                pre = op1
+                for _, subs in ipairs( operations ) do
+                    op1, times = op1:gsub( subs[1], subs[2] )
 
-    i, times = i:gsub( "([^%%])[ ]*%%[ ]*([^%%])", "%1 / %2" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted SimC syntax % to Lua division operator (/) (" .. times .. "x)." )
-    end
+                    if times > 0 then
+                        insert( warnings, "Line " .. line .. ": Converted '" .. pre .. "' to '" .. op1 .. "' (" ..times .. "x)." )
+                    end
+                end
+            end ]]
 
-    i, times = i:gsub( "%%%%", "%%" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted SimC syntax %% to Lua modulus operator (%) (" .. times .. "x)." )
-    end
+            if token and token:len() > 0 then
+                pre = token
+                for _, subs in ipairs( expressions ) do
+                    if subs[2] then
+                        times = 0
+                        local s1, s2, s3, s4, s5 = token:match( "^" .. subs[1] .. "$" )
+                        if s1 then
+                            token = subs[2]
+                            token, times = token:gsub( "%%1", s1 )
 
-    i, times = i:gsub( "covenant%.([%w_]+)%.enabled", "covenant.%1" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'covenant.X.enabled' to 'covenant.X' (" .. times .. "x)." )
-    end
+                            if s2 then token = token:gsub( "%%2", s2 ) end
+                            if s3 then token = token:gsub( "%%3", s3 ) end
+                            if s4 then token = token:gsub( "%%4", s4 ) end
+                            if s5 then token = token:gsub( "%%5", s5 ) end
 
-    i, times = i:gsub( "talent%.([%w_]+)([%+%-%*%%/%&%|= ()<>])", "talent.%1.enabled%2" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'talent.X' to 'talent.X.enabled' (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "talent%.([%w_]+)$", "talent.%1.enabled" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'talent.X' to 'talent.X.enabled' at EOL (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "legendary%.([%w_]+)([%+%-%*%%/%&%|= ()<>])", "legendary.%1.enabled%2" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'legendary.X' to 'legendary.X.enabled' (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "legendary%.([%w_]+)$", "legendary.%1.enabled" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'legendary.X' to 'legendary.X.enabled' at EOL (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "([^%.])runeforge%.([%w_]+)([%+%-%*%%/=%&%| ()<>])", "%1runeforge.%2.enabled%3" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'runeforge.X' to 'runeforge.X.enabled' (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "([^%.])runeforge%.([%w_]+)$", "%1runeforge.%2.enabled" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'runeforge.X' to 'runeforge.X.enabled' at EOL (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "^runeforge%.([%w_]+)([%+%-%*%%/%&%|= ()<>)])", "runeforge.%1.enabled%2" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'runeforge.X' to 'runeforge.X.enabled' (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "^runeforge%.([%w_]+)$", "runeforge.%1.enabled" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'runeforge.X' to 'runeforge.X.enabled' at EOL (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "rune_word%.([%w_]+)([%+%-%*%%/%&%|= ()<>])", "buff.rune_word_%1.up%2" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'rune_word.X' to 'buff.rune_word_X.up' (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "rune_word%.([%w_]+)$", "buff.rune_word_%1.up" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'rune_word.X' to 'buff.rune_word_X.up' at EOL (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "rune_word%.([%w_]+)%.enabled([%+%-%*%%/%&%|= ()<>])", "buff.rune_word_%1.up%2" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'rune_word.X.enabled' to 'buff.rune_word_X.up' (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "rune_word%.([%w_]+)%.enabled$", "buff.rune_word_%1.up" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'rune_word.X.enabled' to 'buff.rune_word_X.up' at EOL (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "([^a-z0-9_])conduit%.([%w_]+)([%+%-%*%%/&|= ()<>)])", "%1conduit.%2.enabled%3" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'conduit.X' to 'conduit.X.enabled' (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "([^a-z0-9_])conduit%.([%w_]+)$", "%1conduit.%2.enabled" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'conduit.X' to 'conduit.X.enabled' at EOL (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "soulbind%.([%w_]+)([%+%-%*%%/&|= ()<>)])", "soulbind.%1.enabled%2" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'soulbind.X' to 'soulbind.X.enabled' (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "soulbind%.([%w_]+)$", "soulbind.%1.enabled" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'soulbind.X' to 'soulbind.X.enabled' at EOL (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "pet%.[%w_]+%.([%w_]+)%.", "%1." )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'pet.X.Y...' to 'Y...' (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "(essence%.[%w_]+)%.([%w_]+)%.rank(%d)", "(%1.%2&%1.rank>=%3)" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'essence.X.[major|minor].rank#' to '(essence.X.[major|minor]&essence.X.rank>=#)' (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "pet%.[%w_]+%.[%w_]+%.([%w_]+)%.", "%1." )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'pet.X.Y.Z...' to 'Z...' (" .. times .. "x)." )
-    end
-
-    -- target.1.time_to_die is basically the end of an encounter.
-    i, times = i:gsub( "target%.1%.time_to_die", "time_to_die" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'target.1.time_to_die' to 'time_to_die' (" .. times .."x)." )
-    end
-
-    -- target.time_to_pct_XX.remains is redundant, Monks.
-    i, times = i:gsub( "time_to_pct_(%d+)%.remains", "time_to_pct_%1" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'time_to_pct_XX.remains' to 'time_to_pct_XX' (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "trinket%.1%.", "trinket.t1." )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'trinket.1.X' to 'trinket.t1.X' (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "trinket%.2%.", "trinket.t2." )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'trinket.2.X' to 'trinket.t2.X' (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "trinket%.([%w_][%w_][%w_]+)%.cooldown", "cooldown.%1" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'trinket.abc.cooldown' to 'cooldown.abc' (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "%.(proc%.any)%.", ".has_buff." )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'proc.any' to 'has_buff' (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "min:[a-z0-9_%.]+(,?$?)", "%1" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Removed min:X check (not available in emulation) (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "([%|%&]position_back)", "" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Removed position_back check (not available in emulation) (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "(position_back[%|%&]?)", "" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Removed position_back check (not available in emulation) (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "max:[a-z0-9_%.]+(,?$?)", "%1" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Removed max:X check (not available in emulation) (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "(incanters_flow_time_to%.%d+)(^%.)", "%1.any%2")
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted directionless 'incanters_flow_time_to.X' to 'incanters_flow_time_to.X.any' (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "exsanguinated%.([a-z0-9_]+)", "debuff.%1.exsanguinated" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'exsanguinated.X' to 'debuff.X.exsanguinated' (" .. times .. "x).")
-    end
-
-    i, times = i:gsub( "time_to_sht%.(%d+)%.plus", "time_to_sht_plus.%1" )
-    if times > 0 then
-        insert( warnings, "Line " .. line .. ": Converted 'time_to_sht.X.plus' to 'time_to_sht_plus.X' (" .. times .. "x).")
-    end
-
-    if segment == 'c' then
-        for token in i:gmatch( "target" ) do
-            local times = 0
-            while (i:find(token)) do
-                local strpos, strend = i:find(token)
-
-                local pre = i:sub( strpos - 1, strpos - 1 )
-                local post = i:sub( strend + 1, strend + 1 )
-
-                if pre ~= '_' and post ~= '.' then
-                    i = i:sub( 1, strpos - 1 ) .. '\v.unit' .. i:sub( strend + 1 )
-                    times = times + 1
-                else
-                    i = i:sub( 1, strpos - 1 ) .. '\v' .. i:sub( strend + 1 )
+                            if times > 0 then
+                                insert( warnings, "Line " .. line .. ": Converted '" .. pre .. "' to '" .. token .. "' (" .. times .. "x)." )
+                            end
+                        end
+                    elseif subs[3] then
+                        local val, v2, v3, v4, v5 = token:match( "^" .. subs[1] .. "$" )
+                        if val ~= nil then
+                            token = subs[3]( val, v2, v3, v4, v5 )
+                            insert( warnings, "Line " .. line .. ": Converted '" .. pre .. "' to '" .. token .. "'." )
+                        end
+                    end
                 end
             end
 
+            --[[
+            if op2 and op2:len() > 0 then
+                for _, subs in ipairs( operations ) do
+                    op2, times = op2:gsub( subs[1], subs[2] )
+                    if times > 0 then
+                        insert( warnings, "Line " .. line .. ": Converted '" .. pre .. "' to '" .. op2 .. "' (" ..times .. "x)." )
+                    end
+                end
+            end ]]
+
+            output = output .. ( op1 or "" ) .. ( token or "" ) .. ( op2 or "" )
+        end
+
+        local ops_swapped = false
+        pre = output
+
+        -- Replace operators after its been stitched back together.
+        for _, subs in ipairs( operations ) do
+            output, times = output:gsub( subs[1], subs[2] )
             if times > 0 then
-                insert( warnings, "Line " .. line .. ": Converted non-specific 'target' to 'target.unit' (" .. times .. "x)." )
-            end
-            i = i:gsub( '\v', token )
-        end
-    end
-
-
-    for token in i:gmatch( "player" ) do
-        local times = 0
-        while (i:find(token)) do
-            local strpos, strend = i:find(token)
-
-            local pre = i:sub( strpos - 1, strpos - 1 )
-            local post = i:sub( strend + 1, strend + 1 )
-
-            if pre ~= '_' and post ~= '.' then
-                i = i:sub( 1, strpos - 1 ) .. '\v.unit' .. i:sub( strend + 1 )
-                times = times + 1
-            else
-                i = i:sub( 1, strpos - 1 ) .. '\v' .. i:sub( strend + 1 )
+                ops_swapped = true
             end
         end
 
-        if times > 0 then
-            insert( warnings, "Line " .. line .. ": Converted non-specific 'player' to 'player.unit' (" .. times .. "x)." )
+        if ops_swapped then
+            insert( warnings, "Line " .. line .. ": Converted operations in '" .. pre .. "' to '" .. output .. "'." )
         end
-        i = i:gsub( '\v', token )
+
+        return output
     end
 
-    return i
-end
+    local function strsplit( str, delimiter )
+        local result = {}
+        local from = 1
 
+        if not delimiter or delimiter == "" then
+            result[1] = str
+            return result
+        end
 
-local function strsplit( str, delimiter )
-    local result = {}
-    local from = 1
+        local delim_from, delim_to = string.find( str, delimiter, from )
 
-    if not delimiter or delimiter == "" then
-        result[1] = str
+        while delim_from do
+            insert( result, string.sub( str, from, delim_from - 1 ) )
+            from = delim_to + 1
+            delim_from, delim_to = string.find( str, delimiter, from )
+        end
+
+        insert( result, string.sub( str, from ) )
         return result
     end
 
-    local delim_from, delim_to = string.find( str, delimiter, from )
-
-    while delim_from do
-        insert( result, string.sub( str, from, delim_from - 1 ) )
-        from = delim_to + 1
-        delim_from, delim_to = string.find( str, delimiter, from )
-    end
-
-    insert( result, string.sub( str, from ) )
-    return result
-end
-
-
-do
     local parseData = {
         warnings = {},
         missing = {},
@@ -10225,12 +10438,12 @@ do
         run_action_list = "list_name",
         potion = "potion",
         variable = "var_name",
+        cancel_action = "action_name",
         cancel_buff = "buff_name",
         op = "op",
     }
 
     function Hekili:ParseActionList( list )
-
         local line, times = 0, 0
         local output, warnings, missing = {}, parseData.warnings, parseData.missing
 
@@ -10254,6 +10467,7 @@ do
             end
         end
 
+        -- TODO: Revise to start from beginning of string.
         for i in list:gmatch( "action.-=/?([^\n^$]*)") do
             line = line + 1
 
@@ -10362,6 +10576,8 @@ do
 
             if result.target_if then result.target_if = result.target_if:gsub( "min:", "" ):gsub( "max:", "" ) end
 
+            -- As of 11/11/2022 (11/11/2022 in Europe), empower_to is purely a number 1-4.
+            if result.empower_to then result.empower_to = tonumber( result.empower_to ) end
             if result.for_next then result.for_next = tonumber( result.for_next ) end
             if result.cycle_targets then result.cycle_targets = tonumber( result.cycle_targets ) end
             if result.max_energy then result.max_energy = tonumber( result.max_energy ) end

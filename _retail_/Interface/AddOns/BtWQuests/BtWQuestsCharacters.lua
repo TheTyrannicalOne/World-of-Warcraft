@@ -21,8 +21,10 @@ local BtWQuestsCharactersMap = {} -- Map from name-realm to Character Mixin
 local ClassMap = {}
 for classID=1,GetNumClasses() do
     local info = C_CreatureInfo.GetClassInfo(classID)
-    ClassMap[info.classFile] = info
-    ClassMap[info.classID] = info
+    if info then
+        ClassMap[info.classFile] = info
+        ClassMap[info.classID] = info
+    end
 end
 
 BtWQuestsCharactersCharacterMixin = {}
@@ -308,10 +310,12 @@ end
 
 function BtWQuestsCharactersCharacterMixin:GetFriendshipReputation(factionID)
     local id, rep, maxRep, name, text, texture, reaction, threshold, nextThreshold;
-    
+
     if self.t.friendships then
         local data = self.t.friendships[factionID];
-        if data ~= nil then
+        if type(data) == "table" and data.friendshipFactionID then
+            return data;
+        elseif data ~= nil then
             if data[1] ~= nil then
                 id, rep, maxRep, name, text, texture, reaction, threshold, nextThreshold = unpack(data);
             else
@@ -320,11 +324,17 @@ function BtWQuestsCharactersCharacterMixin:GetFriendshipReputation(factionID)
         end
     end
 
-    return id, rep, maxRep, name, text, texture, reaction, threshold, nextThreshold;
-
-
-    -- local _, _, _, name, _, _, _, _ = GetFriendshipReputation(factionID)
-    -- return unpack((self.t.friendships or {})[factionID] or {})
+    return {
+        friendshipFactionID = id,
+        standing = rep,
+        maxRep = maxRep,
+        name = name,
+        text = text,
+        texture = texture,
+        reaction = reaction,
+        reactionThreshold = threshold,
+        nextThreshold = nextThreshold,
+    };
 end
 function BtWQuestsCharactersCharacterMixin:GetAchievementInfo(achievementID)
     local id, name, points, completed, month, day, year, description,
@@ -532,7 +542,7 @@ function BtWQuestsCharactersPlayerMixin:GetHeartOfAzerothLevel()
     return BtWQuestsCharactersCharacterMixin.GetHeartOfAzerothLevel(self)
 end
 function BtWQuestsCharactersPlayerMixin:GetFriendshipReputation(factionId)
-    return GetFriendshipReputation(factionId)
+    return C_GossipInfo.GetFriendshipReputation(factionId)
 end
 function BtWQuestsCharactersPlayerMixin:GetAchievementInfo(achievementId)
     return GetAchievementInfo(achievementId)
@@ -567,25 +577,27 @@ local itemXpCache = {};
 local gemXpByID = {
     [153714] = 0.05,
 };
-xpTooltip:SetScript("OnTooltipSetItem", function (self)
-    local itemName, itemLink = self:GetItem();
-
-    for i=1,15 do
-        local text = _G[self:GetName().."TextLeft"..i];
-        if text and text:IsShown() then
-            local text = text:GetText();
-            local percent = string.match(text, "^Equip: Experience gained is increased by ([%d]+)%%.$");
-            if not percent then
-                percent = string.match(text, "^Equip: Experience gained from killing monsters and completing quests increased by ([%d]+)%%.$");
-            end
-
-            if percent then
-                itemXpCache[itemLink] = tonumber(percent) * 0.01;
-                break
+if not TooltipDataProcessor or not TooltipDataProcessor.AddTooltipPostCall then
+    xpTooltip:SetScript("OnTooltipSetItem", function (self)
+        local itemName, itemLink = self:GetItem();
+    
+        for i=1,15 do
+            local text = _G[self:GetName().."TextLeft"..i];
+            if text and text:IsShown() then
+                local text = text:GetText();
+                local percent = string.match(text, "^Equip: Experience gained is increased by ([%d]+)%%.$");
+                if not percent then
+                    percent = string.match(text, "^Equip: Experience gained from killing monsters and completing quests increased by ([%d]+)%%.$");
+                end
+    
+                if percent then
+                    itemXpCache[itemLink] = tonumber(percent) * 0.01;
+                    break
+                end
             end
         end
-    end
-end)
+    end)
+end
 local function PlayerXPModifier()
     local modifier = 0;
     if GetItemGem then
@@ -917,33 +929,11 @@ end
 local function GetFriendships(tbl, friendships)
     local tbl = tbl or {};
 
-    for id,data in pairs(tbl) do
-        temp[id] = data;
-    end
-
     wipe(tbl);
     for factionID in pairs(friendships) do
-        local id, rep, maxRep, name, text, texture, reaction, threshold, nextThreshold = GetFriendshipReputation(factionID);
-        if id ~= nil then
-            local data = temp[factionID] or {};
-            if data[1] ~= nil then
-                wipe(data);
-            end
-
-            data.name = name;
-            data.rep = rep;
-            data.maxRep = maxRep;
-            data.text = text;
-            data.texture = texture;
-            data.reaction = reaction;
-            data.threshold = threshold;
-            data.nextThreshold = nextThreshold;
-            
-            tbl[factionID] = data;
-        end
+        tbl[factionID] = C_GossipInfo.GetFriendshipReputation(factionID);
     end
 
-    wipe(temp);
     return tbl;
 end
 local function GetSkills(tbl)
@@ -1033,6 +1023,8 @@ function BtWQuestsCharacters:OnEvent(event, ...)
     end
     if event == "COVENANT_CHOSEN" or event == "PLAYER_LOGIN" then
         character.covenantID = C_Covenants and C_Covenants.GetActiveCovenantID() or nil
+        character.friendships = GetFriendships(character.friendships, self.friendships or {});
+
     end
     if event == "PLAYER_LOGOUT" then
         character.faction = UnitFactionGroup("player");

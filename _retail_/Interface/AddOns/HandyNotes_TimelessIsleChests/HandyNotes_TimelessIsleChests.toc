@@ -1,6 +1,6 @@
-## Interface: 90207
-## Title: HandyNotes_TimelessIsleChests
-## Version: 1.24b
+## Interface: 100000
+## Title: HandyNotes: TimelessIsleChests
+## Version: 1.24c
 ## Notes: Shows location of treasure chests on the Timeless Isle
 ## Author: Bartruby of Cairne
 ## OptionalDeps: Ace3

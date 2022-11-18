@@ -4,7 +4,7 @@ local L = MT.L
 local AceGUI = MT.LS("AceGUI-3.0")
 
 function MT:CreateCopyFrame()
-	local mtcframe = CreateFrame("Frame", "MacroToolkitCopyFrame", UIParent, "ButtonFrameTemplate,BackdropTemplate")
+	local mtcframe = CreateFrame("Frame", "MacroToolkitCopyFrame", UIParent, "BackdropTemplate,ButtonFrameTemplate")
 
 	local function frameMouseUp()
 		mtcframe:StopMovingOrSizing()
@@ -26,11 +26,11 @@ function MT:CreateCopyFrame()
 	mtcfportrait:SetTexture("Interface\\FriendsFrame\\FriendsFrameScrollIcon")
 	mtcfportrait:SetSize(60, 60)
 	mtcfportrait:SetPoint("TOPLEFT", -5, 5)
-	
+
 	local mtctitle = mtcframe:CreateFontString(nil, "BORDER", "GameFontNormal")
 	mtctitle:SetText(L["Copy Macro"])
 	mtctitle:SetPoint("TOP", 0, -5)
-	
+
 	local mtchbleft = mtcframe:CreateTexture(nil, "ARTWORK")
 	mtchbleft:SetTexture("Interface\\ClassTrainerFrame\\UI-ClassTrainer-HorizontalBar")
 	mtchbleft:SetSize(556, 16)
@@ -54,15 +54,15 @@ function MT:CreateCopyFrame()
 	mtcselname:SetPoint("TOPLEFT", mtcselbg, "TOPRIGHT", -4, -10)
 	local LSM = MT.LS("LibSharedMedia-3.0")
 	local font = LSM:Fetch(LSM.MediaType.FONT, MT.db.profile.fonts.mfont)
-	mtcselname:SetFont(font, 16)
+	mtcselname:SetFont(font, 16, '')
 
-	local mtcselbutton = CreateFrame("CheckButton", "MacroToolkitCSelMacroButton", mtcframe, "MacroToolkitButtonTemplate")
+	local mtcselbutton = CreateFrame("CheckButton", "MacroToolkitCSelMacroButton", mtcframe, "BackdropTemplate,MacroToolkitButtonTemplate")
 	mtcselbutton:SetID(0)
 	mtcselbutton:SetPoint("TOPLEFT", mtcselbg, 14, -14)
 	mtcselbutton:SetScript("OnClick", function(this) this:SetChecked(false) end)
 	MacroToolkitCSelMacroButtonUnbound:Hide()
 
-	local mtcmacros = CreateFrame("Frame", "MacroToolkitCButtonContainer", mtcframe)
+	local mtcmacros = CreateFrame("Frame", "MacroToolkitCButtonContainer", mtcframe, "BackdropTemplate")
 	mtcmacros:SetSize(285, 10)
 	mtcmacros:SetPoint("TOPLEFT", 12, -66)
 	MT:ContainerOnLoad(mtcmacros)
@@ -73,11 +73,11 @@ function MT:CreateCopyFrame()
 	mtctextbg:SetBackdrop({bgFile = "Interface\\Tooltips\\UI-Tooltip-Background", edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", edgeSize = 16, tileSize = 16, tile = true, insets = {left = 5, right = 5, top = 5, bottom = 5}})
 	mtctextbg:SetBackdropBorderColor(_G.TOOLTIP_DEFAULT_COLOR.r, _G.TOOLTIP_DEFAULT_COLOR.g, _G.TOOLTIP_DEFAULT_COLOR.b)
 	mtctextbg:SetBackdropColor(_G.TOOLTIP_DEFAULT_BACKGROUND_COLOR.r, _G.TOOLTIP_DEFAULT_BACKGROUND_COLOR.g, _G.TOOLTIP_DEFAULT_BACKGROUND_COLOR.b)
-	
-	local mtmcscroll = CreateFrame("ScrollFrame", "MacroToolkitCScrollFrame", mtctextbg, "UIPanelScrollFrameTemplate")
+
+	local mtmcscroll = CreateFrame("ScrollFrame", "MacroToolkitCScrollFrame", mtctextbg, "BackdropTemplate,UIPanelScrollFrameTemplate")
 	mtmcscroll:SetPoint("TOPLEFT", 10, -6)
 	mtmcscroll:SetPoint("BOTTOMRIGHT", -26, 4)
-	
+
 	local function onverticalscroll(this, offset)
 		local scrollbar1 = MacroToolkitCScrollFrameScrollBar
 		local scrollbar2 = MacroToolkitCFauxScrollFrameScrollBar
@@ -107,7 +107,7 @@ function MT:CreateCopyFrame()
 			ScrollFrameTemplate_OnMouseWheel(MacroToolkitCFauxScrollFrame, value)
 			ScrollFrameTemplate_OnMouseWheel(this, value)
 		end)
-	local mtmcscrollchild = CreateFrame("EditBox", "MacroToolkitCText", mtmcscroll)
+	local mtmcscrollchild = CreateFrame("EditBox", "MacroToolkitCText", mtmcscroll, "BackdropTemplate")
 	mtmcscrollchild:SetMultiLine(true)
 	mtmcscrollchild:SetAutoFocus(false)
 	mtmcscrollchild:SetCountInvisibleLetters(true)
@@ -120,14 +120,14 @@ function MT:CreateCopyFrame()
 		end)
 	mtmcscrollchild:SetScript("OnEscapePressed", EditBox_ClearFocus)
 	font = LSM:Fetch(LSM.MediaType.FONT, MT.db.profile.fonts.edfont)
-	mtmcscrollchild:SetFont(font, MT.db.profile.fonts.edsize)
-	mtmcscroll:SetScrollChild(mtmscrollchild)
+	mtmcscrollchild:SetFont(font, MT.db.profile.fonts.edsize, '')
+	mtmcscroll:SetScrollChild(mtmcscrollchild)
 
-	local mtmcfscroll = CreateFrame("ScrollFrame", "MacroToolkitCFauxScrollFrame", mtctextbg, "UIPanelScrollFrameTemplate")
+	local mtmcfscroll = CreateFrame("ScrollFrame", "MacroToolkitCFauxScrollFrame", mtctextbg, "BackdropTemplate,UIPanelScrollFrameTemplate")
 	mtmcfscroll:SetPoint("TOPLEFT", 10, -6)
 	mtmcfscroll:SetPoint("BOTTOMRIGHT", -26, 4)
-	
-	local mtmcfscrollchild = CreateFrame("EditBox", "MacroToolkitCFauxText", mtmcfscroll)
+
+	local mtmcfscrollchild = CreateFrame("EditBox", "MacroToolkitCFauxText", mtmcfscroll, "BackdropTemplate")
 	mtmcfscrollchild:SetMultiLine(true)
 	mtmcfscrollchild:SetAutoFocus(false)
 	mtmcfscrollchild:SetCountInvisibleLetters(true)
@@ -135,10 +135,10 @@ function MT:CreateCopyFrame()
 	mtmcfscrollchild:SetScript("OnUpdate", nil)
 	mtmcfscrollchild:SetScript("OnTextChanged", nil)
 	font = LSM:Fetch(LSM.MediaType.FONT, MT.db.profile.fonts.edfont)
-	mtmcfscrollchild:SetFont(font, MT.db.profile.fonts.edsize)
+	mtmcfscrollchild:SetFont(font, MT.db.profile.fonts.edsize, '')
 	mtmcfscroll:SetScrollChild(mtmcfscrollchild)
 
-	local mtcexit = CreateFrame("Button", "MacroToolkitCExit", mtcframe, "UIPanelButtonTemplate")
+	local mtcexit = CreateFrame("Button", "MacroToolkitCExit", mtcframe, "BackdropTemplate,UIPanelButtonTemplate")
 	mtcexit:SetText(_G.EXIT)
 	mtcexit:SetSize(80, 22)
 	mtcexit:SetPoint("BOTTOMRIGHT", -5, 4)
@@ -160,13 +160,13 @@ function MT:CreateCopyFrame()
 							end
 						end
 					end
-					if chd.macros then chars[ch] = ch end						
+					if chd.macros then chars[ch] = ch end
 				end
 			end
 		end
 		dd:SetList(chars)
 	end
-	
+
 	local mtcchars = AceGUI:Create("Dropdown")
 	mtcchars.frame:SetParent(mtaddscript)
 	mtcchars.frame:SetParent(mtcframe)
@@ -181,7 +181,7 @@ function MT:CreateCopyFrame()
 		end)
 	mtcchars:SetPoint("TOPLEFT", 330, -66)
 	updatechars(mtcchars)
-	
+
 	local function updateslots(s)
 		local _, macros = GetNumMacros()
 		macros = _G.MAX_CHARACTER_MACROS - macros
@@ -196,35 +196,36 @@ function MT:CreateCopyFrame()
 	local mtcnotice = mtcframe:CreateFontString(nil, "ARTWORK", "GameFontNormal")
 	mtcnotice:SetPoint("BOTTOMLEFT", mtcslottext, "TOPLEFT", 0, 5)
 
-	local mtccopy = CreateFrame("Button", "MacroToolkitCopy", mtcframe, "UIPanelButtonTemplate")
+	local mtccopy = CreateFrame("Button", "MacroToolkitCopy", mtcframe, "BackdropTemplate,UIPanelButtonTemplate")
 	mtccopy:SetText(_G.CALENDAR_COPY_EVENT)
 	mtccopy:SetSize(80, 22)
 	mtccopy:SetPoint("BOTTOMLEFT", 5, 4)
 	mtccopy:Disable()
 	mtccopy:SetScript("OnClick",
 		function()
-			local button = format("MacroToolkitCButton%d", mtcframe.selectedMacro)
-			local name = _G[format("%sName", button)]:GetText()
-			local icon = string.gsub(string.upper(_G[format("%sIcon", button)]:GetTexture()), "INTERFACE\\ICONS\\", "")
+			local buttonName = format("MacroToolkitCButton%d", mtcframe.selectedMacro)
+			local button = _G[buttonName]
+			local name = _G[format("%sName", buttonName)]:GetText()
+			local icon = string.gsub(string.upper(button.Icon:GetTexture()), "INTERFACE\\ICONS\\", "")
 			local body = mtmcscrollchild:GetText()
 			MacroToolkitText:SetText(body)
 			MacroToolkitFrame.macroBase = _G.MAX_ACCOUNT_MACROS
-			if _G[button].extended then
+			if button.extended then
 				MacroToolkitFrame.selectedMacro = CreateMacro(name, icon, "MT", true)
 				MT:ExtendMacro(true)
-			else MacroToolkitFrame.selectedMacro = CreateMacro(name, icon, body, true) end
+			else
+				MacroToolkitFrame.selectedMacro = CreateMacro(name, icon, body, true)
+			end
 			MacroToolkitFrameTab2:GetScript("OnClick")(MacroToolkitFrameTab2)
 			updateslots(mtcslottext)
 			if MacroToolkitFrame.selectedMacro then
 				mtcnotice:SetFormattedText("%s: |cffffffff%s", L["Macro copied"], name)
-				--PlaySoundFile("Sound/Character/footsteps/mFootHugeDirtA.ogg")
 			else
 				mtcnotice:SetFormattedText("|cffff0000%s", _G.SPELL_FAILED_ERROR)
-				--PlaySoundFile("Sound/INTERFACE/igQuestFailed.ogg")
 			end
 		end)
-	
-	mtcframe:SetScript("OnShow", 
+
+	mtcframe:SetScript("OnShow",
 		function()
 			mtcframe:SetPoint("BOTTOMLEFT", MT.db.profile.x, MT.db.profile.y)
 			updatechars(mtcchars)
@@ -236,7 +237,7 @@ function MT:CreateCopyFrame()
 			PlaySound(839)
 		end)
 
-	mtcframe:SetScript("OnHide", 
+	mtcframe:SetScript("OnHide",
 		function()
 			MT:MacroFrameUpdate()
 			MacroToolkitFrame:Show()

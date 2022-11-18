@@ -1,2 +1,3 @@
 
-PetTracker_State = nil
+PetTracker_State = {
+}

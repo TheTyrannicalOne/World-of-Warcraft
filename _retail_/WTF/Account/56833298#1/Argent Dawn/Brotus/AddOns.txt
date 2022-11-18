@@ -259,3 +259,6 @@ TomCats-LoveIsInTheAir: disabled
 TomCats-LunarFestival: disabled
 TomCats-Noblegarden: disabled
 LittleWigs_BattleForAzeroth: enabled
+Blizzard_ObjectiveTracker: enabled
+Blizzard_CompactRaidFrames: enabled
+ElvUI_UnitFramePlugin: disabled

@@ -53,7 +53,7 @@
     </FontString>
     <FontString name="SpyStatsTimeTemplate" inherits="SpyStatsStringTemplate" virtual="true">
         <Anchors>
-        <Anchor point="RIGHT" relativeTo="$parentList" relativePoint="LEFT">  
+			<Anchor point="RIGHT" relativeTo="$parentList" relativePoint="LEFT">  
                 <Offset x="-8" y="0" />
             </Anchor>
         </Anchors>
@@ -77,7 +77,7 @@
     </FontString>
     <FontString name="SpyStatsReasonTemplate" inherits="SpyStatsStringTemplate" virtual="true">
 	<Anchors>
-			<Anchor point="LEFT" relativeTo="$parentLoses" relativePoint="RIGHT">
+		<Anchor point="LEFT" relativeTo="$parentLoses" relativePoint="RIGHT">
                 <Offset x="8" y="0" />
             </Anchor>
         </Anchors>
@@ -111,7 +111,7 @@
 				Spy:ShowTooltip(self, false)
             </OnLeave>
             <OnMouseUp>
-<!--                Spy:ShowUnitDropDown(self, button)  DO NOT DELETE THIS  -->
+<!--			Spy:ShowUnitDropDown(self, button)  DO NOT DELETE THIS  -->
 				Spy:ShowStatsDropDown(self, button)
             </OnMouseUp>
         </Scripts>
@@ -182,8 +182,8 @@
         <Size x="30" y="15"></Size>
         <ButtonText justifyH="CENTER" />
     </Button>
-    <Button name="SpyStatsPlayersReasonSortTemplate" inherits="SpyStatsSortButtonTemplate" text="Reason" virtual="true"> --> 
-	<Anchors>
+    <Button name="SpyStatsPlayersReasonSortTemplate" inherits="SpyStatsSortButtonTemplate" text="Reason" virtual="true">
+		<Anchors>
             <Anchor point="LEFT" relativeTo="SpyStatsPlayersLosesSort" relativePoint="RIGHT">
                 <Offset x="8" y="0" />
             </Anchor>
@@ -192,14 +192,14 @@
     </Button>
     <Button name="SpyStatsZoneSortTemplate" inherits="SpyStatsSortButtonTemplate" text="ZONE" virtual="true">
         <Anchors>
-        <Anchor point="LEFT" relativeTo="SpyStatsPlayersGuildSort" relativePoint="RIGHT"> 
+			<Anchor point="LEFT" relativeTo="SpyStatsPlayersGuildSort" relativePoint="RIGHT"> 
                 <Offset x="350" y="0" />  				
             </Anchor>
         </Anchors>
         <Size x="250" y="15"></Size>		
     </Button>
     <Button name="SpyStatsListSortTemplate" inherits="SpyStatsSortButtonTemplate" text="L_LIST" virtual="true">
-	<Anchors>
+		<Anchors>
             <Anchor point="RIGHT">
                 <Offset x="-15" y="0" />
             </Anchor>
@@ -246,8 +246,7 @@
 				</Texture>
 				<FontString name="$parent_Title" font="GameFontNormal" Text="L_STATS">	
 					<Anchors>
-						<Anchor point="TOP">
-						</Anchor>
+						<Anchor point="TOP" />
 					</Anchors>	
                     <Color r="1" g="1" b="0" a="1" />
 				</FontString>
@@ -272,7 +271,7 @@
                 <FontString name="SpyStatsHonorKillsText" font="GameFontNormal">
                     <Anchors>
                         <Anchor point="BOTTOMLEFT">
-                            <Offset x="640" y="16" />
+                            <Offset x="680" y="16" />
                         </Anchor>
                     </Anchors>
                     <Color r="1" g="1" b="1" a="1" />
@@ -280,7 +279,7 @@
                 <FontString name="SpyStatsPvPDeathsText" font="GameFontNormal">
                     <Anchors>
                         <Anchor point="BOTTOMLEFT">
-                            <Offset x="800" y="16" />
+                            <Offset x="840" y="16" />
                         </Anchor>
                     </Anchors>
                     <Color r="1" g="1" b="1" a="1" />
@@ -316,7 +315,7 @@
             <Button name="$parentTopCloseButton" inherits="UIPanelCloseButton">
                 <Anchors>
                     <Anchor point="TOPRIGHT">
-                        <Offset x="-8" y="-6" />
+                        <Offset x="-12" y="-12" />
                     </Anchor>
                 </Anchors>
                 <Scripts>
@@ -338,29 +337,32 @@
                     </Anchor>
                 </Anchors>
                 <Frames>
-                    <Button name="$parentTab1" inherits="OptionsFrameTabButtonTemplate" hidden="true" text="TUTORIAL_TITLE19"> 
+					<Button name="$parentTab1" inherits="OptionsFrameTabButtonTemplate" hidden="true" text="TUTORIAL_TITLE19">
 					<!-- button is hidden until more tabs are added -->
-                        <Anchors>
-                            <Anchor point="TOPLEFT">
-                                <Offset x="22" y="2" />
-                            </Anchor>
-                        </Anchors>
-                        <Scripts>
-                            <OnLoad>
-                                PanelTemplates_TabResize(self, 0)
-                            </OnLoad>
-                            <OnClick>
-                                PanelTemplates_SetTab(self:GetParent(), 1)
+						<Anchors>
+							<Anchor point="TOPLEFT">
+								<Offset x="22" y="2" />
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnLoad>
+<!--							PanelTemplates_TabResize(self, 0) -->
+								PanelTemplates_SetNumTabs(self, 0)
+								PanelTemplates_SetTab(self, 1)
+							</OnLoad>
+							<OnClick>
+								PanelTemplates_SetTab(self:GetParent(), 1)
 								SpyStats:UpdateView()
-                                SpyStats:Recalulate()
-<!--                                PlaySound("igCharacterInfoTab") Error in v7.3 -->
-                            </OnClick>
-                        </Scripts>
+								SpyStats:Recalulate()
+								PlaySound(SOUNDKIT.IG_CHARACTER_INFO_TAB)
+							</OnClick>
+                       </Scripts>
                     </Button>
-                    <Button name="SpyStatsRefreshButton" inherits="OptionsButtonTemplate" text="REFRESH">
+                    <Button name="SpyStatsRefreshButton" inherits="UIPanelButtonTemplate" text="REFRESH">
+						<Size x="104" y="22"/>					
                         <Anchors>
 							<Anchor point="BOTTOMRIGHT">
-								<Offset x="-6" y="-23" />
+								<Offset x="-2" y="-23" />								
 							</Anchor>
                         </Anchors>
                         <Scripts>
@@ -371,7 +373,7 @@
                                 SpyStats:OnRefreshButtonUpdate(self, elapsed)
                             </OnUpdate>
                             <OnClick>
-<!--                                PlaySound("igMainMenuOptionCheckBoxOn") Error in v7.3-->
+								PlaySound(SOUNDKIT.U_CHAT_SCROLL_BUTTON)
                                 SpyStats:Recalulate()
                             </OnClick>
                         </Scripts>
@@ -383,7 +385,7 @@
                             </Anchor>
                             <Anchor point="BOTTOMRIGHT"></Anchor>
                         </Anchors>
-                        <Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+<!--                        <Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
                             <EdgeSize>
                                 <AbsValue val="16"></AbsValue>
                             </EdgeSize>
@@ -393,7 +395,7 @@
                             <BackgroundInsets>
                                 <AbsInset left="4" right="4" top="4" bottom="4" />
                             </BackgroundInsets>
-                        </Backdrop>
+                        </Backdrop> -->
                         <Scripts>
                             <OnLoad>
 <!--							self:SetBackdropColor(0,0,0,.65)  -->
@@ -664,7 +666,7 @@
                             </Frame>
                         </Frames>
                         <Scripts>
-                            <OnLoad>
+							<OnLoad>
 								if BackdropTemplateMixin then
 									self.ContentFrame = CreateFrame("Frame", nil, self, "BackdropTemplate")
 									self.ContentFrame:SetAllPoints()
@@ -680,13 +682,14 @@
 								end
 <!--							self:SetBackdropColor(0,0,0,.5)
                                 self:SetFrameLevel(self:GetParent():GetFrameLevel() - 1) -->
-                            </OnLoad>
+							</OnLoad>
                         </Scripts>
                     </Frame>
                 </Frames>
                 <Scripts>
-                    <OnLoad>
-                        PanelTemplates_SetNumTabs(self, 1) 
+					<OnLoad>
+<!--                    PanelTemplates_SetNumTabs(self, 1) -->
+                        PanelTemplates_SetNumTabs(self, 0)
                         PanelTemplates_SetTab(self, 1)
                     </OnLoad>
                 </Scripts>
@@ -740,13 +743,13 @@
                 </FontString>
                 <TextInsets left="6" right="6" top="6" bottom="6" />
             </EditBox>
-            <CheckButton name="SpyStatsKosCheckbox" inherits="OptionsCheckButtonTemplate">
+            <CheckButton name="SpyStatsKosCheckbox" inherits="SettingsCheckBoxTemplate">			
                 <Size>
                     <AbsDimension x="24" y="24" />
                 </Size>
                 <Anchors>
                     <Anchor point="LEFT" relativeTo="$parentShowOnlyText" relativePoint="RIGHT">
-                        <Offset x="4" y="-2" />
+                        <Offset x="4" y="0" />
                     </Anchor>
                 </Anchors>
                 <HitRectInsets>
@@ -754,18 +757,18 @@
                 </HitRectInsets>
                 <Scripts>
                     <OnClick>
-<!--                        PlaySound("igMainMenuOptionCheckBoxOn") Error in v7.3 -->
+						PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON)
                         SpyStats:Filter()
                     </OnClick>
                 </Scripts>
             </CheckButton>
-            <CheckButton name="SpyStatsRealmCheckbox" inherits="OptionsCheckButtonTemplate">
+            <CheckButton name="SpyStatsRealmCheckbox" inherits="SettingsCheckBoxTemplate">
                 <Size>
                     <AbsDimension x="24" y="24" />
                 </Size>
                 <Anchors>
-                    <Anchor point="LEFT" relativeTo="SpyStatsKosCheckboxText" relativePoint="RIGHT">
-                        <Offset x="4" y="-2" />
+                    <Anchor point="LEFT" relativeTo="SpyStatsKosCheckbox" relativePoint="RIGHT">
+                        <Offset x="40" y="0" />
                     </Anchor>
                 </Anchors>
                 <HitRectInsets>
@@ -773,18 +776,18 @@
                 </HitRectInsets>
                 <Scripts>
                     <OnClick>
-<!--                        PlaySound("igMainMenuOptionCheckBoxOn") Error in v7.3 -->
+						PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON)
                         SpyStats:Filter()
                     </OnClick>
                 </Scripts>
             </CheckButton>
-            <CheckButton name="SpyStatsWinsLosesCheckbox" inherits="OptionsCheckButtonTemplate">
+            <CheckButton name="SpyStatsWinsLosesCheckbox" inherits="SettingsCheckBoxTemplate">
                 <Size>
                     <AbsDimension x="24" y="24" />
                 </Size>
                 <Anchors>
-            <Anchor point="LEFT" relativeTo="SpyStatsRealmCheckboxText" relativePoint="RIGHT"> 				
-                        <Offset x="12" y="-1" />
+					<Anchor point="LEFT" relativeTo="SpyStatsRealmCheckbox" relativePoint="RIGHT">
+                        <Offset x="70" y="0" />
                     </Anchor>
                 </Anchors>
                 <HitRectInsets>
@@ -792,18 +795,18 @@
                 </HitRectInsets>
                 <Scripts>
                     <OnClick>
-<!--                        PlaySound("igMainMenuOptionCheckBoxOn") Error in v7.3 -->
+						PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON)
                         SpyStats:Filter()
                     </OnClick>
                 </Scripts>
             </CheckButton>
-            <CheckButton name="SpyStatsReasonCheckbox" inherits="OptionsCheckButtonTemplate">
+            <CheckButton name="SpyStatsReasonCheckbox" inherits="SettingsCheckBoxTemplate">
                 <Size>
                     <AbsDimension x="24" y="24" />
                 </Size>
                 <Anchors>
-                    <Anchor point="LEFT" relativeTo="SpyStatsWinsLosesCheckboxText" relativePoint="RIGHT">
-                        <Offset x="12" y="-1" />
+					<Anchor point="LEFT" relativeTo="SpyStatsWinsLosesCheckbox" relativePoint="RIGHT">
+                        <Offset x="70" y="0" />
                     </Anchor>
                 </Anchors>
                 <HitRectInsets>
@@ -811,12 +814,46 @@
                 </HitRectInsets>
                 <Scripts>
                     <OnClick>
-<!--                        PlaySound("igMainMenuOptionCheckBoxOn") Error in v7.3 -->
+						PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON)
                         SpyStats:Filter()
                     </OnClick>
                 </Scripts>
             </CheckButton>
         </Frames>
+        <Layers>
+			<Layer level="ARTWORK">
+				<FontString name="SpyStatsKosCheckboxText" text="L_KOS" justifyH="LEFT" inherits="GameFontHighlight">
+					<Size x="70" y="32"/>
+					<Anchors>
+						<Anchor point="Left" relativeTo="SpyStatsKosCheckbox" x="25" y="0"/>
+					</Anchors>
+				</FontString>
+			</Layer>
+			<Layer level="ARTWORK">
+				<FontString name="SpyStatsRealmCheckboxText" text="L_Realm" justifyH="LEFT" inherits="GameFontHighlight">
+					<Size x="70" y="32"/>
+					<Anchors>
+						<Anchor point="Left" relativeTo="SpyStatsRealmCheckbox" x="25" y="0"/>
+					</Anchors>
+				</FontString>
+			</Layer>
+			<Layer level="ARTWORK">
+				<FontString name="SpyStatsWinsLosesCheckboxText" text="L_Won/Lost" justifyH="LEFT" inherits="GameFontHighlight">
+					<Size x="70" y="32"/>
+					<Anchors>
+						<Anchor point="Left" relativeTo="SpyStatsWinsLosesCheckbox" x="25" y="0"/>
+					</Anchors>
+				</FontString>
+			</Layer>
+			<Layer level="ARTWORK">
+				<FontString name="SpyStatsReasonCheckboxText" text="L_Reason" justifyH="LEFT" inherits="GameFontHighlight">
+					<Size x="70" y="32"/>
+					<Anchors>
+						<Anchor point="Left" relativeTo="SpyStatsReasonCheckbox" x="25" y="0"/>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
         <Scripts>
             <OnLoad>
 				if BackdropTemplateMixin then
@@ -835,10 +872,10 @@
 <!--			self:SetBackdropColor(0,0,0,.95)  -->
             </OnLoad>
             <OnShow>
-<!--                PlaySound("igCharacterInfoTab") Error in v7.3 -->
+				PlaySound(SOUNDKIT.IG_CHARACTER_INFO_TAB)
             </OnShow>
             <OnHide>
-<!--                PlaySound("igMainMenuClose") Error in v7.3-->
+				PlaySound(SOUNDKIT.IG_MAINMENU_CLOSE)
             </OnHide>
             <OnMouseDown>
                 SpyStatsFrame:StartMoving()

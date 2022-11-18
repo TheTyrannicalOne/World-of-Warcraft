@@ -1,6 +1,6 @@
 # BFAInvasionTimer
 
-## [v10.0.0](https://github.com/funkydude/BFAInvasionTimer/tree/v10.0.0) (2022-10-26)
-[Full Changelog](https://github.com/funkydude/BFAInvasionTimer/compare/v9.2.6...v10.0.0) [Previous Releases](https://github.com/funkydude/BFAInvasionTimer/releases)
+## [v10.0.1](https://github.com/funkydude/BFAInvasionTimer/tree/v10.0.1) (2022-11-15)
+[Full Changelog](https://github.com/funkydude/BFAInvasionTimer/compare/v10.0.0...v10.0.1) [Previous Releases](https://github.com/funkydude/BFAInvasionTimer/releases)
 
 - bump toc  

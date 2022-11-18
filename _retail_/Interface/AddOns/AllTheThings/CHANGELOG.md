@@ -1,24 +1,25 @@
 # AllTheThings
 
-## [DF-3.0.1](https://github.com/DFortun81/AllTheThings/tree/DF-3.0.1) (2022-10-27)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.0.0...DF-3.0.1) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [DF-3.0.6](https://github.com/DFortun81/AllTheThings/tree/DF-3.0.6) (2022-11-16)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.0.5...DF-3.0.6) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 
-### KNOWN ISSUES
+### Twitch Drops
 
-Please don't spam us with these:
+Watch WoW: Dragonflight content on Twitch to get free rewards! More info [here](https://worldofwarcraft.com/en-us/news/23873861).
 
-- Map icon is inside the minimap.
-- You can't change profiles because the switch button is not functional.
-- The autoreset on dungeons seems broken in `/attra`.
+### Functional changes
 
+-
 
 ### Logic fixes
 
-- Fixed ATT tooltips not showing up/disappearing.
-- Fixed "This gets removed in patch 10.0.0" on Things that are already removed. We are in 10.0 patch after all!
+- Fixed errors on Item comparison tooltips.
+- Fixed another error related to Transmog functionality (usage of `C_TransmogSets.GetSetSources`).
+- Fixed right-click minimap button to options.
 
 
 ### Data fixes
 
-- Harvested Item/Quest/Achievement data, this should make new content behave as collectable and show up in lists.
+- Updates to pre-patch event, Forbidden Reach, intro questline and Uldaman: Legacy of Tyr.
+- Other fixes.

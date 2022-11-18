@@ -1,8 +1,10 @@
 
-BtWQuests_Settings = nil
+BtWQuests_Settings = {
+}
 BtWQuests_AutoLoad = {
+	["BtWQuestsShadowlands"] = true,
+	["BtWQuestsLegion"] = false,
 	["BtWQuestsBattleForAzeroth"] = true,
 	["BtWQuestsClassic"] = false,
-	["BtWQuestsLegion"] = false,
 	["BtWQuestsBattleForAzerothPrologue"] = true,
 }

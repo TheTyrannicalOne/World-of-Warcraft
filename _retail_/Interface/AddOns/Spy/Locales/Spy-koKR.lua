@@ -471,6 +471,7 @@ L["WARRIOR"] = "전사"
 L["DEATHKNIGHT"] = "죽음의 기사"
 L["MONK"] = "수도사"
 L["DEMONHUNTER"] = "악마사냥꾼"
+L["EVOKER"] = "기원사"
 
 -- Race descriptions
 L["Human"] = "인간"
@@ -496,6 +497,7 @@ L["Kul Tiran"] = "쿨 티란"
 L["Zandalari Troll"] = "잔달라 트롤"
 L["Mechagnome"] = "기계노움"
 L["Vulpera"] = "불페라"
+L["Dracthyr"] = "드랙티르"
 
 -- Stealth abilities
 L["Stealth"] = "은신"
@@ -516,6 +518,7 @@ L["MinimapClassTextWARRIOR"] = "|cffc69b6d"
 L["MinimapClassTextDEATHKNIGHT"] = "|cffc41e3a"
 L["MinimapClassTextMONK"] = "|cff00ff96"
 L["MinimapClassTextDEMONHUNTER"] = "|cffa330c9"
+L["MinimapClassTextEVOKER"] = "|cff33937f"
 
 Spy_IgnoreList = {
 	["우체통"]=true, 

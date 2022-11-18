@@ -1,5 +1,7 @@
 --[[
-Written by: Hugh@Burning Blade-US and Simca@Malfurion-US
+Written by: Simca@Malfurion-US
+
+Thanks to Hugh@Burning-Blade, a co-author for the first few versions of the AddOn.
 
 Special thanks to Ro for inspiration for the overall structure of this options panel (and the title/version/description code)
 ]]--
@@ -558,12 +560,14 @@ local function BPBID_GeneralCheckbox_OnClick(self, button, down)
         FloatingBattlePetTooltip.JournalClick:SetWidth(238)
     end
     
-    -- Fix font size for HSFUpdate
+	-- Potential TODO: Restore the idea behind this code.
+	-- For now, reloading the UI is required when untoggling this option.
+    --[[-- Fix font size for HSFUpdate
     if (not BPBID_Options.Names.HSFUpdate) then
         for i = 1, #PetJournalListScrollFrame.buttons do
             PetJournalListScrollFrame.buttons[i].name:SetFontObject("GameFontNormal")
         end
-    end
+    end]]--
     
     -- A manual change has occurred (added in v1.0.8 to help update values added in new versions)
     BPBID_Options.ManualChange = GetAddOnMetadata(addonname, "Version")

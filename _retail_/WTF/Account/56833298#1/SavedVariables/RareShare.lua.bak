@@ -17,13 +17,13 @@ RareShareDB = {
 		["ChatAnnounce"] = true,
 		["OnDeath"] = false,
 		["CChannel"] = {
-			["CName"] = "General - Zereth Mortis",
 			["CID"] = 1,
+			["CName"] = "General - Zereth Mortis",
 		},
 		["Duplicates"] = true,
 	},
 	["LastAnnounce"] = {
-		["Time"] = 1666902173,
-		["ID"] = 183953,
+		["Time"] = 1668733868,
+		["ID"] = 181360,
 	},
 }

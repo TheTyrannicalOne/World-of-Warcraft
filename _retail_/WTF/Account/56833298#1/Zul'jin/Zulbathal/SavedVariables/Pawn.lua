@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0706,
+	["LastVersion"] = 2.0708,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173441,
@@ -44,9 +44,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:173480::::::::120:102::14:4:6412:6513:1467:4785:::|h[Bindings of the Insatiable Maw]|h|r",
 		}, -- [9]
 		{
-			["ID"] = 172790,
-			["Level"] = 245,
-			["Link"] = "|cff0070dd|Hitem:172790::::::::120:102:512:7:3:4990:6516:6515:115:::|h[Corrupted Aspirant's Leather Gloves]|h|r",
+			["ID"] = 199358,
+			["Level"] = 252,
+			["Link"] = "|cff0070dd|Hitem:199358::::::::60:102::26:2:6652:8936:2:28:2172:9:60:::::|h[Dust Devil Gloves]|h|r",
 		}, -- [10]
 		{
 			["ID"] = 122529,
@@ -68,9 +68,9 @@ PawnOptions = {
 		}, -- [13]
 		{
 			["ID"] = 122362,
-			["Level"] = 146,
+			["Level"] = 187,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122362::::::::59:102:::1:7920::::::|h[Discerning Eye of the Beast]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122362::::::::60:102:::1:7920::::::|h[Discerning Eye of the Beast]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 122262,

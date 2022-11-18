@@ -471,6 +471,7 @@ L["WARRIOR"] = "Warrior"
 L["DEATHKNIGHT"] = "Death Knight"
 L["MONK"] = "Monk"
 L["DEMONHUNTER"] = "Demon Hunter"
+L["EVOKER"] = "Evoker"
 
 -- Race descriptions
 L["Human"] = "Human"
@@ -496,6 +497,7 @@ L["Kul Tiran"] = "Kul Tiran"
 L["Zandalari Troll"] = "Zandalari Troll"
 L["Mechagnome"] = "Mechagnome"
 L["Vulpera"] = "Vulpera"
+L["Dracthyr"] = "Dracthyr"
 
 -- Stealth abilities
 L["Stealth"] = "Stealth"
@@ -516,6 +518,7 @@ L["MinimapClassTextWARRIOR"] = "|cffc69b6d"
 L["MinimapClassTextDEATHKNIGHT"] = "|cffc41e3a"
 L["MinimapClassTextMONK"] = "|cff00ff96"
 L["MinimapClassTextDEMONHUNTER"] = "|cffa330c9"
+L["MinimapClassTextEVOKER"] = "|cff33937f"
 
 Spy_IgnoreList = {
 	["Mailbox"]=true, ["Shred Master Mk1"]=true, ["Scrap-O-Matic 1000"]=true,

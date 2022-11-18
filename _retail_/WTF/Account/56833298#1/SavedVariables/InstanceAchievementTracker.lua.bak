@@ -2,19 +2,19 @@
 AchievementTrackerOptions = {
 	["toggleSoundFailed"] = false,
 	["showMinimap"] = true,
-	["onlyTrackMissingAchievements"] = false,
+	["toggleSound"] = false,
 	["displayInfoFrame"] = true,
 	["enableAutomaticCombatLogging"] = false,
 	["greyOutCompletedAchievements"] = false,
 	["announceTrackedAchievements"] = false,
 	["announceToRaidWarning"] = true,
 	["trackAchievementsAutomatically"] = false,
-	["hideCompletedAchievements"] = false,
+	["trackCharacterAchievements"] = false,
 	["changeMinimapIcon"] = false,
 	["enableAddon"] = true,
-	["trackCharacterAchievements"] = false,
+	["hideCompletedAchievements"] = false,
 	["trackAchievementsInBlizzardUI"] = false,
-	["toggleSound"] = false,
+	["onlyTrackMissingAchievements"] = false,
 }
 AchievementTrackerDebug = {
 	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [1]
@@ -10461,6 +10461,1210 @@ AchievementTrackerDebug = {
 	"27/10/2022 22:46 [DEBUG] Resetting PlayerRank", -- [10442]
 	"27/10/2022 22:46 [DEBUG] InfoFrame was not active", -- [10443]
 	"27/10/2022 22:46 [DEBUG] 6", -- [10444]
+	"27/10/2022 22:46 [DEBUG] ---IAT Runtime---", -- [10445]
+	"27/10/2022 22:46 [DEBUG] Version: 4.0.0", -- [10446]
+	"27/10/2022 22:46 [DEBUG] Attempting to load from local NPC Cache", -- [10447]
+	"27/10/2022 22:46 [DEBUG] Generating NPC Cache...", -- [10448]
+	"27/10/2022 22:46 [DEBUG] Enabling Addon", -- [10449]
+	"27/10/2022 22:46 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10450]
+	"27/10/2022 23:4 [DEBUG] Showing Minimap Icon", -- [10451]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [10452]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.0.0", -- [10453]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [10454]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [10455]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [10456]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10457]
+	"28/10/2022 22:46 [DEBUG] Showing Minimap Icon", -- [10458]
+	"28/10/2022 22:49 [DEBUG] Player has entered instance", -- [10459]
+	"28/10/2022 22:49 [DEBUG] 1004", -- [10460]
+	"28/10/2022 22:49 [DEBUG] Offical Instance Name: 1004 _1004", -- [10461]
+	"28/10/2022 22:49 [DEBUG] Expansion: 5", -- [10462]
+	"28/10/2022 22:49 [DEBUG] Instance Type: Dungeons", -- [10463]
+	"28/10/2022 22:49 [DEBUG] Instance: 1004", -- [10464]
+	"28/10/2022 22:49 [DEBUG] DifficultyID: 19", -- [10465]
+	"28/10/2022 22:49 [DEBUG] Achievements cannot be earned for the following difficulty 19", -- [10466]
+	"28/10/2022 22:51 [DEBUG] 6", -- [10467]
+	"28/10/2022 22:51 [DEBUG] Clearing Instance Variables", -- [10468]
+	"28/10/2022 22:51 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:1944: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [10469]
+	"28/10/2022 22:51 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:1952: attempt to call method 'InstanceCleanup' (a nil value).", -- [10470]
+	"28/10/2022 22:51 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [10471]
+	"28/10/2022 22:51 [DEBUG] Clearing Instance Variables if exists", -- [10472]
+	"28/10/2022 22:51 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:3810: attempt to call method 'clearVariables' (a nil value).", -- [10473]
+	"28/10/2022 22:51 [DEBUG] Clearing Instance Variables if exists", -- [10474]
+	"28/10/2022 22:51 [DEBUG] Clearing Instance Variables", -- [10475]
+	"28/10/2022 22:51 [DEBUG] Resetting Global Variables", -- [10476]
+	"28/10/2022 22:51 [DEBUG] InfoFrame does not need to be reset", -- [10477]
+	"28/10/2022 22:51 [DEBUG] Resetting PlayerRank", -- [10478]
+	"28/10/2022 22:51 [DEBUG] InfoFrame was not active", -- [10479]
+	"28/10/2022 22:54 [DEBUG] ---IAT Runtime---", -- [10480]
+	"28/10/2022 22:54 [DEBUG] Version: 4.0.0", -- [10481]
+	"28/10/2022 22:54 [DEBUG] Attempting to load from local NPC Cache", -- [10482]
+	"28/10/2022 22:54 [DEBUG] Generating NPC Cache...", -- [10483]
+	"28/10/2022 22:54 [DEBUG] Enabling Addon", -- [10484]
+	"28/10/2022 22:54 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10485]
+	"28/10/2022 22:57 [DEBUG] Showing Minimap Icon", -- [10486]
+	"28/10/2022 23:51 [DEBUG] ---IAT Runtime---", -- [10487]
+	"28/10/2022 23:51 [DEBUG] Version: 4.0.0", -- [10488]
+	"28/10/2022 23:51 [DEBUG] Attempting to load from local NPC Cache", -- [10489]
+	"28/10/2022 23:51 [DEBUG] Generating NPC Cache...", -- [10490]
+	"28/10/2022 23:51 [DEBUG] Enabling Addon", -- [10491]
+	"28/10/2022 23:51 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10492]
+	"29/10/2022 0:15 [DEBUG] Showing Minimap Icon", -- [10493]
+	"29/10/2022 0:20 [DEBUG] Player has entered instance", -- [10494]
+	"29/10/2022 0:20 [DEBUG] 1004", -- [10495]
+	"29/10/2022 0:20 [DEBUG] Offical Instance Name: 1004 _1004", -- [10496]
+	"29/10/2022 0:20 [DEBUG] Expansion: 5", -- [10497]
+	"29/10/2022 0:20 [DEBUG] Instance Type: Dungeons", -- [10498]
+	"29/10/2022 0:20 [DEBUG] Instance: 1004", -- [10499]
+	"29/10/2022 0:20 [DEBUG] DifficultyID: 19", -- [10500]
+	"29/10/2022 0:20 [DEBUG] Achievements cannot be earned for the following difficulty 19", -- [10501]
+	"29/10/2022 0:23 [DEBUG] 6", -- [10502]
+	"29/10/2022 0:23 [DEBUG] Clearing Instance Variables", -- [10503]
+	"29/10/2022 0:23 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:1944: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [10504]
+	"29/10/2022 0:23 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:1952: attempt to call method 'InstanceCleanup' (a nil value).", -- [10505]
+	"29/10/2022 0:23 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [10506]
+	"29/10/2022 0:23 [DEBUG] Clearing Instance Variables if exists", -- [10507]
+	"29/10/2022 0:23 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:3810: attempt to call method 'clearVariables' (a nil value).", -- [10508]
+	"29/10/2022 0:23 [DEBUG] Clearing Instance Variables if exists", -- [10509]
+	"29/10/2022 0:23 [DEBUG] Clearing Instance Variables", -- [10510]
+	"29/10/2022 0:23 [DEBUG] Resetting Global Variables", -- [10511]
+	"29/10/2022 0:23 [DEBUG] InfoFrame does not need to be reset", -- [10512]
+	"29/10/2022 0:23 [DEBUG] Resetting PlayerRank", -- [10513]
+	"29/10/2022 0:23 [DEBUG] InfoFrame was not active", -- [10514]
+	"29/10/2022 0:23 [DEBUG] ---IAT Runtime---", -- [10515]
+	"29/10/2022 0:23 [DEBUG] Version: 4.0.0", -- [10516]
+	"29/10/2022 0:23 [DEBUG] Attempting to load from local NPC Cache", -- [10517]
+	"29/10/2022 0:23 [DEBUG] Generating NPC Cache...", -- [10518]
+	"29/10/2022 0:23 [DEBUG] Enabling Addon", -- [10519]
+	"29/10/2022 0:23 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10520]
+	"29/10/2022 0:23 [DEBUG] Showing Minimap Icon", -- [10521]
+	"29/10/2022 0:26 [DEBUG] Player has entered instance", -- [10522]
+	"29/10/2022 0:26 [DEBUG] 1004", -- [10523]
+	"29/10/2022 0:26 [DEBUG] Offical Instance Name: 1004 _1004", -- [10524]
+	"29/10/2022 0:26 [DEBUG] Expansion: 5", -- [10525]
+	"29/10/2022 0:26 [DEBUG] Instance Type: Dungeons", -- [10526]
+	"29/10/2022 0:26 [DEBUG] Instance: 1004", -- [10527]
+	"29/10/2022 0:26 [DEBUG] DifficultyID: 19", -- [10528]
+	"29/10/2022 0:26 [DEBUG] Achievements cannot be earned for the following difficulty 19", -- [10529]
+	"29/10/2022 0:27 [DEBUG] Clearing Instance Variables", -- [10530]
+	"29/10/2022 0:27 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:1944: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [10531]
+	"29/10/2022 0:27 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:1952: attempt to call method 'InstanceCleanup' (a nil value).", -- [10532]
+	"29/10/2022 0:27 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [10533]
+	"29/10/2022 0:27 [DEBUG] Clearing Instance Variables if exists", -- [10534]
+	"29/10/2022 0:27 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:3810: attempt to call method 'clearVariables' (a nil value).", -- [10535]
+	"29/10/2022 0:27 [DEBUG] Clearing Instance Variables if exists", -- [10536]
+	"29/10/2022 0:27 [DEBUG] Clearing Instance Variables", -- [10537]
+	"29/10/2022 0:27 [DEBUG] Resetting Global Variables", -- [10538]
+	"29/10/2022 0:27 [DEBUG] InfoFrame does not need to be reset", -- [10539]
+	"29/10/2022 0:27 [DEBUG] Resetting PlayerRank", -- [10540]
+	"29/10/2022 0:27 [DEBUG] InfoFrame was not active", -- [10541]
+	"29/10/2022 0:27 [DEBUG] 6", -- [10542]
+	"29/10/2022 0:28 [DEBUG] ---IAT Runtime---", -- [10543]
+	"29/10/2022 0:28 [DEBUG] Version: 4.0.0", -- [10544]
+	"29/10/2022 0:28 [DEBUG] Attempting to load from local NPC Cache", -- [10545]
+	"29/10/2022 0:28 [DEBUG] Generating NPC Cache...", -- [10546]
+	"29/10/2022 0:28 [DEBUG] Enabling Addon", -- [10547]
+	"29/10/2022 0:28 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10548]
+	"29/10/2022 0:28 [DEBUG] Showing Minimap Icon", -- [10549]
+	"29/10/2022 0:34 [DEBUG] Player has entered instance", -- [10550]
+	"29/10/2022 0:34 [DEBUG] 1004", -- [10551]
+	"29/10/2022 0:34 [DEBUG] Offical Instance Name: 1004 _1004", -- [10552]
+	"29/10/2022 0:34 [DEBUG] Expansion: 5", -- [10553]
+	"29/10/2022 0:34 [DEBUG] Instance Type: Dungeons", -- [10554]
+	"29/10/2022 0:34 [DEBUG] Instance: 1004", -- [10555]
+	"29/10/2022 0:34 [DEBUG] DifficultyID: 19", -- [10556]
+	"29/10/2022 0:34 [DEBUG] Achievements cannot be earned for the following difficulty 19", -- [10557]
+	"29/10/2022 0:36 [DEBUG] Clearing Instance Variables", -- [10558]
+	"29/10/2022 0:36 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:1944: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [10559]
+	"29/10/2022 0:36 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:1952: attempt to call method 'InstanceCleanup' (a nil value).", -- [10560]
+	"29/10/2022 0:36 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [10561]
+	"29/10/2022 0:36 [DEBUG] Clearing Instance Variables if exists", -- [10562]
+	"29/10/2022 0:36 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:3810: attempt to call method 'clearVariables' (a nil value).", -- [10563]
+	"29/10/2022 0:36 [DEBUG] Clearing Instance Variables if exists", -- [10564]
+	"29/10/2022 0:36 [DEBUG] Clearing Instance Variables", -- [10565]
+	"29/10/2022 0:36 [DEBUG] Resetting Global Variables", -- [10566]
+	"29/10/2022 0:36 [DEBUG] InfoFrame does not need to be reset", -- [10567]
+	"29/10/2022 0:36 [DEBUG] Resetting PlayerRank", -- [10568]
+	"29/10/2022 0:36 [DEBUG] InfoFrame was not active", -- [10569]
+	"29/10/2022 0:36 [DEBUG] 6", -- [10570]
+	"29/10/2022 0:36 [DEBUG] ---IAT Runtime---", -- [10571]
+	"29/10/2022 0:36 [DEBUG] Version: 4.0.0", -- [10572]
+	"29/10/2022 0:36 [DEBUG] Attempting to load from local NPC Cache", -- [10573]
+	"29/10/2022 0:36 [DEBUG] Generating NPC Cache...", -- [10574]
+	"29/10/2022 0:36 [DEBUG] Enabling Addon", -- [10575]
+	"29/10/2022 0:36 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10576]
+	"29/10/2022 0:37 [DEBUG] Showing Minimap Icon", -- [10577]
+	"29/10/2022 0:54 [DEBUG] Player has entered instance", -- [10578]
+	"29/10/2022 0:54 [DEBUG] 1004", -- [10579]
+	"29/10/2022 0:54 [DEBUG] Offical Instance Name: 1004 _1004", -- [10580]
+	"29/10/2022 0:54 [DEBUG] Expansion: 5", -- [10581]
+	"29/10/2022 0:54 [DEBUG] Instance Type: Dungeons", -- [10582]
+	"29/10/2022 0:54 [DEBUG] Instance: 1004", -- [10583]
+	"29/10/2022 0:54 [DEBUG] DifficultyID: 19", -- [10584]
+	"29/10/2022 0:54 [DEBUG] Achievements cannot be earned for the following difficulty 19", -- [10585]
+	"29/10/2022 0:57 [DEBUG] Clearing Instance Variables", -- [10586]
+	"29/10/2022 0:57 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:1944: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [10587]
+	"29/10/2022 0:57 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:1952: attempt to call method 'InstanceCleanup' (a nil value).", -- [10588]
+	"29/10/2022 0:57 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [10589]
+	"29/10/2022 0:57 [DEBUG] Clearing Instance Variables if exists", -- [10590]
+	"29/10/2022 0:57 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:3810: attempt to call method 'clearVariables' (a nil value).", -- [10591]
+	"29/10/2022 0:57 [DEBUG] Clearing Instance Variables if exists", -- [10592]
+	"29/10/2022 0:57 [DEBUG] Clearing Instance Variables", -- [10593]
+	"29/10/2022 0:57 [DEBUG] Resetting Global Variables", -- [10594]
+	"29/10/2022 0:57 [DEBUG] InfoFrame does not need to be reset", -- [10595]
+	"29/10/2022 0:57 [DEBUG] Resetting PlayerRank", -- [10596]
+	"29/10/2022 0:57 [DEBUG] InfoFrame was not active", -- [10597]
+	"29/10/2022 0:57 [DEBUG] 6", -- [10598]
+	"29/10/2022 0:57 [DEBUG] ---IAT Runtime---", -- [10599]
+	"29/10/2022 0:57 [DEBUG] Version: 4.0.0", -- [10600]
+	"29/10/2022 0:57 [DEBUG] Attempting to load from local NPC Cache", -- [10601]
+	"29/10/2022 0:57 [DEBUG] Generating NPC Cache...", -- [10602]
+	"29/10/2022 0:57 [DEBUG] Enabling Addon", -- [10603]
+	"29/10/2022 0:57 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10604]
+	"29/10/2022 0:59 [DEBUG] Showing Minimap Icon", -- [10605]
+	"29/10/2022 1:19 [DEBUG] Player has entered instance", -- [10606]
+	"29/10/2022 1:19 [DEBUG] 1004", -- [10607]
+	"29/10/2022 1:19 [DEBUG] Offical Instance Name: 1004 _1004", -- [10608]
+	"29/10/2022 1:19 [DEBUG] Expansion: 5", -- [10609]
+	"29/10/2022 1:19 [DEBUG] Instance Type: Dungeons", -- [10610]
+	"29/10/2022 1:19 [DEBUG] Instance: 1004", -- [10611]
+	"29/10/2022 1:19 [DEBUG] DifficultyID: 19", -- [10612]
+	"29/10/2022 1:19 [DEBUG] Achievements cannot be earned for the following difficulty 19", -- [10613]
+	"29/10/2022 1:22 [DEBUG] Clearing Instance Variables", -- [10614]
+	"29/10/2022 1:22 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:1944: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [10615]
+	"29/10/2022 1:22 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:1952: attempt to call method 'InstanceCleanup' (a nil value).", -- [10616]
+	"29/10/2022 1:22 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [10617]
+	"29/10/2022 1:22 [DEBUG] Clearing Instance Variables if exists", -- [10618]
+	"29/10/2022 1:22 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:3810: attempt to call method 'clearVariables' (a nil value).", -- [10619]
+	"29/10/2022 1:22 [DEBUG] Clearing Instance Variables if exists", -- [10620]
+	"29/10/2022 1:22 [DEBUG] Clearing Instance Variables", -- [10621]
+	"29/10/2022 1:22 [DEBUG] Resetting Global Variables", -- [10622]
+	"29/10/2022 1:22 [DEBUG] InfoFrame does not need to be reset", -- [10623]
+	"29/10/2022 1:22 [DEBUG] Resetting PlayerRank", -- [10624]
+	"29/10/2022 1:22 [DEBUG] InfoFrame was not active", -- [10625]
+	"29/10/2022 1:22 [DEBUG] 6", -- [10626]
+	"29/10/2022 1:22 [DEBUG] ---IAT Runtime---", -- [10627]
+	"29/10/2022 1:22 [DEBUG] Version: 4.0.0", -- [10628]
+	"29/10/2022 1:22 [DEBUG] Attempting to load from local NPC Cache", -- [10629]
+	"29/10/2022 1:22 [DEBUG] Generating NPC Cache...", -- [10630]
+	"29/10/2022 1:22 [DEBUG] Enabling Addon", -- [10631]
+	"29/10/2022 1:22 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10632]
+	"29/10/2022 1:22 [DEBUG] Showing Minimap Icon", -- [10633]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [10634]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.0.0", -- [10635]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [10636]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [10637]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [10638]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10639]
+	"29/10/2022 2:55 [DEBUG] Showing Minimap Icon", -- [10640]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [10641]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.0.0", -- [10642]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [10643]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [10644]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [10645]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10646]
+	"29/10/2022 11:2 [DEBUG] Showing Minimap Icon", -- [10647]
+	"29/10/2022 11:4 [DEBUG] Player has entered instance", -- [10648]
+	"29/10/2022 11:4 [DEBUG] 1004", -- [10649]
+	"29/10/2022 11:4 [DEBUG] Offical Instance Name: 1004 _1004", -- [10650]
+	"29/10/2022 11:4 [DEBUG] Expansion: 5", -- [10651]
+	"29/10/2022 11:4 [DEBUG] Instance Type: Dungeons", -- [10652]
+	"29/10/2022 11:4 [DEBUG] Instance: 1004", -- [10653]
+	"29/10/2022 11:4 [DEBUG] DifficultyID: 19", -- [10654]
+	"29/10/2022 11:4 [DEBUG] Achievements cannot be earned for the following difficulty 19", -- [10655]
+	"29/10/2022 11:7 [DEBUG] 6", -- [10656]
+	"29/10/2022 11:7 [DEBUG] Clearing Instance Variables", -- [10657]
+	"29/10/2022 11:7 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:1944: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [10658]
+	"29/10/2022 11:7 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:1952: attempt to call method 'InstanceCleanup' (a nil value).", -- [10659]
+	"29/10/2022 11:7 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [10660]
+	"29/10/2022 11:7 [DEBUG] Clearing Instance Variables if exists", -- [10661]
+	"29/10/2022 11:7 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:3810: attempt to call method 'clearVariables' (a nil value).", -- [10662]
+	"29/10/2022 11:7 [DEBUG] Clearing Instance Variables if exists", -- [10663]
+	"29/10/2022 11:7 [DEBUG] Clearing Instance Variables", -- [10664]
+	"29/10/2022 11:7 [DEBUG] Resetting Global Variables", -- [10665]
+	"29/10/2022 11:7 [DEBUG] InfoFrame does not need to be reset", -- [10666]
+	"29/10/2022 11:7 [DEBUG] Resetting PlayerRank", -- [10667]
+	"29/10/2022 11:7 [DEBUG] InfoFrame was not active", -- [10668]
+	"29/10/2022 11:7 [DEBUG] ---IAT Runtime---", -- [10669]
+	"29/10/2022 11:7 [DEBUG] Version: 4.0.0", -- [10670]
+	"29/10/2022 11:7 [DEBUG] Attempting to load from local NPC Cache", -- [10671]
+	"29/10/2022 11:7 [DEBUG] Generating NPC Cache...", -- [10672]
+	"29/10/2022 11:7 [DEBUG] Enabling Addon", -- [10673]
+	"29/10/2022 11:7 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10674]
+	"29/10/2022 11:10 [DEBUG] Showing Minimap Icon", -- [10675]
+	"29/10/2022 11:21 [DEBUG] Player has entered instance", -- [10676]
+	"29/10/2022 11:21 [DEBUG] 1004", -- [10677]
+	"29/10/2022 11:21 [DEBUG] Offical Instance Name: 1004 _1004", -- [10678]
+	"29/10/2022 11:21 [DEBUG] Expansion: 5", -- [10679]
+	"29/10/2022 11:21 [DEBUG] Instance Type: Dungeons", -- [10680]
+	"29/10/2022 11:21 [DEBUG] Instance: 1004", -- [10681]
+	"29/10/2022 11:21 [DEBUG] DifficultyID: 19", -- [10682]
+	"29/10/2022 11:21 [DEBUG] Achievements cannot be earned for the following difficulty 19", -- [10683]
+	"29/10/2022 11:24 [DEBUG] Clearing Instance Variables", -- [10684]
+	"29/10/2022 11:24 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:1944: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [10685]
+	"29/10/2022 11:24 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:1952: attempt to call method 'InstanceCleanup' (a nil value).", -- [10686]
+	"29/10/2022 11:24 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [10687]
+	"29/10/2022 11:24 [DEBUG] Clearing Instance Variables if exists", -- [10688]
+	"29/10/2022 11:24 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:3810: attempt to call method 'clearVariables' (a nil value).", -- [10689]
+	"29/10/2022 11:24 [DEBUG] Clearing Instance Variables if exists", -- [10690]
+	"29/10/2022 11:24 [DEBUG] Clearing Instance Variables", -- [10691]
+	"29/10/2022 11:24 [DEBUG] Resetting Global Variables", -- [10692]
+	"29/10/2022 11:24 [DEBUG] InfoFrame does not need to be reset", -- [10693]
+	"29/10/2022 11:24 [DEBUG] Resetting PlayerRank", -- [10694]
+	"29/10/2022 11:24 [DEBUG] InfoFrame was not active", -- [10695]
+	"29/10/2022 11:24 [DEBUG] 6", -- [10696]
+	"29/10/2022 11:24 [DEBUG] ---IAT Runtime---", -- [10697]
+	"29/10/2022 11:24 [DEBUG] Version: 4.0.0", -- [10698]
+	"29/10/2022 11:24 [DEBUG] Attempting to load from local NPC Cache", -- [10699]
+	"29/10/2022 11:24 [DEBUG] Generating NPC Cache...", -- [10700]
+	"29/10/2022 11:24 [DEBUG] Enabling Addon", -- [10701]
+	"29/10/2022 11:24 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10702]
+	"29/10/2022 11:24 [DEBUG] Showing Minimap Icon", -- [10703]
+	"29/10/2022 11:26 [DEBUG] Player has entered instance", -- [10704]
+	"29/10/2022 11:26 [DEBUG] 1004", -- [10705]
+	"29/10/2022 11:26 [DEBUG] Offical Instance Name: 1004 _1004", -- [10706]
+	"29/10/2022 11:26 [DEBUG] Expansion: 5", -- [10707]
+	"29/10/2022 11:26 [DEBUG] Instance Type: Dungeons", -- [10708]
+	"29/10/2022 11:26 [DEBUG] Instance: 1004", -- [10709]
+	"29/10/2022 11:26 [DEBUG] DifficultyID: 19", -- [10710]
+	"29/10/2022 11:26 [DEBUG] Achievements cannot be earned for the following difficulty 19", -- [10711]
+	"29/10/2022 11:29 [DEBUG] Clearing Instance Variables", -- [10712]
+	"29/10/2022 11:29 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:1944: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [10713]
+	"29/10/2022 11:29 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:1952: attempt to call method 'InstanceCleanup' (a nil value).", -- [10714]
+	"29/10/2022 11:29 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [10715]
+	"29/10/2022 11:29 [DEBUG] Clearing Instance Variables if exists", -- [10716]
+	"29/10/2022 11:29 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:3810: attempt to call method 'clearVariables' (a nil value).", -- [10717]
+	"29/10/2022 11:29 [DEBUG] Clearing Instance Variables if exists", -- [10718]
+	"29/10/2022 11:29 [DEBUG] Clearing Instance Variables", -- [10719]
+	"29/10/2022 11:29 [DEBUG] Resetting Global Variables", -- [10720]
+	"29/10/2022 11:29 [DEBUG] InfoFrame does not need to be reset", -- [10721]
+	"29/10/2022 11:29 [DEBUG] Resetting PlayerRank", -- [10722]
+	"29/10/2022 11:29 [DEBUG] InfoFrame was not active", -- [10723]
+	"29/10/2022 11:29 [DEBUG] 6", -- [10724]
+	"29/10/2022 11:29 [DEBUG] ---IAT Runtime---", -- [10725]
+	"29/10/2022 11:29 [DEBUG] Version: 4.0.0", -- [10726]
+	"29/10/2022 11:29 [DEBUG] Attempting to load from local NPC Cache", -- [10727]
+	"29/10/2022 11:29 [DEBUG] Generating NPC Cache...", -- [10728]
+	"29/10/2022 11:29 [DEBUG] Enabling Addon", -- [10729]
+	"29/10/2022 11:29 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10730]
+	"29/10/2022 11:32 [DEBUG] Showing Minimap Icon", -- [10731]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [10732]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.0.0", -- [10733]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [10734]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [10735]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [10736]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10737]
+	"30/10/2022 13:12 [DEBUG] Showing Minimap Icon", -- [10738]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [10739]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.1.0", -- [10740]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [10741]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [10742]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [10743]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10744]
+	"30/10/2022 19:56 [DEBUG] Showing Minimap Icon", -- [10745]
+	"30/10/2022 19:56 [DEBUG] ---IAT Runtime---", -- [10746]
+	"30/10/2022 19:56 [DEBUG] Version: 4.1.0", -- [10747]
+	"30/10/2022 19:56 [DEBUG] Attempting to load from local NPC Cache", -- [10748]
+	"30/10/2022 19:56 [DEBUG] Generating NPC Cache...", -- [10749]
+	"30/10/2022 19:56 [DEBUG] Enabling Addon", -- [10750]
+	"30/10/2022 19:56 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10751]
+	"30/10/2022 19:56 [DEBUG] Showing Minimap Icon", -- [10752]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [10753]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [10754]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [10755]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [10756]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [10757]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10758]
+	"31/10/2022 20:9 [DEBUG] Showing Minimap Icon", -- [10759]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [10760]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [10761]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [10762]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [10763]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [10764]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10765]
+	"31/10/2022 22:11 [DEBUG] Showing Minimap Icon", -- [10766]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [10767]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [10768]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [10769]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [10770]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [10771]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10772]
+	"1/11/2022 12:19 [DEBUG] Showing Minimap Icon", -- [10773]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [10774]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [10775]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [10776]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [10777]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [10778]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10779]
+	"1/11/2022 13:21 [DEBUG] Showing Minimap Icon", -- [10780]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [10781]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [10782]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [10783]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [10784]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [10785]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10786]
+	"1/11/2022 14:24 [DEBUG] Showing Minimap Icon", -- [10787]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [10788]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [10789]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [10790]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [10791]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [10792]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10793]
+	"1/11/2022 15:7 [DEBUG] Showing Minimap Icon", -- [10794]
+	"1/11/2022 18:10 [DEBUG] ---IAT Runtime---", -- [10795]
+	"1/11/2022 18:10 [DEBUG] Version: 4.2.0", -- [10796]
+	"1/11/2022 18:10 [DEBUG] Attempting to load from local NPC Cache", -- [10797]
+	"1/11/2022 18:10 [DEBUG] Generating NPC Cache...", -- [10798]
+	"1/11/2022 18:10 [DEBUG] Enabling Addon", -- [10799]
+	"1/11/2022 18:10 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10800]
+	"1/11/2022 18:10 [DEBUG] Showing Minimap Icon", -- [10801]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [10802]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [10803]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [10804]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [10805]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [10806]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10807]
+	"1/11/2022 21:5 [DEBUG] Showing Minimap Icon", -- [10808]
+	"1/11/2022 21:8 [DEBUG] Player has entered instance", -- [10809]
+	"1/11/2022 21:8 [DEBUG] 2296", -- [10810]
+	"1/11/2022 21:8 [DEBUG] Offical Instance Name: 2296 _2296", -- [10811]
+	"1/11/2022 21:8 [DEBUG] Expansion: 9", -- [10812]
+	"1/11/2022 21:8 [DEBUG] Instance Type: Raids", -- [10813]
+	"1/11/2022 21:8 [DEBUG] Instance: 2296", -- [10814]
+	"1/11/2022 21:8 [DEBUG] DifficultyID: 17", -- [10815]
+	"1/11/2022 21:8 [DEBUG] Achievements cannot be earned for the following difficulty 17", -- [10816]
+	"1/11/2022 21:33 [DEBUG] 6", -- [10817]
+	"1/11/2022 21:33 [DEBUG] Clearing Instance Variables", -- [10818]
+	"1/11/2022 21:33 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:1953: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [10819]
+	"1/11/2022 21:33 [DEBUG] Cleaning up instance events for _2296", -- [10820]
+	"1/11/2022 21:33 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [10821]
+	"1/11/2022 21:33 [DEBUG] Clearing Instance Variables if exists", -- [10822]
+	"1/11/2022 21:33 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:3840: attempt to call method 'clearVariables' (a nil value).", -- [10823]
+	"1/11/2022 21:33 [DEBUG] Clearing Instance Variables if exists", -- [10824]
+	"1/11/2022 21:33 [DEBUG] Clearing Instance Variables", -- [10825]
+	"1/11/2022 21:33 [DEBUG] Resetting Global Variables", -- [10826]
+	"1/11/2022 21:33 [DEBUG] InfoFrame does not need to be reset", -- [10827]
+	"1/11/2022 21:33 [DEBUG] Resetting PlayerRank", -- [10828]
+	"1/11/2022 21:33 [DEBUG] InfoFrame was not active", -- [10829]
+	"1/11/2022 21:51 [DEBUG] ---IAT Runtime---", -- [10830]
+	"1/11/2022 21:51 [DEBUG] Version: 4.2.0", -- [10831]
+	"1/11/2022 21:51 [DEBUG] Attempting to load from local NPC Cache", -- [10832]
+	"1/11/2022 21:51 [DEBUG] Generating NPC Cache...", -- [10833]
+	"1/11/2022 21:51 [DEBUG] Enabling Addon", -- [10834]
+	"1/11/2022 21:51 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10835]
+	"1/11/2022 21:51 [DEBUG] Showing Minimap Icon", -- [10836]
+	"1/11/2022 22:8 [DEBUG] Player has entered instance", -- [10837]
+	"1/11/2022 22:8 [DEBUG] 2296", -- [10838]
+	"1/11/2022 22:8 [DEBUG] Offical Instance Name: 2296 _2296", -- [10839]
+	"1/11/2022 22:8 [DEBUG] Expansion: 9", -- [10840]
+	"1/11/2022 22:8 [DEBUG] Instance Type: Raids", -- [10841]
+	"1/11/2022 22:8 [DEBUG] Instance: 2296", -- [10842]
+	"1/11/2022 22:8 [DEBUG] DifficultyID: 17", -- [10843]
+	"1/11/2022 22:8 [DEBUG] Achievements cannot be earned for the following difficulty 17", -- [10844]
+	"1/11/2022 22:25 [DEBUG] ---IAT Runtime---", -- [10845]
+	"1/11/2022 22:25 [DEBUG] Version: 4.2.0", -- [10846]
+	"1/11/2022 22:25 [DEBUG] Attempting to load from local NPC Cache", -- [10847]
+	"1/11/2022 22:25 [DEBUG] Generating NPC Cache...", -- [10848]
+	"1/11/2022 22:25 [DEBUG] Enabling Addon", -- [10849]
+	"1/11/2022 22:25 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10850]
+	"1/11/2022 22:25 [DEBUG] Showing Minimap Icon", -- [10851]
+	"1/11/2022 22:26 [DEBUG] Player has entered instance", -- [10852]
+	"1/11/2022 22:26 [DEBUG] 2296", -- [10853]
+	"1/11/2022 22:26 [DEBUG] Offical Instance Name: 2296 _2296", -- [10854]
+	"1/11/2022 22:26 [DEBUG] Expansion: 9", -- [10855]
+	"1/11/2022 22:26 [DEBUG] Instance Type: Raids", -- [10856]
+	"1/11/2022 22:26 [DEBUG] Instance: 2296", -- [10857]
+	"1/11/2022 22:26 [DEBUG] DifficultyID: 17", -- [10858]
+	"1/11/2022 22:26 [DEBUG] Achievements cannot be earned for the following difficulty 17", -- [10859]
+	"1/11/2022 22:38 [DEBUG] ---IAT Runtime---", -- [10860]
+	"1/11/2022 22:38 [DEBUG] Version: 4.2.0", -- [10861]
+	"1/11/2022 22:38 [DEBUG] Attempting to load from local NPC Cache", -- [10862]
+	"1/11/2022 22:38 [DEBUG] Generating NPC Cache...", -- [10863]
+	"1/11/2022 22:38 [DEBUG] Enabling Addon", -- [10864]
+	"1/11/2022 22:38 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10865]
+	"1/11/2022 22:38 [DEBUG] Showing Minimap Icon", -- [10866]
+	"1/11/2022 22:39 [DEBUG] Player has entered instance", -- [10867]
+	"1/11/2022 22:39 [DEBUG] 2296", -- [10868]
+	"1/11/2022 22:39 [DEBUG] Offical Instance Name: 2296 _2296", -- [10869]
+	"1/11/2022 22:39 [DEBUG] Expansion: 9", -- [10870]
+	"1/11/2022 22:39 [DEBUG] Instance Type: Raids", -- [10871]
+	"1/11/2022 22:39 [DEBUG] Instance: 2296", -- [10872]
+	"1/11/2022 22:39 [DEBUG] DifficultyID: 17", -- [10873]
+	"1/11/2022 22:39 [DEBUG] Achievements cannot be earned for the following difficulty 17", -- [10874]
+	"1/11/2022 22:49 [DEBUG] ---IAT Runtime---", -- [10875]
+	"1/11/2022 22:49 [DEBUG] Version: 4.2.0", -- [10876]
+	"1/11/2022 22:49 [DEBUG] Attempting to load from local NPC Cache", -- [10877]
+	"1/11/2022 22:49 [DEBUG] Generating NPC Cache...", -- [10878]
+	"1/11/2022 22:49 [DEBUG] Enabling Addon", -- [10879]
+	"1/11/2022 22:49 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10880]
+	"1/11/2022 22:49 [DEBUG] Showing Minimap Icon", -- [10881]
+	"1/11/2022 22:50 [DEBUG] Player has entered instance", -- [10882]
+	"1/11/2022 22:50 [DEBUG] 2296", -- [10883]
+	"1/11/2022 22:50 [DEBUG] Offical Instance Name: 2296 _2296", -- [10884]
+	"1/11/2022 22:50 [DEBUG] Expansion: 9", -- [10885]
+	"1/11/2022 22:50 [DEBUG] Instance Type: Raids", -- [10886]
+	"1/11/2022 22:50 [DEBUG] Instance: 2296", -- [10887]
+	"1/11/2022 22:50 [DEBUG] DifficultyID: 17", -- [10888]
+	"1/11/2022 22:50 [DEBUG] Achievements cannot be earned for the following difficulty 17", -- [10889]
+	"1/11/2022 22:51 [DEBUG] 6", -- [10890]
+	"1/11/2022 22:51 [DEBUG] Clearing Instance Variables", -- [10891]
+	"1/11/2022 22:51 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:1953: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [10892]
+	"1/11/2022 22:51 [DEBUG] Cleaning up instance events for _2296", -- [10893]
+	"1/11/2022 22:51 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [10894]
+	"1/11/2022 22:51 [DEBUG] Clearing Instance Variables if exists", -- [10895]
+	"1/11/2022 22:51 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:3840: attempt to call method 'clearVariables' (a nil value).", -- [10896]
+	"1/11/2022 22:51 [DEBUG] Clearing Instance Variables if exists", -- [10897]
+	"1/11/2022 22:51 [DEBUG] Clearing Instance Variables", -- [10898]
+	"1/11/2022 22:51 [DEBUG] Resetting Global Variables", -- [10899]
+	"1/11/2022 22:51 [DEBUG] InfoFrame does not need to be reset", -- [10900]
+	"1/11/2022 22:51 [DEBUG] Resetting PlayerRank", -- [10901]
+	"1/11/2022 22:51 [DEBUG] InfoFrame was not active", -- [10902]
+	"1/11/2022 23:27 [DEBUG] ---IAT Runtime---", -- [10903]
+	"1/11/2022 23:27 [DEBUG] Version: 4.2.0", -- [10904]
+	"1/11/2022 23:27 [DEBUG] Attempting to load from local NPC Cache", -- [10905]
+	"1/11/2022 23:27 [DEBUG] Generating NPC Cache...", -- [10906]
+	"1/11/2022 23:27 [DEBUG] Enabling Addon", -- [10907]
+	"1/11/2022 23:27 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10908]
+	"1/11/2022 23:28 [DEBUG] Showing Minimap Icon", -- [10909]
+	"1/11/2022 23:32 [DEBUG] ---IAT Runtime---", -- [10910]
+	"1/11/2022 23:32 [DEBUG] Version: 4.2.0", -- [10911]
+	"1/11/2022 23:32 [DEBUG] Attempting to load from local NPC Cache", -- [10912]
+	"1/11/2022 23:32 [DEBUG] Generating NPC Cache...", -- [10913]
+	"1/11/2022 23:32 [DEBUG] Enabling Addon", -- [10914]
+	"1/11/2022 23:32 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10915]
+	"1/11/2022 23:34 [DEBUG] Showing Minimap Icon", -- [10916]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [10917]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [10918]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [10919]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [10920]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [10921]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10922]
+	"3/11/2022 8:22 [DEBUG] Showing Minimap Icon", -- [10923]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [10924]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [10925]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [10926]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [10927]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [10928]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10929]
+	"3/11/2022 15:40 [DEBUG] Showing Minimap Icon", -- [10930]
+	"3/11/2022 19:45 [DEBUG] ---IAT Runtime---", -- [10931]
+	"3/11/2022 19:45 [DEBUG] Version: 4.2.0", -- [10932]
+	"3/11/2022 19:45 [DEBUG] Attempting to load from local NPC Cache", -- [10933]
+	"3/11/2022 19:45 [DEBUG] Generating NPC Cache...", -- [10934]
+	"3/11/2022 19:45 [DEBUG] Enabling Addon", -- [10935]
+	"3/11/2022 19:45 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10936]
+	"3/11/2022 19:45 [DEBUG] Showing Minimap Icon", -- [10937]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [10938]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [10939]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [10940]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [10941]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [10942]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10943]
+	"4/11/2022 18:38 [DEBUG] Showing Minimap Icon", -- [10944]
+	"4/11/2022 21:12 [DEBUG] ---IAT Runtime---", -- [10945]
+	"4/11/2022 21:12 [DEBUG] Version: 4.2.0", -- [10946]
+	"4/11/2022 21:12 [DEBUG] Attempting to load from local NPC Cache", -- [10947]
+	"4/11/2022 21:12 [DEBUG] Generating NPC Cache...", -- [10948]
+	"4/11/2022 21:12 [DEBUG] Enabling Addon", -- [10949]
+	"4/11/2022 21:12 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10950]
+	"4/11/2022 22:1 [DEBUG] Showing Minimap Icon", -- [10951]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [10952]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [10953]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [10954]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [10955]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [10956]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10957]
+	"5/11/2022 9:37 [DEBUG] Showing Minimap Icon", -- [10958]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [10959]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [10960]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [10961]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [10962]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [10963]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10964]
+	"5/11/2022 19:49 [DEBUG] Showing Minimap Icon", -- [10965]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [10966]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [10967]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [10968]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [10969]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [10970]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10971]
+	"5/11/2022 22:38 [DEBUG] Showing Minimap Icon", -- [10972]
+	"5/11/2022 23:15 [DEBUG] ---IAT Runtime---", -- [10973]
+	"5/11/2022 23:15 [DEBUG] Version: 4.2.0", -- [10974]
+	"5/11/2022 23:15 [DEBUG] Attempting to load from local NPC Cache", -- [10975]
+	"5/11/2022 23:15 [DEBUG] Generating NPC Cache...", -- [10976]
+	"5/11/2022 23:15 [DEBUG] Enabling Addon", -- [10977]
+	"5/11/2022 23:15 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10978]
+	"5/11/2022 23:15 [DEBUG] Showing Minimap Icon", -- [10979]
+	"5/11/2022 23:25 [DEBUG] Player has entered instance", -- [10980]
+	"5/11/2022 23:25 [DEBUG] 2296", -- [10981]
+	"5/11/2022 23:25 [DEBUG] Offical Instance Name: 2296 _2296", -- [10982]
+	"5/11/2022 23:25 [DEBUG] Expansion: 9", -- [10983]
+	"5/11/2022 23:25 [DEBUG] Instance Type: Raids", -- [10984]
+	"5/11/2022 23:25 [DEBUG] Instance: 2296", -- [10985]
+	"5/11/2022 23:25 [DEBUG] DifficultyID: 17", -- [10986]
+	"5/11/2022 23:25 [DEBUG] Achievements cannot be earned for the following difficulty 17", -- [10987]
+	"5/11/2022 23:36 [DEBUG] ---IAT Runtime---", -- [10988]
+	"5/11/2022 23:36 [DEBUG] Version: 4.2.0", -- [10989]
+	"5/11/2022 23:36 [DEBUG] Attempting to load from local NPC Cache", -- [10990]
+	"5/11/2022 23:36 [DEBUG] Generating NPC Cache...", -- [10991]
+	"5/11/2022 23:36 [DEBUG] Enabling Addon", -- [10992]
+	"5/11/2022 23:36 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [10993]
+	"5/11/2022 23:36 [DEBUG] Showing Minimap Icon", -- [10994]
+	"5/11/2022 23:37 [DEBUG] Player has entered instance", -- [10995]
+	"5/11/2022 23:37 [DEBUG] 2296", -- [10996]
+	"5/11/2022 23:37 [DEBUG] Offical Instance Name: 2296 _2296", -- [10997]
+	"5/11/2022 23:37 [DEBUG] Expansion: 9", -- [10998]
+	"5/11/2022 23:37 [DEBUG] Instance Type: Raids", -- [10999]
+	"5/11/2022 23:37 [DEBUG] Instance: 2296", -- [11000]
+	"5/11/2022 23:37 [DEBUG] DifficultyID: 17", -- [11001]
+	"5/11/2022 23:37 [DEBUG] Achievements cannot be earned for the following difficulty 17", -- [11002]
+	"5/11/2022 23:40 [DEBUG] ---IAT Runtime---", -- [11003]
+	"5/11/2022 23:40 [DEBUG] Version: 4.2.0", -- [11004]
+	"5/11/2022 23:40 [DEBUG] Attempting to load from local NPC Cache", -- [11005]
+	"5/11/2022 23:40 [DEBUG] Generating NPC Cache...", -- [11006]
+	"5/11/2022 23:40 [DEBUG] Enabling Addon", -- [11007]
+	"5/11/2022 23:40 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11008]
+	"5/11/2022 23:40 [DEBUG] Showing Minimap Icon", -- [11009]
+	"5/11/2022 23:41 [DEBUG] Player has entered instance", -- [11010]
+	"5/11/2022 23:41 [DEBUG] 2296", -- [11011]
+	"5/11/2022 23:41 [DEBUG] Offical Instance Name: 2296 _2296", -- [11012]
+	"5/11/2022 23:41 [DEBUG] Expansion: 9", -- [11013]
+	"5/11/2022 23:41 [DEBUG] Instance Type: Raids", -- [11014]
+	"5/11/2022 23:41 [DEBUG] Instance: 2296", -- [11015]
+	"5/11/2022 23:41 [DEBUG] DifficultyID: 17", -- [11016]
+	"5/11/2022 23:41 [DEBUG] Achievements cannot be earned for the following difficulty 17", -- [11017]
+	"5/11/2022 23:52 [DEBUG] 6", -- [11018]
+	"5/11/2022 23:52 [DEBUG] Clearing Instance Variables", -- [11019]
+	"5/11/2022 23:52 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:1953: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [11020]
+	"5/11/2022 23:52 [DEBUG] Cleaning up instance events for _2296", -- [11021]
+	"5/11/2022 23:52 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [11022]
+	"5/11/2022 23:52 [DEBUG] Clearing Instance Variables if exists", -- [11023]
+	"5/11/2022 23:52 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:3840: attempt to call method 'clearVariables' (a nil value).", -- [11024]
+	"5/11/2022 23:52 [DEBUG] Clearing Instance Variables if exists", -- [11025]
+	"5/11/2022 23:52 [DEBUG] Clearing Instance Variables", -- [11026]
+	"5/11/2022 23:52 [DEBUG] Resetting Global Variables", -- [11027]
+	"5/11/2022 23:52 [DEBUG] InfoFrame does not need to be reset", -- [11028]
+	"5/11/2022 23:52 [DEBUG] Resetting PlayerRank", -- [11029]
+	"5/11/2022 23:52 [DEBUG] InfoFrame was not active", -- [11030]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11031]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [11032]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11033]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11034]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11035]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11036]
+	"6/11/2022 8:4 [DEBUG] Showing Minimap Icon", -- [11037]
+	"6/11/2022 8:7 [DEBUG] ---IAT Runtime---", -- [11038]
+	"6/11/2022 8:7 [DEBUG] Version: 4.2.0", -- [11039]
+	"6/11/2022 8:7 [DEBUG] Attempting to load from local NPC Cache", -- [11040]
+	"6/11/2022 8:7 [DEBUG] Generating NPC Cache...", -- [11041]
+	"6/11/2022 8:7 [DEBUG] Enabling Addon", -- [11042]
+	"6/11/2022 8:7 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11043]
+	"6/11/2022 8:7 [DEBUG] Showing Minimap Icon", -- [11044]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11045]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [11046]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11047]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11048]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11049]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11050]
+	"6/11/2022 9:4 [DEBUG] Showing Minimap Icon", -- [11051]
+	"6/11/2022 9:4 [DEBUG] ---IAT Runtime---", -- [11052]
+	"6/11/2022 9:4 [DEBUG] Version: 4.2.0", -- [11053]
+	"6/11/2022 9:4 [DEBUG] Attempting to load from local NPC Cache", -- [11054]
+	"6/11/2022 9:4 [DEBUG] Generating NPC Cache...", -- [11055]
+	"6/11/2022 9:4 [DEBUG] Enabling Addon", -- [11056]
+	"6/11/2022 9:4 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11057]
+	"6/11/2022 9:4 [DEBUG] Showing Minimap Icon", -- [11058]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11059]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [11060]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11061]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11062]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11063]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11064]
+	"6/11/2022 14:20 [DEBUG] Showing Minimap Icon", -- [11065]
+	"6/11/2022 16:17 [DEBUG] ---IAT Runtime---", -- [11066]
+	"6/11/2022 16:17 [DEBUG] Version: 4.2.0", -- [11067]
+	"6/11/2022 16:17 [DEBUG] Attempting to load from local NPC Cache", -- [11068]
+	"6/11/2022 16:17 [DEBUG] Generating NPC Cache...", -- [11069]
+	"6/11/2022 16:17 [DEBUG] Enabling Addon", -- [11070]
+	"6/11/2022 16:17 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11071]
+	"6/11/2022 16:19 [DEBUG] Showing Minimap Icon", -- [11072]
+	"6/11/2022 16:27 [DEBUG] ---IAT Runtime---", -- [11073]
+	"6/11/2022 16:27 [DEBUG] Version: 4.2.0", -- [11074]
+	"6/11/2022 16:27 [DEBUG] Attempting to load from local NPC Cache", -- [11075]
+	"6/11/2022 16:27 [DEBUG] Generating NPC Cache...", -- [11076]
+	"6/11/2022 16:27 [DEBUG] Enabling Addon", -- [11077]
+	"6/11/2022 16:27 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11078]
+	"6/11/2022 16:28 [DEBUG] Showing Minimap Icon", -- [11079]
+	"6/11/2022 16:52 [DEBUG] ---IAT Runtime---", -- [11080]
+	"6/11/2022 16:52 [DEBUG] Version: 4.2.0", -- [11081]
+	"6/11/2022 16:52 [DEBUG] Attempting to load from local NPC Cache", -- [11082]
+	"6/11/2022 16:52 [DEBUG] Generating NPC Cache...", -- [11083]
+	"6/11/2022 16:52 [DEBUG] Enabling Addon", -- [11084]
+	"6/11/2022 16:52 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11085]
+	"6/11/2022 16:52 [DEBUG] Showing Minimap Icon", -- [11086]
+	"6/11/2022 16:54 [DEBUG] ---IAT Runtime---", -- [11087]
+	"6/11/2022 16:54 [DEBUG] Version: 4.2.0", -- [11088]
+	"6/11/2022 16:54 [DEBUG] Attempting to load from local NPC Cache", -- [11089]
+	"6/11/2022 16:54 [DEBUG] Generating NPC Cache...", -- [11090]
+	"6/11/2022 16:54 [DEBUG] Enabling Addon", -- [11091]
+	"6/11/2022 16:54 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11092]
+	"6/11/2022 16:54 [DEBUG] Showing Minimap Icon", -- [11093]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11094]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [11095]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11096]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11097]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11098]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11099]
+	"6/11/2022 19:14 [DEBUG] Showing Minimap Icon", -- [11100]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11101]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [11102]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11103]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11104]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11105]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11106]
+	"6/11/2022 21:38 [DEBUG] Showing Minimap Icon", -- [11107]
+	"6/11/2022 22:20 [DEBUG] ---IAT Runtime---", -- [11108]
+	"6/11/2022 22:20 [DEBUG] Version: 4.2.0", -- [11109]
+	"6/11/2022 22:20 [DEBUG] Attempting to load from local NPC Cache", -- [11110]
+	"6/11/2022 22:20 [DEBUG] Generating NPC Cache...", -- [11111]
+	"6/11/2022 22:20 [DEBUG] Enabling Addon", -- [11112]
+	"6/11/2022 22:20 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11113]
+	"6/11/2022 22:20 [DEBUG] Showing Minimap Icon", -- [11114]
+	"6/11/2022 23:34 [DEBUG] ---IAT Runtime---", -- [11115]
+	"6/11/2022 23:34 [DEBUG] Version: 4.2.0", -- [11116]
+	"6/11/2022 23:34 [DEBUG] Attempting to load from local NPC Cache", -- [11117]
+	"6/11/2022 23:34 [DEBUG] Generating NPC Cache...", -- [11118]
+	"6/11/2022 23:34 [DEBUG] Enabling Addon", -- [11119]
+	"6/11/2022 23:34 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11120]
+	"6/11/2022 23:36 [DEBUG] Showing Minimap Icon", -- [11121]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11122]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [11123]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11124]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11125]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11126]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11127]
+	"7/11/2022 19:51 [DEBUG] Showing Minimap Icon", -- [11128]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11129]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [11130]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11131]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11132]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11133]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11134]
+	"7/11/2022 22:25 [DEBUG] Showing Minimap Icon", -- [11135]
+	"7/11/2022 23:32 [DEBUG] ---IAT Runtime---", -- [11136]
+	"7/11/2022 23:32 [DEBUG] Version: 4.2.0", -- [11137]
+	"7/11/2022 23:32 [DEBUG] Attempting to load from local NPC Cache", -- [11138]
+	"7/11/2022 23:32 [DEBUG] Generating NPC Cache...", -- [11139]
+	"7/11/2022 23:32 [DEBUG] Enabling Addon", -- [11140]
+	"7/11/2022 23:32 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11141]
+	"7/11/2022 23:32 [DEBUG] Showing Minimap Icon", -- [11142]
+	"8/11/2022 0:40 [DEBUG] ---IAT Runtime---", -- [11143]
+	"8/11/2022 0:40 [DEBUG] Version: 4.2.0", -- [11144]
+	"8/11/2022 0:40 [DEBUG] Attempting to load from local NPC Cache", -- [11145]
+	"8/11/2022 0:40 [DEBUG] Generating NPC Cache...", -- [11146]
+	"8/11/2022 0:40 [DEBUG] Enabling Addon", -- [11147]
+	"8/11/2022 0:40 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11148]
+	"8/11/2022 0:39 [DEBUG] Showing Minimap Icon", -- [11149]
+	"8/11/2022 0:40 [DEBUG] ---IAT Runtime---", -- [11150]
+	"8/11/2022 0:40 [DEBUG] Version: 4.2.0", -- [11151]
+	"8/11/2022 0:40 [DEBUG] Attempting to load from local NPC Cache", -- [11152]
+	"8/11/2022 0:40 [DEBUG] Generating NPC Cache...", -- [11153]
+	"8/11/2022 0:40 [DEBUG] Enabling Addon", -- [11154]
+	"8/11/2022 0:40 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11155]
+	"8/11/2022 0:43 [DEBUG] Showing Minimap Icon", -- [11156]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11157]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [11158]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11159]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11160]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11161]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11162]
+	"8/11/2022 8:10 [DEBUG] Showing Minimap Icon", -- [11163]
+	"8/11/2022 9:50 [DEBUG] ---IAT Runtime---", -- [11164]
+	"8/11/2022 9:50 [DEBUG] Version: 4.2.0", -- [11165]
+	"8/11/2022 9:50 [DEBUG] Attempting to load from local NPC Cache", -- [11166]
+	"8/11/2022 9:50 [DEBUG] Generating NPC Cache...", -- [11167]
+	"8/11/2022 9:50 [DEBUG] Enabling Addon", -- [11168]
+	"8/11/2022 9:50 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11169]
+	"8/11/2022 9:51 [DEBUG] Showing Minimap Icon", -- [11170]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11171]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [11172]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11173]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11174]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11175]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11176]
+	"8/11/2022 13:21 [DEBUG] Showing Minimap Icon", -- [11177]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11178]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [11179]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11180]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11181]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11182]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11183]
+	"9/11/2022 1:50 [DEBUG] Showing Minimap Icon", -- [11184]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11185]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [11186]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11187]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11188]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11189]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11190]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11191]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [11192]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11193]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11194]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11195]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11196]
+	"9/11/2022 19:20 [DEBUG] Showing Minimap Icon", -- [11197]
+	"9/11/2022 19:57 [DEBUG] ---IAT Runtime---", -- [11198]
+	"9/11/2022 19:57 [DEBUG] Version: 4.2.0", -- [11199]
+	"9/11/2022 19:57 [DEBUG] Attempting to load from local NPC Cache", -- [11200]
+	"9/11/2022 19:57 [DEBUG] Generating NPC Cache...", -- [11201]
+	"9/11/2022 19:57 [DEBUG] Enabling Addon", -- [11202]
+	"9/11/2022 19:57 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11203]
+	"9/11/2022 20:0 [DEBUG] Showing Minimap Icon", -- [11204]
+	"9/11/2022 20:3 [DEBUG] ---IAT Runtime---", -- [11205]
+	"9/11/2022 20:3 [DEBUG] Version: 4.2.0", -- [11206]
+	"9/11/2022 20:3 [DEBUG] Attempting to load from local NPC Cache", -- [11207]
+	"9/11/2022 20:3 [DEBUG] Generating NPC Cache...", -- [11208]
+	"9/11/2022 20:3 [DEBUG] Enabling Addon", -- [11209]
+	"9/11/2022 20:3 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11210]
+	"9/11/2022 20:3 [DEBUG] Showing Minimap Icon", -- [11211]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11212]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [11213]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11214]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11215]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11216]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11217]
+	"10/11/2022 11:46 [DEBUG] Showing Minimap Icon", -- [11218]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11219]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [11220]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11221]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11222]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11223]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11224]
+	"10/11/2022 12:48 [DEBUG] Showing Minimap Icon", -- [11225]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11226]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [11227]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11228]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11229]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11230]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11231]
+	"10/11/2022 18:14 [DEBUG] Showing Minimap Icon", -- [11232]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11233]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [11234]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11235]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11236]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11237]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11238]
+	"10/11/2022 19:56 [DEBUG] Showing Minimap Icon", -- [11239]
+	"10/11/2022 20:47 [DEBUG] ---IAT Runtime---", -- [11240]
+	"10/11/2022 20:47 [DEBUG] Version: 4.2.0", -- [11241]
+	"10/11/2022 20:47 [DEBUG] Attempting to load from local NPC Cache", -- [11242]
+	"10/11/2022 20:47 [DEBUG] Generating NPC Cache...", -- [11243]
+	"10/11/2022 20:47 [DEBUG] Enabling Addon", -- [11244]
+	"10/11/2022 20:47 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11245]
+	"10/11/2022 21:14 [DEBUG] Showing Minimap Icon", -- [11246]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11247]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [11248]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11249]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11250]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11251]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11252]
+	"11/11/2022 17:49 [DEBUG] Showing Minimap Icon", -- [11253]
+	"11/11/2022 18:24 [DEBUG] ---IAT Runtime---", -- [11254]
+	"11/11/2022 18:24 [DEBUG] Version: 4.2.0", -- [11255]
+	"11/11/2022 18:24 [DEBUG] Attempting to load from local NPC Cache", -- [11256]
+	"11/11/2022 18:24 [DEBUG] Generating NPC Cache...", -- [11257]
+	"11/11/2022 18:24 [DEBUG] Enabling Addon", -- [11258]
+	"11/11/2022 18:24 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11259]
+	"11/11/2022 18:25 [DEBUG] Showing Minimap Icon", -- [11260]
+	"11/11/2022 18:28 [DEBUG] ---IAT Runtime---", -- [11261]
+	"11/11/2022 18:28 [DEBUG] Version: 4.2.0", -- [11262]
+	"11/11/2022 18:28 [DEBUG] Attempting to load from local NPC Cache", -- [11263]
+	"11/11/2022 18:28 [DEBUG] Generating NPC Cache...", -- [11264]
+	"11/11/2022 18:28 [DEBUG] Enabling Addon", -- [11265]
+	"11/11/2022 18:28 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11266]
+	"11/11/2022 18:30 [DEBUG] Showing Minimap Icon", -- [11267]
+	"11/11/2022 18:36 [DEBUG] ---IAT Runtime---", -- [11268]
+	"11/11/2022 18:36 [DEBUG] Version: 4.2.0", -- [11269]
+	"11/11/2022 18:36 [DEBUG] Attempting to load from local NPC Cache", -- [11270]
+	"11/11/2022 18:36 [DEBUG] Generating NPC Cache...", -- [11271]
+	"11/11/2022 18:36 [DEBUG] Enabling Addon", -- [11272]
+	"11/11/2022 18:36 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11273]
+	"11/11/2022 18:38 [DEBUG] Showing Minimap Icon", -- [11274]
+	"11/11/2022 18:39 [DEBUG] ---IAT Runtime---", -- [11275]
+	"11/11/2022 18:39 [DEBUG] Version: 4.2.0", -- [11276]
+	"11/11/2022 18:39 [DEBUG] Attempting to load from local NPC Cache", -- [11277]
+	"11/11/2022 18:39 [DEBUG] Generating NPC Cache...", -- [11278]
+	"11/11/2022 18:39 [DEBUG] Enabling Addon", -- [11279]
+	"11/11/2022 18:39 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11280]
+	"11/11/2022 18:40 [DEBUG] Showing Minimap Icon", -- [11281]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11282]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [11283]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11284]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11285]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11286]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11287]
+	"11/11/2022 21:56 [DEBUG] Showing Minimap Icon", -- [11288]
+	"12/11/2022 1:46 [DEBUG] ---IAT Runtime---", -- [11289]
+	"12/11/2022 1:46 [DEBUG] Version: 4.2.0", -- [11290]
+	"12/11/2022 1:46 [DEBUG] Attempting to load from local NPC Cache", -- [11291]
+	"12/11/2022 1:46 [DEBUG] Generating NPC Cache...", -- [11292]
+	"12/11/2022 1:46 [DEBUG] Enabling Addon", -- [11293]
+	"12/11/2022 1:46 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11294]
+	"12/11/2022 1:48 [DEBUG] Showing Minimap Icon", -- [11295]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11296]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [11297]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11298]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11299]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11300]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11301]
+	"12/11/2022 12:5 [DEBUG] Showing Minimap Icon", -- [11302]
+	"12/11/2022 12:28 [DEBUG] ---IAT Runtime---", -- [11303]
+	"12/11/2022 12:28 [DEBUG] Version: 4.2.0", -- [11304]
+	"12/11/2022 12:28 [DEBUG] Attempting to load from local NPC Cache", -- [11305]
+	"12/11/2022 12:28 [DEBUG] Generating NPC Cache...", -- [11306]
+	"12/11/2022 12:28 [DEBUG] Enabling Addon", -- [11307]
+	"12/11/2022 12:28 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11308]
+	"12/11/2022 12:28 [DEBUG] Showing Minimap Icon", -- [11309]
+	"12/11/2022 12:30 [DEBUG] ---IAT Runtime---", -- [11310]
+	"12/11/2022 12:30 [DEBUG] Version: 4.2.0", -- [11311]
+	"12/11/2022 12:30 [DEBUG] Attempting to load from local NPC Cache", -- [11312]
+	"12/11/2022 12:30 [DEBUG] Generating NPC Cache...", -- [11313]
+	"12/11/2022 12:30 [DEBUG] Enabling Addon", -- [11314]
+	"12/11/2022 12:30 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11315]
+	"12/11/2022 12:30 [DEBUG] Showing Minimap Icon", -- [11316]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11317]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.2.0", -- [11318]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11319]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11320]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11321]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11322]
+	"12/11/2022 12:52 [DEBUG] Showing Minimap Icon", -- [11323]
+	"12/11/2022 12:52 [DEBUG] ---IAT Runtime---", -- [11324]
+	"12/11/2022 12:52 [DEBUG] Version: 4.2.0", -- [11325]
+	"12/11/2022 12:52 [DEBUG] Attempting to load from local NPC Cache", -- [11326]
+	"12/11/2022 12:52 [DEBUG] Generating NPC Cache...", -- [11327]
+	"12/11/2022 12:52 [DEBUG] Enabling Addon", -- [11328]
+	"12/11/2022 12:52 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11329]
+	"12/11/2022 12:55 [DEBUG] Showing Minimap Icon", -- [11330]
+	"12/11/2022 13:0 [DEBUG] ---IAT Runtime---", -- [11331]
+	"12/11/2022 13:0 [DEBUG] Version: 4.2.0", -- [11332]
+	"12/11/2022 13:0 [DEBUG] Attempting to load from local NPC Cache", -- [11333]
+	"12/11/2022 13:0 [DEBUG] Generating NPC Cache...", -- [11334]
+	"12/11/2022 13:0 [DEBUG] Enabling Addon", -- [11335]
+	"12/11/2022 13:0 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11336]
+	"12/11/2022 13:5 [DEBUG] Showing Minimap Icon", -- [11337]
+	"12/11/2022 13:6 [DEBUG] ---IAT Runtime---", -- [11338]
+	"12/11/2022 13:6 [DEBUG] Version: 4.2.0", -- [11339]
+	"12/11/2022 13:6 [DEBUG] Attempting to load from local NPC Cache", -- [11340]
+	"12/11/2022 13:6 [DEBUG] Generating NPC Cache...", -- [11341]
+	"12/11/2022 13:6 [DEBUG] Enabling Addon", -- [11342]
+	"12/11/2022 13:6 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11343]
+	"12/11/2022 13:6 [DEBUG] Showing Minimap Icon", -- [11344]
+	"12/11/2022 13:7 [DEBUG] ---IAT Runtime---", -- [11345]
+	"12/11/2022 13:7 [DEBUG] Version: 4.2.0", -- [11346]
+	"12/11/2022 13:7 [DEBUG] Attempting to load from local NPC Cache", -- [11347]
+	"12/11/2022 13:7 [DEBUG] Generating NPC Cache...", -- [11348]
+	"12/11/2022 13:7 [DEBUG] Enabling Addon", -- [11349]
+	"12/11/2022 13:7 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11350]
+	"12/11/2022 13:7 [DEBUG] Showing Minimap Icon", -- [11351]
+	"12/11/2022 13:8 [DEBUG] ---IAT Runtime---", -- [11352]
+	"12/11/2022 13:8 [DEBUG] Version: 4.2.0", -- [11353]
+	"12/11/2022 13:8 [DEBUG] Attempting to load from local NPC Cache", -- [11354]
+	"12/11/2022 13:8 [DEBUG] Generating NPC Cache...", -- [11355]
+	"12/11/2022 13:8 [DEBUG] Enabling Addon", -- [11356]
+	"12/11/2022 13:8 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11357]
+	"12/11/2022 13:8 [DEBUG] Showing Minimap Icon", -- [11358]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11359]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.3.1", -- [11360]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11361]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11362]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11363]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11364]
+	"13/11/2022 17:7 [DEBUG] Showing Minimap Icon", -- [11365]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11366]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.3.1", -- [11367]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11368]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11369]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11370]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11371]
+	"14/11/2022 19:54 [DEBUG] Showing Minimap Icon", -- [11372]
+	"14/11/2022 19:54 [DEBUG] ---IAT Runtime---", -- [11373]
+	"14/11/2022 19:54 [DEBUG] Version: 4.3.1", -- [11374]
+	"14/11/2022 19:54 [DEBUG] Attempting to load from local NPC Cache", -- [11375]
+	"14/11/2022 19:54 [DEBUG] Generating NPC Cache...", -- [11376]
+	"14/11/2022 19:54 [DEBUG] Enabling Addon", -- [11377]
+	"14/11/2022 19:54 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11378]
+	"14/11/2022 19:54 [DEBUG] Showing Minimap Icon", -- [11379]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11380]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.3.1", -- [11381]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11382]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11383]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11384]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11385]
+	"15/11/2022 7:50 [DEBUG] Showing Minimap Icon", -- [11386]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11387]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.3.1", -- [11388]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11389]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11390]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11391]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11392]
+	"15/11/2022 18:31 [DEBUG] Showing Minimap Icon", -- [11393]
+	"15/11/2022 18:43 [DEBUG] ---IAT Runtime---", -- [11394]
+	"15/11/2022 18:43 [DEBUG] Version: 4.3.1", -- [11395]
+	"15/11/2022 18:43 [DEBUG] Attempting to load from local NPC Cache", -- [11396]
+	"15/11/2022 18:43 [DEBUG] Generating NPC Cache...", -- [11397]
+	"15/11/2022 18:43 [DEBUG] Enabling Addon", -- [11398]
+	"15/11/2022 18:43 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11399]
+	"15/11/2022 18:43 [DEBUG] Showing Minimap Icon", -- [11400]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11401]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.3.1", -- [11402]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11403]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11404]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11405]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11406]
+	"15/11/2022 21:22 [DEBUG] Showing Minimap Icon", -- [11407]
+	"15/11/2022 21:29 [DEBUG] ---IAT Runtime---", -- [11408]
+	"15/11/2022 21:29 [DEBUG] Version: 4.3.1", -- [11409]
+	"15/11/2022 21:29 [DEBUG] Attempting to load from local NPC Cache", -- [11410]
+	"15/11/2022 21:29 [DEBUG] Generating NPC Cache...", -- [11411]
+	"15/11/2022 21:29 [DEBUG] Enabling Addon", -- [11412]
+	"15/11/2022 21:29 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11413]
+	"15/11/2022 21:29 [DEBUG] Showing Minimap Icon", -- [11414]
+	"15/11/2022 21:31 [DEBUG] ---IAT Runtime---", -- [11415]
+	"15/11/2022 21:31 [DEBUG] Version: 4.3.1", -- [11416]
+	"15/11/2022 21:31 [DEBUG] Attempting to load from local NPC Cache", -- [11417]
+	"15/11/2022 21:31 [DEBUG] Generating NPC Cache...", -- [11418]
+	"15/11/2022 21:31 [DEBUG] Enabling Addon", -- [11419]
+	"15/11/2022 21:31 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11420]
+	"15/11/2022 21:31 [DEBUG] Showing Minimap Icon", -- [11421]
+	"15/11/2022 22:1 [DEBUG] Player has entered instance", -- [11422]
+	"15/11/2022 22:1 [DEBUG] 2451", -- [11423]
+	"15/11/2022 22:1 [DEBUG] Offical Instance Name: 2451 _2451", -- [11424]
+	"15/11/2022 22:1 [DEBUG] DifficultyID: 1", -- [11425]
+	"15/11/2022 22:1 [DEBUG] Achievements cannot be earned for the following difficulty 1", -- [11426]
+	"15/11/2022 22:1 [DEBUG] Player has entered instance", -- [11427]
+	"15/11/2022 22:1 [DEBUG] 2451", -- [11428]
+	"15/11/2022 22:1 [DEBUG] Offical Instance Name: 2451 _2451", -- [11429]
+	"15/11/2022 22:1 [DEBUG] DifficultyID: 1", -- [11430]
+	"15/11/2022 22:1 [DEBUG] Achievements cannot be earned for the following difficulty 1", -- [11431]
+	"15/11/2022 22:55 [DEBUG] ---IAT Runtime---", -- [11432]
+	"15/11/2022 22:55 [DEBUG] Version: 4.3.1", -- [11433]
+	"15/11/2022 22:55 [DEBUG] Attempting to load from local NPC Cache", -- [11434]
+	"15/11/2022 22:55 [DEBUG] Generating NPC Cache...", -- [11435]
+	"15/11/2022 22:55 [DEBUG] Enabling Addon", -- [11436]
+	"15/11/2022 22:55 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11437]
+	"15/11/2022 22:55 [DEBUG] Showing Minimap Icon", -- [11438]
+	"15/11/2022 23:11 [DEBUG] ---IAT Runtime---", -- [11439]
+	"15/11/2022 23:11 [DEBUG] Version: 4.3.1", -- [11440]
+	"15/11/2022 23:11 [DEBUG] Attempting to load from local NPC Cache", -- [11441]
+	"15/11/2022 23:11 [DEBUG] Generating NPC Cache...", -- [11442]
+	"15/11/2022 23:11 [DEBUG] Enabling Addon", -- [11443]
+	"15/11/2022 23:11 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11444]
+	"15/11/2022 23:11 [DEBUG] Showing Minimap Icon", -- [11445]
+	"15/11/2022 23:14 [DEBUG] ---IAT Runtime---", -- [11446]
+	"15/11/2022 23:14 [DEBUG] Version: 4.3.1", -- [11447]
+	"15/11/2022 23:14 [DEBUG] Attempting to load from local NPC Cache", -- [11448]
+	"15/11/2022 23:14 [DEBUG] Generating NPC Cache...", -- [11449]
+	"15/11/2022 23:14 [DEBUG] Enabling Addon", -- [11450]
+	"15/11/2022 23:14 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11451]
+	"15/11/2022 23:14 [DEBUG] Showing Minimap Icon", -- [11452]
+	"15/11/2022 23:58 [DEBUG] ---IAT Runtime---", -- [11453]
+	"15/11/2022 23:58 [DEBUG] Version: 4.3.1", -- [11454]
+	"15/11/2022 23:58 [DEBUG] Attempting to load from local NPC Cache", -- [11455]
+	"15/11/2022 23:58 [DEBUG] Generating NPC Cache...", -- [11456]
+	"15/11/2022 23:58 [DEBUG] Enabling Addon", -- [11457]
+	"15/11/2022 23:58 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11458]
+	"15/11/2022 23:58 [DEBUG] Showing Minimap Icon", -- [11459]
+	"16/11/2022 0:0 [DEBUG] ---IAT Runtime---", -- [11460]
+	"16/11/2022 0:0 [DEBUG] Version: 4.3.1", -- [11461]
+	"16/11/2022 0:0 [DEBUG] Attempting to load from local NPC Cache", -- [11462]
+	"16/11/2022 0:0 [DEBUG] Generating NPC Cache...", -- [11463]
+	"16/11/2022 0:0 [DEBUG] Enabling Addon", -- [11464]
+	"16/11/2022 0:0 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11465]
+	"16/11/2022 0:0 [DEBUG] Showing Minimap Icon", -- [11466]
+	"16/11/2022 0:4 [DEBUG] ---IAT Runtime---", -- [11467]
+	"16/11/2022 0:4 [DEBUG] Version: 4.3.1", -- [11468]
+	"16/11/2022 0:4 [DEBUG] Attempting to load from local NPC Cache", -- [11469]
+	"16/11/2022 0:4 [DEBUG] Generating NPC Cache...", -- [11470]
+	"16/11/2022 0:4 [DEBUG] Enabling Addon", -- [11471]
+	"16/11/2022 0:4 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11472]
+	"16/11/2022 0:4 [DEBUG] Showing Minimap Icon", -- [11473]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11474]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.3.1", -- [11475]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11476]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11477]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11478]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11479]
+	"16/11/2022 0:16 [DEBUG] Showing Minimap Icon", -- [11480]
+	"16/11/2022 0:55 [DEBUG] ---IAT Runtime---", -- [11481]
+	"16/11/2022 0:55 [DEBUG] Version: 4.3.1", -- [11482]
+	"16/11/2022 0:55 [DEBUG] Attempting to load from local NPC Cache", -- [11483]
+	"16/11/2022 0:55 [DEBUG] Generating NPC Cache...", -- [11484]
+	"16/11/2022 0:55 [DEBUG] Enabling Addon", -- [11485]
+	"16/11/2022 0:55 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11486]
+	"16/11/2022 0:55 [DEBUG] Showing Minimap Icon", -- [11487]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11488]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.4.0", -- [11489]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11490]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11491]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11492]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11493]
+	"16/11/2022 19:11 [DEBUG] Showing Minimap Icon", -- [11494]
+	"16/11/2022 19:34 [DEBUG] ---IAT Runtime---", -- [11495]
+	"16/11/2022 19:34 [DEBUG] Version: 4.4.0", -- [11496]
+	"16/11/2022 19:34 [DEBUG] Attempting to load from local NPC Cache", -- [11497]
+	"16/11/2022 19:34 [DEBUG] Generating NPC Cache...", -- [11498]
+	"16/11/2022 19:34 [DEBUG] Enabling Addon", -- [11499]
+	"16/11/2022 19:34 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11500]
+	"16/11/2022 19:34 [DEBUG] Showing Minimap Icon", -- [11501]
+	"16/11/2022 19:37 [DEBUG] ---IAT Runtime---", -- [11502]
+	"16/11/2022 19:37 [DEBUG] Version: 4.4.0", -- [11503]
+	"16/11/2022 19:37 [DEBUG] Attempting to load from local NPC Cache", -- [11504]
+	"16/11/2022 19:37 [DEBUG] Generating NPC Cache...", -- [11505]
+	"16/11/2022 19:37 [DEBUG] Enabling Addon", -- [11506]
+	"16/11/2022 19:37 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11507]
+	"16/11/2022 19:37 [DEBUG] Showing Minimap Icon", -- [11508]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11509]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.4.0", -- [11510]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11511]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11512]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11513]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11514]
+	"17/11/2022 8:6 [DEBUG] Showing Minimap Icon", -- [11515]
+	"17/11/2022 12:16 [DEBUG] ---IAT Runtime---", -- [11516]
+	"17/11/2022 12:16 [DEBUG] Version: 4.4.0", -- [11517]
+	"17/11/2022 12:16 [DEBUG] Attempting to load from local NPC Cache", -- [11518]
+	"17/11/2022 12:16 [DEBUG] Generating NPC Cache...", -- [11519]
+	"17/11/2022 12:16 [DEBUG] Enabling Addon", -- [11520]
+	"17/11/2022 12:16 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11521]
+	"17/11/2022 12:16 [DEBUG] Showing Minimap Icon", -- [11522]
+	"17/11/2022 12:20 [DEBUG] ---IAT Runtime---", -- [11523]
+	"17/11/2022 12:20 [DEBUG] Version: 4.4.0", -- [11524]
+	"17/11/2022 12:20 [DEBUG] Attempting to load from local NPC Cache", -- [11525]
+	"17/11/2022 12:20 [DEBUG] Generating NPC Cache...", -- [11526]
+	"17/11/2022 12:20 [DEBUG] Enabling Addon", -- [11527]
+	"17/11/2022 12:20 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11528]
+	"17/11/2022 12:24 [DEBUG] Showing Minimap Icon", -- [11529]
+	"17/11/2022 12:26 [DEBUG] ---IAT Runtime---", -- [11530]
+	"17/11/2022 12:26 [DEBUG] Version: 4.4.0", -- [11531]
+	"17/11/2022 12:26 [DEBUG] Attempting to load from local NPC Cache", -- [11532]
+	"17/11/2022 12:26 [DEBUG] Generating NPC Cache...", -- [11533]
+	"17/11/2022 12:26 [DEBUG] Enabling Addon", -- [11534]
+	"17/11/2022 12:26 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11535]
+	"17/11/2022 12:26 [DEBUG] Showing Minimap Icon", -- [11536]
+	"17/11/2022 12:27 [DEBUG] ---IAT Runtime---", -- [11537]
+	"17/11/2022 12:27 [DEBUG] Version: 4.4.0", -- [11538]
+	"17/11/2022 12:27 [DEBUG] Attempting to load from local NPC Cache", -- [11539]
+	"17/11/2022 12:27 [DEBUG] Generating NPC Cache...", -- [11540]
+	"17/11/2022 12:27 [DEBUG] Enabling Addon", -- [11541]
+	"17/11/2022 12:27 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11542]
+	"17/11/2022 12:27 [DEBUG] Showing Minimap Icon", -- [11543]
+	"17/11/2022 12:52 [DEBUG] ---IAT Runtime---", -- [11544]
+	"17/11/2022 12:52 [DEBUG] Version: 4.4.0", -- [11545]
+	"17/11/2022 12:52 [DEBUG] Attempting to load from local NPC Cache", -- [11546]
+	"17/11/2022 12:52 [DEBUG] Generating NPC Cache...", -- [11547]
+	"17/11/2022 12:52 [DEBUG] Enabling Addon", -- [11548]
+	"17/11/2022 12:52 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11549]
+	"17/11/2022 12:55 [DEBUG] Showing Minimap Icon", -- [11550]
+	"17/11/2022 12:57 [DEBUG] ---IAT Runtime---", -- [11551]
+	"17/11/2022 12:57 [DEBUG] Version: 4.4.0", -- [11552]
+	"17/11/2022 12:57 [DEBUG] Attempting to load from local NPC Cache", -- [11553]
+	"17/11/2022 12:57 [DEBUG] Generating NPC Cache...", -- [11554]
+	"17/11/2022 12:57 [DEBUG] Enabling Addon", -- [11555]
+	"17/11/2022 12:57 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11556]
+	"17/11/2022 12:57 [DEBUG] Showing Minimap Icon", -- [11557]
+	"17/11/2022 13:1 [DEBUG] ---IAT Runtime---", -- [11558]
+	"17/11/2022 13:1 [DEBUG] Version: 4.4.0", -- [11559]
+	"17/11/2022 13:1 [DEBUG] Attempting to load from local NPC Cache", -- [11560]
+	"17/11/2022 13:1 [DEBUG] Generating NPC Cache...", -- [11561]
+	"17/11/2022 13:1 [DEBUG] Enabling Addon", -- [11562]
+	"17/11/2022 13:1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11563]
+	"17/11/2022 13:1 [DEBUG] Showing Minimap Icon", -- [11564]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11565]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.4.0", -- [11566]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11567]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11568]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11569]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11570]
+	"17/11/2022 14:4 [DEBUG] Showing Minimap Icon", -- [11571]
+	"17/11/2022 15:16 [DEBUG] ---IAT Runtime---", -- [11572]
+	"17/11/2022 15:16 [DEBUG] Version: 4.4.0", -- [11573]
+	"17/11/2022 15:16 [DEBUG] Attempting to load from local NPC Cache", -- [11574]
+	"17/11/2022 15:16 [DEBUG] Generating NPC Cache...", -- [11575]
+	"17/11/2022 15:16 [DEBUG] Enabling Addon", -- [11576]
+	"17/11/2022 15:16 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11577]
+	"17/11/2022 15:16 [DEBUG] Showing Minimap Icon", -- [11578]
+	"17/11/2022 15:16 [DEBUG] ---IAT Runtime---", -- [11579]
+	"17/11/2022 15:16 [DEBUG] Version: 4.4.0", -- [11580]
+	"17/11/2022 15:16 [DEBUG] Attempting to load from local NPC Cache", -- [11581]
+	"17/11/2022 15:16 [DEBUG] Generating NPC Cache...", -- [11582]
+	"17/11/2022 15:16 [DEBUG] Enabling Addon", -- [11583]
+	"17/11/2022 15:16 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11584]
+	"17/11/2022 15:19 [DEBUG] Showing Minimap Icon", -- [11585]
+	"17/11/2022 15:23 [DEBUG] ---IAT Runtime---", -- [11586]
+	"17/11/2022 15:23 [DEBUG] Version: 4.4.0", -- [11587]
+	"17/11/2022 15:23 [DEBUG] Attempting to load from local NPC Cache", -- [11588]
+	"17/11/2022 15:23 [DEBUG] Generating NPC Cache...", -- [11589]
+	"17/11/2022 15:23 [DEBUG] Enabling Addon", -- [11590]
+	"17/11/2022 15:23 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11591]
+	"17/11/2022 15:23 [DEBUG] Showing Minimap Icon", -- [11592]
+	"17/11/2022 15:33 [DEBUG] ---IAT Runtime---", -- [11593]
+	"17/11/2022 15:33 [DEBUG] Version: 4.4.0", -- [11594]
+	"17/11/2022 15:33 [DEBUG] Attempting to load from local NPC Cache", -- [11595]
+	"17/11/2022 15:33 [DEBUG] Generating NPC Cache...", -- [11596]
+	"17/11/2022 15:33 [DEBUG] Enabling Addon", -- [11597]
+	"17/11/2022 15:33 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11598]
+	"17/11/2022 15:35 [DEBUG] Showing Minimap Icon", -- [11599]
+	"17/11/2022 15:35 [DEBUG] ---IAT Runtime---", -- [11600]
+	"17/11/2022 15:35 [DEBUG] Version: 4.4.0", -- [11601]
+	"17/11/2022 15:35 [DEBUG] Attempting to load from local NPC Cache", -- [11602]
+	"17/11/2022 15:35 [DEBUG] Generating NPC Cache...", -- [11603]
+	"17/11/2022 15:35 [DEBUG] Enabling Addon", -- [11604]
+	"17/11/2022 15:35 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11605]
+	"17/11/2022 15:35 [DEBUG] Showing Minimap Icon", -- [11606]
+	"17/11/2022 16:2 [DEBUG] ---IAT Runtime---", -- [11607]
+	"17/11/2022 16:2 [DEBUG] Version: 4.4.0", -- [11608]
+	"17/11/2022 16:2 [DEBUG] Attempting to load from local NPC Cache", -- [11609]
+	"17/11/2022 16:2 [DEBUG] Generating NPC Cache...", -- [11610]
+	"17/11/2022 16:2 [DEBUG] Enabling Addon", -- [11611]
+	"17/11/2022 16:2 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11612]
+	"17/11/2022 16:2 [DEBUG] Showing Minimap Icon", -- [11613]
+	"17/11/2022 16:4 [DEBUG] ---IAT Runtime---", -- [11614]
+	"17/11/2022 16:4 [DEBUG] Version: 4.4.0", -- [11615]
+	"17/11/2022 16:4 [DEBUG] Attempting to load from local NPC Cache", -- [11616]
+	"17/11/2022 16:4 [DEBUG] Generating NPC Cache...", -- [11617]
+	"17/11/2022 16:4 [DEBUG] Enabling Addon", -- [11618]
+	"17/11/2022 16:4 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11619]
+	"17/11/2022 16:6 [DEBUG] Showing Minimap Icon", -- [11620]
+	"17/11/2022 17:41 [DEBUG] ---IAT Runtime---", -- [11621]
+	"17/11/2022 17:41 [DEBUG] Version: 4.4.0", -- [11622]
+	"17/11/2022 17:41 [DEBUG] Attempting to load from local NPC Cache", -- [11623]
+	"17/11/2022 17:41 [DEBUG] Generating NPC Cache...", -- [11624]
+	"17/11/2022 17:41 [DEBUG] Enabling Addon", -- [11625]
+	"17/11/2022 17:41 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11626]
+	"17/11/2022 17:44 [DEBUG] Showing Minimap Icon", -- [11627]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11628]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.4.0", -- [11629]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11630]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11631]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11632]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11633]
+	"17/11/2022 19:23 [DEBUG] Showing Minimap Icon", -- [11634]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [11635]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.4.0", -- [11636]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [11637]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [11638]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [11639]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11640]
+	"17/11/2022 21:18 [DEBUG] Showing Minimap Icon", -- [11641]
+	"17/11/2022 21:19 [DEBUG] ---IAT Runtime---", -- [11642]
+	"17/11/2022 21:19 [DEBUG] Version: 4.4.0", -- [11643]
+	"17/11/2022 21:19 [DEBUG] Attempting to load from local NPC Cache", -- [11644]
+	"17/11/2022 21:19 [DEBUG] Generating NPC Cache...", -- [11645]
+	"17/11/2022 21:19 [DEBUG] Enabling Addon", -- [11646]
+	"17/11/2022 21:19 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [11647]
+	"17/11/2022 21:19 [DEBUG] Showing Minimap Icon", -- [11648]
 }
 AchievementTrackerNPCCache = {
 	[75829] = "Nhallish",
@@ -10788,13 +11992,13 @@ AchievementTrackerNPCCache = {
 	[78430] = "Cordana Felsong",
 	[165556] = "Fleeting Manifestation",
 	[154431] = "Khaz'goroth",
-	[143045] = "Coastal Scuttler",
+	[53695] = "Rageface",
 	[68904] = "Suen",
-	[157161] = "Sand Vortex",
+	[178783] = "Moriaz the Red",
 	[59100] = "Expired Test Subject",
-	[108600] = "Sister of the Moon",
-	[145903] = "Darkforged Crusader",
-	[162719] = "Void Ascendant",
+	[131853] = "Huntmaster Grath",
+	[149995] = "High Priestess Azil",
+	[153202] = "Piston Smasher",
 	[95886] = "Ash'Golm",
 	[102088] = "Murkwater Myrmidon",
 	[45993] = "Theralion",
@@ -10802,309 +12006,309 @@ AchievementTrackerNPCCache = {
 	[64471] = "Tenwu of the Red Smoke",
 	[26641] = "Drakkari Gutripper",
 	[74787] = "Slave Watcher Crushto",
-	[127503] = "Overseer Korgus",
+	[111864] = "Sticky",
 	[154817] = "King Mechagon",
 	[155144] = "Abyssal Commander Sivara",
 	[138705] = "Gourmet Parrot Chow",
 	[77153] = "Iron Star",
-	[74570] = "Ruination",
+	[155243] = "Scavenging Crab",
 	[155245] = "Depth Skulker",
-	[107699] = "Spellblade Aluriel",
-	[161375] = "Promising Specimen",
-	[162933] = "Thought Harvester",
+	[59080] = "Darkmaster Gandling",
+	[51405] = "Angered Earth",
+	[149043] = "Heavy Barrel",
 	[43404] = "Maloriak",
-	[32927] = "Runemaster Molgeim",
+	[181579] = "Lihuvim",
 	[52675] = "Beth'tilac",
 	[144246] = "K.U.-J.0.",
-	[98696] = "Illysanna Ravencrest",
-	[166246] = "Buttons",
-	[83775] = "Ogron Laborer",
-	[88938] = "Ragnaros",
+	[53501] = "Living Meteor",
+	[155056] = "Robo-Waste",
+	[72889] = "Superheated Crawler Mine",
+	[155760] = "Tank Buster MK2",
 	[147896] = "Zandalari Crusader",
 	[67883] = "Rosey Axlerod",
 	[53694] = "Riplimb",
 	[104217] = "Talixae Flamewreath",
-	[78736] = "Warlord Zaela",
+	[77814] = "Teron'gor",
 	[60913] = "Energy Charge",
 	[61243] = "Gekkan",
 	[95888] = "Cordana Felsong",
 	[33686] = "Lore Keeper of Norgannon",
 	[158190] = "Medivh",
-	[184823] = "Strange Artifact",
+	[181546] = "Prototype of Renewal",
 	[73638] = "Tears of the Vale",
-	[101823] = "Mushroom Merchant",
+	[41440] = "Aberration",
 	[39984] = "Malignant Trogg",
-	[114895] = "Nightbane",
+	[156575] = "Dark Inquisitor Xanesh",
 	[68905] = "Lu'lin",
 	[91349] = "Mannoroth",
 	[58605] = "Scarlet Judicator",
-	[153415] = "Sha of Violence",
-	[185128] = "Memorial Pylon",
+	[56843] = "Lorewalker Stonestep",
 	[108996] = "Specter of Vengeance",
+	[153415] = "Sha of Violence",
 	[135129] = "Projection of Yogg-Saron",
 	[70250] = "Frozen Head",
-	[160271] = "Forbidden Manifestation",
+	[155645] = "Walkie Shockie X2",
 	[135513] = "Ancient Tome",
 	[177584] = "Burning Gibbet",
 	[71529] = "Thok the Bloodthirsty",
-	[96223] = "Gamon",
+	[56839] = "Anduin Wrynn",
 	[185129] = "Memorial Pylon",
 	[69820] = "Son of Animus",
 	[90199] = "Gorefiend",
 	[185439] = "Tainted Progenitor Relic",
 	[115902] = "Razorjaw Waverunner",
-	[102169] = "Black Bile",
-	[150081] = "Wise Mari",
+	[171474] = "Finger Food",
+	[69181] = "Saurid",
 	[39665] = "Rom'ogg Bonecrusher",
 	[185130] = "Memorial Pylon",
-	[67231] = "Trial of the King",
+	[165512] = "Cocoon of Lakali",
 	[70251] = "Venomous Head",
 	[105097] = "Glow Bug",
 	[59822] = "Auntie Stormstout",
 	[71466] = "Iron Juggernaut",
-	[118924] = "Engine of Souls",
-	[169594] = "Filled Anima Container",
+	[120564] = "Titanic Anomaly",
+	[132609] = "The Hivemind",
 	[185131] = "Memorial Pylon",
-	[61431] = "Glintrok Scout",
-	[185427] = "Unstable Progenitor Relic",
+	[178095] = "Eye of the Jailer",
+	[61709] = "Spawn of Anger",
 	[67966] = "Whirl Turtle",
-	[166644] = "Artificer Xy'mox",
+	[43468] = "Lady Naz'jar",
 	[36330] = "Lord Godfrey",
 	[99663] = "Frustrated Soul",
 	[87451] = "Fleshrender Nok'gar",
 	[29023] = "Jan'alai",
-	[72490] = "Overseer Mojka",
+	[61442] = "Kuai the Brute",
 	[70252] = "Arcane Head",
 	[144596] = "Chest o' Booty",
-	[62465] = "Captain Ook",
-	[94996] = "Fragment of the Crone",
+	[53258] = "Lord Rhyolith",
+	[72490] = "Overseer Mojka",
 	[61884] = "Xin the Weaponmaster",
 	[185005] = "Anduin's Grief",
-	[56897] = "Raigonn",
-	[105301] = "Expedient Elemental",
 	[78948] = "Tectus",
-	[141805] = "Threshanator 3000",
-	[49864] = "Twilight Fiend",
+	[169554] = "Disused Anima Container",
+	[56897] = "Raigonn",
+	[91938] = "Haunting Soul",
+	[180658] = "Focusing Prism",
 	[71979] = "Kor'kron Warbringer",
-	[99664] = "Restless Soul",
+	[49864] = "Twilight Fiend",
 	[32919] = "Storm Lasher",
-	[61213] = "Krik'thik Conscript",
 	[155595] = "Sacred Gear",
-	[52442] = "Florawing Hive Queen",
+	[61213] = "Krik'thik Conscript",
+	[114462] = "The Curator",
 	[64346] = "Parasitoid Sha",
 	[152910] = "Queen Azshara",
-	[64556] = "Captain Ook",
-	[40634] = "Naz'jar Tempest Witch",
+	[76283] = "Malefic Defender",
+	[175474] = "Belligerent Waiter",
 	[135903] = "Manifestation of the Deep",
-	[56637] = "Ook-Ook",
+	[166266] = "Spare Parts",
 	[68655] = "Mr. Bigglesworth",
 	[32857] = "Stormcaller Brundir",
-	[33768] = "Rubble",
-	[162102] = "Grand Proctor Beryllia",
-	[172093] = "Hearty Haunch",
+	[34035] = "Feral Defender",
+	[111941] = "Hodir",
+	[33113] = "Flame Leviathan",
 	[50376] = "Angered Earth",
 	[15687] = "Moroes",
 	[73195] = "Kor'kron Jailer",
 	[136160] = "King Dazar",
-	[33113] = "Flame Leviathan",
-	[33552] = "Yogg-Saron",
+	[172093] = "Hearty Haunch",
+	[139737] = "Lord Stormsong",
 	[68336] = "Garrosh Hellscream",
 	[138718] = "Sharkbait's Empty Dish",
 	[33241] = "Freya",
-	[102423] = "Mug of Mead",
+	[147430] = "Virmen",
 	[67569] = "Elder Adler",
-	[52422] = "Kaulema the Mover",
+	[52414] = "Tor-Tun",
 	[77927] = "Son of the Beast",
 	[56930] = "Krik'thik Swarm Bringer",
-	[44530] = "Naz'jar Honor Guard",
+	[104341] = "Torment",
 	[138719] = "Serve Sharkbait's Meal",
 	[103758] = "Star Augur Etraeus",
-	[129440] = "Harlan Sweete",
-	[33202] = "Ancient Water Spirit",
-	[59779] = "Thunderpaw Guardian",
+	[52438] = "Mortaxx",
+	[110758] = "High Inquisitor Whitemane",
+	[72436] = "Immerseus",
 	[164934] = "Manastorm",
-	[171456] = "Shattered Devastator",
+	[164218] = "Lord Chamberlain",
 	[74475] = "Magmolatus",
-	[126712] = "Training Dummy",
-	[23574] = "Akil'zon",
-	[26627] = "Crystal Handler",
+	[171456] = "Shattered Devastator",
 	[93145] = "Soul of the Crone",
+	[26627] = "Crystal Handler",
+	[23574] = "Akil'zon",
 	[39987] = "Evolved Twilight Zealot",
 	[116802] = "Rodent of Usual Size",
 	[108682] = "Amber Drake",
 	[162317] = "Gorechop",
-	[164967] = "Doctor Ickus",
-	[165408] = "Halkias",
-	[52440] = "Gub",
-	[76585] = "Ragewing the Untamed",
+	[33134] = "Sara",
+	[67779] = "Mature Saurok Egg",
+	[185423] = "Reaving Automa: Neo",
+	[69086] = "Flaming Head",
 	[172992] = "Overgrown Hydra",
 	[94808] = "Hellfire Guardian",
-	[53494] = "Baleroc",
+	[123531] = "Manifestation of Taeshalach",
 	[175422] = "Coalesced Anima",
 	[154741] = "Squirt Bot",
 	[153172] = "Stolen Scrapbot",
 	[109450] = "Saronite Vapors",
 	[67571] = "Millhouse Manastorm",
-	[141792] = "Liz Vilepot",
-	[71983] = "Farseer Wolf Rider",
+	[78121] = "Gorian Warmage",
+	[36535] = "Corrupted Soul Fragment",
 	[115844] = "Goroth",
 	[90018] = "Hellfire Cannon",
-	[78121] = "Gorian Warmage",
+	[105742] = "Turbax",
 	[173770] = "Blazing Brazier",
 	[73033] = "Corrupted Skullsplitter",
 	[138967] = "Zul",
 	[122366] = "Varimathras",
-	[165066] = "Huntsman Altimor",
 	[80551] = "Shard of Tectus",
+	[165066] = "Huntsman Altimor",
 	[153941] = "Zoatroid",
 	[184759] = "Depleted Automa",
-	[100436] = "Illysanna Ravencrest",
+	[172094] = "Dissectible Dessert",
 	[36855] = "Lady Deathwhisper",
-	[61567] = "Vizier Jin'bak",
+	[172995] = "Hydra Seed",
 	[174018] = "Volatile Plague Bomb",
-	[104528] = "High Botanist Tel'arn",
+	[100436] = "Illysanna Ravencrest",
 	[52392] = "Gurubashi Master Chef",
-	[129208] = "Dread Captain Lockwood",
+	[61567] = "Vizier Jin'bak",
 	[105743] = "Whipsnap",
-	[172386] = "Anima Conduit",
+	[34826] = "Mistress of Pain",
 	[33136] = "Guardian of Yogg-Saron",
-	[150995] = "Mimiron",
+	[86928] = "Empowered Construct",
 	[55419] = "Captain Varo'then",
 	[95833] = "Hyrja",
 	[156884] = "Essence of Vita",
-	[55308] = "Warlord Zon'ozz",
+	[69427] = "Dark Animus",
 	[72496] = "Overseer Thathung",
 	[55312] = "Yor'sahj the Unsleeping",
 	[164557] = "Shard of Halkias",
-	[27654] = "Drakos the Interrogator",
-	[111882] = "Sparky",
+	[29305] = "Moorabi",
+	[86250] = "Kyrak",
 	[64061] = "Mogu'shan Warden",
 	[119938] = "Reanimated Templar",
+	[52936] = "Druid of the Flame",
 	[105744] = "Blaze",
-	[28514] = "Nalorakk",
 	[146016] = "Leeroy Jenkins",
-	[71603] = "Sha Puddle",
+	[173768] = "Fiery Brazier",
 	[115143] = "Snaplasher",
 	[86918] = "Uncharged Construct",
-	[179392] = "Kin'tessa",
 	[56165] = "Crystal Conductor",
+	[179392] = "Kin'tessa",
 	[99031] = "Artifact",
 	[122135] = "Shatug",
-	[164363] = "Undying Stonefiend",
+	[32273] = "Infinite Corruptor",
 	[26628] = "Drakkari Scytheclaw",
-	[63091] = "Jade Quilen",
+	[154074] = "Void Orb",
 	[55334] = "Void of the Unmaking",
 	[59458] = "Hopling",
 	[110732] = "Creature of Madness",
-	[38135] = "Deformed Fanatic",
+	[173767] = "Embered Brazier",
 	[136683] = "Trade Prince Gallywix",
 	[142949] = "Theramore Citizen",
-	[173767] = "Embered Brazier",
+	[38135] = "Deformed Fanatic",
 	[170851] = "Volatile Plague Bomb",
 	[73265] = "Corrupted Amalgamation",
-	[154074] = "Void Orb",
-	[32273] = "Infinite Corruptor",
+	[63091] = "Jade Quilen",
+	[164363] = "Undying Stonefiend",
 	[129722] = "Mote of Titanic Power",
 	[58787] = "Big Bessa",
 	[33244] = "Mimiron",
-	[173768] = "Fiery Brazier",
-	[52936] = "Druid of the Flame",
-	[86250] = "Kyrak",
-	[29305] = "Moorabi",
+	[71603] = "Sha Puddle",
+	[111882] = "Sparky",
+	[28514] = "Nalorakk",
+	[27654] = "Drakos the Interrogator",
 	[165073] = "Forlorn Captive",
-	[69427] = "Dark Animus",
+	[55308] = "Warlord Zon'ozz",
 	[141800] = "Brutik Blackanvil",
-	[86928] = "Empowered Construct",
+	[150995] = "Mimiron",
 	[173769] = "Smoldering Brazier",
-	[34826] = "Mistress of Pain",
+	[172386] = "Anima Conduit",
 	[71984] = "Siege Engineer",
-	[172995] = "Hydra Seed",
-	[172094] = "Dissectible Dessert",
+	[129208] = "Dread Captain Lockwood",
+	[104528] = "High Botanist Tel'arn",
 	[158041] = "N'Zoth the Corruptor",
 	[176583] = "Energy Core",
 	[105299] = "Recursive Elemental",
 	[81834] = "Priceless Paraphernalia",
 	[68599] = "Ferra Pearl",
-	[105742] = "Turbax",
-	[36535] = "Corrupted Soul Fragment",
+	[71983] = "Farseer Wolf Rider",
+	[141792] = "Liz Vilepot",
 	[50284] = "Twilight Zealot",
-	[123531] = "Manifestation of Taeshalach",
-	[69086] = "Flaming Head",
-	[185423] = "Reaving Automa: Neo",
-	[67779] = "Mature Saurok Egg",
-	[33134] = "Sara",
+	[53494] = "Baleroc",
+	[76585] = "Ragewing the Untamed",
+	[52440] = "Gub",
+	[165408] = "Halkias",
+	[164967] = "Doctor Ickus",
 	[84520] = "Pitwarden Gwarnok",
 	[49485] = "Aberration",
-	[164218] = "Lord Chamberlain",
-	[72436] = "Immerseus",
-	[110758] = "High Inquisitor Whitemane",
-	[52438] = "Mortaxx",
-	[104341] = "Torment",
-	[52414] = "Tor-Tun",
-	[147430] = "Virmen",
-	[139737] = "Lord Stormsong",
+	[126712] = "Training Dummy",
+	[59779] = "Thunderpaw Guardian",
+	[33202] = "Ancient Water Spirit",
+	[129440] = "Harlan Sweete",
+	[44530] = "Naz'jar Honor Guard",
+	[52422] = "Kaulema the Mover",
+	[102423] = "Mug of Mead",
+	[33552] = "Yogg-Saron",
 	[131318] = "Elder Leaxa",
-	[111941] = "Hodir",
-	[34035] = "Feral Defender",
-	[166266] = "Spare Parts",
-	[175474] = "Belligerent Waiter",
-	[76283] = "Malefic Defender",
-	[114462] = "The Curator",
+	[162102] = "Grand Proctor Beryllia",
+	[33768] = "Rubble",
+	[56637] = "Ook-Ook",
+	[40634] = "Naz'jar Tempest Witch",
+	[64556] = "Captain Ook",
+	[52442] = "Florawing Hive Queen",
 	[101976] = "Millificent Manastorm",
 	[80557] = "Mote of Tectus",
-	[180658] = "Focusing Prism",
-	[91938] = "Haunting Soul",
-	[169554] = "Disused Anima Container",
+	[99664] = "Restless Soul",
+	[141805] = "Threshanator 3000",
+	[105301] = "Expedient Elemental",
 	[64479] = "Gatecrusher",
-	[53258] = "Lord Rhyolith",
-	[61442] = "Kuai the Brute",
+	[62465] = "Captain Ook",
+	[94996] = "Fragment of the Crone",
 	[160859] = "Haunting Memory",
 	[38009] = "Reanimated Fanatic",
-	[43468] = "Lady Naz'jar",
+	[166644] = "Artificer Xy'mox",
 	[145898] = "Anointed Disciple",
-	[61709] = "Spawn of Anger",
-	[178095] = "Eye of the Jailer",
-	[132609] = "The Hivemind",
-	[120564] = "Titanic Anomaly",
+	[185427] = "Unstable Progenitor Relic",
+	[61431] = "Glintrok Scout",
+	[169594] = "Filled Anima Container",
+	[118924] = "Engine of Souls",
 	[33118] = "Ignis the Furnace Master",
-	[165512] = "Cocoon of Lakali",
-	[69181] = "Saurid",
-	[171474] = "Finger Food",
+	[67231] = "Trial of the King",
+	[150081] = "Wise Mari",
+	[102169] = "Black Bile",
 	[178763] = "Buttons",
 	[148201] = "Crawler Mine",
-	[56839] = "Anduin Wrynn",
-	[155645] = "Walkie Shockie X2",
+	[96223] = "Gamon",
+	[160271] = "Forbidden Manifestation",
 	[151654] = "Deuce Mecha-Buffer",
-	[56843] = "Lorewalker Stonestep",
+	[185128] = "Memorial Pylon",
 	[137588] = "Gasping Flounder",
 	[124164] = "Torment of Golganneth",
-	[156575] = "Dark Inquisitor Xanesh",
-	[41440] = "Aberration",
-	[181546] = "Prototype of Renewal",
+	[114895] = "Nightbane",
+	[101823] = "Mushroom Merchant",
+	[184823] = "Strange Artifact",
 	[99868] = "Fenryr",
 	[45906] = "Camel",
-	[77814] = "Teron'gor",
+	[78736] = "Warlord Zaela",
 	[65407] = "Shado-Pan Novice",
 	[138740] = "Musashitake",
 	[127809] = "Reorigination Module",
-	[155760] = "Tank Buster MK2",
-	[72889] = "Superheated Crawler Mine",
-	[155056] = "Robo-Waste",
-	[53501] = "Living Meteor",
+	[88938] = "Ragnaros",
+	[83775] = "Ogron Laborer",
+	[166246] = "Buttons",
+	[98696] = "Illysanna Ravencrest",
 	[38010] = "Reanimated Adherent",
-	[181579] = "Lihuvim",
-	[149043] = "Heavy Barrel",
-	[51405] = "Angered Earth",
-	[59080] = "Darkmaster Gandling",
+	[32927] = "Runemaster Molgeim",
+	[162933] = "Thought Harvester",
+	[161375] = "Promising Specimen",
+	[107699] = "Spellblade Aluriel",
 	[61699] = "Sik'thik Amberwing",
-	[155243] = "Scavenging Crab",
+	[74570] = "Ruination",
 	[171094] = "Grisly Curio",
-	[111864] = "Sticky",
-	[153202] = "Piston Smasher",
-	[149995] = "High Priestess Azil",
-	[131853] = "Huntmaster Grath",
-	[178783] = "Moriaz the Red",
-	[53695] = "Rageface",
+	[127503] = "Overseer Korgus",
+	[162719] = "Void Ascendant",
+	[145903] = "Darkforged Crusader",
+	[108600] = "Sister of the Moon",
+	[157161] = "Sand Vortex",
+	[143045] = "Coastal Scuttler",
 }
 AchievementTrackerNPCCacheClassic = {
 }

@@ -1,3 +1,33 @@
+# v2.24.2
+
+- Fixed The Dragonscale Expedition quest chain incorrectly showing as completed for the Dragonflight Prologue
+- Fixed an incorrect quest name for the Dragonflight Prologue
+
+# v2.24.1
+
+- Fixed some unnamed quests for the Dragonflight Prologue
+- Fixed some incorrect npc locations for the Dragonflight Prologue
+
+# v2.24.0
+
+- Added Dragonflight Prologue
+- Updated for 10.0.2
+- Updated friendship rep handling for Dragonflight
+
+# v2.23.0
+
+- Fixed an error preventing alt+clicking auction house items
+- Fixed requirements for The Last Sigil and following quest chains
+
+# v2.22.0
+
+- Updated for 10.0.0
+
+# v2.21.0
+
+- Fixed error loading class list for Wrath Classic
+- Fixed error handling links with square brackets
+
 # v2.20.0
 
 - Fixed error setting title text on Dragonflight Beta 
