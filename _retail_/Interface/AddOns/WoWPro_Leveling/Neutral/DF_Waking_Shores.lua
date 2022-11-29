@@ -1,81 +1,14 @@
 local guide = WoWPro:RegisterGuide('The_Waking_Shores', 'Leveling', 'The Waking Shores', 'WowPro Team', 'Neutral')
-WoWPro:GuideSort(guide, 1)
+WoWPro:GuideSort(guide, 2)
 WoWPro:GuideName(guide,"Waking Shores")
 WoWPro:GuideLevels(guide,60, 70, 60)
 WoWPro:GuideNextGuide(guide, 'Ohnahran_Plains')
 WoWPro:GuideSteps(guide, function()
 return [[
 
-A The Dragon Isles Await|QID|65436|M|PLAYER|Z|84|N|From UI Alert.|FACTION|Alliance|
-A The Dragon Isles Await|QID|65435|M|PLAYER|Z|85|N|From UI Alert.|FACTION|Horde|
-T The Dragon Isles Await|QID|65436|M|79.79,27.00|Z|84|N|To Wrathion in Stormwind.|FACTION|Alliance|
-T The Dragon Isles Await|QID|65435|M|44.22,38.11|Z|85|N|To Ebyssian in Orgrimmar.|FACTION|Horde|
-A Aspectral Invitation|QID|66577|PRE|65436|M|79.79,27.00|Z|84|N|From Wrathion.|FACTION|Alliance|
-A Aspectral Invitation|QID|65437|PRE|65435|M|44.22,38.11|Z|85|N|From Ebyssian.|FACTION|Horde|
-C Aspectral Invitation|QID|66577|M|79.79,27.00|Z|84|QO|1|CHAT|N|Speak with Wrathion.|FACTION|Alliance|
-C Aspectral Invitation|QID|65437|M|44.22,38.11|Z|85|QO|1|CHAT|N|Speak with Ebyssian.|FACTION|Horde|
-T Aspectral Invitation|QID|66577|M|79.79,27.00|Z|84|N|To Wrathion.|FACTION|Alliance|
-T Aspectral Invitation|QID|65437|M|44.22,38.11|Z|85|N|To Ebyssian.|FACTION|Horde|
-A The Obsidian Warders|QID|72240|PRE|66577|M|79.94,26.95|Z|84|N|From Scalecommander Azurathel.|FACTION|Alliance|
-A Expeditionary Coordination|QID|66589|PRE|66577|M|79.71,27.30|Z|84|N|From Toddy Whiskers.|FACTION|Alliance|
-C Expeditionary Coordination|QID|66589|M|64.09,37.17|Z|84|QO|1|CHAT|N|Artisans can be found in the Dwarven District near the forge.|FACTION|Alliance|
-C Expeditionary Coordination|QID|66589|M|63.27,69.95|Z|84|QO|3|CHAT|N|Scholars can be found in front of Weller's arsenal in the Trade District.|FACTION|Alliance|
-C The Obsidian Warders|QID|72240|M|50.94,67.29|Z|84|QO|1|CHAT|N|Orders delivered to Dervishian who is on the top of the tower above the Stockades.|FACTION|Alliance|
-C Expeditionary Coordination|QID|66589|M|38.22,45.51|Z|84|QO|2|CHAT|N|Pathfinder Jeb can be found overlooking Stormwind Harbor.|FACTION|Alliance|
-T Expeditionary Coordination|QID|66589|M|22.67,55.71|Z|84|N|To Toddy Whiskers.|FACTION|Alliance|
-T The Obsidian Warders|QID|72240|M|22.67,55.71|Z|84|N|To Toddy Whiskers.|FACTION|Alliance|
-A Expeditionary Coordination|QID|65443|PRE|65437|M|44.27,38.21|Z|85|N|From Naleidea Rivergleam.|FACTION|Horde|
-A The Dark Talons|QID|72256|PRE|65437|M|44.27,38.21|Z|85|N|From Scalecommander Cinderthresh.|FACTION|Horde|
-C Expeditionary Coordination|QID|65443|M|57.18,54.14|Z|85|QO|1|CHAT|N|The artisans can be found on the fishing dock in The Drag.|FACTION|Horde|
-C Expeditionary Coordination|QID|65443|M|71.24,50.66|Z|85|QO|3|CHAT|N|The scholars can be found upstairs inside The Wyvern's Tail inn.|FACTION|Horde|
-C Expeditionary Coordination|QID|65443|M|38.42,57.02|Z|85|QO|2|CHAT|N|The explorers can be found on top of a rock formation- about equal to the height of the zep towers.|FACTION|Horde|
-C The Dark Talons|QID|72256|M|55.08,89.86|Z|85|QO|1|CHAT|N|Kodethi can be found on top of the front gate.|FACTION|Horde|
-T Expeditionary Coordination|QID|65443|M|55.80,12.63|Z|1|N|To Naleidea Rivergleam.|FACTION|Horde|
-T The Dark Talons|QID|72256|M|55.80,12.63|Z|1|N|To Naleidea Rivergleam at the top of the new zep tower by the harbor.|FACTION|Horde|
-A Whispers on the Winds|QID|66596|PRE|66589&72240|M|22.86,56.25|Z|84|N|From Archmage Khadgar.|FACTION|Alliance|
-A Whispers on the Winds|QID|65439|PRE|65443&72256|M|55.93,12.63|Z|1|N|From Archmage Khadgar.|FACTION|Horde|
-C Whispers on the Winds|QID|66596|M|22.86,56.25|Z|84|CHAT|N|Speak with Archmage Khadgar.|FACTION|Alliance|
-C Whispers on the Winds|QID|65439|M|55.93,12.63|Z|1|CHAT|N|Speak with Archmage Khadgar.|FACTION|Horde|
-T Whispers on the Winds|QID|66596|M|22.88,56.05|Z|84|N|To Wrathion.|FACTION|Alliance|
-T Whispers on the Winds|QID|65439|M|55.84,12.75|Z|1|N|To Ebyssian.|FACTION|Horde|
-N Guide Locked|QID|99999|DATE|-1669676400;1|N|The rest of this guide is currently not active, please come back after 3pm PST on 11/28.|
-A To the Dragon Isles!|QID|67700|PRE|66596|M|22.67,55.72|Z|84|N|From Toddy Whiskers.|FACTION|Alliance|
-A To the Dragon Isles!|QID|65444|PRE|65439|M|22.67,55.72|Z|1|N|From Naleidea Rivergleam.|FACTION|Horde|
-C To the Dragon Isles!|QID|67700|M|22.49,56.45|Z|84|QO|1|NC|N|Wait for the Rugged Dragonscale at Stormwind docks.|FACTION|Alliance|
-C To the Dragon Isles!|QID|65444|M|55.95,13.02|Z|1|QO|1|NC|N|Wait for the Defiant Dragonscale at Durotar Zepplin Tower.|FACTION|Horde|
-C To the Dragon Isles!|QID|67700|M|82.02,31.74|Z|2022|QO|2|NC|N|Ride the Rugged Dragonscale to Dragon Isles.|FACTION|Alliance|
-C To the Dragon Isles!|QID|65444|M|80.83,27.67|Z|2022|QO|2|NC|N|Ride the Defiant Dragonscale to Dragon Isles.|FACTION|Horde|
-T To the Dragon Isles!|QID|67700|M|82.13,31.90|Z|2022|N|To Toddy Whiskers.|FACTION|Alliance|
-T To the Dragon Isles!|QID|65444|M|80.62,27.58|Z|2022|N|To Naleidea Rivergleam.|FACTION|Horde|
-A Explorers in Peril|QID|70122|PRE|67700|M|82.13,31.90|Z|2022|N|From Toddy Whiskers.|FACTION|Alliance|
-A Explorers in Peril|QID|65452|PRE|65444|M|80.62,27.58|Z|2022|N|From Naleidea Rivergleam.|FACTION|Horde|
-A Primal Pests|QID|70123|PRE|67700|M|82.16,31.86|Z|2022|N|From Scalecommander Azurathel.|FACTION|Alliance|
-A Primal Pests|QID|65453|PRE|65444|M|80.65,27.59|Z|2022|N|From Scalecommander Cinderthresh.|FACTION|Horde|
-A Practice Materials|QID|70124|PRE|67700|M|82.09,31.89|Z|2022|N|From Thaelin Darkanvil.|FACTION|Alliance|
-A Practice Materials|QID|65451|PRE|65444|M|80.60,27.65|Z|2022|N|From Boss Magor.|FACTION|Horde|
-l Dragon Isles Supply Bag|AVAILABLE|72708|L|202081|N|Kill Proto Drakes till the item drops.|S!US|RANK|2|IZ|13722|
-A Dragon Isles Supplies|QID|72708|M|PLAYER|N|Use the Dragon Isles Supply Bag from your inventroy.|O|U|202081|RANK|2|
-C Practice Materials|QID|70124^65451|M|79.40,32.88|Z|2022|N|Kill the Proto-Whelp and collect their scales.|S|
-C Primal Pests|QID|70123^65453|M|83.59,36.12|Z|2022|N|Slay Primal Proto-drakes.|S|
-C Explorers in Peril|QID|70122|M|79.47,35.32|Z|2022|QO|3|H|N|Spelunker Lockeye is suspended above some lava enter the area on the left side.|T|Spelunker Lockeye|FACTION|Alliance|
-C Explorers in Peril|QID|65452|M|77.31,29.96|Z|2022|QO|3|H|N|Spelunker Lazee is suspended over lava enter the area on the Right side.|T|Spelunker Lazee|FACTION|Horde|
-;A Primal Scythid Queen|QID|66074|M|81.36,37.58|Z|2022|N|Bonus Objective - Autoaccepted.|RANK|2|FACTION|Alliance|
-;C Primal Scythid Queen|QID|66074|M|81.36,37.58|Z|2022|N|Slay Primal Scythid Queen.|T|Primal Scythid Queen|
-C Explorers in Peril|QID|70122|M|83.14,36.22|Z|2022|QO|2|H|N|Click on Archivist Rellid who is being carried around by low flying drakes.|T|Archivist Rellid||FACTION|Alliance|
-C Explorers in Peril|QID|65452|M|78.75,24.31|Z|2022|QO|2|H|N|Click Archivist Spearblossom who is being carried around by low flying drakes.|T|Archivist Spearblossom|FACTION|Horde|
-;A Ancient Hornswog|QID|66076|M|77.67,22.41|Z|2022|N|Bonus Objective - Autoaccepted.|RANK|2|FACTION|Horde|IZ|13722|
-;C Ancient Hornswog|QID|66076|M|77.67,22.41|Z|2022|N|Slay Ancient Hornswog.|T|Ancient Hornswog|
-C Explorers in Peril|QID|70122|M|83.56,33.61|Z|2022|QO|1|H|N|Professor Cogcatcher is trapped under some bones.|T|Professor Cogcatcher|FACTION|Alliance|
-C Explorers in Peril|QID|65452|M|80.30,26.31|Z|2022|QO|1|H|N|Pathfinder Poppy is trapped under some bones.|T|Pathfinder Poppy|FACTION|Horde|
-C Primal Pests|QID|70123^65453|M|77.96,29.80|Z|2022|N|Finish slaying the remaining Primal Proto-drakes.|US|
-C Practice Materials|QID|70124^65451|M|77.96,29.80|Z|2022|N|Continue killing Primal Proto-Whelp until you have enough scales.|US|
-T Explorers in Peril|QID|70122|M|76.62,33.63|Z|2022|N|To Toddy Whiskers.|FACTION|Alliance|
-T Explorers in Peril|QID|65452|M|76.62,33.63|Z|2022|N|To Naleidea Rivergleam.|FACTION|Horde|
-A Where is Wrathion?|QID|70125|PRE|70122|M|76.62,33.63|Z|2022|N|From Toddy Whiskers.|FACTION|Alliance|
-A Where is Wrathion?|QID|69910|PRE|65452|M|76.62,33.63|Z|2022|N|From Naleidea Rivergleam.|FACTION|Horde|
-C Where is Wrathion?|QID|70125^69910|M|76.61,33.65|Z|2022|CHAT|N|Ask Sendrax why the Dragons aren't here.|
-T Where is Wrathion?|QID|70125^69910|M|76.61,33.65|Z|2022|N|To Sendrax.|
+T The Waking Shore|QID|72266|M|76.57,33.66|Z|2022|N|To Sendrax.|
 A Excuse the Mess|QID|69911|PRE|70125^69910|M|76.57,33.66|Z|2022|N|From Sendrax.|
+
 A Give Peace a Chance|QID|66110|PRE|65452|M|76.36,33.07|Z|2022|N|From Warlord Breka Grimaxe.|RANK|2|FACTION|Horde|
 T Primal Pests|QID|65453|M|76.29,33.02|Z|2022|N|To Scalecommander Cinderthresh.|FACTION|Horde|
 T Practice Materials|QID|70124|M|76.50,34.34|Z|2022|N|To Thaelin Darkanvil.|FACTION|Alliance|
@@ -98,6 +31,7 @@ C From Such Great Heights|QID|66101|M|75.90,33.58|Z|2022|QO|2|NC|N|Use the #1 ab
 C From Such Great Heights|QID|66101|M|75.90,33.58|Z|2022|QO|3|NC|N|Use the #2 abilty to Search for Allies.|FACTION|Alliance|
 C From Such Great Heights|QID|66101|M|75.90,33.58|Z|2022|QO|4|NC|N|Use the #3 abilty to Search for Danger.|FACTION|Alliance|
 T From Such Great Heights|QID|66101|M|75.84,33.50|Z|2022|N|To Aster Cloudgaze.|FACTION|Alliance|
+;moved T 72708. but leaving here too, as it won't hurt anything, and maybe it's diff in adventure mode?
 T Dragon Isles Supplies|QID|72708|M|76.43,34.50|N|Turn into Haephesta.|
 A Quality Assurance|QID|69965|PRE|66110^67053|M|76.41,34.45|Z|2022|N|From Haephesta.|RANK|2|
 A Always Be Crafting|QID|66112|PRE|66110^67053|M|76.36,34.63|Z|2022|N|From Grun Ashbeard.|RANK|2|
@@ -169,10 +103,10 @@ A Blacktalon Intel|QID|65992|PRE|65991|M|66.36,34.99|Z|2022|N|From Wrathion.|
 ;C Dragonhunter Igordan|QID|66956|M|64.28,33.32|Z|2022|N|Slay Dragonhunter Igordan.|S!US|T|Dragonhunter Igordan|
 C Blacktalon Intel|QID|65992|M|63.03,33.35|Z|2022|QO|1|CHAT|N|Consult Talonstalker Kavia.|T|Talonstalker Kavia|
 C Blacktalon Intel|QID|65992|M|65.10,29.36|Z|2022|QO|3|CHAT|N|Consult Right.|T|Right|
-C Killjoy|QID|65993|M|63.22,29.66|Z|2022|N|Slay Meatgrinder Sotok when convenient.|S|T|Meatgrinder Sotok|
+K Meatgrinder Sotok|ACTIVE|65993|QO|1|M|63.22,29.66|Z|2022|N|Slay Meatgrinder Sotok when convenient.|S|T|Meatgrinder Sotok|
 A The Obsidian Citadel|QID|65995|M|63.22,29.66|Z|2022|N|From Qalashi Plans looted from Meatgrinder Sotok.|O|U|193874|
 C Blacktalon Intel|QID|65992|M|63.43,28.86|Z|2022|QO|2|CHAT|N|Consult Left.|T|Left|
-C Killjoy|QID|65993|M|63.22,29.66|Z|2022|N|Slay Meatgrinder Sotok.|US|T|Meatgrinder Sotok|
+K Meatgrinder Sotok|ACTIVE|65993|QO|1|M|63.22,29.66|Z|2022|N|Slay Meatgrinder Sotok.|US|T|Meatgrinder Sotok|
 A The Obsidian Citadel|QID|65995|M|63.22,29.66|Z|2022|N|From Qalashi Plans looted from Meatgrinder Sotok.|O|U|193874|
 T Killjoy|QID|65993|M|62.65,33.19|Z|2022|N|To Wrathion.|
 T Blacktalon Intel|QID|65992|M|62.65,33.19|Z|2022|N|To Wrathion.|
@@ -210,6 +144,9 @@ C A Last Hope|QID|66001|M|56.89,21.60|Z|2022|QO|2|H|N|Pick up the Infused Dragon
 C A Last Hope|QID|66001|M|55.07,30.62|Z|2022|QO|3|NC|N|Carry the egg to safety. Note you can't mount up, or use skills, just run.|
 T A Last Hope|QID|66001|M|55.10,31.00|Z|2022|N|To Majordomo Selistra.|
 A For the Benefit of the Queen|QID|66114|PRE|66001|M|55.10,31.00|Z|2022|N|From Majordomo Selistra.|
+A A Two for One Deal|QID|70179|M|54.46,30.86|Z|2022|N|From Apprentice Caretaker Zefren.|RANK|2|;Not sure what triggers this quest, per ATT it was available after 66001 *and not before 66997* so putting here since leaving the egg unguarded while killing rock elementals seems wrong.
+C A Two for One Deal|QID|70179|M|53.05,32.36|Z|2022|N|Remove the life from the rock elementals, then remove the rocks.|
+T A Two for One Deal|QID|70179|M|54.46,30.86|Z|2022|N|To Apprentice Caretaker Zefren|
 C For the Benefit of the Queen|QID|66114|M|62.26,72.88|Z|2022|QO|1|CHAT|N|Ask Majordomo Selistra to take you to the Ruby Lifeshrine.|
 C For the Benefit of the Queen|QID|66114|M|62.33,73.02|Z|2022|QO|2|CHAT|N|Show Queen Alexstrasza the infused egg.|
 T For the Benefit of the Queen|QID|66114|M|62.33,73.02|Z|2022|N|To Alexstrasza the Life-Binder.|
@@ -229,7 +166,7 @@ C Friend on the Mend|QID|70058|QO|3|M|59.81,71.32|Z|2022|H|N|Glass Bead is lying
 C Friend on the Mend|QID|70058|QO|2|M|60.37,73.15|Z|2022|CHAT|N|Ask the NPCs standing around if they have some spare fabric.|RANK|2|
 A Stay a While|QID|70132|PRE|66114|M|57.82,66.85|Z|2022|N|From Veritistrasz.This quest takes litterally forever.|RANK|3|
 C Stay a While|QID|70132|M|57.82,66.79|Z|2022|EAB|QO|1|NC|N|Use the Extra Action Button to Sit and look at the view, then use chat option with Veritistrasz.|
-C Stay a While|QID|70132|M|57.82,66.81|Z|2022|QO|2|CHAT|N|Listen to Veritistrasz's Stories.|
+C Stay a While|QID|70132|M|57.82,66.81|Z|2022|QO|2|CHAT|N|Listen to Veritistrasz's Stories. If you want the Spiked Crest Customization, for your Renewed Proto-Drake, DON'T choose "I'm busy" chat option, or you wont get the followup quest with that customization.|
 T Stay a While|QID|70132|M|57.85,66.80|Z|2022|N|To Veritistrasz.|
 A Memories|QID|70134|PRE|70132|M|57.82,66.85|Z|2022|N|From Veritistrasz.|RANK|2|
 A Artisan's Courier|QID|67564|M|57.93,68.26|Z|2022|N|From Haephesta.|RANK|2|
@@ -269,20 +206,20 @@ T Dragon Glyphs and You|QID|68798|M|75.18,55.00|Z|2022|N|To Lord Andestrasz.|
 A Return to the Ruby Lifeshrine|QID|68799|PRE|68798|M|75.18,55.00|Z|2022|N|From Lord Andestrasz|
 C Return to the Ruby Lifeshrine|QID|68799|M|75.02,55.57|Z|2022|V|N|Hop on Relastrasza for a ride into the Skytop launch tower.|
 
-N This next section is a tour around the zone collection Dragonriding Glyphs. \nIf you are not interested in making your dragon better just skip over them.|ACH|16575|
-$ Skytop Observatory Tower|QID|99999|M|75.3,57.0|Z|2022;The Waking Shores!Dragonflight|N|Over the tower.|ACH|15985|
-$ Flashfrost Enclave|QID|99999|M|58.10,78.63|Z|2022;The Waking Shores!Dragonflight|N|Just above the ground.|ACH|16669|
-$ Ruby Life Pools Peaks|QID|99999|M|54.5,74.2|Z|2022;The Waking Shores!Dragonflight|N|Over the hill top.|ACH|15988|
-$ Obsidian Bulwark|QID|99999|M|41.0,72.0|Z|2022;The Waking Shores!Dragonflight|N|Floating above the mountain pillar.|ACH|15987|
-$ Obsidian Throne|QID|99999|M|21.0,51.0|Z|2022;The Waking Shores!Dragonflight|N|Behind the tower floating over the lava.|ACH|16053|
-$ The Overflowing Spring|QID|99999|M|46.4,52.|Z|2022;The Waking Shores!Dragonflight|N|Over the mountain top.|ACH|15989|
-$ Crumbling Life Archway|QID|99999|M|57.6,55.0|Z|2022;The Waking Shores!Dragonflight|N|Inside the actual archway, at the top of it.|ACH|15991|
-$ Dragonheart Outpost|QID|99999|M|69,46|Z|2022;The Waking Shores!Dragonflight|N|Inside the broken tower, around mid level.|ACH|16051|
-$ Wingrest Embassy|QID|99999|M|75.0,37.0|Z|2022;The Waking Shores!Dragonflight|N|On the east side of the tower, look around it's base.|ACH|15986|
-$ Scalecracker Peak|QID|99999|M|73.2,20.0|Z|2022;The Waking Shores!Dragonflight|N|This one is on the peak of the mountan. This one is tough to get, if you have patience use your vigor to find a place to land to regen.|ACH|16052|
-$ Life-Binder Observatory|QID|99999|M|52.68,17.19|Z|2022;The Waking Shores!Dragonflight|N|Over the tower.|ACH|15990|
+N Glyph Collection|N|This next section is a tour around the zone collection Dragonriding Glyphs. \nIf you are not interested in making your dragon better just skip over them or unclick Treasures in the WowPro Config UI.\n[color=FF0000]NOTE: [/color]Later zone guides have them worked into the guide as you come across them. If you want to get them all now, there is a guide in the Achievements Module that lists them in an optimized order for all 48 glyphs.|ACH|16575|
+$ Skytop Observatory Tower Glyph|QID|99999|M|75.3,57.0|Z|2022;The Waking Shores!Dragonflight|N|Over the tower.|ACH|15985|
+$ Flashfrost Enclave Glyph|QID|99999|M|58.10,78.63|Z|2022;The Waking Shores!Dragonflight|N|Just above the ground.|ACH|16669|
+$ Ruby Life Pools Peaks Glyph|QID|99999|M|54.5,74.2|Z|2022;The Waking Shores!Dragonflight|N|Over the hill top.|ACH|15988|
+$ Obsidian Bulwark Glyph|QID|99999|M|41.0,72.0|Z|2022;The Waking Shores!Dragonflight|N|Floating above the mountain pillar.|ACH|15987|
+$ Obsidian Throne Glyph|QID|99999|M|21.0,51.0|Z|2022;The Waking Shores!Dragonflight|N|Behind the tower floating over the lava.|ACH|16053|
+$ The Overflowing Spring Glyph|QID|99999|M|46.4,52.|Z|2022;The Waking Shores!Dragonflight|N|Over the mountain top.|ACH|15989|
+$ Crumbling Life Archway Glyph|QID|99999|M|57.6,55.0|Z|2022;The Waking Shores!Dragonflight|N|Inside the actual archway, at the top of it.|ACH|15991|
+$ Dragonheart Outpost Glyph|QID|99999|M|69,46|Z|2022;The Waking Shores!Dragonflight|N|Inside the broken tower, around mid level.|ACH|16051|
+$ Wingrest Embassy Glyph|QID|99999|M|75.0,37.0|Z|2022;The Waking Shores!Dragonflight|N|On the east side of the tower, look around it's base.|ACH|15986|
+$ Scalecracker Peak Glyph|QID|99999|M|73.2,20.0|Z|2022;The Waking Shores!Dragonflight|N|This one is on the peak of the mountan. This one is tough to get, if you have patience use your vigor to find a place to land to regen.|ACH|16052|
+$ Life-Binder Observatory Glyph|QID|99999|M|52.68,17.19|Z|2022;The Waking Shores!Dragonflight|N|Over the tower.|ACH|15990|
 
-H Ruby Lifeshrine|ACTIVE|68799|M|61.90,73.87|Z|2022|N|Hearth or you can just glide back to Alexstrasza the Life-Binder on your dragon, this will take between 2 and 3 vigor at this distance.|
+H Ruby Lifeshrine|ACTIVE|68799|M|61.90,73.87|Z|2022|N|Hearth or you can just glide back to Alexstrasza the Life-Binder on your dragon, this will take between 2 and 3 vigor at this distance. Don't forget to open your Dragonriding skillpane and spend your glyphs.|
 T Return to the Ruby Lifeshrine|QID|68799|M|62.35,73.02|Z|2022|N|To Alexstrasza the Life-Binder.|
 C Friend on the Mend|QID|70058|QO|1|M|60.88,69.37|Z|2022|H|N|Ruby feathers are scattered around the edge of the pool near Mother Elion.|
 T Friend on the Mend|QID|70058|M|61.44,70.15|Z|2022|N|To Mahra Treebender.|
@@ -490,6 +427,8 @@ T King Without a Crown|QID|66528|M|39.08,83.27|Z|2022|N|To Dervishian.|
 A A Thousand Words|QID|66529|PRE|66528|M|39.08,83.27|Z|2022|N|From Dervishian.|RANK|2|
 C A Thousand Words|QID|66529|M|38.75,83.61|Z|2022|NC|U|192465|N|Photograph Dervishian near the Proto-Dragon Skeleton.|
 T A Thousand Words|QID|66529|M|38.72,83.69|Z|2022|N|To Dervishian.|
+R Apex Canopy|ACTIVE|69897|M|26.70,83.70|Z|2022|N|Running here just to get the flight point and explore credit.|RANK|3|
+f Apex Observatory|ACTIVE|69897|M|23.79,83.15|Z|2022|N|At Hjorik.|RANK|3|
 C Scientific Meat-thod|QID|69898|M|47.68,77.68|Z|2022|N|Kill the Riverbeast's to collect some meat.|US|
 C Behavior Analysis "Homework"|QID|69897|M|45.92,81.45|Z|2022|QO|2|CHAT|N|Report back to Iyali.|
 T Behavior Analysis "Homework"|QID|69897|M|45.92,81.45|Z|2022|N|To Iyali.|
@@ -511,11 +450,31 @@ A Theory in Practice|QID|69902|PRE|69900&69901|M|45.95,81.50|Z|2022|N|From Tyrgo
 C Theory in Practice|QID|69902|M|45.91,81.44|Z|2022|QO|1|H|N|Click on the whelpling.|
 C Theory in Practice|QID|69902|M|45.96,81.50|Z|2022|QO|2|CHAT|N|Pick a name any name.|
 T Theory in Practice|QID|69902|M|45.96,81.50|Z|2022|N|To Tyrgon.|
-A Simple Excavation Tools|QID|70335|M|47.92,82.07|Z|2022|N|From Ree'ana.|REN|3|RANK|2|
+A Simple Excavation Tools|QID|70335|M|47.92,82.07|Z|2022|N|From Ree'ana.|DFREN|Dragonscale Exp;2507;3|RANK|2|
 T Simple Excavation Tools|QID|70335|M|47.92,82.07|Z|2022|N|To Ree'ana.|
-A Renown Supplies|QID|72024|M|47.11,82.59|Z|2022|N|From Cataloger Jakes.|REN|3|RANK|2|
-T Renown Supplies|QID|72024|M|47.11,82.59|Z|2022|N|To Cataloger Jakes.|
+;guessing at matching levels to QIDs REN level from UI, quest id from questschanged in order completed, should match up
+A Dragon Isles Supplies|QID|72024|M|47.11,82.59|Z|2022|N|From Cataloger Jakes.|DFREN|Dragonscale Exp;2507;2|IZ|13732|RANK|2|;at 3 when picking this up
+A Dragon Isles Supplies|QID|70026|M|47.11,82.59|Z|2022|N|From Cataloger Jakes.|DFREN|Dragonscale Exp;2507;5|IZ|13732|RANK|2|;at 8 when picking this up
+A Dragon Isles Supplies|QID|72032|M|47.11,82.59|Z|2022|N|From Cataloger Jakes.|DFREN|Dragonscale Exp;2507;6|IZ|13732|RANK|2|;at 8 when picking this up
+
 ;t Pruning the Preserve|QID|70196|M|46.28,79.60|Z|2022|N|Bonus Objective - Autocompleted.|
+
+R Smoldering Perch|AVAILABLE|65687|M|39.43,48.33|Z|2022|N|We are going to take a side trip to get a quest line for Sojourner of the Waking Shores.|RANK|3|;why is there no leadin quest for this?
+A Punching Up|QID|65687|M|39.43,48.33|Z|2022|N|From Ingot.|RANK|3|
+A A Cultist's Misgivings|QID|65690|M|39.43,48.33|Z|2022|N|From Ingot.|RANK|3|
+C Punching Up|QID|65687|M|37.43,46.66|Z|2022|N|Kill the Worldbreaker Dragonkin as you search for Ayasanth.|S|
+T A Cultist's Misgivings|QID|65690|M|37.45,46.67|Z|2022|N|To Ayasanth.|
+A Under Lock and Key|QID|65782|PRE|65690|M|37.45,45.67|Z|2022|N|From Ayasanth.|RANK|3|
+C Under Lock and Key|QID|65782|QO|1|M|38.20,48.36|Z|2022|N|The key drops from the Worldbreaker Guards, so prioritize killing them until you get the key.|
+C Punching Up|QID|65687|M|38.20,48.36|Z|2022|N|Keep killing the Worldbreaker Dragonkin until the step completes.|US|
+C Under Lock and Key|QID|65782|QO|2|M|37.45,46.67|Z|2022|H|N|Unlock her cage.|
+T Punching Up|QID|65687|M|37.32,46.65|Z|2022|N|To Ingot.|
+T Under Lock and Key|QID|65782|M|37.35,46.62|Z|2022|N|To Ayasanth.|
+A The Shadow of His Wings|QID|65691|PRE|65687&65782|M|37.35,46.62|Z|2022|N|From Ayasanth.|RANK|3|
+C The Shadow of His Wings|QID|65691|QO|1|M|35.59,47.95|Z|2022|N|Go into the cave, most of the mobs are "orange" (neutral) and will clear out. Kill the hostiles and go stand by Cygenoth.|
+K Cygenoth|ACTIVE|65691|QO|2|M|35.03,45.44|Z|2022|N|Kill Cygenoth the Corrupted.|T|Cygenoth|
+T The Shadow of His Wings|QID|65691|M|39.56,48.40|Z|2022|N|To Ayasanth.|
+
 R Obsidian Bulwark|ACTIVE|66079|M|47.7,67.1;42.47,66.82|CS|Z|2022|N|Mount up and head off to find Wrathion.|
 T Wrathion Awaits|QID|66079|M|42.47,66.82|CS|Z|2022|N|To Wrathion.|
 A Lessons From Our Past|QID|72241|PRE|66124|M|42.47,66.82|Z|2022|N|From Scalecommander Emberthal.|
@@ -537,7 +496,7 @@ A No Time for Heroes|QID|65957|PRE|66048&66078|M|42.47,66.86|Z|2022|N|From Wrath
 C Talon Strike|QID|65956|M|36.73,63.14|Z|2022|N|Disrupt the Djaradin defenses. Extra action button will summon helpers.|EAB|S|
 C No Time for Heroes|QID|65957|M|35.53,68.52|Z|2022|QO|1|N|Slay Piercer Gigra on the top of the tower. Watch out for the orange circle on the ground. It will knock you off the tower.|T|Piercer Gigra|
 C No Time for Heroes|QID|65957|M|34.82,66.91|Z|2022|QO|3|N|Slay Olphis the Molten.|T|Olphis the Molten|
-C No Time for Heroes|QID|65957|M|35.59,60.85|Z|2022|QO|2|N|Slay Modak Flamespit on the top of the tower.|T|Modak Flamespit|
+K Modak Flamespit|ACTIVE|65957|M|35.59,60.85|Z|2022|QO|2|N|Slay Modak Flamespit on the top of the tower.|T|Modak Flamespit|
 C Talon Strike|QID|65956|M|36.73,63.14|Z|2022|N|Disrupt the Djaradin defenses. Extra action button will summon helpers.|EAB|US|
 T No Time for Heroes|QID|65957|M|34.01,61.29|Z|2022|N|To Wrathion.|
 T Talon Strike|QID|65956|M|33.98,61.30|Z|2022|N|To Wrathion.|
@@ -567,8 +526,8 @@ C Forging a New Future|QID|66056|M|24.64,60.87|Z|2022|QO|1|H|N|Activate Earth-Wa
 C Forging a New Future|ACTIVE|66056|M|24.40,60.16|Z|2022|QO|2|H|N|Collect the Cindershard Coal from the piles around the room, be warned some of them come to life.|
 T Forging a New Future|QID|66056|M|24.67,61.10|Z|2022|N|To Forgemaster Bazentus.|
 A The Spark|QID|66354|PRE|66056|M|24.67,61.10|Z|2022|N|From Forgemaster Bazentus.|
-C The Spark|QID|66354|M|24.62,60.92|Z|2022|QO|1|NC|N|Place fragments on forge.|
-C The Spark|QID|66354|M|24.65,60.91|Z|2022|QO|2|NC|N|Watch and wait.|
+C The Spark|QID|66354|M|24.62,60.92|Z|2022|QO|1|H|N|Place fragments on forge.|
+C The Spark|QID|66354|M|24.65,60.91|Z|2022|QO|2|I|N|Watch and wait.|
 C The Spark|ACTIVE|66354|M|24.62,60.91|Z|2022|QO|3|H|N|Collect reformed pieces.|
 T The Spark|QID|66354|M|24.68,61.12|Z|2022|N|To Forgemaster Bazentus.|
 A Restoring the Faith|QID|66057|PRE|66354|M|24.68,61.12|Z|2022|N|From Forgemaster Bazentus.|
@@ -604,5 +563,18 @@ T Life-Binder on Duty|QID|65791|M|62.35,73.02|Z|2022|N|To Alexstrasza the Life-B
 A A Charge of Care|QID|65794|PRE|65791|M|62.35,73.02|Z|2022|N|From Alexstrasza the Life-Binder.|
 C A Charge of Care|QID|65794|M|62.35,73.02|Z|2022|CHAT|N|Watch the cutscene as the Ruby Oathstone becomes empowered.|
 T A Charge of Care|QID|65794|M|61.57,68.54|Z|2022|N|To Alexstrasza the Life-Binder.|
+A Next Steppes|QID|65795|PRE|65794|M|61.57,68.54|Z|2022|N|From Alexstrasza the Life-Binder.|LEAD|72267|
+F Dragonscale Basecamp|ACTIVE|65795^72267|M|48.27,88.67|Z|2022|N|Fly, either on your own or by flightpath to Dragonscale Basecamp.|
+R Rubyscale Outpost|ACTIVE|65795^72267|M|48.27,88.67|Z|2022|N|Exit town on the west side and follow the road generally north to meet Ambassador Taurasza at Rubyscale Outpost.|
+
+N Adventure Mode|AVAILABLE|72268^72269|PRE|72266|S!US|N|If you want to go on to Ohn'ahran Plains next, fly to meet Ambassador Taurasza, If you want to choose a different zone, manually check off the next two steps and return to Wingrest Embassy and the scouting map.|
+F Dragonscale Basecamp|ACTIVE|65794|PRE|72266|M|57.50,68.13|Z|2022|N|At Vaknai.|
+N Choose Ohn'ahran Plains|ACTIVE|65794|PRE|72266|JUMP|Ohnahran_Plains|
+F Wingrest Embassy|AVAILABLE|72268^72269|PRE|72266|M|57.50,68.13|Z|2022|N|At Vaknai.|
+N Scouting Map|AVAILABLE|72268^72269|PRE|72266|M|76.52,34.24|Z|2022|N|Pick your next zone. You can pick up all of them and save yourself a trip back later.|
+N Carry on!|ACTIVE|72268^72269|S!US|N|Finish your business in Wingrest Embassy, train tradeskills if you want and when you are ready, click on the book icon to load the next guide.|
+N Choose Azure Span|ACTIVE|72268|S!US|JUMP|The_Azure_Span|
+N Choose Thaldraszus|ACTIVE|72269|S!US|JUMP|Thaldraszus|
+
 ]]
 end)

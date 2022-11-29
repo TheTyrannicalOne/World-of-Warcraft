@@ -10,28 +10,32 @@ if (GetLocale() == "frFR") then
         Disabled = "Désactivé",
         Config = {
             RareAnnounce = {
-                "Enable Chat Announcements",
-                "Enables/Disables announcing rares to general chat when targeted",
+                "Activer les annonces de chat",
+                "Active/désactive l’annonce de rares au chat général lorsqu’il est ciblé",
             },
+			PartyRaidChatAnnounce = {
+				"Activer les annonces de chat de groupe/raid (les annonces de chat doivent être activées)",
+				"Active/désactive l’annonce de rares au chat Party/Raid lorsqu’il est ciblé (les annonces de chat doivent être activées)",
+			},
             Sound = {
-                "Enable Sounds",
-                "Enables/Disables audible clues when rares are tagged",
+                "Activer les sons",
+                "Active/désactive les indices sonores lorsque les indices rares sont marqués",
             },
             TomTom = {
-                "Enable TomTom Waypoints",
-                "Enables/Disables automatic tomtom waypoints",
+                "Activer les Waypoints TomTom",
+                "Active/désactive les points de cheminement tomtom automatiques",
             },
             OnDeath = {
-                "Enable On Death Announcements (Use at own risk)",
-                "Enables/Disables announcing the death of rares to chat",
+                "Activer les annonces de décès (utilisation à vos risques et périls)",
+                "Active/désactive l’annonce de la mort de rares pour discuter",
             },
             Duplicates = {
-                "Enable Notifications For Already Completed Rares",
-                "Enables/Disables reacting to rares that have already been completed today",
+                "Activer les notifications pour les rares déjà terminés",
+                "Active/désactive la réaction aux rares qui ont déjà été complétées aujourd’hui",
             },
             MapPin = {
-                "Append Map Pin Locations To The End Of An Announcement Message",
-                "Enables/Disables appending of map pins to announcement messages"
+                "Ajouter des emplacements d’épingles de carte à la fin d’un message d’annonce",
+                "Active/désactive l’ajout d’épingles de mappage aux messages d’annonce"
             }
         }
     }

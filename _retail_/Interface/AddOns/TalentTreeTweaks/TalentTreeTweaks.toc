@@ -2,7 +2,7 @@
 ## Title: Talent Tree Tweaks
 ## Author: Numy
 ## Notes: Various improvements and addition to the Dragonflight talent tree UI
-## Version: v1.3.3
+## Version: v1.4.1
 ## X-Curse-Project-ID: 678792
 ## SavedVariables: TalentTreeTweaksDB
 
@@ -17,3 +17,5 @@ modules\scaleTalentFrame.lua
 modules\respecButtonsInTreeUI.lua
 modules\highlightCascadeRepurchable.lua
 modules\clickableExportStringsInChat.lua
+modules\inspectDiff.lua
+modules\alwaysShowGates.lua

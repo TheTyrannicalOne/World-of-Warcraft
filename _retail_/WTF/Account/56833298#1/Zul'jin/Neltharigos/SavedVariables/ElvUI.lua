@@ -1,0 +1,142 @@
+
+ElvCharacterDB = {
+	["ConvertKeybindings"] = true,
+	["ChatHistoryLog"] = {
+		{
+			"[WTS] Fated & Mythic RAIDS Carry. Loot reservation: get up to 10 items in a single run! Mythic +15-20 boosts, LAST CHANCE to get KSM S4. Runs are starting every hour! We have over 21335 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Puturod-Zul'jin", -- [2]
+			"", -- [3]
+			"4. Trade (Services) - City", -- [4]
+			"Puturod-Zul'jin", -- [5]
+			"", -- [6]
+			42, -- [7]
+			4, -- [8]
+			"Trade (Services) - City", -- [9]
+			0, -- [10]
+			736, -- [11]
+			"Player-61-0EDEDB1A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc69b6dPuturod|r",
+			[51] = 1668853805,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [1]
+		{
+			"what Nightmare drake is up today?", -- [1]
+			"Stoicwolf-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Stoicwolf-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			771, -- [11]
+			"Player-61-0E9FE9ED", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff0070ddStoicwolf|r",
+			[51] = 1668853942,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [2]
+		{
+			"[WTS] Fated & Mythic RAIDS Carry. Loot reservation: get up to 10 items in a single run! Mythic +15-20 boosts, LAST CHANCE to get KSM S4. Runs are starting every hour! We have over 21335 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Puturod-Zul'jin", -- [2]
+			"", -- [3]
+			"4. Trade (Services) - City", -- [4]
+			"Puturod-Zul'jin", -- [5]
+			"", -- [6]
+			42, -- [7]
+			4, -- [8]
+			"Trade (Services) - City", -- [9]
+			0, -- [10]
+			892, -- [11]
+			"Player-61-0EDEDB1A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc69b6dPuturod|r",
+			[51] = 1668854110,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [3]
+		{
+			"WTS M+15-20 CHEAP PRICE. All armor Stacks, All specific keys, Garanted loot for you, Discounts in 3 or more runs. Tazavesh/Mechagon Hardmode. ONLY GOLD. DM for more info.", -- [1]
+			"Monkrol-Zul'jin", -- [2]
+			"", -- [3]
+			"4. Trade (Services) - City", -- [4]
+			"Monkrol-Zul'jin", -- [5]
+			"", -- [6]
+			42, -- [7]
+			4, -- [8]
+			"Trade (Services) - City", -- [9]
+			0, -- [10]
+			908, -- [11]
+			"Player-61-0ECE7D98", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00ff98Monkrol|r",
+			[51] = 1668854332,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [4]
+		{
+			"wts |cff0070dd|Hbattlepet:2845:1:3:145:13:12:0000000000000000:92233|h[K'uddly]|h|r", -- [1]
+			"Benares-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Benares-Zul'jin", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			930, -- [11]
+			"Player-61-0EDC7D5E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff33937fBenares|r",
+			[51] = 1668854436,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [5]
+		{
+			"[WTS] Fated & Mythic RAIDS Carry. Loot reservation: get up to 10 items in a single run! Mythic +15-20 boosts, LAST CHANCE to get KSM S4. Runs are starting every hour! We have over 21335 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
+			"Puturod-Zul'jin", -- [2]
+			"", -- [3]
+			"4. Trade (Services) - City", -- [4]
+			"Puturod-Zul'jin", -- [5]
+			"", -- [6]
+			42, -- [7]
+			4, -- [8]
+			"Trade (Services) - City", -- [9]
+			0, -- [10]
+			934, -- [11]
+			"Player-61-0EDEDB1A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc69b6dPuturod|r",
+			[51] = 1668854489,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [6]
+	},
+	["ChatEditHistory"] = {
+	},
+	["CliqueDatatext"] = {
+	},
+}

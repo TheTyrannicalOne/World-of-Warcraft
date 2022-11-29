@@ -5,10 +5,10 @@ WoWProCharDB = {
 	["AutoHideInsideInstances"] = true,
 	["EnableGrailCheckPrereq"] = false,
 	["QID2Guide"] = {
-		[47835] = "Ludo_Argus",
-		[9407] = "JamHel6063",
 		[28705] = "JamHel6063",
 		[47221] = "Ludo_Argus",
+		[47835] = "Ludo_Argus",
+		[9407] = "JamHel6063",
 	},
 	["Trades"] = {
 	},
@@ -18,8 +18,8 @@ WoWProCharDB = {
 	},
 	["EnableRares"] = true,
 	["EnableGrailQuestName"] = false,
+	["Enabled"] = true,
 	["EnableGrailBreadcrumbs"] = false,
-	["EnableGrailQuestObsolete"] = false,
 	["EnablePetBattles"] = true,
 	["Tradeskills"] = {
 		[182] = {
@@ -34,16 +34,22 @@ WoWProCharDB = {
 			["name"] = "Fishing",
 			["skillMax"] = 100,
 		},
+		[171] = {
+			["skillLvl"] = 1,
+			["skillMod"] = 0,
+			["name"] = "Alchemy",
+			["skillMax"] = 175,
+		},
+		[2586] = {
+			["skillLvl"] = 1,
+			["skillMod"] = 0,
+			["name"] = "Legion Fishing",
+			["skillMax"] = 100,
+		},
 		[185] = {
 			["skillLvl"] = 1,
 			["skillMod"] = 0,
 			["name"] = "Cooking",
-			["skillMax"] = 100,
-		},
-		[2586] = {
-			["skillLvl"] = 1,
-			["name"] = "Legion Fishing",
-			["skillMod"] = 0,
 			["skillMax"] = 100,
 		},
 		[794] = {
@@ -52,27 +58,21 @@ WoWProCharDB = {
 			["name"] = "Archaeology",
 			["skillMax"] = 450,
 		},
-		[171] = {
-			["skillLvl"] = 1,
-			["skillMod"] = 0,
-			["name"] = "Alchemy",
-			["skillMax"] = 175,
-		},
 	},
 	["DebugLevel"] = 0,
 	["Taxi"] = {
 	},
-	["Guide"] = {
+	["BuildingLocations"] = {
 	},
 	["EnableTreasures"] = true,
 	["EnableFlight"] = true,
 	["AutoHideInsideInstancesNotify"] = true,
 	["AutoHideInCombat"] = false,
-	["BuildingLocations"] = {
-	},
 	["GuideVersion"] = {
 	},
-	["Enabled"] = true,
+	["Guide"] = {
+	},
+	["EnableGrailQuestObsolete"] = false,
 	["skippedQIDs"] = {
 	},
 	["Rank"] = {

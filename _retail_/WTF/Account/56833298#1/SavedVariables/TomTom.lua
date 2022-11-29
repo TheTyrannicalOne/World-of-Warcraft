@@ -11,17 +11,22 @@ TomTomDB = {
 		["Avisar - Dalaran"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
 		["Shaekhan - Argent Dawn"] = "Default",
+		["Bathal - Argent Dawn"] = "Default",
 		["Malivant - Dalaran"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
+		["Neltharigos - Zul'jin"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
-		["Brotus - Argent Dawn"] = "Default",
-		["Jingojaggot - Argent Dawn"] = "Default",
-		["Okona - Zul'jin"] = "Default",
 		["Galvarton - Dalaran"] = "Default",
+		["Okona - Zul'jin"] = "Default",
+		["Jingojaggot - Argent Dawn"] = "Default",
+		["Brotus - Argent Dawn"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
+			["poi"] = {
+				["enable"] = false,
+			},
 			["general"] = {
 				["announce"] = true,
 			},
@@ -60,14 +65,16 @@ TomTomWaypointsM = {
 		["Avisar - Dalaran"] = "Avisar - Dalaran",
 		["Thorinbane - Dalaran"] = "Thorinbane - Dalaran",
 		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
+		["Bathal - Argent Dawn"] = "Bathal - Argent Dawn",
 		["Malivant - Dalaran"] = "Malivant - Dalaran",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
+		["Neltharigos - Zul'jin"] = "Neltharigos - Zul'jin",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
-		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
-		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Galvarton - Dalaran"] = "Galvarton - Dalaran",
+		["Okona - Zul'jin"] = "Okona - Zul'jin",
+		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
+		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 	},
 	["profiles"] = {
 		["Tendralas - Dalaran"] = {
@@ -90,21 +97,25 @@ TomTomWaypointsM = {
 		},
 		["Shaekhan - Argent Dawn"] = {
 		},
+		["Bathal - Argent Dawn"] = {
+		},
 		["Malivant - Dalaran"] = {
 		},
 		["Darnastris - Dalaran"] = {
 		},
 		["Rotclaugh - Dalaran"] = {
 		},
+		["Neltharigos - Zul'jin"] = {
+		},
 		["Durlok - Black Dragonflight"] = {
 		},
-		["Brotus - Argent Dawn"] = {
-		},
-		["Jingojaggot - Argent Dawn"] = {
+		["Galvarton - Dalaran"] = {
 		},
 		["Okona - Zul'jin"] = {
 		},
-		["Galvarton - Dalaran"] = {
+		["Jingojaggot - Argent Dawn"] = {
+		},
+		["Brotus - Argent Dawn"] = {
 		},
 	},
 }

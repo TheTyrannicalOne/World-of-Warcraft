@@ -13,6 +13,10 @@ if (GetLocale() == "enUS") then
                 "Chat-Ankündigungen aktivieren",
                 "Schaltet die Ankündigung im Allgemein-Channel von seltenen Gegnern, die ins Ziel genommen wurden, ein bzw. aus.",
             },
+			PartyRaidChatAnnounce = {
+				"Party-/Raid-Chat-Ankündigungen aktivieren (Chat-Ankündigungen müssen aktiviert sein)",
+				"Aktiviert/deaktiviert die Ankündigung von Rares im Party-/Raid-Chat, wenn sie angegriffen werden (Chat-Ankündigungen müssen aktiviert sein)",
+			},
             Sound = {
                 "Hinweiston aktivieren",
                 "Schaltet den Ton, wenn ein seltener Gegner von einem anderen Spieler zum ersten Mal ins Ziel genommen wurde ein bzw. aus.",
@@ -26,12 +30,12 @@ if (GetLocale() == "enUS") then
                 "Schaltet die Ankündigung über den gerade stattgefundenen Tod des seltenen Gegners ein bzw. aus.",
             },
             Duplicates = {
-                "Enable Notifications For Already Completed Rares",
-                "Enables/Disables reacting to rares that have already been completed today",
+                "Benachrichtigungen für bereits abgeschlossene Rares aktivieren",
+                "Aktiviert/deaktiviert das Reagieren auf Seltenheiten, die heute bereits abgeschlossen wurden",
             },
             MapPin = {
-                "Append Map Pin Locations To The End Of An Announcement Message",
-                "Enables/Disables appending of map pins to announcement messages"
+                "Anhängen von Kartenpin-Positionen an das Ende einer Ankündigungsnachricht",
+                "Aktiviert/deaktiviert das Anhängen von Karten-Pins an Ankündigungsnachrichten"
             }
         }
     }

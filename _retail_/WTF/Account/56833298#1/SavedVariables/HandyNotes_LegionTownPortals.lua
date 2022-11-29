@@ -1,0 +1,2 @@
+
+HandyNotes_LegionTownPortalsDB = nil

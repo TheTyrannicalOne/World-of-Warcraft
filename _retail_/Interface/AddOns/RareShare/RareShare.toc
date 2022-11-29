@@ -1,8 +1,8 @@
-## Interface: 100000
+## Interface: 100002
 ## Title: Rare Share: |cff1eff00Core
 ## Notes: The core library required by other Rare Share addons
 ## Author: pffScrub
-## Version: v1.0.7
+## Version: v1.0.9
 ## DefaultState: enabled
 ## OptionalDependencies: TomTom
 ## SavedVariables: RareShareDB

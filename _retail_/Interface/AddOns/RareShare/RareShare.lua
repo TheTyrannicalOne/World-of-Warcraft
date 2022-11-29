@@ -22,6 +22,10 @@ function Addon.InitConfig()
     RareShareDB["Config"]["ChatAnnounce"] = true
   end
 
+  if RareShareDB["Config"]["PartyRaidChatAnnounce"] == nil then
+    RareShareDB["Config"]["PartyRaidChatAnnounce"] = true
+  end
+
   if RareShareDB["Config"]["Sound"] == nil then
     RareShareDB["Config"]["Sound"] = {}
   end
@@ -233,6 +237,18 @@ function Addon:_AnnounceRare(ID, Name, HP, HPMax, X, Y)
     if hyperlink ~= nil then
       Msg = Msg .. " " .. hyperlink
     end
+  end
+
+  if RareShareDB["Config"]["PartyRaidChatAnnounce"] then
+	if UnitInParty("player") or IsInRaid() then
+      local GroupType
+      if IsInRaid() then
+        GroupType = "RAID"
+      else
+        GroupType = "PARTY"
+      end
+      SendChatMessage(Msg, GroupType, nil, nil)
+	end
   end
 
   SendChatMessage(Msg, "CHANNEL", nil, RareShareDB["Config"]["CChannel"]["CID"])

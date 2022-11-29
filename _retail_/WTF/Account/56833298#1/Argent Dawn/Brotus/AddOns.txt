@@ -262,3 +262,4 @@ LittleWigs_BattleForAzeroth: enabled
 Blizzard_ObjectiveTracker: enabled
 Blizzard_CompactRaidFrames: enabled
 ElvUI_UnitFramePlugin: disabled
+Blizzard_CombatText: enabled

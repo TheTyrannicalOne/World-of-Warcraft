@@ -16,6 +16,10 @@ NarciStatisticsDB_PC = {
 				["visit"] = 1,
 				["time"] = 1,
 			},
+			[2022] = {
+				["visit"] = 4,
+				["time"] = 194,
+			},
 		},
 		["CoinSpentBeforeShadowlands"] = 163889,
 	},

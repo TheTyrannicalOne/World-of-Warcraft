@@ -18,6 +18,19 @@ local addonName, addon = ...
 -- Set global name of addon
 _G[addonName] = addon
 
+-- Globals used in this library
+local CreateFrame = CreateFrame
+local GetAddOnMetadata = GetAddOnMetadata
+local GetBuildInfo = GetBuildInfo
+local geterrorhandler = geterrorhandler
+local GetLocale = GetLocale
+local InCombatLockdown = InCombatLockdown
+local IsLoggedIn = IsLoggedIn
+local Mixin = Mixin
+---@diagnostic disable-next-line: undefined-field
+local twipe = table.wipe
+local UIParent = UIParent
+
 -- Extract version information from TOC file
 addon.version = GetAddOnMetadata(addonName, "Version")
 if addon.version == "@project-version" or addon.version == "wowi:version" then
@@ -362,7 +375,7 @@ deferframe:SetScript("OnEvent", function(self, event, ...)
     for idx, thing in ipairs(deferframe.queue) do
         runDeferred(thing)
     end
-    table.wipe(deferframe.queue)
+    twipe(deferframe.queue)
 end)
 
 --[[-------------------------------------------------------------------------

@@ -1,10 +1,10 @@
 
 ElvCharacterDB = {
+	["ConvertKeybindings"] = true,
 	["ChatHistoryLog"] = {
-	},
-	["CliqueDatatext"] = {
 	},
 	["ChatEditHistory"] = {
 	},
-	["ConvertKeybindings"] = true,
+	["CliqueDatatext"] = {
+	},
 }

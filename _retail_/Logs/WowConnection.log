@@ -1,6 +1,6 @@
-11/17 21:17:33.227  WowConnectionNet: Initialize
-11/17 21:17:33.227  MakeSocketPair attempt: 0, 1, 0, -1, 0
-11/17 21:17:33.227  MakeSocketPair attempt: 0, 23, 0, 0, 0
-11/17 21:17:33.814  MakeSocketPair attempt: 0, 1, 0, -1, 2
-11/17 21:17:33.814  MakeSocketPair attempt: 0, 23, 0, 0, 0
-11/17 21:27:22.047  WowConnectionNet: Shutdown
+11/29 10:42:19.852  WowConnectionNet: Initialize
+11/29 10:42:19.852  MakeSocketPair attempt: 0, 1, 0, -1, 0
+11/29 10:42:19.856  MakeSocketPair attempt: 0, 23, 0, 0, 0
+11/29 10:42:20.429  MakeSocketPair attempt: 0, 1, 0, -1, 2
+11/29 10:42:20.429  MakeSocketPair attempt: 0, 23, 0, 0, 0
+11/29 10:43:02.541  WowConnectionNet: Shutdown

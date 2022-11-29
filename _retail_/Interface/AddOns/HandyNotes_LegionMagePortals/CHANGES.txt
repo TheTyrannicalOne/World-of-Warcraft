@@ -1,0 +1,12 @@
+tag 775f92f96c998f0de57895a246a7e3ecbbd0f9d7 v2.1
+Author:	David Mcanulty <github@hellspark.com>
+Date:	Wed Aug 17 02:46:28 2022 +0000
+
+Release 2.1
+
+commit c62e227b0cbad011e1bff90bb879f144d493733d
+Author: David Mcanulty <github@hellspark.com>
+Date:   Wed Aug 17 02:45:54 2022 +0000
+
+    bumped TOC for 9.2.7
+

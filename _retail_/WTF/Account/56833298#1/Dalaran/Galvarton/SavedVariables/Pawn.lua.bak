@@ -6,44 +6,44 @@ PawnOptions = {
 	["ItemLevels"] = {
 		{
 			["ID"] = 122249,
-			["Level"] = 49,
-			["Link"] = "|cff00ccff|Hitem:122249::::::::43:104:::1:7920::::::|h[Preened Tribal War Feathers]|h|r",
+			["Level"] = 58,
+			["Link"] = "|cff00ccff|Hitem:122249::::::::49:104:::1:7920::::::|h[Preened Tribal War Feathers]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 122667,
-			["Level"] = 49,
-			["Link"] = "|cff00ccff|Hitem:122667::::::::43:104:::1:7920::::::|h[Eternal Emberfury Talisman]|h|r",
+			["Level"] = 58,
+			["Link"] = "|cff00ccff|Hitem:122667::::::::49:104:::1:7920::::::|h[Eternal Emberfury Talisman]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 122376,
-			["Level"] = 49,
-			["Link"] = "|cff00ccff|Hitem:122376::::::::43:104:::1:7920::::::|h[Exceptional Stormshroud Shoulders]|h|r",
+			["Level"] = 58,
+			["Link"] = "|cff00ccff|Hitem:122376::::::::49:104:::1:7920::::::|h[Exceptional Stormshroud Shoulders]|h|r",
 		}, -- [3]
 		nil, -- [4]
 		{
 			["ID"] = 122382,
-			["Level"] = 49,
-			["Link"] = "|cff00ccff|Hitem:122382::::::::43:104:::1:7920::::::|h[Preened Ironfeather Breastplate]|h|r",
+			["Level"] = 58,
+			["Link"] = "|cff00ccff|Hitem:122382::::::::49:104:::1:7920::::::|h[Preened Ironfeather Breastplate]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 107308,
-			["Level"] = 34,
-			["Link"] = "|cff1eff00|Hitem:107308::::::::30:104::11:1:3631:2:28:1764:9:30:::::|h[Karabor Skirmisher Belt]|h|r",
+			["ID"] = 118037,
+			["Level"] = 53,
+			["Link"] = "|cff1eff00|Hitem:118037::::::::47:104::11:1:3631:2:28:1766:9:47:::::|h[Overgrowth Cutter Girdle]|h|r",
 		}, -- [6]
 		{
 			["ID"] = 122254,
-			["Level"] = 49,
-			["Link"] = "|cff00ccff|Hitem:122254::::::::43:104:::1:7920::::::|h[Stained Shadowcraft Pants]|h|r",
+			["Level"] = 58,
+			["Link"] = "|cff00ccff|Hitem:122254::::::::49:104:::1:7920::::::|h[Stained Shadowcraft Pants]|h|r",
 		}, -- [7]
 		{
-			["ID"] = 107304,
-			["Level"] = 38,
-			["Link"] = "|cff1eff00|Hitem:107304::::::::35:104::11:1:3631:2:9:34:28:1764:::::|h[Karabor Skirmisher Boots]|h|r",
+			["ID"] = 112594,
+			["Level"] = 51,
+			["Link"] = "|cff1eff00|Hitem:112594::::::::47:104::11:1:3631:2:28:1766:9:46:::::|h[Overgrowth Cutter Boots]|h|r",
 		}, -- [8]
 		{
-			["ID"] = 106513,
-			["Level"] = 45,
-			["Link"] = "|cff1eff00|Hitem:106513::::::::42:104:::2:6654:213:2:28:65:9:42:::::|h[Mandragoran Wristwraps of the Harmonious]|h|r",
+			["ID"] = 112619,
+			["Level"] = 50,
+			["Link"] = "|cff1eff00|Hitem:112619::::::::46:104::11:1:3631:2:28:1766:9:45:::::|h[Overgrowth Cutter Wristwraps]|h|r",
 		}, -- [9]
 		{
 			["ID"] = 107305,
@@ -52,37 +52,37 @@ PawnOptions = {
 		}, -- [10]
 		{
 			["ID"] = 122529,
-			["Level"] = 49,
+			["Level"] = 58,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff00ccff|Hitem:122529::::::::43:104:::1:7920::::::|h[Dread Pirate Ring]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122529::::::::49:104:::1:7920::::::|h[Dread Pirate Ring]|h|r",
 		}, -- [11]
 		{
 			["ID"] = 128173,
-			["Level"] = 49,
+			["Level"] = 58,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff00ccff|Hitem:128173::::::::43:104:::1:7920::::::|h[Admiral Taylor's Loyalty Ring]|h|r",
+			["Link"] = "|cff00ccff|Hitem:128173::::::::49:104:::1:7920::::::|h[Admiral Taylor's Loyalty Ring]|h|r",
 		}, -- [12]
 		{
 			["ID"] = 122361,
-			["Level"] = 49,
+			["Level"] = 58,
 			["AlsoFitsIn"] = 14,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::43:104:::1:7920::::::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::49:104:::1:7920::::::|h[Swift Hand of Justice]|h|r",
 		}, -- [13]
 		{
 			["ID"] = 122361,
-			["Level"] = 48,
+			["Level"] = 58,
 			["AlsoFitsIn"] = 13,
-			["Link"] = "|cff00ccff|Hitem:122361::::::::42:104:::1:7920::::::|h[Swift Hand of Justice]|h|r",
+			["Link"] = "|cff00ccff|Hitem:122361::::::::50:104:::1:7920::::::|h[Swift Hand of Justice]|h|r",
 		}, -- [14]
 		{
 			["ID"] = 166770,
-			["Level"] = 49,
-			["Link"] = "|cff00ccff|Hitem:166770::::::::43:104:::1:7920::::::|h[Banded Gilnean Cloak]|h|r",
+			["Level"] = 58,
+			["Link"] = "|cff00ccff|Hitem:166770::::::::49:104:::1:7920::::::|h[Banded Gilnean Cloak]|h|r",
 		}, -- [15]
 		{
 			["ID"] = 122363,
-			["Level"] = 49,
-			["Link"] = "|cff00ccff|Hitem:122363::::::::43:104:::1:7920::::::|h[Burnished Warden Staff]|h|r",
+			["Level"] = 58,
+			["Link"] = "|cff00ccff|Hitem:122363::::::::49:104:::1:7920::::::|h[Burnished Warden Staff]|h|r",
 		}, -- [16]
 		{
 			["ID"] = 116483,

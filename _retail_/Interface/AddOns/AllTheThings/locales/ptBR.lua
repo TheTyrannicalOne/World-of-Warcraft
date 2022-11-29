@@ -218,6 +218,8 @@ local L = app.L;
 	--TODO: L.LOCK_CRITERIA_FACTION_LABEL = "Faction Reputation";
 	--TODO: L.LOCK_CRITERIA_FACTION_FORMAT = "%s with %s (Current: %s)";
 	--TODO: L.FORCE_REFRESH_REQUIRED = "This may require a Force Refresh ("..SHIFT_KEY_TEXT.."-Click) to properly be collected.";
+	--TODO: L.FUTURE_UNOBTAINABLE = "Future Unobtainable!";
+	--TODO: L.FUTURE_UNOBTAINABLE_TOOLTIP = "This is content that has been confirmed or is highly-probable to be made unobtainable in a known future patch.";
 
 	-- Item Filter Window
 		--TODO: L.ITEM_FILTER_TEXT = "Item Filters";
@@ -576,6 +578,7 @@ local L = app.L;
 		--TODO: L.SECRETS_HEADER = "Secrets";
 		--TODO: L.LIMITED_QUANTITY = "This has a limited quantity and may not always be present on the vendor.";
 		--TODO: L.SOURCE_ID_MISSING = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!";
+		--TODO: L.ADDED_WITH_PATCH_FORMAT = "This gets added in patch %s";
 		--TODO: L.REMOVED_WITH_PATCH_FORMAT = "This gets removed in patch %s";
 
 	-- Artifact Relic Completion
@@ -677,6 +680,7 @@ for key,value in pairs({
 		[-55] = "Dia dos Piratas",									-- Pirates' Day
 		[-59] = "Dia dos Mortos",									-- Day of the Dead
 		[-62] = "Festerê de Pesca da Selva do Espinhaço",			-- Stranglethorn Fishing Extravaganza
+		[-63] = "Campeonato de Pesca dos Kalu'ak",					-- Kalu'ak Fishing Derby
 	-- Zul'Aman
 		--TODO: [-78] = "Timed Event",
 		--TODO: [-79] = "First Chest",
@@ -764,6 +768,7 @@ for key,value in pairs({
 		--TODO: [-581] = "TBC Classic Deluxe Edition",				-- TBC Classic Deluxe Edition
 		--TODO: [-582] = "WotLK Classic Northrend Heroic Upgrade",	-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
 		--TODO: [-583] = "WotLK Classic Northrend Epic Upgrade",	-- WotLK Classic Northrend Epic Upgrade
+		--TODO: [-584] = "Dragonflight Seasonal Promotions",		-- Dragonflight Seasonal Promotions
 	-- PvP Header
 		-- PvP Set Names
 			--TODO: [-659] = "Aspirant Gear",						-- Aspirant PvP Gear (WoD, BfA)
@@ -804,7 +809,6 @@ for key,value in pairs({
 		--TODO: [-854] = "DPS",										-- DPS
 		--TODO: [-855] = "Healers",									-- Healers
 		--TODO: [-856] = "Tanks",									-- Tanks
-		--TODO: [-857] = "Mythic+",									-- Mythic+
 		--TODO: [-858] = "Rank 1",									-- Rank 1
 		--TODO: [-859] = "Rank 2",									-- Rank 2
 		--TODO: [-860] = "Rank 3",									-- Rank 3
@@ -847,18 +851,18 @@ for key,value in pairs({
 		[-1009] = "Mítico Alternative",								-- TODO: Mythic Alternative
 		[-1010] = "Gladiador Alternative",							-- TODO: Gladiator Alternative
 		[-1011] = "Elite Alternative",								-- TODO: Elite Alternative
-	-- Temp
-		--TODO: [-1098] = "Side Quests",							-- Side Quests
 	-- Dragonflight
-		--TODO: [-1100] = "Dragon Customization",					-- Dragon Customization
+		[-1100] = "Manuscrito de Vigia-dracos",						-- Drakewatcher Manuscripts	--TODO: plural
 		[-1101] = "Tempestades Primevas",							-- Primal Storms
+		[-1102] = "Wrathion e Sabellian",							-- Wrathion & Sabellian
 		[-1110] = "Expedição Escama de Dragão",						-- Dragonscale Expedition
-		--TODO: [-1111] = "Climbing",								-- Climbing
 		[-1120] = "Centauro Maruuk",								-- Maruuk Centaur
 		[-1121] = "Clã Aylaag",										-- Clan Aylaag
 		--TODO: [-1122] = "Grand Hunts",							-- Grand Hunts
 		[-1130] = "Morsanos de Iskaara",							-- Iskaara Tuskarr
+		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		[-1140] = "Acordo de Valdrakken",							-- Valdrakken Accord
+		--TODO: [-1142] = "Aerial Challenges",						-- Aerial Challenges
 	-- Warrior order hall lore items
 		[-2200] = "O Grande Odyn e o Senhor do Fogo",				-- Great Odyn and the Firelord
 		[-2201] = "O Andarilho e a Serpente",						-- The Wanderer and the Serpent
@@ -1009,14 +1013,14 @@ for key,value in pairs({
 	[19023] = "|cFFFFFFFFStep 7:|r Página 2351",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[19024] = "Santuário Escondido",	-- Hidden Shrine
 	[19030] = "Monturo de Terra",	-- Mound of Dirt
-	[19869] = "Destroços de Carro-foguete",	-- 	--TODO: This was taken from wotlk Wowhead
+	[19869] = "Destroços de Carro-foguete",	-- [Deprecated for 4.x]Rocket Car Rubble	--TODO: This was taken from wotlk Wowhead
 	[19877] = "Armário de Velinde",	-- Velinde's Locker
 	[20359] = "Ovo de Onyxia",	-- Egg of Onyxia
 	[20691] = "Maleta do Cosella",	-- Cozzle's Footlocker
 	[20725] = "O Legado dos Aspectos",	-- The Legacy of the Aspects
 	[20727] = "Caixote de Embarque da Pinacotreca",	-- Gizmorium Shipping Crate
 	[20805] = "Projeto Desprotegido do Rebu",	-- Rizzle's Unguarded Plans	--TODO: This was taken from wotlk Wowhead
-	[20807] = "Braseiro Antigo",	-- 	--TODO: This was taken from wotlk Wowhead
+	[20807] = "Braseiro Antigo",	-- [Deprecated for 4.x]Ancient Brazier	--TODO: This was taken from wotlk Wowhead
 	[20985] = "Terra Solta",	-- Loose Dirt
 	[20992] = "Escudo Negro",	-- Black Shield
 	[21015] = "Pegadas de casco",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
@@ -1042,6 +1046,7 @@ for key,value in pairs({
 	[142122] = "Cartaz de Procura-se",	-- Wanted Poster
 	[142127] = "Segredo de Rin'ji",	-- Rin'ji's Secret
 	[142151] = "Barril Lacrado",	-- Sealed Barrel
+	[142179] = "Gazebo de Solarsal",	-- Solarsal Gazebo
 	[142184] = "Baú do Capitão",	-- Captain's Chest
 	[142195] = "Mapa de Batalha de Patábua",	-- Woodpaw Battle Map
 	[142343] = "Pedestal de Uldum",	-- Uldum Pedestal
@@ -1053,7 +1058,9 @@ for key,value in pairs({
 	[142696] = "Matriz Perfuradora 3005-D",	-- Matrix Punchograph 3005-D
 	[142702] = "Garrafa de Peçonha",	-- Venom Bottle
 	[142958] = "Feralas: Uma História",	-- Feralas: A History	--TODO: This was taken from wotlk Wowhead
+	[143980] = "Pergaminho Gordunni",	-- Gordunni Scroll
 	[144063] = "Monolito de Equinex",	-- Equinex Monolith
+	--TODO: [144064] = "Gordunni Dirt Mound",	-- Gordunni Dirt Mound
 	[144066] = "Primeira Jaula Cascasseca",	-- First Witherbark Cage
 	[144067] = "Segunda Jaula Cascasseca",	-- Second Witherbark Cage
 	[144068] = "Terceira Jaula Cascasseca",	-- Third Witherbark Cage
@@ -1082,7 +1089,10 @@ for key,value in pairs({
 	[164886] = "Flor da Canção Corrompida",	-- Corrupted Songflower	--TODO: This was taken from wotlk Wowhead
 	[164887] = "Botão Selvagem Corrompido",	-- Corrupted Windblossom	--TODO: This was taken from wotlk Wowhead
 	[164888] = "Raiz-açoite Corrompida",	-- Corrupted Whipper Root	--TODO: This was taken from wotlk Wowhead
+	[164909] = "Canoa Destruída",	-- Wrecked Row Boat
 	[164910] = "Baú Ornamentado",	-- Ornate Chest
+	[164953] = "Mochilas Grandes de Couro",	-- Large Leather Backpacks
+	[164954] = "Carapaça de Zukk'ash",	-- Zukk'ash Pod
 	[164955] = "Torre de Cristal Norte",	-- Northern Crystal Pylon
 	[164956] = "Torre de Cristal Oeste",	-- Western Crystal Pylon
 	[164957] = "Torre de Cristal Oriental",	-- Eastern Crystal Pylon
@@ -1362,6 +1372,7 @@ for key,value in pairs({
 	[192524] = "Arngrim, o Insaciável",	-- Arngrim the Insatiable
 	[192818] = "Cogumelo Infuso",	-- Infused Mushroom
 	[192823] = "Jarra de Vinho Cheia",	-- Full Jug of Wine
+	[192827] = "Mostarda Selvagem",	-- Wild Mustard
 	[192828] = "Cenoura do Canto Cristalino",	-- Crystalsong Carrot
 	[192833] = "Posses do Brindeiro",	-- Bridenbrad's Possessions
 	[193051] = "Ovo Nerubiano do Flagelo",	-- Nerubian Scourge Egg
@@ -3268,6 +3279,7 @@ for key,value in pairs({
 	[375530] = "Cofre do Tesouro Esquecido",	-- Forgotten Treasure Vault
 	[375536] = "Baú Minado de Xy'rath",	-- Xy'rath's Booby-Trapped Cache
 	[375538] = "Ovoide Perdido",	-- Lost Ovoid
+	--TODO: [375668] = "Misty Treasure Chest",	-- Misty Treasure Chest
 	[375693] = "Diagrama de Protoforma",	-- Protoform Schematic
 	[375694] = "Diagrama de Protoforma",	-- Protoform Schematic
 	[375746] = "Diagrama de Protótipo",	-- Prototype Schematic
@@ -3293,28 +3305,61 @@ for key,value in pairs({
 	[375987] = "Firim no Exílio, Parte 7",	-- Firim in Exile, Part 7
 	[375988] = "Firim no Exílio, Epílogo",	-- Firim in Exile, Epilogue
 	[376041] = "Baú de Cifra Amortalhado",	-- Shrouded Cypher Cache
+	--TODO: [376123] = "Suspicious Bottle",	-- Suspicious Bottle
 	--TODO: [376124] = "Bag of Enchanted Wind",	-- Bag of Enchanted Wind
 	--TODO: [376175] = "Fullsails Supply Chest",	-- Fullsails Supply Chest
 	--TODO: [376213] = "Mysterious Wand",	-- Mysterious Wand
 	--TODO: [376386] = "Disturbed Dirt",	-- Disturbed Dirt
 	--TODO: [376426] = "Magic-Bound Chest",	-- Magic-Bound Chest
 	--TODO: [376451] = "Bronze Stopwatch",	-- Bronze Stopwatch
+	--TODO: [376580] = "Djaradin Cache",	-- Djaradin Cache
+	--TODO: [376581] = "Clan Chest",	-- Clan Chest
 	--TODO: [376587] = "Expedition Scout's Pack",	-- Expedition Scout's Pack
 	--TODO: [376757] = "WANTED: Frigellus",	-- WANTED: Frigellus
 	--TODO: [377114] = "Coil of Heavy Rope",	-- Coil of Heavy Rope
+	--TODO: [377233] = "Hessethiash's Poorly Hidden Treasure",	-- Hessethiash's Poorly Hidden Treasure
 	--TODO: [377317] = "Treasure Hoard",	-- Treasure Hoard
+	--TODO: [377458] = "Abandoned Weapon Rack",	-- Abandoned Weapon Rack
+	--TODO: [377466] = "Lost Draconic Hourglass",	-- Lost Draconic Hourglass
 	--TODO: [377499] = "On the Origin of Draconic Species",	-- On the Origin of Draconic Species
+	--TODO: [377899] = "Hidden Hornswog Hostage",	-- Hidden Hornswog Hostage
+	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
+	--TODO: [378010] = "Forgotten Dragon Treasure",	-- Forgotten Dragon Treasure
 	--TODO: [379290] = "Ornamented Statue",	-- Ornamented Statue
 	--TODO: [379321] = "Mysterious Paw Print",	-- Mysterious Paw Print
+	--TODO: [380533] = "Snow Covered Scroll",	-- Snow Covered Scroll
 	--TODO: [380547] = "Decay-Infused Tanning Oil",	-- Decay-Infused Tanning Oil
+	--TODO: [380587] = "Crate of Treated Hides",	-- Crate of Treated Hides
+	--TODO: [380602] = "Wind-Blessed Hide",	-- Wind-Blessed Hide
 	--TODO: [380653] = "Yennu's Kite",	-- Yennu's Kite
 	--TODO: [380654] = "Dead Man's Chestplate",	-- Dead Man's Chestplate
 	--TODO: [380840] = "Torn Riding Pack",	-- Torn Riding Pack
+	--TODO: [380842] = "Gold Coin",	-- Gold Coin
+	--TODO: [380843] = "Rubber Fish",	-- Rubber Fish
+	--TODO: [380847] = "Emerald Gem Cluster",	-- Emerald Gem Cluster
+	--TODO: [380859] = "Tuskarr Toy Boat",	-- Tuskarr Toy Boat
+	--TODO: [380860] = "Centaur Horn",	-- Centaur Horn
 	--TODO: [380902] = "Fields of Ferocity",	-- Fields of Ferocity
+	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
 	--TODO: [381045] = "Replica Dragon Goblet",	-- Replica Dragon Goblet
+	--TODO: [381094] = "Elegant Canvas Brush",	-- Elegant Canvas Brush
+	--TODO: [381107] = "Sand Pile",	-- Sand Pile
+	--TODO: [381108] = "Yennu's Map",	-- Yennu's Map
+	--TODO: [381110] = "Forgotten Jewel Box",	-- Forgotten Jewel Box
 	--TODO: [381153] = "Ruby Gem Cluster",	-- Ruby Gem Cluster
+	--TODO: [381157] = "Sapphire Gem Cluster",	-- Sapphire Gem Cluster
+	--TODO: [381158] = "Gnoll Fiend Flail",	-- Gnoll Fiend Flail
+	--TODO: [381160] = "Lost Compass",	-- Lost Compass
+	--TODO: [381216] = "Surveyor's Magnifying Glass",	-- Surveyor's Magnifying Glass
+	--TODO: [381223] = "Cracked Hourglass",	-- Cracked Hourglass
 	--TODO: [381296] = "Horrible Mess",	-- Horrible Mess
 	--TODO: [381297] = "Misplaced Luggage",	-- Misplaced Luggage
+	--TODO: [381355] = "Finely Carved Wing",	-- Finely Carved Wing
+	--TODO: [381357] = "Stone Tablet",	-- Stone Tablet
+	--TODO: [381358] = "Stone Tablet",	-- Stone Tablet
+	--TODO: [381359] = "Stone Tablet",	-- Stone Tablet
+	--TODO: [381483] = "Marmoni's Prize",	-- Marmoni's Prize
+	--TODO: [381485] = "Adventurer's Lost Soap Bar",	-- Adventurer's Lost Soap Bar
 	--TODO: [381650] = "Archivist's Request",	-- Archivist's Request
 	--TODO: [381653] = "Fang Flap Fire Signups",	-- Fang Flap Fire Signups
 	--TODO: [381667] = "Archivist's Request",	-- Archivist's Request
@@ -3328,7 +3373,9 @@ for key,value in pairs({
 	--TODO: [382029] = "Disturbed Dirt",	-- Disturbed Dirt
 	--TODO: [382166] = "The Ruby Fest!",	-- The Ruby Fest!
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
+	--TODO: [383625] = "Case of Fresh Gleamfish",	-- Case of Fresh Gleamfish
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
+	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	[9962198] = "Poça de Lodo Improvisada do Proscrito",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only

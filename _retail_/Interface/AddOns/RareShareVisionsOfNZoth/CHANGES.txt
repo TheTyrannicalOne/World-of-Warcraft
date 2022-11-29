@@ -1,0 +1,28 @@
+lightweight tag 1f71820e26ee12616cf537b120d10d36a98345a5 v1.1.0
+Author:	Josh Worden <solocommand@gmail.com>
+Date:	Sun Jan 19 13:51:54 2020 -0600
+
+commit 61938ef3cc39b0f6048ce864fc4bfc17caeedeae
+Author: Josh Worden <solocommand@gmail.com>
+Date:   Sun Jan 19 13:51:36 2020 -0600
+
+    Add de localization
+
+commit 61938ef3cc39b0f6048ce864fc4bfc17caeedeae
+Author: Josh Worden <solocommand@gmail.com>
+Date:   Sun Jan 19 13:51:36 2020 -0600
+
+    Add de localization
+
+commit 8790141883169e09f1f5b074a02cfc1a49fb8be9
+Author: Josh Worden <solocommand@gmail.com>
+Date:   Sun Jan 19 13:50:55 2020 -0600
+
+    Add Vale rares
+
+commit 0ae965f595cee4fdd467fccb517e9ce4f3ed72cd
+Author: Josh Worden <solocommand@gmail.com>
+Date:   Wed Jan 15 23:15:31 2020 -0600
+
+    Update README.md
+

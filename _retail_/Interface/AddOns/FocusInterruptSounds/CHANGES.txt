@@ -1,12 +1,11 @@
-tag 5e176528f3f0d70850fdbc4affb52627e380f463 r138
+lightweight tag ad76658a0748df1e877cb60f779f8e4acb7503b6 r139
 Author:	corgatag <13686151+corgatag@users.noreply.github.com>
-Date:	Wed Oct 26 10:28:23 2022 -0700
+Date:	Sun Nov 20 00:56:05 2022 -0800
 
-Update toc
-
-commit 4c3649af23e111c6ce22605e6d346fa1f8b9c5a8
+commit ad76658a0748df1e877cb60f779f8e4acb7503b6
 Author: corgatag <13686151+corgatag@users.noreply.github.com>
-Date:   Wed Oct 26 10:27:05 2022 -0700
+Date:   Sun Nov 20 00:56:05 2022 -0800
 
-    Update toc
+    - Add Quell for Evoker
+    - Increment TOC
 

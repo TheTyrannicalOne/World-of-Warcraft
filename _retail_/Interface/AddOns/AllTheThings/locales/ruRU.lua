@@ -220,6 +220,8 @@ L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 	L.LOCK_CRITERIA_FACTION_LABEL = "Репутация";
 	L.LOCK_CRITERIA_FACTION_FORMAT = "%s с %s (Текущее: %s)";
 	L.FORCE_REFRESH_REQUIRED = "Может потребоваться Полное Обновление коллекции ("..SHIFT_KEY_TEXT.."+Клик).";
+	L.FUTURE_UNOBTAINABLE = "Будущие Недоступные!";
+	L.FUTURE_UNOBTAINABLE_TOOLTIP = "Это контент, который точно или очень вероятно будет недоступен в будущем патче.";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "Фильтровать предметы";
@@ -581,6 +583,7 @@ L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 		L.SECRETS_HEADER = "Секреты";
 		L.LIMITED_QUANTITY = "Предмет имеется в ограниченном количестве и может не всегда быть доступен у торговца.";
 		L.SOURCE_ID_MISSING = "Пожалуйста, сообщите в канале #retail-errors на нашем сервере Discord, где Вы нашли эту вещь!";
+		L.ADDED_WITH_PATCH_FORMAT = "Это будет добавлено в патче %s";
 		L.REMOVED_WITH_PATCH_FORMAT = "Это исчезнет в патче %s";
 
 	-- Icons and Collection Text
@@ -665,6 +668,7 @@ for key,value in pairs({
 		[-55] = "День пирата",									-- Pirates' Day
 		[-59] = "День мертвых",									-- Day of the Dead
 		[-62] = "Рыбомания Тернистой долины",					-- Stranglethorn Fishing Extravaganza
+		[-63] = "Калуакское рыбоборье",							-- Kalu'ak Fishing Derby
 	-- Zul'Aman
 		[-78] = "Временное Событие",
 		[-79] = "Первый Сундук",
@@ -734,7 +738,7 @@ for key,value in pairs({
 		[-519] = "Игровые события",									-- World Events
 		[-520] = "Препатч",											-- Expansion Pre-Launch
 		[-522] = "Падение Залазана",								-- Zalazane's Fall
-		[-523] = "Бейство элементалей",								-- Elemental Unrest
+		[-523] = "Буйство элементалей",								-- Elemental Unrest
 		[-525] = "Warlords of Draenor: Вторжение Железной Орды",	-- Warlords of Draenor: Iron Horde Incursion
 		[-526] = "Legion: Вторжение Легиона",						-- Legion: Legion Invasion
 		[-527] = "Battle for Azeroth: Война Шипов",					-- Battle for Azeroth: War of the Thorns
@@ -752,6 +756,7 @@ for key,value in pairs({
 		[-581] = "TBC Classic Deluxe",								-- TBC Classic Deluxe Edition
 		[-582] = "WotLK Classic Heroic",							-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
 		[-583] = "WotLK Classic Epic",								-- WotLK Classic Northrend Epic Upgrade
+		[-584] = "Промо Dragonflight",								-- Dragonflight Seasonal Promotions
 	-- PvP Header
 		-- PvP Set Names
 			[-659] = "Доспехи Претендента",							-- Aspirant PvP Gear (WoD, BfA)
@@ -792,7 +797,6 @@ for key,value in pairs({
 		[-854] = "Боец",											-- DPS
 		[-855] = "Лекарь",											-- Healers
 		[-856] = "Танк",											-- Tanks
-		[-857] = "Эпохальный+",										-- Mythic+
 		[-858] = "Ранг 1",											-- Rank 1
 		[-859] = "Ранг 2",											-- Rank 2
 		[-860] = "Ранг 3",											-- Rank 3
@@ -835,18 +839,18 @@ for key,value in pairs({
 		[-1009] = "Эпохальный Реколор",								-- Mythic Alternative
 		[-1010] = "Гладиатор Реколор",								-- Gladiator Alternative
 		[-1011] = "Ветеран Реколор",								-- Elite Alternative
-	-- Temp
-		[-1098] = "Побочные Задания",								-- Side Quests
 	-- Dragonflight
-		[-1100] = "Кастомизации Драконов",							-- Dragon Customization
+		[-1100] = "Манускрипты наблюдений за драконами",			-- Drakewatcher Manuscripts
 		[-1101] = "Изначальные Бури",								-- Primal Storms
+		[-1102] = "Гневион и Сабеллиан",							-- Wrathion & Sabellian
 		[-1110] = "Драконья экспедиция",							-- Dragonscale Expedition
-		--TODO: [-1111] = "Climbing",								-- Climbing
 		[-1120] = "Кентавры Маруук",								-- Maruuk Centaur
 		[-1121] = "Клан Айлааг",									-- Clan Aylaag
-		--TODO: [-1122] = "Grand Hunts",							-- Grand Hunts
+		[-1122] = "Великая охота",									-- Grand Hunts
 		[-1130] = "Искарские клыкарры",								-- Iskaara Tuskarr
+		[-1131] = "Искарское рыболовство",							-- Iskaara Fishing
 		[-1140] = "Союз Вальдраккена",								-- Valdrakken Accord
+		--TODO: [-1142] = "Aerial Challenges",						-- Aerial Challenges
 	-- Warrior order hall lore items
 		[-2200] = "Великий Один и Повелитель Огня",
 		[-2201] = "Странник и змей",
@@ -1033,6 +1037,7 @@ for key,value in pairs({
 	[142122] = "Плакат \"Разыскивается\"",	-- Wanted Poster
 	[142127] = "Секрет Рин'джи",	-- Rin'ji's Secret
 	[142151] = "Запечатанная бочка",	-- Sealed Barrel
+	[142179] = "Соларсальская Беседка",	-- Solarsal Gazebo
 	[142184] = "Сундук капитана",	-- Captain's Chest
 	[142195] = "Тактическая карта стаи Древолапов",	-- Woodpaw Battle Map
 	[142343] = "Ульдумский пьедестал",	-- Uldum Pedestal
@@ -1044,7 +1049,9 @@ for key,value in pairs({
 	[142696] = "Матричный перфограф 3005-D",	-- Matrix Punchograph 3005-D
 	[142702] = "Флакон с ядом",	-- Venom Bottle
 	[142958] = "Фералас: История",	-- Feralas: A History
+	[143980] = "Свиток Гордунни",	-- Gordunni Scroll
 	[144063] = "Монолит Равноденствия",	-- Equinex Monolith
+	[144064] = "Куча земли Гордунни",	-- Gordunni Dirt Mound
 	[144066] = "Первая клетка племени Сухокожих",	-- First Witherbark Cage
 	[144067] = "Вторая клетка племени Сухокожих",	-- Second Witherbark Cage
 	[144068] = "Третья клетка племени Сухокожих",	-- Third Witherbark Cage
@@ -1073,7 +1080,10 @@ for key,value in pairs({
 	[164886] = "Оскверненный песнецвет",	-- Corrupted Songflower
 	[164887] = "Оскверненный ветроцвет",	-- Corrupted Windblossom
 	[164888] = "Гнилой кнутокорень",	-- Corrupted Whipper Root
+	[164909] = "Разбитая гребная лодка",	-- Wrecked Row Boat
 	[164910] = "Украшенный сундук",	-- Ornate Chest
+	[164953] = "Большие кожаные рюкзаки",	-- Large Leather Backpacks
+	[164954] = "Кокон Зукк'аш",	-- Zukk'ash Pod
 	[164955] = "Северный хрустальный пилон",	-- Northern Crystal Pylon
 	[164956] = "Западный хрустальный пилон",	-- Western Crystal Pylon
 	[164957] = "Восточный хрустальный пилон",	-- Eastern Crystal Pylon
@@ -1353,6 +1363,7 @@ for key,value in pairs({
 	[192524] = "Арнгрим Ненасытный",	-- Arngrim the Insatiable
 	[192818] = "Странный гриб",	-- Infused Mushroom
 	[192823] = "Полный кувшин с вином",	-- Full Jug of Wine
+	[192827] = "Полевая горчица",	-- Wild Mustard
 	[192828] = "Морковь из леса Хрустальной Песни",	-- Crystalsong Carrot
 	[192833] = "Имущество Бриденбрада",	-- Bridenbrad's Possessions
 	[193051] = "Нерубское яйцо Плети",	-- Nerubian Scourge Egg
@@ -3259,6 +3270,7 @@ for key,value in pairs({
 	[375530] = "Забытый склад сокровищ",	-- Forgotten Treasure Vault
 	[375536] = "Заминированный тайник Зи'рата",	-- Xy'rath's Booby-Trapped Cache
 	[375538] = "Потерянный яйцеобразный объект",	-- Lost Ovoid
+	--TODO: [375668] = "Misty Treasure Chest",	-- Misty Treasure Chest
 	[375693] = "Схема протосинтеза",	-- Protoform Schematic
 	[375694] = "Схема протосинтеза",	-- Protoform Schematic
 	[375746] = "Чертеж прототипа",	-- Prototype Schematic
@@ -3284,28 +3296,61 @@ for key,value in pairs({
 	[375987] = "Фирим в изгнании, часть 7",	-- Firim in Exile, Part 7
 	[375988] = "Фирим в изгнании, эпилог",	-- Firim in Exile, Epilogue
 	[376041] = "Замаскированный тайник шифров",	-- Shrouded Cypher Cache
+	--TODO: [376123] = "Suspicious Bottle",	-- Suspicious Bottle
 	--TODO: [376124] = "Bag of Enchanted Wind",	-- Bag of Enchanted Wind
 	--TODO: [376175] = "Fullsails Supply Chest",	-- Fullsails Supply Chest
 	--TODO: [376213] = "Mysterious Wand",	-- Mysterious Wand
 	--TODO: [376386] = "Disturbed Dirt",	-- Disturbed Dirt
 	--TODO: [376426] = "Magic-Bound Chest",	-- Magic-Bound Chest
 	--TODO: [376451] = "Bronze Stopwatch",	-- Bronze Stopwatch
+	--TODO: [376580] = "Djaradin Cache",	-- Djaradin Cache
+	--TODO: [376581] = "Clan Chest",	-- Clan Chest
 	--TODO: [376587] = "Expedition Scout's Pack",	-- Expedition Scout's Pack
 	--TODO: [376757] = "WANTED: Frigellus",	-- WANTED: Frigellus
 	--TODO: [377114] = "Coil of Heavy Rope",	-- Coil of Heavy Rope
+	--TODO: [377233] = "Hessethiash's Poorly Hidden Treasure",	-- Hessethiash's Poorly Hidden Treasure
 	--TODO: [377317] = "Treasure Hoard",	-- Treasure Hoard
+	--TODO: [377458] = "Abandoned Weapon Rack",	-- Abandoned Weapon Rack
+	--TODO: [377466] = "Lost Draconic Hourglass",	-- Lost Draconic Hourglass
 	--TODO: [377499] = "On the Origin of Draconic Species",	-- On the Origin of Draconic Species
+	--TODO: [377899] = "Hidden Hornswog Hostage",	-- Hidden Hornswog Hostage
+	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
+	--TODO: [378010] = "Forgotten Dragon Treasure",	-- Forgotten Dragon Treasure
 	--TODO: [379290] = "Ornamented Statue",	-- Ornamented Statue
 	--TODO: [379321] = "Mysterious Paw Print",	-- Mysterious Paw Print
+	--TODO: [380533] = "Snow Covered Scroll",	-- Snow Covered Scroll
 	--TODO: [380547] = "Decay-Infused Tanning Oil",	-- Decay-Infused Tanning Oil
+	--TODO: [380587] = "Crate of Treated Hides",	-- Crate of Treated Hides
+	--TODO: [380602] = "Wind-Blessed Hide",	-- Wind-Blessed Hide
 	--TODO: [380653] = "Yennu's Kite",	-- Yennu's Kite
 	--TODO: [380654] = "Dead Man's Chestplate",	-- Dead Man's Chestplate
 	--TODO: [380840] = "Torn Riding Pack",	-- Torn Riding Pack
+	--TODO: [380842] = "Gold Coin",	-- Gold Coin
+	--TODO: [380843] = "Rubber Fish",	-- Rubber Fish
+	--TODO: [380847] = "Emerald Gem Cluster",	-- Emerald Gem Cluster
+	--TODO: [380859] = "Tuskarr Toy Boat",	-- Tuskarr Toy Boat
+	--TODO: [380860] = "Centaur Horn",	-- Centaur Horn
 	--TODO: [380902] = "Fields of Ferocity",	-- Fields of Ferocity
+	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
 	--TODO: [381045] = "Replica Dragon Goblet",	-- Replica Dragon Goblet
+	--TODO: [381094] = "Elegant Canvas Brush",	-- Elegant Canvas Brush
+	--TODO: [381107] = "Sand Pile",	-- Sand Pile
+	--TODO: [381108] = "Yennu's Map",	-- Yennu's Map
+	--TODO: [381110] = "Forgotten Jewel Box",	-- Forgotten Jewel Box
 	--TODO: [381153] = "Ruby Gem Cluster",	-- Ruby Gem Cluster
+	--TODO: [381157] = "Sapphire Gem Cluster",	-- Sapphire Gem Cluster
+	--TODO: [381158] = "Gnoll Fiend Flail",	-- Gnoll Fiend Flail
+	--TODO: [381160] = "Lost Compass",	-- Lost Compass
+	--TODO: [381216] = "Surveyor's Magnifying Glass",	-- Surveyor's Magnifying Glass
+	--TODO: [381223] = "Cracked Hourglass",	-- Cracked Hourglass
 	--TODO: [381296] = "Horrible Mess",	-- Horrible Mess
 	--TODO: [381297] = "Misplaced Luggage",	-- Misplaced Luggage
+	--TODO: [381355] = "Finely Carved Wing",	-- Finely Carved Wing
+	--TODO: [381357] = "Stone Tablet",	-- Stone Tablet
+	--TODO: [381358] = "Stone Tablet",	-- Stone Tablet
+	--TODO: [381359] = "Stone Tablet",	-- Stone Tablet
+	--TODO: [381483] = "Marmoni's Prize",	-- Marmoni's Prize
+	--TODO: [381485] = "Adventurer's Lost Soap Bar",	-- Adventurer's Lost Soap Bar
 	--TODO: [381650] = "Archivist's Request",	-- Archivist's Request
 	--TODO: [381653] = "Fang Flap Fire Signups",	-- Fang Flap Fire Signups
 	--TODO: [381667] = "Archivist's Request",	-- Archivist's Request
@@ -3319,7 +3364,9 @@ for key,value in pairs({
 	--TODO: [382029] = "Disturbed Dirt",	-- Disturbed Dirt
 	--TODO: [382166] = "The Ruby Fest!",	-- The Ruby Fest!
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
+	--TODO: [383625] = "Case of Fresh Gleamfish",	-- Case of Fresh Gleamfish
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
+	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	[9962198] = "Самодельная лужа жижи изгоя",	-- Outcast's Makeshift Muckpool
 	[9999890] = "Оскверненная добыча",	-- Corrupted Loot
 	[9999891] = "Только Основная Задача",	-- Main Objective Only
@@ -3417,7 +3464,7 @@ for key,value in pairs({
 		-- #if BEFORE BFA
 		-- [41] = {1, "|CFFFF0000Это доступно только игрокам, которые завершили соответствующие испытания артефактов Башни магов и получили базовый внешний вид.|r", "Появления в Башне Магов"},
 		-- #endif
-		[45] = {1, "|CFFFF0000Изменения добычи Blizzard сломали несколько предметов и сделали их недоступными. Накидка Дома Дворян / Теплый плащ Империи Гурубаши (обе награды Эмиссара BfA), Огом Манглер, награды с миссий WoD и Комплекты Пробных персонажей в настоящее время сломаны, и их необходимо починить.|r", "Сломанная добыча"},
+		[45] = {1, "|CFFFF0000Изменения добычи Blizzard сломали несколько предметов и сделали их недоступными. Накидка Дома Дворян / Теплый плащ Империи Гурубаши (обе награды Эмиссара BfA), Огом Манглер, награды с миссий WoD и некоторый лут с Героического Режима Ульдуара в настоящее время сломаны, и их необходимо починить.|r", "Сломанная добыча"},
 
 	-- Seasonal Filters
 		[1000] = {4, "|CFF00FFDEДля этого требуется Хмельной фестиваль.|r", "Хмельной фестиваль"},

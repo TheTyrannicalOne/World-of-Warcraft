@@ -586,6 +586,11 @@ spec:RegisterAuras( {
         duration = 8,
         max_stack = 1,
     },
+    seal_of_clarity = {
+        id = 384810,
+        duration = 15,
+        max_stack = 1
+    },
     -- Talent: $@spellaura385728
     -- https://wowhead.com/beta/spell=385723
     seal_of_the_crusader = {
@@ -604,13 +609,6 @@ spec:RegisterAuras( {
         id = 114250,
         duration = 15,
         max_stack = 4
-    },
-    -- Damage taken reduced by $s12%. Maximum health increased by $s11%.  $?s53376[  Judgment generates $53376s3~ additional Holy Power.][]  $?s384376[  Damage and healing increased by $384376s1~%. Hammer of Wrath may be cast on any target.][]
-    -- https://wowhead.com/beta/spell=389539
-    sentinel = {
-        id = 389539,
-        duration = 20,
-        max_stack = 15
     },
     -- Talent: Haste, Critical Strike, and Versatility increased by $s1%, and Mastery increased by $?c1[${$s4*$183997bc1}]?c2[${$s4*$76671bc1}][${$s4*$267316bc1}]%.
     -- https://wowhead.com/beta/spell=152262
@@ -961,12 +959,15 @@ spec:RegisterAbilities( {
 
         talent = "blinding_light",
         startsCombat = false,
+        toggle = "interrupts",
 
-        toggle = "cooldowns",
+        debuff = "casting",
+        readyTime = state.timeToInterrupt,
 
         handler = function ()
+            interrupt()
             applyDebuff( "target", "blinding_light" )
-            active_dot.blinding_light = active_enemies
+            active_dot.blinding_light = max( active_enemies, active_dot.blinding_light )
         end,
     },
 
@@ -1199,7 +1200,7 @@ spec:RegisterAbilities( {
     divine_toll = {
         id = function() return talent.divine_toll.enabled and 375576 or 304971 end,
         cast = 0,
-        cooldown = 60,
+        cooldown = function() return talent.quickened_invocations.enabled and 45 or 60 end,
         gcd = "spell",
         school = "arcane",
 
@@ -1385,7 +1386,7 @@ spec:RegisterAbilities( {
         talent = "hammer_of_wrath",
         startsCombat = false,
 
-        usable = function () return target.health_pct < 20 or ( talent.avenging_wrath.enabled and ( buff.avenging_wrath.up or buff.crusade.up ) ) or buff.final_verdict.up or buff.hammer_of_wrath_hallow.up or buff.negative_energy_token_proc.up end,
+        usable = function () return target.health_pct < 20 or ( level > 57 and talent.avenging_wrath.enabled and ( buff.avenging_wrath.up or buff.crusade.up ) ) or buff.final_verdict.up or buff.hammer_of_wrath_hallow.up or buff.negative_energy_token_proc.up, "requires buff/talent or target under 20% health" end,
         handler = function ()
             removeBuff( "final_verdict" )
             if legendary.the_mad_paragon.enabled then
@@ -1584,7 +1585,7 @@ spec:RegisterAbilities( {
             removeDebuff( "target", "judgment" )
             removeDebuff( "target", "reckoning" )
             if target.is_undead or target.is_demon then applyDebuff( "target", "radiant_decree" ) end
-            if talent.divine_judgment.enabled then addStack( "divine_judgment", 15, 1 ) end
+            if talent.divine_judgment.enabled then addStack( "divine_judgment" ) end
             if talent.truths_wake.enabled or conduit.truths_wake.enabled then applyDebuff( "target", "truths_wake" ) end
         end,
     },
@@ -1743,7 +1744,7 @@ spec:RegisterAbilities( {
                 debuff.execution_sentence.expires = debuff.execution_sentence.expires + 1
             end
             if talent.righteous_verdict.enabled then applyBuff( "righteous_verdict" ) end
-            if talent.divine_judgment.enabled then addStack( "divine_judgment", 15, 1 ) end
+            if talent.divine_judgment.enabled then addStack( "divine_judgment" ) end
         end,
 
         copy = { "final_verdict", 336872, 383328 },
@@ -1790,7 +1791,7 @@ spec:RegisterAbilities( {
 
         handler = function ()
             if target.is_undead or target.is_demon then applyDebuff( "target", "wake_of_ashes" ) end
-            if talent.divine_judgment.enabled then addStack( "divine_judgment", 15, 1 ) end
+            if talent.divine_judgment.enabled then addStack( "divine_judgment" ) end
             if conduit.truths_wake.enabled then applyDebuff( "target", "truths_wake" ) end
         end,
 

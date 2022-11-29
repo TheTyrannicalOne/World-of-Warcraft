@@ -20,6 +20,7 @@ local transmogSlots = {}
 -- Local globals
 local C_CurrencyInfo_GetCurrencyInfo, C_TransmogCollection_GetAppearanceSources, C_TransmogCollection_GetCategoryAppearances, C_QuestLog_IsQuestFlaggedCompleted = C_CurrencyInfo.GetCurrencyInfo, C_TransmogCollection.GetAppearanceSources, C_TransmogCollection.GetCategoryAppearances, C_QuestLog.IsQuestFlaggedCompleted
 
+local NUM_TOTAL_BAG_FRAMES = _G.NUM_TOTAL_BAG_FRAMES
 
 -- Libs
 local LibRealmInfo = LibStub('LibRealmInfo17janekjl')
@@ -696,7 +697,7 @@ function wwtc:ScanBagQueue()
 
     -- Short circuit if bank isn't open
     local scan = true
-    if (bagID == -1 or (bagID >= 5 and bagID <= 11)) and not bankOpen then
+    if (bagID == -1 or bagID > NUM_TOTAL_BAG_FRAMES) and not bankOpen then
         scan = false
     end
     -- Reagent bank is weird, make sure that the bank is open or it was actually updated
@@ -710,7 +711,7 @@ function wwtc:ScanBagQueue()
     local requestedData = false
     if scan then
         local now = time()
-        if bagID >= 0 and bagID <= 4 then
+        if bagID >= 0 and bagID <= NUM_TOTAL_BAG_FRAMES then
             charData.scanTimes["bags"] = now
 
             -- Update mythic plus keystone since bags changed
@@ -737,8 +738,8 @@ function wwtc:ScanBagQueue()
                 if itemID then
                     if C_Item.IsItemDataCachedByID(itemID) then
                         local itemInfo = C_Container.GetContainerItemInfo(bagID, slot)
-                        if itemInfo ~= nil and itemInfo.hyperlink ~= nil and itemInfo.stackCount ~= nil then
-                            local parsed = wwtc:ParseItemLink(itemInfo.hyperlink, itemInfo.stackCount)
+                        if itemInfo ~= nil and itemInfo.hyperlink ~= nil then
+                            local parsed = wwtc:ParseItemLink(itemInfo.hyperlink, itemInfo.quality or -1, itemInfo.stackCount or 1)
                             bag["s"..slot] = parsed
                         end
                     else
@@ -825,8 +826,8 @@ function wwtc:ScanGuildBankTabs()
                     }, ':')
 
                 else
-                    local _, itemCount, _, _, _ = GetGuildBankItemInfo(tabIndex, slotIndex)
-                    local parsed = wwtc:ParseItemLink(link, itemCount)
+                    local _, itemCount, _, _, itemQuality = GetGuildBankItemInfo(tabIndex, slotIndex)
+                    local parsed = wwtc:ParseItemLink(link, itemQuality or -1, itemCount or 1)
                     tab["s"..slotIndex] = parsed
                 end
             end
@@ -1844,7 +1845,7 @@ end
 -------------------------------------------------------------------------------
 -- Parse an item link and return useful information
 local parseItemLinkCache = {}
-function wwtc:ParseItemLink(link, count)
+function wwtc:ParseItemLink(link, quality, count)
     local cached = parseItemLinkCache[link]
     if cached ~= nil then
         return table.concat({ count, cached }, ':')
@@ -1906,7 +1907,9 @@ function wwtc:ParseItemLink(link, count)
     local effectiveILvl, _, _ = GetDetailedItemLevelInfo(link)
     item.itemLevel = effectiveILvl
 
-    item.quality = C_Item.GetItemQualityByID(link)
+    if quality < 0 then
+        item.quality = C_Item.GetItemQualityByID(link)
+    end
 
     -- count:id:context:enchant:ilvl:quality:suffix:bonusIDs:gems
     local ret = table.concat({

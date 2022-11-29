@@ -1,0 +1,16 @@
+lightweight tag e2b46253f15a4d25f52c8490be8a8e5addb7bfeb v1.1.5-release
+Author:	FranekWoW <46614084+franekwow@users.noreply.github.com>
+Date:	Sun Jun 21 12:13:51 2020 +0100
+
+commit e2b46253f15a4d25f52c8490be8a8e5addb7bfeb
+Author: FranekWoW <46614084+franekwow@users.noreply.github.com>
+Date:   Sun Jun 21 12:13:51 2020 +0100
+
+    TOC changed to the newest game version
+
+commit f9fa99e9912f3725b3ec029a620fc9b9271f91d4
+Author: FranekWoW <46614084+franekwow@users.noreply.github.com>
+Date:   Sat Aug 10 17:28:24 2019 +0100
+
+    Added LICESE and changed TOC
+

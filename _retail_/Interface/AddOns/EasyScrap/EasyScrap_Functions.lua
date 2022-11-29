@@ -22,7 +22,6 @@ function EasyScrap:getScrappableItems()
          if itemID and EasyScrap:itemScrappable(itemID) then
             local cont_info = C_Container.GetContainerItemInfo(bag, i)
             local texture = tonumber(cont_info.iconFileID)
-            print(texture)
             local itemCount = cont_info.stackCount
             local quality = cont_info.quality
             local itemLink = cont_info.hyperlink
@@ -89,7 +88,7 @@ function EasyScrap:addQueueItems()
             --self.queueItemsToAdd = self.queueItemsToAdd - 1
             local key, nextItemRef = next(self.queueItems)
             table.remove(self.queueItems, key)
-            UseContainerItem(self.scrappableItems[nextItemRef].bag, self.scrappableItems[nextItemRef].slot)
+            C_Container.UseContainerItem(self.scrappableItems[nextItemRef].bag, self.scrappableItems[nextItemRef].slot)
 
             if #self.itemsInScrapper == 9 or #self.queueItems == 0 then
             --if self.queueItemsToAdd == 0 then

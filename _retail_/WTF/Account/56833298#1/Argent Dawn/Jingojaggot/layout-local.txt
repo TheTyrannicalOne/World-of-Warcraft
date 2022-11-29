@@ -3,16 +3,9 @@ Frame: AllTheThings-Window-CurrentInstance
 FrameLevel: 1
 Anchor: LEFT
 X: 0
-Y: -34
-W: 300
+Y: -73
+W: 301
 H: 298
-Frame: BagItemTooltipMover
-FrameLevel: 3
-Anchor: TOP
-X: 0
-Y: 0
-W: 150
-H: 80
 Frame: PlayerPowerBarAlt
 FrameLevel: 2
 Anchor: BOTTOM
@@ -82,4 +75,4 @@ Anchor: CENTER
 X: 0
 Y: 0
 W: 195
-H: 392
+H: 380

@@ -1,0 +1,4589 @@
+11/28 18:14:00.708  -----AccountData_Initialize: Account Wide-----
+11/28 18:14:00.739  Received Server Save Times
+11/28 18:14:00.739  Data Type 0: Server Save Time 1669607106, Local Save Time 1669607106
+11/28 18:14:00.739  Loading Data From File: Type 0
+11/28 18:14:00.739  Data: SET cameraDistanceMaxZoomFactor "2.6"
+SET cameraZoomSpeed "29"
+SET toyBoxExpansionFilters ""
+SET cameraSmoothTimeMax "5"
+SET combinedBags "1"
+SET statusTextDisplay "BOTH"
+SET wholeChatWindowClickable "0"
+SET findYourselfMode "1"
+SET showTutorials "0"
+SET UnitNameNonCombatCreatureName "1"
+SET timeMgrAlarmMessage "Brewfest"
+SET flaggedTutorials "v11##$##]##[##+##G##%##-##'##5##.##(##Z##E##K##8##)##;##,##6##:##O##N##D##?##^##`##@##I##F##A##B##=##9##J##3##L##Y##_##C##>##<##V"
+SET auctionDisplayOnCharacter "1"
+SET profanityFilter "0"
+SET talentFrameShown "1"
+SET xpBarText "1"
+SET cameraPitchE "27.400265"
+SET mountJournalGeneralFilters "7"
+SET petJournalTab "3"
+SET cameraWaterCollision "1"
+SET alwaysShowActionBars "1"
+SET cameraYawE "0.000000"
+SET Outline "3"
+SET mountJournalSourcesFilter "2031"
+SET removeChatDelay "1"
+SET pendingInviteInfoShown "1"
+SET toyBoxSourceFilters ""
+SET PushToTalkSound "1"
+SET mountJournalTypeFilter "15"
+SET petJournalFilters ""
+SET addFriendInfoShown "1"
+SET closedInfoFramesAccountWide "C"
+SET toyBoxCollectedFilters ""
+SET floatingCombatTextCombatDamage "0"
+SET timeMgrUseLocalTime "1"
+SET advJournalLastOpened "1669607136"
+SET actionedAdventureJournalEntries "v"
+SET showNPETutorials "0"
+SET UnitNameNPC "1"
+SET petJournalSort "1"
+SET AllowDangerousScripts "1"
+SET timeMgrAlarmTime "1080"
+SET cameraView "1"
+SET statusText "1"
+SET UnitNameHostleNPC "0"
+SET threatShowNumeric "1"
+SET floatingCombatTextCombatHealing "0"
+SET cameraDistanceE "15.336007"
+SET violenceLevel "5"
+SET UnitNameOwn "1"
+SET autoOpenLootHistory "1"
+SET whisperMode "inline"
+SET SoftTargetInteract "3"
+SET alwaysCompareItems "1"
+SET CameraKeepCharacterCentered "0"
+SET chatStyle "classic"
+SET softTargettingInteractKeySound "1"
+SET enableTwitter "1"
+SET cameraSmoothStyle "0"
+
+11/28 18:14:00.739  Data Type 10: Server Save Time 1666751577, Local Save Time 1666751577
+11/28 18:14:00.739  Loading Data From File: Type 10
+11/28 18:14:00.739  Data: 1
+11/28 18:14:07.959  -----AccountData_Initialize: Character-----
+11/28 18:15:51.313  Received Server Save Times
+11/28 18:15:51.313  Data Type 1: Server Save Time 1669607106, Local Save Time 1669607106
+11/28 18:15:51.313  Loading Data From File: Type 1
+11/28 18:15:51.689  Data: SET pvpSelectedRoles "8"
+SET lastGarrisonMissionTutorial "8"
+SET latestSplashScreen "48"
+SET autoQuestPopUps "v11"
+SET talentPointsSpent "1"
+SET showArenaEnemyFrames "0"
+SET cameraSavedPitch "2.137245"
+SET lastTransmogOutfitIDSpec2 "8"
+SET nameplateSelfScale "1"
+SET EJLootClass "0"
+SET nameplateSelectedScale "1"
+SET minimapTrackedInfov3 "1007343"
+SET EJRaidDifficulty "14"
+SET nameplateSelfAlpha "1"
+SET showTamers "0"
+SET soulbindsViewedTutorial "@x"
+SET trackedProfessionRecipes "v11"
+SET orderHallMissionTutorial "983044"
+SET splashScreenNormal "19"
+SET savedClassConfigOne "923098"
+SET lfGuildSettings "591"
+SET nameplateMotion "1"
+SET NameplatePersonalHideDelayAlpha "1"
+SET lastTransmogOutfitIDSpec1 "8"
+SET newPvpSeason "33"
+SET hardTrackedWorldQuests "v11"
+SET nameplateShowFriendlyNPCs "1"
+SET currencyCategoriesCollapsed "v11"
+SET EJDungeonDifficulty "1"
+SET NamePlateHorizontalScale "1"
+SET nameplateMaxDistance "40"
+SET shipyardMissionTutorialAreaBuff "1"
+SET NamePlateClassificationScale "1"
+SET hardTrackedQuests "v11(9}(a8%s5(b@&bx"
+SET NameplatePersonalShowWithTarget "1"
+SET lastRenownForCovenant2 "80"
+SET NameplatePersonalHideDelaySeconds "2"
+SET trackedQuests "v11*d_'`_(5@(9~(9(Lj(S5)Rz)^9)^t*G/*Ul*[;"
+SET newMythicPlusSeason "7"
+SET EJSelectedTier "505"
+SET nameplateSelectedAlpha "1"
+SET dangerousShipyardMissionWarningAlreadyShown "1"
+SET cameraSavedVehicleDistance "47.834171"
+SET shipyardMissionTutorialFirst "1"
+SET lfgSelectedRoles "8"
+SET lastVoidStorageTutorial "3"
+SET soulbindsActivatedTutorial "@H"
+SET guildRosterView "reputation"
+SET cameraSavedDistance "2.517999"
+SET autoLootDefault "1"
+SET shipyardMissionTutorialBlockade "1"
+SET nameplateMinScaleDistance "0"
+SET minimapZoom "5"
+SET nameplateTargetBehindMaxDistance "40"
+SET nameplateMaxScaleDistance "40"
+SET trackedWorldQuests "v11"
+SET minimapShapeshiftTracking "v11"
+SET closedInfoFrames "ceiwezQzG^SO}[t@D"
+SET showTokenFrame "1"
+SET reputationsCollapsed "v11#-)"
+SET nameplateShowEnemyTotems "1"
+SET closedExtraAbiltyTutorials "FkUpz@_DD"
+SET nameplateGlobalScale "1"
+SET covenantMissionTutorial "K@H@@B@@@@@@@@@@@@@@@B@@@@@@@@@@@@@@@@@@@@H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@B@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@H"
+SET missingTransmogSourceInItemTooltips "1"
+SET cameraSavedPetBattleDistance "15.000"
+SET NamePlateVerticalScale "1"
+SET splashScreenSeason "4"
+SET clubFinderPlayerSettings "262145"
+SET nameplateMinAlpha "1"
+SET lfdSelectedDungeons "@@@@PD@@@@@@@@@@@@@@@@`@@@@@@@A@@@A@@@@@@@@@@@A@@@@@@zOPP@@@@@@@@@@@@@@@H@@@@@@@@@@@A@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@P@@@@@@@@@@@`E"
+SET lastSelectedClubId "2167761"
+SET nameplateMaxScale "1"
+SET nameplateMinScale "1"
+SET nameplateMaxAlpha "1"
+SET soulbindsLandingPageTutorial "1"
+SET nameplateShowAll "1"
+SET lastTransmogOutfitIDSpec3 "8"
+SET nameplateLargerScale "1"
+SET lfdCollapsedHeaders "@@@@@@@@@H@@@@@@@@@@@@@@@@@L"
+SET trackedAchievements "v11#j,#in$Vw"
+SET activeCUFProfile "Primary"
+SET mapFade "0"
+SET nameplateShowSelf "0"
+SET nameplateShowEnemyPets "1"
+SET SoftTargetEnemy "3"
+
+11/28 18:15:51.689  Data Type 2: Server Save Time 1648401569, Local Save Time 1648401569
+11/28 18:15:51.689  Loading Data From File: Type 2
+11/28 18:15:51.689  Data: bind A STRAFELEFT
+bind D STRAFERIGHT
+bind Q ACTIONBUTTON5
+bind E ACTIONBUTTON6
+bind 5 ACTIONBUTTON7
+bind 6 ACTIONBUTTON8
+bind 7 ACTIONBUTTON9
+bind 8 ACTIONBUTTON10
+bind 9 ACTIONBUTTON11
+bind 0 ACTIONBUTTON12
+bind - NONE
+bind = NONE
+bind [ PAWN_COMPARE_LEFT
+bind ] PAWN_COMPARE_RIGHT
+bind CTRL-SHIFT-I CLICK WoWPro_FauxItemButton:LeftButton
+bind CTRL-SHIFT-T CLICK WoWPro_FauxTargetButton:LeftButton
+
+11/28 18:15:51.689  Data Type 3: Server Save Time 1666834907, Local Save Time 1666834907
+11/28 18:15:51.689  Loading Data From File: Type 3
+11/28 18:15:51.689  Data: bind A STRAFELEFT
+bind D STRAFERIGHT
+bind Q ACTIONBUTTON5
+bind E ACTIONBUTTON6
+bind 5 ACTIONBUTTON7
+bind 6 ACTIONBUTTON8
+bind 7 ACTIONBUTTON9
+bind 8 ACTIONBUTTON10
+bind 9 ACTIONBUTTON11
+bind 0 ACTIONBUTTON12
+bind - MULTIACTIONBAR1BUTTON8
+bind = MULTIACTIONBAR1BUTTON7
+bind [ PAWN_COMPARE_LEFT
+bind ] PAWN_COMPARE_RIGHT
+bind ALT-X NONE
+bind CTRL-SHIFT-I CLICK WoWPro_FauxItemButton:LeftButton
+bind CTRL-SHIFT-T CLICK WoWPro_FauxTargetButton:LeftButton
+
+11/28 18:15:51.689  Data Type 4: Server Save Time 1669607106, Local Save Time 1669607106
+11/28 18:15:51.689  Loading Data From File: Type 4
+11/28 18:15:51.689  Data: VER 3 000000000000002E " " "INV_MISC_QUESTIONMARK"
+#showtooltip item:172179
+/run if not InCombatLockdown() then RHT.b:SetAttribute("item","Eternal Traveler's Hearthstone") end
+/click RHTB
+END
+VER 3 0000000000000022 "AAP_MACRO" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/click ExtraActionButton1
+END
+VER 3 0000000000000019 "CollectMeRC" "INV_PET_BABYBLIZZARDBEAR"
+/cm rc
+END
+VER 3 0000000000000007 "CollectMeRM" "ABILITY_MOUNT_BIGBLIZZARDBEAR"
+/cm rm
+END
+VER 3 0000000000000004 "Everybody Dance" "ABILITY_WARRIOR_RALLYINGCRY"
+/y Everybody, dance now!
+/dance
+END
+VER 3 000000000000002F "FishingBuddy" "INV_Fishingpole_02"
+#showtooltip Fishing
+/fb macro
+/stopcasting
+/cast Fishing
+END
+VER 3 0000000000000034 "fleetfoot" "136103"
+/cleartarget
+/tar OOX-Fleetfoot/MG 
+/cleartarget [dead]
+/stopmacro [noexists]
+/run PlaySound(12867); SetRaidTarget("target", 01); print(date().." "..UnitName("target"));
+/point
+END
+VER 3 0000000000000030 "FrightenedKodo" "132366"
+/cleartarget
+/tar Frightened Kodo
+/stopmacro [noexists]
+/script PlaySound(8959)
+/run RaidNotice_AddMessage(RaidBossEmoteFrame,"Frightened Kodo!", ChatTypeInfo["RAID_WARNING"])
+END
+VER 3 000000000000001D "Heroic Leap Spam" "ABILITY_HEROICLEAP"
+#showtooltip Heroic Leap
+/cast !Heroic Leap
+END
+VER 3 0000000000000031 "paper" "INV_MISC_QUESTIONMARK"
+/target Paper
+END
+VER 3 000000000000001C "Rage" "ABILITY_WARRIOR_CHARGE"
+/cast Charge
+/cast Rend
+END
+VER 3 0000000000000032 "raidannoufabious" "413588"
+/cleartarget
+/tar Fabious
+/stopmacro [noexists]
+/run local mp = C_Map.GetPlayerMapPosition(C_Map.GetBestMapForUnit("player"), "player"); SendChatMessage("%t is at " .. tostring(floor(mp.x * 100)) .. ", " .. tostring(floor(mp.y * 100)), "RAID")
+END
+VER 3 0000000000000033 "rockweed" "132101"
+/cleartarget
+/tar Lost Algan
+/tar Wayward Algan
+/tar Rockweed Shambler
+/cleartarget [dead]
+/stopmacro [noexists]
+/run PlaySound(12867); SetRaidTarget("target", 01); print(date().." "..UnitName("target"));
+/point
+END
+VER 3 0000000000000035 "scarab count" "132184"
+/run local t,c="Swarm Scarab",0 for i=1,10000 do local p=C_NamePlate.GetNamePlateForUnit("nameplate"..i) if p and p:IsVisible() and p:GetChildren():GetRegions():GetText()==t then c=c+1 end end print(t,":",c) 
+END
+VER 3 000000000000000C "SilverDragon" "ABILITY_HUNTER_SNIPERTRAINING"
+/click SilverDragonMacroButton
+END
+VER 3 000000000000002D "SummonRandomPet" "132142"
+/click PetJournalSummonRandomFavoritePetButton
+END
+VER 3 000000000000001E "Swifty Macro" "SPELL_FROST_ARCTICWINDS"
+/cast Recklessness
+/cast Blood Fury
+/cast Bloodbath
+/cast Avatar
+/cast Malevolent Gladiator's Badge of Victory
+END
+VER 3 000000000000002C "TSMMacro" "Achievement_Faction_GoldenLotus"
+/click TSMVendoringSellAllButton
+END
+
+11/28 18:15:51.689  Data Type 5: Server Save Time 1666751577, Local Save Time 1666751577
+11/28 18:15:51.689  Loading Data From File: Type 5
+11/28 18:15:51.689  Data: VER 3 0100000000000001 "VuhDoDCShieldData" "Ability_Repair"
+P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1WM[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000002 "VuhDoDCShieldNames" "Ability_Repair"
+N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Sha[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+
+11/28 18:15:51.689  Data Type 6: Server Save Time 0, Local Save Time 1669607106
+11/28 18:15:51.689  Loading Data From File: Type 6
+11/28 18:15:51.689  Data: Version: 1
+Frame: AllTheThings-Window-CurrentInstance
+FrameLevel: 1
+Anchor: LEFT
+X: 0
+Y: -74
+W: 301
+H: 298
+Frame: ExtraAbilityContainer
+FrameLevel: 70
+Anchor: TOP
+X: 0
+Y: 0
+W: 250
+H: 120
+Frame: SettingsPanel
+FrameLevel: 1
+Anchor: TOP
+X: 2
+Y: -118
+W: 920
+H: 724
+Frame: DressUpFrame
+FrameLevel: 1
+Anchor: CENTER
+X: -117
+Y: 57
+W: 951
+H: 1152
+Frame: GameMenuFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 2
+Y: 2
+W: 195
+H: 280
+Frame: PlayerPowerBarAlt
+FrameLevel: 2
+Anchor: BOTTOM
+X: 0
+Y: 90
+W: 10
+H: 10
+Frame: SpellBookFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 550
+H: 525
+Frame: CharacterFrame
+FrameLevel: 1
+Anchor: TOP
+X: -4
+Y: -43
+W: 444
+H: 444
+Frame: TradeFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 344
+H: 446
+Frame: ItemTextFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 19
+Y: -117
+W: 338
+H: 424
+Frame: BankFrame
+FrameLevel: 2
+Anchor: BOTTOM
+X: 0
+Y: 0
+W: 386
+H: 415
+Frame: FriendsFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 338
+H: 424
+Frame: ColorPickerFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 365
+H: 240
+Frame: GossipFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 1
+H: 1
+Frame: MailFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 338
+H: 424
+Frame: PVEFrame
+FrameLevel: 1
+Anchor: LEFT
+X: 312
+Y: 130
+W: 563
+H: 428
+Frame: LootHistoryFrame
+FrameLevel: 1
+Anchor: BOTTOMRIGHT
+X: -476
+Y: 50
+W: 210
+H: 636
+Frame: SplashFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 60
+W: 882
+H: 584
+Frame: WorldMapFrame
+FrameLevel: 1
+Anchor: TOP
+X: -236
+Y: -137
+W: 702
+H: 534
+Frame: AllTheThings-Window-Prime
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 425
+H: 305
+Frame: AllTheThings-Window-Bounty
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 300
+H: 300
+Frame: AllTheThings-Window-RaidAssistant
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 299
+H: 300
+Frame: AllTheThings-Window-WorldQuests
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 299
+H: 300
+Frame: MAOptions
+FrameLevel: 1
+Anchor: LEFT
+X: 455
+Y: 66
+W: 497
+H: 513
+Frame: PawnUIFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 800
+H: 525
+Frame: scanner_button
+FrameLevel: 200
+Anchor: LEFT
+X: 213
+Y: 69
+W: 200
+H: 50
+Frame: RareShare_RareFrame
+FrameLevel: 1
+Anchor: TOP
+X: -1
+Y: -23
+W: 200
+H: 80
+Frame: WorldQuestTrackerFinderFrame
+FrameLevel: 1
+Anchor: TOP
+X: 406
+Y: -3
+W: 240
+H: 116
+Frame: TooltipMover
+FrameLevel: 402
+Anchor: BOTTOMRIGHT
+X: 0
+Y: 0
+W: 130
+H: 20
+Frame: AllTheThings-Window-Unsorted
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 300
+H: 300
+Frame: GarrisonLandingPage
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 21
+Y: -108
+W: 830
+H: 538
+
+11/28 18:15:51.689  Data Type 7: Server Save Time 1666751578, Local Save Time 1666751578
+11/28 18:15:51.689  Loading Data From File: Type 7
+11/28 18:15:51.709  Data: VERSION 9
+
+ADDEDVERSION 25
+
+CHANNELS
+1 0 1 1
+2 0 2 1
+22 0 3 1
+26 0 4 1
+42 0 5 1
+END
+
+ZONECHANNELS 0
+
+COLORS
+
+SYSTEM 255 255 0 N
+SAY 255 255 255 Y
+PARTY 170 170 255 Y
+RAID 255 127 0 Y
+GUILD 64 255 64 Y
+OFFICER 64 192 64 Y
+YELL 255 64 64 Y
+WHISPER 255 128 255 Y
+WHISPER_FOREIGN 255 128 255 N
+WHISPER_INFORM 255 128 255 Y
+EMOTE 255 128 64 Y
+TEXT_EMOTE 255 128 64 Y
+MONSTER_SAY 255 255 159 N
+MONSTER_PARTY 170 170 255 Y
+MONSTER_YELL 255 64 64 N
+MONSTER_WHISPER 255 181 235 N
+MONSTER_EMOTE 255 128 64 N
+CHANNEL 255 192 192 N
+CHANNEL_JOIN 192 128 128 N
+CHANNEL_LEAVE 192 128 128 N
+CHANNEL_LIST 192 128 128 N
+CHANNEL_NOTICE 192 192 192 N
+CHANNEL_NOTICE_USER 192 192 192 N
+AFK 255 128 255 Y
+DND 255 128 255 Y
+IGNORED 255 0 0 N
+SKILL 85 85 255 N
+LOOT 0 170 0 N
+MONEY 255 255 0 N
+OPENING 128 128 255 N
+TRADESKILLS 255 255 255 N
+PET_INFO 128 128 255 N
+COMBAT_MISC_INFO 128 128 255 N
+COMBAT_XP_GAIN 111 111 255 N
+COMBAT_HONOR_GAIN 224 202 10 N
+COMBAT_FACTION_CHANGE 128 128 255 N
+BG_SYSTEM_NEUTRAL 255 120 10 N
+BG_SYSTEM_ALLIANCE 0 174 239 N
+BG_SYSTEM_HORDE 255 0 0 N
+RAID_LEADER 255 72 9 Y
+RAID_WARNING 255 72 0 Y
+RAID_BOSS_EMOTE 255 221 0 N
+RAID_BOSS_WHISPER 255 221 0 N
+FILTERED 255 0 0 N
+RESTRICTED 255 0 0 N
+BATTLENET 255 255 255 N
+ACHIEVEMENT 255 255 0 Y
+GUILD_ACHIEVEMENT 64 255 64 Y
+ARENA_POINTS 255 255 255 N
+PARTY_LEADER 118 200 255 Y
+TARGETICONS 255 255 0 N
+BN_WHISPER 0 255 246 N
+BN_WHISPER_INFORM 0 255 246 N
+BN_INLINE_TOAST_ALERT 130 197 255 N
+BN_INLINE_TOAST_BROADCAST 130 197 255 N
+BN_INLINE_TOAST_BROADCAST_INFORM 130 197 255 N
+BN_INLINE_TOAST_CONVERSATION 130 197 255 N
+BN_WHISPER_PLAYER_OFFLINE 255 255 0 N
+CURRENCY 0 170 0 N
+QUEST_BOSS_EMOTE 255 128 64 N
+PET_BATTLE_COMBAT_LOG 231 222 171 N
+PET_BATTLE_INFO 225 222 93 N
+INSTANCE_CHAT 255 127 0 Y
+INSTANCE_CHAT_LEADER 255 72 9 Y
+GUILD_ITEM_LOOTED 64 255 64 Y
+COMMUNITIES_CHANNEL 255 192 192 Y
+VOICE_TEXT 158 255 252 N
+CHANNEL1 195 230 232 Y
+CHANNEL2 232 158 121 Y
+CHANNEL3 232 228 121 Y
+CHANNEL4 255 192 192 Y
+CHANNEL5 255 192 192 Y
+CHANNEL6 255 192 192 Y
+CHANNEL7 255 192 192 Y
+CHANNEL8 255 192 192 Y
+CHANNEL9 255 192 192 Y
+CHANNEL10 255 192 192 Y
+CHANNEL11 255 192 192 Y
+CHANNEL12 255 192 192 Y
+CHANNEL13 255 192 192 Y
+CHANNEL14 255 192 192 Y
+CHANNEL15 255 192 192 Y
+CHANNEL16 255 192 192 Y
+CHANNEL17 255 192 192 Y
+CHANNEL18 255 192 192 Y
+CHANNEL19 255 192 192 Y
+CHANNEL20 255 192 192 Y
+END
+
+WINDOW 1
+NAME General
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 1
+SHOWN 1
+POSITION BOTTOMLEFT 0.001953 0.019444
+DIMENSIONS 465.000031 189.000015
+
+MESSAGES
+SYSTEM
+SYSTEM_NOMENU
+SAY
+EMOTE
+YELL
+WHISPER
+PARTY
+PARTY_LEADER
+RAID
+RAID_LEADER
+RAID_WARNING
+GUILD
+OFFICER
+MONSTER_SAY
+MONSTER_YELL
+MONSTER_EMOTE
+MONSTER_WHISPER
+MONSTER_BOSS_EMOTE
+MONSTER_BOSS_WHISPER
+ERRORS
+AFK
+DND
+IGNORED
+BG_HORDE
+BG_ALLIANCE
+BG_NEUTRAL
+CHANNEL
+ACHIEVEMENT
+GUILD_ACHIEVEMENT
+BN_WHISPER
+BN_WHISPER_INFORM
+BN_CONVERSATION
+BN_INLINE_TOAST_ALERT
+BN_WHISPER_PLAYER_OFFLINE
+INSTANCE_CHAT
+INSTANCE_CHAT_LEADER
+GUILD_ITEM_LOOTED
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 2231237607425
+
+END
+
+WINDOW 2
+NAME Log
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 2
+SHOWN 0
+POSITION BOTTOMLEFT 0.003906 0.025694
+DIMENSIONS 402.000031 124.000000
+
+MESSAGES
+OPENING
+TRADESKILLS
+PET_INFO
+COMBAT_XP_GAIN
+COMBAT_HONOR_GAIN
+COMBAT_MISC_INFO
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 3
+NAME Voice
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.003906 0.025694
+DIMENSIONS 402.000031 148.000000
+
+MESSAGES
+VOICE_TEXT
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 4
+NAME Loot / Trade
+SIZE 12
+COLOR 0 0 0 63
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 3
+SHOWN 0
+POSITION BOTTOMLEFT 0.002344 0.022917
+DIMENSIONS 465.000031 195.000000
+
+MESSAGES
+COMBAT_FACTION_CHANGE
+SKILL
+LOOT
+MONEY
+CURRENCY
+COMBAT_XP_GAIN
+COMBAT_HONOR_GAIN
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 2
+
+END
+
+WINDOW 5
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 6
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 7
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 8
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 9
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 10
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+
+11/28 18:15:51.709  Data Type 8: Server Save Time 1666751578, Local Save Time 1666751578
+11/28 18:15:51.709  Loading Data From File: Type 8
+11/28 18:15:51.741  Data: 1
+15
+13838085560549248255
+0
+1
+0
+100
+
+11/28 18:15:51.741  Data Type 9: Server Save Time 1666751578, Local Save Time 1666751578
+11/28 18:15:51.741  Loading Data From File: Type 9
+11/28 18:15:51.773  Data: 1
+1
+15
+13838085560549248255
+0
+1
+0
+100
+
+11/28 18:15:51.773  Data Type 11: Server Save Time 1666751577, Local Save Time 1666751577
+11/28 18:15:51.773  Loading Data From File: Type 11
+11/28 18:15:51.773  Data: 1
+11/28 18:15:51.773  Data Type 12: Server Save Time 1666751578, Local Save Time 1666751578
+11/28 18:15:51.773  Loading Data From File: Type 12
+11/28 18:15:51.773  Data: 1
+0
+0
+1 0 3 1
+4 0 3 2
+END
+
+11/28 18:15:51.773  Data Type 13: Server Save Time 1669306675, Local Save Time 1669306675
+11/28 18:15:51.773  Loading Data From File: Type 13
+11/28 18:15:51.773  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+11/28 18:15:51.773  Data Type 14: Server Save Time 1666751578, Local Save Time 1666751578
+11/28 18:15:51.773  Loading Data From File: Type 14
+11/28 18:15:51.773  Data: 0 0 0 0 0 0
+11/28 18:49:03.905  -----AccountData_Destroy: Character-----
+11/28 18:54:06.617  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+11/28 18:54:38.334  -----AccountData_Initialize: Account Wide-----
+11/28 18:54:38.380  Received Server Save Times
+11/28 18:54:38.380  Data Type 0: Server Save Time 1669677349, Local Save Time 1669677349
+11/28 18:54:38.380  Loading Data From File: Type 0
+11/28 18:54:38.380  Data: SET cameraDistanceMaxZoomFactor "2.6"
+SET cameraZoomSpeed "29"
+SET toyBoxExpansionFilters ""
+SET cameraSmoothTimeMax "5"
+SET combinedBags "1"
+SET statusTextDisplay "BOTH"
+SET wholeChatWindowClickable "0"
+SET findYourselfMode "1"
+SET showTutorials "0"
+SET UnitNameNonCombatCreatureName "1"
+SET timeMgrAlarmMessage "Brewfest"
+SET flaggedTutorials "v11##$##]##[##+##G##%##-##'##5##.##(##Z##E##K##8##)##;##,##6##:##O##N##D##?##^##`##@##I##F##A##B##=##9##J##3##L##Y##_##C##>##<##V"
+SET auctionDisplayOnCharacter "1"
+SET profanityFilter "0"
+SET talentFrameShown "1"
+SET xpBarText "1"
+SET cameraPitchE "27.400265"
+SET mountJournalGeneralFilters "7"
+SET petJournalTab "3"
+SET cameraWaterCollision "1"
+SET alwaysShowActionBars "1"
+SET cameraYawE "0.000000"
+SET Outline "3"
+SET mountJournalSourcesFilter "2031"
+SET removeChatDelay "1"
+SET pendingInviteInfoShown "1"
+SET toyBoxSourceFilters ""
+SET PushToTalkSound "1"
+SET mountJournalTypeFilter "15"
+SET petJournalFilters ""
+SET addFriendInfoShown "1"
+SET closedInfoFramesAccountWide "C"
+SET toyBoxCollectedFilters ""
+SET floatingCombatTextCombatDamage "0"
+SET timeMgrUseLocalTime "1"
+SET advJournalLastOpened "1669677481"
+SET actionedAdventureJournalEntries "v"
+SET showNPETutorials "0"
+SET UnitNameNPC "1"
+SET petJournalSort "1"
+SET AllowDangerousScripts "1"
+SET timeMgrAlarmTime "1080"
+SET cameraView "1"
+SET statusText "1"
+SET UnitNameHostleNPC "0"
+SET threatShowNumeric "1"
+SET floatingCombatTextCombatHealing "0"
+SET cameraDistanceE "15.336007"
+SET violenceLevel "5"
+SET UnitNameOwn "1"
+SET autoOpenLootHistory "1"
+SET whisperMode "inline"
+SET SoftTargetInteract "3"
+SET alwaysCompareItems "1"
+SET CameraKeepCharacterCentered "0"
+SET chatStyle "classic"
+SET softTargettingInteractKeySound "1"
+SET enableTwitter "1"
+SET cameraSmoothStyle "0"
+
+11/28 18:54:38.380  Data Type 10: Server Save Time 1666751577, Local Save Time 1666751577
+11/28 18:54:38.380  Loading Data From File: Type 10
+11/28 18:54:38.380  Data: 1
+11/28 18:54:46.409  -----AccountData_Initialize: Character-----
+11/28 18:55:17.846  Received Server Save Times
+11/28 18:55:17.846  Data Type 1: Server Save Time 1669677349, Local Save Time 1669677349
+11/28 18:55:17.846  Loading Data From File: Type 1
+11/28 18:55:18.214  Data: SET pvpSelectedRoles "8"
+SET lastGarrisonMissionTutorial "8"
+SET latestSplashScreen "49"
+SET autoQuestPopUps "v11"
+SET talentPointsSpent "1"
+SET showArenaEnemyFrames "0"
+SET cameraSavedPitch "17.799831"
+SET lastTransmogOutfitIDSpec2 "8"
+SET nameplateSelfScale "1"
+SET minimapTrackedInfov3 "1007343"
+SET EJLootClass "0"
+SET nameplateSelectedScale "1"
+SET EJRaidDifficulty "14"
+SET nameplateSelfAlpha "1"
+SET showTamers "0"
+SET soulbindsViewedTutorial "@x"
+SET trackedProfessionRecipes "v11"
+SET orderHallMissionTutorial "983044"
+SET splashScreenNormal "19"
+SET savedClassConfigOne "923098"
+SET lfGuildSettings "591"
+SET nameplateMotion "1"
+SET NameplatePersonalHideDelayAlpha "1"
+SET lastTransmogOutfitIDSpec1 "8"
+SET newPvpSeason "33"
+SET hardTrackedWorldQuests "v11"
+SET nameplateShowFriendlyNPCs "1"
+SET currencyCategoriesCollapsed "v11"
+SET EJDungeonDifficulty "1"
+SET NamePlateHorizontalScale "1"
+SET shipyardMissionTutorialAreaBuff "1"
+SET nameplateMaxDistance "40"
+SET NamePlateClassificationScale "1"
+SET hardTrackedQuests "v11(9}(a8%s5&bx(b@"
+SET NameplatePersonalShowWithTarget "1"
+SET lastRenownForCovenant2 "80"
+SET NameplatePersonalHideDelaySeconds "2"
+SET trackedQuests "v11'`_(5@(9~(9(Lj(S5)Rz)^9)^t*G/*Ul*d_+-o"
+SET newMythicPlusSeason "7"
+SET EJSelectedTier "505"
+SET nameplateSelectedAlpha "1"
+SET dangerousShipyardMissionWarningAlreadyShown "1"
+SET cameraSavedVehicleDistance "47.834171"
+SET shipyardMissionTutorialFirst "1"
+SET lfgSelectedRoles "8"
+SET lastVoidStorageTutorial "3"
+SET guildRosterView "reputation"
+SET soulbindsActivatedTutorial "@H"
+SET shipyardMissionTutorialBlockade "1"
+SET cameraSavedDistance "7.419004"
+SET nameplateMaxScaleDistance "40"
+SET autoLootDefault "1"
+SET nameplateMinScaleDistance "0"
+SET minimapZoom "5"
+SET nameplateTargetBehindMaxDistance "40"
+SET trackedWorldQuests "v11"
+SET minimapShapeshiftTracking "v11"
+SET closedInfoFrames "ceiwezQzG^SO}[t@D"
+SET showTokenFrame "1"
+SET reputationsCollapsed "v11#-)"
+SET nameplateShowEnemyTotems "1"
+SET closedExtraAbiltyTutorials "FkUpz@_DD"
+SET nameplateGlobalScale "1"
+SET covenantMissionTutorial "K@H@@B@@@@@@@@@@@@@@@B@@@@@@@@@@@@@@@@@@@@H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@B@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@H"
+SET missingTransmogSourceInItemTooltips "1"
+SET cameraSavedPetBattleDistance "15.000"
+SET splashScreenSeason "4"
+SET NamePlateVerticalScale "1"
+SET clubFinderPlayerSettings "262145"
+SET nameplateMinAlpha "1"
+SET lfdSelectedDungeons "@@@@PD@@@@@@@@@@@@@@@@`@@@@@@@A@@@A@@@@@@@@@@@A@@@@@@zOPP@@@@@@@@@@@@@@@H@@@@@@@@@@@A@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@P@@@@@@@@@@@`E"
+SET lastSelectedClubId "2167761"
+SET nameplateMaxScale "1"
+SET nameplateMinScale "1"
+SET nameplateMaxAlpha "1"
+SET soulbindsLandingPageTutorial "1"
+SET nameplateShowAll "1"
+SET lastTransmogOutfitIDSpec3 "8"
+SET nameplateLargerScale "1"
+SET lfdCollapsedHeaders "@@@@@@@@@H@@@@@@@@@@@@@@@@@L"
+SET trackedAchievements "v11#j,#in$Vw"
+SET activeCUFProfile "Primary"
+SET mapFade "0"
+SET nameplateShowSelf "0"
+SET SoftTargetEnemy "3"
+SET nameplateShowEnemyPets "1"
+
+11/28 18:55:18.214  Data Type 2: Server Save Time 1648401569, Local Save Time 1648401569
+11/28 18:55:18.214  Loading Data From File: Type 2
+11/28 18:55:18.214  Data: bind A STRAFELEFT
+bind D STRAFERIGHT
+bind Q ACTIONBUTTON5
+bind E ACTIONBUTTON6
+bind 5 ACTIONBUTTON7
+bind 6 ACTIONBUTTON8
+bind 7 ACTIONBUTTON9
+bind 8 ACTIONBUTTON10
+bind 9 ACTIONBUTTON11
+bind 0 ACTIONBUTTON12
+bind - NONE
+bind = NONE
+bind [ PAWN_COMPARE_LEFT
+bind ] PAWN_COMPARE_RIGHT
+bind CTRL-SHIFT-I CLICK WoWPro_FauxItemButton:LeftButton
+bind CTRL-SHIFT-T CLICK WoWPro_FauxTargetButton:LeftButton
+
+11/28 18:55:18.214  Data Type 3: Server Save Time 1666834907, Local Save Time 1666834907
+11/28 18:55:18.214  Loading Data From File: Type 3
+11/28 18:55:18.218  Data: bind A STRAFELEFT
+bind D STRAFERIGHT
+bind Q ACTIONBUTTON5
+bind E ACTIONBUTTON6
+bind 5 ACTIONBUTTON7
+bind 6 ACTIONBUTTON8
+bind 7 ACTIONBUTTON9
+bind 8 ACTIONBUTTON10
+bind 9 ACTIONBUTTON11
+bind 0 ACTIONBUTTON12
+bind - MULTIACTIONBAR1BUTTON8
+bind = MULTIACTIONBAR1BUTTON7
+bind [ PAWN_COMPARE_LEFT
+bind ] PAWN_COMPARE_RIGHT
+bind ALT-X NONE
+bind CTRL-SHIFT-I CLICK WoWPro_FauxItemButton:LeftButton
+bind CTRL-SHIFT-T CLICK WoWPro_FauxTargetButton:LeftButton
+
+11/28 18:55:18.218  Data Type 4: Server Save Time 1669677349, Local Save Time 1669677349
+11/28 18:55:18.218  Loading Data From File: Type 4
+11/28 18:55:18.218  Data: VER 3 000000000000002E " " "INV_MISC_QUESTIONMARK"
+#showtooltip item:165670
+/run if not InCombatLockdown() then RHT.b:SetAttribute("item","Peddlefeet's Lovely Hearthstone") end
+/click RHTB
+END
+VER 3 0000000000000022 "AAP_MACRO" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/click ExtraActionButton1
+END
+VER 3 0000000000000019 "CollectMeRC" "INV_PET_BABYBLIZZARDBEAR"
+/cm rc
+END
+VER 3 0000000000000007 "CollectMeRM" "ABILITY_MOUNT_BIGBLIZZARDBEAR"
+/cm rm
+END
+VER 3 0000000000000004 "Everybody Dance" "ABILITY_WARRIOR_RALLYINGCRY"
+/y Everybody, dance now!
+/dance
+END
+VER 3 000000000000002F "FishingBuddy" "INV_Fishingpole_02"
+#showtooltip Fishing
+/fb macro
+/stopcasting
+/cast Fishing
+END
+VER 3 0000000000000034 "fleetfoot" "136103"
+/cleartarget
+/tar OOX-Fleetfoot/MG 
+/cleartarget [dead]
+/stopmacro [noexists]
+/run PlaySound(12867); SetRaidTarget("target", 01); print(date().." "..UnitName("target"));
+/point
+END
+VER 3 0000000000000030 "FrightenedKodo" "132366"
+/cleartarget
+/tar Frightened Kodo
+/stopmacro [noexists]
+/script PlaySound(8959)
+/run RaidNotice_AddMessage(RaidBossEmoteFrame,"Frightened Kodo!", ChatTypeInfo["RAID_WARNING"])
+END
+VER 3 000000000000001D "Heroic Leap Spam" "ABILITY_HEROICLEAP"
+#showtooltip Heroic Leap
+/cast !Heroic Leap
+END
+VER 3 0000000000000031 "paper" "INV_MISC_QUESTIONMARK"
+/target Paper
+END
+VER 3 000000000000001C "Rage" "ABILITY_WARRIOR_CHARGE"
+/cast Charge
+/cast Rend
+END
+VER 3 0000000000000032 "raidannoufabious" "413588"
+/cleartarget
+/tar Fabious
+/stopmacro [noexists]
+/run local mp = C_Map.GetPlayerMapPosition(C_Map.GetBestMapForUnit("player"), "player"); SendChatMessage("%t is at " .. tostring(floor(mp.x * 100)) .. ", " .. tostring(floor(mp.y * 100)), "RAID")
+END
+VER 3 0000000000000033 "rockweed" "132101"
+/cleartarget
+/tar Lost Algan
+/tar Wayward Algan
+/tar Rockweed Shambler
+/cleartarget [dead]
+/stopmacro [noexists]
+/run PlaySound(12867); SetRaidTarget("target", 01); print(date().." "..UnitName("target"));
+/point
+END
+VER 3 0000000000000035 "scarab count" "132184"
+/run local t,c="Swarm Scarab",0 for i=1,10000 do local p=C_NamePlate.GetNamePlateForUnit("nameplate"..i) if p and p:IsVisible() and p:GetChildren():GetRegions():GetText()==t then c=c+1 end end print(t,":",c) 
+END
+VER 3 000000000000000C "SilverDragon" "ABILITY_HUNTER_SNIPERTRAINING"
+/click SilverDragonMacroButton
+END
+VER 3 000000000000002D "SummonRandomPet" "132142"
+/click PetJournalSummonRandomFavoritePetButton
+END
+VER 3 000000000000001E "Swifty Macro" "SPELL_FROST_ARCTICWINDS"
+/cast Recklessness
+/cast Blood Fury
+/cast Bloodbath
+/cast Avatar
+/cast Malevolent Gladiator's Badge of Victory
+END
+VER 3 000000000000002C "TSMMacro" "Achievement_Faction_GoldenLotus"
+/click TSMVendoringSellAllButton
+END
+
+11/28 18:55:18.218  Data Type 5: Server Save Time 1666751577, Local Save Time 1666751577
+11/28 18:55:18.218  Loading Data From File: Type 5
+11/28 18:55:18.218  Data: VER 3 0100000000000001 "VuhDoDCShieldData" "Ability_Repair"
+P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1WM[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000002 "VuhDoDCShieldNames" "Ability_Repair"
+N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Sha[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+
+11/28 18:55:18.218  Data Type 6: Server Save Time 0, Local Save Time 1669677349
+11/28 18:55:18.218  Loading Data From File: Type 6
+11/28 18:55:18.218  Data: Version: 1
+Frame: WorldQuestTrackerFinderFrame
+FrameLevel: 1
+Anchor: TOP
+X: 406
+Y: -3
+W: 240
+H: 116
+Frame: AllTheThings-Window-CurrentInstance
+FrameLevel: 1
+Anchor: LEFT
+X: 0
+Y: -74
+W: 301
+H: 298
+Frame: DressUpFrame
+FrameLevel: 1
+Anchor: CENTER
+X: -117
+Y: 57
+W: 951
+H: 1152
+Frame: PlayerPowerBarAlt
+FrameLevel: 2
+Anchor: BOTTOM
+X: 0
+Y: 90
+W: 10
+H: 10
+Frame: SpellBookFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 550
+H: 525
+Frame: TradeFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 344
+H: 446
+Frame: ItemTextFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 19
+Y: -117
+W: 338
+H: 424
+Frame: BankFrame
+FrameLevel: 2
+Anchor: BOTTOM
+X: 0
+Y: 0
+W: 386
+H: 415
+Frame: FriendsFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 338
+H: 424
+Frame: ColorPickerFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 365
+H: 240
+Frame: PVEFrame
+FrameLevel: 1
+Anchor: LEFT
+X: 312
+Y: 130
+W: 563
+H: 428
+Frame: LootHistoryFrame
+FrameLevel: 1
+Anchor: BOTTOMRIGHT
+X: -476
+Y: 50
+W: 210
+H: 636
+Frame: AllTheThings-Window-Prime
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 425
+H: 305
+Frame: AllTheThings-Window-Bounty
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 300
+H: 300
+Frame: AllTheThings-Window-RaidAssistant
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 299
+H: 300
+Frame: AllTheThings-Window-WorldQuests
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 299
+H: 300
+Frame: MAOptions
+FrameLevel: 1
+Anchor: LEFT
+X: 455
+Y: 66
+W: 497
+H: 513
+Frame: PawnUIFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 800
+H: 525
+Frame: RareShare_RareFrame
+FrameLevel: 1
+Anchor: TOP
+X: -1
+Y: -23
+W: 200
+H: 80
+Frame: TooltipMover
+FrameLevel: 402
+Anchor: BOTTOMRIGHT
+X: 0
+Y: 0
+W: 130
+H: 20
+Frame: AllTheThings-Window-Unsorted
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 300
+H: 300
+Frame: SplashFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 60
+W: 882
+H: 584
+Frame: GarrisonLandingPage
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 21
+Y: -108
+W: 830
+H: 538
+Frame: scanner_button
+FrameLevel: 200
+Anchor: LEFT
+X: 213
+Y: 69
+W: 200
+H: 50
+Frame: WorldMapFrame
+FrameLevel: 1
+Anchor: TOP
+X: -236
+Y: -137
+W: 992
+H: 534
+Frame: GossipFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 1
+H: 1
+Frame: ExtraAbilityContainer
+FrameLevel: 70
+Anchor: TOP
+X: 0
+Y: -135
+W: 250
+H: 120
+Frame: CharacterFrame
+FrameLevel: 1
+Anchor: TOP
+X: -4
+Y: -43
+W: 448
+H: 444
+Frame: MailFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 338
+H: 424
+Frame: SettingsPanel
+FrameLevel: 1
+Anchor: TOP
+X: 2
+Y: -118
+W: 920
+H: 724
+Frame: GameMenuFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 2
+Y: 2
+W: 195
+H: 400
+
+11/28 18:55:18.218  Data Type 7: Server Save Time 1666751578, Local Save Time 1666751578
+11/28 18:55:18.218  Loading Data From File: Type 7
+11/28 18:55:18.235  Data: VERSION 9
+
+ADDEDVERSION 25
+
+CHANNELS
+1 0 1 1
+2 0 2 1
+22 0 3 1
+26 0 4 1
+42 0 5 1
+END
+
+ZONECHANNELS 0
+
+COLORS
+
+SYSTEM 255 255 0 N
+SAY 255 255 255 Y
+PARTY 170 170 255 Y
+RAID 255 127 0 Y
+GUILD 64 255 64 Y
+OFFICER 64 192 64 Y
+YELL 255 64 64 Y
+WHISPER 255 128 255 Y
+WHISPER_FOREIGN 255 128 255 N
+WHISPER_INFORM 255 128 255 Y
+EMOTE 255 128 64 Y
+TEXT_EMOTE 255 128 64 Y
+MONSTER_SAY 255 255 159 N
+MONSTER_PARTY 170 170 255 Y
+MONSTER_YELL 255 64 64 N
+MONSTER_WHISPER 255 181 235 N
+MONSTER_EMOTE 255 128 64 N
+CHANNEL 255 192 192 N
+CHANNEL_JOIN 192 128 128 N
+CHANNEL_LEAVE 192 128 128 N
+CHANNEL_LIST 192 128 128 N
+CHANNEL_NOTICE 192 192 192 N
+CHANNEL_NOTICE_USER 192 192 192 N
+AFK 255 128 255 Y
+DND 255 128 255 Y
+IGNORED 255 0 0 N
+SKILL 85 85 255 N
+LOOT 0 170 0 N
+MONEY 255 255 0 N
+OPENING 128 128 255 N
+TRADESKILLS 255 255 255 N
+PET_INFO 128 128 255 N
+COMBAT_MISC_INFO 128 128 255 N
+COMBAT_XP_GAIN 111 111 255 N
+COMBAT_HONOR_GAIN 224 202 10 N
+COMBAT_FACTION_CHANGE 128 128 255 N
+BG_SYSTEM_NEUTRAL 255 120 10 N
+BG_SYSTEM_ALLIANCE 0 174 239 N
+BG_SYSTEM_HORDE 255 0 0 N
+RAID_LEADER 255 72 9 Y
+RAID_WARNING 255 72 0 Y
+RAID_BOSS_EMOTE 255 221 0 N
+RAID_BOSS_WHISPER 255 221 0 N
+FILTERED 255 0 0 N
+RESTRICTED 255 0 0 N
+BATTLENET 255 255 255 N
+ACHIEVEMENT 255 255 0 Y
+GUILD_ACHIEVEMENT 64 255 64 Y
+ARENA_POINTS 255 255 255 N
+PARTY_LEADER 118 200 255 Y
+TARGETICONS 255 255 0 N
+BN_WHISPER 0 255 246 N
+BN_WHISPER_INFORM 0 255 246 N
+BN_INLINE_TOAST_ALERT 130 197 255 N
+BN_INLINE_TOAST_BROADCAST 130 197 255 N
+BN_INLINE_TOAST_BROADCAST_INFORM 130 197 255 N
+BN_INLINE_TOAST_CONVERSATION 130 197 255 N
+BN_WHISPER_PLAYER_OFFLINE 255 255 0 N
+CURRENCY 0 170 0 N
+QUEST_BOSS_EMOTE 255 128 64 N
+PET_BATTLE_COMBAT_LOG 231 222 171 N
+PET_BATTLE_INFO 225 222 93 N
+INSTANCE_CHAT 255 127 0 Y
+INSTANCE_CHAT_LEADER 255 72 9 Y
+GUILD_ITEM_LOOTED 64 255 64 Y
+COMMUNITIES_CHANNEL 255 192 192 Y
+VOICE_TEXT 158 255 252 N
+CHANNEL1 195 230 232 Y
+CHANNEL2 232 158 121 Y
+CHANNEL3 232 228 121 Y
+CHANNEL4 255 192 192 Y
+CHANNEL5 255 192 192 Y
+CHANNEL6 255 192 192 Y
+CHANNEL7 255 192 192 Y
+CHANNEL8 255 192 192 Y
+CHANNEL9 255 192 192 Y
+CHANNEL10 255 192 192 Y
+CHANNEL11 255 192 192 Y
+CHANNEL12 255 192 192 Y
+CHANNEL13 255 192 192 Y
+CHANNEL14 255 192 192 Y
+CHANNEL15 255 192 192 Y
+CHANNEL16 255 192 192 Y
+CHANNEL17 255 192 192 Y
+CHANNEL18 255 192 192 Y
+CHANNEL19 255 192 192 Y
+CHANNEL20 255 192 192 Y
+END
+
+WINDOW 1
+NAME General
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 1
+SHOWN 1
+POSITION BOTTOMLEFT 0.001953 0.019444
+DIMENSIONS 465.000031 189.000015
+
+MESSAGES
+SYSTEM
+SYSTEM_NOMENU
+SAY
+EMOTE
+YELL
+WHISPER
+PARTY
+PARTY_LEADER
+RAID
+RAID_LEADER
+RAID_WARNING
+GUILD
+OFFICER
+MONSTER_SAY
+MONSTER_YELL
+MONSTER_EMOTE
+MONSTER_WHISPER
+MONSTER_BOSS_EMOTE
+MONSTER_BOSS_WHISPER
+ERRORS
+AFK
+DND
+IGNORED
+BG_HORDE
+BG_ALLIANCE
+BG_NEUTRAL
+CHANNEL
+ACHIEVEMENT
+GUILD_ACHIEVEMENT
+BN_WHISPER
+BN_WHISPER_INFORM
+BN_CONVERSATION
+BN_INLINE_TOAST_ALERT
+BN_WHISPER_PLAYER_OFFLINE
+INSTANCE_CHAT
+INSTANCE_CHAT_LEADER
+GUILD_ITEM_LOOTED
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 2231237607425
+
+END
+
+WINDOW 2
+NAME Log
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 2
+SHOWN 0
+POSITION BOTTOMLEFT 0.003906 0.025694
+DIMENSIONS 402.000031 124.000000
+
+MESSAGES
+OPENING
+TRADESKILLS
+PET_INFO
+COMBAT_XP_GAIN
+COMBAT_HONOR_GAIN
+COMBAT_MISC_INFO
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 3
+NAME Voice
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.003906 0.025694
+DIMENSIONS 402.000031 148.000000
+
+MESSAGES
+VOICE_TEXT
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 4
+NAME Loot / Trade
+SIZE 12
+COLOR 0 0 0 63
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 3
+SHOWN 0
+POSITION BOTTOMLEFT 0.002344 0.022917
+DIMENSIONS 465.000031 195.000000
+
+MESSAGES
+COMBAT_FACTION_CHANGE
+SKILL
+LOOT
+MONEY
+CURRENCY
+COMBAT_XP_GAIN
+COMBAT_HONOR_GAIN
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 2
+
+END
+
+WINDOW 5
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 6
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 7
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 8
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 9
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 10
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+
+11/28 18:55:18.235  Data Type 8: Server Save Time 1666751578, Local Save Time 1666751578
+11/28 18:55:18.235  Loading Data From File: Type 8
+11/28 18:55:18.269  Data: 1
+15
+13838085560549248255
+0
+1
+0
+100
+
+11/28 18:55:18.269  Data Type 9: Server Save Time 1666751578, Local Save Time 1666751578
+11/28 18:55:18.269  Loading Data From File: Type 9
+11/28 18:55:18.302  Data: 1
+1
+15
+13838085560549248255
+0
+1
+0
+100
+
+11/28 18:55:18.302  Data Type 11: Server Save Time 1666751577, Local Save Time 1666751577
+11/28 18:55:18.302  Loading Data From File: Type 11
+11/28 18:55:18.302  Data: 1
+11/28 18:55:18.302  Data Type 12: Server Save Time 1666751578, Local Save Time 1666751578
+11/28 18:55:18.302  Loading Data From File: Type 12
+11/28 18:55:18.302  Data: 1
+0
+0
+1 0 3 1
+4 0 3 2
+END
+
+11/28 18:55:18.302  Data Type 13: Server Save Time 1669306675, Local Save Time 1669306675
+11/28 18:55:18.302  Loading Data From File: Type 13
+11/28 18:55:18.302  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+11/28 18:55:18.302  Data Type 14: Server Save Time 1666751578, Local Save Time 1666751578
+11/28 18:55:18.302  Loading Data From File: Type 14
+11/28 18:55:18.302  Data: 0 0 0 0 0 0
+11/28 19:34:06.963  -----AccountData_Destroy: Character-----
+11/28 21:06:41.817  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+11/28 21:07:10.283  -----AccountData_Initialize: Account Wide-----
+11/28 21:07:10.342  Received Server Save Times
+11/28 21:07:10.342  Data Type 0: Server Save Time 1669679716, Local Save Time 1669679716
+11/28 21:07:10.342  Loading Data From File: Type 0
+11/28 21:07:10.342  Data: SET cameraDistanceMaxZoomFactor "2.6"
+SET cameraZoomSpeed "29"
+SET toyBoxExpansionFilters ""
+SET cameraSmoothTimeMax "5"
+SET combinedBags "1"
+SET statusTextDisplay "BOTH"
+SET wholeChatWindowClickable "0"
+SET findYourselfMode "1"
+SET showTutorials "0"
+SET UnitNameNonCombatCreatureName "1"
+SET timeMgrAlarmMessage "Brewfest"
+SET flaggedTutorials "v11##$##]##[##+##G##%##-##'##5##.##(##Z##E##K##8##)##;##,##6##:##O##N##D##?##^##`##@##I##F##A##B##=##9##J##3##L##Y##_##C##>##<##V"
+SET auctionDisplayOnCharacter "1"
+SET profanityFilter "0"
+SET talentFrameShown "1"
+SET xpBarText "1"
+SET cameraPitchE "27.400265"
+SET mountJournalGeneralFilters "7"
+SET petJournalTab "3"
+SET cameraWaterCollision "1"
+SET alwaysShowActionBars "1"
+SET cameraYawE "0.000000"
+SET Outline "3"
+SET mountJournalSourcesFilter "2031"
+SET removeChatDelay "1"
+SET pendingInviteInfoShown "1"
+SET toyBoxSourceFilters ""
+SET PushToTalkSound "1"
+SET mountJournalTypeFilter "15"
+SET petJournalFilters ""
+SET addFriendInfoShown "1"
+SET closedInfoFramesAccountWide "C"
+SET toyBoxCollectedFilters ""
+SET floatingCombatTextCombatDamage "0"
+SET timeMgrUseLocalTime "1"
+SET advJournalLastOpened "1669679744"
+SET actionedAdventureJournalEntries "v"
+SET showNPETutorials "0"
+SET UnitNameNPC "1"
+SET petJournalSort "1"
+SET AllowDangerousScripts "1"
+SET timeMgrAlarmTime "1080"
+SET cameraView "1"
+SET statusText "1"
+SET UnitNameHostleNPC "0"
+SET threatShowNumeric "1"
+SET floatingCombatTextCombatHealing "0"
+SET cameraDistanceE "15.336007"
+SET violenceLevel "5"
+SET UnitNameOwn "1"
+SET autoOpenLootHistory "1"
+SET whisperMode "inline"
+SET SoftTargetInteract "3"
+SET alwaysCompareItems "1"
+SET CameraKeepCharacterCentered "0"
+SET chatStyle "classic"
+SET softTargettingInteractKeySound "1"
+SET enableTwitter "1"
+SET cameraSmoothStyle "0"
+
+11/28 21:07:10.342  Data Type 10: Server Save Time 1666751577, Local Save Time 1666751577
+11/28 21:07:10.342  Loading Data From File: Type 10
+11/28 21:07:10.342  Data: 1
+11/28 21:07:23.228  -----AccountData_Initialize: Character-----
+11/28 21:07:52.771  Received Server Save Times
+11/28 21:07:52.771  Data Type 1: Server Save Time 1669679716, Local Save Time 1669679716
+11/28 21:07:52.771  Loading Data From File: Type 1
+11/28 21:07:53.126  Data: SET pvpSelectedRoles "8"
+SET lastGarrisonMissionTutorial "8"
+SET latestSplashScreen "49"
+SET autoQuestPopUps "v11"
+SET talentPointsSpent "1"
+SET showArenaEnemyFrames "0"
+SET cameraSavedPitch "44.049866"
+SET lastTransmogOutfitIDSpec2 "8"
+SET nameplateSelfScale "1"
+SET minimapTrackedInfov3 "1007343"
+SET EJLootClass "0"
+SET nameplateSelectedScale "1"
+SET EJRaidDifficulty "14"
+SET nameplateSelfAlpha "1"
+SET showTamers "0"
+SET soulbindsViewedTutorial "@x"
+SET trackedProfessionRecipes "v11"
+SET orderHallMissionTutorial "983044"
+SET splashScreenNormal "19"
+SET savedClassConfigOne "923098"
+SET lfGuildSettings "591"
+SET nameplateMotion "1"
+SET NameplatePersonalHideDelayAlpha "1"
+SET lastTransmogOutfitIDSpec1 "8"
+SET newPvpSeason "33"
+SET hardTrackedWorldQuests "v11"
+SET nameplateShowFriendlyNPCs "1"
+SET currencyCategoriesCollapsed "v11"
+SET EJDungeonDifficulty "1"
+SET NamePlateHorizontalScale "1"
+SET shipyardMissionTutorialAreaBuff "1"
+SET nameplateMaxDistance "40"
+SET NamePlateClassificationScale "1"
+SET hardTrackedQuests "v11(9}(a8%s5&bx(b@"
+SET NameplatePersonalShowWithTarget "1"
+SET lastRenownForCovenant2 "80"
+SET NameplatePersonalHideDelaySeconds "2"
+SET trackedQuests "v11+-o'`_(5@(9~(9(Lj(S5)Rz)^9)^t*G/*Ul*d_"
+SET newMythicPlusSeason "7"
+SET EJSelectedTier "505"
+SET nameplateSelectedAlpha "1"
+SET dangerousShipyardMissionWarningAlreadyShown "1"
+SET cameraSavedVehicleDistance "47.834171"
+SET shipyardMissionTutorialFirst "1"
+SET lfgSelectedRoles "8"
+SET lastVoidStorageTutorial "3"
+SET guildRosterView "reputation"
+SET soulbindsActivatedTutorial "@H"
+SET shipyardMissionTutorialBlockade "1"
+SET cameraSavedDistance "20.179152"
+SET nameplateMaxScaleDistance "40"
+SET autoLootDefault "1"
+SET nameplateMinScaleDistance "0"
+SET minimapZoom "5"
+SET nameplateTargetBehindMaxDistance "40"
+SET trackedWorldQuests "v11"
+SET minimapShapeshiftTracking "v11"
+SET closedInfoFrames "ceiwezQzG^SO}[t@D"
+SET showTokenFrame "1"
+SET reputationsCollapsed "v11#-)"
+SET nameplateShowEnemyTotems "1"
+SET closedExtraAbiltyTutorials "FkUpz@_DD"
+SET nameplateGlobalScale "1"
+SET covenantMissionTutorial "K@H@@B@@@@@@@@@@@@@@@B@@@@@@@@@@@@@@@@@@@@H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@B@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@H"
+SET missingTransmogSourceInItemTooltips "1"
+SET cameraSavedPetBattleDistance "15.000"
+SET splashScreenSeason "4"
+SET NamePlateVerticalScale "1"
+SET clubFinderPlayerSettings "262145"
+SET nameplateMinAlpha "1"
+SET lfdSelectedDungeons "@@@@PD@@@@@@@@@@@@@@@@`@@@@@@@A@@@A@@@@@@@@@@@A@@@@@@zOPP@@@@@@@@@@@@@@@H@@@@@@@@@@@A@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@P@@@@@@@@@@@`E"
+SET lastSelectedClubId "2167761"
+SET nameplateMaxScale "1"
+SET nameplateMinScale "1"
+SET nameplateMaxAlpha "1"
+SET soulbindsLandingPageTutorial "1"
+SET nameplateShowAll "1"
+SET lastTransmogOutfitIDSpec3 "8"
+SET nameplateLargerScale "1"
+SET lfdCollapsedHeaders "@@@@@@@@@H@@@@@@@@@@@@@@@@@L"
+SET trackedAchievements "v11#j,#in$Vw"
+SET activeCUFProfile "Primary"
+SET mapFade "0"
+SET nameplateShowSelf "0"
+SET SoftTargetEnemy "3"
+SET nameplateShowEnemyPets "1"
+
+11/28 21:07:53.126  Data Type 2: Server Save Time 1648401569, Local Save Time 1648401569
+11/28 21:07:53.126  Loading Data From File: Type 2
+11/28 21:07:53.126  Data: bind A STRAFELEFT
+bind D STRAFERIGHT
+bind Q ACTIONBUTTON5
+bind E ACTIONBUTTON6
+bind 5 ACTIONBUTTON7
+bind 6 ACTIONBUTTON8
+bind 7 ACTIONBUTTON9
+bind 8 ACTIONBUTTON10
+bind 9 ACTIONBUTTON11
+bind 0 ACTIONBUTTON12
+bind - NONE
+bind = NONE
+bind [ PAWN_COMPARE_LEFT
+bind ] PAWN_COMPARE_RIGHT
+bind CTRL-SHIFT-I CLICK WoWPro_FauxItemButton:LeftButton
+bind CTRL-SHIFT-T CLICK WoWPro_FauxTargetButton:LeftButton
+
+11/28 21:07:53.126  Data Type 3: Server Save Time 1666834907, Local Save Time 1666834907
+11/28 21:07:53.126  Loading Data From File: Type 3
+11/28 21:07:53.126  Data: bind A STRAFELEFT
+bind D STRAFERIGHT
+bind Q ACTIONBUTTON5
+bind E ACTIONBUTTON6
+bind 5 ACTIONBUTTON7
+bind 6 ACTIONBUTTON8
+bind 7 ACTIONBUTTON9
+bind 8 ACTIONBUTTON10
+bind 9 ACTIONBUTTON11
+bind 0 ACTIONBUTTON12
+bind - MULTIACTIONBAR1BUTTON8
+bind = MULTIACTIONBAR1BUTTON7
+bind [ PAWN_COMPARE_LEFT
+bind ] PAWN_COMPARE_RIGHT
+bind ALT-X NONE
+bind CTRL-SHIFT-I CLICK WoWPro_FauxItemButton:LeftButton
+bind CTRL-SHIFT-T CLICK WoWPro_FauxTargetButton:LeftButton
+
+11/28 21:07:53.126  Data Type 4: Server Save Time 1669679716, Local Save Time 1669679716
+11/28 21:07:53.126  Loading Data From File: Type 4
+11/28 21:07:53.131  Data: VER 3 000000000000002E " " "INV_MISC_QUESTIONMARK"
+#showtooltip item:168907
+/run if not InCombatLockdown() then RHT.b:SetAttribute("item","Holographic Digitalization Hearthstone") end
+/click RHTB
+END
+VER 3 0000000000000022 "AAP_MACRO" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/click ExtraActionButton1
+END
+VER 3 0000000000000019 "CollectMeRC" "INV_PET_BABYBLIZZARDBEAR"
+/cm rc
+END
+VER 3 0000000000000007 "CollectMeRM" "ABILITY_MOUNT_BIGBLIZZARDBEAR"
+/cm rm
+END
+VER 3 0000000000000004 "Everybody Dance" "ABILITY_WARRIOR_RALLYINGCRY"
+/y Everybody, dance now!
+/dance
+END
+VER 3 000000000000002F "FishingBuddy" "INV_Fishingpole_02"
+#showtooltip Fishing
+/fb macro
+/stopcasting
+/cast Fishing
+END
+VER 3 0000000000000034 "fleetfoot" "136103"
+/cleartarget
+/tar OOX-Fleetfoot/MG 
+/cleartarget [dead]
+/stopmacro [noexists]
+/run PlaySound(12867); SetRaidTarget("target", 01); print(date().." "..UnitName("target"));
+/point
+END
+VER 3 0000000000000030 "FrightenedKodo" "132366"
+/cleartarget
+/tar Frightened Kodo
+/stopmacro [noexists]
+/script PlaySound(8959)
+/run RaidNotice_AddMessage(RaidBossEmoteFrame,"Frightened Kodo!", ChatTypeInfo["RAID_WARNING"])
+END
+VER 3 000000000000001D "Heroic Leap Spam" "ABILITY_HEROICLEAP"
+#showtooltip Heroic Leap
+/cast !Heroic Leap
+END
+VER 3 0000000000000031 "paper" "INV_MISC_QUESTIONMARK"
+/target Paper
+END
+VER 3 000000000000001C "Rage" "ABILITY_WARRIOR_CHARGE"
+/cast Charge
+/cast Rend
+END
+VER 3 0000000000000032 "raidannoufabious" "413588"
+/cleartarget
+/tar Fabious
+/stopmacro [noexists]
+/run local mp = C_Map.GetPlayerMapPosition(C_Map.GetBestMapForUnit("player"), "player"); SendChatMessage("%t is at " .. tostring(floor(mp.x * 100)) .. ", " .. tostring(floor(mp.y * 100)), "RAID")
+END
+VER 3 0000000000000033 "rockweed" "132101"
+/cleartarget
+/tar Lost Algan
+/tar Wayward Algan
+/tar Rockweed Shambler
+/cleartarget [dead]
+/stopmacro [noexists]
+/run PlaySound(12867); SetRaidTarget("target", 01); print(date().." "..UnitName("target"));
+/point
+END
+VER 3 0000000000000035 "scarab count" "132184"
+/run local t,c="Swarm Scarab",0 for i=1,10000 do local p=C_NamePlate.GetNamePlateForUnit("nameplate"..i) if p and p:IsVisible() and p:GetChildren():GetRegions():GetText()==t then c=c+1 end end print(t,":",c) 
+END
+VER 3 000000000000000C "SilverDragon" "ABILITY_HUNTER_SNIPERTRAINING"
+/click SilverDragonMacroButton
+END
+VER 3 000000000000002D "SummonRandomPet" "132142"
+/click PetJournalSummonRandomFavoritePetButton
+END
+VER 3 000000000000001E "Swifty Macro" "SPELL_FROST_ARCTICWINDS"
+/cast Recklessness
+/cast Blood Fury
+/cast Bloodbath
+/cast Avatar
+/cast Malevolent Gladiator's Badge of Victory
+END
+VER 3 000000000000002C "TSMMacro" "Achievement_Faction_GoldenLotus"
+/click TSMVendoringSellAllButton
+END
+
+11/28 21:07:53.131  Data Type 5: Server Save Time 1666751577, Local Save Time 1666751577
+11/28 21:07:53.131  Loading Data From File: Type 5
+11/28 21:07:53.131  Data: VER 3 0100000000000001 "VuhDoDCShieldData" "Ability_Repair"
+P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1WM[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000002 "VuhDoDCShieldNames" "Ability_Repair"
+N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Sha[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+
+11/28 21:07:53.131  Data Type 6: Server Save Time 0, Local Save Time 1669679716
+11/28 21:07:53.131  Loading Data From File: Type 6
+11/28 21:07:53.131  Data: Version: 1
+Frame: WorldQuestTrackerFinderFrame
+FrameLevel: 1
+Anchor: TOP
+X: 406
+Y: -3
+W: 240
+H: 116
+Frame: AllTheThings-Window-CurrentInstance
+FrameLevel: 1
+Anchor: LEFT
+X: 0
+Y: -74
+W: 301
+H: 298
+Frame: SettingsPanel
+FrameLevel: 1
+Anchor: TOP
+X: 2
+Y: -118
+W: 920
+H: 724
+Frame: DressUpFrame
+FrameLevel: 1
+Anchor: CENTER
+X: -117
+Y: 57
+W: 951
+H: 1152
+Frame: PlayerPowerBarAlt
+FrameLevel: 2
+Anchor: BOTTOM
+X: 0
+Y: 90
+W: 10
+H: 10
+Frame: SpellBookFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 550
+H: 525
+Frame: CharacterFrame
+FrameLevel: 1
+Anchor: TOP
+X: -4
+Y: -43
+W: 444
+H: 444
+Frame: TradeFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 344
+H: 446
+Frame: ItemTextFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 19
+Y: -117
+W: 338
+H: 424
+Frame: BankFrame
+FrameLevel: 2
+Anchor: BOTTOM
+X: 0
+Y: 0
+W: 386
+H: 415
+Frame: FriendsFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 338
+H: 424
+Frame: ColorPickerFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 365
+H: 240
+Frame: GossipFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 1
+H: 1
+Frame: MailFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 338
+H: 424
+Frame: PVEFrame
+FrameLevel: 1
+Anchor: LEFT
+X: 312
+Y: 130
+W: 563
+H: 428
+Frame: LootHistoryFrame
+FrameLevel: 1
+Anchor: BOTTOMRIGHT
+X: -476
+Y: 50
+W: 210
+H: 636
+Frame: SplashFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 60
+W: 882
+H: 584
+Frame: AllTheThings-Window-Prime
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 425
+H: 305
+Frame: AllTheThings-Window-Bounty
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 300
+H: 300
+Frame: AllTheThings-Window-RaidAssistant
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 299
+H: 300
+Frame: AllTheThings-Window-WorldQuests
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 299
+H: 300
+Frame: MAOptions
+FrameLevel: 1
+Anchor: LEFT
+X: 455
+Y: 66
+W: 497
+H: 513
+Frame: PawnUIFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 800
+H: 525
+Frame: scanner_button
+FrameLevel: 200
+Anchor: LEFT
+X: 213
+Y: 69
+W: 200
+H: 50
+Frame: RareShare_RareFrame
+FrameLevel: 1
+Anchor: TOP
+X: -1
+Y: -23
+W: 200
+H: 80
+Frame: TooltipMover
+FrameLevel: 402
+Anchor: BOTTOMRIGHT
+X: 0
+Y: 0
+W: 130
+H: 20
+Frame: AllTheThings-Window-Unsorted
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 300
+H: 300
+Frame: GameMenuFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 2
+Y: 2
+W: 195
+H: 400
+
+11/28 21:07:53.131  Data Type 7: Server Save Time 1666751578, Local Save Time 1666751578
+11/28 21:07:53.131  Loading Data From File: Type 7
+11/28 21:07:53.131  Data: VERSION 9
+
+ADDEDVERSION 25
+
+CHANNELS
+1 0 1 1
+2 0 2 1
+22 0 3 1
+26 0 4 1
+42 0 5 1
+END
+
+ZONECHANNELS 0
+
+COLORS
+
+SYSTEM 255 255 0 N
+SAY 255 255 255 Y
+PARTY 170 170 255 Y
+RAID 255 127 0 Y
+GUILD 64 255 64 Y
+OFFICER 64 192 64 Y
+YELL 255 64 64 Y
+WHISPER 255 128 255 Y
+WHISPER_FOREIGN 255 128 255 N
+WHISPER_INFORM 255 128 255 Y
+EMOTE 255 128 64 Y
+TEXT_EMOTE 255 128 64 Y
+MONSTER_SAY 255 255 159 N
+MONSTER_PARTY 170 170 255 Y
+MONSTER_YELL 255 64 64 N
+MONSTER_WHISPER 255 181 235 N
+MONSTER_EMOTE 255 128 64 N
+CHANNEL 255 192 192 N
+CHANNEL_JOIN 192 128 128 N
+CHANNEL_LEAVE 192 128 128 N
+CHANNEL_LIST 192 128 128 N
+CHANNEL_NOTICE 192 192 192 N
+CHANNEL_NOTICE_USER 192 192 192 N
+AFK 255 128 255 Y
+DND 255 128 255 Y
+IGNORED 255 0 0 N
+SKILL 85 85 255 N
+LOOT 0 170 0 N
+MONEY 255 255 0 N
+OPENING 128 128 255 N
+TRADESKILLS 255 255 255 N
+PET_INFO 128 128 255 N
+COMBAT_MISC_INFO 128 128 255 N
+COMBAT_XP_GAIN 111 111 255 N
+COMBAT_HONOR_GAIN 224 202 10 N
+COMBAT_FACTION_CHANGE 128 128 255 N
+BG_SYSTEM_NEUTRAL 255 120 10 N
+BG_SYSTEM_ALLIANCE 0 174 239 N
+BG_SYSTEM_HORDE 255 0 0 N
+RAID_LEADER 255 72 9 Y
+RAID_WARNING 255 72 0 Y
+RAID_BOSS_EMOTE 255 221 0 N
+RAID_BOSS_WHISPER 255 221 0 N
+FILTERED 255 0 0 N
+RESTRICTED 255 0 0 N
+BATTLENET 255 255 255 N
+ACHIEVEMENT 255 255 0 Y
+GUILD_ACHIEVEMENT 64 255 64 Y
+ARENA_POINTS 255 255 255 N
+PARTY_LEADER 118 200 255 Y
+TARGETICONS 255 255 0 N
+BN_WHISPER 0 255 246 N
+BN_WHISPER_INFORM 0 255 246 N
+BN_INLINE_TOAST_ALERT 130 197 255 N
+BN_INLINE_TOAST_BROADCAST 130 197 255 N
+BN_INLINE_TOAST_BROADCAST_INFORM 130 197 255 N
+BN_INLINE_TOAST_CONVERSATION 130 197 255 N
+BN_WHISPER_PLAYER_OFFLINE 255 255 0 N
+CURRENCY 0 170 0 N
+QUEST_BOSS_EMOTE 255 128 64 N
+PET_BATTLE_COMBAT_LOG 231 222 171 N
+PET_BATTLE_INFO 225 222 93 N
+INSTANCE_CHAT 255 127 0 Y
+INSTANCE_CHAT_LEADER 255 72 9 Y
+GUILD_ITEM_LOOTED 64 255 64 Y
+COMMUNITIES_CHANNEL 255 192 192 Y
+VOICE_TEXT 158 255 252 N
+CHANNEL1 195 230 232 Y
+CHANNEL2 232 158 121 Y
+CHANNEL3 232 228 121 Y
+CHANNEL4 255 192 192 Y
+CHANNEL5 255 192 192 Y
+CHANNEL6 255 192 192 Y
+CHANNEL7 255 192 192 Y
+CHANNEL8 255 192 192 Y
+CHANNEL9 255 192 192 Y
+CHANNEL10 255 192 192 Y
+CHANNEL11 255 192 192 Y
+CHANNEL12 255 192 192 Y
+CHANNEL13 255 192 192 Y
+CHANNEL14 255 192 192 Y
+CHANNEL15 255 192 192 Y
+CHANNEL16 255 192 192 Y
+CHANNEL17 255 192 192 Y
+CHANNEL18 255 192 192 Y
+CHANNEL19 255 192 192 Y
+CHANNEL20 255 192 192 Y
+END
+
+WINDOW 1
+NAME General
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 1
+SHOWN 1
+POSITION BOTTOMLEFT 0.001953 0.019444
+DIMENSIONS 465.000031 189.000015
+
+MESSAGES
+SYSTEM
+SYSTEM_NOMENU
+SAY
+EMOTE
+YELL
+WHISPER
+PARTY
+PARTY_LEADER
+RAID
+RAID_LEADER
+RAID_WARNING
+GUILD
+OFFICER
+MONSTER_SAY
+MONSTER_YELL
+MONSTER_EMOTE
+MONSTER_WHISPER
+MONSTER_BOSS_EMOTE
+MONSTER_BOSS_WHISPER
+ERRORS
+AFK
+DND
+IGNORED
+BG_HORDE
+BG_ALLIANCE
+BG_NEUTRAL
+CHANNEL
+ACHIEVEMENT
+GUILD_ACHIEVEMENT
+BN_WHISPER
+BN_WHISPER_INFORM
+BN_CONVERSATION
+BN_INLINE_TOAST_ALERT
+BN_WHISPER_PLAYER_OFFLINE
+INSTANCE_CHAT
+INSTANCE_CHAT_LEADER
+GUILD_ITEM_LOOTED
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 2231237607425
+
+END
+
+WINDOW 2
+NAME Log
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 2
+SHOWN 0
+POSITION BOTTOMLEFT 0.003906 0.025694
+DIMENSIONS 402.000031 124.000000
+
+MESSAGES
+OPENING
+TRADESKILLS
+PET_INFO
+COMBAT_XP_GAIN
+COMBAT_HONOR_GAIN
+COMBAT_MISC_INFO
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 3
+NAME Voice
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.003906 0.025694
+DIMENSIONS 402.000031 148.000000
+
+MESSAGES
+VOICE_TEXT
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 4
+NAME Loot / Trade
+SIZE 12
+COLOR 0 0 0 63
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 3
+SHOWN 0
+POSITION BOTTOMLEFT 0.002344 0.022917
+DIMENSIONS 465.000031 195.000000
+
+MESSAGES
+COMBAT_FACTION_CHANGE
+SKILL
+LOOT
+MONEY
+CURRENCY
+COMBAT_XP_GAIN
+COMBAT_HONOR_GAIN
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 2
+
+END
+
+WINDOW 5
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 6
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 7
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 8
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 9
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 10
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+
+11/28 21:07:53.131  Data Type 8: Server Save Time 1666751578, Local Save Time 1666751578
+11/28 21:07:53.131  Loading Data From File: Type 8
+11/28 21:07:53.175  Data: 1
+15
+13838085560549248255
+0
+1
+0
+100
+
+11/28 21:07:53.175  Data Type 9: Server Save Time 1666751578, Local Save Time 1666751578
+11/28 21:07:53.175  Loading Data From File: Type 9
+11/28 21:07:53.204  Data: 1
+1
+15
+13838085560549248255
+0
+1
+0
+100
+
+11/28 21:07:53.204  Data Type 11: Server Save Time 1666751577, Local Save Time 1666751577
+11/28 21:07:53.204  Loading Data From File: Type 11
+11/28 21:07:53.204  Data: 1
+11/28 21:07:53.204  Data Type 12: Server Save Time 1666751578, Local Save Time 1666751578
+11/28 21:07:53.204  Loading Data From File: Type 12
+11/28 21:07:53.204  Data: 1
+0
+0
+1 0 3 1
+4 0 3 2
+END
+
+11/28 21:07:53.204  Data Type 13: Server Save Time 1669306675, Local Save Time 1669306675
+11/28 21:07:53.204  Loading Data From File: Type 13
+11/28 21:07:53.204  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+11/28 21:07:53.204  Data Type 14: Server Save Time 1666751578, Local Save Time 1666751578
+11/28 21:07:53.204  Loading Data From File: Type 14
+11/28 21:07:53.204  Data: 0 0 0 0 0 0
+11/28 21:08:51.374  -----AccountData_Destroy: Character-----
+11/28 21:17:51.540  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+11/28 21:18:20.072  -----AccountData_Initialize: Account Wide-----
+11/28 21:18:20.121  Received Server Save Times
+11/28 21:18:20.121  Data Type 0: Server Save Time 1669687673, Local Save Time 1669687673
+11/28 21:18:20.121  Loading Data From File: Type 0
+11/28 21:18:20.121  Data: SET cameraDistanceMaxZoomFactor "2.6"
+SET cameraZoomSpeed "29"
+SET toyBoxExpansionFilters ""
+SET cameraSmoothTimeMax "5"
+SET combinedBags "1"
+SET statusTextDisplay "BOTH"
+SET wholeChatWindowClickable "0"
+SET findYourselfMode "1"
+SET showTutorials "0"
+SET UnitNameNonCombatCreatureName "1"
+SET timeMgrAlarmMessage "Brewfest"
+SET flaggedTutorials "v11##$##]##[##+##G##%##-##'##5##.##(##Z##E##K##8##)##;##,##6##:##O##N##D##?##^##`##@##I##F##A##B##=##9##J##3##L##Y##_##C##>##<##V"
+SET auctionDisplayOnCharacter "1"
+SET profanityFilter "0"
+SET talentFrameShown "1"
+SET xpBarText "1"
+SET cameraPitchE "27.400265"
+SET mountJournalGeneralFilters "7"
+SET petJournalTab "3"
+SET cameraWaterCollision "1"
+SET alwaysShowActionBars "1"
+SET cameraYawE "0.000000"
+SET Outline "3"
+SET mountJournalSourcesFilter "2031"
+SET removeChatDelay "1"
+SET pendingInviteInfoShown "1"
+SET toyBoxSourceFilters ""
+SET PushToTalkSound "1"
+SET mountJournalTypeFilter "15"
+SET petJournalFilters ""
+SET addFriendInfoShown "1"
+SET closedInfoFramesAccountWide "C"
+SET toyBoxCollectedFilters ""
+SET floatingCombatTextCombatDamage "0"
+SET timeMgrUseLocalTime "1"
+SET advJournalLastOpened "1669687703"
+SET actionedAdventureJournalEntries "v"
+SET showNPETutorials "0"
+SET UnitNameNPC "1"
+SET petJournalSort "1"
+SET AllowDangerousScripts "1"
+SET timeMgrAlarmTime "1080"
+SET cameraView "1"
+SET statusText "1"
+SET UnitNameHostleNPC "0"
+SET threatShowNumeric "1"
+SET floatingCombatTextCombatHealing "0"
+SET cameraDistanceE "15.336007"
+SET violenceLevel "5"
+SET UnitNameOwn "1"
+SET autoOpenLootHistory "1"
+SET whisperMode "inline"
+SET SoftTargetInteract "3"
+SET alwaysCompareItems "1"
+SET CameraKeepCharacterCentered "0"
+SET chatStyle "classic"
+SET softTargettingInteractKeySound "1"
+SET enableTwitter "1"
+SET cameraSmoothStyle "0"
+
+11/28 21:18:20.121  Data Type 10: Server Save Time 1666751577, Local Save Time 1666751577
+11/28 21:18:20.121  Loading Data From File: Type 10
+11/28 21:18:20.121  Data: 1
+11/28 21:18:27.984  -----AccountData_Initialize: Character-----
+11/28 21:18:57.324  Received Server Save Times
+11/28 21:18:57.324  Data Type 1: Server Save Time 1669687673, Local Save Time 1669687673
+11/28 21:18:57.324  Loading Data From File: Type 1
+11/28 21:18:57.703  Data: SET pvpSelectedRoles "8"
+SET lastGarrisonMissionTutorial "8"
+SET latestSplashScreen "49"
+SET autoQuestPopUps "v11"
+SET talentPointsSpent "1"
+SET showArenaEnemyFrames "0"
+SET cameraSavedPitch "44.049866"
+SET lastTransmogOutfitIDSpec2 "8"
+SET nameplateSelfScale "1"
+SET minimapTrackedInfov3 "1007343"
+SET EJLootClass "0"
+SET nameplateSelectedScale "1"
+SET EJRaidDifficulty "14"
+SET nameplateSelfAlpha "1"
+SET showTamers "0"
+SET soulbindsViewedTutorial "@x"
+SET trackedProfessionRecipes "v11"
+SET orderHallMissionTutorial "983044"
+SET splashScreenNormal "19"
+SET savedClassConfigOne "923098"
+SET lfGuildSettings "591"
+SET nameplateMotion "1"
+SET NameplatePersonalHideDelayAlpha "1"
+SET lastTransmogOutfitIDSpec1 "8"
+SET newPvpSeason "33"
+SET hardTrackedWorldQuests "v11"
+SET nameplateShowFriendlyNPCs "1"
+SET currencyCategoriesCollapsed "v11"
+SET EJDungeonDifficulty "1"
+SET NamePlateHorizontalScale "1"
+SET shipyardMissionTutorialAreaBuff "1"
+SET nameplateMaxDistance "40"
+SET NamePlateClassificationScale "1"
+SET hardTrackedQuests "v11(9}(a8%s5(b@&bx"
+SET NameplatePersonalShowWithTarget "1"
+SET lastRenownForCovenant2 "80"
+SET NameplatePersonalHideDelaySeconds "2"
+SET trackedQuests "v11+-o'`_(5@(9~(9(Lj(S5)Rz)^9)^t*G/*Ul*d_"
+SET newMythicPlusSeason "7"
+SET EJSelectedTier "505"
+SET nameplateSelectedAlpha "1"
+SET dangerousShipyardMissionWarningAlreadyShown "1"
+SET cameraSavedVehicleDistance "47.834171"
+SET shipyardMissionTutorialFirst "1"
+SET lfgSelectedRoles "8"
+SET lastVoidStorageTutorial "3"
+SET guildRosterView "reputation"
+SET soulbindsActivatedTutorial "@H"
+SET shipyardMissionTutorialBlockade "1"
+SET cameraSavedDistance "20.179152"
+SET nameplateMaxScaleDistance "40"
+SET autoLootDefault "1"
+SET nameplateMinScaleDistance "0"
+SET minimapZoom "5"
+SET nameplateTargetBehindMaxDistance "40"
+SET trackedWorldQuests "v11"
+SET minimapShapeshiftTracking "v11"
+SET closedInfoFrames "ceiwezQzG^SO}[t@D"
+SET showTokenFrame "1"
+SET reputationsCollapsed "v11#-)"
+SET nameplateShowEnemyTotems "1"
+SET closedExtraAbiltyTutorials "FkUpz@_DD"
+SET nameplateGlobalScale "1"
+SET covenantMissionTutorial "K@H@@B@@@@@@@@@@@@@@@B@@@@@@@@@@@@@@@@@@@@H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@B@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@H"
+SET missingTransmogSourceInItemTooltips "1"
+SET cameraSavedPetBattleDistance "15.000"
+SET splashScreenSeason "4"
+SET NamePlateVerticalScale "1"
+SET clubFinderPlayerSettings "262145"
+SET nameplateMinAlpha "1"
+SET lfdSelectedDungeons "@@@@PD@@@@@@@@@@@@@@@@`@@@@@@@A@@@A@@@@@@@@@@@A@@@@@@zOPP@@@@@@@@@@@@@@@H@@@@@@@@@@@A@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@P@@@@@@@@@@@`E"
+SET lastSelectedClubId "2167761"
+SET nameplateMaxScale "1"
+SET nameplateMinScale "1"
+SET nameplateMaxAlpha "1"
+SET soulbindsLandingPageTutorial "1"
+SET nameplateShowAll "1"
+SET lastTransmogOutfitIDSpec3 "8"
+SET nameplateLargerScale "1"
+SET lfdCollapsedHeaders "@@@@@@@@@H@@@@@@@@@@@@@@@@@L"
+SET trackedAchievements "v11#j,#in$Vw"
+SET activeCUFProfile "Primary"
+SET mapFade "0"
+SET nameplateShowSelf "0"
+SET SoftTargetEnemy "3"
+SET nameplateShowEnemyPets "1"
+
+11/28 21:18:57.703  Data Type 2: Server Save Time 1648401569, Local Save Time 1648401569
+11/28 21:18:57.703  Loading Data From File: Type 2
+11/28 21:18:57.703  Data: bind A STRAFELEFT
+bind D STRAFERIGHT
+bind Q ACTIONBUTTON5
+bind E ACTIONBUTTON6
+bind 5 ACTIONBUTTON7
+bind 6 ACTIONBUTTON8
+bind 7 ACTIONBUTTON9
+bind 8 ACTIONBUTTON10
+bind 9 ACTIONBUTTON11
+bind 0 ACTIONBUTTON12
+bind - NONE
+bind = NONE
+bind [ PAWN_COMPARE_LEFT
+bind ] PAWN_COMPARE_RIGHT
+bind CTRL-SHIFT-I CLICK WoWPro_FauxItemButton:LeftButton
+bind CTRL-SHIFT-T CLICK WoWPro_FauxTargetButton:LeftButton
+
+11/28 21:18:57.703  Data Type 3: Server Save Time 1666834907, Local Save Time 1666834907
+11/28 21:18:57.703  Loading Data From File: Type 3
+11/28 21:18:57.703  Data: bind A STRAFELEFT
+bind D STRAFERIGHT
+bind Q ACTIONBUTTON5
+bind E ACTIONBUTTON6
+bind 5 ACTIONBUTTON7
+bind 6 ACTIONBUTTON8
+bind 7 ACTIONBUTTON9
+bind 8 ACTIONBUTTON10
+bind 9 ACTIONBUTTON11
+bind 0 ACTIONBUTTON12
+bind - MULTIACTIONBAR1BUTTON8
+bind = MULTIACTIONBAR1BUTTON7
+bind [ PAWN_COMPARE_LEFT
+bind ] PAWN_COMPARE_RIGHT
+bind ALT-X NONE
+bind CTRL-SHIFT-I CLICK WoWPro_FauxItemButton:LeftButton
+bind CTRL-SHIFT-T CLICK WoWPro_FauxTargetButton:LeftButton
+
+11/28 21:18:57.703  Data Type 4: Server Save Time 1669687673, Local Save Time 1669687673
+11/28 21:18:57.703  Loading Data From File: Type 4
+11/28 21:18:57.703  Data: VER 3 000000000000002E " " "INV_MISC_QUESTIONMARK"
+#showtooltip item:165802
+/run if not InCombatLockdown() then RHT.b:SetAttribute("item","Noble Gardener's Hearthstone") end
+/click RHTB
+END
+VER 3 0000000000000022 "AAP_MACRO" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/click ExtraActionButton1
+END
+VER 3 0000000000000019 "CollectMeRC" "INV_PET_BABYBLIZZARDBEAR"
+/cm rc
+END
+VER 3 0000000000000007 "CollectMeRM" "ABILITY_MOUNT_BIGBLIZZARDBEAR"
+/cm rm
+END
+VER 3 0000000000000004 "Everybody Dance" "ABILITY_WARRIOR_RALLYINGCRY"
+/y Everybody, dance now!
+/dance
+END
+VER 3 000000000000002F "FishingBuddy" "INV_Fishingpole_02"
+#showtooltip Fishing
+/fb macro
+/stopcasting
+/cast Fishing
+END
+VER 3 0000000000000034 "fleetfoot" "136103"
+/cleartarget
+/tar OOX-Fleetfoot/MG 
+/cleartarget [dead]
+/stopmacro [noexists]
+/run PlaySound(12867); SetRaidTarget("target", 01); print(date().." "..UnitName("target"));
+/point
+END
+VER 3 0000000000000030 "FrightenedKodo" "132366"
+/cleartarget
+/tar Frightened Kodo
+/stopmacro [noexists]
+/script PlaySound(8959)
+/run RaidNotice_AddMessage(RaidBossEmoteFrame,"Frightened Kodo!", ChatTypeInfo["RAID_WARNING"])
+END
+VER 3 000000000000001D "Heroic Leap Spam" "ABILITY_HEROICLEAP"
+#showtooltip Heroic Leap
+/cast !Heroic Leap
+END
+VER 3 0000000000000031 "paper" "INV_MISC_QUESTIONMARK"
+/target Paper
+END
+VER 3 000000000000001C "Rage" "ABILITY_WARRIOR_CHARGE"
+/cast Charge
+/cast Rend
+END
+VER 3 0000000000000032 "raidannoufabious" "413588"
+/cleartarget
+/tar Fabious
+/stopmacro [noexists]
+/run local mp = C_Map.GetPlayerMapPosition(C_Map.GetBestMapForUnit("player"), "player"); SendChatMessage("%t is at " .. tostring(floor(mp.x * 100)) .. ", " .. tostring(floor(mp.y * 100)), "RAID")
+END
+VER 3 0000000000000033 "rockweed" "132101"
+/cleartarget
+/tar Lost Algan
+/tar Wayward Algan
+/tar Rockweed Shambler
+/cleartarget [dead]
+/stopmacro [noexists]
+/run PlaySound(12867); SetRaidTarget("target", 01); print(date().." "..UnitName("target"));
+/point
+END
+VER 3 0000000000000035 "scarab count" "132184"
+/run local t,c="Swarm Scarab",0 for i=1,10000 do local p=C_NamePlate.GetNamePlateForUnit("nameplate"..i) if p and p:IsVisible() and p:GetChildren():GetRegions():GetText()==t then c=c+1 end end print(t,":",c) 
+END
+VER 3 000000000000000C "SilverDragon" "ABILITY_HUNTER_SNIPERTRAINING"
+/click SilverDragonMacroButton
+END
+VER 3 000000000000002D "SummonRandomPet" "132142"
+/click PetJournalSummonRandomFavoritePetButton
+END
+VER 3 000000000000001E "Swifty Macro" "SPELL_FROST_ARCTICWINDS"
+/cast Recklessness
+/cast Blood Fury
+/cast Bloodbath
+/cast Avatar
+/cast Malevolent Gladiator's Badge of Victory
+END
+VER 3 000000000000002C "TSMMacro" "Achievement_Faction_GoldenLotus"
+/click TSMVendoringSellAllButton
+END
+
+11/28 21:18:57.703  Data Type 5: Server Save Time 1666751577, Local Save Time 1666751577
+11/28 21:18:57.703  Loading Data From File: Type 5
+11/28 21:18:57.703  Data: VER 3 0100000000000001 "VuhDoDCShieldData" "Ability_Repair"
+P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1WM[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000002 "VuhDoDCShieldNames" "Ability_Repair"
+N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Sha[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+
+11/28 21:18:57.703  Data Type 6: Server Save Time 0, Local Save Time 1669687673
+11/28 21:18:57.703  Loading Data From File: Type 6
+11/28 21:18:57.711  Data: Version: 1
+Frame: AllTheThings-Window-CurrentInstance
+FrameLevel: 1
+Anchor: LEFT
+X: 0
+Y: -74
+W: 301
+H: 298
+Frame: SettingsPanel
+FrameLevel: 1
+Anchor: TOP
+X: 2
+Y: -118
+W: 920
+H: 724
+Frame: DressUpFrame
+FrameLevel: 1
+Anchor: CENTER
+X: -117
+Y: 57
+W: 951
+H: 1152
+Frame: PlayerPowerBarAlt
+FrameLevel: 2
+Anchor: BOTTOM
+X: 0
+Y: 90
+W: 10
+H: 10
+Frame: SpellBookFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 550
+H: 525
+Frame: CharacterFrame
+FrameLevel: 1
+Anchor: TOP
+X: -4
+Y: -43
+W: 338
+H: 424
+Frame: TradeFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 344
+H: 446
+Frame: ItemTextFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 19
+Y: -117
+W: 338
+H: 424
+Frame: BankFrame
+FrameLevel: 2
+Anchor: BOTTOM
+X: 0
+Y: 0
+W: 386
+H: 415
+Frame: FriendsFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 338
+H: 424
+Frame: ColorPickerFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 365
+H: 240
+Frame: GossipFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 1
+H: 1
+Frame: MailFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 338
+H: 424
+Frame: PVEFrame
+FrameLevel: 1
+Anchor: LEFT
+X: 312
+Y: 130
+W: 563
+H: 428
+Frame: LootHistoryFrame
+FrameLevel: 1
+Anchor: BOTTOMRIGHT
+X: -476
+Y: 50
+W: 210
+H: 636
+Frame: SplashFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 60
+W: 882
+H: 584
+Frame: AllTheThings-Window-Prime
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 425
+H: 305
+Frame: AllTheThings-Window-Bounty
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 300
+H: 300
+Frame: AllTheThings-Window-RaidAssistant
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 299
+H: 300
+Frame: AllTheThings-Window-WorldQuests
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 299
+H: 300
+Frame: MAOptions
+FrameLevel: 1
+Anchor: LEFT
+X: 455
+Y: 66
+W: 497
+H: 513
+Frame: PawnUIFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 800
+H: 525
+Frame: scanner_button
+FrameLevel: 200
+Anchor: LEFT
+X: 213
+Y: 69
+W: 200
+H: 50
+Frame: RareShare_RareFrame
+FrameLevel: 1
+Anchor: TOP
+X: -1
+Y: -23
+W: 200
+H: 80
+Frame: WorldQuestTrackerFinderFrame
+FrameLevel: 1
+Anchor: TOP
+X: 406
+Y: -3
+W: 240
+H: 116
+Frame: TooltipMover
+FrameLevel: 402
+Anchor: BOTTOMRIGHT
+X: 0
+Y: 0
+W: 130
+H: 20
+Frame: AllTheThings-Window-Unsorted
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 300
+H: 300
+Frame: GameMenuFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 2
+Y: 2
+W: 195
+H: 362
+
+11/28 21:18:57.711  Data Type 7: Server Save Time 1666751578, Local Save Time 1666751578
+11/28 21:18:57.711  Loading Data From File: Type 7
+11/28 21:18:57.711  Data: VERSION 9
+
+ADDEDVERSION 25
+
+CHANNELS
+1 0 1 1
+2 0 2 1
+22 0 3 1
+26 0 4 1
+42 0 5 1
+END
+
+ZONECHANNELS 0
+
+COLORS
+
+SYSTEM 255 255 0 N
+SAY 255 255 255 Y
+PARTY 170 170 255 Y
+RAID 255 127 0 Y
+GUILD 64 255 64 Y
+OFFICER 64 192 64 Y
+YELL 255 64 64 Y
+WHISPER 255 128 255 Y
+WHISPER_FOREIGN 255 128 255 N
+WHISPER_INFORM 255 128 255 Y
+EMOTE 255 128 64 Y
+TEXT_EMOTE 255 128 64 Y
+MONSTER_SAY 255 255 159 N
+MONSTER_PARTY 170 170 255 Y
+MONSTER_YELL 255 64 64 N
+MONSTER_WHISPER 255 181 235 N
+MONSTER_EMOTE 255 128 64 N
+CHANNEL 255 192 192 N
+CHANNEL_JOIN 192 128 128 N
+CHANNEL_LEAVE 192 128 128 N
+CHANNEL_LIST 192 128 128 N
+CHANNEL_NOTICE 192 192 192 N
+CHANNEL_NOTICE_USER 192 192 192 N
+AFK 255 128 255 Y
+DND 255 128 255 Y
+IGNORED 255 0 0 N
+SKILL 85 85 255 N
+LOOT 0 170 0 N
+MONEY 255 255 0 N
+OPENING 128 128 255 N
+TRADESKILLS 255 255 255 N
+PET_INFO 128 128 255 N
+COMBAT_MISC_INFO 128 128 255 N
+COMBAT_XP_GAIN 111 111 255 N
+COMBAT_HONOR_GAIN 224 202 10 N
+COMBAT_FACTION_CHANGE 128 128 255 N
+BG_SYSTEM_NEUTRAL 255 120 10 N
+BG_SYSTEM_ALLIANCE 0 174 239 N
+BG_SYSTEM_HORDE 255 0 0 N
+RAID_LEADER 255 72 9 Y
+RAID_WARNING 255 72 0 Y
+RAID_BOSS_EMOTE 255 221 0 N
+RAID_BOSS_WHISPER 255 221 0 N
+FILTERED 255 0 0 N
+RESTRICTED 255 0 0 N
+BATTLENET 255 255 255 N
+ACHIEVEMENT 255 255 0 Y
+GUILD_ACHIEVEMENT 64 255 64 Y
+ARENA_POINTS 255 255 255 N
+PARTY_LEADER 118 200 255 Y
+TARGETICONS 255 255 0 N
+BN_WHISPER 0 255 246 N
+BN_WHISPER_INFORM 0 255 246 N
+BN_INLINE_TOAST_ALERT 130 197 255 N
+BN_INLINE_TOAST_BROADCAST 130 197 255 N
+BN_INLINE_TOAST_BROADCAST_INFORM 130 197 255 N
+BN_INLINE_TOAST_CONVERSATION 130 197 255 N
+BN_WHISPER_PLAYER_OFFLINE 255 255 0 N
+CURRENCY 0 170 0 N
+QUEST_BOSS_EMOTE 255 128 64 N
+PET_BATTLE_COMBAT_LOG 231 222 171 N
+PET_BATTLE_INFO 225 222 93 N
+INSTANCE_CHAT 255 127 0 Y
+INSTANCE_CHAT_LEADER 255 72 9 Y
+GUILD_ITEM_LOOTED 64 255 64 Y
+COMMUNITIES_CHANNEL 255 192 192 Y
+VOICE_TEXT 158 255 252 N
+CHANNEL1 195 230 232 Y
+CHANNEL2 232 158 121 Y
+CHANNEL3 232 228 121 Y
+CHANNEL4 255 192 192 Y
+CHANNEL5 255 192 192 Y
+CHANNEL6 255 192 192 Y
+CHANNEL7 255 192 192 Y
+CHANNEL8 255 192 192 Y
+CHANNEL9 255 192 192 Y
+CHANNEL10 255 192 192 Y
+CHANNEL11 255 192 192 Y
+CHANNEL12 255 192 192 Y
+CHANNEL13 255 192 192 Y
+CHANNEL14 255 192 192 Y
+CHANNEL15 255 192 192 Y
+CHANNEL16 255 192 192 Y
+CHANNEL17 255 192 192 Y
+CHANNEL18 255 192 192 Y
+CHANNEL19 255 192 192 Y
+CHANNEL20 255 192 192 Y
+END
+
+WINDOW 1
+NAME General
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 1
+SHOWN 1
+POSITION BOTTOMLEFT 0.001953 0.019444
+DIMENSIONS 465.000031 189.000015
+
+MESSAGES
+SYSTEM
+SYSTEM_NOMENU
+SAY
+EMOTE
+YELL
+WHISPER
+PARTY
+PARTY_LEADER
+RAID
+RAID_LEADER
+RAID_WARNING
+GUILD
+OFFICER
+MONSTER_SAY
+MONSTER_YELL
+MONSTER_EMOTE
+MONSTER_WHISPER
+MONSTER_BOSS_EMOTE
+MONSTER_BOSS_WHISPER
+ERRORS
+AFK
+DND
+IGNORED
+BG_HORDE
+BG_ALLIANCE
+BG_NEUTRAL
+CHANNEL
+ACHIEVEMENT
+GUILD_ACHIEVEMENT
+BN_WHISPER
+BN_WHISPER_INFORM
+BN_CONVERSATION
+BN_INLINE_TOAST_ALERT
+BN_WHISPER_PLAYER_OFFLINE
+INSTANCE_CHAT
+INSTANCE_CHAT_LEADER
+GUILD_ITEM_LOOTED
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 2231237607425
+
+END
+
+WINDOW 2
+NAME Log
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 2
+SHOWN 0
+POSITION BOTTOMLEFT 0.003906 0.025694
+DIMENSIONS 402.000031 124.000000
+
+MESSAGES
+OPENING
+TRADESKILLS
+PET_INFO
+COMBAT_XP_GAIN
+COMBAT_HONOR_GAIN
+COMBAT_MISC_INFO
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 3
+NAME Voice
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.003906 0.025694
+DIMENSIONS 402.000031 148.000000
+
+MESSAGES
+VOICE_TEXT
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 4
+NAME Loot / Trade
+SIZE 12
+COLOR 0 0 0 63
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 3
+SHOWN 0
+POSITION BOTTOMLEFT 0.002344 0.022917
+DIMENSIONS 465.000031 195.000000
+
+MESSAGES
+COMBAT_FACTION_CHANGE
+SKILL
+LOOT
+MONEY
+CURRENCY
+COMBAT_XP_GAIN
+COMBAT_HONOR_GAIN
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 2
+
+END
+
+WINDOW 5
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 6
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 7
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 8
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 9
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 10
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+
+11/28 21:18:57.711  Data Type 8: Server Save Time 1666751578, Local Save Time 1666751578
+11/28 21:18:57.711  Loading Data From File: Type 8
+11/28 21:18:57.756  Data: 1
+15
+13838085560549248255
+0
+1
+0
+100
+
+11/28 21:18:57.756  Data Type 9: Server Save Time 1666751578, Local Save Time 1666751578
+11/28 21:18:57.756  Loading Data From File: Type 9
+11/28 21:18:57.788  Data: 1
+1
+15
+13838085560549248255
+0
+1
+0
+100
+
+11/28 21:18:57.788  Data Type 11: Server Save Time 1666751577, Local Save Time 1666751577
+11/28 21:18:57.788  Loading Data From File: Type 11
+11/28 21:18:57.788  Data: 1
+11/28 21:18:57.788  Data Type 12: Server Save Time 1666751578, Local Save Time 1666751578
+11/28 21:18:57.788  Loading Data From File: Type 12
+11/28 21:18:57.788  Data: 1
+0
+0
+1 0 3 1
+4 0 3 2
+END
+
+11/28 21:18:57.788  Data Type 13: Server Save Time 1669306675, Local Save Time 1669306675
+11/28 21:18:57.788  Loading Data From File: Type 13
+11/28 21:18:57.788  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+11/28 21:18:57.788  Data Type 14: Server Save Time 1666751578, Local Save Time 1666751578
+11/28 21:18:57.788  Loading Data From File: Type 14
+11/28 21:18:57.788  Data: 0 0 0 0 0 0
+11/29 00:58:01.782  -----AccountData_Destroy: Character-----
+11/29 07:42:31.919  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+11/29 07:43:00.254  -----AccountData_Initialize: Account Wide-----
+11/29 07:43:00.321  Received Server Save Times
+11/29 07:43:00.321  Data Type 0: Server Save Time 1669688338, Local Save Time 1669688338
+11/29 07:43:00.321  Loading Data From File: Type 0
+11/29 07:43:00.321  Data: SET cameraDistanceMaxZoomFactor "2.6"
+SET cameraZoomSpeed "29"
+SET toyBoxExpansionFilters ""
+SET cameraSmoothTimeMax "5"
+SET combinedBags "1"
+SET statusTextDisplay "BOTH"
+SET wholeChatWindowClickable "0"
+SET findYourselfMode "1"
+SET showTutorials "0"
+SET UnitNameNonCombatCreatureName "1"
+SET timeMgrAlarmMessage "Brewfest"
+SET flaggedTutorials "v11##$##]##[##+##G##%##-##'##5##.##(##Z##E##K##8##)##;##,##6##:##O##N##D##?##^##`##@##I##F##A##B##=##9##J##3##L##Y##_##C##>##<##V"
+SET auctionDisplayOnCharacter "1"
+SET profanityFilter "0"
+SET talentFrameShown "1"
+SET xpBarText "1"
+SET cameraPitchE "27.400265"
+SET mountJournalGeneralFilters "7"
+SET petJournalTab "5"
+SET cameraWaterCollision "1"
+SET alwaysShowActionBars "1"
+SET cameraYawE "0.000000"
+SET Outline "3"
+SET mountJournalSourcesFilter "2031"
+SET removeChatDelay "1"
+SET pendingInviteInfoShown "1"
+SET toyBoxSourceFilters ""
+SET PushToTalkSound "1"
+SET mountJournalTypeFilter "15"
+SET petJournalFilters ""
+SET addFriendInfoShown "1"
+SET closedInfoFramesAccountWide "C"
+SET toyBoxCollectedFilters ""
+SET floatingCombatTextCombatDamage "0"
+SET timeMgrUseLocalTime "1"
+SET advJournalLastOpened "1669688369"
+SET actionedAdventureJournalEntries "v"
+SET showNPETutorials "0"
+SET UnitNameNPC "1"
+SET petJournalSort "1"
+SET AllowDangerousScripts "1"
+SET timeMgrAlarmTime "1080"
+SET cameraView "1"
+SET statusText "1"
+SET UnitNameHostleNPC "0"
+SET threatShowNumeric "1"
+SET floatingCombatTextCombatHealing "0"
+SET cameraDistanceE "15.336007"
+SET violenceLevel "5"
+SET UnitNameOwn "1"
+SET autoOpenLootHistory "1"
+SET whisperMode "inline"
+SET SoftTargetInteract "3"
+SET alwaysCompareItems "1"
+SET CameraKeepCharacterCentered "0"
+SET chatStyle "classic"
+SET softTargettingInteractKeySound "1"
+SET enableTwitter "1"
+SET cameraSmoothStyle "0"
+
+11/29 07:43:00.321  Data Type 10: Server Save Time 1669688338, Local Save Time 1669688338
+11/29 07:43:00.321  Loading Data From File: Type 10
+11/29 07:43:00.321  Data: 1 ###.W>%?E%?n%?7
+11/29 07:43:09.977  -----AccountData_Initialize: Character-----
+11/29 07:43:45.585  Received Server Save Times
+11/29 07:43:45.585  Data Type 1: Server Save Time 1669688338, Local Save Time 1669688338
+11/29 07:43:45.585  Loading Data From File: Type 1
+11/29 07:43:45.957  Data: SET pvpSelectedRoles "8"
+SET lastGarrisonMissionTutorial "8"
+SET latestSplashScreen "49"
+SET autoQuestPopUps "v11"
+SET talentPointsSpent "1"
+SET showArenaEnemyFrames "0"
+SET cameraSavedPitch "28.360361"
+SET lastTransmogOutfitIDSpec2 "8"
+SET nameplateSelfScale "1"
+SET minimapTrackedInfov3 "1007343"
+SET EJLootClass "0"
+SET nameplateSelectedScale "1"
+SET EJRaidDifficulty "14"
+SET lastRenownForMajorFaction2507 "2"
+SET nameplateSelfAlpha "1"
+SET showTamers "0"
+SET soulbindsViewedTutorial "@x"
+SET trackedProfessionRecipes "v11"
+SET orderHallMissionTutorial "983044"
+SET splashScreenNormal "19"
+SET savedClassConfigOne "923098"
+SET lfGuildSettings "591"
+SET nameplateMotion "1"
+SET NameplatePersonalHideDelayAlpha "1"
+SET lastTransmogOutfitIDSpec1 "8"
+SET newPvpSeason "33"
+SET hardTrackedWorldQuests "v11"
+SET nameplateShowFriendlyNPCs "1"
+SET currencyCategoriesCollapsed "v11"
+SET EJDungeonDifficulty "1"
+SET NamePlateHorizontalScale "1"
+SET shipyardMissionTutorialAreaBuff "1"
+SET nameplateMaxDistance "40"
+SET NamePlateClassificationScale "1"
+SET hardTrackedQuests "v11(9}(a8%s5(b@&bx"
+SET NameplatePersonalShowWithTarget "1"
+SET lastRenownForCovenant2 "80"
+SET NameplatePersonalHideDelaySeconds "2"
+SET trackedQuests "v11*^{*iR+FE+-/*g/'`_(5@(9~(9(Lj(S5)Rz)^9)^t*G/*Ul*d_"
+SET newMythicPlusSeason "7"
+SET EJSelectedTier "505"
+SET unlockedExpansionLandingPages "A"
+SET unlockedMajorFactions "v11#=#=|"
+SET nameplateSelectedAlpha "1"
+SET dangerousShipyardMissionWarningAlreadyShown "1"
+SET cameraSavedVehicleDistance "47.834171"
+SET shipyardMissionTutorialFirst "1"
+SET lfgSelectedRoles "8"
+SET lastVoidStorageTutorial "3"
+SET guildRosterView "reputation"
+SET soulbindsActivatedTutorial "@H"
+SET shipyardMissionTutorialBlockade "1"
+SET cameraSavedDistance "21.919144"
+SET nameplateMaxScaleDistance "40"
+SET autoLootDefault "1"
+SET nameplateMinScaleDistance "0"
+SET minimapZoom "5"
+SET nameplateTargetBehindMaxDistance "40"
+SET trackedWorldQuests "v11"
+SET minimapShapeshiftTracking "v11"
+SET closedInfoFrames "ceiwezQzG^SO}[w@NPI"
+SET showTokenFrame "1"
+SET reputationsCollapsed "v11#-)"
+SET nameplateShowEnemyTotems "1"
+SET closedExtraAbiltyTutorials "FkUpz@_DD"
+SET nameplateGlobalScale "1"
+SET covenantMissionTutorial "K@H@@B@@@@@@@@@@@@@@@B@@@@@@@@@@@@@@@@@@@@H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@B@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@H"
+SET missingTransmogSourceInItemTooltips "1"
+SET cameraSavedPetBattleDistance "15.000"
+SET splashScreenSeason "4"
+SET NamePlateVerticalScale "1"
+SET clubFinderPlayerSettings "262145"
+SET nameplateMinAlpha "1"
+SET lfdSelectedDungeons "@@@@PD@@@@@@@@@@@@@@@@`@@@@@@@A@@@A@@@@@@@@@@@A@@@@@@zOPP@@@@@@@@@@@@@@@H@@@@@@@@@@@A@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@P@@@@@@@@@@@`E"
+SET lastSelectedClubId "2167761"
+SET nameplateMaxScale "1"
+SET nameplateMinScale "1"
+SET nameplateMaxAlpha "1"
+SET soulbindsLandingPageTutorial "1"
+SET nameplateShowAll "1"
+SET lastTransmogOutfitIDSpec3 "8"
+SET nameplateLargerScale "1"
+SET lfdCollapsedHeaders "@@@@@@@@@H@@@@@@@@@@@@@@@@@L"
+SET trackedAchievements "v11#j,#in$Vw"
+SET activeCUFProfile "Primary"
+SET mapFade "0"
+SET nameplateShowSelf "0"
+SET SoftTargetEnemy "3"
+SET nameplateShowEnemyPets "1"
+
+11/29 07:43:45.957  Data Type 2: Server Save Time 1648401569, Local Save Time 1648401569
+11/29 07:43:45.957  Loading Data From File: Type 2
+11/29 07:43:45.957  Data: bind A STRAFELEFT
+bind D STRAFERIGHT
+bind Q ACTIONBUTTON5
+bind E ACTIONBUTTON6
+bind 5 ACTIONBUTTON7
+bind 6 ACTIONBUTTON8
+bind 7 ACTIONBUTTON9
+bind 8 ACTIONBUTTON10
+bind 9 ACTIONBUTTON11
+bind 0 ACTIONBUTTON12
+bind - NONE
+bind = NONE
+bind [ PAWN_COMPARE_LEFT
+bind ] PAWN_COMPARE_RIGHT
+bind CTRL-SHIFT-I CLICK WoWPro_FauxItemButton:LeftButton
+bind CTRL-SHIFT-T CLICK WoWPro_FauxTargetButton:LeftButton
+
+11/29 07:43:45.957  Data Type 3: Server Save Time 1666834907, Local Save Time 1666834907
+11/29 07:43:45.957  Loading Data From File: Type 3
+11/29 07:43:45.957  Data: bind A STRAFELEFT
+bind D STRAFERIGHT
+bind Q ACTIONBUTTON5
+bind E ACTIONBUTTON6
+bind 5 ACTIONBUTTON7
+bind 6 ACTIONBUTTON8
+bind 7 ACTIONBUTTON9
+bind 8 ACTIONBUTTON10
+bind 9 ACTIONBUTTON11
+bind 0 ACTIONBUTTON12
+bind - MULTIACTIONBAR1BUTTON8
+bind = MULTIACTIONBAR1BUTTON7
+bind [ PAWN_COMPARE_LEFT
+bind ] PAWN_COMPARE_RIGHT
+bind ALT-X NONE
+bind CTRL-SHIFT-I CLICK WoWPro_FauxItemButton:LeftButton
+bind CTRL-SHIFT-T CLICK WoWPro_FauxTargetButton:LeftButton
+
+11/29 07:43:45.957  Data Type 4: Server Save Time 1669688338, Local Save Time 1669688338
+11/29 07:43:45.957  Loading Data From File: Type 4
+11/29 07:43:45.957  Data: VER 3 000000000000002E " " "INV_MISC_QUESTIONMARK"
+#showtooltip item:163045
+/run if not InCombatLockdown() then RHT.b:SetAttribute("item","Headless Horseman's Hearthstone") end
+/click RHTB
+END
+VER 3 0000000000000022 "AAP_MACRO" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/click ExtraActionButton1
+END
+VER 3 0000000000000019 "CollectMeRC" "INV_PET_BABYBLIZZARDBEAR"
+/cm rc
+END
+VER 3 0000000000000007 "CollectMeRM" "ABILITY_MOUNT_BIGBLIZZARDBEAR"
+/cm rm
+END
+VER 3 0000000000000004 "Everybody Dance" "ABILITY_WARRIOR_RALLYINGCRY"
+/y Everybody, dance now!
+/dance
+END
+VER 3 000000000000002F "FishingBuddy" "INV_Fishingpole_02"
+#showtooltip Fishing
+/fb macro
+/stopcasting
+/cast Fishing
+END
+VER 3 0000000000000034 "fleetfoot" "136103"
+/cleartarget
+/tar OOX-Fleetfoot/MG 
+/cleartarget [dead]
+/stopmacro [noexists]
+/run PlaySound(12867); SetRaidTarget("target", 01); print(date().." "..UnitName("target"));
+/point
+END
+VER 3 0000000000000030 "FrightenedKodo" "132366"
+/cleartarget
+/tar Frightened Kodo
+/stopmacro [noexists]
+/script PlaySound(8959)
+/run RaidNotice_AddMessage(RaidBossEmoteFrame,"Frightened Kodo!", ChatTypeInfo["RAID_WARNING"])
+END
+VER 3 000000000000001D "Heroic Leap Spam" "ABILITY_HEROICLEAP"
+#showtooltip Heroic Leap
+/cast !Heroic Leap
+END
+VER 3 0000000000000031 "paper" "INV_MISC_QUESTIONMARK"
+/target Paper
+END
+VER 3 000000000000001C "Rage" "ABILITY_WARRIOR_CHARGE"
+/cast Charge
+/cast Rend
+END
+VER 3 0000000000000032 "raidannoufabious" "413588"
+/cleartarget
+/tar Fabious
+/stopmacro [noexists]
+/run local mp = C_Map.GetPlayerMapPosition(C_Map.GetBestMapForUnit("player"), "player"); SendChatMessage("%t is at " .. tostring(floor(mp.x * 100)) .. ", " .. tostring(floor(mp.y * 100)), "RAID")
+END
+VER 3 0000000000000033 "rockweed" "132101"
+/cleartarget
+/tar Lost Algan
+/tar Wayward Algan
+/tar Rockweed Shambler
+/cleartarget [dead]
+/stopmacro [noexists]
+/run PlaySound(12867); SetRaidTarget("target", 01); print(date().." "..UnitName("target"));
+/point
+END
+VER 3 0000000000000035 "scarab count" "132184"
+/run local t,c="Swarm Scarab",0 for i=1,10000 do local p=C_NamePlate.GetNamePlateForUnit("nameplate"..i) if p and p:IsVisible() and p:GetChildren():GetRegions():GetText()==t then c=c+1 end end print(t,":",c) 
+END
+VER 3 000000000000000C "SilverDragon" "ABILITY_HUNTER_SNIPERTRAINING"
+/click SilverDragonMacroButton
+END
+VER 3 000000000000002D "SummonRandomPet" "132142"
+/click PetJournalSummonRandomFavoritePetButton
+END
+VER 3 000000000000001E "Swifty Macro" "SPELL_FROST_ARCTICWINDS"
+/cast Recklessness
+/cast Blood Fury
+/cast Bloodbath
+/cast Avatar
+/cast Malevolent Gladiator's Badge of Victory
+END
+VER 3 000000000000002C "TSMMacro" "Achievement_Faction_GoldenLotus"
+/click TSMVendoringSellAllButton
+END
+
+11/29 07:43:45.957  Data Type 5: Server Save Time 1666751577, Local Save Time 1666751577
+11/29 07:43:45.957  Loading Data From File: Type 5
+11/29 07:43:45.957  Data: VER 3 0100000000000001 "VuhDoDCShieldData" "Ability_Repair"
+P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1WM[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000002 "VuhDoDCShieldNames" "Ability_Repair"
+N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Sha[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+
+11/29 07:43:45.957  Data Type 6: Server Save Time 0, Local Save Time 1669688338
+11/29 07:43:45.957  Loading Data From File: Type 6
+11/29 07:43:45.967  Data: Version: 1
+Frame: AllTheThings-Window-CurrentInstance
+FrameLevel: 1
+Anchor: LEFT
+X: 0
+Y: -74
+W: 301
+H: 298
+Frame: SettingsPanel
+FrameLevel: 1
+Anchor: TOP
+X: 2
+Y: -118
+W: 920
+H: 724
+Frame: PlayerPowerBarAlt
+FrameLevel: 2
+Anchor: BOTTOM
+X: 0
+Y: 90
+W: 10
+H: 10
+Frame: SpellBookFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 550
+H: 525
+Frame: CharacterFrame
+FrameLevel: 1
+Anchor: TOP
+X: -4
+Y: -43
+W: 444
+H: 444
+Frame: TradeFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 344
+H: 446
+Frame: BankFrame
+FrameLevel: 2
+Anchor: BOTTOM
+X: 0
+Y: 0
+W: 386
+H: 415
+Frame: FriendsFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 338
+H: 424
+Frame: ColorPickerFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 365
+H: 240
+Frame: PVEFrame
+FrameLevel: 1
+Anchor: LEFT
+X: 312
+Y: 130
+W: 563
+H: 428
+Frame: LootHistoryFrame
+FrameLevel: 1
+Anchor: BOTTOMRIGHT
+X: -476
+Y: 50
+W: 210
+H: 636
+Frame: SplashFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 60
+W: 882
+H: 584
+Frame: AllTheThings-Window-Prime
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 425
+H: 305
+Frame: AllTheThings-Window-Bounty
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 300
+H: 300
+Frame: AllTheThings-Window-RaidAssistant
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 299
+H: 300
+Frame: AllTheThings-Window-WorldQuests
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 299
+H: 300
+Frame: MAOptions
+FrameLevel: 1
+Anchor: LEFT
+X: 455
+Y: 66
+W: 497
+H: 513
+Frame: PawnUIFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 800
+H: 525
+Frame: RareShare_RareFrame
+FrameLevel: 1
+Anchor: TOP
+X: -1
+Y: -23
+W: 200
+H: 80
+Frame: WorldQuestTrackerFinderFrame
+FrameLevel: 1
+Anchor: TOP
+X: 406
+Y: -3
+W: 240
+H: 116
+Frame: TooltipMover
+FrameLevel: 402
+Anchor: BOTTOMRIGHT
+X: 0
+Y: 0
+W: 130
+H: 20
+Frame: AllTheThings-Window-Unsorted
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 300
+H: 300
+Frame: GarrisonLandingPage
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 21
+Y: -108
+W: 830
+H: 538
+Frame: AchievementFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 8
+Y: -185
+W: 768
+H: 500
+Frame: ItemTextFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 19
+Y: -117
+W: 338
+H: 424
+Frame: ClassTalentFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 53
+Y: 81
+W: 1618
+H: 883
+Frame: MailFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 338
+H: 424
+Frame: GhostFrame
+FrameLevel: 1
+Anchor: TOP
+X: 0
+Y: -150
+W: 1
+H: 46
+Frame: ExtraAbilityContainer
+FrameLevel: 70
+Anchor: TOP
+X: 0
+Y: 0
+W: 250
+H: 120
+Frame: DressUpFrame
+FrameLevel: 1
+Anchor: CENTER
+X: -117
+Y: 57
+W: 951
+H: 1152
+Frame: ClassTrainerFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 338
+H: 429
+Frame: scanner_button
+FrameLevel: 200
+Anchor: LEFT
+X: 213
+Y: 69
+W: 200
+H: 50
+Frame: GossipFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 1
+H: 1
+Frame: WorldMapFrame
+FrameLevel: 1
+Anchor: TOP
+X: -236
+Y: -137
+W: 992
+H: 534
+Frame: GameMenuFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 2
+Y: 2
+W: 195
+H: 400
+
+11/29 07:43:45.967  Data Type 7: Server Save Time 1666751578, Local Save Time 1666751578
+11/29 07:43:45.967  Loading Data From File: Type 7
+11/29 07:43:45.967  Data: VERSION 9
+
+ADDEDVERSION 25
+
+CHANNELS
+1 0 1 1
+2 0 2 1
+22 0 3 1
+26 0 4 1
+42 0 5 1
+END
+
+ZONECHANNELS 0
+
+COLORS
+
+SYSTEM 255 255 0 N
+SAY 255 255 255 Y
+PARTY 170 170 255 Y
+RAID 255 127 0 Y
+GUILD 64 255 64 Y
+OFFICER 64 192 64 Y
+YELL 255 64 64 Y
+WHISPER 255 128 255 Y
+WHISPER_FOREIGN 255 128 255 N
+WHISPER_INFORM 255 128 255 Y
+EMOTE 255 128 64 Y
+TEXT_EMOTE 255 128 64 Y
+MONSTER_SAY 255 255 159 N
+MONSTER_PARTY 170 170 255 Y
+MONSTER_YELL 255 64 64 N
+MONSTER_WHISPER 255 181 235 N
+MONSTER_EMOTE 255 128 64 N
+CHANNEL 255 192 192 N
+CHANNEL_JOIN 192 128 128 N
+CHANNEL_LEAVE 192 128 128 N
+CHANNEL_LIST 192 128 128 N
+CHANNEL_NOTICE 192 192 192 N
+CHANNEL_NOTICE_USER 192 192 192 N
+AFK 255 128 255 Y
+DND 255 128 255 Y
+IGNORED 255 0 0 N
+SKILL 85 85 255 N
+LOOT 0 170 0 N
+MONEY 255 255 0 N
+OPENING 128 128 255 N
+TRADESKILLS 255 255 255 N
+PET_INFO 128 128 255 N
+COMBAT_MISC_INFO 128 128 255 N
+COMBAT_XP_GAIN 111 111 255 N
+COMBAT_HONOR_GAIN 224 202 10 N
+COMBAT_FACTION_CHANGE 128 128 255 N
+BG_SYSTEM_NEUTRAL 255 120 10 N
+BG_SYSTEM_ALLIANCE 0 174 239 N
+BG_SYSTEM_HORDE 255 0 0 N
+RAID_LEADER 255 72 9 Y
+RAID_WARNING 255 72 0 Y
+RAID_BOSS_EMOTE 255 221 0 N
+RAID_BOSS_WHISPER 255 221 0 N
+FILTERED 255 0 0 N
+RESTRICTED 255 0 0 N
+BATTLENET 255 255 255 N
+ACHIEVEMENT 255 255 0 Y
+GUILD_ACHIEVEMENT 64 255 64 Y
+ARENA_POINTS 255 255 255 N
+PARTY_LEADER 118 200 255 Y
+TARGETICONS 255 255 0 N
+BN_WHISPER 0 255 246 N
+BN_WHISPER_INFORM 0 255 246 N
+BN_INLINE_TOAST_ALERT 130 197 255 N
+BN_INLINE_TOAST_BROADCAST 130 197 255 N
+BN_INLINE_TOAST_BROADCAST_INFORM 130 197 255 N
+BN_INLINE_TOAST_CONVERSATION 130 197 255 N
+BN_WHISPER_PLAYER_OFFLINE 255 255 0 N
+CURRENCY 0 170 0 N
+QUEST_BOSS_EMOTE 255 128 64 N
+PET_BATTLE_COMBAT_LOG 231 222 171 N
+PET_BATTLE_INFO 225 222 93 N
+INSTANCE_CHAT 255 127 0 Y
+INSTANCE_CHAT_LEADER 255 72 9 Y
+GUILD_ITEM_LOOTED 64 255 64 Y
+COMMUNITIES_CHANNEL 255 192 192 Y
+VOICE_TEXT 158 255 252 N
+CHANNEL1 195 230 232 Y
+CHANNEL2 232 158 121 Y
+CHANNEL3 232 228 121 Y
+CHANNEL4 255 192 192 Y
+CHANNEL5 255 192 192 Y
+CHANNEL6 255 192 192 Y
+CHANNEL7 255 192 192 Y
+CHANNEL8 255 192 192 Y
+CHANNEL9 255 192 192 Y
+CHANNEL10 255 192 192 Y
+CHANNEL11 255 192 192 Y
+CHANNEL12 255 192 192 Y
+CHANNEL13 255 192 192 Y
+CHANNEL14 255 192 192 Y
+CHANNEL15 255 192 192 Y
+CHANNEL16 255 192 192 Y
+CHANNEL17 255 192 192 Y
+CHANNEL18 255 192 192 Y
+CHANNEL19 255 192 192 Y
+CHANNEL20 255 192 192 Y
+END
+
+WINDOW 1
+NAME General
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 1
+SHOWN 1
+POSITION BOTTOMLEFT 0.001953 0.019444
+DIMENSIONS 465.000031 189.000015
+
+MESSAGES
+SYSTEM
+SYSTEM_NOMENU
+SAY
+EMOTE
+YELL
+WHISPER
+PARTY
+PARTY_LEADER
+RAID
+RAID_LEADER
+RAID_WARNING
+GUILD
+OFFICER
+MONSTER_SAY
+MONSTER_YELL
+MONSTER_EMOTE
+MONSTER_WHISPER
+MONSTER_BOSS_EMOTE
+MONSTER_BOSS_WHISPER
+ERRORS
+AFK
+DND
+IGNORED
+BG_HORDE
+BG_ALLIANCE
+BG_NEUTRAL
+CHANNEL
+ACHIEVEMENT
+GUILD_ACHIEVEMENT
+BN_WHISPER
+BN_WHISPER_INFORM
+BN_CONVERSATION
+BN_INLINE_TOAST_ALERT
+BN_WHISPER_PLAYER_OFFLINE
+INSTANCE_CHAT
+INSTANCE_CHAT_LEADER
+GUILD_ITEM_LOOTED
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 2231237607425
+
+END
+
+WINDOW 2
+NAME Log
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 2
+SHOWN 0
+POSITION BOTTOMLEFT 0.003906 0.025694
+DIMENSIONS 402.000031 124.000000
+
+MESSAGES
+OPENING
+TRADESKILLS
+PET_INFO
+COMBAT_XP_GAIN
+COMBAT_HONOR_GAIN
+COMBAT_MISC_INFO
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 3
+NAME Voice
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.003906 0.025694
+DIMENSIONS 402.000031 148.000000
+
+MESSAGES
+VOICE_TEXT
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 4
+NAME Loot / Trade
+SIZE 12
+COLOR 0 0 0 63
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 3
+SHOWN 0
+POSITION BOTTOMLEFT 0.002344 0.022917
+DIMENSIONS 465.000031 195.000000
+
+MESSAGES
+COMBAT_FACTION_CHANGE
+SKILL
+LOOT
+MONEY
+CURRENCY
+COMBAT_XP_GAIN
+COMBAT_HONOR_GAIN
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 2
+
+END
+
+WINDOW 5
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 6
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 7
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 8
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 9
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+WINDOW 10
+SIZE 12
+COLOR 0 0 0 40
+LOCKED 1
+UNINTERACTABLE 0
+DOCKED 0
+SHOWN 0
+POSITION BOTTOMLEFT 0.000227 0.009243
+DIMENSIONS 429.999969 120.000000
+
+MESSAGES
+END
+
+CHANNELS
+END
+
+ZONECHANNELS 0
+
+END
+
+
+11/29 07:43:45.967  Data Type 8: Server Save Time 1666751578, Local Save Time 1666751578
+11/29 07:43:45.967  Loading Data From File: Type 8
+11/29 07:43:46.013  Data: 1
+15
+13838085560549248255
+0
+1
+0
+100
+
+11/29 07:43:46.013  Data Type 9: Server Save Time 1666751578, Local Save Time 1666751578
+11/29 07:43:46.013  Loading Data From File: Type 9
+11/29 07:43:46.046  Data: 1
+1
+15
+13838085560549248255
+0
+1
+0
+100
+
+11/29 07:43:46.046  Data Type 11: Server Save Time 1666751577, Local Save Time 1666751577
+11/29 07:43:46.046  Loading Data From File: Type 11
+11/29 07:43:46.046  Data: 1
+11/29 07:43:46.046  Data Type 12: Server Save Time 1666751578, Local Save Time 1666751578
+11/29 07:43:46.046  Loading Data From File: Type 12
+11/29 07:43:46.046  Data: 1
+0
+0
+1 0 3 1
+4 0 3 2
+END
+
+11/29 07:43:46.046  Data Type 13: Server Save Time 1669306675, Local Save Time 1669306675
+11/29 07:43:46.046  Loading Data From File: Type 13
+11/29 07:43:46.046  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+11/29 07:43:46.046  Data Type 14: Server Save Time 1666751578, Local Save Time 1666751578
+11/29 07:43:46.046  Loading Data From File: Type 14
+11/29 07:43:46.046  Data: 0 0 0 0 0 0
+11/29 09:58:34.265  -----AccountData_Destroy: Character-----
+11/29 10:42:28.482  ----------------------------------------------------- Opened for Append -----------------------------------------------------

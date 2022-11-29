@@ -15,13 +15,14 @@ WoWProCharDB = {
 	["Trades"] = {
 	},
 	["EnablePetBattles"] = true,
-	["completedQIDs"] = {
+	["EnableFlight"] = true,
+	["Rank"] = {
 	},
-	["EnableRares"] = true,
 	["EnableGrailQuestName"] = false,
-	["EnableGrailBreadcrumbs"] = false,
 	["Enabled"] = true,
-	["DebugLevel"] = 0,
+	["EnableGrailQuestObsolete"] = false,
+	["GuideStack"] = {
+	},
 	["Tradeskills"] = {
 		[182] = {
 			["skillLvl"] = 175,
@@ -43,9 +44,9 @@ WoWProCharDB = {
 		},
 		[2585] = {
 			["skillLvl"] = 13,
+			["skillMax"] = 175,
 			["skillMod"] = 0,
 			["name"] = "Battle for Azeroth Fishing",
-			["skillMax"] = 175,
 		},
 		[185] = {
 			["skillLvl"] = 1,
@@ -60,23 +61,22 @@ WoWProCharDB = {
 			["skillMax"] = 950,
 		},
 	},
-	["GuideVersion"] = {
+	["BuildingLocations"] = {
 	},
 	["Taxi"] = {
 	},
-	["BuildingLocations"] = {
-	},
-	["EnableTreasures"] = true,
-	["EnableFlight"] = true,
-	["AutoHideInsideInstancesNotify"] = true,
-	["AutoHideInCombat"] = false,
 	["Guide"] = {
 	},
-	["GuideStack"] = {
+	["EnableTreasures"] = true,
+	["completedQIDs"] = {
 	},
-	["EnableGrailQuestObsolete"] = false,
+	["AutoHideInsideInstancesNotify"] = true,
+	["AutoHideInCombat"] = false,
+	["GuideVersion"] = {
+	},
+	["DebugLevel"] = 0,
+	["EnableGrailBreadcrumbs"] = false,
 	["skippedQIDs"] = {
 	},
-	["Rank"] = {
-	},
+	["EnableRares"] = true,
 }

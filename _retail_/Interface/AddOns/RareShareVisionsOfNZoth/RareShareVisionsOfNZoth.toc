@@ -1,0 +1,13 @@
+## Interface: 80300
+## Title: Rare Share: |cff9900ccVisions of N'Zoth
+## Notes: The Visions of N'Zoth extension for the Rare Share addon
+## Author: solocommand
+## Version: v1.1.0
+## DefaultState: enabled
+## Dependencies: RareShare
+## SavedVariables: RareShareDB_VisionsOfNZoth
+
+locales\enUS.lua
+locales\deDE.lua
+
+RareShareVisionsOfNZoth.lua

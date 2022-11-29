@@ -3,7 +3,7 @@ LoadAddOn("Blizzard_ScrappingMachineUI")
 ScrappingMachineFrame.ScrapButton.SetEnabledBackup = ScrappingMachineFrame.ScrapButton.SetEnabled --To prevent button mashers from scrapping while adding items
 
 EasyScrap = {}
-EasyScrap.addonVersion = 33
+EasyScrap.addonVersion = 34
 EasyScrap.saveData = {}
 EasyScrap.debugMode = false
 
@@ -50,6 +50,7 @@ _G["BINDING_NAME_CLICK EasyScrap_ScrapKeybindFrame:LeftButton"] = "Scrap Item"
 local keybindFrame = CreateFrame('Button', 'EasyScrap_ScrapKeybindFrame', nil, 'SecureActionButtonTemplate')
 keybindFrame:SetAttribute('type', 'click')
 keybindFrame:SetAttribute('clickbutton', ScrappingMachineFrame.ScrapButton)
+keybindFrame:RegisterForClicks("AnyUp", "AnyDown")
 
 --Interface\HelpFrame\HelpIcon-ReportAbuse
 

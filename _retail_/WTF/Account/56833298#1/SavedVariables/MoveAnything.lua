@@ -22,10 +22,10 @@ MADB = {
 				["ExtraAbilityContainer"] = {
 					["orgPos"] = {
 						"TOP", -- [1]
-						"UIParentBottomManagedFrameContainer", -- [2]
+						"UIParent", -- [2]
 						"TOP", -- [3]
 						0, -- [4]
-						-40.00004959106445, -- [5]
+						-135, -- [5]
 					},
 					["name"] = "ExtraAbilityContainer",
 					["pos"] = {
@@ -56,8 +56,8 @@ MADB = {
 			},
 		},
 	},
-	["frameListRows"] = 18,
-	["noBags"] = false,
-	["playSound"] = false,
 	["closeGUIOnEscape"] = false,
+	["playSound"] = false,
+	["noBags"] = false,
+	["frameListRows"] = 18,
 }

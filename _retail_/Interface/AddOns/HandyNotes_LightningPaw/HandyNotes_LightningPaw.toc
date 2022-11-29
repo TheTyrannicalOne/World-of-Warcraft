@@ -1,0 +1,12 @@
+## Interface: 90002
+## Title: HandyNotes_LightningPaw
+## Title-zhCN: HandyNotes_电爪
+## Notes: Displays the bushes that Lightning Paw may hide in.
+## Notes-zhCN: 显示电爪可能躲藏的草丛。
+## Author: Raimirow (Voidiver)
+## Version: 9.0.2.4
+## X-Category: Map & Minimap
+## SavedVariables: HandyNotes_LightningPawDB
+## RequiredDeps: HandyNotes
+
+LightningPaw.lua

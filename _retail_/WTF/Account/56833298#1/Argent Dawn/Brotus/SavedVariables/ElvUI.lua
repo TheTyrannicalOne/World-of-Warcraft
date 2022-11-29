@@ -1,10 +1,5 @@
 
 ElvCharacterDB = {
-	["ConvertKeybindings"] = true,
-	["CliqueDatatext"] = {
-	},
-	["ChatEditHistory"] = {
-	},
 	["ChatHistoryLog"] = {
 		{
 			"i dont recall the mechanics of the dungeon being so aids", -- [1]
@@ -94,5 +89,10 @@ ElvCharacterDB = {
 			[51] = 1663539533,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [4]
+	},
+	["ConvertKeybindings"] = true,
+	["ChatEditHistory"] = {
+	},
+	["CliqueDatatext"] = {
 	},
 }

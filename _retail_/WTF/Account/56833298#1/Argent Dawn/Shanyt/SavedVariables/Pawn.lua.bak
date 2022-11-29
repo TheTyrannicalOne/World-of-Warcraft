@@ -1,8 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0708,
-	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
-	["AutoSelectScales"] = true,
+	["LastVersion"] = 2.0713,
 	["ItemLevels"] = {
 		{
 			["ID"] = 157897,
@@ -90,6 +88,9 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:188039::::::::60:71::26:2:6652:1475:1:28:2057:::::|h[Harmonic Actuator]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

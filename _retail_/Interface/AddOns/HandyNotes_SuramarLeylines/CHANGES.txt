@@ -1,0 +1,12 @@
+tag 2cebbdc8b4379d54f606bd241322d462fdd3c4cc v6
+Author:	David Lynch <kemayo@gmail.com>
+Date:	Sat Nov 19 19:18:41 2022 -0600
+
+Tagging v6
+
+commit 1346173610d4799c64ee44bfd93a9a397dd4e117
+Author: David Lynch <kemayo@gmail.com>
+Date:   Sat Nov 19 19:18:36 2022 -0600
+
+    TOC for 10.0.2
+

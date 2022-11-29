@@ -324,33 +324,11 @@ spec:RegisterAuras( {
         type = "Magic",
         max_stack = 1
     },
-    hypothermia = {
-        id = 41425,
-        duration = 30,
-        max_stack = 1,
-    },
     -- Talent: Absorbs $w1 damage.  Melee attackers slowed by $205708s1%.$?s235297[  Armor increased by $s3%.][]
     -- https://wowhead.com/beta/spell=11426
     ice_barrier = {
         id = 11426,
         duration = 60,
-        type = "Magic",
-        max_stack = 1
-    },
-    -- Talent: Immune to all attacks and damage.  Cannot attack, move, or use spells.
-    -- https://wowhead.com/beta/spell=45438
-    ice_block = {
-        id = 45438,
-        duration = 10,
-        mechanic = "invulneraility",
-        type = "Magic",
-        max_stack = 1
-    },
-    -- Talent: Able to move while casting spells.
-    -- https://wowhead.com/beta/spell=108839
-    ice_floes = {
-        id = 108839,
-        duration = 15,
         type = "Magic",
         max_stack = 1
     },
@@ -889,29 +867,6 @@ spec:RegisterAbilities( {
         end,
     },
 
-    -- Targets in a cone in front of you take 383 Frost damage and have movement slowed by 70% for 5 sec.
-    cone_of_cold = {
-        id = 120,
-        cast = 0,
-        cooldown = 12,
-        gcd = "spell",
-        school = "frost",
-
-        spend = 0.04,
-        spendType = "mana",
-
-        startsCombat = true,
-
-        usable = function () return target.distance <= 12, "target must be nearby" end,
-        handler = function ()
-            applyDebuff( "target", "cone_of_cold" )
-            active_dot.cone_of_cold = max( active_enemies, active_dot.cone_of_cold )
-
-            removeBuff( "snowstorm" )
-            if talent.bone_chilling.enabled then addStack( "bone_chilling" ) end
-        end,
-    },
-
     -- Teleports you back to where you last Blinked. Only usable within 8 sec of Blinking.
     displacement = {
         id = 389713,
@@ -989,7 +944,7 @@ spec:RegisterAbilities( {
             end
 
             applyDebuff( "target", "flurry" )
-            addStack( "icicles", nil, 1 )
+            addStack( "icicles" )
 
             if talent.bone_chilling.enabled then addStack( "bone_chilling" ) end
             removeBuff( "ice_floes" )
@@ -1025,29 +980,6 @@ spec:RegisterAbilities( {
         end,
     },
 
-    -- Blasts enemies within 12 yds of you for 45 Frost damage and freezes them in place for 6 sec. Damage may interrupt the freeze effect.
-    frost_nova = {
-        id = 122,
-        cast = 0,
-        charges = function () return talent.ice_ward.enabled and 2 or nil end,
-        cooldown = 30,
-        recharge = function () return talent.ice_ward.enabled and 30 or nil end,
-        gcd = "spell",
-        school = "frost",
-
-        spend = 0.02,
-        spendType = "mana",
-
-        startsCombat = true,
-
-        usable = function () return not state.spec.frost or target.distance < 12, "target out of range" end,
-        handler = function ()
-            applyDebuff( "target", "frost_nova" )
-            if talent.bone_chilling.enabled then addStack( "bone_chilling" ) end
-            if legendary.grisly_icicle.enabled then applyDebuff( "target", "grisly_icicle" ) end
-        end,
-    },
-
     -- Launches a bolt of frost at the enemy, causing 890 Frost damage and slowing movement speed by 60% for 8 sec.
     frostbolt = {
         id = 116,
@@ -1062,7 +994,7 @@ spec:RegisterAbilities( {
         startsCombat = true,
 
         handler = function ()
-            addStack( "icicles", nil, 1 )
+            addStack( "icicles" )
             applyDebuff( "target", "chilled" )
             removeBuff( "ice_floes" )
             removeBuff( "cold_front_ready" )
@@ -1080,7 +1012,7 @@ spec:RegisterAbilities( {
 
             if azerite.tunnel_of_ice.enabled then
                 if frost_info.last_target_virtual == target.unit then
-                    addStack( "tunnel_of_ice", nil, 1 )
+                    addStack( "tunnel_of_ice" )
                 else
                     removeBuff( "tunnel_of_ice" )
                 end
@@ -1111,10 +1043,9 @@ spec:RegisterAbilities( {
             applyBuff( "frozen_orb" )
         end,
 
-
         --[[ Not modeling because you can throw it off in a random direction and get no procs.  Just react.
         impact = function ()
-            addStack( "fingers_of_frost", nil, 1 )
+            addStack( "fingers_of_frost" )
             applyDebuff( "target", "frozen_orb_snare" )
         end, ]]
 
@@ -1164,44 +1095,6 @@ spec:RegisterAbilities( {
                 applyBuff( "blazing_barrier" )
                 applyBuff( "prismatic_barrier" )
             end
-        end,
-    },
-
-    -- Talent: Encases you in a block of ice, protecting you from all attacks and damage for 10 sec, but during that time you cannot attack, move, or cast spells. While inside Ice Block, you heal for 40% of your maximum health over the duration. Causes Hypothermia, preventing you from recasting Ice Block for 30 sec.
-    ice_block = {
-        id = 45438,
-        cast = 0,
-        cooldown = function () return 240 + ( conduit.winters_protection.mod * 0.001 ) - 20 * talent.winters_protection.rank end,
-        gcd = "spell",
-        school = "frost",
-
-        talent = "ice_block",
-        startsCombat = false,
-        nodebuff = "hypothermia",
-        toggle = "defensives",
-
-        handler = function ()
-            applyBuff( "ice_block" )
-            applyDebuff( "player", "hypothermia" )
-        end,
-    },
-
-    -- Talent: Makes your next Mage spell with a cast time shorter than 10 sec castable while moving. Unaffected by the global cooldown and castable while casting.
-    ice_floes = {
-        id = 108839,
-        cast = 0,
-        charges = 3,
-        cooldown = 20,
-        recharge = 20,
-        gcd = "off",
-        dual_cast = true,
-        school = "frost",
-
-        talent = "ice_floes",
-        startsCombat = false,
-
-        handler = function ()
-            applyBuff( "ice_floes" )
         end,
     },
 
@@ -1318,7 +1211,7 @@ spec:RegisterAbilities( {
 
             if azerite.frigid_grasp.enabled then
                 applyBuff( "frigid_grasp", 10 )
-                addStack( "fingers_of_frost", nil, 1 )
+                addStack( "fingers_of_frost" )
             end
         end,
 

@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0706,
+	["LastVersion"] = 2.0712,
 	["LastPlayerFullName"] = "Brotus-Argent Dawn",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
@@ -27,8 +27,8 @@ PawnOptions = {
 		}, -- [5]
 		{
 			["ID"] = 154824,
-			["Level"] = 33,
-			["Link"] = "|cff1eff00|Hitem:154824::::::::30:262:::3:6654:42:1716:2:28:500:9:30:::::|h[Zalamar Chain of the Harmonious]|h|r",
+			["Level"] = 66,
+			["Link"] = "|cff1eff00|Hitem:154824::::::::30:262:::3:6654:42:1716:2:9:30:28:500:::::|h[Zalamar Chain of the Harmonious]|h|r",
 		}, -- [6]
 		{
 			["ID"] = 122253,
@@ -47,8 +47,8 @@ PawnOptions = {
 		}, -- [9]
 		{
 			["ID"] = 159382,
-			["Level"] = 34,
-			["Link"] = "|cff0070dd|Hitem:159382::::::::29:262::18:2:4776:6513:2:28:500:9:29:::::|h[Blood Tick Crushers]|h|r",
+			["Level"] = 86,
+			["Link"] = "|cff0070dd|Hitem:159382::::::::30:262::18:2:4776:6513:2:9:29:28:500:::::|h[Blood Tick Crushers]|h|r",
 		}, -- [10]
 		{
 			["ID"] = 128173,

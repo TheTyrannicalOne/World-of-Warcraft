@@ -55,16 +55,16 @@ MJEPersonalSettings = {
 			["Achievement"] = true,
 			["Instance"] = true,
 			["Class"] = true,
-			["World Event"] = true,
+			["Vendor"] = true,
 			["Profession"] = true,
 			["Island Expedition"] = true,
 			["Shop"] = true,
 			["Covenants"] = true,
 			["Drop"] = true,
 			["Garrison"] = true,
-			["Vendor"] = true,
-			["Quest"] = true,
 			["Promotion"] = true,
+			["Quest"] = true,
+			["World Event"] = true,
 		},
 		["rarity"] = {
 			true, -- [1]
@@ -76,13 +76,6 @@ MJEPersonalSettings = {
 		["hiddenIngame"] = false,
 		["hidden"] = false,
 		["notCollected"] = true,
-		["faction"] = {
-			["horde"] = true,
-			["alliance"] = true,
-			["noFaction"] = true,
-		},
-		["onlyTradable"] = false,
-		["onlyFavorites"] = false,
 		["mountType"] = {
 			["repair"] = true,
 			["flying"] = true,
@@ -92,7 +85,14 @@ MJEPersonalSettings = {
 			["ground"] = true,
 			["transform"] = true,
 		},
+		["onlyTradable"] = false,
+		["onlyFavorites"] = false,
 		["onlyUsable"] = false,
+		["faction"] = {
+			["horde"] = true,
+			["alliance"] = true,
+			["noFaction"] = true,
+		},
 		["family"] = {
 			["Arachnids"] = {
 				["Scorpions"] = true,
@@ -218,10 +218,10 @@ MJEPersonalSettings = {
 				["Quilen"] = true,
 			},
 			["Rays"] = {
-				["Nether Rays"] = true,
-				["Stingrays"] = true,
-				["Mana Rays"] = true,
 				["Fathom Rays"] = true,
+				["Nether Rays"] = true,
+				["Mana Rays"] = true,
+				["Stingrays"] = true,
 			},
 			["Elementals"] = {
 				["Sabers"] = true,

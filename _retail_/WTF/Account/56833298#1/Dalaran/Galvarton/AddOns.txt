@@ -355,3 +355,4 @@ Narcissus_Achievements: enabled
 Narcissus_Barbershop: enabled
 WoWPro: enabled
 WoWPro_Leveling: enabled
+Blizzard_CombatText: enabled

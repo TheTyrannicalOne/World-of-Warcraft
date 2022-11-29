@@ -1,0 +1,31 @@
+## Interface: 100002
+## Title: HandyNotes: Dragonflight Treasures
+## Notes: Where are the hidden treasures in the Dragon Isles?
+## Author: Kemayo
+## Version: v16
+## DefaultState: enabled
+## X-Category: Map
+## X-eMail: kemayo @ gmail DOT com
+## X-Curse-Project-ID: 615651
+## X-Wago-ID: ME6gxnK1
+## SavedVariables: HandyNotes_DragonflightTreasuresDB
+## RequiredDeps: HandyNotes
+## OptionalDeps: !LibUIDropDownMenu
+
+lib\LibUIDropDownMenu\LibUIDropDownMenu.xml
+
+handler\handler.xml
+
+dragonflight.lua
+
+zones\DragonIsles.lua
+zones\AzureSpan.lua
+zones\ForbiddenReach.lua
+zones\OhnahranPlains.lua
+zones\Thaldraszus.lua
+zones\WakingShores.lua
+
+shared\ExpeditionScoutsPack.lua
+
+achievements\HighestPeaks.lua
+achievements\DragonGlyphs.lua

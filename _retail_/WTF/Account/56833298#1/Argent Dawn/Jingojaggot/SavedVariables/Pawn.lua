@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0607,
+	["LastVersion"] = 2.0712,
 	["LastPlayerFullName"] = "Jingojaggot-Argent Dawn",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {

@@ -7011,7 +7011,7 @@ do
                                                         local pack, list, action = info[ 2 ], packControl.listName, tonumber( packControl.actionID )
                                                         local results = {}
 
-                                                        state.reset()
+                                                        state.reset( "Primary", true )
 
                                                         local apack = rawget( self.DB.profile.packs, pack )
 
@@ -7051,7 +7051,7 @@ do
                                                         local pack, list, action = info[ 2 ], packControl.listName, tonumber( packControl.actionID )
                                                         local results = {}
 
-                                                        state.reset()
+                                                        state.reset( "Primary", true )
 
                                                         local apack = rawget( self.DB.profile.packs, pack )
 
@@ -7095,7 +7095,7 @@ do
                                                         local pack, list, action = info[ 2 ], packControl.listName, tonumber( packControl.actionID )
                                                         local results = {}
 
-                                                        state.reset()
+                                                        state.reset( "Primary", true )
 
                                                         local apack = rawget( self.DB.profile.packs, pack )
 
@@ -7466,42 +7466,31 @@ end
 
 
 do
-    do
-        local completed = false
-        local SetOverrideBinds
+    local completed = false
+    local SetOverrideBinds
 
-        SetOverrideBinds = function ()
-            if InCombatLockdown() then
-                C_Timer.After( 5, SetOverrideBinds )
-                return
-            end
-
-            if completed then
-                ClearOverrideBindings( Hekili_Keyhandler )
-                completed = false
-            end
-
-            for name, toggle in pairs( Hekili.DB.profile.toggles ) do
-                if toggle.key and toggle.key ~= "" then
-                    SetOverrideBindingClick( Hekili_Keyhandler, true, toggle.key, "Hekili_Keyhandler", name )
-                    completed = true
-                end
-            end
+    SetOverrideBinds = function ()
+        if InCombatLockdown() then
+            C_Timer.After( 5, SetOverrideBinds )
+            return
         end
 
-        function Hekili:OverrideBinds()
-            SetOverrideBinds()
+        if completed then
+            ClearOverrideBindings( Hekili_Keyhandler )
+            completed = false
+        end
+
+        for name, toggle in pairs( Hekili.DB.profile.toggles ) do
+            if toggle.key and toggle.key ~= "" then
+                SetOverrideBindingClick( Hekili_Keyhandler, true, toggle.key, "Hekili_Keyhandler", name )
+                completed = true
+            end
         end
     end
 
-
-    local modeTypes = {
-        oneAuto = 1,
-        oneSingle = 2,
-        oneAOE = 3,
-        twoDisplays = 4,
-        reactive = 5,
-    }
+    function Hekili:OverrideBinds()
+        SetOverrideBinds()
+    end
 
     local function SetToggle( info, val )
         local self = Hekili

@@ -22,7 +22,7 @@ local strfind = string.find
 -- Generate our version variables
 --
 
-local BIGWIGS_VERSION = 253
+local BIGWIGS_VERSION = 254
 local BIGWIGS_RELEASE_STRING, BIGWIGS_VERSION_STRING = "", ""
 local versionQueryString, versionResponseString = "Q^%d^%s^%d^%s", "V^%d^%s^%d^%s"
 local customGuildName = false
@@ -37,7 +37,7 @@ do
 	local RELEASE = "RELEASE"
 
 	local releaseType = RELEASE
-	local myGitHash = "99db272" -- The ZIP packager will replace this with the Git hash.
+	local myGitHash = "7d3b62a" -- The ZIP packager will replace this with the Git hash.
 	local releaseString = ""
 	--[=[@alpha@
 	-- The following code will only be present in alpha ZIPs.
@@ -927,17 +927,19 @@ do
 		BigWigs_EternalPalace = "BigWigs_BattleForAzeroth",
 		BigWigs_Nyalotha = "BigWigs_BattleForAzeroth",
 		BigWigs_Uldir = "BigWigs_BattleForAzeroth",
+		BigWigs_Shadowlands = "BigWigs_Shadowlands",
+		BigWigs_CastleNathria = "BigWigs_Shadowlands",
+		BigWigs_SanctumOfDomination = "BigWigs_Shadowlands",
+		BigWigs_SepulcherOfTheFirstOnes = "BigWigs_Shadowlands",
 	}
 	local delayedMessages = {}
 
 	local warning = "The addon '|cffffff00%s|r' is forcing %s to load prematurely, notify the BigWigs authors!"
 	local dontForceLoadList = {
+		-- Static content
 		BigWigs_Core = true,
 		BigWigs_Plugins = true,
 		BigWigs_Options = true,
-		BigWigs_Shadowlands = true,
-		BigWigs_CastleNathria = true,
-		BigWigs_SanctumOfDomination = true,
 		BigWigs_Classic = true,
 		BigWigs_BurningCrusade = true,
 		BigWigs_WrathOfTheLichKing = true,
@@ -946,6 +948,7 @@ do
 		BigWigs_WarlordsOfDraenor = true,
 		BigWigs_Legion = true,
 		BigWigs_BattleForAzeroth = true,
+		BigWigs_Shadowlands = true,
 		LittleWigs = true,
 		LittleWigs_Classic = true,
 		LittleWigs_BurningCrusade = true,
@@ -955,8 +958,13 @@ do
 		LittleWigs_WarlordsOfDraenor = true,
 		LittleWigs_Legion = true,
 		LittleWigs_BattleForAzeroth = true,
+		LittleWigs_Shadowlands = true,
+		-- Dynamic content
+		BigWigs_DragonIsles = true,
+		BigWigs_VaultOfTheIncarnates = true,
 	}
 	-- Try to teach people not to force load our modules.
+	local tempPrint = true
 	for i = 1, GetNumAddOns() do
 		local name = GetAddOnInfo(i)
 		if IsAddOnEnabled(i) and not IsAddOnLoadOnDemand(i) then
@@ -977,12 +985,28 @@ do
 		end
 
 		if old[name] then
-			delayedMessages[#delayedMessages+1] = L.removeAddOn:format(name, old[name])
-			Popup(L.removeAddOn:format(name, old[name]))
+			if name == "BigWigs_Shadowlands" then
+				local meta = GetAddOnMetadata(i, "X-BigWigs-LoadOn-InstanceId")
+				if not meta then
+					delayedMessages[#delayedMessages+1] = L.removeAddOn:format(name, old[name])
+					if not BasicMessageDialog:IsShown() then -- Don't overwrite other messages with this as the message is confusing, show it last
+						Popup(L.removeAddOn:format(name, old[name]))
+					end
+				else
+					tempPrint = false
+				end
+			else
+				delayedMessages[#delayedMessages+1] = L.removeAddOn:format(name, old[name])
+				Popup(L.removeAddOn:format(name, old[name]))
+			end
 		end
 	end
 
-	local L = GetLocale()
+	if tempPrint then
+		delayedMessages[#delayedMessages+1] = L.missingAddOn:format("BigWigs_Shadowlands")
+	end
+
+	local myLocale = GetLocale()
 	local locales = {
 		--ruRU = "Russian (ruRU)",
 		--itIT = "Italian (itIT)",
@@ -993,7 +1017,7 @@ do
 		--ptBR = "Portuguese (ptBR)",
 		--frFR = "French (frFR)",
 	}
-	if locales[L] then
+	if locales[myLocale] then
 		delayedMessages[#delayedMessages+1] = ("BigWigs is missing translations for %s. Can you help? Visit git.io/vpBye or ask us on Discord for more info."):format(locales[L])
 	end
 
@@ -1006,6 +1030,9 @@ do
 						sysprint(delayedMessages[i])
 					end
 					delayedMessages = nil
+					if tempPrint then
+						RaidNotice_AddMessage(RaidWarningFrame, L.missingAddOn:format("BigWigs_Shadowlands"), {r=1,g=1,b=1}, 15)
+					end
 				end)
 			end)
 			self.LOADING_SCREEN_DISABLED = nil
@@ -1092,9 +1119,9 @@ end
 --
 
 do
-	local DBMdotRevision = "20221108192530" -- The changing version of the local client, changes with every new zip using the project-date-integer packager replacement.
-	local DBMdotDisplayVersion = "10.0.1" -- "N.N.N" for a release and "N.N.N alpha" for the alpha duration.
-	local DBMdotReleaseRevision = "20221108000000" -- Hardcoded time, manually changed every release, they use it to track the highest release version, a new DBM release is the only time it will change.
+	local DBMdotRevision = "20221115053734" -- The changing version of the local client, changes with every new zip using the project-date-integer packager replacement.
+	local DBMdotDisplayVersion = "10.0.2" -- "N.N.N" for a release and "N.N.N alpha" for the alpha duration.
+	local DBMdotReleaseRevision = "20221115000000" -- Hardcoded time, manually changed every release, they use it to track the highest release version, a new DBM release is the only time it will change.
 
 	local timer, prevUpgradedUser = nil, nil
 	local function sendMsg()
@@ -1436,7 +1463,7 @@ do
 		-- Lacking zone modules
 		if (BigWigs and BigWigs.db.profile.showZoneMessages == false) or self.isShowingZoneMessages == false then return end
 		local zoneAddon = public.zoneTbl[id]
-		if zoneAddon and zoneAddon ~= "BigWigs_Shadowlands" and zoneAddon ~= "BigWigs_Dragonflight" then -- XXX remove BigWigs_Shadowlands from this check when the module is split out
+		if zoneAddon and zoneAddon ~= "BigWigs_Dragonflight" then
 			if strfind(zoneAddon, "LittleWigs_", nil, true) then zoneAddon = "LittleWigs" end -- Collapse into one addon
 			if id > 0 and not fakeZones[id] and not warnedThisZone[id] and not IsAddOnEnabled(zoneAddon) then
 				warnedThisZone[id] = true

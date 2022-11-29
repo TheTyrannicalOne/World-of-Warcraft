@@ -16,7 +16,7 @@ local round, roundUp, roundDown = ns.round, ns.roundUp, ns.roundDown
 local safeMin, safeMax = ns.safeMin, ns.safeMax
 
 local GetPlayerAuraBySpellID = C_UnitAuras.GetPlayerAuraBySpellID
-local FindPlayerAuraByID, IsDisabledCovenantSpell = ns.FindPlayerAuraByID, ns.IsDisabledCovenantSpell
+local FindPlayerAuraByID, IsAbilityDisabled, IsDisabledCovenantSpell = ns.FindPlayerAuraByID, ns.IsAbilityDisabled, ns.IsDisabledCovenantSpell
 
 -- Clean up table_x later.
 local insert, remove, sort, tcopy, unpack, wipe = table.insert, table.remove, table.sort, ns.tableCopy, table.unpack, table.wipe
@@ -1092,17 +1092,17 @@ state.setStance = setStance
 
 
 local function interrupt()
-    removeDebuff( "target", "casting" )
+    state.removeDebuff( "target", "casting" )
 end
 state.interrupt = interrupt
 
 
 -- Use this for readyTime in an interrupt action; will interrupt casts at end of cast and channels ASAP.
 local function timeToInterrupt()
-    -- Why v2?
-    if debuff.casting.down or debuff.casting.v2 == 1 then return 3600 end
-    if debuff.casting.v3 == 1 then return 0 end
-    return max( 0, debuff.casting.remains - 0.25 )
+    local casting = state.debuff.casting
+    if casting.down or casting.v2 == 1 then return 3600 end
+    if casting.v3 == 1 then return 0 end
+    return max( 0, casting.remains - 0.25 )
 end
 state.timeToInterrupt = timeToInterrupt
 
@@ -2771,10 +2771,10 @@ do
     mt_target_health = {
         __index = function(t, k)
             if k == "current" or k == "actual" then
-                return UnitCanAttack("player", "target") and not UnitIsDead( "target" ) and UnitHealth("target") or 10000
+                return UnitCanAttack("player", "target") and not UnitIsDead( "target" ) and UnitHealth("target") or 100000
 
             elseif k == "max" then
-                return UnitCanAttack("player", "target") and not UnitIsDead( "target" ) and UnitHealthMax("target") or 10000
+                return UnitCanAttack("player", "target") and not UnitIsDead( "target" ) and UnitHealthMax("target") or 100000
 
             elseif k == "pct" or k == "percent" then
                 return t.max ~= 0 and ( 100 * t.current / t.max ) or 100
@@ -3980,37 +3980,56 @@ do
     setmetatable( state.legendary, mt_generic_traits )
     state.legendary.no_trait = { rank = 0 }
 
+
+
     -- Azerite and Essences.
     local mt_default_trait = {
         __index = function( t, k )
-            local heart, active = rawget( state.azerite, "heart" ), false
-
-            if heart and heart:IsEquipmentSlot() then
-                active = C_AzeriteItem.IsAzeriteItemEnabled( heart )
+            if not state.azerite.active then
+                if k == "enabled" or k == "equipped" or k == "major" or k == "minor" then
+                    return false
+                elseif k == "disabled" then
+                    return true
+                end
+                return 0
             end
 
-            if k == "enabled" or k == "minor" or k == "equipped" then
-                return active and t.__rank and t.__rank > 0
+            if k == "enabled" or k == "equipped" then
+                return t.__rank and t.__rank > 0
             elseif k == "disabled" then
-                return not active or not t.__rank or t.__rank == 0
+                return not t.__rank or t.__rank == 0
             elseif k == "rank" then
-                return active and t.__rank or 0
+                return t.__rank or 0
             elseif k == "major" then
-                return active and t.__major or false
+                return t.__major or false
             elseif k == "minor" then
-                return active and t.__minor or false
+                return t.__minor or false
             end
         end
     }
 
+
+    local HEART_OF_AZEROTH_ITEM_ID = 158075
+
     local mt_artifact_traits = {
         __index = function( t, k )
+            if k == "active" then
+                local neck = GetInventoryItemID( "player", INVSLOT_NECK )
+                if not neck or neck ~= HEART_OF_AZEROTH_ITEM_ID then
+                    rawset( t, "active", false )
+                    return false
+                end
+
+                local item = C_AzeriteItem.FindActiveAzeriteItem()
+                rawset( t, "active", item and item:IsEquipmentSlot() and C_AzeriteItem.IsAzeriteItemEnabled( item ) )
+                return t.active
+            end
+
             return t.no_trait
         end,
 
         __newindex = function( t, k, v )
-            rawset( t, k, setmetatable( v, mt_default_trait ) )
-            return t[ k ]
+            if v ~= nil then rawset( t, k, setmetatable( v, mt_default_trait ) ) end
         end
     }
 
@@ -6700,7 +6719,7 @@ function state:IsKnown( sID )
         return false
     end
 
-    if ability.disabled then return false, "not usable here" end
+    if IsAbilityDisabled( ability ) then return false, "not usable here" end
 
     if sID < 0 then
         if ability.known ~= nil then

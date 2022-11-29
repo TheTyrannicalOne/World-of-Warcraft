@@ -557,7 +557,7 @@ local TriggerColdSteelHotBlood = setfenv( function()
 end, state )
 
 local TriggerSlaughteringStrikesAnnihilator = setfenv( function()
-    addStack( "slaughtering_strikes_annihilator", nil, 1 )
+    addStack( "slaughtering_strikes_annihilator" )
 end, state )
 
 local RemoveFrenzy = setfenv( function()
@@ -669,7 +669,7 @@ local WillOfTheBerserker = setfenv( function()
 end, state )
 
 local TriggerHurricane = setfenv( function()
-    addStack( "hurricane", nil, 1 )
+    addStack( "hurricane" )
 end, state )
 
 spec:RegisterHook( "reset_precast", function ()
@@ -870,7 +870,7 @@ spec:RegisterAbilities( {
 
             gain( health.max * ( buff.enraged_regeneration.up and 0.23 or 0.03 ) , "health" )
 
-            if talent.bloodcraze.enabled then addStack( "bloodcraze", nil, 1 ) end
+            if talent.bloodcraze.enabled then addStack( "bloodcraze" ) end
             if talent.cold_steel_hot_blood.enabled and stat.crit >= 100 then
                 applyDebuff( "target", "gushing_wound" )
                 gain( 4, "rage" )
@@ -883,7 +883,7 @@ spec:RegisterAbilities( {
 
             if legendary.cadence_of_fujieda.enabled then
                 if buff.cadence_of_fujieda.stack < 5 then stat.haste = stat.haste + 0.01 end
-                addStack( "cadence_of_fujieda", nil, 1 )
+                addStack( "cadence_of_fujieda" )
             end
         end,
     },
@@ -929,7 +929,7 @@ spec:RegisterAbilities( {
             removeStack( "whirlwind" )
             gain( health.max * ( buff.enraged_regeneration.up and 0.23 or 0.03 ) , "health" )
 
-            if talent.bloodcraze.enabled then addStack( "bloodcraze", nil, 1 ) end
+            if talent.bloodcraze.enabled then addStack( "bloodcraze" ) end
             if talent.cold_steel_hot_blood.enabled and stat.crit >= 100 then
                 applyDebuff( "target", "gushing_wound" )
                 gain( 4, "rage" )
@@ -942,7 +942,7 @@ spec:RegisterAbilities( {
 
             if legendary.cadence_of_fujieda.enabled then
                 if buff.cadence_of_fujieda.stack < 5 then stat.haste = stat.haste + 0.01 end
-                addStack( "cadence_of_fujieda", nil, 1 )
+                addStack( "cadence_of_fujieda" )
             end
 
         end,
@@ -1030,7 +1030,7 @@ spec:RegisterAbilities( {
         texture = 136146,
 
         handler = function ()
-            addStack( "death_wish", nil, 1 )
+            addStack( "death_wish" )
         end,
     },
 
@@ -1311,7 +1311,7 @@ spec:RegisterAbilities( {
             removeStack( "whirlwind" )
             if talent.tenderize.enabled then
                 applyBuff( "enrage" , 6 )
-                addStacks( "slaughtering_strikes", 3 )
+                addStack( "slaughtering_strikes", nil, 3 )
             end
             -- Tenderize increases the enrage by 1 second only when using onslaught
         end,
@@ -1384,7 +1384,7 @@ spec:RegisterAbilities( {
             removeStack( "whirlwind" )
             spendCharges( "crushing_blow", 1 )
             if buff.will_of_the_berserker.up then buff.will_of_the_berserker.expires = query_time + 12 end
-            if talent.slaughtering_strikes.enabled then addStack( "slaughtering_strikes_raging_blow", nil, 1 ) end
+            if talent.slaughtering_strikes.enabled then addStack( "slaughtering_strikes_raging_blow" ) end
         end,
     },
 
@@ -1426,7 +1426,7 @@ spec:RegisterAbilities( {
         handler = function ()
             applyBuff( "enrage" )
             removeStack( "whirlwind" )
-            if talent.frenzy.enabled then addStack( "frenzy", nil, 1 ) end
+            if talent.frenzy.enabled then addStack( "frenzy" ) end
             if talent.reckless_abandon.enabled then addStack( "reckless_abandon", nil, 2 ) end
         end,
     },
@@ -1706,11 +1706,11 @@ spec:RegisterAbilities( {
     wrecking_throw = {
         id = 384110,
         cast = 0,
-        cooldown = function () return (pvptalent.demolition.enabled and 45 * 0.5 or 45) end,
+        cooldown = function () return pvptalent.demolition.enabled and 22.5 or 45 end,
         gcd = "spell",
 
         talent = "wrecking_throw",
-        startsCombat = false,
+        startsCombat = true,
         texture = 460959,
 
         handler = function ()
@@ -1742,4 +1742,4 @@ spec:RegisterSetting( "heroic_charge", false, {
 } )
 
 
-spec:RegisterPack( "Fury", 20221030.1, [[Hekili:fN1xVTTnq8pl(fxBScflN4K0bhdSvGn0GH8WCb2BsMwI2Ml6pEKsjnfc6Z(osklrstk7S209qlIjpE8(7V7oXa)GphSmgvGdEy6KPt9NC5ep)R9V9QRdww8YECWY9OOhrBH)idLc))VvsFHV4lj5Oy(Hz5L0iyJDff7z)8fxSLuSRCTxuE6fmsAzcQGKNfrrBk4)o6IGLRljjfFklyT9BEwWsuzXUCAWYLK0pcCMehJLKJzrbldwMqyfmXLtY2MGdlq0T4cyHhe6dodTobhh8RblJOKcmLG436MnEuC0Jjygld(Nx5(6vvv1Re7GZOGwceKIizS6vZRxTnkwsWO6v8nRxTOELV)K6vdRxvGsWzfE5pHPpVdNKccsOGdnxE9QXhF4BLNDWR44cHBdfN91x0eoFpUDkIBCdwsrP75(OcWwYnahwh)fCujyHvSiajxQssuEwmonZGKR63m2ySIZFoRvjB0iuwgzhb8650oDrQZ29aJ7KL1j55Xf7iuwbxiMDwcbNhdfsaBpojPjwG59mWNKNjzXs3MuoPisCi(jHGghZ8izYDNPjhqamyuO5LSqAoIYLLR))swYJFjJfUHN1bIXnofJbN0dykOCzO5ifyU(s(AB4NY9NXsqLB3j8i3686J2XvvMududm3YJSbh7Z8Z)Hx75JOLSDQCWFYz5i6ImDBumI7wJk2jUb3qiNnV6IH91YhpKNQNS5F530nc(NubBCN02BWHBzFMQS3zKmK(R11WohUbD3Ob7O5ynO8wvkBZDmP6dAuXXv48Ryh1KHf8chBqLjDvioCS9LPP4edop1T7GKca5ZVRE1eVzY4RuacpLBzJHAsOSijqVc2SmYUf31kFhPHgyNLtNjYITrxdYXv6ih7aemsuycgTVfsVvVZBkqOQ3UXBL4yEXyroweIvaMAakhy3r2YEblJYZt45MEONqat1QODPAu0tqAc1gINSlKTONWjH5Ba3noCdpGnerxZVLoM0dnhGY0ITLGS6Me3aw2kMPWqmLHP8aYZb0sJnCZthJsia0ll8VlJ3YD1DauhiaumSq8ntp0aE4rrSckkjmcLygV7R1qqjdhcsxkZKQt0tWrkHLIokgi0wHRHsIEK1b20hiybbsgyHaYLiOVHuRL2K1GLRM8cJGYct5gY26EduBzrNKw(YPlbVfknIOV4IOXT8tQzEqHFeLRAR5zjWcpM1wlQn6)iIAZdAAsujnwMP0H0Eca(ESsJC1cMOpZCgtq1gUcgQMyo1Pa5UDKt0lsF4a(gglts4iDtAn7hUijrAoVEvjfWgfZrx5NVL6OhXXtaJypY19Sknk7H1oPhZmCtuKZnM0j6DDOAUdjDpfkdfh2sM1U(tXOIWiOuemVJSRF39aZL)Vx3IT2i4kVzpETfRb0Xq5pc5dzkh1muw0rFytrFf7bNuEk0vuqVZEcciTmdVjhoPhJSndxiq)KjPGEXRuW8W)tjz)((IK0a13a7StmzTz)oWcGjGXPQD4AWeGOz87jy5F9l)5dF6HF)NRxvV6Z7G(ladCoTacLYP1RENMI(oq25cgLBSz58gGGXZZtHj3HfGUBYG(29QV)pizWw(ap)yEgC7ITFNR5CbUwK3Z(h8VaDJ8)Y4Fy8)k78xjD3GZwacm55n)44z7GCgC8Ob8oYUo5nqi9D4T(2y6LVfm97RFV((tKH1mpYRm3AMdNUwjFtpV1(bos)V(TJ1VfH)ozQOYOj)06n4iwD73v5R((pj80CwD5HUcHgj5FXsyBEjJ8nKe8byCMxBnKF6UluX7FpzZDdEnLnQV3gl7QsWfUgkUtoSw7Vb6KZPYVu(uUZVdMWTQ6Orrxmt9mkJyYp4O(gIDX0zdTp86IRMnwLRYHt1wriTczZ9KOQhOzas(jC0h58lvP)WqpVNxP)o3toQEMUHg1wTDYp(LBTrofQngVZ(redtPCO2r(uxuFcpB6gttmvN)Y91o0O)u1luyoL(elWbgNC4iRtJvvnyuZXToGvv1jMaBmWHEN8QQ6KtDT42jJTRzdSRAJS5wRQ4ZBmuRz85t15Sz69XakdDfU6ROi6BT4QjGrqdRZHS0NOm4yzrLCtBxBiJPh(yRI2elvv9AGA7sNZFhZHSWF4Hyg3ZfmCGTjcGOLJN4y(0)78tda1y2bjwIwV0kiWEABCxZxg2fMrJzu)rQMVncsqgXxAHV)KHnkXr96o(ar3oz4GEisCf6p10CFVzoezqJBEEj3e084sUjq5loBgrflsEhzjfzGnl0y3xIXZ5yl01zOMTaMf(Z6526EWM36l6WlZ4i91abUQYCwa3Sw5R4lkHkFCMf(94Pv)E(N5zAFrb7U(EaKovC0R5OnzEUjG)(kVwMAip9bU62SCw(NZ0L4MSUVVJBsmECfiiok4HBMk(sdb)7]] )
+spec:RegisterPack( "Fury", 20221121.1, [[Hekili:vRvBVnUns4FlghGJnUfkwoXDtxKKpCf3b0fh6bCEbUVjjgjABERKOpsP4nfc63(nK6nskszN2KITFODxlo8HZmCENBGFWxc2MGkWb)Y6vRx77V23ZF9n3E7DbBlE5ioy7ru8xr7H)sokd())Js2lIp(skfLi2mNwYIHfouuCK)PRVEpP4q5tEX0SR5KSYuubHMhZq7ke)o(6GTpvssl(58GNSFY3gSfvwCGYc2ULK9taYKKeCd5yECW2GTPeEbxE4K89P4WceBpUa(WViLhCo6PuCsWFlyBmJuGzeK4u3TZdXpGZd)VL73Jz5WP4vESoAEDK9fz4mejNxhDFD0(4eVm03aElwiqWH8nCCjW9fa)p9HIZzGcS7OwuhXpIttBzAU3Pdew6jsEsD0J1r(1rvv1rmejje)moVWdLKW9i5nRUPoA5apaA68emJwYdzuetWl34KxkqPc4oXqfhcr5jH7GRsVos7XmMvYpaQ1WNsPNeiE7fkDkqqbUklxS5nV6nROx)bJn3rcn5LCUK9BmjyKJnl8FaBV6OVqkq5K46O)nG9hQJ(xa5xb3Ict36OJmAm8J)U8KHBE8okd(ZekiZ1rKcyTeuwZo506OIdygwS9C4h5ymCnva)TtisrDeS3bO2ry8cpvzCgqBJwhLNtoqaNbkRtL3zn0srrdxhkvi9KiSfmnIw(wzhbQ4po99ddh)1umNNd)N8Sn5hlUineTqC2cTI408xjz5wjL(mMD6aontyLPlUlhV57A27SxX2Lm4ogo)xFzAFygk7Oi2gOiUtOimnGv0maj)OkjDMP6K4V6IS3tONY7L0ZyHmRvEgDvOehaCvPjfhe2FsUWmk4F6CC(o3RX3De)Z7YBYyIdStAWIW5KFfpoSmnNNIk3FO5c2Du(4dcbJ3jndEDNlUpWpQr99VSW(dwYZU4tsAT(eqJ8CCNH4vIOI9VzIdhQh3c)hvD17Isy4QF35Y0YHB(Sq6Uq(jkdSIgX2WnAMekTildQh9dC9kDMAGJnOZxluMw6CdkxRszVNGjv3OrLioKaVIdmtalerv2HkthkfRBBhlZYWPMi7wdsYG4c3)qD0kVnn2xzqC)mHAnbk(dLh3KDyJIKkVANUgOfA(22HC9gPBJn6AJdCREvyqCokeckfJo2xVuVCtBtxOk3Un5BIk5LGL(yXiEbOQHq)aCJ0LwkqsXoNstf(MEONraOAPbVr1k6zWYMzRsGMY95XigxydVdCbfLfNgYlyKDyfRyNK0LwDeQ7rpJtfBbYrekJ(hIypj49byNGgZCXspM20AVQ0Xg5uvqeZ4yMWo3A(0PGrO1hakLaHS5qtfj7fwqdjp6iaKmSK)nzDnVoHXjOubvBmk10nYxZIRKJdbUlJBs1zkfFKqyjzLIccTxE3WiXFLFMyUQPQ5HIGIIF2sQ1uInjQB(A6lCckpmtOi7ZxUqMVHvMlkcrK5xJkvOhsI4GMLA(YnUld5aotIPjKPfUQBtwCcLZLuTtWmHQENRx5IHoBchxvCmvWG2kECsIiC3kZm8Te1FgNvKuI4OOogY9Dg1SfbZnIRVSAWnSZC3PtRW29TZEJb1xIycNJNeHVP5d5KTYtNPCuTQDjzqr4pJtc7jZARczyurymKpc6uQR2xxL1k4)3QtXwTe9LzOi89zSHyzHn)iumsNMb7e2M5rB0oYIlocxs0mO0OGjN0JwKbozFoUqgRQXjfKlrCDOCS)xj54XjTK0cudRCqohlZIEGpaQaUGQUrzbg8NqSCX5eS9lhGclaLkL114ZvAc3va)kygMqbZPIkFqLf0miBk8bOSMCOIvV6p)pj5Ws38P6OFIMdNOC5RSwI8vn9AzFXUBtGOf(FBzpY)GDKvC(mG1IB5fIPABBgGARJotu)ODuhnzadODo5G)OX3F17GQ23)pqq)DEb6V(9GxDaAFx1MmQz32Ja89ZxZ)23pO38(b9D2H2OtxdSD0h8a41F2siY2ojFDbh9NkEtFDA2myhve3iz3eAhvF2b(zko9SW3YCwX22Aob2rWS3cvIdZHFFEXUavwgMjEAfIocQF8nL)Q)8plTqfqDdygklmOos(yuWYYs5IHgPxlQuHUJK23Km3RV0L)6dxRwMXhi7Ey2RPAL6pBdYHIteSzlfp0mOG(Fd01mJeXHkMWY9pSYBtv1OXG84g19OmEdXgxm1auEC9M52hCYJ3UzPkQndgr7lsUvYBUNcI6gAhEHyhoAF5(BuPVRZ4pikW8bNJTW9wCpsc19mmncTV2prbb)ATLdfQngBG9TiBsxzt9Jsq9J6toWMSX1yt1(6DFSZn6Ks9aL3anxJwILySZ5lS2LFv1IzocGoFMTOFlxANhMzNjwy7cOQs0d7CTg8UF9knKn9Dhh3yUlBr)Qkhl94TRQQMPfsZbVmfRmBmVOsUzBP9xUM3fJ1kADbxvnPcQVZpb(o6T9r)5lAzw39AoFMTUmxwvnUl27x)BhpTOJg9J2gOqTxnLWREAl8q7dc2RwT8p1G52xOttUpoXb4aVz8u)2U9CQTTPZE0xjE8Ott7vduSZ1ltCI938aQJ5s3BXu)PSL)sD03dpqPBEF4DvD4i2BFQ2CuRNvVGU8n9kS9vRCLTr)WvmbHqVIp9OV)Q5Tm9O(Ax2r0DR6dhBJi5rO)q8tBL3A3CwRe3eO8uGMMsIiVaJB52zMnn0Y)0z49DHDhT7HQD5kOF4vvDCyx34tzsVxnMu7B5cztELrN6FHv7wiZ(Ta3Gj3RD7UKQZ6A7MaXdlRyqy0a(fOyUiU9ctF4MSHHD7Me9NBwmS1G))d]] )

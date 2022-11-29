@@ -12,7 +12,11 @@ Addon.Loc = {
             "Enable Chat Announcements",
             "Enables/Disables announcing rares to general chat when targeted",
         },
-        Sound = {
+        PartyRaidChatAnnounce = {
+            "Enable Party/Raid Chat Announcements (Chat Announcements must be enabled)",
+            "Enables/Disables announcing rares to Party/Raid chat when targeted (Chat Announcements must be enabled)",
+        },
+       Sound = {
             "Enable Sounds",
             "Enables/Disables audible clues when rares are tagged",
         },

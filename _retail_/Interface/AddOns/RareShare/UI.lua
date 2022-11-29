@@ -50,6 +50,19 @@ function Addon:InitUI()
     })
     Y = Y - 40
 
+    CheckBoxes.PartyRaidChatAnnounce = self:CreateCheckBox({
+        ["Parent"]      = ConfigFrame,
+        ["DisplayText"] = Addon.Loc.Config.PartyRaidChatAnnounce[1],
+        ["X"]           = X,
+        ["Y"]           = Y,
+        ["Tooltip"]     = Addon.Loc.Config.PartyRaidChatAnnounce[2],
+        ["Default"]     = true,
+        ["Value"]       = RareShareDB["Config"]["PartyRaidChatAnnounce"],
+        ["OldValue"]    = RareShareDB["Config"]["PartyRaidChatAnnounce"],
+        ["Setting"]     = "RareShareDB[\"Config\"][\"PartyRaidChatAnnounce\"] = ",
+    })
+    Y = Y - 40
+
     CheckBoxes.Sound = self:CreateCheckBox({
         ["Parent"]      = ConfigFrame,
         ["DisplayText"] = Addon.Loc.Config.Sound[1],
@@ -126,7 +139,8 @@ function Addon:InitUI()
 
     function ConfigFrame.okay()
         for i,v in pairs(CheckBoxes) do
-            loadstring(v.Setting .. tostring(v.value))()
+            loadstring(v.Setting .. tostring(v:GetChecked()))()
+			v.value = v:GetChecked()
             v.oldValue = v.value
         end
     end

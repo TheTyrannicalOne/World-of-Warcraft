@@ -6,7 +6,7 @@ ElvUI_AuraBarsMovers: disabled
 ElvUI_CustomTweaks: disabled
 AckisRecipeList_FirstAid: enabled
 AckisRecipeList_Mining: enabled
-ActionBarProfiles: enabled
+ActionBarProfiles: disabled
 AngryWorldQuests: enabled
 AAP-Core: enabled
 AAP-Vanilla: enabled

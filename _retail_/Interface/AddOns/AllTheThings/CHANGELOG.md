@@ -1,25 +1,17 @@
 # AllTheThings
 
-## [DF-3.0.6](https://github.com/DFortun81/AllTheThings/tree/DF-3.0.6) (2022-11-16)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.0.5...DF-3.0.6) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [DF-3.1.0](https://github.com/DFortun81/AllTheThings/tree/DF-3.1.0) (2022-11-28)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.0.8...DF-3.1.0) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 
-### Twitch Drops
+### Dragonflight is here 🎉🔥🐲🐉
 
-Watch WoW: Dragonflight content on Twitch to get free rewards! More info [here](https://worldofwarcraft.com/en-us/news/23873861).
+All Dragonflight content is marked collectible in AllTheThings as of this release 🎉
 
-### Functional changes
+All your usual categories like Mounts, Achievements, Quests, etc and even expansion specific additions like Dragonriding customizations and Faction activities.
 
--
+Most of the work this time around was done by @gbrage ♥
 
-### Logic fixes
+Because of the amount of content in new expansion we inevitably missed something so please come to our [Discord](https://discord.gg/allthethings) to report issues you see!
 
-- Fixed errors on Item comparison tooltips.
-- Fixed another error related to Transmog functionality (usage of `C_TransmogSets.GetSetSources`).
-- Fixed right-click minimap button to options.
-
-
-### Data fixes
-
-- Updates to pre-patch event, Forbidden Reach, intro questline and Uldaman: Legacy of Tyr.
-- Other fixes.
+Have a good time in Dragonflight 🔥

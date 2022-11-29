@@ -1,10 +1,10 @@
-lightweight tag a769e04aaa065bcc93bf0068d2f40e28a190de40 0.7.0
+lightweight tag e826729024fbf738bb28f44aaa4a58c8f6c29c33 0.7.2
 Author:	nezroy <nezroy@gmail.com>
-Date:	Sat Oct 29 05:04:35 2022 -0600
+Date:	Tue Nov 29 03:06:29 2022 -0700
 
-commit a769e04aaa065bcc93bf0068d2f40e28a190de40
+commit e826729024fbf738bb28f44aaa4a58c8f6c29c33
 Author: nezroy <nezroy@gmail.com>
-Date:   Sat Oct 29 05:04:35 2022 -0600
+Date:   Tue Nov 29 03:06:29 2022 -0700
 
-    Add several missing movable frames
+    Add feature to merge quest, gossip, etc. frames
 

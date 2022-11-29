@@ -5,88 +5,58 @@ WoWProCharDB = {
 	["AutoHideInsideInstances"] = true,
 	["EnableGrailCheckPrereq"] = false,
 	["QID2Guide"] = {
-		[47221] = "Ludo_Argus",
-		[9407] = "JamHel6063",
-		[47835] = "Ludo_Argus",
 		[28705] = "JamHel6063",
+		[47221] = "Ludo_Argus",
+		[47835] = "Ludo_Argus",
+		[9407] = "JamHel6063",
 	},
 	["Trades"] = {
 	},
 	["GuideStack"] = {
 	},
-	["completedQIDs"] = {
-	},
-	["Rank"] = {
-	},
+	["EnableFlight"] = true,
+	["EnableRares"] = true,
 	["EnableGrailQuestName"] = false,
+	["EnablePetBattles"] = true,
 	["Enabled"] = true,
-	["EnableGrailQuestObsolete"] = false,
-	["GuideVersion"] = {
-	},
+	["EnableGrailBreadcrumbs"] = false,
 	["Tradeskills"] = {
-		[182] = {
-			["skillLvl"] = 181,
-			["skillMod"] = 0,
-			["name"] = "Herbalism",
-			["skillMax"] = 300,
-		},
-		[2514] = {
-			["skillLvl"] = 134,
-			["skillMod"] = 0,
-			["name"] = "Inscription",
-			["skillMax"] = 300,
-		},
-		[773] = {
-			["skillLvl"] = 134,
-			["skillMod"] = 0,
-			["name"] = "Inscription",
-			["skillMax"] = 300,
-		},
-		[2556] = {
-			["skillLvl"] = 181,
-			["skillMod"] = 0,
-			["name"] = "Herbalism",
-			["skillMax"] = 300,
-		},
-		[2592] = {
+		[356] = {
 			["skillLvl"] = 137,
 			["skillMax"] = 300,
+			["skillMod"] = 0,
 			["name"] = "Fishing",
-			["skillMod"] = 0,
-		},
-		[794] = {
-			["skillLvl"] = 1,
-			["skillMod"] = 0,
-			["name"] = "Archaeology",
-			["skillMax"] = 75,
 		},
 		[185] = {
 			["skillLvl"] = 122,
+			["skillMax"] = 300,
 			["skillMod"] = 0,
 			["name"] = "Cooking",
-			["skillMax"] = 300,
 		},
-		[356] = {
+		[2592] = {
 			["skillLvl"] = 137,
 			["skillMod"] = 0,
 			["name"] = "Fishing",
 			["skillMax"] = 300,
 		},
 	},
-	["Guide"] = {
-	},
+	["DebugLevel"] = 0,
 	["Taxi"] = {
 	},
-	["BuildingLocations"] = {
+	["GuideVersion"] = {
 	},
 	["EnableTreasures"] = true,
-	["EnableFlight"] = true,
+	["completedQIDs"] = {
+	},
 	["AutoHideInsideInstancesNotify"] = true,
 	["AutoHideInCombat"] = false,
-	["DebugLevel"] = 0,
-	["EnableGrailBreadcrumbs"] = false,
-	["EnablePetBattles"] = true,
+	["BuildingLocations"] = {
+	},
+	["Guide"] = {
+	},
+	["EnableGrailQuestObsolete"] = false,
 	["skippedQIDs"] = {
 	},
-	["EnableRares"] = true,
+	["Rank"] = {
+	},
 }

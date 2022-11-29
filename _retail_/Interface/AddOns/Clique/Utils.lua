@@ -12,6 +12,10 @@
 local addonName, addon = ...
 local L = addon.L
 
+local strconcat = strconcat
+---@diagnostic disable-next-line: undefined-field
+local strsplit = string.split
+
 -- Returns the prefix string for the current keyboard state.
 --
 -- Arguments:
@@ -200,7 +204,7 @@ local binMap = {
     RALT = 3,
     CTRL = 4,
     LCTRL = 5,
-    LCTRL = 6,
+    RCTRL = 6,
     SHIFT = 7,
     LSHIFT = 8,
     RSHIFT = 9,

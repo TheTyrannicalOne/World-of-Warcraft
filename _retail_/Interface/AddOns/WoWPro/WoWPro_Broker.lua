@@ -890,6 +890,51 @@ function WoWPro.SelectItemToUse(use, debug)
     return value, value
 end
 
+function WoWPro.SetActionTexture(currentRow)
+    local k = currentRow.index
+    local action = WoWPro.action[k]
+    local QID = tonumber(WoWPro.QID[k])
+    local mapID = _G.C_Map.GetBestMapForUnit("player")
+    local isCampaign = WoWPro.RETAIL and _G.C_QuestLine and tonumber(QID) and mapID and _G.C_QuestLine.GetQuestLineInfo(tonumber(QID), mapID) and _G.C_QuestLine.GetQuestLineInfo(tonumber(QID), mapID).isCampaign
+
+    -- Set default Texture
+    currentRow.action:SetTexture(WoWPro.actiontypes[action])
+    -- Set custom Texure
+    currentRow.action.tooltip.text:SetText(WoWPro.actionlabels[action])
+    if WoWPro.noncombat[k] and (WoWPro.action[k] == "C" or WoWPro.action[k] == "N") then
+        currentRow.action:SetTexture("Interface\\AddOns\\WoWPro\\Textures\\Config.tga")
+        currentRow.action.tooltip.text:SetText("No Combat")
+    elseif WoWPro.hand[k] and (WoWPro.action[k] == "C" or WoWPro.action[k] == "N") then
+        currentRow.action:SetTexture(WoWPro.actiontypes["HAND TAG"])
+        currentRow.action.tooltip.text:SetText(WoWPro.actionlabels["HAND TAG"])
+    elseif WoWPro.inspect[k] and (WoWPro.action[k] == "C" or WoWPro.action[k] == "N") then
+        currentRow.action:SetTexture(WoWPro.actiontypes["INSPECT TAG"])
+        currentRow.action.tooltip.text:SetText(WoWPro.actionlabels["INSPECT TAG"])
+    elseif WoWPro.lootitem[k] and WoWPro.action[k] == "C" then
+        currentRow.action:SetTexture(WoWPro.actiontypes['l'])
+        currentRow.action.tooltip.text:SetText("Loot Complete")
+    elseif WoWPro.chat[k] then
+        currentRow.action:SetTexture("Interface\\GossipFrame\\Gossipgossipicon")
+        currentRow.action.tooltip.text:SetText("Chat")
+    elseif WoWPro.jump[k] then
+        currentRow.action:SetTexture("Interface\\Icons\\spell_arcane_teleportironforge")
+        currentRow.action.tooltip.text:SetText("Jump")
+    elseif WoWPro.vehichle[k] then
+        -- Yeah, that is how blizzard spelled it!
+        currentRow.action:SetTexture("Interface\\CURSOR\\vehichleCursor")
+        currentRow.action.tooltip.text:SetText("Take Vehicle")
+    elseif WoWPro.elite[k] and WoWPro.action[k] == "A" then
+        currentRow.action:SetTexture(WoWPro.actiontypes[action.." ELITE"])
+        currentRow.action.tooltip.text:SetText("Elite Quest")
+    elseif isCampaign and WoWPro.action[k] == "A" then
+        currentRow.action:SetTexture(WoWPro.actiontypes[action.." Campaign"])
+        currentRow.action.tooltip.text:SetText("Campaign Quest")
+    elseif isCampaign and WoWPro.action[k] == "T" then
+        currentRow.action:SetTexture(WoWPro.actiontypes[action.." Campaign"])
+        currentRow.action.tooltip.text:SetText("Campaign Quest")
+    end
+end
+
 -- Row Content Update --
 function WoWPro:RowUpdate(offset)
     local GID = WoWProDB.char.currentguide
@@ -1021,43 +1066,8 @@ function WoWPro:RowUpdate(offset)
             note = note.."\n(No coordinates)"
         end
 
-        local mapID = _G.C_Map.GetBestMapForUnit("player")
-        local isCampaign = _G.C_QuestLine and tonumber(QID) and mapID and _G.C_QuestLine.GetQuestLineInfo(tonumber(QID), mapID) and _G.C_QuestLine.GetQuestLineInfo(tonumber(QID), mapID).isCampaign
         currentRow.note:SetText(note)
-        currentRow.action:SetTexture(WoWPro.actiontypes[action])
-        currentRow.action.tooltip.text:SetText(WoWPro.actionlabels[action])
-        if WoWPro.noncombat[k] and (WoWPro.action[k] == "C" or WoWPro.action[k] == "N") then
-            currentRow.action:SetTexture("Interface\\AddOns\\WoWPro\\Textures\\Config.tga")
-            currentRow.action.tooltip.text:SetText("No Combat")
-        elseif WoWPro.hand[k] and (WoWPro.action[k] == "C" or WoWPro.action[k] == "N") then
-            currentRow.action:SetTexture(WoWPro.actiontypes["HAND TAG"])
-            currentRow.action.tooltip.text:SetText(WoWPro.actionlabels["HAND TAG"])
-        elseif WoWPro.inspect[k] and (WoWPro.action[k] == "C" or WoWPro.action[k] == "N") then
-            currentRow.action:SetTexture(WoWPro.actiontypes["INSPECT TAG"])
-            currentRow.action.tooltip.text:SetText(WoWPro.actionlabels["INSPECT TAG"])
-        elseif WoWPro.lootitem[k] and WoWPro.action[k] == "C" then
-            currentRow.action:SetTexture(WoWPro.actiontypes['l'])
-            currentRow.action.tooltip.text:SetText("Loot Complete")
-        elseif WoWPro.chat[k] then
-            currentRow.action:SetTexture("Interface\\GossipFrame\\Gossipgossipicon")
-            currentRow.action.tooltip.text:SetText("Chat")
-        elseif WoWPro.jump[k] then
-            currentRow.action:SetTexture("Interface\\Icons\\spell_arcane_teleportironforge")
-            currentRow.action.tooltip.text:SetText("Jump")
-		elseif WoWPro.vehichle[k] then
-            -- Yeah, that is how blizzard spelled it!
-            currentRow.action:SetTexture("Interface\\CURSOR\\vehichleCursor")
-            currentRow.action.tooltip.text:SetText("Take Vehicle")
-        elseif WoWPro.elite[k] and WoWPro.action[k] == "A" then
-            currentRow.action:SetTexture(WoWPro.actiontypes[action.." ELITE"])
-            currentRow.action.tooltip.text:SetText("Elite Quest")
-        elseif isCampaign and WoWPro.action[k] == "A" then
-            currentRow.action:SetTexture(WoWPro.actiontypes[action.." Campaign"])
-            currentRow.action.tooltip.text:SetText("Campaign Quest")
-        elseif isCampaign and WoWPro.action[k] == "T" then
-            currentRow.action:SetTexture(WoWPro.actiontypes[action.." Campaign"])
-            currentRow.action.tooltip.text:SetText("Campaign Quest")
-        end
+        WoWPro.SetActionTexture(currentRow)
 
         currentRow.check:SetScript("OnClick", function(this, button, down)
             WoWPro:CheckFunction(currentRow, button, down)
@@ -1691,17 +1701,20 @@ function WoWPro.NextStep(guideIndex, rowIndex)
             -- A/$ Steps --
             if (stepAction == "A" or stepAction == "$") and WoWPro:QIDsInTableLogical(QID, WoWPro.QuestLog) then
                 if WoWPro.fail[guideIndex] then
+                    WoWPro:dbp("Considering FAIL on %s [%s]", stepAction, step)
                     if WoWPro:QuestFailed(QID) then
                         -- Time to turn this on!
                         skip = false
+                        WoWPro:dbp("Activating FAIL for all steps with QID %q", QID)
                         WoWPro.why[guideIndex] = "NextStep(): noskip, FAIL and quest failed!"
-                        for i=1, WoWPro.stepcount do
+                        for i=guideIndex, WoWPro.stepcount do
                             if WoWProCharDB.Guide[GID].completion[i] and (WoWPro.QID[i] == QID) then
                                 WoWPro.UnSkipStep(i)
                             end
                         end
                     else
                         skip = true
+                        WoWPro:dbp("No FAIL, so skipping for now.")
                         WoWPro.why[guideIndex] = "NextStep(): skip, FAIL and quest not failed."
                         break
                     end
@@ -2331,11 +2344,11 @@ function WoWPro.NextStep(guideIndex, rowIndex)
                 WoWPro.why[guideIndex] = "NextStep(): Reputation steps skipped by default"
                 local standingId, earnedValue, hasBonusRepGain
                 if Friendship then
-                    local _, friendRep, _, name, _, _, friendTextLevel, friendThreshold = _G.GetFriendshipReputation(factionIndex);
-                    friendTextLevel = friendTextLevel:lower()
+                    local reputationInfo = _G.C_GossipInfo.GetFriendshipReputation(factionIndex)
+                    local friendTextLevel = reputationInfo.reaction:lower()
                     standingId = Rep2IdAndClass[friendTextLevel][1]
-                    earnedValue = friendRep - friendThreshold
-                    WoWPro:dbp("NPC %s is a %s: standing %d, earned %d", name, friendTextLevel, standingId, earnedValue)
+                    earnedValue = reputationInfo.standing - reputationInfo.nextThreshold
+                    WoWPro:dbp("NPC %s is a %s: standing %d, earned %d", reputationInfo.name, friendTextLevel, standingId, earnedValue)
                 else
                     local name, bottomValue, _
                     name, _, standingId, bottomValue, _, earnedValue, _, _, _, _, _, _, _, _, hasBonusRepGain = _G.GetFactionInfoByID(factionIndex)

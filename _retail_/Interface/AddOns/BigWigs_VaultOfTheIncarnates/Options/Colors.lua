@@ -26,17 +26,17 @@ BigWigs:AddColors("Terros", {
 })
 
 BigWigs:AddColors("The Primal Council", {
-	[370991] = "green",
-	[371624] = {"blue","purple"},
+	[371624] = {"blue","cyan"},
 	[372027] = "orange",
 	[372056] = {"blue","purple"},
-	[372275] = "yellow",
-	[374043] = "red",
+	[372279] = "yellow",
+	[373059] = "cyan",
+	[374038] = {"blue","red"},
 	[386289] = "red",
 	[386370] = "green",
 	[386375] = "purple",
 	[386661] = {"blue","cyan"},
-	[391599] = "cyan",
+	[397134] = "green",
 })
 
 BigWigs:AddColors("Sennarth, The Cold Breath", {
@@ -98,11 +98,12 @@ BigWigs:AddColors("Kurog Grimtotem", {
 })
 
 BigWigs:AddColors("Broodkeeper Diurna", {
+	[-25129] = "yellow",
 	[375457] = "yellow",
 	[375475] = {"blue","purple"},
 	[375485] = "red",
 	[375575] = {"blue","cyan"},
-	[375630] = {"blue","yellow"},
+	[375620] = {"blue","yellow"},
 	[375653] = "yellow",
 	[375716] = "yellow",
 	[375809] = {"cyan","green"},
@@ -119,7 +120,6 @@ BigWigs:AddColors("Broodkeeper Diurna", {
 	[380483] = "blue",
 	[388716] = "yellow",
 	[388918] = "yellow",
-	[389049] = {"blue","orange"},
 	[392194] = "yellow",
 })
 

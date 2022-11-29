@@ -61,6 +61,7 @@ Kick
 Mind Freeze
 Muzzle
 Pummel
+Quell
 Rebuke
 Silence
 Skull Bash

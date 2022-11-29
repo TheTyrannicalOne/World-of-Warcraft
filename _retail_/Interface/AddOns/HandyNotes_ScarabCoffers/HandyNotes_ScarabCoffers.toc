@@ -1,0 +1,12 @@
+﻿## Interface: 100002
+## Title: HandyNotes_ScarabCoffers
+## Notes: Scarab Coffer locations in AQ40/20
+## Author: Keyboardturner
+## Version: 4
+## DefaultState: enabled
+## SavedVariables: HandyNotes_ScarabCoffersDB
+## RequiredDeps: HandyNotes
+
+handler.lua
+config.lua
+nodes.lua

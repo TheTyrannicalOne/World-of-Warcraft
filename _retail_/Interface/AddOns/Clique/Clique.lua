@@ -36,6 +36,9 @@
 local addonName, addon = ...
 local L = addon.L
 
+---@diagnostic disable-next-line: undefined-field
+local twipe = table.wipe
+
 function addon:Initialize()
     -- Create an AceDB, but it needs to be cleared first
     self.db = LibStub("AceDB-3.0"):New("CliqueDB3", self.defaults)
@@ -186,14 +189,14 @@ function addon:Initialize()
         if v == nil or v == false then
             self:UnregisterFrame(k)
         else
-            self:RegisterFrame(k, v)
+            self:RegisterFrame(k)
         end
     end})
 
     -- Iterate over the frames that were set before we arrived
     if oldClickCastFrames then
         for frame, options in pairs(oldClickCastFrames) do
-            self:RegisterFrame(frame, options)
+            self:RegisterFrame(frame)
         end
     end
 
@@ -264,7 +267,7 @@ function addon:RegisterFrame(button)
     end
 
     self.ccframes[button] = true
-    self:UpdateRegisteredClicks(button, true)
+    self:UpdateRegisteredClicks(button)
 
     -- Wrap the OnEnter/OnLeave scripts in order to handle keybindings
     addon.header:WrapScript(button, "OnEnter", addon.header:GetAttribute("setup_onenter"))
@@ -977,19 +980,19 @@ function addon:LeavingCombat()
     for idx, button in ipairs(self.regqueue) do
         self:RegisterFrame(button)
     end
-    if next(self.regqueue) then table.wipe(self.regqueue) end
+    if next(self.regqueue) then twipe(self.regqueue) end
 
     -- Process any frames in the unregistration queue
     for idx, button in ipairs(self.unregqueue) do
         self:UnregisterFrame(button)
     end
-    if next(self.regqueue) then table.wipe(self.regqueue) end
+    if next(self.regqueue) then twipe(self.regqueue) end
 
     -- Process any frames in the clickregister queue
     for idx, button in ipairs(self.regclickqueue) do
         self:UpdateRegisteredClicks(button)
     end
-    if next(self.regclickqueue) then table.wipe(self.regclickqueue) end
+    if next(self.regclickqueue) then twipe(self.regclickqueue) end
 
     -- Only apply attributes if we have an 'ooc' binding set
     if self.has_ooc then

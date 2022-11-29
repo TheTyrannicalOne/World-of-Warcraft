@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0703,
+	["LastVersion"] = 2.0706,
 	["LastPlayerFullName"] = "Brotus-Argent Dawn",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {

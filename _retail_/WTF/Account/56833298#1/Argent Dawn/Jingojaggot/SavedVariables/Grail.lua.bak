@@ -2,7 +2,11 @@
 GrailDatabasePlayer = {
 	["controlCompletedQuests"] = {
 	},
-	["serverUpdated"] = "2022-09-25 13:19",
+	["spellsCast"] = {
+		[1806] = 33554432,
+		[2951] = 536870912,
+		[26] = 8,
+	},
 	["abandonedQuests"] = {
 	},
 	["buffsExperienced"] = {
@@ -92,9 +96,5 @@ GrailDatabasePlayer = {
 	},
 	["actuallyCompletedQuests"] = {
 	},
-	["spellsCast"] = {
-		[1806] = 33554432,
-		[2951] = 536870912,
-		[26] = 8,
-	},
+	["serverUpdated"] = "2022-09-25 13:19",
 }

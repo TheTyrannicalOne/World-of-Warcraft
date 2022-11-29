@@ -58,7 +58,8 @@ local classArmorTypeMap = {
   ["ROGUE"] = LEATHER,
   ["SHAMAN"] = MAIL,
   ["WARLOCK"] = CLOTH,
-  ["WARRIOR"] = PLATE
+  ["WARRIOR"] = PLATE,
+  ["EVOKER"] = MAIL
 }
 
 o.getPlayerArmorTypeName = function()
