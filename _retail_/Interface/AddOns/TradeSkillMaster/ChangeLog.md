@@ -1,5 +1,5 @@
-## v4.12.1 Changes
+## v4.12.4 Changes
 
-* Fixed error when selling via Vendoring UI
+* [All] Various bug fixes
 
 [Known Issues](https://support.tradeskillmaster.com/en_US/known_issues)

@@ -13859,6 +13859,55 @@ AchievementTrackerDebug = {
 	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [13836]
 	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [13837]
 	"29/11/2022 7:43 [DEBUG] Showing Minimap Icon", -- [13838]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [13839]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.6.0", -- [13840]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [13841]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [13842]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [13843]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [13844]
+	"29/11/2022 11:21 [DEBUG] Showing Minimap Icon", -- [13845]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [13846]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.6.0", -- [13847]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [13848]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [13849]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [13850]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [13851]
+	"29/11/2022 13:45 [DEBUG] Showing Minimap Icon", -- [13852]
+	"29/11/2022 16:58 [DEBUG] Player has entered instance", -- [13853]
+	"29/11/2022 16:58 [DEBUG] 2521", -- [13854]
+	"29/11/2022 16:58 [DEBUG] Offical Instance Name: 2521 _2521", -- [13855]
+	"29/11/2022 16:58 [DEBUG] Expansion: 10", -- [13856]
+	"29/11/2022 16:58 [DEBUG] Instance Type: Dungeons", -- [13857]
+	"29/11/2022 16:58 [DEBUG] Instance: 2521", -- [13858]
+	"29/11/2022 16:58 [DEBUG] DifficultyID: 1", -- [13859]
+	"29/11/2022 16:58 [DEBUG] Achievements cannot be earned for the following difficulty 1", -- [13860]
+	"29/11/2022 17:14 [DEBUG] 6", -- [13861]
+	"29/11/2022 17:14 [DEBUG] Clearing Instance Variables", -- [13862]
+	"29/11/2022 17:14 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:1959: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [13863]
+	"29/11/2022 17:14 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:1967: attempt to call method 'InstanceCleanup' (a nil value).", -- [13864]
+	"29/11/2022 17:14 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [13865]
+	"29/11/2022 17:14 [DEBUG] Clearing Instance Variables if exists", -- [13866]
+	"29/11/2022 17:14 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:3846: attempt to call method 'clearVariables' (a nil value).", -- [13867]
+	"29/11/2022 17:14 [DEBUG] Clearing Instance Variables if exists", -- [13868]
+	"29/11/2022 17:14 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:3854: attempt to call method 'ClearVariables' (a nil value).", -- [13869]
+	"29/11/2022 17:14 [DEBUG] Resetting Global Variables", -- [13870]
+	"29/11/2022 17:14 [DEBUG] InfoFrame does not need to be reset", -- [13871]
+	"29/11/2022 17:14 [DEBUG] Resetting PlayerRank", -- [13872]
+	"29/11/2022 17:14 [DEBUG] InfoFrame was not active", -- [13873]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [13874]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.6.0", -- [13875]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [13876]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [13877]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [13878]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [13879]
+	"30/11/2022 0:8 [DEBUG] Showing Minimap Icon", -- [13880]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [13881]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.6.0", -- [13882]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [13883]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [13884]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [13885]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [13886]
+	"30/11/2022 19:31 [DEBUG] Showing Minimap Icon", -- [13887]
 }
 AchievementTrackerNPCCache = {
 	[75829] = "Nhallish",
@@ -14343,12 +14392,12 @@ AchievementTrackerNPCCache = {
 	[153172] = "Stolen Scrapbot",
 	[109450] = "Saronite Vapors",
 	[67571] = "Millhouse Manastorm",
-	[105742] = "Turbax",
-	[141792] = "Liz Vilepot",
-	[115844] = "Goroth",
-	[90018] = "Hellfire Cannon",
 	[71983] = "Farseer Wolf Rider",
+	[78121] = "Gorian Warmage",
+	[115844] = "Goroth",
 	[173770] = "Blazing Brazier",
+	[36535] = "Corrupted Soul Fragment",
+	[81834] = "Priceless Paraphernalia",
 	[73033] = "Corrupted Skullsplitter",
 	[138967] = "Zul",
 	[122366] = "Varimathras",
@@ -14361,9 +14410,9 @@ AchievementTrackerNPCCache = {
 	[172995] = "Hydra Seed",
 	[174018] = "Volatile Plague Bomb",
 	[100436] = "Illysanna Ravencrest",
-	[52392] = "Gurubashi Master Chef",
+	[71984] = "Siege Engineer",
 	[61567] = "Vizier Jin'bak",
-	[105743] = "Whipsnap",
+	[52392] = "Gurubashi Master Chef",
 	[34826] = "Mistress of Pain",
 	[33136] = "Guardian of Yogg-Saron",
 	[86928] = "Empowered Construct",
@@ -14379,7 +14428,7 @@ AchievementTrackerNPCCache = {
 	[64061] = "Mogu'shan Warden",
 	[119938] = "Reanimated Templar",
 	[52936] = "Druid of the Flame",
-	[105744] = "Blaze",
+	[111882] = "Sparky",
 	[146016] = "Leeroy Jenkins",
 	[173768] = "Fiery Brazier",
 	[115143] = "Snaplasher",
@@ -14406,8 +14455,8 @@ AchievementTrackerNPCCache = {
 	[58787] = "Big Bessa",
 	[33244] = "Mimiron",
 	[71603] = "Sha Puddle",
-	[111882] = "Sparky",
 	[28514] = "Nalorakk",
+	[105744] = "Blaze",
 	[27654] = "Drakos the Interrogator",
 	[165073] = "Forlorn Captive",
 	[55308] = "Warlord Zon'ozz",
@@ -14415,16 +14464,16 @@ AchievementTrackerNPCCache = {
 	[150995] = "Mimiron",
 	[173769] = "Smoldering Brazier",
 	[172386] = "Anima Conduit",
-	[71984] = "Siege Engineer",
+	[105743] = "Whipsnap",
 	[129208] = "Dread Captain Lockwood",
 	[104528] = "High Botanist Tel'arn",
 	[158041] = "N'Zoth the Corruptor",
 	[176583] = "Energy Core",
 	[105299] = "Recursive Elemental",
-	[81834] = "Priceless Paraphernalia",
+	[90018] = "Hellfire Cannon",
 	[68599] = "Ferra Pearl",
-	[36535] = "Corrupted Soul Fragment",
-	[78121] = "Gorian Warmage",
+	[141792] = "Liz Vilepot",
+	[105742] = "Turbax",
 	[50284] = "Twilight Zealot",
 	[53494] = "Baleroc",
 	[76585] = "Ragewing the Untamed",

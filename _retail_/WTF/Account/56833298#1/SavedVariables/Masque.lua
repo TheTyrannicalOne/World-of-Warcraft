@@ -24,15 +24,15 @@ MasqueDB = {
 		["Jingojaggot - Argent Dawn"] = "Default",
 		["Banesmuncy - Zul'jin"] = "Default",
 		["Tyranasticus - Zul'jin"] = "Default",
-		["Jingojaggot - Zul'jin"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
 		["Illingrath - Dalaran"] = "Default",
 		["Okona - Zul'jin"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
 		["Kelvalatar - Dalaran"] = "Default",
-		["Shimzo - Zul'jin"] = "Default",
+		["Galvarton - Dalaran"] = "Default",
 		["Tinkster - Dalaran"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
+		["Jingojaggot - Zul'jin"] = "Default",
 		["Tyran - Argent Dawn"] = "Default",
 		["Guufnah - Zul'jin"] = "Default",
 		["Alatra - Zul'jin"] = "Default",
@@ -45,7 +45,7 @@ MasqueDB = {
 		["Datgore - Zul'jin"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
-		["Galvarton - Dalaran"] = "Default",
+		["Shimzo - Zul'jin"] = "Default",
 		["Abyronterner - Zul'jin"] = "Default",
 		["Brotus - Argent Dawn"] = "Default",
 		["Jasmoney - Zul'jin"] = "Default",
@@ -1892,11 +1892,11 @@ MasqueDB = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
-				["WeakAuras_8amT0uYMbEn"] = {
+				["WeakAuras_EQyafY9bWPZ"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
-				["WeakAuras_skUFQ(yqkXo"] = {
+				["WeakAuras_8amT0uYMbEn"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
@@ -1948,7 +1948,7 @@ MasqueDB = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
-				["WeakAuras_qDOOcr)vS6U"] = {
+				["WeakAuras_jWAnOBPHPoR"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
@@ -1956,7 +1956,7 @@ MasqueDB = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
-				["WeakAuras_E8E)8CNnyAG"] = {
+				["WeakAuras_zwbbGTsQdVr"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
@@ -2755,11 +2755,11 @@ MasqueDB = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
-				["WeakAuras_jWAnOBPHPoR"] = {
+				["WeakAuras_qDOOcr)vS6U"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
-				["WeakAuras_zwbbGTsQdVr"] = {
+				["WeakAuras_E8E)8CNnyAG"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
@@ -2787,7 +2787,7 @@ MasqueDB = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},
-				["WeakAuras_EQyafY9bWPZ"] = {
+				["WeakAuras_skUFQ(yqkXo"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 				},

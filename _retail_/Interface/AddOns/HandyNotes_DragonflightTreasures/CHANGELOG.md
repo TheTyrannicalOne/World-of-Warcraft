@@ -1,5 +1,27 @@
 # Changelog
 
+## Changed in v19
+
+* Adding of various rares and treasures across all zones
+
+## Changed in v18
+
+* Minor data improvements in Waking Shores
+* Clean up minimap route lines better when refreshing data
+* Hide the route lines to related points if the connected point is hidden
+
+## Changed in v17
+
+* Fill out more Adventurer rares; Waking Shores is complete
+* Note that Azure Span treasures require level 63 and Thaldraszus treasures require level 64
+* Some other assorted loot and packs
+
+## Changed in v16
+
+* Make the Dragon Glyph icons bigger, since they're so high-priority right at the start
+* Put a few more achievement-icons behind having dragonriding unlocked, to avoid initial clutter
+* Minor amounts of new loot and packs
+
 ## Changed in v15
 
 * Add the Honor Our Ancestors achievement to Ohn'ahran Plains

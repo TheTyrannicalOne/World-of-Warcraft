@@ -248,7 +248,8 @@ ns.RegisterPoints(MAPID, {
         vignette=5378,
         -- hide_before=ns.MAXLEVEL, -- TODO
     },
-    [] = { -- Mikrin of the Raging Winds
+    --]]
+    [62987932] = { -- Mikrin of the Raging Winds
         criteria=56070,
         quest=69857,
         npc=193173,
@@ -256,6 +257,7 @@ ns.RegisterPoints(MAPID, {
         vignette=5183,
         -- hide_before=ns.MAXLEVEL, -- TODO
     },
+    --[[
     [] = { -- Ronsak the Decimator
         criteria=56071,
         quest=69878,
@@ -337,6 +339,7 @@ ns.RegisterPoints(MAPID, {
         npc=187559,
         loot={
             {196985, quest=69185}, -- Cliffside Wylderdrake: Horned Jaw
+            {197382, quest=69583}, -- Renewed Proto-Drake: White Horns
         },
         vignette=5181, -- Solethus' Gravestone
     },
@@ -406,14 +409,14 @@ ns.RegisterPoints(MAPID, {
         loot={},
         vignette=5140,
     },
-    --[[
-    [] = { -- Vaniik the Stormtouched
+    [83786215] = { -- Vaniik the Stormtouched
         criteria=56090,
         quest=nil,
         npc=192453,
         loot={},
         vignette=5143, -- Vaniik the Corrupted
     },
+    --[[
     [] = { -- Quackers the Terrible
         criteria=56091,
         quest=nil,
@@ -475,7 +478,7 @@ ns.RegisterPoints(MAPID, {
         loot={},
     },
     [59926695] = { -- Prozela Galeshot
-        quest=69968, -- 72815 also
+        quest=72815, -- 69968 also
         npc=193669,
         loot={
             {197383, quest=69584}, -- Renewed Proto-Drake: Heavy Horns

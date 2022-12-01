@@ -20,15 +20,15 @@ PasteDB = {
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
 		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
 		["Tyranasticus - Zul'jin"] = "Tyranasticus - Zul'jin",
-		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
-		["Galvarton - Dalaran"] = "Galvarton - Dalaran",
+		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
-		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
@@ -41,7 +41,7 @@ PasteDB = {
 		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
-		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
+		["Galvarton - Dalaran"] = "Galvarton - Dalaran",
 		["Abyronterner - Zul'jin"] = "Abyronterner - Zul'jin",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
 		["Jasmoney - Zul'jin"] = "Jasmoney - Zul'jin",
@@ -106,7 +106,7 @@ PasteDB = {
 		["Tyranasticus - Zul'jin"] = {
 			["loaded"] = true,
 		},
-		["Varlouris - Dalaran"] = {
+		["Shimzo - Zul'jin"] = {
 			["loaded"] = true,
 		},
 		["Brotus - Argent Dawn"] = {
@@ -124,13 +124,13 @@ PasteDB = {
 		["Kelvalatar - Dalaran"] = {
 			["loaded"] = true,
 		},
-		["Galvarton - Dalaran"] = {
+		["Jingojaggot - Zul'jin"] = {
 			["loaded"] = true,
 		},
 		["Alatra - Zul'jin"] = {
 			["loaded"] = true,
 		},
-		["Shimzo - Zul'jin"] = {
+		["Varlouris - Dalaran"] = {
 			["loaded"] = true,
 		},
 		["Datgore - Zul'jin"] = {
@@ -173,7 +173,7 @@ PasteDB = {
 		["Rotclaugh - Dalaran"] = {
 			["loaded"] = true,
 		},
-		["Jingojaggot - Zul'jin"] = {
+		["Galvarton - Dalaran"] = {
 			["loaded"] = true,
 		},
 		["Abyronterner - Zul'jin"] = {

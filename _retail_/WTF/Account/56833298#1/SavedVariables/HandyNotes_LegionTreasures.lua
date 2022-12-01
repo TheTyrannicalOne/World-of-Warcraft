@@ -20,15 +20,15 @@ HandyNotes_LegionTreasuresDB = {
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
 		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
 		["Tyranasticus - Zul'jin"] = "Tyranasticus - Zul'jin",
-		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
-		["Galvarton - Dalaran"] = "Galvarton - Dalaran",
+		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
-		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
@@ -41,7 +41,7 @@ HandyNotes_LegionTreasuresDB = {
 		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
-		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
+		["Galvarton - Dalaran"] = "Galvarton - Dalaran",
 		["Abyronterner - Zul'jin"] = "Abyronterner - Zul'jin",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
 		["Jasmoney - Zul'jin"] = "Jasmoney - Zul'jin",
@@ -87,7 +87,7 @@ HandyNotes_LegionTreasuresDB = {
 		},
 		["Tyranasticus - Zul'jin"] = {
 		},
-		["Varlouris - Dalaran"] = {
+		["Shimzo - Zul'jin"] = {
 		},
 		["Brotus - Argent Dawn"] = {
 		},
@@ -99,11 +99,11 @@ HandyNotes_LegionTreasuresDB = {
 		},
 		["Kelvalatar - Dalaran"] = {
 		},
-		["Galvarton - Dalaran"] = {
+		["Jingojaggot - Zul'jin"] = {
 		},
 		["Alatra - Zul'jin"] = {
 		},
-		["Shimzo - Zul'jin"] = {
+		["Varlouris - Dalaran"] = {
 		},
 		["Datgore - Zul'jin"] = {
 		},
@@ -129,7 +129,7 @@ HandyNotes_LegionTreasuresDB = {
 		},
 		["Rotclaugh - Dalaran"] = {
 		},
-		["Jingojaggot - Zul'jin"] = {
+		["Galvarton - Dalaran"] = {
 		},
 		["Abyronterner - Zul'jin"] = {
 		},

@@ -52,6 +52,7 @@ ns.RegisterPoints(MAPID, {
     },
 }, {
     achievement=16300, -- Treasures
+    hide_before=ns.conditions.Level(63),
     minimap=true,
 })
 
@@ -82,7 +83,9 @@ ns.RegisterPoints(MAPID, {
         criteria=56098,
         quest=66956, -- ?
         npc=193157,
-        loot={},
+        loot={
+            200302, -- Magmaforged Scimitar
+        },
         vignette=5126, -- ?
     },
     [53003560] = { -- Arcane Devourer
@@ -148,26 +151,27 @@ ns.RegisterPoints(MAPID, {
         loot={},
         vignette=5189,
     },
-    [36803580] = { -- Notfar the Unbearable
-        -- also 46603980?
+    [34053080] = { -- Notfar the Unbearable
         criteria=56107,
         quest=nil,
         npc=193225,
         loot={},
+        note="In cave",
     },
-    --[[
-    [] = { -- Blue Terror
+    [16412781] = { -- Blue Terror
         criteria=56108,
         quest=nil,
         npc=193259,
         loot={},
     },
-    [] = { -- Mahg the Trampler
+    [36323583] = { -- Mahg the Trampler
         criteria=56109,
         quest=nil,
         npc=190244,
         loot={},
+        route={36323583, 46004100, r=0, g=1, b=0}, -- verify
     },
+    --[[
     [] = { -- Skag the Thrower
         criteria=56110,
         quest=72154,
@@ -267,7 +271,8 @@ ns.RegisterPoints(MAPID, {
         loot={},
         vignette=5184,
     },
-    [] = { -- Archmage Cleary
+    [53803560] = { -- Archmage Cleary
+        -- ...does this trigger when you get the snowman? verify before uncommenting
         criteria=56123,
         quest=nil,
         npc=193255,
@@ -332,6 +337,16 @@ ns.RegisterPoints(MAPID, {
     --]]
 }, {
     achievement=16678, -- Adventurer
+})
+ns.RegisterPoints(2132, { -- Kargpaw's Den
+    [36803580] = { -- Notfar the Unbearable
+        -- or 46603980?
+        achievement=16678, -- Adventurer
+        criteria=56107,
+        quest=nil,
+        npc=193225,
+        loot={},
+    },
 })
 ns.RegisterPoints(MAPID, {
     [23443327] = { -- Cascade

@@ -17,7 +17,19 @@ HandyNotes_CollectionDB = {
 	},
 }
 HandyNotes_CollectionCACHE = {
+	["npcName"] = {
+		[81330] = "Warleader Tome",
+	},
+	["itemLink"] = {
+		[121815] = "|cffa335ee|Hitem:121815::::::::65:71:::::::::|h[Voidtalon of the Dark Star]|h|r",
+		[120276] = "|cff0070dd|Hitem:120276::::::::65:71:::::::::|h[Outrider's Bridle Chain]|h|r",
+		["121815"] = "|cffa335ee|Hitem:121815::::::::65:71:::::::::|h[Voidtalon of the Dark Star]|h|r",
+	},
 	["version"] = 46801,
+	["itemIcon"] = {
+		[121815] = "|T1094600:0:0:0:-1|t ",
+		[120276] = "|T971291:0:0:0:-1|t ",
+	},
 }
 HandyNotes_CollectionSTATUS = {
 	["mountId"] = {

@@ -9,7 +9,7 @@ ns.HL = HL
 local HBD = LibStub("HereBeDragons-2.0")
 local LibDD = LibStub:GetLibrary("LibUIDropDownMenu-4.0")
 
-ns.DEBUG = GetAddOnMetadata(myname, "Version") == 'v16'
+ns.DEBUG = GetAddOnMetadata(myname, "Version") == 'v19'
 
 ns.CLASSIC = WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE
 
@@ -111,12 +111,12 @@ function ns.RegisterPoints(zone, points, defaults)
             local route = type(point.path) == "table" and point.path or {point.path}
             table.insert(route, 1, coord)
             ns.points[zone][route[#route]] = setmetatable({
-                label=route.label or (point.npc and "Path to NPC" or "Path to treasure"),
+                label=route.label or (point.npc and ("Path to {npc:%s}"):format(point.npc) or "Path to treasure"),
                 atlas=route.atlas or "poi-door", scale=route.scale or 0.95, minimap=true, texture=false,
                 note=route.note or false,
                 loot=route.loot,
                 routes={route},
-                _coord=route[#route],
+                _coord=route[#route], _uiMapID=zone,
             }, proxy_meta)
             -- highlight
             point.route = point.route or route[#route]
@@ -131,7 +131,7 @@ function ns.RegisterPoints(zone, points, defaults)
                     minimap=true, worldmap=false, scale=0.95,
                     note=nearby.note or false,
                     loot=nearby.loot, active=nearby.active,
-                    _coord=ncoord,
+                    _coord=rcoord, _uiMapID=zone,
                 }, proxy_meta)
                 if nearby.color then
                     npoint.texture = ns.atlas_texture(npoint.atlas, nearby.color)
@@ -149,15 +149,15 @@ function ns.RegisterPoints(zone, points, defaults)
                     minimap=related.minimap ~= nil and related.minimap or true, worldmap=true, scale=0.95,
                     note=related.note or false,
                     loot=related.loot,
-                    active=related.active, requires=related.requires, hide_before=related.hide_before,
+                    active=related.active, requires=related.requires, hide_before=related.hide_before, inbag=related.inbag,
                     route=coord,
-                    _coord=rcoord,
+                    _coord=rcoord, _uiMapID=zone,
                 }, proxy_meta)
                 if related.color then
                     rpoint.texture = ns.atlas_texture(rpoint.atlas, related.color)
                 end
                 if not point.routes then point.routes = {} end
-                table.insert(point.routes, {coord, rcoord, highlightOnly=true})
+                table.insert(point.routes, {rcoord, coord, highlightOnly=true})
                 ns.points[zone][rcoord] = rpoint
             end 
         end

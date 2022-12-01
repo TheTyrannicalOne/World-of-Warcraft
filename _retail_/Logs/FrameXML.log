@@ -1,121 +1,121 @@
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Loading add-on AAP-Core
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AAP-Core/Bindings.xml:2 Unrecognized XML: Binding
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AAP-Core/Bindings.xml:2 Unrecognized XML attribute: name
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AAP-Core/Bindings.xml:2 Unrecognized XML attribute: header
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AAP-Core/Bindings.xml:2 Unrecognized XML attribute: category
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AAP-Core/Core.lua:1 (null)
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AAP-Core/OptionsPanel.lua:1 (null)
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AAP-Core/QuestHandler.lua:1 (null)
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Loading add-on AngryWorldQuests
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AngryWorldQuests/QuestFrame.lua:1 (null)
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Loading add-on AzeritePowerWeights
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AzeritePowerWeights/Core.lua:1 (null)
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Loading add-on BetterBattlePetTooltip
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/BetterBattlePetTooltip/Core.lua:1 (null)
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Loading add-on BonusRollPreview
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/BonusRollPreview/BonusRollPreview.xml:172 Unrecognized XML attribute: layer
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/BonusRollPreview/BonusRollPreview.xml:183 Unrecognized XML attribute: layer
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Loading add-on FishingBuddy
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingDatabase.lua:1 (null)
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:152 Unrecognized XML: Backdrop
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:152 Unrecognized XML attribute: bgFile
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:152 Unrecognized XML attribute: edgeFile
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:152 Unrecognized XML attribute: tile
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:153 Unrecognized XML: BackgroundInsets
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:154 Unrecognized XML: AbsInset
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:154 Unrecognized XML attribute: left
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:154 Unrecognized XML attribute: right
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:154 Unrecognized XML attribute: top
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:154 Unrecognized XML attribute: bottom
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:156 Unrecognized XML: TileSize
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:157 Unrecognized XML: AbsValue
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:157 Unrecognized XML attribute: val
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:159 Unrecognized XML: EdgeSize
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:160 Unrecognized XML: AbsValue
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:160 Unrecognized XML attribute: val
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingLocationsFrame.xml:178 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:15 Unrecognized XML: Backdrop
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:15 Unrecognized XML attribute: bgFile
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:15 Unrecognized XML attribute: edgeFile
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:15 Unrecognized XML attribute: tile
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:16 Unrecognized XML: EdgeSize
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:17 Unrecognized XML: AbsValue
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:17 Unrecognized XML attribute: val
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:19 Unrecognized XML: TileSize
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:20 Unrecognized XML: AbsValue
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:20 Unrecognized XML attribute: val
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:22 Unrecognized XML: BackgroundInsets
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:23 Unrecognized XML: AbsInset
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:23 Unrecognized XML attribute: left
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:23 Unrecognized XML attribute: right
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:23 Unrecognized XML attribute: top
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:23 Unrecognized XML attribute: bottom
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingRaid.xml:33 Couldn't find inherited node: ActionBarFlyoutButton-ArrowUp
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Loading add-on FB_TrackingFrame
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Loading add-on HandyNotes_BoralusRP
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/HandyNotes_BoralusRP/Const/const-icons.lua:1 (null)
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/HandyNotes_BoralusRP/Data/data-kultiras.lua:1 (null)
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Loading add-on HandyNotes_LegionTownPortals
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/HandyNotes_LegionTownPortals/handler.lua:1 (null)
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Loading add-on MBB
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/MBB/MBB.xml:223 Unrecognized XML attribute: relativeFrom
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/MBB/MBB.xml:624 Unrecognized XML attribute: relativeFrom
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/MBB/MBB.xml:664 Unrecognized XML attribute: relativeFrom
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Loading add-on MillButton
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/MillButton/MillButton.lua:1 (null)
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Loading add-on MoveAnything
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/MoveAnything/MoveAnything.xml:532 Unrecognized XML: TitleRegion
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/MoveAnything/MoveAnything.xml:532 Unrecognized XML attribute: setAllPoints
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Loading add-on NomiCakes
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/NomiCakes/NomiCakes.lua:1 (null)
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Loading add-on NPCScan
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/NPCScan/Bindings.xml:1 Interface/AddOns/NPCScan/Bindings.xml(1): error: not well-formed (invalid token)
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Loading add-on Overachiever
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Overachiever/GameTip.lua:1 (null)
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Loading add-on PetEmote
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/PetEmote/Bindings.xml:1 Interface/AddOns/PetEmote/Bindings.xml(1): error: not well-formed (invalid token)
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Loading add-on TransmogTokens
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TransmogTokens/TransmogTokens.lua:1 (null)
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Loading add-on WarfrontRareTracker
-11/29 07:43:32.949  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/WarfrontRareTracker/WarfrontRareTracker.lua:1 (null)
-11/29 07:43:50.439  Loading add-on XLoot_Options
-11/29 07:43:50.439  Interface/AddOns/XLoot_Options/Libs/embeds.xml:3 Couldn't open Interface/AddOns/XLoot_Options/AceGUI-3.0/AceGUI-3.0.xml
-11/29 07:43:50.439  Interface/AddOns/XLoot_Options/Libs/embeds.xml:4 Couldn't open Interface/AddOns/XLoot_Options/AceConfig-3.0/AceConfig-3.0.xml
-11/29 07:43:50.439  Interface/AddOns/XLoot_Options/Libs/embeds.xml:5 Couldn't open Interface/AddOns/XLoot_Options/AceDBOptions-3.0/AceDBOptions-3.0.xml
-11/29 07:44:04.923  Loading add-on Overachiever_Tabs
-11/29 07:44:04.923  Interface/AddOns/Overachiever_Tabs/build.lua:1 (null)
-11/29 07:44:04.923  Interface/AddOns/Overachiever_Tabs/Search.lua:1 (null)
-11/29 07:44:04.923  Interface/AddOns/Overachiever_Tabs/Suggestions.lua:1 (null)
-11/29 07:44:04.923  Interface/AddOns/Overachiever_Tabs/Watch.lua:1 (null)
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Loading add-on AAP-Core
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AAP-Core/Bindings.xml:2 Unrecognized XML: Binding
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AAP-Core/Bindings.xml:2 Unrecognized XML attribute: name
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AAP-Core/Bindings.xml:2 Unrecognized XML attribute: header
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AAP-Core/Bindings.xml:2 Unrecognized XML attribute: category
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AAP-Core/Core.lua:1 (null)
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AAP-Core/OptionsPanel.lua:1 (null)
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AAP-Core/QuestHandler.lua:1 (null)
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Loading add-on AngryWorldQuests
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AngryWorldQuests/QuestFrame.lua:1 (null)
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Loading add-on AzeritePowerWeights
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/AzeritePowerWeights/Core.lua:1 (null)
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Loading add-on BetterBattlePetTooltip
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/BetterBattlePetTooltip/Core.lua:1 (null)
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Loading add-on BonusRollPreview
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/BonusRollPreview/BonusRollPreview.xml:172 Unrecognized XML attribute: layer
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/BonusRollPreview/BonusRollPreview.xml:183 Unrecognized XML attribute: layer
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Loading add-on FishingBuddy
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingDatabase.lua:1 (null)
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:152 Unrecognized XML: Backdrop
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:152 Unrecognized XML attribute: bgFile
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:152 Unrecognized XML attribute: edgeFile
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:152 Unrecognized XML attribute: tile
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:153 Unrecognized XML: BackgroundInsets
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:154 Unrecognized XML: AbsInset
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:154 Unrecognized XML attribute: left
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:154 Unrecognized XML attribute: right
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:154 Unrecognized XML attribute: top
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:154 Unrecognized XML attribute: bottom
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:156 Unrecognized XML: TileSize
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:157 Unrecognized XML: AbsValue
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:157 Unrecognized XML attribute: val
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:159 Unrecognized XML: EdgeSize
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:160 Unrecognized XML: AbsValue
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingScrollMenu.xml:160 Unrecognized XML attribute: val
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingLocationsFrame.xml:178 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:15 Unrecognized XML: Backdrop
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:15 Unrecognized XML attribute: bgFile
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:15 Unrecognized XML attribute: edgeFile
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:15 Unrecognized XML attribute: tile
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:16 Unrecognized XML: EdgeSize
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:17 Unrecognized XML: AbsValue
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:17 Unrecognized XML attribute: val
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:19 Unrecognized XML: TileSize
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:20 Unrecognized XML: AbsValue
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:20 Unrecognized XML attribute: val
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:22 Unrecognized XML: BackgroundInsets
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:23 Unrecognized XML: AbsInset
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:23 Unrecognized XML attribute: left
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:23 Unrecognized XML attribute: right
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:23 Unrecognized XML attribute: top
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingExtravaganza.xml:23 Unrecognized XML attribute: bottom
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FishingBuddy/FishingRaid.xml:33 Couldn't find inherited node: ActionBarFlyoutButton-ArrowUp
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Loading add-on FB_TrackingFrame
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:49 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/FB_TrackingFrame/FishingTrackingFrame.xml:69 Couldn't find inherited node: OptionsSmallCheckButtonTemplate
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Loading add-on HandyNotes_BoralusRP
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/HandyNotes_BoralusRP/Const/const-icons.lua:1 (null)
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/HandyNotes_BoralusRP/Data/data-kultiras.lua:1 (null)
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Loading add-on HandyNotes_LegionTownPortals
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/HandyNotes_LegionTownPortals/handler.lua:1 (null)
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Loading add-on MBB
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/MBB/MBB.xml:223 Unrecognized XML attribute: relativeFrom
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/MBB/MBB.xml:624 Unrecognized XML attribute: relativeFrom
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/MBB/MBB.xml:664 Unrecognized XML attribute: relativeFrom
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Loading add-on MillButton
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/MillButton/MillButton.lua:1 (null)
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Loading add-on MoveAnything
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/MoveAnything/MoveAnything.xml:532 Unrecognized XML: TitleRegion
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/MoveAnything/MoveAnything.xml:532 Unrecognized XML attribute: setAllPoints
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Loading add-on NomiCakes
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/NomiCakes/NomiCakes.lua:1 (null)
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Loading add-on NPCScan
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/NPCScan/Bindings.xml:1 Interface/AddOns/NPCScan/Bindings.xml(1): error: not well-formed (invalid token)
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Loading add-on Overachiever
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/Overachiever/GameTip.lua:1 (null)
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Loading add-on PetEmote
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/PetEmote/Bindings.xml:1 Interface/AddOns/PetEmote/Bindings.xml(1): error: not well-formed (invalid token)
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Loading add-on TransmogTokens
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/TransmogTokens/TransmogTokens.lua:1 (null)
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Loading add-on WarfrontRareTracker
+11/30 19:30:53.366  Interface\FrameXML\Bindings.xml:1 Interface/AddOns/WarfrontRareTracker/WarfrontRareTracker.lua:1 (null)
+11/30 19:31:03.031  Loading add-on XLoot_Options
+11/30 19:31:03.031  Interface/AddOns/XLoot_Options/Libs/embeds.xml:3 Couldn't open Interface/AddOns/XLoot_Options/AceGUI-3.0/AceGUI-3.0.xml
+11/30 19:31:03.031  Interface/AddOns/XLoot_Options/Libs/embeds.xml:4 Couldn't open Interface/AddOns/XLoot_Options/AceConfig-3.0/AceConfig-3.0.xml
+11/30 19:31:03.031  Interface/AddOns/XLoot_Options/Libs/embeds.xml:5 Couldn't open Interface/AddOns/XLoot_Options/AceDBOptions-3.0/AceDBOptions-3.0.xml
+11/30 19:31:18.481  Loading add-on Overachiever_Tabs
+11/30 19:31:18.481  Interface/AddOns/Overachiever_Tabs/build.lua:1 (null)
+11/30 19:31:18.481  Interface/AddOns/Overachiever_Tabs/Search.lua:1 (null)
+11/30 19:31:18.481  Interface/AddOns/Overachiever_Tabs/Suggestions.lua:1 (null)
+11/30 19:31:18.481  Interface/AddOns/Overachiever_Tabs/Watch.lua:1 (null)

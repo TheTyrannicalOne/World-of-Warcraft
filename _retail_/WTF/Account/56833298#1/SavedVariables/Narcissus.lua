@@ -138,15 +138,15 @@ NarciCharacterProfiles = {
 		},
 		["class"] = 2,
 	},
-	["0C1345B8"] = {
-		["race"] = 32,
-		["name"] = "Galvarton",
-		["birth"] = 1666566022,
-		["serverID"] = "3683",
-		["lastVisit"] = 1669151712,
+	["0EB84EA0"] = {
+		["race"] = 10,
+		["name"] = "Valmagus",
+		["birth"] = 1653442802,
+		["serverID"] = "61",
+		["lastVisit"] = 1667057136,
 		["outfits"] = {
 		},
-		["class"] = 11,
+		["class"] = 2,
 	},
 	["0CB6231E"] = {
 		["race"] = 34,
@@ -168,15 +168,19 @@ NarciCharacterProfiles = {
 		},
 		["class"] = 6,
 	},
-	["0EB84EA0"] = {
-		["race"] = 10,
-		["name"] = "Valmagus",
-		["birth"] = 1653442802,
+	["0CA8EB69"] = {
+		["race"] = 31,
+		["name"] = "Zulbathal",
+		["birth"] = 1652077348,
 		["serverID"] = "61",
-		["lastVisit"] = 1667057136,
+		["lastVisit"] = 1669604994,
 		["outfits"] = {
+			{
+				["s"] = "101189,95085,98375,101191,0,83203,107509,101192,95089,95106,101195,97104,0",
+				["n"] = "Zando",
+			}, -- [1]
 		},
-		["class"] = 2,
+		["class"] = 11,
 	},
 	["0B9BB303"] = {
 		["race"] = 4,
@@ -216,17 +220,13 @@ NarciCharacterProfiles = {
 		},
 		["class"] = 11,
 	},
-	["0CA8EB69"] = {
-		["race"] = 31,
-		["name"] = "Zulbathal",
-		["birth"] = 1652077348,
-		["serverID"] = "61",
-		["lastVisit"] = 1669604994,
+	["0C1345B8"] = {
+		["race"] = 32,
+		["name"] = "Galvarton",
+		["birth"] = 1666566022,
+		["serverID"] = "3683",
+		["lastVisit"] = 1669151712,
 		["outfits"] = {
-			{
-				["s"] = "101189,95085,98375,101191,0,83203,107509,101192,95089,95106,101195,97104,0",
-				["n"] = "Zando",
-			}, -- [1]
 		},
 		["class"] = 11,
 	},
@@ -255,7 +255,7 @@ NarciCharacterProfiles = {
 		["name"] = "Shanyt",
 		["birth"] = 1651529834,
 		["serverID"] = "75",
-		["lastVisit"] = 1669725844,
+		["lastVisit"] = 1669854678,
 		["outfits"] = {
 			{
 				["s"] = "19684,44897,62761,24793,83202,83203,33402,33179,71940,26234,22010,0,0",

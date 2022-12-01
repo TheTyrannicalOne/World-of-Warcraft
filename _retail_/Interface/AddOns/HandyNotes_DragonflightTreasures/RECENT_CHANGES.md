@@ -1,5 +1,4 @@
-## Changed in v15
+## Changed in v19
 
-* Add the Honor Our Ancestors achievement to Ohn'ahran Plains
-* Don't show highlight-only routes on the minimap
+* Adding of various rares and treasures across all zones
 

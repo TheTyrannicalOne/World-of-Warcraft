@@ -1,8 +1,9 @@
 # BigWigs
 
-## [v254.1](https://github.com/BigWigsMods/BigWigs/tree/v254.1) (2022-11-28)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v254...v254.1) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
+## [v254.2](https://github.com/BigWigsMods/BigWigs/tree/v254.2) (2022-11-29)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v254.1...v254.2) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
 
-- Add a temporary print for final hour raiders  
-- Plugins/Bars: Tweak  
-- Plugins/Bars: set a softMax (and 60s max) for Emphasize at (seconds)  
+- Fix language error & bump version  
+- Remove shadowlands print  
+- VaultOfTheIncarnates: Cleanup locales  
+- Update ruRU (#1294)  
