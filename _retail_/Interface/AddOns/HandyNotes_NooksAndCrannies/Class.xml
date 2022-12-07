@@ -2,6 +2,7 @@
   <Script file='Class\Translation.lua'/>
   <Script file='Class\API.lua'/>
   <Script file='Class\Cache.lua'/>
+  <Script file='Class\Player.lua'/>
   <Script file='Class\Point.lua'/>
   <Script file='Class\Map.lua'/>
   <Include file='Class\Map\DataProviderMixin.xml'/>

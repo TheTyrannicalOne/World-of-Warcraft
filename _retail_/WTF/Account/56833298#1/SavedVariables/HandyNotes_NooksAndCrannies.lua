@@ -8,8 +8,8 @@ HandyNotes_NooksAndCranniesDB = {
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Galvarton - Dalaran"] = "Galvarton - Dalaran",
-		["Bathal - Argent Dawn"] = "Bathal - Argent Dawn",
 		["Neltharigos - Zul'jin"] = "Neltharigos - Zul'jin",
+		["Bathal - Argent Dawn"] = "Bathal - Argent Dawn",
 	},
 	["profiles"] = {
 		["Shanyt - Argent Dawn"] = {
@@ -17,5 +17,5 @@ HandyNotes_NooksAndCranniesDB = {
 	},
 }
 HandyNotes_NooksAndCranniesCACHE = {
-	["version"] = 46879,
+	["version"] = 46924,
 }

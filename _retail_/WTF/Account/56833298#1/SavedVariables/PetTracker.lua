@@ -3,6 +3,7 @@ PetTracker_Sets = {
 	["mapSearch"] = "",
 	["tutorial"] = 12,
 	["trackPets"] = true,
+	["rivalSearch"] = "",
 	["hideSpecies"] = true,
 	["rivalHistory"] = {
 		[85678] = {
@@ -13,5 +14,4 @@ PetTracker_Sets = {
 			"2a5f06ed202206000006C5708E028815317f0000064BC5EC019c5820a30000064BC5B1", -- [1]
 		},
 	},
-	["rivalSearch"] = "",
 }

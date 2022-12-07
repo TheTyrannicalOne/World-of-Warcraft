@@ -55,66 +55,66 @@ NarcissusDB = {
 	["TalentTreeUseClassBackground"] = false,
 	["TalentTreeShortTooltip"] = true,
 	["IndependentMinimapButton"] = false,
-	["ConduitTooltip"] = false,
+	["FontHeightItemName"] = 10,
 	["installTime"] = 1665263772,
 	["DominationIndicator"] = true,
-	["AutoFilterMail"] = false,
+	["TalentTreeForPaperDoll"] = false,
 	["AutoPlayAnimation"] = true,
 	["AFKScreen"] = false,
-	["ColorChoice"] = 0,
+	["AutoFilterGem"] = false,
 	["AKFScreenDelay"] = false,
 	["MissingEnchantAlert"] = false,
-	["CameraOrbit"] = true,
-	["TruncateText"] = false,
-	["ShowMinimapButton"] = true,
-	["TalentTreeForEquipmentManager"] = true,
-	["EnableGrainEffect"] = false,
-	["ShrinkArea"] = 0,
-	["NamePlateNameOffset"] = 0,
-	["CorruptionTooltipModel"] = true,
-	["SearchRelativesHotkey"] = "TAB",
-	["GemManager"] = true,
-	["ModelPanelScale"] = 1,
-	["TooltipTheme"] = "Dark",
-	["HideTextsWithUI"] = true,
-	["MinimapButton"] = {
-		["Position"] = 2.617993877991494,
-	},
-	["TalentTreeForInspection"] = true,
-	["NameTranslationPosition"] = 1,
-	["PhotoModeButton"] = {
-		["HideTexts"] = true,
-	},
-	["FadeButton"] = false,
-	["DressingRoomShowIconSelect"] = false,
 	["Tutorials"] = {
 		["Domination"] = true,
 		["ExitConfirmation"] = true,
-		["EquipmentSetManager"] = true,
 		["Movement"] = true,
+		["NPCBrowser"] = true,
 		["SpellVisualBrowser"] = true,
 		["IndependentMinimapButton"] = false,
 		["NPCBrowserEntance"] = true,
 		["WeaponBrowser"] = true,
-		["NPCBrowser"] = true,
+		["EquipmentSetManager"] = true,
 	},
+	["DressingRoomShowIconSelect"] = false,
+	["FadeButton"] = false,
+	["TalentTreeForEquipmentManager"] = true,
+	["EnableGrainEffect"] = false,
+	["ShrinkArea"] = 0,
+	["NamePlateNameOffset"] = 0,
+	["NameTranslationPosition"] = 1,
+	["SearchRelativesHotkey"] = "TAB",
+	["GemManager"] = true,
+	["ModelPanelScale"] = 1,
+	["TooltipTheme"] = "Dark",
+	["MinimapButton"] = {
+		["Position"] = 2.617993877991494,
+	},
+	["HideTextsWithUI"] = true,
+	["TalentTreeForInspection"] = true,
+	["CorruptionTooltipModel"] = true,
+	["PhotoModeButton"] = {
+		["HideTexts"] = true,
+	},
+	["ShowMinimapButton"] = true,
+	["TruncateText"] = false,
+	["CameraOrbit"] = true,
 	["BorderTheme"] = "Bright",
-	["AutoFilterGem"] = false,
-	["TalentTreeForPaperDoll"] = false,
+	["ColorChoice"] = 0,
+	["AutoFilterMail"] = false,
 	["SearchSuggestEnable"] = true,
-	["FontHeightItemName"] = 10,
+	["ConduitTooltip"] = false,
 	["DressingRoomUseTargetModel"] = true,
 }
 NarciAchievementOptions = {
-	["ShowRedMark"] = false,
+	["IncompleteFirst"] = true,
 	["UseAsDefault"] = false,
 	["DIY"] = {
 	},
-	["Theme"] = 1,
+	["UsedAsPrimary"] = true,
 	["Scale"] = 1,
 	["ReplaceToast"] = true,
-	["UsedAsPrimary"] = true,
-	["IncompleteFirst"] = true,
+	["Theme"] = 1,
+	["ShowRedMark"] = false,
 }
 NarciStatisticsDB = {
 	["InstalledDate"] = 1626024726,
@@ -137,40 +137,6 @@ NarciCharacterProfiles = {
 		["outfits"] = {
 		},
 		["class"] = 2,
-	},
-	["0C1345B8"] = {
-		["race"] = 32,
-		["name"] = "Galvarton",
-		["birth"] = 1666566022,
-		["serverID"] = "3683",
-		["lastVisit"] = 1669151712,
-		["outfits"] = {
-		},
-		["class"] = 11,
-	},
-	["0CBEA15E"] = {
-		["race"] = 8,
-		["name"] = "Durlok",
-		["birth"] = 1652077511,
-		["serverID"] = "96",
-		["lastVisit"] = 1668902799,
-		["outfits"] = {
-			{
-				["s"] = "0,94302,96928,92510,0,0,92151,91058,94306,91060,94402,94851,0",
-				["n"] = "Best I got now",
-			}, -- [1]
-		},
-		["class"] = 11,
-	},
-	["0AB08C15"] = {
-		["race"] = 8,
-		["name"] = "Bathal",
-		["birth"] = 1669310426,
-		["serverID"] = "75",
-		["lastVisit"] = 1669310629,
-		["outfits"] = {
-		},
-		["class"] = 6,
 	},
 	["0EB84EA0"] = {
 		["race"] = 10,
@@ -196,6 +162,40 @@ NarciCharacterProfiles = {
 		},
 		["class"] = 8,
 	},
+	["0AB08C15"] = {
+		["race"] = 8,
+		["name"] = "Bathal",
+		["birth"] = 1669310426,
+		["serverID"] = "75",
+		["lastVisit"] = 1669310629,
+		["outfits"] = {
+		},
+		["class"] = 6,
+	},
+	["0CA8EB69"] = {
+		["race"] = 31,
+		["name"] = "Zulbathal",
+		["birth"] = 1652077348,
+		["serverID"] = "61",
+		["lastVisit"] = 1669604994,
+		["outfits"] = {
+			{
+				["s"] = "101189,95085,98375,101191,0,83203,107509,101192,95089,95106,101195,97104,0",
+				["n"] = "Zando",
+			}, -- [1]
+		},
+		["class"] = 11,
+	},
+	["0CB6231E"] = {
+		["race"] = 34,
+		["name"] = "Varlouris",
+		["birth"] = 1653771638,
+		["serverID"] = "3683",
+		["lastVisit"] = 1667019575,
+		["outfits"] = {
+		},
+		["class"] = 7,
+	},
 	["0EBAD280"] = {
 		["race"] = 10,
 		["name"] = "Alatra",
@@ -216,26 +216,42 @@ NarciCharacterProfiles = {
 		},
 		["class"] = 7,
 	},
-	["0CA8EB69"] = {
-		["race"] = 31,
-		["name"] = "Zulbathal",
-		["birth"] = 1652077348,
-		["serverID"] = "61",
-		["lastVisit"] = 1669604994,
+	["0C1345B8"] = {
+		["race"] = 32,
+		["name"] = "Galvarton",
+		["birth"] = 1666566022,
+		["serverID"] = "3683",
+		["lastVisit"] = 1669151712,
 		["outfits"] = {
-			{
-				["s"] = "101189,95085,98375,101191,0,83203,107509,101192,95089,95106,101195,97104,0",
-				["n"] = "Zando",
-			}, -- [1]
 		},
 		["class"] = 11,
+	},
+	["0EDD1AD5"] = {
+		["race"] = 70,
+		["name"] = "Neltharigos",
+		["birth"] = 1668845699,
+		["serverID"] = "61",
+		["lastVisit"] = 1668854683,
+		["outfits"] = {
+		},
+		["class"] = 13,
+	},
+	["0A31081D"] = {
+		["race"] = 5,
+		["name"] = "Jingojaggot",
+		["birth"] = 1664126175,
+		["serverID"] = "75",
+		["lastVisit"] = 1669310110,
+		["outfits"] = {
+		},
+		["class"] = 5,
 	},
 	["058380E2"] = {
 		["race"] = 5,
 		["name"] = "Shanyt",
 		["birth"] = 1651529834,
 		["serverID"] = "75",
-		["lastVisit"] = 1669784974,
+		["lastVisit"] = 1670351039,
 		["outfits"] = {
 			{
 				["s"] = "19684,44897,62761,24793,83202,83203,33402,33179,71940,26234,22010,0,0",
@@ -276,26 +292,6 @@ NarciCharacterProfiles = {
 		},
 		["class"] = 1,
 	},
-	["0A31081D"] = {
-		["race"] = 5,
-		["name"] = "Jingojaggot",
-		["birth"] = 1664126175,
-		["serverID"] = "75",
-		["lastVisit"] = 1669310110,
-		["outfits"] = {
-		},
-		["class"] = 5,
-	},
-	["0EDD1AD5"] = {
-		["race"] = 70,
-		["name"] = "Neltharigos",
-		["birth"] = 1668845699,
-		["serverID"] = "61",
-		["lastVisit"] = 1668854683,
-		["outfits"] = {
-		},
-		["class"] = 13,
-	},
 	["0BE4455C"] = {
 		["race"] = 1,
 		["name"] = "Avisar",
@@ -306,15 +302,19 @@ NarciCharacterProfiles = {
 		},
 		["class"] = 2,
 	},
-	["0CB6231E"] = {
-		["race"] = 34,
-		["name"] = "Varlouris",
-		["birth"] = 1653771638,
-		["serverID"] = "3683",
-		["lastVisit"] = 1667019575,
+	["0CBEA15E"] = {
+		["race"] = 8,
+		["name"] = "Durlok",
+		["birth"] = 1652077511,
+		["serverID"] = "96",
+		["lastVisit"] = 1668902799,
 		["outfits"] = {
+			{
+				["s"] = "0,94302,96928,92510,0,0,92151,91058,94306,91060,94402,94851,0",
+				["n"] = "Best I got now",
+			}, -- [1]
 		},
-		["class"] = 7,
+		["class"] = 11,
 	},
 	["0DE12200"] = {
 		["race"] = 35,

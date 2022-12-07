@@ -5,10 +5,10 @@ HandyNotes_MechagonAndNazjatarDB = {
 		["Zulbathal - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
-		["Bathal - Argent Dawn"] = "Default",
+		["Jingojaggot - Argent Dawn"] = "Default",
 		["Galvarton - Dalaran"] = "Default",
 		["Brotus - Argent Dawn"] = "Default",
-		["Jingojaggot - Argent Dawn"] = "Default",
+		["Bathal - Argent Dawn"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

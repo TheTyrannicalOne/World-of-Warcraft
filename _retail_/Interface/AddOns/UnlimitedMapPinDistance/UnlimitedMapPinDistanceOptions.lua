@@ -73,6 +73,7 @@ function UMPD_Init()
     UMPD.pinAlphaLong = UMPD.pinAlphaLong or 60
     UMPD.pinAlphaShort = UMPD.pinAlphaShort or 100
     UMPD.pinAlphaClamped = UMPD.pinAlphaClamped or 100
+    UMPD.timeDistance = UMPD.timeDistance or true
 
     -- Frame
     UMPDO = CreateFrame("Frame", nil, UIParent)
@@ -133,6 +134,11 @@ function UMPD_Init()
     cbTrackPins:SetPoint("TOPLEFT", 8, -252)
     cbTrackPins:HookScript("OnClick", function(self,value)
         UMPD.autoTrackPins = self:GetChecked()
+    end)
+    local cbShowTime = createCheckbox(UMPDO,UMPD.timeDistance,"st","Show estimated time to arrive")
+    cbShowTime:SetPoint("TOPLEFT", 232, -252)
+    cbShowTime:HookScript("OnClick", function(self,value)
+        UMPD.timeDistance = self:GetChecked()
     end)
 
     -- Notes

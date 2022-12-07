@@ -87,7 +87,7 @@ app.report = function(...)
 	if ... then
 		app.print(...);
 	end
-	app.print(app.Version .. L["PLEASE_REPORT_MESSAGE"]);
+	app.print(app.Version..": "..L["PLEASE_REPORT_MESSAGE"]);
 end
 app.PrintGroup = function(group,depth)
 	depth = depth or 0;
@@ -2503,7 +2503,7 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef)
 		local x,y = position:GetXY();
 		x = math.floor(x * 1000) / 10;
 		y = math.floor(y * 1000) / 10;
-		coord = x..","..y;
+		coord = x..", "..y;
 	end
 	return
 	{
@@ -17174,7 +17174,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 		window:SetMovable(true);
 		window:SetResizable(true);
 		window:SetPoint("CENTER");
-		--window:SetMinResize(96, 32);
+		window:SetResizeBounds(96, 32);
 		window:SetSize(300, 300);
 
 		-- set the scaling for the new window if settings have been initialized
@@ -18564,12 +18564,12 @@ app.ResetCustomWindowParam = function(suffix)
 	customWindowUpdates.params[suffix] = nil;
 end
 customWindowUpdates["AchievementHarvester"] = function(self, ...)
-	-- /script AllTheThings:GetWindow("AchievementHarvester"):Toggle();
+	-- /run AllTheThings:GetWindow("AchievementHarvester"):Toggle();
 	if self:IsVisible() then
 		if not self.initialized then
 			self.doesOwnUpdate = true;
 			self.initialized = true;
-			self.Limit = 15596;	-- MissingAchievements:9.2.5.42850
+			self.Limit = 17314;	-- MissingAchievements:10.0.2.46781
 			self.PartitionSize = 2000;
 			local db = {};
 			local CleanUpHarvests = function()
@@ -21103,6 +21103,8 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 			-- TODO: this can be called successfilly without tradeskillUI open... potentially use function runner
 			local schematic = C_TradeSkillUI_GetRecipeSchematic(recipeID, false);
 			local craftedItemID = schematic.outputItemID;
+			-- Tag's attempt to fix an error when opening Enchanting
+			if craftedItemID == nil then return end
 			-- app.PrintDebug("Recipe",recipeID,"==>",craftedItemID)
 			local reagentItem, reagentCount, reagentItemID;
 			-- Recipes now have Slots for available Regeants...
@@ -21534,12 +21536,17 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				{ app.FactionID == Enum.FlightPathFaction.Horde and 875 or 876, 895 },	-- Kul'Tiras or Zandalar, Stormsong Valley
 			};
 			local worldMapIDs = {
+				-- Dragon Isles Continents
+				{
+					1978,	-- Dragon Isles
+					{
+						-- TODO: any un-attached sub-zones
+					}
+				},
 				-- Shadowlands Continents
 				{
 					1550,	-- Shadowlands
-					{
-						-- TODO: callings?
-					}
+					{}
 				},
 				-- BFA Continents
 				{
@@ -22530,7 +22537,7 @@ local function AttachTooltip(self, ttdata)
 		end
 	end
 
-	-- app.PrintDebug("TooltipContent",link,target,spellID,id,ttType,ttId)
+	-- app.PrintDebug(self:GetName(),link,target,spellID,id,ttType,ttId)
 
 	--[[--]
 	-- Debug all of the available fields on the tooltip.

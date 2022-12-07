@@ -17,6 +17,7 @@ local points = this.points
 ---
 local maps = {
   -- Classic
+  ['stormwind'] = 84,
   ['orgrimmar'] = 85,
 
   -- Blackfathom Deeps
@@ -408,6 +409,15 @@ local maps = {
   ['hfc_halls_of_sargerei'] = 668,
   ['hfc_destructors_rise'] = 669,
   ['hfc_black_gate'] = 670,
+
+  -- Legion
+  ['dalaran_legion'] = 627,
+
+  -- Battle for Azeroth
+  ['jade_forest_bfa'] = 371,
+
+  -- Dragonflight
+  ['valdrakken'] = 2112,
 }
 
 -- Iterate all maps and assign their ids, so we can use them for our points.

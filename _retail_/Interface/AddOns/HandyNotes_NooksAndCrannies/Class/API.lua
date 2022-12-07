@@ -233,4 +233,16 @@ function API:IsAltKeyDown()
   return IsAltKeyDown()
 end
 
+---
+--- Get the name of the faction (Horde/Alliance) a unit belongs to.
+---
+--- @link https://wowpedia.fandom.com/wiki/API_UnitFactionGroup
+---
+--- @return string
+---   Unit's faction name in English, i.e. "Alliance", "Horde", "Neutral" or nil.
+---
+function API:unitFactionGroup()
+  return UnitFactionGroup('player')
+end
+
 this.API = API

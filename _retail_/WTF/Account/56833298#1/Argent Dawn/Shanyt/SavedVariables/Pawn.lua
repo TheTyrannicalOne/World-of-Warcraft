@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0713,
-	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 157897,
@@ -86,11 +83,15 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163874::::::::120:71::28:5:5125:6516:6513:1637:4786:::|h[Honorbound Decapitator]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 188039,
-			["Level"] = 229,
-			["Link"] = "|cff1eff00|Hitem:188039::::::::60:71::26:2:6652:1475:1:28:2057:::::|h[Harmonic Actuator]|h|r",
+			["ID"] = 190483,
+			["Level"] = 335,
+			["AlsoFitsIn"] = 16,
+			["Link"] = "|cff0070dd|Hitem:190483::::::::70:71::13:3:8851:8852:8799:5:28:2164:29:32:30:36:38:5:40:179:::::|h[Draconium Dirk |A:Professions-ChatIcon-Quality-Tier2:17:23::1|a]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

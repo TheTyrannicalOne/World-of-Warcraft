@@ -1,13 +1,10 @@
-## Interface: 100000
+## Interface: 100002
 ## Title: HandyNotes_AncientShrines
-## Notes: Ancient shrine buffs for ganking or just for pve.
-## Author: Frostaphim @ EU-Xavius
-## Version: 3.0
-## DefaultState: enabled
-## X-Category: Map
+## Notes: Displays the locations of the ancientshrines, usefull for PVP or PVE
+## Author: Frostaphim-Xavius
+## Version: 10.0.0.2
 ## SavedVariables: HandyNotes_AncientShrinesDB
 ## RequiredDeps: HandyNotes
 
-handler.lua
-config.lua
-nodes.lua
+Core.lua
+Data.lua

@@ -16,13 +16,17 @@ NarciStatisticsDB_PC = {
 				["visit"] = 1,
 				["time"] = 1,
 			},
+			[2024] = {
+				["visit"] = 2,
+				["time"] = 188,
+			},
 			[2022] = {
-				["visit"] = 6,
-				["time"] = 292,
+				["visit"] = 12,
+				["time"] = 633,
 			},
 		},
 		["CoinSpentBeforeShadowlands"] = 163889,
 	},
-	["CovenantDecision"] = 28,
 	["CovenantWalkthrough"] = 144,
+	["CovenantDecision"] = 28,
 }

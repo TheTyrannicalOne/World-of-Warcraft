@@ -3,7 +3,7 @@
 
                                           Springfur Alpaca
 
-                                      v1.07 - 26th October 2022
+                                      v1.08 - 7th December 2022
                                 Copyright (C) Taraezor / Chris Birch
 
                                 ----o----(||)----oo----(||)----o----

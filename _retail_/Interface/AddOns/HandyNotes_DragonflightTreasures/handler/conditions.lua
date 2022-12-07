@@ -43,6 +43,7 @@ ns.conditions.Achievement = Class{
     type = 'achievement',
     Matched = function(self) return (select(4, GetAchievementInfo(self.id))) end,
 }
+ns.conditions.AchievementIncomplete = Class(Negated(ns.conditions.Achievement))
 
 ns.conditions.AuraActive = Class{
     __parent = Condition,
@@ -55,6 +56,50 @@ ns.conditions.SpellKnown = Class{
     __parent = Condition,
     type = 'spell',
     Matched = function(self) return IsSpellKnown(self.id) end,
+}
+
+ns.conditions.Profession = Class{
+    -- See https://wowpedia.fandom.com/wiki/TradeSkillLineID for IDs
+    -- TODO: make work in Classic? Whole different API.
+    __parent = RankedCondition,
+    type = "profession",
+    Matched = function(self)
+        -- The problem: this is only reliable for skill levels after the trade skill has been opened
+        local info = C_TradeSkillUI.GetProfessionInfoBySkillLineID(self.id)
+        if not (info and info.skillLevel) then return false end
+        if info.skillLevel > 0 then
+            -- we have good data
+            return info.skillLevel >= (self.rank or 1)
+        end
+        -- we need to start making guesses
+        return self:CheckProfessions(info, GetProfessions())
+    end,
+    CheckProfessions = function(self, info, ...)
+        for i = 1, select("#", ...) do
+            if self:CheckProfession(info, select(i, ...)) then
+                return true
+            end
+        end
+        return false
+    end,
+    CheckProfession = function(self, info, professionid)
+        if not professionid then return end
+        local skillName, _, skillLevel, maxSkillLevel, _, _, skillLineID, _, _, _, displayName = GetProfessionInfo(professionid)
+        if info.professionID == skillLineID then
+            -- This is the exact skill!
+            return skillLevel >= (self.rank or 1)
+        end
+        if info.parentProfessionID == skillLineID then
+            -- The overall skill is known
+            if displayName == info.professionName then
+                -- This is the highest expansion skill currently, so the reported skill level is correct
+                return skillLevel >= (self.rank or 1)
+            end
+            -- This is the wrong expansion skill... so ignore the rank check and just claim we know it
+            -- TODO: this the worst case, improve it somehow?
+            return true
+        end
+    end,
 }
 
 ns.conditions.Covenant = Class{
@@ -151,6 +196,12 @@ ns.conditions.WorldQuestActive = Class{
     Matched = function(self) return C_TaskQuest.IsActive(self.id) or C_QuestLog.IsQuestFlaggedCompleted(self.id) end,
 }
 
+ns.conditions.OnQuest = Class{
+    __parent = Condition,
+    type = 'quest',
+    Matched = function(self) return C_QuestLog.IsOnQuest(self.id) end,
+}
+
 ns.conditions.Vignette = Class{
     __parent = Condition,
     type = 'vignette',
@@ -177,6 +228,7 @@ ns.conditions.Vignette = Class{
 ns.conditions.Level = Class{
     __parent = Condition,
     type = 'level',
+    Label = function(self) return UNIT_LEVEL_TEMPLATE:format(self.id) end,
     Matched = function(self) return UnitLevel('player') >= self.id end,
 }
 

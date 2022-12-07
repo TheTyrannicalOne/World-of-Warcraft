@@ -5,4 +5,5 @@
   <Include file='Cataclysm\maps.xml'/>
   <Include file='MoP\maps.xml'/>
   <Include file='WoD\maps.xml'/>
+  <Include file='DF\maps.xml'/>
 </Ui>

@@ -7,10 +7,10 @@ WoWPro:GuideSteps(guide, function()
 return [[
 ;Renown stuff -- I think since they are all based on someone showing up whereever you are, they should be put at the top of the guide, once we have the REN stuff worked out since everyone will receive those quests at a little bit diff time based on what they have done to earn REN.
 ;Rowie offers a quest at Tuskaar 3 REN also, its down below, but forgot to add to this section
-A Fishing Holes|QID|70941|M|PLAYER|Z|2024|N|From Rowie.|DFREN|Iskaara;2510;4|;not positive of the REN
-;Rowie showed up again and offered me Tuskarr Fishing Gear|QID|71230|LEAD|70871| just after I got Tuskarr REN 5
-;A To Dragonbone Keep|QID|71210|M|PLAYER|N|From Herald Flaps.|;Valdrakken Accord REN 5
-;Dormant Discovery - this dropped when you hit ValdrakkenREN 7 and starts the waygates questline. first turn in prolly s/b in WS guide since that is when the item will drop and the first turnin is there, resulting in sending you to Camp Antonidas, and I put that questline here, starting with T Nightborne Knowhow|QID|66598
+A Fishing Holes|QID|70941|M|PLAYER|Z|2024|N|From Rowie.|DFREN|Iskaara;2511;4|;not positive of the REN
+A Tuskarr Fishing Gear|QID|71230|LEAD|70871|N|From Rowie|DFREN|Iskaara;2511;5|
+A To Dragonbone Keep|QID|71210|M|PLAYER|N|From Herald Flaps.|DFREN|valdrakken;2510;5|
+;Dormant Discovery - this dropped when you hit Valdrakken REN 7 and starts the waygates questline. first turn in prolly s/b in WS guide since that is when the item will drop and the first turnin is there, resulting in sending you to Camp Antonidas, and I put that questline here, starting with T Nightborne Knowhow|QID|66598
 ;A Community Feasts|QID|70938|M|7.66,44.30|Z|2024|N|From Rowie.|RANK|2|;i got this much earlier REN 3?; I got Community Feasts from Rowie (who follows you till you accept), REN 3 i think. I don't know if we want to put it in the guide or not.
 
 ;Dragon Riding Glyphs that need to be worked into the guide.
@@ -28,42 +28,49 @@ A Fishing Holes|QID|70941|M|PLAYER|Z|2024|N|From Rowie.|DFREN|Iskaara;2510;4|;no
 ;PLACED (in OP) F Forkriver Crossing|N|Just above the road.|M|70.15,86.78|Z|2024;The Azure Plains!Dragonflight|ACH|16672|
 
 ;adventure mode
-F Forkriver Crossing|ACTIVE|72268^65686|M|71.66,80.59|Z|2023|N|Fly to Forkriver either on your own or at a flight master.|
+F Forkriver Crossing|ACTIVE|72268|M|71.66,80.59|Z|2023|N|Fly to Forkriver either on your own or at a flight master.|
 T Azure Span|QID|72268|M|71.66,80.59|Z|2023|N|To Masud the Wise.|
-
 A To the Azure Span|QID|65686|PRE|72268|M|71.66,80.59|Z|2023|N|From Masud the Wise.|
 T To the Azure Span|QID|65686|M|41.44,35.60|Z|2024|NC|N|To Glania of the Blessed Ones.|
-A Camp Antonidas|QID|66228|PRE|65686|M|41.44,35.60|Z|2024|N|From Glania of the Blessed Ones.|
+
+A Camp Antonidas|QID|66228|PRE|65686|M|41.44,35.60|Z|2024|N|From Glania of the Blessed Ones.|C|-EVOKER|
+A Shades of Blue|QID|70746|PRE|65686|M|41.45,35.90|Z|2024|N|From Scalecommander Emberthal.|C|EVOKER|
 A Some Good Fishing|QID|66227|PRE|65686|M|41.46,35.63|Z|2024|N|From Khuri.|RANK|3|;add profession check. or a step telling them to train fishing if they havent?
 C Some Good Fishing|QID|66227|M|41.46,35.63|Z|2024|N|Take a moment to catch some fish. It's for a good cause.|
 T Some Good Fishing|QID|66227|M|41.46,35.63|Z|2024|N|To Khuri.|
 A Arcane Detection|QID|67174|PRE|65686|M|41.22,35.88|Z|2024|N|From Miva Star-Eye. BTW, DON'T click the scroll of blinding speed on her table, it makes you blind for a few seconds.|RANK|2|
-C Arcane Detection|QID|67174|QO|1|M|41.39,35.697|Z|2024|NC|N|The Unassuming flask in next to the bedroll. Click it to examine.|
-C Arcane Detection|QID|67174|QO|2|M|41.41,35.79|Z|2024|NC|N|The Dusty teapot is in a basket next to the tent. Click it next.|
-C Arcane Detection|QID|67174|QO|3|M|41.23,36.40|Z|2024|NC|N|The Toy Boat is with a yound tuskaar. Click it too.|
+C Arcane Detection|QID|67174|QO|1|M|41.39,35.697|Z|2024|H|N|The Unassuming flask in next to the bedroll. Click it to examine.|
+C Arcane Detection|QID|67174|QO|2|M|41.41,35.79|Z|2024|H|N|The Dusty teapot is in a basket next to the tent. Click it next.|
+C Arcane Detection|QID|67174|QO|3|M|41.23,36.40|Z|2024|H|N|The Toy Boat is with a yound tuskaar. Click it too.|
 A WANTED: Gorger|QID|67177|PRE|65686|M|41.42,36.41|Z|2024|N|[color=ff8000]Elite: [/color]From Shala.|RANK|2|
 T Arcane Detection|QID|67174|M|41.22,35.88|Z|2024|N|To Miva Star-Eye.|
 A How To Stop An Exploding Toy Boat|QID|67175|PRE|67174|M|41.22,35.88|Z|2024|N|From Miva Star-Eye.|RANK|2|
-C How To Stop An Exploding Toy Boat|QID|67175|QO|1|M|41.20,35.86|Z|2024|CHAT|N|Eplain the problem to Julk.|
-C How To Stop An Exploding Toy Boat|QID|67175|QO|2|M|41.19,35.90|Z|2024|NC|N|Pick up Miva's Dispelling Wand from the table.|
-C How To Stop An Exploding Toy Boat|QID|67175|QO|3|M|40.59,36.55|Z|2024|NC|N|Click on the boat to dispel the arcane magic.|
-K Gorger|ACTIVE|67177|M|40.09,37.39|Z|2024|N|Kill the big Thunderlizard.|T|Gorger|
+C How To Stop An Exploding Toy Boat|QID|67175|QO|1|M|41.20,35.86|Z|2024|CHAT|N|Explain the problem to Julk.|
+C How To Stop An Exploding Toy Boat|QID|67175|QO|2|M|41.19,35.90|Z|2024|H|N|Pick up Miva's Dispelling Wand from the table.|
+C How To Stop An Exploding Toy Boat|QID|67175|QO|3|M|40.59,36.55|Z|2024|H|N|Click on the boat to dispel the arcane magic.|
+K Gorger|ACTIVE|67177|M|40.09,37.39|QO|1|Z|2024|L|194901|N|Kill the big Thunderlizard.|T|Gorger|
 T How To Stop An Exploding Toy Boat|QID|67175|M|41.22,35.88|Z|2024|N|To Miva Star-Eye.|
 T WANTED: Gorger|QID|67177|M|41.42,36.41|Z|2024|N|To Shala.|
 
-R Camp Antonidas|ACTIVE|66228|M|45.94,40.65|Z|2024|N|Continue up the road to Camp Antonidas.\n\n[color=FF0000]NOTE: [/color]Our good friend Hemet Nesingwary drives a wagon around the zone, his full route take a bit over an hour, stopping 3 times in Camp Antonidas offering a different kill quest each time. Keep your eye out for him and grab those quests if you want them. Guide won't tell you when to pick them up, but the kill and Turn in steps are here. It might be worth asking in zone chat for someone to share them with you as he is a pain to find.|;not rank 2. the info about Hemet is. but everyone has to run here. and extra info doesnt hurt.
+R Camp Antonidas|ACTIVE|66228^70746|M|45.94,40.65|Z|2024|N|Continue up the road to Camp Antonidas.\n\n[color=FF0000]NOTE: [/color]Our good friend Hemet Nesingwary drives a wagon around the zone, his full route take a bit over an hour, stopping 3 times in Camp Antonidas offering a different kill quest each time. Keep your eye out for him and grab those quests if you want them. Guide won't tell you when to pick them up, but the kill and Turn in steps are here. It might be worth asking in zone chat for someone to share them with you as he is a pain to find.|;not rank 2. the info about Hemet is. but everyone has to run here. and extra info doesnt hurt.
+C Shades of Blue|QID|70746|M|45.61,41.25|Z|2024|N|Meet Emberthal and Telash at Camp Antonidas.You can just fly there and don't need to walk with them.|
+T Shades of Blue|QID|70746|M|45.61,41.25|Z|2024|N|To Scalecommander Emberthal.|
+A The Azure Wizard|QID|70747|PRE|70746|M|45.6,41.2|Z|2024|N|From Telash Greywing.\nWait for them to finish their dialogue.|C|EVOKER|
+C The Azure Wizard|QID|70747|M|46.64,40.19|Z|2024|CHAT|N|Ask him if he serves the blue dragonflight|
+T The Azure Wizard|QID|70747|M|46.64,40.19|Z|2024|N|To Archmage Khadgar.|
+
 T Nightborne Knowhow|QID|66598|M|45.94,40.65|Z|2024|N|To Warpcaster Delandra.|;add IZ so this doesnt pop up while out and about -- then copy this step (+ next 4) to other places in the guide where you are in Camp Antonidas, in case they get it later.
 A Curiosity is Key|QID|70215|PRE|66598|M|45.94,40.65|Z|2024|N|From Warpcaster Delandra.|
 C Curiosity is Key|QID|70215|M|45.94,40.65|Z|2024|N|Ask her about the stones and runes.|
 T Curiosity is Key|QID|70215|M|45.94,40.65|Z|2024|N|To Warpcaster Delandra.|
 A Power Procurement|QID|66582|PRE|70215|M|45.94,40.65|Z|2024|N|From Warpcaster Delandra.|
 T Camp Antonidas|QID|66228|M|46.65,40.17|Z|2024|N|To Noriko the All-Remembering.|
-A Assemble the Defenses|QID|67033|PRE|66228|M|46.69,39.76|Z|2024|N|From Noriko the All-Remembering.|
-A Preservation of Knowledge|QID|67035|PRE|66228|M|46.66,39.74|Z|2024|N|From Althanus.|
+A Assemble the Defenses|QID|67033|PRE|66228^70747|M|46.69,39.76|Z|2024|N|From Noriko the All-Remembering.|
+A Preservation of Knowledge|QID|67035|PRE|66228^70747|M|46.66,39.74|Z|2024|N|From Althanus.|
 A Supporting the Cobalt Assembly|QID|72784|PRE|66228|M|46.66,39.74|Z|2024|N|From Althanus.|RANK|2|
-C Assemble the Defenses|QID|67033|QO|1<1|M|46.16,39.35|Z|2024|NC|N|Beware of the bombardment. Pick the first device up here.|
-C Preservation of Knowledge|QID|67035|M|46.11,38.51|Z|2024|NC|N|Pick up the tomes in the pavilion.|
-C Assemble the Defenses|QID|67033|M|46.1,40.8;45.85,40.17|CS|Z|2024|NC|N|And back thru the bombardment to get to the other two Broken Arcane Devices.|
+C Assemble the Defenses|QID|67033|QO|1<1|M|46.16,39.35|Z|2024|H|N|Beware of the bombardment. Pick the first device up here.|
+C Preservation of Knowledge|QID|67035|M|46.11,38.51|Z|2024|H|N|Pick up the tomes in the pavilion.|
+C Assemble the Defenses|QID|67033|M|46.1,40.8;45.85,40.17|CS|Z|2024|H|N|And back thru the bombardment to get to the other two Broken Arcane Devices.|
 T Preservation of Knowledge|QID|67035|M|46.67,39.74|Z|2024|N|To Althanus.|
 T Assemble the Defenses|QID|67033|M|46.70,39.76|Z|2024|N|To Noriko the All-Remembering.|
 A Wrath of the Kirin Tor|QID|67036|PRE|67033&67035|M|46.69,39.76|Z|2024|N|From Noriko the All-Remembering.|
@@ -74,11 +81,11 @@ A Meeting Kalecgos|QID|65688|PRE|67036|M|46.63,40.19|Z|2024|N|From Archmage Khad
 A WANTED: Frigellus|QID|66488|PRE|67036|M|46.16,39.62|Z|2024|N|From WANTED poster.|RANK|2|
 A Path to Nowhere|QID|66671|PRE|67036|M|45.69,39.79|Z|2024|N|From Caddy Scattershot.|RANK|2|
 C Meeting Kalecgos|QID|65688|QO|1|M|45.98,38.78|Z|2024|CHAT|N|Click on the Supply Portal and ask if the quartermaster can help you.|
-C Meeting Kalecgos|QID|65688|QO|2|M|45.95,38.91|Z|2024|NC|N|Pick up the Bag from the ground.|
+C Meeting Kalecgos|QID|65688|QO|2|M|45.95,38.91|Z|2024|H|N|Pick up the Bag from the ground.|
 A Tending the Forge|QID|66523|PRE|67036|M|46.12,40.99|Z|2024|N|From Custodian Vernagos.|RANK|2|
-C Tending the Forge|QID|66523|QO|3|M|45.66,40.72|Z|2024|NC|N|Pick up the embercones from the ground behind Custodian Vernagos' house.|S|
+C Tending the Forge|QID|66523|QO|3|M|45.66,40.72|Z|2024|H|N|Pick up the embercones from the ground behind Custodian Vernagos' house.|S|
 C Tending the Forge|QID|66523|QO|2|M|45.66,40.72|Z|2024|N|Kill Hornswogs to collect their hides.|
-C Tending the Forge|QID|66523|QO|3|M|47.01,41.26|Z|2024|NC|N|Finish picking up the embercones.|US|
+C Tending the Forge|QID|66523|QO|3|M|47.01,41.26|Z|2024|H|N|Finish picking up the embercones.|US|
 C Tending the Forge|QID|66523|QO|1|M|47.77,37.98|Z|2024|N|Kill and loot some of the smaller elementals near Frigellus to get the frozen cores.|S|
 K Frigellus|ACTIVE|66488|QO|1|M|47.77,37.98|Z|2024|N|Slay Frigellus.|T|Frigellus|
 K Frostfist|ACTIVE|66957|QO|1|M|49.04,36.48|Z|2024|N|Kill and loot Frostfist, He is on the ice flow, fly up and North of Camp Antonidas.|
@@ -92,23 +99,23 @@ T Tending the Forge|QID|66523|M|46.12,40.99|Z|2024|N|To Custodian Vernagos.|
 R Azure Archives|ACTIVE|65688|M|45,49.2|CC|Z|2024|N|Follow the road generally south out of town to find Kalecgos.|RANK|-1|
 A Mammoths Matter|QID|65914|M|44.77,50.65|Z|2024|N|From Ruriq.|RANK|2|
 A Culling the Cullers|QID|65925|M|44.77,50.65|Z|2024|N|From Ruriq.|RANK|2|
-C Mammoths Matter|QID|65914|M|46.52,51.22|Z|2024|NC|N|Click on the already dead mammoths to collect the parts.|S|
+C Mammoths Matter|QID|65914|M|46.52,51.22|Z|2024|H|N|Click on the already dead mammoths to collect the parts.|S|
 C Culling the Cullers|QID|65925|M|46.52,51.22|Z|2024|N|Kill the wyrms.|
-C Mammoths Matter|QID|65914|M|46.52,51.22|Z|2024|NC|N|Finish collecting the mammoth parts.|US|
+C Mammoths Matter|QID|65914|M|46.52,51.22|Z|2024|H|N|Finish collecting the mammoth parts.|US|
 T Culling the Cullers|QID|65925|M|45.41,54.18|Z|2024|N|To Ruriq.|
 T Mammoths Matter|QID|65914|M|45.41,54.18|Z|2024|N|To Ruriq.|
 A Tackling the Falls|QID|65926|PRE|65914&65925|M|45.41,54.18|Z|2024|N|From Ruriq.|
-C Tackling the Falls|QID|65926|M|45.39,54.12|Z|2024|NC|N|Click on Ruriq's boat to help him.|
+C Tackling the Falls|QID|65926|M|45.39,54.12|Z|2024|H|N|Click on Ruriq's boat to help him.|
 T Tackling the Falls|QID|65926|M|45.52,54.18|Z|2024|N|To Kauj.|
 A The Gleamfisher|QID|66724|PRE|65926|M|45.52,54.18|Z|2024|N|From Kauj.|
-C The Gleamfisher|QID|66724|QO|1|M|44.92,53.75;45.15,54.91|CS|Z|2024|NC|N|Click on the fish caught in the nets.|
-C The Gleamfisher|QID|66724|QO|2|M|45.48,54.19|Z|2024|N|Click on the offering basket.|
+C The Gleamfisher|QID|66724|QO|1|M|44.92,53.75;45.15,54.91|CS|Z|2024|H|N|Click on the fish caught in the nets.|
+C The Gleamfisher|QID|66724|QO|2|M|45.48,54.19|Z|2024|H|N|Click on the offering basket.|
 T The Gleamfisher|QID|66724|M|45.41,54.18|Z|2024|N|To Ruriq.|
 A Ice Breakers|QID|65929|PRE|66724|M|45.41,54.18|Z|2024|N|From Ruriq.|
 A Wayward Winds|QID|65928|PRE|66724|M|45.52,54.18|Z|2024|N|From Kauj.|
-C Wayward Winds|QID|65928|M|46.28,57.72|Z|2024|N|Kill and loot the Restless Wind.|
-C Ice Breakers|QID|65929|M|46.75,57.56|Z|2024|NC|N|Click the Freezing Water.|
-C Wayward Winds|QID|65928|M|45.97,56.15|Z|2024|N|Finish up collecting restless motes by killing and looting the Restless Winds.|
+C Wayward Winds|QID|65928|M|46.28,57.72|Z|2024|N|Kill and loot the Restless Wind.|S|
+C Ice Breakers|QID|65929|M|46.75,57.56|Z|2024|H|N|Click the Freezing Water.|
+C Wayward Winds|QID|65928|M|45.97,56.15|Z|2024|N|Finish up collecting restless motes by killing and looting the Restless Winds.|US|
 T Ice Breakers|QID|65929|M|45.41,54.18|Z|2024|N|To Ruriq.|
 T Wayward Winds|QID|65928|M|45.52,54.18|Z|2024|N|To Kauj.|
 A A Wrestle of Wind and Water|QID|65930|PRE|65928&65929|M|45.52,54.18|Z|2024|N|From Kauj.|
@@ -116,12 +123,13 @@ C A Wrestle of Wind and Water|QID|65930|M|45.59,57.63|Z|2024|N|The spirits can b
 T A Wrestle of Wind and Water|QID|65930|M|44.99,54.04|Z|2024|N|To Ruriq.|
 A Ruriq's River Rapids Ride|QID|66155|PRE|65930|M|44.99,54.04|Z|2024|N|From Ruriq.|
 C Ruriq's River Rapids Ride|QID|66155|M|44.92,54.09|V|N|Hop in the boat, UI Changes to let you catch fish as you go down the river.|
-T Ruriq's River Rapids Ride|QID|66155|M|34.26,53.33|Z|2024|N|To Ruriq.|
-R Azure Archives|ACTIVE|65688|M|40.92,55.01|CC|Z|2024|N|Fly back up the river or ask Ruriq for a ride to continue your trip to the Azure Archives.|
+T Ruriq's River Rapids Ride|QID|66155|M|44.99,54.04|Z|2024|N|To Ruriq.|
+R Azure Archives|ACTIVE|65688|M|40.92,55.01|CC|Z|2024|N|Fly back up the river to the Azure Archives.|
+
 
 T Meeting Kalecgos|QID|65688|M|40.92,55.01|Z|2024|N|To Kalecgos.|
 A The Many Images of Kalecgos|QID|65689|PRE|65688|M|40.92,55.01|Z|2024|N|From Kalecgos.|
-C The Many Images of Kalecgos|QID|65689|M|41.13,55.38|Z|2024|QO|1|NC|N|Click the crystal pylon to be transported to the Azure Archives.|
+C The Many Images of Kalecgos|QID|65689|M|41.13,55.38|Z|2024|QO|1|H|N|Click the crystal pylon to be transported to the Azure Archives.|
 T The Many Images of Kalecgos|QID|65689|M|40.74,59.04|Z|2024|N|To Kalecgos.|
 A Driven Mad|QID|65702|PRE|65689|M|40.74,59.04|Z|2024|N|From Kalecgos.|
 A Arcane Pruning|QID|65709|PRE|65689|M|40.69,59.10|Z|2024|N|From Kalecgos.|
@@ -134,7 +142,7 @@ T Arcane Pruning|QID|65709|M|40.69,59.10|Z|2024|N|To Kalecgos.|
 T Driven Mad|QID|65702|M|40.74,59.04|Z|2024|N|To (the other) Kalecgos.|
 A Straight to the Top|QID|65852|PRE|65702&65709|M|40.74,59.04|Z|2024|N|From Kalecgos.|
 C Straight to the Top|QID|65852|M|39.58,60.27|Z|2024|QO|1|U|191978|NC|N|Go back to the arcane field and use the [color=33fff9]Bag of Helpful Goods [/color] again to find more helpul stuff.|
-C Straight to the Top|QID|65852|M|39.58,60.27|Z|2024|QO|2|NC|EAB|N|Use the [color=33fff9]extra action button [/color] that appears to reach the Azure Archives apex.|
+C Straight to the Top|QID|65852|M|39.58,60.27|Z|2024|QO|2|NC|EAB|N|When the [color=33fff9]extra action button [/color] appears, use it to reach the Azure Archives apex.|
 T Straight to the Top|QID|65852|M|39.97,61.46|Z|2024|N|To Kalecgos.|
 A Platform Adjustments|QID|65751|PRE|65852|M|39.97,61.46|Z|2024|N|From Kalecgos.|
 A Arcane Annoyances|QID|65752|PRE|65852|M|39.97,61.46|Z|2024|N|From Kalecgos.|
@@ -159,28 +167,28 @@ A Suspiciously Quiet|QID|69904|PRE|65855|M|46.65,40.16|Z|2024|N|From Noriko the 
 C Suspiciously Quiet|QID|69904|M|47.67,40.25|Z|2024|NC|U|192471|N|Click on Apprentice Scrumpy to "find" him.|
 T Suspiciously Quiet|QID|69904|M|47.67,40.25|Z|2024|N|To Apprentice Scrumpy.|
 A Ways of Seeing|QID|66500|PRE|69904|M|47.67,40.25|Z|2024|N|From Apprentice Scrumpy.|RANK|2|
-C Ways of Seeing|QID|66500|QO|1|M|47.77,39.98|Z|2024|NC|N|Click on the Lingering Image to investigate the mosiac.|
-C Ways of Seeing|QID|66500|QO|2|M|47.11,40.36|Z|2024|NC|N|Click on the Lingering Image to investigate the tower.|
-C Ways of Seeing|QID|66500|QO|3|M|46.03,40.99|Z|2024|NC|N|Click on the Lingering Image to investigate the workshop.|
+C Ways of Seeing|QID|66500|QO|1|M|47.77,39.98|Z|2024|H|N|Click on the Lingering Image to investigate the mosiac.|
+C Ways of Seeing|QID|66500|QO|2|M|47.11,40.36|Z|2024|H|N|Click on the Lingering Image to investigate the tower.|
+C Ways of Seeing|QID|66500|QO|3|M|46.03,40.99|Z|2024|H|N|Click on the Lingering Image to investigate the workshop.|
 T Power Procurement|QID|66582|M|45.93,40.66|Z|2024|N|To Delandra.|
 A A Gateway to Somewhere|QID|70154|PRE|66582|M|45.93,40.66|N|From Delandra. Unless you can't stand secrets, wait to take her portal till later, we will be back.|
-A Send It!|QID|66493|PRE|69904|M|45.99,38.78|Z|2024|N|From Supply Portal.|
+A Send It!|QID|66493|PRE|69904|M|45.99,38.78|Z|2024|N|From Supply Portal.|RANK|2|
 C Send It!|QID|66493|QO|1|M|45.99,38.78|Z|2024|CHAT|N|Tell the portal you are ready to deliver mail.|
 C Send It!|QID|66493|QO|2|M|45.99,38.78|Z|2024|EAB|NC|N|Use your [color=33fff9]Extra Action Button [/color] to deliver mail when you see apprentices about town.|S|
-C Ways of Seeing|QID|66500|QO|4|M|46.01,38.62|Z|2024|NC|N|The last Lingering Image is on the backside of the piller right behind the supply portal.|
+C Ways of Seeing|QID|66500|QO|4|M|46.01,38.62|Z|2024|H|N|The last Lingering Image is on the backside of the piller right behind the supply portal.|
 C Ask the Locals|QID|66699|M|46.76,38.60|Z|2024|QO|1|CHAT|N|Ask Korrikunit if he knows where any ley lines are.|
 C Ask the Locals|QID|66699|M|46.33,38.15|Z|2024|QO|2|CHAT|N|Ask Jokomuupat about pockets of magic in the area.|
 C Ask the Locals|QID|66699|M|45.72,38.84|Z|2024|QO|3|CHAT|N|Ask Babunituk about purple crystals.|
 T Ask the Locals|QID|66699|M|45.72,38.84|Z|2024|N|To Babunituk.|
 A Catch the Caravan|QID|65864|PRE|66699|M|45.72,38.84|Z|2024|N|From Babunituk.|
 T Ways of Seeing|QID|66500|M|47.67,40.25|Z|2024|N|To Apprentice Scrumpy.|
-A For the Love of Others|QID|66503|M|46.65,40.16|Z|2024|N|From Noriko the All-Remembering.|RANK|2|
-C For the Love of Others|QID|66503|QO|1|M|46.65,40.16|Z|2024|CHAT|N|Ask Noriko to take you to the top.|
-C For the Love of Others|QID|66503|QO|2|M|47.14,40.29|Z|2024|NC|N|Click on Divo's remains (skull on the floor).|
-C For the Love of Others|QID|66503|QO|3|M|47.14,40.29|Z|2024|N|Ask Divo why he can't rest?. After that Echo of Loss spawns on the floor below you, jump/fly down and kill it.|
+A For The Love of Others|QID|66503|M|46.65,40.16|Z|2024|N|From Noriko the All-Remembering.|RANK|2|
+C For The Love of Others|QID|66503|QO|1|M|46.65,40.16|Z|2024|CHAT|N|Ask Noriko to take you to the top.|
+C For The Love of Others|QID|66503|QO|2|M|47.14,40.29|Z|2024|NC|N|Click on Divo's remains (skull on the floor).|
+C For The Love of Others|QID|66503|QO|3|M|47.14,40.29|Z|2024|N|Ask Divo why he can't rest?. After that Echo of Loss spawns on the floor below you, jump/fly down and kill it.|
 C Send It!|QID|66493|QO|2|M|45.99,38.78|Z|2024|EAB|NC|N|Use your [color=33fff9]Extra Action Button [/color] to deliver mail when you see apprentices about town.|US|
 T Send It!|QID|66493|M|45.99,38.78|Z|2024|N|To Supply Portal.|
-T For the Love of Others|QID|66503|M|46.65,40.16|Z|2024|N|To Noriko the All-Remembering.|
+T For The Love of Others|QID|66503|M|46.65,40.16|Z|2024|N|To Noriko the All-Remembering.|
 C Catch the Caravan|QID|65864|M|35.25,36.98|Z|2024|CHAT|N|Head out of town following the road to the northwest to find Brena.\n\nSpeak to Brena when you land|
 T Catch the Caravan|QID|65864|M|35.25,36.98|Z|2024|N|To Brena. Wait for dialogue to finish|
 A Howling in the Big Tree Hills|QID|65867|PRE|65864|M|35.29,36.95|Z|2024|N|From Brena.|
@@ -201,9 +209,9 @@ A Leader of the Shadepaw Pack|QID|65873|PRE|65866&65867&65868|M|34.37,31.03|Z|20
 A Ill Gnolls with Ill Intent|QID|65872|PRE|65866&65867&65868|M|34.37,31.03|Z|2024|N|From Brena.|
 A Supplies!|QID|65870|PRE|65866&65867&65868|M|34.34,31.00|Z|2024|N|From Elder Poa.|
 C Supplies!|QID|65870|M|33.90,30.47|Z|2024|QO|3|H|N|Pick up the basket of hunting game calls, just inside the cave.|
-C Ill Gnolls With Ill Intent|QID|65872|M|60.20,41.41|Z|2132|N|Shadepaw gnolls slain.|S|
+C Ill Gnolls with Ill Intent|QID|65872|M|60.20,41.41|Z|2132|N|Shadepaw gnolls slain.|S|
 C Gnoll Way Out|QID|65871|QO|1|M|46.60,42.33|Z|2132|H|N|Click on the cages to rescue the Tuskarr.|S|
-C Supplies!|QID|65870|QO|1|M|28.94,75.19|Z|2132|H|N|Pick up the barrel Salt.|
+C Supplies!|QID|65870|QO|1|M|28.94,75.19|Z|2132|H|N|Pick up the Barrel of Salt.|
 C Gnoll Way Out|QID|65871|QO|2|M|41.60,64.52|Z|2132|H|N|Click on Norukk who is lying on the ground deeper down in the cave.|
 C Supplies!|QID|65870|QO|2|M|51.66,36.67|Z|2132|H|N|Click the barrel of skinning tools.|
 K Kargpaw the Fetid|ACTIVE|65873|QO|1|M|40.44,17.97|Z|2132|N|Kill and loot Kargpaw.|T|Kargpaw the Fetid|
@@ -218,7 +226,7 @@ T Spreading Decay|QID|66239|M|28.69,34.83|Z|2024|N|To Brena.|
 A Another Ambush|QID|65869|PRE|66239|M|28.69,34.83|Z|2024|N|From Brena.|
 C Another Ambush|QID|65869|M|28.68,34.75|Z|2024|QO|1|CHAT|N|Ask Akiun what happened.|
 A Falling Water|QID|71233|PRE|66239|M|28.47,35.11|Z|2024|N|From Unkimi.|RANK|2|
-C Another Ambush|QID|65869|M|29.25,33.58;29.17,32.56;28.21,31.88;27.96,32.81|CS|Z|2024|QO|2|NC|N|A couple Oozing Decay will spawn after you examine the body.|
+C Another Ambush|QID|65869|M|29.25,33.58;29.17,32.56;28.21,31.88;27.96,32.81|CS|Z|2024|QO|2|H|N|A couple Oozing Decay will spawn after you examine the body.|
 T Another Ambush|QID|65869|M|28.78,34.74|Z|2024|N|To Brena.|
 A Urgent Action Required|QID|66026|PRE|65869|M|28.78,34.74|Z|2024|N|From Brena.|
 $ Creektooth Den Glyph|QID|99999|M|26.76,31.64|Z|2024;The Azure Plains!Dragonflight|N|Mount up and grab the glyph, just above a tree snag, Then fly over to Brena.|ACH|16069|
@@ -226,9 +234,9 @@ T Urgent Action Required|QID|66026|M|20.60,35.67|Z|2024|N|To Brena.|
 A Breaching the Brackenhide|QID|65838|PRE|66026|M|20.54,35.68|Z|2024|N|From Kalecgos.|
 ;A Stop the Spread|QID|65841|PRE|66026|M|20.01,35.97|Z|2024|N|[Color=7eff8a]Bonus Objective [/color] - Autoaccepted.|LVL|-70|
 C Stop the Spread|QID|65841|M|20.01,35.97|Z|2024|N|Bonus Objective - Destroy the totems and kill gnolls, dont worry about getting it done right away, there are several quests here.|S|
-C Breaching the Brackenhide|QID|65838|M|18.89,36.97|Z|2024|QO|2|CHAT|N|Click the root, and then the chat option to cut the root.|
-C Breaching the Brackenhide|QID|65838|M|17.54,36.97|Z|2024|QO|3|CHAT|N|Click the root, and then the chat option to cut the root.|
-C Breaching the Brackenhide|QID|65838|M|18.43,34.79|Z|2024|QO|1|CHAT|N|Click the root, and then the chat option to cut the root.|
+C Breaching the Brackenhide|QID|65838|M|18.89,36.97|Z|2024|QO|2|H|N|Click the root, and then the chat option to cut the root.|
+C Breaching the Brackenhide|QID|65838|M|17.54,36.97|Z|2024|QO|3|H|N|Click the root, and then the chat option to cut the root.|
+C Breaching the Brackenhide|QID|65838|M|18.43,34.79|Z|2024|QO|1|H|N|Click the root, and then the chat option to cut the root.|
 T Breaching the Brackenhide|QID|65838|M|16.74,37.32|Z|2024|N|To Kalecgos.|
 A Ley Litter|QID|65846|PRE|65838|M|16.74,37.32|Z|2024|N|From Kalecgos.|
 A Cut Out the Rot|QID|65844|PRE|65838|M|16.76,37.25|Z|2024|N|From Norukk.|
@@ -243,7 +251,7 @@ T Echoes of the Fallen|QID|65845|M|16.75,37.22|Z|2024|N|To Brena.|
 T Cut Out the Rot|QID|65844|M|16.76,37.25|Z|2024|N|To Norukk.|
 T Ley Litter|QID|65846|M|16.75,37.32|Z|2024|N|To Kalecgos.|
 A Tome-ward Bound|QID|65848|PRE|65844&65845&65846|M|16.75,37.32|Z|2024|N|From Kalecgos.|
-C Tome-ward Bound|QID|65848|M|16.75,37.32|Z|2024|QO|1|CHAT|N|Tell Kalecgos you are ready and then wait abit while he rummages through his stuff.|
+C Tome-ward Bound|QID|65848|M|16.75,37.32|Z|2024|QO|1|CHAT|N|Tell Kalecgos you are ready and then wait a bit while he rummages through his stuff.|
 C Tome-ward Bound|QID|65848|M|16.72,37.29|Z|2024|QO|2|V|N|Hop on the Tome of Spellflinging.|
 C Tome-ward Bound|QID|65848|M|15.93,38.42;15.14,38.00;15.64,37.33|CS|Z|2024|QO|3|N|The first button on the UI moves you forward very fast, running over and doing damage to the smaller mobs and the "2" gives you a target reticle and shoots them. Kill the Brackenhide Putrifiers.|
 C Tome-ward Bound|QID|65848|M|15.38,38.61|Z|2024|QO|4|N|Now you only have one button. Use it on the Twisted Ancient.|
@@ -262,15 +270,15 @@ T To Iskaara|QID|65849|M|13.24,49.55|Z|2024|N|To Brena.|
 A Gather the Family|QID|66210|PRE|65849|M|13.24,49.55|Z|2024|N|From Brena.|
 A Brackenhide Hollow: To the Source|QID|66211|PRE|65849|M|13.24,49.55|Z|2024|N|From Brena. This is a [color=c9c1ab]Dungeon [/color]quest. Accept or not as you choose.|RANK|2|
 A Orientation: Iskaara|QID|72435|PRE|65849|M|13.14,49.27|Z|2024|N|From Murik.|RANK|2|
-C Gather the Family|QID|66210|QO|1<1|M|12.79,49.33;12.49,49.45|CS|Z|2024|NC|N|Pick up the stone sculpture in The Filled Bowl (the underground inn).|
+C Gather the Family|QID|66210|QO|1<1|M|12.79,49.33;12.49,49.45|CS|Z|2024|H|N|Pick up the stone sculpture in The Filled Bowl (the underground inn).|
 A The Weave of a Tale|QID|66213|PRE|65849|M|12.41,49.40|Z|2024|N|From Elder Nappa.|RANK|2|
 C The Weave of a Tale|QID|66213|M|12.41,49.34|Z|2024|CHAT|N|Tell Elder Poa a made up a story about a fish.|
 A Stolen Tuskarr Totems|QID|70936|PRE|65849|M|12.41,49.34|Z|2024|N|At Elder Poa. This is a repeatable quest for faction|L|200071 -1|;maybe a REN thing?
 T The Weave of a Tale|QID|66213|M|12.41,49.40|Z|2024|N|To Elder Nappa.|
-C Gather the Family|QID|66210|QO|1<2|M|12.46,50.31|Z|2024|NC|N|Pick up the shield by the docks.|
+C Gather the Family|QID|66210|QO|1<2|M|12.46,50.31|Z|2024|H|N|Pick up the shield by the docks.|
 A Scampering Scamps|QID|66218|PRE|65849|M|12.90,48.70|Z|2024|N|From Hanu.|RANK|2|
 C Orientation: Iskaara|QID|72435|QO|4|M|12.93,48.62|Z|2024|CHAT|N|Say Hello to Norukk.|
-A WANTED: Krojek the Shoreprowler|QID|66217|PRE|65849|M|13.19,48.76|Z|2024|N|From Bukarakikk.|RANK|2|
+A WANTED: Krojek the Shoreprowler|QID|66217|PRE|65849|M|12.53,49.83|Z|2024|N|From Bukarakikk.|RANK|2|
 C Orientation: Iskaara|QID|72435|QO|3|M|13.19,48.82|Z|2024|NC|N|Click on Tatto to discover he supplies mounts.|
 C Orientation: Iskaara|QID|72435|QO|1|M|13.17,48.53|Z|2024|NC|N|Check out what Arvik has for sale.|
 C Gather the Family|QID|66210|QO|1<3|M|13.87,49.49|Z|2024|H|N|Pick up the boat from on the piling beside Jinkutuk.|
@@ -300,15 +308,15 @@ T Toejam the Terrible|QID|70129|M|13.80,49.00|Z|2024|N|To Auntie Kaunnie.|
 R Whaler's Nook|ACTIVE|71234|M|8.75,45.74|Z|2024|N|Follow the road west out of town.|
 T Nook News|QID|71234|M|7.46,44.28|Z|2024|N|To Wayun.|
 A A Matter of Taste|QID|66781|PRE|71234|M|7.64,44.35|Z|2024|N|From Mordigan Ironjaw.|
-C A Matter of Taste|QID|66781|M|7.24,45.11|Z|2024|QO|1|NC|N|Click to pick up the large stone at the water's edge.|
+C A Matter of Taste|QID|66781|M|7.24,45.11|Z|2024|QO|1|H|N|Click to pick up the large stone at the water's edge.|
 T A Matter of Taste|QID|66781|M|7.62,44.36|Z|2024|N|To Mordigan Ironjaw.|
 A Fishy Fingers|QID|66164|PRE|66781|M|7.62,44.36|Z|2024|N|From LOU-C Fitzcog.|
 A Salivatory Samples|QID|66154|PRE|66781|M|7.66,44.28|Z|2024|N|From Examiner Rowe.|
 A Crystals in the Water|QID|66147|PRE|66781|M|7.63,44.25|Z|2024|N|From Aelnara.|
 C Salivatory Samples|QID|66154|M|10.25,43.29|Z|2024|N|Kill gorlocs to collect their saliva.|S|
-C Fishy Fingers|QID|66164|M|10.26,42.80|Z|2024|NC|N|Pick up the Stolen parts scattered around.|S|
-C Crystals in the Water|QID|66147|M|9.78,42.85|Z|2024|NC|N|Click the Mysterious crystals.|
-C Fishy Fingers|QID|66164|M|10.26,42.80|Z|2024|NC|N|Finish up collecting the Stolen parts scattered around.|US|
+C Fishy Fingers|QID|66164|M|10.26,42.80|Z|2024|H|N|Pick up the Stolen parts scattered around.|S|
+C Crystals in the Water|QID|66147|M|9.78,42.85|Z|2024|H|N|Click the Mysterious crystals.|
+C Fishy Fingers|QID|66164|M|10.26,42.80|Z|2024|H|N|Finish up collecting the Stolen parts scattered around.|US|
 C Salivatory Samples|QID|66154|M|10.25,43.29|Z|2024|N|Finish up collecting enough Saliva from the gorlocs.|US|
 T Crystals in the Water|QID|66147|M|7.62,44.23|Z|2024|N|To Aelnara.|
 T Salivatory Samples|QID|66154|M|7.66,44.27|Z|2024|N|To Examiner Rowe.|
@@ -319,10 +327,10 @@ T Field Experiment|QID|66175|M|7.65,44.34|Z|2024|N|To LOU-C Fitzcog, after waiti
 A No Dwarf Left Behind|QID|66177|PRE|66175|M|7.65,44.34|Z|2024|N|From LOU-C Fitzcog.|
 A Afront 'Till A Salt|QID|66232|PRE|66175|M|7.46,44.28|Z|2024|N|From Wayun.|
 C Afront 'Till A Salt|QID|66232|M|10.37,41.12|Z|2024|QO|1|NC|N|Kill & loot Gorlocs as you look for clues.|S|
-C No Dwarf Left Behind|QID|66177|M|9.37,42.54|Z|2024|QO|1|NC|N|Mordigan's journal is sitting on a rock.|
-C No Dwarf Left Behind|QID|66177|M|10.02,41.33|Z|2024|QO|2|NC|N|Mordigan lost his flask on a rock here (pretty small).|
-C No Dwarf Left Behind|QID|66177|M|9.93,39.69|Z|2024|QO|3|NC|N|His boots are beside a hut..|
-C No Dwarf Left Behind|QID|66177|M|10.61,41.25|Z|2024|QO|4|NC|N|And he seems to have lost his pants by a bush.|
+C No Dwarf Left Behind|QID|66177|M|9.37,42.54|Z|2024|QO|1|H|N|Mordigan's journal is sitting on a rock.|
+C No Dwarf Left Behind|QID|66177|M|10.02,41.33|Z|2024|QO|2|H|N|Mordigan lost his flask on a rock here (pretty small).|
+C No Dwarf Left Behind|QID|66177|M|9.93,39.69|Z|2024|QO|3|H|N|His boots are beside a hut.|
+C No Dwarf Left Behind|QID|66177|M|10.61,41.25|Z|2024|QO|4|H|N|And he seems to have lost his pants by a bush.|
 T No Dwarf Left Behind|QID|66177|M|10.78,41.18|Z|2024|N|To Aelnara.|
 A Mad Mordigan & The Crystal King|QID|66187|PRE|66177|M|10.78,41.18|Z|2024|N|From Aelnara.|
 C Mad Mordigan & The Crystal King|QID|66187|M|11.29,41.01|Z|2024|N|Fight Mordigan until he is decrystallized.|
@@ -356,7 +364,7 @@ A To the Mountain|QID|65887|PRE|65886|M|65.81,25.31|Z|2024|N|From Drok Scrollsta
 A Drakes be Gone|QID|67299|PRE|65886|M|65.81,25.31|Z|2024|N|From Drok Scrollstabber.|RANK|2|
 A Artifacts in the Wrong Hands|QID|66964|PRE|65886|M|65.94,25.27|Z|2024|N|From Polky Cogzapper.|RANK|2|
 f Rhonin's Shield|ACTIVE|65887|M|66.00,25.39|Z|2024|N|At Portia Striat.\n[color=FF0000]NOTE: [/color]Open the flight map to populate the FPs.|
-A Riders in the Snow|QID|66708|PRE|65886|M|65.90,25.47|Z|2024|N|From Tuskarr Elder.|RANK|2|
+A Riders in the Snow|QID|66708|PRE|65886|M|65.90,25.47|Z|2024|N|From Tuskarr Elder.|LEAD|66709|RANK|2|
 C Drakes be Gone|QID|67299|M|65.73,25.72|Z|2024|V|N|Use one of the Arcane Blasters to shoot Proto-Drakes out of the sky.|
 T Drakes be Gone|QID|67299|M|65.81,25.31|Z|2024|N|To Drok Scrollstabber.|
 K Yetor|ACTIVE|66968|M|70.53,26.46|Z|2024|QO|1|N|Yetor can be found in a small cave with Yetis outside.|
@@ -391,8 +399,9 @@ K Korthrox the Destroyer|ACTIVE|66009|QO|1|M|79.61,35.65|Z|2024|N|Kill Korthrox 
 T In Defense of Vakthros|QID|66009|M|78.17,34.50;77.99,32.49|CS|Z|2024|N|Exit Vakthros Summit and make your way over to Archmage Khadgar.|
 A The Storm-Eater's Fury|QID|70041|PRE|66009|M|77.99,32.49|Z|2024|N|From Archmage Khadgar.|
 C The Storm-Eater's Fury|QID|70041|M|78.05,32.44|Z|2024|QO|1|V|N|Arcane Disc boarded.|
-C The Storm-Eater's Fury|QID|70041|M|78.06,32.73|Z|2024|QO|2|N|Use the Disc's abilities to take out the Primalist army.\n[color=FF0000]NOTE: [/color]First Button is your main attack, 2nd one is a bigger blast from Kalecgos, when it becomes available, the third button should be used to target the black swirly updrafts.|
-C The Storm-Eater's Fury|QID|70041|M|78.06,32.73|Z|2024|QO|3|N|And keep after it, 50 more to kill.|
+C The Storm-Eater's Fury|QID|70041|M|78.06,32.73|Z|2024|QO|2|N|Use the Disc's abilities to take out the Primalist army.\n[color=FF0000]NOTE: [/color]First Button is your main attack, 2nd one is a bigger blast from Kalecgos, when it becomes available.|
+C The Storm-Eater's Fury|QID|70041|M|78.06,32.73|Z|2024|QO|3|N|Use ability #3 to suck up the black swirlys.|
+C The Storm-Eater's Fury|QID|70041|M|78.06,32.73|Z|2024|QO|4|N|And keep after it, 200 more to kill.|
 T The Storm-Eater's Fury|QID|70041|M|78.22,33.34|Z|2024|N|To Kalecgos.|
 A The Blue Dragon Oathstone|QID|66015|PRE|70041|M|78.22,33.34|Z|2024|N|From Kalecgos.|
 
@@ -402,27 +411,27 @@ A The Blue Dragon Oathstone|QID|66015|PRE|70041|M|78.22,33.34|Z|2024|N|From Kale
 A Prowling Polar Predators|QID|68639|M|63.58,28.90|Z|2024|N|From Callisto Windsor.|RANK|2|
 A Mossing the Mark|QID|68641|M|63.61,28.82|Z|2024|N|From Steria Duskgrove.|RANK|2|
 C Prowling Polar Predators|QID|68639|M|62.94,31.12|Z|2024|N|Kill the Infected Bears.|S|
-C Mossing the Mark|QID|68641|M|62.94,31.12|Z|2024|N|Click the moss to pick it up. If its all been picked clean, there is a nother patch east of here just a little ways.|
+C Mossing the Mark|QID|68641|M|62.94,31.12|Z|2024|H|N|Click the moss to pick it up. If its all been picked clean, there is a nother patch east of here just a little ways.|
 C Prowling Polar Predators|QID|68639|M|62.94,31.12|Z|2024|N|Kill the Infected Bears.|US|
 T Prowling Polar Predators|QID|68639|M|63.58,28.90|Z|2024|N|To Callisto Windsor.|
 T Mossing the Mark|QID|68641|M|63.61,28.82|Z|2024|N|To Steria Duskgrove.|
 A Needles to Say|QID|68642|PRE|68639&68641|M|63.61,28.82|Z|2024|N|From Steria Duskgrove.|RANK|2|
 A Vitamins and Minerals|QID|68643|PRE|68639&68641|M|63.58,28.90|Z|2024|N|From Callisto Windsor.|RANK|2|
-C Needles to Say|QID|68642|M|64.91,29.91|Z|2024|NC|N|Click on the Prickly Crystalspines to extract quills. They also rarely drop from Bakar.|S|
-C Vitamins and Minerals|QID|68643|M|64.92,29.84|Z|2024|NC|N|Click on the Strange Ice Crystals.|
-C Needles to Say|QID|68642|M|64.91,29.91|Z|2024|NC|N|Continue to click on the Prickly Crystalspines until you have enough quills.|US|
+C Needles to Say|QID|68642|M|64.91,29.91|Z|2024|H|N|Click on the Prickly Crystalspines to extract quills. They also rarely drop from Bakar.|S|
+C Vitamins and Minerals|QID|68643|M|64.92,29.84|Z|2024|H|N|Click on the Strange Ice Crystals.|
+C Needles to Say|QID|68642|M|64.91,29.91|Z|2024|H|N|Continue to click on the Prickly Crystalspines until you have enough quills.|US|
 T Vitamins and Minerals|QID|68643|M|63.58,28.90|Z|2024|N|To Callisto Windsor.|
 T Needles to Say|QID|68642|M|63.61,28.82|Z|2024|N|To Steria Duskgrove.|
 A Sugar, Spice, and Everything Nice|QID|68644|PRE|68642&68643|M|63.61,28.82|Z|2024|N|From Steria Duskgrove.|RANK|2|
 C Sugar, Spice, and Everything Nice|QID|68644|QO|1|M|63.58,28.90|Z|2024|CHAT|N|Let Steria know you are ready to begin.|
-C Sugar, Spice, and Everything Nice|QID|68644|QO|2|M|63.59,28.83|Z|2024|NC|N|Click on the morter and pestle on the ground.|
+C Sugar, Spice, and Everything Nice|QID|68644|QO|2|M|63.59,28.83|Z|2024|H|N|Click on the morter and pestle on the ground.|
 C Sugar, Spice, and Everything Nice|QID|68644|QO|3|M|63.58,28.90|Z|2024|CHAT|N|Ask Callisto for help (either option).|
 C Sugar, Spice, and Everything Nice|QID|68644|QO|4|M|63.59,28.83|Z|2024|CHAT|N|Administer the Medicine to Sylvie.|
 T Sugar, Spice, and Everything Nice|QID|68644|M|63.58,28.83|Z|2024|N|To Steria Duskgrove.|
 A Save a Slyvern|QID|69862|PRE|68644|M|63.58,28.83|Z|2024|N|From Steria Duskgrove.|RANK|2|
 T Save a Slyvern|QID|69862|M|65.70,30.86|Z|2024|N|To Steria Duskgrove.|
 A They Took the Kits|QID|70338|PRE|69862|M|65.70,30.86|Z|2024|N|From Steria Duskgrove.|RANK|2|
-C They Took the Kits|QID|70338|QO|1|M|66.57,30.87|Z|2024|U|200526|NC|N|Steria gave you an invis charm, I suggest you use it. Go in and rescue the kits.|
+C They Took the Kits|QID|70338|QO|1|M|66.57,30.87|Z|2024|U|200526|H|N|Steria gave you an invis charm, I suggest you use it. Go in and rescue the kits.|
 C They Took the Kits|QID|70338|QO|2|M|65.72,30.78|Z|2024|CHAT|N|Offer Sylvie the kits.|
 T They Took the Kits|QID|70338|M|65.70,30.86|Z|2024|N|To Steria Duskgrove.|
 $ Rhonin's Shield Glyph|QID|99999|N|Inside the very top of the tower, you probably want to land on the outside and then drop down inside.|M|67.67,29.11|Z|2024;The Azure Plains!Dragonflight|ACH|16072|
@@ -434,15 +443,15 @@ A The Ailing Apprentice|QID|67111|PRE|66964|M|67.24,44.40|Z|2024|N|From Kattigat
 A The Fending Flames|QID|67724|PRE|66964|M|67.34,44.33|Z|2024|N|From To'tik.|
 A Kill it with Fire|QID|70856|PRE|66964|M|67.34,44.33|Z|2024|N|From To'tik.|
 C The Ailing Apprentice|QID|67111|M|68.90,44.60|Z|2024|N|Kill and loot the Shiverweb Crawlers to collect frozen crawler venom glands.|S|
-C The Fending Flames|QID|67724|M|68.07,43.00|Z|2024|NC|N|Click on the spider silk cacoons to collect Shiverweb Silk.|S|
+C The Fending Flames|QID|67724|M|68.07,43.00|Z|2024|H|N|Click on the spider silk cacoons to collect Shiverweb Silk.|S|
 C Kill it with Fire|QID|70856|M|68.76,45.47|Z|2024|NC|U|199928|N|While facing the corpses to be burned, use the provided [color=33fff9]Flamethrower Torch [/color] to create a cone of fire in front of you.|
-C The Fending Flames|QID|67724|M|68.07,43.00|Z|2024|NC|N|Finish gathering Shiverweb Silk from the cacoons.|US|
+C The Fending Flames|QID|67724|M|68.07,43.00|Z|2024|H|N|Finish gathering Shiverweb Silk from the cacoons.|US|
 C The Ailing Apprentice|QID|67111|M|68.90,44.60|Z|2024|N|Continue looting the crawlers until you have enough venom glands.|US|
 T The Fending Flames|QID|67724|M|67.34,44.35|Z|2024|N|To To'tik.|
 T Kill it with Fire|QID|70856|M|67.34,44.35|Z|2024|N|To To'tik.|
 T The Ailing Apprentice|QID|67111|M|67.21,44.41|Z|2024|N|To Kattigat.|
 A Back into the Action|QID|70858|PRE|67724&70856|M|67.23,44.41|Z|2024|N|From Kattigat.|
-C Back into the Action|QID|70858|M|67.23,44.37|Z|2024|NC|N|Click on Alia to administer.|
+C Back into the Action|QID|70858|M|67.23,44.37|Z|2024|H|N|Click on Alia to administer.|
 T Back into the Action|QID|70858|M|67.30,44.34|Z|2024|N|To Alia Sunsoar.|
 A What the Guardian Beholds|QID|70859|PRE|70858|M|67.30,44.34|Z|2024|N|From Alia Sunsoar.|
 C What the Guardian Beholds|QID|70859|M|69.55,43.159|Z|2024|N|You will need to fly up to the tower to find Edavix and kill him to loot the Whispering Shard.|
@@ -451,10 +460,10 @@ T What the Guardian Beholds|QID|70859|M|67.30,44.34|Z|2024|N|To Alia Sunsoar.|
 A Whispered Fragments|QID|70931|PRE|70859|M|67.30,44.34|Z|2024|N|From Alia Sunsoar.|
 A What Valthrux Once Was|QID|70937|PRE|70859|M|67.33,44.37|Z|2024|N|From To'tik.|
 C Whispered Fragments|QID|70931|M|70.07,44.08|Z|2024|N|Kill the plunderers and loot Whispering Fragments as you find the journals.|S|
-C What Valthrux Once Was|QID|70937|M|69.53,44.12|Z|2024|QO|4|NC|N|Pick up the Discarded Journal.|
-C What Valthrux Once Was|QID|70937|M|70.18,43.28|Z|2024|QO|1|NC|N|Pick up the Crumbling Tablet.|
-C What Valthrux Once Was|QID|70937|M|70.01,46.09|Z|2024|QO|3|NC|N|Pick up the Sundered Flame Journal.|
-C What Valthrux Once Was|QID|70937|M|70.24,46.17|Z|2024|QO|2|NC|N|Go up a floor in the same tower to pick up the Scratched Tablet.|
+C What Valthrux Once Was|QID|70937|M|69.53,44.12|Z|2024|QO|4|H|N|Pick up the Discarded Journal.|
+C What Valthrux Once Was|QID|70937|M|70.18,43.28|Z|2024|QO|1|H|N|Pick up the Crumbling Tablet.|
+C What Valthrux Once Was|QID|70937|M|70.01,46.09|Z|2024|QO|3|H|N|Pick up the Sundered Flame Journal.|
+C What Valthrux Once Was|QID|70937|M|70.24,46.17|Z|2024|QO|2|H|N|Go up a floor in the same tower to pick up the Scratched Tablet.|
 C Whispered Fragments|QID|70931|M|70.07,44.08|Z|2024|N|Finish up with the plunderers and their fragments.|US|
 T Whispered Fragments|QID|70931|M|67.30,44.34|Z|2024|N|To Alia Sunsoar.|
 T What Valthrux Once Was|QID|70937|M|67.34,44.34|Z|2024|N|To To'tik.|
@@ -462,16 +471,16 @@ A No One May Wield It|QID|70946|PRE|70937|M|67.34,44.34|Z|2024|N|From To'tik.|
 C No One May Wield It|QID|70946|M|67.30,44.34|Z|2024|CHAT|N|Warn Alia how dangerous it is, wait for dialog to complete.|
 T No One May Wield It|QID|70946|M|67.35,44.35|Z|2024|N|To To'tik.|
 A Good Intentions|QID|70970|PRE|70946|M|67.32,44.39|Z|2024|N|From Kattigat.|
-C Good Intentions|QID|70970|M|72.50,42.85|Z|2024|QO|1|NC|N|Alia stopped.|
-C Good Intentions|QID|70970|M|72.53,42.85|Z|2024|QO|2|NC|N|Valthrux Destroyed.|
+C Good Intentions|QID|70970|M|72.50,42.85|Z|2024|QO|1|N|Alia stopped.|
+C Good Intentions|QID|70970|M|72.53,42.85|Z|2024|QO|2|CHAT|N|Valthrux Destroyed.|
 T Good Intentions|QID|70970|M|67.31,44.39|Z|2024|N|To Kattigat.|
 
 R Upper Frostlands|ACTIVE|66708|M|59.26,39.74|Z|2024|N|Mount up and head to the Upper Frostlands.|
 T Riders in the Snow|QID|66708|M|59.26,39.74|Z|2024|N|To Old Grimtusk.|
 A Field Medic 101|QID|66709|PRE|66708|M|59.28,39.74|Z|2024|N|From Old Grimtusk.|
-C Field Medic 101|QID|66709|M|59.28,39.74|Z|2024|QO|1|NC|N|Click on Old Grimtusk to remove the Spear.|
-C Field Medic 101|QID|66709|M|59.20,39.73|Z|2024|QO|2|NC|N|Click on the Piles of Wood.|
-C Field Medic 101|QID|66709|M|59.24,39.78|Z|2024|QO|3|NC|N|Click on the Campfire.|
+C Field Medic 101|QID|66709|M|59.28,39.74|Z|2024|QO|1|H|N|Click on Old Grimtusk to remove the Spear.|
+C Field Medic 101|QID|66709|M|59.20,39.73|Z|2024|QO|2|H|N|Click on the Piles of Wood.|
+C Field Medic 101|QID|66709|M|59.24,39.78|Z|2024|QO|3|H|N|Click on the Campfire.|
 C Field Medic 101|QID|66709|M|59.27,39.72|Z|2024|QO|4|CHAT|N|Cauterize his wound.|
 T Field Medic 101|QID|66709|M|59.27,39.72|Z|2024|N|To Old Grimtusk.|
 A The Extraction|QID|66715|PRE|66709|M|59.27,39.72|Z|2024|N|From Old Grimtusk.|
@@ -484,7 +493,7 @@ K Snoll the Icebreaker|ACTIVE|66718|M|57.89,44.99|Z|2024|QO|2|N|Snoll the Icebre
 C Snowball Effect|QID|66703|M|57.66,41.59|Z|2024|N|Kill and loot the shamans to get totems.|
 T Snowball Effect|QID|66703|M|58.36,42.05|Z|2024|N|To Frostbite.|
 A Frostbite: Causes and Symptoms|QID|67050|PRE|66703|M|58.36,42.05|Z|2024|N|From Frostbite.|
-C Frostbite: Causes and Symptoms|QID|67050|M|58.27,41.96|Z|2024|QO|1|NC|N|Click on the glowy outlines to place the Snowhide totems.|
+C Frostbite: Causes and Symptoms|QID|67050|M|58.27,41.96|Z|2024|QO|1|H|N|Click on the glowy outlines to place the Snowhide totems.|
 C Gnolls Must Die|QID|66718|M|57.60,41.47|Z|2024|QO|1|NC|N|Time to finish up disrupting if you plan to.|US|
 ;t Gnolls Must Die|QID|66718|M|57.60,41.47|Z|2024|N|Bonus Objective - Autocompleted.|
 C Frostbite: Causes and Symptoms|QID|67050|M|58.48,40.52|Z|2024|QO|2|CHAT|N|There is no chat option, but you click on Old Grimtusk like you were going to chat to get the quest update.|
@@ -532,7 +541,7 @@ A Running Out of Time|QID|66426|PRE|66425|M|65.64,60.80|Z|2024|N|From Lathos Sun
 C Running Out of Time|QID|66426|M|65.67,60.77|Z|2024|NC|N|Wait and listen to Rannan's and Lathos' plan.|
 T Running Out of Time|QID|66426|M|68.46,60.50|Z|2024|N|To Lathos Sunband.|
 A A Looming Menace|QID|66427|PRE|66426|M|68.46,60.50|Z|2024|N|From Lathos Sunband.|
-C A Looming Menace|QID|66427|M|68.07,61.56|Z|2024|N|Arcane Manipulator Tharohn is back outside, go kill him.|
+K Arcane Manipulator Tharohn|ACTIVE|66427|QO|1|M|68.07,61.56|Z|2024|N|Kill Arcane Manipulator Tharohn back outside.|
 T A Looming Menace|QID|66427|M|68.46,60.48|Z|2024|N|To Lathos Sunband.|
 A Friendship For Granted|QID|66428|PRE|66427|M|68.48,60.42|Z|2024|N|From Rannan Korren.|
 C Friendship For Granted|QID|66428|M|68.60,60.39|Z|2024|QO|1|NC|U|192475|N|Use the[color=33fff9]R.A.D.D.E.R.E.R. [/color] on the Arcane bubble surrounding the Dragon consoles.|
@@ -547,9 +556,9 @@ A Former Furbolg Family|QID|66148|PRE|66141|M|63.50,52.95|Z|2024|N|From Garz.|
 A Elemental Influence|QID|66149|PRE|66141|M|63.50,52.95|Z|2024|N|From Garz.|
 A Rescuing Radza|QID|66150|PRE|66141|M|63.50,52.95|Z|2024|N|From Garz.|
 C Former Furbolg Family|QID|66148|M|61.23,51.02|Z|2024|N|Slay Rustpine furbolg and elementals as you go.|S|
-C Elemental Influence|QID|66149|M|62.74,51.82;61.59,52.35|CN|Z|2024|N|Click on the Primalist Earthbind Totems.|S|
+C Elemental Influence|QID|66149|M|62.74,51.82;61.59,52.35|CN|Z|2024|H|N|Click on the Primalist Earthbind Totems.|S|
 C Rescuing Radza|QID|66150|M|61.01,51.41|Z|2024|N|Radza Thunderclaw defended.|
-C Elemental Influence|QID|66149|M|62.74,51.82;61.59,52.35|CN|Z|2024|N|Click on the Primalist Earthbind Totems.|US|
+C Elemental Influence|QID|66149|M|62.74,51.82;61.59,52.35|CN|Z|2024|H|N|Click on the Primalist Earthbind Totems.|US|
 C Former Furbolg Family|QID|66148|M|61.23,51.02|Z|2024|N|Continue to Slay Rustpine furbolg and elementals till you are done.|US|
 T Elemental Influence|QID|66149|M|60.95,50.58|Z|2024|N|To Narn.|
 T Former Furbolg Family|QID|66148|M|60.94,50.56|Z|2024|N|To Narn.|
@@ -580,7 +589,7 @@ C An Ancient Awakening|QID|70156|QO|2|M|48.33,30.13|NC|N|Clicking the little pin
 C An Ancient Awakening|QID|70156|QO|3|M|48.33,30.13|NC|N|Click the waygate.|
 T An Ancient Awakening|QID|70156|M|47.20,90.25|Z|2022|N|To Thaelin Darkanvil. Congratulations, you have now unlocked Waygates.|
 R Cobalt Assembly|ACTIVE|72784|M|49.39,24.87|Z|2024|N|We are now going to see what the Cobalt Assembly is up to.|
-R Cobalt Assembly|ACTIVE|66244|M|39.92,61.54;49.39,24.87|CS|Z|2024|N|We're now headed to grab the Cobalt Assembly Glyph on our way to Thaldraszus.\n[color=FF0000]NOTE: [/color]Use one of the Arcane Stepping Stones to get to the top of the Azure Archives. This will give you some extra height considering the distance you are about travel.|EAB|RANK|-1|ACH|16064|
+R Cobalt Assembly|ACTIVE|66244|M|38.25,61.48;49.39,24.87|CS|Z|2024|N|We're now headed to grab the Cobalt Assembly Glyph on our way to Thaldraszus.\n[color=FF0000]NOTE: [/color]Use one of the Arcane Stepping Stones to get to the top of the Azure Archives. This will give you some extra height considering the distance you are about travel.|EAB|RANK|-1|ACH|16064|
 
 $ Cobalt Assembly Glyph|QID|99999|N|On top of the highest tower. You may need to land on the lower tower to regen vigor first.|M|45.88,25.75|Z|2024;The Azure Plains!Dragonflight|ACH|16064|
 $ Dragonspring Summit Glyph|QID|99999|N|Just under the balcony.|M|84.4,77.6|Z|2023;Ohn'Aran Plains!Dragonflight|ACH|16061|
@@ -598,10 +607,10 @@ A Hollow Up|QID|66553|PRE|70627|M|65.39,15.96|Z|2024|N|From Sonova Snowden.|
 A Aggressive Self-Defence|QID|66554|PRE|70627|M|65.39,15.96|Z|2024|N|From Sonova Snowden.|
 A Wayward Tools|QID|66622|M|65.56,16.16|Z|2024|N|From Tyrnokos Sunstrike.|RANK|2|
 f Theron's Watch|QID|66622|M|65.38,16.35|Z|2024|N|At Taelmyr Blazewing.|RANK|2|
-C Wayward Tools|QID|66622|M|64.79,17.26|Z|2024|NC|N|Collect the Wayward Tools lazing about just outside the camp. This is a good time to use the Interact with Target keybind as it really helps with chasing them down.|
+C Wayward Tools|QID|66622|M|64.79,17.26|Z|2024|H|N|Collect the Wayward Tools lazing about just outside the camp. This is a good time to use the Interact with Target keybind as it really helps with chasing them down.|
 T Wayward Tools|QID|66622|M|65.56,16.18|Z|2024|N|To Tyrnokos Sunstrike.|
 C Aggressive Self-Defence|QID|66554|M|67.03,12.82|Z|2024|N|Attack Winterpelt furbolgs, some will turn friendly and wonder off, some you will defeat.|S|
-C Hollow Up|QID|66553|M|65.58,12.02|Z|2024|NC|N|Click on the various glowing items around the furbolgs' camp.|
+C Hollow Up|QID|66553|M|65.58,12.02|Z|2024|H|N|Click on the various glowing items around the furbolgs' camp.|
 C Aggressive Self-Defence|QID|66554|M|67.03,12.82|Z|2024|N|Continue attacking the Winterpelt furbolgs.|US|
 T Hollow Up|QID|66553|M|65.38,15.94|Z|2024|N|To Sonova Snowden.|
 T Aggressive Self-Defence|QID|66554|M|65.38,15.94|Z|2024|N|To Sonova Snowden.|
@@ -610,7 +619,7 @@ C Bear With Me|QID|66555|M|65.38,15.94|Z|2024|CHAT|N|I think it's probably faste
 T Bear With Me|QID|66555|M|65.38,15.94|Z|2024|N|To Sonova Snowden.|
 A Ice Cave Ya Got There|QID|66556|PRE|66555|M|65.38,15.94|Z|2024|N|From Sonova Snowden.|
 C Ice Cave Ya Got There|QID|66556|M|66.23,11.12|Z|2024|QO|1|NC|N|Walk into the cave in Winterpelt Hollow.|
-C Ice Cave Ya Got There|QID|66556|M|65.95,10.74|Z|2024|QO|2|N|Kill Stormshackler Rynea.|
+K Stormshackler Rynea|ACTIVE|66556|M|65.95,10.74|Z|2024|QO|2|N|Kill Stormshackler Rynea.|
 K Frostjaw|ACTIVE|66971|QO|1|M|70.13,70.59|Z|2024|N|Kill Frostjaw.|
 T Ice Cave Ya Got There|QID|66556|M|65.38,15.94|Z|2024|N|To Sonova Snowden.|
 
@@ -620,9 +629,9 @@ T Fishing Holes|QID|70941|M|13.94,49.24|Z|2024|N|To Nunvuq.|
 T Tuskarr Fishing Gear|QID|71230|M|12.82,49.18|N|To Tavio.|
 ;REN 7 Tuskarr
 A Iskaaran Fishing Net|QID|70871|M|12.82,49.18|N|From Tavio.|RANK|3|
-C Iskaaran Fishing Net|QID|70871|QO|1|M|13.55,50.20|NC|N|Pick up the Sea Kelp in town.|
-C Iskaaran Fishing Net|QID|70871|QO|2|M|13.26,47.22|NC|N|Pick up the Stones with holes just outside of town along the shore.|
-C Iskaaran Fishing Net|QID|70871|QO|3|M|12.82,49.18|NC|N|Open the crafting menu with Tavio.|
+C Iskaaran Fishing Net|QID|70871|QO|1|M|13.55,50.20|H|N|Pick up the Sea Kelp in town.|
+C Iskaaran Fishing Net|QID|70871|QO|2|M|13.26,47.22|H|N|Pick up the Stones with holes just outside of town along the shore.|
+C Iskaaran Fishing Net|QID|70871|QO|3|M|12.82,49.18|H|N|Open the crafting menu with Tavio.|
 T Iskaaran Fishing Net|QID|70871|M|12.82,49.18|N|To Tavio.|
 A Setting Your Very Own Net|QID|72584|PRE|70871|M|12.82,49.18|N|From Tavio. This is done in Waking shore, so leaving it out of the guide.|RANK|3|
 t Setting Your Very Own Net|QID|72584|PRE|70871|M|12.82,49.18|N|To Tavio.|
@@ -647,14 +656,14 @@ C Elementary, My Dear Drakonid|QID|71009|M|21.62,35.34|Z|2024|QO|2|NC|N|This is 
 T Elementary, My Dear Drakonid|QID|71009|M|21.52,35.46|Z|2024|N|To Varsek.|
 A Varsek Recruited|QID|71012|PRE|71009|M|21.52,35.46|Z|2024|N|From Varsek.|
 A The Joy of Painting|QID|70166|PRE|71009|M|22.11,36.79|Z|2024|N|From Rauvros who is on an upper floor of the tower.|
-A A Minor Setback|QID|66261|M|21.01,38.91|Z|2024|N|From Illusory Mage.|RANK|2|
+A A Minor Setback|QID|66261|PRE|66026|M|21.01,38.91|Z|2024|N|From Illusory Mage.|RANK|2|LEAD|66262|
 T A Minor Setback|QID|66261|M|22.73,41.67|Z|2024;The Azure Span|N|To Detry Hornswald.|
 A Waste Water Cleanup|QID|66262|PRE|66261|M|22.73,41.67|Z|2024;The Azure Span|N|From Detry Hornswald.|RANK|2|
 C Waste Water Cleanup|QID|66262|M|23.13,41.21|Z|2024;The Azure Span|QO|1|N|Click on each rotting pile, usually a waste elemental will spawn, after you kill it, quest updates.|
 T Waste Water Cleanup|QID|66262|M|22.73,41.68|Z|2024;The Azure Span|N|To Detry Hornswald.|
 A A Precision Approach|QID|66263|PRE|66262|M|22.73,41.68|Z|2024;The Azure Span|N|From Detry Hornswald.|RANK|2|
 A Disarmed and Docile|QID|66264|PRE|66262|M|22.73,41.68|Z|2024;The Azure Span|N|From Detry Hornswald.|RANK|2|
-C Disarmed and Docile|QID|66264|M|23.41,40.27|Z|2024;The Azure Span|S|N|Kill and loot gnolls as you head to Flayfist. There are also weapons racks around containg the items.|
+C Disarmed and Docile|QID|66264|M|23.41,40.27|Z|2024;The Azure Span|S|N|Kill and loot gnolls as you head to Flayfist. There are also weapons racks around containing the items.|
 K A Precision Approach|ACTIVE|66263|M|24.79,39.11|Z|2024;The Azure Span|QO|1|T|Flayfist|N|Kill Flayfist. He is at the back of the cave.|
 C Disarmed and Docile|QID|66264|M|23.41,40.27|Z|2024;The Azure Span|US|N|Finish collecting the gnawbone armaments.|
 T A Precision Approach|QID|66263|M|22.74,41.69|Z|2024;The Azure Span|N|To Detry Hornswald.|
@@ -662,7 +671,11 @@ T Disarmed and Docile|QID|66264|M|22.73,41.68|Z|2024;The Azure Span|N|To Detry H
 A Who's Next?|QID|66265|PRE|66263&66264|M|22.73,41.68|Z|2024;The Azure Span|N|From Detry Hornswald.|
 A Filthy Mongrels|QID|66266|PRE|66263&66264|M|22.73,41.68|Z|2024;The Azure Span|N|From Detry Hornswald.|
 A M.E.T.A.|QID|66267|PRE|66263&66264|M|23.47,41.86|Z|2024;The Azure Span|N|From Illusory Mage.|
-C Filthy Mongrels|QID|66266|M|24.21,42.45|Z|2024;The Azure Span|US|N|Finish off the  Hyena Mongrels and Matriarch's.|
+C Filthy Mongrels|QID|66266|M|24.21,42.45|Z|2024;The Azure Span|N|Finish off the  Hyena Mongrels and Matriarch's.|S|
+C M.E.T.A.|QID|66267|M|24.21,42.45|Z|2024;The Azure Span|N|Loot keys off the mongrels in the area and use them on the trapped animals.|S|
+K Cracktooth|ACTIVE|66265|QO|1|M|24.16,41.92|Z|2024;The Azure Span|N|Kill Cracktooth he is down in the cave.|
+C Filthy Mongrels|QID|66266|M|24.21,42.45|Z|2024;The Azure Span|N|Finish off the  Hyena Mongrels and Matriarch's.|US|
+C M.E.T.A.|QID|66267|M|24.21,42.45|Z|2024;The Azure Span|N|Loot keys off the mongrels in the area and use them on the trapped animals.|US|
 T Who's Next?|QID|66265|M|22.73,41.67|Z|2024;The Azure Span|N|To Detry Hornswald.|
 T Filthy Mongrels|QID|66266|M|22.73,41.67|Z|2024;The Azure Span|N|To Detry Hornswald.|
 T M.E.T.A.|QID|66267|M|22.73,41.67|Z|2024;The Azure Span|N|To Detry Hornswald.|
@@ -676,9 +689,9 @@ T Just To Be Sure|QID|66269|M|22.73,41.65|Z|2024;The Azure Span|N|To Detry Horns
 A Whack-a-Gnoll|QID|66270|PRE|66268&66269|M|22.73,41.65|Z|2024;The Azure Span|N|From Detry Hornswald.|
 C Whack-a-Gnoll|QID|66270|M|21.51,41.46|Z|2024;The Azure Span|QO|1|NC|N|Reach the challengers.|
 C Whack-a-Gnoll|QID|66270|M|21.51,41.42|Z|2024;The Azure Span|QO|2|N|Would-be warlords defeated (100%).|
-T Whack-a-Gnoll|QID|66270|N|To Detry Hornswald.|
+T Whack-a-Gnoll|QID|66270|M|22.73,41.65|Z|2024;The Azure Span|N|To Detry Hornswald.|
 
-R Three Falls Lookout|ACTIVE|71233|M|18.74,24.47|Z|2024|N|Its a bit of a journey, if you wanted you could take flight path to Ohn'iri Springs and fly from there.|
+R Three-Falls Lookout|ACTIVE|71233|M|18.74,24.47|Z|2024|N|Its a bit of a journey, if you wanted you could take flight path to Ohn'iri Springs and fly from there.|
 T Falling Water|QID|71233|M|18.74,24.47|Z|2024|N|To Willa Stronghinge.|
 A Nothing for Breakfast|QID|66837|PRE|71233|M|18.74,24.47|Z|2024|N|From Willa Stronghinge.|
 A It's Cold Up Here|QID|66838|M|18.74,24.47|Z|2024|N|From Willa Stronghinge.|RANK|2|
@@ -692,7 +705,7 @@ C The Great Shokhari|QID|66844|M|13.22,26.56|Z|2024|N|Kill Sky Vixen Shokhari.|
 T Out of Lukh|QID|66843|M|19.25,26.90|Z|2024|N|To Branor Broadbraw.|
 C Nothing for Breakfast|QID|66837|M|18.61,26.82|Z|2024|N|Keep killing Vorquin and Moose until you finish collecting the meat.|US|
 C It's Cold Up Here|QID|66838|M|22.37,23.91|Z|2024|N|Kill bears and loot their thick pelts.|S|
-C It's Brew Time!|QID|66839|M|22.24,25.50|Z|2024|NC|N|Collect fruits, berries, and herbs. (100%).|
+C It's Brew Time!|QID|66839|M|22.24,25.50|Z|2024|H|N|Collect fruits, berries, and herbs. (100%).|
 C It's Cold Up Here|QID|66838|M|22.37,23.91|Z|2024|N|Keep killing bears until you have enough thick pelts.|US|
 T The Great Shokhari|QID|66844|M|19.04,24.00|Z|2024|N|To Zon'Wogi.|
 T Nothing for Breakfast|QID|66837|M|18.74,24.47|Z|2024|N|To Willa Stronghinge.|
@@ -701,7 +714,7 @@ T It's Brew Time!|QID|66839|M|18.98,23.29|Z|2024|N|To Modurun Sixtoes.|
 A Water Safety|QID|66840|PRE|66844&66837|M|18.54,23.67|Z|2024|N|From Manny Read.|RANK|2|
 C Water Safety|QID|66840|QO|1<1|M|17.31,23.19|Z|2024|U|193569|NC|N|Click your [color=33fff9]water testing flask [/color]at the base of the waterfall, to collect a sample.|
 A A Shard of the Past|QID|66841|PRE|66844&66837|M|19.16,24.73|Z|2024|N|From Gannar Fullpack.|RANK|2|
-C A Shard of the Past|QID|66841|M|17.61,28.24|Z|2024|NC|N|The artifact is on a rock in the middle of the creek, at the top of the waterfall, a bit hard to get as you get swept over by force of the current.|
+C A Shard of the Past|QID|66841|M|17.61,28.24|Z|2024|H|N|The artifact is on a rock in the middle of the creek, at the top of the waterfall, a bit hard to get as you get swept over by force of the current.|
 C Water Safety|QID|66840|M|19.42,23.84;20.00,24.14|CS|Z|2024|NC|U|193569|N|The other two samples are on the other side of camp. The last sample you pick up will trigger a water elemental to kill.|
 T A Shard of the Past|QID|66841|M|18.66,23.69|Z|2024|N|To Thanessa Silverbloom.|
 T Water Safety|QID|66840|M|18.54,23.67|Z|2024|N|To Manny Read.|
@@ -715,14 +728,14 @@ T The Heart of the Deck|QID|66846|M|18.77,24.45|Z|2024|N|To Mysterious Apparitio
 R Creektooth Den|AVAILABLE|65279|M|16.21,20.89|Z|2024|N|Go west out of the camp and then turn north at the crossroad to find Creektooth Den.|RANK|3|
 A By Royal Decree|QID|65279|M|16.21,20.89|Z|2024|N|From Gnoll Mon-Ark.|RANK|3|
 A Rot Rancher|QID|65306|M|16.21,20.89|Z|2024|N|From Gnoll Mon-Ark.|RANK|3|
+t By Royal Decree|QID|65279|M|PLAYER|Z|2024|N|To Gnoll Mon-Ark.|
+t Rot Rancher|QID|65306|M|PLAYER|Z|2024|N|To Gnoll Mon-Ark.|
 C By Royal Decree|QID|65279|M|14.84,21.02|Z|2024|S|N|Kill the Brackenhide Warriors as you go, the Shamans are deeper in where the goo is.|
-C Rot Rancher|QID|65306|M|13.88,21.19|Z|2024|NC|N|Pick up thhe smelly ooze, hanging in bags and also drops in small quantities from the errant rots.|
+C Rot Rancher|QID|65306|M|13.88,21.19|Z|2024|H|N|Pick up thhe smelly ooze, hanging in bags and also drops in small quantities from the errant rots.|
 C By Royal Decree|QID|65279|M|14.23,20.78|Z|2024|US|N|Finish up, there are a few warriors in this area, and plenty of Shaman to kill.|
-T By Royal Decree|QID|65279|M|PLAYER|Z|2024|N|To Gnoll Mon-Ark.|
-T Rot Rancher|QID|65306|M|PLAYER|Z|2024|N|To Gnoll Mon-Ark.|
 A Keys to the Kingdom|QID|65302|PRE|65279&65306|M|PLAYER|Z|2024|N|From Gnoll Mon-Ark.|RANK|2|
-C Keys to the Kingdom|QID|65302|M|13.83,21.92|Z|2024|QO|1|NC|N|Pick up small Sticky Gnoll Key on the ground between tent and firepit.|
-C Keys to the Kingdom|QID|65302|M|14.56,20.60|Z|2024|QO|2|NC|N|Open the locked barrel.|
+C Keys to the Kingdom|QID|65302|M|13.83,21.92|Z|2024|QO|1|H|N|Pick up small Sticky Gnoll Key on the ground between tent and firepit.|
+C Keys to the Kingdom|QID|65302|M|14.56,20.60|Z|2024|QO|2|H|N|Open the locked barrel.|
 C Keys to the Kingdom|QID|65302|M|15.49,19.41|Z|2024|QO|3|NC|N|Reach the river bank.|
 T Keys to the Kingdom|QID|65302|M|15.73,19.17|Z|2024|N|To Gnoll Mon-Ark.|
 A Making a Mountain Out of a Gnoll Hill|QID|65594|PRE|65302|M|15.73,19.17|Z|2024|N|From Gnoll Mon-Ark.|RANK|2|
@@ -747,7 +760,7 @@ R Shiverweb Vale|AVAILABLE|65750|M|51.71,61.97|Z|2024|EAB|N|Remember the Extra A
 A Eight-Legged Menace|QID|65750|M|51.73,61.98|Z|2024;The Azure Span|N|From Lilial Dawnburst.|RANK|3|
 A Icy Webs|QID|65769|M|51.73,61.98|Z|2024;The Azure Span|N|From Lilial Dawnburst.|RANK|3|
 C Eight-Legged Menace|QID|65750|M|50.03,60.41|Z|2024;The Azure Span|S|N|Kill the Primalists and the Spiders while you look for survivors.|
-C Icy Webs|QID|65769|M|50.17,59.54|Z|2024;The Azure Span|NC|N|Free the cocooned survivors.|
+C Icy Webs|QID|65769|M|50.17,59.54|Z|2024;The Azure Span|H|N|Free the cocooned survivors.|
 C Eight-Legged Menace|QID|65750|M|50.44,61.33|Z|2024;The Azure Span|US|N|Keep killing Spiders and Primalists until done.|
 T Eight-Legged Menace|QID|65750|M|51.74,61.98|Z|2024;The Azure Span|N|To Lilial Dawnburst.|
 T Icy Webs|QID|65769|M|51.74,61.98|Z|2024;The Azure Span|N|To Lilial Dawnburst.|
@@ -766,14 +779,14 @@ A Kill the Queen|QID|65834|PRE|65832&65833|M|48.99,64.22|Z|2024;The Azure Span|N
 C Kill the Queen|QID|65834|M|47.24,65.58|Z|2024;The Azure Span|U|191044|N|Grungir has provided you with a [color=33fff9]Spider Squasher [/color]to make the job easier.|
 T Kill the Queen|QID|65834|M|49.00,64.27|Z|2024;The Azure Span|N|To Grungir Ironspout.|
 
-R Camp Nowhere|ACTIVE|66939^66957^66958^66968^66971^66972|M|62.92,58.38|N|Over to see Nesingwary and turn in any completed kill quests.|
+R Camp Nowhere|ACTIVE|66939^66957^66958^66968^66971^66972|M|62.92,58.38|N|Over to see Nesingwary and turn in any completed kill quests.|RANK|2|
 $ Imbu Glyph|QID|99999|M|60.98,69.26|Z|2024;The Azure Plains!Dragonflight|N|This one is tricky, it's right behind the big waterfall at the end of the mountain ridge line. It might be easier to see if you approach from behind the mountain.|ACH|16070|RANK|3| ;-- not in an area the guide takes us to. Closest is Camp Nowhere
 F Grimtusk's Hideaway|ACTIVE|71000^71017^71012|M|58.79,34.90|Z|2024;The Azure Span|N|Hop on your dragon and let's go to the last spot in the zone.|RANK|3|
 T Naluki's Letter|QID|71017|M|58.79,34.90|Z|2024;The Azure Span|N|To Old Grimtusk.|
 T Varsek Recruited|QID|71012|M|58.79,34.90|Z|2024;The Azure Span|N|To Old Grimtusk.|
 T Barst Recruited|QID|71000|M|58.79,34.90|Z|2024;The Azure Span|N|To Old Grimtusk.|
 A Loose Ends|QID|71135|PRE|71000&71017&71012|M|58.79,34.90|Z|2024;The Azure Span|N|From Old Grimtusk.|RANK|3|
-C Loose Ends|QID|71135|M|59.05,44.25|Z|2024;The Azure Span|QO|1|NC|N|Click the campfire to send the signal.|
+C Loose Ends|QID|71135|M|59.05,44.25|Z|2024;The Azure Span|QO|1|H|N|Click the campfire to send the signal.|
 C Loose Ends|QID|71135|M|58.89,44.16|Z|2024;The Azure Span|QO|2|N|Kill the two gnolls behind him first to get rid of the shield. Then, kill Frostbite.|
 T Loose Ends|QID|71135|M|58.78,34.90|Z|2024;The Azure Span|N|To Old Grimtusk.|
 

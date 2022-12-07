@@ -18,21 +18,21 @@ Details_StreamerDB = {
 		["Galvarton - Dalaran"] = "Shanyt - Argent Dawn",
 		["Bathal - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Okona - Zul'jin"] = "Shanyt - Argent Dawn",
-		["Tendralas - Dalaran"] = "Shanyt - Argent Dawn",
+		["Guufnah - Zul'jin"] = "Shanyt - Argent Dawn",
 		["Dachas - Zul'jin"] = "Shanyt - Argent Dawn",
-		["Zulbathal - Zul'jin"] = "Shanyt - Argent Dawn",
+		["Varlouris - Dalaran"] = "Shanyt - Argent Dawn",
 		["Laymonan - Zul'jin"] = "Shanyt - Argent Dawn",
 		["Brotus - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Vadder - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Neltharigos - Zul'jin"] = "Shanyt - Argent Dawn",
+		["Alatra - Zul'jin"] = "Shanyt - Argent Dawn",
 		["Tyran - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Darnastris - Dalaran"] = "Shanyt - Argent Dawn",
 		["Rotclaugh - Dalaran"] = "Shanyt - Argent Dawn",
-		["Alatra - Zul'jin"] = "Shanyt - Argent Dawn",
+		["Neltharigos - Zul'jin"] = "Shanyt - Argent Dawn",
 		["Abyronterner - Zul'jin"] = "Shanyt - Argent Dawn",
-		["Varlouris - Dalaran"] = "Shanyt - Argent Dawn",
+		["Zulbathal - Zul'jin"] = "Shanyt - Argent Dawn",
 		["Jasmoney - Zul'jin"] = "Shanyt - Argent Dawn",
-		["Guufnah - Zul'jin"] = "Shanyt - Argent Dawn",
+		["Tendralas - Dalaran"] = "Shanyt - Argent Dawn",
 		["Mandles - Zul'jin"] = "Shanyt - Argent Dawn",
 	},
 	["profiles"] = {
@@ -51,25 +51,33 @@ Details_StreamerDB = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["scale"] = 1,
 			["arrow_anchor_y"] = 0,
+			["main_frame_size"] = {
+				299.9999694824219, -- [1]
+				500.0000915527344, -- [2]
+			},
 			["minimap"] = {
 				["minimapPos"] = 160,
 				["radius"] = 160,
 				["hide"] = false,
 			},
-			["row_height"] = 20,
+			["main_frame_locked"] = false,
 			["arrow_anchor_x"] = 0,
-			["point"] = "CENTER",
+			["use_square_mode"] = false,
 			["row_texture"] = "Details Serenity",
 			["square_grow_direction"] = "right",
-			["row_color"] = {
-				0.1, -- [1]
-				0.1, -- [2]
-				0.1, -- [3]
-				0.4, -- [4]
+			["per_second"] = {
+				["enabled"] = false,
+				["point"] = "CENTER",
+				["scale"] = 1,
+				["font_shadow"] = true,
+				["y"] = 0,
+				["x"] = 0,
+				["attribute_type"] = 1,
+				["update_speed"] = 0.05,
+				["size"] = 32,
 			},
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
@@ -81,30 +89,22 @@ Details_StreamerDB = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["per_second"] = {
-				["enabled"] = false,
-				["point"] = "CENTER",
-				["scale"] = 1,
-				["font_shadow"] = true,
-				["y"] = 0,
-				["x"] = 0,
-				["size"] = 32,
-				["update_speed"] = 0.05,
-				["attribute_type"] = 1,
-			},
+			["use_spark"] = true,
 			["font_size"] = 10,
 			["x"] = 0,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["use_spark"] = true,
-			["use_square_mode"] = false,
-			["main_frame_locked"] = false,
-			["main_frame_size"] = {
-				299.9999694824219, -- [1]
-				500.0000915527344, -- [2]
+			["row_color"] = {
+				0.1, -- [1]
+				0.1, -- [2]
+				0.1, -- [3]
+				0.4, -- [4]
 			},
+			["point"] = "CENTER",
+			["row_height"] = 20,
+			["scale"] = 1,
 		},
 	},
 }

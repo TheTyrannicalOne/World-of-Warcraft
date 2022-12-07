@@ -1,3 +1,8 @@
+12/02/2022 version 4.14.11
+- Queue validation is now solely based on level and no longer whether the pet can battle.
+- Fix for Summon button when 'No Summon on Double Click' enabled.
+- Fix for Warlords of Draenor expansion artwork showing Dragonflight expansion artwork on pet cards.
+
 11/28/2022 version 4.14.10
 - Fix for the pet cards of uncollected pets showing 'This creature cannot battle' instead of their abilities.
 

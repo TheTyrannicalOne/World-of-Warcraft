@@ -1,7 +1,7 @@
 ﻿--[[
 ********************************************************************************
 Routes
-v1.6.7
+v1.7.3
 16 October 2014
 (Originally written for Live Servers v4.3.0.15050)
 (Hotfixed for v6.0.2.19034)
@@ -171,6 +171,8 @@ local function GetZoneName(uiMapID)
 		name = format("%s (%s)", name, Routes.Dragons:GetLocalizedMap(101))
 	elseif uiMapID == 125 then -- Northrend Dalaran
 		name = format("%s (%s)", name, Routes.Dragons:GetLocalizedMap(113))
+	elseif uiMapID == 2104 then -- Wintergrasp BG
+		name = format("%s (BG)", name)
 	end
 	return name
 end
@@ -189,6 +191,13 @@ local function processMapChildrenRecursive(parent)
 			if id then
 				if children[i].mapType == Enum.UIMapType.Zone or children[i].mapType == Enum.UIMapType.Continent then
 					local name = GetZoneName(id)
+
+					--[[
+					if Routes.LZName[name] and Routes.LZName[name] ~= 0 then
+						print(("Routes: Name %q already mapped to %d (new: %d)"):format(name, Routes.LZName[name], id))
+					end
+					--]]
+
 					Routes.LZName[name] = id
 
 					processMapChildrenRecursive(id)
@@ -352,6 +361,10 @@ function Routes:DrawMinimapLines(forceUpdate)
 	local facing, sin, cos
 	if minimap_rotate then
 		facing = GetFacing()
+
+		if not facing then
+			return
+		end
 	end
 
 	if (not forceUpdate) and facing == last_facing and (last_X-cx)^2 + (last_Y-cy)^2 < defaults.update_distance^2 then
@@ -1006,7 +1019,7 @@ function Routes:MINIMAP_UPDATE_ZOOM()
 end
 
 function Routes:CVAR_UPDATE(event, cvar, value)
-	if cvar == "ROTATE_MINIMAP" then
+	if cvar == "ROTATE_MINIMAP" or cvar == "rotateMinimap" then
 		minimap_rotate = value == "1"
 	end
 end

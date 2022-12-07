@@ -6,21 +6,21 @@ TalentTreeTweaksDB = {
 		["InspectDiff"] = {
 			["colorGreen"] = {
 				["a"] = 0.58,
-				["r"] = 0,
-				["g"] = 1,
 				["b"] = 0.3,
+				["g"] = 1,
+				["r"] = 0,
 			},
 			["colorRed"] = {
 				["a"] = 0.5,
-				["r"] = 1,
-				["g"] = 0,
 				["b"] = 0,
+				["g"] = 0,
+				["r"] = 1,
 			},
 			["colorYellow"] = {
 				["a"] = 0.75,
-				["r"] = 1,
-				["g"] = 0.67,
 				["b"] = 0,
+				["g"] = 0.67,
+				["r"] = 1,
 			},
 		},
 		["ClickableExportStringsInChat"] = {
@@ -32,9 +32,9 @@ TalentTreeTweaksDB = {
 		["HighlightCascadeRepurchable"] = {
 			["color"] = {
 				["a"] = 0.5,
-				["b"] = 1,
-				["g"] = 0,
 				["r"] = 0,
+				["g"] = 0,
+				["b"] = 1,
 			},
 		},
 		["DebugNodeInfo"] = {

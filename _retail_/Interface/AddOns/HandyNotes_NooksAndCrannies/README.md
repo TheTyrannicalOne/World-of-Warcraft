@@ -54,3 +54,7 @@ This adds doors and portal to map, showing you where you can travel. It can be s
 - __Gorgrond__: Cragplume Crater, Fissure of Fury, Moira's Bastion
 - __Shadowmoon Valley__: Bloodthorn Cave, Den of Secrets
 - __Nagrand__: Oshu'gun, Stonecrag Gorge, The Masters' Cavern
+
+#### Waypoints in Dragonflight
+
+- __Valdrakken__: Mythic dungeon portals (Dalaran, Shadowmoon Valley, Jade Forest), Home City portals (Orgrimmar / Stormwind)

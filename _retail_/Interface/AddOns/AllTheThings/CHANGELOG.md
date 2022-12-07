@@ -1,17 +1,18 @@
 # AllTheThings
 
-## [DF-3.1.0](https://github.com/DFortun81/AllTheThings/tree/DF-3.1.0) (2022-11-28)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.0.8...DF-3.1.0) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [DF-3.1.3](https://github.com/DFortun81/AllTheThings/tree/DF-3.1.3) (2022-12-07)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.1.2...DF-3.1.3) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 
-### Dragonflight is here 🎉🔥🐲🐉
+### Logic changes
 
-All Dragonflight content is marked collectible in AllTheThings as of this release 🎉
+- Changed popup dialog for incorrect quest reports to have better copyable text.
 
-All your usual categories like Mounts, Achievements, Quests, etc and even expansion specific additions like Dragonriding customizations and Faction activities.
+### Data fixes
 
-Most of the work this time around was done by @gbrage ♥
-
-Because of the amount of content in new expansion we inevitably missed something so please come to our [Discord](https://discord.gg/allthethings) to report issues you see!
-
-Have a good time in Dragonflight 🔥
+- Lots of profession additions.
+- Fixes to lots of Dragon Isles questlines, world quests, dailies, pets, rares, treasures and achievements.
+- Fixes to Dragonflight dungeons/raid and added World Bosses.
+- Updates to many Faction/Renown specific activities (Grand Hunt, Iskaara fishing, etc).
+- Updated Desolace.
+- Other fixes.

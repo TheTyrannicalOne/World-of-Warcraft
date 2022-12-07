@@ -2555,6 +2555,9 @@ do
                         name = NewFeature .. "Empowerment",
                         desc = "Empowerment stages are shown with additional text placed on the recommendation icon.",
                         order = 9.1,
+                        hidden = function()
+                            return class.file ~= "EVOKER"
+                        end,
                         args = {
                             enabled = {
                                 type = "toggle",
@@ -10527,7 +10530,7 @@ do
                     if ability and ( ability == "use_item" or class.abilities[ ability ] ) then
                         if ability == "pocketsized_computation_device" then ability = "cyclotronic_blast" end
                         -- Stub abilities that are replaced sometimes.
-                        if ability == "any_dnd" or ability == "wound_spender" or ability == "summon_pet" then
+                        if ability == "any_dnd" or ability == "wound_spender" or ability == "summon_pet" or ability == "apply_poison" then
                             result.action = ability
                         else
                             result.action = class.abilities[ ability ] and class.abilities[ ability ].key or ability

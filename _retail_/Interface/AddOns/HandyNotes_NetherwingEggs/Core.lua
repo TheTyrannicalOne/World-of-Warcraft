@@ -3,7 +3,7 @@
 
                                            Netherwing Eggs
 
-                                      v1.11 - 26th October 2022
+                                      v1.12 - 7th December 2022
                                 Copyright (C) Taraezor / Chris Birch
 
                                 ----o----(||)----oo----(||)----o----

@@ -2,7 +2,7 @@
 ## Title: Lib: LibTalentTree-1.0
 ## Notes: Library for retrieving class and spec talent tree information
 ## Author: Numy
-## Version: d95b8b2
+## Version: c24aa1b
 ## X-Licence: Permission is granted to use and redistribute this library in any way you see fit, including but not limited to, embedding it in your own addons.
 ## X-Curse-Project-ID: 676405
 

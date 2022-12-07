@@ -6,7 +6,7 @@ WoWPro:GuideNextGuide(guide, 'Ohnahran_Plains')
 WoWPro:GuideSteps(guide, function()
 return [[
 
-T The Waking Shore|QID|72266|M|76.57,33.66|Z|2022|N|To Sendrax.|
+T The Waking Shores|QID|72266|M|76.57,33.66|Z|2022|N|To Sendrax.|
 A Excuse the Mess|QID|69911|PRE|70125^69910|M|76.57,33.66|Z|2022|N|From Sendrax.|
 
 A Give Peace a Chance|QID|66110|PRE|65452|M|76.36,33.07|Z|2022|N|From Warlord Breka Grimaxe.|RANK|2|FACTION|Horde|
@@ -35,19 +35,26 @@ T From Such Great Heights|QID|66101|M|75.84,33.50|Z|2022|N|To Aster Cloudgaze.|F
 T Dragon Isles Supplies|QID|72708|M|76.43,34.50|N|Turn into Haephesta.|
 A Quality Assurance|QID|69965|PRE|66110^67053|M|76.41,34.45|Z|2022|N|From Haephesta.|RANK|2|
 A Always Be Crafting|QID|66112|PRE|66110^67053|M|76.36,34.63|Z|2022|N|From Grun Ashbeard.|RANK|2|
+A Opportunities Abound|QID|70042|M|76.4,33.3|Z|2022|N|From Vish the Sneak. He walks around the area.|T|Vish the Sneak|C|ROGUE|
+C Opportunities Abound|QID|70042|M|75.75,33.37|Z|2022|QO|1|N|Pick the [color=33fff9]Golden Expiditon Compass[/color] up off the crate.|H|
+C Opportunities Abound|QID|70042|M|76.17,33.66;76.44,33.13|CN|Z|2022|QO|2|N|Pick the [color=33fff9]Shiny Surveyors Scope[/color] up off the crate.\n\n[color=FF0000]NOTE: [/color]If it is not there check the other location. Or you will have to wait for the Expedition Surveyor to set it down.|T|Expedition Surveyor|H|
+R Pathfinder Jeb|ACTIVE|70042|M|76.73,34.19|Z|2022|N|Come over here and Jeb will tell you the pack laying here isn't his real pack.|
 f Wingrest Embassy|ACTIVE|69911|M|76.03,35.04|Z|2022|N|At Tixxa Mixxa.|
 C Excuse the Mess|QID|69911|M|76.33,35.62|Z|2022|QO|1|CHAT|N|Tell Ambassador Fastrasz that you are a new visitor.|
 C Excuse the Mess|QID|69911|M|76.29,35.59|Z|2022|QO|2|H|N|Embassy Visitor Log signed. It doesn't matter which options you choose, Have Fun!|
 C Excuse the Mess|QID|69911|M|75.61,34.14|Z|2022|QO|3|H|N|Read the stone tablet.|
 C Quality Assurance|QID|69965|M|74.52,35.19|Z|2022|H|N|Click on the glowing rocks to excavate.|S|
 C Encroaching Elementals|QID|70135^66111|M|73.98,33.91|Z|2022|N|Slay Primal elementals.|S|
+C Opportunities Abound|QID|70042|M|74.66,35.68|QO|3|N|Kill Primal Lava Elementals until you get [color=33fff9]Jeb's Supply Pack[/color].|S|
 C Always Be Crafting|QID|66112|M|75.01,39.20|Z|2022|QO|2|NC|N|This is dropped by Baron Crustcord at the bottom of Quaking Cavern.|T|Baron Crustcore|
 C Always Be Crafting|QID|66112|M|73.15,33.01|Z|2022|QO|1|NC|N|This is dropped by Baron Ashflow in a small lava pool up the hillside.|T|Baron Ashflow|
 C Quality Assurance|QID|69965|M|74.52,35.19|Z|2022|H|N|Finish excavating the glowing Volcanic Geodes.|US|
 C Encroaching Elementals|QID|70135^66111|M|73.98,33.91|Z|2022|N|Finish slaying the Primal elementals.|US|
+C Opportunities Abound|QID|70042|M|74.66,35.68|QO|3|N|Kill Primal Lava Elementals until you get [color=33fff9]Jeb's Supply Pack[/color].|T|Primal Lava Elemental|US|
 T Encroaching Elementals|QID|66111|M|76.71,34.55|Z|2022|N|To Captain Garrick.|FACTION|Horde|
 T Quality Assurance|QID|69965|M|76.41,34.47|Z|2022|N|To Haephesta.|
 T Always Be Crafting|QID|66112|M|76.35,34.65|Z|2022|N|To Grun Ashbeard.|
+T Opportunities Abound|QID|70042|M|76.4,33.3|Z|2022|N|To Vish the Sneak. He walks around the area.|T|Vish the Sneak|
 T Encroaching Elementals|QID|70135|M|76.37,33.07|Z|2022|N|To Warlord Breka Grimaxe.|FACTION|Alliance|
 C Excuse the Mess|QID|69911|M|78.42,31.82|Z|2022|QO|4|H|N|Relight the Brazier of Kinship.|
 T Excuse the Mess|QID|69911|M|76.58,33.66|Z|2022|N|To Sendrax.|
@@ -87,7 +94,7 @@ A Don't Be So Shellfish|QID|66106|PRE|66104|M|74.52,42.16|Z|2022|N|From Ecologis
 C Don't Be So Shellfish|QID|66106|M|79.37,41.53|Z|2022|H|N|Collect the piles of shells. These also drop from the murlocs in the area. The wind ones are above.|S|
 A A Quack For Help|QID|66196|PRE|66104|M|80.12,42.87|Z|2022|N|From Bubbled Duckling.|RANK|2|
 C A Sledgehammer of a Solution|QID|66108|M|79.69,44.02|Z|2022|QO|1|N|Sogglmoggl respawns almost instantly, so move after you kill him.|T|Sogglmoggl|
-C A Sledgehammer of a Solution|QID|66108|M|79.60,40.53|Z|2022|QO|2|N|Whirglgurgl respawns almost instantly, so move after you kill him.|T|Whirglgurgl|
+C A Sledgehammer of a Solution|QID|66108|M|79.79,39.79|Z|2022|QO|2|N|Whirglgurgl respawns almost instantly, so move after you kill him.|T|Whirglgurgl|
 C Don't Be So Shellfish|QID|66106|M|79.37,41.53|Z|2022|H|N|Finish collecting the shells.|US|
 C A Quack For Help|QID|66196|M|74.72,42.21|Z|2022|NC|N|Bubbled Duckling brought to the Ecologist's Camp.|
 T Don't Be So Shellfish|QID|66106|M|74.51,42.17|Z|2022|N|To Ecologist Tharu.|
@@ -113,11 +120,11 @@ T Blacktalon Intel|QID|65992|M|62.65,33.19|Z|2022|N|To Wrathion.|
 T The Obsidian Citadel|QID|65995|M|62.65,33.19|Z|2022|N|To Wrathion.|
 A Veteran Reinforcements|QID|65996|PRE|65995|M|62.77,33.10|Z|2022|N|From Majordomo Selistra.|
 ;t Djaradin Djustice|QID|65994|M|68.44,39.10|Z|2022|N|Bonus Objective - Autocompleted.|IZ|13723|
-C Veteran Reinforcements|QID|65996|M|56.67,34.79|Z|2022|QO|1|H|N|Click the drakonids to heal them.|S|U|193917|
+C Veteran Reinforcements|QID|65996|M|56.67,34.79|Z|2022|QO|1|H|N|Click the drakonids to heal them.|S|U|193917|T|Injured|
 A Fighting Fire with... Water|QID|66998|PRE|65995|M|59.10,34.86|Z|2022|N|From Caretaker Ventraz.|RANK|2|
 C Fighting Fire with... Water|QID|66998|M|59.10,34.86|Z|2022|U|194441|N|Take a brief break from healing to kill the droplets. Use the bottled water elemental for a bit of extra help.|
 T Fighting Fire with... Water|QID|66998|M|59.10,34.86|Z|2022|N|From Caretaker Ventraz.|
-C Veteran Reinforcements|QID|65996|M|56.67,34.79|Z|2022|QO|1|H|N|Finish finding and healing the Injured drakonids.|US|U|193917|
+C Veteran Reinforcements|QID|65996|M|56.67,34.79|Z|2022|QO|1|H|N|Finish finding and healing the Injured drakonids.|US|U|193917|T|Injured|
 C Veteran Reinforcements|QID|65996|M|55.14,31.32|Z|2022|QO|2|NC|N|Meet Sendrax at the Conservatory Outpost.|
 T Veteran Reinforcements|QID|65996|M|54.99,30.76|Z|2022|N|To Caretaker Azkra.|
 A Chasing Sendrax|QID|65997|PRE|65996|M|54.99,30.76|Z|2022|N|From Caretaker Azkra.|
@@ -126,6 +133,9 @@ T Chasing Sendrax|QID|65997|M|55.17,24.93|Z|2022|N|To Sendrax.|
 A Future of the Flights|QID|65998|PRE|65997|M|55.17,24.93|Z|2022|N|From Sendrax.|
 A Red in Tooth and Claw|QID|65999|PRE|65997|M|55.17,24.93|Z|2022|N|From Sendrax.|
 A Library of Alexstrasza|QID|66000|PRE|65997|M|55.25,24.70|Z|2022|N|From On the Origin of Draconic Species (book on rock).|
+t Red in Tooth and Claw|QID|65999|M|PLAYER|Z|2022|N|To Sendrax.|
+t Future of the Flights|QID|65998|M|PLAYER|Z|2022|N|To Sendrax.|
+t Library of Alexstrasza|QID|66000|M|PLAYER|Z|2022|N|To Sendrax.|
 C Library of Alexstrasza|QID|66000|M|57.08,23.75|Z|2022|H|N|Bliz has conveniently marked the books on your minimap, go pick them up.|S|
 C Future of the Flights|QID|65998|M|54.94,21.45|Z|2022|N|Find the Infused dragon eggs. Kill the nearly helpless whelps.|S|
 C Red in Tooth and Claw|QID|65999|M|54.66,20.76|Z|2022|QO|1|N|Slay Primalist forces.|S|
@@ -133,20 +143,17 @@ C Red in Tooth and Claw|QID|65999|M|54.66,20.76|Z|2022|QO|1|N|Slay Primalist for
 C Firava the Rekindler|QID|70648|M|55.70,22.18|Z|2022|N|Slay Firava the Rekindler.|T|Firava the Rekindler|RARE|
 ;t Firava the Rekindler|QID|70648|M|55.70,22.18|Z|2022|N|Bonus Objective - Autocompleted.|
 C Red in Tooth and Claw|QID|65999|M|54.66,20.76|Z|2022|N|Finish up slaying Primalist forces.|US|
-C Library of Alexstrasza|QID|66000|M|57.08,23.75|Z|2022|NC|N|Find the Books.|US|
+C Library of Alexstrasza|QID|66000|M|57.08,23.75|Z|2022|H|N|Find the Books.|US|
 C Future of the Flights|QID|65998|M|54.94,21.45|Z|2022|N|Finish up with the unfortunate whelplings.|US|
-T Red in Tooth and Claw|QID|65999|M|PLAYER|Z|2022|N|To Sendrax.|
-T Future of the Flights|QID|65998|M|PLAYER|Z|2022|N|To Sendrax.|
-T Library of Alexstrasza|QID|66000|M|PLAYER|Z|2022|N|To Sendrax.|
 A A Last Hope|QID|66001|PRE|65998&66000&65999|M|57.13,23.63|Z|2022|N|From Sendrax.|
 C A Last Hope|QID|66001|M|56.23,22.06|Z|2022|QO|1|CHAT|N|Meet Sendrax by the ritual site, then tell her you are ready.|
 C A Last Hope|QID|66001|M|56.89,21.60|Z|2022|QO|2|H|N|Pick up the Infused Dragon Egg.|
 C A Last Hope|QID|66001|M|55.07,30.62|Z|2022|QO|3|NC|N|Carry the egg to safety. Note you can't mount up, or use skills, just run.|
-T A Last Hope|QID|66001|M|55.10,31.00|Z|2022|N|To Majordomo Selistra.|
-A For the Benefit of the Queen|QID|66114|PRE|66001|M|55.10,31.00|Z|2022|N|From Majordomo Selistra.|
 A A Two for One Deal|QID|70179|M|54.46,30.86|Z|2022|N|From Apprentice Caretaker Zefren.|RANK|2|;Not sure what triggers this quest, per ATT it was available after 66001 *and not before 66997* so putting here since leaving the egg unguarded while killing rock elementals seems wrong.
 C A Two for One Deal|QID|70179|M|53.05,32.36|Z|2022|N|Remove the life from the rock elementals, then remove the rocks.|
 T A Two for One Deal|QID|70179|M|54.46,30.86|Z|2022|N|To Apprentice Caretaker Zefren|
+T A Last Hope|QID|66001|M|55.10,31.00|Z|2022|N|To Majordomo Selistra.|
+A For the Benefit of the Queen|QID|66114|PRE|66001|M|55.10,31.00|Z|2022|N|From Majordomo Selistra.|
 C For the Benefit of the Queen|QID|66114|M|62.26,72.88|Z|2022|QO|1|CHAT|N|Ask Majordomo Selistra to take you to the Ruby Lifeshrine.|
 C For the Benefit of the Queen|QID|66114|M|62.33,73.02|Z|2022|QO|2|CHAT|N|Show Queen Alexstrasza the infused egg.|
 T For the Benefit of the Queen|QID|66114|M|62.33,73.02|Z|2022|N|To Alexstrasza the Life-Binder.|
@@ -235,8 +242,8 @@ C Training Wings|QID|70061|M|61.92,71.09|Z|2022|QO|4|N|Slay Relentless Gust.|
 C Training Wings|QID|70061|M|61.77,72.40|Z|2022|QO|3|N|Slay Intrusive Pupstinger.|S|
 C Training Wings|QID|70061|M|61.29,71.51|Z|2022|QO|2|N|Slay Agitated Weedling. If you end up at the bottom of the lifeshrine, you can exit the vehicle UI and ask Urlostrasz <Ferry> for a ride back to the top.|
 C Training Wings|QID|70061|M|61.77,72.40|Z|2022|QO|3|N|Slay Intrusive Pupstinger.|US|
-C Memories|QID|70134|M|61.98,72.21|Z|2022|QO|1|N|Behind the pillar at the bottom of the lifeshrine.|H|
-C Memories|QID|70134|M|61.98,72.21|Z|2022|QO|2|N|Behind the pillar at the bottom of the lifeshrine.|H|
+C Memories|QID|70134|M|61.98,72.21|Z|2022|QO|1|N|Behind the pillar at the bottom of the lifeshrine.\n\nThe Golden Glyph.|H|
+C Memories|QID|70134|M|61.98,72.21|Z|2022|QO|2|N|Behind the pillar at the bottom of the lifeshrine.\n\nThe little box on the ledge right belowe the glyph.|H|
 T Memories|QID|70134|M|61.06,71.48;57.82,66.85|CS|Z|2022|N|Talk to Urlostrasz to return to the top. Then turn in to Veritistrasz.|
 T Training Wings|QID|70061|M|62.34,72.80|Z|2022|N|To Majordomo Selistra.|
 A Who Brought the Ruckus?|QID|66931|PRE|68799&70061|M|62.35,73.01|Z|2022|N|From Alexstrasza the Life-Binder.|
@@ -339,7 +346,7 @@ C Leave Bee Alone|QID|66734|M|57.13,70.35|Z|2022|QO|2|NC|EAB|N|Use Extra Action 
 T Just a Trim|QID|66735|M|55.26,63.48|Z|2022|N|To Vaeros.|
 T Leave Bee Alone|QID|66734|M|55.26,63.48|Z|2022|N|To Vaeros.|
 A A Better Start|QID|66737|PRE|66734&66735|M|55.19,63.68|Z|2022|N|From Adazius.|RANK|2|
-C A Better Start|QID|66737|M|55.64,64.63;56.03,66.37;56.41,66.02;57.29,64.72;56.86,63.69;55.73,63.73|CS|Z|2022|H|N|Click on the piles of dirt around the pool and watch the pland mature.|
+C A Better Start|QID|66737|M|55.64,64.63;56.03,66.37;56.41,66.02;57.29,64.72;56.86,63.69;55.73,63.73|CS|Z|2022|H|N|Click on the piles of dirt around the pool and watch the plant mature.|
 T A Better Start|QID|66737|M|55.20,63.70|Z|2022|N|To Adazius.|
 R Overflowing Rapids|ACTIVE|66879|M|53.43,58.40|Z|2022|N|Hop on your dragon and glide across the river to see Dazakros.|RANK|2|
 T Hornstrider Havoc|QID|66879|M|53.43,58.40|Z|2022|N|To Dazakros.|
@@ -381,14 +388,15 @@ A Cut Off the Head|QID|66123|PRE|66121&66122|M|53.68,80.17|Z|2022|N|From Majordo
 C Cut Off the Head|QID|66123|M|53.55,82.68|Z|2022|U|192436|N|Slay Jadzigeth.|T|Jadzigeth|
 T Cut Off the Head|QID|66123|M|53.68,80.15|Z|2022|N|To Majordomo Selistra.|
 A Exeunt, Triumphant|QID|66124|PRE|66123|M|53.68,80.15|Z|2022|N|From Majordomo Selistra.|
-A Out For Delivery|QID|66963|PRE|66123|M|48.48,78.86|Z|2022|N|From Hauler Bennet.|RANK|2|
+A Out For Delivery|QID|66963|LEAD|66524|M|48.48,78.86|Z|2022|N|From Hauler Bennet.|RANK|2|
 T Out For Delivery|QID|66963|M|48.54,82.68|Z|2022|N|To Cataloger Wulferd.|
-A Amateur Protography|QID|66524|PRE|66963|M|48.49,82.67|Z|2022|N|From Cataloger Wulferd.|RANK|2|
-f Dragonscale Basecamp|ACTIVE|66524|M|47.9,83.33|Z|2022|N|At Art Raskins.|
+A Amateur Protography|QID|66524|PRE|66123|M|48.49,82.67|Z|2022|N|From Cataloger Wulferd.|RANK|2|
+f Dragonscale Basecamp|ACTIVE|66124|M|47.9,83.33|Z|2022|N|At Art Raskins.|
 A Orientation: Dragonscale Basecamp|QID|72397|PRE|66963|M|47.89,82.41|Z|2022|N|From Naleidea Rivergleam.|RANK|2|
 C Orientation: Dragonscale Basecamp|QID|72397|QO|1|M|47.92,82.09|Z|2022|CHAT|N|Rae'ana is the scholars supplier.|
 C Orientation: Dragonscale Basecamp|QID|72397|QO|2|M|47.74,83.22|Z|2022|CHAT|N|Granpap Whiskers is the catalogers supplier.|
 C Orientation: Dragonscale Basecamp|QID|72397|QO|3|M|47.32,83.41|Z|2022|CHAT|N|Pathfinder Jeb is the explorers supplier.|
+A Lost Expedition Scouts|QID|70822|M|47.32,83.41|Z|2022|N|From Pathfinder Jeb.|DFREN|Valdrakken;2510;3|IZ|13732|;not sure of this pre - may be dragonscale exp 2?
 C Orientation: Dragonscale Basecamp|QID|72397|QO|4|M|46.94,82.90|Z|2022|CHAT|N|Boss Magor is the artisans supplier.|
 C Orientation: Dragonscale Basecamp|QID|72397|QO|5|M|47.10,82.58|Z|2022|CHAT|N|Cataloger Jakes is the Keeper of Renown.|
 T Orientation: Dragonscale Basecamp|QID|72397|M|47.22,82.72|Z|2022|N|To Toddy Whiskers.|
@@ -450,30 +458,14 @@ A Theory in Practice|QID|69902|PRE|69900&69901|M|45.95,81.50|Z|2022|N|From Tyrgo
 C Theory in Practice|QID|69902|M|45.91,81.44|Z|2022|QO|1|H|N|Click on the whelpling.|
 C Theory in Practice|QID|69902|M|45.96,81.50|Z|2022|QO|2|CHAT|N|Pick a name any name.|
 T Theory in Practice|QID|69902|M|45.96,81.50|Z|2022|N|To Tyrgon.|
-A Simple Excavation Tools|QID|70335|M|47.92,82.07|Z|2022|N|From Ree'ana.|DFREN|Dragonscale Exp;2507;3|RANK|2|
+A Simple Excavation Tools|QID|70335|M|47.92,82.07|Z|2022|N|From Rea'ana.|DFREN|Dragonscale Exp;2507;3|RANK|2|C|-DEMONHUNTER|
 T Simple Excavation Tools|QID|70335|M|47.92,82.07|Z|2022|N|To Ree'ana.|
 ;guessing at matching levels to QIDs REN level from UI, quest id from questschanged in order completed, should match up
 A Dragon Isles Supplies|QID|72024|M|47.11,82.59|Z|2022|N|From Cataloger Jakes.|DFREN|Dragonscale Exp;2507;2|IZ|13732|RANK|2|;at 3 when picking this up
-A Dragon Isles Supplies|QID|70026|M|47.11,82.59|Z|2022|N|From Cataloger Jakes.|DFREN|Dragonscale Exp;2507;5|IZ|13732|RANK|2|;at 8 when picking this up
+A Dragon Isles Supplies|QID|72026|M|47.11,82.59|Z|2022|N|From Cataloger Jakes.|DFREN|Dragonscale Exp;2507;5|IZ|13732|RANK|2|;at 8 when picking this up
 A Dragon Isles Supplies|QID|72032|M|47.11,82.59|Z|2022|N|From Cataloger Jakes.|DFREN|Dragonscale Exp;2507;6|IZ|13732|RANK|2|;at 8 when picking this up
 
 ;t Pruning the Preserve|QID|70196|M|46.28,79.60|Z|2022|N|Bonus Objective - Autocompleted.|
-
-R Smoldering Perch|AVAILABLE|65687|M|39.43,48.33|Z|2022|N|We are going to take a side trip to get a quest line for Sojourner of the Waking Shores.|RANK|3|;why is there no leadin quest for this?
-A Punching Up|QID|65687|M|39.43,48.33|Z|2022|N|From Ingot.|RANK|3|
-A A Cultist's Misgivings|QID|65690|M|39.43,48.33|Z|2022|N|From Ingot.|RANK|3|
-C Punching Up|QID|65687|M|37.43,46.66|Z|2022|N|Kill the Worldbreaker Dragonkin as you search for Ayasanth.|S|
-T A Cultist's Misgivings|QID|65690|M|37.45,46.67|Z|2022|N|To Ayasanth.|
-A Under Lock and Key|QID|65782|PRE|65690|M|37.45,45.67|Z|2022|N|From Ayasanth.|RANK|3|
-C Under Lock and Key|QID|65782|QO|1|M|38.20,48.36|Z|2022|N|The key drops from the Worldbreaker Guards, so prioritize killing them until you get the key.|
-C Punching Up|QID|65687|M|38.20,48.36|Z|2022|N|Keep killing the Worldbreaker Dragonkin until the step completes.|US|
-C Under Lock and Key|QID|65782|QO|2|M|37.45,46.67|Z|2022|H|N|Unlock her cage.|
-T Punching Up|QID|65687|M|37.32,46.65|Z|2022|N|To Ingot.|
-T Under Lock and Key|QID|65782|M|37.35,46.62|Z|2022|N|To Ayasanth.|
-A The Shadow of His Wings|QID|65691|PRE|65687&65782|M|37.35,46.62|Z|2022|N|From Ayasanth.|RANK|3|
-C The Shadow of His Wings|QID|65691|QO|1|M|35.59,47.95|Z|2022|N|Go into the cave, most of the mobs are "orange" (neutral) and will clear out. Kill the hostiles and go stand by Cygenoth.|
-K Cygenoth|ACTIVE|65691|QO|2|M|35.03,45.44|Z|2022|N|Kill Cygenoth the Corrupted.|T|Cygenoth|
-T The Shadow of His Wings|QID|65691|M|39.56,48.40|Z|2022|N|To Ayasanth.|
 
 R Obsidian Bulwark|ACTIVE|66079|M|47.7,67.1;42.47,66.82|CS|Z|2022|N|Mount up and head off to find Wrathion.|
 T Wrathion Awaits|QID|66079|M|42.47,66.82|CS|Z|2022|N|To Wrathion.|
@@ -493,6 +485,23 @@ T Best Plans and Intentions|QID|66048|M|42.47,66.85|Z|2022|N|To Wrathion.|
 T Sharp Practice|QID|66078|M|42.47,66.86|Z|2022|N|To Wrathion.|
 A Talon Strike|QID|65956|PRE|66048&66078|M|42.47,66.86|Z|2022|N|From Wrathion (after a bit of dialog).|
 A No Time for Heroes|QID|65957|PRE|66048&66078|M|42.47,66.86|Z|2022|N|From Wrathion (after a bit of dialog).|
+
+R Smoldering Perch|AVAILABLE|65687|M|39.43,48.33|Z|2022|N|We are going to take a side trip to get a quest line for Sojourner of the Waking Shores.|RANK|3|;why is there no leadin quest for this?
+A Punching Up|QID|65687|M|39.43,48.33|Z|2022|N|From Ingot.|RANK|3|
+A A Cultist's Misgivings|QID|65690|M|39.43,48.33|Z|2022|N|From Ingot.|RANK|3|
+C Punching Up|QID|65687|M|37.43,46.66|Z|2022|N|Kill the Worldbreaker Dragonkin as you search for Ayasanth.|S|
+T A Cultist's Misgivings|QID|65690|M|37.45,46.67|Z|2022|N|To Ayasanth.|
+A Under Lock and Key|QID|65782|PRE|65690|M|37.45,45.67|Z|2022|N|From Ayasanth.|RANK|3|
+C Under Lock and Key|QID|65782|QO|1|M|38.20,48.36|Z|2022|N|The key drops from the Worldbreaker Guards, so prioritize killing them until you get the key.|
+C Punching Up|QID|65687|M|38.20,48.36|Z|2022|N|Keep killing the Worldbreaker Dragonkin until the step completes.|US|
+C Under Lock and Key|QID|65782|QO|2|M|37.45,46.67|Z|2022|H|N|Unlock her cage.|
+T Punching Up|QID|65687|M|37.32,46.65|Z|2022|N|To Ingot.|
+T Under Lock and Key|QID|65782|M|37.35,46.62|Z|2022|N|To Ayasanth.|
+A The Shadow of His Wings|QID|65691|PRE|65687&65782|M|37.35,46.62|Z|2022|N|From Ayasanth.|RANK|3|
+C The Shadow of His Wings|QID|65691|QO|1|M|35.59,47.95|Z|2022|N|Go into the cave, most of the mobs are "orange" (neutral) and will clear out. Kill the hostiles and go stand by Cygenoth.|
+K Cygenoth|ACTIVE|65691|QO|2|M|35.03,45.44|Z|2022|N|Kill Cygenoth the Corrupted.|T|Cygenoth|
+T The Shadow of His Wings|QID|65691|M|39.56,48.40|Z|2022|N|To Ayasanth.|
+
 C Talon Strike|QID|65956|M|36.73,63.14|Z|2022|N|Disrupt the Djaradin defenses. Extra action button will summon helpers.|EAB|S|
 C No Time for Heroes|QID|65957|M|35.53,68.52|Z|2022|QO|1|N|Slay Piercer Gigra on the top of the tower. Watch out for the orange circle on the ground. It will knock you off the tower.|T|Piercer Gigra|
 C No Time for Heroes|QID|65957|M|34.82,66.91|Z|2022|QO|3|N|Slay Olphis the Molten.|T|Olphis the Molten|
@@ -564,8 +573,8 @@ A A Charge of Care|QID|65794|PRE|65791|M|62.35,73.02|Z|2022|N|From Alexstrasza t
 C A Charge of Care|QID|65794|M|62.35,73.02|Z|2022|CHAT|N|Watch the cutscene as the Ruby Oathstone becomes empowered.|
 T A Charge of Care|QID|65794|M|61.57,68.54|Z|2022|N|To Alexstrasza the Life-Binder.|
 A Next Steppes|QID|65795|PRE|65794|M|61.57,68.54|Z|2022|N|From Alexstrasza the Life-Binder.|LEAD|72267|
-F Dragonscale Basecamp|ACTIVE|65795^72267|M|48.27,88.67|Z|2022|N|Fly, either on your own or by flightpath to Dragonscale Basecamp.|
-R Rubyscale Outpost|ACTIVE|65795^72267|M|48.27,88.67|Z|2022|N|Exit town on the west side and follow the road generally north to meet Ambassador Taurasza at Rubyscale Outpost.|
+F Dragonscale Basecamp|ACTIVE|65795^72267|M|57.81,68.13|Z|2022|N|Take the flightpath to Dragonscale Basecamp. Skip this step if you wish to use your Dragon to fly directly to Rubyscale Outpost.|;Needs a FLY DF once its been implemented.
+R Rubyscale Outpost|ACTIVE|65795^72267|M|48.27,88.67|Z|2022|N|Exit to the east and follow the road generally south to meet Ambassador Taurasza at Rubyscale Outpost.|
 
 N Adventure Mode|AVAILABLE|72268^72269|PRE|72266|S!US|N|If you want to go on to Ohn'ahran Plains next, fly to meet Ambassador Taurasza, If you want to choose a different zone, manually check off the next two steps and return to Wingrest Embassy and the scouting map.|
 F Dragonscale Basecamp|ACTIVE|65794|PRE|72266|M|57.50,68.13|Z|2022|N|At Vaknai.|

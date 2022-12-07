@@ -8,8 +8,8 @@ HandyNotes_DarkSoilDB = {
 		["Shanyt - Argent Dawn"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
 		["Galvarton - Dalaran"] = "Default",
-		["Bathal - Argent Dawn"] = "Default",
 		["Neltharigos - Zul'jin"] = "Default",
+		["Bathal - Argent Dawn"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
