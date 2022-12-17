@@ -16,36 +16,36 @@ ActionBarProfilesDBv3 = {
 		["Durlok - Black Dragonflight"] = "DRUID",
 		["Dachas - Zul'jin"] = "HUNTER",
 		["Bathal - Argent Dawn"] = "DEATHKNIGHT",
-		["Neltharigos - Zul'jin"] = "EVOKER",
+		["Banesmuncy - Zul'jin"] = "ROGUE",
 		["Jingojaggot - Argent Dawn"] = "PRIEST",
-		["Tendralas - Dalaran"] = "PRIEST",
+		["Illingrath - Dalaran"] = "DEMONHUNTER",
 		["Tyranasticus - Zul'jin"] = "DEMONHUNTER",
-		["Shimzo - Zul'jin"] = "ROGUE",
+		["Galvarton - Dalaran"] = "DRUID",
 		["Brotus - Argent Dawn"] = "SHAMAN",
-		["Tinkster - Dalaran"] = "WARLOCK",
+		["Jingojaggot - Zul'jin"] = "DEATHKNIGHT",
 		["Tyrannithal - Argent Dawn"] = "DEMONHUNTER",
 		["Zulbathal - Zul'jin"] = "DRUID",
 		["Kelvalatar - Dalaran"] = "SHAMAN",
-		["Jingojaggot - Zul'jin"] = "DEATHKNIGHT",
-		["Alatra - Zul'jin"] = "HUNTER",
-		["Varlouris - Dalaran"] = "SHAMAN",
-		["Datgore - Zul'jin"] = "HUNTER",
+		["Shimzo - Zul'jin"] = "ROGUE",
 		["Okona - Zul'jin"] = "PRIEST",
-		["Guufnah - Zul'jin"] = "SHAMAN",
-		["Fantastiburo - Zul'jin"] = "SHAMAN",
-		["Kotalkhan - Zul'jin"] = "MONK",
-		["Laymonan - Zul'jin"] = "WARLOCK",
-		["Shanyt - Argent Dawn"] = "WARRIOR",
-		["Vadder - Argent Dawn"] = "ROGUE",
-		["Serbitechna - Dalaran"] = "HUNTER",
+		["Varlouris - Dalaran"] = "SHAMAN",
 		["Tyran - Argent Dawn"] = "MAGE",
+		["Tinkster - Dalaran"] = "WARLOCK",
+		["Serbitechna - Dalaran"] = "HUNTER",
+		["Fantastiburo - Zul'jin"] = "SHAMAN",
+		["Shanyt - Argent Dawn"] = "WARRIOR",
+		["Laymonan - Zul'jin"] = "WARLOCK",
+		["Kotalkhan - Zul'jin"] = "MONK",
+		["Vadder - Argent Dawn"] = "ROGUE",
+		["Guufnah - Zul'jin"] = "SHAMAN",
+		["Datgore - Zul'jin"] = "HUNTER",
 		["Darnastris - Dalaran"] = "MAGE",
 		["Rotclaugh - Dalaran"] = "DEATHKNIGHT",
-		["Galvarton - Dalaran"] = "DRUID",
+		["Alatra - Zul'jin"] = "HUNTER",
 		["Abyronterner - Zul'jin"] = "MONK",
-		["Illingrath - Dalaran"] = "DEMONHUNTER",
+		["Tendralas - Dalaran"] = "PRIEST",
 		["Jasmoney - Zul'jin"] = "MAGE",
-		["Banesmuncy - Zul'jin"] = "ROGUE",
+		["Neltharigos - Zul'jin"] = "EVOKER",
 		["Mandles - Zul'jin"] = "PRIEST",
 	},
 	["profiles"] = {
@@ -59,9 +59,9 @@ ActionBarProfilesDBv3 = {
 		},
 		["PRIEST"] = {
 		},
-		["DEATHKNIGHT"] = {
+		["SHAMAN"] = {
 		},
-		["EVOKER"] = {
+		["MONK"] = {
 		},
 		["WARLOCK"] = {
 		},
@@ -71,9 +71,9 @@ ActionBarProfilesDBv3 = {
 		},
 		["DRUID"] = {
 		},
-		["MONK"] = {
+		["EVOKER"] = {
 		},
-		["SHAMAN"] = {
+		["DEATHKNIGHT"] = {
 		},
 	},
 }

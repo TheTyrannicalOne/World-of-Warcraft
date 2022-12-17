@@ -1,12 +1,13 @@
 local myname, ns = ...
 
-local MAPID = ns.OHNAHRANPLAINS -- Ohn'ahran Plains
-
 -- forgotten dragon treasure: 53246888
 
 -- Aylaag camp SE: areaPoi 7101
+-- Aylaag camp NE: areaPoi 7102
 
-ns.RegisterPoints(MAPID, {
+-- Aylaag caravan: vignette 5453, rewards caravan strongbox 200094, no quest completion
+
+ns.RegisterPoints(ns.OHNAHRANPLAINS, {
     -- https://www.wowhead.com/beta/achievement=16299/treasures-of-the-ohnahran-plains
     [32413815] = { -- Nokhud Warspear
         criteria=54707,
@@ -68,11 +69,12 @@ ns.RegisterPoints(MAPID, {
     achievement=16299, -- Treasures
     minimap=true,
 })
-ns.RegisterPoints(MAPID, {
+ns.RegisterPoints(ns.OHNAHRANPLAINS, {
     [56017879] = {
         quest=71033,
         label="Water-Bound Chest",
         loot={
+            197948, -- Stone Sentinel's Greatsword
             197955, -- Sword of the Eternal Guard
         },
         note="Survive the trial of the elements",
@@ -92,10 +94,17 @@ ns.RegisterPoints(MAPID, {
         minimap=true,
         path=81657175,
     },
+    [52043344] = { -- Khadin
+        npc=193110,
+        hide_before=ns.conditions.QuestComplete(69979), -- A worthy hunt
+        note="Trade {item:191784:Dragon Shard of Knowledge} for Profession Knowledge",
+        atlas="profession", minimap=true,
+        group="professionknowledge",
+    },
 })
 
 -- Divine Kiss of Ohn'ahra mount:
-ns.RegisterPoints(MAPID, {
+ns.RegisterPoints(ns.OHNAHRANPLAINS, {
     [57593192] = { -- Ohn'ahra
         npc=194796,
         quest=72512, -- A Whispering Breeze
@@ -125,17 +134,17 @@ ns.RegisterPoints(MAPID, {
 -- Lizi's Reins mount:
 -- https://www.wowhead.com/beta/item=192799/lizis-reins#comments:id=5443480
 -- (It's the Patient Bufonid again)
-ns.RegisterPoints(MAPID, {
+ns.RegisterPoints(ns.OHNAHRANPLAINS, {
     [56127701] = {
         npc=190014, -- Initiate Radiya
-        quest=71195, --todo: generic-daily?
+        quest={71195, 71203, any=true}, -- 71203 is the daily
         progress={71196, 71197, 71198, 71199, 71195},
         loot={
             {192799, mount=1639}, -- Lizi's Reins
         },
         hide_before=ns.conditions.QuestComplete(66676), -- Sneaking In
-        active=ns.conditions.MajorFaction(2503, 9), -- Maruuk rank 9
-        atlas="stablemaster", minimap=true,
+        active={ns.conditions.MajorFaction(2503, 9), ns.conditions.Level(70)}, -- Maruuk rank 9
+        texture=ns.atlas_texture("stablemaster", {r=0, g=0.5, b=1}), scale=1.2, minimap=true,
         note=function()
             local function q(quest, label)
                 return (C_QuestLog.IsQuestFlaggedCompleted(quest) and GREEN_FONT_COLOR or RED_FONT_COLOR):WrapTextInColorCode(label)
@@ -144,7 +153,7 @@ ns.RegisterPoints(MAPID, {
                 q(71196, "Day 1") ..": 20x {item:192615} from insects\n"..
                 q(71197, "Day 2") ..": 20x {item:192658} from plant mobs\n"..
                 q(71198, "Day 3") ..": 10x {item:194966} from fishing\n"..
-                q(71199, "Day 4") ..": 10x {item:192636} from animals\n"..
+                q(71199, "Day 4") ..": 20x {item:192636} from animals\n"..
                 q(71195, "Day 5") ..": 1x {item:200598} from {npc:190015:Ohn Meluun}"
         end,
         related={
@@ -163,23 +172,33 @@ ns.RegisterPoints(MAPID, {
 })
 
 -- Honor Our Ancestors
-local ancestor = ns.nodeMaker{
-    achievement=16423,
-    requires=ns.conditions.AuraActive(369277), -- Essence of Awakening
-    atlas="poi-soulspiritghost",
-}
-ns.RegisterPoints(MAPID, {
+local ancestor = function(details)
+    return ns.merge({
+        label=function(self)
+            self.label = ("{achievement:%d.%d}"):format(self.achievement, self.criteria)
+            return self.label
+        end,
+        achievement=16423,
+        requires=ns.conditions.AuraActive(369277), -- Essence of Awakening
+        atlas="poi-soulspiritghost",
+        minimap=true,
+    }, details)
+end
+ns.RegisterPoints(ns.OHNAHRANPLAINS, {
     [85662085] = {
+        achievement=16423,
         label="{spell:369277:Essence of Awakening}",
         spell=369277,
         loot={
             {200630, toy=true}, -- Ohn'ir Windsage's Hearthstone
         },
-        note="Get the buff, then go talk to the ghosts. They will want stuff...",
+        note="Get the buff from a small purple pile of dust in the hut, then go talk to the ghosts. They will want stuff...",
         hide_before=ns.conditions.MajorFaction(ns.FACTION_MARUUK, 7),
+        texture=ns.atlas_texture("poi-soulspiritghost", {r=1, g=0, b=0.8}),
+        minimap=true,
         related={
             [59703765] = ancestor{criteria=55302, quest=71167, active=ns.conditions.Item(197776)}, -- Maruukai Ancestor, Thrice-Spiced Mammoth Kabob (Cooking)
-            [84902343] = ancestor{criteria=55303, quest=71168, active=ns.conditions.Item(200018)}, -- Timberstep Outpost Ancestor, Enchant Boots - Plainsrunner's Breeze (Enchanting)
+            [84902343] = ancestor{criteria=55303, quest=71168, active={ns.conditions.Item(199934), ns.conditions.Item(199976), ns.conditions.Item(200018), any=true}}, -- Timberstep Outpost Ancestor, Enchant Boots - Plainsrunner's Breeze (Enchanting)
             [75914208] = ancestor{criteria=55304, quest=71169, active=ns.conditions.Item(194690)}, -- Horn of Drusahl Ancestor, Horn o' Mead
             [73005500] = ancestor{criteria=55305, quest=71170, active=ns.conditions.Item(202070)}, -- Toghusuq Village Ancestor, Exceptional Pelt
             [84554842] = ancestor{criteria=55306, quest=71171, active=ns.conditions.Item(193470)}, -- Shikaar Highlands Ancestor, Feral Hide Drums (Leatherworking?)
@@ -190,20 +209,27 @@ ns.RegisterPoints(MAPID, {
             [32757029] = ancestor{criteria=55311, quest=71176, active=ns.conditions.Item(191470, 5)}, -- The Eternal Kurgans Ancestor, 5x Writhebark (Herbalism)
         },
     },
-}, {
-    achievement=16423,
 })
 
 -- Rares
-ns.RegisterPoints(MAPID, {
+ns.RegisterPoints(ns.OHNAHRANPLAINS, {
     -- https://www.wowhead.com/beta/achievement=16677/adventurer-of-the-ohnahran-plains
     [20403800] = { -- Sparkspitter Vrak
         criteria=56062,
-        quest=nil,
+        quest=73896,
         npc=193165,
         loot={
-            {196999, quest=69199}, -- Cliffside Wylderdrake: Swept Horns
+            {196999,quest=69199,}, -- Cliffside Wylderdrake: Swept Horns
+            {197116,quest=69317,}, -- Highland Drake: Ears
+            {197372,quest=69573,}, -- Renewed Proto-Drake: Purple Hair
+            {197383,quest=69584,}, -- Renewed Proto-Drake: Heavy Horns
+            {200198,toy=true,}, -- Primalist Prison
             200234, -- Vrak's Embossed Aegis
+            200294, -- Primal Chain Hauberk
+            200297, -- Hastily Cobbled Maul
+            200313, -- Earthen Protoscale Drape
+            200563, -- Primal Ritual Shell
+            200689, -- Rimetalon Band
         },
     },
     [50027484] = { -- Scav Notail
@@ -211,7 +237,10 @@ ns.RegisterPoints(MAPID, {
         quest=69863,
         npc=193136,
         loot={
+            {196982,quest=69182,}, -- Cliffside Wylderdrake: Ears
+            {197150,quest=69351,}, -- Highland Drake: Spiked Club Tail
             200168, -- Gnoll Hide Belt
+            200283, -- Gnoll-Gnawed Breeches
         },
         vignette=5187,
     },
@@ -220,7 +249,13 @@ ns.RegisterPoints(MAPID, {
         quest=69840,
         npc=193142,
         loot={
+            {196991,quest=69191,}, -- Cliffside Wylderdrake: Black Horns
+            {197624,quest=69828,}, -- Windborne Velocidrake: Club Tail
+            198973, -- Incandescent Curio
+            200244, -- Enchanted Muckstompers
+            200246, -- Lost Delving Lamp
             200309, -- Rock Encrusted Chestguard
+            200683, -- Legguards of the Deep Strata
         },
         vignette=5173,
     },
@@ -229,12 +264,13 @@ ns.RegisterPoints(MAPID, {
         quest=nil,
         npc=193188,
         loot={
-            {196970, quest=69170}, -- Cliffside Wylderdrake: Spiked Back
-            {197105, quest=69306}, -- Highland Drake: Spined Chin
-            {197586, quest=69790}, -- Windborne Velocidrake: Spiked Back
-            {197138, quest=69339}, -- Highland Drake: Striped Pattern
-            200875, -- Seeker's Bands
+            {196970,quest=69170,}, -- Cliffside Wylderdrake: Spiked Back
+            {197105,quest=69306,}, -- Highland Drake: Spined Chin
+            {197138,quest=69339,}, -- Highland Drake: Striped Pattern
+            {197586,quest=69790,}, -- Windborne Velocidrake: Spiked Back
+            198974, -- Elegantly Engraved Embellishment
             200758, -- Breastplate of Storied Antiquity
+            200875, -- Seeker's Bands
         },
     },
     [31646421] = { -- Zenet Avis
@@ -244,6 +280,23 @@ ns.RegisterPoints(MAPID, {
         loot={
             {200879, note="Hatches into..."}, -- Zenet Egg
             {198825, mount=1672}, -- Zenet Hatchling
+            {196976,quest=69176,}, -- Cliffside Wylderdrake: Head Mane
+            {197111,quest=69312,}, -- Highland Drake: Maned Head
+            {197372,quest=69573,}, -- Renewed Proto-Drake: Purple Hair
+            {197606,quest=69810,}, -- Windborne Velocidrake: Swept Horns
+            200131, -- Reclaimed Survivalist's Dagger
+            200172, -- Zephyrdance Signet
+            200174, -- Bonesigil Shoulderguards
+            200193, -- Manafrond Sandals
+            200195, -- Thunderscale Legguards
+            200232, -- Raptor Talonglaive
+            {200249,toy=true,}, -- Mage's Chewed Wand
+            200306, -- Tempest Shawl
+            200314, -- Skyspeaker's Envelope
+            200442, -- Basilisk Hide Jerkin
+            200445, -- Lucky Hunting Charm
+            200563, -- Primal Ritual Shell
+            200859, -- Seasoned Hunter's Trophy
         },
         note="Flying",
     },
@@ -252,10 +305,23 @@ ns.RegisterPoints(MAPID, {
         quest=nil,
         npc=197009,
         loot={
-            {197106, quest=69307}, -- Highland Drake: Finned Head
-            {197400, quest=69601}, -- Renewed Proto-Drake: Shark Snout
+            {196976,quest=69176,}, -- Cliffside Wylderdrake: Head Mane
+            {197106,quest=69307,}, -- Highland Drake: Finned Head
+            {197111,quest=69312,}, -- Highland Drake: Maned Head
+            {197400,quest=69601,}, -- Renewed Proto-Drake: Shark Snout
+            198976, -- Exceedingly Soft Skin
+            200131, -- Reclaimed Survivalist's Dagger
+            200174, -- Bonesigil Shoulderguards
+            200193, -- Manafrond Sandals
+            200195, -- Thunderscale Legguards
+            200232, -- Raptor Talonglaive
+            {200249,toy=true,}, -- Mage's Chewed Wand
             200434, -- Anund's Mana-Singed Amice
+            200442, -- Basilisk Hide Jerkin
+            200445, -- Lucky Hunting Charm
             200446, -- Crystalized Sigil
+            200563, -- Primal Ritual Shell
+            200859, -- Seasoned Hunter's Trophy
         },
     },
     [29426783] = { -- Deadwaker Ghendish
@@ -264,44 +330,63 @@ ns.RegisterPoints(MAPID, {
         npc=189652,
         loot={
             189055, -- Ghendish's Backup Talisman
+            {197367,quest=69568,}, -- Renewed Proto-Drake: Gray Hair
+            200308, -- Rellen's Legacy
+            200859, -- Seasoned Hunter's Trophy
         },
     },
-    --[[
-    [] = { -- Researcher Sneakwing
+    [37005400] = { -- Researcher Sneakwing
         criteria=56069,
         quest=70689,
         npc=196010,
-        loot={},
+        loot={
+            {196992,quest=69192,}, -- Cliffside Wylderdrake: Heavy Horns
+            {197403,quest=69604,}, -- Renewed Proto-Drake: Club Tail
+            200165, -- Aegis of Scales
+        },
         vignette=5378,
         -- hide_before=ns.MAXLEVEL, -- TODO
     },
-    --]]
     [62987932] = { -- Mikrin of the Raging Winds
         criteria=56070,
         quest=69857,
         npc=193173,
         loot={
+            {197602,quest=69806,}, -- Windborne Velocidrake: Cluster Horns
+            {197606,quest=69810,}, -- Windborne Velocidrake: Swept Horns
             200542, -- Breezy Companion
+            200563, -- Primal Ritual Shell
         },
         vignette=5183,
         -- hide_before=ns.MAXLEVEL, -- TODO
     },
-    --[[
-    [] = { -- Ronsak the Decimator
+    [43805560] = { -- Ronsak the Decimator
         criteria=56071,
         quest=69878,
         npc=193227,
-        loot={},
+        loot={
+            {197016,quest=69216,}, -- Cliffside Wylderdrake: Maned Tail
+            {197367,quest=69568,}, -- Renewed Proto-Drake: Gray Hair
+            200308, -- Rellen's Legacy
+            200441, -- Jhakan's Horned Cowl
+            200859, -- Seasoned Hunter's Trophy
+        },
         vignette=5205,
         -- hide_before=ns.MAXLEVEL, -- TODO
     },
-    --]]
     [53627281] = { -- Steamgill
         criteria=56072,
         quest=69667,
         npc=193123,
         loot={
+            {196976,quest=69176,}, -- Cliffside Wylderdrake: Head Mane
+            200131, -- Reclaimed Survivalist's Dagger
+            200174, -- Bonesigil Shoulderguards
             200216, -- Water Heating Cord
+            200232, -- Raptor Talonglaive
+            {200249,toy=true,}, -- Mage's Chewed Wand
+            200859, -- Seasoned Hunter's Trophy
+            200942, -- Vibrant Emulsion
         },
         vignette=5168,
         -- hide_before=ns.MAXLEVEL, -- TODO
@@ -311,6 +396,9 @@ ns.RegisterPoints(MAPID, {
         quest=69871,
         npc=193212,
         loot={
+            200174, -- Bonesigil Shoulderguards
+            200186, -- Amberquill Shroud
+            200193, -- Manafrond Sandals
             200197, -- Armoredon Herding Crook
         },
         vignette=5195,
@@ -320,7 +408,11 @@ ns.RegisterPoints(MAPID, {
         criteria=56074,
         quest=69877,
         npc=193235,
-        loot={},
+        loot={
+            {197149,quest=69350,}, -- Highland Drake: Club Tail
+            {197608,quest=69812,}, -- Windborne Velocidrake: Gray Horns
+            200684, -- Emerald Tailbone
+        },
         note="Patrols",
         vignette=5199,
         -- hide_before=ns.MAXLEVEL, -- TODO
@@ -330,17 +422,25 @@ ns.RegisterPoints(MAPID, {
         quest=69856,
         npc=193170,
         loot={
+            200193, -- Manafrond Sandals
+            {200249,toy=true,}, -- Mage's Chewed Wand
             200433, -- Footwraps of Subjugation
+            200563, -- Primal Ritual Shell
         },
         vignette=5182,
         -- hide_before=ns.MAXLEVEL, -- TODO
     },
     [58596822] = { -- Windseeker Avash
         criteria=56076,
-        quest=nil,
+        quest=74088,
         npc=192045,
         loot={
+            {197016,quest=69216,}, -- Cliffside Wylderdrake: Maned Tail
+            {197367,quest=69568,}, -- Renewed Proto-Drake: Gray Hair
             200141, -- Wind Generating Band
+            200308, -- Rellen's Legacy
+            200441, -- Jhakan's Horned Cowl
+            200859, -- Seasoned Hunter's Trophy
         },
     },
     [49496663] = { -- Eaglemaster Niraak
@@ -348,8 +448,11 @@ ns.RegisterPoints(MAPID, {
         quest=74063,
         npc=192020,
         loot={
+            {197016,quest=69216,}, -- Cliffside Wylderdrake: Maned Tail
+            {197367,quest=69568,}, -- Renewed Proto-Drake: Gray Hair
+            200308, -- Rellen's Legacy
             200536, -- Tamed Eagle
-            {197367, quest=69568}, -- Renewed Proto-Drake: Gray Hair
+            200859, -- Seasoned Hunter's Trophy
         },
         vignette=5138,
     },
@@ -358,7 +461,13 @@ ns.RegisterPoints(MAPID, {
         quest=72364, -- 74091
         npc=193140,
         loot={
-            200193, -- Manafrond Sandals
+            200131, -- Reclaimed Survivalist's Dagger
+            200215, -- Plumed Shoulderguards of the Hunt
+            200232, -- Raptor Talonglaive
+            {200249,toy=true,}, -- Mage's Chewed Wand
+            200442, -- Basilisk Hide Jerkin
+            200563, -- Primal Ritual Shell
+            200859, -- Seasoned Hunter's Trophy
         },
         vignette=5469,
     },
@@ -367,6 +476,7 @@ ns.RegisterPoints(MAPID, {
         quest=74073, -- 69865?
         npc=193215,
         loot={
+            200735, -- Magically Magical Faerie Flower
             200293, -- Primal Scion's Twinblade
         },
         vignette=5190,
@@ -376,19 +486,18 @@ ns.RegisterPoints(MAPID, {
     },
     [29554146] = { -- Shade of Grief
         criteria=56080,
-        quest=nil, -- ...no quest changed
+        quest=74075,
         npc=187559,
         loot={
-            {196985, quest=69185}, -- Cliffside Wylderdrake: Horned Jaw
-            {197382, quest=69583}, -- Renewed Proto-Drake: White Horns
-            {196996, quest=69196}, -- Cliffside Wylderdrake: Branched Horns
-            {197115, quest=69316}, -- Highland Drake: Thorned Jaw
+            {196985,quest=69185,}, -- Cliffside Wylderdrake: Horned Jaw
+            {196996,quest=69196,}, -- Cliffside Wylderdrake: Branched Horns
+            {197115,quest=69316,}, -- Highland Drake: Thorned Jaw
+            {197382,quest=69583,}, -- Renewed Proto-Drake: White Horns
+            200158, -- Eerie Spectral Ring
+            200256, -- Darkmaul Soul Horn
+            200310, -- Stole of the Iron Phantom
             200437, -- Dreamsong Censer
             200444, -- Mantle of the Gatekeeper
-            -- these might all be generic undead-drops:
-            200256, -- Darkmaul Soul Horn
-            200158, -- Eerie Spectral Ring
-            200310, -- Stole of the Iron Phantom
         },
         vignette=5181, -- Solethus' Gravestone
     },
@@ -416,14 +525,15 @@ ns.RegisterPoints(MAPID, {
     },
     [80413867] = { -- Irontree
         criteria=56084,
-        quest=66356,
+        quest=73967, -- 66356
         npc=188124,
         loot={},
         vignette=5078,
+        path=79383649,
     },
     [72222321] = { -- Zerimek
         criteria=56085,
-        quest=nil,
+        quest=73980,
         npc=188451,
         loot={},
         vignette=5087,
@@ -455,7 +565,9 @@ ns.RegisterPoints(MAPID, {
         criteria=56089,
         quest=nil,
         npc=192364,
-        loot={},
+        loot={
+            198970, -- Infinitely Attachable Pair o' Docks
+        },
         vignette=5140,
     },
     [83786215] = { -- Vaniik the Stormtouched
@@ -465,22 +577,13 @@ ns.RegisterPoints(MAPID, {
         loot={},
         vignette=5143, -- Vaniik the Corrupted
     },
-    --[[
-    [] = { -- Quackers the Terrible
-        criteria=56091,
-        quest=nil,
-        npc=192557,
-        loot={},
-        vignette=5144,
-    },
-    [] = { -- Cinta the Forgotten
+    [31607660] = { -- Cinta the Forgotten
         criteria=56092,
         quest=nil,
         npc=195186,
         loot={},
         vignette=5351,
     },
-    --]]
     [42804428] = { -- Rustlily
         criteria=56093,
         quest=nil,
@@ -495,13 +598,23 @@ ns.RegisterPoints(MAPID, {
         vignette=5365,
     },
     --[[
+    [] = { -- Quackers the Terrible
+        -- Spawns during the Aylaag Caravan escort from Eaglewatch Outpost to Aylaag Outpost
+        criteria=56091,
+        quest=nil,
+        npc=192557,
+        loot={},
+        vignette=5144,
+    },
     [] = { -- The Great Enla
+        -- Spawns during the Aylaag Caravan escort from Eaglewatch Outpost to Aylaag Outpost
         criteria=56095,
         quest=nil,
         npc=196334,
         loot={},
     },
     [] = { -- Old Stormhide
+        -- Spawns during the Aylaag Caravan escort from Eaglewatch Outpost to Aylaag Outpost
         criteria=56096,
         quest=nil,
         npc=196350,
@@ -511,7 +624,7 @@ ns.RegisterPoints(MAPID, {
 }, {
     achievement=16677, -- Adventurer
 })
-ns.RegisterPoints(MAPID, {
+ns.RegisterPoints(ns.OHNAHRANPLAINS, {
     [81447834] = { -- Seereel, the Spring
         -- TODO: find the spawn point in Azure Span, which presumably exists?
         achievement=16678, -- Adventurer of the *Azure Span*
@@ -519,7 +632,15 @@ ns.RegisterPoints(MAPID, {
         quest=nil,
         npc=193710,
         loot={
+            {197001,quest=69201,}, -- Cliffside Wylderdrake: Finned Cheek
+            {197098,quest=69299,}, -- Highland Drake: Finned Back
+            198964, -- Elementious Splinter
             200086, -- Khaz'gorite-infused Resin
+            200164, -- Iceloop
+            200187, -- Rod of Glacial Force
+            200245, -- Leviathan Lure
+            200552, -- Torrent Caller's Shell
+            200563, -- Primal Ritual Shell
         },
         note="Throw 5x {item:194701:Ominous Conch} into a Lurker Sighting to summon",
     },
@@ -534,8 +655,22 @@ ns.RegisterPoints(MAPID, {
         quest=72815, -- 69968 also
         npc=193669,
         loot={
-            {197383, quest=69584}, -- Renewed Proto-Drake: Heavy Horns
+            {197372,quest=69573,}, -- Renewed Proto-Drake: Purple Hair
+            {197383,quest=69584,}, -- Renewed Proto-Drake: Heavy Horns
+            {197602,quest=69806,}, -- Windborne Velocidrake: Cluster Horns
+            {197606,quest=69810,}, -- Windborne Velocidrake: Swept Horns
             200134, -- Ohuna Mass-Binding Totem
+            200172, -- Zephyrdance Signet
+            {200198,toy=true,}, -- Primalist Prison
+            200199, -- Elements' Burden
+            200292, -- Cragforge Pauldrons
+            200293, -- Primal Scion's Twinblade
+            200294, -- Primal Chain Hauberk
+            200306, -- Tempest Shawl
+            200313, -- Earthen Protoscale Drape
+            200314, -- Skyspeaker's Envelope
+            200439, -- Earthpact Scepter
+            200563, -- Primal Ritual Shell
         },
         vignette=5240,
     },
@@ -543,10 +678,19 @@ ns.RegisterPoints(MAPID, {
         quest=70783, -- 72847 also
         npc=192949,
         loot={
+            {196976,quest=69176,}, -- Cliffside Wylderdrake: Head Mane
+            {197111,quest=69312,}, -- Highland Drake: Maned Head
+            200131, -- Reclaimed Survivalist's Dagger
+            200174, -- Bonesigil Shoulderguards
+            200186, -- Amberquill Shroud
+            200193, -- Manafrond Sandals
+            200195, -- Thunderscale Legguards
+            200232, -- Raptor Talonglaive
+            {200249,toy=true,}, -- Mage's Chewed Wand
             200442, -- Basilisk Hide Jerkin
-            198411, -- Claw of Preparedness
-            {200249, toy=true}, -- Mage's Chewed Wand
-            {196976, quest=69176}, -- Cliffside Wylderdrake: Head Mane
+            200445, -- Lucky Hunting Charm
+            200563, -- Primal Ritual Shell
+            200859, -- Seasoned Hunter's Trophy
         },
         note="In cave",
         vignette=5389,
@@ -555,8 +699,17 @@ ns.RegisterPoints(MAPID, {
         quest=69851, -- also 72845
         npc=193153,
         loot={
+            {196976,quest=69176,}, -- Cliffside Wylderdrake: Head Mane
+            {197111,quest=69312,}, -- Highland Drake: Maned Head
+            200131, -- Reclaimed Survivalist's Dagger
             200137, -- Chitin Dreadbringer
+            200174, -- Bonesigil Shoulderguards
             200186, -- Amberquill Shroud
+            200195, -- Thunderscale Legguards
+            200232, -- Raptor Talonglaive
+            {200249,toy=true,}, -- Mage's Chewed Wand
+            200442, -- Basilisk Hide Jerkin
+            200445, -- Lucky Hunting Charm
         },
         vignette=5178,
     },
@@ -564,8 +717,19 @@ ns.RegisterPoints(MAPID, {
         quest=69852, -- also 72851
         npc=193163,
         loot={
+            {196976,quest=69176,}, -- Cliffside Wylderdrake: Head Mane
+            {197111,quest=69312,}, -- Highland Drake: Maned Head
+            200131, -- Reclaimed Survivalist's Dagger
+            200174, -- Bonesigil Shoulderguards
+            200186, -- Amberquill Shroud
+            200193, -- Manafrond Sandals
             200212, -- Sand-Encrusted Greaves
+            200232, -- Raptor Talonglaive
+            {200249,toy=true,}, -- Mage's Chewed Wand
             200442, -- Basilisk Hide Jerkin
+            200445, -- Lucky Hunting Charm
+            200563, -- Primal Ritual Shell
+            200859, -- Seasoned Hunter's Trophy
         },
         vignette=5179,
     },
@@ -573,7 +737,14 @@ ns.RegisterPoints(MAPID, {
         quest=66970, -- also 72852
         npc=191354,
         loot={
+            {197372,quest=69573,}, -- Renewed Proto-Drake: Purple Hair
+            {197383,quest=69584,}, -- Renewed Proto-Drake: Heavy Horns
+            {197602,quest=69806,}, -- Windborne Velocidrake: Cluster Horns
+            {197606,quest=69810,}, -- Windborne Velocidrake: Swept Horns
             198429, -- Typhoon Bringer
+            {200198,toy=true,}, -- Primalist Prison
+            200314, -- Skyspeaker's Envelope
+            200563, -- Primal Ritual Shell
         },
         path=24503340,
         vignette=5131,
@@ -587,14 +758,48 @@ ns.RegisterPoints(MAPID, {
         quest=69837, -- 72849
         npc=193133,
         loot={
-            {198409, toy=true}, -- Personal Shell
+            {196976,quest=69176,}, -- Cliffside Wylderdrake: Head Mane
+            {197111,quest=69312,}, -- Highland Drake: Maned Head
+            {198409,toy=true,}, -- Personal Shell
+            200195, -- Thunderscale Legguards
+            {200249,toy=true,}, -- Mage's Chewed Wand
         },
         note="Behind the waterfall",
+    },
+    [43205060] = { -- Web-Queen Ashkaz
+        -- [43205060, 43405040]
+        quest=nil,
+        npc=192983,
+        loot={
+            {196976,quest=69176,}, -- Cliffside Wylderdrake: Head Mane
+            {197111,quest=69312,}, -- Highland Drake: Maned Head
+            200131, -- Reclaimed Survivalist's Dagger
+            200174, -- Bonesigil Shoulderguards
+            200193, -- Manafrond Sandals
+            200195, -- Thunderscale Legguards
+            200232, -- Raptor Talonglaive
+            {200249,toy=true,}, -- Mage's Chewed Wand
+            200563, -- Primal Ritual Shell
+            200859, -- Seasoned Hunter's Trophy
+        },
+        path=43004800, -- TODO: improve this
+    },
+    [82007600] = { -- Strunraan
+        quest=69929,
+        worldquest=69929,
+        npc=193534,
+        loot={
+            200676, -- Static-Charged Scale
+            200687, -- Stormshale Cuffs
+            200688, -- Tights of Twisting Winds
+            200733, -- Storm Chaser's Waistguard
+            200734, -- Striders of the Sky's Misery
+        },
     },
 })
 
 -- Who's a Good Bakar?
-ns.RegisterPoints(MAPID, {
+ns.RegisterPoints(ns.OHNAHRANPLAINS, {
     [40915658] = { -- Alli
         criteria=55348,
         npc=197569,
@@ -698,7 +903,7 @@ ns.RegisterPoints(MAPID, {
     -- icon=930453, -- Inv_stbernarddogpet
 })
 -- Hugo
-ns.RegisterPoints(MAPID, {
+ns.RegisterPoints(ns.OHNAHRANPLAINS, {
     [55605240] = {},
     [70636364] = {},
     [71193156] = {},
@@ -713,7 +918,7 @@ ns.RegisterPoints(MAPID, {
 })
 
 -- Sleeping on the Job
-ns.RegisterPoints(MAPID, {
+ns.RegisterPoints(ns.OHNAHRANPLAINS, {
     [33515321] = {criteria=55776, npc=198064,}, -- Dreamguard Felyasra
     [29876222] = {criteria=55777, npc=198068, path=29696022}, -- Dreamguard Erezsra
     [25296540] = {criteria=55778, npc=198069,}, -- Dreamguard Sayliasra

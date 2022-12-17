@@ -30,6 +30,7 @@ function mod:OnBossEnable()
 	self:Log("SPELL_CAST_START", "AstralBreath", 374361)
 	self:Log("SPELL_CAST_START", "PowerVacuum", 388822)
 	self:Log("SPELL_AURA_APPLIED", "EnergyBombApplied", 374350)
+	self:Log("SPELL_AURA_REMOVED", "EnergyBombRemoved", 374350)
 end
 
 function mod:OnEngage()
@@ -44,8 +45,8 @@ end
 
 function mod:OverwhelmingPowerApplied(args)
 	if self:Me(args.destGUID) then
-		-- aura removed at 4 stacks, spawning an Arcane Rift
-		self:StackMessage(args.spellId, "blue", args.destName, args.amount, 3)
+		-- aura removed at 3 stacks, spawning an Arcane Rift
+		self:StackMessage(args.spellId, "blue", args.destName, args.amount, 2)
 		self:PlaySound(args.spellId, "alert")
 	end
 end
@@ -83,5 +84,11 @@ function mod:EnergyBombApplied(args)
 	if self:Me(args.destGUID) then
 		self:Say(374352)
 		self:SayCountdown(374352, 6)
+	end
+end
+
+function mod:EnergyBombRemoved(args)
+	if self:Me(args.destGUID) then
+		self:CancelSayCountdown(374352)
 	end
 end

@@ -58,13 +58,13 @@ HHTD_SavedVariables = {
 		["Tyranasticus - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
-		["Galvarton - Dalaran"] = {
+		["Varlouris - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
-		["Illingrath - Dalaran"] = {
+		["Brotus - Argent Dawn"] = {
 			["settingsMigrated"] = false,
 		},
-		["Alatra - Zul'jin"] = {
+		["Tinkster - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
 		["Tyrannithal - Argent Dawn"] = {
@@ -76,13 +76,13 @@ HHTD_SavedVariables = {
 		["Kelvalatar - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
+		["Galvarton - Dalaran"] = {
+			["settingsMigrated"] = false,
+		},
+		["Alatra - Zul'jin"] = {
+			["settingsMigrated"] = false,
+		},
 		["Shimzo - Zul'jin"] = {
-			["settingsMigrated"] = false,
-		},
-		["Tinkster - Dalaran"] = {
-			["settingsMigrated"] = false,
-		},
-		["Jingojaggot - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
 		["Datgore - Zul'jin"] = {
@@ -121,13 +121,13 @@ HHTD_SavedVariables = {
 		["Rotclaugh - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
-		["Varlouris - Dalaran"] = {
+		["Jingojaggot - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
 		["Abyronterner - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
-		["Brotus - Argent Dawn"] = {
+		["Illingrath - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
 		["Jasmoney - Zul'jin"] = {
@@ -147,6 +147,10 @@ HHTD_SavedVariables = {
 		},
 		["NPH"] = {
 		},
+	},
+	["global"] = {
+		["settingsMigrated"] = false,
+		["oldNameEnableState"] = 0,
 	},
 	["profileKeys"] = {
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
@@ -168,15 +172,15 @@ HHTD_SavedVariables = {
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
 		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
 		["Tyranasticus - Zul'jin"] = "Tyranasticus - Zul'jin",
-		["Galvarton - Dalaran"] = "Galvarton - Dalaran",
-		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
-		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
+		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
+		["Galvarton - Dalaran"] = "Galvarton - Dalaran",
+		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
 		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
-		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
-		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
@@ -189,15 +193,11 @@ HHTD_SavedVariables = {
 		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
-		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Abyronterner - Zul'jin"] = "Abyronterner - Zul'jin",
-		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
+		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
 		["Jasmoney - Zul'jin"] = "Jasmoney - Zul'jin",
 		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
 		["Mandles - Zul'jin"] = "Mandles - Zul'jin",
-	},
-	["global"] = {
-		["settingsMigrated"] = false,
-		["oldNameEnableState"] = 0,
 	},
 }

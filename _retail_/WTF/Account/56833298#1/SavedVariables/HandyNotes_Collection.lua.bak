@@ -17,7 +17,7 @@ HandyNotes_CollectionDB = {
 	},
 }
 HandyNotes_CollectionCACHE = {
-	["version"] = 46924,
+	["version"] = 47067,
 }
 HandyNotes_CollectionSTATUS = {
 	["mountId"] = {

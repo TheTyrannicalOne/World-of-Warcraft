@@ -77,6 +77,7 @@ L["Hall of Ancient Paths"] = "Cámara de Sendas Ancestrales"
 L["Sanctum of the Sages"] = "Sagrario de los Sabios"
 L["Rustbolt"] = "Pernoóxido"
 L["Oribos"] = "Oribos"
+L["Valdrakken"] = "Valdrakken"
 
 -- Display
 L["DisplayOptions"] = "Display"

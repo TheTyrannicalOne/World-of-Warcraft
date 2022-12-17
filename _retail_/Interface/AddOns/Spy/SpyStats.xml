@@ -76,8 +76,8 @@
         <Size x="32" y="15" />
     </FontString>
     <FontString name="SpyStatsReasonTemplate" inherits="SpyStatsStringTemplate" virtual="true">
-	<Anchors>
-		<Anchor point="LEFT" relativeTo="$parentLoses" relativePoint="RIGHT">
+		<Anchors>
+			<Anchor point="LEFT" relativeTo="$parentLoses" relativePoint="RIGHT">
                 <Offset x="8" y="0" />
             </Anchor>
         </Anchors>
@@ -246,7 +246,7 @@
 				</Texture>
 				<FontString name="$parent_Title" font="GameFontNormal" Text="L_STATS">	
 					<Anchors>
-						<Anchor point="TOP" />
+						<Anchor point="TOP"/>
 					</Anchors>	
                     <Color r="1" g="1" b="0" a="1" />
 				</FontString>
@@ -356,13 +356,13 @@
 								SpyStats:Recalulate()
 								PlaySound(SOUNDKIT.IG_CHARACTER_INFO_TAB)
 							</OnClick>
-                       </Scripts>
+						</Scripts>
                     </Button>
                     <Button name="SpyStatsRefreshButton" inherits="UIPanelButtonTemplate" text="REFRESH">
 						<Size x="104" y="22"/>					
                         <Anchors>
 							<Anchor point="BOTTOMRIGHT">
-								<Offset x="-2" y="-23" />								
+								<Offset x="-2" y="-23" />
 							</Anchor>
                         </Anchors>
                         <Scripts>
@@ -743,7 +743,7 @@
                 </FontString>
                 <TextInsets left="6" right="6" top="6" bottom="6" />
             </EditBox>
-            <CheckButton name="SpyStatsKosCheckbox" inherits="SettingsCheckBoxTemplate">			
+            <CheckButton name="SpyStatsKosCheckbox" inherits="SettingsCheckBoxTemplate">
                 <Size>
                     <AbsDimension x="24" y="24" />
                 </Size>

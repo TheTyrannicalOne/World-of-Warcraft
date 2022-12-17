@@ -17,5 +17,5 @@ HandyNotes_NooksAndCranniesDB = {
 	},
 }
 HandyNotes_NooksAndCranniesCACHE = {
-	["version"] = 46924,
+	["version"] = 47067,
 }

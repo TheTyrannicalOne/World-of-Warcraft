@@ -515,7 +515,7 @@ function OptionsLib:NextButton()
     if ( not button ) then
         button = CreateFrame(
             "CheckButton", self.name.."Opt"..self.index,
-            self.reference, "OptionsSmallCheckButtonTemplate");
+            self.reference, "FishingBuddyCheckButtonTemplate");
         self.optionbuttons[self.index] = button;
     end
     self.index = self.index + 1;

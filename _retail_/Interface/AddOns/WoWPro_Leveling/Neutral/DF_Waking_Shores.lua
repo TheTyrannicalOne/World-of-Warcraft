@@ -34,18 +34,24 @@ T From Such Great Heights|QID|66101|M|75.84,33.50|Z|2022|N|To Aster Cloudgaze.|F
 ;moved T 72708. but leaving here too, as it won't hurt anything, and maybe it's diff in adventure mode?
 T Dragon Isles Supplies|QID|72708|M|76.43,34.50|N|Turn into Haephesta.|
 A Quality Assurance|QID|69965|PRE|66110^67053|M|76.41,34.45|Z|2022|N|From Haephesta.|RANK|2|
+A Without Purpose|QID|70148|M|76.41,34.45|Z|2022|N|From Haephesta.|RANK|2|C|EVOKER|
 A Always Be Crafting|QID|66112|PRE|66110^67053|M|76.36,34.63|Z|2022|N|From Grun Ashbeard.|RANK|2|
 A Opportunities Abound|QID|70042|M|76.4,33.3|Z|2022|N|From Vish the Sneak. He walks around the area.|T|Vish the Sneak|C|ROGUE|
 C Opportunities Abound|QID|70042|M|75.75,33.37|Z|2022|QO|1|N|Pick the [color=33fff9]Golden Expiditon Compass[/color] up off the crate.|H|
 C Opportunities Abound|QID|70042|M|76.17,33.66;76.44,33.13|CN|Z|2022|QO|2|N|Pick the [color=33fff9]Shiny Surveyors Scope[/color] up off the crate.\n\n[color=FF0000]NOTE: [/color]If it is not there check the other location. Or you will have to wait for the Expedition Surveyor to set it down.|T|Expedition Surveyor|H|
 R Pathfinder Jeb|ACTIVE|70042|M|76.73,34.19|Z|2022|N|Come over here and Jeb will tell you the pack laying here isn't his real pack.|
+C Without Purpose|QID|70148|M|76.44,34.41|Z|2022|QO|1|CHAT|N|Talk to Kholmar. He is to the right of Haephesta.|
+C Without Purpose|QID|70148|M|76.69,34.78|Z|2022|QO|2|CHAT|N|Talk to Toninaar. He is behind you.|
 f Wingrest Embassy|ACTIVE|69911|M|76.03,35.04|Z|2022|N|At Tixxa Mixxa.|
 C Excuse the Mess|QID|69911|M|76.33,35.62|Z|2022|QO|1|CHAT|N|Tell Ambassador Fastrasz that you are a new visitor.|
 C Excuse the Mess|QID|69911|M|76.29,35.59|Z|2022|QO|2|H|N|Embassy Visitor Log signed. It doesn't matter which options you choose, Have Fun!|
 C Excuse the Mess|QID|69911|M|75.61,34.14|Z|2022|QO|3|H|N|Read the stone tablet.|
+C Without Purpose|QID|70148|M|75.88,33.46|Z|2022|QO|3|CHAT|N|Talk to Aster Cloudgaze.|
+C Without Purpose|QID|70148|M|75.05,33.52|Z|2022|QO|4|H|N|Click on the [color=33fff9]Conspicuous Note[/color] on the wall.|
 C Quality Assurance|QID|69965|M|74.52,35.19|Z|2022|H|N|Click on the glowing rocks to excavate.|S|
 C Encroaching Elementals|QID|70135^66111|M|73.98,33.91|Z|2022|N|Slay Primal elementals.|S|
 C Opportunities Abound|QID|70042|M|74.66,35.68|QO|3|N|Kill Primal Lava Elementals until you get [color=33fff9]Jeb's Supply Pack[/color].|S|
+C Without Purpose|QID|70148|M|74.90,35.02|Z|2022|QO|5|CHAT|N|Talk to Talon Ethrethi under the tent.|
 C Always Be Crafting|QID|66112|M|75.01,39.20|Z|2022|QO|2|NC|N|This is dropped by Baron Crustcord at the bottom of Quaking Cavern.|T|Baron Crustcore|
 C Always Be Crafting|QID|66112|M|73.15,33.01|Z|2022|QO|1|NC|N|This is dropped by Baron Ashflow in a small lava pool up the hillside.|T|Baron Ashflow|
 C Quality Assurance|QID|69965|M|74.52,35.19|Z|2022|H|N|Finish excavating the glowing Volcanic Geodes.|US|
@@ -53,6 +59,7 @@ C Encroaching Elementals|QID|70135^66111|M|73.98,33.91|Z|2022|N|Finish slaying t
 C Opportunities Abound|QID|70042|M|74.66,35.68|QO|3|N|Kill Primal Lava Elementals until you get [color=33fff9]Jeb's Supply Pack[/color].|T|Primal Lava Elemental|US|
 T Encroaching Elementals|QID|66111|M|76.71,34.55|Z|2022|N|To Captain Garrick.|FACTION|Horde|
 T Quality Assurance|QID|69965|M|76.41,34.47|Z|2022|N|To Haephesta.|
+T Without Purpose|QID|70148|M|76.41,34.45|Z|2022|N|To Haephesta.|
 T Always Be Crafting|QID|66112|M|76.35,34.65|Z|2022|N|To Grun Ashbeard.|
 T Opportunities Abound|QID|70042|M|76.4,33.3|Z|2022|N|To Vish the Sneak. He walks around the area.|T|Vish the Sneak|
 T Encroaching Elementals|QID|70135|M|76.37,33.07|Z|2022|N|To Warlord Breka Grimaxe.|FACTION|Alliance|
@@ -62,9 +69,9 @@ A My First Real Emergency!|QID|69912|PRE|69911|M|76.58,33.66|Z|2022|N|From Sendr
 C My First Real Emergency!|QID|69912|M|76.58,33.66|Z|2022|QO|1|CHAT|N|Tell Sendrax to send the signal flare.|
 C My First Real Emergency!|QID|69912|M|76.22,34.45|Z|2022|QO|2|NC|N|Wait for the dragons' arrival.|
 T My First Real Emergency!|QID|69912|M|76.19,34.50|Z|2022|N|To Wrathion.|
-A The Djaradin Have Awoken|QID|69914|PRE|69912|M|76.22,34.51|Z|2022|N|From Majordomo Selistra.|
-C The Djaradin Have Awoken|QID|69914|M|76.27,34.53|Z|2022|CHAT|N|Ask Majordomo Selistra how you can help.|
-T The Djaradin Have Awoken|QID|69914|M|76.27,34.40|Z|2022|N|To Sendrax.|
+A The Djaradin Have Awoken|QID|69914|PRE|69912|M|76.22,34.53|Z|2022|N|From Majordomo Selistra.|
+C The Djaradin Have Awoken|QID|69914|M|76.22,34.53|Z|2022|CHAT|N|Ask Majordomo Selistra how you can help.|
+T The Djaradin Have Awoken|QID|69914|M|76.26,34.40|Z|2022|N|To Sendrax.|
 A Reporting for Duty|QID|65760|PRE|69914|M|76.27,34.40|Z|2022|N|From Sendrax.|
 C Reporting for Duty|QID|65760|M|76.27,34.40|Z|2022|QO|1|CHAT|N|Ask Sendrax to lead you to the outpost.|
 C Reporting for Duty|QID|65760|M|71.30,40.52|Z|2022|QO|2|NC|N|You need to stay somewhat close to Sendrax or she will stop.|
@@ -77,7 +84,7 @@ C Invader Djaradin|QID|65989|M|70.82,45.73|Z|2022|N|Finish slaying Djaradin.|US|
 T Invader Djaradin|QID|65989|M|71.20,40.77|Z|2022|N|To Commander Lethanak.|
 T Deliver Whelps From Evil|QID|65990|M|71.20,40.77|Z|2022|N|To Commander Lethanak.|
 A Time for a Reckoning|QID|65991|PRE|65989&65990|M|71.20,40.77|Z|2022|N|From Commander Lethanak.|
-A Erstwhile Ecologists|QID|72122|PRE|65989&65990|M|71.11,40.46|Z|2022|N|From Mender Eskros.|RANK|2|
+A Erstwhile Ecologists|QID|72122|PRE|65989&65990|M|71.20,40.51|Z|2022|N|From Mender Eskros.|RANK|2|
 T Erstwhile Ecologists|QID|72122|M|74.43,42.15|Z|2022|N|To Ecologist Iskha.|
 A A Scalpel of a Solution|QID|66105|PRE|72122|M|74.41,42.12|Z|2022|N|From Ecologist Iskha.|RANK|2|
 A Wildlife Rescue|QID|66107|PRE|72122|M|74.49,42.17|Z|2022|N|From Ecologist Tharu.|RANK|2|
@@ -149,6 +156,7 @@ A A Last Hope|QID|66001|PRE|65998&66000&65999|M|57.13,23.63|Z|2022|N|From Sendra
 C A Last Hope|QID|66001|M|56.23,22.06|Z|2022|QO|1|CHAT|N|Meet Sendrax by the ritual site, then tell her you are ready.|
 C A Last Hope|QID|66001|M|56.89,21.60|Z|2022|QO|2|H|N|Pick up the Infused Dragon Egg.|
 C A Last Hope|QID|66001|M|55.07,30.62|Z|2022|QO|3|NC|N|Carry the egg to safety. Note you can't mount up, or use skills, just run.|
+; T A Last Hope|QID|66001|M|55.08,31.01|Z|2022|N|To Majordomo Selistra.| postponed deliberatly
 A A Two for One Deal|QID|70179|M|54.46,30.86|Z|2022|N|From Apprentice Caretaker Zefren.|RANK|2|;Not sure what triggers this quest, per ATT it was available after 66001 *and not before 66997* so putting here since leaving the egg unguarded while killing rock elementals seems wrong.
 C A Two for One Deal|QID|70179|M|53.05,32.36|Z|2022|N|Remove the life from the rock elementals, then remove the rocks.|
 T A Two for One Deal|QID|70179|M|54.46,30.86|Z|2022|N|To Apprentice Caretaker Zefren|
@@ -162,7 +170,7 @@ A Dragonriding|QID|68795|PRE|66114|M|62.33,73.02|Z|2022|N|From Alexstrasza the L
 A A Ruby Lifecalling|QID|66825|PRE|66114|M|61.89,73.84|Z|2022|N|From Lifecaller Tzadrak.|RANK|2|
 C A Ruby Lifecalling|QID|66825|M|61.87,73.83|Z|2022|H|N|Click on the items from the table, and after each item Lifecaller Tzadrak will call a one of the young dragons forward to pick up the item.|
 T A Ruby Lifecalling|QID|66825|M|61.89,73.84|Z|2022|N|From Lifecaller Tzadrak.|
-h Ruby Lifeshrine|ACTIVE|68795|M|61.79,73.83|Z|2022|N|Set your hearth with Lifecaller Tzadrak.|
+h Ruby Lifeshrine|ACTIVE|68795|M|61.89,73.84|Z|2022|N|Set your hearth with Lifecaller Tzadrak.|
 A Nursery Direction|QID|66997|PRE|66825|M|61.82,73.58|Z|2022|N|From Vaeros.|RANK|2|
 A Garden Party|QID|70351|PRE|66825|M|61.74,73.72|Z|2022|N|From Akora.|RANK|2|
 A Hornstrider Havoc|QID|66879|PRE|66825|M|61.73,73.76|Z|2022|N|From Dazakros.|RANK|2|
@@ -177,7 +185,7 @@ C Stay a While|QID|70132|M|57.82,66.81|Z|2022|QO|2|CHAT|N|Listen to Veritistrasz
 T Stay a While|QID|70132|M|57.85,66.80|Z|2022|N|To Veritistrasz.|
 A Memories|QID|70134|PRE|70132|M|57.82,66.85|Z|2022|N|From Veritistrasz.|RANK|2|
 A Artisan's Courier|QID|67564|M|57.93,68.26|Z|2022|N|From Haephesta.|RANK|2|
-f Ruby Lifeshrine|ACTIVE|68795|M|57.79,68.13|Z|2022|N|At Vaknai.|
+f Ruby Life Pools|ACTIVE|68795|M|57.79,68.13|Z|2022|N|At Vaknai.|
 C Dragonriding|QID|68795|M|58.37,67.12|Z|2022|QO|1|CHAT|N|Speak to Lord Andestrasz about Dragonriding.|
 T Dragonriding|QID|68795|M|57.66,66.89|Z|2022|N|To Lord Andestrasz.|
 A How to Glide with Your Dragon|QID|65118|PRE|68795|M|57.66,66.89|Z|2022|N|From Lord Andestrasz.|
@@ -313,7 +321,8 @@ A To Give One's Heart|QID|67143|PRE|67100|M|60.23,72.19|Z|2022|N|From Thomas Bri
 A To Give One's Heart|QID|67143|PRE|67100|M|60.23,72.19|Z|2022|N|From Thomas Bright.|P|Jewelcrafting;755;9+1|
 A To Give One's Heart|QID|67143|PRE|67100|M|60.23,72.19|Z|2022|N|From Thomas Bright.|P|Inscription;773;9+1|
 A To Give One's Heart|QID|67143|PRE|67100|M|60.23,72.19|Z|2022|N|From Thomas Bright.|P|Tailoring;197;9+1|
-C To Give One's Heart|QID|67143|M|60.23,72.19|Z|2022|NC|N|Stand next to Thomas's table, open your crafting profession and craft a Heart in a Bottle with any crafting profession.|
+C To Give One's Heart|QID|67143|M|60.23,72.19|Z|2022|QO|1|NC|N|Stand next to Thomas's table, open your crafting profession and craft a Heart in a Bottle with any crafting profession.|
+C To Give One's Heart|QID|67143|M|60.23,72.19|Z|2022|QO|2|CHAT|N|Talk to Thomas and give him the gift.|
 T To Give One's Heart|QID|67143|M|59.89,71.58|Z|2022|N|To Miguel Bright Thomas Bright.|
 
 A Professionally Equipped|QID|67137|PRE|67100|M|59.86,71.60|Z|2022|N|From Miguel Bright.|RANK|2|P|Blacksmithing;164;9+1|
@@ -407,7 +416,7 @@ C Exeunt, Triumphant|QID|66124|M|46.13,78.51|Z|2022|QO|1|CHAT|N|Check in with Ma
 T Exeunt, Triumphant|QID|66124|M|46.15,78.52|Z|2022|N|To Majordomo Selistra.|
 A Wrathion Awaits|QID|66079|PRE|66124|M|46.09,78.28|Z|2022|N|From Alexstrasza the Life-Binder.|
 ;A Pruning the Preserve|QID|70196|M|46.28,79.60|Z|2022|N|Bonus Objective - Autoaccepted.|RANK|2|LVL|-70|
-C Pruning the Preserve|QID|70196|M|46.28,79.60|Z|2022|N|Kill stuff as you go about the other objectives.|S!US|
+C Pruning the Preserve|QID|70196|M|46.28,79.60|Z|2022|N|Kill stuff as you go about the other objectives.|S!US|IZ|13733|
 C Amateur Protography|QID|66524|M|45.11,77.35|Z|2022|QO|2|NC|U|192465|N|Photograph an Optimistic Whelp learning to fly.|
 C Amateur Protography|QID|66524|M|44.07,78.04|Z|2022|QO|3|NC|U|192465|N|Photograph a Hungry Proto-Drake catching a fish.|
 C Behavior Analysis "Homework"|QID|69897|M|42.56,79.34|Z|2022|QO|1<1|H|N|Click the Sleeping Whelp to pet it.|

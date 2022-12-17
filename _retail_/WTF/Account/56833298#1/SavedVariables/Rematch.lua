@@ -67,9 +67,9 @@ RematchSettings = {
 		},
 		["Level"] = {
 		},
-		["Sources"] = {
-		},
 		["Similar"] = {
+		},
+		["Sources"] = {
 		},
 		["Breed"] = {
 		},

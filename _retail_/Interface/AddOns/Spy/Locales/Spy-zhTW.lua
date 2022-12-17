@@ -77,6 +77,7 @@ L["Hall of Ancient Paths"] = "远古通路大厅"
 L["Sanctum of the Sages"] = "賢者聖所"
 L["Rustbolt"] = "锈栓镇"
 L["Oribos"] = "奥利波斯"
+L["Valdrakken"] = "瓦德拉肯"
 
 -- Display
 L["DisplayOptions"] = "顯示"

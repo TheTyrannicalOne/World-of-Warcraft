@@ -142,12 +142,13 @@ local function ShowflipEditor()
 end
 
 local function ImportFarm()
-    core.UI.InputDialog({ Text = core.GetString("ImportFarm"), HasEditBox = true, OnAccept = function(dialog)
+    core.UI.InputDialog({ Text = core.GetString("Import"), HasEditBox = true, OnAccept = function(dialog)
         local text = dialog.editBox:GetText()
         if text ~= nil then
+            text = gsub(text, "%s", "")
+
             if strlen(text) > 0 then
                 local result, data = core.ExportHelper.Deserialize(text)
-
                 if result and data.Id and data.Time then
                     local farms = core.Config.GetUserFarms()
 
@@ -167,6 +168,8 @@ local function ImportFarm()
                     elseif core.UI.MainWindow.CurrentModule() == core.DashboardModule then
                         core.UI.MainWindow.ShowModule(core.DashboardModule)
                     end
+                elseif result and data.RouteZone and data.RouteKey and data.RouteName then
+                    core.RoutesHelper.ImportRoute(data, data.RouteName)
                 end
             end
         end
@@ -350,7 +353,7 @@ local function buildNavigationMenu()
                 --},
                 {
                     Name = "Import",
-                    DisplayName = core.GetString("ImportFarm"),
+                    DisplayName = core.GetString("Import"),
                     Action = ImportFarm
                 },
                 {

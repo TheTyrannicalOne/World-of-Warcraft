@@ -90,13 +90,13 @@ NarcissusDB = {
 	["Tutorials"] = {
 		["Domination"] = true,
 		["ExitConfirmation"] = true,
-		["EquipmentSetManager"] = true,
-		["Movement"] = true,
 		["SpellVisualBrowser"] = true,
+		["NPCBrowser"] = true,
+		["EquipmentSetManager"] = true,
 		["IndependentMinimapButton"] = false,
 		["NPCBrowserEntance"] = true,
 		["WeaponBrowser"] = true,
-		["NPCBrowser"] = true,
+		["Movement"] = true,
 	},
 	["BorderTheme"] = "Bright",
 	["AutoFilterGem"] = false,
@@ -138,6 +138,36 @@ NarciCharacterProfiles = {
 		},
 		["class"] = 2,
 	},
+	["0EB84EA0"] = {
+		["race"] = 10,
+		["name"] = "Valmagus",
+		["birth"] = 1653442802,
+		["serverID"] = "61",
+		["lastVisit"] = 1667057136,
+		["outfits"] = {
+		},
+		["class"] = 2,
+	},
+	["071FB336"] = {
+		["race"] = 8,
+		["name"] = "Brotus",
+		["birth"] = 1663525037,
+		["serverID"] = "75",
+		["lastVisit"] = 1669310296,
+		["outfits"] = {
+		},
+		["class"] = 7,
+	},
+	["0AB08C15"] = {
+		["race"] = 8,
+		["name"] = "Bathal",
+		["birth"] = 1669310426,
+		["serverID"] = "75",
+		["lastVisit"] = 1669310629,
+		["outfits"] = {
+		},
+		["class"] = 6,
+	},
 	["0CA8EB69"] = {
 		["race"] = 31,
 		["name"] = "Zulbathal",
@@ -151,6 +181,26 @@ NarciCharacterProfiles = {
 			}, -- [1]
 		},
 		["class"] = 11,
+	},
+	["0CB6231E"] = {
+		["race"] = 34,
+		["name"] = "Varlouris",
+		["birth"] = 1653771638,
+		["serverID"] = "3683",
+		["lastVisit"] = 1667019575,
+		["outfits"] = {
+		},
+		["class"] = 7,
+	},
+	["0EBAD280"] = {
+		["race"] = 10,
+		["name"] = "Alatra",
+		["birth"] = 1654647364,
+		["serverID"] = "61",
+		["lastVisit"] = 1668716202,
+		["outfits"] = {
+		},
+		["class"] = 3,
 	},
 	["0CBEA15E"] = {
 		["race"] = 8,
@@ -166,16 +216,6 @@ NarciCharacterProfiles = {
 		},
 		["class"] = 11,
 	},
-	["0AB08C15"] = {
-		["race"] = 8,
-		["name"] = "Bathal",
-		["birth"] = 1669310426,
-		["serverID"] = "75",
-		["lastVisit"] = 1669310629,
-		["outfits"] = {
-		},
-		["class"] = 6,
-	},
 	["0C1345B8"] = {
 		["race"] = 32,
 		["name"] = "Galvarton",
@@ -186,56 +226,12 @@ NarciCharacterProfiles = {
 		},
 		["class"] = 11,
 	},
-	["0B9BB303"] = {
-		["race"] = 4,
-		["name"] = "Darnastris",
-		["birth"] = 1656301020,
-		["serverID"] = "3683",
-		["lastVisit"] = 1668719243,
-		["outfits"] = {
-			{
-				["s"] = "66666,77343,77345,104602,0,83203,104604,106582,84223,1190,1188,102094:-1:3273,0",
-				["n"] = "in the buff",
-			}, -- [1]
-		},
-		["class"] = 8,
-	},
-	["0EBAD280"] = {
-		["race"] = 10,
-		["name"] = "Alatra",
-		["birth"] = 1654647364,
-		["serverID"] = "61",
-		["lastVisit"] = 1668716202,
-		["outfits"] = {
-		},
-		["class"] = 3,
-	},
-	["071FB336"] = {
-		["race"] = 8,
-		["name"] = "Brotus",
-		["birth"] = 1663525037,
-		["serverID"] = "75",
-		["lastVisit"] = 1669310296,
-		["outfits"] = {
-		},
-		["class"] = 7,
-	},
-	["0EB84EA0"] = {
-		["race"] = 10,
-		["name"] = "Valmagus",
-		["birth"] = 1653442802,
-		["serverID"] = "61",
-		["lastVisit"] = 1667057136,
-		["outfits"] = {
-		},
-		["class"] = 2,
-	},
 	["058380E2"] = {
 		["race"] = 5,
 		["name"] = "Shanyt",
 		["birth"] = 1651529834,
 		["serverID"] = "75",
-		["lastVisit"] = 1670375191,
+		["lastVisit"] = 1671141205,
 		["outfits"] = {
 			{
 				["s"] = "19684,44897,62761,24793,83202,83203,33402,33179,71940,26234,22010,0,0",
@@ -306,15 +302,19 @@ NarciCharacterProfiles = {
 		},
 		["class"] = 2,
 	},
-	["0CB6231E"] = {
-		["race"] = 34,
-		["name"] = "Varlouris",
-		["birth"] = 1653771638,
+	["0B9BB303"] = {
+		["race"] = 4,
+		["name"] = "Darnastris",
+		["birth"] = 1656301020,
 		["serverID"] = "3683",
-		["lastVisit"] = 1667019575,
+		["lastVisit"] = 1668719243,
 		["outfits"] = {
+			{
+				["s"] = "66666,77343,77345,104602,0,83203,104604,106582,84223,1190,1188,102094:-1:3273,0",
+				["n"] = "in the buff",
+			}, -- [1]
 		},
-		["class"] = 7,
+		["class"] = 8,
 	},
 	["0DE12200"] = {
 		["race"] = 35,

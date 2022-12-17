@@ -66,14 +66,28 @@ end
 -- Init
 function UMPD_Init()
     if not UMPD then UMPD = {} end
-    UMPD.autoTrackPins = UMPD.autoTrackPins or true
     UMPD.minDistance = UMPD.minDistance or 70
     UMPD.fadeDistance = UMPD.fadeDistance or 113
     UMPD.maxDistance = UMPD.maxDistance or 0
     UMPD.pinAlphaLong = UMPD.pinAlphaLong or 60
     UMPD.pinAlphaShort = UMPD.pinAlphaShort or 100
     UMPD.pinAlphaClamped = UMPD.pinAlphaClamped or 100
-    UMPD.timeDistance = UMPD.timeDistance or true
+
+    if UMPD.autoTrackPins == nil then
+        UMPD.autoTrackPins = true
+    end
+
+    if UMPD.timeDistance == nil then
+        UMPD.timeDistance = true
+    end
+
+    if UMPD.useMeters == nil then
+        UMPD.useMeters = false
+    end
+
+    if UMPD.shortNumbers == nil then
+        UMPD.shortNumbers = false
+    end
 
     -- Frame
     UMPDO = CreateFrame("Frame", nil, UIParent)
@@ -136,9 +150,19 @@ function UMPD_Init()
         UMPD.autoTrackPins = self:GetChecked()
     end)
     local cbShowTime = createCheckbox(UMPDO,UMPD.timeDistance,"st","Show estimated time to arrive")
-    cbShowTime:SetPoint("TOPLEFT", 232, -252)
+    cbShowTime:SetPoint("TOPLEFT", 8, -282)
     cbShowTime:HookScript("OnClick", function(self,value)
         UMPD.timeDistance = self:GetChecked()
+    end)
+    local cbUseMeters = createCheckbox(UMPDO,UMPD.useMeters,"st","Use meters instead of yards")
+    cbUseMeters:SetPoint("TOPLEFT", 8, -312)
+    cbUseMeters:HookScript("OnClick", function(self,value)
+        UMPD.useMeters = self:GetChecked()
+    end)
+    local cbShortNumbers = createCheckbox(UMPDO,UMPD.shortNumbers,"st","Shorten numbers above 1000")
+    cbShortNumbers:SetPoint("TOPLEFT", 8, -342)
+    cbShortNumbers:HookScript("OnClick", function(self,value)
+        UMPD.shortNumbers = self:GetChecked()
     end)
 
     -- Notes

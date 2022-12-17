@@ -149,17 +149,6 @@
 						</Offset>
 					</Anchor>
 				</Anchors>
-				<Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background-Dark" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
-					<BackgroundInsets>
-						<AbsInset left="11" right="12" top="12" bottom="11"/>
-					</BackgroundInsets>
-					<TileSize>
-						<AbsValue val="32"/>
-					</TileSize>
-					<EdgeSize>
-						<AbsValue val="32"/>
-					</EdgeSize>
-				</Backdrop>
 				<Frames>
 					<ScrollFrame name="$parentMenu" inherits="MinimalHybridScrollFrameTemplate">
 						<Anchors>

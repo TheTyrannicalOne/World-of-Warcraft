@@ -6,7 +6,7 @@ ElvUI_AuraBarsMovers: disabled
 ElvUI_CustomTweaks: disabled
 AckisRecipeList_FirstAid: enabled
 AckisRecipeList_Mining: enabled
-ActionBarProfiles: disabled
+ActionBarProfiles: enabled
 AngryWorldQuests: enabled
 AAP-Core: enabled
 AAP-Vanilla: enabled
@@ -125,7 +125,7 @@ AckisRecipeList_Inscription: enabled
 AckisRecipeList_Jewelcrafting: enabled
 AckisRecipeList_Leatherworking: enabled
 AckisRecipeList_Tailoring: enabled
-ACP: enabled
+ACP: disabled
 AdventureGuideLockouts: enabled
 AllTheThings: enabled
 AzeritePowerWeights: enabled

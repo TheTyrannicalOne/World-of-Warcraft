@@ -1,58 +1,10 @@
-lightweight tag e64db073aa96b177aa67ad62282a60281f124b9a v1.4.3
+lightweight tag 3aa91c5f9919aecca99acb7edc28908545263a2a v1.4.4
 Author:	Meivyn <793322+Meivyn@users.noreply.github.com>
-Date:	Sat Dec 3 03:32:39 2022 -0500
+Date:	Wed Dec 14 04:11:01 2022 -0500
 
-commit e64db073aa96b177aa67ad62282a60281f124b9a
+commit 3aa91c5f9919aecca99acb7edc28908545263a2a
 Author: Meivyn <793322+Meivyn@users.noreply.github.com>
-Date:   Sat Dec 3 03:32:39 2022 -0500
+Date:   Wed Dec 14 04:11:01 2022 -0500
 
-    A bit of cleanup before release
-
-commit 6e37b52f4c5f5d85f90acf44cbcbbc0ecf125371
-Author: Meivyn <793322+Meivyn@users.noreply.github.com>
-Date:   Sat Dec 3 03:27:15 2022 -0500
-
-    A bit of cleanup before release
-
-commit 7c1609ac2d38067fac8d49e19ba3cc3d38a21d8e
-Author: Meivyn <793322+Meivyn@users.noreply.github.com>
-Date:   Sat Dec 3 02:09:45 2022 -0500
-
-    Update for Dragonflight (Closes #20, Closes #21)
-
-commit 00b29b35cc8cc7632843389f1776b58c9e2ae820
-Author: Meivyn <793322+Meivyn@users.noreply.github.com>
-Date:   Fri Oct 28 13:47:34 2022 -0400
-
-    Refactor encounter info loops
-
-commit 3537b31e23b3b95ad898b36d964c988f5d562fda
-Author: Meivyn <793322+Meivyn@users.noreply.github.com>
-Date:   Wed Aug 24 02:23:12 2022 -0400
-
-    Dynamically position status frames
-
-commit 08f4bd0939d8a7c36670a31da2176a55b86a8c16
-Author: Meivyn <793322+Meivyn@users.noreply.github.com>
-Date:   Wed Aug 24 02:22:39 2022 -0400
-
-    Remove debug stuff
-
-commit b7dfb1d9fc1abeb4dfbc55e4daabefa22de00d32
-Author: Meivyn <793322+Meivyn@users.noreply.github.com>
-Date:   Wed Aug 24 02:20:48 2022 -0400
-
-    Siege of Boralus and Assault on Violet Hold have a new instanceID
-
-commit 93aa378a34fef7a13090fa6c3ad557f60fc94ae9
-Author: Meivyn <793322+Meivyn@users.noreply.github.com>
-Date:   Mon Aug 22 15:13:52 2022 -0400
-
-    Rely on mapID instead of hardcoding all instanceID
-
-commit c1bb54937b6ee51f864c8875cd544e9f005bcdea
-Author: Meivyn <793322+Meivyn@users.noreply.github.com>
-Date:   Mon Aug 22 15:05:38 2022 -0400
-
-    Remove CHANGELOG.md
+    Fix world boss loop logic
 

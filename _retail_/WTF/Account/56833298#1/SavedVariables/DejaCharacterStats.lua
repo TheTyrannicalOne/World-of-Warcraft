@@ -303,8 +303,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [61]
 		["uniqueKey"] = "Shaekhan:Argent Dawn:3",
 	},
@@ -525,8 +525,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 		}, -- [56]
 		{
 			["statKey"] = "HonorCategory",
@@ -757,8 +757,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [49]
 		{
 			["statKey"] = "HonorCategory",
@@ -1001,8 +1001,8 @@ DCS_ClassSpecDB = {
 		}, -- [52]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -1249,8 +1249,8 @@ DCS_ClassSpecDB = {
 		}, -- [60]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -1449,8 +1449,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 		}, -- [49]
 		{
 			["statKey"] = "HonorCategory",
@@ -1731,8 +1731,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [61]
 		["uniqueKey"] = "Varlouris:Dalaran:1",
 	},
@@ -1980,8 +1980,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [61]
 		["uniqueKey"] = "Tyranasticus:Zul'jin:1",
 	},
@@ -2231,8 +2231,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [61]
 		["uniqueKey"] = "Kelvalatar:Dalaran:1",
 	},
@@ -2425,8 +2425,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [49]
 		{
 			["statKey"] = "ActiBlizzWalkout",
@@ -2701,8 +2701,8 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -2984,8 +2984,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 		}, -- [61]
 		["uniqueKey"] = "Mandles:Zul'jin:5",
 	},
@@ -3198,8 +3198,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 		}, -- [53]
 		["uniqueKey"] = "Shimzo:Zul'jin:1",
 	},
@@ -3390,8 +3390,8 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -3628,8 +3628,8 @@ DCS_ClassSpecDB = {
 		}, -- [41]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
 			["hidden"] = false,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -3899,8 +3899,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [53]
 		{
 			["statKey"] = "RATING_2V2",
@@ -4123,8 +4123,8 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -4344,8 +4344,8 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -4651,8 +4651,8 @@ DCS_ClassSpecDB = {
 		}, -- [55]
 		{
 			["statKey"] = "STAGGER",
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -4900,8 +4900,8 @@ DCS_ClassSpecDB = {
 		}, -- [52]
 		{
 			["statKey"] = "STAGGER",
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -5114,8 +5114,8 @@ DCS_ClassSpecDB = {
 		}, -- [52]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -5398,8 +5398,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 		}, -- [61]
 		["uniqueKey"] = "Varlouris:Dalaran:3",
 	},
@@ -5614,8 +5614,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 		}, -- [53]
 		["uniqueKey"] = "Tinkster:Dalaran:3",
 	},
@@ -5862,8 +5862,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 		}, -- [61]
 		["uniqueKey"] = "Rotclaugh:Dalaran:3",
 	},
@@ -6054,8 +6054,8 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -6333,8 +6333,8 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -6666,8 +6666,8 @@ DCS_ClassSpecDB = {
 		}, -- [60]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -6863,8 +6863,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [49]
 		{
 			["statKey"] = "HonorCategory",
@@ -7085,8 +7085,8 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -7365,8 +7365,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 		}, -- [61]
 		["uniqueKey"] = "Laymonan:Zul'jin:5",
 	},
@@ -7576,8 +7576,8 @@ DCS_ClassSpecDB = {
 		}, -- [52]
 		{
 			["statKey"] = "STAGGER",
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -7800,8 +7800,8 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -8050,8 +8050,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 		}, -- [53]
 		["uniqueKey"] = "Vancard:Zul'jin:1",
 	},
@@ -8298,8 +8298,8 @@ DCS_ClassSpecDB = {
 		}, -- [60]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -8496,8 +8496,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 		}, -- [49]
 		{
 			["statKey"] = "HonorCategory",
@@ -8659,8 +8659,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
 			["hidden"] = false,
+			["hideAt"] = 0,
 		}, -- [38]
 		{
 			["statKey"] = "RatingCategory",
@@ -8993,8 +8993,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [61]
 		["uniqueKey"] = "Dachas:Zul'jin:5",
 	},
@@ -9130,8 +9130,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hidden"] = false,
 			["hideAt"] = 0,
+			["hidden"] = false,
 		}, -- [38]
 		{
 			["statKey"] = "RatingCategory",
@@ -9431,8 +9431,8 @@ DCS_ClassSpecDB = {
 		}, -- [51]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -9695,8 +9695,8 @@ DCS_ClassSpecDB = {
 		}, -- [60]
 		{
 			["statKey"] = "STAGGER",
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -9944,8 +9944,8 @@ DCS_ClassSpecDB = {
 		}, -- [60]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -10160,8 +10160,8 @@ DCS_ClassSpecDB = {
 		}, -- [52]
 		{
 			["statKey"] = "STAGGER",
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -10296,8 +10296,8 @@ DCS_ClassSpecDB = {
 		}, -- [37]
 		{
 			["statKey"] = "STAGGER",
-			["hidden"] = false,
 			["hideAt"] = 0,
+			["hidden"] = false,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -10626,8 +10626,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
 			["hidden"] = false,
+			["hideAt"] = 0,
 		}, -- [50]
 		{
 			["statKey"] = "RatingCategory",
@@ -10946,8 +10946,8 @@ DCS_ClassSpecDB = {
 		}, -- [60]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -11198,8 +11198,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 		}, -- [61]
 		["uniqueKey"] = "Vadder:Argent Dawn:2",
 	},
@@ -11408,8 +11408,8 @@ DCS_ClassSpecDB = {
 		}, -- [52]
 		{
 			["statKey"] = "STAGGER",
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -11635,8 +11635,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 		}, -- [52]
 		{
 			["statKey"] = "UserCat4",
@@ -11861,8 +11861,8 @@ DCS_ClassSpecDB = {
 		}, -- [52]
 		{
 			["statKey"] = "STAGGER",
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -12086,8 +12086,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
 			["hidden"] = false,
+			["hideAt"] = 0,
 		}, -- [49]
 		{
 			["statKey"] = "HONOR_PROGRESS",
@@ -12124,251 +12124,6 @@ DCS_ClassSpecDB = {
 			["hidden"] = false,
 		}, -- [57]
 		["uniqueKey"] = "Shanyt:Argent Dawn:1",
-	},
-	["Jingojaggot:Argent Dawn:2"] = {
-		{
-			["statKey"] = "ItemLevelFrame",
-		}, -- [1]
-		{
-			["statKey"] = "GeneralCategory",
-		}, -- [2]
-		{
-			["statKey"] = "HEALTH",
-		}, -- [3]
-		{
-			["statKey"] = "DCS_POWER",
-		}, -- [4]
-		{
-			["statKey"] = "DCS_ALTERNATEMANA",
-		}, -- [5]
-		{
-			["statKey"] = "ITEMLEVEL",
-			["hidden"] = true,
-		}, -- [6]
-		{
-			["statKey"] = "MOVESPEED",
-		}, -- [7]
-		{
-			["statKey"] = "DURABILITY_STAT",
-		}, -- [8]
-		{
-			["statKey"] = "REPAIR_COST",
-		}, -- [9]
-		{
-			["statKey"] = "AttributesCategory",
-		}, -- [10]
-		{
-			["statKey"] = "STRENGTH",
-			["hidden"] = true,
-		}, -- [11]
-		{
-			["statKey"] = "AGILITY",
-			["hidden"] = true,
-		}, -- [12]
-		{
-			["statKey"] = "INTELLECT",
-		}, -- [13]
-		{
-			["statKey"] = "STAMINA",
-		}, -- [14]
-		{
-			["statKey"] = "ARMOR",
-		}, -- [15]
-		{
-			["statKey"] = "OffenseCategory",
-		}, -- [16]
-		{
-			["statKey"] = "ATTACK_DAMAGE",
-			["hidden"] = true,
-		}, -- [17]
-		{
-			["statKey"] = "ATTACK_AP",
-			["hidden"] = true,
-		}, -- [18]
-		{
-			["statKey"] = "DCS_ATTACK_ATTACKSPEED",
-			["hidden"] = true,
-		}, -- [19]
-		{
-			["statKey"] = "WEAPON_DPS",
-			["hidden"] = true,
-		}, -- [20]
-		{
-			["statKey"] = "SPELLPOWER",
-		}, -- [21]
-		{
-			["statKey"] = "MANAREGEN",
-		}, -- [22]
-		{
-			["statKey"] = "ENERGY_REGEN",
-		}, -- [23]
-		{
-			["statKey"] = "DCS_RUNEREGEN",
-			["hidden"] = true,
-		}, -- [24]
-		{
-			["statKey"] = "FOCUS_REGEN",
-		}, -- [25]
-		{
-			["statKey"] = "GCD",
-		}, -- [26]
-		{
-			["statKey"] = "EnhancementsCategory",
-		}, -- [27]
-		{
-			["statKey"] = "CRITCHANCE",
-			["hideAt"] = 0,
-		}, -- [28]
-		{
-			["statKey"] = "HASTE",
-			["hideAt"] = 0,
-		}, -- [29]
-		{
-			["statKey"] = "VERSATILITY",
-			["hideAt"] = 0,
-		}, -- [30]
-		{
-			["statKey"] = "MASTERY",
-			["hideAt"] = 0,
-		}, -- [31]
-		{
-			["statKey"] = "LIFESTEAL",
-			["hideAt"] = 0,
-		}, -- [32]
-		{
-			["statKey"] = "AVOIDANCE",
-			["hideAt"] = 0,
-		}, -- [33]
-		{
-			["statKey"] = "DefenseCategory",
-			["hidden"] = true,
-		}, -- [34]
-		{
-			["statKey"] = "DODGE",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [35]
-		{
-			["statKey"] = "PARRY",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [36]
-		{
-			["statKey"] = "BLOCK",
-			["hidden"] = true,
-			["hideAt"] = 0,
-		}, -- [37]
-		{
-			["statKey"] = "BLACK_GIRLS_CODE",
-			["hidden"] = true,
-		}, -- [38]
-		{
-			["statKey"] = "GIRLS_WHO_CODE",
-			["hidden"] = true,
-		}, -- [39]
-		{
-			["statKey"] = "WOMEN_IN__ANIMATION",
-			["hidden"] = true,
-		}, -- [40]
-		{
-			["statKey"] = "RatingCategory",
-			["hidden"] = true,
-		}, -- [41]
-		{
-			["statKey"] = "CRITCHANCE_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [42]
-		{
-			["statKey"] = "HASTE_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [43]
-		{
-			["statKey"] = "VERSATILITY_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [44]
-		{
-			["statKey"] = "MASTERY_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [45]
-		{
-			["statKey"] = "LIFESTEAL_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [46]
-		{
-			["statKey"] = "AVOIDANCE_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [47]
-		{
-			["statKey"] = "DODGE_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [48]
-		{
-			["statKey"] = "PARRY_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [49]
-		{
-			["statKey"] = "SPEED_RATING",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [50]
-		{
-			["statKey"] = "SPEED",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [51]
-		{
-			["statKey"] = "STAGGER",
-			["roles"] = {
-				"TANK", -- [1]
-			},
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [52]
-		{
-			["statKey"] = "HonorCategory",
-		}, -- [53]
-		{
-			["statKey"] = "HONOR_PROGRESS",
-			["hideAt"] = 0,
-		}, -- [54]
-		{
-			["statKey"] = "HONOR_LEVEL",
-			["hideAt"] = 0,
-		}, -- [55]
-		{
-			["statKey"] = "RATING_2V2",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [56]
-		{
-			["statKey"] = "RATING_RBG",
-			["hideAt"] = 0,
-			["hidden"] = true,
-		}, -- [57]
-		{
-			["statKey"] = "UserCat4",
-		}, -- [58]
-		{
-			["statKey"] = "UserCat5",
-		}, -- [59]
-		{
-			["statKey"] = "UserCat3",
-		}, -- [60]
-		{
-			["statKey"] = "UserCat2",
-		}, -- [61]
-		{
-			["statKey"] = "UserCat1",
-		}, -- [62]
-		["uniqueKey"] = "Jingojaggot:Argent Dawn:2",
 	},
 	["Illingrath:Dalaran:1"] = {
 		{
@@ -12611,13 +12366,258 @@ DCS_ClassSpecDB = {
 		}, -- [60]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
 		}, -- [61]
 		["uniqueKey"] = "Illingrath:Dalaran:1",
+	},
+	["Jingojaggot:Argent Dawn:2"] = {
+		{
+			["statKey"] = "ItemLevelFrame",
+		}, -- [1]
+		{
+			["statKey"] = "GeneralCategory",
+		}, -- [2]
+		{
+			["statKey"] = "HEALTH",
+		}, -- [3]
+		{
+			["statKey"] = "DCS_POWER",
+		}, -- [4]
+		{
+			["statKey"] = "DCS_ALTERNATEMANA",
+		}, -- [5]
+		{
+			["statKey"] = "ITEMLEVEL",
+			["hidden"] = true,
+		}, -- [6]
+		{
+			["statKey"] = "MOVESPEED",
+		}, -- [7]
+		{
+			["statKey"] = "DURABILITY_STAT",
+		}, -- [8]
+		{
+			["statKey"] = "REPAIR_COST",
+		}, -- [9]
+		{
+			["statKey"] = "AttributesCategory",
+		}, -- [10]
+		{
+			["statKey"] = "STRENGTH",
+			["hidden"] = true,
+		}, -- [11]
+		{
+			["statKey"] = "AGILITY",
+			["hidden"] = true,
+		}, -- [12]
+		{
+			["statKey"] = "INTELLECT",
+		}, -- [13]
+		{
+			["statKey"] = "STAMINA",
+		}, -- [14]
+		{
+			["statKey"] = "ARMOR",
+		}, -- [15]
+		{
+			["statKey"] = "OffenseCategory",
+		}, -- [16]
+		{
+			["statKey"] = "ATTACK_DAMAGE",
+			["hidden"] = true,
+		}, -- [17]
+		{
+			["statKey"] = "ATTACK_AP",
+			["hidden"] = true,
+		}, -- [18]
+		{
+			["statKey"] = "DCS_ATTACK_ATTACKSPEED",
+			["hidden"] = true,
+		}, -- [19]
+		{
+			["statKey"] = "WEAPON_DPS",
+			["hidden"] = true,
+		}, -- [20]
+		{
+			["statKey"] = "SPELLPOWER",
+		}, -- [21]
+		{
+			["statKey"] = "MANAREGEN",
+		}, -- [22]
+		{
+			["statKey"] = "ENERGY_REGEN",
+		}, -- [23]
+		{
+			["statKey"] = "DCS_RUNEREGEN",
+			["hidden"] = true,
+		}, -- [24]
+		{
+			["statKey"] = "FOCUS_REGEN",
+		}, -- [25]
+		{
+			["statKey"] = "GCD",
+		}, -- [26]
+		{
+			["statKey"] = "EnhancementsCategory",
+		}, -- [27]
+		{
+			["statKey"] = "CRITCHANCE",
+			["hideAt"] = 0,
+		}, -- [28]
+		{
+			["statKey"] = "HASTE",
+			["hideAt"] = 0,
+		}, -- [29]
+		{
+			["statKey"] = "VERSATILITY",
+			["hideAt"] = 0,
+		}, -- [30]
+		{
+			["statKey"] = "MASTERY",
+			["hideAt"] = 0,
+		}, -- [31]
+		{
+			["statKey"] = "LIFESTEAL",
+			["hideAt"] = 0,
+		}, -- [32]
+		{
+			["statKey"] = "AVOIDANCE",
+			["hideAt"] = 0,
+		}, -- [33]
+		{
+			["statKey"] = "DefenseCategory",
+			["hidden"] = true,
+		}, -- [34]
+		{
+			["statKey"] = "DODGE",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [35]
+		{
+			["statKey"] = "PARRY",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [36]
+		{
+			["statKey"] = "BLOCK",
+			["hidden"] = true,
+			["hideAt"] = 0,
+		}, -- [37]
+		{
+			["statKey"] = "BLACK_GIRLS_CODE",
+			["hidden"] = true,
+		}, -- [38]
+		{
+			["statKey"] = "GIRLS_WHO_CODE",
+			["hidden"] = true,
+		}, -- [39]
+		{
+			["statKey"] = "WOMEN_IN__ANIMATION",
+			["hidden"] = true,
+		}, -- [40]
+		{
+			["statKey"] = "RatingCategory",
+			["hidden"] = true,
+		}, -- [41]
+		{
+			["statKey"] = "CRITCHANCE_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [42]
+		{
+			["statKey"] = "HASTE_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [43]
+		{
+			["statKey"] = "VERSATILITY_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [44]
+		{
+			["statKey"] = "MASTERY_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [45]
+		{
+			["statKey"] = "LIFESTEAL_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [46]
+		{
+			["statKey"] = "AVOIDANCE_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [47]
+		{
+			["statKey"] = "DODGE_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [48]
+		{
+			["statKey"] = "PARRY_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [49]
+		{
+			["statKey"] = "SPEED_RATING",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [50]
+		{
+			["statKey"] = "SPEED",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [51]
+		{
+			["statKey"] = "STAGGER",
+			["roles"] = {
+				"TANK", -- [1]
+			},
+			["hidden"] = true,
+			["hideAt"] = 0,
+		}, -- [52]
+		{
+			["statKey"] = "HonorCategory",
+		}, -- [53]
+		{
+			["statKey"] = "HONOR_PROGRESS",
+			["hideAt"] = 0,
+		}, -- [54]
+		{
+			["statKey"] = "HONOR_LEVEL",
+			["hideAt"] = 0,
+		}, -- [55]
+		{
+			["statKey"] = "RATING_2V2",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [56]
+		{
+			["statKey"] = "RATING_RBG",
+			["hideAt"] = 0,
+			["hidden"] = true,
+		}, -- [57]
+		{
+			["statKey"] = "UserCat4",
+		}, -- [58]
+		{
+			["statKey"] = "UserCat5",
+		}, -- [59]
+		{
+			["statKey"] = "UserCat3",
+		}, -- [60]
+		{
+			["statKey"] = "UserCat2",
+		}, -- [61]
+		{
+			["statKey"] = "UserCat1",
+		}, -- [62]
+		["uniqueKey"] = "Jingojaggot:Argent Dawn:2",
 	},
 	["Rotclaugh:Dalaran:2"] = {
 		{
@@ -12862,8 +12862,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [61]
 		{
 			["statKey"] = "WOMEN_IN__ANIMATION",
@@ -13092,8 +13092,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 		}, -- [52]
 		{
 			["statKey"] = "HonorCategory",
@@ -13374,8 +13374,8 @@ DCS_ClassSpecDB = {
 		}, -- [60]
 		{
 			["statKey"] = "STAGGER",
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -13625,8 +13625,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [61]
 		{
 			["statKey"] = "WOMEN_IN__ANIMATION",
@@ -13801,8 +13801,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hidden"] = false,
 			["hideAt"] = 0,
+			["hidden"] = false,
 		}, -- [42]
 		{
 			["statKey"] = "RatingCategory",
@@ -14120,8 +14120,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [53]
 		["uniqueKey"] = "Datgore:Zul'jin:1",
 	},
@@ -14368,8 +14368,8 @@ DCS_ClassSpecDB = {
 		}, -- [60]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -14568,8 +14568,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [49]
 		{
 			["statKey"] = "HonorCategory",
@@ -14793,8 +14793,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [49]
 		{
 			["statKey"] = "HONOR_PROGRESS",
@@ -15067,8 +15067,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [61]
 		["uniqueKey"] = "Banuumine:Zul'jin:5",
 	},
@@ -15261,8 +15261,8 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -15533,8 +15533,8 @@ DCS_ClassSpecDB = {
 		}, -- [49]
 		{
 			["statKey"] = "STAGGER",
-			["hidden"] = false,
 			["hideAt"] = 0,
+			["hidden"] = false,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -15838,8 +15838,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 		}, -- [61]
 		["uniqueKey"] = "Armaguth:Zul'jin:5",
 	},
@@ -16020,8 +16020,8 @@ DCS_ClassSpecDB = {
 		}, -- [49]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
 			["hidden"] = false,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -16299,8 +16299,8 @@ DCS_ClassSpecDB = {
 		}, -- [55]
 		{
 			["statKey"] = "STAGGER",
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},

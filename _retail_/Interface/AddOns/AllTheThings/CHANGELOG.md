@@ -1,18 +1,17 @@
 # AllTheThings
 
-## [DF-3.1.3](https://github.com/DFortun81/AllTheThings/tree/DF-3.1.3) (2022-12-07)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.1.2...DF-3.1.3) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [DF-3.1.6](https://github.com/DFortun81/AllTheThings/tree/DF-3.1.6) (2022-12-15)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.1.5...DF-3.1.6) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 
-### Logic changes
+### Twitch drops
 
-- Changed popup dialog for incorrect quest reports to have better copyable text.
+Watch eligible The Race to World first streams on Twitch to get free Perpetual Purple Firework toy 🎆 Check out details [here](https://worldofwarcraft.com/en-us/news/23891616).
+
 
 ### Data fixes
 
-- Lots of profession additions.
-- Fixes to lots of Dragon Isles questlines, world quests, dailies, pets, rares, treasures and achievements.
-- Fixes to Dragonflight dungeons/raid and added World Bosses.
-- Updates to many Faction/Renown specific activities (Grand Hunt, Iskaara fishing, etc).
-- Updated Desolace.
+- Fixes to lots of Dragon Isles questlines, world quests, pets, rares, treasures and achievements.
+- Updates to many Faction/Renown specific activities and rewards (Grand Hunt, Iskaara fishing, etc).
+- Updates to the Vault of the Incarnates raid.
 - Other fixes.

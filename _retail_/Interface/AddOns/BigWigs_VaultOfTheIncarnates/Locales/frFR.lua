@@ -33,8 +33,6 @@ if L then
 	-- L.conductive_marks = "Marks" -- Conductive Marks
 	-- L.conductive_mark = "Mark" -- Singular
 
-	-- L.custom_off_chain_lightning = "Chain Lightning is off by default, enable this to enable chain lightning."
-
 	-- L.custom_on_stop_timers = "Always show ability bars"
 	-- L.custom_on_stop_timers_desc = "Abilities that will always be shown: Conductive Mark"
 end
@@ -53,8 +51,6 @@ end
 
 L = BigWigs:NewBossLocale("Dathea, Ascended", "frFR")
 if L then
-	-- L.marks_on_me = "%d Mark" -- {Stacks} Conductive Mark on the player
-
 	-- L.conductive_marks = "Marks"
 	-- L.conductive_mark = "Mark"
 	-- L.raging_burst = "New Tornadoes"
@@ -119,7 +115,7 @@ end
 
 L = BigWigs:NewBossLocale("Raszageth the Storm-Eater", "frFR")
 if L then
-
+	--L.lighting_devastation_trigger = "deep breath" -- Raszageth takes a deep breath...
 end
 
 L = BigWigs:NewBossLocale("Vault of the Incarnates Trash", "frFR")

@@ -402,22 +402,6 @@ function scanner_button:DetectedNewVignette(self, vignetteInfo, isNavigating)
 	if (mapID and mapID == RSConstants.DRAGON_ISLES) then
 		return
 	end
-		
-	-- In Zereth Mortis Firim scrolls are tagged as objects
-	if (mapID and mapID == RSConstants.ZERETH_MORTIS_MAPID and vignetteInfo.atlasName == RSConstants.CONTAINER_ZERETH_FIRIM_VIGNETTE and RSUtils.Contains(RSConstants.FIRIM_EXILE_OBJECTS, entityID)) then
-		-- Ignore if achievement completed
-		local _, _, _, achievementCompleted, _, _, _, _, _, _ = GetAchievementInfo(RSConstants.TALES_OF_EXILE_ACHIEVEMENT_ID);
-		if (achievementCompleted) then
-			return
-		end
-		
-		-- Ignore if opened (so far is bugged and the vignette is still there)
-		if (RSContainerDB.IsContainerOpened(entityID)) then
-			return
-		end
-		
-		vignetteInfo.atlasName = RSConstants.CONTAINER_VIGNETTE
-	end
 	
 	-- In Uldum and Valley of eternal Blossoms the icon for elite NPC is used for events
 	if (mapID and vignetteInfo.atlasName == RSConstants.NPC_VIGNETTE_ELITE and (mapID == RSConstants.VALLEY_OF_ETERNAL_BLOSSOMS_MAPID or mapID == RSConstants.ULDUM_MAPID)) then
@@ -445,6 +429,29 @@ function scanner_button:DetectedNewVignette(self, vignetteInfo, isNavigating)
 	end
 
 	if (not isNavigating) then
+		-- Ignore if hidden quest is completed
+		if (RSConfigDB.IsIgnoringCompletedEntities()) then
+			if (RSConstants.IsNpcAtlas(vignetteInfo.atlasName)) then
+				if (RSNpcDB.GetInternalNpcInfo(entityID) and RSNpcDB.GetInternalNpcInfo(entityID).questID) then
+					for _, questID in ipairs(RSNpcDB.GetInternalNpcInfo(entityID).questID) do
+						if (C_QuestLog.IsQuestFlaggedCompleted(questID)) then
+							RSLogger:PrintDebugMessage(string.format("Detectado NPC [%s] con misión oculta completa, se ignora.", entityID))
+							return
+						end
+					end
+				end
+			elseif (RSConstants.IsContainerAtlas(vignetteInfo.atlasName)) then
+				if (RSContainerDB.GetInternalContainerInfo(entityID) and RSContainerDB.GetInternalContainerInfo(entityID).questID) then
+					for _, questID in ipairs(RSContainerDB.GetInternalContainerInfo(entityID).questID) do
+						if (C_QuestLog.IsQuestFlaggedCompleted(questID)) then
+							RSLogger:PrintDebugMessage(string.format("Detectado Contenedor [%s] con misión oculta completa, se ignora.", entityID))
+							return
+						end
+					end
+				end
+			end
+		end
+		
 		-- If the vignette is simulated
 		if (vignetteInfo.x and vignetteInfo.y) then
 			local coordinates = {}
@@ -599,7 +606,14 @@ function scanner_button:DetectedNewVignette(self, vignetteInfo, isNavigating)
 		-- Show the button
 		if (not self:IsShown() or isNavigating or not RSConfigDB.IsDisplayingNavigationArrows() or not RSConfigDB.IsNavigationLockEnabled()) then
 			self.npcID = entityID
-			self.name = vignetteInfo.name
+			-- Sometimes the vignette name doesn't match the servers name
+			-- Let's try to use always the servers
+			if (RSConstants.IsNpcAtlas(vignetteInfo.atlasName)) then
+				local npcName = RSNpcDB.GetNpcName(entityID)
+				self.name = npcName and npcName or vignetteInfo.name
+			else
+				self.name = vignetteInfo.name
+			end
 			self.preEvent = vignetteInfo.preEvent
 			self.atlasName = vignetteInfo.atlasName
 

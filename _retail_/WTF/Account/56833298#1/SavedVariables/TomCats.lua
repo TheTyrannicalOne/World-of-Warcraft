@@ -1,5 +1,8 @@
 
 TomCats_Account = {
+	["errorLog"] = {
+		["version"] = "2.4.43",
+	},
 	["hallowsend"] = {
 		["iconScale"] = 1,
 		["autoEnabled"] = true,
@@ -18,20 +21,6 @@ TomCats_Account = {
 	},
 	["loveisintheair"] = {
 		["characters"] = {
-			["Player-3683-0B9BB303"] = {
-				["bracelets"] = 0,
-				["class"] = "MAGE",
-				["boxes"] = 0,
-				["charms"] = 0,
-				["tokens"] = 102,
-				["level"] = 51,
-				["name"] = "Darnastris",
-				["faction"] = "Alliance",
-				["completedDungeon"] = true,
-				["timestamp"] = 1645403068,
-				["canLootMount"] = true,
-				["realm"] = "Dalaran",
-			},
 			["Player-75-058380E2"] = {
 				["bracelets"] = 0,
 				["class"] = "WARRIOR",
@@ -45,6 +34,20 @@ TomCats_Account = {
 				["level"] = 60,
 				["canLootMount"] = true,
 				["realm"] = "ArgentDawn",
+			},
+			["Player-96-0CBEA15E"] = {
+				["bracelets"] = 0,
+				["class"] = "DRUID",
+				["boxes"] = 0,
+				["charms"] = 0,
+				["tokens"] = 97,
+				["level"] = 51,
+				["name"] = "Durlok",
+				["faction"] = "Horde",
+				["completedDungeon"] = true,
+				["timestamp"] = 1645398493,
+				["canLootMount"] = true,
+				["realm"] = "BlackDragonflight",
 			},
 			["Player-3683-0BE4455C"] = {
 				["bracelets"] = 0,
@@ -102,26 +105,26 @@ TomCats_Account = {
 				["canLootMount"] = true,
 				["realm"] = "Dalaran",
 			},
-			["Player-96-0CBEA15E"] = {
+			["Player-3683-0B9BB303"] = {
 				["bracelets"] = 0,
-				["class"] = "DRUID",
+				["class"] = "MAGE",
 				["boxes"] = 0,
 				["charms"] = 0,
-				["tokens"] = 97,
+				["tokens"] = 102,
 				["level"] = 51,
-				["name"] = "Durlok",
-				["faction"] = "Horde",
+				["name"] = "Darnastris",
+				["faction"] = "Alliance",
 				["completedDungeon"] = true,
-				["timestamp"] = 1645398493,
+				["timestamp"] = 1645403068,
 				["canLootMount"] = true,
-				["realm"] = "BlackDragonflight",
+				["realm"] = "Dalaran",
 			},
 		},
 		["preferences"] = {
 		},
 	},
 	["discoveriesVersion"] = "2.4.35",
-	["lastVersionSeen"] = "2.4.41",
+	["lastVersionSeen"] = "2.4.43",
 	["preferences"] = {
 		["dragonGlyphsTipShown"] = true,
 		["TomCats-LunarFestivalMinimapButton"] = {
@@ -174,22 +177,22 @@ TomCats_Account = {
 			},
 			["dimmedItems"] = {
 				["Shanyt-Argent Dawn"] = {
-					["EARTH"] = 0,
 					["FIRE"] = 0,
-					["WATER"] = 0,
+					["EARTH"] = 0,
 					["AIR"] = 0,
+					["WATER"] = 0,
 				},
 				["Alatra-Zul'jin"] = {
-					["EARTH"] = 0,
 					["FIRE"] = 0,
-					["WATER"] = 1,
+					["EARTH"] = 0,
 					["AIR"] = 0,
+					["WATER"] = 1,
 				},
 				["Galvarton-Dalaran"] = {
-					["EARTH"] = 0,
 					["FIRE"] = 2,
-					["WATER"] = 0,
+					["EARTH"] = 0,
 					["AIR"] = 0,
+					["WATER"] = 0,
 				},
 			},
 			["eligibleClasses"] = {
@@ -210,6 +213,7 @@ TomCats_Account = {
 		},
 	},
 	["discoveries"] = {
+		["version"] = "0",
 		["vignetteAtlases"] = {
 		},
 		["vignettes"] = {

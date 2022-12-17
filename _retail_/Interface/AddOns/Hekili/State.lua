@@ -94,6 +94,7 @@ state.empowerment = {
     stages = {}
 }
 state.max_empower = 3
+state.empowering = {}
 
 state.health = {
     max = 1,
@@ -140,16 +141,16 @@ state.player = {
     channel_spell = nil
 }
 state.prev = {
-    meta = 'castsAll',
-    history = { "no_action", "no_action", "no_action", "no_action", "no_action" }
+    meta = "castsAll",
+    history = { "no_action", "no_action", "no_action", "no_action", "no_action", "no_action", "no_action", "no_action", "no_action", "no_action" }
 }
 state.prev_gcd = {
-    meta = 'castsOn',
-    history = { "no_action", "no_action", "no_action", "no_action", "no_action" }
+    meta = "castsOn",
+    history = { "no_action", "no_action", "no_action", "no_action", "no_action", "no_action", "no_action", "no_action", "no_action", "no_action" }
 }
 state.prev_off_gcd = {
-    meta = 'castsOff',
-    history = { "no_action", "no_action", "no_action", "no_action", "no_action" }
+    meta = "castsOff",
+    history = { "no_action", "no_action", "no_action", "no_action", "no_action", "no_action", "no_action", "no_action", "no_action", "no_action" }
 }
 state.predictions = {}
 state.predictionsOff = {}
@@ -2887,11 +2888,9 @@ do
                     duration = class.abilities[ "ascendance" ].cooldown
 
                 elseif t.key == "potion" then
-                    local itemName = state.args.ModName or state.args.name or class.potion
-                    local potion = class.potions[ itemName ]
-
-                    if state.toggle.potions and potion and GetItemCount( potion.item ) > 0 then
-                        start, duration = GetItemCooldown( potion.item )
+                    local potion = class.abilities.potion.item
+                    if state.toggle.potions and potion then
+                        start, duration = GetItemCooldown( potion )
 
                     else
                         start = state.now
@@ -3029,7 +3028,7 @@ do
                 local reduction = ( state.query_time - lastCast ) / ( t.duration - t.remains )
                 return t.remains * reduction
 
-            elseif k == "duration_guess" then
+            elseif k == "duration_guess" or k == "duration_expected" then
                 if t.remains == t.duration then return t.duration end
 
                 -- not actually the same as simc here, which tracks when CDs charge.
@@ -3155,9 +3154,9 @@ local mt_prev_lookup = {
         local preds, prev
         local action
 
-        if t.meta == 'castsAll' then preds, prev = state.predictions, state.prev
-        elseif t.meta == 'castsOn' then preds, prev = state.predictionsOn, state.prev_gcd
-        elseif t.meta == 'castsOff' then preds, prev = state.predictionsOff, state.prev_off_gcd end
+        if     t.meta == "castsAll" then preds, prev = state.predictions   , state.prev
+        elseif t.meta == "castsOn"  then preds, prev = state.predictionsOn , state.prev_gcd
+        elseif t.meta == "castsOff" then preds, prev = state.predictionsOff, state.prev_off_gcd end
 
         if k == "spell" then
             -- Return the actual spell for the slot, for lookups.
@@ -3209,8 +3208,6 @@ do
     mt_prev = {
         __index = function( t, k )
             if type( k ) == "number" then
-                -- This is a SimulationCraft 7.1.5 or later indexed lookup, we support up to #5.
-                if k < 1 or k > 5 then return false end
                 prev_lookup.meta = t.meta -- Which data to use? castsAll, castsOn (GCD), castsOff (offGCD)?
                 prev_lookup.index = k
                 return prev_lookup
@@ -5160,6 +5157,13 @@ local mt_aura = {
 }
 
 
+local mt_empowering = {
+    __index = function( t, k )
+        return state.empowerment.active and state.empowerment.spell == k
+    end
+}
+
+
 setmetatable( state, mt_state )
 setmetatable( state.action, mt_actions )
 setmetatable( state.active_dot, mt_active_dot )
@@ -5168,6 +5172,7 @@ setmetatable( state.buff, mt_buffs )
 setmetatable( state.cooldown, mt_cooldowns )
 setmetatable( state.debuff, mt_debuffs )
 setmetatable( state.dot, mt_dot )
+setmetatable( state.empowering, mt_empowering )
 setmetatable( state.equipped, mt_equipped )
 setmetatable( state.main_hand, mt_weapon_type )
 setmetatable( state.off_hand, mt_weapon_type )
@@ -6087,9 +6092,9 @@ function state:RunHandler( key, noStart )
 
     self.history.casts[ key ] = self.query_time
 
-    self.predictions[6] = nil
-    self.predictionsOn[6] = nil
-    self.predictionsOff[6] = nil
+    self.predictions[11] = nil
+    self.predictionsOn[11] = nil
+    self.predictionsOff[11] = nil
 
     self.prev.override = nil
     self.prev_gcd.override = nil

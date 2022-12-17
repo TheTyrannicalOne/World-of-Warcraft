@@ -1,6 +1,6 @@
 
 WITDB = {
-	["Version"] = "v4.0.14",
+	["Version"] = "v4.0.15",
 	["Settings"] = {
 		["FarmPlannerIds"] = {
 		},
@@ -25,9 +25,9 @@ WITDB = {
 		["BelowTresholdValue"] = 1,
 		["TUJCustomItemPrices"] = {
 		},
-		["PricingSelect"] = "DBMarket",
-		["LegacyCustomPriceSource"] = "DBMinBuyout",
 		["RecorderMinQuality"] = 1,
+		["LegacyCustomPriceSource"] = "DBMinBuyout",
+		["PricingSelect"] = "DBMarket",
 		["TUJLegacyCustomPriceSource"] = "market",
 		["TUJCustomPriceSource"] = "market",
 		["BagValueMinQuality"] = 1,

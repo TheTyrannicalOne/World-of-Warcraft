@@ -77,6 +77,7 @@ L["Hall of Ancient Paths"] = "Hall des Voies antiques"
 L["Sanctum of the Sages"] = "Sanctum des Sages"
 L["Rustbolt"] = "Mécarouille"
 L["Oribos"] = "Oribos"
+L["Valdrakken"] = "Valdrakken"
 
 -- Display
 L["DisplayOptions"] = "Affichage"

@@ -83,10 +83,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163874::::::::120:71::28:5:5125:6516:6513:1637:4786:::|h[Honorbound Decapitator]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 190483,
-			["Level"] = 335,
+			["ID"] = 190487,
+			["Level"] = 337,
 			["AlsoFitsIn"] = 16,
-			["Link"] = "|cff0070dd|Hitem:190483::::::::70:71::13:3:8851:8852:8799:5:28:2164:29:32:30:36:38:5:40:179:::::|h[Draconium Dirk |A:Professions-ChatIcon-Quality-Tier2:17:23::1|a]|h|r",
+			["Link"] = "|cff0070dd|Hitem:190487::::::::70:71::13:3:8851:8852:8800:5:28:2164:29:32:30:49:38:6:40:175:::::|h[Draconium Axe |A:Professions-ChatIcon-Quality-Tier3:17:18::1|a]|h|r",
 		}, -- [17]
 	},
 	["AutoSelectScales"] = true,

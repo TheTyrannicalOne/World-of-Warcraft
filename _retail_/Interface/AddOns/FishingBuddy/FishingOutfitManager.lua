@@ -99,6 +99,7 @@ FishingBuddy.OutfitManager.Switch = function(outfitname)
 	if ( not FishingBuddy.CheckCombat() and HasManager() ) then
 		local outfitter = FishingBuddy.GetSetting("OutfitManager");
 		if ( outfitter and OutfitManagers[outfitter] ) then
+			-- FL:CancelBuff(394009)
 			local willBePole = OutfitManagers[outfitter].Switch(outfitname);
 			if ( willBePole ~= nil ) then
 				-- if we're now sporting a fishing pole, let's go fishing

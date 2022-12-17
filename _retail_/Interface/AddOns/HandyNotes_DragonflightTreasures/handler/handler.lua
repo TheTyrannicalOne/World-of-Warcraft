@@ -9,7 +9,7 @@ ns.HL = HL
 local HBD = LibStub("HereBeDragons-2.0")
 local LibDD = LibStub:GetLibrary("LibUIDropDownMenu-4.0")
 
-ns.DEBUG = GetAddOnMetadata(myname, "Version") == 'v26'
+ns.DEBUG = GetAddOnMetadata(myname, "Version") == '@'..'project-version@'
 
 ns.CLASSIC = WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE
 
@@ -91,8 +91,11 @@ function ns.RegisterPoints(zone, points, defaults)
             points[coord] = nodeType(point)
         end
     end
-    ns.merge(ns.points[zone], points)
     for coord, point in pairs(points) do
+        if ns.DEBUG and ns.points[zone][coord] then
+            print(myname, "point collision", zone, coord)
+        end
+        ns.points[zone][coord] = point
         point._coord = coord
         point._uiMapID = zone
         intotable(ns.POIsToPoints, point.areaPoi, point)
@@ -131,7 +134,7 @@ function ns.RegisterPoints(zone, points, defaults)
                     minimap=true, worldmap=false, scale=0.95,
                     note=nearby.note or false,
                     loot=nearby.loot, active=nearby.active,
-                    _coord=rcoord, _uiMapID=zone,
+                    _coord=ncoord, _uiMapID=zone,
                 }, proxy_meta)
                 if nearby.color then
                     npoint.texture = ns.atlas_texture(npoint.atlas, nearby.color)
@@ -140,20 +143,17 @@ function ns.RegisterPoints(zone, points, defaults)
             end
         end
         if point.related then
-            -- like
+            local relatedNode = ns.nodeMaker(setmetatable({
+                label=point.npc and "Related to nearby NPC" or "Related to nearby treasure",
+                atlas="playerpartyblip",
+                texture=false,
+                note=false,
+                route=coord,
+                _uiMapID=zone,
+            }, proxy_meta))
             for rcoord, related in pairs(point.related) do
-                local rpoint = setmetatable({
-                    label=related.label or (point.npc and "Related to nearby NPC" or "Related to nearby treasure"),
-                    atlas=related.atlas or "playerpartyblip",
-                    texture=related.texture or false, scale=0.95, minimap=true, worldmap=true,
-                    note=related.note or false,
-                    loot=related.loot,
-                    active=related.active, requires=related.requires, hide_before=related.hide_before, inbag=related.inbag,
-                    route=coord,
-                    _coord=rcoord, _uiMapID=zone,
-                }, proxy_meta)
-                if related.minimap ~= nil then rpoint.minimap = related.minimap end
-                if related.worldmap ~= nil then rpoint.worldmap = related.worldmap end
+                local rpoint = relatedNode(related)
+                rpoint._coord = rcoord
                 if related.color then
                     rpoint.texture = ns.atlas_texture(rpoint.atlas, related.color)
                 end
@@ -255,6 +255,7 @@ ns.playerClassMask = ({
 
 function ns.GetCriteria(achievement, criteriaid)
     local retOK, criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaID, eligible = pcall(criteriaid < 100 and GetAchievementCriteriaInfo or GetAchievementCriteriaInfoByID, achievement, criteriaid, true)
+    if not retOK then return end
     return criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaID, eligible
 end
 

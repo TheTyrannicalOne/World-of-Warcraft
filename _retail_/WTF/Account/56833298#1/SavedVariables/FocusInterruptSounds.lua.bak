@@ -11,10 +11,10 @@ FocusInterruptSoundsDB = {
 		["Darnastris - Dalaran"] = "MAGE",
 		["Zulbathal - Zul'jin"] = "DRUID",
 		["Shanyt - Argent Dawn"] = "WARRIOR",
-		["Durlok - Black Dragonflight"] = "DRUID",
+		["Valmagus - Zul'jin"] = "PALADIN",
 		["Neltharigos - Zul'jin"] = "EVOKER",
 		["Galvarton - Dalaran"] = "DRUID",
-		["Valmagus - Zul'jin"] = "PALADIN",
+		["Durlok - Black Dragonflight"] = "DRUID",
 		["Okona - Zul'jin"] = "PRIEST",
 	},
 	["profiles"] = {

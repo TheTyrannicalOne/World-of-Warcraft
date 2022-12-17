@@ -1327,7 +1327,6 @@ function Spy:CreateKoSButton()
 		Spy.KoSButton.Border:SetWidth(44)
 		Spy.KoSButton.Border:SetHeight(44)
 		Spy.KoSButton.Border:SetPoint("CENTER", 11, -12)
---		Spy.KoSButton:Raise()
 		Spy.KoSButton:SetFrameLevel(505)
 
 		Spy.KoSButton:SetScript("OnMouseDown", function(self, button)
@@ -1347,7 +1346,7 @@ function Spy:CreateKoSButton()
 	end
 end
 
---hooksecurefunc("TargetFrame_Update", function() 
+--hooksecurefunc("TargetFrame_Update", function()
 hooksecurefunc(TargetFrame, "Update", function() -- Patch 10.0 change
 	if Spy.db.profile.ShowKoSButton then
 		if (UnitIsEnemy("player","target") and UnitIsPlayer("target")) then

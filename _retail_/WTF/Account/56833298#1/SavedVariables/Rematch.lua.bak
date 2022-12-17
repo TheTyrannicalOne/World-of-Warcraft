@@ -69,13 +69,13 @@ RematchSettings = {
 		},
 		["Strong"] = {
 		},
-		["Similar"] = {
+		["Sources"] = {
 		},
 		["Breed"] = {
 		},
 		["Rarity"] = {
 		},
-		["Sources"] = {
+		["Similar"] = {
 		},
 		["Level"] = {
 		},

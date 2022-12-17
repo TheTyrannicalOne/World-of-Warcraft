@@ -37,19 +37,6 @@ TalentTreeTweaksDB = {
 				["r"] = 0,
 			},
 		},
-		["DebugNodeInfo"] = {
-			["viragDevTool"] = true,
-			["luaBrowser"] = true,
-			["slashDump"] = false,
-			["addButtonToTable"] = true,
-			["tinspect"] = true,
-		},
-		["RespecButtons"] = {
-		},
-		["ScaleTalentFrame"] = {
-		},
-		["ExportInspectedBuild"] = {
-		},
 		["TooltipIds"] = {
 			["professionTooltip"] = {
 				["enabled"] = true,
@@ -65,6 +52,21 @@ TalentTreeTweaksDB = {
 				["definitionId"] = false,
 				["entryId"] = true,
 			},
+		},
+		["DebugNodeInfo"] = {
+			["viragDevTool"] = true,
+			["luaBrowser"] = true,
+			["slashDump"] = false,
+			["addButtonToTable"] = true,
+			["tinspect"] = true,
+		},
+		["RespecButtons"] = {
+		},
+		["ScaleTalentFrame"] = {
+		},
+		["ExportInspectedBuild"] = {
+		},
+		["ImportIntoCurrentLoadout"] = {
 		},
 	},
 }

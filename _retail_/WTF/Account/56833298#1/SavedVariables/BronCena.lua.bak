@@ -11,10 +11,10 @@ BronCenaDB = {
 		["Darnastris - Dalaran"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
+		["Valmagus - Zul'jin"] = "Default",
 		["Neltharigos - Zul'jin"] = "Default",
 		["Galvarton - Dalaran"] = "Default",
-		["Valmagus - Zul'jin"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
 		["Okona - Zul'jin"] = "Default",
 	},
 	["profiles"] = {
@@ -24,7 +24,7 @@ BronCenaDB = {
 					["handle"] = 246700,
 				},
 				["333961"] = {
-					["handle"] = 67294,
+					["handle"] = 89298,
 				},
 			},
 		},

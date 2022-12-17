@@ -37,6 +37,8 @@ TalentTreeTweaksDB = {
 				["b"] = 1,
 			},
 		},
+		["ImportIntoCurrentLoadout"] = {
+		},
 		["DebugNodeInfo"] = {
 			["viragDevTool"] = true,
 			["luaBrowser"] = true,

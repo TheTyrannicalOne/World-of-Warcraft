@@ -1135,7 +1135,7 @@ do
     end )
 
     RegisterUnitEvent( "UNIT_SPELLCAST_EMPOWER_STOP", "player", nil, function( event, unit, cast, spellID )
-        empowerment.spell = nil
+        empowerment.spell = "none"
 
         empowerment.start = 0
         empowerment.finish = 0
@@ -2308,6 +2308,7 @@ if Hekili.IsWrath() then
     RegisterEvent( "ACTIVE_TALENT_GROUP_CHANGED", DelayedUpdateKeybindings )
 else
     RegisterUnitEvent( "PLAYER_SPECIALIZATION_CHANGED", "player", nil, DelayedUpdateKeybindings )
+    RegisterEvent( "TRAIT_CONFIG_UPDATED", DelayedUpdateKeybindings )
 end
 
 

@@ -13,6 +13,8 @@ ns.FACTION_DRAGONSCALE = 2507
 ns.FACTION_VALDRAKKEN = 2510
 ns.FACTION_ISKAARA = 2511
 
+-- 67030 completes alongside 66221 (moving on) and 72366; it's then also completed on any alts, unlike the others
+-- (It's what's in the vignettes as a condition for visibility)
 ns.MAXLEVEL = {ns.conditions.QuestComplete(67030), ns.conditions.Level(70)}
 ns.DRAGONRIDING = ns.conditions.SpellKnown(376777)
 
@@ -30,24 +32,30 @@ ns.PROF_DF_MINING = 2833
 ns.PROF_DF_SKINNING = 2834
 ns.PROF_DF_TAILORING = 2831 -- spell: 366258
 
-ns.hiddenConfig = {
-    groupsHidden = true,
-}
+ns.hiddenConfig = {}
 
-ns.defaults.profile.groupsHiddenByZone[ns.WAKINGSHORES] = {
+ns.defaults.profile.groupsHidden = {
     scoutpack = true,
-}
-ns.defaults.profile.groupsHiddenByZone[ns.OHNAHRANPLAINS] = {
-    scoutpack = true,
+    disturbeddirt = true,
+    tuskarrchests = true,
+    warsupply = true,
 }
 
 ns.groups["junk"] = BAG_FILTER_JUNK
 ns.groups["scoutpack"] = "Expedition Scout's Pack"
+ns.groups["disturbeddirt"] = "{spell:340561:Disturbed Dirt}"
+ns.groups["tuskarrchests"] = "{item:200071:Sacred Tuskarr Totem}"
+ns.groups["warsupply"] = "War Supply Chest"
 ns.groups["glyphs"] = "Dragon Glyphs"
 ns.groups["dailymount"] = "Daily Mounts"
 ns.groups["races"] = "{achievement:15939:Dragon Racing Completionist}"
 ns.groups["professionknowledge"] = "Profession Knowledge"
 ns.groups["hunts"] = "{achievement:16540:Hunt Master}"
+
+ns.SUPERRARE = ns.nodeMaker{
+    texture=ns.atlas_texture("VignetteKillElite", {r=1, g=0.5, b=1, scale=1.5}),
+    note="This is a \"super rare\" which can drop higher level loot",
+}
 
 -- Intro:
 -- Talked to Azurathel: 72285
@@ -59,7 +67,3 @@ ns.groups["hunts"] = "{achievement:16540:Hunt Master}"
 -- Talked to Lethanak at the Life Pools: 72059
 
 -- unlocked dragon customization: 68797
-
--- TODO achievements:
--- Selfie achievements: Framing A New Perspective (16634), That's Pretty Neat! (16446)
--- Fragments of History (16323)

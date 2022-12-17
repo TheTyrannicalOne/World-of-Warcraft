@@ -7,7 +7,7 @@ local fonts = SM:List("font")
 local _
 
 Spy = LibStub("AceAddon-3.0"):NewAddon("Spy", "AceConsole-3.0", "AceEvent-3.0", "AceComm-3.0", "AceTimer-3.0")
-Spy.Version = "3.9.4"
+Spy.Version = "3.9.5"
 Spy.DatabaseVersion = "1.1"
 Spy.Signature = "[Spy]"
 Spy.ButtonLimit = 15
@@ -171,6 +171,7 @@ Spy.options = {
 						["Magni's Encampment"] = L["Magni's Encampment"],
 						["Rustbolt"] = L["Rustbolt"],
 						["Oribos"] = L["Oribos"],
+						["Valdrakken"] = L["Valdrakken"],
 					},
 				},
 				ShowOnDetection = {
@@ -769,7 +770,7 @@ Spy.options = {
 								["Dark Iron Dwarf"] = L["Dark Iron Dwarf"],
 								["Kul Tiran"] = L["Kul Tiran"],
 								["Mechagnome"] = L["Mechagnome"],
-								["Dracthyr"] = L["Dracthyr"],								
+								["Dracthyr"] = L["Dracthyr"],
 							},
 							Horde = {
 								["None"] = L["None"],
@@ -785,7 +786,7 @@ Spy.options = {
 								["Mag'har Orc"] = L["Mag'har Orc"],
 								["Zandalari Troll"] = L["Zandalari Troll"],
 								["Vulpera"] = L["Vulpera"],
-								["Dracthyr"] = L["Dracthyr"],								
+								["Dracthyr"] = L["Dracthyr"],
 							},
 						}
 						if Spy.EnemyFactionName == "Alliance" then
@@ -1338,7 +1339,7 @@ local Default_Profile = {
 				["DEATHKNIGHT"] = { r = 0.77, g = 0.12, b = 0.23, a = 0.6 },
 				["MONK"] = { r = 0.00, g = 1.00, b = 0.60, a = 0.6 },
 				["DEMONHUNTER"] = { r = 0.64, g = 0.19, b = 0.79, a = 0.6 },
-				["EVOKER"] = { r = 0.20, g = 0.58, b = 0.50, a = 0.6 },				
+				["EVOKER"] = { r = 0.20, g = 0.58, b = 0.50, a = 0.6 },
 				["PET"] = { r = 0.09, g = 0.61, b = 0.55, a = 0.6 },
 				["MOB"] = { r = 0.58, g = 0.24, b = 0.63, a = 0.6 },
 				["UNKNOWN"] = { r = 0.1, g = 0.1, b = 0.1, a = 0.6 },
@@ -1451,6 +1452,7 @@ local Default_Profile = {
 			["Magni's Encampment"] = false,
 			["Rustbolt"] = false,
 			["Oribos"] = false,
+			["Valdrakken"] = false,
 		},
 	},
 }
@@ -1784,7 +1786,7 @@ function Spy:OnInitialize()
 		["DEATHKNIGHT"] = true,
 		["MONK"] = true,
 		["DEMONHUNTER"] = true,
-		["EVOKER"] = true,		
+		["EVOKER"] = true,
 	}
 
 	Spy.ValidRaces = {
@@ -1811,7 +1813,7 @@ function Spy:OnInitialize()
 		["ZandalariTroll"] = true,
 		["Mechagnome"] = true,
 		["Vulpera"] = true,
-		["Dracthyr"] = true,		
+		["Dracthyr"] = true,
 	}
 
 	local acedb = LibStub:GetLibrary("AceDB-3.0")

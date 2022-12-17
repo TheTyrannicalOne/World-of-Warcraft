@@ -108,7 +108,7 @@ FishingBuddy_Info = {
 		[1355002] = 0,
 		[534001] = 0,
 		[1462001] = 0,
-		[1525002] = 0,
+		[534002] = 0,
 		[1462003] = 0,
 		[1462004] = 0,
 		[1462005] = 0,
@@ -120,9 +120,9 @@ FishingBuddy_Info = {
 		[42001] = 0,
 		[1536001] = 0,
 		[1533001] = 0,
-		[210001] = 0,
-		[76001] = 0,
 		[107001] = 0,
+		[76001] = 0,
+		[210001] = 0,
 		[102001] = 0,
 		[630005] = 0,
 		[1161001] = 0,
@@ -137,7 +137,7 @@ FishingBuddy_Info = {
 		[198001] = 0,
 		[241001] = 0,
 		[76003] = 0,
-		[534002] = 0,
+		[1525002] = 0,
 	},
 	["DataFish"] = 0,
 	["KnownZones"] = {
@@ -150,12 +150,12 @@ FishingBuddy_Info = {
 		[619] = "Margoss's Retreat",
 		[126] = "Cantrips & Crows",
 		[198] = "Nordrassil",
-		[42] = "Karazhan",
-		[627] = "The Eventide",
-		[107] = "Nagrand",
-		[1565] = "Emerald Glade",
-		[1462] = "Broken Point",
 		[1525] = "Dredgewood",
+		[627] = "The Eventide",
+		[76] = "The Ruined Reaches",
+		[51] = "The Forbidding Sea",
+		[1462] = "Broken Point",
+		[42] = "Karazhan",
 		[1536] = "Nurakkir",
 		[1527] = "Uldum",
 		[119] = "Wintergrasp River",
@@ -163,15 +163,15 @@ FishingBuddy_Info = {
 		[123] = "Wintergrasp",
 		[102] = "Coilfang Reservoir",
 		[534] = "Hellfire Citadel",
-		[1533] = "Bastion",
-		[51] = "The Forbidding Sea",
+		[1161] = "Proudmoore Keep",
+		[1565] = "Emerald Glade",
 		[71] = "Gadgetzan",
 		[1970] = "Circle of Thought",
-		[1161] = "Proudmoore Keep",
+		[1533] = "Bastion",
 		[630] = "El'dranil Shallows",
+		[107] = "Nagrand",
 		[210] = "Southern Savage Coast",
 		[241] = "Loch Verrall",
-		[76] = "The Ruined Reaches",
 	},
 	["FishingHoles"] = {
 		[76002] = {
@@ -193,12 +193,12 @@ FishingBuddy_Info = {
 			[171441] = 1,
 			[173038] = 7,
 			[177025] = 2,
-			[177027] = 3,
+			[187662] = 1,
 			[173043] = 2,
 			[180286] = 4,
 			[180168] = 2,
+			[177027] = 3,
 			[173037] = 32,
-			[187662] = 1,
 		},
 		[51001] = {
 			[45194] = 1,
@@ -231,12 +231,12 @@ FishingBuddy_Info = {
 			[45194] = 87,
 			[45202] = 3,
 			[45195] = 2,
-			[43653] = 74,
+			[43698] = 1,
 			[45196] = 90,
 			[3371] = 135,
 			[45197] = 2,
 			[45190] = 65,
-			[43698] = 1,
+			[43653] = 74,
 			[43571] = 807,
 			[45199] = 4,
 			[43572] = 365,
@@ -303,17 +303,17 @@ FishingBuddy_Info = {
 			[187920] = 1,
 		},
 		[534001] = {
-			[118391] = 1,
-			[127759] = 1,
 			[127994] = 3,
+			[127759] = 1,
 			[127991] = 8,
+			[118391] = 1,
 		},
 		[1462001] = {
 			[168262] = 87,
 			[154779] = 2,
 			[152546] = 35,
-			[167655] = 1,
 			[154785] = 1,
+			[167655] = 1,
 			[154787] = 3,
 			[167661] = 1,
 			[166971] = 2,
@@ -326,8 +326,8 @@ FishingBuddy_Info = {
 			[166970] = 1,
 			[154796] = 1,
 		},
-		[1525002] = {
-			[173036] = 1,
+		[534002] = {
+			[127991] = 3,
 		},
 		[1462003] = {
 			[152546] = 2,
@@ -397,8 +397,8 @@ FishingBuddy_Info = {
 		[42001] = {
 			[45198] = 6,
 			[45200] = 4,
-			[27422] = 9,
 			[45190] = 5,
+			[27422] = 9,
 			[33824] = 1,
 			[45194] = 1,
 			[45196] = 5,
@@ -417,17 +417,17 @@ FishingBuddy_Info = {
 			[173040] = 1,
 			[173034] = 6,
 		},
-		[210001] = {
-			[6359] = 1,
-			[6358] = 2,
+		[107001] = {
+			[152546] = 1,
+			[162515] = 1,
 		},
 		[76001] = {
 			[6361] = 4,
 			[6303] = 2,
 		},
-		[107001] = {
-			[152546] = 1,
-			[162515] = 1,
+		[210001] = {
+			[6359] = 1,
+			[6358] = 2,
 		},
 		[102001] = {
 			[187915] = 1,
@@ -538,8 +538,8 @@ FishingBuddy_Info = {
 			[124107] = 1,
 			[133607] = 108,
 			[124108] = 1,
-			[141975] = 2,
 			[124109] = 1,
+			[141975] = 2,
 			[124110] = 2,
 		},
 		[1525001] = {
@@ -563,8 +563,8 @@ FishingBuddy_Info = {
 			[6303] = 5,
 			[6358] = 3,
 		},
-		[534002] = {
-			[127991] = 3,
+		[1525002] = {
+			[173036] = 1,
 		},
 	},
 	["Version"] = 19500,
@@ -1160,12 +1160,11 @@ FishingBuddy_Info = {
 			["texture"] = 132891,
 			["quality"] = 0,
 		},
-		[181956] = {
-			["enUS"] = "Bloodthroated Grouper",
-			["canopen"] = false,
-			["quality"] = 1,
-			["quest"] = true,
-			["texture"] = 133892,
+		[9779] = {
+			["color"] = "ff1eff00",
+			["enUS"] = "Bandit Cloak",
+			["texture"] = 133771,
+			["quality"] = 2,
 		},
 		[858] = {
 			["enUS"] = "Lesser Healing Potion",
@@ -1177,11 +1176,12 @@ FishingBuddy_Info = {
 			["texture"] = 132799,
 			["quality"] = 1,
 		},
-		[9779] = {
-			["color"] = "ff1eff00",
-			["enUS"] = "Bandit Cloak",
-			["texture"] = 133771,
-			["quality"] = 2,
+		[181956] = {
+			["enUS"] = "Bloodthroated Grouper",
+			["canopen"] = false,
+			["quality"] = 1,
+			["quest"] = true,
+			["texture"] = 133892,
 		},
 		[6309] = {
 			["enUS"] = "17 Pound Catfish",
@@ -1193,9 +1193,9 @@ FishingBuddy_Info = {
 			["texture"] = 133916,
 			["quality"] = 1,
 		},
-		[187662] = {
-			["enUS"] = "Strange Goop",
-			["texture"] = 1500960,
+		[6311] = {
+			["enUS"] = "22 Pound Catfish",
+			["texture"] = 133916,
 			["quality"] = 1,
 		},
 		[7973] = {
@@ -1220,10 +1220,10 @@ FishingBuddy_Info = {
 			["quality"] = 3,
 			["texture"] = 132103,
 		},
-		[33824] = {
-			["enUS"] = "Crescent-Tail Skullfish",
-			["texture"] = 133926,
+		[173032] = {
+			["enUS"] = "Lost Sole",
 			["quality"] = 1,
+			["texture"] = 3535750,
 		},
 		[138894] = {
 			["color"] = "ff9d9d9d",
@@ -1325,11 +1325,10 @@ FishingBuddy_Info = {
 			["quality"] = 0,
 			["texture"] = 134192,
 		},
-		[154770] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Cracked Hide Belt",
-			["quality"] = 0,
-			["texture"] = 132493,
+		[187920] = {
+			["enUS"] = "Flipper Fish",
+			["quality"] = 1,
+			["texture"] = 133909,
 		},
 		[45196] = {
 			["color"] = "ff9d9d9d",
@@ -1613,10 +1612,11 @@ FishingBuddy_Info = {
 			["texture"] = 133892,
 			["quality"] = 1,
 		},
-		[187920] = {
-			["enUS"] = "Flipper Fish",
-			["quality"] = 1,
-			["texture"] = 133909,
+		[154770] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Cracked Hide Belt",
+			["quality"] = 0,
+			["texture"] = 132493,
 		},
 		[167654] = {
 			["enUS"] = "Bottom Feeding Stinkfish",
@@ -1648,10 +1648,10 @@ FishingBuddy_Info = {
 			["quality"] = 1,
 			["texture"] = 633440,
 		},
-		[173032] = {
-			["enUS"] = "Lost Sole",
+		[33824] = {
+			["enUS"] = "Crescent-Tail Skullfish",
+			["texture"] = 133926,
 			["quality"] = 1,
-			["texture"] = 3535750,
 		},
 		[152546] = {
 			["enUS"] = "Lane Snapper",
@@ -1671,9 +1671,9 @@ FishingBuddy_Info = {
 			["quest"] = true,
 			["texture"] = 970820,
 		},
-		[6311] = {
-			["enUS"] = "22 Pound Catfish",
-			["texture"] = 133916,
+		[187662] = {
+			["enUS"] = "Strange Goop",
+			["texture"] = 1500960,
 			["quality"] = 1,
 		},
 		[138904] = {

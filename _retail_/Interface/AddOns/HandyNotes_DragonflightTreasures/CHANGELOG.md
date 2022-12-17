@@ -1,5 +1,65 @@
 # Changelog
 
+## Changed in v34
+
+* Add loot data for the world bosses now they're present
+* Assorted random data-gathering
+
+## Changed in v33
+
+* Major loot and locations update from wowhead data
+* Show the locations for the Magmashell mount in Waking Shores
+* Profession Knowledge: How To Train Your Whelpling is finally unbugged, and I've got the questid for it
+
+## Changed in v32
+
+* Add the various chests for Sacred Tuskarr Totems in Azure Span, hidden by default
+* Explain what to do with the gleamfish for Shellkhan a bit better
+* Fix the requirement for Lizi's Reins day 4, thanks to stevietv!
+* Fix the "debug mode" being on in cases when it shouldn't be, which would have made you see a largely pointless "coord" line in the map tooltips
+* More rare data, disturbed dirt, packs, etc
+
+## Changed in v31
+
+* Starting on adding Disturbed Dirt locations; like the Explorer's Scout Packs these are hidden by default, so turn them on in the menu if you want to see them
+* Waking Shores: fix Slurpo's position, explain the spawn requirements, and show the required item in Azure Span
+* Explain Ingot's position for A Dragon's Day Off if you need it
+* Highest Peaks: fix the renown level requirement, it only needs 6 now
+* Assorted rare quests and loot
+
+## Changed in v30
+
+* Add the S.E.L.F.I.E. achievements: Framing a New Perspective, and That's Pretty Neat!
+* Explain the Ancient Protector's summoning method
+* Profession knowledge: Engineering and Leatherworking, thanks to InvisiBill!
+* Note where to find the book to continue Veritistrasz's story
+* Waking Shores: A Dragon's Day Off hidden quest
+* A few more rare quests and loot
+* Actually embed Krowi_WorldMapButtons-1.4 since it's spreading (this means I'll play better with Rarescanner's icon, since it loaded after me)
+
+## Changed in v29
+
+* Give the known ["super rares"](https://www.wowhead.com/news/defeat-super-rares-each-day-for-up-to-385-item-level-gear-330298) a distinctive icon and a note explaining the concept
+* Some improvements to the grand hunt bosses
+* Show Khadin on the map after doing his quests, since you can return to trade shards for knowledge
+* Add the generic-daily for Lizi's Reins so we can hide the point after you're done for the day
+
+## Changed in v28
+
+* Profession Knowledge: Blacksmithing thanks to tfmonk
+* Waking Shores: correct location for Enkine the Voracious and explain how to summon it
+* Ohn'ahran Plains: better display for Honor Our Ancestors; clarify Lizi's Reins requirements
+* Azure Span: Breezebiter's spawn location has been found; add loot and a rotation explanation to the Brackenhide Hollow rares
+
+## Changed in v27
+
+* Changed the group-hiding behavior: hiding a group from the top-level menu will now apply to all zones, and if you want to hide one in only a specific zone you'll have to go into the "zones" submenu
+* Add the War Supply Chests, hidden by default because they're only relevant if you're in war mode
+* Add the Best Spell Ever quest for Mages in Azure Span, for Polymorph: Duck
+* Profession Knowledge: Flashfrozen Scroll questid, thanks to tfmonk
+* Honor Our Ancestors: show that Muqur will accept *any* quality of boot enchant, thanks to Mr-nUUb
+* Add assorted rares and loot, mostly in Ohn'ahran Plains
+
 ## Changed in v26
 
 * Questids and some added loot for all the ["super rares"](https://www.wowhead.com/news/defeat-super-rares-each-day-for-up-to-385-item-level-gear-330298), thanks to Znuff

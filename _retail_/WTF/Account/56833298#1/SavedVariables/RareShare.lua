@@ -5,26 +5,26 @@ RareShareDB = {
 	["Config"] = {
 		["PartyRaidChatAnnounce"] = true,
 		["MapPin"] = true,
-		["CChannel"] = {
-			["CName"] = "General - Zereth Mortis",
-			["CID"] = 1,
-		},
+		["ChatAnnounce"] = true,
 		["TomTom"] = {
 			["Rares"] = true,
 			["Master"] = true,
 			["Duplicates"] = true,
 		},
+		["CChannel"] = {
+			["CName"] = "General - Zereth Mortis",
+			["CID"] = 1,
+		},
+		["OnDeath"] = false,
 		["Sound"] = {
 			["Rares"] = true,
 			["Master"] = true,
 			["Duplicates"] = true,
 		},
-		["OnDeath"] = false,
-		["ChatAnnounce"] = true,
 		["Duplicates"] = true,
 	},
 	["LastAnnounce"] = {
-		["Time"] = 1670361877,
-		["ID"] = 178229,
+		["Time"] = 1670961948,
+		["ID"] = 179043,
 	},
 }
