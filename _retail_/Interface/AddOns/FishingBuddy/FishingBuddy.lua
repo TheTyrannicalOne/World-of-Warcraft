@@ -2,6 +2,8 @@
 --
 -- Everything you wanted support for in your fishing endeavors
 
+local addonName, addon = ...
+
 -- 5.0.4 has a problem with a global "_" (see some for loops below)
 local _
 
@@ -655,11 +657,6 @@ end
 local function ReadyForFishing()
     local GSB = FishingBuddy.GetSettingBool;
     local id = FL:GetMainHandItem(true);
-    -- if we're holding the spear, assume we're fishing
-    if FishingBuddy.StartedFishing ~= nil and not FL:FishingForAttention() then
-        FishingBuddy.StopFishingMode()
-        return false
-    end
     return (GSB("UseTuskarrSpear") and (id == 88535)) or FL:IsFishingReady(GSB("PartialGear"));
 end
 FishingBuddy.ReadyForFishing = ReadyForFishing;
@@ -912,10 +909,6 @@ local function NormalHijackCheck()
     local GSB = FishingBuddy.GetSettingBool;
     local GSA = FishingBuddy.ActiveSetting;
     local LSM = FishingBuddy.LureStateManager;
---@retail#
-    if FishingBuddy.StartedFishing ~= nil and not FL:FishingForAttention() then
-        return false
-    end
     if ( not LSM:GetLastLure() and
          not CheckCombat() and GSA("FlyingCast") and GSA("MountedCast") and
          not IsFishingAceEnabled() and
@@ -951,9 +944,9 @@ local function CentralCasting()
     -- put on a lure if we need to
     if ( not StealClick() ) then
         autopoleframe:Show();
-        local update, id, n, target = GetUpdateLure();
+        local update, id, _, itemtype = GetUpdateLure();
         if (update and id) then
-            FL:InvokeLuring(id, target);
+            FL:InvokeLuring(id, itemtype);
         else
             SetLastCastTime();
             if ( not FL:GetLastTooltipText() or not FL:OnFishingBobber() ) then
@@ -1048,6 +1041,7 @@ end
 
 local function StopFishingMode(logout)
     if ( FishingBuddy.StartedFishing ) then
+        FL:ResetOverride(true)
         if ( not logout ) then
             FishingBuddy.WatchUpdate();
         end
@@ -1085,7 +1079,7 @@ local function SetAutoPoleLocation(clear)
     if clear then
         autopoleframe:Hide();
         ClearLastCastTime();
-        a.x, a.y, a.zone, a.instanceID = nil, nil, nil
+        a.x, a.y, a.zone, a.instanceID = nil, nil, nil, nil
     else
         a.x, a.y, a.zone, a.instanceID = FL:GetPlayerZoneCoords();
     end
@@ -1106,7 +1100,7 @@ local function AutoPoleCheck(self, ...)
             SetAutoPoleLocation()
         elseif (self.zone) then
             if (self.moving) then
-                local distance = FL:GetDistanceTo(self.zone, self.x, self.y)
+                distance = FL:GetDistanceTo(self.zone, self.x, self.y)
                 if distance then
                     if distance > 50 or (not FishingBuddy.HaveRafts() and distance > 10) then
                         SetAutoPoleLocation(true)
@@ -1147,7 +1141,7 @@ FishingBuddy.Commands[FBConstants.FISHINGMODE].help = FBConstants.FISHINGMODE_HE
 FishingBuddy.Commands[FBConstants.FISHINGMODE].func =
     function(what)
         if(what and what == "stop") then
-            FishingBiddy.StopFishingMode();
+            StopFishingMode();
         else
             SetLastCastTime();
             autopoleframe:Show();
@@ -1167,7 +1161,7 @@ FishingBuddy.Commands['macro'].func =
     end;
 
 local function OptionsUpdate(changed, closing)
-    PushOptionChanges(changed, closing)
+    PushOptionChanges()
     RunHandlers(FBConstants.OPT_UPDATE_EVT, changed, closing);
 end
 FishingBuddy.OptionsUpdate = OptionsUpdate;

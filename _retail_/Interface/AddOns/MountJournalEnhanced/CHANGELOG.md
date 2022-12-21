@@ -1,8 +1,9 @@
 # Mount Journal Enhanced
 
-## [2.20.3](https://github.com/exochron/MountJournalEnhanced/tree/2.20.3) (2022-11-19)
-[Full Changelog](https://github.com/exochron/MountJournalEnhanced/compare/2.20.2...2.20.3) [Previous Releases](https://github.com/exochron/MountJournalEnhanced/releases)
+## [2.21.0](https://github.com/exochron/MountJournalEnhanced/tree/2.21.0) (2022-12-18)
+[Full Changelog](https://github.com/exochron/MountJournalEnhanced/commits/2.21.0) [Previous Releases](https://github.com/exochron/MountJournalEnhanced/releases)
 
-- 2.20.3  
-    - updated db  
-    - fix wrong filter call  
+- 2.21.0  
+    - ui: added collected customization options as statistic for dragonflight mounts and mechanocat  
+    - db: updated database  
+    - added command to manually set the learning date (see: /mje)  

@@ -658,9 +658,9 @@ OPie_SavedData = {
 					["sliceToken"] = "ABuede=1Srtr",
 				}, -- [6]
 				["name"] = "Utility",
-				["limit"] = "Shanyt-ArgentDawn",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
+				["limit"] = "Shanyt-ArgentDawn",
 			},
 			["Utilities"] = {
 				{

@@ -738,7 +738,7 @@ end
 
 local function UpdateZoneLine()
     if ( GSB("WatchCurrentZone") ) then
-        local zoneskill, _ = FL:GetFishingSkillLine(false, true);
+        local zoneskill, _ = FL:GetFishingSkillLine(false, true, false);
         return zoneskill
     end
 end

@@ -357,3 +357,147 @@
 12/15 17:50:37.587  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
 12/15 17:50:37.587  Character Edit Mode Data Saving: buffSize = 12
 12/15 17:50:37.587  Data: 0 0 0 0 0 0
+12/17 08:41:19.196  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+12/17 08:41:48.038  Account Edit Mode Data Loading: buffSize = 50
+12/17 08:41:48.038  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/17 08:41:48.038  Character Edit Mode Data Loading: buffSize = 13
+12/17 08:41:48.038  Data: 0 0 0 0 0 0
+12/17 11:05:25.720  Account Edit Mode Data Saving: buffSize = 49
+12/17 11:05:25.720  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/17 11:05:25.720  Character Edit Mode Data Saving: buffSize = 12
+12/17 11:05:25.720  Data: 0 0 0 0 0 0
+12/17 11:06:33.255  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+12/17 11:07:04.163  Account Edit Mode Data Loading: buffSize = 50
+12/17 11:07:04.163  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/17 11:07:04.163  Character Edit Mode Data Loading: buffSize = 13
+12/17 11:07:04.163  Data: 0 0 0 0 0 0
+12/17 11:50:28.980  Account Edit Mode Data Saving: buffSize = 49
+12/17 11:50:28.980  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/17 11:50:28.980  Character Edit Mode Data Saving: buffSize = 12
+12/17 11:50:28.980  Data: 0 0 0 0 0 0
+12/17 11:51:21.355  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+12/17 11:51:50.678  Account Edit Mode Data Loading: buffSize = 50
+12/17 11:51:50.678  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/17 11:51:50.678  Character Edit Mode Data Loading: buffSize = 13
+12/17 11:51:50.678  Data: 0 0 0 0 0 0
+12/17 13:37:36.565  Account Edit Mode Data Saving: buffSize = 49
+12/17 13:37:36.565  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/17 13:37:36.565  Character Edit Mode Data Saving: buffSize = 12
+12/17 13:37:36.565  Data: 0 0 0 0 0 0
+12/17 14:30:52.504  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+12/17 14:31:20.131  Account Edit Mode Data Loading: buffSize = 50
+12/17 14:31:20.131  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/17 14:31:20.131  Character Edit Mode Data Loading: buffSize = 13
+12/17 14:31:20.131  Data: 0 0 0 0 0 0
+12/17 17:38:38.718  Account Edit Mode Data Saving: buffSize = 49
+12/17 17:38:38.718  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/17 17:38:38.718  Character Edit Mode Data Saving: buffSize = 12
+12/17 17:38:38.718  Data: 0 0 0 0 0 0
+12/18 01:19:28.270  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+12/18 01:20:10.037  Account Edit Mode Data Loading: buffSize = 50
+12/18 01:20:10.037  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/18 01:20:10.037  Character Edit Mode Data Loading: buffSize = 13
+12/18 01:20:10.037  Data: 0 0 0 0 0 0
+12/18 01:40:42.428  Account Edit Mode Data Saving: buffSize = 49
+12/18 01:40:42.428  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/18 01:40:42.428  Character Edit Mode Data Saving: buffSize = 12
+12/18 01:40:42.428  Data: 0 0 0 0 0 0
+12/18 01:41:19.215  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+12/18 01:41:51.756  Account Edit Mode Data Loading: buffSize = 50
+12/18 01:41:51.756  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/18 01:41:51.756  Character Edit Mode Data Loading: buffSize = 13
+12/18 01:41:51.756  Data: 0 0 0 0 0 0
+12/18 03:16:02.787  Account Edit Mode Data Saving: buffSize = 49
+12/18 03:16:02.787  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/18 03:16:02.787  Character Edit Mode Data Saving: buffSize = 12
+12/18 03:16:02.787  Data: 0 0 0 0 0 0
+12/18 03:17:21.121  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+12/18 03:17:58.225  Account Edit Mode Data Loading: buffSize = 50
+12/18 03:17:58.225  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/18 03:17:58.225  Character Edit Mode Data Loading: buffSize = 13
+12/18 03:17:58.225  Data: 0 0 0 0 0 0
+12/18 03:23:02.891  Account Edit Mode Data Saving: buffSize = 49
+12/18 03:23:02.891  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/18 03:23:02.891  Character Edit Mode Data Saving: buffSize = 12
+12/18 03:23:02.891  Data: 0 0 0 0 0 0
+12/18 07:59:54.169  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+12/18 08:00:28.703  Account Edit Mode Data Loading: buffSize = 50
+12/18 08:00:28.703  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/18 08:00:28.703  Character Edit Mode Data Loading: buffSize = 13
+12/18 08:00:28.703  Data: 0 0 0 0 0 0
+12/18 08:39:07.407  Account Edit Mode Data Saving: buffSize = 49
+12/18 08:39:07.407  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/18 08:39:07.407  Character Edit Mode Data Saving: buffSize = 12
+12/18 08:39:07.407  Data: 0 0 0 0 0 0
+12/18 08:39:43.968  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+12/18 08:40:16.204  Account Edit Mode Data Loading: buffSize = 50
+12/18 08:40:16.204  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/18 08:40:16.204  Character Edit Mode Data Loading: buffSize = 13
+12/18 08:40:16.204  Data: 0 0 0 0 0 0
+12/18 09:00:01.935  Account Edit Mode Data Saving: buffSize = 49
+12/18 09:00:01.935  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/18 09:00:01.935  Character Edit Mode Data Saving: buffSize = 12
+12/18 09:00:01.935  Data: 0 0 0 0 0 0
+12/18 09:00:39.552  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+12/18 09:01:21.759  Account Edit Mode Data Loading: buffSize = 50
+12/18 09:01:21.759  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/18 09:01:21.759  Character Edit Mode Data Loading: buffSize = 13
+12/18 09:01:21.759  Data: 0 0 0 0 0 0
+12/18 09:15:32.917  Account Edit Mode Data Saving: buffSize = 49
+12/18 09:15:32.917  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/18 09:15:32.917  Character Edit Mode Data Saving: buffSize = 12
+12/18 09:15:32.917  Data: 0 0 0 0 0 0
+12/18 19:13:55.004  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+12/18 19:14:31.264  Account Edit Mode Data Loading: buffSize = 50
+12/18 19:14:31.264  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/18 19:14:31.265  Character Edit Mode Data Loading: buffSize = 13
+12/18 19:14:31.265  Data: 0 0 0 0 0 0
+12/18 19:54:30.985  Account Edit Mode Data Saving: buffSize = 49
+12/18 19:54:30.985  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/18 19:54:30.985  Character Edit Mode Data Saving: buffSize = 12
+12/18 19:54:30.985  Data: 0 0 0 0 0 0
+12/18 19:56:09.569  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+12/18 19:56:58.886  Account Edit Mode Data Loading: buffSize = 50
+12/18 19:56:58.886  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/18 19:56:58.886  Character Edit Mode Data Loading: buffSize = 13
+12/18 19:56:58.886  Data: 0 0 0 0 0 0
+12/18 21:22:19.827  Account Edit Mode Data Saving: buffSize = 49
+12/18 21:22:19.827  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/18 21:22:19.827  Character Edit Mode Data Saving: buffSize = 12
+12/18 21:22:19.827  Data: 0 0 0 0 0 0
+12/20 20:06:30.287  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+12/20 20:07:04.518  Account Edit Mode Data Loading: buffSize = 50
+12/20 20:07:04.518  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/20 20:07:04.518  Character Edit Mode Data Loading: buffSize = 13
+12/20 20:07:04.518  Data: 0 0 0 0 0 0
+12/20 20:24:16.402  Account Edit Mode Data Saving: buffSize = 49
+12/20 20:24:16.402  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/20 20:24:16.402  Character Edit Mode Data Saving: buffSize = 12
+12/20 20:24:16.402  Data: 0 0 0 0 0 0
+12/20 20:26:45.592  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+12/20 20:27:22.452  Account Edit Mode Data Loading: buffSize = 50
+12/20 20:27:22.452  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/20 20:27:22.452  Character Edit Mode Data Loading: buffSize = 13
+12/20 20:27:22.452  Data: 0 0 0 0 0 0
+12/20 20:43:39.188  Account Edit Mode Data Saving: buffSize = 49
+12/20 20:43:39.188  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/20 20:43:39.188  Character Edit Mode Data Saving: buffSize = 12
+12/20 20:43:39.188  Data: 0 0 0 0 0 0
+12/21 01:31:16.292  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+12/21 01:31:54.874  Account Edit Mode Data Loading: buffSize = 50
+12/21 01:31:54.874  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/21 01:31:54.874  Character Edit Mode Data Loading: buffSize = 13
+12/21 01:31:54.874  Data: 0 0 0 0 0 0
+12/21 01:44:12.224  Account Edit Mode Data Saving: buffSize = 49
+12/21 01:44:12.224  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/21 01:44:12.224  Character Edit Mode Data Saving: buffSize = 12
+12/21 01:44:12.224  Data: 0 0 0 0 0 0
+12/21 07:26:11.250  ----------------------------------------------------- Opened for Append -----------------------------------------------------
+12/21 07:26:49.870  Account Edit Mode Data Loading: buffSize = 50
+12/21 07:26:49.870  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/21 07:26:49.870  Character Edit Mode Data Loading: buffSize = 13
+12/21 07:26:49.870  Data: 0 0 0 0 0 0
+12/21 07:28:07.359  Account Edit Mode Data Saving: buffSize = 49
+12/21 07:28:07.359  Data: 0 21 1 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+12/21 07:28:07.359  Character Edit Mode Data Saving: buffSize = 12
+12/21 07:28:07.359  Data: 0 0 0 0 0 0

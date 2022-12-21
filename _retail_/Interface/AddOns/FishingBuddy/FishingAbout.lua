@@ -138,6 +138,7 @@ credits[FBConstants.ROLE_HELP_BUGS] = {
 	["Zilom"] = { "Fast loot addon compat fix" },
 	["gryphon63"] = { "AboutBox alpha fixes", "Conjurer Margoss turn-in fix", },
 	["jleafey"] = { "Typo hunting" },
+	["Spiritwlf"] = { "Major fixes for Dragonflight, like, major!" },
 };
 
 -- Ideas and suggestions

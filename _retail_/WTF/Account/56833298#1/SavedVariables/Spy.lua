@@ -45,15 +45,15 @@ SpyDB = {
 				},
 				["Illingrath"] = {
 				},
-				["Avisar"] = {
+				["Galvarton"] = {
 				},
 				["Thorinbane"] = {
 				},
 				["Kelvalatar"] = {
 				},
-				["Varlouris"] = {
+				["Avisar"] = {
 				},
-				["Galvarton"] = {
+				["Varlouris"] = {
 				},
 			},
 		},
@@ -154,15 +154,15 @@ SpyDB = {
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
 		["Tyranasticus - Zul'jin"] = "Tyranasticus - Zul'jin",
-		["Galvarton - Dalaran"] = "Galvarton - Dalaran",
-		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
+		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
+		["Galvarton - Dalaran"] = "Galvarton - Dalaran",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
-		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
-		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Okona - Zul'jin"] = "Okona - Zul'jin",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
@@ -458,7 +458,7 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Galvarton - Dalaran"] = {
+		["Jingojaggot - Zul'jin"] = {
 			["AppendUnitNameCheck"] = true,
 			["MainWindowVis"] = false,
 			["Colors"] = {
@@ -481,7 +481,7 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Jingojaggot - Zul'jin"] = {
+		["Galvarton - Dalaran"] = {
 			["AppendUnitNameCheck"] = true,
 			["MainWindowVis"] = false,
 			["Colors"] = {
@@ -544,9 +544,23 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Shimzo - Zul'jin"] = {
+		["Varlouris - Dalaran"] = {
 			["AppendUnitNameCheck"] = true,
+			["MainWindow"] = {
+				["Position"] = {
+					["y"] = 740.500244140625,
+					["h"] = 67.00010681152344,
+				},
+			},
 			["Colors"] = {
+				["Alert"] = {
+					["Stealth Text"] = {
+						["a"] = 1,
+					},
+					["Name Text"] = {
+						["a"] = 1,
+					},
+				},
 				["Bar"] = {
 					["Bar Text"] = {
 						["a"] = 1,
@@ -554,6 +568,7 @@ SpyDB = {
 				},
 			},
 			["AppendUnitKoSCheck"] = true,
+			["MainWindowVis"] = false,
 		},
 		["Okona - Zul'jin"] = {
 			["AppendUnitNameCheck"] = true,
@@ -583,23 +598,9 @@ SpyDB = {
 			["AppendUnitKoSCheck"] = true,
 			["MainWindowVis"] = false,
 		},
-		["Varlouris - Dalaran"] = {
+		["Shimzo - Zul'jin"] = {
 			["AppendUnitNameCheck"] = true,
-			["MainWindow"] = {
-				["Position"] = {
-					["y"] = 740.500244140625,
-					["h"] = 67.00010681152344,
-				},
-			},
 			["Colors"] = {
-				["Alert"] = {
-					["Stealth Text"] = {
-						["a"] = 1,
-					},
-					["Name Text"] = {
-						["a"] = 1,
-					},
-				},
 				["Bar"] = {
 					["Bar Text"] = {
 						["a"] = 1,
@@ -607,7 +608,6 @@ SpyDB = {
 				},
 			},
 			["AppendUnitKoSCheck"] = true,
-			["MainWindowVis"] = false,
 		},
 		["Tyran - Argent Dawn"] = {
 			["AppendUnitNameCheck"] = true,

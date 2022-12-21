@@ -1,7 +1,8 @@
 # Talent Tree Tweaks
 
-## [v1.4.4](https://github.com/Numynum/TalentTreeTweaks/tree/v1.4.4) (2022-12-10)
-[Full Changelog](https://github.com/Numynum/TalentTreeTweaks/compare/v1.4.3...v1.4.4) [Previous Releases](https://github.com/Numynum/TalentTreeTweaks/releases)
+## [v1.5.0](https://github.com/Numynum/TalentTreeTweaks/tree/v1.5.0) (2022-12-18)
+[Full Changelog](https://github.com/Numynum/TalentTreeTweaks/compare/v1.4.4...v1.5.0) [Previous Releases](https://github.com/Numynum/TalentTreeTweaks/releases)
 
-- Highlight disabled Tweaks in the config UI  
-- Reworked ImportIntoCurrentLoadout feature, to cause few taint issues. This does now require the user to manually click Apply Changes  
+- Added 2 experimental modules:  
+    ReduceTaint aims to remove the impact of tainting the talent tree by this addon and others  
+    UnlockRestrictions makes use of the extra freedom, to remove some restrictions (share loadouts without spending all points, and reallocate points in-combat)  

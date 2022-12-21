@@ -31,6 +31,7 @@ L["SORT_DRAGONRIDING_TOP"] = "Dragonriding mounts at the top"
 L["SORT_REVERSE"] = "Reverse Sort"
 L["SORT_UNOWNED_BOTTOM"] = "Unowned at Bottom"
 L["SORT_UNUSABLE_BOTTOM"] = "Unusable after Usable"
+L["STATS_TIP_CUSTOMIZATION_COUNT_HEAD"] = "Count if collected customization options"
 L["STATS_TIP_LEARNED_DATE_HEAD"] = "Possession date"
 L["STATS_TIP_RARITY_HEAD"] = RARITY
 L["STATS_TIP_RARITY_TEXT"] = "% of characters who own this mount\nData is kindly provided by {RR}."
@@ -259,6 +260,7 @@ L["SORT_FAVORITES_FIRST"] = "Favoriten zuerst"
 L["SORT_REVERSE"] = "Sortierung umkehren"
 L["SORT_UNOWNED_BOTTOM"] = "Nicht gesammelt nach unten"
 L["SORT_UNUSABLE_BOTTOM"] = "Nicht nutzbare nach nutzbaren"
+L["STATS_TIP_CUSTOMIZATION_COUNT_HEAD"] = "Anzahl gesammelter Anpassungsoptionen"
 L["STATS_TIP_LEARNED_DATE_HEAD"] = "Besitzdatum"
 L["STATS_TIP_RARITY_HEAD"] = "Seltenheit"
 L["STATS_TIP_RARITY_TEXT"] = [=[% an Charakteren die dieses Reittier besitzen.
@@ -492,6 +494,7 @@ L["SORT_FAVORITES_FIRST"] = "Favoritas primero"
 L["SORT_REVERSE"] = "Ordenación inversa"
 L["SORT_UNOWNED_BOTTOM"] = "Faltantes al final"
 L["SORT_UNUSABLE_BOTTOM"] = "Inutilizables después de las Usables"
+L["STATS_TIP_CUSTOMIZATION_COUNT_HEAD"] = "Número de opciones de personalización coleccionadas"
 L["STATS_TIP_LEARNED_DATE_HEAD"] = "Fecha de posesión"
 L["STATS_TIP_RARITY_HEAD"] = "Rareza"
 L["STATS_TIP_RARITY_TEXT"] = "el % de tus personajes tienen esta montura La información es proporcionada amablemente por {RR}."
@@ -743,6 +746,8 @@ L["Reset filters"] = "Réinitialiser les filtres"
 --[[ L["SORT_UNOWNED_BOTTOM"] = "Unowned at Bottom"--]] 
 --[[Translation missing --]]
 --[[ L["SORT_UNUSABLE_BOTTOM"] = "Unusable after Usable"--]] 
+--[[Translation missing --]]
+--[[ L["STATS_TIP_CUSTOMIZATION_COUNT_HEAD"] = "Count of collected customization options"--]] 
 --[[Translation missing --]]
 --[[ L["STATS_TIP_LEARNED_DATE_HEAD"] = "Possession date"--]] 
 --[[Translation missing --]]
@@ -1095,8 +1100,7 @@ L["Yetis"] = "Yétis"
 elseif locale == "koKR" then
     ADDON.isMetric = true
     L["Black Market"] = "암시장"
---[[Translation missing --]]
---[[ L["DRESSUP_LABEL"] = "Journal"--]] 
+L["DRESSUP_LABEL"] = "도감"
 L["Family"] = "종류"
 --[[Translation missing --]]
 --[[ L["FAVOR_AUTO"] = "Auto-favor new mounts"--]] 
@@ -1112,41 +1116,30 @@ L["Passenger"] = "승객"
 L["Reset filters"] = "필터 초기화"
 L["ROTATE_DOWN"] = "아래로 회전"
 L["ROTATE_UP"] = "위로 회전"
---[[Translation missing --]]
---[[ L["SORT_BY_LAST_USAGE"] = "Last usage"--]] 
+L["SORT_BY_LAST_USAGE"] = "마지막 사용"
 --[[Translation missing --]]
 --[[ L["SORT_BY_LEARNED_DATE"] = "Date of receipt"--]] 
---[[Translation missing --]]
---[[ L["SORT_BY_TRAVEL_DISTANCE"] = "Travelled distance"--]] 
---[[Translation missing --]]
---[[ L["SORT_BY_TRAVEL_DURATION"] = "Travelled duration"--]] 
---[[Translation missing --]]
---[[ L["SORT_BY_USAGE_COUNT"] = "Count of usage"--]] 
---[[Translation missing --]]
---[[ L["SORT_DRAGONRIDING_TOP"] = "Dragonriding mounts at the top"--]] 
---[[Translation missing --]]
---[[ L["SORT_FAVORITES_FIRST"] = "Favorites First"--]] 
---[[Translation missing --]]
---[[ L["SORT_REVERSE"] = "Reverse Sort"--]] 
+L["SORT_BY_TRAVEL_DISTANCE"] = "이동 거리"
+L["SORT_BY_TRAVEL_DURATION"] = "이동 시간"
+L["SORT_BY_USAGE_COUNT"] = "사용 횟수"
+L["SORT_DRAGONRIDING_TOP"] = "상단에 용 조련술 탈것"
+L["SORT_FAVORITES_FIRST"] = "즐겨찾기 먼저"
+L["SORT_REVERSE"] = "역순 정렬"
 --[[Translation missing --]]
 --[[ L["SORT_UNOWNED_BOTTOM"] = "Unowned at Bottom"--]] 
 --[[Translation missing --]]
 --[[ L["SORT_UNUSABLE_BOTTOM"] = "Unusable after Usable"--]] 
 --[[Translation missing --]]
---[[ L["STATS_TIP_LEARNED_DATE_HEAD"] = "Possession date"--]] 
---[[Translation missing --]]
---[[ L["STATS_TIP_RARITY_HEAD"] = "Rarity"--]] 
+--[[ L["STATS_TIP_CUSTOMIZATION_COUNT_HEAD"] = "Count of collected customization options"--]] 
+L["STATS_TIP_LEARNED_DATE_HEAD"] = "보유일"
+L["STATS_TIP_RARITY_HEAD"] = "품질"
 --[[Translation missing --]]
 --[[ L["STATS_TIP_RARITY_TEXT"] = [=[% of characters who own this mount
 Data is kindly provided by {RR}.]=]--]] 
---[[Translation missing --]]
---[[ L["STATS_TIP_TRAVEL_DISTANCE_HEAD"] = "Travel distance"--]] 
---[[Translation missing --]]
---[[ L["STATS_TIP_TRAVEL_TIME_HEAD"] = "Travel time"--]] 
---[[Translation missing --]]
---[[ L["STATS_TIP_TRAVEL_TIME_TEXT"] = "in hours:minutes:seconds"--]] 
---[[Translation missing --]]
---[[ L["STATS_TIP_USAGE_COUNT_HEAD"] = "Usage count"--]] 
+L["STATS_TIP_TRAVEL_DISTANCE_HEAD"] = "이동 거리"
+L["STATS_TIP_TRAVEL_TIME_HEAD"] = "이동 시간"
+L["STATS_TIP_TRAVEL_TIME_TEXT"] = "시간:분:초"
+L["STATS_TIP_USAGE_COUNT_HEAD"] = "사용 횟수"
 L["TASK_END"] = "[MJE] 작업 완료"
 L["TASK_FAVOR_START"] = "[MJE] 탈것 목록 즐겨찾기 재설정을 시작합니다"
 --[[Translation missing --]]
@@ -1161,8 +1154,7 @@ L["DISPLAY_ALL_SETTINGS"] = "모든 설정 표시"
 --[[Translation missing --]]
 --[[ L["SETTING_ABOUT_AUTHOR"] = "Author"--]] 
 L["SETTING_ACHIEVEMENT_POINTS"] = "업적 점수 표시"
---[[Translation missing --]]
---[[ L["SETTING_AUTO_FAVOR"] = "Automatically set new mounts as favorite"--]] 
+L["SETTING_AUTO_FAVOR"] = "새 탈것을 즐겨찾기로 자동 설정"
 --[[Translation missing --]]
 --[[ L["SETTING_COLOR_NAMES"] = "Colorize names in list based on rarity"--]] 
 L["SETTING_COMPACT_LIST"] = "간소한 목록"
@@ -1171,23 +1163,19 @@ L["SETTING_FAVORITE_PER_CHAR"] = "캐릭터별 즐겨찾기"
 L["SETTING_HEAD_ABOUT"] = "정보"
 --[[Translation missing --]]
 --[[ L["SETTING_HEAD_BEHAVIOUR"] = "Behavior"--]] 
---[[Translation missing --]]
---[[ L["SETTING_MOUNT_COUNT"] = "Show personal mount count"--]] 
-L["SETTING_MOVE_EQUIPMENT"] = "착용 장비 표시 이동"
+L["SETTING_MOUNT_COUNT"] = "개인 탈것 수 표시"
+L["SETTING_MOVE_EQUIPMENT"] = "탈것 장비 칸을 디스플레이로 이동"
 L["SETTING_PERSONAL_FILTER"] = "이 캐릭터에만 필터 적용"
 --[[Translation missing --]]
 --[[ L["SETTING_PERSONAL_HIDDEN_MOUNTS"] = "Apply hidden mounts only to this character"--]] 
---[[Translation missing --]]
---[[ L["SETTING_PERSONAL_UI"] = "Apply Interface settings only to this character"--]] 
---[[Translation missing --]]
---[[ L["SETTING_PREVIEW_LINK"] = "Show Collection button in mount preview"--]] 
+L["SETTING_PERSONAL_UI"] = "이 캐릭터에게만 인터페이스 설정 적용"
+L["SETTING_PREVIEW_LINK"] = "탈것 미리보기에 수집품 버튼 표시"
 --[[Translation missing --]]
 --[[ L["SETTING_SEARCH_MORE"] = "Search also in description text"--]] 
 --[[Translation missing --]]
 --[[ L["SETTING_SEARCH_NOTES"] = "Search also in own notes"--]] 
 L["SETTING_SHOP_BUTTON"] = "구매 버튼 활성화"
---[[Translation missing --]]
---[[ L["SETTING_SHOW_STATISTICS"] = "Show mount statistics in display"--]] 
+L["SETTING_SHOW_STATISTICS"] = "디스플레이에 탈것 통계 표시"
 --[[Translation missing --]]
 --[[ L["SETTING_TRACK_USAGE"] = "Track mount usage behavior on all characters"--]] 
 L["SETTING_YCAMERA"] = "표시 화면에서 마우스로 Y 축 회전 잠금 해제"
@@ -1391,6 +1379,8 @@ L["SORT_FAVORITES_FIRST"] = "Favoritos Primeiro"
 L["SORT_REVERSE"] = "Ordem Inversa"
 L["SORT_UNOWNED_BOTTOM"] = "Não aprendidos por último"
 L["SORT_UNUSABLE_BOTTOM"] = "Inutilizável depois de utilizável"
+--[[Translation missing --]]
+--[[ L["STATS_TIP_CUSTOMIZATION_COUNT_HEAD"] = "Count of collected customization options"--]] 
 --[[Translation missing --]]
 --[[ L["STATS_TIP_LEARNED_DATE_HEAD"] = "Possession date"--]] 
 --[[Translation missing --]]
@@ -1636,6 +1626,8 @@ L["SORT_FAVORITES_FIRST"] = "Избранные первыми"
 L["SORT_REVERSE"] = "Обратная сортировка"
 L["SORT_UNOWNED_BOTTOM"] = "Не полученные в конце списка"
 L["SORT_UNUSABLE_BOTTOM"] = "Не используемые после используемых"
+--[[Translation missing --]]
+--[[ L["STATS_TIP_CUSTOMIZATION_COUNT_HEAD"] = "Count of collected customization options"--]] 
 L["STATS_TIP_LEARNED_DATE_HEAD"] = "Дата получения"
 L["STATS_TIP_RARITY_HEAD"] = "Редкость"
 L["STATS_TIP_RARITY_TEXT"] = "% персонажей, владеющих этим средством передвижения. Данные любезно предоставлены {RR}."
@@ -1879,6 +1871,8 @@ L["SORT_REVERSE"] = "反向排序"
 L["SORT_UNOWNED_BOTTOM"] = "未收集在底部"
 --[[Translation missing --]]
 --[[ L["SORT_UNUSABLE_BOTTOM"] = "Unusable after Usable"--]] 
+--[[Translation missing --]]
+--[[ L["STATS_TIP_CUSTOMIZATION_COUNT_HEAD"] = "Count of collected customization options"--]] 
 --[[Translation missing --]]
 --[[ L["STATS_TIP_LEARNED_DATE_HEAD"] = "Possession date"--]] 
 --[[Translation missing --]]

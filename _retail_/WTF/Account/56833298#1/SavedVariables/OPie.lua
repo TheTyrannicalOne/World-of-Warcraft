@@ -694,10 +694,10 @@ OPie_SavedData = {
 					"BattlePet-0-0000064BC55A", -- [2]
 					["sliceToken"] = "ABuede=1Srtr",
 				}, -- [6]
-				["limit"] = "Shanyt-ArgentDawn",
 				["name"] = "Utility",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
+				["limit"] = "Shanyt-ArgentDawn",
 			},
 			["Utilities"] = {
 				{

@@ -449,11 +449,11 @@ KalielsTrackerDB = {
 						["startMapID"] = 0,
 						["isCalling"] = false,
 					},
-					[57937] = {
-						["title"] = "Tactical Formation",
-						["zone"] = "Bastion",
+					[66458] = {
+						["title"] = "Legacy of Tyr: Secrets of the Past",
+						["zone"] = "Stormwind City",
 						["level"] = 60,
-						["startMapID"] = 1533,
+						["startMapID"] = 84,
 						["isCalling"] = false,
 					},
 					[27621] = {
@@ -571,18 +571,18 @@ KalielsTrackerDB = {
 						["startMapID"] = 0,
 						["isCalling"] = false,
 					},
+					[57937] = {
+						["title"] = "Tactical Formation",
+						["zone"] = "Bastion",
+						["level"] = 60,
+						["startMapID"] = 1533,
+						["isCalling"] = false,
+					},
 					[44948] = {
 						["title"] = "Raising Your Snowfeather",
 						["zone"] = "Battle Pets",
 						["level"] = 60,
 						["startMapID"] = 0,
-						["isCalling"] = false,
-					},
-					[66458] = {
-						["title"] = "Legacy of Tyr: Secrets of the Past",
-						["zone"] = "Stormwind City",
-						["level"] = 60,
-						["startMapID"] = 84,
 						["isCalling"] = false,
 					},
 					[56378] = {
@@ -775,8 +775,26 @@ KalielsTrackerDB = {
 		["Tynkster - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Serbitechna - Dalaran"] = {
-			["collapsed"] = true,
+		["Tyran - Argent Dawn"] = {
+			["quests"] = {
+				["num"] = 2,
+				["cache"] = {
+					[8325] = {
+						["title"] = "Reclaiming Sunstrider Isle",
+						["zone"] = "Sunstrider Isle",
+						["level"] = 3,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[31891] = {
+						["title"] = "Battle Pet Tamers: Kalimdor",
+						["zone"] = "Battle Pets",
+						["level"] = 3,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+				},
+			},
 		},
 		["Banesmuncy - Zul'jin"] = {
 			["collapsed"] = true,
@@ -839,8 +857,8 @@ KalielsTrackerDB = {
 						["startMapID"] = 0,
 						["isCalling"] = false,
 					},
-					[40329] = {
-						["title"] = "Battle Pet Tamers: Warlords",
+					[31891] = {
+						["title"] = "Battle Pet Tamers: Kalimdor",
 						["zone"] = "Battle Pets",
 						["level"] = 51,
 						["startMapID"] = 0,
@@ -905,19 +923,19 @@ KalielsTrackerDB = {
 						["startMapID"] = 0,
 						["isCalling"] = false,
 					},
+					[40329] = {
+						["title"] = "Battle Pet Tamers: Warlords",
+						["zone"] = "Battle Pets",
+						["level"] = 51,
+						["startMapID"] = 0,
+						["isCalling"] = false,
+					},
 					[57249] = {
 						["state"] = "complete",
 						["title"] = "A Timely Invitation",
 						["zone"] = "Seasonal",
 						["level"] = 51,
 						["startMapID"] = 85,
-						["isCalling"] = false,
-					},
-					[31891] = {
-						["title"] = "Battle Pet Tamers: Kalimdor",
-						["zone"] = "Battle Pets",
-						["level"] = 51,
-						["startMapID"] = 0,
 						["isCalling"] = false,
 					},
 				},
@@ -927,7 +945,7 @@ KalielsTrackerDB = {
 		["Tyriinid - Dalaran"] = {
 			["collapsed"] = true,
 		},
-		["Datgore - Zul'jin"] = {
+		["Serbitechna - Dalaran"] = {
 			["collapsed"] = true,
 		},
 		["Dachas - Zul'jin"] = {
@@ -1739,10 +1757,10 @@ KalielsTrackerDB = {
 			["quests"] = {
 				["num"] = 28,
 				["cache"] = {
-					[31015] = {
-						["title"] = "Your Private Collection",
-						["zone"] = "Vale of Eternal Blossoms",
-						["level"] = 35,
+					[40019] = {
+						["title"] = "An Empathetic Herb",
+						["zone"] = "Herbalism",
+						["level"] = 60,
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
@@ -1753,8 +1771,8 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
-					[44948] = {
-						["title"] = "Raising Your Snowfeather",
+					[40329] = {
+						["title"] = "Battle Pet Tamers: Warlords",
 						["zone"] = "Battle Pets",
 						["level"] = 60,
 						["isCalling"] = false,
@@ -1816,10 +1834,10 @@ KalielsTrackerDB = {
 						["startMapID"] = 1698,
 						["isCalling"] = true,
 					},
-					[40019] = {
-						["title"] = "An Empathetic Herb",
-						["zone"] = "Herbalism",
-						["level"] = 60,
+					[31015] = {
+						["title"] = "Your Private Collection",
+						["zone"] = "Vale of Eternal Blossoms",
+						["level"] = 35,
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
@@ -1947,8 +1965,8 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 1533,
 					},
-					[40329] = {
-						["title"] = "Battle Pet Tamers: Warlords",
+					[44948] = {
+						["title"] = "Raising Your Snowfeather",
 						["zone"] = "Battle Pets",
 						["level"] = 60,
 						["isCalling"] = false,
@@ -1966,7 +1984,7 @@ KalielsTrackerDB = {
 		},
 		["Shanyt - Argent Dawn"] = {
 			["quests"] = {
-				["num"] = 28,
+				["num"] = 33,
 				["cache"] = {
 					[60410] = {
 						["title"] = "Training Our Forces",
@@ -2068,6 +2086,13 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
+					[66517] = {
+						["title"] = "A New Source of Weapons",
+						["zone"] = "Professions",
+						["level"] = 70,
+						["isCalling"] = false,
+						["startMapID"] = 2112,
+					},
 					[62284] = {
 						["title"] = "Observing Battle",
 						["zone"] = "Oribos",
@@ -2138,13 +2163,6 @@ KalielsTrackerDB = {
 						["startMapID"] = 1970,
 						["isCalling"] = false,
 					},
-					[72487] = {
-						["title"] = "The Thaldraszus Tour",
-						["zone"] = "Thaldraszus",
-						["level"] = 70,
-						["isCalling"] = false,
-						["startMapID"] = 2024,
-					},
 					[57403] = {
 						["title"] = "Reconstructing \"Fear and Flesh\"",
 						["zone"] = "Visions of N'Zoth",
@@ -2158,6 +2176,13 @@ KalielsTrackerDB = {
 						["level"] = 60,
 						["isCalling"] = false,
 						["startMapID"] = 0,
+					},
+					[72686] = {
+						["title"] = "Storm Surge",
+						["zone"] = "Primalist Storms",
+						["level"] = 70,
+						["isCalling"] = false,
+						["startMapID"] = 2112,
 					},
 					[62638] = {
 						["title"] = "Emissary of War",
@@ -2186,13 +2211,6 @@ KalielsTrackerDB = {
 						["level"] = 70,
 						["isCalling"] = false,
 						["startMapID"] = 0,
-					},
-					[70702] = {
-						["title"] = "Continued Waygate Exploration",
-						["zone"] = "The Waking Shores",
-						["level"] = 70,
-						["isCalling"] = false,
-						["startMapID"] = 2025,
 					},
 					[62285] = {
 						["title"] = "Observing War",
@@ -2244,6 +2262,13 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
+					[70965] = {
+						["title"] = "Wanted: Watcher's Golden Girdle",
+						["zone"] = "Dragonscale Expedition",
+						["level"] = 70,
+						["isCalling"] = false,
+						["startMapID"] = 2022,
+					},
 					[62730] = {
 						["title"] = "Fruit of the Gods",
 						["zone"] = "Bastion",
@@ -2251,19 +2276,19 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
-					[66028] = {
-						["title"] = "To the Future!",
-						["zone"] = "Thaldraszus",
+					[72648] = {
+						["title"] = "Sparks of Life: The Azure Span",
+						["zone"] = "The Azure Span",
 						["level"] = 70,
 						["isCalling"] = false,
-						["startMapID"] = 2025,
+						["startMapID"] = 2112,
 					},
-					[62869] = {
-						["title"] = "Return Lost Souls",
-						["zone"] = "Venthyr Campaign",
+					[71005] = {
+						["title"] = "Wanted: Fangfall",
+						["zone"] = "Dragonscale Expedition",
 						["level"] = 70,
 						["isCalling"] = false,
-						["startMapID"] = 1699,
+						["startMapID"] = 2022,
 					},
 					[47129] = {
 						["title"] = "Tomb of Sargeras: The Deceiver",
@@ -2286,12 +2311,40 @@ KalielsTrackerDB = {
 						["startMapID"] = 0,
 						["isCalling"] = false,
 					},
+					[71028] = {
+						["title"] = "Hunting Tactics: Blessing of Ohn'ahra",
+						["zone"] = "Ohn'ahran Plains",
+						["level"] = 70,
+						["isCalling"] = false,
+						["startMapID"] = 2023,
+					},
+					[72167] = {
+						["title"] = "Proving in War",
+						["zone"] = "Valdrakken",
+						["level"] = 70,
+						["isCalling"] = false,
+						["startMapID"] = 2112,
+					},
+					[72291] = {
+						["title"] = "Story of a Memorable Victory",
+						["zone"] = "The Azure Span",
+						["level"] = 70,
+						["isCalling"] = false,
+						["startMapID"] = 2022,
+					},
 					[45383] = {
 						["title"] = "The Nighthold: Talisman of the Shal'dorei",
 						["zone"] = "The Nighthold",
 						["level"] = 70,
 						["isCalling"] = false,
 						["startMapID"] = 0,
+					},
+					[72482] = {
+						["title"] = "The Waking Shores Advanced Tour",
+						["zone"] = "The Waking Shores",
+						["level"] = 70,
+						["isCalling"] = false,
+						["startMapID"] = 2025,
 					},
 					[66648] = {
 						["title"] = "Crossing Fate",
@@ -2307,12 +2360,12 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 1670,
 					},
-					[66029] = {
-						["title"] = "Temporal Tuning",
-						["zone"] = "Thaldraszus",
-						["level"] = 70,
+					[50606] = {
+						["title"] = "Horde War Effort",
+						["zone"] = "Zuldazar",
+						["level"] = 50,
 						["isCalling"] = false,
-						["startMapID"] = 2025,
+						["startMapID"] = 0,
 					},
 					[60389] = {
 						["title"] = "Aiding Ardenweald",
@@ -2320,6 +2373,13 @@ KalielsTrackerDB = {
 						["level"] = 60,
 						["isCalling"] = true,
 						["startMapID"] = 1700,
+					},
+					[70617] = {
+						["title"] = "All Mine, Mine, Mine",
+						["zone"] = "Professions",
+						["level"] = 70,
+						["isCalling"] = false,
+						["startMapID"] = 2112,
 					},
 					[64969] = {
 						["state"] = "complete",
@@ -2329,12 +2389,19 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 1970,
 					},
-					[60401] = {
-						["title"] = "Training in Ardenweald",
-						["zone"] = "Venthyr Callings",
-						["level"] = 70,
-						["isCalling"] = true,
-						["startMapID"] = 1699,
+					[63576] = {
+						["title"] = "The First Move",
+						["zone"] = "Chains of Domination",
+						["level"] = 60,
+						["startMapID"] = 0,
+						["isCalling"] = false,
+					},
+					[61705] = {
+						["title"] = "Ember Court: Refreshments",
+						["zone"] = "Ember Court",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 0,
 					},
 					[60409] = {
 						["title"] = "Training in Maldraxxus",
@@ -2343,6 +2410,13 @@ KalielsTrackerDB = {
 						["startMapID"] = 1699,
 						["isCalling"] = true,
 					},
+					[66847] = {
+						["title"] = "Vault of the Incarnates: Fury of the Storm-Eater",
+						["zone"] = "Raid",
+						["level"] = 70,
+						["isCalling"] = false,
+						["startMapID"] = 2025,
+					},
 					[60417] = {
 						["title"] = "Rare Resources",
 						["zone"] = "Venthyr Callings",
@@ -2350,12 +2424,96 @@ KalielsTrackerDB = {
 						["startMapID"] = 1700,
 						["isCalling"] = true,
 					},
-					[65259] = {
-						["title"] = "Heart of the Sepulcher",
-						["zone"] = "Sepulcher of the First Ones",
+					[60401] = {
+						["title"] = "Training in Ardenweald",
+						["zone"] = "Venthyr Callings",
+						["level"] = 70,
+						["isCalling"] = true,
+						["startMapID"] = 1699,
+					},
+					[72171] = {
+						["title"] = "Proving Solo",
+						["zone"] = "Valdrakken",
+						["level"] = 70,
+						["isCalling"] = false,
+						["startMapID"] = 2112,
+					},
+					[63781] = {
+						["title"] = "Mawsworn Battle Plans",
+						["zone"] = "Korthia",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 1961,
+					},
+					[70697] = {
+						["title"] = "An Expert Opinion",
+						["zone"] = "Battle Pets",
+						["level"] = 70,
+						["isCalling"] = false,
+						["startMapID"] = 2112,
+					},
+					[50603] = {
+						["title"] = "Voldunai",
+						["zone"] = "Vol'dun",
+						["level"] = 50,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[72354] = {
+						["title"] = "The Great Vault",
+						["zone"] = "Thaldraszus",
+						["level"] = 70,
+						["isCalling"] = false,
+						["startMapID"] = 2112,
+					},
+					[48305] = {
+						["title"] = "The Burning Coven",
+						["zone"] = "Antorus, the Burning Throne",
 						["level"] = 70,
 						["isCalling"] = false,
 						["startMapID"] = 0,
+					},
+					[56352] = {
+						["title"] = "The Eternal Palace: We Can Make It Stronger...",
+						["zone"] = "Professions",
+						["level"] = 70,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[48642] = {
+						["title"] = "Argussian Reach",
+						["zone"] = "Mac'Aree",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[70930] = {
+						["title"] = "All Tea, No Shadeleaf",
+						["zone"] = "The Azure Span",
+						["level"] = 70,
+						["isCalling"] = false,
+						["startMapID"] = 2112,
+					},
+					[64271] = {
+						["title"] = "A More Civilized Way",
+						["zone"] = "Korthia",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 1961,
+					},
+					[57462] = {
+						["title"] = "Dream Catcher",
+						["zone"] = "Professions",
+						["level"] = 70,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[63644] = {
+						["title"] = "Dread Tidings",
+						["zone"] = "Chains of Domination",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 1961,
 					},
 					[60456] = {
 						["title"] = "Storm the Maw",
@@ -2378,33 +2536,12 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 1672,
 					},
-					[50606] = {
-						["title"] = "Horde War Effort",
-						["zone"] = "Zuldazar",
-						["level"] = 50,
-						["isCalling"] = false,
-						["startMapID"] = 0,
-					},
-					[48642] = {
-						["title"] = "Argussian Reach",
-						["zone"] = "Mac'Aree",
-						["level"] = 60,
-						["isCalling"] = false,
-						["startMapID"] = 0,
-					},
 					[47727] = {
 						["title"] = "Tomb of Sargeras: Aegwynn's Path",
 						["zone"] = "Tomb of Sargeras",
 						["level"] = 70,
 						["isCalling"] = false,
 						["startMapID"] = 0,
-					},
-					[64271] = {
-						["title"] = "A More Civilized Way",
-						["zone"] = "Korthia",
-						["level"] = 60,
-						["isCalling"] = false,
-						["startMapID"] = 1961,
 					},
 					[24756] = {
 						["title"] = "Blood Infusion",
@@ -2413,13 +2550,6 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
-					[63644] = {
-						["title"] = "Dread Tidings",
-						["zone"] = "Chains of Domination",
-						["level"] = 60,
-						["isCalling"] = false,
-						["startMapID"] = 1961,
-					},
 					[64166] = {
 						["title"] = "Random Memory Access",
 						["zone"] = "Korthia",
@@ -2427,31 +2557,54 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 1961,
 					},
-					[50603] = {
-						["title"] = "Voldunai",
-						["zone"] = "Vol'dun",
-						["level"] = 50,
+					[64942] = {
+						["title"] = "Call of the Primus",
+						["zone"] = "Secrets of the First Ones",
+						["level"] = 60,
+						["startMapID"] = 1961,
 						["isCalling"] = false,
-						["startMapID"] = 0,
 					},
-					[61705] = {
-						["title"] = "Ember Court: Refreshments",
-						["zone"] = "Ember Court",
+					[65069] = {
+						["title"] = "Culling the Maelstrom",
+						["zone"] = "Zereth Mortis",
 						["level"] = 60,
 						["isCalling"] = false,
-						["startMapID"] = 0,
+						["startMapID"] = 1970,
 					},
 					[70170] = {
 						["title"] = "Beat the Demons Out of It",
 						["zone"] = "The Azure Span",
-						["level"] = 68,
+						["level"] = 70,
 						["isCalling"] = false,
 						["startMapID"] = 2024,
 					},
-					[48305] = {
-						["title"] = "The Burning Coven",
-						["zone"] = "Antorus, the Burning Throne",
+					[62287] = {
+						["title"] = "Observing Arenas",
+						["zone"] = "Oribos",
+						["level"] = 60,
+						["startMapID"] = 1670,
+						["isCalling"] = false,
+					},
+					[65259] = {
+						["title"] = "Heart of the Sepulcher",
+						["zone"] = "Sepulcher of the First Ones",
 						["level"] = 70,
+						["isCalling"] = false,
+						["startMapID"] = 0,
+					},
+					[63672] = {
+						["state"] = "complete",
+						["title"] = "A Cry From the Heart",
+						["zone"] = "Chains of Domination",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 1961,
+					},
+					[60267] = {
+						["state"] = "complete",
+						["title"] = "Prison of the Forgotten",
+						["zone"] = "Venthyr Campaign",
+						["level"] = 60,
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
@@ -2462,70 +2615,12 @@ KalielsTrackerDB = {
 						["startMapID"] = 0,
 						["isCalling"] = false,
 					},
-					[65069] = {
-						["title"] = "Culling the Maelstrom",
-						["zone"] = "Zereth Mortis",
-						["level"] = 60,
-						["isCalling"] = false,
-						["startMapID"] = 1970,
-					},
-					[64942] = {
-						["title"] = "Call of the Primus",
-						["zone"] = "Secrets of the First Ones",
-						["level"] = 60,
-						["startMapID"] = 1961,
-						["isCalling"] = false,
-					},
-					[63672] = {
-						["state"] = "complete",
-						["title"] = "A Cry From the Heart",
-						["zone"] = "Chains of Domination",
-						["level"] = 60,
-						["isCalling"] = false,
-						["startMapID"] = 1961,
-					},
-					[62287] = {
-						["title"] = "Observing Arenas",
-						["zone"] = "Oribos",
-						["level"] = 60,
-						["startMapID"] = 1670,
-						["isCalling"] = false,
-					},
-					[57462] = {
-						["title"] = "Dream Catcher",
-						["zone"] = "Professions",
+					[70845] = {
+						["title"] = "In Tyr's Footsteps",
+						["zone"] = "Dragonflight",
 						["level"] = 70,
 						["isCalling"] = false,
-						["startMapID"] = 0,
-					},
-					[63576] = {
-						["title"] = "The First Move",
-						["zone"] = "Chains of Domination",
-						["level"] = 60,
-						["startMapID"] = 0,
-						["isCalling"] = false,
-					},
-					[60267] = {
-						["state"] = "complete",
-						["title"] = "Prison of the Forgotten",
-						["zone"] = "Venthyr Campaign",
-						["level"] = 60,
-						["isCalling"] = false,
-						["startMapID"] = 0,
-					},
-					[56352] = {
-						["title"] = "The Eternal Palace: We Can Make It Stronger...",
-						["zone"] = "Professions",
-						["level"] = 70,
-						["isCalling"] = false,
-						["startMapID"] = 0,
-					},
-					[63781] = {
-						["title"] = "Mawsworn Battle Plans",
-						["zone"] = "Korthia",
-						["level"] = 60,
-						["isCalling"] = false,
-						["startMapID"] = 1961,
+						["startMapID"] = 2112,
 					},
 					[65105] = {
 						["title"] = "Return More Lost Souls",
@@ -3184,26 +3279,8 @@ KalielsTrackerDB = {
 		["Fantastiburo - Zul'jin"] = {
 			["collapsed"] = true,
 		},
-		["Tyran - Argent Dawn"] = {
-			["quests"] = {
-				["num"] = 2,
-				["cache"] = {
-					[8325] = {
-						["title"] = "Reclaiming Sunstrider Isle",
-						["zone"] = "Sunstrider Isle",
-						["level"] = 3,
-						["isCalling"] = false,
-						["startMapID"] = 0,
-					},
-					[31891] = {
-						["title"] = "Battle Pet Tamers: Kalimdor",
-						["zone"] = "Battle Pets",
-						["level"] = 3,
-						["isCalling"] = false,
-						["startMapID"] = 0,
-					},
-				},
-			},
+		["Datgore - Zul'jin"] = {
+			["collapsed"] = true,
 		},
 		["Darnastris - Dalaran"] = {
 			["quests"] = {
@@ -3775,16 +3852,16 @@ KalielsTrackerDB = {
 		["Banesmuncy - Zul'jin"] = "Default",
 		["Zulbathal - Zul'jin"] = "Default",
 		["Alatra - Zul'jin"] = "Default",
-		["Jingojaggot - Zul'jin"] = "Default",
-		["Tinkster - Dalaran"] = "Default",
 		["Shimzo - Zul'jin"] = "Default",
+		["Tinkster - Dalaran"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Default",
 		["Gillbourn - Runetotem"] = "Default",
 		["Guufnah - Zul'jin"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
 		["Shathiel - Darkspear"] = "Default",
 		["Okona - Zul'jin"] = "Default",
 		["Laymonan - Zul'jin"] = "Default",
-		["Fantastiburo - Zul'jin"] = "Default",
+		["Jingojaggot - Zul'jin"] = "Default",
 		["Tynkster - Dalaran"] = "Default",
 		["Brotus - Argent Dawn"] = "Default",
 		["Tyran - Argent Dawn"] = "Default",

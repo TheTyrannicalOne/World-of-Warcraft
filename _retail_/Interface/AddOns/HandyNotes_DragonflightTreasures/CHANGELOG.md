@@ -1,5 +1,15 @@
 # Changelog
 
+## Changed in v36
+
+* More loot data obtained
+* Some position fixes for rares in Thaldraszus
+
+## Changed in v35
+
+* Add some recipes that are findable in the open world
+* Assorted data improvements, mostly around Dragonbane Keep and in the Azure Span
+
 ## Changed in v34
 
 * Add loot data for the world bosses now they're present

@@ -10,7 +10,7 @@ Licensed under a Creative Commons "Attribution Non-Commercial Share Alike" Licen
 local _
 
 local MAJOR_VERSION = "LibFishing-1.0"
-local MINOR_VERSION = 101094
+local MINOR_VERSION = 101101
 
 if not LibStub then error(MAJOR_VERSION .. " requires LibStub") end
 
@@ -75,6 +75,16 @@ end
 
 function FishLib:IsCrusade()
     return IsCrusade()
+end
+
+local BlizzardTradeSkillUI
+local BlizzardTradeSkillFrame
+if IsRetail() then
+	BlizzardTradeSkillUI = "Blizzard_Professions";
+	BlizzardTradeSkillFrame = "ProfessionsFrame";
+else
+	BlizzardTradeSkillUI = "Blizzard_TradeSkillUI";
+	BlizzardTradeSkillFrame = "TradeSkillFrame";
 end
 
 -- Some code suggested by the author of LibBabble-SubZone so I don't have
@@ -188,9 +198,8 @@ function FishLib:GetFishingSpellInfo()
     return id, name
 end
 
-local DEFAULT_SKILL = { ["max"] = 300, ["skillid"] = 356, ["cat"] = 1100, ["rank"] = 0 }
 FishLib.continent_fishing = {
-    { ["max"] = 300, ["skillid"] = 356, ["cat"] = 1100, ["rank"] = 0 },	-- 2592?
+    { ["max"] = 300, ["skillid"] = 356, ["cat"] = 1100, ["rank"] = 0 },	-- Default -- 2592?
     { ["max"] = 300, ["skillid"] = 356, ["cat"] = 1100, ["rank"] = 0 },
     { ["max"] = 75, ["skillid"] = 2591, ["cat"] = 1102, ["rank"] = 0 },	-- Outland Fishing
     { ["max"] = 75, ["skillid"] = 2590, ["cat"] = 1104, ["rank"] = 0 },	-- Northrend Fishing
@@ -201,7 +210,9 @@ FishLib.continent_fishing = {
     { ["max"] = 175, ["skillid"] = 2585, ["cat"] = 1114, ["rank"] = 0 },	-- Kul Tiras Fishing
     { ["max"] = 175, ["skillid"] = 2585, ["cat"] = 1114, ["rank"] = 0 },	-- Zandalar Fishing
     { ["max"] = 200, ["skillid"] = 2754, ["cat"] = 1391, ["rank"] = 0 },	-- Shadowlands Fishing
+	{ ["max"] = 100, ["skillid"] = 2826, ["cat"] = 1805, ["rank"] = 0 },	-- Dragonflight Fishing
 }
+local DEFAULT_SKILL = FishLib.continent_fishing[1];
 
 if IsCrusade() then
     FishLib.continent_fishing[2].max = 375
@@ -217,6 +228,7 @@ local FISHING_LEVELS = {
     100,        -- Legion
     175,        -- BfA
     200,        -- Shadowlands
+	100,        -- Dragonflight
 }
 
 local CHECKINTERVAL = 0.5
@@ -227,11 +239,16 @@ local GetCategoryInfo = C_TradeSkillUI.GetCategoryInfo
 local CloseTradeSkill = C_TradeSkillUI.CloseTradeSkill
 
 function FishLib:UpdateFishingSkillData()
-    for _,info in pairs(self.continent_fishing) do
-        local data = C_TradeSkillUI.GetCategoryInfo(info.cat);
-        -- info.max = data.skillLineMaxLevel
-        info.rank = data.skillLineCurrentLevel
-        self.havedata = true
+	local categories = {C_TradeSkillUI.GetCategories()}
+	for _, categoryID in pairs(categories) do
+        for _, info in pairs(self.continent_fishing) do
+            if (categoryID == info.cat) then
+                local data = C_TradeSkillUI.GetCategoryInfo(info.cat);
+			    --info.max = data.skillLineMaxLevel
+                info.rank = data.skillLineCurrentLevel
+                self.havedata = true
+            end
+        end
     end
 end
 
@@ -263,8 +280,8 @@ local function SkillInitialize(self, elapsed)
         if self.state == 0 then
             if TradeSkillFrame then
                 self.state = self.state + 1
-                self.tsfpanel = UIPanelWindows["TradeSkillFrame"]
-                UIPanelWindows["TradeSkillFrame"] = nil
+                self.tsfpanel = UIPanelWindows[BlizzardTradeSkillFrame]
+                UIPanelWindows[BlizzardTradeSkillFrame] = nil
                 self.tsfpos = {}
                 for idx=1,TradeSkillFrame:GetNumPoints() do
                     tinsert(self.tsfpos, {TradeSkillFrame:GetPoint(idx)})
@@ -290,7 +307,7 @@ local function SkillInitialize(self, elapsed)
                 end
             end
             if self.tsfpanel then
-                UIPanelWindows["TradeSkillFrame"] = self.tsfpanel
+                UIPanelWindows[BlizzardTradeSkillFrame] = self.tsfpanel
             end
             self.tsfpanel = nil
             self.tsfpos = nil
@@ -309,8 +326,8 @@ function FishLib:GetTradeSkillData()
     end
     local btn = _G[SABUTTONNAME];
     if btn then
-        if (not IsAddOnLoaded("Blizzard_TradeSkillUI")) then
-            LoadAddOn("Blizzard_TradeSkillUI");
+        if (not IsAddOnLoaded(BlizzardTradeSkillUI)) then
+            LoadAddOn(BlizzardTradeSkillUI);
         end
         btn.skillupdate:SetScript("OnUpdate", SkillInitialize);
         btn.skillupdate:Show()
@@ -780,7 +797,8 @@ function FishLib:FindBestLure(b, state, usedrinks, forcemax)
             skill = skill - enchant;
             state = state or 0;
             local checklure;
-            local useit, b = 0;
+            local useit;
+            local b = 0;
 
             -- Look for lures we're wearing, first
             for s=state+1,#lureinventory,1 do
@@ -912,7 +930,7 @@ local slotinfo = {
     [14] = { name = "Finger1Slot", tooltip = FINGER1SLOT, id = INVSLOT_FINGER2, transmog = false },
     [15] = { name = "Trinket0Slot", tooltip = TRINKET0SLOT, id = INVSLOT_TRINKET1, transmog = false },
     [16] = { name = "Trinket1Slot", tooltip = TRINKET1SLOT, id = INVSLOT_TRINKET2, transmog = false },
-    [17] = { name = "FishingToolSlot", tooltip = MAINHANDSLOT, id = 28, transmog = false },
+    [17] = { name = "FishingToolSlot", tooltip = FISHINGTOOLSLOT, id = 28, transmog = false },
     [18] = { name = "SecondaryHandSlot", tooltip = SECONDARYHANDSLOT, id = INVSLOT_OFFHAND, transmog = true },
 }
 
@@ -946,6 +964,7 @@ local slotmap = {
     ["INVTYPE_TABARD"] = { INVSLOT_TABARD },
     ["INVTYPE_BAG"] = { 20,21,22,23 },
     ["INVTYPE_QUIVER"] = { 20,21,22,23 },
+    ["INVTYPE_FISHINGTOOL"] = { 28 },
     [""] = { },
 };
 
@@ -1406,6 +1425,10 @@ function FishLib:GetMainHandItem(get_id)
     return self:GetWornItem(get_id, INVSLOT_MAINHAND);
 end
 
+function FishLib:GetFishingToolItem(get_id)
+    return self:GetWornItem(get_id, 28);
+end
+
 function FishLib:GetHeadItem(get_id)
     return self:GetWornItem(get_id, INVSLOT_HEAD);
 end
@@ -1623,6 +1646,7 @@ FishLib.BROKEN_ISLES = 8
 FishLib.KUL_TIRAS = 9
 FishLib.ZANDALAR = 10
 FishLib.SHADOWLANDS = 11
+FishLib.DRAGONFLIGHT = 12
 
 -- Darkmoon Island is it's own continent?
 local continent_map = {
@@ -1639,6 +1663,7 @@ local continent_map = {
     [1355] = FishLib.KUL_TIRAS,         -- Nazjatar
     [407] = FishLib.THE_MAELSTROM,      -- Darkmoon Island
     [1550] = FishLib.SHADOWLANDS,       -- Shadowlands
+    [1978] = FishLib.DRAGONFLIGHT,      -- Dragon Isles
 }
 
 local special_maps = {
@@ -1658,6 +1683,7 @@ local special_maps = {
 -- Pandaria, 6, 424
 -- Draenor, 7, 572
 -- Broken Isles, 8, 619
+-- Dragon Isles, 12, 1978
 function FishLib:GetMapContinent(mapId, debug)
     if HBD.mapData[mapId] and mapId then
         local cMapId = mapId;
@@ -1993,7 +2019,7 @@ function FishLib:AddTooltip(text, tooltip)
     if ( text ) then
         if ( type(text) == "table" ) then
             for _,l in pairs(text) do
-                AddTooltipLine(l, tooltip);
+                AddTooltipLine(l);
             end
         else
             -- AddTooltipLine(text, color);
@@ -2084,10 +2110,10 @@ function FishLib:InCombat(flag)
     end
 end
 
-function FishLib:ResetOverride()
+function FishLib:ResetOverride(force)
     if self.combat_flag or self:WillTaint() then
         self.clear_bindings = true
-    elseif self.clear_bindings then
+    elseif self.clear_bindings or force then
         local btn = _G[SABUTTONNAME];
         if (  btn ) then
             ClearOverrideBindings(btn)
@@ -2211,8 +2237,12 @@ function FishLib:InvokeLuring(id, itemtype)
     end
     if ( id ) then
         local buttonkey = self:GetSAMouseKey();
-        id = self:ValidLink(id)
-        SetOverrideBindingItem(btn, true, buttonkey, id)
+        if itemtype == "toy" then
+            SetOverrideBindingSpell(btn, true, buttonkey, id)
+        else
+            id = self:ValidLink(id)
+            SetOverrideBindingItem(btn, true, buttonkey, id)
+        end
         self.clear_bindings = true
     end
 end
@@ -2314,7 +2344,11 @@ function FishLib:GetPoleBonus()
         local hmhe,_,_,_,_,_ = GetWeaponEnchantInfo();
         if ( hmhe ) then
             -- IsFishingPole has set mainhand for us
-            local id = self:GetMainHandItem(true);
+            if IsRetail() then
+                local id = self:GetFishingToolItem(true);
+            else
+                local id = self:GetMainHandItem(true);
+            end
             -- get the raw value of the pole without any temp enchants
             local pole = self:FishingBonusPoints(id);
             return total, total - pole;

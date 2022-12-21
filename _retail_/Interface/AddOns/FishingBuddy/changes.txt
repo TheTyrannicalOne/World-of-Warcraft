@@ -1,3 +1,14 @@
+Version 1.19.3
+- Revert CallbackHandler change
+
+Version 1.19.2
+- Skill display and misc fixes from Spiritwlf (thank you!)
+- Update fishing library
+
+Version 1.19.1
+- Better secure button handling
+- Fix a missing function error
+
 Version 1.19
 - Update mouse handling to a less intrusive model (thanks Gethe's wow-ui-source
   for helping me find GLOBAL_MOUSE)

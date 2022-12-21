@@ -13,10 +13,10 @@ WoWDBProfilerData = {
 		["Zulbathal - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Valmagus - Zul'jin"] = "Default",
-		["Okona - Zul'jin"] = "Default",
+		["Alatra - Zul'jin"] = "Default",
 		["Galvarton - Dalaran"] = "Default",
 		["Laymonan - Zul'jin"] = "Default",
-		["Alatra - Zul'jin"] = "Default",
+		["Guufnah - Zul'jin"] = "Default",
 		["Avisar - Dalaran"] = "Default",
 		["Banuumine - Zul'jin"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
@@ -29,7 +29,7 @@ WoWDBProfilerData = {
 		["Rotclaugh - Dalaran"] = "Default",
 		["Bathal - Argent Dawn"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
-		["Guufnah - Zul'jin"] = "Default",
+		["Okona - Zul'jin"] = "Default",
 		["Jasmoney - Zul'jin"] = "Default",
 		["Banesmuncy - Zul'jin"] = "Default",
 		["Mandles - Zul'jin"] = "Default",
@@ -37,212 +37,44 @@ WoWDBProfilerData = {
 	["region"] = "US",
 	["global"] = {
 		["items"] = {
-			[127783] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[181476] = {
-				["instance_difficulty_id"] = 74,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[190381] = {
-				["instance_difficulty_id"] = 74,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[114337] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["201"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[187572] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[190370] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["1491:6652:8115"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[120301] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[180249] = {
+			[191140] = {
 				["instance_difficulty_id"] = 11,
 				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
-			},
-			[187569] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
 				["unique_id"] = 0,
-				["suffix_id"] = 0,
 			},
-			[190611] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[181222] = {
+			[200457] = {
 				["instance_difficulty_id"] = 25,
 				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
-					["1472:5904:6646:6652"] = true,
+					["1472"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
-			[188170] = {
+			[200613] = {
 				["instance_difficulty_id"] = 11,
 				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
-			[190635] = {
-				["instance_difficulty_id"] = 11,
+			[192007] = {
+				["instance_difficulty_id"] = 26,
 				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
-					["1491:6652:7578:8115"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[191139] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[181475] = {
-				["instance_difficulty_id"] = 74,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[114100] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
+					["1462:5851:6652:8766"] = true,
 				},
 				["suffix_id"] = 0,
 				["unique_id"] = 0,
-			},
-			[120302] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[190632] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["1491:6652:7579:8115"] = true,
-					["1491:6652:7578:8115"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[187629] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[190237] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[181427] = {
-				["instance_difficulty_id"] = 27,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["42:1472:5910:6646:7578"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[127806] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-		},
-		["npcs"] = {
-			["156479"] = {
-				["banker"] = true,
 			},
 		},
 	},
-	["build_num"] = 47067,
+	["build_num"] = 47213,
 	["version"] = 19,
 }

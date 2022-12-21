@@ -1,3 +1,23 @@
+# 3.6.4
+
+## Changes
+
+- *Reverted "Guild Groups Only" addition as it had potential to break horribly.*
+
+# v3.6.3
+
+## Changes
+
+Added option for toggling 'Escape' closing frames.
+
+### Group Loot
+
+By default, RCLootCouncil will now no longer auto pass group loot if the group leader is not a member of your guild. You can override this behavior with the "Guild Groups Only" option.
+
+## Bugfixes
+
+- *Fixed issue with realm name not available upon login, affecting specifc comms.*
+
 # v3.6.2
 
 ## Changes

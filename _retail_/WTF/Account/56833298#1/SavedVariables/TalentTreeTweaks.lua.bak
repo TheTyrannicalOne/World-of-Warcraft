@@ -29,14 +29,6 @@ TalentTreeTweaksDB = {
 		},
 		["AlwaysShowGates"] = {
 		},
-		["HighlightCascadeRepurchable"] = {
-			["color"] = {
-				["a"] = 0.5,
-				["b"] = 1,
-				["g"] = 0,
-				["r"] = 0,
-			},
-		},
 		["TooltipIds"] = {
 			["professionTooltip"] = {
 				["enabled"] = true,
@@ -53,6 +45,26 @@ TalentTreeTweaksDB = {
 				["entryId"] = true,
 			},
 		},
+		["HighlightCascadeRepurchable"] = {
+			["color"] = {
+				["a"] = 0.5,
+				["b"] = 1,
+				["g"] = 0,
+				["r"] = 0,
+			},
+		},
+		["UnlockRestrictions"] = {
+			["unlockShareButton"] = true,
+			["unlockInCombatSpending"] = true,
+		},
+		["ScaleTalentFrame"] = {
+		},
+		["ReduceTaint"] = {
+		},
+		["RespecButtons"] = {
+		},
+		["ExportInspectedBuild"] = {
+		},
 		["DebugNodeInfo"] = {
 			["viragDevTool"] = true,
 			["luaBrowser"] = true,
@@ -60,13 +72,9 @@ TalentTreeTweaksDB = {
 			["addButtonToTable"] = true,
 			["tinspect"] = true,
 		},
-		["RespecButtons"] = {
-		},
-		["ScaleTalentFrame"] = {
-		},
-		["ExportInspectedBuild"] = {
-		},
 		["ImportIntoCurrentLoadout"] = {
+			["defaultCheckboxState"] = false,
+			["unlockImportButton"] = true,
 		},
 	},
 }

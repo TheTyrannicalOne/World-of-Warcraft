@@ -1,11 +1,15 @@
-lightweight tag ad76658a0748df1e877cb60f779f8e4acb7503b6 r139
+tag a34c4d788575bdac29613dc83e3896ad45af6726 r140
 Author:	corgatag <13686151+corgatag@users.noreply.github.com>
-Date:	Sun Nov 20 00:56:05 2022 -0800
+Date:	Tue Dec 20 01:19:35 2022 -0800
 
-commit ad76658a0748df1e877cb60f779f8e4acb7503b6
+- Fix warlock interrupt spell checks
+- Add support for low-priority casts
+- Add low priority casts and purges for Dragonflight S1
+
+commit 84a680472f0e3a01ccbd19e14cd30a9cca96f28a
 Author: corgatag <13686151+corgatag@users.noreply.github.com>
-Date:   Sun Nov 20 00:56:05 2022 -0800
+Date:   Tue Dec 20 01:17:52 2022 -0800
 
-    - Add Quell for Evoker
-    - Increment TOC
+    - Add support for low-priority casts
+    - Add low priority casts and purges for Dragonflight S1
 

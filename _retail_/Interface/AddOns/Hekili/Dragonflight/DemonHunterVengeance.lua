@@ -631,6 +631,34 @@ spec:RegisterHook( "advance_end", function( time )
 end )
 
 
+-- Phases from 20221218 priority and forward.
+spec:RegisterPhase( "the_hunt_ramp_in_progress",
+    function() return talent.the_hunt.enabled and cooldown.the_hunt.remains < 5 and not dot.fiery_brand.ticking end,
+    function() return cooldown.the_hunt.remains >= 5 end,
+"reset_precast", "advance_end", "runHandler" )
+
+spec:RegisterPhase( "elysian_decree_ramp_in_progress",
+    function() return talent.elysian_decree.enabled and cooldown.elysian_decree.remains < 5 and not dot.fiery_brand.ticking end,
+    function() return cooldown.elysian_decree.remains >= 5 end,
+"reset_precast", "advance_end", "runHandler" )
+
+spec:RegisterPhase( "soul_carver_ramp_in_progress",
+    function() return talent.soul_carver.enabled and cooldown.soul_carver.remains<5 and not talent.fiery_demise.enabled and not dot.fiery_brand.ticking end,
+    function() return cooldown.soul_carver.remains >= 5 end,
+"reset_precast", "advance_end", "runHandler" )
+
+spec:RegisterPhase( "fiery_demise_with_soul_carver_in_progress",
+    -- talent.fiery_demise.enabled & talent.soul_carver.enabled & cooldown.soul_carver.up & cooldown.fiery_brand.up & cooldown.immolation_aura.up & cooldown.fel_devastation.remains < 10
+    function() return talent.fiery_demise.enabled and talent.soul_carver.enabled and cooldown.soul_carver.remains < gcd.max and cooldown.fiery_brand.remains < gcd.max and cooldown.immolation_aura.remains < gcd.max and cooldown.fel_devastation.remains < 10 end,
+    function() return cooldown.soul_carver.remains >= gcd.max and cooldown.fiery_brand.remains >= gcd.max and cooldown.immolation_aura.remains >= gcd.max and cooldown.fel_devastation.remains >= gcd.max end,
+"reset_precast", "advance_end", "runHandler" )
+
+-- TODO: Darkglare Boon High Roll not implemented; not sure I see the point yet.
+spec:RegisterPhase( "fiery_demise_without_soul_carver_in_progress",
+    function() return talent.fiery_demise.enabled and ( talent.soul_carver.enabled and cooldown.soul_carver.remains >= gcd.max or not talent.soul_carver.enabled ) and cooldown.fiery_brand.remains < gcd.max and cooldown.immolation_aura.remains < gcd.max and cooldown.fel_devastation.remains < 10 end,
+    function() return cooldown.fiery_brand.remains >= gcd.max and cooldown.immolation_aura.remains >= gcd.max and cooldown.fel_devastation.remains >= 10 end,
+"reset_precast", "advance_end", "runHandler" )
+
 -- Gear Sets
 spec:RegisterGear( "tier29", 200345, 200347, 200342, 200344, 200346 )
 spec:RegisterAura( "decrepit_souls", {
@@ -1061,7 +1089,7 @@ spec:RegisterAbilities( {
 
     -- Talent: Place a Sigil of Flame at your location that activates after $d.    Deals $204598s1 Fire damage, and an additional $204598o3 Fire damage over $204598d, to all enemies affected by the sigil.    |CFFffffffGenerates $389787s1 Fury.|R
     sigil_of_flame = {
-        id = function () return talent.concentrated_sigils.enabled and 204513 or 204596 end,
+        id = function () return talent.precise_sigils.enabled and 389810 or talent.concentrated_sigils.enabled and 204513 or 204596 end,
         known = 204596,
         cast = 0,
         cooldown = 30,
@@ -1084,7 +1112,7 @@ spec:RegisterAbilities( {
             create_sigil( "flame" )
         end,
 
-        copy = { 204596, 204513 }
+        copy = { 204596, 204513, 389810 }
     },
 
     -- Talent: Place a Sigil of Misery at your location that activates after $d.    Causes all enemies affected by the sigil to cower in fear. Targets are disoriented for $207685d.
@@ -1407,4 +1435,22 @@ spec:RegisterSetting( "infernal_charges", 1, {
 } )
 
 
-spec:RegisterPack( "Vengeance", 20221216, [[Hekili:TR1wpokUs4FlTwjgIoTsdjn9m7Qo9dN9PT1rZlz15rioGjb1CjhSPNPLIYV9tzdeSn2qy6jAgTx0QD74lF1NRQC5Yf231)p9xhHOy)pVWzXc3fUpmFHZ9oE)Q)A6BhW(RpGcFbTd(JCug8F)V48DyuEiVN3slqrmeifvLSM2tPhi)2D3TlHUVA78WIS7ijzvPiAsrEyjkMY(D4D(R3wLKs)JC)TAe)Y7zINCah6)zVp5cWMefHRhlMe6VgKDzrCskiruidAY)A1DrjKYQd0tp31ui8)QYWbzODjHID8kQmbTnfFlBrTQeLDyFquro(2IdRiy6TVIsRWRUHIsX505094G9v50JhdlksJk(s(5MMxIZqj5KN8ggEC0a4JtFJKGYdIWHLySGuK74sLfjCazbwQ0Gqu5R4YJhBAlobx(giKSeIO0fg6Li64HwItqeoc9xpTTLO8iT9NKLvu7CfGQkr6XaNcc(veHYh45X4cdkQGkjdAs4lj57exKj5X4YCuAaHwM8c(2K4v0eWNIwaUvFniCpQChM84UWO5WVTOSFsNdoJu2UeqkIGbkaGQKdaqeosOCM8SS3wfhpxS35mUdRIA4FYDMimcuMHIoLS1nxWABBv6lb4VslRBsSRdfQTurWbjuC2TK0c6kqzK)cM6o6iwioIYkWqX)vqkOHe2(XxhTouZ72rAzBAHC8OU19SlsC4O(YRzl61rGKW(cSzF63FbgRS6A2zkoVmmfLvuEyFbjH7jEd3duQ55vhExCtzJhtk2TtI5DhKKheNceMinnW)VmHgSTiBlFk26zwR0z(UvLylEOe4x7YGMjpTA5SJhvB7ElMyEfhGZb62BBvD0Oum6v(2C72qMDesrkRCA2VdaD8OTm4pUWY2wLLXvLV90kpp2WVrFNF0H1PbZHbaxoeGEoZy)JWaewrZ(PIKsbELJTlArKc0XMpe6mojmH(0kxhl7bpEX1tsvmiuQUZBtrrCxd5bEVum(2fMjxiBzFOhxTSNx5XJ9CLKL4sht2tlt7xuOSNb7htVPryY7ts2LKguexV7TV(yPK(GShJkfBGUVS4lb7srWk80ZN7PoOVIc0iWNh9eit3Cyu6chQC0OXJO0hI2Cf1aUsaNErx6fUQVNXPN)LF50gvKhjb3K4M8ZCR))b4ucELZTqcZrjmKwPK6RL5mFDuTH4OrmIw2ryURhmi4waVnhoHi8Lhx51DOcttewwr2BPmughMPrEt1nOEsxMFq9yFFocCmKZNxNqUkoeCOh7ojxSlH8IWASlR0Z9GeoP948HpvRB9KUmRB9yFFw3Am6oTXyVFVnTCOh7kGxSPvyfyn0HOw6o9u2shpAqGrVGsdgk31XWSAZXWrD69tcvfHMffCqSYC1KbYLX5r9MmqbOlvK6u(9rQpJfv49tZWOu96Ft4ZkfpUM9rpvfB)TKM1RMGODd6vMQYjCiUfkUFKX4jgvuBoPdxGdRHRVH14L3WA0QB4mZFniuc0wxT18x)fuzo4Vs8x)N7XN2KKDOOKEAtCr5PnFa2DIQsPF40Ms8)RkPehDAdPidghQIwKHOSgc3JY3HjZp98)jbUt5ML)2Pn)EroilE3FqjXbamAr)MNJZzQ8iOBB3Vo7mA3Rhn5ZwuWu5Ghdi7PhzbdKcSIMUPHPORGcOIDzc1hUkO(RxfuDnyWEVWED0SUxhvR7NUoWAWKjx7efGL70e0lCmW4MZpuzBtZgHZ1WMRUZbv3C11Zub97mh)BfC)Jb5hfClUkHiUwWAiQ(7Z957lONEwtgm1xR9dtkbgtBvARaHkPABxhL(doByW8qBsMN2WkmptC(R5)f77LwFhn4V(m)dW2GK))2FDiSIXq(O(RfVW0PnpTcs1YP97Dc924W5tH07(gXqofEgsl)wrILjpdG7ncGCo(1qC)Pnw16PUB5c9a2ebO7CcycWJjGZ91LIMOuHH9GrEyZCjKPcWehJm50MzN2C8y)oFeCPvPc)69G8P1MyC00nXCIaKuxjYaHcJXRMp3a(LgCj5yOPWzWA5F8GK8GKV7WpDorhkXHaTr0Z(rTdLPUObycbZFlgTSCB98I)wD8aNkdL4yQooMrIligd0evRB0d7mzOga1BqwkaO81Jh2bB0vUY9Xp7nnr3vJKNpeJoUMDhvfLIsqmmjGZhNgoJt5MasdAt8eS6GtVNHJY(0fBCKT4MrVFiQF9NS1)5qFUoI7WfRALCGPMtx2p994tDt8FXJ(3wnQF6I73ujUEr9BEJBk8DH4qKEZBkdu18uCaKnM2n52sHY(R0kmpkEtsgQvUREDz8ZcYx)ECedQF5GDFesDg6Pqf9f8tHq6)Cu6PvZxctx88PWlnvmSMudC1lfwRPEX6PCZx4rN76uO87GsokJtF4X(JZqrT1JP(QBxV5YrFy3ZNA3PWI7SVMp8tZR6JVpT5L9X3JR86(A4HqccYpwWHprR5X)1MWV(NayJcPLpnbveIiimHHpCBmJ(LM9NCkAYNzP8Gcvc)4kflR(fgQoe1ZIohQU59gcU2PfuHFZMKACnLjTqzsl4tY8rnGAqZlrS1onuITY3ltVEwW4P869QlqGy4sornNIPkrBIJ9dGP4ANbZNCQs1M4x)aOkjKtvZbcePABKJlc94ALG5D830Slx9XzDf0csIGtlZrgSfrw)hqqUYb9Vu1cNHq3EO1THkOY7txsFlpNu10sjuAjOKv4cZPrB3D8E)YrQLKNZiS50IQCEkVIPdARpJWw)a7H1kD3D2ZteYBU0P9rhXPnOl5ftLLFBuXRMkI)Bpi0Q4Nnzg(xnLLP7p85fMVqN94jb0)MAUNlk5Ojf66z0korbkS80u2Lft5MM37if7I)kE5GyofGX31R5QGDLlqF8htxe0GwyPZ02rC2h0SpQgDJ3iE31jHocbnvwzZPUm1klS4bXChRRxGYTG)O8v7nx9e2vJQO7laeaFRFN3I))p]] )
+spec:RegisterSetting( "frailty_stacks", 1, {
+    name = "Require |T1097742:0|t Frailty Stacks",
+    desc = "If set above zero, the default priority will not allow certain abilities to be used unless you have at least this many stacks of |T1097742:0|t Frailty on your target.\n\n"
+        .. "This is an experimental setting.  Requiring too many stacks may result in delays to using your major cooldowns and cause a loss of DPS.",
+    type = "range",
+    min = 0,
+    max = 6,
+    step = 1,
+    width = 1.5
+} )
+
+spec:RegisterStateExpr( "frailty_threshold_met", function()
+    if not talent.soulcrush.enabled then return debuff.frailty.up end
+    return debuff.frailty.stack >= settings.frailty_stacks
+end )
+
+
+
+spec:RegisterPack( "Vengeance", 20221219.5, [[Hekili:TR1sVjUUx8plSbb6FfLantN(xqxCVRMzXSHRUltIjyaRMhihN2PsO8z)ESdPy7yNhuA19X8qZ0y7Z7FNJp2E8C8(dVvBqmS3pMnD2mNzopmX5b3Vo9bVvSxpG9wDaf(eAh8djOy4V)tCYomkjumZRrPOnCoKLMt5dTNXoK9)V92De2(81tctJVnJeNhHyK0KqkAlJ)D4TERwNtIyFlXBTzXFpWZd4qVF4(vhGTKnBWLRfNf6TcKnnDljcKikKZ6S)3YB3qYO5hyfF)8qHW)KhJ9Jr7iHYtqs2IPjOi)mgL8e(gY2LmcSqwkS2F6hUhr3HZwSlCZe47Hm(NSjGeyCt)rNPYmBdoonXp7aWOmbNqjprs2nCW68TBNip7K8dYeULGPV6VMIs2WPBadfHtytkhgOJKHNGtqRJWBgoytA1mccMWiHCPiZV15rp5J)jJwoK8uhs1hjpd7ty44BYIszlb3qYtyMtRRyMI)fff5x(PFe4CUHJrwY2J93NNW8PO4d3W9WHSLoCl8zeLWnNjklXNK4dXZDuCww7Chh9AgbLa(Nqkg3GmmSW(jjauh5hIOpJP(Vaa60CMVCSPbzltA)fSIqEHKSj9fHc4lXwZYvJsvsUokb3l0F9qJkBQsmMHItPh2NMre5sL5qkddjrDkByloc0GNrqolFi5mmWws4QW2iWsZQYXKjgYxPeM)6041CchnYSEuLXYZ4YPNZwfMkm6Uyy6ShxoF8XJ6JD3qU4Eg7Jta)eo7rNXFKAqDP1FvseaJWONfvmhDs2sAQfXVyPJjXpsDSfZgoAKn7zBo91hx66YjBqZl6(P8fz2D1MaM3fb4oDm)xsl0GlyCRY6VtgJYMJXXPL7y7JYPi5qTXTM48b2MBljKWECPZ0HJcttJ45yY1bNqXXisce5DvCDDILJ1sSxhH2iWGQl8oL9LRm42WQJ0bR1ZvoESguvvYZN2gEyOTmyntW1s8M7pniu1euYosKF62YcB19pZv8pz7XiQ8aS9uOi)UieyPfF)Tzu3TwZXQlGHdGzHw7E1h4goBpae8bdXoZ6HoxNwUfOtYILp0ejQLvBVcydSsRC4LvZdgRNESQVLdrgA259gOmZY(eUSWbBbTHxMcD5bulm8tkSAw6QJkhI7u7OV3GExfsFGbDMNxkWOZc4YHkDweFsGN(PpI1jJL6YjmAfk1wp4DwkAhd2cFRAQzA)fq9tcOlJtnNa793BUBODPRLNPvaRfZaMQ)Y68x1L1L4xKbp17WYQM7E8O1GJRadSWT)qG61RSJaUCHO6cvkJDbWwBTJ1XtM)XL)Aqqx9u46Y4AMNvN7FOPAnhz(8tomOpx3sKg8VFijGgKtJ5GERGXZawkDFZZ9w9cIMa4MmVvFl(qkLH3ueCFrqP0lc4xkw2KIV7Ts8t8l8wPNCyGFiUi9th1Z738wfcOjmLG8wjRcfbpUSiaW)bdlcgueyCx(Ql1gi9ekXJb6BVeWzEO645CAEh50cGtpiZjE)zCgCNvgOcLlvM7egRAloWmfbosS(C2hxaUwfWOIaDzWvthRYOiyCrWXJfbJQp)IIGzVnFlHcPg74A4x4Ay1CvGbzDMb)Ef4kr5rS3WhveC6PkuxFzeUAjkpDH2cThan8igcZ80dzi8sApMrPBskmR92inhWp9whv4ztV4HKzlnrZH5bC1061dvjnlL)LYFopzTGM2JLO5IVxEPLpEI2k(QMY)gy40lPaqMOuM03anp0mnZ0OzgNgi0yZl1(ZPamuC98C83zOL299xwwZV899ulSXj0ELTU(ul9xlmWqHUyViyNE6L(RiD6CwcvZEsz)FDM(RNDPLsHAApv(IE8MRNMQjeHY2ybcJ3MANlnOqOqyFPdvJm)WrsfCuBJsW37BAZSrnzhwU4EXCM2PD(BBM1V9HbYSUvSJEDUpu1VTnXVI2LETyf7Y(14Bu7FVTGmum3OMDz8MZkTyxxzwoORKD)uzYSh36JQm)Yuf3svr(p1yHrN)4ERH)BZzzTL0z2Buyu7Ttv)qeotRmWMEoVsiUR1OypfOK5PDEFHj2NtzD3uL6YINmuWe7nr0EMVLZF0uPlUlXAAV5dh2NmI3WG2XOg8nUTGU5H7wvWXwoPAxpGz7hvD2DY9HxEauTdn5QEsSZxzwTtJDGIdbxhQ(5X48L5dTZGf)hBRIU1L01PERU4RaO1ov62LayNt6fHMA98r2JBwURMtG)g7)XEdNTA5gQayVJq7Tgyv5flXAhc27h0yfa96YV1fR9()SxjPrv2TmXTXyIRuuFbFleZ4j7n31Ce3o3RNdBVrlTRBsRyG2zbM2588UEcJ)BLY2LSRl5I9UWSRUNi)5NvypZ)Duh0EzGRxQM905EKQX66TECX5p)d4wVl96TCLW)6(WnFF4Y4j9IZMUzVFbK(fqYiqsfSOJL4mjhkobGmyZSFxmI3F9d]] )

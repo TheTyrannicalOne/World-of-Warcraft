@@ -21,6 +21,8 @@ FishingBuddy_Info = {
 		[123001] = 1,
 		[122001] = 1,
 		[119001] = 3,
+		[2022000] = 35,
+		[2022001] = 35,
 		[1355000] = 2,
 		[107000] = 2,
 		[1355002] = 1,
@@ -103,6 +105,7 @@ FishingBuddy_Info = {
 		[63001] = 0,
 		[119001] = 0,
 		[87001] = 0,
+		[2022001] = 0,
 		[1565001] = 0,
 		[85001] = 0,
 		[534002] = 0,
@@ -221,11 +224,11 @@ FishingBuddy_Info = {
 			[177026] = 2,
 			[177028] = 6,
 			[187712] = 3,
-			[187662] = 1,
-			[171441] = 1,
 			[173037] = 32,
-			[177025] = 2,
+			[171441] = 1,
 			[177027] = 3,
+			[177025] = 2,
+			[187662] = 1,
 			[180168] = 2,
 			[180286] = 4,
 			[173043] = 2,
@@ -313,6 +316,21 @@ FishingBuddy_Info = {
 			[6291] = 17,
 			[34484] = 1,
 		},
+		[2022001] = {
+			[192609] = 1,
+			[194968] = 6,
+			[194730] = 7,
+			[188734] = 1,
+			[200106] = 1,
+			[188708] = 1,
+			[192630] = 2,
+			[201222] = 3,
+			[198395] = 2,
+			[194967] = 4,
+			[194970] = 4,
+			[200105] = 1,
+			[199476] = 2,
+		},
 		[1565001] = {
 			[180286] = 1,
 			[173033] = 1,
@@ -335,10 +353,10 @@ FishingBuddy_Info = {
 			[127991] = 3,
 		},
 		[534001] = {
-			[127991] = 8,
-			[127759] = 1,
 			[118391] = 1,
+			[127759] = 1,
 			[127994] = 3,
+			[127991] = 8,
 		},
 		[1462001] = {
 			[168262] = 87,
@@ -625,6 +643,8 @@ FishingBuddy_Info = {
 		[123001] = "Wintergrasp",
 		[122001] = "Isle of Quel'Danas",
 		[119001] = "Wintergrasp River",
+		[2022000] = 1,
+		[2022001] = "Uktulut Pier",
 		[1355000] = 2,
 		[107000] = 1,
 		[1355002] = "Zin-Azshari",
@@ -920,6 +940,12 @@ FishingBuddy_Info = {
 			["quality"] = 1,
 			["texture"] = 133897,
 		},
+		[199476] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Singed Cloth Scraps",
+			["texture"] = 132910,
+			["quality"] = 0,
+		},
 		[138914] = {
 			["color"] = "ff9d9d9d",
 			["enUS"] = "Boomboom Brullingsworth's Coin",
@@ -983,6 +1009,11 @@ FishingBuddy_Info = {
 			["quality"] = 1,
 			["texture"] = 134851,
 		},
+		[194730] = {
+			["enUS"] = "Scalebelly Mackerel",
+			["texture"] = 1387373,
+			["quality"] = 1,
+		},
 		[138917] = {
 			["color"] = "ff9d9d9d",
 			["enUS"] = "God-King Skovald's Fel-Tainted Coin",
@@ -1028,10 +1059,32 @@ FishingBuddy_Info = {
 			["texture"] = 237282,
 			["quality"] = 0,
 		},
+		[188708] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Rotten Leather Leggings",
+			["texture"] = 4291727,
+			["quality"] = 0,
+		},
+		[187712] = {
+			["enUS"] = "Precursor Placoderm Bait",
+			["quality"] = 1,
+			["texture"] = 4038104,
+		},
 		[53067] = {
 			["enUS"] = "Striped Lurker",
 			["quality"] = 1,
 			["texture"] = 350650,
+		},
+		[138905] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Penelope Heathrow's Allowance",
+			["texture"] = 237283,
+			["quality"] = 0,
+		},
+		[3371] = {
+			["enUS"] = "Crystal Vial",
+			["texture"] = 132380,
+			["quality"] = 1,
 		},
 		[138920] = {
 			["color"] = "ff9d9d9d",
@@ -1051,43 +1104,6 @@ FishingBuddy_Info = {
 			["texture"] = 134434,
 			["quality"] = 0,
 		},
-		[133725] = {
-			["enUS"] = "Leyshimmer Blenny",
-			["texture"] = 133919,
-			["quality"] = 1,
-		},
-		[166971] = {
-			["color"] = "ff1eff00",
-			["enUS"] = "Empty Energy Cell",
-			["texture"] = 2902385,
-			["quality"] = 2,
-		},
-		[187712] = {
-			["enUS"] = "Precursor Placoderm Bait",
-			["quality"] = 1,
-			["texture"] = 4038104,
-		},
-		[33823] = {
-			["enUS"] = "Bloodfin Catfish",
-			["quality"] = 1,
-			["texture"] = 133915,
-		},
-		[180168] = {
-			["enUS"] = "Oribobber",
-			["texture"] = 3502035,
-			["quality"] = 1,
-		},
-		[124107] = {
-			["enUS"] = "Cursed Queenfish",
-			["texture"] = 1387364,
-			["quality"] = 1,
-		},
-		[138922] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Havi's Coin",
-			["texture"] = 237283,
-			["quality"] = 0,
-		},
 		[167656] = {
 			["enUS"] = "Pond Hopping Springfish",
 			["canopen"] = false,
@@ -1095,6 +1111,84 @@ FishingBuddy_Info = {
 			["texture"] = 970829,
 			["quest"] = true,
 			["quality"] = 2,
+		},
+		[192630] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Reef Carapace",
+			["texture"] = 1498848,
+			["quality"] = 0,
+		},
+		[133725] = {
+			["enUS"] = "Leyshimmer Blenny",
+			["texture"] = 133919,
+			["quality"] = 1,
+		},
+		[177027] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Old Glove",
+			["quality"] = 0,
+			["texture"] = 132956,
+		},
+		[41813] = {
+			["enUS"] = "Nettlefish",
+			["quality"] = 1,
+			["texture"] = 237323,
+		},
+		[166971] = {
+			["color"] = "ff1eff00",
+			["enUS"] = "Empty Energy Cell",
+			["texture"] = 2902385,
+			["quality"] = 2,
+		},
+		[198395] = {
+			["color"] = "ff1eff00",
+			["enUS"] = "Dull Spined Clam",
+			["texture"] = 1498852,
+			["quality"] = 2,
+		},
+		[138936] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Falara Nightsong's Coin",
+			["texture"] = 237282,
+			["quality"] = 0,
+		},
+		[201222] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Smooth Seashell",
+			["texture"] = 1499541,
+			["quality"] = 0,
+		},
+		[45194] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Tangled Fishing Line",
+			["quality"] = 0,
+			["texture"] = 132891,
+		},
+		[180168] = {
+			["enUS"] = "Oribobber",
+			["texture"] = 3502035,
+			["quality"] = 1,
+		},
+		[33823] = {
+			["enUS"] = "Bloodfin Catfish",
+			["quality"] = 1,
+			["texture"] = 133915,
+		},
+		[53063] = {
+			["enUS"] = "Mountain Trout",
+			["quality"] = 1,
+			["texture"] = 350870,
+		},
+		[138922] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Havi's Coin",
+			["texture"] = 237283,
+			["quality"] = 0,
+		},
+		[152546] = {
+			["enUS"] = "Lane Snapper",
+			["texture"] = 2057313,
+			["quality"] = 1,
 		},
 		[154796] = {
 			["color"] = "ff9d9d9d",
@@ -1107,10 +1201,11 @@ FishingBuddy_Info = {
 			["quality"] = 1,
 			["texture"] = 133918,
 		},
-		[3371] = {
-			["enUS"] = "Crystal Vial",
-			["texture"] = 132380,
-			["quality"] = 1,
+		[45191] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Empty Clam",
+			["quality"] = 0,
+			["texture"] = 134431,
 		},
 		[6291] = {
 			["enUS"] = "Raw Brilliant Smallfish",
@@ -1124,11 +1219,10 @@ FishingBuddy_Info = {
 			["quest"] = true,
 			["quality"] = 1,
 		},
-		[177027] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Old Glove",
-			["quality"] = 0,
-			["texture"] = 132956,
+		[118391] = {
+			["enUS"] = "Worm Supreme",
+			["texture"] = 970852,
+			["quality"] = 1,
 		},
 		[138923] = {
 			["color"] = "ff9d9d9d",
@@ -1142,15 +1236,17 @@ FishingBuddy_Info = {
 			["texture"] = 133931,
 			["quality"] = 3,
 		},
-		[41813] = {
-			["enUS"] = "Nettlefish",
+		[127991] = {
+			["enUS"] = "Felmouth Frenzy",
+			["texture"] = 132107,
 			["quality"] = 1,
-			["texture"] = 237323,
 		},
-		[118391] = {
-			["enUS"] = "Worm Supreme",
-			["texture"] = 970852,
+		[134568] = {
+			["enUS"] = "Huge Mossgill Perch",
+			["canopen"] = false,
 			["quality"] = 1,
+			["quest"] = true,
+			["texture"] = 350868,
 		},
 		[166846] = {
 			["color"] = "ff1eff00",
@@ -1158,11 +1254,10 @@ FishingBuddy_Info = {
 			["texture"] = 2915723,
 			["quality"] = 2,
 		},
-		[138936] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Falara Nightsong's Coin",
-			["texture"] = 237282,
-			["quality"] = 0,
+		[4603] = {
+			["enUS"] = "Raw Spotted Yellowtail",
+			["quality"] = 1,
+			["texture"] = 133887,
 		},
 		[181955] = {
 			["enUS"] = "Skeletal Mudskipper",
@@ -1188,11 +1283,13 @@ FishingBuddy_Info = {
 			["quality"] = 1,
 			["texture"] = 133910,
 		},
-		[45194] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Tangled Fishing Line",
-			["quality"] = 0,
-			["texture"] = 132891,
+		[167654] = {
+			["enUS"] = "Bottom Feeding Stinkfish",
+			["canopen"] = false,
+			["color"] = "ff1eff00",
+			["texture"] = 133932,
+			["quest"] = true,
+			["quality"] = 2,
 		},
 		[6311] = {
 			["enUS"] = "22 Pound Catfish",
@@ -1231,20 +1328,21 @@ FishingBuddy_Info = {
 			["quality"] = 1,
 			["texture"] = 1500960,
 		},
-		[7973] = {
-			["enUS"] = "Big-Mouth Clam",
+		[13758] = {
+			["enUS"] = "Raw Redgill",
 			["quality"] = 1,
-			["texture"] = 134433,
+			["texture"] = 133892,
 		},
-		[53063] = {
-			["enUS"] = "Mountain Trout",
+		[124107] = {
+			["enUS"] = "Cursed Queenfish",
+			["texture"] = 1387364,
 			["quality"] = 1,
-			["texture"] = 350870,
 		},
-		[152546] = {
-			["enUS"] = "Lane Snapper",
-			["texture"] = 2057313,
-			["quality"] = 1,
+		[45195] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Empty Rum Bottle",
+			["quality"] = 0,
+			["texture"] = 132796,
 		},
 		[173032] = {
 			["enUS"] = "Lost Sole",
@@ -1268,14 +1366,14 @@ FishingBuddy_Info = {
 			["texture"] = 237281,
 			["quality"] = 0,
 		},
-		[13893] = {
-			["enUS"] = "Large Raw Mightfish",
+		[40199] = {
+			["enUS"] = "Pygmy Suckerfish",
 			["quality"] = 1,
-			["texture"] = 134300,
+			["texture"] = 237306,
 		},
-		[127991] = {
-			["enUS"] = "Felmouth Frenzy",
-			["texture"] = 132107,
+		[173040] = {
+			["enUS"] = "Silvergill Pike Bait",
+			["texture"] = 3535743,
 			["quality"] = 1,
 		},
 		[173192] = {
@@ -1283,12 +1381,11 @@ FishingBuddy_Info = {
 			["texture"] = 3528458,
 			["quality"] = 1,
 		},
-		[134568] = {
-			["enUS"] = "Huge Mossgill Perch",
-			["canopen"] = false,
-			["quality"] = 1,
-			["quest"] = true,
-			["texture"] = 350868,
+		[138937] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Izal Whitemoon's Coin",
+			["texture"] = 237282,
+			["quality"] = 0,
 		},
 		[13889] = {
 			["enUS"] = "Raw Whitescale Salmon",
@@ -1300,11 +1397,10 @@ FishingBuddy_Info = {
 			["texture"] = 3535748,
 			["quality"] = 1,
 		},
-		[138895] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Senegos' Ancient Coin",
-			["texture"] = 646678,
-			["quality"] = 0,
+		[13893] = {
+			["enUS"] = "Large Raw Mightfish",
+			["quality"] = 1,
+			["texture"] = 134300,
 		},
 		[138927] = {
 			["color"] = "ff9d9d9d",
@@ -1312,23 +1408,23 @@ FishingBuddy_Info = {
 			["texture"] = 237282,
 			["quality"] = 0,
 		},
-		[4603] = {
-			["enUS"] = "Raw Spotted Yellowtail",
-			["quality"] = 1,
-			["texture"] = 133887,
+		[138921] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Sir Finley Mrrgglton's Coin",
+			["texture"] = 133797,
+			["quality"] = 0,
 		},
-		[167654] = {
-			["enUS"] = "Bottom Feeding Stinkfish",
-			["canopen"] = false,
-			["color"] = "ff1eff00",
-			["texture"] = 133932,
-			["quest"] = true,
-			["quality"] = 2,
+		[138925] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "First Arcanist Thalyssra's Coin",
+			["texture"] = 237283,
+			["quality"] = 0,
 		},
-		[187920] = {
-			["enUS"] = "Flipper Fish",
-			["texture"] = 133909,
-			["quality"] = 1,
+		[180286] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Broken Fishing Pole",
+			["texture"] = 236573,
+			["quality"] = 0,
 		},
 		[162515] = {
 			["color"] = "ff1eff00",
@@ -1336,10 +1432,11 @@ FishingBuddy_Info = {
 			["quality"] = 2,
 			["texture"] = 237302,
 		},
-		[13758] = {
-			["enUS"] = "Raw Redgill",
-			["quality"] = 1,
-			["texture"] = 133892,
+		[45196] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Tattered Cloth",
+			["quality"] = 0,
+			["texture"] = 237276,
 		},
 		[173034] = {
 			["enUS"] = "Silvergill Pike",
@@ -1358,23 +1455,20 @@ FishingBuddy_Info = {
 			["texture"] = 134192,
 			["quality"] = 0,
 		},
-		[154770] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Cracked Hide Belt",
-			["texture"] = 132493,
-			["quality"] = 0,
+		[187920] = {
+			["enUS"] = "Flipper Fish",
+			["texture"] = 133909,
+			["quality"] = 1,
 		},
-		[45196] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Tattered Cloth",
-			["quality"] = 0,
-			["texture"] = 237276,
+		[52326] = {
+			["enUS"] = "Volatile Water",
+			["quality"] = 1,
+			["texture"] = 463570,
 		},
-		[138921] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Sir Finley Mrrgglton's Coin",
-			["texture"] = 133797,
-			["quality"] = 0,
+		[133701] = {
+			["enUS"] = "Skrog Toenail",
+			["texture"] = 1269441,
+			["quality"] = 1,
 		},
 		[171441] = {
 			["color"] = "ff1eff00",
@@ -1411,26 +1505,29 @@ FishingBuddy_Info = {
 			["texture"] = 132539,
 			["quality"] = 0,
 		},
-		[124112] = {
-			["enUS"] = "Black Barracuda",
-			["texture"] = 1387361,
-			["quality"] = 1,
-		},
-		[180286] = {
+		[138893] = {
 			["color"] = "ff9d9d9d",
-			["enUS"] = "Broken Fishing Pole",
-			["texture"] = 236573,
+			["enUS"] = "Runas' Last Copper",
+			["texture"] = 237283,
 			["quality"] = 0,
 		},
-		[52326] = {
-			["enUS"] = "Volatile Water",
-			["quality"] = 1,
-			["texture"] = 463570,
+		[138908] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Koda's Sigil",
+			["texture"] = 133796,
+			["quality"] = 0,
 		},
-		[133701] = {
-			["enUS"] = "Skrog Toenail",
-			["texture"] = 1269441,
-			["quality"] = 1,
+		[138939] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Kayn Sunfury's Coin",
+			["texture"] = 237282,
+			["quality"] = 0,
+		},
+		[34486] = {
+			["color"] = "ff1eff00",
+			["enUS"] = "Old Crafty",
+			["quality"] = 2,
+			["texture"] = 133921,
 		},
 		[173036] = {
 			["enUS"] = "Spinefin Piranha",
@@ -1454,34 +1551,32 @@ FishingBuddy_Info = {
 			["texture"] = 133934,
 			["quality"] = 1,
 		},
-		[45195] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Empty Rum Bottle",
-			["quality"] = 0,
-			["texture"] = 132796,
+		[6308] = {
+			["enUS"] = "Raw Bristle Whisker Catfish",
+			["quality"] = 1,
+			["texture"] = 133916,
 		},
-		[138937] = {
+		[138931] = {
 			["color"] = "ff9d9d9d",
-			["enUS"] = "Izal Whitemoon's Coin",
-			["texture"] = 237282,
+			["enUS"] = "Gul'dan's Coin",
+			["texture"] = 237283,
 			["quality"] = 0,
 		},
-		[141975] = {
-			["color"] = "ff1eff00",
-			["enUS"] = "Mark of Aquaos",
-			["texture"] = 132844,
-			["quality"] = 2,
+		[138932] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Yowlon's Mark",
+			["texture"] = 133796,
+			["quality"] = 0,
 		},
 		[43571] = {
 			["enUS"] = "Sewer Carp",
 			["texture"] = 133917,
 			["quality"] = 1,
 		},
-		[173037] = {
-			["color"] = "ff1eff00",
-			["enUS"] = "Elysian Thade",
-			["texture"] = 3535747,
-			["quality"] = 2,
+		[194967] = {
+			["enUS"] = "Aileron Seamoth",
+			["texture"] = 4539689,
+			["quality"] = 1,
 		},
 		[138899] = {
 			["color"] = "ff9d9d9d",
@@ -1499,26 +1594,20 @@ FishingBuddy_Info = {
 			["quality"] = 1,
 			["texture"] = 134299,
 		},
-		[138925] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "First Arcanist Thalyssra's Coin",
-			["texture"] = 237283,
-			["quality"] = 0,
+		[6362] = {
+			["enUS"] = "Raw Rockscale Cod",
+			["quality"] = 1,
+			["texture"] = 133890,
 		},
 		[6361] = {
 			["enUS"] = "Raw Rainbow Fin Albacore",
 			["quality"] = 1,
 			["texture"] = 133911,
 		},
-		[6362] = {
-			["enUS"] = "Raw Rockscale Cod",
-			["quality"] = 1,
-			["texture"] = 133890,
-		},
-		[138928] = {
+		[192609] = {
 			["color"] = "ff9d9d9d",
-			["enUS"] = "Ly'leth Lunastre's Family Crest",
-			["texture"] = 237281,
+			["enUS"] = "Swim Bladder",
+			["texture"] = 970833,
 			["quality"] = 0,
 		},
 		[173038] = {
@@ -1526,10 +1615,15 @@ FishingBuddy_Info = {
 			["quality"] = 1,
 			["texture"] = 3535741,
 		},
-		[138932] = {
+		[194968] = {
+			["enUS"] = "Cerulean Spinefish",
+			["texture"] = 4539687,
+			["quality"] = 1,
+		},
+		[138928] = {
 			["color"] = "ff9d9d9d",
-			["enUS"] = "Yowlon's Mark",
-			["texture"] = 133796,
+			["enUS"] = "Ly'leth Lunastre's Family Crest",
+			["texture"] = 237281,
 			["quality"] = 0,
 		},
 		[45189] = {
@@ -1544,58 +1638,17 @@ FishingBuddy_Info = {
 			["texture"] = 136246,
 			["quality"] = 0,
 		},
-		[138893] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Runas' Last Copper",
-			["texture"] = 237283,
-			["quality"] = 0,
-		},
-		[138908] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Koda's Sigil",
-			["texture"] = 133796,
-			["quality"] = 0,
-		},
-		[138931] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Gul'dan's Coin",
-			["texture"] = 237283,
-			["quality"] = 0,
-		},
-		[138939] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Kayn Sunfury's Coin",
-			["texture"] = 237282,
-			["quality"] = 0,
-		},
-		[34486] = {
+		[173037] = {
 			["color"] = "ff1eff00",
-			["enUS"] = "Old Crafty",
+			["enUS"] = "Elysian Thade",
+			["texture"] = 3535747,
 			["quality"] = 2,
-			["texture"] = 133921,
 		},
-		[138901] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Tyrande's Coin",
-			["texture"] = 133858,
-			["quality"] = 0,
-		},
-		[138933] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Allari the Souleater's Coin",
-			["texture"] = 237282,
-			["quality"] = 0,
-		},
-		[6308] = {
-			["enUS"] = "Raw Bristle Whisker Catfish",
-			["quality"] = 1,
-			["texture"] = 133916,
-		},
-		[187702] = {
-			["color"] = "ff0070dd",
-			["enUS"] = "Precursor Placoderm",
-			["quality"] = 3,
-			["texture"] = 4224725,
+		[141975] = {
+			["color"] = "ff1eff00",
+			["enUS"] = "Mark of Aquaos",
+			["texture"] = 132844,
+			["quality"] = 2,
 		},
 		[6585] = {
 			["color"] = "ff1eff00",
@@ -1614,10 +1667,52 @@ FishingBuddy_Info = {
 			["texture"] = 349504,
 			["quality"] = 2,
 		},
-		[173040] = {
-			["enUS"] = "Silvergill Pike Bait",
-			["texture"] = 3535743,
+		[138901] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Tyrande's Coin",
+			["texture"] = 133858,
+			["quality"] = 0,
+		},
+		[138933] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Allari the Souleater's Coin",
+			["texture"] = 237282,
+			["quality"] = 0,
+		},
+		[154770] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Cracked Hide Belt",
+			["texture"] = 132493,
+			["quality"] = 0,
+		},
+		[187702] = {
+			["color"] = "ff0070dd",
+			["enUS"] = "Precursor Placoderm",
+			["quality"] = 3,
+			["texture"] = 4224725,
+		},
+		[124112] = {
+			["enUS"] = "Black Barracuda",
+			["texture"] = 1387361,
 			["quality"] = 1,
+		},
+		[9779] = {
+			["color"] = "ff1eff00",
+			["enUS"] = "Bandit Cloak",
+			["quality"] = 2,
+			["texture"] = 133771,
+		},
+		[138895] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Senegos' Ancient Coin",
+			["texture"] = 646678,
+			["quality"] = 0,
+		},
+		[194970] = {
+			["color"] = "ff1eff00",
+			["enUS"] = "Islefin Dorado",
+			["texture"] = 4554376,
+			["quality"] = 2,
 		},
 		[138902] = {
 			["color"] = "ff9d9d9d",
@@ -1647,10 +1742,11 @@ FishingBuddy_Info = {
 			["texture"] = 970842,
 			["quality"] = 0,
 		},
-		[40199] = {
-			["enUS"] = "Pygmy Suckerfish",
-			["quality"] = 1,
-			["texture"] = 237306,
+		[127994] = {
+			["color"] = "ff0070dd",
+			["enUS"] = "Felmouth Frenzy Lunker",
+			["texture"] = 132103,
+			["quality"] = 3,
 		},
 		[43572] = {
 			["enUS"] = "Magic Eater",
@@ -1679,11 +1775,10 @@ FishingBuddy_Info = {
 			["texture"] = 633440,
 			["quality"] = 1,
 		},
-		[127994] = {
-			["color"] = "ff0070dd",
-			["enUS"] = "Felmouth Frenzy Lunker",
-			["texture"] = 132103,
-			["quality"] = 3,
+		[7973] = {
+			["enUS"] = "Big-Mouth Clam",
+			["quality"] = 1,
+			["texture"] = 134433,
 		},
 		[177026] = {
 			["color"] = "ff9d9d9d",
@@ -1704,11 +1799,11 @@ FishingBuddy_Info = {
 			["quest"] = true,
 			["quality"] = 2,
 		},
-		[9779] = {
-			["color"] = "ff1eff00",
-			["enUS"] = "Bandit Cloak",
-			["quality"] = 2,
-			["texture"] = 133771,
+		[166970] = {
+			["color"] = "ff0070dd",
+			["enUS"] = "Energy Cell",
+			["texture"] = 2902386,
+			["quality"] = 3,
 		},
 		[138904] = {
 			["color"] = "ff9d9d9d",
@@ -1728,22 +1823,21 @@ FishingBuddy_Info = {
 			["quality"] = 0,
 			["texture"] = 134185,
 		},
-		[45191] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Empty Clam",
-			["quality"] = 0,
-			["texture"] = 134431,
+		[21071] = {
+			["enUS"] = "Raw Sagefish",
+			["texture"] = 133906,
+			["quality"] = 1,
 		},
 		[138777] = {
 			["enUS"] = "Drowned Mana",
 			["texture"] = 132852,
 			["quality"] = 1,
 		},
-		[166970] = {
-			["color"] = "ff0070dd",
-			["enUS"] = "Energy Cell",
-			["texture"] = 2902386,
-			["quality"] = 3,
+		[200106] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Slimy Old Boot",
+			["texture"] = 132563,
+			["quality"] = 0,
 		},
 		[35285] = {
 			["enUS"] = "Giant Sunfish",
@@ -1755,35 +1849,37 @@ FishingBuddy_Info = {
 			["quality"] = 1,
 			["texture"] = 3535735,
 		},
-		[138905] = {
+		[200105] = {
 			["color"] = "ff9d9d9d",
-			["enUS"] = "Penelope Heathrow's Allowance",
-			["texture"] = 237283,
+			["enUS"] = "Muck Covered Flotsam",
+			["texture"] = 1499546,
 			["quality"] = 0,
 		},
-		[21071] = {
-			["enUS"] = "Raw Sagefish",
-			["texture"] = 133906,
-			["quality"] = 1,
+		[188734] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Timeworn Chain Helm",
+			["texture"] = 4185389,
+			["quality"] = 0,
 		},
 	},
 	["KnownZones"] = {
 		[1355] = "Zin-Azshari",
 		[85] = "The Drag",
 		[87] = "The Forlorn Cavern",
+		[210] = "Southern Savage Coast",
 		[122] = "Isle of Quel'Danas",
 		[63] = "Mystral Lake",
 		[17] = "Shattershore",
-		[76] = "The Ruined Reaches",
-		[241] = "Loch Verrall",
-		[198] = "Nordrassil",
-		[210] = "Southern Savage Coast",
-		[534] = "Hellfire Citadel",
 		[107] = "Nagrand",
+		[76] = "The Ruined Reaches",
+		[198] = "Nordrassil",
+		[534] = "Hellfire Citadel",
 		[1161] = "Proudmoore Keep",
+		[241] = "Loch Verrall",
+		[1970] = "Circle of Thought",
 		[1462] = "Broken Point",
 		[42] = "Karazhan",
-		[1970] = "Circle of Thought",
+		[2022] = "Uktulut Pier",
 		[1527] = "Uldum",
 		[119] = "Wintergrasp River",
 		[641] = "Thas'talah Basin",

@@ -48,14 +48,6 @@ CliqueDB3 = {
 			["specswap"] = false,
 			["spec3_profileKey"] = "Alatra - Zul'jin",
 		},
-		["Kotalkhan - Zul'jin"] = {
-			["spec1_profileKey"] = "Kotalkhan - Zul'jin",
-			["specswap"] = false,
-			["downclick"] = false,
-			["fastooc"] = false,
-			["spec3_profileKey"] = "Kotalkhan - Zul'jin",
-			["spec2_profileKey"] = "Kotalkhan - Zul'jin",
-		},
 		["Zulbathal - Zul'jin"] = {
 			["spec1_profileKey"] = "Zulbathal - Zul'jin",
 			["spec2_profileKey"] = "Zulbathal - Zul'jin",
@@ -64,6 +56,14 @@ CliqueDB3 = {
 			["spec4_profileKey"] = "Zulbathal - Zul'jin",
 			["specswap"] = false,
 			["spec3_profileKey"] = "Zulbathal - Zul'jin",
+		},
+		["Rotclaugh - Dalaran"] = {
+			["spec1_profileKey"] = "Rotclaugh - Dalaran",
+			["specswap"] = false,
+			["downclick"] = false,
+			["fastooc"] = false,
+			["spec3_profileKey"] = "Rotclaugh - Dalaran",
+			["spec2_profileKey"] = "Rotclaugh - Dalaran",
 		},
 		["Shanyt - Argent Dawn"] = {
 			["spec1_profileKey"] = "Shanyt - Argent Dawn",
@@ -99,13 +99,13 @@ CliqueDB3 = {
 			["spec2_profileKey"] = "Galvarton - Dalaran",
 			["spec4_profileKey"] = "Galvarton - Dalaran",
 		},
-		["Rotclaugh - Dalaran"] = {
-			["spec1_profileKey"] = "Rotclaugh - Dalaran",
+		["Kotalkhan - Zul'jin"] = {
+			["spec1_profileKey"] = "Kotalkhan - Zul'jin",
 			["specswap"] = false,
 			["downclick"] = false,
 			["fastooc"] = false,
-			["spec3_profileKey"] = "Rotclaugh - Dalaran",
-			["spec2_profileKey"] = "Rotclaugh - Dalaran",
+			["spec3_profileKey"] = "Kotalkhan - Zul'jin",
+			["spec2_profileKey"] = "Kotalkhan - Zul'jin",
 		},
 		["Okona - Zul'jin"] = {
 			["spec1_profileKey"] = "Okona - Zul'jin",
@@ -136,15 +136,15 @@ CliqueDB3 = {
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
 		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Tyranasticus - Zul'jin"] = "Tyranasticus - Zul'jin",
-		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
-		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
 		["Galvarton - Dalaran"] = "Galvarton - Dalaran",
+		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
-		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
-		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
+		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
+		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
@@ -526,7 +526,7 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Shimzo - Zul'jin"] = {
+		["Galvarton - Dalaran"] = {
 			["bindings"] = {
 				{
 					["sets"] = {
@@ -564,7 +564,7 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Galvarton - Dalaran"] = {
+		["Shimzo - Zul'jin"] = {
 			["bindings"] = {
 				{
 					["sets"] = {
@@ -640,13 +640,13 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Varlouris - Dalaran"] = {
+		["Jingojaggot - Zul'jin"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -678,13 +678,13 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Jingojaggot - Zul'jin"] = {
+		["Varlouris - Dalaran"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]

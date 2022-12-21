@@ -1,5 +1,5 @@
-## Changed in v34
+## Changed in v36
 
-* Add loot data for the world bosses now they're present
-* Assorted random data-gathering
+* More loot data obtained
+* Some position fixes for rares in Thaldraszus
 

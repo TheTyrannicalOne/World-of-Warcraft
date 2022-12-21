@@ -1097,9 +1097,15 @@ spec:RegisterAbilities( {
             local hp_required = ( settings.last_stand_health * 0.01 )
 
             if settings.last_stand_condition then
-                return incoming_damage_5s >= dmg_required and health.percent <= hp_required, "hp or dmg requirement not met"
+                if incoming_damage_5s < dmg_required then return false, format( "incoming_damage_5s[%.2f] < dmg_required[%.2f] setting", incoming_damage_5s, dmg_required ) end
+                if health.percent > hp_required then return false, format( "health.percent[%.2f] > hp_required[%.2f] setting", health.percent, hp_required ) end
+                return true
             end
-            return incoming_damage_5s >= dmg_required or health.percent <= hp_required, "hp or dmg requirement not met"
+
+            if incoming_damage_5s >= dmg_required or health.percent <= hp_required then return true end
+            if incoming_damage_5s < dmg_required then return false, format( "incoming_damage_5s[%.2f] < dmg_required[%.2f] setting", incoming_damage_5s, dmg_required ) end
+            if health.percent > hp_required then return false, format( "health.percent[%.2f] > hp_required[%.2f] setting", health.percent, hp_required ) end
+            return false
         end,
 
         handler = function ()
@@ -1188,9 +1194,15 @@ spec:RegisterAbilities( {
             local hp_required = ( settings.rallying_cry_health * 0.01 )
 
             if settings.rallying_cry_condition then
-                return incoming_damage_5s >= dmg_required and health.percent <= hp_required, "hp or dmg requirement not met"
+                if incoming_damage_5s < dmg_required then return false, format( "incoming_damage_5s[%.2f] < dmg_required[%.2f] setting", incoming_damage_5s, dmg_required ) end
+                if health.percent > hp_required then return false, format( "health.percent[%.2f] > hp_required[%.2f] setting", health.percent, hp_required ) end
+                return true
             end
-            return incoming_damage_5s >= dmg_required or health.percent <= hp_required, "hp or dmg requirement not met"
+
+            if incoming_damage_5s >= dmg_required or health.percent <= hp_required then return true end
+            if incoming_damage_5s < dmg_required then return false, format( "incoming_damage_5s[%.2f] < dmg_required[%.2f] setting", incoming_damage_5s, dmg_required ) end
+            if health.percent > hp_required then return false, format( "health.percent[%.2f] > hp_required[%.2f] setting", health.percent, hp_required ) end
+            return false
         end,
 
         handler = function ()
@@ -1420,9 +1432,15 @@ spec:RegisterAbilities( {
             local hp_required = ( settings.shield_wall_health * 0.01 )
 
             if settings.shield_wall_condition then
-                return incoming_damage_5s >= dmg_required and health.percent <= hp_required, "hp or dmg requirement not met"
+                if incoming_damage_5s < dmg_required then return false, format( "incoming_damage_5s[%.2f] < dmg_required[%.2f] setting", incoming_damage_5s, dmg_required ) end
+                if health.percent > hp_required then return false, format( "health.percent[%.2f] > hp_required[%.2f] setting", health.percent, hp_required ) end
+                return true
             end
-            return incoming_damage_5s >= dmg_required or health.percent <= hp_required, "hp or dmg requirement not met"
+
+            if incoming_damage_5s >= dmg_required or health.percent <= hp_required then return true end
+            if incoming_damage_5s < dmg_required then return false, format( "incoming_damage_5s[%.2f] < dmg_required[%.2f] setting", incoming_damage_5s, dmg_required ) end
+            if health.percent > hp_required then return false, format( "health.percent[%.2f] > hp_required[%.2f] setting", health.percent, hp_required ) end
+            return false
         end,
 
         handler = function ()
@@ -1843,4 +1861,4 @@ spec:RegisterOptions( {
 } )
 
 
-spec:RegisterPack( "Protection Warrior", 20221211, [[Hekili:1Qv3UTTos4NLIfingBHJLvCs7b15I9G9ItXIIfWhG9ojtlrBRgjrTKuUNSiWp77mu)rstkBN2I26glnCMVz48h5KOGO)mAvkrsJ(68zZNhmpiyk8Vpo)(OvYxQOrRQijpt2b)qjPa(8FZzsAImJvEC9)HW5zmosZl5mskYlbRMNa0TxkRe)2D3TltUVEZ0ewXDISI6CcU0eozRe)EYDrR2uNLl)JYOnUbYCGNv0KOV(yiW1S0uAdPurs0kq0C22SCqGefOetR4uqyBiY)(Y7GpL50yXEwT84xo(L)2X1)Z)IMulPPhxtpq5VCCTmRGcFUh(aybJFCDMa(XdKSCYMC60JFPLZa)QQlkO56pbGwEEmNUnV1OO)U9z0804K9e(o6hY2Uef1Yz6Km27Qf04mjTqO)qaxsc3Hu(ojpxXhsoTuonROGDaXFmBZ3aOnLwIFl9Mn1B3oTHlttzF3aWBYzS04T1Gzr)PuUGYFoRCNbq4jKsAmyW4G80FtE2U9sr83Qt3vy9QTzCQsigCQmHkKCsECcOdgsMSlMTnwYZsE2WkuXWFcvxD1PU61xn)(ns08kNUNsYL7NwLi)8Y5gg5SDLmonUIKv2y9SO)jG(BULdbattPBZsYaoeS4MeglhTEtBT(ICsXuoLK(YRVAs89ZoH4Mn9gYVPD)cEwrfIP4n15FNWFUBdZMFZhNF2KhQrEkTGbM5S)hSv2etyIHnmwb(QdSSe6Li)w7SB9EXpOGB8uZjczSqsktB2ov0xxws5hWvSLLul8b1qpq9hNZZNDbBZd(enc8qgdLrmO(BQ5cPMyb)TdVazrQOCqQcvESoZqFaDfTKcHjymngS7dBlgZ70psUABYVcSh84yy)8c8e(9XlGFEr3KpGPGzB3gVljDzGroUEdfM14whPn(0SZ6t5m50zw1eCzTbn5cjL39cD0XbV9DuJQeNgcQvSWz8NvvochtfVb0BRQCq59YukNvlI5m7stSKN)o5avtwcwzwsmkrNLK0D7eswvLAxzlJRLy4DTuWRl2KJ4gahyaDHB9eKoEbulk55(Yi6pCAAnx1QIYjQvG0s4POabhmAPGQTxokdMBS5uxg38T48mH8dyBvljm6heyDo5YaepnTv04GiM2AIJtYjvpTm0ObcWF9u2TdCObMHT801weiHHnlfNq5KYWuXq4oNwaLafay7tkRAga8WJBxu3lq6phF9MMXPIP0RfxRFGng4qdDLnntHzbEA5J9btcAMOaC7qs4q)mQnME)jtm1YgD7CRa0YG0jKpV8HzTB(xL2cfmgZeEwvlSTa0tyHNUnmch(lOLqQSSsWnDWqnWVwpJLA6YjV8c9tCR1g9uQXrAtF3dbB1yN8qKebcDh2TnE8jB0dStZI0Gds5UAcpvalfYkcPZA2J9bhBf82rI4cE9vpvru2IBENV9)jNb532Sf(WSt7t9P5D(vT07TB2BA8d9xQtbYlGzGiHQlJHPWfxaBG(Uw8ZdtHlM05Auqecsc3r8VtVmNr1AvXpDl5h1pz55CuUk)Ku6bOylEG4vqslSnNUtgplCAq0k4qcyqUiA1FINDf6IHXLhxVfpb77H0gV)4Ao9)wdN4coRRGHhYLulzfe1HFHsIGglGt3(VYkHxf8Bhx)7SsqsQx)EFfbaUkzJ8(UnhGUBd(RjNJ)yoflwQsZCcxo(L)qPG4IVxDsDSnK1yjpujGJ)xl3JxfXQ(lz43XlziALIe8MjaBc8FFvDJhT8p6FeTkHdhYMNrIwzNK746pVeq(X13ai8m6Ror6Aq39seTs3vjsc7LEXHp3eLm8ws546NoUEHIgZcP6qZBXu)4m0loXGCqQGn6Xz6cz0QTouIUWpfRchqs7ZrqC)zabUr9aaIxFTv7FdMpKh3piDTayebluUqUSrA4cO7HlWCf2I0HNCVHb0BLCx2gWfVnPrV3TlvWeL(D(gliWFf)3I7JR2amCJC0kWGCAZ0pUZXzBnWPZ2cV87wpoqX9bGbn7SJvgqPJVBm)0j(nN(DVUv3F6Ho)jR6PkmoxpqzO6RVvG7)ZB43qWwWhvpyC98keslSM0SOlxxcxCvIbHE4IF96ckJj6oZ2nV40X7rVBUEsyIG3ziXh1td0jbZuaF6n7LV8YDZFt(4bZ0rVwFq64xIVzlPox6QOooDaEwvdhU6R8Fq4nx4FFgZ(eRw36VLP1FoVgjdgWzNKLU5skgpFMRLpSoJsu9tpWv9PoIA6rWIc)EH9xyM7zlCsVhMzy1guXjUOdtEWLxApv9tIWIktpgZrtytQrfsRzvytRXME)WlSPk0q4gtZWM07nuh9XBytP)Iq2D31NzYUJppzY18UvJrrjo76kDKOnFetpHtZ6nuMOn9D39W2MLDXyzzjPVm0tK5cB7nASPEONP17Ku8X)5xc)DV0qRL6Bqhgn358YwVqSPpgdV2Rf)0avx8SXCb0xNNBP(sTxMQZpBPnF2v6sP7loAXRbinYWi0jZ7mg8HWfNpA5Ci8nAl)1RBbpEj62Lacp8F0(5S4)iOFstv02baHnzGzk9xE8w3Ddci6tZUitpQoJ3a(54WKoM0gvBmIiTYE9EfkvYSBXMHhzxpYF7IJLcrVno7SqQUQMz1wLXyMSp0QrPBR5oztR)t42D8Ytge1quZ1D3jkIExpDUhlLEFqTtftHtJMhmBf0sJoZXCDo8jJaIw85DkwATsmgZMFcEvKPWO)Uwo3jkcbsudadJZgCgnhwwZT5f38BIeEFEOm916I9OXmwC3vMOoir)VYqr23GI(Var2N)O5pr))]] )
+spec:RegisterPack( "Protection Warrior", 20221218, [[Hekili:fR16VnoUr8)wckq2y0ah)ioj7115d9q)WfCyrr9v0VjzAjABDrs0LKYzZcd)3ENH6fjnPSDEGI7GxhPrZ8BEpIJdgg8hbZIjsAW3hny0OHJg(q)H3n5HrddMjFDdny2gs0ZKvWxYjzWN)totsJKjS89Z)peopHXrAEnLrIrEjyf8iGU1s5gXVCZnRsKRlw0pILDJijRiLGpAeNSuI)D0nbZwuKKk)T8GfUbcWYn0OGVF)yGPjXX0skPIOGzGK5SLjPG8ikmj6VHtbzTGi)RtVb(uMsdfRzfY9p5IIcbnmrsZUgvUPK0vu5AcpCtXp)j8Gly)y)t7F6VSF()4h0OcjnE)C6wk)19ZLjzu4Z1WhaFz89ZteWx3sssjlsP9BehiKnfzz0u9RaAuAAiNUmTYuQFV1j004WiahROxNSCkkQPd0jPR7vRrc9lc4ss4kn5FlaN5(5SL7Nptjj0nMMwI)vmq7Yr1CbOJODpHKM8tsP7wqLYK8vI)g(vGh3SM(CsAY(5pUFEByrFhkZlGeq4UOy5Y(LGPFm7L8D7UqssP5Y(jzzSTOLlKT4pbgPZKfPmwC4YcWURFvkxq5pdaYqt5rKCAi4r4aB1VtAYQ1sr4FweVkZ6wlt4uLqm4uEevi5K0Wi0(OlzYQq2Yqjpj6zdZ8gg(nBfTyZUDM)9Ls0)j7VMssLR7Vjs(TPJm8IjRYzCA4gsIIDhq)Ja9xEfhCL9JPltIsaomCYLrmwkAx7xz3fPKS(Ckj(1D7mj(2bhqCzuvj5xw5wGRLTbXu4II0xi8N7tZrVuSn)g1n)SjFSg5X0mghdZaxzzUQjgwWyz4T2YsIONI8RSZU17jVtbFPYvMseYqHKKhx6ov0xKNt5BXNyjlQq4dQJ9a13pNhn4eCZTXeLcCBcdLriO(lk4cPMyH4TTVcLP2q5GufQQN1MHM82n0CkKMGPUyAUpSnPROt)i5STjFgyF49DH9JlWd43dNa)8IUExJ14zlxgUkkE6q7Q6)oySGA7O1QQPuQG9juAV1PuwHYLt5YRCu56RquQZcG9WRxL5LkKuEP3VYcbfOJE2QRrnDx4w82MM)fyfFfBym)xXE4FkD84vYimYSDfhs1xr56x6W6pAwsNfFSMHaMub6dTaCewZqaJCLht5ScriNr4MDKbZ4lKTunzjy5jrHOenRYP3WQY(kKSnBuHKlzCTQI1EaEr2Iue3a4apRlCR3DWXnu(5MEOMo)cUYXOYGQeinhUkkqi7IMlOAjDDYGrgoNI8WY)kmnriRMgKrVwGn5LthI4PCOTYixr)ktCyukzZJthBmEgecCi7wbzZaZWbkRNefKqRZsXjuoXmSpeuRJtZG()caSnDKutcbPCHvpu9nq6pgF9wJ1PIP0RjNBCGng4W4Y5LJQILaFC69dQ5HGMiYGWoKeommNYX0epzIPk2OBNReGw5ZAH8TP3nOY5FwAl0TSlt4rvTXvDFFe76w7WiC4)bTeQJNKdHPTgQw(vfzmvtxo4MNyCIBTglA6IJ0Y3QPnzRaF9kitIaPUTEBJlFGJULDAwKsCqYxvq4Xc4rHQ0q5SsFSp4yRGx1rg3WD780cvzlU8cF()Ehb5xv6cVBWHdP)4O64Qk69ok)LLXH(7ZRa5jWShvDf7ctJNCcSbg6CYhhMgpPxDOrgriirCh5)oJYCMvJJW41L8EJtMESaLZkojMUfA2IhsXmOOfoJxZPvCFWm49JWuCrWS)apxayaoghgfBjE6aFbkA8L9Z50)Bb8YMW4gcgEacKcjlJOoybOHiOVcyyIFpjhU1WFbgtHLdYrD7V4RfaWvjRJ7x7Aa6UA4p6Dm(JvuSyPQiZbCz)to0sOjmPivEEA69UrI9rcyHk7B7vp9WERzfT4UN3U4uzE1GP2(MYR()vM9ov79p9BkhoYYBvN9fo65CCmh0Hgmd8ZRXJeCwZH99R4H9fmtrcEcHqMa8pFxDYJv8p4VhmlINaQtcjyMDJT9Z)2uqH2p)saShjkxNi9426dimyME5HajK)6fh(knOKH3XiuVCWefnMdpPdnVdq5hNJ9ItU6fCEeSr3pqxiDoHLdLOUKRIvJBrs11rqC7rab6OUdaXUDvA)BW8H842wPRv0grWeviKlBKgUa6U7emxJRqA7vU1Wa6D6nx2gieVQrrt0TlvWeL(d(6kjW)uEVLWhxJ(zeg5y8Vw5u1DV7GJJooOZGTjE53vEcGcBsahw6z7Q1VshVOR40E(nN(dVUspE6U64jRzOuyCKEIs7ex(Ec0)pQKFTjBdFqDHU1ZZqivWQx5dD66Y4jNLyqOpEYNVUGYONEWS9aRod8U3RZ1tbte8otjEqVmqTemlb813Cu(0tpm)nfJpCGo61M9vh)s8oQH(C1uhxthpztjho7LO1k8YvO1uXSPWQ1E0SmT(R5vkzWao4GQ0Lhmv31ZC94TpNrlQM9X5Q)unrLZiyrHDuOfoXJe2Ya)bSBVR7(KopOOU2Y8kdfVOjvZ3a6hKx0UFpxPgnu1SVplQmdtnxaOnPgTLT2iOnTgrAnRi0MQXgc3yNH2KERH6OVerBk935ZEKYMYH2Jz6P9HwkLAzLkXz3mRMeTTqAe97OuBBVPQEg1B7OQ0(KUkTtIFTDqmZhSAGSU2TOE5DV7R0h)hDk839Jo26r9TorJjkDEQ(Ni20xwOx71Kpmqv32Wy7BMVeJZxw8uTxMQZhT0gn4mdP0Jf7SJzlK6yLF6K5DtE(q4KJNTCme(gTLF(62W7pfD7uaHh(35qKw8Vd03RS1D1AwXjBWkL(6j3AP93s(DTy2ZOV8j4JVY98YG57RvPnD8(h9QPW1Xq1g8DWABTNpW1tEXXcrvEHh6AkZpI99EuRDZi9AB7vbnJrwQ25R978pW)CLDuqwFsC7A6k2o0AYyJTdBJbJHBSwxSnTDmgD1jeCW(JBddoVJ)YkiW92K1hfUAz2kCAmFL508wA0rMVY5oJnkVuHpVlFwBWSUy2OdWRImfg9Fcdh7LchdKO2Bnw1Qny0Ch3LhiBy5pQt8izrz6R8M9gTnE46t9s9UGn)4kdSpem9FmM2(dlXwbQd)1yQnPTJBkB(VG)h]] )

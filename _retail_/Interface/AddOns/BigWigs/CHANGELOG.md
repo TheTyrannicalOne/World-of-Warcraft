@@ -1,12 +1,9 @@
 # BigWigs
 
-## [v256.1](https://github.com/BigWigsMods/BigWigs/tree/v256.1) (2022-12-17)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v256...v256.1) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
+## [v258.1](https://github.com/BigWigsMods/BigWigs/tree/v258.1) (2022-12-19)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v258...v258.1) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
 
-- BigWigs\_VaultOfTheIncarnates/ThePrimalCouncil: Add tank swap sounds for Crush  
-    Fixes #1305  
-- Update zhCN (#1303)  
-- VaultOfTheIncarnates/SennarthTheColdBreath: Fix big add times  
-- VaultOfTheIncarnates/SennarthTheColdBreath: Rework stages  
-- VaultOfTheIncarnates/KurogGrimtotem: Fix storm spells and switch back to stages  
-- VaultOfTheIncarnates/KurogGrimtotem: Fix Shocking Burst event (fixes #1304)  
+- VaultOfTheIncarnates/RaszagethTheStormEater: Fix Fulminating Charge timers in normal  
+- Update frFR (#1311)  
+- Update zhTW (#1310)  
+- Update zhCN (#1309)  

@@ -77,11 +77,11 @@ SpyDB = {
 				},
 				["Malivant"] = {
 				},
-				["Avisar"] = {
-				},
 				["Galvarton"] = {
 				},
 				["Varlouris"] = {
+				},
+				["Avisar"] = {
 				},
 				["Thorinbane"] = {
 				},
@@ -154,15 +154,15 @@ SpyDB = {
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
 		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
 		["Tyranasticus - Zul'jin"] = "Tyranasticus - Zul'jin",
-		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
-		["Galvarton - Dalaran"] = "Galvarton - Dalaran",
+		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
-		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
@@ -175,7 +175,7 @@ SpyDB = {
 		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
-		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
+		["Galvarton - Dalaran"] = "Galvarton - Dalaran",
 		["Abyronterner - Zul'jin"] = "Abyronterner - Zul'jin",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
 		["Jasmoney - Zul'jin"] = "Jasmoney - Zul'jin",
@@ -442,23 +442,9 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Varlouris - Dalaran"] = {
+		["Shimzo - Zul'jin"] = {
 			["AppendUnitNameCheck"] = true,
-			["MainWindow"] = {
-				["Position"] = {
-					["y"] = 740.500244140625,
-					["h"] = 67.00010681152344,
-				},
-			},
 			["Colors"] = {
-				["Alert"] = {
-					["Stealth Text"] = {
-						["a"] = 1,
-					},
-					["Name Text"] = {
-						["a"] = 1,
-					},
-				},
 				["Bar"] = {
 					["Bar Text"] = {
 						["a"] = 1,
@@ -466,7 +452,6 @@ SpyDB = {
 				},
 			},
 			["AppendUnitKoSCheck"] = true,
-			["MainWindowVis"] = false,
 		},
 		["Brotus - Argent Dawn"] = {
 			["AppendUnitNameCheck"] = true,
@@ -542,7 +527,7 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Galvarton - Dalaran"] = {
+		["Jingojaggot - Zul'jin"] = {
 			["AppendUnitNameCheck"] = true,
 			["MainWindowVis"] = false,
 			["Colors"] = {
@@ -573,9 +558,23 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Shimzo - Zul'jin"] = {
+		["Varlouris - Dalaran"] = {
 			["AppendUnitNameCheck"] = true,
+			["MainWindow"] = {
+				["Position"] = {
+					["y"] = 740.500244140625,
+					["h"] = 67.00010681152344,
+				},
+			},
 			["Colors"] = {
+				["Alert"] = {
+					["Stealth Text"] = {
+						["a"] = 1,
+					},
+					["Name Text"] = {
+						["a"] = 1,
+					},
+				},
 				["Bar"] = {
 					["Bar Text"] = {
 						["a"] = 1,
@@ -583,6 +582,7 @@ SpyDB = {
 				},
 			},
 			["AppendUnitKoSCheck"] = true,
+			["MainWindowVis"] = false,
 		},
 		["Datgore - Zul'jin"] = {
 			["AppendUnitNameCheck"] = true,
@@ -775,7 +775,7 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Jingojaggot - Zul'jin"] = {
+		["Galvarton - Dalaran"] = {
 			["AppendUnitNameCheck"] = true,
 			["MainWindowVis"] = false,
 			["Colors"] = {
