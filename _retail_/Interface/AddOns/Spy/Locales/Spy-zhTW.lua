@@ -14,30 +14,31 @@ L["SpyDescription1"] = [[
 Spy 是一個可以警告你附近有敵方玩家出沒的插件。這些是一些主要功能。
 
 ]]
+
 L["SpyDescription2"] = [[
-|cffffd000附近清單|cffffffff
+|cffffd000 附近清單 |cffffffff
 附近清單會顯示已經被偵測到在附近的任何敵方玩家。點一下清單中的名字可以將玩家選取為目標，但是只能在非戰鬥中使用。一段時間後沒有偵測到的玩家會從清單中自動移除。
 
-|cffffd000最近清單|cffffffff
+|cffffd000 最近清單 |cffffffff
 顯示在一小時內檢測到的所有敵人。
 
-|cffffd000忽略清單|cffffffff
+|cffffd000 忽略清單 |cffffffff
 Spy 不會顯示被加入到忽略清單中的玩家。透過滑鼠右鍵選單，或是按住 CTRL 鍵點擊名字將玩家加入清單和移除。
 
-|cffffd000即殺清單|cffffffff
+|cffffd000 即殺清單 |cffffffff
 偵測到在即殺清單清單中的玩家時會發出警告。透過滑鼠右鍵選單，或是按住 SHIFT 鍵點擊名字將玩家加入清單和移除。 
 滑鼠右鍵選單也可以設定將某人加入到即殺清單的原因。如果你想要輸入不在清單中的原因，請在其他清單中使用 "自行輸入原因..."。
 
 ]]
 
 L["SpyDescription3"] = [[
-|cffffd000Statistics Window|cffffffff
+|cffffd000 Statistics Window |cffffffff
 The Statistics Window contains a list of all enemy encounters which can be sorted by name, level, guild, wins, losses and the last time an enemy was detected. It also provides the ability to search for a specific enemy by name or guild and has filters to show only enemies that are marked as Kill on Sight, with a Win/Loss or entered Reasons. 
 
-|cffffd000Kill On Sight Button|cffffffff
+|cffffd000 Kill On Sight Button |cffffffff
 If enabled, this button will be located on the enemy players target frame. Clicking on this button will add/remove the enemy target to/from the Kill On Sight list. Right clicking on the button will allow you to enter Kill on Sight reasons.
 
-|cffffd000作者: Slipjack|cffffffff
+|cffffd000 作者:|cffffffff Slipjack
 ]]
 
 -- General Settings
@@ -126,6 +127,7 @@ L["TooltipDisplayLastSeenDescription"] = "在玩家的滑鼠提示中顯示最�
 L["DisplayListData"] = "選擇要顯示的敵人數據"
 L["Name"] = "名稱"
 L["Class"] = "职业"
+L["Rank"] = "會階"
 L["SelectFont"] = "選擇字體"
 L["SelectFontDescription"] = "選擇 Spy 視窗使用的字體。"
 L["RowHeight"] = "選擇列高"
@@ -293,7 +295,7 @@ L["Time"] = "時間"
 L["List"] = "清單"
 L["Filter"] = "過濾"	
 L["Show Only"] = "只顯示"
-L["Realm"] = "Realm"
+L["Realm"] = "伺服器"
 L["KOS"] = "即殺"
 L["Won/Lost"] = "勝/敗"
 L["Reason"] = "原因"	  
@@ -301,7 +303,7 @@ L["HonorKills"] = "榮譽擊殺"
 L["PvPDeaths"] = "PvP 死亡"
 
 -- Output messages
-L["VersionCheck"] = "|cffc41e3a警告！ 安裝了錯誤的Spy版本。 刪除此版本並安裝Spy for Retail。"
+L["VersionCheck"] = "|cffc41e3a警告！ 安裝了錯誤的Spy版本。 刪除此版本並安裝 Spy for Retail。"
 L["SpyEnabled"] = "|cff9933ff偵測敵方玩家插件已啟用。"
 L["SpyDisabled"] = "|cff9933ff偵測敵方玩家插件已停用，輸入 |cffffffff/spy show|cff9933ff 來啟用。"
 L["UpgradeAvailable"] = "|cff9933ff偵測敵方玩家插件已有新版本，可以到這裡下載：\n|cffffffffhttps://www.curseforge.com/wow/addons/spy"

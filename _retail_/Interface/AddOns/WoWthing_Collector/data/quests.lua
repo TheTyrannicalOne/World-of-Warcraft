@@ -287,10 +287,13 @@ ns.progressQuests = {
         62636, -- "A Savage Path Through Time", WoD Timewalking
         64709, -- "A Fel Path Through Time", Legion Timewalking
         62637, -- "A Call to Battle", Battlegrounds
-        62638, -- "Emissary of War", Mythic Dungeons
+        --62638, -- "Emissary of War", Mythic Dungeons
         62639, -- "The Very Best", PvP Pet Battles
         62640, -- "The Arena Calls", Arena Skirmishes
-        72728, -- "The World Awaits", World Quests [DF]
+
+        -- Dragonflight
+        72722, -- "Emissary of War", Mythic Dungeons
+        72728, -- "The World Awaits", World Quests
     }},
 
     -- Weekly PvP
@@ -417,6 +420,14 @@ ns.progressQuests = {
         72375, -- Aiding the Accord: The Isles Call
         --72892
     }},
+
+    ["dfCatchAileron"] = {"weekly", {70201}}, -- Catch and Release: Aileron Seamoth
+    ["dfCatchCerulean"] = {"weekly", {70202}}, -- Catch and Release: Cerulean Spinefish
+    ["dfCatchIslefin"] = {"weekly", {70935}}, -- Catch and Release: Islefin Dorado
+    ["dfCatchScalebelly"] = {"weekly", {70199}}, -- Catch and Release: Scalebelly Mackerel
+    ["dfCatchTemporal"] = {"weekly", {70203}}, -- Catch and Release: Temporal Dragonhead
+    ["dfCatchThousandbite"] = {"weekly", {70200}}, -- Catch and Release: Thousandbite Piranha
+
     ["dfDungeonPreserving"] = {"weekly", {
         66868, -- Preserving the Past: Legacy of Tyr
         66869, -- Preserving the Past: Court of Stars (?)
@@ -437,12 +448,157 @@ ns.progressQuests = {
         66866, -- Relic Recovery: Halls of Infusion
         66867, -- Relic Recovery: Algeth'ar Academy
     }},
+
+    ["dfProfessionMettle"] = {"weekly", { 70221 }},
+
+    ["dfProfessionAlchemyCraft"] = {"weekly", {
+        70530, -- 
+        70531, -- 
+        70532, -- 
+        70533, -- 
+    }},
+    ["dfProfessionAlchemyGather"] = {"weekly", {
+        66937, -- 
+        66938, -- 
+        66940, -- Elixir Experiment
+        72427, -- Animated Infusion
+    }},
+    ["dfProfessionAlchemyTreatise"] = {"weekly", { 74108 }},
+
+    ["dfProfessionBlacksmithingCraft"] = {"weekly", {
+        70211, -- Stomping Explorers
+        70233, -- Axe Shortage
+        70234, -- All This Hammering
+        70235, -- Repair Bill
+    }},
+    ["dfProfessionBlacksmithingGather"] = {"weekly", {
+        66517, -- A New Source of Weapons
+        66897, -- Fuel for the Forge
+        66941, -- Tremendous Tools
+        72398, -- Rock and Stone
+    }},
+    ["dfProfessionBlacksmithingOrders"] = {"weekly", { 70589 }},
+    ["dfProfessionBlacksmithingTreatise"] = {"weekly", { 74109 }},
+
+    ["dfProfessionEnchantingCraft"] = {"weekly", {
+        72155, -- 
+        72172, -- 
+        72173, -- 
+        72175, -- 
+    }},
+    ["dfProfessionEnchantingGather"] = {"weekly", {
+        66884, -- 
+        66900, -- 
+        66935, -- 
+        72423, -- 
+    }},
+    ["dfProfessionEnchantingTreatise"] = {"weekly", { 74110 }},
+
+    ["dfProfessionEngineeringCraft"] = {"weekly", {
+        70539, --
+        70540, --
+        70545, --
+        70557, --
+    }},
+    ["dfProfessionEngineeringGather"] = {"weekly", {
+        66890, -- 
+        66891, -- Explosive Ash
+        66942, -- Enemy Engineering
+        72396, -- 
+    }},
+    ["dfProfessionEngineeringOrders"] = {"weekly", { 70591 }},
+    ["dfProfessionEngineeringTreatise"] = {"weekly", { 74111 }},
+
+    ["dfProfessionInscriptionCraft"] = {"weekly", {
+        70558, -- 
+        70559, -- 
+        70560, -- 
+        70561, -- 
+    }},
+    ["dfProfessionInscriptionGather"] = {"weekly", {
+        66943, -- 
+        66944, -- Peacock Pigments
+        66945, -- 
+    }},
+    ["dfProfessionInscriptionOrders"] = {"weekly", { 70592 }},
+    ["dfProfessionInscriptionTreatise"] = {"weekly", { 74105 }},
+
+    ["dfProfessionJewelcraftingCraft"] = {"weekly", {
+        70562, -- 
+        70563, -- 
+        70564, -- 
+        70565, -- 
+    }},
+    ["dfProfessionJewelcraftingGather"] = {"weekly", {
+        66516, -- Mundane Gems, I Think Not!
+        66949, -- 
+        66950, -- 
+        72428, -- 
+    }},
+    ["dfProfessionJewelcraftingOrders"] = {"weekly", { 70593 }},
+    ["dfProfessionJewelcraftingTreatise"] = {"weekly", { 74112 }},
+
+    ["dfProfessionLeatherworkingCraft"] = {"weekly", {
+        70567, -- When You Give Bakar a Bone
+        70568, -- Tipping the Scales
+        70569, -- For Trisket, a Task Kit
+        70571, -- Drums Here!
+    }},
+    ["dfProfessionLeatherworkingGather"] = {"weekly", {
+        66363, -- Basilisk Bucklers
+        66364, -- To Fly a Kite
+        66951, -- Population Control
+        72407, -- Soaked in Success
+    }},
+    ["dfProfessionLeatherworkingOrders"] = {"weekly", { 70594 }},
+    ["dfProfessionLeatherworkingTreatise"] = {"weekly", { 74113 }},
+
+    ["dfProfessionTailoringCraft"] = {"weekly", {
+        70572, -- 
+        70582, -- 
+        70586, -- Sew Many Cooks
+        70587, -- 
+    }},
+    ["dfProfessionTailoringGather"] = {"weekly", {
+        66952, -- 
+        66899, -- 
+        66953, -- 
+        72410, -- Pincers and Needles
+    }},
+    ["dfProfessionTailoringOrders"] = {"weekly", { 70595 }},
+    ["dfProfessionTailoringTreatise"] = {"weekly", { 74115 }},
+
+    ["dfProfessionHerbalismGather"] = {"weekly", {
+        70613, -- Get Their Bark Before They Bite
+        70614, -- Bubble Craze
+        70615, -- The Case of the Missing Herbs
+        70616, -- How Many??
+    }},
+    ["dfProfessionHerbalismTreatise"] = {"weekly", { 74107 }},
+
+    ["dfProfessionMiningGather"] = {"weekly", {
+        70617, -- All Mine, Mine, Mine
+        70618, -- The Call of the Forge
+        72156, -- A Fiery Fight
+        72157, -- The Weight of Earth
+    }},
+    ["dfProfessionMiningTreatise"] = {"weekly", { 74106 }},
+
+    ["dfProfessionSkinningGather"] = {"weekly", {
+        70619, -- A Study of Leather
+        70620, -- Scaling Up
+        72158, -- A Dense Delivery
+        72159, -- Scaling Down
+    }},
+    ["dfProfessionSkinningTreatise"] = {"weekly", { 74114 }},
+
     ["dfSparks"] = {"weekly", {
         72646, -- Sparks of Life: The Waking Shores
         72647, -- Sparks of Life: Ohn'ahran Plains
         72648, -- Sparks of Life: Azure Span
         72649, -- Sparks of Life: Thaldraszus
     }},
+
     ["dfCommunityFeast"] = {"weekly", {70893}},
     ["dfDragonAllegiance"] = {"weekly", {66419}}, -- choose a dragon
     ["dfDragonKey"] = {"weekly", {66133, 66805}}, -- hand in key (wrathion, sabellian)

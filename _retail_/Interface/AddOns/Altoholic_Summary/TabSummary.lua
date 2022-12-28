@@ -165,6 +165,15 @@ local locationLabels = {
 	format("%s %s(%s)", L["All realms"], colors.green, L["All accounts"]),
 }
 
+local armorTypeLabels = {
+	[1] = GetItemSubClassInfo(Enum.ItemClass.Armor, Enum.ItemArmorSubclass.Cloth),
+	[2] = GetItemSubClassInfo(Enum.ItemClass.Armor, Enum.ItemArmorSubclass.Leather),
+	[3] = GetItemSubClassInfo(Enum.ItemClass.Armor, Enum.ItemArmorSubclass.Mail),
+	[4] = GetItemSubClassInfo(Enum.ItemClass.Armor, Enum.ItemArmorSubclass.Plate)
+}
+
+local roleTypeLabels = { TANK, HEALER, DAMAGER}
+
 local function RealmsIcon_Initialize(frame, level)
 	if not level then return end
 	
@@ -243,11 +252,13 @@ local function LevelIcon_Initialize(frame, level)
 	frame:AddButtonWithArgs("30-39", 5, OnLevelFilterChange, 30, 39, (option == 5))
 	frame:AddButtonWithArgs("40-49", 6, OnLevelFilterChange, 40, 49, (option == 6))
 	frame:AddButtonWithArgs("50-59", 7, OnLevelFilterChange, 50, 59, (option == 7))
-	frame:AddButtonWithArgs("60", 8, OnLevelFilterChange, 60, 60, (option == 8))
+	frame:AddButtonWithArgs("60-69", 8, OnLevelFilterChange, 60, 69, (option == 8))
+	frame:AddButtonWithArgs("70", 9, OnLevelFilterChange, 70, 70, (option == 9))
 	frame:AddTitle()
-	frame:AddButtonWithArgs("1-44", 9, OnLevelFilterChange, 1, 44, (option == 9))
-	frame:AddButtonWithArgs(format("45+ %s(%s)", colors.green, EXPANSION_NAME7), 10, OnLevelFilterChange, 45, 60, (option == 10))
-	frame:AddButtonWithArgs(format("50+ %s(%s)", colors.green, EXPANSION_NAME8), 11, OnLevelFilterChange, 50, 60, (option == 11))
+	frame:AddButtonWithArgs("1-44", 10, OnLevelFilterChange, 1, 44, (option == 10))
+	frame:AddButtonWithArgs(format("45+ %s(%s)", colors.green, EXPANSION_NAME7), 11, OnLevelFilterChange, 45, 70, (option == 11))
+	frame:AddButtonWithArgs(format("50+ %s(%s)", colors.green, EXPANSION_NAME8), 12, OnLevelFilterChange, 50, 70, (option == 12))
+	frame:AddButtonWithArgs(format("60+ %s(%s)", colors.green, EXPANSION_NAME9), 13, OnLevelFilterChange, 60, 70, (option == 13))
 	frame:AddCloseMenu()
 end
 
@@ -290,30 +301,47 @@ local function ProfessionsIcon_Initialize(frame, level)
 end
 
 local function ClassIcon_Initialize(frame, level)
+	if not level then return end
+	
 	local option = Options.Get(OPTION_CLASSES)
 	
-	frame:AddTitle(L["FILTER_CLASSES"])
-	frame:AddButton(ALL, 0, OnClassFilterChange, nil, (option == 0))
-	frame:AddTitle()
+	if level == 1 then
+		frame:AddTitle(L["FILTER_CLASSES"])
+		frame:AddButton(ALL, 0, OnClassFilterChange, nil, (option == 0))
+		frame:AddTitle()
+		frame:AddCategoryButton(ARMOR, 1, level)
+		frame:AddCategoryButton(COMMUNITY_MEMBER_LIST_DROP_DOWN_ROLES, 2, level)
+		frame:AddTitle()
+		
+		-- See constants.lua
+		for key, value in ipairs(CLASS_SORT_ORDER) do
+			frame:AddButton(
+				format("|c%s%s", RAID_CLASS_COLORS[value].colorStr, LOCALIZED_CLASS_NAMES_MALE[value]), 
+				key, OnClassFilterChange, nil, (option == key)
+			)
+		end
+		frame:AddTitle()
+		frame:AddCloseMenu()
+		
+	elseif level == 2 then
+		local subMenu = frame:GetCurrentOpenMenuValue()
 	
-	-- See constants.lua
-	for key, value in ipairs(CLASS_SORT_ORDER) do
-		frame:AddButton(
-			format("|c%s%s", RAID_CLASS_COLORS[value].colorStr, LOCALIZED_CLASS_NAMES_MALE[value]), 
-			key, OnClassFilterChange, nil, (option == key)
-		)
+		if subMenu == 1 then				-- Armor types
+			-- Add the armor types
+			for index, armorType in ipairs(armorTypeLabels) do
+				-- keep a numeric index, just add +20 since we have only 13 classes
+				frame:AddButton(armorType, index + 20, OnClassFilterChange, nil, (option == index + 20), level)	
+			end
+		
+		elseif subMenu == 2 then		-- Role types
+		
+			-- Add the role types
+			for index, roleType in ipairs(roleTypeLabels) do
+				-- keep a numeric index, just add +30 since we have only 3 roles
+				frame:AddButton(roleType, index + 30, OnClassFilterChange, nil, (option == index + 30), level)	
+			end		
+		end
 	end
-	frame:AddTitle()
-	
-	-- TO DO: ok here, but finish filtering in characters.lua
-	local armorTypes = addon.Enum.ArmorTypes
-	
-	-- Add the armor types
-	-- for i = 1, #armorTypes do
-		-- frame:AddButton(armorTypes[i], armorTypes[i], OnClassFilterChange, nil, (option == armorTypes[i]))	
-	-- end
-	
-	frame:AddCloseMenu()
 end
 
 local function MiscIcon_Initialize(frame, level)
@@ -469,6 +497,9 @@ addon:Controller("AltoholicUI.TabSummary", {
 			frame:Update()
 			
 			addon:RegisterMessage("DATASTORE_GUILD_LEFT", function() 
+				frame:Update()
+			end)
+			addon:RegisterMessage("DATASTORE_PROFESSION_LINKS_UPDATED", function() 
 				frame:Update()
 			end)
 			
@@ -720,6 +751,7 @@ addon:Controller("AltoholicUI.TabSummaryCategoriesList", {
 					{ text = format("%s9.1|r %s", colors.green, L["PATCH_9.1"]), profile = 17 },
 					{ text = format("%s9.2|r %s", colors.green, L["PATCH_9.2"]), profile = 23 },
 				}},
+				{ text = EXPANSION_NAME9, profile = 27 },
 			}},
 			-- Expansion Features
 			{ text = GetCategoryInfo(15301), subMenu = {
@@ -755,7 +787,12 @@ addon:Controller("AltoholicUI.TabSummaryCategoriesList", {
 					-- { text = GetCategoryInfo(15440), profile = 23 },
 				}},
 			}},
-			{ text = CHALLENGES, profile = 22 },
+			{ text = CHALLENGES, subMenu = {
+				-- Weekly Best
+				{ text = CHALLENGE_MODE_WEEKLY_BEST, profile = 22 },
+				-- Weekly Rewards
+				{ text = REWARDS, profile = 26 },
+			}},
 		}
 	
 		-- Initialize categories (auto-fill the on-click callback)

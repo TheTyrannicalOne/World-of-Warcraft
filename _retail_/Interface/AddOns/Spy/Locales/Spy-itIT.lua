@@ -301,7 +301,7 @@ L["HonorKills"] = "Honor Kills"
 L["PvPDeaths"] = "PvP Deaths"
 
 -- Output messages
-L["VersionCheck"] = "|cffc41e3aAvvertimento! È installata la versione errata di Spy. Rimuovi questa versione e installa Spy for Retail."
+L["VersionCheck"] = "|cffc41e3aAvvertimento! È installata la versione errata di Spy. Questa versione è per World of Warcraft - Retail."
 L["SpyEnabled"] = "|cff9933ffSpy addon enabled."
 L["SpyDisabled"] = "|cff9933ffSpy addon disabled. Type |cffffffff/spy show|cff9933ff to enable."
 L["UpgradeAvailable"] = "|cff9933ffA new version of Spy is available. It can be downloaded from:\n|cffffffffhttps://www.curseforge.com/wow/addons/spy"
@@ -524,4 +524,3 @@ L["MinimapClassTextEVOKER"] = "|cff33937f"
 Spy_IgnoreList = {
 
 };
- 

@@ -21,12 +21,12 @@ FishingBuddy_Player = {
 		["TurnOnSound"] = true,
 		["FishingPetBuddies"] = -3,
 		["OverWalking"] = true,
-		["AlwaysLure"] = true,
+		["EnhanceFishingSounds"] = true,
 		["UseBladeboneHook"] = true,
 		["SpecialBobbers"] = -2,
 		["AutoLoot"] = true,
+		["AlwaysLure"] = true,
 		["STVTimer"] = true,
-		["EnhanceFishingSounds"] = true,
 		["EasyLures"] = true,
 		["TotalTimeFishing"] = 1302.396999999995,
 		["UseAction"] = true,
@@ -49,5 +49,5 @@ FishingBuddy_Player = {
 	},
 	["Outfit"] = {
 	},
-	["Version"] = 19500,
+	["Version"] = 1190400,
 }

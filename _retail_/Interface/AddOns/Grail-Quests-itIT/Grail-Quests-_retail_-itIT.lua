@@ -31148,6 +31148,17 @@ G[72869]='Altri Trofei di Caccia'
 G[72875]='Rifornimenti delle Isole dei Draghi'
 G[72876]='Molti manufatti delle Isole dei Draghi'
 G[72877]='Molti manufatti delle Isole dei Draghi'
+G[120237101]='Campo Aylaag'
+G[120237102]='Campo Aylaag'
+G[120237103]='Campo Aylaag'
+end
+
+if release >= 47187 then
+G[44028]='RICERCATO: Tenente Strathmar'
+G[54366]="Donazioni per Rivafosca: Bacio dell'Inverno"
+G[61630]='Incantamento: Marchio Inestinguibile'
+G[65445]='Risorse necessarie'
+G[67039]='Un viaggio incredibile'
 end
 
 --	End of localized quest names

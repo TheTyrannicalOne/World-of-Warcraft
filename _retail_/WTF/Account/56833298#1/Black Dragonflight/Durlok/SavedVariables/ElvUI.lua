@@ -1,5 +1,7 @@
 
 ElvCharacterDB = {
+	["CliqueDatatext"] = {
+	},
 	["ChatHistoryLog"] = {
 		{
 			"dnt think", -- [1]
@@ -2180,7 +2182,6 @@ ElvCharacterDB = {
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},
-	["ConvertKeybindings"] = true,
 	["ChatEditHistory"] = {
 		"/1 ok", -- [1]
 		"/cw Agaymar-BlackDragonflight top wall above portal room", -- [2]
@@ -2194,6 +2195,5 @@ ElvCharacterDB = {
 		"/dance", -- [10]
 		"/tsm", -- [11]
 	},
-	["CliqueDatatext"] = {
-	},
+	["ConvertKeybindings"] = true,
 }

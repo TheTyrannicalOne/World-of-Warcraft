@@ -86,10 +86,10 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163874::::::::120:71::28:5:5125:6516:6513:1637:4786:::|h[Honorbound Decapitator]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 190487,
-			["Level"] = 337,
+			["ID"] = 200152,
+			["Level"] = 350,
 			["AlsoFitsIn"] = 16,
-			["Link"] = "|cff0070dd|Hitem:190487::::::::70:71::13:3:8851:8852:8800:5:28:2164:29:32:30:49:38:6:40:175:::::|h[Draconium Axe |A:Professions-ChatIcon-Quality-Tier3:17:18::1|a]|h|r",
+			["Link"] = "|cff0070dd|Hitem:200152::::::::70:73::25:3:43:1472:8766:1:28:2603:::::|h[Gleaming Blade of Insight]|h|r",
 		}, -- [17]
 	},
 	["LastKeybindingsSet"] = 1,

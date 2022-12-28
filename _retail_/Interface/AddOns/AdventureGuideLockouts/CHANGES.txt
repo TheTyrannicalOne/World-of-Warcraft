@@ -1,10 +1,10 @@
-lightweight tag 3aa91c5f9919aecca99acb7edc28908545263a2a v1.4.4
+lightweight tag 08d41f8547e51bc3c20e7fc0fe45e13338f00200 v1.4.5
 Author:	Meivyn <793322+Meivyn@users.noreply.github.com>
-Date:	Wed Dec 14 04:11:01 2022 -0500
+Date:	Mon Dec 26 09:40:00 2022 -0500
 
-commit 3aa91c5f9919aecca99acb7edc28908545263a2a
+commit 08d41f8547e51bc3c20e7fc0fe45e13338f00200
 Author: Meivyn <793322+Meivyn@users.noreply.github.com>
-Date:   Wed Dec 14 04:11:01 2022 -0500
+Date:   Mon Dec 26 09:40:00 2022 -0500
 
-    Fix world boss loop logic
+    Fix #22, conflict with Details
 

@@ -7,7 +7,7 @@ local fonts = SM:List("font")
 local _
 
 Spy = LibStub("AceAddon-3.0"):NewAddon("Spy", "AceConsole-3.0", "AceEvent-3.0", "AceComm-3.0", "AceTimer-3.0")
-Spy.Version = "3.9.5"
+Spy.Version = "3.10.0"
 Spy.DatabaseVersion = "1.1"
 Spy.Signature = "[Spy]"
 Spy.ButtonLimit = 15
@@ -385,11 +385,12 @@ Spy.options = {
 					type = 'select',
 					order = 12,
 					values = {
-						["NameLevelClass"] = L["Name"].." / "..L["Level"].." / "..L["Class"],
-						["NameLevelGuild"] = L["Name"].." / "..L["Level"].." / "..L["Guild"],
-						["NameLevelOnly"] = L["Name"].." / "..L["Level"],
-						["NameGuild"] = L["Name"].." / "..L["Guild"],
-						["NameOnly"] = L["Name"],
+						["1NameLevelClass"] = L["Name"].." / "..L["Level"].." / "..L["Class"],
+						["2NameLevelGuild"] = L["Name"].." / "..L["Level"].." / "..L["Guild"],
+						["3NameLevelOnly"] = L["Name"].." / "..L["Level"],
+--						["4NamePvPRank"] = L["Name"].." / "..L["Rank"], -- Classic
+						["5NameGuild"] = L["Name"].." / "..L["Guild"],
+						["6NameOnly"] = L["Name"],
 					},
 					get = function()
 						return Spy.db.profile.DisplayListData
@@ -1404,7 +1405,7 @@ local Default_Profile = {
 		DisplayWinLossStatistics=true,
 		DisplayKOSReason=true,
 		DisplayLastSeen=true,
-		DisplayListData="NameLevelClass",
+		DisplayListData="1NameLevelClass",
 		ShowOnDetection=true,
 		HideSpy=false,
 --		ShowOnlyPvPFlagged=false,
@@ -1870,6 +1871,9 @@ function Spy:ChannelNoticeEvent(_, chStatus, _, _, Channel)
 		if (zone == L["Silithus"] and (subZone == L["Hall of Ancient Paths"] or L["Sanctum of the Sages"]) or zone == L["Chamber of Heart"]) then
 			Spy.EnabledInZone = false
 		end
+																																			 
+							  
+	   
 	end
 end
 

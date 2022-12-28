@@ -49,22 +49,22 @@ MJEPersonalSettings = {
 			[0] = true,
 		},
 		["source"] = {
-			["Reputation"] = true,
+			["Instance"] = true,
 			["Black Market"] = true,
 			["PVP"] = true,
-			["Achievement"] = true,
-			["Instance"] = true,
-			["Class"] = true,
-			["World Event"] = true,
-			["Profession"] = true,
 			["Island Expedition"] = true,
+			["Reputation"] = true,
+			["Class"] = true,
+			["Vendor"] = true,
+			["Drop"] = true,
+			["Achievement"] = true,
 			["Shop"] = true,
 			["Covenants"] = true,
-			["Drop"] = true,
+			["Profession"] = true,
 			["Garrison"] = true,
-			["Vendor"] = true,
-			["Quest"] = true,
 			["Promotion"] = true,
+			["Quest"] = true,
+			["World Event"] = true,
 		},
 		["rarity"] = {
 			true, -- [1]
@@ -73,16 +73,10 @@ MJEPersonalSettings = {
 			true, -- [4]
 			true, -- [5]
 		},
-		["hiddenIngame"] = false,
+		["color"] = {
+		},
 		["hidden"] = false,
 		["notCollected"] = true,
-		["faction"] = {
-			["horde"] = true,
-			["alliance"] = true,
-			["noFaction"] = true,
-		},
-		["onlyTradable"] = false,
-		["onlyFavorites"] = false,
 		["mountType"] = {
 			["repair"] = true,
 			["flying"] = true,
@@ -92,7 +86,14 @@ MJEPersonalSettings = {
 			["ground"] = true,
 			["transform"] = true,
 		},
+		["onlyTradable"] = false,
+		["onlyFavorites"] = false,
 		["onlyUsable"] = false,
+		["faction"] = {
+			["horde"] = true,
+			["alliance"] = true,
+			["noFaction"] = true,
+		},
 		["family"] = {
 			["Arachnids"] = {
 				["Scorpions"] = true,
@@ -173,8 +174,8 @@ MJEPersonalSettings = {
 				["Cranes"] = true,
 				["Roc"] = true,
 				["Eagle"] = true,
-				["Mechanical Birds"] = true,
 				["Talonbirds"] = true,
+				["Mechanical Birds"] = true,
 				["Hawkstriders"] = true,
 				["Tallstriders"] = true,
 				["Pandaren Phoenixes"] = true,
@@ -218,10 +219,10 @@ MJEPersonalSettings = {
 				["Quilen"] = true,
 			},
 			["Rays"] = {
-				["Nether Rays"] = true,
-				["Stingrays"] = true,
-				["Mana Rays"] = true,
 				["Fathom Rays"] = true,
+				["Nether Rays"] = true,
+				["Mana Rays"] = true,
+				["Stingrays"] = true,
 			},
 			["Elementals"] = {
 				["Sabers"] = true,
@@ -253,6 +254,8 @@ MJEPersonalSettings = {
 				["Sea Serpents"] = true,
 				["Shardhides"] = true,
 			},
+			["Crabs"] = true,
+			["Jellyfish"] = true,
 			["Ungulates"] = {
 				["Mammoths"] = true,
 				["Riverbeasts"] = true,
@@ -266,8 +269,6 @@ MJEPersonalSettings = {
 				["Camels"] = true,
 				["Runestag"] = true,
 			},
-			["Jellyfish"] = true,
-			["Crabs"] = true,
 			["Amphibian"] = {
 				["Crawgs"] = true,
 				["Toads"] = true,
@@ -302,8 +303,7 @@ MJEPersonalSettings = {
 		},
 		["collected"] = true,
 		["onlyRecent"] = false,
-		["color"] = {
-		},
+		["hiddenIngame"] = false,
 	},
 	["personalHiddenMounts"] = false,
 	["searchInNotes"] = true,

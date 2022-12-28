@@ -80,7 +80,7 @@ lib.Enum = {
 		Multi = 15,
 	},
 	BagTypes = {
-		-- These id's match GetItemSubClassInfo(LE_ITEM_CLASS_CONTAINER, id)
+		-- These id's match GetItemSubClassInfo(Enum.ItemClass.Container, id)
 		SoulBag = 1,
 		HerbBag = 2,
 		EnchantingBag = 3,
@@ -91,6 +91,7 @@ lib.Enum = {
 		InscriptionBag = 8,
 		TackleBox = 9,
 		CookingBag = 10,
+		ReagentBag = 11,
 	},
 }
 
@@ -110,7 +111,7 @@ local reagentTypes = {
 	[6] = GetSpellInfo(45357),		-- Inscription
 	[7] = GetSpellInfo(25229),		-- Jewelcrafting
 	[8] = GetSpellInfo(2108),		-- Leatherworking
-	[9] = GetSpellInfo(2656),		-- Mining
+	[9] = GetSpellInfo(2575),		-- Mining
 	[10] = GetSpellInfo(8613),		-- Skinning
 	[11] = GetSpellInfo(3908),		-- Tailoring
 	[12] = GetSpellInfo(2550),		-- Cooking
@@ -121,8 +122,8 @@ local reagentTypes = {
 
 local bagTypes = {}
 
-for i = 1, 10 do
-	bagTypes[i] = GetItemSubClassInfo(LE_ITEM_CLASS_CONTAINER, i)
+for i = 1, 11 do
+	bagTypes[i] = GetItemSubClassInfo(Enum.ItemClass.Container, i)
 end
 
 --	*** API ***

@@ -6,25 +6,25 @@ DataStore_AgendaDB = {
 		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
-		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
-		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
+		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
 	},
 	["global"] = {
 		["Options"] = {
 			["WeeklyResetHour"] = 6,
 			["WeeklyResetDay"] = 2,
-			["NextWeeklyReset"] = "2022-10-04",
+			["NextWeeklyReset"] = "2023-01-03",
 		},
 		["Characters"] = {
 			["Default.Dalaran.Avisar"] = {
-				["lastUpdate"] = 1664637320,
+				["lastUpdate"] = 1672151776,
 			},
 			["Default.Dalaran.Darnastris"] = {
 				["lastUpdate"] = 1656301032,
@@ -53,22 +53,17 @@ DataStore_AgendaDB = {
 			["Default.Argent Dawn.Jingojaggot"] = {
 				["lastUpdate"] = 1664126376,
 			},
+			["Default.Argent Dawn.Brotus"] = {
+				["lastUpdate"] = 1664633234,
+			},
 			["Default.Zul'jin.Zulbathal"] = {
-				["lastUpdate"] = 1664636798,
+				["lastUpdate"] = 1672151556,
 			},
 			["Default.Dalaran.Thorinbane"] = {
 				["lastUpdate"] = 1648345057,
 			},
-			["Default.Argent Dawn.Brotus"] = {
-				["lastUpdate"] = 1664633234,
-			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["DungeonIDs"] = {
-					["Ahn'Qiraj Temple 40 Player|804282279"] = "226991|1664668609|0|1",
-					["Ruins of Ahn'Qiraj 10 Player|804281875"] = "54191|1664668609|0|1",
-					["Molten Core 40 Player|804291580"] = "226991|1664668609|0|1",
-				},
-				["lastUpdate"] = 1664668609,
+				["lastUpdate"] = 1672204641,
 			},
 		},
 	},

@@ -330,6 +330,7 @@ addon:Controller("AltoholicUI.TabGridsCategoriesList", {
 					{ text = OTHER, callback = faction_OnClick, xPackID = 8, factionID = 3 },
 				}},
 				{ text = EXPANSION_NAME8, callback = faction_OnClick, xPackID = 9, factionID = 1 },
+				{ text = EXPANSION_NAME9, callback = faction_OnClick, xPackID = 10, factionID = 1 },
 				{ text = format("%s%s", colors.green, GUILD), callback = faction_OnClick, xPackID = 10, factionID = 1 },
 				{ text = format("%s%s", colors.cyan, L["All-in-one"]), callback = faction_OnClick, xPackID = 11, factionID = 1 },
 			}},
@@ -400,6 +401,7 @@ addon:Controller("AltoholicUI.TabGridsCategoriesList", {
 				{ text = EXPANSION_NAME6, callback = sets_OnClick, xPackID = 7 },
 				{ text = EXPANSION_NAME7, callback = sets_OnClick, xPackID = 8 },
 				{ text = EXPANSION_NAME8, callback = sets_OnClick, xPackID = 9 },
+				{ text = EXPANSION_NAME9, callback = sets_OnClick, xPackID = 10 },
 			}},
 		}
 

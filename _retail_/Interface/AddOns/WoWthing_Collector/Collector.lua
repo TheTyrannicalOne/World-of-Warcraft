@@ -9,8 +9,12 @@ local charClassID, charData, charName, guildName, playedLevel, playedLevelUpdate
 local loggingOut = false
 local bankOpen, guildBankOpen, reagentBankUpdated, transmogOpen = false, false, false, false
 local maxScannedToys = 0
-local dirtyAchievements, dirtyAuras, dirtyBags, dirtyCovenant, dirtyCurrencies, dirtyGarrisonTrees, dirtyHeirlooms, dirtyLocation, dirtyLockouts, dirtyMounts, dirtyMythicPlus, dirtyPets, dirtyQuests, dirtyReputations, dirtyRested, dirtySpells, dirtyToys, dirtyTransmog, dirtyVault, dirtyXp =
-    false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false
+local dirtyAchievements, dirtyAuras, dirtyBags, dirtyCovenant, dirtyCurrencies, dirtyEquipment,
+    dirtyGarrisonTrees, dirtyHeirlooms, dirtyLocation, dirtyLockouts, dirtyMounts, dirtyMythicPlus,
+    dirtyPets, dirtyQuests, dirtyReputations, dirtyRested, dirtySpells, dirtyToys, dirtyTransmog,
+    dirtyVault, dirtyXp =
+    false, false, false, false, false, false, false, false, false, false, false, false, false, false,
+    false, false, false, false, false, false, false
 local dirtyCallings, callingData = false, nil
 local dirtyBag, dirtyGuildBank, guildBankQueried, requestingPlayedTime = {}, false, false, true
 
@@ -94,6 +98,7 @@ function events:PLAYER_ENTERING_WORLD()
     dirtyAuras = true
     dirtyCovenant = true
     dirtyCurrencies = true
+    dirtyEquipment = true
     dirtyGarrisonTrees = true
     dirtyHeirlooms = true
     dirtyLocation = true
@@ -180,9 +185,9 @@ end
 function events:BANKFRAME_OPENED()
     -- Force a bag scan of the bank now that it's open
     bankOpen = true
-    dirtyBag[-1] = true
-    dirtyBag[-3] = true
-    for i = 5, 11 do
+    dirtyBag[-1] = true -- bank
+    dirtyBag[-3] = true -- reagent bank
+    for i = 6, 12 do
         dirtyBag[i] = true
     end
 end
@@ -275,6 +280,10 @@ end
 function events:GARRISON_TALENT_UPDATE()
     dirtyGarrisonTrees = true
 end
+-- Items
+function events:PROFESSION_EQUIPMENT_CHANGED()
+    dirtyEquipment = true
+end
 -- Quests
 function events:COVENANT_CALLINGS_UPDATED(callings)
     dirtyCallings = true
@@ -366,6 +375,11 @@ function wwtc:Timer()
     if dirtyCurrencies then
         dirtyCurrencies = false
         wwtc:ScanCurrencies()
+    end
+
+    if dirtyEquipment then
+        dirtyEquipment = false
+        wwtc:ScanEquipment()
     end
 
     if dirtyGarrisonTrees then
@@ -503,6 +517,7 @@ function wwtc:Initialise()
     charData.currencies = charData.currencies or {}
     charData.dailyQuests = charData.dailyQuests or {}
     charData.emissaries = charData.emissaries or {}
+    charData.equipment = charData.equipment or {}
     charData.garrisons = charData.garrisons or {}
     charData.garrisonTrees = charData.garrisonTrees or {}
     charData.illusions = charData.illusions or ''
@@ -1021,6 +1036,25 @@ function wwtc:ScanCurrencies()
     end
 end
 
+function wwtc:ScanEquipment()
+    if charData == nil then return end
+
+    charData.equipment = {}
+    for slot = 20, 30 do
+        local itemLink = GetInventoryItemLink('player', slot)
+
+        if itemLink ~= nil then
+            local itemQuality = GetInventoryItemQuality('player', slot)
+            -- Item isn't loaded yet, try again in a bit
+            if itemQuality == nil then
+                dirtyEquipment = true
+            else
+                charData.equipment[slot] = wwtc:ParseItemLink(itemLink, itemQuality, 1)
+            end
+        end
+    end
+end
+
 function wwtc:ScanLocation()
     if charData == nil then return end
 
@@ -1211,8 +1245,6 @@ function wwtc:ScanQuests()
 
             -- Quest is in progress, check progress
             elseif C_QuestLog.IsOnQuest(questId) then
-                --local index = C_QuestLog.GetLogIndexForQuestID(questId)
-                --local description, _, _ = GetQuestLogLeaderBoard(1, index)
                 local objectives = C_QuestLog.GetQuestObjectives(questId)
                 if objectives ~= nil then
                     prog.id = questId
@@ -1223,7 +1255,11 @@ function wwtc:ScanQuests()
                         if objective ~= nil then
                             local objectiveData = {
                                 ['type'] = objective.type,
-                                ['text'] = objective.text,
+                                ['text'] = gsub(
+                                    objective.text,
+                                    "%|A:Professions%-Icon%-Quality%-Tier(%d)%-Small:18:18:0:2%|a",
+                                    "[[tier%1]]"
+                                ),
                             }
     
                             if objective.type == 'progressbar' then
@@ -1247,12 +1283,14 @@ function wwtc:ScanQuests()
                     if #prog.objectives == 0 then
                         local oldQuestId = C_QuestLog.GetSelectedQuest()
                         C_QuestLog.SetSelectedQuest(questId)
-                        prog.objectives[1] = {
-                            type = 'object',
-                            text = GetQuestLogCompletionText(),
-                            have = 1,
-                            need = 1,
-                        }
+
+                        table.insert(prog.objectives, table.concat({
+                            'object',
+                            GetQuestLogCompletionText(),
+                            1,
+                            1,
+                        }, ';'))
+
                         C_QuestLog.SetSelectedQuest(oldQuestId)
                     end
                     break
@@ -1868,7 +1906,12 @@ function wwtc:ParseItemLink(link, quality, count)
         itemID = tonumber(parts[2]),
         bonusIDs = {},
         gems = {},
+        quality = quality,
     }
+
+    if quality < 0 then
+        item.quality = C_Item.GetItemQualityByID(link)
+    end
 
     if parts[3] ~= '' then
         item.enchantID = tonumber(parts[3])
@@ -1907,10 +1950,6 @@ function wwtc:ParseItemLink(link, quality, count)
 
     local effectiveILvl, _, _ = GetDetailedItemLevelInfo(link)
     item.itemLevel = effectiveILvl
-
-    if quality < 0 then
-        item.quality = C_Item.GetItemQualityByID(link)
-    end
 
     -- count:id:context:enchant:ilvl:quality:suffix:bonusIDs:gems
     local ret = table.concat({

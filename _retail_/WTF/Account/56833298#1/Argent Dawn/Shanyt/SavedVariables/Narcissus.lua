@@ -9,12 +9,12 @@ NarciStatisticsDB_PC = {
 	["Barbershop"] = {
 		["Locations"] = {
 			[2024] = {
-				["visit"] = 2,
-				["time"] = 188,
+				["visit"] = 3,
+				["time"] = 510,
 			},
 			[2022] = {
-				["visit"] = 12,
-				["time"] = 633,
+				["visit"] = 13,
+				["time"] = 985,
 			},
 			[85] = {
 				["visit"] = 1,

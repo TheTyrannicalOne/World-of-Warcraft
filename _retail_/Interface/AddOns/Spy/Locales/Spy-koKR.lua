@@ -16,28 +16,28 @@ Spy는 근처에 있는 적 플레이어를 알려주는 애드온 입니다.
 ]]
 
 L["SpyDescription2"] = [[
-|cffffd000근접한 적 목록|cffffffff
+|cffffd000 근접한 적 목록 |cffffffff
 근접한 적 목록은 근처에 있는 탐지 된 적을 표시합니다. 근접한 적 목록을 클릭하면 적을 타겟팅하지만, 전투 상황은 아닙니다. 근접한 적에 등록된 플레이어가 일정 시간이 지나도 탐지되지 않는다면 자동으로 지워집니다.
 
-|cffffd0001시간 내 목록|cffffffff
+|cffffd000 1시간 내 목록 |cffffffff
 한 시간 안에 감지 된 모든 적을 표시합니다.
 
-|cffffd000제외 목록|cffffffff
+|cffffd000 제외 목록 |cffffffff
 제외 목록에 포함 된 적 플레이어는 Spy에 기록되지 않습니다. 드롭다운 메뉴 또는 목록을 Ctrl + 좌클릭 으로 플레이어를 제외목록에 추가 / 제거 할 수 있습니다.
 
-|cffffd000살생부 명단|cffffffff
+|cffffd000 살생부 명단 |cffffffff
 살생부 명단에 있는 적이 탐지되었을 때 알람이 울립니다. 드롭다운 메뉴 또는 목록을 Shift + 좌클릭 으로 플레이어를 살생부에 추가 / 제거 할 수 있습니다. 드롭다운 메뉴로 살생부 명단에 추가한 이유를 설정 할 수 있습니다. 만약 알맞은 이유가 없다면, "이유를 입력하세요..." 를 선택해 직접 작성 할 수 있습니다.
 
 ]]
 
 L["SpyDescription3"] = [[
-|cffffd000Statistics Window|cffffffff
+|cffffd000 Statistics Window |cffffffff
 The Statistics Window contains a list of all enemy encounters which can be sorted by name, level, guild, wins, losses and the last time an enemy was detected. It also provides the ability to search for a specific enemy by name or guild and has filters to show only enemies that are marked as Kill on Sight, with a Win/Loss or entered Reasons.
 
-|cffffd000Kill On Sight Button|cffffffff
+|cffffd000 Kill On Sight Button |cffffffff
 If enabled, this button will be located on the enemy players target frame. Clicking on this button will add/remove the enemy target to/from the Kill On Sight list. Right clicking on the button will allow you to enter Kill on Sight reasons.
 
-|cffffd000제작자: Slipjack|cffffffff
+|cffffd000 제작자:|cffffffff Slipjack
 ]]
 
 -- General Settings
@@ -126,6 +126,7 @@ L["TooltipDisplayLastSeenDescription"] = "적 플레이어 툴팁에 마지막�
 L["DisplayListData"] = "표시 할 적의 데이터를 선택하십시오"
 L["Name"] = "이름"
 L["Class"] = "직업"
+L["Rank"] = "등급"
 L["SelectFont"] = "폰트 설정"
 L["SelectFontDescription"] = "Spy 창의 폰트를 선택하세요."
 L["RowHeight"] = "열 높이 설정"
@@ -293,7 +294,7 @@ L["Time"] = "시간"
 L["List"] = "표식"
 L["Filter"] = "검색"
 L["Show Only"] = "필터"
-L["Realm"] = "Realm"
+L["Realm"] = "서버"
 L["KOS"] = "살생부"
 L["Won/Lost"] = "승/패"
 L["Reason"] = "이유"	 

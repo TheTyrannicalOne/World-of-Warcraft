@@ -73,10 +73,18 @@ if L then
 	L.ultimate_desc = "在我们不知道首领是什么元素时，显示终极技能的计时条（灼热屠戮，绝对零度，地层裂口，雷霆打击）"
 	L.ultimate_bartext = "%s [终极]" -- {Spell} [Ult]
 
+	L.add_bartext = "%s [增援]" -- "{Spell} [Add]"
+
+	L.Fire = "火焰"
+	L.Frost = "冰霜"
+	L.Earth = "土地" -- check
+	L.Storm = "风暴"
+
 	-- Fire
 	L.magma_burst = "岩浆池"
 	L.molten_rupture = "熔岩"
 	L.searing_carnage = "火焰跳舞"
+	-- L.raging_inferno = "Soak Pools"
 
 	-- Frost
 	L.biting_chill = "刺骨寒意"
@@ -111,12 +119,13 @@ if L then
 	L.icy_shroud = "治疗吸收盾"
 	L.broodkeepers_fury = "愤怒"
 	L.frozen_shroud = "定身吸收盾"
+	-- L.detonating_stoneslam = "Tank Soak"
 end
 
 L = BigWigs:NewBossLocale("Raszageth the Storm-Eater", "zhCN")
 if L then
 	L.lighting_devastation_trigger = "深吸" -- Raszageth takes a deep breath...
-	
+
 	-- Stage One: The Winds of Change
 	L.hurricane_wing = "推开"
 	L.volatile_current = "火花"

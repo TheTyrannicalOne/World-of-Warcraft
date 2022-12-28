@@ -6,20 +6,20 @@ DataStore_PetsDB = {
 		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
-		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
 	},
 	["global"] = {
 		["Characters"] = {
 			["Default.Dalaran.Avisar"] = {
-				["lastUpdate"] = 1664637311,
+				["lastUpdate"] = 1672151766,
 			},
 			["Default.Dalaran.Darnastris"] = {
 				["lastUpdate"] = 1656301022,
@@ -48,20 +48,17 @@ DataStore_PetsDB = {
 			["Default.Argent Dawn.Jingojaggot"] = {
 				["lastUpdate"] = 1664126175,
 			},
+			["Default.Zul'jin.Zulbathal"] = {
+				["lastUpdate"] = 1672151546,
+			},
 			["Default.Dalaran.Thorinbane"] = {
 				["lastUpdate"] = 1648345048,
 			},
 			["Default.Argent Dawn.Brotus"] = {
 				["lastUpdate"] = 1664633225,
 			},
-			["Default.Zul'jin.Zulbathal"] = {
-				["lastUpdate"] = 1664636788,
-			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["lastUpdate"] = 1664656989,
-				["CRITTER"] = {
-					135267, -- [1]
-				},
+				["lastUpdate"] = 1672198227,
 			},
 		},
 		["Reference"] = {
@@ -76,6 +73,7 @@ DataStore_PetsDB = {
 				[339590] = 173502,
 				[334141] = 171240,
 				[135264] = 68662,
+				[393330] = 198316,
 				[147124] = 73011,
 				[334142] = 171230,
 				[335056] = 171697,
@@ -93,23 +91,23 @@ DataStore_PetsDB = {
 				[179831] = 90202,
 				[135259] = 68664,
 				[135267] = 68659,
-				[124660] = 63832,
+				[334789] = 171565,
 				[69677] = 36979,
-				[103588] = 55386,
+				[135261] = 68666,
 				[279228] = 143205,
 				[335755] = 171984,
 				[339677] = 173534,
-				[334157] = 171238,
+				[335087] = 171719,
 				[195370] = 99403,
 				[96571] = 52226,
 				[339670] = 173533,
-				[93739] = 50586,
 				[334151] = 171225,
+				[93739] = 50586,
 				[26533] = 15698,
-				[335087] = 171719,
-				[135261] = 68666,
+				[334157] = 171238,
+				[103588] = 55386,
 				[71840] = 38374,
-				[334789] = 171565,
+				[124660] = 63832,
 			},
 		},
 	},

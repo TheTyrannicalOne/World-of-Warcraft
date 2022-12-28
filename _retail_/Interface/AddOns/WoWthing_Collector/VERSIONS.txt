@@ -1,3 +1,38 @@
+v10.0.2.15
+----------
+- Updated quest ID for Emissary of War (mythic dungeons weekly).
+
+v10.0.2.14
+----------
+- Added profession treatises to quest scanning.
+
+v10.0.2.13
+----------
+- Fixed Jewelcrafting orders quest ID.
+
+v10.0.2.12
+----------
+- Fixed Leatherworking orders quest ID.
+
+v10.0.2.11
+----------
+- Added profession equipment scanning.
+- Fixed item link parsing not including quality.
+
+v10.0.2.10
+----------
+- Fixed profession quests breaking quest scanning.
+
+v10.0.2.9
+---------
+- Added Catch and Releases weeklies to quest scanning.
+- Added profession weeklies to quest scanning.
+- Fixed the final bank bag not being scanned.
+
+v10.0.2.8
+---------
+- Fixed quest scanning error.
+
 v10.0.2.7
 ---------
 - Added DF dungeon weeklies to quest scanning.

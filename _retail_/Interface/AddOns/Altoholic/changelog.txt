@@ -14,6 +14,102 @@ How to support Altoholic's development :
 
 If you like the addon, consider supporting it, this has been the long term effort and commitment of a single person. #ArmyOfOne
 
+
+10.0.009 (11/12/2022)
+
+- LibItemInfo : udpated sources for tailoring, leatherworking, mining, cooking, herbalism and enchanting.
+- Summary tab : added Dragonflight currencies.
+- Datastore_Reputations : added tracking of a first batch of Dragonflight reputations.
+- Grids tab : added tracking of a first batch of Dragonflight reputations.
+
+Note: this is a small release, next week I will be on holidays with more time to catch up on missing Dragonflight features.
+You can expect a few releases during the holiday period :)
+
+10.0.008 (27/11/2022)
+
+- Updated the Spanish (esES) translations thanks to a contribution from Romanv !
+	If you can help with untranslated strings in your own language, join our Discord !
+- UI : slightly increased the minimum width of the UI.
+- Achievements & Grids tab : added a 13th column, note that if you are using multiple pages, you will have to readjust the column positions.
+- Summary tab : the class filter now has 2 additional sub menus to filter by armor type, or by role type (tank/healer/damager).
+
+10.0.007 (20/11/2022)
+
+- DataStore_Containers : added support for the reagent bag (Thanks Feral !)
+- DataStore_Containers : fixed a bug when scanning battle pets stored in the main bank.
+- Tooltip : added support for the reagent bag (Thanks Feral !)
+- Summary tab / Bag usage : added an indication in the tooltip that a bank slot has not been purchased yet.
+- Summary tab / Bag usage : added support for the reagent tab.
+Important note about this panel !
+Blizzard changed the bank bags id's from 5-11 to 6-12, and gave the reagent bag the id 5.
+For alts which you have not logged in in a while, their bags will be "shifted left" when you look at the bank bags.
+There is nothing I can do about this !! 
+Just log them on, visit the bank, and it will be fixed.
+
+10.0.006 (17/11/2022)
+
+- Tooltip : fixed a Lua error when mousing over an item while holding the shift key.
+- DataStore_Containers : fixed an error returning proper bag counts.
+- DataStore_Containers : fixed an error returning proper bank bag counts.
+- DataStore_Containers : fixed scanning battle pets.
+
+10.0.005 (16/11/2022)
+
+- Options tab : fixed the tooltip of options no longer being displayed due to a deprecated template.
+- DataStore_Containers : Changed API calls to use C_Container (Thanks Feral !)
+- DataStore_Talents : Added support for the Evoker (Thanks Feral !)
+- Fixed item enums everywhere (Thanks Feral !)
+- Fixed the tooltip hooks. Counters should be working as usual.
+	There are however still some issues with tooltips when mousing over the minimap, or over a gathering node.
+- Summary tab : added more filtering options under the level filter.
+- DataStore_Inventory : fixed scanning of item sets (Thanks Feral !)
+
+Note: I will have limited availability in the next 3 weeks (2 weeks of business trips), so hopefully this version will be stable enough for the release of Dragonflight !
+
+10.0.004 (02/11/2022)
+
+- Summary tab : fixed a missing bag in the tooltip, overlooked in previous release. (Thanks Snufkin !)
+- DataStore_Containers : fixed one last issue where one of the guild bank bags was not being updated when bags are swapped). (Thanks Snufkin !)
+- Fixed the missing 'Toggle UI' entry in the keybindings.
+- Achievements tab : Added Dragonflight achievements for the categories Fishing, Dragon riding, Primal Storms (Thanks Feral !)
+
+10.0.003 (01/11/2022)
+
+- DataStore_Containers : fixed an issue where one of the guild bank bags was not being updated.
+- Summary tab : adjusted the "bag usage" view to properly display the bank bags (indexes were changed to make room for the new DF reagent bag).
+- Characters tab : fixed the same issue where one of the bank bags was missing due to the index change.
+- Characters tab : fixed an issue in the Covenant => Renown page.
+- DataStore_Garrisons : fixed a Lua error when scanning a mission list. (Thanks Feral !)
+- DataStore_Containers : removed an improper scan of the reagent banks that caused its content to be emptied in the DB.
+
+10.0.002 (31/10/2022)
+
+- Updated ACE libraries in Altoholic & DataStore.
+- DataStore_Agenda : fixed an integer overflow when saving instance information.
+- DataStore_Containers : fixed an issue where the guild bank content was not being updated.
+- DataStore_Containers : fixed an issue where the reagent bank content was not being updated.
+- DataStore_Crafts : fixed a Lua error when crafting an item.
+- Summary tab : fixed a refresh issue when crafting an item.
+- Grids tab : Added Dragonflight dungeons (Thanks Feral !)
+- DataStore_Achievements : Added Dragonflight categories in enum.lua. (Thanks Feral !)
+- Achievements tab : Added Dragonflight achievements for the categories Character, Quests, Exploration (Thanks Feral !)
+
+
+10.0.001 (30/10/2022)
+
+- Fixed the minimap icon.
+- Fixed tab buttons not being properly attached to the addon's UI.
+- DataStore_Containers : fixed the Void Storage events.
+- DataStore_Currencies : fixed the Covenant Sanctum events.
+- DataStore_Garrisons : fixed the Covenant Sanctum events.
+- DataStore_Auctions : fixed an issue with auctions not being properly scanned.
+- DataStore_Crafts : fixed scanning errors caused by Dragonflight API changes.
+- Characters tab : Fixed multiple errors.
+- Characters tab : The old talent UI is still showing if you have data in your database. 
+The new talent UI is not ready, it's not even started since I did not get Dragonflight beta access. 
+- Summary tab : added one more view under M+ dungeons, to list the weekly rewards.
+
+
 9.2.006 (05/08/2022)
 
 - DataStore : Removed a check that caused a clean of the current alt's data.

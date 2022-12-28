@@ -5,8 +5,9 @@ addon:Controller("AltoholicUI.TabCharacters.Recipes", { "AltoholicUI.Options", f
 	local L = LibStub("AceLocale-3.0"):GetLocale(addonName)
 	local colors = addon.Colors
 
-	local recipeColors = { [0] = colors.recipeGrey, [1] = colors.recipeGreen, [2] = colors.yellow, [3] = colors.recipeOrange }
-	local recipeColorNames = { [0] = L["COLOR_GREY"], [1] = L["COLOR_GREEN"], [2] = L["COLOR_YELLOW"], [3] = L["COLOR_ORANGE"] }
+	local recipeColors = { [0] = colors.recipeOrange, [1] = colors.yellow, [2] = colors.recipeGreen, [3] = colors.recipeGrey }
+	local recipeColorNames = { [0] = L["COLOR_ORANGE"], [1] = L["COLOR_YELLOW"], [2] = L["COLOR_GREEN"], [3] = L["COLOR_GREY"] }
+	
 	local SKILL_ANY = 4
 	
 	local currentProfession
@@ -61,7 +62,7 @@ addon:Controller("AltoholicUI.TabCharacters.Recipes", { "AltoholicUI.Options", f
 			if itemID then
 				local _, _, _, _, _, itemType, _, _, itemEquipLoc = GetItemInfo(itemID)
 				
-				if itemType == GetItemClassInfo(LE_ITEM_CLASS_ARMOR) or itemType == GetItemClassInfo(LE_ITEM_CLASS_WEAPON) then
+				if itemType == GetItemClassInfo(Enum.ItemClass.Armor) or itemType == GetItemClassInfo(Enum.ItemClass.Weapon) then
 					if itemEquipLoc and strlen(itemEquipLoc) > 0 then
 						if currentSlots == itemEquipLoc then
 							return true

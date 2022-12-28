@@ -1,7 +1,7 @@
 ﻿--[[
 ********************************************************************************
 Routes
-v1.7.3
+v1.7.4
 16 October 2014
 (Originally written for Live Servers v4.3.0.15050)
 (Hotfixed for v6.0.2.19034)
@@ -181,6 +181,8 @@ local function GetZoneNameSafe(uiMapID)
 	local name = GetZoneName(uiMapID)
 	return name or ("Zone #%s"):format(tostring(uiMapID))
 end
+
+Routes.GetZoneName = GetZoneName
 
 Routes.LZName = setmetatable({}, { __index = function() return 0 end})
 local function processMapChildrenRecursive(parent)
@@ -1028,7 +1030,7 @@ local RoutesDataProviderMixin = CreateFromMixins(MapCanvasDataProviderMixin)
 
 function RoutesDataProviderMixin:OnAdded(mapCanvas)
 	MapCanvasDataProviderMixin.OnAdded(self, mapCanvas)
-	self:GetMap():GetPinFrameLevelsManager():InsertFrameLevelAbove("PIN_FRAME_LEVEL_ROUTES", "PIN_FRAME_LEVEL_FOG_OF_WAR")
+	--self:GetMap():GetPinFrameLevelsManager():InsertFrameLevelAbove("PIN_FRAME_LEVEL_ROUTES", "PIN_FRAME_LEVEL_FOG_OF_WAR")
 
 	-- a single permanent pin
 	local pin = self:GetMap():AcquirePin("RoutesPinTemplate", self.battleField)
@@ -1037,7 +1039,7 @@ function RoutesDataProviderMixin:OnAdded(mapCanvas)
 
 	-- Taboo pin for the main map
 	if not self.battleField then
-		self:GetMap():GetPinFrameLevelsManager():AddFrameLevel("PIN_FRAME_LEVEL_ROUTES_TABOO")
+		--self:GetMap():GetPinFrameLevelsManager():AddFrameLevel("PIN_FRAME_LEVEL_ROUTES_TABOO")
 		self.tabooPin = self:GetMap():AcquirePin("RoutesTabooPinTemplate")
 		self.tabooPin:SetPosition(0.5, 0.5)
 	end
@@ -1065,7 +1067,7 @@ RoutesPinMixin = CreateFromMixins(MapCanvasPinMixin)
 
 function RoutesPinMixin:OnLoad()
 	self:SetIgnoreGlobalPinScale(true)
-	self:UseFrameLevelType("PIN_FRAME_LEVEL_ROUTES")
+	self:UseFrameLevelType("PIN_FRAME_LEVEL_SCENARIO_BLOB")
 end
 
 function RoutesPinMixin:OnAcquired(battleField)
@@ -1136,7 +1138,7 @@ RoutesTabooPinMixin = CreateFromMixins(MapCanvasPinMixin)
 
 function RoutesTabooPinMixin:OnLoad()
 	self:SetIgnoreGlobalPinScale(true)
-	self:UseFrameLevelType("PIN_FRAME_LEVEL_ROUTES_TABOO")
+	self:UseFrameLevelType("PIN_FRAME_LEVEL_AREA_POI_BANNER")
 end
 
 function RoutesTabooPinMixin:OnCanvasSizeChanged()
@@ -1722,6 +1724,32 @@ function ConfigHandler:ClusterRoute(info)
 	Routes:DrawMinimapLines(true)
 end
 
+function ConfigHandler:ClusterRouteBackground(info)
+	local zone = tonumber(info[2])
+	local route = Routes.routekeys[zone][ info[3] ]
+	local t = db.routes[zone][route]
+
+	local function callbackClusterFinished(route, metadata, length)
+		t.route, t.metadata, t.length = route, metadata, length
+
+		t.cluster_dist = db.defaults.cluster_dist
+		Routes:Print(L["Background Route Clustering completed."])
+
+		-- redraw lines
+		local AutoShow = Routes:GetModule("AutoShow", true)
+		if AutoShow and db.defaults.use_auto_showhide then
+			AutoShow:ApplyVisibility()
+		end
+		Routes:DrawWorldmapLines()
+		Routes:DrawMinimapLines(true)
+
+		LibStub("AceConfigRegistry-3.0"):NotifyChange("Routes")
+	end
+
+	Routes:Print(L["Now running route clustering in the background..."])
+	Routes.TSP:ClusterRouteBackground(db.routes[zone][route].route, zone, db.defaults.cluster_dist, callbackClusterFinished)
+end
+
 function ConfigHandler:UnClusterRoute(info)
 	local zone = tonumber(info[2])
 	local route = Routes.routekeys[zone][ info[3] ]
@@ -2187,13 +2215,26 @@ do
 						disabled = "IsCluster",
 						order = 60,
 					},
+					cluster_bl = {
+						type  = "description",
+						name  = " ",
+						order = 70,
+					},
 					cluster = {
 						name = L["Cluster"], type = "execute",
 						desc = L["Cluster this route"],
 						func = "ClusterRoute",
 						hidden = "IsCluster",
 						disabled = "IsCluster",
-						order = 70,
+						order = 71,
+					},
+					cluster_background = {
+						name = L["Cluster (in Background)"], type = "execute",
+						desc = L["Cluster this route in the background"],
+						func = "ClusterRouteBackground",
+						hidden = "IsCluster",
+						disabled = "IsCluster",
+						order = 72,
 					},
 					uncluster = {
 						name = L["Uncluster"], type = "execute",

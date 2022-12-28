@@ -1,0 +1,123 @@
+12/21 17:26:56.021  OpenCheckout
+12/21 17:26:56.207  BlizzardBrowser Count = 2
+12/21 17:26:57.315  BlizzardBrowser Count = 10
+12/21 17:26:57.368  OnReady
+12/21 17:26:57.610  GxTex_Latch: Tile:0x0 (0,0,0,0)
+12/21 17:26:57.610  GxTex_Latch: Tile:512x0 (0,0,0,0)
+12/21 17:26:57.610  GxTex_Latch: Tile:0x512 (0,0,0,0)
+12/21 17:26:57.610  GxTex_Latch: Tile:512x512 (0,0,0,0)
+12/21 17:26:57.610  GxTex_Latch: Tile:0x0 (255,21,23,30)
+12/21 17:26:57.610  GxTex_Latch: Tile:512x0 (255,21,23,30)
+12/21 17:26:57.610  GxTex_Latch: Tile:0x512 (255,21,23,30)
+12/21 17:26:57.610  GxTex_Latch: Tile:512x512 (255,21,23,30)
+12/21 17:26:57.623  OnBufferUpdate (255,21,23,30) (255,21,23,30)
+12/21 17:26:57.853  BlizzardBrowser Count = 8
+12/21 17:27:09.481  BlizzardBrowser Count = 7
+12/21 17:28:01.601  BlizzardBrowser Count = 8
+12/21 17:28:02.177  BlizzardBrowser Count = 7
+12/21 17:28:03.481  OnWindowCloseRequested
+12/21 17:28:03.531  CloseCheckout
+12/21 17:28:08.935  OpenCheckout
+12/21 17:28:08.988  BlizzardBrowser Count = 2
+12/21 17:28:09.526  BlizzardBrowser Count = 10
+12/21 17:28:09.645  GxTex_Latch: Tile:0x0 (0,0,0,0)
+12/21 17:28:09.645  GxTex_Latch: Tile:512x0 (0,0,0,0)
+12/21 17:28:09.645  GxTex_Latch: Tile:0x512 (0,0,0,0)
+12/21 17:28:09.645  GxTex_Latch: Tile:512x512 (0,0,0,0)
+12/21 17:28:09.645  GxTex_Latch: Tile:0x0 (255,21,23,30)
+12/21 17:28:09.645  GxTex_Latch: Tile:512x0 (255,21,23,30)
+12/21 17:28:09.645  GxTex_Latch: Tile:0x512 (255,21,23,30)
+12/21 17:28:09.658  GxTex_Latch: Tile:512x512 (255,21,23,30)
+12/21 17:28:09.658  OnBufferUpdate (255,21,23,30) (255,21,23,30)
+12/21 17:28:09.677  OnReady
+12/21 17:28:10.061  BlizzardBrowser Count = 8
+12/21 17:28:20.755  OnPurchaseCanceledBeforeSubmit
+12/21 17:28:20.808  CloseCheckout
+12/21 17:30:04.019  OpenCheckout
+12/21 17:30:04.081  BlizzardBrowser Count = 2
+12/21 17:30:04.697  BlizzardBrowser Count = 10
+12/21 17:30:04.936  OnReady
+12/21 17:30:04.936  GxTex_Latch: Tile:0x0 (0,0,0,0)
+12/21 17:30:04.936  GxTex_Latch: Tile:512x0 (0,0,0,0)
+12/21 17:30:04.936  GxTex_Latch: Tile:0x512 (0,0,0,0)
+12/21 17:30:04.936  GxTex_Latch: Tile:512x512 (0,0,0,0)
+12/21 17:30:04.936  GxTex_Latch: Tile:0x0 (255,21,23,30)
+12/21 17:30:04.936  GxTex_Latch: Tile:512x0 (255,21,23,30)
+12/21 17:30:04.936  GxTex_Latch: Tile:0x512 (255,21,23,30)
+12/21 17:30:04.951  GxTex_Latch: Tile:512x512 (255,21,23,30)
+12/21 17:30:04.951  OnBufferUpdate (255,21,23,30) (255,21,23,30)
+12/21 17:30:05.226  BlizzardBrowser Count = 8
+12/21 17:30:12.200  BlizzardBrowser Count = 9
+12/21 17:30:35.275  BlizzardBrowser Count = 8
+12/21 17:30:38.874  OnWindowCloseRequested
+12/21 17:30:38.925  CloseCheckout
+12/21 17:34:11.287  OpenCheckout
+12/21 17:34:11.344  BlizzardBrowser Count = 2
+12/21 17:34:11.882  BlizzardBrowser Count = 10
+12/21 17:34:12.024  OnReady
+12/21 17:34:12.024  GxTex_Latch: Tile:0x0 (0,0,0,0)
+12/21 17:34:12.024  GxTex_Latch: Tile:512x0 (0,0,0,0)
+12/21 17:34:12.030  GxTex_Latch: Tile:0x512 (0,0,0,0)
+12/21 17:34:12.030  GxTex_Latch: Tile:512x512 (0,0,0,0)
+12/21 17:34:12.030  GxTex_Latch: Tile:0x0 (255,21,23,30)
+12/21 17:34:12.030  GxTex_Latch: Tile:512x0 (255,21,23,30)
+12/21 17:34:12.030  OnBufferUpdate (255,21,23,30) (255,21,23,30)
+12/21 17:34:12.065  GxTex_Latch: Tile:0x512 (255,21,23,30)
+12/21 17:34:12.065  GxTex_Latch: Tile:512x512 (255,21,23,30)
+12/21 17:34:12.415  BlizzardBrowser Count = 8
+12/21 17:34:25.139  BlizzardBrowser Count = 7
+12/21 17:34:27.837  OnWindowCloseRequested
+12/21 17:34:27.889  CloseCheckout
+12/21 17:34:45.554  OpenCheckout
+12/21 17:34:45.608  BlizzardBrowser Count = 2
+12/21 17:34:46.136  BlizzardBrowser Count = 10
+12/21 17:34:46.360  OnReady
+12/21 17:34:46.360  GxTex_Latch: Tile:0x0 (0,0,0,0)
+12/21 17:34:46.374  GxTex_Latch: Tile:512x0 (0,0,0,0)
+12/21 17:34:46.374  GxTex_Latch: Tile:0x512 (0,0,0,0)
+12/21 17:34:46.374  GxTex_Latch: Tile:512x512 (0,0,0,0)
+12/21 17:34:46.374  GxTex_Latch: Tile:0x0 (255,21,23,30)
+12/21 17:34:46.374  GxTex_Latch: Tile:512x0 (255,21,23,30)
+12/21 17:34:46.374  GxTex_Latch: Tile:0x512 (255,21,23,30)
+12/21 17:34:46.374  GxTex_Latch: Tile:512x512 (255,21,23,30)
+12/21 17:34:46.374  OnBufferUpdate (255,21,23,30) (255,21,23,30)
+12/21 17:34:46.661  BlizzardBrowser Count = 8
+12/21 17:34:57.258  BlizzardBrowser Count = 7
+12/21 17:34:57.912  OnWindowCloseRequested
+12/21 17:34:57.963  CloseCheckout
+12/21 17:35:21.746  OpenCheckout
+12/21 17:35:21.807  BlizzardBrowser Count = 2
+12/21 17:35:22.348  BlizzardBrowser Count = 10
+12/21 17:35:22.504  GxTex_Latch: Tile:0x0 (0,0,0,0)
+12/21 17:35:22.504  GxTex_Latch: Tile:512x0 (0,0,0,0)
+12/21 17:35:22.504  GxTex_Latch: Tile:0x512 (0,0,0,0)
+12/21 17:35:22.504  GxTex_Latch: Tile:512x512 (0,0,0,0)
+12/21 17:35:22.504  GxTex_Latch: Tile:0x0 (255,21,23,30)
+12/21 17:35:22.504  GxTex_Latch: Tile:512x0 (255,21,23,30)
+12/21 17:35:22.504  GxTex_Latch: Tile:0x512 (255,21,23,30)
+12/21 17:35:22.514  GxTex_Latch: Tile:512x512 (255,21,23,30)
+12/21 17:35:22.514  OnBufferUpdate (255,21,23,30) (255,21,23,30)
+12/21 17:35:22.538  OnReady
+12/21 17:35:22.879  BlizzardBrowser Count = 8
+12/21 17:35:30.314  BlizzardBrowser Count = 9
+12/21 17:35:32.993  BlizzardBrowser Count = 8
+12/21 17:35:34.279  OnWindowCloseRequested
+12/21 17:35:34.330  CloseCheckout
+12/21 17:35:37.677  OpenCheckout
+12/21 17:35:37.729  BlizzardBrowser Count = 2
+12/21 17:35:38.277  BlizzardBrowser Count = 10
+12/21 17:35:38.397  OnReady
+12/21 17:35:38.397  GxTex_Latch: Tile:0x0 (0,0,0,0)
+12/21 17:35:38.397  GxTex_Latch: Tile:512x0 (0,0,0,0)
+12/21 17:35:38.397  GxTex_Latch: Tile:0x512 (0,0,0,0)
+12/21 17:35:38.404  GxTex_Latch: Tile:512x512 (0,0,0,0)
+12/21 17:35:38.404  GxTex_Latch: Tile:0x0 (255,21,23,30)
+12/21 17:35:38.404  GxTex_Latch: Tile:512x0 (255,21,23,30)
+12/21 17:35:38.404  GxTex_Latch: Tile:0x512 (255,21,23,30)
+12/21 17:35:38.404  GxTex_Latch: Tile:512x512 (255,21,23,30)
+12/21 17:35:38.404  OnBufferUpdate (255,21,23,30) (255,21,23,30)
+12/21 17:35:38.807  BlizzardBrowser Count = 8
+12/21 17:35:45.702  BlizzardBrowser Count = 9
+12/21 17:35:47.802  BlizzardBrowser Count = 8
+12/21 17:35:48.886  OnWindowCloseRequested
+12/21 17:35:48.937  CloseCheckout

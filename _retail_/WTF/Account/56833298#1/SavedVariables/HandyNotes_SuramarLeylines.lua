@@ -8,8 +8,8 @@ HandyNotes_SuramarLeylinesDB = {
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Galvarton - Dalaran"] = "Galvarton - Dalaran",
-		["Neltharigos - Zul'jin"] = "Neltharigos - Zul'jin",
 		["Bathal - Argent Dawn"] = "Bathal - Argent Dawn",
+		["Neltharigos - Zul'jin"] = "Neltharigos - Zul'jin",
 	},
 	["profiles"] = {
 		["Avisar - Dalaran"] = {
@@ -26,9 +26,9 @@ HandyNotes_SuramarLeylinesDB = {
 		},
 		["Galvarton - Dalaran"] = {
 		},
-		["Neltharigos - Zul'jin"] = {
-		},
 		["Bathal - Argent Dawn"] = {
+		},
+		["Neltharigos - Zul'jin"] = {
 		},
 	},
 }

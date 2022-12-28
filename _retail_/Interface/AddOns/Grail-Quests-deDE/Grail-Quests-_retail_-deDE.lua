@@ -31648,6 +31648,9 @@ G[402040]='Chiffrenforschungskonsole - Leer'
 G[402042]='Chiffrenforschungskonsole - Leer'
 G[529411]='Was jetzt?'
 G[529428]='Was jetzt?'
+G[120237101]='Lager der Aylaag'
+G[120237102]='Lager der Aylaag'
+G[120237103]='Lager der Aylaag'
 end
 
 if release >= 43114 then
@@ -34201,6 +34204,7 @@ end
 
 if release >= 46619 then
 G[57588]='Geisttrinker'
+G[58673]='Kriegshäuptling der Horde'
 G[62895]='Auswahl aufspüren'
 G[65034]='Rückkehr nach Oribos'
 G[65169]='Ein standhafter Verbündeter'
@@ -34264,6 +34268,20 @@ G[72322]='Handwerkswissen von Iskaara'
 G[72331]='Der Beginn des Handwerks'
 G[72428]='Flunkerbunker'
 G[72785]='Vorräte beisteuern: Drakoniumnuggets'
+end
+
+if release >= 46781 then
+G[67024]='Schwelende Verstärkung'
+G[70011]='Fellige Freunde'
+G[70016]='Das Land beruhigen'
+G[70602]='Geschichtsstunde: Krieg der Sandstürme'
+G[72114]='Acrosoth'
+end
+
+if release >= 47187 then
+G[44028]='GESUCHT: Leutnant Strathmar'
+G[54366]='Spenden für die Dunkelküste: Winterkuss'
+G[67039]='Eine erstaunliche Reise'
 end
 
 --	End of localized quest names

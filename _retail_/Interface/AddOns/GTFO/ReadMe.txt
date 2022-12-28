@@ -1823,3 +1823,13 @@ Change Log:
 * Added Dragonflight spells (world)
 * Added Dragonflight spells for Vault of the Incarnates
 * Added Mists of Pandaria spells for Temple of the Jade Serpent
+
+4.70.5
+* Fixed Dragonflight spells for Vault of the Incarnates
+* Added Dragonflight spells (world)
+* Added Dragonflight spells for Vault of the Incarnates
+
+5.0
+* Native support for custom sounds
+* Added Dragonflight spells (world)
+* Added Dragonflight spells for Vault of the Incarnates
