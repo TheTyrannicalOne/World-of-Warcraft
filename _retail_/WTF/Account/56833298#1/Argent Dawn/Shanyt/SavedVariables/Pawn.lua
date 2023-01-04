@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0714,
+	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 157897,
@@ -83,15 +86,12 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:163874::::::::120:71::28:5:5125:6516:6513:1637:4786:::|h[Honorbound Decapitator]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 200152,
-			["Level"] = 350,
+			["ID"] = 200247,
+			["Level"] = 389,
 			["AlsoFitsIn"] = 16,
-			["Link"] = "|cff0070dd|Hitem:200152::::::::70:73::25:3:43:1472:8766:1:28:2603:::::|h[Gleaming Blade of Insight]|h|r",
+			["Link"] = "|cffa335ee|Hitem:200247::::::::70:71::27:4:6652:1491:5865:8767:1:28:2534:::::|h[Inextinguishable Gavel]|h|r",
 		}, -- [17]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

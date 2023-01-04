@@ -2,10 +2,10 @@
 BronCenaDB = {
 	["profileKeys"] = {
 		["Avisar - Dalaran"] = "Default",
-		["Alatra - Zul'jin"] = "Default",
+		["Okona - Zul'jin"] = "Default",
 		["Jingojaggot - Argent Dawn"] = "Default",
-		["Bathal - Argent Dawn"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
+		["Galvarton - Dalaran"] = "Default",
 		["Brotus - Argent Dawn"] = "Default",
 		["Malivant - Dalaran"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
@@ -13,9 +13,9 @@ BronCenaDB = {
 		["Shanyt - Argent Dawn"] = "Default",
 		["Valmagus - Zul'jin"] = "Default",
 		["Neltharigos - Zul'jin"] = "Default",
-		["Galvarton - Dalaran"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
-		["Okona - Zul'jin"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
+		["Bathal - Argent Dawn"] = "Default",
+		["Alatra - Zul'jin"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

@@ -560,6 +560,11 @@ GTFO.SpellID["394476"] = {
   sound = 3;
 };
 
+GTFO.SpellID["387243"] = {
+  --desc = "MMRGL GRRGL! (Captivated Shellwarden)";
+  applicationOnly = true;
+  sound = 3;
+};
 
 --- *******************
 --- * Ruby Life Pools *
@@ -1513,6 +1518,7 @@ GTFO.SpellID["373559"] = {
 
 GTFO.SpellID["372158"] = {
   --desc = "Sundering Strike (Kurog Grimtotem)";
+  applicationOnly = true;
   sound = 3;
   tankSound = 0;
 };

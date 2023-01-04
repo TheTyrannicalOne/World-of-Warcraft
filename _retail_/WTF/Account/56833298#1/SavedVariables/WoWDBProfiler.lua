@@ -1,42 +1,40 @@
 
 WoWDBProfilerData = {
 	["profileKeys"] = {
-		["Jingojaggot - Argent Dawn"] = "Default",
-		["Banesmuncy - Zul'jin"] = "Default",
-		["Zulbathal - Zul'jin"] = "Default",
 		["Tendralas - Dalaran"] = "Default",
+		["Dachas - Zul'jin"] = "Default",
+		["Kotalkhan - Zul'jin"] = "Default",
+		["Jingojaggot - Argent Dawn"] = "Default",
 		["Armaguth - Zul'jin"] = "Default",
 		["Charbeatic - Zul'jin"] = "Default",
 		["Brotus - Argent Dawn"] = "Default",
-		["Okona - Zul'jin"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
-		["Kotalkhan - Zul'jin"] = "Default",
+		["Varlouris - Dalaran"] = "Default",
+		["Abyronterner - Zul'jin"] = "Default",
+		["Zulbathal - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Valmagus - Zul'jin"] = "Default",
-		["Avisar - Dalaran"] = "Default",
+		["Guufnah - Zul'jin"] = "Default",
 		["Galvarton - Dalaran"] = "Default",
-		["Neltharigos - Zul'jin"] = "Default",
-		["Alatra - Zul'jin"] = "Default",
-		["Bathal - Argent Dawn"] = "Default",
+		["Laymonan - Zul'jin"] = "Default",
+		["Okona - Zul'jin"] = "Default",
+		["Avisar - Dalaran"] = "Default",
 		["Banuumine - Zul'jin"] = "Default",
 		["Thorinbane - Dalaran"] = "Default",
-		["Laymonan - Zul'jin"] = "Default",
+		["Neltharigos - Zul'jin"] = "Default",
 		["Illingrath - Dalaran"] = "Default",
 		["Vadder - Argent Dawn"] = "Default",
-		["Tyran - Argent Dawn"] = "Default",
 		["Malivant - Dalaran"] = "Default",
+		["Tyran - Argent Dawn"] = "Default",
 		["Darnastris - Dalaran"] = "Default",
 		["Rotclaugh - Dalaran"] = "Default",
-		["Guufnah - Zul'jin"] = "Default",
-		["Abyronterner - Zul'jin"] = "Default",
-		["Varlouris - Dalaran"] = "Default",
+		["Bathal - Argent Dawn"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
+		["Alatra - Zul'jin"] = "Default",
 		["Jasmoney - Zul'jin"] = "Default",
-		["Dachas - Zul'jin"] = "Default",
+		["Banesmuncy - Zul'jin"] = "Default",
 		["Mandles - Zul'jin"] = "Default",
 	},
 	["region"] = "US",
-	["version"] = 19,
-	["build_num"] = 47213,
 	["global"] = {
 		["items"] = {
 			[10134] = {
@@ -45,8 +43,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1693:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[10158] = {
 				["instance_difficulty_id"] = 0,
@@ -54,8 +52,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1692:6655"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[3057] = {
 				["instance_difficulty_id"] = 1,
@@ -63,8 +61,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[176978] = {
 				["instance_difficulty_id"] = 0,
@@ -72,8 +70,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1703:6652:6907"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[10238] = {
 				["instance_difficulty_id"] = 1,
@@ -82,8 +80,8 @@ WoWDBProfilerData = {
 					["1707:6654"] = true,
 					["1681:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[198334] = {
 				["instance_difficulty_id"] = 13,
@@ -91,8 +89,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["8802:8851:8852"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[15393] = {
 				["instance_difficulty_id"] = 0,
@@ -100,8 +98,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1678:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[8248] = {
 				["instance_difficulty_id"] = 1,
@@ -109,8 +107,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[8272] = {
 				["instance_difficulty_id"] = 1,
@@ -118,8 +116,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[8280] = {
 				["instance_difficulty_id"] = 0,
@@ -127,8 +125,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[198719] = {
 				["instance_difficulty_id"] = 14,
@@ -136,8 +134,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[127748] = {
 				["instance_difficulty_id"] = 31,
@@ -145,8 +143,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[10382] = {
 				["instance_difficulty_id"] = 0,
@@ -154,8 +152,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1679:6654"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[106457] = {
 				["instance_difficulty_id"] = 0,
@@ -163,8 +161,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["215:6654"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[193477] = {
 				["instance_difficulty_id"] = 26,
@@ -173,8 +171,8 @@ WoWDBProfilerData = {
 					["1462:5861:6652:8766"] = true,
 					["1481:5852:6652:8766"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[10406] = {
 				["instance_difficulty_id"] = 0,
@@ -183,8 +181,8 @@ WoWDBProfilerData = {
 					["1679:6654"] = true,
 					["1706:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[194373] = {
 				["instance_difficulty_id"] = 26,
@@ -192,8 +190,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["7963"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[21947] = {
 				["instance_difficulty_id"] = 1,
@@ -201,8 +199,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[199872] = {
 				["instance_difficulty_id"] = 11,
@@ -210,8 +208,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[202046] = {
 				["instance_difficulty_id"] = 14,
@@ -219,8 +217,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[15633] = {
 				["instance_difficulty_id"] = 0,
@@ -228,8 +226,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1695:6655"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[193735] = {
 				["instance_difficulty_id"] = 17,
@@ -237,8 +235,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6652:7937:7975:7978:8816"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[197955] = {
 				["instance_difficulty_id"] = 26,
@@ -246,8 +244,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1462:5851:6652:8766"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[15673] = {
 				["instance_difficulty_id"] = 0,
@@ -255,8 +253,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1694:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[200513] = {
 				["instance_difficulty_id"] = 11,
@@ -264,8 +262,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[15737] = {
 				["instance_difficulty_id"] = 1,
@@ -273,8 +271,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[106395] = {
 				["instance_difficulty_id"] = 9,
@@ -282,8 +280,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["103:6654"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[198980] = {
 				["instance_difficulty_id"] = 11,
@@ -291,8 +289,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[187088] = {
 				["instance_difficulty_id"] = 14,
@@ -300,8 +298,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[176986] = {
 				["instance_difficulty_id"] = 0,
@@ -309,8 +307,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1712:6652:6907:7575"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[198725] = {
 				["instance_difficulty_id"] = 11,
@@ -318,8 +316,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[32753] = {
 				["instance_difficulty_id"] = 3,
@@ -327,8 +325,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[200516] = {
 				["instance_difficulty_id"] = 11,
@@ -336,8 +334,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[7445] = {
 				["instance_difficulty_id"] = 0,
@@ -345,8 +343,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1705:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[198854] = {
 				["instance_difficulty_id"] = 14,
@@ -354,8 +352,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[55436] = {
 				["instance_difficulty_id"] = 0,
@@ -363,8 +361,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1685:6655"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[9791] = {
 				["instance_difficulty_id"] = 0,
@@ -372,8 +370,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1709:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[15937] = {
 				["instance_difficulty_id"] = 1,
@@ -381,8 +379,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6655"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[7465] = {
 				["instance_difficulty_id"] = 1,
@@ -390,8 +388,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1678:6655"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[176988] = {
 				["instance_difficulty_id"] = 0,
@@ -399,8 +397,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1690:6652:6907:7575"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[7477] = {
 				["instance_difficulty_id"] = 0,
@@ -408,8 +406,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1709:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[42361] = {
 				["instance_difficulty_id"] = 14,
@@ -417,8 +415,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[116499] = {
 				["instance_difficulty_id"] = 1,
@@ -426,8 +424,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["53:550:6655"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[9863] = {
 				["instance_difficulty_id"] = 0,
@@ -435,8 +433,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1679:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[176989] = {
 				["instance_difficulty_id"] = 0,
@@ -444,8 +442,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1714:6652:6907:7578"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[82037] = {
 				["instance_difficulty_id"] = 0,
@@ -453,8 +451,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1714:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[193741] = {
 				["instance_difficulty_id"] = 2,
@@ -462,8 +460,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["43:1581:7976:8766:8813"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[7517] = {
 				["instance_difficulty_id"] = 1,
@@ -471,8 +469,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1709:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[24937] = {
 				["instance_difficulty_id"] = 0,
@@ -480,8 +478,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1691:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[11973] = {
 				["instance_difficulty_id"] = 0,
@@ -489,8 +487,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1679:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[200519] = {
 				["instance_difficulty_id"] = 11,
@@ -498,8 +496,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[9951] = {
 				["instance_difficulty_id"] = 1,
@@ -507,8 +505,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1692:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[7541] = {
 				["instance_difficulty_id"] = 0,
@@ -516,8 +514,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1692:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[13044] = {
 				["instance_difficulty_id"] = 0,
@@ -525,8 +523,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6659"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[198474] = {
 				["instance_difficulty_id"] = 25,
@@ -534,8 +532,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[198986] = {
 				["instance_difficulty_id"] = 0,
@@ -543,8 +541,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1693:6652:7968"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[10063] = {
 				["instance_difficulty_id"] = 0,
@@ -552,8 +550,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1680:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[10071] = {
 				["instance_difficulty_id"] = 0,
@@ -561,8 +559,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1681:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[10079] = {
 				["instance_difficulty_id"] = 0,
@@ -570,8 +568,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1694:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[198987] = {
 				["instance_difficulty_id"] = 0,
@@ -579,8 +577,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1697:6652:7968"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[10119] = {
 				["instance_difficulty_id"] = 1,
@@ -588,8 +586,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1694:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[187095] = {
 				["instance_difficulty_id"] = 14,
@@ -597,8 +595,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[10143] = {
 				["instance_difficulty_id"] = 0,
@@ -606,8 +604,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1677:6654"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[21309] = {
 				["instance_difficulty_id"] = 11,
@@ -615,8 +613,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[198988] = {
 				["instance_difficulty_id"] = 0,
@@ -624,8 +622,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1686:6652:7935:7968"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[10191] = {
 				["instance_difficulty_id"] = 1,
@@ -633,8 +631,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1709:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[10231] = {
 				["instance_difficulty_id"] = 1,
@@ -642,8 +640,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1693:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[10247] = {
 				["instance_difficulty_id"] = 0,
@@ -651,8 +649,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1677:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[10255] = {
 				["instance_difficulty_id"] = 0,
@@ -660,14 +658,23 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1691:6654"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[106464] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 0,
 				["seen_bonuses"] = {
 					["227"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[199885] = {
+				["instance_difficulty_id"] = 25,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1472"] = true,
 				},
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
@@ -676,8 +683,17 @@ WoWDBProfilerData = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["seen_bonuses"] = {
-					["1681:6652:7937:7968"] = true,
 					["1716:6652:7937:7968"] = true,
+					["1681:6652:7937:7968"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[199758] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
 				},
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
@@ -688,8 +704,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[14451] = {
 				["instance_difficulty_id"] = 0,
@@ -697,8 +713,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[200526] = {
 				["instance_difficulty_id"] = 11,
@@ -706,8 +722,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[82041] = {
 				["instance_difficulty_id"] = 0,
@@ -715,8 +731,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1713:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[187100] = {
 				["instance_difficulty_id"] = 14,
@@ -724,8 +740,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[198737] = {
 				["instance_difficulty_id"] = 25,
@@ -733,8 +749,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1472"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[141577] = {
 				["instance_difficulty_id"] = 25,
@@ -742,8 +758,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6660"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[198993] = {
 				["instance_difficulty_id"] = 17,
@@ -751,8 +767,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1689:6652:7968"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[48118] = {
 				["instance_difficulty_id"] = 0,
@@ -760,8 +776,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[106530] = {
 				["instance_difficulty_id"] = 0,
@@ -769,8 +785,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["122:6654"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[198355] = {
 				["instance_difficulty_id"] = 11,
@@ -778,8 +794,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[194519] = {
 				["instance_difficulty_id"] = 11,
@@ -787,8 +803,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[4796] = {
 				["instance_difficulty_id"] = 14,
@@ -796,8 +812,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[198995] = {
 				["instance_difficulty_id"] = 0,
@@ -805,8 +821,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1696:6652:7968"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[127822] = {
 				["instance_difficulty_id"] = 31,
@@ -814,8 +830,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[12693] = {
 				["instance_difficulty_id"] = 1,
@@ -823,8 +839,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[15770] = {
 				["instance_difficulty_id"] = 1,
@@ -832,8 +848,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[21310] = {
 				["instance_difficulty_id"] = 11,
@@ -841,8 +857,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[198868] = {
 				["instance_difficulty_id"] = 11,
@@ -850,8 +866,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[198101] = {
 				["instance_difficulty_id"] = 14,
@@ -859,8 +875,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[121173] = {
 				["instance_difficulty_id"] = 0,
@@ -868,8 +884,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1706:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[87478] = {
 				["instance_difficulty_id"] = 0,
@@ -877,8 +893,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6659"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[198869] = {
 				["instance_difficulty_id"] = 11,
@@ -886,8 +902,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[116506] = {
 				["instance_difficulty_id"] = 0,
@@ -895,8 +911,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["91:6655"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[14867] = {
 				["instance_difficulty_id"] = 0,
@@ -904,8 +920,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[141326] = {
 				["instance_difficulty_id"] = 11,
@@ -913,8 +929,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[192093] = {
 				["instance_difficulty_id"] = 11,
@@ -922,29 +938,29 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[114333] = {
 				["instance_difficulty_id"] = 31,
 				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
-					["63"] = true,
 					["117"] = true,
+					["63"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[198999] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["seen_bonuses"] = {
 					["1687:6652:7968"] = true,
-					["1684:6652"] = true,
 					["1690:6652:7968"] = true,
+					["1684:6652"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[9864] = {
 				["instance_difficulty_id"] = 0,
@@ -952,8 +968,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1695:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[199000] = {
 				["instance_difficulty_id"] = 0,
@@ -961,8 +977,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["43:1682:7968"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[190944] = {
 				["instance_difficulty_id"] = 14,
@@ -970,18 +986,18 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[9944] = {
 				["instance_difficulty_id"] = 1,
 				["upgrade_value"] = 2,
 				["seen_bonuses"] = {
-					["1681:6655"] = true,
 					["1692:6655"] = true,
+					["1681:6655"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[16819] = {
 				["instance_difficulty_id"] = 0,
@@ -989,8 +1005,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[9968] = {
 				["instance_difficulty_id"] = 0,
@@ -998,8 +1014,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1693:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[13053] = {
 				["instance_difficulty_id"] = 0,
@@ -1007,8 +1023,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6659"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[116572] = {
 				["instance_difficulty_id"] = 1,
@@ -1016,8 +1032,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["164:6655"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[37890] = {
 				["instance_difficulty_id"] = 2,
@@ -1025,8 +1041,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["4196"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[199002] = {
 				["instance_difficulty_id"] = 17,
@@ -1034,8 +1050,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1678:6652"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[200153] = {
 				["instance_difficulty_id"] = 11,
@@ -1043,8 +1059,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[95601] = {
 				["instance_difficulty_id"] = 0,
@@ -1052,8 +1068,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[199003] = {
 				["instance_difficulty_id"] = 0,
@@ -1062,8 +1078,8 @@ WoWDBProfilerData = {
 					["40:1687"] = true,
 					["1698:6652:7968"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[15227] = {
 				["instance_difficulty_id"] = 0,
@@ -1071,8 +1087,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1679:6655"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[188006] = {
 				["instance_difficulty_id"] = 26,
@@ -1080,8 +1096,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["43:1475"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[10152] = {
 				["instance_difficulty_id"] = 0,
@@ -1089,8 +1105,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1707:6654"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[21327] = {
 				["instance_difficulty_id"] = 11,
@@ -1098,8 +1114,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[199004] = {
 				["instance_difficulty_id"] = 17,
@@ -1107,8 +1123,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1680:6652:7936:7968"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[113952] = {
 				["instance_difficulty_id"] = 6,
@@ -1116,8 +1132,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["9077"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[95602] = {
 				["instance_difficulty_id"] = 0,
@@ -1125,8 +1141,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[10192] = {
 				["instance_difficulty_id"] = 1,
@@ -1134,8 +1150,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1691:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[10200] = {
 				["instance_difficulty_id"] = 1,
@@ -1143,8 +1159,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1678:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[12254] = {
 				["instance_difficulty_id"] = 14,
@@ -1152,8 +1168,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[201818] = {
 				["instance_difficulty_id"] = 11,
@@ -1161,8 +1177,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[199005] = {
 				["instance_difficulty_id"] = 0,
@@ -1170,8 +1186,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["42:1693:7937:7968"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[10240] = {
 				["instance_difficulty_id"] = 1,
@@ -1180,8 +1196,8 @@ WoWDBProfilerData = {
 					["1679:6654"] = true,
 					["1705:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[177778] = {
 				["instance_difficulty_id"] = 0,
@@ -1189,8 +1205,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1686:6652:6907:7574"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[30726] = {
 				["instance_difficulty_id"] = 0,
@@ -1198,8 +1214,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[198622] = {
 				["instance_difficulty_id"] = 11,
@@ -1207,8 +1223,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[10280] = {
 				["instance_difficulty_id"] = 0,
@@ -1216,8 +1232,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1693:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[10288] = {
 				["instance_difficulty_id"] = 0,
@@ -1225,8 +1241,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1694:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[9289] = {
 				["instance_difficulty_id"] = 0,
@@ -1234,8 +1250,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1705:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[194403] = {
 				["instance_difficulty_id"] = 26,
@@ -1243,8 +1259,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["7963"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[199007] = {
 				["instance_difficulty_id"] = 0,
@@ -1252,8 +1268,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1683:6652:7968"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[116511] = {
 				["instance_difficulty_id"] = 0,
@@ -1261,8 +1277,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["115:6655"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[188010] = {
 				["instance_difficulty_id"] = 26,
@@ -1270,8 +1286,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1475:6652"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[190312] = {
 				["instance_difficulty_id"] = 0,
@@ -1279,8 +1295,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[199008] = {
 				["instance_difficulty_id"] = 0,
@@ -1288,8 +1304,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["43:1714:7968"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[36677] = {
 				["instance_difficulty_id"] = 1,
@@ -1297,8 +1313,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1694"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[199776] = {
 				["instance_difficulty_id"] = 11,
@@ -1306,8 +1322,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[15627] = {
 				["instance_difficulty_id"] = 0,
@@ -1315,8 +1331,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1705:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[193383] = {
 				["instance_difficulty_id"] = 13,
@@ -1324,8 +1340,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["8802:8851:8852"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[68751] = {
 				["instance_difficulty_id"] = 0,
@@ -1333,8 +1349,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[199010] = {
 				["instance_difficulty_id"] = 0,
@@ -1342,8 +1358,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1696:6652:7968"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[188013] = {
 				["instance_difficulty_id"] = 26,
@@ -1351,8 +1367,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1475:6652"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[198627] = {
 				["instance_difficulty_id"] = 28,
@@ -1360,8 +1376,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1420:5865:6652:8766"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[177784] = {
 				["instance_difficulty_id"] = 0,
@@ -1370,8 +1386,8 @@ WoWDBProfilerData = {
 					["43:1678:6907"] = true,
 					["1705:6652:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[7370] = {
 				["instance_difficulty_id"] = 0,
@@ -1379,8 +1395,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1707:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[200930] = {
 				["instance_difficulty_id"] = 14,
@@ -1388,8 +1404,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[199012] = {
 				["instance_difficulty_id"] = 0,
@@ -1397,8 +1413,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["42:1712:7935:7968"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[188015] = {
 				["instance_difficulty_id"] = 26,
@@ -1407,8 +1423,8 @@ WoWDBProfilerData = {
 					["40:1475:7579"] = true,
 					["1475:6652:7578"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[201954] = {
 				["instance_difficulty_id"] = 13,
@@ -1416,8 +1432,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["8801:8851:8852"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[199013] = {
 				["instance_difficulty_id"] = 0,
@@ -1425,8 +1441,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1680:6652:7936:7968"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[177786] = {
 				["instance_difficulty_id"] = 0,
@@ -1434,8 +1450,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1679:6652:6907:7578"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[7434] = {
 				["instance_difficulty_id"] = 0,
@@ -1443,8 +1459,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1691:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[6419] = {
 				["instance_difficulty_id"] = 1,
@@ -1452,8 +1468,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[7454] = {
 				["instance_difficulty_id"] = 0,
@@ -1461,8 +1477,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1705:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[177787] = {
 				["instance_difficulty_id"] = 0,
@@ -1470,8 +1486,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1715:6652:6907:7579"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[7474] = {
 				["instance_difficulty_id"] = 0,
@@ -1479,8 +1495,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1705:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[7478] = {
 				["instance_difficulty_id"] = 1,
@@ -1489,8 +1505,8 @@ WoWDBProfilerData = {
 					["1681:6654"] = true,
 					["1694:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[199015] = {
 				["instance_difficulty_id"] = 0,
@@ -1499,8 +1515,8 @@ WoWDBProfilerData = {
 					["41:1704:7968"] = true,
 					["1705:6652:7968"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[188018] = {
 				["instance_difficulty_id"] = 26,
@@ -1510,8 +1526,8 @@ WoWDBProfilerData = {
 					["40:1475:7578"] = true,
 					["1475:6652:7578"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[199655] = {
 				["instance_difficulty_id"] = 14,
@@ -1519,8 +1535,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[188658] = {
 				["instance_difficulty_id"] = 0,
@@ -1528,8 +1544,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[199016] = {
 				["instance_difficulty_id"] = 0,
@@ -1537,8 +1553,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["42:1705:7968"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[16059] = {
 				["instance_difficulty_id"] = 14,
@@ -1546,8 +1562,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[188019] = {
 				["instance_difficulty_id"] = 26,
@@ -1555,8 +1571,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1475:6652"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[9937] = {
 				["instance_difficulty_id"] = 1,
@@ -1564,8 +1580,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1706:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[9945] = {
 				["instance_difficulty_id"] = 1,
@@ -1573,8 +1589,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1677:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[199656] = {
 				["instance_difficulty_id"] = 14,
@@ -1582,8 +1598,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[197738] = {
 				["instance_difficulty_id"] = 14,
@@ -1591,8 +1607,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[86849] = {
 				["instance_difficulty_id"] = 0,
@@ -1600,8 +1616,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[188020] = {
 				["instance_difficulty_id"] = 26,
@@ -1609,8 +1625,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1475:6652"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[194414] = {
 				["instance_difficulty_id"] = 25,
@@ -1618,8 +1634,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["8768"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[199657] = {
 				["instance_difficulty_id"] = 14,
@@ -1627,8 +1643,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[197739] = {
 				["instance_difficulty_id"] = 14,
@@ -1636,8 +1652,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[196972] = {
 				["instance_difficulty_id"] = 14,
@@ -1645,8 +1661,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[177791] = {
 				["instance_difficulty_id"] = 0,
@@ -1654,8 +1670,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["41:1704:6907"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[10073] = {
 				["instance_difficulty_id"] = 1,
@@ -1663,8 +1679,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1695:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[199658] = {
 				["instance_difficulty_id"] = 14,
@@ -1672,8 +1688,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[42370] = {
 				["instance_difficulty_id"] = 14,
@@ -1681,8 +1697,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[16251] = {
 				["instance_difficulty_id"] = 0,
@@ -1690,8 +1706,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[188022] = {
 				["instance_difficulty_id"] = 26,
@@ -1699,18 +1715,18 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["40:1475:7579"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[178943] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["seen_bonuses"] = {
-					["1709:6652:6908"] = true,
 					["1706:6652:6908"] = true,
+					["1709:6652:6908"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[10137] = {
 				["instance_difficulty_id"] = 0,
@@ -1718,8 +1734,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1681:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[199659] = {
 				["instance_difficulty_id"] = 11,
@@ -1727,8 +1743,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[199020] = {
 				["instance_difficulty_id"] = 0,
@@ -1736,8 +1752,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1692:6652:7969"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[15300] = {
 				["instance_difficulty_id"] = 0,
@@ -1745,8 +1761,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[178944] = {
 				["instance_difficulty_id"] = 0,
@@ -1755,8 +1771,8 @@ WoWDBProfilerData = {
 					["1684:6652:6908"] = true,
 					["43:1690:6908"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[15324] = {
 				["instance_difficulty_id"] = 1,
@@ -1764,8 +1780,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1708:6655"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[14325] = {
 				["instance_difficulty_id"] = 0,
@@ -1773,8 +1789,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1707:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[10241] = {
 				["instance_difficulty_id"] = 1,
@@ -1782,18 +1798,18 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1677:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[188024] = {
 				["instance_difficulty_id"] = 26,
 				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
-					["40:1475"] = true,
 					["1475:6652"] = true,
+					["40:1475"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[178945] = {
 				["instance_difficulty_id"] = 0,
@@ -1802,8 +1818,8 @@ WoWDBProfilerData = {
 					["1687:6652:6908"] = true,
 					["40:1696:6908"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[14373] = {
 				["instance_difficulty_id"] = 1,
@@ -1811,8 +1827,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[36009] = {
 				["instance_difficulty_id"] = 1,
@@ -1820,8 +1836,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1705:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[8259] = {
 				["instance_difficulty_id"] = 1,
@@ -1829,8 +1845,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[188025] = {
 				["instance_difficulty_id"] = 26,
@@ -1839,8 +1855,8 @@ WoWDBProfilerData = {
 					["40:1475:7578"] = true,
 					["1475:6652:7579"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[178946] = {
 				["instance_difficulty_id"] = 0,
@@ -1848,8 +1864,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1699:6652:6908"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[42371] = {
 				["instance_difficulty_id"] = 14,
@@ -1857,8 +1873,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[8315] = {
 				["instance_difficulty_id"] = 1,
@@ -1866,8 +1882,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[4677] = {
 				["instance_difficulty_id"] = 1,
@@ -1875,18 +1891,18 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[188026] = {
 				["instance_difficulty_id"] = 26,
 				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
-					["1475:6652:7578"] = true,
 					["42:1475:7578"] = true,
+					["1475:6652:7578"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[199024] = {
 				["instance_difficulty_id"] = 0,
@@ -1894,8 +1910,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1714:6652:7969"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[188027] = {
 				["instance_difficulty_id"] = 26,
@@ -1903,8 +1919,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1475:6652:7579"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[201454] = {
 				["instance_difficulty_id"] = 0,
@@ -1912,8 +1928,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[197618] = {
 				["instance_difficulty_id"] = 11,
@@ -1921,8 +1937,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[173194] = {
 				["instance_difficulty_id"] = 0,
@@ -1930,8 +1946,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6887"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[25038] = {
 				["instance_difficulty_id"] = 2,
@@ -1939,8 +1955,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1708:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[199025] = {
 				["instance_difficulty_id"] = 0,
@@ -1948,8 +1964,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1681:6652:7969"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[188028] = {
 				["instance_difficulty_id"] = 26,
@@ -1957,8 +1973,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1475:6652"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[5772] = {
 				["instance_difficulty_id"] = 14,
@@ -1966,8 +1982,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[4765] = {
 				["instance_difficulty_id"] = 14,
@@ -1975,8 +1991,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[199026] = {
 				["instance_difficulty_id"] = 0,
@@ -1984,8 +2000,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1682:6652:7969"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[177799] = {
 				["instance_difficulty_id"] = 0,
@@ -1993,8 +2009,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["41:1706:6655"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[178950] = {
 				["instance_difficulty_id"] = 0,
@@ -2002,8 +2018,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["43:1699:6908"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[14685] = {
 				["instance_difficulty_id"] = 0,
@@ -2011,8 +2027,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[36298] = {
 				["instance_difficulty_id"] = 22,
@@ -2020,8 +2036,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1707:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[186112] = {
 				["instance_difficulty_id"] = 0,
@@ -2029,8 +2045,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1677:7452"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[12695] = {
 				["instance_difficulty_id"] = 1,
@@ -2038,8 +2054,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[4829] = {
 				["instance_difficulty_id"] = 14,
@@ -2047,8 +2063,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[177801] = {
 				["instance_difficulty_id"] = 0,
@@ -2056,18 +2072,18 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1696:6652:6908"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[178952] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["seen_bonuses"] = {
-					["1681:6652:6908"] = true,
 					["1706:6652:6908"] = true,
+					["1681:6652:6908"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[199029] = {
 				["instance_difficulty_id"] = 0,
@@ -2075,8 +2091,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["604:6652:7968"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[198646] = {
 				["instance_difficulty_id"] = 14,
@@ -2084,8 +2100,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[193915] = {
 				["instance_difficulty_id"] = 11,
@@ -2093,8 +2109,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[15940] = {
 				["instance_difficulty_id"] = 0,
@@ -2102,8 +2118,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1681:6655"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[124323] = {
 				["instance_difficulty_id"] = 5,
@@ -2111,8 +2127,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1472:1798"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[36139] = {
 				["instance_difficulty_id"] = 1,
@@ -2120,8 +2136,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1678:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[42373] = {
 				["instance_difficulty_id"] = 14,
@@ -2129,8 +2145,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[199031] = {
 				["instance_difficulty_id"] = 0,
@@ -2139,8 +2155,8 @@ WoWDBProfilerData = {
 					["604:6652:7968"] = true,
 					["603:6652:7968"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[188034] = {
 				["instance_difficulty_id"] = 26,
@@ -2148,8 +2164,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1475:6652:7579"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[193917] = {
 				["instance_difficulty_id"] = 11,
@@ -2157,8 +2173,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[16060] = {
 				["instance_difficulty_id"] = 14,
@@ -2166,8 +2182,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[188035] = {
 				["instance_difficulty_id"] = 26,
@@ -2175,8 +2191,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1475:6652"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[114094] = {
 				["instance_difficulty_id"] = 31,
@@ -2184,8 +2200,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[11992] = {
 				["instance_difficulty_id"] = 0,
@@ -2194,8 +2210,8 @@ WoWDBProfilerData = {
 					["1681:6654"] = true,
 					["1705:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[12008] = {
 				["instance_difficulty_id"] = 0,
@@ -2203,8 +2219,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1677:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[199033] = {
 				["instance_difficulty_id"] = 0,
@@ -2213,8 +2229,8 @@ WoWDBProfilerData = {
 					["1711:6652:7969"] = true,
 					["1676:6652:7969"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[159264] = {
 				["instance_difficulty_id"] = 0,
@@ -2222,20 +2238,20 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["40:1687:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[177806] = {
 				["instance_difficulty_id"] = 0,
 				["upgrade_value"] = 2,
 				["seen_bonuses"] = {
-					["1681:6652:6908"] = true,
+					["41:1676:6908"] = true,
 					["1703:6652:6655"] = true,
 					["1695:6652:6908"] = true,
-					["41:1676:6908"] = true,
+					["1681:6652:6908"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[198778] = {
 				["instance_difficulty_id"] = 14,
@@ -2243,8 +2259,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[3024] = {
 				["instance_difficulty_id"] = 14,
@@ -2252,8 +2268,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[82254] = {
 				["instance_difficulty_id"] = 0,
@@ -2261,8 +2277,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1698:6654"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[10058] = {
 				["instance_difficulty_id"] = 1,
@@ -2270,8 +2286,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1694:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[10066] = {
 				["instance_difficulty_id"] = 1,
@@ -2280,8 +2296,8 @@ WoWDBProfilerData = {
 					["1677:6654"] = true,
 					["1681:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[10074] = {
 				["instance_difficulty_id"] = 1,
@@ -2289,8 +2305,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1705:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[10098] = {
 				["instance_difficulty_id"] = 1,
@@ -2299,8 +2315,8 @@ WoWDBProfilerData = {
 					["1695:6654"] = true,
 					["1691:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[199035] = {
 				["instance_difficulty_id"] = 0,
@@ -2308,8 +2324,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1708:6652:7969"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[188038] = {
 				["instance_difficulty_id"] = 26,
@@ -2317,8 +2333,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1475:6652"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[15245] = {
 				["instance_difficulty_id"] = 1,
@@ -2326,8 +2342,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1694:6655"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[15253] = {
 				["instance_difficulty_id"] = 1,
@@ -2335,8 +2351,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1680:6655"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[21363] = {
 				["instance_difficulty_id"] = 11,
@@ -2344,8 +2360,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[14278] = {
 				["instance_difficulty_id"] = 1,
@@ -2353,8 +2369,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1677:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[191236] = {
 				["instance_difficulty_id"] = 13,
@@ -2362,8 +2378,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["8805:8841:8842"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[3066] = {
 				["instance_difficulty_id"] = 1,
@@ -2371,8 +2387,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6654"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[14318] = {
 				["instance_difficulty_id"] = 0,
@@ -2380,8 +2396,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1695:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[37803] = {
 				["instance_difficulty_id"] = 28,
@@ -2389,8 +2405,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["3930"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[10242] = {
 				["instance_difficulty_id"] = 1,
@@ -2398,8 +2414,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1705:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[188040] = {
 				["instance_difficulty_id"] = 26,
@@ -2407,8 +2423,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["41:1475"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[194818] = {
 				["instance_difficulty_id"] = 11,
@@ -2416,8 +2432,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[199038] = {
 				["instance_difficulty_id"] = 0,
@@ -2425,20 +2441,21 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1689:6652:7969"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[192005] = {
-				["instance_difficulty_id"] = 43,
+				["instance_difficulty_id"] = 36,
 				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
 					["1485:6652:7935:8766"] = true,
-					["1462:5861:6652:7936:8766"] = true,
-					["1488:5858:6652:7937:8767"] = true,
 					["1478:5861:6652:7937:8767"] = true,
+					["1478:5865:6652:7935:8767"] = true,
+					["1488:5858:6652:7937:8767"] = true,
+					["1462:5861:6652:7936:8766"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[10314] = {
 				["instance_difficulty_id"] = 14,
@@ -2446,8 +2463,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[114097] = {
 				["instance_difficulty_id"] = 31,
@@ -2455,8 +2472,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[42375] = {
 				["instance_difficulty_id"] = 14,
@@ -2464,8 +2481,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[8316] = {
 				["instance_difficulty_id"] = 1,
@@ -2473,8 +2490,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[192006] = {
 				["instance_difficulty_id"] = 27,
@@ -2482,8 +2499,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1465:5865:6652:8766"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[176789] = {
 				["instance_difficulty_id"] = 0,
@@ -2491,8 +2508,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1695:6652:6907:7580"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[15501] = {
 				["instance_difficulty_id"] = 0,
@@ -2500,8 +2517,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1691:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[53852] = {
 				["instance_difficulty_id"] = 14,
@@ -2509,8 +2526,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[82193] = {
 				["instance_difficulty_id"] = 0,
@@ -2518,8 +2535,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1678:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[192007] = {
 				["instance_difficulty_id"] = 25,
@@ -2528,8 +2545,8 @@ WoWDBProfilerData = {
 					["1462:5851:6652:8766"] = true,
 					["1462:5858:6652:8766"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[188043] = {
 				["instance_difficulty_id"] = 26,
@@ -2537,8 +2554,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1475:6652"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[36685] = {
 				["instance_difficulty_id"] = 0,
@@ -2546,18 +2563,19 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1693"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[192008] = {
-				["instance_difficulty_id"] = 28,
+				["instance_difficulty_id"] = 36,
 				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
-					["1485:5851:6652:8766"] = true,
 					["43:1468:5865:8766"] = true,
+					["1478:5865:6652:8767"] = true,
+					["1485:5851:6652:8766"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[55387] = {
 				["instance_difficulty_id"] = 2,
@@ -2565,8 +2583,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1677:6655"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[199042] = {
 				["instance_difficulty_id"] = 0,
@@ -2574,8 +2592,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1715:6652:7969"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[192009] = {
 				["instance_difficulty_id"] = 36,
@@ -2585,8 +2603,8 @@ WoWDBProfilerData = {
 					["43:1462:5868:8766"] = true,
 					["1478:5865:6652:8767"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[188045] = {
 				["instance_difficulty_id"] = 26,
@@ -2594,8 +2612,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1475:6652:7579"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[114099] = {
 				["instance_difficulty_id"] = 31,
@@ -2603,8 +2621,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[120301] = {
 				["instance_difficulty_id"] = 31,
@@ -2612,8 +2630,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[42376] = {
 				["instance_difficulty_id"] = 14,
@@ -2621,8 +2639,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[36270] = {
 				["instance_difficulty_id"] = 2,
@@ -2630,8 +2648,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1679:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[7363] = {
 				["instance_difficulty_id"] = 1,
@@ -2639,8 +2657,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[176793] = {
 				["instance_difficulty_id"] = 0,
@@ -2648,8 +2666,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1680:6652:6908"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[196998] = {
 				["instance_difficulty_id"] = 14,
@@ -2657,18 +2675,19 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[192011] = {
-				["instance_difficulty_id"] = 73,
+				["instance_difficulty_id"] = 28,
 				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
-					["1472:5861:6652:7935:8766"] = true,
 					["1485:5861:6652:7937:8767"] = true,
+					["1472:5861:6652:7935:8766"] = true,
+					["1468:5865:6652:7937:8766"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[7407] = {
 				["instance_difficulty_id"] = 0,
@@ -2676,8 +2695,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1693:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[6388] = {
 				["instance_difficulty_id"] = 0,
@@ -2685,8 +2704,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[199045] = {
 				["instance_difficulty_id"] = 0,
@@ -2694,8 +2713,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["42:1692:7969"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[192012] = {
 				["instance_difficulty_id"] = 36,
@@ -2705,8 +2724,8 @@ WoWDBProfilerData = {
 					["40:1472:5861:7937:8766"] = true,
 					["1478:5865:6652:7936:8767"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[6412] = {
 				["instance_difficulty_id"] = 1,
@@ -2714,8 +2733,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[7447] = {
 				["instance_difficulty_id"] = 1,
@@ -2723,8 +2742,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1681:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[9787] = {
 				["instance_difficulty_id"] = 0,
@@ -2732,8 +2751,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1691:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[7459] = {
 				["instance_difficulty_id"] = 1,
@@ -2741,8 +2760,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1695:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[9803] = {
 				["instance_difficulty_id"] = 1,
@@ -2750,8 +2769,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1693:6654"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[9811] = {
 				["instance_difficulty_id"] = 0,
@@ -2759,8 +2778,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1708:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[9819] = {
 				["instance_difficulty_id"] = 0,
@@ -2768,8 +2787,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1708:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[18647] = {
 				["instance_difficulty_id"] = 14,
@@ -2777,8 +2796,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[200070] = {
 				["instance_difficulty_id"] = 11,
@@ -2786,8 +2805,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[176414] = {
 				["instance_difficulty_id"] = 9,
@@ -2795,8 +2814,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6656"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[12992] = {
 				["instance_difficulty_id"] = 1,
@@ -2804,8 +2823,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6659"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[9955] = {
 				["instance_difficulty_id"] = 1,
@@ -2815,8 +2834,8 @@ WoWDBProfilerData = {
 					["1709:6654"] = true,
 					["1695:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[9963] = {
 				["instance_difficulty_id"] = 0,
@@ -2824,8 +2843,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1681:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[200072] = {
 				["instance_difficulty_id"] = 36,
@@ -2833,8 +2852,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[199177] = {
 				["instance_difficulty_id"] = 14,
@@ -2842,8 +2861,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[106430] = {
 				["instance_difficulty_id"] = 0,
@@ -2851,8 +2870,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["165:6655"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[200073] = {
 				["instance_difficulty_id"] = 11,
@@ -2860,8 +2879,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[13128] = {
 				["instance_difficulty_id"] = 0,
@@ -2869,8 +2888,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6658"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[6572] = {
 				["instance_difficulty_id"] = 0,
@@ -2878,8 +2897,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1693:6655"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[10083] = {
 				["instance_difficulty_id"] = 1,
@@ -2887,8 +2906,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1709:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[14183] = {
 				["instance_difficulty_id"] = 0,
@@ -2896,8 +2915,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1705:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[10099] = {
 				["instance_difficulty_id"] = 0,
@@ -2905,8 +2924,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1693:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[10107] = {
 				["instance_difficulty_id"] = 0,
@@ -2916,8 +2935,8 @@ WoWDBProfilerData = {
 					["1681:6654"] = true,
 					["1691:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[10131] = {
 				["instance_difficulty_id"] = 1,
@@ -2925,8 +2944,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1681:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[106495] = {
 				["instance_difficulty_id"] = 0,
@@ -2934,8 +2953,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["21:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[21301] = {
 				["instance_difficulty_id"] = 11,
@@ -2943,8 +2962,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[10179] = {
 				["instance_difficulty_id"] = 0,
@@ -2952,8 +2971,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1679:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[176802] = {
 				["instance_difficulty_id"] = 0,
@@ -2961,8 +2980,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["42:1697:6908"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[10195] = {
 				["instance_difficulty_id"] = 1,
@@ -2970,8 +2989,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1692:6655"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[124590] = {
 				["instance_difficulty_id"] = 31,
@@ -2979,8 +2998,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["486:647:652"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[15350] = {
 				["instance_difficulty_id"] = 0,
@@ -2988,8 +3007,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1678:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[188056] = {
 				["instance_difficulty_id"] = 26,
@@ -2997,8 +3016,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1475:6652"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[198542] = {
 				["instance_difficulty_id"] = 28,
@@ -3007,8 +3026,8 @@ WoWDBProfilerData = {
 					["1414:5868:6652:8766"] = true,
 					["1420:5865:6652:8766"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[8261] = {
 				["instance_difficulty_id"] = 1,
@@ -3016,8 +3035,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[190487] = {
 				["instance_difficulty_id"] = 13,
@@ -3025,8 +3044,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["8800:8851:8852"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[197009] = {
 				["instance_difficulty_id"] = 14,
@@ -3034,8 +3053,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[10371] = {
 				["instance_difficulty_id"] = 1,
@@ -3043,8 +3062,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[191384] = {
 				["instance_difficulty_id"] = 0,
@@ -3052,8 +3071,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[198673] = {
 				["instance_difficulty_id"] = 11,
@@ -3061,8 +3080,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[182561] = {
 				["instance_difficulty_id"] = 11,
@@ -3070,8 +3089,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6652:6706"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[197139] = {
 				["instance_difficulty_id"] = 11,
@@ -3079,8 +3098,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[197395] = {
 				["instance_difficulty_id"] = 11,
@@ -3088,8 +3107,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[4766] = {
 				["instance_difficulty_id"] = 14,
@@ -3097,8 +3116,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[19048] = {
 				["instance_difficulty_id"] = 1,
@@ -3106,8 +3125,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[24211] = {
 				["instance_difficulty_id"] = 3,
@@ -3115,8 +3134,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[4790] = {
 				["instance_difficulty_id"] = 14,
@@ -3124,8 +3143,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[4794] = {
 				["instance_difficulty_id"] = 14,
@@ -3133,8 +3152,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[3428] = {
 				["instance_difficulty_id"] = 14,
@@ -3142,8 +3161,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[1716] = {
 				["instance_difficulty_id"] = 0,
@@ -3151,11 +3170,39 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6658"] = true,
 				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[198960] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1488:6652:8766:8815:8978"] = true,
+					["1507:6652:8767:8819:8822:8959:8977"] = true,
+				},
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
 			[12697] = {
 				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[198961] = {
+				["instance_difficulty_id"] = 74,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1488:6652:8766:8815:8978"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[201054] = {
+				["instance_difficulty_id"] = 11,
 				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
 					["0"] = true,
@@ -3169,8 +3216,17 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[200286] = {
+				["instance_difficulty_id"] = 26,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1485:5864:6652:8767"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[14783] = {
 				["instance_difficulty_id"] = 0,
@@ -3178,8 +3234,17 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[3202] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[863] = {
 				["instance_difficulty_id"] = 1,
@@ -3187,14 +3252,32 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1692:6655"] = true,
 				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[12719] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[194476] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[176936] = {
+			[168035] = {
 				["instance_difficulty_id"] = 9,
-				["upgrade_value"] = 2,
+				["upgrade_value"] = 0,
 				["seen_bonuses"] = {
-					["6656"] = true,
+					["0"] = true,
 				},
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
@@ -3205,8 +3288,8 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["1708:6655"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
 			[116474] = {
 				["instance_difficulty_id"] = 1,
@@ -3214,21 +3297,21 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["95:517:6655"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
-			[3047] = {
-				["instance_difficulty_id"] = 0,
+			[10126] = {
+				["instance_difficulty_id"] = 1,
 				["upgrade_value"] = 2,
 				["seen_bonuses"] = {
-					["6654"] = true,
+					["1705:6654"] = true,
 				},
-				["unique_id"] = 0,
 				["suffix_id"] = 0,
+				["unique_id"] = 0,
 			},
-			[174464] = {
-				["instance_difficulty_id"] = 9,
-				["upgrade_value"] = 0,
+			[187101] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
@@ -3241,2718 +3324,10 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
-				["suffix_id"] = 0,
 				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
 			[176417] = {
-				["instance_difficulty_id"] = 9,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6656"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[187087] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[199018] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1768:6652:7937:7968:8783"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[199688] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[188752] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[187083] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[9804] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1677:6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[198331] = {
-				["instance_difficulty_id"] = 13,
-				["upgrade_value"] = 3,
-				["seen_bonuses"] = {
-					["4785:7936:8802:8837:8838"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[187090] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[197374] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[199830] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[18649] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[16850] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[127792] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[127856] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[9876] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1681:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[9884] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1708:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[198132] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[33154] = {
-				["instance_difficulty_id"] = 22,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[176430] = {
-				["instance_difficulty_id"] = 9,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6656"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[9916] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1691:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[199192] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[199040] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1707:6652:7969"] = true,
-					["1678:6652:7969"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[197402] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[194369] = {
-				["instance_difficulty_id"] = 26,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["7963"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[15267] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1695:6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[122486] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[192799] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[127793] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[192032] = {
-				["instance_difficulty_id"] = 17,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6652:9156"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[197123] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[55297] = {
-				["instance_difficulty_id"] = 2,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1715:6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[191393] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[194383] = {
-				["instance_difficulty_id"] = 26,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["7963"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[194441] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[55425] = {
-				["instance_difficulty_id"] = 2,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1677:6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[197020] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[15167] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1681:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[199039] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1697:6652:7969"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[199759] = {
-				["instance_difficulty_id"] = 25,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["1472"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[194885] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[14176] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1680:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[21191] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[11980] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1678:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[169400] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["1697:4796"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[12162] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[194963] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[192031] = {
-				["instance_difficulty_id"] = 26,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["1462:5868:6652:8766"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[8143] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[193569] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[16048] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[196989] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[10172] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1694:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[192797] = {
-				["instance_difficulty_id"] = 25,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["1462:5861:6652:8766"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[191140] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[10196] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1706:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[191363] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[201754] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[114325] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["151"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[90839] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[36532] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1679:6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[10244] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1681:6654"] = true,
-					["1680:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[198991] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1681:6652:7936:7968"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[176947] = {
-				["instance_difficulty_id"] = 9,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6656"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[175566] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1695:6907"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[116517] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["197:6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[201817] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[8246] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[3202] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[197152] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[201434] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[176948] = {
-				["instance_difficulty_id"] = 9,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6656"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[8286] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[127796] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[176309] = {
-				["instance_difficulty_id"] = 9,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6656"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[90840] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[8318] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[197153] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[193212] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[15557] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1681:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[36525] = {
-				["instance_difficulty_id"] = 2,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1695:6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[15519] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1692:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[9911] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1678:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[15912] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1680:6655"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[200095] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[15677] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1693:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[24964] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1678:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[198582] = {
-				["instance_difficulty_id"] = 27,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["1478:5865:6652:8767:8816:8978"] = true,
-					["40:1485:5854:8767:8978"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[10226] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1678:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[15583] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1691:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[8314] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[197922] = {
-				["instance_difficulty_id"] = 27,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["1465:5865:6652:8766"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[202142] = {
-				["instance_difficulty_id"] = 36,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[9855] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1705:6654"] = true,
-					["1708:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[188016] = {
-				["instance_difficulty_id"] = 26,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["1475:6652"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[25296] = {
-				["instance_difficulty_id"] = 2,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1693:6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[10176] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1692:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[36016] = {
-				["instance_difficulty_id"] = 2,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1678:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[15655] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1678:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[188046] = {
-				["instance_difficulty_id"] = 26,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["43:1475"] = true,
-					["1475:6652"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[7916] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[179332] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1714:6652:6908"] = true,
-					["1680:6652:6908"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[15246] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1694:6655"] = true,
-					["1678:6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[11603] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6710"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[199037] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1713:6652:7969"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[8134] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[10168] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1705:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[15194] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1680:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[188049] = {
-				["instance_difficulty_id"] = 26,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["1475:6652"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[4072] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[14795] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[177736] = {
-				["instance_difficulty_id"] = 9,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6656"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[177789] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1679:6652:6907"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[9865] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1678:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[193705] = {
-				["instance_difficulty_id"] = 17,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6652:7975:7978:8816"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[13013] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6658"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[182690] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6652:6908"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[201250] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[3208] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1706:6655"] = true,
-					["1677:6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[12719] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[67122] = {
-				["instance_difficulty_id"] = 2,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6658"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[192010] = {
-				["instance_difficulty_id"] = 25,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["1465:5861:6652:8766"] = true,
-					["1462:5861:6652:8766"] = true,
-					["1485:5848:6652:8766"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[6393] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[192094] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[127783] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[32749] = {
-				["instance_difficulty_id"] = 3,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[173424] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[15228] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1677:6655"] = true,
-					["1692:6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[6417] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[7522] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1691:6654"] = true,
-					["1692:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[187569] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[186150] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1697:7453"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[7476] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1693:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[6422] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[9805] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1677:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[12979] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6658"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[200613] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[198695] = {
-				["instance_difficulty_id"] = 37,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["1433:5855:6652:8766"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[200515] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[197928] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[175550] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1686:6907"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[116580] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["35:6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[14569] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[21945] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[9885] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1693:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[18650] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[15568] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1692:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[42378] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[16055] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[7524] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1680:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[187572] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[120302] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[194477] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[81989] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1688:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[9965] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1691:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[13015] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6659"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[12027] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1706:6654"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[7472] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1708:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[13066] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6658"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[193225] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[194478] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[109167] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[187573] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 0,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[200707] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[4294] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[194095] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[7453] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[36676] = {
-				["instance_difficulty_id"] = 2,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1705:6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[194479] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[16825] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[198855] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[123858] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[8279] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[10317] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[197003] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[8255] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[194480] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[55542] = {
-				["instance_difficulty_id"] = 22,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1713:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[6400] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[2879] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6659"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[7484] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1692:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[15275] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1707:6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[201386] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[10197] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1695:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[201387] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[10185] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1694:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[201092] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[197934] = {
-				["instance_difficulty_id"] = 30,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["1427:5864:6652:8767"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[6609] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1706:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[194098] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[199341] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[194353] = {
-				["instance_difficulty_id"] = 25,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["8768"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[194482] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[10121] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1692:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[198985] = {
-				["instance_difficulty_id"] = 17,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1690:6652:7968"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[8247] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[10301] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[8263] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[201388] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[15440] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1709:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[8287] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[10377] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1681:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[114313] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["25"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[8311] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[10122] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1709:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[199215] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[169412] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["1691:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[200069] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[15263] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1693:6655"] = true,
-					["1681:6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[7440] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1681:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[200878] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[13490] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[199046] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1680:6652:7969"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[7494] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1709:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[175551] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1712:6907"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[176966] = {
-				["instance_difficulty_id"] = 2,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1716:6652:6907"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[15283] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1693:6655"] = true,
-					["1692:6655"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[200751] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[4731] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[4735] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[2883] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[127805] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[18710] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[6431] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[15640] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1694:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[36560] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1694:6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[199047] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1680:6652:7969"] = true,
-					["1679:6652:7969"] = true,
-					["1689:6652:7969"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[8125] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[42365] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[188009] = {
-				["instance_difficulty_id"] = 26,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["1475:6652:7579"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[188053] = {
-				["instance_difficulty_id"] = 26,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["1475:6652:7579"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[36240] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1691:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[200457] = {
-				["instance_difficulty_id"] = 25,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["1472"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[128310] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[194743] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[188033] = {
-				["instance_difficulty_id"] = 26,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["40:1475:7578"] = true,
-					["1475:6652:7578"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[10104] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1691:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[127806] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[177793] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1698:6652:6907"] = true,
-					["1689:6652:6907"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[188042] = {
-				["instance_difficulty_id"] = 26,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["41:1475"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[127779] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[176803] = {
-				["instance_difficulty_id"] = 2,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1684:6652:6908"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[188021] = {
-				["instance_difficulty_id"] = 26,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["1475:6652"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[177798] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1690:6652:6654"] = true,
-					["1681:6652:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[169425] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1677:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[188041] = {
-				["instance_difficulty_id"] = 26,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["1475:6652"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[201394] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[200499] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[198581] = {
-				["instance_difficulty_id"] = 25,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["1472:5864:6652:7937:8766:8816:8978"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[13022] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6659"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[14825] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[176773] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1695:6652:6907"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[177808] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["42:1683:6908"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[36689] = {
-				["instance_difficulty_id"] = 2,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1705:6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[179593] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1694:6652:6911:7575"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[177805] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1710:6652:6908"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[200628] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[87565] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[9774] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1692:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[52377] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[95057] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[9798] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1705:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[201396] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[191294] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[199049] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1686:6652:7969"] = true,
-					["1712:6652:7969"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[82065] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1694:6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[198989] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1694:6652:7968"] = true,
-					["1685:6652:7968"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[18653] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[116491] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["47:517:6655"] = true,
-					["117:517:6655"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[9862] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1677:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[10260] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1679:6654"] = true,
-					["1681:6654"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[178951] = {
-				["instance_difficulty_id"] = 17,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1681:6652:6908"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[198584] = {
-				["instance_difficulty_id"] = 26,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["1472:5864:6652:8766:8813:8978"] = true,
-					["1475:5864:6652:8767:8813:8978"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[201781] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[9902] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1681:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[9910] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1692:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[7611] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[176765] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1677:6652:6907"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[192191] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[199023] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1692:6652:7969"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[198585] = {
-				["instance_difficulty_id"] = 28,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["1481:5858:6652:8767:8978"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[197954] = {
-				["instance_difficulty_id"] = 29,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["1472:5864:6652:8766"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[171445] = {
-				["instance_difficulty_id"] = 13,
-				["upgrade_value"] = 4,
-				["seen_bonuses"] = {
-					["6893"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[192791] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[197623] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[12036] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1707:6654"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[12044] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1692:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[12684] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[199022] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1682:6652:7969"] = true,
-					["1697:6652:7969"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[201783] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[3023] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[3025] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[175569] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1698:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[82286] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1709:6655"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[10062] = {
-				["instance_difficulty_id"] = 0,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1706:6654"] = true,
-					["1694:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[25239] = {
-				["instance_difficulty_id"] = 3,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1695:6655"] = true,
-				},
-				["suffix_id"] = 0,
-				["unique_id"] = 0,
-			},
-			[198587] = {
-				["instance_difficulty_id"] = 25,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["1472:5864:6652:7936:8766:8814:8978"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[201784] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[177756] = {
 				["instance_difficulty_id"] = 9,
 				["upgrade_value"] = 2,
 				["seen_bonuses"] = {
@@ -5967,6 +3342,2715 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["0"] = true,
 				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[177756] = {
+				["instance_difficulty_id"] = 9,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6656"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[199688] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[188752] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[187083] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[9804] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1677:6655"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[10062] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1694:6654"] = true,
+					["1706:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[187090] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[197374] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[199830] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[18649] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[16850] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[127792] = {
+				["instance_difficulty_id"] = 31,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[127856] = {
+				["instance_difficulty_id"] = 31,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[9876] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1681:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[9884] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1708:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[198132] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[33154] = {
+				["instance_difficulty_id"] = 22,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[176430] = {
+				["instance_difficulty_id"] = 9,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6656"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[9916] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1691:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[199192] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[199022] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1697:6652:7969"] = true,
+					["1682:6652:7969"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[197402] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[12684] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[15267] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1695:6655"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[122486] = {
+				["instance_difficulty_id"] = 31,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[192799] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[192032] = {
+				["instance_difficulty_id"] = 17,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6652:9156"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[127793] = {
+				["instance_difficulty_id"] = 31,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[197623] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[55297] = {
+				["instance_difficulty_id"] = 2,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1715:6655"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[191393] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[192791] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[171445] = {
+				["instance_difficulty_id"] = 13,
+				["upgrade_value"] = 4,
+				["seen_bonuses"] = {
+					["6893"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[55425] = {
+				["instance_difficulty_id"] = 2,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1677:6655"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[197020] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[15167] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1681:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[197954] = {
+				["instance_difficulty_id"] = 29,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1472:5864:6652:8766"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[199759] = {
+				["instance_difficulty_id"] = 25,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1472"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[199023] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1692:6652:7969"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[14176] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1680:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[21191] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[192191] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[169400] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1697:4796"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[12162] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[176765] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1677:6652:6907"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[7611] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6655"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[8143] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[193569] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[9910] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1692:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[196989] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[10172] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1694:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[192797] = {
+				["instance_difficulty_id"] = 25,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1462:5861:6652:8766"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[191140] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[10196] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1706:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[191363] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[201754] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[178951] = {
+				["instance_difficulty_id"] = 17,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1681:6652:6908"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[90839] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[10260] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1679:6654"] = true,
+					["1681:6654"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[10244] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1681:6654"] = true,
+					["1680:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[198991] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1681:6652:7936:7968"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[176947] = {
+				["instance_difficulty_id"] = 9,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6656"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[116491] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["117:517:6655"] = true,
+					["47:517:6655"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[116517] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["197:6655"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[198989] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1694:6652:7968"] = true,
+					["1685:6652:7968"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[8246] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[82065] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1694:6655"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[197152] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[199049] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1686:6652:7969"] = true,
+					["1712:6652:7969"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[176948] = {
+				["instance_difficulty_id"] = 9,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6656"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[8286] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[197153] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[176309] = {
+				["instance_difficulty_id"] = 9,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6656"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[90840] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[8318] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[127796] = {
+				["instance_difficulty_id"] = 31,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[201396] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[15557] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1681:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[95057] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[15519] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1692:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[52377] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[9774] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1692:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[200095] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[87565] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[24964] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1678:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[200628] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[177805] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1710:6652:6908"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[15583] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1691:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[179593] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1694:6652:6911:7575"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[197922] = {
+				["instance_difficulty_id"] = 27,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1465:5865:6652:8766"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[202142] = {
+				["instance_difficulty_id"] = 36,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[36689] = {
+				["instance_difficulty_id"] = 2,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1705:6655"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[177808] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["42:1683:6908"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[176773] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1695:6652:6907"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[10176] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1692:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[13022] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6659"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[15655] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1678:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[188046] = {
+				["instance_difficulty_id"] = 26,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["43:1475"] = true,
+					["1475:6652"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[200499] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[179332] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1680:6652:6908"] = true,
+					["1714:6652:6908"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[188041] = {
+				["instance_difficulty_id"] = 26,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1475:6652"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[11603] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6710"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[199037] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1713:6652:7969"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[177798] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1681:6652:6654"] = true,
+					["1690:6652:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[188021] = {
+				["instance_difficulty_id"] = 26,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1475:6652"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[176803] = {
+				["instance_difficulty_id"] = 2,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1684:6652:6908"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[127779] = {
+				["instance_difficulty_id"] = 31,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[188042] = {
+				["instance_difficulty_id"] = 26,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["41:1475"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[177793] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1689:6652:6907"] = true,
+					["1698:6652:6907"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[127806] = {
+				["instance_difficulty_id"] = 31,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[10104] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1691:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[188033] = {
+				["instance_difficulty_id"] = 26,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["40:1475:7578"] = true,
+					["1475:6652:7578"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[193705] = {
+				["instance_difficulty_id"] = 17,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6652:7975:7978:8816"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[13013] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6658"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[128310] = {
+				["instance_difficulty_id"] = 31,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[201250] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[200457] = {
+				["instance_difficulty_id"] = 25,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1472"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[36240] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1691:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[67122] = {
+				["instance_difficulty_id"] = 2,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6658"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[188053] = {
+				["instance_difficulty_id"] = 26,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1475:6652:7579"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[6393] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[188009] = {
+				["instance_difficulty_id"] = 26,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1475:6652:7579"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[42365] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[32749] = {
+				["instance_difficulty_id"] = 3,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[8125] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[199047] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1680:6652:7969"] = true,
+					["1679:6652:7969"] = true,
+					["1689:6652:7969"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[6417] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[36560] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1694:6655"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[187569] = {
+				["instance_difficulty_id"] = 31,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[186150] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1697:7453"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[6431] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[18710] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[9805] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1677:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[198695] = {
+				["instance_difficulty_id"] = 37,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1433:5855:6652:8766"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[200613] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[7476] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1693:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[200515] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[197928] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[175550] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1686:6907"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[116580] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["35:6655"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[4731] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[200751] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[9885] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1693:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[15283] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1692:6655"] = true,
+					["1693:6655"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[176966] = {
+				["instance_difficulty_id"] = 2,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1716:6652:6907"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[175551] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1712:6907"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[16055] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[7524] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1680:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[7494] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1709:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[199046] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1680:6652:7969"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[194477] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[9965] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1691:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[187572] = {
+				["instance_difficulty_id"] = 31,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[13015] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6659"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[12027] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1706:6654"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[7440] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1681:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[13066] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6658"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[15263] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1681:6655"] = true,
+					["1693:6655"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[194478] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[200069] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[187573] = {
+				["instance_difficulty_id"] = 31,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[169412] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1691:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[4294] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[194095] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[10122] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1709:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[36676] = {
+				["instance_difficulty_id"] = 2,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1705:6655"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[194479] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[16825] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[10377] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1681:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[123858] = {
+				["instance_difficulty_id"] = 31,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[15440] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1709:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[201388] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[197003] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[10301] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[194480] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[55542] = {
+				["instance_difficulty_id"] = 22,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1713:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[198985] = {
+				["instance_difficulty_id"] = 17,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1690:6652:7968"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[10121] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1692:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[7484] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1692:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[194353] = {
+				["instance_difficulty_id"] = 25,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["8768"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[201386] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[10197] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1695:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[199341] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[10185] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1694:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[6609] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1706:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[197934] = {
+				["instance_difficulty_id"] = 30,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1427:5864:6652:8767"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[201092] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[194098] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[201387] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[15275] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1707:6655"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[194482] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[2879] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6659"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[6400] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6655"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[8247] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[8255] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[8263] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[10317] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[8279] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[8287] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[198855] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[114313] = {
+				["instance_difficulty_id"] = 31,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["25"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[8311] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[7453] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[199215] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[200707] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[109167] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 0,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[193225] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[7472] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1708:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[200878] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[13490] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[81989] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1688:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[120302] = {
+				["instance_difficulty_id"] = 31,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[42378] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[15568] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1692:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[18650] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[21945] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[14569] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[4735] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[2883] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[127805] = {
+				["instance_difficulty_id"] = 31,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[12979] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6658"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[6422] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[15640] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1694:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[7522] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1692:6654"] = true,
+					["1691:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[15228] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1677:6655"] = true,
+					["1692:6655"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[173424] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[127783] = {
+				["instance_difficulty_id"] = 31,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[192094] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[192010] = {
+				["instance_difficulty_id"] = 37,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1465:5861:6652:8766"] = true,
+					["1481:5865:6652:8767"] = true,
+					["1462:5861:6652:8766"] = true,
+					["1485:5848:6652:8766"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[198451] = {
+				["instance_difficulty_id"] = 42,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1437:5864:6652:8767"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[3208] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1706:6655"] = true,
+					["1677:6655"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[182690] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6652:6908"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[194743] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[9865] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1678:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[177789] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1679:6652:6907"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[177736] = {
+				["instance_difficulty_id"] = 9,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6656"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[14795] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[4072] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[188049] = {
+				["instance_difficulty_id"] = 26,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1475:6652"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[15194] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1680:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[10168] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1705:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[8134] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6655"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[169425] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1677:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[15246] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1694:6655"] = true,
+					["1678:6655"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[201394] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[7916] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[198581] = {
+				["instance_difficulty_id"] = 25,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1472:5864:6652:7937:8766:8816:8978"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[36016] = {
+				["instance_difficulty_id"] = 2,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1678:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[14825] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6655"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[25296] = {
+				["instance_difficulty_id"] = 2,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1693:6655"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[188016] = {
+				["instance_difficulty_id"] = 26,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1475:6652"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[9855] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1708:6654"] = true,
+					["1705:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[8314] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[10226] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1678:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[198582] = {
+				["instance_difficulty_id"] = 27,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1478:5865:6652:8767:8816:8978"] = true,
+					["40:1485:5854:8767:8978"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[15677] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1693:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[15912] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1680:6655"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[9911] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1678:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[36525] = {
+				["instance_difficulty_id"] = 2,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1695:6655"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[9798] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1705:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[193212] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[191294] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[201434] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[200757] = {
+				["instance_difficulty_id"] = 25,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1572:5864:6652:7935:8766"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[201817] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[18653] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[175566] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1695:6907"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[9862] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1677:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[36532] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1679:6655"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[114325] = {
+				["instance_difficulty_id"] = 31,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["151"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[198584] = {
+				["instance_difficulty_id"] = 26,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1472:5864:6652:8766:8813:8978"] = true,
+					["1475:5864:6652:8767:8813:8978"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[201781] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[9902] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1681:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[16048] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[192031] = {
+				["instance_difficulty_id"] = 26,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1462:5868:6652:8766"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[194963] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[11980] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1678:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[194885] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[198585] = {
+				["instance_difficulty_id"] = 28,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1481:5858:6652:8767:8978"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[199039] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1697:6652:7969"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[194441] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[194383] = {
+				["instance_difficulty_id"] = 26,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["7963"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[197123] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[12036] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1707:6654"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[12044] = {
+				["instance_difficulty_id"] = 1,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1692:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[194369] = {
+				["instance_difficulty_id"] = 26,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["7963"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[199040] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1707:6652:7969"] = true,
+					["1678:6652:7969"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[201783] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[3023] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[3025] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[175569] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1698:6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[82286] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1709:6655"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[198331] = {
+				["instance_difficulty_id"] = 13,
+				["upgrade_value"] = 3,
+				["seen_bonuses"] = {
+					["4785:7936:8802:8837:8838"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[25239] = {
+				["instance_difficulty_id"] = 3,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1695:6655"] = true,
+				},
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[198587] = {
+				["instance_difficulty_id"] = 25,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["1472:5864:6652:7936:8766:8814:8978"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[201784] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[199018] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["1768:6652:7937:7968:8783"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[187087] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 1,
+				["seen_bonuses"] = {
+					["0"] = true,
+				},
 				["suffix_id"] = 0,
 				["unique_id"] = 0,
 			},
@@ -5976,32 +6060,32 @@ WoWDBProfilerData = {
 				["seen_bonuses"] = {
 					["6654"] = true,
 				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[187101] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 1,
-				["seen_bonuses"] = {
-					["0"] = true,
-				},
 				["suffix_id"] = 0,
 				["unique_id"] = 0,
 			},
-			[10126] = {
-				["instance_difficulty_id"] = 1,
-				["upgrade_value"] = 2,
-				["seen_bonuses"] = {
-					["1705:6654"] = true,
-				},
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[168035] = {
+			[174464] = {
 				["instance_difficulty_id"] = 9,
 				["upgrade_value"] = 0,
 				["seen_bonuses"] = {
 					["0"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[3047] = {
+				["instance_difficulty_id"] = 0,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6654"] = true,
+				},
+				["suffix_id"] = 0,
+				["unique_id"] = 0,
+			},
+			[176936] = {
+				["instance_difficulty_id"] = 9,
+				["upgrade_value"] = 2,
+				["seen_bonuses"] = {
+					["6656"] = true,
 				},
 				["suffix_id"] = 0,
 				["unique_id"] = 0,
@@ -6028,4 +6112,6 @@ WoWDBProfilerData = {
 			},
 		},
 	},
+	["build_num"] = 47213,
+	["version"] = 19,
 }

@@ -8,8 +8,8 @@ HandyNotes_WitheredArmyTrainingDB = {
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Galvarton - Dalaran"] = "Galvarton - Dalaran",
-		["Bathal - Argent Dawn"] = "Bathal - Argent Dawn",
 		["Neltharigos - Zul'jin"] = "Neltharigos - Zul'jin",
+		["Bathal - Argent Dawn"] = "Bathal - Argent Dawn",
 	},
 	["profiles"] = {
 		["Avisar - Dalaran"] = {
@@ -26,9 +26,9 @@ HandyNotes_WitheredArmyTrainingDB = {
 		},
 		["Galvarton - Dalaran"] = {
 		},
-		["Bathal - Argent Dawn"] = {
-		},
 		["Neltharigos - Zul'jin"] = {
+		},
+		["Bathal - Argent Dawn"] = {
 		},
 	},
 }

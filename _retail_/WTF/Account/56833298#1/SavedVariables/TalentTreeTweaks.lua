@@ -6,21 +6,21 @@ TalentTreeTweaksDB = {
 		["InspectDiff"] = {
 			["colorGreen"] = {
 				["a"] = 0.58,
-				["r"] = 0,
-				["g"] = 1,
 				["b"] = 0.3,
+				["g"] = 1,
+				["r"] = 0,
 			},
 			["colorYellow"] = {
 				["a"] = 0.75,
-				["r"] = 1,
-				["g"] = 0.67,
 				["b"] = 0,
+				["g"] = 0.67,
+				["r"] = 1,
 			},
 			["colorRed"] = {
 				["a"] = 0.5,
-				["r"] = 1,
-				["g"] = 0,
 				["b"] = 0,
+				["g"] = 0,
+				["r"] = 1,
 			},
 			["enableTalentTreeViewerDiff"] = true,
 		},
@@ -29,6 +29,37 @@ TalentTreeTweaksDB = {
 		["SearchForIds"] = {
 		},
 		["AlwaysShowGates"] = {
+		},
+		["ImportIntoCurrentLoadout"] = {
+			["defaultCheckboxState"] = false,
+			["unlockImportButton"] = true,
+		},
+		["HighlightCascadeRepurchable"] = {
+			["color"] = {
+				["a"] = 0.5,
+				["r"] = 0,
+				["g"] = 0,
+				["b"] = 1,
+			},
+		},
+		["DebugNodeInfo"] = {
+			["viragDevTool"] = true,
+			["luaBrowser"] = true,
+			["slashDump"] = false,
+			["addButtonToTable"] = true,
+			["tinspect"] = true,
+		},
+		["ExportInspectedBuild"] = {
+		},
+		["ReduceTaint"] = {
+		},
+		["RespecButtons"] = {
+		},
+		["ScaleTalentFrame"] = {
+		},
+		["UnlockRestrictions"] = {
+			["unlockInCombatSpending"] = true,
+			["unlockShareButton"] = true,
 		},
 		["TooltipIds"] = {
 			["professionTooltip"] = {
@@ -45,37 +76,6 @@ TalentTreeTweaksDB = {
 				["definitionId"] = false,
 				["entryId"] = true,
 			},
-		},
-		["HighlightCascadeRepurchable"] = {
-			["color"] = {
-				["a"] = 0.5,
-				["b"] = 1,
-				["g"] = 0,
-				["r"] = 0,
-			},
-		},
-		["UnlockRestrictions"] = {
-			["unlockShareButton"] = true,
-			["unlockInCombatSpending"] = true,
-		},
-		["ScaleTalentFrame"] = {
-		},
-		["ReduceTaint"] = {
-		},
-		["RespecButtons"] = {
-		},
-		["ExportInspectedBuild"] = {
-		},
-		["DebugNodeInfo"] = {
-			["viragDevTool"] = true,
-			["luaBrowser"] = true,
-			["slashDump"] = false,
-			["addButtonToTable"] = true,
-			["tinspect"] = true,
-		},
-		["ImportIntoCurrentLoadout"] = {
-			["defaultCheckboxState"] = false,
-			["unlockImportButton"] = true,
 		},
 	},
 }

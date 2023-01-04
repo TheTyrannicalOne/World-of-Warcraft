@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0714,
-	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 157897,
@@ -92,6 +89,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:200152::::::::70:73::25:3:43:1472:8766:1:28:2603:::::|h[Gleaming Blade of Insight]|h|r",
 		}, -- [17]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

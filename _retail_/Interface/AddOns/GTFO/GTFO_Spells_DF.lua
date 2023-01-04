@@ -190,6 +190,10 @@ GTFO.SpellID["377838"] = {
   sound = 1;
 };
 
+GTFO.SpellID["393562"] = {
+  --desc = "Lava Pool (Zhurtan the Riverboiler)";
+  sound = 1; -- Ground AOE spawned by a mob, not be ignored like other "lava pools"
+};
 
 --- *******************
 --- * Ruby Life Pools *

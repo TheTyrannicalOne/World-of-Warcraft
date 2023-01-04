@@ -16,36 +16,36 @@ DeathNoteDB = {
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Dachas - Zul'jin"] = "Dachas - Zul'jin",
 		["Bathal - Argent Dawn"] = "Bathal - Argent Dawn",
-		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
+		["Neltharigos - Zul'jin"] = "Neltharigos - Zul'jin",
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
-		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
+		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
 		["Tyranasticus - Zul'jin"] = "Tyranasticus - Zul'jin",
-		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
-		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
 		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
-		["Galvarton - Dalaran"] = "Galvarton - Dalaran",
-		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
-		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
-		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
-		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Laymonan - Zul'jin"] = "Laymonan - Zul'jin",
-		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
-		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
-		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
+		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
+		["Okona - Zul'jin"] = "Okona - Zul'jin",
+		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
+		["Laymonan - Zul'jin"] = "Laymonan - Zul'jin",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
+		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
+		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
-		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
+		["Galvarton - Dalaran"] = "Galvarton - Dalaran",
 		["Abyronterner - Zul'jin"] = "Abyronterner - Zul'jin",
-		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
+		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
 		["Jasmoney - Zul'jin"] = "Jasmoney - Zul'jin",
-		["Neltharigos - Zul'jin"] = "Neltharigos - Zul'jin",
+		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
 		["Mandles - Zul'jin"] = "Mandles - Zul'jin",
 	},
 	["profiles"] = {
@@ -79,19 +79,19 @@ DeathNoteDB = {
 		},
 		["Bathal - Argent Dawn"] = {
 		},
-		["Banesmuncy - Zul'jin"] = {
+		["Neltharigos - Zul'jin"] = {
 		},
 		["Jingojaggot - Argent Dawn"] = {
 		},
-		["Brotus - Argent Dawn"] = {
+		["Tendralas - Dalaran"] = {
 		},
 		["Tyranasticus - Zul'jin"] = {
 		},
-		["Varlouris - Dalaran"] = {
-		},
-		["Illingrath - Dalaran"] = {
-		},
 		["Shimzo - Zul'jin"] = {
+		},
+		["Brotus - Argent Dawn"] = {
+		},
+		["Tinkster - Dalaran"] = {
 		},
 		["Tyrannithal - Argent Dawn"] = {
 		},
@@ -99,46 +99,46 @@ DeathNoteDB = {
 		},
 		["Kelvalatar - Dalaran"] = {
 		},
-		["Galvarton - Dalaran"] = {
-		},
-		["Okona - Zul'jin"] = {
-		},
 		["Jingojaggot - Zul'jin"] = {
-		},
-		["Tyran - Argent Dawn"] = {
 		},
 		["Alatra - Zul'jin"] = {
 		},
-		["Serbitechna - Dalaran"] = {
+		["Varlouris - Dalaran"] = {
+		},
+		["Datgore - Zul'jin"] = {
+		},
+		["Okona - Zul'jin"] = {
+		},
+		["Guufnah - Zul'jin"] = {
 		},
 		["Fantastiburo - Zul'jin"] = {
+		},
+		["Kotalkhan - Zul'jin"] = {
+		},
+		["Laymonan - Zul'jin"] = {
 		},
 		["Shanyt - Argent Dawn"] = {
 			["searchbox_text"] = "",
 		},
-		["Laymonan - Zul'jin"] = {
-		},
-		["Kotalkhan - Zul'jin"] = {
-		},
 		["Vadder - Argent Dawn"] = {
 		},
-		["Guufnah - Zul'jin"] = {
+		["Serbitechna - Dalaran"] = {
 		},
-		["Datgore - Zul'jin"] = {
+		["Tyran - Argent Dawn"] = {
 		},
 		["Darnastris - Dalaran"] = {
 		},
 		["Rotclaugh - Dalaran"] = {
 		},
-		["Tinkster - Dalaran"] = {
+		["Galvarton - Dalaran"] = {
 		},
 		["Abyronterner - Zul'jin"] = {
 		},
-		["Tendralas - Dalaran"] = {
+		["Illingrath - Dalaran"] = {
 		},
 		["Jasmoney - Zul'jin"] = {
 		},
-		["Neltharigos - Zul'jin"] = {
+		["Banesmuncy - Zul'jin"] = {
 		},
 		["Mandles - Zul'jin"] = {
 		},

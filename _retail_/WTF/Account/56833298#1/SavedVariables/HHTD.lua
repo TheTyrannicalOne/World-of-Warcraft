@@ -46,25 +46,25 @@ HHTD_SavedVariables = {
 		["Bathal - Argent Dawn"] = {
 			["settingsMigrated"] = false,
 		},
-		["Neltharigos - Zul'jin"] = {
+		["Banesmuncy - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
 		["Jingojaggot - Argent Dawn"] = {
 			["settingsMigrated"] = false,
 		},
-		["Tendralas - Dalaran"] = {
+		["Illingrath - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
 		["Tyranasticus - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
-		["Shimzo - Zul'jin"] = {
+		["Jingojaggot - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
 		["Brotus - Argent Dawn"] = {
 			["settingsMigrated"] = false,
 		},
-		["Tinkster - Dalaran"] = {
+		["Galvarton - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
 		["Tyrannithal - Argent Dawn"] = {
@@ -76,43 +76,43 @@ HHTD_SavedVariables = {
 		["Kelvalatar - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
-		["Jingojaggot - Zul'jin"] = {
-			["settingsMigrated"] = false,
-		},
-		["Alatra - Zul'jin"] = {
-			["settingsMigrated"] = false,
-		},
 		["Varlouris - Dalaran"] = {
-			["settingsMigrated"] = false,
-		},
-		["Datgore - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
 		["Okona - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
-		["Guufnah - Zul'jin"] = {
+		["Shimzo - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
-		["Fantastiburo - Zul'jin"] = {
+		["Tyran - Argent Dawn"] = {
 			["settingsMigrated"] = false,
 		},
-		["Kotalkhan - Zul'jin"] = {
-			["settingsMigrated"] = false,
-		},
-		["Laymonan - Zul'jin"] = {
-			["settingsMigrated"] = false,
-		},
-		["Shanyt - Argent Dawn"] = {
-			["settingsMigrated"] = false,
-		},
-		["Vadder - Argent Dawn"] = {
+		["Tinkster - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
 		["Serbitechna - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
-		["Tyran - Argent Dawn"] = {
+		["Fantastiburo - Zul'jin"] = {
+			["settingsMigrated"] = false,
+		},
+		["Shanyt - Argent Dawn"] = {
+			["settingsMigrated"] = false,
+		},
+		["Laymonan - Zul'jin"] = {
+			["settingsMigrated"] = false,
+		},
+		["Kotalkhan - Zul'jin"] = {
+			["settingsMigrated"] = false,
+		},
+		["Vadder - Argent Dawn"] = {
+			["settingsMigrated"] = false,
+		},
+		["Guufnah - Zul'jin"] = {
+			["settingsMigrated"] = false,
+		},
+		["Datgore - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
 		["Darnastris - Dalaran"] = {
@@ -121,36 +121,24 @@ HHTD_SavedVariables = {
 		["Rotclaugh - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
-		["Galvarton - Dalaran"] = {
+		["Alatra - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
 		["Abyronterner - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
-		["Illingrath - Dalaran"] = {
+		["Tendralas - Dalaran"] = {
 			["settingsMigrated"] = false,
 		},
 		["Jasmoney - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
-		["Banesmuncy - Zul'jin"] = {
+		["Neltharigos - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
 		["Mandles - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
-	},
-	["namespaces"] = {
-		["Announcer"] = {
-		},
-		["CM"] = {
-		},
-		["NPH"] = {
-		},
-	},
-	["global"] = {
-		["settingsMigrated"] = false,
-		["oldNameEnableState"] = 0,
 	},
 	["profileKeys"] = {
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
@@ -168,36 +156,48 @@ HHTD_SavedVariables = {
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Dachas - Zul'jin"] = "Dachas - Zul'jin",
 		["Bathal - Argent Dawn"] = "Bathal - Argent Dawn",
-		["Neltharigos - Zul'jin"] = "Neltharigos - Zul'jin",
+		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
-		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
+		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
 		["Tyranasticus - Zul'jin"] = "Tyranasticus - Zul'jin",
-		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
-		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
+		["Galvarton - Dalaran"] = "Galvarton - Dalaran",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
-		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
-		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
-		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
-		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
-		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
-		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
-		["Laymonan - Zul'jin"] = "Laymonan - Zul'jin",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
-		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
+		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Laymonan - Zul'jin"] = "Laymonan - Zul'jin",
+		["Kotalkhan - Zul'jin"] = "Kotalkhan - Zul'jin",
+		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
+		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
+		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
-		["Galvarton - Dalaran"] = "Galvarton - Dalaran",
+		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
 		["Abyronterner - Zul'jin"] = "Abyronterner - Zul'jin",
-		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
+		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
 		["Jasmoney - Zul'jin"] = "Jasmoney - Zul'jin",
-		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
+		["Neltharigos - Zul'jin"] = "Neltharigos - Zul'jin",
 		["Mandles - Zul'jin"] = "Mandles - Zul'jin",
+	},
+	["global"] = {
+		["settingsMigrated"] = false,
+		["oldNameEnableState"] = 0,
+	},
+	["namespaces"] = {
+		["Announcer"] = {
+		},
+		["CM"] = {
+		},
+		["NPH"] = {
+		},
 	},
 }

@@ -1839,3 +1839,7 @@ Change Log:
 * Added Dragonflight spells (world)
 * Added Dragonflight spells for Vault of the Incarnates
 * Added Dragonflight spells for The Azure Vault
+
+5.0.2
+* Added Dragonflight spells (world)
+* Fixed Dragonflight spells for Vault of the Incarnates
