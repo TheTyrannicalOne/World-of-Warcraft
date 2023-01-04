@@ -1,14 +1,16 @@
 # BigWigs
 
-## [v259](https://github.com/BigWigsMods/BigWigs/tree/v259) (2022-12-22)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v258.1...v259) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
+## [v261](https://github.com/BigWigsMods/BigWigs/tree/v261) (2023-01-03)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v260...v261) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
 
 - bump version  
-- Update deDE (#1313)  
-- VaultOfTheIncarnates/ThePrimalCouncil: Add heroic and mythic times  
-- VaultOfTheIncarnates: Add some times  
-- VaultOfTheIncarnates/BroodkeeperDiurna: Include some timer tables  
-- VaultOfTheIncarnates/BroodkeeperDiurna: Mythic update  
-- VaultOfTheIncarnates/KurogGrimtotem: Mythic update  
-- VaultOfTheIncarnates/ThePrimalCouncil: Add more normal times  
-- VaultOfTheIncarnates/ThePrimalCouncil: Fix Primal Blizzard scoping  
+- VaultOfTheIncarnates/RaszagethTheStormEater: Fixes  
+- Update ruRU  
+- VaultOfTheIncarnates/RaszagethTheStormEater: Mythic updates and features  
+- VaultOfTheIncarnates/RaszagethTheStormEater: Add mythic times  
+- VaultOfTheIncarnates/KurogGrimtotem: Missed a "casting"  
+- VaultOfTheIncarnates/KurogGrimtotem: Fix normal timers  
+- Update zhTW (#1320)  
+- DragonIsles: Add version to toc  
+- VaultOfTheIncarnates/KurogGrimtotem: Fix mythic add ability counts  
+- VaultOfTheIncarnates/RaszagethTheStormEater: Add options to mark each the charge spells (Static, Fulminating, Magnetic)  

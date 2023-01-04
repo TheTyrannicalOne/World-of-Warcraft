@@ -310,6 +310,19 @@ end
 do
 local FunctionQueue, ParameterBucketQueue, ParameterSingleQueue, Config = {}, {}, {}, { PerFrame = 1 };
 local QueueIndex = 1;
+local function SetPerFrame(count)
+	Config.PerFrame = math.max(1, tonumber(count) or 1);
+	-- app.PrintDebug("FR:",Config.PerFrame)
+end
+local function Reset()
+	Config.PerFrame = 1;
+	-- when done with all functions in the queue, reset the queue index and clear the queues of data
+	QueueIndex = 1;
+	wipe(FunctionQueue);
+	wipe(ParameterBucketQueue);
+	wipe(ParameterSingleQueue);
+	-- app.PrintDebug("FR:Reset")
+end
 
 -- maybe a coroutine directly which can be restarted without needing to be re-created?
 local FunctionRunnerCoroutine = function()
@@ -320,7 +333,7 @@ local FunctionRunnerCoroutine = function()
 		perFrame = perFrame - 1;
 		params = ParameterBucketQueue[i];
 		if params then
-			-- app.PrintDebug("FRC.Run.N",i,params)
+			-- app.PrintDebug("FRC.Run.N",i,unpack(params))
 			func(unpack(params));
 		else
 			-- app.PrintDebug("FRC.Run.1",i,ParameterSingleQueue[i])
@@ -337,16 +350,14 @@ local FunctionRunnerCoroutine = function()
 	end
 	-- Run the OnEnd function if it exists
 	local OnEnd = FunctionQueue[0];
-	if OnEnd then OnEnd(); end
-	-- when done with all functions in the queue, reset the queue index and clear the queues of data
-	QueueIndex = 1;
-	-- app.PrintDebug("FRC.End",#FunctionQueue)
-	wipe(FunctionQueue);
-	wipe(ParameterBucketQueue);
-	wipe(ParameterSingleQueue);
+	if OnEnd then
+		-- app.PrintDebug("FRC.End",#FunctionQueue)
+		OnEnd();
+	end
+	Reset();
 end
 
--- Provides a utility which will process a given number of functions each frame in a queue
+-- Provides a utility which will process a given number of functions each frame in a Queue
 local FunctionRunner = {
 	-- Adds a function to be run with any necessary parameters
 	["Run"] = function(func, ...)
@@ -364,16 +375,20 @@ local FunctionRunner = {
 		QueueIndex = QueueIndex + 1;
 		StartCoroutine("FunctionRunnerCoroutine", FunctionRunnerCoroutine);
 	end,
-	-- Defines how many functions will be executed per frame
-	["SetPerFrame"] = function(count)
-		Config.PerFrame = math.max(1, tonumber(count) or 1);
-		-- app.PrintDebug("FR:",Config.PerFrame)
-	end,
 	-- Set a function to be run once the queue is empty. This function takes no parameters.
 	["OnEnd"] = function(func)
 		FunctionQueue[0] = func;
 	end,
 };
+
+-- Defines how many functions will be executed per frame. Executes via the FunctionRunner when encountered in the Queue, unless specified as 'instant'
+FunctionRunner.SetPerFrame = function(count, instant)
+	if instant then
+		SetPerFrame(count);
+	else
+		FunctionRunner.Run(SetPerFrame, count);
+	end
+end
 
 app.FunctionRunner = FunctionRunner;
 end
@@ -1138,8 +1153,8 @@ GameTooltipModel:SetBackdropBorderColor(1, 1, 1, 1);
 GameTooltipModel:SetBackdropColor(0, 0, 0, 1);
 GameTooltipModel.Models = {};
 GameTooltipModel.Model = CreateFrame("DressUpModel", nil, GameTooltipModel);
-GameTooltipModel.Model:SetPoint("TOPLEFT", GameTooltipModel ,"TOPLEFT", 4, -4)
-GameTooltipModel.Model:SetPoint("BOTTOMRIGHT", GameTooltipModel ,"BOTTOMRIGHT", -4, 4)
+GameTooltipModel.Model:SetPoint("TOPLEFT", GameTooltipModel, "TOPLEFT", 4, -4)
+GameTooltipModel.Model:SetPoint("BOTTOMRIGHT", GameTooltipModel, "BOTTOMRIGHT", -4, 4)
 GameTooltipModel.Model:SetFacing(MODELFRAME_DEFAULT_ROTATION);
 GameTooltipModel.Model:SetScript("OnUpdate", function(self, elapsed)
 	self:SetFacing(self:GetFacing() + elapsed);
@@ -1148,8 +1163,8 @@ GameTooltipModel.Model:Hide();
 
 for i=1,MAX_CREATURES_PER_ENCOUNTER do
 	model = CreateFrame("DressUpModel", "ATTGameTooltipModel" .. i, GameTooltipModel);
-	model:SetPoint("TOPLEFT", GameTooltipModel ,"TOPLEFT", 4, -4);
-	model:SetPoint("BOTTOMRIGHT", GameTooltipModel ,"BOTTOMRIGHT", -4, 4);
+	model:SetPoint("TOPLEFT", GameTooltipModel, "TOPLEFT", 4, -4);
+	model:SetPoint("BOTTOMRIGHT", GameTooltipModel, "BOTTOMRIGHT", -4, 4);
 	model:SetCamDistanceScale(1.7);
 	model:SetDisplayInfo(987);
 	model:SetFacing(MODELFRAME_DEFAULT_ROTATION);
@@ -5328,7 +5343,6 @@ app.FillGroups = function(group)
 	knownSkills = app.CurrentCharacter.Professions;
 	-- Check if this group is inside a Window or not
 	isInWindow = app.RecursiveFirstDirectParentWithField(group, "window") and true;
-	app.FunctionRunner.SetPerFrame(1);
 
 	-- app.PrintDebug("FillGroups",group.hash,group.__type,"window?",isInWindow)
 
@@ -5350,6 +5364,7 @@ app.BuildCost = function(group)
 				["text"] = L["COST"],
 				["description"] = L["COST_DESC"],
 				["icon"] = "Interface\\Icons\\INV_Misc_Coin_02",
+				["sourceIgnored"] = true,
 				["OnUpdate"] = app.AlwaysShowUpdate,
 				["g"] = {},
 			};
@@ -5366,11 +5381,12 @@ app.BuildCost = function(group)
 				costItem = CloneData(costItem);
 				costItem.g = nil;
 				costItem.collectible = false;
+				costItem.count = c[3];
 				-- if c[3] then
-				-- 	costItem.total = c[3];
-				-- 	if group.collected then
-				-- 		costItem.progress = c[3];
-				-- 	end
+					-- if group.collected then
+					-- 	-- alternatively have count minus from item count in bags/bank... or something?
+					-- 	costItem.progress = c[3];
+					-- end
 				-- end
 				costItem.OnUpdate = app.AlwaysShowUpdate;
 				NestObject(costGroup, costItem);
@@ -6104,7 +6120,7 @@ fieldConverters = {
 	end,
 	["headerID"] = function(group, value)
 		-- WARNING: DEV ONLY START
-		if not L["HEADER_NAMES"][value] then
+		if not group.type and not L["HEADER_NAMES"][value] then
 			print("Header Missing Name ", value);
 			L["HEADER_NAMES"][value] = "Header #" .. value;
 		end
@@ -7745,7 +7761,7 @@ app.RequestLoadQuestByID = function(questID, data)
 	-- only allow requests once per frame until received
 	if not QuestsRequested[questID] then
 		-- there's some limit to quest data checking that causes d/c... not entirely sure what or how much
-		app.FunctionRunner.SetPerFrame(10);
+		app.FunctionRunner.SetPerFrame(10, true);
 		-- app.PrintDebug("RequestLoadQuestByID",questID,"Data:",data)
 		QuestsRequested[questID] = true;
 		if data then
@@ -9584,7 +9600,9 @@ local function default_link(t)
 end
 local CollectedSpeciesHelper = setmetatable({}, {
 	__index = function(t, key)
-		if C_PetJournal_GetNumCollectedInfo(key) > 0 then
+		-- this returns nil for non-existent speciesID, which may be in unsorted
+		local numCollected = C_PetJournal_GetNumCollectedInfo(key);
+		if numCollected and numCollected > 0 then
 			rawset(t, key, 1);
 			return 1;
 		end
@@ -10368,7 +10386,7 @@ local function ColorizeStandingText(standingID, text)
 end
 -- Returns StandingText or Requested Standing colorzing the 'Standing' text for the Faction, or otherwise the provided 'textOverride'
 app.GetCurrentFactionStandingText = function(factionID, requestedStanding, textOverride)
-	local standing , maxStanding, isRenown = GetCurrentFactionStandings(factionID, requestedStanding);
+	local standing, maxStanding, isRenown = GetCurrentFactionStandings(factionID, requestedStanding);
 	if isRenown then
 		return Colorize(sformat(COVENANT_RENOWN_LEVEL_TOAST, standing), app.Colors.Renown);
 	end
@@ -12937,6 +12955,43 @@ fields.repeatable = npcFields.repeatableAsQuest;
 fields.saved = fields.savedAsQuest;
 app.BaseNPCWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseNPCWithAchievementAndQuest");
 
+local HeaderTypeAbbreviations = {
+	["a"] = "achievementID",
+	["m"] = "mapID",
+	["i"] = "itemID",
+	["q"] = "questID",
+	["s"] = "spellID",
+};
+-- Alternate functions to attach data into a table based on an id for a given type code
+local AlternateDataTypes = {
+	["c"] = function(t, id)
+		local name = GetCategoryInfo(id);
+		t.name = name;
+	end,
+};
+local cache = app.CreateCache("headerCode");
+local function CacheInfo(t, field)
+	local type = t.type;
+	if not type then return; end
+	local id = t.headerID;
+	local _t = cache.GetCached(t);
+	local altFunc = AlternateDataTypes[type];
+	if altFunc then
+		altFunc(_t, id);
+	else
+		local typeID = HeaderTypeAbbreviations[type] or type;
+		local obj = app.SearchForObject(typeID, id) or CreateObject({[typeID]=id});
+		if obj then
+			-- app.PrintDebug("Automatic Header",obj.name or obj.link)
+			_t.name = obj.name or obj.link;
+			_t.icon = obj.icon;
+		else
+			app.print("Failed finding object/function for automatic header",t.headerCode);
+		end
+	end
+	if field then return _t[field]; end
+end
+
 -- Header Lib
 local headerFields = {
 	["key"] = function(t)
@@ -12982,6 +13037,27 @@ fields.icon = headerFields.iconAsAchievement;
 fields.saved = headerFields.savedAsQuest;
 fields.trackable = headerFields.trackableAsQuest;
 app.BaseHeaderWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseHeaderWithAchievementAndQuest");
+-- Automatic Type Header
+local fields = RawCloneData(headerFields, {
+	["headerCode"] = function(t)
+		if t.type then
+			return t.type..t.headerID;
+		else
+			return t.headerID;
+		end
+	end,
+	["name"] = function(t)
+		return cache.GetCachedField(t, "name", CacheInfo);
+	end,
+	["icon"] = function(t)
+		return cache.GetCachedField(t, "icon", CacheInfo) or 4555017;
+	end,
+});
+fields.description = nil;
+app.BaseAutomaticHeader = app.BaseObjectFields(fields, "BaseAutomaticHeader");
+app.CreateHeader = function(id, t)
+	return setmetatable(constructor(id, t, "headerID"), app.BaseAutomaticHeader);
+end
 app.CreateNPC = function(id, t)
 	if t then
 		-- TEMP: clean MoH tagging from random Vendors
@@ -14389,6 +14465,20 @@ app.RecursiveFirstParentWithFieldValue = function(group, field, value)
 		end
 	end
 end
+-- Cleans any groups which are nested under 'Source Ignored' content
+app.CleanSourceIgnoredGroups = function(groups)
+	if groups then
+		local parentCheck = app.RecursiveFirstParentWithField;
+		local refined = {};
+		for _,j in ipairs(groups) do
+			if not parentCheck(j, "sourceIgnored") then
+				tinsert(refined, j);
+			-- else print("  ",j.hash)
+			end
+		end
+		return refined;
+	end
+end
 
 -- Processing Functions
 do
@@ -15491,7 +15581,6 @@ app.Windows = {};
 app._UpdateWindows = function(force, got)
 	-- app.PrintDebug("_UpdateWindows",force,got)
 	app._LastUpdateTime = GetTimePreciseSec();
-	app.FunctionRunner.SetPerFrame(1);
 	local Run = app.FunctionRunner.Run;
 	for _,window in pairs(app.Windows) do
 		Run(window.Update, window, force, got);
@@ -17438,8 +17527,6 @@ function app:GetDataCache()
 		-- mark the top group as dynamic for the field which it used (so popouts under the dynamic header are considered unique from other dynamic popouts)
 		group.dynamic = field;
 		group.dynamic_value = value;
-		-- only perform dynamic update logic on 1 group per frame to reduce unnecessary lag
-		app.FunctionRunner.SetPerFrame(1);
 		-- run a direct update on itself after being populated if the Filler exists
 		if Filler then
 			app.FunctionRunner.Run(Filler, group);
@@ -17591,6 +17678,9 @@ function app:GetDataCache()
 			app.ToggleCacheMaps();
 			app.print(sformat(L["READY_FORMAT"], L["DYNAMIC_CATEGORY_LABEL"]));
 		end);
+
+		-- the caching of Dynamic groups takes place after all are generated and it can run more per frame
+		app.FunctionRunner.SetPerFrame(5);
 	end
 
 	-- Update the Row Data by filtering raw data (this function only runs once)
@@ -19151,7 +19241,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			end
 			wipe(self.CurrentMaps);
 			-- Get all results for this map, without any results that have been cloned into Source Ignored groups
-			results = SearchForField("mapID", self.mapID);
+			results = app.CleanSourceIgnoredGroups(SearchForField("mapID", self.mapID));
 			if results then
 				-- app.PrintDebug(#results,"Minilist Results for mapID",self.mapID)
 				-- Simplify the returned groups
@@ -21421,7 +21511,6 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 					updates["Recipes"] = nil;
 				end
 
-				app.FunctionRunner.SetPerFrame(1);
 				app.FunctionRunner.Run(UpdateLocalizedCategories, self, updates);
 				app.FunctionRunner.Run(UpdateLearnedRecipes, self, updates);
 				app.FunctionRunner.Run(UpdateData, self, updates);
@@ -21872,7 +21961,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				-- Acquire all of the world mapIDs
 				for _,pair in ipairs(worldMapIDs) do
 					local mapID = pair[1];
-					-- print("WQ.WorldMapIDs." , mapID)
+					-- print("WQ.WorldMapIDs.", mapID)
 					-- start fetching the data while other stuff is setup
 					C_QuestLine_RequestQuestLinesForMap(mapID);
 					local mapObject = app.CreateMapWithStyle(mapID);
@@ -23735,7 +23824,6 @@ app.InitDataCoroutine = function()
 				characterData[guid] = nil;
 				-- app.print("Removed & Backed up Duplicate Data of Current Character:",character.text,guid)
 			end
-			app.FunctionRunner.SetPerFrame(1);
 			for _,guid in ipairs(toClean) do
 				app.FunctionRunner.Run(cleanCharacterFunc, guid);
 			end
@@ -23950,12 +24038,12 @@ app.InitDataCoroutine = function()
 			53175,	-- The Warfront Looms (BFA Alliance Warfront Breadcrumb)
 		},
 		{
-			31977 ,	-- The Returning Champion (Horde Winterspring Pass Pet Battle Quest)
-			31975 ,	-- The Returning Champion (Alliance Winterspring Pass Pet Battle Quest)
+			31977,	-- The Returning Champion (Horde Winterspring Pass Pet Battle Quest)
+			31975,	-- The Returning Champion (Alliance Winterspring Pass Pet Battle Quest)
 		},
 		{
-			31980 ,	-- The Returning Champion (Horde Deadwind Pass Pet Battle Quest)
-			31976 ,	-- The Returning Champion (Alliance Deadwind Pass Pet Battle Quest)
+			31980,	-- The Returning Champion (Horde Deadwind Pass Pet Battle Quest)
+			31976,	-- The Returning Champion (Alliance Deadwind Pass Pet Battle Quest)
 		},
 	}) do
 		for _,questID in ipairs(questGroup) do

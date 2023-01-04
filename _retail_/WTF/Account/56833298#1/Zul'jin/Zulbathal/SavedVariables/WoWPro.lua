@@ -1,18 +1,225 @@
 
 WoWProCharDB = {
 	["EnableGrailQuestline"] = false,
-	["GuideVersion"] = {
-		["LudoGarrisonPets"] = "2022.12.15.A",
-		["FlucloTanaanJungle"] = "2022.12.15.A",
-		["LudoBringingBass"] = "2022.12.15.A",
-		["LudoBuildingsHorde"] = "2022.12.15.A",
-		["LudoFishing"] = "2022.12.15.A",
-		["LudoGarrCampaign"] = "2022.12.15.A",
+	["Guide"] = {
+		["LudoGarrisonPets"] = {
+			["total"] = 96,
+			["Version"] = "2022.12.15.A",
+			["skipped"] = {
+			},
+			["done"] = false,
+			["progress"] = 16,
+			["completion"] = {
+				"Player level exceeds step limit", -- [1]
+				"NPC Mapping completed", -- [2]
+				false, -- [3]
+				false, -- [4]
+				false, -- [5]
+				false, -- [6]
+				false, -- [7]
+				false, -- [8]
+				false, -- [9]
+				false, -- [10]
+				false, -- [11]
+				false, -- [12]
+				false, -- [13]
+				false, -- [14]
+				false, -- [15]
+				false, -- [16]
+				false, -- [17]
+				false, -- [18]
+				false, -- [19]
+				false, -- [20]
+				false, -- [21]
+				"NPC Mapping completed", -- [22]
+				false, -- [23]
+				false, -- [24]
+				false, -- [25]
+				false, -- [26]
+				"NPC Mapping completed", -- [27]
+				false, -- [28]
+				false, -- [29]
+				false, -- [30]
+				false, -- [31]
+				false, -- [32]
+				"NPC Mapping completed", -- [33]
+				false, -- [34]
+				false, -- [35]
+				false, -- [36]
+				false, -- [37]
+				false, -- [38]
+				"NPC Mapping completed", -- [39]
+				false, -- [40]
+				false, -- [41]
+				false, -- [42]
+				false, -- [43]
+				"NPC Mapping completed", -- [44]
+				false, -- [45]
+				false, -- [46]
+				false, -- [47]
+				false, -- [48]
+				false, -- [49]
+				"NPC Mapping completed", -- [50]
+				false, -- [51]
+				false, -- [52]
+				false, -- [53]
+				false, -- [54]
+				"NPC Mapping completed", -- [55]
+				false, -- [56]
+				false, -- [57]
+				false, -- [58]
+				false, -- [59]
+				"NPC Mapping completed", -- [60]
+				false, -- [61]
+				false, -- [62]
+				false, -- [63]
+				false, -- [64]
+				"NPC Mapping completed", -- [65]
+				false, -- [66]
+				false, -- [67]
+				false, -- [68]
+				false, -- [69]
+				"NPC Mapping completed", -- [70]
+				false, -- [71]
+				false, -- [72]
+				false, -- [73]
+				false, -- [74]
+				"NPC Mapping completed", -- [75]
+				false, -- [76]
+				false, -- [77]
+				false, -- [78]
+				false, -- [79]
+				"NPC Mapping completed", -- [80]
+				false, -- [81]
+				false, -- [82]
+				false, -- [83]
+				"NPC Mapping completed", -- [84]
+				false, -- [85]
+				false, -- [86]
+				false, -- [87]
+				false, -- [88]
+				"NPC Mapping completed", -- [89]
+				false, -- [90]
+				false, -- [91]
+				false, -- [92]
+				false, -- [93]
+				false, -- [94]
+				false, -- [95]
+				false, -- [96]
+			},
+		},
+		["FlucloTanaanJungle"] = {
+			["skipped"] = {
+			},
+			["completion"] = {
+			},
+			["Version"] = "2022.12.15.A",
+			["done"] = false,
+		},
+		["Dragonflight Intro"] = {
+			["total"] = 46,
+			["Version"] = "2022.12.15.A",
+			["skipped"] = {
+			},
+			["done"] = false,
+			["completion"] = {
+				"Player level exceeds step limit", -- [1]
+				65435, -- [2]
+				65437, -- [3]
+				65437, -- [4]
+				65437, -- [5]
+				65443, -- [6]
+				72256, -- [7]
+				65443, -- [8]
+				65443, -- [9]
+				65443, -- [10]
+				72256, -- [11]
+				65443, -- [12]
+				72256, -- [13]
+				65439, -- [14]
+				65439, -- [15]
+				65439, -- [16]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [17]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [18]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [19]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [20]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [21]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [22]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [23]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [24]
+				nil, -- [25]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [26]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [27]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [28]
+				"AutoCompleteQuestUpdate: complete", -- [29]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [30]
+				"AutoCompleteQuestUpdate: complete", -- [31]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [32]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [33]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [34]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [35]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [36]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [37]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [38]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [39]
+				nil, -- [40]
+				nil, -- [41]
+				nil, -- [42]
+				nil, -- [43]
+				nil, -- [44]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [45]
+				"AutoCompleteCriteria-Quest", -- [46]
+				"AutoCompleteQuestUpdate: Accept", -- [47]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [48]
+				"AutoCompleteQuestUpdate: AutoComplete", -- [49]
+				nil, -- [50]
+				nil, -- [51]
+				nil, -- [52]
+				nil, -- [53]
+				nil, -- [54]
+				nil, -- [55]
+				false, -- [56]
+			},
+			["progress"] = 41,
+		},
+		["LudoBringingBass"] = {
+			["skipped"] = {
+			},
+			["completion"] = {
+			},
+			["Version"] = "2022.12.15.A",
+			["done"] = false,
+		},
+		["LudoGarrCampaign"] = {
+			["skipped"] = {
+			},
+			["completion"] = {
+			},
+			["Version"] = "2022.12.15.A",
+			["done"] = false,
+		},
+		["LudoFishing"] = {
+			["skipped"] = {
+			},
+			["completion"] = {
+			},
+			["Version"] = "2022.12.15.A",
+			["done"] = false,
+		},
+		["LudoBuildingsHorde"] = {
+			["skipped"] = {
+			},
+			["completion"] = {
+			},
+			["Version"] = "2022.12.15.A",
+			["done"] = false,
+		},
 	},
+	["EnableGrailBreadcrumbs"] = false,
 	["EnableGrailQuestLevel"] = false,
-	["EnablePetBattles"] = true,
+	["AutoHideInsideInstances"] = true,
 	["EnableGrailCheckPrereq"] = false,
-	["DebugLevel"] = 0,
+	["EnablePetBattles"] = true,
 	["QID2Guide"] = {
 		[34315] = "LudoGarrCampaign",
 		[34347] = "LudoGarrCampaign",
@@ -210,98 +417,204 @@ WoWProCharDB = {
 		[36261] = "LudoGarrCampaign",
 		[13832] = "LudoFishing",
 		[13836] = "LudoFishing",
-		[34455] = "LudoGarrCampaign",
+		[38356] = "LudoBringingBass",
 		[36341] = "LudoGarrCampaign",
 		[35846] = "LudoGarrCampaign",
 		[38417] = "FlucloTanaanJungle",
-		[33410] = "LudoBuildingsHorde",
-		[49930] = "Ludo_AlliesH",
-		[38255] = "FlucloTanaanJungle",
-		[43323] = "LudoWowAnniversary",
+		[35842] = "LudoGarrCampaign",
+		[37890] = "FlucloTanaanJungle",
+		[35845] = "LudoGarrCampaign",
+		[35843] = "LudoGarrCampaign",
 		[34409] = "LudoGarrCampaign",
-		[29443] = "TwiDarkmoon",
-		[38441] = "FlucloTanaanJungle",
+		[35841] = "LudoGarrCampaign",
+		[34034] = "LudoGarrCampaign",
 		[39056] = "FlucloTanaanJungle",
 		[38561] = "FlucloTanaanJungle",
 		[38577] = "FlucloTanaanJungle",
 		[37060] = "LudoBuildingsHorde",
-		[37571] = "LudoBuildingsHorde",
+		[13830] = "LudoFishing",
 		[38573] = "FlucloTanaanJungle",
 		[34042] = "LudoGarrCampaign",
-		[34469] = "LudoGarrCampaign",
-		[26572] = "LudoFishing",
+		[29317] = "LudoFishing",
+		[38453] = "FlucloTanaanJungle",
 		[36645] = "LudoBuildingsHorde",
 		[29349] = "LudoFishing",
 		[36134] = "LudoGarrCampaign",
-		[34039] = "LudoGarrCampaign",
+		[13834] = "LudoFishing",
 		[35687] = "LudoGarrCampaign",
 		[38258] = "FlucloTanaanJungle",
 		[38274] = "FlucloTanaanJungle",
-		[36219] = "LudoGarrCampaign",
-		[36516] = "LudoBuildingsHorde",
-		[38213] = "FlucloTanaanJungle",
-		[37934] = "FlucloTanaanJungle",
-		[29464] = "TwiDarkmoon",
-		[6608] = "LudoFishing",
+		[36230] = "LudoBuildingsHorde",
+		[37573] = "LudoBuildingsHorde",
+		[35185] = "LudoGarrCampaign",
+		[35190] = "LudoGarrCampaign",
+		[85674.1] = "LudoGarrisonPets",
+		[34336] = "LudoGarrCampaign",
 		[29445] = "TwiDarkmoon",
 		[34314] = "LudoGarrCampaign",
 		[36342] = "LudoGarrCampaign",
-		[34450] = "LudoGarrCampaign",
-		[85677.1] = "LudoGarrisonPets",
-		[34319] = "LudoGarrCampaign",
-		[37192] = "LudoGarrCampaign",
-		[36419] = "LudoBuildingsHorde",
-		[39423] = "FlucloTanaanJungle",
-		[38223] = "FlucloTanaanJungle",
-		[39242] = "FlucloTanaanJungle",
-		[38562] = "FlucloTanaanJungle",
 		[11665] = "LudoFishing",
+		[85677.1] = "LudoGarrisonPets",
+		[39242] = "FlucloTanaanJungle",
+		[38223] = "FlucloTanaanJungle",
+		[39423] = "FlucloTanaanJungle",
+		[36419] = "LudoBuildingsHorde",
+		[37192] = "LudoGarrCampaign",
+		[34319] = "LudoGarrCampaign",
+		[38562] = "FlucloTanaanJungle",
+		[34450] = "LudoGarrCampaign",
 		[37572] = "LudoBuildingsHorde",
-		[34336] = "LudoGarrCampaign",
-		[85674.1] = "LudoGarrisonPets",
-		[35190] = "LudoGarrCampaign",
-		[35185] = "LudoGarrCampaign",
-		[37573] = "LudoBuildingsHorde",
-		[36230] = "LudoBuildingsHorde",
-		[13834] = "LudoFishing",
+		[6608] = "LudoFishing",
+		[29464] = "TwiDarkmoon",
+		[37934] = "FlucloTanaanJungle",
+		[38213] = "FlucloTanaanJungle",
+		[36516] = "LudoBuildingsHorde",
+		[36219] = "LudoGarrCampaign",
+		[34039] = "LudoGarrCampaign",
 		[36167] = "LudoGarrCampaign",
-		[38453] = "FlucloTanaanJungle",
-		[29317] = "LudoFishing",
+		[26572] = "LudoFishing",
+		[34469] = "LudoGarrCampaign",
 		[38259] = "FlucloTanaanJungle",
-		[13830] = "LudoFishing",
-		[34034] = "LudoGarrCampaign",
-		[35841] = "LudoGarrCampaign",
-		[35843] = "LudoGarrCampaign",
-		[35845] = "LudoGarrCampaign",
-		[37890] = "FlucloTanaanJungle",
-		[35842] = "LudoGarrCampaign",
-		[38356] = "LudoBringingBass",
+		[37571] = "LudoBuildingsHorde",
+		[38441] = "FlucloTanaanJungle",
+		[29443] = "TwiDarkmoon",
+		[43323] = "LudoWowAnniversary",
+		[38255] = "FlucloTanaanJungle",
+		[49930] = "Ludo_AlliesH",
+		[33410] = "LudoBuildingsHorde",
+		[34455] = "LudoGarrCampaign",
 	},
 	["Trades"] = {
+		[381363] = true,
+		[391406] = true,
+		[381364] = true,
+		[391441] = true,
+		[391460] = true,
+		[370539] = true,
+		[391502] = true,
+		[391415] = true,
+		[381365] = true,
 	},
+	["completedQIDs"] = {
+		[66111] = true,
+		[65992] = true,
+		[66508] = true,
+		[72374] = false,
+		[-85677] = true,
+		[-85685] = true,
+		[65435] = true,
+		[69914] = true,
+		[65443] = true,
+		[65993] = true,
+		[65451] = false,
+		[72375] = false,
+		[72256] = true,
+		[-85662] = true,
+		[-85686] = true,
+		[72709] = false,
+		[65994] = true,
+		[-85679] = true,
+		[66074] = false,
+		[66106] = true,
+		[65444] = true,
+		[65995] = true,
+		[8744] = true,
+		[-85656] = true,
+		[-85664] = true,
+		[70750] = false,
+		[70123] = false,
+		[-85561] = true,
+		[72068] = false,
+		[66107] = true,
+		[65996] = true,
+		[69965] = true,
+		[-79180] = true,
+		[70124] = false,
+		[8768] = true,
+		[66076] = false,
+		[69910] = true,
+		[66108] = true,
+		[65989] = true,
+		[65997] = true,
+		[65453] = false,
+		[-85650] = true,
+		[-79751] = true,
+		[66105] = true,
+		[-85674] = true,
+		[70125] = true,
+		[66196] = true,
+		[66114] = true,
+		[66001] = true,
+		[65999] = true,
+		[66101] = true,
+		[66998] = true,
+		[65990] = true,
+		[65998] = true,
+		[66000] = true,
+		[65760] = true,
+		[70648] = true,
+		[66104] = true,
+		[-85659] = true,
+		[8769] = true,
+		[66956] = true,
+		[69911] = true,
+		[72293] = true,
+		[65437] = true,
+		[70150] = true,
+		[8803] = true,
+		[69912] = true,
+		[66110] = true,
+		[65991] = true,
+		[66507] = true,
+		[70198] = true,
+		[66112] = true,
+		[72373] = false,
+		[65452] = true,
+		[-85660] = true,
+		[72708] = false,
+		[-85682] = true,
+		[66825] = true,
+		[72266] = true,
+		[65439] = true,
+	},
+	["EnableRares"] = true,
 	["GuideStack"] = {
 		"LudoGarrisonPets", -- [1]
 		"Dragonflight Intro", -- [2]
 	},
-	["EnableFlight"] = true,
-	["Rank"] = {
-	},
 	["EnableGrailQuestName"] = false,
-	["AutoHideInsideInstances"] = true,
-	["EnableGrailBreadcrumbs"] = false,
-	["BuildingLocations"] = {
-	},
+	["Enabled"] = true,
+	["SetWaypoint"] = true,
+	["EnableGrailQuestObsolete"] = false,
 	["Tradeskills"] = {
 		[182] = {
-			["skillLvl"] = 83,
+			["skillLvl"] = 13,
 			["skillMod"] = 0,
 			["name"] = "Herbalism",
-			["skillMax"] = 175,
+			["skillMax"] = 100,
 		},
 		[356] = {
 			["skillLvl"] = 1,
 			["skillMod"] = 0,
 			["name"] = "Fishing",
+			["skillMax"] = 100,
+		},
+		[794] = {
+			["skillLvl"] = 1,
+			["skillMod"] = 0,
+			["name"] = "Archaeology",
+			["skillMax"] = 450,
+		},
+		[2586] = {
+			["skillLvl"] = 1,
+			["name"] = "Legion Fishing",
+			["skillMod"] = 0,
+			["skillMax"] = 100,
+		},
+		[171] = {
+			["skillLvl"] = 1,
+			["skillMod"] = 0,
+			["name"] = "Alchemy",
 			["skillMax"] = 100,
 		},
 		[185] = {
@@ -310,249 +623,26 @@ WoWProCharDB = {
 			["name"] = "Cooking",
 			["skillMax"] = 100,
 		},
-		[2586] = {
-			["skillLvl"] = 1,
-			["skillMax"] = 100,
-			["skillMod"] = 0,
-			["name"] = "Legion Fishing",
-		},
-		[794] = {
-			["skillLvl"] = 1,
-			["skillMod"] = 0,
-			["name"] = "Archaeology",
-			["skillMax"] = 450,
-		},
-		[171] = {
-			["skillLvl"] = 1,
-			["skillMod"] = 0,
-			["name"] = "Alchemy",
-			["skillMax"] = 175,
-		},
 	},
 	["Taxi"] = {
 	},
-	["Guide"] = {
-		["LudoGarrisonPets"] = {
-			["total"] = 96,
-			["Version"] = "2022.12.15.A",
-			["skipped"] = {
-			},
-			["done"] = false,
-			["completion"] = {
-				"Player level exceeds step limit", -- [1]
-				"NPC Mapping completed", -- [2]
-				false, -- [3]
-				false, -- [4]
-				false, -- [5]
-				false, -- [6]
-				false, -- [7]
-				false, -- [8]
-				false, -- [9]
-				false, -- [10]
-				false, -- [11]
-				false, -- [12]
-				false, -- [13]
-				false, -- [14]
-				false, -- [15]
-				false, -- [16]
-				false, -- [17]
-				false, -- [18]
-				false, -- [19]
-				false, -- [20]
-				false, -- [21]
-				"NPC Mapping completed", -- [22]
-				false, -- [23]
-				false, -- [24]
-				false, -- [25]
-				false, -- [26]
-				"NPC Mapping completed", -- [27]
-				false, -- [28]
-				false, -- [29]
-				false, -- [30]
-				false, -- [31]
-				false, -- [32]
-				"NPC Mapping completed", -- [33]
-				false, -- [34]
-				false, -- [35]
-				false, -- [36]
-				false, -- [37]
-				false, -- [38]
-				"NPC Mapping completed", -- [39]
-				false, -- [40]
-				false, -- [41]
-				false, -- [42]
-				false, -- [43]
-				"NPC Mapping completed", -- [44]
-				false, -- [45]
-				false, -- [46]
-				false, -- [47]
-				false, -- [48]
-				false, -- [49]
-				"NPC Mapping completed", -- [50]
-				false, -- [51]
-				false, -- [52]
-				false, -- [53]
-				false, -- [54]
-				"NPC Mapping completed", -- [55]
-				false, -- [56]
-				false, -- [57]
-				false, -- [58]
-				false, -- [59]
-				"NPC Mapping completed", -- [60]
-				false, -- [61]
-				false, -- [62]
-				false, -- [63]
-				false, -- [64]
-				"NPC Mapping completed", -- [65]
-				false, -- [66]
-				false, -- [67]
-				false, -- [68]
-				false, -- [69]
-				"NPC Mapping completed", -- [70]
-				false, -- [71]
-				false, -- [72]
-				false, -- [73]
-				false, -- [74]
-				"NPC Mapping completed", -- [75]
-				false, -- [76]
-				false, -- [77]
-				false, -- [78]
-				false, -- [79]
-				"NPC Mapping completed", -- [80]
-				false, -- [81]
-				false, -- [82]
-				false, -- [83]
-				"NPC Mapping completed", -- [84]
-				false, -- [85]
-				false, -- [86]
-				false, -- [87]
-				false, -- [88]
-				"NPC Mapping completed", -- [89]
-				false, -- [90]
-				false, -- [91]
-				false, -- [92]
-				false, -- [93]
-				false, -- [94]
-				false, -- [95]
-				false, -- [96]
-			},
-			["progress"] = 16,
-		},
-		["FlucloTanaanJungle"] = {
-			["skipped"] = {
-			},
-			["completion"] = {
-			},
-			["Version"] = "2022.12.15.A",
-			["done"] = false,
-		},
-		["LudoBuildingsHorde"] = {
-			["skipped"] = {
-			},
-			["completion"] = {
-			},
-			["Version"] = "2022.12.15.A",
-			["done"] = false,
-		},
-		["LudoBringingBass"] = {
-			["skipped"] = {
-			},
-			["completion"] = {
-			},
-			["Version"] = "2022.12.15.A",
-			["done"] = false,
-		},
-		["LudoGarrCampaign"] = {
-			["skipped"] = {
-			},
-			["completion"] = {
-			},
-			["Version"] = "2022.12.15.A",
-			["done"] = false,
-		},
-		["LudoFishing"] = {
-			["skipped"] = {
-			},
-			["completion"] = {
-			},
-			["Version"] = "2022.12.15.A",
-			["done"] = false,
-		},
-		["Dragonflight Intro"] = {
-			["total"] = 46,
-			["Version"] = "2022.12.15.A",
-			["skipped"] = {
-			},
-			["done"] = false,
-			["progress"] = 16,
-			["completion"] = {
-				"Player level exceeds step limit", -- [1]
-				65435, -- [2]
-				65437, -- [3]
-				65437, -- [4]
-				65437, -- [5]
-				65443, -- [6]
-				72256, -- [7]
-				65443, -- [8]
-				65443, -- [9]
-				65443, -- [10]
-				72256, -- [11]
-				65443, -- [12]
-				72256, -- [13]
-				65439, -- [14]
-				65439, -- [15]
-				65439, -- [16]
-				[56] = false,
-			},
-		},
+	["GuideVersion"] = {
+		["LudoGarrisonPets"] = "2022.12.15.A",
+		["FlucloTanaanJungle"] = "2022.12.15.A",
+		["LudoBringingBass"] = "2022.12.15.A",
+		["LudoGarrCampaign"] = "2022.12.15.A",
+		["LudoFishing"] = "2022.12.15.A",
+		["LudoBuildingsHorde"] = "2022.12.15.A",
 	},
 	["EnableTreasures"] = true,
-	["completedQIDs"] = {
-		[72293] = false,
-		[66076] = false,
-		[-79180] = true,
-		[-79751] = true,
-		[-85677] = true,
-		[-85685] = true,
-		[65444] = false,
-		[65452] = false,
-		[-85650] = true,
-		[72373] = false,
-		[-85662] = true,
-		[-85674] = true,
-		[72708] = false,
-		[-85682] = true,
-		[-85686] = true,
-		[-85659] = true,
-		[72256] = true,
-		[65435] = true,
-		[-85679] = true,
-		[65439] = true,
-		[-85561] = true,
-		[65443] = true,
-		[72374] = false,
-		[70750] = false,
-		[72375] = false,
-		[65451] = false,
-		[65453] = false,
-		[69910] = false,
-		[-85656] = true,
-		[-85660] = true,
-		[-85664] = true,
-		[72068] = false,
-		[72709] = false,
-		[70123] = false,
-		[70125] = false,
-		[65437] = true,
-		[70198] = false,
-		[66074] = false,
-		[70124] = false,
-	},
+	["EnableFlight"] = true,
 	["AutoHideInsideInstancesNotify"] = true,
 	["AutoHideInCombat"] = false,
-	["EnableGrailQuestObsolete"] = false,
-	["Enabled"] = true,
+	["BuildingLocations"] = {
+	},
+	["DebugLevel"] = 0,
 	["skippedQIDs"] = {
 	},
-	["EnableRares"] = true,
+	["Rank"] = {
+	},
 }

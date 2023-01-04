@@ -639,7 +639,7 @@ function NP:PlateFade(nameplate, timeToFade, startAlpha, endAlpha)
 	end
 end
 
-function NP:UnitNPCID(unit)
+function NP:UnitNPCID(unit) -- also used by Bags.lua
 	local guid = UnitGUID(unit)
 	return guid and select(6, strsplit('-', guid)), guid
 end
@@ -814,6 +814,13 @@ function NP:NamePlateCallBack(nameplate, event, unit)
 			nameplate.widgetContainer:SetParent(nameplate.blizzPlate)
 			nameplate.widgetContainer:ClearAllPoints()
 			nameplate.widgetContainer:SetPoint('TOP', nameplate.blizzPlate.castBar, 'BOTTOM')
+		end
+
+		-- these can appear on SoftTarget nameplates and they aren't
+		-- from NAME_PLATE_UNIT_ADDED which means, they will still be shown
+		-- in some cases when the plate previously had the element
+		if nameplate.QuestIcons then
+			nameplate.QuestIcons:Hide()
 		end
 
 		-- vars that we need to keep in a nonstale state

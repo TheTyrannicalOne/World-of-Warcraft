@@ -60,18 +60,18 @@ TalentTreeTweaksDB = {
 		},
 		["ScaleTalentFrame"] = {
 		},
+		["ReduceTaint"] = {
+		},
+		["RespecButtons"] = {
+		},
+		["ExportInspectedBuild"] = {
+		},
 		["DebugNodeInfo"] = {
 			["viragDevTool"] = true,
 			["luaBrowser"] = true,
 			["slashDump"] = false,
 			["addButtonToTable"] = true,
 			["tinspect"] = true,
-		},
-		["RespecButtons"] = {
-		},
-		["ExportInspectedBuild"] = {
-		},
-		["ReduceTaint"] = {
 		},
 		["ImportIntoCurrentLoadout"] = {
 			["defaultCheckboxState"] = false,

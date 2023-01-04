@@ -1,9 +1,5 @@
 
 PetTracker_Sets = {
-	["rivalSearch"] = "",
-	["mapSearch"] = "",
-	["enemyBarY"] = 30,
-	["trackPets"] = true,
 	["rivalHistory"] = {
 		[85678] = {
 			"2a5f06ed202206000006C5708E028815317f0000064BC5EC016f20f11b0000064BC5EB", -- [1]
@@ -13,7 +9,11 @@ PetTracker_Sets = {
 			"2a5f06ed202206000006C5708E028815317f0000064BC5EC019c5820a30000064BC5B1", -- [1]
 		},
 	},
+	["mapSearch"] = "",
+	["tutorial"] = 12,
+	["trackPets"] = true,
+	["rivalSearch"] = "",
 	["enemyBarX"] = 0,
 	["hideSpecies"] = true,
-	["tutorial"] = 12,
+	["enemyBarY"] = 30,
 }

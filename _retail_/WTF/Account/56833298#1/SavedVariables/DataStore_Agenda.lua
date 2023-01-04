@@ -6,11 +6,11 @@ DataStore_AgendaDB = {
 		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
@@ -20,11 +20,11 @@ DataStore_AgendaDB = {
 		["Options"] = {
 			["WeeklyResetHour"] = 6,
 			["WeeklyResetDay"] = 2,
-			["NextWeeklyReset"] = "2023-01-03",
+			["NextWeeklyReset"] = "2023-01-10",
 		},
 		["Characters"] = {
 			["Default.Dalaran.Avisar"] = {
-				["lastUpdate"] = 1672151776,
+				["lastUpdate"] = 1672707102,
 			},
 			["Default.Dalaran.Darnastris"] = {
 				["lastUpdate"] = 1656301032,
@@ -53,17 +53,17 @@ DataStore_AgendaDB = {
 			["Default.Argent Dawn.Jingojaggot"] = {
 				["lastUpdate"] = 1664126376,
 			},
-			["Default.Argent Dawn.Brotus"] = {
-				["lastUpdate"] = 1664633234,
-			},
 			["Default.Zul'jin.Zulbathal"] = {
-				["lastUpdate"] = 1672151556,
+				["lastUpdate"] = 1672379705,
 			},
 			["Default.Dalaran.Thorinbane"] = {
 				["lastUpdate"] = 1648345057,
 			},
+			["Default.Argent Dawn.Brotus"] = {
+				["lastUpdate"] = 1664633234,
+			},
 			["Default.Argent Dawn.Shanyt"] = {
-				["lastUpdate"] = 1672204641,
+				["lastUpdate"] = 1672786407,
 			},
 		},
 	},

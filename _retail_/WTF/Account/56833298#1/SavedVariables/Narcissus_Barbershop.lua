@@ -1,12 +1,5 @@
 
 NarciBarberShopDB = {
-	["Hotkeys"] = {
-		["RotateRight"] = "D",
-		["RotateLeft"] = "A",
-		["ZoomOut"] = "S",
-		["ZoomIn"] = "W",
-	},
-	["ToggleNotification"] = true,
 	["PlayerData"] = {
 		["0CBEA15E"] = {
 			["playerName"] = "Durlok",
@@ -81,19 +74,6 @@ NarciBarberShopDB = {
 			},
 			["realmName"] = "Dalaran",
 		},
-		["0CB6231E"] = {
-			["playerName"] = "Varlouris",
-			["realmID"] = "3683",
-			["SavedLooks"] = {
-				[34] = {
-					["male"] = {
-					},
-					["female"] = {
-					},
-				},
-			},
-			["realmName"] = "Dalaran",
-		},
 		["0B9BB303"] = {
 			["playerName"] = "Darnastris",
 			["realmID"] = "3683",
@@ -107,6 +87,26 @@ NarciBarberShopDB = {
 			},
 			["realmName"] = "Dalaran",
 		},
+		["0CB6231E"] = {
+			["playerName"] = "Varlouris",
+			["realmID"] = "3683",
+			["SavedLooks"] = {
+				[34] = {
+					["male"] = {
+					},
+					["female"] = {
+					},
+				},
+			},
+			["realmName"] = "Dalaran",
+		},
 	},
+	["ToggleNotification"] = true,
 	["ToggleRandomAppearance"] = false,
+	["Hotkeys"] = {
+		["RotateRight"] = "D",
+		["RotateLeft"] = "A",
+		["ZoomOut"] = "S",
+		["ZoomIn"] = "W",
+	},
 }

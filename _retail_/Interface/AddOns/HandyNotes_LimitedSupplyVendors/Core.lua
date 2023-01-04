@@ -8,15 +8,19 @@ local db
 local defaults = { profile = { completed = false, icon_scale = 1.4, icon_alpha = 0.8 } }
 
 local continents = {
-	[12]  = true, -- Kalimdor
-	[13]  = true, -- Eastern Kingdoms
-	[101] = true, -- Outland
-	[113] = true, -- Northrend
-	[424] = true, -- Pandaria
-	[572] = true, -- Draenor
-	[619] = true, -- Broken Isles
-	[875] = true, -- Zandalar
-	[876] = true, -- Kul Tiras
+	[12]  = true,  -- Kalimdor
+	[13]  = true,  -- Eastern Kingdoms
+	[101] = true,  -- Outland
+	[113] = true,  -- Northrend
+	[424] = true,  -- Pandaria
+	[572] = true,  -- Draenor
+	[619] = true,  -- Broken Isles
+	[875] = true,  -- Zandalar
+	[876] = true,  -- Kul Tiras
+	[1645] = true, -- Torghast
+	[1647] = true, -- The Shadowlands
+	[2046] = true, -- Zereth Mortis
+	[2057] = true, -- The Dragon Isles
 }
 
 
@@ -78,7 +82,8 @@ function LimitedSupplyVendors:OnEnter(mapFile, coord)
 		tooltip:AddLine("Control-Right-click to set waypoints to every limited supply vendor recipe.", 1, 1, 1)
 	end
 
-	tooltip:AddLine("Middle-click to link recipes the NPC sells to chat.", 1, 1, 1)
+	-- Being Reworked to work better.
+	--tooltip:AddLine("Middle-click to link recipes the NPC sells to chat.", 1, 1, 1)
 
 
 	tooltip:Show()
@@ -104,6 +109,8 @@ end
 local function createAllWaypoints()
 	for mapID, coords in next, points do
 		for coord, questID in next, coords do
+		
+			--Utilize for hiding icons from vendors you have purchased from this session.
 			--if coord and (db.completed or not completedQuests[questID]) then
 			if coord then
 				createWaypoint(mapID, coord)
@@ -169,7 +176,7 @@ end
 local options = {
 	type = "group",
 	name = "Limited Supply Vendors",
-	desc = "Limited Supply Vendors Recipe Locations.",
+	desc = "Limited Supply Vendor Recipes and Locations.",
 	get = function(info) return db[info[#info]] end,
 	set = function(info, v)
 		db[info[#info]] = v

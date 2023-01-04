@@ -42,16 +42,16 @@ TalentTreeTweaksDB = {
 				["b"] = 1,
 			},
 		},
+		["ReduceTaint"] = {
+		},
+		["ExportInspectedBuild"] = {
+		},
 		["DebugNodeInfo"] = {
 			["viragDevTool"] = true,
 			["luaBrowser"] = true,
 			["slashDump"] = false,
 			["addButtonToTable"] = true,
 			["tinspect"] = true,
-		},
-		["ExportInspectedBuild"] = {
-		},
-		["ReduceTaint"] = {
 		},
 		["RespecButtons"] = {
 		},

@@ -1,6 +1,8 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0713,
+	["LastVersion"] = 2.0714,
+	["LastPlayerFullName"] = "Avisar-Dalaran",
+	["AutoSelectScales"] = true,
 	["ItemLevels"] = {
 		{
 			["ID"] = 173836,
@@ -83,15 +85,12 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:172767::::::::120:70::25:6:6387:6388:1552:4786:6516:6513:::|h[Corrupted Gladiator's Greatsword]|h|r",
 		}, -- [16]
 		{
-			["ID"] = 13006,
-			["Level"] = 35,
+			["ID"] = 116491,
+			["Level"] = 104,
 			["AlsoFitsIn"] = 16,
-			["Link"] = "|cff0070dd|Hitem:13006::::::::52:70:::1:6659:2:28:1004:9:30:::::|h[Mass of McGowan]|h|r",
+			["Link"] = "|cff1eff00|Hitem:116491::::::::60:70:::3:6655:47:517:2:9:42:28:1766:::::|h[Vinewrapped Axe of the Peerless]|h|r",
 		}, -- [17]
 	},
-	["AutoSelectScales"] = true,
-	["LastPlayerFullName"] = "Avisar-Dalaran",
-	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[120978] = {
 			["Relics"] = {
@@ -105,6 +104,7 @@ PawnOptions = {
 			["Name"] = "Ashbringer",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "PALADIN",

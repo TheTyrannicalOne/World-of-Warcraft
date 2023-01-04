@@ -1,6 +1,6 @@
 ## Interface: 100002
-## Version: 1.21
-## Title: Dark Soil
+## Version: 2.00
+## Title: Dark Soil Tillers
 ## Title-deDE: Dunkle Erde
 ## Title-esES: Tierra Oscura
 ## Title-esMX: Tierra Oscura

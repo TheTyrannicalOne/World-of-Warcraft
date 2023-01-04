@@ -18,19 +18,19 @@ HandyNotes_ArgusDB = {
 		["Bathal - Argent Dawn"] = "Bathal - Argent Dawn",
 		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
-		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
-		["Tyranasticus - Zul'jin"] = "Tyranasticus - Zul'jin",
-		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
-		["Galvarton - Dalaran"] = "Galvarton - Dalaran",
+		["Tyranasticus - Zul'jin"] = "Tyranasticus - Zul'jin",
+		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
-		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Galvarton - Dalaran"] = "Galvarton - Dalaran",
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
-		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
-		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
+		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
 		["Serbitechna - Dalaran"] = "Serbitechna - Dalaran",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
@@ -41,7 +41,7 @@ HandyNotes_ArgusDB = {
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
-		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Abyronterner - Zul'jin"] = "Abyronterner - Zul'jin",
 		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
 		["Jasmoney - Zul'jin"] = "Jasmoney - Zul'jin",
@@ -83,15 +83,15 @@ HandyNotes_ArgusDB = {
 		},
 		["Jingojaggot - Argent Dawn"] = {
 		},
-		["Illingrath - Dalaran"] = {
+		["Brotus - Argent Dawn"] = {
 		},
 		["Tyranasticus - Zul'jin"] = {
 		},
-		["Jingojaggot - Zul'jin"] = {
+		["Varlouris - Dalaran"] = {
 		},
-		["Brotus - Argent Dawn"] = {
+		["Illingrath - Dalaran"] = {
 		},
-		["Galvarton - Dalaran"] = {
+		["Shimzo - Zul'jin"] = {
 		},
 		["Tyrannithal - Argent Dawn"] = {
 		},
@@ -99,15 +99,15 @@ HandyNotes_ArgusDB = {
 		},
 		["Kelvalatar - Dalaran"] = {
 		},
-		["Varlouris - Dalaran"] = {
+		["Galvarton - Dalaran"] = {
 		},
 		["Okona - Zul'jin"] = {
 		},
-		["Shimzo - Zul'jin"] = {
+		["Jingojaggot - Zul'jin"] = {
 		},
 		["Tyran - Argent Dawn"] = {
 		},
-		["Tinkster - Dalaran"] = {
+		["Alatra - Zul'jin"] = {
 		},
 		["Serbitechna - Dalaran"] = {
 		},
@@ -129,7 +129,7 @@ HandyNotes_ArgusDB = {
 		},
 		["Rotclaugh - Dalaran"] = {
 		},
-		["Alatra - Zul'jin"] = {
+		["Tinkster - Dalaran"] = {
 		},
 		["Abyronterner - Zul'jin"] = {
 		},

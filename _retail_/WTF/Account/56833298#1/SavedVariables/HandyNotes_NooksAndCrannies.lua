@@ -14,6 +14,8 @@ HandyNotes_NooksAndCranniesDB = {
 	["profiles"] = {
 		["Shanyt - Argent Dawn"] = {
 		},
+		["Zulbathal - Zul'jin"] = {
+		},
 	},
 }
 HandyNotes_NooksAndCranniesCACHE = {

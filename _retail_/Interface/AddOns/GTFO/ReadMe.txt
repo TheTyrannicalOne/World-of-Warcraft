@@ -1833,3 +1833,9 @@ Change Log:
 * Native support for custom sounds
 * Added Dragonflight spells (world)
 * Added Dragonflight spells for Vault of the Incarnates
+
+5.0.1
+* Added an ignore option for lava pools and campfires
+* Added Dragonflight spells (world)
+* Added Dragonflight spells for Vault of the Incarnates
+* Added Dragonflight spells for The Azure Vault

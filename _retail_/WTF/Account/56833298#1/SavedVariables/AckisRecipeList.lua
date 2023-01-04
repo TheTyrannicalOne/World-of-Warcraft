@@ -69,11 +69,11 @@ ARLDB2 = {
 				},
 				["Illingrath"] = {
 				},
-				["Varlouris"] = {
-				},
 				["Galvarton"] = {
 				},
 				["Avisar"] = {
+				},
+				["Varlouris"] = {
 				},
 				["Thorinbane"] = {
 				},
@@ -124,15 +124,15 @@ ARLDB2 = {
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
 		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
 		["Tyranasticus - Zul'jin"] = "Tyranasticus - Zul'jin",
-		["Galvarton - Dalaran"] = "Galvarton - Dalaran",
-		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
-		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
+		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
+		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
+		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Kelvalatar - Dalaran"] = "Kelvalatar - Dalaran",
-		["Shimzo - Zul'jin"] = "Shimzo - Zul'jin",
-		["Tinkster - Dalaran"] = "Tinkster - Dalaran",
 		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
+		["Alatra - Zul'jin"] = "Alatra - Zul'jin",
+		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Datgore - Zul'jin"] = "Datgore - Zul'jin",
 		["Okona - Zul'jin"] = "Okona - Zul'jin",
 		["Guufnah - Zul'jin"] = "Guufnah - Zul'jin",
@@ -145,9 +145,9 @@ ARLDB2 = {
 		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
-		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
+		["Galvarton - Dalaran"] = "Galvarton - Dalaran",
 		["Abyronterner - Zul'jin"] = "Abyronterner - Zul'jin",
-		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
+		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
 		["Jasmoney - Zul'jin"] = "Jasmoney - Zul'jin",
 		["Banesmuncy - Zul'jin"] = "Banesmuncy - Zul'jin",
 		["Mandles - Zul'jin"] = "Mandles - Zul'jin",
@@ -191,11 +191,11 @@ ARLDB2 = {
 		},
 		["Tyranasticus - Zul'jin"] = {
 		},
-		["Galvarton - Dalaran"] = {
+		["Shimzo - Zul'jin"] = {
 		},
-		["Illingrath - Dalaran"] = {
+		["Brotus - Argent Dawn"] = {
 		},
-		["Alatra - Zul'jin"] = {
+		["Tinkster - Dalaran"] = {
 		},
 		["Tyrannithal - Argent Dawn"] = {
 		},
@@ -203,11 +203,11 @@ ARLDB2 = {
 		},
 		["Kelvalatar - Dalaran"] = {
 		},
-		["Shimzo - Zul'jin"] = {
-		},
-		["Tinkster - Dalaran"] = {
-		},
 		["Jingojaggot - Zul'jin"] = {
+		},
+		["Alatra - Zul'jin"] = {
+		},
+		["Varlouris - Dalaran"] = {
 		},
 		["Datgore - Zul'jin"] = {
 		},
@@ -233,11 +233,11 @@ ARLDB2 = {
 		},
 		["Rotclaugh - Dalaran"] = {
 		},
-		["Varlouris - Dalaran"] = {
+		["Galvarton - Dalaran"] = {
 		},
 		["Abyronterner - Zul'jin"] = {
 		},
-		["Brotus - Argent Dawn"] = {
+		["Illingrath - Dalaran"] = {
 		},
 		["Jasmoney - Zul'jin"] = {
 		},

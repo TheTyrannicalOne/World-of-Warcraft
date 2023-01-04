@@ -67,13 +67,13 @@ NarcissusDB = {
 	["Tutorials"] = {
 		["Domination"] = true,
 		["ExitConfirmation"] = true,
-		["Movement"] = true,
 		["NPCBrowser"] = true,
-		["SpellVisualBrowser"] = true,
+		["Movement"] = true,
+		["EquipmentSetManager"] = true,
 		["IndependentMinimapButton"] = false,
 		["NPCBrowserEntance"] = true,
 		["WeaponBrowser"] = true,
-		["EquipmentSetManager"] = true,
+		["SpellVisualBrowser"] = true,
 	},
 	["DressingRoomShowIconSelect"] = false,
 	["FadeButton"] = false,
@@ -138,12 +138,42 @@ NarciCharacterProfiles = {
 		},
 		["class"] = 2,
 	},
+	["0EB84EA0"] = {
+		["race"] = 10,
+		["name"] = "Valmagus",
+		["birth"] = 1653442802,
+		["serverID"] = "61",
+		["lastVisit"] = 1667057136,
+		["outfits"] = {
+		},
+		["class"] = 2,
+	},
+	["0CB6231E"] = {
+		["race"] = 34,
+		["name"] = "Varlouris",
+		["birth"] = 1653771638,
+		["serverID"] = "3683",
+		["lastVisit"] = 1667019575,
+		["outfits"] = {
+		},
+		["class"] = 7,
+	},
+	["0AB08C15"] = {
+		["race"] = 8,
+		["name"] = "Bathal",
+		["birth"] = 1669310426,
+		["serverID"] = "75",
+		["lastVisit"] = 1669310629,
+		["outfits"] = {
+		},
+		["class"] = 6,
+	},
 	["0CA8EB69"] = {
 		["race"] = 31,
 		["name"] = "Zulbathal",
 		["birth"] = 1652077348,
 		["serverID"] = "61",
-		["lastVisit"] = 1672151542,
+		["lastVisit"] = 1672374207,
 		["outfits"] = {
 			{
 				["s"] = "101189,95085,98375,101191,0,83203,107509,101192,95089,95106,101195,97104,0",
@@ -166,36 +196,6 @@ NarciCharacterProfiles = {
 		},
 		["class"] = 8,
 	},
-	["0AB08C15"] = {
-		["race"] = 8,
-		["name"] = "Bathal",
-		["birth"] = 1669310426,
-		["serverID"] = "75",
-		["lastVisit"] = 1669310629,
-		["outfits"] = {
-		},
-		["class"] = 6,
-	},
-	["0C1345B8"] = {
-		["race"] = 32,
-		["name"] = "Galvarton",
-		["birth"] = 1666566022,
-		["serverID"] = "3683",
-		["lastVisit"] = 1669151712,
-		["outfits"] = {
-		},
-		["class"] = 11,
-	},
-	["0CB6231E"] = {
-		["race"] = 34,
-		["name"] = "Varlouris",
-		["birth"] = 1653771638,
-		["serverID"] = "3683",
-		["lastVisit"] = 1667019575,
-		["outfits"] = {
-		},
-		["class"] = 7,
-	},
 	["0EBAD280"] = {
 		["race"] = 10,
 		["name"] = "Alatra",
@@ -206,25 +206,29 @@ NarciCharacterProfiles = {
 		},
 		["class"] = 3,
 	},
-	["071FB336"] = {
+	["0CBEA15E"] = {
 		["race"] = 8,
-		["name"] = "Brotus",
-		["birth"] = 1663525037,
-		["serverID"] = "75",
-		["lastVisit"] = 1669310296,
+		["name"] = "Durlok",
+		["birth"] = 1652077511,
+		["serverID"] = "96",
+		["lastVisit"] = 1671715619,
 		["outfits"] = {
+			{
+				["s"] = "0,94302,96928,92510,0,0,92151,91058,94306,91060,94402,94851,0",
+				["n"] = "Best I got now",
+			}, -- [1]
 		},
-		["class"] = 7,
+		["class"] = 11,
 	},
-	["0EB84EA0"] = {
-		["race"] = 10,
-		["name"] = "Valmagus",
-		["birth"] = 1653442802,
-		["serverID"] = "61",
-		["lastVisit"] = 1667057136,
+	["0C1345B8"] = {
+		["race"] = 32,
+		["name"] = "Galvarton",
+		["birth"] = 1666566022,
+		["serverID"] = "3683",
+		["lastVisit"] = 1669151712,
 		["outfits"] = {
 		},
-		["class"] = 2,
+		["class"] = 11,
 	},
 	["0EDD1AD5"] = {
 		["race"] = 70,
@@ -251,7 +255,7 @@ NarciCharacterProfiles = {
 		["name"] = "Shanyt",
 		["birth"] = 1651529834,
 		["serverID"] = "75",
-		["lastVisit"] = 1672198417,
+		["lastVisit"] = 1672786210,
 		["outfits"] = {
 			{
 				["s"] = "19684,44897,62761,24793,83202,83203,33402,33179,71940,26234,22010,0,0",
@@ -297,24 +301,20 @@ NarciCharacterProfiles = {
 		["name"] = "Avisar",
 		["birth"] = 1652077639,
 		["serverID"] = "3683",
-		["lastVisit"] = 1672151762,
+		["lastVisit"] = 1672707098,
 		["outfits"] = {
 		},
 		["class"] = 2,
 	},
-	["0CBEA15E"] = {
+	["071FB336"] = {
 		["race"] = 8,
-		["name"] = "Durlok",
-		["birth"] = 1652077511,
-		["serverID"] = "96",
-		["lastVisit"] = 1671715619,
+		["name"] = "Brotus",
+		["birth"] = 1663525037,
+		["serverID"] = "75",
+		["lastVisit"] = 1669310296,
 		["outfits"] = {
-			{
-				["s"] = "0,94302,96928,92510,0,0,92151,91058,94306,91060,94402,94851,0",
-				["n"] = "Best I got now",
-			}, -- [1]
 		},
-		["class"] = 11,
+		["class"] = 7,
 	},
 	["0DE12200"] = {
 		["race"] = 35,

@@ -829,10 +829,6 @@ for key,value in pairs({
 		[-924] = "Rede de Transporte",								-- Transport Network
 		-- SL Ardenweald/Night Fae
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
-			[-1002] = "Espírito Obediente",							-- Dutiful Spirit
-			[-1003] = "Espírito Marcial",							-- Martial Spirit
-			[-1004] = "Espírito Orgulhoso",							-- Prideful Spirit
-			[-1005] = "Espírito Indomado",							-- Untamed Spirit
 		-- SL Bastion/Kyrian
 			[-940] = "Conselho dos Ascendidos",						-- Ascended Counil
 			--TODO: [-973] = "Loyalty",								-- Loyalty
@@ -1321,6 +1317,12 @@ for key,value in pairs({
 	[182588] = "Cartaz de Procura-se",	-- Wanted Poster
 	[182947] = "O Códice de Sangue",	-- The Codex of Blood
 	[182952] = "Destroços da Bomba de Vapor",	-- Steam Pump Flotsam
+	[182953] = "Cardume de Esporosos",	-- Sporefish School
+	[182954] = "Cardume Misto Salobre",	-- Brackish Mixed School
+	[182956] = "Cardume de Platis",	-- School of Darter
+	[182957] = "Cardume Misto das Terras Altas",	-- Highland Mixed School
+	[182958] = "Cardume de Muçuns",	-- Mudfish School
+	[182959] = "Cardume de Azulinhos",	-- Bluefish School
 	[183284] = "Cartaz de Procura-se",	-- Wanted Poster
 	[183770] = "Painel de Controle de B'naar",	-- B'naar Control Console
 	[183811] = "Cartaz de Procura-se",	-- Wanted Poster
@@ -3499,6 +3501,7 @@ for key,value in pairs({
 	[380859] = "Barco de Brinquedo Morsano",	-- Tuskarr Toy Boat
 	[380860] = "Chifre de Centauro",	-- Centaur Horn
 	[380902] = "Arenas da Ferocidade",	-- Fields of Ferocity
+	[380918] = "Estátua Ornamentada Quebrada",	-- Broken Ornamented Statue
 	[380991] = "Monturo de Terra",	-- Dirt Mound
 	[381035] = "O Grande Cofre",	-- The Great Vault
 	[381045] = "Cálice do Dragão Dourado",	-- Golden Dragon Goblet
@@ -3530,10 +3533,12 @@ for key,value in pairs({
 	[381510] = "Ossos de Peixe Voador",	-- Flying Fish Bones
 	[381511] = "Cabeça de Arpão",	-- Harpoon Head
 	--TODO: [381513] = "Old Pickaxe",	-- Old Pickaxe
+	--TODO: [381514] = "Sea-Polished Basalt",	-- Sea-Polished Basalt
 	[381579] = "Pedido dos Arquivistas",	-- Archivists' Request	--TODO: this was manually translated
 	[381650] = "Pedido dos Arquivistas",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "Inscrições Fogo, Asa, Presa",	-- Fang Flap Fire Signups
 	[381661] = "Pedido dos Arquivistas",	-- Archivists' Request
+	[381662] = "Pedido dos Arquivistas",	-- Archivists' Request	--TODO: this was manually translated
 	[381663] = "Manavento para Iniciantes",	-- Manastorming For Beginners
 	[381664] = "Pedido dos Arquivistas",	-- Archivists' Request
 	[381667] = "Pedido dos Arquivistas",	-- Archivists' Request
@@ -3552,6 +3557,7 @@ for key,value in pairs({
 	[383625] = "Caixa de Peixe-brilho Fresco",	-- Case of Fresh Gleamfish
 	[384318] = "Marcador de Páginas Inconspícuo",	-- Inconspicuous Bookmark
 	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish
+	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385021] = "Ovo de Dragão Petrificado",	-- Petrified Dragon Egg
 	[385022] = "Fóssil Corroído",	-- Eroded Fossil
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console

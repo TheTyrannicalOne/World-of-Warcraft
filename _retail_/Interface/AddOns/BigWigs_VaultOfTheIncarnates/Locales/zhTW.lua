@@ -73,18 +73,18 @@ if L then
 	L.ultimate_desc = "當我們不知道首領獲得什麼元素能力時，顯示終結技能的計時器（灼熱屠殺、絕對零度、震地破裂、雷擊）。"
 	L.ultimate_bartext = "[終結] %s" -- {Spell} [Ult]
 
-	L.add_bartext = "%s [增援]" -- "{Spell} [Add]"
+	L.add_bartext = "[增援] %s" -- "{Spell} [Add]"
 
 	L.Fire = "火焰"
 	L.Frost = "冰霜"
-	L.Earth = "土地" -- check
+	L.Earth = "大地"
 	L.Storm = "風暴"
 
 	-- Fire
 	L.magma_burst = "熔岩池"
 	L.molten_rupture = "熔岩波"
 	L.searing_carnage = "火圈跳舞"
-	-- L.raging_inferno = "Soak Pools"
+	L.raging_inferno = "吸收熔岩池"
 
 	-- Frost
 	L.biting_chill = "刺骨之寒"
@@ -105,7 +105,7 @@ if L then
 	L.primal_attunement = "軟狂暴"
 
 	-- Stage 2
-	-- L.violent_upheaval = "Pillars"
+	L.violent_upheaval = "石柱"
 end
 
 L = BigWigs:NewBossLocale("Broodkeeper Diurna", "zhTW")
@@ -119,12 +119,52 @@ if L then
 	L.icy_shroud = "減速吸收盾"
 	L.broodkeepers_fury = "狂怒"
 	L.frozen_shroud = "定身吸收盾"
-	-- L.detonating_stoneslam = "Tank Soak"
+	L.detonating_stoneslam = "坦克分攤"
 end
 
 L = BigWigs:NewBossLocale("Raszageth the Storm-Eater", "zhTW")
 if L then
 	L.lighting_devastation_trigger = "深吸" -- Raszageth takes a deep breath...
+
+	-- Stage One: The Winds of Change
+	-- L.hurricane_wing = "Pushback"
+	-- L.volatile_current = "Sparks"
+	-- L.thunderous_blast = "Blast"
+	-- L.lightning_breath = "Breath"
+	-- L.lightning_strikes = "Strikes"
+	-- L.electric_scales = "Raid Damage"
+	-- L.electric_lash = "Lash"
+	-- Intermission: The Primalist Strike
+	-- L.lightning_devastation = "Breath"
+	-- L.shattering_shroud = "Heal Absorb"
+	-- Stage Two: Surging Power
+	-- L.absorb_text = "%s (%.0f%%)"
+	-- L.stormsurge = "Absorb Shield"
+	-- L.stormcharged = "Positive or Negative"
+	-- L.positive = "Positive"
+	-- L.negative = "Negative"
+	-- L.focused_charge = "Damage Buff"
+	-- L.tempest_wing = "Storm Wave"
+	-- L.fulminating_charge = "Charges"
+	-- L.fulminating_charge_debuff = "Charge"
+	-- Intermission: The Vault Falters
+	-- L.storm_break = "Teleport"
+	-- L.ball_lightning = "Balls"
+	-- L.fuses_reached = "%d |4Fuse:Fuses; Reached" -- 1 Fuse Reached, 2 Fuses Reached
+	-- Stage Three: Storm Incarnate
+	-- L.magnetic_charge = "Pull Charge"
+
+	-- L.storm_nova_cast = "Storm Nova CastBar"
+	-- L.storm_nova_cast_desc = "Cast Bar for Storm Nova"
+
+	-- L.custom_on_repeating_stormcharged = "Repeating Positive or Negative"
+	-- L.custom_on_repeating_stormcharged_desc = "Repeating Positive or Negative say messages with icons {rt1}, {rt3} to find matches to remove your debuffs."
+
+	-- L.skipped_cast = "Skipped %s (%d)"
+
+	-- L.custom_off_raidleader_devastation = "Lighting Devastation: Leader Mode"
+	-- L.custom_off_raidleader_devastation_desc = "Show a bar for the Lighting Devastation (Breath) on the other side as well."
+	-- L.breath_other = "%s [Opposite]" -- Breath on opposite platform
 end
 
 L = BigWigs:NewBossLocale("Vault of the Incarnates Trash", "zhTW")

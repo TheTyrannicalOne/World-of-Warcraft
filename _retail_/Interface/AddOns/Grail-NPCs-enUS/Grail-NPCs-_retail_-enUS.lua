@@ -1561,8 +1561,6 @@ G[1375517]='Suspicious Rubble Pile'
 G[1375972]='Wanted: Custos'
 G[1376757]='WANTED: Frigellus'
 G[1377114]='Coil of Heavy Rope'
-G[1377226]='Offering Vessel'
-G[1380859]='Tuskarr Toy Boat'
 end
 
 if release >= 42852 then
@@ -1678,109 +1676,6 @@ end
 
 if release >= 46619 then
 G[1379321]='Mysterious Paw Print'
-end
-
-if release >= 46924 then
-G[1374994]='Bluefeather Roc Egg'
-G[1375024]='Royal Coffers'
-G[1375182]='Feather-Plucker 3300 Gasket'
-G[1375183]='Feather-Plucker 3300 Bolts'
-G[1375184]='Feather-Plucker 3300 Exhaust Pipe'
-G[1375266]='Rotting Sap'
-G[1375513]='Royal Key'
-G[1376081]='Trampled Bush'
-G[1376082]='Sourbloom'
-G[1376113]='Remains of Keskahz'
-G[1376172]="On'tuq Mammoth"
-G[1376174]="On'tuq Mammoth Matriarch"
-G[1376189]='Cirrus Flowers'
-G[1376312]='Feather-Plucker 3300 Gears'
-G[1376335]='Conspicuous Crystal'
-G[1376350]='Stolen Parts'
-G[1376368]='Bluefeather Roc Egg'
-G[1376412]='Tarasek Lockbox'
-G[1376414]='Gnawed Keys'
-G[1376451]='Bronze Stopwatch'
-G[1376581]='Clan Chest'
-G[1376615]='Waywatcher Supplies'
-G[1376695]='Reptilian Eggshell'
-G[1376902]='Disturbed Sacred Soil'
-G[1376941]='The Titanic Comedy'
-G[1376944]='The Lord of the Wings'
-G[1376945]='The Red and the Black Flights'
-G[1376946]='Pride and Protodrakes'
-G[1377002]='Wildsprings Shrub'
-G[1377009]='Pile of Wind-Infused Shells'
-G[1377014]='Pile of Water-Infused Shells'
-G[1377055]='Submerged Basket'
-G[1377138]='Exhumed Spear'
-G[1377139]='Large Stone'
-G[1377189]='Orb of Primal Gales'
-G[1377197]='Pile of Wood'
-G[1377199]='Bronze Horn'
-G[1377203]='Dragon Foil'
-G[1377207]='Blood Berries'
-G[1377224]='Ancient Artifact'
-G[1377560]='Windtossed Feather'
-G[1378052]='Spider Silk Cocoon'
-G[1378474]='Handwoven Basket'
-G[1378780]='Magnificent Flower'
-G[1379204]='Missing Ward Pieces'
-G[1379252]='Draconium Deposit'
-G[1381041]='Frostbound Chest'
-G[1381102]='Serevite Deposit'
-G[1381104]='Rich Serevite Deposit'
-G[1381190]='Nokhud Spear'
-G[1381191]='Nokhud Shield'
-G[1381192]='Nokhud Axe'
-G[1381277]='Barrel of Confiscated Treats'
-G[1381296]='Horrible Mess'
-G[1381297]='Misplaced Luggage'
-G[1381515]='Hardened Serevite Deposit'
-G[1381517]='Titan-Touched Serevite Deposit'
-G[1381575]='Duck Trap Kit'
-G[1382299]='Sundered Flame Supply Crate'
-G[1383820]='Brackenhide Supply Crate'
-end
-
-if release >= 47067 then
-G[1376083]='Crate of Horseshoes'
-G[1376085]='Bundle of Pelts'
-G[1376152]='River Reeds'
-G[1376220]='Oathstone Fragment'
-G[1376919]='Oathstone Fragment'
-G[1377012]='Cindershard Coal'
-G[1377119]='Basket of Dried Fish'
-G[1377120]='Weapon Rack'
-G[1377122]='Medicinal Feralbloom'
-end
-
-if release >= 47120 then
-G[1381042]='Simmering Chest'
-end
-
-if release >= 47187 then
-G[1035591]='Temporal Dragonhead Pool'
-G[1375234]='Hardened Draconium Deposit'
-G[1376299]='Sweetsuckle'
-G[1379248]='Draconium Deposit'
-G[1379267]='Rich Draconium Deposit'
-G[1381102]='Serevite Deposit'
-G[1381103]='Serevite Deposit'
-G[1381516]='Molten Serevite Deposit'
-G[1381518]='Primal Serevite Deposit'
-G[1381687]='Discarded Note'
-G[1382029]='Disturbed Dirt'
-G[1383733]='Disturbed Dirt'
-end
-
-if release >= 47213 then
-G[1376587]="Expedition Scout's Pack"
-G[1377055]='Submerged Basket'
-G[1378175]='Strange Ice Crystal'
-G[1378176]='Drakmoss'
-G[1381102]='Serevite Deposit'
-G[1383575]='Rebel Supply Crate'
 end
 
 --	End of localized NPC names

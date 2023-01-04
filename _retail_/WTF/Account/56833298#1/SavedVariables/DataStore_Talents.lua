@@ -6,11 +6,11 @@ DataStore_TalentsDB = {
 		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
@@ -20,7 +20,7 @@ DataStore_TalentsDB = {
 		["Characters"] = {
 			["Default.Dalaran.Avisar"] = {
 				["activeSpecRole"] = "DAMAGER",
-				["lastUpdate"] = 1672151763,
+				["lastUpdate"] = 1672706776,
 				["Specializations"] = {
 					[3] = 0,
 				},
@@ -47,8 +47,8 @@ DataStore_TalentsDB = {
 					[140] = "1|182335|145|1|",
 					[170] = "2|182469|145|1|",
 					[189] = "1|182649|145|1|Marksmanship",
-					[178] = "0|182584|145|1|",
 					[157] = "2|182441|145|1|",
+					[178] = "0|182584|145|1|",
 				},
 				["activeSpecRole"] = "DAMAGER",
 				["lastUpdate"] = 1658019093,
@@ -74,21 +74,21 @@ DataStore_TalentsDB = {
 					[844] = "1|0|0|-1|",
 					[1203] = "0|0|0|-1|Complete the campaign to unlock Korayn",
 					[850] = "3|140|1|1|",
-					[866] = "3|0|0|-1|",
 					[1842] = "3|0|0|-1|",
-					[870] = "0|0|0|2|Continue the campaign to unlock Dreamweaver",
+					[866] = "3|0|0|-1|",
+					[1850] = "0|0|0|-1|",
 					[858] = "1|0|0|-1|",
 					[860] = "3|0|0|-1|",
 					[862] = "1|0|0|-1|",
 					[1838] = "1|0|0|-1|",
 					[1212] = "0|0|0|1|",
-					[994] = "1|0|0|1|",
-					[1850] = "0|0|0|-1|",
+					[1846] = "0|0|0|2|",
+					[870] = "0|0|0|2|Continue the campaign to unlock Dreamweaver",
 					[1854] = "0|0|0|-1|",
 					[1216] = "0|0|0|-1|Complete the campaign to unlock Korayn",
 					[832] = "0|0|0|2|",
 					[1215] = "0|0|0|2|Complete the campaign to unlock Korayn",
-					[835] = "0|0|0|0|Continue the campaign to unlock Dreamweaver",
+					[1843] = "0|0|0|1|",
 					[837] = "0|0|0|-1|Continue the campaign to unlock Dreamweaver",
 					[1010] = "3|178|1|0|",
 					[1848] = "0|0|0|-1|",
@@ -97,7 +97,7 @@ DataStore_TalentsDB = {
 					[829] = "0|0|0|2|",
 					[831] = "0|0|0|0|",
 					[1839] = "3|0|0|-1|",
-					[1843] = "0|0|0|1|",
+					[1213] = "0|0|0|2|",
 					[1847] = "0|0|0|0|",
 					[1851] = "0|0|0|-1|",
 					[1210] = "0|0|0|0|Complete the campaign to unlock Korayn",
@@ -116,11 +116,11 @@ DataStore_TalentsDB = {
 					[1844] = "0|0|0|-1|",
 					[995] = "3|170|1|2|",
 					[1852] = "0|0|0|2|",
-					[1213] = "0|0|0|2|",
+					[835] = "0|0|0|0|Continue the campaign to unlock Dreamweaver",
 					[1204] = "0|0|0|-1|Complete the campaign to unlock Korayn",
 					[1845] = "0|0|0|-1|",
 					[864] = "3|0|0|-1|",
-					[1846] = "0|0|0|2|",
+					[994] = "1|0|0|1|",
 					[1009] = "1|0|0|2|",
 					[834] = "0|0|0|-1|",
 					[1207] = "0|0|0|-1|",
@@ -165,37 +165,37 @@ DataStore_TalentsDB = {
 					[1834] = "0|0|0|2|",
 					[1368] = "0|0|0|-1|Continue the campaign to unlock Kleia",
 					[1310] = "0|0|0|-1|",
-					[1366] = "0|0|0|1|Continue the campaign to unlock Kleia",
+					[1303] = "0|0|0|-1|",
 					[1409] = "0|0|0|2|Complete the campaign to unlock Forgelite Prime Mikanikos",
 					[1413] = "0|0|0|0|",
 					[1417] = "0|0|0|-1|Complete the campaign to unlock Forgelite Prime Mikanikos",
-					[1311] = "0|0|0|2|",
-					[1378] = "0|0|0|-1|Continue the campaign to unlock Kleia",
-					[1303] = "0|0|0|-1|",
-					[1811] = "0|0|0|1|",
 					[1815] = "0|0|0|0|",
+					[1378] = "0|0|0|-1|Continue the campaign to unlock Kleia",
+					[1366] = "0|0|0|1|Continue the campaign to unlock Kleia",
+					[1811] = "0|0|0|1|",
+					[1311] = "0|0|0|2|",
 					[1315] = "0|0|0|1|",
 					[1373] = "0|0|0|-1|",
 					[1827] = "0|0|0|-1|",
 					[1831] = "0|0|0|1|",
 					[1835] = "0|0|0|0|",
 					[1374] = "0|0|0|2|Continue the campaign to unlock Kleia",
-					[1371] = "0|0|0|-1|",
 					[1812] = "0|0|0|-1|",
+					[1308] = "0|0|0|-1|",
 					[1410] = "0|0|0|-1|",
 					[1414] = "0|0|0|2|",
 					[1418] = "0|0|0|-1|Complete the campaign to unlock Forgelite Prime Mikanikos",
 					[1375] = "0|0|0|2|",
 					[1379] = "0|0|0|0|Complete the campaign to unlock Forgelite Prime Mikanikos",
 					[1367] = "0|0|0|-1|Continue the campaign to unlock Kleia",
-					[1308] = "0|0|0|-1|",
-					[1816] = "0|0|0|-1|",
+					[1371] = "0|0|0|-1|",
+					[1312] = "0|0|0|2|",
 					[1316] = "3|0|0|-1|",
 					[1765] = "3|141|1|2|",
 					[1828] = "0|0|0|2|",
 					[1832] = "0|0|0|-1|",
 					[1836] = "0|0|0|-1|",
-					[1312] = "0|0|0|2|",
+					[1816] = "0|0|0|-1|",
 					[1370] = "0|0|0|-1|",
 					[1407] = "0|0|0|-1|Complete the campaign to unlock Forgelite Prime Mikanikos",
 					[1411] = "0|0|0|-1|",
@@ -254,19 +254,9 @@ DataStore_TalentsDB = {
 				["Class"] = "PRIEST",
 				["lastUpdate"] = 1664126175,
 			},
-			["Default.Argent Dawn.Brotus"] = {
-				["activeSpecRole"] = "DAMAGER",
-				["lastUpdate"] = 1664633222,
-				["Specializations"] = {
-					7, -- [1]
-				},
-				["activeSpecIndex"] = 1,
-				["activeSpecName"] = "Elemental",
-				["Class"] = "SHAMAN",
-			},
 			["Default.Zul'jin.Zulbathal"] = {
 				["activeSpecRole"] = "DAMAGER",
-				["lastUpdate"] = 1672151542,
+				["lastUpdate"] = 1672380702,
 				["Specializations"] = {
 					0, -- [1]
 				},
@@ -283,6 +273,16 @@ DataStore_TalentsDB = {
 				["activeSpecIndex"] = 3,
 				["activeSpecName"] = "Protection",
 				["Class"] = "WARRIOR",
+			},
+			["Default.Argent Dawn.Brotus"] = {
+				["activeSpecRole"] = "DAMAGER",
+				["lastUpdate"] = 1664633222,
+				["Specializations"] = {
+					7, -- [1]
+				},
+				["activeSpecIndex"] = 1,
+				["activeSpecName"] = "Elemental",
+				["Class"] = "SHAMAN",
 			},
 			["Default.Argent Dawn.Shanyt"] = {
 				["Conduits"] = {
@@ -313,7 +313,7 @@ DataStore_TalentsDB = {
 					[52] = "1|181735|213|6|Fury",
 				},
 				["activeSpecRole"] = "DAMAGER",
-				["lastUpdate"] = 1672204639,
+				["lastUpdate"] = 1672786406,
 				["Specializations"] = {
 					0, -- [1]
 				},
@@ -321,8 +321,8 @@ DataStore_TalentsDB = {
 				["activeSpecName"] = "Arms",
 				["Class"] = "WARRIOR",
 				["Soulbinds"] = {
-					[1869] = "1|0|0|0|",
-					[1425] = "0|0|0|-1|",
+					[1554] = "0|0|0|1|",
+					[1551] = "2|0|0|-1|",
 					[1396] = "1|10|6|2|",
 					[1400] = "1|0|0|1|",
 					[1404] = "1|0|0|-1|",
@@ -330,8 +330,8 @@ DataStore_TalentsDB = {
 					[1872] = "0|0|0|1|",
 					[1857] = "0|0|0|-1|",
 					[1546] = "0|0|0|-1|",
-					[1550] = "0|0|0|-1|",
-					[1554] = "0|0|0|1|",
+					[1424] = "0|0|0|-1|",
+					[1869] = "1|0|0|0|",
 					[1873] = "0|0|0|-1|",
 					[1877] = "0|0|0|-1|",
 					[1005] = "2|0|0|0|",
@@ -342,9 +342,9 @@ DataStore_TalentsDB = {
 					[1397] = "3|9|7|0|",
 					[1401] = "3|283|7|2|",
 					[1405] = "3|27|7|2|",
-					[1551] = "2|0|0|-1|",
+					[1425] = "0|0|0|-1|",
 					[998] = "0|0|0|-1|",
-					[1000] = "0|0|0|0|",
+					[1858] = "0|0|0|0|",
 					[1421] = "0|0|0|-1|",
 					[1866] = "3|11|7|1|",
 					[1006] = "2|0|0|2|",
@@ -353,23 +353,23 @@ DataStore_TalentsDB = {
 					[1870] = "3|7|7|2|",
 					[1419] = "0|0|0|-1|",
 					[1426] = "3|0|0|-1|",
-					[1548] = "0|0|0|0|",
+					[1422] = "0|0|0|2|",
 					[1394] = "1|0|0|-1|",
 					[1398] = "3|0|0|-1|",
 					[1402] = "3|0|0|-1|",
 					[1406] = "3|0|0|-1|",
-					[1867] = "1|0|0|-1|",
+					[1552] = "0|0|0|-1|",
 					[1855] = "0|0|0|1|",
 					[1859] = "0|0|0|2|",
-					[1422] = "0|0|0|2|",
-					[1552] = "0|0|0|-1|",
-					[1556] = "0|0|0|2|",
-					[1560] = "0|0|0|-1|",
+					[1548] = "0|0|0|0|",
+					[1867] = "1|0|0|-1|",
+					[1871] = "3|0|0|-1|",
+					[1875] = "0|0|0|0|",
 					[1420] = "0|0|0|-1|",
 					[1553] = "0|0|0|0|",
 					[1559] = "0|0|0|-1|",
-					[1875] = "0|0|0|0|",
-					[1871] = "3|0|0|-1|",
+					[1560] = "0|0|0|-1|",
+					[1556] = "0|0|0|2|",
 					[1395] = "3|64|7|1|",
 					[1399] = "1|0|0|0|",
 					[1403] = "1|0|0|-1|",
@@ -381,8 +381,8 @@ DataStore_TalentsDB = {
 					[1868] = "3|0|0|-1|",
 					[1557] = "0|0|0|-1|",
 					[1876] = "0|0|0|2|",
-					[1858] = "0|0|0|0|",
-					[1424] = "0|0|0|-1|",
+					[1000] = "0|0|0|0|",
+					[1550] = "0|0|0|-1|",
 				},
 				["activeSoulbindID"] = 8,
 			},
@@ -396,11 +396,11 @@ DataStore_TalentsRefDB = {
 		["Tendralas - Dalaran"] = "Tendralas - Dalaran",
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
 		["Illingrath - Dalaran"] = "Illingrath - Dalaran",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
 		["Darnastris - Dalaran"] = "Darnastris - Dalaran",
 		["Rotclaugh - Dalaran"] = "Rotclaugh - Dalaran",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Valmagus - Zul'jin"] = "Valmagus - Zul'jin",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
 		["Varlouris - Dalaran"] = "Varlouris - Dalaran",
 		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
@@ -465,6 +465,55 @@ DataStore_TalentsRefDB = {
 			},
 			["Version"] = 47213,
 		},
+		["SHAMAN"] = {
+			["Locale"] = "enUS",
+			["Specializations"] = {
+				{
+					["id"] = 262,
+					["talents"] = {
+						22356, -- [1]
+						22357, -- [2]
+						22358, -- [3]
+						23108, -- [4]
+						23460, -- [5]
+						23190, -- [6]
+						23162, -- [7]
+						23163, -- [8]
+						23164, -- [9]
+					},
+				}, -- [1]
+				{
+					["id"] = 263,
+					["talents"] = {
+						22354, -- [1]
+						22355, -- [2]
+						22353, -- [3]
+						22636, -- [4]
+						23462, -- [5]
+						23109, -- [6]
+						23165, -- [7]
+						19260, -- [8]
+						23166, -- [9]
+						23089, -- [10]
+						23090, -- [11]
+						22171, -- [12]
+						22144, -- [13]
+						22149, -- [14]
+						21966, -- [15]
+						21973, -- [16]
+						22352, -- [17]
+						22351, -- [18]
+						21970, -- [19]
+						22977, -- [20]
+						21972, -- [21]
+					},
+				}, -- [2]
+				{
+					["id"] = 264,
+				}, -- [3]
+			},
+			["Version"] = 45745,
+		},
 		["PALADIN"] = {
 			["Locale"] = "enUS",
 			["Specializations"] = {
@@ -519,55 +568,6 @@ DataStore_TalentsRefDB = {
 				}, -- [3]
 			},
 			["Version"] = 47213,
-		},
-		["SHAMAN"] = {
-			["Locale"] = "enUS",
-			["Specializations"] = {
-				{
-					["id"] = 262,
-					["talents"] = {
-						22356, -- [1]
-						22357, -- [2]
-						22358, -- [3]
-						23108, -- [4]
-						23460, -- [5]
-						23190, -- [6]
-						23162, -- [7]
-						23163, -- [8]
-						23164, -- [9]
-					},
-				}, -- [1]
-				{
-					["id"] = 263,
-					["talents"] = {
-						22354, -- [1]
-						22355, -- [2]
-						22353, -- [3]
-						22636, -- [4]
-						23462, -- [5]
-						23109, -- [6]
-						23165, -- [7]
-						19260, -- [8]
-						23166, -- [9]
-						23089, -- [10]
-						23090, -- [11]
-						22171, -- [12]
-						22144, -- [13]
-						22149, -- [14]
-						21966, -- [15]
-						21973, -- [16]
-						22352, -- [17]
-						22351, -- [18]
-						21970, -- [19]
-						22977, -- [20]
-						21972, -- [21]
-					},
-				}, -- [2]
-				{
-					["id"] = 264,
-				}, -- [3]
-			},
-			["Version"] = 45745,
 		},
 		["MAGE"] = {
 			["Locale"] = "enUS",

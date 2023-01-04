@@ -25,9 +25,9 @@ WITDB = {
 		["BelowTresholdValue"] = 1,
 		["TUJCustomItemPrices"] = {
 		},
-		["RecorderMinQuality"] = 1,
-		["LegacyCustomPriceSource"] = "DBMinBuyout",
 		["PricingSelect"] = "DBMarket",
+		["LegacyCustomPriceSource"] = "DBMinBuyout",
+		["RecorderMinQuality"] = 1,
 		["TUJLegacyCustomPriceSource"] = "market",
 		["TUJCustomPriceSource"] = "market",
 		["BagValueMinQuality"] = 1,

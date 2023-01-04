@@ -1,3 +1,7 @@
+10.0.26 - 30th December 2022
+- Added a new option called 'Mute custom sounds' ('System').  You can enter sound file IDs (separated by comma) along with a brief note describing each ID in the configuration panel editbox.  After that, click the Mute button and you will never hear the sounds again.  For example, entering 'DevAura 569679, RetAura 568744' will mute both aura sounds.  Read the editbox tooltip for more details.
+- The 'Manage widget power' option has been removed since you can move it with Edit Mode (encounter bar).
+
 10.0.25 - 27th December 2022
 - For 'Sell junk automatically', there is a new setting in the configuration panel that lets you exclude grey armor and weapons from being sold.  This setting is disabled by default.  If you are saving grey armor for game patch 10.0.5 (when it will become transmogable), you can enable this setting now to prevent grey armor and weapons from being sold.
 - PTR (10.0.5): For 'Sell junk automatically', there is a new setting in the configuration panel that lets you exclude grey armor and weapons that you have not collected the appearances for (on any character).

@@ -63,28 +63,28 @@ if L then
 	-- Types
 	L.damage = "伤害技能"
 	L.damage_desc = "在我们不知道首领是什么元素时，显示伤害技能的计时条（岩浆爆裂，酷寒，大地笼罩，闪电崩裂）。"
-	L.damage_bartext = "%s [伤害]" -- {Spell} [Dmg]
+	L.damage_bartext = "[伤害] %s" -- {Spell} [Dmg]
 
 	L.avoid = "躲避技能"
 	L.avoid_desc = "在我们不知道首领是什么元素时，显示躲避技能的计时条（熔火破裂，冷冽洪流，基岩喷发，震撼爆裂）。"
-	L.avoid_bartext = "%s [躲避]" -- {Spell} [Avoid]
+	L.avoid_bartext = "[躲避] %s" -- {Spell} [Avoid]
 
 	L.ultimate = "终极技能"
 	L.ultimate_desc = "在我们不知道首领是什么元素时，显示终极技能的计时条（灼热屠戮，绝对零度，地层裂口，雷霆打击）"
-	L.ultimate_bartext = "%s [终极]" -- {Spell} [Ult]
+	L.ultimate_bartext = "[终极] %s" -- {Spell} [Ult]
 
-	L.add_bartext = "%s [增援]" -- "{Spell} [Add]"
+	L.add_bartext = "[增援] %s" -- "{Spell} [Add]"
 
-	L.Fire = "火焰"
+	L.Fire = "烈焰"
 	L.Frost = "冰霜"
-	L.Earth = "土地" -- check
+	L.Earth = "大地" -- check
 	L.Storm = "风暴"
 
 	-- Fire
 	L.magma_burst = "岩浆池"
 	L.molten_rupture = "熔岩"
 	L.searing_carnage = "火焰跳舞"
-	-- L.raging_inferno = "Soak Pools"
+	L.raging_inferno = "吸收岩浆池"
 
 	-- Frost
 	L.biting_chill = "刺骨寒意"
@@ -105,7 +105,7 @@ if L then
 	L.primal_attunement = "软狂暴"
 
 	-- Stage 2
-	L.violent_upheaval = "柱子"
+	L.violent_upheaval = "小怪"
 end
 
 L = BigWigs:NewBossLocale("Broodkeeper Diurna", "zhCN")
@@ -119,7 +119,7 @@ if L then
 	L.icy_shroud = "治疗吸收盾"
 	L.broodkeepers_fury = "愤怒"
 	L.frozen_shroud = "定身吸收盾"
-	-- L.detonating_stoneslam = "Tank Soak"
+	L.detonating_stoneslam = "坦克分摊"
 end
 
 L = BigWigs:NewBossLocale("Raszageth the Storm-Eater", "zhCN")
@@ -149,10 +149,21 @@ if L then
 	-- Intermission: The Vault Falters
 	L.storm_break = "传送"
 	L.ball_lightning = "闪电球"
+	-- L.fuses_reached = "%d |4Fuse:Fuses; Reached" -- 1 Fuse Reached, 2 Fuses Reached
 	-- Stage Three: Storm Incarnate
 	L.magnetic_charge = "积雷倒数"
-	-- Mythic
-	L.storm_eater = "噬雷之龙"
+
+	-- L.storm_nova_cast = "Storm Nova CastBar"
+	-- L.storm_nova_cast_desc = "Cast Bar for Storm Nova"
+
+	-- L.custom_on_repeating_stormcharged = "Repeating Positive or Negative"
+	-- L.custom_on_repeating_stormcharged_desc = "Repeating Positive or Negative say messages with icons {rt1}, {rt3} to find matches to remove your debuffs."
+
+	-- L.skipped_cast = "Skipped %s (%d)"
+
+	-- L.custom_off_raidleader_devastation = "Lighting Devastation: Leader Mode"
+	-- L.custom_off_raidleader_devastation_desc = "Show a bar for the Lighting Devastation (Breath) on the other side as well."
+	-- L.breath_other = "%s [Opposite]" -- Breath on opposite platform
 end
 
 L = BigWigs:NewBossLocale("Vault of the Incarnates Trash", "zhCN")
